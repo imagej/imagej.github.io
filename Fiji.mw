@@ -1,9 +1,11 @@
-<big>'''MediaWiki has been successfully installed.'''</big>
+<big>Welcome to '''Fiji'''</big>
 
-Consult the [http://meta.wikimedia.org/wiki/Help:Contents User's Guide] for information on using the wiki software.
+The whole purpose of Fiji is to make installation of Java, ImageJ and several plugins easy.  The main focus is neuroscience, but it is hoped that Fiji proves useful to a wide range of users.
 
-== Getting started ==
+At the moment, we support
 
-* [http://www.mediawiki.org/wiki/Help:Configuration_settings Configuration settings list]
-* [http://www.mediawiki.org/wiki/Help:FAQ MediaWiki FAQ]
-* [http://mail.wikimedia.org/mailman/listinfo/mediawiki-announce MediaWiki release mailing list]
+* Linux (x86),
+* Linux (amd64),
+* MacOSX (PowerPC),
+* MacOSX (Intel), and
+* Windows (x86)
