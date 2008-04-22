@@ -1,0 +1,28 @@
+Please try to avoid closed-source plugins.
+
+Just move the .jar into staged-plugins/, and create/adjust the corresponding
+.config file (also in staged-plugins/).  Then type "make" and it will be
+added/updated and committed.
+
+Longer version:
+
+The .config file should look something like this:
+
+        File, "Show Prime Numbers", Primes_("")
+
+where "File" is the menu you want to add the item to -- at the moment, the
+only valid choices are "Plugins", "Plugins><submenu>", "File>Import",
+"File>Save", "Analyze>Tools", "Help>About" and "Edit>Options".
+
+Next comes the title of the menu item, and lastly the class name of the
+plugin with a parameter that will be passed to the run() method of that
+class.
+
+In other words, the .config file will become the plugins.config of the
+.jar file.
+
+Please make sure that your .config file is designed such that the
+menus fit in snuggly with the common Fiji menu structure.
+
+Then just "make", and the plugin will be automatically installed and
+committed (this needs "git" installed, though).
