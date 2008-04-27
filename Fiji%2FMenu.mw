@@ -2,13 +2,34 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 == Plugins ==
 
+=== <nowiki>[Ungrouped Plugins]</nowiki> ===
+
+* '''Get Class Versions''':
+* '''Multiple Image Processor''':
+* '''View5D''':
+* '''Volume Viewer''':
 
 === 3D ===
 
 * '''3D Viewer''': This will launch the ImageJ 3D viewer so that you can visualize an image in 3D, either volume- or surface-rendered.  [http://132.187.25.13/home/?category=Download&page=Viewer3D Further documentation.]
-* '''Show Amira Surface''': (Currently gives ClassNotFound exception for Show_Amira_Surface. Should this still be here?)
+* '''Show Amira Surface''': (Currently gives ClassNotFound exception for Show_Amira_Surface. Should this still be here?) [http://132.187.25.13/home/?category=Download&page=ShowAmiraSurface  Further documentation.]
 
 === Analyze ===
+
+* '''Grid''':
+* '''Find differences''':
+* '''Delaunay Voronoi''':
+* '''Measure RGB''':
+* '''Particle Analyzer 3D''':
+* '''Plot Dots''':
+* '''VIB Protocol''':
+* '''Visual Grep''':
+
+=== BeanShell ===
+
+<i>This submenu should be removed and its contents (perhaps) moved into a generic "Interpreters" submenu</i>
+
+* '''BeanShell Interpreter''': This plugin launches an interactive BeanShell interpeter.  For more information on BeanShell support, see [[BeanShell Scripting]]
 
 === Clojure ===
 
@@ -18,17 +39,46 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 === Color ===
 
+* '''Average Color''':
+* '''RGB to CIELAB''':
+
 === Edit ===
+
+* '''Crop Editor''': ''TODO: replace with Three Pane Crop''
+* '''Segmentation Editor''': This plugin provides a user interface for manually segmenting images by painting over regions in an image stack.  [http://132.187.25.13/home/?category=Download&page=SegmentationEditor Futher documentation.]
 
 === Filters ===
 
+* '''Preprocessor Smooth''': 
+
 === Graphics ===
+
+* '''Example Plot''':
 
 === Image IO ===
 
 <i>This submenu should be removed and the image loaders and writers moved into Import> or Save as...> </i>
 
 === Image5D ===
+* '''New Image5D''':
+* '''Open Image5D''':
+* '''Save Image5D''':
+* '''Open Series As Image5D''':
+* '''Virtual Image5D Opener''':
+* '''Hypervolume Opener''':
+
+* '''Stack to Image5D''':
+* '''RGB to Image5D''':
+* '''Image5D to Stack''':
+
+* '''Set Position''':
+* '''Set Channel Display''':
+* '''Set Channel Labels''':
+
+* '''Make Montage''':
+* '''Z Project''':
+* '''Image5D Stack to RGB''':
+* '''Transfer Channel Settings''':
 
 === Input-Output ===
 
@@ -48,7 +98,23 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 === LOCI ===
 
+* '''4D Data Browser''':
+* '''Bio-Formats Importer''':
+* '''Bio-Formats Exporter''':
+* '''Bio-Formats Remote Importer''':
+* '''Download from OME''':
+* '''Upload to OME''':
+
 === Macros ===
+
+<i>This submenu should be removed, and the individual macros place in appropriate places in the menu hierarchy</i>
+
+* '''About Plugin Macros''':
+* '''Bulls Eye''':
+* '''Macro Interpreter''':
+* '''Polygon''':
+* '''RGB Histogram''':
+* '''batch convert any to tif''':
 
 === Process ===
 
