@@ -17,9 +17,43 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 === Filters ===
 
-
 === Graphics ===
 
 === Image IO ===
 
 <i>This submenu should be removed and the image loaders and writers moved into Import> or Save as...> </i>
+
+=== Image5D ===
+
+=== Input-Output ===
+
+<i>This submenu should be removed and the image loaders and writers moved into Import> or Save as...> </i>
+
+=== JRuby ===
+
+<i>This submenu should be removed and its contents (perhaps) moved into a generic "Interpreters" submenu</i>
+
+=== Jython ===
+
+<i>This submenu should be removed and its contents (perhaps) moved into a generic "Interpreters" submenu</i>
+
+=== LOCI ===
+
+=== Macros ===
+
+=== Process ===
+
+=== Registration ===
+
+=== Stacks ===
+
+
+=== Tools ===
+
+=== TransformJ ===
+
+=== Unknown ===
+
+=== Utilities ===
+
+=== Utilities>Debugging ===
