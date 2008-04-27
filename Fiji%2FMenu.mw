@@ -5,6 +5,8 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 === 3D ===
 
+* '''3D Viewer''': This will launch the ImageJ 3D viewer so that you can visualize an image in 3D, either volume- or surface-rendered
+
 === Analyze ===
 
 === Clojure ===
