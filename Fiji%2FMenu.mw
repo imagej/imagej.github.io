@@ -11,6 +11,8 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 <i>This submenu should be removed and its contents (perhaps) moved into a generic "Interpreters" submenu</i>
 
+* '''Clojure Interpreter''': This plugin launches an interactive Clojure interpeter.  For more information on Clojure support, see [[Clojure Scripting]]
+
 === Color ===
 
 === Edit ===
@@ -33,9 +35,13 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 <i>This submenu should be removed and its contents (perhaps) moved into a generic "Interpreters" submenu</i>
 
+* '''JRuby Interpreter''': This plugin launches an interactive JRuby interpeter.  For more information on JRuby support, see [[JRuby Scripting]]
+
 === Jython ===
 
 <i>This submenu should be removed and its contents (perhaps) moved into a generic "Interpreters" submenu</i>
+
+* '''Jython Interpreter''': This plugin launches an interactive Jython interpeter.  For more information on Jython support, see [[Jython Scripting]]
 
 === LOCI ===
 
