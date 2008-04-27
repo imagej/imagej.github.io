@@ -149,7 +149,7 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 === TransformJ ===
 
-<i>TransformJ is non-free (and in any case should not have its own submenu).</i>
+<i>TransformJ is non-free, and in any case not have its own submenu - probably should rename this to Transform</i>
 
 * '''TJ Affine''':
 * '''TJ Crop''':
