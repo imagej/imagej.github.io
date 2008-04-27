@@ -1,5 +1,7 @@
 The hierarchy of the Plugins Menu is show here, with a few words of explanation for each plugin and links to more documentation where available.  If you know about a plugin that is in this list, but which doesn't yet have a description, please add it.  Also please update this page if you change the menu structure in any way.
 
+<i>FIXME: ideally we should generate this page automatically from the fiji source tree...</i>
+
 == Plugins ==
 
 === <nowiki>[Ungrouped Plugins]</nowiki> ===
@@ -118,18 +120,61 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 === Process ===
 
+* '''Bilateral Filter''':
+* '''IFT''':
+* '''Implicit Interpolate Binary''':
+* '''Replace value''':
+* '''Distance Transform 3D''':
+* '''Fill holes''':
+* '''Moving Least Squares''':
+* '''Reslice Z''':
+* '''Shape-based averaging''':
+* '''Seam remover''':
+* '''Show label centers''':
+* '''Triangle Algorithm''':
+
 === Registration ===
+
+* '''Align Image by line ROI''':
 
 === Stacks ===
 
 <i>If we keep this option, I think it should be restricted to plugins that operate a stack but which don't care about the content, e.g. those for cropping or reslicing.  (At least there needs to be some distinction since practically every plugin operates on stacks.)</i>
 
+* '''Stack Reverser''': This plugin reverses the order of the slices in an image stack.
+
 === Tools ===
+
+* '''Close All Without Saving''':
 
 === TransformJ ===
 
+<i>TransformJ is non-free (and in any case should not have its own submenu).</i>
+
+* '''TJ Affine''':
+* '''TJ Crop''':
+* '''TJ Embed''':
+* '''TJ Mirror''':
+* '''TJ Options''':
+* '''TJ Panel''':
+* '''TJ Rotate''':
+* '''TJ Scale''':
+* '''TJ Shift''':
+* '''TJ Turn''':
+
 === Unknown ===
+
+* '''KD Cartoon''':
+* '''Lasso''':
 
 === Utilities ===
 
+* '''Collect Garbage''':
+* '''Install Java3D''':
+* '''Adjust Menu Font''':
+* '''Thread killer''':
+
 === Utilities>Debugging ===
+
+* '''Test Marching Cubes''':
+* '''Test Java3D''':
