@@ -47,6 +47,7 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 === Stacks ===
 
+<i>If we keep this option, I think it should be restricted to plugins that operate a stack but which don't care about the content, e.g. those for cropping or reslicing.  (At least there needs to be some distinction since practically every plugin operates on stacks.)</i>
 
 === Tools ===
 
