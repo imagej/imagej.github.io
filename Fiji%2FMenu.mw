@@ -1,0 +1,25 @@
+The hierarchy of the Plugins Menu is show here, with a few words of explanation for each plugin and links to more documentation where available:
+
+== Plugins ==
+
+
+=== 3D ===
+
+=== Analyze ===
+
+=== Clojure ===
+
+<i>This submenu should be removed and its contents (perhaps) moved into a generic "Interpreters" submenu</i>
+
+=== Color ===
+
+=== Edit ===
+
+=== Filters ===
+
+
+=== Graphics ===
+
+=== Image IO ===
+
+<i>This submenu should be removed and the image loaders and writers moved into Import> or Save as...> </i>
