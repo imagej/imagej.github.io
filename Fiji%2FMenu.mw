@@ -22,10 +22,13 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 * '''Find differences''':
 * '''Delaunay Voronoi''':
 * '''Measure RGB''':
-* '''Particle Analyzer 3D''':
 * '''Plot Dots''':
 * '''VIB Protocol''':
+* '''2D Histogram''': draw a 2D histogram showing the distribution of values in pairs of points in two images
 * '''Visual Grep''':
+* '''Compute Curvatures''': calculate the principal curvatures of an image at each point
+* '''Tubeness''': calculate a score of how "tube-like" each point in an image is, based on the principal curvatures
+* '''Surfaceness''': calculate a score of how "surface-like" each point in an image is, based on the principal curvatures
 
 === BeanShell ===
 
@@ -46,8 +49,7 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 === Edit ===
 
-* '''Crop Editor''': ''TODO: replace with Three Pane Crop''
-* '''Segmentation Editor''': This plugin provides a user interface for manually segmenting images by painting over regions in an image stack.  [http://132.187.25.13/home/?category=Download&page=SegmentationEditor Futher documentation.]
+* '''Crop (3D)''': Crop an image stack [http://homepages.inf.ed.ac.uk/s9808248/imagej/three-pane-crop/ Further documentation]
 
 === Filters ===
 
@@ -132,10 +134,37 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 * '''Seam remover''':
 * '''Show label centers''':
 * '''Triangle Algorithm''':
+* '''Mask of Nearby Points''': create a mask of all points within a given distance of any point above a given threshold [http://homepages.inf.ed.ac.uk/s9808248/imagej/nearby/ Further documentation]
+* '''Find Connected Regions''': find connected regions in an image stack based on various criteria [http://homepages.inf.ed.ac.uk/s9808248/imagej/find-connected-regions/ Further documentation]
+* '''Quantile Based Normalization''': a method of histogram equalization across several images [http://homepages.inf.ed.ac.uk/s9808248/imagej/quantile-normalization/ Futher documentation]
+
+* '''Resample''': resample to reduce the size of an image
+* '''Convolve (3D)''':
+* '''Dilate (3D)''':
+* '''Erode (3D)''':
+* '''FFT (3D)''':
+* '''Flood Fill (3D)''':
+* '''Gradient (3D)''':
+* '''IFT (3D)''':
+* '''Laplace (3D)''':
+* '''Maximum (3D)''': 
+* '''Max (3D)''': <i>FIXME: don't need both this an the one above</i>
+* '''Median (3D)''': 
+* '''Minimum (3D)''':
+* '''Particle Analyzer (3D)''':
+* '''Plot Dots (3D)''':
+* '''Rebin (3D)''':
+* '''Smooth (3D)''':
 
 === Registration ===
 
 * '''Align Image by line ROI''':
+* '''Rigid Registration''':
+
+=== Segmentation ===
+
+* '''Segmentation Editor''': This plugin provides a user interface for manually segmenting images by painting over regions in an image stack.  [http://132.187.25.13/home/?category=Download&page=SegmentationEditor Futher documentation.]
+* '''Simple Neurite Tracer''': A plugin for semi-automated tracing of neurons in a 3D image stack [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/ Further documentation]
 
 === Stacks ===
 
