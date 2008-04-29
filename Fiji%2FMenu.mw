@@ -30,18 +30,6 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 * '''Tubeness''': calculate a score of how "tube-like" each point in an image is, based on the principal curvatures
 * '''Surfaceness''': calculate a score of how "surface-like" each point in an image is, based on the principal curvatures
 
-=== BeanShell ===
-
-<i>This submenu should be removed and its contents (perhaps) moved into a generic "Interpreters" submenu</i>
-
-* '''BeanShell Interpreter''': This plugin launches an interactive BeanShell interpeter.  For more information on BeanShell support, see [[BeanShell Scripting]]
-
-=== Clojure ===
-
-<i>This submenu should be removed and its contents (perhaps) moved into a generic "Interpreters" submenu</i>
-
-* '''Clojure Interpreter''': This plugin launches an interactive Clojure interpeter.  For more information on Clojure support, see [[Clojure Scripting]]
-
 === Color ===
 
 * '''Average Color''':
@@ -51,13 +39,16 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 * '''Crop (3D)''': Crop an image stack [http://homepages.inf.ed.ac.uk/s9808248/imagej/three-pane-crop/ Further documentation]
 
-=== Filters ===
+=== Examples ===
 
-* '''Preprocessor Smooth''': 
-
-=== Graphics ===
-
-* '''Example Plot''':
+* '''Blobs Demo in Ruby''': Implementation of the Blobs demo macro in the JRuby language. All relevant ImageJ macro functions are reimplemented in [http://jruby.codehaus.org/ JRuby].
+* '''blend two images''': Fetches the mandril (RGB) and bridge (8-bit) sample images, and blends the bridge image into each color channel of the mandril image. Written in [http://clojure.sourceforge.net Clojure] (lisp).
+* '''celsius to fahrenheit''': Shows a swing GUI with buttons and labels, with attached listeners to transform celsius degrees to fahrenheit. Written in [http://clojure.sourceforge.net Clojure] (lisp).
+* '''Example Plot''': Creates a plot with two colored lines in it. Written in Java.
+* '''list all threads''': Lists all threads to stdout (the terminal, or Console.app in MacOSX). Written in [http://www.jython.org Jython].
+* '''random_noise_example''': Generates two 8-bit images with random pixel value in each. Written in [http://clojure.sourceforge.net Clojure] (lisp).
+* '''T2 Select All''': Selects all objects in an open TrakEM2 display. Writen in [http://www.jython.org Jython].
+* '''T2 set all transforms to identity''': Resets the transformation matrix (translation,rotation,scaling and shear) of all objects in a TrakEM2 display to identity (zero translation, scaling of 1.0, zero rotation and no shear). Written in [http://www.jython.org Jython].
 
 === Image IO ===
 
@@ -83,22 +74,6 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 * '''Z Project''':
 * '''Image5D Stack to RGB''':
 * '''Transfer Channel Settings''':
-
-=== Input-Output ===
-
-<i>This submenu should be removed and the image loaders and writers moved into Import> or Save as...> </i>
-
-=== JRuby ===
-
-<i>This submenu should be removed and its contents (perhaps) moved into a generic "Interpreters" submenu</i>
-
-* '''JRuby Interpreter''': This plugin launches an interactive JRuby interpeter.  For more information on JRuby support, see [[JRuby Scripting]]
-
-=== Jython ===
-
-<i>This submenu should be removed and its contents (perhaps) moved into a generic "Interpreters" submenu</i>
-
-* '''Jython Interpreter''': This plugin launches an interactive Jython interpeter.  For more information on Jython support, see [[Jython Scripting]]
 
 === LOCI ===
 
@@ -160,6 +135,12 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 * '''Align Image by line ROI''':
 * '''Rigid Registration''':
+
+=== Scripting ===
+* '''BeanShell Interpreter''': This plugin launches an interactive BeanShell interpeter.  For more information on BeanShell support, see [[BeanShell Scripting]]
+* '''Clojure Interpreter''': This plugin launches an interactive Clojure interpeter.  For more information on Clojure support, see [[Clojure Scripting]]
+* '''JRuby Interpreter''': This plugin launches an interactive JRuby interpeter.  For more information on JRuby support, see [[JRuby Scripting]]
+* '''Jython Interpreter''': This plugin launches an interactive Jython interpeter.  For more information on Jython support, see [[Jython Scripting]]
 
 === Segmentation ===
 
