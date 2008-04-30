@@ -7,7 +7,10 @@ At the moment, we support
 * Linux (x86),
 * Linux (amd64),
 * MacOSX (PowerPC),
-* MacOSX (Intel), and
-* Windows (x86)
+* MacOSX (Intel),
+* Windows (x86), and
+* Windows (amd64)
+
+You can download them [[Downloads|here]].
 
 For some descriptions of the plugins you'll find in Fiji, see [[Plugins Menu]]
