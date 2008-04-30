@@ -6,15 +6,11 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 === <nowiki>[Ungrouped Plugins]</nowiki> ===
 
+* '''3D Viewer''': This will launch the ImageJ 3D viewer so that you can visualize an image in 3D, either volume- or surface-rendered.  [http://132.187.25.13/home/?category=Download&page=Viewer3D Further documentation.]
 * '''Get Class Versions''':
 * '''Multiple Image Processor''':
 * '''View5D''':
 * '''Volume Viewer''':
-
-=== 3D ===
-
-* '''3D Viewer''': This will launch the ImageJ 3D viewer so that you can visualize an image in 3D, either volume- or surface-rendered.  [http://132.187.25.13/home/?category=Download&page=Viewer3D Further documentation.]
-* '''Show Amira Surface''': (Currently gives ClassNotFound exception for Show_Amira_Surface. Should this still be here?) [http://132.187.25.13/home/?category=Download&page=ShowAmiraSurface  Further documentation.]
 
 === Analyze ===
 
@@ -34,10 +30,6 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 * '''Average Color''':
 * '''RGB to CIELAB''':
-
-=== Edit ===
-
-* '''Crop (3D)''': Crop an image stack [http://homepages.inf.ed.ac.uk/s9808248/imagej/three-pane-crop/ Further documentation]
 
 === Examples ===
 
@@ -151,6 +143,7 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 <i>If we keep this option, I think it should be restricted to plugins that operate a stack but which don't care about the content, e.g. those for cropping or reslicing.  (At least there needs to be some distinction since practically every plugin operates on stacks.)</i>
 
+* '''Crop (3D)''': Crop an image stack [http://homepages.inf.ed.ac.uk/s9808248/imagej/three-pane-crop/ Further documentation]
 * '''Stack Reverser''': This plugin reverses the order of the slices in an image stack.
 
 === Tools ===
