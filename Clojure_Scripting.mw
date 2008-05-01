@@ -1,0 +1,72 @@
+<h1>Clojure tutorial for ImageJ</h1>
+
+<h3>Language basics</h3>
+<p>A ';' defines the start of a comment, just like '//' does in Java.</p>
+<p>A function takes parameters within [].</p>
+<p>Local variables are declared with <i>let</i>, and global variables with <i>def</i>.</p>
+<p>Functions are defined with <i>defn</i>, and are visible globally. Hence a function declared within a <i>let</i> statement has access to variables declared in it. This method enables closures.</p>
+<p></p>
+
+<h3>Defining variables: obtaining the current image</h3>
+As a local variable <b>imp</b> declared within a <i>let</i> statement:
+<pre>
+(let [imp (. ij.WindowManager (getCurrentImage))]
+    ; print its name
+    (println (. imp (getTitle))))
+
+; Variable imp NOT visible from outside let statement:
+(println (. imp (getTitle)))
+---&gt; ERROR
+</pre>
+<p>As a general variable visible from the entire namespace:</p>
+<pre>
+(def *imp* (. ij.WindowManager (getCurrentImage)))
+
+(println (. *imp* (getTitle)))
+</pre>
+<p>By convention, in lisp global variables are written with asterisks in the name.</p>
+<br />
+<p>A <i>let</i> statement lets you declare any number of paired variable name / values, even referring to each other in sequence:</p>
+<pre>
+(let [imp (. ij.WindowManager (getCurrentImage))
+      ip (. imp (getProcessor))
+      pix (. ip (getPixels))
+      pix2 (.. imp (getProcessor) (getPixels))]
+    ; do some processing ...
+    (println (str "number of pixels: " (count pix))))
+</pre>
+<p>Any number of <i>let</i> statements may be nested together:</p>
+<pre>
+(let [imp (. ij.WindowManager (getCurrentImage))]
+    ; do whatever processing here
+    (let [ip (. imp (getProcessor)]
+        ; print first pixel
+	(println (str (. ip (getPixel 0 0)))))))
+</pre>
+
+
+<h3>Defining a closure</h3>
+<p>In the following a function is declared within the scope of the local variable <b>rand</b>, which contains an instance of java.util.Random. All calls to the function <i>rand-double</i> will use the same random number generator instance with seed 69997.</p>
+<p>The <i>dotimes</i> loop will then print 10 different pseudo-random numbers. If the <b>rand</b> was a new Random with seed 69997 every time, all 10 numbers would be exactly the same.</p>
+<p>You can think of a function inside a closure as a static function using a static variable (in Java), but it's more than that, since the function will be able to access parameters on the global namespace and also in any other local namespace in which the <i>let</i> is declared. For example, another <i>let</i>, or even another <i>defn</i>!</p>
+<pre>
+(import '(java.util Random))
+
+(let [rand (new Random 69997)]
+    (defn (rand-double []
+        (. rand (nextDouble)))))
+
+(dotimes i 10
+    (println (rand-double)))
+</pre>
+
+<h3>Looping an array of pixels</h3>
+<p>For example, to find the min and max values:</p>
+<pre>
+; Obtain the pixels array from the current image
+(let [imp (. ij.WindowManager (getCurrentImage))
+      pixels (.. imp (getProcessor) (getPixels))
+      min (apply min pixels)
+      max (apply max pixels)]
+    (prn (str "min: " min ", max: " max)))
+</pre>
