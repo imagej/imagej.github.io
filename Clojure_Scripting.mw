@@ -2,7 +2,7 @@
 
 <h3>Language basics</h3>
 <p>A ';' defines the start of a comment, just like '//' does in Java.</p>
-<p>A function takes parameters within [].</p>
+<p>A function definition declares parameters within [].</p>
 <p>Local variables are declared with <i>let</i>, and global variables with <i>def</i>.</p>
 <p>Functions are defined with <i>defn</i>, and are visible globally. Hence a function declared within a <i>let</i> statement has access to variables declared in it. This method enables closures.</p>
 <p></p>
