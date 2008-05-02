@@ -50,11 +50,9 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 <p>The <i>dotimes</i> loop will then print 10 different pseudo-random numbers. If the <b>rand</b> was a new Random with seed 69997 every time, all 10 numbers would be exactly the same.</p>
 <p>You can think of a function inside a closure as a static function using a static variable (in Java), but it's more than that, since the function will be able to access parameters on the global namespace and also in any other local namespace in which the <i>let</i> is declared. For example, another <i>let</i>, or even another <i>defn</i>!</p>
 <pre>
-(import '(java.util Random))
-
-(let [rand (new Random 69997)]
-    (defn (rand-double []
-        (. rand (nextDouble)))))
+(let [rand (new java.util.Random 69997)]
+    (defn rand-double []
+        (. rand (nextDouble))))
 
 (dotimes i 10
     (println (rand-double)))
