@@ -23,6 +23,9 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 (def *imp* (. ij.WindowManager (getCurrentImage)))
 
 (println (. *imp* (getTitle)))
+
+; Alternative syntax
+(println (.getTitle *imp*))
 </pre>
 <p>By convention, in lisp global variables are written with asterisks in the name.</p>
 <br />
@@ -66,5 +69,37 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
       pixels (.. imp (getProcessor) (getPixels))
       min (apply min pixels)
       max (apply max pixels)]
-    (prn (str "min: " min ", max: " max)))
+    (println (str "min: " min ", max: " max)))
+</pre>
+
+<p>The above code does not explicitly loop the pixels: it simply applies a function to an array.</p>
+<p>To loop pixels one by one, use any of the following:</p>
+<pre>
+(let [imp (.getCurrentImage ij.WindowManager)
+      pixels (.. imp (getProcessor) (getPixels))]
+
+      ; First loop with "dotimes"
+      (dotimes i (count pixels)
+          (println (aget pixels i)))
+
+      ; Second loop: with "loop -- recur"
+      (loop [i 0
+             len (count pixels)]
+         (if (&lt; i len)
+            (let [pix (aget pixels i)]
+                (println (str i ": " pix))
+                (recur (inc i)
+                       len))))
+
+</pre>                                                                                                                                                                                                                
+<p>Above, notice that the <i>loop -- recur</i> construct is essentially a <i>let</i> declaration, with a second call (<i>recur</i>) to reset the variables to something else. In this case, the next index in the array. Note how the len is simply given the same value over and over, just to avoid calling <i>(count pixels)</i> at each iteration.</p>
+                                                                                                                                                                                                                      
+<h3>Executing commands from the menus</h3>                                                                                                                                                                            
+<p>Any ImageJ menu command may be run on the active image:</p>                                                                                                                                                        
+<pre>                                                                                                                                                                                                                 
+(.doCommand ij.IJ "Add Noise")                                                                                                                                                                                        
+</pre>                                                                                                                                                                                                                
+Be aware that the above starts a new Thread and forks. For reliable control, try the run method, which will wait until the plugin finishes execution.<p>
+<pre>
+(.run ij.IJ "Add Noise")                                                                                                                                                                                              
 </pre>
