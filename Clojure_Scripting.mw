@@ -157,3 +157,14 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 <p>To modify an script which exists already as a menu item, simply edit its file and run it by selecting it from the menus. No compiling necessary, and no need to call Refresh Clojure Scripts either (ther latter only for new scripts or at start up.)</p>
 
 <p><b>Very important:</b> all scripts and commands from the interpreter will run within the same thread, and within the same clojure context.</p>
+
+<h3>Using java beans for quick and convenient access to an object's fields</h3>
+<p>Essentially it's all about using <i>get</i> methods in a trivial way. For example:</p>
+<pre>
+(let [imp (. ij.WindowManager (getCurrentImage))
+      b (bean imp)]
+   (println (:title b)
+            (:width b)  
+            (:height b)))
+</pre>                                                                                                                                                                                                                
+<p>Eventually Clojure may add support for <i>set</i> methods as well.</p>
