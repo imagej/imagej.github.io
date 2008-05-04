@@ -1,11 +1,56 @@
 <h1>Clojure tutorial for ImageJ</h1>
 
+<p>Check out [http://clojure.sourceforge.net clojure web site] and particularly the chapter on [http://clojure.sourceforge.net/reference/java_interop.html Java interoperability].</p>
+
 <h3>Language basics</h3>
 <p>A ';' defines the start of a comment, just like '//' does in Java.</p>
 <p>A function definition declares parameters within [].</p>
 <p>Local variables are declared with <i>let</i>, and global variables with <i>def</i>.</p>
 <p>Functions are defined with <i>defn</i>, and are visible globally. Hence a function declared within a <i>let</i> statement has access to variables declared in it. This method enables closures.</p>
 <p></p>
+
+<h3>Calling methods and variables on a java object</h3>
+<p>There are two ways, the second syntactic sugar of the first. Below, <b>imp</b> is a pointer to an ImagePlus:</p>
+<pre>
+; java-ish way:
+(. imp (getProcessor))
+
+; lisp-ish way:
+(.getProcessor imp)
+</pre>
+
+<p>To call a method on an object returned by a method call, there is a simplified way:</p>
+<pre>
+; double way:
+(. (. imp (getProcessor)) (getPixels))
+
+; simplified double way:
+(.. imp (getProcessor) (getPixels))
+
+; or lisp-ish way:
+(.getPixels (.getProcessor imp))
+</pre>
+
+<p>To call a variable or 'field', just do it like a method call but without the parentheses:</p>
+<pre>
+(. imp changes)
+
+(. ij.plugin.filter.PlugInFilter DOES_ALL)
+</pre>
+<p>Above, notice how a class name is used instead of a pointer to call static fields.</p>
+
+<p>To enhance readability, use <i>import</i> when appropriate. Imports remain visibile throughout the current namespace:</p>
+<pre>
+(import '(java.awt Color Rectangle)
+        '(ij.plugin.filter PlugInFilter))
+
+(new Rectangle 0 0 500 500)
+
+(. PlugInFilter DOES_ALL)
+</pre>
+
+<p>Choose whatever matches your mental schemes best.</p>
+
 
 <h3>Defining variables: obtaining the current image</h3>
 As a local variable <b>imp</b> declared within a <i>let</i> statement:
