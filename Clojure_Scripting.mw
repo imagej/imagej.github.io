@@ -168,3 +168,36 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
             (:height b)))
 </pre>                                                                                                                                                                                                                
 <p>Eventually Clojure may add support for <i>set</i> methods as well.</p>
+
+<h1>Appendix</h1>
+
+* The default output stream is at variable <i>*out*</i>. The Clojure Interpreter binds it to the PrintWriter that prints to the interpreter text area, by executing any typed in code within the following binding:
+<pre>
+(binding [*out* (. getStdOut Clojure.Clojure_Interpreter)]
+   ; any typed input here
+   )
+</pre>                                                                                                                                                                                                                
+                                                                                                                                                                                                                      
+Which prints:
+<pre>
+>>> (all-ns)
+(#<Namespace: xml> #<Namespace: zip> #<Namespace: clojure> #<Namespace: set> #<Namespace: user>)
+</pre>                                                                                                                                                                                            
+
+* To list all existing namespaces:
+<pre>
+(all-ns)
+</pre>
+
+* To list all functions and variables of a specific namespace, first get the namespace object by name:
+<pre>
+(ns-map (find-ns 'xml))
+</pre>
+Note above the quoted string "xml" to avoid evaluating it to a (non-existing) value.
+
+* To list all functions and variables of all namespaces:
+<pre>
+(map ns-map (all-ns))
+</pre>
+
+* To get the arguments passed to the JVM, see contents of variable *command-line-args*
