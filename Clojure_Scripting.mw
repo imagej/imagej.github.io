@@ -144,7 +144,16 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 <pre>                                                                                                                                                                                                                 
 (.doCommand ij.IJ "Add Noise")                                                                                                                                                                                        
 </pre>                                                                                                                                                                                                                
-Be aware that the above starts a new Thread and forks. For reliable control, try the run method, which will wait until the plugin finishes execution.<p>
+<p>Be aware that the above starts a new Thread and forks. For reliable control, try the run method, which will wait until the plugin finishes execution.</p>
 <pre>
 (.run ij.IJ "Add Noise")                                                                                                                                                                                              
 </pre>
+
+<h3>Creating and using Clojure scripts as ImageJ plugins</h3>
+<p>Simply create a text file with the script inside, and place it in the plugins menu or any subfolder. Then call Plugins - Scripting - Refresh Clojure Scripts to make it appear on the menus.</p>
+
+<p>If the macros/StartupMacros.txt includes a call to the Refresh Clojure Scripts inside the AutoRun macro, then all your Clojure scripts will appear automatically on startup.</p>
+
+<p>To modify an script which exists already as a menu item, simply edit its file and run it by selecting it from the menus. No compiling necessary, and no need to call Refresh Clojure Scripts either (ther latter only for new scripts or at start up.)</p>
+
+<p><b>Very important:</b> all scripts and commands from the interpreter will run within the same thread, and within the same clojure context.</p>
