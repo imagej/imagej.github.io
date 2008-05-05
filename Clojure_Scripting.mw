@@ -177,17 +177,12 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
    ; any typed input here
    )
 </pre>                                                                                                                                                                                                                
-                                                                                                                                                                                                                      
-Which prints:
+
+* To list all existing namespaces:
 <pre>
 >>> (all-ns)
 (#<Namespace: xml> #<Namespace: zip> #<Namespace: clojure> #<Namespace: set> #<Namespace: user>)
 </pre>                                                                                                                                                                                            
-
-* To list all existing namespaces:
-<pre>
-(all-ns)
-</pre>
 
 * To list all functions and variables of a specific namespace, first get the namespace object by name:
 <pre>
