@@ -1,0 +1,43 @@
+<h1>git submodule tutorial</h1>
+
+<p>Fiji is hosted on a main git repository which contains several declared submodules such as VIB and TrakEM2.</p>
+
+<p>With git, any git command excuted within any subdirectory of the repository affects the overall git repository.</p>
+
+<p>Submodules, although existing as folders inside the fiji repository, are different: only the folder name, as a path pointer, is registered as belonging to fiji's git repository.</p> 
+
+<p>Each submodule is a proper full-fledged git repository, so any git commands executed within the folders of the submodule will affect that git repository, not fiji's.</p>
+
+<p>The usual sequence of commands when working inside a submodule:</p>
+
+<pre>
+~/fiji$ cd TrakEM2
+~/fiji/TrakEM2$ git status
+</pre>
+
+<p>So you observe some unstaged changes. Then add them and commit them:</p>
+
+<pre>
+~/fiji/TrakEM2$ git add path/to/some_file.java
+~/fiji/TrakEM2$ git commit
+</pre>
+
+<p>Then move up and add the commit sha sum as the new submodule state inside fiji.</p>
+<p><b>BE CAREFUL:</b> adding "TrakEM" and "TrakEM/" is not the same at all! The latter would add all non-ignorable files under TrakEM2's subfolder into fiji's repository, which is NOT what you want. If you screwed up, use <i>"git reset --hard"</i> before proceeding to unstage any changes in fiji's git repository.</p>
+
+<pre>
+~/fiji/TrakEM2$ cd ..
+~/fiji$ git add TrakEM2
+~/fiji$ git commit
+</pre>
+
+<p>After the above, fiji has been updated to track the latest TrakEM2 commit.</p>
+
+<p>When happy with the arrangement, push the changes to the shared repository for others to see them. Remember to push both separately: the submodule and fiji's repository itself! If you push <b>only</b> fiji, then whoever pulls fiji will not see the new HEAD of the submodule branch, which will result in an error.</p>
+
+<pre>
+~/fiji$ cd TrakEM2/
+~/fiji/TrakEM2$ git push
+~/fiji/TrakEM2$ cd ..
+~/fiji$ git push
+</pre>
