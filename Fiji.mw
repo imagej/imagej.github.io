@@ -1,6 +1,10 @@
-<big>Welcome to '''Fiji'''</big>
+= Welcome to '''Fiji''' =
 
-The whole purpose of Fiji is to make installation of Java, ImageJ and several plugins easy.  The main focus is neuroscience, but it is hoped that Fiji proves useful to a wide range of users.
+[[Image:Fiji.jpg|right|Fiji Is Just ImageJ]]
+
+The whole purpose of Fiji is to make installation of Java, ImageJ and several plugins easy.
+
+The main focus is neuroscience, but it is hoped that Fiji proves useful to a wide range of users.
 
 At the moment, we support
 
@@ -11,7 +15,15 @@ At the moment, we support
 * Windows (x86), and
 * Windows (amd64)
 
-You can download them [[Downloads|here]].
+== Downloads ==
+
+You can download the packages [[Downloads|here]].
+
+== Help ==
+
+Find out how to get help [[Help|here]].
+
+== Miscellaneous ==
 
 For some descriptions of the plugins you'll find in Fiji, see [[Plugins Menu]]
 
