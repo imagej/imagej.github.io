@@ -16,7 +16,7 @@
 
 
 <h3>In Java</h3>
-<pre>
+<source lang="java">
 import ij.IJ;
 import ij.plugin.PlugIn;
 import ij.gui.GenericDialog;
@@ -69,10 +69,11 @@ public class Command_Launcher implements PlugIn {
         IJ.doCommand(command);
     }
 }
-</pre>
+</source>
 
 <h3>In Jython</h3>
-<pre>
+
+<source lang="python">
 from java.awt import Color
 from java.awt.event import TextListener
 import ij
@@ -96,10 +97,11 @@ prompt.addTextListener(TypeListener())
 gd.showDialog()
 if not gd.wasCanceled():
     ij.IJ.doCommand(gd.getNextString())
-</pre>
+</source>
 
 <h3>In Clojure</h3>
-<pre>
+
+<source lang="lisp">
 (import '(java.awt Color)
         '(java.awt.event TextListener))
 
