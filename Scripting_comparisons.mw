@@ -113,7 +113,7 @@ if not gd.wasCanceled():
             (let [text (. prompt (getText))
                   len (count commands)]
                 (loop [i 0]
-                    (if (. it (hasNext))
+                    (if (< i len)
                       (if (= text (aget commands i))
                         (. prompt (setForeground (. Color black)))
                         (recur (inc i)))
