@@ -1,0 +1,124 @@
+<h1>Example: a command launcher</h1>
+<p>A short plugin is used as example: a little dialog window that lets you type in a command for ImageJ to execute. A command is a menu item, which executes a plugin.</p>
+<p>As the name of the command is typed, the color of the text changes from red to black if the command exists.</p>
+<p>The plugin consists of four parts:</p>
+<ol>
+<li>Obtaining the list of all commands, from ij.Menus class.</li>
+<li>Setting up a dialog with a text box.</li>
+<li>Adding a text listener to the text box, that changes the color of the font in completing the typing of a word that matches a command.</li>
+<li>Executing the command when clicking the 'ok' button or pushing the return key.</li>
+</ol>
+
+<p>The command launcher as written in java is by far the longest in lines of code, and worse, the most verbose.</p>
+<p>While in Clojure one is able to declare types if desired, it's not required; the low computational requirements of the plugin do not invite to make it verbose unnecessarily. But java demands type declarations just so that the plugin can be compiled and thus a binary .class file generated.</p>
+<p>While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using <i>let</i> statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not <i>required</i> as in java, neither as natural and straightforward as in Clojure.</p>
+<p>As an advantage, each jython script executes within its own namespace and instance of the interpreter, whereas clojure scripts run all within a unique static interpreter and thus share the namespace.</p>
+
+
+<h3>In Java</h3>
+<pre>
+import ij.IJ;
+import ij.plugin.PlugIn;
+import ij.gui.GenericDialog;
+import java.util.Hashtable;
+import java.util.Collections;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.awt.TextField;
+import java.awt.event.TextListener;
+import java.awt.event.TextEvent;
+import java.awt.Color;
+
+public class Command_Launcher implements PlugIn {
+
+    public void run(String arg) {
+        // obtain a list of all commands, sorted
+        Hashtable commands = ij.Menus.getCommands();
+        final ArrayList keys = new ArrayList();
+        keys.addAll(commands.keySet());
+        Collections.sort(keys);
+
+        // gui
+        GenericDialog gd = new GenericDialog("Launcher");
+        gd.addStringField("Command: ", "");
+        final TextField prompt = (TextField)gd.getStringFields().get(0);
+        prompt.setForeground(Color.red);
+
+        prompt.addTextListener(new TextListener() {
+            public void textValueChanged(TextEvent e) {
+                String text = prompt.getText();
+                // if a command matches, redo color to black
+                for (Iterator it = keys.iterator(); it.hasNext(); ) {
+                    String command = (String)it.next();
+                    if (command.equals(text)) {
+                        prompt.setForeground(Color.black);
+                        return;
+                    }
+                }
+                // no command found, set to red:
+                prompt.setForeground(Color.red);
+            }
+        });
+
+        gd.showDialog();
+        if (gd.wasCanceled()) return;
+
+        String command = gd.getNextString();
+
+        // execute!
+        IJ.doCommand(command);
+    }
+}
+</pre>
+
+<h3>In Jython</h3>
+<pre>
+from java.awt import Color
+from java.awt.event import TextListener
+import ij
+
+commands = ij.Menus.getCommands().keySet().toArray()
+gd = ij.gui.GenericDialog('Command Launcher')
+gd.addStringField('Command: ', '');
+prompt = gd.getStringFields().get(0)
+prompt.setForeground(Color.red)
+
+class TypeListener(TextListener):
+    def textValueChanged(self, tvc):
+        text = prompt.getText()
+        for c in commands:
+            if c == text:
+                prompt.setForeground(Color.black)
+                return
+        prompt.setForeground(Color.red)
+
+prompt.addTextListener(TypeListener())
+gd.showDialog()
+if not gd.wasCanceled():
+    ij.IJ.doCommand(gd.getNextString())
+</pre>
+
+<h3>In Clojure</h3>
+<pre>
+(import '(java.awt Color)
+        '(java.awt.event TextListener))
+
+(let [commands (. (.. ij.Menus (getCommands) (keySet)) (toArray))
+      gd (new ij.gui.GenericDialog "Command Launcher")]
+  (. gd (addStringField "Command: " "" ))
+  (let [prompt (.. gd (getStringFields) (get 0))]
+    (. prompt (setForeground (. Color red)))
+    (. prompt (addTextListener (proxy [TextListener] []
+        (textValueChanged [tvc]
+            (let [text (. prompt (getText))
+                  len (count commands)]
+                (loop [i 0]
+                    (if (. it (hasNext))
+                      (if (= text (aget commands i))
+                        (. prompt (setForeground (. Color black)))
+                        (recur (inc i)))
+                      (. prompt (setForeground (. Color red)))))))))))
+  (. gd (showDialog))
+  (if (not (. gd (wasCanceled)))
+   (. ij.IJ (doCommand (. gd (getNextString))))))
+</pre>
