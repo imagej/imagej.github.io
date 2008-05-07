@@ -123,4 +123,4 @@ if not gd.wasCanceled():
   (. gd (showDialog))
   (if (not (. gd (wasCanceled)))
    (. ij.IJ (doCommand (. gd (getNextString))))))
-</pre>
+</source>
