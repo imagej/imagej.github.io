@@ -2,9 +2,9 @@
 
 <p>Fiji is hosted on a main git repository which contains several declared submodules such as VIB and TrakEM2.</p>
 
-<p>With git, any git command excuted within any subdirectory of the repository affects the overall git repository.</p>
+<p>With git, any git command executed within any subdirectory of the repository affects the overall git repository.</p>
 
-<p>Submodules, although existing as folders inside the fiji repository, are different: only the folder name, as a path pointer, is registered as belonging to fiji's git repository.</p> 
+<p>Submodules, although existing as folders inside the fiji repository, are different: only the folder name, as a path pointer, is registered as belonging to fiji's git repository, together with the current revision ("commit name", i.e. that 40-digit hex string which is the unique identifier of each commit) of that submodule.</p> 
 
 <p>Each submodule is a proper full-fledged git repository, so any git commands executed within the folders of the submodule will affect that git repository, not fiji's.</p>
 
@@ -15,21 +15,25 @@
 ~/fiji/TrakEM2$ git status
 </pre>
 
-<p>So you observe some unstaged changes. Then add them and commit them:</p>
+<p>Say you observe some unstaged changes. Just add and commit them:</p>
 
 <pre>
 ~/fiji/TrakEM2$ git add path/to/some_file.java
 ~/fiji/TrakEM2$ git commit
 </pre>
 
-<p>Then move up and add the commit sha sum as the new submodule state inside fiji.</p>
-<p><b>BE CAREFUL:</b> adding "TrakEM" and "TrakEM/" is not the same at all! The latter would add all non-ignorable files under TrakEM2's subfolder into fiji's repository, which is NOT what you want. If you screwed up, use <i>"git reset --hard"</i> before proceeding to unstage any changes in fiji's git repository.</p>
+<p>You can work as much as you like inside the submodule, and if you have something you want to commit to Fiji, the superproject, first make sure you pushed the changes of the submodule!</p>
+
+<p>Then move up and add the current revision of the submodule inside fiji.</p>
 
 <pre>
+~/fiji/TrakEM2$ git push
 ~/fiji/TrakEM2$ cd ..
 ~/fiji$ git add TrakEM2
 ~/fiji$ git commit
 </pre>
+
+<p><b>BE CAREFUL:</b> adding "TrakEM" and "TrakEM/" is not the same at all! The latter would add all non-ignorable files under TrakEM2's subfolder into fiji's repository, which is NOT what you want. If you screwed up, use <i>"git reset --hard"</i> before proceeding to unstage any changes in fiji's git repository.</p>
 
 <p>After the above, fiji has been updated to track the latest TrakEM2 commit.</p>
 
