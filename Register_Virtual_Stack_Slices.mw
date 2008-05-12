@@ -8,6 +8,7 @@ On choosing SIFT one can still constrain the registration to be translation-only
 <li>Select the source directory to read images from. The names must be bit-sortable.</li>
 <li>Select the target directory to store registered images to.</li>
 </ol>
+</p>
 
 == Example ==
 
