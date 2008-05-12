@@ -1,0 +1,21 @@
+<p>This plugin takes a list of image slices stored in a folder, and delivers a list of registered image slices (with enlarged canvas).</p>
+<p>The process is as follows:
+<ol>
+<li>Select "Plugins - Registration - Register Virtual Stack Slices"</li>
+<li>Select whether to register with translation only (phase-correlation), or both translation and rotation (SIFT).<br />
+On choosing SIFT one can still constrain the registration to be translation-only in the following dialog.</li>
+<li>If SIFT was chosen, specify algorithm parameters.</li>
+<li>Select the source directory to read images from. The names must be bit-sortable.</li>
+<li>Select the target directory to store registered images to.</li>
+</ol>
+
+== Example ==
+<p>Event this sequence of rather noisy transmission electron microscopy images, with considerable variations from slice to slice, get registered properly:</p>
+<br />
+<table>
+<tr><td><b>Raw:</b></td><td><b>Registered:</b></td></tr>
+<tr><td>[[Image:Stack4.gif]]</td><td>[[Image:Stack4-2.gif]]</td></tr></table>
+
+== See also ==
+* [http://www.ini.uzh.ch/~acardona/howto.html#register_virtual_stack Register Virtual Stack] at TrakEM2 website.
+* [http://www.ini.uzh.ch/~acardona/howto.html#sift_parameters SIFT parameters explained] at TrakEM2 website.
