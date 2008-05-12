@@ -10,7 +10,8 @@ On choosing SIFT one can still constrain the registration to be translation-only
 </ol>
 
 == Example ==
-<p>Event this sequence of rather noisy transmission electron microscopy images, with considerable variations from slice to slice, get registered properly:</p>
+
+<p>Even this sequence of rather noisy transmission electron microscopy images, with considerable variations from slice to slice, get registered properly:</p>
 <br />
 <table>
 <tr><td><b>Raw:</b></td><td><b>Registered:</b></td></tr>
