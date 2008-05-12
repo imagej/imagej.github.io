@@ -125,8 +125,12 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 === Registration ===
 
-* '''Align Image by line ROI''':
+* '''Align Image by line ROI''': Set a line ROI in two images and run this plugin to register the second to the first, with scale/rotate/translate according to the orientation and length of the lines.
 * '''Rigid Registration''':
+* '''Moving Least Squares''': Given two sets of points in two images, register one image to the other according to the point correspondences.
+* '''bUnwarpJ''':
+* '''Register Virtual Stack Slices''': Given a folder of ordered images, where each image is a slice in a series, register each slice to the previous using [http://en.wikipedia.org/wiki/Scale-invariant_feature_transform SIFT] (only translation or translation+rotation) or phase-correlation (no rotation).
+* '''Stiching (3D)''': Given two stacks, stitch them together (translation only, but in X, Y <i>and</i> Z axes). Very useful for joining two confocal stacks. Accepts retangular ROIs in each stack to limit the area to search into.
 
 === Scripting ===
 * '''BeanShell Interpreter''': This plugin launches an interactive BeanShell interpeter.  For more information on BeanShell support, see [[BeanShell Scripting]]
