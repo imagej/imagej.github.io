@@ -1,4 +1,5 @@
 <p>This plugin takes a list of image slices stored in a folder, and delivers a list of registered image slices (with enlarged canvas).</p>
+<p>The registration is translation only, or rotation+translation. No scaling, no non-linear deformations.</p>
 <p>The process is as follows:
 <ol>
 <li>Select "Plugins - Registration - Register Virtual Stack Slices"</li>
