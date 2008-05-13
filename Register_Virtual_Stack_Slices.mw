@@ -18,6 +18,30 @@ On choosing SIFT one can still constrain the registration to be translation-only
 <tr><td><b>Raw:</b></td><td><b>Registered:</b></td></tr>
 <tr><td>[[Image:Stack4.gif]]</td><td>[[Image:Stack4-2.gif]]</td></tr></table>
 
+== Scripting / PlugIn ==
+
+<p>You can call the plugin in a non-interactive fashion using jython:</p>
+<source lang="java">
+import ini.trakem2.imaging.Registration;
+
+[...]
+
+String source_dir = "/path/to/source/";
+String target_dir = "/path/to/target/";
+// can be PHASE_CORRELATION or SIFT
+int registration_type = PHASE_CORRELATION
+// Can be null if using PHASE_CORRELATION
+Registration.SIFTParameters sp = new Registration.SIFTParameters();
+// image scale at which phase-correlation works, for performance
+float scale = 0.5f;
+// minimum cross-correlation score to accept phase-correlation results, otherwise try pure cross-correlation
+// (use as low as 0.4 if images are noisy, or at your discretion)
+float min_R = 0.7;
+
+Register_Virtual_Stack.slices.exec(source_dir, target_dir, registration_type, sp, scale, min_R);
+
+</source>
+
 == See also ==
 * [http://www.ini.uzh.ch/~acardona/howto.html#register_virtual_stack Register Virtual Stack] at TrakEM2 website.
 * [http://www.ini.uzh.ch/~acardona/howto.html#sift_parameters SIFT parameters explained] at TrakEM2 website.
