@@ -20,16 +20,17 @@ On choosing SIFT one can still constrain the registration to be translation-only
 
 == Scripting / PlugIn ==
 
-<p>You can call the plugin in a non-interactive fashion using jython:</p>
+<p>You can call the plugin in a non-interactive fashion from java code:</p>
 <source lang="java">
 import ini.trakem2.imaging.Registration;
+import register_virtual_stack.Register_Virtual_Stack_Slices;
 
 [...]
 
 String source_dir = "/path/to/source/";
 String target_dir = "/path/to/target/";
 // can be PHASE_CORRELATION or SIFT
-int registration_type = PHASE_CORRELATION
+int registration_type = Register_Virtual_Stack_Slices.PHASE_CORRELATION;
 // Can be null if using PHASE_CORRELATION
 Registration.SIFTParameters sp = new Registration.SIFTParameters();
 // image scale at which phase-correlation works, for performance
@@ -38,8 +39,21 @@ float scale = 0.5f;
 // (use as low as 0.4 if images are noisy, or at your discretion)
 float min_R = 0.7;
 
-Register_Virtual_Stack.slices.exec(source_dir, target_dir, registration_type, sp, scale, min_R);
+Register_Virtual_Stack_Slices.exec(source_dir, target_dir, registration_type, sp, scale, min_R);
 
+</source>
+
+<p>The above can of course be called from any scripting language, such as Jython:</p>
+<source lang="python">
+from ini.trakem2.imaging import Registration
+from register_virtual_stack import Register_Virtual_Stack_Slices
+source_dir = "/path/to/source/"
+target_dir = "/path/to/target/"
+registration_type = Register_Virtual_Stack_Slices.PHASE_CORRELATION
+sp = new Registration.SIFTParameters()
+scale = 0.5
+min_R = 0.7
+Register_Virtual_Stack_Slices.exec(source_dir, target_dir, registration_type, sp, scale, min_R);
 </source>
 
 == See also ==
