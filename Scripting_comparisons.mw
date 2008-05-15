@@ -125,7 +125,7 @@ if not gd.wasCanceled():
    (. ij.IJ (doCommand (. gd (getNextString))))))
 </source>
 
-<p>A second version, lispier, rewritten from the above by Clojure's author [http://clojure.sourceforge.net Rich Hickey]. Note the use of the <i>some</i> funtion to check whether any given key in a list (<i>text</i>) is contained in a set of keys (<i>commands</i>):</p>
+<p>A second version, lispier, rewritten from the above by Clojure's author [http://clojure.sourceforge.net Rich Hickey]. Note the use of the <i>some</i> funtion to check whether any given key in a list (<i>text</i> is the only key here) is contained in a set of keys (<i>commands</i>):</p>
 
 <source lang="lisp">
 (import '(java.awt Color)
