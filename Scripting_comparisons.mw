@@ -13,6 +13,7 @@
 <p>While in Clojure one is able to declare types if desired, it's not required; the low computational requirements of the plugin do not invite to make it verbose unnecessarily. But java demands type declarations just so that the plugin can be compiled and thus a binary .class file generated.</p>
 <p>While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using <i>let</i> statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not <i>required</i> as in java, neither as natural and straightforward as in Clojure.</p>
 <p>As an advantage, each jython script executes within its own namespace and instance of the interpreter, whereas clojure scripts run all within a unique static interpreter and thus share the namespace.</p>
+<p>The javascript version (at least, the naive code pasted below) is very much java-like. Each script runs on its separate thread and namespace, like jython scripts.</p>
 
 
 <h3>In Java</h3>
@@ -147,4 +148,43 @@ if not gd.wasCanceled():
   (.showDialog gd)
   (when-not (.wasCanceled gd)
     (.doCommand ij.IJ (.getNextString gd))))
+</source>
+
+
+<h3>In Javascript</h3>
+
+<source lang="javascript">
+// All ImageJ and java.lang.* classes have been automatically imported
+importClass(Packages.java.util.ArrayList);
+commands = Menus.getCommands();
+keys = new ArrayList(commands.keySet());
+
+gd = new GenericDialog("Command Launcher");
+gd.addStringField("Command: ", "");
+prom = gd.getStringFields().get(0);
+importClass(Packages.java.awt.Color)
+prom.setForeground(Color.red);
+
+// Create a body for the interface TextListener,
+// since 'new' cannot be called directly on an interface
+body = { textValueChanged: function(evt) {
+                text = prom.getText();
+                for (i=0;i<keys.size();i++) {
+                        command = keys.get(i);
+                        if (command.equals(text)) {
+                                prom.setForeground(Color.black);
+                                return;
+                        }
+                }
+                // no command found
+                prom.setForeground(Color.red);
+        }
+}
+importClass(Packages.java.awt.event.TextListener);
+prom.addTextListener(new TextListener(body));
+
+gd.showDialog();
+if (!gd.wasCanceled()) {
+        IJ.doCommand(gd.getNextString());
+}
 </source>
