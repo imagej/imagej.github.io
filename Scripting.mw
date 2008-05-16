@@ -1,0 +1,37 @@
+= Using an interpreter =
+
+All scripting languages use the same basic interpreter, with the following common features.
+
+== General key bindings ==
+
+* up arrow: bring the previously typed command.
+* down arrow: bring the next typed command.
+* enter or return: execute the contents of the prompt.
+
+== Multiline editing and keybidings==
+
+You can enlarge the prompt by dragging the middle bar.
+
+* shift + enter: create a new line within the prompt.
+* shift + up arrow: move to the line above within the prompt.
+* shift + down arrow: id, down.
+
+== Selecting and executing text from the screen ==
+
+On selecting text, a popup offers to:
+
+* copy
+* execute
+* save to a new file
+
+= Creating scripts and using "refresh scripts" =
+
+On startup, ImageJ will run all "refresh scripts" plugins, one for each supported language. This will result in all scripts present within the plugins menus to be added to the menus.
+
+To run a script, just select it from the plugins menus.
+
+If you edit a script that is already placed in the menus, you don't need to do anything else: just save the text file and run it again by selecting it from the menus.
+
+If you add a new script and ImageJ is running, just go to Plugins - Scripting and run the appropriate Refresh * Scripts for the language.
+
+For the script to appear in the Plugin menus, it needs to terminate in the appropriate file extension. For example, ".js" for javascript, ".py" for jython, ".rb" for jruby, ".clj" for clojure, and ".bs" for beanshell script.
