@@ -140,7 +140,7 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 * '''Javascript Interpreter''': This plugin launches an interactive Javascript interpeter.  For more information on Javascript support, see [[Javascript Scripting]]
 * '''Macro Interpreter''': This plugin launches an interactive ImageJ Macro interpeter.  For more information see [http://www.mcdb.ucla.edu/research/hartenstein/acardona/software.html#ImageJ%20Macro%20interpreter Macro Interpreter] and [http://www.mcdb.ucla.edu/research/hartenstein/acardona/cli_examples.html examples].
 
-See also [[Scripting Guidelines]].
+See also [[Scripting Help]].
 
 === Segmentation ===
 
