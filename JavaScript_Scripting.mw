@@ -1,0 +1,106 @@
+= Javascript tutorial for ImageJ =
+
+== Language basics ==
+
+=== Importing packages and classes ===
+
+By default, all ImageJ and java.lang.* classes are imported.
+
+You can specify further imports by:
+
+ // Import all classes under java.io.*
+ importPackage(Package.java.io)
+ 
+ // Import a single class instead
+ importClass(Package.java.io.File)
+
+=== Creating import namespaces ===
+
+  var awt_bindings = new JavaImporter(Packages.java.awt.Frame, Packages.java.awt.Button);
+  
+  with (awt_bindings) {
+    // imported classes visible ONLY in this block
+    win = new Frame("Title");
+    b = new Button("Press me");
+    win.add(b);
+    win.pack();
+    win.setVisible(true);
+  }
+
+=== Opening and creating ImageJ images ===
+
+  imp = new Opener().openImage("/path/to/image.jpg");
+  // do some processing
+  // ...
+  imp.show();
+
+  // from scratch:
+  width = 512
+  height = 512
+  pixels = new java.lang.reflect.Array.newInstance(java.lang.Byte.TYPE, width * height);
+  // process the pixels
+  // ...
+  channel = new java.lang.reflect.Array.newInstance(java.lang.Byte.TYPE, 256);
+  for (i=0; i<channel.length; i++) channel[i] = Integer(i).byteValue();
+  cm = new LUT(channel, channel, channel);
+  imp = new ImagePlus("the title", new ByteProcessor(width, height, pixels, cm));
+  imp.show();
+
+  // a bit less from scratch
+  imp = ImagePlus("the title", new ByteProcessor(512, 512));
+  pixels = imp.getProcessor().getPixels();
+  // do some processing ...
+  // ...
+  imp.show();
+
+=== Running ImageJ commands ===
+
+To launch a command:
+
+  // in a separate thread:
+  IJ.doCommand("FFT");
+
+  // instead, waiting until it finishes:
+  IJ.run("FFT");
+
+
+== Advanced scripting ==
+
+To create an ImageListener without declaring a new class that implements such java interface, simply use a function that will be mapped to all its methods (as long as they have the same signature, which they do in this case):
+
+  ImagePlus.addImageListener( function (imp, name) {
+        if (name == "imageOpened") {
+                IJ.log("Opened image: " + imp);
+        } else if (name == "imageClosed") {
+                IJ.log("Closed image: " + imp);
+        } else if (name == "imageUpdated") {
+                IJ.log("Updated image: " + imp);
+        }
+  });
+
+
+Alternatively, one can create an object with declared functions inside to assign then to an anonymous class created on the fly from an interface:
+
+  body = {
+    run: function () {
+      IJ.log("Running!");
+    }
+  }
+  // Runnable is an interface
+  runnable = new Runnable(body);
+  new Thread(runnable).start();
+
+Simplified:
+
+  new Thread( function () { IJ.log("Running!"); } ).start();
+
+What the code above did: to look for an interface that could take a method with no arguments, represented by the function, and instantiate an anonymous class that implements such interface with the function mapped to its method.
+
+See also an [http://pacific.mpi-cbg.de/wiki/index.php/Scripting_comparisons#In_Javascript example plugin] for ImageJ written in javascript.
+
+== Links ==
+* [http://www.mozilla.org/rhino/tutorial.html Tutorial] at Mozilla Rhino webpages.
+* [http://www.mozilla.org/rhino/ScriptingJava.html Scripting java with Javascript].
+* [http://www.mozilla.org/rhino/perf.html Performance tips].
+
+See also the [[Scripting_comparisons]].
