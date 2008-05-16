@@ -98,7 +98,7 @@ What the code above did: to look for an interface that could take a method with 
 
 See also an [http://pacific.mpi-cbg.de/wiki/index.php/Scripting_comparisons#In_Javascript example plugin] for ImageJ written in javascript.
 
-== Links ==
+= Links =
 * [http://www.mozilla.org/rhino/tutorial.html Tutorial] at Mozilla Rhino webpages.
 * [http://www.mozilla.org/rhino/ScriptingJava.html Scripting java with Javascript].
 * [http://www.mozilla.org/rhino/perf.html Performance tips].
