@@ -87,17 +87,26 @@ prompt.setForeground(Color.red)
 
 class TypeListener(TextListener):
     def textValueChanged(self, tvc):
-        text = prompt.getText()
-        for c in commands:
-            if c == text:
-                prompt.setForeground(Color.black)
-                return
+        if prompt.getText() in commands:
+            prompt.setForeground(Color.black)
+            return  
         prompt.setForeground(Color.red)
 
 prompt.addTextListener(TypeListener())
 gd.showDialog()
 if not gd.wasCanceled():
     ij.IJ.doCommand(gd.getNextString())
+</source>
+
+Above, note that instead of looping the list of commands, we just query it with an "if element in list" construct. To actually loop, do the following:
+
+<source lang="python">
+text = prompt.getText()
+for c in commands:
+    if c == text:
+        prompt.setForeground(Color.black)
+        return
+prompt.setForeground(Color.red)
 </source>
 
 <h3>In Clojure</h3>
