@@ -1,4 +1,5 @@
-<h1>Example: a command launcher</h1>
+<big>'''Example: a command launcher'''</big>
+
 <p>A short plugin is used as example: a little dialog window that lets you type in a command for ImageJ to execute. A command is a menu item, which executes a plugin.</p>
 <p>As the name of the command is typed, the color of the text changes from red to black if the command exists.</p>
 <p>The plugin consists of four parts:</p>
@@ -242,3 +243,6 @@ unless gd.wasCanceled
   ij.IJ.doCommand gd.getNextString
 end
 </source>
+
+
+[[Category:Scripting]]
