@@ -11,3 +11,5 @@ Some useful documentation, in particular for Fiji:
 * [[Git_submodule_tutorial|A tutorial on submodules]]
 * [[Git_bisection|How to find which commit introduced a regression]]
 * [[Git_reflogs|A quick introduction into "Git refs"]]
+
+[[Category:Git]]
