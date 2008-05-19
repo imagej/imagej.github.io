@@ -60,3 +60,5 @@ Register_Virtual_Stack_Slices.exec(source_dir, target_dir, registration_type, sp
 == See also ==
 * [http://www.ini.uzh.ch/~acardona/howto.html#register_virtual_stack Register Virtual Stack] at TrakEM2 website.
 * [http://www.ini.uzh.ch/~acardona/howto.html#sift_parameters SIFT parameters explained] at TrakEM2 website.
+
+[[Category:Plugins]][[Category:Registration]]
