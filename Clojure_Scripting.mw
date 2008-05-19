@@ -196,3 +196,5 @@ Note above the quoted string "xml" to avoid evaluating it to a (non-existing) va
 </pre>
 
 * To get the arguments passed to the JVM, see contents of variable *command-line-args*
+
+[[Category:Scripting]]
