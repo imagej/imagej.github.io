@@ -79,3 +79,5 @@ After that, you can get rid of the now-obsolete tag:
 </pre>
 
 Note: instead of using a temporary tag, you can use the [[Git_reflogs|reflog]] of the HEAD ref ("git cherry-pick HEAD@{1}"), but if you are not familiar with the concept, tags are probably easier to handle.
+
+[[Category:Git]]
