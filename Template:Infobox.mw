@@ -1,0 +1,90 @@
+<includeonly>{| class="infobox" cellspacing="5" style="width: 21em; font-size: 90%; text-align: left;"
+! colspan="2" style="text-align: center; font-size: 130%;" | {{{title|{{{name|{{PAGENAME}}}}}}}} ({{{software|}}})
+|-
+{{#if:{{{author|}}}|
+! Author
+{{!}} {{{author|}}}
+{{!}}-
+}}
+{{#if:{{{filename|}}}|
+! File
+{{!}} {{{filename|}}}
+{{!}}-
+}}
+{{#if:{{{source|}}}|
+! Source
+{{!}} {{{source|}}}
+{{!}}-
+}}
+{{#if:{{{released|}}}|
+! Initial release
+{{!}} {{{released|}}}
+{{!}}-
+}}
+{{#if:{{{latest version|}}}|
+! Latest version
+{{!}} {{{latest version|}}}
+{{!}}-
+}}
+{{#if:{{{status|}}}|
+! Development status
+{{!}} {{{status|}}}
+{{!}}-
+}}
+{{#if:{{{category|}}}|
+! Category
+{{!}} {{{category|}}}
+{{!}}-
+}}
+{{#if:{{{website|}}}|
+! Website
+{{!}} {{{website|}}}
+{{!}}-
+}}
+|}</includeonly><noinclude>
+==Usage==
+<pre>
+{{Infobox Plugin
+| name                   =
+| software               =
+| author                 =
+| filename               =
+| source                 =
+| released               =
+| latest version         =
+| status                 =
+| category               =
+| website                =
+}}
+</pre>
+
+==Example==
+{{Infobox Plugin
+| name                   = Some plugin name
+| software               = Software name
+| author                 = John Smith ([mailto:john@smith.org john@smith.org])
+| filename               = [http://example.org/some.class some.class] (xx,xxx Bytes)
+| source                 = [http://example.org/some.java some.java] (xx,xxx Bytes)
+| released               = 01 January 1900
+| latest version         = 31 December 1999
+| status                 = stable, not active
+| category               = fancy examples
+| website                = [http://example.org]
+}}
+<pre style="overflow:auto">
+{{Infobox Plugin
+| name                   = Some plugin name
+| software               = Software name
+| author                 = John Smith ([mailto:john@smith.org john@smith.org])
+| filename               = [http://example.org/some.class some.class] (xx,xxx Bytes)
+| source                 = [http://example.org/some.java some.java] (xx,xxx Bytes)
+| released               = 01 January 1900
+| latest version         = 31 December 1999
+| status                 = stable, not active
+| category               = fancy examples
+| website                = [http://example.org]
+}}
+</pre>
+
+[[Category:Templates|{{PAGENAME}}]]
+</noinclude>
