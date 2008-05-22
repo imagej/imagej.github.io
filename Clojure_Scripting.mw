@@ -149,6 +149,11 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
       (println "Not a 32-bit image")))
 </pre>
 
+<p>Above, notice that one could have used also <i>apply</i> to apply <i>+</i> to all element of an array, with the same result:</p>
+<pre>
+      (println "Average pixel intensity" (/ (apply + pix) (count pix)))
+</pre>
+
 <p>To sum all pixels in an 8-bit image, one needs first to bit-and all bytes to 255, so they become integers and can be summed. But of course we should not <i>bit-and</i> the sum! To solve this, <i>reduce</i> accepts a first value (in this case, zero):</p>
 
 <pre>
