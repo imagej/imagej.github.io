@@ -138,7 +138,27 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 
 </pre>                                                                                                                                                                                                                
 <p>Above, notice that the <i>loop -- recur</i> construct is essentially a <i>let</i> declaration, with a second call (<i>recur</i>) to reset the variables to something else. In this case, the next index in the array. Note how the len is simply given the same value over and over, just to avoid calling <i>(count pixels)</i> at each iteration.</p>
-                                                                                                                                                                                                                      
+
+<p>Of course, there are lispier ways to loop an array of pixels. For example, to obtain the average of all pixels, we can use function <i>reduce</i>, which takes the first two elements of a list, applies a function to them, and then applies the function to the result and the next element, etc:</p>
+
+<pre>
+(let [fp (.getProcessor (.getImage ij.IJ))
+      pix (.getPixels fp)]
+   (if (instance? ij.process.FloatProcessor fp)
+      (println "Average pixel intensity" (/ (reduce + pix) (count pix)))
+      (println "Not a 32-bit image")))
+</pre>
+
+<p>To sum all pixels in an 8-bit image, one needs first to bit-and all bytes to 255, so they become integers and can be summed. But of course we should not <i>bit-and</i> the sum! To solve this, <i>reduce</i> accepts a first value (in this case, zero):</p>
+
+<pre>
+(let [bp (.getProcessor (.getImage ij.IJ))
+      pix (.getPixels bp)]
+  (if (instance? ij.process.ByteProcessor bp)
+    (println "Average intensity: " (float (/ (reduce (fn [x1 x2] (+ x1 (bit-and x2 255))) 0 pix) (count pix))))
+    (println "Not an 8-bit image")))
+</pre>
+
 <h3>Executing commands from the menus</h3>                                                                                                                                                                            
 <p>Any ImageJ menu command may be run on the active image:</p>                                                                                                                                                        
 <pre>                                                                                                                                                                                                                 
