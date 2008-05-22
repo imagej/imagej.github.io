@@ -159,6 +159,19 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
     (println "Not an 8-bit image")))
 </pre>
 
+<p>It could even be done using a local variable, but it's ugly and undesirable (why create it when it's not really needed)? Notice we need to create the local variable "sum" because variables declared by <i>let</i> are immutable.</p>
+
+<pre>
+(let [bp (.getProcessor (.getImage ij.IJ))
+      pix (.getPixels bp)]
+  (if (instance? ij.process.ByteProcessor bp)
+    (with-local-vars (sum 0)
+      (doseq pixel pix
+        (var-set sum (+ (var-get sum) (bit-and pixel 255))))
+      (println (float (/ (var-get sum) (count pix)))))
+    (println "Not an 8-bit image")))
+</pre>
+
 <h3>Executing commands from the menus</h3>                                                                                                                                                                            
 <p>Any ImageJ menu command may be run on the active image:</p>                                                                                                                                                        
 <pre>                                                                                                                                                                                                                 
