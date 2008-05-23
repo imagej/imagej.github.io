@@ -39,7 +39,7 @@
 </pre>
 <p>Above, notice how a class name is used instead of a pointer to call static fields.</p>
 
-<p>To enhance readability, use <i>import</i> when appropriate. Imports remain visibile throughout the current namespace:</p>
+<p>To enhance readability, use <i>import</i> when appropriate. Imports remain visible throughout the current namespace:</p>
 <pre>
 (import '(java.awt Color Rectangle)
         '(ij.plugin.filter PlugInFilter))
@@ -50,7 +50,6 @@
 </pre>
 
 <p>Choose whatever matches your mental schemes best.</p>
-
 
 <h3>Defining variables: obtaining the current image</h3>
 As a local variable <b>imp</b> declared within a <i>let</i> statement:
