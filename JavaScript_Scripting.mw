@@ -63,6 +63,24 @@ To launch a command:
   // instead, waiting until it finishes:
   IJ.run("FFT");
 
+=== Inspect java methods and fields in an object ===
+  
+
+To print the static fields and methods of ImagePlus class:
+
+  s = "";
+  for (a in ImagePlus) { s += " " + a; }
+
+... which prints INTEGRATED_DENSITY AREA_FRACTION etc.
+
+To print the fields and methods of an instance of ImagePlus (i.e. an image that already exists):
+
+  // get the current image
+  imp = IJ.getImage();
+  // print fields and methods
+  s = ""; for (a in imp) { s += " " + a; }
+
+... which prints all method names such as getStatistics isHyperStack etc. and fields like width and height (because there are public 'get' methods for it such as getWidth() and getHeight() .)
 
 == Advanced scripting ==
 
