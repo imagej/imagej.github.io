@@ -4,7 +4,15 @@ Fiji's development relies heavily on [http://git.or.cz Git].  The principal Fiji
 
 Some of Fiji's submodules are imported from third parties; most of them have their source code in [http://subversion.tigris.org/ Subversion] repositories, which are mirrored via '''git-svn'''. The mirrors are updated by a cron job on [[Pacific]].
 
+=== Fiji's repository ===
+
 The Git repositories on [[Pacific]] can be accessed anonymously, via URLs such as '''git://pacific.mpi-cbg.de/fiji.git/''', and they can be viewed via [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi gitweb].
+
+=== Contrib ===
+
+If you want to contribute to Git, you can do that with the ''contrib'' user:  Just use the URL contrib@pacific.mpi-cbg.de:fiji.git/ instead, and work on the ''contrib'' branch (the ''contrib'' user does not need a password, but can only push to the ''contrib'' branch).
+
+=== Further documentation ===
 
 Some useful documentation, in particular for Fiji:
 
