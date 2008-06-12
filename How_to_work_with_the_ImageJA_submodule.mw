@@ -1,0 +1,51 @@
+We have a modified ImageJ core that operates as Fiji's kernel.
+The source code is in a branch named 'fiji' in ImageJA repository.
+
+Here is how to get fiji's ImageJA branch to run Fiji:
+
+First go to fiji/ImageJA directory:
+
+ $ cd ImageJA/
+
+Then fetch all remote sources:
+
+ $ git fetch
+
+Then list all branches, local and remote, just to be sure. Note a branch named 'origin/fiji':
+
+ $ git branch -r
+  origin/HEAD
+  origin/fiji
+  origin/headless
+  origin/hltemp
+  origin/ij-singleton
+  origin/imagej
+  origin/imageja
+  origin/master
+  origin/mob
+  origin/obsolete/fontmetrics
+  origin/plugin-paths
+  origin/roi-changed
+  origin/tools
+
+Note that we have checked out the master branch:
+
+ $ git branch
+  * master
+
+... but we want the fiji branch. Here is how:
+
+ $ git checkout -b fiji origin/fiji
+
+Now we are tracking locally two branches: the master (ImageJA naked, very close to official ImageJ), and fiji's branch:
+
+ $ git branch
+  * fiji
+    master
+
+So, change directories up to fiji's main directory, and just type 'make':
+
+ $ cd ..
+ $ make
+
+Done!
