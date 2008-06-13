@@ -3,51 +3,23 @@ The source code is in a branch named 'fiji' in ImageJA repository.
 
 Here is how to get fiji's ImageJA branch to run Fiji:
 
-First go to fiji/ImageJA directory:
+First check out the submodule ImageJA in fiji/:
 
- $ cd ImageJA/
+ $ git submodule init ImageJA
+ $ git submodule update ImageJA
 
-Then fetch all remote sources:
+Note: make sure that you have _no_ trailing slash after "ImageJA". In other words, "ImageJA/" will _not_ work.
 
- $ git fetch
+Note: If the update finds a new revision to advance to, it will _detach_ the HEAD.  That means that you will not be on any branch.
 
-Then list all branches, local and remote, just to be sure. Note a branch named 'origin/fiji':
-
- $ git branch -r
-  origin/HEAD
-  origin/fiji
-  origin/headless
-  origin/hltemp
-  origin/ij-singleton
-  origin/imagej
-  origin/imageja
-  origin/master
-  origin/mob
-  origin/obsolete/fontmetrics
-  origin/plugin-paths
-  origin/roi-changed
-  origin/tools
-
-Note that we have checked out the master branch:
-
- $ git branch
-  * master
-
-... but we want the fiji branch. Here is how:
+Therefore, if you want to work on ImageJA's ''fiji'' branch, you need to create a local branch:
 
  $ git checkout -b fiji origin/fiji
 
-Now we are tracking locally two branches: the master (ImageJA naked, very close to official ImageJ), and fiji's branch:
+This only needs to be done once.  You can now work with "git pull", "git add", "git commit" and "git push" to your heart's content.
 
- $ git branch
-  * fiji
-    master
+If you update the ImageJA submodule with "git submodule update ImageJA" on purpose or by accident, you will have to go back to the ''fiji'' branch before doing any work inside ImageJA:
 
-So, change directories up to fiji's main directory, and just type 'make':
-
- $ cd ..
- $ make
-
-Done! A new ij.jar is compiled for Fiji, using the fiji branch of ImageJA.
+ $ git checkout fiji && git pull
 
 [[Category:Git]]
