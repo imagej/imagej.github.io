@@ -136,7 +136,7 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 * '''BeanShell Interpreter''': This plugin launches an interactive BeanShell interpeter.  For more information on BeanShell support, see [[BeanShell Scripting]]
 * '''Clojure Interpreter''': This plugin launches an interactive Clojure interpeter.  For more information on Clojure support, see [[Clojure Scripting]]
 * '''JRuby Interpreter''': This plugin launches an interactive JRuby interpeter.  For more information on JRuby support, see [[JRuby Scripting]]
-* '''Jython Interpreter''': This plugin launches an interactive Jython interpeter.  For more information on Jython support, see some  [http://www.mcdb.ucla.edu/research/hartenstein/acardona/jython_imagej_examples.html examples].
+* '''Jython Interpreter''': This plugin launches an interactive Jython interpeter.  For more information on Jython support, see [[Jython Scripting]] and also see some [http://www.mcdb.ucla.edu/research/hartenstein/acardona/jython_imagej_examples.html examples].
 * '''Javascript Interpreter''': This plugin launches an interactive Javascript interpeter.  For more information on Javascript support, see [[Javascript Scripting]]
 * '''Macro Interpreter''': This plugin launches an interactive ImageJ Macro interpeter.  For more information see [http://www.mcdb.ucla.edu/research/hartenstein/acardona/software.html#ImageJ%20Macro%20interpreter Macro Interpreter] and [http://www.mcdb.ucla.edu/research/hartenstein/acardona/cli_examples.html examples].
 
