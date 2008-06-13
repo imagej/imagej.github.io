@@ -48,4 +48,6 @@ So, change directories up to fiji's main directory, and just type 'make':
  $ cd ..
  $ make
 
-Done!
+Done! A new ij.jar is compiled for Fiji, using the fiji branch of ImageJA.
+
+[[Category:Git]]
