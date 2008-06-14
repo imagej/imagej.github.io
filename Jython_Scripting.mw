@@ -85,6 +85,15 @@ Now make a new IndexColorModel (that's what ImageJ's ij.process.LUT class is) fo
  imp = ImagePlus("Random", ByteProcessor(width, height, pix, cm)
  imp.show()
 
+<h4>Creating a random image, the easy way</h4>
+
+All the above can be summarized like the following:
+
+  from java.util import Random
+  imp = IJ.createImage("A Random Image", "8-bit", 512, 512, 1)
+  Random().nextBytes(imp.getProcessor().getPixels())
+  imp.show()
+
 <h3>The Jython interpreter plugin</h3>
 
 The interpreter provides a screen and a prompt. Type jython code on the prompt to interact with ImageJ.
