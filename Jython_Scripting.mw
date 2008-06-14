@@ -4,10 +4,9 @@
 <p>Any text after a # is commented out.</p>
 <p>There are no line terminators (such as ';' in other languages), neither curly braces to define code blocks.</p> 
 <p>Indentation defines code blocks.</p>
-<p>Functions are defined with <i>def</i>, and classes with <i>class</i>.
+<p>Functions are defined with <i>def</i>, and classes with <i>class</i>.</p>
 <p>Functions are objects, and thus storable in variables.</p>
 <p>Jython (and python in general) accepts a mixture of procedural and object-oriented code.</p>
-
 
 <h3>Defining variables: obtaining the current image</h3>
 
