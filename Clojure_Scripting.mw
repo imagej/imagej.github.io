@@ -206,6 +206,28 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 </pre>                                                                                                                                                                                                                
 <p>Eventually Clojure may add support for <i>set</i> methods as well.</p>
 
+
+<h1>Examples</h1>
+
+<h3>Fixing overexposed images: setting a pixel value to a desirable one for all pixels</h3>
+
+The problem: Leginon or the Gatan TEM camera acquired an overexposed image, and set all pixels beyond range to zero.
+
+The solution: iterate all pixels, if the pixel is zero set it to a desirable value, such as the maximum value of the main curve in the histogram (push 'auto' on the Brightness and Contrast dialog to see it.)
+
+ ; Assumes a FloatProcessor image
+ (defn fix [imp max]
+ (let [pix (.getPixels (.getProcessor imp))]
+   (loop [i (int 0)]
+     (if (< i (alength pix))
+       (do
+         (if (= 0 (aget pix i)) (aset pix i (float max)))
+         (recur (inc i)))))))
+ 
+ (let [imp (.getImage IJ)]
+   (fix imp (float 32500))
+   (.updateAndDraw imp))
+
 <h1>Appendix</h1>
 
 * The default output stream is at variable <i>*out*</i>. The Clojure Interpreter binds it to the PrintWriter that prints to the interpreter text area, by executing any typed in code within the following binding:
