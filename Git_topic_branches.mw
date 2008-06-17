@@ -1,0 +1,8 @@
+Topic branches are small-scale branches used for trying out new ideas.  Working on such a branch rather than directly on the master branch makes it easier to:
+* keep track of and then submit changes
+* work on several ideas at once
+* throw stuff away that didn't work
+* keep your work in progress up to date (and yet clearly separable from) changes to the master branch (using git rebase)
+For me the ability to work like this has been perhaps the major innovation of using git. 
+
+Until Johannes puts something of his own up, you can try google or see e.g [http://github.com/dchelimsky/rspec-dev/wikis/topic-branches this post by Wincent Colaiuta] on this topic.
