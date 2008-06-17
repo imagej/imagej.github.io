@@ -209,15 +209,17 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 
 <h1>Examples</h1>
 
-<h3>Fixing overexposed images: setting a pixel value to a desirable one for all pixels</h3>
+<h3>Fixing overexposed images: setting a pixel value to a desirable one for all overexposed pixels</h3>
 
-The problem: Leginon or the Gatan TEM camera acquired an overexposed image, and set all pixels beyond range to zero.
+The problem: [http://ami.scripps.edu/software/leginon/ Leginon] or the Gatan TEM camera acquired an overexposed image, and set all pixels beyond range to zero.
 
-The solution: iterate all pixels, if the pixel is zero set it to a desirable value, such as the maximum value of the main curve in the histogram (push 'auto' on the Brightness and Contrast dialog to see it.)
+The solution: iterate all pixels; if the pixel is zero then set it to a desirable value, such as the maximum value of the main curve in the histogram (push 'auto' on the Brightness and Contrast dialog to see it.)
+
+In the example below, the <i>fix</i> function is called with the current image and the value 32500 as a floating point number. Notice also the type definition (which is optional) of the float pixel array, to enhance execution speed:
 
  ; Assumes a FloatProcessor image
  (defn fix [imp max]
- (let [pix (.getPixels (.getProcessor imp))]
+ (let [#^floats pix (.getPixels (.getProcessor imp))]
    (loop [i (int 0)]
      (if (< i (alength pix))
        (do
