@@ -101,6 +101,8 @@ Please make sure that your commit message is in a format like this:
  
  After an empty line, you can go into details what this commit does, and why.  Maybe even how.
 
+Note: a neat trick when you realize that you did not commit after all, is to delete the ''complete'' commit message, save and exit.  This will abort the commit.  The ability to abort a commit comes in pretty handy e.g. when you see an unwanted entry in the list of files to be committed.
+
 For more advanced Git usage, see "Making changes (advanced)".
 
 = Pushing changes upstream =
