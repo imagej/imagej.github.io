@@ -67,7 +67,7 @@ If you finished a topic, and want to bring the changes to the branch ''master'',
  $ git checkout master
  $ git merge topic234
 
-Just like cherry-pick, a merge can fail with conflicts.  See [[Git_topic_branches#Resolving_Conflicts|Resolving_Conflicts]] for details.
+Just like cherry-pick, a merge can fail with conflicts.  See [[Git_topic_branches#Resolving_conflicts|Resolving_Conflicts]] for details.
 
 Instead of merging, you might want to rebase your topic branch on top of the current master.  To see what the difference between a merge and a rebase is, consider this history (left is older than right):
 
@@ -100,7 +100,7 @@ So, to incorporate your topic branch into the ''master'' branch with a rebase, y
 Typically, merges should be preferred to rebases, because merges show the history better: after a rebase, the tip of the branch is basically untested, as you only tested the commits before they were rebased.
 
 However, a rebase comes in pretty handy from time to time, especially if you want to rewrite commit history, as described in the next section.
- 
+
 = Advanced topic branch editing (AKA rebase on drugs) =
 
 Often, a topic branch becomes a collection of nice commits and fixup commits, and maybe a few commits that are no longer necessary.  In such a case, you probably want to clean up the commit history a bit.  This is where the ''interactive'' rebase comes in.
