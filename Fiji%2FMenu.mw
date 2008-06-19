@@ -7,29 +7,23 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 === <nowiki>[Ungrouped Plugins]</nowiki> ===
 
 * '''3D Viewer''': This will launch the ImageJ 3D viewer so that you can visualize an image in 3D, either volume- or surface-rendered.  [http://132.187.25.13/home/?category=Download&page=Viewer3D Further documentation.]
-* '''Get Class Versions''':
-* '''Multiple Image Processor''':
-* '''View5D''':
-* '''Volume Viewer''':
+* '''Multiple Image Processor''': Apply a macro to all files in a folder, outputting resulting images to a target folder.
+* '''View5D''': interactively displays of up to 5 dimensional volumetric datasets. See the [http://www.nanoimaging.de/View5D/ View5D main web page.]
+* '''Volume Viewer''': shows stacks as volumes within a 3D-(xyz)-space. Both volume rendering and arbitrary 3D reslicing. See the [http://rsb.info.nih.gov/ij/plugins/volume-viewer.html volume viewer web page.]
 
 === Analyze ===
 
-* '''Grid''':
+* '''Grid''': overlays a grid of cells on an image, non-destructively, as a visual aid for measurements.
 * '''Find differences''':
 * '''Delaunay Voronoi''':
-* '''Measure RGB''':
+* '''Measure RGB''': applies the measurement command to each color channel separately, and also to the result of a weighted merging of red, green and blue.
 * '''Plot Dots''':
-* '''VIB Protocol''':
-* '''2D Histogram''': draw a 2D histogram showing the distribution of values in pairs of points in two images
-* '''Visual Grep''':
-* '''Compute Curvatures''': calculate the principal curvatures of an image at each point
-* '''Tubeness''': calculate a score of how "tube-like" each point in an image is, based on the principal curvatures
-* '''Surfaceness''': calculate a score of how "surface-like" each point in an image is, based on the principal curvatures
-
-=== Color ===
-
-* '''Average Color''':
-* '''RGB to CIELAB''':
+* '''VIB Protocol''': Visual Insect Brain protocol for segmentation and annotation of 3D structures. See [http://www.neurofly.de/ main VIB web page.]
+* '''2D Histogram''': draw a 2D histogram showing the distribution of values in pairs of points in two images.
+* '''Visual Grep''': find any occurrences of a small image <i>needle</i> into a larger image <i>haystack</i>.
+* '''Compute Curvatures''': calculate the principal curvatures of an image at each point.
+* '''Tubeness''': calculate a score of how "tube-like" each point in an image is, based on the principal curvatures. This plugin is very useful as a preprocessing step to visualize axons and dendrites in the 3D Viewer plugin.
+* '''Surfaceness''': calculate a score of how "surface-like" each point in an image is, based on the principal curvatures.
 
 === Examples ===
 
@@ -39,7 +33,7 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 * '''Example Plot''': Creates a plot with two colored lines in it. Written in Java.
 * '''list all threads''': Lists all threads to stdout (the terminal, or Console.app in MacOSX). Written in [http://www.jython.org Jython].
 * '''random noise example''': Generates two 8-bit images with random pixel value in each. Written in [http://clojure.sourceforge.net Clojure] (lisp).
-* '''T2 Select All''': Selects all objects in an open TrakEM2 display. Writen in [http://www.jython.org Jython].
+* '''T2 Select All''': Selects all objects in an open TrakEM2 display. Written in [http://www.jython.org Jython].
 * '''T2 set all transforms to identity''': Resets the transformation matrix (translation,rotation,scaling and shear) of all objects in a TrakEM2 display to identity (zero translation, scaling of 1.0, zero rotation and no shear). Written in [http://www.jython.org Jython].
 
 === Image IO ===
@@ -47,6 +41,7 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 <i>This submenu should be removed and the image loaders and writers moved into Import> or Save as...> </i>
 
 === Image5D ===
+Multiple color channel support. See [http://rsb.info.nih.gov/ij/plugins/image5d.html main Image5D website.]
 * '''New Image5D''':
 * '''Open Image5D''':
 * '''Save Image5D''':
@@ -68,7 +63,7 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 * '''Transfer Channel Settings''':
 
 === LOCI ===
-
+Multiple image format readers and writers, including for the [http://www.openmicroscopy.org/ Open Microscopy Environment or OME]. See the [http://www.loci.wisc.edu/ome/formats.html main LOCI website.]
 * '''4D Data Browser''':
 * '''Bio-Formats Importer''':
 * '''Bio-Formats Exporter''':
@@ -146,6 +141,7 @@ See also [[Scripting Help]] and the [[Scripting_comparisons]].
 
 * '''Segmentation Editor''': This plugin provides a user interface for manually segmenting images by painting over regions in an image stack.  [http://132.187.25.13/home/?category=Download&page=SegmentationEditor Futher documentation.]
 * '''Simple Neurite Tracer''': A plugin for semi-automated tracing of neurons in a 3D image stack [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/ Further documentation]
+* '''Level Sets''': Active contours implementation using Level Sets and Fast Marching methods. See the [http://math.berkeley.edu/~sethian/ Level Set and Fast Marching methods] and the [http://en.wikipedia.org/wiki/Level_set wikipedia on Level Sets].
 
 === Stacks ===
 
@@ -154,13 +150,9 @@ See also [[Scripting Help]] and the [[Scripting_comparisons]].
 * '''Crop (3D)''': Crop an image stack [http://homepages.inf.ed.ac.uk/s9808248/imagej/three-pane-crop/ Further documentation]
 * '''Stack Reverser''': This plugin reverses the order of the slices in an image stack.
 
-=== Tools ===
-
-* '''Close All Without Saving''':
-
 === TransformJ ===
 
-<i>TransformJ is non-free, and in any case not have its own submenu - probably should rename this to Transform</i>
+<i>TransformJ is non-free, and in any case should not have its own submenu - probably should rename this to Transform</i>
 
 * '''TJ Affine''':
 * '''TJ Crop''':
