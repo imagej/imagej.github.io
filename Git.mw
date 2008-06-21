@@ -17,8 +17,10 @@ If you want to contribute to Git, you can do that with the ''contrib'' user:  Ju
 Some useful documentation, in particular for Fiji:
 
 * [[Git_mini_howto|A really quick 'n dirty HOWTO]]
+* [[Git_reflogs|A quick introduction into "Git refs"]]
 * [[Git_submodule_tutorial|A tutorial on submodules]]
 * [[Git_bisection|How to find which commit introduced a regression]]
-* [[Git_reflogs|A quick introduction into "Git refs"]]
+* [[Git_topic_branches|Working with topic branches]]
+* [[SSH_public_keys|Setting up password-less SSH login]]
 
 [[Category:Git]]
