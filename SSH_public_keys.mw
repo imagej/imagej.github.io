@@ -2,28 +2,28 @@ Often, it is inconvenient to input your password all the time when you push/pull
 
 For such case, you can set up a public/private key pair.  Create them with
 
- ssh-keygen
+ ssh-keygen -t dsa
 
-Usually, it is a good idea to create a public/private key pair for specific purposes, so that a single compromised key (see [http://www.debian.org/security/2008/dsa-1576 an example] how that can happen even if you did not do anything wrong) does not affect all of your machines.  So, change the default name ''id_rsa'' to something like ''id_rsa.pacific'' before hitting ''Return''.
+Usually, it is a good idea to create a public/private key pair for specific purposes, so that a single compromised key (see [http://www.debian.org/security/2008/dsa-1576 an example] how that can happen even if you did not do anything wrong) does not affect all of your machines.  So, change the default name ''id_dsa'' to something like ''id_dsa.pacific'' before hitting ''Return''.
 
 You can password-protect your private key, in which case you have to use the program [http://en.wikipedia.org/wiki/Ssh-agent ssh-agent], but is is usually more convenient to leave the password empty, in which case you are not even asked for it anymore.
 
-Now you should have a file ''id_rsa.pacific.pub'' (the public key) in addition to ''id_rsa.pacific'' (the private key).
+Now you should have a file ''id_dsa.pacific.pub'' (the public key) in addition to ''id_dsa.pacific'' (the private key).
 
-Add the public key to the file ''$HOME/.ssh/authorized_keys'' on the '''remote''' computer, i.e. the computer you want to connect to without a password.
+Add the public key (the single line contained in the file ''id_dsa.pacific.pub'') to the file ''$HOME/.ssh/authorized_keys'' on the '''remote''' computer, i.e. the computer you want to connect to without a password.
 
 For convenience, you should now add a section like this to the file ''$HOME/.ssh/config'' on the '''local''' computer, i.e. the computer with the private key:
 
  Host pacific.mpi-cbg.de
      User hacker
-     IdentityFile /home/hacker/.ssh/id_rsa.pacific
+     IdentityFile /home/hacker/.ssh/id_dsa.pacific
 
 Without this section, you would have to specify both the identity file as well as the user everytime you connect.  For even further convenience, you can add a nick name:
 
  Host pacific
      HostName pacific.mpi-cbg.de
      User hacker
-     IdentityFile /home/hacker/.ssh/id_rsa.pacific
+     IdentityFile /home/hacker/.ssh/id_dsa.pacific
 
 With this, you can connect to the remote machine with
 
