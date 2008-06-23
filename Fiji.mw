@@ -3,9 +3,23 @@ __NOTOC__
 
 [[Image:Fiji.jpg|right|Fiji Is Just ImageJ]]
 
-The whole purpose of Fiji is to make installation of Java, ImageJ and several plugins easy.
+<center><big> Fiji Is Just ImageJ </big></center>
 
-The main focus is neuroscience, but it is hoped that Fiji proves useful to a wide range of users.
+== What is Fiji ==
+
+If ImageJ was a chocolate chip, Fiji would be a chocolate-chip muffin. 
+
+Fiji is a project aiming at simplifying, empowering
+* the installation of ImageJ
+* the usage of ImageJ 
+* the usage of specific, powerful ImageJ plugins
+* the development of plugins using ImageJ
+
+It is a carefully-cooked, stirred-with-love open source recipe that will install on your hard drive, whatever is your machine or what OS runs it, a fully featured distribution of ImageJ, with a blend selection of branded plugins (hopefully) filling all of your image processing needs, and more importantly, that just work. 
+
+These last points might be yet somewhat unfulfilled, for Fiji is still alpha software. But it is lead by a team of dedicated scientists that wishes to serve, and the packages we release are intended to be pretty stable and usable. 
+
+== Downloads ==
 
 At the moment, we support
 
@@ -16,13 +30,11 @@ At the moment, we support
 * Windows (x86), and
 * Windows (amd64)
 
-== Downloads ==
-
 You can download the packages [[Downloads|here]].
 
 == Reporting Problems ==
 
-If you find any bugs or problems with Fiji, you can [http://pacific.mpi-cbg.de/bugzilla/ report them here].  You can view the list of [http://pacific.mpi-cbg.de/cgi-bin/bugzilla/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=&content= unresolved problems here].
+We are delighted to hear about something that does not work, for our goal is to fix it. Seeing the number of different platforms we support, it would be awkward to expect everything working smooth in a snap. So please help us, by complaining about bugs. You can [http://pacific.mpi-cbg.de/bugzilla/ report them here] and view the list of [http://pacific.mpi-cbg.de/cgi-bin/bugzilla/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=&content= unresolved problems here].
 
 == Help ==
 
@@ -32,6 +44,4 @@ Find out how to get help [[Help|here]].
 
 For some descriptions of the plugins you'll find in Fiji, see [[Plugins Menu]]
 
-You will find our recently assembled task list [[TaskList|here]]
-
-We also just opened a [[Developers HowTo]]
+Thrilled by the project? Hoping it will support your need? Because of its structure and goals, the Fiji project can use the help of a very large range of competence. If you feel like helping (anyone can), you will find our recently assembled task list [[TaskList|here]]. We also just opened a [[Developers HowTo]].
