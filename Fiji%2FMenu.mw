@@ -123,7 +123,7 @@ Multiple image format readers and writers, including for the [http://www.openmic
 * '''Align Image by line ROI''': Set a line ROI in two images and run this plugin to register the second to the first, with scale/rotate/translate according to the orientation and length of the lines. See [[Align image by line ROI]].
 * '''Rigid Registration''':
 * '''Moving Least Squares''': Given two sets of points in two images, register one image to the other according to the point correspondences. You can define the points manually with Point Roi (just click and hold shift to add more than one point), and also from a script. See [[Moving Least Squares]]. 
-* '''bUnwarpJ''': see [http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/ bUnwarpJ]
+* '''bUnwarpJ''': Simultaneous registration of two images based on elastic deformations represented by B-splines. The invertibility of the deformations is forced through a consistency restriction. See [http://biocomp.cnb.csic.es/~iarganda/bUnwarpJ/ bUnwarpJ]
 * '''Register Virtual Stack Slices''': Given a folder of ordered images, where each image is a slice in a series, register each slice to the previous using [http://en.wikipedia.org/wiki/Scale-invariant_feature_transform SIFT] (only translation or translation+rotation) or phase-correlation (no rotation). For more information see [[Register Virtual Stack Slices]].
 * '''Stiching (3D)''': Given two stacks, stitch them together (translation only, but in X, Y <i>and</i> Z axes). Very useful for joining two confocal stacks. Accepts retangular ROIs in each stack to limit the area to search into. For more information see [[Stitching 3D]].
 
