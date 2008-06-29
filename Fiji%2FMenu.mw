@@ -152,8 +152,8 @@ See also [[Scripting Help]] and the [[Scripting_comparisons]].
 
 === Transform ===
 
-* '''SplineDeformationGenerator''': This plugin allows different types of deformations over any given image.  [http://biocomp.cnb.csic.es/~iarganda/SplineDeformationGenerator/ Futher documentation.]
-* '''Perspective''': 
+* '''SplineDeformationGenerator''': This plugin allows different types of deformations over any given image.  See [http://biocomp.cnb.csic.es/~iarganda/SplineDeformationGenerator/ SplineDeformationGenerator]
+* '''Perspective''':
 
 === TransformJ ===
 
