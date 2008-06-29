@@ -165,6 +165,11 @@ See also [[Scripting Help]] and the [[Scripting_comparisons]].
 * '''TJ Shift''':
 * '''TJ Turn''':
 
+=== Transform ===
+
+* '''SplineDeformationGenerator''': This plugin allows different types of deformations over any given image.  [http://biocomp.cnb.csic.es/~iarganda/SplineDeformationGenerator/ Futher documentation.]
+* '''Perspective''': 
+
 === Unknown ===
 
 * '''KD Cartoon''':
