@@ -150,6 +150,11 @@ See also [[Scripting Help]] and the [[Scripting_comparisons]].
 * '''Crop (3D)''': Crop an image stack [http://homepages.inf.ed.ac.uk/s9808248/imagej/three-pane-crop/ Further documentation]
 * '''Stack Reverser''': This plugin reverses the order of the slices in an image stack.
 
+=== Transform ===
+
+* '''SplineDeformationGenerator''': This plugin allows different types of deformations over any given image.  [http://biocomp.cnb.csic.es/~iarganda/SplineDeformationGenerator/ Futher documentation.]
+* '''Perspective''': 
+
 === TransformJ ===
 
 <i>TransformJ is non-free, and in any case should not have its own submenu - probably should rename this to Transform</i>
@@ -164,11 +169,6 @@ See also [[Scripting Help]] and the [[Scripting_comparisons]].
 * '''TJ Scale''':
 * '''TJ Shift''':
 * '''TJ Turn''':
-
-=== Transform ===
-
-* '''SplineDeformationGenerator''': This plugin allows different types of deformations over any given image.  [http://biocomp.cnb.csic.es/~iarganda/SplineDeformationGenerator/ Futher documentation.]
-* '''Perspective''': 
 
 === Unknown ===
 
