@@ -1,8 +1,8 @@
 Please try to avoid closed-source plugins.
 
-Just move the .jar into staged-plugins/, and create/adjust the corresponding
-.config file (also in staged-plugins/).  Then type "make" and it will be
-added/updated and committed.
+Just move the .jar into plugins/, and create/adjust the corresponding
+.config file in staged-plugins/.  Move the sources into src-plugins/.
+Then type "make" and it will be added/updated and committed.
 
 Longer version:
 
