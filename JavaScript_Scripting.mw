@@ -27,6 +27,28 @@ You can specify further imports by:
     win.setVisible(true);
   }
 
+=== Inspecting fields and methods of an object ===
+
+So you are returned an object for a function and you don't know what is it.
+
+To print its class within the interpreter:
+
+  ob = ...
+  ob.getClass();
+
+or to the log window:
+
+  ob = ...
+  IJ.log(ob.getClass());
+
+To print the list of methods it has, with their return types and argument types:
+
+  ob = ...
+  m = ob.getClass().getMethods();
+  for (i=0; i<m.length; i++) IJ.log(m[i]);
+
+== ImageJ interaction ==
+
 === Opening and creating ImageJ images ===
 
   imp = new Opener().openImage("/path/to/image.jpg");
