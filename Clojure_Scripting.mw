@@ -258,4 +258,26 @@ Note above the quoted string "xml" to avoid evaluating it to a (non-existing) va
 
 * To get the arguments passed to the JVM, see contents of variable *command-line-args*
 
+* To list all methods of an object:
+
+<pre>
+(defn print-java-methods [obj]
+  (doseq method (seq (.getMethods (if (= (class obj) java.lang.Class)
+                                    (identity obj)
+                                    (class obj))))
+    (println method)))
+ 
+ ; Inspect an object named imp, perhaps an image
+ (print-java-methods imp)
+
+ public synchronized boolean ij.ImagePlus.lock()
+ public void ij.ImagePlus.setProperty(java.lang.String,java.lang.Object)
+ public java.lang.Object ij.ImagePlus.getProperty(java.lang.String)
+ ...
+</pre>
+
+To list constructors, just use <i>.getConstructors</i> instead of <i>.getMethods</i>.
+
+(Thanks to Craig McDaniel for posting the above function to Clojure's mailing list.)
+
 [[Category:Scripting]]
