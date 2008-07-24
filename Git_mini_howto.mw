@@ -25,7 +25,7 @@ Both commands will create the directory ''fiji/'' and check out an initial versi
 As mentioned in "Cloning", you should clone from ssh://contrib@pacific.mpi-cbg.de/srv/git/fiji.git/.  However, you can easily add that as a so-called ''remote'' to an existing clone:
 
  $ cd fiji/
- $ git add remote contrib ssh://contrib@pacific.mpi-cbg.de/srv/git/fiji.git/
+ $ git remote add contrib ssh://contrib@pacific.mpi-cbg.de/srv/git/fiji.git/
 
 Before doing anything else, you should create a local "contrib" branch:
 
