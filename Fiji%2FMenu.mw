@@ -64,12 +64,12 @@ Multiple color channel support. See [http://rsb.info.nih.gov/ij/plugins/image5d.
 
 === LOCI ===
 Multiple image format readers and writers, including for the [http://www.openmicroscopy.org/ Open Microscopy Environment or OME]. See the [http://www.loci.wisc.edu/ome/formats.html main LOCI website.]
-* '''4D Data Browser''':
-* '''Bio-Formats Importer''':
-* '''Bio-Formats Exporter''':
-* '''Bio-Formats Remote Importer''':
-* '''Download from OME''':
-* '''Upload to OME''':
+* '''4D Data Browser''': [http://www.loci.wisc.edu/ome/browser.html Further documentation]
+* '''Bio-Formats Importer''': [http://www.loci.wisc.edu/ome/formats-imagej.html Further documentation]
+* '''Bio-Formats Exporter''': [http://www.loci.wisc.edu/ome/formats-imagej.html Further documentation]
+* '''Bio-Formats Remote Importer''': [http://www.loci.wisc.edu/ome/formats-imagej.html Further documentation]
+* '''Download from OME''': [http://www.loci.wisc.edu/ome/ome-plugins.html Further documentation]
+* '''Upload to OME''': [http://www.loci.wisc.edu/ome/ome-plugins.html Further documentation]
 
 === Macros ===
 
