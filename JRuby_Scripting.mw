@@ -2,7 +2,7 @@ JRuby scripting in ImageJ is an excellent alternative to scripting using ImageJ'
 * You don't have to learn a new language to script ImageJ (assuming you know Ruby)
 * You're not limited to using the functionality exposed by the macro language: you can use any class in ImageJ, one of its plugins or standard Java
 * Developing JRuby scripts is very fast compared to developing plugins in Java
-(These advantages, of course, are shared by the [[Jython]], [[Clojure]], [[Beanscript]] and [[Javascript]] scripting bundled in Fiji.)
+(These advantages, of course, are shared by the [[Jython Scripting]], [[Clojure Scripting]], Beanscript and [[Javascript Scripting]] bundled in Fiji.)
 == Tutorial ==
 [You may want to first have a quick look at the [[Scripting_Help]] page for generic instructions in using the interpreter and script interfaces, and the [[http://pacific.mpi-cbg.de/wiki/index.php/Scripting_comparisons]] page for an example written in several of the different scripting languages available.]
 
