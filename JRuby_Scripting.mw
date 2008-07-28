@@ -20,8 +20,17 @@ Now you can start typing Ruby expressions into that window, such as:
 Try loading one of the ImageJ sample images by going to "File > Open Samples > T1 Head (2.4M, 16-bits)".  Once you've done that we'll examine the image using JRuby.  You can get a reference to the current image with ij.IJ.getImage.  Try assigning the result to a variable, like this:
   >>> i = ij.IJ.getImage
   imp[t1-head.tif 256x256x129]
-
-
+Now we can find out the width and the depth of the stack like this:
+  >>> w = i.getWidth
+  256
+  >>> d = i.getStackSize
+  129
+Many of the operations that you might want to perform on the image are available via the ImageProcessor associate with a slice.  For example, to invert the current slice do:
+  i.getProcessor.invert
+That won't actually produce a visible effect on the image until you also call i.updateAndDraw on the image:
+  i.updateAndDraw
+If you scroll through the stack now you should find that one of the slices is inverted.
+=== Note On Names ===
 
 
 
