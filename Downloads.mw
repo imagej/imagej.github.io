@@ -1,11 +1,15 @@
+'''Note:''' We are in -rc1 phase now, that is, all downloads here are release candidates.
+
 Please bear in mind: Fiji is ''alpha'' software for now.  If you want it to become stable, please consider submitting [http://pacific.mpi-cbg.de/bugzilla/ bug reports], or ask for help on [http://groups.google.com/group/fiji-users the mailing list], but be prepared to test our fixes, too :-)
 
 You can download Fiji for
 
-* [http://pacific.mpi-cbg.de/downloads/fiji-linux-dresden20080611.tar.bz2 Linux]
-* [http://pacific.mpi-cbg.de/downloads/fiji-linux-amd64.tar.bz2 Linux (64-bit)]
-* [http://pacific.mpi-cbg.de/downloads/fiji-win32-dresden20080611.zip Windows]
-* [http://pacific.mpi-cbg.de/downloads/fiji-win64.zip Windows (64-bit)]
-* [http://pacific.mpi-cbg.de/downloads/fiji-macosx-dresden20080611.dmg MacOSX]
+* [http://pacific.mpi-cbg.de/downloads/Dresden-rc1/fiji-linux-20080728.tar.bz2 Linux]
+* [http://pacific.mpi-cbg.de/downloads/Dresden-rc1/fiji-linux-amd64-20080728.tar.bz2 Linux (64-bit)]
+* [http://pacific.mpi-cbg.de/downloads/Dresden-rc1/fiji-win32-20080728.zip Windows]
+* [http://pacific.mpi-cbg.de/downloads/Dresden-rc1/fiji-win64-20080728.zip Windows (64-bit)]
+* [http://pacific.mpi-cbg.de/downloads/Dresden-rc1/fiji-macosx-20080728.dmg MacOSX]
+* [http://pacific.mpi-cbg.de/downloads/Dresden-rc1/fiji-all-20080728.tar.bz2 All platforms (includes all JREs)]
+* [http://pacific.mpi-cbg.de/downloads/Dresden-rc1/fiji-nojre-20080728.tar.bz2 All platforms (does not include JREs)]
 
 Soon to come: Debian packages!
