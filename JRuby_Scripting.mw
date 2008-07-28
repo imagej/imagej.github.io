@@ -50,17 +50,17 @@ If you scroll through the stack now you should find that one of the slices is in
 === Note On Names ===
 
 
-
 == Example: Generating a Plasma Cloud ==
 
+''FIXME: complete this section''
 
 == Example: Batch Converting File Formats ==
 
-
+''FIXME: complete this section''
 
 == Example: Generating Red/Cyan Anaglyphs ==
 
-
+''FIXME: complete this section''
 
 === Converting ImageJ Macros to JRuby ===
 
