@@ -49,8 +49,40 @@ If you scroll through the stack now you should find that one of the slices is in
 
 === Note On Names ===
 
+You might find the use of "ij.IJ.getImage" above slightly suspicious if you're used to Java and the ImageJ API.  "ij" is the Java package name, "IJ" is the class name in that package and "getImage" is a static method in that class which returns a reference to an ImagePlus object representing the current image or null if there is none.  How does this work?  We have set up the JRuby interpreter in ImageJ so that if a method or class name can't be found it will look for a correponding class or method name in the ij.* packages.  JRuby by default does exactly this for the java.* classes, so for example the following works without having to explicitly include the java.util.Random class:
+
+  >>> rng = java.util.Random.new
+  java.util.Random@bf9a12
+  >>> rng.nextInt 1024
+  603
+  >>> rng.nextInt 1024
+  94
+
+Note that this is an example of creating an object in JRuby; you use the usual Something.new syntax of Ruby, but it creates an object of the standard Java class.  Hopefully you're thinking "Excellent!" or something similar at this stage...
+
+If you need to use classes that aren't in the java.* or ij.* hierarchy, you will have to include them explicitly.  For example, in the classpath of Fiji there is a useful class called util.BatchOpener, that has static methods for opening files as arrays of ImagePlus objects (one per channel) without showing them.  To use these methods, you would have to do:
+
+  >>> include_class 'util.BatchOpener'
+  util.BatchOpener
+
+Then you can, for example, do the following:
+
+  >>> a = BatchOpener.open "/home/mark/confocal/test.lsm"
+  [Lij.ImagePlus;@b1406b
+  >>> a.length
+  2
+  >>> a[0].getTitle
+  C1-test.lsm
+  >>> a[1].getTitle
+  C2-test.lsm
+  >>> a[1].show
 
 == Example: Generating a Plasma Cloud ==
+
+In this first example, we'll just create a small script to create a fractal "plasma cloud" image.  
+
+
+
 
 ''FIXME: complete this section''
 
