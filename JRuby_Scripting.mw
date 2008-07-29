@@ -106,13 +106,7 @@ We'll manipulate the pixel array directly, so it's worth checking that this will
 
 Hopefully that worked OK.  The color value specified there is in ARGB format.  You may have noticed that this step was rather slow - there is quite a bit of magic involved in JRuby's transparent access between Ruby and Java, which has an inevitable performance cost.  So, JRuby scripting isn't an ideal job for this kind of script, but hopefully this example will be instructive nonetheless.
 
-Now that we've got some skeleton code for doing the nuts and bolts of this plugin, let's switch to a text editor and write the rest of the script there.
-
-
-
-
-
-''FIXME: complete this section''
+You would probably proceed at this stage by switching to a text editor and creating a script in the Fiji plugins directory.
 
 == Example: Batch Converting File Formats ==
 
@@ -120,11 +114,12 @@ Now that we've got some skeleton code for doing the nuts and bolts of this plugi
 
 == Example: Generating Red/Cyan Anaglyphs ==
 
-''FIXME: complete this section''
+''FIXME: add notes here on figuring out the parameters to pass to plugins, citing the example in Examples/Anaglyph_for_Red_Cyan_glasses.rb''
 
 === Converting ImageJ Macros to JRuby ===
 
-''FIXME: complete this section''
+''FIXME: complete this section, mention the start that's been made on implementing similarly named JRuby functions that do the equivalent of the standard ImageJ macros; see Plugins/JRuby/imagej.rb''
 
+=== What next? ===
 
 [You may want to first have a quick look at the [[Scripting Help]] page for generic instructions in using the interpreter and script interfaces, and the [[Scripting comparisons]] page for an example written in several of the different scripting languages available.]
