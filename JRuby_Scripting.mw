@@ -112,6 +112,7 @@ You would probably proceed at this stage by switching to a text editor and creat
 
 This is a short example script showing how to convert a directory of LSM files into BioRad .PIC format using JRuby and the util.BatchOpener methods that I mentioned above.  This just hard-codes the paths in the filesystem, so you would need to edit it if you want to do something similar.  Nonetheless, hopefully this is instructive: filtering filenames, and so on, is typically much more convenient using JRuby than the ImageJ macro language:
 
+<source lang="ruby">
   input_directory  = "/home/mark/lsm-examples/"
   output_directory = "/home/mark/lsm-examples/biorad/"
   
@@ -158,6 +159,7 @@ This is a short example script showing how to convert a directory of LSM files i
   end
   
   ij.IJ.showMessage("Finished converting to Biorad format!")
+</source>
 
 == Example: Generating Red/Cyan Anaglyphs ==
 
