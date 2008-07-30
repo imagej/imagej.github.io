@@ -163,9 +163,23 @@ end
 ij.IJ.showMessage("Finished converting to Biorad format!")
 </source>
 
+=== Converting ImageJ Macros to JRuby ===
+
+To help with porting existing ImageJ macros to JRuby, I have made a start on implementing similarly named JRuby functions to the standard ImageJ macros.  These have been defined with idiomatic Ruby function names as well as the "lower camel case" style ImageJ macro names, so instead of "image = ij.IJ.getImage" as used above, you can use either:
+
+  image = getImage
+
+or:
+
+  image = get_image
+
+The "run" method may also be particularly useful for calling existing ImageJ plugins and commands.  The next section has an example of the use of this.  It may be instructive to compare the [http://rsbweb.nih.gov/ij/macros/ConvexHull.txt "Blobs Demo" macro] from the ImageJ distribution with [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Blobs_Demo_in_Ruby.rb;hb=HEAD a version ported to JRuby]
+
+A note for the interested programmer: About 15% of the macro functions have be done so far, and if anyone wanted to help out with doing the rest, that would be excellent!  The source code [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/JRuby/imagej.rb;hb=HEAD can be found here].
+
 == Example: Generating Red/Cyan Anaglyphs ==
 
-This is a very simple script for taking an image stack and generating from it an image that should appear in 3D when viewed through red and cyan glasses.  All that this does is to do two maximum intensity projections from two slightly different angles and merges them together.  It's a nice example because all the work is done by existing ImageJ commands.  If you look at the script,  you'll see that the first step is to run the "3D Project..." plugin with some slightly convoluted options:
+This example script can be found in the Plugins/Examples/ folder of Fiji.  It will take an image stack and generate from it an image that should appear in 3D when viewed through red and cyan glasses.  All that this does is to do two maximum intensity projections from two slightly different angles and merges them together.  It's a nice example because all the work is done by existing ImageJ commands.  If you look at the script,  you'll see that the first step is to run the "3D Project..." plugin with some slightly convoluted options:
 
 <source lang="ruby">
 projection_options = "projection=[Brightest Point] axis=Y-Axis "
@@ -186,11 +200,6 @@ Hopefully it should be obvious how I derived the 'projection_options' string in 
 Some example output:
 
 [[Image:Anaglyph.png|Example anaglyph image]]
-
-=== Converting ImageJ Macros to JRuby ===
-
-
-''FIXME: complete this section, mention the start that's been made on implementing similarly named JRuby functions that do the equivalent of the standard ImageJ macros - see Plugins/JRuby/imagej.rb''
 
 === What next? ===
 
