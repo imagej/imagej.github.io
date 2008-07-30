@@ -8,6 +8,8 @@ JRuby scripting in ImageJ is a nice alternative to scripting using ImageJ's macr
 
 (These advantages, of course, are shared by the [[Jython Scripting]], [[Clojure Scripting]], Beanscript and [[Javascript Scripting]] bundled in Fiji.)
 
+If you have any questions or suggestions about JRuby scripting in ImageJ, please contact [mailto:mark-jruby@longair.net Mark Longair].
+
 == Tutorial ==
 
 Let's start writing some JRuby right away - start up the interpreter by going to "Plugins > Scripting > JRuby Interpreter".  The interpreter window will pop up, but it may take a little time for the JRuby runtime to be ready.  You should initially see the message:
