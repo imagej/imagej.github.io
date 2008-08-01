@@ -179,8 +179,10 @@ var prom = gd.getStringFields().get(0);
 prom.setForeground(Color.red);
 prom.addTextListener(new TextListener( {
     textValueChanged: function(evt) {
-        if (keys.contains(prom.getText())) prom.setForeground(Color.black);
-        else prom.setForeground(Color.red);
+        if (keys.contains(prom.getText()))
+            prom.setForeground(Color.black);
+        else
+            prom.setForeground(Color.red);
     }
 }));
 
