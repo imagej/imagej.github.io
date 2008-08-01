@@ -1,0 +1,3 @@
+Set the width or height you want.
+
+You can define how blurred the image was originally and how blurred you want it in the end.  Smaller values mean less blurred, if you do not want to think about it, keep 0.5 in both.
