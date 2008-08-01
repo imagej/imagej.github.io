@@ -168,6 +168,8 @@ prompt.setForeground(Color.red)
 // using importPackage(Package.ij) etc. directives.
 
 importClass(Packages.java.util.ArrayList);
+importClass(Packages.java.awt.event.TextListener);
+
 commands = Menus.getCommands();
 keys = new ArrayList(commands.keySet());
 
@@ -177,9 +179,8 @@ prom = gd.getStringFields().get(0);
 importClass(Packages.java.awt.Color)
 prom.setForeground(Color.red);
 
-// Create a body for the interface TextListener,
-// since 'new' cannot be called directly on an interface
-body = { textValueChanged: function(evt) {
+prom.addTextListener(new TextListener( {
+        textValueChanged: function(evt) {
                 text = prom.getText();
                 for (i=0;i<keys.size();i++) {
                         command = keys.get(i);
@@ -191,9 +192,7 @@ body = { textValueChanged: function(evt) {
                 // no command found
                 prom.setForeground(Color.red);
         }
-}
-importClass(Packages.java.awt.event.TextListener);
-prom.addTextListener(new TextListener(body));
+}));
 
 gd.showDialog();
 if (!gd.wasCanceled()) {
