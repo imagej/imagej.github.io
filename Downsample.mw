@@ -1,7 +1,14 @@
-Set the width or height you want.
+Gaussian downsampling of an image with ImageJ on-board tools.
 
-You can define how blurred the image was originally and how blurred you want it in the end.  Smaller values mean less blurred, if you do not want to think about it, keep 0.5 in both.
+==Motivation==
 
+Sound downsampling of an image requires the elimination of image frequencies higher than two times the sampling frequency in the result image (see the [http://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem Nyquist–Shannon sampling theorem]).  The exclusive tool for this is [http://en.wikipedia.org/wiki/Gaussian_function Gaussian convolution].
+
+==Documentation==
+
+This script calculates the required Gaussian kernel for a given target size, smooths the image and resamples it.
+
+Furthermore, you can define the "intrinsic" Gaussian kernel of the source and target images.  An optimal sampler is identified by sigma=0.5.  If your source image was blurred already, you may set a higher source sigma for a sharper result.  Setting target sigma to values smaller than 0.5 makes the result appear sharper and therefore eventually aliased.
 
 See also [[Javascript Scripting]], [[Scripting Help]] and the [[Scripting_comparisons]].
 
