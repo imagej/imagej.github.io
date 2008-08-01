@@ -73,6 +73,18 @@ public class Command_Launcher implements PlugIn {
 }
 </source>
 
+Note that above the loop is only set as an example. It's easier to simply query the list of <i>keys</i> for the specific <i>text</i> key we are looking for:
+
+<source lang="java">
+...
+                // if a command matches, redo color to black  
+                if (keys.contains(text)) {
+                    prompt.setForeground(Color.black);
+                    return;
+                }
+...
+</source>
+
 <h3>In Jython</h3>
 
 <source lang="python">
