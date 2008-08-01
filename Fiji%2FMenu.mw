@@ -35,7 +35,7 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 * '''random noise example''': Generates two 8-bit images with random pixel value in each. Written in [http://clojure.sourceforge.net Clojure] (lisp).
 * '''T2 Select All''': Selects all objects in an open TrakEM2 display. Written in [http://www.jython.org Jython].
 * '''T2 set all transforms to identity''': Resets the transformation matrix (translation,rotation,scaling and shear) of all objects in a TrakEM2 display to identity (zero translation, scaling of 1.0, zero rotation and no shear). Written in [http://www.jython.org Jython].
-* [[downsample]]: Proper Gaussian downsampling of an image.  Written in [[Javascript]]
+* '''[[downsample]]''': Proper Gaussian downsampling of an image.  Written in [http://www.mozilla.org/rhino/ScriptingJava.html JavaScript]
 
 === Image IO ===
 
