@@ -6,9 +6,9 @@ Sound downsampling of an image requires the elimination of image frequencies hig
 
 ==Documentation==
 
-This script calculates the required Gaussian kernel for a given target size, smooths the image and resamples it.
+This script calculates the required Gaussian kernel for a given target '''width''' or '''height''', smooths the image and resamples it.  The target size must be smaller than the source image size.
 
-Furthermore, you can define the "intrinsic" Gaussian kernel of the source and target images.  An optimal sampler is identified by sigma=0.5.  If your source image was blurred already, you may set a higher source sigma for a sharper result.  Setting target sigma to values smaller than 0.5 makes the result appear sharper and therefore eventually aliased.
+Furthermore, you can define the "intrinsic" Gaussian kernel of the source and target images.  An optimal sampler is identified by sigma=0.5.  If your source image was blurred already, you may set a higher '''source sigma''' for a sharper result.  Setting '''target sigma''' to values smaller than 0.5 makes the result appear sharper and therefore eventually aliased.
 
 See also [[Javascript Scripting]], [[Scripting Help]] and the [[Scripting_comparisons]].
 
