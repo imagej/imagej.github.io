@@ -4,6 +4,10 @@ Gaussian downsampling of an image with ImageJ on-board tools.
 
 Sound downsampling of an image requires the elimination of image frequencies higher than half the sampling frequency in the result image (see the [http://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem Nyquist–Shannon sampling theorem]).  The exclusive tool for this is [http://en.wikipedia.org/wiki/Gaussian_function Gaussian convolution].
 
+==Download==
+
+Get a snapshot from the git repository here: [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob_plain;f=plugins/Examples/downsample_.js downsample_.js].
+
 ==Documentation==
 
 This script calculates the required Gaussian kernel for a given target '''width''' or '''height''', smooths the image and resamples it.  The target size must be smaller than the source image size.
