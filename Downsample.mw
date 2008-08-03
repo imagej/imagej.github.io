@@ -12,15 +12,18 @@ Furthermore, you can define the "intrinsic" Gaussian kernel of the source and ta
 
 ==Example==
 
-An image says more than thousand words, so here is an example.  You see a transmission electron micrograph, of originally 2,048&times;2,048px downsampled to 100&times;100px.
+A picture is worth a thousand words, so here is an example.  You see a 2,048&times;2,048px transmission electron micrograph downsampled to 100&times;100px.  For better illustration, the examples are shown at 200%.
 
 {|
-style="vertical-align:top" |[[Image:Downsample-imagej.png|frame|ImageJ interpolated scaling]]
-!style="vertical-align:top" |[[Image:Downsample-ts-0.25.png|frame|Gaussian downsampling with target sigma=0.25]]
-!style="vertical-align:top" |[[Image:Downsample-ts-0.5.png|frame|Gaussian downsampling with target sigma=0.5]]
+|style="vertical-align:top" |[[Image:Downsample-imagej.png|none|frame|ImageJ interpolated scaling]]
+|style="vertical-align:top" |[[Image:Downsample-ts-0.25.png|none|frame|Gaussian downsampling with target sigma=0.25]]
+|style="vertical-align:top" |[[Image:Downsample-ts-0.5.png|none|frame|Gaussian downsampling with target sigma=0.5]]
 |}
 
+==See also==
 
-See also [[Javascript Scripting]], [[Scripting Help]] and the [[Scripting_comparisons]].
+* [[Javascript Scripting]]
+* [[Scripting Help]]
+* [[Scripting_comparisons]]
 
 [[Category:Scripting]]
