@@ -1,6 +1,8 @@
-== File / Import Menu ==
+The File / Import submenu.
 
-=== ImageJ Built-in ===
+Most of the commands listed, particularly Fiji extensions, are also available (via HandleExtraFileTypes) simply by using the File / Open... menu item.
+
+==ImageJ Built-in==
 
 * '''Image Sequence...'''
 * '''Raw...'''
@@ -13,7 +15,7 @@
 * '''TIFF Virtual Stack...''': Open a multipage .tif file as a virtual stack: only one page (one slice) is loaded at a time. Useful for very large .tif files.
 * '''AVI...''': Open an uncompressed .avi movie file.
 
-=== Fiji Extensions ===
+==Fiji Extensions==
 
 * '''Amira...''': Open as a stack both Amira (.am) label and image stack files.
 * '''Biorad...''': Open a Biorad (.pic) confocal stack.
