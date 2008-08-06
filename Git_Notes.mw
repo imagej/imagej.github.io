@@ -1,0 +1,21 @@
+==Some things that I wouldn't remember otherwise==
+
+This list is expected to be incomplete and even wrong, do not trust it!
+
+;git init --shared=group
+:Tell the repository that it should always set the permissions to g+w.
+
+;git reset --hard HEAD^
+:Roll back.
+
+;git reset --hard HEAD@{1}
+:Roll back.
+
+;git checkout HEAD@{1} -- <file>
+:Cherry pick.
+
+;git diff <branch1> <branch2> -- <file>
+:Diff a file between two branches.
+
+;git log -p --color-words
+:Display a log with colored word diffs.  Say "-S" to less to virtually wrap long lines.
