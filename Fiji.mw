@@ -24,11 +24,11 @@ These last points might be yet somewhat unfulfilled, for Fiji is still alpha sof
 At the moment, we support
 
 * Linux (x86),
-* Linux (64-bit),
+* Linux (amd64),
 * MacOSX (PowerPC),
 * MacOSX (Intel),
 * Windows (x86), and
-* Windows (64-bit)
+* Windows (amd64)
 
 You can download the packages [[Downloads|here]].
 
