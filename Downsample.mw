@@ -20,7 +20,7 @@ A picture is worth a thousand words, so here is an example.  You see a 2,048&tim
 
 {|
 |style="vertical-align:top" |[[Image:Downsample-imagej.png|none|frame|ImageJ interpolated scaling]]
-|style="vertical-align:top" |[[Image:Downsample-ts-0.25.png|none|frame|Gaussian downsampling with target sigma=0.25]]
+|style="vertical-align:top" |[[Image:Downsample-ts-0.25.png|none|frame|Gaussian downsampling with target sigma=0.25 px]]
 |style="vertical-align:top" |[[Image:Downsample-ts-0.5.png|none|frame|Gaussian downsampling with target sigma=0.5]]
 |}
 
