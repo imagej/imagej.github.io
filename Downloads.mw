@@ -16,8 +16,8 @@ You can download Fiji for
 
 There are some Debian packages of Fiji rc3 that you can try.  (These packages include the JRE.)  Add the following lines to /etc/apt/sources.list:
 
-  deb http://pacific.mpi-cbg.de/downloads/apt/ ./
-  deb-src http://pacific.mpi-cbg.de/downloads/apt/ ./
+  <nowiki>deb http://pacific.mpi-cbg.de/downloads/apt/ ./</nowiki>
+  d<nowiki>eb-src http://pacific.mpi-cbg.de/downloads/apt/ ./</nowiki>
 
 Then do the following:
 
