@@ -21,8 +21,8 @@ There are some Debian packages of Fiji rc3 that you can try.  (These packages in
 
 Then do the following:
 
-  sudo apt-get update
-  sudo apt-get install fiji
+ sudo apt-get update
+ sudo apt-get install fiji
 
 You should then be able to just run "fiji" from the command line.
 
