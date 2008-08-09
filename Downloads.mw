@@ -12,4 +12,23 @@ You can download Fiji for
 * [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-all-20080807.tar.bz2 All platforms (includes all JREs)]
 * [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-nojre-20080807.tar.bz2 All platforms (does not include JREs)]
 
-Soon to come: Debian packages!
+=== Packages for Debian / Ubuntu ===
+
+There are some Debian packages of Fiji rc3 that you can try.  (These packages include the JRE.)  Add the following lines to /etc/apt/sources.list:
+
+  deb http://pacific.mpi-cbg.de/downloads/apt/ ./
+  deb-src http://pacific.mpi-cbg.de/downloads/apt/ ./
+
+Then do the following:
+
+  sudo apt-get update
+  sudo apt-get install fiji
+
+You should then be able to just run "fiji" from the command line.
+
+Alternatively, if you want to install the .deb files directly with dpkg, you can download the packages directly here:
+
+* [http://pacific.mpi-cbg.de/downloads/apt/binary-i386/fiji_0.9.2.20080807rc3_i386.deb Package for i386 (32 bit)]
+* [http://pacific.mpi-cbg.de/downloads/apt/binary-amd64/fiji_0.9.2.20080807rc3_amd64.deb Package for amd64 (64 bit)]
+
+(These packages should work for you, but fail to meet policy for being official Debian and Ubuntu packages in many ways - we are working towards this, however, so if you use the apt repository above and update regularly, you should see the packages improve and reduce in size over time.)
