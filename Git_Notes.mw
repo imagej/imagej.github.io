@@ -2,23 +2,23 @@
 
 This list is expected to be incomplete and even wrong, do not trust it!
 
-;git init --shared=group
+;<source lang="bash">git init --shared=group</source>
 :Tell the repository that it should always set the permissions to g+w.
 
-;git reset --hard HEAD^
+;<source lang="bash">git reset --hard HEAD^</source>
 :Roll back.
 
-;git reset --hard HEAD@{1}
+;<source lang="bash">git reset --hard HEAD@{1}</source>
 :Roll back.
 
-;git checkout HEAD@{1} -- <file>
+;<source lang="bash">git checkout HEAD@{1} -- <file></source>
 :Cherry pick.
 
-;git diff <branch1> <branch2> -- <file>
+;<source lang="bash">git diff <branch1> <branch2> -- <file></source>
 :Diff a file between two branches.
 
-;git log -p --color-words
+;<source lang="bash">git log -p --color-words</source>
 :Display a log with colored word diffs.  Say "-S" to less to virtually wrap long lines.
 
-;<nowiki>git diff <commit a>:<file> <commit b>:<file> --color-words</nowiki>
+;<source lang="bash">git diff <commit a>:<file> <commit b>:<file> --color-words</source>
 :Display a diff with colored words.  Say "-S" to less to virtually wrap long lines.
