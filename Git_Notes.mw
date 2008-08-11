@@ -19,3 +19,6 @@ This list is expected to be incomplete and even wrong, do not trust it!
 
 ;git log -p --color-words
 :Display a log with colored word diffs.  Say "-S" to less to virtually wrap long lines.
+
+;git diff <commit a>:<file> <commit b>:<file> --color-words
+:Display a diff with colored words.  Say "-S" to less to virtually wrap long lines.
