@@ -199,9 +199,8 @@ prom.addTextListener(new TextListener( {
 }));
 
 gd.showDialog();
-if (!gd.wasCanceled()) {
+if (!gd.wasCanceled())
     IJ.doCommand(gd.getNextString());
-}
 </source>
 
 <h3>In JRuby</h3>
