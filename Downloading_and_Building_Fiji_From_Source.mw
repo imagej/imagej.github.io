@@ -33,3 +33,5 @@ You should now be able to build Fiji with:
  make
 
 ... which will invoke Fiji's multi-platform build system.  If all goes well, after some time you should see the main Fiji window:
+
+Image:Fiji-main-window.png
