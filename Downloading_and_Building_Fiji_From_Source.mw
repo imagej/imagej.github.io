@@ -8,7 +8,7 @@ To fetch the Fiji source code you should use [http://git.or.cz/ git].  (There wi
 
  git clone git://pacific.mpi-cbg.de/fiji.git
 
-This should start downloading the base fiji repository and unpack it into a directory called "fiji" in your current directory.  Once this has successfully completed, change into the newly created "fiji" directory.  This will not yet be complete tree that you can build, since the fiji repository depends on a number of submodules.  If you have lots of disk space available, these submodules can be initialized with:
+This should start downloading the base fiji repository and unpack it into a directory called "fiji" in your current directory.  Once this has successfully completed, change into the newly created "fiji" directory.  This will not yet be complete tree that you can build, since the fiji repository depends on a number of submodules.  (For more on submodules, see the [[Git submodule tutorial]].)  If you have lots of disk space available, these submodules can be initialized with:
 
  git submodule init
 
