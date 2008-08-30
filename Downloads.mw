@@ -12,6 +12,10 @@ You can download Fiji for
 * [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-all-20080807.tar.bz2 All platforms (includes all JREs)]
 * [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-nojre-20080807.tar.bz2 All platforms (does not include JREs)]
 
+=== Source Code ===
+
+The easiest way to fetch the source code for Fiji is to use [http://git.or.cz/ git].  For further guidance on this, please refer to the page [[Downloading and Building Fiji From Source]].
+
 === Packages for Debian / Ubuntu ===
 
 There are some Debian packages of Fiji rc3 that you can try.  (These packages include the JRE.)  Add the following lines to /etc/apt/sources.list:
