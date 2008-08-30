@@ -2,9 +2,9 @@
 
 ''Warning: the source code for Fiji is rather large; make sure that you have two gigabytes of disk space free before beginning this.''
 
-<nowiki>[</nowiki>Having created this page, I subsequently realized that there already was a more detailed page on this wiki describing how to do this - it has rather more information, including information about how to contribute back to the project.  This page only has minimal instructions for downloading and building Fiji - for more information see [Git mini-HOWTO].<nowiki>]</nowiki>
+<nowiki>[</nowiki>Having created this page, I subsequently realized that there already was a more detailed page on this wiki describing how to do this - it has rather more information, including information about how to contribute back to the project.  This page only has minimal instructions for downloading and building Fiji - for more information see [Git mini howto].<nowiki>]</nowiki>
 
-To fetch the Fiji source code we recommend that you use [http://git.or.cz/ git].  (There will be very little in the way of tutorial information about git on this page, but there are many such resources available on the web.)  You first step should be to "clone" the fiji repository with the following command:
+To fetch the Fiji source code we recommend that you use [http://git.or.cz/ git].  (There will be very little in the way of tutorial information about git on this page, but there are many such resources available on the web and you may wish to see the pages on this wiki in the category Git.)  You first step should be to "clone" the fiji repository with the following command:
 
  git clone git://pacific.mpi-cbg.de/fiji.git
 
