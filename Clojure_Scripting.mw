@@ -100,12 +100,29 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 </pre>
 
 
+<h3>Creating objects: invoking constructors</h3>
+
+A constructor is invoked by adding a dot '.' to the name of a class, followed by the arguments. Below, we create an ImageProcessor and then an ImagePlus with it, and finally we print the ImagePlus, which invokes toString() on it (like in java):
+<pre>
+(let [ip (ij.process.ByteProcessor. 400 400)
+      imp (ij.ImagePlus. "my image" ip)]
+  (println imp))
+</pre>
+
+An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnecessarily verbose:
+<pre>
+(let [ip (new ij.process.ByteProcessor 400 400)
+      imp (new ij.ImagePlus "my image" ip)]
+  (println imp))
+</pre>
+
+
 <h3>Defining a closure</h3>
 <p>In the following a function is declared within the scope of the local variable <b>rand</b>, which contains an instance of java.util.Random. All calls to the function <i>rand-double</i> will use the same random number generator instance with seed 69997.</p>
 <p>The <i>dotimes</i> loop will then print 10 different pseudo-random numbers. If the <b>rand</b> was a new Random with seed 69997 every time, all 10 numbers would be exactly the same.</p>
 <p>You can think of a function inside a closure as a static function using a static variable (in Java), but it's more than that, since the function will be able to access parameters on the global namespace and also in any other local namespace in which the <i>let</i> is declared. For example, another <i>let</i>, or even another <i>defn</i>!</p>
 <pre>
-(let [rand (new java.util.Random 69997)]
+(let [rand (java.util.Random. 69997)]
     (defn rand-double []
         (. rand (nextDouble))))
 
@@ -113,11 +130,13 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
     (println (rand-double)))
 </pre>
 
+<p>Above, note the dot '.' after Random, which indicates we are calling the constructor (with a single parameter 69997, the pseudorandom generator seed to be used). Alternatively, one may use the java-like syntax: (new java.util.Random 69997) -- note the absence of a dot now.</p>
+
 <h3>Looping an array of pixels</h3>
 <p>For example, to find the min and max values:</p>
 <pre>
 ; Obtain the pixels array from the current image
-(let [imp (. ij.WindowManager (getCurrentImage))
+(let [imp (ij.WindowManager/getCurrentImage)
       pixels (.. imp (getProcessor) (getPixels))
       min (apply min pixels)
       max (apply max pixels)]
@@ -127,7 +146,7 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 <p>The above code does not explicitly loop the pixels: it simply applies a function to an array.</p>
 <p>To loop pixels one by one, use any of the following:</p>
 <pre>
-(let [imp (.getCurrentImage ij.WindowManager)
+(let [imp (ij.WindowManager/getCurrentImage)
       pixels (.. imp (getProcessor) (getPixels))]
 
       ; First loop with "dotimes"
@@ -149,7 +168,7 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 <p>Of course, there are lispier ways to loop an array of pixels. For example, to obtain the average of all pixels, we can use function <i>reduce</i>, which takes the first two elements of a list, applies a function to them, and then applies the function to the result and the next element, etc:</p>
 
 <pre>
-(let [fp (.getProcessor (.getImage ij.IJ))
+(let [fp (.getProcessor (ij.IJ/getImage))
       pix (.getPixels fp)]
    (if (instance? ij.process.FloatProcessor fp)
       (println "Average pixel intensity" (/ (reduce + pix) (count pix)))
@@ -164,7 +183,7 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 <p>To sum all pixels in an 8-bit image, one needs first to bit-and all bytes to 255, so they become integers and can be summed. But of course we should not <i>bit-and</i> the sum! To solve this, <i>reduce</i> accepts a first value (in this case, zero):</p>
 
 <pre>
-(let [bp (.getProcessor (.getImage ij.IJ))
+(let [bp (.getProcessor (ij.IJ/getImage))
       pix (.getPixels bp)]
   (if (instance? ij.process.ByteProcessor bp)
     (println "Average intensity: " (float (/ (reduce (fn [x1 x2] (+ x1 (bit-and x2 255))) 0 pix) (count pix))))
@@ -174,7 +193,7 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 <p>It could even be done using a local variable, but it's ugly and undesirable (why create it when it's not really needed)? Notice we need to create the local variable "sum" because variables declared by <i>let</i> are immutable.</p>
 
 <pre>
-(let [bp (.getProcessor (.getImage ij.IJ))
+(let [bp (.getProcessor (ij.IJ/getImage))
       pix (.getPixels bp)]
   (if (instance? ij.process.ByteProcessor bp)
     (with-local-vars (sum 0)
@@ -187,11 +206,11 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 <h3>Executing commands from the menus</h3>                                                                                                                                                                            
 <p>Any ImageJ menu command may be run on the active image:</p>                                                                                                                                                        
 <pre>                                                                                                                                                                                                                 
-(.doCommand ij.IJ "Add Noise")                                                                                                                                                                                        
+(ij.IJ/doCommand "Add Noise")                                                                                                                                                                                        
 </pre>                                                                                                                                                                                                                
 <p>Be aware that the above starts a new Thread and forks. For reliable control, try the run method, which will wait until the plugin finishes execution.</p>
 <pre>
-(.run ij.IJ "Add Noise")                                                                                                                                                                                              
+(ij.IJ/run "Add Noise")                                                                                                                                                                                              
 </pre>
 
 <h3>Creating and using Clojure scripts as ImageJ plugins</h3>
@@ -206,7 +225,7 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 <h3>Using java beans for quick and convenient access to an object's fields</h3>
 <p>Essentially it's all about using <i>get</i> methods in a trivial way. For example:</p>
 <pre>
-(let [imp (. ij.WindowManager (getCurrentImage))
+(let [imp (ij.WindowManager/getCurrentImage)
       b (bean imp)]
    (println (:title b)
             (:width b)  
@@ -234,7 +253,7 @@ In the example below, the <i>fix</i> function is called with the current image a
          (if (= 0 (aget pix i)) (aset pix i (float max)))
          (recur (inc i)))))))
  
- (let [imp (.getImage IJ)]
+ (let [imp (ij.IJ/getImage)]
    (fix imp (float 32500))
    (.updateAndDraw imp))
 
@@ -242,7 +261,7 @@ In the example below, the <i>fix</i> function is called with the current image a
 
 * The default output stream is at variable <i>*out*</i>. The Clojure Interpreter binds it to the PrintWriter that prints to the interpreter text area, by executing any typed in code within the following binding:
 <pre>
-(binding [*out* (. getStdOut Clojure.Clojure_Interpreter)]
+(binding [*out* (Clojure.Clojure_Interpreter/getStdOut)]
    ; any typed input here
    )
 </pre>                                                                                                                                                                                                                
