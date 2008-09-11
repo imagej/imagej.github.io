@@ -34,10 +34,15 @@
 <p>To call a variable or 'field', just do it like a method call but without the parentheses:</p>
 <pre>
 (. imp changes)
-
-(. ij.plugin.filter.PlugInFilter DOES_ALL)
 </pre>
-<p>Above, notice how a class name is used instead of a pointer to call static fields.</p>
+
+
+<p>To call a <b>static</b> field or method, use namespace syntax:</p>
+<pre>
+(ij.plugin.filter.PlugInFilter/DOES_ALL)
+</pre>
+
+<p>Above, notice how a class name is used instead of a pointer to call static fields. Static fields and methods are just variables and functions that exist within the namespace of the class in which they are declared. Hence Clojure's namespace syntax makes way more sense than java code, that doesn't do such distinction and allows for loads of confusion (java allows invoking static methods and fields using a pointer to an instance of the class in which such static methods and fields are declared).</p>
 
 <p>To enhance readability, use <i>import</i> when appropriate. Imports remain visible throughout the current namespace:</p>
 <pre>
