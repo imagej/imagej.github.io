@@ -10,6 +10,8 @@ Your first step should be to "clone" the fiji repository with the following comm
 
 This should start downloading the base fiji repository and unpack it into a directory called "fiji" in your current directory.  Once this has successfully completed, change into the newly created "fiji" directory.
 
+=== Submodules ===
+
 This will not yet be complete tree that you can build, since the fiji repository has on a number of submodules.  (For more on submodules, see the [[Git submodule tutorial]].)  If you have lots of disk space available, these submodules can be initialized with:
 
  git submodule init ImageJA TrakEM2 VIB micromanager1.1 mpicbg
@@ -25,6 +27,10 @@ This will not yet be complete tree that you can build, since the fiji repository
 You can then update the submodules with:
 
  git submodule update
+
+=== Getting a snapshot without Git ===
+
+If you insist on not using Git, you can download a snapshot of Fiji [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=snapshot;h=master;sf=tgz here], but you need to make sure that you have a new enough Java version installed.
 
 === Building Fiji from Source===
 
