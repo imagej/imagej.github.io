@@ -1,0 +1,13 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Object Counter3D
+| author                 = Jonathan Jackson
+| filename               = [http://rsb.info.nih.gov/ij/plugins/track/Object_Counter3D.class Object_Counter3D.class] (13,353 Bytes)
+| source                 = [http://rsb.info.nih.gov/ij/plugins/track/Object_Counter3D.java Object_Counter3D.java] (23,913 Bytes)
+| released               = 31 May 2006 
+| latest version         = 14 June 2006
+| status                 = unknown
+| category               = [[:Category:Particle analysis|Particle analysis]]
+| website                = [http://rsb.info.nih.gov/ij/plugins/track/objects.html]
+}}
+The current Object_Counter3D.class by Jonathan Jackson is a follow-up of Fabrice Cordelières's  [http://rsb.info.nih.gov/ij/plugins/track/_3D_objects_counter.class _3D_objects_counter.class], [http://rsb.info.nih.gov/ij/plugins/track/_3D_objects_counter.java _3D_objects_counter.java] and its changelog is located on the same website (see infobox).
