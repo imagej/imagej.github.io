@@ -1,0 +1,44 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Multi Otsu Threshold
+| author                 = Yasunari Tosa
+| filename               = Multi_OtsuThreshold.class
+| source                 = [http://rsb.info.nih.gov/ij/plugins/download/Multi_OtsuThreshold.java Multi_OtsuThreshold.java]
+| released               = 14 April 2006
+| status                 = stable
+| category               = [[:Category:Segmentation|Segmentation]]
+| website                = [http://rsb.info.nih.gov/ij/plugins/multi-otsu-threshold.html]
+}}
+
+== Purpose ==
+
+This plugin segments the image in classes by thresholding. It uses the same algorithm found in [[Otsu Thresholding]], but was adapted to output more than 2 classes out of the process. 
+
+== Documentation ==
+
+This plugin implements an algorithm described in the following paper
+{{Citation
+  | last = Liao
+  | first = P-S.
+  | last2 = Chen
+  | first2 = T-S.
+  | last2 = Chung
+  | first2 = P-C.
+  | title = A fast algorithm for multilevel thresholding
+  | journal = Journal of Information Science and Engineering
+  | volume = 17
+  | issue = 5
+  | pages = 713-727
+  | date = September 2001
+  | url = http://www.iis.sinica.edu.tw/page/jise/2001/200109_01.pdf}}
+
+A thresholding algorithm will typically classify pixels in two classes (or two set of objects): the one that have their intensity lower than a certain threshold (generally, the background), and the other (the interesting features). This plugin is based on the [[Otsu Thresholding]] technique, adapted to generate ''multiple'' thresholds and ''multiple'' classes from one single image. 
+
+For example, by setting the desired number of classes to 3 (the algorithm then needs to find 2 thresholds), one can get background pixels, bright pixels and intermediate pixels. This might be of interest for images where there is such a pixel populations. In the example depicted below, based on the blob image, one could get the background, the blobs center and the blob edges out of it. 
+
+<gallery>
+Image:Blobs.png|Original image: blobs on a dark background
+Image:Blobs_MultiOtsu_1.png|First class: the dark pixels as background
+Image:Blobs_MultiOtsu_2.png|Second class: the intermediate pixels delineate the edges
+Image:Blobs_MultiOtsu_3.png|Third class: the bright pixels form the blobs centers
+</gallery>
