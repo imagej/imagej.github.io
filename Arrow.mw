@@ -1,0 +1,18 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Arrow
+| author                 = Wayne Rasband
+| filename               = [http://rsb.info.nih.gov/ij/plugins/download/Arrow_.class Arrow_.class] (1,179 Bytes)
+| source                 = [http://rsb.info.nih.gov/ij/plugins/download/Arrow_.java Arrow_.java] (1,177 Bytes)
+| released               = 26 May 2000
+| latest version         = 16 November 2001
+| status                 = stable
+| category               = [[:Category:Image annotation|Image annotation]]
+| website                = [http://rsb.info.nih.gov/ij/plugins/arrow.html]
+}}
+==Usage==
+
+Draws an arrow at the location of the current straight line selection using the current color and line width. The arrow will be "burnt" in the image (not a floating selection).
+
+
+You can change the color and line width via ''Edit > Options > Line Width'' and ''Edit > Options > Colors''. The ''Foreground'' option in the latter will change the color of the arrow.
