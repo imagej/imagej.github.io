@@ -2,7 +2,7 @@
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = Watershed Algorithm
-| author                 = Christopher Mei ([mailto:christopher.mei@sophia.inria.fr christopher.mei@sophia.inria.fr])
+| author                 = Christopher Mei
 | filename               = [http://rsb.info.nih.gov/ij/plugins/download/jars/Watershed_Algorithm.jar Watershed_Algorithm.jar]
 | source                 = included in .jar
 | released               = 15 December 2003 
