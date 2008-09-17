@@ -1,0 +1,46 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Anisotropic diffusion 2D
+| author                 = Vladimir Pilny and Jiri Janacek
+| filename               = [http://rsb.info.nih.gov/ij/plugins/download/Anisotropic_Diffusion_2D.class Anisotropic_Diffusion_2D.class]
+| source                 = [http://rsb.info.nih.gov/ij/plugins/download/Anisotropic_Diffusion_2D.java Anisotropic_Diffusion_2D.java]
+| released               = 01 December 2005
+| latest version         = 14 February 2006
+| status                 = v0.3
+| website                = [http://rsb.info.nih.gov/ij/plugins/anisotropic-diffusion-2d.html]
+| category               = [[:Category:Filtering|Filtering]]
+}}
+
+== Purpose ==
+
+This plugin implement the anisotropic diffusion filter in 2D. Anisotropic filters are a class of filter that reduces noise in an image while trying to preserve sharp edges.
+
+== Documentation ==
+
+'''Parameters:'''
+* ''Number of iterations'' - Maximum number of complete iterations, default value is 20.
+* ''Smoothings per iteration'' - Number of smoothings by anisotropic Gaussian with 3x3 mask per iterations, default value is 1. Size of the smoothing per one complete iteration is proportional to the square root of this number.
+* ''Keep each'' - Number of iterations between successive savings of the results. Default value is 20.
+* ''a1 (Diffusion limiter along minimal variations)'' - a1 influences the shape of the smoothing mask. f1(l1,l2)= (1.0+l1+l2)^-a1. The smoothing in each iteration is defined by a tensor (2x2 matrix), that is linear combination of tensors corresponding to minimal and maximal eigenvalue of structure tensor. f1 and f2 are weights of the tensors (see Tschumperlé and Deriche, 2005).
+* ''a2 (Diffusion limiter along maximal variations)'' - a2 influences the shape of the smoothing mask. <math> f_2(l_1,l_2) = (1.0+l_1+l_2)^{-a_2} </math>.
+* ''dt (Time step)'' - Default value is 20. The result of the filter is proportional to the step, but too long time step yields numerical instability of the procedure.
+* ''Edge threshold height'' - Defines minimum "strength" of edges that will be preserved by the filter. Default value is 5.
+* ''Show filter stats'' - Display filter statistics for each iteration.
+* ''Show time stats'' - Display elapsed times.
+* ''Add labels'' - Add labels to output stack. Double click on the eye dropper tool to set the label color.
+
+
+
+The algorithm used by this plugin is an implementation of Anisotropic Diffusion from
+{{Citation
+  | last = Tschumperlé
+  | first = D.
+  | last2 = Deriche
+  | first2 = R.
+  | title = Vector-Valued Image Regularization with PDE’s : A Common Framework for Different Applications
+  | journal =  IEEE Trans. Pattern. Anal. Mach. Intell.
+  | volume = 27
+  | issue = 4
+  | pages = 506-517
+  | date = 2005
+  | PMID = 15794157 }}
