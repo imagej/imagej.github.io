@@ -1,0 +1,70 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Parallel Iterative Deconvolution 2D and 3D
+| author                 = Piotr Wendykier
+| filename               = [http://mathcs.emory.edu/%7Epwendyk/research/deconvolution/iterative/parallel_iterative_deconvolution-1.6-bin.zip parallel_iterative_deconvolution-1.6-bin.zip] 
+| source                 = [http://mathcs.emory.edu/%7Epwendyk/research/deconvolution/iterative/parallel_iterative_deconvolution-1.6-src.zip parallel_iterative_deconvolution-1.6-src.zip]
+| released               = 30 January 2008
+| latest version         = 18 April 2008
+| status                 = active
+| category               = [[:Category:Deconvolution|Deconvolution]]
+| website                = [http://piotr.wendykier.googlepages.com/iterativedeconvolution]
+}}
+
+== Purpose ==
+
+Parallel Iterative Deconvolution is an ImageJ plugin for iterative deblurring. This plugin takes advantage of multi-core processors. 
+
+== Documentation ==
+
+The plugin code is based on a [[Matlab]] toolbox: [http://mathcs.emory.edu/%7Enagy/RestoreTools/index.html RestoreTools] by James G. Nagy and several of his students, including Julianne Chung, Katrina Palmer, Lisa Perrone, and Ryan Wright.
+
+It implements the 3 following iterative methods:
+* MRNSD - Modified Residual Norm Steepest Descent
+* CGLS - Conjugate Gradient for Least Squares
+* HyBR - Hybrid Bidiagonalization Regularization
+
+Please refer to the [http://piotr.wendykier.googlepages.com/iterativedeconvolution website] for details and examples.
+
+== See also ==
+
+* [[Diffraction PSF 3D]] for the creation of theoretical PSF. 
+* [[Parallel Spectral Deconvolution]] by the same author, for another set of methods.
+
+== Version history ==
+
+* 1.0:	January 30, 2008
+** initial release
+
+* 1.1:	February 5, 2008
+** fixed bug in PSFMatrix_2D causing IndexOutOfBoundException
+** added Benchmark_2D
+
+* 1.2:	February 15, 2008
+** added single precision
+** added 3D algorithms
+** added exceptions handling
+
+* 1.2.1:	February 16, 2008
+** fixed bug causing IllegalArgumentException in vectorize()
+
+* 1.2.2:	February 19, 2008
+**  fixed bug causing IllegalArgumentException in getFft3()
+
+* 1.3:	February 24, 2008
+** the overlap-save algorithm for invariant multiplication was replaced by the non-blocking version in PSFMatrix_2D and PSFMatrix_3D
+** fixed bug in MRNSD (division by zero)
+
+* 1.4:	March 4. 2008
+** added threshold option 
+** added options panel for MRNSD and CGLS
+** changed the title of a deblurred image
+** memory optimization in HyBR
+
+* 1.5:	March 10, 2008
+** fixed bug causing improper refreshing of combo boxes holding the list of open images
+** from now on Deconvolve and Cancel buttons are disabled while deconvolution is in progress
+** from now on the main GUI window cannot be closed by using the button from the title bar   
+
+* 1.6:	April 18, 2008
+** the plugin is updated to use Parallel Colt 0.4
