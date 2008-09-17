@@ -1,0 +1,17 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Copy Pixel Size
+| author                 = J. Anthony Parker
+| filename               = [http://www.med.harvard.edu/JPNM/ij/plugins/download/Copy_Pixel_Size.class Copy_Pixel_Size.class] 
+| source                 = [http://www.med.harvard.edu/JPNM/ij/plugins/download/Copy_Pixel_Size.java Copy_Pixel_Size.java]
+| released               = 22 November 2001 
+| status                 = stable
+| category               = [[:Category:Image annotation|Image annotation]]
+| website                = [http://www.med.harvard.edu/JPNM/ij/plugins/CopyPixelSize.html]
+}}
+
+== Purpose ==
+
+This plugin copies the pixel size from the calibration of one image or stack to a second image or stack.  This allows one to copy the spatial calibration from one stack to another. 
+
+A second dialog allows to enter the scale factors.
