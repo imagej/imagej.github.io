@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = Cell Counter
-| author                 = Kurt De Vos ([mailto:kurt.devos@iop.kcl.ac.uk kurt.devos@iop.kcl.ac.uk])
+| author                 = Kurt De Vos
 | filename               = [http://rsb.info.nih.gov/ij/plugins/download/jars/cell_counter.jar cell_counter.jar] (33,829 Bytes)
 | source                 = in .jar file
 | released               = 17 October 2001 
