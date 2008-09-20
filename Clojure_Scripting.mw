@@ -259,18 +259,20 @@ In the example below, the <i>fix</i> function is called with the current image a
 
 <h1>Appendix</h1>
 
-* The default output stream is at variable <i>*out*</i>. The Clojure Interpreter binds it to the PrintWriter that prints to the interpreter text area, by executing any typed in code within the following binding:
+<h3>Defining the output stream</h3>
+The default output stream is at variable <i>*out*</i>. The Clojure Interpreter binds it to the PrintWriter that prints to the interpreter text area, by executing any typed in code within the following binding:
 <pre>
 (binding [*out* (Clojure.Clojure_Interpreter/getStdOut)]
    ; any typed input here
    )
 </pre>                                                                                                                                                                                                                
 
+<h3>Namespaces</h3>
 * To list all existing namespaces:
 <pre>
 >>> (all-ns)
 (#<Namespace: xml> #<Namespace: zip> #<Namespace: clojure> #<Namespace: set> #<Namespace: user>)
-</pre>                                                                                                                                                                                            
+</pre>
 
 * To list all functions and variables of a specific namespace, first get the namespace object by name:
 <pre>
@@ -283,8 +285,13 @@ Note above the quoted string "xml" to avoid evaluating it to a (non-existing) va
 (map ns-map (all-ns))
 </pre>
 
+<h3>JVM arguments</h3>
 * To get the arguments passed to the JVM, see contents of variable *command-line-args*
+<pre>
+(println *command-line-args*)
+</pre>
 
+<h3>Reflection</h3>
 * To list all methods of an object:
 
 <pre>
@@ -306,5 +313,35 @@ Note above the quoted string "xml" to avoid evaluating it to a (non-existing) va
 To list constructors, just use <i>.getConstructors</i> instead of <i>.getMethods</i>.
 
 (Thanks to Craig McDaniel for posting the above function to Clojure's mailing list.)
+
+<h3>Lambda functions</h3>
+<h4>Declaration</h4>
+* To declare functions on the fly, lambda style, with regex for arguments:
+
+For example, declare a function that takes 2 arguments, and returns the value of the first argument divided by 10, and multiplied by the second argument:
+<pre>
+(let [doer #(* (/ %1 10) %2)]
+  (doer 3 2))
+</pre>
+Of course there's no need to name the function, the above is just for illustration.
+
+<h4>Mapping a function to all elements in a list</h4>
+
+* To declare a nameless function, and apply it to each element of a list:
+In this case, increment by one each value of a list from 0 to 9:
+<pre>
+(let [numbers (range 10)
+      add-one (fn [x] (+ x 1))]
+  (map add-one numbers))
+</pre>
+There is no need to declare the names, the above is just for illustration.
+Above, we could have defined the function as #(+ %1 1):
+<pre>
+(map #(+ %1 1) (range 10))
+</pre>
+... or of course use the internal function <i>inc</i> which does exactly that:
+<pre>
+(map inc (range 4))
+</pre>
 
 [[Category:Scripting]]
