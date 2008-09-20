@@ -344,4 +344,17 @@ Above, we could have defined the function as #(+ %1 1):
 (map inc (range 4))
 </pre>
 
+<h3>Built-in documentation</h3>
+Use the function <i>doc</i> to query any other function. For example, the list generator function <i>range</i>:
+<pre>
+(doc range)
+
+-------------------------
+clojure/range
+([end] [start end] [start end step])
+  Returns a lazy seq of nums from start (inclusive) to end
+  (exclusive), by step, where start defaults to 0 and step to 1.
+</pre>
+Above, notice the function has three groups of possible arguments, denoted in brackets.
+
 [[Category:Scripting]]
