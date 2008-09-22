@@ -42,3 +42,5 @@ Image:Blobs_MultiOtsu_1.png|First class: the dark pixels as background
 Image:Blobs_MultiOtsu_2.png|Second class: the intermediate pixels delineate the edges
 Image:Blobs_MultiOtsu_3.png|Third class: the bright pixels form the blobs centers
 </gallery>
+
+[[Category:Plugins]]
