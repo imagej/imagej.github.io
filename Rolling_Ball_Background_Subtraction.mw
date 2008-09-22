@@ -19,3 +19,5 @@ A local background value is determined for every pixel by averaging over a very 
 This plugin implements (differently) the same algorithm as the one built-in ImageJ in the ''Process>Subtract background'' menu, but adds a useful ''Preview'' capability. Also, to display the background subtracted in a separate (new) window, hold the ALT key when pressing "OK" (Preview must be off).
 
 The rolling-ball algorithm was inspired by Stanley Sternberg's article, "Biomedical Image Processing", IEEE Computer, January 1983.
+
+[[Category:Plugins]]
