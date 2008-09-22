@@ -15,3 +15,5 @@
 This plugin does basically the same things as the [[Colour merge]] plugin, but allow to merge 4 images or stacks at a time.
 
 This plugin has been edited to include the option for users to pre-subtract a fraction of the fluorescence channel from the grey channel prior to merging. This can prevent a 'washed out' look to the fluorescence.
+
+[[Category:Plugins]]
