@@ -19,3 +19,5 @@ This plugin threshold an image using the Maximum Entropy algorithm, which is sim
 The plugin requires a 8-bit image to process. It outputs directly the thresholded image, replacing the original one. 
 
 It processes stacks correctly, by operating on the whole stack histogram to determine the threshold. A new, thresholded stack replace the original one.
+
+[[Category:Plugins]]
