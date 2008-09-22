@@ -21,3 +21,5 @@ This algorithm separates the histogram of an image into two classes using a Gaus
 The plugin returns a histogram with the two Gaussians, the parameters obtained (average, standard deviation, threshold) and the thresholded image.
 
 It has the same drawbacks as the [[Otsu Thresholding]] plugin (by the same author), which is that it behaves annoyingly with stacks.
+
+[[Category:Plugins]]
