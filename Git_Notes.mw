@@ -5,6 +5,9 @@ This list is expected to be incomplete and even wrong, do not trust it!
 ;<source lang="bash">git init --shared=group</source>
 :Tell the repository that it should always set the permissions to g+w.
 
+;<source lang="bash">git branch -m <new branch name></source>
+;Rename the current branch.
+
 ;<source lang="bash">git reset --hard HEAD^</source>
 :Roll back.
 
