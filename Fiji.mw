@@ -19,16 +19,7 @@ It is an Open Source project, so everybody is welcome to contribute with plugins
 
 == Downloads ==
 
-At the moment, we support
-
-* Linux (x86),
-* Linux (amd64),
-* MacOSX (PowerPC),
-* MacOSX (Intel),
-* Windows (x86), and
-* Windows (amd64)
-
-All available at the '''[[Downloads|downloads page]]'''.
+At the moment, we support 32-bit and 64-bit versions for Linux, MacOSX and Windows.  See our '''[[Downloads|downloads page]]'''.
 
 == Reporting Problems ==
 
