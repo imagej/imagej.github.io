@@ -7,17 +7,15 @@ __NOTOC__
 
 == What is Fiji ==
 
-If ImageJ was a chocolate chip, Fiji would be a chocolate-chip muffin. 
+Think of [http://rsb.info.nih.gov/ij/ ImageJ] as the core of Fiji, which is enhanced by a set of plugins in a coherent menu structure, and comprehensive documentation.
 
-Fiji is a project aiming at simplifying, empowering
+Fiji is a project aiming at simplifying
 * the installation of ImageJ
 * the usage of ImageJ 
 * the usage of specific, powerful ImageJ plugins
 * the development of plugins using ImageJ
 
-It is a carefully-cooked, stirred-with-love open source recipe that will install on your hard drive, whatever is your machine or what OS runs it, a fully featured distribution of ImageJ, with a blend selection of branded plugins (hopefully) filling all of your image processing needs, and more importantly, that just works. 
-
-These last points might be yet somewhat unfulfilled, for Fiji is still alpha software. But it is lead by a team of dedicated scientists that wishes to serve, and the packages we release are intended to be pretty stable and usable.
+It is an Open Source project, so everybody is welcome to contribute with plugins, patches, bug reports or "Well done" mails.
 
 == Downloads ==
 
