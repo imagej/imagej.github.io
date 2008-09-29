@@ -21,6 +21,5 @@ This plugin implements a recursive prediction/correction algorithm which is base
 The [http://rsb.info.nih.gov/ij/plugins/kalman.html ImageJ website] offer a very complete documentation for its usage. Please refer to it. 
 
 
-[[Category:ImageJ plugins]]
 [[Category:Filtering]]
 [[Category:Plugins]]
