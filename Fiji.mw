@@ -3,7 +3,7 @@ __NOTOC__
 
 [[Image:Fiji.jpg|right|320px|Fiji Is Just ImageJ]]
 
-<center><big> Fiji Is Just ImageJ </big></center>
+<center><big> Fiji Is Just ImageJ (batteries included) </big></center>
 
 == What is Fiji ==
 
@@ -11,8 +11,7 @@ Think of [http://rsb.info.nih.gov/ij/ ImageJ] as the core of Fiji, which is enha
 
 Fiji is a project aiming at simplifying
 * the installation of ImageJ
-* the usage of ImageJ 
-* the usage of specific, powerful ImageJ plugins
+* the usage of ImageJ and some selected powerful plugins
 * the development of plugins using ImageJ
 
 It is an Open Source project, so everybody is welcome to contribute with plugins, patches, bug reports or "Well done" mails.
@@ -21,16 +20,30 @@ It is an Open Source project, so everybody is welcome to contribute with plugins
 
 At the moment, we support 32-bit and 64-bit versions for Linux, MacOSX and Windows.  See our '''[[Downloads|downloads page]]'''.
 
-== Reporting Problems ==
+== Documentation ==
 
-We are delighted to hear about something that does not work, for our goal is to fix it. Seeing the number of different platforms we support, it would be awkward to expect everything working smooth in a snap. So please help us, by complaining about bugs. You can [http://pacific.mpi-cbg.de/bugzilla/ report them here] and view the list of [http://pacific.mpi-cbg.de/cgi-bin/bugzilla/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=&content= unresolved problems here].
+=== HOWTOs ===
+
+Stay tuned; this section is to be created.
+
+=== Plugins ===
+
+See the [[:Category:Plugins|plugins page]] for more documentation on the plugins, or a description of the [[Plugins Menu]].
+
+=== Scripting ===
+
+To get help on scripting, please see our [[:Category:Scripting|scripting pages]].
 
 == Help ==
 
 Find out how to get help [[Help|here]].
 
-== Miscellaneous ==
+If you still do not find what you want, try [[:Special:Search|searching]] for it!
 
-For some descriptions of the plugins you'll find in Fiji, see [[Plugins Menu]]
+== Reporting Problems ==
 
-Thrilled by the project? Hoping it will support your need? Because of its structure and goals, the Fiji project can use the help of a very large range of competence. If you feel like helping (anyone can), you will find our recently assembled task list [[TaskList|here]]. We also just opened a [[Developers HowTo]].
+We are delighted to hear about something that does not work, for our goal is to fix it. Seeing the number of different platforms we support, it would be awkward to expect everything working smooth in a snap. So please help us, by complaining about bugs. You can [http://pacific.mpi-cbg.de/bugzilla/ report them here] and view the list of [http://pacific.mpi-cbg.de/cgi-bin/bugzilla/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=&content= unresolved problems here].
+
+== Participating in Development ==
+
+Please see the [[Downloading_and_Building_Fiji_From_Source|documentation for developers]].
