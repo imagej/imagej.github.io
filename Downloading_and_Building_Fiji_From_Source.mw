@@ -41,15 +41,3 @@ You should now be able to build Fiji with:
 ... which will invoke Fiji's multi-platform build system.  If all goes well, after some time you should see the main Fiji window:
 
 [[Image:Fiji-main-window.png|Fiji's main window]]
-
-== Adding plugins ==
-
-After you built Fiji successfully, you can add your own plugins.
-
-* If you haven't done so, pick a name for your .jar file, say ''My_Plugin''.  Make sure that it has at least one underscore in it, otherwise ImageJ will not pick it up.  If you cannot think of a name with an underscore, just append one.  Then create a subdirectory ''src-plugins/My_Plugin''.
-* Now put your sources into that subdirectory.  Please no .class files.  Readme or license files are okay, however.
-* Create a ''staged-plugins/My_Plugin.config'' file.  This will be included in the .jar file as ''plugins.config''.
-* In Fiji's root folder, call '''./fiji scripts/commit-plugin.py src-plugins/My_Plugin/'''.  Please make sure that it ends with a slash.  This command will make the necessary edits to the Fakefile and .gitignore, and commit everything needed for your plugin.
-* Now build the plugin with '''./fiji --fake'''.
-* After testing, you might realize that you need changes.  In this case, decide if you want to amend the commit (if there was a silly typo, you might want to hide that fact from the world), or if you want to make a new commit.
-* When everything is done and fine, publish!
