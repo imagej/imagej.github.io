@@ -106,7 +106,7 @@ We'll manipulate the pixel array directly, so it's worth checking that this will
   0
   >>> i.updateAndDraw
 
-Hopefully that worked OK.  The color value specified there is in ARGB format.  You may have noticed that this step was rather slow - there is quite a bit of magic involved in JRuby's transparent access between Ruby and Java, which has an inevitable performance cost.  So, JRuby scripting isn't an ideal job for this kind of script, but hopefully this example will be instructive nonetheless.
+Hopefully that worked OK.  The color value specified there is in ARGB format.  You may have noticed that this step was rather slow - there is quite a bit of magic involved in JRuby's transparent access between Ruby and Java, which has an inevitable performance cost.  But if your goal is not so much the speed with which the script is executed, but to get a working script as fast as possible, JRuby scripting may well be your optimal tool.
 
 You would probably proceed at this stage by switching to a text editor and creating a script with the extension ".rb" and underscores in the name in the Fiji plugins directory.  You should find an example "Plasma_Cloud.rb" script in plugins/Examples which is based on the basics we worked out above.  The output of this script looks like this:
 
