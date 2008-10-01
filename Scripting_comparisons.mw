@@ -204,6 +204,9 @@ if (!gd.wasCanceled())
 </source>
 
 <h3>In JRuby</h3>
+
+For some tutorial material on using JRuby to script ImageJ, please see [[JRuby_Scripting]].
+
 <source lang="ruby">
 include_class 'java.awt.Color'
 include_class 'java.awt.event.TextListener'
