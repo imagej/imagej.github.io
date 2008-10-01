@@ -24,7 +24,7 @@ The workflow is thereby as follows:
 * Register each labelled region indivudually, again rigidly.
 * Interpolate the displacement field between labelled regions. 
 
-The output of the VIB Protocol is written to a user-specified folder. A description of how to use this plugin can found below, while a more detailed description about how the VIB Protocol works can be found in this [http://132.187.25.13/home/?category=Download&page=VIBProtocol presentation], which was shown at the FENS 2008 in Geneve. There exists also a [http://132.187.25.13/home/?category=Download&page=VIBProtocol movie] which demonstrates nicely the alignment of two brains. 
+The output of the VIB Protocol is written to a user-specified folder. A description of how to use this plugin can found below, while a more detailed description about how the VIB Protocol works can be found in this [http://132.187.25.13/home/imagej/fens.pdf presentation], which was shown at the FENS 2008 in Geneve. There exists also a [http://132.187.25.13/home/imagej/fens.avi movie] which demonstrates nicely the alignment of two brains. 
 
 == Documentation ==
 
