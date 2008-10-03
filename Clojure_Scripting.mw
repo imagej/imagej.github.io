@@ -257,6 +257,19 @@ In the example below, the <i>fix</i> function is called with the current image a
    (fix imp (float 32500))
    (.updateAndDraw imp))
 
+<h3>Creating a script for ImageJ</h3>
+
+Simply write the clojure script in a text file, and follow these conventions:
+
+ 1. Add an underscore "_" to its file name, and the extension ".clj": fix_leginon_images.clj
+ 2. Save it under fiji/plugins/ folder, or a subfolder.
+
+When done, just run the "PlugIns/Scripting/Refresh Clojure Scripts" plugin.
+
+Once saved and in the menus, you need <b>not</b> call refresh scripts ever again for that script. Just edit and save it's text file, and run it again from the menus. Next time Fiji opens, the script will automatically appear in the menus.
+
+See [[Scripting Help]] for more details, including how to use the built-in dynamic interpreter.
+
 <h1>Appendix</h1>
 
 <h3>Defining the output stream</h3>
