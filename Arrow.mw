@@ -18,3 +18,4 @@ Draws an arrow at the location of the current straight line selection using the 
 You can change the color and line width via ''Edit > Options > Line Width'' and ''Edit > Options > Colors''. The ''Foreground'' option in the latter will change the color of the arrow.
 
 [[Category:Plugins]]
+[[Category:Image annotation]]
