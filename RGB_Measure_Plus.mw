@@ -17,3 +17,4 @@
 This plugin separately measures the red, green and blue channels of an RGB image between user-definable threshold levels per channel. The aforementioned thresholds can be set using the [[Threshold Colour]] plugin.
 
 [[Category:Plugins]]
+[[Category:Color processing]]
