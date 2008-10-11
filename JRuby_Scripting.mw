@@ -212,3 +212,6 @@ Some example output:
 === What next? ===
 
 [You may want to first have a quick look at the [[Scripting Help]] page for generic instructions in using the interpreter and script interfaces, and the [[Scripting comparisons]] page for an example written in several of the different scripting languages available.  The JRuby example shows how to implement a Java interface in JRuby.]
+
+
+[[Category:Scripting]]
