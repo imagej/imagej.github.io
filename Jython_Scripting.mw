@@ -136,3 +136,6 @@ The recommended setup is the following:
 * Keep editing (and saving) the file from your editor. Just select the menu item to execute it over and over. Or use the "Find..." command window to launch it easily (keybinding 'l').
 
 The next time Fiji is run, automatic commands in macros/StartupMacros.txt will setup all your scripts in the Plugins menu.
+
+
+[[Category:Scripting]]
