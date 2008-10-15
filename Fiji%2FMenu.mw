@@ -37,6 +37,10 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 * '''T2 set all transforms to identity''': Resets the transformation matrix (translation,rotation,scaling and shear) of all objects in a TrakEM2 display to identity (zero translation, scaling of 1.0, zero rotation and no shear). Written in [http://www.jython.org Jython].
 * '''[[downsample]]''': Proper Gaussian downsampling of an image.  Written in [http://www.mozilla.org/rhino/ScriptingJava.html JavaScript]
 
+=== Feature Extraction ===
+* '''Extract SIFT Correspondences''':
+* '''Extract MOPS Correspondences''':
+
 === Image IO ===
 
 <i>This submenu should be removed and the image loaders and writers moved into Import> or Save as...> </i>
