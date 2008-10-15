@@ -4,13 +4,13 @@ Please bear in mind: Fiji is ''alpha'' software for now.  If you want it to beco
 
 You can download Fiji for
 
-* [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-linux-20080807.tar.bz2 Linux]
-* [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-linux-amd64-20080807.tar.bz2 Linux (64-bit)]
-* [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-win32-20080807.zip Windows]
-* [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-win64-20080807.zip Windows (64-bit)]
-* [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-macosx-20080807.dmg MacOSX]
-* [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-all-20080807.tar.bz2 All platforms (includes all JREs)]
-* [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-nojre-20080807.tar.bz2 All platforms (does not include JREs)]
+* {{Download|linux|tar.bz2|Linux}}
+* {{Download|linux-amd64|tar.bz2|Linux (64-bit)}}
+* {{Download|win32|zip|Windows}}
+* {{Download|win64|zip|Windows (64-bit)}}
+* {{Download|macosx|dmg|MacOSX}}
+* {{Download|all|tar.bz2|All platforms (includes all JREs)}}
+* {{Download|nojre|tar.bz2|All platforms (does not include JREs)}}
 
 === Source Code ===
 
