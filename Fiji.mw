@@ -18,8 +18,8 @@ __NOTOC__
 |style="vertical-align:top" |[[Image:3D-Viewer.jpg|thumb|180px|3D Viewer: hardware-accelerated 3D visualization of image stacks as volumes, orthoslices and meshes.]]
 |style="vertical-align:top" |[[Image:Simple-Neurite-Tracer.jpg|thumb|180px|Simple Neurite Tracer: semi-automatic tracing of neurons.]]
 |style="vertical-align:top" |[[Image:Lab-404-403-f.png|thumb|180px|MOPS feature correspondences: Automatically extracted landmark correspondences using the MOPS descriptor]]
+|style="vertical-align:top" |[[Image:Stitching-overview.jpg|thumb|180px|Stitching of 3D images: Automatically reconstruct tiled 3D/2D acquisitions. The example shown (6 times 512x512x86 px) took 90 seconds.]]
 |}
-
 
 == Projects ==
 
