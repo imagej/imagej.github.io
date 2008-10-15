@@ -1,9 +1,9 @@
 __NOTOC__
 
 = Fiji =
-<b>Fiji</b> Is Just ImageJ (batteries included)
+<b>Fiji</b> Is Just [http://rsb.info.nih.gov/ij ImageJ] (batteries included)
 
-* [[:Category:Plugins|Plugins]]
+* Bundled [[:Category:Plugins|Plugins]]
 * [[Plugins Menu]]
 * [[:Category:Scripting|Scripting]]: in [[Javascript_Scripting|Javascript]], in [[JRuby_Scripting|JRuby]], in [[Jython_Scripting|Jython]], in [[Clojure_Scripting|Clojure]] (see also [[Scripting Help]]).
 * [[Developing_Fiji|Documentation]] for developers. '''[[Fake]]''' build system. [http://pacific.mpi-cbg.de/bugzilla/ Report a bug] and see [http://pacific.mpi-cbg.de/bugzilla/ current bugs].
@@ -22,7 +22,8 @@ __NOTOC__
 == Examples ==
 
 {|
-|style="vertical-align:top" |[[Image:Trakem2-snap.jpg|thumb|180px|TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each]]
+|style="vertical-align:top" |[[Image:Trakem2-snap.jpg|thumb|180px|TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each.]]
+|style="vertical-align:top" |[[Image:Simple-Neurite-Tracer.jpg|thumb|180px|Simple Neurite Tracer: semi-automatic tracing of neurons.]]
 |}
 
 
@@ -33,7 +34,7 @@ __NOTOC__
 * '''[[Plugins_Menu#Feature_Extraction|Feature extraction]]:''' SIFT and MOPS.
 * '''[[Plugins_Menu#Registration|Image registration]]:''' [http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/ bUnwarpJ], [[Register_Virtual_Stack_Slices|stack slice registration]], image montage (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2]) with global optimization (in 2D and across sections).
 * '''[[Stitching 3D]]:''' stitch image stacks across X,Y,Z.
-* '''[[Plugins_Menu#Segmentation|Segmentation]]:''' [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/ Simple Neurite Tracer], [http://132.187.25.13/home/?category=Download&page=SegmentationEditor Segmentation Editor], manual (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2]), [[Plugins_Menu#Segmentation|Level Sets]]
+* '''[[Plugins_Menu#Segmentation|Segmentation]]:''' [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/ Simple Neurite Tracer], [http://132.187.25.13/home/?category=Download&page=SegmentationEditor Segmentation Editor], manual (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2]), [[Plugins_Menu#Segmentation|Level Sets]].
 
 
 == License ==
