@@ -8,6 +8,8 @@ The plugins use the [http://en.wikipedia.org/wiki/Scale-invariant_feature_transf
 
 ==Parameters==
 
+[[Image:SIFT_Dialog.png|left|thumb|50%|SIFT parameters]]
+
 ===Scale Invariant Interest Point Detector===
 
 ;initial gaussian blur
@@ -17,8 +19,6 @@ The plugins use the [http://en.wikipedia.org/wiki/Scale-invariant_feature_transf
 :Keypoint candidates are extracted at all scales between maximum image size and minimum image size. This Scale Space is represented in octaves each covering a fixed number of discrete scale steps from &sigma; to 2&sigma;.  More steps result in more but eventually less stable keypoint candidates.  Tip: Keep 3 as suggested by Lowe (2004) and do not use more than 10.
 
 ==SIFT correspondences==
-
-[[Image:SIFT_Dialog.png|left|thumb|50%|SIFT parameters]]
 
 ==MOPS correspondences==
 
