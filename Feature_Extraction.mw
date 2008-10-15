@@ -1,0 +1,29 @@
+[[Image:Tem-42-33-f.png|thumb|400px|MOPS feature correspondences (example 1)]]
+
+[[Image:Lab-404-403-f.png|thumb|400px|MOPS feature correspondences (example 2)]]
+
+The plugins "Extract SIFT Correspondences" and "Extract MOPS Correspondences" identify a set of corresponding points of interest in two images and export them as PointRoi.  Interest points are detected using the [http://en.wikipedia.org/wiki/Blob_detection Difference of Gaussian detector] thus providing similarity-invariance.  Corresponding points are best matches from local feature descriptor that are consistent with respect to a common geometric transformation.
+
+The plugins use the [http://en.wikipedia.org/wiki/Scale-invariant_feature_transform Scale Invariant Feature Transform] (SIFT) and [http://research.microsoft.com/research/pubs/view.aspx?msr_tr_id=MSR-TR-2004-133 Multi-Scale Oriented Patches] (MOPS) for local feature description.  The thus established matches are filtered using the [http://en.wikipedia.org/wiki/RANSAC Random Sample Consensus] (RANSAC).
+
+==Parameters==
+
+===Scale Invariant Interest Point Detector===
+
+;initial gaussian blur
+:Accurate localization of keypoints requires initial smoothing of the image. If your images are blurred already, you might lower this value slightly to get more but eventually less stable keypoints. Increasing this value increases the computational cost for Gaussian blur, setting it to 3.2 is equivalent to keep 1.6 and use half maximum image size. Tip: Keep the default value 1.6 as suggested by Lowe (2004).
+
+;steps per scale octave
+:Keypoint candidates are extracted at all scales between maximum image size and minimum image size. This Scale Space is represented in octaves each covering a fixed number of discrete scale steps from &sigma; to 2&sigma;.  More steps result in more but eventually less stable keypoint candidates.  Tip: Keep 3 as suggested by Lowe (2004) and do not use more than 10.
+
+==SIFT correspondences==
+
+[[Image:SIFT_Dialog.png|left|thumb|50%|SIFT parameters]]
+
+==MOPS correspondences==
+
+==References==
+
+# Lowe, David G. (2004). "[http://citeseer.ist.psu.edu/lowe04distinctive.html Distinctive Image Features from Scale-Invariant Keypoints]". ''International Journal of Computer Vision'' '''60''' (2): 91-110. doi:[http://dx.doi.org/10.1023%2FB%3AVISI.0000029664.99615.94 10.1023/B:VISI.0000029664.99615.94].
+# Brown, Matthew; Szeliski, Richard; Winder, Simon (2005). "[http://www.cs.ubc.ca/~mbrown/papers/cvpr05.pdf Multi-Image Matching Using Multi-Scale Oriented Patches]". ''Proceedings of the 2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)'' Volume 1: 510-517. doi:[http://dx.doi.org/10.1109/CVPR.2005.235 10.1109/CVPR.2005.235].
+# Fischler, Martin A.; Bolles, Robert C. (1981). "Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography". ''Communications of the ACM'' '''24''' (6): 381-395. doi:[http://doi.acm.org/10.1145/358669.358692 10.1145/358669.358692]
