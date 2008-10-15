@@ -1,49 +1,38 @@
 __NOTOC__
-= Welcome to '''Fiji''' =
 
-[[Image:Fiji.jpg|right|320px|Fiji Is Just ImageJ]]
+== Fiji ==
+<b>Fiji</b> Is Just ImageJ (batteries included)
 
-<center><big> Fiji Is Just ImageJ (batteries included) </big></center>
-
-== What is Fiji ==
-
-Think of [http://rsb.info.nih.gov/ij/ ImageJ] as the core of Fiji, which is enhanced by a set of plugins in a coherent menu structure, and comprehensive documentation.
-
-Fiji is a project aiming at simplifying
-* the installation of ImageJ
-* the usage of ImageJ and some selected powerful plugins
-* the development of plugins using ImageJ
-
-It is an Open Source project, so everybody is welcome to contribute with plugins, patches, bug reports or "Well done" mails.
+* [[:Category:Plugins|Plugins]]
+* [[Plugins Menu]]
+* [[:Category:Scripting|Scripting]]: in [[Javascript_Scripting|Javascript]], in [[JRuby_Scripting|JRuby]], in [[Jython_Scripting|Jython]], in [[Clojure_Scripting|Clojure]] (see also [[Scripting Help]]).
+* [[Developing_Fiji|Documentation]] for developers. [http://pacific.mpi-cbg.de/bugzilla/ Report a bug] and see [http://pacific.mpi-cbg.de/bugzilla/ current bugs].
+* [[Help]]
 
 == Downloads ==
 
-At the moment, we support 32-bit and 64-bit versions for Linux, MacOSX and Windows.  See our '''[[Downloads|downloads page]]'''.
+* [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-linux-20080807.tar.bz2 Linux]
+* [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-linux-amd64-20080807.tar.bz2 Linux (64-bit)]
+* [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-win32-20080807.zip Windows]
+* [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-win64-20080807.zip Windows (64-bit)]
+* [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-macosx-20080807.dmg MacOSX]
+* [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-all-20080807.tar.bz2 All platforms (includes all JREs)]
+* [http://pacific.mpi-cbg.de/downloads/Dresden-rc3/fiji-nojre-20080807.tar.bz2 All platforms (does not include JREs)]
 
-== Documentation ==
+== Examples ==
 
-=== HOWTOs ===
+Comming soon.
 
-Stay tuned; this section is to be created.
+== Projects ==
 
-=== Plugins ===
+* VIB
+* TrakEM2
+* Feature extraction
+* Image registration
+* Scripting
 
-See the [[:Category:Plugins|plugins page]] for more documentation on the plugins, or a description of the [[Plugins Menu]].
+== License ==
 
-=== Scripting ===
+Fiji is released under the General Public License.
 
-To get help on scripting, please see our [[:Category:Scripting|scripting pages]].
-
-== Help ==
-
-Find out how to get help [[Help|here]].
-
-If you still do not find what you want, try [[:Special:Search|searching]] for it!
-
-== Reporting Problems ==
-
-We are delighted to hear about something that does not work, for our goal is to fix it. Seeing the number of different platforms we support, it would be awkward to expect everything working smooth in a snap. So please help us, by complaining about bugs. You can [http://pacific.mpi-cbg.de/bugzilla/ report them here] and view the list of [http://pacific.mpi-cbg.de/cgi-bin/bugzilla/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=&content= unresolved problems here].
-
-== Participating in Development ==
-
-Please see the [[Developing_Fiji|documentation for developers]].
+Each component has [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=LICENSES;hb=HEAD its own license].
