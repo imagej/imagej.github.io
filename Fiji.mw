@@ -3,6 +3,7 @@ __NOTOC__
 =<font size="8"><b>Fiji</b></font>=
 <b>Fiji</b> Is Just [http://rsb.info.nih.gov/ij ImageJ] (batteries included)
 
+== ==
 * Bundled [[:Category:Plugins|Plugins]]
 * [[Plugins Menu]]
 * [[:Category:Scripting|Scripting]]: in [[Javascript_Scripting|Javascript]], in [[JRuby_Scripting|JRuby]], in [[Jython_Scripting|Jython]], in [[Clojure_Scripting|Clojure]] (see also [[Scripting Help]]).
