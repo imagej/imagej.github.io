@@ -46,4 +46,8 @@ These two cases would be described as follows:
 
 The starting numbers for x, y and i can be changed in the boxes below.
 
-The channels for registration as well as the fusion methods work the same as described above in the 2D/3D Stitching Plugin section.
+The channels for registration as well as the fusion methods work the same as described above in the 2D and 3D Stitching Plugin section. Note: Maximum intensity fusion is the most memory efficient stitching as it does not need to hold all images in memory at once!
+
+The last three entries describe the behaviour of the global optimization:
+* '''regression threshold''': If the regression threshold between two images after the individual stitching are below that number they are assumed to be non-overlapping. Typical values for a good registration are over 0.7, however in noisy images with less content also small regression thresholds can be a correct overlap.
+* '''max/avg displacement threshold''': After the overlap between all individual tiles has been computed the global optimization computes an optim
