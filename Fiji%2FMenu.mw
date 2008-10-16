@@ -38,8 +38,8 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 * '''[[downsample]]''': Proper Gaussian downsampling of an image.  Written in [http://www.mozilla.org/rhino/ScriptingJava.html JavaScript]
 
 === Feature Extraction ===
-* '''Extract SIFT Correspondences''':
-* '''Extract MOPS Correspondences''':
+* [[Feature_Extraction|'''Extract SIFT Correspondences''']]:
+* [[Feature_Extraction|'''Extract MOPS Correspondences''']]:
 
 === Image IO ===
 
