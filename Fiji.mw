@@ -46,7 +46,7 @@ __NOTOC__
 == Downloads ==
 
 * {{Download|linux|tar.bz2|Linux}}
-* {{Download|linux-amd64|tar.bz2|Linux (64-bit)}}
+* {{Download|linux64|tar.bz2|Linux (64-bit)}}
 * {{Download|win32|zip|Windows}}
 * {{Download|win64|zip|Windows (64-bit)}}
 * {{Download|macosx|dmg|MacOSX}}
