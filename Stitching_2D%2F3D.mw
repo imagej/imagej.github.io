@@ -4,7 +4,7 @@ There is an increasing demand to image large biological specimen at high resolut
 
 The 2D/3D Stitching Plugin is able to reconstruct big images/stacks from an arbitrary number of tiled input images/stacks, making use of the Fourier Shift Theorem that computes all possible translations (x, y[, z]) between two 2D/3D images at once, yielding the best overlap in terms of the cross correlation measure. If more than two input images/stacks are used the correct placement of all tiles is determined using a global optimization. To remove brightness differences at the tile borders, a linear intensity blending is applied. 
 
-For more information see the accompanying publication [http://fly.mpi-cbg.de/~preibisch/pubs/imagejpaper2008.pdf].
+For more information, examples and explanation of the algorithm please have a look at the accompanying [http://fly.mpi-cbg.de/~preibisch/pubs/imagejpaper2008.pdf publication].
 
 == Overview of the Stitching Plugins ==
 
