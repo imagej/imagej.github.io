@@ -26,7 +26,7 @@ On selecting text, a popup offers to:
 
 = Creating scripts and using "refresh scripts" =
 
-On startup, ImageJ will run all "refresh scripts" plugins, one for each supported language. This will result in all scripts present within the plugins menus to be added to the menus.
+On startup, ImageJ will run all "refresh scripts" plugins, one for each supported language. This will result in all scripts present within the plugins folders to be added to the menus.
 
 To run a script, just select it from the plugins menus.
 
