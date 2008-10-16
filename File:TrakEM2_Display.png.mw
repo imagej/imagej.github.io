@@ -1,0 +1,4 @@
+==TrakEM2 Display==
+
+A TrakEM2 display is simply an interactive canvas for viewing and editing the contents of a layer: drag images, register them, add new images by drag and drop, put floating text labels, etc.
+Within a display any number of layers may be browsed –just like slices in a stack.
