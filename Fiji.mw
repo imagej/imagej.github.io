@@ -23,13 +23,24 @@ __NOTOC__
 
 == Projects ==
 
-* '''[http://132.187.25.13/home/?category=Download&page=Viewer3D 3D Viewer]:''' hardware-accelerated 3D volume and mesh visualization, and 3D registration of image stacks.
-* '''[http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2]:''' register/edit/analyze/segment/annotate/3D model terabytes of confocal and electron microscopy images.
-* '''[[Plugins_Menu#Feature_Extraction|Feature extraction]]:''' SIFT and MOPS.
-* '''[[Plugins_Menu#Registration|Image registration]]:''' consistent and elastic 2D registration ([http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/ bUnwarpJ]), [[Register_Virtual_Stack_Slices|stack slice registration]], image montage (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2]) with global optimization (in 2D and across sections).
-* '''[[Stitching 2D/3D]]:''' stitch multiple image stacks across X,Y,Z.
-* '''[[Plugins_Menu#Segmentation|Segmentation]]:''' [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/ Simple Neurite Tracer], [http://132.187.25.13/home/?category=Download&page=SegmentationEditor Segmentation Editor], manual (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2]), [[Plugins_Menu#Segmentation|Level Sets]].
-* '''[http://repo.or.cz/w/imageja.git/ ImageJA]:''' the core of Fiji.
+;[http://132.187.25.13/home/?category=Download&page=Viewer3D 3D Viewer]
+:hardware-accelerated 3D volume and mesh visualization, and 3D registration of image stacks.
+;[http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2]
+:register/edit/analyze/segment/annotate/3D model terabytes of confocal and electron microscopy images.
+;[[Plugins_Menu#Feature_Extraction|Feature extraction]]
+:SIFT and MOPS.
+;[[Plugins_Menu#Registration|Image registration]]
+:consistent and elastic 2D registration ([http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/ bUnwarpJ])
+:[[Register_Virtual_Stack_Slices|stack slice registration]]
+:image montage (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2]) with global optimization (in 2D and across sections)
+;[[Stitching 2D/3D]]
+:stitch multiple image stacks across X,Y,Z.
+;[[Plugins_Menu#Segmentation|Segmentation]]
+:[http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/ Simple Neurite Tracer]
+:[http://132.187.25.13/home/?category=Download&page=SegmentationEditor Segmentation Editor]
+:manual (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2]), [[Plugins_Menu#Segmentation|Level Sets]].
+;[http://repo.or.cz/w/imageja.git/ ImageJA]
+:the core of Fiji.
 
 == Downloads ==
 
