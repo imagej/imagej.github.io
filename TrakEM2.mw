@@ -1,0 +1,37 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = TrakEM2
+| author                 = Albert Cardona
+| filename               = [http://www.ini.uzh.ch/~acardona/jars/TrakEM2_.jar TrakEM2_.jar] 
+| source                 = [http://repo.or.cz/w/trakem2.git]
+| released               = May 2006
+| latest version         = 25 August 2008
+| status                 = active
+| category               = [[:Category:Registration]], [[:Category:Segmentation]], [[:Category:Annotation]]
+| website                = [http://www.ini.uzh.ch/~acardona/trakem2.html]
+}}
+
+TrakEM2 is an ImageJ plugin for morphological data mining, three-dimensional modeling and image stitching, registration, editing and annotation.
+
+See [http://www.ini.uzh.ch/~acardona/snapshots.html TrakEM2 snapshots] for an overview.
+
+TrakEM2 interacts with the [[3D Viewer]] for visualization of image volumes and 3D meshes.
+
+== Documentation ==
+
+* [http://www.ini.uzh.ch/~acardona/howto.html How to]
+* [http://www.ini.uzh.ch/~acardona/trakem2_manual.html Manual]
+
+== Examples ==
+
+{|
+|style="vertical-align:top" |[[Image:Trakem2-snap.jpg|thumb|240px|TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each.]]
+|style="vertical-align:top" |[[Image:3D-Viewer.jpg|thumb|240px|3D Viewer: hardware-accelerated 3D visualization of image stacks as volumes, orthoslices and meshes. Above, secondary lineages of <i>Drosophila</i> third instar larval brain segmented in TrakEM2.]]
+|}
+
+----
+
+[[Category:Plugins]]
+[[Category:Registration]]
+[[Category:Segmentation]]
+[[Category:Annotation]]
