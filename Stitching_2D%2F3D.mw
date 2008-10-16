@@ -45,3 +45,5 @@ These two cases would be described as follows:
 * '''Images have the x and y coordinate in their filenames''': Tile_{xx}_{yy}.tif - The index numbers for x and y coordinate of the tile have always two digits and are counted up starting at one each. The plugin knows that it has to count to 7 each as there are 7 x 7 tiles.
 
 The starting numbers for x, y and i can be changed in the boxes below.
+
+The channels for registration as well as the fusion methods work the same as described above in the 2D/3D Stitching Plugin section.
