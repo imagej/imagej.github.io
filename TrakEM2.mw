@@ -26,6 +26,11 @@ See [http://www.ini.uzh.ch/~acardona/snapshots.html TrakEM2 snapshots] for an ov
 
 TrakEM2 interacts with the [[3D Viewer]] for visualization of image volumes and 3D meshes.
 
+== TrakEM2 in Fiji ==
+
+* Create new projects from "File - New - TrakEM2 (blank)"
+* Open an existing project by dragging its .xml file onto the toolbar, or via "File - Open".
+
 == Documentation ==
 
 * [http://www.ini.uzh.ch/~acardona/howto.html How to]
