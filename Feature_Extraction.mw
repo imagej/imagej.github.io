@@ -23,9 +23,27 @@ The plugins use the [http://en.wikipedia.org/wiki/Scale-invariant_feature_transf
 ;upscale image first
 :Create the first scale octave with double the size of the original image in order to find features at the original pixel resolution.  Tip: Do this only for very small images and if you desperately need more features.
 
-==SIFT correspondences==
+===Feature Descriptor===
+Interest points are matched using a local descriptor.  Corresponding interest points have typically very similar local descriptors.
 
-==MOPS correspondences==
+;feature descriptor size
+:The '''SIFT'''-descriptor consists of ''n''&times;''n'' gradient histograms, each from a 4×4px block. n is this value.  Lowe (2004) uses ''n''=4.  We found larger descriptors with ''n''=8 perform better for Transmission Electron Micrographs from serial sections.
+:The '''MOPS'''-descriptor is simply a ''n''&times;''n'' intensity patch with normalized intensities.  Brown (2005) suggests ''n''=8.  We found larger descriptors with ''n''>16 perform better for Transmission Electron Micrographs from serial sections.
+;feature descriptor orientation bins
+:For '''SIFT'''-descriptors, this is the number of orientation bins ''b'' per 4&times;4px block as described above. Tip: Keep the default value ''b''=8 as suggested by Lowe (2004).
+;closest/ next closest ratio
+:Correspondence candidates from local descriptor matching are accepted only if the Euclidean distance to the nearest neighbour is significantly smaller than that to the next nearest neighbour.  Lowe (2004) suggests a ratio of ''r''=0.8 which requires some increase when matching things that appear significantly distorted.
+
+
+===Geometric Consensus Filter===
+
+;maximal alignment error
+:Matching local descriptors gives many false positives.  True positives are consistent with respect to a common transformation while false positives are not.  This consistent set and the transformation are identified using RANSAC.  This value is the maximal allowed transfer error of a match to be counted as a good one.  Tip: Set this to about 10% of the image size.
+;minimal inlier ratio
+:The ratio of the number of true matches to the number of all matches including both true and false used by RANSAC.  0.05 means that minimally 5% of all matches are expected to be good while 0.9 requires that 90% of the matches were good.  Only transformations with this minimal ratio of true consent matches are accepted.  Tip: Do not go below 0.05 (and only if 5% is more than about 7 matches) except with a very small maximal alignment error to avoid wrong solutions.
+;expected transformation
+:The expected underlying transformation between both images.  Tip: For serial section microscopy images, this is typically a '''rigid''' transformation.
+
 
 ==References==
 
