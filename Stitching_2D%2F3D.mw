@@ -15,12 +15,14 @@ The Stitching package comes with 4 different plugins:
 * '''Stitch Grid of Images''': Stitch an arbitrary number of 2D or 3D images which are arranged in a regular grid (e.g. 4 x 3 images with roughly 10% overlap)
 * '''Stitch Collection of Images''': Stitch an arbitrary number of 2D or 3D images which do not have to be in a regular grid. The rough initial configuration (which image is overlapping another one) is given in tile configuration file.
 
-== 2D Stitching ==
+== 2D Stitching and 3D Stitching ==
 
-The 2D Stitching takes two 2D images as input. They can contain rectangular ROIs which limit the search to those areas, however, the full images will be stitched together. If the input images are RGB images the user can select which channels will be used to determine the correct overlap. Note: If the stitching was not successful using ROIs on the obviously overlapping area might solve the problem.
+The plugins 2D/3D Stitching take two 2D/3D images as input. They can contain rectangular ROIs which limit the search to those areas, however, the full images will be stitched together. If the input images are RGB images the user can select which channels will be used to determine the correct overlap. Note: If the stitching was not successful using ROIs on the obviously overlapping area might solve the problem.
 
 Windowing should be always used, except the user knowns well about properties of the Fourier Transform and its drawbacks.
 
 The number of peaks defines the number of maxima in the Phase Correlation Matrix which are examined. If the stitching was not correct increasing this number might solve it.
 
 There are 5 fusion methods available right now.
+* '''Average''': In the overlapping area the average intensity between both images is computed.
+* '''Linear blending''': In the overlapping area the intensity are smoothly adjusted between the two images. The fusion alpha defines the blending function. See
