@@ -30,6 +30,14 @@ If your Fiji launcher does not work, but you have a working Java, call Fake like
 
  java -jar precompiled/fake.jar
 
+You can ask Fake to build only specific targets by passing them as parameters:
+
+ ./fiji --fake ij.jar
+
+Further, all variable definitions passed as parameters will override what is found in the Fakefile:
+
+ ./fiji --fake debug=true fake.jar
+
 == Target types ==
 
 The following target types are available:
