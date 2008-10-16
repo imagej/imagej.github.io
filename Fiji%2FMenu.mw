@@ -156,7 +156,9 @@ See also [[Scripting Help]] and the [[Scripting_comparisons]].
 * '''[[Stitching_2D/3D|2D Stitching]]''': Stitch two 2-dimensional images, rectangular ROIs can be used to limit the area to search in.
 * '''[[Stitching_2D/3D|3D Stitching]]''': Stitch two image stacks (3D), rectangular ROIs can be used to limit the area to search in as well.
 * '''[[Stitching_2D/3D|Stitch Grid of Images]]''': Stitch an arbitrary number of 2D or 3D images (i.e. stacks) which are arranged in a regular grid (e.g. 4 x 3 images with roughly 10% overlap)
-* '''[[Stitching_2D/3D|Stitch Collection of Images]]''': Stitch an arbitrary number of 2D or 3D images (i.e. stacks) which do not have to be in a regular grid. The rough initial configuration (which image is overlapping another one) is given in tile configuration file. 
+* '''[[Stitching_2D/3D|Stitch Collection of Images]]''': Stitch an arbitrary number of 2D or 3D images (i.e. stacks) which do not have to be in a regular grid. The rough initial configuration (which image is overlapping another one) is given in tile configuration file.
+
+Non-destructive stitching is available via [[TrakEM2]] (i.e. floating, adjustable images).
 
 === Transform ===
 
