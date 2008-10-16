@@ -38,3 +38,15 @@ After you built Fiji successfully, you can add your own plugins.
 * Now build the plugin with '''./fiji --fake'''.
 * After testing, you might realize that you need changes.  In this case, decide if you want to amend the commit (if there was a silly typo, you might want to hide that fact from the world), or if you want to make a new commit.
 * When everything is done and fine, publish!
+
+== Writing plugins ==
+
+Fiji accepts plugins written in [http://www.mcdb.ucla.edu/research/hartenstein/acardona/imagej_programming_tutorials.html Java], [[Javascript Scripting|Javascript]], [[Jython Scripting|Jython]], [[JRuby Scripting|JRuby]], [[Beanshell Scripting|Beanshell]], [[Clojure Scripting|Clojure]] and the [http://rsb.info.nih.gov/ij/developer/macro/macros.html ImageJ Macro language].
+
+The plugins/Examples folder contains numerous plugins in all supported languages, heavily commented.
+
+There is an [http://www.mcdb.ucla.edu/research/hartenstein/acardona/imagej_programming_tutorials.html introductory tutorial to ImageJ programming in Java]. The tutorial contains explanations on ImageJ datastructures (ImagePlus, ImageProcessor, Regions of Interest or ROIs, etc).
+
+See [[Scripting Help]] for details on how to develop, test and run ImageJ plugins written in the supported scripting languages.
+
+There are also [[Scripting comparisons]].
