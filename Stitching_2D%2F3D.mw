@@ -89,3 +89,10 @@ The Table shows examples of stitched data computed on an Intel® Quad-Core CPU m
 == Contact ==
 
 For any type of comment, questions or input please write to preibisch@mpi-cbg.de or visit my [http://fly.mpi-cbg.de/~preibisch homepage].
+
+
+== See Also ==
+
+* [[TrakEM2]] for non-destructive stitching with floating, adjustable images.
+
+[[Category:Plugins]]
