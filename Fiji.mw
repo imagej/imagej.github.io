@@ -25,7 +25,7 @@ __NOTOC__
 
 ;[http://132.187.25.13/home/?category=Download&page=Viewer3D 3D Viewer]
 * Hardware-accelerated 3D volume and mesh visualization, and 3D registration of image stacks.
-;[http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2]
+;[[TrakEM2]]
 * Register/edit/analyze/segment/annotate/3D model terabytes of confocal and electron microscopy images.
 ;[[Plugins_Menu#Feature_Extraction|Feature extraction]]
 * SIFT and MOPS.
