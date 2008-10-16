@@ -38,8 +38,9 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 * '''[[downsample]]''': Proper Gaussian downsampling of an image.  Written in [http://www.mozilla.org/rhino/ScriptingJava.html JavaScript]
 
 === Feature Extraction ===
-* [[Feature_Extraction|'''Extract SIFT Correspondences''']]
-* [[Feature_Extraction|'''Extract MOPS Correspondences''']]
+* [[Feature_Extraction|'''Extract SIFT Correspondences''']]: Identify a set of corresponding features in two images and export them as PointRoi.  This plugin uses the [http://en.wikipedia.org/wiki/Scale-invariant_feature_transform Scale Invariant Feature Transform] (SIFT) for feature matching.
+
+* [[Feature_Extraction|'''Extract MOPS Correspondences''']]: Identify a set of corresponding features in two images and export them as PointRoi.  This plugin uses the [http://research.microsoft.com/research/pubs/view.aspx?msr_tr_id=MSR-TR-2004-133 Multi-Scale Oriented Patches] (MOPS) for feature matching.
 
 === Image5D ===
 Multiple color channel support. See [http://rsb.info.nih.gov/ij/plugins/image5d.html main Image5D website.]
