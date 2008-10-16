@@ -38,4 +38,10 @@ The user has to define the grid size, that means how the input tiles are arrange
 
 The next entries in the dialog are used to tell the plugin how to load the images which are in the grid. The directory should point to the directory where the images are stored. In the file names the user has to tell the program how the files are named (e.g. 49 different file names). There are typically two ways how the files are named:
 * '''Images have an increasing number''': Tile_001.lsm Tile_002.lsm .... Tile_049.lsm
-* '''Images have the x and y coordinate in their filenames''': Tile_01_01.lsm Tile_01_02.lsm .... Tile_07_07.lsm
+* '''Images have the x and y coordinate in their filenames''': Tile_01_01.tif Tile_01_02.tif .... Tile_07_07.tif
+
+These two cases would be described as follows: 
+* '''Images have an increasing number''': Tile_{iii}.lsm - The index number has always three digits and is just counted up starting at 1. The plugin knows that it has to count till 49 as there are 7 x 7 tiles.
+* '''Images have the x and y coordinate in their filenames''': Tile_{xx}_{yy}.tif - The index numbers for x and y coordinate of the tile have always two digits and are counted up starting at one each. The plugin knows that it has to count to 7 each as there are 7 x 7 tiles.
+
+The starting numbers for x, y and i can be changed in the boxes below.
