@@ -10,7 +10,7 @@ The extracted sets of corresponding landmarks are used in [[TrakEM2]] and [http:
 
 ==Parameters==
 
-[[Image:SIFT_Dialog.png|left|thumb|50%|SIFT parameters]]
+[[Image:SIFT_Dialog.png|thumb|50%|SIFT parameters]]
 
 ===Scale Invariant Interest Point Detector===
 
