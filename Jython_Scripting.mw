@@ -7,6 +7,7 @@
 <p>Functions are defined with <i>def</i>, and classes with <i>class</i>.</p>
 <p>Functions are objects, and thus storable in variables.</p>
 <p>Jython (and python in general) accepts a mixture of procedural and object-oriented code.</p>
+<p>Jython currently implements the Python language at its 2.5 version. All [http://www.python.org/doc/2.5.2/ documentation for python 2.5] applies to Jython bundled with Fiji.</p>
 
 <h3>Defining variables: obtaining the current image</h3>
 
