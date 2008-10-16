@@ -74,7 +74,7 @@ The figure shows stitched images of 3D confocal tiles. (A) shows a Drosophila me
 
 [[Image:TableStitching2.gif|800px|Summary of Stitching results.]]<br />
 
-The Table shows examples of stitched data computed on an Intel® Quad-Core CPU machine with 2.67GHz and 24GB of RAM. The stitched images of row 1,2 and 3 are shown in figure 4. The global alignments of all stitchings have an average error below 1 px, the displacements in row 1 are zero because the two alignments are independent of each other. Note that the computation time roughly scales linear with the output image size.
+The Table shows examples of stitched data computed on an Intel® Quad-Core CPU machine with 2.67GHz and 24GB of RAM. The global alignments of all stitchings have an average error below 1 px, the displacements in row 1 are zero because the two alignments are independent of each other. Note that the computation time roughly scales linear with the output image size.
 
 == Contact ==
 
