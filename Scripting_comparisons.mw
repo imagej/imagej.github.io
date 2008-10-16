@@ -87,6 +87,8 @@ Note that above the loop is only set as an example. It's easier to simply query 
 
 <h3>In Jython</h3>
 
+See also the [[Jython Scripting]] documentation page.
+
 <source lang="python">
 from java.awt import Color
 from java.awt.event import TextListener
