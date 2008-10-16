@@ -5,3 +5,12 @@ There is an increasing demand to image large biological specimen at high resolut
 The 2D/3D Stitching Plugin is able to reconstruct big images/stacks from an arbitrary number of tiled input images/stacks, making use of the Fourier Shift Theorem that computes all possible translations (x, y[, z]) between two 2D/3D images at once, yielding the best overlap in terms of the cross correlation measure. If more than two input images/stacks are used the correct placement of all tiles is determined using a global optimization. To remove brightness differences at the tile borders, a linear intensity blending is applied. 
 
 For more information see the accompanying publication [http://fly.mpi-cbg.de/~preibisch/pubs/imagejpaper2008.pdf].
+
+== The Stitching Plugins ==
+
+The Stitching package comes with 4 different plugins:
+
+* '''2D Stitching''': Stitch two 2-dimensional images, rectangular ROIs can be used to limit the area to search in.
+* '''3D Stitching''': Stitch two image stacks (3D), rectangular ROIs can be used to limit the area to search in as well.
+* '''Stitch Grid of Images''': Stitch an arbitrary number of 2D or 3D images which are arranged in a regular grid (e.g. 4x3 images with roughly 10% overlap)
+* '''Stitch Collection of Images''': Stitch an arbitrary number of 2D or 3D images which do not have to be in a regular grid. The rough initial configuration (which image is overlapping another one) is given in tile configuration file.
