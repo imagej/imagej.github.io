@@ -18,7 +18,9 @@ The easiest way to fetch the source code for Fiji is to use [http://git.or.cz/ g
 
 === Packages for Debian / Ubuntu ===
 
-There are some Debian packages of Fiji rc3 that you can try.  (These packages include the JRE.)  Add the following lines to /etc/apt/sources.list:
+<span style="color:red">The packages are not ready yet, but these instructions will apply once they are</span>.
+
+There are Debian packages of Fiji.  Add the following lines to /etc/apt/sources.list:
 
  <nowiki>deb http://pacific.mpi-cbg.de/downloads/apt/ ./</nowiki>
  <nowiki>deb-src http://pacific.mpi-cbg.de/downloads/apt/ ./</nowiki>
@@ -32,7 +34,7 @@ You should then be able to just run "fiji" from the command line.
 
 Alternatively, if you want to install the .deb files directly with dpkg, you can download the packages directly here:
 
-* [http://pacific.mpi-cbg.de/downloads/apt/binary-i386/fiji_0.9.2.20080807rc3_i386.deb Package for i386 (32 bit)]
-* [http://pacific.mpi-cbg.de/downloads/apt/binary-amd64/fiji_0.9.2.20080807rc3_amd64.deb Package for amd64 (64 bit)]
+* [http://pacific.mpi-cbg.de/downloads/apt/binary-i386/fiji_1.0.0.20081016_i386.deb Package for i386 (32 bit)]
+* [http://pacific.mpi-cbg.de/downloads/apt/binary-amd64/fiji_1.0.0.20081016_amd64.deb Package for amd64 (64 bit)]
 
 (These packages should work for you, but fail to meet policy for being official Debian and Ubuntu packages in many ways - we are working towards this, however, so if you use the apt repository above and update regularly, you should see the packages improve and reduce in size over time.)
