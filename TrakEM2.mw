@@ -15,6 +15,15 @@ TrakEM2 is an ImageJ plugin for morphological data mining, three-dimensional mod
 
 See [http://www.ini.uzh.ch/~acardona/snapshots.html TrakEM2 snapshots] for an overview.
 
+== Features ==
+
+* '''Segmentation:''' manually draw areas across stacks, and sketch structures with balls and pipes.
+* '''Measurements:''' volumes, surfaces, lengths, and also measurements via ImageJ ROIs.
+* '''Image Registration:''' register floating image tiles to each other using SIFT and global optimization algorithms.
+* '''3D Visualization:''' interacting with the [[3D Viewer]] plugin, TrakEM2 displays image volumes and 3D meshes of all kinds.
+* '''Image Annotation:''' floating text labels.
+* '''Semantic segmentation:''' order segmentations in tree hierarchies, whose template is exportable for reuse in other, comparable projects.
+
 TrakEM2 interacts with the [[3D Viewer]] for visualization of image volumes and 3D meshes.
 
 == Documentation ==
