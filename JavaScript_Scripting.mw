@@ -9,10 +9,10 @@ By default, all ImageJ and java.lang.* classes are imported.
 You can specify further imports by:
 
  // Import all classes under java.io.*
- importPackage(Package.java.io)
+ importPackage(Packages.java.io)
  
  // Import a single class instead
- importClass(Package.java.io.File)
+ importClass(Packages.java.io.File)
 
 === Creating import namespaces ===
 
