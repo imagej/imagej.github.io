@@ -37,6 +37,10 @@ TrakEM2 interacts with the [[3D Viewer]] for visualization of image volumes and 
 |style="vertical-align:top" |[[Image:Trakem2-snap.jpg|thumb|240px|TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each.]]
 |style="vertical-align:top" |[[Image:3D-Viewer.jpg|thumb|240px|3D Viewer: hardware-accelerated 3D visualization of image stacks as volumes, orthoslices and meshes. Above, secondary lineages of <i>Drosophila</i> third instar larval brain segmented in TrakEM2.]]
 |style="vertical-align:top" |[[Image:TrakEM2-trees.png|thumb|240px|The three TrakEM2 trees, as an interface for editing and visualizing the three internal TrakEM2 data structures.]]
+|-
+|style="vertical-align:top" |[[Image:TrakEM2_Display.png|thumb|240px|TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text
+label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right).]]
+|style="vertical-align:top" |[[Image:TrakEM2_Display_segmentations.png|thumb|240px|Example TrakEM2 segmentations, including Ball, Pipe, Profile, AreaList and floating text labels.]]
 |}
 
 ----
