@@ -126,6 +126,8 @@ prompt.setForeground(Color.red)
 
 <h3>In Clojure</h3>
 
+See also the [[Clojure Scripting]] documentation page.
+
 <source lang="lisp">
 (import '(java.awt Color)
         '(java.awt.event TextListener))
@@ -173,7 +175,6 @@ prompt.setForeground(Color.red)
   (when-not (.wasCanceled gd)
     (.doCommand ij.IJ (.getNextString gd))))
 </source>
-
 
 <h3>In Javascript</h3>
 
