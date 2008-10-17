@@ -47,11 +47,13 @@ __NOTOC__
 
 == Downloads ==
 
+'''Update: the MacOSX version crashed on most Macs; the link below points to a fixed version.'''
+
 * {{Download|linux|tar.bz2|Linux}}
 * {{Download|linux64|tar.bz2|Linux (64-bit)}}
 * {{Download|win32|zip|Windows}}
 * {{Download|win64|zip|Windows (64-bit)}}
-* {{Download|macosx|dmg|MacOSX}}
+* [http://pacific.mpi-cbg.de/downloads/snapshots/fiji-macosx.dmg MacOSX]
 * {{Download|all|tar.bz2|All platforms (includes all JREs)}}
 * {{Download|nojre|tar.bz2|All platforms (does not include JREs)}}
 
