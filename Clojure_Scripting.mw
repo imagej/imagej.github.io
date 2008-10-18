@@ -2,6 +2,8 @@
 
 <p>Check out [http://clojure.sourceforge.net clojure web site] and particularly the chapter on [http://clojure.sourceforge.net/reference/java_interop.html Java interoperability].</p>
 
+<p>Clojure is <b>not</b> a scripting language: Clojure compiles directly to JVM bytecode, and thus runs at native speed. Thus one must think of Clojure as a true alternative to Java the language, but much more expressive, flexible and powerful.</p>
+
 <h3>Language basics</h3>
 <p>A ';' defines the start of a comment, just like '//' does in Java.</p>
 <p>A function definition declares parameters within [].</p>
@@ -232,7 +234,6 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
             (:height b)))
 </pre>                                                                                                                                                                                                                
 <p>Eventually Clojure may add support for <i>set</i> methods as well.</p>
-
 
 <h1>Examples</h1>
 
