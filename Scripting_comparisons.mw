@@ -15,6 +15,7 @@
 <p>While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using <i>let</i> statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not <i>required</i> as in java, neither as natural and straightforward as in Clojure.</p>
 <p>As an advantage, each jython script executes within its own namespace and instance of the interpreter, whereas clojure scripts run all within a unique static interpreter and thus share the namespace.</p>
 <p>The javascript version (at least, the naive code pasted below) is very much java-like. Each script runs on its separate thread and namespace, like jython scripts.</p>
+<p>To remark here that [http://clojure.org Clojure] is <b>not</b> a scripting language: Clojure compiles directly the JVM byte code, and thus runs at native speed.</p>
 
 
 <h3>In Java</h3>
