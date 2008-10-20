@@ -15,13 +15,13 @@ The extracted sets of corresponding landmarks are used in [[TrakEM2]] and [http:
 ===Scale Invariant Interest Point Detector===
 
 ;initial gaussian blur
-:Accurate localization of keypoints requires initial smoothing of the image. If your images are blurred already, you might lower this value slightly to get more but eventually less stable keypoints. Increasing this value increases the computational cost for Gaussian blur, setting it to 3.2 is equivalent to keep 1.6 and use half maximum image size. Tip: Keep the default value 1.6 as suggested by Lowe (2004).
+:Accurate localization of keypoints requires initial smoothing of the image.  If your images are blurred already, you might lower the initial blur ''&sigma;''<sub>0</sub> slightly to get more but eventually less stable keypoints.  Increasing ''&sigma;''<sub>0</sub> increases the computational cost for Gaussian blur, setting it to ''&sigma;''<sub>0</sub>=3.2px is equivalent to keep ''&sigma;''<sub>0</sub>=1.6px and use half maximum image size. Tip: Keep the default value ''&sigma;''<sub>0</sub>=1.6px as suggested by Lowe (2004).
 ;steps per scale octave
-:Keypoint candidates are extracted at all scales between maximum image size and minimum image size. This Scale Space is represented in octaves each covering a fixed number of discrete scale steps from &sigma; to 2&sigma;.  More steps result in more but eventually less stable keypoint candidates.  Tip: Keep 3 as suggested by Lowe (2004) and do not use more than 10.
+:Keypoint candidates are extracted at all scales between maximum image size and minimum image size.  This Scale Space is represented in octaves each covering a fixed number of discrete scale steps from ''&sigma;''<sub>0</sub> to 2''&sigma;''<sub>0</sub>.  More steps result in more but eventually less stable keypoint candidates.  Tip: Keep 3 as suggested by Lowe (2004) and do not use more than 10.
 ;minimum image size
-:The Scale Space stops if the size of the octave would be smaller than minimum image size. Tip: Increase the minimum size to discard large features (i.e. those extracted from looking at an image from far, such as the overall shape).
+:The Scale Space stops if the size of the octave would be smaller than minimum image size.  Tip: Increase the minimum size to discard large features (i.e. those extracted from looking at an image from far, such as the overall shape).
 ;maximum image size
-:The Scale Space starts with the first octave equal or smaller than the maximum image size. Tip: By reducing the size, fine scaled features will be discarded.  Increasing the size beyond that of the actual images has no effect.
+:The Scale Space starts with the first octave equal or smaller than the maximum image size.  Tip: By reducing the size, fine scaled features will be discarded.  Increasing the size beyond that of the actual images has no effect.
 ;upscale image first
 :Create the first scale octave with double the size of the original image in order to find features at the original pixel resolution.  Tip: Do this only for very small images and if you desperately need more features.
 
