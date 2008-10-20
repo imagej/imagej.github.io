@@ -40,7 +40,7 @@ Interest points are matched using a local descriptor.  Corresponding interest po
 ===Geometric Consensus Filter===
 
 ;maximal alignment error
-:Matching local descriptors gives many false positives.  True positives are consistent with respect to a common transformation while false positives are not.  This consistent set and the transformation are identified using RANSAC.  This value is the maximal allowed transfer error of a match to be counted as a good one.  Tip: Set this to about 10% of the image size.
+:Matching local descriptors gives many false positives, but true positives are consistent with respect to a common transformation while false positives are not.  This consistent set and the underlying transformation are identified using RANSAC.  This value is the maximal allowed transfer error of a match to be counted as a good one.  Tip: Set this to about 10% of the image size.
 ;minimal inlier ratio
 :The ratio of the number of true matches to the number of all matches including both true and false used by RANSAC.  0.05 means that minimally 5% of all matches are expected to be good while 0.9 requires that 90% of the matches were good.  Only transformations with this minimal ratio of true consent matches are accepted.  Tip: Do not go below 0.05 (and only if 5% is more than about 7 matches) except with a very small maximal alignment error to avoid wrong solutions.
 ;expected transformation
