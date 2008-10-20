@@ -48,8 +48,8 @@ Interest points are matched using a local descriptor.  Corresponding interest po
 
 ==References==
 
-# Lowe, David G. (2004). "[http://citeseer.ist.psu.edu/lowe04distinctive.html Distinctive Image Features from Scale-Invariant Keypoints]". ''International Journal of Computer Vision'' '''60''' (2): 91-110. doi:[http://dx.doi.org/10.1023%2FB%3AVISI.0000029664.99615.94 10.1023/B:VISI.0000029664.99615.94].
-# Brown, Matthew; Szeliski, Richard; Winder, Simon (2005). "[http://www.cs.ubc.ca/~mbrown/papers/cvpr05.pdf Multi-Image Matching Using Multi-Scale Oriented Patches]". ''Proceedings of the 2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)'' Volume 1: 510-517. doi:[http://dx.doi.org/10.1109/CVPR.2005.235 10.1109/CVPR.2005.235].
-# Fischler, Martin A.; Bolles, Robert C. (1981). "Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography". ''Communications of the ACM'' '''24''' (6): 381-395. doi:[http://doi.acm.org/10.1145/358669.358692 10.1145/358669.358692]
+# Lowe, David G. (2004). "[http://citeseer.ist.psu.edu/lowe04distinctive.html Distinctive Image Features from Scale-Invariant Keypoints]". ''International Journal of Computer Vision'' '''60''' (2): 91&ndash;110. doi:[http://dx.doi.org/10.1023%2FB%3AVISI.0000029664.99615.94 10.1023/B:VISI.0000029664.99615.94].
+# Brown, Matthew; Szeliski, Richard; Winder, Simon (2005). "[http://www.cs.ubc.ca/~mbrown/papers/cvpr05.pdf Multi-Image Matching Using Multi-Scale Oriented Patches]". ''Proceedings of the 2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)'' Volume 1: 510&ndash;517. doi:[http://dx.doi.org/10.1109/CVPR.2005.235 10.1109/CVPR.2005.235].
+# Fischler, Martin A.; Bolles, Robert C. (1981). "Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography". ''Communications of the ACM'' '''24''' (6): 381&ndash;395. doi:[http://doi.acm.org/10.1145/358669.358692 10.1145/358669.358692]
 
 [[Category:Plugins]][[Category:Registration]][[Category:Feature Extraction]]
