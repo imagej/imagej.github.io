@@ -374,6 +374,7 @@ Above, we could have defined the function as #(+ %1 1):
 <pre>
 (map inc (range 4))
 </pre>
+Beware that the <i>map</i> function above applies the given function to each element of a list, and returns a <b>new</b> list with the results.
 
 <h3>Built-in documentation</h3>
 Use the function <i>doc</i> to query any other function. For example, the list generator function <i>range</i>:
