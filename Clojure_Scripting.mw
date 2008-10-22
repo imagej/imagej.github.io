@@ -13,16 +13,18 @@
 
 <h3>Calling methods and variables on a java object</h3>
 <p>There are two ways, the second syntactic sugar of the first. Below, <b>imp</b> is a pointer to an ImagePlus:</p>
-<pre>
+
+<source lang="lisp">
 ; java-ish way:
 (. imp (getProcessor))
 
 ; lisp-ish way:
 (.getProcessor imp)
-</pre>
+</source>
 
 <p>To call a method on an object returned by a method call, there is a simplified way:</p>
-<pre>
+
+<source lang="lisp">
 ; double way:
 (. (. imp (getProcessor)) (getPixels))
 
@@ -31,19 +33,22 @@
 
 ; or lisp-ish way:
 (.getPixels (.getProcessor imp))
-</pre>
+</source>
 
 <p>To call a variable or 'field', just do it like a method call but without the parentheses:</p>
-<pre>
+
+<source lang="lisp">
 (. imp changes)
-</pre>
+</source>
 or more lisp-ish:
-<pre>
+
+<source lang="lisp">
 (.changes imp)
-</pre>
+</source>
 
 <p>To enhance readability, use <i>import</i> when appropriate. Imports remain visible throughout the current namespace:</p>
-<pre>
+
+<source lang="lisp">
 (import '(java.awt Color Rectangle)
         '(ij.plugin.filter PlugInFilter))
 
@@ -54,24 +59,26 @@ or more lisp-ish:
 (. PlugInFilter DOES_ALL)
 ; or since it's a static field, call like a namespace:
 (PlugInFilter/DOES_ALL)
-</pre>
+</source>
 
 <p>Choose whatever matches your mental schemes best.</p>
 
 <h3>Calling static fields and methods: namespace syntax</h3>
 
 <p>To call a <b>static</b> field or method, use namespace syntax:</p>
-<pre>
+
+<source lang="lisp">
 (ij.plugin.filter.PlugInFilter/DOES_ALL)
 
 (ij.IJ/log "Some logged text")
-</pre>
+</source>
 
 <p>Above, notice how a class name is used instead of a pointer to call static fields and methods. Static fields and methods are just variables and functions that exist within the namespace of the class in which they are declared. Hence Clojure's namespace syntax makes way more sense than java code, that doesn't do such distinction and allows for loads of confusion (java allows invoking static methods and fields using a pointer to an instance of the class in which such static methods and fields are declared).</p>
 
 <h3>Defining variables: obtaining the current image</h3>
 As a local variable <b>imp</b> declared within a <i>let</i> statement:
-<pre>
+
+<source lang="lisp">
 (let [imp (ij.WindowManager/getCurrentImage)]
     ; print its name
     (println (.getTitle imp)))
@@ -79,79 +86,87 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 ; Variable imp NOT visible from outside let statement:
 (println (.getTitle imp))
 ---&gt; ERROR
-</pre>
+</source>
 <p>As a general variable visible from the entire namespace:</p>
-<pre>
+
+<source lang="lisp">
 (def *imp* (ij.WindowManager/getCurrentImage))
 
 (println (.getTitle *imp*))
-</pre>
+</source>
 <p>By convention, in lisp global variables are written with asterisks in the name.</p>
 <br />
 <p>A <i>let</i> statement lets you declare any number of paired variable name / values, even referring to each other in sequence:</p>
-<pre>
+
+<source lang="lisp">
 (let [imp (ij.WindowManager/getCurrentImage)
       ip (.getProcessor imp)
       pix (.getPixels ip)
       pix2 (.getPixels (.getProcessor imp))]
     ; do some processing ...
     (println (str "number of pixels: " (count pix))))
-</pre>
+</source>
 <p>Any number of <i>let</i> statements may be nested together:</p>
-<pre>
+
+<source lang="lisp">
 (let [imp (ij.WindowManager/getCurrentImage)]
     ; do whatever processing here
     (let [ip (.getProcessor imp]
         ; print first pixel
 	(println (str (.getPixel ip 0 0))))))
-</pre>
+</source>
 
 <h3>Creating objects: invoking constructors</h3>
 
 A constructor is invoked by adding a dot '.' to the name of a class, followed by the arguments. Below, we create an ImageProcessor and then an ImagePlus with it, and finally we print the ImagePlus, which invokes toString() on it (like in java):
-<pre>
+
+<source lang="lisp">
 (let [ip (ij.process.ByteProcessor. 400 400)
       imp (ij.ImagePlus. "my image" ip)]
   (println imp))
-</pre>
+</source>
 
 An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnecessarily verbose:
-<pre>
+
+<source lang="lisp">
 (let [ip (new ij.process.ByteProcessor 400 400)
       imp (new ij.ImagePlus "my image" ip)]
   (println imp))
-</pre>
+</source>
 
 
 <h3>Defining a closure</h3>
 <p>In the following a function is declared within the scope of the local variable <b>rand</b>, which contains an instance of java.util.Random. All calls to the function <i>rand-double</i> will use the same random number generator instance with seed 69997.</p>
 <p>The <i>dotimes</i> loop will then print 10 different pseudo-random numbers. If the <b>rand</b> was a new Random with seed 69997 every time, all 10 numbers would be exactly the same.</p>
 <p>You can think of a function inside a closure as a static function using a static variable (in Java), but it's more than that, since the function will be able to access parameters on the global namespace and also in any other local namespace in which the <i>let</i> is declared. For example, another <i>let</i>, or even another <i>defn</i>!</p>
-<pre>
+
+<source lang="lisp">
 (let [rand (java.util.Random. 69997)]
     (defn rand-double []
         (.nextDouble rand)))
 
 (dotimes i 10
     (println (rand-double)))
-</pre>
+</source>
 
 <p>Above, note the dot '.' after Random, which indicates we are calling the constructor (with a single parameter 69997, the pseudorandom generator seed to be used). Alternatively, one may use the java-like syntax: (new java.util.Random 69997) -- note the absence of a dot now.</p>
 
 <h3>Looping an array of pixels</h3>
 <p>For example, to find the min and max values:</p>
-<pre>
+
+<source lang="lisp">
 ; Obtain the pixels array from the current image
 (let [imp (ij.WindowManager/getCurrentImage)
       pixels (.. imp (getProcessor) (getPixels))
       min (apply min pixels)
       max (apply max pixels)]
     (println (str "min: " min ", max: " max)))
-</pre>
+</source>
 
 <p>The above code does not explicitly loop the pixels: it simply applies a function to an array.</p>
 <p>To loop pixels one by one, use any of the following:</p>
-<pre>
+
+<source lang="lisp">
 (let [imp (ij.WindowManager/getCurrentImage)
       pixels (.. imp (getProcessor) (getPixels))]
 
@@ -168,7 +183,7 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
                 (recur (inc i)
                        len))))
 
-</pre>                                                                                                                                                                                                                
+</source>                                                                                                                                                                                                                
 <p>Above, notice that the <i>loop -- recur</i> construct is essentially a <i>let</i> declaration, with a second call (<i>recur</i>) to reset the variables to something else. In this case, the next index in the array. Note how the len is simply given the same value over and over, just to avoid calling <i>(count pixels)</i> at each iteration.</p>
 
 <p>Of course, there are lispier ways to loop an array of pixels. For example, to obtain the average of all pixels, we can use function <i>reduce</i>, which takes the first two elements of a list, applies a function to them, and then applies the function to the result and the next element, etc:</p>
