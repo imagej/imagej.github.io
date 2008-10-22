@@ -355,7 +355,7 @@ Note above the quoted string "xml" to avoid evaluating it to a (non-existing) va
  ...
 </source>
 
-To list constructors, just use <i>.getConstructors</i> instead of <i>.getMethods</i>.
+* To list constructors, just use <i>.getConstructors</i> instead of <i>.getMethods</i>.
 
 (Thanks to Craig McDaniel for posting the above function to Clojure's mailing list.)
 
