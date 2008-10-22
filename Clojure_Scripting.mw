@@ -37,6 +37,10 @@
 <pre>
 (. imp changes)
 </pre>
+or more lisp-ish:
+<pre>
+(.changes imp)
+</pre>
 
 <p>To enhance readability, use <i>import</i> when appropriate. Imports remain visible throughout the current namespace:</p>
 <pre>
@@ -44,8 +48,12 @@
         '(ij.plugin.filter PlugInFilter))
 
 (new Rectangle 0 0 500 500)
+; It's the same as:
+(Rectangle. 0 0 500 500)
 
 (. PlugInFilter DOES_ALL)
+; or since it's a static field, call like a namespace:
+(PlugInFilter/DOES_ALL)
 </pre>
 
 <p>Choose whatever matches your mental schemes best.</p>
@@ -270,6 +278,15 @@ When done, just run the "PlugIns/Scripting/Refresh Clojure Scripts" plugin.
 Once saved and in the menus, you need <b>not</b> call refresh scripts ever again for that script. Just edit and save it's text file, and run it again from the menus. Next time Fiji opens, the script will automatically appear in the menus.
 
 See [[Scripting Help]] for more details, including how to use the built-in dynamic interpreter.
+
+<h3>Example Clojure plugins included in Fiji</h3>
+Open the plugins/Examples/ folder in Fiji installation directory. You'll find three Clojure examples:
+
+* [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Multithreaded_Image_Processing.clj;hb=HEAD Multithreaded_Image_Processing.clj]: illustrate, with macros (via [http://clojure.org/macros#toc9 defmacro]), how to automatically multithread the processing of an image using arbitrary subdivision of the image, such as one line per thread, for as many threads as cores the CPU has.
+* [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/blend_two_images.clj;hb=HEAD blend_two_images.clj]: illustrates how to open two images from an URL, and blend the gray image into each channel of the color image.
+* [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/celsius_to_fahrenheit.clj;hb=HEAD celsius_to_fahrenheit.clj]: illustrates the usage of a Swing GUI, and how to instantiate anonymous classes from an interface (via [http://clojure.org/java_interop#toc20 proxy] Clojure function). This example is taken from the [http://clojure.org/jvm_hosted Clojure website].
+* [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/random_noise_example.clj;hb=HEAD random_noise_example.clj]: illustrates how to declare a function inside a closure (for private access to, in this case, a unique instance of a random number generator), and then fill all pixels of a ByteProcessor image with a random byte value.
+* [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Command_Launchers/Command_Launcher_Clojure.clj;hb=HEAD Command_Launcher_Clojure.clj]: illustrates how to create a GUI with a KeyListener, so that the typed text changes color from red to black when it matches the name of an ImageJ command. This example is also under the [[Scripting comparisons]], along equivalent versions written in Java, [[Jython Scripting|Jython]], [[Javascript_Scripting|Javascript]] and [[JRuby_Scripting|JRuby]].
 
 <h1>Appendix</h1>
 
