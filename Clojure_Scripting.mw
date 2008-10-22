@@ -72,43 +72,39 @@ or more lisp-ish:
 <h3>Defining variables: obtaining the current image</h3>
 As a local variable <b>imp</b> declared within a <i>let</i> statement:
 <pre>
-(let [imp (. ij.WindowManager (getCurrentImage))]
+(let [imp (.getCurrentImage ij.WindowManager)]
     ; print its name
-    (println (. imp (getTitle))))
+    (println (.getTitle imp)))
 
 ; Variable imp NOT visible from outside let statement:
-(println (. imp (getTitle)))
+(println (.getTitle imp))
 ---&gt; ERROR
 </pre>
 <p>As a general variable visible from the entire namespace:</p>
 <pre>
-(def *imp* (. ij.WindowManager (getCurrentImage)))
+(def *imp* (.getCurrentImage ij.WindowManager))
 
-(println (. *imp* (getTitle)))
-
-; Alternative syntax
 (println (.getTitle *imp*))
 </pre>
 <p>By convention, in lisp global variables are written with asterisks in the name.</p>
 <br />
 <p>A <i>let</i> statement lets you declare any number of paired variable name / values, even referring to each other in sequence:</p>
 <pre>
-(let [imp (. ij.WindowManager (getCurrentImage))
-      ip (. imp (getProcessor))
-      pix (. ip (getPixels))
-      pix2 (.. imp (getProcessor) (getPixels))]
+(let [imp (.getCurrentImage ij.WindowManager)
+      ip (.getProcessor imp)
+      pix (.getPixels ip)
+      pix2 (.getPixels (.getProcessor imp))]
     ; do some processing ...
     (println (str "number of pixels: " (count pix))))
 </pre>
 <p>Any number of <i>let</i> statements may be nested together:</p>
 <pre>
-(let [imp (. ij.WindowManager (getCurrentImage))]
+(let [imp (.getCurrentImage ij.WindowManager)]
     ; do whatever processing here
-    (let [ip (. imp (getProcessor)]
+    (let [ip (.getProcessor imp]
         ; print first pixel
-	(println (str (. ip (getPixel 0 0)))))))
+	(println (str (.getPixel ip 0 0))))))
 </pre>
-
 
 <h3>Creating objects: invoking constructors</h3>
 
