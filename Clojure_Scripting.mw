@@ -72,7 +72,7 @@ or more lisp-ish:
 <h3>Defining variables: obtaining the current image</h3>
 As a local variable <b>imp</b> declared within a <i>let</i> statement:
 <pre>
-(let [imp (.getCurrentImage ij.WindowManager)]
+(let [imp (ij.WindowManager/getCurrentImage)]
     ; print its name
     (println (.getTitle imp)))
 
@@ -82,7 +82,7 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 </pre>
 <p>As a general variable visible from the entire namespace:</p>
 <pre>
-(def *imp* (.getCurrentImage ij.WindowManager))
+(def *imp* (ij.WindowManager/getCurrentImage))
 
 (println (.getTitle *imp*))
 </pre>
@@ -90,7 +90,7 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 <br />
 <p>A <i>let</i> statement lets you declare any number of paired variable name / values, even referring to each other in sequence:</p>
 <pre>
-(let [imp (.getCurrentImage ij.WindowManager)
+(let [imp (ij.WindowManager/getCurrentImage)
       ip (.getProcessor imp)
       pix (.getPixels ip)
       pix2 (.getPixels (.getProcessor imp))]
@@ -99,7 +99,7 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 </pre>
 <p>Any number of <i>let</i> statements may be nested together:</p>
 <pre>
-(let [imp (.getCurrentImage ij.WindowManager)]
+(let [imp (ij.WindowManager/getCurrentImage)]
     ; do whatever processing here
     (let [ip (.getProcessor imp]
         ; print first pixel
@@ -130,7 +130,7 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
 <pre>
 (let [rand (java.util.Random. 69997)]
     (defn rand-double []
-        (. rand (nextDouble))))
+        (.nextDouble rand)))
 
 (dotimes i 10
     (println (rand-double)))
