@@ -188,32 +188,32 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
 
 <p>Of course, there are lispier ways to loop an array of pixels. For example, to obtain the average of all pixels, we can use function <i>reduce</i>, which takes the first two elements of a list, applies a function to them, and then applies the function to the result and the next element, etc:</p>
 
-<pre>
+<source lang="lisp">
 (let [fp (.getProcessor (ij.IJ/getImage))
       pix (.getPixels fp)]
    (if (instance? ij.process.FloatProcessor fp)
       (println "Average pixel intensity" (/ (reduce + pix) (count pix)))
       (println "Not a 32-bit image")))
-</pre>
+</source>
 
 <p>Above, notice that one could have used also <i>apply</i> to apply <i>+</i> to all element of an array, with the same result:</p>
-<pre>
+<source lang="lisp">
       (println "Average pixel intensity" (/ (apply + pix) (count pix)))
-</pre>
+</source>
 
 <p>To sum all pixels in an 8-bit image, one needs first to bit-and all bytes to 255, so they become integers and can be summed. But of course we should not <i>bit-and</i> the sum! To solve this, <i>reduce</i> accepts a first value (in this case, zero):</p>
 
-<pre>
+<source lang="lisp">
 (let [bp (.getProcessor (ij.IJ/getImage))
       pix (.getPixels bp)]
   (if (instance? ij.process.ByteProcessor bp)
     (println "Average intensity: " (float (/ (reduce (fn [x1 x2] (+ x1 (bit-and x2 255))) 0 pix) (count pix))))
     (println "Not an 8-bit image")))
-</pre>
+</source>
 
 <p>It could even be done using a local variable, but it's ugly and undesirable (why create it when it's not really needed)? Notice we need to create the local variable "sum" because variables declared by <i>let</i> are immutable.</p>
 
-<pre>
+<source lang="lisp">
 (let [bp (.getProcessor (ij.IJ/getImage))
       pix (.getPixels bp)]
   (if (instance? ij.process.ByteProcessor bp)
@@ -222,17 +222,17 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
         (var-set sum (+ (var-get sum) (bit-and pixel 255))))
       (println (float (/ (var-get sum) (count pix)))))
     (println "Not an 8-bit image")))
-</pre>
+</source>
 
 <h3>Executing commands from the menus</h3>                                                                                                                                                                            
 <p>Any ImageJ menu command may be run on the active image:</p>                                                                                                                                                        
-<pre>                                                                                                                                                                                                                 
+<source lang="lisp">
 (ij.IJ/doCommand "Add Noise")                                                                                                                                                                                        
-</pre>                                                                                                                                                                                                                
+</source>                                                                                                                                                                                                                
 <p>Be aware that the above starts a new Thread and forks. For reliable control, try the run method, which will wait until the plugin finishes execution.</p>
-<pre>
+<source lang="lisp">
 (ij.IJ/run "Add Noise")                                                                                                                                                                                              
-</pre>
+</source>
 
 <h3>Creating and using Clojure scripts as ImageJ plugins</h3>
 <p>Simply create a text file with the script inside, and place it in the plugins menu or any subfolder. Then call Plugins - Scripting - Refresh Clojure Scripts to make it appear on the menus.</p>
@@ -245,13 +245,13 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
 
 <h3>Using java beans for quick and convenient access to an object's fields</h3>
 <p>Essentially it's all about using <i>get</i> methods in a trivial way. For example:</p>
-<pre>
+<source lang="lisp">
 (let [imp (ij.WindowManager/getCurrentImage)
       b (bean imp)]
    (println (:title b)
             (:width b)  
             (:height b)))
-</pre>                                                                                                                                                                                                                
+</source>                                                                                                                                                                                                                
 <p>Eventually Clojure may add support for <i>set</i> methods as well.</p>
 
 <h1>Examples</h1>
@@ -263,6 +263,8 @@ The problem: [http://ami.scripps.edu/software/leginon/ Leginon] or the Gatan TEM
 The solution: iterate all pixels; if the pixel is zero then set it to a desirable value, such as the maximum value of the main curve in the histogram (push 'auto' on the Brightness and Contrast dialog to see it.)
 
 In the example below, the <i>fix</i> function is called with the current image and the value 32500 as a floating point number. Notice also the type definition (which is optional) of the float pixel array, to enhance execution speed:
+
+<source lang="lisp">
 
  ; Assumes a FloatProcessor image
  (defn fix [imp max]
@@ -276,6 +278,7 @@ In the example below, the <i>fix</i> function is called with the current image a
  (let [imp (ij.IJ/getImage)]
    (fix imp (float 32500))
    (.updateAndDraw imp))
+</source>
 
 <h3>Creating a script for ImageJ</h3>
 
@@ -303,40 +306,40 @@ Open the plugins/Examples/ folder in Fiji installation directory. You'll find th
 
 <h3>Defining the output stream</h3>
 The default output stream is at variable <i>*out*</i>. The Clojure Interpreter binds it to the PrintWriter that prints to the interpreter text area, by executing any typed in code within the following binding:
-<pre>
+<source lang="lisp">
 (binding [*out* (Clojure.Clojure_Interpreter/getStdOut)]
    ; any typed input here
    )
-</pre>                                                                                                                                                                                                                
+</source>
 
 <h3>Namespaces</h3>
 * To list all existing namespaces:
-<pre>
+<source lang="lisp">
 >>> (all-ns)
 (#<Namespace: xml> #<Namespace: zip> #<Namespace: clojure> #<Namespace: set> #<Namespace: user>)
-</pre>
+</source>
 
 * To list all functions and variables of a specific namespace, first get the namespace object by name:
-<pre>
+<source lang="lisp">
 (ns-map (find-ns 'xml))
-</pre>
+</source>
 Note above the quoted string "xml" to avoid evaluating it to a (non-existing) value.
 
 * To list all functions and variables of all namespaces:
-<pre>
+<source lang="lisp">
 (map ns-map (all-ns))
-</pre>
+</source>
 
 <h3>JVM arguments</h3>
 * To get the arguments passed to the JVM, see contents of variable *command-line-args*
-<pre>
+<source lang="lisp">
 (println *command-line-args*)
-</pre>
+</source>
 
 <h3>Reflection</h3>
 * To list all methods of an object:
 
-<pre>
+<source lang="lisp">
 (defn print-java-methods [obj]
   (doseq method (seq (.getMethods (if (= (class obj) java.lang.Class)
                                     (identity obj)
@@ -350,7 +353,7 @@ Note above the quoted string "xml" to avoid evaluating it to a (non-existing) va
  public void ij.ImagePlus.setProperty(java.lang.String,java.lang.Object)
  public java.lang.Object ij.ImagePlus.getProperty(java.lang.String)
  ...
-</pre>
+</source>
 
 To list constructors, just use <i>.getConstructors</i> instead of <i>.getMethods</i>.
 
@@ -361,35 +364,35 @@ To list constructors, just use <i>.getConstructors</i> instead of <i>.getMethods
 * To declare functions on the fly, lambda style, with regex for arguments:
 
 For example, declare a function that takes 2 arguments, and returns the value of the first argument divided by 10, and multiplied by the second argument:
-<pre>
+<source lang="lisp">
 (let [doer #(* (/ %1 10) %2)]
   (doer 3 2))
-</pre>
+</source>
 Of course there's no need to name the function, the above is just for illustration.
 
 <h4>Mapping a function to all elements in a list</h4>
 
 * To declare a nameless function, and apply it to each element of a list:
 In this case, increment by one each value of a list from 0 to 9:
-<pre>
+<source lang="lisp">
 (let [numbers (range 10)
       add-one (fn [x] (+ x 1))]
   (map add-one numbers))
-</pre>
+</source>
 There is no need to declare the names, the above is just for illustration.
 Above, we could have defined the function as #(+ %1 1):
-<pre>
+<source lang="lisp">
 (map #(+ %1 1) (range 10))
-</pre>
+</source>
 ... or of course use the internal function <i>inc</i> which does exactly that:
-<pre>
+<source lang="lisp">
 (map inc (range 4))
-</pre>
+</source>
 Beware that the <i>map</i> function above applies the given function to each element of a list, and returns a <b>new</b> list with the results.
 
 <h3>Built-in documentation</h3>
 Use the function <i>doc</i> to query any other function. For example, the list generator function <i>range</i>:
-<pre>
+<source lang="lisp">
 (doc range)
 
 -------------------------
@@ -397,7 +400,7 @@ clojure/range
 ([end] [start end] [start end step])
   Returns a lazy seq of nums from start (inclusive) to end
   (exclusive), by step, where start defaults to 0 and step to 1.
-</pre>
+</source>
 Above, notice the function has three groups of possible arguments, denoted in brackets.
 
 [[Category:Scripting]]
