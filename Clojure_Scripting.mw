@@ -302,30 +302,6 @@ Open the plugins/Examples/ folder in Fiji installation directory. You'll find th
 * [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/random_noise_example.clj;hb=HEAD random_noise_example.clj]: illustrates how to declare a function inside a closure (for private access to, in this case, a unique instance of a random number generator), and then fill all pixels of a ByteProcessor image with a random byte value.
 * [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Command_Launchers/Command_Launcher_Clojure.clj;hb=HEAD Command_Launcher_Clojure.clj]: illustrates how to create a GUI with a KeyListener, so that the typed text changes color from red to black when it matches the name of an ImageJ command. This example is also under the [[Scripting comparisons]], along equivalent versions written in Java, [[Jython Scripting|Jython]], [[Javascript_Scripting|Javascript]] and [[JRuby_Scripting|JRuby]].
 
-<h3>A fibonacci sequence: lazy and infinite sequences</h3>
-
-A beautiful example of using lazy sequences and applying functions to one or more sequences at a time.
-
-Below, the sequence <i>fibs</i> is defined in such a way that it contains all possible [http://en.wikipedia.org/wiki/Fibonacci_number fibonacci numbers]. Since such sequence is infinite, we declared it as <i>lazy</i> sequence, that creates new elements only when they are asked for.
-
-The <i>lazy-cat</i> clojure function creates such lazy sequence by concatenation of two sequences: the first sequence is <i>0, 1</i> (which takes the role of feeder or initialization sequence), and the second sequence is the result of a <i>map</i> operation over two subsets of the <i>fibs</i> sequence itself: the full and the full minus the first element (hence the <i>rest</i> operation to obtain the list of all elements without the first).
-
-A <i>map</i> operation applies a function to each element of a sequence, or, when two or more sequences are provided, to the corresponding elements: those at index 0 in all sequences, those at index 1 in all sequences, etc.
-
-To generate the fibonacci sequence of numbers, a sum <i>+</i> operation is mapped to the numbers contained in the <b>self sequence</b> <i>fibs</i> and to the corresponding elements of the self sequence <i>fibs</i> minus the first element, i.e. <b>shifted by one</b>.
-
-In short, the lazy sequence <i>fibs</i> is an abstract way of representing a potentially infinite sequence, with an implementation containing a full abstract definition of <b>all</b> fibonacci numbers.
-
-Then we just <i>take</i> the first 10 elements of such lazy sequence, which are created on the fly.
-
-<source lang="lisp">
-(def fibs (lazy-cat [0 1]
-                    (map + fibs (rest fibs))))
-
-(take 10 fibs)
-</source>
-Which outputs:
- (0 1 1 2 3 5 8 13 21 34)
 
 <h1>Appendix</h1>
 
@@ -427,5 +403,31 @@ clojure/range
   (exclusive), by step, where start defaults to 0 and step to 1.
 </source>
 Above, notice the function has three groups of possible arguments, denoted in brackets.
+
+<h3>A fibonacci sequence: lazy and infinite sequences</h3>
+
+A beautiful example of using lazy sequences and applying functions to one or more sequences at a time.
+
+Below, the sequence <i>fibs</i> is defined in such a way that it contains all possible [http://en.wikipedia.org/wiki/Fibonacci_number fibonacci numbers]. Since such sequence is infinite, we declared it as <i>lazy</i> sequence, that creates new elements only when they are asked for.
+
+The <i>lazy-cat</i> clojure function creates such lazy sequence by concatenation of two sequences: the first sequence is <i>0, 1</i> (which takes the role of feeder or initialization sequence), and the second sequence is the result of a <i>map</i> operation over two subsets of the <i>fibs</i> sequence itself: the full and the full minus the first element (hence the <i>rest</i> operation to obtain the list of all elements without the first).
+
+A <i>map</i> operation applies a function to each element of a sequence, or, when two or more sequences are provided, to the corresponding elements: those at index 0 in all sequences, those at index 1 in all sequences, etc.
+
+To generate the fibonacci sequence of numbers, a sum <i>+</i> operation is mapped to the numbers contained in the <b>self sequence</b> <i>fibs</i> and to the corresponding elements of the self sequence <i>fibs</i> minus the first element, i.e. <b>shifted by one</b>.
+
+In short, the lazy sequence <i>fibs</i> is an abstract way of representing a potentially infinite sequence, with an implementation containing a full abstract definition of <b>all</b> fibonacci numbers.
+
+Then we just <i>take</i> the first 10 elements of such lazy sequence, which are created on the fly.
+
+<source lang="lisp">
+(def fibs (lazy-cat [0 1]
+                    (map + fibs (rest fibs))))
+
+(take 10 fibs)
+</source>
+Which outputs:
+ (0 1 1 2 3 5 8 13 21 34)
+
 
 [[Category:Scripting]]
