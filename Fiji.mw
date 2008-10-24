@@ -41,7 +41,7 @@ __NOTOC__
 * Manual (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2])
 * [[Plugins_Menu#Segmentation|Level Sets]].
 ;[[:Category:Transform|Transform]]
-* [[Distortion correction]]: see the [http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf Distortion Correction plugin manual].
+* [[Distortion correction]]: correct lens deformation induced by the microscope (optical and electron microscopy). See the [http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf Distortion Correction plugin manual].
 ;[[VIB Protocol]]
 * Label-based 3D alignment of image stacks.
 ;[http://repo.or.cz/w/imageja.git/ ImageJA]
