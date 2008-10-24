@@ -38,3 +38,5 @@ Alternatively, if you want to install the .deb files directly with dpkg, you can
 ==== Known Bugs ====
 
 * These packages should work for you, but fail to meet policy for being official Debian and Ubuntu packages in many ways - we are working towards this, however, so if you use the apt repository above and update regularly, you should see the packages improve and reduce in size over time.
+
+* These packages aren't signed at the moment, so you will get a warning about the packages not being authenticated.
