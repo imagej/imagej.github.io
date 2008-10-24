@@ -40,6 +40,8 @@ __NOTOC__
 * [http://132.187.25.13/home/?category=Download&page=SegmentationEditor Segmentation Editor]
 * Manual (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2])
 * [[Plugins_Menu#Segmentation|Level Sets]].
+;[[:Category:Transform|Transform]]
+* [[Distortion correction]]: correct lens deformation from cameras. See the [http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf Distortion Correction plugin manual]
 ;[[VIB Protocol]]
 * Label-based 3D alignment of image stacks.
 ;[http://repo.or.cz/w/imageja.git/ ImageJA]
