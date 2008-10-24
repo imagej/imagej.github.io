@@ -164,6 +164,7 @@ Non-destructive stitching is available via [[TrakEM2]] (i.e. floating, adjustabl
 
 * '''SplineDeformationGenerator''': This plugin allows different types of deformations over any given image.  See [http://biocomp.cnb.csic.es/~iarganda/SplineDeformationGenerator/ SplineDeformationGenerator]
 * '''Perspective''':
+* '''[[Distortion Correction]]''': a protocol to correct lens deformation in images. See the [http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf Distortion Correction plugin manual].
 
 === TransformJ ===
 
