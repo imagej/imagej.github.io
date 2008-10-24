@@ -16,7 +16,7 @@ The easiest way to fetch the source code for Fiji is to use [http://git.or.cz/ g
 
 === Packages for Debian / Ubuntu ===
 
-'''These packages have not been extensively tested, so feedback to mark-fiji ''at'' longair.net would be very useful.'''
+'''These packages have not been extensively tested, so feedback to mark-fiji ''at'' longair.net would be very much appreciated.'''
 
 There are Debian packages of Fiji.  Add the following lines to /etc/apt/sources.list:
 
