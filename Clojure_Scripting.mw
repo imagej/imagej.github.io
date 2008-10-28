@@ -429,5 +429,51 @@ Then we just <i>take</i> the first 10 elements of such lazy sequence, which are 
 Which outputs:
  (0 1 1 2 3 5 8 13 21 34)
 
+<h3>Creating shallow and deep sequences from java arrays</h3>
+
+Many clojure functions take sequences, not native java arrays, as arguments. A java native array can be wrapped by a shallow sequence like the following:
+
+ >>> (def pixels (into-array (range 10)))
+ #'user/pixels
+ >>> pixels
+ [Ljava.lang.Integer;@f30d8e
+ >>> (def seq-pix (seq pixels))
+ #'user/seq-pix
+ >>> seq-pix
+ (0 1 2 3 4 5 6 7 8 9)
+
+Now if we modify the native array, the sequence will reflect that change too when read:
+ >>> (aset pixels 3 99)
+ 99
+ >>> seq-pix
+ (0 1 2 99 4 5 6 7 8 9)
+
+The array was <b>not</b> duplicated. The only new object created was the shallow sequence:
+ >>> (class seq-pix)
+ clojure.lang.ArraySeq
+
+To create a true deep duplicate of the array, one can do:
+ >>> (def pixels2 (vec pixels))
+ #'user/pixels2
+ >>> (class pixels2)
+ clojure.lang.LazilyPersistentVector
+ >>> pixels2
+ [0 1 2 99 4 5 6 7 8 9]
+ >>> (def seq-pix2 (seq pixels2))
+ #'user/seq-pix2
+ >>> (class seq-pix2)
+ clojure.lang.APersistentVector$Seq
+
+Or, in short:
+ (def seq-pix2 (seq (vec pixels)))
+ #'user/seq-pix2
+
+So now any changes to the original <i>pixels</i> array will not affect the new sequence:
+ >>> (aset pixels 3 101)
+ 101
+ >>> seq-pix2
+ (0 1 2 99 4 5 6 7 8 9)
+
+<i>Thanks to Chouser and wwmorgan for examples on #clojure at irc.freenode.net</i>
 
 [[Category:Scripting]]
