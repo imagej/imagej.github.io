@@ -1,5 +1,8 @@
 Here is logged all modification made to the structure of this wiki (not its content), such as installation of extension and so.
 
 
+* 05/11/08 - JYT: enabled TeX. <nowiki><math></nowiki> tags are now supported. Help on syntax can be found [http://meta.wikimedia.org/wiki/Help:Formula here].
+
+* 16/10/08 - JYT: authorized upload of pdf files.
 
 * 07/05/08 - JYT: installed the extension ''SyntaxHighlight GeSHi'' for syntax highlighting. See [http://www.mediawiki.org/wiki/Extension:SyntaxHighlight_GeSHi].
