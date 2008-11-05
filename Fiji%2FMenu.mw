@@ -143,7 +143,7 @@ See also [[Scripting Help]] and the [[Scripting_comparisons]].
 
 * '''Segmentation Editor''': This plugin provides a user interface for manually segmenting images by painting over regions in an image stack.  [http://132.187.25.13/home/?category=Download&page=SegmentationEditor Futher documentation.]
 * '''Simple Neurite Tracer''': A plugin for semi-automated tracing of neurons in a 3D image stack [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/ Further documentation]
-* '''Level Sets''': Active contours implementation using Level Sets and Fast Marching methods. See the [http://math.berkeley.edu/~sethian/ Level Set and Fast Marching methods] and the [http://en.wikipedia.org/wiki/Level_set wikipedia on Level Sets].
+* '''[[Level Sets]]''': Active contours implementation using Level Sets and Fast Marching methods. See the [http://math.berkeley.edu/~sethian/ Level Set and Fast Marching methods] and the [http://en.wikipedia.org/wiki/Level_set wikipedia on Level Sets].
 
 === Stacks ===
 
