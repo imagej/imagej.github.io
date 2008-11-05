@@ -21,21 +21,27 @@ Active contours evolve an initial contour in time according to multiple intrinsi
 
 This implementation is based on following PDE update:
 
-<!-- <math>\Phi(i) = \Delta T g(i) ( Wa Fa |\nabla\Phi| + Wc Fc |\nabla\Phi| </math> -->
-phi(i) = delta T g(I) ( Wa Fa |gradient phi| + Wc Fc |gradient phi| )
+<math>\Phi(i) = \Delta T g(i) ( Wa Fa |\nabla\Phi| + Wc Fc |\nabla\Phi| </math>
+<!--phi(i) = delta T g(I) ( Wa Fa |gradient phi| + Wc Fc |gradient phi| ) -->
 
 with 
 
-<!-- <math>g(I) = \frac{1}{1 + (\nabla I*  + g) * 2}</math> -->
-<!--<math>\nabla I*</math> = difference of smoothened (gaussian blur) image-->
-: g(I) = 1 /  ( 1 + (gradient I*  + g) * 2)
+<math>g(I) = \frac{1}{1 + (\nabla I*  + g) * 2}</math>
+
+<math>\nabla I*</math> = difference of smoothened (gaussian blur) image
+
+<!--: g(I) = 1 /  ( 1 + (gradient I*  + g) * 2) -->
 ::gradient I* = difference of smoothened (gaussian blur) image	
 ::g = 0 if gray value < preset gray value
 :::gray value otherwise
-<!-- <math>\Delta T = \frac{1}{6 * Wa * Wc}<math> -->
-:delta T = 1 / ( 6 * Wa * Wc)
-<!-- <math>\Phi(i)<math> = iso surface at current iteration i -->
-:phi(i) = iso surface at current iteration i
+
+
+<math>\Delta T = \frac{1}{6 * Wa * Wc}</math>
+<!--:delta T = 1 / ( 6 * Wa * Wc) -->
+
+<math>\Phi(i)</math> = iso surface at current iteration i 
+
+<!--:phi(i) = iso surface at current iteration i-->
 :Wa = Advection weight
 :Fa = Advection force
 :Wc = Curvature weight
