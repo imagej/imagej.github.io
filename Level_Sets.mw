@@ -1,0 +1,114 @@
+== Level Sets and Fast Marching ==
+
+=== Introduction === 
+
+Level Sets are an important category of modern image segmentation techniques are based on partial differential equations (PDE), i.e. progressive evaluation of the differences among neighboring pixels to find object boundaries. Ideally, the algorithm will converge at the boundary of the object where the differences are the highest. 
+
+The Fiji plugin provides two PDE based methods, the more basic fast marching and the advanced active contour algorithm.
+
+Fast marching works similar to a standard flood fill but is more sensitive in the boundary detection. While growing the region it constantly calculates the difference of the current selection to the newly added pixels and either stops if it exceeds a pre selected gray value difference or if it would exceed a certain pre-selected rate of growth. This algorithm is sensitive to leaking - if the object has a gap in the boundary, the selection may leak to the outside of the object.
+
+Level sets advance a contour like a rubber band until the contour hits an object boundary. The rubber band like nature (= curvature) prevents the contour from leaking if there are gaps in the boundary. The strength of the rubber band and a gray level difference can be pre-selected.  
+
+The speedy fast marching can be used as input for the slower active contours. If the image is very large, starting with Fast Marching and using the contour from the fast marching to refine the object with Level Sets can significantly speed up the object detection.  
+
+
+=== Algorithmic details ===
+
+The fast marching algorithm expands from a seed point the to the object boundary until it encounters a pre-set difference in the pixels intensities. See ... for more details.
+
+Active contours evolve an initial contour in time according to multiple intrinsic geometric measures of the image. In the plugin implementation the measures are an edge based constraint, a grey value penalty and a curvature constraint which prevents them from leaking the object boundary at areas of poor edges. During curve evolution the active contours in this implementation can split and merge and thus be used to detect even multiple objects. The algorithm in the plugin is based on a state-of-the-art very memory efficient and fast sparse-field computation (Terry S. Yoo, Insight into Images, Chapter 8) which can be easily extended to other variations of the active contour/level set algorithms. 
+
+This implementation is based on following PDE update:
+
+<!-- <math>\Phi(i) = \Delta T g(i) ( Wa Fa |\nabla\Phi| + Wc Fc |\nabla\Phi| </math> -->
+phi(i) = delta T g(I) ( Wa Fa |gradient phi| + Wc Fc |gradient phi| )
+
+with 
+
+<!-- <math>g(I) = \frac{1}{1 + (\nabla I*  + g) * 2}</math> -->
+<!--<math>\nabla I*</math> = difference of smoothened (gaussian blur) image-->
+: g(I) = 1 /  ( 1 + (gradient I*  + g) * 2)
+::gradient I* = difference of smoothened (gaussian blur) image	
+::g = 0 if gray value < preset gray value
+:::gray value otherwise
+<!-- <math>\Delta T = \frac{1}{6 * Wa * Wc}<math> -->
+:delta T = 1 / ( 6 * Wa * Wc)
+<!-- <math>\Phi(i)<math> = iso surface at current iteration i -->
+:phi(i) = iso surface at current iteration i
+:Wa = Advection weight
+:Fa = Advection force
+:Wc = Curvature weight
+:Fc = Curvature force
+
+
+A more detailed explanation of the algorithm can be found at following links:
+
+* Book: [http://www.akpeters.com/product.asp?ProdCode=2175 Insight Into Images Principles and Practice for Segmentation, Registration and Image Analysis]
+* [http://www.itk.org/ItkSoftwareGuide.pdf ITK online documentation], Chapter 9.3
+* [http://en.wikipedia.org/wiki/Level_set Wikipedia]
+
+An upcoming future implementation will add geodesic active contours as described by ....
+
+
+=== Tutorial ===
+
+'''Fast Marching'''
+
+Open the example image "Dot Blot (7k)" in the menu File, Open Samples
+
+Using the "Point selections", select a seed point as a start. Selecting a point is very similar to selecting a location for filling an object - in fact, fast marching is very similar to flood fill with a more sophisticated boundary detection. In the following picture, a point inside one of the dots is selected:
+
+Go to the Level Sets dialog, deselect the Level Sets option and select the Fast Marching option. Keep the parameters the same:
+
+
+Click on OK and you'll see a constantly updated progress window and, after completion, a result window. The segmented points will be shown in green in the progress window.
+
+
+'''Level Sets'''
+
+Open the example image "Dot Blot (7k)" in the menu File, Open Samples
+
+Using an object selector, select an approximate shape inside or outside the object. In the first example, a oval inside one of the Dots is selected.
+
+Go to the Level Sets dialog, deselect Fast Marching and make sure Level Sets is selected. Keep the parameters and click OK. Note that the "Region expands to" option is set to outside, i.e. the contour will grow to the outside of the initial selection. Thus, make sure that the setting "Region expands to" matches the initial selection relative to the object of interest.
+
+Level Sets advance a contour until it hits a boundary. Thus, the progress window shows the currently active contour in red and the previously active contour in yellow. The contour will advance until it hits the border of the dot. 
+
+In the following example, the contour will advance to the inside with a rectangular selection as starting point. 
+
+The end result looks slightly different because the local differences are not the same when the contour approaches the dot from the outside or the inside.
+
+The shape of the initial selection is not particularly important but it is important the the selection is either completely inside the object or completely outside the object. The segmentation will not work if the selection crosses the object boundary.
+
+
+=== Parameters ===
+
+The "Preprocessing" option is used for calculation the differences of neighboring pixels. Currently it will always default to Gaussian. A future implementation may have anisotropic filtering as an option. 
+
+
+'''Fast Marching'''
+
+* '''Gray value threshold''':
+This is used to determine the stopping point for the expansion as the gray value difference between two neighboring pixels. Increase it if the image has stronger contrasts, decrease it if the contrast is not strong.
+
+* '''Distance threshold''':
+How much the selection is permitted to expand in one iteration. Increasing it will speed up the process but desensitize it. 
+
+
+'''Level Sets'''
+
+* '''Advection''':
+Essentially the speed the contour progresses. Increasing the value will speed up the segmentation but it may advance too fast and miss the boundary. 
+
+* '''Curvature''':
+This number determines the weight of the curvature in progressing the contour.
+
+* '''Grayscale''':
+During contour evolution the gray values of the current contour are compared to the next progression of the contour. If they exceed the value set here, a penalty is introduced.
+
+* '''Convergence''':
+The value here is used as criterion for converging. If the changes in the contour between two iterations are lower than that value, the algorithm will stop. Increase the value if the contour doesn't stop at the boundary and/or collapses completely or decrease it if it stops to early.
+
+* '''Region expands to''':
+As described in the tutorial, this setting determines if the contour will evolve to the inside of the selection or the outside.
