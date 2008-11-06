@@ -15,47 +15,41 @@ The speedy fast marching can be used as input for the slower active contours. If
 
 === Algorithmic details ===
 
-The fast marching algorithm expands from a seed point the to the object boundary until it encounters a pre-set difference in the pixels intensities. See ... for more details.
+The fast marching algorithm expands from a seed point the to the object boundary until it encounters a pre-set difference in the pixels intensities. 
 
 Active contours evolve an initial contour in time according to multiple intrinsic geometric measures of the image. In the plugin implementation the measures are an edge based constraint, a grey value penalty and a curvature constraint which prevents them from leaking the object boundary at areas of poor edges. During curve evolution the active contours in this implementation can split and merge and thus be used to detect even multiple objects. The algorithm in the plugin is based on a state-of-the-art very memory efficient and fast sparse-field computation (Terry S. Yoo, Insight into Images, Chapter 8) which can be easily extended to other variations of the active contour/level set algorithms. 
 
 This implementation is based on following PDE update:
 
-<math>\Phi(i) = \Delta T g(i) ( Wa Fa |\nabla\Phi| + Wc Fc |\nabla\Phi| </math>
+<math>\Phi(i) = \Delta T g(i) ( W_a F_a |\nabla\Phi| + W_c F_c |\nabla\Phi| )</math>
 <!--phi(i) = delta T g(I) ( Wa Fa |gradient phi| + Wc Fc |gradient phi| ) -->
 
 with 
 
-<math>g(I) = \frac{1}{1 + (\nabla I*  + g) * 2}</math>
-
-<math>\nabla I*</math> = difference of smoothened (gaussian blur) image
-
+:<math>g(I) = \frac{1}{1 + (\nabla I*  + g) * 2}</math>
 <!--: g(I) = 1 /  ( 1 + (gradient I*  + g) * 2) -->
-::gradient I* = difference of smoothened (gaussian blur) image	
-::g = 0 if gray value < preset gray value
-:::gray value otherwise
-
-
-<math>\Delta T = \frac{1}{6 * Wa * Wc}</math>
+::<math>\nabla I*</math> = difference of smoothened (gaussian blurred) image
+<!--::gradient I* = difference of smoothened (gaussian blur) image -->	
+::<math>g = \begin{cases} 0  & if\ gray\ value < preset\ gray\ value.\\
+gray\ value & otherwise. \end{cases}</math>
+:<math>\Delta T = \frac{1}{6 * Wa * Wc}</math>
 <!--:delta T = 1 / ( 6 * Wa * Wc) -->
-
-<math>\Phi(i)</math> = iso surface at current iteration i 
-
+:<math>\Phi(i)</math> = iso surface at current iteration i 
 <!--:phi(i) = iso surface at current iteration i-->
-:Wa = Advection weight
-:Fa = Advection force
-:Wc = Curvature weight
-:Fc = Curvature force
+:<math>W_a</math> = Advection weight
+:<math>F_a</math> = Advection force
+:<math>W_c</math> = Curvature weight
+:<math>F_c</math> = Curvature force
 
 
 A more detailed explanation of the algorithm can be found at following links:
 
 * Book: [http://www.akpeters.com/product.asp?ProdCode=2175 Insight Into Images Principles and Practice for Segmentation, Registration and Image Analysis]
 * [http://www.itk.org/ItkSoftwareGuide.pdf ITK online documentation], Chapter 9.3
+* [http://en.wikipedia.org/wiki/Fast_marching Wikipedia Fast Marching]
 * [http://en.wikipedia.org/wiki/Level_set Wikipedia]
 
-An upcoming future implementation will add geodesic active contours as described by ....
-
+An upcoming future implementation will add geodesic active contours as described by Caselles et.al.
 
 === Tutorial ===
 
