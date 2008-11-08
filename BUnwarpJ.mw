@@ -2,20 +2,30 @@
 | software               = ImageJ
 | name                   = bUnwarpJ
 | author                 = Ignacio Arganda-Carreras
-| filename               = [http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/downloads/bUnwarpJ_.jar] 
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/bUnwarpJ_;hb=HEAD]
+| filename               = [http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/downloads/bUnwarpJ_.jar bUnwarpJ_.jar] 
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/bUnwarpJ_;hb=HEAD Git repository]
 | released               = July 20th, 2006
 | latest version         = November 3rd, 2008
 | status                 = active
 | category               = [[:Category:Registration]]
-| website                = [http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/]
+| website                = [http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/ bUnwarpJ]
 }}
 
 Registration method based on elastic deformations represented by B-splines. The invertibility of the deformations is forced through a consistency restriction. 
 
-For a quick start, you can have a look at the [http://imagejdocu.tudor.lu/doku.php?id=video:aligning:bunwarpj_basic_tutorial|video tutorial].
+[[Image:BUnwarpJ_scheme.png]]
+
+For all details, visit the home page at [http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/ bUnwarpJ].
+
+== Documentation ==
+* Main site's [http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/index.html#User_manual user manual]
+* [http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/API/index.html API documentation]
+
+== Video Tutorial ==
+For a quick start, you can have a look at the [http://imagejdocu.tudor.lu/doku.php?id=video:aligning:bunwarpj_basic_tutorial video tutorial].
 
 ----
 
 [[Category:Plugins]]
 [[Category:Registration]]
+[[Image:[[Image:Example.jpg]][[Image:Example.jpg]]]]
