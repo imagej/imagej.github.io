@@ -13,10 +13,6 @@
 
 Registration method based on elastic deformations represented by B-splines. The invertibility of the deformations is forced through a consistency restriction. 
 
-{|
-|style="vertical-align:top" |[[Image:BUnwarpJ_scheme.png|thumb|500px|bUnwarpJ scheme: bidirectional Unwarping in Java.]]
-|}
-
 For all details, visit the home page at [http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/ bUnwarpJ].
 
 == Documentation ==
@@ -30,3 +26,7 @@ For a quick start, you can have a look at the [http://imagejdocu.tudor.lu/doku.p
 
 [[Category:Plugins]]
 [[Category:Registration]]
+
+{|
+|style="vertical-align:top" |[[Image:BUnwarpJ_scheme.png|thumb|500px|bUnwarpJ scheme: bidirectional Unwarping in Java.]]
+|}
