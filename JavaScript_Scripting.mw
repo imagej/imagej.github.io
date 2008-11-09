@@ -104,7 +104,7 @@ To print the fields and methods of an instance of ImagePlus (i.e. an image that 
 
 ... which prints all method names such as getStatistics isHyperStack etc. and fields like width and height (because there are public 'get' methods for it such as getWidth() and getHeight() .)
 
-== Advanced scripting ==
+== Interfaces and anonymous classes ==
 
 To create an ImageListener without declaring a new class that implements such java interface, simply use a function that will be mapped to all its methods (as long as they have the same signature, which they do in this case):
 
@@ -137,6 +137,71 @@ Simplified:
 What the code above did: to look for an interface that could take a method with no arguments, represented by the function, and instantiate an anonymous class that implements such interface with the function mapped to its method.
 
 See also an [http://pacific.mpi-cbg.de/wiki/index.php/Scripting_comparisons#In_Javascript example plugin] for ImageJ written in javascript.
+
+== Multithreaded Image Processing in Javascript ==
+
+The following example shows how to create a generic function, named <i>multithreader</i>, that accepts another function as argument and executes it in parallel a number of times. As a very simple example, a <i>printer</i> function is passed to the <i>multithreader</i>, and a list of numbers is printed without repeating anyone, and not preserving the order of course.
+
+The <i>multithreader</i> scales up to as many CPU cores as the computer has to offer.
+
+Always remember: only <b>completely</b> independent tasks can be parallelized effectively!
+
+A good strategy for multithreading involves carefully considering the task to parallelize: how small can the chunks be? For an image, a chunk could be a pixel or a line, but often those are too small to overcome the overhead of parallelization.
+
+See this complete plugin, the , which illustrates how to generate an image with random pixel values in a multithreaded manner, and how the choice of chunks to process in parallel is made.
+
+Despite the simple example below, the <i>multithreader</i> framework function allows variable amount of arguments to be passed, as illustrated in the complete plugin [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Multithreaded_Image_Processing_in_Javascript.js;hb=HEAD Multithreaded_Image_Processing_in_Javascript.js]. The script shows how to generate an image with random pixel values in a multithreaded manner, and how the choice of chunks to process in parallel is made for reasonable effectiveness.
+
+<source lang="javascript">
+// Now, abstract away the multithreading framework into a function
+// that takes another function as argument:
+
+function multithreader(fun, start, end) {
+        var threads = new java.lang.reflect.Array.newInstance(java.lang.Thread, Runtime.getRuntime().availableProcessors());
+        var ai = new AtomicInteger(start);
+        // Prepare arguments: all other arguments passed to this function
+        // beyond the mandatory arguments fun, start and end:
+        var args = new Array();
+        var b = 0;
+        IJ.log("Multithreading function \"" + fun.name + "\" with arguments:\n  argument 0 is index from " + start + " to " + end);
+        for (var a = 3; a < arguments.length; a++) {
+                args[b] = arguments[a];
+                IJ.log("  argument " + (b+1) + " is " + args[b]);
+                b++;
+        }
+        var body = {
+                run: function() {
+                        for (var i = ai.getAndIncrement(); i <= end; i = ai.getAndIncrement()) {
+                                // Execute the function given as argument,
+                                // passing to it all optional arguments:
+                                fun(i, args);
+                                Thread.sleep(100);
+                        }
+                }
+        }
+        // start all threads
+        for (var i = 0; i < threads.length; i++) {
+                threads[i] = new Thread(new Runnable(body)); // automatically as Runnable
+                threads[i].start();
+        }
+        // wait until all threads finish
+        for (var i = 0; i < threads.length; i++) {
+                threads[i].join();
+        }
+}
+
+// The actual desired effect: the printer
+function printer(i) {
+        IJ.log("i is " + i);
+}
+ 
+ // Execute:
+ multithreader(printer, 0, 10);
+</source>
+
+
+See the complete file here: [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Multithreaded_Image_Processing_in_Javascript.js;hb=HEAD Multithreaded_Image_Processing_in_Javascript.js]
+
 
 = Links =
 * [http://www.mozilla.org/rhino/tutorial.html Tutorial] at Mozilla Rhino webpages.
