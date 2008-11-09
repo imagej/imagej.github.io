@@ -12,7 +12,7 @@ This should start downloading the base fiji repository and unpack it into a dire
 
 === Submodules ===
 
-This will not yet be complete tree that you can build, since the fiji repository has on a number of submodules.  (For more on submodules, see the [[Git submodule tutorial]].)  If you have lots of disk space available, these submodules can be initialized with:
+This will not yet be complete tree that you can build, since the fiji repository depends on a number of submodules.  (For more on submodules, see the [[Git submodule tutorial]].)  If you have lots of disk space available, these submodules can be initialized with:
 
  git submodule init ImageJA TrakEM2 VIB micromanager1.1 mpicbg
 
