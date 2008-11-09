@@ -1,6 +1,6 @@
 <h2>Installing Fiji</h2>
 <ol>
-<li>Download the .dmg package from the Downloads page, and then double-click it to open it.</li>
+<li>Download the .dmg package from the [[Downloads]] page, and then double-click it to open it.</li>
 <li>Create a folder under /Applications/, such as /Applications/Fiji</li>
 <li>Drag the 3 items (Fiji.app, and the plugins and macros symlinks) into the /Applications/Fiji folder.</li>
 </ol>
