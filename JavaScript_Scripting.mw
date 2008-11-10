@@ -173,7 +173,7 @@ function multithreader(fun, start, end) {
                                 // Execute the function given as argument,
                                 // passing to it all optional arguments:
                                 fun(i, args);
-                                Thread.sleep(100);
+                                Thread.sleep(100); // NOT NEEDED, just to pretend we are doing something!
                         }
                 }
         }
@@ -199,7 +199,6 @@ function printer(i) {
 
 
 See the complete file here: [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Multithreaded_Image_Processing_in_Javascript.js;hb=HEAD Multithreaded_Image_Processing_in_Javascript.js]
-
 
 = Links =
 * [http://www.mozilla.org/rhino/tutorial.html Tutorial] at Mozilla Rhino webpages.
