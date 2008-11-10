@@ -148,8 +148,6 @@ Always remember: only <b>completely</b> independent tasks can be parallelized ef
 
 A good strategy for multithreading involves carefully considering the task to parallelize: how small can the chunks be? For an image, a chunk could be a pixel or a line, but often those are too small to overcome the overhead of parallelization.
 
-See this complete plugin, the , which illustrates how to generate an image with random pixel values in a multithreaded manner, and how the choice of chunks to process in parallel is made.
-
 Despite the simple example below, the <i>multithreader</i> framework function allows variable amount of arguments to be passed, as illustrated in the complete plugin [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Multithreaded_Image_Processing_in_Javascript.js;hb=HEAD Multithreaded_Image_Processing_in_Javascript.js]. The script shows how to generate an image with random pixel values in a multithreaded manner, and how the choice of chunks to process in parallel is made for reasonable effectiveness.
 
 <source lang="javascript">
