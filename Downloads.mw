@@ -10,6 +10,12 @@ You can download Fiji for
 * {{Download|all|tar.bz2|All platforms (includes all JREs)}}
 * {{Download|nojre|tar.bz2|All platforms (does not include JREs)}}
 
+=== Release Candidate ===
+
+''We have a first release candidate for the post-ImageJ-conference version'' '''Fiji Luxembourg''':
+
+{{DownloadsVersion|Luxembourg-rc1|20081112}}
+
 === Source Code ===
 
 The easiest way to fetch the source code for Fiji is to use [http://git.or.cz/ git].  For further guidance on this, please refer to the page [[Downloading and Building Fiji From Source]].
