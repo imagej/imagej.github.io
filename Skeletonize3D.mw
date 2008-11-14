@@ -3,18 +3,17 @@
 | name                   = Skeletonize3D
 | author                 = Ignacio Arganda-Carreras
 | filename               =  
-| source                 = 
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Skeletonize3D_ Skeletonize3D_.java]
 | released               = November 14th, 2008
 | latest version         = November 14th, 2008
 | status                 = active
 | category               = [[:Category:Skeleton]]
 }}
 
-This work is an implementation by Ignacio Arganda-Carreras of the 3D thinning algorithm from Lee et al. "Building skeleton models via 3-D medial surface/axis thinning algorithms. Computer Vision, Graphics, and Image Processing, 56(6):462–478, 1994." Based on the ITK version from Hanno Homann [http://hdl.handle.net/1926/1292"> http://hdl.handle.net/1926/1292]
-
+2D and 3D skeletonization of binary images.
 
 == Documentation ==
-
+This work is an implementation by Ignacio Arganda-Carreras of the '''3D thinning algorithm''' from Lee et al. "Building skeleton models via 3-D medial surface/axis thinning algorithms. Computer Vision, Graphics, and Image Processing, 56(6):462–478, 1994." Based on the ITK version from Hanno Homann [http://hdl.handle.net/1926/1292"> http://hdl.handle.net/1926/1292]
 
 ----
 
