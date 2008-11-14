@@ -12,6 +12,11 @@
 
 2D and 3D skeletonization of binary images.
 
+{|
+|style="vertical-align:top" |[[Image:Smoothed-bat-cochlea-volume.gif]]
+|style="vertical-align:top" |[[Image:Skeleton-bat-cochlea-volume.gif]]
+|}
+
 == Documentation ==
 This work is an implementation by Ignacio Arganda-Carreras of the '''3D thinning algorithm''' from Lee et al. "Building skeleton models via 3-D medial surface/axis thinning algorithms. Computer Vision, Graphics, and Image Processing, 56(6):462–478, 1994." Based on the ITK version from Hanno Homann [http://hdl.handle.net/1926/1292"> http://hdl.handle.net/1926/1292]
 
