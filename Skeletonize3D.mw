@@ -21,7 +21,7 @@
 Skeletonize3D is a Fiji and ImageJ plugin that performs the [http://en.wikipedia.org/wiki/Topological_skeleton skeletonization] of 2D and 3D binary images. In Fiji, you can find it under '''Plugins > Skeleton > Skeletonize (2D/3D)'''.
 
 == Related work ==
-This work is an implementation by Ignacio Arganda-Carreras of the '''3D thinning algorithm''' from Lee et al. ''"Building skeleton models via 3-D medial surface/axis thinning algorithms. Computer Vision, Graphics, and Image Processing, 56(6):462–478, 1994."'' Based on the ITK version from Hanno Homann: [http://hdl.handle.net/1926/1292 http://hdl.handle.net/1926/1292]
+This work is an implementation by Ignacio Arganda-Carreras of the '''3D thinning algorithm''' from Lee et al. [http://portal.acm.org/citation.cfm?id=202862.202867 ''"Building skeleton models via 3-D medial surface/axis thinning algorithms. Computer Vision, Graphics, and Image Processing, 56(6):462–478, 1994."''] Based on the ITK version from Hanno Homann: [http://hdl.handle.net/1926/1292 http://hdl.handle.net/1926/1292]
 
 ----
 
