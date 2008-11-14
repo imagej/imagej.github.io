@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = Skeletonize3D
-| author                 = Ignacio Arganda-Carreras
+| author                 = [http://arantxa.ii.uam.es/~iarganda/index_EN.html Ignacio Arganda-Carreras]
 | filename               =  
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Skeletonize3D_ Skeletonize3D_.java]
 | released               = November 14th, 2008
