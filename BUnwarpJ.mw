@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = bUnwarpJ
-| author                 = Ignacio Arganda-Carreras
+| author                 = [http://arantxa.ii.uam.es/~iarganda/index_EN.html Ignacio Arganda-Carreras]
 | filename               = [http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/downloads/bUnwarpJ_.jar bUnwarpJ_.jar] 
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/bUnwarpJ_;hb=HEAD Git repository]
 | released               = July 20th, 2006
