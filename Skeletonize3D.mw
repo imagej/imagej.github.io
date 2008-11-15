@@ -2,7 +2,7 @@
 | software               = ImageJ
 | name                   = Skeletonize3D
 | author                 = [http://arantxa.ii.uam.es/~iarganda/index_EN.html Ignacio Arganda-Carreras]
-| filename               =  
+| filename               = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?id=plugin%3Amorphology%3Askeletonize3d%3Astart&cache=cache&media=plugin:morphology:skeletonize3d:skeletonize3d_.jar Skeletonize3D_.jar] 
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Skeletonize3D_ Skeletonize3D_.java]
 | released               = November 14th, 2008
 | latest version         = November 14th, 2008
