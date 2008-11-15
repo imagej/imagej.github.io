@@ -24,7 +24,7 @@ Skeletonize3D is a Fiji and ImageJ plugin that performs the [http://en.wikipedia
 This work is an implementation by Ignacio Arganda-Carreras of the '''3D thinning algorithm''' from Lee et al. [http://portal.acm.org/citation.cfm?id=202862.202867 ''"Building skeleton models via 3-D medial surface/axis thinning algorithms. Computer Vision, Graphics, and Image Processing, 56(6):462–478, 1994."''] Based on the ITK version from Hanno Homann: [http://hdl.handle.net/1926/1292 http://hdl.handle.net/1926/1292]
 
 == License ==
-This program is '''free software'''; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
+This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  
 
