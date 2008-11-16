@@ -224,7 +224,7 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
     (println "Not an 8-bit image")))
 </source>
 
-<h3>Executing commands from the menus</h3>                                                                                                                                                                            
+<h3>Executing commands from the menus</h3>
 <p>Any ImageJ menu command may be run on the active image:</p>                                                                                                                                                        
 <source lang="lisp">
 (ij.IJ/doCommand "Add Noise")                                                                                                                                                                                        
@@ -233,6 +233,12 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
 <source lang="lisp">
 (ij.IJ/run "Add Noise")                                                                                                                                                                                              
 </source>
+For even more reliable control, run the command directly on a specified image, instead of a possibly changing current image:
+<source lang="lisp">
+(let [imp (ij.IJ/getImage)]
+  (ij.IJ/run imp "Subtract..." "value=25"))
+</source>
+To find out which arguments can any command accept, open the Plugins - Macros - Macro Recorder and run the command manually.
 
 <h3>Creating and using Clojure scripts as ImageJ plugins</h3>
 <p>Simply create a text file with the script inside, and place it in the plugins menu or any subfolder. Then call Plugins - Scripting - Refresh Clojure Scripts to make it appear on the menus.</p>
