@@ -7,12 +7,13 @@
 By default, all ImageJ and java.lang.* classes are imported.
 
 You can specify further imports by:
+<source lang="javascript">
+// Import all classes under java.io.*
+importPackage(Packages.java.io)
 
- // Import all classes under java.io.*
- importPackage(Packages.java.io)
- 
- // Import a single class instead
- importClass(Packages.java.io.File)
+// Import a single class instead
+importClass(Packages.java.io.File)
+</source>
 
 === Variables ===
 
@@ -223,20 +224,23 @@ with (awt_bindings) {
 So you are returned an object for a function and you don't know what is it.
 
 To print its class within the interpreter:
-
-  ob = ...
-  ob.getClass();
+<source lang="javascript">
+ob = ...
+ob.getClass();
+</source>
 
 or to the log window:
-
-  ob = ...
-  IJ.log(ob.getClass());
+<source lang="javascript">
+ob = ...
+IJ.log(ob.getClass());
+</source>
 
 To print the list of methods it has, with their return types and argument types:
-
-  ob = ...
-  m = ob.getClass().getMethods();
-  for (i=0; i<m.length; i++) IJ.log(m[i]);
+<source lang="javascript">
+ob = ...
+m = ob.getClass().getMethods();
+for (var i=0; i<m.length; i++) IJ.log(m[i]);
+</source>
 
 == ImageJ interaction ==
 
@@ -318,19 +322,19 @@ Above, you can see what arguments to add to a command by opening the Plugins - M
   
 
 To print the static fields and methods of ImagePlus class:
-
-  s = "";
-  for (a in ImagePlus) { s += " " + a; }
-
+<source lang="javascript">
+s = "";
+for (a in ImagePlus) { s += " " + a; }
+</source>
 ... which prints INTEGRATED_DENSITY AREA_FRACTION etc.
 
 To print the fields and methods of an instance of ImagePlus (i.e. an image that already exists):
-
-  // get the current image
-  imp = IJ.getImage();
-  // print fields and methods
-  s = ""; for (a in imp) { s += " " + a; }
-
+<source lang="javascript">
+// get the current image
+imp = IJ.getImage();
+// print fields and methods
+s = ""; for (a in imp) { s += " " + a; }
+</source>
 ... which prints all method names such as getStatistics isHyperStack etc. and fields like width and height (because there are public 'get' methods for it such as getWidth() and getHeight() .)
 
 
@@ -352,32 +356,34 @@ You can continue modifying and saving the script file. Every time you run it fro
 == Interfaces and anonymous classes ==
 
 To create an ImageListener without declaring a new class that implements such java interface, simply use a function that will be mapped to all its methods (as long as they have the same signature, which they do in this case):
-
-  ImagePlus.addImageListener( function (imp, name) {
-        if (name == "imageOpened") {
-                IJ.log("Opened image: " + imp);
-        } else if (name == "imageClosed") {
-                IJ.log("Closed image: " + imp);
-        } else if (name == "imageUpdated") {
-                IJ.log("Updated image: " + imp);
-        }
-  });
-
+<source lang="javascript">
+ImagePlus.addImageListener( function (imp, name) {
+       if (name == "imageOpened") {
+              IJ.log("Opened image: " + imp);
+      } else if (name == "imageClosed") {
+              IJ.log("Closed image: " + imp);
+      } else if (name == "imageUpdated") {
+              IJ.log("Updated image: " + imp);
+      }
+});
+</source>
 
 Alternatively, one can create an object with declared functions inside to assign then to an anonymous class created on the fly from an interface:
-
-  body = {
-    run: function () {
-      IJ.log("Running!");
-    }
+<source lang="javascript">
+body = {
+  run: function () {
+    IJ.log("Running!");
   }
-  // Runnable is an interface
-  runnable = new Runnable(body);
-  new Thread(runnable).start();
+}
+// Runnable is an interface
+runnable = new Runnable(body);
+new Thread(runnable).start();
+</source>
 
 Simplified:
-
-  new Thread( function () { IJ.log("Running!"); } ).start();
+<source lang="javascript">
+new Thread( function () { IJ.log("Running!"); } ).start();
+</source>
 
 What the code above did: to look for an interface that could take a method with no arguments, represented by the function, and instantiate an anonymous class that implements such interface with the function mapped to its method.
 
