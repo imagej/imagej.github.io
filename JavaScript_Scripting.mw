@@ -78,12 +78,29 @@ To print the list of methods it has, with their return types and argument types:
 === Running ImageJ commands ===
 
 To launch a command:
+<source lang="javascript">
+// in a separate thread:
+IJ.doCommand("FFT");
 
-  // in a separate thread:
-  IJ.doCommand("FFT");
+// instead, waiting until it finishes:
+IJ.run("FFT");
+</source>
 
-  // instead, waiting until it finishes:
-  IJ.run("FFT");
+To run commands on a specific image:
+
+<source lang="javascript">
+// Obtain an image to work on:
+var imp = IJ.getImage();
+
+// Call the command to add noise to the current image
+// which is here the one provided as argument:
+IJ.run(imp, "Add Noise", "");
+
+// Subtract 25 to each pixel value:
+IJ.run(imp, "Subtract...", "value=25");
+</source>
+
+Above, you can see what arguments to add to a command by opening the Plugins - Macro Recorder, and then running the command manually. The macro string will print on the recorder window.
 
 === Inspect java methods and fields in an object ===
   
