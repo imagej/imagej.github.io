@@ -21,6 +21,7 @@ There are two ways:
 <li>Direct: the variable is globally visible (dangerous! Leads to nasty bugs.)</li>
 <li>With a <i>var</i> declaration: the variable is local, visible only within the innermost code block.</li>
 </ul>
+<b>Local</b> variables are also <b>faster</b>, because they can be [http://www.mozilla.org/rhino/perf.html efficiently optimized for access].
 Examples:
 <source lang="javascript">
 // global variable 'imp'
@@ -52,18 +53,82 @@ for (var i = 0; i< names.length; i++) {
 // IJ.log("The last image opened was: " + imp);
 </source>
 
-=== Creating import namespaces ===
+=== Creating and manipulating arrays ===
+There are both Javascript arrays and native java arrays.
+==== Javascript arrays ====
+There are many ways to create a Javascript array. Here are a few:
+<source lang="javascript">
+// One dimensional:
+var names = ["blobs.gif", "boats.gif", "bridge.gif"];
+IJ.log("We have " + names.length + " names.");
 
-  var awt_bindings = new JavaImporter(Packages.java.awt.Frame, Packages.java.awt.Button);
-  
-  with (awt_bindings) {
-    // imported classes visible ONLY in this block
-    win = new Frame("Title");
-    b = new Button("Press me");
-    win.add(b);
-    win.pack();
-    win.setVisible(true);
-  }
+// Two dimensional:
+var coords = [[10, 20, 30],   // X coords
+              [15, 25, 35]];  // Y coords
+
+IJ.log( "x0, y0 = " + coords[0][0] + ", " + coords[1][0] );
+IJ.log( "All X coords: " + coords[0] );
+
+// Uneven dimensions:
+var coords = [[10, 20, 30],               // X coords
+              [15, 25, 35, 45, 55, 75]];  // Y coords
+IJ.log( "Number of X coords: " + coords[0].length );
+IJ.log( "Number of Y coords: " + coords[1].length );
+</source>
+
+Arrays in Javascript are extremely flexible:
+<source lang="javascript">
+// Empty arrays:
+var names = new Array();
+IJ.log("First name is: " + names[0]); // --> prints "undefined", i.e. null.
+
+// Creating array entries at arbitrary index positions:
+names[0] = "Table";
+names[5] = "Window";
+IJ.log("Number of names: " + names.length); // --> prints 6 ! All other entries are "undefined", null.
+
+// Using the array as a dictionary:
+names["one"] = 1;
+IJ.log("Number of names: " + names.length); // --> still prints 6! But now the array has a map in it as well.
+IJ.log("The 'one' is " + names["one"]);     // --> prints 1
+
+// Array entries can contain anything, including other arrays!
+names[3] = new Array();
+names[3][0] = "Ok";
+names[3][1] = "Good";
+names[3][2] = ["Arrays", "are", "very", "flexible"]; // another array!
+</source>
+
+==== Native Java arrays ====
+Native java arrays can be passed to java functions and methods directly.
+For example, to create an array of pixels:
+<source lang="javascript">
+width = 512
+height = 512
+pixels = new java.lang.reflect.Array.newInstance(java.lang.Byte.TYPE, width * height);
+</source>
+To manipulate such arrays, just do so as if they were Javascript arrays. Beware, though, that now you are limited to numerical indices only, and within the array size only!
+<source lang="javascript">
+// Subtract 25 to each pixel:
+for (var i = 0; i < pixels.length; i++) {
+  pixels[i] -= 25;
+}
+</source>
+Above, beware of all problems derived from manipulating signed byte[] arrays, whose values should be made unsigned first, modified, then unsigned back into the array.
+
+=== Creating import namespaces ===
+<source lang="javascript">
+var awt_bindings = new JavaImporter(Packages.java.awt.Frame, Packages.java.awt.Button);
+
+with (awt_bindings) {
+  // imported classes visible ONLY in this block
+  win = new Frame("Title");
+  b = new Button("Press me");
+  win.add(b);
+  win.pack();
+  win.setVisible(true);
+}
+</source>
 
 === Inspecting fields and methods of an object ===
 
