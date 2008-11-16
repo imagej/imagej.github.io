@@ -27,15 +27,23 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 
 === Examples ===
 
-* '''Blobs Demo in Ruby''': Implementation of the Blobs demo macro in the JRuby language. All relevant ImageJ macro functions are reimplemented in [http://jruby.codehaus.org/ JRuby].
-* '''blend two images''': Fetches the mandril (RGB) and bridge (8-bit) sample images, and blends the bridge image into each color channel of the mandril image. Written in [http://clojure.sourceforge.net Clojure] (lisp).
-* '''celsius to fahrenheit''': Shows a swing GUI with buttons and labels, with attached listeners to transform celsius degrees to fahrenheit. Written in [http://clojure.sourceforge.net Clojure] (lisp).
+* '''Anaglyph for Red Cyan glasses''': Creates an [http://en.wikipedia.org/wiki/Anaglyph_image anaglyph] from an image stack, which can then be seen in 3D using special red/cyan glasses. Written in [[JRuby Scripting] JRuby].
+* '''Blobs Demo in Ruby''': Implementation of the Blobs demo macro in the JRuby language. All relevant ImageJ macro functions are reimplemented in [[JRuby Scripting|JRuby]].
+* '''blend two images''': Fetches the mandril (RGB) and bridge (8-bit) sample images, and blends the bridge image into each color channel of the mandril image. Written in [[Clojure Scripting|Clojure]] (lisp).
+* '''celsius to fahrenheit''': Shows a swing GUI with buttons and labels, with attached listeners to transform celsius degrees to fahrenheit. Written in [[Clojure Scripting|Clojure]] (lisp).
+* '''Command Launcher''': demonstrates how to use a GenericDialog and how to respond dynamically to typed characters in a text field, to look up existing ImageJ commands that match the text. Written in [[Jython Scripting|Jython]], [Clojure Scripting|Clojure]] and [[Javascript Scripting|Javascript]].
+* '''Delayed Snapshot''': pops up a dialog to choose a waiting time, after which a screenshot is taken. Written in [[Jython Scripting|Jython]].
 * '''Example Plot''': Creates a plot with two colored lines in it. Written in Java.
-* '''list all threads''': Lists all threads to stdout (the terminal, or Console.app in MacOSX). Written in [http://www.jython.org Jython].
-* '''random noise example''': Generates two 8-bit images with random pixel value in each. Written in [http://clojure.sourceforge.net Clojure] (lisp).
-* '''T2 Select All''': Selects all objects in an open TrakEM2 display. Written in [http://www.jython.org Jython].
-* '''T2 set all transforms to identity''': Resets the transformation matrix (translation,rotation,scaling and shear) of all objects in a TrakEM2 display to identity (zero translation, scaling of 1.0, zero rotation and no shear). Written in [http://www.jython.org Jython].
-* '''[[downsample]]''': Proper Gaussian downsampling of an image.  Written in [http://www.mozilla.org/rhino/ScriptingJava.html JavaScript]
+* '''list all threads''': Lists all threads to stdout (the terminal, or Console.app in MacOSX). Written in [[Jython Scripting|Jython]].
+* '''Multithreaded Image Processing''': step-by-step guide on how to parallelize the processing of all pixels in an image. Demonstrates how to use defmacro to generalize the processing by any function, which is given to the macro as an argument. Written in [[Clojure Scripting|Clojure]] (lisp).
+* '''Multithreaded Image Processing in Javascript''': similar to the above, demonstrates how to parallelize the processing of all pixels in an image. In addition, the plugin shows how to use functions with variable number of arguments, and how to pass functions as function arguments and execute them. Written in [[Javascript Scripting|Javascript]].
+* '''Plasma Cloud''': instructive example on how to generate a [http://docs.gimp.org/2.2/en/plug-in-plasma.html plasma cloud] in [[JRuby Scripting|JRuby]].
+* '''Same Slice in Multiple Images''': extracts a given slice by number from a list of image stacks, and makes a stack with them all. Useful for example to create 4D data sets. Written in [[JRuby Scripting] JRuby].
+* '''random noise example''': Generates two 8-bit images with random pixel value in each. Written in [[Clojure Scripting|Clojure]] (lisp).
+* '''T2 Select All''': Selects all objects in an open TrakEM2 display. Written in [[Jython Scripting|Jython]].
+* '''T2 set all transforms to identity''': Resets the transformation matrix (translation,rotation,scaling and shear) of all objects in a TrakEM2 display to identity (zero translation, scaling of 1.0, zero rotation and no shear). Written in [[Jython Scripting|Jython]].
+* '''TrakEM2 Add Balls''': example on how to manipulate a TrakEM2 project from a plugin, accessing its internal data structures, including interaction with the [[3D Viewer]]. Particularly, this plugin creates a number of Ball objects, each one containing a collection of X,Y,Z,R coordinates describing spheres of radius R in 3D space. Written in Java.
+* '''[[downsample]]''': Proper Gaussian downsampling of an image (i.e. most accurate resizing possible of an image).  Written in [[Javascript Scripting|Javascript]].
 
 === Feature Extraction ===
 * [[Feature_Extraction|'''Extract SIFT Correspondences''']]: Identify a set of corresponding features in two images and export them as PointRoi.  This plugin uses the [http://en.wikipedia.org/wiki/Scale-invariant_feature_transform Scale Invariant Feature Transform] (SIFT) for feature matching.
