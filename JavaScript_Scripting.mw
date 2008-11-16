@@ -14,6 +14,44 @@ You can specify further imports by:
  // Import a single class instead
  importClass(Packages.java.io.File)
 
+=== Declaring variables ===
+
+There are two ways:
+<ul>
+<li>Direct: the variable is globally visible (dangerous! Leads to nasty bugs.)</li>
+<li>With a <i>var</i> declaration: the variable is local, visible only within the innermost code block.</li>
+</ul>
+Examples:
+<source lang="javascript">
+// global variable 'imp'
+imp = IJ.getImage();
+
+// local variable 'i', visible within the loop only:
+for (var i = 0; i < 10; i++ ) {
+  IJ.log("i is " + i);
+}
+</source>
+
+Mixing global and local variables in a sensible way:
+<source lang="javascript">
+// global variables 'base_url' and 'names'
+// and local variable 'imp', the latter visible within the loop only:
+
+base_url = "http://rsb.info.nih.gov/ij/images/";
+
+names = ["blobs.gif", "boats.gif", "bridge.gif"];
+
+for (var i = 0; i< names.length; i++) {
+  var imp = IJ.openImage( base_url + names[i] );
+  // process image
+  // ...
+  imp.show();
+}
+
+// ERROR: variable 'imp' is not visible outside the loop
+// IJ.log("The last image opened was: " + imp);
+</source>
+
 === Creating import namespaces ===
 
   var awt_bindings = new JavaImporter(Packages.java.awt.Frame, Packages.java.awt.Button);
