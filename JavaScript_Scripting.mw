@@ -333,6 +333,22 @@ To print the fields and methods of an instance of ImagePlus (i.e. an image that 
 
 ... which prints all method names such as getStatistics isHyperStack etc. and fields like width and height (because there are public 'get' methods for it such as getWidth() and getHeight() .)
 
+
+=== Creating a script for ImageJ ===
+
+Save your javascript script in a text file:
+<ol>
+<li> with extension .js</li>
+<li> and with an underscore '_' in its name: my_first_script.js</li>
+</ol>
+...and just drop it in ImageJ's plugins folder or a subfolder.
+
+On startup, the script will appear in the corresponding menu.
+
+If you add the script after ImageJ was started, just call "Help - Update menus" and it will be picked up.
+
+You can continue modifying and saving the script file. Every time you run it from the menu, it will be read from the file system.
+
 == Interfaces and anonymous classes ==
 
 To create an ImageListener without declaring a new class that implements such java interface, simply use a function that will be mapped to all its methods (as long as they have the same signature, which they do in this case):
