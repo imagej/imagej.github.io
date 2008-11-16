@@ -167,6 +167,8 @@ var imp = createImage(400, 400, "RGB");
 imp.show();
 </source>
 
+For a complex example see the example script [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Multithreaded_Image_Processing_in_Javascript.js;hb=HEAD Multithreaded Image Processing in Javascript], which, beyond parallelization, illustrates how to pass functions as arguments to other functions, and how to invoke them with variable number of arguments.
+
 === Creating import namespaces ===
 <source lang="javascript">
 var awt_bindings = new JavaImporter(Packages.java.awt.Frame, Packages.java.awt.Button);
