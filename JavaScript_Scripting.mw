@@ -14,7 +14,7 @@ You can specify further imports by:
  // Import a single class instead
  importClass(Packages.java.io.File)
 
-=== Declaring variables ===
+=== Variables ===
 
 There are two ways:
 <ul>
@@ -53,7 +53,7 @@ for (var i = 0; i< names.length; i++) {
 // IJ.log("The last image opened was: " + imp);
 </source>
 
-=== Creating and manipulating arrays ===
+=== Arrays ===
 There are both Javascript arrays and native java arrays.
 ==== Javascript arrays ====
 There are many ways to create a Javascript array. Here are a few:
@@ -115,6 +115,57 @@ for (var i = 0; i < pixels.length; i++) {
 }
 </source>
 Above, beware of all problems derived from manipulating signed byte[] arrays, whose values should be made unsigned first, modified, then unsigned back into the array.
+
+=== Functions ===
+Simple example:
+<source lang="javascript">
+function invertImage(imp) {
+  var ip = imp.getProcessor();
+  ip.invert();
+}
+
+// Obtain the current image:
+var imp = IJ.getImage();
+
+// Invoke our function
+invertImage(imp);
+
+// Update screen:
+imp.updateAndDraw();
+</source>
+
+The number of arguments you invoke an image with is flexible. All arguments with which a function is invoked are collected in a variable named <i>arguments</i>.
+
+Each function is an object, and has a variable <i>this</i> which provides access to its internal fields, such as <i>name</i>:
+
+For example:
+
+<source lang="javascript">
+function createImage(width, height) {
+  IJ.log( "Function name: " + this.name);
+  IJ.log( "Number of arguments: " + arguments.length);
+  
+  // Default image type:
+  var type = "8-bit";
+  
+  // Check if an extra argument for the image type was provided:
+  if (arguments.length > 2) {
+    // Check that the extra arg makes any sense:
+    if ("RGB" == arguments[2]) {
+      type = "RGB";
+    } else {
+      IJ.log("Don't know how to use " + arguments[2]);
+      return null;
+    }
+  } 
+
+  var imp = IJ.createImage("New image", type, width, height, 1);
+  return imp; 
+}
+
+var imp = createImage(400, 400, "RGB");
+imp.show();
+</source>
 
 === Creating import namespaces ===
 <source lang="javascript">
