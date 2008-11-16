@@ -16,6 +16,7 @@ The hierarchy of the Plugins Menu is show here, with a few words of explanation 
 * '''Grid''': overlays a grid of cells on an image, non-destructively, as a visual aid for measurements.
 * '''Find differences''':
 * '''Delaunay Voronoi''':
+* '''Dynamic ROI Profiler''': dynamically updates a profile plot for an image with a line, freeline, polyline or a rectangular ROI, as the ROI is moved across the image. Written in [[Clojure Scripting|Clojure]].
 * '''Measure RGB''': applies the measurement command to each color channel separately, and also to the result of a weighted merging of red, green and blue.
 * '''Plot Dots''':
 * '''VIB Protocol''': Visual Insect Brain protocol for segmentation and annotation of 3D structures. See [http://www.neurofly.de/ main VIB web page.]
