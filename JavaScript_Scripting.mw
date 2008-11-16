@@ -50,30 +50,51 @@ To print the list of methods it has, with their return types and argument types:
 == ImageJ interaction ==
 
 === Opening and creating ImageJ images ===
+<source lang="javascript">
+imp = new Opener().openImage("/path/to/image.jpg");
+// do some processing
+// ...
+imp.show();
+</source>
 
-  imp = new Opener().openImage("/path/to/image.jpg");
-  // do some processing
-  // ...
-  imp.show();
+Or easier:
+<source lang="javascript">
+imp = IJ.openImage("/path/to/image.jpg");
+imp.show();
+</source>
 
-  // from scratch:
-  width = 512
-  height = 512
-  pixels = new java.lang.reflect.Array.newInstance(java.lang.Byte.TYPE, width * height);
-  // process the pixels
-  // ...
-  channel = new java.lang.reflect.Array.newInstance(java.lang.Byte.TYPE, 256);
-  for (i=0; i<channel.length; i++) channel[i] = Integer(i).byteValue();
-  cm = new LUT(channel, channel, channel);
-  imp = new ImagePlus("the title", new ByteProcessor(width, height, pixels, cm));
-  imp.show();
+Also URLs (in this case, we call directly <i>show()</i>, not keeping the returned image pointer into any variable):
+<source lang="javascript">
+IJ.openImage("http://rsb.info.nih.gov/ij/images/blobs.gif").show();
+</source>
 
-  // a bit less from scratch
-  imp = ImagePlus("the title", new ByteProcessor(512, 512));
-  pixels = imp.getProcessor().getPixels();
-  // do some processing ...
-  // ...
-  imp.show();
+Create an image from scratch, including LUT:
+<source lang="javascript">
+// From scratch:
+width = 512
+height = 512
+pixels = new java.lang.reflect.Array.newInstance(java.lang.Byte.TYPE, width * height);
+// process the pixels
+// ...
+// Create LUT:
+channel = new java.lang.reflect.Array.newInstance(java.lang.Byte.TYPE, 256);
+for (i=0; i<channel.length; i++)
+    channel[i] = Integer(i).byteValue();
+cm = new LUT(channel, channel, channel);
+
+// Create the image as 8-bit with the LUT we just created:
+imp = new ImagePlus("the title", new ByteProcessor(width, height, pixels, cm));
+imp.show();
+</source>
+
+A more convenient way to create images, with a default grayscale LUT:
+<source lang="javascript">
+imp = ImagePlus("the title", new ByteProcessor(512, 512));
+pixels = imp.getProcessor().getPixels();
+// do some processing ...
+// ...
+imp.show();
+</source>
 
 === Running ImageJ commands ===
 
