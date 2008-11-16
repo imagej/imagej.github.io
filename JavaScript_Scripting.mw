@@ -169,6 +169,41 @@ imp.show();
 
 For a complex example see the example script [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Multithreaded_Image_Processing_in_Javascript.js;hb=HEAD Multithreaded Image Processing in Javascript], which, beyond parallelization, illustrates how to pass functions as arguments to other functions, and how to invoke them with variable number of arguments.
 
+==== Functions as Objects ====
+
+Any number of variables may be created on the fly on the body of a function, on its own <i>this</i> self reference pointer.
+
+To create an object in Javascript, just declare a function first that stores the object's data:
+<source lang="javascript">
+// Use uppercase, by convention
+
+function Data(image, annotation) {
+    this.image = image;
+    this.annotation = annotation;
+}
+</source>
+Then just create it:
+<source lang="javascript">
+var data = new Data(IJ.getImage(), "The current image");
+
+IJ.log("data contains: " + data.image + "\n with annotation: " + data.annotation);
+</source>
+
+To add methods to manipulate the new Data object, create a function that takes the object as an argument:
+<source lang="javascript">
+function annotate(data) {
+    var gd = GenericDialog("Annotate");
+    gd.addStringField("New annotation:", data.annotation);
+    gd.showDialog();
+    if (gd.wasCanceled()) return;
+    // assign new annotation:
+    data.annotation = gd.getNextString();
+}
+
+// Invoke on the existing Data object:
+annotate(data);
+</source>
+
 === Creating import namespaces ===
 <source lang="javascript">
 var awt_bindings = new JavaImporter(Packages.java.awt.Frame, Packages.java.awt.Button);
