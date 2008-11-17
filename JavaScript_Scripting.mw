@@ -115,7 +115,7 @@ for (var i = 0; i < pixels.length; i++) {
   pixels[i] -= 25;
 }
 </source>
-Above, beware of all problems derived from manipulating signed byte[] arrays, whose values should be made unsigned first, modified, then unsigned back into the array.
+Above, beware of all problems derived from manipulating signed byte[] arrays, whose values should be made unsigned first, modified, then signed back into the array.
 
 === Functions ===
 Simple example:
