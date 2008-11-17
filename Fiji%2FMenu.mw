@@ -154,6 +154,11 @@ See also [[Scripting Help]] and the [[Scripting_comparisons]].
 * '''Simple Neurite Tracer''': A plugin for semi-automated tracing of neurons in a 3D image stack [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/ Further documentation]
 * '''[[Level Sets]]''': Active contours implementation using Level Sets and Fast Marching methods.
 
+=== Skeleton ===
+
+* '''[[AnalyzeSkeleton]]''': 2D/3D skeleton images analysis.
+* '''[[Skeletonize3D]]''': 2D/3D skeletonization.
+
 === Stacks ===
 
 <i>If we keep this option, I think it should be restricted to plugins that operate a stack but which don't care about the content, e.g. those for cropping or reslicing.  (At least there needs to be some distinction since practically every plugin operates on stacks.)</i>
