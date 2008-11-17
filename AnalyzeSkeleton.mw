@@ -1,0 +1,31 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = AnalyzeSkeleton
+| author                 = [http://arantxa.ii.uam.es/~iarganda/index_EN.html Ignacio Arganda-Carreras]
+| filename               = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=:plugin:analysis:analyzeskeleton:analyzeskeleton_.jar AnalyzeSkeleton_.jar] 
+| source                 = Included in the jar
+| released               = November 14th, 2008
+| latest version         = November 14th, 2008
+| status                 = active
+| category               = [[:Category:Skeleton]]
+| website                = [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start AnalyzeSkeleton at ImageJ wiki]
+}}
+
+Analysis of 2D and 3D skeleton images. 
+
+{|
+|style="vertical-align:top" |[[Image:Skeleton_analysis_example.png|thumb|Example of AnalyzeSkeleton performance]]
+|}
+
+== General Description ==
+This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions and branches and measures their average length. The tags are shown in a new window displaying every tag in a different color. See [[Skeletonize3D]] for an example of how to produce skeleton images.
+
+== License ==
+This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  
+
+----
+
+[[Category:Plugins]]
+[[Category:Skeleton]]
