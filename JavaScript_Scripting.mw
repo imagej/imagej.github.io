@@ -410,6 +410,8 @@ var ip2     = map( Math.pow, source.getProcessor(), 2 );
 var ip3     = map( Math.pow, source.getProcessor(), 3 );
 </source>
 
+Above: <b>beware</b> that parallelizing a trivial function like Math.sqrt will likely result in a <b>slower</b> execution, because of multithreading overheads and the extreme contention in accessing the same pixel array from multiple threads. Perhaps you want to have <b>two versions</b> of map: the simple and the parallel one, and use the latter for complex, heavy functions.
+
 For further ease, we could create a <i>show</i> function that avoids further repetitions:
 
 <source lang="javascript">
