@@ -430,6 +430,22 @@ mapAndShow( IJ.getImage(), Math.sqrt);
 mapAndShow( IJ.getImage(), Math.pow, 3);
 </source>
 
+<b>Note</b>
+
+All the above are examples to give you an idea of what is possible with Javascript and ImageJ.
+If you are interested on applying mathematical functions to images, you may be better off using internal ImageJ commands, as listed in the menu "Process - Math":
+
+<source lang="javascript">
+
+var imp = IJ.getImage();
+var imp2 = new ImagePlus("copy of " + imp.title, imp.getProcessor().duplicate().convertToFloat());
+
+// Set each pixel to the square of its value:
+IJ.run( imp2, "Square", "");
+
+imp2.show();
+</source>
+
 == ImageJ interaction ==
 
 === Opening and creating ImageJ images ===
