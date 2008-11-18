@@ -242,6 +242,192 @@ m = ob.getClass().getMethods();
 for (var i=0; i<m.length; i++) IJ.log(m[i]);
 </source>
 
+=== Math ===
+All math functions available:
+<source lang="javascript">
+Math.abs(a)     // the absolute value of a
+Math.acos(a)    // arc cosine of a
+Math.asin(a)    // arc sine of a
+Math.atan(a)    // arc tangent of a
+Math.atan2(a,b) // arc tangent of a/b
+Math.ceil(a)    // integer closest to a and not less than a
+Math.cos(a)     // cosine of a
+Math.exp(a)     // exponent of a
+Math.floor(a)   // integer closest to and not greater than a
+Math.log(a)     // log of a base e
+Math.max(a,b)   // the maximum of a and b
+Math.min(a,b)   // the minimum of a and b
+Math.pow(a,b)   // a to the power b
+Math.random()   // pseudorandom number in the range 0 to 1
+Math.round(a)   // integer closest to a 
+Math.sin(a)     // sine of a
+Math.sqrt(a)    // square root of a
+Math.tan(a)     // tangent of a
+</source>
+Built-in constants:
+<source lang="javascript">
+Math.E
+Math.PI
+</source>
+
+Trivial example:
+<source lang="javascript">
+var root = Math.sqrt(12);
+IJ.log("The root of 12 is " + root);
+</source>
+
+=== Functional programming ===
+
+Supose you want to create a new image with the square values of the pixels in another image.
+
+First, we get a <i>source</i> image (such as the currently active image):
+
+<source lang="javascript">
+var source = IJ.getImage(); // the current image (an ImagePlus)
+</source>
+
+Typically, you would then loop through all pixels and apply the result of their square to the other image:
+
+<source lang="javascript">
+// Return a new ImageProcessor containing the square of each pixel value in ImageProcessor ip
+function square(ip) {
+  var ip2 = ip.duplicate().convertToFloat();
+  var pix = ip.getPixels();
+
+  for (var i = 0; i < pix.length; i++) {
+    pix[i] = Math.pow(pix[i], 2);
+  }
+
+  return ip2;
+}
+
+var ip2 = square( source.getProcessor() );
+
+// Show the result:
+new ImagePlus("square of " + source.title, ip2).show();
+</source>
+
+But imagine now you want to get an image with the square root instead of the square, or the logarithm. Isn't that the same?
+
+We would have to write similar functions named <i>sqrt</i> and <i>pow3</i>. And so on.
+
+Instead, we should stop and think: there is a common pattern. All we want to do is to apply a function to each pixel in one image, and set the result into the same pixel in another image. In functional programming this pattern is called a <i>map</i> operation. Since Javascript lets us pass functions as arguments, we can define our own <i>map</i> function:
+
+<source lang="javascript">
+function map(fn, ip) {
+  var ip2 = ip.duplicate().convertToFloat();
+  var pix = ip2.getPixels();
+
+  for (var i = 0; i < pix.length; i++) {
+    pix[i] = fn(pix[i]);
+  }
+
+  return ip2;
+}
+</source>
+
+Now, equipped with our <i>map</i> function, we can apply any mathematical operation we want:
+<source lang="javascript">
+var ip_sqrt = map( Math.sqrt, source.getProcessor() );
+var ip_log  = map( Math.log,  source.getProcessor() );
+...
+</source>
+
+But wait! We didn't pass any extra argument. How can we do a generic function for <i>pow</i> so we can apply a power of 2, or 3, etc?
+
+We can rewrite our <i>map</i> function like this:
+<source lang="javascript">
+function map(fn, ip) {
+  var ip2 = ip.duplicate().convertToFloat();
+  var pix = ip2.getPixels();
+
+  for (var i = 0; i < pix.length; i++) {
+    pix[i] = fn(pix[i], arguments[2]);
+  }
+  
+  return ip2;
+}
+</source>
+... where <i>arguments[2]</i> is the argument, if any, present beyond any declared arguments. This works because in javascript, functions can accept a variable number of arguments:
+<source lang="javascript">
+var ip2 = map( Math.pow, source.getProcessor(), 2 );
+var ip3 = map( Math.pow, source.getProcessor(), 3 );
+</source>
+
+Our second version of the <i>map</i> function, though, is a bit perverted: in standard functional programming techniques, the function given as arguments would be applied to each element at index <i>i</i> of every list; i.e. the function would receive as many arguments as lists we give to the <i>map</i>. But we don't need that.
+
+So what's the big deal? We have abstracted away a common pattern, looping, but furthermore, we have reduced the complexity of our program. So now, for example, applying an optimization to the <i>map</i> function will improve <i>all</i> the places in our code that use it!
+
+(The same would be true for adding a debugging message, and what not. Anything you want).
+
+For example, since the processing of each pixel is independent of the others, we could parallelize the processing!
+
+<source lang="javascript">
+importClass(Packages.java.util.concurrent.atomic.AtomicInteger);
+
+function map(fn, ip) {
+  var ip2 = ip.duplicate().convertToFloat();
+  var pix = ip2.getPixels();
+
+  var n_threads = Runtime.getRuntime().availableProcessors();
+  var threads = new Array();
+
+  var ai = new AtomicInteger(0);
+  var width = ip.getWidth();
+  var height = ip.getHeight();
+
+  var arg = arguments[2];
+
+  for (var t = 0; t < n_threads; t++) {
+    threads[t] = new Thread( function() {
+        // Process one line at a time:
+        for (var line = ai.getAndIncrement(); line < height; line = ai.getAndIncrement()) {
+           var offset = line * width;
+           for (var i = 0; i < width; i++) {
+               // invoke function on each pixel, with the optional extra argument
+               pix[offset + i] = fn(pix[offset + i], arg);
+           }
+        }
+    });
+    threads[t].start();
+  }
+
+  // Wait until all threads finish:
+  for (var t = 0; t < n_threads; t++) {
+    threads[t].join();
+  }
+  
+  return ip2;
+}
+</source>
+
+We would call the now multithreaded <i>map</i> function just like before:
+
+<source lang="javascript">
+var ip_sqrt = map( Math.sqrt, source.getProcessor() );
+var ip_log  = map( Math.log, source.getProcessor() );
+var ip2     = map( Math.pow, source.getProcessor(), 2 );
+var ip3     = map( Math.pow, source.getProcessor(), 3 );
+</source>
+
+For further ease, we could create a <i>show</i> function that avoids further repetitions:
+
+<source lang="javascript">
+function mapAndShow(imp, fn) {
+  var ip1 = imp.getProcessor();
+  // Map the function to each pixel, into a new ImageProcessor:
+  var ip2 = map(fn, ip1, arguments[2]); // pass any extra argument as well
+  // Fix LUT range for best visualization:
+  ip2.findMinAndMax();
+  // Open image in a new window:
+  new ImagePlus(fn.name + " of " + imp.title, ip2).show();
+}
+
+mapAndShow( IJ.getImage(), Math.sqrt);
+
+mapAndShow( IJ.getImage(), Math.pow, 3);
+</source>
+
 == ImageJ interaction ==
 
 === Opening and creating ImageJ images ===
