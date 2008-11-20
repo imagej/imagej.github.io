@@ -50,3 +50,24 @@ There is an [http://www.mcdb.ucla.edu/research/hartenstein/acardona/imagej_progr
 See [[Scripting Help]] for details on how to develop, test and run ImageJ plugins written in the supported scripting languages.
 
 There are also [[Scripting comparisons]].
+
+== Adding submodules ==
+
+Some projects have their own source code repositories.  In this case, we do not copy the files into ''src-plugins/'', but use [[Git_submodule_tutorial|submodules]].
+
+If the project uses a different source code management tool than Git, no problem, just mirror it.
+
+Then add the submodule. Example:
+
+ # clone the VIB repository
+ git clone ssh://contrib@pacific.mpi-cbg.de/srv/git/VIB.git
+ # first time, commit-submodule need to know the target, too ("jars/jgit.jar" in this case)
+ ./fiji scripts/commit-submodule.py VIB plugins/VIB_.jar
+
+In the case of ''VIB'', it works as easily as that, because it has its own [[Fake|Fakefile]].  Submodules do not need to have that, you can provide one in ''staged-plugins/'', and they do not need to be installed in ''plugins/'', either:
+
+ # clone the "egit" repository, but name it "jgit"
+ git clone ssh://contrib@pacific.mpi-cbg.de/srv/git/egit jgit
+ <create a staged-plugins/jgit.Fakefile>
+ # first time, commit-submodule need to know the target, too ("jars/jgit.jar" in this case)
+ ./fiji scripts/commit-submodule.py jgit jars/jgit.jar
