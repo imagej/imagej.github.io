@@ -1,0 +1,19 @@
+ImageJ is easy to use, but sometimes you wish for some function that is actually implemented, yet you do not know how to trigger.  This page lists a few of those tricks.
+
+= Show the memory consumption =
+
+Just click on the status bar, and you will see how much memory is used, and how much memory is available.
+
+= Execute external programs =
+
+The macro language allows executing programs, and capturing their output:
+
+ output = exec("dir /w");
+
+= Quickly see return values =
+
+You do not need to wrap calls into write() calls: if you just write something like
+
+ getDirectory("plugins");
+
+the return value will appear in your Log window when called.
