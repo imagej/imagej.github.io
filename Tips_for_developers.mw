@@ -1,0 +1,23 @@
+An unsorted list of hints that you might find useful:
+
+=== compile & execute a class ===
+
+You do not need to call ''javac'' yourself with a long classpath:
+
+$ ./fiji --javac YourClass.java
+
+and you can call its main() method just as easy:
+
+$ ./fiji YourClass.class argument1 argument2
+
+=== rapidly prototype a plugin ===
+
+It is often easier to start out with a Jython, JRuby or BeanShell script, as you do not have to care about strict typing, exceptions or recompiling.  Just place your script (with the correct extension -- .py, .rb or .bsh) into the plugins/ folder and execute the script.  Fiji will always execute the current version of the script, so you can edit and run the script without restarting Fiji.
+
+Once you have working code, you can turn it into a proper plugin (this is easiest with BeanShell, as its syntax is closest to Java already), adding strict typing and exception handling as needed.
+
+=== find the .jar file containing a certain class ===
+
+Sometimes, the compiler complains about a class not having a certain method or interface, but you ''know'' it must contain it.  More often than not, that class exists in different versions in your classpath.  Find out with
+
+$ ./fiji scripts/find-jar-for-class.py the.class.youre.looking.For
