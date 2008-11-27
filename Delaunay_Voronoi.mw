@@ -33,7 +33,8 @@ The plugin shows this dialog when it is called:
 * In ''interactive'' mode, you can move the point selection, but the diagram is not drawn to the image; It is only overlayed.
 * When selecting ''make Delaunay ROI'', instead of drawing the diagram, the point selection is replaced by a line ROI resembling the Delaunay Triangulation (but for technical reasons, many lines will be in that selection ''twice'').
 * If you ask for the ''mean distance'', it will be output to the ''Results'' window.
-* Lastly, if the Particle Analyzer was run, you can ''infer the selection from the particles''.
+* After the Particle Analyzer was run, you can ''infer the selection from the particles''.
+* Lastly, you can ''export'' the lines of the Delaunay Triangulation ''into the Results window''.
 
 == Version history ==
 
@@ -42,5 +43,6 @@ The plugin shows this dialog when it is called:
 * 2006/08/20: Fix zooming of selection; have a dialog to chose parameters
 * 2007/05/31: Optionally get points from Particle Analyzer, and optionally show mean distance
 * 2007/07/20: Optionally generate a ROI instead of an overlay or drawing the lines
+* 2008/11/27: Optionally export the lines of the Delaunay Triangulation into the Results table
 
 [[Category:Plugins]]
