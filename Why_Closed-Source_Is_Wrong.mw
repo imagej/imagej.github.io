@@ -4,8 +4,6 @@ This page has a few war stories about having to fight with developing software w
 
 == Quicktime for Java ==
 
-''Ah, Apple at its best.''
-
 Quicktime for Java is a small component on top of the Quicktime SDK (software development kit).  In theory, it should make it easy to create movies in Quicktime format.  In practice, it is a hassle:
 
 * Quicktime is only supported on Windows and MacOSX.  Good bye, Linux users.
