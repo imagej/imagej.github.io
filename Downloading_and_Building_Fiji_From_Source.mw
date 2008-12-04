@@ -12,11 +12,12 @@ This should start downloading the base fiji repository and unpack it into a dire
 
 === Submodules ===
 
-This will not yet be complete tree that you can build, since the fiji repository has a number of submodules.  (For more on submodules, see the [[Git submodule tutorial]].)  If you have lots of disk space available, these submodules can be initialized with:
+This will not yet be complete tree that you can build, since the fiji repository has a number of submodules.  (For more on submodules, see the [[Git submodule tutorial]].)  These submodules must be initialized and updated with the following commands:
 
  git submodule init ImageJA TrakEM2 VIB micromanager1.1 mpicbg
+ git submodule update
 
-... but if you are short of disk space you may skip that step.  However, if you do not have Java 1.5 or newer installed, you need to initialize at least the java submodule for your platform by doing, depending on your system:
+The build system will attempt to use the system Java installation if it is available.  However, on some platforms this may not work (or you may not have a recent enough Java installation) so we recommend that you also initialize and update the appropriate Java submodule for your system.  To do this, run one of these commands:
 
  git submodule init java/linux          # For 32-bit Linux systems
  git submodule init java/linux-amd64    # For 64-bit Linux systems
@@ -24,7 +25,7 @@ This will not yet be complete tree that you can build, since the fiji repository
  git submodule init java/win32          # For 32-bit Windows systems
  git submodule init java/win64          # For 64-bit Windows systems
 
-You can then update the submodules with:
+Then update the submodules again with:
 
  git submodule update
 
