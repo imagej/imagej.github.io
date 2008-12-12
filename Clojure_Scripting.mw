@@ -492,4 +492,118 @@ So now any changes to the original <i>pixels</i> array will not affect the new s
 
 <i>Thanks to Chouser and wwmorgan for examples on #clojure at irc.freenode.net</i>
 
+<h3>Generating java classes in .class files from clojure code</h3>
+
+Using ahead of time (AOT) compilation with [http://clojure.org/compilation  gen-class], any clojure code can be compiled to a java class. Such class can then be used from java code, or from any scripting language like [[Jython Scripting|jython]], [[JRuby Scripting|jruby]], [[Javascript Scripting|javascript]], and [[:Category:Scripting|any other]].
+
+One way to do so is to place a [http://clojure.org/compilation gen-class] declaration in a namespace declaration.
+
+Be aware: the <b>namespace</b> must match <b>the folder structure where the .clj file is and the file name of the .clj file</b>. For example, to generate a class named fj.tests.process.FloatProcessorPlus, you need a clojure file under fj/tests/process/FloatProcessorPlus.clj .
+
+To compile the clojure code to .class files, you need:
+<ol>
+<li>A <b>classes/</b> folder in the current directory where clojure.lang.Repl is run. This folder will receive the generated .class files.</li>
+<li>Add to your classpath the top-level folder, in the example the 'fj' folder, and also the folder containing the .clj file itself.</li>
+<li>Add to your classpath the classes/ folder as well.</li>
+<li>In a clojure.lang.Repl, use the <i>compile</i> function.</li>
+</ol>
+
+For example:
+ $ mkdir classes
+ $ java -cp .:../../ij.jar:../../jars/clojure.jar:./classes/:./fj/tests/process/ clojure.lang.Repl
+ user=> (compile 'fj.tests.process.FloatProcessorPlus)
+ fj.tests.process.FloatProcessorPlus
+ user=>
+
+The following clojure example contains a namespace declaration that includes some imports and also the gen-class.
+In the gen-class block, we define which class our code extends (in this case, ij.process.FloatProcessor), and which methods are to be created (with specific argument signatures and return object signature).
+
+Later, the compiler will assign a clojure function to each declared method, using the prefix string plus the method name to match a function.
+
+For example, with prefix "fp-" and method "fillValue", the compiler will look for the clojure function "fp-fillValue".
+
+Finally, a main method is not directly declared, but exists if a function named prefix + main ("fp-main" in the example) exists. We can use the main method to run the new class as an application.
+
+The example clojure code:
+
+<source lang="lisp">
+; Albert Cardona 20081203
+; Save this file as fj/tests/process/FloatProcessorPlus.clj
+
+; and compile it from a Repl or clojure script like:
+;
+; (compile 'fj.tests.process.FloatProcessorPlus)
+;
+; Be sure to set the classpath to point to the folder containing the above file, for example:
+; $ cd fiji/plugins/
+; $ mkdir -p tests/fj/tests/process
+; $ cd tests/fj/tests/process/
+; $ vim FloatProcessorPlus.clj
+; ...
+; $ cd ../../../
+; $ mkdir classes
+; $ java -cp ../../ij.jar:../../jars/clojure.jar:./classes/:.:./fj/tests/process/ clojure.lang.Repl
+; user=> (compile 'fj.tests.process.FloatProcessorPlus)
+; fj.tests.process.FloatProcessorPlus
+; user=>
+;
+; The compilation will place the proper .class files under the proper directory
+; structure in the ./classes/ folder.
+;
+; Then run like any other java class with a static public void main method:
+; $ java -cp .:../../ij.jar:../../jars/clojure.jar:./classes fj.tests.process.FloatProcessorPlus
+;
+
+(ns fj.tests.process.FloatProcessorPlus
+   (:import (ij ImagePlus)
+            (ij.process FloatProcessor)
+            (java.util Random))
+   (:gen-class
+    ; Could also use :implements
+    :extends ij.process.FloatProcessor
+    ; Specify methods to expose as public,
+    ; with specific parameter types and return type:
+    :methods [[fillMin [] void]
+              [fillMax [] void]
+              [fillValue [float] void]
+              [randomize [] void]]
+    ; Define a function prefix for the exposed methods: for example,
+    ; the fillMin public method is implemented by function fp-fillMin.
+    :prefix "fp-"))
+
+(defn fp-fillValue [this value]
+  "Set each pixel in the image to the given value."
+  (.setPixels this
+              (into-array Float/TYPE (replicate
+                            (* (.getWidth this) (.getHeight this))
+                            (float value)))))
+
+(defn fp-fillMin [this]
+  (.fillValue this Float/MIN_VALUE))
+
+(defn fp-fillMax [this]
+  (.fillValue this Float/MAX_VALUE))
+          
+; Declaring a function to be used as a java method, within a closure:
+(let [generator (Random. (System/currentTimeMillis))]
+  (defn fp-randomize [this]  
+    (.setPixels this (into-array Float/TYPE
+                            (map
+                              (fn [x] (.nextFloat generator))
+                              (range (* (.getWidth this) (.getHeight this))))))))
+
+    
+; This function is seen as the static public void main function of a java class:
+; (add a parameter, like [args], if you would like to access the command like args)
+(defn fp-main []
+  "Test the generated class" 
+  (let [imp (ImagePlus. "Test" (fj.tests.process.FloatProcessorPlus. 100 100))
+        ip (.getProcessor imp)] ; Testing access on "ImageProcessor" type
+    (.show imp)
+    ; Test some methods of our extended FloatProcessor class:
+    (.randomize ip)
+    (.findMinAndMax ip)
+    (.updateAndDraw imp)))
+</source>
+
 [[Category:Scripting]]
