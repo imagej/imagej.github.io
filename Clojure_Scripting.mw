@@ -496,7 +496,7 @@ So now any changes to the original <i>pixels</i> array will not affect the new s
 
 Using ahead of time (AOT) compilation with [http://clojure.org/compilation  gen-class], any clojure code can be compiled to a java class. Such class can then be used from java code, or from any scripting language like [[Jython Scripting|jython]], [[JRuby Scripting|jruby]], [[Javascript Scripting|javascript]], and [[:Category:Scripting|any other]].
 
-One way to do so is to place a [http://clojure.org/compilation gen-class] declaration in a namespace declaration.
+One way to do so is to place a [http://clojure.org/compilation gen-class] declaration in a namespace block.
 
 Be aware: the <b>namespace</b> must match <b>the folder structure where the .clj file is and the file name of the .clj file</b>. For example, to generate a class named fj.tests.process.FloatProcessorPlus, you need a clojure file under fj/tests/process/FloatProcessorPlus.clj .
 
@@ -594,7 +594,7 @@ The example clojure code:
 
     
 ; This function is seen as the static public void main function of a java class:
-; (add a parameter, like [args], if you would like to access the command like args)
+; (add a parameter, like [args], if you would like to access the command-line args)
 (defn fp-main []
   "Test the generated class" 
   (let [imp (ImagePlus. "Test" (fj.tests.process.FloatProcessorPlus. 100 100))
