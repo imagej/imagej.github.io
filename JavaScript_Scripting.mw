@@ -495,6 +495,70 @@ pixels = imp.getProcessor().getPixels();
 imp.show();
 </source>
 
+
+=== Using GenericDialog ===
+This example shows how to get 2 of the open images and a checkbox using GenericDialog.
+
+<source lang="javascript">
+// get 2 images and a checkbox
+var createWindow = true;  //default checkbox value
+var imp = null; // default chosen images
+
+var data = getTwoImages( createWindow ); // call the function
+
+if (data) {
+  // there was data returned
+  imp = [data[0], data[1]];
+  createWindow = data[2];
+
+  // show the choices in the log window
+  IJ.log(imp[0]); // first image
+  IJ.log(imp[1]); // second image
+  IJ.log(createWindow); // the status of the checkbox
+  // the rest of your code goes here
+}
+
+
+
+function getTwoImages( createWindow ) {
+  var wList = WindowManager.getIDList();
+
+  if (null == wList || wList.length<2){ //there are less than 2 images or no images
+    IJ.showMessage("Error", "There must be at least two windows open");
+    return;
+  }
+ 
+  //get all the image titles so they can be shown in the dialog 
+  var titles = new Array();
+
+  for (var i=0, k=0; i<wList.length; i++) {
+    var limp = WindowManager.getImage(wList[i]);
+    if (limp)
+      titles[k++] = limp.getTitle();
+  }
+
+  //construct the dialog
+  gd = new GenericDialog("Options");
+  gd.addMessage("Binary Reconstruction v 2");
+  gd.addChoice("mask i1:", titles, titles[0]);
+  gd.addChoice("seed i2:", titles, titles[1]);
+  gd.addCheckbox("Create New Window", createWindow);
+  gd.showDialog(); //show it
+
+  if (gd.wasCanceled())
+    return;
+
+  var i1Index = gd.getNextChoiceIndex();
+  var i2Index = gd.getNextChoiceIndex();
+  var create_window = gd.getNextBoolean();
+
+  return [WindowManager.getImage(wList[i1Index]),
+          WindowManager.getImage(wList[i2Index]),
+          create_window];
+}
+</source>
+
+
 === Running ImageJ commands ===
 
 To launch a command:
