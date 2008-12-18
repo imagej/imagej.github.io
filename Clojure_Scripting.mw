@@ -605,4 +605,91 @@ The example clojure code:
     (.updateAndDraw imp)))
 </source>
 
+<h3>References, concurrency, transactions and synchronization</h3>
+
+Clojure supports thread concurrency without explicit locks. Compared to java code, this is a gigantic step forward: locks, and particularly multiple locks, are very hard to get right and very, very hard to debug properly (but see [http://albert.rierol.net/java_tricks.html#How%20to%20debug%20a%20multithreaded%20java%20program debugging multithreaded java programs]).
+
+The most basic building blocks are [http://clojure.org/refs<i>references</i>], which are created with the <i>ref</i> function, and modified within transaction blocks (defined by <i>dosync</i>) using <i>commute</i> or <i>alter</i> functions (and [http://clojure.org/refs others]).
+
+To read out the value of a reference, call <i>deref</i> or just <i>@</i> on it:
+<source lang="lisp">
+; Create a new reference named 'id' initializated to value zero:
+(def id (ref 0))
+-> 0
+
+; Read out the value of the reference:
+@id
+-> 0
+
+; Increase the id by one, using built-in function "inc":
+(dosync (alter id inc))
+-> 1
+
+; Set the value to 20 (ignoring the current value, given in cv:
+(dosync (alter id (fn [cv] 20)))
+-> 20
+</source>
+
+References are not type specific: any object may be assigned to the same reference. Whether that makes any sense is up to you.
+
+The <i>commute</i> and <i>alter</i> functions replace the value of the reference with that of the return value of a function given as argument. The function given as argument to <i>commute</i> and <i>alter</i> is given, in turn, the value of the reference (i.e. the dereferenced reference) and any other further arguments. The difference between <i>commute</i> and <i>alter</i> is that <i>commute</i> returns the dereferenced reference after the transaction is done, which may be different already (because of concurrent modifications) than the value that was set to the reference within the transaction; whereas <i>alter</i> returns the value that it had while the transaction was being done (i.e. the value returned by the function, the same that gets set as the value of the reference).
+
+In the following example, a unique id counter is incremented continuously by 1, and all ids are collected, unordered, into a vector. Both the next available id and the vector of all accessed ids are stored in references.
+
+Keep in mind the vector of ids assigned to the reference named 'ls' is always immutable: what we assign to the reference 'ls' below is a new vector, resulting from adding a new id to the old vector of ids. This immutability enables other threads to read the vector without locks.
+The assignment is done in a transaction, so no matter how many concurrent threads try to do so, the resulting vector will have all the ids.
+
+<source lang="lisp">
+; Albert Cardona 2008-12-18
+; Example clojure program using references and concurrent threads
+; that alter the value of the references.
+;
+; 10 threads running concurrently
+; each thread runs 100000 iterations
+; in each iteration the thread increments a counter 'id'
+;   and adds it to a list 'ls' of ids.
+; At the end, we print the current value of 'id'
+; and the length of the list 'ls' of ids.
+;
+; No locks!
+
+(ns fj.test.concurrent
+  (:import (java.util.concurrent Executors TimeUnit)))
+
+
+(let [ls (ref []) ; A reference to a vector storing a list if ids.
+      id (ref 0)  ; The next unique id available.
+      n_threads 10
+      n_iterations 100000
+      exec (Executors/newFixedThreadPool n_threads)]
+  (println "Running" n_threads "threads x" n_iterations "iterations/thread...")
+  (dotimes [i n_threads]
+    (.submit exec (fn []
+                    (dotimes [t n_iterations]
+                      ; Obtain the next unique id:
+                      ; (Note we use "alter" and not "commute", because alter
+                      ; returns the result of the applied function, whereas
+                      ; commute would return the dereferenced ref, which could
+                      ; have already changed.  Thanks to AWizzards for spotting
+                      ; this.)
+                      (let [next-id (dosync (alter id inc))]
+                        ; Create a new vector made of
+                        ;  all previous ids and next-id,
+                        ;  and set it as the current list of ids:
+                        (dosync (commute ls conj next-id)))))
+                   nil))
+  (.shutdown exec)
+  (.awaitTermination exec 10 TimeUnit/MINUTES)
+  (println "... done!")
+  ; If there was any clash in setting the reference to the list of ids,
+  ; the count would be less than 1000000:
+  (println "Number of listed ids:" (count @ls))
+  ; If any id was used twice, the next available id would be less than 1000000:
+  (println "Next available id:" @id)
+  ; Check that there aren't any repeated ids:
+  (println "Number of repeated ids:"
+           (- (count @ls)
+              (count (set @ls))))) ; Make a hash set (with unique entries) from the list of ids
+</source>
+
 [[Category:Scripting]]
