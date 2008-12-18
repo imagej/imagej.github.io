@@ -636,7 +636,8 @@ The <i>commute</i> and <i>alter</i> functions replace the value of the reference
 
 In the following example, a unique id counter is incremented continuously by 1, and all ids are collected, unordered, into a vector. Both the next available id and the vector of all accessed ids are stored in references.
 
-Keep in mind the vector of ids assigned to the reference named 'ls' is always immutable: what we assign to the reference 'ls' below is a new vector, resulting from adding a new id to the old vector of ids. This immutability enables other threads to read the vector without locks.
+Keep in mind the vector of ids assigned to the reference named 'ls' is always immutable: what we assign to the reference 'ls' below is a new vector, resulting from adding a new id to the old vector of ids. This immutability enables other threads to read the vector without locks. For performance, keep in mind that vectors, like many other clojure data structures, have structural sharing, so the new vector is not a duplication--even if it behaves like one.
+
 The assignment is done in a transaction, so no matter how many concurrent threads try to do so, the resulting vector will have all the ids.
 
 <source lang="lisp">
