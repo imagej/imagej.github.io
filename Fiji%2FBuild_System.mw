@@ -1,8 +1,8 @@
 == Introduction ==
 
-Fake is Fiji's build system (''Fiji's mAKE'').  Its goal is to make it extremely simple to define the tasks that are needed for Fiji.
+The goal of Fiji's build system is to make it extremely simple to define the tasks that are needed for Fiji.
 
-Fake finds its ''targets'' in a file called ''Fakefile''.  An example ''Fakefile'' looks like this:
+The system finds its ''targets'' in a file called ''Fakefile'' (''Fiji's mAKE FILE'').  The contents of that file look like this:
 
  all <- example.jar another-example.jar
  
@@ -18,25 +18,25 @@ The ''Fakefile'' contains ''rules'' for ''targets'' that are defined in the foll
 
  target <- prerequisites
 
-If a prerequisite is also the target of another rule, Fake builds that target before building the current one.
+If a prerequisite is also the target of another rule, the program builds that target before building the current one.
 
-== Calling Fake ==
+== Calling Fiji's build system ==
 
-If you have a working Fiji launcher, you can call Fake like this:
+If you have a working Fiji launcher, you can call the build system like this:
 
- ./fiji --fake
+ ./fiji --build
 
-If your Fiji launcher does not work, but you have a working Java, call Fake like this:
+If your Fiji launcher does not work, but you have a working Java, call it like this:
 
  java -jar precompiled/fake.jar
 
-You can ask Fake to build only specific targets by passing them as parameters:
+You can ask the program to build only specific targets by passing them as parameters:
 
- ./fiji --fake ij.jar
+ ./fiji --build ij.jar
 
 Further, all variable definitions passed as parameters will override what is found in the Fakefile:
 
- ./fiji --fake debug=true fake.jar
+ ./fiji --build debug=true fake.jar
 
 == Target types ==
 
@@ -46,9 +46,9 @@ The following target types are available:
 :The first target in the ''Fakefile'' is always the default target. It lists all subtargets that are to be made by default.
 
 ;''.jar'' targets:
-:If the target name ends with ''.jar'', a .jar is made.  If the last prerequisite also ends in ''.jar'', Fake will copy that file instead of trying to compile ''.java'' files.
+:If the target name ends with ''.jar'', a .jar is made.  If the last prerequisite also ends in ''.jar'', the build system will copy that file instead of trying to compile ''.java'' files.
 
-:Fake is actually quite clever when it comes to putting the compiled classes into the ''.jar'' files; it figures out in which package the class lives, and uses the corresponding path.
+:The system is actually quite clever when it comes to putting the compiled classes into the ''.jar'' files; it figures out in which package the class lives, and uses the corresponding path.
 
 ;''.class'' targets:
 :Targets whose name end in ''.class'' compile a single ''.java'' file (the last prerequisite is used to define that), and copies the resulting ''.class'' file (and the other generated classes that are used by this class) to the given destination.
@@ -56,8 +56,8 @@ The following target types are available:
 ;''.cxx'' and '.c' targets:
 :If the last prerequisite ends in ''.cxx'' or ''.c'', the GNU C compiler is called to compile the prerequisites.
 
-;"SubFake" targets:
-:If the last prerequisite specifies a directory, Fake looks for a ''Fakefile'' or a ''Makefile'' there.  According to what was found, Fake or ''make'' is called, and the target is copied over to the given destination.
+;"SubBuild" targets:
+:If the last prerequisite specifies a directory, the build system looks for a ''Fakefile'' or a ''Makefile'' there.  According to what was found, Fiji's build system or ''make'' is called, and the target is copied over to the given destination.
 
 ;Special targets:
 :Some targets are predefined, but can be overridden in the ''Fakefile''.  These include ''clean'', ''show-vars'' and others.
