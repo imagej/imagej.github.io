@@ -176,7 +176,7 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
       ; Second loop: with "loop -- recur"
       (loop [i 0
              len (count pixels)]
-         (if (&lt; i len)
+         (if (< i len)
             (let [pix (aget pixels i)]
                 (println (str i ": " pix))
                 (recur (inc i)
