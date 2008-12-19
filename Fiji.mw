@@ -52,13 +52,7 @@ __NOTOC__
 '''Update: the Windows version sometimes failed to start due to memory issues.'''
 '''Update: the MacOSX version crashed on most Macs; the link below points to a fixed version.'''
 
-* {{Download|linux|tar.bz2|Linux}}
-* {{Download|linux64|tar.bz2|Linux (64-bit)}}
-* [http://pacific.mpi-cbg.de/downloads/snapshots/fiji-win32.zip Windows]
-* [http://pacific.mpi-cbg.de/downloads/snapshots/fiji-win64.zip Windows (64-bit)]
-* [http://pacific.mpi-cbg.de/downloads/snapshots/fiji-macosx.dmg MacOSX]. See the [[MacOSX tips]]
-* {{Download|all|tar.bz2|All platforms (includes all JREs)}}
-* {{Download|nojre|tar.bz2|All platforms (does not include JREs)}}
+{{DownloadsCurrent}}
 
 See the [[Downloads]] page for debian packages and others.
 
