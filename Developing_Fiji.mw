@@ -51,6 +51,8 @@ See [[Scripting Help]] for details on how to develop, test and run ImageJ plugin
 
 There are also [[Scripting comparisons]].
 
+See also the [[PlugIn Design Guidelines]].
+
 == Adding submodules ==
 
 Some projects have their own source code repositories.  In this case, we do not copy the files into ''src-plugins/'', but use [[Git_submodule_tutorial|submodules]].
