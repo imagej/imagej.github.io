@@ -40,7 +40,7 @@ public class Duplicate_and_Scale implements PlugIn {
 		String name = gd.getNextString();
 
 		// 4 - Execute!
-		Object[] result = init(imp, name, width, height);
+		Object[] result = exec(imp, name, width, height);
 
 		// 5 - If all went well, show the image:
 		if (null != result) {
