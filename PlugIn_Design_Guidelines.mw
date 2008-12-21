@@ -58,22 +58,35 @@ public class Duplicate_and_Scale implements PlugIn {
 }
 </source>
 
-To run the plugin from the menus, first call "Plugins - Compile and Run".
-Then, any time just call that menu item.
+<h4>Compiling the plugin</h4>
+Save the java code in a java file with the same name of the class. For the above it would be <i>Duplicate_and_Scale.java</i>.
+
+To compile the plugin, place it in fiji/plugins folder. Then you have two options:
+<ol>
+<li>Either call "Plugins - Compile and Run" from the menus</li>
+<li>... or compile it from a terminal with
+ ./fiji --javac plugins/Duplicate_and_Scale.java
+</li>
+</ol>
+
+To make the plugin appear in the PlugIns menu, restart Fiji or, better, just call "Help - Update Menus".
+
+<h4>Running the plugin</h4>
+To run the plugin, just call that menu item named "Duplicate and Scale".
 
 To run the plugin from a macro, do:
  IJ.run("Duplicate and Scale", "name=[scaled copy] width=500 height=700");
 
 To run the plugin from another java plugin, do:
 <source lang="java">
-		ImagePlus source = ...; // any image
+ImagePlus source = ...; // any image
 
-		Duplicate_and_Scale das = new Duplicate_and_Scale();
-		Object[] result = das.init(source, "Scaled Copy", 500, 700);
-		if (null != result) {
-			String name = (String) ob[0];
-			ImagePlus scaled = (ImagePlus) ob[1];
-		}
+Duplicate_and_Scale das = new Duplicate_and_Scale();
+Object[] result = das.init(source, "Scaled Copy", 500, 700);
+if (null != result) {
+	String name = (String) ob[0];
+	ImagePlus scaled = (ImagePlus) ob[1];
+}
 </source>
 
 To run the plugin from a javascript, do:
@@ -86,3 +99,11 @@ if (result) {
 	var imp = result[1];
 }
 </source>
+
+As a special case, since the above example plugin needs only one image, we can provide such image semidirectly with the new Thread-safe current image concept:
+<source lang="javascript">
+var source = ...; // any image
+IJ.run(source, "Duplicate and Scale", "name=[scaled copy] width=500 height=700");
+</source>
+Above, ImageJ's macro system provides the <i>source</i> image as the return value of the IJ.getImage() call within the plugin's <i>run</i> method.
+Then, the macro arguments are fed directly into the GenericDialog entries of the same name, and the rest of the <i>run</i> method calls the <i>init</i> method without ever showing the dialog.
