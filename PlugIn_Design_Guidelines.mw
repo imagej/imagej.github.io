@@ -81,12 +81,14 @@ To compile the plugin, place it in fiji/plugins folder. Then you have two option
 
 To make the plugin appear in the PlugIns menu, restart Fiji or, better, just call "Help - Update Menus".
 
-<h4>Running the plugin</h4>
+<h3>Running the plugin</h3>
 To run the plugin, just call that menu item named "Duplicate and Scale".
 
+<h4>From a macro</h4>
 To run the plugin from a macro, do:
  IJ.run("Duplicate and Scale", "name=[scaled copy] width=500 height=700");
 
+<h4>From a java plugin</h4>
 To run the plugin from another java plugin, do:
 <source lang="java">
 ImagePlus source = ...; // any image
@@ -99,6 +101,7 @@ if (null != result) {
 }
 </source>
 
+<h4>From javascript</h4>
 To run the plugin from a javascript, do:
 <source lang="javascript">
 var source = ...; // any image
