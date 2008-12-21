@@ -1,3 +1,4 @@
+<h3>Key concepts</h3>
 We favor a style of plugin design that enables execution of the plugin:
 <ol>
 <li>From the menus.</li>
@@ -8,6 +9,7 @@ The key point is to <b>separate the setup from the execution</b>. For the purpos
 
 A second key point is <b>never to show images</b> unless within the <i>run</i> method. There's nothing more annoying than a plugin that assumes there is no other plugin running, or that its invocation will happen always from the menus.
 
+<h3>Example java plugin</h3>
 For example, a plugin that duplicates and scales an image:
 <source lang="java">
 /* SAVE in a file named Duplicate_and_Scale.java under the plugins folder! */
@@ -68,7 +70,7 @@ public class Duplicate_and_Scale implements PlugIn {
 }
 </source>
 
-<h4>Compiling the plugin</h4>
+<h3>Compiling the plugin</h3>
 Save the java code in a java file with the same name of the class. For the above it would be <i>Duplicate_and_Scale.java</i>.
 
 To compile the plugin, place it in fiji/plugins folder. Then you have two options:
