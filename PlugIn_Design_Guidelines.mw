@@ -52,7 +52,7 @@ public class Duplicate_and_Scale implements PlugIn {
 	/** Execute the plugin functionality: duplicate and scale the given image.
 	 * @return an Object[] array with the name and the scaled ImagePlus.
 	 * Does NOT show the new, scaled image; just returns it. */
-	public Object[] init(ImagePlus imp, String new_name, int width, int height) {
+	public Object[] exec(ImagePlus imp, String new_name, int width, int height) {
 		// 0 - Check validity of parameters
 		if (null == imp) return null;
 		if (width <= 0 || height <= 0) return null;
@@ -92,7 +92,7 @@ To run the plugin from another java plugin, do:
 ImagePlus source = ...; // any image
 
 Duplicate_and_Scale das = new Duplicate_and_Scale();
-Object[] result = das.init(source, "Scaled Copy", 500, 700);
+Object[] result = das.exec(source, "Scaled Copy", 500, 700);
 if (null != result) {
 	String name = (String) ob[0];
 	ImagePlus scaled = (ImagePlus) ob[1];
@@ -103,7 +103,7 @@ To run the plugin from a javascript, do:
 <source lang="javascript">
 var source = ...; // any image
 var das = new Duplicate_and_Scale();
-var result = das.init(source, "Scaled Copy", 500, 700);
+var result = das.exec(source, "Scaled Copy", 500, 700);
 if (result) {
 	var name = result[0];
 	var imp = result[1];
@@ -116,6 +116,6 @@ var source = ...; // any image
 IJ.run(source, "Duplicate and Scale", "name=[scaled copy] width=500 height=700");
 </source>
 Above, ImageJ's macro system provides the <i>source</i> image as the return value of the IJ.getImage() call within the plugin's <i>run</i> method.
-Then, the macro arguments are fed directly into the GenericDialog entries of the same name, and the rest of the <i>run</i> method calls the <i>init</i> method without ever showing the dialog.
+Then, the macro arguments are fed directly into the GenericDialog entries of the same name, and the rest of the <i>run</i> method calls the <i>exec</i> method without ever showing the dialog.
 
 [[Category:Plugins]] [[Category:Development]] [[Category:Scripting]]
