@@ -107,3 +107,5 @@ IJ.run(source, "Duplicate and Scale", "name=[scaled copy] width=500 height=700")
 </source>
 Above, ImageJ's macro system provides the <i>source</i> image as the return value of the IJ.getImage() call within the plugin's <i>run</i> method.
 Then, the macro arguments are fed directly into the GenericDialog entries of the same name, and the rest of the <i>run</i> method calls the <i>init</i> method without ever showing the dialog.
+
+[[Category:Plugins]] [[Category:Development]] [[Category:Scripting]]
