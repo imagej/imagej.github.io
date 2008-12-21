@@ -110,7 +110,7 @@ if (result) {
 }
 </source>
 
-As a special case, since the above example plugin needs only one image, we can provide such image semidirectly with the new Thread-safe current image concept:
+As a special case, since the above example plugin needs only one image, we can provide such image semidirectly with the new Thread-safe current image concept. Keep in mind that then the plugin will show the new scaled image, not return it!
 <source lang="javascript">
 var source = ...; // any image
 IJ.run(source, "Duplicate and Scale", "name=[scaled copy] width=500 height=700");
