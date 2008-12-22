@@ -1,5 +1,5 @@
 <h3>Key concepts</h3>
-We favor a style of plugin design that enables execution of the plugin:
+We favor a style of ImageJ plugin design that enables execution of the plugin:
 <ol>
 <li>From the menus.</li>
 <li>From a macro.</li>
