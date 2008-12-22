@@ -98,8 +98,8 @@ ImagePlus source = ...; // any image
 Duplicate_and_Scale das = new Duplicate_and_Scale();
 Object[] result = das.exec(source, "Scaled Copy", 500, 700);
 if (null != result) {
-	String name = (String) ob[0];
-	ImagePlus scaled = (ImagePlus) ob[1];
+	String name = (String) result[0];
+	ImagePlus scaled = (ImagePlus) result[1];
 }
 </source>
 
