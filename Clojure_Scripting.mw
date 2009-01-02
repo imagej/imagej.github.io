@@ -725,7 +725,7 @@ Of course you can throw any kind of exception you want. For example, in checking
     (throw (IllegalArgumentException. "Can only compute the area of a Rectangle.")))
   (* (.width r) (.height r)))
 </source>
-Above, despite the type declaration, one can pass any value to the <i>area</i> function and it will still work, but of course our class check will stop:
+Above, despite the type declaration, one can pass any value to the <i>area</i> function and it will still work, but of course our class check will cut execution:
 
  user=> (area 10)                          
  java.lang.IllegalArgumentException: Can only compute the area of a Rectangle. (NO_SOURCE_FILE:0)
