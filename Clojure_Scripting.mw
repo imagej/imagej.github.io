@@ -715,4 +715,23 @@ The assignment is done in a transaction, so no matter how many concurrent thread
     (println "Cleaning up!")))
 </source>
 
+Of course you can throw any kind of exception you want. For example, in checking function arguments:
+
+<source lang="lisp">
+(import '(java.awt Rectangle))
+
+(defn area [#^Rectangle r]
+  (if (not (instance? Rectangle r))
+    (throw (IllegalArgumentException. "Can only compute the area of a Rectangle.")))
+  (* (.width r) (.height r)))
+</source>
+Above, despite the type declaration, one can pass any value to the <i>area</i> function and it will still work, but of course our class check will stop:
+
+ user=> (area 10)                          
+ java.lang.IllegalArgumentException: Can only compute the area of a Rectangle. (NO_SOURCE_FILE:0)
+ 
+ user=> (area (Rectangle. 0 0 10 10))
+ 100
+
+
 [[Category:Scripting]]
