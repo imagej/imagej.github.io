@@ -177,10 +177,10 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
       (loop [i 0
              len (count pixels)]
          (if (< i len)
-            (let [pix (aget pixels i)]
-                (println (str i ": " pix))
-                (recur (inc i)
-                       len))))
+            (do
+               (println (str i ": " (aget pixels i)))
+               (recur (inc i)
+                      len)))))
 
 </source>                                                                                                                                                                                                                
 <p>Above, notice that the <i>loop -- recur</i> construct is essentially a <i>let</i> declaration, with a second call (<i>recur</i>) to reset the variables to something else. In this case, the next index in the array. Note how the len is simply given the same value over and over, just to avoid calling <i>(count pixels)</i> at each iteration.</p>
