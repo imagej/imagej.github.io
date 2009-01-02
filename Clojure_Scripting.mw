@@ -701,4 +701,18 @@ The assignment is done in a transaction, so no matter how many concurrent thread
               (count (set @ls))))) ; Make a hash set (with unique entries) from the list of ids
 </source>
 
+<h3>Using try/catch/finally and throwing Exceptions</h3>
+
+<source lang="lisp">
+(try
+  (println "Going to throw ...")
+  (throw (Exception. "Testing error catching"))
+  (println "Should not print, an Exception is thrown before")
+  (catch Exception e
+    (println "Oops ... an error ocurred.")
+    (.printStackTrace e))
+  (finally
+    (println "Cleaning up!")))
+</source>
+
 [[Category:Scripting]]
