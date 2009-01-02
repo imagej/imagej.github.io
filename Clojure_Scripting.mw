@@ -336,6 +336,14 @@ Note above the quoted string "xml" to avoid evaluating it to a (non-existing) va
 (map ns-map (all-ns))
 </source>
 
+A nicer way to print all public functions and variables from all namespaces, sorted alphabetically:
+<source lang="lisp">
+(doseq [name (all-ns)]
+  (doseq [[k v] (sort (ns-publics name))]
+    (println k v)))
+</source>
+Note above we use <i>destructuring</i>: the [k v] take the values of the key and the value of each entry in the ns-publics table. Actually, since we first sort the table, the k and v take the first and second values of each array pair in the sorted list of array pairs returned on applying <i>sort</i> to the <i>ns-publics</i>-generated table.
+
 <h3>Forget/Remove all variables from a namespace</h3>
 To forget all variables from the user namespace, do:
 <source lang="lisp">
