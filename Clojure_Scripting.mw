@@ -440,6 +440,7 @@ When not knowing what to search for, you may try <b><i>find-doc</i></b> instead,
   
   ... etc.
 
+<h4>Defining documentation for your own functions</h4>
 So where does the documentation come from? Every definition of a function or macro or multimethod may take a description string before the arguments:
 <source lang="lisp">
 (defn area
