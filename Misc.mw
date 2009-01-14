@@ -6,4 +6,16 @@ If you are curious and want to peek into the future, look at this:
 
 <flvplayer height="480" width="640">test.flv</flvplayer>
 
-If you do not like the Google search in your Firefox to be localized, change it.  In a file that might be named /usr/lib/firefox-addons/searchplugins/google.xml...
+If you do not like the Google search in your Firefox to be localized, change it.  In a file that might be named /usr/lib/firefox-addons/searchplugins/google.xml... (you have to remove the &hl=.. part).
+
+Okay, now a little riddle.  What is the next number? 1, 2, 6, 42, 1806, ?
+
+Okay, okay, that was too easy.  So: how would this diagram continue, and how many numbers are in the 1111th row?
+
+    1
+   1 1
+   2 1
+ 1 1 1 2
+ 3 1 1 2
+
+Hmm?
