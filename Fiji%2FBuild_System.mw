@@ -26,9 +26,9 @@ If you have a working Fiji launcher, you can call the build system like this:
 
  ./fiji --build
 
-If your Fiji launcher does not work, but you have a working Java, call it like this:
+If your Fiji launcher does not work, or you do not have one yet, bootstrap it like this:
 
- java -jar precompiled/fake.jar
+ ./Build.sh fiji
 
 You can ask the program to build only specific targets by passing them as parameters:
 
