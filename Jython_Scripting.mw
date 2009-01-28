@@ -1,6 +1,13 @@
-<h1>Jython tutorial for ImageJ</h1>
+== The Jython interpreter plugin ==
 
-<h3>Language basics</h3>
+The interpreter provides a screen and a prompt. Type any jython code on the prompt to interact with ImageJ.
+
+Launch it from plugins - Scripting - Jython Interpreter. See [[Scripting Help]] for all keybindings, and also [[Scripting comparisons]].
+
+Within the interpreter, all ImageJ, java.lang.* and TrakEM2 classes are automatically imported. So creating new images and manipulating them is very straighforward.
+
+
+=== Language basics ===
 
 * Any text after a # is commented out.
 * There are no line terminators (such as ';' in other languages), neither curly braces to define code blocks.
@@ -10,7 +17,37 @@
 * Jython (and python in general) accepts a mixture of procedural and object-oriented code.
 * Jython currently implements the Python language at its 2.5 version. All [http://www.python.org/doc/2.5.2/ documentation for python 2.5] applies to Jython bundled with Fiji (with the remarks listed later).
 
-<h3>Defining variables: obtaining the current image</h3>
+
+=== Workflow for creating Jython scripts === 
+
+The recommended setup is the following:
+
+* Edit a file in your favorite text editor, and save it with a an underscore in the name and a .py extension anywhere under ImageJ plugins folder.
+* Run Plugins - Scripting - Refresh Jython scripts <b>only</b> the very first time after newly creating the file under any folder or subfolder of ImageJ's plugins folder. A menu item will appear with its name, from which it can be run.
+* Keep editing (and saving) the file from your editor. Just select the menu item to execute it over and over. Or use the "Find..." command window to launch it easily (keybinding 'l').
+
+The next time Fiji is run, automatic commands in macros/StartupMacros.txt will setup all your scripts in the Plugins menu.
+
+
+=== Some limitations of jython === 
+
+Tough jython tries to be as close as possible as python, there are some differences you may experience during scripting.
+
+* <u>Float "special numbers" such as ''NaN'' and ''Inf'' are not handled.</u>
+For instance, 
+<source lang="python"> a = float('nan') </source>
+will create the correct float number in python, but will throw an exception in jython.
+
+* <u>Some existing python modules can't be imported in jython.</u>
+This is for instance the case of the module ''numpy'', which would have been really convenient for analysing data ad results.
+
+
+
+
+
+== Jython tutorials for ImageJ ==
+
+=== Defining variables: obtaining the current image ===
 
 <source lang="python">
 imp = IJ.getImage()
@@ -37,9 +74,10 @@ To execute the function, just use parentheses on it:
 
 The above gets the value of <i>c</i>, which is the method named getCurrentImage in class WindowManager, and executes it, storing its returned object in <i>imp</i>.
 
-<h3>Manipulating pixels</h3>
 
-<h4>Creating a grayscale ramp image</h4>
+=== Manipulating pixels ===
+
+==== Creating a grayscale ramp image ====
 First create an image and obtain its pixels:
 
 <source lang="python">
@@ -74,7 +112,7 @@ imp.show()
 </source>
 
 
-<h4>Creating a random 8-bit image</h4>
+==== Creating a random 8-bit image ====
 
 First import necessary packages: Random, from standard java util library, and [http://www.jython.org/docs/jarray.html jarray], the Jython module for native java arrays:
 
@@ -109,7 +147,7 @@ imp = ImagePlus("Random", ByteProcessor(width, height, pix, cm)
 imp.show()
 </source>
 
-<h4>Creating a random image, the easy way</h4>
+==== Creating a random image, the easy way ====
 
 All the above can be summarized like the following:
 
@@ -120,7 +158,7 @@ Random().nextBytes(imp.getProcessor().getPixels())
 imp.show()
 </source>
 
-<h3>Example: running a watershed plugin on an image</h3>
+=== Running a watershed plugin on an image ===
 
 <source lang="python">
 # Obtain an image
@@ -151,24 +189,5 @@ If you had called <i>show()</i> on the image at any early stage, just update the
 <source lang="python">
 imp.updateAndDraw()
 </source>
-
-<h3>The Jython interpreter plugin</h3>
-
-The interpreter provides a screen and a prompt. Type any jython code on the prompt to interact with ImageJ.
-
-Launch it from plugins - Scripting - Jython Interpreter. See [[Scripting Help]] for all keybindings, and also [[Scripting comparisons]].
-
-Within the interpreter, all ImageJ, java.lang.* and TrakEM2 classes are automatically imported. So creating new images and manipulating them is very straighforward.
-
-<h3>Creating Jython scripts: the workflow</h3>
-
-The recommended setup is the following:
-
-* Edit a file in your favorite text editor, and save it with a an underscore in the name and a .py extension anywhere under ImageJ plugins folder.
-* Run Plugins - Scripting - Refresh Jython scripts <b>only</b> the very first time after newly creating the file under any folder or subfolder of ImageJ's plugins folder. A menu item will appear with its name, from which it can be run.
-* Keep editing (and saving) the file from your editor. Just select the menu item to execute it over and over. Or use the "Find..." command window to launch it easily (keybinding 'l').
-
-The next time Fiji is run, automatic commands in macros/StartupMacros.txt will setup all your scripts in the Plugins menu.
-
 
 [[Category:Scripting]]
