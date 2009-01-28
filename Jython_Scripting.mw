@@ -1,31 +1,39 @@
 <h1>Jython tutorial for ImageJ</h1>
 
 <h3>Language basics</h3>
-<p>Any text after a # is commented out.</p>
-<p>There are no line terminators (such as ';' in other languages), neither curly braces to define code blocks.</p> 
-<p>Indentation defines code blocks.</p>
-<p>Functions are defined with <i>def</i>, and classes with <i>class</i>.</p>
-<p>Functions are objects, and thus storable in variables.</p>
-<p>Jython (and python in general) accepts a mixture of procedural and object-oriented code.</p>
-<p>Jython currently implements the Python language at its 2.5 version. All [http://www.python.org/doc/2.5.2/ documentation for python 2.5] applies to Jython bundled with Fiji.</p>
+
+* Any text after a # is commented out.
+* There are no line terminators (such as ';' in other languages), neither curly braces to define code blocks.
+* Indentation defines code blocks.
+* Functions are defined with <i>def</i>, and classes with <i>class</i>.
+* Functions are objects, and thus storable in variables.
+* Jython (and python in general) accepts a mixture of procedural and object-oriented code.
+* Jython currently implements the Python language at its 2.5 version. All [http://www.python.org/doc/2.5.2/ documentation for python 2.5] applies to Jython bundled with Fiji (with the remarks listed later).
 
 <h3>Defining variables: obtaining the current image</h3>
 
- imp = IJ.getImage()
+<source lang="python">
+imp = IJ.getImage()
+</source>
 
 Which is the same as:
-
- imp = WindowManager.getCurrentImage()
+<source lang="python">
+imp = WindowManager.getCurrentImage()
+</source>
 
 Since calling the above is long and tedious, one can declare a variable that points to the above static methods:
 
- c = WindowManager.getCurrentImage
+<source lang="python">
+c = WindowManager.getCurrentImage
+</source>
 
 Above note the lack of parentheses.
 
 To execute the function, just use parentheses on it:
 
+<source lang="python">
  imp = c()
+</source>
 
 The above gets the value of <i>c</i>, which is the method named getCurrentImage in class WindowManager, and executes it, storing its returned object in <i>imp</i>.
 
@@ -34,91 +42,115 @@ The above gets the value of <i>c</i>, which is the method named getCurrentImage 
 <h4>Creating a grayscale ramp image</h4>
 First create an image and obtain its pixels:
 
- imp = ImagePlus("my new image", FloatProcessor(512, 512))
- pix = imp.getProcessor().getPixels()
- 
+<source lang="python">
+imp = ImagePlus("my new image", FloatProcessor(512, 512))
+pix = imp.getProcessor().getPixels()
+</source>
+
 The length of an array:
 
- n_pixels = len(pix)
+<source lang="python">
+n_pixels = len(pix)
+</source>
 
 Then loop to modify them:
  
- # catch width
- w = imp.getWidth()
+<source lang="python">
+# catch width
+w = imp.getWidth()
  
- # create a ramp gradient from left to right
- for i in range(len(pix)):
+# create a ramp gradient from left to right
+for i in range(len(pix)):
    pix[i] = i % w
  
- # adjust min and max, since we know them
- imp.getProcessor().setMinAndMax(0, w-1)
+# adjust min and max, since we know them
+imp.getProcessor().setMinAndMax(0, w-1)
+</source>
 
 ... and show the new image:
 
- imp.show()
+<source lang="python">
+imp.show()
+</source>
 
 
 <h4>Creating a random 8-bit image</h4>
 
 First import necessary packages: Random, from standard java util library, and [http://www.jython.org/docs/jarray.html jarray], the Jython module for native java arrays:
 
- from java.awt import Random
- from jarray import zeros
+<source lang="python">
+from java.awt import Random
+from jarray import zeros
+</source>
 
 Then create the array and fill it with random bytes:
 
- width = 512
- height = 512
+<source lang="python">
+width = 512
+height = 512
  
- pix = zeros(width * height, 'b')
- Random().nextBytes(pix)
+pix = zeros(width * height, 'b')
+Random().nextBytes(pix)
+</source>
 
 Now make a new IndexColorModel (that's what ImageJ's ij.process.LUT class is) for 8-bit images:
 
- channel = zeros(256, 'b')
- for i in range(256):
-     channel[i] = (i -128) 
- cm = LUT(channel, channel, channel)
+<source lang="python">
+channel = zeros(256, 'b')
+for i in range(256):
+    channel[i] = (i -128) 
+cm = LUT(channel, channel, channel)
+</source>
 
 ... and compose a ByteProcessor from the pixels, and assign it to an ImagePlus:
 
- imp = ImagePlus("Random", ByteProcessor(width, height, pix, cm)
- imp.show()
+<source lang="python">
+imp = ImagePlus("Random", ByteProcessor(width, height, pix, cm)
+imp.show()
+</source>
 
 <h4>Creating a random image, the easy way</h4>
 
 All the above can be summarized like the following:
 
-  from java.util import Random
-  imp = IJ.createImage("A Random Image", "8-bit", 512, 512, 1)
-  Random().nextBytes(imp.getProcessor().getPixels())
-  imp.show()
+<source lang="python">
+from java.util import Random
+imp = IJ.createImage("A Random Image", "8-bit", 512, 512, 1)
+Random().nextBytes(imp.getProcessor().getPixels())
+imp.show()
+</source>
 
 <h3>Example: running a watershed plugin on an image</h3>
 
-  # Obtain an image
-  imp = IJ.openImage("http://rsb.info.nih.gov/ij/images/bridge.tif")
-  ip = imp.getProcessor()
+<source lang="python">
+# Obtain an image
+imp = IJ.openImage("http://rsb.info.nih.gov/ij/images/bridge.tif")
+ip = imp.getProcessor()
   
-  # apply a threshold: only zeros and ones
-  ip.setThreshold(0, 74)
-  Thresholder().run("mask")
-  ip.invert()
+# apply a threshold: only zeros and ones
+ip.setThreshold(0, 74)
+Thresholder().run("mask")
+ip.invert()
+ 
+# apply watershed
+edm = EDM()
+edm.setup("watershed", imp)
+edm.run(ip)
   
-  # apply watershed
-  edm = EDM()
-  edm.setup("watershed", imp)
-  edm.run(ip)
-  
-  imp.show()
+imp.show()
+</source>
 
 The EDM plugin that contains the watershed could have been indirectly applied to the currently active image, which is <i>not</i> recommended:
 
-  IJ.run("Watershed")
+<source lang="python">
+IJ.run("Watershed")
+</source>
 
 If you had called <i>show()</i> on the image at any early stage, just update the screen with:
 
-  imp.updateAndDraw()
+<source lang="python">
+imp.updateAndDraw()
+</source>
 
 <h3>The Jython interpreter plugin</h3>
 
