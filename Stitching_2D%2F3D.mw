@@ -12,6 +12,7 @@ The Stitching package comes with 4 different plugins:
 * '''3D Stitching''': Stitch two image stacks (3D), rectangular ROIs can be used to limit the area to search in as well.
 * '''Stitch Grid of Images''': Stitch an arbitrary number of 2D or 3D images which are arranged in a regular grid (e.g. 4 x 3 images with roughly 10% overlap)
 * '''Stitch Collection of Images''': Stitch an arbitrary number of 2D or 3D images which do not have to be in a regular grid. The rough initial configuration (which image is overlapping another one) is given in tile configuration file.
+* '''Stitch Directory with Images (unknown configuration)''':
 
 == 2D Stitching and 3D Stitching ==
 
