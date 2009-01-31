@@ -783,7 +783,7 @@ Then we give the macro a command to execute and a function to process its stdout
 </source>
 A second example, printing the file size of each listed file in the home directory:
 <source lang="lisp">
-; List all files in the home directory:
+; Print the size of each file in the home directory:
 (import '(java.io File))
 
 (let [dir "/home/albert/"]
