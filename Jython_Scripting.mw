@@ -38,12 +38,21 @@ For instance,
 <source lang="python"> a = float('nan') </source>
 will create the correct float number in python, but will throw an exception in jython.
 
+Instead, to create a NaN in jython, use:
+<source lang="python">
+>>> a = Double.NaN
+>>> print a
+NaN 
+</source>
+To test if a number is NaN:
+<source lang="python">
+>>> if Double.isNaN(a):
+        print "a is NaN!"
+a is NaN! 
+</source>
+
 * <u>Some existing python modules can't be imported in jython.</u>
 This is for instance the case of the module ''numpy'', which would have been really convenient for analysing data ad results.
-
-
-
-
 
 == Jython tutorials for ImageJ ==
 
