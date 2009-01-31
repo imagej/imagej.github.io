@@ -763,4 +763,40 @@ Above, despite the type declaration, one can pass any value to the <i>area</i> f
  100
 
 
+<h3>Executing a command in a shell and capturing its output</h3>
+First we define the macro <i>exec</i>:
+<source lang="lisp">
+(import '(java.io BufferedReader InputStreamReader))
+
+(defmacro exec
+  "Execute a command on the shell, passing to the given function
+   the lazy sequence of lines read as output, and the rest of arguments."
+  [cmd pred & args]
+  `(with-open [br# (BufferedReader. (InputStreamReader. (.getInputStream (.exec (Runtime/getRuntime) ~cmd))))]
+    (~pred (line-seq br#) ~@args)))
+</source>
+Then we give the macro a command to execute and a function to process its stdout output.
+<source lang="lisp">
+; List all files in the home directory:
+(exec "ls /home/albert/"
+      #(doseq [line %1] (println line)))
+</source>
+A second example, printing the file size of each listed file in the home directory:
+<source lang="lisp">
+; List all files in the home directory:
+(import '(java.io File))
+
+(let [dir "/home/albert/"]
+  (exec (str "ls " dir)
+        #(doseq [line %1]
+          (println (.length (File. (str dir line)))))))
+</source>
+A third example, telling the music player XMMS2 to jump to a specific track in its playlist:
+<source lang="lisp">
+(let [track-number 125]
+  (exec (str "xmms2 jump " track-number)
+        (fn [lines] lines)))
+</source>
+
+
 [[Category:Scripting]]
