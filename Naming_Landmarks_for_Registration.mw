@@ -1,0 +1,17 @@
+The Name_Landmarks plugin provides a simple interface for marking named points in images, and optionally to register two images based on the named points that occur in both.  The following tutorial describes how to do this.
+
+Registration is done to a template image, so if you wish to register a image to the template then at a high level what you need to do is:
+
+* Mark points in the template images, and save the points file
+* Set the template image to be the default template image
+* For each image for registration, mark as many common points as you can, save the points file and select one of the registration options
+
+== Marking Points in a New Image ==
+
+To make points in a new image, open that image and start the plugin Name_Landmarks.  You should see a dialog something like this:
+
+'''insert an image with the default named point'''
+
+Now find a distinctive landmark in the image (we'll say ""
+
+FIXME: complete
