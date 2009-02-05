@@ -107,7 +107,6 @@ In this case, there's only one problem: versions of the VIB submodule conflict.
 
 Let's say that the situation now corresponds to the following diagram:
 
-
                       A'---B' HEAD
                      /
  o---o----o----o----o master
