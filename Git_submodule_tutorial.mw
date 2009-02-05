@@ -58,7 +58,7 @@ FIXME: finish writing this section the next time I have one of these conflicts i
 
 === Submodule Conflicts while Rebasing ===
 
-Conflicts in submodule versions while you're rebasing are slightly different.  For example, I am in the following situation:
+Conflicts in submodule versions while you're rebasing are slightly different.  For example, suppose I am in the following situation:
 
  o---o----o----o----o master
   \
