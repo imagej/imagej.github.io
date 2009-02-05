@@ -17,10 +17,10 @@ Now find a distinctive landmark in the image (we'll say ""
 FIXME: complete
 
 
-
-[Image:Landmarks-00-no-points-yet.png]
+[[Image:Landmarks-00-no-points-yet.png|No Points Yet]]
 
 Landmarks-01-named-unset.png
+
 Landmarks-02-point-ROI-selected.png
 Landmarks-03-point-named.png
 Landmarks-04-second-point-set.png
