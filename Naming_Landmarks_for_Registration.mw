@@ -10,21 +10,23 @@ Registration is done to a template image, so if you wish to register a image to 
 
 To make points in a new image, open that image and start the plugin Name_Landmarks.  You should see a dialog something like this:
 
-'''insert an image with the default named point'''
-
-Now find a distinctive landmark in the image (we'll say ""
-
-FIXME: complete
+[[Image:Landmarks-00-no-points-yet.png|Landmarks-00-no-points-yet.png]]
 
 
-[[Image:Landmarks-00-no-points-yet.png|No Points Yet]]
 
-Landmarks-01-named-unset.png
+[[Image:Landmarks-01-named-unset.png|Landmarks-01-named-unset.png]]
 
-Landmarks-02-point-ROI-selected.png
-Landmarks-03-point-named.png
-Landmarks-04-second-point-set.png
-Landmarks-05-six-points-set.png
-Landmarks-06-template-set.png
-Landmarks-07-floating-image.png
-Landmarks-09-registered-and-overlayed.png
+
+[[Image:Landmarks-02-point-ROI-selected.png|Landmarks-02-point-ROI-selected.png]]
+
+[[Image:Landmarks-03-point-named.png|Landmarks-03-point-named.png]]
+
+[[Image:Landmarks-04-second-point-set.png|Landmarks-04-second-point-set.png]]
+
+[[Image:Landmarks-05-six-points-set.png|Landmarks-05-six-points-set.png]]
+
+[[Image:Landmarks-06-template-set.png|Landmarks-06-template-set.png]]
+
+[[Image:Landmarks-07-floating-image.png|Landmarks-07-floating-image.png]]
+
+[[Image:Landmarks-09-registered-and-overlayed.png|Landmarks-09-registered-and-overlayed.png]]
