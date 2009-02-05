@@ -113,7 +113,6 @@ Let's say that the situation now corresponds to the following diagram:
   \
    A----B----C-----D----E----F server ORIG_HEAD
 
-
 First, it's important to see what change in version that commit is trying to make, so take the partial SHA1 sum from the line "Could not apply" above and pass it to git show, so "git show 1f7b713".  This shows the patch introduced by that commit, but we're only looking out for the lines relating to the VIB submodule, which are:
 
  diff --git a/VIB b/VIB
