@@ -18,6 +18,9 @@
 ; java-ish way:
 (. imp (getProcessor))
 
+; shorter java-ish way:
+(. imp getProcessor)
+
 ; lisp-ish way:
 (.getProcessor imp)
 </source>
@@ -31,8 +34,17 @@
 ; simplified double way:
 (.. imp (getProcessor) (getPixels))
 
+; super simplified (less parenthesis than java!)
+(.. imp getProcessor getPixels)
+
 ; or lisp-ish way:
 (.getPixels (.getProcessor imp))
+</source>
+
+<p>Any number of concatenated method calls, both for static methods or for instances:</p>
+<source lang="lisp">
+; Concatenated call to static and instance methods
+(.. WindowManager getCurrentImage getProcessor getPixels)
 </source>
 
 <p>To call a variable or 'field', just do it like a method call but without the parentheses:</p>
@@ -57,7 +69,7 @@ or more lisp-ish:
 (Rectangle. 0 0 500 500)
 
 ; A static field, call like a namespace:
-(PlugInFilter/DOES_ALL)
+PlugInFilter/DOES_ALL
 </source>
 
 <p>Choose whatever matches your mental schemes best.</p>
