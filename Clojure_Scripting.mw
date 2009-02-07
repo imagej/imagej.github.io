@@ -787,6 +787,14 @@ First we define the macro <i>exec</i>:
   `(with-open [br# (BufferedReader. (InputStreamReader. (.getInputStream (.exec (Runtime/getRuntime) ~cmd))))]
     (~pred (line-seq br#) ~@args)))
 </source>
+Some explanations on the above macro syntax (see also [http://clojure.org/macros clojure's macro syntax page]):
+* The backquote ` quotes the next expression, as defined by: `( <any code here> ). Which means the code block is <b>not</b> evaluated. But, unlike simple quote ', the backquote enables evaluation of expressions within the block when tagged with a ~ (a tilde).
+* The ~ (tilde) evaluates the immediate expression. Can only be used in the context of a backquoted code block.
+* The ~@ means <i>evaluate and expand</i>, which has the efect of placing the elements of a list as if they where declared in the code, without the list enclosure. So: `(~@(str "this" "that")) results in: "thisthat".
+* The # tagged at the end of a word expands to (gensym name), which results in creating a uniquely named symbol, to avoid name collisions.
+* Any code present outside the backquote (none, in the case above) will be executed at macro read time, not at code execution time (aka run time)! So any precomputations are possible before laying down the code that will be executed at run time.
+
+
 Then we give the macro a command to execute and a function to process its stdout output.
 <source lang="lisp">
 ; List all files in the home directory:
