@@ -4,6 +4,27 @@
 
 <p>Clojure is <b>not</b> a scripting language: Clojure compiles directly to JVM bytecode, and thus runs at native speed. Thus one must think of Clojure as a true alternative to Java the language, but much more expressive, flexible and powerful.</p>
 
+<h3>Using Clojure inside Fiji</h3>
+Go to "Plugins - Scripting - Clojure Interpreter". The prompt accepts any clojure code.
+
+A minimal, complete example:
+<source lang="lisp">
+(import '(ij IJ))
+(def gold (IJ/openImage "http://rsb.info.nih.gov/ij/images/AuPbSn40.jpg"))
+(.show gold)
+</source>
+
+To create scripts, just save them as .clj text files in any folder or subfolder of Fiji's plugins folder, and run "Plugins - Scripting - Refresh Clojure Scripts" to update the menus (it's done automatically at start up as well).
+
+To edit a script, just edit and save it with your favorite text editor.
+
+To execute a script, do any of:
+* Select it from the plugins menus.
+* Type 'l', start typing its name, push the down arrow and then return to execute it.
+* If it was the last executed command, just type shift+r (shortcut to "Process - Repeat Command").
+
+The script is <b>always</b> read directly from the source file, so no updating of menus is needed (unless its file name changes).
+
 <h3>Language basics</h3>
 <p>A ';' defines the start of a comment, just like '//' does in Java.</p>
 <p>A function definition declares parameters within [].</p>
