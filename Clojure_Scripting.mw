@@ -7,7 +7,9 @@
 <h3>Using Clojure inside Fiji</h3>
 Go to "Plugins - Scripting - Clojure Interpreter". The prompt accepts any clojure code.
 
-A minimal, complete example:
+See [[Scripting Help]] for details on keybindings and how to use the interpreter. <b>Control+)</b> will add all necessary ending parenthesis.
+
+A minimal, complete clojure example:
 <source lang="lisp">
 (import '(ij IJ))
 (def gold (IJ/openImage "http://rsb.info.nih.gov/ij/images/AuPbSn40.jpg"))
