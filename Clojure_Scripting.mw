@@ -20,7 +20,7 @@ To edit a script, just edit and save it with your favorite text editor.
 
 To execute a script, do any of:
 * Select it from the plugins menus.
-* Type 'l', start typing its name, push the down arrow and then return to execute it.
+* Type 'l' (L), start typing its name, push the down arrow and then return to execute it.
 * If it was the last executed command, just type shift+r (shortcut to "Process - Repeat Command").
 
 The script is <b>always</b> read directly from the source file, so no updating of menus is needed (unless its file name changes).
