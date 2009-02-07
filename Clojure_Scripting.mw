@@ -96,7 +96,7 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 
 ; Variable imp NOT visible from outside let statement:
 (println (.getTitle imp))
----&gt; ERROR
+---> ERROR
 </source>
 <p>As a general variable visible from the entire namespace:</p>
 
