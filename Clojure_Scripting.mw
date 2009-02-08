@@ -16,7 +16,7 @@ A minimal, complete clojure example:
 (.show gold)
 </source>
 
-To create scripts, just save them as .clj text files in any folder or subfolder of Fiji's plugins folder, and run "Plugins - Scripting - Refresh Clojure Scripts" to update the menus (it's done automatically at start up as well).
+To create scripts, just save them as .clj text files (with an underscore in the name) in any folder or subfolder of Fiji's plugins folder, and run "Plugins - Scripting - Refresh Clojure Scripts" to update the menus (it's done automatically at start up as well).
 
 To edit a script, just edit and save it with your favorite text editor.
 
