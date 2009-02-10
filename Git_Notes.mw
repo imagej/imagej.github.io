@@ -30,8 +30,6 @@ This list is expected to be incomplete and even wrong, do not trust it!
 
 =How to create a shared remote repository?=
 
-Adopted from [[http://toolmantim.com/articles/setting_up_a_new_remote_git_repository Tim Lucas]]
-
 <dl><dt><source lang="bash">
 ssh you@server
 mkdir repos/remote.git
@@ -45,5 +43,5 @@ git push origin master
 git-config branch.master.remote origin
 git-config branch.master.merge refs/heads/master
 </source>
-<dd>Creates a bare remote repository at <code>ssh://server/home/you/remote.git</code> that tracks your local repository in <code>/home/you/local</code>.
+<dd>Creates a bare remote repository at <code>ssh://server/home/you/remote.git</code> that tracks your local repository in <code>/home/you/local</code>.  Adopted from [[http://toolmantim.com/articles/setting_up_a_new_remote_git_repository Tim Lucas]].
 </dl>
