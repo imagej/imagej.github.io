@@ -450,7 +450,7 @@ Above, we could have defined the function as #(+ %1 1):
 Beware that the <i>map</i> function above applies the given function to each element of a list, and returns a <b>new</b> list with the results.
 
 <h3>Built-in documentation</h3>
-Use the function <b><i>doc</i></b> to query any other function. For example, the list generator function <i>range</i>:
+Use the function <b><i>doc</i></b> to query any other function or variable. For example, the list generator function <i>range</i>:
 <source lang="lisp">
 (doc range)
 
@@ -490,6 +490,22 @@ So where does the documentation come from? Every definition of a function or mac
   ([r])
     Computes the area of a rectangle.
   nil
+
+<h4>Defining documentation for a variable</h4>
+<source lang="lisp">
+(def
+  #^{:doc "The maximum number of connections"}
+  max-con 10)
+</source>
+... which the <i>doc</i> function prints as:
+  user=> (doc max-con)
+  -------------------------
+  user/max-con
+  nil
+    The maximum number of connections
+  nil
+
+Function documentation is internally set like the above: <i>defn</i> is a macro that defines a function and puts the second argument as the doc string of the variable that points to the function body (among many other things).
 
 <h3>A fibonacci sequence: lazy and infinite sequences</h3>
 
