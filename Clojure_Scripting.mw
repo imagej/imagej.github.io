@@ -532,6 +532,30 @@ Then we just <i>take</i> the first 10 elements of such lazy sequence, which are 
 Which outputs:
  (0 1 1 2 3 5 8 13 21 34)
 
+<h4>Printing lazy sequences to the REPL</h4>
+The REPL, when given a lazy sequence, will <b>traverse it in its entirety</b> to print it.
+
+Printing a potentially infinite lazy sequence to the REPL is something you don't want to do: besides triggering computation of each element, it would fill all memory and throw an OutOfMemoryException. And you'd get bored seeing elements pass by.
+
+A good option is to print only part of it:
+* <i>take</i>: the first N elements.
+* <i>drop</i>: all elements beyond N.
+* <i>nth</i>: the nth element only.
+
+For infinite lazy sequences, <i>drop</i> wouldn't save your REPL, and <i>take</i> could be perhaps too many still.
+
+To avoid accidental printing of complete lazy-sequences, you may set <b>*print-length*</b> to a reasonable number:
+<source lang="lisp">
+(set! *print-length* 5)
+</source>
+So now one can safely print the entire fibonnaci sequence, which will print only the first 5 elements, followeed by dots:
+  user=> (set! *print-length* 5)
+  5
+  user=> fibs
+  (0 1 1 2 3 ...)
+
+The <b>*print-length*</b> applies to all sequences to be printed in the REPL, but is specially useful for very large lazy sequences.
+
 <h3>Creating shallow and deep sequences from java arrays</h3>
 
 Many clojure functions take sequences, not native java arrays, as arguments. A java native array can be wrapped by a shallow sequence like the following:
