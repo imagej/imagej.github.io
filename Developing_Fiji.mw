@@ -15,7 +15,7 @@ However, it is much more powerful than that.  Amongst other things, you can
 * Call the Jython interpreter: '''./fiji --jython''' (the classpath will be the same as when calling ImageJA) 
 * Run Fiji with the system Java instead of its own one: '''./fiji --system'''.  But beware: this might fail since some plugins need at least Java 1.5, and the 3D viewer needs Java3D.
 * Show the java command line instead of running Fiji: '''./fiji --dry-run'''
-* Run [[Fake]]: '''./fiji --fake plugins/lens_correction.jar'''
+* Run [[Fiji Build System]]: '''./fiji --build plugins/lens_correction.jar'''
 * Compile a Java class: '''./fiji --javac example.java'''
 * Run a Java class' main() method: '''./fiji --main-class=example'''
 * Pass some Java options: '''./ fiji -server --''' (everything that comes before a '''--''' is interpreted as Java option)
@@ -25,7 +25,7 @@ The Fiji launcher can do more, just call '''./fiji --help''' for a short descrip
 
 == The Fakefile system ==
 
-Fiji comes with its own builder, named [[Fake]] (''Fiji's mAKE'').  There are already other build systems, such as Ant or Maven, but at least it is simple and small.  For details, go to [[Fake|this page]].
+Fiji comes with its own builder, named [[Fiji Build System]].  There are already other build systems, such as Ant or Maven, but at least it is simple and small.  For details, go to [[Fiji Build System|this page]].
 
 == Adding plugins ==
 
@@ -66,7 +66,7 @@ Then add the submodule. Example:
  # first time, commit-submodule need to know the target, too ("jars/jgit.jar" in this case)
  ./fiji scripts/commit-submodule.py VIB plugins/VIB_.jar
 
-In the case of ''VIB'', it works as easily as that, because it has its own [[Fake|Fakefile]].  Submodules do not need to have that, you can provide one in ''staged-plugins/'', and they do not need to be installed in ''plugins/'', either:
+In the case of ''VIB'', it works as easily as that, because it has its own [[Fiji Build System|Fakefile]].  Submodules do not need to have that, you can provide one in ''staged-plugins/'', and they do not need to be installed in ''plugins/'', either:
 
  # clone the "egit" repository, but name it "jgit"
  git clone ssh://contrib@pacific.mpi-cbg.de/srv/git/egit jgit
