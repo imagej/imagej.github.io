@@ -192,6 +192,7 @@ By convention, variables are named:
 * <b>ip</b> to mean ImageProcessor
 * <b>stack</b> to mean ImageStack
 
+
 <h4>Creating a new image</h4>
 
 From scratch:
