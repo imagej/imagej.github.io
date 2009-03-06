@@ -184,11 +184,13 @@ ImageJ has three basic objects:
 
 For extensive documentation, see the [http://albert.rierol.net/imagej_programming_tutorials.html#ImageJ%20programming%20basics Anatomy of an ImageJ image] ImageJ programming basics tutorial.
 
+
+<h4>Conventions in naming image variables</h4>
+
 By convention, variables are named:
 * <b>imp</b> to mean ImagePlus
 * <b>ip</b> to mean ImageProcessor
 * <b>stack</b> to mean ImageStack
-
 
 <h4>Creating a new image</h4>
 
