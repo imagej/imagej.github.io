@@ -304,6 +304,66 @@ Also, we must declare the type of the <i>ip2</i> because clojure cannot decide b
 
 Notice that each time you call getProcessor on an ImageStack, it returns a new ImageProcessor instance in a very costly way, by calling a series of <i>instanceof</i> on the pixels arrays to figure out which kind of ImageProcessor subclass it should create.
 
+
+<h4>Resizing an image or ImageStack using ROIs</h4>
+
+ROIs (aka Region of Interest or selection) have bounds, defined by the minimal enclosing rectangle.
+
+The core idea is to set a ROI to an ImageProcessor and call <i>crop</i> to obtain a new, subcopy of it.
+
+
+<source lang="lisp">
+(def imp (IJ/getImage))
+
+(def imp-cropped (ImagePlus. "Cropped"
+                             (let [ip (.getProcessor imp)]
+                               (.setRoi ip (Roi. 10 10 200 200))
+                               (.crop ip))))
+
+(.show imp-cropped)
+</source>
+
+
+To handle any ImagePlus (with single slice or containing an ImageStack, i.e. many slices), see this function:
+(which assumes the ROI is contained fully within the image; otherwise for stacks it will throw an Exception stating that, rightly, dimensions do not match.)
+
+<source lang="lisp">
+(import '(ij.gui Roi)
+        '(ij ImagePlus)
+        '(ij.process ImageProcessor))
+
+(def imp (IJ/getImage))
+
+(defn crop-image
+  "Crop an image by the bounds of a ROI,
+   returning a new ImagePlus with the result."
+  [imp roi]
+  (let [crop-processor (fn [ip roi]
+                         (.setRoi ip roi)
+                         (.crop ip))
+        stack (.getStack imp)]
+    ; Return a new ImagePlus with a new cropped ImageProcessor 
+    ; or a new cropped ImageStack:
+    (ImagePlus. (.getTitle imp)
+      (if stack
+        (let [box (.getBounds roi)
+              new-stack (ImageStack. (.width box) (.height box) nil)]
+          (doseq [i (range (.getSize stack))]
+            (.addSlice new-stack (.getSliceLabel stack (+ i 1))
+                       #^ImageProcessor (crop-processor 
+                                          (.getProcessor stack (+ i 1))
+                                          roi)))
+          new-stack)
+        ; Else single slice image:
+        (crop-processor (.getProcessor imp) roi)))))
+
+(def imp-cropped (crop-image imp (Roi. 100 100 300 300))
+
+(.show imp-cropped)
+</source>
+
+The above works with both single images and stacks.
+
 <h3>Defining a closure</h3>
 <p>In the following a function is declared within the scope of the local variable <b>rand</b>, which contains an instance of java.util.Random. All calls to the function <i>rand-double</i> will use the same random number generator instance with seed 69997.</p>
 <p>The <i>dotimes</i> loop will then print 10 different pseudo-random numbers. If the <b>rand</b> was a new Random with seed 69997 every time, all 10 numbers would be exactly the same.</p>
