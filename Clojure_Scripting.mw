@@ -883,4 +883,52 @@ A third example, telling the music player XMMS2 to jump to a specific track in i
 The above is an extract from a clojure GUI for XMMS2, available at github [http://github.com/acardona/xmms2-clj/tree xmms2-gui].
 
 
+<h3>Creating a derivative of a function</h3>
+
+The derivative of a function:
+
+                               f (x + dx) - f (x)
+       D f(x) = f'(x) = lim  --------------------
+                                      dx
+
+We can approximate the derivative by choosing an arbitrarily precise value of the increment <i>dx</i>.
+
+So first we define a function that takes any function as argument and returns a new function that implements its derivative. For convenience, we define it within a closure that specifies the arbitrarily precise increment <i>dx</i> (but we could just pass it as argument):
+<source lang="lisp">
+(let [dx (double 0.0001)]
+  (defn derivative [f]
+     "Return a function that is the derivative of the given function f, using dx increments."
+     (fn f-prime [x]
+        (/ (- (f (+ (double x) dx))
+              (f x))
+            dx))))
+</source>
+
+Then, for any example function like the cube of x:
+<source lang="lisp">
+(defn cubic [x]
+  (let [a (double x)]
+    (* a a a)))
+</source>
+
+... we create its derivative function, which we place into a variable (note we use <i>def</i> and not <i>defn</i>):
+<source lang="lisp">
+(def cubic-prime (derivative cubic))
+</source>
+
+We can now call the cubic-prime function simply like any other function:
+ (cubic-prime 2) 
+ -> 12.000600010022566
+ 
+ (cubic-prime 3) 
+ -> 27.00090001006572
+  
+ (cubic-prime 4) 
+ -> 48.00120000993502
+
+
+The derivative of x^3 is 3 * x^2, which for an x of 4 equals 48. Our derivative is as precise as low is the value of the increment <i>dx</i>.
+
+The above code translated from lisp code at [http://funcall.blogspot.com/2009/03/not-lisp-again.html funcall blog]. Thanks [http://www.blogger.com/profile/03233353484280456977 Joe Marshall] for sharing this perl.
+
 [[Category:Scripting]]
