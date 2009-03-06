@@ -169,6 +169,113 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
 </source>
 
 
+<h3>Manipulating images</h3>
+
+<h4>ImageJ Image internals: ImagePlus, ImageProcessor, ImageStack</h4>
+
+ImageJ has three basic objects:
+* The <b>[http://rsb.info.nih.gov/ij/developer/api/ij/ImagePlus.html ImagePlus]</b>, which wraps the ImageProcessor and contains properties and pointers to the ROI (region of interest) and the ImageWindow that may be displaying the image.
+* The <b>[http://rsb.info.nih.gov/ij/developer/api/ij/process/ImageProcessor.html ImageProcessor]</b>, which is an abstract class enabling the high-level manipulation of and access to pixels. Its subclasses each wraps a different kind of data type:
+** ByteProcessor - byte[]
+** ShortProcessor - short[]
+** FloatProcessor - float[]
+** ColorProcessor - int[] (byte-packed ARGB, but Alpha channel is ignored)
+* The <b>[http://rsb.info.nih.gov/ij/developer/api/ij/ImageStack.html ImageStack]</b> which contains unfortunately not an array of ImageProcessor, but an Object[] containing an homogeneous list of equal length byte[], or float[], etc.
+
+For extensive documentation, see the [http://albert.rierol.net/imagej_programming_tutorials.html#ImageJ%20programming%20basics Anatomy of an ImageJ image] ImageJ programming basics tutorial.
+
+By convention, variables are named:
+* <b>imp</b> to mean ImagePlus
+* <b>ip</b> to mean ImageProcessor
+* <b>stack</b> to mean ImageStack
+
+
+<h4>Creating a new image</h4>
+
+From scratch:
+<source lang="lisp">
+(import '(ij ImagePlus)
+        '(ij.process ByteProcessor))
+
+(let [imp (ImagePlus. "A new image" (ByteProcessor. 400 400))]
+  (.show imp))
+</source>
+
+From a file:
+<source lang="lisp">
+(let [imp (IJ/openImage "/path/to/an/image.tif")]
+  (.show imp))
+</source>
+
+
+<h4>Creating an image of the same type of an existing one</h4>
+
+<source lang="lisp">
+; The original
+(def imp-1 (ImagePlus. "The source image" (FloatProcessor. 512 512)))
+
+; The new empty image, of the same type as the old but larger
+(def imp-2 (ImagePlus. "The copy"
+                       (.. imp-1 getProcessor createProcessor 768 768)))
+</source>
+
+
+<h4>Resizing an image</h4>
+
+The idea is to grab the ImageProcessor, duplicate it and resize it. The resizing returns a new ImageProcessor of the same type:
+
+<source lang="lisp">
+(def imp-1 (IJ/openImage "/path/to/image1.tif"))
+
+(def imp-2 (ImagePlus. "A new larger one" (.. imp-1 getProcessor createProcessor 1024 1024)))
+
+; Copy one into the other at top-left (hence 0,0 insert point):
+(doto (.getProcessor imp-2)
+  (.insert (.getProcessor imp-1) 0 0))
+</source>
+
+An alternative way would be to simply duplicate the processor of imp-1, and then enlarge it:
+<source lang="lisp">
+(def imp-3 (ImagePlus. "A copy with extra empty space"
+                       (.. imp-1 getProcessor duplicate (resize 768 768)))
+</source>
+
+
+
+<h4>Resizing an ImageStack</h4>
+
+This one is harder, because an ImageStack is just a wrapper for Object[] list of pixel arrays.
+ImageJ though provides a mid-level resizing method, via the [http://rsb.info.nih.gov/ij/developer/api/ij/plugin/CanvasResizer.html CanvasResizer] class:
+
+
+<source lang="lisp">
+(import '(ij.plugin CanvasResizer)
+        '(ij IJ ImagePlus))
+
+; Grab the image in the currently active ImageWindow:
+(def imp-1 (IJ/getImage))
+
+; function to resize images:
+(defn resize-image
+  "Takes an ImagePlus as argument and returns a new ImagePlus
+   but resized to width,height, and with the contents copied 
+   starting from xoff,yoff"
+  [imp w h xoff yoff]
+  (let [resizer (CanvasResizer.)
+        stack (.getStack imp)
+        imp-2 (ImagePlus. (.getTitle imp)
+                (if stack
+                  (.expandStack resizer stack w h xoff yoff)
+                  (.expandProcessor resizer w h xoff yoff)))]
+    imp-2))
+
+(def imp-2 (resize-image imp-1 1024 1024 0 0))
+
+(.show imp-2)
+</source>
+
+Note that the above function <i>resize-image</i> will work for both stacks and non-stack images.
+
 <h3>Defining a closure</h3>
 <p>In the following a function is declared within the scope of the local variable <b>rand</b>, which contains an instance of java.util.Random. All calls to the function <i>rand-double</i> will use the same random number generator instance with seed 69997.</p>
 <p>The <i>dotimes</i> loop will then print 10 different pseudo-random numbers. If the <b>rand</b> was a new Random with seed 69997 every time, all 10 numbers would be exactly the same.</p>
