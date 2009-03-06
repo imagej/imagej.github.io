@@ -325,6 +325,7 @@ The core idea is to set a ROI to an ImageProcessor and call <i>crop</i> to obtai
 
 
 To handle any ImagePlus (with single slice or containing an ImageStack, i.e. many slices), see this function:
+
 (which assumes the ROI is contained fully within the image; otherwise for stacks it will throw an Exception stating that, rightly, dimensions do not match.)
 
 <source lang="lisp">
