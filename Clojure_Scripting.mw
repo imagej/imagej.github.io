@@ -276,6 +276,31 @@ ImageJ though provides a mid-level resizing method, via the [http://rsb.info.nih
 
 Note that the above function <i>resize-image</i> will work for both stacks and non-stack images.
 
+Of course nothing stops you from looping through the stack length, calling a new ImageProcessor for each slice, resizing it, composing a new ImageStack and with it a new ImagePlus.
+
+<source lang="lisp">
+; Grab the image in the currently active ImageWindow:
+(def imp-1 (IJ/getImage))
+
+(defn resize-stack
+  "Resize an ImageStack to new widht,height
+   and copy its contents starting at xoff,yoff coordinate."
+  [stack w h xoff yoff]
+  (let [new-stack (ImageStack. w h nil)]
+    (doseq [i (range 0 (.getSize stack))]
+      (let [ip (.getProcessor stack (+ i 1))
+            #^ImageProcessor ip2 (.createProcessor ip w h)]
+        (.insert ip2 ip xoff yoff)
+        (.addSlice new-stack (str i) ip2)))
+    new-stack))
+</source>
+
+Above, note that <b>stacks are 1-based,not 0-based!</b>
+
+Also, we must declare the type of the <i>ip2</i> because clojure cannot decide between the ImageProcessor.addSlice(String,ImageProcessor) and ImageProcessor.addSlice(String,Object). You must make that choice for clojure.
+
+Notice that each time you call getProcessor on an ImageStack, it returns a new ImageProcessor instance in a very costly way, by calling a series of <i>instanceof</i> on the pixels arrays to figure out which kind of ImageProcessor subclass it should create.
+
 <h3>Defining a closure</h3>
 <p>In the following a function is declared within the scope of the local variable <b>rand</b>, which contains an instance of java.util.Random. All calls to the function <i>rand-double</i> will use the same random number generator instance with seed 69997.</p>
 <p>The <i>dotimes</i> loop will then print 10 different pseudo-random numbers. If the <b>rand</b> was a new Random with seed 69997 every time, all 10 numbers would be exactly the same.</p>
