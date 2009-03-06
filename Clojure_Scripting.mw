@@ -898,7 +898,7 @@ So first we define a function that takes any function as argument and returns a 
 (let [dx (double 0.0001)]
   (defn derivative [f]
      "Return a function that is the derivative of the given function f, using dx increments."
-     (fn f-prime [x]
+     (fn [x]
         (/ (- (f (+ (double x) dx))
               (f x))
             dx))))
