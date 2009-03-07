@@ -169,6 +169,23 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
 </source>
 
 
+<h3>Defining a closure</h3>
+<p>In the following a function is declared within the scope of the local variable <b>rand</b>, which contains an instance of java.util.Random. All calls to the function <i>rand-double</i> will use the same random number generator instance with seed 69997.</p>
+<p>The <i>dotimes</i> loop will then print 10 different pseudo-random numbers. If the <b>rand</b> was a new Random with seed 69997 every time, all 10 numbers would be exactly the same.</p>
+<p>You can think of a function inside a closure as a static function using a static variable (in Java), but it's more than that, since the function will be able to access parameters on the global namespace and also in any other local namespace in which the <i>let</i> is declared. For example, another <i>let</i>, or even another <i>defn</i>!</p>
+
+<source lang="lisp">
+(let [rand (java.util.Random. 69997)]
+    (defn rand-double []
+        (.nextDouble rand)))
+
+(dotimes [i 10]
+    (println (rand-double)))
+</source>
+
+<p>Above, note the dot '.' after Random, which indicates we are calling the constructor (with a single parameter 69997, the pseudorandom generator seed to be used). Alternatively, one may use the java-like syntax: (new java.util.Random 69997) -- note the absence of a dot now.</p>
+
+
 <h3>Manipulating images</h3>
 
 <h4>ImageJ Image internals: ImagePlus, ImageProcessor, ImageStack</h4>
@@ -365,21 +382,6 @@ To handle any ImagePlus (with single slice or containing an ImageStack, i.e. man
 
 The above works with both single images and stacks.
 
-<h3>Defining a closure</h3>
-<p>In the following a function is declared within the scope of the local variable <b>rand</b>, which contains an instance of java.util.Random. All calls to the function <i>rand-double</i> will use the same random number generator instance with seed 69997.</p>
-<p>The <i>dotimes</i> loop will then print 10 different pseudo-random numbers. If the <b>rand</b> was a new Random with seed 69997 every time, all 10 numbers would be exactly the same.</p>
-<p>You can think of a function inside a closure as a static function using a static variable (in Java), but it's more than that, since the function will be able to access parameters on the global namespace and also in any other local namespace in which the <i>let</i> is declared. For example, another <i>let</i>, or even another <i>defn</i>!</p>
-
-<source lang="lisp">
-(let [rand (java.util.Random. 69997)]
-    (defn rand-double []
-        (.nextDouble rand)))
-
-(dotimes [i 10]
-    (println (rand-double)))
-</source>
-
-<p>Above, note the dot '.' after Random, which indicates we are calling the constructor (with a single parameter 69997, the pseudorandom generator seed to be used). Alternatively, one may use the java-like syntax: (new java.util.Random 69997) -- note the absence of a dot now.</p>
 
 <h3>Looping an array of pixels</h3>
 <p>For example, to find the min and max values:</p>
