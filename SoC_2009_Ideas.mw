@@ -50,6 +50,14 @@ This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX 
 '''Language:''' Java<br>
 '''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
 
+== Add more regression tests ==
+
+Whenever releasing Fiji, or after major changes, we would like to be reasonably safe that we did not break things that used to work before.  We already have a few [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=tests tests], but hardly enough.
+
+'''Goal:''' Provide tests that can be run in headless mode, ensuring certain functionality does not get broken.<br>
+'''Language:''' Java, Clojure, Javascript, Jython, JRuby '''or''' ImageJ's macro language<br>
+'''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
+
 = Other Resources =
  * [[SoC2009Application]]
 
