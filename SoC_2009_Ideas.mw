@@ -1,0 +1,58 @@
+= Welcome! =
+
+Fiji is planning on applying to the Google Summer of Code 2009 program.  As mentoring organizations have not yet been accepted, there is no guarantee that Fiji will be asked to participate.  This page is to help plan proposed student projects.
+
+This page contains project ideas culled from the Fiji user and developer community.  You can get started by reading some project descriptions, and the mailing list thread(s) that spawned them.  Also consider joining the developer mailing list, or finding us on IRC.  Details can be found in [[Help:Contents]].
+
+Don't like a project you see here?  Just throw your ideas at us, on the developer mailing list!
+
+= General Requirements =
+All projects have the following basic requirements:
+
+* Unless otherwise stated, projects will require programming in Java.
+* All materials must be released under the [http://www.gnu.org/copyleft/gpl.html GNU General Public License (GPL)], version 2.
+* Individual students shall retain copyright on their works.
+* Projects must be tracked and managed in Git, and published on [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi] (we will provide you with an account).
+* Weekly project status reports should be sent to the project's mentors.  Each status report should outline what was accomplished that week, any issues that prevented that week's goals from being completed, and your goals for the next week.  This will help you to break your project down into manageable chunks, and will also help the project's mentors to better support your efforts.
+
+Interested students are encouraged to read the
+[http://code.google.com/p/google-summer-of-code/wiki/AdviceforStudents Advice for GSoC Students Page],
+as it has excellent suggestions that might help you to pick a
+project and shape your proposal.
+
+If your proposal is accepted by the Fiji Development Community
+you will be expected to work on it full time during the summer.
+It is cool if you want to take a week off for vacation, but remember
+that Google is hiring you for the summer to help us improve Fiji.
+That should be your focus.  Don't expect that you will be able to
+work on your project for just 10 hours a week and then collect at
+the end.
+
+If your original proposal doesn't pan out or becomes too much of
+a challenge, you should work with your mentor to help redefine it.
+We really want to see every project succeed this summer, as there
+is a great deal of interest in these projects from within the
+user community.
+
+Students can apply for the program at the
+[http://code.google.com/soc/ Google Summer of Code website].
+Please consider reviewing our [[SoC2009Template]] and answering
+its questions as part of your application.
+
+
+= Project ideas =
+
+== Integrate Micro-Manager into Fiji ==
+
+This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX and Windows.  The idea is to make a recipe that other people can use to compile new releases of [http://www.micro-manager.org/ Micro-Manager], as well as integrate it into the Fiji project for a smooth user experience.  To ensure that support for Micro-Manager is not broken inadvertently, you shall add regression tests, too.
+
+'''Goal:''' Provide an easy way to compile and ship Micro-Manager with Fiji.<br>
+'''Language:''' Java<br>
+'''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
+
+= Other Resources =
+ * [[SoC2009Application]]
+
+= Other links =
+ * [http://rsb.info.nih.gov/ij ImageJ's homepage]
+ * [http://groups.google.com/group/fiji-devel Fiji's developer mailing list]
