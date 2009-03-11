@@ -88,7 +88,7 @@ The lack of a plugin manager system is an enormous drag on the ability of good p
 The GUI should have two main components: a tree with the plugins and a text pane for reading documentation.
 * The tree must mirror the user's plugins menu and provide the means to enable/disable plugins, i.e. to add/remove them from the menus. As well as indicate whether any updates are available for a plugin, or newly available plugins.
 * The text pane will offer the documentation on a plugin, and thus double as built-in plugin documentation GUI. The documentation must be fetched directly from this wiki site (displayed in a javax.swing.JEditorPane with an HTMLEditorKit).<br />
-The plugin manager will query a specific server based on pacific.mpi-cbg.de for updated a newly available plugins.
+The plugin manager will query a specific server based on pacific.mpi-cbg.de for updated and newly available plugins.
 
 '''Language:''' Java or a JVM scripting language of your choice (preferrably Javascript, Jython, JRuby or Clojure).<br />
 '''Mentor:''' [http://www.ini.uzh.ch/people/acardona Albert Cardona] (acardona@ini.phys.ethz.ch), Johannes Schindelin (johannes.schindelin@gmx.de)<br />
