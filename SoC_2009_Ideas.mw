@@ -61,12 +61,11 @@ Whenever releasing Fiji, or after major changes, we would like to be reasonably 
 
 == Add word expansion to the scripting interpreters ==
 
-Fiji offers scripting in 5 different languages, all running on the JVM: [[Javascript Scripting|Javascript]], [[Jython Scripting|Jython]], [[JRuby Scripting|JRuby]], [[Clojure Scripting|Clojure]], Beanshell and the ImageJ Macro Language. Through the reflection API and the numerous language hooks that each scripting engine provides, it is possible to parse half-written scripting code and provide a list of words to expand the current word in the prompt of each interpreter.
+Fiji offers scripting in 5 different languages, all running on the JVM: [[Javascript Scripting|Javascript]], [[Jython Scripting|Jython]], [[JRuby Scripting|JRuby]], [[Clojure Scripting|Clojure]], Beanshell and the ImageJ Macro Language. Through the reflection API and the numerous language hooks that each scripting engine provides, it is possible to complete method names or names of member variables, as well as class names.
 
 '''Goal:''' Provide word-expansion capabilities to the scripting interpreters (see [[Scripting Help]]).<br />
 '''Language:''' A combination of Java plus the scripting language, in this order of preference: Javascript, Jython, JRuby, Clojure and Beanshell. If you can do them all, we'll erect you a monument.<br />
 '''Mentor:''' [http://www.ini.uzh.ch/people/acardona Albert Cardona] (acardona@ini.phys.ethz.ch)<br />
-
 
 == Add a simple yet minimally powerful plugin and script editor ==
 
