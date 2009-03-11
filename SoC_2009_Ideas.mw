@@ -68,7 +68,7 @@ Fiji offers scripting in 5 different languages, all running on the JVM: [[Javasc
 '''Mentor:''' [http://www.ini.uzh.ch/people/acardona Albert Cardona] (acardona@ini.phys.ethz.ch)<br />
 
 
-=== Add a simple yet minimally powerful plugin and script editor ===
+== Add a simple yet minimally powerful plugin and script editor ==
 
 ImageJ offers currently a very limited, java.awt.TextArea -based built-in text editor, for writing, compiling and running java plugins, ImageJ macros, and as of recently javascript scripts. The text editor lacks syntax highlighting, does not use a proper font for coding, and lacks minimal debugging capabilities (such as parsing stack traces to highlight lines that failed to compile).
 
