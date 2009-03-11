@@ -79,9 +79,17 @@ ImageJ offers currently a very limited, java.awt.TextArea -based built-in text e
 
 == Add a plugin manager ==
 
-Beyond the built-in commands, ImageJ provides the means to add user-developed plugins by implementing the PlugIn, PlugInFilter and PlugInFrame interfaces. Fiji uses ImageJ at the core and packages around it a very large number of plugins (see the [[Plugins Menu]]). An ideal GUI cannot contain hundreds of plugins: any specific user has no use for more than half of them, and their mere presence get on the way to adding other, user-desired plugins. The core idea of this project is to generate a plugins manager, inspired in the excellent plugin manager of [http://www.jedit.org JEdit].
+Beyond the built-in commands, ImageJ provides the means to add user-developed plugins by implementing the PlugIn, PlugInFilter and PlugInFrame interfaces. Fiji uses ImageJ at the core and packages around it a very large number of plugins (see the [[Plugins Menu]]). The ideal application menus cannot contain hundreds of plugins: any specific user has no use for more than half of them, and their mere presence get on the way to adding other, user-desired plugins.
 
-'''Goal:''' Build a GUI for a plugin manager: a tree that mirrors the plugins menu and provides the means to enable/disable plugins, to add/remove them from the menus. The GUI must offer a text pane to display documentation on the plugin, as fetched directly from this wiki site (displayed in a javax.swing.JEditorPane with an HTMLEditorKit). The GUI must be in accordance to a server-side plugin data base.<br />
+The core idea of this project is to generate a plugins manager, inspired in the excellent plugin manager of [http://www.jedit.org JEdit], to enable/disable plugins.
+
+The lack of a plugin manager system is an enormous drag on the ability of good plugins to be widely distributed, and the ability of needy users to find them. The ability to be registered will also ensure proper compatibility with specific ImageJ versions, and the ability to track plugin versions.
+
+'''Goal:''' Build a plugin manager. The GUI should have two main components: a tree with the plugins and a text pane for reading documentation.
+* The tree must mirror the user's plugins menu and provide the means to enable/disable plugins, i.e. to add/remove them from the menus.
+* The text pane will offer the documentation on a plugin, and thus double as built-in plugin documentation GUI. The documentation must be fetched directly from this wiki site (displayed in a javax.swing.JEditorPane with an HTMLEditorKit).<br />
+The plugin manager will query a specific server based on pacific.mpi-cbg.de for updated a newly available plugins. The back-end will be implemented in [http://www.jgit.org jgit].
+
 '''Language:''' Java or a JVM scripting language of your choice (preferrably Javascript, Jython, JRuby or Clojure).<br />
 '''Mentor:''' [http://www.ini.uzh.ch/people/acardona Albert Cardona] (acardona@ini.phys.ethz.ch)<br />
 
