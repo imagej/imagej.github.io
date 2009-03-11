@@ -91,7 +91,7 @@ The GUI should have two main components: a tree with the plugins and a text pane
 The plugin manager will query a specific server based on pacific.mpi-cbg.de for updated a newly available plugins. The back-end will be implemented in [http://www.jgit.org jgit].
 
 '''Language:''' Java or a JVM scripting language of your choice (preferrably Javascript, Jython, JRuby or Clojure).<br />
-'''Mentor:''' [http://www.ini.uzh.ch/people/acardona Albert Cardona] (acardona@ini.phys.ethz.ch)<br />
+'''Mentor:''' [http://www.ini.uzh.ch/people/acardona Albert Cardona] (acardona@ini.phys.ethz.ch), Johannes Schindelin (johannes.schindelin@gmx.de)<br />
 
 = Other Resources =
  * [[SoC2009Application]]
