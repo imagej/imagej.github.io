@@ -1,6 +1,6 @@
 Here is logged all modification made to the structure of this wiki (not its content), such as installation of extension and so.
 
-* 12/03/09 - JYT: installed the news channel extension, in version 1.52 for it seems incompatible with the mediawiki version we are running (1.10).
+* 12/03/09 - JYT: installed the [http://www.mediawiki.org/wiki/Extension:News_Channel news channel extension], in version 1.52 for newer ones seem to be incompatible with the mediawiki version we are running (1.10).
 
 * 05/11/08 - JYT: enabled TeX. <nowiki><math></nowiki> tags are now supported. Help on syntax can be found [http://meta.wikimedia.org/wiki/Help:Formula here].
 
