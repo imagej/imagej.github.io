@@ -1,6 +1,6 @@
 <h1>Clojure tutorial for ImageJ</h1>
 
-<p>Check out [http://clojure.sourceforge.net clojure web site] and particularly the chapter on [http://clojure.sourceforge.net/reference/java_interop.html Java interoperability].</p>
+<p>Check out [http://clojure.org clojure web site] and particularly the chapter on [http://clojure.org/java_interop Java interoperability].</p>
 
 <p>Clojure is <b>not</b> a scripting language: Clojure compiles directly to JVM bytecode, and thus runs at native speed. Thus one must think of Clojure as a true alternative to Java the language, but much more expressive, flexible and powerful.</p>
 
