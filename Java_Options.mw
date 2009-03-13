@@ -64,8 +64,14 @@ You may do the same with --jython and --jruby for the homonimous languages.
 
  ./fiji -Xincgc -server -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n
 
+To connect the debugger, launch the java debugger <i>jdb</i> at port 8010:
 
-I use many of the above combined into a script to launch fiji in an bash shell:
+ jdb -attach 8010
+
+See some examples on using the jdb to [http://albert.rierol.net/java_tricks.html#How%20to%20debug%20a%20multithreaded%20java%20program inspect the state of threads]. Very useful to suspend all or one thread, print out their current stack trace, and list their status: sleeping, waiting in a monitor (i.e. likely dead-locked), etc.
+
+
+I use many of the above combined into a script to launch fiji in a bash shell:
 
  cd /home/albert/Programming/fiji
  JAVA_HOME=/home/albert/Programming/fiji/java/linux/jdk1.6.0_10 ./fiji -Xincgc -server \
