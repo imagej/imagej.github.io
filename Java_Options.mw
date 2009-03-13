@@ -38,7 +38,7 @@ There are also some basic flags for logging runtime information:
 
 1. Run the JVM with fixed heap size at 4 Gb, and with incremental garbage collection.
 
- ./fiji -Xms4000m -Xmx4000 -Xincgc --
+ ./fiji -Xms4000m -Xmx4000m -Xincgc --
 
 * The fixed heap size prevents out of memory errors because there isn't ever the need to resize it. If you define -Xms256m and -Xmx4000m, then when in need of exceeding 256m, a greater heap is allocated on the fly and the old one copied into the new one, which will fail when the sum of the sizes of the old and the new are bigger than what the computer can handle (or so I've been told, and indeed fixed heap size helps a lot to prevent incomprehensible out of memory errors.)
 * The incremental garbage collection runs a garbage collection in a parallel thread, avoiding long pauses and avoiding heap build-up that could lead to incomprehensible out of memory errors when suddenly attempting to allocate a lot of heap.
@@ -46,16 +46,16 @@ There are also some basic flags for logging runtime information:
 
 2. Run the JVM as above, but launching a macro that opens a TrakEM2 project on startup.
 
- ./fiji -Xms4000m -Xmx4000 -Xincgc -- -eval "open('/path/to/project.xml');"
+ ./fiji -Xms4000m -Xmx4000m -Xincgc -- -eval "open('/path/to/project.xml');"
 
 
 3. Run the JVM as above, but opening a clojure prompt instead of launching fiji:
 
- ./fiji -Xms4000m -Xmx4000 -Xincgc --clojure
+ ./fiji -Xms4000m -Xmx4000m -Xincgc --clojure
 
 Even better if you have the jline library, enhance the clojure prompt with a up/down arrow history, etc.:
 
- ./fiji -Xms4000m -Xmx4000 -Xincgc -cp /path/to/clojure-contrib.jar:/path/to/jline.jar --main-class jline.ConsoleRunner clojure.lang.Repl
+ ./fiji -Xms4000m -Xmx4000m -Xincgc -cp /path/to/clojure-contrib.jar:/path/to/jline.jar --main-class jline.ConsoleRunner clojure.lang.Repl
 
 You may do the same with --jython and --jruby for the homonimous languages.
 
