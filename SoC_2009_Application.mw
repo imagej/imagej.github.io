@@ -19,13 +19,13 @@ fiji-devel@googlegroups.com
 
 == Description ==
 
-Fiji stands for "Fiji is Just ImageJ". ImageJ is a public domain scientific image processing application sponsored by the National Institute of Health. ImageJ runs on the Java Virtual Machine and thus has direct access to numerous and diverse public java libraries.
+<p>Fiji stands for "Fiji is Just ImageJ". [http://rsb.info.nih.gov/ij ImageJ] is a public domain scientific image processing application sponsored by the National Institute of Health. ImageJ runs on the Java Virtual Machine and thus has direct access to numerous and diverse public java libraries.</p>
 
-All Fiji project founders and contributors have written large plugin collections and ImageJ-centric applications. At some point, it was inevitable to merge our projects into a centralized and organized framework, which includes consistent and updated documentation for all its components.
+<p>All Fiji project founders and contributors have written large plugin collections and ImageJ-centric applications. At some point, it was inevitable to merge our projects into a centralized and organized framework, which includes consistent and updated documentation for all its components.</p>
 
-For the creation of Fiji, beyond our own ImageJ-centric applications, we selected and tested a subset of the literally thousands of open source plugins that exist for ImageJ, and integrated them along with several open source libraries into a consistent framework. Plugins added capabilities beyond mere image processing, including image segmentation, image registration, 3D visualization of image volumes, and support for a variety of JVM-supported scripting languages (so far: javascript, jython, jruby, clojure and beanshell).
+<p>For the creation of Fiji, beyond our own ImageJ-centric applications, we selected and tested a subset of the literally thousands of open source plugins that exist for ImageJ, and integrated them along with several open source libraries into a consistent framework. Plugins added capabilities beyond mere image processing, including image segmentation, image registration, 3D visualization of image volumes, and support for a variety of JVM-supported scripting languages (so far: javascript, jython, jruby, clojure and beanshell).</p>
 
-Fiji as a community is supported by a variety of scientific research institutions with vested interests on image processing, including but not limited to the Howard Hughes Medical Institute Janelia Farm, the Max Planck Institute for Cell Biology and Genetics, and the Institute of Neuroinformatics of the University of Zurich and ETH Zurich.
+<p>Fiji as a community is supported by a variety of scientific research institutions with vested interests on image processing, including but not limited to the Howard Hughes Medical Institute Janelia Farm, the Max Planck Institute for Cell Biology and Genetics, and the Institute of Neuroinformatics of the University of Zurich and ETH Zurich.</p>
 
 == Why is your group applying to participate? What do you hope to gain by participating? ==
 
