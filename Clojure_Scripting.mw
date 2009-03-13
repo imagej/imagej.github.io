@@ -389,7 +389,7 @@ The above works with both single images and stacks.
 <source lang="lisp">
 ; Obtain the pixels array from the current image
 (let [imp (ij.WindowManager/getCurrentImage)
-      pixels (.. imp (getProcessor) (getPixels))
+      pixels (.. imp getProcessor getPixels)
       min (apply min pixels)
       max (apply max pixels)]
     (println (str "min: " min ", max: " max)))
@@ -400,7 +400,7 @@ The above works with both single images and stacks.
 
 <source lang="lisp">
 (let [imp (ij.WindowManager/getCurrentImage)
-      pixels (.. imp (getProcessor) (getPixels))]
+      pixels (.. imp getProcessor getPixels)]
 
       ; First loop with "dotimes"
       (dotimes [i (count pixels)]
