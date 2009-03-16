@@ -95,6 +95,19 @@ The plugin manager will query a specific server based on pacific.mpi-cbg.de for 
 '''Language:''' Java or a JVM scripting language of your choice (preferrably Javascript, Jython, JRuby or Clojure).<br />
 '''Mentor:''' [http://www.ini.uzh.ch/people/acardona Albert Cardona] (acardona@ini.phys.ethz.ch), Johannes Schindelin (johannes.schindelin@gmx.de)<br />
 
+== N-dimensional Image container ==
+
+ImageJ has an abstraction of an image, called ImageProcessor, which is specialized by data type as ByteProcessor, ShortProcessor, ColorProcessor...  That only wraps 2-dimensional images, though.  For 3-dimensional images, you need to 
+use instances of the ImageStack class, and if you need even more dimensions, you need a HyperStack.
+
+This is a bit complicated for something as simple as an image data container.
+
+So some data structure is sorely needed, preferably with performant yet easy accessors to the data and metadata.
+
+'''Goal:''' Design and implement an efficient image data container.<br />
+'''Language:''' Java.<br />
+'''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)<br />
+
 = Other Resources =
  * [[SoC2009Application]]
 
