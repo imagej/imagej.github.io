@@ -1,13 +1,13 @@
 __NOTOC__
 
+{| align="right" border="1" width="350pt"
+ | [[Special:NewsChannel|News]]
+ |-
+ |<rss>http://pacific.mpi-cbg.de/wiki/index.php?title=Special%3ANewsChannel&format=rss20&limit=5|short|max=5</rss>
+ |}
+
 =<span style="line-height:48px; font-size:48px">'''Fiji'''</span>=
 '''Fiji''' Is Just [http://rsb.info.nih.gov/ij ImageJ] (batteries included)
-
-
-== News ==
-* Fiji was selected to participate in [http://socghop.appspot.com/ Google Summer of Code] (GSoC). Check out the project [http://pacific.mpi-cbg.de/wiki/index.php/SoC2009Ideas Ideas] page.
-* Fiji Hackathon in Dresden (March 24th - April 3rd)
-
 
 == Contents ==
 * Bundled [[:Category:Plugins|Plugins]]
