@@ -68,7 +68,7 @@ will pick up on all changes, rebuild what needs to be rebuilt, and run Fiji.
  The new way will be to either execute "fake.jar" directly, or start it using the Fiji launcher:
  
   $ cd fiji/
-  $ ./fiji --fake
+  $ ./fiji --build
 
 = Making changes =
 
