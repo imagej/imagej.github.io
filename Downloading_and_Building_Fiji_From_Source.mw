@@ -40,7 +40,7 @@ If you insist on not using Git, you can download a snapshot of Fiji [http://paci
 
 You should now be able to build Fiji with:
 
- sh Fake.sh run
+ sh Build.sh run
 
 ... which will invoke Fiji's multi-platform build system.  If all goes well, after some time you should see the main Fiji window:
 
