@@ -120,6 +120,8 @@ The core idea of this project is to generate a plugins manager, inspired in the 
 
 The lack of a plugin manager system is an enormous drag on the ability of good plugins to be widely distributed, and the ability of needy users to find them. The ability to be registered will also ensure proper compatibility with specific ImageJ versions, and the ability to track plugin versions.
 
+At the moment, there is a rudimentary [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Fiji_Updater/UpdateFiji.java plugin updater] which should be a good starting point for this project.
+
 '''Goal:''' Convert Fiji's update plugin into a proper plugin manager.<br />
 The GUI should have two main components: a tree with the plugins and a text pane for reading documentation.
 * The tree must mirror the user's plugins menu and provide the means to enable/disable plugins, i.e. to add/remove them from the menus. As well as indicate whether any updates are available for a plugin, or newly available plugins.
