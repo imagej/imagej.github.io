@@ -1,5 +1,7 @@
 Here is logged all modification made to the structure of this wiki (not its content), such as installation of extension and so.
 
+* 25/03/09 - JES: set $wgStyleVersion = '64'; in LocalSettings.php to force reloading the style sheet; While at it, set the permissions of /etc/mediawiki1.10/LocalSettings.php to -rw-r--r--.
+
 * 22/03/09 - JES: installed [http://www.mediawiki.org/wiki/Extension:RSS RSS extension] along with [https://sourceforge.net/project/showfiles.php?group_id=55691 MagpieRSS 0.72] to show our own news ;-)
 
 * 12/03/09 - JYT: installed the [http://www.mediawiki.org/wiki/Extension:News_Channel news channel extension], in version 1.52 for newer ones seem to be incompatible with the mediawiki version we are running (1.10).
