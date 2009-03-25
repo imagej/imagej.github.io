@@ -1,0 +1,6 @@
+== Lasso selection ==
+
+This selection tool has 2 modes: '''Lasso''' and '''Blow'''.
+
+
+The blow tool tries to find all points that have the same "distance" from the center as the location under the cursor.
