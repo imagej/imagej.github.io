@@ -1,21 +1,33 @@
 __NOTOC__
 
-=<span style="line-height:48px; font-size:48px">'''Fiji'''</span>=
 
-{| align="right" border="1" width="350pt"
- | [[Special:NewsChannel|News]]
- |-
- |<rss>http://pacific.mpi-cbg.de/wiki/index.php?title=Special%3ANewsChannel&format=rss20&limit=5|short|max=5</rss>
- |}
+=<span style="line-height:48px; font-size:48px">'''Fiji'''</span>=
 
 '''Fiji''' Is Just [http://rsb.info.nih.gov/ij ImageJ] (batteries included)
 
+<div style="width:49%; float:right; margin-left:1%">
+
+
+<div id="green">
+
+== [[Special:NewsChannel|News]] ==
+<rss>http://pacific.mpi-cbg.de/wiki/index.php?title=Special%3ANewsChannel&format=rss20&limit=5|short|max=5</rss>
+
+</div>
+</div>
+<div style="width:49%; float:left; margin-right:1%">
+
+
+<div id="blue">
 == Contents ==
 * Bundled [[:Category:Plugins|Plugins]]
 * [[Plugins Menu]]
 * [[:Category:Scripting|Scripting]]: in [[Javascript_Scripting|Javascript]], in [[JRuby_Scripting|JRuby]], in [[Jython_Scripting|Jython]], in [[Clojure_Scripting|Clojure]] (see also [[Scripting Help]]).
 * [[Developing_Fiji|Documentation]] for developers. '''[[Fake]]''' build system. [http://pacific.mpi-cbg.de/bugzilla/ Report a bug] and see [http://pacific.mpi-cbg.de/cgi-bin/bugzilla/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=&content= current bugs].
 * [[Help]]
+
+</div>
+</div>
 
 
 == Examples ==
