@@ -6,8 +6,6 @@ __NOTOC__
 '''Fiji''' Is Just [http://rsb.info.nih.gov/ij ImageJ] (batteries included)
 
 <div style="width:49%; float:right; margin-left:1%">
-
-
 <div id="green">
 
 == [[Special:NewsChannel|News]] ==
@@ -15,10 +13,10 @@ __NOTOC__
 
 </div>
 </div>
+
 <div style="width:49%; float:left; margin-right:1%">
-
-
 <div id="blue">
+
 == Contents ==
 * Bundled [[:Category:Plugins|Plugins]]
 * [[Plugins Menu]]
@@ -29,7 +27,9 @@ __NOTOC__
 </div>
 </div>
 
+<div style="clear:both"></div>
 
+<div id="orange" style="margin-top:1%; margin-bottom:1%" >
 == Examples ==
 
 {|
@@ -39,6 +39,13 @@ __NOTOC__
 |style="vertical-align:top" |[[Image:Simple-Neurite-Tracer.jpg|thumb|240px|Simple Neurite Tracer: semi-automatic tracing of neurons.]]<br />
 [[Image:Tem-42-33-f.png|thumb|240px|Feature correspondences: Automatically extracted landmark correspondences using the MOPS descriptor.]]
 |}
+
+</div>
+
+<div style="clear:both"></div>
+
+<div style="width:49%; float:left; margin-right:1%;">
+<div id="feedback" >
 
 == Projects ==
 
@@ -66,7 +73,13 @@ __NOTOC__
 ;[http://repo.or.cz/w/imageja.git/ ImageJA]
 * The core of Fiji.
 
-== Downloads ==
+</div>
+</div>
+
+<div style="width:49%; float:right; margin-left:1%; margin-bottom:1%">
+<div id="blue">
+
+== [[Downloads]] ==
 
 '''Update: new version "Luxembourg" was released.'''
 
@@ -74,8 +87,15 @@ __NOTOC__
 
 See the [[Downloads]] page for debian packages and others.
 
+</div>
+
+<div id="green" style="margin-top:1%">
+
 == License ==
 
 Fiji is released under the General Public License.
 
 Each component has [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=LICENSES;hb=HEAD its own license].
+
+</div>
+</div>
