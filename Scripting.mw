@@ -36,4 +36,12 @@ If you add a new script and ImageJ is running, just go to Plugins - Scripting an
 
 For the script to appear in the Plugin menus, it needs to terminate in the appropriate file extension. For example, ".js" for javascript, ".py" for jython, ".rb" for jruby, ".clj" for clojure, and ".bs" for beanshell script.
 
+== Running Scripts in Headless Mode ==
+
+If you want to run scripts in headless mode (i.e. without the GUI, by invoking fiji with the --headless option) then you have to make sure you run the appropriate "Refresh ... Scripts" plugin first.  Also, you need to append -batch to the command.  For example, if you have a script called test_ruby.rb, which appears in the Plugins menu somewhere as "test ruby", then you can run that with:
+
+  fiji --headless -eval 'run("Refresh JRuby Scripts",""); run("test ruby","");' -batch
+
+(If this gives you a NullPointerException in RefreshScripts, then you need a newer version of Fiji - a bug with this was fixed [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=commit;h=590059c5f8c74e47d4f648c5055fc72fa2074707 quite recently].)
+
 [[Category:Scripting]]
