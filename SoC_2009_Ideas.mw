@@ -44,7 +44,7 @@ its questions as part of your application.
 
 == General-purpose Image Processing Framework ==
 
-ImageJ has an abstraction of an image, called ImageProcessor, which is specialized by data type as ByteProcessor, ShortProcessor, ColorProcessor...  That only wraps 2-dimensional images, though.  For n-dimensional images, you need to use instances of the ImageStack class, and if you need even more dimensions, you need a HyperStack.
+ImageJ has an abstraction of an image, called ImageProcessor, which is specialized by data type as ByteProcessor, ShortProcessor, ColorProcessor...  That only wraps 2-dimensional images, though.  For 3-dimensional images, you need to use instances of the ImageStack class, and if you need even more dimensions, you need a HyperStack.
 
 This is a bit complicated for something as simple as an image data container.
 
