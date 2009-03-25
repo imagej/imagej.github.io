@@ -114,6 +114,16 @@ Quite a few algorithms are available as proof-of-concept Matlab scripts.  While 
 
 Happily, there is a Matlab clone written in Java: [http://www.jmathlib.de/ JMathLib].  While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that Matlab scripts can be executed just like all other ImageJ scripts, too.
 
+The project would consist of
+
+* getting as many .m scripts for image processing as possible,
+
+* integrating JMathLib as a script language into Fiji (using the infrastructure shared by Jython, JRuby, Clojure, Javascript and BeanShell) -- I suggest having a look at [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/JRuby/JRuby_Interpreter.java the JRuby Interpreter] for an example,
+
+* adapting (or overriding) JMathLib's image toolbox so that it integrates seamlessly with ImageJ,
+
+* test (and fix what does not work) as many .m scripts as possible.
+
 '''Goal:''' Integrate JMathLib as a new scripting language.<br />
 '''Language:''' Java.<br />
 '''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)<br />
