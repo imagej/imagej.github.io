@@ -42,6 +42,34 @@ its questions as part of your application.
 
 = Project ideas =
 
+== General-purpose Image Processing Framework ==
+
+ImageJ has an abstraction of an image, called ImageProcessor, which is specialized by data type as ByteProcessor, ShortProcessor, ColorProcessor...  That only wraps 2-dimensional images, though.  For n-dimensional images, you need to use instances of the ImageStack class, and if you need even more dimensions, you need a HyperStack.
+
+This is a bit complicated for something as simple as an image data container.
+
+So some data structure is sorely needed, preferably with performant yet easy accessors to the data and metadata.
+
+The idea is to have
+
+* an abstraction of the data type: a class that provides methods for performing arithmetics, to be specialized for all data types (byte, short, int, float, double, RGB, complex float and complex double),
+
+* an abstraction of a "cursor": a class that points to a certain location in an image,
+
+* a family of iterators that work on cursors,
+
+* interpolation, cropping and affine/non-linear transformations implemented in terms of iterators,
+
+* all kinds of cool stuff that will be now easy.
+
+Careful implementation of these ideas should result in a framework where you do not need to implement the same algorithm for every single data type, where the code is still readable, and which executes as fast as if the algorithm was implemented once per data type.
+
+This framework should also allow implementation of an efficient container for huge image data that keeps only a small fraction of the image in memory.
+
+'''Goal:''' Design and implement an efficient image framework.<br />
+'''Language:''' Java.<br />
+'''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)<br />
+
 == Integrate Micro-Manager into Fiji ==
 
 This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX and Windows.  The idea is to make a recipe that other people can use to compile new releases of [http://www.micro-manager.org/ Micro-Manager], as well as integrate it into the Fiji project for a smooth user experience.  To ensure that support for Micro-Manager is not broken inadvertently, you shall add regression tests, too.
@@ -94,34 +122,6 @@ The plugin manager will query a specific server based on pacific.mpi-cbg.de for 
 
 '''Language:''' Java or a JVM scripting language of your choice (preferrably Javascript, Jython, JRuby or Clojure).<br />
 '''Mentor:''' [http://www.ini.uzh.ch/people/acardona Albert Cardona] (acardona@ini.phys.ethz.ch), Johannes Schindelin (johannes.schindelin@gmx.de)<br />
-
-== General-purpose Image Processing Framework ==
-
-ImageJ has an abstraction of an image, called ImageProcessor, which is specialized by data type as ByteProcessor, ShortProcessor, ColorProcessor...  That only wraps 2-dimensional images, though.  For n-dimensional images, you need to use instances of the ImageStack class, and if you need even more dimensions, you need a HyperStack.
-
-This is a bit complicated for something as simple as an image data container.
-
-So some data structure is sorely needed, preferably with performant yet easy accessors to the data and metadata.
-
-The idea is to have
-
-* an abstraction of the data type: a class that provides methods for performing arithmetics, to be specialized for all data types (byte, short, int, float, double, RGB, complex float and complex double),
-
-* an abstraction of a "cursor": a class that points to a certain location in an image,
-
-* a family of iterators that work on cursors,
-
-* interpolation, cropping and affine/non-linear transformations implemented in terms of iterators,
-
-* all kinds of cool stuff that will be now easy.
-
-Careful implementation of these ideas should result in a framework where you do not need to implement the same algorithm for every single data type, where the code is still readable, and which executes as fast as if the algorithm was implemented once per data type.
-
-This framework should also allow implementation of an efficient container for huge image data that keeps only a small fraction of the image in memory.
-
-'''Goal:''' Design and implement an efficient image framework.<br />
-'''Language:''' Java.<br />
-'''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)<br />
 
 == Add JMathLib (Matlab clone) support ==
 
