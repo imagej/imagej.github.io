@@ -34,7 +34,7 @@ If you edit a script that is already placed in the menus, you don't need to do a
 
 If you add a new script and ImageJ is running, just go to Plugins - Scripting and run the appropriate Refresh * Scripts for the language.
 
-For the script to appear in the Plugin menus, it needs to terminate in the appropriate file extension. For example, ".js" for javascript, ".py" for jython, ".rb" for jruby, ".clj" for clojure, and ".bs" for beanshell script.
+For the script to appear in the Plugin menus, it needs to terminate in the appropriate file extension. For example, ".js" for javascript, ".py" for jython, ".rb" for jruby, ".clj" for clojure, and ".bs" for beanshell script.  The script must also contain a '_' (underscore) in the name.  The extension will be stripped and any underscores will be turned into spaces before the script is added to the menus.
 
 == Running Scripts in Headless Mode ==
 
