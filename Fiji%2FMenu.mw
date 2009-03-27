@@ -213,9 +213,9 @@ Non-destructive stitching is available via [[TrakEM2]] (i.e. floating, adjustabl
 * '''Test Java3D''':
 
 
-=== Select ===
+=== Edit>Selection ===
 
-* [Straighten...]:
+* [[Straighten...]]:
 
 [[Category:Plugins]]
 
