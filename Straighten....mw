@@ -10,4 +10,6 @@ Then select the Edit > Selection > Straighten... menu option and you should be p
 
 Note that you will not be prompted for the line width when running the plugin a second time - you can change the line width with Image > Adjust > Line Width...
 
+The two images composed are shown below:
+
 [[Image:Tutorial-bananas-result.jpg|The original banana and the straightened version]]
