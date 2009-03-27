@@ -212,6 +212,11 @@ Non-destructive stitching is available via [[TrakEM2]] (i.e. floating, adjustabl
 * '''Test Marching Cubes''':
 * '''Test Java3D''':
 
+
+=== Select ===
+
+* [Straighten...]:
+
 [[Category:Plugins]]
 
 [[Category:Menus]]
