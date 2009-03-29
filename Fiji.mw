@@ -1,12 +1,11 @@
 __NOTOC__
-=<span style="line-height:48px; font-size:48px">'''Fiji'''</span>=
-
 <div style="width:400px; float:right; margin-left:1%">
 <div id="green">
 == [[Special:NewsChannel|News]] ==
 <rss>http://pacific.mpi-cbg.de/wiki/index.php?title=Special:NewsChannel&format=rss20&limit=5|short|max=5</rss>
 </div>
 </div>
+=<span style="line-height:48px; font-size:48px">'''Fiji'''</span>=
 
 [[About|Fiji]] Is Just [http://rsb.info.nih.gov/ij ImageJ] (batteries included) -- see [[About|About Fiji]].
 
