@@ -135,6 +135,21 @@ The plugin manager will query a specific server based on pacific.mpi-cbg.de for 
 '''Language:''' Java or a JVM scripting language of your choice (preferrably Javascript, Jython, JRuby or Clojure).<br />
 '''Mentor:''' [http://www.ini.uzh.ch/people/acardona Albert Cardona] (acardona@ini.phys.ethz.ch), Johannes Schindelin (johannes.schindelin@gmx.de)<br />
 
+== Provide cluster support for Fiji ==
+
+Fiji runs fine on desktop machines, but for some tasks, it is better to use a cluster.
+
+To that end, Fiji already supports "headless" mode, i.e. operation without the need to have a graphical user interface running.  But that is not enough:
+
+* There must be an easy way to define what operation should be performed on what set of images, or on what set of subimages.
+* Clusters come in all kinds of flavors with a lot of different schedulers.  A general backend with adapters for the most common schedulers will be needed.
+* The user should have a nice user interface to see the progress, and the end result.
+* For convenience, Fiji should offer the option to make sure that the current Fiji is installed.
+
+'''Goal:''' Add a component to schedule processes.<br />
+'''Language:''' Java.<br />
+'''Mentor:''' Pavel Tomancak, Johannes Schindelin (johannes.schindelin@gmx.de)<br />
+
 == Add JMathLib (Matlab clone) support ==
 
 Quite a few algorithms are available as proof-of-concept Matlab scripts.  While it is [ftp://ftp.alvyray.com/Acrobat/6_Pixel.pdf wrong to think of pixels as little squares], and literally all Matlab scripts to perform image processing are suffering from that shortcoming, it would be very nice nevertheless to be able to run the scripts without having to buy Matlab licenses just for that purpose.
