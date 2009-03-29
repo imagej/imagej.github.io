@@ -11,8 +11,8 @@ __NOTOC__
 
 
 == Contents ==
-* Bundled [[:Category:Plugins|Plugins]]
-* [[Plugins Menu]]
+* Descriptions of bundled [[:Category:Plugins|Plugins]].
+* A detailed overview of the [[Plugins Menu]].
 * [[:Category:Scripting|Scripting]]: in [[Javascript_Scripting|Javascript]], in [[JRuby_Scripting|JRuby]], in [[Jython_Scripting|Jython]], in [[Clojure_Scripting|Clojure]] (see also [[Scripting Help]]).
 * [[Developing_Fiji|Documentation]] for developers. '''[[Fiji Build System]]''' build system. [http://pacific.mpi-cbg.de/bugzilla/ Report a bug] and see [http://pacific.mpi-cbg.de/cgi-bin/bugzilla/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=&content= current bugs].
 * Find contact information and help (also about the Wiki markup syntax, or how to get an account) [[Help|here]].
