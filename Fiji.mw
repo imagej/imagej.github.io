@@ -5,8 +5,14 @@ __NOTOC__
 
 =<span style="line-height:48px; font-size:48px">'''Fiji'''</span>=
 
-[[About|Fiji]] Is Just [http://rsb.info.nih.gov/ij ImageJ] (batteries included) -- see [[About|About Fiji]].
+<div style="width:49%; float:right; margin-left:1%">
+<div id="green">
+== [[Special:NewsChannel|News]] ==
+<rss>http://pacific.mpi-cbg.de/wiki/index.php?title=Special:NewsChannel&format=rss20&limit=5|short|max=5</rss>
+</div>
+</div>
 
+[[About|Fiji]] Is Just [http://rsb.info.nih.gov/ij ImageJ] (batteries included) -- see [[About|About Fiji]].
 
 
 == Contents ==
@@ -15,11 +21,6 @@ __NOTOC__
 * [[:Category:Scripting|Scripting]]: in [[Javascript_Scripting|Javascript]], in [[JRuby_Scripting|JRuby]], in [[Jython_Scripting|Jython]], in [[Clojure_Scripting|Clojure]] (see also [[Scripting Help]]).
 * [[Developing_Fiji|Documentation]] for developers. '''[[Fake]]''' build system. [http://pacific.mpi-cbg.de/bugzilla/ Report a bug] and see [http://pacific.mpi-cbg.de/cgi-bin/bugzilla/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=&content= current bugs].
 * [[Help]]
-
-
-== [[Special:NewsChannel|News]] ==
-<rss>http://pacific.mpi-cbg.de/wiki/index.php?title=Special:NewsChannel&format=rss20&limit=5|short|max=5</rss>
-
 
 == Examples ==
 
