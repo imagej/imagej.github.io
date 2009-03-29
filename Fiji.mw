@@ -1,20 +1,13 @@
 __NOTOC__
 
 
+__NOTOC__
+
 =<span style="line-height:48px; font-size:48px">'''Fiji'''</span>=
 
-'''[[WhatIsFiji|Fiji]]''' Is Just [http://rsb.info.nih.gov/ij ImageJ] (batteries included)
-
-<div style="width:49%; float:left; margin-left:1%">
-<div id="green">
-
-== [[Special:NewsChannel|News]] ==
-<rss>http://pacific.mpi-cbg.de/wiki/index.php?title=Special:NewsChannel&format=rss20&limit=5|short|max=5</rss>
-
-</div>
+[[About|Fiji]] Is Just [http://rsb.info.nih.gov/ij ImageJ] (batteries included) -- see [[About|About Fiji]].
 
 
-<div id="blue">
 
 == Contents ==
 * Bundled [[:Category:Plugins|Plugins]]
@@ -23,18 +16,11 @@ __NOTOC__
 * [[Developing_Fiji|Documentation]] for developers. '''[[Fake]]''' build system. [http://pacific.mpi-cbg.de/bugzilla/ Report a bug] and see [http://pacific.mpi-cbg.de/cgi-bin/bugzilla/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=&content= current bugs].
 * [[Help]]
 
-</div>
-</div>
 
-<div style="width:49%; float:left; margin-right:1%">
-<div id="orange" style="margin-left:1%; margin-bottom:1%" >
-{{WhatIsFiji}}
-</div>
-</div>
+== [[Special:NewsChannel|News]] ==
+<rss>http://pacific.mpi-cbg.de/wiki/index.php?title=Special:NewsChannel&format=rss20&limit=5|short|max=5</rss>
 
-<div style="clear:both"></div>
 
-<div id="orange" style="margin-top:1%; margin-bottom:1%" >
 == Examples ==
 
 {|
@@ -45,12 +31,6 @@ __NOTOC__
 [[Image:Tem-42-33-f.png|thumb|240px|Feature correspondences: Automatically extracted landmark correspondences using the MOPS descriptor.]]
 |}
 
-</div>
-
-<div style="clear:both"></div>
-
-<div style="width:49%; float:left; margin-right:1%;">
-<div id="feedback" >
 
 == Projects ==
 
@@ -78,11 +58,6 @@ __NOTOC__
 ;[http://repo.or.cz/w/imageja.git/ ImageJA]
 * The core of Fiji.
 
-</div>
-</div>
-
-<div style="width:49%; float:right; margin-left:1%; margin-bottom:1%">
-<div id="blue">
 
 == [[Downloads]] ==
 
@@ -92,15 +67,9 @@ __NOTOC__
 
 See the [[Downloads]] page for debian packages and others.
 
-</div>
-
-<div id="green" style="margin-top:1%">
 
 == License ==
 
 Fiji is released under the General Public License.
 
 Each component has [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=LICENSES;hb=HEAD its own license].
-
-</div>
-</div>
