@@ -66,6 +66,10 @@ Careful implementation of these ideas should result in a framework where you do 
 
 This framework should also allow implementation of an efficient container for huge image data that keeps only a small fraction of the image in memory.
 
+The minimal goal is a set of "data type", "cursor" and "iterator" implementations that wrap the available image types in ImageJ.
+
+''Note'': this project idea is already pretty detailed (so there will be less need for the student to come up with own ideas, or with researching existing code), but the implementation will require some determination (the project is not trivial).  To prove that the project will go anywhere, the student will have to add something in the project application in addition to what is written here, to demonstrate the capability of finishing the project.
+
 '''Goal:''' Design and implement an efficient image framework.<br />
 '''Language:''' Java.<br />
 '''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)<br />
