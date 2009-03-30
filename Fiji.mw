@@ -1,13 +1,19 @@
 __NOTOC__
-<div style="width:400px; float:right; margin-left:1%">
-<div id="green">
-== [[Special:NewsChannel|News]] ==
-<rss>http://pacific.mpi-cbg.de/wiki/index.php?title=Special:NewsChannel&format=rss20&limit=5|short|max=5</rss>
-</div>
-</div>
 =<span style="line-height:48px; font-size:48px">'''Fiji'''</span>=
+[[About|Fiji]] is an image processing package based on [http://rsb.info.nih.gov/ij ImageJ].
 
-[[About|Fiji]] Is Just [http://rsb.info.nih.gov/ij ImageJ] (batteries included) -- see [[About|About Fiji]].
+For users, Fiji is [[Downloads|easy to install]] and update, bundles a [[:Category:Plugins|set of plugins]] in a [[Plugins Menu|coherent menu structure]] (and updatable), along with comprehensive documentation.
+
+For [[Developing_Fiji|developers]], Fiji as an open source project is hosted on a git source version control [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi repository], with access to the source code of all internals, libraries and plugins, and eases the [[Developing_Fiji|development]] and [[:Category:Scripting|scripting]] of plugins.
+
+<b><i>[[Downloads|Download Fiji now]]</i></b>
+<span class="plainlinks">[{{SERVER}}{{localurl:Downloads}} http://pacific.mpi-cbg.de/wiki/images/0/04/Dai.png]</span>
+
+== News ==
+<rss>http://pacific.mpi-cbg.de/wiki/index.php?title=Special:NewsChannel&format=rss20&limit=5|short|max=5</rss>
+
+
+Browse the [[:Category:News|news archive]].
 
 
 == Contents ==
@@ -17,7 +23,8 @@ __NOTOC__
 * [[Developing_Fiji|Documentation]] for developers. '''[[Fiji Build System]]''' build system. [http://pacific.mpi-cbg.de/bugzilla/ Report a bug] and see [http://pacific.mpi-cbg.de/cgi-bin/bugzilla/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=&content= current bugs].
 * Find contact information and help (also about the Wiki markup syntax, or how to get an account) [[Help|here]].
 
-== Examples ==
+
+== Snapshots ==
 
 {|
 |style="vertical-align:top" |[[Image:Trakem2-snap.jpg|thumb|240px|TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each.]]<br />
