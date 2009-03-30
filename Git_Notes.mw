@@ -40,8 +40,8 @@ logout
 cd ~/local
 git remote add origin ssh://you@server/home/you/remote.git
 git push origin master
-git-config branch.master.remote origin
-git-config branch.master.merge refs/heads/master
+git config branch.master.remote origin
+git config branch.master.merge refs/heads/master
 </source>
 <dd>Creates a bare remote repository at <code>ssh://server/home/you/remote.git</code> that tracks your local repository in <code>/home/you/local</code>.  Adopted from [[http://toolmantim.com/articles/setting_up_a_new_remote_git_repository Tim Lucas]].
 </dl>
