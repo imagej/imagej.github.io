@@ -45,7 +45,7 @@ Fiji accepts plugins written in [http://www.mcdb.ucla.edu/research/hartenstein/a
 
 The plugins/Examples folder contains numerous plugins in all supported languages, heavily commented.
 
-There is an [http://www.mcdb.ucla.edu/research/hartenstein/acardona/imagej_programming_tutorials.html introductory tutorial to ImageJ programming in Java]. The tutorial contains explanations on ImageJ datastructures (ImagePlus, ImageProcessor, Regions of Interest or ROIs, etc).
+There is an [http://albert.rierol.net/imagej_programming_tutorials.html introductory tutorial to ImageJ programming in Java]. The tutorial contains explanations on ImageJ datastructures (ImagePlus, ImageProcessor, Regions of Interest or ROIs, etc).
 
 See [[Scripting Help]] for details on how to develop, test and run ImageJ plugins written in the supported scripting languages.
 
