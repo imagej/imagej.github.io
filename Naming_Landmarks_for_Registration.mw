@@ -1,3 +1,5 @@
+[[Name Landmarks and Register]]
+
 The Name_Landmarks plugin provides a simple interface for marking named points in images, and optionally to register two images based on the named points that occur in both.  The following tutorial describes how to do this.
 
 Registration is done to a template image, so if you wish to register a image to the template then at a high level what you need to do is:
