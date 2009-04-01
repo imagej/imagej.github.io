@@ -40,7 +40,7 @@ We will set 6 different named points in this template image.  For registration i
 
 This is the image that we are going to use as a template for all the subsequent images, so we should set this as the default template.  To do that, following the following steps:
 
-# Save the points file by clicking on "Save".  This should suggest the filename of the image, but with the extension changed to ".points".  (e.g. if the image name is test.tif, the suggested points filename is test.points.)  You should stick to this convention so that the Name_Landmarks plugin can automatically find the points files for your images.
+# Save the points file by clicking on "Save".  This should suggest the filename of the image, but with the extension changed to ".points".  (e.g. if the image name is test.tif, the suggested points filename is test.points.)  You should stick to this convention so that the ''Name Landmarks and Register'' plugin can automatically find the points files for your images.
 # Load this image as a template filename.  You do this by clicking on "Choose Template" and selecting the file containing the template '''image'''.  (i.e. when choosing the template, it's the image file, not the points file, that you want to select.)
 # Click on "Set As Default" to store the name of this template file as an ImageJ preference.  This is recommended so that the next time your start the plugin it can load the template image and template points for you automatically.
 
@@ -50,7 +50,7 @@ Once you've selected the image, the interface will look like this:
 
 Next we will move on to marking up an image that we'd like to register to the template, so click the "Close" button in the dialog or close the dialog in the normal way.  Close the template image as well.
 
-Now we load in the new image for registration, and run the Name_Landmarks plugin again.  If you set the template image as the default template then you should see that the dialog is populated with the names of the points that have been marked in the template, but with no positions set yet:
+Now we load in the new image for registration, and run the ''Name Landmarks and Register'' plugin again.  If you set the template image as the default template then you should see that the dialog is populated with the names of the points that have been marked in the template, but with no positions set yet:
 
 [[Image:Landmarks-07-floating-image.png|Landmarks-07-floating-image.png]]
 
