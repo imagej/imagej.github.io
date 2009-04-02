@@ -174,7 +174,7 @@ The project would consist of
 
 The idea is to be able to display multiple virtual hyperstack-type data sets in a single multi-color composite window. I've already arranged this using multiple QuickTime Movies or AVIs. But the ideal will be to allow overlay from mixed data of any of the many BioFormats-supported file types.
 
-The user would be able to overlay, realign and fit the separate channels in 4 dimensions, and then synchronously browse the composite view in XYT. There should be some demand for this functionality, especially with the very large data repositories being made by many labs in different file formats. Enabling automatic spatial calibration from metadata would allow measurements analysis of all channels with regions of interest addressing all of the overlaid data.
+The user would be able to overlay, realign and fit the separate channels in 4 dimensions, and then synchronously browse the composite view in ZT dimensions. There should be some demand for this functionality, especially with the very large data repositories being made by many labs in different file formats. Enabling automatic spatial calibration from metadata would allow measurements analysis of all channels with regions of interest addressing all of the overlaid data.
 
 The project would consist of
 
