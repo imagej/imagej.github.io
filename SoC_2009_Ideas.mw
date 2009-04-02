@@ -170,6 +170,18 @@ The project would consist of
 '''Language:''' Java.<br />
 '''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)<br />
 
+== Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window ==
+
+
+
+The project would consist of
+
+* 
+
+'''Goal:''' Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window.<br />
+'''Language:''' Java.<br />
+'''Mentor:''' Bill Mohler (wmohler@neuron.uchc.edu)<br />
+
 = Other Resources =
  * [[SoC2009Application]]
 
