@@ -180,7 +180,7 @@ The project would consist of
 
 * Writing a class extending VirtualStack.java class for each type of input data file series.  Currently, these exist for FileSeriesFromList and QTVirtualStack.
 
-* Create a MultiVirtualHyperStack.java class that can organize multiple VirtualStack types into a single VirtualHyperStack displayed via a single ImagePlus and StackWindow.  The getProcessor() method in this class must be able to sort out the file coordinates of any channel/slice/frame requested from the mixed-format virtual stack.
+* Create a MultiVirtualHyperStack.java class that can organize multiple VirtualStack types into a single VirtualHyperStack displayed via a single ImagePlus and StackWindow.  The getProcessor() method in this class must be able to sort out the file coordinates of any channel/slice/frame requested from the mixed-format virtual stack and call getProcessor() from each of the specialized VirtualStack classes for each format.
 
 * Create a control panel that allows adjustments of XYZT position for any single VirtualHyperStack that is a component of the mixed overlay window.
 
