@@ -17,7 +17,7 @@ This will start the bisection process, i.e. it will try to find a revision that 
 In our case, let's just test the Fiji launcher:
 
 <pre>
-~/fiji$ make fiji-linux && ./fiji-linux
+~/fiji$ ./Build.sh fiji && ./fiji
 </pre>
 
 If the test is undecided (for example, it does not compile at all), mark it with
