@@ -59,16 +59,9 @@ Note: You should always commit your changes before pulling.
 A simple
 
  $ cd fiji/
- $ make
+ $ sh Build.sh run
 
 will pick up on all changes, rebuild what needs to be rebuilt, and run Fiji.
-
- In future versions of Fiji, we will no longer rely on "make" being present, although it will always continue to work if available.
- 
- The new way will be to either execute "fake.jar" directly, or start it using the Fiji launcher:
- 
-  $ cd fiji/
-  $ ./fiji --build
 
 = Making changes =
 
