@@ -17,3 +17,47 @@ The project would consist of
 '''Goal:''' Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window.<br />
 '''Language:''' Java.<br />
 '''Contact:''' Bill Mohler (wmohler@neuron.uchc.edu)<br />
+
+= Suggestions by Gabriel Landini =
+
+== Alpha_shapes / concave_hull / Graph Theory constructs (in addition to the Delaunay/Voronoi) ==
+
+== Colorizing algorithms (i.e greyscale to colour,there are several methods) ==
+
+== Retinex algorithm ==
+
+== Interactively adjustable intensity/LUT curves (not just linear controls, but splines/etc based) ==
+
+== Support for storing ROIs in TIFF tag fields, so ROIs can be saved with the images) ==
+
+== Expand the ImageFlow module base (not sure if the source is available yet) ==
+
+== Object (rather than image) selector/sorter (something like Kai's pixolu.de) ==
+
+If you haven't tried it, you should) to create "objects like these" filters/classifiers to be extracted from images and sets of images.
+
+== Interface between R and ImageJ/Fiji ==
+
+Dimiter Prodanov has done something like this, but it would be nice to have a set of implemented procedures so IJ/Fiji can run statistical procedures directly from Results tables, etc).
+
+== A set of more powerful painting brushes and image editing tools ==
+
+== Cross platform webcam support (to produce cheap videomicroscope/telescope units) ==
+
+== Fractal interpolation resizing (from the GIMP GSoC entry) ==
+
+== A unique/common segmentation interface ==
+
+I have collected near 15 new histogram segmentation methods that would be better put under a single interface together with others already available.
+
+== A javascript Recorder ==
+
+Similar to the Macro Recorder but producing javascript instead.
+
+== Virtual microscope-like image viewer ==
+                                                                                
+== HSB/Lab painting modes ==
+
+= Other resources =
+
+There is a wish list on the [http://imagejdocu.tudor.lu/doku.php?id=wishlist:start&s%5b%5d=ideas ImageJ Documentation Wiki].
