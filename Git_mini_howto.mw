@@ -30,7 +30,7 @@ As mentioned in "Cloning", you should clone from ssh://contrib@pacific.mpi-cbg.d
 Before doing anything else, you should create a local "contrib" branch:
 
  $ cd fiji/
- $ git checkout -b contrib contrib/master
+ $ git checkout -b contrib origin/master
 
 You should name the local branch ''contrib'', because pacific's ''contrib'' user -- in exchange for not needing a password -- can only write to the ''contrib'' branch.  In other words, if you use a different branch, all will work well locally, but when you try to push your changes upstream, it will fail.
 
