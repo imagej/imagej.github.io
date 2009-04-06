@@ -6,6 +6,17 @@
 {{!}} {{{author|}}}
 {{!}}-
 }}
+{{#if:{{{logo|}}}|
+! Logo
+{{!}} {{{logo|}}}
+{{!}}-
+}}
+{{#if:{{{screenshot|}}}|
+! Screenshot
+{{!}} {{{screenshot|}}}
+{{!}}-
+}}
+
 
 ! Maintainer
 {{!}} {{{maintainer|}}}
