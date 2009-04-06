@@ -1,0 +1,24 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Stack manipulation
+| author                 = various (see below)
+| maintainer             = Jean-Yves Tinevez ([mailto:tinevez@mpi-cbg.de tinevez@mpi-cbg.de])
+| filename               = Stack_Manipulation.jar
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Stack_Manipulation;hb=HEAD on gitweb] (10 files)
+| latest version         = 06 April 2009
+| status                 = stable, not active 
+}}
+
+This package regroup various "small" plugins dedicated to the manipulation of stacks, allowing to sort them, combine them, etc...
+As they are more of a utility package, they all can be found in the ''Image > Stacks'' menu.
+
+
+What they do is pretty much summarized by the following diagram, taken from the MacBiophotonics<ref>http://www.macbiophotonics.ca/imagej/stack.htm</ref> webpage. 
+
+[[Image:Stack Manipulation.jpg]]
+
+
+<references/>
+
+
+[[Category:Plugins]]
