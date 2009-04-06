@@ -6,6 +6,11 @@
 {{!}} {{{author|}}}
 {{!}}-
 }}
+{{#if:{{{maintainer|}}}|
+! Maintainer
+{{!}} {{{maintainer|}}}
+{{!}}-
+}}
 {{#if:{{{filename|}}}|
 ! File
 {{!}} {{{filename|}}}
@@ -41,13 +46,18 @@
 {{!}} {{{website|}}}
 {{!}}-
 }}
-|}</includeonly><noinclude>
+|}</includeonly>
+
+<noinclude>
+
 ==Usage==
+
 <pre>
 {{Infobox Plugin
 | name                   =
 | software               =
 | author                 =
+| maintainer             = 
 | filename               =
 | source                 =
 | released               =
@@ -63,6 +73,7 @@
 | name                   = Some plugin name
 | software               = Software name
 | author                 = John Smith ([mailto:john@smith.org john@smith.org])
+| maintainer             = Bob Doe ([mailto:bob@doe.org bob@dod.org])
 | filename               = [http://example.org/some.class some.class] (xx,xxx Bytes)
 | source                 = [http://example.org/some.java some.java] (xx,xxx Bytes)
 | released               = 01 January 1900
@@ -76,6 +87,7 @@
 | name                   = Some plugin name
 | software               = Software name
 | author                 = John Smith ([mailto:john@smith.org john@smith.org])
+| maintainer             = Bob Doe ([mailto:bob@doe.org bob@dod.org])
 | filename               = [http://example.org/some.class some.class] (xx,xxx Bytes)
 | source                 = [http://example.org/some.java some.java] (xx,xxx Bytes)
 | released               = 01 January 1900
