@@ -6,7 +6,7 @@
 {{!}} {{{author|}}}
 {{!}}-
 }}
-{{#if:{{{maintainer|}}}|
+{|
 ! Maintainer
 {{!}} {{{maintainer|}}}
 {{!}}-
