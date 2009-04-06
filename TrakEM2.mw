@@ -2,6 +2,7 @@
 | software               = ImageJ
 | name                   = TrakEM2
 | author                 = Albert Cardona
+| maintainer             = Albert Cardona ([mailto:acardona@ini.phys.ethz.ch acardona@ini.phys.ethz.ch])
 | filename               = [http://www.ini.uzh.ch/~acardona/jars/TrakEM2_.jar TrakEM2_.jar] 
 | source                 = [http://repo.or.cz/w/trakem2.git]
 | released               = May 2006
