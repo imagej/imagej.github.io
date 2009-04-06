@@ -1,5 +1,7 @@
 Here is logged all modification made to the structure of this wiki (not its content), such as installation of extension and so.
 
+* 06/04/09 - JYT - installed [http://www.mediawiki.org/wiki/Extension:Cite/Cite.php Cite extension], version 1.10, that enable to have <nowiki><ref></nowiki> tags for footnotes.
+
 * 30/03/09 - ACT: added $wgAllowExternalImages = true; in LocaSettings.php to enable showing external images.
 
 * 25/03/09 - JES: set $wgStyleVersion = '64'; in LocalSettings.php to force reloading the style sheet; While at it, set the permissions of /etc/mediawiki1.10/LocalSettings.php to -rw-r--r--.
