@@ -1,3 +1,20 @@
+{{Infobox Plugin
+| logo                   = [[Image:Fiji.jpg]]
+| screenshot             = [[Image:LS.2b.progress.png|200px]]
+| software               = ImageJ
+| name                   = Level Sets
+| author                 = Erwin Frise
+| maintainer             = Albert Cardona ([mailto:acardona@ini.phys.ethz.ch acardona@ini.phys.ethz.ch])
+| filename               =  
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/level_sets/levelsets;hb=HEAD on gitweb]
+| released               = August 2008
+| latest version         = February 2009
+| status                 = active
+| category               = [[:Category:Segmentation]]
+}}
+
+
+
 == Level Sets and Fast Marching ==
 
 === Introduction === 
