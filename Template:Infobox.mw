@@ -6,11 +6,11 @@
 {{!}} {{{author|}}}
 {{!}}-
 }}
-{{|
+
 ! Maintainer
 {{!}} {{{maintainer|}}}
 {{!}}-
-}}
+
 {{#if:{{{filename|}}}|
 ! File
 {{!}} {{{filename|}}}
