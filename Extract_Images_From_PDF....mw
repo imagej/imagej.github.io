@@ -1,3 +1,16 @@
+{{Infobox Plugin
+| software               = Fiji
+| name                   = Extract Images From PDF
+| author                 = Albert Cardona
+| maintainer             = Albert Cardona ([mailto:acardona@ini.phys.ethz.ch acardona@ini.phys.ethz.ch])
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/IO_/io/Extract_Images_From_PDF.java;hb=HEAD on gitweb] (60 lines)
+| released               = 2008
+| latest version         = ?
+| status                 = stable, not active
+| category               = [[:Category:Import-Export]]
+}}
+
+
 Select File / Import / Extract Images From PDF...
 
 A dialog pops up to pick a file. Choose a .pdf file, and all its images will be opened as ImageJ images, in their original resolution.
@@ -6,7 +19,9 @@ A dialog pops up to pick a file. Choose a .pdf file, and all its images will be 
 
 If the PDF file is on the web, use a macro or script to call the plugin with the URL as argument:
 
+<source lang="java">
   IJ.runPlugIn("io.Extract_Images_From_PDF", "http://www.example.org/slides.pdf")
+</source>
 
 For example, open the Jython Interpreter from Plugins / Scripting / Jython Interpreter (See [[Scripting Help]]), and paste the above with a desired .pdf URL argument. 
 
