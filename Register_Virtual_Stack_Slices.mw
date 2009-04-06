@@ -1,3 +1,16 @@
+{{Infobox Plugin
+| name                   = Register Virtual Stack Slices
+| software               = Fiji
+| author                 = Albert Cardona ([mailto:acardona@ini.phys.ethz.ch acardona@ini.phys.ethz.ch])
+| maintainer             = Albert Cardona ([mailto:acardona@ini.phys.ethz.ch acardona@ini.phys.ethz.ch])
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/register_virtual_stack_slices/register_virtual_stack/Register_Virtual_Stack_MT.java;hb=HEAD on gitweb] (276 lines)
+| released               = 2008
+| latest version         = ?
+| status                 = stable, not active
+| category               = [[:Category:Registration]], [[:Category:Plugins]]
+}}
+
+
 <p>This plugin takes a list of image slices stored in a folder, and delivers a list of registered image slices (with enlarged canvas).</p>
 <p>The registration is translation only, or rotation+translation. No scaling, no non-linear deformations.</p>
 <p>The process is as follows:
