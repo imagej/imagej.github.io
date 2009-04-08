@@ -81,6 +81,38 @@ To work with Fiji, launch first the ImageJ window:
 
 Eedit a clojure file and \ef to require the complete file. Then, on the file itself, you may run any part of the clojure code using VimClojure's capabilities (selected text, or the top-level function that includes the cursor, etc.)
 
+
+<h4>Running Clojure files from the command line</h4>
+Fiji can execute any clojure file directly:
+
+ ./fiji plugins/Examples/blend_two_images.clj
+
+The file will run with the full classpath as set by fiji, which includes all jars in fiji/jars and fiji/plugins/ folders, among others.
+
+<h4>Getting a REPL without the usual ImageJ GUI</h4>
+The simplest is:
+
+  ./fiji --clojure
+
+... which you may enrich with memory settings, incremental garbage collection (works great for multicore CPUs), the enhanced JIT (server flag), and a debugger agent (and any other JVM flag):
+
+  ./fiji -Xmx2000m -Xincgc -server -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n --clojure --
+
+Above, <b>notice the ending double dash --</b> which separates Fiji/JVM options from ImageJ options (in this case, none).
+
+For a nicer Repl, you may want to run the clojure.lang.Repl via the jline.ConsoleRunner, which gives you up and down arrow navigation, etc:
+
+  ./fiji -Xmx2000m -Xincgc -server -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n \
+         --main-class jline.ConsoleRunner -- clojure.lang.Repl
+
+Note that we put the double-dash between <i>jline.ConsoleRunner</i> (the main class to launch) and <i>clojure.lang.Repl</i> (its arguments).
+
+If no JVM arguments were specified, there's no need for the double dash:
+
+  ./fiji --main-class jline.ConsoleRunner clojure.lang.Repl
+
+Just make sure to have the jline.jar in your classpath (or drop it into fiji/jars folder).
+
 <h3>Language basics</h3>
 <p>A ';' defines the start of a comment, just like '//' does in Java.</p>
 <p>A function definition declares parameters within [].</p>
