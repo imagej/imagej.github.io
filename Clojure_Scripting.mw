@@ -30,6 +30,10 @@ The script is <b>always</b> read directly from the source file, so no updating o
 
 <h4>Clojure, VimClojure and Fiji</h4>
 
+Clojure programs may run from the Fiji main window menus, as plugins, and also from the Clojure Interpreter GUI.<br />
+But you can also use the Fiji environment as a standalone, to both run and develop clojure programs.<br />
+A very convenient way to do so is directly from ViM.
+
 [http://www.vim.org Vim] is a very powerful text editor.
 
 http://kotka.de/projects/clojure/vimclojure.html VimClojure] is a clojure environment for Vim, to edit and run clojure code within Vim.
