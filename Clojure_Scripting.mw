@@ -82,8 +82,7 @@ To work with Fiji, launch first the ImageJ window:
 
 ... and then just run any image processing code you want!
 
-Eedit a clojure file and \ef to require the complete file. Then, on the file itself, you may run any part of the clojure code using VimClojure's capabilities (selected text, or the top-level function that includes the cursor, etc.)
-
+Edit a clojure file and \ef to require the complete file. Then, on the file itself, you may run any part of the clojure code using VimClojure's capabilities (selected text, or the top-level function that includes the cursor, etc.)
 
 <h4>Running Clojure files from the command line</h4>
 Fiji can execute any clojure file directly:
