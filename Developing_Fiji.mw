@@ -18,7 +18,7 @@ However, it is much more powerful than that.  Amongst other things, you can
 * Run [[Fiji Build System]]: '''./fiji --build plugins/lens_correction.jar'''
 * Compile a Java class: '''./fiji --javac example.java'''
 * Run a Java class' main() method: '''./fiji --main-class=example'''
-* Pass some Java options: '''./ fiji -server --''' (everything that comes before a '''--''' is interpreted as Java option)
+* Pass some [[JavaOptions|Java options]]: '''./ fiji -server --''' (everything that comes before a '''--''' is interpreted as Java option)
 * Link Fiji into the PATH: '''ln -s $(pwd)/fiji $HOME/bin/ && fiji'''
 
 The Fiji launcher can do more, just call '''./fiji --help''' for a short description.
