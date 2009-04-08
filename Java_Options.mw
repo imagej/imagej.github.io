@@ -16,6 +16,30 @@ Note: The options listed in ''jvm.cfg'' will be passed to the virtual machine be
 
 Which method is appropriate for you depends on what you want to do: if you want to change Fiji's default, use the ''jvm.cfg'' method.
 
+== The double-dash (or: how to separate Java options and Fiji options from command line options) ==
+
+It can be confusing to pass Fiji and Java options at the same time as command line options to ImageJ (or other programs).  So here are a few simple rules:
+
+* If you do not specify any Java options, you do not need a ''--'' at all.
+* If you have a ''--'' in your command line, the arguments for ImageJ go ''after'' the double-dash.
+* In the presence of a double-dash, Fiji options have to go _before_ the ''--'' (this is to allow passing options to the Java program that would be mistaken for Fiji options otherwise).
+
+Examples:
+
+ # pass a single Fiji option (no double-dash needed):
+ ./fiji --memory=64m
+
+ # pass a single Java option (double-dash needed):
+ ./fiji -Xincgc --
+
+ # pass a Java option (requiring a double-dash), a Fiji option (which must be before the double-dash now) and an option to the program
+ ./fiji -Xincgc --ant -- --help
+
+ # pass an option to the Java program that is actually also available as Fiji option
+ ./fiji --ant -- --help
+
+''Note'': in the last example, ''Ant'' gets to see the option ''--help'', which Fiji would have interpreted itself if it were passed before the double dash.
+
 = Useful Java options =
 
 These examples are gleaned from [http://blog.headius.com/2009/01/my-favorite-hotspot-jvm-flags.html Headius' blog]:
