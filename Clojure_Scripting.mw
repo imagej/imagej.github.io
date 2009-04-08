@@ -36,6 +36,7 @@ http://kotka.de/projects/clojure/vimclojure.html VimClojure] is a clojure enviro
 
 To install VimClojure, follow the nice guidelines at [http://kotka.de/projects/clojure/vimclojure.html VimClojure].
 
+
 <h5>Launching the NailGun server</h5>
 Before editing clojure .clj files with Vim and VimClojure, first launch the nailgun server like this:
 
@@ -49,6 +50,7 @@ Above, note that:
 * Fiji will choose an -Xmx maximum heap size as appropriate for your computer (usually about 67% of RAM). You may explicitly set it, such as to 4 Gb with -Xmx4000m .
 * See other fiji options with ./fiji --help
 
+
 <h5>Setup .vimrc to understand clojure</h5>
 Once the nailgun server is running, edit your .vimrc to contain the following:
 
@@ -61,6 +63,7 @@ Once the nailgun server is running, edit your .vimrc to contain the following:
  let g:clj_highlight_contrib = 1
 
 Further .vimrc descriptions in the [http://kotka.de/projects/clojure/vimclojure.html VimClojure] website.
+
 
 <h5>Workflow with Vim</h5>
 Once the nailgun server is running and .vimrc configured, you may start editing any .clj files with vim.
@@ -89,6 +92,7 @@ Fiji can execute any clojure file directly:
 
 The file will run with the full classpath as set by fiji, which includes all jars in fiji/jars and fiji/plugins/ folders, among others.
 
+
 <h4>Getting a REPL without the usual ImageJ GUI</h4>
 The simplest is:
 
@@ -113,12 +117,14 @@ If no JVM arguments were specified, there's no need for the double dash:
 
 Just make sure to have the jline.jar in your classpath (or drop it into fiji/jars folder).
 
+
 <h3>Language basics</h3>
 <p>A ';' defines the start of a comment, just like '//' does in Java.</p>
 <p>A function definition declares parameters within [].</p>
 <p>Local variables are declared with <i>let</i>, and global variables with <i>def</i>.</p>
 <p>Functions are defined with <i>defn</i>, and are visible globally. Hence a function declared within a <i>let</i> statement has access to variables declared in it. This method enables closures.</p>
 <p></p>
+
 
 <h3>Calling methods and variables on a java object</h3>
 <p>There are two ways, the second syntactic sugar of the first. Below, <b>imp</b> is a pointer to an ImagePlus:</p>
@@ -183,6 +189,7 @@ PlugInFilter/DOES_ALL
 
 <p>Choose whatever matches your mental schemes best.</p>
 
+
 <h3>Calling static fields and methods: namespace syntax</h3>
 
 <p>To call a <b>static</b> field or method, use namespace syntax:</p>
@@ -194,6 +201,7 @@ PlugInFilter/DOES_ALL
 </source>
 
 <p>Above, notice how a class name is used instead of a pointer to call static fields and methods. Static fields and methods are just variables and functions that exist within the namespace of the class in which they are declared. Hence Clojure's namespace syntax makes way more sense than java code, that doesn't do such distinction and allows for loads of confusion (java allows invoking static methods and fields using a pointer to an instance of the class in which such static methods and fields are declared).</p>
+
 
 <h3>Defining variables: obtaining the current image</h3>
 As a local variable <b>imp</b> declared within a <i>let</i> statement:
@@ -235,6 +243,7 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
         ; print first pixel
 	(println (str (.getPixel ip 0 0))))))
 </source>
+
 
 <h3>Creating objects: invoking constructors</h3>
 
