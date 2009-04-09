@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | software               = ImageJ
-| name                   = Tubeness
-| author                 = Mark Longair, Stephan Preibisch
+| name                   = 2D Histogram
+| author                 = Mark Longair
 | maintainer             = Mark Longair
 | filename               = VIB_.jar
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=VIB.git;a=blob;f=util/Histogram_2D.java;hb=HEAD on gitweb]
