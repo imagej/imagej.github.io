@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = Segmentation Editor
-| author                 = Mark Longair
+| author                 = Johannes Schindelin, Francois Kusztos, Benjamin Schmid
 | maintainer             = Benjamin Schmid
 | filename               = VIB_.jar
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=VIB.git;a=blob;f=Segmentation_Editor.java;hb=HEAD on gitweb]
