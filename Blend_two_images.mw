@@ -1,0 +1,8 @@
+A [[Clojure Scripting|Clojure]] script illustrating how to:
+
+* Fetch images from the internet
+* Extract and iterate/loop the pixels on an image
+* Create a new image
+* Set the pixels of the image to a new value, in this case the average of two images
+
+See also [[Clojure Scripting]].
