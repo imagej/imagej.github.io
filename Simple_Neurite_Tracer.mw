@@ -1,3 +1,5 @@
+The main documentation for this plugin can be found at: http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/
+
 [[Image:SimpleNeuriteTracer.jpg|thumb|700px|Simple Neurite Tracer: neurites were reconstructed using the Simple Neurite Tracer, the neuropils were segmented in the Segmentation Editor and shown using Show Color Surfaces.]]
 
 [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/ Simple Neurite Tracer] from Mark Longair, showing a traced secondary lineage of a third instar larva  <i>Drosophila</i> brain.
