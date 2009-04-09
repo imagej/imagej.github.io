@@ -1,0 +1,11 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Segmentation Editor
+| author                 = Mark Longair
+| maintainer             = Benjamin Schmid
+| filename               = VIB_.jar
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=VIB.git;a=blob;f=vib/Average_Images.java;hb=HEAD on gitweb]
+| status                 = stable
+}}
+
+The main documentation for the Segmentation Editor can be found here: http://132.187.25.13/home/?category=Download&page=SegmentationEditor
