@@ -5,6 +5,9 @@ This list is expected to be incomplete and even wrong, do not trust it!
 ;<source lang="bash">git init --shared=group</source>
 :Tell the repository that it should always set the permissions to g+w.
 
+;<source lang="bash">git init --bare --shared=group</source>
+:Idem, but a bare repository (that is, no files checked out, so you can push to it.) This is meant for a remote server repository that all your coworkers push into and pull/fetch from.
+
 ;<source lang="bash">git branch -m <new branch name></source>
 ;Rename the current branch.
 
