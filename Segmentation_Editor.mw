@@ -4,7 +4,7 @@
 | author                 = Mark Longair
 | maintainer             = Benjamin Schmid
 | filename               = VIB_.jar
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=VIB.git;a=blob;f=vib/Average_Images.java;hb=HEAD on gitweb]
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=VIB.git;a=blob;f=Segmentation_Editor.java;hb=HEAD on gitweb]
 | status                 = stable
 }}
 
