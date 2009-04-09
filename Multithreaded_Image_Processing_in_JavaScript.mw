@@ -1,0 +1,5 @@
+An example [[Javascript Scripting|Javascript]] ImageJ script illustrating how to create java Threads for concurrent execution.
+
+The example illustrates as well the use of functions with variable arguments.
+
+See also [[Javascript Scripting]].
