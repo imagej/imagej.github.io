@@ -1,3 +1,13 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = JRuby Interpreter
+| author                 = Mark Longair
+| maintainer             = Mark Longair
+| filename               = VIB_.jar
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=VIB.git;a=blob;f=util/Histogram_2D.java;hb=HEAD on gitweb]
+| status                 = stable
+}}
+
 [http://jruby.codehaus.org/ JRuby] is a marvellous project that created a complete implementation of Ruby that runs in the JVM.  The excellent work of the authors of JRuby has made it very simple for us to add JRuby scripting into ImageJ.
 
 JRuby scripting in ImageJ is a nice alternative to scripting using ImageJ's macro language.  It has the following advantages:
