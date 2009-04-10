@@ -49,23 +49,56 @@ Try all methods.
 === Huang ===
 Implements Huang's fuzzy thresholding method. This uses Shannon's entropy function (one can also use Yager's entropy function).
 
-* Huang L-K, Wang M-J J. (1995) Image Thresholding by Minimizing  the Measures of Fuzziness, Pattern Recognition, 28(1): 41-51.
+* {{Citation
+| last = Huang
+| first = L-K
+| last2 = Wang
+| first2 = M-J J
+| year = 1995
+| journal = Pattern Recognition
+| url = http://portal.acm.org/citation.cfm?id=638891
+| title = Image thresholding by maximizing the index of nonfuzziness of the 2-D grayscale histogram
+| volume = 28(1)
+| pages = 41-51
+}}
 
-Ported from ME Celebi's fourier_0.8 routines http://sourceforge.net/projects/fourier-ipal and http://www.lsus.edu/faculty/~ecelebi/fourier.htm
+Ported from ME Celebi's fourier_0.8 routines linked [http://sourceforge.net/projects/fourier-ipal and http://www.lsus.edu/faculty/~ecelebi/fourier.htm here].
 
 
 === Intermodes ===
 This assumes a bimodal histogram. The histogram is iteratively smoothed using a running average of size 3, until there are only two local maxima: j and k. The threshold t is then computed as (j+k)/2. Images with histograms having extremely unequal peaks or a broad and ﬂat valley are unsuitable for this method.
 
-* Prewitt JMS, Mendelsohn ML. (1966) The analysis of cell images, in Annals of the New York Academy of Sciences, vol. 128, pp. 1035-1053.
+* {{Citation
+| last = Prewitt
+| first = JMS
+| last2 = Mendelsohn
+| first2 = ML
+| year = 1966
+| journal = Annals of the New York Academy of Sciences
+| url = http://www3.interscience.wiley.com/journal/119758871/abstract?CRETRY=1&SRETRY=0
+| title = The analysis of cell images
+| volume = 128
+| pages = 1035-1053
+}}
 
-Ported from Antti Niemist&ouml;'s Matlab code. See http://www.cs.tut.fi/~ant/histthresh/ for an excellent slide presentation and the original Matlab code.
+Ported from Antti Niemist&ouml;'s Matlab code. See [http://www.cs.tut.fi/~ant/histthresh/ here] for an excellent slide presentation and the original Matlab code.
 
 
 === IsoData ===
 Iterative procedure based on the isodata algorithm of:
 
-* Ridler TW, Calvard S. (1978) Picture thresholding using an iterative selection method, IEEE Trans. System, Man and  Cybernetics, SMC-8: 630-632.
+* {{Citation
+| last = Ridler
+| first = TW
+| last2 = Calvard
+| first2 = S
+| year = 1978
+| journal = IEEE Transactions on Systems, Man and Cybernetics
+| url = http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4310039
+| title = Picture thresholding using an iterative selection method
+| volume = 8
+| pages = 630-6032
+}}
 
 This should return the same values as the '''Image>Adjust>Threshold>Auto''', but it was implemented here to allow pre-selecting the bright or dark phases in the image. (ImageJ tries to guess which is the object and which is the background).
 
@@ -89,19 +122,65 @@ Posted to sci.image.processing on 1996/06/24 by Tim Morris:
 === Li ===
 Implements Li's Minimum Cross Entropy thresholding method based on the iterative version (2nd reference below) of the algorithm.
 
-* Li CH, Lee CK. (1993) Minimum Cross Entropy Thresholding, Pattern Recognition, 26(4): 617-625.
-* Li CH, Tam PKS. (1998) An Iterative Algorithm for Minimum Cross Entropy Thresholding, Pattern Recognition Letters, 18(8): 771-776.
-* Sezgin M, Sankur B. (2004) Survey over Image Thresholding Techniques and Quantitative Performance Evaluation, Journal of Electronic Imaging, 13(1): 146-165.  http://citeseer.ist.psu.edu/sezgin04survey.html
 
-Ported from ME Celebi's fourier_0.8 routines http://sourceforge.net/projects/fourier-ipal and http://www.lsus.edu/faculty/~ecelebi/fourier.htm
+* {{Citation
+| last = Li
+| first = CH
+| last2 = Lee
+| first2 = CK
+| year = 1993
+| journal = Pattern Recognition
+| title = Minimum Cross Entropy Thresholding
+| volume = 26(4)
+| pages = 617-625
+}}
+
+* {{Citation
+| last = Li
+| first = CH
+| last2 = Tam
+| first2 = PKS
+| year = 1998
+| journal = Pattern Recognition Letters
+| title = An Iterative Algorithm for Minimum Cross Entropy Thresholding
+| volume = 18(8)
+| pages = 771-776
+}}
+
+* {{Citation
+| last = Sezgin
+| first = M
+| last2 = Sankur
+| first2 = B
+| year = 2004
+| journal = Journal of Electronic Imaging
+| title = Survey over Image Thresholding Techniques and Quantitative Performance Evaluation
+| volume = 13(1)
+| pages = 146-165
+| url = http://citeseer.ist.psu.edu/sezgin04survey.html
+}}
+
+Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
 
 
 === MaxEntropy ===
 Implements Kapur-Sahoo-Wong (Maximum Entropy) thresholding method:
 
-* Kapur JN, Sahoo PK, Wong AKC. (1985) A New Method for Gray-Level Picture Thresholding Using the Entropy of the Histogram, Graphical Models and Image Processing, 29(3): 273-285.
+* {{Citation
+| last = Kapur
+| first = JN
+| last2 = Sahoo
+| first2 = PK
+| last3 = Wong
+| first3 = ACK
+| year = 1985
+| journal = Graphical Models and Image Processing
+| title = A New Method for Gray-Level Picture Thresholding Using the Entropy of the Histogram
+| volume = 29(3)
+| pages = 273-285
+}}
 
-Ported from ME Celebi's fourier_0.8 routines http://sourceforge.net/projects/fourier-ipal and http://www.lsus.edu/faculty/~ecelebi/fourier.htm
+Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
 
 
 === Minimum ===
@@ -109,24 +188,56 @@ Similarly to the Intermodes method, this assumes a bimodal histogram. The histog
 
 Images with histograms having extremely unequal peaks or a broad and ﬂat valley are unsuitable for this method.
 
-* Prewitt JMS, Mendelsohn ML. (1966) The analysis of cell images, in Annals of the New York Academy of Sciences, vol. 128, pp. 1035-1053.
+* {{Citation
+| last = Prewitt
+| first = JMS
+| last2 = Mendelsohn
+| first2 = ML
+| year = 1966
+| journal = Annals of the New York Academy of Sciences
+| url = http://www3.interscience.wiley.com/journal/119758871/abstract?CRETRY=1&SRETRY=0
+| title = The analysis of cell images
+| volume = 128
+| pages = 1035-1053
+}}
 
-Ported from Antti Niemist&ouml;'s Matlab code. See http://www.cs.tut.fi/~ant/histthresh/ for an excellent slide presentation and the original Matlab code.
+Ported from Antti Niemist&ouml;'s Matlab code. See [http://www.cs.tut.fi/~ant/histthresh/ here] for an excellent slide presentation and the original Matlab code.
 
 
 === Moments ===
 Tsai's method attempts to preserve the moments of the original image in the thresholded result.
 
-* Tsai W. (1985) Moment-preserving thresholding: a new approach, Computer Vision, Graphics, and Image Processing, vol. 29, pp. 377-393.
+* {{Citation
+| last = Tsai
+| first = W
+| year = 1985
+| journal = Computer Vision, Graphics, and Image Processing
+| url = http://portal.acm.org/citation.cfm?id=201578
+| title = Moment-preserving thresholding: a new approach
+| volume = 29
+| pages = 377-393
+}}
 
-Ported from ME Celebi's fourier_0.8 routines http://sourceforge.net/projects/fourier-ipal and http://www.lsus.edu/faculty/~ecelebi/fourier.htm
+Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
 
 
 === Otsu ===
 Otsu's threshold clustering algorithm searches for the threshold that minimizes the intra-class variance, defined as a weighted sum of variances of the two classes
-* Otsu N. (1979) A threshold selection method from gray-level histograms, IEEE Trans. Sys., Man., Cyber. 9: 62–66. doi:10.1109/TSMC.1979.4310076.
 
-Wikipedia article on Otsu's method: http://en.wikipedia.org/wiki/Otsu's_method
+
+* {{Citation
+| last = Otsu
+| first = N
+| year = 1979
+| journal = IEEE Trans. Sys., Man., Cyber.
+| url = http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?&arnumber=4310076
+| title = A threshold selection method from gray-level histograms
+| volume = 9
+| pages = 62-66
+| doi = 10.1109/TSMC.1979.4310076
+}}
+
+See also the [http://en.wikipedia.org/wiki/Otsu's_method Wikipedia article on Otsu's method].
 
 Ported from C++ code by Jordan Bevik.
 
@@ -134,32 +245,80 @@ Ported from C++ code by Jordan Bevik.
 === Percentile ===
 Assumes the fraction of foreground pixels to be 0.5.
 
-* Doyle W. (1962) Operation useful for similarity-invariant pattern recognition, Journal of the Association for Computing Machinery, vol. 9,pp. 259-267.
+* {{Citation
+| last = Doyle
+| first = W
+| year = 1962
+| journal = Journal of the Association for Computing Machinery
+| url = http://portal.acm.org/citation.cfm?id=321119.321123
+| title = Operation useful for similarity-invariant pattern recognition
+| volume = 9
+| pages = 259-267
+| doi = 10.1145/321119.321123
+}}
 
-Ported from Antti Niemist&ouml;'s Matlab code. See http://www.cs.tut.fi/~ant/histthresh/ for an excellent slide presentation and the original Matlab code.
+Ported from Antti Niemist&ouml;'s Matlab code. See [http://www.cs.tut.fi/~ant/histthresh/ here] for an excellent slide presentation and the original Matlab code.
 
 
 === RenyiEntropy ===
 Similar to the '''MaxEntropy''' method, but using Renyi's entropy instead.
 
-* Kapur JN, Sahoo PK, Wong AKC. (1985) A New Method for Gray-Level Picture Thresholding Using the Entropy of the Histogram, Graphical Models and Image Processing, 29(3): 273-285.
 
-Ported from ME Celebi's fourier_0.8 routines http://sourceforge.net/projects/fourier-ipal and http://www.lsus.edu/faculty/~ecelebi/fourier.htm
+* {{Citation
+| last = Kapur
+| first = JN
+| last2 = Sahoo
+| first2 = PK
+| last3 = Wong
+| first3 = ACK
+| year = 1985
+| journal = Graphical Models and Image Processing
+| title = A New Method for Gray-Level Picture Thresholding Using the Entropy of the Histogram
+| volume = 29(3)
+| pages = 273-285
+}}
 
+Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
 
 === Shanbhag ===
-* Shanhbag A.G. (1994) "Utilization of Information Measure as a Means of Image Thresholding" Graphical Models and Image Processing, 56(5): 414-419.
 
 
-Ported from ME Celebi's fourier_0.8 routines http://sourceforge.net/projects/fourier-ipal and http://www.lsus.edu/faculty/~ecelebi/fourier.htm
+{{Citation
+| first = Abhijit G.
+| last =  Shanbhag 
+| title = Utilization of information measure as a means of image thresholding
+| journal = Graph. Models Image Process.
+| volume = 56
+| number = 5
+| year = 1994
+| issn = 1049-9652
+| pages = 414--419
+| doi = 10.1006/cgip.1994.1037
+| publisher = Academic Press, Inc.
+| address = {Orlando, FL, USA},
+}}
+
+Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
 
 
 === Triangle ===
 This is an implementation of the Triangle method:
 
-* Zack, G. W., Rogers, W. E. and Latt, S. A., 1977, Automatic Measurement of Sister Chromatid Exchange Frequency, Journal of Histochemistry and Cytochemistry 25 (7), pp. 741-753.
+*{{Citation
+|author=Zack GW, Rogers WE, Latt SA
+|title=Automatic measurement of sister chromatid exchange frequency
+|journal=J. Histochem. Cytochem.
+|volume=25
+|issue=7
+|pages=741–53
+|year=1977
+|month=July
+|pmid=70454
+|doi=
+|url=http://www.jhc.org/cgi/pmidlookup?view=long&pmid=70454
+}}
 
-Incorporated from from Johannes Schindelin plugin Trinagle_Algorithm http://wbgn013.biozentrum.uni-wuerzburg.de/ImageJ/triangle-algorithm.html
+Incorporated from from Johannes Schindelin plugin [http://wbgn013.biozentrum.uni-wuerzburg.de/ImageJ/triangle-algorithm.html Triangle_Algorithm].
 
 See also: http://www.ph.tn.tudelft.nl/Courses/FIP/noframes/fip-Segmenta.html#Heading118
 
@@ -167,10 +326,38 @@ See also: http://www.ph.tn.tudelft.nl/Courses/FIP/noframes/fip-Segmenta.html#Hea
 === Yen ===
 Implements Yen's thresholding method from:
 
-* Yen JC, Chang FJ, Chang S. (1995) A New Criterion for Automatic Multilevel Thresholding, IEEE Trans. on Image Processing, 4(3): 370-378
-* Sezgin M. and Sankur B. (2004) "Survey over Image Thresholding Techniques and Quantitative Performance Evaluation" Journal of Electronic Imaging, 13(1): 146-165 http://citeseer.ist.psu.edu/sezgin04survey.html
+*{{Citation
+| author = Yen JC, Chang FJ, Chang S
+| title = A New Criterion for Automatic Multilevel Thresholding
+| journal = IEEE Trans. on Image Processing
+| volume = 4
+| issue = 3
+| pages = 370-378
+| year = 1995
+| doi = 10.1109/83.366472
+| url=http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=366472
+| issn = 1057-7149
+}}
 
-Ported from ME Celebi's fourier_0.8 routines http://sourceforge.net/projects/fourier-ipal and http://www.lsus.edu/faculty/~ecelebi/fourier.htm
+* {{Citation
+| last = Sezgin
+| first = M
+| last2 = Sankur
+| first2 = B
+| year = 2004
+| journal = Journal of Electronic Imaging
+| title = Survey over Image Thresholding Techniques and Quantitative Performance Evaluation
+| volume = 13(1)
+| pages = 146-165
+| url = http://citeseer.ist.psu.edu/sezgin04survey.html
+}}
+
+Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
+
+
+
+
+
 
 [[Category:Plugins]]
 [[Category:Segmentation]]
