@@ -5,7 +5,7 @@
 | maintainer             = Gabriel Landini (G.Landini at bham. ac. uk)
 | filename               = Auto_Threshold.jar
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Auto_Threshold;hb=HEAD on gitweb] (1 file)
-| latest version         = 08 April 2009
+| latest version         = v1.1 (08 April 2009)
 | status                 = active 
 }}
 
@@ -29,8 +29,9 @@ The '''Ignore black''' and '''Ignore white''' options set the image histogram bi
 
 It you are using a stack, an additional option '''Stack''' can be used to process all the slices (the threshold of each slice will be computed separately). If this option is left unchecked, only the current slice will be processed.
 
+== Available methods ==
 
-== Try all == 
+=== Try all ===
 Which method segments your data best? You can attempt to answer this question using the '''Try all''' option.
 This produces a montage with the results from all the methods, so one can explore how the different algorithms perform on an image or stack.
 If you use stacks, you will realise that sometimes it might not be a good idea to segment each slice separately rather than with a single threshold for all slices (try the mri-stack.tif from the sample images to understand this issue).
@@ -45,7 +46,7 @@ Original image
 
 Try all methods.
 
-== Huang ==
+=== Huang ===
 Implements Huang's fuzzy thresholding method. This uses Shannon's entropy function (one can also use Yager's entropy function).
 
 * Huang L-K, Wang M-J J. (1995) Image Thresholding by Minimizing  the Measures of Fuzziness, Pattern Recognition, 28(1): 41-51.
@@ -53,7 +54,7 @@ Implements Huang's fuzzy thresholding method. This uses Shannon's entropy functi
 Ported from ME Celebi's fourier_0.8 routines http://sourceforge.net/projects/fourier-ipal and http://www.lsus.edu/faculty/~ecelebi/fourier.htm
 
 
-== Intermodes ==
+=== Intermodes ===
 This assumes a bimodal histogram. The histogram is iteratively smoothed using a running average of size 3, until there are only two local maxima: j and k. The threshold t is then computed as (j+k)/2. Images with histograms having extremely unequal peaks or a broad and ﬂat valley are unsuitable for this method.
 
 * Prewitt JMS, Mendelsohn ML. (1966) The analysis of cell images, in Annals of the New York Academy of Sciences, vol. 128, pp. 1035-1053.
@@ -61,7 +62,7 @@ This assumes a bimodal histogram. The histogram is iteratively smoothed using a 
 Ported from Antti Niemist&ouml;'s Matlab code. See http://www.cs.tut.fi/~ant/histthresh/ for an excellent slide presentation and the original Matlab code.
 
 
-== IsoData ==
+=== IsoData ===
 Iterative procedure based on the isodata algorithm of:
 
 * Ridler TW, Calvard S. (1978) Picture thresholding using an iterative selection method, IEEE Trans. System, Man and  Cybernetics, SMC-8: 630-632.
@@ -85,7 +86,7 @@ Posted to sci.image.processing on 1996/06/24 by Tim Morris:
  no => increment G and repeat
 
 
-== Li ==
+=== Li ===
 Implements Li's Minimum Cross Entropy thresholding method based on the iterative version (2nd reference below) of the algorithm.
 
 * Li CH, Lee CK. (1993) Minimum Cross Entropy Thresholding, Pattern Recognition, 26(4): 617-625.
@@ -95,7 +96,7 @@ Implements Li's Minimum Cross Entropy thresholding method based on the iterative
 Ported from ME Celebi's fourier_0.8 routines http://sourceforge.net/projects/fourier-ipal and http://www.lsus.edu/faculty/~ecelebi/fourier.htm
 
 
-== MaxEntropy ==
+=== MaxEntropy ===
 Implements Kapur-Sahoo-Wong (Maximum Entropy) thresholding method:
 
 * Kapur JN, Sahoo PK, Wong AKC. (1985) A New Method for Gray-Level Picture Thresholding Using the Entropy of the Histogram, Graphical Models and Image Processing, 29(3): 273-285.
@@ -103,7 +104,7 @@ Implements Kapur-Sahoo-Wong (Maximum Entropy) thresholding method:
 Ported from ME Celebi's fourier_0.8 routines http://sourceforge.net/projects/fourier-ipal and http://www.lsus.edu/faculty/~ecelebi/fourier.htm
 
 
-== Minimum ==
+=== Minimum ===
 Similarly to the Intermodes method, this assumes a bimodal histogram. The histogram is iteratively smoothed using a running average of size 3, until there are only two local maxima. The threshold t is such that yt−1 &gt; yt &lt;&#061; yt+1.
 
 Images with histograms having extremely unequal peaks or a broad and ﬂat valley are unsuitable for this method.
@@ -113,7 +114,7 @@ Images with histograms having extremely unequal peaks or a broad and ﬂat valle
 Ported from Antti Niemist&ouml;'s Matlab code. See http://www.cs.tut.fi/~ant/histthresh/ for an excellent slide presentation and the original Matlab code.
 
 
-== Moments ==
+=== Moments ===
 Tsai's method attempts to preserve the moments of the original image in the thresholded result.
 
 * Tsai W. (1985) Moment-preserving thresholding: a new approach, Computer Vision, Graphics, and Image Processing, vol. 29, pp. 377-393.
@@ -121,7 +122,7 @@ Tsai's method attempts to preserve the moments of the original image in the thre
 Ported from ME Celebi's fourier_0.8 routines http://sourceforge.net/projects/fourier-ipal and http://www.lsus.edu/faculty/~ecelebi/fourier.htm
 
 
-== Otsu ==
+=== Otsu ===
 Otsu's threshold clustering algorithm searches for the threshold that minimizes the intra-class variance, defined as a weighted sum of variances of the two classes
 * Otsu N. (1979) A threshold selection method from gray-level histograms, IEEE Trans. Sys., Man., Cyber. 9: 62–66. doi:10.1109/TSMC.1979.4310076.
 
@@ -130,7 +131,7 @@ Wikipedia article on Otsu's method: http://en.wikipedia.org/wiki/Otsu's_method
 Ported from C++ code by Jordan Bevik.
 
 
-== Percentile ==
+=== Percentile ===
 Assumes the fraction of foreground pixels to be 0.5.
 
 * Doyle W. (1962) Operation useful for similarity-invariant pattern recognition, Journal of the Association for Computing Machinery, vol. 9,pp. 259-267.
@@ -138,7 +139,7 @@ Assumes the fraction of foreground pixels to be 0.5.
 Ported from Antti Niemist&ouml;'s Matlab code. See http://www.cs.tut.fi/~ant/histthresh/ for an excellent slide presentation and the original Matlab code.
 
 
-== RenyiEntropy ==
+=== RenyiEntropy ===
 Similar to the '''MaxEntropy''' method, but using Renyi's entropy instead.
 
 * Kapur JN, Sahoo PK, Wong AKC. (1985) A New Method for Gray-Level Picture Thresholding Using the Entropy of the Histogram, Graphical Models and Image Processing, 29(3): 273-285.
@@ -146,14 +147,14 @@ Similar to the '''MaxEntropy''' method, but using Renyi's entropy instead.
 Ported from ME Celebi's fourier_0.8 routines http://sourceforge.net/projects/fourier-ipal and http://www.lsus.edu/faculty/~ecelebi/fourier.htm
 
 
-== Shanbhag ==
+=== Shanbhag ===
 * Shanhbag A.G. (1994) "Utilization of Information Measure as a Means of Image Thresholding" Graphical Models and Image Processing, 56(5): 414-419.
 
 
 Ported from ME Celebi's fourier_0.8 routines http://sourceforge.net/projects/fourier-ipal and http://www.lsus.edu/faculty/~ecelebi/fourier.htm
 
 
-== Triangle ==
+=== Triangle ===
 This is an implementation of the Triangle method:
 
 * Zack, G. W., Rogers, W. E. and Latt, S. A., 1977, Automatic Measurement of Sister Chromatid Exchange Frequency, Journal of Histochemistry and Cytochemistry 25 (7), pp. 741-753.
@@ -163,10 +164,13 @@ Incorporated from from Johannes Schindelin plugin Trinagle_Algorithm http://wbgn
 See also: http://www.ph.tn.tudelft.nl/Courses/FIP/noframes/fip-Segmenta.html#Heading118
 
 
-== Yen ==
+=== Yen ===
 Implements Yen's thresholding method from:
 
 * Yen JC, Chang FJ, Chang S. (1995) A New Criterion for Automatic Multilevel Thresholding, IEEE Trans. on Image Processing, 4(3): 370-378
 * Sezgin M. and Sankur B. (2004) "Survey over Image Thresholding Techniques and Quantitative Performance Evaluation" Journal of Electronic Imaging, 13(1): 146-165 http://citeseer.ist.psu.edu/sezgin04survey.html
 
 Ported from ME Celebi's fourier_0.8 routines http://sourceforge.net/projects/fourier-ipal and http://www.lsus.edu/faculty/~ecelebi/fourier.htm
+
+[[Category:Plugins]]
+[[Category:Segmentation]]
