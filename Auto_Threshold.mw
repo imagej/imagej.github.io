@@ -10,7 +10,7 @@
 }}
 
 == Purpose ==
-This plugins binarises 8-bit images using 13 different global thresholding methods.
+This plugin binarises 8-bit images using various global (histogram-derived) thresholding methods.
 
 
 == Installation ==
