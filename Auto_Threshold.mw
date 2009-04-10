@@ -33,8 +33,8 @@ It you are using a stack, an additional option '''Stack''' can be used to proces
 
 == Try all == 
 Which method segments your data best? You can attempt to answer this question using the '''Try all''' option.
-This produces a montage with the results from all the methods, so one can explore how the different algorithms perform on the open image or stack.
-If you use stacks, you will realise that sometimes it might not be a good idea to segment each slice separately rather than with a single threshold for all slices. Try the mri-stack.tif from the sample images to understand this issue).
+This produces a montage with the results from all the methods, so one can explore how the different algorithms perform on an image or stack.
+If you use stacks, you will realise that sometimes it might not be a good idea to segment each slice separately rather than with a single threshold for all slices (try the mri-stack.tif from the sample images to understand this issue).
 
 
 [[Image:lymp.png]]
@@ -45,7 +45,6 @@ Original image
 [[Image:lympm.png]]
 
 Try all methods.
-
 
 == Huang ==
 Implements Huang's fuzzy thresholding method. This uses Shannon's entropy function (one can also use Yager's entropy function).
