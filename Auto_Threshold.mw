@@ -31,7 +31,7 @@ The '''Ignore black''' and '''Ignore white''' options set the image histogram bi
 It you are using a stack, an additional option '''Stack''' can be used to process all the slices (the threshold of each slice will be computed separately). If this option is left unchecked, only the current slice will be processed.
 
 == Try all == 
-Which method segments best your data? You can attempt to answer this question using the '''Try all''' option.
+Which method segments your data best? You can attempt to answer this question using the '''Try all''' option.
 This produces a montage with the results from all the methods, so one can explore how the different algorithms perform on the open image or stack.
 If you use stacks, you will realise that sometimes it might not be a good idea to segment each slice separately rather than with a single threshold for all slices. Try the mri-stack.tif from the sample images to understand this issue).
 
