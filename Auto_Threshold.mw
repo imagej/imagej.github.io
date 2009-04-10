@@ -21,14 +21,18 @@ This plugin binarises 8-bit images using various global (histogram-derived) thre
 
 == Use ==
 '''Method''' selects the algorithm to be applied (detailed below).
-The '''Ignore black''' and '''Ignore white''' options set the image histogram bins for [0] and [255] to 0 respectively. This may be useful if the digitised image has under or over exposed pixels.
+
+The '''Ignore black''' and '''Ignore white''' options set the image histogram bins for [0] and [255] greylevels to 0 respectively. This may be useful if the digitised image has under- or over- exposed pixels.
+
 '''White object on black background''' sets to white the pixels with values above the threshold value (otherwise, it sets to white the values less or equal to the threshold).
+
 '''Set Threshold instead of Threshold (single images)''' sets the thresholding LUT, without changing the pixel data. This works only for single images.
 
+It you are using a stack, an additional option '''Stack''' can be used to process all the slices (the threshold of each slice will be computed separately). If this option is left unchecked, only the current slice will be processed.
 
 == Try all == 
-Which method segments best your data? You can attempt to answer this question with the '''Try all option'''.
-This produces a montage of all the methods to allow exploration of how the different approaches perform on the open image or stack:
+Which method segments best your data? You can attempt to answer this question using the '''Try all''' option.
+This produces a montage with the results from all the methods, so one can explore how the different algorithms perform on the open image or stack.
 If you use stacks, you will realise that sometimes it might not be a good idea to segment each slice separately rather than with a single threshold for all slices. Try the mri-stack.tif from the sample images to understand this issue).
 
 
@@ -66,7 +70,7 @@ Iterative procedure based on the isodata algorithm of:
 This should return the same values as the '''Image>Adjust>Threshold>Auto''', but it was implemented here to allow pre-selecting the bright or dark phases in the image. (ImageJ tries to guess which is the object and which is the background).
 
 The procedure divides the image into objects and background by taking an initial threshold,then the averages of the pixels at or below the threshold and pixels above are computed. The averages of those two values are computed, the threshold is incremented and the process is repeated until the threshold is larger than the composite average. That is, threshold = (average background + average objects)/2. 
-The code in ImageJ that implements this function is the '''getAutoThreshold()''' method in the '''ImageProcessor'''class. 
+The code in ImageJ that implements this function is the '''getAutoThreshold()''' method in the '''ImageProcessor''' class. 
 
 Posted to sci.image.processing on 1996/06/24 by Tim Morris:
 
