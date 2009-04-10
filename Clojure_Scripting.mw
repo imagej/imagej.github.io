@@ -4,6 +4,8 @@
 
 <p>Clojure is <b>not</b> a scripting language: Clojure compiles directly to JVM bytecode, and thus runs at native speed. Thus one must think of Clojure as a true alternative to Java the language, but much more expressive, flexible and powerful.</p>
 
+<p>See also the [http://en.wikibooks.org/wiki/Clojure_Programming/Examples/Cookbook Clojure Cookbook].</p>
+
 <h3>Using Clojure inside Fiji</h3>
 Go to "Plugins - Scripting - Clojure Interpreter". The prompt accepts any clojure code.
 
