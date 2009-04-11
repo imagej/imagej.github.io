@@ -5,7 +5,8 @@
 | maintainer             = Gabriel Landini (G.Landini at bham. ac. uk)
 | filename               = Auto_Threshold.jar
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Auto_Threshold;hb=HEAD on gitweb] (1 file)
-| latest version         = v1.1 (08 April 2009)
+| initial release        = 08 April 2009
+| latest version         = v1.2 (11 April 2009)
 | status                 = active 
 }}
 
@@ -27,7 +28,8 @@ The '''Ignore black''' and '''Ignore white''' options set the image histogram bi
 
 '''Set Threshold instead of Threshold (single images)''' sets the thresholding LUT, without changing the pixel data. This works only for single images.
 
-It you are using a stack, an additional option '''Stack''' can be used to process all the slices (the threshold of each slice will be computed separately). If this option is left unchecked, only the current slice will be processed.
+It you are using a stack, two additional options are available: '''Stack''' can be used to process all the slices (the threshold of each slice will be computed separately). If this option is left unchecked, only the current slice will be processed. '''Use stack histogram''' computes the histogram of the whole stack, finds the threshold using that histogram and binarises all the slices with that value. Selecting this option also selects the '''Stack''' option above.
+
 
 == Available methods ==
 
@@ -45,6 +47,8 @@ Original image
 [[Image:lympm.png]]
 
 Try all methods.
+
+I stacks have more than 25 slices, the montages become very large (~13 times the original stack size) with a risk of running out of ram. A popup window will appear to confirm whether the procedure should display the stack montages. Select '''No''' to compute the threshold values and display these in the log window.
 
 === Huang ===
 Implements Huang's fuzzy thresholding method. This uses Shannon's entropy function (one can also use Yager's entropy function).
