@@ -65,7 +65,7 @@ Implements Huang's fuzzy thresholding method. This uses Shannon's entropy functi
 | pages = 41-51
 }}
 
-Ported from ME Celebi's fourier_0.8 routines linked [http://sourceforge.net/projects/fourier-ipal and http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
+Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
 
 
 === Intermodes ===
