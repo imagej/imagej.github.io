@@ -394,7 +394,7 @@ The idea is to grab the ImageProcessor, duplicate it and resize it. The resizing
 <source lang="lisp">
 (def imp-1 (IJ/openImage "/path/to/image1.tif"))
 
-(def imp-2 (ImagePlus. "A new larger one" (.. imp-1 getProcessor createProcessor 1024 1024)))
+(def imp-2 (ImagePlus. "A new larger one" (.. imp-1 getProcessor (createProcessor 1024 1024))))
 
 ; Copy one into the other at top-left (hence 0,0 insert point):
 (doto (.getProcessor imp-2)
@@ -406,8 +406,6 @@ An alternative way would be to simply duplicate the processor of imp-1, and then
 (def imp-3 (ImagePlus. "A copy with extra empty space"
                        (.. imp-1 getProcessor duplicate (resize 768 768)))
 </source>
-
-
 
 <h4>Resizing an ImageStack</h4>
 
