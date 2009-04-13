@@ -5,7 +5,7 @@
 | maintainer             = Gabriel Landini (G.Landini at bham. ac. uk)
 | filename               = Auto_Threshold.jar
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Auto_Threshold;hb=HEAD on gitweb] (1 file)
-| latest version         = v1.4 (11 April 2009)
+| latest version         = v1.5 (13 April 2009)
 | status                 = active 
 }}
 
@@ -125,7 +125,6 @@ Posted to sci.image.processing on 1996/06/24 by Tim Morris:
 === Li ===
 Implements Li's Minimum Cross Entropy thresholding method based on the iterative version (2nd reference below) of the algorithm.
 
-
 * {{Citation
 | last = Li
 | first = CH
@@ -186,6 +185,39 @@ Implements Kapur-Sahoo-Wong (Maximum Entropy) thresholding method:
 Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
 
 
+=== Mean ===
+Uses the mean of grey levels as the trhreshold. It is used by some other methods as a first guess threshold.
+
+* {{Citation
+| last = Glasbey
+| first = CA
+| year = 1993
+| journal = CVGIP: Graphical Models and Image Processing
+| title = An analysis of histogram-based thresholding algorithms
+| volume = 55
+| pages = 532-537
+}}
+
+
+=== MinError(I) ===
+An iterative implementation of Kittler and Illingworth's Minimum Error thresholding. This seems to be more converge more often than the original implementation.
+
+Nevertheless, sometimes the algorithm does not converge to a solution. In that case a warning is reported to the log window.
+
+* {{Citation
+| last = Kittler
+| first = J
+| last2 = Illingworth
+| first2 = J
+| year = 1986
+| journal = Pattern Recognition
+| title = Minimum error thresholding
+| volume = 19
+| pages = 41-47
+}}
+Ported from Antti Niemist&ouml;'s Matlab code. See [http://www.cs.tut.fi/~ant/histthresh/ here] for an excellent slide presentation and the original Matlab code.
+
+
 === Minimum ===
 Similarly to the Intermodes method, this assumes a bimodal histogram. The histogram is iteratively smoothed using a running average of size 3, until there are only two local maxima. The threshold t is such that yt−1 &gt; yt &lt;&#061; yt+1.
 
@@ -225,8 +257,7 @@ Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fo
 
 
 === Otsu ===
-Otsu's threshold clustering algorithm searches for the threshold that minimizes the intra-class variance, defined as a weighted sum of variances of the two classes
-
+Otsu's threshold clustering algorithm searches for the threshold that minimizes the intra-class variance, defined as a weighted sum of variances of the two classes.
 
 * {{Citation
 | last = Otsu
@@ -266,7 +297,6 @@ Ported from Antti Niemist&ouml;'s Matlab code. See [http://www.cs.tut.fi/~ant/hi
 === RenyiEntropy ===
 Similar to the '''MaxEntropy''' method, but using Renyi's entropy instead.
 
-
 * {{Citation
 | last = Kapur
 | first = JN
@@ -283,8 +313,8 @@ Similar to the '''MaxEntropy''' method, but using Renyi's entropy instead.
 
 Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
 
-=== Shanbhag ===
 
+=== Shanbhag ===
 
 {{Citation
 | first = Abhijit G.
@@ -324,6 +354,11 @@ This is an implementation of the Triangle method:
 Incorporated from from Johannes Schindelin plugin [http://wbgn013.biozentrum.uni-wuerzburg.de/ImageJ/triangle-algorithm.html Triangle_Algorithm].
 
 See also: http://www.ph.tn.tudelft.nl/Courses/FIP/noframes/fip-Segmenta.html#Heading118
+
+The Triangle algorithm, being a geometric method, cannot tell whether the data is skewed to one side or another, but assumes a maximum peak towards one end of the histogram and one end towards the other.
+This causes a problem in the absence of information of the type of image to be processed, or when the maximum is not towards one of the histogram extremes (as there are 2 possible threshold regions between that max and the 2 extremes).
+This algorithm was extended to to find out to which side of the max peak the data goes the furthest, and use the widest range
+as for searching the threshold.
 
 
 === Yen ===
