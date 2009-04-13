@@ -51,11 +51,10 @@ Before editing clojure .clj files with Vim and VimClojure, first launch the nail
 
 Above, note that:
 * The fiji launcher has the ability to take any java class as the main class, using the --main-class switch.
-* The -cp switch enables you to add more jars and folders with .clj files to the classpath. <b>You must include</b> any root olders containing your .clj files in  the classpath. For example, a .clj file namespaced my.image.test, you should include the <b>parent</b> folder of the folder <i>my</i> in the classpath. Above I included two of Fiji's plugins folders which contain .clj files.
+* The -cp switch enables you to add more jars and folders with .clj files to the classpath. <b>You must include</b> any root folders containing your .clj files in  the classpath. For example, a .clj file namespaced my.image.test, you should include the <b>parent</b> folder of the folder <i>my</i> in the classpath. Above I included two of Fiji's plugins folders which contain .clj files.
 * Fiji includes the clojure.jar in the folder fiji/jars/. All jar files under fiji/jars/ will be automatically included in the classpath.
 * Fiji will choose an -Xmx maximum heap size as appropriate for your computer (usually about 67% of RAM). You may explicitly set it, such as to 4 Gb with -Xmx4000m .
 * See other fiji options with ./fiji --help
-
 
 <h5>Setup .vimrc to understand clojure</h5>
 Once the nailgun server is running, edit your .vimrc to contain the following:
