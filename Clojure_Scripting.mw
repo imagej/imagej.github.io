@@ -165,7 +165,7 @@ And suspend all to see the stack trace of each thread:
   ...
 
 
-There are perhaps more convenient setups built into Eclipse, IntelliJ, NetBeans and other IDEs that support Clojure via plugins, but he jdb gives you what you want very quickly.
+There are perhaps more convenient setups built into Eclipse, IntelliJ, NetBeans and other IDEs that support Clojure via plugins, but the jdb gives you what you want very quickly.
 
 Within the jdb prompt, type "help".
 
