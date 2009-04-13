@@ -38,7 +38,7 @@ A very convenient way to do so is directly from ViM.
 
 [http://www.vim.org Vim] is a very powerful text editor.
 
-http://kotka.de/projects/clojure/vimclojure.html VimClojure] is a clojure environment for Vim, to edit and run clojure code within Vim.
+[http://kotka.de/projects/clojure/vimclojure.html VimClojure] is a clojure environment for Vim, to edit and run clojure code within Vim.
 
 To install VimClojure, follow the nice guidelines at [http://kotka.de/projects/clojure/vimclojure.html VimClojure].
 
