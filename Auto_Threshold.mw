@@ -5,7 +5,7 @@
 | maintainer             = Gabriel Landini (G.Landini at bham. ac. uk)
 | filename               = Auto_Threshold.jar
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Auto_Threshold;hb=HEAD on gitweb] (1 file)
-| latest version         = v1.5 (13 April 2009)
+| latest version         = v1.6 (13 April 2009)
 | status                 = active 
 }}
 
@@ -103,7 +103,7 @@ Iterative procedure based on the isodata algorithm of:
 | pages = 630-6032
 }}
 
-This should return the same values as the '''Image>Adjust>Threshold>Auto''', if you select '''ignore black''' and '''ignore white'''. This was implemented here to allow pre-selecting the bright or dark phases in the image. ImageJ tries to guess which is the object and which is the background so one can override this and force the threshold to segment the desired phase.
+This should return the same values as the '''Image>Adjust>Threshold>Auto''', if one selects '''ignore black''' and '''ignore white'''. This was implemented again in this plugin to allow pre-selecting bright or dark phases in the image. ImageJ tries to guess which is the object and which is the background, but not this can be overridden to force segmentation of the desired phase.
 
 The procedure divides the image into objects and background by taking an initial threshold,then the averages of the pixels at or below the threshold and pixels above are computed. The averages of those two values are computed, the threshold is incremented and the process is repeated until the threshold is larger than the composite average. That is, threshold = (average background + average objects)/2. 
 The code in ImageJ that implements this function is the '''getAutoThreshold()''' method in the '''ImageProcessor''' class. 
