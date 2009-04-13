@@ -382,9 +382,10 @@ From a file:
 
 ; The new empty image, of the same type as the old but larger
 (def imp-2 (ImagePlus. "The copy"
-                       (.. imp-1 getProcessor createProcessor 768 768)))
+                       (.. imp-1 getProcessor (createProcessor 768 768))))
 </source>
 
+Above, notice the parenthesis (createProcessor 768 768), which specify for which method those numbers are arguments for.
 
 <h4>Resizing an image</h4>
 
