@@ -70,7 +70,7 @@ Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fo
 
 === Intermodes ===
 This assumes a bimodal histogram. The histogram is iteratively smoothed using a running average of size 3, until there are only two local maxima: j and k. The threshold t is then computed as (j+k)/2. Images with histograms having extremely unequal peaks or a broad and ﬂat valley are unsuitable for this method.
-
+method
 * {{Citation
 | last = Prewitt
 | first = JMS
@@ -103,18 +103,19 @@ Iterative procedure based on the isodata algorithm of:
 | pages = 630-6032
 }}
 
-This should return the same values as the '''Image>Adjust>Threshold>Auto''', if one selects '''ignore black''' and '''ignore white'''. This was implemented again in this plugin to allow pre-selecting bright or dark phases in the image. ImageJ tries to guess which is the object and which is the background, but not this can be overridden to force segmentation of the desired phase.
+This option should return the same values as the '''Image>Adjust>Threshold>Auto''', when selecting '''ignore black''' and '''ignore white'''. In addition, ImageJ tries to guess which pixels belong to the object and which to the background, but now this can be overridden and force segmentation of the desired phase.
 
-The procedure divides the image into objects and background by taking an initial threshold,then the averages of the pixels at or below the threshold and pixels above are computed. The averages of those two values are computed, the threshold is incremented and the process is repeated until the threshold is larger than the composite average. That is, threshold = (average background + average objects)/2. 
+The procedure divides the image into objects and background by taking an initial threshold,then the averages of the pixels at or below the threshold and pixels above are computed. The averages of those two values are computed, the threshold is incremented and the process is repeated until the threshold is larger than the composite average. That is,      
+ threshold = (average background + average objects)/2. 
 The code in ImageJ that implements this function is the '''getAutoThreshold()''' method in the '''ImageProcessor''' class. 
 
 Posted to sci.image.processing on 1996/06/24 by Tim Morris:
 
  Subject: Re: Thresholding method?
- The algorithm implemented in NIH Image sets the threshold as 
- that grey value, G, for which the average of the averages of
- the grey values below and above G is equal to G. It does this
- by initialising G to the lowest sensible value and iterating:
+ The algorithm implemented in NIH Image sets the threshold as that grey 
+ value, G, for which the average of the averages of the grey values 
+ below and above G is equal to G. It does this by initialising G to the
+ lowest sensible value and iterating:
  L = the average grey value of pixels with intensities < G
  H = the average grey value of pixels with intensities > G
  is G = (L + H)/2?
