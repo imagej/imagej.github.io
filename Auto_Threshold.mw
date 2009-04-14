@@ -5,7 +5,7 @@
 | maintainer             = Gabriel Landini (G.Landini at bham. ac. uk)
 | filename               = Auto_Threshold.jar
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Auto_Threshold;hb=HEAD on gitweb] (1 file)
-| latest version         = v1.6 (13 April 2009)
+| latest version         = v1.7 (14 April 2009)
 | status                 = active 
 }}
 
@@ -103,24 +103,11 @@ Iterative procedure based on the isodata algorithm of:
 | pages = 630-6032
 }}
 
-This option should return the same values as the '''Image>Adjust>Threshold>Auto''', when selecting '''ignore black''' and '''ignore white'''. In addition, ImageJ tries to guess which pixels belong to the object and which to the background, but now this can be overridden and force segmentation of the desired phase.
+This option should return the same values as the '''Image>Adjust>Threshold>Auto''', when selecting '''ignore black''' and '''ignore white'''. ImageJ tries to guess which pixels belong to the object and which to the background, but now this can be overridden and force segmentation of the desired phase.
 
-The procedure divides the image into objects and background by taking an initial threshold,then the averages of the pixels at or below the threshold and pixels above are computed. The averages of those two values are computed, the threshold is incremented and the process is repeated until the threshold is larger than the composite average. That is,      
+The procedure divides the image into object and background by taking an initial threshold, then the averages of the pixels at or below the threshold and pixels above are computed. The averages of those two values are computed, the threshold is incremented and the process is repeated until the threshold is larger than the composite average. That is,      
  threshold = (average background + average objects)/2. 
-The code in ImageJ that implements this function is the '''getAutoThreshold()''' method in the '''ImageProcessor''' class. 
-
-Posted to sci.image.processing on 1996/06/24 by Tim Morris:
-
- Subject: Re: Thresholding method?
- The algorithm implemented in NIH Image sets the threshold as that grey 
- value, G, for which the average of the averages of the grey values 
- below and above G is equal to G. It does this by initialising G to the
- lowest sensible value and iterating:
- L = the average grey value of pixels with intensities < G
- H = the average grey value of pixels with intensities > G
- is G = (L + H)/2?
- yes => exit
- no => increment G and repeat
+The code in ImageJ that implements this function is the '''getAutoThreshold()''' method in the '''ImageProcessor''' class. This plugin uses ImageJ implementation of the IsoData method (also known as ''iterative intermeans'').
 
 
 === Li ===
@@ -357,10 +344,9 @@ Incorporated from from Johannes Schindelin plugin [http://wbgn013.biozentrum.uni
 
 See also: http://www.ph.tn.tudelft.nl/Courses/FIP/noframes/fip-Segmenta.html#Heading118
 
-The Triangle algorithm, being a geometric method, cannot tell whether the data is skewed to one side or another, but assumes a maximum peak towards one end of the histogram and one end towards the other.
-This causes a problem in the absence of information of the type of image to be processed, or when the maximum is not towards one of the histogram extremes (as there are 2 possible threshold regions between that max and the 2 extremes).
-This algorithm was extended to to find out to which side of the max peak the data goes the furthest, and use the widest range
-as for searching the threshold.
+The Triangle algorithm, a geometric method, cannot tell whether the data is skewed to one side or another, but assumes a maximum peak (mode) near one end of the histogram and searches towards the other end.
+This causes a problem in the absence of information of the type of image to be processed, or when the maximum is not near one of the histogram extremes (resulting in two possible threshold regions between that max and the extremes).
+The algorithm was extended to find out on which side of the max peak the data goes the furthest, and searches the threshold in largest range.
 
 
 === Yen ===
