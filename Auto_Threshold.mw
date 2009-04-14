@@ -204,6 +204,7 @@ Uses the mean of grey levels as the trhreshold. It is used by some other methods
 An iterative implementation of Kittler and Illingworth's Minimum Error thresholding. This seems to be more converge more often than the original implementation.
 
 Nevertheless, sometimes the algorithm does not converge to a solution. In that case a warning is reported to the log window.
+The '''Ignore black''' or '''Ignore white''' options usually resolve this problem.
 
 * {{Citation
 | last = Kittler
