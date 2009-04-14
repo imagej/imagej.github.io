@@ -73,3 +73,7 @@ In the case of ''VIB'', it works as easily as that, because it has its own [[Fij
  <create a staged-plugins/jgit.Fakefile>
  # first time, commit-submodule need to know the target, too ("jars/jgit.jar" in this case)
  ./fiji scripts/commit-submodule.py jgit jars/jgit.jar
+
+
+
+[[Category:Development]]
