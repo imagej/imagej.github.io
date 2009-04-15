@@ -97,7 +97,7 @@ This selects the threshold as the mean of the local greyscale distribution. A va
 
 '''Parameter 2''': not used, ignored. 
 
-[http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm]
+[http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm]
 
 === Median ===
 This selects the threshold as the median of the local greyscale distribution. A variation of this method uses the median - C, where C is a constant.
@@ -106,7 +106,7 @@ This selects the threshold as the median of the local greyscale distribution. A 
 
 '''Parameter 2''': not used, ignored. 
 
-[http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm]
+[http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm]
 
 === MidGrey ===
 This selects the threshold as the mid-grey of the local greyscale distribution (i.e. (max + min)/2. A variation of this method uses the median - C, where C is a constant.
@@ -115,7 +115,7 @@ This selects the threshold as the mid-grey of the local greyscale distribution (
 
 '''Parameter 2''': not used, ignored. 
 
-[http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm]
+[http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm]
 
 === Niblack ===
 Implements Niblack's thresholding method:
