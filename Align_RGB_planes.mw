@@ -2,6 +2,7 @@
 | software               = ImageJ
 | name                   = Align RGB planes
 | author                 = Gabriel Landini
+| maintainer             = G. Landini at bham. ac. uk  
 | filename               = [http://www.dentistry.bham.ac.uk/landinig/software/align_rgb.zip align_rgb.zip] 
 | source                 = in zip file
 | released               = 12 January 2004 
