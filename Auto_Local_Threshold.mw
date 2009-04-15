@@ -141,7 +141,7 @@ Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fo
 === Sauvola ===
 Implements Sauvla's thresholding method, which is a variation of Niblack's
 
- pixel = pixel > mean * (1 + k *( standard_deviation / r) - 1)) ? object : backg;
+ pixel = pixel > mean * (1 + k *( standard_deviation / r) - 1)) ? object : background
 
 '''Parameter 1''': is the ''k value''. The default value is 0.5. Any other number than 0 will change its value.
 
@@ -158,9 +158,14 @@ Implements Sauvla's thresholding method, which is a variation of Niblack's
 | title = Adaptive Document Image Binarization
 | volume = 33(2)
 | pages = 225-236
+|url = http://www.ee.oulu.fi/mvg/publications/show_pdf.php?ID=24
 }}
-[http://www.ee.oulu.fi/mvg/publications/show_pdf.php?ID=24]
 
+Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
+
+
+[[Category:Plugins]]
+[[Category:Segmentation]]
 
 
 
