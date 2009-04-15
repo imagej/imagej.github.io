@@ -1,0 +1,24 @@
+{{Infobox Plugin
+| name                   = Volume Viewer
+| software               = ImageJ
+| author                 = Kai Uwe Barthel
+| filename               = [http://rsb.info.nih.gov/ij/plugins/download/jars/Volume_Viewer.jar]
+| source                 = [http://rsb.info.nih.gov/ij/plugins/download/jars/Volume_Viewer.jar]
+| released               = February 2005
+| latest version         = March 2007
+| status                 = v1.05
+| category               = [[:Category:Plugins|Plugins]]
+| website                = http://rsb.info.nih.gov/ij/plugins/volume-viewer.html
+}}
+
+3D reslicing and threshold-enabled 3D visualization.
+
+Non-hardware accelerated volume rendering in different modalities.
+
+Documentation: http://rsb.info.nih.gov/ij/plugins/volume-viewer.html
+
+== See also ==
+
+[[3D Viewer]]: hardware-accelerated 3D visualization of image volumes, orthoslices, and 3D meshes.
+
+[[Category:Plugins]]
