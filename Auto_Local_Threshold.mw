@@ -143,7 +143,7 @@ Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fo
 === Sauvola ===
 Implements Sauvla's thresholding method, which is a variation of Niblack's
 
- pixel = pixel > mean * (1 + k *( standard_deviation / r) - 1)) ? object : background
+ pixel = (pixel > mean * (1 + k *( standard_deviation / r - 1))) ? object : background
 
 '''Parameter 1''': is the ''k value''. The default value is 0.5. Any other number than 0 will change its value.
 
