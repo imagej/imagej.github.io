@@ -21,8 +21,7 @@ This plugin binarises 8-bit images using various global (histogram-derived) thre
 == Use ==
 '''Method''' selects the algorithm to be applied (detailed below).
 
-The '''radius''' sets the radius of the local domain over which the threshold will be computed,
-
+The '''radius''' sets the radius of the local domain over which the threshold will be computed.
 
 '''White object on black background''' sets to white the pixels with values above the threshold value (otherwise, it sets to white the values less or equal to the threshold).
 
