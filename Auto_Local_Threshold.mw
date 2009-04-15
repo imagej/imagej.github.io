@@ -5,7 +5,7 @@
 | maintainer             = Gabriel Landini (G.Landini at bham. ac. uk)
 | filename               = included in Auto_Threshold.jar
 | source                 = (1 file)
-| latest version         = v1.7 (14 April 2009)
+| latest version         = v1.0(15 April 2009)
 | status                 = active 
 }}
 
@@ -97,6 +97,8 @@ This selects the threshold as the mean of the local greyscale distribution. A va
 
 '''Parameter 2''': not used, ignored. 
 
+[http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm]
+
 === Median ===
 This selects the threshold as the median of the local greyscale distribution. A variation of this method uses the median - C, where C is a constant.
 
@@ -104,6 +106,7 @@ This selects the threshold as the median of the local greyscale distribution. A 
 
 '''Parameter 2''': not used, ignored. 
 
+[http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm]
 
 === MidGrey ===
 This selects the threshold as the mid-grey of the local greyscale distribution (i.e. (max + min)/2. A variation of this method uses the median - C, where C is a constant.
@@ -112,20 +115,16 @@ This selects the threshold as the mid-grey of the local greyscale distribution (
 
 '''Parameter 2''': not used, ignored. 
 
-
-
+[http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm]
 
 === Niblack ===
 Implements Niblack's thresholding method:
 
-
  pixel = ( pixel >  mean + k * standard_deviation) ? object : background
-
 
 '''Parameter 1''': is the ''k value''. The default value is 0.2 for bright objects and -0.2 for dark objects. Any other number than 0 will change its value.
 
 '''Parameter 2''': not used, ignored. 
-
 
 * {{Citation
 | last = Niblack
@@ -147,7 +146,6 @@ Implements Sauvla's thresholding method, which is a variation of Niblack's
 
 '''Parameter 2''': is the ''r value''. The default value is 128. Any other number than 0 will change its value 
 
-
 * {{Citation
 | last = Sauvola
 | first = J
@@ -162,11 +160,6 @@ Implements Sauvla's thresholding method, which is a variation of Niblack's
 }}
 
 Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
-
-
-[[Category:Plugins]]
-[[Category:Segmentation]]
-
 
 
 [[Category:Plugins]]
