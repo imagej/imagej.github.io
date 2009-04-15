@@ -1,0 +1,20 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Lens correction
+| author                 = Verena Kaynig (verena.kaynig [at] inf.ethz.ch)
+| maintainer             =
+| filename               = lens_correction.jar
+| source                 = ?
+| latest version         = ?
+| status                 = ?
+}}
+
+
+== Purpose ==
+
+== Documentation ==
+
+The documentation of this plugin is in [http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf this] pfd.
+
+
+[[Category:Plugins]]
