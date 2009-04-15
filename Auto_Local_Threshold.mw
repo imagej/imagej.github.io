@@ -48,6 +48,7 @@ Try all methods.
 
 When processing stacks with many slices, the montages can become very large (several times the original stack size) and one risks running out of ram. A popup window will appear (when stacks have more than 25 slices) to confirm whether the procedure should display the stack montages.
 
+
 === Bernsen ===
 Implements Bernsen's thresholding method.  Note that this implementation uses circular windows instead of rectangular in the original.
 
@@ -99,6 +100,7 @@ This selects the threshold as the mean of the local greyscale distribution. A va
 
 [http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm]
 
+
 === Median ===
 This selects the threshold as the median of the local greyscale distribution. A variation of this method uses the median - C, where C is a constant.
 
@@ -108,6 +110,7 @@ This selects the threshold as the median of the local greyscale distribution. A 
 
 [http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm]
 
+
 === MidGrey ===
 This selects the threshold as the mid-grey of the local greyscale distribution (i.e. (max + min)/2. A variation of this method uses the median - C, where C is a constant.
 
@@ -116,6 +119,7 @@ This selects the threshold as the mid-grey of the local greyscale distribution (
 '''Parameter 2''': not used, ignored. 
 
 [http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm]
+
 
 === Niblack ===
 Implements Niblack's thresholding method:
