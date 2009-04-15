@@ -116,38 +116,50 @@ This selects the threshold as the mid-grey of the local greyscale distribution (
 
 
 === Niblack ===
-Implements Kapur-Sahoo-Wong (Maximum Entropy) thresholding method:
+Implements Niblack's thresholding method:
+
+
+ pixel = ( pixel >  mean + k * standard_deviation) ? object : background
+
+
+'''Parameter 1''': is the ''k value''. The default value is 0.2 for bright objects and -0.2 for dark objects. Any other number than 0 will change its value.
+
+'''Parameter 2''': not used, ignored. 
+
 
 * {{Citation
-| last = Kapur
-| first = JN
-| last2 = Sahoo
-| first2 = PK
-| last3 = Wong
-| first3 = ACK
-| year = 1985
-| journal = Graphical Models and Image Processing
-| title = A New Method for Gray-Level Picture Thresholding Using the Entropy of the Histogram
-| volume = 29(3)
-| pages = 273-285
+| last = Niblack
+| first = W
+| year = 1986
+| journal = 
+| title = An introduction to Digital Image Processing" Prentice-Hall
 }}
 
 Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
 
 
-=== Mean ===
-Uses the mean of grey levels as the trhreshold. It is used by some other methods as a first guess threshold.
+=== Sauvola ===
+Implements Sauvla's thresholding method, which is a variation of Niblack's
+
+ pixel = pixel > mean * (1 + k *( standard_deviation / r) - 1)) ? object : backg;
+
+'''Parameter 1''': is the ''k value''. The default value is 0.5. Any other number than 0 will change its value.
+
+'''Parameter 2''': is the ''r value''. The default value is 128. Any other number than 0 will change its value 
+
 
 * {{Citation
-| last = Glasbey
-| first = CA
-| year = 1993
-| journal = CVGIP: Graphical Models and Image Processing
-| title = An analysis of histogram-based thresholding algorithms
-| volume = 55
-| pages = 532-537
+| last = Sauvola
+| first = J
+| last2 = Pietaksinen
+| first2 = M
+| year = 2000
+| journal = Pattern Recognition
+| title = Adaptive Document Image Binarization
+| volume = 33(2)
+| pages = 225-236
 }}
-
+[ttp://www.ee.oulu.fi/mvg/publications/show_pdf.php?ID=24]
 
 
 
