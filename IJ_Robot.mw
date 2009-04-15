@@ -1,11 +1,11 @@
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = IJ Robot
-| author                 = Gabriel Landini, plus others (see below)
+| author                 = Gabriel Landini
 | maintainer             = Gabriel Landini (G.Landini at bham. ac. uk)
-| filename               = 
+| filename               = IJ_Robot
 | source                 = 
-| latest version         = 
+| latest version         = 1.0
 | status                 = active 
 }}
 
