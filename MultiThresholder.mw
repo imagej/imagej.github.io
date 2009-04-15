@@ -11,6 +11,13 @@
 | website                = [http://rsb.info.nih.gov/ij/plugins/multi-thresholder.html]
 }}
 
+
+
+DEPRECATED:
+
+This plugin will be soon removed, as the [[Auto Threshold]] plugin from [[User:Landini|Gabriel Landini]] does a better job.
+
+
 == Purpose ==
 
 This plugin allows the user to apply four different automatic thresholding algorithms. The four algorithms are ImageJ's built in IsoData algorithm, [[Maximum Entropy Threshold]], [[Otsu Thresholding]], and [[Mixture Modeling Thresholding|Mixture Modeling]]. More information about thresholding and the algorithms employed here can be found at the [http://www.ph.tn.tudelft.nl/Courses/FIP/noframes/fip-Segmenta.html Image Thresholding Tutorial].
