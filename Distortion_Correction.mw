@@ -2,11 +2,11 @@
 | software               = ImageJ
 | name                   = Lens correction
 | author                 = Verena Kaynig (verena.kaynig [at] inf.ethz.ch)
-| maintainer             =
+| maintainer             = Verena Kaynig
 | filename               = lens_correction.jar
 | source                 = ?
 | latest version         = ?
-| status                 = ?
+| status                 = active
 }}
 
 
