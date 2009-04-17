@@ -1,4 +1,3 @@
-
 == Plugins ==
 
 * [[Volume Viewer]] - file <tt>Volume_Viewer.jar</tt>  -- ''java jar file''
@@ -128,10 +127,6 @@
 * [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
 
 
-
-=== Plugins > Optic Flow ===
-
-* [[FlowJ]] - file <tt>FlowJ_</tt> in package '''[[FlowJ_]]'''  -- ''java jar file''
 
 
 
