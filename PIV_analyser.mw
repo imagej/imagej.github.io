@@ -1,14 +1,23 @@
 {{Infobox Plugin
-| software               = ImageJ
-| name                   = PIV analysis
+| name                   = PIV analyser
 | author                 = Jean-Yves Tinevez
 | maintainer             = Jean-Yves Tinevez ([mailto:tinevez_at_mpi-cbg_dot_de tinevez_at_mpi-cbg_dot_de])
-| filename               = PIV_analysis.jar
+| filename               = [http://pacific.mpi-cbg.de/tinevez/PIV_analyser.jar PIV_analyser.jar]
 | source                 = 
 | latest version         = v1.0 
 | status                 = active 
 }}
 
+
+== Installation ==
+
+=== ImageJ ===
+
+Download the jar file [http://pacific.mpi-cbg.de/tinevez/PIV_analyser.jar PIV_analyser.jar] and drop it into the ''plugins'' menu. The plugin will appear in the ''Plugins > Optic Flow > PIV analyser'' menu.
+
+=== Fiji ===
+
+Yet to come.
 
 == Principle ==
 
