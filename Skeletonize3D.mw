@@ -2,6 +2,7 @@
 | software               = ImageJ
 | name                   = Skeletonize3D
 | author                 = [http://arantxa.ii.uam.es/~iarganda/index_EN.html Ignacio Arganda-Carreras]
+| maintainer             = Ignacio Arganda-Carreras ([mailto:ignacio.arganda@uam.es])
 | filename               = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?id=plugin%3Amorphology%3Askeletonize3d%3Astart&cache=cache&media=plugin:morphology:skeletonize3d:skeletonize3d_.jar Skeletonize3D_.jar] 
 | source                 = Included in the jar
 | released               = November 14th, 2008
