@@ -2,6 +2,7 @@
 | software               = ImageJ
 | name                   = AnalyzeSkeleton
 | author                 = [http://arantxa.ii.uam.es/~iarganda/index_EN.html Ignacio Arganda-Carreras]
+| maintainer             = Ignacio Arganda-Carreras ([mailto:ignacio.arganda@uam.es ignacio.arganda@uam.es])
 | filename               = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=:plugin:analysis:analyzeskeleton:analyzeskeleton_.jar AnalyzeSkeleton_.jar] 
 | source                 = Included in the jar
 | released               = November 14th, 2008
