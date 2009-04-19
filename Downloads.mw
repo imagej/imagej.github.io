@@ -4,6 +4,12 @@ You can download the current version of Fiji ("Luxembourg") for
 
 {{DownloadsCurrent}}
 
+=== Release Candidate ===
+
+We have a first release candidate for Fiji version "Dresden-2009":
+
+{{DownloadsVersion|Dresden-2009-rc1|20090419}}
+
 === Source Code ===
 
 The easiest way to fetch the source code for Fiji is to use [http://git.or.cz/ git].  For further guidance on this, please refer to the page [[Downloading and Building Fiji From Source]].
