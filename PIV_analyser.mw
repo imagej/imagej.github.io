@@ -1,10 +1,12 @@
 {{Infobox Plugin
 | name                   = PIV analyser
+| software               = ImageJ
 | author                 = Jean-Yves Tinevez
 | maintainer             = Jean-Yves Tinevez ([mailto:tinevez_at_mpi-cbg_dot_de tinevez_at_mpi-cbg_dot_de])
 | filename               = [http://pacific.mpi-cbg.de/tinevez/PIV_analyser.jar PIV_analyser.jar]
 | source                 = 
-| latest version         = v1.0 
+| released               = 18 April 2009
+| latest version         = v1.1 (19 April 2009)
 | status                 = active 
 }}
 
@@ -203,6 +205,19 @@ This can be used to mask irrelevant part of the result image. The algorithm
 will be typically puzzled where there is no structure to correlate. In these
 parts of the image, the peak height will be typically low; one can then
 threshold the peak height image, and use it to mask the result image.
+
+
+
+
+== Version history ==
+
+* 1.0 - April 2009 - First public release.
+* 1.1 - April 2009 - is now interruptible
+
+
+
+
+
 
 
 == Note & references  ==
