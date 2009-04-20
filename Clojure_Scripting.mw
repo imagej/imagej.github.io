@@ -381,7 +381,7 @@ From a file:
 (def imp-1 (ImagePlus. "The source image" (FloatProcessor. 512 512)))
 
 ; The new empty image, of the same type as the old but larger
-(def imp-2 (ImagePlus. "The copy"
+(def imp-2 (ImagePlus. "The larger image of the same type"
                        (.. imp-1 getProcessor (createProcessor 768 768))))
 </source>
 
