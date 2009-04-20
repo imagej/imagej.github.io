@@ -6,20 +6,10 @@
 | filename               = [http://pacific.mpi-cbg.de/tinevez/PIV_analyser.jar PIV_analyser.jar]
 | source                 = 
 | released               = 18 April 2009
-| latest version         = v1.1 (19 April 2009)
+| latest version         = v1.2 (20 April 2009)
 | status                 = active 
 }}
 
-
-== Installation ==
-
-=== ImageJ ===
-
-Download the jar file [http://pacific.mpi-cbg.de/tinevez/PIV_analyser.jar PIV_analyser.jar] and drop it into the ''plugins'' menu. The plugin will appear in the ''Plugins > Optic Flow > PIV analyser'' menu.
-
-=== Fiji ===
-
-Yet to come.
 
 == Principle ==
 
@@ -144,16 +134,68 @@ of wasted CPU cycles).
 
 Typically, on a MacBook (grey model, 2009), for an 8-bit stack with a window
 size of 8x8, the plugin, the plugin can process a stack of 200x200 in
-approximatively 2 seconds. I recommend downsampling the images, this would
+approximately 1 second. I recommend downsampling the images, this would
 diminish the density of results, but make this plugin affordable.
+
+The plugin is now multi-threaded, meaning that it will analyze multiple 
+frame couples at once, depending how many CPUs it can find.
+
+
+== Example ==
+
+
+[[Image:Testpiv3.gif|200px|right|thumb|The original 2 frame sequence]]
+[[Image:Testpiv3-fd.png|200px|right|thumb|The resulting flow encoded in color]]
+[[Image:Color coded orientation.png|right|thumb|Color coded orientation and magnitude]]
+
+The image to the right is made of 2000 small gaussian blobs (sigma=1), spawned randomly 
+(you can get the original file [http://pacific.mpi-cbg.de/tinevez/test3.tif here]). The 
+second frame was obtained by adding a shift to each blob, given by:
+
+* &Delta;Y = &alpha; &times; (X-Xm)
+* &Delta;X = &alpha; &times; (Y-Ym)
+
+with &alpha;=25 and Xm and Ym half of the image width. This effectively generate a sort of 
+circular twist to the image. 
+
+Below is what the PIV analysis found, with a window of 64x64 (the max displacement the 
+algorithm can find is given by half of the window size, so we had to go for at least 50x50), 
+no masking and no interpolation. The color encode flow direction and magnitude, using the 
+reference that can be seen in the color wheel.
+
+
+
+== Installation ==
+
+=== ImageJ ===
+
+Download the jar file [http://pacific.mpi-cbg.de/tinevez/PIV_analyser.jar PIV_analyser.jar] 
+and drop it into the ''plugins'' menu. The plugin will appear in the ''Plugins > Optic Flow > PIV analyser'' menu.
+
+=== Fiji ===
+
+The plugin is part of the Fiji distribution. You can find it in the ''Analyze > Optic Flow'' menu.
 
 
 == Usage ==
+
+[[Image:PIV_analyser_window.png]]
+
+Options are the following:
+
+* '''Window size''': sets the interrogation window size for analysis. That is the size of the blocks that will be compared to get a flow out of it. See below for insight on size choices.
+
+* '''Interpolate''': if checked, the analysis will perform for each pixel an additional step, allowing to get sub-pixel flow magnitude. The maximum of the correlation window will be interpolated (using Taylor expansion over a 3x3 neighborhood), giving a better estimate of its position.
+
+* '''Do masking''': is set, results will be masked using the peak height value. For peak height values lower than '''Masking level''' &times; <code>max(pkh)</code>, the flow will be set to 0.
+
+
 
 === ROI selection ===
 
 If you want to restrain the analysis to only a certain portion of the image,
 select it in a ROI of any shape.
+
 
 === Image features ===
 
@@ -196,9 +238,11 @@ field, replace its value by the moving average from a few frames before until
 a few frames after. If your movie is oversampled temporally, that might be
 effective in averaging outliers.
 
+
+
 === Filtering ===
-The plugin returns also a stack made of the peak height and a tentative
-signal/noise ratio for the analysis.
+
+The plugin returns also a stack made of the peak height for the analysis.
 
 The peak height is just the value of the correlation peak for each pixels.
 This can be used to mask irrelevant part of the result image. The algorithm
@@ -209,11 +253,13 @@ threshold the peak height image, and use it to mask the result image.
 
 
 
+
+
 == Version history ==
 
-* 1.0 - April 2009 - First public release.
-* 1.1 - April 2009 - is now interruptible
-
+* 1.0 - 18 April 2009 - First public release.
+* 1.1 - 19 April 2009 - can now be interrupted between frames. 
+* 1.2 - 20 April 2009 - is now multithreaded.
 
 
 
