@@ -149,7 +149,7 @@ frame couples at once, depending how many CPUs it can find.
 [[Image:Color coded orientation.png|right|thumb|Color coded orientation and magnitude]]
 
 The image to the right is made of 2000 small gaussian blobs (sigma=1), spawned randomly 
-(you can get the original file [http://pacific.mpi-cbg.de/tinevez/test3.tif here]). The 
+(you can get the original file [http://pacific.mpi-cbg.de/tinevez/testpiv3.tif here]). The 
 second frame was obtained by adding a shift to each blob, given by:
 
 * &Delta;Y = &alpha; &times; (X-Xm)
@@ -162,8 +162,6 @@ Below is what the PIV analysis found, with a window of 64x64 (the max displaceme
 algorithm can find is given by half of the window size, so we had to go for at least 50x50), 
 no masking and no interpolation. The color encode flow direction and magnitude, using the 
 reference that can be seen in the color wheel.
-
-
 
 == Installation ==
 
