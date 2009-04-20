@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = Name Landmarks and Register
-| author                 = Mark Longair
+| author                 = Mark Longair and Greg Jefferis
 | maintainer             = Mark Longair
 | filename               = VIB_.jar
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=VIB.git;a=blob;f=landmarks/Name_Points.java;hb=HEAD on gitweb]
