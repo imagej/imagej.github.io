@@ -1,3 +1,4 @@
+
 == Plugins ==
 
 * [[Volume Viewer]] - file <tt>Volume_Viewer.jar</tt>  -- ''java jar file''
@@ -33,6 +34,7 @@
 * [[Same Slice in Multiple Images]] - file <tt>Same_Slice_in_Multiple_Images.rb</tt>  -- ''jruby script''
 * [[Edit LUT As Text]] - file <tt>Edit_LUT_As_Text.py</tt>  -- ''jython script''
 * [[Find Dimension of Raw Image]] - file <tt>Find_Dimension_of_Raw_Image.py</tt>  -- ''jython script''
+* [[TrakEM2 Add Balls]] - file <tt>TrakEM2_Add_Balls.class</tt>  -- ''java class file''
 * [[test distortioncorrection trakem2]] - file <tt>test_distortioncorrection_trakem2.js</tt>  -- ''javascript file''
 * [[Blobs Demo in Ruby]] - file <tt>Blobs_Demo_in_Ruby.rb</tt>  -- ''jruby script''
 * [[chess]] - file <tt>chess_.py</tt>  -- ''jython script''
@@ -72,9 +74,11 @@
 
 === Plugins > Utilities ===
 
-* [[Collect Garbage]] - file <tt>CollectGarbage_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[IJ Robot]] - file <tt>IJ_Robot</tt> in package '''[[IJ_Robot]]'''  -- ''java jar file''
 * [[Thread killer]] - file <tt>Thread_Killer</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Record Window]] - file <tt>Jython.Refresh_Jython_Scripts("../scripts/Record_Window.py")</tt> in package '''[[Record_Screen]]'''  -- ''java jar file''
+* [[Collect Garbage]] - file <tt>CollectGarbage_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Record Desktop]] - file <tt>Jython.Refresh_Jython_Scripts("../scripts/Record_Desktop.py")</tt> in package '''[[Record_Screen]]'''  -- ''java jar file''
+* [[IJ Robot]] - file <tt>IJ_Robot</tt> in package '''[[IJ_Robot]]'''  -- ''java jar file''
 * [[Close All Without Saving]] - file <tt>Close_All_Without_Saving.txt</tt>  -- ''macro''
 
 
@@ -426,6 +430,13 @@
 
 
 
+=== Analyze > Optic Flow ===
+
+* [[PIV analysis]] - file <tt>PIV_analyser</tt> in package '''[[PIV_analyser]]'''  -- ''java jar file''
+* [[FlowJ]] - file <tt>FlowJ_</tt> in package '''[[FlowJ_]]'''  -- ''java jar file''
+
+
+
 
 
 
@@ -436,6 +447,10 @@
 == Process ==
 
 * [[Multiple Image Processor]] - file <tt>MultipleImageProcessor</tt> in package '''[[M_I_P]]'''  -- ''java jar file''
+
+
+
+
 
 
 
