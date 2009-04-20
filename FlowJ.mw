@@ -1,0 +1,22 @@
+{{Infobox Plugin
+| name                   = FlowJ
+| software               = ImageJ
+| author                 = [http://webeye.ophth.uiowa.edu/dept/BIOGRAPH/Abramoff.htm Michael Abramoff]
+| maintainer             = [mailto:tinevez_at_mpi-cbg_dot_de Jean-Yves Tinevez]
+| filename               = FlowJ_.jar
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/FlowJ_;hb=HEAD on gitweb] or [http://webscreen.ophth.uiowa.edu/bij/downloads/bij_source.zip on BIJ webpage]
+| latest version         = 1.29 (December 2003)
+| website                = [http://webscreen.ophth.uiowa.edu/bij/flowj.htm FlowJ]
+| status                 = stable
+}}
+
+
+
+== Purpose == 
+
+FlowJ is a plugin that implements the main gradient-based optical flow techniques, such as Lucas and Kanade, Uras, Fleet and Jepson and Singh algorithms. 
+
+
+== Documentation ==
+
+Please refer to the author [http://webscreen.ophth.uiowa.edu/bij/flowj.htm webpage] for all information on how to use this plugin, as well as references.
