@@ -1,0 +1,34 @@
+{{Infobox Plugin
+| name                   = Dynamic Reslice
+| software               = [[Fiji_Plugins]]
+| author                 = Jean-Yves Tinevez & Albert Cardona from an ImageJ class
+| maintainer             = Jean-Yves Tinevez ([mailto:tinevez_at_mpi-cbg_dot_de tinevez_at_mpi-cbg_dot_de])
+| filename               = 
+| source                 = 
+| released               = 
+| latest version         = 
+| status                 = active 
+}}
+
+
+== Purpose ==
+
+
+This plugin is simply a dynamic version of the Reslice command as it is in
+ImageJ version 1.42l, by Patrick Kelly, Harvey Karten, Wayne Rasband, Julian
+Cooper and Adrian Deerr. It draws an orthogonal slice through the volume
+represented by the stack it is applied on along its ROI, and update
+dynamically this slice as the ROI is displaced or deformed. As it is based on
+the Reslice command, it implements all of the later feature, excepting the 
+multi-slice output.
+
+
+== Example ==
+
+[[Image:DynamicresliceROI.gif|left]]
+[[Image:Dynamicreslice.gif]]
+
+
+
+
+[[Category:Plugins]]
