@@ -14,7 +14,7 @@
 
 == Purpose ==
 
-This plugins offers hardware-accelerated visualization possibilities for
+This plugin offers hardware-accelerated visualization possibilities for
 image stacks. Stacks can be displayed as texture-based volume renderings, 
 surfaces or orthoslices. 
 
