@@ -1,8 +1,8 @@
-
 == Plugins ==
 
 * [[Volume Viewer]] - file <tt>Volume_Viewer.jar</tt>  -- ''java jar file''
 * [[3D Viewer]] - file <tt>ImageJ_3D_Viewer</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Optic Flow]] - file <tt>Optic_Flow</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
 
 
 
@@ -17,7 +17,6 @@
 * [[Measure RGB]] - file <tt>Measure_RGB.txt</tt>  -- ''macro''
 * [[View5D]] - file <tt>view5d.View5D_</tt> in package '''[[View5D_]]'''  -- ''java jar file''
 * [[Surfaceness]] - file <tt>features.Surfaceness_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Plot Dots (3D)]] - file <tt>process3d.Plot_Dots</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Grid]] - file <tt>Grid_.class</tt>  -- ''java class file''
 * [[Compute Curvatures]] - file <tt>Compute_Curvatures</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Visual grep]] - file <tt>Visual_Grep</tt> in package '''[[VIB_]]'''  -- ''java jar file''
@@ -34,7 +33,6 @@
 * [[Same Slice in Multiple Images]] - file <tt>Same_Slice_in_Multiple_Images.rb</tt>  -- ''jruby script''
 * [[Edit LUT As Text]] - file <tt>Edit_LUT_As_Text.py</tt>  -- ''jython script''
 * [[Find Dimension of Raw Image]] - file <tt>Find_Dimension_of_Raw_Image.py</tt>  -- ''jython script''
-* [[TrakEM2 Add Balls]] - file <tt>TrakEM2_Add_Balls.class</tt>  -- ''java class file''
 * [[test distortioncorrection trakem2]] - file <tt>test_distortioncorrection_trakem2.js</tt>  -- ''javascript file''
 * [[Blobs Demo in Ruby]] - file <tt>Blobs_Demo_in_Ruby.rb</tt>  -- ''jruby script''
 * [[chess]] - file <tt>chess_.py</tt>  -- ''jython script''
@@ -118,10 +116,9 @@
 * [[Register Virtual Stack Slices]] - file <tt>register_virtual_stack.Register_Virtual_Stack_MT</tt> in package '''[[register_virtual_stack_slices]]'''  -- ''java jar file''
 * [[Rigid Registration]] - file <tt>vib.RigidRegistration_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[TurboReg]] - file <tt>TurboReg_</tt> in package '''[[TurboReg_]]'''  -- ''java jar file''
-* [[Moving Least Squares]] - file <tt>Moving_Least_Squares</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Align Image by line ROI]] - file <tt>Align_Image</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[bUnwarpJ]] - file <tt>bUnwarpJ_</tt> in package '''[[bUnwarpJ_]]'''  -- ''java jar file''
-* [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+* [[Align Image by line ROI]] - file <tt>Align_Image</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Moving Least Squares]] - file <tt>Moving_Least_Squares</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 
 
 
@@ -190,13 +187,15 @@
 * [[TJ Scale]] - file <tt>TJ_Scale</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 * [[Landmark Correspondences]] - file <tt>Transform_Roi</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
 * [[Interactive Rigid]] - file <tt>Transform_Rigid</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+* [[TJ Rotate]] - file <tt>TJ_Rotate</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 * [[Distortion Correction]] - file <tt>lenscorrection.Distortion_Correction</tt> in package '''[[TrakEM2_]]'''  -- ''java jar file''
-* [[TJ Turn]] - file <tt>TJ_Turn</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 * [[TJ Panel]] - file <tt>TJ_Panel</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+* [[TJ Turn]] - file <tt>TJ_Turn</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+* [[Elastic Stack Alignment with SIFT]] - file <tt>Align_ElasticMeshStack</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
 * [[TJ Affine]] - file <tt>TJ_Affine</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 * [[Interactive Affine]] - file <tt>Transform_Affine</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
 * [[Interactive Perspective]] - file <tt>Transform_Perspective</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
-* [[TJ Rotate]] - file <tt>TJ_Rotate</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+* [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
 * [[TJ Crop]] - file <tt>TJ_Crop</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 
 
@@ -383,6 +382,7 @@
 * [[Stack Sorter]] - file <tt>Stack_Sorter</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 * [[Stack Combiner]] - file <tt>Stack_Combiner</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 * [[Stack Reverser]] - file <tt>Stack_Reverser</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
+* [[Dynamic Reslice]] - file <tt>fiji.stacks.Dynamic_Reslice</tt> in package '''[[Fiji_Plugins]]'''  -- ''java jar file''
 * [[Stack Maker]] - file <tt>Stack_Maker</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 * [[Slice Remover]] - file <tt>Slice_Remover</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 
