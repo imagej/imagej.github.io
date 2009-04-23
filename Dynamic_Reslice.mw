@@ -67,10 +67,7 @@ ystart = 50
 
 
 # Fetch the t1-head stack from URL
-IJ.open('http://rsb.info.nih.gov/ij/images/t1-head.zip')
-
-# Get the current ImagePlus
-source_imp = WindowManager.getCurrentImage()
+source_imp = IJ.openImage('http://rsb.info.nih.gov/ij/images/t1-head.zip')
 
 # Select middle slice (does not matter)
 source_imp.setSlice(60)
