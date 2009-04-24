@@ -130,6 +130,18 @@
 
 }}
 
+
+
 <noinclude>
 
+<pre>
+== Plugins and Packages maintained by Mark Longair ==
 {{ Maintainers | maintainer = Mark Longair }}
+</pre>
+
+== Plugins and Packages maintained by Mark Longair ==
+{{ Maintainers | maintainer = Mark Longair }}
+
+
+
+</noinclude>
