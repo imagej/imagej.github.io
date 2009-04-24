@@ -6,6 +6,7 @@
 | #default       = ambox-notice
 }}">
 <tr>
+<td>
 {{#ifeq:{{{image}}}|none
 |<!-- no image cell -->
 | {{#switch:{{{image|{{{type|}}}}}}
@@ -17,6 +18,7 @@
 | #default       = {{{image|[[Image:Information.svg|40px]]}}}
 }}
 }}
+</td>
 <td> {{{text}}} </td>
 {{#if:{{{imageright|}}}
   <td class="ambox-imageright"> {{{imageright}}} </td>
