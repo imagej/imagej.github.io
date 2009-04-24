@@ -30,15 +30,13 @@
 
 
 ----
-'''Note:''' The CSS code to allow this template to work was added very recently; if this template does not work for you, try bypassing your cache to make sure you have the most recent version of the sitewide CSS code.
-
 
 '''Notwithstanding any statement on this page, Template:Ambox is from [http://en.wikipedia.org/wiki/Template:Ambox Wikipedia] and as such is licensed under the [http://www.gnu.org/licenses/fdl.txt GNU Free Documentation License].'''
 
 
 This is the '''ambox''' or '''article message box''' meta template.
 
-It is used to create ''article message box'' templates such as {{tl|NPOV dispute}} etc. It offers several different colours, uses default images if no image parameter is given and it has some other features.
+It is used to create ''article message box'' templates. It offers several different colours, uses default images if no image parameter is given and it has some other features.
 
 === Usage ===
 
@@ -56,14 +54,14 @@ Complex example:
 <pre>
 {{ambox
 | type  = maintenance
-| image = [[Image:Icon apps query.svg|38px]]
+| image = [[Image:Fiji-logo-1.0-256x256.png|38px]]
 | text  = The message body text.
 }}
 </pre>
 
 {{ambox
 | type  = style
-| image = [[Image:Icon apps query.svg|38px]]
+| image = [[Image:Fiji-logo-1.0-256x256.png|38px]]
 | text  = The message body text.
 }}
 
