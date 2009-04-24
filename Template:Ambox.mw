@@ -72,19 +72,19 @@ The following examples use different '''type''' parameters but use no image para
 
 {{ambox
 | type  = serious
-| text  = type=<u>serious</u> – Serious issues, such as {{tl|deletion request}} and {{tl|delete}}
+| text  = type=<u>serious</u> – Serious issues
 }}
 {{ambox
 | type  = content
-| text  = type=<u>content</u> – Content issues, such as {{tl|NPOV dispute}} and {{tl|accuracy dispute}}
+| text  = type=<u>content</u> – Content issues
 }}
 {{ambox
 | type  = maintenance
-| text  = type=<u>maintenance</u> – Style issues, such as {{tl|cleanup}}
+| text  = type=<u>maintenance</u> – Style issues
 }}
 {{ambox
 | type  = notice
-| text  = type=<u>notice</u> – Article notices, such as {{tl|inuse}}
+| text  = type=<u>notice</u> – Article notices
 }}
 
 === Parameters ===
