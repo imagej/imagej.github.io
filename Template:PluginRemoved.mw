@@ -1,0 +1,17 @@
+{{ambox
+| type  = maintenance
+| image = [[Image:Removed-from-Fiji.png|50px]]
+| text  = '''This plugin has been removed from the current Fiji distribution''' <br />
+{{{reason}}}
+}}
+
+<noinclude>
+
+
+<pre>
+{{PluginRemoved
+| reason = It was not good enough. }}
+</pre>
+
+{{PluginRemoved
+| reason = It was not good enough. }}
