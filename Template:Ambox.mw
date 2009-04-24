@@ -5,7 +5,7 @@
   | notice         = ambox-notice
   | #default       = ambox-notice
 }}">
-<tr>
+<th>
 {{#ifeq:{{{image}}}|none
    |<!-- no image cell -->
    |<td class="ambox-image"> {{#switch:{{{image|{{{type|}}}}}}
@@ -21,7 +21,7 @@
 {{#if:{{{imageright|}}}
   <td class="ambox-imageright"> {{{imageright}}} </td>
 }}
-</tr>
+</th>
 </table>
 <noinclude>
 
