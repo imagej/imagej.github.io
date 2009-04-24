@@ -6,8 +6,8 @@
 | #default       = ambox-notice
 }}">
 <tr>
-<td>
 <th>
+<td>
 {{#ifeq:{{{image}}}|none
 |<!-- no image cell -->
 | {{#switch:{{{image|{{{type|}}}}}}
