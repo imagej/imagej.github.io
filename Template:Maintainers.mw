@@ -1,4 +1,4 @@
-{{#switch:{{{maintainer|}}}
+{{ #switch:{{{maintainer|}}}
 
 | Albert Cardona = 
 
@@ -64,6 +64,8 @@
 * [[Median (3D)]]
 * [[Maximum (3D)]]
 * [[Minimum (3D)]]
+* [[Erode (3D)]]
+* [[Dilate (3D)]]
 
 === Packages ===
 
@@ -128,20 +130,16 @@
 * [[PIV analyser]]
 * [[FlowJ]]
 
+
 }}
 
+<noinclude>This template automatically generate a paragraph containing the list of plugins and packages maintained by a maintainer, as stated in the wiki. It is automatically generated from a python script in the Fiji development repository.
 
-
-<noinclude>
-
-<pre>
+Syntax is the following:<pre>
 == Plugins and Packages maintained by Mark Longair ==
-{{ Maintainers | maintainer = Mark Longair }}
+{{ Maintainers | maintainer = Mark Longair }} 
 </pre>
 
 == Plugins and Packages maintained by Mark Longair ==
 {{ Maintainers | maintainer = Mark Longair }}
-
-
-
 </noinclude>
