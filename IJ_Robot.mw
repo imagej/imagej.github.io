@@ -14,7 +14,7 @@ This plugin calls the Robot Java class. The purpose of the plugin is to allow th
 
 
 == Use ==
-When running the plugin one must specify an 'order' to the robot and some parameters (not all orders require all the parameters).binarises 8-bit images using various global (histogram-derived) thresholding methods.
+When running the plugin one must specify an 'order' to the robot and some parameters (not all orders require all the parameters):
 
 '''Move''': moves the mouse to a particular position (x, y) on the screen.
 
