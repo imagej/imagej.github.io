@@ -2,6 +2,7 @@
 | name                   = 3D Viewer
 | software               = ImageJ
 | author                 = Benjamin Schmid, Albert Cardona, Johannes Schindelin
+| maintainer             = Benjamin Schmid
 | filename               = [http://132.187.25.13/home/imagej/ImageJ_3D_Viewer.jar]
 | source                 = [http://132.187.25.13/home/imagej/ImageJ_3D_Viewer.jar]
 | released               = April 2007
