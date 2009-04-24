@@ -16,8 +16,9 @@
 | notice         = [[Image:Crystal important.png|40px]]
 | blank          = <!-- empty image cell -->
 | #default       = {{{image|[[Image:Information.svg|40px]]}}}
-}}</th>
 }}
+}}
+</th>
 <td> {{{text}}} </td>
 {{#if:{{{imageright|}}}
   <td class="ambox-imageright"> {{{imageright}}} </td>
