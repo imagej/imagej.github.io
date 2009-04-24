@@ -11,7 +11,7 @@
   | <td class="ambox-image"> {{#switch:{{{image|{{{type|}}}}}}
     | serious        = [[Image:Stop hand nuvola.svg|40px]]
     | content        = [[Image:Emblem-important.svg|40px]]
-    | maintenance    = [[Image:ImageBroom icon.svg|40px]]
+    | maintenance    = [[Image:Broom icon.svg|40px]]
     | notice         = [[Image:Crystal important.png|40px]]
     | blank          = <!-- empty image cell -->
     | #default       = {{{image|[[Image:Information.svg|40px]]}}}
