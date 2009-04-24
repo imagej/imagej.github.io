@@ -6,7 +6,7 @@
 | #default       = ambox-notice
 }}">
 <tr>
-<td>
+<td class="ambox-image">
 {{#ifeq:{{{image}}}|none
 |<!-- no image cell -->
 | {{#switch:{{{image|{{{type|}}}}}}
