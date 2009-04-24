@@ -9,10 +9,10 @@
 {{#ifeq:{{{image}}}|none
   | <!-- no image cell -->
   | <td class="ambox-image"> {{#switch:{{{image|{{{type|}}}}}}
-    | serious  = [[File:Stop hand nuvola.svg|40px]]
-    | content  = [[File:Emblem-important.svg|40px]]
-    | maintenance    = [[File:Broom icon.svg|40px]]
-    | notice   = [[File:Crystal important.png|40px]]
+    | serious  = [[Image:Stop hand nuvola.svg|40px]]
+    | content  = [[Image:Emblem-important.svg|40px]]
+    | maintenance    = [[ImageBroom icon.svg|40px]]
+    | notice   = [[Image:Crystal important.png|40px]]
     | blank    = <!-- empty image cell -->
     | #default = {{{image|[[File:Information.svg|40px]]}}}
   }}</td>
