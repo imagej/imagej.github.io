@@ -1,22 +1,22 @@
 <table class="metadata plainlinks ambox {{#switch:{{{type|}}}
-  | serious        = ambox-serious
-  | content        = ambox-content
-  | maintenance    = ambox-style
-  | notice         = ambox-notice
-  | #default       = ambox-notice
+| serious        = ambox-serious
+| content        = ambox-content
+| maintenance    = ambox-style
+| notice         = ambox-notice
+| #default       = ambox-notice
 }}">
 <tr>
 
 {{#ifeq:{{{image}}}|none
-   |<!-- no image cell -->
-   |<td class="ambox-image"> {{#switch:{{{image|{{{type|}}}}}}
-    | serious        = [[Image:Stop hand nuvola.svg|40px]]
-    | content        = [[Image:Emblem-important.svg|40px]]
-    | maintenance    = [[Image:Broom icon.svg|40px]]
-    | notice         = [[Image:Crystal important.png|40px]]
-    | blank          = <!-- empty image cell -->
-    | #default       = {{{image|[[Image:Information.svg|40px]]}}}
-  }}</td>
+|<!-- no image cell -->
+|<td class="ambox-image"> {{#switch:{{{image|{{{type|}}}}}}
+| serious        = [[Image:Stop hand nuvola.svg|40px]]
+| content        = [[Image:Emblem-important.svg|40px]]
+| maintenance    = [[Image:Broom icon.svg|40px]]
+| notice         = [[Image:Crystal important.png|40px]]
+| blank          = <!-- empty image cell -->
+| #default       = {{{image|[[Image:Information.svg|40px]]}}}
+}}</td>
 }}
 <td> {{{text}}} </td>
 {{#if:{{{imageright|}}}
