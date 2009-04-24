@@ -1,0 +1,55 @@
+This page collects the plugins and packages maintained by each member of the Fiji team. The list is automatically generated from the Wiki data by a [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=scripts/plugin-documentation-list.py;hb=HEAD python script]. It is stored in [[Template:Maintainers]] and fetch by this page on demand.
+
+
+== Ignacio Arganda-Carreras ==
+{{ Maintainers | maintainer = Ignacio Arganda-Carreras }} 
+<br/>
+
+
+
+== Albert Cardona ==
+{{ Maintainers | maintainer = Albert Cardona }} 
+<br/>
+
+
+
+
+== Verena Kaynig ==
+{{ Maintainers | maintainer = Verena Kaynig }} 
+<br/>
+
+
+
+
+== Gabriel Landini ==
+{{ Maintainers | maintainer = Gabriel Landini }} 
+<br/>
+
+
+
+
+== Mark Longair ==
+{{ Maintainers | maintainer = Mark Longair }} 
+<br/>
+
+
+
+
+
+== Benjamin Schmid ==
+{{ Maintainers | maintainer = Benjamin Schmid }} 
+<br/>
+
+
+
+
+== Jean-Yves Tinevez ==
+{{ Maintainers | maintainer = Jean-Yves Tinevez }}
+<br/>
+
+
+
+
+== Dan White ==
+{{ Maintainers | maintainer = Dan White }}
+<br/>
