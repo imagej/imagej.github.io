@@ -17,112 +17,8 @@ Always check with the [http://tinyurl.com/28y334 W3C CSS Validation Service]
 See also: [[Wikipedia:Catalogue of CSS classes|catalogue of CSS classes]].
  
 Thank you.
-
-<source lang="css">
-
 */
-
-/*
- * Import from wikinews
- */
-
-/* Article message box template styles */
-table.ambox {
-  width: 80%; 
-  margin: 0 auto; 
-  border-collapse: collapse; 
-  background: #f8fcff; 
-  border: 1px solid #aaa; 
-  border-left: 15px solid #39f;       /* Default "notice" blue */
-}
-table.ambox th, table.ambox td {      /* The message body cell(s) */
-  padding: 0.25em 0.5em;              /* 0.5em left/right */
-}
-table.ambox td.ambox-image {          /* The left image cell */
-  width: 52px; 
-  padding: 2px 0px 2px 0.5em;         /* 0.5em left, 0px right */
-  text-align: center; 
-}
-table.ambox td.ambox-imageright {     /* The right image cell */
-  width: 52px; 
-  padding: 2px 0.5em 2px 0px;         /* 0px left, 0.5em right */
-  text-align: center; 
-}
-table.ambox-notice {
-  border-left: 15px solid #39f;       /* Blue */
-/* border-right: 10px solid #39f; */  /* If you want two blue bars */
-}
-table.ambox-serious {
-  border-left: 15px solid #c00;       /* Red */
-}
-table.ambox-content {
-  border-left: 15px solid #f63;       /* Orange */
-}
-table.ambox-style {
-  border-left: 15px solid #fc3;       /* Yellow */
-}
-table.ambox-merge {
-  border-left: 15px solid #95b;       /* Purple */
-
-
-
-
-/** Import from the computer department wiki css - JYT, March 2009
- */ 
-
-
-#header {
-
-background-color: #dddddd; border: 1px solid black;padding: 5px; margin-bottom:5px;
-
-} 
-
-#powerint {background-color: #efefef; border: 1px solid #999999; padding: 5px; margin-left:50px; margin-right:50px }
-
-
-#green {background-color:#f5fffa; border:1px solid #cef2e0; padding:5px;}
-
-#green h2 {color:#000000; font-weight:bold; border:1px solid #a3bfb1; background-color:#cef2e0; margin-top:5px; padding: 5px;}
-
-
-
-#blue {background-color:#f5faff; border:1px solid #cedff2; padding:5px;}
-
-#blue h2 {color:#000000; font-weight:bold; border:1px solid #a3b0bf; background-color:#cedff2; margin-top:5px; padding: 5px;}
-
-#feedback {background-color:#eefbff; border:1px solid #dbf7ff; padding:5px;}
-
-#feedback h2 {color:#000000; font-weight:bold; border:1px solid #a1e2f4; background-color:#dbf7ff; margin-top:5px; padding: 5px;}
-
-#violet {background-color:#faf5ff; border:1px solid #ddcef2; padding:5px;}
-
-
-#violet h2 {color:#000000; font-weight:bold; border:1px solid #afa3bf; background-color:#ddcef2; margin-top:5px; padding: 5px;}
-
-#orange  {background-color:#FFFAF5; border:1px solid #F2E2CF; padding:5px;}
-
-#orange h2 {color:#000000; font-weight:bold; border:1px solid #D8A86F; background-color:#F2E2CF; margin-top:5px; padding: 5px;}
-
-.downloadbox {border: 1px solid black; padding: 5px; width: 350px; margin-left: 50px; margin-bottom:5px;}
-
-
-/* don't display Main Page on the Main Page */
-body.page-Main_Page h1.firstHeading { display:none; }
-
-/* don't display Feedback on Feedback */
-body.page-Feedback h1.firstHeading { display:none; }
-
-
-/* don't display Feedback on Talk:Feedback */
-body.page-Talk%3AFeedback h1.firstHeading { display:none; }
-
-
-
-
-
-
-
-
+ 
 /* <pre><nowiki> */
  
 /* Main page fixes */
@@ -959,6 +855,4 @@ sup, sub {
     line-height: 1em;
 }
  
-/* 
- * </source>
- */
+/* </nowiki></pre> */
