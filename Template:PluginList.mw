@@ -3,6 +3,8 @@
 * [[Volume Viewer]] - file <tt>Volume_Viewer.jar</tt>  -- ''java jar file''
 * [[3D Viewer]] - file <tt>ImageJ_3D_Viewer</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 
+
+
 === Plugins > Analyze ===
 
 * [[Delaunay Voronoi]] - file <tt>Delaunay_Voronoi</tt> in package '''[[VIB_]]'''  -- ''java jar file''
@@ -30,7 +32,6 @@
 * [[Same Slice in Multiple Images]] - file <tt>Same_Slice_in_Multiple_Images.rb</tt>  -- ''jruby script''
 * [[Edit LUT As Text]] - file <tt>Edit_LUT_As_Text.py</tt>  -- ''jython script''
 * [[Find Dimension of Raw Image]] - file <tt>Find_Dimension_of_Raw_Image.py</tt>  -- ''jython script''
-* [[TrakEM2 Add Balls]] - file <tt>TrakEM2_Add_Balls.class</tt>  -- ''java class file''
 * [[test distortioncorrection trakem2]] - file <tt>test_distortioncorrection_trakem2.js</tt>  -- ''javascript file''
 * [[Blobs Demo in Ruby]] - file <tt>Blobs_Demo_in_Ruby.rb</tt>  -- ''jruby script''
 * [[chess]] - file <tt>chess_.py</tt>  -- ''jython script''
