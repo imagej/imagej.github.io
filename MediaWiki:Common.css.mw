@@ -21,6 +21,46 @@ Thank you.
  
 /* <pre><nowiki> */
  
+
+/* Article message box template styles */
+table.ambox {
+  width: 80%; 
+  margin: 0 auto; 
+  border-collapse: collapse; 
+  background: #f8fcff; 
+  border: 1px solid #aaa; 
+  border-left: 15px solid #39f;       /* Default "notice" blue */
+}
+table.ambox th, table.ambox td {      /* The message body cell(s) */
+  padding: 0.25em 0.5em;              /* 0.5em left/right */
+}
+table.ambox td.ambox-image {          /* The left image cell */
+  width: 52px; 
+  padding: 2px 0px 2px 0.5em;         /* 0.5em left, 0px right */
+  text-align: center; 
+}
+table.ambox td.ambox-imageright {     /* The right image cell */
+  width: 52px; 
+  padding: 2px 0.5em 2px 0px;         /* 0px left, 0.5em right */
+  text-align: center; 
+}
+table.ambox-notice {
+  border-left: 15px solid #39f;       /* Blue */
+/* border-right: 10px solid #39f; */  /* If you want two blue bars */
+}
+table.ambox-serious {
+  border-left: 15px solid #c00;       /* Red */
+}
+table.ambox-content {
+  border-left: 15px solid #f63;       /* Orange */
+}
+table.ambox-style {
+  border-left: 15px solid #fc3;       /* Yellow */
+}
+table.ambox-merge {
+  border-left: 15px solid #95b;       /* Purple */
+}
+
 /* Main page fixes */
 #interwiki-completelist {
     font-weight: bold;
