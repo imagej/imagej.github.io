@@ -1,3 +1,8 @@
+{{ PluginRemoved 
+| reason =  This plugin was removed, as the [[Auto Threshold]] plugin from [[User:Landini|Gabriel Landini]] does a better job.
+| date = April 2009
+}}
+
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = MultiThresholder
@@ -12,12 +17,6 @@
 }}
 
 
-
-{{ambox
-| type  = maintenance
-| text  = This plugin will be soon removed, as the [[Auto Threshold]] plugin from [[User:Landini|Gabriel Landini]] does a better job.
-
-}}
 
 
 
