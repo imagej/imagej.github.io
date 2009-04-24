@@ -1,7 +1,29 @@
-/** CSS placed here will be applied to all skins
- */
+/*
+ATTENTION ADMINISTRATORS:
+ 
+This is the CSS for all skins. Any major changes to this page or
+[[MediaWiki:Monobook.css|Monobook.css]] should be first proposed on
+the [[Wikipedia:Village pump (technical)|Village pump]].  
+ 
+Testing can be done on your own user Monobook.css. In [[Mozilla]] and
+[[Opera (web browser)|Opera]], you can also test style changes dynamically
+with the [http://www.squarefree.com/bookmarklets/webdevel.html test styles]
+bookmarklet from squarefree.com. It pops up a window for adding style rules,
+and updates the page as you type.
+ 
+Always check with the [http://tinyurl.com/28y334 W3C CSS Validation Service]
+([http://tinyurl.com/2g8bsk CVS version]) after any changes.
+ 
+See also: [[Wikipedia:Catalogue of CSS classes|catalogue of CSS classes]].
+ 
+Thank you.
 
-/** Import from wikinews
+<source lang="css">
+
+*/
+
+/*
+ * Import from wikinews
  */
 
 /* Article message box template styles */
@@ -100,27 +122,7 @@ body.page-Talk%3AFeedback h1.firstHeading { display:none; }
 
 
 
-/*
-ATTENTION ADMINISTRATORS:
- 
-This is the CSS for all skins. Any major changes to this page or
-[[MediaWiki:Monobook.css|Monobook.css]] should be first proposed on
-the [[Wikipedia:Village pump (technical)|Village pump]].  
- 
-Testing can be done on your own user Monobook.css. In [[Mozilla]] and
-[[Opera (web browser)|Opera]], you can also test style changes dynamically
-with the [http://www.squarefree.com/bookmarklets/webdevel.html test styles]
-bookmarklet from squarefree.com. It pops up a window for adding style rules,
-and updates the page as you type.
- 
-Always check with the [http://tinyurl.com/28y334 W3C CSS Validation Service]
-([http://tinyurl.com/2g8bsk CVS version]) after any changes.
- 
-See also: [[Wikipedia:Catalogue of CSS classes|catalogue of CSS classes]].
- 
-Thank you.
-*/
- 
+
 /* <pre><nowiki> */
  
 /* Main page fixes */
@@ -957,4 +959,6 @@ sup, sub {
     line-height: 1em;
 }
  
-/* </nowiki></pre> */
+/* 
+ * </source>
+ */
