@@ -5,9 +5,6 @@
 | notice         = ambox-notice
 | #default       = ambox-notice
 }}">
-<tr>
-<th>
-<td>
 {{#ifeq:{{{image}}}|none
 |<!-- no image cell -->
 | {{#switch:{{{image|{{{type|}}}}}}
@@ -19,14 +16,12 @@
 | #default       = {{{image|[[Image:Information.svg|40px]]}}}
 }}
 }}
-</td>
-</th>
 <td> {{{text}}} </td>
 {{#if:{{{imageright|}}}
   <td class="ambox-imageright"> {{{imageright}}} </td>
 }}
 
-</tr>
+
 </table>
 <noinclude>
 
