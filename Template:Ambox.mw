@@ -8,14 +8,14 @@
 <tr>
 {{#ifeq:{{{image}}}|none
   | <!-- no image cell -->
-  | <td class="ambox-imageright"> {{#switch:{{{image|{{{type|}}}}}}
+  | <th class="ambox-image"> {{#switch:{{{image|{{{type|}}}}}}
     | serious        = [[Image:Stop hand nuvola.svg|40px]]
     | content        = [[Image:Emblem-important.svg|40px]]
     | maintenance    = [[Image:Broom icon.svg|40px]]
     | notice         = [[Image:Crystal important.png|40px]]
     | blank          = <!-- empty image cell -->
     | #default       = {{{image|[[Image:Information.svg|40px]]}}}
-  }}</td>
+  }}</th>
 }}
 <td> {{{text}}} </td>
 {{#if:{{{imageright|}}}
