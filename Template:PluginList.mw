@@ -1,14 +1,7 @@
 == Plugins ==
 
-* [[Imageflow]] - file <tt>imageflow.ImageFlow</tt> in package '''[[Imageflow_]]'''  -- ''java jar file''
 * [[Volume Viewer]] - file <tt>Volume_Viewer.jar</tt>  -- ''java jar file''
 * [[3D Viewer]] - file <tt>ImageJ_3D_Viewer</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Dynamic Profiler]] - file <tt>Dynamic_Profiler.class</tt>  -- ''java class file''
-* [[Z Profiler]] - file <tt>Z_Profiler.class</tt>  -- ''java class file''
-* [[StackSlicer]] - file <tt>StackSlicer_.class</tt>  -- ''java class file''
-* [[Script dynamic reslice]] - file <tt>Script_dynamic_reslice.py</tt>  -- ''jython script''
-
-
 
 === Plugins > Analyze ===
 
