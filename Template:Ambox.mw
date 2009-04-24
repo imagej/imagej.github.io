@@ -14,7 +14,7 @@
     | maintenance    = [[ImageBroom icon.svg|40px]]
     | notice   = [[Image:Crystal important.png|40px]]
     | blank    = <!-- empty image cell -->
-    | #default = {{{image|[[File:Information.svg|40px]]}}}
+    | #default = {{{image|[[Image:Information.svg|40px]]}}}
   }}</td>
 }}
 <td> {{{text}}} </td>
@@ -92,7 +92,7 @@ List of all parameters:
 <pre>
 {{ambox
 | type  = serious / content / maintenance / notice
-| image = none / blank / [[File:Some image.svg|40px]]
+| image = none / blank / [[Image:Some image.svg|40px]]
 | imageright = [[Image:Some image.svg|40px]]
 | text  = The message body text. 
 }}
@@ -104,14 +104,14 @@ List of all parameters:
 '''image'''
 :'''No parameter''' = If no '''image''' parameter is given the template uses a default image. Which default image it uses depends on the '''type''' parameter. 
 :'''An image''' = Should be an image with usual wiki notation. 40px - 50px width are usually about right depending on the image height to width ratio. For example: 
-::<code><nowiki>[[File:Unbalanced scales.svg|40px]]</nowiki></code>
+::<code><nowiki>[[Image:Unbalanced scales.svg|40px]]</nowiki></code>
 :'''none''' = Means that no image is used.
 :'''blank''' = Means that no image is used but an empty area the same size as a default image is used, which means that text in the message box gets aligned well with other article message boxes. (See the "special" examples above.)
 
 '''imageright'''
 :'''No parameter''' = If no '''imageright''' parameter is given then no image is shown on the right side.
 :'''An image''' = Should be an image with usual wiki notation. 40px - 50px width are usually about right depending on the image height to width ratio. For example: 
-::<code><nowiki>[[File:Nuvola apps bookcase.png|40px]]</nowiki></code>
+::<code><nowiki>[[Image:Nuvola apps bookcase.png|40px]]</nowiki></code>
 :'''Anything''' = Any other object that you want to show on the right side.
 
 '''text'''
