@@ -5,6 +5,7 @@
   | notice         = ambox-notice
   | #default       = ambox-notice
 }}">
+<tr>
 <th>
 {{#ifeq:{{{image}}}|none
    |<!-- no image cell -->
@@ -22,6 +23,7 @@
   <td class="ambox-imageright"> {{{imageright}}} </td>
 }}
 </th>
+</tr>
 </table>
 <noinclude>
 
