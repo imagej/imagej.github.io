@@ -53,14 +53,14 @@ Complex example:
 <pre>
 {{ambox
 | type  = maintenance
-| image = [[File:Icon apps query.svg|38px]]
+| image = [[Image:Icon apps query.svg|38px]]
 | text  = The message body text.
 }}
 </pre>
 
 {{ambox
 | type  = style
-| image = [[File:Icon apps query.svg|38px]]
+| image = [[Image:Icon apps query.svg|38px]]
 | text  = The message body text.
 }}
 
@@ -93,7 +93,7 @@ List of all parameters:
 {{ambox
 | type  = serious / content / maintenance / notice
 | image = none / blank / [[File:Some image.svg|40px]]
-| imageright = [[File:Some image.svg|40px]]
+| imageright = [[Image:Some image.svg|40px]]
 | text  = The message body text. 
 }}
 </pre>
@@ -147,14 +147,14 @@ The CSS classes can also be used directly in a wikitable. Like this:
 <pre>
 {| class="ambox ambox-content"
 |-
-| class="ambox-image" | [[File:Emblem-important.svg|40px]]
+| class="ambox-image" | [[Image:Emblem-important.svg|40px]]
 | Some text.
 |}
 </pre>
 
 {| class="ambox ambox-content"
 |-
-| class="ambox-image" | [[File:Emblem-important.svg|40px]]
+| class="ambox-image" | [[Image:Emblem-important.svg|40px]]
 | Some text.
 |}
 
