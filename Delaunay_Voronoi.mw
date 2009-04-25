@@ -2,6 +2,7 @@
 | software               = ImageJ
 | name                   = Delaunay/Voronoi
 | author                 = Johannes Schindelin, L. Paul Chew
+| maintainer             = Johannes Schindelin
 | filename               = [http://pacific.mpi-cbg.de/downloads/plugins/Delaunay_Voronoi.jar] 
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=VIB.git;a=history;f=Delaunay_Voronoi.java;h=refs/heads/VIB;hb=refs/heads/VIB]
 | released               = 14 August 2006
