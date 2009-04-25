@@ -1,0 +1,12 @@
+{{Infobox Plugin
+| name                   = Update Fiji
+| software               = Fiji
+| author                 = Johannes Schindelin
+| maintainer             = Johannes Schindelin
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Fiji_Updater;hb=HEAD gitweb]
+| released               = 10 Oct 2008
+| latest version         = 17 Jan 2009
+| status                 = beta
+}}
+
+The Fiji Updater is a mechanism to update individual packages in Fiji.  For technical reasons, a restart of Fiji is required before the changes take effect.
