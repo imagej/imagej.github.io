@@ -17,7 +17,7 @@ Parallel Iterative Deconvolution is an ImageJ plugin for iterative deblurring. T
 
 == Documentation ==
 
-The plugin code is based on a [[Matlab]] toolbox: [http://mathcs.emory.edu/%7Enagy/RestoreTools/index.html RestoreTools] by James G. Nagy and several of his students, including Julianne Chung, Katrina Palmer, Lisa Perrone, and Ryan Wright.
+The plugin code is based on a [[Matlab]] toolbox: [http://mathcs.emory.edu/%7Enagy/RestoreTools/index.html RestoreTools] by James G. Nagy and several of his students, including Julianne Chung, Katrina Palmer, Lisa Perrone, and Ryan Wright and also on [[Iterative Deconvolve 3D]] by Robert Dougherty.
 
 It implements the 4 following iterative methods:
 * MRNSD - Modified Residual Norm Steepest Descent
