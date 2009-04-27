@@ -161,9 +161,23 @@ no masking and no interpolation. The color encode flow direction and magnitude, 
 reference that can be seen in the color wheel.
 
 <gallery>
-[[Image:Testpiv3.gif|200px|right|thumb|The original 2 frame sequence]]
-[[Image:Testpiv3-fd.png|200px|right|thumb|The resulting flow encoded in color]]
-[[Image:Color coded orientation.png|right|thumb|Color coded orientation and magnitude]]
+Image:Testpiv3.gif|The original 2 frame sequence
+Image:Testpiv3-fd.png|The resulting flow encoded in color
+Image:Color coded orientation.png|Color coded orientation and magnitude
+</gallery>
+
+Here are two other examples, taken from the [http://www.math.uio.no/~jks/matpiv/ MatPIV page] of J. Kristian Sveen. The first one depict a surface wave in water:
+
+<gallery>
+Image:Surface wave.gif|Consecutive images of small particles in water during wave propagation
+Image:Surface wave-fd.png|Result from analysis
+</gallery>
+
+The second one depict the internal wave. Notice the shearing in the middle of the frame. 
+
+<gallery>
+Image:Internal wave.gif|Consecutive images of small particles in water during wave propagation
+Image:Internal wave-fd.png|Result from analysis
 </gallery>
 
 == Installation ==
