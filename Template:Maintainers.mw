@@ -60,6 +60,7 @@
 
 === Plugins ===
 
+* [[3D Viewer]]
 * [[Segmentation Editor]]
 * [[Median (3D)]]
 * [[Maximum (3D)]]
@@ -84,6 +85,18 @@
 * [[AnalyzeSkeleton]]
 * [[Skeletonize3D]]
 * [[BUnwarpJ]]
+
+
+| Johannes Schindelin = 
+
+=== Plugins ===
+
+* [[Delaunay Voronoi]]
+* [[Update Fiji]]
+* [[Fiji Wiki]]
+
+=== Packages ===
+
 
 
 | Verena Kaynig = 
@@ -132,3 +145,20 @@
 
 
 }}
+
+<noinclude>
+
+__NOTOC__
+
+This template automatically generate a paragraph containing the list of plugins and packages maintained by a maintainer, as stated in the wiki. It is automatically generated from a python script in the Fiji development repository, that can be seen [http:////pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=scripts/plugin-documentation-list.py;hb=HEAD here].
+
+Syntax is the following:
+
+<pre>
+== Plugins and Packages maintained by Mark Longair ==
+{{ Maintainers | maintainer = Mark Longair }} 
+</pre>
+
+== Plugins and Packages maintained by Mark Longair ==
+{{ Maintainers | maintainer = Mark Longair }}
+<\noinclude>
