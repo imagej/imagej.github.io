@@ -3,7 +3,7 @@
 | software               = ImageJ
 | name                   = Level Sets
 | author                 = Erwin Frise
-| maintainer             = Albert Cardona ([mailto:acardona_at_ini.phys.ethz.ch acardona_at_ini.phys.ethz.ch])
+| maintainer             = Erwin Frise
 | filename               =  
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/level_sets/levelsets;hb=HEAD on gitweb]
 | released               = August 2008
