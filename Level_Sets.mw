@@ -115,7 +115,29 @@ Progress:
 Result:
 [[Image:LS.3.result.png]]
 
-In the following example, the contour will advance to the inside with a rectangular selection as starting point. Select a rectangular region outside the object of interest:
+Note the output in the debug window:
+
+<nowiki>
+Level Set (Active Contours): Starting Mon Apr 27 20:12:14 PDT 2009
+Note: Each iteration step is 100 iterations
+Note: ROI is shape, parsing shape
+Initiated boundary pixels: 24 ZERO, 45 INSIDE, 144597 OUTSIDE
+Grey seed not set - setting to mean of ROI boundary = 65
+Delta t = 0.07575757575757575
+Iteration step: convergence = 0.02057951452408498, number of pixels changed = 0.02057951452408498
+Iteration step: convergence = 0.016657803438813925, number of pixels changed = 0.016657803438813925
+Iteration step: convergence = 0.011131099511386819, number of pixels changed = 0.011131099511386819
+Iteration step: convergence = 0.006338065350476374, number of pixels changed = 0.006338065350476374
+Converged!
+Iteration step: convergence = 0.00499110164272695, number of pixels changed = 0.00499110164272695
+Level Set: Finished Mon Apr 27 20:12:15 PDT 2009
+</nowiki>
+
+The "Grey seed" is the value derived from the region of interest. The "Greyscale tolerance" setting in the dialog will add a penalty to the progression if the value exceeds the limits set in the dialog (65 plus/minus 30 in the example, i.e. grey values from 35 to 95). This will limit the segmentation to grey values within the tolerance limits. 
+
+More important is the output of the convergence. If the convergence in the dialog is set too high, the segmentation may terminate prematurely. If it's set too low, the boundary may expand to infinity or contract to nothing. If this happens, note the last good convergence value, set a value a bit higher in the dialog and try again. 
+
+In the following example, the contour will advance to the inside with a rectangular selection as starting point. Note, that with Level Set segmentation, several objects can be selected at the same time. During the contour advancement, the contour will separate into the separate objects.  Select a rectangular region outside the object of interest:
 
 [[Image:LS.1b.seed.png]]
 
@@ -123,13 +145,15 @@ Go to the Level Sets plugin dialog, select "Region expands to '''inside'''"
 
 [[Image:LS.0b.dialog.png]]
 
-The end result looks slightly different because the local differences are not the same when the contour approaches the dot from the outside or the inside.
+The end result looks slightly different because the local differences are not the same when the contour approaches the dot from the outside or the inside. 
 
 Progress:
 [[Image:LS.2b.progress.png]]
 
 Result:
 [[Image:LS.3b.result.png]]
+
+All three dots were segmented into distinct objects. 
 
 The shape of the initial selection is not particularly important but it is important the the selection is either completely inside the object or completely outside the object. The segmentation will not work if the selection crosses the object boundary.
 
