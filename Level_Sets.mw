@@ -174,7 +174,6 @@ How much the selection is permitted to expand in one iteration. Increasing it wi
 * '''Method''':
 "Active Contours" or "Geodesic Active Contours". "Active Contours" is the algorithm as described above. "Geodesic Active Contours" are an implementation of the algorithm as described by Caselles et.al. (International Journal of Computer Vision 22:61) and implemented in the in the GeodesicActiveContour class of ITK.  Geodesic active contours can find Canny-type edges in the region of interest, while also introducing a smoothing term. This implementation is still experimental and not completely vetted. Use with caution. There will be a more complete description once it is feature complete. The convergence value should be lowered for Geodesic Active Contours.
 
-
 * '''Advection''':
 Essentially the speed the contour progresses. Increasing the value will speed up the segmentation but it may advance too fast and miss the boundary. 
 
