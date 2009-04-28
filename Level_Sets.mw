@@ -7,7 +7,7 @@
 | filename               =  
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/level_sets/levelsets;hb=HEAD on gitweb]
 | released               = August 2008
-| latest version         = February 2009
+| latest version         = April 2009
 | status                 = active
 | category               = [[:Category:Segmentation]]
 }}
@@ -171,13 +171,20 @@ How much the selection is permitted to expand in one iteration. Increasing it wi
 
 '''Level Sets'''
 
+* '''Method''':
+"Active Contours" or "Geodesic Active Contours". "Active Contours" is the algorithm as described above. "Geodesic Active Contours" are an implementation of the algorithm as described by Caselles et.al. (International Journal of Computer Vision 22:61) and implemented in the in the GeodesicActiveContour class of ITK.  Geodesic active contours can find Canny-type edges in the region of interest, while also introducing a smoothing term. This implementation is still experimental and not completely vetted. Use with caution. There will be a more complete description once it is feature complete. The convergence value should be lowered for Geodesic Active Contours.
+
+
 * '''Advection''':
 Essentially the speed the contour progresses. Increasing the value will speed up the segmentation but it may advance too fast and miss the boundary. 
+
+* '''Propagation''':
+This number determines the expansion (propagation) of the contour. Only used for Geodesic Active Contours.
 
 * '''Curvature''':
 This number determines the weight of the curvature in progressing the contour.
 
-* '''Grayscale''':
+* '''Grayscale tolerance''':
 During contour evolution the gray values of the current contour are compared to the next progression of the contour. If they exceed the value set here, a penalty is introduced.
 
 * '''Convergence''':
