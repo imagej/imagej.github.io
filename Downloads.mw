@@ -1,18 +1,15 @@
 Please bear in mind: Fiji is ''alpha'' software for now.  If you want it to become stable, please consider submitting [http://pacific.mpi-cbg.de/bugzilla/ bug reports], or ask for help on [http://groups.google.com/group/fiji-users the mailing list], but be prepared to test our fixes, too :-)
 
-You can download the current version of Fiji ("Luxembourg") for
+
+
+
+You can download the current version of Fiji ("Dresden 2009") for
+
+
 
 {{DownloadsCurrent}}
 
-=== Release Candidate ===
 
-We have a first release candidate for Fiji version "Dresden-2009":
-
-{{DownloadsVersion|Dresden-2009-rc2|20090427}}
-
-=== Source Code ===
-
-The easiest way to fetch the source code for Fiji is to use [http://git.or.cz/ git].  For further guidance on this, please refer to the page [[Downloading and Building Fiji From Source]].
 
 === Packages for Debian / Ubuntu ===
 
