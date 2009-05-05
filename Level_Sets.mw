@@ -155,6 +155,8 @@ All three dots were segmented into distinct objects.
 
 The shape of the initial selection is not particularly important but it is important the the selection is either completely inside the object or completely outside the object. The segmentation will not work if the selection crosses the object boundary.
 
+Hint: If the contour "leaks" because of an interruption or fuzzy part of the object boundary, try increasing the curvature value. This will increase the strength of the elastic boundary and helps mitigate those leaks.
+
 === Parameters ===
 
 The "Preprocessing" option is used for calculation the differences of neighboring pixels. Currently it will always default to Gaussian. A future implementation may have anisotropic filtering as an option. 
