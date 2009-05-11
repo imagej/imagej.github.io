@@ -31,7 +31,7 @@ The next time Fiji is run, automatic commands in macros/StartupMacros.txt will s
 
 === Some limitations of jython === 
 
-Tough jython tries to be as close as possible as python, there are some differences you may experience during scripting.
+Though jython tries to be as close as possible as python, there are some differences you may experience during scripting.
 
 * <u>Float "special numbers" such as ''NaN'' and ''Inf'' are not handled.</u>
 For instance, 
