@@ -14,7 +14,7 @@
 == Content and purpose ==
 
 This package regroup various "small" plugins dedicated to the manipulation of stacks, allowing to sort them, combine them, etc...
-As they are more of a utility package, they all can be found in the ''Image > Stacks'' menu.
+As they are more of a utility package, they all can be found in the ''Image > Stacks > Manipulation'' menu.
 
 
 What they do is pretty much summarized by the following diagram, taken from the MacBiophotonics<ref>http://www.macbiophotonics.ca/imagej/stack.htm</ref> webpage. 
@@ -27,6 +27,36 @@ What they do is pretty much summarized by the following diagram, taken from the 
 == Author and licenses ==
 
 We list here the authors for each part of this package, with corresponding licenses when relevant.
+
+
+=== Concatenate ===
+
+By [mailto:j.jackson_at_ucl.ac.uk Jon Jackson].
+Last modified June 29 2006.
+
+
+=== SubStack_Maker ===
+
+By [mailto:padua001_at_mc.duke.edu Anthony Padua] & [mailto:barbo013_at_mc.duke.edu Daniel Barboriak], Neuroradiology, Duke University Medical Center. Last modified: Oct 31, 2005.
+
+
+
+=== DeInterleave_ ===
+
+By [mailto:tcollins_at_macbiophotonics.ca Tony Collins].
+
+
+
+=== Stack_Inserter ===
+
+
+
+=== Stack_Splitter ===
+
+By [mailto:phkelly_at_ucsd.edu Patrick Kelly], [mailto:gjoss_at_rna.bio.mq.edu.au Greg Joss] & 
+[mailto:rcunning@acm.org Bob Cunningham].
+Last revision: 30 April 2003.
+
 
 
 === Stack_Sorter ===
@@ -45,6 +75,31 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 </i>
+
+
+
+=== Stack_Combiner ===
+
+
+
+=== Interleave ===
+
+By [mailto:tcollins_at_macbiophotonics.ca Tony Collins].
+
+
+
+=== Stack_Reverser ===
+
+
+
+=== Stack_Maker ===
+
+
+
+=== Slice_Remover ===
+
+
+
 
 
 <references/>
