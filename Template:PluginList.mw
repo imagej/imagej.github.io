@@ -41,7 +41,7 @@
 * [[Multithreaded Image Processing]] - file <tt>Multithreaded_Image_Processing.clj</tt>  -- ''clojure script''
 * [[Fiji Logo 3D]] - file <tt>Fiji_Logo_3D.js</tt>  -- ''javascript file''
 * [[Multithreaded Image Processing in Javascript]] - file <tt>Multithreaded_Image_Processing_in_Javascript.js</tt>  -- ''javascript file''
-* [[Spheres and Tubes in 3D]] - file <tt>ij3d.Mesh_Maker</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Spheres and Tubes in 3D]] - file <tt>customnode.Mesh_Maker</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 
 
 ==== Plugins > Examples > Command_Launchers ====
@@ -115,10 +115,9 @@
 * [[Register Virtual Stack Slices]] - file <tt>register_virtual_stack.Register_Virtual_Stack_MT</tt> in package '''[[register_virtual_stack_slices]]'''  -- ''java jar file''
 * [[Rigid Registration]] - file <tt>vib.RigidRegistration_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[TurboReg]] - file <tt>TurboReg_</tt> in package '''[[TurboReg_]]'''  -- ''java jar file''
-* [[Moving Least Squares]] - file <tt>Moving_Least_Squares</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Align Image by line ROI]] - file <tt>Align_Image</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[bUnwarpJ]] - file <tt>bUnwarpJ_</tt> in package '''[[bUnwarpJ_]]'''  -- ''java jar file''
-* [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+* [[Align Image by line ROI]] - file <tt>Align_Image</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Moving Least Squares]] - file <tt>Moving_Least_Squares</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 
 
 
@@ -187,13 +186,15 @@
 * [[TJ Scale]] - file <tt>TJ_Scale</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 * [[Landmark Correspondences]] - file <tt>Transform_Roi</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
 * [[Interactive Rigid]] - file <tt>Transform_Rigid</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+* [[TJ Rotate]] - file <tt>TJ_Rotate</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 * [[Distortion Correction]] - file <tt>lenscorrection.Distortion_Correction</tt> in package '''[[TrakEM2_]]'''  -- ''java jar file''
-* [[TJ Turn]] - file <tt>TJ_Turn</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 * [[TJ Panel]] - file <tt>TJ_Panel</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+* [[TJ Turn]] - file <tt>TJ_Turn</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+* [[Elastic Stack Alignment with SIFT]] - file <tt>Align_ElasticMeshStack</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
 * [[TJ Affine]] - file <tt>TJ_Affine</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 * [[Interactive Affine]] - file <tt>Transform_Affine</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
 * [[Interactive Perspective]] - file <tt>Transform_Perspective</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
-* [[TJ Rotate]] - file <tt>TJ_Rotate</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+* [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
 * [[TJ Crop]] - file <tt>TJ_Crop</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 
 
@@ -229,6 +230,7 @@
 * [[Show Color Surfaces]] - file <tt>isosurface.Show_Colour_Surfaces</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Particle Analyzer (3D)]] - file <tt>process3d.Particle_Analyzer_3D</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Bilateral Filter]] - file <tt>Bilateral_Filter</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Shape-Based Averaging (Experimental)]] - file <tt>util.RohlfingSBA</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Dilate (3D)]] - file <tt>process3d.Dilate_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Distance Transform 3D]] - file <tt>process3d.Distance_Transform_3D</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Implicit Interpolate Binary]] - file <tt>Implicit_Interpolate_Binary</tt> in package '''[[VIB_]]'''  -- ''java jar file''
@@ -366,24 +368,44 @@
 * [[RGB to Luminance]] - file <tt>util.RGB_to_Luminance</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[RGB to CIELAB]] - file <tt>RGB_to_CIELAB</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Average Color]] - file <tt>Average_Color</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Simulate Color Blindness]] - file <tt>Daltonize</tt> in package '''[[Daltonize_]]'''  -- ''java jar file''
+* [[Simulate Color Blindness]] - file <tt>Simulate_Color_Blindness</tt> in package '''[[Daltonize_]]'''  -- ''java jar file''
 
 
 
 === Image > Stacks ===
 
+* [[Time Stamper]] - file <tt>Time_Stamper</tt> in package '''[[Time_Stamper]]'''  -- ''java jar file''
+* [[Radial Reslice]] - file <tt>fiji.stacks.Radial_Reslice</tt> in package '''[[Fiji_Plugins]]'''  -- ''java jar file''
+* [[Dynamic Reslice]] - file <tt>fiji.stacks.Dynamic_Reslice</tt> in package '''[[Fiji_Plugins]]'''  -- ''java jar file''
+
+
+==== Image > Stacks > Manipulation ====
+
 * [[Concatenate]] - file <tt>Concatenate_</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 * [[Substack Maker]] - file <tt>Substack_Maker</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
-* [[Time Stamper]] - file <tt>Time_Stamper</tt> in package '''[[Time_Stamper]]'''  -- ''java jar file''
+* [[De-Interleave]] - file <tt>DeInterleave_</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 * [[Stack Inserter]] - file <tt>Stack_Inserter</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 * [[Stack Spliter]] - file <tt>Stack_Splitter</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
-* [[Radial Reslice]] - file <tt>fiji.stacks.Radial_Reslice</tt> in package '''[[Fiji_Plugins]]'''  -- ''java jar file''
 * [[Stack Sorter]] - file <tt>Stack_Sorter</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 * [[Stack Combiner]] - file <tt>Stack_Combiner</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
+* [[Interleave]] - file <tt>Stack_Interleaver</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 * [[Stack Reverser]] - file <tt>Stack_Reverser</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
-* [[Dynamic Reslice]] - file <tt>fiji.stacks.Dynamic_Reslice</tt> in package '''[[Fiji_Plugins]]'''  -- ''java jar file''
 * [[Stack Maker]] - file <tt>Stack_Maker</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 * [[Slice Remover]] - file <tt>Slice_Remover</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
+
+
+
+=== Image > Video Editing ===
+
+* [[Open Video]] - file <tt>video2.Open_Video</tt> in package '''[[Video_Editing]]'''  -- ''java jar file''
+* [[Draw Roi]] - file <tt>video2.Draw_Roi</tt> in package '''[[Video_Editing]]'''  -- ''java jar file''
+* [[Duplicate Frame]] - file <tt>video2.Duplicate_Frame</tt> in package '''[[Video_Editing]]'''  -- ''java jar file''
+* [[Add Empty Frame]] - file <tt>video2.Add_Empty_Frame</tt> in package '''[[Video_Editing]]'''  -- ''java jar file''
+* [[Move Roi]] - file <tt>video2.Move_Roi</tt> in package '''[[Video_Editing]]'''  -- ''java jar file''
+* [[New Video]] - file <tt>video2.New_Video</tt> in package '''[[Video_Editing]]'''  -- ''java jar file''
+* [[Insert Stack]] - file <tt>video2.Insert_Stack</tt> in package '''[[Video_Editing]]'''  -- ''java jar file''
+* [[Make Transition]] - file <tt>video2.Make_Transition</tt> in package '''[[Video_Editing]]'''  -- ''java jar file''
+* [[Delete Frame]] - file <tt>video2.Delete_Frame</tt> in package '''[[Video_Editing]]'''  -- ''java jar file''
 
 
 
@@ -404,10 +426,12 @@
 
 === Help > About Plugins ===
 
+* [[Sync Windows...]] - file <tt>Sync_Windows("about")</tt> in package '''[[Sync_Win]]'''  -- ''java jar file''
 * [[LOCI Plugins...]] - file <tt>loci.plugins.LociImporter("about")</tt> in package '''[[loci_tools]]'''  -- ''java jar file''
 * [[Color Histogram...]] - file <tt>ColorHistogram_("about")</tt> in package '''[[Color_Histogram]]'''  -- ''java jar file''
 * [[About TrakEM2...]] - file <tt>ini.trakem2.utils.Utils</tt> in package '''[[TrakEM2_]]'''  -- ''java jar file''
 * [[Image5D...]] - file <tt>I5D_about("about")</tt> in package '''[[Image_5D]]'''  -- ''java jar file''
+* [[Sync Measure 3D...]] - file <tt>Sync_Measure_3D("about")</tt> in package '''[[Sync_Win]]'''  -- ''java jar file''
 * [[Image IO ...]] - file <tt>net.sf.ij.plugin.AboutImageIO("")</tt> in package '''[[ij-ImageIO_]]'''  -- ''java jar file''
 * [[LSMToolbox...]] - file <tt>LSM_Toolbox("about")</tt> in package '''[[LSM_Toolbox]]'''  -- ''java jar file''
 * [[About bUnwarpJ...]] - file <tt>bunwarpj.bUnwarpJCredits</tt> in package '''[[bUnwarpJ_]]'''  -- ''java jar file''
@@ -436,16 +460,10 @@
 
 
 
+=== Analyze > Tools ===
 
-
-
-
-
-
-
-== Process ==
-
-* [[Multiple Image Processor]] - file <tt>MultipleImageProcessor</tt> in package '''[[M_I_P]]'''  -- ''java jar file''
+* [[Sync Measure 3D]] - file <tt>Sync_Measure_3D("")</tt> in package '''[[Sync_Win]]'''  -- ''java jar file''
+* [[Sync Windows]] - file <tt>Sync_Windows("")</tt> in package '''[[Sync_Win]]'''  -- ''java jar file''
 
 
 
@@ -464,3 +482,17 @@
 === Edit > Selection ===
 
 * [[Fill ROI holes]] - file <tt>Fill_holes</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Fit Circle to Image]] - file <tt>fiji.utilities.Circle_Fitter</tt> in package '''[[Fiji_Plugins]]'''  -- ''java jar file''
+
+
+
+
+
+
+
+
+
+
+== Process ==
+
+* [[Multiple Image Processor]] - file <tt>MultipleImageProcessor</tt> in package '''[[M_I_P]]'''  -- ''java jar file''
