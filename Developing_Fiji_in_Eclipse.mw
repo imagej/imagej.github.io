@@ -55,8 +55,32 @@ cd ~/workspace/fiji
 ./fiji
 </source>
 
+[[Image:Screenshot-New_JRE.png|thumb|New JRE]]
+[[Image:Screenshot-New_Java_Project.png|thumb|New Java Project]]
+
 ==Create the Eclipse Project==
 
-Launch Eclipse and create a new Java project
+Launch Eclipse and create a new Java project (New -> Java Project).  As already mentioned, Fiji runs best with the included JRE that can be installed directly by the link Configure JREs.  Add a new JRE located in the submodule path, e.g.
+
+<source lang="bash">
+~/workspace/fiji/java/linux-amd64
+</source>
+
+Eclipse will add all found JRE system libraries automatically.  Coose Fiji's JRE as the project specific JRE.  `Next &gt;' brings you to a screen where to select the sources and libraries.  Put into sources
+
+* ImageJA/ij
+* mpicbg
+* TrakEM2
+* VIB
+
+and the Plugins under src-plugins that you want to develop.  Add to Libraries
+
+* fiji/ij.jar
+* all jars in fiji/jars
+* fiji/plugins/loci_tools.jar
+* fiji/plugins/bUnwarpJ_.jar
+* all jars in fiji/java/linux-amd64/jdk1.6.0_10/jre/lib/ext
+
+==Adding Fiji Build==
 
 ...
