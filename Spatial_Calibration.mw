@@ -18,8 +18,9 @@ The process of spatial calibration involves calibrating a single image against k
 <li>Now make a line or area selection. If you use the measure function "Analyse - Measure" or ctrl / apple M, the resuts will be spatially calibrated.</li>
 </ol>
 
-Q) Can tell the real distance between the spots on the test image?
+Q) Can we measure the real distance between the spots on the test image?
 Q) Can you measure the area of one of the spots?
+Q) The pixel size on the camera CCD chip used to take the images is 16 micrometers in x and y. What is the real magnification of the 60x lens that was used?
 
 
 [[Category:Tutorials]]
