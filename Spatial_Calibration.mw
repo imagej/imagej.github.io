@@ -3,8 +3,8 @@ Suppose you wish to gather measurements from an image using real spatial units (
 
 The process of spatial calibration involves calibrating a single image against known values, then applying that calibration to your uncalibrated image. This assumes, of course, that both images are at the same magnification. Here's an example.
 
-[[Image:60Xnooptovar.gif | 300px]]
-[[Image:Disc60xwithoutoptovar.gif|300px]] 
+[[Image:60Xnooptovar.gif | 300px | Image of a stage micrometer]]
+[[Image:Disc60xwithoutoptovar.gif|300px | Image of a stopped spinning disk confocal scanner head]] 
 
 
 <ol>
