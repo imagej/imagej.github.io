@@ -1,0 +1,62 @@
+==Introduction==
+
+This tutorial is about how to setup [http://eclipse.org/ Eclipse] for developing Fiji on a *nix operating system.
+
+==Install Eclipse==
+
+Install Eclipse using your preferred package manager or download the appropriate binaries of the [http://www.eclipse.org/downloads/ Eclipse IDE for Java Developers].  Launch Eclipse and decide for a workspace location (e.g. ~/worspace).  For me, Eclipse is not stable with Sun Java 6.  That is, you will eventually have to install Java 5 as an alternative JRE and make a custom launcher for Eclipse, e.g.
+
+<source lang="bash">
+/usr/lib/jvm/java-1.5.0-sun/bin/java -cp /usr/lib/eclipse/startup.jar org.eclipse.core.launcher.Main
+</source>
+
+==Install Git==
+
+Install Git using your preferred package manager or download from the [http://git-scm.com/ Git website].
+
+==Checkout Fiji==
+
+Go into your Eclipse workspace and clone the Fiji repository
+
+<source lang="bash">
+cd ~/workspace
+git clone ssh://contrib@pacific.mpi-cbg.de/srv/git/fiji.git
+</source>
+
+This will create the folder ~/workspace/fiji where you have the core Fiji repository.
+
+In order to run Fiji properly, it is suggested to use the JRE which is shipped with Fiji.  This is a platform dependent submodule of the Fiji repository.  Check it out with
+
+<source lang="bash">
+cd ~/workspace/fiji
+git submodule init java/linux-amd64
+git submodule update java/linux-amd64
+</source>
+
+Check out all submodules that you want to work with e.g.
+
+<source lang="bash">
+cd ~/workspace/fiji
+git submodule init ImageJA
+git submodule update ImageJA
+git submodule init mpicbg
+git submodule update mpicbg
+git submodule init TrakEM2
+git submodule update TrakEM2
+git submodule init VIB
+git submodule update VIB
+</source>
+
+Fiji comes with its own build system that we will later use from Eclipse.  Test, if Fiji builds properly
+
+<source lang="bash">
+cd ~/workspace/fiji
+./Build.sh
+./fiji
+</source>
+
+==Create the Eclipse Project==
+
+Launch Eclipse and create a new Java project
+
+...
