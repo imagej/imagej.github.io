@@ -7,9 +7,12 @@ The process of spatial calibration involves calibrating a single image against k
 <li>Open the stage micrometer image, and the uncalibrated test image. Select the stage micrometer image.</li>
 <li>Use the Line Selection tool to draw a selection line a known length on the stage micrometer image.</li>
 <li>Go to menu "Analyze - Set Scale"</li>
-
-<li>Select the stack to save, and go to menu "File - Save As - Gif"</li>
+<li>Set the known distance of the line you drew in the "Know Distance" Field. The tool knows how many pixels long the line you drew was! </li>
+<li>Set the units of the measurement (um, mm, whatever)</li>
+<li>Now turn on the "Global" option by clicking the check box, so all open images will take the same spatial calibration when you click OK. (If not then only the image with the line selection is calibrated.  </li>
+<li>Now you will see that the test image is spatially calibrated. In the info bar at the top of the image, the numbers have spatial units!</li>
+<li>Now make a line or area selection. If you use the measure function "Analyse - Measure" or ctrl / apple M, the resuts will be spatially calibrated.</li>
 </ol>
-<p>Done!</p>
+
 
 [[Category:Tutorials]]
