@@ -55,8 +55,8 @@ cd ~/workspace/fiji
 ./fiji
 </source>
 
-[[Image:Screenshot-New_JRE.png|thumb|New JRE]]
-[[Image:Screenshot-New_Java_Project.png|thumb|New Java Project]]
+[[Image:Screenshot-New_JRE.png|thumb|New JRE|300px]]
+[[Image:Screenshot-New_Java_Project.png|thumb|New Java Project|300px]]
 
 ==Create the Eclipse Project==
 
@@ -97,7 +97,7 @@ Add all jars in <code>fiji/jar</code>s and all jars in <code>fiji/java/linux-amd
 
 After finishing this, Eclipse once builds the Fiji project.  There should not be any error message but several thousands of warnings that mostly come from Java1.4-style code or not required imports, variables or methods in the sources of authors who do not use an IDE as Eclipse and thus have no automatic assistance at cleaning up.  All these warnings can be ignored  having not effect to the functionality of the code.
 
-[[Image:Screenshot-Fiji_Builder.png|thumb|Add Fiji Builder]]
+[[Image:Screenshot-Fiji_Builder.png|thumb|Add Fiji Builder|300px]]
 
 ==Add Fiji Build==
 
@@ -109,7 +109,7 @@ Select the Fiji project and open the project properties dialog (Project -> Prope
 ;Working Directory: <code>${workspace_loc:/fiji}</code>
 ;Arguments: <code>--build</code>
 
-[[Image:Screenshot-Run.png|thumb|New Run Configuration]]
+[[Image:Screenshot-Run.png|thumb|New Run Configuration|300px]]
 
 ==Add a Run Configuration==
 
