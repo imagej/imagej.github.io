@@ -4,7 +4,7 @@ This tutorial is about how to setup [http://eclipse.org/ Eclipse] for developing
 
 ==Install Eclipse==
 
-Install Eclipse using your preferred package manager or download the appropriate binaries of the [http://www.eclipse.org/downloads/ Eclipse IDE for Java Developers].  Launch Eclipse and decide for a workspace location (e.g. ~/worspace).  For me, Eclipse is not stable with Sun Java 6.  That is, you will eventually have to install Java 5 as an alternative JRE and make a custom launcher for Eclipse, e.g.
+Install Eclipse using your preferred package manager or download the appropriate binaries of the [http://www.eclipse.org/downloads/ Eclipse IDE for Java Developers].  Launch Eclipse and decide for a workspace location (e.g. <code>~/worspace</code>).  For me, Eclipse is not stable with Sun Java 6.  That is, you will eventually have to install Java 5 as an alternative JRE and make a custom launcher for Eclipse, e.g.
 
 <source lang="bash">
 /usr/lib/jvm/java-1.5.0-sun/bin/java -cp /usr/lib/eclipse/startup.jar org.eclipse.core.launcher.Main
@@ -60,27 +60,70 @@ cd ~/workspace/fiji
 
 ==Create the Eclipse Project==
 
-Launch Eclipse and create a new Java project (New -> Java Project).  As already mentioned, Fiji runs best with the included JRE that can be installed directly by the link Configure JREs.  Add a new JRE located in the submodule path, e.g.
+Launch Eclipse and create a new Java project (New -> Java Project).  As already mentioned, Fiji runs best with the included JRE that can be installed directly by the link Configure JREs.  Add a new JRE located in the submodule path, e.g. <code>~/workspace/fiji/java/linux-amd64</code>
 
-<source lang="bash">
-~/workspace/fiji/java/linux-amd64
-</source>
-
-Eclipse will add all found JRE system libraries automatically.  Coose Fiji's JRE as the project specific JRE.  `Next &gt;' brings you to a screen where to select the sources and libraries.  Put into sources
+Eclipse will add all found JRE system libraries automatically.  Coose Fiji's JRE as the project specific JRE.  `Next >' brings you to a screen for selecting sources and libraries.  Eclipse automatically put into the source list everything it could find in the project folder.  In Fiji's complex directory structure, this automatic selection is inadequate.  Remove everything from the source list and put into it only what you want to edit, e.g.
 
 * ImageJA/ij
 * mpicbg
 * TrakEM2
 * VIB
 
-and the Plugins under src-plugins that you want to develop.  Add to Libraries
+If you want to develop a plugin without a separate submodule, put the respective folder under <code>fiji/src-plugins</code> into the source list.
 
-* fiji/ij.jar
-* all jars in fiji/jars
-* fiji/plugins/loci_tools.jar
-* fiji/plugins/bUnwarpJ_.jar
-* all jars in fiji/java/linux-amd64/jdk1.6.0_10/jre/lib/ext
+Add all jars in <code>fiji/jar</code>s and all jars in <code>fiji/java/linux-amd64/jdk1.6.0_10/jre/lib/ext</code> to the Libraries.  You are safe not to forget any of the required dependencies when you also add all build targets (all jar files in fiji/plugins) whose sources you do not have in the source list.  Unfortunately, the names of the submodules do not necessarily correlate with their build targets.  Therefore, here come some examples:
 
-==Adding Fiji Build==
+{| class="wikitable"
+! source path
+! build target
+|-
+| fiji/bio-formats
+| fiji/plugins/loci_tools.jar
+|-
+| fiji/ImageJA/ij
+| fiji/ij.jar
+|-
+| fiji/mpicbg
+| fiji/plugins/mpicbg_.jar
+|-
+| fiji/TrakEM2
+| fiji/plugins/TrakEM2_.jar
+|-
+| fiji/VIB
+| fiji/plugins/VIB_.jar
+|-
+| ...
+|}
 
-...
+After finishing this, Eclipse once builds the Fiji project.  There should not be any error message but several thousands of warnings that mostly come from Java1.4-style code or not required imports, variables or methods in the sources of authors who do not use an IDE as Eclipse and thus have no automatic assistance at cleaning up.  All these warnings can be ignored  having not effect to the functionality of the code.
+
+[[Image:Screenshot-Fiji_Builder.png|thumb|Add Fiji Builder]]
+
+==Add Fiji Build==
+
+Eclipse compiles java sources to class files but Fiji requires those class files and corresponding configuration files in specific places.  For this reason, the Fiji build system was developed and we will use it as an alternative builder for the Fiji project in Eclipse.
+
+Select the Fiji project and open the project properties dialog (Project -> Properties).  Under Builder, add a new Builder with the following properties:
+
+;Location: <code>${workspace_loc:/fiji}/fiji</code>
+;Working Directory: <code>${workspace_loc:/fiji}</code>
+;Arguments: <code>--build</code>
+
+==Add a Run Configuration==
+
+<dl>
+<dt>Main
+<dd>
+;Project: fiji
+;Main class: ij.ImageJ
+<dt>Arguments
+<dd>
+;VM arguments: <nowiki>-Xms3000m -Xmx3000m -Dplugins.dir=${workspace_loc:fiji} -Dmacros.dir=${workspace_loc:fiji}</nowiki>
+;Working directory: Other: ${system_property:user.home}/Desktop/
+<dt>JRE
+<dd>
+;Runtime JRE: Alternate JRE: Fiji Java
+;Java executable: Default (javaw)
+<dt>Classpath
+<dd>
+;User Entries: <code>fiji/ij.jar</code> and all jars in <code>fiji/jars</code>, <code>fiji/plugins</code>, and<code>fiji/jars/jython2.2.1</code>
