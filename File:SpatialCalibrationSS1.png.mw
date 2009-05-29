@@ -1,0 +1,1 @@
+spatial calibration tutorial screen shot 1, showing line selection on the stage micrometer image, and the correct settings in the set scale tool with global turned on. Yellow highliths important stuff.
