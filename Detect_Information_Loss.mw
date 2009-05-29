@@ -1,0 +1,20 @@
+Suppose you are given some images by as colleague, or have some images of your own, and you suspect that they may have been damaged by compression artifacts or brightness/contrast adjustment. Worse, you may have some images that you suspect might have been captured in such a way that information was missed or lost at the image capture stage due to bad detector settings. How can you detect these problems in an image?
+
+Lets open a sample image and check it out:
+
+In Fiji, do "File - Open Sample Images - FluorescentCells.tiff
+
+
+<ol>
+<li></li>
+</ol>
+
+
+Questions you should ask before quantifying information from images:
+
+*Q) Has there been lossy compression?
+*Q) Is the intensity information saturated / clipped / overexposed?
+*Q) Is there a problem with uniform background / detector offset?
+
+
+[[Category:Tutorials]]
