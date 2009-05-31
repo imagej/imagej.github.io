@@ -129,4 +129,4 @@ Fiji can be launched conveniently from inside Eclipse.  For this purpose, create
 ;Java executable: Default (javaw)
 <dt>Classpath
 <dd>
-;User Entries: <code>fiji/ij.jar</code> and all jars in <code>fiji/jars</code>, <code>fiji/plugins</code>, and<code>fiji/jars/jython2.2.1</code>
+;User Entries: <code>fiji/ij.jar</code> and all jars in <code>fiji/jars</code>, <code>fiji/plugins</code>, and <code>fiji/jars/jython2.2.1</code>
