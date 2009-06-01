@@ -5,12 +5,12 @@
 | maintainer             = Gabriel Landini (G.Landini at bham. ac. uk)
 | filename               = included in Auto_Threshold.jar
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Auto_Threshold;hb=HEAD on gitweb](1 file)
-| latest version         = v1.0(15 April 2009)
+| latest version         = v1.1 (1 June 2009)
 | status                 = active 
 }}
 
 == Purpose ==
-This plugin binarises 8-bit images using various '''local'''  thresholding methods. By 'local' here is meant that the threshold is computed for each pixel according to the image characteristings within a window of radius '''r''' around it.
+This plugin binarises 8-bit images using various '''local'''  thresholding methods. By 'local' here is meant that the threshold is computed for each pixel according to the image characteristings within a window of radius '''r''' around it. The segmented phase is always shown as white (255).
 
 For '''global''' thresholding rather than local, see  the [http://pacific.mpi-cbg.de/wiki/index.php/Auto_Threshold Auto Threshold] plugin.
 == Installation ==
