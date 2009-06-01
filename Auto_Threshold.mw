@@ -10,7 +10,7 @@
 }}
 
 == Purpose ==
-This plugin binarises 8-bit images using various '''global''' (histogram-derived) thresholding methods.
+This plugin binarises 8-bit images using various '''global''' (histogram-derived) thresholding methods. The segmented phase is always shown as white (255).
 
 For '''local''' thresholding rather than global, see  the [http://pacific.mpi-cbg.de/wiki/index.php/Auto_Local_Threshold Auto Local Threshold] plugin.
 
