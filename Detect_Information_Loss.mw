@@ -2,8 +2,10 @@ Suppose you are given some images by as colleague, or have some images of your o
 
 Lets open a sample image and check it out:
 
-In Fiji, do "File - Open Sample Images - FluorescentCells.tiff
+In Fiji, do "File - Open Sample Images - FluorescentCells.tiff, to open a three colour channel "pretty" iimage of some fixed and stained cells grown on glass. 
+Click the image then press "i" to see info about the image. 
 
+[[Image:OpenFluoCells.png]]
 
 <ol>
 <li></li>
