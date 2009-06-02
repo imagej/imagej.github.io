@@ -21,6 +21,11 @@ The process of spatial calibration involves calibrating a single image against k
 </li>
 </ol>
 
+If you want to see the spatial calibration of an image, or even change it manually, you can use the "Image-Properties" menu function to view and change the xyz voxel sizes, time calibration, 
+numbers o z slices, (colour) channels, and time points. This is handy if you need to re arrange a the dimensionality of a stack of images. Also, use the "Image-Hyperstacks" munu item functions for this. 
+
+
+
 *Q) Can we measure the real distance between the spots on the test image?
 *Q) Can you measure the area of one of the spots?
 *Q) The pixel size on the camera CCD chip used to take the images is 16 micrometers in x and y. What is the real magnification of the 60x lens that was used?
