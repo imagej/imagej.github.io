@@ -15,4 +15,4 @@ See http://en.wikipedia.org/wiki/Wikipedia:Footnotes for a
 discussion of different citation methods and how to generate
 footnotes using the <ref> & </ref> tags and the {{Reflist}} template
 -------------------------------------------------------------------- -->
-{{Reflist}}
+{{Reflist|2}}
