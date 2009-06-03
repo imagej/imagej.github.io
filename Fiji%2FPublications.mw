@@ -1,0 +1,18 @@
+== Publications introducing Fiji ==
+
+* Fiji was presented publicly for the first time on the [http://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2008 ImageJ User and Developer Conference] in November 2008: <ref>{{cite conference |author=Schindelin J |title=Fiji Is Just ImageJ (batteries included) |year=2008 |month=November }}</ref>
+
+== Publications using or enhancing Fiji ==
+
+* Stitching<ref>{{cite journal |author=Preibisch S and Saalfeld S and Tomancak P |title=Globally Optimal Stitching of Tiled 3D Microscopic Image Acquisitions |journal=Bioinformatics |year=2009 |month=April |pmid=19346324|url=http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184v1}}</ref>
+
+* Tracking<ref>{{cite journal |author=Hegge S and Kudryashev M and Smith A and Frischknecht F |title=Automated classification of <I>Plasmodium</I> sporozoite movement patterns reveals a shift towards productive motility during salivary gland infection |journal=Biotechnology Journal |year=2009 |month=May |pmid=19455538 |url=http://www3.interscience.wiley.com/journal/122393807/abstract }}</ref>
+
+== References ==
+
+<!-- ---------------------------------------------------------------
+See http://en.wikipedia.org/wiki/Wikipedia:Footnotes for a
+discussion of different citation methods and how to generate
+footnotes using the <ref> & </ref> tags and the {{Reflist}} template
+-------------------------------------------------------------------- -->
+{{Reflist}}
