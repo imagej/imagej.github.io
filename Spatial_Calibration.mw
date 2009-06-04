@@ -22,7 +22,7 @@ The process of spatial calibration involves calibrating a single image against k
 </ol>
 
 If you want to see the spatial calibration of an image, or even change it manually, you can use the "Image-Properties" menu function to view and change the xyz voxel sizes, time calibration, 
-number of z slices, (colour) channels, and time point interval. This is handy if you need to rearrange the dimensionality of a stack of images (also, use the "Image-Hyperstacks" munu item functions for that). 
+number of z slices, (colour) channels, and time point interval. This is handy if you need to rearrange the dimensionality of a stack of images (also, use the "Image-Hyperstacks" menu item functions for that). 
 
 [[Image:ImageProperties.png]]
 
