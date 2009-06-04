@@ -1,0 +1,51 @@
+Suppose you are given some images by as colleague, or have some images of your own, and you want to measure the amount of colocalization between two of the dyes or stains in the images. First you have to define what you mean by colocalization, and that is not trivial. One place to start reading about coloclaization is here: [https://info.med.tu-dresden.de/MTZimaging/images/2/25/White_QuantitativeColocAnalysis0408a.pdf QuantitativeColocAnalysis] and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalization analysis, look here: [https://info.med.tu-dresden.de/MTZimaging/images/6/63/White_QuantitativeColocAnalysis0408b.pdf Quantitative Imaging]
+
+[[Image:OpenFluoCells.png|300px]]
+
+To Begin with, we should check the images for wrong offset / high background, clipping/saturation, and correct adequate spatial resolution in x, y and probably z. 
+
+
+<ol>
+<li>
+'''Coloc:''' 
+</li>
+
+<li>
+
+
+<p>
+</p>
+
+<p>
+
+</p>
+
+
+</li>
+
+<li>
+<p>
+
+</p>
+
+<p> 
+
+</p>
+
+<p>
+
+</p>
+
+</li>
+
+</ol>
+
+
+Questions you should ask before attempting colocalization analysis from 2 colour channel images:
+
+*Q) Has there been lossy compression?
+*Q) Is the intensity information saturated / clipped / overexposed?
+*Q) Is there a problem with uniform background / detector offset?
+
+
+[[Category:Tutorials]]
