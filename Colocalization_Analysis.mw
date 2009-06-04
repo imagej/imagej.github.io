@@ -16,7 +16,12 @@ Are the images spatially calibrated? If not then we need to calibrate them so we
 We need to think carefully about the correct or adequate spatial resolution in x, y and probably z. This depends on the [http://en.wikipedia.org/wiki/Numerical_aperture Numerical Aperture] of the objective lens at the high resolution limit (bigger NA, higher spatial resolution the lens can see and you can digitise, or on the smallest size of the objects you are interested in.
 
 
-[http://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem Nyqvist] tells us the spatial sampling should be about three times smaller then the smallest object we want to resolve. Remember, spatial intensity correlation analysis, as we will perform here, can not tell you that 2 proteins are bound together in some biophysical bonding interaction... rather, it can tell you if the 2 molecules occur with the same stoichiometry when they are present in a set of pixels above the thresholds we will calculate below. However, it s hint in that direction, and you should follow up by determining true binding using [http://en.wikipedia.org/wiki/FLIM FLIM], [http://en.wikipedia.org/wiki/Förster_resonance_energy_transfer FRET] and biochemical methods like Immuno co-Precipitation etc. . 
+[http://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem Nyqvist] tells us the spatial sampling should be about three times smaller then the smallest object we want to resolve. Remember, spatial intensity correlation analysis, as we will perform here, can not tell you that 2 proteins are bound together in some biophysical bonding interaction... rather, it might suggest that the 2 molecules occur with the same relative amounts when they are present the set of spatial samples (pixels or voxels) above the thresholds we will calculate below. However, it is a hint in the "maybe they are binding partners or in the same macromolecular complex" direction, and you SHOULD follow up by determining true binding using [http://en.wikipedia.org/wiki/FLIM FLIM], [http://en.wikipedia.org/wiki/Förster_resonance_energy_transfer FRET] and biochemical methods like Immuno co-Precipitation etc.
+
+
+[[Image:Coloc1.png|300px]]
+[[Image:Coloc1b.png|300px]]
+[[Image:Coloc2.png|300px]]
 
 
 There is another (badly behaved) sample file here which we will use later: [http://pacific.mpi-cbg.de/samples/150707_WTstack.lsm 150707_WTstack.lsm].
