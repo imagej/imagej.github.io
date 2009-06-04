@@ -15,24 +15,55 @@ Are the images spatially calibrated? If not then we need to calibrate them so we
 
 We need to think carefully about the correct or adequate spatial resolution in x, y and probably z. This depends on the [http://en.wikipedia.org/wiki/Numerical_aperture Numerical Aperture] of the objective lens at the high resolution limit (bigger NA, higher spatial resolution the lens can see and you can digitise, or on the smallest size of the objects you are interested in.
 
-
 [http://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem Nyqvist] tells us the spatial sampling should be about three times smaller then the smallest object we want to resolve. Remember, spatial intensity correlation analysis, as we will perform here, can not tell you that 2 proteins are bound together in some biophysical bonding interaction... rather, it might suggest that the 2 molecules occur with the same relative amounts when they are present the set of spatial samples (pixels or voxels) above the thresholds we will calculate below. However, it is a hint in the "maybe they are binding partners or in the same macromolecular complex" direction, and you SHOULD follow up by determining true binding using [http://en.wikipedia.org/wiki/FLIM FLIM], [http://en.wikipedia.org/wiki/Förster_resonance_energy_transfer FRET] and biochemical methods like Immuno co-Precipitation etc.
 
-
-[[Image:Coloc1.png|300px]]
-[[Image:Coloc1b.png|300px]]
-[[Image:Coloc2.png|300px]]
 
 
 There is another (badly behaved) sample file here which we will use later: [http://pacific.mpi-cbg.de/samples/150707_WTstack.lsm 150707_WTstack.lsm].
 
-'''Costes methods for StatcSignif. relies on the calibration to calculate how many pixels the [http://en.wikipedia.org/wiki/Point_spread_function point spread function] covers.'''
+
+'''Colocalization Analysis - Using the methods of Manders and Costes, for spatial intensity correlation analysis, automatic thresholding and statistical significance testing.'''
+
 
 <ol>
 <li>
-'''Coloc:''' 
+'''[[Colocalization Threshold]] plugin:''' 
+
+<p>
+This plugin performs several functions for you in one go. With the "green" and "red" stacks of the [http://pacific.mpi-cbg.de/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif] dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2, You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot", and others off. You can explore the options in Set options. At the very least turn on the options: 
+</p>
+
+<p>
+[[Image:Coloc1.png|300px]]
+[[Image:Coloc1b.png|300px]]
+[[Image:Coloc2.png|300px]]
+<\p>
+
+<ol>
+
+<li>
+It generates a 2D Histogram / Scatterplot / Fluorogram. this is a really good way to visualise the correlation of the pixel intensities, over all pixels/voxels in the image, and can tell you immediately about problems such as intensity saturation/clipping, wrong offset, emission bleedthrough (fluorescence signal from the wrong dye in the detection channel), and even if there are multiple populations of coloclaizing species with different ratios of dyes in the same sample. Think of it just like a FACS or Flow cytometry scatter plot; indeed it is very similar.
 </li>
 
+<li>
+It makes a linear regression fit of the data in the scatter plot. That is the diagonal white line in the scatter plot, the gradient of which is the ratio of the intensities of the 2 channels. 
+</li>
+
+<li>
+It does the Costes method auto threshold determination. The thresholds are the intensity levels above which for both channels you say the two dyes are "colocalized". This method uses an iterative procedure to determine what pair of thresholds for the 2 channels of the scatterplot give a [http://en.wikipedia.org/wiki/Correlation Pearson's correlation coefficient (r)] of zero for the pixels below the thresholds. That means that all the pixels which have intensities above the two thresholds have greater than zero correlation, and the pixels below the thresholds have none or anti correlated intensities. The method is pretty robust (so long as you don't stupidly defeat it, ie. with image data with high offsets / background), and is fully reproducible, meaning you will always get the same thresholds for the same data set, and similar thresholds for similar datasets. Threshold setting is a big problem in colocalization analysis. If you use a tool that allows you to manually set the thresholds, obviously you can get any result you like, since you are subjectively deciding what is colocalized and what isn't. This might please your boss, but it's not very scientific is it? So don't do that! Use the Costes auto threshold instead! Some people say the Costes method sets the thresholds too low, and lower than they would set them by eye. That might be true, but manual methods are subjective and totally unreliable. THe thresholds that Costes method sets always mean the correlation below the thresholds is zero. Thats a good thing. 
+</li>
+
+<li>
+</li>
+
+</ol>
+
+</p>
+
+
+
+</li>
+Costes methods for StatcSignif. relies on the calibration to calculate how many pixels the [http://en.wikipedia.org/wiki/Point_spread_function point spread function] covers
 <li>
 
 
@@ -63,12 +94,14 @@ There is another (badly behaved) sample file here which we will use later: [http
 
 </ol>
 
+----
 
 Questions you should ask before attempting colocalization analysis from 2 colour channel images:
 
 *Q) Has there been lossy compression?
 *Q) Is the intensity information saturated / clipped / overexposed?
 *Q) Is there a problem with uniform background / detector offset?
+
 
 
 [[Category:Tutorials]]
