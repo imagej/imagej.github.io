@@ -55,21 +55,24 @@ It does the Costes method auto threshold determination. The thresholds are the i
 </li>
 
 <li>
-The plugin finally sends a bunch of statistics and results to the resutls window. You need to tuen them all on using the "set options" checkbox of the plugin GUI. Some of these resutls are pretty uninformative, but the most useful ones are:
+The plugin finally sends a bunch of statistics and results to the results window. You need to tuen them all on using the "set options" checkbox of the plugin GUI. Some of these resutls are pretty uninformative. They are listed here, in arguably order of usefullness:
 
 <ol>
+
+<li>
+The thresholded Mander's split colocalisation coefficients (zero is no colocalization, one means perfect colocalization. There is one coefficient per channel, which tells you the proportion of signal in that channels that colocalizes with the other channel. Of course this might be different for the two channels! The thresholded Mander's coefficients are probably the numbers you would publish (not the Pearson's coefficients as these are less informative).
+</li>
 
 <li>
 The thresholds that were set by the Costes Auto threshold method. 
 </li>
 
 <li>
+The Pearson's coefficients for: the whole image, image above thresholds (should be close to 1 for very good colocalizing dyes) and image below thresholds (should be around zero, because that's how the Costes auto threshold method tries to set them... so if it is not close to zero, something went wrong!)
 </li>
 
 <li>
-</li>
-
-<li>
+The % volume and intensity colocalized values are pretty useless as they are very dependent on how much background there is in the image, and you will get totally different values for different images of the same sample, that happen to have different areas of background. Maybe % intensity above threshold colocalized might be useful..?
 </li>
 </ol>
 
