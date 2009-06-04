@@ -1,9 +1,10 @@
 Suppose you are given some images by as colleague, or have some images of your own, and you want to measure the amount of colocalization between two of the dyes or stains in the images. First you have to define what you mean by colocalization, and that is not trivial. One place to start reading about coloclaization is here: [https://info.med.tu-dresden.de/MTZimaging/images/2/25/White_QuantitativeColocAnalysis0408a.pdf QuantitativeColocAnalysis] and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalization analysis, look here: [https://info.med.tu-dresden.de/MTZimaging/images/6/63/White_QuantitativeColocAnalysis0408b.pdf Quantitative Imaging]
 
+Also you should read these 2 papers very carefully: [[Image:Manders.pdf]] and [[Image:Costes etalColoc.pdf]], since we are going to use these methods for the analysis in this tutorial. Don't be scared by the maths, its actually very simple :-)
 
 First lets open a sample data set that we know should have very good colocalization because the 2 subunits of a dimeric protein are dyes with green and red dyes respectively. The methods of Manders and Costes should work very well for this sample, but maybe we can see some problems with the data? Maybe we can get an idea of if the data is good for this analysis or not? 
 
-Open this sample data file [http://pacific.mpi-cbg.de/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif]. Then use the "Image-Color-Split Channels" menu command to get a separate z stack for the 2 dyes (you can throw the blue one away!).
+'''Open this sample data file [http://pacific.mpi-cbg.de/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif].''' Then use the "Image-Color-Split Channels" menu command to get a separate z stack for the 2 dyes (you can throw the blue one away!).
 
 If you like, you can change the look up tables of the images (LUTs) so one is "green" and one is "red". Of course the colours here are always false, and only useful to use as apes with trichomatic vision to tell which channel is which: We are evolved to find red fruit in green trees. The detectors we use only see photons, and don't know what colour they are... that is determined by the fluorescence emission filters we use. There is no such thing as a green dye or a red dye, since they have broad emission spectra not a single wavelength corresponding to a certain "colour". 
 
@@ -30,7 +31,7 @@ There is another (badly behaved) sample file here which we will use later: [http
 '''[[Colocalization Threshold]] plugin:''' 
 
 <p>
-This plugin performs several functions for you in one go. With the "green" and "red" stacks of the [http://pacific.mpi-cbg.de/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif] dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2, You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot", and others off. You can explore the options in Set options. At the very least turn on the options: 
+This plugin performs several functions for you in one go. With the "green" and "red" stacks of the [http://pacific.mpi-cbg.de/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif] dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2, You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot", and others off. You can explore the options in Set options. Turn ALL the option son the first time you use it, so you see what it can do. 
 </p>
 
 <p>
@@ -54,6 +55,24 @@ It does the Costes method auto threshold determination. The thresholds are the i
 </li>
 
 <li>
+The plugin finally sends a bunch of statistics and results to the resutls window. You need to tuen them all on using the "set options" checkbox of the plugin GUI. Some of these resutls are pretty uninformative, but the most useful ones are:
+
+<ol>
+
+<li>
+The thresholds that were set by the Costes Auto threshold method. 
+</li>
+
+<li>
+</li>
+
+<li>
+</li>
+
+<li>
+</li>
+</ol>
+
 </li>
 
 </ol>
