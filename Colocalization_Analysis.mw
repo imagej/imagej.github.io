@@ -1,8 +1,13 @@
 Suppose you are given some images by as colleague, or have some images of your own, and you want to measure the amount of colocalization between two of the dyes or stains in the images. First you have to define what you mean by colocalization, and that is not trivial. One place to start reading about coloclaization is here: [https://info.med.tu-dresden.de/MTZimaging/images/2/25/White_QuantitativeColocAnalysis0408a.pdf QuantitativeColocAnalysis] and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalization analysis, look here: [https://info.med.tu-dresden.de/MTZimaging/images/6/63/White_QuantitativeColocAnalysis0408b.pdf Quantitative Imaging]
 
-[[Image:OpenFluoCells.png|300px]]
 
-To Begin with, we should check the images for wrong offset / high background, clipping/saturation, and correct adequate spatial resolution in x, y and probably z. 
+First lets open a sample data set that we know should have very good colocalization because the 2 subunits of a dimeric protein are dyes with green and red dyes respectively. The methods of Manders and Costes should work very well for this sample, but maybe we can see some problems with the data? Maybe we can get an idea of if the data is good for this analysis or not? 
+
+Open this sample data file [http://pacific.mpi-cbg.de/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif]. Then use the "Image-Color-Split Channels" menu command to get a separate z stack for the 2 dyes (you can throw the blue one away!)
+
+To Begin with, we should check the images for problems that might make the colocalisation analysis methods fail or be unreliable. We should looks for wrong offset / high background (as this confuses the auto threshold method, since zero signal is not zero pixel intensity but some larger number, see below), clipping/saturation (pixel intensity correlation measurements rely on the pixel intensities being true and not clipped to 255 when they were really higher!), and correct adequate spatial resolution in x, y and probably z (this depends on the [http://en.wikipedia.org/wiki/Numerical_aperture Numerical Aperture] of the objective lens at the high resolution limit (bigger NA, higher spatial resolution the lens can see and you can digitise), or on the smallest size of the objects you are interested in ( [http://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem Nyqvist] tells us the spatial sampling should be about three times smaller then the smallest object we want to resolve. Remember, spatial intensity correlation analysis, as we will perform here, can not tell you that 2 proteins are bound together in some biophysical bonding interaction... rather, it can tell you if the 2 molecules occur with the same stoichiometry when they are present in a set of pixels above the thresholds we will calculate below. However, it s hint in that direction, and you should follow up by determining true binding using [http://en.wikipedia.org/wiki/FLIM FLIM], [http://en.wikipedia.org/wiki/Förster_resonance_energy_transfer FRET] and biochemical methods like Immuno co-Precipitation etc. . 
+
+
 
 
 <ol>
