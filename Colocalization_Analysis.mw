@@ -1,14 +1,27 @@
+== Colocalization Analysis - What is Colocalization anyway? ==
+
+
 Suppose you are given some images by a colleague, or have some images of your own, and you want to measure the amount of colocalization between two of the dyes or stains in the images. First you have to define what you mean by colocalization, and that is not trivial. One place to start reading about coloclaization is here: [https://info.med.tu-dresden.de/MTZimaging/images/2/25/White_QuantitativeColocAnalysis0408a.pdf QuantitativeColocAnalysis] and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalization analysis, look here: [https://info.med.tu-dresden.de/MTZimaging/images/6/63/White_QuantitativeColocAnalysis0408b.pdf Quantitative Imaging]
 
 Also you should read these 2 papers very carefully: [[Image:Manders.pdf]] and [[Image:Costes etalColoc.pdf]], since we are going to use these methods for the analysis in this tutorial. Don't be scared by the maths, its actually very simple :-)
 
-First lets open a sample data set that we know should have very good colocalization because the 2 subunits of a dimeric protein are dyes with green and red dyes respectively. The methods of Manders and Costes should work very well for this sample, but maybe we can see some problems with the data? Maybe we can get an idea of if the data is good for this analysis or not? 
+First, lets open a sample data set that we know should have very good colocalization because the 2 subunits of a dimeric protein are dyes with green and red dyes respectively. The methods of Manders and Costes should work very well for this sample, but maybe we can see some problems with the data? Maybe we can get an idea of if the data is good for this analysis or not? 
 
 '''Open this sample data file [http://pacific.mpi-cbg.de/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif].''' Then use the "Image-Color-Split Channels" menu command to get a separate z stack for the 2 dyes (you can throw the blue one away!).
 
 If you like, you can change the look up tables of the images (LUTs) so one is "green" and one is "red". Of course the colours here are always false, and only useful to use as apes with trichomatic vision to tell which channel is which: We are evolved to find red fruit in green trees. The detectors we use only see photons, and don't know what colour they are... that is determined by the fluorescence emission filters we use. There is no such thing as a green dye or a red dye, since they have broad emission spectra not a single wavelength corresponding to a certain "colour". 
 
 [[Image:SplitChannels.png|300px]]
+
+----
+
+'''Questions you should ask before attempting colocalization analysis from 2 colour channel images, using the pixel intensity spatial correlation methods of Manders and Costes:'''
+
+*Q) Has there been lossy compression?
+*Q) Is the intensity information saturated / clipped / overexposed?
+*Q) Is there a problem with uniform background / detector offset?
+
+----
 
 To Begin with, we should check the images for problems that might make the colocalisation analysis methods fail or be unreliable. We should looks for wrong offset / high background (as this confuses the auto threshold method, since zero signal is not zero pixel intensity but some larger number, see below), clipping/saturation (pixel intensity correlation measurements rely on the pixel intensities being true and not clipped to 255 when they were really higher!). We did this in the [[DetectInformationLoss]] tutorial, so do that first if you didn't already!  
 
@@ -18,12 +31,12 @@ We need to think carefully about the correct or adequate spatial resolution in x
 
 [http://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem Nyqvist] tells us the spatial sampling should be about three times smaller then the smallest object we want to resolve. Remember, spatial intensity correlation analysis, as we will perform here, can not tell you that 2 proteins are bound together in some biophysical bonding interaction... rather, it might suggest that the 2 molecules occur with the same relative amounts when they are present the set of spatial samples (pixels or voxels) above the thresholds we will calculate below. However, it is a hint in the "maybe they are binding partners or in the same macromolecular complex" direction, and you SHOULD follow up by determining true binding using [http://en.wikipedia.org/wiki/FLIM FLIM], [http://en.wikipedia.org/wiki/Förster_resonance_energy_transfer FRET] and biochemical methods like Immuno co-Precipitation etc.
 
-
-
 There is another (badly behaved) sample file here which we will use later: [http://pacific.mpi-cbg.de/samples/150707_WTstack.lsm 150707_WTstack.lsm].
 
 
-'''Colocalization Analysis - Using the methods of Manders and Costes, for spatial intensity correlation analysis, automatic thresholding and statistical significance testing.'''
+
+== Colocalization Analysis - Using the methods of Manders and Costes, for spatial intensity correlation analysis, automatic thresholding and statistical significance testing. ==
+
 
 
 <ol>
@@ -84,7 +97,24 @@ The % volume and intensity colocalized values are pretty useless as they are ver
 
    </li>
 
+   <li>
+  '''Real problems and pitfalls using the Mansers and Costes methods for coocalization analysis. '''
+
+    <ol>
+
+        <li>
+      The auto threshold calculation method can fail if you feed it inappropriate information. That means it does not like images with high offset / high flat background, which adds a constant number to the "real proportional" intensity relationship to the abundance of the dye. If pixels that contain no real signal have large intensity vaules, the algorithm has no way of knowing that, and can reach a result for the thresholds where one or both of them is below the value of the lowest intensity value present in that channels of the image. this means that ALL of that channel's pixels are considered to be colocalised, then the Manders Coefficients that you get will reflect that aberrant situation. In these cases, the background / offset should be arefully removed/subtracted before running the [[Colocalization Threshold]] plugin. The images below are an example of this situation, using the badly behaved data set:[http://pacific.mpi-cbg.de/samples/150707_WTstack.lsm 150707_WTstack.lsm].
+      </li>
+
+    </ol>
+
+   </li>
+
+
    </ol>
+
+
+----
 
    <li>'''[[Colocalization Test]] plugin:''' 
 </p>
@@ -142,13 +172,7 @@ Other available methods, such as Fay and Van Steensel, do the same thing but ran
 
 </ol>
 
-----
 
-Questions you should ask before attempting colocalization analysis from 2 colour channel images:
-
-*Q) Has there been lossy compression?
-*Q) Is the intensity information saturated / clipped / overexposed?
-*Q) Is there a problem with uniform background / detector offset?
 
 
 
