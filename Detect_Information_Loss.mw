@@ -27,7 +27,7 @@ You should see something like the image below. Can you see that there are square
 </p>
 
 <p>
-To make an intensity histogram from  image, in the Fiji menus select "Analyze-Histogram". Then click the "Log" button in the histogram window to see the histogram in logarithmic scale (this is handy for fluorescence images that are often mostly black). You can see in the last "bin" (the 255 intensity bin) that there are 108 pixels that have intensity of 255... but are they really 255 or more than that... you have no idea. Worse still, it is often true that you are most interested in the brightest objects... but these are the ones that the true intensity information has been lost for   :-O
+To make an intensity histogram from an image, in the Fiji menus select "Analyze-Histogram". Then click the "Log" button in the histogram window to see the histogram in logarithmic scale (this is handy for fluorescence images that are often mostly black). You can see in the last "bin" (the 255 intensity bin) that there are 108 pixels that have intensity of 255... but are they really 255 or more than that... you have no idea. Worse still, it is often true that you are most interested in the brightest objects... but these are the ones that the true intensity information has been lost for   :-O
 </p>
 
 [[Image:SaturatedDAPIHistogram.png|300px]]
@@ -43,7 +43,7 @@ Where offset is too high, you are wasting the dynamic range of your detector. Wh
 </p>
 
 <p>
-How can you tell if there is an offset problem in an image? Simply look at the intensity histogram ("Analyze-Histogram"). In the too high offset case look for empty or very small numbers in the low end of the intensity scale. That means there are no or too few pixels with values close to zero. See the green channel of FluorescentCells.tif for an example of that, look at the image below. For the too low offset case, there is no easy way to tell if that happened. Getting the detector offset wrong makes quantitative analysis very difficult or impossible, for instance in the case of auto thresholding a 2 channel image for [http://www.macbiophotonics.ca/imagej/colour_analysis.htm Colocalization analysis.]
+How can you tell if there is an offset problem in an image? Simply look at the intensity histogram ("Analyze-Histogram"). In the too high offset case look for empty or very small numbers in the low end of the intensity scale. That means there are no or too few pixels with values close to zero. See the green channel of FluorescentCells.tif for an example of that, look at the image below. For the too low offset case, there is no easy way to tell if that happened. Getting the detector offset wrong makes quantitative analysis very difficult or impossible, for instance in the case of auto thresholding a 2 channel image for [[ColocalizationAnalysis|Colocalization Analysis]].
 </p>
 [[Image:OffsetProblem.png | 800px]]
 </li>
