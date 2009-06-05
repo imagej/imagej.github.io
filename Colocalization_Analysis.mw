@@ -108,19 +108,14 @@ The % volume and intensity colocalized values are pretty useless as they are ver
     <ol>
 
         <li>
-      <p>The auto threshold calculation method can fail if you feed it inappropriate information. That means it does not like images with high offset / high flat background, which adds a constant number to the "real proportional" intensity relationship to the abundance of the dye. If pixels that contain no real signal have large intensity vaules, the algorithm has no way of knowing that, and can reach a result for the thresholds where one or both of them is below the value of the lowest intensity value present in that channels of the image. this means that ALL of that channel's pixels are considered to be colocalised, then the Manders Coefficients that you get will reflect that aberrant situation. In these cases, the background / offset should be arefully removed/subtracted before running the [[Colocalization Threshold]] plugin. The images below are an example of this situation, using the badly behaved data set:[http://pacific.mpi-cbg.de/samples/150707_WTstack.lsm 150707_WTstack.lsm].
-      </p>
-      
-     <p>
-   This naturally brings us to the topic of wether or not to consider zero - zero pixels as part of the interesting data. 
-    </p>
+      The auto threshold calculation method can fail if you feed it inappropriate information. That means it does not like images with high offset / high flat background, which adds a constant number to the "real proportional" intensity relationship to the abundance of the dye. If pixels that contain no real signal have large intensity values, the algorithm has no way of knowing that, and can reach a result for the thresholds where one or both of them is below the value of the lowest intensity value present in that channels of the image. This means that ALL of that channel's pixels are considered to be colocalised, then the Manders Coefficients that you get will reflect that aberrant situation. In these cases, the background / offset should be carefully removed/subtracted before running the [[Colocalization Threshold]] plugin. The images below are an example of this situation, using the badly behaved data set:[http://pacific.mpi-cbg.de/samples/150707_WTstack.lsm 150707_WTstack.lsm]. Note that the vaules for M1 and tM1 are the same! This should not be the case. You can see the green channel threshold is wrongly set below the intensity where the image data actually starts :-O
 
-     <p>
-   
-    </p>
+[[Image:BadOffsetConfusesCostesAutoThreshold.png]]
+     </li>      
 
-
-    </li>
+     <li>
+This naturally brings us to the topic Regions of Interest (ROIs), and wether or not to consider zero - zero pixels as part of the interesting data for the algorithms to deal with. If you think about it, in a fluorescence image there is typically quite a large area which is black in both channels... for instance where there is space between cells, or just no signal in either channel since that area is not part of an interesting area of the sample. A philosophical point... but a significant one: Why bother taking images of black areas? Why bother analyzing black areas for colocalization?  Surely you are not interested in those regions, as they contain no information of use to you? If you perform these pixel intensity correlation methods and include zero zero pixels, then of course these pixels have a very high correlation! They have the same value. But they are totally uninteresting! Sure, the auto threshold method excludes them from the tM1 and tM2 figures, but why include them in the first place? Probably better not to include them unless there is a good reason to do that. Why not just image the area, or just analyze the area where your biology is happening? If you analyse an image with large areas of close to zero and zero intensities, then the autothreshold method will tend to lower the thresholds to include more of that non interesting background. If you image the same sample, but only image a patch of the interesting part, say cytoplasm, then the autothreshold will probably give higher thresholds, and exclude more non interesting background, so the thresholded Manders coefficients will better reflect the biologically interesting parts of the image data - right? You can analyze only a region of interest by making an ROI then selecting the use ROI option in the plugin. You canuse a regualr shape (rectancle or elipse) or ecen a freehad ROI to manually select the interesting part of the image and ignore the party you know id background. Yes, this is a subjective decision, so be careful! You can see in the following example screenshot that the thresholds were calculated properly and the tM1 and tM2 are sensible and lower then 1.00:  [[Image:ColocWithROI.png]]
+     </li>
 
      <li>
 '''Another problem is.......'''
