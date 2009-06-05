@@ -3,6 +3,12 @@
 
 Suppose you are given some images by a colleague, or have some images of your own, and you want to measure the amount of colocalization between two of the dyes or stains in the images. First you have to define what you mean by colocalization, and that is not trivial. One place to start reading about coloclaization is here: [https://info.med.tu-dresden.de/MTZimaging/images/2/25/White_QuantitativeColocAnalysis0408a.pdf QuantitativeColocAnalysis] and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalization analysis, look here: [https://info.med.tu-dresden.de/MTZimaging/images/6/63/White_QuantitativeColocAnalysis0408b.pdf Quantitative Imaging]
 
+There are two basic methods for colocalisation analysis:
+ <ol>
+<li> '''Pixel intensity Spatial Correlation Analysis''' (which is covered in this tutorial)</li>
+<li> '''Object Based Overlap Analysis''' (not covered in this tutorial, since it required segmenting the image into objects and background, and thats a whole branch of image processing in itself). </li>
+</ol>
+
 Also you should read these 2 papers very carefully: [[Image:Manders.pdf]] and [[Image:Costes etalColoc.pdf]], since we are going to use these methods for the analysis in this tutorial. Don't be scared by the maths, its actually very simple :-)
 
 First, lets open a sample data set that we know should have very good colocalization because the 2 subunits of a dimeric protein are dyes with green and red dyes respectively. The methods of Manders and Costes should work very well for this sample, but maybe we can see some problems with the data? Maybe we can get an idea of if the data is good for this analysis or not? 
