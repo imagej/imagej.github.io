@@ -110,20 +110,20 @@ The % volume and intensity colocalized values are pretty useless as they are ver
         <li>
       The auto threshold calculation method can fail if you feed it inappropriate information. That means it does not like images with high offset / high flat background, which adds a constant number to the "real proportional" intensity relationship to the abundance of the dye. If pixels that contain no real signal have large intensity values, the algorithm has no way of knowing that, and can reach a result for the thresholds where one or both of them is below the value of the lowest intensity value present in that channels of the image. This means that ALL of that channel's pixels are considered to be colocalised, then the Manders Coefficients that you get will reflect that aberrant situation. In these cases, the background / offset should be carefully removed/subtracted before running the [[Colocalization Threshold]] plugin. The images below are an example of this situation, using the badly behaved data set:[http://pacific.mpi-cbg.de/samples/150707_WTstack.lsm 150707_WTstack.lsm]. Note that the vaules for M1 and tM1 are the same! This should not be the case. You can see the green channel threshold is wrongly set below the intensity where the image data actually starts :-O
 
-[[Image:BadOffsetConfusesCostesAutoThreshold.png]]
+[[Image:BadOffsetConfusesCostesAutoThreshold.png|300px]]
      </li>      
 
      <li>
-This naturally brings us to the topic Regions of Interest (ROIs), and wether or not to consider zero - zero pixels as part of the interesting data for the algorithms to deal with. If you think about it, in a fluorescence image there is typically quite a large area which is black in both channels... for instance where there is space between cells, or just no signal in either channel since that area is not part of an interesting area of the sample. A philosophical point... but a significant one: Why bother taking images of black areas? Why bother analyzing black areas for colocalization?  Surely you are not interested in those regions, as they contain no information of use to you? If you perform these pixel intensity correlation methods and include zero zero pixels, then of course these pixels have a very high correlation! They have the same value. But they are totally uninteresting! Sure, the auto threshold method excludes them from the tM1 and tM2 figures, but why include them in the first place? Probably better not to include them unless there is a good reason to do that. Why not just image the area, or just analyze the area where your biology is happening? If you analyse an image with large areas of close to zero and zero intensities, then the autothreshold method will tend to lower the thresholds to include more of that non interesting background. If you image the same sample, but only image a patch of the interesting part, say cytoplasm, then the autothreshold will probably give higher thresholds, and exclude more non interesting background, so the thresholded Manders coefficients will better reflect the biologically interesting parts of the image data - right? You can analyze only a region of interest by making an ROI then selecting the use ROI option in the plugin. You canuse a regualr shape (rectancle or elipse) or ecen a freehad ROI to manually select the interesting part of the image and ignore the party you know id background. Yes, this is a subjective decision, so be careful! You can see in the following example screenshot that the thresholds were calculated properly and the tM1 and tM2 are sensible and lower then 1.00:  [[Image:ColocWithROI.png]]
+This naturally brings us to the topic Regions of Interest (ROIs), and wether or not to consider zero - zero pixels as part of the interesting data for the algorithms to deal with. If you think about it, in a fluorescence image there is typically quite a large area which is black in both channels... for instance where there is space between cells, or just no signal in either channel since that area is not part of an interesting area of the sample. A philosophical point... but a significant one: Why bother taking images of black areas? Why bother analyzing black areas for colocalization?  Surely you are not interested in those regions, as they contain no information of use to you? If you perform these pixel intensity correlation methods and include zero zero pixels, then of course these pixels have a very high correlation! They have the same value. But they are totally uninteresting! Sure, the auto threshold method excludes them from the tM1 and tM2 figures, but why include them in the first place? Probably better not to include them unless there is a good reason to do that. Why not just image the area, or just analyze the area where your biology is happening? If you analyse an image with large areas of close to zero and zero intensities, then the autothreshold method will tend to lower the thresholds to include more of that non interesting background. If you image the same sample, but only image a patch of the interesting part, say cytoplasm, then the autothreshold will probably give higher thresholds, and exclude more non interesting background, so the thresholded Manders coefficients will better reflect the biologically interesting parts of the image data - right? You can analyze only a region of interest by making an ROI then selecting the use ROI option in the plugin. You can use a regualr shape (rectangle or ellipse) or even a freehand ROI to manually select the interesting part of the image and ignore the part you know is background. Yes, this is a subjective decision, so be careful! You can see in the following example screenshot that for the same misbehaving dataset, using an ROI which roughly gets just the cell, the thresholds were calculated properly and the tM1 and tM2 are sensible and lower then 1.00:  
+
+[[Image:ColocWithROI.png|300px]]
      </li>
 
-     <li>
-'''Another problem is.......'''
-     </li>
+
      
       </ol>
 
-</li>
+
 
 ----
 
@@ -136,7 +136,7 @@ To perform the Costes test for statistical significance (which you should ALWAYS
    </p>
 
    <p>
-[[Image:ColocTestGUI1.png|500px]]
+[[Image:ColocTestGUI1.png|400px]]
    </p>
 
    <p>
@@ -149,7 +149,7 @@ Choose the correct Channel 1 and Channel 2 images stacks from the drop down list
 The results window will then display the calculated P-value, and some other details of the test calculation. 
 </p>
 
-[[Image:ColocTestResult.png|500px]]
+[[Image:ColocTestResult.png|400px]]
 
    <p> The Costes method for [[http://en.wikipedia.org/wiki/Statistical_significance Statistical Significance]] relies on the spatial calibration of the image, knowledge of the [[http://en.wikipedia.org/wiki/Numerical_aperture  Numerical Aperture (N.A.)]] of the objective lens, and the fluorescence emission wavelength to calculate how many pixels the [http://en.wikipedia.org/wiki/Point_spread_function point spread function] covers in the image. Then it takes the image in one of the channels, and randomizes it by moving PSF sized chunks of the image to random locations in a new random test image. Then it calculates the [[http://en.wikipedia.org/wiki/Correlation Pearson's correlation coefficient (r)]] between the randomized image and the original image of the other channel. If the correlation of the randomized image with the real image of the other channel is as good as or better then the correlation betwen the two real images, then any correlation that you measure is no better then what you would have got by chance for this image.  This test is performed many (100) times, and the P-value is output, which is the proportion of random images that had better correlation than the real image. A P-value of 1.00 means that nono of the randomized images had better correlation. 0.95 is the normal statistical confidence limit of 95%. Anything lower than that, and the correlation / colocalization that you measure in the real images is not likely to be better than random chance, and thus is probably not interesting. 
     </p>
