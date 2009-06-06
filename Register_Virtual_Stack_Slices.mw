@@ -13,7 +13,8 @@
 
 <p>This plugin takes a list of image slices stored in a folder, and delivers a list of registered image slices (with enlarged canvas).</p>
 
-<p>This howto describes the uses of the "Register Virtual Stack Slices" plugin in Fiji for the purpose of registering the slices of a stack. The plugin uses any translation, rigid (translation+rotation), similarity (translation+rotation+isotropic scaling), affine, elastic (via bUnwarpJ with B-splines) or moving least squares transformation model, aided by automatically extracted SIFT features.</p>
+<p>The plugin uses any translation, rigid (translation+rotation), similarity (translation+rotation+isotropic scaling), affine, elastic (via bUnwarpJ with B-splines) or moving least squares transformation model, aided by automatically extracted SIFT features.</p>
+
 <p><b>Premises</b>:<br />
 <ul>
 <li>You have a folder with an ordered list of image files in it that ImageJ can open.</li>
@@ -21,7 +22,6 @@
 </ul>
 </p>
 <p>Images may have different dimensions and be of different type.</p>
-<p><b>Step 0</b>: <a href="http://pacific.mpi-cbg.de">Install Fiji,</a> and launch it.</p>
 <p><b>Step 1</b>: launch the "Plugins - Registration - Register Virtual Stack Slices" plugin</p>
 <p><b>Step 2</b>: choose the appropriate options:<br />
 <ul>
