@@ -60,44 +60,24 @@
 
 == Scripting / PlugIn ==
 
-<p>You can call the plugin in a non-interactive fashion from java code:</p>
-<source lang="java">
-import ini.trakem2.imaging.Registration;
-import register_virtual_stack.Register_Virtual_Stack_Slices;
-
-[...]
-
-String source_dir = "/path/to/source/";
-String target_dir = "/path/to/target/";
-// can be PHASE_CORRELATION or SIFT
-int registration_type = Register_Virtual_Stack_Slices.PHASE_CORRELATION;
-// Can be null if using PHASE_CORRELATION
-Registration.SIFTParameters sp = new Registration.SIFTParameters();
-// image scale at which phase-correlation works, for performance
-float scale = 0.5f;
-// minimum cross-correlation score to accept phase-correlation results, otherwise try pure cross-correlation
-// (use as low as 0.4 if images are noisy, or at your discretion)
-float min_R = 0.7;
-
-Register_Virtual_Stack_Slices.exec(source_dir, target_dir, registration_type, sp, scale, min_R);
-
-</source>
-
-<p>The above can of course be called from any scripting language, such as Jython:</p>
+<p>You can call the plugin in a non-interactive fashion from a jython script:</p>
 <source lang="python">
-from ini.trakem2.imaging import Registration
-from register_virtual_stack import Register_Virtual_Stack_Slices
+from register_virtual_stack import Register_Virtual_Stack_MT
+
 source_dir = "/path/to/source/"
 target_dir = "/path/to/target/"
-registration_type = Register_Virtual_Stack_Slices.PHASE_CORRELATION
-sp = new Registration.SIFTParameters()
-scale = 0.5
-min_R = 0.7
-Register_Virtual_Stack_Slices.exec(source_dir, target_dir, registration_type, sp, scale, min_R);
+
+p = Register_Virtual_Stack_MT.Param()
+# The "maximum image size":
+p.sift.maxOctaveSize = 1024
+# The "inlier ratio":
+p.minInlierRatio = 0.05
+
+Register_Virtual_Stack_MT.exec(source_dir, target_dir, p);
 </source>
 
 == See also ==
-* [http://www.ini.uzh.ch/~acardona/howto.html#register_virtual_stack Register Virtual Stack] at TrakEM2 website.
-* [http://www.ini.uzh.ch/~acardona/howto.html#sift_parameters SIFT parameters explained] at TrakEM2 website.
+* [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/imagefeatures/FloatArray2DSIFT.java;hb=HEAD FloatArray2DSIFT.java] which contains the subclass Param which is the 'sift' member of the Register_Virtual_Stack_Slices.Param subclass.
+* [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/register_virtual_stack_slices/register_virtual_stack/Register_Virtual_Stack_MT.java;hb=HEAD Register_Virtual_Stack_MT.java], including the Param subclass.
 
 [[Category:Plugins]][[Category:Registration]]
