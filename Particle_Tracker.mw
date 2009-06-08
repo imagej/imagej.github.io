@@ -2,14 +2,14 @@
 | software               = ImageJ
 | name                   = Particle Tracker
 | author                 = Guy Levy, [http://www.cbl.ethz.ch/ Computational Biophysics Lab, ETH Zürich]
-| filename               = [http://weeman.inf.ethz.ch/particletracker/source/ParticleTracker_.jar ParticleTracker_.jar] (70,897 Bytes)
-| source                 = [http://weeman.inf.ethz.ch/particletracker/doc/ParticleTrackerJavaAPI/index.html Java API]
+| filename               = [http://weeman.inf.ethz.ch/ParticleTracker/source/ParticleTracker_.jar ParticleTracker_.jar] (70,897 Bytes)
+| source                 = [http://weeman.inf.ethz.ch/ParticleTracker/doc/ParticleTrackerJavaAPI/index.html Java API]
 | released               = 2006 
 | latest version         = 
 | status                 = probably not active
 | category               = [[:Category:Particle analysis|Particle analysis]]
-| documentation          = [http://weeman.inf.ethz.ch/particletracker/doc/ParticleTrackerUserManual.pdf ParticleTrackerUserManual.pdf]
-| website                = [http://weeman.inf.ethz.ch/particletracker/]
+| documentation          = [http://weeman.inf.ethz.ch/ParticleTracker/doc/ParticleTrackerUserManual.pdf ParticleTrackerUserManual.pdf]
+| website                = [http://weeman.inf.ethz.ch/ParticleTracker/]
 }}
 
 [[Category:Plugins]]
