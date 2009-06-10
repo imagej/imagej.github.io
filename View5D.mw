@@ -1,0 +1,24 @@
+{{Infobox Plugin
+| name                   = View5D
+| software               = ImageJ
+| author                 = Rainer Heintzmann
+| maintainer             = Rainer Heintzmann
+| filename               = link to the jar here
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/View5D_/view5d/View5D_.java;h=f631797d745106066d4b60b2d03412ffc9ae2d25;hb=refs/heads/master]
+| released               = April 2007
+| latest version         = V1.2.04 
+| status                 = 
+| category               = [[:Category:Plugins|Plugins]]
+| website                = [http://www.nanoimaging.de]
+}}
+
+
+== Purpose ==
+
+The program View5D interactively displays of up to 5 dimensional volumetric datasets.
+Multi-dimensional data frequently arises in confocal microscopy and medical imaging applications. 
+
+Look here for more info http://www.nanoimaging.de
+
+
+[[Category:Plugins]]
