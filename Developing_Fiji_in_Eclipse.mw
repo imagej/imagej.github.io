@@ -33,6 +33,13 @@ git submodule init java/linux-amd64
 git submodule update java/linux-amd64
 </source>
 
+Check out the master branch of this submodule explicitly
+
+<source lang="bash">
+cd ~/workspace/fiji/java/linux-amd64
+git checkout master
+</source>
+
 Check out all submodules that you want to work with e.g.
 
 <source lang="bash">
@@ -54,8 +61,7 @@ git checkout master
 cd ../TrakEM2
 git checkout master
 cd ../VIB
-git checkout VIB
-## yes, this is the master branch of VIB
+git checkout VIB   # yes, this is the master branch of VIB
 </source>
 
 
