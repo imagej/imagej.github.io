@@ -54,7 +54,8 @@ git checkout master
 cd ../TrakEM2
 git checkout master
 cd ../VIB
-git checkout VIB <i>(yes, this is the master branch of VIB)</i>
+git checkout VIB
+## yes, this is the master branch of VIB
 </source>
 
 
