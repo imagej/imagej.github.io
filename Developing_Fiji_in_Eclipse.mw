@@ -37,8 +37,6 @@ Check out all submodules that you want to work with e.g.
 
 <source lang="bash">
 cd ~/workspace/fiji
-git submodule init ImageJA
-git submodule update ImageJA
 git submodule init mpicbg
 git submodule update mpicbg
 git submodule init TrakEM2
@@ -46,6 +44,19 @@ git submodule update TrakEM2
 git submodule init VIB
 git submodule update VIB
 </source>
+
+Check out the master branch of each of these submodules
+
+<source lang="bash">
+cd ~/workspace/fiji
+cd mpicbg
+git checkout master
+cd ../TrakEM2
+git checkout master
+cd ../VIB
+git checkout VIB <i>(yes, this is the master branch of VIB)</i>
+</source>
+
 
 Fiji comes with its own build system that we will later use from Eclipse.  Test, if Fiji builds properly
 
