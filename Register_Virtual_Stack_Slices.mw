@@ -60,11 +60,21 @@
 </ul></li>
 <li>All types of images are accepted (8-bit, 16-bit, 32-bit and RGB), and output images are of the same type as input.</li>
 <li>If you selected the "Advanced setup" and "Elastic" as registration model, another window to adjust the elastic registration parameters will be shown:</li>
+[[Image:Rvs_elastic_options_351x446.png|280px|thumb|Elastic registration options]]
 
-{|
-[[Image:Rvs_elastic_options_351x446.png|frame|thumb|250px|Elastic registration options]]
-|}
-This is a reduced version of the [[BUnwarpJ | bUnwarpJ]] main window. For a complete description of the parameters, please visit the [http://biocomp.cnb.csic.es/~iarganda/bUnwarpJ/faq.html FAQ of the original website].
+This is actually a reduced version of the [[BUnwarpJ | bUnwarpJ]] main window. 
+
+Briefly, the options are:
+* Registration mode: "Mono", "Accurate" or "Fast". "Mono" means unidirectional registration and its actually the fastest of the three modes. "Accurate" and "Fast" perform bidirectional registration and take more time.
+* Image Subsampling factor: the image scaling factor from 2⁰ (1) to 2⁷ (128). We recommend to use it if the images are very large.
+* Initial and Final deformations: from "Very Coarse" to "Very Fine" or "Super Fine". They define the number of B-spline coefficients in the deformation grid (from 2x2 to 16x16). More coefficients mean more precision but also the possibility of over-registering.
+* Divergence and curl weights. They regularize the deformation to make it smooth. 
+* Landmark weight: relevance of adjusting the correspondences found in the feature extraction.
+* Image weight: relevance of the similarity between source and target image in the energy function.
+* Consistency weight: relevance of the consistency error between the direct and inverse deformations (only for "Accurate" or "Fast" modes).
+* Stop threshold: difference between the last and previous algorithm iterations that makes the registration to end.
+
+For a complete description of the parameters, please visit the [http://biocomp.cnb.csic.es/~iarganda/bUnwarpJ/faq.html FAQ of the original website].
 
 </ol>
 
