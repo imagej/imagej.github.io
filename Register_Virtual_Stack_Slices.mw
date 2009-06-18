@@ -28,6 +28,9 @@
 <li>The expected transformation model finding inliers (i.e. correspondences between images) in the feature extraction: translation, rigid, similarity or affine.</li>
 <li>The image transformation model: translation, rigid, similarity, affine, elastic or moving least squares.</li>
 <li>The advanced checkbox: whether to see the feature extraction parameters setup dialog, and if elastic, the bUnwarpJ dialog. Otherwise the plugin operates on reasonable, default parameters.</li>
+
+[[Image:Rvs_main_window.png]]
+
 </ul>   
 </p>
 <p><b>Step 3</b>: choose the source and target folders:<br />
