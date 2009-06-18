@@ -44,7 +44,7 @@
 <p><b>Step 3</b>: choose the '''source''' and '''output''' folders and the '''reference''' image:<br />
 <ul>
 <li>Select a source folder containing the slices, at one slice per image file.</li>
-<li>Select the target folder where resulting registered slices are automatically stored as TIFF files.</li>ç
+<li>Select the target folder where resulting registered slices are automatically stored as TIFF files.</li>
 <li>Select one of the images from the source folder as the reference image.</li>
 </ul>   
 </p>
