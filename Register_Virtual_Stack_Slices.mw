@@ -60,7 +60,7 @@
 </ul></li>
 <li>All types of images are accepted (8-bit, 16-bit, 32-bit and RGB), and output images are of the same type as input.</li>
 <li>If you selected the "Advanced setup" and "Elastic" as registration model, another window to adjust the elastic registration parameters will be shown:</li>
-
+[[Image:Rvs_elastic_options_351x446.png |100%| thumb]]
 </ol>
 
 == Example ==
