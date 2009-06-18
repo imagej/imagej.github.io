@@ -28,8 +28,8 @@
 </p>
 <p>Images may have different dimensions and be of different type.</p>
 <p><b>Step 1</b>: launch the "Plugins - Registration - Register Virtual Stack Slices" plugin</p>
+[[Image:Rvs_main_window.png|500px|thumb|Register Virtual Stack main window]]
 <p><b>Step 2</b>: choose the appropriate options:<br />
-[[Image:Rvs_main_window.png|frame|542px|Register Virtual Stack main window]]
 <ul>
 <li>'''Feature extraction model'''. The expected transformation model finding inliers (i.e. correspondences or landmarks between images) in the feature extraction: translation, rigid, similarity or affine.</li>
 <li>'''Registration model'''. The image transformation model: translation, rigid, similarity, affine, elastic or moving least squares.</li>
