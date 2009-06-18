@@ -29,16 +29,11 @@
 <p>Images may have different dimensions and be of different type.</p>
 <p><b>Step 1</b>: launch the "Plugins - Registration - Register Virtual Stack Slices" plugin</p>
 <p><b>Step 2</b>: choose the appropriate options:<br />
+[[Image:Rvs_main_window.png|frame|542px|Register Virtual Stack main window]]
 <ul>
 <li>'''Feature extraction model'''. The expected transformation model finding inliers (i.e. correspondences or landmarks between images) in the feature extraction: translation, rigid, similarity or affine.</li>
 <li>'''Registration model'''. The image transformation model: translation, rigid, similarity, affine, elastic or moving least squares.</li>
 <li>'''Advanced setup'''. The advanced checkbox: whether to see the [[Feature_Extraction#Parameters | feature extraction parameters]] setup dialog, and if elastic, the [[BUnwarpJ | bUnwarpJ]] dialog. Otherwise the plugin operates on reasonable, default parameters.</li>
-
-{|
-|style="vertical-align:top" |[[Image:Rvs_main_window.png|thumb|542px|Register Virtual Stack main window]]
-|}
-
-
 </ul>   
 </p>
 <p><b>Step 3</b>: choose the '''source''' and '''output''' folders and the '''reference''' image:<br />
