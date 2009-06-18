@@ -62,7 +62,7 @@
 <li>If you selected the "Advanced setup" and "Elastic" as registration model, another window to adjust the elastic registration parameters will be shown:</li>
 
 {|
-[[Image:Rvs_elastic_options_351x446.png|center|thumb|351px|Elastic registration options]]
+[[Image:Rvs_elastic_options_351x446.png|frame|thumb|250px|Elastic registration options]]
 |}
 This is a reduced version of the [[BUnwarpJ | bUnwarpJ]] main window. For a complete description of the parameters, please visit the [http://biocomp.cnb.csic.es/~iarganda/bUnwarpJ/faq.html FAQ of the original website].
 
