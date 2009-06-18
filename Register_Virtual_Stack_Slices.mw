@@ -16,7 +16,7 @@
 
 This plugin takes a sequence of image slices stored in a folder, and delivers a list of registered image slices (with enlarged canvas). One of the images in the sequence is selected by the user as '''reference''' and it will remain intact.
 
-The plugin can perform 6 types of image registration:
+The plugin can perform''' 6 types of image registration techniques''':
 * Translation
 * Rigid (translation + rotation)
 * Similarity (translation + rotation + isotropic scaling)
