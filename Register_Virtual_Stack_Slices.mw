@@ -23,6 +23,7 @@
 <ul>
 <li>'''Source folder''': You have a folder with an ordered list of image files in it that ImageJ can open.</li>
 <li>Each image represents a slice in a sequence.</li>
+<li>'''Output folder''': You have or create a folder to store the resulting virtual stack with the aligned images.</li>
 </ul>
 </p>
 <p>Images may have different dimensions and be of different type.</p>
