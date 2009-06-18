@@ -29,7 +29,10 @@
 <li>The image transformation model: translation, rigid, similarity, affine, elastic or moving least squares.</li>
 <li>The advanced checkbox: whether to see the feature extraction parameters setup dialog, and if elastic, the bUnwarpJ dialog. Otherwise the plugin operates on reasonable, default parameters.</li>
 
-[[Image:Rvs_main_window.png]]
+{|
+|style="vertical-align:top" |[[Image:Rvs_main_window.png|thumb|542px|Register Virtual Stack main window]]
+|}
+
 
 </ul>   
 </p>
