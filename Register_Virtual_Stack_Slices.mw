@@ -14,7 +14,7 @@
 |style="vertical-align:top" |[[Image:Rvs_scheme.png|512px|Register Virtual Stack scheme - All images are transformed to match the reference]]
 |}
 
-<p>This plugin takes a list of image slices stored in a folder, and delivers a list of registered image slices (with enlarged canvas).</p>
+<p>This plugin takes a sequence of image slices stored in a folder, and delivers a list of registered image slices (with enlarged canvas). One of the images in the sequence is selected by the user as '''reference''' and it will remain intact.</p>
 
 <p>The plugin uses any translation, rigid (translation+rotation), similarity (translation+rotation+isotropic scaling), affine, elastic (via [[BUnwarpJ | bUnwarpJ]] with B-splines) or moving least squares transformation model, aided by automatically extracted [[Feature_Extraction | SIFT features]].</p>
 
