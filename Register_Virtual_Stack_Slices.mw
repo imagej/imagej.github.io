@@ -75,7 +75,7 @@ Briefly, the options are:
 * Stop threshold: difference between the last and previous algorithm iterations that makes the registration to end.
 
 
-For a complete description of the parameters, please visit the [http://biocomp.cnb.csic.es/~iarganda/bUnwarpJ/faq.html FAQ of the original website].
+For a complete description of the elastic parameters, please visit the [http://biocomp.cnb.csic.es/~iarganda/bUnwarpJ/faq.html FAQ of the original website].
 
 </ol>
 
