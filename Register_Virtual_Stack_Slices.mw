@@ -26,7 +26,7 @@
 <ul>
 <li>'''Feature extraction model'''. The expected transformation model finding inliers (i.e. correspondences or landmarks between images) in the feature extraction: translation, rigid, similarity or affine.</li>
 <li>'''Registration model'''. The image transformation model: translation, rigid, similarity, affine, elastic or moving least squares.</li>
-<li>'''Advanced setup'''. The advanced checkbox: whether to see the feature extraction parameters setup dialog, and if elastic, the [[BUnwarpJ | bUnwarpJ]] dialog. Otherwise the plugin operates on reasonable, default parameters.</li>
+<li>'''Advanced setup'''. The advanced checkbox: whether to see the [[Feature_Extraction#Parameters | feature extraction parameters]] setup dialog, and if elastic, the [[BUnwarpJ | bUnwarpJ]] dialog. Otherwise the plugin operates on reasonable, default parameters.</li>
 
 {|
 |style="vertical-align:top" |[[Image:Rvs_main_window.png|thumb|542px|Register Virtual Stack main window]]
