@@ -12,11 +12,11 @@
 
 <p>This plugin takes a list of image slices stored in a folder, and delivers a list of registered image slices (with enlarged canvas).</p>
 
-<p>The plugin uses any translation, rigid (translation+rotation), similarity (translation+rotation+isotropic scaling), affine, elastic (via bUnwarpJ with B-splines) or moving least squares transformation model, aided by automatically extracted [[Feature_Extraction | SIFT features]].</p>
+<p>The plugin uses any translation, rigid (translation+rotation), similarity (translation+rotation+isotropic scaling), affine, elastic (via [[BUnwarpJ | bUnwarpJ]] with B-splines) or moving least squares transformation model, aided by automatically extracted [[Feature_Extraction | SIFT features]].</p>
 
 <p><b>Premises</b>:<br />
 <ul>
-<li>You have a folder with an ordered list of image files in it that ImageJ can open.</li>
+<li>'''Source folder''': You have a folder with an ordered list of image files in it that ImageJ can open.</li>
 <li>Each image represents a slice in a sequence.</li>
 </ul>
 </p>
@@ -24,9 +24,9 @@
 <p><b>Step 1</b>: launch the "Plugins - Registration - Register Virtual Stack Slices" plugin</p>
 <p><b>Step 2</b>: choose the appropriate options:<br />
 <ul>
-<li>The expected transformation model finding inliers (i.e. correspondences between images) in the feature extraction: translation, rigid, similarity or affine.</li>
-<li>The image transformation model: translation, rigid, similarity, affine, elastic or moving least squares.</li>
-<li>The advanced checkbox: whether to see the feature extraction parameters setup dialog, and if elastic, the bUnwarpJ dialog. Otherwise the plugin operates on reasonable, default parameters.</li>
+<li>'''Feature extraction model'''. The expected transformation model finding inliers (i.e. correspondences or landmarks between images) in the feature extraction: translation, rigid, similarity or affine.</li>
+<li>'''Registration model'''. The image transformation model: translation, rigid, similarity, affine, elastic or moving least squares.</li>
+<li>'''Advanced setup'''. The advanced checkbox: whether to see the feature extraction parameters setup dialog, and if elastic, the [[BUnwarpJ | bUnwarpJ]] dialog. Otherwise the plugin operates on reasonable, default parameters.</li>
 
 {|
 |style="vertical-align:top" |[[Image:Rvs_main_window.png|thumb|542px|Register Virtual Stack main window]]
