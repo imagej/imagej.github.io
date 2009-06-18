@@ -49,7 +49,8 @@
 </ul>   
 </p>
 <p>On success, a virtual stack will open showing all the registered images contained in the target folder. The virtual stack can be closed with no ill effect: images are saved in the target folder.</p>
-<p>Notes:<br />
+
+==== Notes: ====
 <ol>
 <li>The plugin is multithreaded: more CPU cores means faster execution.</li>
 <li>The two most relevant parameters in the SIFT feature extraction are:<br />
@@ -58,9 +59,9 @@
 <li><b>inlier ratio</b>, which determines when to reject the intersection set of feature correspondences between two images (ratio between correspondent features vs. all extracted features.)</li>
 </ul></li>
 <li>All types of images are accepted (8-bit, 16-bit, 32-bit and RGB), and output images are of the same type as input.</li>
-</ol>
-</p>
+<li>If you selected the "Advanced setup" and "Elastic" as registration model, another window to adjust the elastic registration parameters will be shown:</li>
 
+</ol>
 
 == Example ==
 
