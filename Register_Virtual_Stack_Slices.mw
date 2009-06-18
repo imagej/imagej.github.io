@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | name                   = Register Virtual Stack Slices
 | software               = Fiji
-| author                 = Albert Cardona ([mailto:acardona@ini.phys.ethz.ch acardona@ini.phys.ethz.ch])
+| author                 = Albert Cardona ([mailto:acardona@ini.phys.ethz.ch acardona@ini.phys.ethz.ch]), Ignacio Arganda-Carreras and Stephan Saalfeld
 | maintainer             = Ignacio Arganda-Carreras ([mailto:ignacio.arganda@uam.es ignacio.arganda@uam.es])
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/register_virtual_stack_slices/register_virtual_stack/Register_Virtual_Stack_MT.java;hb=HEAD on gitweb] (753 lines)
 | released               = 2008
