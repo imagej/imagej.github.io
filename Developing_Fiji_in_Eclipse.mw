@@ -136,7 +136,7 @@ Select the Fiji project and open the project properties dialog (Project -> Prope
 
 ==Add a Run Configuration==
 
-Fiji can be launched conveniently from inside Eclipse.  For this purpose, create a new Run Configuration (Run -> Run ...)
+Fiji can be launched conveniently from inside Eclipse.  For this purpose, create a new Run Configuration (Run -> Run Configurations...)
 <dl>
 <dt>Main
 <dd>
