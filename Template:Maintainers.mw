@@ -11,7 +11,6 @@
 
 === Packages ===
 
-* [[Register virtual stack slices]]
 * [[Level sets]]
 * [[TrakEM2]]
 
@@ -75,12 +74,14 @@
 
 === Plugins ===
 
+* [[Register virtual stack slices]]
 * [[Analyze Skeleton (2D/3D)]]
 * [[Skeletonize (2D/3D)]]
 * [[BUnwarpJ]]
 
 === Packages ===
 
+* [[Register virtual stack slices]]
 * [[AnalyzeSkeleton]]
 * [[Skeletonize3D]]
 * [[BUnwarpJ]]
