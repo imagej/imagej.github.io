@@ -1,0 +1,17 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = LSM_Toolbox
+| author                 = Patrick Pirrotte
+| filename               = 
+| source                 = 
+| released               = ???
+| latest version         = ???
+| status                 = stable
+| category               = [[:Category:Import-Export]]
+| website                = [http://rsb.info.nih.gov/ij/plugins/arrow.html]
+}}
+==Usage==
+Tools for working with Carl Zeiss LSM510  .lsm files
+
+[[Category:Plugins]]
+[[Category:Import-Export]]
