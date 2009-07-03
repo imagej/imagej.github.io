@@ -13,5 +13,8 @@
 ==Usage==
 Tools for working with Carl Zeiss LSM510  .lsm files
 
+For more info see
+[http://imagejdocu.tudor.lu/doku.php?id=plugin:inputoutput:lsmtoolbox:start LSM ToolBox documentation on ImageJ documentation Wiki]
+
 [[Category:Plugins]]
 [[Category:Import-Export]]
