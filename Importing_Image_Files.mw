@@ -32,7 +32,7 @@ Most of the commands listed, particularly Fiji extensions, are also available (v
 * '''Animated Gif...''': Open an animated .gif file as a stack.
 * '''Amira as TrakEM2...''': Open an amira .am image stack file as a [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2] project. The labels file will be asked for. All calibrations and parameters are set to streamline the process.
 * '''Analyze...'''
-* '''[[LSM Toolbox | Show LSM Toolbox]]''': Open the LSM Toolbox window, from which LSM files can be opened and their metadata directly inspected.
+* '''[[LSM Toolbox | Show LSM Toolbox]]''': Open the LSM Toolbox window, from which LSM files can be opened, viewed in multi dimensions, montaged,  their metadata directly inspected, time and z stamped and more. 
 
 [[Category:Menus]]
 [[Category:Plugins]]
