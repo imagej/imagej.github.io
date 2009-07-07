@@ -13,10 +13,19 @@
 }}
 The Object_Counter3D.java linked in the info box here is by Jonathan Jackson. It is a follow-up of Fabrice Cordelières's  [http://rsb.info.nih.gov/ij/plugins/track/_3D_objects_counter.class _3D_objects_counter.class], [http://rsb.info.nih.gov/ij/plugins/track/_3D_objects_counter.java _3D_objects_counter.java] and its changelog is located on the same website (see infobox).
 
-Newest version (2007?) of the _3D_Objects_Counter.java is available from here: [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=plugin:analysis:3d_object_counter:3d-oc_.jar 3d-oc_.jar] whioch if unzipped contains the source code .java files. 
+Newest version (v2.0 - 2007?) of Fabrice's _3D_Objects_Counter.java is available from here: [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=plugin:analysis:3d_object_counter:3d-oc_.jar 3d-oc_.jar] which if unzipped contains the source code .java files. 
 
-Testing of both versions in fiji showed them both to work. Now need to figure out which one to include. They are indeed slightly different, and do give different results for a 4 slice smoothed random image z stack. 
-The  older Jackson version was pushed to contrib branch late june 2009 (how ironic). Pushing both versions doesn't make sense. Both seem to have advanteages, but both are about the same speed as tested with small and large z stacks. 
+Testing of both versions in fiji showed them both to work. Now need to figure out which one to include:
+The  older Jackson version was pushed to contrib branch late june 2009 (how ironic).
+Pushing both versions doesn't make sense. Both seem to have advantages, but both are about the same speed as tested with small and large z stacks. 
+The Fabrice V2.0 plugin might be a little faster in some of my tests. 
+
+They are indeed slightly different, and do give different results for a 4 slice smoothed random image z stack, using the same threshold and max/min no of voxels. 
+The v2.0 plugin excludes particles on edges of image, which is a good thing. 
+Both allow dot size and font size to be set. 
+v2.0 has centroid in pixels not calibrated (others measurements are calibrated). Jackson version centroid is calibrated. 
+
+Small bug in v2.0. typing threshold into the box in the gui, if you type in a number lower than 50 , it makes it fifty something! You have to use the arrows to change the threshold to less than 50. 
 
 The original  plugin was published here:
 [http://www3.interscience.wiley.com/cgi-bin/fulltext/118727584/PDFSTART Journal of Microscopy, Vol. 224, Pt 3 December 2006, pp. 213–232 Received 13 April 2006; accepted 28 June 2006 Blackwell Publishing Ltd TUTORIAL REVIEW A guided tour into subcellular colocalization analysis in lightmicroscopy S. BOLTE & F. P. CORDELIÈRES]
