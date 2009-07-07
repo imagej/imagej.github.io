@@ -27,7 +27,7 @@ v2.0 has centroid in pixels not calibrated (others measurements are calibrated).
 
 Small bug in v2.0. typing threshold into the box in the gui, if you type in a number lower than 50 , it makes it fifty something! You have to use the arrows to change the threshold to less than 50. 
 
-V2.0 plugin is not pushed to contrib fiji branch... so should make it into the help-update Fiji soon....
+V2.0 plugin is now pushed to contrib fiji branch... so should make it into the help-update Fiji soon....
 
 
 The original  plugin was published here:
