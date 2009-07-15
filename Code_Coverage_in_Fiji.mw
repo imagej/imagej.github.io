@@ -1,7 +1,7 @@
 This page explains a fairly simple way of generating code coverage statistics when testing Fiji using [http://emma.sourceforge.net/ EMMA], a Java code coverage tool which is [http://www.gnu.org/philosophy/free-sw.html free software].
 
 To install EMMA, on Debian or Ubuntu you just do:
- libemma-java
+ apt-get install libemma-java
 ... which installs the relevant jar file to <tt>/usr/share/java/emma.jar</tt>
 
 The example I'm using here is to instrument VIB_.jar, since that's where the plugin I'm working on is compiled into.
