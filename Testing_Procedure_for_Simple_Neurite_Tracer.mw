@@ -1,0 +1,48 @@
+This is a set of instructions to follow to test as much of the code as possible in [[Simple Neurite Tracer]].  It does not give complete coverage, but following this before each new release should stop the more obvious problems from getting through.
+
+== Basic Tracing ==
+
+* Open example-for-tracing.tif
+* Run "Simple Neurite Tracer", selecting "Create new 3D Viewer" and "Use three pane view"
+* Rotate the 3D view
+* Use the slice selector to run through the slices in each pane
+* Hold down Shift while moving the red crosshair around in each pane in turn
+* All in the XY pane:
+** Click to start a path
+** Cancel Path
+** Click to start a path
+** Select a further point along the path
+** Check with "Shift" that the cyan search progress appears in each pane
+** Check that blue path is create in each pane, and in the 3D viewer
+** Click "No" to answer the question "Keep new path segment"
+** Try again to select a further point along the path
+** Click "Abandon Search" half way through the search for the path.
+** Try again to select a further point along the path, but allow it to continue to completion
+** Click "Yes" to confirm the temporary path
+** Check that the red path appears in all panes and the 3D viewer
+** Pick a further point and confirm that next segment.
+** Click on "Complete Path"
+** Check that the magenta path appears in all of the viewers
+** Select the path in the Path Window
+** Hold down Control and click a point on the existing path where you want a branch point to start
+** Add a few more segments to the the new path, complete it normally
+** Start a new path at a random point in the stack, and end it on an existing path by holding down Control when you select the final point
+** Create a new path that both starts and ends on an exisiting path
+** Check that these paths appear sensibly in the Path window
+** Try selecting and deselecting the paths in the Path window, check that the right paths are highlighted in each pane and in the 3D viewer
+** Turn on the "Only Show Selected Paths" option and do the same, checking that only the selected paths appear
+** Turn off the "Only Show Selected Paths"
+** Select "2D: parts in nearby slices"
+** Look through all the slices to check that they're displayed properly
+** Try changing the "slices on either side" parameter and doing the same
+** Turn on "Hessian based analysis"
+** Add an extra path
+** Turn off "Hessian based analysis"
+** Click on "Pick Sigma Visually"
+** Click on an interesting point in the image
+** In the Sigma Palette, try adjusting the maximum, adjusting the slice and click on one of the boxes with a different sigma
+** Close the palette and wait for the Gaussian to finish calculating
+** Try adding a path
+** Turn off "Hessian based analysis"
+** Click "Pick Sigma Visually", click in the image, but close the window while the palette is generating to check that this cancels the generation properly
+** Click "Pick Sigma Manually" and try setting some values - check that the Gaussian is recalculated and you can trace a new path
