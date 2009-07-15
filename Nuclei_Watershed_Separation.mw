@@ -58,9 +58,16 @@ Notice how the nuclei have been split away from each other.
 This method only works robustly for roughly circular objects. Why?
 
 * Analyse the segmented objects. 
-Now you have a set of white foreground patches of white pixels, surrounded by balc background pixel areas, 
-and we have separated touching objects. 
+Now you have a set of white foreground patches of white pixels, surrounded by black background pixel areas, 
+and we have separated touching objects wit a watershed, which put "dams" one pixel wide between the objects. 
 
+Next we must run the Analyze Particles tool in FIJI to locate patches of white pixels and count them.
+that tool needs a threshold to be set on the image, so again, do Image - Adjust - Threshold.
+Since the image now contains only 0 and 255 intensities, the threshold default is of course correct, 
+and the object appear in red (for black background again of course). 
+
+Now choose menu item Analyze - Analyze Particles, 
+using the settings below. 
 
 
 
