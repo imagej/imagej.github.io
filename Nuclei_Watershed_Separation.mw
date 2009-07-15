@@ -29,5 +29,31 @@ You should get an image that looks like this:
 
 [[Image:NucleiDAPIconfocalGauss3pxSigma.png | 250px]]
 
+* Next we need to segment the objects from the background. FIJI has a number of built in automatic thresholding methods
+that try to distinguish the background from the foreground. In this case the default method works pretty well, 
+but you can see there is a long list of methods, which give slightly different threshold results for this image. 
+You can play with different methods if you like. You might get a different answer in the end!
+
+Do menu command Image - Adjust - Threshold. Turn on the check box for "Dark background" . Indeed, in this case the background is dark!
+The default method will be perviewed automatically when you launch the menu command, and a threshold will be set, something close to 100 intensity.
+If you are happy with the automatically calculate threshold, then click "Apply", which will give you a binary image. 
+Black is background, and white is foreground. It should look like this:
+
+[[Image:NucleiDAPIconfocalAutoDefaultThresh.png | 250px]]
+
+So far so good... But we still don't have objects... only background and foreground pixels. 
+Also it is clear that some nuclei are connected to adjacent ones... and we want them to be separated. 
+We will use the watershed method built into FIJI for that:
+
+* To run the watershed method choose menu item Process - Binary - Watershed.
+This method finds the centre of each object (using a morphological erode operation),
+then calculates a distance map from the object centre points to the edges of the objects, 
+then fills that "topological map" with imaginary water. Where 2 "Watersheds" meet, it builds a dam to separate them!
+One could do all these steps manually, but the watershed function automates that for you, which is nice. 
+
+
+
+
+
 
 [[Category:Tutorials]]
