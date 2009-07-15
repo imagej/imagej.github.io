@@ -3,18 +3,29 @@ since in a metaphase cell there is DNA all over the nucleus. however, the staini
 as there are areas of more or less condensation of the chromosomes.
 This makes the nuclei appear granular. Worse still, in may tissues that are interesting for developmental biology, 
 the cells are tightly packed, and are composed mostly of nucleus with very little cytoplasm separating them.
-The nulclei often seem to touch each other,
-which in reality, of course, they can not. There is a membrane or two at least between them, 
+The nulclei often seem to touch each other, which in reality, of course, they can not.
+There is a membrane or two at least between them, 
 but an optical microscope cant resolve that. The [http://en.wikipedia.org/wiki/Point_spread_function PSF] is much bigger then the width of a membrane!
+Just to make matters even worse the image is quite noisy, because it was made with a fast scan on a confocal laser scanning microscope, 
+which inherently has a low signal/noise ratio. That gives objects fuzzy edges and adds uncertainty to the intensity vaules of each pixel, 
+making it harder to segment properly. 
 
-So, we are faced with the probelm of being able to separate apparently touching objects :-(
+So, we are faced with the probelm of being able to separate apparently touching, noisy, objects :-(
 
 Luckily, there is a method for doing exactly that. The Watershed method. 
 
-Ok, so how can we segment, watershed (separate touching objects)
+Ok, so how can we denoise, segment, watershed (separate touching objects)
 and then count / measure the objects in FIJI? Read on...
 
-* open the sample image of DAPI stained nuclei
+* open the [http://pacific.mpi-cbg.de/wiki/images/8/83/NucleiDAPIconfocal.png sample image of DAPI stained nuclei from a confocal laser scanning microscope]:
+[[Image:NucleiDAPIconfocal.png | 250px]]
+
+* Run a Gaussian Blur filter on the image to blur out the photon shot noise (the "speckle", actually poisson distributed), 
+and also to smooth out the inhomogeneity of the nuclear staining. We will use a large sigma vaule of 3 for this task. 
+A value of sigma too small will mean that the segmentation will be disturbed by the noise and staining pattern.
+Too high a sigma value, and the object will be too blurred, making ti harder to separate them later. 
+Run menu command: Process - Filters - Gaussian Blur, with a sigma value of 3 pixels. You can preview other values to see how they look also.
+
 
 
 [[Category:Tutorials]]
