@@ -78,3 +78,49 @@ This is a set of instructions to follow to test as much of the code as possible 
 * Quit the tracer (there should be no "unsaved paths" warning...)
 * Close the 3D Viewer
 * Start "Simple Neurite Tracer" and select "Create new 3D Viewer" and "Three Pane View"
+* Click "Load Traces" and select foo.nonstandard
+* Look through the stack and check that all are reloaded, the renamed path is still renamed, etc.
+* Add a new path
+* Click "Quit Tracer", check that you're warned about unsaved paths - cancel, check that it doesn't quit
+* Click "Quit Tracer", check that you're warned about unsaved paths - go ahead and quit
+* Rename "foo.nonstandard" to "foo.traces"
+* Start "Simple Neurite Tracer" and select "Create new 3D Viewer" and "Three Pane View"
+* Click "Load Traces" and check that it offers to load the renamed traces file.
+* Click "No", and select it manually.
+* Quit the tracer and try again, this time loading the default when it offers.
+
+== Test Different 3D Views ==
+
+* Load up the traces file, make sure that some paths are fitted, some not
+* Try each of the View Paths (3D) options, check they all work
+* Change back to surface reconstructions
+
+== Reuse an existing 3D viewer ==
+
+* Select "Show only selected paths", pick two fitted paths
+* Change the fitted path colour to something different from the default (e.g. yellow)
+* Quit the tracer, don't save
+* Select the "image for tracing" in the 3D Viewer, remove it
+* With the original ImagePlus as the current image, start the 3D viewer, but select "Reuse 3D Viewer", and pick the existing 3D Viewer
+* Add a new path, check that the existing yellow reconstructions are still there
+* Quit the tracer and close the 3D Viewer
+
+== Load Labels ==
+
+* Load up an image which has a corresponding labels file
+* Click "load labels", select the right labels file
+* Hover the mouse over different regions and check that the ImageJ status updates to tell you the region's name
+* Quit the tracer
+
+== Show Correspondences To Traces ==
+
+* Load a file for which you have a traces file
+* Start the tracer
+* Draw a few paths
+* Click "Show Corresponding Traces" and select the existing traces file
+* Change 3D view to "lines" and check that the correspondences are shown correctly
+* Quit the tracer
+
+== SWC Import ==
+
+* Load an image file for which you have a corresponding SWC file
