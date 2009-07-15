@@ -25,7 +25,9 @@ and also to smooth out the inhomogeneity of the nuclear staining. We will use a 
 A value of sigma too small will mean that the segmentation will be disturbed by the noise and staining pattern.
 Too high a sigma value, and the object will be too blurred, making ti harder to separate them later. 
 Run menu command: Process - Filters - Gaussian Blur, with a sigma value of 3 pixels. You can preview other values to see how they look also.
+You should get an image that looks like this:
 
+[[Image:NucleiDAPIconfocalGauss3pxSigma.png | 250px]]
 
 
 [[Category:Tutorials]]
