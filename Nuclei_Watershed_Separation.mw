@@ -50,12 +50,16 @@ This method finds the centre of each object (using a morphological erode operati
 then calculates a distance map from the object centre points to the edges of the objects, 
 then fills that "topological map" with imaginary water. Where 2 "Watersheds" meet, it builds a dam to separate them!
 One could do all these steps manually, but the watershed function automates that for you, which is nice. 
-You watershed image should look like this:
+Your watershed image should look like this:
 
 [[Image:NucleiDAPIconfocalWatershed.png | 250 px]]
 
 Notice how the nuclei have been split away from each other. 
 This method only works robustly for roughly circular objects. Why?
+
+* Analyse the segmented objects. 
+Now you have a set of white foreground patches of white pixels, surrounded by balc background pixel areas, 
+and we have separated touching objects. 
 
 
 
