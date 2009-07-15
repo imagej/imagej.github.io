@@ -32,5 +32,7 @@ Now generate an HTML report of the coverage data with:
  $ firefox coverage/index.html
 You should see a summary like the following:
 [[Image:Coverage-summary.png]]
+
 ... and can click through to line-by-line coverage of a source file, like this:
+
 [[Image:Coverage-file.png]]
