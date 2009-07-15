@@ -33,6 +33,6 @@ Now generate an HTML report of the coverage data with:
 You should see a summary like the following:
 [[Image:Coverage-summary.png]]
 
-... and can click through to line-by-line coverage of a source file, like the example below. (The green lines were executed, while the red ones were not.  Yellow lines were partially executed, e.g. if only one branch of the ternary operator (?:) was run, as explained in the [http://emma.sourceforge.net/faq.html#faq-N101CF|EMMA FAQ].
+... and can click through to line-by-line coverage of a source file, like the example below. (The green lines were executed, while the red ones were not.  Yellow lines were partially executed, e.g. if only one branch of the ternary operator (?:) was run, as explained in the [http://emma.sourceforge.net/faq.html#faq-N101CF EMMA FAQ].
 
 [[Image:Coverage-file.png]]
