@@ -46,3 +46,20 @@ This is a set of instructions to follow to test as much of the code as possible 
 ** Turn off "Hessian based analysis"
 ** Click "Pick Sigma Visually", click in the image, but close the window while the palette is generating to check that this cancels the generation properly
 ** Click "Pick Sigma Manually" and try setting some values - check that the Gaussian is recalculated and you can trace a new path
+** Click on the green rectangle and then change the colour.  Check that the colour changes in the panes and in the 3D Viewer
+** Click on the magenta rectangle and then change the colour. Check that the colour changes in the panes and in the 3D Viewer.
+** Use "Show / Hide Fill List" and "Show / Hide Path List" to display and hide the two windows
+** Select a single path in the Path Window, hold down Shift and click "Fit Volume"
+** "Fly Through" the normal path which is fitted
+** Select all paths in the Path Window and click "Fit Volume"
+** Check that they are all fitted in the 3D Viewer (note bug here: selection is not preserved afterwards)
+** Try selectively unfitting two of the paths
+** Refit one of them.
+** Select a (not top level path) and click "Make Primary"
+** Check that the path list is rearranged
+** Click on a path and rename it (not bug here: only the non-fitted path's name is changed)
+** Delete the path with start and end joins
+** Don't quit the tracer but move onto the next set of tests...
+** Select a single path and click "Fill Out" (note bug here: panes stop updating)
+
+== Saving and Loading ==
