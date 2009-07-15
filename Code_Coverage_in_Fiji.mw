@@ -31,3 +31,6 @@ Now generate an HTML report of the coverage data with:
 (The <tt>-sp VIB</tt> parameter says to use the VIB subdirectory as a source path - without this you won't be able to see the source code highlighted according to coverage.)  That command generates the report in a subdirectory called <tt>coverage</tt>, so view the report with, for example:
  $ firefox coverage/index.html
 You should see a summary like the following:
+[[Image:Coverage-summary.png]]
+... and can click through to line-by-line coverage of a source file, like this:
+[[Image:Coverage-file.png]]
