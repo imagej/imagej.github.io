@@ -74,6 +74,8 @@ In the case of ''VIB'', it works as easily as that, because it has its own [[Fij
  # first time, commit-submodule need to know the target, too ("jars/jgit.jar" in this case)
  ./fiji scripts/commit-submodule.py jgit jars/jgit.jar
 
+== Testing ==
 
+When you're testing Fiji, you may want to measure the code coverage of your tests - one way is described in the page [[Code Coverage in Fiji]].
 
 [[Category:Development]]
