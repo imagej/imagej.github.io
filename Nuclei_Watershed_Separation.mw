@@ -72,11 +72,11 @@ This method only works robustly for roughly circular objects. Why?
 === Analyze the segmented objects ===
 
 * Now you have a set of white foreground patches of white pixels, surrounded by black background pixel areas, 
-and we have separated touching objects wit a watershed, which put "dams" one pixel wide between the objects. 
+and we have separated touching objects with a watershed, which put "dams" one pixel wide between the objects. 
 
 * Next we must run the Analyze Particles tool in FIJI to locate patches of white pixels and count them.
 But... that tool needs a threshold to be set on the image, so again, do Image - Adjust - Threshold.
-Since the image now contains only 0 and 255 intensities, the threshold default is of course correct, 
+Since the image now contains only two intensities (0 and 255), the threshold default is of course correct, 
 and the objects appear in thresholded red (for black background again of course). 
 
 * Now choose menu item Analyze - Analyze Particles, 
@@ -84,15 +84,15 @@ using the settings in the screen shot below:
 
 [[Image:NulceiDAPIconfocalAnalyzeParticles.png | 500px]]
 
-* You can filter out different sizes of particles. for example, you might only be interested in large objecxt, 
+* You can filter out different sizes of particles. For example, you might only be interested in large objects, 
 like nuclei. So you can exclude small objects that you know are junk. 
-Change the area number rage in the Size field and see what happens. 
+Change the area number range in the Size field and see what happens. 
 
-* You can only choose to count objects that are very circular by changing the Circularity range numbers
+* You can choose to count only objects that are very circular by changing the Circularity range numbers
 to say 0.8-1. Play with it, see what it does. 
 
 * Use show outlines, or test the other options there if you like. Exclude on edges is very smart.
-It means you don't get nonsense results from objects that are chopped off ast the edges of the image,
+It means you don't get nonsense results from objects that are chopped off at the edges of the image,
 and as such are of course smaller than they really are.
 
 * You can add all the objects to the ROI manager, by turning on Add to Manager. 
