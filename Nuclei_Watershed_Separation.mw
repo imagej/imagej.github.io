@@ -25,8 +25,8 @@ and then count / measure the objects in FIJI? Read on...
 * open the [http://pacific.mpi-cbg.de/wiki/images/8/83/NucleiDAPIconfocal.png sample image of DAPI stained nuclei from a confocal laser scanning microscope]:
 [[Image:NucleiDAPIconfocal.png | 250px]]
 
-* Run a Gaussian Blur filter on the image to blur out the photon shot noise (the "speckle", actually poisson distributed), 
-and also to smooth out the inhomogeneity of the nuclear staining. We will use a large sigma vaule of 3 for this task. 
+* Run a Gaussian Blur filter on the image to blur out the photon shot noise (the "speckle", actually Poisson distributed), 
+and also to smooth out the inhomogeneity of the nuclear staining. We will use a large sigma value of 3 for this task. 
 A value of sigma too small will mean that the segmentation will be disturbed by the noise and staining pattern.
 Too high a sigma value, and the objects will be too blurred, making it harder to separate them later. 
 Run menu command: Process - Filters - Gaussian Blur, with a sigma value of 3 pixels. You can preview other values to see how they look also.
