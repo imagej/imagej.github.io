@@ -64,10 +64,20 @@ and we have separated touching objects wit a watershed, which put "dams" one pix
 Next we must run the Analyze Particles tool in FIJI to locate patches of white pixels and count them.
 that tool needs a threshold to be set on the image, so again, do Image - Adjust - Threshold.
 Since the image now contains only 0 and 255 intensities, the threshold default is of course correct, 
-and the object appear in red (for black background again of course). 
+and the objects appear in thresholded red (for black background again of course). 
 
 Now choose menu item Analyze - Analyze Particles, 
-using the settings below. 
+using the settings in the screen shot below:
+
+[[Image:NulceiDAPIconfocalAnalyzeParticles.png | 500px]]
+
+Use show outlines, or test the other options there if you like. Exclude on edges is very smart.
+It means you don't get nonsense results from objects that are chopped off ast the edges of the image,
+and as such are of course smaller than they really are.
+You can add all the objects to the ROI manager, by turning on Add to Manager. 
+It also spits out lots of useful statistics: 
+
+
 
 
 
