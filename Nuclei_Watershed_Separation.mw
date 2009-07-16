@@ -71,14 +71,24 @@ using the settings in the screen shot below:
 
 [[Image:NulceiDAPIconfocalAnalyzeParticles.png | 500px]]
 
+You can filter out different sizes of particles. for example, you might only be interested in large objecxt, 
+like nuclei. So you can exclude small objects that you know are junk. 
+Change the area number rage in the Size field and see what happens. 
+
+You can only choose to count objects that are very circular by changing the Circularity range numbers
+to say 0.8-1. Play with it, see what it does. 
+
 Use show outlines, or test the other options there if you like. Exclude on edges is very smart.
 It means you don't get nonsense results from objects that are chopped off ast the edges of the image,
 and as such are of course smaller than they really are.
+
 You can add all the objects to the ROI manager, by turning on Add to Manager. 
+Then you could use those ROIs to measure the intensities of the signal in the objects of the original image. 
+Can you figure out how to do that?
+
 It also spits out lots of useful statistics: 
 
-
-
+[[Image:NulceiDAPIconfocalSegmentationResults.png]]
 
 
 
