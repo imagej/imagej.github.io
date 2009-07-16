@@ -1,0 +1,1 @@
+NulceiDAPIconfocalAnalyzeParticles.png is how to drive the "analyze particle"s built in imagej function in fiji . You need to se a threshold first, even for a "binary" image (because its not really binary, its still 8 bit or whatever)
