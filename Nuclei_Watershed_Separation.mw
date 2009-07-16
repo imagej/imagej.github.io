@@ -19,8 +19,7 @@ making it harder to segment properly.
 
 * Luckily, there is a method for doing exactly that. The Watershed method. 
 
-* Okay, so how can we denoise, segment, watershed (separate touching objects)
-and then count / measure the objects in FIJI? Read on...
+* Okay, so how can we denoise, segment, watershed (separate touching objects) and then count / measure the objects in FIJI? Read on...
 
 === Open the sample image ===
 
@@ -43,21 +42,18 @@ that try to distinguish the background from the foreground. In this case the def
 but you can see there is a long list of methods, which give slightly different threshold results for this image. 
 You can play with different methods if you like. You might get a different answer in the end!
 
-* Do menu command Image - Adjust - Threshold. Turn on the check box for "Dark background" . Indeed, in this case the background is dark!
-The default method will be previewed automatically when you launch the menu command, and a threshold will be set, something close to 100 intensity.
+* Do menu command Image - Adjust - Threshold. Turn on the check box for "Dark background" . Indeed, in this case the background is dark! The default method will be previewed automatically when you launch the menu command, and a threshold will be set, something close to 100 intensity.
 If you are happy with the automatically calculate threshold, then click "Apply", which will give you a binary image. 
 Black is background, and white is foreground. It should look like this:
 
 [[Image:NucleiDAPIconfocalAutoDefaultThresh.png | 250px]]
 
-* So far so good... But we still don't have objects... only background and foreground pixels. 
-Also it is clear that some nuclei are connected to adjacent ones... and we want them to be separated. 
+* So far so good... But we still don't have objects... only background and foreground pixels.  Also it is clear that some nuclei are connected to adjacent ones... and we want them to be separated. 
 We will use the watershed method built into FIJI for that:
 
 === Watershed algorithm - separate touching objects === 
 
-* To run the watershed method choose menu item Process - Binary - Watershed.
-This method finds the centre of each object (using a morphological erode operation),
+* To run the watershed method choose menu item Process - Binary - Watershed. This method finds the centre of each object (using a morphological erode operation),
 then calculates a distance map from the object centre points to the edges of the objects, 
 then fills that "topological map" with imaginary water. Where 2 "Watersheds" meet, it builds a dam to separate them!
 One could do all these steps manually, but the watershed function automates that for you, which is nice. 
@@ -65,17 +61,14 @@ Your watershed image should look like this:
 
 [[Image:NucleiDAPIconfocalWatershed.png | 250 px]]
 
-* Notice how the nuclei have been split away from each other. 
-This method only works robustly for roughly circular objects. Why?
+* Notice how the nuclei have been split away from each other.  This method only works robustly for roughly circular objects. Why?
 
 
 === Analyze the segmented objects ===
 
-* Now you have a set of white foreground patches of white pixels, surrounded by black background pixel areas, 
-and we have separated touching objects with a watershed, which put "dams" one pixel wide between the objects. 
+* Now you have a set of white foreground patches of white pixels, surrounded by black background pixel areas,  and we have separated touching objects with a watershed, which put "dams" one pixel wide between the objects. 
 
-* Next we must run the Analyze Particles tool in FIJI to locate patches of white pixels and count them.
-But... that tool needs a threshold to be set on the image, so again, do Image - Adjust - Threshold.
+* Next we must run the Analyze Particles tool in FIJI to locate patches of white pixels and count them. But... that tool needs a threshold to be set on the image, so again, do Image - Adjust - Threshold.
 Since the image now contains only two intensities (0 and 255), the threshold default is of course correct, 
 and the objects appear in thresholded red (for black background again of course). 
 
@@ -84,19 +77,16 @@ using the settings in the screen shot below:
 
 [[Image:NulceiDAPIconfocalAnalyzeParticles.png | 500px]]
 
-* You can filter out different sizes of particles. For example, you might only be interested in large objects, 
-like nuclei. So you can exclude small objects that you know are junk. 
+* You can filter out different sizes of particles. For example, you might only be interested in large objects,  like nuclei. So you can exclude small objects that you know are junk. 
 Change the area number range in the Size field and see what happens. 
 
 * You can choose to count only objects that are very circular by changing the Circularity range numbers
 to say 0.8-1. Play with it, see what it does. 
 
-* Use show outlines, or test the other options there if you like. Exclude on edges is very smart.
-It means you don't get nonsense results from objects that are chopped off at the edges of the image,
+* Use show outlines, or test the other options there if you like. Exclude on edges is very smart. It means you don't get nonsense results from objects that are chopped off at the edges of the image,
 and as such are of course smaller than they really are.
 
-* You can add all the objects to the ROI manager, by turning on Add to Manager. 
-Then you could use those ROIs to measure the intensities of the signal in the objects of the original image. 
+* You can add all the objects to the ROI manager, by turning on Add to Manager.  Then you could use those ROIs to measure the intensities of the signal in the objects of the original image. 
 Can you figure out how to do that?
 
 * It also spits out lots of useful statistics: 
