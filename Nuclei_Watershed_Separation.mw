@@ -42,7 +42,7 @@ but you can see there is a long list of methods, which give slightly different t
 You can play with different methods if you like. You might get a different answer in the end!
 
 * Do menu command Image - Adjust - Threshold. Turn on the check box for "Dark background" . Indeed, in this case the background is dark!
-The default method will be perviewed automatically when you launch the menu command, and a threshold will be set, something close to 100 intensity.
+The default method will be previewed automatically when you launch the menu command, and a threshold will be set, something close to 100 intensity.
 If you are happy with the automatically calculate threshold, then click "Apply", which will give you a binary image. 
 Black is background, and white is foreground. It should look like this:
 
@@ -51,7 +51,6 @@ Black is background, and white is foreground. It should look like this:
 * So far so good... But we still don't have objects... only background and foreground pixels. 
 Also it is clear that some nuclei are connected to adjacent ones... and we want them to be separated. 
 We will use the watershed method built into FIJI for that:
-
 
 === Watershed algorithm - separate touching objects === 
 
