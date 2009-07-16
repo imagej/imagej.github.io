@@ -1,4 +1,6 @@
-=== Watershed Segmentation of touching DAPI stained nuclei images -Tutorial ===
+== Watershed Segmentation of touching DAPI stained nuclei images -Tutorial ==
+
+=== Introduction to the problem ===
 
 
 * A very common biological sample for microscopy is DAPI stained DNA in cell nuclei. The staining delineates the nuclei pretty well, 
