@@ -1,4 +1,4 @@
-=== Watershed Segmenation of touching DAPI stained nuclei images -Tutorial ===
+=== Watershed Segmentation of touching DAPI stained nuclei images -Tutorial ===
 
 
 * A very common biological sample for microscopy is DAPI stained DNA in cell nuclei. The staining delineates the nuclei pretty well, 
@@ -6,18 +6,18 @@ since in a metaphase cell there is DNA all over the nucleus. however, the staini
 as there are areas of more or less condensation of the chromosomes.
 This makes the nuclei appear granular. Worse still, in may tissues that are interesting for developmental biology, 
 the cells are tightly packed, and are composed mostly of nucleus with very little cytoplasm separating them.
-The nulclei often seem to touch each other, which in reality, of course, they can not.
+The nuclei often seem to touch each other, which in reality, of course, they can not.
 There is a membrane or two at least between them, 
-but an optical microscope cant resolve that. The [http://en.wikipedia.org/wiki/Point_spread_function PSF] is much bigger then the width of a membrane!
+but an optical microscope cannot resolve that. The [http://en.wikipedia.org/wiki/Point_spread_function PSF] is much bigger than the width of a membrane!
 Just to make matters even worse the image is quite noisy, because it was made with a fast scan on a confocal laser scanning microscope, 
-which inherently has a low signal/noise ratio. That gives objects fuzzy edges and adds uncertainty to the intensity vaules of each pixel, 
+which inherently has a low signal/noise ratio. That gives objects fuzzy edges and adds uncertainty to the intensity values of each pixel, 
 making it harder to segment properly. 
 
-* So, we are faced with the probelm of being able to separate apparently touching, noisy, objects :-(
+* So, we are faced with the problem of being able to separate apparently touching, noisy, objects :-(
 
 * Luckily, there is a method for doing exactly that. The Watershed method. 
 
-* Ok, so how can we denoise, segment, watershed (separate touching objects)
+* Okay, so how can we denoise, segment, watershed (separate touching objects)
 and then count / measure the objects in FIJI? Read on...
 
 === Open the sample image ===
