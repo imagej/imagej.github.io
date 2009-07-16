@@ -52,7 +52,7 @@
 
 * You can filter out different sizes of particles. For example, you might only be interested in large objects,  like nuclei. So you can exclude small objects that you know are junk.  Change the area number range in the Size field and see what happens. 
 
-* You can choose to count only objects that are very circular by changing the Circularity range numbers to say 0.8-1. Play with it, see what it does. 
+* You can choose to count only those objects which are very circular by changing the Circularity range numbers to say 0.8-1. You could make it look for non circular objects too! How? Play with it, see what it does. 
 
 * Use show outlines, or test the other options there if you like. Exclude on edges is very smart. It means you don't get nonsense results from objects that are chopped off at the edges of the image, and as such are of course smaller than they really are.
 
