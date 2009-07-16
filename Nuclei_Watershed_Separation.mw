@@ -17,7 +17,7 @@
 
 [[Image:NucleiDAPIconfocal.png | 250px]]
 
-* Run a [http://imagejdocu.tudor.lu/doku.php?id=gui:process:filters Gaussian Blur filter] on the image to blur out the "speckle", actually Poisson distributed, statistical "photon [http://en.wikipedia.org/wiki/Shot_noise  shot noise]", and also to smooth out the inhomogeneity of the nuclear staining. We will use a large sigma value of 3 for this task.  A value of sigma too small will mean that the segmentation will be disturbed by the noise and staining pattern. Too high a sigma value, and the objects will be too blurred, making it harder to separate them later.  Run menu command: Process - Filters - Gaussian Blur, with a sigma value of 3 pixels. You can preview other values to see how they look also. You should get an image that looks like this:
+* Run a [http://imagejdocu.tudor.lu/doku.php?id=gui:process:filters Gaussian Blur filter] on the image to blur out the "speckle", actually Poisson distributed, statistical "photon [http://en.wikipedia.org/wiki/Shot_noise  shot noise]", and also to smooth out the inhomogeneity of the nuclear staining. We will use a large sigma value of 3 for this task.  A value of sigma too small will mean that the segmentation will be disturbed by the noise and staining pattern. Too high a sigma value, and the objects will be too blurred, making it harder to find their edges precisely and separate them later.  Run menu command: Process - Filters - Gaussian Blur, with a sigma value of 3 pixels. You can preview other values to see how they look also. You should get an image that looks like this:
 
 [[Image:NucleiDAPIconfocalGauss3pxSigma.png | 250px]]
 
