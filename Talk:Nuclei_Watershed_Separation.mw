@@ -1,0 +1,7 @@
+This is a very nice page. 
+I have a comment about the name. I think that this is not proper watershed segmentation, but watershed separation. The segmentation (partitioning of what is nucleus and what is background) is actually done by thresholding. The watershed command (which should be called "watershed separation") is then used to separate blobs that are patially overlapping.
+In fact, this can also be done without computing a watershed, but using a "dilation without merging" of the ultimate eroded points until omnipotence and then apply the original thresholded nuclei mask to the result.
+
+It is a bit unfortunate that the ImageJ command is called "watershed" because strictly speaking it does not compute one.
+Segmentation using the watershed transform also exists, but is a different method, it computes the watershed of the image or its gradient without relying on a threshold of the object.
+It is also known as "marker based segmentation". One set of the markers is inside the nuclei and the other outside. At the moment I am working precisely on an implementation of this and how to avoid oversegmentation based on the statistics of the expected result. Stay tuned!
