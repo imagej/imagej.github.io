@@ -5,3 +5,5 @@ In fact, this can also be done without computing a watershed, but using a "dilat
 It is a bit unfortunate that the ImageJ command is called "watershed" because strictly speaking it does not compute one.
 Segmentation using the watershed transform also exists, but is a different method, it computes the watershed of the image or its gradient without relying on a threshold of the object.
 It is also known as "marker based segmentation". One set of the markers is inside the nuclei and the other outside. At the moment I am working precisely on an implementation of this and how to avoid oversegmentation based on the statistics of the expected result. Stay tuned!
+
+--[[User:Landini|Gabriel]] 18:31, 18 July 2009 (CEST)
