@@ -12,9 +12,9 @@ This will open the Macro Recorder window:
 
 [[Image:How_to_apply_a_common_operation_to_a_complete_directory-2.jpg]]
 
-Now perform the operation on a single image. Make sure that you save toe image at the end.
+Now perform the operation on a single image. Make sure that you save the image at the end.
 
-Exmple: cropping the image. First, select a rectangle:
+Exmaple: cropping the image. First, select a rectangle:
 
 [[Image:How_to_apply_a_common_operation_to_a_complete_directory-3.jpg]]
 
@@ -34,7 +34,7 @@ Click on the '''Create''' button, and you will get this:
 
 The problem now is that this macro contains the verbatim name of the file you saved, but of course, you do not want to save ''all'' the files in the direcotry as ''clown.jpg''!
 
-The solution is to wrap the macro in a function which takes a '''placeholder'' for the file name.  Let's call that function ''action'':
+The solution is to wrap the macro in a function which takes a ''placeholder'' for the file name.  Let's call that function ''action'':
 
  function action(output, filename) {
          makeRectangle(10, 10, 300, 180);
@@ -44,7 +44,7 @@ The solution is to wrap the macro in a function which takes a '''placeholder'' f
 
 As you can see, the full path to the file we saved which was enclosed in quotes by the Recorder (''"/home/fiji/images/clown.jpg"'') was cut down to the full path to the output directory and the file name appended with a ''plus'' operator (''output + filename''), which are passed as so-called ''parameters'' to the function.
 
-The reason is that you want ImageJ to save the processed image with a variable name.  The function would be called like this:
+The reason is that you want ImageJ to save the processed image with a variable name.  For a single image, the function would be called like this:
 
  action("home/fiji/output-images/", "bridge.gif");
 
@@ -62,7 +62,7 @@ The function takes three parameters now: the input and output directories and th
 
 == Step 3: Iterating over all images in a given directory ==
 
-After defining the generic function ''action'', you can call it on each image in an input directory:
+After defining the generic ''action'' function, you can call it on each image in an input directory:
 
  input = "/home/fiji/input/";
  output = "/home/fiji/images/";
@@ -73,11 +73,11 @@ After defining the generic function ''action'', you can call it on each image in
 
 Now, this is a little more complicated: First, a variable ''input'' is defined. The reason is that the input directory is not only needed to get the list of images, but also to pass to the ''action'' function.
 
-To make the macro easier to modify, the variable ''output'' is set to the output directory.
+To make the macro easier to modify, also the output directory is stored in a variable (with the name ''output'').
 
-The next line defines a variable ''list'', which takes the result of the builtin function ''getFileList''.  The result is a so-called ''array'', a list that contains a number of ''list.length'' items, indexed by the numbers ''0, ..., list.length-1''.
+The next line defines a variable ''list'', which takes the result of the builtin function ''getFileList''.  The result is a so-called ''array'', a list that contains a number of ''list.length'' items, indexed by the numbers ''0, ..., list.length-1''.  These items are the names of the files in the given ''input'' directory.
 
-The ''for'' loop does nothing else than assigning the integral numbers ''0, ..., list.length-1'' to the variable ''i'' and executing the next line with that setting.
+The ''for'' loop does nothing else than assigning the integral numbers ''0, ..., list.length-1'' to the variable ''i'' and executing the next line with each setting.
 
 The line executed in the ''for'' loop calls the ''action'' function with the ''i''th file name in the directory list, obtained by ''list[i]''.
 
@@ -92,7 +92,7 @@ In our case, the file would simply contain these lines:
  makeRectangle(10, 10, 300, 180);
  run("Crop");
 
-Find the plugin in the ''Process'' menu:
+Find the ''Multiple ImageProcessor'' plugin in the ''Process'' menu:
 
 [[Image:How_to_apply_a_common_operation_to_a_complete_directory-8.jpg]]
 
