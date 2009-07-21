@@ -8,11 +8,11 @@ If not, or if you lack system administrator privileges, you can download the [ht
 
 First, go to the main page and click on the ''Downloads'' link:
 
-[[Image:Install_Fiji_on_Linux-MainPage.jpg]]
+[[Image:Install_Fiji_on_Linux-MainPage.jpg|740px]]
 
 This will lead you to the Downloads page.
 
-[[Image:Install_Fiji_on_Linux-Downloads.jpg]]
+[[Image:Install_Fiji_on_Linux-Downloads.jpg|740px]]
 
 Now you need to know if your computer is 32-bit or 64-bit, and download the appropriate package.  When asked, you can choose to open it in the ''ArchiveManager'' right away:
 
