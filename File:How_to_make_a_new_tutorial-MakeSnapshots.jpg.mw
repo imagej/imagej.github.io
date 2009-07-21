@@ -1,0 +1,1 @@
+Upload How_to_make_a_new_tutorial-MakeSnapshots.jpg for How_to_make_a_new_tutorial
