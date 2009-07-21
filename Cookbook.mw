@@ -8,6 +8,8 @@ Cooks call them ''recipes'', biologists ''protocols'', and programmers call them
 
 === How to get the appropriate version of Fiji running ===
 
+Please see the instructions for [[Install Fiji on Linux|Linux]], [[Install Fiji on MacOSX|MacOSX]], [[Install Fiji on Windows|Windows]].
+
 === How to open/import raw data ===
 
  Remark: programmers are often confused what you mean by ''raw data'' -- you talk about ''unprocessed'' data, while they refer to a certain file format.
