@@ -1,0 +1,17 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = MTrack2
+| author                 = 
+| maintainer         = [[Dan White]]
+| filename               = 
+| source                 = 
+| released               = 
+| latest version         = 
+| status                 = unknown
+| category               = [[:Category:Tracking]]
+| website                = [http://valelab.ucsf.edu/~nico/IJplugins/MTrack2.html]
+}}
+This plugin is for tracking objects in 2D over time. 
+
+[[Category:Plugins]]
+[[Category:Tracking]]
