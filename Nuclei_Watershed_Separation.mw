@@ -44,7 +44,7 @@
 
 * Now you have a set of white foreground patches of white pixels, surrounded by black background pixel areas,  and we have separated touching objects with a watershed, which put "dams" one pixel wide between the objects. 
 
-* Next we must run the Analyze Particles tool in FIJI to locate patches of white pixels and count them. But... that tool needs black objects on a white background or a threshold to be set on the image whiochg contains the desired objects. To invert the image do Edit - Invert, or to threshold the binary image, again do Image - Adjust - Threshold (Since the image now contains only two intensities (0 and 255), the threshold default is of course correct,  and the objects appear in thresholded red, for black background again of course). 
+* Next we must run the Analyze Particles tool in FIJI to locate patches of white pixels and count them. But... that tool needs black objects on a white background or a threshold to be set on the image which contains the desired objects. To invert the image do Edit - Invert, or to threshold the binary image, again do Image - Adjust - Threshold (Since the image now contains only two intensities (0 and 255), the threshold default is of course correct,  and the objects appear in thresholded red, for black background again of course). 
 
 * Now choose menu item Analyze - Analyze Particles,  using the settings in the screen shot below.
 [http://imagejdocu.tudor.lu/doku.php?id=gui:analyze:analyze_particles documentation for analyze particles.]
