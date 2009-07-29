@@ -6,7 +6,7 @@
 | source                 = [http://rsb.info.nih.gov/ij/plugins/download/Kalman_Stack_Filter.java Kalman_Stack_Filter.java]
 | released               = 23 May 2003
 | latest version         = 17 November 2006
-| status                 = stable
+| status                 = stable (not yet in fiji update)
 | category               = [[:Category:Filtering|Filtering]]
 | website                = [http://rsb.info.nih.gov/ij/plugins/kalman.html]
 }}
