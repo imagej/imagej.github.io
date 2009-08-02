@@ -27,7 +27,7 @@ The '''radius''' sets the radius of the local domain over which the threshold wi
 
 '''Special parameters 1 and 2''' sets specific values for each method. Those are detailed below for each method.
 
-It you are processing a stack, one additional options is available: '''Stack''' can be used to process all the slices.
+It you are processing a stack, one additional option is available: '''Stack''' can be used to process all the slices.
 
 
 == Available methods ==
