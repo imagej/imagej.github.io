@@ -81,3 +81,6 @@ IJ.run("Images to Stack", "name=TaggedMovie title=Tagged use")
 IJ.log("Done!")
 
 </source>
+
+[Category:plugins]
+[Category:Jython]
