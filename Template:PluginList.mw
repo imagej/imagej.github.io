@@ -25,6 +25,7 @@
 === Plugins > Examples ===
 
 * [[Delayed Snapshot]] - file <tt>Delayed_Snapshot.py</tt>  -- ''jython script''
+* [[Single Voxel in 3D]] - file <tt>tracing.Test_Single_Voxel</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[random noise example]] - file <tt>random_noise_example.clj</tt>  -- ''clojure script''
 * [[list all threads]] - file <tt>list_all_threads.py</tt>  -- ''jython script''
 * [[downsample]] - file <tt>downsample_.js</tt>  -- ''javascript file''
@@ -49,6 +50,7 @@
 * [[Command Launcher Javascript]] - file <tt>Command_Launcher_Javascript.js</tt>  -- ''javascript file''
 * [[Command Launcher Clojure]] - file <tt>Command_Launcher_Clojure.clj</tt>  -- ''clojure script''
 * [[Command Launcher Python]] - file <tt>Command_Launcher_Python.py</tt>  -- ''jython script''
+* [[Command Launcher Ruby]] - file <tt>Command_Launcher_Ruby.rb</tt>  -- ''jruby script''
 
 
 ==== Plugins > Examples > TrakEM2_Example_Scripts ====
@@ -115,9 +117,10 @@
 * [[Register Virtual Stack Slices]] - file <tt>register_virtual_stack.Register_Virtual_Stack_MT</tt> in package '''[[register_virtual_stack_slices]]'''  -- ''java jar file''
 * [[Rigid Registration]] - file <tt>vib.RigidRegistration_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[TurboReg]] - file <tt>TurboReg_</tt> in package '''[[TurboReg_]]'''  -- ''java jar file''
-* [[bUnwarpJ]] - file <tt>bUnwarpJ_</tt> in package '''[[bUnwarpJ_]]'''  -- ''java jar file''
-* [[Align Image by line ROI]] - file <tt>Align_Image</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Moving Least Squares]] - file <tt>Moving_Least_Squares</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Align Image by line ROI]] - file <tt>Align_Image</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[bUnwarpJ]] - file <tt>bunwarpj.bUnwarpJ_</tt> in package '''[[bUnwarpJ_]]'''  -- ''java jar file''
+* [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
 
 
 
@@ -186,15 +189,13 @@
 * [[TJ Scale]] - file <tt>TJ_Scale</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 * [[Landmark Correspondences]] - file <tt>Transform_Roi</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
 * [[Interactive Rigid]] - file <tt>Transform_Rigid</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
-* [[TJ Rotate]] - file <tt>TJ_Rotate</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 * [[Distortion Correction]] - file <tt>lenscorrection.Distortion_Correction</tt> in package '''[[TrakEM2_]]'''  -- ''java jar file''
-* [[TJ Panel]] - file <tt>TJ_Panel</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 * [[TJ Turn]] - file <tt>TJ_Turn</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
-* [[Elastic Stack Alignment with SIFT]] - file <tt>Align_ElasticMeshStack</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+* [[TJ Panel]] - file <tt>TJ_Panel</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 * [[TJ Affine]] - file <tt>TJ_Affine</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 * [[Interactive Affine]] - file <tt>Transform_Affine</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
 * [[Interactive Perspective]] - file <tt>Transform_Perspective</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
-* [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+* [[TJ Rotate]] - file <tt>TJ_Rotate</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 * [[TJ Crop]] - file <tt>TJ_Crop</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
 
 
@@ -216,7 +217,7 @@
 * [[Smooth (3D)]] - file <tt>process3d.Smooth_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Laplace (3D)]] - file <tt>process3d.Laplace_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Maximum (3D)]] - file <tt>process3d.Maximum_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Max (3D)]] - file <tt>process3d.Max_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Max (3D)]] - file <tt>process3d.Maximum_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Resample]] - file <tt>vib.Resample_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Gradient (3D)]] - file <tt>process3d.Gradient_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[IFT (3D)]] - file <tt>process3d.IFT_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
@@ -289,6 +290,7 @@
 * [[Show Amira Surface]] - file <tt>isosurface.AmiraSurface</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Amira...]] - file <tt>AmiraMeshReader_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[MRC Leginon ...]] - file <tt>io.Open_MRC_Leginon</tt> in package '''[[IO_]]'''  -- ''java jar file''
+* [[LSM...]] - file <tt>LSM_Reader</tt> in package '''[[LSM_Reader]]'''  -- ''java jar file''
 * [[Leica SP...]] - file <tt>leica.Leica_SP_Reader</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Open with preview ...]] - file <tt>net.sf.ij.plugin.ImageIOOpenPlugin("preview")</tt> in package '''[[ij-ImageIO_]]'''  -- ''java jar file''
 * [[IPLab Reader...]] - file <tt>io.IPLab_Reader</tt> in package '''[[IO_]]'''  -- ''java jar file''
@@ -300,6 +302,7 @@
 * [[Analyze...]] - file <tt>Analyze_Reader</tt> in package '''[[Analyze_Reader_Writer]]'''  -- ''java jar file''
 * [[PDF ...]] - file <tt>io.PDF_Viewer</tt> in package '''[[IO_]]'''  -- ''java jar file''
 * [[Icns...]] - file <tt>io.Icns_Reader</tt> in package '''[[IO_]]'''  -- ''java jar file''
+* [[LSS16...]] - file <tt>io.LSS16_Reader</tt> in package '''[[IO_]]'''  -- ''java jar file''
 * [[ICO...]] - file <tt>io.ICO_Reader</tt> in package '''[[IO_]]'''  -- ''java jar file''
 * [[DAT EMMENU ...]] - file <tt>io.Open_DAT_EMMENU</tt> in package '''[[IO_]]'''  -- ''java jar file''
 
@@ -315,11 +318,13 @@
 * [[PNM ...]] - file <tt>net.sf.ij.plugin.ImageIOSaveAsPlugin("PNM")</tt> in package '''[[ij-ImageIO_]]'''  -- ''java jar file''
 * [[PDF ...]] - file <tt>io.PDF_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
 * [[Nrrd ...]] - file <tt>io.Nrrd_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
+* [[AmiraTable ...]] - file <tt>AmiraTableWriter_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[DF3 ...]] - file <tt>io.Save_DF3</tt> in package '''[[IO_]]'''  -- ''java jar file''
 * [[Icns ...]] - file <tt>io.Icns_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
-* [[AmiraTable ...]] - file <tt>AmiraTableWriter_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[LSS16 ...]] - file <tt>io.LSS16_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
 * [[Analyze...]] - file <tt>Analyze_Writer</tt> in package '''[[Analyze_Reader_Writer]]'''  -- ''java jar file''
 * [[Animated Gif ...]] - file <tt>io.Gif_Stack_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
+* [[XPM ...]] - file <tt>io.XPM_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
 * [[Compressed TIFF ...]] - file <tt>net.sf.ij.plugin.ImageIOSaveAsPlugin("TIFF")</tt> in package '''[[ij-ImageIO_]]'''  -- ''java jar file''
 * [[ICO ...]] - file <tt>io.ICO_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
 
@@ -383,7 +388,7 @@
 
 * [[Concatenate]] - file <tt>Concatenate_</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 * [[Substack Maker]] - file <tt>Substack_Maker</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
-* [[De-Interleave]] - file <tt>DeInterleave_</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
+* [[Grouped ZProjector]] - file <tt>Grouped_ZProjector</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 * [[Stack Inserter]] - file <tt>Stack_Inserter</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 * [[Stack Spliter]] - file <tt>Stack_Splitter</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 * [[Stack Sorter]] - file <tt>Stack_Sorter</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
@@ -392,6 +397,7 @@
 * [[Stack Reverser]] - file <tt>Stack_Reverser</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 * [[Stack Maker]] - file <tt>Stack_Maker</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 * [[Slice Remover]] - file <tt>Slice_Remover</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
+* [[Deinterleave]] - file <tt>DeInterleave_</tt> in package '''[[Stack_Manipulation]]'''  -- ''java jar file''
 
 
 
@@ -418,7 +424,9 @@
 
 == Help ==
 
+* [[Tutorial Maker]] - file <tt>fiji.Tutorial_Maker</tt> in package '''[[Tutorial_Maker]]'''  -- ''java jar file''
 * [[Update Fiji]] - file <tt>UpdateFiji</tt> in package '''[[Fiji_Updater]]'''  -- ''java jar file''
+* [[Upload Sample Image]] - file <tt>fiji.utilities.Fiji_Uploader</tt> in package '''[[Fiji_Plugins]]'''  -- ''java jar file''
 * [[Report a Bug]] - file <tt>Bug_Submitter.Bug_Submitter</tt> in package '''[[Bug_Submitter]]'''  -- ''java jar file''
 * [[Fiji Wiki]] - file <tt>ij.plugin.BrowserLauncher("http://pacific.mpi-cbg.de/")</tt> in package '''[[Fiji_Updater]]'''  -- ''java jar file''
 
@@ -426,6 +434,7 @@
 
 === Help > About Plugins ===
 
+* [[LSMReader...]] - file <tt>LSM_Reader("about")</tt> in package '''[[LSM_Reader]]'''  -- ''java jar file''
 * [[Sync Windows...]] - file <tt>Sync_Windows("about")</tt> in package '''[[Sync_Win]]'''  -- ''java jar file''
 * [[LOCI Plugins...]] - file <tt>loci.plugins.LociImporter("about")</tt> in package '''[[loci_tools]]'''  -- ''java jar file''
 * [[Color Histogram...]] - file <tt>ColorHistogram_("about")</tt> in package '''[[Color_Histogram]]'''  -- ''java jar file''
@@ -434,7 +443,8 @@
 * [[Sync Measure 3D...]] - file <tt>Sync_Measure_3D("about")</tt> in package '''[[Sync_Win]]'''  -- ''java jar file''
 * [[Image IO ...]] - file <tt>net.sf.ij.plugin.AboutImageIO("")</tt> in package '''[[ij-ImageIO_]]'''  -- ''java jar file''
 * [[LSMToolbox...]] - file <tt>LSM_Toolbox("about")</tt> in package '''[[LSM_Toolbox]]'''  -- ''java jar file''
-* [[About bUnwarpJ...]] - file <tt>bunwarpj.bUnwarpJCredits</tt> in package '''[[bUnwarpJ_]]'''  -- ''java jar file''
+* [[Gray Morphology...]] - file <tt>GrayMorphology_("about")</tt> in package '''[[Gray_Morphology]]'''  -- ''java jar file''
+* [[About bUnwarpJ...]] - file <tt>bunwarpj.Credits</tt> in package '''[[bUnwarpJ_]]'''  -- ''java jar file''
 
 
 
@@ -447,9 +457,18 @@
 
 == Analyze ==
 
+* [[3D OC Options]] - file <tt>_3D_OC_Options</tt> in package '''[[Object_Counter3D]]'''  -- ''java jar file''
 * [[Color Histogram]] - file <tt>ColorHistogram_</tt> in package '''[[Color_Histogram]]'''  -- ''java jar file''
 * [[Color Inspector 3D]] - file <tt>Color_Inspector_3D</tt> in package '''[[Color_Inspector_3D]]'''  -- ''java jar file''
 * [[3D Surface Plot]] - file <tt>Interactive_3D_Surface_Plot</tt> in package '''[[Interactive_3D_Surface_Plot]]'''  -- ''java jar file''
+* [[3D objects counter]] - file <tt>_3D_objects_counter</tt> in package '''[[Object_Counter3D]]'''  -- ''java jar file''
+
+
+
+=== Analyze > Colocalization ===
+
+* [[Colocalization Threshold]] - file <tt>Colocalisation_Threshold</tt> in package '''[[Colocalisation_Analysis]]'''  -- ''java jar file''
+* [[Colocalization Test]] - file <tt>Colocalisation_Test</tt> in package '''[[Colocalisation_Analysis]]'''  -- ''java jar file''
 
 
 
@@ -457,6 +476,16 @@
 
 * [[PIV analysis]] - file <tt>PIV_analyser</tt> in package '''[[PIV_analyser]]'''  -- ''java jar file''
 * [[FlowJ]] - file <tt>FlowJ_</tt> in package '''[[FlowJ_]]'''  -- ''java jar file''
+
+
+
+=== Analyze > Local Thickness ===
+
+* [[Distance Map to Distance Ridge]] - file <tt>Distance_Ridge("run")</tt> in package '''[[LocalThickness_]]'''  -- ''java jar file''
+* [[Local Thickness to Cleaned-Up Local Thickness]] - file <tt>Clean_Up_Local_Thickness("run")</tt> in package '''[[LocalThickness_]]'''  -- ''java jar file''
+* [[Local Thickness (complete process)]] - file <tt>Local_Thickness_Driver("run")</tt> in package '''[[LocalThickness_]]'''  -- ''java jar file''
+* [[Distance Ridge to Local Thickness]] - file <tt>Local_Thickness_Parallel("run")</tt> in package '''[[LocalThickness_]]'''  -- ''java jar file''
+* [[Geometry to Distance Map]] - file <tt>EDT_S1D("run")</tt> in package '''[[LocalThickness_]]'''  -- ''java jar file''
 
 
 
@@ -496,3 +525,9 @@
 == Process ==
 
 * [[Multiple Image Processor]] - file <tt>MultipleImageProcessor</tt> in package '''[[M_I_P]]'''  -- ''java jar file''
+
+
+
+=== Process > Morphology ===
+
+* [[Gray Morphology]] - file <tt>GrayMorphology_</tt> in package '''[[Gray_Morphology]]'''  -- ''java jar file''
