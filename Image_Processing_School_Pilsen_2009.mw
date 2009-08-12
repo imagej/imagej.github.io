@@ -1,0 +1,111 @@
+See also the [http://www.neuroinformatics2009.org/courses-and-satellite-meetings/image-processing-school/ Image Processing School] announcement webpage.
+
+Schedule (tentative):
+
+
+== Wednesday, September 9th ==
+
+=== Welcome and Introduction ===
+
+9:30 - 10:00 AM
+
+
+=== Session 1 ===
+10:00 - 11:00 AM 
+
+Setup: installing Fiji and getting familiar with it; overview of major features.
+
+Lead instructor: [[Johannes Schindelin]]
+
+=== Session 1 ===
+11:30 - 12:30 AM
+
+Fundamentals of image processing: anatomy of a digital image, image formats
+
+Lead instructor: [[Albert Cardona]]
+
+=== Session 3 ===
+14:00 - 15:30
+
+???
+
+=== Session 4 ===
+
+16:00 - 17:30
+
+Free session for students to introduce their image processing interests to the instructors.
+
+Lead instructor: [[Albert Cardona]]
+
+
+
+== Other days ==
+
+=== Session ? ===
+
+Fundamentals of image acquisition: effects of dynamic range and exposure, etc
+
+
+Lead instructor: [[Albert Cardona]] or ?
+
+
+=== Session ? ===
+
+Image analysis: Colocalization
+
+Lead instructor: [[Dan White]]
+
+
+=== Session ? ===
+
+Image analysis: measurements
+
+Lead instructor: [[Dan White]]
+
+
+=== Session ? ===
+
+Image registration: Virtual Stack Slice Registration, TrakEM2, bUnwarpJ
+
+
+Lead instructor: [[Ignacio Arganda]]
+
+
+=== Session ? ===
+
+Introduction to image segmentation.
+
+*Pixel-based and vector-based.
+*Manual and semi-automatic.
+
+Plugins: Simple Neurite Tracer, Segmentation Editor, VIB protocol, TrakEM2, Level Sets.
+
+Lead instructor: [[Verena Kaynig]]
+
+
+=== Session ? ===
+
+[[TrakEM2]]: image registration and manual segmentation.
+
+Lead instructor: [[Albert Cardona]]
+
+
+=== Session ? ===
+
+Introduction to Fiji scripting in Python
+
+Lead instructor: [[Johannes Schindelin]]
+
+
+=== Session ? ===
+
+Advanced Fiji scripting in Python
+
+Lead instructors: [[Jean-Yves Tinevez]]
+
+
+=== Session ? ===
+
+Introduction to Fiji programming in Java
+
+Lead instructor: [[Johannes Schindelin]]
