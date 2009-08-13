@@ -4,8 +4,8 @@
 | author                 = various (see below)
 | maintainer             = Jean-Yves Tinevez ([mailto:tinevez@mpi-cbg.de tinevez@mpi-cbg.de])
 | filename               = Stack_Manipulation.jar
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Stack_Manipulation;hb=HEAD on gitweb] (10 files)
-| latest version         = 06 April 2009
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Stack_Manipulation;hb=HEAD on gitweb] (12 java files)
+| latest version         = 12 August 2009
 | status                 = stable, not active 
 }}
 
