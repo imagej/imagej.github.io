@@ -26,6 +26,41 @@ What they do is pretty much summarized by the following diagram, taken from the 
 
 
 
+
+
+
+== Documentation ==
+
+
+
+=== Grouped ZProjector ===
+
+From the source code:
+
+Grouped_ZProjector performs a z-projection on a stack of images.
+The stack is segregated into some number of groups (by specifying
+a group size) and a z-projection is performed on each group using
+ZProjector.  The result is a new stack of images, one slice for
+each group. The output stack has the same type as the input stack.
+The projection methods supported are the same as for ZProjector;
+currently "Average Intensity", "Max Intensity", and "Sum Slices".
+(It appears that ZProjector actually uses the "Average Intensity"
+method instead of the "Sum Slices" method.)
+
+Grouped_ZProjector is primarily designed to be run as a plugin
+from within the ImageJ environment, but may also be used by other
+plugins, etc...  When launched as a plugin, the default constructor
+is used and then the run method is called.  Other code wishing to
+use Grouped_ZProjector should use the <tt>setMethod</tt> and <tt>computeProjection</tt>
+methods directly; the <tt>buildDialog</tt> <tt>getMethod</tt>, and <tt>validGroupSize</tt> methods
+may also come in handy.
+
+
+
+
+
+
+
 == Author and licenses ==
 
 We list here the authors for each part of this package, with corresponding licenses when relevant.
@@ -39,8 +74,12 @@ Last modified June 29 2006.
 
 === SubStack_Maker ===
 
-By [mailto:padua001_at_mc.duke.edu Anthony Padua] & [mailto:barbo013_at_mc.duke.edu Daniel Barboriak], Neuroradiology, Duke University Medical Center. Last modified: Oct 31, 2005.
+By [mailto:padua001_at_mc.duke.edu Anthony Padua] & [mailto:barbo013_at_mc.duke.edu Daniel Barboriak], Neuroradiology, Duke University Medical Center. Last modified: 25 Jan. 2000. Public domain.
 
+
+=== Grouped ZProjector ===
+
+By [mailto:caholly_at_colby.edu Charlie Holly],  Holly Mountain Software. Last modified June 29 2006.
 
 
 === DeInterleave_ ===
