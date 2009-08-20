@@ -134,8 +134,8 @@ By [mailto:tcollins_at_macbiophotonics.ca Tony Collins].
 
 
 === Stack_Maker ===
-
-
+'''Demontager''': converts a montaged image to an image stack based on the number of rows and columns input by the user. This is the opposite of what the Image/Stacks/Make Montage command does.
+http://rsb.info.nih.gov/ij/plugins/demontager.html
 
 === Slice_Remover ===
 
