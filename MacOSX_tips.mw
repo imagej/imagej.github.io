@@ -1,16 +1,22 @@
-<h2>Installing Fiji</h2>
-<ol>
-<li>Download the .dmg package from the [[Downloads]] page, and then double-click it to open it.</li>
-<li>Create a folder under /Applications/, such as /Applications/Fiji</li>
-<li>Drag the 3 items (Fiji.app, and the plugins and macros symlinks) into the /Applications/Fiji folder.</li>
-</ol>
+==Installing Fiji==
+
+#Download the .dmg package from the [[Downloads]] page, and then double-click it to open it.
+#Create a folder under /Applications/, such as /Applications/Fiji
+#Drag the 3 items (Fiji.app, and the plugins and macros symlinks) into the /Applications/Fiji folder.
+
 
 Fiji is ready to run!
 
-<h2>Accessing the plugins and macros folders</h2>
+==Running Fiji on Java 1.5 (32-bit)==
+
+Fiji on Mac is running on Java 1.6 (64-bit). If you need to run it in 32-bit mode, use the following code:
+ arch -i386 /Applications/Fiji/Fiji.app/Contents/MacOS/fiji-macosx
+
+
+==Accessing the plugins and macros folders==
 To access the plugins or macros folders, set the Finder window to either icons or lists mode, <b>not</b> in column mode, and double-click them.
 
 Alternatively, right-click (or control-click) the Fiji.app and select "Show package contents", to open the folder where the actual plugins and macros folders are.
 
-<h2>Adding new plugins and macros</h2>
+==Adding new plugins and macros==
 Access the plugins folder as explained above and just drag and drop any plugin into the plugins folder, like you would do for ImageJ. Same for macros.
