@@ -738,8 +738,7 @@ Prints:
  :a 1 [:a 1]
  :b 2 [:b 2]
  :c 3 [:c 3]
-nil
-
+ nil
 
 <h3>Namespaces</h3>
 * To list all existing namespaces:
