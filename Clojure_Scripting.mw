@@ -714,7 +714,7 @@ Prints:
 
 Each "entry" is represented by a vector with two values.
 
-Now to loop more conveniently, we can assign the key and value to variables, by what is called destructuring (note the </i>[k v]</i> where the <i>e</i> was before)
+Now to loop more conveniently, we can assign the key and value to variables, by what is called destructuring (note the <i>[k v]</i> where the <i>e</i> was before)
 
 <source lang="lisp">
 (doseq [[k v] {:a 1 :b 2 :c 3}]
