@@ -696,6 +696,51 @@ The default output stream is at variable <i>*out*</i>. The Clojure Interpreter b
    )
 </source>
 
+<h3>Destructuring</h3>
+
+Destructuring is a shortcut to capture the contents of a variable into many variables.
+
+An example: when looping a map, we get the entry, not the key and value of each entry:
+
+<source lang="lisp">
+(doseq [e {:a 1 :b 2 :c 3}]
+  (println e))
+</source>
+Prints:
+ [:a 1]
+ [:b 2]
+ [:c 3]
+ nil
+
+Each "entry" is represented by a vector with two values.
+
+Now to loop more conveniently, we can assign the key and value to variables, by what is called destructuring (note the </i>[k v]</i> where the <i>e</i> was before)
+
+<source lang="lisp">
+(doseq [[k v] {:a 1 :b 2 :c 3}]
+  (println k v))
+</source>
+
+Prints:
+ :a 1
+ :b 2
+ :c 3
+ nil
+
+Even better, we can preserve the whole entry as well, by using the keyword ":as":
+
+<source lang="lisp">
+(doseq [[k v :as e] {:a 1 :b 2 :c 3}]
+  (println k v e))
+</source>
+
+Prints:
+ :a 1 [:a 1]
+ :b 2 [:b 2]
+ :c 3 [:c 3]
+nil
+
+
 <h3>Namespaces</h3>
 * To list all existing namespaces:
 <source lang="lisp">
