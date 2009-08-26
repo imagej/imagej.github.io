@@ -24,6 +24,12 @@ The easiest method is to mark the files you want to open the folder (in Finder, 
 
 === How to measure angles (in 2D or 3D), distances, areas, intensities ===
 
+=== How do I overlay two gray images, one as red and the other as green? ===
+
+Use Image>Color>Merge Channels...
+
+TODO: screenshot, explain what "Composite" does (which is on by default...)
+
 === How to put several images into one panel ===
 
 === How to analyze colocalization of labels ===
