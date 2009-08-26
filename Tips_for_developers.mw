@@ -20,4 +20,4 @@ Once you have working code, you can turn it into a proper plugin (this is easies
 
 Sometimes, the compiler complains about a class not having a certain method or interface, but you ''know'' it must contain it.  More often than not, that class exists in different versions in your classpath.  Find out with
 
-$ ./fiji scripts/find-jar-for-class.py the.class.youre.looking.For
+$ ./fiji bin/find-jar-for-class.py the.class.youre.looking.For
