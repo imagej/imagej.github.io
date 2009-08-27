@@ -1,47 +1,55 @@
 See also the [http://www.neuroinformatics2009.org/courses-and-satellite-meetings/image-processing-school/ Image Processing School] announcement webpage.
 
-Schedule (tentative):
+= Schedule (tentative): =
 
+{|border="1"
+!'''Time'''
+!Wednesday, September 9th
+!Thursday, September 10th
+!Friday, September 11th
+!Saturday, September 12th
+|-
+|09:30
+|[[#Welcome and Introduction|Welcome]]
+|-
+|Session 1: 10:00 - 11:00
+|[[#Overview of installing and using Fiji|Installing Fiji]]
+|-
+|Session 2: 11:30 - 12:30
+|[[#Image Processing fundamentals|Image Processing Fundamentals]]
+|-
+|Session 3: 14:00 - 15:30
+|[[#Sep 9th, Session 3|???]]
+|-
+|Session 4: 16:00 - 17:30
+|[[#Free session: show your images|Show your images!]]
+|}
 
-== Wednesday, September 9th ==
+== Sessions ==
 
 === Welcome and Introduction ===
 
-9:30 - 10:00 AM
+[[Albert Cardona]]
 
-
-=== Session 1 ===
-10:00 - 11:00 AM 
+=== Overview of installing and using Fiji ===
 
 Setup: installing Fiji and getting familiar with it; overview of major features.
 
 Lead instructor: [[Johannes Schindelin]]
 
-=== Session 1 ===
-11:30 - 12:30 AM
+=== Image Processing fundamentals ===
 
 Fundamentals of image processing: anatomy of a digital image, image formats
 
 Lead instructor: [[Albert Cardona]]
 
-=== Session 3 ===
-14:00 - 15:30
-
-???
-
-=== Session 4 ===
-
-16:00 - 17:30
+=== Free session: show your images ===
 
 Free session for students to introduce their image processing interests to the instructors.
 
 Lead instructor: [[Albert Cardona]]
 
-
-
-== Other days ==
-
-=== Session ? ===
+=== Fundamentals of image acquisition ===
 
 Fundamentals of image acquisition: effects of dynamic range and exposure, etc
 
@@ -49,21 +57,21 @@ Fundamentals of image acquisition: effects of dynamic range and exposure, etc
 Lead instructor: [[Albert Cardona]] or ?
 
 
-=== Session ? ===
+=== Colocalization ===
 
 Image analysis: Colocalization
 
 Lead instructor: [[Dan White]]
 
 
-=== Session ? ===
+=== Measurements ===
 
 Image analysis: measurements
 
 Lead instructor: [[Dan White]]
 
 
-=== Session ? ===
+=== Registration ===
 
 Image registration: Virtual Stack Slice Registration, TrakEM2, bUnwarpJ
 
@@ -71,7 +79,7 @@ Image registration: Virtual Stack Slice Registration, TrakEM2, bUnwarpJ
 Lead instructor: [[Ignacio Arganda]]
 
 
-=== Session ? ===
+=== Segmentation ===
 
 Introduction to image segmentation.
 
@@ -83,35 +91,35 @@ Plugins: Simple Neurite Tracer, Segmentation Editor, VIB protocol, TrakEM2, Leve
 Lead instructor: [[Verena Kaynig]]
 
 
-=== Session ? ===
+=== TrakEM2 ===
 
 [[TrakEM2]]: image registration and manual segmentation.
 
 Lead instructor: [[Albert Cardona]]
 
 
-=== Session ? ===
+=== Fiji scripting: Python ===
 
 Introduction to Fiji scripting in Python
 
 Lead instructor: [[Johannes Schindelin]]
 
 
-=== Session ? ===
+=== Fiji scripting: advanced Python ===
 
 Advanced Fiji scripting in Python
 
 Lead instructors: [[JeanYvesTinevez|Jean-Yves Tinevez]]
 
 
-=== Session ? ===
+=== Writing Fiji plugins in Java ===
 
 Introduction to Fiji programming in Java
 
 Lead instructor: [[Johannes Schindelin]]
 
 
-=== Session ? ===
+=== Beyond 3D ===
 
 Intensity vs time analysis
 
