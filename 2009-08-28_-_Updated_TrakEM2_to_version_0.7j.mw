@@ -1,0 +1,15 @@
+[[TrakEM2]] has been updated to version 0.7j
+
+Please call "Help - Update Fiji" to get the new TrakEM2_.jar into your plugins folder.
+
+The update includes:
+
+*New AreaList surface and maximum diameter measurements. See [http://t2.ini.uzh.ch/trakem2_manual.html#measure_arealist arealist measurements].
+*Dialog for importing stacks appears only when it's not obvious which stack to import.
+
+See [http://t2.ini.uzh.ch/trakem2.html all news here.]
+
+
+Thanks to Javier Cabrera Chaves, Christian Niedworok and [http://fly.mpi-cbg.de/~saalfeld Stephan Saalfeld] for testing, bug reports and fixes.
+
+[[Category:News]]
