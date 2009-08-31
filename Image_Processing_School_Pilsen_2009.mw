@@ -9,32 +9,29 @@ See also the [http://www.neuroinformatics2009.org/courses-and-satellite-meetings
 !Friday, September 11th
 !Saturday, September 12th
 |-
-|09:30
-|[[#Welcome and Introduction|Welcome]]
-|-
-|Session 1: 10:00 - 11:00
-|[[#Overview of installing and using Fiji|Installing Fiji]]
-|[[#Measurements|Measurements]]
+|Session 1: 9:30 - 11:00
+|[[#Welcome and Introduction|Welcome]] and [[#Overview of installing and using Fiji|Installing Fiji]]
+|[[#Measurements|Measurements]] and [[#Colocalization|Colocalization]]
 |[[#Beyond 3D|Beyond 3D]]
-|[[#TrakEM2|TrakEM2]]
+|[[#Segmentation|Segmentation]]
 |-
 |Session 2: 11:30 - 12:30
 |[[#Image Processing fundamentals|Image Processing Fundamentals]]
 |[[#Fiji scripting: Python|Fiji scripting: Python]]
 |[[#Registration|Registration]]
-|[[#Segmentation|Segmentation]]
+|
 |-
 |Session 3: 14:00 - 15:30
 |[[#Fundamentals of image acquisition|Fundamentals of image acquisition ]]
-|[[#Colocalization|Colocalization]]
+|[[#TrakEM2|TrakEM2]]
 |[[#Fiji scripting: advanced Python|Fiji scripting: advanced Python]]
-|[[#Writing Fiji plugins in Java|Writing Fiji plugins in Java]]
+|
 |-
 |Session 4: 16:00 - 17:30
 |[[#Work sessions|Show your images!]]
 |[[#Work sessions|Work session]]
 |[[#Work sessions|Work session]]
-|[[#Work sessions|Work session]]
+|
 |}
 
 == Wednesday ==
