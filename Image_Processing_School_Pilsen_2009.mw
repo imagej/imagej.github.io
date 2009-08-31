@@ -32,9 +32,9 @@ See also the [http://www.neuroinformatics2009.org/courses-and-satellite-meetings
 |-
 |Session 4: 16:00 - 17:30
 |[[#Free session: show your images|Show your images!]]
-|[[#Free session (Thursday)|Free session]]
-|[[#Free session (Friday)|Free session]]
-|[[#Free session (Saturday)|Free session]]
+|[[#Free sessions|Free session]]
+|[[#Free sessions|Free session]]
+|[[#Free sessions|Free session]]
 |}
 
 == Wednesday ==
@@ -87,8 +87,6 @@ Image analysis: Colocalization
 
 Lead instructor: [[Dan White]]
 
-=== Free session (Thursday) ===
-
 == Friday ==
 
 === Beyond 3D ===
@@ -101,17 +99,13 @@ Lead instructor: [[JeanYvesTinevez|Jean-Yves Tinevez]]
 
 Image registration: Virtual Stack Slice Registration, TrakEM2, bUnwarpJ
 
-
 Lead instructor: [[Ignacio Arganda]]
-
 
 === Fiji scripting: advanced Python ===
 
 Advanced Fiji scripting in Python
 
 Lead instructors: [[JeanYvesTinevez|Jean-Yves Tinevez]]
-
-=== Free session (Friday) ===
 
 == Saturday ==
 
@@ -138,4 +132,6 @@ Introduction to Fiji programming in Java
 
 Lead instructor: [[Johannes Schindelin]]
 
-=== Free session (Saturday) ===
+== Free sessions ==
+
+At the end of every day, there is time to apply what you learnt and go beyond that.  You can process your own images and discuss results and methods with the instructors.
