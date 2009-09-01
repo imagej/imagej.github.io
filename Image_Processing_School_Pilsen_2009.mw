@@ -52,6 +52,12 @@ Fundamentals of image processing: anatomy of a digital image, image formats. Inc
 
 Lead instructor: [[Albert Cardona]]
 
+=== Fiji scripting: Python ===
+
+Introduction to Fiji scripting in Python
+
+Lead instructor: [[Johannes Schindelin]]
+
 == Thursday ==
 
 === Measurements ===
@@ -65,12 +71,6 @@ Lead instructor: [[Dan White]]
 Image analysis: Colocalization
 
 Lead instructor: [[Dan White]]
-
-=== Fiji scripting: Python ===
-
-Introduction to Fiji scripting in Python
-
-Lead instructor: [[Johannes Schindelin]]
 
 === TrakEM2 ===
 
