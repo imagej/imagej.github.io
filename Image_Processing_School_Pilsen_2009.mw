@@ -80,11 +80,16 @@ Lead instructor: [[Dan White]]
 
 == Friday ==
 
-=== Beyond 3D ===
+=== Segmentation ===
 
-Intensity vs time analysis
+Introduction to image segmentation.
 
-Lead instructor: [[JeanYvesTinevez|Jean-Yves Tinevez]]
+*Pixel-based and vector-based.
+*Manual and semi-automatic.
+
+Plugins: Simple Neurite Tracer, Segmentation Editor, VIB protocol, TrakEM2, Level Sets.
+
+Lead instructor: [[Verena Kaynig]]
 
 === Registration ===
 
