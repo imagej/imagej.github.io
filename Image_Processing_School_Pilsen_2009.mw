@@ -11,13 +11,13 @@ See also the [http://www.neuroinformatics2009.org/courses-and-satellite-meetings
 |-
 |Session 1: 9:30 - 11:00
 |[[#Welcome and Introduction|Welcome]] and [[#Overview of installing and using Fiji|Installing Fiji]]
-|[[#Measurements|Measurements]] and [[#Colocalization|Colocalization]]
+|[[#Measurements|Measurements]]
 |[[#Segmentation|Segmentation]]
 |[[#Registration|Registration]]
 |-
 |Session 2: 11:30 - 12:30
 |[[#Image Processing fundamentals|Image Processing Fundamentals]]
-|
+|[[#Colocalization|Colocalization]]
 |[[#Beyond 3D|Beyond 3D]]
 |
 |-
