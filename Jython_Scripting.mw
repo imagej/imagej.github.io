@@ -147,6 +147,8 @@ pix = zeros(width * height, 'b')
 Random().nextBytes(pix)
 </source>
 
+(See the [http://www.jython.org/archive/21/docs/jarray.html jarray documentation] where the 'b'-byte, 'd'-double, etc. are explained.)
+
 Now make a new IndexColorModel (that's what ImageJ's ij.process.LUT class is) for 8-bit images:
 
 <source lang="python">
