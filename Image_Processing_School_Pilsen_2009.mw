@@ -13,12 +13,12 @@ See also the [http://www.neuroinformatics2009.org/courses-and-satellite-meetings
 |[[#Welcome and Introduction|Welcome]] and [[#Overview of installing and using Fiji|Installing Fiji]]
 |[[#Measurements|Measurements]] and [[#Colocalization|Colocalization]]
 |[[#Segmentation|Segmentation]]
-|[[#Beyond 3D|Beyond 3D]]
+|[[#Registration|Registration]]
 |-
 |Session 2: 11:30 - 12:30
 |[[#Image Processing fundamentals|Image Processing Fundamentals]]
 |[[#Fiji scripting: Python|Fiji scripting: Python]]
-|[[#Registration|Registration]]
+|[[#Beyond 3D|Beyond 3D]]
 |
 |-
 |Session 3: 14:00 - 15:30
@@ -91,11 +91,11 @@ Plugins: Simple Neurite Tracer, Segmentation Editor, VIB protocol, TrakEM2, Leve
 
 Lead instructor: [[Verena Kaynig]]
 
-=== Registration ===
+=== Beyond 3D ===
 
-Image registration: Virtual Stack Slice Registration, TrakEM2, bUnwarpJ
+Intensity vs time analysis
 
-Lead instructor: [[Ignacio Arganda]]
+Lead instructor: [[JeanYvesTinevez|Jean-Yves Tinevez]]
 
 === Fiji scripting: advanced Python ===
 
@@ -111,11 +111,11 @@ Lead instructors: [[JeanYvesTinevez|Jean-Yves Tinevez]]
 
 Lead instructor: [[Albert Cardona]]
 
-=== Beyond 3D ===
+=== Registration ===
 
-Intensity vs time analysis
+Image registration: Virtual Stack Slice Registration, TrakEM2, bUnwarpJ
 
-Lead instructor: [[JeanYvesTinevez|Jean-Yves Tinevez]]
+Lead instructor: [[Ignacio Arganda]]
 
 === Writing Fiji plugins in Java ===
 
