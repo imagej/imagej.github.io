@@ -66,17 +66,23 @@ Image analysis: measurements
 
 Lead instructor: [[Dan White]]
 
+=== Colocalization ===
+
+Image analysis: Colocalization
+
+Lead instructor: [[Dan White]]
+
 === Fiji scripting: Python ===
 
 Introduction to Fiji scripting in Python
 
 Lead instructor: [[Johannes Schindelin]]
 
-=== Colocalization ===
+=== TrakEM2 ===
 
-Image analysis: Colocalization
+[[TrakEM2]]: image registration and manual segmentation.
 
-Lead instructor: [[Dan White]]
+Lead instructor: [[Albert Cardona]]
 
 == Friday ==
 
@@ -103,25 +109,19 @@ Advanced Fiji scripting in Python
 
 Lead instructors: [[JeanYvesTinevez|Jean-Yves Tinevez]]
 
+=== Writing Fiji plugins in Java ===
+
+Introduction to Fiji programming in Java (this will be an add-on to the [[#Fiji scripting: advanced Python|advanced scripting]]).
+
+Lead instructor: [[Johannes Schindelin]]
+
 == Saturday ==
-
-=== TrakEM2 ===
-
-[[TrakEM2]]: image registration and manual segmentation.
-
-Lead instructor: [[Albert Cardona]]
 
 === Registration ===
 
 Image registration: Virtual Stack Slice Registration, TrakEM2, bUnwarpJ
 
 Lead instructor: [[Ignacio Arganda]]
-
-=== Writing Fiji plugins in Java ===
-
-Introduction to Fiji programming in Java
-
-Lead instructor: [[Johannes Schindelin]]
 
 == Work sessions ==
 
