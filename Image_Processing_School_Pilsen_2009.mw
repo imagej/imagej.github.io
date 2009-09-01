@@ -111,16 +111,11 @@ Lead instructors: [[JeanYvesTinevez|Jean-Yves Tinevez]]
 
 Lead instructor: [[Albert Cardona]]
 
-=== Segmentation ===
+=== Beyond 3D ===
 
-Introduction to image segmentation.
+Intensity vs time analysis
 
-*Pixel-based and vector-based.
-*Manual and semi-automatic.
-
-Plugins: Simple Neurite Tracer, Segmentation Editor, VIB protocol, TrakEM2, Level Sets.
-
-Lead instructor: [[Verena Kaynig]]
+Lead instructor: [[JeanYvesTinevez|Jean-Yves Tinevez]]
 
 === Writing Fiji plugins in Java ===
 
