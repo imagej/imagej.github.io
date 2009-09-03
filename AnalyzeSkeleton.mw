@@ -57,8 +57,8 @@ In the separate "Log" window, some other values are displayed for every skeleton
 
 == Visualization ==
 {|
-|style="vertical-align:top" |[[Image:Movie_skeleton_rendering.gif|thumb|400px|3D skeleton of bat cochlea rendered in the viewer after voxel classification]]
-|style="vertical-align:top" |[[Image:Movie_bat_skel.gif|thumb|400px|bat cochlea rendered in the viewer with the corresponding skeleton]]
+|style="vertical-align:top" |[[Image:Movie_skeleton_rendering.gif|thumb|350px|3D skeleton of bat cochlea volume rendered in the viewer after voxel classification]]
+|style="vertical-align:top" |[[Image:Movie_bat_skel.gif|thumb|350px|Bat cochlea volume rendered in the viewer with its corresponding classified skeleton]]
 |}
 
 == Changelog ==
