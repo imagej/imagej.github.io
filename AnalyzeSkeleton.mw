@@ -43,7 +43,7 @@ The cycle detection is based on a classical [http://en.wikipedia.org/wiki/Depth-
 
 == Table of results and Log ==
 
-After classification, a “Results” window is displayed showing the number of voxels of every type, branches, junctions (with arbitrary number of projecting branches) and triple points (junctions with exactly 3 branches) and the average and maximum length of branches for every skeleton in the image. AnalyzeSkeleton is able to process up to 2¹⁵-1 (Short.MAX_VALUE) skeletons in one single image. In a separate (log) window, some other values are displayed for every skeleton, with the coordinates and Euclidean distance between the extreme points of the largest branch in every skeleton.
+After classification, a “Results” window is displayed showing the number of voxels of every type, branches, junctions (with arbitrary number of projecting branches) and triple points (junctions with exactly 3 branches) and the average and maximum length of branches for every skeleton in the image. AnalyzeSkeleton is able to process up to 2¹⁵-1 skeletons in one single image (only limited by [http://java.sun.com/javase/6/docs/api/ java Short.MAX_VALUE]). In a separate (log) window, some other values are displayed for every skeleton, with the coordinates and Euclidean distance between the extreme points of the largest branch in every skeleton.
 
 == Changelog ==
 All changes can be seen in the [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/AnalyzeSkeleton_;h=97476cf88da4d5dd5a6ac6cdf9a5176c221378c6;hb=HEAD Fiji source repository].
