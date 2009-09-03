@@ -39,6 +39,11 @@ After classification, a “Results” window is displayed showing the number of 
 
 Notice here that the number of junction voxels is different from the number of junctions since some junction voxels can be neighbors of each other.
 
+== Changelog ==
+'''2008/11/19''': Update: changed skeleton pixel values to 255.
+
+'''2008/11/15''': First release.
+
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
