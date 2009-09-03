@@ -33,6 +33,8 @@ Let's see an example of this classification:
 
 End-point voxels are displayed in '''blue''', slab voxels in '''orange''' and junction voxels in '''purple'''.
 
+== Table of results and Log ==
+
 After classification, a “Results” window is displayed showing the number of voxels of every type, branches, junctions (with arbitrary number of projecting branches) and triple points (junctions with exactly 3 branches) and the average and maximum length of branches for every skeleton in the image. AnalyzeSkeleton is able to process up to 2¹⁵-1 (Short.MAX_VALUE) skeletons in one single image. In a separate (log) window, some other values are displayed for every skeleton, with the coordinates and Euclidean distance between the extreme points of the largest branch in every skeleton.
 
 Notice here that the number of junction voxels is different from the number of junctions since some junction voxels can be neighbors of each other.
