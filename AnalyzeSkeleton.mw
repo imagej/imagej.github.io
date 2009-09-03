@@ -40,9 +40,25 @@ After classification, a “Results” window is displayed showing the number of 
 Notice here that the number of junction voxels is different from the number of junctions since some junction voxels can be neighbors of each other.
 
 == Changelog ==
-'''2008/11/19''': Update: changed skeleton pixel values to 255.
+All changes can be seen in the Fiji source repository.
 
-'''2008/11/15''': First release.
+'''2009/09/02''': Added capability to detect and prune skeleton cycles.
+
+'''2009/08/10''': Fixed small bug to treat the special case of one single circular skeleton.
+
+'''2009/08/06''': Fixed 2 bugs: calculation of branches between junctions and number of slab voxels in a circular tree.
+
+'''2009/08/05''': Fixed bugs that slowed down the calculation of the number of actual junctions.
+
+'''2009/06/19''': Fixed bugs in some calculations, increased the number of skeletons from 255 to 2¹⁵-1, and added new (previously untreated) cases.
+
+'''2009/04/07''': Added different calculations for every skeleton in the image and some extra information in the log window.
+
+'''2009/03/05''': Added maximum branch length calculation.
+
+'''2008/11/19''': Added triple points calculation and fixed bug to avoid modifying the original image and preserve its calibration in the output image.
+
+'''2008/11/16''': First release.
 
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
