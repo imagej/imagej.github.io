@@ -56,6 +56,7 @@ After classification, a “Results” window is displayed showing for each skele
 In the separate "Log" window, some other values are displayed for every skeleton, with the coordinates and Euclidean distance between the extreme points of the largest branch in every skeleton. This values have proven to be a good indicator of the [http://en.wikipedia.org/wiki/Tortuosity tortuosity] of the 3D object.
 
 == Visualization ==
+[[Image:Movie_skeleton_rendering.gif|thumb|350pix|3D skeleton of bat cochlea rendered in the viewer]]
 
 == Changelog ==
 All changes can be seen in the [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/AnalyzeSkeleton_;h=97476cf88da4d5dd5a6ac6cdf9a5176c221378c6;hb=HEAD Fiji source repository].
