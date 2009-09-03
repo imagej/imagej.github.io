@@ -3,13 +3,12 @@
 | name                   = AnalyzeSkeleton
 | author                 = [http://bioweb.cnb.csic.es/~iarganda/index_EN.html Ignacio Arganda-Carreras]
 | maintainer             = Ignacio Arganda-Carreras ([mailto:ignacio.arganda@gmail.com ignacio.arganda@gmail.com])
-| filename               = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=:plugin:analysis:analyzeskeleton:analyzeskeleton_.jar AnalyzeSkeleton_.jar] 
+| filename               = [http://bioweb.cnb.csic.es/~iarganda/AnalyzeSkeleton/downloads/AnalyzeSkeleton_.jar AnalyzeSkeleton_.jar] 
 | source                 = Included in the jar
 | released               = November 14th, 2008
 | latest version         = September 2nd, 2009
 | status                 = active
 | category               = [[:Category:Skeleton]]
-| website                = [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start AnalyzeSkeleton at ImageJ wiki]
 }}
 
 Analysis of 2D and 3D skeleton images. For the ImageJ plugin, visit [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start AnalyzeSkeleton at ImageJ wiki].
