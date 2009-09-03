@@ -46,7 +46,7 @@ The only known limitation of this approach is shown in the presence of nested lo
 == Table of results and Log ==
 [[Image:Skeleton-Log.png|thumb|300px|Example of AnalyzeSkeleton Log window]]
 After classification, a “Results” window is displayed showing for each skeleton in the image:
-* The number of branches (slab segments, usually connecting end-points, end-points and junctions or junctions and junctions).  
+* The number of branches (slab segments, usually connecting end-points, end-points and junctions or junctions and junctions). The special case of a circular skeleton is also contemplated here.
 * The number of voxels of every type: end-point, slab and junction voxels.
 * The number of actual junctions (merging neighbor junction voxels) with an arbitrary number of projecting branches.
 * The number of triple points (junctions with exactly 3 branches).
