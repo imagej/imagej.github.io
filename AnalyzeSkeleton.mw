@@ -56,9 +56,11 @@ After classification, a “Results” window is displayed showing for each skele
 In the separate "Log" window, some other values are displayed for every skeleton, with the coordinates and Euclidean distance between the extreme points of the largest branch in every skeleton. This values have proven to be a good indicator of the [http://en.wikipedia.org/wiki/Tortuosity tortuosity] of the 3D object.
 
 == Visualization ==
+Using the [[3D_Viewer]] libraries we can easily display the results of both, the skeletonization and the analysis:
+
 {|
-|style="vertical-align:top" |[[Image:Movie_skeleton_rendering.gif|thumb|350px|3D skeleton of bat cochlea volume rendered in the viewer after voxel classification]]
-|style="vertical-align:top" |[[Image:Movie_bat_skel.gif|thumb|350px|Bat cochlea volume rendered in the viewer with its corresponding classified skeleton]]
+|style="vertical-align:top" |[[Image:Movie_skeleton_rendering.gif|thumb|300px|3D skeleton of bat cochlea volume rendered in the viewer after voxel classification]]
+|style="vertical-align:top" |[[Image:Movie_bat_skel.gif|thumb|300px|Bat cochlea volume rendered in the viewer with its corresponding classified skeleton]]
 |}
 
 == Changelog ==
