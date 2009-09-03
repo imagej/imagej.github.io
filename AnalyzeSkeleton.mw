@@ -1,12 +1,12 @@
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = AnalyzeSkeleton
-| author                 = [http://arantxa.ii.uam.es/~iarganda/index_EN.html Ignacio Arganda-Carreras]
-| maintainer             = Ignacio Arganda-Carreras ([mailto:ignacio.arganda@uam.es ignacio.arganda@uam.es])
+| author                 = [http://bioweb.cnb.csic.es/~iarganda/index_EN.html Ignacio Arganda-Carreras]
+| maintainer             = Ignacio Arganda-Carreras ([mailto:ignacio.arganda@gmail.com ignacio.arganda@gmail.com])
 | filename               = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=:plugin:analysis:analyzeskeleton:analyzeskeleton_.jar AnalyzeSkeleton_.jar] 
 | source                 = Included in the jar
 | released               = November 14th, 2008
-| latest version         = November 19th, 2008
+| latest version         = September 2nd, 2009
 | status                 = active
 | category               = [[:Category:Skeleton]]
 | website                = [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start AnalyzeSkeleton at ImageJ wiki]
@@ -15,7 +15,7 @@
 Analysis of 2D and 3D skeleton images. For the ImageJ plugin, visit [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start AnalyzeSkeleton at ImageJ wiki].
 
 {|
-|style="vertical-align:top" |[[Image:Skeleton_analysis_example.png|thumb|750px|Example of AnalyzeSkeleton performance]]
+|style="vertical-align:top" |[[Image:Analyzeskeleton.png|thumb|600px|Example of AnalyzeSkeleton performance]]
 |}
 
 == General Description ==
