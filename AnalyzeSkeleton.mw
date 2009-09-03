@@ -30,6 +30,7 @@ The voxels are classified into three different categories depending on their 26 
 End-point voxels are displayed in '''blue''', slab voxels in '''orange''' and junction voxels in '''purple'''.
 
 == Loop detection and pruning ==
+[[Image:Cycle_detection.png|thumb|294px|Example of cycle detection and pruning]]
 Since the 2009/09/02 version of the code, the possible cycles or loops in the skeleton can be detected and pruned previous to the analysis. In this sense, the initial plugin dialog offers 4 options:
 * '''none''': no cycle detection nor pruning is performed.
 * '''shortest branch''': the shortest branch among the loop branches will be cut in its middle point.
