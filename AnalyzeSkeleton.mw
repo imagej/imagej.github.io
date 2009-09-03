@@ -19,7 +19,7 @@ Analysis of 2D and 3D skeleton images. For the ImageJ plugin, visit [http://imag
 |}
 
 == General Description ==
-This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple points and branches and measures their average length. The tags are shown in a new window displaying every tag in a different color. You can find it under ''Plugins>Skeleton>Analyze Skeleton (2D/3D)''. See [[Skeletonize3D]] for an example of how to produce skeleton images.
+This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under ''Plugins>Skeleton>Analyze Skeleton (2D/3D)''. See [[Skeletonize3D]] for an example of how to produce skeleton images.
 
 The voxels are classified into three different categories depending on their 26 neighbors:
 * '''End-point''' voxels: if the have less than 2 neighbors.
@@ -33,7 +33,7 @@ Let's see an example of this classification:
 
 End-point voxels are displayed in '''blue''', slab voxels in '''orange''' and junction voxels in '''purple'''.
 
-After classification, a "Results" window is displayed showing the number of voxels of every type, branches, junctions and triple points (junctions with exactly 3 branches), and the average length of branches.
+After classification, a “Results” window is displayed showing the number of voxels of every type, branches, junctions (with arbitrary number of projecting branches) and triple points (junctions with exactly 3 branches) and the average and maximum length of branches for every skeleton in the image. AnalyzeSkeleton is able to process up to 2¹⁵-1 (Short.MAX_VALUE) skeletons in one single image. In a separate (log) window, some other values are displayed for every skeleton, with the coordinates and Euclidean distance between the extreme points of the largest branch in every skeleton.
 
 Notice here that the number of junction voxels is different from the number of junctions since some junction voxels can be neighbors of each other.
 
