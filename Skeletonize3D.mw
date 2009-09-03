@@ -24,7 +24,7 @@ Skeletonize3D is a Fiji and ImageJ plugin that performs the [http://en.wikipedia
 
 == Related work ==
 This work is an implementation by Ignacio Arganda-Carreras of the '''3D thinning algorithm''' from Lee et al. [http://portal.acm.org/citation.cfm?id=202862.202867 ''"Building skeleton models via 3-D medial surface/axis thinning algorithms. Computer Vision, Graphics, and Image Processing, 56(6):462–478, 1994."''] Based on the ITK version from Hanno Homann: [http://hdl.handle.net/1926/1292 http://hdl.handle.net/1926/1292]
-It works with 8-bit images and stacks. It expects the images to be binary. If not, all pixel values above 0 will be considered white. The resulting skeleton image will have pixel value 255 at the skeleton and 0 at the background (black) pixels.
+It works with 8-bit images and stacks. It expects the images to be binary. If not, all pixel values above 0 will be considered white. The resulting skeleton image will have '''pixel value 255 at the skeleton and 0 at the background''' (black) pixels.
 
 As Hanno Homman explains in his paper, […] ''binary thinning is used for ﬁnding the centerlines (”skeleton”) of objects in the input image. The general idea is to erode the object’s surface iteratively until only the skeleton remains. Erosion has to be performed symmetrically in order to the guarantee medial position of the skeleton lines and such that the connectedness of the object is preserved. Care has to be taken in order not to create holes or cavities in the object.''
 
