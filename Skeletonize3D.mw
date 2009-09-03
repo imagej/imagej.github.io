@@ -32,6 +32,11 @@ As Hanno Homman explains in his paper, […] ''binary thinning is used for ﬁnd
 
 ''In 3D there are 2²⁶ = 67,108,864 possible binary combinations of object and background voxels in a 26-neighborhood, which cannot be completely captured by kernel-based ﬁlters. Lee et al. have demonstrated in their work that their solution, based on a decision tree, can handle all these cases correctly and ﬁnd all deletable surface points at each iteration. Thus their algorithm allows for a very fast iterative erosion process'' […].
 
+== Changelog ==
+'''2008/11/19''': Update: changed skeleton pixel values to 255.
+
+'''2008/11/15''': First release.
+
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
