@@ -64,6 +64,11 @@ Using the [[3D_Viewer]] libraries we can easily display the results of both, the
 |style="vertical-align:top" |[[Image:Movie_bat_skel.gif|thumb|300px|Bat cochlea volume rendered in the viewer with its corresponding classified skeleton]]
 |}
 
+== API documentation ==
+The latest documentation of the code can be found here:
+
+[http://bioweb.cnb.csic.es/~iarganda/AnalyzeSkeleton/doc/ http://bioweb.cnb.csic.es/~iarganda/AnalyzeSkeleton/doc/]
+
 == Changelog ==
 All changes can be seen in the [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/AnalyzeSkeleton_;h=97476cf88da4d5dd5a6ac6cdf9a5176c221378c6;hb=HEAD Fiji source repository].
 
