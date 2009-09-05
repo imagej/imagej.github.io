@@ -113,9 +113,9 @@ Lead instructor: [[Johannes Schindelin]]
 
 === Registration ===
 
-Image registration: Virtual Stack Slice Registration, TrakEM2, bUnwarpJ
+Image registration: rigid, affine, elastic, maximal warping... ([[Register_Virtual_Stack_Slices]], [[TrakEM2]], [[BUnwarpJ]])
 
-Lead instructor: [[Ignacio Arganda]]
+Lead instructor: [http://bioweb.cnb.csic.es/~iarganda/index_EN.html Ignacio Arganda-Carreras]
 
 == Work sessions ==
 
