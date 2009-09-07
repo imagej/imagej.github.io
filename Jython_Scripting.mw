@@ -52,7 +52,7 @@ a is NaN!
 </source>
 
 * <u>Some existing python modules can't be imported in jython.</u>
-This is for instance the case of the module ''numpy'', which would have been really convenient for analysing data ad results.
+This is for instance the case of the module ''numpy'', which would have been really convenient for analysing data and results.
 
 But see these java numerical libraries: http://math.nist.gov/javanumerics/#libraries , of which:
 
