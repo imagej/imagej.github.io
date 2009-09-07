@@ -53,7 +53,7 @@ The following target types are available:
 ;''.class'' targets:
 :Targets whose name end in ''.class'' compile a single ''.java'' file (the last prerequisite is used to define that), and copies the resulting ''.class'' file (and the other generated classes that are used by this class) to the given destination.
 
-;''.cxx'' and '.c' targets:
+;''.cxx'' and ''.c'' targets:
 :If the last prerequisite ends in ''.cxx'' or ''.c'', the GNU C compiler is called to compile the prerequisites.
 
 ;"SubBuild" targets:
