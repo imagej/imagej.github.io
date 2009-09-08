@@ -59,7 +59,8 @@ Browse the [[:Category:News|news archive]].
 * Label-based 3D alignment of image stacks.
 ;[http://repo.or.cz/w/imageja.git/ ImageJA]
 * The core of Fiji.
-
+;[[:Category:Skeleton|Skeletons and tree analysis]]
+* [[Skeletonize3D|Skeletonize]] and [[AnalyzeSkeleton|Analyze skeletons]]
 
 == [[Downloads]] ==
 
