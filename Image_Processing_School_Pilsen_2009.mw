@@ -11,7 +11,7 @@ See also the [http://www.neuroinformatics2009.org/courses-and-satellite-meetings
 |-
 |Session 1: 9:30 - 11:00
 |[[#Welcome and Introduction|Welcome]] and [[#Overview of installing and using Fiji|Installing Fiji]]
-|[[#Measurements|Measurements]]
+|[[#Quantitative Imaging|Quantitative Imaging]]
 |[[#Segmentation|Segmentation]]
 |[[#Registration|Registration]]
 |-
@@ -60,15 +60,15 @@ Lead instructor: [[Johannes Schindelin]]
 
 == Thursday ==
 
-=== Measurements ===
+=== Quantitative Imaging ===
 
-Image analysis: measurements
+Quantitative image acquisition and analysis: Spectroscopy not photography, simple measurements. 
 
 Lead instructor: [[Dan White]]
 
 === Colocalization ===
 
-Image analysis: Colocalization
+Quantitative Image analysis: What you need to know about Colocalization Analysis
 
 Lead instructor: [[Dan White]]
 
