@@ -262,4 +262,13 @@ finally:
 </source>
 
 
+=== Obtain/View histogram from an image ===
+
+The easiest way is to grab an image and call an ImageJ command to show its histogram:
+
+<source lang="python">
+imp = IJ.openImage("http://rsb.info.nih.gov/ij/images/blobs.gif")
+IJ.run(imp, "Histogram", "")
+</source>
+
 [[Category:Scripting]]
