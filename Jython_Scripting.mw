@@ -320,5 +320,18 @@ print "mean:", stats.mean, "median:", stats.median, "area:", stats.area
 
 
 
+To display the histogram window ourselves, we may use the [http://rsb.info.nih.gov/ij/developer/api/ij/gui/HistogramWindow.html HistogramWindow] class:
+
+<source lang="python">
+hwin = HistogramWindow(imp)
+</source>
+
+... of which we may grab the image (the plot itself) and save it:
+
+<source lang="python">
+plotimage = hwin.getImagePlus()
+IJ.save(plotimage, "/path/to/our/folder/plot.tif")
+</source>
+
 
 [[Category:Scripting]]
