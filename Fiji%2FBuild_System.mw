@@ -87,6 +87,11 @@ Variables can be referenced in all parts of a rule.  Variables can be overridden
  ONE(ij.jar)=2
  ij.jar <- bla$ONE.java
 
+This is especially useful if you need to set a plugin specific CLASSPATH:
+
+ CLASSPATH(plugins/my_plugin.jar)=plugins/some_other_plugin.jar
+
+
 === Predefined variables ===
 
 TODO
