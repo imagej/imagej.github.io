@@ -210,4 +210,56 @@ If you had called <i>show()</i> on the image at any early stage, just update the
 imp.updateAndDraw()
 </source>
 
+
+== Reading data from a text file ==
+
+A data file containing rows with 4 columns:
+
+ ...
+ 399 23 30 10.12
+ 400 23 30 12.34
+ ...
+
+... where the columns are X, Y, Z and value, for every pixel in the image.
+We assume we know the width and height of the image.
+From this sort of data, we create an image, read out all lines and parse the numbers, a
+
+<source lang="python">
+width = 512
+height = 512
+stack = ImageStack(width, height)
+
+file = open("/home/albert/Desktop/data.txt", "r")
+
+try:
+  fp = FloatProcessor(width, height)
+  pix = fp.getPixels()
+  cz = 0
+  # Add as the first slice:
+  stack.addSlice(str(cz), fp)
+  # Iterate over all lines in the text file:
+  for line in file.readlines():
+    x, y, z, value = line.split(" ")
+    x = int(x)
+    y = int(y)
+    z = int(z)
+    value = float(value)
+    # Advance one slice if the Z changed:
+    if z != cz:
+      # Next slice
+      fp = FloatProcessor(width, height)
+      pix = fp.getPixels()
+      stack.addSlice(str(cz), fp)
+      cz += 1
+    # Assign the value:
+    pix[y * width + x] = value
+  # Prepare and show a new image:  
+  imp = ImagePlus("parsed", stack)
+  imp.show()
+# Ensure closing the file handle even if an error is thrown:
+finally:
+  file.close()
+</source>
+
+
 [[Category:Scripting]]
