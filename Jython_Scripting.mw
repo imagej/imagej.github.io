@@ -201,7 +201,10 @@ imp.show()
 The EDM plugin that contains the watershed could have been indirectly applied to the currently active image, which is <i>not</i> recommended:
 
 <source lang="python">
-IJ.run("Watershed")
+imp = IJ.getImage()  # the current image
+imp.getProcessor().setThreshold(174, 174, ImageProcessor.NO_LUT_UPDATE)
+IJ.run(imp, "Convert to Mask", "")
+IJ.run(imp, "Watershed", "")
 </source>
 
 If you had called <i>show()</i> on the image at any early stage, just update the screen with:
@@ -209,7 +212,6 @@ If you had called <i>show()</i> on the image at any early stage, just update the
 <source lang="python">
 imp.updateAndDraw()
 </source>
-
 
 === Creating an image from a text file ===
 
