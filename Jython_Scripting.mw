@@ -211,7 +211,7 @@ imp.updateAndDraw()
 </source>
 
 
-== Reading data from a text file ==
+=== Creating an image from a text file ===
 
 A data file containing rows with 4 columns:
 
