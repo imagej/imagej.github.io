@@ -179,20 +179,22 @@ imp.show()
 === Running a watershed plugin on an image ===
 
 <source lang="python">
-# Obtain an image
-imp = IJ.openImage("http://rsb.info.nih.gov/ij/images/AuPbSn40.jpg")
+# 1 - Obtain an image
+imp = IJ.openImage("http://rsb.info.nih.gov/ij/images/blobs.gif")
 ip = imp.getProcessor()
-  
-# apply a threshold: only zeros and ones
-ip.setThreshold(0, 74)
-Thresholder().run("mask")
-ip.invert()
- 
-# apply watershed
-edm = EDM()
-edm.setup("watershed", imp)
-edm.run(ip)
-  
+
+# 2 - Apply a threshold: only zeros and ones
+# Set the desired threshold range: keep from 0 to 74
+ip.setThreshold(147, 147, ImageProcessor.NO_LUT_UPDATE)
+# Call the Thresholder to convert the image to a mask
+IJ.run(imp, "Convert to Mask", "")
+
+# 3 - Apply watershed
+# Create and run new EDM object, which is an Euclidean Distance Map (EDM)
+# and run the watershed on the ImageProcessor:
+EDM().toWatershed(ip)
+
+# 4 - Show the watersheded image:
 imp.show()
 </source>
 
