@@ -334,4 +334,99 @@ IJ.save(plotimage, "/path/to/our/folder/plot.tif")
 </source>
 
 
+=== Removing bleeding from one channel to another ===
+
+The technique to use is to divide one channel by the other: the channel to denoise divided by the channel that bled through.
+
+The relatively high-level way to do it is to split the channels and call the ImageCalculator with a "Divide" argument:
+
+<source lang="python">
+# 1 - Obtain an RGB image stack
+imp = WindowManager.getCurrentImage()
+if imp.getType() != ImagePlus.COLOR_RGB:
+  IJ.showMessage("The active image is not RGB!")
+  raise RuntimeException("The active image is not RGB!")
+
+if 1 == imp.getNSlices():
+  IJ.showMessage("Not a stack!")
+  raise RuntimeException("Not a stack!")
+
+# 2 - Split channels
+red_stack = ImageStack(imp.width, imp.height)
+green_stack = ImageStack(imp.width, imp.height)
+
+# 3 - Iterate all slices -- notice slices are 1<=i<=size
+for i in range(1, imp.getNSlices()+1):
+  slice = stack.getProcessor(i)
+  red_stack.addSlice(str(i), slice.toFloat(0, None))
+  green_stack.addSlice(str(i), slice.toFloat(1, None))
+
+# 4 - Apply "divide" via ImageCalculator to the red_stack, which is a new 32-bit stack
+# Don't use the parameters "create" or "float" or "32" in the parameters string
+# of the calc.calculate call--then the result of the operation would be
+# in a new stack that opens beyond our control. Without them, results are
+# applied to the red_stack
+calc = ImageCalculator()
+calc.calculate("Divide stack", ImagePlus("red", red_stack), ImagePlus("green", green_stack))
+
+# 5 - Compose a new color stack
+new_stack = ImageStack(imp.width, imp.height)
+for i in range(1, imp.getNSlices()+1):
+  cp = stack.getProcessor(i).duplicate()
+  cp.setPixels(0, red_stack.getProcessor(i))
+  new_stack.addSlice(stack.getSliceLabel(i), cp)
+
+# 6 - Show the new image
+ImagePlus("Normalized " + imp.title, new_stack).show()
+</source>
+
+
+Alternatively and as an example of direct pixel manipulation, we'll iterate all slices of the image stack, divide the red channel by the green channel, and compose a new stack:
+
+<source lang="python">
+# 1 - Obtain an RGB image stack
+imp = WindowManager.getCurrentImage()
+if imp.getType() != ImagePlus.COLOR_RGB:
+  IJ.showMessage("The active image is not RGB!")
+  raise RuntimeException("The active image is not RGB!")
+
+if 1 == imp.getNSlices():
+  IJ.showMessage("Not a stack!")
+  raise RuntimeException("Not a stack!")
+
+stack = imp.getStack()
+
+# 2 - Create a new stack to store the result
+new_stack = ImageStack(imp.width, imp.height)
+
+# 3 - Iterate all slices -- notice slices are 1<=i<=size
+for i in range(1, imp.getNSlices()+1):
+  # Get the slice i
+  slice = stack.getProcessor(i)
+  # Get two new FloatProcessor with the green and red channel data in them
+  red = slice.toFloat(0, None)
+  green = slice.toFloat(1, None)
+  pix_red = red.getPixels()
+  pix_green = green.getPixels()
+  # Create a new FloatProcessor for the normalized result
+  new_red = FloatProcessor(imp.width, imp.height)
+  pix_new_red = new_red.getPixels()
+  # Iterate and set all normalized pixels
+  for k in range(len(pix_red)):
+    if 0 != pix_green[k]:
+      pix_new_red[k] = pix_red[k] / pix_green[k]
+  # Create a ColorProcessor that has the normalized red and the same green and blue channels
+  cp = slice.duplicate()
+  cp.setPixels(0, new_red)   # at channel 0, the red
+  # Store the normalized slice in the new stack, copying the same slice label
+  new_stack.addSlice(stack.getSliceLabel(i), cp)
+
+# 4 - Show the normalized stack
+new_imp = ImagePlus("Normalized " + imp.title, new_stack)
+new_imp.show()
+</source>
+
+Notice that this second approach is much slower: accessing every pixel from jython has a high cost. If you would like to do very fast pixel-level manipulations, use java or [[Clojure Scripting|Clojure]].
+
+
 [[Category:Scripting]]
