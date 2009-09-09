@@ -262,7 +262,7 @@ finally:
 </source>
 
 
-=== Obtain/View histogram from an image ===
+=== Obtain/View histogram and measurements from an image ===
 
 The easiest way is to grab an image and call an ImageJ command to show its histogram:
 
@@ -270,5 +270,39 @@ The easiest way is to grab an image and call an ImageJ command to show its histo
 imp = IJ.openImage("http://rsb.info.nih.gov/ij/images/blobs.gif")
 IJ.run(imp, "Histogram", "")
 </source>
+
+How ImageJ does it, internally, has to do with the [http://rsb.info.nih.gov/ij/developer/api/ij/process/ImageStatistics.html ImageStatisics] class:
+
+<source lang="python">
+stats = imp.getStatistics()
+print stats.histogram
+</source>
+
+ array('i',[0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 0, 304, 0, 0, 0, 0, 0, 0, 0, 1209, 0, 0, 0, 0, 0, 0, 0, 3511, 0, 0, 0, 0, 0, 0, 0, 7731, 0, 0, 0, 0, 0, 0, 0, 10396, 0, 0, 0, 0, 0, 0, 0, 7456, 0, 0, 0, 0, 0, 0, 0, 3829, 0, 0, 0, 0, 0, 0, 0, 1992, 0, 0, 0, 0, 0, 0, 0, 1394, 0, 0, 0, 0, 0, 0, 0, 1158, 0, 0, 0, 0, 0, 0, 0, 1022, 0, 0, 0, 0, 0, 0, 0, 984, 0, 0, 0, 0, 0, 0, 0, 902, 0, 0, 0, 0, 0, 0, 0, 840, 0, 0, 0, 0, 0, 0, 0, 830, 0, 0, 0, 0, 0, 0, 0, 926, 0, 0, 0, 0, 0, 0, 0, 835, 0, 0, 0, 0, 0, 0, 0, 901, 0, 0, 0, 0, 0, 0, 0, 1025, 0, 0, 0, 0, 0, 0, 0, 1180, 0, 0, 0, 0, 0, 0, 0, 1209, 0, 0, 0, 0, 0, 0, 0, 1614, 0, 0, 0, 0, 0, 0, 0, 1609, 0, 0, 0, 0, 0, 0, 0, 2220, 0, 0, 0, 0, 0, 0, 0, 2037, 0, 0, 0, 0, 0, 0, 0, 2373, 0, 0, 0, 0, 0, 0, 0, 1568, 0, 0, 0, 0, 0, 0, 0, 1778, 0, 0, 0, 0, 0, 0, 0, 774, 0, 0, 0, 0, 0, 0, 0, 1364, 0, 0, 0, 0, 0, 0, 0])
+
+
+To grab other parameters, just specify them by bitwise-or composition:
+
+<source lang="python">
+stats = imp.getStatistics(Measurements.MEAN | Measurements.MEDIAN | Measurements.AREA)
+print "mean:", stats.mean, "median:", stats.median, "area:", stats.area
+</source>
+
+ mean: 103.26857775590551 median: 64.0 area: 65024.
+
+
+If we set a ROI to the image, then we are measuring only for that part. Here we set an oval roi of radius 50 pixels, centered:
+<source lang="python">
+radius = 50
+roi = OvalRoi(imp.width/2 - radius/2, imp.height/2 -radius/2, radius, radius)
+imp.setRoi(roi)
+stats = imp.getStatistics(Measurements.MEAN | Measurements.MEDIAN | Measurements.AREA)
+print "mean:", stats.mean, "median:", stats.median, "area:", stats.area
+</source>
+
+ mean: 104.96356275303644 median: 64.0 area: 1976.0
+
+
+
 
 [[Category:Scripting]]
