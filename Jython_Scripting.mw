@@ -222,7 +222,7 @@ A data file containing rows with 4 columns:
 
 ... where the columns are X, Y, Z and value, for every pixel in the image.
 We assume we know the width and height of the image.
-From this sort of data, we create an image, read out all lines and parse the numbers, a
+From this sort of data, we create an image, read out all lines and parse the numbers:
 
 <source lang="python">
 width = 512
