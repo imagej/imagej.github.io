@@ -68,6 +68,7 @@ ystart = 50
 
 # Fetch the t1-head stack from URL
 source_imp = IJ.openImage('http://rsb.info.nih.gov/ij/images/t1-head.zip')
+source_imp.show()
 
 # Select middle slice (does not matter)
 source_imp.setSlice(60)
@@ -100,8 +101,6 @@ for dx in range(170):
     
 IJ.showStatus('Done')
 </source>
-
-
 
 == Example ==
 
