@@ -180,7 +180,7 @@ imp.show()
 
 <source lang="python">
 # Obtain an image
-imp = IJ.openImage("http://rsb.info.nih.gov/ij/images/bridge.tif")
+imp = IJ.openImage("http://rsb.info.nih.gov/ij/images/AuPbSn40.jpg")
 ip = imp.getProcessor()
   
 # apply a threshold: only zeros and ones
