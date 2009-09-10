@@ -50,7 +50,7 @@ There is another (badly behaved) sample data file here which we will use later: 
 '''[[Colocalization Threshold]] plugin:''' 
 
 <p>
-This plugin performs several functions for you in one go. With the "green" and "red" stacks of the [http://pacific.mpi-cbg.de/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif] dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot", and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do. 
+This plugin performs several functions for you in one go. With the "green" and "red" stacks of the [http://pacific.mpi-cbg.de/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif] dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [[#Why_scatter_plots.3F|Why scatter plots?]], and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do. 
 </p>
 
 <p>
@@ -193,8 +193,15 @@ Again, as for the [[Colocalization Threshold]] plugin, using an ROI here may wel
 </ol>
 
 
+== Why scatter plots? ==
 
+Sometimes composite images of red and green channels are considered enough to demonstrate colocalization. The ramifications with regards to color-blind people aside, there is another very good reason to require scatter plots: the perception of human eyes can be fooled easily.  Just have a look at this image:
 
+[[Image:Spirals.jpg|300px|center]]
+
+Most people might think that the prominent spirals are in shades of green and blue, but they actually have <b>exactly the same color</b>!
+
+You can verify this yourself by getting the macro from [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob_plain;f=macros/spirals.txt http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob_plain;f=macros/spirals.txt] via Fiji's ''File>Import>URL...''.
 
 [[Category:Tutorials]]
 [[Category:Color processing]]
