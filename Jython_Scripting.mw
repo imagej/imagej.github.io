@@ -500,5 +500,15 @@ new_imp.show()
 
 Notice that this second approach is much slower: accessing every pixel from jython has a high cost. If you would like to do very fast pixel-level manipulations, use java or [[Clojure Scripting|Clojure]].
 
+== Tips and Tricks ==
+
+=== Getting a list of all members in one package ===
+
+You can use the Python function ''dir(<package>)'' to see the contents of a package:
+
+<source lang="python">
+import ij
+print dir(ij)
+</source>
 
 [[Category:Scripting]]
