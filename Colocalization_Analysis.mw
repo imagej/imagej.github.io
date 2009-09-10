@@ -50,7 +50,7 @@ There is another (badly behaved) sample data file here which we will use later: 
 '''[[Colocalization Threshold]] plugin:''' 
 
 <p>
-This plugin performs several functions for you in one go. With the "green" and "red" stacks of the [http://pacific.mpi-cbg.de/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif] dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [[#Why_scatter_plots.3F|Why scatter plots?]], and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do. 
+This plugin performs several functions for you in one go. With the "green" and "red" stacks of the [http://pacific.mpi-cbg.de/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif] dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [[#Why_scatter_plots.3F|Why scatter plots?]]), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do. 
 </p>
 
 <p>
@@ -191,7 +191,6 @@ Again, as for the [[Colocalization Threshold]] plugin, using an ROI here may wel
 </li>
 
 </ol>
-
 
 == Why scatter plots? ==
 
