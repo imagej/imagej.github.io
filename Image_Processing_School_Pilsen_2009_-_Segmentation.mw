@@ -54,7 +54,7 @@ The speedy fast marching can be used as input for the slower active contours. If
 For our test we are going to generate our testimage ourselves.
 
 * create a new small image (100x100 pixels)
-* Now draw a filled black circle on the white background
+* Now draw a filled black circle on the white background (The fill command is in the Edit menu) 
 
 [[Image:levelSetCircle.jpg]]
 
