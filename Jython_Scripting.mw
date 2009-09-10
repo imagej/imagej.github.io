@@ -180,8 +180,11 @@ imp.show()
 
 <source lang="python">
 # 1 - Obtain an image
-imp = IJ.openImage("http://rsb.info.nih.gov/ij/images/blobs.gif")
-ip = imp.getProcessor()
+blobs = IJ.openImage("http://rsb.info.nih.gov/ij/images/blobs.gif")
+# Make a copy with the same properties as blobs image:
+imp = blobs.createImagePlus()
+ip = blobs.getProcessor().duplicate()
+imp.setProcessor("blobs copy", ip)
 
 # 2 - Apply a threshold: only zeros and ones
 # Set the desired threshold range: keep from 0 to 74
@@ -212,6 +215,73 @@ If you had called <i>show()</i> on the image at any early stage, just update the
 <source lang="python">
 imp.updateAndDraw()
 </source>
+
+
+==== ... and counting particles, and mesuring their areas ====
+
+Continuing from the <i>imp</i> above, that contains the now watersheded "blobs" sample image:
+
+<source lang="python">
+# Create a table to store the results
+table = ResultsTable()
+# Create a hidden ROI manager, to store a ROI for each blob or cell
+roim = RoiManager(True)
+# Create a ParticleAnalyzer, with arguments:
+# 1. options (could be SHOW_ROI_MASKS, SHOW_OUTLINES, SHOW_MASKS, SHOW_NONE, ADD_TO_MANAGER, and others; combined with bitwise-or)
+# 2. measurement options (see [http://rsb.info.nih.gov/ij/developer/api/ij/measure/Measurements.html Measurements])
+# 3. a ResultsTable to store the measurements
+# 4. The minimum size of a particle to consider for measurement
+# 5. The maximum size (idem)
+# 6. The minimum circularity of a particle
+# 7. The maximum circularity
+pa = ParticleAnalyzer(ParticleAnalyzer.ADD_TO_MANAGER, Measurements.AREA, table, 0, Double.POSITIVE_INFINITY, 0.0, 1.0)
+pa.setHideOutputImage(True)
+
+if pa.analyze(imp):
+  print "All ok"
+else:
+  print "There was a problem in analyzing", blobs
+
+# The measured areas are listed in the first column of the results table, as a float array:
+areas = table.getColumn(0)
+
+</source>
+
+To print out the area measurement of each:
+
+ >>> for area in areas: print area
+ 76.0
+ 185.0
+ 658.0
+ 434.0
+ ...
+
+
+Now, we want to measure the intensity of each particle. To do so, we'll retrieve the ROI from the ROIManager, set them one at a time on the original (non-watershed, non-thresholded) image stored in the variable <i>blobs</i>, and measure:
+
+<source lang="python">
+# Create a new list to store the mean intensity values of each blob:
+means = []
+
+for roi in RoiManager.getInstance().getRoisAsArray():
+  blobs.setRoi(roi)
+  stats = blobs.getStatistics(Measurements.MEAN)
+  means.append(stats.mean)
+</source>
+
+Finally read out the measured mean intensity value of each blob, along with its area:
+
+<source lang="python">
+for area, mean in zip(areas, means):
+  print area, mean
+</source>
+
+ 6.0 191.47368421052633
+ 185.0 179.2864864864865
+ 658.0 205.61702127659575
+ 434.0 217.32718894009216
+ 477.0 212.1425576519916
+ ...
 
 === Creating an image from a text file ===
 
