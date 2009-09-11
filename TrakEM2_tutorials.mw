@@ -1,4 +1,4 @@
-[[Image:Screenshot-TrakEM2_basics_tutorial.png|thumb|300px|TrakEM2 basic tutorial]]
+[[Image:Screenshot-TrakEM2_basics_tutorial.png|thumb|250px|TrakEM2 basic tutorial]]
 ===[[TrakEM2 basics tutorial|Video tutorial on the basic recipe for TrakEM2]]===
 *Importing an image stack.
 *Registering stack slices manually, using color overlays and affine transforms.
@@ -7,6 +7,9 @@
 *3D visualization.
 
 See the [[TrakEM2 basics tutorial|basics video tutorial here]].
+
+
+
 
 
 [[Image:Arealists-brushing.jpg|thumb|250px|TrakEM2 brushing]]
