@@ -1,3 +1,4 @@
+[[Image:Screenshot-TrakEM2_basics_tutorial.png|thumb|300px|TrakEM2 basic tutorial]]
 ===[[TrakEM2 basics tutorial|Video tutorial on the basic recipe for TrakEM2]]===
 *Importing an image stack.
 *Registering stack slices manually, using color overlays and affine transforms.
@@ -9,6 +10,7 @@ See the [[TrakEM2 basics tutorial|basics video tutorial here]].
 
 
 [[Image:Arealists-brushing.jpg|thumb|250px|TrakEM2 brushing]]
+
 ===[http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4 Video tutorial on segmenting/outlining objects over multiple sections in 3D]===
 *How to use the PEN tool with "area lists" segmentation type (paint an area, flood-fill, erase, flood-erase).
 *How to use ROIs (selections like polygon and freeroi) to edit "area lists".
