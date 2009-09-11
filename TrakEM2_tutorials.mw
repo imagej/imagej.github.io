@@ -1,0 +1,8 @@
+[[TrakEM2 basics tutorial|Video tutorial on the basic recipe for TrakEM2]]:
+*Importing an image stack.
+*Registering stack slices manually, using color overlays and affine transforms.
+*Defining a template tree structure for your segmentations.
+*Segmenting cells across multiple sections.
+*3D visualization
+
+See the [[TrakEM2 basics tutorial|basics video tutorial here]].
