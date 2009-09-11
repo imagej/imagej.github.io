@@ -8,4 +8,10 @@
 See the [[TrakEM2 basics tutorial|basics video tutorial here]].
 
 
+[http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4 Video tutorial on segmenting/outlining objects over multiple sections in 3D]:
+*How to use the PEN tool with "area lists" segmentation type (paint an area, flood-fill, erase, flood-erase).
+*How to use ROIs (selections like polygon and freeroi) to edit "area lists"
+
+See the [http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4 the "area list" video tutorial here]:
+
 [[Category:Tutorials]]
