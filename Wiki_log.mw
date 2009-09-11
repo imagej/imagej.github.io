@@ -1,5 +1,7 @@
 Here is logged all modification made to the structure of this wiki (not its content), such as installation of extension and so.
 
+* 11/09/09 - JES - allowed uploading of swf files (requested by Ignacio)
+
 * 13/07/09 - JES - installed [http://www.mediawiki.org/wiki/Extension:Add_HTML_Meta_and_Title Add HTML Meta and Title] to set the page title of our front page to something meaningful.
 
 * 06/04/09 - JYT - installed [http://www.mediawiki.org/wiki/Extension:Cite/Cite.php Cite extension], version 1.10, that enable to have <nowiki><ref></nowiki> tags for footnotes.
