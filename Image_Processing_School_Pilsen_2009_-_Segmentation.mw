@@ -5,7 +5,7 @@ This tutorial is designed to give you a first impression of the segmentation too
 == Thresholding and Morphology ==
 Thresholding is a very simple segmentation method. You just specify a gray value and all pixels in the image are classified according to their value being larger or smaller than the threshold.
 
-* open the blobs sample image (this image is so popluar that it got a hotkey: ctrl+shift b)
+* open the blobs sample image (this image is so popular that it got a hotkey: ctrl+shift b)
 
 [[Image:blobs.jpg]]
 
@@ -39,7 +39,6 @@ If you want to read more about morphology, I these pages might be useful:
 http://homepages.inf.ed.ac.uk/rbf/HIPR2/morops.htm
 
 As you have seen, thresholding is a fairly simple method. Let's move on to something more sophisticated.
-
 
 == Level Set Plugin ==
 
