@@ -1,4 +1,4 @@
-== Image Processing School Pilsen 2009 - Segmentation ==
+== Introduction ==
 
 This tutorial is designed to give you a first impression of the segmentation tools available in Fiji. It covers basic thresholding and morphology operations (erode, dilate, open, close), [[Level Sets]], the [[Simple Neurite Tracer]] and the segmentation editor.
 
