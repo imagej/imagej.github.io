@@ -1,6 +1,6 @@
 == Image Processing School Pilsen 2009 - Segmentation ==
 
-This tutorial is designed to give you a first impression of the segmentation tools available in Fiji. It covers basic thresholding and morphology operations (erode, dilate, open, close), level sets, the simple neurite tracer and the segmentation editor.
+This tutorial is designed to give you a first impression of the segmentation tools available in Fiji. It covers basic thresholding and morphology operations (erode, dilate, open, close), [[Level Sets]], the [[Simple Neurite Tracer]] and the segmentation editor.
 
 == Thresholding and Morphology ==
 Thresholding is a very simple segmentation method. You just specify a gray value and all pixels in the image are classified according to their value being larger or smaller than the threshold.
