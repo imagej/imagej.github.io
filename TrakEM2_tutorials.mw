@@ -6,6 +6,7 @@
 *Segmenting cells across multiple sections.
 *3D visualization.
 
+
 See the [[TrakEM2 basics tutorial|basics video tutorial here]].
 
 
@@ -18,6 +19,17 @@ See the [[TrakEM2 basics tutorial|basics video tutorial here]].
 *How to use the PEN tool with "area lists" segmentation type (paint an area, flood-fill, erase, flood-erase).
 *How to use ROIs (selections like polygon and freeroi) to edit "area lists".
 
+
 See the [http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4 the "area list" video tutorial here]:
+
+
+
+
+===[[TrakEM2 align sections tutorial|Video tutorial on aligning sections]]===
+*Automatically registering sections.
+*Selecting feature extraction parameters.
+
+
+See the [[TrakEM2 align sections tutorial|aligning video tutorial here]].
 
 [[Category:Tutorials]]
