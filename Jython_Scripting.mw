@@ -379,9 +379,9 @@ print "mean:", stats.mean, "median:", stats.median, "area:", stats.area
  mean: 103.26857775590551 median: 64.0 area: 65024.
 
 
-If we set a ROI to the image, then we are measuring only for the inside of the ROI. Here we set an oval ROI of radius 50 pixels, centered:
+If we set a ROI to the image, then we are measuring only for the inside of the ROI. Here we set an oval ROI of radius 25 pixels, centered:
 <source lang="python">
-radius = 50
+radius = 25
 roi = OvalRoi(imp.width/2 - radius, imp.height/2 -radius, radius*2, radius*2)
 imp.setRoi(roi)
 stats = imp.getStatistics(Measurements.MEAN | Measurements.MEDIAN | Measurements.AREA)
