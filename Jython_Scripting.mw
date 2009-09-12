@@ -382,7 +382,7 @@ print "mean:", stats.mean, "median:", stats.median, "area:", stats.area
 If we set a ROI to the image, then we are measuring only for the inside of the ROI. Here we set an oval ROI of radius 50 pixels, centered:
 <source lang="python">
 radius = 50
-roi = OvalRoi(imp.width/2 - radius/2, imp.height/2 -radius/2, radius, radius)
+roi = OvalRoi(imp.width/2 - radius, imp.height/2 -radius, radius*2, radius*2)
 imp.setRoi(roi)
 stats = imp.getStatistics(Measurements.MEAN | Measurements.MEDIAN | Measurements.AREA)
 print "mean:", stats.mean, "median:", stats.median, "area:", stats.area
@@ -404,7 +404,6 @@ hwin = HistogramWindow(imp)
 plotimage = hwin.getImagePlus()
 IJ.save(plotimage, "/path/to/our/folder/plot.tif")
 </source>
-
 
 === Removing bleeding from one channel to another ===
 
