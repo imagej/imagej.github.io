@@ -43,7 +43,6 @@ The cycle detection is based on a classical [http://en.wikipedia.org/wiki/Depth-
 The only known limitation of this approach is shown in the presence of nested loops. In those cases, a second call to the plugin is usually enough to eliminate all the remaining loops.
 
 == Table of results ==
-[[Image:AnalyzeSkeleton_Branch_information.png|thumb|300px|Example of AnalyzeSkeleton Branch information window]]
 After classification, a “Results” window is displayed showing for each skeleton in the image:
 * The number of branches (slab segments, usually connecting end-points, end-points and junctions or junctions and junctions). The special case of a circular skeleton is also contemplated here.
 * The number of voxels of every type: end-point, slab and junction voxels.
@@ -54,6 +53,7 @@ After classification, a “Results” window is displayed showing for each skele
 '''AnalyzeSkeleton is able to process up to 2¹⁵-1 skeletons in one single image''' (only limited by [http://java.sun.com/javase/6/docs/api/ java Short.MAX_VALUE]). 
 
 === Detailed information ===
+[[Image:AnalyzeSkeleton_Branch_information.png|thumb|400px|Example of AnalyzeSkeleton Branch information window]]
 When calling the plugin, if the "Show detailed information" checkbox is marked, a complementary results table called "Branch information" is shown. In this table we display all branches information: skeleton ID, calibrated branch length, 3D coordinates of the extremes of the branch (the so-called V1 and V2 vertices) and the Euclidean distance between those extreme points. This value has proven to be a good indicator of the [http://en.wikipedia.org/wiki/Tortuosity tortuosity] of the 3D object. The branches are sorted by decreasing length.
 
 == Visualization ==
