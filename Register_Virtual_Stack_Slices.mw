@@ -28,9 +28,9 @@ All models are aided by automatically extracted [[Feature_Extraction | SIFT feat
 == User Manual ==
 <p><b>Premises</b>:<br />
 <ul>
-<li>'''Source folder''': You have a folder with an ordered list of image files in it that ImageJ can open.</li>
-<li>Each image represents a slice in a sequence.</li>
-<li>'''Output folder''': You have or create a folder to store the resulting virtual stack with the aligned images.</li>
+*'''Source folder''': You have a folder with an ordered list of image files in it that ImageJ can open.
+*Each image represents a slice in a sequence.
+*'''Output folder''': You have or create a folder to store the resulting virtual stack with the aligned images.
 </ul>
 </p>
 <p>Images may have different dimensions and be of different type.</p>
@@ -38,16 +38,17 @@ All models are aided by automatically extracted [[Feature_Extraction | SIFT feat
 [[Image:Rvs_main_window.png|500px|thumb|Register Virtual Stack main window]]
 <p><b>Step 2</b>: choose the appropriate options:<br />
 <ul>
-<li>'''Feature extraction model'''. The expected transformation model finding inliers (i.e. correspondences or landmarks between images) in the feature extraction: translation, rigid, similarity or affine.</li>
-<li>'''Registration model'''. The image transformation model: translation, rigid, similarity, affine, elastic or moving least squares.</li>
-<li>'''Advanced setup'''. The advanced checkbox: whether to see the [[Feature_Extraction#Parameters | feature extraction parameters]] setup dialog, and if elastic, the [[BUnwarpJ | bUnwarpJ]] dialog. Otherwise the plugin operates on reasonable, default parameters.</li>
+*'''Feature extraction model'''. The expected transformation model finding inliers (i.e. correspondences or landmarks between images) in the feature extraction: translation, rigid, similarity or affine.
+*'''Registration model'''. The image transformation model: translation, rigid, similarity, affine, elastic or moving least squares.
+*'''Advanced setup'''. The advanced checkbox: whether to see the [[Feature_Extraction#Parameters | feature extraction parameters]] setup dialog, and if elastic, the [[BUnwarpJ | bUnwarpJ]] dialog. Otherwise the plugin operates on reasonable, default parameters.
+*'''Shrinkage constrain'''. Option to regularize the registration in order to avoid sections shrinking.
 </ul>   
 </p>
-<p><b>Step 3</b>: choose the '''source''' and '''output''' folders and the '''reference''' image:<br />
+<p><b>Step 3</b>: choose the '''source''' and '''output''' folders and the '''reference''' image (only if the "Shrinking constraint" checkbox was not marked):<br />
 <ul>
-<li>Select a source folder containing the slices, at one slice per image file.</li>
-<li>Select the target folder where resulting registered slices are automatically stored as TIFF files.</li>
-<li>Select one of the images from the source folder as the reference image.</li>
+*Select a source folder containing the slices, at one slice per image file.
+*Select the target folder where resulting registered slices are automatically stored as TIFF files.
+*Select one of the images from the source folder as the reference image.
 </ul>   
 </p>
 <p>On success, a virtual stack will open showing all the registered images contained in the target folder. The virtual stack can be closed with no ill effect: images are saved in the target folder.</p>
