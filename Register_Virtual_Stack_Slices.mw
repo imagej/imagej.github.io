@@ -111,7 +111,7 @@ p.minInlierRatio = 0.05
 Register_Virtual_Stack_MT.exec(source_dir, target_dir, p);
 </source>
 
-== See also ==
+= See also =
 * [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/imagefeatures/FloatArray2DSIFT.java;hb=HEAD FloatArray2DSIFT.java] which contains the subclass Param which is the 'sift' member of the Register_Virtual_Stack_Slices.Param subclass.
 * [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/register_virtual_stack_slices/register_virtual_stack/Register_Virtual_Stack_MT.java;hb=HEAD Register_Virtual_Stack_MT.java], including the Param subclass.
 
