@@ -93,7 +93,7 @@ For a complete description of the elastic parameters, please visit the [http://b
 <tr><td><b>Raw:</b></td><td><b>Registered:</b></td></tr>
 <tr><td>[[Image:Stack4.gif]]</td><td>[[Image:Stack4-2.gif]]</td></tr></table>
 
-== Scripting / PlugIn ==
+= Scripting / PlugIn =
 
 <p>You can call the plugin in a non-interactive fashion from a jython script:</p>
 <source lang="python">
