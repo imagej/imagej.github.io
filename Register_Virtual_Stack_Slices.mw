@@ -85,9 +85,17 @@ For a complete description of the elastic parameters, please visit the [http://b
 
 </ol>
 
-= Example =
+= Examples =
 
-<p>Even this sequence of rather noisy transmission electron microscopy images, with considerable variations from slice to slice, get registered properly:</p>
+Example of registration results using the shrinking constraint:
+
+<table>
+<tr><td><b>Raw:</b></td><td><b>Registered:</b></td></tr>
+<tr><td>[[Image:RVS_Tem_example.gif|input data]]</td><td>[[Image:RVS_Registered_tem.gif|output data]]</td></tr>
+</table>
+
+
+<p>Even this sequence of rather noisy transmission electron microscopy images, with considerable variations from slice to slice, got registered properly:</p>
 <br />
 <table>
 <tr><td><b>Raw:</b></td><td><b>Registered:</b></td></tr>
