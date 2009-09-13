@@ -25,7 +25,7 @@ The plugin can perform''' 6 types of image registration techniques''':
 * Moving least squares  
 All models are aided by automatically extracted [[Feature_Extraction | SIFT features]].
 
-== User Manual ==
+= User Manual =
 <p><b>Premises</b>:<br />
 <ul>
 *'''Source folder''': You have a folder with an ordered list of image files in it that ImageJ can open.
@@ -53,7 +53,7 @@ All models are aided by automatically extracted [[Feature_Extraction | SIFT feat
 </p>
 <p>On success, a virtual stack will open showing all the registered images contained in the target folder. The virtual stack can be closed with no ill effect: images are saved in the target folder.</p>
 
-=== Notes ===
+== Notes ==
 <ol>
 <li>The plugin is multithreaded: more CPU cores means faster execution.</li>
 <li>The two most relevant parameters in the [[Feature_Extraction | SIFT feature extraction]] are:<br />
