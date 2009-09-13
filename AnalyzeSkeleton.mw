@@ -58,9 +58,9 @@ AnalyzeSkeleton is able to process up to '''2¹⁵-1 skeletons in one single ima
 When calling the plugin, if the "Show detailed information" checkbox is marked, a complementary results table called "Branch information" is shown. 
 
 In this table we display all branches information: 
-* skeleton ID 
-* calibrated branch length 
-* 3D coordinates of the extremes of the branch (the so-called V1 and V2 vertices) 
+* skeleton ID, 
+* calibrated branch length, 
+* 3D coordinates of the extremes of the branch (the so-called V1 and V2 vertices), 
 * and the Euclidean distance between those extreme points. This value has proven to be a good indicator of the [http://en.wikipedia.org/wiki/Tortuosity tortuosity] of the 3D object. 
 
 The branches are sorted by decreasing length.
