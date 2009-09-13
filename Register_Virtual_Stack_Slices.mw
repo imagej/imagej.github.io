@@ -53,6 +53,9 @@ All models are aided by automatically extracted [[Feature_Extraction | SIFT feat
 </p>
 <p>On success, a virtual stack will open showing all the registered images contained in the target folder. The virtual stack can be closed with no ill effect: images are saved in the target folder.</p>
 
+== Shrinkage constrain ==
+Since 09/13/2009 version and thanks to Daniel Berger, Register Virtual Stack Slices has the option of constraining the registration to avoid section shrinking for large sets of images.
+
 == Notes ==
 <ol>
 <li>The plugin is multithreaded: more CPU cores means faster execution.</li>
