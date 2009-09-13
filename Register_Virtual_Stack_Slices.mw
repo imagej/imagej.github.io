@@ -3,9 +3,9 @@
 | software               = Fiji
 | author                 = Albert Cardona ([mailto:acardona@ini.phys.ethz.ch acardona@ini.phys.ethz.ch]), Ignacio Arganda-Carreras and Stephan Saalfeld
 | maintainer             = Ignacio Arganda-Carreras ([mailto:ignacio.arganda@uam.es ignacio.arganda@uam.es])
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/register_virtual_stack_slices/register_virtual_stack/Register_Virtual_Stack_MT.java;hb=HEAD on gitweb] (753 lines)
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/register_virtual_stack_slices/register_virtual_stack/Register_Virtual_Stack_MT.java;hb=HEAD on gitweb] (1672 lines)
 | released               = 2008
-| latest version         = June 18, 2009
+| latest version         = September 13, 2009
 | status                 = stable, active
 | category               = [[:Category:Registration]], [[:Category:Plugins]]
 }}
@@ -14,7 +14,7 @@
 |style="vertical-align:top" |[[Image:Rvs_scheme.png|600px|Register Virtual Stack scheme - All images are transformed to match the reference]]
 |}
 
-This plugin takes a sequence of image slices stored in a folder, and delivers a list of registered image slices (with enlarged canvas). One of the images in the sequence is selected by the user as '''reference''' and it will remain intact.
+This plugin takes a sequence of image slices stored in a folder, and delivers a list of registered image slices (with enlarged canvas). One of the images in the sequence can be selected by the user as '''reference''' and it will remain intact.
 
 The plugin can perform''' 6 types of image registration techniques''':
 * Translation
