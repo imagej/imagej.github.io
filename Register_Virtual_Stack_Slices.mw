@@ -123,6 +123,11 @@ Example of registration results using the shrinking constraint:
 <tr><td><b>Raw:</b></td><td><b>Registered:</b></td></tr>
 <tr><td>[[Image:Stack4.gif]]</td><td>[[Image:Stack4-2.gif]]</td></tr></table>
 
+= API documentation = 
+The latest documentation of the code can be found here: 
+
+[http://bioweb.cnb.csic.es/~iarganda/Register_virtual_stack/doc/ http://bioweb.cnb.csic.es/~iarganda/Register_virtual_stack/doc/]
+
 = Scripting / PlugIn =
 
 <p>You can call the plugin in a non-interactive fashion from a jython script:</p>
