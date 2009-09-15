@@ -57,6 +57,8 @@ All models are aided by automatically extracted [[Feature_Extraction | SIFT feat
 [[Image:RVS_shrink_option.png|thumb|400px|Shrinkage constrain checkbox]]
 Since the 09/13/2009 version and thanks to [http://hebb.mit.edu/ Daniel Berger], Register Virtual Stack Slices has the option of constraining the registration to avoid section shrinking for large sets of images.
 
+If this option is used, '''no reference image needs to be selected'''. All images will be transformed into the same common space by initializing first the system with a rigid transformation and then relaxing it based on the desired registration model.
+
 To do so, in the main dialog, you have to check the "Shrinkage constrain" option (see attached window). 
 
 [[Image:RVS_regularization_params.png|thumb|170px| Shrinkage regularization parameters ]]
