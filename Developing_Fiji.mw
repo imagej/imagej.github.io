@@ -78,4 +78,12 @@ In the case of ''VIB'', it works as easily as that, because it has its own [[Fij
 
 When you're testing Fiji, you may want to measure the code coverage of your tests - one way is described in the page [[Code Coverage in Fiji]].
 
+== Discussing code ==
+
+When you want to point at specific code on IRC or via mail, you can do so by posting links to our [[Git|Gitweb]].  There is even a little shell script that helps you finding the link:
+
+ bin/open-in-gitweb.sh fiji.cxx
+
+This script will open the appropriate link with Firefox.  It can deal with files, even in submodules, and commits (for commits, your current directory must be inside the appropriate Git checkout).  For files, you can append ":<linenumber>".
+
 [[Category:Development]]
