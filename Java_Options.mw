@@ -86,7 +86,7 @@ You may do the same with --jython and --jruby for the homonimous languages.
 
 4. Launch the JVM with a debugging agent:
 
- ./fiji -Xincgc -server -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n
+ ./fiji -Xincgc -server -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n --
 
 To connect the debugger, launch the java debugger <i>jdb</i> at port 8010:
 
