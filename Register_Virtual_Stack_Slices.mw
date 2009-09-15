@@ -76,6 +76,8 @@ In the case of the "elastic" model, only a rigid registration will be performed.
 
 For the "moving least squares" model, the maximal warping will still take place with no regularization.
 
+We can visualize the relaxation of the system into the desired registration model by checking the option "Display relaxation graph". In this graph the average mean squared error (MSE) between the correspondences of the whole sequence of slices is displayed for each relaxation iteration.
+
 == Notes ==
 <ol>
 <li>The plugin is multithreaded: more CPU cores means faster execution.</li>
