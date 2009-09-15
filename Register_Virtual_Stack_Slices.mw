@@ -68,7 +68,11 @@ If you check as well the "Advance setup" checkbox from the same dialog, then a n
 
 For the registration models "translation" and "rigid", no regularization is needed since these linear transformations don't apply. In the case of the "similarity" registration model, only the shearing and scaling will be regularized.
 
-'''TODO''': the "elastic" and "moving least squares" registration models don't have a proper shrinkage regularization yet. In the case of the "elastic" model, only a rigid registration will be performed. If you need to regularize the elastic transformation between the sections, you better do it through the bUnwarpJ paramters (see [[Register_Virtual_Stack_Slices#Notes]] below).
+'''TODO''': the "elastic" and "moving least squares" registration models do not have a proper shrinkage regularization implementation yet. 
+
+In the case of the "elastic" model, only a rigid registration will be performed. If you need to regularize the elastic transformation between the sections, you better do it through the bUnwarpJ paramters (see [[Register_Virtual_Stack_Slices#Notes | Notes]] below).
+
+For the "moving least squares" model, the maximal warping will still take place with no regularization.
 
 == Notes ==
 <ol>
