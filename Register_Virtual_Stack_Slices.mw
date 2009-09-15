@@ -134,10 +134,14 @@ The latest documentation of the code can be found here:
 <source lang="python">
 from register_virtual_stack import Register_Virtual_Stack_MT
 
+# source directory
 source_dir = "/path/to/source/"
+# output directory
 target_dir = "/path/to/target/"
+# reference image
 reference_name = "reference_image"
-use_shrinking_constraint = 1
+# shrinkage option (false)
+use_shrinking_constraint = 0
 
 p = Register_Virtual_Stack_MT.Param()
 # The "maximum image size":
