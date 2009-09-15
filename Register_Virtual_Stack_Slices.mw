@@ -54,7 +54,21 @@ All models are aided by automatically extracted [[Feature_Extraction | SIFT feat
 <p>On success, a virtual stack will open showing all the registered images contained in the target folder. The virtual stack can be closed with no ill effect: images are saved in the target folder.</p>
 
 == Shrinkage constrain ==
+[[Image:RVS_shrink_option.png|thumb|350px|Shrinkage constrain checkbox]]
 Since the 09/13/2009 version and thanks to [http://hebb.mit.edu/ Daniel Berger], Register Virtual Stack Slices has the option of constraining the registration to avoid section shrinking for large sets of images.
+
+To do so, in the main dialog, you have to check the "Shrinkage constrain" option (see attached window). 
+
+[[Image:RVS_regularization_params.png|thumb|170px| Shrinkage regularization parameters ]]
+If you check as well the "Advance setup" checkbox from the same dialog, then a new window will appear to select the corresponding parameters to regularize the section shrinkage based on the properties of the transformation. If we choose "affine" as registration model, then we will be able to regularize:
+
+* the [http://en.wikipedia.org/wiki/Shear_mapping shear],
+* the [http://en.wikipedia.org/wiki/Scaling_(geometry) scaling],
+* and the [http://en.wikipedia.org/wiki/Isotropy isotropy] or aspect ratio.
+
+For the registration models "translation" and "rigid", no regularization is needed since these linear transformations don't apply. In the case of the "similarity" registration model, only the shearing and scaling will be regularized.
+
+'''TODO''': the "elastic" and "moving least squares" registration models don't have a proper shrinkage regularization yet.
 
 == Notes ==
 <ol>
