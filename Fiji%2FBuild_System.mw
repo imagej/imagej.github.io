@@ -82,6 +82,10 @@ You can define variables in the usual way:
 
  ONE=1
 
+This can be done either in the Fakefile or on the command line, as in this example:
+
+ ./fiji --build debug=true
+
 Variables can be referenced in all parts of a rule.  Variables can be overridden per-target:
 
  ONE(ij.jar)=2
