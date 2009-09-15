@@ -3,7 +3,7 @@
 | software               = Fiji
 | author                 = Albert Cardona ([mailto:acardona@ini.phys.ethz.ch acardona@ini.phys.ethz.ch]), Ignacio Arganda-Carreras and Stephan Saalfeld
 | maintainer             = Ignacio Arganda-Carreras ([mailto:ignacio.arganda@gmail.com ignacio.arganda@gmail.com])
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/register_virtual_stack_slices/register_virtual_stack/Register_Virtual_Stack_MT.java;hb=HEAD on gitweb] (1672 lines)
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/register_virtual_stack_slices/register_virtual_stack/Register_Virtual_Stack_MT.java;hb=HEAD on gitweb] (1707 lines)
 | released               = 2008
 | latest version         = September 13, 2009
 | status                 = stable, active
