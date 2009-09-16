@@ -1,5 +1,6 @@
 ===[[TrakEM2 basics tutorial|Video tutorial on the basic recipe for TrakEM2]]===
 [[Image:Screenshot-TrakEM2_basics_tutorial.png|thumb|250px|TrakEM2 basic tutorial]]
+This is the basic tutorial for TrakEM2. If you are new in TrakEM2, please start by watching this tutorial. It includes:
 *Importing an image stack.
 *Registering stack slices manually, using color overlays and affine transforms.
 *Defining a template tree structure for your segmentations.
@@ -8,12 +9,6 @@
 
 
 See the [[TrakEM2 basics tutorial|basics video tutorial here]].
-
-
-
-
-
-
 
 ===[http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4 Video tutorial on segmenting/outlining objects over multiple sections in 3D]===
 [[Image:Arealists-brushing.jpg|thumb|250px|TrakEM2 brushing]]
