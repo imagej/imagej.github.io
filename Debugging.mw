@@ -16,7 +16,7 @@ This requires two separate processes, fiji itself and the debugger.  You can do 
 Hopefully you are a little familiar with gdb, since jdb resembles it lightly.
 
 Notable differences:
-* a breakpoint is set with "stop in <class>.<method>" or "<class>:<line>".
+* a breakpoint is set with "stop in <class>.<method>" or "<class>:<line>".  Just remember that the class must be fully specified, i.e. <package>.<subpackages...>.<classname>
 * no tab completion
 * no readline (cursor up/down)
 * no shortcuts; you have to write "run", not "r" to run the program
