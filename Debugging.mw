@@ -6,10 +6,10 @@ This requires two separate processes, fiji itself and the debugger.  You can do 
 ;Shell 1
 :In the first shell, start fiji with special parameters to open a port (8000 in this case) to which jdb can connect afterwards:
 :<tt> ./fiji -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=y --</tt>
+:(Tested with Java 1.5.0, ymmv)
 ;Shell 2
 :In the second shell, tell jdb to attach to that port:
-:<tt>  jdb -attach 8000</tt> 
-
+:<tt>  jdb -attach 8000</tt>
 
 ==This is an ultra quick start to jdb, the default Java debugger==
 
