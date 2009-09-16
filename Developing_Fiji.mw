@@ -78,6 +78,8 @@ In the case of ''VIB'', it works as easily as that, because it has its own [[Fij
 
 When you're testing Fiji, you may want to measure the code coverage of your tests - one way is described in the page [[Code Coverage in Fiji]].
 
+At some point, you might want to debug whatever you wrote.  There's a small [[Debugging intro]] page.
+
 == Discussing code ==
 
 When you want to point at specific code on IRC or via mail, you can do so by posting links to our [[Git|Gitweb]].  There is even a little shell script that helps you finding the link:
