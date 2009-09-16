@@ -38,6 +38,7 @@ See the [[TrakEM2 align sections tutorial|aligning video tutorial here]].
 ===[[TrakEM2 semi-automatic segmentation tutorial|Video tutorial on semi-automatic segmentation]]===
 *How to segment cells by only one click.
 *Fast marching method tool in TrakEM2.
+*Selecting segmentation parameters.
 
 
 See the [[TrakEM2 semi-automatic segmentation tutorial|semi-automatic video tutorial here]].
