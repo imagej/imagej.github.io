@@ -1,5 +1,16 @@
 ======(This text was originally copied from the VIB project)======
 
+==How to attach the Java debugger jdb to a running fiji process==
+This requires two separate processes, fiji itself and the debugger.  You can do this either in one shell, backgrounding the first process or in two shells, this is recommended.  In the two shells do the following:
+
+;Shell 1
+:In the first shell, start fiji with special parameters to open a port (8000 in this case) to which jdb can connect afterwards:
+:<tt> ./fiji -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=y --</tt>
+;Shell 2
+:In the second shell, tell jdb to attach to that port:
+:<tt>  jdb -attach 8000</tt> 
+
+
 ==This is an ultra quick start to jdb, the default Java debugger==
 
 Hopefully you are a little familiar with gdb, since jdb resembles it lightly.
@@ -14,6 +25,8 @@ Notable differences:
 * "until" is "step", "step" is "stepi"
 
 Okay, so here you go, a little demonstration:
+
+(If you attach jdb to a running fiji process, you have to use the line from the last section instead.)
 
  $ jdb -classpath ij.jar ij.ImageJ
  > stop in ij.ImageJ.main
