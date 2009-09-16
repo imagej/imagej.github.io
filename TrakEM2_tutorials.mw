@@ -36,12 +36,24 @@ See the [[TrakEM2 align sections tutorial|aligning video tutorial here]].
 
 
 
+===[[TrakEM2_segmentation_modes_tutorial|Video tutorial on manual segmentation modes]]===
+How to manually segment cells using the 3 segmentation modes:
+* '''Overlap''': multiple arealists can coexist in space (the normal mode; arealists are independent).
+* '''Exclude''': when painting in an arealist, do not allow paint to ocurr over any other existing arealist.
+* '''Erode''': when painting in an arealist, paint in the current but erase any other arealist.
+
+
+
+See the [[TrakEM2 semi-automatic segmentation tutorial|segmentation modes video tutorial here]].
+
+
+
 ===[[TrakEM2 semi-automatic segmentation tutorial|Video tutorial on semi-automatic segmentation]]===
 *How to segment cells by only one click.
 *Fast marching method tool in TrakEM2.
 *Selecting segmentation parameters.
 
 
-See the [[TrakEM2 semi-automatic segmentation tutorial|semi-automatic video tutorial here]].
+See the [[TrakEM2_segmentation_modes_tutorial|semi-automatic video tutorial here]].
 
 [[Category:Tutorials]]
