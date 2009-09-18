@@ -21,6 +21,8 @@ This video tutorial was made by Javier Cabrera-Chaves and edited by [[User:iarga
 
 See the [http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4 the "area list" video tutorial here].
 
+See als the list of [http://www.ini.uzh.ch/~acardona/trakem2_manual.html#edit_arealist key bindings for AreaList]. 
+
 This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.
 
 
@@ -33,6 +35,8 @@ This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 
 
 
 See the [[TrakEM2 align sections tutorial|aligning video tutorial here]].
+
+See also the feature extraction and alignment [http://www.ini.uzh.ch/~acardona/howto.html#sift_parameters parameters explained].
 
 This video tutorial was made by Javier Cabrera-Chaves and edited by [[User:iarganda|Ignacio Arganda-Carreras]] using [http://www.debugmode.com/wink/ Wink 1.5 for linux]. To navigate, use the green arrows to go forward and backward in the slide-show.
 
@@ -63,6 +67,8 @@ This video tutorial was made by Javier Cabrera-Chaves and edited by [[User:iarga
 
 
 See the [[TrakEM2 measurements tutorial|measurements video tutorial here]].
+
+See also [http://www.ini.uzh.ch/~acardona/trakem2_manual.html#measure_arealist AreaList measurements] in the TrakEM2 manual, with figures.
 
 This video tutorial was made by Javier Cabrera-Chaves and edited by [[User:iarganda|Ignacio Arganda-Carreras]] using [http://www.debugmode.com/wink/ Wink 1.5 for linux]. To navigate, use the green arrows to go forward and backward in the slide-show.
 
