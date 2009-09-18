@@ -65,6 +65,18 @@ In this table we display all branches information:
 
 The branches are sorted by decreasing length.
 
+== Video tutorial ==
+For a fast introduction to [[Skeletonize3D]] and [[AnalyzeSkeleton]] and an example of a real application, you can have a look at this [[Skeleton analysis video tutorial | video tutorial]].
+
+The tutorial describes step by step how to:
+
+* Pre-process a 3D image to extract the relevant morphological information by
+** removing the noise 
+** and binarizing
+* Extract the skeleton of a binary image with [[Skeletonize3D]]
+* Analyze the resulting skeletons in the 3D image with [[AnalyzeSkeleton]]
+
+
 == Visualization ==
 Using the [[3D_Viewer]] libraries we can easily display the results of both, the skeletonization and the analysis:
 
