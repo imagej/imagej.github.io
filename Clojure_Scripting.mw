@@ -1347,4 +1347,22 @@ user=> (pprint pa)
 </source>
 
 
+A similar result can be obtained by wrapping primitive arrays with <i>seq</i>, which generates a Collection view on the primitive array:
+<source lang="lisp">
+user=> (println (seq pa))
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+</source>
+
+That <i>seq</i> creates only a view (and not a copy), you can convince yourself: changing the array changes the view, too:
+<source lang="lisp">
+user=> (def sa (seq pa))
+user=> sa
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+user=> (aset pa 3 7)
+user=> (pprint pa)
+[0, 0, 0, 7, 0, 0, 0, 0, 0, 0]
+user=> sa
+[0, 0, 0, 7, 0, 0, 0, 0, 0, 0]
+</source>
+
 [[Category:Scripting]]
