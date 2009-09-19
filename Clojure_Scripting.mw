@@ -1319,7 +1319,7 @@ The derivative of x^3 is 3 * x^2, which for an x of 4 equals 48. Our derivative 
 The above code translated from lisp code at [http://funcall.blogspot.com/2009/03/not-lisp-again.html funcall blog]. Thanks [http://www.blogger.com/profile/03233353484280456977 Joe Marshall] for sharing this perl.
 
 
-<h3>Pretty printing an array or a map</h3>
+<h3>Pretty printing a primitive array</h3>
 
 Suppose we create a primitive array of length 10:
 
