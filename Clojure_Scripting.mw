@@ -693,11 +693,16 @@ Open the plugins/Examples/ folder in Fiji installation directory. You'll find th
 <h1>Appendix</h1>
 
 <h3>Defining the output stream</h3>
-The default output stream is at variable <i>*out*</i>. The Clojure Interpreter binds it to the PrintWriter that prints to the interpreter text area, by executing any typed in code within the following binding:
+The default output stream is at variable <i>*out*</i>, which you may redefine to any kind of PrintWriter:
 <source lang="lisp">
-(binding [*out* (Clojure.Clojure_Interpreter/getStdOut)]
-   ; any typed input here
+(let [all-out (new java.io.StringWriter)]
+  (binding [*out* all-out]
+     ; any typed input here
+     ; All calls to pr, prn, println will print into all-out
+     (println "this and that")
    )
+   ; Now show any printed out text in ImageJ's log window:
+   (ij.IJ/log (str all-out)))
 </source>
 
 <h3>Destructuring</h3>
