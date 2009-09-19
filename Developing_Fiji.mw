@@ -88,4 +88,8 @@ When you want to point at specific code on IRC or via mail, you can do so by pos
 
 This script will open the appropriate link with Firefox.  It can deal with files, even in submodules, and commits (for commits, your current directory must be inside the appropriate Git checkout).  For files, you can append ":<linenumber>".
 
+== Further reading for developers ==
+
+*[[Uploading plugins]]
+
 [[Category:Development]]
