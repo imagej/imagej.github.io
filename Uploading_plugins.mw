@@ -1,0 +1,54 @@
+== Uploading plugins ==
+
+If you have an ssh account on pacific that is in the ''uploaders'' group, you can upload plugins.  To do this, run
+
+ git pull origin master
+
+If this says that a recursive merge was performed, you had local changes and should '''not''' upload anything, as you did not test that version!
+
+If it was a fast-forward (or if Git said "Everything up-to-date"), you are good to go:
+
+ ./Build.sh
+ ./bin/update-fiji.py <filename>
+
+It will refuse to upload a file that has locally-modified dependencies, and list them.  To upload those dependencies, too, you can use the ''--auto'' option of ''./bin/update-fiji.py''.  '''Use with care!'''
+
+== Internals ==
+
+The original [[Update Fiji|Fiji Updater]] was very limited; it only allowed to download new versions of files, and it did not have an option to determine whether a local version was previously installed via the Updater or not.
+
+However, it already set the scene for the current Updater, as many people happily used the old one.
+
+These are the building blocks of the Fiji Updater:
+
+=== Checksumming ===
+
+File versions are identified by a cryptographic hash of the file contents, and possibly the file name.
+
+Two different methods are applied: one for ''.jar'' files and one for all the other files.  For regular files, the file name (without trailing NUL nor line feed character) and the exact file contents are piped into the SHA-1 algorithm.  For ''.jar'' files, the file names of the <u>entries</u> and the exact contents of those files are pushed through the SHA-1 algorithm, one after another.
+
+The reason why ''.jar'' files are different is that they are really nothing more than glorified ''.zip'' files, and as such contain timestamps.  If those timestamps differ, the ''.zip'' files differ.  So if developer Anne Berlin compiles some plugin in Chicago and developer Dario Espana compiles the same plugin on Fiji, chances are that the timestamps are different, and therefore the ''.jar'' files, even if they contain the same ''.class' files!
+
+=== The database ===
+
+Originally, the database was stored in the file ''current.txt'', which is stored in the ''update/'' directory of pacific's web server.  Its format was simply lines in the form
+
+ <filename> <timestamp> <checksum>
+
+and a file was considered updateable when its checksum disagreed with the local checksum and the timestamp of the local file was older than the timestamp in ''current.txt''.
+
+The old updater was never meant for anything else than the Fiji launchers, ''ij.jar'' and ''.jar'' files in the directories ''plugins/'', ''misc/'', ''retro/'' and ''jars/'', so it would not even pick up on the fact that it installed a, say, ''.py'' file, and happily offer it for update <u>again</u>.  Therefore, ''current.txt'' <u>must not</u> contain anything else than files matching said expectations.
+
+The new database is stored in the file ''db.xml.gz'', which again is a static file.  But -- as the name suggests -- it obeys an extensible XML schema.
+
+This database not only stores the same information as ''current.txt'', it can contain arbitrary file names (even including spaces, which is not possible with the former database), store descriptions of the files, have information about the platform, categories and most importantly, it has the checksums of all known previous versions so that we can finally decide whether it is safe to update files or whether they are locally modified and the user should state '''explicitely''' that it is safe to update.
+
+== The actual files ==
+
+The files corresponding to the database entries are also stored as flat files of the form
+
+ <relative path>-<timestamp>
+
+in the same directory as the databases.  The ''relative path'' refers to the path inside the Fiji directory, e.g. ''plugins/Fiji_Updater.jar''.
+
+[[Category:Development]]
