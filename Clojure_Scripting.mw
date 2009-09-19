@@ -1318,4 +1318,33 @@ The derivative of x^3 is 3 * x^2, which for an x of 4 equals 48. Our derivative 
 
 The above code translated from lisp code at [http://funcall.blogspot.com/2009/03/not-lisp-again.html funcall blog]. Thanks [http://www.blogger.com/profile/03233353484280456977 Joe Marshall] for sharing this perl.
 
+
+<h3>Pretty printing an array or a map</h3>
+
+Suppose we create a primitive array of length 10:
+
+<source lang="lisp">
+user=> (def pa (make-array Integer/TYPE 10))
+</source>
+
+If we print it, we get:
+<source lang="lisp">
+user=> (println pa)
+#<int[] [I@169bc15>
+</source>
+
+... which is not very useful. Instead, let's pretty print it.
+
+First, import the function <i>pprint</i> (and many other functions) from clojure-contrib pprint namespace:
+<source lang="lisp">
+user=> (use 'clojure.contrib.pprint)
+</source>
+
+Then, use it:
+<source lang="lisp">
+user=> (pprint pa)
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+</source>
+
+
 [[Category:Scripting]]
