@@ -2,7 +2,7 @@
 | software               = ImageJ
 | name                   = Manual Tracking
 | author                 = Fabrice Cordelières
-| maintainer         = Dan White (unless Fabrice wants to do it)
+| maintainer         = [[Dan White]] (unless Fabrice wants to do it)
 | filename               = [http://rsb.info.nih.gov/ij/plugins/track/Manual_Tracking.class Manual_Tracking.class] (40,049 Bytes)
 | source                 = [http://rsb.info.nih.gov/ij/plugins/track/Manual_Tracking.java Manual_Tracking.java] (71,885 Bytes)
 | released               = 25 June 2004 
