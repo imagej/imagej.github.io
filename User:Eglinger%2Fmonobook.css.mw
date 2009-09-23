@@ -1,0 +1,69 @@
+#toc ul li,
+.toc ul li {
+	position:relative;
+	padding-right:12px;
+	float:left;
+	}
+
+#toc ul li a,
+.toc ul li a {
+	text-decoration:none;
+	}
+
+
+#toc ul li ul,
+.toc ul li ul {
+	display: none;
+	position:absolute;
+	left:-10px;
+	z-index:500;
+	}
+	
+#toc ul li ul li,
+.toc ul li ul li {
+	margin-left:0px;
+	font-size:11px;
+	border: 1px solid #ccc;
+	border-top: 0;
+	background: #fff;
+	width:250px;:
+	margin:0px;
+	padding:4px;
+	margin-top:-1px;
+	}
+
+#toc ul li ul li a,
+.toc ul li ul li a {
+	text-decoration:none;
+	}
+
+.tocnumber {
+	display:none;
+	}
+
+#toc ul li:hover ul,
+.toc ul li:hover ul {
+	display: block;
+	font-size:11px;
+	padding: 2px;
+	padding-top:4px;
+	}
+
+#toc ul li ul li:hover,
+.toc ul li ul li:hover {
+	background:#f9f9f9;
+	}
+
+#toc, .toc {
+	background:transparent;
+	padding:0;
+	margin:0;
+	border:0;
+	}
+
+#toc td, .toc td {
+	background:#fff;
+	border-bottom:1px #ccc solid;
+	padding:6px;
+	padding-bottom:0px;
+	}
