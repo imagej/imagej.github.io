@@ -42,14 +42,14 @@ This implementation is based on following PDE update:
 
 with 
 
-:<math>g(I) = \frac{1}{1 + (\nabla I*  + g) * 2}</math>
-<!--: g(I) = 1 /  ( 1 + (gradient I*  + g) * 2) -->
-::<math>\nabla I*</math> = difference of smoothened (gaussian blurred) image
-<!--::gradient I* = difference of smoothened (gaussian blur) image -->	
-::<math>g = \begin{cases} 0  & if\ gray\ value < preset\ gray\ value.\\
-gray\ value & otherwise. \end{cases}</math>
-:<math>\Delta T = \frac{1}{6 * Wa * Wc}</math>
-<!--:delta T = 1 / ( 6 * Wa * Wc) -->
+:<math>g(I) = \frac{1}{1 + ({\nabla I}^*  + g) \cdot 2}</math>
+<!--: g(I) = 1 /  ( 1 + (gradient I^*  + g) * 2) -->
+::<math>\nabla I^*</math> = difference of smoothened (gaussian blurred) image
+<!--::gradient I^* = difference of smoothened (gaussian blur) image -->	
+::<math>g = \begin{cases} 0  & \text{if gray value } < \text{ preset gray value.}\\
+\text{gray value }&\text{otherwise.} \end{cases}</math>
+:<math>\Delta T = \frac{1}{6 \cdot W_a \cdot W_c}</math>
+<!--:delta T = 1 / ( 6 \cdot Wa \cdot Wc) -->
 :<math>\Phi(i)</math> = iso surface at current iteration i 
 <!--:phi(i) = iso surface at current iteration i-->
 :<math>W_a</math> = Advection weight
