@@ -2,6 +2,7 @@
 | name                   = VIB Protocol
 | software               = ImageJ
 | author                 = Benjamin Schmid, Johannes Schindelin
+| maintainer             = [[User:Schindelin|Johannes Schindelin]]
 | filename               = [http://132.187.25.13/home/imagej/VIB_Protocol.jar]
 | source                 = [http://132.187.25.13/home/imagej/VIB_Protocol.jar]
 | released               = 13 July 2008
@@ -68,4 +69,3 @@ Normally, the Segmentation Editor opens during the software execution and asks t
 
 
 [[Category:Plugins]][[Category:Segmentation]]
-[[Category:Unmaintained]]
