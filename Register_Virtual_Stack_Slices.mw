@@ -79,7 +79,7 @@ For the "moving least squares" model, the maximal warping will still take place 
 We can visualize the relaxation of the system into the desired registration model by checking the option "Display relaxation graph". In this graph the average mean squared error (MSE) between the correspondences of the whole sequence of slices is displayed for each relaxation iteration.
 
 == Save Transforms ==
-Since the 09/24/2009 version, the plug-in has the option to store the resulting transforms into files. This way, the results can be reproduce later on the same images or on a difference sequence.
+Since the 09/24/2009 version, the plugin has the option to store the resulting transforms into files. This way, the results can be reproduce later on the same images or on a difference sequence.
 
 To save the transforms, you just have to click on the "Save transforms" check-box of the main dialog. Then, after selecting the source and output directories, a new dialog will pop up to select the folder to store the transforms in.
 
