@@ -12,3 +12,5 @@
 
 
 This plugin takes a sequence of image slices stored in a folder, and delivers a list of transformed image slices (with enlarged canvas) applying a list of transforms stored as .XML files in another folder.
+
+[[Category:Plugins]][[Category:Transform]][[Category:Registration]]
