@@ -566,7 +566,7 @@ To compile it:
 
  $ javac -classpath .:ij.jar:../jars/fiji-scripting.jar:../plugins/Jython_Interpreter.jar my/Jython_Launcher.java 
 
-(check that the path to the two jars that you need is correct!)
+(check that the path to the three jars that you need is correct!)
 
 
 Then we define the plugins.config file:
