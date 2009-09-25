@@ -14,6 +14,8 @@ This script calculates the required Gaussian kernel for a given target '''width'
 
 Furthermore, you can define the "intrinsic" Gaussian kernel of the source and target images.  An optimal sampler is identified by sigma=0.5.  If your source image was blurred already, you may set a higher '''source sigma''' for a sharper result.  Setting '''target sigma''' to values smaller than 0.5 makes the result appear sharper and therefore eventually aliased.
 
+This script is maintained by Stephan Saalfeld.
+
 ==Example==
 
 A picture is worth a thousand words, so here is an example.  You see a 2,048&times;2,048px transmission electron micrograph downsampled to 100&times;100px.  For better illustration, the examples are shown at 200%.
@@ -144,4 +146,3 @@ else
 * [[Scripting_comparisons]]
 
 [[Category:Scripting]]
-[[Category:Unmaintained]]
