@@ -1,3 +1,16 @@
+{{Infobox Plugin
+| name                   = Stitching 2D/3D
+| software               = ImageJ
+| author                 = Stephan Preibisch
+| maintainer             = Stephan Preibisch
+| filename               = Stitching_.jar
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Stitching_;hb=HEAD on gitweb]
+| released               = October 2008
+| latest version         = April 2009
+| category               = [[:Category:Plugins|Plugins]]
+| website                = [http://fly.mpi-cbg.de/~preibisch Stephan Preibisch's homepage]
+}}
+
 == Introduction ==
 
 There is an increasing demand to image large biological specimen at high resolution. Typically those specimen do not fit in the field of view of the microscope. To overcome this drawback, motorized stages moving the sample are used to create a tiled scan of the whole specimen. The physical coordinates provided by the microscope stage are not precise enough to allow reconstruction (”Stitching”) of the whole image from individual image stacks.
@@ -143,4 +156,3 @@ For any type of comment, questions or input please write to preibisch@mpi-cbg.de
 
 [[Category:Plugins]]
 [[Category:Stitching]]
-[[Category:Unmaintained]]
