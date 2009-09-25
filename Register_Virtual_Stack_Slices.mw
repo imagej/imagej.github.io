@@ -34,7 +34,7 @@ All models are aided by automatically extracted [[Feature_Extraction | SIFT feat
 </ul>
 </p>
 <p>Images may have different dimensions and be of different type.</p>
-<p><b>Step 1</b>: launch the "Plugins - Registration - Register Virtual Stack Slices" plugin</p>
+<p><b>Step 1</b>: launch the "Plugins - Registration - Register Virtual Stack Slices" plugin.</p>
 [[Image:Rvs_main_window.png|500px|thumb|Register Virtual Stack main window]]
 <p><b>Step 2</b>: choose the appropriate options:<br />
 <ul>
