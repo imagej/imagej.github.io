@@ -31,7 +31,7 @@ This is a '''complementary plugin''' of [[Register Virtual Stack Slices]]. It al
 *Select the target folder where resulting transformed slices will be automatically stored as TIFF files.
 *Select the transform folder, where the .XML files from a [[Register Virtual Stack Slices]] are stored. 
 
-On success, a virtual stack will open showing all the transformed images contained in the output folder. The virtual stack can be closed with no ill effect: images are saved in the output folder.
+'''Results''': on success, a virtual stack will open showing all the transformed images contained in the output folder. The virtual stack can be closed with no ill effect: images are saved in the output folder.
 
 
 [[Category:Plugins]][[Category:Transform]][[Category:Registration]]
