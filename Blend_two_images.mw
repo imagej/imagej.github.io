@@ -7,6 +7,8 @@ A [[Clojure Scripting|Clojure]] script illustrating how to:
 * Create a new image
 * Set the pixels of the image to a new value, in this case the average of two images
 
+The script is maintained by Albert Cardona.
+
 == Code ==
 
 <source lang="lisp">
@@ -52,4 +54,3 @@ A [[Clojure Scripting|Clojure]] script illustrating how to:
 
 [[Category:Plugins]]
 [[Category:Scripting]]
-[[Category:Unmaintained]]
