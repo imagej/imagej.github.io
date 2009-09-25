@@ -83,7 +83,7 @@ Since the 09/24/2009 version, the plug-in has the option to store the resulting 
 
 To save the transforms, you just have to click on the "Save transforms" check-box of the main dialog. Then, after selecting the source and output directories, a new dialog will pop up to select the folder to store the transforms in.
 
-The transforms are saved as .XML files, following [[TrakEM2]] format.
+The transforms are saved as '''.XML''' files, following [[TrakEM2]] format.
 
 == Notes ==
 <ol>
