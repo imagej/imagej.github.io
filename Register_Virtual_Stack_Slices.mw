@@ -78,6 +78,8 @@ For the "moving least squares" model, the maximal warping will still take place 
 
 We can visualize the relaxation of the system into the desired registration model by checking the option "Display relaxation graph". In this graph the average mean squared error (MSE) between the correspondences of the whole sequence of slices is displayed for each relaxation iteration.
 
+== Save Transforms ==
+
 == Notes ==
 <ol>
 <li>The plugin is multithreaded: more CPU cores means faster execution.</li>
