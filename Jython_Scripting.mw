@@ -525,15 +525,17 @@ The simplest way is to place the jython script file into fiji/plugins/ folder or
 
 PLEASE NOTE: there is no need to do the following. See entry above.
 
-We create two jython scripts that we want to distribute in a .jar file as plugins:
+The whole idea is to be able to distribute an entire collection of scripts in a single .jar file, for best convenience.
 
-The printer.py script:
+In this example, we create two jython scripts that we want to distribute in a .jar file as plugins:
+
+The <i>printer.py</i> script:
 
 <source lang="python">
 IJ.log("Print this to the log window")
 </source>
 
-The create_new_image.py script:
+... and the <i>create_new_image.py</i> script:
 
 <source lang="python">
 ip = ByteProcessor(400, 400)
@@ -544,7 +546,7 @@ ip.fill(ip.getMask())
 imp.show()
 </source>
 
-Place both scripts under a folder named <i>scripts</i>.
+Place both scripts under a folder named <i>scripts/</i> .
 
 You will need a tiny .java file specifying a launcher PlugIn, such as:
 
