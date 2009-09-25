@@ -10,7 +10,8 @@
 | category               = [[:Category:Registration|Registration]],[[:Category:Transform|Transform]], [[:Category:Plugins|Plugins]]
 }}
 
-
 This plugin takes a sequence of image slices stored in a folder, and delivers a list of transformed image slices (with enlarged canvas) applying a list of transforms stored as .XML files in another folder.
+
+This is a complementary plugin of [[Register Virtual Stack Slices]]. It allows reproducing the results of [[Register Virtual Stack Slices]] by loading the corresponding transform files (saved by checking the option "Save transforms" in the main dialog).
 
 [[Category:Plugins]][[Category:Transform]][[Category:Registration]]
