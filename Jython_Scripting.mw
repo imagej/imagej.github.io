@@ -555,7 +555,7 @@ import Jython.Refresh_Jython_Scripts;
 
 public class Jython_Launcher implements PlugIn {
     public void run(String arg) {
-        new Refresh_Jython_Scripts.runScript(getClass().getResourceAsStream(arg);
+        new Refresh_Jython_Scripts.runScript(getClass().getResourceAsStream(arg));
     }
 }
 </source>
@@ -577,5 +577,13 @@ Finally, we put all files in a .jar file:
  $ jar my_jython_scripts.jar plugins.config my/Jython_Launcher.class scripts/*py
 
 Then, drop the jar file into fiji/plugins/ folder and run "Help - Update Menus", or restart fiji. Your scripts will appear under Plugins - My Scripts.
+
+For clarity, this is a summary of the files in the folder:
+ my/Jython_Launcher.java
+ my/Jython_Launcher.class
+ scripts/printer.py
+ scripts/create_new_image.py
+ plugins.config
+
 
 Notice, though, that <b>you don't need to do the .jar packaging at all</b>. Just place the python scripts directly under fiji/plugins/My Scripts/ and they will appear in the menus as regular plugins.
