@@ -4,6 +4,7 @@ As simple as that: a dialog opens to ask for a time delay (in seconds).
 
 After such delay, a screenshot of the desktop is taken.
 
+The script is maintained by Albert Cardona.
 
 == Code ==
 
@@ -40,4 +41,3 @@ if not gd.wasCanceled():
 
 [[Category:Plugins]]
 [[Category:Scripting]]
-[[Category:Unmaintained]]
