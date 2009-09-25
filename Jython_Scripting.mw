@@ -564,7 +564,7 @@ Notice we place the above file under directory <i>my/</i>, packaged.
 
 To compile it:
 
- $ java -cp .:ij.jar my/Jython_Launcher.java 
+ $ java -cp .:ij.jar:../Jython_Interpreter.jar my/Jython_Launcher.java 
 
 
 Then we define the plugins.config file:
