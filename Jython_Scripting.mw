@@ -576,7 +576,7 @@ Then we define the plugins.config file:
 
 Finally, we put all files in a .jar file:
 
- $ jar my_jython_scripts.jar plugins.config my/Jython_Launcher.class scripts/*py
+ $ jar cf my_jython_scripts.jar plugins.config my/Jython_Launcher.class scripts/*py
 
 Then, drop the jar file into fiji/plugins/ folder and run "Help - Update Menus", or restart fiji. Your scripts will appear under Plugins - My Scripts.
 
