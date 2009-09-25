@@ -2,7 +2,7 @@
 | software               = ImageJ
 | name                   = Sync Windows
 | author                 = Joachim Walter (walter at biz.uni-muenchen.de)
-| maintainer             = n/a
+| maintainer             = [[Fiji Development Team]]
 | filename               = Sync_Win.jar
 | source                 = contained in http://rsbweb.nih.gov/ij/plugins/download/jars/Sync_Win.jar (1 file)
 | latest version         = v1.7 (14 August 2007)
@@ -32,4 +32,3 @@ Clicking on '''Synchronize All''' starts synchronizing all windows, clicking on 
 
 
 [[Category:Plugins]]
-[[Category:Unmaintained]]
