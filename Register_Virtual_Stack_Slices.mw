@@ -25,7 +25,7 @@ The plugin can perform''' 6 types of image registration techniques''':
 * Moving least squares  
 All models are aided by automatically extracted [[Feature_Extraction | SIFT features]].
 
-= User Manual =
+==User Manual==
 <p><b>Premises</b>:<br />
 <ul>
 *'''Source folder''': You have a folder with an ordered list of image files in it that ImageJ can open.
@@ -54,7 +54,7 @@ All models are aided by automatically extracted [[Feature_Extraction | SIFT feat
 </p>
 <p>On success, a virtual stack will open showing all the registered images contained in the target folder. The virtual stack can be closed with no ill effect: images are saved in the target folder.</p>
 
-== Shrinkage constrain ==
+=== Shrinkage constrain ===
 [[Image:RVS_shrink_option.png|thumb|400px|Shrinkage constrain checkbox]]
 Since the 09/13/2009 version and thanks to [http://hebb.mit.edu/ Daniel Berger], Register Virtual Stack Slices has the option of constraining the registration to avoid section shrinking for large sets of images.
 
@@ -79,14 +79,14 @@ For the "moving least squares" model, the maximal warping will still take place 
 
 We can visualize the relaxation of the system into the desired registration model by checking the option "Display relaxation graph". In this graph the average mean squared error (MSE) between the correspondences of the whole sequence of slices is displayed for each relaxation iteration.
 
-== Save Transforms ==
+=== Save Transforms ===
 Since the 09/24/2009 version, the plugin has the option to store the resulting transforms into files. This way, the results can be reproduce later on the same images or on a difference sequence by using the plugin [[Transform Virtual Stack Slices]].
 
 To save the transforms, you just have to click on the "Save transforms" check-box of the main dialog. Then, after selecting the source and output directories, a new dialog will pop up to select the folder to store the transforms in.
 
 The transforms are saved as '''.XML''' files, following [[TrakEM2]] format.
 
-== Notes ==
+=== Notes ===
 <ol>
 <li>The plugin is multithreaded: more CPU cores means faster execution.</li>
 <li>The two most relevant parameters in the [[Feature_Extraction | SIFT feature extraction]] are:<br />
@@ -115,7 +115,7 @@ For a complete description of the elastic parameters, please visit the [http://b
 
 </ol>
 
-= Examples =
+== Examples ==
 
 Example of registration results using the shrinking constraint:
 
@@ -131,12 +131,12 @@ Example of registration results using the shrinking constraint:
 <tr><td><b>Raw:</b></td><td><b>Registered:</b></td></tr>
 <tr><td>[[Image:Stack4.gif]]</td><td>[[Image:Stack4-2.gif]]</td></tr></table>
 
-= API documentation = 
+== API documentation ==
 The latest documentation of the code can be found here: 
 
 [http://bioweb.cnb.csic.es/~iarganda/Register_virtual_stack/doc/ http://bioweb.cnb.csic.es/~iarganda/Register_virtual_stack/doc/]
 
-= Scripting / PlugIn =
+== Scripting / PlugIn ==
 
 <p>You can call the plugin in a non-interactive fashion from a jython script:</p>
 <source lang="python">
@@ -162,12 +162,12 @@ p.minInlierRatio = 0.05
 Register_Virtual_Stack_MT.exec(source_dir, target_dir, transf_dir, reference_name, p, use_shrinking_constraint)
 </source>
 
-= See also =
+== See also ==
 * [[Transform Virtual Stack Slices]], to see how to load the saved transforms.
 * [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/imagefeatures/FloatArray2DSIFT.java;hb=HEAD FloatArray2DSIFT.java] which contains the subclass Param which is the 'sift' member of the Register_Virtual_Stack_Slices.Param subclass.
 * [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/register_virtual_stack_slices/register_virtual_stack/Register_Virtual_Stack_MT.java;hb=HEAD Register_Virtual_Stack_MT.java], including the Param subclass.
 
-= License =
+== License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  
