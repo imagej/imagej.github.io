@@ -23,6 +23,11 @@ For all details, visit the home page at [http://biocomp.cnb.uam.es/~iarganda/bUn
 == Video Tutorial ==
 For a quick start, you can have a look at the [http://imagejdocu.tudor.lu/doku.php?id=video:aligning:bunwarpj_basic_tutorial video tutorial].
 
+== License ==
+This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  
+
 ----
 
 [[Category:Plugins]]
