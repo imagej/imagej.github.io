@@ -1,5 +1,3 @@
-menuentry: {{#getvar: menuentry}}
-
-{{#ifeq: {{#getvar: menuentry}} | yes |
-Sorry, the menu entry {{PAGENAME}} is not documented.  Please [{{fullurl:{{FULLPAGENAME}}|action=edit}} document it].|
-There is currently no text in this page, you can [[Special:Search/{{PAGENAME}}|search for this page title]] in other pages or [{{fullurl:{{FULLPAGENAME}}|action=edit}} edit this page].}}
+{{#ifeq: {{#getvar: menuentry}} ||
+There is currently no text in this page, you can [[Special:Search/{{PAGENAME}}|search for this page title]] in other pages or [{{fullurl:{{FULLPAGENAME}}|action=edit}} edit this page].|
+Sorry, the menu entry {{PAGENAME}} is not documented.  Please [{{fullurl:{{FULLPAGENAME}}|action=edit}} document it].}}
