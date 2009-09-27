@@ -24,6 +24,10 @@ On selecting text, a popup offers to:
 * execute
 * save to a new file
 
+= Using the script editor =
+
+You can create, edit and run scripts using Fiji's script editor.  For details, please see [[Using the Script Editor|the Script Editor documentation]].
+
 = Creating scripts and using "refresh scripts" =
 
 On startup, ImageJ will run all "refresh scripts" plugins, one for each supported language. This will result in all scripts present within the plugins folders to be added to the menus.
