@@ -1,4 +1,4 @@
-= Fiji =
+= Getting help regarding Fiji =
 
 You might want to subscribe to the [http://groups.google.com/group/fiji-users Fiji users'] (or [http://groups.google.com/group/fiji-devel Fiji developers']) mailing list, or just browse the archives for help.
 
@@ -6,9 +6,12 @@ Alternatively, you might want to look in [[IRC]] for other users and developers 
 
 If you encounter a bug, please consider taking some time to [http://pacific.mpi-cbg.de/bugzilla/ report a bug] and test our fixes.  Remember: Fiji is a community effort, and it will be as good as you make it.
 
-= This wiki =
+= Getting help regarding the Fiji Wiki =
 
 If you look for help editing this Wiki, please look [http://www.mediawiki.org/wiki/Help:Contents here].
-If you do not have an account yet, you can ask any existing user to [http://pacific.mpi-cbg.de/wiki/index.php?title=Special:Userlogin&type=signup create an account] for you.
+
+= New accounts =
+
+Since we do not have time to monitor the Wiki closely, and rather want to spend that time to enhance the Wiki instead.  For this reason, we have a simple policy: to get an account, you have to ask personally someone who already has an account, and who then should click [{{SERVER}}/wiki/index.php?title=Special:Userlogin&type=signup this link] to create an account for you.
 
 [[Category:Help]]
