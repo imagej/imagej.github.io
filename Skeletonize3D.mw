@@ -4,7 +4,7 @@
 | author                 = [http://bioweb.cnb.csic.es/~iarganda/index_EN.html Ignacio Arganda-Carreras]
 | maintainer             = Ignacio Arganda-Carreras ([mailto:ignacio.arganda@gmail.com ignacio.arganda@gmail.com])
 | filename               = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?id=plugin%3Amorphology%3Askeletonize3d%3Astart&cache=cache&media=plugin:morphology:skeletonize3d:skeletonize3d_.jar Skeletonize3D_.jar] 
-| source                 = Included in the jar
+| source                 = Included in the jar or [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Skeletonize3D_/Skeletonize3D_.java;h=6ce5389ad0cc0a9934c39321e8cfbfafef5df4dc;hb=HEAD on gitweb]
 | released               = November 14th, 2008
 | latest version         = November 19th, 2008
 | status                 = stable
