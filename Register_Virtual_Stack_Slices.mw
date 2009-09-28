@@ -5,7 +5,7 @@
 | maintainer             = Ignacio Arganda-Carreras ([mailto:ignacio.arganda@gmail.com ignacio.arganda@gmail.com])
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/register_virtual_stack_slices/register_virtual_stack/Register_Virtual_Stack_MT.java;hb=HEAD on gitweb] (1897 lines)
 | released               = 2008
-| latest version         = September 26
+| latest version         = September 26th, 2009
 | status                 = stable, active
 | category               = [[:Category:Registration|Registration]], [[:Category:Plugins|Plugins]]
 }}
