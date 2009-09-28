@@ -133,7 +133,7 @@ Example of registration results using the shrinking constraint:
 
 == References ==
 The algorithm implemented for elastic registration ([[BUnwarpJ|bUnwarpJ]]) and its technical explanations are detailed on the paper: 
-* Ignacio Arganda-Carreras, Carlos O. S. Sorzano, Roberto Marabini, Jose M. Carazo, Carlos Ortiz de Solorzano, and Jan Kybic, [http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/downloads/arganda_carreras_CVAMIA06.pdf "Consistent and Elastic Registration of Histological Sections using Vector-Spline Regularization"], Lecture Notes in Computer Science, Springer Berlin / Heidelberg, volume 4241/2006, CVAMIA: Computer Vision Approaches to Medical Image Analysis, pages 85-95, 2006.
+*I. Arganda-Carreras, C. O. S. Sorzano, R. Marabini, J.-M. Carazo, C. Ortiz-de Solorzano, and J. Kybic, [http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/downloads/arganda_carreras_CVAMIA06.pdf "Consistent and Elastic Registration of Histological Sections using Vector-Spline Regularization,"] Lecture Notes in Computer Science, Springer Berlin / Heidelberg, volume 4241/2006, CVAMIA: Computer Vision Approaches to Medical Image Analysis, pages 85-95, 2006.
 
 == API documentation ==
 The latest documentation of the package can be found here: 
