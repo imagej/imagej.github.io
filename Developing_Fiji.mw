@@ -88,6 +88,14 @@ When you want to point at specific code on IRC or via mail, you can do so by pos
 
 This script will open the appropriate link with Firefox.  It can deal with files, even in submodules, and commits (for commits, your current directory must be inside the appropriate Git checkout).  For files, you can append ":<linenumber>".
 
+== Contributing ==
+
+Please make sure that you are a little familiar with [[Git mini howto|Git]].  Once you are, you can easily make a local ''contrib'' branch and [[Git mini howto#Contributing|push it]].
+
+Alternatively, you can make yourself an account on [http://github.com/ GitHub] and fork [http://github.com/dscho/fiji Fiji].
+
+You probably also want to let us know what you did, so just send a mail to [mailto:fiji-devel@googlegroups.com the Fiji devel mailing list].
+
 == Further reading for developers ==
 
 *[[Uploading plugins]]
