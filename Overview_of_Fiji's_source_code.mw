@@ -1,0 +1,57 @@
+This page will give you an idea how Fiji's source code is organized.  Every directory referred to is relative to the Fiji root, i.e. the directory into which you [[Git mini howto#Cloning|cloned fiji.git]].
+
+== The Fiji launcher ==
+
+The [[Developing Fiji#The_Fiji_launcher|Fiji launcher]] is a relatively small C++ program whose source sits in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=fiji.cxx;hb=HEAD <Fiji-root>/fiji.cxx].
+
+The whole purpose of the launcher is to make launching Java and Fiji easier, but there are a few other niceties in there, such as running Jython scripts or .jar files with the same classpath as Fiji.
+
+The generated launcher is ''<Fiji-root>/fiji'' (or on Windows, ''fiji.exe'').
+
+== The plugins ==
+
+We try to [[Why Closed-Source Is Wrong|avoid]] plugins without sources, but even those are not tracked in <Fiji-root>/plugins/, but rather in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=staged-plugins;hb=HEAD <Fiji-root>/staged-plugins].  The reason is that we would want to provide our very own ''plugins.config'' files with them, i.e. we want to have custom locations/names of the plugins contained in the ''.jar'' file.
+
+Such ''plugins.config'' files that are to be inserted in certain ''.jar'' also live in ''staged-plugins'', as ''<basename-of-jar>.config''.  Example: the plugins.config for ''VIB_.jar'' is stored in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=staged-plugins/VIB_.config;hb=HEAD <Fiji-root>/staged-plugins/VIB_.config].
+
+The sources for many plugins shipped with (and maintained in) Fiji live in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins;hb=HEAD <Fiji-root>/src-plugins].  The subdirectories in ''src-plugins'' mostly correspond to the basename of the .jar file generated from it.  Example: the sources of ''plugins/Fiji_Updater.jar'' are stored in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Fiji_Updater;hb=HEAD <Fiji-root>/src-plugins/Fiji_Updater/].
+
+== Libraries ==
+
+Some plugins require third-party libraries such as ''Jama''.  Such libraries are not stored in ''plugins/'' (lest an underscore in their filenames would make ImageJ mistake them for plugins), but in ''jars/'' instead.
+
+Some of the libraries' sources are stored in ''src-plugins/'' (in subdirectories corresponding to the basename of the respective ''.jar'' file).
+
+== Submodules ==
+
+Some components of Fiji are stored in ''submodules'', i.e. in [[Git]] repositories of their own right.  This is the case for [[ImageJA]], many third-party libraries, and some plugins collections that existed before Fiji, such as [[TrakEM2]] or VIB.
+
+These submodules are subdirectories in the <Fiji-root>, and they may, or may not, be checked out.
+
+Every submodule is "committed" at a certain revision, i.e. Git not only records where, say, ImageJA is to be cloned from, but also what revision is current for any given commit in ''fiji.git''.
+
+If submodules are checked out, you can cd into the respective directories and work with them as with other Git repositories.
+
+Our policy, however, is that you do not need to check out the submodules if you do not want to work <u>on</u> them: the result of the most recently committed revision needs to be committed as binary in [[[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f= precompiled;hb=HEAD <Fiji-root>/precompiled/].  For example, the ''.jar'' file generated from the ''VIB'' submodule is committed as ''precompiled/VIB_.jar''.
+
+== The Fiji Build system ==
+
+For historical reasons, the Fiji Build system's source code lives in ''<Fiji-root>/fake/Fake.java''.  It will be compiled into ''<Fiji-root>/fake.jar''.
+
+To avoid a chicken-and-egg problem, a ''fake.jar'' that can compile the current Fiji Build system is committed to ''precompiled/'' (and for the same reason, precompiled versions of the Fiji launchers for all supported platforms live there, too).
+
+== The ''precompiled/'' directory ==
+
+Precompiled versions of all ''.jar'' files generated from submodules, of ''fake.jar'' and of the Fiji launchers live in ''precompiled/''.
+
+== The ''bin/'' directory ==
+
+Quite a few tasks -- such as committing a new submodule or sources for a plugin, or releasing a new version of Fiji -- are performed by scripts.  These scripts live in the ''<Fiji-root>/bin/'' subdirectory.
+
+Some of these scripts are shell scripts, others are Jython scripts with special [http://en.wikipedia.org/wiki/Shebang shebang] lines which trigger them to be called with the current Fiji launcher.
+
+== The ''nightly-build/'' directory ==
+
+We have a ''cronjob'' that builds Fiji every night, from then-current sources.  The responsible script is ''bin/nightly-build.sh''.
+
+Of course, it might often be quite handy to do the same locally, i.e. compile from a completely pristine state (e.g. to ensure that your latest commit includes all necessary files).  You can easily do that by calling ''./bin/nightly-build.sh HEAD'', which will automatically create an appropriate ''nightly-build/'' subdirectory (if it does not exist yet), and simulate a from-scratch build.
