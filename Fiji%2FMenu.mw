@@ -1,6 +1,6 @@
 The hierarchy of the Plugins Menu is show here, with a few words of explanation for each plugin and links to more documentation where available.  If you know about a plugin that is in this list, but which doesn't yet have a description, please add it.  
 
-This list is generated automatically from a [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=scripts/plugin-list-parser.py;hb=HEAD script] that can be found in the development folder.
+This list is generated automatically from a [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=bin/plugin-list-parser.py;hb=HEAD script] that can be found in the development folder.
 
 
 {{Template:PluginList}}
