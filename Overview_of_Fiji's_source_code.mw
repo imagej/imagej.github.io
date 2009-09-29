@@ -32,7 +32,7 @@ Every submodule is "committed" at a certain revision, i.e. Git not only records 
 
 If submodules are checked out, you can cd into the respective directories and work with them as with other Git repositories.
 
-Our policy, however, is that you do not need to check out the submodules if you do not want to work <u>on</u> them: the result of the most recently committed revision needs to be committed as binary in [[[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f= precompiled;hb=HEAD <Fiji-root>/precompiled/].  For example, the ''.jar'' file generated from the ''VIB'' submodule is committed as ''precompiled/VIB_.jar''.
+Our policy, however, is that you do not need to check out the submodules if you do not want to work <u>on</u> them: the result of the most recently committed revision needs to be committed as binary in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=precompiled;hb=HEAD <Fiji-root>/precompiled/].  For example, the ''.jar'' file generated from the ''VIB'' submodule is committed as ''precompiled/VIB_.jar''.
 
 == The Fiji Build system ==
 
