@@ -20,6 +20,7 @@ However, it is much more powerful than that.  Amongst other things, you can
 * Run a Java class' main() method: '''./fiji --main-class=example'''
 * Pass some [[JavaOptions|Java options]]: '''./ fiji -server --''' (everything that comes before a '''--''' is interpreted as Java option)
 * Link Fiji into the PATH: '''ln -s $(pwd)/fiji $HOME/bin/ && fiji'''
+* Start Fiji and run a menu entry directly: '''./fiji --run Update_Fiji''' (the underscore was used in place of a space to avoid having to quote the argument)
 
 The Fiji launcher can do more, just call '''./fiji --help''' for a short description.
 
