@@ -13,13 +13,7 @@ where it can not handle a 2D time series stack as such.
 It just treats it as a z series, meaning that the results are not as expected since it treats the data as a single 3D dataset instead of as many 2D time points.
 
 ==Solution:==
-To get around this limiatation,
-we can run the "Analyze Skeleton (2D/3D)" command
-on each individual frame of the time series, 
-since the plygin a"Analyze Skeleton (2D/3D)" works as expected on single frames!
-We need to output the results for each frame, in a sensible readable manner (save as .xls)
-and make a tagged results image "movie" by converting all the single frame tagged result images into a stack.
-
+To get around this limitation, we can run the "Analyze Skeleton (2D/3D)" command on each individual frame of the time series, since the plugin "Analyze Skeleton (2D/3D)" works as expected on single frames! We need to output the results for each frame, in a sensible readable manner (save as .xls) and make a tagged results image "movie" by converting all the single frame tagged result images into a stack.
 
 ==How to use this script:==
 
