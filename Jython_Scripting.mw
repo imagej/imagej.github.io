@@ -517,8 +517,7 @@ print dir(ij)
 
 === Using a jython script as a plugin ===
 
-The simplest way is to place the jython script file into fiji/plugins/ folder or a subfolder, and it will appear in the menus on restarting fiji.
-
+The simplest way is to place the jython script file into fiji/plugins/ folder or a subfolder, and it will appear in the menus after running "'''Plugins>Scripting>Refresh Jython Scripts'''" or "'''Help>Update Menus'''", or on restarting Fiji.
 
 === Distributing jython scripts in a .jar file ===
 
