@@ -216,7 +216,7 @@ imp.updateAndDraw()
 </source>
 
 
-==== ... and counting particles, and mesuring their areas ====
+==== ... and counting particles, and measuring their areas ====
 
 Continuing from the <i>imp</i> above, that contains the now watersheded "blobs" sample image:
 
