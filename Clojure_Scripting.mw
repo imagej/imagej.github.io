@@ -8,7 +8,7 @@
 
 *[http://en.wikibooks.org/wiki/Clojure_Programming/Examples/Cookbook Clojure Cookbook].
 *[http://clojure.org/api The Clojure API] (listing of all available functions, with explanations).
-
+*[http://clojure.org/cheatsheet Clojure cheat sheet]: a summary of all the essentials.
 
 <h3>Using Clojure inside Fiji</h3>
 Go to "Plugins - Scripting - Clojure Interpreter". The prompt accepts any clojure code.
