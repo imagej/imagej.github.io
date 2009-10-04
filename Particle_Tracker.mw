@@ -9,8 +9,16 @@
 | status                 = probably not active
 | category               = [[:Category:Particle analysis|Particle analysis]]
 | documentation          = [http://weeman.inf.ethz.ch/ParticleTracker/doc/ParticleTrackerUserManual.pdf ParticleTrackerUserManual.pdf]
-| website                = [http://weeman.inf.ethz.ch/ParticleTracker/]
+| website                = http://weeman.inf.ethz.ch/ParticleTracker/
 }}
+
+'''Particle Tracker''' is a 2D feature point-tracking tool for the automated detection and analysis of particle trajectories as recorded by video imaging in cell biology. 
+The algorithm is decsribed in Sbalzarini and Koumoutsakos (2005<ref>I. F. Sbalzarini and P. Koumoutsakos. [http://dx.doi.org/10.1016/j.jsb.2005.06.002 Feature point tracking and trajectory analysis for video imaging in cell biology] J. Struct. Biol., 151(2): 182-195, 2005</ref>).
+
+Documentation is available as [http://weeman.inf.ethz.ch/ParticleTracker/tutorial.html html] and [http://weeman.inf.ethz.ch/ParticleTracker/doc/ParticleTrackerUserManual.pdf pdf] 
+
+== References ==
+<references />
 
 [[Category:Plugins]]
 [[Category:Particle analysis]]
