@@ -1,17 +1,11 @@
 __NOTOC__
 
-Please bear in mind: Fiji is ''beta'' software for now.  If you want it to become stable, please consider submitting [http://pacific.mpi-cbg.de/bugzilla/ bug reports], or ask for help on [http://groups.google.com/group/fiji-users the mailing list], but be prepared to test our fixes, too :-)
+If you encounter bugs, please consider submitting [http://pacific.mpi-cbg.de/bugzilla/ bug reports], or ask for help on [http://groups.google.com/group/fiji-users the mailing list], but we might ask you to test our fixes, too :-)
 
 <b>Please note! The authoritative site for Fiji is <i>http://pacific.mpi-cbg.de</i>, so if you downloaded Fiji from some mirrors such as Softpedia and experience problems, please re-download from here and verify that the problem still exists.</b>
 
-You can download the current version of Fiji ("Dresden 2009") for
+You can download the current version of Fiji ("Plzeň") for
 {{DownloadsCurrent}}
-
-=== Release candidate ===
-
-The first release candidate for ''Fiji Plzeň'' is out:
-
-{{DownloadsVersion|Plzen-rc1|20090930}}
 
 === Source Code ===	 
 			
