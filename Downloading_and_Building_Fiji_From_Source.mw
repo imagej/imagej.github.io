@@ -4,11 +4,19 @@
 
 To fetch the Fiji source code you should use [http://git.or.cz/ git] (Windows users, please go [http://msysgit.googlecode.com here]).  If you are not familiar with Git, you might want to read [[Git mini howto|this page]] or [[:Category:Git|these pages]] instead.
 
+==== Cloning source as unknown contributor ====
 Your first step should be to "clone" the fiji repository with the following command:
 
  git clone git://pacific.mpi-cbg.de/fiji.git
 
 This should start downloading the base fiji repository and unpack it into a directory called "fiji" in your current directory.  Once this has successfully completed, change into the newly created "fiji" directory.
+
+==== Cloning source as known contributor ====
+The above command creates a unknown contributor copy of Fiji in your computer. If you have your own user account in pacific.mpi-cbg.de, then you should clone fiji with the following command:
+ 
+ git clone ''username''@pacific.mpi-cbg.de:/srv/git/fiji.git
+
+Just substitute ''username'' with your corresponding user name on that machine.
 
 === Submodules ===
 
