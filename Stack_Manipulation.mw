@@ -5,7 +5,7 @@
 | maintainer             = Jean-Yves Tinevez ([mailto:tinevez@mpi-cbg.de tinevez@mpi-cbg.de])
 | filename               = Stack_Manipulation.jar
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Stack_Manipulation;hb=HEAD on gitweb] (12 java files)
-| latest version         = 12 August 2009
+| latest version         = 15 October 2009
 | status                 = stable, not active 
 }}
 
@@ -23,6 +23,10 @@ What they do is pretty much summarized by the following diagram, taken from the 
 
 
 * The '''Grouped ZProjector''' acts a bit like the '''Substack Maker''', for it allows to reduce the number of frame within a stack. But rather than taking a slice every certain step, it combines a group of slices and project them on a single slice. The size of the groups is configurable, and must be a divisor of the total number of slice.
+
+
+* The '''Slice Keeper''' does the opposite that of '''Slice Remover'''. Instead of removing every nth slice in a stack, it creates a new stack by only keeping every nth slice from the original stack.
+
 
 == Documentation ==
 
@@ -129,13 +133,17 @@ By [mailto:tcollins_at_macbiophotonics.ca Tony Collins].
 
 
 === Stack_Maker ===
+
 '''Demontager''': This plugin by Robert Clements converts a montaged image to an image stack based on the number of rows and columns input by the user. This is the opposite of what the Image/Stacks/Make Montage command does.
 http://rsb.info.nih.gov/ij/plugins/demontager.html
 
 === Slice_Remover ===
 
+Original code by Wayne Rasband.
 
+=== Slice_Keeper ===
 
+By [mailto:tcollins_at_macbiophotonics.ca Tony Collins], initially part of his wonderful MacBiophotonics ImageJ plugins package. Tony mentioned credit should go to Wayne Rasband, for the initial code is his work.
 
 
 <references/>
