@@ -8,7 +8,7 @@
 | released               = July 20th, 2006
 | latest version         = September 17th, 2009
 | status                 = active
-| category               = [[:Category:Registration]]
+| category               = [[:Category:Registration|Registration]]
 | website                = [http://biocomp.cnb.csic.es/~iarganda/bUnwarpJ/ bUnwarpJ]
 }}
 2D Image registration method based on elastic deformations represented by B-splines. The invertibility of the deformations is forced through a consistency restriction. 
