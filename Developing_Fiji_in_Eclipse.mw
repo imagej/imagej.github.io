@@ -23,7 +23,7 @@ cd ~/workspace
 git clone ssh://contrib@pacific.mpi-cbg.de/srv/git/fiji.git
 </source>
 
-This will create the folder ~/workspace/fiji where you have the core Fiji repository. '''Note''': change "contrib" by your user name in pacific if you have an account there.
+This will create the folder ~/workspace/fiji where you have the core Fiji repository. '''Note''': change "contrib" for your user name in ''pacific.mpi-cbg.de'' if you have an account there.
 
 In order to run Fiji properly, it is suggested to use the JRE which is shipped with Fiji.  This is a platform dependent submodule of the Fiji repository.  Check it out with
 
