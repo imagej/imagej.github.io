@@ -2,7 +2,7 @@
 | software               = ImageJ
 | name                   = bUnwarpJ
 | author                 = [http://biocomp.cnb.csic.es/~iarganda/index_EN.html Ignacio Arganda-Carreras]
-| maintainer             = Ignacio Arganda-Carreras ([mailto:ignacio.arganda@uam.es ignacio.arganda@gmail.com])
+| maintainer             = Ignacio Arganda-Carreras ([mailto:ignacio.arganda@gmail.com ignacio.arganda@gmail.com])
 | filename               = [http://biocomp.cnb.csic.es/~iarganda/bUnwarpJ/downloads/bUnwarpJ_.jar bUnwarpJ_.jar] 
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/bUnwarpJ_;hb=HEAD Git repository]
 | released               = July 20th, 2006
