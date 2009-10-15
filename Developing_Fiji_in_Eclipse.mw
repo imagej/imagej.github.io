@@ -131,7 +131,7 @@ Select the Fiji project and open the project properties dialog (Project -> Prope
 ;Working Directory: <code>${workspace_loc:/fiji}</code>
 ;Arguments: <code>--build</code>
 
-<span style="color:#ff0000">Note:</span> If you want to build TrakEM2, you will have to explicitly build required plugins in prior, that is
+<span style="color:#ff0000"><b>Note:</b></span> If you want to build TrakEM2, you will have to explicitly build required plugins in prior, that is
 
 ;Arguments: <code>--build plugins/bUnwarpJ_.jar plugins/level_sets.jar all</code>
 
