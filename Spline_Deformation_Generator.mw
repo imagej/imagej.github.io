@@ -11,14 +11,16 @@
 | category               = [[:Category:Transform|Transform]]
 | website                = [http://biocomp.cnb.csic.es/~iarganda/SplineDeformationGenerator/ SplineDeformationGenerator]
 }}
-[[Image:Spline-deformations-examples.gif]]
 
+[[Image:Spline-deformations-examples.gif|thumb|449px|center|SplineDeformationGenerator available image deformations]]
 '''SplineDeformationGenerator''' is an image processing interface for image deformations developed as an ImageJ plugin. It can perform 5 different types of image deformations: 
 * Elastic deformations (represented as well by cubic B-splines).
 * Fisheye deformations.
 * Perspective deformations.
 * Barrel/pincushion deformations.
 * "Smile" deformations, typical from 2D gels images.
+
+
 
 == Documentation ==
 * Main site's [http://biocomp.cnb.csic.es/~iarganda/SplineDeformationGenerator/index.html#Generalities user manual]
