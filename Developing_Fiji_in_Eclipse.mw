@@ -80,7 +80,7 @@ cd ~/workspace/fiji
 
 Launch Eclipse and create a new Java project (New -> Java Project).  As already mentioned, Fiji runs best with the included JRE that can be installed directly by the link Configure JREs.  Add a new JRE located in the submodule path, e.g. <code>~/workspace/fiji/java/linux-amd64</code>
 
-'''Note''': Eclipse will try to set <code>fiji/bin</code> as output folder, which already contains files. We recommend to set instead to something else, e.g. <code>fiji/build</code>
+'''NOTE''': Eclipse will try to set <code>fiji/bin</code> as output folder, which already contains files. We recommend to set it instead to something else, e.g. <code>fiji/build</code>
 
 Eclipse will add all found JRE system libraries automatically.  Choose Fiji's JRE as the project specific JRE.  `Next >' brings you to a screen for selecting sources and libraries.  Eclipse automatically put into the source list everything it could find in the project folder.  In Fiji's complex directory structure, this automatic selection is inadequate.  Remove everything from the source list and put into it only what you want to edit, e.g.
 
