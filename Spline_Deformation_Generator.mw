@@ -13,7 +13,7 @@
 }}
 [[Image:Spline-deformations-examples.gif]]
 
-[[SplineDeformationGenerator]] is an image processing interface for image deformations developed as an ImageJ plugin. It can perform 5 different types of image deformations: 
+'''SplineDeformationGenerator''' is an image processing interface for image deformations developed as an ImageJ plugin. It can perform 5 different types of image deformations: 
 * Elastic deformations (represented as well by cubic B-splines).
 * Fisheye deformations.
 * Perspective deformations.
@@ -35,6 +35,6 @@
 
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
-
+----
 [[Category:Plugins]]
 [[Category:Transform]]
