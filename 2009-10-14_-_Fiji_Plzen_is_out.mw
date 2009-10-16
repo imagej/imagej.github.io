@@ -1,8 +1,8 @@
 It is a great pleasure to announce [[Downloads|a new Fiji version]] nick-named Plzen.  It was named after the city in which we had a very successful image processing school, where we tested a few of the shiny new components which are the goodies of this release.  The two most prominent new features are
 
-* the new and shiny Fiji Updater.  The updater knows whether your files are up-to-date, obsolete or locally modified.  It will check at startup whether there are updates available, and if so, offer you to run the updater.  You can also choose to be reminded later, or not ever again.
+* the new and shiny [[Update Fiji|Fiji Updater]].  The updater knows whether your files are up-to-date, obsolete or locally modified.  It will check at startup whether there are updates available, and if so, offer you to run the updater.  You can also choose to be reminded later, or not ever again.
 
-* the Script Editor.  Just call File>New>Script, select a language and start   writing a script.  The editor has syntax highlighting and you can run the   script without even saving it.
+* the [[Using the Script Editor|Script Editor]].  Just call File>New>Script, select a language and start   writing a script.  The editor has syntax highlighting and you can run the   script without even saving it.
 
 For an introduction to the power of scripting, see e.g. [http://pacific.mpi-cbg.de/wiki/index.php/Javascript_Scripting our page on Javascript].
 
