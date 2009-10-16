@@ -8,7 +8,7 @@ For users, Fiji is [[Downloads|easy to install]] and update, bundles a [[:Catego
 For [[Developing_Fiji|developers]], Fiji as an open source project is hosted on a git source version control [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi repository], with access to the source code of all internals, libraries and plugins, and eases the [[Developing_Fiji|development]] and [[:Category:Scripting|scripting]] of plugins.
 
 <b><i>[[Downloads|Download Fiji now]]</i></b>
-<span class="plainlinks">[{{SERVER}}{{localurl:Downloads}} http://pacific.mpi-cbg.de/wiki/images/0/04/Dai.png]</span>
+<span class="plainlinks">[{{SERVER}}{{localurl:Downloads}} http://pacific.mpi-cbg.de/wiki/images/6/60/Download-arrow.png]</span>
 
 == [[Special:NewsChannel|News]] ==
 <rss>http://pacific.mpi-cbg.de/wiki/index.php?title=Special:NewsChannel&format=rss20&limit=5|short|max=5</rss>
