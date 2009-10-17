@@ -10,7 +10,7 @@
 | category               = [[:Category:Transform|Transform]], [[:Category:Plugins|Plugins]]
 }}
 
-<flvplayer width="342" height="360">Interactive_deformation_using_Moving_Least_Squares.flv</flvplayer>
+<flvplayer width="342" height="360" autoplay="false" hidecontrols="true">Interactive_deformation_using_Moving_Least_Squares.flv</flvplayer>
 
 You can also see the video tutorial with annotations in our [http://www.youtube.com/watch?v=NwOxRmX03xs&feature=player_profilepage youtube channel].
 
