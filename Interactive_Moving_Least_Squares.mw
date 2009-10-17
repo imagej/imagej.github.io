@@ -10,7 +10,9 @@
 | category               = [[:Category:Transform|Transform]], [[:Category:Plugins|Plugins]]
 }}
 
-Video tutorial: [http://www.youtube.com/watch?v=NwOxRmX03xs&feature=player_profilepage]
+<flvplayer width="342" height="360">Interactive_deformation_using_Moving_Least_Squares.flv</flvplayer>
+
+You can also see the video tutorial with annotations in our [http://www.youtube.com/watch?v=NwOxRmX03xs&feature=player_profilepage youtube channel].
 
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
