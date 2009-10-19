@@ -1,8 +1,6 @@
-=== Current Task List for Fiji ===
-
 This is the summary of the final project meeting of the Hackathon which took place at the MPI-CBG in Dresden/Germany from 04/21/2008 till 04/30/2008.
 
-=== Finished Tasks ===
+== Finished Tasks ==
 
 Support Windows XP 64 Bit<br>
 Git-Web<br>
@@ -15,7 +13,7 @@ BUnwarpJ is now GPL<br>
 Orthoslices<br>
 Headless
 
-=== Started Tasks ===
+== Started Tasks ==
 
 Fiji-Wiki<br>
 MicroManager support<br>
@@ -29,7 +27,7 @@ Fiji Webstart<br>
 Generic Image Container with IJ Compatibilty Layer<br>
 Open Version of 3D Transformations
 
-=== Tasks To Do ===
+== Tasks To Do ==
 
 Task oriented Tutorial<br>
 FAQ<br>
@@ -42,3 +40,6 @@ Wiki Wishlist<br>
 Google Groups Fiji-Users List<br>
 Multiple Plugins Dir<br>
 Bugreport
+
+==See also==
+[[Wish list]]
