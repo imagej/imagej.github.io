@@ -1,6 +1,6 @@
 __NOTOC__
 <seo title="Fiji is just ImageJ - batteries included" metak="fiji,imagej,java,image processing"/>
-=<span style="line-height:48px; font-size:48px">'''Fiji'''</span>=
+== Fiji is just ImageJ -- batteries included ==
 [[About|Fiji]] is an image processing package based on [http://rsb.info.nih.gov/ij ImageJ].
 
 For users, Fiji is [[Downloads|easy to install]] and update, bundles a [[:Category:Plugins|set of plugins]] in a [[Plugins Menu|coherent menu structure]] (and updatable), along with comprehensive documentation.
