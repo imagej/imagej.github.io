@@ -1,5 +1,7 @@
 Here is logged all modification made to the structure of this wiki (not its content), such as installation of extension and so.
 
+* 19/10/09 - JES - disarmed KHTMLFixes.css, which was causing the funny placing of the toolboxes with Chromium and Google Chrome
+
 * 11/09/09 - JES - allowed uploading of swf files and installed [http://www.mediawiki.org/wiki/Extension:Flash_swf the Flash swf extension] with an important fix ripped from FLVPlayer (requested by Ignacio)
 
 * 13/07/09 - JES - installed [http://www.mediawiki.org/wiki/Extension:Add_HTML_Meta_and_Title Add HTML Meta and Title] to set the page title of our front page to something meaningful.
