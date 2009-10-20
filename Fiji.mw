@@ -26,13 +26,13 @@ Browse the [[:Category:News|news archive]].
 
 == Snapshots ==
 
-{|
-|style="vertical-align:top" |[[Image:Trakem2-snap.jpg|thumb|240px|TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each.]]<br />
-[[Image:Stitching-overview.jpg|thumb|240px|Stitching of images: Automatically reconstruct tiled 2D/3D acquisitions. The example shown (6 times 512x512x86 px) took 90 seconds.]]
-|style="vertical-align:top" |[[Image:3D-Viewer.jpg|thumb|240px|3D Viewer: hardware-accelerated 3D visualization of image stacks as volumes, orthoslices and meshes.]]
-|style="vertical-align:top" |[[Image:SimpleNeuriteTracer.jpg|thumb|240px|Simple Neurite Tracer: semi-automatic tracing of neurons.]]<br />
-[[Image:Tem-42-33-f.png|thumb|240px|Feature correspondences: Automatically extracted landmark correspondences using the MOPS descriptor.]]
-|}
+<gallery perrow=6>
+Image:Trakem2-snap.jpg|<small>TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each</small>
+Image:Stitching-overview.jpg|<small>Stitching of images: Automatically reconstruct tiled 2D/3D acquisitions. The example shown (6 times 512x512x86 px) took 90 seconds</small>
+Image:3D-Viewer.jpg|<small>3D Viewer: hardware-accelerated 3D visualization of image stacks as volumes, orthoslices and meshes</small>
+Image:SimpleNeuriteTracer.jpg|<small>Simple Neurite Tracer: semi-automatic tracing of neurons</small>
+Image:Tem-42-33-f.png|<small>Feature correspondences: Automatically extracted landmark correspondences using the MOPS descriptor</small>
+</gallery>
 
 == Projects ==
 
