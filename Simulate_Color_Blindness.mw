@@ -1,0 +1,28 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Simulate Color Blindness
+| author                 = Johannes Schindelin
+| maintainer             = Johannes Schindelin
+| filename               = Daltonize_.jar
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Daltonize_/Simulate_Color_Blindness.java;h=e48893544d18442d6e55934af0104ac72ea75ea6;hb=HEAD Git repository]
+| released               = 2009
+| latest version         = 2009
+| status                 = active
+| category               = [[:Category:Color|Color]]
+}}
+
+This plugin simulates color blindness. 
+
+It is based on http://quarkphysics.ca/phys1/light/u-light.htm .
+
+== Usage ==
+
+Choose one of the color blindness modes in the dialog, then press OK:
+
+[[Image:Simulate_Color_Blindness_Dialog.png]]
+
+Here's how the results look like when applied to the ''Clown'' sample image:
+
+{|
+|style="vertical-align:top" |[[Image:Simulate Color Blindness Results.png|thumb|500px|Simulate Color Blindness: overview of the nine different modes.]]
+|}
