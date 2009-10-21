@@ -8,7 +8,7 @@
 | released               = 2009
 | latest version         = 2009
 | status                 = active
-| category               = [[:Category:Color|Color]]
+| category               = [[:Category:Color processing|Color processing]]
 }}
 
 This plugin simulates color blindness. 
@@ -26,3 +26,5 @@ Here's how the results look like when applied to the ''Clown'' sample image:
 {|
 |style="vertical-align:top" |[[Image:Simulate Color Blindness Results.png|thumb|500px|Simulate Color Blindness: overview of the nine different modes.]]
 |}
+
+[[Category:Color processing]]
