@@ -61,20 +61,21 @@ Some projects have their own source code repositories.  In this case, we do not 
 If the project uses a different source code management tool than Git, no problem, just mirror it.
 
 Then add the submodule. Example:
-
- # clone the VIB repository
- git clone ssh://contrib@pacific.mpi-cbg.de/srv/git/VIB.git
- # first time, commit-submodule need to know the target, too ("jars/jgit.jar" in this case)
- ./fiji bin/commit-submodule.py VIB plugins/VIB_.jar
+<source lang="bash">
+# clone the VIB repository
+git clone ssh://contrib@pacific.mpi-cbg.de/srv/git/VIB.git
+# first time, commit-submodule need to know the target, too ("jars/jgit.jar" in this case)
+./fiji bin/commit-submodule.py VIB plugins/VIB_.jar
+</source>
 
 In the case of ''VIB'', it works as easily as that, because it has its own [[Fiji Build System|Fakefile]].  Submodules do not need to have that, you can provide one in ''staged-plugins/'', and they do not need to be installed in ''plugins/'', either:
-
- # clone the "egit" repository, but name it "jgit"
- git clone ssh://contrib@pacific.mpi-cbg.de/srv/git/egit jgit
- <create a staged-plugins/jgit.Fakefile>
- # first time, commit-submodule need to know the target, too ("jars/jgit.jar" in this case)
- ./fiji bin/commit-submodule.py jgit jars/jgit.jar
-
+<source lang="bash">
+# clone the "egit" repository, but name it "jgit"
+git clone ssh://contrib@pacific.mpi-cbg.de/srv/git/egit jgit
+<create a staged-plugins/jgit.Fakefile>
+# first time, commit-submodule need to know the target, too ("jars/jgit.jar" in this case)
+./fiji bin/commit-submodule.py jgit jars/jgit.jar
+</source>
 == Testing ==
 
 When you're testing Fiji, you may want to measure the code coverage of your tests - one way is described in the page [[Code Coverage in Fiji]].
@@ -84,9 +85,9 @@ At some point, you might want to debug whatever you wrote.  There's a small [[De
 == Discussing code ==
 
 When you want to point at specific code on IRC or via mail, you can do so by posting links to our [[Git|Gitweb]].  There is even a little shell script that helps you finding the link:
-
- bin/open-in-gitweb.sh fiji.cxx
-
+<source lang="bash">
+bin/open-in-gitweb.sh fiji.cxx
+</source>
 This script will open the appropriate link with Firefox.  It can deal with files, even in submodules, and commits (for commits, your current directory must be inside the appropriate Git checkout).  For files, you can append ":<linenumber>".
 
 == Contributing ==
