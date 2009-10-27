@@ -11,7 +11,7 @@
 }}
 
 {|
-|style="vertical-align:top" |[[Image:Rvs_scheme.png|600px|Register Virtual Stack scheme - All images are transformed to match the reference]]
+|style="vertical-align:top" |[[Image:Rvs_scheme.png|400px|Register Virtual Stack scheme - All images are transformed to match the reference]]
 |}
 
 This plugin takes a sequence of image slices stored in a folder, and delivers a list of registered image slices (with enlarged canvas). One of the images in the sequence can be selected by the user as '''reference''' and it will remain intact.
@@ -35,7 +35,7 @@ All models are aided by automatically extracted [[Feature_Extraction | SIFT feat
 </p>
 <p>Images may have different dimensions and be of different type.</p>
 <p><b>Step 1</b>: launch the "Plugins - Registration - Register Virtual Stack Slices" plugin.</p>
-[[Image:Rvs_main_window.png|500px|thumb|Register Virtual Stack main window]]
+[[Image:Rvs_main_window.png|400px|thumb|Register Virtual Stack main window]]
 <p><b>Step 2</b>: choose the appropriate options:<br />
 <ul>
 *'''Feature extraction model'''. The expected transformation model finding inliers (i.e. correspondences or landmarks between images) in the feature extraction: translation, rigid, similarity or affine.
@@ -159,7 +159,8 @@ p.sift.maxOctaveSize = 1024
 # The "inlier ratio":
 p.minInlierRatio = 0.05
 
-Register_Virtual_Stack_MT.exec(source_dir, target_dir, transf_dir, reference_name, p, use_shrinking_constraint)
+Register_Virtual_Stack_MT.exec(source_dir, target_dir, transf_dir, 
+reference_name, p, use_shrinking_constraint)
 </source>
 
 == See also ==
