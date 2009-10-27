@@ -14,7 +14,7 @@
 Analysis of 2D and 3D skeleton images. For the ImageJ plugin, visit [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start AnalyzeSkeleton at ImageJ wiki].
 
 {|
-|style="vertical-align:top" |[[Image:Analyze_skeleton_09_13_2009.png|thumb|600px|Example of AnalyzeSkeleton performance]]
+|style="vertical-align:top" |[[Image:Analyze_skeleton_09_13_2009.png|thumb|350px|Example of AnalyzeSkeleton performance]]
 |}
 
 == General Description ==
@@ -81,9 +81,9 @@ The tutorial describes step by step how to:
 Using the [[3D_Viewer]] libraries we can easily display the results of both, the skeletonization and the analysis:
 
 {|
-|style="vertical-align:top" |[[Image:Bat_cochlea_3D.gif|thumb|300px|Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer]]
-|style="vertical-align:top" |[[Image:Movie_skeleton_rendering.gif|thumb|300px|3D skeleton of bat cochlea volume rendered in the viewer after voxel classification]]
-|style="vertical-align:top" |[[Image:Movie_bat_skel.gif|thumb|300px|Bat cochlea volume rendered in the viewer with its corresponding classified skeleton]]
+|style="vertical-align:top" |[[Image:Bat_cochlea_3D.gif|thumb|225px|Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer]]
+|style="vertical-align:top" |[[Image:Movie_skeleton_rendering.gif|thumb|225px|3D skeleton of bat cochlea volume rendered in the viewer after voxel classification]]
+|style="vertical-align:top" |[[Image:Movie_bat_skel.gif|thumb|225px|Bat cochlea volume rendered in the viewer with its corresponding classified skeleton]]
 |}
 
 == API documentation ==
