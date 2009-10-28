@@ -10,7 +10,7 @@
 | category               = [[:Category:Registration|Registration]],[[:Category:Transform|Transform]], [[:Category:Plugins|Plugins]]
 }}
 {|
-|style="vertical-align:top" |[[Image:Transform Virtual Stack scheme.png|550px|Transform Virtual Stack scheme - All images are transformed based on the XML files]]
+|style="vertical-align:top" |[[Image:Transform Virtual Stack scheme.png|400px|Transform Virtual Stack scheme - All images are transformed based on the XML files]]
 |}
 This plugin takes a sequence of image slices stored in a folder, and delivers a list of transformed image slices (with enlarged canvas) applying a list of transforms stored as '''.XML''' files in another folder.
 
