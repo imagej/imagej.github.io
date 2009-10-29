@@ -11,7 +11,7 @@
 }}
 
 {|
-|style="vertical-align:top" |[[Image:Rvs_scheme.png|400px|Register Virtual Stack scheme - All images are transformed to match the reference]]
+|style="vertical-align:top" |[[Image:Rvs_scheme.png|380px|Register Virtual Stack scheme - All images are transformed to match the reference]]
 |}
 
 This plugin takes a sequence of image slices stored in a folder, and delivers a list of registered image slices (with enlarged canvas). One of the images in the sequence can be selected by the user as '''reference''' and it will remain intact.
