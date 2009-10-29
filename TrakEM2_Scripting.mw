@@ -10,7 +10,7 @@ Some basics:
 
 Both Layer and LayerSet and in a way containers. The LayerSet contains as well a list of Layer. The Display merely views the data in a LayerSet, one Layer at a time.
 
-See a http://www.ini.uzh.ch/~acardona/img/trakem2_datastructure_diagram.svg TrakEM2 class diagram] for a complete list.
+See a [http://www.ini.uzh.ch/~acardona/img/trakem2_datastructure_diagram.svg TrakEM2 class diagram] for a complete list.
 
 
 === Get the instance of a selected image ===
