@@ -36,6 +36,9 @@ See a [http://www.ini.uzh.ch/~acardona/img/trakem2_datastructure_diagram.svg Tra
 
 === Access the Layer and Selection of a Display ===
 
+The 'front' is the last activated display window. If there's only one display window, then that is 'front'.
+To access the front display, we call static function <i>getFront()</i> in namespace <i>[http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Display.html Display]</i>:
+
 <source lang="python">
 >>> front = Display.getFront()
 >>> layer = front.getLayer()
@@ -48,6 +51,8 @@ See a [http://www.ini.uzh.ch/~acardona/img/trakem2_datastructure_diagram.svg Tra
 </source>
 
 In Jython, 1 is True and 0 is False
+
+The most interesting data members of a [http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Display.html Display], as seen above, are mainly the  [http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Layer.html Layer] and the [http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Selection.html Selection].
 
 === Lock all selected objects ===
 <source lang="python">
