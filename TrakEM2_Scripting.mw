@@ -1,0 +1,19 @@
+Examples in [[Jython Scripting|Jython]]
+
+=== Get the instance of a selected image ===
+
+<source lang="python">
+>>> p = Display.getFront().getActive()
+>>> print p
+090504_0314_ex0768.mrc z=0.0 #67398
+</source>
+
+
+=== Obtain the ImagePlus of a selected image ===
+
+<source lang="python">
+>>> p = Display.getFront().getActive()
+>>> imp = p.getImagePlus()
+>>> print imp.width, imp.height
+2048 2048
+</source>
