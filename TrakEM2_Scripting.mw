@@ -17,3 +17,25 @@ Examples in [[Jython Scripting|Jython]]
 >>> print imp.width, imp.height
 2048 2048
 </source>
+
+
+=== Access the Layer and Selection of a Display ===
+
+<source lang="python">
+>>> front = Display.getFront()
+>>> layer = front.getLayer()
+>>> layer_set = front.getLayerSet()
+>>> sel = front.getSelection()
+>>> print sel.getSelected().size()
+10
+>>> print sel.isEmpty()
+0
+</source>
+
+In Jython, 1 is True and 0 is False
+
+=== Lock all selected objects ===
+<source lang="python">
+for d in Display.getFront().getSelected():
+  d.setLocked(True)
+</source>
