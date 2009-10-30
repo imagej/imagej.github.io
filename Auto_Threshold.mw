@@ -50,6 +50,11 @@ Try all methods.
 
 When processing stacks with many slices, the montages can become very large (~15 times the original stack size) and one risks running out of ram. A popup window will appear (when stacks have more than 25 slices) to confirm whether the procedure should display the stack montages. Select '''No''' to compute the threshold values and display these in the log window.
 
+
+=== Default ===
+This option returns the same values as the '''Image>Adjust>Threshold>Auto''', when selecting '''ignore black''' and '''ignore white'''. ImageJ tries to guess which pixels belong to the object and which to the background, but now this can be overridden and force segmentation of the desired phase with the '''White objects on black background'' option. 
+
+
 === Huang ===
 Implements Huang's fuzzy thresholding method. This uses Shannon's entropy function (one can also use Yager's entropy function).
 
