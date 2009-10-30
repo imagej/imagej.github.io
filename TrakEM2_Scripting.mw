@@ -106,6 +106,13 @@ Let's set a few values:
 >>> p.color = Color.blue
 </source>
 
+Tell all displays to update the canvas, so we see the changes:
+
+<source lang="python">
+>>> Display.repaint()
+</source>
+
+
 Let's read a few values:
 
 <source lang="python">
