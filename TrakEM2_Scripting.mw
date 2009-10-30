@@ -146,6 +146,23 @@ More convenient are the methods <i>scale</i>, <i>translate</i>, <i>rotate</i> an
 
 If you change the affine transform of a Displayable directly (by calling <i>getAffineTransform()</i> and then manipulating it), keep in mind that you will most likely screw up the internal cached maps for fast location of the Displayable object. To solve that, be sure to all <i>updateBucket()</i> on the affected Displayable object.
 
+= Adding images =
+
+=== Adding a single image to a layer shown in an open display ===
+
+<source lang="python">
+# Obtain a pointer to the frontmost open display:
+front = Display.getFront()
+# Open an image
+filepath = "/path/to/image.tif"
+imp = IJ.openImage(filepath)
+# Create a new Patch, which wraps an image
+patch = Patch(front.project, imp.title, 0, 0, imp)
+patch.project.loader.addedPatchFrom(filepath, patch)
+# Add it to a layer
+front.layer.add(patch)
+</source>
+
 = See also =
 
 *TrakEM2 [http://www.ini.uzh.ch/~acardona/howto.html how to], with java code examples.
