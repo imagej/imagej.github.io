@@ -44,7 +44,7 @@ Using stacks, one realises that sometimes it might not be a good idea to segment
 Original image
 
 
-[[Image:lympm.png]]
+[[Image:lympm2.png]]
 
 Try all methods.
 
@@ -55,6 +55,7 @@ When processing stacks with many slices, the montages can become very large (~15
 This is the original method of auto thresholding available in ImageJ which is a variation of the IsoData algorithm (see below). In this plugin the '''Default''' option should return the same values as the '''Image>Adjust>Threshold>Auto''', when selecting '''Ignore black''' and '''Ignore white'''. While ImageJ tries to guess which pixels belong to the object and which to the background, this can be overridden and force segmentation of the desired phase with the '''White objects on black background''' option. 
 The code in ImageJ that implements this function is the '''getAutoThreshold()''' method in the '''ImageProcessor''' class. 
 The IsoData method is also known as ''iterative intermeans''.
+
 
 === Huang ===
 Implements Huang's fuzzy thresholding method. This uses Shannon's entropy function (one can also use Yager's entropy function).
@@ -112,7 +113,7 @@ Iterative procedure based on the isodata algorithm of:
 
 The procedure divides the image into object and background by taking an initial threshold, then the averages of the pixels at or below the threshold and pixels above are computed. The averages of those two values are computed, the threshold is incremented and the process is repeated until the threshold is larger than the composite average. That is,      
  threshold = (average background + average objects)/2. 
-
+See the source code for further comments.
 
 
 === Li ===
