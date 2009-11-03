@@ -165,7 +165,7 @@ The "Preprocessing" option is used for calculation the differences of neighborin
 '''Fast Marching'''
 
 * '''Gray value threshold''':
-This is used to determine the stopping point for the expansion as the gray value difference between two neighboring pixels. Increase it if the image has stronger contrasts, decrease it if the contrast is not strong.
+This is used to determine the stopping point for the expansion as the gray value difference between boundary pixels and the seed point(s). Increase it if the image has stronger contrasts, decrease it if the contrast is not strong.
 
 * '''Distance threshold''':
 How much the selection is permitted to expand in one iteration. Increasing it will speed up the process but desensitize it. 
