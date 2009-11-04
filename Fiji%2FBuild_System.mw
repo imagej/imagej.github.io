@@ -98,7 +98,11 @@ This is especially useful if you need to set a plugin specific CLASSPATH:
 
 === Predefined variables ===
 
-TODO
+TODO, for the moment there's just a list here with known variables:
+
+* debug (default: debug=false)
+* showdeprecation (default: showdeprecation=false, switches the java compiler options "-deprecation" and "-Xlint:unchecked" on)
+* verbose (default: verbose=false)
 
 == Other features ==
 
