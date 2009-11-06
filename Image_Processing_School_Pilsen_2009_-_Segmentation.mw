@@ -95,7 +95,7 @@ Now take the same image and add some noise (Process - Noise - Add noise)
 * Can you still get a good segmentation?
 * What difficulties arrise?
 
-If you want to know more about the plugin, you can look at the [http://pacific.mpi-cbg.de/wiki/index.php/Level_Sets documentation]
+If you want to know more about the plugin, you can look at the [[Level_Sets|documentation]].
 
 == Simple Neurite Tracer ==
 This is a very nice plugin for semi automatic segmentation of thin elongated structures. It is designed to work with fluorecent images of neurons, but I am sure you can find other applications for it too!
