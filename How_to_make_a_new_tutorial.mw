@@ -25,7 +25,7 @@ To take snapshots of modal dialogs (which block events to the ''Snapshot'' windo
 
 In any of the two modes, the snapshot window will hide itself before taking the snapshot.
 
-[[Image:How_to_make_a_new_tutorial-MakeSnapshots.jpg]]
+[[Image:How_to_make_a_new_tutorial-MakeSnapshots.jpg|640px]]
 
 After taking some or all of the snapshots you want to include in your tutorial, you have to crop them.  Just select the appropriate rectangle, and then click on ImageJ's ''Edit>Crop'' or hit Ctrl+Shift+X:
 
@@ -51,17 +51,17 @@ In both cases, the image references in the text will be adjusted automatically.
 
 A picture says more than a thousand words, but to be sure that it actually says what you want to tell, add a bit of surrounding text to the snapshots:
 
-[[Image:How_to_make_a_new_tutorial-AddText.jpg]]
+[[Image:How_to_make_a_new_tutorial-AddText.jpg|640px]]
 
 == Fourth step: preview ==
 
 Now is the time to preview your work:
 
-[[Image:How_to_make_a_new_tutorial-Preview.jpg]]
+[[Image:How_to_make_a_new_tutorial-Preview.jpg|640px]]
 
 The first time you call ''Preview'' (or ''Upload'', whichever comes first), you will be asked for your credentials:
 
-[[Image:How_to_make_a_new_tutorial-Login.jpg]]
+[[Image:How_to_make_a_new_tutorial-Login.jpg|640px]]
 
 This will '''not''' upload the images yet, but use the Wiki engine to render HTML from your text.  The preview will be extracted from the result, and the image references adjusted to point to your local images.  The preview will be opened in your default web browser.
 
@@ -71,7 +71,7 @@ Now is the time to proof-read.  Fix whatever you do not like and make a new prev
 
 When everything is good to go, upload the tutorial:
 
-[[Image:How_to_make_a_new_tutorial-Upload.jpg]]
+[[Image:How_to_make_a_new_tutorial-Upload.jpg|640px]]
 
 This will upload all the images (asking you how to proceed when an image exists already in the Wiki) and upload the text.  The final page will be opened in your default web browser, and the ''Snapshot'' and ''Editor'' windows will be closed.
 
