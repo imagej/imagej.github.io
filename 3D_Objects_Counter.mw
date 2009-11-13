@@ -3,10 +3,10 @@
 | name                   = 3D Object Counter
 | maintainer        =  [mailto:white_at_mpi-cbg_dot_de Daniel White]
 | author                 = Fabrice Cordelieres
-| filename               = [http://rsb.info.nih.gov/ij/plugins/track/_3D_objects_counter.class ???] 
-| source                 = [http://rsb.info.nih.gov/ij/plugins/track/_3D_objects_counter.class ???]
-| released               = ????
-| latest version         = ????
+| filename               = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=plugin:analysis:3d_object_counter:3d-oc_.jar 3d-oc_.jar] 
+| source                 = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=plugin:analysis:3d_object_counter:3d-oc_.jar Contained within the jar file]
+| released               = 15/06/2005
+| latest version         = 12/08/2009
 | status                 = maintained actively as of 11/2009
 | category               = [[:Category:Particle analysis|Particle analysis]]
 | website                = [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:3d_object_counter:start]
