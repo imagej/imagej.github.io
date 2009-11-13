@@ -38,7 +38,7 @@ This plugin:
 As ImageJ's “Analyze Particles” function, 3D-OC also has a “redirect to” option, allowing one image to be taken as a mask to quantify intensity related parameters on a second image.
 
 == Plugin's manual ==
-The plugin's manual might be downloaded from [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=plugin:analysis:3d_object_counter:3d-oc.pdf ImageJ's wiki (follow this link)]
+The plugin's manual might be downloaded from [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=plugin:analysis:3d_object_counter:3d-oc.pdf ImageJ's wiki.]
 
 == Install/Update ==
 v2.0 plugin is now contained in Fiji; just use [[Update_Fiji|Help>Update Fiji]] to get it.
