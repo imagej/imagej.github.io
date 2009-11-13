@@ -1,0 +1,1 @@
+Photograph2: Manhattan
