@@ -15,13 +15,13 @@
 The plugin &lsquo;Enhance Local Contrast (CLAHE)&rsquo; implements the method <em>[http://en.wikipedia.org/wiki/CLAHE/ Contrast Limited Adaptive Histogram Equalization]</em><ref>{{citation
  | last = Zuiderveld
  | first = Karel
- | title = Contrast limited adaptive histogram equalization
- | book = Graphics gems IV
- | pages = 474-485
+ | contribution = Contrast limited adaptive histogram equalization
+ | title = Graphics gems IV
+ | pages = 474–485
  | publisher = Academic Press Professional, Inc.
  | address = San Diego, CA, USA
  | year = 1994
- | PMID = 12520305 }} </ref>
+ | url = http://portal.acm.org/citation.cfm?id=180940 }} </ref>
 for enhancing the local contrast of an image.
 
 The method has three parameters:
