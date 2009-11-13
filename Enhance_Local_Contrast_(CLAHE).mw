@@ -1,0 +1,43 @@
+[[Image:Tem.jpg|thumb|left|361px|TEM original image]]
+[[Image:Tem-clahe-50-256-2.5.jpg|thumb|right|361px|TEM CLAHE processed, (block: 50; bins: 256; max slope: 2.5)]]
+{{-}}
+{{Infobox Plugin
+| name                   = CLAHE
+| software               = Fiji
+| author                  = Stephan Saalfeld ([mailto:saalfeld@mpi-cbg.de])
+| maintainer             = Stephan Saalfeld
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/ij/CLAHE.java] (243 lines)
+| released               = 2009
+| latest version         = November 13<sup>th</sup>, 2009
+| status                 = stable, active
+| category               = [[:Category:Plugins|Plugins]]
+}}
+The plugin &lsquo;Enhance Local Contrast (CLAHE)&rsquo; implements the method <em>[http://en.wikipedia.org/wiki/CLAHE/ Contrast Limited Adaptive Histogram Equalization]</em><ref>{{citation
+ | last = Zuiderveld
+ | first = Karel
+ | title = Contrast limited adaptive histogram equalization
+ | book = Graphics gems IV
+ | pages = 474-485
+ | publisher = Academic Press Professional, Inc.
+ | address = San Diego, CA, USA
+ | year = 1994
+ | PMID = 12520305 }} </ref>
+for enhancing the local contrast of an image.
+
+The method has three parameters:
+;block size
+:the size of the local region around a pixel for which the histogram is equalized.  This size should be larger than the size of features to be preserved.
+;histogram bins
+:the number of histogram bins used for histogram equalization.  The implementation internally works with byte resolution, so values larger than 256 are not meaningful.  This value also limits the quantification of the output when processing 8bit gray or 24bit RGB images.  The number of histogram bins should be smaller than the number of pixels in a block.
+;max slope
+:limits the contrast stretch in the intensity transfer function.  Very large values will let the histogram equalization do whatever it wants to do, that is result in maximal local contrast.  The value 1 will result in the original image.
+
+[[Image:Photo1.jpg|thumb|left|361px|Photo1 original image]]
+[[Image:Photo1-clahe-150-256-3.jpg|thumb|right|361px|Photo1 CLAHE processed, (block: 150; bins: 256; max slope: 3)]]
+{{-}}
+[[Image:Photo3.jpg|thumb|left|361px|Photo2 original image]]
+[[Image:Photo3-clahe-50-256-3.jpg|thumb|right|361px|Photo2 CLAHE processed, (block: 50; bins: 256; max slope: 3)]]
+
+==References==
+
+<references />
