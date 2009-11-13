@@ -1,0 +1,24 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Object Counter3D
+| maintainer        =  [mailto:white_at_mpi-cbg_dot_de Daniel White]
+| author                 = Fabrice Cordelieres
+| filename               = [http://rsb.info.nih.gov/ij/plugins/track/_3D_objects_counter.class _3D_objects_counter.class] 
+| source                 = [http://rsb.info.nih.gov/ij/plugins/track/_3D_objects_counter.class _3D_objects_counter.java] (23,913 Bytes)
+| released               = ????
+| latest version         = ????
+| status                 = maintained actively as of 11/2009
+| category               = [[:Category:Particle analysis|Particle analysis]]
+| website                = [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:3d_object_counter:start]
+}}
+The 3D Object Counter.java linked in the info box here is by Fabrice Cordelieres. 
+
+V2.0 plugin is now contained in Fiji; just use [[Update_Fiji|Help>Update Fiji]] to get it.
+
+
+The original  plugin was published here:
+[http://www3.interscience.wiley.com/cgi-bin/fulltext/118727584/PDFSTART Journal of Microscopy, Vol. 224, Pt 3 December 2006, pp. 213–232 Received 13 April 2006; accepted 28 June 2006 Blackwell Publishing Ltd TUTORIAL REVIEW A guided tour into subcellular colocalization analysis in lightmicroscopy S. BOLTE & F. P. CORDELIÈRES]
+
+
+[[Category:Plugins]]
+[[Category:Particle analysis]]
