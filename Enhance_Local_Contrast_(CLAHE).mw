@@ -10,7 +10,7 @@
 | released               = 2009
 | latest version         = November 13<sup>th</sup>, 2009
 | status                 = stable, active
-| category               = [[:Category:Plugins|Plugins]]
+| category               = [[:Category:Plugins|Plugins]], [[:Category:Filtering|Filtering]]
 }}
 The plugin '''Enhance Local Contrast (CLAHE)''' implements the method ''[http://en.wikipedia.org/wiki/CLAHE/ Contrast Limited Adaptive Histogram Equalization]''<ref>{{citation
  | last = Zuiderveld
@@ -41,3 +41,6 @@ The method has three parameters:
 ==References==
 
 <references />
+
+[[Category:Plugins]]
+[[Category:Filtering]]
