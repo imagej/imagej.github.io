@@ -12,7 +12,7 @@
 | status                 = stable, active
 | category               = [[:Category:Plugins|Plugins]]
 }}
-The plugin &lsquo;Enhance Local Contrast (CLAHE)&rsquo; implements the method <em>[http://en.wikipedia.org/wiki/CLAHE/ Contrast Limited Adaptive Histogram Equalization]</em><ref>{{citation
+The plugin '''Enhance Local Contrast (CLAHE)''' implements the method ''[http://en.wikipedia.org/wiki/CLAHE/ Contrast Limited Adaptive Histogram Equalization]''<ref>{{citation
  | last = Zuiderveld
  | first = Karel
  | contribution = Contrast limited adaptive histogram equalization
@@ -22,7 +22,7 @@ The plugin &lsquo;Enhance Local Contrast (CLAHE)&rsquo; implements the method <e
  | address = San Diego, CA, USA
  | year = 1994
  | url = http://portal.acm.org/citation.cfm?id=180940 }} </ref>
-for enhancing the local contrast of an image.
+for enhancing the local contrast of an image.  In Fiji, it is called through the menu entry '''Process / Enhance Local Contrast (CLAHE)'''.
 
 The method has three parameters:
 ;block size
