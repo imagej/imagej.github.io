@@ -37,7 +37,7 @@ The method has three parameters:
 {{-}}
 [[Image:Photo3.jpg|thumb|left|361px|Photo2 original image]]
 [[Image:Photo3-clahe-50-256-3.jpg|thumb|right|361px|Photo2 CLAHE processed, (block: 50; bins: 256; max slope: 3)]]
-
+{{-}}
 ==References==
 
 <references />
