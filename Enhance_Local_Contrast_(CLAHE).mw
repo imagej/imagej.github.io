@@ -22,7 +22,7 @@ The plugin '''Enhance Local Contrast (CLAHE)''' implements the method ''[http://
  | address = San Diego, CA, USA
  | year = 1994
  | url = http://portal.acm.org/citation.cfm?id=180940 }} </ref>
-for enhancing the local contrast of an image.  In Fiji, it is called through the menu entry '''Process / Enhance Local Contrast (CLAHE)'''. Contrast enhancement cannot be undone, i.e. ''Edit / Undo'' doesn't work with this command.
+for enhancing the local contrast of an image.  In Fiji, it is called through the menu entry '''Process / Enhance Local Contrast (CLAHE)'''.
 
 The method has three parameters:
 ;block size
