@@ -165,7 +165,12 @@ front.layer.add(patch)
 
 = See also =
 
+== TrakEM2 tutorials ==
 *TrakEM2 [http://www.ini.uzh.ch/~acardona/howto.html how to], with java code examples.
 *TrakEM2 [[TrakEM2 tutorials|video tutorials]].
+
+== Jython scripting ==
+*[[Jython_Scripting]] in fiji.
+*[http://www.jython.org Jython webpage].
 
 [[Category:Scripting]]
