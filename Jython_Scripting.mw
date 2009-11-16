@@ -589,3 +589,7 @@ For clarity, this is a summary of the files in the folder:
 
 
 Notice, though, that <b>you don't need to do the .jar packaging at all</b>. Just place the python scripts directly under fiji/plugins/My Scripts/ and they will appear in the menus as regular plugins.
+
+
+= See also =
+*Jython for [[TrakEM2 Scripting]].
