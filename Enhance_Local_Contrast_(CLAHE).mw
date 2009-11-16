@@ -6,9 +6,9 @@
 | software               = Fiji
 | author                  = Stephan Saalfeld ([mailto:saalfeld@mpi-cbg.de])
 | maintainer             = Stephan Saalfeld
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/ij/CLAHE.java] (243 lines)
-| released               = 2009
-| latest version         = November 13<sup>th</sup>, 2009
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/ij/CLAHE.java] (356 lines)
+| released               = November 13<sup>th</sup>, 2009
+| latest version         = November 16<sup>th</sup>, 2009
 | status                 = stable, active
 | category               = [[:Category:Plugins|Plugins]], [[:Category:Filtering|Filtering]]
 }}
