@@ -170,7 +170,7 @@ front.layer.add(patch)
 *TrakEM2 [[TrakEM2 tutorials|video tutorials]].
 
 == Jython scripting ==
-*[[Jython_Scripting]] in fiji.
+*[[Jython Scripting]] in fiji.
 *[http://www.jython.org Jython webpage].
 
 == Jython scripts for TrakEM2 ==
