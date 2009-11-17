@@ -528,21 +528,11 @@
 
 * [[Calculator Plus]] - file <tt>Calculator_Plus</tt> in package '''[[Calculator_Plus]]'''  -- ''java jar file''
 * [[Multiple Image Processor]] - file <tt>MultipleImageProcessor</tt> in package '''[[M_I_P]]'''  -- ''java jar file''
-
-
+* [[Enhance Local Contrast (CLAHE)]] - file <tt>[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/ij/CLAHE.java CLAHE]</tt> in package '''[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=summary mpicbg_]''' -- ''java jar file''
 
 === Process > Morphology ===
 
 * [[Gray Morphology]] - file <tt>GrayMorphology_</tt> in package '''[[Gray_Morphology]]'''  -- ''java jar file''
-
-
-
-
-
-
-
-
-
 
 == Edit ==
 
