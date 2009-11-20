@@ -1,3 +1,6 @@
+[[Image:Embryos775x581.png|thumb|left|361px|Embryos original sample]]
+[[Image:SIOX_result_embryos775x581.png|thumb|right|361px|SIOX segmentation result]]
+{{-}}
 {{Infobox Plugin
 | name                   = SIOX: Simple Interactive Object Extraction
 | software               = Fiji
