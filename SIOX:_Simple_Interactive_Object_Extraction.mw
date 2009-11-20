@@ -12,4 +12,17 @@
 
 This is a Fiji plugin based on the [http://www.siox.org SIOX project] by Prof. Dr. [http://www.inf.fu-berlin.de/inst/ag-ki/rojas_home/pmwiki/pmwiki.php Raúl Rojas] '''to segment color images'''.  [[SIOX]] stands for ''Simple Interactive Object Extraction'' and is a solution for '''extracting foreground from still images''' with very little user interaction. [[SIOX]] is fast, noise robust, and can therefore also be used for the segmentation of videos. It avoids many of the drawbacks of graph-based segmentation methods but performs about equally well on different benchmarks. [[SIOX]] is open and free (Apache License) and the authors have intentionally not patented any part of the technology. As a result, it has been integrated into several open-source image manipulation programs over the past years. [[SIOX]] is the underlying algorithm of the foreground extraction tool in the GNU Image Manipulation Program ([http://www.gimp.org/ GIMP]) and is part of the tracer tool in [http://www.inkscape.org/ Inkscape]. [[SIOX]] originates from [http://www.echalk.de/ E-Chalk] where an instructor standing in front of an electronic chalkboard is segmented. Variants of [[SIOX]] are being used for robotic vision and for improving 3D time-of-flight camera segmentation.
 
+=References=
+Most Comprehensive Work:
+
+* G. Friedland: Adaptive Audio and Video Processsing for Electronic Chalkboard Lectures, PhD thesis, Department of Computer Science, Freie Universitaet Berlin, October 2006. 
+
+Still Image Approach:
+
+* G. Friedland, K. Jantz, T. Lenz, F. Wiesel, R. Rojas: Object Cut and Paste in Images and Videos, International Journal of Semantic Computing Vol 1, No 2, pp. 221-247, World Scientific, USA, June 2007.
+* G. Friedland, K. Jantz, L. Knipping, R. Rojas: Image Segmentation by Uniform Color Clustering -- Approach and Benchmark Results, Technical Report B-05-07, Department of Computer Science, Freie Universitaet Berlin, June 2005 (PDF, 18MB).
+* G. Friedland, K. Jantz, R. Rojas: SIOX: Simple Interactive Object Extraction in Still Images, Proceedings of the IEEE International Symposium on Multimedia (ISM2005), pp. 253-259, Irvine (California), December, 2005. Download PDF from IEEE Computer Society Digital Library.
+* G. Friedland, K. Jantz, T. Lenz, R. Rojas: Extending the SIOX Algorithm: Alternative Clustering Methods, Sub-pixel Accurate Object Extraction from Still Images, and Generic Video Segmentation, Technical Report B-06-06, Department of Computer Science, Freie Universitaet Berlin, January 2006 (PDF, 10MB).
+* G. Friedland, K. Jantz, T. Lenz, F. Wiesel, R. Rojas: A Practical Approach to Boundary-Accurate Multi-Object Extraction from Still Images and Videos, to appear in Proceedings of the IEEE International Symposium on Multimedia (ISM2006), San Diego (California), December, 2006. 
+
 [[Category:Plugins]][[Category:Segmentation]]
