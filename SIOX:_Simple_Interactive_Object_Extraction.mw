@@ -25,7 +25,7 @@ Then, after clicking on ''Plugins > Segmentation > SIOX: Simple Interactive Obje
 :Paint the regions of interest (ROIs) for the foreground and background. Select any of the ROI tools and mark the areas you consider foreground and background. If you are segmenting multiple objects, select "Allow multiple foreground components"
 
 ;'''Step 2:''' Detail Refinement Brush.
-:Select now ROIs that you want to add or subtract from the current segmentation.
+:Select now ROIs that you want to add or subtract from the current segmentation. Press "Refine" to add/subtract those areas based on the previous segmentation.
 
 ;'''Step 3:''' Reset or Create mask.
 :Click the "Reset" button to restart the process or click on the "Create mask" button to produce the current binary result.
