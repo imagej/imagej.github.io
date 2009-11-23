@@ -43,6 +43,8 @@ When calling the plugin, your color image will be embedded into the [[SIOX]] gra
 [[Image:SIOX-Initial-Segmentation.png|thumb|250px|SIOX initial segmentation panel]]
 This is the first step of the plugin. Here you will define the ROIs that you consider part of the foreground or background. 
 
+'''Defining foreground and background'''
+
 By clicking on the radio buttons ''Foreground'' and  ''Background'' you will switch between both ROIs. If the foreground ROIs are being defined, the background ROIs will be displayed in translucent '''red'''. The same way, while defining the background ROIs, the foreground ROIs will be displayed in translucent '''green'''.
 
 The ROIs can be defined with any of the Fiji selection tools:
@@ -51,7 +53,11 @@ The ROIs can be defined with any of the Fiji selection tools:
 
 '''TIP''': you can select multiple ROIs in Fiji with any of the selection tools by pressing the SHIFT key and clicking on different parts of the image.
 
+'''Multiple objects'''
+
 If you expect '''multiple objects''' to be segmented, you should click on the check-box ''Allow multiple foreground components''. That will tell [[SIOX]] to look for several objects.
+
+'''Smoothing'''
 
 The ''Smoothing'' bar allows to define how sharpen you expect the resulting contours to be. For example, if you try to segment the default sample "Leaf (36K)", reducing the smoothing will provide you with more accurate borders in the picks of the leaf.
 
