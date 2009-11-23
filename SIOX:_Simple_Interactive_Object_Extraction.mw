@@ -53,6 +53,8 @@ The ROIs can be defined with any of the Fiji selection tools:
 
 If you expect '''multiple objects''' to be segmented, you should click on the check-box ''Allow multiple foreground components''. That will tell [[SIOX]] to look for several objects.
 
+The ''Smoothing'' bar allows to define how sharpen you expect the resulting contours to be. For example, if you try to segment the default sample "Leaf (36K)", reducing the smoothing will provide you with more accurate borders in the picks of the leaf.
+
 ==References==
 Most Comprehensive Work:
 
