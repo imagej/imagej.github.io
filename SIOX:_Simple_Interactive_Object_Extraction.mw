@@ -35,7 +35,7 @@ Then, after clicking on ''Plugins > Segmentation > SIOX: Simple Interactive Obje
 {{-}}
 
 ==User Manual==
-[[SIOX]] is a plugin designed to segment 2D color images. If your image is not RGB color, you can change it on the menu ''Image > Type > RGB Color''.
+[[SIOX]] is a plugin designed to segment 2D color images. If your image is not RGB color, you can change it on the menu ''Image > Type > RGB Color''. However, the [[SIOX]] uses the color information from the images, so it's expected to work much better on real RGB images.
 
 When calling the plugin, your color image will be embedded into the [[SIOX]] graphical user interface (GUI). This GUI has 3 different manipulation panels: Initial Segmentation, Detail Refinement Brush and the mask/reset buttons.
 
