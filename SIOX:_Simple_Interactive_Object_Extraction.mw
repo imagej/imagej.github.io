@@ -41,7 +41,7 @@ When calling the plugin, your color image will be embedded into the [[SIOX]] gra
 
 ===Initial Segmentation===
 [[Image:SIOX-Initial-Segmentation.png|thumb|250px|SIOX initial segmentation panel]]
-This is the first step of the plugin. Here you will define the ROIs that you consider part of the foreground or background. 
+This is the '''first step''' of the plugin. Here you will define the ROIs that you consider part of the foreground or background. 
 
 ;'''Defining foreground and background'''
 
