@@ -59,7 +59,7 @@ This is the first step of the plugin. Here you will define the ROIs that you con
 
 ;'''Smoothing'''
 
-:The ''Smoothing'' bar allows to define how sharpen you expect the resulting contours to be. For example, if you try to segment the default sample "Leaf (36K)", reducing the smoothing will provide you with more accurate borders in the picks of the leaf.
+:The ''Smoothing'' bar allows to define how sharp you expect the resulting contours to be. For example, if you try to segment the default sample "Leaf (36K)", reducing the smoothing will provide you with more accurate borders in the picks of the leaf.
 
 ==References==
 Most Comprehensive Work:
