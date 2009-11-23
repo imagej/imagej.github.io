@@ -44,6 +44,8 @@ This is the first step of the plugin. Here you will define the ROIs that you con
 
 The ROIs can be defined with any of the Fiji selection tools:
 
+[[Image:Fiji-selection-tools.png]]
+
 ==References==
 Most Comprehensive Work:
 
