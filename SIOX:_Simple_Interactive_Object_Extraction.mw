@@ -40,11 +40,18 @@ Then, after clicking on ''Plugins > Segmentation > SIOX: Simple Interactive Obje
 When calling the plugin, your color image will be embedded into the [[SIOX]] graphical user interface (GUI). This GUI has 3 different manipulation panels: Initial Segmentation, Detail Refinement Brush and the mask/reset buttons.
 
 ===Initial Segmentation===
-This is the first step of the plugin. Here you will define the ROIs that you consider part of the foreground or background. By clicking on the check-boxes ''Foreground'' and  ''Background'' you will switch between both ROIs. If the foreground ROIs are being defined, the background ROIs will be displayed in translucent '''red'''. The same way, while defining the background ROIs, the foreground ROIs will be displayed in translucent '''green'''.
+[[Image:SIOX-Initial-Segmentation.png|thumb|250px|SIOX initial segmentation panel]]
+This is the first step of the plugin. Here you will define the ROIs that you consider part of the foreground or background. 
+
+By clicking on the radio buttons ''Foreground'' and  ''Background'' you will switch between both ROIs. If the foreground ROIs are being defined, the background ROIs will be displayed in translucent '''red'''. The same way, while defining the background ROIs, the foreground ROIs will be displayed in translucent '''green'''.
 
 The ROIs can be defined with any of the Fiji selection tools:
 
 [[Image:Fiji-selection-tools.png]]
+
+'''TIP''': you can select multiple ROIs in Fiji with any of the selection tools by pressing the SHIFT key and clicking on different parts of the image.
+
+If you expect multiple objects to be segmented, you should click on the check-box ''Allow multiple foreground components''. That will tell [[SIOX]] to look for several objects.
 
 ==References==
 Most Comprehensive Work:
