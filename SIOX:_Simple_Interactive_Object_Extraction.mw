@@ -51,7 +51,7 @@ The ROIs can be defined with any of the Fiji selection tools:
 
 '''TIP''': you can select multiple ROIs in Fiji with any of the selection tools by pressing the SHIFT key and clicking on different parts of the image.
 
-If you expect multiple objects to be segmented, you should click on the check-box ''Allow multiple foreground components''. That will tell [[SIOX]] to look for several objects.
+If you expect '''multiple objects''' to be segmented, you should click on the check-box ''Allow multiple foreground components''. That will tell [[SIOX]] to look for several objects.
 
 ==References==
 Most Comprehensive Work:
