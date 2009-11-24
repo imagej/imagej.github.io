@@ -63,7 +63,13 @@ This is the '''first step''' of the plugin. Here you will define the ROIs that y
 
 ;'''Segmentation'''
 
+[[Image:SIOX_Segmentation_GUI_step1.png|thumb|361px|Example of SIOX result after initial segmentation]]
+
 :In order to proceed with the initial segmentation, click on ''Segment''. Remember that [[SIOX]] needs at least one foreground ROI to produce the segmentation, the background ROI is optional.
+
+:After a few seconds (depending on the size of the image), the segmentation result will be shown. The calculated background area will be darkened while the foreground area(s) will be displayed with the original colors.
+
+:The initial segmentation panel will be then disabled. If you're not satisfied with the result press Reset to start the process again. Otherwise, continue to step 2.
 
 ==References==
 Most Comprehensive Work:
