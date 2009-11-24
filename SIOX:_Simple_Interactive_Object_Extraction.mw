@@ -81,6 +81,8 @@ Again, by clicking on ''subtract'' or ''add'' you will be able to select the ROI
 
 Finally, by clicking on ''Refine'', the segmentation will be recalculated for the selected areas and the result will be displayed the same way as in the initial segmentation (dark background and full color foreground).
 
+===Reset and Create Mask===
+
 ==References==
 Most Comprehensive Work:
 
