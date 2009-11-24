@@ -73,7 +73,7 @@ This is the '''first step''' of the plugin. Here you will define the ROIs that y
 
 ===Detail Refinement Brush===
 [[Image:SIOX-Detail-Refinement-Brush.png|thumb|300px|SIOX detail refinement brush panel]]
-This is the second step on the SIOX segmentation process. Here we can call the method again to refine the result by subtracting or adding areas to the background or foreground components.
+This is the '''second step''' on the SIOX segmentation process. Here we can call the method again to refine the result by subtracting or adding areas to the background or foreground components.
 
 '''Note''': this step is completely optional. If you are already satisfied with the result, proceed to create the binary mask.
 
