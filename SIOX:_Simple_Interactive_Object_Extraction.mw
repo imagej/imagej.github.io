@@ -30,8 +30,8 @@ Then, after clicking on ''Plugins > Segmentation > SIOX: Simple Interactive Obje
 ;'''Step 3:''' Reset or Create mask.
 :Click the "Reset" button to restart the process or click on the "Create mask" button to produce the current binary result. Please, take into account that the binary image will be created with the background color selected on "Process > Binary > Options".
 
-[[Image:Screenshot-SIOX_Segmentation.png|thumb|left|361px|SIOX segmentation Graphical User Interface applied to Leaf sample]]
-[[Image:SIOX_Segmentation_GUI_step1.png|thumb|right|361px|Leaf sample segmented after SIOX step 1]]
+[[Image:Screenshot-SIOX_Segmentation.png|thumb|left|440px|SIOX segmentation Graphical User Interface applied to Leaf sample]]
+[[Image:SIOX-Mask.png|thumb|right|280px|Resulting mask of Leaf sample after SIOX segmentation]]
 {{-}}
 
 ==User Manual==
