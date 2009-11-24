@@ -71,6 +71,8 @@ This is the '''first step''' of the plugin. Here you will define the ROIs that y
 
 :The initial segmentation panel will be then disabled. If you're not satisfied with the result press ''Reset'' to restart the process. Otherwise, continue to the refinement step.
 
+===Detail Refinement Brush===
+
 ==References==
 Most Comprehensive Work:
 
