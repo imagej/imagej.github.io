@@ -79,7 +79,7 @@ This is the second step on the SIOX segmentation process. Here we can call the m
 
 Again, by clicking on ''subtract'' or ''add'' you will be able to select the ROIs to be added or subtracted. The sliders here have different meaning: a subtraction value of 0 will indicate you are totally confident of designating that area as background, while an adding value of 1 (slider to the right most value) will indicate you are confident to designate that area as foreground.
 
-Finally, by clicking on Refine, the segmentation will be recalculated for the selected areas and the result will be displayed on the same way as in the initial segmentation (dark background and full color foreground).
+Finally, by clicking on ''Refine'', the segmentation will be recalculated for the selected areas and the result will be displayed the same way as in the initial segmentation (dark background and full color foreground).
 
 ==References==
 Most Comprehensive Work:
