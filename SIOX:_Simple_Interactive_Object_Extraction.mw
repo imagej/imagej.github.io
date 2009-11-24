@@ -22,44 +22,44 @@ This is a Fiji plugin based on the [http://www.siox.org SIOX project] by Prof. D
 Then, after clicking on ''Plugins > Segmentation > SIOX: Simple Interactive Object Extraction'', the image will be embeded into a GUI.
 
 ;'''Step 1:''' Initial Segmentation.
-:Paint the regions of interest (ROIs) for the foreground and background. Select any of the ROI tools and mark the areas you consider foreground and background. If you are segmenting multiple objects, select "Allow multiple foreground components"
+:Paint the regions of interest (ROIs) for the foreground and background. Select any of the ROI tools and mark the areas you consider foreground and background. To segment multiple objects, select "Allow multiple foreground components"
 
 ;'''Step 2:''' Detail Refinement Brush.
 :Select now ROIs that you want to add or subtract from the current segmentation. Press "Refine" to add/subtract those areas based on the previous segmentation.
 
 ;'''Step 3:''' Reset or Create mask.
-:Click the "Reset" button to restart the process or click on the "Create mask" button to produce the current binary result. Please, take into account that the binary image will be created with the background color selected on "Process > Binary > Options".
+:Click the "Reset" button to restart the process or click on the "Create mask" button to produce a binary result. Please, take into account that the binary image polarity will be created following the option set in "Process > Binary > Options".
 
 [[Image:Screenshot-SIOX_Segmentation.png|thumb|left|440px|SIOX segmentation Graphical User Interface applied to Leaf sample]]
 [[Image:SIOX-Mask.png|thumb|right|280px|Resulting mask of Leaf sample after SIOX segmentation]]
 {{-}}
 
 ==User Manual==
-[[SIOX]] is a plugin designed to segment 2D color images. If your image is not RGB color, you can change it on the menu ''Image > Type > RGB Color''. However, the [[SIOX]] algorithm makes use of the image color information, so it's expected to work much better on real RGB images.
+[[SIOX]] is a plugin designed to segment 2D color images. If the image is not RGB color, it can be converted to RGB using the command ''Image > Type > RGB Color''. However, the [[SIOX]] algorithm makes use of the image color information, so it is expected to work better on real RGB images.
 
-When calling the plugin, your color image will be embedded into the [[SIOX]] graphical user interface (GUI). This GUI has 3 different manipulation panels: Initial Segmentation, Detail Refinement Brush and the mask/reset buttons.
+When calling the plugin, the image will be embedded into the [[SIOX]] graphical user interface (GUI). This GUI has 3 section (panels): Initial Segmentation, Detail Refinement Brush and the mask/reset buttons.
 
 ===Initial Segmentation===
 [[Image:SIOX-Initial-Segmentation.png|thumb|250px|SIOX initial segmentation panel]]
-This is the '''first step''' of the plugin. Here you will define the ROIs that you consider part of the foreground or background. 
+This is the '''first step''' of the procedure. Here one defines the ROIs that are represent the foreground or background. 
 
 ;'''Defining foreground and background'''
 
-:By clicking on the radio buttons ''Foreground'' and  ''Background'' you will switch between both ROIs. If the foreground ROIs are being defined, the background ROIs will be displayed in translucent '''red'''. The same way, while defining the background ROIs, the foreground ROIs will be displayed in translucent '''green'''.
+:Clicking on the radio buttons ''Foreground'' and  ''Background'' switches between both ROI types. When the foreground ROIs are being defined, the background ROIs are displayed in translucent '''red'''. Similarly, when defining the background ROIs, the foreground ROIs are displayed in translucent '''green'''.
 
 :The ROIs can be defined with any of the Fiji selection tools:
 
 :[[Image:Fiji-selection-tools.png]]
 
-:'''TIP''': you can select multiple ROIs in Fiji with any of the selection tools by pressing the SHIFT key and clicking on different parts of the image.
+:'''TIP''': Multiple ROIs can be selected with any of the selection tools while pressing the SHIFT key and clicking on different parts of the image.
 
 ;'''Multiple objects'''
 
-:If you expect '''multiple objects''' to be segmented, you should click on the check-box ''Allow multiple foreground components''. That will tell [[SIOX]] to look for several objects.
+:For segmenting '''multiple objects''', click on the check-box ''Allow multiple foreground components''. That option tells [[SIOX]] to look for several objects in the same image.
 
 ;'''Smoothing'''
 
-:The ''Smoothing'' bar allows to define how sharp you expect the resulting contours to be. For example, if you try to segment the default sample "Leaf (36K)", reducing the smoothing will provide you with more accurate borders in the picks of the leaf.
+:The ''Smoothing'' slider defines the sharpness of the resulting contours. For example, when segmenting the default sample "Leaf (36K)", reducing the smoothing provides more accurate borders.
 
 ;'''Segmentation'''
 
@@ -69,17 +69,17 @@ This is the '''first step''' of the plugin. Here you will define the ROIs that y
 
 :After a few seconds (depending on the size of the image), the segmentation result will be shown. The calculated background area will be darkened while the foreground area(s) will be displayed with the original colors.
 
-:The initial segmentation panel will be then disabled. If you're not satisfied with the result press ''Reset'' to restart the process. Otherwise, continue to the refinement step.
+:After this, the initial segmentation panel is then disabled. If you're not satisfied with the result press ''Reset'' to restart the process. Otherwise, continue to the refinement step.
 
 ===Detail Refinement Brush===
 [[Image:SIOX-Detail-Refinement-Brush.png|thumb|300px|SIOX detail refinement brush panel]]
-This is the '''second step''' on the [[SIOX]] segmentation process. Here we can call the method again to refine the result by subtracting or adding areas to the background or foreground components.
+This is the '''second step''' in the [[SIOX]] segmentation process. Here the method can be called again to refine the result obtained so far to subtract or add areas to the background or foreground components.
 
-'''Note''': this step is completely optional. If you are already satisfied with the result, proceed to create the binary mask.
+'''Note''': this step is optional. If you are already satisfied with the result, proceed to create the binary mask.
 
-Again, by clicking on ''subtract'' or ''add'' you will be able to select the ROIs to be added or subtracted. The sliders here have different meaning: a subtraction value of 0 will indicate you are totally confident of designating that area as background, while an adding value of 1 (slider to the right most value) will indicate you are confident to designate that area as foreground.
+Again, clicking on ''subtract'' or ''add'' selects the ROIs to be added or subtracted. The sliders here have different meaning: a subtraction value of 0 (leftmost postition) indicates total confidence in designating that area as background, while an adding value of 1 (slider to the rightmost position) indicates confidence to designate that area as foreground.
 
-Finally, by clicking on ''Refine'', the segmentation will be recalculated for the selected areas and the result will be displayed the same way as in the initial segmentation (dark background and full color foreground).
+Finally, by clicking on ''Refine'', the segmentation is recalculated for the selected areas and the result will be displayed the same way as in the initial segmentation (dark background and full color foreground).
 
 ===Reset or Create mask===
 [[Image:SIOX-Reset-Create-mask.png|thumb|233px|SIOX Reset/Create mask panel]]
@@ -87,11 +87,11 @@ This panel is enabled during any of the other segmentation steps.
 
 ;'''Reset'''
 
-:Reset the segmentation process including the internal status of the confidence matrix (foreground, background and refinement areas). The '''initial ROIs are reloaded''' so they can be reused.
+:Resets the segmentation process including the internal status of the confidence matrix (foreground, background and refinement areas). The '''initial ROIs are reloaded''' so they can be reused.
 
 ;'''Create mask'''
 
-:Create a binary (0-255) image based on the current state of the segmentation process. The background color (black or white) is defined in ''Process > Binary > Options...'' This button can be pressed during any of the previous steps.
+:Creates a binary (0-255) image based on the current state of the segmentation process. The background color (black or white) is defined in ''Process > Binary > Options...'' This button can be pressed during any of the previous steps.
 
 ==References==
 Most Comprehensive Work:
