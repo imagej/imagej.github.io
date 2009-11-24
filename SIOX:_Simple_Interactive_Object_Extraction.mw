@@ -69,7 +69,7 @@ This is the '''first step''' of the plugin. Here you will define the ROIs that y
 
 :After a few seconds (depending on the size of the image), the segmentation result will be shown. The calculated background area will be darkened while the foreground area(s) will be displayed with the original colors.
 
-:The initial segmentation panel will be then disabled. If you're not satisfied with the result press ''Reset'' to restart the process. Otherwise, continue to step 2.
+:The initial segmentation panel will be then disabled. If you're not satisfied with the result press ''Reset'' to restart the process. Otherwise, continue to the refinement step.
 
 ==References==
 Most Comprehensive Work:
