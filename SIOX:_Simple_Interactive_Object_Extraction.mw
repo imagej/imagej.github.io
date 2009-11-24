@@ -106,4 +106,8 @@ Still Image Approach:
 * G. Friedland, K. Jantz, T. Lenz, R. Rojas: Extending the SIOX Algorithm: Alternative Clustering Methods, Sub-pixel Accurate Object Extraction from Still Images, and Generic Video Segmentation, [http://www.siox.org/downloads/tr-b-06-06.pdf Technical Report B-06-06], Department of Computer Science, Freie Universitaet Berlin, January 2006 (PDF, 10MB).
 * G. Friedland, K. Jantz, T. Lenz, F. Wiesel, R. Rojas: A Practical Approach to Boundary-Accurate Multi-Object Extraction from Still Images and Videos, to appear in Proceedings of the IEEE International Symposium on Multimedia (ISM2006), San Diego (California), December, 2006. 
 
+==ImageJ version==
+Thanks to Wayne Rasband, there is an [http://rsb.info.nih.gov/ij/plugins/siox/index.html ImageJ] version of this plugin without Fiji dependencies:
+[http://rsb.info.nih.gov/ij/plugins/siox/index.html http://rsb.info.nih.gov/ij/plugins/siox/index.html]
+
 [[Category:Plugins]][[Category:Segmentation]]
