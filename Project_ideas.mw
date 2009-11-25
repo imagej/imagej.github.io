@@ -20,7 +20,9 @@ The project would consist of
 
 = Suggestions by Gabriel Landini =
 
-== Alpha_shapes / concave_hull / Graph Theory constructs (in addition to the Delaunay/Voronoi) ==
+== Alpha shapes / concave hull / other Graph Theory algorithms ==
+
+Fiji already contains a [[Delaunay_Voronoi]] plugin.  The purpose of this project is to implement more graph algorithms.  Most likely, this will involve designing a common framework for graph theory as applied to two- or higher-dimensional graphs.
 
 == Colorizing algorithms (i.e greyscale to colour,there are several methods) ==
 
