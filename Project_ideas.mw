@@ -30,7 +30,21 @@ The project would consist of
 
 == Support for storing ROIs in TIFF tag fields, so ROIs can be saved with the images) ==
 
-== Expand the ImageFlow module base (not sure if the source is available yet) ==
+== Integrate ImageFlow into Fiji ==
+
+[[Image:ImageFlow.png|700px|center]]
+
+ImageFlow provides a graphical way to construct macros.  Every action is represented by a node which the user can connect with lines to define a workflow.
+
+ImageFlow has its own [http://github.com/Dahie/imageflow Git repository] ([http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=imageflow.git;a=summary our mirror).
+
+The following issues need to be resolved:
+
+* At the moment, it is not a true plugin, but wants to start its own ImageJ instance
+
+* it only targets the macro language, while we want to target all the scripting languages supported by Fiji
+
+* it searches for its .xml files outside of the .jar file, which makes it cumbersome to ship with the Fiji updater.
 
 == Object (rather than image) selector/sorter (something like Kai's pixolu.de) ==
 
