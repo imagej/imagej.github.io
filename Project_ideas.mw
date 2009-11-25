@@ -48,9 +48,9 @@ The following issues need to be resolved:
 
 * it searches for its .xml files outside of the .jar file, which makes it cumbersome to ship with the Fiji updater.
 
-== Object (rather than image) selector/sorter (something like Kai's pixolu.de) ==
+== image selector/sorter ==
 
-If you haven't tried it, you should) to create "objects like these" filters/classifiers to be extracted from images and sets of images.
+Implement an algorithm that sorts a number of images by features, such as color.  Inspired by Kai-Uwe Barthel's [http://pixolu.de pixolu] project.
 
 == Interface between R and ImageJ/Fiji ==
 
