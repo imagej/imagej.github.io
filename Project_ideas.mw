@@ -24,7 +24,11 @@ The project would consist of
 
 Fiji already contains a [[Delaunay_Voronoi]] plugin.  The purpose of this project is to implement more graph algorithms.  Most likely, this will involve designing a common framework for graph theory as applied to two- or higher-dimensional graphs.
 
-== Colorizing algorithms (i.e greyscale to colour,there are several methods) ==
+== Colorizing algorithms ==
+
+There are a number of publications about turning greyscale images into color images.  This project is about implementing as many of them as possible.
+
+Note: this is an ill-posed problem, as there is not enough information in the greyscale images to identify the original color.  However, under certain circumstances, it is possible to estimate a best guess for the color for most or all pixels.
 
 == Retinex algorithm ==
 
