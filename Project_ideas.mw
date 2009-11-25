@@ -36,7 +36,9 @@ Note: this is an ill-posed problem, as there is not enough information in the gr
 
 In Fiji, you can adjust the dynamic range of an image by calling ''Image>Adjust>Brightness & Contrast''.  However, this only lets you choose a linear mapping between pixel intensity and lookup table.  This project aims to provide non-linear controls, such as piecewise linear functions, gamma curves, splines, etc
 
-== Support for storing ROIs in TIFF tag fields, so ROIs can be saved with the images) ==
+== Support for storing ROIs in TIFF tag fields ==
+
+Fiji can save images as TIFF files and ROIs into custom .roi files.  Provide a way to store the ROIs inside custom tags in the TIFF file so ROIs and images can be saved together.
 
 == Integrate ImageFlow into Fiji ==
 
