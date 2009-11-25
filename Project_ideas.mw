@@ -32,7 +32,9 @@ Note: this is an ill-posed problem, as there is not enough information in the gr
 
 == Retinex algorithm ==
 
-== Interactively adjustable intensity/LUT curves (not just linear controls, but splines/etc based) ==
+== Interactively adjustable intensity/LUT curves ==
+
+In Fiji, you can adjust the dynamic range of an image by calling ''Image>Adjust>Brightness & Contrast''.  However, this only lets you choose a linear mapping between pixel intensity and lookup table.  This project aims to provide non-linear controls, such as piecewise linear functions, gamma curves, splines, etc
 
 == Support for storing ROIs in TIFF tag fields, so ROIs can be saved with the images) ==
 
