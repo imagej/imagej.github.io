@@ -1,5 +1,7 @@
 This page contains a loose list of ideas for cool/useful projects that have some relation to Fiji
 
+= Visualization =
+
 == Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window ==
 
 The idea is to be able to display multiple virtual hyperstack-type data sets in a single multi-color composite window. I've already arranged this using multiple QuickTime Movies or AVIs. But the ideal will be to allow overlay from mixed data of any of the many BioFormats-supported file types.
@@ -18,11 +20,11 @@ The project would consist of
 '''Language:''' Java.<br />
 '''Contact:''' Bill Mohler (wmohler@neuron.uchc.edu)<br />
 
-= Suggestions by Gabriel Landini =
+== Interactively adjustable intensity/LUT curves ==
 
-== Alpha shapes / concave hull / other Graph Theory algorithms ==
+In Fiji, you can adjust the dynamic range of an image by calling ''Image>Adjust>Brightness & Contrast''.  However, this only lets you choose a linear mapping between pixel intensity and lookup table.  This project aims to provide non-linear controls, such as piecewise linear functions, gamma curves, splines, etc
 
-Fiji already contains a [[Delaunay_Voronoi]] plugin.  The purpose of this project is to implement more graph algorithms.  Most likely, this will involve designing a common framework for graph theory as applied to two- or higher-dimensional graphs.
+= Image processing plugins =
 
 == Colorizing algorithms ==
 
@@ -32,9 +34,23 @@ Note: this is an ill-posed problem, as there is not enough information in the gr
 
 == Retinex algorithm ==
 
-== Interactively adjustable intensity/LUT curves ==
+== image selector/sorter ==
 
-In Fiji, you can adjust the dynamic range of an image by calling ''Image>Adjust>Brightness & Contrast''.  However, this only lets you choose a linear mapping between pixel intensity and lookup table.  This project aims to provide non-linear controls, such as piecewise linear functions, gamma curves, splines, etc
+Implement an algorithm that sorts a number of images by features, such as color.  Inspired by Kai-Uwe Barthel's [http://pixolu.de pixolu] project.
+
+== A set of more powerful painting brushes and image editing tools ==
+
+Even if Fiji aims at scientific image processing rather than beautifying photographs, it might be fun to take your holiday pictures and post-process them with the image processing software you are familiar with.
+
+Possible tools to do so would be airbrushes (allowing for transparent colors) or brushes with a certain inertia to allow calligraphic effects, etc
+
+== Fractal interpolation resizing (from the GIMP GSoC entry) ==
+
+= Miscellaneous =
+
+== Alpha shapes / concave hull / other Graph Theory algorithms ==
+
+Fiji already contains a [[Delaunay_Voronoi]] plugin.  The purpose of this project is to implement more graph algorithms.  Most likely, this will involve designing a common framework for graph theory as applied to two- or higher-dimensional graphs.
 
 == Support for storing ROIs in TIFF tag fields ==
 
@@ -56,19 +72,9 @@ The following issues need to be resolved:
 
 * it searches for its .xml files outside of the .jar file, which makes it cumbersome to ship with the Fiji updater.
 
-== image selector/sorter ==
-
-Implement an algorithm that sorts a number of images by features, such as color.  Inspired by Kai-Uwe Barthel's [http://pixolu.de pixolu] project.
-
 == Interface between R and ImageJ/Fiji ==
 
 Dimiter Prodanov has done something like this, but it would be nice to have a set of implemented procedures so IJ/Fiji can run statistical procedures directly from Results tables, etc).
-
-== A set of more powerful painting brushes and image editing tools ==
-
-Even if Fiji aims at scientific image processing rather than beautifying photographs, it might be fun to take your holiday pictures and post-process them with the image processing software you are familiar with.
-
-Possible tools to do so would be airbrushes (allowing for transparent colors) or brushes with a certain inertia to allow calligraphic effects, etc
 
 == Cross platform webcam support ==
 
@@ -76,15 +82,13 @@ Supporting image recording from webcams might provide a cheap way to make videom
 
 One way to achieve that would be by using the [http://fmj-sf.net/ Free Java Media Framework].
 
-== Fractal interpolation resizing (from the GIMP GSoC entry) ==
-
 == A unique/common segmentation interface ==
 
 I have collected near 15 new histogram segmentation methods that would be better put under a single interface together with others already available.
 
-== A javascript Recorder ==
+== A Javascript Recorder ==
 
-Similar to the Macro Recorder but producing javascript instead.
+Similar to the Macro Recorder but producing Javascript instead.
 
 == Virtual microscope-like image viewer ==
                                                                                 
