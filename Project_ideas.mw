@@ -58,7 +58,11 @@ Dimiter Prodanov has done something like this, but it would be nice to have a se
 
 == A set of more powerful painting brushes and image editing tools ==
 
-== Cross platform webcam support (to produce cheap videomicroscope/telescope units) ==
+== Cross platform webcam support ==
+
+Supporting image recording from webcams might provide a cheap way to make videomicroscope/telescope units (possibly using the [[Distortion Correction]] plugin to overcome low-quality CCD chips and lenses).
+
+One way to achieve that would be by using the [http://fmj-sf.net/ Free Java Media Framework].
 
 == Fractal interpolation resizing (from the GIMP GSoC entry) ==
 
