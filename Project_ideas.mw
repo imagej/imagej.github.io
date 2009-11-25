@@ -42,7 +42,7 @@ References:
 
 * [http://spiedl.aip.org/getabs/servlet/GetabsServlet?prog=normal&id=PSISDG007241000001724106000001&idtype=cvips&gifs=yes Fast implementation of color constancy algorithms]
 
-== image selector/sorter ==
+== Image selector/sorter ==
 
 Implement an algorithm that sorts a number of images by features, such as color.  Inspired by Kai-Uwe Barthel's [http://pixolu.de pixolu] project.
 
