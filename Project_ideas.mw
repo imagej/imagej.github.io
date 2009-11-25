@@ -58,6 +58,10 @@ Dimiter Prodanov has done something like this, but it would be nice to have a se
 
 == A set of more powerful painting brushes and image editing tools ==
 
+Even if Fiji aims at scientific image processing rather than beautifying photographs, it might be fun to take your holiday pictures and post-process them with the image processing software you are familiar with.
+
+Possible tools to do so would be airbrushes (allowing for transparent colors) or brushes with a certain inertia to allow calligraphic effects, etc
+
 == Cross platform webcam support ==
 
 Supporting image recording from webcams might provide a cheap way to make videomicroscope/telescope units (possibly using the [[Distortion Correction]] plugin to overcome low-quality CCD chips and lenses).
