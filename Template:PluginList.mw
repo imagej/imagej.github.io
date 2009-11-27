@@ -3,73 +3,6 @@
 * [[Volume Viewer]] - file <tt>Volume_Viewer.jar</tt>  -- ''java jar file''
 * [[3D Viewer]] - file <tt>ImageJ_3D_Viewer</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 
-
-
-=== Plugins > Macros ===
-
-* [[Bulls Eye]] - file <tt>Bulls_Eye.txt</tt>  -- ''macro''
-* [[About Plugin Macros]] - file <tt>About_Plugin_Macros.txt</tt>  -- ''macro''
-* [[RGB Histogram]] - file <tt>RGB_Histogram.txt</tt>  -- ''macro''
-* [[batch convert any to tif]] - file <tt>batch_convert_any_to_tif.txt</tt>  -- ''macro''
-* [[Polygon]] - file <tt>Polygon_.txt</tt>  -- ''macro''
-
-
-
-=== Plugins > Utilities ===
-
-* [[Thread killer]] - file <tt>Thread_Killer</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Record Window]] - file <tt>Jython.Refresh_Jython_Scripts("../scripts/Record_Window.py")</tt> in package '''[[Record_Screen]]'''  -- ''java jar file''
-* [[Collect Garbage]] - file <tt>CollectGarbage_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[IJ Robot]] - file <tt>IJ_Robot</tt> in package '''[[IJ_Robot]]'''  -- ''java jar file''
-* [[Record Desktop]] - file <tt>Jython.Refresh_Jython_Scripts("../scripts/Record_Desktop.py")</tt> in package '''[[Record_Screen]]'''  -- ''java jar file''
-* [[Close All Without Saving]] - file <tt>Close_All_Without_Saving.txt</tt>  -- ''macro''
-
-
-==== Plugins > Utilities > Debugging ====
-
-* [[Test Java3D]] - file <tt>Test_Java3D</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Test Marching Cubes]] - file <tt>MC_Test</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-
-
-
-=== Plugins > Examples ===
-
-* [[Edit LUT As Text]] - file <tt>Edit_LUT_As_Text.py</tt>  -- ''jython script''
-* [[Single Voxel in 3D]] - file <tt>tracing.Test_Single_Voxel</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[random noise example]] - file <tt>random_noise_example.clj</tt>  -- ''clojure script''
-* [[list all threads]] - file <tt>list_all_threads.py</tt>  -- ''jython script''
-* [[downsample]] - file <tt>downsample_.js</tt>  -- ''javascript file''
-* [[Plasma Cloud]] - file <tt>Plasma_Cloud.rb</tt>  -- ''jruby script''
-* [[Delayed Snapshot]] - file <tt>Delayed_Snapshot.py</tt>  -- ''jython script''
-* [[Find Dimension of Raw Image]] - file <tt>Find_Dimension_of_Raw_Image.py</tt>  -- ''jython script''
-* [[Blobs Demo in Ruby]] - file <tt>Blobs_Demo_in_Ruby.rb</tt>  -- ''jruby script''
-* [[Same Slice in Multiple Images]] - file <tt>Same_Slice_in_Multiple_Images.rb</tt>  -- ''jruby script''
-* [[celsius to fahrenheit]] - file <tt>celsius_to_fahrenheit.clj</tt>  -- ''clojure script''
-* [[blend two images]] - file <tt>blend_two_images.clj</tt>  -- ''clojure script''
-* [[Anaglyph for Red Cyan glasses]] - file <tt>Anaglyph_for_Red_Cyan_glasses.rb</tt>  -- ''jruby script''
-* [[Multithreaded Image Processing]] - file <tt>Multithreaded_Image_Processing.clj</tt>  -- ''clojure script''
-* [[Fiji Logo 3D]] - file <tt>Fiji_Logo_3D.js</tt>  -- ''javascript file''
-* [[Spheres and Tubes in 3D]] - file <tt>customnode.Mesh_Maker</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Multithreaded Image Processing in Javascript]] - file <tt>Multithreaded_Image_Processing_in_Javascript.js</tt>  -- ''javascript file''
-* [[chess]] - file <tt>chess_.py</tt>  -- ''jython script''
-
-
-==== Plugins > Examples > Command_Launchers ====
-
-* [[Command Launcher Javascript]] - file <tt>Command_Launcher_Javascript.js</tt>  -- ''javascript file''
-* [[Command Launcher Python]] - file <tt>Command_Launcher_Python.py</tt>  -- ''jython script''
-* [[Command Launcher Clojure]] - file <tt>Command_Launcher_Clojure.clj</tt>  -- ''clojure script''
-* [[Command Launcher Ruby]] - file <tt>Command_Launcher_Ruby.rb</tt>  -- ''jruby script''
-
-
-==== Plugins > Examples > TrakEM2_Example_Scripts ====
-
-* [[T2 set all transforms to identity]] - file <tt>T2_set_all_transforms_to_identity.py</tt>  -- ''jython script''
-* [[T2 Select All]] - file <tt>T2_Select_All.py</tt>  -- ''jython script''
-* [[Measure AreaLists]] - file <tt>Measure_AreaLists.py</tt>  -- ''jython script''
-
-
-
 === Plugins > Analyze ===
 
 * [[Delaunay Voronoi]] - file <tt>Delaunay_Voronoi</tt> in package '''[[VIB_]]'''  -- ''java jar file''
@@ -84,79 +17,83 @@
 * [[Compute Curvatures]] - file <tt>Compute_Curvatures</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Visual grep]] - file <tt>Visual_Grep</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 
+=== Plugins > Examples ===
 
+* [[Delayed Snapshot]] - file <tt>Delayed_Snapshot.py</tt>  -- ''jython script''
+* [[Single Voxel in 3D]] - file <tt>tracing.Test_Single_Voxel</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[random noise example]] - file <tt>random_noise_example.clj</tt>  -- ''clojure script''
+* [[list all threads]] - file <tt>list_all_threads.py</tt>  -- ''jython script''
+* [[downsample]] - file <tt>downsample_.js</tt>  -- ''javascript file''
+* [[Plasma Cloud]] - file <tt>Plasma_Cloud.rb</tt>  -- ''jruby script''
+* [[Fiji Logo 3D]] - file <tt>Fiji_Logo_3D.js</tt>  -- ''javascript file''
+* [[Find Dimension of Raw Image]] - file <tt>Find_Dimension_of_Raw_Image.py</tt>  -- ''jython script''
+* [[Edit LUT As Text]] - file <tt>Edit_LUT_As_Text.py</tt>  -- ''jython script''
+* [[Blobs Demo in Ruby]] - file <tt>Blobs_Demo_in_Ruby.rb</tt>  -- ''jruby script''
+* [[Same Slice in Multiple Images]] - file <tt>Same_Slice_in_Multiple_Images.rb</tt>  -- ''jruby script''
+* [[celsius to fahrenheit]] - file <tt>celsius_to_fahrenheit.clj</tt>  -- ''clojure script''
+* [[blend two images]] - file <tt>blend_two_images.clj</tt>  -- ''clojure script''
+* [[Anaglyph for Red Cyan glasses]] - file <tt>Anaglyph_for_Red_Cyan_glasses.rb</tt>  -- ''jruby script''
+* [[Multithreaded Image Processing]] - file <tt>Multithreaded_Image_Processing.clj</tt>  -- ''clojure script''
+* [[Spheres and Tubes in 3D]] - file <tt>customnode.Mesh_Maker</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Multithreaded Image Processing in Javascript]] - file <tt>Multithreaded_Image_Processing_in_Javascript.js</tt>  -- ''javascript file''
+* [[chess]] - file <tt>chess_.py</tt>  -- ''jython script''
 
-=== Plugins > Feature Extraction ===
+==== Plugins > Examples > Command_Launchers ====
 
-* [[Extract SIFT Correspondences]] - file <tt>SIFT_ExtractPointRoi</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
-* [[Extract MOPS Correspondences]] - file <tt>MOPS_ExtractPointRoi</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+* [[Command Launcher Javascript]] - file <tt>Command_Launcher_Javascript.js</tt>  -- ''javascript file''
+* [[Command Launcher Clojure]] - file <tt>Command_Launcher_Clojure.clj</tt>  -- ''clojure script''
+* [[Command Launcher Python]] - file <tt>Command_Launcher_Python.py</tt>  -- ''jython script''
+* [[Command Launcher Ruby]] - file <tt>Command_Launcher_Ruby.rb</tt>  -- ''jruby script''
 
+==== Plugins > Examples > TrakEM2_Example_Scripts ====
 
+* [[extract stack under arealist]] - file <tt>extract_stack_under_arealist.py</tt>  -- ''jython script''
+* [[T2 set all transforms to identity]] - file <tt>T2_set_all_transforms_to_identity.py</tt>  -- ''jython script''
+* [[T2 Select All]] - file <tt>T2_Select_All.py</tt>  -- ''jython script''
+* [[Measure AreaLists]] - file <tt>Measure_AreaLists.py</tt>  -- ''jython script''
 
-=== Plugins > Transform ===
+=== Plugins > Macros ===
 
-* [[TJ Embed]] - file <tt>TJ_Embed</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
-* [[TJ Options]] - file <tt>TJ_Options</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
-* [[Interactive Moving Least Squares]] - file <tt>Transform_MovingLeastSquaresMesh</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
-* [[TJ Mirror]] - file <tt>TJ_Mirror</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
-* [[Interactive Similarity]] - file <tt>Transform_Similarity</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
-* [[TJ Shift]] - file <tt>TJ_Shift</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
-* [[Spline Deformation Generator]] - file <tt>SplineDeformationGenerator.SplineDeformationGenerator_</tt> in package '''[[SplineDeformationGenerator_]]'''  -- ''java jar file''
-* [[Transform Virtual Stack Slices]] - file <tt>register_virtual_stack.Transform_Virtual_Stack_MT</tt> in package '''[[register_virtual_stack_slices]]'''  -- ''java jar file''
-* [[TJ Scale]] - file <tt>TJ_Scale</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
-* [[Landmark Correspondences]] - file <tt>Transform_Roi</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
-* [[Interactive Rigid]] - file <tt>Transform_Rigid</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
-* [[Distortion Correction]] - file <tt>lenscorrection.Distortion_Correction</tt> in package '''[[TrakEM2_]]'''  -- ''java jar file''
-* [[TJ Turn]] - file <tt>TJ_Turn</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
-* [[TJ Panel]] - file <tt>TJ_Panel</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
-* [[TJ Affine]] - file <tt>TJ_Affine</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
-* [[Interactive Affine]] - file <tt>Transform_Affine</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
-* [[Interactive Stack Rotation]] - file <tt>Stack_Rotate</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
-* [[Interactive Perspective]] - file <tt>Transform_Perspective</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
-* [[TJ Rotate]] - file <tt>TJ_Rotate</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
-* [[TJ Crop]] - file <tt>TJ_Crop</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+* [[About Plugin Macros]] - file <tt>About_Plugin_Macros.txt</tt>  -- ''macro''
+* [[Bulls Eye]] - file <tt>Bulls_Eye.txt</tt>  -- ''macro''
+* [[RGB Histogram]] - file <tt>RGB_Histogram.txt</tt>  -- ''macro''
+* [[batch convert any to tif]] - file <tt>batch_convert_any_to_tif.txt</tt>  -- ''macro''
+* [[Polygon]] - file <tt>Polygon_.txt</tt>  -- ''macro''
 
+=== Plugins > Utilities ===
 
+* [[Thread killer]] - file <tt>Thread_Killer</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Record Window]] - file <tt>Jython.Refresh_Jython_Scripts("../scripts/Record_Window.py")</tt> in package '''[[Record_Screen]]'''  -- ''java jar file''
+* [[Collect Garbage]] - file <tt>CollectGarbage_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Record Desktop]] - file <tt>Jython.Refresh_Jython_Scripts("../scripts/Record_Desktop.py")</tt> in package '''[[Record_Screen]]'''  -- ''java jar file''
+* [[IJ Robot]] - file <tt>IJ_Robot</tt> in package '''[[IJ_Robot]]'''  -- ''java jar file''
+* [[Close All Without Saving]] - file <tt>Close_All_Without_Saving.txt</tt>  -- ''macro''
 
-=== Plugins > Registration ===
+==== Plugins > Utilities > Debugging ====
 
-* [[Register Virtual Stack Slices]] - file <tt>register_virtual_stack.Register_Virtual_Stack_MT</tt> in package '''[[register_virtual_stack_slices]]'''  -- ''java jar file''
-* [[Rigid Registration]] - file <tt>vib.RigidRegistration_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[TurboReg]] - file <tt>TurboReg_</tt> in package '''[[TurboReg_]]'''  -- ''java jar file''
-* [[Moving Least Squares]] - file <tt>Moving_Least_Squares</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Align Image by line ROI]] - file <tt>Align_Image</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[bUnwarpJ]] - file <tt>bunwarpj.bUnwarpJ_</tt> in package '''[[bUnwarpJ_]]'''  -- ''java jar file''
-* [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+* [[Test Java3D]] - file <tt>Test_Java3D</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Test Marching Cubes]] - file <tt>MC_Test</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 
+=== Plugins > Skeleton ===
 
+* [[Analyze Skeleton (2D/3D)]] - file <tt>skeleton_analysis.AnalyzeSkeleton_</tt> in package '''[[AnalyzeSkeleton_]]'''  -- ''java jar file''
+* [[Skeletonize (2D/3D)]] - file <tt>Skeletonize3D_</tt> in package '''[[Skeletonize3D_]]'''  -- ''java jar file''
 
 === Plugins > Scripting ===
 
 * [[Refresh Javascript Scripts]] - file <tt>Javascript.Refresh_Javascript_Scripts</tt> in package '''[[Javascript_]]'''  -- ''java jar file''
-* [[Refresh Jython Scripts]] - file <tt>Jython.Refresh_Jython_Scripts</tt> in package '''[[Jython_Interpreter]]'''  -- ''java jar file''
+* [[JRuby Interpreter]] - file <tt>JRuby.JRuby_Interpreter</tt> in package '''[[JRuby_Interpreter]]'''  -- ''java jar file''
 * [[Refresh Javas]] - file <tt>fiji.scripting.java.Refresh_Javas</tt> in package '''[[Refresh_Javas]]'''  -- ''java jar file''
 * [[BeanShell Interpreter]] - file <tt>BSH.BSH_Interpreter</tt> in package '''[[BeanShell_Interpreter]]'''  -- ''java jar file''
 * [[Clojure Interpreter]] - file <tt>Clojure.Clojure_Interpreter</tt> in package '''[[Clojure_Interpreter]]'''  -- ''java jar file''
-* [[Refresh BSH Scripts]] - file <tt>BSH.Refresh_BSH_Scripts</tt> in package '''[[BeanShell_Interpreter]]'''  -- ''java jar file''
 * [[Refresh JRuby Scripts]] - file <tt>JRuby.Refresh_JRuby_Scripts</tt> in package '''[[JRuby_Interpreter]]'''  -- ''java jar file''
 * [[Jython Interpreter]] - file <tt>Jython.Jython_Interpreter</tt> in package '''[[Jython_Interpreter]]'''  -- ''java jar file''
 * [[Javascript Interpreter]] - file <tt>Javascript.Javascript_Interpreter</tt> in package '''[[Javascript_]]'''  -- ''java jar file''
+* [[Refresh Jython Scripts]] - file <tt>Jython.Refresh_Jython_Scripts</tt> in package '''[[Jython_Interpreter]]'''  -- ''java jar file''
 * [[Script Editor]] - file <tt>fiji.scripting.Script_Editor</tt> in package '''[[Script_Editor]]'''  -- ''java jar file''
 * [[Macro Interpreter]] - file <tt>CLI.CLI_</tt> in package '''[[CLI_]]'''  -- ''java jar file''
 * [[Refresh Clojure Scripts]] - file <tt>Clojure.Refresh_Clojure_Scripts</tt> in package '''[[Clojure_Interpreter]]'''  -- ''java jar file''
-* [[JRuby Interpreter]] - file <tt>JRuby.JRuby_Interpreter</tt> in package '''[[JRuby_Interpreter]]'''  -- ''java jar file''
-
-
-
-=== Plugins > Segmentation ===
-
-* [[Statistical Region Merging]] - file <tt>SRM_</tt> in package '''[[Statistical_Region_Merging]]'''  -- ''java jar file''
-* [[Simple Neurite Tracer]] - file <tt>tracing.Simple_Neurite_Tracer</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Level Sets]] - file <tt>levelsets.ij.LevelSet</tt> in package '''[[level_sets]]'''  -- ''java jar file''
-* [[Blow/Lasso Tool]] - file <tt>plugin.Lasso_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Segmentation Editor]] - file <tt>Segmentation_Editor</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-
-
+* [[Refresh BSH Scripts]] - file <tt>BSH.Refresh_BSH_Scripts</tt> in package '''[[BeanShell_Interpreter]]'''  -- ''java jar file''
 
 === Plugins > Image5D ===
 
@@ -177,7 +114,70 @@
 * [[Set Position]] - file <tt>Set_Position("")</tt> in package '''[[Image_5D]]'''  -- ''java jar file''
 * [[Make Montage]] - file <tt>Make_Montage("")</tt> in package '''[[Image_5D]]'''  -- ''java jar file''
 
+=== Plugins > Tracking ===
 
+* [[ToAST]] - file <tt>ToAST25_</tt> in package '''[[ToAST_]]'''  -- ''java jar file''
+* [[Manual Tracking]] - file <tt>Manual_Tracking</tt> in package '''[[Manual_Tracking]]'''  -- ''java jar file''
+* [[MTrack2]] - file <tt>MTrack2_</tt> in package '''[[MTrack2_]]'''  -- ''java jar file''
+
+=== Plugins > Segmentation ===
+
+* [[SIOX: Simple Interactive Object Extraction]] - file <tt>siox.Siox_Segmentation</tt> in package '''[[Siox_Segmentation]]'''  -- ''java jar file''
+* [[Segmentation Editor]] - file <tt>Segmentation_Editor</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Level Sets]] - file <tt>levelsets.ij.LevelSet</tt> in package '''[[level_sets]]'''  -- ''java jar file''
+* [[Blow/Lasso Tool]] - file <tt>plugin.Lasso_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Statistical Region Merging]] - file <tt>SRM_</tt> in package '''[[Statistical_Region_Merging]]'''  -- ''java jar file''
+* [[Simple Neurite Tracer]] - file <tt>tracing.Simple_Neurite_Tracer</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+
+=== Plugins > Transform ===
+
+* [[TJ Embed]] - file <tt>TJ_Embed</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+* [[TJ Options]] - file <tt>TJ_Options</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+* [[Interactive Moving Least Squares]] - file <tt>Transform_MovingLeastSquaresMesh</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+* [[Interactive Similarity]] - file <tt>Transform_Similarity</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+* [[TJ Shift]] - file <tt>TJ_Shift</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+* [[Spline Deformation Generator]] - file <tt>SplineDeformationGenerator.SplineDeformationGenerator_</tt> in package '''[[SplineDeformationGenerator_]]'''  -- ''java jar file''
+* [[Transform Virtual Stack Slices]] - file <tt>register_virtual_stack.Transform_Virtual_Stack_MT</tt> in package '''[[register_virtual_stack_slices]]'''  -- ''java jar file''
+* [[Interactive Perspective]] - file <tt>Transform_Perspective</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+* [[Landmark Correspondences]] - file <tt>Transform_Roi</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+* [[TJ Panel]] - file <tt>TJ_Panel</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+* [[Distortion Correction]] - file <tt>lenscorrection.Distortion_Correction</tt> in package '''[[TrakEM2_]]'''  -- ''java jar file''
+* [[Interactive Rigid]] - file <tt>Transform_Rigid</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+* [[TJ Turn]] - file <tt>TJ_Turn</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+* [[TJ Scale]] - file <tt>TJ_Scale</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+* [[TJ Mirror]] - file <tt>TJ_Mirror</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+* [[Interactive Affine]] - file <tt>Transform_Affine</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+* [[Interactive Stack Rotation]] - file <tt>Stack_Rotate</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+* [[TJ Affine]] - file <tt>TJ_Affine</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+* [[TJ Rotate]] - file <tt>TJ_Rotate</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+* [[TJ Crop]] - file <tt>TJ_Crop</tt> in package '''[[TransformJ_]]'''  -- ''java jar file''
+
+=== Plugins > Stitching ===
+
+* [[3D Stitching]] - file <tt>Stitching_3D</tt> in package '''[[Stitching_]]'''  -- ''java jar file''
+* [[Stitch Directory with Images (unknown configuration)]] - file <tt>Stitch_Image_Directory</tt> in package '''[[Stitching_]]'''  -- ''java jar file''
+* [[Stitch Grid of Images]] - file <tt>Stitch_Image_Grid</tt> in package '''[[Stitching_]]'''  -- ''java jar file''
+* [[Stitch Collection of Images]] - file <tt>Stitch_Image_Collection</tt> in package '''[[Stitching_]]'''  -- ''java jar file''
+* [[2D Stitching]] - file <tt>Stitching_2D</tt> in package '''[[Stitching_]]'''  -- ''java jar file''
+
+=== Plugins > Registration ===
+
+* [[Register Virtual Stack Slices]] - file <tt>register_virtual_stack.Register_Virtual_Stack_MT</tt> in package '''[[register_virtual_stack_slices]]'''  -- ''java jar file''
+* [[Rigid Registration]] - file <tt>vib.RigidRegistration_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Align Image by line ROI]] - file <tt>Align_Image</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Moving Least Squares]] - file <tt>Moving_Least_Squares</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[TurboReg]] - file <tt>TurboReg_</tt> in package '''[[TurboReg_]]'''  -- ''java jar file''
+* [[bUnwarpJ]] - file <tt>bunwarpj.bUnwarpJ_</tt> in package '''[[bUnwarpJ_]]'''  -- ''java jar file''
+* [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+
+=== Plugins > Stacks ===
+
+* [[Crop (3D)]] - file <tt>stacks.Three_Pane_Crop</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Average Images]] - file <tt>vib.Average_Images</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+
+=== Plugins > Landmarks ===
+
+* [[Name Landmarks and Register]] - file <tt>landmarks.Name_Points</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 
 === Plugins > Process ===
 
@@ -212,26 +212,6 @@
 * [[Triangle Algorithm]] - file <tt>Triangle_Algorithm</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Convolve (3D)]] - file <tt>process3d.Convolve_3d</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 
-
-
-=== Plugins > Tracking ===
-
-* [[ToAST]] - file <tt>ToAST25_</tt> in package '''[[ToAST_]]'''  -- ''java jar file''
-* [[Manual Tracking]] - file <tt>Manual_Tracking</tt> in package '''[[Manual_Tracking]]'''  -- ''java jar file''
-* [[MTrack2]] - file <tt>MTrack2_</tt> in package '''[[MTrack2_]]'''  -- ''java jar file''
-
-
-
-=== Plugins > Stitching ===
-
-* [[3D Stitching]] - file <tt>Stitching_3D</tt> in package '''[[Stitching_]]'''  -- ''java jar file''
-* [[Stitch Collection of Images]] - file <tt>Stitch_Image_Collection</tt> in package '''[[Stitching_]]'''  -- ''java jar file''
-* [[2D Stitching]] - file <tt>Stitching_2D</tt> in package '''[[Stitching_]]'''  -- ''java jar file''
-* [[Stitch Grid of Images]] - file <tt>Stitch_Image_Grid</tt> in package '''[[Stitching_]]'''  -- ''java jar file''
-* [[Stitch Directory with Images (unknown configuration)]] - file <tt>Stitch_Image_Directory</tt> in package '''[[Stitching_]]'''  -- ''java jar file''
-
-
-
 === Plugins > LOCI ===
 
 * [[Update LOCI Plugins]] - file <tt>loci.plugins.Updater("")</tt> in package '''[[loci_tools]]'''  -- ''java jar file''
@@ -246,34 +226,10 @@
 * [[Stack Colorizer]] - file <tt>loci.plugins.Colorizer("")</tt> in package '''[[loci_tools]]'''  -- ''java jar file''
 * [[LOCI Plugins Shortcut Window]] - file <tt>loci.plugins.shortcut.ShortcutPanel("")</tt> in package '''[[loci_tools]]'''  -- ''java jar file''
 
+=== Plugins > Feature Extraction ===
 
-
-=== Plugins > Stacks ===
-
-* [[Crop (3D)]] - file <tt>stacks.Three_Pane_Crop</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Average Images]] - file <tt>vib.Average_Images</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-
-
-
-=== Plugins > Landmarks ===
-
-* [[Name Landmarks and Register]] - file <tt>landmarks.Name_Points</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-
-
-
-=== Plugins > Skeleton ===
-
-* [[Analyze Skeleton (2D/3D)]] - file <tt>skeleton_analysis.AnalyzeSkeleton_</tt> in package '''[[AnalyzeSkeleton_]]'''  -- ''java jar file''
-* [[Skeletonize (2D/3D)]] - file <tt>Skeletonize3D_</tt> in package '''[[Skeletonize3D_]]'''  -- ''java jar file''
-
-
-
-
-
-
-
-
-
+* [[Extract SIFT Correspondences]] - file <tt>SIFT_ExtractPointRoi</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
+* [[Extract MOPS Correspondences]] - file <tt>MOPS_ExtractPointRoi</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
 
 == Analyze ==
 
@@ -283,21 +239,19 @@
 * [[3D Surface Plot]] - file <tt>Interactive_3D_Surface_Plot</tt> in package '''[[Interactive_3D_Surface_Plot]]'''  -- ''java jar file''
 * [[3D Objects Counter]] - file <tt>_3D_objects_counter</tt> in package '''[[3D_Objects_Counter]]'''  -- ''java jar file''
 
-
-
 === Analyze > Colocalization ===
 
 * [[Colocalization Threshold]] - file <tt>Colocalisation_Threshold</tt> in package '''[[Colocalisation_Analysis]]'''  -- ''java jar file''
 * [[Colocalization Test]] - file <tt>Colocalisation_Test</tt> in package '''[[Colocalisation_Analysis]]'''  -- ''java jar file''
 
+=== Analyze > Optic Flow ===
 
+* [[PIV analysis]] - file <tt>PIV_analyser</tt> in package '''[[PIV_analyser]]'''  -- ''java jar file''
+* [[FlowJ]] - file <tt>FlowJ_</tt> in package '''[[FlowJ_]]'''  -- ''java jar file''
 
-=== Analyze > Tools ===
+=== Analyze > Classification ===
 
-* [[Sync Measure 3D]] - file <tt>Sync_Measure_3D("")</tt> in package '''[[Sync_Win]]'''  -- ''java jar file''
-* [[Sync Windows]] - file <tt>Sync_Windows("")</tt> in package '''[[Sync_Win]]'''  -- ''java jar file''
-
-
+* [[IsoData Classifier]] - file <tt>IsoData_Classifier</tt> in package '''[[IsoData_Classifier]]'''  -- ''java jar file''
 
 === Analyze > Local Thickness ===
 
@@ -307,69 +261,24 @@
 * [[Distance Ridge to Local Thickness]] - file <tt>Local_Thickness_Parallel("run")</tt> in package '''[[LocalThickness_]]'''  -- ''java jar file''
 * [[Geometry to Distance Map]] - file <tt>EDT_S1D("run")</tt> in package '''[[LocalThickness_]]'''  -- ''java jar file''
 
+=== Analyze > Tools ===
 
-
-=== Analyze > Optic Flow ===
-
-* [[PIV analysis]] - file <tt>PIV_analyser</tt> in package '''[[PIV_analyser]]'''  -- ''java jar file''
-* [[FlowJ]] - file <tt>FlowJ_</tt> in package '''[[FlowJ_]]'''  -- ''java jar file''
-
-
-
-
-
-
-
-
-
+* [[Sync Measure 3D]] - file <tt>Sync_Measure_3D("")</tt> in package '''[[Sync_Win]]'''  -- ''java jar file''
+* [[Sync Windows]] - file <tt>Sync_Windows("")</tt> in package '''[[Sync_Win]]'''  -- ''java jar file''
 
 == File ==
-
-
-
-
-=== File > New ===
-
-* [[TrakEM2 (from template)]] - file <tt>ini.trakem2.New_Project</tt> in package '''[[TrakEM2_]]'''  -- ''java jar file''
-* [[Fiji Tutorial]] - file <tt>fiji.Tutorial_Maker</tt> in package '''[[Tutorial_Maker]]'''  -- ''java jar file''
-* [[TrakEM2 (blank)]] - file <tt>ini.trakem2.New_Project("blank")</tt> in package '''[[TrakEM2_]]'''  -- ''java jar file''
-* [[Script]] - file <tt>fiji.scripting.Script_Editor</tt> in package '''[[Script_Editor]]'''  -- ''java jar file''
-
-
-
-=== File > Save As ===
-
-* [[Animated Gif ...]] - file <tt>io.Gif_Stack_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
-* [[PNG ...]] - file <tt>net.sf.ij.plugin.ImageIOSaveAsPlugin("PNG")</tt> in package '''[[ij-ImageIO_]]'''  -- ''java jar file''
-* [[Wavefront .OBJ ...]] - file <tt>marchingcubes.ExportMesh_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Biorad ...]] - file <tt>Biorad_Writer</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[DF3 ...]] - file <tt>io.Save_DF3</tt> in package '''[[IO_]]'''  -- ''java jar file''
-* [[PNM ...]] - file <tt>net.sf.ij.plugin.ImageIOSaveAsPlugin("PNM")</tt> in package '''[[ij-ImageIO_]]'''  -- ''java jar file''
-* [[Leica SP ...]] - file <tt>leica.Leica_SP_Writer</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Nrrd ...]] - file <tt>io.Nrrd_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
-* [[LSS16 ...]] - file <tt>io.LSS16_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
-* [[AmiraMesh ...]] - file <tt>AmiraMeshWriter_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Icns ...]] - file <tt>io.Icns_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
-* [[AmiraTable ...]] - file <tt>AmiraTableWriter_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Analyze...]] - file <tt>Analyze_Writer</tt> in package '''[[Analyze_Reader_Writer]]'''  -- ''java jar file''
-* [[PDF ...]] - file <tt>io.PDF_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
-* [[XPM ...]] - file <tt>io.XPM_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
-* [[Compressed TIFF ...]] - file <tt>net.sf.ij.plugin.ImageIOSaveAsPlugin("TIFF")</tt> in package '''[[ij-ImageIO_]]'''  -- ''java jar file''
-* [[ICO ...]] - file <tt>io.ICO_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
-
-
 
 === File > Import ===
 
 * [[Open [Image IO]]] - file <tt>net.sf.ij.plugin.ImageIOOpenPlugin("simple")</tt> in package '''[[ij-ImageIO_]]'''  -- ''java jar file''
 * [[Show LSMToolbox]] - file <tt>LSM_Toolbox("")</tt> in package '''[[LSM_Toolbox]]'''  -- ''java jar file''
-* [[TorstenRaw GZ Reader...]] - file <tt>io.TorstenRaw_GZ_Reader</tt> in package '''[[IO_]]'''  -- ''java jar file''
+* [[DM3 Reader...]] - file <tt>io.DM3_Reader</tt> in package '''[[IO_]]'''  -- ''java jar file''
 * [[Amira as TrakEM2...]] - file <tt>ini.trakem2.New_Project("amira")</tt> in package '''[[TrakEM2_]]'''  -- ''java jar file''
 * [[DF3...]] - file <tt>io.Open_DF3</tt> in package '''[[IO_]]'''  -- ''java jar file''
-* [[DM3 Reader...]] - file <tt>io.DM3_Reader</tt> in package '''[[IO_]]'''  -- ''java jar file''
-* [[Amira...]] - file <tt>AmiraMeshReader_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
-* [[Show Amira Surface]] - file <tt>isosurface.AmiraSurface</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[TorstenRaw GZ Reader...]] - file <tt>io.TorstenRaw_GZ_Reader</tt> in package '''[[IO_]]'''  -- ''java jar file''
 * [[Animated Gif...]] - file <tt>io.Animated_Gif_Reader</tt> in package '''[[IO_]]'''  -- ''java jar file''
+* [[Show Amira Surface]] - file <tt>isosurface.AmiraSurface</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Amira...]] - file <tt>AmiraMeshReader_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[MRC Leginon ...]] - file <tt>io.Open_MRC_Leginon</tt> in package '''[[IO_]]'''  -- ''java jar file''
 * [[LSM...]] - file <tt>LSM_Reader</tt> in package '''[[LSM_Reader]]'''  -- ''java jar file''
 * [[Leica SP...]] - file <tt>leica.Leica_SP_Reader</tt> in package '''[[VIB_]]'''  -- ''java jar file''
@@ -387,57 +296,48 @@
 * [[ICO...]] - file <tt>io.ICO_Reader</tt> in package '''[[IO_]]'''  -- ''java jar file''
 * [[DAT EMMENU ...]] - file <tt>io.Open_DAT_EMMENU</tt> in package '''[[IO_]]'''  -- ''java jar file''
 
+=== File > Save As ===
 
+* [[Analyze...]] - file <tt>Analyze_Writer</tt> in package '''[[Analyze_Reader_Writer]]'''  -- ''java jar file''
+* [[Wavefront .OBJ ...]] - file <tt>marchingcubes.ExportMesh_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Biorad ...]] - file <tt>Biorad_Writer</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[PNG ...]] - file <tt>net.sf.ij.plugin.ImageIOSaveAsPlugin("PNG")</tt> in package '''[[ij-ImageIO_]]'''  -- ''java jar file''
+* [[PNM ...]] - file <tt>net.sf.ij.plugin.ImageIOSaveAsPlugin("PNM")</tt> in package '''[[ij-ImageIO_]]'''  -- ''java jar file''
+* [[PDF ...]] - file <tt>io.PDF_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
+* [[Nrrd ...]] - file <tt>io.Nrrd_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
+* [[AmiraTable ...]] - file <tt>AmiraTableWriter_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Compressed TIFF ...]] - file <tt>net.sf.ij.plugin.ImageIOSaveAsPlugin("TIFF")</tt> in package '''[[ij-ImageIO_]]'''  -- ''java jar file''
+* [[DF3 ...]] - file <tt>io.Save_DF3</tt> in package '''[[IO_]]'''  -- ''java jar file''
+* [[Icns ...]] - file <tt>io.Icns_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
+* [[LSS16 ...]] - file <tt>io.LSS16_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
+* [[AmiraMesh ...]] - file <tt>AmiraMeshWriter_</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[Animated Gif ...]] - file <tt>io.Gif_Stack_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
+* [[XPM ...]] - file <tt>io.XPM_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
+* [[Leica SP ...]] - file <tt>leica.Leica_SP_Writer</tt> in package '''[[VIB_]]'''  -- ''java jar file''
+* [[ICO ...]] - file <tt>io.ICO_Writer</tt> in package '''[[IO_]]'''  -- ''java jar file''
+
+=== File > New ===
+
+* [[TrakEM2 (from template)]] - file <tt>ini.trakem2.New_Project</tt> in package '''[[TrakEM2_]]'''  -- ''java jar file''
+* [[Fiji Tutorial]] - file <tt>fiji.Tutorial_Maker</tt> in package '''[[Tutorial_Maker]]'''  -- ''java jar file''
+* [[TrakEM2 (blank)]] - file <tt>ini.trakem2.New_Project("blank")</tt> in package '''[[TrakEM2_]]'''  -- ''java jar file''
+* [[Script]] - file <tt>fiji.scripting.Script_Editor</tt> in package '''[[Script_Editor]]'''  -- ''java jar file''
 
 === File > Open Samples ===
 
 * [[Malaria Sporozoites (9.2MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/_malaria_parasites.tif")</tt> in package '''[[ToAST_]]'''  -- ''java jar file''
 
 
-
-
-
-
-
-
-
-
-== Help ==
-
-* [[Update Fiji]] - file <tt>fiji.updater.Updater("update")</tt> in package '''[[Fiji_Updater]]'''  -- ''java jar file''
-* [[Upload Sample Image]] - file <tt>fiji.util.Fiji_Uploader</tt> in package '''[[Fiji_Plugins]]'''  -- ''java jar file''
-* [[Report a Bug]] - file <tt>Bug_Submitter.Bug_Submitter</tt> in package '''[[Bug_Submitter]]'''  -- ''java jar file''
-* [[Fiji Wiki]] - file <tt>ij.plugin.BrowserLauncher("http://pacific.mpi-cbg.de/")</tt> in package '''[[Fiji_Updater]]'''  -- ''java jar file''
-
-
-
-=== Help > About Plugins ===
-
-* [[LSMReader...]] - file <tt>LSM_Reader("about")</tt> in package '''[[LSM_Reader]]'''  -- ''java jar file''
-* [[Sync Windows...]] - file <tt>Sync_Windows("about")</tt> in package '''[[Sync_Win]]'''  -- ''java jar file''
-* [[LOCI Plugins...]] - file <tt>loci.plugins.About("")</tt> in package '''[[loci_tools]]'''  -- ''java jar file''
-* [[Color Histogram...]] - file <tt>ColorHistogram_("about")</tt> in package '''[[Color_Histogram]]'''  -- ''java jar file''
-* [[About TrakEM2...]] - file <tt>ini.trakem2.utils.Utils</tt> in package '''[[TrakEM2_]]'''  -- ''java jar file''
-* [[Image5D...]] - file <tt>I5D_about("about")</tt> in package '''[[Image_5D]]'''  -- ''java jar file''
-* [[Sync Measure 3D...]] - file <tt>Sync_Measure_3D("about")</tt> in package '''[[Sync_Win]]'''  -- ''java jar file''
-* [[Image IO ...]] - file <tt>net.sf.ij.plugin.AboutImageIO("")</tt> in package '''[[ij-ImageIO_]]'''  -- ''java jar file''
-* [[LSMToolbox...]] - file <tt>LSM_Toolbox("about")</tt> in package '''[[LSM_Toolbox]]'''  -- ''java jar file''
-* [[Gray Morphology...]] - file <tt>GrayMorphology_("about")</tt> in package '''[[Gray_Morphology]]'''  -- ''java jar file''
-* [[About bUnwarpJ...]] - file <tt>bunwarpj.Credits</tt> in package '''[[bUnwarpJ_]]'''  -- ''java jar file''
-
-
-
-
-
-
-
-
-
-
 == Image ==
 
+=== Image > Annotate ===
 
+* [[Arrow]] - file <tt>Arrow_</tt> in package '''[[Arrow_]]'''  -- ''java jar file''
 
+=== Image > Adjust ===
+
+* [[Auto Local Threshold]] - file <tt>Auto_Local_Threshold</tt> in package '''[[Auto_Threshold]]'''  -- ''java jar file''
+* [[Auto Threshold]] - file <tt>Auto_Threshold</tt> in package '''[[Auto_Threshold]]'''  -- ''java jar file''
 
 === Image > Color ===
 
@@ -446,26 +346,19 @@
 * [[Average Color]] - file <tt>Average_Color</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Simulate Color Blindness]] - file <tt>Simulate_Color_Blindness</tt> in package '''[[Daltonize_]]'''  -- ''java jar file''
 
-
-
 === Image > Drawing ===
 
 * [[Radial Gradient]] - file <tt>fiji.drawing.Radial_Gradient</tt> in package '''[[Fiji_Plugins]]'''  -- ''java jar file''
 
-
-
 === Image > Selection ===
 
 * [[Make rectangular selection rounded]] - file <tt>fiji.selection.Rounded_Rectangle</tt> in package '''[[Fiji_Plugins]]'''  -- ''java jar file''
-
-
 
 === Image > Stacks ===
 
 * [[Time Stamper]] - file <tt>Time_Stamper</tt> in package '''[[Time_Stamper]]'''  -- ''java jar file''
 * [[Radial Reslice]] - file <tt>fiji.stacks.Radial_Reslice</tt> in package '''[[Fiji_Plugins]]'''  -- ''java jar file''
 * [[Dynamic Reslice]] - file <tt>fiji.stacks.Dynamic_Reslice</tt> in package '''[[Fiji_Plugins]]'''  -- ''java jar file''
-
 
 ==== Image > Stacks > Manipulation ====
 
@@ -488,14 +381,6 @@
 
 * [[start viewer]] - file <tt>view5d.View5D_("")</tt> in package '''[[View5D_]]'''  -- ''java jar file''
 
-
-
-=== Image > Annotate ===
-
-* [[Arrow]] - file <tt>Arrow_</tt> in package '''[[Arrow_]]'''  -- ''java jar file''
-
-
-
 === Image > Video Editing ===
 
 * [[Open Video]] - file <tt>video2.Open_Video</tt> in package '''[[Video_Editing]]'''  -- ''java jar file''
@@ -508,27 +393,32 @@
 * [[Make Transition]] - file <tt>video2.Make_Transition</tt> in package '''[[Video_Editing]]'''  -- ''java jar file''
 * [[Delete Frame]] - file <tt>video2.Delete_Frame</tt> in package '''[[Video_Editing]]'''  -- ''java jar file''
 
+== Help ==
 
+* [[Update Fiji]] - file <tt>fiji.updater.Updater("update")</tt> in package '''[[Fiji_Updater]]'''  -- ''java jar file''
+* [[Upload Sample Image]] - file <tt>fiji.util.Fiji_Uploader</tt> in package '''[[Fiji_Plugins]]'''  -- ''java jar file''
+* [[Report a Bug]] - file <tt>Bug_Submitter.Bug_Submitter</tt> in package '''[[Bug_Submitter]]'''  -- ''java jar file''
+* [[Fiji Wiki]] - file <tt>ij.plugin.BrowserLauncher("http://pacific.mpi-cbg.de/")</tt> in package '''[[Fiji_Updater]]'''  -- ''java jar file''
 
-=== Image > Adjust ===
+=== Help > About Plugins ===
 
-* [[Auto Local Threshold]] - file <tt>Auto_Local_Threshold</tt> in package '''[[Auto_Threshold]]'''  -- ''java jar file''
-* [[Auto Threshold]] - file <tt>Auto_Threshold</tt> in package '''[[Auto_Threshold]]'''  -- ''java jar file''
-
-
-
-
-
-
-
-
-
+* [[LSMReader...]] - file <tt>LSM_Reader("about")</tt> in package '''[[LSM_Reader]]'''  -- ''java jar file''
+* [[Sync Windows...]] - file <tt>Sync_Windows("about")</tt> in package '''[[Sync_Win]]'''  -- ''java jar file''
+* [[LSMToolbox...]] - file <tt>LSM_Toolbox("about")</tt> in package '''[[LSM_Toolbox]]'''  -- ''java jar file''
+* [[Color Histogram...]] - file <tt>ColorHistogram_("about")</tt> in package '''[[Color_Histogram]]'''  -- ''java jar file''
+* [[About TrakEM2...]] - file <tt>ini.trakem2.utils.Utils</tt> in package '''[[TrakEM2_]]'''  -- ''java jar file''
+* [[Image5D...]] - file <tt>I5D_about("about")</tt> in package '''[[Image_5D]]'''  -- ''java jar file''
+* [[Sync Measure 3D...]] - file <tt>Sync_Measure_3D("about")</tt> in package '''[[Sync_Win]]'''  -- ''java jar file''
+* [[Image IO ...]] - file <tt>net.sf.ij.plugin.AboutImageIO("")</tt> in package '''[[ij-ImageIO_]]'''  -- ''java jar file''
+* [[LOCI Plugins...]] - file <tt>loci.plugins.About("")</tt> in package '''[[loci_tools]]'''  -- ''java jar file''
+* [[Gray Morphology...]] - file <tt>GrayMorphology_("about")</tt> in package '''[[Gray_Morphology]]'''  -- ''java jar file''
+* [[About bUnwarpJ...]] - file <tt>bunwarpj.Credits</tt> in package '''[[bUnwarpJ_]]'''  -- ''java jar file''
 
 == Process ==
 
-* [[Calculator Plus]] - file <tt>Calculator_Plus</tt> in package '''[[Calculator_Plus]]'''  -- ''java jar file''
+* [[Enhance Local Contrast (CLAHE)]] - file <tt>mpicbg.ij.CLAHE</tt> in package '''[[mpicbg_]]'''  -- ''java jar file''
 * [[Multiple Image Processor]] - file <tt>MultipleImageProcessor</tt> in package '''[[M_I_P]]'''  -- ''java jar file''
-* [[Enhance Local Contrast (CLAHE)]] - file <tt>[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/ij/CLAHE.java CLAHE]</tt> in package '''[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=summary mpicbg_]''' -- ''java jar file''
+* [[Calculator Plus]] - file <tt>Calculator_Plus</tt> in package '''[[Calculator_Plus]]'''  -- ''java jar file''
 
 === Process > Morphology ===
 
@@ -536,15 +426,10 @@
 
 == Edit ==
 
-
-
-
 === Edit > Selection ===
 
 * [[Fill ROI holes]] - file <tt>Fill_holes</tt> in package '''[[VIB_]]'''  -- ''java jar file''
 * [[Fit Circle to Image]] - file <tt>fiji.util.Circle_Fitter</tt> in package '''[[Fiji_Plugins]]'''  -- ''java jar file''
-
-
 
 === Edit > Options ===
 
