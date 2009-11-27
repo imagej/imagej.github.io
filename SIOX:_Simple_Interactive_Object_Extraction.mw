@@ -79,7 +79,7 @@ This is the '''second step''' in the [[SIOX]] segmentation process. Here the met
 
 Clicking on ''subtract'' or ''add'' selects the ROIs to be added or subtracted. The sliders here have a different meaning: a subtraction value of 0 (leftmost position) indicates total confidence in designating the ROI as background, while an adding value of 1 (slider to the rightmost position) indicates confidence to designate that ROI as foreground.
 
-Finally, by clicking on ''Refine'', the segmentation is recalculated for the selected areas and the result will be displayed as before (darkened background and full color foreground).
+Finally, by clicking on ''Refine'', the segmentation is recalculated for the selected areas and the result will be displayed as before (darkened background and full color foreground). Repeat this step until you are completely satisfied.
 
 ===Reset or Create mask===
 [[Image:SIOX-Reset-Create-mask.png|thumb|233px|SIOX Reset/Create mask panel]]
