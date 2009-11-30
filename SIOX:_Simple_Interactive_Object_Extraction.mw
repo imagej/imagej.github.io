@@ -79,7 +79,7 @@ The ''Add'' mode only modifies pixels formerly classified as background, while t
 
 '''Note''': this step is optional. If you are already satisfied with the result, proceed to create the binary mask.
 
-Clicking on ''subtract'' or ''add'' selects the ROIs to be added or subtracted. The '''sliders represent the threshold for the add and subtract refinement''', deciding at which confidence level to stop at.  A subtraction value of 1 (rightmost position) indicates total confidence in designating the ROI as background, while an adding value of 1 indicates confidence to designate that ROI as foreground.
+Clicking on ''subtract'' or ''add'' selects the ROIs to be added or subtracted. The '''sliders represent the threshold for the add and subtract refinement''', deciding at which confidence level to stop at.  Increasing the subtraction slider value relaxes the threshold value to set an area as background, while decreasing the addition slider value relaxes relaxes the threshold value to set an area as foreground.
 
 Finally, by clicking on ''Refine'', the segmentation is recalculated for the selected areas and the result will be displayed as before (darkened background and full color foreground). Repeat this step until you are completely satisfied.
 
