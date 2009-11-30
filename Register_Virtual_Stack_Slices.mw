@@ -38,6 +38,8 @@ All models are aided by automatically extracted [[Feature_Extraction | SIFT feat
 [[Image:Rvs_main_window.png|400px|thumb|Register Virtual Stack main window]]
 <p><b>Step 2</b>: choose the appropriate options:<br />
 <ul>
+*'''Select a source folder''' containing the slices, at one slice per image file.
+*'''Select the output folder''' where resulting registered slices are automatically stored as TIFF files.
 *'''Feature extraction model'''. The expected transformation model finding inliers (i.e. correspondences or landmarks between images) in the feature extraction: translation, rigid, similarity or affine.
 *'''Registration model'''. The image transformation model: translation, rigid, similarity, affine, elastic or moving least squares.
 *'''Advanced setup'''. The advanced checkbox: whether to see the [[Feature_Extraction#Parameters | feature extraction parameters]] setup dialog, and if elastic, the [[BUnwarpJ | bUnwarpJ]] dialog. Otherwise the plugin operates on reasonable, default parameters.
@@ -45,10 +47,8 @@ All models are aided by automatically extracted [[Feature_Extraction | SIFT feat
 *'''Save transforms'''. Option to save the resulting transforms into files, that can be loaded using [[Transform Virtual Stack Slices]].
 </ul>   
 </p>
-<p><b>Step 3</b>: choose the '''source''' and '''output''' folders and the '''reference''' image (only if the "Shrinkage constraint" checkbox was not marked):<br />
+<p><b>Step 3</b>: choose the '''reference''' image (only if the "Shrinkage constraint" checkbox was not marked):<br />
 <ul>
-*Select a source folder containing the slices, at one slice per image file.
-*Select the target folder where resulting registered slices are automatically stored as TIFF files.
 *Select one of the images from the source folder as the reference image.
 </ul>   
 </p>
