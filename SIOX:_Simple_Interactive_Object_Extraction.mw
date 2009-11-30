@@ -75,9 +75,11 @@ This is the '''first step''' of the procedure where one defines the ROIs that co
 [[Image:SIOX-Detail-Refinement-Brush.png|thumb|300px|SIOX detail refinement brush panel]]
 This is the '''second step''' in the [[SIOX]] segmentation process. Here the method can be called again to refine the results obtained so far to subtract or add new areas to the background or foreground components '''as many times as you want'''.
 
+The ''Add'' mode only modifies pixels formerly classified as background, while the ''Subtract'' mode only modifies those formerly classified as foreground.
+
 '''Note''': this step is optional. If you are already satisfied with the result, proceed to create the binary mask.
 
-Clicking on ''subtract'' or ''add'' selects the ROIs to be added or subtracted. The sliders here have a different meaning: a subtraction value of 0 (leftmost position) indicates total confidence in designating the ROI as background, while an adding value of 1 (slider to the rightmost position) indicates confidence to designate that ROI as foreground.
+Clicking on ''subtract'' or ''add'' selects the ROIs to be added or subtracted. The '''sliders represent the threshold for the add and subtract refinement''', deciding at which confidence level to stop at.  A subtraction value of 1 (rightmost position) indicates total confidence in designating the ROI as background, while an adding value of 1 indicates confidence to designate that ROI as foreground.
 
 Finally, by clicking on ''Refine'', the segmentation is recalculated for the selected areas and the result will be displayed as before (darkened background and full color foreground). Repeat this step until you are completely satisfied.
 
