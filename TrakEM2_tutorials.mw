@@ -77,6 +77,8 @@ See also [http://www.ini.uzh.ch/~acardona/trakem2_manual.html#measure_arealist A
 This video tutorial was made by Javier Cabrera-Chaves and edited by [[User:iarganda|Ignacio Arganda-Carreras]] using [http://www.debugmode.com/wink/ Wink 1.5 for linux]. To navigate, use the green arrows to go forward and backward in the slide-show.
 
 ===[[TrakEM2 add more sections/layers tutorial | Video tutorial on adding sections/layers to an existing project]]===
+[[Image:Screenshot-TrakEM2-tutorial-add-layers.png|thumb|250px|TrakEM2 adding layers to existing project]]
+Here you will learn how to:
 *Open an image sequence as a virtual stack in Fiji.
 *Calibrate the virtual stack.
 *Import the virtual stack into TrakEM2 as a sequence of layers (sections), one image per layer.
