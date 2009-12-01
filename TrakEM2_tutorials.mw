@@ -52,6 +52,8 @@ See the [[TrakEM2_segmentation_modes_tutorial|segmentation modes video tutorial 
 This video tutorial was made by Javier Cabrera-Chaves and edited by [[User:iarganda|Ignacio Arganda-Carreras]] using [http://www.debugmode.com/wink/ Wink 1.5 for linux]. To navigate, use the green arrows to go forward and backward in the slide-show.
 
 ===[[TrakEM2 semi-automatic segmentation tutorial|Video tutorial on semi-automatic segmentation]]===
+[[Image:Screenshot-TrakEM2-tutorial-automatic-segmentation.png|thumb|250px|TrakEM2 semi-automatic segmentation]]
+
 *How to segment cells by only one click.
 *Fast marching method tool in TrakEM2.
 *Selecting segmentation parameters.
