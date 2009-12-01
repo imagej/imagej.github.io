@@ -17,7 +17,6 @@ This plugin takes a sequence of image slices stored in a folder, and delivers a 
 This is a '''complementary plugin''' of [[Register Virtual Stack Slices]]. It allows reproducing the results of [[Register Virtual Stack Slices]] by loading the corresponding transform files (saved by checking the option [[Register_Virtual_Stack_Slices#Save_Transforms | "Save transforms"]] in the main dialog).
 
 == User Manual ==
-
 '''Premises''':
 
 *'''Source folder''': You have a folder with an ordered list of image files in it that Fiji can open.
@@ -26,7 +25,7 @@ This is a '''complementary plugin''' of [[Register Virtual Stack Slices]]. It al
 *'''Transform folder''': You have a folder with the transform files (from a [[Register Virtual Stack Slices]] execution).
 
 '''Step 1''': launch the "Plugins - Transform - Transform Virtual Stack Slices" plugin.
-
+[[Image:Main-Dialog-Transform Virtual Stack.png|thumb|400px|Transform Virtual Stack main dialog]]
 '''Step 2''': choose the source, output and transform folders:
 
 *Select a source folder containing the slices, at one slice per image file.
