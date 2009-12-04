@@ -6,7 +6,7 @@
 | filename               = [http://bioweb.cnb.csic.es/~iarganda/AnalyzeSkeleton/downloads/AnalyzeSkeleton_.jar AnalyzeSkeleton_.jar] 
 | source                 = Included in the jar or [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/AnalyzeSkeleton_/skeleton_analysis;h=e930376dacbb6ccb5319695843bd5d18dc3531fe;hb=HEAD on gitweb]
 | released               = November 14<sup>th</sup>, 2008
-| latest version         = September 13<sup>th</sup>, 2009
+| latest version         = December 4<sup>th</sup>, 2009
 | status                 = active
 | category               = [[:Category:Plugins|Plugins]], [[:Category:Skeleton|Skeleton]], [[:Category:Analysis|Analysis]]
 }}
@@ -19,7 +19,7 @@ Analysis of 2D and 3D skeleton images. For the ImageJ plugin, visit [http://imag
 
 == General Description ==
 [[Image:Tagging_example.png|thumb|292px|Example of voxel classification]]
-This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under ''Plugins>Skeleton>Analyze Skeleton (2D/3D)''. See [[Skeletonize3D]] for an example of how to produce skeleton images.
+This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under ''Plugins>Skeleton>Analyze Skeleton (2D/3D)''. See [[Skeletonize3D]] for an example of how to produce skeleton images.
 
 The voxels are classified into three different categories depending on their 26 neighbors:
 * '''End-point''' voxels: if they have less than 2 neighbors.
@@ -48,7 +48,7 @@ After classification, a “Results” window is displayed showing for each skele
 * The number of branches (slab segments, usually connecting end-points, end-points and junctions or junctions and junctions). The special case of a circular skeleton is also contemplated here.
 * The number of voxels of every type: end-point, slab and junction voxels.
 * The number of actual junctions (merging neighbor junction voxels) with an arbitrary number of projecting branches.
-* The number of triple points (junctions with exactly 3 branches).
+* The number of triple points (junctions with exactly 3 branches) and quadruple points (4 branches).
 * The average and maximum length of branches, in the corresponding units. 
 
 AnalyzeSkeleton is able to process up to '''2¹⁵-1 skeletons in one single image''' (only limited by [http://java.sun.com/javase/6/docs/api/ java Short.MAX_VALUE]). 
@@ -93,6 +93,8 @@ The latest documentation of the code can be found here:
 
 == Changelog ==
 All changes can be seen in the [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/AnalyzeSkeleton_;h=97476cf88da4d5dd5a6ac6cdf9a5176c221378c6;hb=HEAD Fiji source repository].
+
+'''2009/12/04''': Added quadruple point calculation.
 
 '''2009/09/13''': Removed Log window and created Detailed information option and Branch information table.
 
