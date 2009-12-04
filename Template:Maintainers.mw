@@ -1,35 +1,18 @@
 {{ #switch:{{{maintainer|}}}
 
-| Rainer Heintzmann = 
-
-=== Plugins ===
-
-* [[View5D]]
-
-=== Packages ===
-
-
-
 | Albert Cardona = 
 
 === Plugins ===
 
+* [[Level Sets]]
 * [[Extract Images From PDF...]]
 * [[TrakEM2 (from template)]]
 * [[TrakEM2 (blank)]]
 
 === Packages ===
 
-
-
-| Verena Kaynig = 
-
-=== Plugins ===
-
-* [[Distortion Correction]]
-
-=== Packages ===
-
+* [[Level sets]]
+* [[TrakEM2]]
 
 
 | Mark Longair = 
@@ -40,7 +23,6 @@
 * [[2D Histogram]]
 * [[Surfaceness]]
 * [[Compute Curvatures]]
-* [[Command Launcher Ruby]]
 * [[JRuby Interpreter]]
 * [[Refresh JRuby Scripts]]
 * [[Simple Neurite Tracer]]
@@ -48,13 +30,14 @@
 * [[Quantile Based Normalization]]
 * [[Show Color Surfaces]]
 * [[Find Connected Regions]]
-* [[Average Images]]
 * [[Crop (3D)]]
+* [[Average Images]]
 * [[Name Landmarks and Register]]
 * [[Wavefront .OBJ ...]]
 
 === Packages ===
 
+* [[JRuby Interpreter]]
 
 
 | Gabriel Landini = 
@@ -67,6 +50,8 @@
 
 === Packages ===
 
+* [[IJ Robot]]
+* [[Auto Threshold]]
 
 
 | Benjamin Schmid = 
@@ -74,7 +59,6 @@
 === Plugins ===
 
 * [[3D Viewer]]
-* [[Test Java3D]]
 * [[Segmentation Editor]]
 * [[Median (3D)]]
 * [[Maximum (3D)]]
@@ -90,26 +74,17 @@
 
 === Plugins ===
 
+* [[Register virtual stack slices]]
 * [[Analyze Skeleton (2D/3D)]]
 * [[Skeletonize (2D/3D)]]
-* [[Register Virtual Stack Slices]]
 * [[BUnwarpJ]]
-* [[SIOX: Simple Interactive Object Extraction]]
-* [[Spline Deformation Generator]]
-* [[Transform Virtual Stack Slices]]
 
 === Packages ===
 
-
-
-| Fiji Development Team = 
-
-=== Plugins ===
-
-* [[Sync Windows]]
-
-=== Packages ===
-
+* [[Register virtual stack slices]]
+* [[AnalyzeSkeleton]]
+* [[Skeletonize3D]]
+* [[BUnwarpJ]]
 
 
 | Johannes Schindelin = 
@@ -117,8 +92,6 @@
 === Plugins ===
 
 * [[Delaunay Voronoi]]
-* [[VIB Protocol]]
-* [[Simulate Color Blindness]]
 * [[Update Fiji]]
 * [[Fiji Wiki]]
 
@@ -126,35 +99,11 @@
 
 
 
-| Daniel White = 
+| Verena Kaynig = 
 
 === Plugins ===
 
-* [[Colocalization Threshold]]
-
-=== Packages ===
-
-
-
-| Erwin Frise = 
-
-=== Plugins ===
-
-* [[Level Sets]]
-
-=== Packages ===
-
-
-
-| Stephan Preibisch = 
-
-=== Plugins ===
-
-* [[3D Stitching]]
-* [[Stitch Directory with Images (unknown configuration)]]
-* [[Stitch Grid of Images]]
-* [[Stitch Collection of Images]]
-* [[2D Stitching]]
+* [[Distortion Correction]]
 
 === Packages ===
 
@@ -164,67 +113,35 @@
 
 === Plugins ===
 
-* [[Manual Tracking]]
-* [[MTrack2]]
-* [[Colocalization Test]]
 * [[Time Stamper]]
 
 === Packages ===
 
-
-
-| Stephan Saalfeld = 
-
-=== Plugins ===
-
-* [[Extract SIFT Correspondences]]
-* [[Extract MOPS Correspondences]]
-* [[Interactive Moving Least Squares]]
-* [[Enhance Local Contrast (CLAHE)]]
-
-=== Packages ===
-
+* [[Time Stamper]]
 
 
 | Jean-Yves Tinevez = 
 
 === Plugins ===
 
-* [[PIV analysis]]
-* [[FlowJ]]
-* [[Dynamic Reslice]]
 * [[Concatenate]]
 * [[Substack Maker]]
-* [[Grouped ZProjector]]
 * [[Stack Inserter]]
 * [[Stack Spliter]]
 * [[Stack Sorter]]
 * [[Stack Combiner]]
-* [[Interleave]]
 * [[Stack Reverser]]
+* [[Dynamic Reslice]]
 * [[Stack Maker]]
 * [[Slice Remover]]
-* [[Deinterleave]]
+* [[PIV analysis]]
+* [[FlowJ]]
 
 === Packages ===
 
+* [[Stack Manipulation]]
+* [[PIV analyser]]
+* [[FlowJ]]
 
 
 }}
-
-<noinclude>
-
-__NOTOC__
-
-This template automatically generate a paragraph containing the list of plugins and packages maintained by a maintainer, as stated in the wiki. It is automatically generated from a python script in the Fiji development repository, that can be seen [http:////pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=scripts/plugin-documentation-list.py;hb=HEAD here].
-
-Syntax is the following:
-
-<pre>
-== Plugins and Packages maintained by Mark Longair ==
-{{ Maintainers | maintainer = Mark Longair }} 
-</pre>
-
-== Plugins and Packages maintained by Mark Longair ==
-{{ Maintainers | maintainer = Mark Longair }}
-<\noinclude>
