@@ -1,0 +1,18 @@
+[[TrakEM2]] has been updated to version 0.7m
+
+Please call "Help - Update Fiji" to get the new TrakEM2_.jar into your plugins folder.
+
+The update includes:
+
+* Non-linear layer registration
+* Montaging with phase-correlation
+* Import multiple sections of montages in one short with "Import sequence as grid"
+* New Connector and Treeline types
+* New contrast adjustment mode with "Adjust - Adjust min and max (selected images)"
+* New registration mode with landmarks
+
+And many, many more features and error fixes.
+
+Thanks to [http://fly.mpi-cbg.de/~saalfeld Stephan Saalfeld], [http://bioweb.cnb.csic.es/~iarganda/index_EN.html Ignacio Arganda], [http://longair.net/mark/ Mark Longair], Johannes Schindelin and [http://www.ini.uzh.ch/people/german German Koestinger] for code, bug reports and testing.
+
+[[Category:News]]
