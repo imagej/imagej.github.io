@@ -79,7 +79,7 @@ This plugin complements the previous one by stitching a sequence of grid of imag
 
 == Stitch Collection of Images ==
 
-[[Image:StitchCollection.png|thumb|450px|Shows the Stitch Image Collection Dialog.]]<br />
+[[Image:StitchCollection.png|thumb|350px|Shows the Stitch Image Collection Dialog.]]<br />
 
 This plugin takes an arbitrary tile configuration as input which has to be stored in a file. 
 
