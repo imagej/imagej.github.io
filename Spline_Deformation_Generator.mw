@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = SplineDeformationGenerator
-| author                 = [http://biocomp.cnb.csic.es/~iarganda/index_EN.html Ignacio Arganda-Carreras] and Carlos Óscar Sánchez Sorzano
+| author                 = [[User:Iarganda | Ignacio Arganda-Carreras]] and [http://biocomp.cnb.csic.es/~coss/ Carlos Óscar Sánchez Sorzano]
 | maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
 | filename               = [http://biocomp.cnb.csic.es/~iarganda/SplineDeformationGenerator/downloads/SplineDeformationGenerator_.jar SplineDeformationGenerator_.jar] 
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/SplineDeformationGenerator_/SplineDeformationGenerator/SplineDeformationGenerator_.java;h=343862fc209cd7564cdc743fb3f459da3c0c177c;hb=HEAD Git repository]
