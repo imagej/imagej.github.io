@@ -1,1 +1,17 @@
-Ignacio Arganda-Carreras, you can find me at [http://bioweb.cnb.csic.es/~iarganda/index_EN.html http://bioweb.cnb.csic.es/~iarganda/index_EN.html]
+=Ignacio Arganda-Carreras=
+
+Hi,
+
+My name is Ignacio Arganda-Carreras. I am currently working at [http://hebb.mit.edu/ Sebastian Seung's lab] in Cambridge, MA (United States of America). 
+
+You can find more information about me in my website: [http://bioweb.cnb.csic.es/~iarganda/index_EN.html http://bioweb.cnb.csic.es/~iarganda/index_EN.html]
+
+== Maintained plugins ==
+
+* [[BUnwarpJ]]
+* [[Spline Deformation Generator]]
+* [[Register Virtual Stack Slices]]
+* [[Transform Virtual Stack Slices]]
+* [[Skeletonize3D]]
+* [[AnalyzeSkeleton]]
+* [[SIOX: Simple Interactive Object Extraction]]
