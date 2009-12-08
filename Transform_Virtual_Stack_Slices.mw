@@ -7,9 +7,7 @@
 | released               = September 24<sup>th</sup>, 2009
 | latest version         = November 30<sup>th</sup>, 2009
 | status                 = stable, active
-| category               = [[:Category:Registration|Registration]],[[:Category:Transform|Transform]], [[:Category:Plugins|Plugins]]
-}}
-{|
+| category               = [[:Category:Registration|Registration]], [[:Category:Transform|Transform]]
 |style="vertical-align:top" |[[Image:Transform Virtual Stack scheme.png|381px|Transform Virtual Stack scheme - All images are transformed based on the XML files]]
 |}
 This plugin takes a sequence of image slices stored in a folder, and delivers a list of transformed image slices (with enlarged canvas) applying a list of transforms stored as '''.XML''' files in another folder.
