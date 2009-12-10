@@ -29,7 +29,7 @@
 
 ==Tutorials==
 
-=How to create a shared remote repository?=
+===How to create a shared remote repository?===
 
 <dl><dt><source lang="bash">
 ssh you@server
@@ -47,5 +47,26 @@ git config branch.master.merge refs/heads/master
 <dd>Creates a bare remote repository at <code>ssh://server/home/you/remote.git</code> that tracks your local repository in <code>/home/you/local</code>.  Adopted from [[http://toolmantim.com/articles/setting_up_a_new_remote_git_repository Tim Lucas]].
 </dl>
 
+===How to display a filtered set of commits?===
+
+Assume you want to see commits in branch ''stephan'', but only those that are <u>not</u> part of the history of branch ''saalfeld'':
+
+<source lang="bash">
+git log stephan ^saalfeld
+</source>
+
+More realistically, if you want to see all the commits which are in a topic branch, but not yet merged into master:
+
+<source lang="bash">
+git log --all ^master
+</source>
+
+If you want to see the changes which come from a topic branch which was merged in commit ''deadbeef'', use this command line:
+
+<source lang="bash">
+git log deadbeef^..deadbeef^2
+</source>
+
+Explanation: ''deadbeef'' is a merge commit, so its first parent (''deadbeef^'', can also be written as ''deadbeef^1'') was the current HEAD when the merge was performed, and the second parent (''deadbeef^2'') is the tip of the branch which was merged.  The argument ''A..B'' is short form of ''^A B'', i.e. all commits reachable from B excluding those which are also reachable from A.
 
 [[Category:Git]]
