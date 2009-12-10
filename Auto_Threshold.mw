@@ -108,14 +108,13 @@ Iterative procedure based on the isodata algorithm of:
 | url = http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4310039
 | title = Picture thresholding using an iterative selection method
 | volume = 8
-| pages = 630-6032
+| pages = 630-632
 }}
 
 The procedure divides the image into object and background by taking an initial threshold, then the averages of the pixels at or below the threshold and pixels above are computed. The averages of those two values are computed, the threshold is incremented and the process is repeated until the threshold is larger than the composite average. That is,      
  threshold = (average background + average objects)/2. 
 
 Several implementations of this method exist. See the source code for further comments.
-
 
 === Li ===
 Implements Li's Minimum Cross Entropy thresholding method based on the iterative version (2nd reference below) of the algorithm.
