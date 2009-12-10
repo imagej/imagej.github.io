@@ -16,7 +16,7 @@
 :Roll back.
 
 ;<source lang="bash">git checkout HEAD@{1} -- <file></source>
-:Cherry pick.
+:Cherry pick one file revision from the previous commit.
 
 ;<source lang="bash">git diff <branch1> <branch2> -- <file></source>
 :Diff a file between two branches.
@@ -25,7 +25,7 @@
 :Display a log with colored word diffs.  Say "-S" to less to virtually wrap long lines.
 
 ;<source lang="bash">git diff <commit a>:<file> <commit b>:<file> --color-words</source>
-:Display a diff with colored words.  Say "-S" to less to virtually wrap long lines.
+:Display a diff with colored words between a file in one commit and a file in another commit.  Say "-S" to less to virtually wrap long lines.
 
 ==Tutorials==
 
