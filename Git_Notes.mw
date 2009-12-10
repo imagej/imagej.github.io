@@ -1,7 +1,5 @@
 ==Some things that I wouldn't remember otherwise==
 
-This list is expected to be incomplete and even wrong, do not trust it!
-
 ;<source lang="bash">git init --shared=group</source>
 :Tell the repository that it should always set the permissions to g+w.
 
