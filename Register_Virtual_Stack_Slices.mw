@@ -134,7 +134,7 @@ Example of registration results using the shrinking constraint:
 == API documentation ==
 The latest documentation of the package can be found here: 
 
-[http://bioweb.cnb.csic.es/~iarganda/Register_virtual_stack/doc/ http://bioweb.cnb.csic.es/~iarganda/Register_virtual_stack/doc/]
+[http://pacific.mpi-cbg.de/javadoc/register_virtual_stack/package-summary.html http://pacific.mpi-cbg.de/javadoc/register_virtual_stack/package-summary.html]
 
 == Scripting / PlugIn ==
 
