@@ -11,13 +11,13 @@ In this implementation the input gradient of the input image is computed using t
 
 The kernal operators are detailed in many sources including here http://en.wikipedia.org/wiki/Sobel_operator.  However, Wilkinson shows that eliminating the square root yields suitable results with out the added cost of a final scan across the image to compute the root.  In the plugin the gradient is left simply as the sum of the squares of the kernal operations.
 
-[[Image:RATS_sobel2.png]]
+[[Image:RATS_sobel2.png|center]]
 
 Pixels with gradients that fall below a user specified threshold, [[Image:RATS_lambdasigma.png]] , are rejected.  The threshold is defined by an estimate of the noise ([[Image:RATS_sigma.png]] ,the standard deviation of the expected background is a good starting point) and a scaling factor ([[Image:RATS_lambda.png]], 3 is a good starting point).  Estimate the noise by selecting a "background" portion of the image and using ImageJ to determine the standard deviation of gray values. 
 
 The input image is then subdivided into a quadtree architecture (for more info see http://en.wikipedia.org/wiki/Quadtree).  Within each of the smallest subregions, a regional threshold, [[Image:RATS_Tr.png]] , is computed as the gradient weighted sum of the pixels, P.    
 
-[[Image:RATS_Tr2.png]]
+[[Image:RATS_Tr2.png|center]]
 
 Occasionally, the regional threshold fails if the sum of the weights (the denominator) falls to the level of background containing only noise.  In such cases, the regional threshold is replaced by the threshold of its parent quadtree (if the parent's threshold doesn't fail).  It is possible that thresholds fail all the way up the quadtree heirarchy, in which case a same threshold is applied to all regions which is identical to applying a global threshold.   In our experience, regional threshold failures are rare.  Once the regional thresholds are computed, they are interpolated (bilinear interpolation) across the entire image yielding a threshold map.
 
@@ -27,7 +27,7 @@ The user also controls the size of the smallest quadtree region (aka leaflet).  
 
 '''Plugin Usage'''
 
-[[Image:RATS_gui.jpg]]
+[[Image:RATS_gui.jpg|center]]
 
 Load an single channel image (8-bit, 16-bit or 32-bit).  Select the RATS plugin from the Plugins menu.  The following dialog will appear:
 
@@ -47,3 +47,5 @@ That's it!  A bilevel image is produced with the name "-mask" appended to the or
 The plugin is recordable and can be called from a macro ....
 
 <code>run("RATS ", "noise=25 lambda=3 min=81 verbose")</code>
+
+--[[User:Tupper|Tupper]] 20:10, 11 December 2009 (CET)
