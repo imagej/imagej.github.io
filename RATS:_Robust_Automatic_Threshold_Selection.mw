@@ -36,7 +36,7 @@ Load an single channel image (8-bit, 16-bit or 32-bit).  Select the RATS plugin 
 
 3. MIN LEAF SIZE (pixels): The smallest allowed leaflet (defaults to attempts to create up to 5 levels of quadtrees that fit in the input image dimensions)
 
-4. VERBOSE If set then output informational messages in the log window (default is true).
+4. VERBOSE If set then output informational messages in the log window (default is false).
 
 
 That's it!  A bilevel image is produced with the name "-mask" appended to the original image name. 
