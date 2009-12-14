@@ -95,6 +95,11 @@ This panel is enabled during any of the other segmentation steps.
 
 :Creates a binary (0-255) image based on the current state of the segmentation process. The background color (black or white) is defined in ''Process > Binary > Options...'' This button can be pressed during any of the previous steps.
 
+==API documentation==
+The latest documentation of the package can be found here:
+* For the SIOX plugin: [http://pacific.mpi-cbg.de/javadoc/siox/package-summary.html http://pacific.mpi-cbg.de/javadoc/siox/package-summary.html] 
+* For the SIOX library: [http://pacific.mpi-cbg.de/javadoc/org/siox/package-summary.html http://pacific.mpi-cbg.de/javadoc/org/siox/package-summary.html]
+
 ==References==
 Most Comprehensive Work:
 
@@ -106,7 +111,7 @@ Still Image Approach:
 * G. Friedland, K. Jantz, L. Knipping, R. Rojas: Image Segmentation by Uniform Color Clustering -- Approach and Benchmark Results, [http://www.siox.org/downloads/tr-b-05-07.pdf Technical Report B-05-07], Department of Computer Science, Freie Universitaet Berlin, June 2005 (PDF, 18MB).
 * G. Friedland, K. Jantz, R. Rojas: SIOX: Simple Interactive Object Extraction in Still Images, Proceedings of the IEEE International Symposium on Multimedia (ISM2005), pp. 253-259, Irvine (California), December, 2005. [http://csdl.computer.org/dl/proceedings/ism/2005/2489/00/24890253.pdf Download PDF] from IEEE Computer Society Digital Library.
 * G. Friedland, K. Jantz, T. Lenz, R. Rojas: Extending the SIOX Algorithm: Alternative Clustering Methods, Sub-pixel Accurate Object Extraction from Still Images, and Generic Video Segmentation, [http://www.siox.org/downloads/tr-b-06-06.pdf Technical Report B-06-06], Department of Computer Science, Freie Universitaet Berlin, January 2006 (PDF, 10MB).
-* G. Friedland, K. Jantz, T. Lenz, F. Wiesel, R. Rojas: A Practical Approach to Boundary-Accurate Multi-Object Extraction from Still Images and Videos, to appear in Proceedings of the IEEE International Symposium on Multimedia (ISM2006), San Diego (California), December, 2006. 
+* G. Friedland, K. Jantz, T. Lenz, F. Wiesel, R. Rojas: A Practical Approach to Boundary-Accurate Multi-Object Extraction from Still Images and Videos, to appear in Proceedings of the IEEE International Symposium on Multimedia (ISM2006), San Diego (California), December, 2006.
 
 ==ImageJ version==
 Thanks to Wayne Rasband, there is an [http://rsb.info.nih.gov/ij/plugins/siox/index.html ImageJ] version of this plugin without Fiji dependencies:
