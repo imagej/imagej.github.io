@@ -194,9 +194,9 @@ Uses the mean of grey levels as the threshold. It is used by some other methods 
 
 
 === MinError(I) ===
-An iterative implementation of Kittler and Illingworth's Minimum Error thresholding. This seems to converge more often than the original implementation.
+An iterative implementation of Kittler and Illingworth's Minimum Error thresholding.
 
-Nevertheless, sometimes the algorithm does not converge to a solution. In that case a warning is reported to the log window and the result defaults to the initial estimate of the threshold which is computed using the Mean method.
+This implementation seems to converge more often than the original. Nevertheless, sometimes the algorithm does not converge to a solution. In that case a warning is reported to the log window and the result defaults to the initial estimate of the threshold which is computed using the Mean method.
 The '''Ignore black''' or '''Ignore white''' options might help to avoid this problem.
 
 * {{Citation
@@ -211,7 +211,6 @@ The '''Ignore black''' or '''Ignore white''' options might help to avoid this pr
 | pages = 41-47
 }}
 Ported from Antti Niemist&ouml;'s Matlab code. See [http://www.cs.tut.fi/~ant/histthresh/ here] for an excellent slide presentation and the original Matlab code.
-
 
 === Minimum ===
 Similarly to the Intermodes method, this assumes a bimodal histogram. The histogram is iteratively smoothed using a running average of size 3, until there are only two local maxima. The threshold t is such that yt−1 &gt; yt &lt;&#061; yt+1.
