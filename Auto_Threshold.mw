@@ -196,7 +196,7 @@ Uses the mean of grey levels as the threshold. It is used by some other methods 
 === MinError(I) ===
 An iterative implementation of Kittler and Illingworth's Minimum Error thresholding. This seems to converge more often than the original implementation.
 
-Nevertheless, sometimes the algorithm does not converge to a solution. In that case a warning is reported to the log window.
+Nevertheless, sometimes the algorithm does not converge to a solution. In that case a warning is reported to the log window and the result defaults to the initial estimate of the threshold which is computed using the Mean method.
 The '''Ignore black''' or '''Ignore white''' options might help to avoid this problem.
 
 * {{Citation
