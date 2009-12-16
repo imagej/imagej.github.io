@@ -116,6 +116,7 @@ The procedure divides the image into object and background by taking an initial 
 
 Several implementations of this method exist. See the source code for further comments.
 
+
 === Li ===
 Implements Li's Minimum Cross Entropy thresholding method based on the iterative version (2nd reference below) of the algorithm.
 
