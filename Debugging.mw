@@ -26,7 +26,7 @@ Notable differences:
 
 Okay, so here you go, a little demonstration:
 
-(If you attach jdb to a running fiji process, you have to use the line from the last section instead.)
+(If you attach jdb to a running fiji process, you have to use the line from the previous section instead.)
 
  $ jdb -classpath ij.jar ij.ImageJ
  > stop in ij.ImageJ.main
