@@ -55,3 +55,5 @@ Some of these scripts are shell scripts, others are Jython scripts with special 
 We have a ''cronjob'' that builds Fiji every night, from then-current sources.  The responsible script is ''bin/nightly-build.sh''.
 
 Of course, it might often be quite handy to do the same locally, i.e. compile from a completely pristine state (e.g. to ensure that your latest commit includes all necessary files).  You can easily do that by calling ''./bin/nightly-build.sh HEAD'', which will automatically create an appropriate ''nightly-build/'' subdirectory (if it does not exist yet), and simulate a from-scratch build.
+
+[[Category:Development]]
