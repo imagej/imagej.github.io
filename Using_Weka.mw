@@ -8,7 +8,7 @@ In my case, I simply want to find nearest neighbors in two clouds of 3D points.
 
 === Setting up Weka ===
 
-Just download the program from [http://sourceforge.net/projects/weka/ Sourceforge], it includes the weka.jar as well as the weka-src.jar.
+As of commit [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=commitdiff;h=df44aab197dcff1c0de228b0ac08b7ef8966b75e;hb=refs/heads/master df44aab1] (December 16th, 2009), Fiji's ''master'' branch comes with Weka.
 
 === Using the Weka datastructures ===
 
