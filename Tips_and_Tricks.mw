@@ -17,3 +17,15 @@ You do not need to wrap calls into write() calls: if you just write something li
  getDirectory("plugins");
 
 the return value will appear in your Log window when called.
+
+= Find out in which menu (or .jar file) a certain entry is =
+
+Hit Ctrl+L (or Apple+L on Macs) to start the command launcher.  Type (part of) the name of the entry, then click on ''Show full information''.
+
+= Put the main window to the foreground =
+
+Pressing the Return key on any image will bring the main window to the foreground.
+
+= Close all images (without being asked whether to save them) =
+
+''Plugins>Utilities>Close All Without Saving''
