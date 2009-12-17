@@ -1,20 +1,31 @@
-== RATS: Robust Automatic Threshold Selection ==
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = RATS: Robust Automatic Threshold Selection
+| author                 = Ben Tupper and Mike Sieracki
+| maintainer             = Ben Tupper
+| filename               = RATS_.java
+| source                 = on [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/RATS_/RATS_.java gitweb]
+| released               = 17 December 2009
+| status                 = active
+| category               = [[:Category:Thresholding|Thresholding]]
+}}
 
-'''Background'''
+==Background==
 
-Robust Automatic Threshold Selection (RATS) computes a threshold map for a 2d image based upon the value of pixels and their gradients. The algorithm is applied across regions of the image making it suitable for thresholding noisy images with variable background. The plugin is based upon the description in Wilkinson MHF (1998) ''Segmentation techniques in image analysis of microbes''. Chapter 6 IN: Wilkinson MHF, Schut F (eds.) '''Digital Image Analysis of Microbes: Imaging, Morphometry, Fluorometry and Motility Techniques and Applications''', Vol. John Wiley & Sons, New York. 
+Robust Automatic Threshold Selection (RATS) computes a threshold map for a 2d image based upon the value of pixels and their gradients. The algorithm is applied across regions of the image making it suitable for thresholding noisy images with variable background. The plugin is based upon the description in
+*Wilkinson MHF (1998) ''Segmentation techniques in image analysis of microbes''. Chapter 6 in: Wilkinson MHF, Schut F (eds.) '''Digital Image Analysis of Microbes: Imaging, Morphometry, Fluorometry and Motility Techniques and Applications''', Vol. John Wiley & Sons, New York. 
 
-In this implementation the input gradient of the input image is computed using the Sobel kernals.  Traditionally the Sobel gradient is computed using 
+In this implementation the input gradient of the input image is computed using the Sobel kernels.  Traditionally the Sobel gradient is computed using 
 
 [[Image:RATS_sobel.png|center]] 
 
-The kernal operators are detailed in many sources including here http://en.wikipedia.org/wiki/Sobel_operator.  However, Wilkinson shows that eliminating the square root yields suitable results with out the added cost of a final scan across the image to compute the root.  In the plugin the gradient is left simply as the sum of the squares of the kernal operations.
+The kernel operators are detailed in many sources including [http://en.wikipedia.org/wiki/Sobel_operator here].  However, Wilkinson shows that eliminating the square root yields suitable results with out the added cost of a final scan across the image to compute the root.  In the plugin the gradient is left simply as the sum of the squares of the kernel operations.
 
 [[Image:RATS_sobel2.png|center]]
 
 Pixels with gradients that fall below a user specified threshold, [[Image:RATS_lambdasigma.png]] , are rejected.  The threshold is defined by an estimate of the noise ([[Image:RATS_sigma.png]] ,the standard deviation of the expected background is a good starting point) and a scaling factor ([[Image:RATS_lambda.png]], 3 is a good starting point).  Estimate the noise by selecting a "background" portion of the image and using ImageJ to determine the standard deviation of gray values. 
 
-The input image is then subdivided into a quadtree architecture (for more info see http://en.wikipedia.org/wiki/Quadtree).  Within each of the smallest subregions, a regional threshold, [[Image:RATS_Tr.png]] , is computed as the gradient weighted sum of the pixels, P.    
+The input image is then subdivided into a quadtree architecture (for more info see [http://en.wikipedia.org/wiki/Quadtree Wikipedia:Quadtree]).  Within each of the smallest subregions, a regional threshold, [[Image:RATS_Tr.png]] , is computed as the gradient weighted sum of the pixels, P.    
 
 [[Image:RATS_Tr2.png|center]]
 
@@ -24,7 +35,7 @@ The user also controls the size of the smallest quadtree region (aka leaflet).  
 
 
 
-'''Plugin Usage'''
+==Plugin Usage==
 
 [[Image:RATS_gui.jpg|center]]
 
@@ -41,13 +52,13 @@ Load an single channel image (8-bit, 16-bit or 32-bit).  Select the RATS plugin 
 
 That's it!  A bilevel image is produced with the name "-mask" appended to the original image name. 
 
-'''Macro Usage'''
+==Macro Usage==
 
 The plugin is recordable and can be called from a macro ....
 
 <code>run("RATS ", "noise=25 lambda=3 min=81 verbose")</code>
 
---[[User:Tupper|Tupper]] 20:10, 11 December 2009 (CET)
+
 [[Category:Plugins]]
 [[Category:Segmentation]]
 [[Category:Tutorials]]
