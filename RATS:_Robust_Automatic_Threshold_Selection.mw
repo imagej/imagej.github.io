@@ -7,7 +7,7 @@
 | source                 = on [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/RATS_/RATS_.java gitweb]
 | released               = 17 December 2009
 | status                 = active
-| category               = [[:Category:Thresholding|Thresholding]]
+| category               = [[:Category:Segmentation|Segmentation]]
 }}
 
 ==Background==
