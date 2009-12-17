@@ -18,9 +18,11 @@ You do not need to wrap calls into write() calls: if you just write something li
 
 the return value will appear in your Log window when called.
 
-= Find out in which menu (or .jar file) a certain entry is =
+= Find out in which menu (or .jar file) a certain command is =
 
-Hit Ctrl+L (or Apple+L on Macs) to start the command launcher.  Type (part of) the name of the entry, then click on ''Show full information''.
+Hit '''Ctrl+L''' (or '''Cmd+L''' on Macs) to start the command launcher.  Type (part of) the name of the entry, then click on ''Show full information''.
+
+If ''Edit>Options>Misc...>Require command key for shortcuts'' is ''un''checked, typing '''L''' is sufficient.
 
 = Put the main window to the foreground =
 
