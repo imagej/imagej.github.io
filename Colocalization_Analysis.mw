@@ -196,7 +196,7 @@ Again, as for the [[Colocalization Threshold]] plugin, using an ROI here may wel
 
 Sometimes composite images of red and green channels are considered enough to demonstrate colocalization. The ramifications with regards to color-blind people aside, there is another very good reason to require scatter plots: the perception of human eyes can be fooled easily.  Just have a look at this image:
 
-[[Image:Spirals.jpg|300px|center]]
+[[Image:Spirals.png|300px|center]]
 
 Most people might think that the prominent spirals are in shades of green and blue, but they actually have <b>exactly the same color</b>!
 
