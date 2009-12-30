@@ -1,22 +1,72 @@
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = Arrow
-| author                 = Wayne Rasband
-| filename               = [http://rsb.info.nih.gov/ij/plugins/download/Arrow_.class Arrow_.class] (1,179 Bytes)
-| source                 = [http://rsb.info.nih.gov/ij/plugins/download/Arrow_.java Arrow_.java] (1,177 Bytes)
-| released               = 26 May 2000
-| latest version         = 16 November 2001
-| status                 = stable
+| author                 = Jean-Yves Tinevez & Johannes Schindelin
+| maintainer             = [mailto:jean-yves.tinevez@pasteur.fr Jean-Yves Tinevez]
+| source                 = in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Arrow_/fiji/util;hb=HEAD git]
+| released               = December 2009
+| latest version         = December 2009
+| status                 = stable, active
 | category               = [[:Category:Image annotation|Image annotation]]
-| website                = [http://rsb.info.nih.gov/ij/plugins/arrow.html]
 }}
-==Usage==
 
-Draws an arrow at the location of the current straight line selection using the current color and line width. The arrow will be "burnt" in the image (not a floating selection).
 
+[[Image:Arrow example.png|center]]
+
+
+This version replaces the old <code>Arrow_.class</code> tool that was present in Fiji before. The main changes are the ability to draw the arrow as a floating selection, and to tune its shape. 
+
+Warning: Since <code>ImageJ version 1.43n</code>, a similar tool, made by Wayne Rasband, does a similar thing from the ImageJ core, see [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=imagej.git;a=blob;f=ij/gui/Arrow.java;hb=HEAD here].
+
+
+== Usage ==
+
+[[Image:Arrow example2.png|right]]
+
+Launch the plugin from the menu. A tool appear in ImageJ toolbar:
+If there is no space for a spare tool in the toolbar, an error message is displayed. 
+
+
+Select the arrow tool and start drawing it in an image. To burn in its outline, select "Draw" (shortcut: d); to fill it, select "Fill" (shortcut "f") as for any other roi tool.
 
 You can change the color and line width via ''Edit > Options > Line Width'' and ''Edit > Options > Colors''. The ''Foreground'' option in the latter will change the color of the arrow.
 
+The user can drag the arrow head, base or he whole arrow by clicking and dragging near respectively its head, base or body. 
+
+If the shift key is pressed while dragging the head, only direction multiple of 45º will be allowed. 
+
+[[Image:Arrow example3.png|right]]
+To customize the arrow shape and type, double click the arrow tool. A dialog is displayed that allow to select the line thickness, the arrow head length and the arrow type. Changes made to the configuration panel are reflected to the arrow immediately. 
+
+It is possible to change the arrow shape using the mouse wheel. To change its thickness or the arrow head length, press shift and rotate the mouse wheel respectively near the arrow body and head. To change the arrow style, press control-shift and rotate the mouse wheel near the arrow.
+
+[[Image:Arrow example4.png|right]]
+So far, 4 types of arrow head are implemented:
+* Delta
+* Thick
+* Thin
+* Circle 
+
+
+
+== Legacy mode ==
+
+To be compatible with the previous Arrow_ tool, this plugin has a legacy mode that behaves as previous version. To use it:
+
+* In an image, draw a line roi
+* Launch the Arrow_ plugin
+* The Arrow_ tool does not appear in the toolbar, but an arrow is burned in the image from the line selection.
+
+
+
+
+== Further developments ==
+
+If you need this tool to do something more, do not hesitate to mail the maintainer. He will be pleased to implement it. 
+
+
+
+
+
 [[Category:Plugins]]
 [[Category:Image annotation]]
-[[Category:Unmaintained]]
