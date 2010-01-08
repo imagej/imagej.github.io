@@ -1,14 +1,15 @@
 ==Introduction==
 This tutorial describes how to produce an image stack (or 3D image) from an input sequence of tiles.
 
-As premise, we assume that:
+Given the origin of the images used in the tutorial, only a translation model is needed to correct the stitching and alignment errors.
+
+As premises, we assume that:
 * all the images are stored in the same folder and have an intuitive and numerical name (more information below), and 
 * every section of the stack is formed by a squared grid of a predefined size (NxM tiles). 
 
 In our test case, we have 19,600 images, i.e. 140 sections of 10x14 tiles.
 
 [[Image:Screenshot-File-Browser-Sequence.png|725px]]
-
 
 ==Stitching==
 First of all, we start Fiji and go to '''Plugins > Stitching > Stitch Sequence of Grids of Images''':
