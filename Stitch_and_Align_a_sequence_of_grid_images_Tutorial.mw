@@ -37,4 +37,26 @@ As result, the stitched images are stored in the output folder:
 
 ==Registration==
 
+For the registration of the stitched images we will use the plugin ''Register Virtual Stack Slices'', under ''Plugins > Registration'':
+
+[[Image:Screenshot-RVSS-Menu.png]]
+
+As before, a dialog will pop up where we have to choose the registration parameters:
+
+[[Image:Screenshot-Register Virtual Stack.png]]
+
+The relevant parameters are:
+* The '''source directory''': we set it to the stitching output folder so the plugins will register the stitched images.
+* The '''output directory''': we set it to the folder where we want to store the final images.
+* The '''feature extraction and registration models''': in this case, and as mentioned before, we only need a translation to solve the misalignment.
+
+And we click on the first two check-boxes:
+
+* '''Advanced setup''', to specify the feature extraction parameters.
+* '''Shrinkage constrain''', in other registration models, this guaranties a non-shrinking registration. Since we chose translation, we don't have this problem, but we checked this option anyways to guaranty a complete multi-thread registration.
+
+When we click on OK, another dialog pops up to select the Feature extraction parameters:
+
+
+
 [[Category:Tutorials]]
