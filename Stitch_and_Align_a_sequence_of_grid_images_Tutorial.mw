@@ -1,0 +1,38 @@
+==Introduction==
+This tutorial describes how to produce an image stack (or 3D image) from an input sequence of tiles.
+
+As premise, we assume that:
+* all the images are stored in the same folder and have an intuitive and numerical name (more information below), and 
+* every section of the stack is formed by a squared grid of a predefined size (NxM tiles). 
+
+In our test case, we have 19,600 images, i.e. 140 sections of 10x14 tiles.
+
+[[Image:Screenshot-File-Browser-Sequence.png|725px]]
+
+
+==Stitching==
+First of all, we start Fiji and go to '''Plugins > Stitching > Stitch Sequence of Grids of Images''':
+
+[[Image:Stitching-Menu-Grid-Sequence.png]]
+
+Then, the next dialog pops up to choose the stitching parameters:
+
+[[Image:Screenshot-Stitch Image Grid Sequence.png]]
+
+Here, we have to set some important parameters (the ones we don't mention can be left with their default values):
+
+* '''Grid size in X, Y and Z''': number of tiles per column, row and section. In our case: 10, 14 and 140.
+* The '''input directory''': the folder containing the image sequence. Notice here that you can drag and drop the folder into the text box and the path will be copied.
+* The '''file names''': the template of the file names. The Stitching plugin accept two types of templates, one with a specific number for each x, y or z position, and one with an absolute number (i). In this case, our files will have the template ''Tile_Z{zzz}_Y{yyy}_X{xxx}.png''. That means the file corresponding to the first section, first column, first row, will be called ''Tile_Z{001}_Y{001}_X{001}.png''.
+* The '''output directory''': the folder to store the resulting stitched images.
+* The '''fusion method''': the way the plugin will treat the overlapping areas. In our test case we won't fusion the images, so we select ''None''.
+* The '''regression threshold''': the number below with the plugin won't accept correlation values as valid. The default value (0.3) is quite low, but in our test case works perfect.
+
+We then click on OK and the stitching will take place. The plugin will display all intermediate results until the whole sequence has been stitched.
+
+As result, the stitched images are stored in the output folder:
+[[Image:Screenshot-File-Browser-Stitched-Sequence.png|750px]]
+
+==Registration==
+
+[[Category:Tutorials]]
