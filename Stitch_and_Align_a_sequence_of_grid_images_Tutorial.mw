@@ -57,6 +57,11 @@ And we click on the first two check-boxes:
 
 When we click on OK, another dialog pops up to select the Feature extraction parameters:
 
+[[Image:Screenshot-Feature extraction.png]]
+
+Here, we only increase the '''steps per octave scale''' to 5 to find more point candidates to correspondences, and the '''maximum image size''' to 1400 pixels, to use more image information.
+
+We then click on OK and the registration starts.
 
 
 [[Category:Tutorials]]
