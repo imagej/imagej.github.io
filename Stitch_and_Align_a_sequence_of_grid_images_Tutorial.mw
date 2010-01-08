@@ -41,7 +41,7 @@ As result, the stitched images are stored in the output folder:
 [[Image:Screenshot-File-Browser-Stitched-Sequence.png|center|750px]]
 
 
-The stitching of the 19,600 images (732x732 pixels each) took around 117 minutes in a Intel Core Duo at 3GHz, 4GB of RAM.
+The stitching of the 19,600 images (732x732 pixels each) took around 117 minutes in a Intel Core Duo at 3GHz, 4GB of RAM, running on Linux 64-bit.
 
 ==Registration==
 
