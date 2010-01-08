@@ -30,7 +30,7 @@ Here, we have to set some important parameters (the ones we don't mention can be
 
 We then click on OK and the stitching will take place. The plugin will display all intermediate results until the whole sequence has been stitched.
 
-As result, the stitched images are stored in the output folder:\
+As result, the stitched images are stored in the output folder:
 
 [[Image:Screenshot-File-Browser-Stitched-Sequence.png|750px]]
 
