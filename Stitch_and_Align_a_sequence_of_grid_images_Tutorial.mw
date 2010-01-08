@@ -40,6 +40,8 @@ As result, the stitched images are stored in the output folder:
 
 [[Image:Screenshot-File-Browser-Stitched-Sequence.png|center|750px]]
 
+The stitching of the 19,400 images (732x732 pixels each) took around 117 minutes in a Intel Core Duo at 3GHz, 4GB of RAM.
+
 ==Registration==
 
 For the registration of the stitched images we will use the plugin ''Register Virtual Stack Slices'', under ''Plugins > Registration'':
