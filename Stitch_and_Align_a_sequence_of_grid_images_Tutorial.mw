@@ -14,11 +14,11 @@ In our test case, we have 19,600 images, i.e. 140 sections of 10x14 tiles.
 ==Stitching==
 First of all, we start Fiji and go to '''Plugins > Stitching > Stitch Sequence of Grids of Images''':
 
-[[Image:Stitching-Menu-Grid-Sequence.png]]
+[[Image:Stitching-Menu-Grid-Sequence.png|center]]
 
 Then, the next dialog pops up to choose the stitching parameters:
 
-[[Image:Screenshot-Stitch Image Grid Sequence.png]]
+[[Image:Screenshot-Stitch Image Grid Sequence.png|center]]
 
 Here, we have to set some important parameters (the ones we don't mention can be left with their default values):
 
@@ -33,12 +33,12 @@ We then click on OK and the stitching will take place. The plugin will display a
 
 After processing the last grid/section, the plugin will display the following message:
 
-[[Image:Screenshot-Message-Sequence-Stitching.png]]
+[[Image:Screenshot-Message-Sequence-Stitching.png|center]]
 
 
 As result, the stitched images are stored in the output folder:
 
-[[Image:Screenshot-File-Browser-Stitched-Sequence.png|750px]]
+[[Image:Screenshot-File-Browser-Stitched-Sequence.png|center|750px]]
 
 ==Registration==
 
