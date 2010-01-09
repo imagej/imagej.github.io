@@ -1,5 +1,5 @@
 ==Introduction==
-This tutorial describes''' how to produce an image stack (or 3D image) from an input sequence of tiles''' using the Fiji plugins for stitching and registration.
+This tutorial describes''' how to produce an image stack (or 3D image) from an input sequence of tiles''' using the Fiji plugins for [[Stitching|stitching]] and [[Register_Virtual_Stack_Slices|registration]].
 
 Given the origin of the images used in this tutorial, the transformation between tiles can be modeled as a pure translation to generate the mosaic (of a slice). The transformation between slices can also be modeled as pure translation.
 
