@@ -18,9 +18,10 @@ First of all, we start Fiji and go to '''Plugins > Stitching > Stitch Sequence o
 
 Then, the next dialog pops up to choose the stitching parameters:
 
+
 [[Image:Screenshot-Stitch Image Grid Sequence.png|center]]
 
-Here, we have to set some important parameters (the ones we don't mention can be left with their default values):
+Here we have to set some important parameters (the ones we don't mention can be left with their default values):
 
 * '''Grid size in X, Y and Z''': number of tiles per column, row and section. In our case: 10, 14 and 140.
 * The '''input directory''': the folder containing the image sequence. Notice here that you can drag and drop the folder into the text box and the path will be copied.
