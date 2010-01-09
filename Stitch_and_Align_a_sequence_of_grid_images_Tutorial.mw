@@ -3,9 +3,9 @@ This tutorial describes''' how to produce an image stack (or 3D image) from an i
 
 Given the origin of the images used in this tutorial, the transformation between tiles can be modeled as a pure translation to generate the mosaic (of a slice). The transformation between slices can also be modeled as pure translation.
 
-In the initial setup we need to:
-* store all the images in the same folder and have an intuitive and numerical name (such as Tile_X(xxx)_Y{yyy}_Z{zzz}.png), more information below)
-* every slice of the stack is formed by a rectangular grid of a tiles of know size (NxM tiles). 
+In the initial setup we need to ensure:
+* All the images are stored in the same folder and have an intuitive sequencing name (such as Tile_X(xxx)_Y{yyy}_Z{zzz}.png), more information below)
+* All slices of the stack are formed by a rectangular grid (NxM tiles) of a equally sized tiles. 
 
 In our test case, we have 19,600 images, i.e. 140 sections of 10x14 tiles:
 
