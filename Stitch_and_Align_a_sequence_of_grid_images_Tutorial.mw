@@ -12,7 +12,7 @@ In our test case, we have 19,600 images, i.e. 140 sections of 10x14 tiles:
 [[Image:Screenshot-File-Browser-Sequence.png|center|725px]]
 
 ==Stitching==
-First of all, we start Fiji and go to '''Plugins > Stitching > Stitch Sequence of Grids of Images''':
+As a first step, we start Fiji and go to '''Plugins > Stitching > Stitch Sequence of Grids of Images''':
 
 [[Image:Stitching-Menu-Grid-Sequence.png|center]]
 
