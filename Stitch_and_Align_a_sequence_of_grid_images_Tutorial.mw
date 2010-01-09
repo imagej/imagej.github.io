@@ -45,9 +45,9 @@ As result, the stitched images are stored in the output folder:
 
 '''Performance''': The stitching of the 19,600 images (732x732 pixels each) took around 117 minutes in a Intel Core Duo at 3GHz, 4GB of RAM, running on Linux 64-bit.
 
-==Registration==
+==Alignment==
 
-For the registration of the stitched images we will use the plugin ''Register Virtual Stack Slices'', under ''Plugins > Registration'':
+For the alignment of the stitched slices we will use the plugin ''Register Virtual Stack Slices'', under ''Plugins > Registration'':
 
 [[Image:Screenshot-RVSS-Menu.png]]
 
@@ -56,9 +56,9 @@ As before, a dialog will pop up where we have to choose the registration paramet
 [[Image:Screenshot-Register Virtual Stack.png]]
 
 The relevant parameters are:
-* The '''source directory''': we set it to the stitching output folder so the plugins will register the stitched images.
-* The '''output directory''': we set it to the folder where we want to store the final images.
-* The '''feature extraction and registration models''': in this case, and as mentioned before, we only need a translation to solve the misalignment.
+* The '''source directory''': we set it to the stitching output folder so the plugins will align the stitched images.
+* The '''output directory''': we set it to the folder where we want to store the final aligned slices.
+* The '''feature extraction and registration models''': in this case, and as mentioned before, we only need a translation to model the transformation.
 
 And we click on the first two check-boxes:
 
@@ -73,9 +73,9 @@ Here, we only increase the '''steps per octave scale''' to 5 to find more point 
 
 '''NOTE''': these values are usually a good choice, but they can be tuned when working when other types of images.
 
-We then click on OK and the registration starts.
+We then click on OK and the alignment starts.
 
-After some minutes (depending on the computer and number of CPUs), the registration will be finished and a virtual stack with the result will be displayed. The virtual stack can be closed with no ill effect: images are saved in the output folder.
+After few minutes (depending on the computer and number of CPUs), when the alignment is done, aligned images are saved to the specified output folder and results will be displayed as a virtual stack. 
 
 [[Image:Screenshot-aligned-stack-(V).png]]
 
