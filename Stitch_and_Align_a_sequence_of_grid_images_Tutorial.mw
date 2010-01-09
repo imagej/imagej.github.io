@@ -1,5 +1,5 @@
 ==Introduction==
-This tutorial describes''' how to produce an image stack (or 3D image) from an input sequence of tiles'''.
+This tutorial describes''' how to produce an image stack (or 3D image) from an input sequence of tiles''' using the Fiji plugins for stitching and registration.
 
 Given the origin of the images used in the tutorial, only a translation model is needed to correct the stitching and alignment errors.
 
