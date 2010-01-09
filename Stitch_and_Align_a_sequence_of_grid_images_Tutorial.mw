@@ -75,5 +75,12 @@ Here, we only increase the '''steps per octave scale''' to 5 to find more point 
 
 We then click on OK and the registration starts.
 
+After some minutes (depending on the computer and number of CPUs), the registration will be finished and a virtual stack with the result will be displayed:
+
+[[Image:Screenshot-aligned-stack-(V).png]]
+
+
+'''Performance''': the registration of the 140 slices (and their resizing) took around 20 minutes in a 
+
 
 [[Category:Tutorials]]
