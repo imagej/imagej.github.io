@@ -71,7 +71,7 @@ When we click on OK, another dialog pops up to select the Feature extraction par
 
 Here, we only increase the '''steps per octave scale''' to 5 to find more point candidates to correspondences, and the '''maximum image size''' to 1400 pixels, to use more image information. 
 
-'''NOTE''': these values are commonly a good choice, but they can be tuned when working when other types of images.
+'''NOTE''': these values are usually a good choice, but they can be tuned when working when other types of images.
 
 We then click on OK and the registration starts.
 
