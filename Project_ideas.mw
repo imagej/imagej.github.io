@@ -134,6 +134,15 @@ This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX 
 '''Language:''' Java<br>
 '''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
 
+== GUI Testing framework ==
+
+We have some rudimentary GUI testing in the ''tests'' branch but it may be better to use an established GUI framework such as [https://jemmy.dev.java.net/ Jemmy] or [http://www.marathontesting.com/Marathon.html Marathon].
+
+The idea is, in any case, to record mouse moves and keyboard presses, optionally waiting for some GUI element (such as a window) to appear, and error out if something unexpected happens -- which most likely means that something broke and needs fixing.
+
+'''Goal:''' Provide an easy way to record and run GUI regression tests.<br>
+'''Language:''' Mainly Java<br>
+'''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
 = Other resources =
 
 There is a wish list on the [http://imagejdocu.tudor.lu/doku.php?id=wishlist:start&s%5b%5d=ideas ImageJ Documentation Wiki].
