@@ -128,6 +128,18 @@ The following issues need to be resolved:
 
 * it searches for its .xml files outside of the .jar file, which makes it cumbersome to ship with the Fiji updater.
 
+== Provide ''Help on menu item'' ==
+
+Many commands available from menu items are actually plugins, so they are documented nicely on the Fiji Wiki.  There is a beginning of a plugin that changes the cursor to an arrow with a question mark, and (temporarily) the way the menu items are handled: instead of running the corresponding command, the corresponding documentation on the Fiji Wiki is opened in a web browser.
+
+The code needs to be improved, though, to handle special menu items correctly, such as the recent files or the windows menu.
+
+Some menu items are actually provided by the core of ImageJ, and it may be the best to open the appropriate place on the ImageJ website instead of the Fiji Wiki.  In the alternative, the ImageJ documentation should be replicated on the Fiji Wiki under the appropriate page titles.
+
+The user should also be informed that hitting the Esc key gets her out of this mode.
+
+And finally, the Fiji Wiki needs some love to reflect the exact titles of the menu items, most probably by adding appropriate redirects.
+
 = Miscellaneous =
 
 == Alpha shapes / concave hull / other Graph Theory algorithms ==
