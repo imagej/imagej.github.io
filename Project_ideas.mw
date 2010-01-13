@@ -76,6 +76,10 @@ The project would consist of
 '''Language:''' Java.<br />
 '''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)<br />
 
+== A Javascript Recorder ==
+
+Similar to the Macro Recorder but producing Javascript instead.  There is a Javascript recorder in ImageJ right now, but it is in no way integrated into the Fiji Script Editor.  It also appears that the Javascript recorder is not as robust as the Macro recorder yet.
+
 = Fiji development environment =
 
 == GUI Testing framework ==
@@ -107,10 +111,6 @@ The following issues need to be resolved:
 == Interface between R and ImageJ/Fiji ==
 
 Dimiter Prodanov has done something like this, but it would be nice to have a set of implemented procedures so IJ/Fiji can run statistical procedures directly from Results tables, etc).
-
-== A Javascript Recorder ==
-
-Similar to the Macro Recorder but producing Javascript instead.  There is a Javascript recorder in ImageJ right now, but it is in no way integrated into the Fiji Script Editor.  It also appears that the Javascript recorder is not as robust as the Macro recorder yet.
 
 = Miscellaneous =
 
