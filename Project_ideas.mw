@@ -140,6 +140,14 @@ The user should also be informed that hitting the Esc key gets her out of this m
 
 And finally, the Fiji Wiki needs some love to reflect the exact titles of the menu items, most probably by adding appropriate redirects.
 
+== Add a clever ''Save As'' plugin ==
+
+For now, ''File>Save As'' always saves the result as a ''.tiff'' file, even if the user specified a file name ending in, say, ''.png''.
+
+Stephan Preibisch suggests: Add a plugin that determines from a set of extensions which plugin to call to the respective writer plugin.
+
+For extra brownie points, do not hardcode the extension/plugin mapping (like HandleExtraFileTypes), but make it configurable via one or more file.
+
 = Miscellaneous =
 
 == Alpha shapes / concave hull / other Graph Theory algorithms ==
