@@ -80,6 +80,20 @@ The project would consist of
 
 Similar to the Macro Recorder but producing Javascript instead.  There is a Javascript recorder in ImageJ right now, but it is in no way integrated into the Fiji Script Editor.  It also appears that the Javascript recorder is not as robust as the Macro recorder yet.
 
+== Code templates in the Script Editor ==
+
+The Script Editor provides a fine way to script small plugins that do some simple tasks.  If you know how.
+
+Better to start from a nice template, say, iterating over all pixels in the current image, or over all images in a user-specified directory.  To make adding new templates easy, they should be simple text files in ''Script_Editor.jar'' (the path describing where they should go in the menu).
+
+The goal of this project is to provide a few templates (categorized by language) for common tasks.
+
+== Adding a ''Make Jar'' command the Script Editor ==
+
+When writing plugins, the goal is often to provide the result to some users in the end.  ImageJA already has the ''Plugins>Install Plugin...'' command, but that requires a ''.class'', ''.jar'' or a script file.  The easiest way to handle plugins is as a single ''.jar'' file which can be sent via email.
+
+Add a ''Make Jar'' command and a new menu to the Script Editor, and maybe a "Make Jar with Source" command, too.
+
 = Fiji development environment =
 
 == GUI Testing framework ==
