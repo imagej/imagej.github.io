@@ -106,6 +106,12 @@ The idea is, in any case, to record mouse moves and keyboard presses, optionally
 '''Language:''' Mainly Java<br>
 '''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
 
+== Interface between R and ImageJ/Fiji ==
+
+Dimiter Prodanov has done something like this, but it would be nice to have a set of implemented procedures so IJ/Fiji can run statistical procedures directly from Results tables, etc).
+
+= User interface improvements =
+
 == Integrate ImageFlow into Fiji ==
 
 [[Image:ImageFlow.png|700px|center]]
@@ -121,10 +127,6 @@ The following issues need to be resolved:
 * it only targets the macro language, while we want to target all the scripting languages supported by Fiji
 
 * it searches for its .xml files outside of the .jar file, which makes it cumbersome to ship with the Fiji updater.
-
-== Interface between R and ImageJ/Fiji ==
-
-Dimiter Prodanov has done something like this, but it would be nice to have a set of implemented procedures so IJ/Fiji can run statistical procedures directly from Results tables, etc).
 
 = Miscellaneous =
 
