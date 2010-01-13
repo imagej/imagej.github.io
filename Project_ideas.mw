@@ -76,15 +76,17 @@ The project would consist of
 '''Language:''' Java.<br />
 '''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)<br />
 
-= Miscellaneous =
+= Fiji development environment =
 
-== Alpha shapes / concave hull / other Graph Theory algorithms ==
+== GUI Testing framework ==
 
-Fiji already contains a [[Delaunay_Voronoi]] plugin.  The purpose of this project is to implement more graph algorithms.  Most likely, this will involve designing a common framework for graph theory as applied to two- or higher-dimensional graphs.
+We have some rudimentary GUI testing in the ''tests'' branch but it may be better to use an established GUI framework such as [https://jemmy.dev.java.net/ Jemmy] or [http://www.marathontesting.com/Marathon.html Marathon].
 
-== Support for storing ROIs in TIFF tag fields ==
+The idea is, in any case, to record mouse moves and keyboard presses, optionally waiting for some GUI element (such as a window) to appear, and error out if something unexpected happens -- which most likely means that something broke and needs fixing.
 
-Fiji can save images as TIFF files and ROIs into custom .roi files.  Provide a way to store the ROIs inside custom tags in the TIFF file so ROIs and images can be saved together.
+'''Goal:''' Provide an easy way to record and run GUI regression tests.<br>
+'''Language:''' Mainly Java<br>
+'''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
 
 == Integrate ImageFlow into Fiji ==
 
@@ -106,6 +108,20 @@ The following issues need to be resolved:
 
 Dimiter Prodanov has done something like this, but it would be nice to have a set of implemented procedures so IJ/Fiji can run statistical procedures directly from Results tables, etc).
 
+== A Javascript Recorder ==
+
+Similar to the Macro Recorder but producing Javascript instead.  There is a Javascript recorder in ImageJ right now, but it is in no way integrated into the Fiji Script Editor.  It also appears that the Javascript recorder is not as robust as the Macro recorder yet.
+
+= Miscellaneous =
+
+== Alpha shapes / concave hull / other Graph Theory algorithms ==
+
+Fiji already contains a [[Delaunay_Voronoi]] plugin.  The purpose of this project is to implement more graph algorithms.  Most likely, this will involve designing a common framework for graph theory as applied to two- or higher-dimensional graphs.
+
+== Support for storing ROIs in TIFF tag fields ==
+
+Fiji can save images as TIFF files and ROIs into custom .roi files.  Provide a way to store the ROIs inside custom tags in the TIFF file so ROIs and images can be saved together.
+
 == Cross platform webcam support ==
 
 Supporting image recording from webcams might provide a cheap way to make videomicroscope/telescope units (possibly using the [[Distortion Correction]] plugin to overcome low-quality CCD chips and lenses).
@@ -117,10 +133,6 @@ One way to achieve that would be by using the [http://fmj-sf.net/ Free Java Medi
 I have collected near 15 new histogram segmentation methods that would be better put under a single interface together with others already available.
 
 Note: this is more or less implemented in the Auto_Threshold and Auto_Local_Threshold plugins.--[[User:Landini|Gabriel]] 14:47, 29 November 2009 (CET)
-
-== A Javascript Recorder ==
-
-Similar to the Macro Recorder but producing Javascript instead.
 
 == Virtual microscope-like image viewer ==
                                                                                 
@@ -134,15 +146,6 @@ This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX 
 '''Language:''' Java<br>
 '''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
 
-== GUI Testing framework ==
-
-We have some rudimentary GUI testing in the ''tests'' branch but it may be better to use an established GUI framework such as [https://jemmy.dev.java.net/ Jemmy] or [http://www.marathontesting.com/Marathon.html Marathon].
-
-The idea is, in any case, to record mouse moves and keyboard presses, optionally waiting for some GUI element (such as a window) to appear, and error out if something unexpected happens -- which most likely means that something broke and needs fixing.
-
-'''Goal:''' Provide an easy way to record and run GUI regression tests.<br>
-'''Language:''' Mainly Java<br>
-'''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
 = Other resources =
 
 There is a wish list on the [http://imagejdocu.tudor.lu/doku.php?id=wishlist:start&s%5b%5d=ideas ImageJ Documentation Wiki].
