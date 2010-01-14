@@ -10,7 +10,7 @@
 | category               = [[:Category:Transform|Transform]], [[:Category:Plugins|Plugins]]
 }}
 
-This plugin allows to apply a similarity transformation (rotation, translation and isotropic scaling) to a 2D image in an interactive way.
+This plugin allows to apply a '''similarity transformation''' (rotation, translation and isotropic scaling) to a 2D image in an interactive way.
 
 '''Premises''': You need an image to be open.
 
