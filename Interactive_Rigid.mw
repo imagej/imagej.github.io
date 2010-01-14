@@ -10,6 +10,8 @@
 | category               = [[:Category:Transform|Transform]], [[:Category:Plugins|Plugins]]
 }}
 
+This plugin allows to apply a rigid transformation (rotation and translation) to a 2D image in an interactive way.
+
 '''Premises''': You need an image to be open.
 
 '''Use''': 
