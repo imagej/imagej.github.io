@@ -15,7 +15,7 @@ This plugin allows to apply a rigid transformation (rotation and translation) to
 '''Premises''': You need an image to be open.
 
 '''Use''': 
-# When calling the plugin, two points (represented as yellow PointRois) will be displayed on the image. 
+# When calling the plugin, '''two points''' (represented as yellow PointRois) will be displayed on the image. 
 # Drag and drop the points to interactively transform the image with a '''rigid model''' (rotation and translation).
 # If you are satisfied with the result, press ENTER, otherwise, press ESC.
 
