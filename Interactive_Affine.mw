@@ -16,7 +16,7 @@ This plugin allows to apply a '''free affine transformation''' to a 2D image in 
 
 '''Use''': 
 # When calling the plugin, '''three points''' (represented as yellow PointRois) will be displayed on the image. 
-# Drag and drop the points to interactively transform the image with an '''affine model''' (rotation, translation and isotropic scaling).
+# Drag and drop the points to interactively transform the image with an '''affine model'''.
 # If you are satisfied with the result, press ENTER, otherwise, press ESC.
 
 == License ==
