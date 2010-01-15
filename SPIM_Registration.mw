@@ -17,3 +17,6 @@ Selective Plane Illumination Microscopy (SPIM) allows ''in toto'' imaging of lar
 The developed bead-based registration framework is able to reconstruct long-term, time-lapse, multi-view acquisitions of developing samples with yet unattainable temporal and spatial resolution allowing new insights into the development of biological specimen.
 
 == Overview of the SPIM Registration Plugin ==
+
+* '''[[SPIM Registration#Registration | SPIM Registration]]''': gsdg
+* '''[[SPIM Registration#Registration | Advanced SPIM Registration]]''': sdgdfg
