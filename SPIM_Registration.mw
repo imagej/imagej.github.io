@@ -24,6 +24,7 @@ The developed bead-based registration framework is able to reconstruct long-term
 == SPIM Registration ==
 [[Image:SPIM Registration.png|thumb|432px|Shows the SPIM Registration Dialog.]]<br/>
 
+The SPIM Registration plugin reconstructs an image from several input images, called views. To start this reconstruction process some parameters defining the input and output data are required.
 
 == Advanced SPIM Registration ==
 
