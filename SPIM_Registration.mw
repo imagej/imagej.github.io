@@ -82,3 +82,10 @@ After all individual timepoints are registered and the cropping area is defined 
 [[Image:Advanced SPIM Registration.png|thumb|539px|Shows the Advanced SPIM Registration Dialog.]]<br/>
 
 For advanced parameter tuning a configuration file can be loaded, contact the author for further details [http://fly.mpi-cbg.de/preibisch/contact.html]. The input are two files, configuration.txt and VariablesAssignment.txt, see below.
+
+== Code ==
+
+<source lang="java">
+
+int a = 0;
+</soucre>
