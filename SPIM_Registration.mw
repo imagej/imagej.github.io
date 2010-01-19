@@ -20,7 +20,7 @@ The developed bead-based registration framework is able to reconstruct long-term
 
 The SPIM Registration plugin reconstructs an image from several input images, called views. For this reconstruction process some parameters defining the input and output data are required. The user has to define the naming convention of the input images, an approximate bead-brightness as well as the strategies for creating the fused output image. 
 
-= fg =
+=== fg ===
 As the output images are typically very big it is strongly recommended to define a cropping area where the imaged sample is positioned in the output image. As this is not possible in the first run, there is an option to first create a down-sampled version of the output image, then extract the cropping area and by loading the previous registration parameters create the cropped full-resolution output image.
 
 There are two plugins which take those input parameters in different formats:
