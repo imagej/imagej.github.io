@@ -87,7 +87,7 @@ For advanced parameter tuning a configuration file can be loaded, contact the au
 
 === configuration.txt ===
 
-<source lang="java">
+<source>
 ### Configuration file for SPIM Registration
 ### ----------------------------------------
 ###
