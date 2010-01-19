@@ -59,8 +59,8 @@ There are two plugins which take those input parameters in different formats:
 
 * '''Output Image Scaling''': The factor defines the downsampling of the output image, e.g. 2 means that the output image will be half as big in each dimension and therefore need 8x less RAM than the full resolution output image.
 
-* '''Crop Offset Output Image X/Y/Z''': Defines the cropping offset in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping.
-* '''Crop Size Output Image X/Y/Z''': Defines the cropped size in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping.
+* '''Crop Offset Output Image X/Y/Z''': Defines the cropping offset in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping. '''Note:''' All the values are relative to the downsampling factor in '''Output Image Scaling'''.
+* '''Crop Size Output Image X/Y/Z''': Defines the cropped size in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping. '''Note:''' All the values are relative to the downsampling factor in '''Output Image Scaling'''.
 
 == Advanced SPIM Registration ==
 
