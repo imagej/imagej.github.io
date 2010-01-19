@@ -83,8 +83,6 @@ After all individual timepoints are registered and the cropping area is defined 
 
 For advanced parameter tuning a configuration file can be loaded, contact the author for further details [http://fly.mpi-cbg.de/preibisch/contact.html]. The input are two files, configuration.txt and VariablesAssignment.txt, see below.
 
-== Code ==
-
 === configuration.txt ===
 
 <source lang="text">
