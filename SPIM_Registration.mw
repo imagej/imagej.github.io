@@ -18,8 +18,8 @@ The developed bead-based registration framework is able to reconstruct long-term
 
 == Overview of the SPIM Registration Plugin ==
 
-* '''[[SPIM Registration#Registration | SPIM Registration]]''': gsdg
-* '''[[SPIM Registration#Registration | Advanced SPIM Registration]]''': sdgdfg
+* '''[[SPIM Registration#Registration | SPIM Registration]]''': Allows the registration of SPIM data with a subset of necessary options presented in the graphical user interface
+* '''[[SPIM Registration#Registration | Advanced SPIM Registration]]''': Registration of SPIM data using all possible options via loading a configuration file
 
 == SPIM Registration ==
 
