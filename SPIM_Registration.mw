@@ -28,7 +28,8 @@ There are two plugins which take those input parameters in different formats:
 == SPIM Registration ==
 [[Image:SPIM Registration.png|thumb|432px|Shows the SPIM Registration Dialog.]]
 
-
+* '''SPIM Data Directory''': Fill in the directory name that contains all the image files. You can either drag&drop the directory, browse for it or type the name directly.
+* '''Time Points to process''': Fill
 
 == Advanced SPIM Registration ==
 
