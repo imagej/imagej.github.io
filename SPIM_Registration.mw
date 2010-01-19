@@ -88,7 +88,187 @@ For advanced parameter tuning a configuration file can be loaded, contact the au
 === configuration.txt ===
 
 <source lang="java">
-int a = 0;
+### Configuration file for SPIM Registration
+### ----------------------------------------
+###
+### The first line is the filename for the linkage from the entries in this file to the variable names in java.
+### It is very important and you only need to change this if you change the source code.
+###
+### The rest of the file is divided into sections where you can change different types of parameters.
+### Really important is the Input files section. Change it according to your experiment data.
+
+<VariablesAssignment.txt>
+
+###
+### Section: General Parameters
+###
+
+Time Point Pattern = "18"
+Acquisition Angle Pattern = "0-270:45"
+Input File Pattern = "spim_TL{t}_Angle{a}.lsm"
+Input Directory = "F:\Stephan\dros\"
+Output Directory = "F:\Stephan\dros\output"
+Registration File Directory = "F:\Stephan\dros\registration\"
+Debug Level = "DEBUG_MAIN"
+Show ImageJ Window = true
+
+###
+### Section: Time Lapse 
+###
+
+Time Lapse Registration = false
+Reference Time Point = 1
+
+###
+### Section: Data Structures, Access and Paging
+###
+
+Factory for Images during Segmentation = ArrayContainerFactory()
+Factory for Recursive Gauss = ArrayContainerFactory()
+Factory for Images during Fusion = ArrayContainerFactory()
+#Factory for Output Images = ArrayContainerFactory()
+Factory for Entropy = ArrayContainerFactory()
+Factory for Scale Space = ArrayContainerFactory()
+
+#Factory for Images during Segmentation = CubeContainerFactory(16)
+#Factory for Recursive Gauss = CubeContainerFactory(16)
+#Factory for Images during Fusion = CubeContainerFactory(16)
+Factory for Output Images = CubeContainerFactory( 256 )
+#Factory for Entropy = CubeContainerFactory(16)
+#Factory for Scale Space = CubeContainerFactory(35)
+
+Paging Temporary Directory = null
+
+Out of Bounds Strategy for Fusion = OutsideStrategyValueFactory(0)
+Out of Bounds Strategy for Gauss = OutsideStrategyMirrorFactory()
+Interpolator for Output Image = LinearInterpolatorFactory()
+
+###
+### Section: Main Switches
+###
+
+Write Output Image = true
+Show Output Image = true
+Segmentation Use Scale Space = true
+Fusion Use Entropy = false
+Fusion Use Gauss = false
+Fusion Use Blending = false
+
+Fuse all Images at once = false
+Fuse Images sequentially = false
+Number of Paralell Views = 4
+Create multiple registered Output Images = true    
+
+Register Only = false
+Display Registration = false
+Read Segmentation = true
+Write Segmentation = true
+Read Registration = false
+Write Registration = true
+
+###
+### Section: Image Parameters
+###
+
+Override Z-Stretching of Image = true
+
+# 20x, 2um z spacing ( 2.0 / 0.73 )
+Image Z-Stretching = 2.739726027397260273972602739726
+
+Image Background = 0
+
+###
+### Section: Threshold Bead Segmentation
+###
+
+Bead Segmentation Threshold = 0.9
+Bead Segmentation Fixed Threshold = 0.02
+Bead Segmentation Use Fixed Threshold = true 
+Bead Segmentation Circularity Factor = 0.5
+Bead Segmentation Minimum Black Border around Bead = 1
+Bead Segmentation Minimum Bead Size = 10
+Bead Segmentation Maximum Bead Size = 13375
+Bead Segmentation Use Center of Mass = false
+
+###
+### Section: Scale Space Bead Segmentation
+###
+
+Bead Scale Space Minimum Peak Value = 0.01
+Bead Scale Space Minimum Initial Peak Value = 0.005
+Bead Scale Space Identity Radius = 3.0
+Bead Scale Space Maxima Tolerance = 0.01
+Bead Scale Space Image Sigma = 0.5
+Bead Scale Space Initial Sigma = 1.4
+Bead Scale Space Steps per Octave = 4
+Bead Scale Space Steps = 3
+Bead Scale Space Number of Threads = 0
+
+###
+### Section: Point Descriptor and Global Optimization
+###
+
+Point Descriptor Difference Threshold = 50
+Point Descriptor Ratio of Distance = 10
+Point Descriptor Number of Neighbors = 3
+Point Descriptor Use Associated Beads = false   
+Point Descriptor Use RANSAC = true
+
+RANSAC Maximum Epsilon = 5
+RANSAC Minimum Inlier Ratio = 0.1  
+RANSAC Number of Iterations = 1000
+
+# p__ = ( 1 - r^n ) ^ k
+# k = log(p__) / log ( 1 - r^n )
+
+# p__ ... probability that ransac fails
+# r   ... min inlier ratio
+# n   ... minimal number of points needed to create model
+# k   ... number of iterations 
+
+###
+### Section: Output Image
+###
+
+Output Image Scale = 1
+
+Output Image Crop Offset X = 0
+Output Image Crop Offset Y = 0
+Output Image Crop Offset Z = 0
+Output Image Crop Size X = 0
+Output Image Crop Size Y = 0
+Output Image Crop Size Z = 0
+
+
+Output Image Number of Threads = 0
+
+###
+### Section: Volume Injection
+###
+
+Volume Injection Sigma = 0.25
+Volume Injection Cut Off Radius = 2
+
+###
+### Section: Entropy
+###
+
+Entropy Histogram Bins = 256
+Entropy Window Size X = 25
+Entropy Window Size Y = 25
+
+###
+### Section: Blending
+###
+
+Blending Alpha = 1.5
+
+###
+### Section: Gauss Fusion
+###
+
+Gauss Fusion Sigma 1 = 20
+Gauss Fusion Sigma 2 = 40
 </source>
 
 === VariablesAssignment.txt ===
