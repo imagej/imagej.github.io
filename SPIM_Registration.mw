@@ -55,7 +55,7 @@ There are two plugins which take those input parameters in different formats:
 
 * '''Fusion use Blending''': Checked if blending at the edges of the overlapping views should be applied; this removes brightness differences at the hyperplanes where the overlapping images intersect
 
-* '''Fusion use Blending''':
+* '''Fusion use Content based Weightening''': Checked if the content-based weightening should be used; this weights each pixel of each view by its local information content and thereby increases the contrast of the output image. '''Note:''' The content based weightening is rather fast but consumes a lot of RAM.
 
 == Advanced SPIM Registration ==
 
