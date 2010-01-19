@@ -89,11 +89,13 @@ For advanced parameter tuning a configuration file can be loaded, contact the au
 ### Configuration file for SPIM Registration
 ### ----------------------------------------
 ###
-### The first line is the filename for the linkage from the entries in this file to the variable names in java.
-### It is very important and you only need to change this if you change the source code.
+### The first line is the filename for the linkage from the entries in this file to the
+### variable names in java. It is very important and you only need to change this
+### if you change the source code.
 ###
-### The rest of the file is divided into sections where you can change different types of parameters.
-### Really important is the Input files section. Change it according to your experiment data.
+### The rest of the file is divided into sections where you can change different
+### types of parameters. Really important is the Input files section. Change it
+### according to your experiment data.
 
 <VariablesAssignment.txt>
 
