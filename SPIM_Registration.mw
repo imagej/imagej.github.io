@@ -26,7 +26,7 @@ As the output images are typically very big (bounding box around all registered 
 
 === Downloading example dataset ===
 
-There is a 7-angle SPIM dataset of ''Drosophila'' available [here|http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip].
+There is a 7-angle SPIM dataset of ''Drosophila'' available [http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip|here].
 
 === Using the Plugins ===
 
