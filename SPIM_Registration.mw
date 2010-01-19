@@ -24,11 +24,9 @@ The SPIM Registration plugin reconstructs an image from several input images, ca
 
 As the output images are typically very big (bounding box around all registered views) it is strongly recommended to define a cropping area where the imaged sample is positioned in the output image. As this is not possible in the first run, there is an option to first create a down-sampled version of the output image from which one can extract the cropping area. By running the plugin again and loading the previous registration parameters the cropped full-resolution output image can be created efficiently.
 
-=== Processing a Time Lapse Acqusition ===
-
-Process a time lapse acquisition is a two-pass process. In the first step the individual registration for each timepoint is computed and automatically stored, therefore input the timepoints that should be processed, check '''Register only (no fusion)''' and uncheck '''Timelapse processing'''. After the registration is performed one timepoint has to be selected as reference timepoint, typically one with a low registration error. This timepoint should be also fused once to determine the correct cropping area (see above) which will afterwards be applied to all other timepoints. 
-
 === Downloading example dataset ===
+
+There is a 7-angle SPIM dataset of ''Drosophila'' available here: [[http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip]]. 
 
 === Using the Plugins ===
 
@@ -36,6 +34,10 @@ There are two plugins which take those input parameters in different formats:
 
 * '''[[SPIM Registration#Registration | SPIM Registration]]''': Allows the registration of SPIM data with a subset of necessary options presented in the graphical user interface
 * '''[[SPIM Registration#Registration | Advanced SPIM Registration]]''': Registration of SPIM data using all possible options via loading a configuration file
+
+=== Processing a Time Lapse Acqusition ===
+
+Process a time lapse acquisition is a two-pass process. In the first step the individual registration for each timepoint is computed and automatically stored, therefore input the timepoints that should be processed, check '''Register only (no fusion)''' and uncheck '''Timelapse processing'''. After the registration is performed one timepoint has to be selected as reference timepoint, typically one with a low registration error. This timepoint should be also fused once to determine the correct cropping area (see above) which will afterwards be applied to all other timepoints.
 
 == SPIM Registration ==
 [[Image:SPIM Registration.png|thumb|432px|Shows the SPIM Registration Dialog.]]
