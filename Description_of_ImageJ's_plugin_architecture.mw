@@ -44,7 +44,7 @@ A plugin typically instantiates ''ij.gui.GenericDialog'' in its ''run()'' method
 
 * if the dialog is "shown" in the context of a macro, the values are retrieved by the same keys from the parameters specified in the macro.
 
-''Technical note:'' if a plugin uses the recommended GenericDialog way to ask for parameters, there is indeed no other way to find out what parameters the plugin offers than to run the method and look what the dialog offers. In other words, this method is only useful when ImageJ is used as a desktop application, not when you want to use it as a library.
+''Technical note:'' if a plugin uses the recommended GenericDialog way to ask for parameters, there is currently no other way to find out what parameters the plugin offers than to run the method and look what the dialog offers. In other words, this method is only useful when ImageJ is used as a desktop application, not when you want to use it as a library.
 
 ''Another technical note:'' as a GenericDialog extends an AWT class, it cannot be instantiated in a headless mode on Linux.  The reason is that text dimensions (and therefore the dimensions of the dialog itself) can only be inferred using functionality of X11's font manager.  So you cannot run parameterized macros in ImageJ on Linux without a graphical user interface.
 
