@@ -273,6 +273,102 @@ Gauss Fusion Sigma 2 = 40
 
 === VariablesAssignment.txt ===
 
-<source lang="java">
-int a = 0;
+<source lang="text">
+Input File Pattern = String inputFilePattern
+Time Point Pattern = String timepointPattern 
+Acquisition Angle Pattern = String anglePattern
+Input Directory = String inputdirectory 
+Output Directory = String outputdirectory
+Registration File Directory = String registrationFiledirectory
+Debug Level = String debugLevel
+Show ImageJ Window = boolean showImageJWindow
+
+Time Lapse Registration = boolean timeLapseRegistration
+Reference Time Point = int referenceTimePoint
+
+Factory for Images during Segmentation = ContainerFactory imageFactory
+Factory for Recursive Gauss = ContainerFactory recursiveGaussFactory
+Factory for Images during Fusion = ContainerFactory imageFactoryFusion
+Factory for Output Images = ContainerFactory outputImageFactory
+Factory for Entropy = ContainerFactory entropyFactory
+Factory for Scale Space = ContainerFactory scaleSpaceFactory
+
+Paging Temporary Directory = String tempDir
+
+Out of Bounds Strategy for Fusion = OutsideStrategyFactory strategyFactoryOutput	
+Out of Bounds Strategy for Gauss = OutsideStrategyFactory strategyFactoryGauss
+Interpolator for Output Image = InterpolatorFactory interpolatorFactorOutput
+
+Write Output Image = boolean writeOutputImage
+Show Output Image = boolean showOutputImage
+Segmentation Use Scale Space = boolean useScaleSpace
+Fusion Use Entropy = boolean useEntropy
+Fusion Use Gauss = boolean useGauss
+Fusion Use Blending = boolean useLinearBlening
+
+Fuse all Images at once = boolean paralellFusion    
+Fuse Images sequentially = boolean sequentialFusion
+Number of Paralell Views = int numParalellViews  
+Create multiple registered Output Images = boolean multipleImageFusion    
+
+Register Only = boolean registerOnly
+Display Registration = boolean displayRegistration
+Read Segmentation = boolean readSegmentation
+Write Segmentation =  boolean writeSegmentation
+Read Registration = boolean readRegistration
+Write Registration = boolean writeRegistration   
+
+Override Z-Stretching of Image = boolean overrideImageZStretching
+Image Z-Stretching = double zStretching
+Image Background = int background
+	
+Bead Segmentation Threshold = float threshold
+Bead Segmentation Fixed Threshold = float fixedThreshold
+Bead Segmentation Use Fixed Threshold = boolean useFixedThreshold 
+Bead Segmentation Circularity Factor = double circularityFactor
+Bead Segmentation Minimum Black Border around Bead = int minBlackBorder
+Bead Segmentation Minimum Bead Size = int minSize
+Bead Segmentation Maximum Bead Size = int maxSize
+Bead Segmentation Use Center of Mass = boolean useCenterOfMass
+
+Bead Scale Space Minimum Peak Value = float minPeakValue
+Bead Scale Space Minimum Initial Peak Value = float minInitialPeakValue
+Bead Scale Space Identity Radius = float identityRadius
+Bead Scale Space Maxima Tolerance = float maximaTolerance
+Bead Scale Space Image Sigma = float imageSigma
+Bead Scale Space Initial Sigma = float initialSigma
+Bead Scale Space Steps per Octave = int stepsPerOctave
+Bead Scale Space Steps = int steps
+Bead Scale Space Number of Threads = int scaleSpaceNumberOfThreads
+
+Point Descriptor Difference Threshold = double differenceThreshold
+Point Descriptor Ratio of Distance = double ratioOfDistance
+Point Descriptor Number of Neighbors = int neighbors
+Point Descriptor Use Associated Beads = boolean useAssociatedBeads    
+Point Descriptor Use RANSAC = boolean useRANSAC
+
+RANSAC Maximum Epsilon = float max_epsilon
+RANSAC Minimum Inlier Ratio = float min_inlier_ratio   
+RANSAC Number of Iterations = int numIterations
+
+Output Image Scale = int scale
+Output Image Crop Offset X = int cropOffsetX
+Output Image Crop Offset Y = int cropOffsetY
+Output Image Crop Offset Z = int cropOffsetZ
+Output Image Crop Size X = int cropSizeX
+Output Image Crop Size Y = int cropSizeY
+Output Image Crop Size Z = int cropSizeZ
+Output Image Number of Threads = int numberOfThreads
+
+Volume Injection Sigma = float sigma
+Volume Injection Cut Off Radius = int cutOffRadiusGauss
+
+Entropy Histogram Bins = int histogramBins
+Entropy Window Size X = int windowSizeX
+Entropy Window Size Y = int windowSizeY
+
+Blending Alpha = float alpha
+
+Gauss Fusion Sigma 1 = float fusionSigma1
+Gauss Fusion Sigma 2 = float fusionSigma2
 </source>
