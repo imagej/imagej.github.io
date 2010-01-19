@@ -22,7 +22,7 @@ The ''.class'' file discovery in ''.jar'' files is <u>not</u> performed if the '
 
 ''Technical note:'' the plugins are loaded via an instance of ''ij.io.PluginClassLoader'', which is available by calling ''ij.IJ.getClassLoader()''.
 
-''Fiji note:'' while the plugins' ''.jar'' files are stored in the ''plugins/'' directory, the third-party libraries are not.  They are stored in the ''jars/'' directory, so that e.g. the file ''jai_codec.jar'' (which also contains classes with underscores in their names) is not mistaken for a plugin ''.jar''.
+''Fiji note:'' while the plugins' ''.jar'' files are stored in the ''plugins/'' directory, the third-party libraries are not.  They are stored in the ''jars/'' directory, so that e.g. the file ''jai_codec.jar'' (which also contains classes with underscores in their names) is not mistaken for a plugin ''.jar''. Plugins share all third party-libraries located in the ''jars'' directory. Every plugin has all third-party libraries in its classpath.
 
 == Can plugins be reloaded? ==
 
