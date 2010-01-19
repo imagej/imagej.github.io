@@ -26,7 +26,11 @@ As the output images are typically very big (bounding box around all registered 
 
 === Processing a Time Lapse Acqusition ===
 
-To process a time lapse
+Process a time lapse acquisition is a two-pass process. In the first step the individual registration for each timepoint is computed and automatically stored, therefore input the timepoints that should be processed, check '''Register only (no fusion)''' and uncheck '''Timelapse processing'''. After the registration is performed one timepoint has to be selected as reference timepoint, typically one with a low registration error. This timepoint should be also fused once to determine the correct cropping area (see above) which will afterwards be applied to all other timepoints. 
+
+=== Downloading example dataset ===
+
+=== Using the Plugins ===
 
 There are two plugins which take those input parameters in different formats:
 
