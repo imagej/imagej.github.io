@@ -44,6 +44,10 @@ There are two plugins which take those input parameters in different formats:
 
 * '''Bead Brightness''': Define the brightness of the used beads relative to the sample.
 
+* '''Load Registration''': If the registration of the time point is carried out more than once (either to define the correct cropping area or to perform timelapse processing) the initial segmentation of the beads can be loaded to speed up processing. Note: if '''Load registration''' is checked, '''Load segmented beads''' is implicitly checked as well and '''Display registration''' will be ignored.
+
+* '''Load Registration''':
+
 == Advanced SPIM Registration ==
 
 [[Image:Advanced SPIM Registration.png|thumb|539px|Shows the Advanced SPIM Registration Dialog.]]<br/>
