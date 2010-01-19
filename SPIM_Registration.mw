@@ -36,6 +36,8 @@ There are two plugins which take those input parameters in different formats:
 
 * '''Angles to process''': Define the angles (at least 2) that should be processed (for each timepoint if applicable). You can enumerate angles (e.g. 0, 90, 180, 270), define ranges in steps (e.g. 0-270:45 which means use angle 0 to 270 in steps of 45, i.e. 0, 45, 90, 135, 180, 225, 270) or combine all of them in any combination wanted (e.g. 0, 45, 180-270:45).
 
+* '''Timelapse processing''': Checked if a timelapse processing should be performed. In this case the '''pre-registered'''
+
 == Advanced SPIM Registration ==
 
 [[Image:Advanced SPIM Registration.png|thumb|539px|Shows the Advanced SPIM Registration Dialog.]]<br/>
