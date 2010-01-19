@@ -41,17 +41,17 @@ There are two plugins which take those input parameters in different formats:
 
 * '''Reference Timepoint''': Define the reference timepoint for timelapse processing if timelapse processing above is checked.
 
-* '''Load segmented beads''': If the registration of the time point is carried out more than once (either to define the correct cropping area or to perform timelapse processing) the initial segmentation of the beads can be loaded to speed up processing. Note: if '''Load registration''' is checked, '''Load segmented beads''' is implicitly checked as well.
+* '''Load segmented beads''': If the registration of the time point is carried out more than once (to recompute the registration) the initial segmentation of the beads can be loaded to speed up processing. Note: if '''Load registration''' is checked, '''Load segmented beads''' is implicitly checked as well.
 
 * '''Bead Brightness''': Define the brightness of the used beads relative to the sample.
 
-* '''Load Registration''': If the registration of the time point is carried out more than once (either to define the correct cropping area or to perform timelapse processing) the initial segmentation of the beads can be loaded to speed up processing. Note: if '''Load registration''' is checked, '''Load segmented beads''' is implicitly checked as well and '''Display registration''' will be ignored.
+* '''Load Registration''': If the registration of the time point is carried out more than once (either to define the correct cropping area or to perform timelapse processing) the initial segmentation of the beads and the final affine matrices of the views can be loaded to speed up processing. Note: if '''Load registration''' is checked, '''Load segmented beads''' is implicitly checked as well and '''Display registration''' will be ignored.
 
 * '''Register only (no fusion)''': Checked if no fusion of the data should be performed.
 
 * '''Display registration''': This will display an interactive window visualizing the gloabal optimzation process. '''Note:''' This slows down the optimization.
 
-* '''Fusion Method''': There are three options available. <br> ''Fuse all images at once'' loads all the input images and computes the output image. This is the fastest method but it also needs significant amouts of RAM. <br> ''Fuse images sequentially'' loads one input image after the other and computes the contribution sequentially. This is significantly slower but typically uses less RAM. However, this methods needs to allocate the output image twice during the fusion process as it needs to store image content and weights separatetly. <br> ''Create independent registered images'' is a special output option where each view is transformed and written as a separate file.
+* '''Fusion Method''': There are three options available. <br> ''Fuse all images at once'' loads all the input images and computes the output image. This is the fastest method but it also needs significant amouts of RAM. <br> ''Fuse images sequentially'' loads one input image after the other and computes the contribution sequentially. This is significantly slower but typically uses less RAM. However, this methods needs to allocate the output image twice during the fusion process as it needs to store image content and weights separatetly. <br> ''Create independent registered images'' is a special output option where each view is transformed into a compatible bounding box and written as a separate file for further processing.
 
 == Advanced SPIM Registration ==
 
