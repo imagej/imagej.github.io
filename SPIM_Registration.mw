@@ -85,9 +85,14 @@ For advanced parameter tuning a configuration file can be loaded, contact the au
 
 == Code ==
 
-configuration.txt
+=== configuration.txt ===
 
 <source lang="java">
+int a = 0;
+</source>
 
+=== VariablesAssignment.txt ===
+
+<source lang="java">
 int a = 0;
 </source>
