@@ -51,7 +51,7 @@ There are two plugins which take those input parameters in different formats:
 
 * '''Display registration''': This will display an interactive window visualizing the gloabal optimzation process. '''Note:''' This slows down the optimization.
 
-* '''Fusion Method''': There are three options available. <br> ''Fuse all images at once'' loads all the input images and computes the output image. This is the fastest method but it also needs significant amouts of RAM. <br> ''Fuse images sequentially'' loads one input image after the other and computes the contribution sequentially. This is significantly slower but typically uses less RAM. However, this methods needs to allocate the output image twice during the fusion process as it needs to store image content and weights separatetly.
+* '''Fusion Method''': There are three options available. <br> ''Fuse all images at once'' loads all the input images and computes the output image. This is the fastest method but it also needs significant amouts of RAM. <br> ''Fuse images sequentially'' loads one input image after the other and computes the contribution sequentially. This is significantly slower but typically uses less RAM. However, this methods needs to allocate the output image twice during the fusion process as it needs to store image content and weights separatetly. <br> ''Create independent registered images'' is a special output option where each view is transformed and written as a separate file.
 
 == Advanced SPIM Registration ==
 
