@@ -14,6 +14,8 @@ $ ./fiji YourClass.class argument1 argument2
 
 It is often easier to start out with a Jython, JRuby or BeanShell script, as you do not have to care about strict typing, exceptions or recompiling.  Just place your script (with the correct extension -- .py, .rb or .bsh) into the plugins/ folder and execute the script.  Fiji will always execute the current version of the script, so you can edit and run the script without restarting Fiji.
 
+Of course, it is even more convenient to use the [[Script Editor]]...
+
 Once you have working code, you can turn it into a proper plugin (this is easiest with BeanShell, as its syntax is closest to Java already), adding strict typing and exception handling as needed.
 
 === find the .jar file containing a certain class ===
