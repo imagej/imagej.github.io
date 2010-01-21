@@ -23,3 +23,25 @@ Once you have working code, you can turn it into a proper plugin (this is easies
 Sometimes, the compiler complains about a class not having a certain method or interface, but you ''know'' it must contain it.  More often than not, that class exists in different versions in your classpath.  Find out with
 
 $ ./fiji bin/find-jar-for-class.py the.class.youre.looking.For
+
+= Using ImageJ effectively =
+
+ImageJ has a simple API, but it is also big, so here are a few pointers to some useful parts.
+
+== How to read a file into an ImagePlus ==
+
+ ImagePlus image = IJ.openImage(path);
+
+== How to display an exception in a window ==
+
+This is especially useful on Windows, where you usually do not see the console:
+
+ IJ.handleException(exception);
+
+This is available since ImageJ 1.43g, as well as the option to set a different exception handler using
+
+ IJ.setExceptionHandler(new IJ.ExceptionHandler() {
+    public void handle(Throwable exception) {
+       // do something
+    }
+ });
