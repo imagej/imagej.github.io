@@ -1,5 +1,9 @@
 Here is logged all modification made to the structure of this wiki (not its content), such as installation of extension and so.
 
+* 10/01/21 - JES - finally switched to the new default skin ''Viti Levu''
+
+* 10/01/21 - JES - installed newly written FijiRandomSnapshot extension to show random featured projects listed in [[Fiji:Featured_Projects]] (fixed format)
+
 * 09/12/09 - JES - successful robbery of the edit tools from the IPF wiki (suggested by Baron de Meyenhofer)
 
 * 19/10/09 - JES - disarmed KHTMLFixes.css, which was causing the funny placing of the toolboxes with Chromium and Google Chrome
