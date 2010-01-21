@@ -1,6 +1,7 @@
 __NOTOC__
 <seo title="Fiji is just ImageJ - batteries included" metak="fiji,imagej,java,image processing"/>
-[[Image:Banner-1.jpg|750px]]
+
+<fijirandomsnapshot/>
 
 [[About|Fiji]] is an image processing package based on [http://rsb.info.nih.gov/ij ImageJ].
 
@@ -23,16 +24,6 @@ Browse the [[:Category:News|news archive]].
 * [[:Category:Scripting|Scripting]]: in [[Javascript_Scripting|Javascript]], in [[JRuby_Scripting|JRuby]], in [[Jython_Scripting|Jython]], in [[Clojure_Scripting|Clojure]] (see also [[Scripting Help]]).
 * [[Developing_Fiji|Documentation]] for developers. '''[[Fiji Build System]]''' build system. [http://pacific.mpi-cbg.de/bugzilla/ Report a bug] and see [http://pacific.mpi-cbg.de/cgi-bin/bugzilla/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=&content= current bugs].
 * [[Help|Find contact information, mailing list, IRC and help]] (also about the Wiki markup syntax, or how to get an account).
-
-== Snapshots ==
-
-<gallery perrow=3>
-Image:Trakem2-snap.jpg|<small>TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each</small>
-Image:Stitching-overview.jpg|<small>Stitching of images: Automatically reconstruct tiled 2D/3D acquisitions. The example shown (6 times 512x512x86 px) took 90 seconds</small>
-Image:3D-Viewer.jpg|<small>3D Viewer: hardware-accelerated 3D visualization of image stacks as volumes, orthoslices and meshes</small>
-Image:SimpleNeuriteTracer.jpg|<small>Simple Neurite Tracer: semi-automatic tracing of neurons</small>
-Image:Tem-42-33-f.png|<small>Feature correspondences: Automatically extracted landmark correspondences using the MOPS descriptor</small>
-</gallery>
 
 == Projects ==
 
