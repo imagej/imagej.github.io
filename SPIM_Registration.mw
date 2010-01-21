@@ -79,7 +79,7 @@ After all individual timepoints are registered and the cropping area is defined 
 
 == Advanced SPIM Registration ==
 
-[[Image:Advanced SPIM Registration.png|thumb|539px|Shows the Advanced SPIM Registration Dialog.]]<br/>
+[[Image:Advanced SPIM Registration.png|thumb|359px|Shows the Advanced SPIM Registration Dialog.]]<br/>
 
 For advanced SPIM registration all available parameters can be tuned using two configuration files (configuration.txt and VariablesAssignment.txt, see below). Contact the author for further details [http://fly.mpi-cbg.de/preibisch/contact.html]. 
 
