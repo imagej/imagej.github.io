@@ -1,0 +1,13 @@
+= Introduction =
+
+In scientific image processing and image analysis, an image is something different than a regular digital photograph of a beautiful scene you shot during your latest vacation.
+
+In the context of science, digital images are samples of information, sampled at vertex points of ''n''-dimensional grids.
+
+== What are pixel values? ==
+
+Human visual perception is very good at certain tasks, such as contrast correction, detecting subtle differences in bright colors, but notoriously bad with other things, such as discerning dark colors, or classifying colors without appropriate reference.  It is therefore very important to keep in mind that the pixel values are numbers, not colors.
+
+For example, when you recorded an image using a confocal microscope, the values you get at a certain coordinate are not color values, but relate to photon counts.
+
+== Pixels are not little squares ==
