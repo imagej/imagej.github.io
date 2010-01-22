@@ -11,7 +11,13 @@ FIJI Launcher<br>
 Scripting JRuby, Phyton, BSH, Clojure<br>
 BUnwarpJ is now GPL<br>
 Orthoslices<br>
-Headless
+Headless<br>
+Command Listener<br>
+Debian/Ubuntu Package<br>
+2D/3D Registration<br>
+Google Groups Fiji-Users List<br>
+Multiple Plugins Dir<br>
+Bugreport
 
 == Started Tasks ==
 
@@ -19,10 +25,6 @@ Fiji-Wiki<br>
 MicroManager support<br>
 Socket Interface for distributed computing<br>
 ITK Interface<br>
-Command Listener<br>
-WCIF -> Wiki<br>
-Debian/Ubuntu Package<br>
-2D/3D Registration<br>
 Fiji Webstart<br>
 Generic Image Container with IJ Compatibilty Layer<br>
 Open Version of 3D Transformations
@@ -36,10 +38,7 @@ Tests<br>
 Extend plugins to support all image types<br>
 Generic Dialog - Context Help<br>
 Generic Dialog - Advanced Tab<br>
-Wiki Wishlist<br>
-Google Groups Fiji-Users List<br>
-Multiple Plugins Dir<br>
-Bugreport
+Wiki Wishlist
 
 ==See also==
 [[Wish list]]
