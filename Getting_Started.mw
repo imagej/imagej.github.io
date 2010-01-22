@@ -24,4 +24,18 @@ The status bar displays useful information at startup, and when running plugins.
 
 You can drag files from your favorite file manager and drop them on the main window; Fiji will load the corresponding files.
 
+= Image windows =
+
+Whenever you open an image, be it via ''File>Open'', Drag 'n Drop or ''File>Open Samples'', Fiji will open an image window.
+
+[[Image:Clown-snapshot.jpg|center]]
+
+The window has the file name as title, and it display some useful information above the image: the real resolution (in this case in square centimeters), the pixel resolution, the image type and the memory required by the image.
+
+If your image does not have meta-data about the real resolution, you can set the resolution explicitely with ''Image>Properties...'' or by following the [[SpatialCalibration|tutorial on spatial calibration]].
+
+= Further reading =
+
+Have a look at the list of [[:Category:Tutorials|tutorials]] on this Wiki.
+
 [[Category:Tutorials]]
