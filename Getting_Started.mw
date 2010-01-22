@@ -24,6 +24,8 @@ The status bar displays useful information at startup, and when running plugins.
 
 You can drag files from your favorite file manager and drop them on the main window; Fiji will load the corresponding files.
 
+Drag 'n Drop will also work for images displayed in your web browser, unless they are links to other web pages.  You can try with this page: clicking on an image will open a page whose image you can Drag 'n Drop into Fiji's main window.
+
 = Image windows =
 
 Whenever you open an image, be it via ''File>Open'', Drag 'n Drop or ''File>Open Samples'', Fiji will open an image window.
