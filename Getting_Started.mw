@@ -1,0 +1,27 @@
+= Installation =
+
+First, you should to install Fiji on [[Install_Fiji_on_Linux|Linux]], [[Install_Fiji_on_MacOSX|MacOSX]] or [[Install_Fiji_on_Windows|Windows]].
+
+= Fiji's main window =
+
+After starting Fiji, you will see the main window:
+
+[[Image:Fiji-main-window.jpg|center]]
+
+== The menu bar ==
+
+In the menubar, you will find most of the functionality, such as loading/saving files, processing them, and plugins will be installed into there, too.
+
+== The tool bar ==
+
+The toolbar mostly contains selection tools: the rectangle, ellipse, polygon, freehand and straight line selection tool.  By clicking on the icon, you activate the tool. Some tools offer option dialogs which you can open by double clicking the icon.  If there is a small red arrow in the lower right corner of the tool icon, you can right-click (Ctrl+click on an Apple mouse) and select an alternative selection tool (e.g. a circular brush selection tool which shares the icon with the ellipse selection tool).
+
+== The status bar ==
+
+The status bar displays useful information at startup, and when running plugins. It also shows a progress bar on the right side for long-running processes.  A single mouse click on the status bar will show the information about ImageJ and Java version as well as about memory consumption.
+
+== Drag & Drop ==
+
+You can drag files from your favorite file manager and drop them on the main window; Fiji will load the corresponding files.
+
+[[Category:Tutorials]]
