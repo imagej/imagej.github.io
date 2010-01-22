@@ -9,7 +9,9 @@
 === Advanced Fiji usage ===
 * [[:Category:Registration|Registering 3D images]]
 * [[:Category:Segmentation|Segmenting images]]
+* [[:Category:Scripting|Scripting]]: in [[Javascript_Scripting|Javascript]], in [[JRuby_Scripting|JRuby]], in [[Jython_Scripting|Jython]], in [[Clojure_Scripting|Clojure]] (see also [[Scripting Help]]).
 * [[Advanced Usage|more...]]
+
 === Developing Fiji ===
 * [[Overview of Fiji's source code]]
 * [[Downloading and Building Fiji From Source|Getting the source code]]
