@@ -12,7 +12,7 @@ The macro language allows executing programs, and capturing their output:
 
 ==Quickly see return values==
 
-You do not need to wrap calls into write() calls: if you just write something like
+You do not need to wrap macro calls into write() calls: if you just write something like
 
  getDirectory("plugins");
 
