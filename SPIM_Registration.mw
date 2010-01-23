@@ -36,8 +36,8 @@ Multi-view SPIM datasets are typically rather large, therefore it is recommended
 
 There are two plugins which take those input parameters in different formats:
 
-* '''[[SPIM Registration#Registration | SPIM Registration]]''': Allows the registration of SPIM data with a subset of necessary options presented in the graphical user interface
-* '''[[SPIM Registration#AdvancedRegistration | Advanced SPIM Registration]]''': Registration of SPIM data using all possible options via loading a configuration file
+* '''[[SPIM Registration#SPIM_Registration | SPIM Registration]]''': Allows the registration of SPIM data with a subset of necessary options presented in the graphical user interface
+* '''[[SPIM Registration#Advanced_SPIM_Registration | Advanced SPIM Registration]]''': Registration of SPIM data using all possible options via loading a configuration file
 
 === Processing a Time Lapse Acqusition ===
 
