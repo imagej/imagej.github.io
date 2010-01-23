@@ -11,3 +11,22 @@ Human visual perception is very good at certain tasks, such as contrast correcti
 For example, when you recorded an image using a confocal microscope, the values you get at a certain coordinate are not color values, but relate to photon counts.
 
 == Pixels are not little squares ==
+
+And voxels are not cubes!
+
+
+== Why (most) JPEGs should not be used in imaging ==
+JPEG stands for Joint Photographic Experts Group who were the creators of a commonly used method of lossy compression for photographic images. This format is supported by the vast majority of digital photographic cameras and image scanners because it can store images in smaller files at the expense of image quality. There are also loss-less JPEG modes, but these in general are not widely implemented and chances are that most of the images are of the lossy type.
+
+"'''Lossy compression'''" means that in the process of file size reduction certain type of image information is discarded. In the case of JPEGs, this might not be readily obvious to an observer.
+
+"'''Loss-less or non-lossy compression'''" means that the file size is reduced, but the data stored is exactly preserved as originally.
+
+JPEG lossy compression means that the stored image is not the same as the original, and therefore is '''not suitable''' for doing any serious imaging.
+This JPEG compression throws away information that the eye cannot detect easily, resulting in image artifacts. Any attempts to process or quantify image data will be affected in uncontrollable ways by the presence of these artifacts.
+
+While most digital cameras save in JPEG format by default, it is very likely that they support some non-lossy format (such as TIFF or a custom RAW format). Use those formats instead.
+
+'''TIFF''' or '''PNG''' formats available in ImageJ/Fiji are non-lossy formats. TIFF preserves any calibrations applied to your images, but images are not compressed. PNG files are smaller as non-lossy compression is applied but they do not store calibration data.
+
+Once an image has been saved as compressed JPEG there is no way of reverting to the original, therefore an old JPEG-compressed image saved again as TIFF or PNG still contains all the original JPEG compression artifacts.
