@@ -28,6 +28,10 @@ As the output images are typically very big (bounding box around all registered 
 
 There is a 7-angle SPIM dataset of ''Drosophila'' available [http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip here]. The cropping parameters pre-set in the plugin fit this dataset, only the appropriate folder has to be defined.
 
+=== System requirements ===
+
+Multi-view SPIM datasets are typically rather large, therefore it is recommended to use the registration plugin on a computer with a lot of RAM. The minimal requirement for the example dataset it is necessary to have at least 4Gb of memory however we recommend 8Gb system. You may need to increase the Fiji memory limit by going to Edit->Options->Memory & Threads. 
+
 === Using the Plugins ===
 
 There are two plugins which take those input parameters in different formats:
