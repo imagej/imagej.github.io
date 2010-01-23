@@ -16,16 +16,16 @@ And voxels are not cubes!
 
 
 == Why (lossy) JPEGs should not be used in imaging ==
-JPEG stands for Joint Photographic Experts Group who were the creators of a commonly used method of lossy compression for photographic images. This format is supported by the vast majority of digital photographic cameras and image scanners because it can store images in relatively small files at the expense of image quality. There are also loss-less JPEG modes, but these in general are not widely implemented and chances are that most of the images are of the lossy type.
+JPEG stands for Joint Photographic Experts Group who were the creators of a commonly used method of lossy compression for photographic images. This format is commonly used in web pages and supported by the vast majority of digital photographic cameras and image scanners because it can store images in relatively small files at the expense of image quality. There are also loss-less JPEG modes, but these in general are not widely implemented and chances are that most of the images are of the lossy type.
 
 "'''Lossy compression'''" means that in the process of file size reduction certain amount of image information is discarded. In the case of JPEGs, this might not be readily obvious to an observer, but it will be important for image processing purposes.
 
 "'''Loss-less or non-lossy compression'''" means that the file size is reduced, but the data stored is exactly the same as in the original.
 
-In JPEG lossy compression, therefore, the stored image is not the same as the original, and hence '''not suitable''' for doing serious imaging. While JPEG compression throws away information that the eye cannot detect easily this results in image artifacts (variable "blockiness" of the image in groups of 8x8 pixels). Any attempts to process or quantify image data will be affected in uncontrollable ways by the presence of these artifacts. This is particularly obvious in the hue channel of JPEG compressed colour images when converted to HSB colour space.
+In JPEG lossy compression, therefore, the stored image is not the same as the original, and hence '''not suitable''' for doing serious imaging work. While JPEG compression throws away information that the eye cannot detect easily, this results in considerable image artifacts (variable "blockiness" of the image in groups of 8x8 pixels). Any attempts to process or quantify those images will be affected in uncontrollable ways by the presence of the artifacts. This is particularly obvious in the hue channel of JPEG compressed colour images when converted to HSB colour space.
 
-While most digital cameras save in JPEG format by default, it is very likely that they support some non-lossy format (such as TIFF or a custom RAW format). Use those formats instead.
-A format called JPEG2000 supported by various slide scanners and used in "virtual slide" products was created to improve image quality and compression rates, however lossy as well as non-lossy versions the JPEG2000 format exist.
+While most digital cameras save in JPEG format by default, it is very likely that they also support some non-lossy format (such as TIFF or a custom RAW format). Use those formats instead.
+A format called JPEG2000 supported by various slide scanners and used in "virtual slide" products was created to improve image quality and compression rates, however both lossy and non-lossy versions the JPEG2000 format exist. Use only the non-lossy formats.
 
 '''TIFF''' or '''PNG''' formats available in ImageJ/Fiji are non-lossy formats. TIFF preserves any calibrations applied to your images, but images are not compressed. PNG files are smaller as non-lossy compression is applied but they do not store calibration data.
 
