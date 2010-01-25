@@ -31,3 +31,11 @@ Pressing the Return key on any image will bring the main window to the foregroun
 ==Close all images (without being asked whether to save them)==
 
 ''Plugins>Utilities>Close All Without Saving''
+
+== Set the foreground color ==
+
+Double-click on the pipette, or hit Ctrl+Shift+K (on Macs, it is Cmd+Shift+K), or select the menu item ''Image>Color>Color Picker..."
+
+== Set the line width ==
+
+Line selections can have a width larger than one, which also has an effect on line profiles.  You can set it by double clicking on the line selection tool, or by calling ''Edit>Options>Line Width...''
