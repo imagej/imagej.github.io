@@ -94,6 +94,18 @@ When writing plugins, the goal is often to provide the result to some users in t
 
 Add a ''Make Jar'' command and a new menu to the Script Editor, and maybe a "Make Jar with Source" command, too.
 
+== Make Script Editor rename a Java class automatically on ''Save As...'' ==
+
+A public Java class must be compiled from a source file reflecting the class name, so it makes sense to rename the Java class when the file is saved under a new name.  Teach the Script Editor to do that.
+
+== Use the Script Editor code base for ''File>New>Fiji  Tutorial'' ==
+
+The venerable AWT dialog displays problems with certain X11 drivers.  Therefore, let's use the Script Editor code base instead.
+
+In the same run, move the menu items to a more developer-specific submenu, say, ''File>New>Fiji Development>Fiji Tutorial''.
+
+While at it, add ''Fiji News'' and ''Fiji Snapshot'' options, as they also need to upload to the Wiki.
+
 = Fiji development environment =
 
 == GUI Testing framework ==
