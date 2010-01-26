@@ -4,11 +4,11 @@ Here are the steps :
 
 1. initialize a bare repository on becherovka
 
-<source lang="bash">git --git-dir=my-new-repo.git init --bare</source>
+<source lang="bash">git --git-dir=/path/my-new-repo.git init --bare</source>
 
 2. Register that repository as a remote repository on your laptop by issuing this command inside the repository
 
-<source lang="bash">git remote add origin becherovka:my-new-repo.git</source>
+<source lang="bash">git remote add origin becherovka:/path/my-new-repo.git</source>
 
 (Note: If it fails, you already have an "origin" and need to use a different name.)
 
@@ -18,7 +18,7 @@ Here are the steps :
 
 4. Now the final, extremely satisfactory step, clone the repository to your work computer 
 
-<source lang="bash">git clone becherovka:my-new-repo.git</source>
+<source lang="bash">git clone becherovka:/path/my-new-repo.git</source>
 
 (Note: git clone creates a directory my-new-repo.git, so do it from the root of your git_papers folder.)
 
