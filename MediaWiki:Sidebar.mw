@@ -1,21 +1,22 @@
 * navigation
 ** mainpage|mainpage
 ** News|News
-** Downloads|Downloads
-** helppage|Contact and Help
 ** Contributors|Contributors
 ** About|About Fiji
 
 * content
+** Downloads|Downloads
+** Documentation|Documentation
 ** Fiji's Menu|Fiji's Menu
 ** Category:Plugins|Plugins
 ** Category:Scripting|Scripting
 ** Category:Tutorials|Tutorials 
 ** Developing Fiji|Developing Fiji
+** Publications|Publications
+** helppage|Contact and Help
 
 * highlights
 ** Category:Registration|Registration
 ** Category:Stitching|Stitching
 ** Category:Segmentation|Segmentation
 ** Special:Categories|All categories
-** Publications|Publications
