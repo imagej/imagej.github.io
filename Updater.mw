@@ -9,6 +9,22 @@
 | status                 = beta
 }}
 
-The Fiji Updater is a mechanism to update individual packages in Fiji.  For technical reasons, a restart of Fiji is required before the changes take effect.
+The Fiji Updater is a mechanism to update individual packages in Fiji.  It is automatically run when all the following conditions are met:
+
+* Fiji was just started
+* Fiji's files can be updated by the current user
+* There is a network connection
+
+If there were updates since the Updater was run the last time, Fiji will ask whether you want to run the Updater now or later:
+
+[[Image:Up-to-date-check.png]]
+
+In case you do not want to run the Updater upon startup, you can choose ''Never''; this setting can be adjusted in ''Edit>Options>Configure Fiji Updater'', too.
+
+The Updater has two modes, the ''Easy Mode'' and the ''Advanced Mode''.  In the former mode, you will only see the files that can be updated.  The easy mode looks like this:
+
+[[Image:Updater-easy-mode.png]]
+
+For technical reasons, a restart of Fiji is required before the changes take effect. You can read about technical details [[Uploading plugins|here]].
 
 [[Category:Plugins]]
