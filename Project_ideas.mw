@@ -26,6 +26,17 @@ In Fiji, you can adjust the dynamic range of an image by calling ''Image>Adjust>
 
 = Image processing plugins =
 
+== Implementing algorithms for imglib ==
+
+The new imglib supports dimension-, storage- and data type independent image processing. This library has some algorithms built-in already but there is a strong need to generically implement more general image processing algorithms, storage strategies and data types such as:
+
+* Interpolation (Cubic, Sinc, Spline, ...)
+* Histograms
+* Entropy Filter, Average Filter, Percentile(Min, Median, Max) Filter, ...
+* Memory Management for partial image loading
+* Color Spaces and Color Space Conversions
+* Generic Import/Export
+
 == Colorizing algorithms ==
 
 There are a number of publications about turning greyscale images into color images.  This project is about implementing as many of them as possible.
