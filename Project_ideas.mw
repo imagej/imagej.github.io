@@ -106,6 +106,28 @@ In the same run, move the menu items to a more developer-specific submenu, say, 
 
 While at it, add ''Fiji News'' and ''Fiji Snapshot'' options, as they also need to upload to the Wiki.
 
+== Fix Script Editor's ''Search'' functionality ==
+
+It is nice that the Search remembers the latest search term, but it forgets the default button.
+
+Further, when the search wraps around, the current cursor position is lost.  Fix that.
+
+== Add a ''Bookmark'' function to the Script Editor ==
+
+Often, it would be very convenient to remember the current cursor position to come back to, after looking around in other parts of the file.  Maybe Ctrl+B (together with a menu entry), or Ctrl+<digit> are good ways to implement the user interface.  (The code should be similar to the ''Goto Line...'' function.
+
+== Add tabbed editing to the Script Editor ==
+
+For ease of implementation, the current version of the script editor only supports editing one file at a time (the Summer of Code seems to have been too remove that limitation).  One possibility is to allow tabbed editing, another is to connect all Script Editor instances so that they know what is opened where (this would also help in the case the user is editing the same file <u>twice</u>, which is not handled gracefully at the moment).
+
+== Add a function ''Remove unused imports'' to the Script Editor ==
+
+The Script Editor knows a bit about the syntax of the edited file, thanks to RSyntaxTextArea.  So it should be quite possible to add a few functions exploiting that knowledge, e.g. to make wildcard imports explicit, or to remove unused imports.
+
+== Script Editor: Show backtraces in the status window and make them clickable ==
+
+When there is a compiler error, or an exception at runtime, it would be better to show the backtrace in the Script Editor window.  Further, it would be very convenient to jump to the appropriate code line when clicking on a line of the backtrace (this most likely depends on [[#Add_tabbed_editing_to_the_Script_Editor|tabbed editing]]).
+
 = Fiji development environment =
 
 == GUI Testing framework ==
