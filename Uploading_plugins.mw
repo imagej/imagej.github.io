@@ -1,4 +1,22 @@
-== Uploading plugins ==
+== The graphical way (recommended) ==
+
+You can use the [[Update Fiji|Fiji Updater]] to upload new plugins (or new versions thereof). First start ''Help>Update Fiji''. It will tell you that there are ''locally modified files'':
+
+[[Image:Updater-locally-modified.png|600px|center]]
+
+Please make sure that there are <u>no</u> updateable files, lest you overwrite new versions with old ones. If that is the case, the ''Updater'' will automatically switch to the ''Advanced Mode'' and show you the ''locally modified files''. By clicking on the ''Locally modified'', you can choose to upload one or more files:
+
+[[Image:Updater-select-upload.png|600px|center]]
+
+'''Note:''' if you want to upload a new file, i.e. a file Fiji does not know anything about yet, you have to switch to ''Advanced Mode'' yourself and select the view option ''View non-Fiji plugins only''.
+
+Please make sure that the information in the ''Details'' is correct; you can edit it by clicking into the text and modifying it in-place.
+
+Once everything is ready for upload, just click the button ''Upload to Server''.
+
+'''Note:''' you will need to have an account on [[Pacific]] which is in the group ''updaters'', and you will only be offered the upload option by the Updater if you work from a working directory with source files.
+
+== Using the command line ==
 
 If you have an ssh account on pacific that is in the ''uploaders'' group, you can upload plugins.  To do this, run
 
