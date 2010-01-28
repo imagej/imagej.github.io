@@ -1,0 +1,9 @@
+= Introduction =
+
+In ImageJ, images can have a number of types (''8-bit gray'', ''8-bit with lookup table'', ''16-bit'', ''32-bit floating point'', ''RGB packed into a 32-bit int''), and up to 5 dimensions. Internally, every image is stored as an array of ''channels * slices * frames'' instances of the class ''ImageProcessor'', which in turn stores the pixel values as arrays of ''width * height'' values which have the native types ''byte'', ''short'', etc
+
+When implementing an image processing algorithm, typically this has to be done with every native type separately, for performance reasons, and for the same reason, there is a lot of code repeated between different plugins.
+
+In C++, this problem is solved by using ''templates'', e.g.in the [http://www.itk.org/ ITK library]. 
+
+The corresponding technique in Java is called ''generics'' and is available since Java version 1.5. Due to technical issues, Java cannot optimize specializations of generics fully at compile-time, and generics have other limitations, such as not being able to use basic types (which are used for ImageJ's pixel values) as parameters.
