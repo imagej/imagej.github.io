@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | name                   = Update Fiji
 | software               = Fiji
-| author                 = Johannes Schindelin
+| author                 = Johannes Schindelin, Yap Chin Kiet (Google Summer of Code 2009)
 | maintainer             = Johannes Schindelin
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Fiji_Updater;hb=HEAD gitweb]
 | released               = 10 Oct 2008
