@@ -4,7 +4,7 @@ In ImageJ, images can have a number of types (''8-bit gray'', ''8-bit with looku
 
 When implementing an image processing algorithm, typically this has to be done with every native type separately, for performance reasons, and for the same reason, there is a lot of code repeated between different plugins.
 
-In C++, this problem is solved by using ''templates'', e.g.in the [http://www.itk.org/ ITK library]. The idea is to implement the algorithm generically, i.e. independent of data type.
+In C++, this problem is solved by using ''templates'', e.g. in the [http://www.itk.org/ ITK library]. The idea is to implement the algorithm generically, i.e. independent of data type.
 
 The corresponding technique in Java is called ''generics'' and is available since Java version 1.5. Due to technical issues, Java cannot optimize specializations of generics fully at compile-time, and generics have other limitations, such as not being able to use basic types (which are used for ImageJ's pixel values) as parameters.
 
@@ -24,6 +24,7 @@ In addition to adapters wrapping ImageJ's ImagePlus, ''imglib'' currently suppor
 
 Let's look at a simple function multiplying every pixel value with a given constant. In plain ImageJ, such a function looks like this:
 
+<source lang="java">
  final static public void multiply( final ImagePlus input, final double factor )
  {
          final int nPixels = input.getWidth() * input.getHeight();
@@ -64,9 +65,11 @@ Let's look at a simple function multiplying every pixel value with a given const
  final static int doubleTo8Bit( final double value ) {
          return Math.max( 0, Math.min( 255, (int) value ) );
  }
+</source>
 
 Using  ''imglib'':
 
+<source lang="java">
  public <T extends NumericType<T>> void multiplyImageByValue( Image<T> input,  T factor )
  {
         final Cursor<T> cursor = input.createCursor();
@@ -76,6 +79,7 @@ Using  ''imglib'':
                  cursor.fwd();
                  cursor.getType().mul( factor );
          }
- }
+}
+</source>
 
 The performance is better in the latter version, as there is no need for two type conversions in every iteration: the Type instance implements the native operation ''mul()'', and since the implementation is labeled using the Java keyword ''final'', it will be inlined and optimized pretty quickly by Java's Just-In-Time compiler.
