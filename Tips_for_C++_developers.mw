@@ -39,3 +39,25 @@ In Java, threads are really easy. And portable. But that does not mean that codi
 However, the most notorious bugs are the ones in multi-threaded code, as they are really, really difficult to debug. It is not uncommon that a multi-threading bug goes away when debug messages are introduced into the code.
 
 Of course, the advantage of multi-threaded programs is that multi-core systems will benefit immediately from that code.
+
+== Not taking advantage of Java's syntax ==
+
+Many C++ programmers think of Java as a C++ dialect, forgetting that there are convenient syntax constructs. For example, you will often find code such as
+
+ for (int i = 0; i < array.length; i++) {
+         String string = array[i];
+         // do something
+ }
+
+or even worse:
+
+ Iterator<String> iter = list.iterator();
+ while (iter.hasNext()) {
+        String string = iter.next();
+        // do something
+ }
+
+rather than using the Java syntax (available since Java 1.5):
+
+ for (String string : array)
+         // do something
