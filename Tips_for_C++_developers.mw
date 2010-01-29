@@ -72,3 +72,9 @@ rather than using the Java syntax (available since Java 1.5):
 
  for (String string : array)
          // do something
+
+== Not taking advantage of Java's standard libraries ==
+
+Coming from C++, developers often tend to implement everything themselves, even if the algorithm was already implemented. For example, ''java.util.Collections'' and ''java.util.Arrays'' contain methods to sort, shuffle, filter or binary search collections and arrays respectively.
+
+Likewise, Java comes with useful classes implementing neat things such as priority queues (since Java 1.5).
