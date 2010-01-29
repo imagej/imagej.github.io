@@ -37,6 +37,14 @@ In the same spirit, it is not possible to realloc() memory. If you need a larger
 
 Whenever you pass an object to a method, Java does so by reference. That makes it harder to write inefficient code copying large amounts of memory back and forth, but it is something to watch out for when you are used to C++: when passing an object to a method which modifies the members, the caller will see the changes.
 
+== Objects are not instantiated by default ==
+
+When declaring a variable like this:
+
+ ImagePlus image;
+
+Java does not initialize the variable automatically. Remember, objects are passed by reference, so ''image'' is just an uninitialized reference to an ''ImagePlus'' at this stage.
+
 == Java knows of no destructors ==
 
 While it is convenient that Java does automatic garbage collection, it is easy to forget that every reference to an object will prevent it from being released. Even worse, sometimes the garbage collection does not kick in in time, so you have to call ''System.gc();'' explicitely, possibly multiple times.
