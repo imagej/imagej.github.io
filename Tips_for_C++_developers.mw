@@ -29,3 +29,13 @@ Whenever you pass an object to a method, Java does so by reference. That makes i
 == Java knows of no destructors ==
 
 While it is convenient that Java does automatic garbage collection, it is easy to forget that every reference to an object will prevent it from being released. Even worse, sometimes the garbage collection does not kick in in time, so you have to call ''System.gc();'' explicitely, possibly multiple times.
+
+== Java is inherently multithreaded ==
+
+When coming from C++, one often tries to avoid multi-threading, as it is painful to use threads in C++ in a portable manner.
+
+In Java, threads are really easy. And portable. But that does not mean that coding multi-threaded programs is easy. Humans are just too used to a linear time-course to think of all the possible side-effects of multi-threaded code, or of the need to make code blocks ''synchronized'' (i.e. ensure that certain code blocks are not executed simultaneously in multiple threads).
+
+However, the most notorious bugs are the ones in multi-threaded code, as they are really, really difficult to debug. It is not uncommon that a multi-threading bug goes away when debug messages are introduced into the code.
+
+Of course, the advantage of multi-threaded programs is that multi-core systems will benefit immediately from that code.
