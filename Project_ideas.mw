@@ -163,7 +163,7 @@ Dimiter Prodanov has done something like this, but it would be nice to have a se
 
 ImageFlow provides a graphical way to construct macros.  Every action is represented by a node which the user can connect with lines to define a workflow.
 
-ImageFlow has its own [http://github.com/Dahie/imageflow Git repository] ([http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=imageflow.git;a=summary our mirror).
+ImageFlow has its own [http://github.com/Dahie/imageflow Git repository] ([http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=imageflow.git;a=summary our mirror]).
 
 The following issues need to be resolved:
 
