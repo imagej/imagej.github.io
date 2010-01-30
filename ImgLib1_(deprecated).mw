@@ -10,7 +10,7 @@ The corresponding technique in Java is called ''generics'' and is available sinc
 
 In ''imglib'', these issues have been addressed, in a way compatible with Java.
 
-= Basic architecture =
+= Core ideas of the architecture =
 
 Since basic types cannot be passed as parameters to Java generics, and operators cannot be overloaded, all values must be accessed via ''Type'' instances. ''Type'' is the base interface for all data types handled by imglib. If you need a new data type to be handled, just make a new class implementing the ''Type'' interface.
 
