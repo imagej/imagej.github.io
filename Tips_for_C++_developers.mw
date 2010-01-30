@@ -86,3 +86,11 @@ rather than using the Java syntax (available since Java 1.5):
 Coming from C++, developers often tend to implement everything themselves, even if the algorithm was already implemented. For example, ''java.util.Collections'' and ''java.util.Arrays'' contain methods to sort, shuffle, filter or binary search collections and arrays respectively.
 
 Likewise, Java comes with useful classes implementing neat things such as priority queues (since Java 1.5).
+
+= Conventions =
+
+== Class and function names ==
+
+In C++, the common style is to use underscores for both class and function names, e.g. ''gaussian_blur'' (except if you are developing on Windows, where the class names are frequently prefixed by a capital ''C'' and CamelCased).
+
+In Java, the convention is to use CamelCase instead of underscores, and to start class names with a capital letter, but fields and method names lowercase, e.g. ''ImagePlus'' and ''newImage()''.
