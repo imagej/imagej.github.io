@@ -95,11 +95,7 @@ Similar to the Macro Recorder but producing Javascript instead.  There is a Java
 
 The Script Editor provides a fine way to script small plugins that do some simple tasks.  If you know how.
 
-Better to start from a nice template, say, iterating over all pixels in the current image, or over all images in a user-specified directory.  To make adding new templates easy, they should be simple text files in ''Script_Editor.jar'' (the path describing where they should go in the menu).
-
-The goal of this project is to provide a few templates (categorized by language) for common tasks.
-
-
+Provide a good number of templates so that the user does not have to start from scratch. A good template will also include rather more documentation than less, so that ideally the user does not have to look up the appropriate API calls, but just modifies the well-documented code.
 
 == Make Script Editor rename a Java class automatically on ''Save As...'' ==
 
