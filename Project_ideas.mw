@@ -99,11 +99,7 @@ Better to start from a nice template, say, iterating over all pixels in the curr
 
 The goal of this project is to provide a few templates (categorized by language) for common tasks.
 
-== Adding a ''Make Jar'' command the Script Editor ==
 
-When writing plugins, the goal is often to provide the result to some users in the end.  ImageJA already has the ''Plugins>Install Plugin...'' command, but that requires a ''.class'', ''.jar'' or a script file.  The easiest way to handle plugins is as a single ''.jar'' file which can be sent via email.
-
-Add a ''Make Jar'' command and a new menu to the Script Editor, and maybe a "Make Jar with Source" command, too.
 
 == Make Script Editor rename a Java class automatically on ''Save As...'' ==
 
