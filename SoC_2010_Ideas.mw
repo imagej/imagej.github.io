@@ -54,7 +54,7 @@ Recently, a new class of segmentation algorithms has been emerging: segmentation
 
 '''Goal:''' Implement a number of segmentation algorithms based on machine learning.<br />
 '''Language:''' Java.<br />
-'''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)<br />
+'''Mentor:''' Johannes Schindelin (johannes.schindelin AT gmx.de)<br />
 
 == Add JMathLib (Matlab clone) support ==
 
@@ -74,7 +74,22 @@ The project would consist of
 
 '''Goal:''' Integrate JMathLib as a new scripting language.<br />
 '''Language:''' Java.<br />
-'''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)<br />
+'''Mentor:''' Johannes Schindelin (johannes.schindelin AT gmx.de)<br />
+
+== Implementing algorithms for imglib ==
+
+The new imglib supports dimension-, storage- and data type independent image processing. This library has some algorithms built-in already but there is a strong need to generically implement more general image processing algorithms, storage strategies and data types such as:
+
+* Interpolation (Cubic, Sinc, Spline, ...)
+* Histograms
+* Entropy Filter, Average Filter, Percentile(Min, Median, Max) Filter, ...
+* Memory Management for partial image loading
+* Color Spaces and Color Space Conversions
+* Generic Import/Export
+
+'''Goal:''' Implement as many image processing algorithms using the imglib as possible<br />
+'''Language:''' Java.<br />
+'''Mentor:''' Stephan Preibisch (preibisch AT mpi-cbg.de) or Johannes Schindelin (johannes.schindelin AT gmx.de)<br />
 
 = Other Resources =
 * [[SoC 2010 Application]]
