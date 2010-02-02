@@ -109,11 +109,7 @@ In the same run, move the menu items to a more developer-specific submenu, say, 
 
 While at it, add ''Fiji News'' and ''Fiji Snapshot'' options, as they also need to upload to the Wiki.
 
-== Fix Script Editor's ''Search'' functionality ==
 
-It is nice that the Search remembers the latest search term, but it forgets the default button.
-
-Further, when the search wraps around, the current cursor position is lost.  Fix that.
 
 == Add a ''Bookmark'' function to the Script Editor ==
 
