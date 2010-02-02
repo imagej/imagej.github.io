@@ -232,6 +232,8 @@ def run():
 run()
 </source>
 
+To create a script with the above code, copy paste it into a file with an underscore in its name and extension ".py". Then place it in Fiji's plugins folder or subfolder thereof. Finally, restart Fiji or just call "Plugins - Scripting - Refresh Jython Scripts".
+
 = See also =
 
 == TrakEM2 tutorials ==
