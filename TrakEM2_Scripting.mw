@@ -234,6 +234,78 @@ run()
 
 To create a script with the above code, copy paste it into a file with an underscore in its name and extension ".py". Then place it in Fiji's plugins folder or subfolder thereof. Finally, restart Fiji or just call "Plugins - Scripting - Refresh Jython Scripts".
 
+= Measure =
+
+=== Measure the minimal distance from each ball to a surface defined by a profile list ===
+
+Suppose for example that, using a [http://t2.ini.uzh.ch/trakem2_manual.html#balls Ball object], you have clicked on each vesicle of a synaptic terminal. And that, using a [http://t2.ini.uzh.ch/trakem2_manual.html#profiles profile list], you have traced the surface area of a synapse.
+
+Using the following script, we generate a surface from the profile list, and then measure, for each synaptic vesicle, its minimal distance to the synaptic surface.
+
+The results are finally listed in a results table, from which column-ordered data may be exported for further processing in a spreadsheet.
+
+<source lang="python">
+# Albert Cardona 20100201
+# Select a Ball and a Profile, and list the minimal distances of each ball
+# to the nearest vertex of the mesh created by the profile list to which
+# the profile belongs.
+# 
+# As asked by Graham Knott and Natalya, from EPFL
+
+
+from ini.trakem2.display import Display, Ball, Profile
+from ini.trakem2.utils import M, Utils
+from ij import IJ
+from ij.measure import ResultsTable
+from ij.gui import GenericDialog
+from java.util import HashSet
+
+
+def run():
+	sel = Display.getSelected()
+	# Check conditions: one Ball and one Profile only must be selected
+	if sel is None or sel.isEmpty():
+		IJ.log("Please select a Ball and a Profile!")
+		return
+	c = [ob.getClass() for ob in sel]
+	if Ball in c and Profile in c and 2 == sel.size():
+		pass
+	else:
+		IJ.log("Please select just one Ball and one Profile")
+		return
+	obs = {}
+	for ob in sel:
+		obs[ob.getClass()] = ob
+	balls = obs[Ball].getWorldBalls()
+	profile = obs[Profile]
+	profiles = []
+	# Gather triangles from profile mesh (into a HashSet to remove the many duplicate vertices)
+	verts = HashSet(Profile.generateTriangles(profile.project.findProjectThing(profile).getParent(), 1))
+	# Prepare a results table
+	rt = ResultsTable()
+	rt.setPrecision(2)
+	rt.setHeading(0, "Index")
+	rt.setHeading(1, "Min distance to surface")
+	# Fill data rows
+	unit = profile.layer.parent.calibration.unit
+	i = 0
+	count = len(balls)
+	for i in range(count):
+		rt.incrementCounter();
+		rt.addLabel("units", unit)
+		rt.addValue(0, i)
+		b = balls[i]
+		# For each ball, measure the minimal distance to any of the triangle vertices.
+		rt.addValue(1, Math.sqrt(reduce(Math.min, [M.distanceSq(b[0], b[1], b[2], vert.x, vert.y, vert.z) for vert in verts])))
+		Utils.showProgress(float(i)/count)
+	rt.show("Distances from ball to profile list surface")
+	# Reset progress bar
+	Utils.showProgress(1)
+
+run()
+</source>
+
+
 = See also =
 
 == TrakEM2 tutorials ==
