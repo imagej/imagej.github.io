@@ -65,6 +65,8 @@ Possible tools to do so would be airbrushes (allowing for transparent colors) or
 
 == Fractal interpolation resizing (from the GIMP GSoC entry) ==
 
+Unfortunately, GIMP's Wiki is not available (and seems to have been down for ages), but [http://general-cathexis.com/interpolation/index.html here] is a nice comparison of upsampling algorithms.
+
 = Scripting =
 
 == Add JMathLib (Matlab clone) support ==
