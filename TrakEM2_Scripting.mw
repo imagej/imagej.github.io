@@ -14,6 +14,7 @@ Both Layer and LayerSet are in a way containers. The LayerSet contains as well a
 
 See a [http://www.ini.uzh.ch/~acardona/img/trakem2_datastructure_diagram.svg TrakEM2 class diagram] for a complete list.
 
+See also the complete [http://www.ini.uzh.ch/~acardona/api TrakEM2 API documentation]
 
 === Get the instance of a selected image ===
 
