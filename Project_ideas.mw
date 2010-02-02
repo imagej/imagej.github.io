@@ -119,9 +119,7 @@ Often, it would be very convenient to remember the current cursor position to co
 
 For ease of implementation, the current version of the script editor only supports editing one file at a time (the Summer of Code seems to have been too remove that limitation).  One possibility is to allow tabbed editing, another is to connect all Script Editor instances so that they know what is opened where (this would also help in the case the user is editing the same file <u>twice</u>, which is not handled gracefully at the moment).
 
-== Add a function ''Remove unused imports'' to the Script Editor ==
 
-The Script Editor knows a bit about the syntax of the edited file, thanks to RSyntaxTextArea.  So it should be quite possible to add a few functions exploiting that knowledge, e.g. to make wildcard imports explicit, or to remove unused imports.
 
 == Script Editor: Show backtraces in the status window and make them clickable ==
 
