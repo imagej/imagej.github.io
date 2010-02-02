@@ -163,6 +163,75 @@ patch.project.loader.addedPatchFrom(filepath, patch)
 front.layer.add(patch)
 </source>
 
+
+=== Copying images between two open projects ===
+
+The script checks that at least two displays are open, and that they belong to two different projects. Then offers a dialog to choose the direction of copying, and finally copies all images, or all visible or selected images, from one project to the other:
+
+<source lang="python">
+# Albert Cardona 20100201
+# Script to copy all images, all visible images, or all selected images
+# from a source layer to a target layer.
+# To run the script, put it under Fiji plugins folder or subfolder and call "Plugins - Scripting - Update Fiji"
+# and make sure you have at least two projects open, each with at least one display open.
+# 
+# Written for Natalya at Graham Knott's group, EPFL
+
+from ini.trakem2.display import *
+from ij.gui import GenericDialog
+from ij import IJ
+from array import array
+
+
+def run():
+	# Check precondition: at least some displays open
+	displays = Display.getDisplays()
+	if displays.isEmpty():
+		IJ.showMessage("Could not find any TrakEM2 displays open!")
+		return
+	# Check precondition: at least two displays from two different projects 
+	projects = {}
+	for display in displays:
+		projects[display.project] = display
+	if len(projects) < 2:
+		IJ.showMessage("You need at least two projects with at least one display open for each!")
+		return
+	# Show choices
+	gd = GenericDialog("Copying images between projects")
+	titles = array(String, [display.getFrame().getTitle() for display in displays])
+	gd.addChoice("Source layer:", titles, titles[0])
+	gd.addChoice("Target layer:", titles, titles[1])
+	choices = ["All images", "All visible images", "All selected images"]
+	gd.addChoice("Copy:", choices, choices[0])
+	gd.showDialog()
+	if gd.wasCanceled():
+		return
+	source = displays[gd.getNextChoiceIndex()]
+	target = displays[gd.getNextChoiceIndex()]
+	if source == target:
+		IJ.showMessage("You must choose different source and target layers!")
+		return
+	copy_mode = gd.getNextChoiceIndex()
+	patches = None
+	if 0 == copy_mode:
+		patches = source.getLayer().getDisplayables(Patch)
+	elif 1 == copy_mode:
+		patches = source.getLayer().getDisplayables(Patch, True)
+	else:
+		patches = source.getSelection().getSelected(Patch)
+	if 0 == len(patches):
+		IJ.showMessage("No images to copy with option: " + choices[copy_mode])
+		return
+	# Copy images
+	for patch in patches:
+		p = patch.clone(target.project, False)
+		target.getLayer().add(p)
+	target.getLayerSet().enlargeToFit(patches)
+	IJ.showStatus("Done copying images between layers.")
+
+run()
+</source>
+
 = See also =
 
 == TrakEM2 tutorials ==
