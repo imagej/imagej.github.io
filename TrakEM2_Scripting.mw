@@ -240,6 +240,11 @@ To create a script with the above code, copy paste it into a file with an unders
 
 Suppose for example that, using a [http://t2.ini.uzh.ch/trakem2_manual.html#balls Ball object], you have clicked on each vesicle of a synaptic terminal. And that, using a [http://t2.ini.uzh.ch/trakem2_manual.html#profiles profile list], you have traced the surface area of a synapse.
 
+{|
+|style="vertical-align:top" |[[Image:Synaptic-surface-and-vesicles.jpg|thumb|left|313|3D view of a synaptic surface and its vesicles]]
+|style="vertical-align:top" |[[Image:Synaptic-surface-and-vesicles-measurements.png|thumb|left|323|Synaptic vesicle measurements of the minimal distance from each vesicle to the synaptic surface]]
+|}
+
 Using the following script, we generate a surface from the profile list, and then measure, for each synaptic vesicle, its minimal distance to the synaptic surface.
 
 The results are finally listed in a results table, from which column-ordered data may be exported for further processing in a spreadsheet.
@@ -304,7 +309,6 @@ def run():
 
 run()
 </source>
-
 
 = See also =
 
