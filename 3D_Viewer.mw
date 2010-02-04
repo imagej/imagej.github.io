@@ -1,20 +1,34 @@
-* TrakEM2|TrakEM2-snapshot.jpg
-[[TrakEM2]] is an ImageJ plugin for morphological data mining, three-dimensional modeling and image stitching, registration, editing and annotation.
+{{Infobox Plugin
+| name                   = 3D Viewer
+| software               = ImageJ
+| author                 = Benjamin Schmid, Albert Cardona, Johannes Schindelin
+| maintainer             = Benjamin Schmid
+| filename               = [http://132.187.25.13/home/imagej/ImageJ_3D_Viewer.jar]
+| source                 = [http://132.187.25.13/home/imagej/ImageJ_3D_Viewer.jar]
+| released               = April 2007
+| latest version         = August 2008
+| status                 = beta
+| category               = [[:Category:Plugins|Plugins]]
+| website                = http://www.neurofly.de
+}}
 
-* 3D Viewer|3D-Viewer-snapshot.jpg
-The hardware-accelerated [[3D Viewer]] uses Java3D to display surfaces, orthogonal slices and to perform volume rendering.
 
-* Simple Neurite Tracer|SimpleNeuriteTracer-snapshot.jpg
-The [[Simple Neurite Tracer]] allows you to segment linear structures in 3D images by marking both ends in 3D and letting the tracer work out the rest.
+== Purpose ==
 
-* Stitching|Stitching-snapshot.jpg
-The [[Stitching]] plugin makes it a breeze to stitch multiple overlapping recordings of a single specimen into a single 3D image.
+This plugin offers hardware-accelerated visualization possibilities for
+image stacks. Stacks can be displayed as texture-based volume renderings, 
+surfaces or orthoslices. 
 
-* Feature Extraction|FeatureExtraction-snapshot.jpg
-The [[Feature Extraction]] plugins provide fully automatic detection of SIFT or MOPS features and registration using corresponding features of two images.
+[[Image:3D_Viewer_overview.png|center]]
 
-* Update Fiji|Updater-snapshot.jpg
-Stay up-to-date with the [[Update Fiji|Fiji Updater]].
 
-* 3D Viewer|3D_Viewer-snapshot.jpg
-The [[3D Viewer]] plugin can display 3D stacks via volume rendering, isosurfaces or as orthoslices
+== Demo video (60 Mb large avi file, lasting about 15 minutes) ==
+
+Find [http://132.187.25.13/home/imagej/Viewer.avi here] a demo movie which
+shows many of the features of the 3D viewer.
+
+For more information, please visit the original [http://132.187.25.13/?category=Download&Page=Viewer3D homepage]
+
+
+
+[[Category:Plugins]]
