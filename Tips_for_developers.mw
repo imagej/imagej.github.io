@@ -30,18 +30,36 @@ ImageJ has a simple API, but it is also big, so here are a few pointers to some 
 
 == How to read a file into an ImagePlus ==
 
+<source lang="java">
  ImagePlus image = IJ.openImage(path);
+</source>
 
 == How to display an exception in a window ==
 
 This is especially useful on Windows, where you usually do not see the console:
 
+<source lang="java">
  IJ.handleException(exception);
+</source>
 
 This is available since ImageJ 1.43g, as well as the option to set a different exception handler using
 
+<source lang="java">
  IJ.setExceptionHandler(new IJ.ExceptionHandler() {
     public void handle(Throwable exception) {
        // do something
     }
  });
+</source>
+
+== How to show a plot ==
+
+ImageJ offers the ''ij.gui.Plot'' class to make a window showing a plot. Use it like this:
+
+<source lang="java">
+ Plot plot = new Plot("The window title", "labels on the x-axis", "labels on the y-axis",
+    float_array_of_x_values, float_array_of_y_values);
+ plot.show();
+</source>
+
+Instead of ''float'' arrays, you can also use ''double'' arrays.
