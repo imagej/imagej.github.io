@@ -34,6 +34,12 @@ ImageJ has a simple API, but it is also big, so here are a few pointers to some 
  ImagePlus image = IJ.openImage(path);
 </source>
 
+== Making a new image stack -- quickly! ==
+
+<source lang="java">
+ ImagePlus image = IJ.createInstance("my image", "RGB", 640, 480, 20);
+</source>
+
 == How to display an exception in a window ==
 
 This is especially useful on Windows, where you usually do not see the console:
