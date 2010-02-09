@@ -1,0 +1,34 @@
+{{Infobox Plugin
+| software               = Fiji
+| name                   = Bug Submitter
+| maintainer             = Mark Longair
+| author                 = Mark Longair
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Bug_Submitter;hb=master gitweb]
+| released               = 03/05/2009
+| latest version         = 30/09/2009
+| status                 = maintained
+}}
+== Report a Bug ==
+
+To be able to track issues better, the Fiji project has a [http://pacific.mpi-cbg.de/bugzilla BugZilla] instance. However, BugZilla's user interface can be quite intimidating to somebody who just wants to report a bug. Therefore, Fiji offers an easier way to report a bug:
+
+[[Image:Report_a_Bug-menu.jpg]]
+
+It will show you a simple form:
+
+[[Image:Report_a_Bug-form.jpg]]
+
+If you already have submitted a bug using this form, Fiji will remember the email address, but for security reasons, the password will not be stored by default.
+
+Please specify a concise summary of the issue, and provide a more detailed description in the lower text area. The plugin will have filled in some informations about your system already, so that you do not have to do that.
+
+=== Creating an account ===
+
+If you did not report any bugs before, you might need to register an account with the BugZilla instance. No worries, this is easy, just click on the ''Visit the Bugzilla account creation page'' button. The relevant part of the page looks like this:
+
+[[Image:Report_a_Bug-account.jpg]]
+
+Just enter your email address (which we need to notify you of fixes, or ask for more details), your real name, and hit the ''Create Account'' button.
+
+[[Category:Tutorials]]
+[[Category:Plugins]]
