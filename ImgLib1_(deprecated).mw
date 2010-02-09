@@ -79,6 +79,8 @@ Using  ''imglib'':
                  cursor.fwd();
                  cursor.getType().mul( factor );
          }
+
+        cursor.close();
 }
 </source>
 
