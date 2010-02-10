@@ -58,7 +58,7 @@ But anyway, let us move on.
 
 As we use this plugin from within Fiji, we will received images under the form of a <tt>ImagePlus</tt>. Since we want to use Imglib internally, we need to convert it. This is done using the class <tt><b>ImagePlusAdapter</b></tt> that has various static utilities to do so.
 
-So we can try with:
+This is how a minimally converted class would look like:
 <source lang="java">
 import ij.IJ;
 import ij.ImagePlus;
@@ -82,55 +82,20 @@ public class Pixel_Summation<T extends NumericType<T>> implements PlugIn {
 }
 </source>
 
-== Dealing with type variables ==
+Note that we use generics that provide compile-time type-safety, so we cannot leave the field <tt>img</tt> be an image of unknown type. We must explicitly stats that it is going to be an image containing a certain generic type: 
 
-This error is linked to the raw type warning we had before. Because we use generics that provide compile-time type-safety, we cannot leave the field <tt>img</tt> be an image of unknown type. We must explicitly stats that it is going to be an image containing a certain generic type. 
-
-This is done using type variables in java. But if we simply try to add such a declaration to the field, as in:
 <source lang="java">
-private Image<T> img;
-</source>
-now we get a new error:
-<source lang="text">
-javac -cp ../ImageJA/ij.jar:../precompiled/imglib.jar Pixel_Summation.java 
-Pixel_Summation.java:10: cannot find symbol
-symbol  : class T
-location: class Pixel_Summation
-  private Image<T> img;
-                ^
+protected Image<T> img;
 </source>
 
-We must also explicit what <tt>T</tt> can be. This is done by modifying the class signature. We add an type variable to it, that specifies what the plugin operates on. For instance:
+We must also detail what <tt>T</tt> can be. This is done by modifying the class signature. We add an type variable to it, that specifies what the plugin operates on:
 <source lang="java">
-public class Pixel_Summation<T> implements PlugIn {
+public class Pixel_Summation<T extends NumericType<T>> implements PlugIn {
 </source>
 This is like saying: "this plugin operates on <tt>T</tt>", whatever <tt>T</tt> is.
 In our specific case, <tt>T</tt> can't be anything. If you inspect the source of <tt>Image</tt>, you will see that we need to use a subclass of <tt>mpicbg.imglib.type.Type</tt> (we can't have images made of koalas, yet). 
 
-Here, we want to access the pixel "real" value, so we will use <tt>NumericType</tt>. It defines an interesting method <tt>getReal()</tt> that will allow us to retrieve a <tt>float</tt> representation of the pixel value. It all boils down to:
-
-<source lang="java">
-import ij.plugin.PlugIn;
-import ij.IJ;
-import ij.ImagePlus;
-import ij.WindowManager;
-import mpicbg.imglib.image.Image;
-import mpicbg.imglib.image.ImagePlusAdapter;
-import mpicbg.imglib.type.NumericType;
-
-public class Pixel_Summation<T extends NumericType<T>> implements PlugIn {
-  
-  private Image<T> img;
-
-  public void run(String arg) {
-	  ImagePlus imp = WindowManager.getCurrentImage();
-	  img = ImagePlusAdapter.wrap(imp);  
-  }
-} 
-</source>
-
-And this compiles with no error.
-
+Here, we want to access the pixel "real" value, so we will use <tt>NumericType</tt>. It defines an interesting method <tt>getReal()</tt> that will allow us to retrieve a <tt>float</tt> representation of the pixel value.
 
 == Making something out of it ==
 
@@ -158,7 +123,7 @@ import mpicbg.imglib.type.NumericType;
 
 public class Pixel_Summation<T extends NumericType<T>> implements PlugIn {
   
-  private Image<T> img;
+  protected Image<T> img;
 
   public void run(String arg) {
 	  ImagePlus imp = WindowManager.getCurrentImage();
@@ -182,12 +147,7 @@ public class Pixel_Summation<T extends NumericType<T>> implements PlugIn {
 
 And this is it!
 
-You can test this plugin on all possible image types ImageJ supports, and it will still yield a result. <b>And you did not have to write code for each particular case.</b>
-
-
- 
-
-
+You can test this plugin on all possible image types ImageJ supports, and it will still yield a result. <b>And you did not have to write code for each particular data type.</b>
 
 [[Category:Tutorials]]
 [[Category:Development]]
