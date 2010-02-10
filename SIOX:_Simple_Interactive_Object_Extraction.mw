@@ -55,7 +55,7 @@ This is the '''first step''' of the procedure where one defines the ROIs that co
 
 ;'''Multiple objects'''
 
-:For segmenting '''multiple objects''', check ''Allow multiple foreground components''. This option tells [[SIOX]] to look for several objects in the image.
+:For segmenting '''multiple objects''', check ''Allow multiple foreground components''. This option tells [[SIOX]] to look for several objects in the image. If you introduce multiple foreground ROIs, this option will be then assumed.
 
 ;'''Smoothing'''
 
