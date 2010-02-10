@@ -60,34 +60,26 @@ As we use this plugin from within Fiji, we will received images under the form o
 
 So we can try with:
 <source lang="java">
-import ij.plugin.PlugIn;
 import ij.IJ;
 import ij.ImagePlus;
 import ij.WindowManager;
+
+import ij.plugin.PlugIn;
+
 import mpicbg.imglib.image.Image;
 import mpicbg.imglib.image.ImagePlusAdapter;
 
-public class Pixel_Summation implements PlugIn {
+import mpicbg.imglib.type.NumericType;
+
+public class Pixel_Summation<T extends NumericType<T>> implements PlugIn {
   
-  private Image img;
+  protected Image<T> img;
 
   public void run(String arg) {
 	  ImagePlus imp = WindowManager.getCurrentImage();
 	  img = ImagePlusAdapter.wrap(imp);
   }
-} 
-</source>
-
-But this fails miserably:
-<source lang="text">
-javac -cp ../ImageJA/ij.jar:../precompiled/imglib.jar Pixel_Summation.java 
-Pixel_Summation.java:15: incompatible types; inferred type argument(s) java.lang.Object 
-do not conform to bounds of type variable(s) T
-found   : <T>mpicbg.imglib.image.Image<T>
-required: mpicbg.imglib.image.Image
-    img = ImagePlusAdapter.wrap(imp);
-                               ^
-1 error
+}
 </source>
 
 == Dealing with type variables ==
