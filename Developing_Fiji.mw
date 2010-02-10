@@ -76,6 +76,15 @@ git clone ssh://contrib@pacific.mpi-cbg.de/srv/git/egit jgit
 # first time, commit-submodule need to know the target, too ("jars/jgit.jar" in this case)
 ./fiji bin/commit-submodule.py jgit jars/jgit.jar
 </source>
+
+So what does ''commit-submodule.py'' do? It
+* verifies that the submodule is pushed,
+* makes sure that the submodule is recorded in ''.gitmodules'',
+* adds the target to the ''Fakefile'',
+* adds the target to ''.gitignore'' so it is not committed by accident,
+* adds a precompiled/<target> to ensure that the submodule does not need to be checked out, and
+* finally commits the result
+
 == Testing ==
 
 When you're testing Fiji, you may want to measure the code coverage of your tests - one way is described in the page [[Code Coverage in Fiji]].
