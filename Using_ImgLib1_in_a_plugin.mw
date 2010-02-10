@@ -82,7 +82,7 @@ public class Pixel_Summation<T extends NumericType<T>> implements PlugIn {
 }
 </source>
 
-Note that we use generics that provide compile-time type-safety, so we cannot leave the field <tt>img</tt> be an image of unknown type. We must explicitly stats that it is going to be an image containing a certain generic type: 
+Note that we use generics that provide compile-time type-safety, so we cannot leave the field <tt>img</tt> be an image of unknown type. We must explicitly state that it is going to be an image containing a certain generic type: 
 
 <source lang="java">
 protected Image<T> img;
