@@ -1,0 +1,200 @@
+The [[Imglib]] library makes extensive use of [http://en.wikipedia.org/wiki/Generics_in_Java Java generics]. Generics appeared in Java from version 1.5, and they introduce new semantic items that can be puzzling if you never used them before. The programming techniques associated are quite new to the ImageJ world, and using Imglib inside your plugins will change their typical layout.
+
+This short page does not aim at being an introduction on generics, but rather is a quick and dirty introduction on how to tune you java files to use Imglib. The deep meaning of semantic is skipped, and we will try to provide a quick template to start with. However, we will attempt to be quite pedestrian when ImageJ itself is involved, and try to display the code and the commands needed to generate a plugin from scratch.  
+
+== Importing <code>imglib</code> ==
+
+We will work on a dummy plugin that takes an image and sum the pixel value over all pixels. As an exercise, we choose to use imglib classes internally. It will turn out to be quite convenient, even for a dummy plugin. 
+
+A plugin skeleton looks like this:
+<source lang="java">
+import ij.plugin.PlugIn;
+import ij.IJ;
+
+public class Pixel_Summation implements PlugIn {
+  
+  public void run(String arg) {
+    IJ.write("Ciao, bella.");
+  }
+} 
+</source>
+We save this in a file named <tt>Pixel_Summation.java</tt> in the Fiji plugins folder, and we compile it with:
+
+<source lang="bash">
+javac -cp ../ImageJA/ij.jar Pixel_Summation.java
+</source>
+In my case, I have to specify the path to the <tt>ij.jar</tt>, which is in the ImageJA folder. I am working from the Fiji source tree, in the plugins directory.
+
+Now we want to import the imglib library, and use its <tt>Image</tt> class as an internal field. We write:
+
+<source lang="java">
+import ij.plugin.PlugIn;
+import ij.IJ;
+import mpicbg.imglib.image.Image;
+
+public class Pixel_Summation implements PlugIn {
+  
+  private Image img;
+
+  public void run(String arg) {
+    IJ.write("Ciao, bella.");
+  }
+} 
+</source>
+We also have to modify the classpath accordingly for compilation:
+<source lang="bash">
+javac -cp ../ImageJA/ij.jar:../precompiled/imglib.jar Pixel_Summation.java
+</source>
+
+Now, there is already quite a few things we can stumble on:
+* If you put this code in Eclipse IDE, for instance, it will generate a warning about unused fields, and a warning about <tt>Image</tt> being a raw type. We will come back to that later.
+* If you try to compile this code using <tt>javac</tt> from the command line, it will fail unless you use a java 1.6 compiler, for the <tt>imglib.jar</tt> is compiled with this java version.
+
+But anyway, let us move on.
+
+
+== Converting from <tt>ImagePlus</tt> to Imglib ==
+
+As we use this plugin from within Fiji, we will received images under the form of a <tt>ImagePlus</tt>. Since we want to use Imglib internally, we need to convert it. This is done using the class <tt><b>ImagePlusAdapter</b></tt> that has various static utilities to do so.
+
+So we can try with:
+<source lang="java">
+import ij.plugin.PlugIn;
+import ij.IJ;
+import ij.ImagePlus;
+import ij.WindowManager;
+import mpicbg.imglib.image.Image;
+import mpicbg.imglib.image.ImagePlusAdapter;
+
+public class Pixel_Summation implements PlugIn {
+  
+  private Image img;
+
+  public void run(String arg) {
+	  ImagePlus imp = WindowManager.getCurrentImage();
+	  img = ImagePlusAdapter.wrap(imp);
+  }
+} 
+</source>
+
+But this fails miserably:
+<source lang="text">
+javac -cp ../ImageJA/ij.jar:../precompiled/imglib.jar Pixel_Summation.java 
+Pixel_Summation.java:15: incompatible types; inferred type argument(s) java.lang.Object 
+do not conform to bounds of type variable(s) T
+found   : <T>mpicbg.imglib.image.Image<T>
+required: mpicbg.imglib.image.Image
+    img = ImagePlusAdapter.wrap(imp);
+                               ^
+1 error
+</source>
+
+== Dealing with type variables ==
+
+This error is linked to the raw type warning we had before. Because we use generics that provide compile-time type-safety, we cannot leave the field <tt>img</tt> be an image of unknown type. We must explicitly stats that it is going to be an image containing a certain generic type. 
+
+This is done using type variables in java. But if we simply try to add such a declaration to the field, as in:
+<source lang="java">
+private Image<T> img;
+</source>
+now we get a new error:
+<source lang="text">
+javac -cp ../ImageJA/ij.jar:../precompiled/imglib.jar Pixel_Summation.java 
+Pixel_Summation.java:10: cannot find symbol
+symbol  : class T
+location: class Pixel_Summation
+  private Image<T> img;
+                ^
+</source>
+
+We must also explicit what <tt>T</tt> can be. This is done by modifying the class signature. We add an type variable to it, that specifies what the plugin operates on. For instance:
+<source lang="java">
+public class Pixel_Summation<T> implements PlugIn {
+</source>
+This is like saying: "this plugin operates on <tt>T</tt>", whatever <tt>T</tt> is.
+In our specific case, <tt>T</tt> can't be anything. If you inspect the source of <tt>Image</tt>, you will see that we need to use a subclass of <tt>mpicbg.imglib.type.Type</tt> (we can't have images made of koalas, yet). 
+
+Here, we want to access the pixel "real" value, so we will use <tt>NumericType</tt>. It defines an interesting method <tt>getReal()</tt> that will allow us to retrieve a <tt>float</tt> representation of the pixel value. It all boils down to:
+
+<source lang="java">
+import ij.plugin.PlugIn;
+import ij.IJ;
+import ij.ImagePlus;
+import ij.WindowManager;
+import mpicbg.imglib.image.Image;
+import mpicbg.imglib.image.ImagePlusAdapter;
+import mpicbg.imglib.type.NumericType;
+
+public class Pixel_Summation<T extends NumericType<T>> implements PlugIn {
+  
+  private Image<T> img;
+
+  public void run(String arg) {
+	  ImagePlus imp = WindowManager.getCurrentImage();
+	  img = ImagePlusAdapter.wrap(imp);  
+  }
+} 
+</source>
+
+And this compiles with no error.
+
+
+== Making something out of it ==
+
+Now that we vanquished the semantics, we would like to wrap up this tutorial by doing something with the plugin. In Imglib, we iterate over the data within an image using <b>Cursors</b>. They are the subject of another tutorial, we will not present them thoroughly. But briefly:
+
+* A plain cursor can be generated by the <tt>createCursor()</tt> method of an <tt>Image<T></tt> instance. It will have the same type variable that of the <tt>Image</tt> object it originates from.
+
+* It is made to iterate through the underlying data, and in the above particular case, it will do it in a memory optimized fashion. You want to use the <tt>hasNext()</tt> and <tt>fwd()</tt> methods of the cursor.
+
+* The actual data can be retrieved using the <tt>getType()</tt> method, that will return - oh surprise - an object of class <tt>T</tt>.
+
+* Since in our case <tt>T</tt> extends <tt>NumericType</tt>, we can use the <tt>getReal()</tt> method to convert to a basic java <tt>float</tt>.
+
+Which leads to:
+
+<source lang="java">
+import ij.plugin.PlugIn;
+import ij.IJ;
+import ij.ImagePlus;
+import ij.WindowManager;
+import mpicbg.imglib.cursor.Cursor;
+import mpicbg.imglib.image.Image;
+import mpicbg.imglib.image.ImagePlusAdapter;
+import mpicbg.imglib.type.NumericType;
+
+public class Pixel_Summation<T extends NumericType<T>> implements PlugIn {
+  
+  private Image<T> img;
+
+  public void run(String arg) {
+	  ImagePlus imp = WindowManager.getCurrentImage();
+	  img = ImagePlusAdapter.wrap(imp);  
+	  Cursor<T> cursor = img.createCursor();
+	  float sum = 0f;
+	  float val;
+	  T type; // This is the generic type of the image. 
+          // Note we actually don't have squat idea about what it is actually at the present time,
+          // but our plugin will still work whatever it will be.
+	  while (cursor.hasNext()) {
+		  cursor.fwd();
+		  type = cursor.getType();
+		  val = type.getReal();
+		  sum = sum + val;
+	  }
+	  IJ.write("Sum on all pixels: "+sum);
+  }
+} 
+</source>
+
+And this is it!
+
+You can test this plugin on all possible image types ImageJ supports, and it will still yield a result. <b>And you did not have to write code for each particular case.</b>
+
+
+ 
+
+
+
+[[Category:Tutorials]]
+[[Category:Development]]
