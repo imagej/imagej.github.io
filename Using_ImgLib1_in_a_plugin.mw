@@ -8,8 +8,9 @@ We will work on a dummy plugin that takes an image and sum the pixel value over 
 
 A plugin skeleton looks like this:
 <source lang="java">
-import ij.plugin.PlugIn;
 import ij.IJ;
+
+import ij.plugin.PlugIn;
 
 public class Pixel_Summation implements PlugIn {
   
@@ -18,40 +19,40 @@ public class Pixel_Summation implements PlugIn {
   }
 } 
 </source>
-We save this in a file named <tt>Pixel_Summation.java</tt> in the Fiji plugins folder, and we compile it with:
+If you work from within the [[Script Editor]], you can save it anywhere and Compile & Run it with ''Run>Compile & Run''.
+
+Otherwise you have to save this in a file named <tt>Pixel_Summation.java</tt> in the Fiji plugins folder. You can either ''Help>Update Menus'' and find the new plugin in the ''Plugins'' menu, or compile it from the command line with:
 
 <source lang="bash">
-javac -cp ../ImageJA/ij.jar Pixel_Summation.java
+./fiji --javac plugins/Pixel_Summation.java
 </source>
-In my case, I have to specify the path to the <tt>ij.jar</tt>, which is in the ImageJA folder. I am working from the Fiji source tree, in the plugins directory.
+(assuming that you are in the Fiji source tree).
 
 Now we want to import the imglib library, and use its <tt>Image</tt> class as an internal field. We write:
 
 <source lang="java">
-import ij.plugin.PlugIn;
 import ij.IJ;
+
+import ij.plugin.PlugIn;
+
 import mpicbg.imglib.image.Image;
 
 public class Pixel_Summation implements PlugIn {
   
-  private Image img;
+  protected Image img;
 
   public void run(String arg) {
     IJ.write("Ciao, bella.");
   }
 } 
 </source>
-We also have to modify the classpath accordingly for compilation:
-<source lang="bash">
-javac -cp ../ImageJA/ij.jar:../precompiled/imglib.jar Pixel_Summation.java
-</source>
+Fiji will already know where to pick up ''imglib.jar''.
 
 Now, there is already quite a few things we can stumble on:
 * If you put this code in Eclipse IDE, for instance, it will generate a warning about unused fields, and a warning about <tt>Image</tt> being a raw type. We will come back to that later.
 * If you try to compile this code using <tt>javac</tt> from the command line, it will fail unless you use a java 1.6 compiler, for the <tt>imglib.jar</tt> is compiled with this java version.
 
 But anyway, let us move on.
-
 
 == Converting from <tt>ImagePlus</tt> to Imglib ==
 
