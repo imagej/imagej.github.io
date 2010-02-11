@@ -10,12 +10,11 @@
 }}
 
 == Purpose ==
-This macro takes an 8 bit greyscale or a 24 bit RGB image and performs dithering. This is a kind of half tone thresholding where greyscale intensity is converted into density of binary pixels.
+This macro takes an 8 bit greyscale or a 24 bit RGB image and performs dithering using one the various method supported. 
+Dithering is a type of half tone thresholding where greyscale intensity is converted into density of binary pixels.
 
 == Installation ==
-
-Copy the source below into a file called "Dithering_.txt".
-
+Copy the source code below and save it into a file called "Dithering_.txt" somewhere in the /Plugins folder. Restarting Fiji or ImageJ will show a new command called "Dithering".
 
 == Available methods ==
 Floyd-Steinberg
