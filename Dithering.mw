@@ -36,9 +36,8 @@ Clustered_4x4
 
 Random
 
-== Code ==
+== Macro code ==
 <source lang="java">
-
 
 // Dithering
 // G. Landini at bham. ac. auk
@@ -72,9 +71,7 @@ else{
   if (bitDepth>8 && !doColour) run("8-bit");
   dither(method);
 }
-
 setBatchMode(false);
-
 
 function dither(method) {
  if (method=="Floyd-Steinberg"){
