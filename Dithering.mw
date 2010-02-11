@@ -10,7 +10,7 @@
 }}
 
 == Purpose ==
-This macro takes an 8 bit greyscale or a 24 bit RGB image and performs dithering. This is a kind of half tone thresholding where greyscale intensity is converted into density of binary pixels. This is 
+This macro takes an 8 bit greyscale or a 24 bit RGB image and performs dithering. This is a kind of half tone thresholding where greyscale intensity is converted into density of binary pixels.
 
 == Installation ==
 
