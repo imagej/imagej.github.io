@@ -126,6 +126,12 @@ If you already worked in an existing checkout of ''fiji.git'', no problem, you c
 
 After you published your contributions, you probably also want to let us know what you did, so just send a mail to [mailto:fiji-devel@googlegroups.com the Fiji devel mailing list].
 
+== Providing documentation ==
+
+A plugin wants to be used. Therefore you want to give users some information about it, and most likely also a tutorial how to use it.
+
+If you have an account on this Wiki, you can easily create new tutorials with the [[Tutorial Maker]].
+
 == Further reading for developers ==
 
 *[[Overview of Fiji's source code]]
