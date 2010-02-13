@@ -23,7 +23,7 @@ The following methods have been implemented (there are several more): Floyd-Stei
 Scaling dithered images by certain factors introduce numerous artifacts, so it is essential to apply dithering after image resizing.<br>
 Dithering results are best rendered when the image is displayed or printed using small pixels.
 
-The following images have been magnified by a factor of 2, to show the individual pixels. 
+The following images have been magnified by a factor of 2 to show the individual pixels. 
 
 [[Image:DitheringMontage.png]]
 
@@ -50,9 +50,9 @@ setBatchMode(true);
 w=getWidth();
 h=getHeight();
 run("Duplicate...", "title="+method);
-if (bitDepth==24 && doColour) {
+if (bitDepth == 24 && doColour) {
    run("RGB Stack");
-   for (i=1;i<4;i++){
+   for (i=1; i<4; i++){
      showProgress(i/4);
      setSlice(i);
      dither(method);
@@ -71,10 +71,10 @@ function dither(method) {
   w2=3/16;
   w3=5/16;
   w4=1/16;
-  for (y=0;y<h;y++){
-    for (x=0;x<w;x++){
+  for (y=0; y<h; y++){
+    for (x=0; x<w; x++){
       oldpixel = getPixel(x,y);
-      if (oldpixel<128) newpixel = 0; else newpixel=255;
+      if (oldpixel<128) newpixel=0; else newpixel=255;
       setPixel(x,y, newpixel);
       quant_error = oldpixel - newpixel;
       setPixel(x+1,y, getPixel(x+1,y) + w1 * quant_error);
@@ -86,8 +86,8 @@ function dither(method) {
  }
  else if (method=="Atkinson"){
   w1=1/8;
-  for (y=0;y<h;y++){
-    for (x=0;x<w;x++){
+  for (y=0; y<h; y++){
+    for (x=0; x<w; x++){
       oldpixel = getPixel(x,y);
       if (oldpixel<128) newpixel = 0; else newpixel=255;
       setPixel(x,y, newpixel);
@@ -106,8 +106,8 @@ function dither(method) {
   w5=5/48;
   w3=3/48;
   w1=1/48;
-  for (y=0;y<h;y++){
-    for (x=0;x<w;x++){
+  for (y=0; y<h; y++){
+    for (x=0; x<w; x++){
       oldpixel = getPixel(x,y);
       if (oldpixel<128) newpixel = 0; else newpixel=255;
       setPixel(x,y, newpixel);
@@ -134,8 +134,8 @@ function dither(method) {
   w4= 4/42;
   w2=2/42;
   w1=1/42;
-  for (y=0;y<h;y++){
-    for (x=0;x<w;x++){
+  for (y=0; y<h; y++){
+    for (x=0; x<w; x++){
       oldpixel = getPixel(x,y);
       if (oldpixel<128) newpixel = 0; else newpixel=255;
       setPixel(x,y, newpixel);
@@ -157,11 +157,11 @@ function dither(method) {
  }
  else if (method=="Bayer_2x2"){
   d= newArray(2,3,4,1);
-  for (i=0;i<d.length;i++)
-    d[i]=d[i] * 64 -1;
+  for (i=0; i<d.length; i++)
+    d[i]=d[i] * 64 - 1;
 
-  for (y=0;y<h;y++){
-    for (x=0;x<w;x++){
+  for (y=0; y<h; y++){
+    for (x=0; x<w; x++){
       if (getPixel(x,y)>=d[(y%2*2+x%2)])
           newpixel = 255; 
       else 
@@ -173,14 +173,14 @@ function dither(method) {
  else if (method=="Bayer_4x4"){
   d= newArray(0.1250, 1.0000, 0.1875, 0.8125, 0.6250, 0.3750, 0.6875,
      0.4375,0.2500, 0.8750, 0.0625, 0.9375, 0.7500, 0.5000, 0.5625, 0.3125);
-  for (i=0;i<d.length;i++)
+  for (i=0; i<d.length; i++)
     d[i]*=255;
-  for (y=0;y<h;y++){
-    for (x=0;x<w;x++){
+  for (y=0; y<h; y++){
+    for (x=0; x<w; x++){
       if (getPixel(x,y)>=d[(y%4*4+x%4)])
           newpixel = 255; 
       else 
-          newpixel=0;
+          newpixel = 0;
       setPixel(x,y, newpixel);
     }
   }
@@ -191,15 +191,15 @@ function dither(method) {
     20, 60, 28, 50, 18, 58, 26, 16, 48, 8, 40, 14, 46, 6, 38, 64, 32, 56, 24, 62, 30,
     54, 22);
 
-  for (i=0;i<d.length;i++)
-    d[i]=d[i] * 4 -1;
+  for (i=0; i<d.length; i++)
+    d[i]=d[i] * 4 - 1;
 
-  for (y=0;y<h;y++){
-    for (x=0;x<w;x++){
+  for (y=0; y<h; y++){
+    for (x=0; x<w; x++){
       if (getPixel(x,y)>=d[(y%8*8+x%8)])
           newpixel = 255; 
       else 
-          newpixel=0;
+          newpixel = 0;
       setPixel(x,y, newpixel);
 
     }
@@ -208,23 +208,23 @@ function dither(method) {
  else if (method=="Clustered_4x4"){
   d= newArray(0.7500, 0.3750, 0.6250, 0.2500, 0.0625, 1.0000, 0.8750, 0.4375,
     0.5000, 0.8125, 0.9375, 0.1250, 0.1875, 0.5625, 0.3125, 0.6875);
-  for (i=0;i<d.length;i++)
+  for (i=0; i<d.length; i++)
     d[i]*=255;
 
-  for (y=0;y<h;y++){
-    for (x=0;x<w;x++){
+  for (y=0; y<h; y++){
+    for (x=0; x<w; x++){
       if (getPixel(x,y)>=d[(y%4*4+x%4)])
           newpixel = 255; 
       else 
-          newpixel=0;
+          newpixel = 0;
       setPixel(x,y, newpixel);
     }
   }
  }
 else if (method=="Random"){
   w1=1/8;
-  for (y=0;y<h;y++){
-    for (x=0;x<w;x++){
+  for (y=0; y<h; y++){
+    for (x=0; x<w; x++){
       if(getPixel(x,y)> random*255)
         setPixel(x,y, 255);
       else   
