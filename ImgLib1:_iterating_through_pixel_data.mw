@@ -161,7 +161,8 @@ public class Localizable_Cursors<T extends NumericType<T>> implements PlugIn {
 
 		// Make a nice string for position
 		String pos_str = MathLib.printCoordinates( max_position );
-		IJ.write( "Maximal pixel value of " + max.getReal() + " found at position " + );
+                // every Type has a .toString() method (as has every Cursor)
+		IJ.write( "Maximal pixel value of " + max + " found at position " + );
 	}
 }
 </source>
