@@ -214,13 +214,12 @@ public class LocalizableByDim_Cursors<T extends NumericType<T>> implements PlugI
   		imp.show();
 	
   		// Convert it to Imglib image. It must be a 3D image.
-		Image<T> img = ImagePlusAdapter.wrap(imp);  
-		int[] dimensions = img.getDimensions();
-		int z_size = dimensions[2];
+		final Image<T> img = ImagePlusAdapter.wrap(imp);  
+		final int z_size = img.getDimension( 2 );
 
 		// Create a Type variable to store the max value, and another 
 		// to deal with current pixel.
-		T max = img.createType();
+		T max;
 		T current_value;
 
 		// Create a new 2D image of the same type
@@ -229,26 +228,33 @@ public class LocalizableByDim_Cursors<T extends NumericType<T>> implements PlugI
 		proj.setName("Z max. proj. of "+img.getName());
 
 		// Create a positionable cursor for the input
-		LocalizableByDimCursor<T> input_cursor = img.createLocalizableByDimCursor();
+		final LocalizableByDimCursor<T> input_cursor = img.createLocalizableByDimCursor();
 
 		// .. and a localizable one for the output
-		LocalizableCursor<T> output_cursor = proj.createLocalizableCursor();
+		final LocalizableCursor<T> output_cursor = proj.createLocalizableCursor();
 
 		// Now we will iterate through all X and Y positions, using the output
 		// cursor to dictate to the input cursor where to go.
-		while (output_cursor.hasNext()) {
-			output_cursor.fwd();
-			input_cursor.setPosition(output_cursor); // This will put the input
-			// cursor at the X,Y position and Z=0. 
+		while (output_cursor.hasNext()) 
+                {
+		   	 output_cursor.fwd();
+			 input_cursor.setPosition(output_cursor);
+                         // This will put the input
+			 // cursor at the X,Y position and Z=0. 
 			
-			//Now we crawl through Z to compute the max value along this column.
-			 max.setZero();
-			 for (int i=0; i<z_size; i++) {
-			 	input_cursor.setPosition(i, 2);
+			 //Now we crawl through Z to compute the max value along this column.
+			 max = null;
+                         // go to (X,Y,0)
+                         input_cursor.setPosition( 0, 2 );
+			 for ( int i=0; i<z_size; ++i)
+                         {
 			 	current_value = input_cursor.getType();
-			 	if (current_value.compareTo(max) > 0) {
-					max.set(current_value);
-				}
+                                if ( max == null )
+                                        max = current_value.clone();
+			 	else if ( current_value.compareTo(max) > 0 ) 
+					max.set( current_value );
+                                // move forward in z direction
+			 	input_cursor.fwd( 2 );
 			 }
 
 			 // Then we set the ouput value with the max we have found
