@@ -126,25 +126,36 @@ public class Localizable_Cursors<T extends NumericType<T>> implements PlugIn {
   		imp.show();
  
   		// Convert it to Imglib image
-		Image<T> img = ImagePlusAdapter.wrap(imp);  
+		final Image<T> img = ImagePlusAdapter.wrap( imp );  
  
 		// Create a localizable cursor for it
-		LocalizableCursor<T> loc_cursor = img.createLocalizableCursor();
+		final LocalizableCursor<T> loc_cursor = img.createLocalizableCursor();
 
 		// Create a Type variable to store the max value.
 		// We create it from the Image object so that they have compatible types
-		T max = img.createType(); // consequently, it has the type <T>
+                // As we cannot initialize it with the minimum value we have to init it with
+                // the first value later
+		T max = null; // consequently, it has the type <T>
  
 		// Iterate over all the image
 		max.setZero();
-		int[] max_position = null;
-		T current_value;
-		while (loc_cursor.hasNext()) {
+                // create an int[] array with correct dimensionality
+		final int[] max_position = img.createPositionArray();
+
+		while (loc_cursor.hasNext()) 
+                {
 			loc_cursor.fwd();
-			current_value = loc_cursor.getType();
-			if (current_value.compareTo(max) > 0) {  // NumericType implements java.lang.Comparable
-				max_position = loc_cursor.getPosition();
-				max.set(current_value); // we cannot simply copy references, this would cause a mess
+			T current_value = loc_cursor.getType();
+                        if ( max == null )
+                                 max = current_Value.clone();
+
+                        // NumericType implements java.lang.Comparable
+			if ( current_value.compareTo( max ) > 0) 
+                        {
+                                // save the max position  
+				loc_cursor.getPosition( max_position );
+                                // we cannot simply copy references, this would cause a mess
+				max.set(current_value); 
 			}
 		}
 		loc_cursor.close();
