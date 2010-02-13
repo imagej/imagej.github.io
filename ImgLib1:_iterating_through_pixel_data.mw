@@ -137,12 +137,11 @@ public class Localizable_Cursors<T extends NumericType<T>> implements PlugIn {
                 // the first value later
 		T max = null; // consequently, it has the type <T>
  
-		// Iterate over all the image
-		max.setZero();
                 // create an int[] array with correct dimensionality
 		final int[] max_position = img.createPositionArray();
 
-		while (loc_cursor.hasNext()) 
+		// Iterate over all the image
+		while ( loc_cursor.hasNext() ) 
                 {
 			loc_cursor.fwd();
 			T current_value = loc_cursor.getType();
@@ -150,7 +149,7 @@ public class Localizable_Cursors<T extends NumericType<T>> implements PlugIn {
                                  max = current_Value.clone();
 
                         // NumericType implements java.lang.Comparable
-			if ( current_value.compareTo( max ) > 0) 
+			if ( current_value.compareTo( max ) > 0 ) 
                         {
                                 // save the max position  
 				loc_cursor.getPosition( max_position );
@@ -162,7 +161,7 @@ public class Localizable_Cursors<T extends NumericType<T>> implements PlugIn {
 
 		// Make a nice string for position
 		String pos_str = MathLib.printCoordinates( max_position );
-		IJ.write("Maximal pixel value of "+max.getReal()+" found at position "+pos_str);
+		IJ.write("Maximal pixel value of "+max.getReal()+" found at position "+MathLib.printCoordinates( max_position ));
 	}
 }
 </source>
