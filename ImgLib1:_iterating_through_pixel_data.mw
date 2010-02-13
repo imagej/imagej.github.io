@@ -275,8 +275,11 @@ public class LocalizableByDim_Cursors<T extends NumericType<T>> implements PlugI
 }
 </source>
 
+== Moving outside of images - Outside Strategies ==
+
 == Comparing performances ==
 
+== Advanced dimension independent iterating ==
 
 
 
