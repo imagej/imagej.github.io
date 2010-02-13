@@ -210,8 +210,8 @@ public class LocalizableByDim_Cursors<T extends NumericType<T>> implements PlugI
 	public void run(String arg) {
  
 		// Open the Confocal series example
-                String name = "http://rsb.info.nih.gov/ij/images/mri-stack.zip";
-  		ImagePlus imp = IJ.openImage(name);
+                final String name = "http://rsb.info.nih.gov/ij/images/mri-stack.zip";
+  		final ImagePlus imp = IJ.openImage(name);
   		imp.show();
 	
   		// Convert it to Imglib image. It must be a 3D image.
@@ -225,7 +225,7 @@ public class LocalizableByDim_Cursors<T extends NumericType<T>> implements PlugI
 
 		// Create a new 2D image of the same type
 		// 2D images have still 3 dimensions, but the 3rd one has 1 size
-		Image<T> proj = img.createNewImage(new int[] {dimensions[0], dimensions[1], 1});
+		final Image<T> proj = img.createNewImage(new int[] {dimensions[0], dimensions[1], 1});
 		proj.setName("Z max. proj. of "+img.getName());
 
 		// Create a positionable cursor for the input
