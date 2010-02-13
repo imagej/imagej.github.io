@@ -154,14 +154,14 @@ public class Localizable_Cursors<T extends NumericType<T>> implements PlugIn {
                                 // save the max position  
 				loc_cursor.getPosition( max_position );
                                 // we cannot simply copy references, this would cause a mess
-				max.set(current_value); 
+				max.set( current_value ); 
 			}
 		}
 		loc_cursor.close();
 
 		// Make a nice string for position
 		String pos_str = MathLib.printCoordinates( max_position );
-		IJ.write("Maximal pixel value of "+max.getReal()+" found at position "+MathLib.printCoordinates( max_position ));
+		IJ.write( "Maximal pixel value of " + max.getReal() + " found at position " + );
 	}
 }
 </source>
