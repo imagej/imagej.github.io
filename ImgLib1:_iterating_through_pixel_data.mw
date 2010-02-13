@@ -151,7 +151,7 @@ public class Localizable_Cursors<T extends NumericType<T>> implements PlugIn {
                         // NumericType implements java.lang.Comparable
 			if ( current_value.compareTo( max ) > 0 ) 
                         {
-                                // save the max position  
+                                // save the max position, giving a pre-instantiated array is the fastest way 
 				loc_cursor.getPosition( max_position );
                                 // we cannot simply copy references, this would cause a mess
 				max.set( current_value ); 
