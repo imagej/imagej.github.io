@@ -150,20 +150,13 @@ public class Localizable_Cursors<T extends NumericType<T>> implements PlugIn {
 		loc_cursor.close();
 
 		// Make a nice string for position
-		String pos_str = "(";
-		for (int i=0; i<max_position.length-1; i++) {
-			pos_str += max_position[i];
-			pos_str += ", ";
-		}
-		pos_str += max_position[max_position.length-1]+")";
+		String pos_str = MathLib.printCoordinates( max_position );
 		IJ.write("Maximal pixel value of "+max.getReal()+" found at position "+pos_str);
 	}
 }
 </source>
 
 Even for a dummy plugin, this is far from perfect. Indeed, it reports the position of the ''first'' maximum, in case there is multiple pixels that have the same maximal value. Since in the general case we do not know in which order the data is traversed, this might be of importance.
-
-
 
 == Imposing the iteration order ==
 
