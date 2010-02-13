@@ -19,11 +19,9 @@ In the case of 24 bit RGB images the macro lets you either dither the greyscale 
 Copy the source code below and save it into a file called "Dithering_.txt" somewhere in the /Plugins folder. Restarting Fiji or ImageJ will show a new command called "Dithering".
 
 == Available methods ==
-The following methods have been implemented (there are more): Floyd-Steinberg, Atkinson, Jarvis-Judice-Ninke, Stucki, Bayer_2x2, Bayer_4x4, Bayer_8x8, Clustered_4x4 and Random.
-
-Scaling down dithered images introduces numerous artifacts, so it is better to apply dithering after image resizing.
-
-Dithering works best when the image is displayed or printed in devices with small pixels.
+The following methods have been implemented (there are more): Floyd-Steinberg, Atkinson, Jarvis-Judice-Ninke, Stucki, Bayer_2x2, Bayer_4x4, Bayer_8x8, Clustered_4x4 and Random.<br>
+Scaling down dithered images introduces numerous artifacts, so it is better to apply dithering after image resizing.<br>
+Dithering works best when the image is displayed or printed with small pixels.
 
 The following images have been magnified by a factor of 2, to show the individual pixels. 
 
