@@ -13,6 +13,8 @@
 This macro takes an 8 bit greyscale or a 24 bit RGB image and performs dithering using one of the various methods supported. 
 Dithering is a type of half tone thresholding where greyscale intensity is converted into density of binary pixels.
 
+In the case of 24 bit RGB images the macro lets you either dither the greyscale version of the image or dither the RGB planes (colour dithering).
+
 == Installation ==
 Copy the source code below and save it into a file called "Dithering_.txt" somewhere in the /Plugins folder. Restarting Fiji or ImageJ will show a new command called "Dithering".
 
@@ -34,6 +36,8 @@ Bayer_8x8
 Clustered_4x4
 
 Random
+
+
 
 == Macro code ==
 <source lang="java">
