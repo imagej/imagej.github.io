@@ -240,14 +240,12 @@ public class LocalizableByDim_Cursors<T extends NumericType<T>> implements PlugI
                 {
 		   	 output_cursor.fwd();
 			 input_cursor.setPosition(output_cursor);
-                         // This will put the input
-			 // cursor at the X,Y position and Z=0. 
 			
 			 //Now we crawl through Z to compute the max value along this column.
 			 max = null;
                          // go to (X,Y,0), in this case this call is not necessary but good for illustration
                          input_cursor.setPosition( 0, 2 );
-			 for ( int i=0; i<z_size; ++i)
+			 for ( int i=0; i<z_size; ++i )
                          {
 			 	current_value = input_cursor.getType();
                                 if ( max == null )
