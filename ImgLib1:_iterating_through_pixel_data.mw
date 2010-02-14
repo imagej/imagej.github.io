@@ -213,63 +213,61 @@ public class LocalizableByDim_Cursors<T extends NumericType<T>> implements PlugI
                 final String name = "http://rsb.info.nih.gov/ij/images/mri-stack.zip";
   		final ImagePlus imp = IJ.openImage(name);
   		imp.show();
-	
+ 
   		// Convert it to Imglib image. It must be a 3D image.
 		final Image<T> img = ImagePlusAdapter.wrap(imp);  
-		final int z_size = img.getDimension( 2 );
-
+		final int z_size = img.getDimension( 2 ); // Z is the 3rd dimension, with index 2
+ 
 		// Create a Type variable to store the max value, and another 
 		// to deal with current pixel.
 		T max;
 		T current_value;
-
+ 
 		// Create a new 2D image of the same type
 		// 2D images have still 3 dimensions, but the 3rd one has 1 size
-		final Image<T> proj = img.createNewImage(new int[] {dimensions[0], dimensions[1], 1});
+		final Image<T> proj = img.createNewImage(new int[] {img.getDimension(0), img.getDimension(1), 1});
 		proj.setName("Z max. proj. of "+img.getName());
-
+ 
 		// Create a positionable cursor for the input
 		final LocalizableByDimCursor<T> input_cursor = img.createLocalizableByDimCursor();
-
+ 
 		// .. and a localizable one for the output
 		final LocalizableCursor<T> output_cursor = proj.createLocalizableCursor();
-
+ 
 		// Now we will iterate through all X and Y positions, using the output
 		// cursor to dictate to the input cursor where to go.
 		while (output_cursor.hasNext()) 
                 {
 		   	 output_cursor.fwd();
-			 input_cursor.setPosition(output_cursor);
-			
+			 input_cursor.setPosition(output_cursor); // The output dictate the position of the input
+ 
 			 //Now we crawl through Z to compute the max value along this column.
 			 max = null;
-                         // go to (X,Y,0), in this case this call is not necessary but good for illustration
-                         input_cursor.setPosition( 0, 2 );
-			 for ( int i=0; i<z_size; ++i )
+                         // Go to (X,Y,0), in this case this call is not necessary but good for illustration
+                         input_cursor.setPosition( 0, 2 ); // Set the dimension 2 (ie: Z) at position 0
+			 for ( int i=1; i<z_size; ++i )
                          {
 			 	current_value = input_cursor.getType();
                                 if ( max == null )
-                                        max = current_value.clone();
+                                        max = current_value.copyVariable();
 			 	else if ( current_value.compareTo(max) > 0 ) 
 					max.set( current_value );
                                 // move forward in z direction
 			 	input_cursor.fwd( 2 );
 			 }
-
+ 
 			 // Then we set the ouput value with the max we have found
 			 output_cursor.getType().set(max);
 		}
-
+ 
 		// Done iterating
 		output_cursor.close();
 		input_cursor.close();
-
+ 
 		// Display result in ImageJ
 		ImagePlus imp_result = ImageJFunctions.copyToImagePlus(proj);
 		imp_result.show();
  	}
-
- 	
 }
 </source>
 
