@@ -115,7 +115,8 @@ import mpicbg.imglib.cursor.LocalizableCursor;
 import mpicbg.imglib.image.Image;
 import mpicbg.imglib.image.ImagePlusAdapter;
 import mpicbg.imglib.type.NumericType;
- 
+import mpicbg.imglib.algorithm.math.MathLib;
+
 public class Localizable_Cursors<T extends NumericType<T>> implements PlugIn {
  
 	public void run(String arg) {
@@ -130,7 +131,7 @@ public class Localizable_Cursors<T extends NumericType<T>> implements PlugIn {
  
 		// Create a localizable cursor for it
 		final LocalizableCursor<T> loc_cursor = img.createLocalizableCursor();
-
+ 
 		// Create a Type variable to store the max value.
 		// We create it from the Image object so that they have compatible types
                 // As we cannot initialize it with the minimum value we have to init it with
@@ -139,15 +140,15 @@ public class Localizable_Cursors<T extends NumericType<T>> implements PlugIn {
  
                 // create an int[] array with correct dimensionality
 		final int[] max_position = img.createPositionArray();
-
+ 
 		// Iterate over all the image
 		while ( loc_cursor.hasNext() ) 
                 {
 			loc_cursor.fwd();
 			T current_value = loc_cursor.getType();
                         if ( max == null )
-                                 max = current_Value.clone();
-
+                                 max = current_value.copyVariable();
+ 
                         // NumericType implements java.lang.Comparable
 			if ( current_value.compareTo( max ) > 0 ) 
                         {
@@ -158,7 +159,7 @@ public class Localizable_Cursors<T extends NumericType<T>> implements PlugIn {
 			}
 		}
 		loc_cursor.close();
-
+ 
 		// Make a nice string for position
 		String pos_str = MathLib.printCoordinates( max_position );
                 // every Type has a .toString() method (as has every Cursor)
