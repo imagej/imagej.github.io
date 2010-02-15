@@ -95,11 +95,9 @@ Now, we could do something useful with the data itself, using the <tt>public <T>
 
 === The plain cursor perks ===
 
-In the preceding example, we know that every pixel has been traversed by the cursor. However, we do not know in which order. <b>In the general case, where no assumption is made on the storage strategy, it is not possible to predict what will be the traversal order. Imglib just ensures that the traversal is made in an memory-optimized fashion.</b>
+In the preceding example, we know that every pixel has been traversed by the cursor. However, we do not know in which order. <b>In the general case, where no assumption is made on the storage strategy, it is not possible to predict what will be the traversal order. Imglib just ensures that the traversal is made in an optimized fashion.</b>
 
-So with a plain cursor iterating, you don't know how it is made, but you are sure that it is the best way.  
-
-
+So with a plain cursor iterating, you don't know how it is made, but you are sure that it is the best way.
 
 == The localizable cursor == 
 
