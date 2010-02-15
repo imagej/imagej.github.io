@@ -108,7 +108,7 @@ LocalizableCursor<T> loc_cursor = img.createLocalizableCursor();
 </source>
 
 It adds the following method to the plain cursor:
-* <tt>public int[] getPosition()</tt> returns an array specifying the current position for each dimension; <red>Warning: this methods creates a new int[] array every time and is therefor inefficient if called very often</red>
+* <tt>public int[] getPosition()</tt> returns an array specifying the current position for each dimension; <span style="color:#FF0000;">Warning: this methods creates a new int[] array every time and is therefor inefficient if called very often</span>
 * <tt>public int getPosition( int dim )</tt> returns the index of the position for the specified dimension number;
 * <tt>public void getPosition( int[] position )</tt> store the position in the given array.
 
