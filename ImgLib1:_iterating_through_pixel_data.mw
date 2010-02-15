@@ -32,6 +32,7 @@ final Image<T> img;
 final T value;
 final Cursor<T> cursor = img.createCursor();
 
+// Cursor implements java.lang.Iterable<T>
 for ( final T v : cursor )
     v.set( value );	
 
