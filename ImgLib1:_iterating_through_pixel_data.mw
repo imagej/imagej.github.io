@@ -28,11 +28,17 @@ The responsibility of retrieving, iterating over and modifying the data is imple
 You can create a plain cursor that will iterate over the pixels of an image very simply, by calling the <tt>createCursor()</tt> method over an <tt>Image</tt> object:
 
 <source lang="java">
-Image<T> img;
-[snip: put something useful into img]
-Cursor<T> cursor = img.createCursor();
+final Image<T> img;
+final T value;
+final Cursor<T> cursor = img.createCursor();
+
+for ( final T v : cursor )
+    v.set( value );	
+
+cursor.close();
+
 </source>
-Note that the cursor object has a type variable <tt><T></tt> identical to <tt>img</tt>'s type. 
+Note that the cursor object has a type variable <tt><T></tt> identical to <tt>img</tt>'s type.
 
 === Iterating using a plain cursor ===
 
