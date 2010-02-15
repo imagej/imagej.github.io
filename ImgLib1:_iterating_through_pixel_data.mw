@@ -29,8 +29,10 @@ You can create a plain cursor that will iterate over the pixels of an image very
 
 <source lang="java">
 final Image<T> img;
-final T value;
 final Cursor<T> cursor = img.createCursor();
+
+// we set all pixels to a certain value
+final T value;
 
 // Cursor implements java.lang.Iterable<T>
 for ( final T v : cursor )
