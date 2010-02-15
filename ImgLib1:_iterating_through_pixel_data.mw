@@ -35,8 +35,8 @@ final Cursor<T> cursor = img.createCursor();
 final T value;
 
 // Cursor implements java.lang.Iterable<T>
-for ( final T v : cursor )
-    v.set( value );	
+for ( final T pixel : cursor )
+    pixel.set( value );	
 
 cursor.close();
 
