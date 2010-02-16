@@ -1,6 +1,6 @@
 = Source Code Management =
 
-Fiji's development relies heavily on [http://git.or.cz Git].  The principal Fiji project is a Git ''supermodule'', which includes ''submodules'' -- projects in their own right.  These submodules do not have to be checked out, but can be left empty, if you are not interested in the development of that particular project.
+Fiji's development relies heavily on [http://git.or.cz Git] (if you do not know what Git is, you may want to have a look at our [[Git for dummies|real concise introduction to Git]]).  The principal Fiji project is a Git ''supermodule'', which includes ''submodules'' -- projects in their own right.  These submodules do not have to be checked out, but can be left empty, if you are not interested in the development of that particular project.
 
 Some of Fiji's submodules are imported from third parties; most of them have their source code in [http://subversion.tigris.org/ Subversion] repositories, which are mirrored via '''git-svn'''. The mirrors are updated by a cron job on [[Pacific]].
 
