@@ -7,7 +7,7 @@ __NOTOC__
 
 For [[Fiji Usage|users]], Fiji is [[Downloads|easy to install]] and update, bundles a [[:Category:Plugins|set of plugins]] in a [[Plugins Menu|coherent menu structure]] (and updatable), along with comprehensive [[documentation]].
 
-For [[Developing_Fiji|developers]], Fiji as an open source project is hosted on a git source version control [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi repository], with access to the source code of all internals, libraries and plugins, and eases the [[Developing_Fiji|development]] and [[:Category:Scripting|scripting]] of plugins.
+For [[Developing_Fiji|developers]], Fiji as an open source project is hosted on a [[Git for dummies|Git]] source version control [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi repository], with access to the source code of all internals, libraries and plugins, and eases the [[Developing_Fiji|development]] and [[:Category:Scripting|scripting]] of plugins.
 
 <b>[[Downloads|Download Fiji now]]</b>
 <span class="plainlinks">[{{SERVER}}{{localurl:Downloads}} http://pacific.mpi-cbg.de/wiki/images/4/41/Yada.png]</span>
