@@ -109,10 +109,6 @@ A public Java class must be compiled from a source file reflecting the class nam
 
 Often, it would be very convenient to remember the current cursor position to come back to, after looking around in other parts of the file.  Maybe Ctrl+B (together with a menu entry), or Ctrl+<digit> are good ways to implement the user interface.  (The code should be similar to the ''Goto Line...'' function.
 
-== Add tabbed editing to the Script Editor ==
-
-For ease of implementation, the current version of the script editor only supports editing one file at a time (the Summer of Code seems to have been too remove that limitation).  One possibility is to allow tabbed editing, another is to connect all Script Editor instances so that they know what is opened where (this would also help in the case the user is editing the same file <u>twice</u>, which is not handled gracefully at the moment).
-
 
 
 == Script Editor: Show backtraces in the status window and make them clickable ==
