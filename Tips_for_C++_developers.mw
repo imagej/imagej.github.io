@@ -41,6 +41,10 @@ In Java, member variables and methods can be accessed without the prefix ''this.
 
 Whenever you pass an object to a method, Java does so by reference. That makes it harder to write inefficient code copying large amounts of memory back and forth, but it is something to watch out for when you are used to C++: when passing an object to a method which modifies the members, the caller will see the changes.
 
+== You <u>cannot</u> compare Strings using <nowiki>==</nowiki> ==
+
+There is no operator overloading in Java, so the operator ''<nowiki>==</nowiki>'' refers to equality of the reference, rather than equality of the referenced object. You must use the ''equals()'' method for that.
+
 == Objects are not instantiated by default ==
 
 When declaring a variable like this:
