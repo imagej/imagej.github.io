@@ -176,6 +176,14 @@ Save the above into a file named "reset_affine_transforms.py" under plugins dire
 
 See also: the different methods for manipulating the affine transform of a [http://t2.ini.uzh.ch/api/ini/trakem2/display/displayable.html Displayable object] like a Patch.
 
+And a WARNING: if you modify the AffineTransform of a Patch and don't call then any of the Displayable methods for doing so as well (like we did above: the script calls "Displayable.translate"), then you must update the bucket yourself:
+
+<source lang="python">
+patch.updateBucket()
+</source>
+
+The bucket is the region of the 2D world where the Patch lives. Picture the world as a checkerboard, where a given image, wrapped in a Patch object, belongs to each of the square that it intersects. Failing to update the bucket will result in improper canvas repaints--the Patch cannot be found.
+
 = Adding images =
 
 === Adding a single image to a layer shown in an open display ===
