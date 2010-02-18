@@ -149,6 +149,33 @@ More convenient are the methods <i>scale</i>, <i>translate</i>, <i>rotate</i> an
 
 If you change the affine transform of a Displayable directly (by calling <i>getAffineTransform()</i> and then manipulating it), keep in mind that you will most likely screw up the internal cached maps for fast location of the Displayable object. To solve that, be sure to all <i>updateBucket()</i> on the affected Displayable object.
 
+= Manipulating Displayable objects =
+
+=== Resetting the affine transform of all images in a Layer ===
+
+Suppose you open the project and find that the images of a Layer have non-rigid affine transforms, and you'd like to remove the non-rigid part. A reasonable approach is to reset their affine transforms to identity, and then translate them to approximately where they used to be (based on their bounding box):
+
+<source lang="python">
+layer = Display.getFront().getLayer()
+
+# Get all selected images
+# patches = Display.getFront().getSelection().getSelected(Patch)
+
+# Get all images in the current layer
+patches = layer.getDisplayables(Patch)
+
+for patch in patches:
+  bounds = patch.getBoundingBox()
+  patch.getAffineTransform().setToIdentity()
+  patch.translate(bounds.x, bounds.y, False)
+
+Display.repaint()
+</source>
+
+Save the above into a file named "reset_affine_transforms.py" under plugins directory or subdirectory to run it directly from the menus, or copy-paste it into the Jython Interpreter.
+
+See also: the different methods for manipulating the affine transform of a [http://t2.ini.uzh.ch/api/ini/trakem2/display/displayable.html Displayable object] like a Patch.
+
 = Adding images =
 
 === Adding a single image to a layer shown in an open display ===
