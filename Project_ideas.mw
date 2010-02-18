@@ -115,7 +115,7 @@ Often, it would be very convenient to remember the current cursor position to co
 
 When there is a compiler error, or an exception at runtime, it would be better to show the backtrace in the Script Editor window.  Further, it would be very convenient to jump to the appropriate code line when clicking on a line of the backtrace (this most likely depends on [[#Add_tabbed_editing_to_the_Script_Editor|tabbed editing]]).
 
-= Fiji development environment =
+= Fiji development environment/infrastructure =
 
 == GUI Testing framework ==
 
@@ -130,6 +130,24 @@ The idea is, in any case, to record mouse moves and keyboard presses, optionally
 == Interface between R and ImageJ/Fiji ==
 
 Dimiter Prodanov has done something like this, but it would be nice to have a set of implemented procedures so IJ/Fiji can run statistical procedures directly from Results tables, etc).
+
+== Teach the Fiji Updater to accept other sites in addition to [[Pacific]] ==
+
+The Fiji Updater always looks for a static file containing an XML database of Fiji plugins (both current and past versions) on our website. To put new versions or new plugins there (to ''upload into the updater''), you have to be a Fiji developer with write permission for that particular directory on our server.
+
+In some cases, there are plugins that are either too sensitive, or too specific for a certain application, or not ready for public consumption yet, but still somebody might want to install Fiji in such a way that it automatically updates those plugins, too. Of course, there must be a different location for those plugins than the official Fiji update site, lest the general audience receive those plugins automatically.
+
+The project is not without complications, though:
+
+* The XML database is saved as a file in the local Fiji directory, and it is always checked at startup whether the timestamp is newer than the timestamp of the XML database on the server. If you have multiple update sites, one might be tempted to merge the XML databases into one, but this is not advisable, as it would necessitate a schema change and a lot of code changes to record the source of each data(sub)set. So it would be better to keep the XML databases as separate files.
+
+* There may be conflicts between plugins that are official Fiji plugins, but also available from  a secondary site. This has to be coped with (it is not clear what the best strategy should be: take the official Fiji version over the secondary site? let the user choose?)
+
+* With a new site, you need to be able to [[Uploading plugins|upload plugins]] to that site, too. There needs to be a very good way to prevent confusion, lest the plugin is uploaded to the <u>wrong</u> site.
+
+* To determine whether a developer can upload new plugins (because there are new versions), the Fiji Updater scans the complete plugins directory, along with a few other places where macros, 3rd party libraries, or the Fiji launcher might hide. The Fiji Updater needs to learn <u>not</u> to offer these plugins for upload to a secondary site, but only the non-Fiji ones.
+
+* It is unlikely that our current Fiji Updater can start a database from scratch. This has to be verified, and if there is no code for that yet, it has to be implemented.
 
 = User interface improvements =
 
