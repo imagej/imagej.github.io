@@ -67,6 +67,10 @@ Possible tools to do so would be airbrushes (allowing for transparent colors) or
 
 Unfortunately, GIMP's Wiki is not available (and seems to have been down for ages), but [http://general-cathexis.com/interpolation/index.html here] is a nice comparison of upsampling algorithms.
 
+== Wavelet inpainting ==
+
+Implement a simple inpainting method (i.e. restore missing/unwanted parts of the image marked by a ROI) using wavelets: apply the wavelet transform, and then, on each level, use a diffusion algorithm to deduce a smooth signal from the surrounding parts, and finally inverse-transform the wavelet to get the restored image.
+
 = Scripting =
 
 == Add JMathLib (Matlab clone) support ==
