@@ -9,8 +9,7 @@ For [[Fiji Usage|users]], Fiji is [[Downloads|easy to install]] and update, bund
 
 For [[Developing_Fiji|developers]], Fiji as an open source project is hosted on a [[Git for dummies|Git]] source version control [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi repository], with access to the source code of all internals, libraries and plugins, and eases the [[Developing_Fiji|development]] and [[:Category:Scripting|scripting]] of plugins.
 
-<b>[[Downloads|Download Fiji now]]</b>
-[[Image:Yada.png|link=Downloads]]
+<b>[[Downloads|Download Fiji now]]</b>&nbsp;&nbsp;[[Image:Yada.png|middle|link=Downloads]]
 
 == [[News]] ==
 <listnews/>
