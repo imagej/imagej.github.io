@@ -61,7 +61,7 @@ What the JVM flags mean:
 * The ending double hyphen "--" is to specify all of these are JVM arguments, not fiji/ImageJ arguments.
 
 
-With the above settings, we have succesfully registered 77,000 image tiles corresponding to 459 serial sections, using the "Align multi-layer mosaic" TrakEM2 command.
+With the above settings, we have succesfully registered 33,000 image tiles corresponding to 459 serial sections, using the "Align multi-layer mosaic" TrakEM2 command.
 
 == Examples ==
 
