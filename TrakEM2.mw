@@ -32,6 +32,13 @@ TrakEM2 interacts with the [[3D Viewer]] for visualization of image volumes and 
 * Create new projects from "File - New - TrakEM2 (blank)"
 * Open an existing project by dragging its .xml file onto the toolbar, or via "File - Open".
 
+== Documentation ==
+
+* [http://www.ini.uzh.ch/~acardona/howto.html How to]
+* [http://www.ini.uzh.ch/~acardona/trakem2_manual.html Manual]
+* [[TrakEM2 tutorials]] with video tutorials.
+* Examples of [[TrakEM2 Scripting|scripting in TrakEM2]].
+
 == Running fiji for heavy-duty, memory-intensive, high-performance TrakEM2 tasks ==
 
 The following configuration has been tested in a machine with 8 CPU cores and 16 Gb of RAM, running Ubuntu 8.04 "Hardy":
@@ -55,13 +62,6 @@ What the JVM flags mean:
 
 
 With the above settings, we have succesfully registered 77,000 image tiles corresponding to 459 serial sections, using the "Align multi-layer mosaic" TrakEM2 command.
-
-== Documentation ==
-
-* [http://www.ini.uzh.ch/~acardona/howto.html How to]
-* [http://www.ini.uzh.ch/~acardona/trakem2_manual.html Manual]
-* [[TrakEM2 tutorials]] with video tutorials.
-* Examples of [[TrakEM2 Scripting|scripting in TrakEM2]].
 
 == Examples ==
 
