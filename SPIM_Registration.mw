@@ -81,7 +81,7 @@ After all individual timepoints are registered and the cropping area is defined 
 * '''Crop Offset Output Image X/Y/Z''': Defines the cropping offset in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping. '''Note:''' All the values are relative to the downsampling factor in '''Output Image Scaling'''.
 * '''Crop Size Output Image X/Y/Z''': Defines the cropped size in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping. '''Note:''' All the values are relative to the downsampling factor in '''Output Image Scaling'''.
 
-=== Plugin Wishlist ===
+== Plugin Wishlist ==
 
 When you find some features that you would like to be added to the plugin, please write them down here
 
