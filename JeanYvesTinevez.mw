@@ -1,12 +1,14 @@
 Hi,
 
-My name is Jean-Yves Tinevez. I used to work at the [http://mpi-cbg.de Max-Planck Institute of Cell Biology and Genetics], in Dresden. 
+My name is Jean-Yves Tinevez. I used to work at the [http://mpi-cbg.de Max-Planck Institute of Cell Biology and Genetics], in Dresden, and currently work at the Institut Pasteur, in the [http://www.pasteur.fr/ip/easysite/go/03b-000011-04a/recherche/plates-formes-technologiques/technopole-de-l-institut-pasteur/imagopole imaging platform].
 
 == Maintained plugins ==
 
 * The [[Stack Manipulation]] package.
 * [[PIV analysis]]
 
-== Authored plugins ==
+== Authored plugins documented here ==
 
 * [[PIV analysis]]
+* [[Arrow_]]
+* [[Directionality_]]
