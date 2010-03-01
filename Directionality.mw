@@ -18,9 +18,9 @@
 [[Image:Directionality_Example.png|700px]]
 
 
-This plugin is used to infer if there is a preferred orientation in structures present in the image it is run on. It computes an histogram that indicates the amount of structures in a given direction. Images with completely isotropic content are expected to give a flat histogram whereas images in which there is a preferred orientation are expected to give a histogram with a peak at this orientation.
+This plugin is used to infer the preferred orientation of structures present in the input image. It computes a histogram indicating the amount of structures in a given direction. Images with completely isotropic content are expected to give a flat histogram, whereas images in which there is a preferred orientation are expected to give a histogram with a peak at that orientation.
 
-For instance, in the pine tree branch pictured above, the needle leaves exist in 2 populations, one with a preferred orientation at about 45º, and another one with preferred orientation around -45º. This is well detected by the plugin, which reports two main peaks at 60º and -60º. On top of that, a minor peak can be seen around 0º, reporting the main branch orientation.
+For instance, in the pine tree branch pictured above, the needle shaped leaves exist in 2 populations, one with a preferred orientation at about 45º, and another one with preferred orientation around -45º. This is well detected by the plugin, which reports two main peaks at 60º and -60º. On top of that, a minor peak can be seen around 0º, reporting the main branch orientation.
 
 
 == Statistics generated ==
@@ -36,11 +36,11 @@ On top of the histogram, the plugin tries to generate statistics on the highest 
 A study made on artificial images reveal that the 'Amount' value as calculated here '''underestimates''' the real proportion of structures with the preferred orientation. So for the pine image up there, one can conclude that the proportion of needle leaves oriented around +60º is at least 25% (however, the image is not completely uniform, which cripples the meaning of this amount value).
 
 
-== How does it work ==
+== How does it work? ==
 
-Different solutions have thought about, but so far, only one has been implemented. 
+Different solutions have been thought about, but so far, only one has been implemented:
 
-The current analysis is based on Fourier spectrum. For a square image, having structures with a preferred orientation generate a periodic pattern in the +90º orientation. This plugin chops the image in square bits, and computes its Fourier power spectrum. The later is analyzed in polar coordinates, and the power is measured for each angle using filters proposed in [1] 
+The method implemented is based on Fourier spectrum analysis. For a square image, structures with a preferred orientation generate a periodic pattern at +90º orientation in the Fouruer transform of the image, compared to the direction of the objects in the input image. This plugin chops the image into square pieces, and computes their Fourier power spectra. The later are analyzed in polar coordinates, and the power is measured for each angle using the spatial filters proposed in [1] 
 
 
 
