@@ -87,6 +87,14 @@ After all individual timepoints are registered and the cropping area is defined 
 
 For advanced SPIM registration all available parameters can be tuned using two configuration files (configuration.txt and VariablesAssignment.txt, see below). Contact the author for further details [http://fly.mpi-cbg.de/preibisch/contact.html]. 
 
+=== Plugin Wishlist ===
+
+When you find some features that you would like to be added to the plugin, please write them down here
+
+* Change Z-Stretching in Plugin
+* Automatic Timelapse processing
+* Preview (e.g. Max Projections of first angle) if register only checked and more than one timepoint
+
 === configuration.txt ===
 
 <source lang="text">
