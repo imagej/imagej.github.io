@@ -1,0 +1,69 @@
+{{Infobox Plugin
+| software               = Fiji
+| name                   = Directionality
+| author                  = [[User:JeanYvesTinevez | Jean-Yves Tinevez]]
+| maintainer           = Jean-Yves Tinevez ([mailto:jeanyves.tinevez@gmail.com])
+| filename              = Directionality_.jar 
+| released              = March 1<sup>st</sup>, 2010
+| latest version      = March 1<sup>st</sup>, 2010
+| status                  = v1.0 - bug review
+| category               =[[:Category:Analysis|Analysis]]
+}}
+
+
+== Usage ==
+
+
+
+[[Image:Directionality_Example.png|700px]]
+
+
+This plugin is used to infer if there is a preferred orientation in structures present in the image it is run on. It computes an histogram that indicates the amount of structures in a given direction. Images with completely isotropic content are expected to give a flat histogram whereas images in which there is a preferred orientation are expected to give a histogram with a peak at this orientation.
+
+For instance, in the pine tree branch pictured above, the needle leaves exist in 2 populations, one with a preferred orientation at about 45º, and another one with preferred orientation around -45º. This is well detected by the plugin, which reports two main peaks at 60º and -60º. On top of that, a minor peak can be seen around 0º, reporting the main branch orientation.
+
+
+== Statistics generated ==
+
+On top of the histogram, the plugin tries to generate statistics on the highest peak found.
+
+* The highest peak is fitted by a Gaussian function, taking into account the periodic nature of the histogram.
+* The 'Direction (º)' column reports the center of the gaussian.
+* The 'Dispersion (º)' column reports the standard deviation of the gaussian.
+* The 'Amount' column is the sum of the histogram from center-std to center+std, divided by the total sum of the histogram. The real histogram values are used for the summation, not the gaussian fit.
+* The 'Goodness' column reports the goodness of the fit; 1 is good, 0 is bad.
+
+A study made on artificial images reveal that the 'Amount' value as calculated here '''underestimates''' the real proportion of structures with the preferred orientation. So for the pine image up there, one can conclude that the proportion of needle leaves oriented around +60º is at least 25% (however, the image is not completely uniform, which cripples the meaning of this amount value).
+
+
+== How does it work ==
+
+Different solutions have thought about, but so far, only one has been implemented. 
+
+The current analysis is based on Fourier spectrum. For a square image, having structures with a preferred orientation generate a periodic pattern in the +90º orientation. This plugin chops the image in square bits, and computes its Fourier power spectrum. The later is analyzed in polar coordinates, and the power is measured for each angle using filters proposed in [1] 
+
+
+
+== Wish list for this plugin ==
+
+Possible way for further developments:
+
+* Implements another way to analyze the image, ''e.g'' using local gradient orientation.
+* Have a peak finder that can deal with multiple peaks and return statistics on them.
+
+
+
+
+== References ==
+
+* [1] '''Liu.''' Scale space approach to directional analysis of images. ''Appl. Opt. (1991) vol. 30 (11) pp. 1369-1373''
+
+A discussion with A. Leroy is greatly acknowledged. 
+
+
+
+
+
+
+
+[[Category:Analysis|Analysis]]
