@@ -35,8 +35,10 @@ On top of the histogram, the plugin tries to generate statistics on the highest 
 
 A study made on artificial images reveal that the 'Amount' value as calculated here '''underestimates''' the real proportion of structures with the preferred orientation. So for the pine image up there, one can conclude that the proportion of needle leaves oriented around +60º is at least 25% (however, the image is not completely uniform, which cripples the meaning of this amount value).
 
-If you want to save an image of the histogram, right-click on the plot, and choose save as.
-If you want to export the histogram data, check the Data table box in the plugin dialog window. This will generate a results table, that can be exported as a csv file with a right click, or copy pasted directly into a spreadsheet etc. 
+==Results data export==
+#Save the Directionality Results window contents to a spreadsheet by copy pasting. 
+#If you want to save an image of the histogram, right-click on the plot, and choose save as.
+#If you want to export the histogram data, check the Data table box in the plugin dialog window. This will generate a results table, that can be exported as a csv file with a right click, or copy pasted directly into a spreadsheet etc. 
 
 == How does it work? ==
 
