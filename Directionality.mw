@@ -22,6 +22,7 @@ This plugin is used to infer the preferred orientation of structures present in 
 
 For instance, in the pine tree branch pictured above, the needle shaped leaves exist in 2 populations, one with a preferred orientation at about 45º, and another one with preferred orientation around -45º. This is well detected by the plugin, which reports two main peaks at 60º and -60º. On top of that, a minor peak can be seen around 0º, reporting the main branch orientation.
 
+Angles are reported in their common mathematical sense. That is: 0º is the East direction, and the orientation is counterclockwise. 
 
 == Statistics generated ==
 
