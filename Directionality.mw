@@ -45,9 +45,10 @@ A study made on artificial images reveal that the 'Amount' value as calculated h
 
 Different solutions have been thought about, but so far, only one has been implemented:
 
-The method implemented is based on Fourier spectrum analysis. For a square image, structures with a preferred orientation generate a periodic pattern at +90º orientation in the Fouruer transform of the image, compared to the direction of the objects in the input image. This plugin chops the image into square pieces, and computes their Fourier power spectra. The later are analyzed in polar coordinates, and the power is measured for each angle using the spatial filters proposed in [1] 
-
-
+The method implemented is based on Fourier spectrum analysis.
+For a square image, structures with a preferred orientation generate a periodic pattern at +90º orientation in the Fourier transform of the image, compared to the direction of the objects in the input image.
+This plugin chops the image into square pieces, and computes their Fourier power spectra.
+The later are analyzed in polar coordinates, and the power is measured for each angle using the spatial filters proposed in [1]
 
 == Wish list for this plugin ==
 
