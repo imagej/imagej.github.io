@@ -10,7 +10,26 @@ After starting Fiji, you will see the main window:
 
 == The menu bar ==
 
-In the menubar, you will find most of the functionality, such as loading/saving files, processing them, and plugins will be installed into there, too.
+In the menubar, you will find most of the functionality, such as loading/saving files, processing them, and plugins will be installed into the menus, too.
+
+The menus have different purposes:
+
+; File
+: File input/output, new files
+; Edit
+: Selection/ROI handling
+; Image
+: Visualization, stack manipulation
+; Process
+: Image filters
+; Analyze
+: Statistics
+; Plugins
+: Plugins, Macros and Utilities
+; Window
+: Windows
+; Help
+: Help & Links
 
 == The tool bar ==
 
