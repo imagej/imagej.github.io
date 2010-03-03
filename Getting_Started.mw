@@ -45,7 +45,13 @@ If there is a small red arrow in the lower right corner of the tool icon, you ca
 
 == The status bar ==
 
-The status bar displays useful information at startup, and when running plugins. It also shows a progress bar on the right side for long-running processes.  A single mouse click on the status bar will show the information about ImageJ and Java version as well as about memory consumption.
+The status bar displays useful information at startup, and when running plugins. It also shows a progress bar on the right side for long-running processes:
+
+[[Image:Status-bar-with-progress.png]]
+
+A single mouse click on the status bar will show the information about ImageJ and Java version as well as about memory consumption:
+
+[[Image:Default-status-message.png]]
 
 == Drag & Drop ==
 
