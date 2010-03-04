@@ -91,6 +91,14 @@ The new imglib supports dimension-, storage- and data type independent image pro
 '''Language:''' Java.<br />
 '''Mentor:''' Stephan Preibisch (preibisch AT mpi-cbg.de) or Johannes Schindelin (johannes.schindelin AT gmx.de)<br />
 
+== Integrate Micro-Manager into Fiji ==
+
+This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX and Windows.  The idea is to make a recipe that other people can use to compile new releases of [http://www.micro-manager.org/ Micro-Manager], as well as integrate it into the Fiji project for a smooth user experience.  To ensure that support for Micro-Manager is not broken inadvertently, you shall add regression tests, too.
+
+'''Goal:''' Provide an easy way to compile and ship Micro-Manager with Fiji.<br>
+'''Language:''' Java, C++, shell<br>
+'''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
+
 = Other Resources =
 * [[SoC 2010 Application]]
 
