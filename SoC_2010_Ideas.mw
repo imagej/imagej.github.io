@@ -64,7 +64,7 @@ You are welcome to use any scientifically-relevant dataset of your choice, but w
 
 '''Goal:''' Implement a number of segmentation algorithms based on machine learning.<br />
 '''Language:''' Java.<br />
-'''Mentor:''' Johannes Schindelin (johannes.schindelin AT gmx.de) and Albert Cardona (acardona AT ini phys ethz ch)<br />
+'''Mentor:''' Johannes Schindelin (johannes.schindelin AT gmx.de) or Albert Cardona (acardona AT ini phys ethz ch)<br />
 
 == Add JMathLib (Matlab clone) support ==
 
