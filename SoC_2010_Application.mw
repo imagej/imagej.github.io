@@ -18,7 +18,7 @@ There are numerous tasks suitable for independent small projects, that would enh
 
 == Did your organization participate in past GSoCs? If so, please summarize your involvement and the successes and challenges of your participation ==
 
-Yes. We have participated in 2010. Out of 3 accepted students, we had 1 failure (the student was late starting the project, accepted a fulltime day-job in addition to the GSoC project, and was unable to accomplish even the simplest tasks set by his mentor), and 2 successes.
+Yes. We have participated in 2009. Out of 3 accepted students, we had 1 failure (the student was late starting the project, accepted a fulltime day-job in addition to the GSoC project, and was unable to accomplish even the simplest tasks set by his mentor), and 2 successes.
 
 One of the two successful projects was to provide a script editor with syntax highlighting for all the scripting languages supported by Fiji: Jython, JRuby, Clojure, Javascript and BeanShell. As a bonus, the script editor supports writing Java plugins, too: http://pacific.mpi-cbg.de/wiki/index.php/Script_Editor
 
