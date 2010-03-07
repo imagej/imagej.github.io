@@ -75,7 +75,9 @@ This is the '''first step''' of the procedure where one defines the ROIs that co
 
 ===Detail Refinement Brush===
 [[Image:SIOX-Detail-Refinement-Brush.png|thumb|300px|SIOX detail refinement brush panel]]
-This is the '''second step''' in the [[SIOX]] segmentation process. Here the method can be called again to refine the results obtained so far to subtract or add new areas to the background or foreground components '''as many times as you want'''.
+This is the '''second step''' in the [[SIOX]] segmentation process. 
+
+At this point, the method can be called again to refine the results obtained so far to subtract or add new areas to the background or foreground components '''as many times needed'''.
 
 The ''Add'' mode only modifies pixels formerly classified as background, while the ''Subtract'' mode only modifies those formerly classified as foreground.
 
