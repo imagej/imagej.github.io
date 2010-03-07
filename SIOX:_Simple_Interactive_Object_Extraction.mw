@@ -67,7 +67,7 @@ This is the '''first step''' of the procedure where one defines the ROIs that co
 
 :In order to proceed with the initial segmentation, click on ''Segment''. 
 
-:Remember that [[SIOX]] needs at least one foreground ROI to produce the segmentation, the background ROI is optional.
+:Remember that [[SIOX]] needs at least one foreground component (ROI) to produce the segmentation, the background ROI is optional.
 
 :After a few seconds (depending on the image size), the result will be shown (darkened background and foreground area(s) in the original colors).
 
