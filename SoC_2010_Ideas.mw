@@ -45,6 +45,24 @@ its questions as part of your application.
 
 == Applying machine learning to the image classification problem ==
 
+This project is motivated by a specific biological questions associated with large-scale image set describing patterns of gene expression in <i>Drosophila</i> embryogenesis. It is inspired by the software developed under the Cell Profiler project.
+
+General formulation of the problem: given a large set of related images, use (and extend) Fiji feature detection capabilities to extract numerical descriptors from the images and use them for iterative generation of a classifier based on user feedback.
+
+Practically, develop an interface where a user (experienced biology expert) can select from a large set of <i>Drosophila</i> embryo images a subset of pictures showing similar anatomical features (highlighted by staining) while interactively assessing the performance of machine learning derived classifier on the whole set of images. The user should be able to influence the machine learning in two ways, by selecting or de-selecting training set images and by influencing the selection of the pre-computed features used in training. 
+
+This approach has been successfully used to classify embryo images by number of groups, yet a usable interactive implementation is missing. Interestingly, the images are described by a control vocabulary annotation which presents an unique way to independently validate the results of the machine learning and could also be incorporate in the image selection process (i.e. starting from a more homogenous group).
+
+<b>Prerequisites:</b>
+*Large scale database of annotated RNA in situ images of gene expression patterns consisting of about 90,000 image representing 6000 genes. 
+*Feature extraction approaches implemented in Fiji
+*Machine learning implemented in Fiji
+*Papers describing the principles of unsupervised machine learning approach  
+
+<b>Goal</b> Implement a user interface for supervised machine learning<br>
+<b>Language</b> Java<br>
+<b>Mentors</b> Pavel Tomancak (tomancak at mpi-cbg.de) and Erwin Frise<br>
+
 == Applying machine learning to the image segmentation problem ==
 
 The term ''image segmentation'' describes the task where objects in an image are to be outlined, so that every pixel is connected to either a named object, or background.
