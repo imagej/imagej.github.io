@@ -123,6 +123,19 @@ The new imglib supports dimension-, storage- and data type independent image pro
 '''Language:''' Java.<br />
 '''Mentor:''' Stephan Preibisch (preibisch AT mpi-cbg.de) or Johannes Schindelin (johannes.schindelin AT gmx.de)<br />
 
+== Translate ITK methods into Fiji ==
+
+The new '''imglib''' library facilitates the task of translating [http://www.itk.org/itkindex.html ITK routines] into Fiji. The main idea of this project is to import interesting algorithms from [http://www.itk.org/itkindex.html ITK] into native imglib code, mainly methods for:
+
+* 2D/3D registration.
+* 2D/3D segmentation.
+* Interpolation (for n-dimensional images).
+* Optimization.
+
+'''Goal:''' Port ITK methods into Fiji.<br>
+'''Language:''' Java, C++, ITK<br>
+'''Mentor:''' Ignacio Arganda-Carreras (iarganda@mit.edu), Stephan Preibisch (preibisch@mpi-cbg.edu) or Johannes Schindelin (johannes.schindelin@gmx.de)
+
 == Integrate Micro-Manager into Fiji ==
 
 This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX and Windows.  The idea is to make a recipe that other people can use to compile new releases of [http://www.micro-manager.org/ Micro-Manager], as well as integrate it into the Fiji project for a smooth user experience.  To ensure that support for Micro-Manager is not broken inadvertently, you shall add regression tests, too.
