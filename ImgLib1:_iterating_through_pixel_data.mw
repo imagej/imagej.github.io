@@ -154,7 +154,7 @@ public class Localizable_Cursors<T extends NumericType<T>> implements PlugIn {
 			loc_cursor.fwd();
 			T current_value = loc_cursor.getType();
                         if ( max == null )
-                                 max = current_value.copyVariable();
+                                 max = current_value.clone();
  
                         // NumericType implements java.lang.Comparable
 			if ( current_value.compareTo( max ) > 0 ) 
@@ -257,7 +257,7 @@ public class LocalizableByDim_Cursors<T extends NumericType<T>> implements PlugI
                          {
 			 	current_value = input_cursor.getType();
                                 if ( max == null )
-                                        max = current_value.copyVariable();
+                                        max = current_value.clone();
 			 	else if ( current_value.compareTo(max) > 0 ) 
 					max.set( current_value );
                                 // move forward in z direction
