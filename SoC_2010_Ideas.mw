@@ -42,6 +42,9 @@ its questions as part of your application.
 
 = Project ideas =
 
+
+== Applying machine learning to the image classification problem ==
+
 == Applying machine learning to the image segmentation problem ==
 
 The term ''image segmentation'' describes the task where objects in an image are to be outlined, so that every pixel is connected to either a named object, or background.
