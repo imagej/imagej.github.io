@@ -146,7 +146,7 @@ This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX 
 
 == Morphological classification via hierarchical clustering ==
 
-The idea behind this project is to implement interactive object classification on an image or stack containing various binary objects, based on morphological data residing on the Results Table. This data will be submitted to one of various hierarchical cluster analysis methods and produce a dendrogram graph. The distance between clusters in the dendrogram is represented by a "distance" axis and the user should be able to select the number of clusters via a slider on the "distance" axis. The objects in the original image are then labelled according to the number of clusters present according to the distance slider.
+The idea behind this project is to implement interactive object classification on an image or stack containing various binary objects, based on morphological data residing on the Results Table. This data will be submitted to one of various hierarchical cluster analysis methods and produce a dendrogram graph. The distance between clusters in the dendrogram is represented by a "distance" axis and the user should be able to select the number of clusters via a slider on the "distance" axis. The objects in the original image are then labelled according to the cluster they belong defined by the distance slider.
 
 
 '''Goal:''' Provide a means of data mining information from images using an interactive form of labelling based on cluster analysis.<br>
