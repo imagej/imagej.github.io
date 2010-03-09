@@ -51,12 +51,12 @@ General formulation of the problem: given a large set of related images, use (an
 
 Practically, develop an interface where a user (experienced biology expert) can select from a large set of <i>Drosophila</i> embryo images a subset of pictures showing similar anatomical features (highlighted by staining) while interactively assessing the performance of machine learning derived classifier on the whole set of images. The user should be able to influence the machine learning in two ways, by selecting or de-selecting training set images and by influencing the selection of the pre-computed features used in training. 
 
-This approach has been successfully used to classify embryo images yet a usable interactive implementation is missing [http://bioinformatics.oxfordjournals.org/cgi/content/full/24/17/1881]. Interestingly, the images are described by a control vocabulary annotation which presents an unique way to independently validate the results of the machine learning and could also be incorporate in the image selection process (i.e. starting from a more homogenous group).
+This approach has been successfully used to classify embryo images yet a usable interactive implementation is missing [http://bioinformatics.oxfordjournals.org/cgi/content/full/24/17/1881]. Interestingly, the images are described by a control vocabulary annotation which presents an unique way to independently validate the results of the machine learning and could also be incorporated in the image selection process (i.e. starting from a more homogenous group).
 
 <b>Pre-requisites:</b>
 *Large scale database of annotated RNA in situ images of gene expression patterns consisting of about 90,000 image representing 6000 genes. 
 *Feature extraction approaches implemented in Fiji
-*Machine learning implemented in Fiji
+*Machine learning implemented in Fiji ([http://www.cs.waikato.ac.nz/ml/weka/ Weka])
 *Paper describing the principles of unsupervised machine learning approach on this dataset using combination of number of invariant features [http://bioinformatics.oxfordjournals.org/cgi/content/full/24/17/1881]
 *Biologically motivated candidate with significant programming skills
 
