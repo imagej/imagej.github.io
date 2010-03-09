@@ -144,10 +144,20 @@ This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX 
 '''Language:''' Java, C++, shell<br>
 '''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
 
+== Morphological classification via hierarchical clustering ==
+
+The idea behind this project is to implement interactive object classification on an image or stack containing various binary objects, based on morphological data residing on the Results Table. This data will be submitted to one of various hierarchical cluster analysis methods and produce a dendrogram graph. The distance between clusters in the dendrogram is represented by a "distance" axis and the user should be able to select the number of clusters via a slider on the "distance" axis. The objects in the original image are then labelled according to the number of clusters present according to the distance slider.
+
+
+'''Goal:''' Provide a means of data mining information from images using an interactive form of labelling based on cluster analysis.<br>
+'''Language:''' Java, Weka library<br>
+'''Mentor:''' G. Landini (G.Landini at bham.ac.uk) and Johannes Schindelin (johannes.schindelin@gmx.de)
+
+
 = Other Resources =
 * [[SoC 2010 Application]]
 
 = Other links =
-* [http://rsb.info.nih.gov/ij ImageJ's homepage]
-* [http://groups.google.com/group/fiji-devel Fiji's developer mailing list]
+ [http://groups.google.com/group/fiji-devel Fiji's developer mailing list]
+ [http://www.cs.waikato.ac.nz/ml/weka/ Weka project
 * [[IRC|#fiji-devel channel]] on irc.freenode.net
