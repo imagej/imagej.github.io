@@ -16,6 +16,10 @@ The application for Fiji (''Fiji Is Just ImageJ'')
 
 There are numerous tasks suitable for independent small projects, that would enhance Fiji substantially. With the GSoC, we see an opportunity to bring young bright people to our project, using the projects as their entry point to both the human aspects of our community (particularly its frequent hackathons) and the project code base.
 
+Of course, the Google Summer of Code also offers a perfect opportunity for students to tackle problems which are challenging enough to take more than just a couple of weeks of focused work. We fully expect fantastic projects in the field of image segmentation, classification, visualization and other image processing/analysis related subjects to be completed by the end of the summer.
+
+Another benefit of the participation is the higher visibility of our project. Already last year, we noticed an upsurge in the website usage connected to the Google Summer of Code. When we fully integrated the results of the two projects, there was another peak in the statistics. For a non-commercial project like Fiji, this is the kind of publicity which is needed to let the users know that there is a free program they might want to use.
+
 == Did your organization participate in past GSoCs? If so, please summarize your involvement and the successes and challenges of your participation ==
 
 Yes. We have participated in 2009. Out of 3 accepted students, we had 1 failure (the student was late starting the project, accepted a fulltime day-job in addition to the GSoC project, and was unable to accomplish even the simplest tasks set by his mentor), and 2 successes.
