@@ -184,7 +184,7 @@ The project should make use of the imglib library
 <b>Language</b> Java<br>
 <b>Mentors</b> Stephan Saalfeld (saalfeld at mpi-cbg.de)<br>
 
-== Implement Motion Deblurring ==
+== Motion Deblurring from a Single Image ==
 
 The aim of the project is to implement a state-of-the-art motion deblurring algorithm as described in the paper of Qi Shan, "High-quality Motion Deblurring from a Single Image" published at the Siggraph 2008. The algorithm is capable of approximating the undisturbed image without any prior knowledge like the Point Spread Function. Convergence is achieved by using improved noise modeling and actively suppressing ringing artifacts.
 
