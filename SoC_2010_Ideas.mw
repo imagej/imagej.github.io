@@ -169,6 +169,21 @@ To that end, Fiji already supports "headless" mode, i.e. operation without the n
 '''Language:''' Java.<br />
 '''Mentor:''' Pavel Tomancak (tomancak at mpi-cbg.de) and Johannes Schindelin (johannes.schindelin at gmx.de)<br />
 
+== Hierarchical n-dimensional compressable cell-base storage backend ==
+
+Develop storage backend that enables fast random access through limited bandwidth channels to large scale image datasets, e.g.
+a Java client that can arbitrarily slice into very large volumes hosted
+by a server without making the server render the slices and without the
+client loading the full volume. 
+
+In 3d, the scale pyramid would be an octree with each box differentially compressed by e.g. DCT or Wavelets. The project would require extending wavelets and DCT to arbitrary dimensions. As there is currently no file format for this kind of data such format has to be defined.
+
+The project should make use of the imglib library
+
+<b>Goal</b> Implementation and detailed specification of hierarchical compressable cell-based storage format<br>
+<b>Language</b> Java<br>
+<b>Mentors</b> Stephan Saalfeld (saalfeld at mpi-cbg.de)<br>
+
 = Other Resources =
 * [[SoC 2010 Application]]
 
