@@ -190,6 +190,8 @@ The aim of the project is to implement a state-of-the-art motion deblurring algo
 
 (Motion) Deblurring is a major problem in photography, thus interesting to a large audience and can be easily adopted to microscopic images to perform deconvolution.
 
+* [http://www.cse.cuhk.edu.hk/~leojia/projects/motion_deblurring/index.html Webpage of Siggraph Paper]
+
 <b>Goal</b> Implementation of motion deblurring using algorithms avaible in imglib<br>
 <b>Language</b> Java<br>
 <b>Mentors</b> Stephan Preibisch (preibisch at mpi-cbg.de)<br>
