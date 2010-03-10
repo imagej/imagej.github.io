@@ -145,7 +145,7 @@ This approach has been successfully used to classify embryo images yet a usable 
 
 <b>Pre-requisites:</b>
 *Large scale database of annotated RNA in situ images of gene expression patterns consisting of about 90,000 image representing 6000 genes. 
-*Feature extraction approaches implemented in Fiji
+*Feature extraction approaches implemented in Fiji [[http://pacific.mpi-cbg.de/wiki/index.php/Feature_Extraction]]
 *Machine learning implemented in Fiji ([http://www.cs.waikato.ac.nz/ml/weka/ Weka])
 *Paper describing the principles of unsupervised machine learning approach on this dataset using combination of number of invariant features [http://bioinformatics.oxfordjournals.org/cgi/content/full/24/17/1881]
 *Biologically motivated candidate with significant programming skills
@@ -153,7 +153,6 @@ This approach has been successfully used to classify embryo images yet a usable 
 <b>Goal</b> Implement a user interface for supervised machine learning<br>
 <b>Language</b> Java<br>
 <b>Mentors</b> Pavel Tomancak (tomancak at mpi-cbg.de) and Erwin Frise<br>
-
 
 == Provide cluster support for Fiji ==
 
