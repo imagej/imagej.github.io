@@ -210,6 +210,20 @@ The purpose of this project is to segment in a fully automatic way round, convex
 '''Language:''' Java<br>
 '''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
 
+== Texture segmentation ==
+
+Not all images which Fiji users are interested in contain bright objects on dark background, or vice versa. Sometimes, the structures cannot be discerned using the intensity, but only using statistic measures where the inside pixels have a different geometric distribution than the outside pixels. Example:
+
+[[Image:Tem-clahe-50-256-2.5.jpg|500px|center]]
+
+There are [http://ai.stanford.edu/~ruzon/tex_seg/ a number] [http://people.csail.mit.edu/sarasu/pub/texture05/ of] [http://www-sop.inria.fr/ariana/DEMOS/wold/node2.html texture] [http://www.cs.iupui.edu/~tuceryan/research/ComputerVision/moment-paper.pdf segmentation] [http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.49.6534 algorithms] that appear to solve the problem to various extents.
+
+This proposal is about adding at least one such segmentation algorithm to Fiji.
+
+'''Goal:''' Add a segmentation algorithm to Fiji which uses texture features to discern different objects from background (and from each other).<br>
+'''Language:''' Java<br>
+'''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
+
 = Other Resources =
 * [[SoC 2010 Application]]
 
