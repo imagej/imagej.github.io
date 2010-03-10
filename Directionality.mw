@@ -6,7 +6,7 @@
 | filename              = Directionality_.jar 
 | released              = No public release yet 
 | latest version      = March 5<sup>st</sup>, 2010
-| status                  = v1.1 - bug review
+| status                  = v1.2
 | category               =[[:Category:Analysis|Analysis]]
 }}
 
@@ -56,20 +56,60 @@ A study made on artificial images reveal that the 'Amount' value as calculated h
 
 == How does it work? ==
 
-Different solutions have been thought about, but so far, only one has been implemented:
+Different solutions have been thought about, and two of them are currently implemented:
 
-The method implemented is based on Fourier spectrum analysis.
-For a square image, structures with a preferred orientation generate a periodic pattern at +90º orientation in the Fourier transform of the image, compared to the direction of the objects in the input image.
-This plugin chops the image into square pieces, and computes their Fourier power spectra.
-The later are analyzed in polar coordinates, and the power is measured for each angle using the spatial filters proposed in [1]
+===Fourier components analysis===
+ 
+This method is based on Fourier spectrum analysis. For a square
+image, structures with a preferred orientation generate a periodic pattern at
++90º orientation in the Fourier transform of the image, compared to the
+direction of the objects in the input image. 
 
+This plugin chops the image into
+square pieces, and computes their Fourier power spectra. The later are
+analyzed in polar coordinates, and the power is measured for each angle using
+the spatial filters proposed in [1]
+
+=== Local gradient orientation ===
+
+This method is local. The gradient of the image is calculated using a 5x5
+Sobel filter, and is used to derive the local gradient orientation. This orientation 
+is then used to build the histogram, by putting the square of the gradient norm 
+in the adequate bin. The square of the norm was retained, so as to have an histogram 
+with the same dimension that for the Fourier analysis.
+
+
+ 
+== Code structure ==
+
+This plugin is written as a classical ImageJ plugin. It implements ''PlugInFilter'',
+and relies on ''PlugInFilterRunner'' to be run. 
+
+String arguments can be passed to it, using the ''setup(String, ImagePlus)'' method.
+For instance:
+
+ <source lang="java">
+ ImagePlus imp = IJ.openImage("./TwoLines.tif");
+ imp.show();
+ Directionality_ da = new Directionality_();
+ String command = "Directionality";
+ new PlugInFilterRunner(da, command, "nbins=60, start=-90, method=gradient");
+ </source>
+
+
+
+== Version history ==
+
+* v1.2: Added a new analysis method based on local gradient orientation.
+* v1.1: Added an option to export the histogram as a table.
+* v1.0: First working commit with the Fourier method.
+ 
 
 
 == Wish list for this plugin ==
 
 Possible way for further developments:
 
-* Implements another way to analyze the image, ''e.g'' using local gradient orientation.
 * Have a peak finder that can deal with multiple peaks and return statistics on them.
 * Have an inverse method, that would generate an orientation map. The locations of the image with a given orientation would be displayed directly on the image, similarly to a colocalization map, or to the output of the PIV analysis.
 * Add a radial filter to the Fourier method, that would allow to pick only structures with a given length (+/- bandwidth).
