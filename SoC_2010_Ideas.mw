@@ -153,6 +153,20 @@ The idea behind this project is to implement interactive object classification o
 '''Language:''' Java, Weka library<br>
 '''Mentor:''' G. Landini (G.Landini at bham.ac.uk) and Johannes Schindelin (johannes.schindelin@gmx.de)
 
+== Provide cluster support for Fiji ==
+
+Fiji runs fine on desktop machines, but for some tasks, it is better to use a cluster.
+
+To that end, Fiji already supports "headless" mode, i.e. operation without the need to have a graphical user interface running.  But that is not enough:
+
+* There must be an easy way to define what operation should be performed on what set of images, or on what set of subimages.
+* Clusters come in all kinds of flavors with a lot of different schedulers.  A general backend with adapters for the most common schedulers will be needed.
+* The user should have a nice user interface to see the progress, and the end result.
+* For convenience, Fiji should offer the option to make sure that the current Fiji is installed.
+
+'''Goal:''' Add a component to schedule processes.<br />
+'''Language:''' Java.<br />
+'''Mentor:''' Pavel Tomancak (tomancak at mpi-cbg.de) and Johannes Schindelin (johannes.schindelin at gmx.de)<br />
 
 = Other Resources =
 * [[SoC 2010 Application]]
