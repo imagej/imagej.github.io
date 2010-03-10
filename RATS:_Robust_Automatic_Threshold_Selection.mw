@@ -50,7 +50,9 @@ Load an single channel image (8-bit, 16-bit or 32-bit).  Select the RATS plugin 
 4. VERBOSE If set then output informational messages in the log window (default is false).
 
 
-That's it!  A bilevel image is produced with the name "-mask" appended to the original image name. 
+That's it!  A bilevel image is produced with the name "-mask" appended to the original image name.
+
+[[Image:RATS-Output.png|center]]
 
 ==Macro Usage==
 
