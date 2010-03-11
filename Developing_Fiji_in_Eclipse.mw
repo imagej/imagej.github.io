@@ -67,7 +67,7 @@ git checkout VIB   # yes, this is the master branch of VIB
 </source>
 
 
-You should probably check out the ImageJA submodule too, and '''don't checkout any branch on it''':
+You should probably check out the ImageJA submodule too, and '''don't check out any branch on it''':
 
 <source lang="bash">
 cd ~/workspace/fiji
