@@ -113,6 +113,18 @@ Also, the Updater cannot upgrade the Java Runtime as of now. There is little rea
 '''Language:''' Java.<br />
 '''Mentor:''' Johannes Schindelin (johannes.schindelin AT gmx.de)<br />
 
+== Add a "real" installer ==
+
+For now, Fiji is a portable application, which means you can unpack it anywhere and run it from there.
+
+However, it would be nice to have an installer (similar to [http://izpack.org/ IzPack] or other Java-based installers), which just copies Fiji from where it happens to be at the moment to a user specified location, and then adds menu entries, file type associations, desktop icons, QuickLaunch shortcuts, maybe adjusts the PATH environment variable.
+
+In short, basically provide all the niceties one expects from an installer.
+
+'''Goal:''' Provide a proper installer for Fiji.<br />
+'''Language:''' Java.<br />
+'''Mentor:''' Johannes Schindelin (johannes.schindelin AT gmx.de)<br />
+
 == Implementing algorithms for imglib ==
 
 The new imglib supports dimension-, storage- and data type independent image processing. This library has some algorithms built-in already but there is a strong need to generically implement more general image processing algorithms, storage strategies and data types such as:
