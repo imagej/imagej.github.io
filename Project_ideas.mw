@@ -115,10 +115,6 @@ Often, it would be very convenient to remember the current cursor position to co
 
 
 
-== Script Editor: Show backtraces in the status window and make them clickable ==
-
-When there is a compiler error, or an exception at runtime, it would be better to show the backtrace in the Script Editor window.  Further, it would be very convenient to jump to the appropriate code line when clicking on a line of the backtrace (this most likely depends on [[#Add_tabbed_editing_to_the_Script_Editor|tabbed editing]]).
-
 = Fiji development environment/infrastructure =
 
 == GUI Testing framework ==
