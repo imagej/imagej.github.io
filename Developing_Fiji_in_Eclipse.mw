@@ -68,11 +68,12 @@ git checkout VIB   # yes, this is the master branch of VIB
 
 
 You should probably check out the [[ImageJA]] submodule too, and  check out its fiji branch:
-ch
+
+<source lang="bash">
 cd ~/workspace/fiji
 git submodule init ImageJA
 git submodule update ImageJA
-cd ~/workspace/fiji/ImageJA
+cd ImageJA
 git checkout -b fiji origin/fiji 
 </source>
 
