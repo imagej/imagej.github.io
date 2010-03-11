@@ -210,6 +210,18 @@ The purpose of this project is to segment in a fully automatic way round, convex
 '''Language:''' Java<br>
 '''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
 
+== Fiber segmentation ==
+
+Biological images sometimes contain fiber-like structures, such as cell membranes (in 2D, they are fiber-like), the mitotic spindle, or microtubuli. Example (the green signal):
+
+[[Image:Mitosis.jpg|center]]
+
+A combination of edge detection, hough transform and fitting should provide a robust segmentation of such structures.
+
+'''Goal:''' Implement a segmentation method for linear structures.<br>
+'''Language:''' Java<br>
+'''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
+
 == Texture segmentation ==
 
 Not all images which Fiji users are interested in contain bright objects on dark background, or vice versa. Sometimes, the structures cannot be discerned using the intensity, but only using statistic measures where the inside pixels have a different geometric distribution than the outside pixels. Example:
