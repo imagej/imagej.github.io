@@ -32,18 +32,9 @@ Some plugins are managed as submodules.  If you want to work on them, you will h
  git submodule init ImageJA TrakEM2 VIB micromanager1.1 mpicbg
  git submodule update
 
-The build system will attempt to use the system Java installation if it is available.  However, on some platforms this may not work (or you may not have a recent enough Java installation) so we recommend that you also initialize and update the appropriate Java submodule for your system.  To do this, run one of these commands:
+'''Note:''' in the common case, you do not need <u>any</u> submodule to be checked out (except the Java submodule, which will be checked out automatically once you run the [[Fiji Build System|Fiji Build]] with:
 
- git submodule init java/linux          # For 32-bit Linux systems
- git submodule init java/linux-amd64    # For 64-bit Linux systems
- git submodule init java/macosx-java3d  # For MacOS X systems
- git submodule init java/win32          # For 32-bit Windows systems
- git submodule init java/win64          # For 64-bit Windows systems
-
-Then update the submodules again with:
-
- git submodule update java/<the-name-for-your-OS>
-
+ ./Build.sh
 
 Note: using <b>git submodule update</b> without specifying which submodule, will update <b>all</b> submodules. What <i>update</i> means: "put all submodules, if checked out, to the last commit that was committed in the fiji repos". Which is most likely not what you want--will put any submodule that you have been working on into a <b>(no branch)</b> situation. To fix it, just cd to that submodule <i>git checkout master</i> or whatever branch you were working on.
 
