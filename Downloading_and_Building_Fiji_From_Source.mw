@@ -11,6 +11,13 @@ Your first step should be to "clone" the fiji repository with the following comm
 
 This should start downloading the base fiji repository and unpack it into a directory called "fiji" in your current directory.  Once this has successfully completed, change into the newly created "fiji" directory.
 
+'''If this clone is slow''', you might want to try to clone from github.com, and after that switch back to the official repository:
+
+ git clone git://github.com/dscho/fiji
+ cd fiji
+ git config remote.origin.url git://pacific.mpi-cbg.de/fiji.git
+ git pull
+
 ==== Cloning source as known contributor ====
 The above command creates a unknown contributor copy of Fiji in your computer. If you have your own user account in pacific.mpi-cbg.de, then you should clone fiji with the following command:
  
