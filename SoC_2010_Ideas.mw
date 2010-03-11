@@ -273,6 +273,20 @@ This proposal is about adding at least one such segmentation algorithm to Fiji.
 '''Language:''' Java<br>
 '''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
 
+== Add trainable region merging ==
+
+We have implemented the Statistical Region Merging algorithm in Fiji. It segments the image into different regions.
+
+This is done by iterating over all pixel neighbor pairs sorted by pixel difference in ascending order, testing by a simple statistical test whether the two regions the two pixels belong to (if they are not already in the same region) are not really different, and therefore can be merged.
+
+The same strategy can be performed using different statistical tests, or parameterized tests.
+
+This project is about implementing a trainer for such tests, whose result is a model that would perform the same segmentation as it was trained with, but can be applied to high-throughput segmentation as well.
+
+'''Goal:''' Implement a plugin that trains a region merging model on user-specified images.<br>
+'''Language:''' Java<br>
+'''Mentor:''' Johannes Schindelin (johannes.schindelin@gmx.de)
+
 = Other Resources =
 * [[SoC 2010 Application]]
 
