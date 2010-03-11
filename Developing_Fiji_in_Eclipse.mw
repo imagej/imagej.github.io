@@ -67,6 +67,14 @@ git checkout VIB   # yes, this is the master branch of VIB
 </source>
 
 
+You should probably check out the ImageJA submodule too, and '''don't checkout any branch on it''':
+
+<source lang="bash">
+cd ~/workspace/fiji
+git submodule init ImageJA
+git submodule update ImageJA
+</source>
+
 Fiji comes with its own build system that we will later use from Eclipse.  Test, if Fiji builds properly
 
 <source lang="bash">
