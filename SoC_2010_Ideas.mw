@@ -42,8 +42,6 @@ its questions as part of your application.
 
 = Project ideas =
 
-
-
 == Applying machine learning to the image segmentation problem ==
 
 The term ''image segmentation'' describes the task where objects in an image are to be outlined, so that every pixel is connected to either a named object, or background.
@@ -139,6 +137,19 @@ The new imglib supports dimension-, storage- and data type independent image pro
 '''Goal:''' Implement as many image processing algorithms using the imglib as possible<br />
 '''Language:''' Java.<br />
 '''Mentor:''' Stephan Preibisch (preibisch AT mpi-cbg.de) or Johannes Schindelin (johannes.schindelin AT gmx.de)<br />
+
+== Composing a feature extraction library for supervised training of segmentations ==
+
+On natural images machine learning approaches like boosted edge learning [1] or global probability of boundary [2] have demonstrated significant improvement in image segmentation by training on manually labeled ground truth.
+
+In order to apply similar approaches to biological images a feature extraction library is necessary to capture the large variability of biological structures. The library should cover a range of features adaptable to different image modalities. 
+
+Possible features include: local binary patterns, wavelets, textons, gabor filter, ...
+
+While significant features for a specific classification task can be selected based on manual labels, it would be beneficial for the usability of segmentation plugins to have an intuitive wizard that allows the user to define potential parameters by visual inspection of the data, e.g. providing the corresponding blurred image to select reasonable frequencies.
+ 
+[1] Piotr Dollar, Zhuowen Tu, and Serge Belongie, [http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.91.4383&rep=rep1&type=pdf ''Supervised Learning of Edges and Object Boundaries''], CVPR, 2006.<br/>
+[2] Michael Maire, Pablo Arbelaez, Charless Fowlkes and Jitendra Malik, [http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/papers/mafm-cvpr08.pdf ''Using Contours to Detect and Localize Junctions in Natural Images.''],CVPR 2008
 
 == Translate ITK methods into Fiji ==
 
