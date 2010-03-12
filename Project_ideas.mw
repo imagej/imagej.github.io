@@ -173,6 +173,12 @@ At the moment, every developer has to do that job herself, but there is no reaso
 
 There are beginnings of such an infrastructure in the ''ant'' branch of ''fiji.git'', but they are in dear need of a rework and some dedication.
 
+== Port the Fiji launcher to plain C ==
+
+The Fiji launcher has a large footprint due to being written in C++, and besides, it is usually easier to get ahold of a C compiler.
+
+So let's rewrite the C++-specific parts in plain C.
+
 = User interface improvements =
 
 == Add a meta-plugin to run other plugins with ranges of parameters ==
