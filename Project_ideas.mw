@@ -157,6 +157,18 @@ The project is not without complications, though:
 
 = User interface improvements =
 
+== Add a meta-plugin to run other plugins with ranges of parameters ==
+
+Many plugins take parameters, and it might not be obvious what the optimal values are. So it would be nice to have a plugin that can call another plugin with a range of values.
+
+The idea is to let the meta-plugin run the plugin which asks for the user input in the normal way. But then, the meta-plugin will analyze what parameters were specified, and ask for increments and stop criteria of the numeric ones. With these data, it will run the plugin in a loop.
+
+The result could be presented as a stack of the result images.
+
+Another (more hacky) possibility of getting the range parameters is to intercept the dialog before it is shown, and extend the numeric input fields by increment and stop entries.
+
+Suggested by Quentin de Robillard.
+
 == Integrate ImageFlow into Fiji ==
 
 [[Image:ImageFlow.png|700px|center]]
