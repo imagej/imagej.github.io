@@ -155,6 +155,14 @@ The project is not without complications, though:
 
 * Cross-site dependencies should be handled by having hints in the XML database as to what other site is supposed to have the newest dependency.
 
+== Integrate [http://www.jgit.org JGit] into Fiji ==
+
+An important part of Fiji's success is the ease with which developers can collaborate through the use of [[Git]].
+
+There exists a pure Java implementation of Git called [http://www.jgit.org JGit], which already provides a large part of Git's functionality.
+
+It would be nice to have it integrated into Fiji so that the Script Editor can give the developers an even smoother developing experience.
+
 = User interface improvements =
 
 == Add a meta-plugin to run other plugins with ranges of parameters ==
