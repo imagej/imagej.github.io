@@ -27,19 +27,11 @@ This will create the folder ~/workspace/fiji where you have the core Fiji reposi
 
 <span style="color:#ff0000"><b>Note:</b></span> change "contrib" for your user name in ''pacific.mpi-cbg.de'' if you have an account there.
 
-In order to run Fiji properly, it is suggested to use the JRE which is shipped with Fiji.  This is a platform dependent submodule of the Fiji repository.  Check it out with
+In order to run Fiji properly, it is suggested to use the JRE which is shipped with Fiji.  This is a platform dependent submodule of the Fiji repository. It will be automatically checked out when compiling Fiji:
 
 <source lang="bash">
 cd ~/workspace/fiji
-git submodule init java/linux-amd64
-git submodule update java/linux-amd64
-</source>
-
-Check out the master branch of this submodule explicitly
-
-<source lang="bash">
-cd ~/workspace/fiji/java/linux-amd64
-git checkout master
+./Build.sh
 </source>
 
 Check out all submodules that you want to work with e.g.
@@ -66,16 +58,6 @@ cd ../VIB
 git checkout VIB   # yes, this is the master branch of VIB
 </source>
 
-
-You should probably check out the [[ImageJA]] submodule too, and  check out its fiji branch:
-
-<source lang="bash">
-cd ~/workspace/fiji
-git submodule init ImageJA
-git submodule update ImageJA
-cd ImageJA
-git checkout -b fiji origin/fiji 
-</source>
 
 Fiji comes with its own build system that we will later use from Eclipse.  Test, if Fiji builds properly
 
