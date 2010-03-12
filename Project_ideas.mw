@@ -163,6 +163,16 @@ There exists a pure Java implementation of Git called [http://www.jgit.org JGit]
 
 It would be nice to have it integrated into Fiji so that the Script Editor can give the developers an even smoother developing experience.
 
+== Generate Eclipse/NetBeans/Ant/IntelliJ project files from [[Fiji Build System|Fiji Build]] ==
+
+We have a custom build system, which is nice enough for the inventor of it, because it allows him to build Fiji and all its dependencies quickly.
+
+However, some developers want to use integrated development environments, and while it is not always easy to accomplish simple tasks (Eclipse has no way to say "build a .jar file from these .class files" without a 3rd-party build helper, for example), the niceties provided by such programs make it worthwhile to jump through hoops to get a proper project setup.
+
+At the moment, every developer has to do that job herself, but there is no reason why we should not be able to teach the [[Fiji Build System]] to generate project files to avoid unnecessary work, and even more to prevent differing setups between developers.
+
+There are beginnings of such an infrastructure in the ''ant'' branch of ''fiji.git'', but they are in dear need of a rework and some dedication.
+
 = User interface improvements =
 
 == Add a meta-plugin to run other plugins with ranges of parameters ==
