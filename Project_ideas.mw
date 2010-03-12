@@ -119,6 +119,12 @@ Many plugins' sources come in the form of a .jar, often being included together 
 
 Now that the Script Editor has already learnt to build .jar files from single .java files, and to use the [[Fiji Build System]] to build .jar files from Fiji's plugin sources, it is only natural to offer a function to import sources into Fiji's source tree, and to integrate them properly (such as modifying .gitignore and Fakefile appropriately, and to add a staged-plugins/''basename''.config after analyzing the available classes for ImageJ plugins).
 
+== Add support for Haskell (via Jaskell) and Tcl (via Jacl) ==
+
+We already have Jacl in Fiji, as it is a dependency of Batik. There is also a pure-Java implementation of the Haskell language, and both should be relatively easy to integrate into Fiji as scripting languages.
+
+For Tcl, the Script Editor would need minimal adjustments, as RSyntaxTextArea already has support for Tcl, but for Haskell, a new TokenMaker would have to be implemented.
+
 = Fiji development environment/infrastructure =
 
 == GUI Testing framework ==
