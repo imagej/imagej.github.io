@@ -125,6 +125,14 @@ We already have Jacl in Fiji, as it is a dependency of Batik. There is also a pu
 
 For Tcl, the Script Editor would need minimal adjustments, as RSyntaxTextArea already has support for Tcl, but for Haskell, a new TokenMaker would have to be implemented.
 
+== Teach the Script Editor about the ImageJ Macro language ==
+
+While it is true that the macro language is seriously limited, compared to the other scripting languages in Fiji, it is also true that macros are 1st class citizens when it comes to the macro recorder, and macros also make it easy to install shortcuts and action tools (something that is not possible with Fiji's scripting languages).
+
+Unfortunately, the Script Editor does not yet support the macro language, though, which means that users cannot edit syntax-highlighted macros.
+
+So here is a proposal to change that: add syntax-highlighting support for ImageJ macros to the Script Editor, and open macros in the Script Editor by default.
+
 = Fiji development environment/infrastructure =
 
 == GUI Testing framework ==
