@@ -193,6 +193,22 @@ The Fiji launcher has a large footprint due to being written in C++, and besides
 
 So let's rewrite the C++-specific parts in plain C.
 
+== Make the Fiji Updater more intelligent about restarting ==
+
+Only when there are updates outside plugins/ is it necessary to do a full restart; otherwise, a simple "Update Menus" will do the trick.
+
+Further, after the message "You need to restart Fiji" (or the Update Menus), there is no reason for the Updater to stay open.
+
+And finally, if a restart is required, the user could be asked whether a restart should be attempted, and a JNI-provided function could be called with a list of open images (if there are unsaved images, they should be saved temporarily into temporary files) and result tables, which then re-executes Fiji appropriately.
+
+== Cache Fiji Updater's checksums ==
+
+The most tedious part about updating is waiting at the beginning, when the updater checksums all available files.
+
+The checksums could be cached in db.xml.gz together with the mtimes of the respective files, but care has to be taken to
+* keep db.xml.gz's mtime intact (otherwise the up-to-date check will fail get confused), and
+* the uploading part needs to be adjusted to write out a "scrubbed" db.xml.gz for upload (this is needed for the multi-update-sites project anyway).
+
 = User interface improvements =
 
 == Add a meta-plugin to run other plugins with ranges of parameters ==
