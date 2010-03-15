@@ -9,9 +9,7 @@
 | latest version         = January 12<sup>th</sup>, 2010
 | status                 = active
 | category               = [[:Category:Skeleton|Skeleton]], [[:Category:Analysis|Analysis]]
-}}
-
-Analysis of 2D and 3D skeleton images. For the ImageJ plugin, visit [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start AnalyzeSkeleton at ImageJ wiki].
+}}Analysis of 2D and 3D skeleton images. For the ImageJ plugin, visit [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start AnalyzeSkeleton at ImageJ wiki].
 
 {|
 |style="vertical-align:top" |[[Image:Analyze_skeleton_09_13_2009.png|thumb|350px|Example of AnalyzeSkeleton performance]]
