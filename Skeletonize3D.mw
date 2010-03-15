@@ -10,8 +10,7 @@
 | status                 = stable
 | category               = [[:Category:Skeleton|Skeleton]]
 | website                = [http://imagejdocu.tudor.lu/doku.php?id=plugin:morphology:skeletonize3d:start Skeletonize3D at ImageJ wiki]
-}}
-2D and 3D skeletonization of binary images.
+}}2D and 3D skeletonization of binary images.
 
 {|
 |style="vertical-align:top" |[[Image:Smoothed-bat-cochlea-volume.gif|thumb|Smoothed bat cochlea volume]]
