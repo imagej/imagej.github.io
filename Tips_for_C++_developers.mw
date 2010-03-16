@@ -95,6 +95,11 @@ Coming from C++, developers often tend to implement everything themselves, even 
 
 Likewise, Java comes with useful classes implementing neat things such as priority queues (since Java 1.5).
 
+
+== 'final' does not mean 'const' ==
+
+In C++, when an array is declared <i>const</i>, none of its entries can be edited in any way. But in java, when a variable that points to an array is declared <i>final</i> only that variable cannot be assigned. Any entries of the array (or collection, or whatever container) are editable, and the entry slots themselves may be reassigned.
+
 = Conventions =
 
 == Class and function names ==
