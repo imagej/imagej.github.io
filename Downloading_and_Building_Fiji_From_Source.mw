@@ -38,6 +38,11 @@ Some plugins are managed as submodules.  If you want to work on them, you will h
 
 Note: using <b>git submodule update</b> without specifying which submodule, will update <b>all</b> submodules. What <i>update</i> means: "put all submodules, if checked out, to the last commit that was committed in the fiji repos". Which is most likely not what you want--will put any submodule that you have been working on into a <b>(no branch)</b> situation. To fix it, just cd to that submodule <i>git checkout master</i> or whatever branch you were working on.
 
+Alternately, if you want to automatically clone, configure and/or update a submodule with all its dependent submodules, you can run (e.g., for TrakEM2):
+
+ cd bin
+ ./configure-submodule.py TrakEM2
+
 === Getting a snapshot without Git ===
 
 If you insist on not using Git, you can download a snapshot of Fiji [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=snapshot;h=master;sf=tgz here], but you need to make sure that you have a new enough Java version installed.
