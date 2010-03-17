@@ -1,3 +1,6 @@
 Do you need image data to try your algorithms on? Do you lack expert ground truth to test your methods? No problem! Here you have a list of available public data sets from the Fiji community and other sources:
 
 * [http://www.ini.uzh.ch/~acardona/data.html Segmented ssTEM stack of neural tissue], thanks to Albert Cardona.
+
+[[Category:Data]]
+[[Category:Segmentation]]
