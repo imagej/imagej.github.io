@@ -3,5 +3,8 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
 * [http://www.ini.uzh.ch/~acardona/data.html Segmented ssTEM stack of neural tissue], thanks to Albert Cardona.
 [[File:TrakEM2-tree-datastructure.png|thumb]][[File:TrakEM2-display-s.jpg|thumb]]
 :30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.
+:'''The challenge''': use this data set to train machine learning software for the purpose of automatic segmentation of neural structures in ssTEM.
+
+:The images are representative of actual images in the real-world: there is a bit of noise; there are image registration errors; there is even a small stitching error in one section. None of these led to any difficulties in the manual labeling of each element in the image stack by an expert human neuroanatomist. A software application that aims at removing or reducing human operation must be able to cope with all these issues.
 [[Category:Data]]
 [[Category:Segmentation]]
