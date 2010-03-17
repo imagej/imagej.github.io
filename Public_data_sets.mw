@@ -1,7 +1,7 @@
 Do you need image data to try your algorithms on? Do you lack expert ground truth to test your methods? No problem! Here you have a list of available public data sets from the Fiji community and other sources:
 
-[[File:TrakEM2-tree-datastructure.png|thumb]][[File:TrakEM2-display-s.jpg|thumb]]
 * [http://www.ini.uzh.ch/~acardona/data.html Segmented ssTEM stack of neural tissue], thanks to Albert Cardona.
+[[File:TrakEM2-tree-datastructure.png|thumb]][[File:TrakEM2-display-s.jpg|thumb]]
 :30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.
 [[Category:Data]]
 [[Category:Segmentation]]
