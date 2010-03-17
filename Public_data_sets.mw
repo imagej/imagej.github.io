@@ -9,5 +9,9 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
 
 * [http://loci.wisc.edu/software/sample-data Sample data at LOCI], in a variety of file formats.
 
+* [http://ome-xml.org/wiki/OmeTiffData Sample OME-TIFF data on ome-xml.org], thanks to Josh Bembenek.
+[[File:tubhiswt4D.png|thumb]]
+:The dataset consists of tubulin histone GFP coexpressing ''C. elegans'' embryos. All image planes were collected at 512x512 resolution in 8-bit grayscale. 
+
 [[Category:Data]]
 [[Category:Segmentation]]
