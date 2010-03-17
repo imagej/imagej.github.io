@@ -6,7 +6,13 @@
 
 <p>Submodules, although existing as folders inside the fiji repository, are different: only the folder name, as a path pointer, is registered as belonging to fiji's git repository, together with the current revision ("commit name", i.e. that 40-digit hex string which is the unique identifier of each commit) of that submodule.</p> 
 
+=== Checking out submodules ===
+
 <p>Each submodule is a proper full-fledged git repository, so any git commands executed within the folders of the submodule will affect that git repository, not fiji's.</p>
+
+<p>However, to work with a submodule you must clone that repository. See the [[Downloading and Building Fiji From Source#Submodules|Submodules]] section of the [[Downloading and Building Fiji From Source]] page for details.</p>
+
+=== Submodule workflow ===
 
 <p>The usual sequence of commands when working inside a submodule:</p>
 
