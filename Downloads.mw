@@ -13,9 +13,9 @@ The easiest way to fetch the source code for Fiji is to use [http://git.or.cz/ g
 
 === Packages for Debian / Ubuntu ===
 
-'''These packages have not been extensively tested, so feedback to mark-fiji ''at'' longair.net would be very much appreciated.'''
+''These packages are many months old at the moment, so for an up to date Fiji we suggest that you download one of the packages above instead.  New and improved Debian / Ubuntu packages will be available shortly''
 
-There are Debian packages of Fiji.  Add the following lines to /etc/apt/sources.list:
+<del>There are Debian packages of Fiji.  Add the following lines to /etc/apt/sources.list:
 
  <nowiki>deb http://pacific.mpi-cbg.de/downloads/apt/ ./</nowiki>
  <nowiki>deb-src http://pacific.mpi-cbg.de/downloads/apt/ ./</nowiki>
@@ -31,6 +31,8 @@ Alternatively, if you want to install the .deb files directly with dpkg, you can
 
 * [http://pacific.mpi-cbg.de/downloads/apt/binary-i386/fiji_20090513_i386.deb Package for i386 (32 bit)]
 * [http://pacific.mpi-cbg.de/downloads/apt/binary-amd64/fiji_20090513_amd64.deb Package for amd64 (64 bit)]
+
+ </del>
 
 ==== Known Bugs ====
 
