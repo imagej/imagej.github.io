@@ -10,6 +10,13 @@ The corresponding technique in Java is called ''generics'' and is available sinc
 
 In ''imglib'', these issues have been addressed, in a way compatible with Java.
 
+
+= Vocabulary =
+
+<b>Type</b>: The Type class wraps a value, in the same way that the java.lang Integer, Double, Float, etc. wrap a value. The value is not necessarily a primitive (like int, short, long, char, float, double ...) but can be a complex number, base pair, boolean, label, and other non-numerical types.
+
+<b>Outside Strategy</b>: The OutsideStrategy is a method to handle values when requested at a position beyond the boundaries of the image. Typical outside strategies may be to return a constant value, or to mirror the values of the image.
+
 = Core ideas of the architecture =
 
 Since basic types cannot be passed as parameters to Java generics, and operators cannot be overloaded, all values must be accessed via ''Type'' instances. ''Type'' is the base interface for all data types handled by imglib. If you need a new data type to be handled, just make a new class implementing the ''Type'' interface.
