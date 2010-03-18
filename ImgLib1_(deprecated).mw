@@ -19,7 +19,7 @@ In ''imglib'', these issues have been addressed, in a way compatible with Java.
 
 = Core ideas of the architecture =
 
-Since basic types cannot be passed as parameters to Java generics, and operators cannot be overloaded, all values must be accessed via ''Type'' instances. ''Type'' is the base interface for all data types handled by imglib. If you need a new data type to be handled, just make a new class implementingth the ''Type'' interface. There is a convenient abstract class "TypeImpl" that provides default implementations for some common methods.
+Since basic types cannot be passed as parameters to Java generics, and operators cannot be overloaded, all values must be accessed via ''Type'' instances. ''Type'' is the base interface for all data types handled by imglib. If you need a new data type to be handled, just make a new class implementing the ''Type'' interface. There is a convenient abstract class "TypeImpl" that provides default implementations for some common methods.
 
 To access pixel values, ''imglib'' provides ''Cursor'' classes. The simplest ''Cursor'' just iterates over all pixels of the image. This cursor is guaranteed to traverse the pixels in an optimal fashion, regardless of the way the pixels are stored in memory. There are other cursors, implementing the ''Localizable'' interface, which report their position. The most specific cursor is the ''LocalizableByDimCursor'', which allows to set the position to a specified one.
 
