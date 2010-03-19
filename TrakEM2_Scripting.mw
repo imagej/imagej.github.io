@@ -349,7 +349,9 @@ run()
 
 = Enrich the GUI of TrakEM =
 
-TrakEM API is accessible at all times. Here is an example that adds a new tab to the display. This tab consists of a JPanel with a single button in it.
+=== Add an extra tab to a Display ===
+
+TrakEM API is accessible at all times. Here is an example that adds a new tab to the display. The new tab consists of a JPanel with a single button in it.
 
 Notice that Jython lets you define the methods of event listeners as additional arguments to the constructor. So the JButton gets an actionPerformed method (from the ActionListener interface) just by referencing a declared method.
 
