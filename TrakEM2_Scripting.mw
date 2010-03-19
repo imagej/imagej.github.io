@@ -347,6 +347,45 @@ def run():
 run()
 </source>
 
+= Enrich the GUI of TrakEM =
+
+TrakEM API is accessible at all times. Here is an example that adds a new tab to the display. This tab consists of a JPanel with a single button in it.
+
+Notice that Jython lets you define the methods of event listeners as additional arguments to the constructor. So the JButton gets an actionPerformed method (from the ActionListener interface) just by referencing a declared method.
+
+<source lang="python">
+# Albert Cardona 2010-03-19 at EMBL
+# Specially demo'ed for Larry Lindsey
+
+def doSomething(evt):
+  IJ.showMessage("Button pushed!")
+
+def addReconstructToolkit(display):
+  frame = display.getFrame()
+  split = frame.getContentPane().getComponent(0)
+  left = split.getComponent(0)
+  tabs = left.getComponent(2)
+  # Check that it's not there already
+  title = "Reconstruct toolbar"
+  for i in range(tabs.getTabCount()):
+    if tabs.getTitleAt(i) == title:
+      IJ.showMessage("Reconstruct toolbar already in this Display!")
+      return
+  # Otherwise, add it new:
+  from javax.swing import JPanel, JButton
+  pane = JPanel()
+  b = JButton("Push it", actionPerformed=doSomething)
+  pane.add(b)
+  tabs.add(title, pane)
+
+
+front = Display.getFront()
+if front is not None:
+  addReconstructToolkit(front)
+else:
+  IJ.showMessage("Open a display first!")
+</source>
+
 = See also =
 
 == TrakEM2 tutorials ==
