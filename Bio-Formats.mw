@@ -1,0 +1,71 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = LOCI Bio-Formats plugins
+| author                 = [http://loci.wisc.edu/ UW-Madison LOCI], [http://www.glencoesoftware.com/ Glencoe Software]
+| maintainer             = Curtis Rueden, Melissa Linkert
+| filename               = [http://loci.wisc.edu/bio-formats/downloads loci_tools.jar] 
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=bio-formats/.git;a=summary Git], [http://loci.wisc.edu/software/accessing-source-code SVN]
+| latest version         = [http://loci.wisc.edu/bio-formats/downloads See Bio-Formats Downloads page]
+| status                 = active
+| category               = [[:Category:Import-Export]]
+}}
+
+== Purpose ==
+
+Import data from many life sciences file formats, and export to several open formats.
+
+== Documentation ==
+
+What follows is a brief overview of the available plugins. You will find them all under the "LOCI" submenu of Plugins. See the [http://loci.wisc.edu/software/bio-formats Bio-Formats web site] for additional information about Bio-Formats in general.
+
+=== Data Browser ===
+
+The '''Data Browser''' command is just a shortcut for the '''Bio-Formats Importer''', using a Data Browser image window—similar to a hyperstack, but with more features.
+
+=== Bio-Formats Importer ===
+
+The '''Bio-Formats Importer''' is a plugin for reading data into Fiji. It can open many dozens of proprietary life sciences formats, and standardize their acquisition metadata into a common [http://loci.wisc.edu/bio-formats/about OME data model]. It will also extract and set basic metadata values such as [http://pacific.mpi-cbg.de/wiki/index.php/SpatialCalibration spatial calibration] if they are available in the file.
+
+Often, you will not need to worry about this plugin to import your data, because Bio-Formats is largely integrated with the File/Open command of Fiji. However, for certain file formats, you may wish to explicitly activate the Bio-Formats Importer to override the default behavior of Fiji. For example, by default Fiji uses some built-in logic to open TIFF files, but this logic may fail with certain TIFFs. The Bio-Formats Importer plugin may be able to import such TIFFs successfully.
+
+=== Bio-Formats Exporter ===
+
+The '''Bio-Formats Exporter''' is a plugin for exporting data to disk.
+
+It can save to the open [http://www.ome-xml.org/wiki/OmeTiff OME-TIFF] file format, as well as several movie formats (e.g., QuickTime, AVI) and graphics formats (e.g., PNG, JPEG).
+
+=== Bio-Formats Remote Importer ===
+
+The '''Bio-Formats Remote Importer''' is a plugin for importing data from a remote URL.
+
+It is likely to be less robust than working with files on disk, so when possible we recommend downloading your data to disk and using the regular Bio-Formats Importer instead.
+
+=== Bio-Formats Windowless Importer ===
+
+The '''Bio-Formats Windowless Importer''' is a version of the '''Bio-Formats Importer''' plugin that runs with the last used settings to avoid popping up any additional dialogs beyond the file chooser. If you find that you always use the same import settings, you may wish to use the windowless importer to save time.
+
+=== Bio-Formats Macro Extensions ===
+
+The LOCI plugins come with a set of macro extensions to enable additional functionality from macros. The '''Bio-Formats Macro Extensions''' plugin prints out the available commands to the ImageJ log window, along with instructions for using them.
+
+=== Stack Slicer ===
+
+The '''Stack Slicer''' plugin is a helper plugin used by the '''Bio-Formats Importer'''. It can also be used standalone to split a stack across channels, focal planes or time points.
+
+=== Stack Colorizer ===
+
+The '''Stack Colorizer''' plugin is a helper plugin used by the '''Bio-Formats Importer'''. It can also be used standalone to merge multiple any number of channels into RGB or composite color.
+
+=== LOCI Plugins Configuration ===
+
+The '''LOCI Plugins Configuration''' dialog is a useful way to configure the behavior of each file format. You can see a list of supported file formats on the Formats tab, toggle each format on or off (which is useful, for example, if your file is being detected as the wrong format), and toggle whether each format bypasses the importer options dialog using the "Windowless" checkbox. You can also configure any specific options for each format—for example, for QuickTime, you can toggle between Apple's QTJava library or Bio-Formats's built-in support.
+
+In addition, you can see a list of available helper libraries used by Bio-Formats on the Libraries tab.
+
+=== LOCI Plugins Shortcut Window ===
+
+The '''LOCI Plugins Shortcut Window''' is a small window with a quick-launch button for each LOCI plugin. You can also drag and drop files onto the shortcut window to open them quickly using the '''Bio-Formats Importer''' plugin.
+
+=== Update LOCI Plugins ===
+
+The '''Update LOCI Plugins''' command will check online for updates to the LOCI Plugins. In the case of Fiji, we recommend that you do not use this method of update, but instead use the [[Update_Fiji|Fiji Updater]].
