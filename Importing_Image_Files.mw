@@ -2,6 +2,8 @@ The File / Import submenu.
 
 Most of the commands listed, particularly Fiji extensions, are also available (via HandleExtraFileTypes) simply by using the File / Open... menu item.
 
+See also the [[Bio-Formats]] plugins.
+
 ==ImageJ Built-in==
 
 * '''Image Sequence...'''
