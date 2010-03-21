@@ -1,0 +1,66 @@
+== Trainable Segmentation Plugin ==
+This tutorial shows you how to use the trainable segmentation plugin. Trainable means that you have to draw some examples of foreground and background in the image and then a classifier is trained by your examples and segments the rest of the image. 
+Afterwards you can also apply the trained classifier to other images or stacks. 
+
+The plugin can be found in the Fiji menu under Plugins / Segmentation / Trainable Segmentation.
+
+=== Chose training image ===
+
+First, you have to choose the image you want to train on. 
+
+[[Image:trainingImage.jpg]]
+
+now open the plugin (Plugins / Segmentation / Trainalbe Segmentation). It opens a training window that contains the training image.
+
+[[Image:Playground.jpg]]
+
+=== Make example annotations ===
+
+Next, we have to teach the plugin what a membrane in the image looks like. So we select pixels from a membrane using the freeline tool.
+
+[[Image:PlaygroundFirstAnnotation.jpg]]
+
+Now push the positive example button. The selected trace will turn green, showing that it is a positive example (positive means forground).
+
+[[Image:firstPositiveExample.jpg]]
+
+For training it is also important what a membrane does not look like. So we select some other pixels and push the negative example button.
+
+[[Image:FirstNegativeExample.jpg]]
+
+=== Train the classifier ===
+
+Now it is time to train the classifier and look at the result, so we push the train classifier button on the left side. After training the plugin will automatically classify all pixels from the training image and present the result in a color overlay. This overlay can be switched on and off with the toggle overlay button.
+
+[[Image:trainedClassifier.jpg]]
+
+=== Refine the training ===
+
+Looking at the classification result there are some cases that are harder to classify than others. We add more annotations to help the classifier correct these cases. This is done by adding positive and negative examples and then pushing the train classifier button in between to see how the result changes. If you want to delete an example trace, select the trace in the right list (it turns to yellow in the training image) and then double click on it.
+Here are some examples of what the annoations can look like:
+
+[[Image:MultiAnnotations.jpg]]
+
+And here is the corresponding classification result:
+
+[[Image:FinalOverlay.jpg]]
+
+=== Apply the trained classifier to other images ===
+
+If you want a binary image of this result you can use the create result button and a new window with the classification image will open.
+
+The other option is to apply the trained classifier to other images or stacks. For this we click the apply classifier button. A dialog opens asking for the image or stack that should be classified using the current trained classifier. Depending on the size of this image or stack, the classification can take some time. When it is finished you see the image/stack the classifier was applied to and the result in new windows. These image can now be saved or further processed.
+
+[[Image:wholeImageClassified.jpg]]
+
+=== Tips ===
+  - You can use the save data and load data buttons to save the annotated examples. When you then open a new training image you can also load annotations from the former image and now add new examples on the new image. The classifier will be trained on the loaded and the currently annotated examples.
+  - Use a small image for training, as the classification of the whole image is taking some time. Training on the small image will limit your waiting time.
+  - At the moment the plugin is aimed for gray value images that are hard to segment with a threshold alone. When you have color images you might want to look at the SIOX plugin to segment them. 
+
+ 
+
+Have fun!
+
+[[Category:Tutorials]]
+[[Category:Plugins]]
