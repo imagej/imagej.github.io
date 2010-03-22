@@ -498,6 +498,31 @@ new_imp.show()
 
 Notice that this second approach is much slower: accessing every pixel from jython has a high cost. If you would like to do very fast pixel-level manipulations, use java or [[Clojure Scripting|Clojure]].
 
+
+=== Subtract the minimal value to an image ===
+
+Which is to say, translate the histogram so that the lowest value is at zero.
+
+<source lang="python">
+# Obtain current image and its pixels
+imp = IJ.getImage()
+pix = imp.getProcessor().getPixels()
+
+# find out the minimal pixel value
+min = reduce(Math.min, pix)
+
+# create a new pixel array with the minimal value subtracted
+pix2 = map(lambda x: x - min, pix)
+
+ImagePlus("min subtracted", FloatProcessor(imp.width, imp.height,
+pix2, None)).show()
+</source>
+
+Notice we used:
+* The <i>reduce</i> function to obtain a single value from a list of values (the pixel array) by applying a function to every pair of consecutive values (in this case, the Math.min).
+* <i>lambda</i>, which is used to declare an anonymous function that takes one argument.
+* The <i>map</i> function, which runs a function given as argument to every element of a list (here, every pixel) and returns a new list with all the results.
+
 == Tips and Tricks ==
 
 === Getting a list of all members in one package ===
