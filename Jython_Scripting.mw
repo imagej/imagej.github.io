@@ -506,7 +506,7 @@ Which is to say, translate the histogram so that the lowest value is at zero.
 <source lang="python">
 # Obtain current image and its pixels
 imp = IJ.getImage()
-pix = imp.getProcessor().getPixels()
+pix = imp.getProcessor().convertToFloat().getPixels()
 
 # find out the minimal pixel value
 min = reduce(Math.min, pix)
