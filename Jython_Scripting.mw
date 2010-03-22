@@ -519,7 +519,7 @@ You can fix this issue by putting the line
 
 as first line into your source code (or if it starts with ''#!/usr/bin/python'', as second line), as suggested [http://docs.python.org/tutorial/interpreter.html#source-code-encoding here]. You might need to replace the string ''iso-8859-15'' by something like ''utf-8'' if your source code is encoded in UTF-8.
 
-=== Error handling with try / catch / finally ===
+=== Error handling with try / except / finally ===
 
 See complete documentation at: [http://jythonpodcast.hostjava.net/jythonbook/chapter6.html jython book chapter 6].
 
