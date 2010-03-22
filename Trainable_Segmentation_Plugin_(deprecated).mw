@@ -1,3 +1,15 @@
+{{Infobox Plugin
+| name                   = Trainable Segmentation
+| software               = Fiji
+| author                 = Verena Kaynig
+| maintainer             = [http://www.kaynig.de Verena Kaynig]
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Trainable_Segmentation;h=078148a253d7434e4f50ffec2c36cb73e9f89fbd;hb=HEAD on gitweb]
+| released               = March 21<sup>th</sup>, 2010
+| latest version         = March 16<sup>th</sup>, 2010
+| status                 = stable, active
+| category               = [[:Category:Segmentation|Segmentation]]
+}}
+
 == Trainable Segmentation Plugin ==
 This tutorial shows you how to use the trainable segmentation plugin. Trainable means that you have to draw some examples of foreground and background in the image and then a classifier is trained by your examples and segments the rest of the image. 
 Afterwards you can also apply the trained classifier to other images or stacks. 
