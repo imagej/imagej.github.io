@@ -519,6 +519,42 @@ You can fix this issue by putting the line
 
 as first line into your source code (or if it starts with ''#!/usr/bin/python'', as second line), as suggested [http://docs.python.org/tutorial/interpreter.html#source-code-encoding here]. You might need to replace the string ''iso-8859-15'' by something like ''utf-8'' if your source code is encoded in UTF-8.
 
+=== Error handling with try / catch / finally ===
+
+<source lang="python">
+x = 10
+y = 0
+
+try:
+     z = x / y
+except NameError, e1:
+     print "A variable is not defined!", e1
+except ZeroDivisionError, e2:
+     print "Dividing by zero doesn't make any sense! Error:", e2
+finally:
+     print "This line will always print no matter what errors occurs."
+</source>
+
+Which prints:
+
+ Dividing by zero doesn't make any sense! Error: integer division or modulo by zero
+ This line will always print no matter what errors occurs
+
+To catch any kind of errors, use <i>sys.exc_info</i>:
+
+<source lang="python">
+import sys
+
+try:
+  z = x / z
+except:
+  print "Unexpected error: ", sys.exc_info()
+</source>
+
+Which prints:
+
+ Unexpected error:  (<type 'exceptions.NameError'>, NameError("name 'x' is not defined",), <traceback object at 0x2>)
+
 [[Category:Scripting]]
 [[Category:Jython]]
 
