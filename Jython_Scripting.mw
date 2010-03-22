@@ -532,7 +532,7 @@ except NameError, e1:
 except ZeroDivisionError, e2:
      print "Dividing by zero doesn't make any sense! Error:", e2
 finally:
-     print "This line will always print no matter what errors occurs."
+     print "This line will always print no matter what error occurs."
 </source>
 
 Which prints:
