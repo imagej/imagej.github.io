@@ -9,7 +9,7 @@ At the March 2010 Hackathon, I made lots of changes to the old package building 
 
 Since then, one our Google Summer of Code students, Yap Chin Kiet, and Johannes Schindelin worked on inferring dependencies between the jar and class files created in Fiji for the Fiji Updater, so we can reuse this code to infer package based dependencies.
 
-The improved system (which is half complete at the moment) should work in the following way:
+The improved system (which is half complete at the moment) should work in the following way: (I'll create a wrapper script to do all of this when I'm finished - note that once this process is complete, the generated Debian source packages should build everything without the additional steps.)
 
 === clone a new copy of fiji.git ===
 
@@ -34,13 +34,37 @@ Clone the respository afresh with:
             mpicbg \
             tcljava
 
+=== Check that git  ===
+
+This shouldn't be necessary if you've just cloned a new copy, as above, but in other situations it might be useful:
+
+  debian/update-debian.py --check-git-clean
+
 === Remove non-free and unneeded components ===
 
 Run the following command:
 
-   debian/update-debian.py  --clean --generate
+   debian/update-debian.py  --clean
 
-This should remove the non-free and unnecessary components and then '''(FIXME: not finished)''' create a debian/control file with the right dependencies and package definitions.
+This should remove the non-free and unnecessary components.
+
+=== Build the source tree (to generate the control file from) ===
+
+Unfortunately, in order to accurately generate the Debian package-based dependencies from the file-based dependencies in [http://pacific.mpi-cbg.de/update/db.xml.gz] we need to build the complete tree in order to find all the generate files which need to be assigned to packages.  So, build Fiji with the command that debian/rules will use with:
+
+  debian/build-command
+
+(We need to use a modified build command since we need to override some of the CLASSPATHs defined in Fakefile which refer to bundled jars which are now in dependent packages.)
+
+=== Generate the debian/control file ===
+
+'''(FIXME: not finished)''' create a debian/control file with the right dependencies and package definitions:
+
+  debian/update-debian.py --generate-complete-control
+
+=== Clean the build tree ===
+
+  debian/update-debian.py --clean
 
 === Build the debian packages ===
 
@@ -48,4 +72,4 @@ This should remove the non-free and unnecessary components and then '''(FIXME: n
 
 If you're not able to sign the packages, add the parameters "-us -uc".  If you don't want to generate the source package (because dpkg-source takes *ages* to run with dpkg-dev prior to 1.15.5.
 
-The debian/rules Makefile which is called by that command will '''(FIXME: not finished)''' call debian/update-debian.py --install to copy parts of the built tree to
+The debian/rules Makefile which is called by that command will '''(FIXME: not finished)''' call debian/update-debian.py --install to copy parts of the built tree to the right locations.
