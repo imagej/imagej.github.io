@@ -514,8 +514,7 @@ min = reduce(Math.min, pix)
 # create a new pixel array with the minimal value subtracted
 pix2 = map(lambda x: x - min, pix)
 
-ImagePlus("min subtracted", FloatProcessor(imp.width, imp.height,
-pix2, None)).show()
+ImagePlus("min subtracted", FloatProcessor(imp.width, imp.height, pix2, None)).show()
 </source>
 
 Notice we used:
