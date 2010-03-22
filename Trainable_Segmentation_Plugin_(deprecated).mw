@@ -63,7 +63,7 @@ If you want a binary image of this result you can use the create result button a
 
 The other option is to apply the trained classifier to other images or stacks. For this we click the apply classifier button. A dialog opens asking for the image or stack that should be classified using the current trained classifier. Depending on the size of this image or stack, the classification can take some time. When it is finished you see the image/stack the classifier was applied to and the result in new windows. These image can now be saved or further processed.
 
-[[Image:wholeImageClassified.jpg]]
+[[Image:wholeImageClassified.jpg|780px]]
 
 === Tips ===
 * You can use the save data and load data buttons to save the annotated examples. When you then open a new training image you can also load annotations from the former image and now add new examples on the new image. The classifier will be trained on the loaded and the currently annotated examples.
