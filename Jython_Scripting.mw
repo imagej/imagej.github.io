@@ -581,6 +581,12 @@ Which prints:
 
  Unexpected error:  (<type 'exceptions.NameError'>, NameError("name 'x' is not defined",), <traceback object at 0x2>)
 
+
+To ensure that you see the stack trace, print it to the ImageJ log window instead of stdout (whathever the latter may be):
+
+<source lang="python">
+    IJ.log(str(sys.exc_info()))
+</source>
 [[Category:Scripting]]
 [[Category:Jython]]
 
