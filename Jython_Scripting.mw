@@ -521,6 +521,8 @@ as first line into your source code (or if it starts with ''#!/usr/bin/python'',
 
 === Error handling with try / catch / finally ===
 
+See complete documentation at: [http://jythonpodcast.hostjava.net/jythonbook/chapter6.html jython book chapter 6].
+
 <source lang="python">
 x = 10
 y = 0
@@ -548,7 +550,7 @@ import sys
 try:
   z = x / z
 except:
-  print "Unexpected error: ", sys.exc_info()
+  print "Error: ", sys.exc_info()
 </source>
 
 Which prints:
