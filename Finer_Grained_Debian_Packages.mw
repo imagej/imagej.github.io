@@ -9,7 +9,9 @@ At the March 2010 Hackathon, I made lots of changes to the old package building 
 
 Since then, one our Google Summer of Code students, Yap Chin Kiet, and Johannes Schindelin worked on inferring dependencies between the jar and class files created in Fiji for the Fiji Updater, so we can reuse this code to infer package based dependencies.
 
-The improved system (which is half complete at the moment) should work in the following way: (I'll create a wrapper script to do all of this when I'm finished - note that once this process is complete, the generated Debian source packages should build everything without the additional steps.)
+The improved system (which is half complete at the moment) should work in the following way:
+
+(Instead of doing these step-by-step, you may want to run the convenience script <tt>debian/complete-build</tt> after doing the fresh clone.)
 
 === Clone a new copy of fiji.git ===
 
@@ -58,7 +60,7 @@ Unfortunately, in order to accurately generate the Debian package-based dependen
 
 === Generate the debian/control file ===
 
-'''(FIXME: not finished)''' create a debian/control file with the right dependencies and package definitions:
+Create a debian/control file with the right dependencies and package definitions:
 
   debian/update-debian.py --generate-complete-control
 
@@ -70,6 +72,6 @@ Unfortunately, in order to accurately generate the Debian package-based dependen
 
    dpkg-buildpackage -rfakeroot 
 
-If you're not able to sign the packages, add the parameters "-us -uc".  If you don't want to generate the source package (because dpkg-source takes *ages* to run with dpkg-dev prior to 1.15.5.
+If you're not able to sign the packages, add the parameters "-us -uc".  If you don't want to generate the source package (because dpkg-source takes *ages* to run with dpkg-dev prior to 1.15.5) add "-b".
 
-The debian/rules Makefile which is called by that command will '''(FIXME: not finished)''' call debian/update-debian.py --install to copy parts of the built tree to the right locations.
+The debian/rules Makefile which is called by that command will call debian/update-debian.py --install to copy parts of the built tree to the right locations.
