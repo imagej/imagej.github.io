@@ -1,4 +1,4 @@
-'''FIXME: these instructions aren't complete yet...'''
+'''FIXME: the packages need some more work still before being deployed to testers, but these instructions should build packages of some kind'''
 
 At the March 2010 Hackathon, I made lots of changes to the old package building machinery.  There were a number of problems with the old system, including:
 
