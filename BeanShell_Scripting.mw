@@ -1,0 +1,39 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = BeanShell Interpreter
+| author                 = Johannes Schindelin
+| maintainer             = Johannes Schindelin
+| filename               = BSH_Interpreter.jar
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/BSH/BSH_Interpreter.java;hb=HEAD on gitweb]
+| status                 = stable
+}}
+
+[http://www.beanshell.org/ BeanShell] is the scripting language in Fiji which is most similar to Java. In fact, you can even execute almost verbatim Java code, but the common case is to write ''scripts'', i.e. leave out all the syntactic sugar to make your code part of a class.
+
+BeanShell also does not require strict typing (read: you do not need to declare variables with types), making it easy to turn prototype code into proper Java after seeing that the code works.
+
+== Tutorial ==
+
+The obligatory ''Hello, World!'' example:
+
+ print("Hello, World!");
+
+Variables are not strongly typed in BeanShell:
+
+ someName = 1;
+ someName = "Hello";
+
+In other words, if you use a variable name without specifying the type of it, you can assign anything to it. Optionally, you can declare types, in which case they are enforced:
+
+ String s;
+ s = 1; // this fails
+
+For more information, see BeanShell's [http://www.beanshell.org/manual/quickstart.html Quickstart] page.
+
+== Tips ==
+
+You can ''source'' scripts (i.e. interpret another script before continuing to interpret the current script) using this line:
+
+ this.interpreter.source("the-other-script.bsh");
+
+[[Category:Scripting]]
