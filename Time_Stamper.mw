@@ -15,7 +15,7 @@ This plugin adds time stamps to a stack. The times are drawn in the current fore
 
 == Usage ==
 
-Start the plugin on a stack using ''Image > Stacks > Time Stamper''.
+Start the plugin on a stack or hyperstack using ''Image > Stacks > Time Stamper''.
 
 [[Image:Time_Stamper_Parameters.png]]
 
@@ -23,14 +23,19 @@ Options:
 
 * '''Starting Time'''
 * '''Interval'''
+
 * '''X Location'''
 * '''Y Location'''
 * '''Font Size'''
+: The latter three values are determined from a rectangular ROI if a ROI is active upon start of the plugin.
+
 * '''00:00 format'''
 * '''Decimal places'''
 * '''Suffix'''
 * '''Anti-aliased text'''
 
+
+[[Image:Time_Stamper_Result.png|right]]
 
 
 [[Category:Plugins]]
