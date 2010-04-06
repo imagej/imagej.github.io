@@ -17,6 +17,7 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
 :4D data set, kindly provided by Dirk Sieger and [http://www.embl.de/research/units/dev_biology/peri/ Francesca Peri], EMBL.[[File:Migrating-macrophages.gif|thumb]]
 :'''The challenge''': trace the macrophages in 4D, and measure their shape volumes, surfaces, positions and pixel value intensities.
 :The file is a tif hyperstack that can be loaded directly into the [[3D Viewer]].
+:The key idea is to setup the tracking system so that it requires minimal user interaction, and is general. For example, a user clicks on one cell in one time point, and the program should find all other time points of the same cell. Then the program should learn about the statistics of that cell, and offer the means to automatically find all other cells in the volume and track them as well. In summary, a machine learning approach to 4D tracking.
 
 [[Category:Data]]
 [[Category:Segmentation]]
