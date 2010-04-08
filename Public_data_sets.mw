@@ -1,7 +1,8 @@
 Do you need image data to try your algorithms on? Do you lack expert ground truth to test your methods? No problem! Here you have a list of available public data sets from the Fiji community and other sources:
 
 * [http://www.ini.uzh.ch/~acardona/data.html Segmented ssTEM stack of neural tissue], thanks to Albert Cardona.
-[[File:TrakEM2-tree-datastructure.png|thumb]][[File:TrakEM2-display-s.jpg|thumb]]
+[[File:TrakEM2-tree-datastructure.png|thumb]]
+[[File:TrakEM2-display-s.jpg|thumb]]
 :30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.
 :'''The challenge''': use this data set to train machine learning software for the purpose of automatic segmentation of neural structures in ssTEM.
 
@@ -9,12 +10,11 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
 
 * [http://loci.wisc.edu/software/sample-data Sample data at LOCI], in a variety of file formats.
 
-* [http://ome-xml.org/wiki/OmeTiffData Sample OME-TIFF data on ome-xml.org], thanks to Josh Bembenek.
-[[File:tubhiswt4D.png|thumb]]
+* [http://ome-xml.org/wiki/OmeTiffData Sample OME-TIFF data on ome-xml.org], thanks to Josh Bembenek.[[File:tubhiswt4D.png|right|140px|''C. elegans'' embryo coexpressing tubulin histone GFP]]
 :The dataset consists of tubulin histone GFP coexpressing ''C. elegans'' embryos. All image planes were collected at 512x512 resolution in 8-bit grayscale. 
 
 * [http://pacific.mpi-cbg.de/datasets/migrating-macrophages.tif.tar.bz2 Migrating macrophages] in response to stimuli.
-:4D data set, kindly provided by Dirk Sieger and [http://www.embl.de/research/units/dev_biology/peri/ Francesca Peri], EMBL.[[File:Migrating-macrophages.gif|thumb]]
+:4D data set, kindly provided by Dirk Sieger and [http://www.embl.de/research/units/dev_biology/peri/ Francesca Peri], EMBL.[[File:Migrating-macrophages.gif|right|140px|Macrophages in 4D]]
 :'''The challenge''': trace the macrophages in 4D, and measure their shape volumes, surfaces, positions and pixel value intensities.
 :The file is a tif hyperstack that can be loaded directly into the [[3D Viewer]].
 :The key idea is to setup the tracking system so that it requires minimal user interaction, and is general. For example, a user clicks on one cell in one time point, and the program should find all other time points of the same cell. Then the program should learn about the statistics of that cell, and offer the means to automatically find all other cells in the volume and track them as well. In summary, a machine learning approach to 4D tracking.
