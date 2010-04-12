@@ -67,4 +67,14 @@ and then commit the merge:
 
  git commit -s
 
+== Using an external merge tool ==
+
+For complicated conflicts, you may find it easier to do the resolution using an external merge tool, which can show three versions of the file side-by-side.  You can do this with:
+
+ git mergetool
+
+... which will offer you a choice of tools.  Here is a screenshot of using <tt>git mergetool --tool=meld</tt>:
+
+[[File:Meld-example.png]]
+
 [[Category:Git]]
