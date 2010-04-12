@@ -57,4 +57,14 @@ might want to be resolved to
 
 So you definitely need to think carefully about the resolution!
 
+== Committing the resolution ==
+
+After you resolved all the conflicts (if in doubt, where the conflicts are, just call ''git diff''), add the resolved file contents:
+
+ git add <file>
+
+and then commit the merge:
+
+ git commit -s
+
 [[Category:Git]]
