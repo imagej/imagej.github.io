@@ -18,10 +18,10 @@ Some useful documentation, in particular for Fiji:
 
 * [[Git_mini_howto|A really quick 'n dirty HOWTO]]
 * [[Git_topic_branches|Working with topic branches]]
+* [[Git_Conflicts|Description of merge conflicts and how to resolve them]]
 * [[Git_reflogs|A quick introduction into "Git refs"]]
 * [[Git_submodule_tutorial|A tutorial on submodules]]
 * [[Git_bisection|How to find which commit introduced a regression]]
-* [[Git_topic_branches|Working with topic branches]]
 * [[SSH_public_keys|Setting up password-less SSH login]]
 * [[Git_Notes|Some notes on Git usage by Mr. Saalfeld]]
 * [[Git_for_dummies|Git recipes from Pavel so that he doesn't have to ask again]]
