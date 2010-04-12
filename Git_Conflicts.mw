@@ -54,3 +54,5 @@ might want to be resolved to
  plugins/Blub.jar
 
 So you definitely need to think carefully about the resolution!
+
+[[Category:Git]]
