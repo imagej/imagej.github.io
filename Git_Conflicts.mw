@@ -24,6 +24,8 @@ Between the ''<<<<<<<'' and ''======='', you will find the version as per the ch
 
 Between the ''======='' and ''>>>>>>>'', you will find the version according to the other branch, relative to the base commit.
 
+For convenience, after the ''<<<<<<<'' and ''>>>>>>>'' markers, you will see hints as to which commit that part of the conflict stems from, ''HEAD'' of course being the current revision.
+
 To resolve the conflicts, you have to decide what the end result should be. This is not something you can do without thinking, otherwise Git would have done it for you.
 
 For example, merge conflicts in ''.gitignore'' are often resolved by taking both the current version and the other version:
