@@ -13,6 +13,10 @@ Links to the contributors' personal pages can be found [[Contributors|here]].
 * Plugins on the [http://imagejdocu.tudor.lu/doku.php?id=plugin:start ImageJ Documentation Wiki]
 * Christian Henden has some interesting plugins (mainly in the Public Domain), including 3D threshold methods: http://www.pvv.org/~perchrh/imagej/
 
+== Image Processing ==
+
+[http://alvyray.com/Memos/6_pixel.pdf A pixel is not a little square]. Really. It is not. Pixels may be spaced on a regular grid. But that does not make them square. Even thinking about them as squares will harm your analysis, since it is simply wrong.
+
 == Miscellaneous ==
 
 * An [http://rsbweb.nih.gov/ij/docs/install/osx.html#icon explanation] where ImageJ's icon's [http://www.arsmachina.com/s-hart1209.htm microscope] comes from.
