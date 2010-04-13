@@ -15,7 +15,7 @@ As of commit [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=commitdi
 Weka is seems to work with arbitrary datastructures and -types. They are defined using the weka.core.Attribute object that can even hold weka.core.FastVector objects. Each weka.core.Instance is one dataelement that contains n Attributes and their respective values. Groups of same type of Instance objects are grouped using weka.core.Instances.
 
 Below is a Java method howto store a list of 3D points as a Weka datastructure.
-<pre>
+<source lang="java">
 /**
 * Creates a Weka Datastructure out of a List of 3D Points
 * @param points - List of 3D Points
@@ -60,7 +60,7 @@ public Instances insertIntoWeka(final List <Point3d> points, final String name)
 		
 	return wekaPoints;
 }
-</pre>
+</source>
 
 === Setting up the KDTree ===
 
