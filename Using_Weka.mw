@@ -155,3 +155,6 @@ System.out.println("The distance between" + nn1 + " and " + p + " is " + df.dist
 System.out.println("The distance between" + nn2 + " and " + p + " is " + df.distance(nn2, p));
 
 </source>
+
+=== See also ===
+* How to [http://weka.wikispaces.com/Use+Weka+in+your+Java+code use Weka in your Java code]
