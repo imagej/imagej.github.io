@@ -95,7 +95,7 @@ catch (Exception e) { e.printStackTrace();}
 Once solved the normalization issue, searching the KDTree for the N-Nearest Neighbors is simple again. You create another Instance of the same type and ask the KDTree for its nearest neigbors.
 
 First we create an Instance that can be used to search the KDTree. Later on it is very simple to just update its values rather than creating a new one for each query.
-<pre>
+<source lang="java">
 /**
  * Create an Instance of the same type as the Instances object you are searching in.
  * @param p - a 3D point
@@ -128,11 +128,11 @@ public Instance createInstance(final Point3d p, final Instances dataset)
 				
 	return inst;	
 }
-</pre>
+</source>
 
 Now we can easily search the KDTree.
 
-<pre>
+<source lang="java">
 // let's search for the nearest and second nearest neighbor
 Instance nn1, nn2;
 final Instance p = createInstance(new Point3d(0,0,0), wekaPoints);
@@ -154,4 +154,4 @@ DistanceFunction df = tree.getDistanceFunction();
 System.out.println("The distance between" + nn1 + " and " + p + " is " + df.distance(nn1, p));
 System.out.println("The distance between" + nn2 + " and " + p + " is " + df.distance(nn2, p));
 
-</pre>
+</source>
