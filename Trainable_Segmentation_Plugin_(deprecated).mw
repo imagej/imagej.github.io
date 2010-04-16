@@ -32,7 +32,7 @@ Next, we have to teach the plugin what a membrane in the image looks like. So we
 
 [[Image:PlaygroundFirstAnnotation.jpg]]
 
-Now push the positive example button. The selected trace will turn green, showing that it is a positive example (positive means forground).
+Now push the "Add to class 2" button. The selected trace will turn green, showing that it is been selected as a representative example of class 2.
 
 [[Image:firstPositiveExample.jpg]]
 
