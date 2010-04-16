@@ -36,7 +36,7 @@ Now push the "Add to class 2" button. The selected trace will turn green, showin
 
 [[Image:firstPositiveExample.jpg]]
 
-For training it is also important what a membrane does not look like. So we select some other pixels and push the negative example button.
+For training it is also important what a membrane does not look like. So we select some other pixels and push the "Add to class 1" button.
 
 [[Image:FirstNegativeExample.jpg]]
 
