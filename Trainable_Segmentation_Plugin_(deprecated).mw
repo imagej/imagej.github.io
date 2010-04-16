@@ -11,7 +11,7 @@
 }}
 
 == User Manual ==
-This tutorial shows you how to use the trainable segmentation plugin. Trainable means that you have to draw some examples of foreground and background in the image and then a classifier is trained by your examples and segments the rest of the image. 
+This manual shows you how to use the Trainable Segmentation plugin. Trainable means that you have to draw some examples of at least 2 different things you want to differentiate in the image and then a classifier is trained by your examples and segments the rest of the image. 
 Afterwards you can also apply the trained classifier to other images or stacks. 
 
 The plugin can be found in the Fiji menu under Plugins / Segmentation / Trainable Segmentation.
