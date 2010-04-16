@@ -42,7 +42,7 @@ For training it is also important what a membrane does not look like. So we sele
 
 === Train the classifier ===
 
-Now it is time to train the classifier and look at the result, so we push the train classifier button on the left side. After training the plugin will automatically classify all pixels from the training image and present the result in a color overlay. This overlay can be switched on and off with the toggle overlay button.
+Now it is time to train the classifier and look at the result, so we push the "Train classifier" button on the left side. After training the plugin will automatically classify all pixels from the training image and present the result in a color overlay. This overlay can be switched on and off with the "Toggle overlay" button.
 
 [[Image:trainedClassifier.jpg]]
 
