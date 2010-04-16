@@ -10,7 +10,7 @@
 | category               = [[:Category:Segmentation|Segmentation]]
 }}
 
-== Trainable Segmentation Plugin ==
+== User Manual ==
 This tutorial shows you how to use the trainable segmentation plugin. Trainable means that you have to draw some examples of foreground and background in the image and then a classifier is trained by your examples and segments the rest of the image. 
 Afterwards you can also apply the trained classifier to other images or stacks. 
 
