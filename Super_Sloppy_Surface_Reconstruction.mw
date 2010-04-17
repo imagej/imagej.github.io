@@ -21,7 +21,7 @@ See here a photograph of the [http://commons.wikimedia.org/wiki/File:Hohmann_cra
 |style="vertical-align:top" |[[Image:Hohmann-crater-surfaceplot.jpg|thumb|left|x180px|3D Surface Plot]]
 |}
 
-==Shortcoming==
+==Shortcomings==
 
 * The approach is very sensitive to noise.  Noise will result in a stripy pattern, because it is accumulated  independently for each pixel row.
 * Lacking the constant initializer for integration, we assume that the average height for all pixel rows is equal and that the average slope per row is 0.  Rows with a large mountain without a compensating valley will thus appear lower than they should.
