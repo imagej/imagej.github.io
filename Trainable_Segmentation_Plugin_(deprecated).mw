@@ -59,9 +59,9 @@ And here is the corresponding classification result:
 
 === Apply the trained classifier to other images ===
 
-If you want a binary image of this result you can use the create result button and a new window with the classification image will open.
+If you want a binary image of this result you can use the "Create result" button and a new window with the classification image will open.
 
-The other option is to apply the trained classifier to other images or stacks. For this we click the apply classifier button. A dialog opens asking for the image or stack that should be classified using the current trained classifier. Depending on the size of this image or stack, the classification can take some time. When it is finished you see the image/stack the classifier was applied to and the result in new windows. These image can now be saved or further processed.
+The other option is to apply the trained classifier to other images or stacks. For this we click the "Apply classifier" button. A dialog opens asking for the image or stack that should be classified using the current trained classifier. Depending on the size of this image or stack, the classification can take some time. When it is finished you see the image/stack the classifier was applied to and the result in new windows. These images can now be saved or further processed.
 
 [[Image:wholeImageClassified.jpg|780px]]
 
