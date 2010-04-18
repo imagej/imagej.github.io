@@ -6,10 +6,11 @@ You can find more information about me in my website: [http://bioweb.cnb.csic.es
 
 == Maintained plugins ==
 
-* [[BUnwarpJ]]
-* [[Spline Deformation Generator]]
-* [[Register Virtual Stack Slices]]
-* [[Transform Virtual Stack Slices]]
-* [[Skeletonize3D]]
 * [[AnalyzeSkeleton]]
+* [[BUnwarpJ]]
+* [[Register Virtual Stack Slices]]
 * [[SIOX: Simple Interactive Object Extraction]]
+* [[Skeletonize3D]]
+* [[Spline Deformation Generator]]
+* [[Trainable Segmentation]]
+* [[Transform Virtual Stack Slices]]
