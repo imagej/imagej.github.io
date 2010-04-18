@@ -2,7 +2,7 @@ Super sloppy surface reconstruction from planetary surface photographs or [http:
 
 ==Motivation==
 
-Sometimes, you have a picture of a surface and you want to see how it looks in 3-D.  If your picture meets a view requirements, then reconstruction of an approximation of this surface is possible and, indeed, very simple.  These requirements are:
+Sometimes, you have a picture of a surface and you want to see how it looks in 3-D.  If your picture meets a few requirements, then reconstruction of an approximation of this surface is possible and, indeed, very simple.  These requirements are:
 
 * The surface has no variance in illumination and color (like in SEM where everything is gold or at the moon where everything is cheese).
 * The surface is illuminated by a single parallel light-source from the left (rotate it if it comes from a different side).
