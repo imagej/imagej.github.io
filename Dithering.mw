@@ -31,7 +31,7 @@ The following images have been magnified by a factor of 2 to show the individual
 <source lang="java">
 
 // Dithering
-// G. Landini at bham. ac. auk
+// G. Landini at bham. ac. uk
 // 17/ May 2009
 
 Dialog.create("Dithering");
