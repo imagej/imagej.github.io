@@ -130,3 +130,31 @@ When reading macros written by other people, you will often find the concept of 
  run("Gaussian Blur...", "radius=" + a);
 
 Typical uses for commented-out code are instructions that help with debugging, but are too verbose (or too slow) for regular execution of the macro.
+
+= Conditional code blocks =
+
+Sometimes, you need to execute a certain part of the code if and only if a certain condition is met. Example:
+
+ // If the image is not binary, abort
+ if (!is(“binary”)) {
+ 	exit(“You need a binary image for this macro!”);
+ }
+
+There are several parts to a conditional block: the ''if'' keyword, the condition inside the parentheses, and the code block enclosed in curly braces.
+
+In this case, the condition calls the function ''is'' to ask whether the current image is binary, and the exclamation mark negates the result, i.e. ''!is("binary")'' yields true if and only if the current image is <u>not</u> binary (as opposed to ''is("binary")'', which returns true in the opposite case).
+
+If the code block consists of only one statement, the curly braces may be omitted, but it is a good practice to keep them (for example, nested conditional blocks are much easier to understand with curly braces than without).
+
+Likewise, it is a good practice to ''indent'' the code inside the conditional block (i.e. to add white space in front of the lines inside the block). This makes reading the code much easier, too.
+
+== else ==
+
+You can optionally add an ''else'' clause, i.e. a code block that is executed when the condition is <b>not</b> met. Example:
+
+ if (is("binary")) {
+         write("The current image is binary");
+ }
+ else {
+         write("The current image is not binary");
+ }
