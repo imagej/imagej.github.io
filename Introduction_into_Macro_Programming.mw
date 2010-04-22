@@ -43,6 +43,37 @@ This example shows how to concatenate a fixed text with the value of a variable:
  name = "Bob";
  msg = "Those days are over, " + name;
 
+'''Note:''' a common pitfall is to include the name of a variable in a string. The following code demonstrates this:
+
+ title = "Macro";
+ write("The name: title"); // this is wrong
+ write*"The name: " + title); // this is right
+
+In the first ''write'' call, a literal ''title'' will be printed instead of the value of the variable of that name.
+
+It is especially important to keep this in mind when calling plugins:
+
+ r = 2; // the radius
+ run("Gaussian Blur...", "radius=r"); // this is wrong, r will not be evaluated
+ run("Gausian Blur...", "radius=" + r); // this is correct
+
+== Self-referencing assignments ==
+
+When a variable is assigned, the right-hand side is evaluated first, and only then the assignment is performed. This allows you to double the value of a variable:
+
+ amount = amount * 2;
+
+First, ''amount * 2'' is evaluated. The result is then assigned back to the variable ''amount'', effectively doubling  it.
+
+A very important operation is to increment a variable's value by one:
+
+ counter = counter + 1;
+
+It is so important that there is a short form for it:
+
+ // This statement does the same as counter = counter + 1;
+ counter++;
+
 = Functions =
 
 Most of the time, you will call ''functions'' which implement the actions you want to execute. Functions have names, like variables, but they also have ''parameters'' that you can pass to the functions. ImageJ comes with many [http://rsbweb.nih.gov/ij/developer/macro/functions.html predefined functions] that you can call to perform specific calculations or other operations.
