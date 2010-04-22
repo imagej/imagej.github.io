@@ -69,6 +69,22 @@ The window has the file name as title, and it display some useful information ab
 
 If your image does not have meta-data about the real resolution, you can set the resolution explicitely with ''Image>Properties...'' or by following the [[SpatialCalibration|tutorial on spatial calibration]].
 
+== Image Types ==
+
+You can change the image ''type'':
+
+[[Image:Image-Types.png]]
+
+Choose between
+
+* 8-bit (intensity range 0..255)
+* 16-bit (intensity range 0..65535)
+* 32-bit (floating point numbers)
+* 8-bit color (up to 256 colors encoded via a color lookup table)
+* RGB color (3 colors encoded as 8-bit values)
+
+There are two more options: RGB stack and HSV stack, which can turn a 2-dimensional color image into a stack consisting of 3 color channels (red, green & blue or hue, saturation & value, respectively).
+
 = Further reading =
 
 Have a look at the list of [[:Category:Tutorials|tutorials]] on this Wiki.
