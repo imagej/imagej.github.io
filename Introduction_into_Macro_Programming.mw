@@ -1,0 +1,44 @@
+= Why Macros? =
+
+Macros can be used to
+
+* automate repetitive tasks
+* document what you did
+* share common procedures
+* add tools to the toolbar
+* add keyboard shortcuts
+
+= Variables =
+
+The most important concept when starting to program macros are ''variables''. A variable is a placeholder for a changing entity. It has a ''name'' and a ''value'', which can be ''numeric'' or ''text'' (so-called ''strings'').
+
+Variables are needed whenever you want to execute the same code several times, but for different images, parameters, etc
+
+Variables can also be used to store user input obtained through a dialog.
+
+A variable can be assigned like this:
+
+ factor = 1024;
+
+In this example, ''factor'' is the name of the variable, ''1024'' is the value assigned to the variable. The semicolon tells ImageJ that the assignment is done.
+
+Example: assign text to a variable:
+
+ message = "Hello, World!";
+
+In this case, the variable is named ''message'', and the text ''Hello, World!'' is assigned to it; Text is specified inside double quotes.
+
+== Using variables ==
+
+You can use variables in ''expressions'': you can calculate with numeric variables, and you can concatenate text and text variables. Example:
+
+ x = 2;
+ y = 3;
+ result = x * x + y + y;
+
+This assigns the variable ''x'' the value 2, the variable ''y'' the value 3, and then assigns the variable ''result'' the square of ''x'' plus the square of ''y''.
+
+This example shows how to concatenate a fixed text with the value of a variable:
+
+ name = "Bob";
+ msg = "Those days are over, " + name;
