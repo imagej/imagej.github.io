@@ -69,3 +69,33 @@ For recurring tasks, you can define your own functions:
 Note that the ''title'' is just another [[#Variables|variable]], which is implicitly assigned when the function is called. In other words, this call will execute the code in above definition, with the variable ''title'' set to ''My pretty new image'':
 
  closeImageByTitle("My pretty new image");
+
+= Comments =
+
+When you read your code again in six months from now, you want to understand what your code does, and why. For this, you can add comments, i.e. text which is ignored by ImageJ when it executes the macro. Example:
+
+ // This variable contains the radius of the circle to be drawn
+ r = 15;
+
+Everything after the two slashes up to the end of the line is a comment.
+
+== Multi-line comments ==
+
+You can also have multi-line comments enclosed in ''/* ... */'' blocks:
+
+ /*
+  It turned out in practice that 0.5 is a good choice for alpha, because
+  it leads to fewer artifacts than anything larger, and it is large enough
+  to guarantee a quick convergence.
+ */
+ alpha = 0.5;
+
+== Commented-out code ==
+
+When reading macros written by other people, you will often find the concept of ''commented-out code''. This is code that is pretended to be a comment so that it is not executed. Example:
+
+ a = 0.5;
+ // write("value of a: " + a);
+ run("Gaussian Blur...", "radius=" + a);
+
+Typical uses for commented-out code are instructions that help with debugging, but are too verbose (or too slow) for regular execution of the macro.
