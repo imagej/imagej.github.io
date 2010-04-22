@@ -42,3 +42,30 @@ This example shows how to concatenate a fixed text with the value of a variable:
 
  name = "Bob";
  msg = "Those days are over, " + name;
+
+= Functions =
+
+Most of the time, you will call ''functions'' which implement the actions you want to execute. Functions have names, like variables, but they also have ''parameters'' that you can pass to the functions. ImageJ comes with many [http://rsbweb.nih.gov/ij/developer/macro/functions.html predefined functions] that you can call to perform specific calculations or other operations.
+
+This example writes ''Hello, World!'' to the ''Log'' window:
+
+ write("Hello, World!");
+
+As before, a semicolon signifies the end of the statement. The name of the function is ''write'', and the parameter list is enclosed in parentheses. In the case of ''write'', there is only one parameter. If there are more parameters to be passed, they have to be separated by commas:
+
+ newImage("My pretty new image", "8-bit black", 640, 480, 1);
+
+Like ''write'', ''newImage'' is a builtin function of ImageJ. The order of the parameters is relevant, this is the way the function knows what each parameter means.
+
+== Defining functions ==
+
+For recurring tasks, you can define your own functions:
+
+ function closeImageByTitle(title) {
+         selectWindow(title);
+         close();
+ }
+
+Note that the ''title'' is just another [[#Variables|variable]], which is implicitly assigned when the function is called. In other words, this call will execute the code in above definition, with the variable ''title'' set to ''My pretty new image'':
+
+ closeImageByTitle("My pretty new image");
