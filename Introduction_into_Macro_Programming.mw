@@ -158,3 +158,25 @@ You can optionally add an ''else'' clause, i.e. a code block that is executed wh
  else {
          write("The current image is not binary");
  }
+
+= Loops =
+
+To repeat instructions several times, loops are used. Example:
+
+ for (i = 0; i < 10; i++) {
+         run("Dilate");
+ }
+
+This code will run ''Dilate'' ten times. The syntax of the ''for'' loop consists of the ''for'' keyword, followed by three statements enclosed in parentheses, and the code block to be executed.
+
+The three statements defining how often to run the code block are the
+
+# initializer: typically, a counter variable is initialized, in this case ''i'' to the value zero,
+# the condition: as long as this condition is met (here ''i < 10''), the code block is executed,
+# the incrementor: this statement is executed after the code block, just before testing again whether the block should be executed again.
+
+In this example, the variable ''i'' is first initialized to zero, then the condition is checked, and as ''i'' is smaller than 10, the code block is executed. After that, ''i'' is incremented, and the condition is checked again. As 1 is still smaller than 10, the code block is executed again. This repeats for the values 2, 3, ..., 9, but after the variable ''i'' was incremented from 9 to 10, the condition does not hold true anymore, so the loop is finished.
+
+Even if the counter variable was not used inside the code block in this example, you are free to do so, of course.
+
+Note that starting with 0 and testing for the condition "smaller than 10" will result in the code block being run 10 times. It is the standard way to execute a certain block of code a fixed number of times.
