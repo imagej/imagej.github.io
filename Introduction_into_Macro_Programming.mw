@@ -180,3 +180,25 @@ In this example, the variable ''i'' is first initialized to zero, then the condi
 Even if the counter variable was not used inside the code block in this example, you are free to do so, of course.
 
 Note that starting with 0 and testing for the condition "smaller than 10" will result in the code block being run 10 times. It is the standard way to execute a certain block of code a fixed number of times.
+
+= The recorder =
+
+Typically, macros are not written from scratch, but recorded using the Macro Recorder: Just click on ''Plugins>Macros>Record...'' and perform some actions. These actions will be recorded in the recorder window, and you can hit the ''Create'' button to open the recorded instructions in an editor.
+
+In some cases, you might need to edit the recorded macro to make it usable with other images than the one you used to record the macro with. Example: when you merge channels, you end up with a statement like this:
+
+ run("Merge Channels...", "red=[Edges of boats.gif] green=boats.gif blue=boats.gif gray=*None*");
+
+The parameters passed to ''Merge Channels...'' depend very much on the current image's name. One possible solution looks like this:
+
+ title = getTitle();
+ run("Merge Channels...",
+     "red=[Edges of " + title + "] green=" + title + " blue=" + title + " gray=*None*");
+
+Note that we need to use string concatenation in order to insert the current image's name in place of ''boats.gif'', as described in [[#Using_variables|above]].
+
+In order to allow spaces in the name, you might also want to add extra ''[...]'' around the title:
+
+ title = getTitle();
+ run("Merge Channels...",
+     "red=[Edges of " + title + "] green=[" + title + "] blue=[" + title + "] gray=*None*");
