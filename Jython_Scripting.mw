@@ -533,6 +533,12 @@ import ij
 print dir(ij)
 </source>
 
+'''Note:''' As of April 26nd, 2010, you need to start Fiji with
+
+ fiji -Dpython.cachedir.skip=false --
+
+for ''dir(<package>)'' to work.
+
 === Specifying the encoding of the source ===
 
 When your source code contains non-ASCII characters (such as umlauts), Jython will complain with a ''SyntaxError: Non-ASCII character in file '<iostream>', but no encoding declared''.
