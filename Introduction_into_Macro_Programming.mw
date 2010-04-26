@@ -189,7 +189,8 @@ Typically, macros are not written from scratch, but recorded using the Macro Rec
 
 In some cases, you might need to edit the recorded macro to make it usable with other images than the one you used to record the macro with. Example: when you merge channels, you end up with a statement like this:
 
- run("Merge Channels...", "red=[Edges of boats.gif] green=boats.gif blue=boats.gif gray=*None*");
+ run("Merge Channels...",
+     "red=[Edges of boats.gif] green=boats.gif blue=boats.gif gray=*None*");
 
 The parameters passed to ''Merge Channels...'' depend very much on the current image's name. One possible solution looks like this:
 
