@@ -1,7 +1,7 @@
 We have a modified ImageJ core that operates as Fiji's kernel.
-The source code is in a branch named 'fiji' in ImageJA repository.
+The source code is in a branch named 'master' in ImageJA repository.
 
-Here is how to get fiji's ImageJA branch to run Fiji:
+Here is how to get fiji.git's ImageJA submodule to run Fiji:
 
 First check out the submodule ImageJA in fiji/:
 
@@ -12,16 +12,16 @@ Note: make sure that you have _no_ trailing slash after "ImageJA". In other word
 
 Note: If the update finds a new revision to advance to, it will _detach_ the HEAD.  That means that you will not be on any branch.
 
-Therefore, if you want to work on ImageJA's ''fiji'' branch, you need to create a local branch:
+Therefore, if you want to work on ImageJA's ''master'' branch, you need to create a local branch:
 
  $ cd ImageJA/
- $ git checkout -b fiji origin/fiji
+ $ git checkout -b master origin/master
 
 This only needs to be done once.  You can now work with "git pull", "git add", "git commit" and "git push" to your heart's content.
 
-If you update the ImageJA submodule with "git submodule update ImageJA" on purpose or by accident, you will have to go back to the ''fiji'' branch before doing any work inside ImageJA:
+If you update the ImageJA submodule with "git submodule update ImageJA" on purpose or by accident, you will have to go back to the ''master'' branch before doing any work inside ImageJA:
 
  $ cd ImageJA/
- $ git checkout fiji && git pull
+ $ git checkout master && git pull
 
 [[Category:Git]]
