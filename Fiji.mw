@@ -3,11 +3,13 @@ __NOTOC__
 
 <fijirandomsnapshot/>
 
-[[About|Fiji]] is an image processing package based on [http://rsb.info.nih.gov/ij ImageJ].
+[[About|Fiji]] is an image processing package. It can be described as a distribution of [http://rsb.info.nih.gov/ij ImageJ] together with Java, Java 3D and a lot of plugins organized into a [[Plugins Menu|coherent menu structure]]. Fiji compares to ImageJ as Ubuntu compares to Linux.
 
-For [[Fiji Usage|users]], Fiji is [[Downloads|easy to install]] and update, bundles a [[:Category:Plugins|set of plugins]] in a [[Plugins Menu|coherent menu structure]] (and updatable), along with comprehensive [[documentation]].
+The main focus of Fiji is to assist research in life sciences.
 
-For [[Developing_Fiji|developers]], Fiji as an open source project is hosted on a [[Git for dummies|Git]] source version control [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi repository], with access to the source code of all internals, libraries and plugins, and eases the [[Developing_Fiji|development]] and [[:Category:Scripting|scripting]] of plugins.
+For [[Fiji Usage|users]], Fiji is [[Downloads|easy to install]] and has an automatic update function, bundles a [[:Category:Plugins|lot of plugins]] and offers comprehensive [[documentation]].
+
+For [[Developing_Fiji|developers]], Fiji is an open source project hosted in a [[Git for dummies|Git version control]] [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi repository], with access to the source code of all internals, libraries and plugins, and eases the [[Developing_Fiji|development]] and [[:Category:Scripting|scripting]] of plugins.
 
 <b>[[Downloads|Download Fiji now]]</b>&nbsp;&nbsp;[[Image:Yada.png|middle|link=Downloads]]
 
