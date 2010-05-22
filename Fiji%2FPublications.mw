@@ -4,6 +4,8 @@
 
 * Fiji was prominently featured in Nature Methods review [http://www.nature.com/nmeth/journal/v7/n3s/index.html supplement] on visualization <ref>{{cite journal |author=Thomas Walter, David W Shattuck, Richard Baldock, Mark E Bastin, Anne E Carpenter, Suzanne Duce, Jan Ellenberg, Adam Fraser, Nicholas Hamilton, Steve Pieper, Mark A Ragan, Jurgen E Schneider, Pavel Tomancak and Jean-Karim Hériché |title=Visualization of image data from cells to organisms |journal=Nature Methods |year=2010 |volume= 7 No 3s |pages=S26 -S41|url=http://www.nature.com/nmeth/journal/v7/n3s/abs/nmeth.1431.html}}</ref>
 
+* Fiji's <b>3d viewer</b> published in BMC Bioinformatics<ref>{{cite journal|author=Benjamin Schmid , Johannes Schindelin , Albert Cardona , Mark Longair  and Martin Heisenberg|title=A high-level 3D visualization API for Java and ImageJ|journal=BMC Bioinformatics|year=2010|volume=11|page=274|url=http://www.biomedcentral.com/1471-2105/11/274/abstract}}</ref>
+
 == Publications using or enhancing Fiji ==
 
 * Stitching<ref>{{cite journal |author=Preibisch S and Saalfeld S and Tomancak P |title=Globally Optimal Stitching of Tiled 3D Microscopic Image Acquisitions |journal=Bioinformatics |year=2009 |month=April |volume=25(11) |pages=1463-1465 |pmid=19346324|url=http://bioinformatics.oxfordjournals.org/cgi/content/full/25/11/1463}}</ref>
