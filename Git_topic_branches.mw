@@ -54,7 +54,7 @@ In this example, after fixing the bug and committing the bug fix, you switched t
 
 Note: when cherry-picking commits, conflicts can arise.  These are marked with conflict markers ("<<<" ... "===" ... ">>>").
 
-You will have to edit the files, picking what changes you want (the first part is what the version is in the current branch, the second part is what the cherry-picked commit wanted to introduce).
+You will have to edit the files, picking what changes you want (the first part is what the version is in the current branch, the second part is what the cherry-picked commit wanted to introduce). See [[Git Conflicts]] for details how to resolve the merge conflicts.
 
 After editing the files, stage them for commit and commit, with
 
