@@ -103,12 +103,15 @@ For more advanced Git usage, see "Making changes (advanced)".
 All commits are purely local before you decide to publish them.  You can do that with
 
  $ cd fiji/
- $ git push
+ $ git push contrib HEAD:contrib
 
 Note: if somebody made changes to the branch in the mean-time, you need to pull first:
 
  $ cd fiji/
- $ git pull
+ $ git pull contrib contrib
+ $ git push contrib HEAD:contrib
+
+'''Note''': there might be [[Git Conflicts|merge conflicts]] that you need to [[Git_Conflicts#Resolving_merge_conflicts|resolve]] before pushing.
 
 '''Note for CVS/Subversion users''': With Git, it is highly encouraged to commit '''first''', '''then''' pull.  Git is really good at branching and merging, and it is better for you to commit a version that you actually tested than to integrate other people's changes before committing.  It also helps [[Git_bisection|finding which commit introduced a regression]].
 
