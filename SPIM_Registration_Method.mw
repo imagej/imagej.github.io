@@ -1,0 +1,13 @@
+==SPIM principles==
+
+[[Image:SPIMScheme.png|thumb|right|361px|Schematic drawing of a Selective Plane Illumination Microscope]]
+A Selective Plane Illumination Microscope 
+<ref>{author = "J. Huisken and J. Swoger and F. D. Bene and J. Wittbrodt and E. H. K. Stelzer"|title  = "Optical Sectioning Deep Inside Live Embryos by Selective Plane Illumination Microscopy"|journal= "Science"|volume = "305 (5686)"|pages  = "1007--1010"|year   = "2004"}</ref>
+ (\autoref{fig:SchemeSPIM}), achieves optical
+sectioning by focusing the excitation laser into a thin laser light sheet that reaches its minimal thickness in the middle of the field of view.  The light sheet enters the water filled sample chamber and illuminates the sample 
+which is embedded in an agarose column. The agarose protrudes from the end of a glass capillary attached to a motor that rotates the sample.
+The objective lens is arranged perpendicular to the light sheet. The perpendicular orientation of the illumination and detection optics ensures that only a section of the specimen in-focus is illuminated, minimizing photo-bleaching and laser damage of the living samples and allowing
+for very long time-lapse recordings. Two-dimensional images of emitted
+fluorescent light are captured by a CCD camera focussed on the center of the light-sheet. The CCD camera captures the light-sheet-illuminated section in a single exposure enabling a very fast acquisition rate important for capturing dynamic developmental events. In order to acquire 3d image stacks, the sample is moved through the light sheet in increments of 0.5&nbsp;&mu;m to 5&nbsp;&mu;m depending on the objective and the light sheet thickness.
+
+The SPIM instrument can, in principle, achieve an isotropic, high resolution along <math>x</math>, <math>y</math> and <math>z</math>-axis allowing ''in toto''  imaging of large 3d specimens. In order to achieve an isotropic resolution uniformly across the sample volume in all three dimensions, it is necessary to rotate the sample and record image stacks of the same specimen from different angles (usually 3 to 12, see '''Supplementary Video~1''' ).
