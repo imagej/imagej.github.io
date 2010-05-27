@@ -1,1 +1,12 @@
-#REDIRECT [[Series Labeler]]
+{{Infobox Plugin
+| software               = ImageJ / Fiji
+| name                   = Series Labeler
+| author                 = Dan White / Tom Kazimiers
+| filename               = 
+| source                 = 
+| released               = 
+| latest version         = 
+| status                 = stable
+| category               = [[:Category:Image annotation|Image annotation]]
+| website                = [http://pacific.mpi-cbg.de Fiji]
+}}
