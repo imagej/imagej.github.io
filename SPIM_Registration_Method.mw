@@ -11,6 +11,44 @@ fluorescent light are captured by a CCD camera focussed on the center of the lig
 
 The SPIM instrument can, in principle, achieve an isotropic, high resolution along <math>x</math>, <math>y</math> and <math>z</math>-axis allowing ''in toto''  imaging of large 3d specimens. In order to achieve an isotropic resolution uniformly across the sample volume in all three dimensions, it is necessary to rotate the sample and record image stacks of the same specimen from different angles (usually 3 to 12, see [[Media:Supplementary_Video_1_SPIM_in_Action.mov‎]]).
 
+==Related work==
+
+Multi-view microscopy techniques, such as tilted confocal acquisitions[[ShawAl89]], SPIM[[HuiskenAl2004]] and Ultramicroscopy[[Dodt2007]] (2 views), can increase the resolution along the <math>z</math>-axis and thus enable the analysis of objects smaller than the axial resolution limit [[ShawAl89, Swoger2007]].  Image reconstruction based on the image intensities requires significant overlap of image content which is often difficult to achieve particularly in live imaging of dynamically changing samples.
+
+The idea to incorporate fiduciary markers to facilitate sample independent reconstruction is widely used in medical imaging[[Gullekson1974, Erickson1993, Fitzpatrick2001, Wiles2008, Moghari2008]] and electron tomography[[Dierksen1992, Koster1997]]. Due to the low amount of fiduciary markers available for registration, research is focused on error analysis rather than efficiency of matching of thousands of markers with only partial overlap[[Fitzpatrick2001]].
+
+In contrast, in the robotics and automation field, there is interest in localization of large amounts of different objects. Points of interest are extracted from photos and checked against databases to determine their type and orientation[[HarrisS88,Canny86]].  To enable real time object recognition, Lamdan et al.[[LamdanAl88]] introduced ''geometric hashing''  which uses an intrinsic invariant local coordinate system to match objects against database entries in a viewpoint independent manner. The geometric hashing principle is reused in the fields of astronomy[[Hogg2008]] and protein structure alignment and comparison[[Nussinov91, Fischer94, Wallace1997, Stark2003]] where efficient searching in massive point clouds is required.
+
+The use of local descriptors instead of complete scenes for matching is proposed in many fields comprising image registration[[Stanski2005, Lowe04]], robotics and autonomous systems[[Kuipers91, Bradley04]], and computer vision[[Frome04]].
+
+Matula et al.[[Matula2003]] suggest segmentation based approaches for reconstruction of multi-view microscopy images.  The center of mass of the cloud of segmented objects is used as a reference point for a cylindrical coordinate system facilitating the registration between two views.  Similarly to intensity based approaches, this method requires significant overlap between the images and furthermore supports alignment of only two stacks at a time.
+
+Our approach combines the idea of using fiduciary markers, local descriptors and geometric hashing and applies global optimization.  It can register an arbitrary number of partially overlapping point clouds.  It is robust with respect to the amount of incorporated beads, bead distribution, amount of overlap, and can reliably detect non-affine disturbances (e.g. abrupt agarose movement) that might occur during imaging (\autoref{table:evaluation}). 
+
+==Overview of imaged specimens==
+
+We demonstrated the performance of our registration framework on multi-view ''in toto''  imaging of fixed and living specimen of various model organisms (Figure 5), in particular ''Drosophila'' . Fixed ''Drosophila''  embryos were stained with Sytox-Green to label all nuclei. For live imaging, we used a developing ''Drosophila''  embryo expressing fluorescent His-YFP under the control of endogenous promoter visualizing all nuclei. ''Drosophila''  specimens were imaged with a SPIM prototype equipped with a Zeiss 20x/0.5 Achroplan objective.
+
+==Sample mounting for SPIM==
+We matched the fluorescence intensity of the beads to the signal intensity of the sample. For live imaging of His-YFP which is relatively dim and requires longer exposure times (0.3s), we used red or yellow fluorescent beads that are suboptimal for the GFP detection filter set and therefore typically less bright than the sample. Conversely, for the imaging of the bright, fixed specimen, we used green fluorescent beads which give adequate signal at very short exposure times (0.01s).
+
+Despite the fact that our algorithm is robust with respect to the amount of beads available for registration, too many beads unnecessarily increase the computation time, while too few beads may result in an inadequate number of correspondences due to incomplete overlap of the views. Therefore, we determined empirically the optimal concentration of beads for each magnification (ideally 1,000--2,000 beads per imaged volume).  We prepared a 2x stock solution of beads (13 μl of concentrated bead solution (Estapor Microspheres FXC050))
+
+
+[[Image:DescriptorBuildup.png|thumb|right|500px|<b>Figure&nbsp;2:</b> Rotation invariant local geometric descriptor]]
+
+[[Image:ErrorAnalysis.png|thumb|right|800px|<b>Figure&nbsp;3:</b> Analysis of the registration error]]
+
+[[Image:Blending.jpg|thumb|right|400px|<b>Figure&nbsp;4:</b> Image fusion]]
+
+[[Image:Showcase.jpg|thumb|right|300px|<b>Figure&nbsp;5:</b> Examples of various reconstructed multi-view datasets]]
+
+[[Image:Intensity_vs_Beads.jpg|thumb|right|300px|<b>Figure&nbsp;6:</b> Comparison of bead-based and intensity-based multi-view reconstruction on 7-view acquisition of Drosophila embryo expressing His-YFP]]
+
+[[Image:Rotation_chamber.png|thumb|right|300px|<b>Figure&nbsp;7:</b> Multi-view imaging with spinning disc confocal microscopy]]
+
+[[Image:Screenshot.png|thumb|right|300px|<b>Figure&nbsp;8:</b> Screenshot of SPIM registration plugin in Fiji]]
+
 == References ==
 
 <references />
