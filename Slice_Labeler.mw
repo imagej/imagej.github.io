@@ -10,6 +10,8 @@
 | category               = [[:Category:Image annotation|Image annotation]]
 | website                = [http://rsbweb.nih.gov/ij/plugins/slice-labeler.html rsbweb.nih.gov]
 }}
+This plugin is superceeded by the [[Series Labeler]]
+
 ''Copy from the website:''
 
 This plugin adds a label in the top-left corner of each slice of a stack or to the location of any rectangular selection. The labels are drawn in the current foreground color. A dialog box allows the user to specify font size for the labels, text for the body of the labels, a starting point for a counter, the interval between frames of the counter, and the number of digits used by the counter. The counter will be added after the body text to identify slices or set the number of digits to zero and no counter will be displayed.
