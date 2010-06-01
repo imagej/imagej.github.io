@@ -1,15 +1,16 @@
 ==SPIM principles==
 
 [[Image:SPIMScheme.png|thumb|right|300px|<b>Figure 1:</b> Schematic drawing of a Selective Plane Illumination Microscope]]
-A Selective Plane Illumination Microscope <ref name="SPIM">
-{{cite journal
-|author = J. Huisken, J. Swoger, F. D. Bene, J. Wittbrodt, and E. H. K. Stelzer
-|title  = Optical Sectioning Deep Inside Live Embryos by Selective Plane Illumination Microscopy
-|journal= Science
-|volume = 305
-|number = 5686
-|pages  = 1007&ndash;1010
-|year= 2004}}</ref> ([[Media:SPIMScheme.png|Figure&nbsp;1]]), achieves optical
+A Selective Plane Illumination Microscope<ref name="HuiskenAl2004">{{cite journal
+| author = J. Huisken and J. Swoger and F. D. Bene and J. Wittbrodt and E. H. K. Stelzer
+| title = Optical Sectioning Deep Inside Live Embryos by Selective Plane Illumination Microscopy
+| journal = Science
+| volume = 305
+| number = 5686
+| pages = 1007&nbsp;1010
+| year = 2004
+}}</ref>
+([[Media:SPIMScheme.png|Figure&nbsp;1]]), achieves optical
 sectioning by focusing the excitation laser into a thin laser light sheet that reaches its minimal thickness in the middle of the field of view.  The light sheet enters the water filled sample chamber and illuminates the sample 
 which is embedded in an agarose column. The agarose protrudes from the end of a glass capillary attached to a motor that rotates the sample.
 The objective lens is arranged perpendicular to the light sheet. The perpendicular orientation of the illumination and detection optics ensures that only a section of the specimen in-focus is illuminated, minimizing photo-bleaching and laser damage of the living samples and allowing
@@ -30,7 +31,7 @@ Multi-view microscopy techniques, such as tilted confocal acquisitions,<ref name
 | year = 1989
 | pages = 101&ndash;110 }}
 </ref>
-SPIM<ref name="SPIM" /> and Ultramicroscopy<ref name="Dodt2007">
+SPIM<ref name="HuiskenAl2004" /> and Ultramicroscopy<ref name="Dodt2007">
 {{cite journal
 | author = H. U. Dodt, U. Leischner, A. Schierloh, N. Jährling, C. P. Mauch, K. Deininger, J. M. Deussing, M. Eder, W. Zieglgänsberger, and K. Becker
 | title = Ultramicroscopy: three-dimensional visualization of neuronal networks in the whole mouse brain
@@ -51,13 +52,186 @@ SPIM<ref name="SPIM" /> and Ultramicroscopy<ref name="Dodt2007">
 | year = 2007 }}</ref>
 Image reconstruction based on the image intensities requires significant overlap of image content which is often difficult to achieve particularly in live imaging of dynamically changing samples.
 
-The idea to incorporate fiduciary markers to facilitate sample independent reconstruction is widely used in medical imaging[[Gullekson1974, Erickson1993, Fitzpatrick2001, Wiles2008, Moghari2008]] and electron tomography[[Dierksen1992, Koster1997]]. Due to the low amount of fiduciary markers available for registration, research is focused on error analysis rather than efficiency of matching of thousands of markers with only partial overlap[[Fitzpatrick2001]].
+The idea to incorporate fiduciary markers to facilitate sample independent reconstruction is widely used in medical imaging<ref name="Gullekson1974">{{citation
+| title = Three Dimensional X-Ray Opaque Foreign Body Marker Device
+| author = E. H. Gullekson
+| year = Patent number: 3836776, Filing date: 1 Mar 1973, Issue date: Sep 1974
+}}</ref><ref name="Erickson1993">{{cite journal
+| author = B.J.  Erickson and Jack C.R. Jr. 
+| title = Correlation of single photon emission CT with MR image data using fiduciary markers
+| journal = American Journal of Neuroradiology
+| volume = 14
+| number = 3
+| pages = 713&nbsp;720
+| year = 1993
+}}</ref><ref name="Fitzpatrick2001">{{cite journal
+| author = J. M. Fitzpatrick and J. B. West 
+| title = The distribution of target registration error in rigid-body point-based registration
+| journal = IEEE Transactions on Medical Imaging
+| volume = 20
+| number = 9
+| year = 2001
+| month = September
+| pages = 917&nbsp;927
+}}</ref><ref name="Wiles2008">{{cite journal
+| author = A. D. Wiles, A. Likholyot, D. D. Frantz, and T.M.Peters 
+| title = A Statistical Model for Point-Based Target Registration Error With Anisotropic Fiducial Localizer Error
+| journal = IEEE Transactions on Medical Imaging
+| volume = 27
+| number = 3
+| year = 2008
+| month = March
+| pages = 378&nbsp;390
+}}</ref><ref name="Moghari2008">{{cite conference
+| author = M. H. Moghari, B. Ma, and P. Abolmaesumi
+| title = A Theoretical Comparison of Different Target Registration Error Estimators
+| booktitle = MICCAI '08: Proceedings of the 11th International Conference on Medical Image Computing and Computer-Assisted Intervention, Part II
+| year = 2008
+| isbn = 978-3-540-85989-5
+| pages = 1032&nbsp;1040
+| doi = 10.1007/978-3-540-85990-1_124
+| publisher = Springer-Verlag
+| location = Berlin, Heidelberg
+}}</ref>
+and electron tomography.<ref name="Dierksen1992">{{cite journal
+| title = Towards automatic electron tomography
+| journal = Ultramicroscopy
+| volume = 40
+| number = 1
+| pages = 71&nbsp;87
+| year = 1992
+| author = K. Dierksen, D. Typke, R. Hegerl, A. J. Koster, and W. Baumeister
+}}</ref><ref name="Koster1997">{{cite journal
+| author = A. J. Koster, R. Grimm, D. Typke, R. Hegerl, A. Stoschek, J. Walz, and W. Baumeister 
+| title = Perspectives of molecular and cellular electron tomography
+| journal = J Struct Biol
+| year = 1997
+| volume = 120
+| number = 3
+| pages = 276&nbsp;308
+}}</ref>
+Due to the low amount of fiduciary markers available for registration, research is focused on error analysis rather than efficiency of matching of thousands of markers with only partial overlap.<ref name="Fitzpatrick2001" />
 
-In contrast, in the robotics and automation field, there is interest in localization of large amounts of different objects. Points of interest are extracted from photos and checked against databases to determine their type and orientation[[HarrisS88,Canny86]].  To enable real time object recognition, Lamdan et al.[[LamdanAl88]] introduced ''geometric hashing''  which uses an intrinsic invariant local coordinate system to match objects against database entries in a viewpoint independent manner. The geometric hashing principle is reused in the fields of astronomy[[Hogg2008]] and protein structure alignment and comparison[[Nussinov91, Fischer94, Wallace1997, Stark2003]] where efficient searching in massive point clouds is required.
+In contrast, in the robotics and automation field, there is interest in localization of large amounts of different objects. Points of interest are extracted from photos and checked against databases to determine their type and orientation.<ref name="HarrisS88">{{cite conference
+| title = A Combined Corner and Edge Detector
+| author = C. Harris and M. Stephens
+| locaiton = Plessey Research Roke Manor, UK
+| booktitle = Proceedings of The Fourth Alvey Vision Conference
+| location = Manchester
+| year = 1988
+| pages = 147&nbsp;151
+}}</ref><ref name="Canny86">{{cite journal
+| title = A computational approach to edge detection
+| author = J. Canny
+| journal = IEEE Transactions on Pattern Analysis Machine Intelligence
+| volume = 8
+| number = 6
+| year = 1986
+| pages = 679&nbsp;698
+}}</ref>
+To enable real time object recognition, Lamdan et al.<ref name="LamdanAl88">{{cite conference
+| author = Y. Lamdan, J. Schwartz, and H. Wolfson 
+| title = On recognition of 3D objects from 2D images
+| booktitle = Proceedings of the IEEE International Conference on Robotics and Automation
+| year = 1988
+| pages = 1407&nbsp;1413
+| publisher = IEEE Computer Society
+| location = Los Alamitos, CA
+}}</ref>
+introduced &lsquo;geometric hashing'&rsquo;  which uses an intrinsic invariant local coordinate system to match objects against database entries in a viewpoint independent manner. The geometric hashing principle is reused in the fields of astronomy<ref name="Hogg2008">{{cite conference
+| author =  D. W. Hogg, M. Blanton, D. Lang, K. Mierle, and S. Roweis
+| title = Automated Astrometry
+| booktitle = Astronomical Data Analysis Software and Systems XVII
+| year = 2008
+| series = Astronomical Society of the Pacific Conference Series
+| volume = 394
+| editor = R. W. Argyle, P. S. Bunclark, and J. R. Lewis 
+| month = August
+| pages = 27-+
+}}</ref>
+and protein structure alignment and comparison<ref name="Nussinov91">{{cite journal
+| author = R. Nussinov and H. J. Wolfson
+| journal = Proc Natl Acad Sci U S A
+| number = 23
+| pages = 10495&nbsp;10499
+| title = Efficient detection of three-dimensional structural motifs in biological macromolecules by computer vision techniques.
+| volume = 88
+| year = 1991
+}}</ref><ref name="Fischer94">{{cite journal
+| author = D. Fischer, H. Wolfson, S. L. Lin, and R. Nussinov 
+| title = Three-dimensional, sequence order-independent structural comparison of a serine protease against the crystallographic database reveals active site similarities: Potential implications to evolution and to protein folding
+| journal = Protein Science
+| volume = 3
+| number = 5
+| pages = 769&nbsp;778
+| year = 1994
+}}</ref><ref name="Wallace1997">{{cite journal
+| author = A.C. Wallace, N. Borkakoti, and J. M. Thornton 
+| title = Tess: A geometric hashing algorithm for deriving 3D coordinate templates for searching structural databases. Application to enzyme active sites
+| journal = Protein science
+| year = 1997
+| volume = 6
+| number = 11
+| pages = 2308
+}}</ref><ref name="Stark2003">{{cite journal
+| title = A Model for Statistical Significance of Local Similarities in Structure
+| journal = Journal of Molecular Biology
+| volume = 326
+| number = 5
+| pages = 1307&nbsp;1316
+| year = 2003
+| author = A. Stark, S. Sunyaev, and R. B. Russell
+}}</ref>
+where efficient searching in massive point clouds is required.
 
-The use of local descriptors instead of complete scenes for matching is proposed in many fields comprising image registration[[Stanski2005, Lowe04]], robotics and autonomous systems[[Kuipers91, Bradley04]], and computer vision[[Frome04]].
+The use of local descriptors instead of complete scenes for matching is proposed in many fields comprising image registration,<ref name="Stanski2005">{{cite conference
+| author = A. Stanski and O. Hellwich
+| title = Spiders as Robust Point Descriptors
+| booktitle = DAGM-Symposium
+| year = 2005
+| pages = 262&nbsp;268
+}}</ref><ref name="Lowe04">{{cite journal
+| author = D. G. Lowe
+| title = Distinctive image features from scale-invariant keypoints
+| journal = Int J Comput Vis
+| volume = 60
+| number = 2
+| pages = 91&nbsp;110
+| year = 2004
+}}</ref>
+robotics and autonomous systems,<ref name="Kuipers91">{{cite journal
+| author = B. Kuipers and Yung-tai Byun
+| title = A Robot Exploration and Mapping Strategy Based on a Semantic Hierarchy of Spatial Representations
+| journal = Journal of Robotics and Autonomous Systems
+| year = 1991
+| volume = 8
+| pages = 47&nbsp;63
+}}</ref><ref name="Bradley04">{{cite conference
+| author = D. Bradley, D. Silver, and S. Thayer
+| title = A regional point descriptor for global localization in subterranean environments
+| booktitle = IEEE conference on Robotics Automation and Mechatronics (RAM 2005)
+| pages = 440&nbsp;445
+| month = December
+| year = 2004
+| volume = 1
+}}</ref>
+and computer vision.<ref name="Frome04">{{cite conference
+| author = A. Frome, D. Huber, R. Kolluri, T. Bulow, and J. Malik
+| title = Recognizing objects in range data using regional point descriptors
+| booktitle = Proceedings of the European Conference on Computer Vision (ECCV)
+| month = May
+| year = 2004
+}}</ref>
 
-Matula et al.[[Matula2003]] suggest segmentation based approaches for reconstruction of multi-view microscopy images.  The center of mass of the cloud of segmented objects is used as a reference point for a cylindrical coordinate system facilitating the registration between two views.  Similarly to intensity based approaches, this method requires significant overlap between the images and furthermore supports alignment of only two stacks at a time.
+Matula et al.<ref name="Matula2003">{{cite journal
+| author = P. Matula, M. Kozubek, F. Staier, and M. Hausmann 
+| journal = Journal of microscopy
+| pages = 126&nbsp;42
+| title = Precise 3D image alignment in micro-axial tomography.
+| volume = 209
+| year = 2003
+}}</ref>
+suggest segmentation based approaches for reconstruction of multi-view microscopy images.  The center of mass of the cloud of segmented objects is used as a reference point for a cylindrical coordinate system facilitating the registration between two views.  Similarly to intensity based approaches, this method requires significant overlap between the images and furthermore supports alignment of only two stacks at a time.
 
 Our approach combines the idea of using fiduciary markers, local descriptors and geometric hashing and applies global optimization.  It can register an arbitrary number of partially overlapping point clouds.  It is robust with respect to the amount of incorporated beads, bead distribution, amount of overlap, and can reliably detect non-affine disturbances (e.g. abrupt agarose movement) that might occur during imaging (\autoref{table:evaluation}). 
 
