@@ -418,10 +418,6 @@ The bead-based registration framework is implemented in the Java programming lan
 
 The tutorial on how to use the plugin in basic and advanced mode is available at [[SPIM_Registration]]. The test data containing 7-view SPIM acquisitions of ''Drosophila''  embryo can be downloaded from [http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip].
 
-
-
-[[Image:Intensity_vs_Beads.jpg|thumb|right|300px|<b>Figure&nbsp;6:</b> Comparison of bead-based and intensity-based multi-view reconstruction on 7-view acquisition of Drosophila embryo expressing His-YFP]]
-
 == References ==
 
 <references />
