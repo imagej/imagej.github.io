@@ -233,19 +233,126 @@ Matula et al.<ref name="Matula2003">{{cite journal
 }}</ref>
 suggest segmentation based approaches for reconstruction of multi-view microscopy images.  The center of mass of the cloud of segmented objects is used as a reference point for a cylindrical coordinate system facilitating the registration between two views.  Similarly to intensity based approaches, this method requires significant overlap between the images and furthermore supports alignment of only two stacks at a time.
 
-Our approach combines the idea of using fiduciary markers, local descriptors and geometric hashing and applies global optimization.  It can register an arbitrary number of partially overlapping point clouds.  It is robust with respect to the amount of incorporated beads, bead distribution, amount of overlap, and can reliably detect non-affine disturbances (e.g. abrupt agarose movement) that might occur during imaging (\autoref{table:evaluation}). 
+Our approach combines the idea of using fiduciary markers, local descriptors and geometric hashing and applies global optimization.  It can register an arbitrary number of partially overlapping point clouds.  It is robust with respect to the amount of incorporated beads, bead distribution, amount of overlap, and can reliably detect non-affine disturbances (e.g. abrupt agarose movement) that might occur during imaging (Table&nbsp;1). 
 
 ==Overview of imaged specimens==
 
-We demonstrated the performance of our registration framework on multi-view ''in toto''  imaging of fixed and living specimen of various model organisms (Figure 5), in particular ''Drosophila'' . Fixed ''Drosophila''  embryos were stained with Sytox-Green to label all nuclei. For live imaging, we used a developing ''Drosophila''  embryo expressing fluorescent His-YFP under the control of endogenous promoter visualizing all nuclei. ''Drosophila''  specimens were imaged with a SPIM prototype equipped with a Zeiss 20x/0.5 Achroplan objective.
+We demonstrated the performance of our registration framework on multi-view ''in toto''  imaging of fixed and living specimen of various model organisms ([[Media:Showcase.jpg|Figure&nbsp;5]]), in particular ''Drosophila'' . Fixed ''Drosophila''  embryos were stained with Sytox-Green to label all nuclei. For live imaging, we used a developing ''Drosophila''  embryo expressing fluorescent His-YFP under the control of endogenous promoter visualizing all nuclei. ''Drosophila''  specimens were imaged with a SPIM prototype equipped with a Zeiss 20&times;/0.5 Achroplan objective.
 
 ==Sample mounting for SPIM==
-We matched the fluorescence intensity of the beads to the signal intensity of the sample. For live imaging of His-YFP which is relatively dim and requires longer exposure times (0.3s), we used red or yellow fluorescent beads that are suboptimal for the GFP detection filter set and therefore typically less bright than the sample. Conversely, for the imaging of the bright, fixed specimen, we used green fluorescent beads which give adequate signal at very short exposure times (0.01s).
 
-Despite the fact that our algorithm is robust with respect to the amount of beads available for registration, too many beads unnecessarily increase the computation time, while too few beads may result in an inadequate number of correspondences due to incomplete overlap of the views. Therefore, we determined empirically the optimal concentration of beads for each magnification (ideally 1,000--2,000 beads per imaged volume).  We prepared a 2x stock solution of beads (13 μl of concentrated bead solution (Estapor Microspheres FXC050))
+We matched the fluorescence intensity of the beads to the signal intensity of the sample. For live imaging of His-YFP which is relatively dim and requires longer exposure times (0.3&nbsp;s), we used red or yellow fluorescent beads that are suboptimal for the GFP detection filter set and therefore typically less bright than the sample. Conversely, for the imaging of the bright, fixed specimen, we used green fluorescent beads which give adequate signal at very short exposure times (0.01&nbsp;s).
+
+Despite the fact that our algorithm is robust with respect to the amount of beads available for registration, too many beads unnecessarily increase the computation time, while too few beads may result in an inadequate number of correspondences due to incomplete overlap of the views. Therefore, we determined empirically the optimal concentration of beads for each magnification (ideally 1,000&ndash;2,000 beads per imaged volume).  We prepared a 2&times; stock solution of beads (13&nbsp;μl of concentrated bead solution (Estapor Microspheres FXC050))
 
 
-[[Image:DescriptorBuildup.png|thumb|right|500px|<b>Figure&nbsp;2:</b> Rotation invariant local geometric descriptor]]
+==Bead Segmentation==
+
+The incorporated sub-resolution beads appear as the Point Spread Function (PSF) of the microscopic system in each image&nbsp;<math>I(x,y,z)</math>. To detect beads, one would ideally convolve it with the impulse response&nbsp;(PSF) of the microscope yielding highest correlation at the sub-pixel location of each bead. However, the PSF is not constant over different experiments due to changing exposure times, laser power, bead types, objectives and agarose concentration. Furthermore, the PSF is not constant across the field of view due to the concavity of the light sheet and thus the convolution operation is computationally very demanding.  
+
+We found that an appropriately smoothed 3d LaPlace filter&nbsp;<math>\nabla^2</math> detects all beads with sufficient accuracy while effectively suppressing high frequency noise.  As suggested in the Computer Vision literature,<ref name="Lindeberg94">{{cite journal
+| author = T. Lindeberg
+| title = Scale-space theory: A basic tool for analysing structures at different scales
+| journal = Journal of Applied Statistics
+| volume = 21
+| number = 2
+| pages = 224&nbsp;270
+| year = 1994
+}}</ref><ref name="Lowe04" />
+we approximate <math>\nabla^2I</math> by the difference of two Gaussian convolutions (DoG) of the image&nbsp;<math>I</math> with a standard deviation&nbsp;<math>\sigma</math> of 1.4&nbsp;px and 1.8&nbsp;px respectively.  All local minima in a 3&times;3&times;3 neighborhood in <math>\nabla^2I</math> represent intensity maxima whose sub-pixel location is then estimated by fitting a 3d quadratic function to this neighbourhood.<ref name="BrownLowe02">{{cite conference
+| author = M. Brown and D. Lowe
+| title = Invariant Features from Interest Point Groups
+| booktitle = In British Machine Vision Conference
+| year = 2002
+| pages = 656&nbsp;665
+}}</ref>
+The DoG detector identifies beads even if they are close to each other, close to the sample or those with an unexpected shape.  It also massively oversegments the image detecting &lsquo;blob-like&rsquo; structures, corners and various locations alongside edges or planes within the imaged sample. However, those detections do not interfere with the registration process as the descriptors that incorporate them are filtered out by local descriptor matching (see [[Media:DescriptorBuildup.png|Figure&nbsp;2]]).  Only beads are repeatably detected in different views.
+
+==Establishing Bead Correspondences==
+
+[[Image:DescriptorBuildup.png|thumb|right|300px|<b>Figure&nbsp;2:</b> Rotation invariant local geometric descriptor]]
+To register two views&nbsp;<math>A</math> and <math>B</math> the corresponding bead pairs <math>(\vec{a},\vec{b})</math> have to be identified invariantly to translation and rotation. To this end, we developed a ''geometric local descriptor'' . The local descriptor of a bead is defined by the locations of its 3&nbsp;nearest neighbors in 3d image space ordered by their distance to the bead. To efficiently extract the nearest neighbors in image space we use the ''kd''-tree implementation of the WEKA framework.<ref name="WEKA">{{cite book
+| author = I. H. Witten and E. Frank
+| title = Data Mining: Practical machine learning tools and techniques
+| publisher = Morgen Kaufmann
+| location = San Francisco
+| isbn = 0-12-088407-0
+| edition = second
+| year = 2005
+}}</ref>
+Translation invariance is achieved by storing locations relative to the bead.  That is, each bead descriptor is an ordered 3d point cloud of cardinality 3 with its origin <math>\vec{o} = (0,0,0)^T</math>} being the location of the bead.
+
+Local descriptor matching is performed invariantly to rotation by mapping the ordered point cloud of all beads <math>\vec{a}\in A</math> to that of all beads <math>\vec{b}\in B</math> individually by means of least square point mapping error using the closed-form unit quaternion-based solution.<ref name="Horn87">{{cite journal
+| author = B. K. P. Horn
+| title = Closed-form solution of absolute orientation using unit quaternions
+| journal = Journal of the Optical Society of America A
+| volume = 4
+| number = 4
+| pages = 629&nbsp;642
+| year = 1987
+}}</ref>
+The similarity measure <math>\epsilon</math> is the average point mapping error. Each candidate in <math>A</math> is matched against each candidate in <math>B</math>.  Corresponding descriptors are those with minimal <math>\epsilon</math>. This approach, however, is computationally very demanding as it has a complexity of <math>O(n^2)</math> regarding the number of detections.<ref name="Preibisch2009a">{{cite conference
+| author = S.  Preibisch and S.  Saalfeld and T.  Rohlfing and P. Tomancak 
+| title = Bead-based mosaicing of single plane illumination microscopy images using geometric local descriptor matching
+| booktitle = Medical Imaging 2009: Image Processing
+| year = 2009
+| editor = J. P. W.  Pluim and B. M. Dawant 
+| volume = 7259
+| number = 1
+| pages = 72592S
+| location = Orlando, FL, USA
+| doi = 10.1117/12.812612
+| series = Proceedings of SPIE
+}}</ref>
+
+We therefore employed a variation of geometric hashing<ref name="LamdanAl88" /> to speed up the matching process. Instead of using one reference coordinate system for the complete scene we define a local coordinate system for each of the descriptor as illustrated and described in [[Media:DescriptorBuildup.png|Figure&nbsp;2]]. All remaining bead coordinates not used for defining the local coordinate system become rotation invariant which enables us to compare descriptors very efficiently using ''kd''-trees to index remaining bead coordinates in the local coordinate system.
+Again, we employ the ''kd''-tree implementation of the WEKA framework<ref name="WEKA" /> on a six-dimensional tree to identify nearest neighbors in the descriptor space, i.e. descriptors which are most similar. The most similar descriptors that are significantly better (10&times;) than the second nearest neighbor in descriptor space are designated correspondence candidates.<ref name="Lowe04" />
+
+Descriptors composed of only four beads are not completely distinctive and similar descriptors can occur by chance. Increasing the number of beads in the descriptor would make it more distinctive to the cost of less identified correspondences and increased computation time. All true correspondences agree on one transformation model for optimal view registration, whereas each false correspondence supports a different transformation. Therefore, we used the minimal descriptor size (4 beads) and rejected false correspondences from candidate sets with the Random Sample Consensus (RANSAC)<ref name="FischlerB81">{{cite journal
+| author = M. A. Fischler and R. C. Bolles
+| title = Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography
+| journal = Communications of the ACM
+| volume = 24
+| number = 6
+| pages = 381&nbsp;395
+| year = 1981
+}}</ref>
+on the affine transformation model followed by robust regression.
+
+
+==Global Optimization==
+
+The identified set of corresponding beads <math>C_{AB} = \{(\vec{a}_i,\vec{b}_i) : i=\{1,2, \dots, \left| C\right|\}\}</math> for a pair of views <math>A</math> and <math>B</math> defines an affine transformation&nbsp;<math>\mathbf{T}_{AB}</math> that maps <math>A</math> to <math>B</math> by means of least square bead correspondence displacement
+<center><math>
+\arg\min_{\mathbf{T}_{AB}}\sum_{(\vec{a},\vec{b})\in C_{ab}}{\left\|\mathbf{T}_{AB}\vec{a} - \vec{b}\right\|^2}.
+</math></center>
+
+We use an affine transformation to correct for the anisotropic <math>z</math>-stretching of each view introduced by the differential refraction index mismatch between water and agarose<ref name="Hell1993">{{cite journal
+| title = Aberrations in Confocal Fluorescence Microscopy Induced by Mismatches in Refractive Index
+| journal = Journal of Microscopy
+| volume = 169
+| number = 3
+| pages = 341&nbsp;405
+| year = 1993
+| author = S.  Hell and G.  Reiner and C.  Cremer and E.H.K. Stelzer 
+}}</ref><ref name="Matula2003" /> as the sample is never perfectly centered in the agarose column.
+
+Registration of more than two views requires groupwise optimization of the configuration <math>T_{VF} = \{\mathbf{T}_{AF} : A,F\in V\}</math> with <math>V</math> being the set of all views and <math>F</math> being a fixed view that defines the common reference frame.  Then, the above Equation extends to
+<center><math>
+\arg\min_{T_{VF}}\sum_{A\in V\setminus\{F\}}\left(\sum_{B\in V\setminus\{A\}}\left(\sum_{(\vec{a},\vec{b})\in C_{AB}}{\left\|\mathbf{T}_{AF}\vec{a} - \mathbf{T}_{BF}\vec{b}\right\|^2}\right)\right)
+</math></center>
+with <math>C_{AB}</math> being the set of bead correspondences <math>(\vec{a},\vec{b})</math> between view&nbsp;<math>A</math> and view&nbsp;<math>B</math> whereas <math>\vec{a}\in A</math> and <math>\vec{b}\in B</math>.  This term is solved using an iterative optimization scheme.  In each iteration, the optimal affine transformation&nbsp;<math>\mathbf{T}_{AF}</math> for each single view&nbsp;<math>A\in V\setminus\{F\}</math> relative to the current configuration of all other views is estimated and applied to all beads in this view.  The scheme terminates on convergence of the overall bead correspondence displacement.  This solution allows us to perform the global optimization with any transformation model in case the microscopy set-up has different properties (e. g. translation<ref name="Preibisch2009b">{{cite journal
+| author = S.  Preibisch and S.  Saalfeld and P. Tomancak 
+| title = Globally Optimal Stitching of Tiled 3D Microscopic Image Acquisitions
+| journal = Bioinformatics
+| volume = 25
+| number = 11
+| pages = 1463&nbsp;1465
+| doi = 10.1093/bioinformatics/btp184
+| year = 2009
+}}</ref>, rigid<ref name="Preibisch2009a" />).
+
+
 
 [[Image:ErrorAnalysis.png|thumb|right|800px|<b>Figure&nbsp;3:</b> Analysis of the registration error]]
 
