@@ -263,7 +263,7 @@ The DoG detector identifies beads even if they are close to each other, close to
 
 ===Establishing Bead Correspondences===
 
-[[Image:DescriptorBuildup.png|thumb|right|300px|<b>Figure&nbsp;3:</b> Rotation invariant local geometric descriptor]]
+[[Image:DescriptorBuildup.png|thumb|right|300px|<b>Figure&nbsp;2:</b> Rotation invariant local geometric descriptor]]
 To register two views&nbsp;<math>A</math> and <math>B</math> the corresponding bead pairs <math>(\vec{a},\vec{b})</math> have to be identified invariantly to translation and rotation. To this end, we developed a ''geometric local descriptor'' . The local descriptor of a bead is defined by the locations of its 3&nbsp;nearest neighbors in 3d image space ordered by their distance to the bead. To efficiently extract the nearest neighbors in image space we use the ''kd''-tree implementation of the WEKA framework.<ref name="WEKA">{{cite book
 | author = I. H. Witten and E. Frank
 | title = Data Mining: Practical machine learning tools and techniques
@@ -298,7 +298,7 @@ The similarity measure <math>\epsilon</math> is the average point mapping error.
 | series = Proceedings of SPIE
 }}</ref>
 
-We therefore employed a variation of geometric hashing<ref name="LamdanAl88" /> to speed up the matching process. Instead of using one reference coordinate system for the complete scene we define a local coordinate system for each of the descriptor as illustrated and described in [[Media:DescriptorBuildup.png|Figure&nbsp;3]]. All remaining bead coordinates not used for defining the local coordinate system become rotation invariant which enables us to compare descriptors very efficiently using ''kd''-trees to index remaining bead coordinates in the local coordinate system.
+We therefore employed a variation of geometric hashing<ref name="LamdanAl88" /> to speed up the matching process. Instead of using one reference coordinate system for the complete scene we define a local coordinate system for each of the descriptor as illustrated and described in [[Media:DescriptorBuildup.png|Figure&nbsp;2]]. All remaining bead coordinates not used for defining the local coordinate system become rotation invariant which enables us to compare descriptors very efficiently using ''kd''-trees to index remaining bead coordinates in the local coordinate system.
 Again, we employ the ''kd''-tree implementation of the WEKA framework<ref name="WEKA" /> on a six-dimensional tree to identify nearest neighbors in the descriptor space, i.e. descriptors which are most similar. The most similar descriptors that are significantly better (10&times;) than the second nearest neighbor in descriptor space are designated correspondence candidates.<ref name="Lowe04" />
 
 Descriptors composed of only four beads are not completely distinctive and similar descriptors can occur by chance. Increasing the number of beads in the descriptor would make it more distinctive to the cost of less identified correspondences and increased computation time. All true correspondences agree on one transformation model for optimal view registration, whereas each false correspondence supports a different transformation. Therefore, we used the minimal descriptor size (4 beads) and rejected false correspondences from candidate sets with the Random Sample Consensus (RANSAC)<ref name="FischlerB81">{{cite journal
@@ -311,7 +311,6 @@ Descriptors composed of only four beads are not completely distinctive and simil
 | year = 1981
 }}</ref>
 on the affine transformation model followed by robust regression.
-
 
 ===Global Optimization===
 
