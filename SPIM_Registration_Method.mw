@@ -1,6 +1,6 @@
 ==SPIM principles==
 
-[[Image:SPIMScheme.png|thumb|right|300px|<b>Figure 1:</b> Schematic drawing of a Selective Plane Illumination Microscope]]
+[[Image:SPIMScheme.png|thumb|right|300px|<b>Figure&nbsp;1:</b> Schematic drawing of a Selective Plane Illumination Microscope]]
 A Selective Plane Illumination Microscope<ref name="HuiskenAl2004">{{cite journal
 | author = J. Huisken and J. Swoger and F. D. Bene and J. Wittbrodt and E. H. K. Stelzer
 | title = Optical Sectioning Deep Inside Live Embryos by Selective Plane Illumination Microscopy
@@ -237,7 +237,8 @@ Our approach combines the idea of using fiduciary markers, local descriptors and
 
 ==Overview of imaged specimens==
 
-We demonstrated the performance of our registration framework on multi-view ''in toto''  imaging of fixed and living specimen of various model organisms ([[Media:Showcase.jpg|Figure&nbsp;5]]), in particular ''Drosophila'' . Fixed ''Drosophila''  embryos were stained with Sytox-Green to label all nuclei. For live imaging, we used a developing ''Drosophila''  embryo expressing fluorescent His-YFP under the control of endogenous promoter visualizing all nuclei. ''Drosophila''  specimens were imaged with a SPIM prototype equipped with a Zeiss 20&times;/0.5 Achroplan objective.
+[[Image:Showcase.jpg|thumb|right|300px|<b>Figure&nbsp;2:</b> Examples of various reconstructed multi-view datasets]]
+We demonstrated the performance of our registration framework on multi-view ''in toto''  imaging of fixed and living specimen of various model organisms ([[Media:Showcase.jpg|Figure&nbsp;2]]), in particular ''Drosophila'' . Fixed ''Drosophila''  embryos were stained with Sytox-Green to label all nuclei. For live imaging, we used a developing ''Drosophila''  embryo expressing fluorescent His-YFP under the control of endogenous promoter visualizing all nuclei. ''Drosophila''  specimens were imaged with a SPIM prototype equipped with a Zeiss 20&times;/0.5 Achroplan objective.
 
 ==Sample mounting for SPIM==
 
@@ -266,11 +267,11 @@ we approximate <math>\nabla^2I</math> by the difference of two Gaussian convolut
 | year = 2002
 | pages = 656&nbsp;665
 }}</ref>
-The DoG detector identifies beads even if they are close to each other, close to the sample or those with an unexpected shape.  It also massively oversegments the image detecting &lsquo;blob-like&rsquo; structures, corners and various locations alongside edges or planes within the imaged sample. However, those detections do not interfere with the registration process as the descriptors that incorporate them are filtered out by local descriptor matching (see [[Media:DescriptorBuildup.png|Figure&nbsp;2]]).  Only beads are repeatably detected in different views.
+The DoG detector identifies beads even if they are close to each other, close to the sample or those with an unexpected shape.  It also massively oversegments the image detecting &lsquo;blob-like&rsquo; structures, corners and various locations alongside edges or planes within the imaged sample. However, those detections do not interfere with the registration process as the descriptors that incorporate them are filtered out by local descriptor matching (see [[Media:DescriptorBuildup.png|Figure&nbsp;3]]).  Only beads are repeatably detected in different views.
 
 ==Establishing Bead Correspondences==
 
-[[Image:DescriptorBuildup.png|thumb|right|300px|<b>Figure&nbsp;2:</b> Rotation invariant local geometric descriptor]]
+[[Image:DescriptorBuildup.png|thumb|right|300px|<b>Figure&nbsp;3:</b> Rotation invariant local geometric descriptor]]
 To register two views&nbsp;<math>A</math> and <math>B</math> the corresponding bead pairs <math>(\vec{a},\vec{b})</math> have to be identified invariantly to translation and rotation. To this end, we developed a ''geometric local descriptor'' . The local descriptor of a bead is defined by the locations of its 3&nbsp;nearest neighbors in 3d image space ordered by their distance to the bead. To efficiently extract the nearest neighbors in image space we use the ''kd''-tree implementation of the WEKA framework.<ref name="WEKA">{{cite book
 | author = I. H. Witten and E. Frank
 | title = Data Mining: Practical machine learning tools and techniques
@@ -305,7 +306,7 @@ The similarity measure <math>\epsilon</math> is the average point mapping error.
 | series = Proceedings of SPIE
 }}</ref>
 
-We therefore employed a variation of geometric hashing<ref name="LamdanAl88" /> to speed up the matching process. Instead of using one reference coordinate system for the complete scene we define a local coordinate system for each of the descriptor as illustrated and described in [[Media:DescriptorBuildup.png|Figure&nbsp;2]]. All remaining bead coordinates not used for defining the local coordinate system become rotation invariant which enables us to compare descriptors very efficiently using ''kd''-trees to index remaining bead coordinates in the local coordinate system.
+We therefore employed a variation of geometric hashing<ref name="LamdanAl88" /> to speed up the matching process. Instead of using one reference coordinate system for the complete scene we define a local coordinate system for each of the descriptor as illustrated and described in [[Media:DescriptorBuildup.png|Figure&nbsp;3]]. All remaining bead coordinates not used for defining the local coordinate system become rotation invariant which enables us to compare descriptors very efficiently using ''kd''-trees to index remaining bead coordinates in the local coordinate system.
 Again, we employ the ''kd''-tree implementation of the WEKA framework<ref name="WEKA" /> on a six-dimensional tree to identify nearest neighbors in the descriptor space, i.e. descriptors which are most similar. The most similar descriptors that are significantly better (10&times;) than the second nearest neighbor in descriptor space are designated correspondence candidates.<ref name="Lowe04" />
 
 Descriptors composed of only four beads are not completely distinctive and similar descriptors can occur by chance. Increasing the number of beads in the descriptor would make it more distinctive to the cost of less identified correspondences and increased computation time. All true correspondences agree on one transformation model for optimal view registration, whereas each false correspondence supports a different transformation. Therefore, we used the minimal descriptor size (4 beads) and rejected false correspondences from candidate sets with the Random Sample Consensus (RANSAC)<ref name="FischlerB81">{{cite journal
@@ -354,14 +355,14 @@ with <math>C_{AB}</math> being the set of bead correspondences <math>(\vec{a},\v
 
 ==Time-lapse registration==
 
-[[Image:ErrorAnalysis.png|thumb|right|300px|<b>Figure&nbsp;3:</b> Analysis of the registration error]]
+[[Image:ErrorAnalysis.png|thumb|right|300px|<b>Figure&nbsp;4:</b> Analysis of the registration error]]
 During extended time-lapse imaging, the whole agarose column may move. To compensate the drift, we used the bead-based registration framework to register individual time-points to each other. We select a single view <math>A_t</math> from an arbitrary time-point <math>t</math> in the middle of the series as reference. Subsequently, we use the stored DoG detections to identify the true corresponding local geometric descriptors for all pairs of views <math>A_t</math> and
-<math>A_{a\in{\{1,2, \dots \}\setminus\{t\}}}</math> and calculate an affine transformation&nbsp;<math>\mathbf{T}_{A_aA_t}</math> that maps <math>A_a</math> to <math>A_t</math> by means of least square bead correspondence displacement. The identified transformation matrices are then applied to all remaining views in the respective time-points resulting in a registered time series ([[Media:ErrorAnalysis.png|Figure&nbsp;3a]]).
+<math>A_{a\in{\{1,2, \dots \}\setminus\{t\}}}</math> and calculate an affine transformation&nbsp;<math>\mathbf{T}_{A_aA_t}</math> that maps <math>A_a</math> to <math>A_t</math> by means of least square bead correspondence displacement. The identified transformation matrices are then applied to all remaining views in the respective time-points resulting in a registered time series ([[Media:ErrorAnalysis.png|Figure&nbsp;4a]]).
 
 ==Image Fusion and blending==
 
-[[Image:Blending.jpg|thumb|right|300px|<b>Figure&nbsp;4:</b> Image fusion]]
-The registered views can be combined to create a single isotropic 3d image. An effective fusion algorithm must ensure that each view contributes to the final fused volume only useful sharp image data acquired from the area of the sample close to the detection lens.  Blurred data visible in other overlapping views should be suppressed.  We use Gaussian Filters to approximate the image information at each pixel in the contributing views ([[Media:Blending.jpg|Figure&nbsp;4c,f]]).<ref name="PreiRohlHasa2008">{{cite conference
+[[Image:Blending.jpg|thumb|right|300px|<b>Figure&nbsp;5:</b> Image fusion]]
+The registered views can be combined to create a single isotropic 3d image. An effective fusion algorithm must ensure that each view contributes to the final fused volume only useful sharp image data acquired from the area of the sample close to the detection lens.  Blurred data visible in other overlapping views should be suppressed.  We use Gaussian Filters to approximate the image information at each pixel in the contributing views ([[Media:Blending.jpg|Figure&nbsp;5c,f]]).<ref name="PreiRohlHasa2008">{{cite conference
 | author = S.  Preibisch and T.  Rohlfing and M. P.  Hasak and P. Tomancak 
 | title = Mosaicing of Single Plane Illumination Miscroscopy Images Using Groupwise Registration and Fast Content-Based Image Fusion
 | booktitle = Medical Imaging 2008: Image Processing
@@ -376,7 +377,7 @@ The registered views can be combined to create a single isotropic 3d image. An e
 | series = Proceedings of SPIE
 }}</ref>
 
-For strongly scattering and absorbing specimen like ''Drosophila'' , we typically do not image the entire specimen in each single view, but instead stop at roughly two thirds of its depth as the images become increasingly blurred and distorted. In the reconstructed 3d image, this introduces line artifacts in areas where a view ends abruptly ([[Media:Blending.jpg|Figure&nbsp;4a,d]]). To suppress this effect for the purposes of data display, we apply non-linear blending close to the edges of each border between the views ([[Media:Blending.jpg|Figure&nbsp;4b,e]]).<ref name="Preibisch2009b" />
+For strongly scattering and absorbing specimen like ''Drosophila'' , we typically do not image the entire specimen in each single view, but instead stop at roughly two thirds of its depth as the images become increasingly blurred and distorted. In the reconstructed 3d image, this introduces line artifacts in areas where a view ends abruptly ([[Media:Blending.jpg|Figure&nbsp;5a,d]]). To suppress this effect for the purposes of data display, we apply non-linear blending close to the edges of each border between the views ([[Media:Blending.jpg|Figure&nbsp;5b,e]]).<ref name="Preibisch2009b" />
 
 Precise registration of multi-view data is the prerequisite for multi-view deconvolution of the reconstructed image which can potentially increase the resolution.<ref name="Swoger2007" /><ref name="Engelbrecht2006">{{cite journal
 | author = C. J. Engelbrecht and E. H. K. Stelzer
@@ -399,16 +400,15 @@ Having sub-resolution fluorescent beads around the sample facilitates the estima
 
 ==Strategies for bead removal==
 
-[[Image:Showcase.jpg|thumb|right|300px|<b>Figure&nbsp;5:</b> Examples of various reconstructed multi-view datasets]]
 The presence of sub-resolution fluorescent beads used for the registration of the views might interfere with subsequent analysis of the dataset. To computationally remove the beads from each view we compute the average bead shape by adding the local image neighborhood of all true correspondences (beads used for registration) of the respective view. The acquired template is subsequently used to identify other beads; to speed up the detection we compare this template only to all maxima detected by the Difference-of-Gaussian operator during the initial bead segmentation step. These DoG-detections contain all image maxima and therefore all beads of the sample. The beads are then removed by subtracting a normalized, Gaussian-blurred version of the bead template. This method reliably removes beads which are clearly separated from the sample judged by the average intensity in the vicinity of the detected bead. Therefore, some beads that are positioned very close to the sample are not removed as the bead-subtraction would interfere with the samples' intensities.
 
-To completely remove all beads from the sample we adapt the intensities of the beads to the imaged sample. Therefore we simply embed beads excitable by a different wavelength then the fluorescent maker in the sample and use a long-pass filter for detection ([[Media:Showcase.jpg|Figure&nbsp;5e,g]]). In such acquisition the intensity of the beads is around 2-4.
+To completely remove all beads from the sample we adapt the intensities of the beads to the imaged sample. Therefore we simply embed beads excitable by a different wavelength then the fluorescent maker in the sample and use a long-pass filter for detection ([[Media:Showcase.jpg|Figure&nbsp;2e,g]]). In such acquisition the intensity of the beads is around 2-4.
 
 ==Sample mounting for multi-view imaging on an upright microscope==
 
+[[Image:Rotation_chamber.png|thumb|right|300px|<b>Figure&nbsp;6:</b> Multi-view imaging with spinning disc confocal microscopy]]
 We constructed a sample chamber for multi-view imaging on an upright microscope that consists of a teflon dish equipped with a hole in the side wall which has the diameter of a standard glass capillary ([[Media:Rotation_chamber.png|Figure&nbsp;6a]]). The capillary mounting hole continues on the bottom of the dish as a semi-circular trench of approximately half the thickness of the capillary diameter, extending about 2/3 of the dish radius towards the center of the dish. This trench serves as a bed for the glass capillary inserted through the capillary mounting hole. The trench is extended by a second, shallower trench whose bottom is elevated with respect to the deeper trench by the thickness of the capillary glass wall. The second trench serves as a bed for the agarose column which is pushed out of the capillary by a tightly fitted plunger (not shown). The teflon dish is equipped on one side with a plastic window enabling visual inspection of the sample and the objective lens.
 
-[[Image:Rotation_chamber.png|thumb|right|300px|<b>Figure&nbsp;6:</b> Multi-view imaging with spinning disc confocal microscopy]]
 For imaging, the capillary with the sample embedded in agarose containing appropriate amount of fluorescent beads was inserted into the capillary mounting hole until it reached the end of the capillary bed. The teflon dish was filled with water and the agarose was pushed out of the capillary into the agarose bed by the plunger. Water dipping objective was lowered into the dish and focussed on the ''Drosophila''  embryo specimen in agarose. A confocal stack was acquired using variety of optical sectioning techniques (spinning disc confocal ([[Media:Rotation_chamber.png|Figure&nbsp;6]]), single photon confocal (see '''Supplementary Video 3''' ), two photon confocal, apotome (data not shown)). Next, to achieve multi-view acquisition, the agarose column was retracted into the capillary by the plunger and the capillary was manually rotated. The angle of the rotation was only very roughly estimated by the position of a tape piece attached to the capillary. The agarose was again pushed out into the agarose bed and another confocal stack was collected. In this way arbitrary number of views can be collected as long as the sample does not bleach.
 
 ==Implementation==
