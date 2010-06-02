@@ -47,6 +47,7 @@ Browse the [[:Category:News|news archive]].
 * Manual (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2])
 * [[Level Sets]]
 * [[Trainable Segmentation Plugin|Trainable Segmentation]]
+* [[SIOX:_Simple_Interactive_Object_Extraction|SIOX: Simple Interactive Object Extraction]]
 ;[[:Category:Transform|Transform]]
 * [[Distortion correction]]: correct lens deformation induced by the microscope (optical and electron microscopy). See the [http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf Distortion Correction plugin manual].
 ;[[VIB Protocol]]
