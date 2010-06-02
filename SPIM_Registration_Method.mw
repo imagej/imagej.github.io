@@ -1,4 +1,5 @@
-==SPIM principles==
+==Introduction==
+===SPIM principles===
 
 [[Image:SPIMScheme.png|thumb|right|300px|<b>Figure&nbsp;1:</b> Schematic drawing of a Selective Plane Illumination Microscope]]
 A Selective Plane Illumination Microscope<ref name="HuiskenAl2004">{{cite journal
@@ -19,7 +20,7 @@ fluorescent light are captured by a CCD camera focussed on the center of the lig
 
 The SPIM instrument can, in principle, achieve an isotropic, high resolution along <math>x</math>, <math>y</math> and <math>z</math>-axis allowing ''in toto''  imaging of large 3d specimens. In order to achieve an isotropic resolution uniformly across the sample volume in all three dimensions, it is necessary to rotate the sample and record image stacks of the same specimen from different angles (usually 3 to 12, see [[Media:Supplementary_Video_1_SPIM_in_Action.mov‎|Video&nbsp;1]]).
 
-==Related work==
+===Related work===
 
 Multi-view microscopy techniques, such as tilted confocal acquisitions,<ref name="ShawAl89">
 {{cite journal
@@ -235,22 +236,10 @@ suggest segmentation based approaches for reconstruction of multi-view microscop
 
 Our approach combines the idea of using fiduciary markers, local descriptors and geometric hashing and applies global optimization.  It can register an arbitrary number of partially overlapping point clouds.  It is robust with respect to the amount of incorporated beads, bead distribution, amount of overlap, and can reliably detect non-affine disturbances (e.g. abrupt agarose movement) that might occur during imaging (Table&nbsp;1). 
 
-==Overview of imaged specimens==
 
-[[Image:Showcase.jpg|thumb|right|300px|<b>Figure&nbsp;2:</b> Examples of various reconstructed multi-view datasets]]
-We demonstrated the performance of our registration framework on multi-view ''in toto''  imaging of fixed and living specimen of various model organisms ([[Media:Showcase.jpg|Figure&nbsp;2]]), in particular ''Drosophila'' . Fixed ''Drosophila''  embryos were stained with Sytox-Green to label all nuclei. For live imaging, we used a developing ''Drosophila''  embryo expressing fluorescent His-YFP under the control of endogenous promoter visualizing all nuclei. ''Drosophila''  specimens were imaged with a SPIM prototype equipped with a Zeiss 20&times;/0.5 Achroplan objective.
+==The Method==
 
-==Sample mounting for SPIM==
-
-We matched the fluorescence intensity of the beads to the signal intensity of the sample. For live imaging of His-YFP which is relatively dim and requires longer exposure times (0.3&nbsp;s), we used red or yellow fluorescent beads that are suboptimal for the GFP detection filter set and therefore typically less bright than the sample. Conversely, for the imaging of the bright, fixed specimen, we used green fluorescent beads which give adequate signal at very short exposure times (0.01&nbsp;s).
-
-Despite the fact that our algorithm is robust with respect to the amount of beads available for registration, too many beads unnecessarily increase the computation time, while too few beads may result in an inadequate number of correspondences due to incomplete overlap of the views. Therefore, we determined empirically the optimal concentration of beads for each magnification (ideally 1,000&ndash;2,000 beads per imaged volume).  We prepared a 2&times; stock solution of beads (13&nbsp;μl of concentrated bead solution (Estapor Microspheres FXC050))
-
-==Sample independent registration==
-
-We applied the bead-based registration framework to various samples derived from major model organisms. These include ''Drosophila''  embryo, larva ([[Media:Showcase.jpg|Figure&nbsp;2a–c]]) and oogenesis ([[Media:Showcase.jpg|Figure&nbsp;2d]]), ''C. elegans''  adult (data not shown), larval stages ([[Media:Showcase.jpg|Figure&nbsp;2e]]) and early embryo ([[Media:Showcase.jpg|Figure&nbsp;2f]]), whole mouse embryo ([[Media:Showcase.jpg|Figure&nbsp;2g]]), and dual color imaging of zebrafish embryo ([[Media:Showcase.jpg|Figure&nbsp;2h]]). Despite the fact that the samples range significantly in their size, fluorescent labeling, optical properties and mounting formats the bead-based registration framework was invariably capable of achieving the registration. Therefore, we conclude that our method is sample independent and is universally applicable for registration of any multi-view SPIM acquisition where the sample movement does not disturb the rigidity of the agarose.
-
-==Bead Segmentation==
+===Bead Segmentation===
 
 The incorporated sub-resolution beads appear as the Point Spread Function (PSF) of the microscopic system in each image&nbsp;<math>I(x,y,z)</math>. To detect beads, one would ideally convolve it with the impulse response&nbsp;(PSF) of the microscope yielding highest correlation at the sub-pixel location of each bead. However, the PSF is not constant over different experiments due to changing exposure times, laser power, bead types, objectives and agarose concentration. Furthermore, the PSF is not constant across the field of view due to the concavity of the light sheet and thus the convolution operation is computationally very demanding.  
 
@@ -272,7 +261,7 @@ we approximate <math>\nabla^2I</math> by the difference of two Gaussian convolut
 }}</ref>
 The DoG detector identifies beads even if they are close to each other, close to the sample or those with an unexpected shape.  It also massively oversegments the image detecting &lsquo;blob-like&rsquo; structures, corners and various locations alongside edges or planes within the imaged sample. However, those detections do not interfere with the registration process as the descriptors that incorporate them are filtered out by local descriptor matching (see [[Media:DescriptorBuildup.png|Figure&nbsp;3]]).  Only beads are repeatably detected in different views.
 
-==Establishing Bead Correspondences==
+===Establishing Bead Correspondences===
 
 [[Image:DescriptorBuildup.png|thumb|right|300px|<b>Figure&nbsp;3:</b> Rotation invariant local geometric descriptor]]
 To register two views&nbsp;<math>A</math> and <math>B</math> the corresponding bead pairs <math>(\vec{a},\vec{b})</math> have to be identified invariantly to translation and rotation. To this end, we developed a ''geometric local descriptor'' . The local descriptor of a bead is defined by the locations of its 3&nbsp;nearest neighbors in 3d image space ordered by their distance to the bead. To efficiently extract the nearest neighbors in image space we use the ''kd''-tree implementation of the WEKA framework.<ref name="WEKA">{{cite book
@@ -324,7 +313,7 @@ Descriptors composed of only four beads are not completely distinctive and simil
 on the affine transformation model followed by robust regression.
 
 
-==Global Optimization==
+===Global Optimization===
 
 The identified set of corresponding beads <math>C_{AB} = \{(\vec{a}_i,\vec{b}_i) : i=\{1,2, \dots, \left| C\right|\}\}</math> for a pair of views <math>A</math> and <math>B</math> defines an affine transformation&nbsp;<math>\mathbf{T}_{AB}</math> that maps <math>A</math> to <math>B</math> by means of least square bead correspondence displacement
 <center><math>
@@ -356,13 +345,13 @@ with <math>C_{AB}</math> being the set of bead correspondences <math>(\vec{a},\v
 | year = 2009
 }}</ref>, rigid<ref name="Preibisch2009a" />).
 
-==Time-lapse registration==
+===Time-lapse registration===
 
 [[Image:ErrorAnalysis.png|thumb|right|300px|<b>Figure&nbsp;4:</b> Analysis of the registration error]]
 During extended time-lapse imaging, the whole agarose column may move. To compensate the drift, we used the bead-based registration framework to register individual time-points to each other. We select a single view <math>A_t</math> from an arbitrary time-point <math>t</math> in the middle of the series as reference. Subsequently, we use the stored DoG detections to identify the true corresponding local geometric descriptors for all pairs of views <math>A_t</math> and
 <math>A_{a\in{\{1,2, \dots \}\setminus\{t\}}}</math> and calculate an affine transformation&nbsp;<math>\mathbf{T}_{A_aA_t}</math> that maps <math>A_a</math> to <math>A_t</math> by means of least square bead correspondence displacement. The identified transformation matrices are then applied to all remaining views in the respective time-points resulting in a registered time series ([[Media:ErrorAnalysis.png|Figure&nbsp;4a]]).
 
-==Image Fusion and blending==
+===Image Fusion and blending===
 
 [[Image:Blending.jpg|thumb|right|300px|<b>Figure&nbsp;5:</b> Image fusion]]
 The registered views can be combined to create a single isotropic 3d image. An effective fusion algorithm must ensure that each view contributes to the final fused volume only useful sharp image data acquired from the area of the sample close to the detection lens.  Blurred data visible in other overlapping views should be suppressed.  We use Gaussian Filters to approximate the image information at each pixel in the contributing views ([[Media:Blending.jpg|Figure&nbsp;5c,f]]).<ref name="PreiRohlHasa2008">{{cite conference
@@ -401,14 +390,115 @@ Precise registration of multi-view data is the prerequisite for multi-view decon
 }}</ref>
 Having sub-resolution fluorescent beads around the sample facilitates the estimation of a spatially dependent point spread function and validates the deconvolution results.
 
-==Strategies for bead removal==
+===Strategies for bead removal===
 
 The presence of sub-resolution fluorescent beads used for the registration of the views might interfere with subsequent analysis of the dataset. To computationally remove the beads from each view we compute the average bead shape by adding the local image neighborhood of all true correspondences (beads used for registration) of the respective view. The acquired template is subsequently used to identify other beads; to speed up the detection we compare this template only to all maxima detected by the Difference-of-Gaussian operator during the initial bead segmentation step. These DoG-detections contain all image maxima and therefore all beads of the sample. The beads are then removed by subtracting a normalized, Gaussian-blurred version of the bead template. This method reliably removes beads which are clearly separated from the sample judged by the average intensity in the vicinity of the detected bead. Therefore, some beads that are positioned very close to the sample are not removed as the bead-subtraction would interfere with the samples' intensities.
 
 To completely remove all beads from the sample we adapt the intensities of the beads to the imaged sample. Therefore we simply embed beads excitable by a different wavelength then the fluorescent maker in the sample and use a long-pass filter for detection ([[Media:Showcase.jpg|Figure&nbsp;2e,g]]). In such acquisition the intensity of the beads is around 2-4.
 
+==Evaluation==
+
+===Evaluation of the performance of the bead-based registration framework===
+
+We created a visualization of the optimization procedure. For each view, we display its bounding box and the locations of all corresponding descriptors in a 3d visualization framework<ref name="Bene2007">{{cite conference
+| author = B. Schmidt 
+| title = Hardware-accelerated 3D visualization for ImageJ
+| booktitle = ImageJ User and Developer Conference
+| year = 2008
+| volume = 2
+| editor = Pierre Plumer 
+}}</ref>.
+Correspondences are color coded logarithmically according to their current displacement ranging from red (&gt;100&nbsp;px) to green (&lt;1&nbsp;px). The optimization is initialized with a configuration where the orientation of the views is unknown; all views are placed on top of each other and thus the corresponding descriptor displacement is high (red). As the optimization proceeds, the average displacement decreases (yellow) until convergence at about one pixel average displacement (green) is achieved. [[Media:Supplementary_Video_2_Global_Opt.mov‎|Video&nbsp;2]]  shows the optimization progress for an 8 angle acquisition of fixed ''C.elegans'' . The outline of the worm forms in the middle (grey), since many worm nuclei were segmented by the DoG detector but discarded during establishment of bead correspondences.
+
+The global optimization scheme can be seamlessly applied to tiled multi-view acquisitions. In such a set-up, different parts of a large 3d sample are scanned with a high-magnification lens from multiple angles separately. All such acquisitions can be mixed, discarding all information about their arrangement and the global optimization recovers the correct configuration. An example of such optimization is shown in [[Media:Supplementary_Video_3_Global_Opt_with_Tiling.mov‎|Video&nbsp;3]]  containing a fixed ''Drosophila''  embryo imaged from 8 angles across two or three tiles per angle on a single photon confocal microscope with a 40&times;/0.8 Achroplan objective.
+
+To prove the accuracy of the bead-based registration framework, we created a simulated bead-only dataset with beads approximated by a Gaussian filter response with &sigma;=1.5&nbsp;px.  We generated 8 different views related by an approximately rigid affine transformation with isotropic resolution. The reconstruction of this dataset yielded an average error of 0.02&nbsp;px (\autoref{table:evaluation}).
+For real-life datasets, the registration typically results in errors of about 1&nbsp;px or slightly lower (\autoref{fig:ErrorAnalysis}'''b'''  and \autoref{table:evaluation}) where the remaining error is introduced by the localization accuracy of the bead detector and small non-affine disturbances induced by elastic deformation of the agarose.  In the <math>xy</math>-plane of each view, the beads can be localized very precisely, however, alongside <math>z</math>, the localization accuracy drops due to a lower sampling rate and an asymmetric PSF. This is supported by the dimension dependent error shown in \autoref{fig:ErrorAnalysis}'''c,d''' .
+
+{\autoref{table:evaluation} shows that for the registration we usually use significantly more beads than necessary to solve an affine transformation (4 beads). It is necessary to use many beads for registration due to the following reasons:
+* If the overlap between stacks is - as in many examples shown - very small, it has to be ensured that in these small overlapping areas there are still enough fiduciary markers to align the stacks. 
+* If two stacks are extensively overlapping, the beads have to be evenly distributed around the sample to ensure an even error distribution throughout the sample. Otherwise, small errors in, for example, the lower left corner do not control the registration error in the upper right corner where there are no fiduciary markers.	
+* The localization error of the beads is normally distributed as shown in \autoref{fig:ErrorAnalysis}. That means, the more beads are included in the registration, the more accurate is the average localization of the beads. Consequently, the affine transformation for each individual stack yields lower residual error the more beads are used.
+
+
+Due to the optical properties of the sample it might occur that beads are distorted and aberrated and therefore detected in the wrong location. Typically, such beads are excluded as they do not form repeatable descriptors between the different stacks. If the distortions are minor, they will contribute to the residual error of the affine transformation. However, the contribution is small as those beads represent a very small fraction of all beads. This is supported by the maximal transfer error of &nbsp;1 px of the affine model (see also inset of \autoref{fig:intensityvsbeads}'''a''' ).
+
+Examples of within and across time-points registered time-series of ''Drosophila''  embryonic development are shown in '''Supplementary Videos 4 and 5''' . The videos show 3d renderings of the developing embryos expressing His-YFP in all cells.
+
+The 3d rendered single embryo is shown from four and three arbitrary angles to highlight the complete coverage of the specimen. '''Supplementary Video 4'''  shows in 42 time-points (7 angles) the last two synchronous nuclear divisions followed by gastrulation. '''Supplementary Video 5'''  captures in 249 time-points (5 angles) ''Drosophila''  embryogenesis from gastrulation to mature embryo when muscle activity effectively prevents further imaging.
+
+===Performance of the bead-based registration framework in comparison with intensity-based methods===
+
+[[Image:Intensity_vs_Beads.jpg|thumb|right|300px|<b>Figure&nbsp;6:</b> Comparison of bead-based and intensity-based multi-view reconstruction on 7-view acquisition of Drosophila embryo expressing His-YFP]]
+Existing muti-view SPIM registration approaches that use sample intensities to iteratively optimize the quality of the overlap of the views do not work reliably and are computationally demanding<ref name="Swoger2007">{{cite journal 
+| author = Jim Swoger and Peter Verveer and Klaus Greger and Jan Huisken and Ernst H. K. Stelzer
+| journal = Opt. Express
+| number = 13
+| pages = 8029&nbsp;8042
+| publisher = OSA
+| title = Multi-view image fusion improves resolution in three-dimensional microscopy
+| volume = 15
+| year = 2007
+}}</ref>
+<ref name="PreiRohlHasa2008">{{cite conference
+| author = S.  Preibisch and T.  Rohlfing and M. P.  Hasak and P. Tomancak 
+| title = Mosaicing of Single Plane Illumination Miscroscopy Images Using Groupwise Registration and Fast Content-Based Image Fusion
+| booktitle = Medical Imaging 2008: Image Processing
+| year = 2008
+| editor = J. M.  Reinhardt and J. P. W. Pluim 
+| volume = 6914
+| number = 1
+| pages = 69140E
+| location = San Diego, CA, USA
+| url = http://link.aip.org/link/?PSI/6914/69140E/1
+| doi = 10.1117/12.770893
+| series = Proceedings of SPIE
+}}</ref>
+<ref name="Preibisch08a">{{cite conference
+| author = S. Preibisch and R. Ejsmont and T. Rohlfing and P. Tomancak
+| title = Towards Digital Representation of Drosophila Embryogenesis
+| booktitle = Proceedings of 5th IEEE International Symposium on Biomedical Imaging
+| pages = 324&nbsp;327
+| year = 2008
+}}</ref>. Alternatively, the registration can be achieved by matching of segmented structures, such as cell nuclei, between views <ref name="Keller08">{{cite journal
+| author = P. J.  Keller and A. D.  Schmidt and J.  Wittbrodt and E. H. Stelzer 
+| title = Reconstruction of zebrafish early embryonic development by scanned light sheet microscopy
+| journal = Science
+| volume = 322
+| number = 5904
+| pages = 1065-9
+| year = 2008
+}}</ref>. However, such approaches are not universally applicable, as the segmentation process has to be adapted to the imaged sample.
+
+To evaluate the precision and performance of the bead-based registration framework we compared it against the intensity-based registration method that we developed previously <ref name="Preibisch08a">{{cite conference
+| author = S. Preibisch and R. Ejsmont and T. Rohlfing and P. Tomancak
+| title = Towards Digital Representation of Drosophila Embryogenesis
+| booktitle = Proceedings of 5th IEEE International Symposium on Biomedical Imaging
+| pages = 324&nbsp;327
+| year = 2008
+}}</ref>. This method identifies the rotation axis common to all views by iterative optimization of FFT-based phase correlation between adjacent views. We applied both methods (bead-based and intensity-based) to a single time-point of live 7-view acquisition of ''Drosophila''  embryo expressing His-YFP in all cells embedded in agarose with beads. We chose a time-point during blastoderm stage where the morphology of the embryo changes minimally over time. We evaluated the precision of both methods by the average displacement of the corresponding beads and concluded that the bead-based registration framework clearly outperformed the intensity-based registration in terms of bead registration accuracy (0.98&nbsp;px versus 6.91&nbsp;px, see '''Table 1''', [[Media:Intensity_vs_Beads.jpg|Figure&nbsp;6]]). The increased precision in the bead alignment achieved by the bead-based registration framework is reflected in noticeably improved overlap of the nuclei in the sample (see [[Media:Intensity_vs_Beads.jpg|Figure&nbsp;6]]'''c–h'''). Moreover, the intensity-based method required approximately 9 hours of computation time compared to 2.5&nbsp;minutes for the bead-based registration framework executed on the same computer hardware (Intel Xeon E5440 with 64GB of RAM), i.e. the bead-based framework is about 200&nbsp; faster for this dataset.
+
+==Samples imaged by SPIM==
+
+===Overview of imaged specimens===
+
+[[Image:Showcase.jpg|thumb|right|300px|<b>Figure&nbsp;2:</b> Examples of various reconstructed multi-view datasets]]
+We demonstrated the performance of our registration framework on multi-view ''in toto''  imaging of fixed and living specimen of various model organisms ([[Media:Showcase.jpg|Figure&nbsp;2]]), in particular ''Drosophila'' . Fixed ''Drosophila''  embryos were stained with Sytox-Green to label all nuclei. For live imaging, we used a developing ''Drosophila''  embryo expressing fluorescent His-YFP under the control of endogenous promoter visualizing all nuclei. ''Drosophila''  specimens were imaged with a SPIM prototype equipped with a Zeiss 20&times;/0.5 Achroplan objective.
+
+===Sample mounting for SPIM===
+
+We matched the fluorescence intensity of the beads to the signal intensity of the sample. For live imaging of His-YFP which is relatively dim and requires longer exposure times (0.3&nbsp;s), we used red or yellow fluorescent beads that are suboptimal for the GFP detection filter set and therefore typically less bright than the sample. Conversely, for the imaging of the bright, fixed specimen, we used green fluorescent beads which give adequate signal at very short exposure times (0.01&nbsp;s).
+
+Despite the fact that our algorithm is robust with respect to the amount of beads available for registration, too many beads unnecessarily increase the computation time, while too few beads may result in an inadequate number of correspondences due to incomplete overlap of the views. Therefore, we determined empirically the optimal concentration of beads for each magnification (ideally 1,000&ndash;2,000 beads per imaged volume).  We prepared a 2&times; stock solution of beads (13&nbsp;μl of concentrated bead solution (Estapor Microspheres FXC050))
+
+===Sample independent registration===
+
+We applied the bead-based registration framework to various samples derived from major model organisms. These include ''Drosophila''  embryo, larva ([[Media:Showcase.jpg|Figure&nbsp;2a–c]]) and oogenesis ([[Media:Showcase.jpg|Figure&nbsp;2d]]), ''C. elegans''  adult (data not shown), larval stages ([[Media:Showcase.jpg|Figure&nbsp;2e]]) and early embryo ([[Media:Showcase.jpg|Figure&nbsp;2f]]), whole mouse embryo ([[Media:Showcase.jpg|Figure&nbsp;2g]]), and dual color imaging of zebrafish embryo ([[Media:Showcase.jpg|Figure&nbsp;2h]]). Despite the fact that the samples range significantly in their size, fluorescent labeling, optical properties and mounting formats the bead-based registration framework was invariably capable of achieving the registration. Therefore, we conclude that our method is sample independent and is universally applicable for registration of any multi-view SPIM acquisition where the sample movement does not disturb the rigidity of the agarose.
+
+
 ==Broad applicability of the bead-based framework to multi-view imaging==
 
+[[Image:Rotation_chamber.png|thumb|right|300px|<b>Figure&nbsp;6:</b> Multi-view imaging with spinning disc confocal microscopy]]
 Having the bead-based registration framework for multi-view reconstruction established, we sought to expand its application beyond SPIM, to other microscopy techniques capable of multi-view acquisition <ref name="Bradl92">{{cite journal
 | author = J. Bradl and M. Hausmann and V. Ehemann and D. Komitowski and C. Cremer
 | title = A tilting device for three-dimensional microscopy: application to in situ imaging of interphase cell nuclei.
@@ -418,9 +508,8 @@ Having the bead-based registration framework for multi-view reconstruction estab
 | pages = 47&nbsp;57
 }}</ref>. We designed a sample-mounting set-up that allows imaging of a sample embedded in a horizontally positioned agarose column with fluorescent beads ([[Media:Rotation_chamber.png|Figure&nbsp;6a]]). The agarose column was manually rotated mimicking the SPIM multi-view acquisition. We acquired multiple views of fixed Drosophila embryos stained with nuclear dye on a spinning disc confocal microscope and reconstructed the views using the bead-based registration framework. By mosaicking around the sample, we captured the specimen in toto and achieved full lateral resolution in areas that are compromised by the poor axial resolution of a single-view confocal stack ([[Media:Rotation_chamber.png|Figure&nbsp;6b,c,d]] and '''Supplementary Video 6'''  online). The combination of multi-view acquisition and bead-based registration is applicable to any imaging modality as long as the fluorescent beads can be localized and the views overlap.
 
-==Sample mounting for multi-view imaging on an upright microscope==
+===Sample mounting for multi-view imaging on an upright microscope===
 
-[[Image:Rotation_chamber.png|thumb|right|300px|<b>Figure&nbsp;6:</b> Multi-view imaging with spinning disc confocal microscopy]]
 We constructed a sample chamber for multi-view imaging on an upright microscope that consists of a teflon dish equipped with a hole in the side wall which has the diameter of a standard glass capillary ([[Media:Rotation_chamber.png|Figure&nbsp;6a]]). The capillary mounting hole continues on the bottom of the dish as a semi-circular trench of approximately half the thickness of the capillary diameter, extending about 2/3 of the dish radius towards the center of the dish. This trench serves as a bed for the glass capillary inserted through the capillary mounting hole. The trench is extended by a second, shallower trench whose bottom is elevated with respect to the deeper trench by the thickness of the capillary glass wall. The second trench serves as a bed for the agarose column which is pushed out of the capillary by a tightly fitted plunger (not shown). The teflon dish is equipped on one side with a plastic window enabling visual inspection of the sample and the objective lens.
 
 For imaging, the capillary with the sample embedded in agarose containing appropriate amount of fluorescent beads was inserted into the capillary mounting hole until it reached the end of the capillary bed. The teflon dish was filled with water and the agarose was pushed out of the capillary into the agarose bed by the plunger. Water dipping objective was lowered into the dish and focussed on the ''Drosophila''  embryo specimen in agarose. A confocal stack was acquired using variety of optical sectioning techniques (spinning disc confocal ([[Media:Rotation_chamber.png|Figure&nbsp;6]]), single photon confocal (see [[Media:Supplementary_Video_3_Global_Opt_with_Tiling.mov‎|Video&nbsp;3]]), two photon confocal, apotome (data not shown)). Next, to achieve multi-view acquisition, the agarose column was retracted into the capillary by the plunger and the capillary was manually rotated. The angle of the rotation was only very roughly estimated by the position of a tape piece attached to the capillary. The agarose was again pushed out into the agarose bed and another confocal stack was collected. In this way arbitrary number of views can be collected as long as the sample does not bleach.
