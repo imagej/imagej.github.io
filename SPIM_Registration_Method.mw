@@ -246,6 +246,9 @@ We matched the fluorescence intensity of the beads to the signal intensity of th
 
 Despite the fact that our algorithm is robust with respect to the amount of beads available for registration, too many beads unnecessarily increase the computation time, while too few beads may result in an inadequate number of correspondences due to incomplete overlap of the views. Therefore, we determined empirically the optimal concentration of beads for each magnification (ideally 1,000&ndash;2,000 beads per imaged volume).  We prepared a 2&times; stock solution of beads (13&nbsp;μl of concentrated bead solution (Estapor Microspheres FXC050))
 
+==Sample independent registration==
+
+We applied the bead-based registration framework to various samples derived from major model organisms. These include ''Drosophila''  embryo, larva ([[Media:Showcase.jpg|Figure&nbsp;2a–c]]) and oogenesis ([[Media:Showcase.jpg|Figure&nbsp;2d]]), ''C. elegans''  adult (data not shown), larval stages ([[Media:Showcase.jpg|Figure&nbsp;2e]]) and early embryo ([[Media:Showcase.jpg|Figure&nbsp;2f]]), whole mouse embryo ([[Media:Showcase.jpg|Figure&nbsp;2g]]), and dual color imaging of zebrafish embryo ([[Media:Showcase.jpg|Figure&nbsp;2h]]). Despite the fact that the samples range significantly in their size, fluorescent labeling, optical properties and mounting formats the bead-based registration framework was invariably capable of achieving the registration. Therefore, we conclude that our method is sample independent and is universally applicable for registration of any multi-view SPIM acquisition where the sample movement does not disturb the rigidity of the agarose.
 
 ==Bead Segmentation==
 
