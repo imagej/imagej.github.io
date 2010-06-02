@@ -399,6 +399,7 @@ To completely remove all beads from the sample we adapt the intensities of the b
 
 ===Evaluation of the performance of the bead-based registration framework===
 
+[[Image:ErrorAnalysis.png|thumb|right|300px|<b>Figure&nbsp;4:</b> Analysis of the registration error]]
 We created a visualization of the optimization procedure. For each view, we display its bounding box and the locations of all corresponding descriptors in a 3d visualization framework<ref name="Bene2007">{{cite conference
 | author = B. Schmidt 
 | title = Hardware-accelerated 3D visualization for ImageJ
