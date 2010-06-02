@@ -397,9 +397,14 @@ Precise registration of multi-view data is the prerequisite for multi-view decon
 }}</ref>
 Having sub-resolution fluorescent beads around the sample facilitates the estimation of a spatially dependent point spread function and validates the deconvolution results.
 
-
+==Strategies for bead removal==
 
 [[Image:Showcase.jpg|thumb|right|300px|<b>Figure&nbsp;5:</b> Examples of various reconstructed multi-view datasets]]
+The presence of sub-resolution fluorescent beads used for the registration of the views might interfere with subsequent analysis of the dataset. To computationally remove the beads from each view we compute the average bead shape by adding the local image neighborhood of all true correspondences (beads used for registration) of the respective view. The acquired template is subsequently used to identify other beads; to speed up the detection we compare this template only to all maxima detected by the Difference-of-Gaussian operator during the initial bead segmentation step. These DoG-detections contain all image maxima and therefore all beads of the sample. The beads are then removed by subtracting a normalized, Gaussian-blurred version of the bead template. This method reliably removes beads which are clearly separated from the sample judged by the average intensity in the vicinity of the detected bead. Therefore, some beads that are positioned very close to the sample are not removed as the bead-subtraction would interfere with the samples' intensities.
+
+To completely remove all beads from the sample we adapt the intensities of the beads to the imaged sample. Therefore we simply embed beads excitable by a different wavelength then the fluorescent maker in the sample and use a long-pass filter for detection ([[Media:Showcase.jpg|Figure&nbsp;5e,g]]). In such acquisition the intensity of the beads is around 2-4.
+
+
 
 [[Image:Intensity_vs_Beads.jpg|thumb|right|300px|<b>Figure&nbsp;6:</b> Comparison of bead-based and intensity-based multi-view reconstruction on 7-view acquisition of Drosophila embryo expressing His-YFP]]
 
