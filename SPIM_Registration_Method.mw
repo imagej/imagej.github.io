@@ -347,7 +347,6 @@ with <math>C_{AB}</math> being the set of bead correspondences <math>(\vec{a},\v
 
 ===Time-lapse registration===
 
-[[Image:ErrorAnalysis.png|thumb|right|300px|<b>Figure&nbsp;4:</b> Analysis of the registration error]]
 During extended time-lapse imaging, the whole agarose column may move. To compensate the drift, we used the bead-based registration framework to register individual time-points to each other. We select a single view <math>A_t</math> from an arbitrary time-point <math>t</math> in the middle of the series as reference. Subsequently, we use the stored DoG detections to identify the true corresponding local geometric descriptors for all pairs of views <math>A_t</math> and
 <math>A_{a\in{\{1,2, \dots \}\setminus\{t\}}}</math> and calculate an affine transformation&nbsp;<math>\mathbf{T}_{A_aA_t}</math> that maps <math>A_a</math> to <math>A_t</math> by means of least square bead correspondence displacement. The identified transformation matrices are then applied to all remaining views in the respective time-points resulting in a registered time series ([[Media:ErrorAnalysis.png|Figure&nbsp;4a]]).
 
