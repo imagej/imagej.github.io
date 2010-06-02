@@ -358,8 +358,46 @@ with <math>C_{AB}</math> being the set of bead correspondences <math>(\vec{a},\v
 During extended time-lapse imaging, the whole agarose column may move. To compensate the drift, we used the bead-based registration framework to register individual time-points to each other. We select a single view <math>A_t</math> from an arbitrary time-point <math>t</math> in the middle of the series as reference. Subsequently, we use the stored DoG detections to identify the true corresponding local geometric descriptors for all pairs of views <math>A_t</math> and
 <math>A_{a\in{\{1,2, \dots \}\setminus\{t\}}}</math> and calculate an affine transformation&nbsp;<math>\mathbf{T}_{A_aA_t}</math> that maps <math>A_a</math> to <math>A_t</math> by means of least square bead correspondence displacement. The identified transformation matrices are then applied to all remaining views in the respective time-points resulting in a registered time series ([[Media:ErrorAnalysis.png|Figure&nbsp;3a]]).
 
+==Image Fusion and blending==
 
-[[Image:Blending.jpg|thumb|right|400px|<b>Figure&nbsp;4:</b> Image fusion]]
+[[Image:Blending.jpg|thumb|right|300px|<b>Figure&nbsp;4:</b> Image fusion]]
+The registered views can be combined to create a single isotropic 3d image. An effective fusion algorithm must ensure that each view contributes to the final fused volume only useful sharp image data acquired from the area of the sample close to the detection lens.  Blurred data visible in other overlapping views should be suppressed.  We use Gaussian Filters to approximate the image information at each pixel in the contributing views ([[Media:Blending.jpg|Figure&nbsp;4c,f]]).<ref name="PreiRohlHasa2008">{{cite conference
+| author = S.  Preibisch and T.  Rohlfing and M. P.  Hasak and P. Tomancak 
+| title = Mosaicing of Single Plane Illumination Miscroscopy Images Using Groupwise Registration and Fast Content-Based Image Fusion
+| booktitle = Medical Imaging 2008: Image Processing
+| year = 2008
+| editor = J. M.  Reinhardt and J. P. W. Pluim 
+| volume = 6914
+| number = 1
+| pages = 69140E
+| location = San Diego, CA, USA
+| url = http://link.aip.org/link/?PSI/6914/69140E/1
+| doi = 10.1117/12.770893
+| series = Proceedings of SPIE
+}}</ref>
+
+For strongly scattering and absorbing specimen like ''Drosophila'' , we typically do not image the entire specimen in each single view, but instead stop at roughly two thirds of its depth as the images become increasingly blurred and distorted. In the reconstructed 3d image, this introduces line artifacts in areas where a view ends abruptly ([[Media:Blending.jpg|Figure&nbsp;4a,d]]). To suppress this effect for the purposes of data display, we apply non-linear blending close to the edges of each border between the views ([[Media:Blending.jpg|Figure&nbsp;4b,e]]).<ref name="Preibisch2009b" />
+
+Precise registration of multi-view data is the prerequisite for multi-view deconvolution of the reconstructed image which can potentially increase the resolution.<ref name="Swoger2007" /><ref name="Engelbrecht2006">{{cite journal
+| author = C. J. Engelbrecht and E. H. K. Stelzer
+| title = Resolution enhancement in a light-sheet-based microscope (SPIM)
+| journal = Optics  Letters
+| volume = 31
+| number = 10
+| pages = 1477&nbsp;1479
+| year = 2006
+}}</ref><ref name="Verveer2007">{{cite journal
+| title = High-resolution three-dimensional imaging of large specimens with light sheet-based microscopy
+| journal = Nature Methods
+| volume = 4
+| number = 4
+| pages = 311&nbsp;313
+| year = 2007
+| author = P.J. Verveer and J. Swoger and F. Pampaloni and K. Greger and M. Marcello and E.H.K.Stelzer 
+}}</ref>
+Having sub-resolution fluorescent beads around the sample facilitates the estimation of a spatially dependent point spread function and validates the deconvolution results.
+
+
 
 [[Image:Showcase.jpg|thumb|right|300px|<b>Figure&nbsp;5:</b> Examples of various reconstructed multi-view datasets]]
 
