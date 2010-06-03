@@ -390,3 +390,6 @@ Blending Alpha = float alpha
 Gauss Fusion Sigma 1 = float fusionSigma1
 Gauss Fusion Sigma 2 = float fusionSigma2
 </source>
+
+[[Category:Plugins]]
+[[Category:Registration]]
