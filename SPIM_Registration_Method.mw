@@ -560,14 +560,15 @@ We applied the bead-based registration framework to various samples derived from
 ==Broad applicability of the bead-based framework to multi-view imaging==
 
 [[Image:Rotation_chamber.png|thumb|right|300px|<b>Figure&nbsp;7:</b> Multi-view imaging with spinning disc confocal microscopy]]
-Having the bead-based registration framework for multi-view reconstruction established, we sought to expand its application beyond SPIM, to other microscopy techniques capable of multi-view acquisition <ref name="Bradl92">{{cite journal
+Having the bead-based registration framework for multi-view reconstruction established, we sought to expand its application beyond SPIM, to other microscopy techniques capable of multi-view acquisition.<ref name="Bradl92">{{cite journal
 | author = J. Bradl and M. Hausmann and V. Ehemann and D. Komitowski and C. Cremer
 | title = A tilting device for three-dimensional microscopy: application to in situ imaging of interphase cell nuclei.
 | journal = Journal of Microscopy
 | year = 1992
 | volume = 168
 | pages = 47&nbsp;57
-}}</ref>. We designed a sample-mounting set-up that allows imaging of a sample embedded in a horizontally positioned agarose column with fluorescent beads ([[Media:Rotation_chamber.png|Figure&nbsp;7a]]). The agarose column was manually rotated mimicking the SPIM multi-view acquisition. We acquired multiple views of fixed Drosophila embryos stained with nuclear dye on a spinning disc confocal microscope and reconstructed the views using the bead-based registration framework. By mosaicking around the sample, we captured the specimen in toto and achieved full lateral resolution in areas that are compromised by the poor axial resolution of a single-view confocal stack ([[Media:Rotation_chamber.png|Figure&nbsp;7b,c,d]] and [[Media:Supplementary_Video_6_Drosophila_Spinning_Disc.mov‎|Video&nbsp;6]]  ). The combination of multi-view acquisition and bead-based registration is applicable to any imaging modality as long as the fluorescent beads can be localized and the views overlap.
+}}</ref>
+We designed a sample-mounting set-up that allows imaging of a sample embedded in a horizontally positioned agarose column with fluorescent beads ([[Media:Rotation_chamber.png|Figure&nbsp;7a]]). The agarose column was manually rotated mimicking the SPIM multi-view acquisition. We acquired multiple views of fixed Drosophila embryos stained with nuclear dye on a spinning disc confocal microscope and reconstructed the views using the bead-based registration framework. By mosaicking around the sample, we captured the specimen in toto and achieved full lateral resolution in areas that are compromised by the poor axial resolution of a single-view confocal stack ([[Media:Rotation_chamber.png|Figure&nbsp;7b,c,d]] and [[Media:Supplementary_Video_6_Drosophila_Spinning_Disc.mov‎|Video&nbsp;6]]  ). The combination of multi-view acquisition and bead-based registration is applicable to any imaging modality as long as the fluorescent beads can be localized and the views overlap.
 
 ===Sample mounting for multi-view imaging on an upright microscope===
 
