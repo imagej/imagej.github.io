@@ -586,3 +586,12 @@ The tutorial on how to use the plugin in basic and advanced mode is available at
 == References ==
 
 <references />
+
+==Acknowledgments==
+
+We want to thank Jonathan Rodenfels,<ref group="affiliations" name="MPI-CBG">Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany</ref> Ivana Viktorinova,<ref name="MPI-CBG" /> Mihail Sarov,<ref name="MPI-CBG" /> Steffen Jänsch,<ref name="MPI-CBG" /> Jeremy Pulvers,<ref name="MPI-CBG" /> and Pedro Campinho<ref name="MPI-CBG" /> for providing various biological samples for imaging with SPIM shown in [[Media:Showcase.jpg|Figure&nbsp;6]].
+
+<references group="affiliations" />
+
+[[Category:Plugins]]
+[[Category:Registration]]
