@@ -435,7 +435,7 @@ The 3d rendered single embryo is shown from four and three arbitrary angles to h
 ===Performance of the bead-based registration framework in comparison with intensity-based methods===
 
 [[Image:Intensity_vs_Beads.jpg|thumb|right|300px|<b>Figure&nbsp;5:</b> Comparison of bead-based and intensity-based multi-view reconstruction on 7-view acquisition of Drosophila embryo expressing His-YFP]]
-Existing muti-view SPIM registration approaches that use sample intensities to iteratively optimize the quality of the overlap of the views do not work reliably and are computationally demanding<ref name="Swoger2007">{{cite journal 
+Existing muti-view SPIM registration approaches that use sample intensities to iteratively optimize the quality of the overlap of the views do not work reliably and are computationally demanding.<ref name="Swoger2007">{{cite journal 
 | author = Jim Swoger and Peter Verveer and Klaus Greger and Jan Huisken and Ernst H. K. Stelzer
 | journal = Opt. Express
 | number = 13
@@ -444,8 +444,7 @@ Existing muti-view SPIM registration approaches that use sample intensities to i
 | title = Multi-view image fusion improves resolution in three-dimensional microscopy
 | volume = 15
 | year = 2007
-}}</ref>
-<ref name="PreiRohlHasa2008">{{cite conference
+}}</ref><ref name="PreiRohlHasa2008">{{cite conference
 | author = S.  Preibisch and T.  Rohlfing and M. P.  Hasak and P. Tomancak 
 | title = Mosaicing of Single Plane Illumination Miscroscopy Images Using Groupwise Registration and Fast Content-Based Image Fusion
 | booktitle = Medical Imaging 2008: Image Processing
@@ -458,8 +457,7 @@ Existing muti-view SPIM registration approaches that use sample intensities to i
 | url = http://link.aip.org/link/?PSI/6914/69140E/1
 | doi = 10.1117/12.770893
 | series = Proceedings of SPIE
-}}</ref>
-<ref name="Preibisch08a">{{cite conference
+}}</ref><ref name="Preibisch08a">{{cite conference
 | author = S. Preibisch and R. Ejsmont and T. Rohlfing and P. Tomancak
 | title = Towards Digital Representation of Drosophila Embryogenesis
 | booktitle = Proceedings of 5th IEEE International Symposium on Biomedical Imaging
@@ -473,15 +471,75 @@ Existing muti-view SPIM registration approaches that use sample intensities to i
 | number = 5904
 | pages = 1065-9
 | year = 2008
-}}</ref>. However, such approaches are not universally applicable, as the segmentation process has to be adapted to the imaged sample.
+}}</ref>
+However, such approaches are not universally applicable, as the segmentation process has to be adapted to the imaged sample.
 
-To evaluate the precision and performance of the bead-based registration framework we compared it against the intensity-based registration method that we developed previously <ref name="Preibisch08a">{{cite conference
+To evaluate the precision and performance of the bead-based registration framework we compared it against the intensity-based registration method that we developed previously.<ref name="Preibisch08a">{{cite conference
 | author = S. Preibisch and R. Ejsmont and T. Rohlfing and P. Tomancak
 | title = Towards Digital Representation of Drosophila Embryogenesis
 | booktitle = Proceedings of 5th IEEE International Symposium on Biomedical Imaging
 | pages = 324&nbsp;327
 | year = 2008
-}}</ref>. This method identifies the rotation axis common to all views by iterative optimization of FFT-based phase correlation between adjacent views. We applied both methods (bead-based and intensity-based) to a single time-point of live 7-view acquisition of ''Drosophila''  embryo expressing His-YFP in all cells embedded in agarose with beads. We chose a time-point during blastoderm stage where the morphology of the embryo changes minimally over time. We evaluated the precision of both methods by the average displacement of the corresponding beads and concluded that the bead-based registration framework clearly outperformed the intensity-based registration in terms of bead registration accuracy (0.98&nbsp;px versus 6.91&nbsp;px, see '''Table 1''', [[Media:Intensity_vs_Beads.jpg|Figure&nbsp;5]]). The increased precision in the bead alignment achieved by the bead-based registration framework is reflected in noticeably improved overlap of the nuclei in the sample (see [[Media:Intensity_vs_Beads.jpg|Figure&nbsp;5c–h]]). Moreover, the intensity-based method required approximately 9 hours of computation time compared to 2.5&nbsp;minutes for the bead-based registration framework executed on the same computer hardware (Intel Xeon E5440 with 64GB of RAM), i.e. the bead-based framework is about 200&nbsp; faster for this dataset.
+}}</ref>
+This method identifies the rotation axis common to all views by iterative optimization of FFT-based phase correlation between adjacent views. We applied both methods (bead-based and intensity-based) to a single time-point of live 7-view acquisition of ''Drosophila''  embryo expressing His-YFP in all cells embedded in agarose with beads. We chose a time-point during blastoderm stage where the morphology of the embryo changes minimally over time. We evaluated the precision of both methods by the average displacement of the corresponding beads and concluded that the bead-based registration framework clearly outperformed the intensity-based registration in terms of bead registration accuracy (0.98&nbsp;px versus 6.91&nbsp;px, see [[#Table1|Table&nbsp;1]], [[Media:Intensity_vs_Beads.jpg|Figure&nbsp;5]]). The increased precision in the bead alignment achieved by the bead-based registration framework is reflected in noticeably improved overlap of the nuclei in the sample (see [[Media:Intensity_vs_Beads.jpg|Figure&nbsp;5c–h]]). Moreover, the intensity-based method required approximately 9 hours of computation time compared to 2.5&nbsp;minutes for the bead-based registration framework executed on the same computer hardware (Intel Xeon E5440 with 64GB of RAM), i.e. the bead-based framework is about 200&nbsp; faster for this dataset.
+
+----
+
+{| id="Table1" style="text-align:center"
+|+ style="margin-top:1em; margin-bottom:1em;" |'''Table&nbsp;1:''' Statistics of multi-view registration of various datasets
+|-
+! Dataset
+! min/avg/max error [px]
+! DoG detections
+! True correspondence number (ratio)
+! processing time [min:sec]
+|-
+| Fixed ''C.elegans'', 8 views<br />SPIM 40&times;/0.8NA
+| 1.02/1.12/1.31
+| 4566
+| 1717 (98%)
+| 11:09
+|-
+| Live ''Drosophila'', 5 views<br />SPIM 20&times;/0.5NA
+| 0.76/0.81/1.31
+| 9267
+| 1459 (97%)
+| 2:31
+|-
+| Fixed ''Drosophila'', 10 views<br />SPIM 20&times;/0.5NA
+| 0.65/0.78/0.97
+| 9035
+| 1301 (93%)
+| 20:10
+|-
+| Fixed ''Drosophila'', 11 views<br />Spinning Disc 20&times/0.5NA
+| 1.10/1.33/1.86
+| 6309
+| 978 (92%)
+| 6:15
+|-
+| Simulated Dataset, 8 views<br />Isotropic Resolution
+| 0.02/0.02/0.02
+| 2594
+| 2880 (96%)
+| 15:54
+|-
+| Live ''Drosophila'', 7 views<br />SPIM 20&times;/0.5NA<br />'''bead-based'''
+| 0.87/0.98/1.17
+| 6232
+| 603 (97%)
+| 2:27
+|-
+| Live ''Drosophila'', 7 views<br />SPIM 20&times;/0.5NA<br />'''intensity-based'''
+| 0.93/6.91/9.59
+| n.a.
+| n.a.
+| 515:10
+|}
+
+We show minimal, average and maximal displacement of all true correspondences (beads) after convergence of the global optimization. The simulated dataset shows very low registration errors. The total number of DoG detections is typically much higher than the number of extracted correspondence candidate pairs although a DoG detection can participate in more than one correspondence pair. The ratio of true correspondences versus correspondence candidates is typically above 90%.  Lower ratios indicate a registration problem, for example caused by movement of the agarose during stack acquisition. The processing time (segmentation and registration) was measured on a dual quad-core Intel Xeon E5440 system.
+
+----
 
 ==Samples imaged by SPIM==
 
