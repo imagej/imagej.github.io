@@ -77,7 +77,7 @@ Let's look at a simple function multiplying every pixel value with a given const
 Using  ''imglib'':
 
 <source lang="java">
- public <T extends RealType<T>> void multiplyImageByValue( Image<T> input,  T factor )
+ public <T extends ComplexType<T>> void multiplyImageByValue( Image<T> input,  T factor )
  {
         final Cursor<T> cursor = input.createCursor();
  
@@ -91,7 +91,7 @@ Using  ''imglib'':
 }
 </source>
 
-The performance is better in the latter version, as there is no need for two type conversions in every iteration: the Type instance implements the native operation ''mul()'', and since the implementation is labeled using the Java keyword ''final'', it will be inlined and optimized pretty quickly by Java's Just-In-Time compiler. Furthermore it will work on any NumericType (even for example complex numbers) that are available or will be implemented in the future.
+The performance is better in the latter version, as there is no need for two type conversions in every iteration: the Type instance implements the native operation ''mul()'', and since the implementation is labeled using the Java keyword ''final'', it will be inlined and optimized pretty quickly by Java's Just-In-Time compiler. Furthermore it will work on any ComplexType (even for example real numbers) that are available or will be implemented in the future.
 
 = Tutorials and howtos =
 
