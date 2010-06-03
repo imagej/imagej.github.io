@@ -4,7 +4,9 @@
 
 * Fiji was prominently featured in Nature Methods review [http://www.nature.com/nmeth/journal/v7/n3s/index.html supplement] on visualization <ref>{{cite journal |author=Thomas Walter, David W Shattuck, Richard Baldock, Mark E Bastin, Anne E Carpenter, Suzanne Duce, Jan Ellenberg, Adam Fraser, Nicholas Hamilton, Steve Pieper, Mark A Ragan, Jurgen E Schneider, Pavel Tomancak and Jean-Karim Hériché |title=Visualization of image data from cells to organisms |journal=Nature Methods |year=2010 |volume= 7 No 3s |pages=S26 -S41|url=http://www.nature.com/nmeth/journal/v7/n3s/abs/nmeth.1431.html}}</ref>
 
-* Fiji's <b>3d viewer</b> published in BMC Bioinformatics<ref>{{cite journal|author=Benjamin Schmid , Johannes Schindelin , Albert Cardona , Mark Longair  and Martin Heisenberg|title=A high-level 3D visualization API for Java and ImageJ|journal=BMC Bioinformatics|year=2010|volume=11|page=274|url=http://www.biomedcentral.com/1471-2105/11/274/abstract}}</ref>
+* Fiji's <b>3d viewer</b> was published in BMC Bioinformatics<ref>{{cite journal|author=Benjamin Schmid , Johannes Schindelin , Albert Cardona , Mark Longair  and Martin Heisenberg|title=A high-level 3D visualization API for Java and ImageJ|journal=BMC Bioinformatics|year=2010|volume=11|page=274|url=http://www.biomedcentral.com/1471-2105/11/274/abstract}}</ref>
+
+* A powerful plugin for registering SPIM (Selective Plane Illumination Microscopy) and other multi-angle image data was published in Nature Methods<ref>{{cite journal|author=Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin and Pavel Tomancak|year=2010|title=Software for bead-based registration of selective plane illumination microscopy data|journal=Nature Methods|volume=7|page=418-419|url=http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html}}</ref>
 
 == Publications using or enhancing Fiji ==
 
