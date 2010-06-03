@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | name                   = Selective Plane Illumination Microscopy Registration
 | software               = ImageJ
-| author                 = Stephan Preibisch
+| author                 = Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak
 | maintainer             = Stephan Preibisch
 | filename               = SPIM_Registration.jar
 | released               = February 2010
