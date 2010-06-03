@@ -77,7 +77,7 @@ Let's look at a simple function multiplying every pixel value with a given const
 Using  ''imglib'':
 
 <source lang="java">
- public <T extends NumericType<T>> void multiplyImageByValue( Image<T> input,  T factor )
+ public <T extends RealType<T>> void multiplyImageByValue( Image<T> input,  T factor )
  {
         final Cursor<T> cursor = input.createCursor();
  
