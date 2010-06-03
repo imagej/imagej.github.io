@@ -1,5 +1,9 @@
 Here is logged all modification made to the structure of this wiki (not its content), such as installation of extension and so.
 
+* 10/06/03 - JES - include the Cite extension from the Git checkout, rather than manually synchronizing with mediawiki's Subversion repository all the time
+
+* 10/06/03 - JES - update mediawiki from our own svn2git (REL1_16 branch)
+
 * 10/02/21 - JES - install (and fix) the [[Special:PdfPrint|PdfExport extension]]
 
 * 10/01/21 - JES - add a newly-written extension to list the news directly
