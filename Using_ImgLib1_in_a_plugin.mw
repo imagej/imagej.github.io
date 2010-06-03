@@ -69,9 +69,9 @@ import ij.plugin.PlugIn;
 import mpicbg.imglib.image.Image;
 import mpicbg.imglib.image.ImagePlusAdapter;
 
-import mpicbg.imglib.type.NumericType;
+import mpicbg.imglib.type.numeric.RealType;
 
-public class Pixel_Summation<T extends NumericType<T>> implements PlugIn {
+public class Pixel_Summation<T extends RealType<T>> implements PlugIn {
   
   protected Image<T> img;
 
@@ -90,12 +90,12 @@ protected Image<T> img;
 
 We must also detail what <tt>T</tt> can be. This is done by modifying the class signature. We add a type variable to it, that specifies what the plugin operates on:
 <source lang="java">
-public class Pixel_Summation<T extends NumericType<T>> implements PlugIn {
+public class Pixel_Summation<T extends RealType<T>> implements PlugIn {
 </source>
 This is like saying: "this plugin operates on <tt>T</tt>", whatever <tt>T</tt> is.
 In our specific case, <tt>T</tt> can't be anything. If you inspect the source of <tt>Image</tt>, you will see that we need to use a subclass of <tt>mpicbg.imglib.type.Type</tt> (we can't have images made of koalas, yet). 
 
-Here, we want to access the pixel "real" value, so we will use <tt>NumericType</tt>. It defines an interesting method <tt>getReal()</tt> that will allow us to retrieve a <tt>float</tt> representation of the pixel value.
+Here, we want to access the ''real'' pixel value (note that ''complex'' values are more general, so if you implement an algorithm on ''complex'' types, it will work on ''real'' ones, too, but not vice versa), so we will use <tt>RealType</tt>. It defines an interesting method <tt>getReal()</tt> that will allow us to retrieve a <tt>float</tt> representation of the pixel value.
 
 == Making something out of it ==
 
@@ -107,21 +107,25 @@ Now that we vanquished the semantics, we would like to wrap up this tutorial by 
 
 * The actual data can be retrieved using the <tt>getType()</tt> method, that will return - oh surprise - an object of class <tt>T</tt>.
 
-* Since in our case <tt>T</tt> extends <tt>NumericType</tt>, we can use the <tt>getReal()</tt> method to convert to a basic java <tt>float</tt>.
+* Since in our case <tt>T</tt> extends <tt>RealType</tt>, we can use the <tt>getReal()</tt> method to convert to a basic java <tt>float</tt>.
 
 Which leads to:
 
 <source lang="java">
-import ij.plugin.PlugIn;
 import ij.IJ;
 import ij.ImagePlus;
 import ij.WindowManager;
+
+import ij.plugin.PlugIn;
+
 import mpicbg.imglib.cursor.Cursor;
+
 import mpicbg.imglib.image.Image;
 import mpicbg.imglib.image.ImagePlusAdapter;
-import mpicbg.imglib.type.NumericType;
 
-public class Pixel_Summation<T extends NumericType<T>> implements PlugIn {
+import mpicbg.imglib.type.numeric.RealType;
+
+public class Pixel_Summation<T extends RealType<T>> implements PlugIn {
   
   protected Image<T> img;
 
