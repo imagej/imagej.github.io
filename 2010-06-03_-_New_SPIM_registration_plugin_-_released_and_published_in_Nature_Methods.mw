@@ -1,0 +1,3 @@
+After years of development we release today through the Fiji updater a new plugin for registration of multi-view <b>Selective Plane Illumination Microscopy<b> (SPIM) datasets. Besides the exciting applications for SPIM imaging the code base can be used for efficient matching of large, partially overlapping 3d point clouds. The software was published in [[http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html Nature Methods]]. Details on how to use the pluign for SPIM registration can be found [[SPIM_Registration here]] and the principle of the algorithm is extensively documented [[SPIM_registration_Method here]]. Feedback is very welcome on this brand new Fiji project.
+ 
+[[Category:News]]
