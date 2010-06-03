@@ -524,7 +524,7 @@ For imaging, the capillary with the sample embedded in agarose containing approp
 [[Image:Screenshot.png|thumb|right|300px|<b>Figure&nbsp;8:</b> Screenshot of SPIM registration plugin in Fiji]]
 The bead-based registration framework is implemented in the Java programming language and provided as a fully open source plugin packaged with the ImageJ distribution [[Fiji]] (Fiji Is Just ImageJ, that is actively developed by an international group of developers. The plugin ([[Media:Screenshot.png|Figure&nbsp;8]]) performs all steps of the registration pipeline: bead segmentation, correspondence analysis of bead-descriptors, outlier removal (RANSAC and global regression), global optimization including optional visualization, several methods for fusion, blending and time-lapse registration.
 
-The tutorial on how to use the plugin in basic and advanced mode is available at [[SPIM_Registration]]. The test data containing 7-view SPIM acquisitions of ''Drosophila''  embryo can be downloaded from [http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip].
+The tutorial on how to use the plugin in basic and advanced mode is available at [[SPIM Registration]]. The test data containing 7-view SPIM acquisitions of ''Drosophila''  embryo can be downloaded from [http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip].
 
 == References ==
 
