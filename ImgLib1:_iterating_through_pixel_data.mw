@@ -156,7 +156,7 @@ public class Localizable_Cursors<T extends RealType<T>> implements PlugIn {
                         if ( max == null )
                                  max = current_value.clone();
  
-                        // NumericType implements java.lang.Comparable
+                        // RealType implements java.lang.Comparable
 			if ( current_value.compareTo( max ) > 0 ) 
                         {
                                 // save the max position, giving a pre-instantiated array is the fastest way 
