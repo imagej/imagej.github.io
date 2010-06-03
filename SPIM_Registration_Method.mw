@@ -460,7 +460,8 @@ Existing muti-view SPIM registration approaches that use sample intensities to i
 | booktitle = Proceedings of 5th IEEE International Symposium on Biomedical Imaging
 | pages = 324&nbsp;327
 | year = 2008
-}}</ref>. Alternatively, the registration can be achieved by matching of segmented structures, such as cell nuclei, between views <ref name="Keller08">{{cite journal
+}}</ref>
+Alternatively, the registration can be achieved by matching of segmented structures, such as cell nuclei, between views<ref name="Keller08">{{cite journal
 | author = P. J.  Keller and A. D.  Schmidt and J.  Wittbrodt and E. H. Stelzer 
 | title = Reconstruction of zebrafish early embryonic development by scanned light sheet microscopy
 | journal = Science
