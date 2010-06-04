@@ -14,6 +14,8 @@
 
 * A powerful plugin for registering SPIM (Selective Plane Illumination Microscopy) and other multi-angle image data was published in Nature Methods<ref>{{cite journal|author=Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin and Pavel Tomancak|year=2010|title=Software for bead-based registration of selective plane illumination microscopy data|journal=Nature Methods|volume=7|page=418-419|url=http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html}}</ref>
 
+* [[TrakEM2]] was used and enhanced to identify neuronal lineages, and an article was published in the Journal of Neuroscience<ref>{{cite journal|author=Albert Cardona, Stephan Saalfeld, Ignacio Arganda, Wayne Pereanu, Johannes Schindelin and Volker Hartenstein|year=2010|title=Identifying Neuronal Lineages of Drosophila by Sequence Analysis of Axon Tracts|journal=The Journal of Neuroscience|volume=30(22)|page=7538-7553|doi=10.1523/JNEUROSCI.0186-10.2010|url=http://www.jneurosci.org/cgi/content/full/30/22/7538}}</ref> about it.
+
 == References ==
 
 <references />
