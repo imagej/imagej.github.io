@@ -61,3 +61,5 @@ Then edit staged-plugins/IO_.config to add menu items e.g.
 Finally add a new handle in 
   src-plugins/Input-OutputHandleExtraFileTypes.java
 to recognise images of the relevant type and call the plugin.
+
+[[Category:Tutorials]]
