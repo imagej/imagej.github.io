@@ -16,6 +16,8 @@
 
 * [[TrakEM2]] was used and enhanced to identify neuronal lineages, and an article was published in the Journal of Neuroscience<ref>{{cite journal|author=Albert Cardona, Stephan Saalfeld, Ignacio Arganda, Wayne Pereanu, Johannes Schindelin and Volker Hartenstein|year=2010|title=Identifying Neuronal Lineages of Drosophila by Sequence Analysis of Axon Tracts|journal=The Journal of Neuroscience|volume=30(22)|page=7538-7553|doi=10.1523/JNEUROSCI.0186-10.2010|url=http://www.jneurosci.org/cgi/content/full/30/22/7538}}</ref> about it.
 
+* The algorithms behind [[TrakEM2]] registration were presented at the [http://www.iscb.org/ismb2010 ISMB] conference and published in Bioinformatics.<ref>{{cite journal|author=Saalfeld, Stephan and Cardona, Albert and Hartenstein, Volker and Tomancak, Pavel|title=As-rigid-as-possible mosaicking and serial section registration of large ssTEM datasets|journal=Bioinformatics|year=2010|volume=26(12)|page=i57-63|url=http://bioinformatics.oxfordjournals.org/cgi/content/full/26/12/i57?maxtoshow=&hits=10&RESULTFORMAT=&fulltext=Saalfeld&searchid=1&FIRSTINDEX=0&resourcetype=HWCIT|doi=10.1093/bioinformatics/btq219}}</ref>
+
 == References ==
 
 <references />
