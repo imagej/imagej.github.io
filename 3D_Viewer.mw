@@ -4,7 +4,7 @@
 | author                 = Benjamin Schmid, Albert Cardona, Johannes Schindelin
 | maintainer             = Benjamin Schmid
 | filename               = [http://132.187.25.13/home/imagej/ImageJ_3D_Viewer.jar]
-| source                 = [http://132.187.25.13/home/imagej/ImageJ_3D_Viewer.jar]
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/3D_Viewer;hb=master Fiji's gitweb]
 | released               = April 2007
 | latest version         = August 2008
 | status                 = beta
