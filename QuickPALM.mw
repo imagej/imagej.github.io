@@ -1,0 +1,23 @@
+{{Infobox Plugin
+| name                   = QuickPALM
+| software               = ImageJ / Fiji
+| author                 =  Ricardo Henriques
+| maintainer             = Dan White / Ricardo Henriques
+| filename               = QuickPALM.jar?
+| released               = June 2010
+| latest version         = June 2010
+| category               = [[:Category:Superresolution|Super Resolution]]
+| website                = [http://code.google.com/p/quickpalm/wiki/Welcome?tm=6 QuickPALM google code page]
+}}
+
+== Citation ==
+Nature Methods 7, 339 - 340 (2010) 
+doi:10.1038/nmeth0510-339
+
+QuickPALM: 3D real-time photoactivation nanoscopy image processing in ImageJ
+
+Ricardo Henriques, Mickael Lelek, Eugenio F Fornasiero, Flavia Valtorta, Christophe Zimmer & Musa M Mhlanga
+
+
+For Full documentation, pkease visit:
+[http://code.google.com/p/quickpalm/wiki/Welcome?tm=6 QuickPALM google code page]
