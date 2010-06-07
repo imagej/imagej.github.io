@@ -7,7 +7,7 @@
 | released               = June 2010
 | latest version         = June 2010 v1.1
 | category               = [[:Category:Superresolution|Super Resolution]]
-| website                = [http://code.google.com/p/quickpalm/ QuickPALM google code page]
+| website                = [http://code.google.com/p/quickpalm/ QuickPALM Google Code pages]
 }}
 
 == What is QuickPALM and what is it useful for?==
@@ -22,7 +22,7 @@ QuickPALM: 3D real-time photoactivation nanoscopy image processing in ImageJ
 Ricardo Henriques, Mickael Lelek, Eugenio F Fornasiero, Flavia Valtorta, Christophe Zimmer & Musa M Mhlanga
 
 
-For Full documentation, pkease visit:
-[http://code.google.com/p/quickpalm/ QuickPALM google code page]
+For Full Documentation, and details of how to build your own super resolution system, please visit:
+[http://code.google.com/p/quickpalm/ QuickPALM pages at Google Code ]
 
 [[Category:Superresolution | Super Resolution]]
