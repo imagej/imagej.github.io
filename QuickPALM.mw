@@ -10,8 +10,8 @@
 | website                = [http://code.google.com/p/quickpalm/ QuickPALM google code page]
 }}
 
-== What is QuickPALM and hwat is it useful for?==
-QuickPALM ImageJ plugin - enables PALM/STORM 2D/3D/4D particle detection and image reconstruction in ImageJ. It uses fast methods to make the reconstruction very fast or even real time. 
+== What is QuickPALM and what is it useful for?==
+The QuickPALM ImageJ plugin enables PALM/STORM 2D/3D/4D particle detection and image reconstruction. It uses fast methods to make the reconstruction very quickly, or even in real time. 
 
 == Citation ==
 Nature Methods 7, 339 - 340 (2010) 
