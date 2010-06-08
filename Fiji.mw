@@ -29,7 +29,7 @@ Browse the [[:Category:News|news archive]].
 
 == [[Fiji:Gallery of Featured Projects|Projects]] ==
 
-;[http://132.187.25.13/home/?category=Download&page=Viewer3D 3D Viewer]
+;[[3D Viewer]]
 * Hardware-accelerated 3D volume and mesh visualization, and 3D registration of image stacks.
 ;[[TrakEM2]]
 * Register/edit/analyze/segment/annotate/3D model terabytes of confocal and electron microscopy images.
@@ -54,7 +54,7 @@ Browse the [[:Category:News|news archive]].
 * [[Distortion correction]]: correct lens deformation induced by the microscope (optical and electron microscopy). See the [http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf Distortion Correction plugin manual].
 ;[[VIB Protocol]]
 * Label-based 3D alignment of image stacks.
-;[http://repo.or.cz/w/imageja.git/ ImageJA]
+;[[ImageJA]]
 * The core of Fiji.
 ;[[:Category:Skeleton|Skeletons and tree analysis]]
 * [[Skeletonize3D|Skeletonize]] and [[AnalyzeSkeleton|Analyze skeletons]]
