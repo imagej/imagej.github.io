@@ -18,6 +18,19 @@ This should start downloading the base fiji repository and unpack it into a dire
  git config remote.origin.url git://pacific.mpi-cbg.de/fiji.git
  git pull
 
+If you are getting errors like this:
+
+ github.com[0: 207.97.227.239]: errno=Connection timed out fatal: 
+ unable to connect a socket (Connection timed out)
+
+then you probably are behind a firewall that does not let you connect to port 9418. [http://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker's_Guide_to_the_Galaxy Do not panic], though, you might be able to clone the repository with
+
+ git clone contrib@pacific.mpi-cbg.de:/srv/git/fiji.git
+
+or
+
+ git clone https://dscho@github.com/dscho/fiji.git
+
 ==== Cloning source as known contributor ====
 The above command creates a unknown contributor copy of Fiji in your computer. If you have your own user account in pacific.mpi-cbg.de, then you should clone fiji with the following command:
  
