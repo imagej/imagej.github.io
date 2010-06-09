@@ -6,7 +6,7 @@
 | filename              = Image_Expression_Parser.jar 
 | released              = February  2010
 | latest version      = June 8<sup>th</sup>, 2010
-| status                  = v2.1 (first version released publicly)
+| status                  = v2.2 (first version released publicly)
 | category               =[[:Category:Plugins|Plugins]]
 }}
 
@@ -239,9 +239,8 @@ result_imp.updateAndDraw()
 ** functions are now handled by code specific for ImgLib;
 ** support for ImgLib algorithms and non pixel-based operations, such as gaussian convolution;
 ** faster evaluation, thanks to dealing with ImgLib images as objects within the parser instead of pixel per pixel evaluation.
-* v2.1 - June 2010 - First version released publicly. Internal changes:
-** the GUI now generate a new separate thread for processing, freeing resources for the redraw  of the GUI panel itself (thanks to Albert Cardona and the Fijiers input);
-** RGB images are processed in a special way by the GUI: each of their channel is processed separately and put back together in a composite image.
+* v2.1 - June 2010 - The GUI now generate a new separate thread for processing, freeing resources for the redraw  of the GUI panel itself (thanks to Albert Cardona and the Fijiers input).
+* v2.2 - June 2010 - First version released publicly. RGB images are processed in a special way by the GUI: each of their channel is processed separately and put back together in a composite image.
 
 
 == Wish list for this plugin ==
