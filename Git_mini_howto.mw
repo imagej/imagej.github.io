@@ -100,7 +100,15 @@ For more advanced Git usage, see "Making changes (advanced)".
 
 = Pushing changes upstream =
 
-All commits are purely local before you decide to publish them.  You can do that with
+All commits are purely local before you decide to publish them.  You might want to check first what you are going to publish before actually doing that:
+
+ $ cd fiji/
+ $ git fetch contrib
+ $ gitk contrib/contrib..
+
+(Note that the commits in the gitk window are ordered chronologically, most recent is the top-most, and please also note that the commits marked with a hollow circle on the left side are so-called "boundary" commits, i.e. commits that are already upstream).
+
+Now you can publish your changes with
 
  $ cd fiji/
  $ git push contrib HEAD:contrib
