@@ -24,6 +24,16 @@ Sometimes, the compiler complains about a class not having a certain method or i
 
 $ ./fiji bin/find-jar-for-class.py the.class.youre.looking.For
 
+If you want to do that with an installed Fiji (i.e. when bin/ is missing), you can start the [[Script Editor]] and execute a BeanShell like this:
+
+ import ij.IJ;
+         
+ print(IJ.getClassLoader()
+         .loadClass("the.class.youre.looking.For")
+         .getResource("For.class").toString());
+
+This will output the URL to the ''.class'' file, including the path to the enclosing ''.jar'' file.
+
 = Using ImageJ effectively =
 
 ImageJ has a simple API, but it is also big, so here are a few pointers to some useful parts.
