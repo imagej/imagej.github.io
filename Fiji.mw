@@ -33,16 +33,16 @@ Browse the [[:Category:News|news archive]].
 * Hardware-accelerated 3D volume and mesh visualization, and 3D registration of image stacks.
 ;[[TrakEM2]]
 * Register/edit/analyze/segment/annotate/3D model terabytes of confocal and electron microscopy images.
-;[[SPIM Registration]]
-* Registration and fusion of Selective Plane Illumination Microscopy data.
-;[[Feature Extraction]]
-* SIFT and MOPS.
+;[[:Category:Transform|Transform]]
+* [[Distortion correction]]: correct lens deformation induced by the microscope (optical and electron microscopy). See the [http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf Distortion Correction plugin manual].
 ;[[Plugins_Menu#Registration|Image registration]]
+* [[SPIM Registration]] Registration and fusion of Selective Plane Illumination Microscopy data.
+*[[Stitching 2D/3D]] Stitch multiple image stacks across X,Y,Z.
+*[[Feature Extraction]] SIFT and MOPS.
 * Consistent and elastic 2D registration ([http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/ bUnwarpJ])
 * [[Register_Virtual_Stack_Slices|Stack slice registration]]
 * Image montage (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2]) with global optimization (in 2D and across sections)
-;[[Stitching 2D/3D]]
-* Stitch multiple image stacks across X,Y,Z.
+*[[VIB Protocol]] Label-based 3D alignment of image stacks.
 ;[[Plugins_Menu#Segmentation|Segmentation]]
 * [[Simple Neurite Tracer]] (project [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/ page])
 * [http://132.187.25.13/home/?category=Download&page=SegmentationEditor Segmentation Editor]
@@ -50,14 +50,11 @@ Browse the [[:Category:News|news archive]].
 * [[Level Sets]]
 * [[Trainable Segmentation Plugin|Trainable Segmentation]]
 * [[SIOX:_Simple_Interactive_Object_Extraction|SIOX: Simple Interactive Object Extraction]]
-;[[:Category:Transform|Transform]]
-* [[Distortion correction]]: correct lens deformation induced by the microscope (optical and electron microscopy). See the [http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf Distortion Correction plugin manual].
-;[[VIB Protocol]]
-* Label-based 3D alignment of image stacks.
-;[[ImageJA]]
-* The core of Fiji.
-;[[:Category:Skeleton|Skeletons and tree analysis]]
-* [[Skeletonize3D|Skeletonize]] and [[AnalyzeSkeleton|Analyze skeletons]]
+;Analysis
+*[[:Category:Skeleton|Skeletons and tree analysis]]
+;The core of Fiji.
+*[[ImageJA]]
+*[[imglib]]
 
 == [[Downloads]] ==
 
