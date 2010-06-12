@@ -1,3 +1,5 @@
+'''Critical:''' if you update and Fiji does not work anymore, you need to follow [[Fix_non-functional_Fiji_after_Update_on_MacOSX|these instructions]].
+
 ==Installing Fiji==
 
 #Download the .dmg package from the [[Downloads]] page, and then double-click it to open it.
