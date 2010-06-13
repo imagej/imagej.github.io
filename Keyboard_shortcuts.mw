@@ -1,0 +1,19 @@
+ImageJ has a lot of keyboard shortcuts.
+
+== Listing all keyboard shortcuts ==
+
+For a verbose list of keyboard shortcuts, call ''Plugins>Shortcuts>List shortcuts...''
+
+== The Command Launcher ==
+
+Use ''Control+L'' (on Mac, ''Command+L'') to open the [[Using the Command Launcher|Command Launcher]], to call menu entries by name.
+
+== Recent Commands ==
+
+To open a list of some recent commands, and a list of the most frequently called commands, hit ''Control+9'' (on Mac, ''Command+9'').
+
+== Open ==
+
+To open new images, type ''Control+O'' (on Mac, ''Command+O'').
+
+[[Category:User interface]]
