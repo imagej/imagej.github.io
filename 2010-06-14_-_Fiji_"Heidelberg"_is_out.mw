@@ -176,88 +176,88 @@ and Verena Kaynig, and many other helpers.
 
 == Developer-visible changes ==
 
-* There are two nightly builds, one including all the submodules, and the other to make sure that Fiji builds using Java 5 (which we are stuck to, because there will not be any Java 6 for MacOSX 10.4, or for 32-bit MacOSX 10.5).
+* There are two nightly builds, one including all the submodules, and the other to make sure that Fiji builds using Java 5 (which we are stuck to, because [[MacOSX_tips#Running_Fiji_on_Java_1.5_.2832-bit.29|there will not be any Java 6 for MacOSX 10.4, or for 32-bit MacOSX 10.5]]).
 
 * The [http://pacific.mpi-cbg.de/javadoc/ full javadocs] are built after the nightly build.
 
-* Developers can upload new plugins or updates from the Fiji Updater GUI, if they have the write permissions on the server (includes bug fixes by Mark Longair).
+* Developers can upload new plugins or updates from the [[Fiji Updater]] GUI, if they have the write permissions on the server (includes bug fixes by Mark Longair).
 
-* Many improvements in the build system (less unnecessary rebuilds, separate output directory, excluding files from a .jar target, etc). Thanks to Jacques Pecreaux, Mark Longair and Curtis Rueden.
+* Many improvements in the [[Fiji Build System|build system]] (less unnecessary rebuilds, separate output directory, excluding files from a .jar target, etc). Thanks to Jacques Pecreaux, Mark Longair and Curtis Rueden.
 
-* There is a generic way to define a tool in Java now, fiji.util.AbstractTool, rather than going the awkward way to define a macro that calls back into the Java code (thanks Jean-Yves Tinevez).
+* There is a generic way to define a tool in Java now, fiji.util.AbstractTool, rather than going the awkward way to define a macro that calls back into the Java code (thanks Jean-Yves Tinevez). An example is our [[Arrow]] Tool.
 
-* The Script Editor can launch classes outside of plugins/ now.
+* The [[Script Editor]] can launch classes outside of plugins/ now.
 
-* The Script Editor can make .jar files from .java plugins now.
+* The [[Script Editor]] can make .jar files from .java plugins now.
 
-* The Script Editor can build and launch Fiji plugins from $FIJI_ROOT/src-plugins/<name>/ now.
+* The [[Script Editor]] can build and launch [[Category:Plugins|Fiji plugins]] from $FIJI_ROOT/src-plugins/<name>/ now.
 
-* The Script Editor recognizes errors from the Java compiler and offers to jump to the location of the next/previous error.
+* The [[Script Editor]] recognizes errors from the Java compiler and offers to jump to the location of the next/previous error.
 
-* The Script Editor recognizes exceptions thrown during the execution of a script and offers to jump to the next/previous location in the stacktrace.
+* The [[Script Editor]] recognizes exceptions thrown during the execution of a script and offers to jump to the next/previous location in the stacktrace.
 
-* You can ask the Script Editor to open the JavaDoc for a given class using Tools>Open Help on Class...
+* You can ask the [[Script Editor]] to open the [http://pacific.mpi-cbg.de/javadoc/ JavaDoc] for a given class using ''Tools>Open Help on Class...''
 
-* The WEKA library is now part of Fiji; the FijiClassLoader is now an instance of URLClassLoader just because of that (thanks for Verena Kaynig, Albert Cardona and Ignacio Arganda-Carreras for the prodding).
+* The [[Using Weka|WEKA library]] is now part of Fiji; the [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Fiji/fiji/FijiClassLoader.java;hb=master FijiClassLoader] is now an instance of URLClassLoader just because of that (thanks for Verena Kaynig, Albert Cardona and Ignacio Arganda-Carreras for the prodding).
 
-* There is an easy way to add a screenshot to be shown on the front page of the Fiji Wiki: Plugins>Utilities>Fiji>New Fiji Wiki Screenshot.
+* There is an easy way to add a screenshot to be shown on the front page of the Fiji Wiki: ''Plugins>Utilities>Fiji>New Fiji Wiki Screenshot''.
 
 * The new [[Imglib|versatile and most generic image processing library]] -- fully Open Source! -- was added (thanks Stephan Saalfeld and Stephan Preibisch).
 
-* imglib was improved dramatically (thanks to Stephan Saalfeld, Stephan Preibisch, Larry Lindsey and Curtis Rueden).
+* [[Imglib|imglib]] was improved dramatically (thanks to Stephan Saalfeld, Stephan Preibisch, Larry Lindsey and Curtis Rueden).
 
-* To use the imglib, just select the Imglib Plugin item of Script Editor's Templates menu.
+* To use the [[Imglib|imglib]], just select the Imglib Plugin item of [[Script Editor|Script Editor's]] ''Templates'' menu.
 
-* The Script Editor learnt quite a number of functions that are useful when developing plugins written in Java (e.g. opening the sources for a menu item, or opening the directory of the current file upon File>Open, or offering to search for the sources of a class).
+* The [[Script Editor]] learnt quite a number of functions that are useful when developing plugins written in Java (e.g. opening the sources for a menu item, or opening the directory of the current file upon ''File>Open''/, or offering to search for the sources of a class).
 
-* If you have an account on the Fiji Wiki, you can easily add News entries using the Plugins>Utilities>Fiji>New Fiji News menu item.
+* If you have an account on the Fiji Wiki, you can easily add News entries using the ''Plugins>Utilities>Fiji>New Fiji News'' menu item.
 
-* There is a simple Object Inspector for Java objects now, accessible via fiji.debugging.Object_Inspector.openFrame(label, object).
+* There is a simple ''Object Inspector'' for Java objects now, accessible via '''fiji.debugging.Object_Inspector.openFrame(label, object)'''.
 
-* The MediaWikiClient is now scriptable.
+* The '''MediaWikiClient''' class is now scriptable.
 
-* The Fiji Updater offers developers to see the plugin changes since the latest upload of said plugin.
+* The [[Fiji Updater]] offers developers to see the plugin changes since the latest upload of said plugin.
 
-* The sources for Jama are bundled now.
+* The sources for [http://math.nist.gov/javanumerics/jama/ Jama] are bundled now.
 
-* Both plugins/*.jar and jars/*.jar are loaded via the FijiClassLoader now, which allows .jar files from jars/ to call functions in .jar files from plugins/ (notable exception: jars/ij.jar and jars/Fiji.jar).
+* Both ''plugins/*.jar'' and ''jars/*.jar'' are loaded via the [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Fiji/fiji/FijiClassLoader.java;hb=master FijiClassLoader] now, which allows ''.jar'' files from ''jars/'' to call functions in ''.jar'' files from ''plugins/'' (notable exception: ''jars/ij.jar'' and ''jars/Fiji.jar'').
 
-* You can use the analyze-dependencies.bsh script to check dependencies of .jar files, reusing the functionality of the Fiji Updater's upload functionality.
+* You can use the '''analyze-dependencies.bsh''' script to check dependencies of .jar files, reusing the functionality of the [[Fiji Updater|Fiji Updater's]] upload functionality.
 
 * You can make your own "View on Fiji Development" movie, as seen on our [http://youtube.com/fijichannel YouTube channel], using the combined-gource-video.bsh script (requires [http://github.com/dscho/Gource Gource]).
 
-* The VIB sources were moved from a submodule directly into fiji.git.
+* The [[VIB Protocol|VIB]] sources were moved from a submodule directly into [http://pacific.mpi-cbg.de/fiji.git fiji.git].
 
-* The sources for plugins and libraries are now expected to live either in submodules, or in src-plugins/<name>/<package>/<class-name>.java, where <name> is the base name of the resulting .jar file.
+* The sources for plugins and libraries are now expected to live either in submodules, or in ''src-plugins/<name>/<package>/<class-name>.java'', where ''<name>'' is the base name of the resulting ''.jar'' file.
 
-* There is a command line interface to the Fiji Updater now (e.g. run ''fiji --jar plugins/Fiji_Updater.jar --list jars/ij.jar'' to find out the status of ''jars/ij.jar'').
+* There is a command line interface to the [[Fiji Updater]] now (e.g. run '''fiji --jar plugins/Fiji_Updater.jar --list jars/ij.jar''' to find out the status of ''jars/ij.jar'').
 
-* Fiji Build allows falling back to the updater if there is no ''precompiled/'' file for a not-checked-out submodule.
+* [[Fiji Build System|Fiji Build]] allows falling back to the [[Fiji Updater|updater]] if there is no ''precompiled/'' file for a not-checked-out submodule.
 
-* The Fiji Build is more easily called via a public API now.
+* The [[Fiji Build System|Fiji Build]] is more easily called via a public API now.
 
 * Fiji now has a working implementation of a KD-Tree (thanks to Stephan Preibisch).
 
 * All submodules' main branches are called 'master' now, thanks to Curtis Rueden.
 
-* You can include plugins.config in src-plugins/<name>/ directly, instead of using staged-plugins/<name>.config.
+* You can include ''plugins.config'' in ''src-plugins/<name>/'' directly, instead of using staged-''plugins/<name>.config''.
 
 * You may link VIB-lib.jar and APLv2-licensed code (such as commons-math) together now, due to a slight license change in VIB-lib.
 
 * "git diff" shows Java method names in the hunk headers now.
 
-* You can call "fiji --compile-and-run /path/to/class.java" now.
+* You can call '"fiji --compile-and-run /path/to/class.java"' now.
 
-* You can rebuild the Windows 64-bit launcher on said platform now, using the mingw-w64 compiler (e.g. by running /src/mingw-w64/release-easy.sh in msysGit).
+* You can rebuild the Windows 64-bit launcher on said platform now, using the mingw-w64 compiler (e.g. by running /src/mingw-w64/release-easy.sh in [http://msysgit.googlecode.com/ msysGit] as installed by the net or the full installer).
 
-* There are functions in fiji.Main now to identify and recall AWT components by a "component path" a la "Some Dialog>Panel[2]>TextField{Name:}".
+* There are functions in ''fiji.Main'' now to identify and recall AWT components by a "component path" a la "Some Dialog>Panel[2]>TextField{Name:}".
 
-* Fiji can be asked to use the G1 garbage collector available since Java 1.6 Update 20, via the --gc-g1 option (thanks to Albert Cardona).
+* Fiji can be asked to use the G1 garbage collector available since Java 1.6 Update 20, via the '''--gc-g1''' option (thanks to Albert Cardona).
 
-* When developing a Fiji plugin in the Script Editor, one can see the diff and commit the changes from within the Script Editor now.
+* When developing a [[Category:Plugins|Fiji plugin]] in the [[Script Editor]], one can see the diff and commit the changes from within the [[Script Editor]] now.
 
-* You can open the source for a class with 'fiji --edit class:<class-name>'.
+* You can open the source for a class with '''fiji --edit class:<class-name>'''.
 
-* There is a maven helper in bin/maven.sh now, you can call it from Fakefiles to download maven if necessary, and then run it.
+* There is a maven helper in '''bin/maven.sh''' now, you can call it from Fakefiles to download maven if necessary, and then run it.
 
 [[Category:News]]
