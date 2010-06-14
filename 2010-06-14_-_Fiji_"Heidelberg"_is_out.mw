@@ -164,7 +164,7 @@ and Verena Kaynig, and many other helpers.
 
 * The [http://pacific.mpi-cbg.de/webstart/Fiji.jnlp Java WebStart] generator was fixed, and is now run every night.
 
-* The SPIM Registration plugin was added, offering multi-angle registration and reconstruction typically needed in Selective Plane Illumination Microscopy (thanks to Stephan Preibisch, Stephan Saalfeld and Pavel Tomancak).
+* The [[SPIM Registration]] plugin was added, offering multi-angle registration and reconstruction typically needed in Selective Plane Illumination Microscopy (thanks to Stephan Preibisch, Stephan Saalfeld and Pavel Tomancak).
 
 * Clojure was updated to a newer version (thanks to Albert Cardona).
 
