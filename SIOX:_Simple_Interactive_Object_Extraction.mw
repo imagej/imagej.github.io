@@ -115,6 +115,7 @@ You can apply a previously saved SIOX segmentator to any open image or set of im
 The segmentator will be applied to the selected image or stack and the result will pop up.
 
 [[Image:Combined-SIOX-Stacks.gif | left | thumb | 700px | Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample]]
+{{-}}
 
 ==API documentation==
 The latest documentation of the package can be found here:
