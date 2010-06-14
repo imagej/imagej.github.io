@@ -45,7 +45,7 @@ and Verena Kaynig, and many other helpers.
 
 * Auto Threshold was improved, and made accessible to other plugins (thanks Gabriel Landini).
 
-* implemented CLAHE, a filter for adaptive local contrast enhancement (thanks to Stephan Saalfeld).
+* implemented [[Enhance_Local_Contrast_(CLAHE)|CLAHE]], a filter for adaptive local contrast enhancement (thanks to Stephan Saalfeld).
 
 * removed dependency on Jama of mpicbg plugins (thanks to Stephan Saalfeld).
 
@@ -144,7 +144,7 @@ and Verena Kaynig, and many other helpers.
 
 * The 3D Viewer can export any kind of mesh now (thanks to Albert Cardona).
 
-* The Anisotropic Diffusion 2D plugin was added.
+* The [[Anisotropic_Diffusion_2D|Anisotropic Diffusion 2D]] plugin was added.
 
 * The LSM Toolbox was updated to version 4.0g (thanks to Patrick Pirotte and Jean-Yves Tinevez).
 
@@ -152,7 +152,7 @@ and Verena Kaynig, and many other helpers.
 
 * There is no need for a StartupMacros.txt anymore, so you can create/modify it without making the Fiji Updater report it as "Locally modified". Thanks Ilan Tal for the suggestion.
 
-* View5D was updated to version 1.2.17, thanks to Rainer Heintzmann and Jean-Yves Tinevez.
+* [[View5D]] was updated to version 1.2.17, thanks to Rainer Heintzmann and Jean-Yves Tinevez.
 
 * The Find Connected Regions plugin was updated, thanks to Mark Longair.
 
@@ -166,11 +166,11 @@ and Verena Kaynig, and many other helpers.
 
 * The [[SPIM Registration]] plugin was added, offering multi-angle registration and reconstruction typically needed in Selective Plane Illumination Microscopy (thanks to Stephan Preibisch, Stephan Saalfeld and Pavel Tomancak).
 
-* Clojure was updated to a newer version (thanks to Albert Cardona).
+* [[Clojure_Scripting|Clojure]] was updated to a newer version (thanks to Albert Cardona).
 
 * clojure-contrib is no longer required, and was therefore removed (thanks to Albert Cardona).
 
-* The QuickPALM plugin was added (thanks to Ricardo Henriques).
+* The [[QuickPALM]] plugin was added (thanks to Ricardo Henriques).
 
 * Loads of bugfixes
 
