@@ -108,9 +108,9 @@ You can apply a previously saved SIOX segmentator to any open image or set of im
 
 '''Step 2''': Click on "Plugins > Segmentation > Apply SIOX segmentator", and the following dialog will pop up:
 
-[[Image:Screenshot-Load-SIOX-segmentator.png]]
+[[Image:Screenshot-Load-SIOX-segmentator.png | left | thumb | 600 px | Apply SIOX segmentator input dialog]]{{-}}
 
-'''Step 3'': Select the siox segmentator file (or just drag and drop it) and click "OK".
+'''Step 3''': Select the siox segmentator file (or just drag and drop it) and click "OK".
 
 The segmentator will be applied to the selected image or stack and the result will pop up.
 
