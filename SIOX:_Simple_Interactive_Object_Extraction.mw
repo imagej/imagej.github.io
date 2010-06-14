@@ -102,6 +102,19 @@ This panel is enabled during any of the other segmentation steps.
 You can save the segmentation information into a file by clicking on the "Save segmentator" button. This can be used later to a different image or stack of images by clicking on "Plugins > Segmentation > Apply SIOX segmentator" (see next section).
 
 ===Apply SIOX segmentator===
+You can apply a previously saved SIOX segmentator to any open image or set of images (stack). 
+
+'''Step 1''': Click on the image or stack to segment.
+
+'''Step 2''': Click on "Plugins > Segmentation > Apply SIOX segmentator", and the following dialog will pop up:
+
+[[Image:Screenshot-Load-SIOX-segmentator.png]]
+
+'''Step 3'': Select the siox segmentator file (or just drag and drop it) and click "OK".
+
+The segmentator will be applied to the selected image or stack and the result will pop up.
+
+[[Image:Combined-SIOX-Stacks.gif | left | thumb | 700px | Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample]]
 
 ==API documentation==
 The latest documentation of the package can be found here:
