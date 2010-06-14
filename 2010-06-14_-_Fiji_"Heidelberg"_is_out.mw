@@ -31,7 +31,7 @@ and Verena Kaynig, and many other helpers.
 
 * Fiji's core was frequently synchronized with ImageJ.
 
-* many, many improvements in bUnwarpJ (thanks Ignacio Arganda-Carreras).
+* many, many improvements in [[bUnwarpJ]] (thanks Ignacio Arganda-Carreras).
 
 * Context Help: If you click on Help>Help on Menu Item, the next click on a menu item will open the corresponding page (if there is one) on the Fiji Wiki.
 
@@ -39,11 +39,11 @@ and Verena Kaynig, and many other helpers.
 
 * The Stack Manipulation menu got another entry: Slice Keeper (thanks Jean-Yves Tinevez).
 
-* many, many improvements to the Simple Neurite Tracer and 3D Viewer, which were split off from the VIB Protocol plugin (thanks Mark Longair and Benjamin Schmid).
+* many, many improvements to the [[Simple Neurite Tracer]] and [[3D Viewer]], which were split off from the [[VIB Protocol]] plugin (thanks Mark Longair and Benjamin Schmid).
 
-* many updates for the Register Virtual Slices plugin (thanks Ignacio Arganda-Carreras).
+* many updates for the [[Register Virtual Stack Slices]] plugin (thanks Ignacio Arganda-Carreras).
 
-* Auto Threshold was improved, and made accessible to other plugins (thanks Gabriel Landini).
+* [[Auto Threshold]] was improved, and made accessible to other plugins (thanks Gabriel Landini).
 
 * implemented [[Enhance_Local_Contrast_(CLAHE)|CLAHE]], a filter for adaptive local contrast enhancement (thanks to Stephan Saalfeld).
 
@@ -53,7 +53,7 @@ and Verena Kaynig, and many other helpers.
 
 * added several mpicbg library tools, many bug-fixes and improvements (thanks to Stephan Saalfeld).
 
-* TrakEM2 was updated several times, with tons of new goodies (thanks Albert Cardona and Stephan Saalfeld). For example:
+* [[TrakEM2]] was updated several times, with tons of new goodies (thanks Albert Cardona and Stephan Saalfeld). For example:
 
 :* extended multi-layer-mosaic alignment to handle
 ::* adjustable weights for cross-section vs intra section features
@@ -64,25 +64,25 @@ and Verena Kaynig, and many other helpers.
 :* calibrate exported snapshots
 :* several bug-fixes
 
-* A plugin was added that performs the SIOX algorithm (color segmentation by example, thanks Ignacio Arganda-Carreras).
+* A plugin was added that performs the [[SIOX]] algorithm (color segmentation by example, thanks Ignacio Arganda-Carreras).
 
-* Some bugs in Stitching 2D/3D were fixed (thanks Stephan Preibisch and Ignacio Arganda-Carreras).
+* Some bugs in [[Stitching 2D/3D]] were fixed (thanks Stephan Preibisch and Ignacio Arganda-Carreras).
 
 * A plugin "IsoData Classifier" was added that extends the default automatic threshold of ImageJ to multiple classes (more than two).
 
 * Fiji's arrow tool offers interactive manipulation of the arrow (which is a ROI now), with different widths, head sizes, and head shapes (thanks to Jean-Yves Tinevez).
 
-* A bug was fixed in the MTrack2 plugin (thanks to Chris Elliott).
+* A bug was fixed in the [[MTrack2]] plugin (thanks to Chris Elliott).
 
 * There is a GenericDialogPlus in fiji-lib.jar now that supports adding "file" and "directory" fields with a button to choose the value via a file dialog (thanks Stephan Preibisch and Ignacio Arganda-Carreras).
 
-* Many improvements to the Analyze Skeleton/Skeletonize 3D plugins (thanks Ignacio Arganda-Carreras and Daniel Hornung).
+* Many improvements to the [[AnalyzeSkeleton]]/[[Skeletonize3D]] plugins (thanks Ignacio Arganda-Carreras and Daniel Hornung).
 
-* The Robust Automatic Threshold Selection plugin was added, providing a very powerful automatic local thresholding technique (thanks Ben Tupper).
+* The [[RATS:_Robust_Automatic_Threshold_Selection|RATS]] plugin was added, providing a very powerful automatic local thresholding technique (thanks Ben Tupper).
 
 * Jython was updated to version 2.5.
 
-* The code of the VIB Protocol was improved (thanks to Mark Longair, Benjamin Schmid and Nick Weiler).
+* The code of the [[VIB Protocol]] was improved (thanks to Mark Longair, Benjamin Schmid and Nick Weiler).
 
 * Plugins>Macros>About Startup Macros works again (thanks Gabriel Landini).
 
@@ -90,13 +90,13 @@ and Verena Kaynig, and many other helpers.
 
 * The Java WebStart'able Fiji was fixed.
 
-* The Script Editor offers code templates now (thanks Tom Kazimiers).
+* The [[Script Editor]] offers code templates now (thanks Tom Kazimiers).
 
-* The Find/Replace function in the Script Editor now defaults to the selected text (thanks Tom Kazimiers).
+* The Find/Replace function in the [[Script Editor]] now defaults to the selected text (thanks Tom Kazimiers).
 
-* The Tutorial Maker was renamed to Plugins>Utilities>Fiji>New Fiji Tutorial, and you can choose to upload to another Wiki than the Fiji Wiki (provided that it is powered by MediaWiki). It also uses the Script Editor for better usability now.
+* The [[Tutorial Maker]] was renamed to Plugins>Utilities>Fiji>New Fiji Tutorial, and you can choose to upload to another Wiki than the Fiji Wiki (provided that it is powered by MediaWiki). It also uses the [[Script Editor]] for better usability now.
 
-* The Image Expression Parser plugin was added, providing much more powerful operations on Images than the simple Image Calculator or Image Calculator Plus plugins (thanks to Jean-Yves Tinevez).
+* The [[Image Expression Parser]] plugin was added, providing much more powerful operations on Images than the simple Image Calculator or Image Calculator Plus plugins (thanks to Jean-Yves Tinevez).
 
 * There is an Image>Adjust>Auto Crop plugin (cropping the maximal border that matches the background color), and an Image>Adjust>Auto Crop (guess background color) plugin (estimating the most likely background color from the border).
 
@@ -108,21 +108,21 @@ and Verena Kaynig, and many other helpers.
 
 * when using a .java plugin transparently (by putting it into Fiji's plugins/ directory), the error output will be shown now.
 
-* The Script Editor offers tabs now.
+* The [[Script Editor]] offers tabs now.
 
-* When a file changed outside the Script Editor, it offers to reload the file now.
+* When a file changed outside the [[Script Editor]], it offers to reload the file now.
 
-* The Script Editor offers the ImageJ Macro Language in the Languages menu, with syntax-highlighting. Consequently, it is now the default editor for macros.
+* The [[Script Editor]] offers the ImageJ Macro Language in the Languages menu, with syntax-highlighting. Consequently, it is now the default editor for macros.
 
-* The Script Editor got a function to run just the selected part of the script.
+* The [[Script Editor]] got a function to run just the selected part of the script.
 
-* Many more improvements in the Script Editor.
+* Many more improvements in the [[Script Editor]].
 
 * Many improvements to the Colocalization plugins (e.g. the output of Colocalization Threshold can be saved to a file now, etc). Thanks to Daniel James White and Tom Kazimiers.
 
-* The Directionality plugin was added to analyze images containing oriented structures (thanks Jean-Yves Tinevez).
+* The [[Directionality]] plugin was added to analyze images containing oriented structures (thanks Jean-Yves Tinevez).
 
-* The Time Stamper plugin was updated (thanks Jean-Yves Tinevez, Daniel James White and Tom Kazimiers).
+* The [[Time Stamper]] plugin was updated (thanks Jean-Yves Tinevez, Daniel James White and Tom Kazimiers).
 
 * Add a Recent Commands menu entry to list the most recent and the most frequent commands.
 
@@ -138,15 +138,15 @@ and Verena Kaynig, and many other helpers.
 
 * The Exact Euclidean Distance Transform (3D) plugin was added, providing a real exact EDT, still with linear complexity. A signed version is available, too (attaching negative distances to outside pixels).
 
-* The Script Editor supports bookmarks now.
+* The [[Script Editor]] supports bookmarks now.
 
-* The 3D Viewer is now actually a 4D Viewer, handling hyperstacks correctly, and was improved in many other ways, too (thanks to Benjamin Schmid and Gabriel Landini).
+* The [[3D_Viewer|3D Viewer]] is now actually a 4D Viewer, handling hyperstacks correctly, and was improved in many other ways, too (thanks to Benjamin Schmid and Gabriel Landini).
 
-* The 3D Viewer can export any kind of mesh now (thanks to Albert Cardona).
+* The [[3D_Viewer|3D Viewer]] can export any kind of mesh now (thanks to Albert Cardona).
 
 * The [[Anisotropic_Diffusion_2D|Anisotropic Diffusion 2D]] plugin was added.
 
-* The LSM Toolbox was updated to version 4.0g (thanks to Patrick Pirotte and Jean-Yves Tinevez).
+* The [[LSM_Toolbox|LSM Toolbox]] was updated to version 4.0g (thanks to Patrick Pirotte and Jean-Yves Tinevez).
 
 * The HandleExtraFileTypes class was synchronized with the upstream version, handling more file formats by default (thanks Albert Cardona for a fixup).
 
@@ -154,13 +154,13 @@ and Verena Kaynig, and many other helpers.
 
 * [[View5D]] was updated to version 1.2.17, thanks to Rainer Heintzmann and Jean-Yves Tinevez.
 
-* The Find Connected Regions plugin was updated, thanks to Mark Longair.
+* The [[Find_Connected_Regions|Find Connected Regions]] plugin was updated, thanks to Mark Longair.
 
 * The Fiji launcher is no longer a C++ program, but a C program. This results in smaller executables, less requirements when building, and a larger range of supported Linux setups.
 
-* The Fiji Updater up-to-date check is no longer run when you call Fiji with an argument (e.g. by Drag 'n Drop of an image onto the Fiji icon). Thanks to Jean-Marc Verbavatz for the suggestion.
+* The [[Update_Fiji|Fiji Updater]] up-to-date check is no longer run when you call Fiji with an argument (e.g. by Drag 'n Drop of an image onto the Fiji icon). Thanks to Jean-Marc Verbavatz for the suggestion.
 
-* The Fiji Updater offers to update Java on Windows and Linux in the Advanced Mode, thanks to one of the rare less-exciting talks at the ELMI meeting.
+* The [[Update_Fiji|Fiji Updater]] offers to update Java on Windows and Linux in the Advanced Mode, thanks to one of the rare less-exciting talks at the ELMI meeting.
 
 * The [http://pacific.mpi-cbg.de/webstart/Fiji.jnlp Java WebStart] generator was fixed, and is now run every night.
 
