@@ -7,6 +7,10 @@ If you encounter bugs, please consider submitting [http://pacific.mpi-cbg.de/bug
 You can download the current version of Fiji ("Heidelberg") for
 {{DownloadsCurrent}}
 
+=== Java WebStart ===
+
+{{Java_WebStart}}
+
 === Source Code ===	 
 			
 The easiest way to fetch the source code for Fiji is to use [http://git.or.cz/ git]. For further guidance on this, please refer to the page [[Downloading and Building Fiji From Source]].
