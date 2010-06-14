@@ -260,4 +260,4 @@ and Verena Kaynig, and many other helpers.
 
 * There is a maven helper in bin/maven.sh now, you can call it from Fakefiles to download maven if necessary, and then run it.
 
-[Category:News]]
+[[Category:News]]
