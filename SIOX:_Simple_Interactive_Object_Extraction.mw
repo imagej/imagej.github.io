@@ -99,7 +99,9 @@ This panel is enabled during any of the other segmentation steps.
 :Creates a binary (0-255) image based on the current state of the segmentation process. The background color (black or white) is defined in ''Process > Binary > Options...'' This button can be pressed during any of the previous steps.
 
 ===Save segmentator===
-You can save the segmentation information into a file by clicking on the "Save segmentator" button.
+You can save the segmentation information into a file by clicking on the "Save segmentator" button. This can be used later to a different image or stack of images by clicking on "Plugins > Segmentation > Apply SIOX segmentator" (see next section).
+
+===Apply SIOX segmentator===
 
 ==API documentation==
 The latest documentation of the package can be found here:
