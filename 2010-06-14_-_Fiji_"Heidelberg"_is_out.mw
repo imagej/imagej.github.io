@@ -252,7 +252,7 @@ and Verena Kaynig, and many other helpers.
 
 * There are functions in fiji.Main now to identify and recall AWT components by a "component path" a la "Some Dialog>Panel[2]>TextField{Name:}".
 
-* Fiji can be asked to use the G1 garbace collector available since Java 1.6 Update 20, via the --gc-g1 option (thanks to Albert Cardona).
+* Fiji can be asked to use the G1 garbage collector available since Java 1.6 Update 20, via the --gc-g1 option (thanks to Albert Cardona).
 
 * When developing a Fiji plugin in the Script Editor, one can see the diff and commit the changes from within the Script Editor now.
 
