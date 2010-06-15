@@ -260,3 +260,6 @@ Many tools open an option dialog upon double-click on the icon. You can do that,
 = Further documentation =
 
 A complete description of the macro language, a reference of the built-in functions, and examples can be found [http://rsb.info.nih.gov/ij/developer/index.html here].
+
+
+[[Category:Scripting]][[Category:Tutorials]]
