@@ -47,7 +47,7 @@ This example shows how to concatenate a fixed text with the value of a variable:
 
  title = "Macro";
  write("The name: title"); // this is wrong
- write*"The name: " + title); // this is right
+ write("The name: " + title); // this is right
 
 In the first ''write'' call, a literal ''title'' will be printed instead of the value of the variable of that name.
 
