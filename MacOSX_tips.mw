@@ -11,9 +11,11 @@ Fiji is ready to run!
 
 ==Running Fiji on Java 1.5 (32-bit)==
 
-Fiji on Mac is running on Java 1.6 (64-bit). If you need to run it in 32-bit mode, use the following code:
+Fiji on intel Macs runs on Java 1.6 (64-bit). If you need to run it in 32-bit mode, use the following code:
  arch -i386 /Applications/Fiji/Fiji.app/Contents/MacOS/fiji-macosx
 
+==No more PPC (G4/G5) Mac support==
+Fiji no longer supports PPC Macs (G4/G5) as of the Fiji Heidelberg release (June 2010). We apologise for the inconvenience this might cause for owners of what are now rather antique Macs, but it was just too painful to maintain the platform dependent parts of Fiji any longer, and in any case, Apple will never release Java 1.6 for this old platform. Plain ImageJ might still work... for a while. Better get a new computer, sorry. 
 
 ==Accessing the plugins and macros folders==
 To access the plugins or macros folders, set the Finder window to either icons or lists mode, <b>not</b> in column mode, and double-click them.
