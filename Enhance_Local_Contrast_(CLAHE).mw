@@ -4,8 +4,8 @@
 {{Infobox Plugin
 | name                   = Enhance Local Contrast (CLAHE)
 | software               = Fiji
-| author                  = Stephan Saalfeld ([mailto:saalfeld@mpi-cbg.de])
-| maintainer             = Stephan Saalfeld
+| author                  = [[User:Saalfeld|Stephan Saalfeld]] ([mailto:saalfeld@mpi-cbg.de])
+| maintainer             = [[User:Saalfeld|Stephan Saalfeld]]
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/ij/CLAHE.java] (356 lines)
 | released               = November 13<sup>th</sup>, 2009
 | latest version         = November 16<sup>th</sup>, 2009
