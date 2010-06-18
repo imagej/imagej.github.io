@@ -23,6 +23,8 @@ The method is that implemented in Costes et al. This uses a Pearson's correlatio
 
 Use of this plugin should be followed by use of the [[Colocalization Test]] plugin, to see of the results are statistically significant and better then random overlap of the signal in the images. 
 
+See also the [[Colocalization Analysis]] tutorial.
+
 [[Category:Plugins]]
 [[Category:Colocalization]]
 [[Category:Color processing]]
