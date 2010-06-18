@@ -24,7 +24,7 @@ This tells you if the colocalization that you measure with other plugins, such a
 
 The methods implemented are Costes (most robust, use 100 iterations), van Steensel and Fay. These differ in how the randomised images are generated from the real image. 
 
-See also the [[Colocalization Analysis]] tutorial.
+See also the [[Colocalization Analysis]] tutorial and the original documentation for this plugin on the [http://www.macbiophotonics.ca/imagej/colour_analysis.htm MacBioPhotonics site].
 
 [[Category:Plugins]]
 [[Category:Colocalization]]
