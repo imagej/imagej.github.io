@@ -203,4 +203,5 @@ Most people might think that the prominent spirals are in shades of green and bl
 You can verify this yourself by getting the macro from [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob_plain;f=macros/spirals.txt http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob_plain;f=macros/spirals.txt] via Fiji's ''File>Import>URL...''.
 
 [[Category:Tutorials]]
+[[Category:Colocalization]]
 [[Category:Color processing]]
