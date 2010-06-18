@@ -23,7 +23,7 @@ The method is that implemented in Costes et al. This uses a Pearson's correlatio
 
 Use of this plugin should be followed by use of the [[Colocalization Test]] plugin, to see of the results are statistically significant and better then random overlap of the signal in the images. 
 
-See also the [[Colocalization Analysis]] tutorial, and the original documentation for this plugin on the [http://www.macbiophotonics.ca/imagej/colour_analysis.htm#6.3 Colocalisation Threshold MacBiophotonics site].
+See also the [[Colocalization Analysis]] tutorial, and the original documentation for this plugin on the [http://www.macbiophotonics.ca/imagej/colour_analysis.htm MacBiophotonics site].
 
 [[Category:Plugins]]
 [[Category:Colocalization]]
