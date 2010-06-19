@@ -903,6 +903,29 @@ So where does the documentation come from? Every definition of a function or mac
 
 Function documentation is internally set like the above: <i>defn</i> is a macro that defines a function and puts the second argument as the doc string of the variable that points to the function body (among many other things).
 
+<h4>Adding a test function to a variable</h4>
+
+We first declare the variable, and then define it with a metadata map that includes a test function:
+
+<source lang="lisp">
+(declare a)
+(def
+  #^{:test #(if (< a 10) (throw (Exception. "Value under 10!")))}
+  a 6)
+</source>
+
+... which we then test, by invoking the function <i>test</i> not on the value of the variable <i>a</i> (which could have its own metadata map), but on the variable <i>a</i> itself, referred to with the <i>#'a</i>:
+
+<source lang="lisp">
+(test #'a)
+</source>
+
+The test results, in this case, in an exception being thrown:
+
+ java.lang.Exception: Value under 10!
+
+Otherwise, it would just return the <i>:ok</i> keyword.
+
 <h3>A fibonacci sequence: lazy and infinite sequences</h3>
 
 A beautiful example of using lazy sequences and applying functions to one or more sequences at a time.
