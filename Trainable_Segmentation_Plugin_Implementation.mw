@@ -51,3 +51,7 @@ The RF algorithm uses numerous (default 200) [http://www.resample.com/xlminer/he
 * the algorithm builds multiple trees from the same dataset by [http://en.wikipedia.org/wiki/Bootstrapping_%28statistics%29 bootstrapping] (sampling with replacement).
 
 Once the classifier is built from the user chosen pixels (with their associated feature data)/class assignments and the entire training image or a new image is staged for classification, each pixel is classified by all the trees and is assigned to the class with the highest 'vote.'
+
+[[Category:Segmentation]]
+[[Category:Tutorials]]
+[[Category:Plugins]]
