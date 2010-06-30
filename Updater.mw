@@ -36,6 +36,12 @@ The Updater has two modes, the ''Easy Mode'' and the ''Advanced Mode''.  In the 
 
 For technical reasons, a restart of Fiji is required before the changes take effect. You can read about technical details [[Uploading plugins|here]].
 
+== Advanced mode ==
+
+In the advanced mode, you can see details about the Fiji components, choose not to update selected components, and search by filename:
+
+[[Image:Snapshot of the Advanced Mode of the Updater.png|750px]]
+
 == Advanced Mode / Update Java ==
 
 In ''Advanced Mode'', you can update your Fiji-specific Java. Just click the ''Update Java'' button:
