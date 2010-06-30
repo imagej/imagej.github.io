@@ -12,6 +12,7 @@
 The Fiji Updater is a mechanism to update individual packages in Fiji.  It is automatically run when all the following conditions are met:
 
 * Fiji was just started
+* Fiji was started without parameters (i.e. no Drag 'n Drop onto the Fiji icon)
 * Fiji's files can be updated by the current user
 * There is a network connection
 
