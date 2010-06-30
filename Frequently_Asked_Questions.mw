@@ -1,0 +1,29 @@
+= Updating =
+
+== I updated Fiji via ''Help>Update Fiji'', and now it does not start anymore! ==
+
+If you are on MacOSX, most likely you did not update in some time, and you were bitten by a bug in the updater that is already fixed (but you did not get the fix in time). Please follow [[Fix non-functional Fiji after Update on MacOSX|these instructions]].
+
+= Development =
+
+== How can I build Fiji myself? ==
+
+[[Downloading and Building Fiji From Source|Download and build it]]. You need Git for that (if you are on Windows, please use [http://msysgit.googlecode.com Git for Windows]).
+
+== I cloned fiji.git, but have a compile error regarding a class ''Appearance''. ==
+
+If you get an error similar to this:
+
+ Building plugins/VIB_.jar <- src-plugins/VIB_/Align_Image.java src...
+ Building plugins/3D_Viewer.jar <- src-plugins/3D_Viewer/ImageJ_3D_...
+ src-plugins/3D_Viewer/customnode/CustomLineMesh.java:6: cannot find symbol
+ symbol  : class Appearance
+ location: package javax.media.j3d
+ import javax.media.j3d.Appearance;
+                       ^
+
+it means that you do not have ''Java3D'' installed. This happens typically when you have an environment variable ''JAVA_HOME'' set to an existing JDK <u>without</u> ''Java3D''. To force the Fiji Build system to clone Fiji's known-good JDK, call
+
+ unset JAVA_HOME
+
+Alternatively, if you have write permissions to the path ''JAVA_HOME'' points to, you could install ''Java3D'' manually.
