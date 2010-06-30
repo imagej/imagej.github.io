@@ -1,0 +1,1 @@
+#REDIRECT [[Frequently Asked Questions]]
