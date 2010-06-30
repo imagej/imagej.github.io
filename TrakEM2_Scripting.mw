@@ -271,6 +271,64 @@ run()
 
 To create a script with the above code, copy paste it into a file with an underscore in its name and extension ".py". Then place it in Fiji's plugins folder or subfolder thereof. Finally, restart Fiji or just call "Plugins - Scripting - Refresh Jython Scripts".
 
+
+=== Concatenating multiple project XML files by copying all their layers ===
+
+<source lang="python">
+# Albert Cardona 2010-06-30 for JC Rah
+# Takes a list of project XML files
+# and grabs all layers in order
+# and clones each and all its images
+# and then adds it to a newly created project named "all_layers.xml"
+
+
+from ini.trakem2 import Project
+from ini.trakem2.display import Patch
+from ini.trakem2.utils import Utils
+from ij import IJ
+
+
+source_dir = "/path/to/projects/" # MUST have ending slash
+project_paths = ["project1.xml", "project2.xml", "project3.xml"]
+
+# folder to save the target project at
+target_folder = source_dir
+
+def merge_layers():
+  # Create a new project target_folder as the storage folder:
+  target = Project.newFSProject("blank", None, target_folder)
+  # Save it there as "all_layers.xml" so we can call "save()" on it later
+  target.saveAs(target_folder + "all_layers.xml", True)
+  targetlayerset = target.getRootLayerSet()
+  z = 0
+  # For each project to concatenate, open it, and:
+  for path in project_paths:
+    IJ.log("Processing project " + path)
+    project = Project.openFSProject(source_dir + path, False)
+    rectangle = project.getRootLayerSet().get2DBounds()
+   # For each layer in the project, create a new layer "targetlayer" to host a copy of its images:
+    for layer in project.getRootLayerSet().getLayers():
+      targetlayer = targetlayerset.getLayer(z, 1, True)
+      z += 1
+      # Add to the new layer copies of each image
+      for ob in layer.getDisplayables():
+        targetlayer.add(ob.clone(target, False)) # clone in the context of the target project
+    project.getLoader().setChanged(False) # avoid dialog at closing
+    project.destroy()
+    targetlayerset.setMinimumDimensions()
+  # Regenerate all image mipmaps
+  futures = []
+  for patch in targetlayerset.getDisplayables(Patch):
+    futures.append(patch.updateMipMaps())
+  Utils.wait(futures)
+  target.save() # to validate mipmaps
+  #target.destroy()  # comment out to close it
+  IJ.log("Done!")
+
+# Invoke the function!
+merge_layers()
+</source>
+
 = Measure =
 
 === Measure the minimal distance from each ball to a surface defined by a profile list ===
