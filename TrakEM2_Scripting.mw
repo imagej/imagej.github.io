@@ -306,7 +306,7 @@ def merge_layers():
     IJ.log("Processing project " + path)
     project = Project.openFSProject(source_dir + path, False)
     rectangle = project.getRootLayerSet().get2DBounds()
-   # For each layer in the project, create a new layer "targetlayer" to host a copy of its images:
+    # For each layer in the project, create a new layer "targetlayer" to host a copy of its images:
     for layer in project.getRootLayerSet().getLayers():
       targetlayer = targetlayerset.getLayer(z, 1, True)
       z += 1
