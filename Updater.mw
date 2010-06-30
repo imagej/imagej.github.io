@@ -9,6 +9,8 @@
 | status                 = beta
 }}
 
+== Automatic Update ==
+
 The Fiji Updater is a mechanism to update individual packages in Fiji.  It is automatically run when all the following conditions are met:
 
 * Fiji was just started
@@ -20,7 +22,13 @@ If there were updates since the Updater was run the last time, Fiji will ask whe
 
 [[Image:Up-to-date-check.png]]
 
-In case you do not want to run the Updater upon startup, you can choose ''Never''; this setting can be adjusted in ''Edit>Options>Configure Fiji Updater'', too.
+In case you do not want to run the Updater upon startup, you can choose ''Never''; this setting can be adjusted in [[#Configure the Updater|''Edit>Options>Configure Fiji Updater'']], too.
+
+== Starting the Updater explicitely ==
+
+The Updater can be run via ''Help>Update Fiji''.
+
+== Easy mode ==
 
 The Updater has two modes, the ''Easy Mode'' and the ''Advanced Mode''.  In the former mode, you will only see the files that can be updated.  The easy mode looks like this:
 
