@@ -50,7 +50,7 @@ In ''Advanced Mode'', you can update your Fiji-specific Java. Just click the ''U
 
 == Configuring the Updater ==
 
-When the updater detects that there are updates available, it offerst the user the choice: update right now, delay (i.e. ask again in one week), or disable the startup check.
+When the updater detects that there are updates available, it offers the user the choice: update right now, delay (i.e. ask again in one week), or disable the startup check.
 
 If you disabled the startup check, you can reenable it via ''Edit>Options>Configure Fiji Updater'':
 
