@@ -4,7 +4,7 @@ In Fiji, we have a plugin whose only purpose is to write tutorials to be publish
 
 == First step: call the Tutorial Maker ==
 
-After clicking on ''Fiji Tutorial'' in the ''New'' submenu of the ''File'' menu, you will be asked for the title of your tutorial:
+After clicking on ''Plugins > Utilities > Fiji >  New Fiji Tutorial'', you will be asked for the title of your tutorial:
 
 [[Image:How_to_make_a_new_tutorial-PageTitle.jpg]]
 
