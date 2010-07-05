@@ -79,3 +79,10 @@ ImageJ offers the ''ij.gui.Plot'' class to make a window showing a plot. Use it 
 </source>
 
 Instead of ''float'' arrays, you can also use ''double'' arrays.
+
+== Duplicate, or convert between, ''ImageProcessor'' types ==
+
+The ''ImageProcessor'' class has several useful methods: [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html#duplicate() duplicate()], [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html#convertToByte(boolean) convertToByte()], [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html#convertToFloat() convertToFloat()],
+[http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html#convertToRGB() convertToRGB()], and [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html#convertToShort(boolean) convertToShort()].
+
+This class also has some other goodies, such as methods for convolution.
