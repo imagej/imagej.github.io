@@ -1,8 +1,21 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Save as animated gif
+| author                  = Ryan Raz
+| maintainer            = Johannes Schindelin
+| filename               = IO_.jar
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/IO_/io/Gif_Stack_Writer.java;hb=master gitweb]
+| latest version         = March 2002
+| status                  = stable
+| category               = [[:Category:Import-Export|Import/Export]]
+}}
+
 <ol>
-<li>Go to menu "Images - Stacks - Animation options" (or push alt+\)</li>
+<li>Go to menu ''Images>Stacks>Tools>Animation options...</li>
 <li>In the dialog, set the desired frames per second, or "Speed".</li>
-<li>Select the stack to save, and go to menu "File - Save As - Gif"</li>
+<li>Select the stack to save, and go to menu ''File>Save As>Animated Gif ..."</li>
 </ol>
 <p>Done!</p>
 
 [[Category:Tutorials]]
+[[Category:Plugins]]
