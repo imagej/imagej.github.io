@@ -33,3 +33,9 @@ it means that you do not have ''Java3D'' installed. This happens typically when 
  unset JAVA_HOME
 
 Alternatively, if you have write permissions to the path ''JAVA_HOME'' points to, you could install ''Java3D'' manually.
+
+== I tried to build Fiji, but get ''Target misc/headless.jar was not built!'' ==
+
+You need to update the ImageJA submodule:
+
+ git submodule update ImageJA
