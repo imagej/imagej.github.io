@@ -1,0 +1,17 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Edit LUT As Text
+| author                 = Johannes Schindelin
+| maintainer             = Johannes Schindelin
+| source               = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Edit_LUT_As_Text.py;hb=master gitweb]
+| status                 = stable
+| category               = [[:Category:Color processing|Color processing]]
+}}
+
+= Purpose =
+
+Demonstrate how to call ImageJ's editor and extend the menu in a Jython script.
+
+It also helps you to edit the current lookup table as a list of triplets denoting the red/green/blue values.
+
+You can also use the script to import lookup tables you have in the form of 256 red/green/blue triplets.
