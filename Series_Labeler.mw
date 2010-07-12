@@ -43,6 +43,7 @@ Make sure its the active image by clicking on it, then....
 *Choose the type of units and how to format them in the Units_Formatting panel. 
 **Choose the label unit from the drop down list or choose your own custom one. 
 **"Time series / movie" can have Decimal (0.45 sec) or Digital (00:00:00) formats, as well as a custom format the you can type in the given text field.  
+***Custom formats follow patterns as explained at Java SimpleDateFormat [http://download.oracle.com/docs/cd/E17476_01/javase/1.4.2/docs/api/java/text/SimpleDateFormat.html Java SimpleDateFormat]. H is hours, m is minutes, s is seconds, and S is ms.Try custom formats like HH:mm:ss or ss.SSS  etc.
 **"Z-stack" can have length units or a custom format. 
 **"Spectral" can have units of length or inverse length, or a custom format. 
 *Give the Startup value, the Interval value (time/distance/etc between slices/frames), which frames/slices to work on (from First to Last), and how often to label a slice/frame using the Every n-th option. Every n-th of 1 labels every slice, 2 labels every other, 3 every third, etc. 
