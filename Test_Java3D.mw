@@ -29,5 +29,5 @@ All it does is to show a rotating coloured cube, as shown in the figure below.
 
 [[Image:Test_Java3D.png|center]]
 
-
+If you encounter problems, you might want to consult the [http://wiki.java.net/bin/view/Javadesktop/Java3DApplicationDevelopment Java 3D Application Development page]. In particular, you might want to restart Fiji with [http://wiki.java.net/bin/view/Javadesktop/Java3DApplicationDevelopment#Java_3D_System_Properties specific Java 3D properties set].
 [[Category:Plugins]]
