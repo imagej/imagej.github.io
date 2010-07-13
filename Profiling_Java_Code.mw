@@ -1,0 +1,49 @@
+If your Java code seems to have bottlenecks that make it run slow, you need to ''profile'' the code. There are a couple of options you have for that.
+
+== JProfiler ==
+
+[http://www.ej-technologies.com/products/jprofiler/overview.html JProfiler] is a commercial program, but you can evaluate a trial version.
+
+== HPROF ==
+
+Use [http://java.sun.com/developer/technicalArticles/Programming/HPROF.html HPROF], a profiler included in Sun's Java since version 1.5.
+
+== VisualVM ==
+
+Use [http://download.oracle.com/docs/cd/E17409_01/javase/6/docs/technotes/guides/visualvm/index.html VisualVM] (a tutorial can be found [http://java.dzone.com/articles/profile-your-applications-java here]), which is a graphical alternative to HPROF, available in Sun's Java since version 6 update 7.
+
+== OProfile ==
+
+If you are on Linux, you can use [http://oprofile.sourceforge.net/news/ OProfile], a low-overhead profiler which uses a kernel module to minimize its impact.
+
+You need to [http://oprofile.sourceforge.net/doc/setup-jit.html#setup-jit-jvm recompile OProfile] for Java support (at least on Ubuntu, there is no precompiled OProfile package with Java support). On Linux, you can use this shell script to compile and install it:
+
+ sudo apt-get install libpopt-dev binutils-dev checkinstall && 
+ cd $FIJI_ROOT && 
+ git clone pacific.mpi-cbg.de:/srv/git/oprofile && 
+ cd oprofile/oprofile && 
+ ./autogen.sh && 
+ ./configure --with-java=$(pwd)/../java/linux-amd64/jdk1.6.0_20/ &&
+ make && 
+ sudo checkinstall
+
+(You do not need to use ''checkinstall'', but it will make it easy to remove the package once you do not want it anymore.)
+
+=== Start the profiler ===
+
+ sudo opcontrol --start
+
+=== Start Fiji with support for profiling ===
+
+ fiji -agentpath:/usr/local/lib/oprofile/libjvmti_oprofile.so --
+
+=== Stop the profiler ===
+
+ sudo opcontrol --stop
+
+=== Getting at the profiling data ===
+
+ sudo opcontrol --dump && 
+ opreport -l fiji
+
+[[Category:Development]]
