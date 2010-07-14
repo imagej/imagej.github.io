@@ -85,14 +85,19 @@ public class Duplicate_and_Scale implements PlugIn {
 
 == Compiling the plugin ==
 
-Save the java code in a java file with the same name of the class. For the above it would be ''Duplicate_and_Scale.java''.
+=== Using the Script Editor ===
 
-To compile the plugin, place it in fiji/plugins folder. Then you have two options:
+The easiest way to compile and run the plugin is to use the [[Script Editor]]: Call ''File>New>Script'', select ''Java'' in the ''Language'' menu, and paste the source. Then, compile and run the plugin by calling ''Run'' in the '"Run'' menu.
 
-* Either call "Plugins>Compile and Run" from the menus
-* ... or compile it from a terminal with <source lang="bash">./fiji --javac plugins/Duplicate_and_Scale.java</source>
+=== The hard way ===
 
-To make the plugin appear in the Plugins menu, restart Fiji or, better, just call "Help>Refresh Menus".
+You can save the java code in a java file with the same name of the class. For the above it would be ''Duplicate_and_Scale.java''.
+
+To compile the plugin, you have several options:
+
+* If you saved the java file into the ''plugins/'' directory inside the Fiji directory, after ''Help>Refresh Menus'', it will appear in the ''Plugins'' menu.
+* Call "Plugins>Compile and Run" and specify the where you saved the file.
+* Compile it from a terminal with <source lang="bash">./fiji --javac plugins/Duplicate_and_Scale.java</source> For this to work, you have to save the java file into the ''plugins/'' directory, or you have to copy the class files into said directory after compilation. For the plugin to appear in the ''Plugins'' menu, you have to call ''Help>Refresh Menus'', or to restart Fiji.
 
 == Running the plugin ==
 To run the plugin, just call that menu item named "Duplicate and Scale".
