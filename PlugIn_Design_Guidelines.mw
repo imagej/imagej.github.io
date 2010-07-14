@@ -11,6 +11,15 @@ A second key point is <b>never to show images</b> unless within the ''run'' meth
 
 If possible, provide a method that leaves the validation to the caller, and that returns a strongly-typed object (see the ''duplicateAndScale'' method in the example below).
 
+If you cannot use a ''GenericDialog'' for input for some reason, make your code scriptable by providing ''static'' methods with ''String'' parameters (so they can be called via the ''call()'' macro function), and insert code like this into the <u>interactive</u> (i.e. the ''run'' method, not the methods that are called from macros, scripts or other plugins) parts of the code:
+
+<source lang="java">
+if (Recorder.record) {
+        String command = "call(\"Duplicate_and_Scale.duplicateAndScale\", \"Scaled\");";
+        Recorder.recordString(command);
+}
+</source>
+
 == Example java plugin ==
 For example, a plugin that duplicates and scales an image:
 <source lang="java">
