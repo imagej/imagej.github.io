@@ -63,11 +63,20 @@ public class Duplicate_and_Scale implements PlugIn {
 		if (null == newName) newName = imp.getTitle();
 
 		// 1 - Perform the duplication and resizing
-		ImageProcessor ip = imp.getProcessor().resize(width, height);
-		ImagePlus scaled = new ImagePlus(newName, ip);
+		ImagePlus scaled = duplicateAndScale(imp, newName, width, height);
 
 		// 2 - Return the new name and the scaled image
 		return new Object[]{newName, scaled};
+	}
+
+	/**
+		* Execute the plugin functionality: duplicate and scale the given image, without validation.
+		* @return the scaled ImagePlus.
+		* Does NOT show the new, scaled image; just returns it.
+		*/
+	public static duplicateAndScale(ImagePlus imp, String newName, int width, int height) {
+		ImageProcessor ip = imp.getProcessor().resize(width, height);
+		return new ImagePlus(newName, ip);
 	}
 }
 </source>
