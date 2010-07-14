@@ -51,9 +51,11 @@ public class Duplicate_and_Scale implements PlugIn {
 		}
 	}
 
-	/** Execute the plugin functionality: duplicate and scale the given image.
-	 * @return an Object[] array with the name and the scaled ImagePlus.
-	 * Does NOT show the new, scaled image; just returns it. */
+	/**
+		* Execute the plugin functionality: duplicate and scale the given image.
+		* @return an Object[] array with the name and the scaled ImagePlus.
+		* Does NOT show the new, scaled image; just returns it.
+		*/
 	public Object[] exec(ImagePlus imp, String new_name, int width, int height) {
 		// 0 - Check validity of parameters
 		if (null == imp) return null;
