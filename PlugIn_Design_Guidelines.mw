@@ -9,6 +9,8 @@ The key point is to <b>separate the setup from the execution</b>. For the purpos
 
 A second key point is <b>never to show images</b> unless within the ''run'' method. There's nothing more annoying than a plugin that assumes there is no other plugin running, or that its invocation will happen always from the menus.
 
+If possible, provide a method that leaves the validation to the caller, and that returns a strongly-typed object (see the ''duplicateAndScale'' method in the example below).
+
 == Example java plugin ==
 For example, a plugin that duplicates and scales an image:
 <source lang="java">
