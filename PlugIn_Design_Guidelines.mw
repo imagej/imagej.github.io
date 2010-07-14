@@ -14,7 +14,7 @@ If possible, provide a method that leaves the validation to the caller, and that
 == Example java plugin ==
 For example, a plugin that duplicates and scales an image:
 <source lang="java">
-/* SAVE in a file named Duplicate_and_Scale.java under the plugins folder! */
+/* Paste into the Script Editor, or save as Duplicate_and_Scale.java into the plugins folder */
 import ij.plugin.PlugIn;
 import ij.IJ;
 import ij.ImagePlus;
