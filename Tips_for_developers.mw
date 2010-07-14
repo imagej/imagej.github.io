@@ -73,12 +73,23 @@ This is available since ImageJ 1.43g, as well as the option to set a different e
 ImageJ offers the ''ij.gui.Plot'' class to make a window showing a plot. Use it like this:
 
 <source lang="java">
- Plot plot = new Plot("The window title", "labels on the x-axis", "labels on the y-axis",
+Plot plot = new Plot("The window title", "labels on the x-axis", "labels on the y-axis",
     float_array_of_x_values, float_array_of_y_values);
- plot.show();
+plot.show();
 </source>
 
 Instead of ''float'' arrays, you can also use ''double'' arrays.
+
+If you need to update the plot at some stage, you need to save the return value of ''show()'':
+
+<source lang="java">
+Plot plot = new Plot("The window title", "labels on the x-axis", "labels on the y-axis",
+    float_array_of_x_values, float_array_of_y_values);
+PlotWindow window = plot.show();
+// ...
+Plot update = new Plot("Dummy", "x labels", "y labels", x_values, y_values);
+window.drawPlot(update);
+</source>
 
 == Duplicate, or convert between, ''ImageProcessor'' types ==
 
