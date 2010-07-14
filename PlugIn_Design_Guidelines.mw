@@ -76,7 +76,7 @@ public class Duplicate_and_Scale implements PlugIn {
 		* @return the scaled ImagePlus.
 		* Does NOT show the new, scaled image; just returns it.
 		*/
-	public static duplicateAndScale(ImagePlus imp, String newName, int width, int height) {
+	public static ImagePlus duplicateAndScale(ImagePlus imp, String newName, int width, int height) {
 		ImageProcessor ip = imp.getProcessor().resize(width, height);
 		return new ImagePlus(newName, ip);
 	}
