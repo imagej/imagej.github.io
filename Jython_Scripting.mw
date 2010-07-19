@@ -129,7 +129,7 @@ imp.show()
 
 ==== Creating a random 8-bit image ====
 
-First import necessary packages: Random, from standard java util library, and [http://www.jython.org/docs/jarray.html jarray], the Jython module for native java arrays:
+First import necessary packages: Random, from standard java util library, and [http://www.jython.org/archive/21/docs/jarray.html jarray], the Jython module for native java arrays:
 
 <source lang="python">
 from java.awt import Random
