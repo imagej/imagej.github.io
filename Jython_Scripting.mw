@@ -593,6 +593,20 @@ To ensure that you see the stack trace, print it to the ImageJ log window instea
 <source lang="python">
     IJ.log(str(sys.exc_info()))
 </source>
+
+=== Importing other ''.py'' scripts ===
+
+If you want to import other files, you need to ''import'' them. This requires that the files are found in the so-called ''search path'', a list of directories in which Jython looks for the modules (''.py'' files) to import. You can easily extend the search path:
+
+ from sys import path
+ from java.lang.System import getProperty
+ 
+ # extend the search path by $FIJI_ROOT/bin/
+ path.append(getProperty('fiji.dir') + '/bin')
+ 
+ # Now you can import $FIJI_ROOT/bin/compat.py
+ import compat
+
 [[Category:Scripting]]
 [[Category:Jython]]
 
