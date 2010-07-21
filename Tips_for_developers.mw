@@ -97,3 +97,31 @@ The ''ImageProcessor'' class has several useful methods: [http://pacific.mpi-cbg
 [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html#convertToRGB() convertToRGB()], and [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html#convertToShort(boolean) convertToShort()].
 
 This [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html class] also has some other goodies, such as methods for convolution.
+
+== How to store settings persistently ==
+
+ImageJ (and therefore Fiji, too) has a way to store key/value pairs persistently, i.e. they are available even after a restart. The settings are stored in a file called ''IJ_Prefs.txt'' in the subdirectory called ''.imagej/'' in your home directory (on Windows, directly in your home directory).
+
+'''Note:''' the settings are only saved upon <u>regular</u> exit of Fiji; If you kill the process, or if the Java Runtime crashes, they are <u>not</u> saved. You can ask for the settings to be saved explicitly, though.
+
+Example:
+
+<source lang="java">
+import ij.Prefs;
+
+...
+
+    // save key/value pairs
+    Prefs.set("my.persistent.name", "Grizzly Adams");
+    Prefs.set("my.persistent.number", 10);
+
+    ....
+
+    // retrieve the values (with default values)
+    int myNumber = Prefs.get("my.persistent.number", 0);
+
+    // explicitly save the preferences _now_
+    Prefs.savePreferences();
+</source>
+
+'''Note:''' do <u>not</u> use the ''getString()'' or ''getInt()''; These methods do not have any setter methods, and they do <u>not</u> access the same values as the ''get()'' method (''get()'' actually prefixes the keys with a dot)!
