@@ -87,6 +87,10 @@ There a few good reasons why you should try the [[Script Editor]] for rapid prot
 * Provides code templates
 * Convenience functions, (add import, open JavaDoc, for given class, etc)
 
+== Quick Start ==
+
+To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [[Script Editor]] (''File>New>Script''), and select the ''Process Pixels'' menu item from the ''Templates>Java'' menu. Then, run the plugin with ''Run>Run''.
+
 = ImageJ's API =
 
 == The class ''IJ'' ==
