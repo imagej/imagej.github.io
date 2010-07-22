@@ -42,10 +42,8 @@ There are two different types of plugins:
 
 A filter plugin looks like this:
 <source lang="java">
-public class My_Plugin
-            implements PlugInFilter {
-    public int setup(String arg,
-            ImagePlus image) {
+public class My_Plugin implements PlugInFilter {
+    public int setup(String arg, ImagePlus image) {
         return DOES_ALL;
     }
     public void run(ImageProcessor ip) {
@@ -56,8 +54,7 @@ public class My_Plugin
 
 A general plugin looks like this:
 <source lang="java">
-public class My_Plugin
-            implements PlugIn {
+public class My_Plugin implements PlugIn {
     public void run(String arg) {
         // Here is the action
     }
@@ -89,5 +86,261 @@ There a few good reasons why you should try the [[Script Editor]] for rapid prot
 * You can compile & run Java classes in the Script Editor which implement neither a plugin nor a plugin filter, but which have a static ''main()'' method 
 * Provides code templates
 * Convenience functions, (add import, open JavaDoc, for given class, etc)
+
+= ImageJ's API =
+
+== The class ''IJ'' ==
+
+The class [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=ImageJA.git;a=blob;f=ij/IJ.java;hb=master ij.IJ] is a convenience class with many static functions. Two of them are particularly useful for debugging:
+<source lang="java">
+// output into the Log window
+IJ.log(“Hello, World!”);
+
+// Show a message window
+IJ.showMessage(“Hello, World!”);
+</source>
+
+== The class ''ImageJ'' ==
+
+The class [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=ImageJA.git;a=blob;f=ij/ImageJ.java;hb=master ij.ImageJ] implements the main window of ImageJ / Fiji, and you can access it via ''ij.IJ'''s static method ''getInstance()'':
+<source lang="java">
+// check if ImageJ is used interactively
+if (IJ.getInstance() != null)
+    IJ.showMessage(“Interactive!”);
+</source>
+
+Typically, all you do with that instance is to test whether ImageJ is used as a library (in which case the instance is ''null'').
+
+== The class ''WindowManager'' ==
+
+Use the class [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=ImageJA.git;a=blob;f=ij/WindowManager.java;hb=master ij.WindowManager] to access the ImageJ windows / images:
+<source lang="java">
+// how many windows / images are active?
+IJ.log(“There are “
+    + WindowManager.getNonImageWindows().length
+    + “ windows and “
+    + WindowManager.getImageCount()
+    + “ images!”);
+</source>
+
+When implementing a filter plugin, you usually do not need to access ''WindowManager'' directly.
+
+== The hierarchy of the classes representing an image ==
+
+All images are represented as instances of [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=ImageJA.git;a=blob;hb=master;f=ij/ImagePlus.java ij.ImagePlus]. This class wraps an [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=ImageJA.git;a=blob;hb=master;f=ij/ImageStack.java ij.ImageStack] of slices. Slices are data-type dependent instances of [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=ImageJA.git;a=blob;hb=master;f=ij/process/ImageProcessor.java ij.process.ImageProcessor]: [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=ImageJA.git;a=blob;hb=master;f=ij/process/ByteProcessor.java ij.process.ByteProcessor], [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=ImageJA.git;a=blob;hb=master;f=ij/process/ShortProcessor.java ij.process.ShortProcessor], [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=ImageJA.git;a=blob;hb=master;f=ij/process/FloatProcessor.java ij.process.FloatProcessor], and [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=ImageJA.git;a=blob;hb=master;f=ij/process/ColorProcessor.java ij.process.ColorProcessor]. Or graphically:
+
+[[Image:Image_Class_Hierarchy.png|600px|center]]
+
+Example usage:
+
+<source lang="java">
+// get the current image
+ImagePlus image = WindowManager.getCurrentImage();
+
+// get the current slice
+ImageProcessor ip = image.getProcessor();
+ 
+// duplicate the slice
+ImageProcessor ip2 = ip.duplicate();
+</source>
+
+== Beyond 3D: Hyperstacks ==
+
+In ImageJ, you can represent more than 3 dimensions in an image: ''X, Y, Z, channels, frames (time)''. Internally, these 5-dimensional images are still represented as stacks of images (essentially, a one-dimensional array of ''ImageProcessor'' instances). The ''ImagePlus'' class knows how to transform ''(channel, z-slice, frame)'' triplets into the corresponding index in the ''ImageStack'', though:
+
+<source lang="java">
+// get the n'th slice (1 <= n <= N!)
+ImageStack stack = image.getStack();
+int size = stack.getSize();
+ImageProcessor ip = stack.getProcessor(size);
+
+// get the ImageProcessor for a given
+// (channel, slice, frame) triple
+int index = image.getStackIndex(channel, slice, frame);
+ImageProcessor ip = stack.getProcessor(index);
+</source>
+
+'''Note:''' for historical reasons, slice indices (and channel and frame indices as well) start at <u>1</u>. This is in contrast, e.g. to the x, y coordinates, which start at <u>0</u> (as one might be used to from other computer languages except BASIC and Pascal).
+
+== Working with the pixels' values ==
+
+The subclasses of the ''ImageProcessor'' class implement 2-dimensional images for specific data types (8-bit, 16-bit, 32-bit floating point, and RGB color). Let's start with the grayscale ones:
+
+<source lang="java">
+// get one pixel's value (slow)
+float value = ip.getf(0, 0);
+</source>
+
+This would get you the value of the top left pixel of an object ''ip'' of type ''ImageProcessor'', as a 32-bit floating point value.
+
+Since the original data type might be 8-bit, that operation can require a ''cast'' (type conversion), which can be quite costly when done very often. Therefore, if you know the data type of your images, you can write more efficient (but data type depednent) code:
+
+<source lang="java">
+// get all type-specific pixels (fast)
+// in this example, a ByteProcessor
+byte[] pixels = (byte[])ip.getPixels();
+int w = ip.getWidth(), h = ip.getHeight();
+for (int j = 0; j < h; j++)
+    for (int i = 0; i < w; i++)
+        // The handle() method (to be implemented by you) is called with the intensity
+        handle(pixels[i + w * j] & 0xff);
+</source>
+
+'''Note:''' The previous example assumes that your images are 8-bit (unsigned, i.e. values between 0 and 255) images. Since Java has no data type for unsigned 8-bit integers, we have to use the ''& 0xff'' dance (a ''Boolean AND'' operation) to make sure that the value is treated as unsigned integer.
+
+Accessing the pixels' values gets trickier when it comes to RGB images. These use the native data type ''int'' (32-bit signed integer) to encode 3 color channels à 8-bit, packed into the lower 24 bits (note that ImageJ might store things in the upper 8 bits, so you cannot assume them to be 0). Therefore, the ''getf()'' method of the ''ImageProcessor'' class does not make sense on color images. You have to access the pixels like this:
+
+<source lang="java">
+// get all pixels of a ColorProcessor
+int[] pixels = (int[])ip.getPixels();
+int w = ip.getWidth(), h = ip.getHeight();
+for (int j = 0; j < h; j++)
+    for (int i = 0; i < w; i++) {
+        int value = pixels[i + w * j];
+        // value is a bit-packed RGB value
+        int red = value & 0xff;
+        int green = (value >> 8) & 0xff;
+        int blue = (value >> 16) & 0xff;
+}
+</source>
+
+== Making new images ==
+
+To make a new image - be it 2, 3, 4 or 5 dimensional - you have to create instances of ''ImageProcessor'' first. Example:
+
+<source lang="java">
+ImageProcessor gradient(double angle, int w, int h) {
+    float c = (float)Math.cos(angle);
+    float s = (float)Math.sin(angle);
+    float[] p = new float[w * h];
+    for (int j = 0; j < h; j++)
+        for (int i = 0; i < w; i++)
+            p[i + w *j] = (i – w / 2) * c + (j – h / 2) * s;
+    return new FloatProcessor(w, h, p, null);
+}
+</source>
+
+This example implements a method that shows a gradient along a given angle. You can use this method to build a 3-dimensional image:
+
+<source lang="java">
+// make a stack of gradients
+int w = 512, h = 512;
+ImageStack stack = new ImageStack(w, h);
+for (int i = 0; i < 180; i++)
+    stack.addSlice(“”, gradient(i / 180f * 2 * Math.PI, w, h));
+ImagePlus image = new ImagePlus(“stack”, stack);
+// you do not need to show intermediate images
+image.show();
+</source>
+
+== Informing the user about the progress ==
+
+This code snippet shows you how to update the progress bar and the status text:
+<source lang="java">
+// show a progress bar
+for (int i = 0; i < 100; i++) {
+    // do something
+    IJ.showProgress(i + 1, 100);
+}
+
+// show something in the status bar
+IJ.showStatus(“Hello, world!”);
+</source>
+
+'''Note:''' Calling ''IJ.showProgress(n, n);'' will hide the progress bar; Therefore, it makes sense to update the progress bar at the <u>end</u> of a loop iteration, so that after the last iteration, the progress bar is hidden.
+
+== Frequently used operators ==
+
+The [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html ''ImageProcessor''] class has a few methods such as ''smooth()'', ''sharpen()'', ''findEdges()'', etc
+
+'''Tip:''' use the Script Editor's functions in the ''Tools'' menu:
+* ''Open Help for Class...'' (opens the JavaDoc for a class in a browser),
+* ''Open .java file for class...'' (requires the respective source files to be present in the Fiji directory, such as after [[Downloading and Building Fiji From Source]], or
+* ''Open .java file for menu item...'' (also needs the source files).
+
+== Plots ==
+
+You can show a plot window very easily:
+
+<source lang="java">
+void plot(double[] values) {
+    double[] x = new double[values.length];
+    for (int i = 0; i < x.length; i++)
+        x[i] = i;
+    Plot plot = new Plot(“Plot window”, “x”, “values”, x, values);
+    plot.show();
+}
+</source>
+
+It is almost as easy to put multiple plots into one window:
+
+<source lang="java">
+void plot(double[] values, double[] values2) {
+    double[] x = new double[values.length];
+    for (int i = 0; i < x.length; i++)
+        x[i] = i;
+    Plot plot = new Plot(“Plot window”, “x”, “values”, x, values);
+    plot.setColor(Color.RED);
+    plot.draw();
+    plot.addPoints(x, values2, Plot.LINE);
+    plot.show();
+}
+</source>
+
+== The results table ==
+
+Whenever your plugin quantifies things in the images, you might want to output the values in a results table:
+
+<source lang="java">
+ResultsTable rt = Analyzer.getResultsTable();
+if (rt == null) {
+    rt = new ResultsTable();
+    Analyzer.setResultsTable(rt);
+}
+for (int i = 1; i <= 10; i++) {
+    rt.incrementCounter();
+    rt.addValue(“i”, i);
+    rt.addValue(“log”, Math.log(i));
+}
+rt.show(“Results”);
+</source>
+
+== Regions of interest ==
+
+You can access the ROIs in the following fashion:
+
+<source lang="java">
+    // testing ROI type
+    if (roi != null && roi.getType() == Roi.POLYGON)
+        IJ.log(“This is a polygon!”);
+    showCoordinates((PolygonRoi)roi);
+
+...
+
+// get ROI coordinates
+void showCoordinates(PolygonRoi polygon) {
+    PolygonRoi polygon = (PolygonRoi)roi;
+    int[] x = polygon.getXCoordinates();
+    int[] y = polygon.getYCoordinates();
+    Rectangle bounds = polygon.getBounds();
+    for (int i = 0; i < x.length; i++)
+        // x, y are relative to the bounds' origin
+        IJ.log(“point ” + i + “: “ + (x[i] + bounds.x) + (y[i] + bounds.y));
+}
+</source>
+
+'''Note:''' If the image has no ROI set, then ''getRoi()'' will return ''null'', so you <u>must</u> check whether ''roi != null'' before accessing fields or methods on the object.
+
+Of course, you can also set ROIs programmatically:
+
+<source lang="java">
+// rectangular ROI
+Roi roi = new Roi(10, 10, 90, 90);
+image.setRoi(roi);
+
+// oval ROI
+Roi roi = new OvalRoi(10, 10, 90, 90);
+image.setRoi(roi);
+</source>
 
 [[Category:Tutorials]]
