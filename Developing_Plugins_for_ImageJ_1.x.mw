@@ -1,0 +1,93 @@
+= Plugins =
+
+== What are plugins (in terms of files)? ==
+
+* Plugins are the most convenient way to extend ImageJ/Fiji
+* A plugin consists of one or more Java classes living inside a ''.jar'' file in ''plugins/'' (exception: a single ''.class'' file)
+* All plugin ''.jar'' (or ''.class'') files must contain an underscore in their name
+* Plugins can use 3rd party libraries; in Fiji, store them in the ''jars/'' directory (in ImageJ you have to put them into the ''plugins/'' directory, and to avoid funny menu entries in the Plugins menu, you should rename them if their name contains an underscore)
+
+== Updating plugins ==
+
+* After storing the ''.jar'' file(s) into the ''plugins/'' (or ''jars/'') directory, call ''Help>Refresh Menus'' or restart Fiji
+* If the respective plugin is in-use, you might get funny results when refreshing the menus, due to limitations in Sun Java's handling of ''.jar'' files.
+
+== What are plugins (in terms of menu entries)? ==
+
+* If the ''.jar'' file contains a file called ''plugins.config'', it determines what menu items are provided by the plugin
+* If the ''.jar'' file does not contain a file called ''plugins.config'', all contained classes containing an underscore in their name are added to the ''Plugins'' menu
+
+A ''plugins.config'' file looks like this:
+
+ # Comments (such as title, author, etc)
+ #
+ # The other lines have this format:
+ #  Menu, “Menu Item”, ClassName
+ # Example:
+ 
+ Plugins>Analyze, “Plot”, fiji.Plot
+
+A class can be reused for multiple menu entries, by passing an optional argument in the ''plugins.config'' file:
+
+ # Example how to reuse a Java class
+ 
+ Help, “Bug report”, fiji.Send(“bug”)
+ Help, “Contact”, fiji.Send(“contact”)
+
+== What are plugins (in terms of Java code)? ==
+
+There are two different types of plugins:
+* Plugins which operate on one image
+* All other plugins (including plugins which require more than one input images, or image format loaders)
+
+A filter plugin looks like this:
+<source lang="java">
+public class My_Plugin
+            implements PlugInFilter {
+    public int setup(String arg,
+            ImagePlus image) {
+        return DOES_ALL;
+    }
+    public void run(ImageProcessor ip) {
+        // Here is the action
+    }
+}
+</source>
+
+A general plugin looks like this:
+<source lang="java">
+public class My_Plugin
+            implements PlugIn {
+    public void run(String arg) {
+        // Here is the action
+    }
+}
+
+</source>
+
+'''Note:''' it is of course possible to implement a filter plugin using the ''PlugIn'' interface, but ImageJ will perform more convenience functions if you use the ''PlugInFilter'' interface, such as verifying that there is an image and that it is of the correct type, and error handling.
+
+== Compile & Run ==
+
+* Fiji has a menu entry ''Plugins>Compile & Run...'' which you can use to compile & run a plugin without restarting Fiji
+* In Fiji, you can put ''.java'' files into the ''plugins/'' directory, and they will be compiled & run transparently (i.e. the user will hardly notice a difference between such plugins and precompiled ones)
+
+== Limitations ==
+
+* Plugins can only implement menu entries (in particular, they cannot provide tools in the toolbar)
+* Some functions which are easy to call via macros are not available via the public Java API (e.g. ''Image>Stacks>Plot Z-axis profile...'')
+* It is often quicker to write macros
+
+= Rapid prototyping with the [[Script Editor]] =
+
+There a few good reasons why you should try the [[Script Editor]] for rapid prototyping of your plugins or scripts:
+
+* Supports Jython, JRuby, Javascript, Clojure, Java, BeanShell, and ImageJ's Macro Language
+* Syntax highlighting
+* Compile and Run without restarting Fiji (mini-IDE)
+* Export scripts/plugins as ''.jar'' files
+* You can compile & run Java classes in the Script Editor which implement neither a plugin nor a plugin filter, but which have a static ''main()'' method 
+* Provides code templates
+* Convenience functions, (add import, open JavaDoc, for given class, etc)
+
+[[Category:Tutorials]]
