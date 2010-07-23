@@ -125,3 +125,11 @@ import ij.Prefs;
 </source>
 
 '''Note:''' do <u>not</u> use the ''getString()'' or ''getInt()''; These methods do not have any setter methods, and they do <u>not</u> access the same values as the ''get()'' method (''get()'' actually prefixes the keys with a dot)!
+
+== How to turn a number into a string, using a given number of decimal places ==
+
+Use the ''d2s()'' method of the ''ij.IJ'' class:
+
+<source lang="java">
+String message = "The current temperature is " + IJ.d2s(degrees, 1) + "° Celsius";
+</source>
