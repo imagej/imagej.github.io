@@ -185,9 +185,11 @@ Since the original data type might be 8-bit, that operation can require a ''cast
 byte[] pixels = (byte[])ip.getPixels();
 int w = ip.getWidth(), h = ip.getHeight();
 for (int j = 0; j < h; j++)
-    for (int i = 0; i < w; i++)
-        // The handle() method (to be implemented by you) is called with the intensity
-        handle(pixels[i + w * j] & 0xff);
+    for (int i = 0; i < w; i++) {
+        // Java has no unsigned 8-bit data type, so we need to perform Boolean arithmetics
+        int value = pixels[i + w * j] & 0xff;
+        ...
+    }
 </source>
 
 '''Note:''' The previous example assumes that your images are 8-bit (unsigned, i.e. values between 0 and 255) images. Since Java has no data type for unsigned 8-bit integers, we have to use the ''& 0xff'' dance (a ''Boolean AND'' operation) to make sure that the value is treated as unsigned integer.
