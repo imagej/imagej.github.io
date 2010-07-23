@@ -35,7 +35,7 @@ Browse the [[:Category:News|news archive]].
 * Register/edit/analyze/segment/annotate/3D model terabytes of confocal and electron microscopy images.
 ;[[:Category:Transform|Transform]]
 * [[Distortion correction]]: correct lens deformation induced by the microscope (optical and electron microscopy). See the [http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf Distortion Correction plugin manual].
-;[[Plugins_Menu#Registration|Image registration]]
+;[[Plugins_Menu#Plugins_.3E_Registration|Image registration]]
 * [[SPIM Registration]] Registration and fusion of Selective Plane Illumination Microscopy data.
 *[[Stitching 2D/3D]] Stitch multiple image stacks across X,Y,Z.
 *[[Feature Extraction]] SIFT and MOPS.
@@ -43,7 +43,7 @@ Browse the [[:Category:News|news archive]].
 * [[Register_Virtual_Stack_Slices|Stack slice registration]]
 * Image montage (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2]) with global optimization (in 2D and across sections)
 *[[VIB Protocol]] Label-based 3D alignment of image stacks.
-;[[Plugins_Menu#Segmentation|Segmentation]]
+;[[Plugins_Menu#Plugins_.3E_Segmentation|Segmentation]]
 * [[Simple Neurite Tracer]] (project [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/ page])
 * [http://132.187.25.13/home/?category=Download&page=SegmentationEditor Segmentation Editor]
 * Manual (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2])
