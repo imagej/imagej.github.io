@@ -109,6 +109,10 @@ We already have Jacl in Fiji, as it is a dependency of Batik. There is also a pu
 
 For Tcl, the Script Editor would need minimal adjustments, as RSyntaxTextArea already has support for Tcl, but for Haskell, a new TokenMaker would have to be implemented.
 
+== Add ''Edit>Find in files...'' ==
+
+We already have a mechanism to jump between compile errors and locations of a stack trace. The same mechanism could be used to present results from a search through multiple files.
+
 = Fiji development environment/infrastructure =
 
 == GUI Testing framework ==
