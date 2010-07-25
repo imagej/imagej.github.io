@@ -103,12 +103,6 @@ A public Java class must be compiled from a source file reflecting the class nam
 
 Often, it would be very convenient to remember the current cursor position to come back to, after looking around in other parts of the file.  Maybe Ctrl+B (together with a menu entry), or Ctrl+<digit> are good ways to implement the user interface.  (The code should be similar to the ''Goto Line...'' function.
 
-== Add an ''Import .java / source .jar'' function to the Script Editor ==
-
-Many plugins' sources come in the form of a .jar, often being included together with the corresponding .class files.
-
-Now that the Script Editor has already learnt to build .jar files from single .java files, and to use the [[Fiji Build System]] to build .jar files from Fiji's plugin sources, it is only natural to offer a function to import sources into Fiji's source tree, and to integrate them properly (such as modifying .gitignore and Fakefile appropriately, and to add a staged-plugins/''basename''.config after analyzing the available classes for ImageJ plugins).
-
 == Add support for Haskell (via Jaskell) and Tcl (via Jacl) ==
 
 We already have Jacl in Fiji, as it is a dependency of Batik. There is also a pure-Java implementation of the Haskell language, and both should be relatively easy to integrate into Fiji as scripting languages.
