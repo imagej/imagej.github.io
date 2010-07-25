@@ -43,16 +43,6 @@ There are a number of publications about turning greyscale images into color ima
 
 Note: this is an ill-posed problem, as there is not enough information in the greyscale images to identify the original color.  However, under certain circumstances, it is possible to estimate a best guess for the color for most or all pixels.
 
-== Retinex algorithm ==
-
-The retinex theory models the retina to estimate color disregarding illumination, i.e. it provides algorithms to correct for irregular illumination of same-colored objects.
-
-References:
-
-* [http://dragon.larc.nasa.gov/retinex/background/pubabs/spie2847-1996.html A Multiscale Retinex For Color Rendition and Dynamic Range Compression]
-
-* [http://spiedl.aip.org/getabs/servlet/GetabsServlet?prog=normal&id=PSISDG007241000001724106000001&idtype=cvips&gifs=yes Fast implementation of color constancy algorithms]
-
 == Image selector/sorter ==
 
 Implement an algorithm that sorts a number of images by features, such as color.  Inspired by Kai-Uwe Barthel's [http://pixolu.de pixolu] project.
