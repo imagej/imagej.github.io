@@ -346,14 +346,13 @@ This is an implementation of the Triangle method:
 |url=http://www.jhc.org/cgi/pmidlookup?view=long&pmid=70454
 }}
 
-Modified from from Johannes Schindelin plugin [http://wbgn013.biozentrum.uni-wuerzburg.de/ImageJ/triangle-algorithm.html Triangle_Algorithm].
+Modified from Johannes Schindelin's plugin [http://wbgn013.biozentrum.uni-wuerzburg.de/ImageJ/triangle-algorithm.html Triangle_Algorithm].
 
 See also: http://www.ph.tn.tudelft.nl/Courses/FIP/noframes/fip-Segmenta.html#Heading118
 
 The Triangle algorithm, a geometric method, cannot tell whether the data is skewed to one side or another, but assumes a maximum peak (mode) near one end of the histogram and searches towards the other end.
 This causes a problem in the absence of information of the type of image to be processed, or when the maximum is not near one of the histogram extremes (resulting in two possible threshold regions between that max and the extremes).
 Here the algorithm was extended to find on which side of the max peak the data goes the furthest and searches for the threshold within that largest range.
-
 
 === Yen ===
 Implements Yen's thresholding method from:
