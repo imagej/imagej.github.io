@@ -18,7 +18,7 @@ If Quicktime for Java was Open Source, we could do something about the problems,
 
 The TransformJ plugin suite does not implement anything fancy, just the regular affine transformations that you might need to apply to an image.
 
-TransformJ can be downloaded for free (and in contrast to Quicktime for Java, it is platform-independent), but it has major bugs: its transformations are basically 2D, even when working on 3D images.  Since it is closed-source, we have to reimplement the basic framework, wasting our time, just to fix those bugs.
+TransformJ can be downloaded for free (and in contrast to Quicktime for Java, it is platform-independent), but it has major limitations: you have to ask the author before you know how the calculations are performed (is it resampling [[Downsample|according to the Sampling Theorem]]? or is it averaging rectangular areas? is it interpolating in 2D, or 3D?) and it is not n-dimensional, so even if making a kymogram is an affine transformation, you cannot do that with TransformJ.  Since it is closed-source, we cannot base our work on TransformJ, but have to reimplement it all.
 
 == Java Media Framework ==
 
