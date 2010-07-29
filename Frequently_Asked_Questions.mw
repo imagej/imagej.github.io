@@ -10,6 +10,20 @@ If you have an issue that is not mentioned here, you might want to [[Help:Conten
 
 If you are on MacOSX, most likely you did not update in some time, and you were bitten by a bug in the updater that is already fixed (but you did not get the fix in time). Please follow [[Fix non-functional Fiji after Update on MacOSX|these instructions]].
 
+== The Updater always says ''Connection refused''. Maybe it does not use the proxy? ==
+
+Indeed, Java does not have a way to access your browser's settings, so you have to tell it about the proxy yourself. There is no convenient way to enter the proxy settings yet, but here is a workaround:
+
+* open the [[Script Editor]] with ''File>New>Script''
+* set the language to ''Beanshell'' in the ''Language'' menu of the editor
+* paste the following code (and adjust it to match your settings):
+<source lang="java">
+System.setProperty("http.proxyHost", "my.proxy.server.com");
+System.setProperty("http.proxyPort", "80");
+</source>
+* run the script via the ''Run'' menu
+* start the updater again
+
 = Development =
 
 == How can I build Fiji myself? ==
