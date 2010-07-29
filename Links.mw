@@ -15,6 +15,12 @@ Links to the contributors' personal pages can be found [[Contributors|here]].
 * Plugins on the [http://imagejdocu.tudor.lu/doku.php?id=plugin:start ImageJ Documentation Wiki]
 * Christian Henden has some interesting plugins (mainly in the Public Domain), including 3D threshold methods: http://www.pvv.org/~perchrh/imagej/
 
+== Input/Output ==
+
+=== Movie support ===
+
+Bio-Formats has started [http://www.loci.wisc.edu/bio-formats-format/quicktime-movie supporting] parts of the Quicktime specification without relying on the native Quicktime4Java that is not even supported on 64-bit MacOSX, let alone Linux.
+
 == Image Processing ==
 
 [http://alvyray.com/Memos/6_pixel.pdf A pixel is not a little square]. Really. It is not. Pixels may be spaced on a regular grid. But that does not make them square. Even thinking about them as squares will harm your analysis, since it is simply wrong.
