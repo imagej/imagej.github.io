@@ -1,0 +1,67 @@
+== Simple Neurite Tracer: Sholl analysis ==
+
+This tutorial assumes that you've already traced an image and that you know about the [http://en.wikipedia.org/wiki/Sholl_analysis variants of Sholl analysis] that are possible.  I don't have access at the moment to images that have the classic structure that Sholl analysis is typically used for, but I'll illustrate the principle using an olfactory projection fibre image from the Diadem challenge data sets:
+
+http://www.diademchallenge.org/olfactory_projection_fibers_readme.html
+
+When you've loaded the traces, that should look something like this:
+
+[[Image:Simple_Neurite_Tracer:_Sholl_analysis-1.jpg]]
+
+Now you have to pick a centre point for the Sholl analysis.  (This might be the soma, for example, if your neuron has processes that extend symmetrically from there.)  The centre point must be on one of your existing paths.  First, select the path on which your centre point lies:
+
+[[Image:Simple_Neurite_Tracer:_Sholl_analysis-2.jpg]]
+
+Now hold down control and shift (on Windows or Linux) or alt and shift (on Mac) and move the mouse along the path.  A red cross-hairs should track along the path:
+
+[[Image:Simple_Neurite_Tracer:_Sholl_analysis-3.jpg]]
+
+... when you've got the red cross-hairs at a suitable point, <i>still</i> holding down control / alt and shift, press the 'a' key.  Then you can release the other keys.  You should see the Sholl analysis interface appear like this:
+
+[[Image:Simple_Neurite_Tracer:_Sholl_analysis-4.jpg]]
+[[Image:Simple_Neurite_Tracer:_Sholl_analysis-5.jpg]]
+
+Consider the first two options: you should probably select the top option "Use all N paths in analysis?" unless you're only wanting to include a subset of the paths, for example if your image stack contains multiple separate neurons.
+
+Next I'd recommend that you click on "Draw Graph" so that you can visualize how the intersections with concentric spheres vary with distance from your centre point:
+
+[[Image:Simple_Neurite_Tracer:_Sholl_analysis-6.jpg]]
+
+This graph shows exactly how many times a sphere of a particular radius will intersect with paths.  However, this is not the classic way of doing Sholl analysis, which consists of only considering spheres of evenly spaced radii.  To switch to that, you have to enter a value into the "Circle / sphere separation" box.  e.g.
+
+[[Image:Simple_Neurite_Tracer:_Sholl_analysis-7.jpg]]
+
+Sometimes people want to normalize the number of intersections by the volume (or area) enclosed by the sphere (or circle) - you can do that by selecting the "Normalize for volume enclosed by circle" option:
+
+[[Image:Simple_Neurite_Tracer:_Sholl_analysis-8.jpg]]
+
+The "Use standard axes" / "Use semi-log axes" / "Use log-log axes" controls whether the analysis is based on the log of intersections and distance ("log-log"), just the log of intersections ("semi-log") or unmodified values.
+
+The values listed above the buttons are various measures of the morphology of your neuron based on the options you've selected above.  You can add these results to the ImageJ results table by pressing "Add to results table":
+
+[[Image:Simple_Neurite_Tracer:_Sholl_analysis-9.jpg]]
+
+You can build up results in the Results Table by clicking "Quit tracer" loading a new image + traces and repeating this process.
+
+If instead you'd like to export those summary results to a file that can be opened in a spreadsheet, you can click on "Export summary results" which will prompt for a CSV filename to save to.  Or, to export all the data points used in the graph, you can click "Export detailed results as CSV".  These options, once loaded into a spreadsheet, are shown below:
+
+[[Image:Simple_Neurite_Tracer:_Sholl_analysis-10.jpg]]
+
+If you want to export the graph, so that you can edit in some other software or include it in a presentation, you can select "Export graph as SVG" in the graph window.  You can then load the SVG file in inkscape, for example:
+
+[[Image:Simple_Neurite_Tracer:_Sholl_analysis-11.jpg]]
+
+Another option that might be useful is "Make Sholl image".  This will produce a stack which shows the number of intersections at each distance from the centre point on a colour scale.  You can see the exact number of intersections corresponding to a colour by mousing over that region and looking in the status bar.  For example, this shows you that the orange colour corresponds to 2 intersections ("value=2"):
+
+[[Image:Simple_Neurite_Tracer:_Sholl_analysis-12.jpg]]
+
+If you go back to the main tracer interface, keeping that "Sholl image stack" open, you can visualize those colours on the traces by switching the "Use colors / labels from" option to "Sholl analysis of all paths":
+
+[[Image:Simple_Neurite_Tracer:_Sholl_analysis-13.jpg]]
+
+(I've made the original image volume transparent in that image for clarity.)
+
+
+
+
+[[Category:Tutorials]]
