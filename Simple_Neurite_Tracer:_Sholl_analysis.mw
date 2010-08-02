@@ -19,7 +19,6 @@ Now hold down control and shift (on Windows or Linux) or alt and shift (on Mac) 
 ... when you've got the red cross-hairs at a suitable point, <i>still</i> holding down control / alt and shift, press the 'a' key.  Then you can release the other keys.  You should see the Sholl analysis interface appear like this:
 
 [[Image:Simple Neurite Tracer- Sholl analysis-4.jpg|750px]]
-[[Image:Simple Neurite Tracer- Sholl analysis-5.jpg|750px]]
 
 Consider the first two options: you should probably select the top option "Use all N paths in analysis?" unless you're only wanting to include a subset of the paths, for example if your image stack contains multiple separate neurons.
 
