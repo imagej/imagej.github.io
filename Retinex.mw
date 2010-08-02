@@ -34,6 +34,10 @@ Retinex filtering is based on Land's theory of image perception, proposed to exp
 :adjusts the colour of the result. Large values produce less saturated images.. 
 
 == Example ==
+Original:
+[[Image:Photo1.jpg]]
+
+After Retinex (default parameters):
 [[Image:Photo1-Retinex.jpg]]
 
 == Homepage ==
