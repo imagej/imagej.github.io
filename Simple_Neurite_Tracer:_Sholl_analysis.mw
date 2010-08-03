@@ -1,6 +1,6 @@
 == Simple Neurite Tracer: Sholl analysis ==
 
-This tutorial assumes that you've already traced an image and that you know about the [http://en.wikipedia.org/wiki/Sholl_analysis variants of Sholl analysis] that are possible.  I don't have access at the moment to images that have the classic structure that Sholl analysis is typically used for, but I'll illustrate the principle using an olfactory projection fibre image from the Diadem challenge data sets:
+This tutorial assumes that you've already traced an image with [[Simple Neurite Tracer]] and that you know about the [http://en.wikipedia.org/wiki/Sholl_analysis variants of Sholl analysis] that are possible.  I don't have access at the moment to images that have the classic structure that Sholl analysis is typically used for, but I'll illustrate the principle using an olfactory projection fibre image from the Diadem challenge data sets:
 
 http://www.diademchallenge.org/olfactory_projection_fibers_readme.html
 
