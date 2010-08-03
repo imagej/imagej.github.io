@@ -32,7 +32,7 @@ Now you can stitch together the images using these offsets by going to "Plugins 
 
 After clicking OK, this should stitch together all those stacks into one huge stack.  (If there are problems, you should see details of them in the log window.)
 
-[[Image:Diadem_Neocortical_Layer_6_Axons-2.png]]
+[[Image:Diadem_Neocortical_Layer_6_Axons-2.png|750px]]
 
 Next, you should correct the Z-calibration of the stitched stack.  The data set page tells us that the z separation is 3.03 pixels, so open up "Image > Properties" and set the Voxel Depth to 3.03 times the Pixel Width:
 
