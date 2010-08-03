@@ -36,6 +36,8 @@ You may wish to adjust the transparency in the 3D viewer by selecting the image 
 
 Now, to load the traces click on "Load Traces / SWC File" and select CF_1.swc.  You will be presented with an options box like this:
 
+[[Image:Diadem_Cerebellar-7b.png]]
+
 Make sure that "Ignore calibration" is selected (as in that screenshot) and that there is no offset or scale set.  Once loaded you should be able to see the traces as here:
 
 [[Image:Diadem_Cerebellar-8.png]]
