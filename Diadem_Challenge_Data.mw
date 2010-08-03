@@ -98,17 +98,17 @@ To load the files as a virtual stack, go to "File > Import > Image Sequence ..."
 
 (Note that the number of slices in the directory (34) was automatically set.)  You should now be able to browse through the stack:
 
-[[Image:Diadem_Cerebellar-2.png]]
+[[Image:Diadem_Cerebellar-2.png|750px]]
 
 After loading this you need to convert this to 8-bit.  You can do this in any number of ways, and if you're actively working on a tracing task with this data you will probably want to do this in such a way that picks out tha brown coloured neuronal processes.  However, a simple way just for viewing purposes is to use the "Image > Color > RGB to Luminance" option.  This will produce results like this:
 
-[[Image:Diadem_Cerebellar-3.png]]
+[[Image:Diadem_Cerebellar-3.png|750px]]
 
 You can close the original virtual stack now.
 
 It is a good idea to invert this image, since the 3D Viewer will make the low values of the image more transparent, and Simple Neurite Tracer assumes that neurons are brighter than their background.  So, go to "Edit > Invert" and select "Yes" in response to the question about whether to process all 34 images.  The results should look like this:
 
-[[Image:Diadem_Cerebellar-4.png]]
+[[Image:Diadem_Cerebellar-4.png|750px]]
 
 Before saving this out as a single 862MB stack, it is a good idea to correct the calibration of the image.  The [http://www.diademchallenge.org/cerebellar_climbing_fibers_readme.html data set web page] tells us that the separation between slices is 8.08 pixels.  So, if you bring up the "Image > Properties" dialog, then you can correct the voxel depth to be 8.08 times the pixel width:
 
@@ -130,7 +130,7 @@ Now, to load the traces click on "Load Traces / SWC File" and select CF_1.swc.  
 
 Make sure that "Ignore calibration" is selected (as in that screenshot) and that there is no offset or scale set.  Once loaded you should be able to see the traces as here:
 
-[[Image:Diadem_Cerebellar-8.png]]
+[[Image:Diadem_Cerebellar-8.png|750px]]
 
 == Hippocampal CA3 Interneuron ==
 
