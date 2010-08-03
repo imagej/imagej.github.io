@@ -1,0 +1,7 @@
+Nowadays, most Apple computers contain an Intel CPU and current versions of MacOSX are no longer available for PowerPC-based Apple computers. Nevertheless, we got one (and only one) request to put back the support for PowerPC Macs.
+
+For the time being, we will support them, even if you cannot get Java 1.6 (with its incredible enhancements in performance) for such computers.
+
+If you are interested, please read the section labeled ''Limited PowerPC (G4/G5) Mac support'' in the [[MacOSX tips]]; It includes a link where you can download the ''.dmg'' file.
+
+[[Category:News]]
