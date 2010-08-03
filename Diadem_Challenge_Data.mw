@@ -20,7 +20,7 @@ Unfortunately these TIFF files do not have the separation of these slices encode
 
 Now start the tracing plugin by going to "Plugins > Segmentation > Simple Neurite Tracer".  If you keep the default options, you should see a display like this:
 
-[[Image:Diadem_Challenge_Data-6.png]]
+[[Image:Diadem_Challenge_Data-6.png|750px]]
 
 To load the SWC file with the supplied traces, click on "Load Traces / SWC File" and navigate to OP_1.swc.  When you have selected this file, you will see the following options dialog:
 
@@ -28,11 +28,11 @@ To load the SWC file with the supplied traces, click on "Load Traces / SWC File"
 
 The important setting here is that you should have the "Ignore calibration" option selected.  You should not apply an offset or scale for this data set.  When you click OK you should see that the traces are overlayed in the stack window and in the 3D viewer:
 
-[[Image:Diadem_Challenge_Data-8.png]]
+[[Image:Diadem_Challenge_Data-8.png|750px]]
 
 You may wish at this point to adjust the viewing options in the tracer's dialog to examine the tracings in detail:
 
-[[Image:Diadem_Challenge_Data-9.png]]
+[[Image:Diadem_Challenge_Data-9.png|750px]]
 
 
 
