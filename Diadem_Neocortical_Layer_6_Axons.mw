@@ -42,7 +42,7 @@ Now you should save the stitched stack, and work from that from now on.  (Since 
 
 To load the SWC files, start up the tracer with "Plugins > Segmentation > Simple Neurite Tracer".  You should see something like this after it has started, with the stack rendered in the 3D Viewer:
 
-[[Image:Diadem_Neocortical_Layer_6_Axons-4.png]]
+[[Image:Diadem_Neocortical_Layer_6_Axons-4.png|750px]]
 
 You might have noticed that the offsets used in stitching above had some negative Y and Z values.  This means that when you load in the SWC files, you will need to apply an offset to compensate for this.  (0,0,0) in the stitched image will be at (0,-14,-21) in the space of the tracings, so when you click on "Import traces / SWC file" and have chosen (for example) NC_14.swc, you should expand the "Apply offset to SWC file co-ordinates" option and fill in these values:
 
