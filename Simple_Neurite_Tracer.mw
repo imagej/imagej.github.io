@@ -28,6 +28,7 @@ On the right, the ongoing tracing is shown in the context of the 3D volume view 
 == Tutorials ==
 
 * [[Simple_Neurite_Tracer:_Sholl_analysis]]
+* A guide to loading the [[Diadem Challenge Data]]
 
 [[Category:Plugins]]
 [[Category:Segmentation]]
