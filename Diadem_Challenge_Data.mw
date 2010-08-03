@@ -1,0 +1,41 @@
+== Diadem Challenge Data ==
+
+This page describes how to visualize the various data sets provided as part of the [http://www.diademchallenge.org/ Diadem Challenge] in Fiji, and in particular viewing the traced neurons with [[Simple Neurite Tracer]].
+
+=== Olfactory Project Neurons ===
+
+This data set [http://www.diademchallenge.org/olfactory_projection_fibers_readme.html is described here].  I will go through loading the example "OP_1".  Each image stack in this data set is distributed as a directory of TIFF files, one per slice.  To load such a stack, go to "File > Import > Image Sequence" and select the file "1.tif".  You should be shown a dialog like this:
+
+[[Image:Diadem_Challenge_Data-1.png]]
+
+These default options should be fine - as you can see from the dialog it will have worked out that there are 60 image slices in that directory to be imported.  If you click OK you should get a normal image stack:
+
+[[Image:Diadem_Challenge_Data-2.png]]
+
+Unfortunately these TIFF files do not have the separation of these slices encoded correctly, so you should correct this manually.  If you go to "Image > Properties" you will see that the pixel width, pixel height and voxel depth are all set to the same value (0.3296485).  The [http://www.diademchallenge.org/olfactory_projection_fibers_readme.html page with information about the data set] tells us that the z-separation should be three times the x and y separation, so correct the voxel depth to 3 times 0.3296485, like this:
+
+[[Image:Diadem_Challenge_Data-4.png]]
+
+... and then press "OK".  To save yourself from having to re-enter this calibration information, and to be able to open the stack from the "Recent Files" menu, etc. I think it's helpful to now save this stack as a single TIFF.  So, I would go to "File > Save As > Tiff ..." and save this as OP_1.tif in the directory above the one with individual slices.
+
+Now start the tracing plugin by going to "Plugins > Segmentation > Simple Neurite Tracer".  If you keep the default options, you should see a display like this:
+
+[[Image:Diadem_Challenge_Data-6.png]]
+
+To load the SWC file with the supplied traces, click on "Load Traces / SWC File" and navigate to OP_1.swc.  When you have selected this file, you will see the following options dialog:
+
+[[Image:Diadem_Challenge_Data-7.png]]
+
+The important setting here is that you should have the "Ignore calibration" option selected.  You should not apply an offset or scale for this data set.  When you click OK you should see that the traces are overlayed in the stack window and in the 3D viewer:
+
+[[Image:Diadem_Challenge_Data-8.png]]
+
+You may wish at this point to adjust the viewing options in the tracer's dialog to examine the tracings in detail:
+
+[[Image:Diadem_Challenge_Data-9.png]]
+
+
+
+
+
+[[Category:Tutorials]]
