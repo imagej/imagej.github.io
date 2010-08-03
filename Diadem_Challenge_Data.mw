@@ -2,6 +2,8 @@
 
 This page describes how to visualize the various data sets provided as part of the [http://www.diademchallenge.org/ Diadem Challenge] in Fiji, and in particular viewing the traced neurons with [[Simple Neurite Tracer]].
 
+__TOC__
+
 === Olfactory Project Neurons ===
 
 This data set [http://www.diademchallenge.org/olfactory_projection_fibers_readme.html is described here].  I will go through loading the example "OP_1".  Each image stack in this data set is distributed as a directory of TIFF files, one per slice.  To load such a stack, go to "File > Import > Image Sequence" and select the file "1.tif".  You should be shown a dialog like this:
