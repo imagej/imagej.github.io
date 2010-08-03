@@ -118,7 +118,7 @@ Now save this as a single TIFF stack called CF_1.tif by going to "File > Save As
 
 You can now start the tracer with Plugins > Segmentation > Simple Neurite Tracer.  This may take some time, since there is a lot of data to load in to the 3D viewer.  The result should look like this:
 
-[[Image:Diadem_Cerebellar-6.png]]
+[[Image:Diadem_Cerebellar-6.png|750px]]
 
 You may wish to adjust the transparency in the 3D viewer by selecting the image volume (left click on the image in the 3D viewer) and then going to "Edit > Attributes > Change Transparency...":
 
