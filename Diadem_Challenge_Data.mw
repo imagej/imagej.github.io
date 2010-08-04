@@ -174,7 +174,7 @@ Then you can load the SWC files via "Load Traces / SWC file" with these options:
 
 == Neuromuscular Projection Fibers ==
 
-There are also a number of caveats regarding the image data and the reconstructions that make up this data set which are [http://www.diademchallenge.org/neuromuscular_projection_fibers_readme.html listed on it's web page].
+There are a number of caveats regarding these image data and reconstructions which are [http://www.diademchallenge.org/neuromuscular_projection_fibers_readme.html listed on its web page].
 
 These 152 image stacks are in total so large that stitching them together and dealing with the stitched stack is not likely to be helpful.  Instead, I would suggest that you just stitch together those images that you need to cover a particular SWC file.  Since there are so many input stacks, I've written a clojure script for Fiji to help process these, which you can [http://gist.github.com/508411 view and download via github].  On running this script you will be asked to select a directory - you should select the directory that contains all of your unpacked image stack directories (probably called "000", "001", etc.)  For each of these directories it will then:
 * Import the sequence of slices
@@ -183,6 +183,8 @@ These 152 image stacks are in total so large that stitching them together and de
 Finally, the script will output a TileConfiguration.txt file in the same directory.  Supposing one had vast amounts of RAM, this file could be used unaltered with "Plugins > Stitching > Stitch Collection of Images", as above.  However, the file is still useful even with modest amounts of RAM, since you can copy this file to a new name and edit out all but a few of the images that are listed there.  For example, here are image stacks 000 to 007 stitched together:
 
 [[Image:Neuromuscular-0-7-stitched.png|750px]]
+
+That script may be useful as a basis for a smarter selection of images to stitch for particular reconstructions.
 
 You should then be able to adjust the SWC import options in order to import the reconstructions in the correct positions - you will need to understand the translations described for the reconstructions  [http://www.diademchallenge.org/neuromuscular_projection_fibers_readme.html on the web page] in order to get this right.  (I haven't had time to do this accurately myself yet.)
 
