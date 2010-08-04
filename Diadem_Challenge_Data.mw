@@ -134,8 +134,6 @@ Make sure that "Ignore calibration" is selected (as in that screenshot) and that
 
 == Hippocampal CA3 Interneuron ==
 
-== Diadem Hippocampal CA3 Interneuron ==
-
 The [http://www.diademchallenge.org/hippocampal_ca3_Interneuron_readme.html Hippocampal CA3 Interneuron] data set is difficult to deal with, since even after converting the stack to 8-bit values, it is still nearly 2GB in size.
 
 As with the other stacks, you should load the image stack using "Import > Image Sequence" and selecting the "Use virtual stack" option:
