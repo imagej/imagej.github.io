@@ -1,4 +1,6 @@
-This page describes how to visualize the various data sets provided as part of the [http://www.diademchallenge.org/ Diadem Challenge] in Fiji, and in particular viewing the traced neurons with [[Simple Neurite Tracer]].
+This page describes how to visualize the various data sets provided as part of the [http://www.diademchallenge.org/ Diadem Challenge] in Fiji, and in particular viewing the traced neurons with [[Simple Neurite Tracer]].  The most important point about this is that the SWC files distributed as part of the challenge all use co-ordinates that are image-coordinates rather than world co-ordinates.  (This is not how I interpret [http://dx.doi.org/10.1016/S0165-0270(98)00091-0 the paper that describes the SWC format], but that's rather beside the point.)  This means that you should always select the "ignore image calibration" option when importing the SWC file into Simple Neurite Tracer.  The other key point is that the image data are distributed with each slice in a separate TIFF file without specifying the slice separation in those files.  So, after importing the sequence you will need to correct the calibration according to information on the Diadem challenge website or they will look odd when rendered in 3D.  I describe these steps in more detail below.
+
+If you have any comments or suggestions relating to this page,  please email <em>mark-diadem</em> at <em>longair</em> dot <em>net</em>.
 
 __TOC__
 
@@ -172,6 +174,16 @@ Then you can load the SWC files via "Load Traces / SWC file" with these options:
 
 == Neuromuscular Projection Fibers ==
 
-FIXME: do a tutorial for this data set
+There are also a number of caveats regarding the image data and the reconstructions that make up this data set which are [http://www.diademchallenge.org/neuromuscular_projection_fibers_readme.html listed on it's web page].
+
+These 152 image stacks are in total so large that stitching them together and dealing with the stitched stack is not likely to be helpful.  Instead, I would suggest that you just stitch together those images that you need to cover a particular SWC file.  Since there are so many input stacks, I've written a clojure script for Fiji to help process these, which you can [http://gist.github.com/508411 view and download via github].  On running this script you will be asked to select a directory - you should select the directory that contains all of your unpacked image stack directories (probably called "000", "001", etc.)  For each of these directories it will then:
+* Import the sequence of slices
+* Correct the calibration so that the voxel depth is 3.04 times the pixel width
+* Write out each stack as a single TIFF stack (e.g. as well as the directory "000" you will also have "000.tif"
+Finally, the script will output a TileConfiguration.txt file in the same directory.  Supposing one had vast amounts of RAM, this file could be used unaltered with "Plugins > Stitching > Stitch Collection of Images", as above.  However, the file is still useful even with modest amounts of RAM, since you can copy this file to a new name and edit out all but a few of the images that are listed there.  For example, here are image stacks 000 to 007 stitched together:
+
+[[Image:Neuromuscular-0-7-stitched.png|750px]]
+
+You should then be able to adjust the SWC import options in order to import the reconstructions in the correct positions - you will need to understand the translations described for the reconstructions  [http://www.diademchallenge.org/neuromuscular_projection_fibers_readme.html on the web page] in order to get this right.  (I haven't had time to do this accurately myself yet.)
 
 [[Category:Tutorials]]
