@@ -133,3 +133,13 @@ Use the ''d2s()'' method of the ''ij.IJ'' class:
 <source lang="java">
 String message = "The current temperature is " + IJ.d2s(degrees, 1) + "° Celsius";
 </source>
+
+== How to abort a plugin completely ==
+
+Sometimes, you want to abort a plugin without catching an exception at the highest level(s), without having ImageJ show an exception window. You can do that:
+
+<source lang="java">
+throw new RuntimeException(Macro.MACRO_CANCELED);
+</source>
+
+The special message ''Macro.MACRO_CANCELED'' will tell ImageJ not to show the exception message and stack trace in a text window.
