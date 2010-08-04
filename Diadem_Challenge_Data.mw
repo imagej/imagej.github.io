@@ -134,7 +134,43 @@ Make sure that "Ignore calibration" is selected (as in that screenshot) and that
 
 == Hippocampal CA3 Interneuron ==
 
-FIXME: do a tutorial for this data set
+== Diadem Hippocampal CA3 Interneuron ==
+
+The [http://www.diademchallenge.org/hippocampal_ca3_Interneuron_readme.html Hippocampal CA3 Interneuron] data set is difficult to deal with, since even after converting the stack to 8-bit values, it is still nearly 2GB in size.
+
+As with the other stacks, you should load the image stack using "Import > Image Sequence" and selecting the "Use virtual stack" option:
+
+[[Image:Diadem_Hippocampal_CA3_Interneuron-2.png]]
+
+That should load in the image data:
+
+[[Image:Diadem_Hippocampal_CA3_Interneuron-3.png|750px]]
+
+Now convert it to 8-bit with "Image > Type > 8-bit".  (The same comments as above regarding converting to 8-bit apply here as well.)
+
+[[Image:Diadem_Hippocampal_CA3_Interneuron-4.png|750px]]
+
+... and invert the image with "Edit > Invert", saying "Yes" to the question about whether to process all 110 slices:
+
+[[Image:Diadem_Hippocampal_CA3_Interneuron-5.png|750px]]
+
+Now set the voxel depth to 1.52 times the voxel width, as specified on the [http://www.diademchallenge.org/hippocampal_ca3_Interneuron_readme.html data set page]:
+
+[[Image:Diadem_Hippocampal_CA3_Interneuron-6.png]]
+
+And then I would save this file as a TIFF stack (with "Save As > Tiff...") so that you don't have to go through these steps again.  That will need about 2GB of disk space, and will only work if your filesystem supports single files of that size.
+
+If you now start "Plugins > Segmentation > Simple Neurite Tracer" with its default options you should (eventually!) see something like the following:
+
+[[Image:Diadem_Hippocampal_CA3_Interneuron-7.png|750px]]
+
+Then you can load the SWC files via "Load Traces / SWC file" with these options:
+
+[[Image:Diadem_Hippocampal_CA3_Interneuron-8.png]]
+
+(I've unchecked "Replace existing paths" for this data set, since it's nice to load several SWC files into the tracer at once.)  The results of loading three of the reconstructions, for example, might look like this:
+
+[[Image:Diadem_Hippocampal_CA3_Interneuron-9.png|750px]]
 
 == Neuromuscular Projection Fibers ==
 
