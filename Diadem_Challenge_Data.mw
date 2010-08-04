@@ -100,7 +100,7 @@ To load the files as a virtual stack, go to "File > Import > Image Sequence ..."
 
 [[Image:Diadem_Cerebellar-2.png|750px]]
 
-After loading this you need to convert this to 8-bit.  You can do this in any number of ways, and if you're actively working on a tracing task with this data you will probably want to do this in such a way that picks out tha brown coloured neuronal processes.  However, a simple way just for viewing purposes is to use the "Image > Color > RGB to Luminance" option.  This will produce results like this:
+After loading this you need to convert this to 8-bit.  You can do this in any number of ways, and if you're actively working on a tracing task with this data you will probably want to do this in such a way that picks out the brown coloured neuronal processes.  However, a simple way just for viewing purposes is to use the "Image > Color > RGB to Luminance" option.  (Another option is to use "Image > Type > 8-bit".)  This will produce results like this:
 
 [[Image:Diadem_Cerebellar-3.png|750px]]
 
