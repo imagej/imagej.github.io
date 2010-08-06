@@ -3,7 +3,7 @@
 | name                   = Simple Neurite Tracer
 | author                 = Mark Longair [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/#authors and others]
 | maintainer             = Mark Longair
-| filename               = VIB_.jar
+| filename               = Simple_Neurite_Tracer.jar
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=VIB.git;a=blob;f=tracing/Simple_Neurite_Tracer.java;hb=HEAD on gitweb]
 | status                 = stable
 }}
