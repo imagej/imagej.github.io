@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | name                   = 3D Viewer
 | software               = ImageJ
-| author                 = Benjamin Schmid, Albert Cardona, Johannes Schindelin
+| author                 = Benjamin Schmid, Albert Cardona, Mark Longair, Johannes Schindelin
 | maintainer             = Benjamin Schmid
 | filename               = [http://132.187.25.13/home/imagej/ImageJ_3D_Viewer.jar]
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/3D_Viewer;hb=master Fiji's gitweb]
