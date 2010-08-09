@@ -12,17 +12,18 @@ If you are on MacOSX, most likely you did not update in some time, and you were 
 
 == The Updater always says ''Connection refused''. Maybe it does not use the proxy? ==
 
-Indeed, Java does not have a way to access your browser's settings, so you have to tell it about the proxy yourself. There is no convenient way to enter the proxy settings yet, but here is a workaround:
+Indeed, an earlier version of the Updater does not use your system-wide network proxy settings. This is fixed in the meantime, but you will have to set the proxy manually once, and run the updater with these settings to update itself:
 
 * open the [[Script Editor]] with ''File>New>Script''
 * set the language to ''Beanshell'' in the ''Language'' menu of the editor
 * paste the following code (and adjust it to match your settings):
 <source lang="java">
-System.setProperty("http.proxyHost", "my.proxy.server.com");
-System.setProperty("http.proxyPort", "80");
+import ij.IJ;
+
+System.setProperty("java.net.useSystemProxies", "true");
+IJ.run("Update Fiji");
 </source>
 * run the script via the ''Run'' menu
-* start the updater again
 
 = Development =
 
