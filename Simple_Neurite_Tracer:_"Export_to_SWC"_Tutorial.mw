@@ -24,6 +24,6 @@ The SWC file format describes a single neuron's morphology (so every point is co
 
 * At the moment there is no way to specify the type of each point in this plugin, so in the SWC file each point will have the type UNDEFINED, as opposed to SOMA, AXON, DENDRITE, APICAL_DENDRITE etc.  Let me know if you require this facility.
 
-* The root node in an exported SWC file will be the first point in the primary path of the group in Simple Neurite Tracer.  So, if you care about this, then before saving you should pick the path in the group which starts with what you think of as the root node, and click "Make Primary" in the Path Window before exporting.
+* The root node in an exported SWC file will be the first point in the primary path of the group in Simple Neurite Tracer.  So, if you care about this, then before saving you should pick the path in the group which starts with what you consider to be the root node, and click "Make Primary" in the Path Window before exporting.
 
 [[Category:Tutorials]]
