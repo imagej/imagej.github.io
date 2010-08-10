@@ -1,6 +1,6 @@
 This short tutorial shows you how to export a connected set of paths in the [[Simple Neurite Tracer]] plugin to an SWC file.  Suppose we have a partially traced image like this:
 
-[[Image:Simple_Neurite_Tracer_"Export_to_SWC"_Tutorial-1.png]]
+[[Image:Simple_Neurite_Tracer_"Export_to_SWC"_Tutorial-1.png|750px]]
 
 Those are actually three disconnected groups of paths, as you can see from the path list:
 
