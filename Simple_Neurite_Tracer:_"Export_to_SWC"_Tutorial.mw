@@ -18,7 +18,7 @@ The SWC file format describes a single neuron's morphology (so every point is co
 
 === Further Notes ===
 
-* You should only export your tracings to SWC for analysis in other tools, or or for uploading to databases that require that format.  The SWC format is very simple and you will lose a lot of information if you don't save your tracings in the plugin's native format.
+* You should only export your tracings to SWC for analysis in other tools, or or for uploading to databases that require that format.  The SWC format is very simple and you lose a lot of information if you don't save your tracings in the plugin's native format.
 
 * At the moment there is no way to specify the type of each point in this plugin, so in the SWC file each point will have the type UNDEFINED, as opposed to SOMA, AXON, DENDRITE, APICAL_DENDRITE etc.  Let me know if you require this facility.
 
