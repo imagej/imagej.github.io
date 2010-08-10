@@ -1,4 +1,6 @@
-This short tutorial shows you how to export a connected set of paths in the [[Simple Neurite Tracer]] plugin to an SWC file.  Suppose we have a partially traced image like this:
+This short tutorial shows you how to export a connected set of paths in the [[Simple Neurite Tracer]] plugin to an SWC file.  This may be useful for analyzing a structure in other tools (e.g. [http://cng.gmu.edu:8080/Lm/ L-measure]) or uploading to a database like [http://neuromorpho.org/ NeuroMorpho.org].
+
+To go through an example, suppose we have a partially traced image like this:
 
 [[Image:Simple_Neurite_Tracer_"Export_to_SWC"_Tutorial-1.png|750px]]
 
