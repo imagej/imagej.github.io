@@ -1,5 +1,3 @@
-== Simple Neurite Tracer: "Export to SWC" Tutorial ==
-
 This short tutorial shows you how to export a connected set of paths in the [[Simple Neurite Tracer]] plugin to an SWC file.  Suppose we have a partially traced image like this:
 
 [[Image:Simple_Neurite_Tracer_"Export_to_SWC"_Tutorial-1.png]]
