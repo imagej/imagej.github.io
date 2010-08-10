@@ -27,8 +27,9 @@ On the right, the ongoing tracing is shown in the context of the 3D volume view 
 
 == Tutorials ==
 
-* [[Simple_Neurite_Tracer:_Sholl_analysis]]
+* [[Simple Neurite Tracer: Sholl analysis]]
 * A guide to loading the [[Diadem Challenge Data]]
+* [[Simple Neurite Tracer: "Export to SWC" Tutorial]]
 
 [[Category:Plugins]]
 [[Category:Segmentation]]
