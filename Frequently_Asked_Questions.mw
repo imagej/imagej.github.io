@@ -27,6 +27,18 @@ IJ.run("Update Fiji");
 </source>
 * run the script via the ''Run'' menu
 
+= [[3D Viewer]] =
+
+== The 3D Viewer opens a window saying ''An unexpected exception occurred.'' ==
+
+If in the same window, it also says:
+
+ java.lang.NullPointerException:Canvas3D: null GraphicsConfiguration
+
+the reason is most likely that your graphics setup does not have any hardware 3D acceleration. This can happen e.g. when you run Fiji via a remote X11 connection (3D acceleration works only when the graphics are displayed on the same machine as the program runs).
+
+Unfortunately, there is not workaround/fix for this situation yet, except to use Fiji locally when you want to use the 3D Viewer.
+
 = Development =
 
 == How can I build Fiji myself? ==
