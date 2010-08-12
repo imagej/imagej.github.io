@@ -6,9 +6,9 @@
 | software               = Fiji
 | author                  = [[User:Saalfeld|Stephan Saalfeld]] ([mailto:saalfeld@mpi-cbg.de])
 | maintainer             = [[User:Saalfeld|Stephan Saalfeld]]
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/ij/CLAHE.java] (356 lines)
+| source                 = [http://fly.mpi-cbg.de/saalfeld/download/clahe_.jar]
 | released               = November 13<sup>th</sup>, 2009
-| latest version         = November 16<sup>th</sup>, 2009
+| latest version         = August 12<sup>th</sup>, 2010
 | status                 = stable, active
 | category               = [[:Category:Plugins|Plugins]], [[:Category:Filtering|Filtering]]
 }}
@@ -22,7 +22,7 @@ The plugin '''Enhance Local Contrast (CLAHE)''' implements the method ''[http://
  | address = San Diego, CA, USA
  | year = 1994
  | url = http://portal.acm.org/citation.cfm?id=180940 }} </ref>
-for enhancing the local contrast of an image.  In Fiji, it is called through the menu entry '''Process / Enhance Local Contrast (CLAHE)'''.
+for enhancing the local contrast of an image.  In Fiji, it is called through the menu entry '''Process / Enhance Local Contrast (CLAHE)'''.  The filter respects the selected regions of interest and triggers an Undo-step.
 
 The method has three parameters:
 ;block size
@@ -31,6 +31,12 @@ The method has three parameters:
 :the number of histogram bins used for histogram equalization.  The implementation internally works with byte resolution, so values larger than 256 are not meaningful.  This value also limits the quantification of the output when processing 8bit gray or 24bit RGB images.  The number of histogram bins should be smaller than the number of pixels in a block.
 ;max slope
 :limits the contrast stretch in the intensity transfer function.  Very large values will let the histogram equalization do whatever it wants to do, that is result in maximal local contrast.  The value 1 will result in the original image.
+
+In addition, the PlugIn asks for:
+;mask
+:choose, from the currently opened images, one that should be used as a mask for the filter application.  Selections and masks can be used exclusively or in combination.
+;fast
+:use the fast but less accurate version of the filter.  The fast version does not evaluate the intensity transfer function for each pixel independently but for a grid of adjacent boxes of the given '''block size''' only and interpolates for locations in between.
 
 [[Image:Photo1.jpg|thumb|left|361px|Photo1 original image]]
 [[Image:Photo1-clahe-150-256-3.jpg|thumb|right|361px|Photo1 CLAHE processed, (block: 150; bins: 256; max slope: 3)]]
