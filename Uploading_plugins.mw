@@ -17,6 +17,8 @@ Please make sure that there are <u>no</u> updateable files, lest you overwrite n
 
 Please make sure that the information in the ''Details'' is correct; you can edit it by clicking into the text and modifying it in-place.
 
+Please make sure also that the files you are about to upload are clean. You should also use the ''Show changes'' button for an extra check -- in the top part, you will see information about changed and local-only/remote-only contents of the ''.jar'' file.
+
 Once everything is ready for upload, just click the button ''Upload to Server''.
 
 '''Note:''' you will need to have an account on [[Pacific]] which is in the group ''updaters'', and you will only be offered the upload option by the Updater if you work from a working directory with source files.
