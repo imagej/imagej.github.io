@@ -6,7 +6,7 @@
 | software               = Fiji
 | author                  = [[User:Saalfeld|Stephan Saalfeld]] ([mailto:saalfeld@mpi-cbg.de])
 | maintainer             = [[User:Saalfeld|Stephan Saalfeld]]
-| source                 = [http://fly.mpi-cbg.de/saalfeld/download/clahe_.jar]
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/clahe]
 | released               = November 13<sup>th</sup>, 2009
 | latest version         = August 12<sup>th</sup>, 2010
 | status                 = stable, active
