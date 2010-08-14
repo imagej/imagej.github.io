@@ -38,12 +38,8 @@ Check out all submodules that you want to work with e.g.
 
 <source lang="bash">
 cd ~/workspace/fiji
-git submodule init mpicbg
-git submodule update mpicbg
-git submodule init TrakEM2
-git submodule update TrakEM2
-git submodule init VIB
-git submodule update VIB
+git submodule update --init mpicbg
+git submodule update --init TrakEM2
 </source>
 
 Check out the master branch of each of these submodules
@@ -54,8 +50,6 @@ cd mpicbg
 git checkout master
 cd ../TrakEM2
 git checkout master
-cd ../VIB
-git checkout VIB   # yes, this is the master branch of VIB
 </source>
 
 
