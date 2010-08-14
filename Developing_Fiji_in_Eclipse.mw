@@ -137,7 +137,7 @@ Fiji can be launched conveniently from inside Eclipse.  For this purpose, create
 <dt>Main
 <dd>
 ;Project: fiji
-;Main class: ij.ImageJ
+;Main class: fiji.Main
 <dt>Arguments
 <dd>
 ;VM arguments: <nowiki>-Xms3000m -Xmx3000m -Dplugins.dir=${workspace_loc:fiji} -Dmacros.dir=${workspace_loc:fiji}</nowiki>
