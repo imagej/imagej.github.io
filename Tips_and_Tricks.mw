@@ -39,3 +39,7 @@ Double-click on the pipette, or hit Ctrl+Shift+K (on Macs, it is Cmd+Shift+K), o
 == Set the line width ==
 
 Line selections can have a width larger than one, which also has an effect on line profiles.  You can set it by double clicking on the line selection tool, or by calling ''Edit>Options>Line Width...''
+
+== Quickly copy a ROI from one image to another ==
+
+Simply activate the image with the desired ROI, then the image you want to put that ROI into, and hit ''Control+Shift+E''. This triggers the ''Edit>Selection>Restore Selection'' which "restores" the selection.
