@@ -91,6 +91,26 @@ Plot update = new Plot("Dummy", "x labels", "y labels", x_values, y_values);
 window.drawPlot(update);
 </source>
 
+To add another plot to the same window, use the ''addPoints()'' method:
+
+<source lang="java">
+plot.addPoints(float_array_of_x_values, float_array_of_y_values, Plot.LINE);
+</source>
+
+The plots can be drawn in different colors like this:
+
+<source lang="java">
+Plot plot = new Plot("The window title", "labels on the x-axis", "labels on the y-axis",
+    float_array_of_x_values, float_array_of_y_values);
+plot.setColor(Color.RED);
+plot.draw();
+plot.addPoints(float_array_of_x_values, another_float_array_of_y_values, Plot.LINE);
+plot.setColor(Color.BLUE);
+plot.draw();
+</source>
+
+You might need to adjust the bounding box if the second plot does not match the bounding box of the first one by using the ''setLimits()'' method before the call to ''plot.draw();''
+
 == Duplicate, or convert between, ''ImageProcessor'' types ==
 
 The ''ImageProcessor'' class has several useful methods: [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html#duplicate() duplicate()], [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html#convertToByte(boolean) convertToByte()], [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html#convertToFloat() convertToFloat()],
