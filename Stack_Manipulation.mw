@@ -135,7 +135,9 @@ By [mailto:tcollins_at_macbiophotonics.ca Tony Collins].
 '''Demontager''': This plugin by Robert Clements converts a montaged image to an image stack based on the number of rows and columns input by the user. This is the opposite of what the Image/Stacks/Make Montage command does.
 http://rsb.info.nih.gov/ij/plugins/demontager.html
 
-=== Slice_Remover ===
+=== Slice Remover ===
+
+This command lets you remove multiple slices in one go. You can specify a start slice, and end slice and an increment (i.e. start=1, end=5, increment=2 will remove the slices 1, 3 and 5). Warning: The Slice Remover treats hyperstacks as if they were converted via ''Image>Hyperstacks>Hyperstack to Stack'' first.
 
 Original code by Wayne Rasband.
 
