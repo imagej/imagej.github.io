@@ -1,0 +1,32 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Statistical Region Merging
+| maintainer             = [mailto:johannes.schindelin_at_gmx.de Johannes Schindelin]
+| author                 = Johannes Schindelin
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Statistical_Region_Merging/SRM_.java;hb=refs/heads/master in gitweb]
+| released               = 2009-03-31
+| latest version         = 2009-06-03
+| status                 = stable
+| category               = [[:Category:Plugins]]
+}}
+
+Statistical Region Merging<ref>{{cite journal|author=R. Nock, F. Nielsen|title=Statistical Region Merging|journal=IEEE Trans. Pattern Anal. Mach. Intell.|volume=26|number=11|pages=1452-1458|year=2004}}</ref> is a fast and robust algorithm to segment an image into regions of similar intensity or color.
+
+For the moment, the plugin handles only grayscale images:
+
+[[Image:Statistical_Region_Merging-Boats.jpg]]
+
+It asks for a value for ''Q'', which is a rough estimate of the number of regions in the image. You can also choose whether you want the regions to be marked by the mean gray value, or by the index of the region:
+
+[[Image:Statistical_Region_Merging-Dialog.jpg]]
+
+This is a result for a low value of ''Q'':
+
+[[Image:Statistical_Region_Merging-Result.jpg]]
+
+== References ==
+
+<references />
+
+[[Category:Tutorials]]
+[[Category:Plugins]]
