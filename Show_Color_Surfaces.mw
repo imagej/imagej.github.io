@@ -4,7 +4,7 @@
 | author                 = Mark Longair
 | maintainer             = Mark Longair
 | filename               = VIB_.jar
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=VIB.git;a=blob;f=isosurface/Show_Colour_Surfaces.java;hb=HEAD on gitweb]
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/3D_Viewer/isosurface/Show_Colour_Surfaces.java;hb=HEAD on gitweb]
 | status                 = stable
 }}
 
