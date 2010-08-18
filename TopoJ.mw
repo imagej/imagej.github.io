@@ -1,0 +1,38 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = TopoJ
+| maintainer             = David Hovis
+| author                 = David Hovis
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/TopoJ_/Compute_Topography.java;hb=refs/heads/master in gitweb]
+| released               = 18/08/2010
+| latest version         = 18/08/2010
+| status                 = stable
+| category               = [[:Category:Plugins]]
+}}
+
+The TopoJ plugins help you analyze surfaces of bright objects in image stacks. You can load an example via ''File>Open Samples>SinteredAlumina (2.6MB)'':
+
+[[Image:TopoJ-Sintered_Alumina.jpg]]
+
+To see the surface structure, use ''Plugins>3D Viewer'':
+
+[[Image:TopoJ-Volume_Rendering.jpg]]
+
+== Compute Topography ==
+
+To computer the Topography, call ''Analyze>TopoJ>Compute Topography'':
+
+[[Image:TopoJ-Dialog.jpg]]
+
+For the sample image, a window value of ''5'' is appropriate. The result looks like this:
+
+[[Image:TopoJ-Computed_Topography.jpg]]
+
+== Remove Slope ==
+
+To remove the overall slope of the surface, click on the ''Analyze>TopoJ>Remove Slope'' menu item:
+
+[[Image:TopoJ-Remove_Slope.jpg]]
+
+[[Category:Tutorials]]
+[[Category:Plugins]]
