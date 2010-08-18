@@ -1,0 +1,38 @@
+{{Infobox Plugin
+| name                   = Moving Least Squares registration
+| software               = ImageJ
+| author                 = [mailto:johannes.schindelin_at_gmx.de Johannes Schindelin]
+| maintainer             = Johannes Schindelin
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Stitching_;hb=HEAD on gitweb]
+| released               = 2006/10/05
+}}
+
+This plugin implements the algorithms described in <ref>{{cite journal|title=Image Deformation Using Moving Least Squares|author=Schaefer S.,  McPhail T., Warrent J.|journal=ACM Transactions on Graphics|volume=25|issue=3|month=July|year=2006|pages=533-540}}</ref> to deform an image given a set of landmarks.
+
+== Tutorial ==
+Load the original and choose the landmarks:
+
+[[Image:MLS-orig.jpg]]
+
+By clicking on the menu entry ''Edit>Selection>Add to Manager'' add this landmark set to the ROI Manager:
+
+[[Image:MLS-roi-manager.jpg]]
+
+Duplicate the image (''Image>Duplicate...''), click on the selection in the ROI manager and move the landmarks to their target location:
+
+[[Image:MLS-new1.jpg]]
+
+Now, run the plugin:
+
+[[Image:MLS-dialog.jpg]]
+
+And you get the result:
+
+[[Image:MLS-new2.jpg]]
+
+== References ==
+
+<references />
+
+[[Category:Tutorials]]
+[[Category:Plugins]]
