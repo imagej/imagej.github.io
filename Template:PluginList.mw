@@ -72,11 +72,12 @@
 
 === Plugins > Utilities ===
 
-* [[Record Window]] - file <tt>Jython.Refresh_Jython_Scripts("../scripts/Record_Window.py")</tt>  -- ''java jar file''
 * [[IJ Robot]] - file <tt>IJ_Robot</tt>  -- ''java jar file''
-* [[Record Desktop]] - file <tt>Jython.Refresh_Jython_Scripts("../scripts/Record_Desktop.py")</tt>  -- ''java jar file''
 * [[Repeat a Recent Command]] - file <tt>fiji.util.Recent_Commands</tt>  -- ''java jar file''
+* [[Record Desktop]] - file <tt>Jython.Refresh_Jython_Scripts("../scripts/Record_Desktop.py")</tt>  -- ''java jar file''
 * [[Collect Garbage]] - file <tt>CollectGarbage_</tt>  -- ''java jar file''
+* [[Record Window]] - file <tt>Jython.Refresh_Jython_Scripts("../scripts/Record_Window.py")</tt>  -- ''java jar file''
+* [[CPU Meter]] - file <tt>CPU_Meter</tt>  -- ''java jar file''
 * [[Close All Without Saving]] - file <tt>Close_All_Without_Saving.txt</tt>  -- ''macro''
 * [[Thread killer]] - file <tt>Thread_Killer</tt>  -- ''java jar file''
 
@@ -365,6 +366,13 @@
 
 
 
+=== Analyze > TopoJ ===
+
+* [[Compute Topography]] - file <tt>Compute_Topography</tt>  -- ''java jar file''
+* [[Remove Slope]] - file <tt>Remove_Slope</tt>  -- ''java jar file''
+
+
+
 
 
 
@@ -443,6 +451,7 @@
 
 === File > Open Samples ===
 
+* [[Sintered Alumina (2.6MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/Sintered_Alumina.tif.zip")</tt>  -- ''java jar file''
 * [[Malaria Sporozoites (9.2MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/_malaria_parasites.tif")</tt>  -- ''java jar file''
 
 
