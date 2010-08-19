@@ -57,6 +57,32 @@ might want to be resolved to
 
 So you definitely need to think carefully about the resolution!
 
+=== Repository configuration conflicts ===
+
+There are several files that git uses for storing information about the repository configuration (e.g. ".gitignore"). Of cause, conflicts can occur between diverging versions of those files, too. A repository can be configured to have submodules and information about submodules is kept in the index -- a binary file and a textual comparison would not make sense here. In that case git will tell you (example: submodule ImageJA):
+
+ Auto-merging ImageJA
+ CONFLICT (submodule): Merge conflict in ImageJA
+
+Submodule information consists besides others of a specific commit name in the target repository. So a conflict occurs if one branch has a diverging submodule history from the other. You can see that by calling ''git diff'', e.g.:
+
+ diff --cc ImageJA
+ index 6335c9b,d245d31..0000000
+ --- a/ImageJA
+ +++ b/ImageJA
+ @@@ -1,1 -1,1 +1,1 @@@
+ - Subproject commit 6335c9b0b39aa96001b5f9be665aabe3c854bae6
+  -Subproject commit d245d31d53e1f85264113c99609b8379eaee38ee
+ ++Subproject commit 7bbce1e02aa3ba1971533441e9a50c75764c8e92
+
+To resolve this (to decide for one commit of the two) you should ''checkout'' the correct version. If you want to use ''their'' version type:
+
+ git checkout --theirs ImageJA
+
+for your version, respectively:
+
+ git checkout --ours ImageJA
+
 == Committing the resolution ==
 
 After you resolved all the conflicts (if in doubt, where the conflicts are, just call ''git diff''), add the resolved file contents:
