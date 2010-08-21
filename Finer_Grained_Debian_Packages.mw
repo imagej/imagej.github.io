@@ -9,7 +9,18 @@ At the March 2010 Hackathon, I made lots of changes to the old package building 
 
 Since then, one our Google Summer of Code students, Yap Chin Kiet, and Johannes Schindelin worked on inferring dependencies between the jar and class files created in Fiji for the Fiji Updater, so we can reuse this code to infer package based dependencies.
 
-The improved system (which is half complete at the moment) should work in the following way:
+The improved system (which is half complete at the moment) should as described below.
+
+<b>WARNING: this build process will delete files from your git repository, remove submodules with "rm -rf" and take various other steps that you don't want to happen in your working repository.  You need a good reason to take these steps - if you just want to rebuild the Debian packages, then "apt-get source fiji" is your friend - don't follow these steps.</b>
+
+=== Short Version ===
+
+Mostly as a reminder to myself, the quick way to build new packages is:
+
+* Clone a new fiji.git, initialize and update the right submodules [FIXME: document this]
+* Run <tt>debian/complete-build</tt>.  If anything doesn't work, then you can retry the build with <tt>debian/build-command</tt>.  Before retrying <tt>debian/complete-build</tt>, make sure that you've committed your changes, since afterwards you'll need to run <tt>git reset --hard</tt> to clean the tree so that <tt>debian/complete-build</tt> is happy to try again.
+* Assuming that you're building on an amd64 machine, run <tt>debian/build-in-i386-chroot</tt> to build the i386 packages.
+* Upload the new versions of both the amd64 and i386 packages with <tt>debian/upload-to-pacific</tt>.
 
 (Instead of doing these step-by-step, you may want to run the convenience script <tt>debian/complete-build</tt> after doing the fresh clone.)
 
