@@ -45,7 +45,7 @@ Clone the respository afresh with:
             mpicbg \
             tcljava
 
-=== Check that git  ===
+=== Check that git status is clean ===
 
 This shouldn't be necessary if you've just cloned a new copy, as above, but in other situations it might be useful:
 
