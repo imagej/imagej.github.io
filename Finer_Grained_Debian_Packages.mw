@@ -18,7 +18,7 @@ The relevant lines for /etc/apt/sources.list, if you don't mind trying the exper
 <nowiki>
     deb http://pacific.mpi-cbg.de/downloads/apt-experimental/ ./
     deb-src http://pacific.mpi-cbg.de/downloads/apt-experimental/ ./
-<nowiki>
+</nowiki>
 
 The packages are targetting Ubuntu 10.04 (Lucid Lynx) and Debian testing (squeeze) later than August 2010.
 
