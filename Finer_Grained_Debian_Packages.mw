@@ -13,6 +13,13 @@ The improved system is described below.
 
 <b>WARNING: this build process will delete files from your git repository, remove submodules with "rm -rf" and take various other steps that you don't want to happen in your working repository.  You need a good reason to take these steps - if you just want to rebuild the Debian packages, then "apt-get source fiji" is your friend - don't follow these steps.</b>
 
+The relevant lines for /etc/apt/sources.list, if you don't mind trying the experimental versions of these packages, are:
+
+    deb http://pacific.mpi-cbg.de/downloads/apt-experimental/ ./
+    deb-src http://pacific.mpi-cbg.de/downloads/apt-experimental/ ./
+
+The packages are targetting Ubuntu 10.04 (Lucid Lynx) and Debian testing (squeeze) later than August 2010.
+
 == Short Version ==
 
 Mostly as a reminder to myself, the quick way to build new packages is:
