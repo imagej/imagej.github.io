@@ -1,0 +1,50 @@
+{{Infobox Plugin
+| name                   = Graph Cut Plugin
+| software               = Fiji
+| author                 = [[User:Funke| Jan Funke]]
+| maintainer             = Jan Funke
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;h=ca3b934b5aa3242408a5772a21a2efa73bfbf837;hb=HEAD on git web]
+| released               = August 24<sup>th</sup>, 2010
+| status                 = experimental
+| category               = [[:Category:Segmentation|Segmentation]]
+}}
+
+[[Image:mito-sample.png|350px]]
+
+== General ==
+
+The Graph Cut plugin provides a way to obtain a globally smooth binary segmentation. As input, you have to provide a gray-scale image that represents the pixel affinities for belonging to the foreground. Via a single parameter you can adjust the smoothness of the segmentation.
+
+At the moment, the plugin lives in the branch "graphcut" and can be found in Plugins->Segmentation->Graph Cut.
+
+== Settings ==
+
+The only available setting so far is the "smoothness" value. Use it to adjust the penalty for label changes in the segmentation. The higher this value, the less label changes you will have, thus the segmentation gets smoother. A value of zero corresponds to thresholding the input image.
+
+== Tutorial ==
+
+Assume we want to segment the following image into foreground/background, such that the foreground is the mitochondria and the background everything else:
+
+[[Image:mito.png|200px]]
+
+=== Probability Image ===
+
+First, we create a probability image that reflects the per-pixel probability of belonging to the foreground. For that, we can use the Advanced Weka Segmentation (branch "trainable-seg-gui"). We train a classifier for the mitochondria and everything else. Instead of using the classifier directly for the segmentation, however, we create a probability image:
+
+[[Image:mito-prob.png|200px]]
+
+=== Running Graph Cut ===
+
+Now we start the Graph Cut plugin on the probability image. With the "smoothness" slider we can adjust the smoothness of the segmentation to avoid some small extrema to corrupt our segmentation. In our example, we found that a value of about 600 gives reasonable results. The outcome of the plugin is a binary image, with white being the foreground segmentation:
+
+[[Image:mito-seg.png|200px]]
+
+=== Result ===
+
+Finally, we merge the original image and the segmentation for illustration purposes:
+
+[[Image:mito-comp.png|100px|200px]]
+
+[[Category:Segmentation]]
+[[Category:Tutorial]]
+[[Category:Plugins]]
