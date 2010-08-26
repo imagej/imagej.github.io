@@ -33,7 +33,7 @@ Assume we want to segment the following image into foreground/background, such t
 
 === Probability Image ===
 
-First, we create a probability image that reflects the per-pixel probability of belonging to the foreground. For that, we can use the Advanced Weka Segmentation (branch "trainable-seg-gui"). We train a classifier for the mitochondria and everything else. Instead of using the classifier directly for the segmentation, however, we create a probability image:
+First, we create a probability image that reflects the per-pixel probability of belonging to the foreground. For that, we can use the experimental Advanced Weka Segmentation (in the development branch [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=shortlog;h=refs/heads/trainable-seg-gui ''trainable-seg-gui''] of Fiji's source code repository). We train a classifier for the mitochondria and everything else. Instead of using the classifier directly for the segmentation, however, we create a probability image:
 
 [[Image:mito-prob.png|200px]]
 
