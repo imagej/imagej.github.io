@@ -155,6 +155,20 @@
 * [[Open Source for Menu Item]] - file <tt>fiji.scripting.OpenSourceForMenuItem</tt>  -- ''java jar file''
 
 
+=== Plugins > Segmentation ===
+
+* [[Graph Cut]] - file <tt>Graph_Cut</tt>  -- ''java jar file''
+* [[Robust Automatic Threshold Selection]] - file <tt>RATS_</tt>  -- ''java jar file''
+* [[Simple Neurite Tracer]] - file <tt>tracing.Simple_Neurite_Tracer</tt>  -- ''java jar file''
+* [[SIOX: Simple Interactive Object Extraction]] - file <tt>siox.Siox_Segmentation</tt>  -- ''java jar file''
+* [[Apply saved SIOX segmentator]] - file <tt>siox.Load_Segmentation</tt>  -- ''java jar file''
+* [[Statistical Region Merging]] - file <tt>SRM_</tt>  -- ''java jar file''
+* [[Trainable Segmentation]] - file <tt>trainableSegmentation.Trainable_Segmentation</tt>  -- ''java jar file''
+* [[Segmentation Editor]] - file <tt>Segmentation_Editor</tt>  -- ''java jar file''
+* [[Blow/Lasso Tool]] - file <tt>plugin.Lasso_</tt>  -- ''java jar file''
+* [[Level Sets]] - file <tt>levelsets.ij.LevelSet</tt>  -- ''java jar file''
+
+
 === Plugins > Image5D ===
 
 * [[New Image5D]] - file <tt>New_Image5D("")</tt>  -- ''java jar file''
@@ -184,19 +198,6 @@
 * [[MTrack2 ]] - file <tt>MTrack2_</tt>  -- ''java jar file''
 * [[Manual Tracking]] - file <tt>Manual_Tracking</tt>  -- ''java jar file''
 * [[ToAST]] - file <tt>ToAST25_</tt>  -- ''java jar file''
-
-
-=== Plugins > Segmentation ===
-
-* [[Robust Automatic Threshold Selection]] - file <tt>RATS_</tt>  -- ''java jar file''
-* [[Simple Neurite Tracer]] - file <tt>tracing.Simple_Neurite_Tracer</tt>  -- ''java jar file''
-* [[SIOX: Simple Interactive Object Extraction]] - file <tt>siox.Siox_Segmentation</tt>  -- ''java jar file''
-* [[Apply saved SIOX segmentator]] - file <tt>siox.Load_Segmentation</tt>  -- ''java jar file''
-* [[Statistical Region Merging]] - file <tt>SRM_</tt>  -- ''java jar file''
-* [[Trainable Segmentation]] - file <tt>trainableSegmentation.Trainable_Segmentation</tt>  -- ''java jar file''
-* [[Segmentation Editor]] - file <tt>Segmentation_Editor</tt>  -- ''java jar file''
-* [[Blow/Lasso Tool]] - file <tt>plugin.Lasso_</tt>  -- ''java jar file''
-* [[Level Sets]] - file <tt>levelsets.ij.LevelSet</tt>  -- ''java jar file''
 
 
 === Plugins > SPIM Registration ===
