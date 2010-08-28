@@ -1397,4 +1397,36 @@ user=> sa
 [0, 0, 0, 7, 0, 0, 0, 0, 0, 0]
 </source>
 
+<h3>Loading an image file into a byte array</h3>
+
+<source lang="lisp">
+(import [java.io File FileInputStream]
+(defn ^bytes load-file
+  "Load a file into a byte array."
+  [filepath]
+  (let [^File f (File. filepath)
+        len (int (.length f))
+        ^bytes b (byte-array len)]
+    (with-open [^FileInputStream fis (FileInputStream. f)]
+      (loop [offset (int 0)]
+        (if (< offset len)
+          (recur (unchecked-add offset (.read fis b offset (unchecked-subtract len offset)))))))
+     b))
+</source>
+
+... which then may be parsed as a java.awt.Image:
+
+<source lang="lisp">
+(def img (javax.imageioImageIO/read
+               (java.io.ByteArrayInputStream.
+                 (load-file "/home/acardona/Desktop/t2/NileBend.jpg"))))
+</source>
+
+
+... which then may be shown as an ImagePlus:
+
+<source lang="lisp">
+(.show (ij.ImagePlus. "nile bend" img))
+</source>
+
 [[Category:Scripting]]
