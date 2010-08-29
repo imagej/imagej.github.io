@@ -618,7 +618,11 @@ The simplest way is to place the jython script file into fiji/plugins/ folder or
 
 === Distributing jython scripts in a .jar file ===
 
-PLEASE NOTE: there is no need to do the following. See entry above.
+PLEASE NOTE: there is no need to do the following -- unless you want to bundle a couple of scripts in one package. See entry above.
+
+The easiest way to distribute a (single) Jython script is to start the [[Script Editor]], open the Jython script and make the bundle with ''File>Export as .jar''.
+
+Alternatively -- or if you want to bundle multiple scripts -- you can do it the manual way:
 
 The whole idea is to be able to distribute an entire collection of scripts in a single .jar file, for best convenience.
 
@@ -686,7 +690,6 @@ For clarity, this is a summary of the files in the folder:
 
 
 Notice, though, that <b>you don't need to do the .jar packaging at all</b>. Just place the python scripts directly under fiji/plugins/My Scripts/ and they will appear in the menus as regular plugins.
-
 
 = Jython examples in Fiji =
 
