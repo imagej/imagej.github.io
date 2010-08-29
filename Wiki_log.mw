@@ -1,5 +1,7 @@
 Here is logged all modification made to the structure of this wiki (not its content), such as installation of extension and so.
 
+* 10/08/29 - JES - updated to GeSHi 1.0.8.8 (syntax highlighting)
+
 * 10/06/03 - JES - include the Cite extension from the Git checkout, rather than manually synchronizing with mediawiki's Subversion repository all the time
 
 * 10/06/03 - JES - update mediawiki from our own svn2git (REL1_16 branch)
