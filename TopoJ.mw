@@ -20,7 +20,7 @@ To compute the Topography, call ''Analyze>TopoJ>Compute Topography'':
 
 [[Image:TopoJ-Dialog.jpg]]
 
-For the sample image, a window value of ''5'' is appropriate. The result looks like this:
+The result looks like this:
 
 [[Image:TopoJ-Computed_Topography.jpg]]
 
