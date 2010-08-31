@@ -14,13 +14,9 @@ The TopoJ plugins help you analyze surfaces of bright objects in image stacks. Y
 
 [[Image:TopoJ-Sintered_Alumina.jpg]]
 
-To see the surface structure, use ''Plugins>3D Viewer'':
-
-[[Image:TopoJ-Volume_Rendering.jpg]]
-
 == Compute Topography ==
 
-To computer the Topography, call ''Analyze>TopoJ>Compute Topography'':
+To compute the Topography, call ''Analyze>TopoJ>Compute Topography'':
 
 [[Image:TopoJ-Dialog.jpg]]
 
