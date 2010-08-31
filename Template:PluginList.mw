@@ -417,17 +417,19 @@
 * [[Compressed TIFF ...]] - file <tt>net.sf.ij.plugin.ImageIOSaveAsPlugin("TIFF")</tt>  -- ''java jar file''
 
 
+=== File > Open Samples ===
+
+* [[Spirals (Macro)]] - file <tt>ij.plugin.Macro_Runner("../macros/spirals.txt")</tt>  -- ''java jar file''
+* [[Adelson's Squares (Macro)]] - file <tt>ij.plugin.Macro_Runner("../macros/grey-squares.ijm")</tt>  -- ''java jar file''
+* [[Malaria Sporozoites (9.2MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/_malaria_parasites.tif")</tt>  -- ''java jar file''
+* [[Sintered Alumina (2.6MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/Sintered_Alumina.tif.zip")</tt>  -- ''java jar file''
+
+
 === File > New ===
 
 * [[Script]] - file <tt>fiji.scripting.Script_Editor</tt>  -- ''java jar file''
 * [[TrakEM2 (blank)]] - file <tt>ini.trakem2.New_Project("blank")</tt>  -- ''java jar file''
 * [[TrakEM2 (from template)]] - file <tt>ini.trakem2.New_Project</tt>  -- ''java jar file''
-
-
-=== File > Open Samples ===
-
-* [[Malaria Sporozoites (9.2MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/_malaria_parasites.tif")</tt>  -- ''java jar file''
-* [[Sintered Alumina (2.6MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/Sintered_Alumina.tif.zip")</tt>  -- ''java jar file''
 
 
 
