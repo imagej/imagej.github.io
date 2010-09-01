@@ -8,7 +8,7 @@
 | maintainer             = [[User:Saalfeld|Stephan Saalfeld]]
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/clahe]
 | released               = November 13<sup>th</sup>, 2009
-| latest version         = August 12<sup>th</sup>, 2010
+| latest version         = September 1<sup>st</sup>, 2010
 | status                 = stable, active
 | category               = [[:Category:Plugins|Plugins]], [[:Category:Filtering|Filtering]]
 }}
@@ -37,6 +37,12 @@ In addition, the PlugIn asks for:
 :choose, from the currently opened images, one that should be used as a mask for the filter application.  Selections and masks can be used exclusively or in combination.
 ;fast
 :use the fast but less accurate version of the filter.  The fast version does not evaluate the intensity transfer function for each pixel independently but for a grid of adjacent boxes of the given '''block size''' only and interpolates for locations in between.
+;process as composite
+:images with multiple color channels can be processed in two modes
+:;checked
+::use the displayed image to estimate the intensity transfer that is then applied to all channels individually.  This is the desired mode for getting local contrast compression for color photographs with a higher bit-depth and higher dynamic range than appropriate for a digital display.
+:;unchecked
+::the selected channel is processed individually.
 
 [[Image:Photo1.jpg|thumb|left|361px|Photo1 original image]]
 [[Image:Photo1-clahe-150-256-3.jpg|thumb|right|361px|Photo1 CLAHE processed, (block: 150; bins: 256; max slope: 3)]]
