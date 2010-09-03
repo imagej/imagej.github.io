@@ -92,6 +92,8 @@ The latest documentation of the code can be found here:
 == Changelog ==
 All changes can be seen in the [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/AnalyzeSkeleton_;h=97476cf88da4d5dd5a6ac6cdf9a5176c221378c6;hb=HEAD Fiji source repository].
 
+'''2010/08/26''': Fixed bug that was assigning wrong final vertices (V2) to the edges when visiting the trees from end-points if the branches were ending on already visited junctions. Reported by Peter C. Marks.
+
 '''2010/01/12''': Thanks to Peter Marks, fixed bug to visit properly the trees when starting in junctions (they were not being added to the revisit list, what some times made some trees to be split).
 
 '''2009/12/04''': Added quadruple point calculation.
