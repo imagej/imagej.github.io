@@ -4,6 +4,12 @@
 
 If you have an issue that is not mentioned here, you might want to [[Help:Contents|ask on one of the mailing lists, or via IRC, or enter a bug report]].
 
+= Input/Output =
+
+== The image I loaded is displayed all black! But it is not black! ==
+
+This problem usually arises when 12-bit or 14-bit images are loaded into Fiji without autoscaling. In that case, they are treated as if they were 16-bit images, and therefore the dynamic range is all wrong. You can fix this by clicking on ''Image>Adjust>Brightness/Contrast...'' and hitting the ''Auto'' button.
+
 = Updating =
 
 == I updated Fiji via ''Help>Update Fiji'', and now it does not start anymore! ==
