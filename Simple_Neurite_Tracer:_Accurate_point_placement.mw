@@ -1,0 +1,46 @@
+== Simple Neurite Tracer: Accurate point placement ==
+
+Note that there were recent changes that made the use of the plugin in three pane mode much easier, so make sure that you have an up-to-date Fiji by running "Help > Update Fiji".
+
+=== Summary ===
+
+Sometimes people have reported problems with placing points accurately.  Many of these issues can be resolved just by placing the points when:
+
+* Using the "Three pane view"
+* Zoomed in to 600% or so
+
+A step by step guide is given below:
+
+=== Step-by-step ===
+
+When starting up, make sure that "Three pane view" is turned on:
+
+[[Image:Simple_Neurite_Tracer_Accurate_point_placement-1.png]]
+
+Find the approximate location of your start point by moving your mouse in the XY window, holding down Shift to synchronize the view in the other panes:
+
+[[Image:Simple_Neurite_Tracer_Accurate_point_placement-2.png]]
+
+When you press "+" to zoom in, all the panes will zoom in on the point that the crosshairs is over, so each time you press "+", make sure you move your mouse pointer so that it's still over the structure of interest:
+
+[[Image:Simple_Neurite_Tracer_Accurate_point_placement-3.png]]
+
+Then click to start the path:
+
+[[Image:Simple_Neurite_Tracer_Accurate_point_placement-4.png]]
+
+Zoom out again with the "-" key, and similarly zoom in on the next point you want to be on your path to place it precisely:
+
+[[Image:Simple_Neurite_Tracer_Accurate_point_placement-5.png]]
+
+The path along the neuron may not follow the centre line:
+
+[[Image:Simple_Neurite_Tracer_Accurate_point_placement-6.png]]
+
+... but you can later improve that with the "Fit Volume" option, which tries to fix the midline and radius to sub-voxel accuracy:
+
+[[Image:Simple_Neurite_Tracer_Accurate_point_placement-7.png]]
+
+
+
+[[Category:Tutorials]]
