@@ -1,5 +1,3 @@
-== Simple Neurite Tracer: Accurate point placement ==
-
 Note that there were recent changes that made the use of the plugin in three pane mode much easier, so make sure that you have an up-to-date Fiji by running "Help > Update Fiji".
 
 === Summary ===
@@ -40,7 +38,5 @@ The path along the neuron may not follow the centre line:
 ... but you can later improve that with the "Fit Volume" option, which tries to fix the midline and radius to sub-voxel accuracy:
 
 [[Image:Simple_Neurite_Tracer_Accurate_point_placement-7.png]]
-
-
 
 [[Category:Tutorials]]
