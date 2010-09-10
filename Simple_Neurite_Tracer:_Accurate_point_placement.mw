@@ -29,11 +29,11 @@ Then click to start the path:
 
 Zoom out again with the "-" key, and similarly zoom in on the next point you want to be on your path to place it precisely:
 
-[[Image:Simple_Neurite_Tracer_Accurate_point_placement-5.png]]
+[[Image:Simple_Neurite_Tracer_Accurate_point_placement-5.png|750px]]
 
 The path along the neuron may not follow the centre line:
 
-[[Image:Simple_Neurite_Tracer_Accurate_point_placement-6.png]]
+[[Image:Simple_Neurite_Tracer_Accurate_point_placement-6.png|750px]]
 
 ... but you can later improve that with the "Fit Volume" option, which tries to fix the midline and radius to sub-voxel accuracy:
 
