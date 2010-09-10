@@ -23,7 +23,7 @@ When you press "+" to zoom in, all the panes will zoom in on the point that the 
 
 [[Image:Simple_Neurite_Tracer_Accurate_point_placement-3.png]]
 
-Then click to start the path:
+To make sure you're clicking in the centre of the structure, try moving the mouse and scroll wheel in each of the panes (holding down Shift so synchronize the views in all three panes).  When you're happy with the point under the crosshairs, click to start the path:
 
 [[Image:Simple_Neurite_Tracer_Accurate_point_placement-4.png]]
 
