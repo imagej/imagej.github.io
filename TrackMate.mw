@@ -57,7 +57,7 @@ The plugin is logically separated into two distinct steps:
 
 === Initialization ===
 
-<p>Before initializing the plugin, be sure to have the 2D or 3D image (over time, if tracking) selected. This image should contain roughly "spherical" blobs (for example: nuclei, bacteria, particles) that are to be segmented and tracked. Then, open the TrackMate plugin.</p>
+<p>Before starting the plugin, be sure to have the 2D or 3D image (over time, if tracking) selected. This image should contain roughly "spherical" blobs (for example: nuclei, bacteria, particles) that are to be segmented and tracked. Then, open the TrackMate plugin.</p>
 
 === Segmentation ===
 
