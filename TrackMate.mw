@@ -73,9 +73,9 @@ The plugin is logically separated into two distinct steps:
 
 <p>Select which features you would like to threshold the objects with (LoG is typically a good feature to threshold), and use the histograms to help determine good threshold values. Features can be added or removed using the '+' and '-' buttons, respectively. You may also choose whether to threshold objects above or below the value you pick.</p>
 
-<p>Note that each feature contains an 'auto' button, which will perform automatic thresholding on that feature (Otsu threshold).</p>
+<p>For many features, the 'noisy' objects (false positives) will be clumped together to the right or left end of the histogram in a pseudo-normal distribution. Typically, you will want to choose threshold values which exclude these regions of the histogram (we want only those few objects which meet our criteria).</p>
 
-<p>For many features, the 'noisy' objects (false positives) will be clumped together to the right or left end of the histogram in a pseudo-normal distribution. Typically, you will want to choose threshold values which exclude these regions of the histogram (we want only those few objects which meet our criteria)</p>
+<p>Note that each feature contains an 'auto' button, which will perform automatic thresholding on that feature (Otsu threshold).</p>
 
 <p>As a concrete example, suppose we want to select all objects based on the LoG value and the mean intensity within their estimated volume. To accomplish this, first select 'LoG Value' from the drop-down, and either press 'auto' or select the value manually using the histogram. Then select the '+' button to add another feature to threshold, and choose 'Mean Intensity' from the drop-down. Again, select the value to threshold on with either the 'auto' button or by choosing the value manually on the histogram.</p>
 
