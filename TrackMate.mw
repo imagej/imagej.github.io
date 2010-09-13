@@ -27,7 +27,7 @@ The plugin is logically separated into two distinct steps:
 <li>
 <p><b>Tracking:</b> The tracking algorithm is an implementation of the algorithm described by Jaqaman, K. et al. in the paper 'Robust single-particle tracking in live-cell time-lapse sequences' (Nature Methods, 2008). In short, this algorithm turns tracking into two separate steps, each of which is solved as a Linear Assignment Problem (LAP).</p>
 
-<p>The two steps in this method are: 
+<p>The two steps in this tracking method are: 
 
 <ol>
 <li> Links are made between objects in consecutive frames to create track segments (one-to-one)</li>
