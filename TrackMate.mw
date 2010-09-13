@@ -55,6 +55,23 @@ The plugin is logically separated into two distinct steps:
 
 == Tutorial ==
 
+=== Initialization ===
+
+<p>Before initializing the plugin, be sure to have the 2D or 3D image (over time, if tracking) selected. This image should contain roughly "spherical" blobs (for example: nuclei, bacteria, particles) that are to be segmented and tracked. Then, open the TrackMate plugin.</p>
+
+=== Segmentation ===
+
+<p>The only required parameter for the plugin is the estimated diameter of the object in physical units. Once this has been entered, adjust calibration settings as needed (if the image is properly calibrated, you do not have to change the calibration settings). You may also crop the image in the x, y, z, and t dimensions. You may want to do this if the image contains objects you do not wish to track, large regions of noise, or if you do not want to track over all frames.</p>
+
+<p>Once all of the parameters have been set, select 'Next.' This initializes TrackMate's segmentation step, which is then executed.</p>
+
+=== Thresholding Segmentation Results ===
+<p></p>
+
+=== Tracking ===
+<p></p>
+
+
 [[Category:Segmentation]]
 [[Category:Tracking]]
 [[Category:Tutorial]]
