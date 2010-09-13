@@ -71,6 +71,8 @@ The plugin is logically separated into two distinct steps:
 
 <p>You can now threshold the identified objects based on a number of features, the full list of which can be seen in the drop-down menu. The features can be used in combination with one another to refine the results. Currently, only the logical operator 'and' is supported. Select which features you would like to threshold the objects on (LoG is typically a good feature to threshold), and use the histograms to help to determine good threshold values. You may also choose whether to take objects above or below the threshold value you pick.</p>
 
+<p>Each feature also contains an 'auto' button, which will automatically threshold the objects using that feature.</p>
+
 === Tracking ===
 
 <p>Once the segmented objects have been thresholded, click 'Next' to track the thresholded objects over time.</p>
