@@ -1,12 +1,12 @@
 {{Infobox Plugin
 | name                  = TrackMate_
 | software             = Fiji
-| author                = [[NicholasPerry|Nick Perry]] and [[JeanYvesTinevez|Jean-Yves Tinevez]]
+| author                = [[NicholasPerry|Nick Perry]], [[JeanYvesTinevez|Jean-Yves Tinevez]]
 | maintainer         = [mailto:jean-yves.tinevez@pasteur.fr Jean-Yves Tinevez]
 | source                = 
 | released             = September 13<sup>th</sup>, 2010
 | status                 = experimental
-| category             = [[:Category:Segmentation|Segmentation]]
+| category             = [[:Category:Segmentation|Segmentation]], [[:Category:Tracking|Tracking]]
 }}
 
 == General ==
@@ -49,7 +49,7 @@ The plugin is logically separated into two distinct steps:
 
 == Settings ==
 
-<p>The only required setting is the estimated diameter of the objects being tracked, in physical units.</p>
+<p>The only required setting is the <u>estimated diameter of the objects being tracked</u>, in physical units.</p>
 
 <p>The user can also choose to modify the calibration settings of the image,  and crop the image in any dimension (x, y, z, as well as t).</p>
 
