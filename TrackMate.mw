@@ -65,15 +65,13 @@ The plugin is logically separated into two distinct steps:
 
 === Segmentation ===
 
-The actual segmentation is performed automatically, and requires no input from the user.
+<p>The segmentation step identifies all potential objects in the image (over all frames). The actual segmentation is performed automatically, and requires no input from the user.</p>
 
 === Thresholding Segmentation Results ===
 
-<p>The segmentation step identifies all potential objects in the image (over all frames). Since the segmentation methodology used typically results in false positives, a thresholding step is used in between segmentation and tracking to reduce the number of falsely identified objects.</p>
+<p>Since the segmentation methodology used typically results in false positives, a thresholding step is used to reduce the number of falsely identified objects.</p>
 
-<p>The objects can be thresholded on a multitude of 'features,' which are physical descriptors of the objects. Example features include the total brightness within the object's estimated volume, the contrast at the object's edges, and the value of the LoG step during segmentation. The full list of features can be seen in the drop-down. The features can be used in combination with one another to refine the results. Currently, only the logical operator 'and' is supported.</p>
-
-<p>To make thresholding easier, the histograms for each feature are also displayed in order to assist the user in identifying good thresholds.</p>
+<p>You can now threshold the identified objects based on a number of features, the full list of which can be seen in the drop-down menu. The features can be used in combination with one another to refine the results. Currently, only the logical operator 'and' is supported. Select which features you would like to threshold the objects on (LoG is typically a good feature to threshold), and use the histograms to help to determine good threshold values. You may also choose whether to take objects above or below the threshold value you pick.</p>
 
 === Tracking ===
 
