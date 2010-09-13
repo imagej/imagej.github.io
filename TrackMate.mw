@@ -75,7 +75,7 @@ The plugin is logically separated into two distinct steps:
 
 === Tracking ===
 
-<p>Once the segmented objects have been thresholded, click 'Next' to track the objects over time.</p>
+<p>Once the segmented objects have been thresholded, click 'Next' to track the thresholded objects over time.</p>
 
 
 [[Category:Segmentation]]
