@@ -7,7 +7,7 @@ To fetch the Fiji source code you should use [http://git.or.cz/ git] (Windows us
 ==== Cloning source as unknown contributor ====
 Your first step should be to "clone" the fiji repository with the following command:
 
- git clone git://pacific.mpi-cbg.de/fiji.git
+ git clone contrib@pacific.mpi-cbg.de:/srv/git/fiji.git
 
 This should start downloading the base fiji repository and unpack it into a directory called "fiji" in your current directory.  Once this has successfully completed, change into the newly created "fiji" directory.
 
