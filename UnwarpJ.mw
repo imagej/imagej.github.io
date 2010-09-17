@@ -1,0 +1,18 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = UnwarpJ
+| maintainer             = Philippe Thévenaz
+| author                 = Carlos Óscar Sánchez Sorzano, Philippe Thévenaz
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/UnwarpJ_/UnwarpJ_.java;hb=refs/heads/master in gitweb]
+| released               = 17/09/2010
+| latest version         = 17/09/2010
+| status                 = 
+| category               = [[:Category:Plugins]]
+| website                = http://bigwww.epfl.ch/thevenaz/unwarpj/
+}}
+
+An ImageJ plugin that performs a spline-based elastic registration of two images.
+
+This plugin is described in detail on the [http://bigwww.epfl.ch/thevenaz/unwarpj/ BIG website].
+
+[[Category:Plugins]]
