@@ -36,6 +36,16 @@ The Updater has two modes, the ''Easy Mode'' and the ''Advanced Mode''.  In the 
 
 For technical reasons, a restart of Fiji is required before the changes take effect. You can read about technical details [[Uploading plugins|here]].
 
+=== Resolve dependencies ===
+
+Some plugins require other components to be updated. For example, the [[Simple Neurite Tracer]] needs the [[3D Viewer]]. If you have a locally modified version of the dependency (i.e. the Fiji Updater does not know that particular version), Fiji will ask you what to do:
+
+[[Image:Updater-Resolve_dependencies.png]]
+
+A typical scenario when you can have a locally modified version of a component is when you asked the respective plugin author for a change in a Fiji component and got a test version that you [[Installing 3rd party plugins|installed manually]].
+
+You can keep the local version if you are certain that the version you have is new enough to work with the plugin noted under the text ''A newer version might be required by'', otherwise you should consider to choose ''Update <component>'' instead.
+
 == Advanced mode ==
 
 In the advanced mode, you can see details about the Fiji components, choose not to update selected components, and search by filename:
