@@ -200,6 +200,17 @@
 * [[ToAST]] - file <tt>ToAST25_</tt>  -- ''java jar file''
 
 
+=== Plugins > Stitching ===
+
+* [[MosaicJ]] - file <tt>MosaicJ_</tt>  -- ''java jar file''
+* [[2D Stitching]] - file <tt>Stitching_2D</tt>  -- ''java jar file''
+* [[3D Stitching]] - file <tt>Stitching_3D</tt>  -- ''java jar file''
+* [[Stitch Grid of Images]] - file <tt>Stitch_Image_Grid</tt>  -- ''java jar file''
+* [[Stitch Sequence of Grids of Images]] - file <tt>Stitch_Image_Grid_Sequence</tt>  -- ''java jar file''
+* [[Stitch Collection of Images]] - file <tt>Stitch_Image_Collection</tt>  -- ''java jar file''
+* [[Stitch Directory with Images (unknown configuration)]] - file <tt>Stitch_Image_Directory</tt>  -- ''java jar file''
+
+
 === Plugins > SPIM Registration ===
 
 * [[Registration]] - file <tt>SPIM_Registration</tt>  -- ''java jar file''
@@ -230,19 +241,11 @@
 * [[Transform Virtual Stack Slices]] - file <tt>register_virtual_stack.Transform_Virtual_Stack_MT</tt>  -- ''java jar file''
 
 
-=== Plugins > Stitching ===
-
-* [[2D Stitching]] - file <tt>Stitching_2D</tt>  -- ''java jar file''
-* [[3D Stitching]] - file <tt>Stitching_3D</tt>  -- ''java jar file''
-* [[Stitch Grid of Images]] - file <tt>Stitch_Image_Grid</tt>  -- ''java jar file''
-* [[Stitch Sequence of Grids of Images]] - file <tt>Stitch_Image_Grid_Sequence</tt>  -- ''java jar file''
-* [[Stitch Collection of Images]] - file <tt>Stitch_Image_Collection</tt>  -- ''java jar file''
-* [[Stitch Directory with Images (unknown configuration)]] - file <tt>Stitch_Image_Directory</tt>  -- ''java jar file''
-
-
 === Plugins > Registration ===
 
+* [[StackReg]] - file <tt>StackReg_</tt>  -- ''java jar file''
 * [[TurboReg ]] - file <tt>TurboReg_</tt>  -- ''java jar file''
+* [[UnwarpJ]] - file <tt>UnwarpJ_</tt>  -- ''java jar file''
 * [[Align Image by line ROI]] - file <tt>Align_Image</tt>  -- ''java jar file''
 * [[Rigid Registration]] - file <tt>vib.RigidRegistration_</tt>  -- ''java jar file''
 * [[Moving Least Squares]] - file <tt>Moving_Least_Squares</tt>  -- ''java jar file''
@@ -325,6 +328,13 @@
 * [[Local Thickness to Cleaned-Up Local Thickness]] - file <tt>Clean_Up_Local_Thickness("run")</tt>  -- ''java jar file''
 
 
+=== Analyze > Tools ===
+
+* [[PointPicker]] - file <tt>PointPicker_</tt>  -- ''java jar file''
+* [[Sync Windows]] - file <tt>Sync_Windows("")</tt>  -- ''java jar file''
+* [[Sync Measure 3D]] - file <tt>Sync_Measure_3D("")</tt>  -- ''java jar file''
+
+
 === Analyze > QuickPALM ===
 
 * [[Analyse Particles]] - file <tt>QuickPALM.Analyse_Particles</tt>  -- ''java jar file''
@@ -342,12 +352,6 @@
 * [[-]] - file <tt></tt>  -- ''java jar file''
 * [[Update QuickPALM]] - file <tt>QuickPALM.Run_MyMacro("Update_.txt")</tt>  -- ''java jar file''
 * [[About...]] - file <tt>QuickPALM.Run_MyMacro("About_.txt")</tt>  -- ''java jar file''
-
-
-=== Analyze > Tools ===
-
-* [[Sync Windows]] - file <tt>Sync_Windows("")</tt>  -- ''java jar file''
-* [[Sync Measure 3D]] - file <tt>Sync_Measure_3D("")</tt>  -- ''java jar file''
 
 
 === Analyze > TopoJ ===
@@ -421,6 +425,7 @@
 
 * [[Spirals (Macro)]] - file <tt>ij.plugin.Macro_Runner("../macros/spirals.txt")</tt>  -- ''java jar file''
 * [[Adelson's Squares (Macro)]] - file <tt>ij.plugin.Macro_Runner("../macros/grey-squares.ijm")</tt>  -- ''java jar file''
+* [[Shepp-Logan Phantom (Plugin)]] - file <tt>SheppLogan_</tt>  -- ''java jar file''
 * [[Malaria Sporozoites (9.2MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/_malaria_parasites.tif")</tt>  -- ''java jar file''
 * [[Sintered Alumina (2.6MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/Sintered_Alumina.tif.zip")</tt>  -- ''java jar file''
 
@@ -544,6 +549,11 @@
 * [[Image Expression Parser]] - file <tt>fiji.process.Image_Expression_Parser</tt>  -- ''java jar file''
 * [[Multiple Image Processor]] - file <tt>MultipleImageProcessor</tt>  -- ''java jar file''
 * [[Enhance Local Contrast (CLAHE)]] - file <tt>mpicbg.ij.clahe.PlugIn</tt>  -- ''java jar file''
+
+
+=== Process > Filters ===
+
+* [[Differentials]] - file <tt>Differentials_</tt>  -- ''java jar file''
 
 
 === Process > Morphology ===
