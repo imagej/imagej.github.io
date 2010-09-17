@@ -1,0 +1,18 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Differentials
+| maintainer             = Philippe Thévenaz
+| author                 = Philippe Thévenaz
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Differentials_/Differentials_.java;hb=refs/heads/master in gitweb]
+| released               = 16/09/2010
+| latest version         = 16/09/2010
+| status                 = 
+| category               = [[:Category:Plugins]]
+| website                = http://bigwww.epfl.ch/thevenaz/differentials/
+}}
+
+== Differentials ==
+
+This plugin is described in detail on the [http://bigwww.epfl.ch/thevenaz/differentials/ BIG website].
+
+[[Category:Plugins]]
