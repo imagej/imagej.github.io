@@ -11,8 +11,8 @@
 | website                = http://bigwww.epfl.ch/thevenaz/differentials/
 }}
 
-== Differentials ==
+This plugin allows you to perform several differentiation operations on images, seen as continuous functions, even though they are stored as discrete pixels.
 
-This plugin is described in detail on the [http://bigwww.epfl.ch/thevenaz/differentials/ BIG website].
+The plugin is described in detail on the [http://bigwww.epfl.ch/thevenaz/differentials/ BIG website].
 
 [[Category:Plugins]]
