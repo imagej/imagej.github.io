@@ -162,6 +162,7 @@
 * [[Simple Neurite Tracer]] - file <tt>tracing.Simple_Neurite_Tracer</tt>  -- ''java jar file''
 * [[SIOX: Simple Interactive Object Extraction]] - file <tt>siox.Siox_Segmentation</tt>  -- ''java jar file''
 * [[Apply saved SIOX segmentator]] - file <tt>siox.Load_Segmentation</tt>  -- ''java jar file''
+* [[Snakuscule]] - file <tt>Snakuscule_</tt>  -- ''java jar file''
 * [[Statistical Region Merging]] - file <tt>SRM_</tt>  -- ''java jar file''
 * [[Trainable Segmentation]] - file <tt>trainableSegmentation.Trainable_Segmentation</tt>  -- ''java jar file''
 * [[Segmentation Editor]] - file <tt>Segmentation_Editor</tt>  -- ''java jar file''
