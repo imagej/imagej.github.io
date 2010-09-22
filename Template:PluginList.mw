@@ -155,6 +155,23 @@
 * [[Open Source for Menu Item]] - file <tt>fiji.scripting.OpenSourceForMenuItem</tt>  -- ''java jar file''
 
 
+=== Plugins > Feature Extraction ===
+
+* [[Extract SIFT Correspondences]] - file <tt>SIFT_ExtractPointRoi</tt>  -- ''java jar file''
+* [[Extract MOPS Correspondences]] - file <tt>MOPS_ExtractPointRoi</tt>  -- ''java jar file''
+
+==== Plugins > Feature Extraction > FeatureJ ====
+
+* [[FeatureJ Derivatives]] - file <tt>FJ_Derivatives</tt>  -- ''java jar file''
+* [[FeatureJ Edges]] - file <tt>FJ_Edges</tt>  -- ''java jar file''
+* [[FeatureJ Hessian]] - file <tt>FJ_Hessian</tt>  -- ''java jar file''
+* [[FeatureJ Laplacian]] - file <tt>FJ_Laplacian</tt>  -- ''java jar file''
+* [[FeatureJ Options]] - file <tt>FJ_Options</tt>  -- ''java jar file''
+* [[FeatureJ Panel]] - file <tt>FJ_Panel</tt>  -- ''java jar file''
+* [[FeatureJ Statistics]] - file <tt>FJ_Statistics</tt>  -- ''java jar file''
+* [[FeatureJ Structure]] - file <tt>FJ_Structure</tt>  -- ''java jar file''
+
+
 === Plugins > Segmentation ===
 
 * [[Graph Cut]] - file <tt>Graph_Cut</tt>  -- ''java jar file''
@@ -222,16 +239,6 @@
 
 * [[Spline Deformation Generator]] - file <tt>SplineDeformationGenerator.SplineDeformationGenerator_</tt>  -- ''java jar file''
 * [[Distortion Correction]] - file <tt>lenscorrection.Distortion_Correction</tt>  -- ''java jar file''
-* [[TJ Affine]] - file <tt>TJ_Affine</tt>  -- ''java jar file''
-* [[TJ Crop]] - file <tt>TJ_Crop</tt>  -- ''java jar file''
-* [[TJ Embed]] - file <tt>TJ_Embed</tt>  -- ''java jar file''
-* [[TJ Mirror]] - file <tt>TJ_Mirror</tt>  -- ''java jar file''
-* [[TJ Options]] - file <tt>TJ_Options</tt>  -- ''java jar file''
-* [[TJ Panel]] - file <tt>TJ_Panel</tt>  -- ''java jar file''
-* [[TJ Rotate]] - file <tt>TJ_Rotate</tt>  -- ''java jar file''
-* [[TJ Scale]] - file <tt>TJ_Scale</tt>  -- ''java jar file''
-* [[TJ Shift]] - file <tt>TJ_Shift</tt>  -- ''java jar file''
-* [[TJ Turn]] - file <tt>TJ_Turn</tt>  -- ''java jar file''
 * [[Interactive Rigid]] - file <tt>Transform_Rigid</tt>  -- ''java jar file''
 * [[Interactive Similarity]] - file <tt>Transform_Similarity</tt>  -- ''java jar file''
 * [[Interactive Affine]] - file <tt>Transform_Affine</tt>  -- ''java jar file''
@@ -240,6 +247,20 @@
 * [[Interactive Stack Rotation]] - file <tt>Stack_Rotate</tt>  -- ''java jar file''
 * [[Landmark Correspondences]] - file <tt>Transform_Roi</tt>  -- ''java jar file''
 * [[Transform Virtual Stack Slices]] - file <tt>register_virtual_stack.Transform_Virtual_Stack_MT</tt>  -- ''java jar file''
+
+==== Plugins > Transform > TransformJ ====
+
+* [[TransformJ Affine]] - file <tt>TJ_Affine</tt>  -- ''java jar file''
+* [[TransformJ Crop]] - file <tt>TJ_Crop</tt>  -- ''java jar file''
+* [[TransformJ Embed]] - file <tt>TJ_Embed</tt>  -- ''java jar file''
+* [[TransformJ Matrix]] - file <tt>TJ_Matrix</tt>  -- ''java jar file''
+* [[TransformJ Mirror]] - file <tt>TJ_Mirror</tt>  -- ''java jar file''
+* [[TransformJ Options]] - file <tt>TJ_Options</tt>  -- ''java jar file''
+* [[TransformJ Panel]] - file <tt>TJ_Panel</tt>  -- ''java jar file''
+* [[TransformJ Rotate]] - file <tt>TJ_Rotate</tt>  -- ''java jar file''
+* [[TransformJ Scale]] - file <tt>TJ_Scale</tt>  -- ''java jar file''
+* [[TransformJ Translate]] - file <tt>TJ_Translate</tt>  -- ''java jar file''
+* [[TransformJ Turn]] - file <tt>TJ_Turn</tt>  -- ''java jar file''
 
 
 === Plugins > Registration ===
@@ -283,12 +304,6 @@
 * [[LOCI Plugins Shortcut Window]] - file <tt>loci.plugins.shortcut.ShortcutPanel("")</tt>  -- ''java jar file''
 * [[-]] - file <tt></tt>  -- ''java jar file''
 * [[Update LOCI Plugins]] - file <tt>loci.plugins.Updater("")</tt>  -- ''java jar file''
-
-
-=== Plugins > Feature Extraction ===
-
-* [[Extract SIFT Correspondences]] - file <tt>SIFT_ExtractPointRoi</tt>  -- ''java jar file''
-* [[Extract MOPS Correspondences]] - file <tt>MOPS_ExtractPointRoi</tt>  -- ''java jar file''
 
 
 
@@ -530,14 +545,17 @@
 === Help > About Plugins ===
 
 * [[Color Histogram...]] - file <tt>ColorHistogram_("about")</tt>  -- ''java jar file''
+* [[FeatureJ...]] - file <tt>FJ_Website</tt>  -- ''java jar file''
 * [[Gray Morphology...]] - file <tt>GrayMorphology_("about")</tt>  -- ''java jar file''
 * [[Image5D...]] - file <tt>I5D_about("about")</tt>  -- ''java jar file''
 * [[LSMReader...]] - file <tt>LSM_Reader("about")</tt>  -- ''java jar file''
 * [[LSMToolbox...]] - file <tt>LSM_Toolbox("about")</tt>  -- ''java jar file''
 * [[Robust Automatic Threshold Selection ]] - file <tt>About_RATS</tt>  -- ''java jar file''
+* [[RandomJ...]] - file <tt>RJ_Website</tt>  -- ''java jar file''
 * [[Sync Windows...]] - file <tt>Sync_Windows("about")</tt>  -- ''java jar file''
 * [[Sync Measure 3D...]] - file <tt>Sync_Measure_3D("about")</tt>  -- ''java jar file''
 * [[About TrakEM2...]] - file <tt>ini.trakem2.utils.Utils</tt>  -- ''java jar file''
+* [[TransformJ...]] - file <tt>TJ_Website</tt>  -- ''java jar file''
 * [[About bUnwarpJ...]] - file <tt>bunwarpj.Credits</tt>  -- ''java jar file''
 * [[Image IO ...]] - file <tt>net.sf.ij.plugin.AboutImageIO("")</tt>  -- ''java jar file''
 * [[LOCI Plugins...]] - file <tt>loci.plugins.About("")</tt>  -- ''java jar file''
@@ -560,6 +578,21 @@
 === Process > Morphology ===
 
 * [[Gray Morphology]] - file <tt>GrayMorphology_</tt>  -- ''java jar file''
+
+
+=== Process > Noise ===
+
+
+==== Process > Noise > RandomJ ====
+
+* [[RandomJ Binomial]] - file <tt>RJ_Binomial</tt>  -- ''java jar file''
+* [[RandomJ Exponential]] - file <tt>RJ_Exponential</tt>  -- ''java jar file''
+* [[RandomJ Gamma]] - file <tt>RJ_Gamma</tt>  -- ''java jar file''
+* [[RandomJ Gaussian]] - file <tt>RJ_Gaussian</tt>  -- ''java jar file''
+* [[RandomJ Options]] - file <tt>RJ_Options</tt>  -- ''java jar file''
+* [[RandomJ Panel]] - file <tt>RJ_Panel</tt>  -- ''java jar file''
+* [[RandomJ Poisson]] - file <tt>RJ_Poisson</tt>  -- ''java jar file''
+* [[RandomJ Uniform]] - file <tt>RJ_Uniform</tt>  -- ''java jar file''
 
 
 
