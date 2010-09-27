@@ -43,7 +43,7 @@ Multi-view SPIM datasets are typically rather large, therefore it is recommended
 There are three plugins which take those input parameters in different formats:
 
 * '''[[SPIM Registration#SPIM_Registration | SPIM Registration]]''': Allows the registration of SPIM data with a subset of necessary options presented in the graphical user interface
-* '''[[SPIM Registration#MultiChannel_SPIM_Registration | Multi-Channel SPIM Registration]]''': Extends the [[SPIM Registration#SPIM_Registration | SPIM Registration]] to multiple channels and allows to override the z-stretching saved in the input files.
+* '''[[SPIM Registration#Multi-Channel_SPIM_Registration | Multi-Channel SPIM Registration]]''': Extends the [[SPIM Registration#SPIM_Registration | SPIM Registration]] to multiple channels and allows to override the z-stretching saved in the input files.
 * '''[[SPIM Registration#Advanced_SPIM_Registration | Advanced SPIM Registration]]''': Registration of SPIM data using all possible options via loading a configuration file
 
 === Processing a Time Lapse Acqusition ===
