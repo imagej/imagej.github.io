@@ -98,7 +98,7 @@ When you find some features that you would like to be added to the plugin, pleas
 
 == Multi-Channel SPIM Registration ==
 
-* '''Channels to process''': Define the channel(s) that should be processed. You can give single numbers (e.g. 0), enumerate (e.g. 1, 2), define ranges (e.g. 1-3) or combine all of them in any combination wanted (e.g. 1,3-4).
+* '''Channels to process''': Define the channel(s) to process. You can give single numbers (e.g. 0), enumerate (e.g. 1, 2), define ranges (e.g. 1-3) or combine all of them in any combination wanted (e.g. 1,3-4).
 
 == Advanced SPIM Registration ==
 
