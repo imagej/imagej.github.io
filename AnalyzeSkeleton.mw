@@ -28,6 +28,14 @@ End-point voxels are displayed in '''blue''', slab voxels in '''orange''' and ju
 
 Notice here that, following this notation, the number of junction voxels can be different from the number of actual junctions since some junction voxels can be neighbors of each other.
 
+== Main options ==
+[[Image:Screenshot-AnalyzeSkeleton-dialog.png|thumb|270px|Main dialog of the AnalyzeSkeleton plugin]]
+In the main dialog of the plugin the user can select some options to
+* '''Prune the possible loops''' in the skeleton (by choosing one of the pruning cycle methods).
+* '''Prune any branch that ends in an end-point''' (by checking "Prune ends"), as implemented by [http://doube.org/ Michael Doube] in [http://bonej.org/ BoneJ].
+* '''Calculate the largest shortest path''' of each skeleton using the [http://en.wikipedia.org/wiki/Floyd-Warshall_algorithm APSP (all pairs shortest path)]. In this case, the shortest path will be displayed in a new window containing the skeleton in white and the shortest path in '''magenta'''.
+* '''Show detailed info''' about the branches of each skeleton in the image.
+
 == Loop detection and pruning ==
 [[Image:Cycle_detection.png|thumb|294px|Example of cycle detection and pruning]]
 Since the 2009/09/02 version of the code, the possible cycles or loops in the skeleton can be detected and pruned previous to the analysis. In this sense, the initial plugin dialog offers 4 options:
