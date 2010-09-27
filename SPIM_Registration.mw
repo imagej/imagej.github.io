@@ -102,6 +102,12 @@ The multi-channel SPIM Registration extends the normal registration by the abili
 
 * '''Channels to process''': Define the channel(s) to process. You can give single numbers (e.g. 0), enumerate (e.g. 1, 2), define ranges (e.g. 1-3) or combine all of them in any combination wanted (e.g. 1,3-4).
 
+* '''Override file dimensions''': Check this box to override the axial and lateral resolution stored in the input files.
+
+* '''xy resolution (um/px)''': Define the xy-resolution in um per pixel, note that only the ratio between xy and z-resolution is used.
+
+* '''z resolution (um/px)''': Define the z-resolution in um per pixel, note that only the ratio between xy and z-resolution is used.
+
 == Advanced SPIM Registration ==
 
 [[Image:Advanced SPIM Registration.png|thumb|359px|Shows the Advanced SPIM Registration Dialog.]]<br/>
