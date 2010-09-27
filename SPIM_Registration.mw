@@ -96,6 +96,10 @@ When you find some features that you would like to be added to the plugin, pleas
 * Automatic Timelapse processing
 * Preview (e.g. Max Projections of first angle) if register only checked and more than one timepoint
 
+== Multi-Channel SPIM Registration ==
+
+
+
 == Advanced SPIM Registration ==
 
 [[Image:Advanced SPIM Registration.png|thumb|359px|Shows the Advanced SPIM Registration Dialog.]]<br/>
