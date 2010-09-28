@@ -11,7 +11,7 @@
 *[http://clojure.org/cheatsheet Clojure cheat sheet]: a summary of all the essentials.
 
 <h3>Using Clojure inside Fiji</h3>
-Go to "Plugins - Scripting - Clojure Interpreter". The prompt accepts any clojure code.
+Go to "Plugins - Scripting - Clojure Interpreter". The prompt accepts any clojure code. See also Fiji's [[Script Editor]].
 
 See [[Scripting Help]] for details on keybindings and how to use the interpreter. <b>Control+)</b> will add all necessary ending parenthesis.
 
@@ -33,65 +33,6 @@ To execute a script, do any of:
 
 The script is <b>always</b> read directly from the source file, so no updating of menus is needed (unless its file name changes).
 
-
-<h4>Clojure, VimClojure and Fiji</h4>
-
-Clojure programs may run from the Fiji main window menus, as plugins, and also from the Clojure Interpreter GUI.<br />
-But you can also use the Fiji environment as a standalone, to both run and develop clojure programs.<br />
-A very convenient way to do so is directly from ViM.
-
-[http://www.vim.org Vim] is a very powerful text editor.
-
-[http://kotka.de/projects/clojure/vimclojure.html VimClojure] is a clojure environment for Vim, to edit and run clojure code within Vim.
-
-To install VimClojure, follow the nice guidelines at [http://kotka.de/projects/clojure/vimclojure.html VimClojure].
-
-
-<h5>Launching the NailGun server</h5>
-Before editing clojure .clj files with Vim and VimClojure, first launch the nailgun server like this:
-
- ./fiji -cp clojure-contrib/clojure-contrib.jar:vimclojure/vimclojure.jar:./plugins/Analysis:./plugins/Examples \
-        --main-class com.martiansoftware.nailgun.NGServer 127.0.0.1
-
-Above, note that:
-* The fiji launcher has the ability to take any java class as the main class, using the --main-class switch.
-* The -cp switch enables you to add more jars and folders with .clj files to the classpath. <b>You must include</b> any root folders containing your .clj files in  the classpath. For example, a .clj file namespaced my.image.test, you should include the <b>parent</b> folder of the folder <i>my</i> in the classpath. Above I included two of Fiji's plugins folders which contain .clj files.
-* Fiji includes the clojure.jar in the folder fiji/jars/. All jar files under fiji/jars/ will be automatically included in the classpath.
-* Fiji will choose an -Xmx maximum heap size as appropriate for your computer (usually about 67% of RAM). You may explicitly set it, such as to 4 Gb with -Xmx4000m .
-* See other fiji options with ./fiji --help
-
-<h5>Setup .vimrc to understand clojure</h5>
-Once the nailgun server is running, edit your .vimrc to contain the following:
-
- " Clojure syntax support
- let g:clj_highlight_builtins=1
- let g:clj_paren_rainbow=1
- au Bufenter,Bufnewfile *.clj setfiletype clojure
- au Bufenter,Bufnewfile *.clj setl lisp
- let g:clj_want_gorilla = 1
- let g:clj_highlight_contrib = 1
-
-Further .vimrc descriptions in the [http://kotka.de/projects/clojure/vimclojure.html VimClojure] website.
-
-
-<h5>Workflow with Vim</h5>
-Once the nailgun server is running and .vimrc configured, you may start editing any .clj files with vim.
-
-* Open a REPL within Vim by typing \sr  (or <local-leader>sr; the default local leader is the back slash )
-* Load the whole file with \ef
-* Load the current expression with \et
-
-There's omnicompletion, javadoc support, and much more.
-
-To work with Fiji, launch first the ImageJ window:
-
- Clojure=> (def ij (ij.ImageJ.))
- #'user/ij
- Clojure=>
-
-... and then just run any image processing code you want!
-
-Edit a clojure file and \ef to require the complete file. Then, on the file itself, you may run any part of the clojure code using VimClojure's capabilities (selected text, or the top-level function that includes the cursor, etc.)
 
 <h4>Running Clojure files from the command line</h4>
 Fiji can execute any clojure file directly:
