@@ -1,0 +1,94 @@
+= Introduction =
+
+Sometimes, you may want to use 3rd party libraries that are not available as Java components, but only as native libraries.
+
+There are two options available to make use of native libraries: JNA and JNI (see below for detailed descriptions).
+
+== Disadvantages of using native libraries ==
+
+Even if JNA and JNI provide some convenience for using native libraries, there are substantial downsides of using native libraries:
+
+* Using native libraries flies in the face of the platform independence of Java
+: Even if Fiji only supports 32-bit/64-bit Windows, MacOSX and Linux (and PowerPC with MacOSX for the time being), it is a major hassle to maintain them. It also means that you incur the problems with C/C++ where a library compiling successfully on one platform does not at all imply that it compiles on any other platform. There are even examples of C code compiling fine for 32-bit but not for 64-bit CPUs on the very same Operating system.
+
+* No "Compile once, run everywhere"
+: It is one of Java's greatest strengths that you do not need to compile for every platform you plan (or anyone else plans) to run on. Native libraries take away that advantage.
+
+* By using native libraries, it is much easier to produce fatal errors that tear down the complete Java virtual machine. Consequently, debugging can be really hard when using native libraries.
+
+== JNA vs JNI ==
+
+The benefits of JNA over JNI are:
+
+* scriptable
+* you do not need a C compiler
+* a native library can be dropped in for an additional platform without any recompilation
+
+The benefits of JNI over JNA are:
+
+* official part of Java
+* way faster
+* JNI is "type-safer" (i.e. Java and native code access data via the same type definitions)
+
+= JNA =
+
+The JNA project (''Java Native Access'') tries to provide an easy way to access native libraries using their native interface. To this end, the developer has to define an interface describing in Java terms what functions the library provides. Example:
+
+<source lang="java">
+import com.sun.jna.Library;
+
+public interface C extends Library {
+        public int symlink(String oldpath, String newpath);
+}
+</source>
+
+Note:
+* Even if the package name is ''com.sun.jna'', JNA is not an official part of Java. As a consequence, JNA supports less platforms than official Java itself.
+* You do not need to declare all the functions offered by the native library. In this example, only ''symlink'' was declared.
+* The Java type ''String'' is mapped to ''const char *'' in the C layer. The same happens for other primitive Java types.
+* Since the parameters need to be mapped prior to calling the native function, and mapped back after it returns, and all this mapping is done using reflection, JNA is relatively slow compared to JNI (except when the amount of time spent copying data is outweighed by the processing time spent within the native library).
+* There is no guarantee by the compiler that the interface is correct. In fact, you can declare the functions incorrectly very easily, which results in hard crashes of the Java virtual machine.
+
+Use the library in this way:
+
+<source lang="java">
+C c = (C)NativeLibrary.loadLibrary("c", C.class);
+int result = c.symlink(source, target);
+</source>
+
+If you want to use a library that is not installed in one of the locations your platform looks for libraries by default, you may need to tell JNA where to find the library:
+
+<source lang="java">
+NativeLibrary.addSearchPath("opencv", "C:\\opencv");
+OpenCV openCV = (OpenCV)NativeLibrary.loadLibrary("opencv", OpenCV.class);
+</source>
+
+Note: some libraries depend on other libraries. If the dependencies are not in the default library path, it might be not possible to load them from within Java without restarting the virtual machine, depending on the platform. On Linux, e.g. you would need to set the environment variable ''LD_LIBRARY_PATH'' accordingly (setting them in the Java process does not help, as the dynamic loader was already initialized and does not respect a change in that variable after initialization).
+
+Some functions do not take simple data types as parameters, but so-called ''structs''. These have to be defined as inner static classes of the interface, and they need to extend the class ''com.sun.jna.Structure'':
+
+<source lang="java">
+import com.sun.jna.Library;
+import com.sun.jna.Structure;
+
+public interface C extends Library {
+        public static class timeval implements Structure {
+                long tv_sec, tv_usec;
+        }
+        public static class timezeone implements Structure {
+                int tz_minuteswest, tz_dsttime;
+        }
+        public int gettimeofday(timeval timeval, timezone timezone);
+}
+</source>
+
+TODO: mention array fields, and why super(p) fails on them
+TODO: mention scriptability via NativeLibrary.getInstance(name).getFunction(name2).invokeFunction(parameters);
+
+= JNI =
+
+The abbreviation ''JNI'' stands for ''Java Native Interface''.
+
+TODO: everything
+
+[[Category:Development]]
