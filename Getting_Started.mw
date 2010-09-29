@@ -8,6 +8,8 @@ After starting Fiji, you will see the main window:
 
 [[Image:Fiji-main-window.jpg|center]]
 
+On MacOSX, the menu bar will appear on the top of the screen (as with all MacOS applications).
+
 == The menu bar ==
 
 In the menubar, you will find most of the functionality, such as loading/saving files, processing them, and plugins will be installed into the menus, too.
