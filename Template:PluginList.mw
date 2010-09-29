@@ -233,6 +233,7 @@
 
 * [[Registration]] - file <tt>SPIM_Registration</tt>  -- ''java jar file''
 * [[Advanced Registration]] - file <tt>SPIM_Registration_File</tt>  -- ''java jar file''
+* [[MultiChannel Registration]] - file <tt>MultiChannel_SPIM_Registration</tt>  -- ''java jar file''
 
 
 === Plugins > Transform ===
