@@ -32,7 +32,11 @@ The benefits of JNI over JNA are:
 
 = JNA =
 
-The JNA project (''Java Native Access'') tries to provide an easy way to access native libraries using their native interface. To this end, the developer has to define an interface describing in Java terms what functions the library provides. Example:
+The JNA project (''Java Native Access'') tries to provide an easy, pure-Java way to access native libraries using their native interface.
+
+== Functions ==
+
+To this end, the developer has to define an interface describing in Java terms what functions the library provides. Example:
 
 <source lang="java">
 import com.sun.jna.Library;
@@ -56,6 +60,8 @@ C c = (C)NativeLibrary.loadLibrary("c", C.class);
 int result = c.symlink(source, target);
 </source>
 
+=== Specifying library search paths ===
+
 If you want to use a library that is not installed in one of the locations your platform looks for libraries by default, you may need to tell JNA where to find the library:
 
 <source lang="java">
@@ -64,6 +70,47 @@ OpenCV openCV = (OpenCV)NativeLibrary.loadLibrary("opencv", OpenCV.class);
 </source>
 
 Note: some libraries depend on other libraries. If the dependencies are not in the default library path, it might be not possible to load them from within Java without restarting the virtual machine, depending on the platform. On Linux, e.g. you would need to set the environment variable ''LD_LIBRARY_PATH'' accordingly (setting them in the Java process does not help, as the dynamic loader was already initialized and does not respect a change in that variable after initialization).
+
+=== Constants/enums ===
+
+If the C header defines constants using the ''#define'' statement, the constant is nowhere to be found in the compiled native library. Likewise, the C compiler optimizes out the names of enums. Therefore, both constants and enums need to be defined in the interface.
+
+For example, this C header:
+
+<source lang="C">
+#ifndef MY_HEADER_H
+#define MY_HEADER_H
+
+#define OFF 0
+#define ON 0xff
+
+enum counter_t {
+        ZERO,
+        ONE,
+        TWO,
+        THREE
+};
+
+extern counter_t get_counter(void);
+#endif
+</source>
+
+would need to be handled with a JNA-based interface like this one:
+
+<source lang="java">
+public interface MyLibrary extends Library {
+        public final int OFF = 0;
+        public final int ON = 0xff;
+        public final int ZERO = 0;
+        public final int ONE = 1;
+        public final int TWO = 2;
+        public final int THREE = 3;
+
+        public int get_counter();
+}
+</source>
+
+=== Structures ===
 
 Some functions do not take simple data types as parameters, but so-called ''structs''. These have to be defined as inner static classes of the interface, and they need to extend the class ''com.sun.jna.Structure'':
 
@@ -82,8 +129,138 @@ public interface C extends Library {
 }
 </source>
 
-TODO: mention array fields, and why super(p) fails on them
-TODO: mention scriptability via NativeLibrary.getInstance(name).getFunction(name2).invokeFunction(parameters);
+Some fields of the structures might be fixed-size arrays (e.g. ''unsigned char path[1024]''). These fields should be declared with default initializers in Java (e.g. ''byte[] path = new byte[1024];'').
+
+==== Accessing structures via pointers ====
+
+A function you call may return a pointer to a structure. To initialize the fields of a Java version of such a structure, you can use the ''useMemory(Pointer)'' and ''read()'' methods:
+
+<source lang="java">
+...
+        public static class MyStruct {
+                public MyStruct(Pointer p) {
+                        // cannot use super(p) because of fixed-size array fields
+                        super();
+                        useMemory(p); // set pointer
+                        read(); // initialize fields
+                }
+
+                public MyStruct() {
+                        super();
+                        // handle fixed-size array fields correctly
+                        ensureAllocated();
+                }
+        }
+...
+</source>
+
+Note: when the superclass' constructor is called, the fixed-size array fields are not yet initialized. Therefore, the superclass' constructor has no way to handle them correctly: their size is not known. That is the reason why you have to call ''ensureAllocated()'' and why you cannot use the superclass' ''super(Pointer)'' constructor. Technically, when your struct does not contain fixed-size array fields, you can, but getting used to always avoid the ''super(Pointer)'' constructor will help you stay out of trouble.
+
+=== Passing structures by value ===
+
+When passing instances of a Structure to a function, memory is allocated and written to automatically, and a pointer is passed.
+
+If you want to pass a Structure by value instead, you have to subclass it and implement the ''Structure.ByValue'' interface. This interface is purely a tag, and does not require any additional functions to be defined.
+
+Example:
+
+<source lang="java">
+public class Timespec extends Structure {
+	long tv_sec;
+	long tv_usec;
+}
+
+public class Stat extends Structure {
+	long /* dev_t */      st_dev;     /* ID of device containing file */
+	long /* ino_t */      st_ino;     /* inode number */
+	long /* nlink_t */    st_nlink;   /* number of hard links */
+	int /* mode_t */      st_mode;    /* protection */
+	int /* uid_t */       st_uid;     /* user ID of owner */
+	int /* gid_t */       st_gid;     /* group ID of owner */
+	int __pad0;
+	long /* dev_t */      st_rdev;    /* device ID (if special file) */
+	long /* off_t */      st_size;    /* total size, in bytes */
+	long /* blksize_t */  st_blksize; /* blocksize for file system I/O */
+	int /* blkcnt_t */    st_blocks;  /* number of 512B blocks allocated */
+	Timespec /* time_t */ st_atime;   /* time of last access */
+	Timespec /* time_t */ st_mtime;   /* time of last modification */
+	Timespec /* time_t */ st_ctime;   /* time of last status change */
+}
+
+public class StatByValue extends Stat implements Structure.ByValue {
+	public StatByValue(Stat stat) {
+		super();
+		ensureAllocated();
+		byte[] buffer = new byte[size()];
+		stat.getPointer().read(0, buffer, 0, buffer.length);
+		getPointer().write(0, buffer, 0, buffer.length);
+		read();
+	}
+}
+</source>
+
+== Scripting JNA ==
+
+In [[Beanshell Scripting|Beanshell]], it is not possible to extend interfaces, so it is not possible to imitate the plain Java way to use JNA. Other scripting languages have similar problems as far as JNA is concerned.
+
+But you can use the ''getFunction(String)'' method of ''NativeLibrary'' to get a function object, whose methods ''invokeInt(Object[])'', ''invokePointer(Object[])'' and friends will allow you to call the function.
+
+If the result is not a basic type, you can use ''Pointer'''s methods to access the data. Beanshell example:
+
+<source lang="java">
+import com.sun.jna.NativeLibrary;
+
+// get the C runtime library
+c = NativeLibrary.getInstance("c");
+
+// retrieve the getenv() function and call it
+getenv = c.getFunction("getenv");
+print(getenv.invokePointer(new Object[] { "HELLO" }).getString(0));
+
+// retrieve and use the setenv() function
+setenv = c.getFunction("setenv");
+print(setenv.invokeInt(new Object[] { "HELLO", "world", new Integer(1) }));
+
+// show that it did something
+print(getenv.invokePointer(new Object[] { "HELLO" }).getString(0));
+
+// note that System.getenv() remains oblivious
+print(System.getenv("HELLO"));
+</source>
+
+There can be substantial complications: some function names do not actually refer to functions in the native library, but are redirected to another function by the preprocessor. Example: at least on Linux, ''lstat()'' actually calls ''__lxstat()'' with additional parameters.
+
+Also, the classes defined in your scripting language of choice might not be applicable for use with JNA. Beanshell, for one, adds two fields that JNA cannot (and should not) handle. As a workaround, you can use ''Pointer'''s ''get'' family of methods.
+
+Example:
+
+<source lang="java">
+import com.sun.jna.Memory;
+import com.sun.jna.NativeLibrary;
+
+import java.util.Date;
+
+c = NativeLibrary.getInstance("c");
+lstat = c.getFunction("__lxstat");
+errno = c.getFunction("errno");
+
+path = System.getProperty("fiji.dir");
+print(path);
+stat = new Memory(144);
+result = lstat.invokeInt(new Object[] { new Integer(0), path, stat });
+
+print("result: " + result);
+if (result < 0) {
+	strerror = c.getFunction("strerror");
+	err = errno.getInt(0);
+	error = strerror.invokePointer(new Object[] { new Integer(err) }).getString(0);
+	print("errno: " + error + " (" + err + ")");
+}
+print("blocks: " + stat.getInt(64));
+print("atime: " + new Date(stat.getLong(72) * 1000));
+print("mtime: " + new Date(stat.getLong(88) * 1000));
+print("ctime: " + new Date(stat.getLong(104) * 1000));
+</source>
 
 = JNI =
 
