@@ -8,7 +8,7 @@ You can select a path in the Path Window.  You can also use the up and down curs
 
 (This was added in a recent version, so you may need to run "Update Fiji" in order for this to work.)
 
-If you press the 'g' key with your mouse over a path in the 2D tracing view, that path should be selected.  Note that this is the nearest path to the point shown in the image, so if you're showing all of the paths projected onto the image, this may not be the one you expect.   You can make this more obvious by switching the 'View paths (2D)' option to 'parts in nearby slices'.  Alternatively, just move through the stack to a nearby slice before pressing 'g'.
+If you press the 'g' key with your mouse over a path in the 2D tracing view, that path should be selected.  Note that this is the nearest path to the point shown in the image, so if you're showing paths projected through all slices, this may not be the one you expect.   You can make this more obvious by switching the 'View paths (2D)' option to 'parts in nearby slices'.  Alternatively, just move through the stack to a nearby slice before pressing 'g'.
 
 === In the 3D tracing view ===
 
