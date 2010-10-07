@@ -1,0 +1,17 @@
+There are three ways of selecting a particular path in Simple Neurite Tracer.
+
+=== In the Path Window ===
+
+You can select a path in the Path Window.  You can also use the up and down cursor keys to go through the list quickly, and see which paths turn green in the 2D and 3D tracing views.
+
+=== In the 2D tracing view ===
+
+(This was added in a recent version, so you may need to run "Update Fiji" in order for this to work.)
+
+If you press the 'g' key with your mouse over a path in the 2D tracing view, that path should be selected.  Note that this is the nearest path to the point shown in the image, so if you're showing all of the paths projected onto the image, this may not be the one you expect.   You can make this more obvious by switching the 'View paths (2D)' option to 'parts in nearby slices'.  Alternatively, just move through the stack to a nearby slice before pressing 'g'.
+
+=== In the 3D tracing view ===
+
+(This was added in a recent version, so you may need to run "Update Fiji" in order for this to work.)
+
+If you select a path in the 3D viewer, it should now also be selected in the rest of the tracing interface.  You can do this via the "Select" menu or by clicking on the path in the 3D view.  Note that you will probably have the problem that clicks in the 3D view only select the volume - you can get around this by selecting the volume and then unticking "Edit > Hide/Show > Show content" to hide the volume rendering.  Then clicking on the paths should be easy.
