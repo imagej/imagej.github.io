@@ -1,0 +1,26 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Linear Kuwahara
+| maintainer             = Christian Tischer
+| author                 = Christian Tischer
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Linear_Kuwahara/Kuwahara_LinearStructure_Filter_v3.java;hb=refs/heads/master in gitweb]
+| released               = 08/10/2010
+| latest version         = 08/10/2010
+| status                 = 
+| category               = [[:Category:Plugins]]
+| website                = 
+}}
+This plugin extends the idea of the original Kuwahara filter from rectangular kernels to (straight) linear ones.
+
+You can specify how large the generated kernels should be, and for how many different angles they are generated. Additionally, you can specify what criterion is used to select the best orientation.
+
+Example:
+
+[[Image:Noisy-lines.png]]
+
+With 30 angles at line length 17 with the criterion ''Variance'', the filtered image looks like this:
+
+[[Image:Noisy-lines-kuwahara.png]]
+
+[[Category:Tutorials]]
+[[Category:Plugins]]
