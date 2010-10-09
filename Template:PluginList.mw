@@ -574,6 +574,7 @@
 === Process > Filters ===
 
 * [[Differentials]] - file <tt>Differentials_</tt>  -- ''java jar file''
+* [[Linear Kuwahara]] - file <tt>Kuwahara_LinearStructure_Filter_v3</tt>  -- ''java jar file''
 
 
 === Process > Morphology ===
