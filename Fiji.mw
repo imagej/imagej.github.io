@@ -58,6 +58,8 @@ Browse the [[:Category:News|news archive]].
 
 == [[Downloads]] ==
 
+<span style="color:red">'''Critical:'''</span> if you updated and Fiji does not work anymore, you need to follow [[Fix_non-functional_Fiji_after_Update|these instructions]].
+
 {{DownloadsCurrent}}
 
 See the [[Downloads]] page for debian packages and others.
