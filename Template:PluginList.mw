@@ -211,6 +211,20 @@
 * [[Transfer Channel Settings]] - file <tt>Transfer_Channel_Settings("")</tt>  -- ''java jar file''
 
 
+=== Plugins > Registration ===
+
+* [[Correct 3D drift]] - file <tt>fiji.scripting.jython.Jython_Script_Runner("/scripts/Correct_3D_drift.py")</tt>  -- ''java jar file''
+* [[StackReg]] - file <tt>StackReg_</tt>  -- ''java jar file''
+* [[TurboReg ]] - file <tt>TurboReg_</tt>  -- ''java jar file''
+* [[UnwarpJ]] - file <tt>UnwarpJ_</tt>  -- ''java jar file''
+* [[Align Image by line ROI]] - file <tt>Align_Image</tt>  -- ''java jar file''
+* [[Rigid Registration]] - file <tt>vib.RigidRegistration_</tt>  -- ''java jar file''
+* [[Moving Least Squares]] - file <tt>Moving_Least_Squares</tt>  -- ''java jar file''
+* [[bUnwarpJ]] - file <tt>bunwarpj.bUnwarpJ_</tt>  -- ''java jar file''
+* [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt>  -- ''java jar file''
+* [[Register Virtual Stack Slices]] - file <tt>register_virtual_stack.Register_Virtual_Stack_MT</tt>  -- ''java jar file''
+
+
 === Plugins > Tracking ===
 
 * [[MTrack2 ]] - file <tt>MTrack2_</tt>  -- ''java jar file''
@@ -262,19 +276,6 @@
 * [[TransformJ Scale]] - file <tt>TJ_Scale</tt>  -- ''java jar file''
 * [[TransformJ Translate]] - file <tt>TJ_Translate</tt>  -- ''java jar file''
 * [[TransformJ Turn]] - file <tt>TJ_Turn</tt>  -- ''java jar file''
-
-
-=== Plugins > Registration ===
-
-* [[StackReg]] - file <tt>StackReg_</tt>  -- ''java jar file''
-* [[TurboReg ]] - file <tt>TurboReg_</tt>  -- ''java jar file''
-* [[UnwarpJ]] - file <tt>UnwarpJ_</tt>  -- ''java jar file''
-* [[Align Image by line ROI]] - file <tt>Align_Image</tt>  -- ''java jar file''
-* [[Rigid Registration]] - file <tt>vib.RigidRegistration_</tt>  -- ''java jar file''
-* [[Moving Least Squares]] - file <tt>Moving_Least_Squares</tt>  -- ''java jar file''
-* [[bUnwarpJ]] - file <tt>bunwarpj.bUnwarpJ_</tt>  -- ''java jar file''
-* [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt>  -- ''java jar file''
-* [[Register Virtual Stack Slices]] - file <tt>register_virtual_stack.Register_Virtual_Stack_MT</tt>  -- ''java jar file''
 
 
 === Plugins > Stacks ===
