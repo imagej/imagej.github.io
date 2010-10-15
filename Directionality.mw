@@ -104,6 +104,7 @@ To generate the orientation map image, a HSB image is made by taking
  
 == Code structure ==
 
+
 This plugin is written as a classical ImageJ plugin. It implements ''PlugInFilter'',
 and relies on ''PlugInFilterRunner'' to be run. 
 
@@ -117,6 +118,12 @@ For instance:
  String command = "Directionality";
  new PlugInFilterRunner(da, command, "nbins=60, start=-90, method=gradient");
  </source>
+
+
+== Scripting ==
+
+
+=== General scripting ===
 
 
 It is also possible to run the plugin non-interactively from another class, or even in
@@ -160,6 +167,74 @@ ImagePlus("Orientation map", stack).show()
 fiji.analyze.directionality.Directionality_.generateColorWheel().show()
 
 </source>
+
+
+
+=== Getting the fit parameters ===
+
+After a request from Jessica Mansfield (University of Exeter, UK) - October 2010.
+
+The plugin uses a fit by a gaussian to compute directionality parameters; however, the fit parameters themselves are not returned. It is possible to get them however using a script.
+
+The gaussian fit has the following form:
+
+<math>
+y = a + (b-a)*\exp\left(-\frac{(x-c)^2}{2 d^2}\right)
+</math>  
+
+The parameters are returned by the method <code>public ArrayList<double[]> getFitParameters()</code>, which returns a, b, c and d in an <code>ArrayList</code> of <code>double[]</code>, one array per slice in the stack.
+
+You can retrieve them and display them with the following script:
+
+<source lang="python">
+import fiji.analyze.directionality.Directionality_
+ 
+# Instantiate plugin
+dnlty = fiji.analyze.directionality.Directionality_()
+ 
+# Set fields and settings
+imp = WindowManager.getCurrentImage()
+dnlty.setImagePlus(imp)
+dnlty.setMethod(fiji.analyze.directionality.Directionality_.AnalysisMethod.FOURIER_COMPONENTS)
+dnlty.setBinNumber(30)
+dnlty.setBinStart(30)
+dnlty.setBuildOrientationMapFlag(False) # No orientation map
+ 
+# Do calculation
+dnlty.computeHistograms()
+dnlty.fitHistograms()
+ 
+# Display plot frame
+plot_frame = dnlty.plotResults()
+plot_frame.setVisible(True)
+ 
+# Display fit analysis
+# data_frame = dir.displayFitAnalysis()
+# data_frame.setVisible(True) 
+ 
+# Display results table
+# table = dir.displayResultsTable()
+# table.show("Directionality histograms")
+
+# Get the fit params and put them in a results table
+fitParams = dnlty. getFitParameters()
+rt = ResultsTable()
+index = 1;
+for param in fitParams:
+	rt.incrementCounter()
+	rt.addLabel(imp.getStack().getShortSliceLabel(index))
+	rt.addValue('a', param[0])
+	rt.addValue('b', param[1])
+	rt.addValue('c', param[2])
+	rt.addValue('d', param[3])
+	index = index + 1;
+
+rt.show('Fit param for y = a + (b-a)*exp(-(x-c)*(x-c)/(2*d*d)')
+</source>
+
+
+
+
 
 
 == Version history ==
