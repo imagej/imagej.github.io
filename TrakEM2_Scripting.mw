@@ -574,6 +574,43 @@ Display.repaint()
 Display3D.show(tree.getProject().findProjectThing(tree))
 </source>
 
+== Compute the degree of every node ==
+
+The degree of a node is the number of parent nodes that separate it from the root node. It's a built-in function in [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html Tree] (and also in [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html Node]):
+
+In the following example, we colorize the tree based on the degree of the node: the closer to the root, the hotest:
+
+<source lang="python">
+from ini.trakem2.display import Display
+from java.awt import Color
+
+def computeColor(degree, highest):
+  blue = degree / float(highest)
+  red = 1 - blue
+  return Color(red, red, blue)
+
+# Obtain the currently selected Tree in the canvas:
+tree = Display.getFront().getActive()
+
+# Compute betweenness centrality
+degrees = tree.computeAllDegrees()   # a java.util.Map
+
+# Find out the maximum degree value, to scale:
+maximum = reduce(max, degrees.values())
+
+# Colorize each node according to its degree:
+for e in degrees.entrySet():
+  node = e.getKey()
+  degree = e.getValue()
+  node.setColor(computeColor(degree, maximum))
+
+# Update display
+Display.repaint()
+
+# Show the tree in the 3D Viewer
+Display3D.show(tree.getProject().findProjectThing(tree))
+</source>
+
 == Find branch nodes or end nodes ==
 
 The [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html Tree] class offers methods to obtain the list of all branch points, end points, or both:
