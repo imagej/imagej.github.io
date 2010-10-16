@@ -663,6 +663,51 @@ print "branch nodes:", len(branchNodes)
 print "slab nodes:", len(rest)
 </source>
 
+
+== Find out at which nodes the tree is connected to other trees, via Connector ==
+
+The idea here is to iterate all nodes of a tree, and determine, for each node, whether it is enclosed by the origin point of a Connector instance. Then, we query that connector for its target objects. In the end, we obtain a table of nodes vs. lists of objects that node is connected to:
+
+<source lang="python">
+from ini.trakem2.display import Display, Connector
+from jarray import zeros
+from java.awt.geom import Area
+
+# Obtain the currently selected treeline or areatree:
+tree = Display.getFront().getActive()
+affine = tree.getAffineTransform()
+layerset = tree.getLayerSet()
+
+# Maps of nd vs list of trees:
+outgoing = {}   # e.g. presynaptic to some trees
+
+for nd in tree.getRoot().getSubtreeNodes():
+  # Obtain the node position in world coordinates 
+  fp = zeros[nd.x, nd.y], 'f')
+  affine.transform(fp, 0, fp, 0, 1)
+  x, y = fp
+  # Query the LayerSet for Connector objects that intersect it
+  cs = layerset.findZDisplayables(Connector, x, y, False)
+  if cs.isEmpty():
+    continue
+  # Else, get the target Tree instances that each connector links to:
+  targets = []
+  area = Area(Rectangle(x, y, 1, 1))
+  for connector in cs:
+    if connector.intersectsOrigin(area):
+      for target in connector.getTargets(Tree):
+        target.append(target)      
+  if len(targets) > 0:
+    outgoing[nd] = targets
+
+# print the map of nodes and the number of trees each connects to:
+for node, targets in outgoing.iteritems():
+  print node, " connects to", len(targets)
+</source>
+
+
+Similarly, we could compute the incomming connections. There is a convenience method [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html#findConnectors() findConnectors()] in class [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html Tree] to return two lists: that of the outgoing and that of the incomming connections.
+
 = Enrich the GUI of TrakEM =
 
 === Add an extra tab to a Display ===
