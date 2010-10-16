@@ -517,6 +517,29 @@ for tag, tagged in sortNodeByTags(tree).iteritems():
   print "Nodes for tag '" + str(tag) + "':", len(tagged)
 </source>
 
+
+== Compute the betweenness centrality of every node ==
+
+The centrality is the measure of how important is a node in tree, according to how many times any possible pair of nodes is linked by a path that passes through that node.
+
+The method we use is [http://www.informatik.uni-konstanz.de/~brandes/ Ulrik Brande]'s fast algorithm for computing betweenness centrality (see the [http://www.google.com/url?sa=t&source=web&cd=1&ved=0CBcQFjAA&url=http%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fdownload%3Fdoi%3D10.1.1.11.2024%26rep%3Drep1%26type%3Dpdf&ei=krO5TPKvNMXN4AbS4OHdDQ&usg=AFQjCNELHtt9Gb5KHMzRCeTsqI1uDoqxew paper]).
+
+The method [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html#computeCentrality() computeCentrality()] of class [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html Tree] returns as a [http://pacific.mpi-cbg.de/javadoc/java/util/Map.html Map] of [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Node.html Node] instance vs. its centrality value:
+
+<source lang="python">
+from ini.trakem2.display import Display
+
+# Obtain the currently selected Tree in the canvas:
+tree = Display.getFront().getActive()
+
+# Compute betweenness centrality
+bc = tree.computeCentrality()   # a java.util.Map
+
+# Print the value for each node
+for e in bc:
+  print e.getKey(), e.getValue()
+</source>
+
 = Enrich the GUI of TrakEM =
 
 === Add an extra tab to a Display ===
