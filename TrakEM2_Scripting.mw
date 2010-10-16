@@ -406,6 +406,10 @@ def run():
 run()
 </source>
 
+= Interacting with Treeline, AreaTree and Connector =
+
+To be continued ...
+
 = Enrich the GUI of TrakEM =
 
 === Add an extra tab to a Display ===
