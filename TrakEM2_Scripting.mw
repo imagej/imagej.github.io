@@ -551,7 +551,7 @@ from ini.trakem2.display import Display
 # Obtain the currently selected treeline or areatree or connector:
 tree = Display.getFront().getActive()
 
-# A collection of all end nodes:
+# A collection of all end nodes (not lazy):
 endNodes = tree.getEndNodes()
 
 # A lazy collection of all branch nodes:
