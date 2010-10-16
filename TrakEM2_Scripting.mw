@@ -438,15 +438,17 @@ nodes = [nd for nd in nodes]
 Each [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Node.html Node] has:
 <ol>
   <li>X, Y coordinates, relative to the local coordinate system of the Tree that contains the [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Node.html Node].</li>
- <li>A reference to a layer (get it with nd.getLayer()). The [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/displayLayer] has a getZ() method to get the Z coordinate (in pixels).</li>
+ <li>A reference to a layer (get it with nd.getLayer()). The [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Layer.html Layer] has a getZ() method to get the Z coordinate (in pixels).</li>
  <li>A data field, which can be a radius or a java.awt.geom.Area (see below).</li>
 </ol>
 
 Each [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Node.html Node] contains a [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Node.html#getData() getData()] public method to acquire whatever it is that it has:
 <ul>
  <li>Treeline and Connector: its nodes [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Node.html#getData() getData()] return a radius. The default value is zero.</li>
- <li>AreaTree</li> its nodes [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Node.html#getData() getData()] return a [http://pacific.mpi-cbg.de/javadoc/java/awt/geom/Area.html java.awt.geom.Area] instance, or null if none yet assigned to it.</li>
+ <li>AreaTree: its nodes [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Node.html#getData() getData()] return a [http://pacific.mpi-cbg.de/javadoc/java/awt/geom/Area.html java.awt.geom.Area] instance, or null if none yet assigned to it.</li>
 </ul>
+
+== Obtaining the X,Y,Z coordinates of all nodes in a Tree ==
 
 Here is how to iterate over all the node's X,Y,Z positions, in world coordinates:
 
@@ -468,6 +470,31 @@ for nd in root.getSubtreeNodes():
   # data may be a radius or a java.awt.geom.Area 
   data = nd.getData()
   print x, y, z, data
+</source>
+
+
+== Sorting nodes by their tags ==
+
+<source lang="python">
+from ini.trakem2.display import Display
+
+tree = Display.getFront().getActive()
+table = {}
+
+for nd in tree.getRoot().getSubtreeNodes():
+  tags = nd.getTags()
+  if tags is None:
+    continue
+  for tag in tags:
+    tagged = table[tag]
+    if tagged is None:
+      tagged = []
+      table[tag] = tagged
+    tagged.append(nd)
+
+# print the number of nodes that have any given tag:
+for tag, tagged in table.iter_items():
+  print "Nodes for tag '" + str(tag) + "':", len(tagged)
 </source>
 
 = Enrich the GUI of TrakEM =
