@@ -541,11 +541,13 @@ for e in bc:
 </source>
 
 
-== Find branch points or end points ==
+== Find branch nodes or end nodes ==
 
 The [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html Tree] class offers methods to obtain the list of all branch points, end points, or both:
 
 <source lang="python">
+from ini.trakem2.display import Display
+
 # Obtain the currently selected treeline or areatree or connector:
 tree = Display.getFront().getActive()
 
@@ -567,6 +569,11 @@ If you want to sort out all nodes in one pass, query the number of children that
  * if more than 1, it's a branch node
 
 <source lang="python">
+from ini.trakem2.display import Display
+
+# Obtain the currently selected treeline or areatree or connector:
+tree = Display.getFront().getActive()
+
 endNodes = []
 branchNodes = []
 rest = []
@@ -579,6 +586,11 @@ for nd in tree.getRoot().getSubtreeNodes():
     endNodes.append(nd)
   else:
     branchNodes.append(nd)
+
+print "Found:"
+print "end nodes:", len(endNodes)
+print "branch nodes:", len(branchNodes)
+print "slab nodes:", len(rest)
 </source>
 
 = Enrich the GUI of TrakEM =
