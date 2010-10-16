@@ -491,21 +491,28 @@ for node, coord in getNodeCoordinates(tree).iteritems():
 from ini.trakem2.display import Display
 
 tree = Display.getFront().getActive()
-table = {}
 
-for nd in tree.getRoot().getSubtreeNodes():
-  tags = nd.getTags()
-  if tags is None:
-    continue
-  for tag in tags:
-    tagged = table[tag]
-    if tagged is None:
-      tagged = []
-      table[tag] = tagged
-    tagged.append(nd)
+def sortNodesByTags(tree):
+  table = {}
+  root = tree.getRoot()
+  if root is None:
+    return table # empty
+  #
+  for nd in tree.getRoot().getSubtreeNodes():
+    tags = nd.getTags()
+    if tags is None:
+      continue
+    for tag in tags:
+      tagged = table[tag]
+      if tagged is None:
+        tagged = []
+        table[tag] = tagged
+      tagged.append(nd)
+  #
+  return table
 
 # print the number of nodes that have any given tag:
-for tag, tagged in table.iter_items():
+for tag, tagged in table.iteritems():
   print "Nodes for tag '" + str(tag) + "':", len(tagged)
 </source>
 
