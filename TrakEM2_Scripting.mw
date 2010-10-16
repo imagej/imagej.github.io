@@ -670,24 +670,25 @@ The idea here is to iterate all nodes of a tree, and determine, for each node, w
 
 <source lang="python">
 from ini.trakem2.display import Display, Connector
-from jarray import zeros
+from jarray import array
 from java.awt.geom import Area
-
+ 
 # Obtain the currently selected treeline or areatree:
 tree = Display.getFront().getActive()
 affine = tree.getAffineTransform()
 layerset = tree.getLayerSet()
-
+ 
 # Maps of nd vs list of trees:
 outgoing = {}   # e.g. presynaptic to some trees
-
+ 
 for nd in tree.getRoot().getSubtreeNodes():
   # Obtain the node position in world coordinates 
-  fp = zeros[nd.x, nd.y], 'f')
+  fp = array([nd.getX(), nd.getY()], 'f')
   affine.transform(fp, 0, fp, 0, 1)
-  x, y = fp
+  x = int(fp[0])
+  y = int(fp[1])
   # Query the LayerSet for Connector objects that intersect it
-  cs = layerset.findZDisplayables(Connector, x, y, False)
+  cs = layerset.findZDisplayables(Connector, nd.getLayer(), x, y, False)
   if cs.isEmpty():
     continue
   # Else, get the target Tree instances that each connector links to:
@@ -699,7 +700,7 @@ for nd in tree.getRoot().getSubtreeNodes():
         target.append(target)      
   if len(targets) > 0:
     outgoing[nd] = targets
-
+ 
 # print the map of nodes and the number of trees each connects to:
 for node, targets in outgoing.iteritems():
   print node, " connects to", len(targets)
