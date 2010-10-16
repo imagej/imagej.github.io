@@ -489,7 +489,7 @@ for node, coord in getNodeCoordinates(tree).iteritems():
 
 <source lang="python">
 from ini.trakem2.display import Display
-
+ 
 def sortNodesByTags(tree):
   table = {}
   root = tree.getRoot()
@@ -501,22 +501,23 @@ def sortNodesByTags(tree):
     if tags is None:
       continue
     for tag in tags:
-      tagged = table[tag]
-      if tagged is None:
-        tagged = []
+      tagged = None
+      if table.has_key(tag):
+        tagged = table[tag]
+      else:
+        tagged = []  
         table[tag] = tagged
       tagged.append(nd)
   #
   return table
-
+ 
 # Obtain the currently selected Tree in the canvas:
 tree = Display.getFront().getActive()
-
+ 
 # Print the number of nodes that have any given tag:
-for tag, tagged in sortNodeByTags(tree).iteritems():
+for tag, tagged in sortNodesByTags(tree).iteritems():
   print "Nodes for tag '" + str(tag) + "':", len(tagged)
 </source>
-
 
 == Compute the betweenness centrality of every node ==
 
