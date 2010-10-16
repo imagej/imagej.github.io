@@ -408,7 +408,7 @@ run()
 
 = Interacting with Treeline, AreaTree and Connector =
 
-All three types: "treeline", "areatree", and "connector" are expressed by the classes that inherit from the abstract class [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html ini.trakem2.display.Tree].
+All three types: "treeline", "areatree", and "connector" are expressed by homonimous classes that inherit from the abstract class [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html ini.trakem2.display.Tree].
 
 A [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html Tree] is a [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Displayable.html Displayable] and hence presents properties such as title, alpha, color, locked, visible ... which are accessible with their homonimous set and get methods (e.g. <I>setAlpha(0.8f);</i>, <i>getAlpha();</i> etc.)
 
