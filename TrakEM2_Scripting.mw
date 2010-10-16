@@ -706,7 +706,7 @@ for node, targets in outgoing.iteritems():
 </source>
 
 
-Similarly, we could compute the incomming connections. There is a convenience method [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html#findConnectors() findConnectors()] in class [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html Tree] to return two lists: that of the outgoing and that of the incomming connections.
+Similarly, we could compute the incomming connections. There is a convenience method [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html#findConnectors() findConnectors()] in class [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html Tree] to return two lists: that of the outgoing and that of the incomming Connector instances. From these, one can easily get the connectivity graph, which you may also get by right-clicking on a Display and going for "Export - Connectivity graph...".
 
 = Enrich the GUI of TrakEM =
 
