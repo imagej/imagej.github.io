@@ -710,6 +710,41 @@ for node, targets in outgoing.iteritems():
 
 Similarly, we could compute the incomming connections. There is a convenience method [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html#findConnectors() findConnectors()] in class [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html Tree] to return two lists: that of the outgoing and that of the incomming Connector instances. From these, one can easily get the connectivity graph, which you may also get by right-clicking on a Display and going for "Export - Connectivity graph...".
 
+
+== How to find out the network of all arbors, related via Connector instances ==
+
+The easiest way is to iterate all connectors and find out which objects they are relating. A [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Connector.html Connector] object has an origin (the root node) and any number of targets (all children nodes of the root node). Each node has a radius; any other object in the TrakEM2 project that intersects with the world coordinates of that radius will be considered associated as an origin or a target.
+
+<source lang="python">
+from ini.trakem2.display import Display, Connector, Tree
+
+layerset = Display.getFront().getLayerSet()
+
+# table of relationships: one source vs. its list of targets
+graph = {}
+
+for connector in layerset.getZDisplayables(Connector):
+  targets = []
+  for targetSet in connector.getTargets(Tree):
+    for target in targetSet:
+      targets.append(target)
+  for origin in connector.getOrigins(Tree):
+    ls = None
+    if graph.has_key(origin):
+      graph[origin] += targets
+    else:
+      graph[origin] = targets
+
+# print the graph (we print the id of each object):
+for origin,targets in graph.iteritems():
+  tids = ""
+  for target in targets:
+    tids += str(target.id) + ", "
+  print origin.id, "=>", tids
+</source>
+
+Notice how about we called <i>getOrigins(Tree)</i> and <i>getTargets(Tree)</i>, which filters all potential origins and targets (Patch--an image--, AreaList, etc.) so that only Tree instances will be present in the lists.
+
 = Enrich the GUI of TrakEM =
 
 === Add an extra tab to a Display ===
