@@ -454,7 +454,7 @@ Here is how to iterate over all the node's X,Y,Z positions, in world coordinates
 
 <source lang="python">
 from ini.trakem2.display import Display
-from jarray import zeros
+from jarray import array
 
 def getNodeCoordinates(tree):
   """ Returns a map of Node instances vs. their X,Y,Z world coordinates. """
@@ -466,7 +466,7 @@ def getNodeCoordinates(tree):
   coords = {}
   #
   for nd in root.getSubtreeNodes():
-    fp = zeros([nd.getX(), nd.getY()], 'f')
+    fp = array([nd.getX(), nd.getY()], 'f')
     affine.transform(fp, 0, fp, 0, 1)
     x = fp[0] * calibration.pixelWidth
     y = fp[1] * calibration.pixelHeight
