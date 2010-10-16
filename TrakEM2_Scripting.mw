@@ -490,8 +490,6 @@ for node, coord in getNodeCoordinates(tree).iteritems():
 <source lang="python">
 from ini.trakem2.display import Display
 
-tree = Display.getFront().getActive()
-
 def sortNodesByTags(tree):
   table = {}
   root = tree.getRoot()
@@ -511,8 +509,11 @@ def sortNodesByTags(tree):
   #
   return table
 
-# print the number of nodes that have any given tag:
-for tag, tagged in table.iteritems():
+# Obtain the currently selected Tree in the canvas:
+tree = Display.getFront().getActive()
+
+# Print the number of nodes that have any given tag:
+for tag, tagged in sortNodeByTags(tree).iteritems():
   print "Nodes for tag '" + str(tag) + "':", len(tagged)
 </source>
 
