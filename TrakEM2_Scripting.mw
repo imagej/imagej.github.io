@@ -664,6 +664,7 @@ print "branch nodes:", len(branchNodes)
 print "slab nodes:", len(rest)
 </source>
 
+Keep in mind that the <i>root</i> node will be listed among the nodes above, so it's not counted as an end node (unless it doesn't have any children, e.g. when the tree consists of only the root node).
 
 == Find out at which nodes the tree is connected to other trees, via Connector ==
 
