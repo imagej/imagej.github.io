@@ -4,8 +4,8 @@
 | author                 = various (see below)
 | maintainer             = Jean-Yves Tinevez ([mailto:tinevez@mpi-cbg.de tinevez@mpi-cbg.de])
 | filename               = Stack_Manipulation.jar
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Stack_Manipulation;hb=HEAD on gitweb] (11 java files)
-| latest version         =  10 August 2010
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Stack_Manipulation;hb=HEAD on gitweb] (10 java files)
+| latest version         =  18 October 2010
 | status                 = stable, not active 
 }}
 
@@ -30,36 +30,7 @@ What they do is pretty much summarized by the following diagram, taken from the 
 
 * Since ImageJ version 1.44e (2 August 2010), the SubStack_Maker plugin is now part of ImageJ core (in ''Image>Stacks>Tools>Make Substack''), and has been consequently removed from this package.
 
-
-== Documentation ==
-
-
-
-=== Grouped ZProjector ===
-
-From the source code:
-
-Grouped ZProjector performs a z-projection on a stack of images.
-The stack is segregated into some number of groups (by specifying
-a group size) and a z-projection is performed on each group using
-ZProjector.  The result is a new stack of images, one slice for
-each group. The output stack has the same type as the input stack.
-The projection methods supported are the same as for ZProjector;
-currently "Average Intensity", "Max Intensity", and "Sum Slices".
-(It appears that ZProjector actually uses the "Average Intensity"
-method instead of the "Sum Slices" method.)
-
-Grouped ZProjector is primarily designed to be run as a plugin
-from within the ImageJ environment, but may also be used by other
-plugins, etc...  When launched as a plugin, the default constructor
-is used and then the run method is called.  Other code wishing to
-use Grouped ZProjector should use the <tt>setMethod</tt> and <tt>computeProjection</tt>
-methods directly; the <tt>buildDialog</tt> <tt>getMethod</tt>, and <tt>validGroupSize</tt> methods
-may also come in handy.
-
-
-
-
+* Since ImageJ version 1.44f (22 August 2010), the Grouped Z stack projector plugin is part of ImageJ core (in ''Image > Stacks > Tools > Grouped Z Project..''), and has been consequently removed from this package.
 
 
 
@@ -73,10 +44,6 @@ We list here the authors for each part of this package, with corresponding licen
 By [mailto:j.jackson_at_ucl.ac.uk Jon Jackson].
 Last modified June 29 2006.
 
-
-=== Grouped ZProjector ===
-
-By [mailto:caholly_at_colby.edu Charlie Holly],  Holly Mountain Software. Last modified June 29 2006.
 
 
 === DeInterleave  ===
