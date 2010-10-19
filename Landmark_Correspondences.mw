@@ -15,3 +15,7 @@ The non-linear non-invertible transformations as estimated using the Moving Leas
 {{-}}
 [[Image:Transform_Roi-linear.jpg|thumb|left|361px|Two snapshots from the ImageJ Conference 2008 registered into each other using an affine transformation as estimated from automatically extracted Feature Correspondences.]]
 [[Image:Transform_Roi-mls.jpg|thumb|right|361px|A photograph and a cartoon registered into each other using the Moving Least Squares method and a similarity transformation as estimated from manually set landmark correspondences.]]
+
+[[Category:Plugins]]
+[[Category:Transform]]
+[[Category:Registration]]
