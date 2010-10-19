@@ -514,7 +514,6 @@
 * [[Stack Splitter]] - file <tt>Stack_Splitter</tt>  -- ''java jar file''
 * [[Interleave]] - file <tt>Stack_Interleaver</tt>  -- ''java jar file''
 * [[Deinterleave]] - file <tt>DeInterleave_</tt>  -- ''java jar file''
-* [[Grouped ZProjector]] - file <tt>Grouped_ZProjector</tt>  -- ''java jar file''
 
 ==== Image > Stacks > View5D ====
 
