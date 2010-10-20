@@ -1,4 +1,4 @@
-= Using gdb =
+= Debugging hard JVM crashes with gdb =
 
 There are substantial problems with gdb when starting the Java VM; either gdb gets confused by segmentation faults (used by the JVM to handle NullPointerExceptions in an efficient manner), or it gets confused by the threading system -- unless you compile gdb yourself.
 
@@ -8,8 +8,8 @@ But there is a very easy method to use gdb to inspect serious errors such as seg
 ./fiji -XX:OnError="gdb - %p" --
 </source>
 
-= Using jdb =
-==How to attach the Java debugger jdb to a running fiji process==
+= Debugging Java code with jdb =
+== How to attach the Java debugger jdb to a running fiji process ==
 This requires two separate processes, fiji itself and the debugger.  You can do this either in one shell, backgrounding the first process or in two shells, this is recommended.  In the two shells do the following:
 
 ;Shell 1
@@ -23,7 +23,7 @@ This requires two separate processes, fiji itself and the debugger.  You can do 
 jdb -attach 8000
 </source>
 
-==This is an ultra quick start to jdb, the default Java debugger==
+== This is an ultra quick start to jdb, the default Java debugger ==
 
 Hopefully you are a little familiar with gdb, since jdb resembles it lightly.
 
@@ -85,5 +85,65 @@ Okay, so here you go, a little demonstration:
  main[1] cont
  >
  The application exited
+
+= Debugging Java3D issues =
+
+When Java3D does not work, the first order of business is to use ''Plugins>Utilities>Debugging>Test Java3D''. If this shows a rotating cube, but the [[3D Viewer]] does not work, please click on ''Help>Java3D
+Properties...'' in the [[3D Viewer]]'s menu bar.
+
+== Command line debugging ==
+
+If this information is not enough to solve the trouble, or if ''Test Java3D'' did not work, then you need to call Fiji from the command line to find out more.
+
+From the command line, you have several options to show more or less information about Java3D.
+
+=== Windows ===
+On Windows, you <u>must</u> pass the ''--console'' option in any case. Example:
+
+<source lang="bash">
+cd Desktop\Fiji.app
+fiji-win32 --console
+</source>
+
+'''Note:''' you may have unpacked Fiji somewhere else than the Desktop. If so, you have to use a different ''cd'' call.
+'''And note, too:''' on Windows 64, the executable is called ''fiji-win64'', of course.
+
+=== MacOSX ===
+On MacOSX, you need to remember that any application is just a directory with a special layout. So you can call Fiji like this from the ''Terminal'' (which you will find in the Finder by clicking on ''Go>Utilities''. Example command line:
+
+<source lang="bash">
+cd /Applications/Fiji.app
+Contents/MacOS/fiji-macosx
+</source>
+
+'''Note:''' on Tiger, you need to call ''fiji-tiger'' instead of ''fiji-macosx''.
+
+=== Linux ===
+
+As you might have guessed, on Linux it is a simple matter of
+
+<source lang="bash">
+cd /path/to/Fiji.app
+./fiji-linux
+</source>
+
+'''Note:''' on 64-bit Linux, the executable is called ''fiji-linux64'' instead.
+
+== Show Java3D debug messages ==
+
+<source lang="bash">
+./fiji -Dj3d.debug=true --
+</source>
+
+(Of course, you need to substitute the ''./fiji'' executable name with the appropriate name for your platform.)
+
+'''Note:''' do not forget the trailing ''--''; without them, Fiji mistakes the first option for an ImageJ option rather than a Java one.
+'''Note, too:''' on Windows, you <u>must not</u> forget to pass the ''--console'' option (this can be anywhere on the command line).
+
+== Windows-specific stuff ==
+
+On Windows, you can choose between OpenGL and Direct3D by passing ''-Dj3d.rend=ogl'' or ''-Dj3d.rend=d3d'', respectively.
+
+Further, some setups require enough RAM to be reserved, so you might need to pass an option like ''--mem=1200m'' (make sure that you have enough RAM free before starting Fiji that way, though!). If it turns out that memory was the issue, you can make the setting permanent by clicking Fiji's ''Edit>Options>Memory & Threads...'' menu entry.
 
 [[Category:Development]]
