@@ -1,5 +1,10 @@
 To take full advantage of a Maven-based project from within Eclipse, you should install the Maven plugin according to these steps. Please note that you must be using Eclipse 3.5 or newer.
 
+For more information about Maven, see:
+* [http://maven.apache.org/ Maven web site]
+* [http://www.sonatype.com/books/mvnref-book/reference/public-book.html Maven: The Complete Reference]
+* [http://www.maestrodev.com/better-builds-with-maven/0-about-this-guide Better Builds with Maven]
+
 
 == Install m2eclipse ==
 
