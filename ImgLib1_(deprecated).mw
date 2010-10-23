@@ -96,5 +96,5 @@ The performance is better in the latter version, as there is no need for two typ
 = Tutorials and howtos =
 
 * [[Using Imglib in a plugin]]
-* [[Using Imglib with Eclipse]]
 * [[Imglib: iterating through pixel data]]
+* [[Developing Imglib]]
