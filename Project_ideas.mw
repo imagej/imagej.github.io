@@ -187,6 +187,14 @@ Further, after the message "You need to restart Fiji" (or the Update Menus), the
 
 And finally, if a restart is required, the user could be asked whether a restart should be attempted, and a JNI-provided function could be called with a list of open images (if there are unsaved images, they should be saved temporarily into temporary files) and result tables, which then re-executes Fiji appropriately.
 
+== Make the Object Inspector more useful ==
+
+There is a tool in Fiji that lets you sift through all open frames and inspect the corresponding objects (and their fields, in a recursive fashion).
+
+However, there is no connection to the script editor yet (where you could open the corresponding sources for a given class). This might be pretty handy.
+
+Additionally, there could be a mode where you open the hierarchy of objects starting with the object the cursor hovers over, updated dynamically. This could be even more useful if there was a mode to show only the listeners of the objects, so that you can easily determine what code is responsible, say, to handle the click on a specific OK button.
+
 = User interface improvements =
 
 == Add a meta-plugin to run other plugins with ranges of parameters ==
