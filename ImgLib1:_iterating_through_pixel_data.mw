@@ -288,6 +288,6 @@ public class LocalizableByDim_Cursors<T extends RealType<T>> implements PlugIn {
 
 
 
-
+[[Category:ImgLib]]
 [[Category:Tutorials]]
 [[Category:Development]]
