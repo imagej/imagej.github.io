@@ -98,3 +98,5 @@ The performance is better in the latter version, as there is no need for two typ
 * [[Using Imglib in a plugin]]
 * [[Imglib: iterating through pixel data]]
 * [[Developing Imglib]]
+
+[[Category:ImgLib]]
