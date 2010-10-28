@@ -51,7 +51,7 @@ What can we do with it? Briefly, it behaves like a specialized iterator. To move
 * <tt>public void reset()</tt> to put back the cursor before the first data element; 
 * <tt>public void close()</tt> to mark this cursor has not being use anymore. 
 
-Other methods are available, put these four ones are enough to build a basic loop iterating over all the data. Here is an example that does so, using the bat cochlea example within ImageJ.
+Other methods are available, but these four ones are enough to build a basic loop iterating over all the data. Here is an example that does so, using the bat cochlea example within ImageJ.
 
 <source lang="java">
 import ij.plugin.PlugIn;
