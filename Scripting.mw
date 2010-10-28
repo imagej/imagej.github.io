@@ -46,6 +46,4 @@ If you want to run scripts in headless mode (i.e. without the GUI, by invoking f
 
   fiji --headless -eval 'run("Refresh JRuby Scripts",""); run("test ruby","");' -batch
 
-(If this gives you a NullPointerException in RefreshScripts, then you need a newer version of Fiji - a bug with this was fixed [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=commit;h=590059c5f8c74e47d4f648c5055fc72fa2074707 quite recently].)
-
 [[Category:Scripting]]
