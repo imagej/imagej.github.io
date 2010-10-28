@@ -51,6 +51,6 @@ For more on using the Maven command line tool, see [http://maven.apache.org/run-
 
 Alternately, if you have imglib checked out as a Fiji submodule, you can build it using the [[Fiji Build System]].
 
-
+[[Category:ImgLib]]
 [[Category:Tutorials]]
 [[Category:Development]]
