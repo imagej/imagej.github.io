@@ -129,7 +129,11 @@ For Tcl, the Script Editor would need minimal adjustments, as RSyntaxTextArea al
 
 We already have a mechanism to jump between compile errors and locations of a stack trace. The same mechanism could be used to present results from a search through multiple files.
 
-== Add a [http://en.wikipedia.org/wiki/Read-eval-print_loop "REPL" (Read-Eval-Print-Loop)] ==
+== Add a [http://en.wikipedia.org/wiki/Read-eval-print_loop "REPL" (Read-Eval-Print-Loop)] to the [[Script Editor]] ==
+
+== Detect loops after macro recording ==
+
+A special form of an autocorrelation (on text) should be pretty good an indication where the user repeated things that might want to be done in a loop instead. This would help users with little background in programming to write powerful plugins through the macro recorder.
 
 = Fiji development environment/infrastructure =
 
