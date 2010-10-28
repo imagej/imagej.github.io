@@ -179,22 +179,6 @@ There exists a pure Java implementation of Git called [http://www.jgit.org JGit]
 
 It would be nice to have it integrated into Fiji so that the Script Editor can give the developers an even smoother developing experience.
 
-== Generate Eclipse/NetBeans/Ant/IntelliJ project files from [[Fiji Build System|Fiji Build]] ==
-
-We have a custom build system, which is nice enough for the inventor of it, because it allows him to build Fiji and all its dependencies quickly.
-
-However, some developers want to use integrated development environments, and while it is not always easy to accomplish simple tasks (Eclipse has no way to say "build a .jar file from these .class files" without a 3rd-party build helper, for example), the niceties provided by such programs make it worthwhile to jump through hoops to get a proper project setup.
-
-At the moment, every developer has to do that job herself, but there is no reason why we should not be able to teach the [[Fiji Build System]] to generate project files to avoid unnecessary work, and even more to prevent differing setups between developers.
-
-There are beginnings of such an infrastructure in the ''ant'' branch of ''fiji.git'', but they are in dear need of a rework and some dedication.
-
-== Port the Fiji launcher to plain C ==
-
-The Fiji launcher has a large footprint due to being written in C++, and besides, it is usually easier to get ahold of a C compiler.
-
-So let's rewrite the C++-specific parts in plain C.
-
 == Make the Fiji Updater more intelligent about restarting ==
 
 Only when there are updates outside plugins/ is it necessary to do a full restart; otherwise, a simple "Update Menus" will do the trick.
@@ -202,14 +186,6 @@ Only when there are updates outside plugins/ is it necessary to do a full restar
 Further, after the message "You need to restart Fiji" (or the Update Menus), there is no reason for the Updater to stay open.
 
 And finally, if a restart is required, the user could be asked whether a restart should be attempted, and a JNI-provided function could be called with a list of open images (if there are unsaved images, they should be saved temporarily into temporary files) and result tables, which then re-executes Fiji appropriately.
-
-== Cache Fiji Updater's checksums ==
-
-The most tedious part about updating is waiting at the beginning, when the updater checksums all available files.
-
-The checksums could be cached in db.xml.gz together with the mtimes of the respective files, but care has to be taken to
-* keep db.xml.gz's mtime intact (otherwise the up-to-date check will fail get confused), and
-* the uploading part needs to be adjusted to write out a "scrubbed" db.xml.gz for upload (this is needed for the multi-update-sites project anyway).
 
 = User interface improvements =
 
