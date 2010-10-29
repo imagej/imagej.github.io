@@ -12,31 +12,92 @@
 
 BeanShell also does not require strict typing (read: you do not need to declare variables with types), making it easy to turn prototype code into proper Java after seeing that the code works.
 
-== Tutorial ==
+= Quickstart =
+
+If you are already familiar with Java or the macro language, the syntax of Beanshell will be familiar to you.
 
 The obligatory ''Hello, World!'' example:
 
 <source lang="java">
+// This prints 'Hello, World!' to the output area
 print("Hello, World!");
 </source>
 
-Variables are not strongly typed in BeanShell:
+Variables can be assigned values:
 
 <source lang="java">
 someName = 1;
 someName = "Hello";
 </source>
 
-In other words, if you use a variable name without specifying the type of it, you can assign anything to it. Optionally, you can declare types, in which case they are enforced:
+Variables are not strongly typed in BeanShell by default; If you use a variable name without specifying the type of it, you can assign anything to it. Optionally, you can declare variables with a data type, in which case the type is enforced:
 
 <source lang="java">
 String s;
 s = 1; // this fails
 </source>
 
+Note: The builtin functions of the ImageJ Macro language are <u>not</u> available in Beanshell.
+
+= Syntax =
+
+== Variables ==
+
+* A variable is a placeholder for a changing entity
+* Each variable has a name
+* Each variable has a value
+* Values can be any data type (numeric, text, etc)
+* Variables can be assigned new values
+
+=== Set variables' values ===
+
+Variables are assigned a value by statements of the form '''name''' = '''value''' ended by a semicolon. The value can be an expression.
+
+<source lang="java">
+intensity = 255;
+value = 2 * 8 + 1;
+title = “Hello, World!”;
+text = “title”;
+</source>
+
+=== Using variables ===
+
+You can set a variable's value to the value of a second variable:
+
+<source lang="java">
+text = title;
+</source>
+
+Note that the variable name on the left hand side of the equal sign refers to the variable itself (not its value), but on the right hand side, the variable name refers to the current value stored in the variable.
+
+As soon as the variables are assigned a new value, they simply forget the old value:
+
+<source lang="java">
+x = y;
+y = x;
+</source>
+
+After the first statement, ''x'' took on the value of ''y'', so that the second statement does not change the value of ''y''.
+
+The right hand side of an assignment can contain complicated expressions:
+
+<source lang="java">
+x = y * y – 2 * y + 3;
+</source>
+
+Note that the right hand side needs to be evaluated first before the value is assigned to the variable:
+
+<source lang="java">
+intensity = intensity * 2;
+</source>
+
+This statement just doubled the value of ''intensity''.
+
+== Further reading ==
+
 For more information, see BeanShell's [http://www.beanshell.org/manual/quickstart.html Quickstart] page.
 
-== Tips ==
+= Tips =
 
 You can ''source'' scripts (i.e. interpret another script before continuing to interpret the current script) using this line:
 
