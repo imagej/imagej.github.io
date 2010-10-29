@@ -16,17 +16,23 @@ BeanShell also does not require strict typing (read: you do not need to declare 
 
 The obligatory ''Hello, World!'' example:
 
- print("Hello, World!");
+<source lang="java">
+print("Hello, World!");
+</source>
 
 Variables are not strongly typed in BeanShell:
 
- someName = 1;
- someName = "Hello";
+<source lang="java">
+someName = 1;
+someName = "Hello";
+</source>
 
 In other words, if you use a variable name without specifying the type of it, you can assign anything to it. Optionally, you can declare types, in which case they are enforced:
 
- String s;
- s = 1; // this fails
+<source lang="java">
+String s;
+s = 1; // this fails
+</source>
 
 For more information, see BeanShell's [http://www.beanshell.org/manual/quickstart.html Quickstart] page.
 
