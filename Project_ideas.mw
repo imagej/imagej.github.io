@@ -153,7 +153,7 @@ It would be nice to have a set of implemented procedures so IJ/Fiji can run stat
 
 [http://r-forge.r-project.org/projects/rimagej/ RImageJ] is an R package written by [http://romainfrancois.blog.free.fr/index.php?category/R-package/RImageJ Romain Francois] which uses the [http://www.rforge.net/JRI/ Java/R interface] included in [http://www.rforge.net/rJava/ rJava].
 
-It would be nice to have the opposite direction working, to call R from Fiji, which might be possible by leveraging a large part of RImageJ.
+It would be nice to have the opposite direction working, to call R from Fiji, which might be possible by leveraging a large part of RImageJ. However, it might be necessary to [http://www.omegahat.org/RSJava/RFromJava.pdf do it differently].
 
 == Teach the Fiji Updater to accept other sites in addition to [[Pacific]] ==
 
