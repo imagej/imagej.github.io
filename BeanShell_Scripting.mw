@@ -40,6 +40,8 @@ For more information, see BeanShell's [http://www.beanshell.org/manual/quickstar
 
 You can ''source'' scripts (i.e. interpret another script before continuing to interpret the current script) using this line:
 
- this.interpreter.source("the-other-script.bsh");
+<source lang="java">
+this.interpreter.source("the-other-script.bsh");
+</source>
 
 [[Category:Scripting]]
