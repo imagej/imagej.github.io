@@ -93,6 +93,35 @@ intensity = intensity * 2;
 
 This statement just doubled the value of ''intensity''.
 
+== Comments ==
+
+It is important to use comments in your source code, not only for other people to understand the intent of the code, but also for yourself, when you come back to your code in 6 months. Comments look like this:
+
+<source lang="java">
+// This is a comment trying to help you to
+// remember what you meant to do here:
+a = Math.exp(x * Math.sin(y))
+	+ Math.atan(x * y – a);
+</source>
+
+You should <u>not</u> repeat the code in English, but describe the important aspects not conveyed by the code. For example, there might be a bug requiring a workaround, and you might want to explain that in the comments (lest you try to "fix" the workaround).
+
+Comments are often abused to disable code, such as debugging statements
+
+<source lang="java">
+// x = 10; // hard-code x to 10 for now, just for debugging
+</source>
+
+If you have a substantial amount of things to say in a comment, you might use multi-line comments:
+
+<source lang="java">
+/*
+ Multi-line comments can be started by a slash
+ followed by a star, and their end is marked
+ by a star followed by a slash:
+*/
+</source>
+
 == Further reading ==
 
 For more information, see BeanShell's [http://www.beanshell.org/manual/quickstart.html Quickstart] page.
