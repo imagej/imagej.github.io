@@ -50,6 +50,39 @@ In addition, the PlugIn asks for:
 [[Image:Photo3.jpg|thumb|left|361px|Photo2 original image]]
 [[Image:Photo3-clahe-50-256-3.jpg|thumb|right|361px|Photo2 CLAHE processed, (block: 50; bins: 256; max slope: 3)]]
 {{-}}
+
+==Tips==
+
+;How can I process a series/stack of images?
+:Execute the following macro from [http://rsbweb.nih.gov/ij/developer/macro/macros.html ImageJ's macro recorder] or [[Using the Script Editor|Fiji's scripting editor]]:
+<source lang="java">
+blocksize = 127;
+histogram_bins = 256;
+maximum_slope = 3;
+mask = "*None*";
+fast = true;
+process_as_composite = true;
+
+getDimensions( width, height, channels, slices, frames );
+isComposite =  channels > 1;
+parameters =
+  "blocksize=" + blocksize +
+  " histogram=" + histogram_bins +
+  " maximum=" + maximum_slope +
+  " mask=" + mask;
+if ( fast )
+  parameters += " fast_(less_accurate)";
+if ( isComposite && process_as_composite )
+  parameters += " process_as_composite";
+  
+for ( f=1; f<=frames; f++ ) {
+  Stack.setFrame( f );
+  for ( s=1; s<=slices; s++ ) {
+    Stack.setSlice( s );
+    run( "Enhance Local Contrast (CLAHE)", parameters );
+  }
+}
+</source>
 ==References==
 
 <references />
