@@ -61,7 +61,7 @@ histogram_bins = 256;
 maximum_slope = 3;
 mask = "*None*";
 fast = true;
-process_as_composite = false;
+process_as_composite = true;
 
 getDimensions( width, height, channels, slices, frames );
 isComposite = channels > 1;
