@@ -76,9 +76,6 @@ if ( isComposite && process_as_composite ) {
   parameters += " process_as_composite";
   channels = 1;
 }
-
-print( channels );
-print( parameters );
   
 for ( f=1; f<=frames; f++ ) {
   Stack.setFrame( f );
