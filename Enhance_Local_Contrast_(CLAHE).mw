@@ -61,10 +61,10 @@ histogram_bins = 256;
 maximum_slope = 3;
 mask = "*None*";
 fast = true;
-process_as_composite = true;
+process_as_composite = false;
 
 getDimensions( width, height, channels, slices, frames );
-isComposite =  channels > 1;
+isComposite = channels > 1;
 parameters =
   "blocksize=" + blocksize +
   " histogram=" + histogram_bins +
@@ -72,17 +72,26 @@ parameters =
   " mask=" + mask;
 if ( fast )
   parameters += " fast_(less_accurate)";
-if ( isComposite && process_as_composite )
+if ( isComposite && process_as_composite ) {
   parameters += " process_as_composite";
+  channels = 1;
+}
+
+print( channels );
+print( parameters );
   
 for ( f=1; f<=frames; f++ ) {
   Stack.setFrame( f );
   for ( s=1; s<=slices; s++ ) {
     Stack.setSlice( s );
-    run( "Enhance Local Contrast (CLAHE)", parameters );
+    for ( c=1; c<=channels; c++ ) {
+      Stack.setChannel( c );
+      run( "Enhance Local Contrast (CLAHE)", parameters );
+    }
   }
 }
 </source>
+
 ==References==
 
 <references />
