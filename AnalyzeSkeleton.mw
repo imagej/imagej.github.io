@@ -135,7 +135,7 @@ The shortest path calculation and its applications have been published as:
 * G. Polder, H.L.E Hovens and A.J Zweers, Measuring shoot length of submerged aquatic plants using graph analysis (2010), In: Proceedings of the ImageJ User and Developer Conference, Centre de Recherche Public Henri Tudor, Luxembourg, 27-29 October, pp 172-177.
 
 [[AnalyzeSkeleton]] makes also part of [http://bonej.org/ BoneJ], a plugin for bone image analysis in [http://rsbweb.nih.gov/ij/ ImageJ]:
-* Michael Doube, Michal M. Klosowski, Ignacio Arganda-Carreras, Fabrice P. Cordelieres, Robert P. Dougherty, Jonathan S. Jackson, Benjamin Schmid, John R. Hutchinson, Sandra J. Shefelbine, [http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6T4Y-50XV9CV-2&_user=501045&_coverDate=09/03/2010&_rdoc=1&_fmt=high&_orig=search&_origin=search&_sort=d&_docanchor=&view=c&_searchStrId=1475964746&_rerunOrigin=google&_acct=C000022659&_version=1&_urlVersion=0&_userid=501045&md5=59cc0057793f08cb8f39d1501024f24f&searchtype=a BoneJ: Free and extensible bone image analysis in ImageJ], Bone, 2010, In Press.
+* Michael Doube, Michal M. Klosowski, Ignacio Arganda-Carreras, Fabrice P. Cordelieres, Robert P. Dougherty, Jonathan S. Jackson, Benjamin Schmid, John R. Hutchinson, Sandra J. Shefelbine, [http://dx.doi.org/10.1016/j.bone.2010.08.023 BoneJ: Free and extensible bone image analysis in ImageJ], Bone, Volume 47, Issue 6, December 2010, Pages 1076-1079.
 
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
