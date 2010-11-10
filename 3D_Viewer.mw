@@ -3,13 +3,13 @@
 | software               = ImageJ
 | author                 = Benjamin Schmid, Albert Cardona, Mark Longair, Johannes Schindelin
 | maintainer             = Benjamin Schmid
-| filename               = [http://132.187.25.13/home/imagej/ImageJ_3D_Viewer.jar]
+| filename               = [http://3dviewer.neurofly.de/download/ImageJ_3D_Viewer.jar]
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/3D_Viewer;hb=master Fiji's gitweb]
 | released               = April 2007
 | latest version         = August 2008
 | status                 = beta
 | category               = [[:Category:Plugins|Plugins]]
-| website                = http://www.neurofly.de
+| website                = http://3dviewer.neurofly.de
 }}
 
 
@@ -27,7 +27,7 @@ surfaces or orthoslices.
 Find [http://132.187.25.13/home/imagej/Viewer.avi here] a demo movie which
 shows many of the features of the 3D viewer.
 
-For more information, please visit the original [http://132.187.25.13/?category=Download&Page=Viewer3D homepage]
+For more information, please visit the original [http://3dviewer.neurofly.de homepage]
 
 
 
