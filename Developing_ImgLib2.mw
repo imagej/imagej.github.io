@@ -19,7 +19,7 @@ To develop imglib in Eclipse, follow these steps:
 # Choose File > Import from the Eclipse menu
 # Select "Existing Maven Projects" and click Next
 # For the Root Directory, specify the path where you cloned imglib
-# From the projects list, check all except the top-level parent project
+# From the projects list, check all '''except the top-level parent project'''
 # Click Finish
 
 For fresh installs, it will initially take some time (a few minutes) for Maven to download all the dependencies for both its own plugins, and for imglib. This is a one-time cost. After that, Maven will check for module updates once a day, which is generally fast.
