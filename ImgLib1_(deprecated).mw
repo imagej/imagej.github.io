@@ -29,7 +29,30 @@ In addition to adapters wrapping ImageJ's ImagePlus, ''imglib'' currently suppor
 
 = Example =
 
-Let's look at a simple function multiplying every pixel value with a given constant. In plain ImageJ, such a function looks like this:
+Let's look at a simple function multiplying every pixel value with a given constant.
+
+=== Using  ''imglib'' ===
+
+No matter what kind of image (a single image, a stack, a 4D stack, with one color channel or three...), the algorithm is  implemented cleanly and clearly:
+
+<source lang="java">
+ public <T extends ComplexType<T>> void multiplyImageByValue( Image<T> input,  T factor )
+ {
+        final Cursor<T> cursor = input.createCursor();
+ 
+         while ( cursor.hasNext() )
+         {
+                 cursor.fwd();
+                 cursor.getType().mul( factor );
+         }
+
+        cursor.close();
+}
+</source>
+
+=== Using ImageJ ===
+
+In plain ImageJ, the same function looks like the following. Notice how we have to litter the code with special cases, and we have to know before hand the number of channels, slices, and pixels per slice. We even need a helper function to simplify operations a bit!
 
 <source lang="java">
  final static public void multiply( final ImagePlus input, final double factor )
@@ -74,24 +97,7 @@ Let's look at a simple function multiplying every pixel value with a given const
  }
 </source>
 
-Using  ''imglib'':
-
-<source lang="java">
- public <T extends ComplexType<T>> void multiplyImageByValue( Image<T> input,  T factor )
- {
-        final Cursor<T> cursor = input.createCursor();
- 
-         while ( cursor.hasNext() )
-         {
-                 cursor.fwd();
-                 cursor.getType().mul( factor );
-         }
-
-        cursor.close();
-}
-</source>
-
-The performance is better in the latter version, as there is no need for two type conversions in every iteration: the Type instance implements the native operation ''mul()'', and since the implementation is labeled using the Java keyword ''final'', it will be inlined and optimized pretty quickly by Java's Just-In-Time compiler. Furthermore it will work on any ComplexType (even for example real numbers) that are available or will be implemented in the future.
+The performance is better in the ''ImgLib'' version, as there is no need for two type conversions in every iteration: the Type instance implements the native operation ''mul()'', and since the implementation is labeled using the Java keyword ''final'', it will be inlined and optimized pretty quickly by Java's Just-In-Time compiler. Furthermore it will work on any ComplexType (even for example real numbers) that are available or will be implemented in the future.
 
 = Tutorials and howtos =
 
