@@ -36,17 +36,10 @@ Let's look at a simple function multiplying every pixel value with a given const
 No matter what kind of image (a single image, a stack, a 4D stack, with one color channel or three...), the algorithm is  implemented cleanly and clearly:
 
 <source lang="java">
- public <T extends ComplexType<T>> void multiplyImageByValue( Image<T> input,  T factor )
- {
-        final Cursor<T> cursor = input.createCursor();
- 
-         while ( cursor.hasNext() )
-         {
-                 cursor.fwd();
-                 cursor.getType().mul( factor );
-         }
-
-        cursor.close();
+public <T extends NumericType<T>> void mul( Image<T> input, T factor )
+{
+        for ( final T value : input )
+          value.mul( factor );
 }
 </source>
 
