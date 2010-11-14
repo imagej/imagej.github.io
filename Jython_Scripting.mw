@@ -421,7 +421,8 @@ if 1 == imp.getNSlices():
   IJ.showMessage("Not a stack!")
   raise RuntimeException("Not a stack!")
 
-# 2 - Split channels
+# 2 - Prepare stacks to split slices
+stack = imp.getStack()
 red_stack = ImageStack(imp.width, imp.height)
 green_stack = ImageStack(imp.width, imp.height)
 
@@ -497,7 +498,6 @@ new_imp.show()
 </source>
 
 Notice that this second approach is much slower: accessing every pixel from jython has a high cost. If you would like to do very fast pixel-level manipulations, use java or [[Clojure Scripting|Clojure]].
-
 
 === Subtract the minimal value to an image ===
 
