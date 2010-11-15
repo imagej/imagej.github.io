@@ -522,6 +522,30 @@ Notice we used:
 * <i>lambda</i>, which is used to declare an anonymous function that takes one argument.
 * The <i>map</i> function, which runs a function given as argument to every element of a list (here, every pixel) and returns a new list with all the results.
 
+=== Extract a specific color channel for a given time frame of a composite image ===
+
+Suppose you have a 4D multicolor image, and want to obtain a stack of slices corresponding to a specific color channel and time frame.
+
+The [http://pacific.mpi-cbg.de/javadoc/ij/CompositeImage.html CompositeImage] is a stack whose slices are interpreted as belonging to specific color channels, Z slices and time frames. To find out which slice corresponds to what, use the <i>getStackIndex</i> method of the [http://pacific.mpi-cbg.de/javadoc/ij/ImagePlus.html ImagePlus], which translates between color channels, z slices and time frames to the slice index in the underlying [http://pacific.mpi-cbg.de/javadoc/ij/ImageStack.html ImageStack].
+
+<source lang="python">
+from ij import IJ, ImagePlus, ImageStack
+
+def extractChannel(imp, nChannel, nFrame):
+ """ Extract a stack for a specific color channel and time frame """
+ stack = imp.getImageStack()
+ ch = ImageStack(imp.width, imp.height)
+ for i in range(1, imp.getNSlices() + 1):
+   index = imp.getStackIndex(nChannel, i, nFrame)
+   ch.addSlice(str(i), stack.getProcessor(index))
+ return ImagePlus("Channel " + str(nChannel), ch)
+
+imp = IJ.getImage()
+extractChannel(imp, 1, 1).show()
+</source>
+
+Notice that color channels, stack slices and time frames are all 1-based. For example, if you have 3 color channels, then these have indices 1, 2, and 3 (not 0, 1 and 2).
+
 == Tips and Tricks ==
 
 === Getting a list of all members in one package ===
