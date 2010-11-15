@@ -1,0 +1,119 @@
+Here is a [[:Category:Jython|Jython]] script that does the analysis of a FRAP movie.
+It was developed during the [[Image Processing School Pilsen 2009]].
+
+Once the user has loaded a good FRAP movie, well aligned with no drift, and has specified the ROI for the FRAP zone and another for the control zone, it should be possible to automate the analysis of the FRAP curve. This is what this script aims to do:
+
+* Load a movie
+* Draw a ROI for the FRAP zone, and store it as the '''first''' ROI in the ROI manager (by pressing the 't' key)
+* Do the same for a control zone, out of the FRAP zone
+
+The load this script for instance in the [[Script Editor]], and run it. It will measure the FRAP intensity for all frames, try to find the FRAP frame (by finding the one with the minimal FRAP ROI intensity), and fit the FRAP curve by an increasing exponential. The parameters of the fit can be then read in the log window, and the FRAP curve and its fit are plotted. 
+
+This script uses only ImageJ functions for everything, but could be tune to use more fancy Fiji-included plotting library, such as JFreeChart.
+
+
+<source lang="python">
+
+import java.awt
+
+# Get ROIs
+roi_manager = RoiManager.getInstance()
+roi_list    = roi_manager.getRoisAsArray()
+
+# We assume first one is FRAP roi, the 2nd one is normalizing roi.
+roi_FRAP    = roi_list[0];
+roi_norm    = roi_list[1];
+
+# Get current image plus and image processor
+current_imp  = WindowManager.getCurrentImage()
+stack        = current_imp.getImageStack()
+n_slices     = stack.getSize()
+calibration  = current_imp.getCalibration()
+
+# Collect intensity values
+
+# Create empty lists of number
+If = []  # Frap values
+In = []  # Norm values
+
+# Loop over each slice of the stack
+for i in range(0, n_slices):
+
+    # Get the current slice 
+    ip = stack.getProcessor(i+1)
+
+    # Put the ROI on it
+    ip.setRoi(roi_FRAP)
+
+    # Make a measurement in it
+    stats = ImageStatistics.getStatistics(ip, Measurements.MEAN, calibration);
+    mean  = stats.mean
+
+    # Store the measurement in the list
+    If.append( mean )
+
+    ip.setRoi(roi_norm)
+    stats = ImageStatistics.getStatistics(ip, Measurements.MEAN, calibration);
+    mean = stats.mean
+    In.append( mean )
+
+# Plot measurements:
+# x = range(0, n_slices):
+# plot = Plot("Measures", "Frame", "AU", x, If)
+# plot.show()
+
+# Find minimal intensity value in FRAP and bleach frame
+min_intensity = If[0]
+bleach_time = 0
+for i in range(1, n_slices):
+    if If[i] < min_intensity:
+        min_intensity = If[i]
+        bleach_time = i
+
+IJ.write('FRAP slice is ' + str(bleach_time) )
+
+
+# Compute mean pre-bleach intensity
+mean_If = 0.0
+mean_In = 0.0
+for i in range(bleach_time):         # will loop until the bleach time
+    mean_If = mean_If + If[i]
+    mean_In = mean_In + In[i]
+mean_If = mean_If / len( range(bleach_time) )
+mean_In = mean_In / len( range(bleach_time) )
+
+# Calculate normalized curve
+normalized_curve = []
+for i in range(bleach_time, n_slices):
+    normalized_curve.append( (If[i]-min_intensity) / mean_If   *   mean_In / In[i] )
+
+x = range(n_slices-bleach_time)
+y = normalized_curve
+
+
+# Fitter
+fitter = CurveFitter(x, y)
+fitter.doFit(CurveFitter.EXP_RECOVERY)
+IJ.log("Fit FRAP curve by " + fitter.getFormula() )
+# param_values = fitter.getParams()
+IJ.log( fitter.getResultString() )
+
+# Overlay fit curve 
+yfit = []
+for i in x:
+    yfit.append( fitter.f( fitter.getParams(), i) )
+
+plot = Plot("Normalized FRAP curve", "Frame", "NU", x, y)
+plot.setColor(java.awt.Color.BLACK)
+plot_window =  plot.show()
+
+plot_window.setColor(java.awt.Color.RED)
+plot_window.addPoints(x, yfit, Plot.LINE)
+plot_window.draw()
+
+
+</source>
+
+
+[[Category:Jython]]
+[[Category:Scripting]]
