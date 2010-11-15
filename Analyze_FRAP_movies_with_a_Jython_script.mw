@@ -1,7 +1,6 @@
-Here is a [[:Category:Jython|Jython]] script that does the analysis of a FRAP movie.
-It was developed during the [[Image Processing School Pilsen 2009]].
+Here is a [[:Category:Jython|Jython]] script that does the analysis of a FRAP movie. It was developed during the [[Image Processing School Pilsen 2009]].
 
-Once the user has loaded a good FRAP movie, well aligned with no drift, and has specified the ROI for the FRAP zone and another for the control zone, it should be possible to automate the analysis of the FRAP curve. This is what this script aims to do:
+Once the user has loaded a good FRAP movie, [[Correcting drift in FRAP experiments‎|well aligned with no drift]], and has specified the ROI for the FRAP zone and another for the control zone, it should be possible to automate the analysis of the FRAP curve. This is what this script aims to do:
 
 * Load a movie
 * Draw a ROI for the FRAP zone, and store it as the '''first''' ROI in the ROI manager (by pressing the 't' key)
@@ -9,7 +8,7 @@ Once the user has loaded a good FRAP movie, well aligned with no drift, and has 
 
 The load this script for instance in the [[Script Editor]], and run it. It will measure the FRAP intensity for all frames, try to find the FRAP frame (by finding the one with the minimal FRAP ROI intensity), and fit the FRAP curve by an increasing exponential. The parameters of the fit can be then read in the log window, and the FRAP curve and its fit are plotted. 
 
-This script uses only ImageJ functions for everything, but could be tune to use more fancy Fiji-included plotting library, such as JFreeChart.
+This script uses only ImageJ functions for everything, but could be tuned to use more fancy Fiji-included plotting library, such as JFreeChart.
 
 
 <source lang="python">
