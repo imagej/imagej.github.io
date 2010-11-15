@@ -5,7 +5,7 @@
 | author                 = Stephan Saalfeld
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=SIFT_Align.java;hb=HEAD in gitweb]
 | latest version         = June 2008
-| category               = [[:Category:Plugins]]
+| category               = [[:Category:Registration]]
 | website                = http://fly.mpi-cbg.de/~saalfeld/Projects/javasift.html
 }}
 
@@ -19,4 +19,5 @@ See also [http://fly.mpi-cbg.de/~saalfeld/Projects/javasift.html JavaSIFT] (the 
 
 <references />
 
+[[Category:Registration]]
 [[Category:Plugins]]
