@@ -668,7 +668,7 @@ def removeOutliers(imp, radius, threshold, bright):
   return copy
 </source>
 
-And now you have a second script in which you want to use a function from the ''Filters_.py'' script:
+And now you have a second script in which you want to use a function from the ''Filters.py'' script:
 
 <source lang="python">
 from ij import IJ
