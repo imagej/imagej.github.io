@@ -631,14 +631,55 @@ To ensure that you see the stack trace, print it to the ImageJ log window instea
 
 If you want to import other files, you need to ''import'' them. This requires that the files are found in the so-called ''search path'', a list of directories in which Jython looks for the modules (''.py'' files) to import. You can easily extend the search path:
 
- from sys import path
- from java.lang.System import getProperty
- 
- # extend the search path by $FIJI_ROOT/bin/
- path.append(getProperty('fiji.dir') + '/bin')
- 
- # Now you can import $FIJI_ROOT/bin/compat.py
- import compat
+<source lang="python">
+from sys import path
+from java.lang.System import getProperty
+
+# extend the search path by $FIJI_ROOT/bin/
+path.append(getProperty('fiji.dir') + '/bin')
+
+# Now you can import $FIJI_ROOT/bin/compat.py
+import compat
+</source>
+
+A situation you are likely to encounter is when you have multiple jython scripts in a folder under the fiji plugins folder.
+
+For example, suppose you have the folder ''my scripts'' under the fiji ''plugins'' folder, in which you have the script ''Filters.py'' with the following filter functions in it:
+
+<source lang="python">
+# Script plugins/my scripts/Filters.py
+from ij import IJ
+from ij.plugin import Duplicator
+
+def median(imp, radius):
+  """ Apply a median filter to a copy
+      of the given ImagePlus, and return it. """
+  copy = Duplicator().run(imp)
+  IJ.run(copy, "Median...", "radius=" + str(radius))
+  return copy
+
+def removeOutliers(imp, radius, threshold, bright):
+  """ Apply a remove outliers filter to a copy
+      of the given ImagePlus, and return it. """
+  copy = Duplicator().run(imp)
+  which = "Bright" if bright else "Dark"
+  IJ.run(copy, "Remove Outliers...", "radius=" + str(radius) + \
+      + " threshold=" + str(threshold) + " which=" + which")
+  return copy
+</source>
+
+And now you have a second script in which you want to use a function from the ''Filters_.py'' script:
+
+<source lang="python">
+import sys
+from java.lang.System import getProperty
+sys.path.append(getProperty("fiji.dir") + "/plugins/my scripts/Filters.py")
+from Filters import median
+
+imp = IJ.getImage()
+medianFiltered = median(imp)
+medianFiltered.show()
+</source>
 
 [[Category:Scripting]]
 [[Category:Jython]]
