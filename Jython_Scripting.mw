@@ -671,13 +671,14 @@ def removeOutliers(imp, radius, threshold, bright):
 And now you have a second script in which you want to use a function from the ''Filters_.py'' script:
 
 <source lang="python">
+from ij import IJ
 import sys
 from java.lang.System import getProperty
-sys.path.append(getProperty("fiji.dir") + "/plugins/my scripts/Filters.py")
+sys.path.append(getProperty("fiji.dir") + "/plugins/my scripts")
 from Filters import median
 
 imp = IJ.getImage()
-medianFiltered = median(imp)
+medianFiltered = median(imp, 5.0)
 medianFiltered.show()
 </source>
 
