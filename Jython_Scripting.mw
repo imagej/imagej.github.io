@@ -664,7 +664,7 @@ def removeOutliers(imp, radius, threshold, bright):
   copy = Duplicator().run(imp)
   which = "Bright" if bright else "Dark"
   IJ.run(copy, "Remove Outliers...", "radius=" + str(radius) + \
-      + " threshold=" + str(threshold) + " which=" + which")
+      + " threshold=" + str(threshold) + " which=" + which)
   return copy
 </source>
 
