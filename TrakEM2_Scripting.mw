@@ -674,6 +674,7 @@ The idea here is to iterate all nodes of a tree, and determine, for each node, w
 from ini.trakem2.display import Display, Connector
 from jarray import array
 from java.awt.geom import Area
+from java.awt import Rectangle
  
 # Obtain the currently selected treeline or areatree:
 tree = Display.getFront().getActive()
@@ -699,7 +700,7 @@ for nd in tree.getRoot().getSubtreeNodes():
   for connector in cs:
     if connector.intersectsOrigin(area):
       for target in connector.getTargets(Tree):
-        target.append(target)      
+        targets.append(target)      
   if len(targets) > 0:
     outgoing[nd] = targets
  
@@ -710,7 +711,6 @@ for node, targets in outgoing.iteritems():
 
 
 Similarly, we could compute the incomming connections. There is a convenience method [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html#findConnectors() findConnectors()] in class [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html Tree] to return two lists: that of the outgoing and that of the incomming Connector instances. From these, one can easily get the connectivity graph, which you may also get by right-clicking on a Display and going for "Export - Connectivity graph...".
-
 
 == How to find out the network of all arbors, related via Connector instances ==
 
