@@ -131,6 +131,13 @@ if (null != result) {
 }
 </source>
 
+or use the static method:
+
+<source lang="java">
+ImagePlus source = ...; // any image
+ImagePlus scaled = Duplicate_and_Scale.duplicateAndScale(source, 500, 700);
+</source>
+
 === From javascript ===
 To run the plugin from a javascript, do:
 <source lang="javascript">
