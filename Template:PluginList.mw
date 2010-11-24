@@ -77,8 +77,8 @@
 * [[IJ Robot]] - file <tt>IJ_Robot</tt>  -- ''java jar file''
 * [[Record Desktop]] - file <tt>Jython.Refresh_Jython_Scripts("../scripts/Record_Desktop.py")</tt>  -- ''java jar file''
 * [[Record Window]] - file <tt>Jython.Refresh_Jython_Scripts("../scripts/Record_Window.py")</tt>  -- ''java jar file''
-* [[Collect Garbage]] - file <tt>CollectGarbage_</tt>  -- ''java jar file''
 * [[Thread killer]] - file <tt>Thread_Killer</tt>  -- ''java jar file''
+* [[Collect Garbage]] - file <tt>CollectGarbage_</tt>  -- ''java jar file''
 
 ==== Plugins > Utilities > Fiji ====
 
@@ -291,7 +291,6 @@
 
 === Plugins > LOCI ===
 
-* [[Data Browser]] - file <tt>loci.plugins.LociImporter("location=[Local machine] view=[Data Browser] stack_order=[XYCZT] group_files=true use_virtual_stack=true ")</tt>  -- ''java jar file''
 * [[Bio-Formats Importer]] - file <tt>loci.plugins.LociImporter("location=[Local machine] windowless=false ")</tt>  -- ''java jar file''
 * [[Bio-Formats Exporter]] - file <tt>loci.plugins.LociExporter("")</tt>  -- ''java jar file''
 * [[-]] - file <tt></tt>  -- ''java jar file''
@@ -300,7 +299,6 @@
 * [[Bio-Formats Macro Extensions]] - file <tt>loci.plugins.macro.LociFunctions("")</tt>  -- ''java jar file''
 * [[-]] - file <tt></tt>  -- ''java jar file''
 * [[Stack Slicer]] - file <tt>loci.plugins.Slicer("")</tt>  -- ''java jar file''
-* [[Stack Colorizer]] - file <tt>loci.plugins.Colorizer("")</tt>  -- ''java jar file''
 * [[-]] - file <tt></tt>  -- ''java jar file''
 * [[LOCI Plugins Configuration]] - file <tt>loci.plugins.config.LociConfig("")</tt>  -- ''java jar file''
 * [[LOCI Plugins Shortcut Window]] - file <tt>loci.plugins.shortcut.ShortcutPanel("")</tt>  -- ''java jar file''
@@ -410,6 +408,10 @@
 * [[Show Amira Surface]] - file <tt>isosurface.AmiraSurface</tt>  -- ''java jar file''
 * [[Open [Image IO]]] - file <tt>net.sf.ij.plugin.ImageIOOpenPlugin("simple")</tt>  -- ''java jar file''
 * [[Open with preview ...]] - file <tt>net.sf.ij.plugin.ImageIOOpenPlugin("preview")</tt>  -- ''java jar file''
+* [[-]] - file <tt></tt>  -- ''java jar file''
+* [[Bio-Formats]] - file <tt>loci.plugins.LociImporter("location=[Local machine] windowless=false ")</tt>  -- ''java jar file''
+* [[Bio-Formats (Remote)]] - file <tt>loci.plugins.LociImporter("location=[Internet]")</tt>  -- ''java jar file''
+* [[Bio-Formats (Windowless)]] - file <tt>loci.plugins.LociImporter("location=[Local machine] windowless=true ")</tt>  -- ''java jar file''
 
 ==== File > Import > QuickPALM ====
 
