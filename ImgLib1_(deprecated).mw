@@ -96,6 +96,7 @@ The performance is better in the ''ImgLib'' version, as there is no need for two
 
 * [[Using Imglib in a plugin]]
 * [[Imglib: iterating through pixel data]]
+* [[Imglib FAQ]]
 * [[Developing Imglib]]
 
 [[Category:ImgLib]]
