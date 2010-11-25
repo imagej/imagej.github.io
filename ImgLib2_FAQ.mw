@@ -1,0 +1,10 @@
+= How to create a new Image from scratch? =
+
+There are three parts to it: the data type, the dimension and the storage strategy. Example: If you already have an image ''first'' whose dimensions you want to copy, and the result should be of float type and be stored in a single large array, you can use this snippet of code:
+
+<source lang="java">
+ImageFactory<FloatType> factory = new ImageFactory<FloatType>(new FloatType(), new ArrayContainerFactory());
+Image<FloatType> result = factory.createImage(first.getDimensions(), "result"); 
+</source>
+
+[[Category:ImgLib]]
