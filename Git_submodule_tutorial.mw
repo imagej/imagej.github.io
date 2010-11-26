@@ -1,6 +1,6 @@
 == Submodules in Fiji ==
 
-<p>Fiji is hosted on a main git repository which contains several declared submodules such as VIB and TrakEM2.</p>
+<p>Fiji is hosted on a main git repository which contains several declared submodules such as TrakEM2.</p>
 
 <p>With git, any git command executed within any subdirectory of the repository affects the overall git repository.</p>
 
