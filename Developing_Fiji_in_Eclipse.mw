@@ -75,7 +75,6 @@ Eclipse will add all found JRE system libraries automatically.  Choose Fiji's JR
 * ImageJA/ij
 * mpicbg
 * TrakEM2
-* VIB
 
 If you want to develop a plugin without a separate submodule, put the respective folder under <code>fiji/src-plugins</code> into the source list.
 
@@ -97,15 +96,10 @@ Add all jars in <code>fiji/jar</code>s and all jars in <code>fiji/java/linux-amd
 | fiji/TrakEM2
 | fiji/plugins/TrakEM2_.jar
 |-
-| fiji/VIB
-| fiji/plugins/VIB_.jar
-|-
 | ...
 |}
 
 After finishing this, Eclipse once builds the Fiji project.  There should not be any error message but several thousands of warnings that mostly come from Java1.4-style code or not required imports, variables or methods in the sources of authors who do not use an IDE as Eclipse and thus have no automatic assistance at cleaning up.  All these warnings can be ignored  having not effect to the functionality of the code.
-
-
 
 ==Add Fiji Build==
 [[Image:Screenshot-Fiji_Builder.png|thumb|Add Fiji Builder|300px]]
