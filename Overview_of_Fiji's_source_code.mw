@@ -12,7 +12,7 @@ The generated launcher is ''<Fiji-root>/fiji'' (or on Windows, ''fiji.exe'').
 
 We try to [[Why Closed-Source Is Wrong|avoid]] plugins without sources, but even those are not tracked in <Fiji-root>/plugins/, but rather in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=staged-plugins;hb=HEAD <Fiji-root>/staged-plugins].  The reason is that we would want to provide our very own ''plugins.config'' files with them, i.e. we want to have custom locations/names of the plugins contained in the ''.jar'' file.
 
-Such ''plugins.config'' files that are to be inserted in certain ''.jar'' also live in ''staged-plugins'', as ''<basename-of-jar>.config''.  Example: the plugins.config for ''VIB_.jar'' is stored in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=staged-plugins/VIB_.config;hb=HEAD <Fiji-root>/staged-plugins/VIB_.config].
+Such ''plugins.config'' files that are to be inserted in certain ''.jar'' also live in ''staged-plugins'', as ''<basename-of-jar>.config''.  Example: the plugins.config for ''loci_tools.jar'' is stored in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=staged-plugins/loci_tools.config;hb=HEAD <Fiji-root>/staged-plugins/loci_tools.config].
 
 The sources for many plugins shipped with (and maintained in) Fiji live in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins;hb=HEAD <Fiji-root>/src-plugins].  The subdirectories in ''src-plugins'' mostly correspond to the basename of the .jar file generated from it.  Example: the sources of ''plugins/Fiji_Updater.jar'' are stored in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Fiji_Updater;hb=HEAD <Fiji-root>/src-plugins/Fiji_Updater/].
 
@@ -24,7 +24,7 @@ Some of the libraries' sources are stored in ''src-plugins/'' (in subdirectories
 
 == Submodules ==
 
-Some components of Fiji are stored in ''submodules'', i.e. in [[Git]] repositories of their own right.  This is the case for [[ImageJA]], many third-party libraries, and some plugins collections that existed before Fiji, such as [[TrakEM2]] or VIB.
+Some components of Fiji are stored in ''submodules'', i.e. in [[Git]] repositories of their own right.  This is the case for [[ImageJA]], many third-party libraries, and some plugins collections that existed before Fiji, such as [[TrakEM2]] or [[Bio-Formats]].
 
 These submodules are subdirectories in the <Fiji-root>, and they may, or may not, be checked out.
 
@@ -32,7 +32,7 @@ Every submodule is "committed" at a certain revision, i.e. Git not only records 
 
 If submodules are checked out, you can cd into the respective directories and work with them as with other Git repositories.
 
-Our policy, however, is that you do not need to check out the submodules if you do not want to work <u>on</u> them: the result of the most recently committed revision needs to be committed as binary in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=precompiled;hb=HEAD <Fiji-root>/precompiled/].  For example, the ''.jar'' file generated from the ''VIB'' submodule is committed as ''precompiled/VIB_.jar''.
+Our policy, however, is that you do not need to check out the submodules if you do not want to work <u>on</u> them: the result of the most recently committed revision needs to be committed as binary in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=precompiled;hb=HEAD <Fiji-root>/precompiled/].  For example, the ''.jar'' file generated from the ''bio-formats'' submodule is committed as ''precompiled/loci_tools.jar''.
 
 == The Fiji Build system ==
 
