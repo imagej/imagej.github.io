@@ -522,6 +522,11 @@
 * [[start viewer]] - file <tt>view5d.View5D_("")</tt>  -- ''java jar file''
 
 
+=== Image > Hyperstacks ===
+
+* [[Temporal-Color Code]] - file <tt>TemporalColorCoder</tt>  -- ''java jar file''
+
+
 === Image > Video Editing ===
 
 * [[New Video]] - file <tt>video2.New_Video</tt>  -- ''java jar file''
