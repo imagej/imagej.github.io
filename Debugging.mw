@@ -2,6 +2,12 @@
 
 ImageJ itself outputs a lot of debug messages, when asked for them: Simply check ''Debug mode'' in the dialog popping up when clicking on the ''Edit>Options>Misc...'' menu item.
 
+= Debugging hangs =
+
+When the Java VM hangs, the reason might be a dead-lock. You can often find out what is happening by reading the thread dump which you can get via ''Ctrl+\'' in the console where you started Fiji. On Linux and MacOSX, you can also send the signal ''3'' via the ''kill'' command.
+
+You can also attach to the JVM using the ''jvisualvm'' program that you can find in ''java/<platform>/<jdk>/bin/''.
+
 = Debugging hard JVM crashes with gdb =
 
 There are substantial problems with gdb when starting the Java VM; either gdb gets confused by segmentation faults (used by the JVM to handle NullPointerExceptions in an efficient manner), or it gets confused by the threading system -- unless you compile gdb yourself.
