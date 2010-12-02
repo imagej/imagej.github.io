@@ -445,8 +445,9 @@
 
 * [[Spirals (Macro)]] - file <tt>ij.plugin.Macro_Runner("../macros/spirals.txt")</tt>  -- ''java jar file''
 * [[Adelson's Squares (Macro)]] - file <tt>ij.plugin.Macro_Runner("../macros/grey-squares.ijm")</tt>  -- ''java jar file''
-* [[Shepp-Logan Phantom (Plugin)]] - file <tt>SheppLogan_</tt>  -- ''java jar file''
 * [[Malaria Sporozoites (9.2MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/_malaria_parasites.tif")</tt>  -- ''java jar file''
+* [[First-instar brain (6.3MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/first-instar-brain.zip")</tt>  -- ''java jar file''
+* [[Shepp-Logan Phantom (Plugin)]] - file <tt>SheppLogan_</tt>  -- ''java jar file''
 * [[Sintered Alumina (2.6MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/Sintered_Alumina.tif.zip")</tt>  -- ''java jar file''
 
 
