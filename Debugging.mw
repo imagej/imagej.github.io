@@ -2,7 +2,7 @@
 
 ImageJ itself outputs a lot of debug messages, when asked for them: Simply check ''Debug mode'' in the dialog popping up when clicking on the ''Edit>Options>Misc...'' menu item.
 
-= Debugging hangs =
+= Debugging JMV hangs =
 
 When the Java VM hangs, the reason might be a dead-lock. You can often find out what is happening by reading the thread dump which you can get via ''Ctrl+\'' in the console where you started Fiji. On Linux and MacOSX, you can also send the signal ''3'' via the ''kill'' command.
 
@@ -95,6 +95,29 @@ Okay, so here you go, a little demonstration:
  main[1] cont
  >
  The application exited
+
+= Inspecting serialized objects =
+
+If you have a file with a serialized object, you can use this Beanshell in the [[Script Editor]] to open a tree view of the object (double-click to open/close the branches of the view):
+
+<source lang="java">
+import fiji.debugging.Object_Inspector;
+
+import ij.io.OpenDialog;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+dialog = new OpenDialog("Classifier", null);
+if (dialog.getDirectory() != null) {
+	path = dialog.getDirectory() + "/" + dialog.getFileName();
+	in = new FileInputStream(path);
+	in = new ObjectInputStream(in);
+	object = in.readObject();
+	in.close();
+	Object_Inspector.openFrame("classifier", object);
+}
+</source>
 
 = Debugging Java3D issues =
 
