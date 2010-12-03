@@ -557,6 +557,8 @@ The stacks are accessed in a virtual way, so even 1000 (one thousand) stacks wil
 
 One could easily add more color channels.
 
+The script uses [[Imglib]] scripting to normalize images and generate the color composite. See this [http://www.ini.uzh.ch/~acardona/fiji-tutorial/#s10 imglib scripting tutorial] for in-depth explanations.
+
 <source lang="python">
 # 2010-12-03 Albert Cardona and Arnim Jenett
 # At HHMI Janelia Farm, Fiji tutorials class
