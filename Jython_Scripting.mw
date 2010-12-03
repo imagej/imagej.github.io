@@ -546,6 +546,164 @@ extractChannel(imp, 1, 1).show()
 
 Notice that color channels, stack slices and time frames are all 1-based. For example, if you have 3 color channels, then these have indices 1, 2, and 3 (not 0, 1 and 2).
 
+
+=== Visualize any number of TIFF stacks in a single composite multi-color image stack ===
+
+Suppose you have 100 stacks of <i>Drosophila</i> fly brains, each with different neurons labeled in green. Suppose that you have registered all these confocal stacks. Were you to overlay them, you would see whether the labeled neurons overlap in 3D space or not.
+
+Here is a script to do that. First, it asks for a directory containing any number of TIF image stacks. It assumes all stacks have the same dimensions, and that they are all single channel (i.e. just red, or just green, etc.). Then, it displays a small window with 5 colors: red, green, blue, orange, and gray. Any f the stacks in the directory can be chosen to be shown in any given color. So you  will show up to 5 stacks at the same time.
+
+The stacks are accessed in a virtual way, so even 1000 (one thousand) stacks will be managed just fine in small laptop.
+
+One could easily add more color channels.
+
+<source lang="python">
+# 2010-12-03 Albert Cardona and Arnim Jenett
+# At HHMI Janelia Farm, Fiji tutorials class
+#
+# Select a directory with multiple image stacks
+# all of the same dimensions, and show a channel
+# chooser window to visualize up to 5 of them
+# in red, green, blue, orange, and gray.
+# 
+# The stacks are all virtual, opened via LOCI
+# with BFVirtualStack. The composition of the
+# RGB ColorProcessor is done with the 
+# script.imglib library.
+# 
+# Each color channel is shown normalized.
+# Currently works only with TIF stacks,
+# and it will interpret them as single-channel.
+
+
+from loci.plugins.util import BFVirtualStack
+from loci.formats import ChannelSeparator
+from ij.io import DirectoryChooser
+import os
+from javax.swing import JScrollPane, JPanel, JComboBox, JLabel, BoxLayout, JFrame
+from java.awt import Color
+from java.awt.event import ActionListener
+from script.imglib.math import Compute, Or, Multiply
+from script.imglib.algorithm import Normalize
+from script.imglib.color import Red, Green, Blue, RGBA
+from mpicbg.imglib.image.display.imagej import ImageJFunctions as IJF
+
+
+# Choose a directory with lots of tif stacks
+dc = DirectoryChooser("Choose directory with stacks")
+srcDir = dc.getDirectory()
+
+# Open each tif stack as a virtual BFVirtualStack
+bfvs = []
+names = []
+for filename in os.listdir(srcDir):
+  if filename.endswith(".tif"):
+    cs = ChannelSeparator()
+    names.append(srcDir + filename)
+    cs.setId(srcDir + filename)
+    bfvs.append( BFVirtualStack(srcDir + filename, cs, False, False, False) )
+
+names.sort()
+names = ["None"] + names
+
+# Predefine a set of desired color channels
+colors = ["Red", "Green", "Blue", "Orange", "Gray"]
+
+table = {colors[0] : 1, colors[1] : 0, colors[2] : 0, colors[3] : 0, colors[4] : 0}
+# 0 is None, 1 is the first
+
+def asImg(color, section):
+  global bfvs, table
+  index = table[color]
+  if 0 == index:
+    return 0  # is "None" color
+  return IJF.wrap(ImagePlus("", bfvs[index-1].getProcessor(section)))
+
+def maybeNormalize(fn):
+  """ Do not normalize if no images are present. """
+  cursors = []
+  fn.findCursors(cursors)
+  if len(cursors) > 0:
+    return Multiply(Normalize(fn), 255)
+  return fn
+
+class VS(VirtualStack):
+  def __init__(self):
+    self.last = None
+  def getProcessor(self, i):
+    """ Channel color composition into a single RGB image, as ColorProcessor """
+    global table, imp, asImg
+    red =  asImg(colors[0], i)
+    green = asImg(colors[1], i)
+    blue = asImg(colors[2], i)
+    # Add the orange
+    orange = asImg(colors[3], i)
+    red = Or(red, orange) # 'or' the orange
+    green = Or(green, Multiply(orange, 0.5))  # 'or' half the orange
+    # Add the gray
+    gray = asImg(colors[4], i)
+    red = Or(red, gray)
+    green =  Or(green, gray)
+    blue = Or(blue, gray)
+    # Transform to RGB by normalizing and scaling to 255
+    red = maybeNormalize(red)
+    green = maybeNormalize(green)
+    blue = maybeNormalize(blue)
+    # Compose
+    rgb = Compute.inRGBA(RGBA(red, green, blue))
+    self.last = IJF.displayAsVirtualStack(rgb).getProcessor()
+    return self.last
+  def getSize(self):
+    return bfvs[0].getSize()
+  def getSliceLabel(self, i):
+    return str(i)
+  def getWidth(self):
+    return self.last.getWidth()
+  def getHeight(self):
+    return self.last.getHeight()
+  def getPixels(self, i):
+    return self.getProcessor(i).getPixels()
+  def setPixels(self, pix, i):
+    pass
+
+
+# Create a new image stack
+from java.io import File
+ourImp = ImagePlus(File(srcDir).getName(), VS())
+ourImp.show()
+
+# Create a bunch of panels, one for each color channel
+all = JPanel()
+layout = BoxLayout(all, BoxLayout.Y_AXIS)
+all.setLayout(layout)
+
+# GUI to choose which stacks is shown in which channel
+class Listener(ActionListener):
+  def __init__(self, color, choice, imp):
+    self.color = color
+    self.choice = choice
+    self.imp = imp
+  def actionPerformed(self, event):
+    global table
+    table[self.color] = self.choice.getSelectedIndex()
+    self.imp.updateAndRepaintWindow()
+
+for color in colors:
+  panel = JPanel()
+  panel.add(JLabel(color))
+  choice = JComboBox(names)
+  choice.setSelectedIndex(table[color])
+  choice.addActionListener(Listener(color, choice, ourImp))
+  panel.add(choice)
+  all.add(panel)
+
+frame = JFrame("Channels")
+frame.getContentPane().add(all)
+frame.pack()
+
+frame.setVisible(True)
+</source>
+
 == Tips and Tricks ==
 
 === Getting a list of all members in one package ===
