@@ -601,7 +601,7 @@ names = []
 for filename in os.listdir(srcDir):
   if filename.endswith(".tif"):
     cs = ChannelSeparator()
-    names.append(srcDir + filename)
+    names.append(filename)
     cs.setId(srcDir + filename)
     bfvs.append( BFVirtualStack(srcDir + filename, cs, False, False, False) )
 
