@@ -551,7 +551,7 @@ Notice that color channels, stack slices and time frames are all 1-based. For ex
 
 Suppose you have 100 stacks of <i>Drosophila</i> fly brains, each with different neurons labeled in green. Suppose that you have registered all these confocal stacks. Were you to overlay them, you would see whether the labeled neurons overlap in 3D space or not.
 
-Here is a script to do that. First, it asks for a directory containing any number of TIF image stacks. It assumes all stacks have the same dimensions, and that they are all single channel (i.e. just red, or just green, etc.). Then, it displays a small window with 5 colors: red, green, blue, orange, and gray. Any f the stacks in the directory can be chosen to be shown in any given color. So you  will show up to 5 stacks at the same time.
+Here is a script to do that. First, it asks for a directory containing any number of TIF image stacks. It assumes all stacks have the same dimensions, and that they are all single channel (i.e. just red, or just green, etc.). Then, it displays a small window with 5 colors: red, green, blue, orange, and gray. Any of the hundreds of stacks in the directory can be assigned to each color channel. So you will see up to 5 stacks at the same time, their colors overlaid.
 
 The stacks are accessed in a virtual way, so even 1000 (one thousand) stacks will be managed just fine in small laptop.
 
