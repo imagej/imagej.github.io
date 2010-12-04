@@ -2,11 +2,12 @@
 | software               = ImageJ / Fiji
 | name                   = Series Labeler
 | author                 = Dan White / Tom Kazimiers
+| maintainer          = dan at chalkie.org.uk
 | filename               = 
 | source                 = 
-| released               = 
+| released               = 2nd Dec 2010
 | latest version         = 
-| status                 = development - may be buggy
+| status                 = beta - maybe an odd bug. 
 | category               = [[:Category:Image annotation|Image annotation]]
 | website                = [http://pacific.mpi-cbg.de Fiji]
 }}
@@ -21,17 +22,19 @@ refine and enhance the functionality for instance by adding
 the preview functionality suggested by Michael Weber.
 Series Labeler is not a drop in replacement for Time Stamper,
 or Label... 
-since it does not do hyperstacks or macro recording.
+since it does not work with hyperstacks or allow macro recording.
 
 ==Screen Shot of features==
 [[Image:Series_Labeler_Screen_shot.png]]
 
 
 ==What it works with==
-Series Labeler handles any kind of stack, t, z
-or c (eg spectral series).
+Series Labeler handles any kind of stack: time (t), z (3rd spatial dimension)
+or channel (c, eg. spectral series). It does not work with hyperstacks, see below. 
+
+==It reads in image metadata for default settings==
 When meta data is available in the image, ie. for calibration 
-of time interval, z spacing, etc it is read into the GUI as default values, 
+of time interval, z spacing, etc. it is read into the GUI as default values, 
 so you have a better chance of getting the values and units correct! 
 
 ==How to use Series Labeler==
@@ -42,6 +45,7 @@ Make sure its the active image by clicking on it, then....
 *Choose the type of stack in the General Settings - Stack Type
 *Choose the type of units and how to format them in the Units_Formatting panel. 
 **Choose the label unit from the drop down list or choose your own custom one. 
+***Custom labels can be anything you like! If you don't see the one you want in the drop down list, just add it here.
 **"Time series / movie" can have Decimal (0.45 sec) or Digital (00:00:00) formats, as well as a custom format the you can type in the given text field.  
 ***Custom formats follow patterns as explained at Java SimpleDateFormat [http://download.oracle.com/docs/cd/E17476_01/javase/1.4.2/docs/api/java/text/SimpleDateFormat.html Java SimpleDateFormat]. H is hours, m is minutes, s is seconds, and S is ms.Try custom formats like HH:mm:ss or ss.SSS  etc.
 **"Z-stack" can have length units or a custom format. 
@@ -58,8 +62,8 @@ Make sure its the active image by clicking on it, then....
 ==It doesn't work with hyperstacks or macros...==
 Hyperstacks and macro recording are not supported yet. 
 
-===why?===
+===why not?===
 Hyperstacks can be labeled with the imageJ builtin Label command, if you want to do that. Series Labeler doesn't work with them, as there are many tricky cases to include when you have all the extra gadgets you have in this plugin. What if you want to label time, z and channel all at the same time? Hmmmm...
 
 Macro recording is broken due to the use of a non blocking (non modal)
-GUI... which is needed for the preview functionality and being able to use built in imageJ font and color choosers. To fix this we need to make some infrastructure in ImageJ/Fiji.
+GUI... which is needed for the preview functionality and being able to use built in imageJ font and color choosers. To fix this we need to make some new infrastructure in ImageJ/Fiji.... or wait for imageJ2 n-dimensional data support.
