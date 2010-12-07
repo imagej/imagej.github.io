@@ -72,12 +72,10 @@
 === Plugins > Utilities ===
 
 * [[Close All Without Saving]] - file <tt>Close_All_Without_Saving.txt</tt>  -- ''macro''
-* [[CPU Meter]] - file <tt>CPU_Meter</tt>  -- ''java jar file''
 * [[Repeat a Recent Command]] - file <tt>fiji.util.Recent_Commands</tt>  -- ''java jar file''
 * [[IJ Robot]] - file <tt>IJ_Robot</tt>  -- ''java jar file''
 * [[Record Desktop]] - file <tt>Jython.Refresh_Jython_Scripts("../scripts/Record_Desktop.py")</tt>  -- ''java jar file''
 * [[Record Window]] - file <tt>Jython.Refresh_Jython_Scripts("../scripts/Record_Window.py")</tt>  -- ''java jar file''
-* [[Thread killer]] - file <tt>Thread_Killer</tt>  -- ''java jar file''
 * [[Collect Garbage]] - file <tt>CollectGarbage_</tt>  -- ''java jar file''
 
 ==== Plugins > Utilities > Fiji ====
@@ -155,38 +153,6 @@
 * [[Open Source for Menu Item]] - file <tt>fiji.scripting.OpenSourceForMenuItem</tt>  -- ''java jar file''
 
 
-=== Plugins > Feature Extraction ===
-
-* [[Extract SIFT Correspondences]] - file <tt>SIFT_ExtractPointRoi</tt>  -- ''java jar file''
-* [[Extract MOPS Correspondences]] - file <tt>MOPS_ExtractPointRoi</tt>  -- ''java jar file''
-
-==== Plugins > Feature Extraction > FeatureJ ====
-
-* [[FeatureJ Derivatives]] - file <tt>FJ_Derivatives</tt>  -- ''java jar file''
-* [[FeatureJ Edges]] - file <tt>FJ_Edges</tt>  -- ''java jar file''
-* [[FeatureJ Hessian]] - file <tt>FJ_Hessian</tt>  -- ''java jar file''
-* [[FeatureJ Laplacian]] - file <tt>FJ_Laplacian</tt>  -- ''java jar file''
-* [[FeatureJ Options]] - file <tt>FJ_Options</tt>  -- ''java jar file''
-* [[FeatureJ Panel]] - file <tt>FJ_Panel</tt>  -- ''java jar file''
-* [[FeatureJ Statistics]] - file <tt>FJ_Statistics</tt>  -- ''java jar file''
-* [[FeatureJ Structure]] - file <tt>FJ_Structure</tt>  -- ''java jar file''
-
-
-=== Plugins > Segmentation ===
-
-* [[Graph Cut]] - file <tt>Graph_Cut</tt>  -- ''java jar file''
-* [[Robust Automatic Threshold Selection]] - file <tt>RATS_</tt>  -- ''java jar file''
-* [[Simple Neurite Tracer]] - file <tt>tracing.Simple_Neurite_Tracer</tt>  -- ''java jar file''
-* [[SIOX: Simple Interactive Object Extraction]] - file <tt>siox.Siox_Segmentation</tt>  -- ''java jar file''
-* [[Apply saved SIOX segmentator]] - file <tt>siox.Load_Segmentation</tt>  -- ''java jar file''
-* [[Snakuscule]] - file <tt>Snakuscule_</tt>  -- ''java jar file''
-* [[Statistical Region Merging]] - file <tt>SRM_</tt>  -- ''java jar file''
-* [[Trainable Segmentation]] - file <tt>trainableSegmentation.Trainable_Segmentation</tt>  -- ''java jar file''
-* [[Segmentation Editor]] - file <tt>Segmentation_Editor</tt>  -- ''java jar file''
-* [[Blow/Lasso Tool]] - file <tt>plugin.Lasso_</tt>  -- ''java jar file''
-* [[Level Sets]] - file <tt>levelsets.ij.LevelSet</tt>  -- ''java jar file''
-
-
 === Plugins > Image5D ===
 
 * [[New Image5D]] - file <tt>New_Image5D("")</tt>  -- ''java jar file''
@@ -211,20 +177,6 @@
 * [[Transfer Channel Settings]] - file <tt>Transfer_Channel_Settings("")</tt>  -- ''java jar file''
 
 
-=== Plugins > Registration ===
-
-* [[Correct 3D drift]] - file <tt>fiji.scripting.jython.Jython_Script_Runner("/scripts/Correct_3D_drift.py")</tt>  -- ''java jar file''
-* [[StackReg]] - file <tt>StackReg_</tt>  -- ''java jar file''
-* [[TurboReg ]] - file <tt>TurboReg_</tt>  -- ''java jar file''
-* [[UnwarpJ]] - file <tt>UnwarpJ_</tt>  -- ''java jar file''
-* [[Align Image by line ROI]] - file <tt>Align_Image</tt>  -- ''java jar file''
-* [[Rigid Registration]] - file <tt>vib.RigidRegistration_</tt>  -- ''java jar file''
-* [[Moving Least Squares]] - file <tt>Moving_Least_Squares</tt>  -- ''java jar file''
-* [[bUnwarpJ]] - file <tt>bunwarpj.bUnwarpJ_</tt>  -- ''java jar file''
-* [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt>  -- ''java jar file''
-* [[Register Virtual Stack Slices]] - file <tt>register_virtual_stack.Register_Virtual_Stack_MT</tt>  -- ''java jar file''
-
-
 === Plugins > Tracking ===
 
 * [[MTrack2 ]] - file <tt>MTrack2_</tt>  -- ''java jar file''
@@ -232,22 +184,17 @@
 * [[ToAST]] - file <tt>ToAST25_</tt>  -- ''java jar file''
 
 
-=== Plugins > Stitching ===
+=== Plugins > Segmentation ===
 
-* [[MosaicJ]] - file <tt>MosaicJ_</tt>  -- ''java jar file''
-* [[2D Stitching]] - file <tt>Stitching_2D</tt>  -- ''java jar file''
-* [[3D Stitching]] - file <tt>Stitching_3D</tt>  -- ''java jar file''
-* [[Stitch Grid of Images]] - file <tt>Stitch_Image_Grid</tt>  -- ''java jar file''
-* [[Stitch Sequence of Grids of Images]] - file <tt>Stitch_Image_Grid_Sequence</tt>  -- ''java jar file''
-* [[Stitch Collection of Images]] - file <tt>Stitch_Image_Collection</tt>  -- ''java jar file''
-* [[Stitch Directory with Images (unknown configuration)]] - file <tt>Stitch_Image_Directory</tt>  -- ''java jar file''
-
-
-=== Plugins > SPIM Registration ===
-
-* [[Registration]] - file <tt>SPIM_Registration</tt>  -- ''java jar file''
-* [[Advanced Registration]] - file <tt>SPIM_Registration_File</tt>  -- ''java jar file''
-* [[MultiChannel Registration]] - file <tt>MultiChannel_SPIM_Registration</tt>  -- ''java jar file''
+* [[Robust Automatic Threshold Selection]] - file <tt>RATS_</tt>  -- ''java jar file''
+* [[Simple Neurite Tracer]] - file <tt>tracing.Simple_Neurite_Tracer</tt>  -- ''java jar file''
+* [[SIOX: Simple Interactive Object Extraction]] - file <tt>siox.Siox_Segmentation</tt>  -- ''java jar file''
+* [[Apply saved SIOX segmentator]] - file <tt>siox.Load_Segmentation</tt>  -- ''java jar file''
+* [[Statistical Region Merging]] - file <tt>SRM_</tt>  -- ''java jar file''
+* [[Trainable Segmentation]] - file <tt>trainableSegmentation.Trainable_Segmentation</tt>  -- ''java jar file''
+* [[Segmentation Editor]] - file <tt>Segmentation_Editor</tt>  -- ''java jar file''
+* [[Blow/Lasso Tool]] - file <tt>plugin.Lasso_</tt>  -- ''java jar file''
+* [[Level Sets]] - file <tt>levelsets.ij.LevelSet</tt>  -- ''java jar file''
 
 
 === Plugins > Transform ===
@@ -263,19 +210,26 @@
 * [[Landmark Correspondences]] - file <tt>Transform_Roi</tt>  -- ''java jar file''
 * [[Transform Virtual Stack Slices]] - file <tt>register_virtual_stack.Transform_Virtual_Stack_MT</tt>  -- ''java jar file''
 
-==== Plugins > Transform > TransformJ ====
 
-* [[TransformJ Affine]] - file <tt>TJ_Affine</tt>  -- ''java jar file''
-* [[TransformJ Crop]] - file <tt>TJ_Crop</tt>  -- ''java jar file''
-* [[TransformJ Embed]] - file <tt>TJ_Embed</tt>  -- ''java jar file''
-* [[TransformJ Matrix]] - file <tt>TJ_Matrix</tt>  -- ''java jar file''
-* [[TransformJ Mirror]] - file <tt>TJ_Mirror</tt>  -- ''java jar file''
-* [[TransformJ Options]] - file <tt>TJ_Options</tt>  -- ''java jar file''
-* [[TransformJ Panel]] - file <tt>TJ_Panel</tt>  -- ''java jar file''
-* [[TransformJ Rotate]] - file <tt>TJ_Rotate</tt>  -- ''java jar file''
-* [[TransformJ Scale]] - file <tt>TJ_Scale</tt>  -- ''java jar file''
-* [[TransformJ Translate]] - file <tt>TJ_Translate</tt>  -- ''java jar file''
-* [[TransformJ Turn]] - file <tt>TJ_Turn</tt>  -- ''java jar file''
+=== Plugins > Stitching ===
+
+* [[2D Stitching]] - file <tt>Stitching_2D</tt>  -- ''java jar file''
+* [[3D Stitching]] - file <tt>Stitching_3D</tt>  -- ''java jar file''
+* [[Stitch Grid of Images]] - file <tt>Stitch_Image_Grid</tt>  -- ''java jar file''
+* [[Stitch Sequence of Grids of Images]] - file <tt>Stitch_Image_Grid_Sequence</tt>  -- ''java jar file''
+* [[Stitch Collection of Images]] - file <tt>Stitch_Image_Collection</tt>  -- ''java jar file''
+* [[Stitch Directory with Images (unknown configuration)]] - file <tt>Stitch_Image_Directory</tt>  -- ''java jar file''
+
+
+=== Plugins > Registration ===
+
+* [[TurboReg ]] - file <tt>TurboReg_</tt>  -- ''java jar file''
+* [[Align Image by line ROI]] - file <tt>Align_Image</tt>  -- ''java jar file''
+* [[Rigid Registration]] - file <tt>vib.RigidRegistration_</tt>  -- ''java jar file''
+* [[Moving Least Squares]] - file <tt>Moving_Least_Squares</tt>  -- ''java jar file''
+* [[bUnwarpJ]] - file <tt>bunwarpj.bUnwarpJ_</tt>  -- ''java jar file''
+* [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt>  -- ''java jar file''
+* [[Register Virtual Stack Slices]] - file <tt>register_virtual_stack.Register_Virtual_Stack_MT</tt>  -- ''java jar file''
 
 
 === Plugins > Stacks ===
@@ -304,6 +258,12 @@
 * [[LOCI Plugins Shortcut Window]] - file <tt>loci.plugins.shortcut.ShortcutPanel("")</tt>  -- ''java jar file''
 * [[-]] - file <tt></tt>  -- ''java jar file''
 * [[Update LOCI Plugins]] - file <tt>loci.plugins.Updater("")</tt>  -- ''java jar file''
+
+
+=== Plugins > Feature Extraction ===
+
+* [[Extract SIFT Correspondences]] - file <tt>SIFT_ExtractPointRoi</tt>  -- ''java jar file''
+* [[Extract MOPS Correspondences]] - file <tt>MOPS_ExtractPointRoi</tt>  -- ''java jar file''
 
 
 
@@ -346,34 +306,8 @@
 
 === Analyze > Tools ===
 
-* [[PointPicker]] - file <tt>PointPicker_</tt>  -- ''java jar file''
 * [[Sync Windows]] - file <tt>Sync_Windows("")</tt>  -- ''java jar file''
 * [[Sync Measure 3D]] - file <tt>Sync_Measure_3D("")</tt>  -- ''java jar file''
-
-
-=== Analyze > QuickPALM ===
-
-* [[Analyse Particles]] - file <tt>QuickPALM.Analyse_Particles</tt>  -- ''java jar file''
-* [[Stop Analyse Particles (kills the threads)]] - file <tt>QuickPALM.Stop_processing</tt>  -- ''java jar file''
-* [[Reconstruct Dataset]] - file <tt>QuickPALM.Reconstruct_Dataset</tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[Create 3D calibration (requires astigmatism)]] - file <tt>QuickPALM.Create_3D_calibration</tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[Correct Particles Drift (based on ROI)]] - file <tt>QuickPALM.Correct_Drift2</tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[Fast VirtualStack Opener]] - file <tt>QuickPALM.Run_MyMacro("Fast_VirtualStack_Opener.txt")</tt>  -- ''java jar file''
-* [[Load Particles (.tif file - fast)]] - file <tt>QuickPALM.Load_particles_tableFromImg</tt>  -- ''java jar file''
-* [[Save Particles (.tif file - fast)]] - file <tt>QuickPALM.Save_particles_table2img</tt>  -- ''java jar file''
-* [[Sort Particles by frame (in a .tif particle table file)]] - file <tt>QuickPALM.Run_MyMacro("Sort_particles.txt")</tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[Update QuickPALM]] - file <tt>QuickPALM.Run_MyMacro("Update_.txt")</tt>  -- ''java jar file''
-* [[About...]] - file <tt>QuickPALM.Run_MyMacro("About_.txt")</tt>  -- ''java jar file''
-
-
-=== Analyze > TopoJ ===
-
-* [[Compute Topography]] - file <tt>Compute_Topography</tt>  -- ''java jar file''
-* [[Remove Slope]] - file <tt>Remove_Slope</tt>  -- ''java jar file''
 
 
 
@@ -413,12 +347,6 @@
 * [[Bio-Formats (Remote)]] - file <tt>loci.plugins.LociImporter("location=[Internet]")</tt>  -- ''java jar file''
 * [[Bio-Formats (Windowless)]] - file <tt>loci.plugins.LociImporter("location=[Local machine] windowless=true ")</tt>  -- ''java jar file''
 
-==== File > Import > QuickPALM ====
-
-* [[ Open VirtualStack]] - file <tt>QuickPALM.Run_MyMacro("Fast_VirtualStack_Opener.txt")</tt>  -- ''java jar file''
-* [[ Load Particles (.tif file - fast)]] - file <tt>QuickPALM.Load_particles_tableFromImg</tt>  -- ''java jar file''
-* [[ Save Particles (.tif file - fast)]] - file <tt>QuickPALM.Save_particles_table2img</tt>  -- ''java jar file''
-
 
 === File > Save As ===
 
@@ -439,16 +367,6 @@
 * [[PNG ...]] - file <tt>net.sf.ij.plugin.ImageIOSaveAsPlugin("PNG")</tt>  -- ''java jar file''
 * [[PNM ...]] - file <tt>net.sf.ij.plugin.ImageIOSaveAsPlugin("PNM")</tt>  -- ''java jar file''
 * [[Compressed TIFF ...]] - file <tt>net.sf.ij.plugin.ImageIOSaveAsPlugin("TIFF")</tt>  -- ''java jar file''
-
-
-=== File > Open Samples ===
-
-* [[Spirals (Macro)]] - file <tt>ij.plugin.Macro_Runner("../macros/spirals.txt")</tt>  -- ''java jar file''
-* [[Adelson's Squares (Macro)]] - file <tt>ij.plugin.Macro_Runner("../macros/grey-squares.ijm")</tt>  -- ''java jar file''
-* [[Malaria Sporozoites (9.2MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/_malaria_parasites.tif")</tt>  -- ''java jar file''
-* [[First-instar brain (6.3MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/first-instar-brain.zip")</tt>  -- ''java jar file''
-* [[Shepp-Logan Phantom (Plugin)]] - file <tt>SheppLogan_</tt>  -- ''java jar file''
-* [[Sintered Alumina (2.6MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/Sintered_Alumina.tif.zip")</tt>  -- ''java jar file''
 
 
 === File > New ===
@@ -523,11 +441,6 @@
 * [[start viewer]] - file <tt>view5d.View5D_("")</tt>  -- ''java jar file''
 
 
-=== Image > Hyperstacks ===
-
-* [[Temporal-Color Code]] - file <tt>TemporalColorCoder</tt>  -- ''java jar file''
-
-
 === Image > Video Editing ===
 
 * [[New Video]] - file <tt>video2.New_Video</tt>  -- ''java jar file''
@@ -554,17 +467,14 @@
 === Help > About Plugins ===
 
 * [[Color Histogram...]] - file <tt>ColorHistogram_("about")</tt>  -- ''java jar file''
-* [[FeatureJ...]] - file <tt>FJ_Website</tt>  -- ''java jar file''
 * [[Gray Morphology...]] - file <tt>GrayMorphology_("about")</tt>  -- ''java jar file''
 * [[Image5D...]] - file <tt>I5D_about("about")</tt>  -- ''java jar file''
 * [[LSMReader...]] - file <tt>LSM_Reader("about")</tt>  -- ''java jar file''
 * [[LSMToolbox...]] - file <tt>LSM_Toolbox("about")</tt>  -- ''java jar file''
 * [[Robust Automatic Threshold Selection ]] - file <tt>About_RATS</tt>  -- ''java jar file''
-* [[RandomJ...]] - file <tt>RJ_Website</tt>  -- ''java jar file''
 * [[Sync Windows...]] - file <tt>Sync_Windows("about")</tt>  -- ''java jar file''
 * [[Sync Measure 3D...]] - file <tt>Sync_Measure_3D("about")</tt>  -- ''java jar file''
 * [[About TrakEM2...]] - file <tt>ini.trakem2.utils.Utils</tt>  -- ''java jar file''
-* [[TransformJ...]] - file <tt>TJ_Website</tt>  -- ''java jar file''
 * [[About bUnwarpJ...]] - file <tt>bunwarpj.Credits</tt>  -- ''java jar file''
 * [[Image IO ...]] - file <tt>net.sf.ij.plugin.AboutImageIO("")</tt>  -- ''java jar file''
 * [[LOCI Plugins...]] - file <tt>loci.plugins.About("")</tt>  -- ''java jar file''
@@ -579,30 +489,9 @@
 * [[Enhance Local Contrast (CLAHE)]] - file <tt>mpicbg.ij.clahe.PlugIn</tt>  -- ''java jar file''
 
 
-=== Process > Filters ===
-
-* [[Differentials]] - file <tt>Differentials_</tt>  -- ''java jar file''
-* [[Linear Kuwahara]] - file <tt>Kuwahara_LinearStructure_Filter_v3</tt>  -- ''java jar file''
-
-
 === Process > Morphology ===
 
 * [[Gray Morphology]] - file <tt>GrayMorphology_</tt>  -- ''java jar file''
-
-
-=== Process > Noise ===
-
-
-==== Process > Noise > RandomJ ====
-
-* [[RandomJ Binomial]] - file <tt>RJ_Binomial</tt>  -- ''java jar file''
-* [[RandomJ Exponential]] - file <tt>RJ_Exponential</tt>  -- ''java jar file''
-* [[RandomJ Gamma]] - file <tt>RJ_Gamma</tt>  -- ''java jar file''
-* [[RandomJ Gaussian]] - file <tt>RJ_Gaussian</tt>  -- ''java jar file''
-* [[RandomJ Options]] - file <tt>RJ_Options</tt>  -- ''java jar file''
-* [[RandomJ Panel]] - file <tt>RJ_Panel</tt>  -- ''java jar file''
-* [[RandomJ Poisson]] - file <tt>RJ_Poisson</tt>  -- ''java jar file''
-* [[RandomJ Uniform]] - file <tt>RJ_Uniform</tt>  -- ''java jar file''
 
 
 
