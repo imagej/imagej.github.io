@@ -153,7 +153,20 @@ It would be nice to have a set of implemented procedures so IJ/Fiji can run stat
 
 [http://r-forge.r-project.org/projects/rimagej/ RImageJ] is an R package written by [http://romainfrancois.blog.free.fr/index.php?category/R-package/RImageJ Romain Francois] which uses the [http://www.rforge.net/JRI/ Java/R interface] included in [http://www.rforge.net/rJava/ rJava] to start an ImageJ instance inside R and send commands to that instance.
 
-It would be nice to have the opposite direction working, to call R from Fiji, which might be possible by leveraging a large part of RImageJ. However, it might be necessary to [http://www.omegahat.org/RSJava/RFromJava.pdf do it differently]. On the other hand, [http://www.rforge.net/JRI/ the Java/R interface] might be exactly what we need.
+It would be nice to have the opposite direction working, to call R from Fiji. As [http://www.rforge.net/JRI/ the Java/R interface] included in rJava does allow to start R from within Java, it is quite feasible.
+
+To overcome the typical problem of loading native libraries via System.loadLibrary() needing special platform-dependent settings, we should do something like this:
+
+<source lang="java">
+// prohibit JRI to call System.exit(1);
+System.setProperty("jri.ignore.ule", "yes");
+if (!Rengine.jriLoaded) {
+        // not found on the library path
+        System.load("/absolute/path/to/the/library");
+        Rengine.jriLoaded = true;
+}
+Rengine re = new Rengine();
+</source>
 
 == Teach the Fiji Updater to accept other sites in addition to [[Pacific]] ==
 
