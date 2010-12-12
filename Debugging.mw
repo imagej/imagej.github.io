@@ -2,6 +2,28 @@
 
 ImageJ itself outputs a lot of debug messages, when asked for them: Simply check ''Debug mode'' in the dialog popping up when clicking on the ''Edit>Options>Misc...'' menu item.
 
+= Monitoring system calls =
+
+== Linux ==
+
+On Linux, you should call Fiji using the [http://www.linuxmanpages.com/man1/strace.1.php strace command]:
+
+<source lang="bash">
+strace -Ffo syscall.log ./fiji <args>
+</source>
+
+== MacOSX ==
+
+Use the ''dtruss'' wrapper around [http://developer.apple.com/documentation/Darwin/Reference/ManPages/man1/dtrace.1.html dtrace] to monitor system calls:
+
+<source lang="bash">
+dtruss ./fiji <args>
+</source>
+
+== Windows ==
+
+To monitor all kinds of aspects of processes on Windows, use [http://technet.microsoft.com/en-us/sysinternals/bb896645.aspx Sysinternal's Process Monitor].
+
 = Debugging JVM hangs =
 
 When the Java VM hangs, the reason might be a dead-lock. You can often find out what is happening by reading the thread dump which you can get via ''Ctrl+\'' in the console where you started Fiji. On Linux and MacOSX, you can also send the signal ''3'' via the ''kill'' command.
