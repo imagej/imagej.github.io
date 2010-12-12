@@ -8,15 +8,45 @@ When the Java VM hangs, the reason might be a dead-lock. You can often find out 
 
 You can also attach to the JVM using the ''jvisualvm'' program that you can find in ''java/<platform>/<jdk>/bin/''.
 
-= Debugging hard JVM crashes with gdb =
+= Debugging hard JVM crashes =
 
-There are substantial problems with gdb when starting the Java VM; either gdb gets confused by segmentation faults (used by the JVM to handle NullPointerExceptions in an efficient manner), or it gets confused by the threading system -- unless you compile gdb yourself.
+When you have found an issue that crashes the JVM, and you can repeat that crash reliably, there are a number of options to find out what is going on.
+
+== Using gdb ==
+
+Typically when you debug a program that crashes, you start it in a debugger, to inspect the stack trace and the variables at the time of the crash. However, there are substantial problems with gdb when starting the Java VM; either gdb gets confused by segmentation faults (used by the JVM to handle NullPointerExceptions in an efficient manner), or it gets confused by the threading system -- unless you compile gdb yourself.
 
 But there is a very easy method to use gdb to inspect serious errors such as segmentation faults or trap signals nevertheless:
 
 <source lang="bash">
 ./fiji -XX:OnError="gdb - %p" --
 </source>
+
+== Using the ''hs_err_pid<pid>.log'' files ==
+
+The Java virtual machine (JVM) frequently leaves files of the format ''hs_err_pid<number>.log'' in the current working directory after a crash. Such a file starts with a preamble similar to this:
+
+<pre>
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f3dc887dd8b, pid=12116, tid=139899447723792
+#
+# JRE version: 6.0_20-b02
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (16.3-b01 mixed mode linux-amd64 )
+# Problematic frame:
+# C  [libc.so.6+0x86d8b]  memcpy+0x15b
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+</pre>
+
+followed by thread dumps and other useful information including the command-line arguments passed to the JVM.
+
+The most important part is the line after the line ''# Problematic frame:'' because it usually gives you an idea in which component the crash was triggered.
 
 = Debugging Java code with jdb =
 == How to attach the Java debugger jdb to a running fiji process ==
