@@ -431,6 +431,7 @@
 * [[LSS16 ...]] - file <tt>io.LSS16_Writer</tt>  -- ''java jar file''
 * [[PDF ... ]] - file <tt>io.PDF_Writer</tt>  -- ''java jar file''
 * [[Animated Gif ... ]] - file <tt>io.Gif_Stack_Writer</tt>  -- ''java jar file''
+* [[EPS ...]] - file <tt>io.Export_EPS</tt>  -- ''java jar file''
 * [[AmiraMesh ...]] - file <tt>AmiraMeshWriter_</tt>  -- ''java jar file''
 * [[AmiraTable ...]] - file <tt>AmiraTableWriter_</tt>  -- ''java jar file''
 * [[Biorad ...]] - file <tt>Biorad_Writer</tt>  -- ''java jar file''
