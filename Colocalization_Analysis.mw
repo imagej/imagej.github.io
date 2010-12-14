@@ -1,7 +1,7 @@
 == Colocalization Analysis - What is Colocalization anyway? ==
 
 
-Suppose you are given some images by a colleague, or have some images of your own, and you want to measure the amount of colocalization between two of the dyes or stains in the images. First you have to define what you mean by colocalization, and that is not trivial. One place to start reading about coloclaization is here: [https://info.med.tu-dresden.de/MTZimaging/images/2/25/White_QuantitativeColocAnalysis0408a.pdf QuantitativeColocAnalysis] and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalization analysis, look here: [https://info.med.tu-dresden.de/MTZimaging/images/6/63/White_QuantitativeColocAnalysis0408b.pdf Quantitative Imaging]
+Suppose you are given some images by a colleague, or have some images of your own, and you want to measure the amount of colocalization between two of the dyes or stains in the images. First you have to define what you mean by colocalization, and that is not trivial. One place to start reading about coloclaization and and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalization analysis, look here: [https://ifn.mpi-cbg.de/wiki/ifn/index.php/Teaching_Material#IPF_Image_Processing_Courses Image Processing Courses at IFN Dresden]
 
 There are two basic methods for colocalisation analysis:
  <ol>
@@ -38,8 +38,6 @@ We need to think carefully about the correct or adequate spatial resolution in x
 [http://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem Nyqvist] tells us the spatial sampling should be about three times smaller then the smallest object we want to resolve. Remember, spatial intensity correlation analysis, as we will perform here, can not tell you that 2 proteins are bound together in some biophysical bonding interaction. However, it might suggest that the 2 molecules occur with the same relative amounts when they are present in the set of spatial samples (pixels or voxels) with intensities above the thresholds we will calculate below. In any case, it might be a hint that "maybe they are binding partners or in the same macromolecular complex". You SHOULD follow up by determining true binding using [http://en.wikipedia.org/wiki/FLIM FLIM], [http://en.wikipedia.org/wiki/Förster_resonance_energy_transfer FRET] and biochemical methods like Immuno co-Precipitation etc.
 
 There is another (badly behaved) sample data file here which we will use later: [http://pacific.mpi-cbg.de/samples/150707_WTstack.lsm 150707_WTstack.lsm].
-
-
 
 == Colocalization Analysis - Using the methods of Manders and Costes, for spatial intensity correlation analysis, automatic thresholding and statistical significance testing. ==
 
