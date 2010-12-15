@@ -762,8 +762,7 @@ Display.getFront().getProject().adjustProperties()
 
 In the above dialog, you will be able to set the autosaving interval (see the bottom text field of the dialog that opens). The interval defaults to zero (meaning never). Set it for example to 30 (once every half hour).
 
-Of course it may be easier to set that autosaving interval 'before' running the long task!
-
+Of course it may be easier to set that autosaving interval <b>before</b> running the long task!
 
 = Enrich the GUI of TrakEM =
 
