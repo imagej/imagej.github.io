@@ -746,6 +746,25 @@ for origin,targets in graph.iteritems():
 
 Notice how about we called <i>getOrigins(Tree)</i> and <i>getTargets(Tree)</i>, which filters all potential origins and targets (Patch--an image--, AreaList, etc.) so that only Tree instances will be present in the lists.
 
+= Save the project while running a task =
+
+While a task is running, the right-click menu shows only an entry to cancel the task. To save the project while the task is running, type the following into the [[Jython Interpreter]], and push return to execute it:
+
+<source lang="python">
+Display.getFront().getProject().save()
+</source>
+
+If you would like to edit the Project properties, the following code will open the "Project - Properties..." dialog:
+
+<source lang="python">
+Display.getFront().getProject().adjustProperties()
+</source>
+
+In the above dialog, you will be able to set the autosaving interval (see the bottom text field of the dialog that opens). The interval defaults to zero (meaning never). Set it for example to 30 (once every half hour).
+
+Of course it may be easier to set that autosaving interval 'before' running the long task!
+
+
 = Enrich the GUI of TrakEM =
 
 === Add an extra tab to a Display ===
