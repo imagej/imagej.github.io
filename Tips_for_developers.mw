@@ -163,3 +163,60 @@ throw new RuntimeException(Macro.MACRO_CANCELED);
 </source>
 
 The special message ''Macro.MACRO_CANCELED'' will tell ImageJ not to show the exception message and stack trace in a text window.
+
+== Interact with the ROI manager ==
+
+To add ROIs to the ROI manager, do something like this:
+
+<source lang="java">
+RoiManager manager = RoiManager.getInstance();
+if (manager == null)
+	manager = new RoiManager();
+manager.addRoi(roi);
+</source>
+
+If you want to add the ROI with a slice label, you have to jump through a hoop:
+
+<source lang="java">
+int currentSlice = image.getCurrentSlice();
+RoiManager manager = RoiManager.getInstance();
+if (manager == null)
+	manager = new RoiManager();
+// the first slice is 1 (not 0)
+image.setSliceWithoutUpdate(slice);
+manager.add(image, rois[i], slice);
+image.setSlice(currentSlice);
+</source>
+
+To retrieve all ROIs from the ROI manager, do this:
+
+<source lang="java">
+RoiManager manager = RoiManager.getInstance();
+if (manager != null) {
+	Hashtable<String, Roi> table =
+		(Hashtable<String, Roi>)manager.getROIs();
+	for (String label : table.keySet()) {
+		int slice = manager.getSliceNumber(label);
+		Roi roi = table.get(label);
+		... <do something with the ROI and the slice> ...
+	}
+}
+</source>
+
+If you need to preserve the order of the ROIs in the ROI manager, unfortunately you'll have to access the AWT listbox:
+
+<source lang="java">
+import java.awt.List;
+...
+RoiManager manager = RoiManager.getInstance();
+if (manager != null) {
+	List labels = manager.getList();
+	Hashtable<String, Roi> table = (Hashtable<String, Roi>)manager.getROIs();
+	for (int i = 0; i < labels.getItemCount(); i++) {
+		String label = labels.getItem(i);
+		int slice = manager.getSliceNumber(label);
+		Roi roi = table.get(label);
+		... <do something with the ROI and the slice> ...
+	}
+}
+</source>
