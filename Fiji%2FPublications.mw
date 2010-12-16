@@ -22,6 +22,8 @@
 
 * [[TrakEM2]] finally got its well deserved primary reference through the PLoS Biology paper on neuronal architecture of the fruitfly brain.<ref>{{cite journal|author=Cardona Albert, Saalfeld Stephan, Preibisch Stephan, Schmid Benjamin, Cheng Anchi, Pulokas Jim, Tomancak Pavel, Hartenstein Volker|title=An Integrated Micro- and Macroarchitectural Analysis of the Drosophila Brain by Computer-Assisted Serial Section Electron Microscopy|journal=PLoS Biology|year=2010|volume=8(10)|page=e1000502|url=http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.1000502|doi=10.1371/journal.pbio.1000502}}</ref>
 
+* The trainable segmentation plugin is inspired by a CVPR publication on segmentation of neuronal membranes in TEM images. <ref>{{cite journal|author=Verena Kaynig, Thomas Fuchs, Joachim M. Buhmann|title=Neuron Geometry Extraction by Perceptual Grouping in ssTEM Images|journal=CVPR|year=2010|url=http://kaynig.de/kaynig_cvpr2010.pdf }}</ref>
+
 == References ==
 
 <references />
