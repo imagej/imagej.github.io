@@ -777,8 +777,6 @@ There may be better ways, but here is one. Read the header to understand its lim
 # is the start or the end of the chain.
 
 from javax.vecmath import Point2f
-from java.lang import Comparable
-from java.util import Collections
 
 # Obtain the PointRoi of the current image
 proi = IJ.getImage().getRoi()
@@ -831,7 +829,7 @@ for j in range(len(points)):
     points[k].distances[points[j]] = distance
 
 # Find point most distant to all other points
-Collections.sort(points)
+points.sort()
 print "First:", points[-1]
 
 # From the most distant point, create a chain
