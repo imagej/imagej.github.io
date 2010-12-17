@@ -789,7 +789,7 @@ class Point(Comparable):
   def __init__(self, x, y):
     self.p = Point2f(x, y)
     self.distances = {}
-    self.distAll = 0
+    self.distAll = None
   def distance(self, point):
     return self.p.distance(point.p)
   def distanceToAll(self):
@@ -797,7 +797,7 @@ class Point(Comparable):
       self.distAll = reduce(lambda a, b: a + b, self.distances.values())
     return self.distAll
   def compareTo(self, point):
-    if self.distAll < point.distAll:
+    if self.distanceToAll() < point.distanceToAll():
       return -1
     return 1
   def toString(self):
@@ -828,12 +828,14 @@ for j in range(len(points)):
     points[j].distances[points[k]] = distance
     points[k].distances[points[j]] = distance
 
-# Find point most distant to all other points
+# Choose a starting point.
+# In this case, we use the point most distant from all other points
 points.sort()
-print "First:", points[-1]
+first = points[-1]
+print "First:", first
 
-# From the most distant point, create a chain
-chain = [points[-1]]
+# Grow the chain from the starting point
+chain = [first]
 seen = set() # for fast look-up
 seen.add(chain[0])
 while len(chain) < len(points):
