@@ -984,6 +984,58 @@ medianFiltered = median(imp, 5.0)
 medianFiltered.show()
 </source>
 
+=== Defining a class and creating instances of the new class ===
+
+A simple class to store an X,Y coordinate. (In real code, just use javax.vecmath.* classes such as Point3f, Point3d, etc.)
+
+The constructor is defined with <i>__init__</i>, and takes at least one argument , named <i>self</i> by convention (you may name it something else, like <i>this</i>).
+
+<source lang="python">
+from math import sqrt, pow
+
+class Point:
+  def __init__(self, x, y):
+    self.x = x
+    self.y = y
+  def distance(self, other):
+    return sqrt(pow(self.x - other.x, 2), pow(self.y - other.y, 2))
+</source>
+
+... and create two instances, and measure the distance between them. To create the new instances, we use the name of the class with the arguments in brackets:
+
+<source lang="python">
+p1 = Point(10, 20)
+p2 = Point(40, 55.3)
+
+print "Distance:", p1.distance(p2)
+</source>
+
+=== Adding a static method to a class ===
+
+A static method is a method of a class that doesn't need a <i>self</i> first argument. You may call this method by using the name of the class alone--you don't need to invoke it on an instance.
+
+To declare a method as static, decorate it with <i>@staticmethod</i>, as shown below for method <i>two</i>:
+
+<source lang="python">
+class Numbers:
+
+  def one(self):
+    return 1
+
+  @staticmethod
+  def two():
+    return 2
+</source>
+
+Now, to invoke these methods, notice how <i>two</i> doesn't need to be invoked on an instance (we merely prepend the class name), but <i>one</i> does:
+
+<source lang="python">
+print That.two()
+
+that = That()
+print that.one()
+</source>
+
 [[Category:Scripting]]
 [[Category:Jython]]
 
