@@ -1036,6 +1036,8 @@ that = That()
 print that.one()
 </source>
 
+Why would you want to use a static method? It is useful to keep the namespace tidy, to avoid name collisions.
+
 [[Category:Scripting]]
 [[Category:Jython]]
 
