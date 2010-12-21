@@ -1,16 +1,20 @@
 ==For users==
 
-* Use ''Plugins>Install Plugin...'':
+* You can just drag 'n drop the plugin .jar file in the plugins directory:
+
+: [[Image:Install-Plugin-DragNDrop.png|750px]]
+
+: This will ask you for the <u>destination</u> of the plugin, just hitting ''Save'' is safe.
+
+* Alternatively, use ''Plugins>Install Plugin...'':
 
 : [[Image:Install-Plugin.png|550px]]
 
 : It will ask you for the file name of the plugin, and install the given file.
 
-* Alternatively, you can just drag 'n drop the plugin .jar file in the plugins directory:
+* You can also copy the ''.jar'', ''.class'' or ''.java'' files (or a script in any language Fiji supports) to ''Fiji.app/plugins/'', followed by calling ''Help>Refresh Menus''.
 
-: [[Image:Install-Plugin-DragNDrop.png|750px]]
-
-: This will ask you for the <u>destination</u> of the plugin, just hitting ''Save'' is safe.
+: '''Note:''' On MacOSX, you need to Ctrl+click on the ''Fiji'' icon in the Finder and select ''Show package contents'' to see the ''plugins/'' folder.
 
 ==For developers==
 
