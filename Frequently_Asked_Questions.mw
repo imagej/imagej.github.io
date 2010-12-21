@@ -1,9 +1,3 @@
-= Community =
-
-== I have a problem that is not covered on this page! ==
-
-If you have an issue that is not mentioned here, you might want to [[Help:Contents|ask on one of the mailing lists, or via IRC, or enter a bug report]].
-
 = Input/Output =
 
 == The image I loaded is displayed all black! But it is not black! ==
@@ -78,3 +72,9 @@ Alternatively, if you have write permissions to the path ''JAVA_HOME'' points to
 You need to update the ImageJA submodule:
 
  git submodule update ImageJA
+
+= Community =
+
+== I have a problem that is not covered on this page! ==
+
+If you have an issue that is not mentioned here, you might want to [[Help:Contents|ask on one of the mailing lists, or via IRC, or enter a bug report]].
