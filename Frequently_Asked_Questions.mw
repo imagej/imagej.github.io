@@ -4,7 +4,11 @@
 
 This problem usually arises when 12-bit or 14-bit images are loaded into Fiji without autoscaling. In that case, they are treated as if they were 16-bit images, and therefore the dynamic range is all wrong. You can fix this by clicking on ''Image>Adjust>Brightness/Contrast...'' and hitting the ''Auto'' button.
 
-= Updating =
+= Installing/Updating =
+
+== How do I install Fiji? ==
+
+The installation of Fiji is described on specific pages for [[Install_Fiji_on_MacOSX|MacOSX]], [[Install_Fiji_on_Windows|Windows]] and [[Install_Fiji_on_Linux|Linux]].
 
 == I updated Fiji via ''Help>Update Fiji'', and now it does not start anymore! ==
 
