@@ -10,6 +10,10 @@ This problem usually arises when 12-bit or 14-bit images are loaded into Fiji wi
 
 The installation of Fiji is described on specific pages for [[Install_Fiji_on_MacOSX|MacOSX]], [[Install_Fiji_on_Windows|Windows]] and [[Install_Fiji_on_Linux|Linux]].
 
+== How do I install additional plugins? ==
+
+You can drag 'n drop the .jar files onto the Fiji window, or use ''Plugins>Install Plugin...'' with .jar, .class and .java files, or copy the plugins to ''Fiji.app/plugins/'' and call ''Help>Refresh Menus'' manually. A walk-through with screenshots is available [[Installing 3rd party plugins|here]].
+
 == I updated Fiji via ''Help>Update Fiji'', and now it does not start anymore! ==
 
 If you are on MacOSX, most likely you did not update in some time, and you were bitten by a bug in the updater that is already fixed (but you did not get the fix in time). Please follow [[Fix non-functional Fiji after Update on MacOSX|these instructions]].
