@@ -14,6 +14,12 @@ The installation of Fiji is described on specific pages for [[Install_Fiji_on_Ma
 
 You can drag 'n drop the .jar files onto the Fiji window, or use ''Plugins>Install Plugin...'' with .jar, .class and .java files, or copy the plugins to ''Fiji.app/plugins/'' and call ''Help>Refresh Menus'' manually. A walk-through with screenshots is available [[Installing 3rd party plugins|here]].
 
+== My plugin runs fine in the [[Script Editor]], but it does not show up in the menus when I install it. What's wrong? ==
+
+To be picked up as a plugin, the ''.jar'''s file name must contain an underscore, and it either needs to contain an appropriate ''plugins.config'' file or the class name needs to contain an underscore, too.
+
+The safest way to ensure these conventions is to use the ''File>Export as .jar file'' menu item.
+
 == I updated Fiji via ''Help>Update Fiji'', and now it does not start anymore! ==
 
 If you are on MacOSX, most likely you did not update in some time, and you were bitten by a bug in the updater that is already fixed (but you did not get the fix in time). Please follow [[Fix non-functional Fiji after Update on MacOSX|these instructions]].
