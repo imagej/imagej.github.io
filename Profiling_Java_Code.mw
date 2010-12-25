@@ -52,4 +52,8 @@ If you get entries like ''"anon (tgid:10014 range:0x100000-0x103000)'' you proba
 
 To get information about source files and line numbers, also pass the ''-g'' option to ''opreport''.
 
+=== Further reading ===
+
+See the [http://oprofile.sourceforge.net/doc/ OProfile manual] for more information.
+
 [[Category:Development]]
