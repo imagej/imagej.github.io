@@ -46,6 +46,10 @@ Recent versions of OProfile require that a user account ''oprofile'' with defaul
 === Getting at the profiling data ===
 
  sudo opcontrol --dump && 
- opreport -l fiji
+ opreport -l image:\*/fiji
+
+If you get entries like ''"anon (tgid:10014 range:0x100000-0x103000)'' you probably did not create a user account ''oprofile'' in a group ''oprofile'' before starting the OProfile daemon.
+
+To get information about source files and line numbers, also pass the ''-g'' option to ''opreport''.
 
 [[Category:Development]]
