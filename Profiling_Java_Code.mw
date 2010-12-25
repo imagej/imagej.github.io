@@ -31,7 +31,7 @@ You should make sure that the path to the JDK is correct. (But you do not need t
 
 === Start the profiler ===
 
- sudo opcontrol --start
+ sudo opcontrol --start --no-vmlinux
 
 Recent versions of OProfile require that a user account ''oprofile'' with default group ''oprofile'' exist before starting the OProfile daemon. On current Ubuntu systems, you can make one by calling '''sudo adduser oprofile''' (Ubuntu creates a default group of the same name for each new user account). If you do not have such an account, you will get something like ''anon (tgid:10014 range:0x100000-0x103000)'' in the report.
 
