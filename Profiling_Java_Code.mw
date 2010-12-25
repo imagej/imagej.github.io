@@ -23,11 +23,11 @@ You need to [http://oprofile.sourceforge.net/doc/setup-jit.html#setup-jit-jvm re
  git clone pacific.mpi-cbg.de:/srv/git/oprofile && 
  cd oprofile/oprofile && 
  ./autogen.sh && 
- ./configure --with-java=$(pwd)/../java/linux-amd64/jdk1.6.0_20/ &&
+ ./configure --with-java=$(pwd)/../../java/linux-amd64/jdk1.6.0_22/ &&
  make && 
  sudo checkinstall
 
-(You do not need to use ''checkinstall'', but it will make it easy to remove the package once you do not want it anymore.)
+You should make sure that the path to the JDK is correct. (But you do not need to use ''checkinstall'', but it will make it easy to remove the package once you do not want it anymore.)
 
 === Start the profiler ===
 
