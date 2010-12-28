@@ -101,6 +101,8 @@
 * [[Smooth (3D)]] - file <tt>process3d.Smooth_</tt>  -- ''java jar file''
 * [[ImgLib Algorithm Launcher]] - file <tt>AlgorithmLauncher("")</tt>  -- ''java jar file''
 * [[Anisotropic Diffusion 2D]] - file <tt>Anisotropic_Diffusion_2D</tt>  -- ''java jar file''
+* [[Extended Depth of Field (Easy mode)...]] - file <tt>EDF_Easy_</tt>  -- ''java jar file''
+* [[Extended Depth of Field (Expert mode)...]] - file <tt>EDF_Expert_</tt>  -- ''java jar file''
 * [[Exact Euclidean Distance Transform (3D)]] - file <tt>fiji.process3d.EDT</tt>  -- ''java jar file''
 * [[Exact Signed Euclidean Distance Transform (3D)]] - file <tt>fiji.process3d.SEDT</tt>  -- ''java jar file''
 * [[Bilateral Filter]] - file <tt>Bilateral_Filter</tt>  -- ''java jar file''
@@ -175,6 +177,7 @@
 === Plugins > Segmentation ===
 
 * [[Graph Cut]] - file <tt>Graph_Cut</tt>  -- ''java jar file''
+* [[Blow/Lasso Tool]] - file <tt>plugin.Lasso_</tt>  -- ''java jar file''
 * [[Robust Automatic Threshold Selection]] - file <tt>RATS_</tt>  -- ''java jar file''
 * [[Simple Neurite Tracer]] - file <tt>tracing.Simple_Neurite_Tracer</tt>  -- ''java jar file''
 * [[SIOX: Simple Interactive Object Extraction]] - file <tt>siox.Siox_Segmentation</tt>  -- ''java jar file''
@@ -183,7 +186,6 @@
 * [[Statistical Region Merging]] - file <tt>SRM_</tt>  -- ''java jar file''
 * [[Trainable Segmentation]] - file <tt>trainableSegmentation.Trainable_Segmentation</tt>  -- ''java jar file''
 * [[Segmentation Editor]] - file <tt>Segmentation_Editor</tt>  -- ''java jar file''
-* [[Blow/Lasso Tool]] - file <tt>plugin.Lasso_</tt>  -- ''java jar file''
 * [[Level Sets]] - file <tt>levelsets.ij.LevelSet</tt>  -- ''java jar file''
 
 
