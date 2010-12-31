@@ -4,10 +4,14 @@
 | author                = [[User:NicholasPerry|Nick Perry]], [[JeanYvesTinevez|Jean-Yves Tinevez]]
 | maintainer         = [mailto:jean-yves.tinevez@pasteur.fr Jean-Yves Tinevez]
 | source                = 
-| released             = September 13<sup>th</sup>, 2010
-| status                 = experimental
+| released             = Not released yet
+| status               = alpha
 | category             = [[:Category:Segmentation|Segmentation]], [[:Category:Tracking|Tracking]]
 }}
+
+'''Not released yet''' - this plugin is still in development, and is only available through downloading the source.
+
+
 
 == General ==
 
