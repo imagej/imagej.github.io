@@ -47,12 +47,10 @@ Clone the respository afresh with:
             ImageJA \
             RSyntaxTextArea \
             TrakEM2 \
-            VIB \
             bio-formats \
             commons-math \
             ij-plugins \
             imglib \
-            live-helper \
             mpicbg \
             tcljava \
             weka
