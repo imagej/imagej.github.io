@@ -220,3 +220,34 @@ if (manager != null) {
 	}
 }
 </source>
+
+== Show a results table ==
+
+First you need to get the results table instance (or create one):
+
+<source lang="java">
+ResultsTable rt = Analyzer.getResultsTable();
+if (rt != null) {
+        rt = new ResultsTable();
+        Analyzer.setResultsTable(rt);
+}
+</source>
+
+Then you can add a new row:
+
+<source lang="java">
+rt.incrementCounter();
+</source>
+
+... and add entries by column label:
+
+<source lang="java">
+rt.addValue("slice", slice);
+rt.addValue("bratwurst", -1);
+</source>
+
+'''Finally''' make sure that the result table is displayed/updated:
+
+<source lang="java">
+rt.show("Results");
+</source>
