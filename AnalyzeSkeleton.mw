@@ -92,6 +92,50 @@ Using the [[3D_Viewer]] libraries we can easily display the results of both, the
 |style="vertical-align:top" |[[Image:Movie_bat_skel.gif|thumb|225px|Bat cochlea volume rendered in the viewer with its corresponding classified skeleton]]
 |}
 
+== Using silent mode from scripts ==
+You can use AnalyzeSkeleton from scripts without displaying any of the results That's useful if you want to use the results within the script without the user being annoyed by a lot of results tables popping up.
+
+Here's an example Javascript:
+
+<source lang="javascript">
+importPackage(Packages.skeleton_analysis);
+
+// Takes a binary image as input
+var imp = IJ.getImage(); // get current open image
+
+// Skeletonize the image
+IJ.run(imp, "Skeletonize (2D/3D)", "");
+
+// Initialize AnalyzeSkeleton_
+var skel = new AnalyzeSkeleton_();
+skel.calculateShortestPath = true;
+skel.setup("", imp);
+
+// Perform analysis in silent mode
+// (work on a copy of the ImagePlus if you don't want it displayed)
+// run(int pruneIndex, boolean pruneEnds, boolean shortPath, ImagePlus origIP, boolean silent, boolean verbose)
+var skelResult = skel.run(AnalyzeSkeleton_.NONE, false, true, null, true, false);
+
+// Read the results
+var shortestPaths = skelResult.getShortestPathList().toArray();
+var branchLengths = skelResult.getAverageBranchLength();
+var branchNumbers = skelResult.getBranches();
+
+var totalLength = 0;
+for (var i = 0; i < branchNumbers.length; i++) {
+	totalLength += branchNumbers[i] * branchLengths[i];
+}
+
+var cumulativeLengthOfShortestPaths = 0;
+for (var i = 0; i < shortestPaths.length; i++) {
+	cumulativeLengthOfShortestPaths += Number(shortestPaths[i]);
+}
+
+// Use the readout within the script
+IJ.log(totalLength);
+IJ.log(cumulativeLengthOfShortestPaths);
+</source>
+
 == API documentation ==
 The latest documentation of the code can be found here:
 
