@@ -472,6 +472,67 @@ To handle any ImagePlus (with single slice or containing an ImageStack, i.e. man
 
 The above works with both single images and stacks.
 
+<h3>Manipulate images using ImgLib</h3>
+
+With [[Category:Imglib]], pixels are stored in native arrays of primitives such as int, float, double, etc. (or other more interesting forms, such as [http://download.oracle.com/javase/1.5.0/docs/api/java/awt/Shape.html Shape]. Such pixels are accessed with intermediate proxy objects that the JIT is able to completely remove out of the way.
+
+From Clojure, there are many ways in which to access the pixels. Here we list some examples of the pixels accessed as a Collection of accessor [http://pacific.mpi-cbg.de/javadoc/mpicbg/imglib/type/Type.html Type] objects.
+
+
+<h4>Multiply each pixel by 0.5</h4>
+
+Multiply in place each value by 0.5.
+
+<source lang="lisp">
+; ASSUMES the current image is 32-bit
+(ns test.imglib
+ (:import [mpicbg.imglib.image Image]
+          [script.imglib ImgLib]
+          [mpicbg.imglib.type.numeric.real FloatType]
+          [ij IJ]))
+
+(set! *warn-on-reflection* true)
+
+(let [^Image img (ImgLib/wrap (IJ/getImage))
+     a (float 0.5)]
+ (doseq [^FloatType t img]
+   (.mul t a))
+ (.. img getDisplay setMinMax)
+ (.show (ImgLib/wrap img)))
+</source>
+
+<h4>Normalize an image</h4>
+
+Assumes that <i>(IJ/getImage)</i> returns a 32-bit, float image. If that is not the case, convert the image to a float image first.
+
+The example below creates a new result image. The original image is untouched. This is accomplished with minimal friction but best performance (like hand-coded with cursors or better) by using the high-level scripting library of imglib, and the [http://pacific.mpi-cbg.de/javadoc/script/imglib/math/Compute.html Compute]/inFloats method.
+
+<source lang="lisp">
+; ASSUMES 32-bit image is the active image
+(ns test.imglib
+ (:import [mpicbg.imglib.image Image]
+          [script.imglib ImgLib]
+          [script.imglib.math Compute Subtract Divide]
+          [ij IJ]))
+
+
+(let [^Image img (ImgLib/wrap (IJ/getImage))
+     size (.size img)
+     mean (reduce
+            #(+ %1 (/ (.getRealFloat %2) size))
+            (float 0)
+            img)
+     variance (/ (reduce
+                   #(+ %1 (Math/pow (- (.getRealFloat %2) mean) (float 2)))
+                   (float 0)
+                   img)
+                 size)
+     std-dev (Math/sqrt variance)
+     ^Image normalized (Compute/inFloats (Divide. (Subtract. img
+mean) std-dev))]
+ (.. normalized getDisplay setMinMax)
+ (.show (ImgLib/wrap normalized)))
+</source>
 
 <h3>Looping an array of pixels</h3>
 <p>For example, to find the min and max values:</p>
