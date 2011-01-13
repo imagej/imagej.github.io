@@ -144,6 +144,8 @@ The latest documentation of the code can be found here:
 == Changelog ==
 All changes can be seen in the [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/AnalyzeSkeleton_;h=97476cf88da4d5dd5a6ac6cdf9a5176c221378c6;hb=HEAD Fiji source repository].
 
+'''2010/12/28''': Jan Eglinger added code to call the plugin from script in silent mode.
+
 '''2010/09/27''': Added Huub Hovens's code to detect the shortest largest path in each skeleton and Michael Doube's code to prune the branches ending on end-points.
 
 '''2010/08/26''': Fixed bug that was assigning wrong final vertices (V2) to the edges when visiting the trees from end-points if the branches were ending on already visited junctions. Reported by Peter C. Marks.
