@@ -93,9 +93,9 @@ Using the [[3D_Viewer]] libraries we can easily display the results of both, the
 |}
 
 == Using silent mode from scripts ==
-You can use AnalyzeSkeleton from scripts without displaying any of the results That's useful if you want to use the results within the script without the user being annoyed by a lot of results tables popping up.
+You can use AnalyzeSkeleton from scripts without displaying any of the results. That's useful if you want to use the results within the script without the user being annoyed by a lot of results tables popping up.
 
-Here's an example Javascript:
+Here's an example in Javascript:
 
 <source lang="javascript">
 importPackage(Packages.skeleton_analysis);
