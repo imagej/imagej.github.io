@@ -481,7 +481,7 @@ From Clojure, there are many ways in which to access the pixels. Here we list so
 
 <h4>Multiply each pixel by 0.5</h4>
 
-Multiply in place each value by 0.5.
+Multiply in place each value by 0.5. The ImgLib/wrap is a thin wrapper that accesses directly the pixel array. Hence the original image will be changed.
 
 <source lang="lisp">
 ; ASSUMES the current image is 32-bit
@@ -496,10 +496,61 @@ Multiply in place each value by 0.5.
 (let [^Image img (ImgLib/wrap (IJ/getImage))
      a (float 0.5)]
  (doseq [^FloatType t img]
-   (.mul t a))
- (.. img getDisplay setMinMax)
- (.show (ImgLib/wrap img)))
+   (.mul t a)))
 </source>
+
+In a more functional style, below we create an image with the same dimensions as the wrapped image, and set its pixel values to those of the original image times 0.5:
+
+<source lang="lisp">
+(ns test.imglib
+ (:import [mpicbg.imglib.image Image]
+          [mpicbg.imglib.cursor Cursor]
+          [script.imglib ImgLib]
+          [mpicbg.imglib.type.numeric NumericType]
+          [ij IJ]))
+
+(set! *warn-on-reflection* true)
+
+(let [^Image img (ImgLib/wrap (IJ/getImage))
+      a (float 0.5)
+      ^Image copy (.createNewImage img "copy")]
+  (with-open [^Cursor c1 (.createCursor img)
+              ^Cursor c2 (.createCursor copy)]
+    (loop []
+      (if (.hasNext c1)
+        (do
+          (.fwd c1)
+          (.fwd c2)
+          (let [^NumericType t1 (.getType c1)
+                ^NumericType t2 (.getType c2)]
+            (.set t2 t1)
+            (.mul t2 a))
+          (recur)))))
+  (.. copy getDisplay setMinMax)
+  (.show (ImgLib/wrap copy)))
+</source>
+
+The above, though, is unbearably verbose. A high-level access to the images enables mathematical operations without trading off any performance:
+
+<source lang="lisp">
+(ns test.imglib
+ (:import [mpicbg.imglib.image Image]
+          [mpicbg.imglib.cursor Cursor]
+          [script.imglib ImgLib]
+          [script.imglib.math Compute Multiply]
+          [ij IJ]))
+
+(set! *warn-on-reflection* true)
+
+(let [^Image img (ImgLib/wrap (IJ/getImage))
+      ^Image copy (Compute/inFloats (Multiply. img 0.5))]
+    (.. copy getDisplay setMinMax)
+    (.show (ImgLib/wrap copy)))
+</source>
+
+What's more, the [http://pacific.mpi-cbg.de/javadoc/script/imglib/math/Compute.html Compute]/inFloats method runs in parallel, with as many processors as your machine has cores. If you'd rather not execute the operation in parallel, add the desired number of threads as an argument to <i>inFloats</i>.
+
+All mathematical operations listed in java.lang.Math have a corresponding constructor for execution in Compute/inFloats. See the documentation for the [http://pacific.mpi-cbg.de/javadoc/script/imglib/math/package-frame.html script.imglib.math package].
 
 <h4>Normalize an image</h4>
 
@@ -508,7 +559,7 @@ Assumes that <i>(IJ/getImage)</i> returns a 32-bit, float image. If that is not 
 The example below creates a new result image. The original image is untouched. This is accomplished with minimal friction but best performance (like hand-coded with cursors or better) by using the high-level scripting library of imglib, and the [http://pacific.mpi-cbg.de/javadoc/script/imglib/math/Compute.html Compute]/inFloats method.
 
 <source lang="lisp">
-; ASSUMES 32-bit image is the active image
+; ASSUMES a 32-bit image as the active image
 (ns test.imglib
  (:import [mpicbg.imglib.image Image]
           [script.imglib ImgLib]
