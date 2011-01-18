@@ -349,5 +349,9 @@ Roi roi = new OvalRoi(10, 10, 90, 90);
 image.setRoi(roi);
 </source>
 
+== Further tips ==
+
+Please see also the developers tips how to [[Tips_for_developers#Using_ImageJ_effectively|use ImageJ's API effectively]].
+
 [[Category:Tutorials]]
 [[Category:Development]]
