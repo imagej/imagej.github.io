@@ -227,7 +227,7 @@ First you need to get the results table instance (or create one):
 
 <source lang="java">
 ResultsTable rt = Analyzer.getResultsTable();
-if (rt != null) {
+if (rt == null) {
         rt = new ResultsTable();
         Analyzer.setResultsTable(rt);
 }
