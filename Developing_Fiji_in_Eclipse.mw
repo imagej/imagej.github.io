@@ -52,6 +52,7 @@ cd ../TrakEM2
 git checkout master
 </source>
 
+<span style="color:#ff0000"><b>Note:</b></span> if you check out blindly the ''master'' branch of all the submodules you are interested in, the compilation <u>might fail</u>. If you are interested in a compiling state, you need to stay with the state after ''git submodule update''.
 
 Fiji comes with its own build system that we will later use from Eclipse.  Test, if Fiji builds properly
 
