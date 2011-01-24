@@ -88,7 +88,7 @@ Add all jars in <code>fiji/jar</code>s and all jars in <code>fiji/java/linux-amd
 | fiji/plugins/loci_tools.jar
 |-
 | fiji/ImageJA/ij
-| fiji/ij.jar
+| fiji/jars/ij.jar
 |-
 | fiji/mpicbg
 | fiji/plugins/mpicbg_.jar
