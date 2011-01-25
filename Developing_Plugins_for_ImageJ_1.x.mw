@@ -293,6 +293,18 @@ void plot(double[] values, double[] values2) {
 }
 </source>
 
+To update the contents of a plot window, remember the return value of ''plot.show()'' which is a [http://pacific.mpi-cbg.de/javadoc/ij/gui/PlotWindow.html ''PlotWindow''], and use its ''drawPlot()'' method:
+
+<source lang="java">
+void plot(double[] values) {
+    ...
+    PlotWindow plotWindow = plot.show();
+    ...
+    Plot plot = new Plot("Plot window", "x", "values", x, values);
+    plotWindow.drawPlot(plot);
+}
+</source>
+
 == The results table ==
 
 Whenever your plugin quantifies things in the images, you might want to output the values in a results table:
