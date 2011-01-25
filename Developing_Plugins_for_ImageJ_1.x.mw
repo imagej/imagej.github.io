@@ -266,7 +266,7 @@ The [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html ''ImagePro
 
 == Plots ==
 
-You can show a plot window very easily using the [http://pacific.mpi-cbg.de/javadoc/ij/gui/Plot.html, ''Plot''] class:
+You can show a plot window very easily using the [http://pacific.mpi-cbg.de/javadoc/ij/gui/Plot.html ''Plot''] class:
 
 <source lang="java">
 void plot(double[] values) {
