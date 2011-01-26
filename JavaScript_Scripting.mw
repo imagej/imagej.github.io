@@ -135,7 +135,7 @@ invertImage(imp);
 imp.updateAndDraw();
 </source>
 
-The number of arguments you invoke an image with is flexible. All arguments with which a function is invoked are collected in a variable named <i>arguments</i>.
+The number of arguments you invoke a function with is flexible. All arguments with which a function is invoked are collected in a variable named <i>arguments</i>.
 
 Each function is an object, and has a variable <i>this</i> which provides access to its internal fields, such as <i>name</i>:
 
