@@ -1038,6 +1038,82 @@ print that.one()
 
 Why would you want to use a static method? It is useful to keep the namespace tidy, to avoid name collisions.
 
+
+=== Creating multi-dimensional native java arrays ===
+
+Suppose you want to create a one-dimensional double array, the equivalent of '''double[]''' in java. This is what you would do:
+
+<source lang="python">
+from jarray import array
+
+data = [1.0, 2.0, 3.0, 4.0]
+
+arr = array(data, 'd')
+</source>
+
+But now suppose you want a two-dimensional double array, the equivalent of '''double[][]''' in java. How to do that? Here's how:
+
+<source lang="python">
+from jarray import array
+
+data = [[1.0, 2.0], [3.0, 4.0]]
+twoDimArr = array(data, Class.forName('[D'))
+</source>
+
+Essentially, what we did is to give the function '''array''' the argument '''class of a one-dimensional double array''', so that it will create an array of that--hence a two-dimensional double array.
+
+For a three-dimensional array in jython, you'd just add another '''[''' (square bracket) to the class name:
+
+<source lang="python">
+from jarray import array
+
+data = [[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]]
+threeDimArr = array(data, Class.forName('[[D'))
+</source>
+
+Other accepted primitive array types are:
+ z	boolean
+ c	char
+ b	byte
+ h	short
+ i	int
+ l	long
+ f	float
+ d	double
+
+See the [http://www.jython.org/archive/21/docs/jarray.html jarray documentation].
+
+To create primitive arrays of any class, pass along the class itself. For example, a native array of '''String''':
+
+<source lang="python">
+from jarray import array
+
+texts = ["one", "two", "three"]
+
+strings = array(texts, String)
+</source>
+
+Of course arrays can also be created empty. For numbers, all values will be zero. For an arbitrary class such as '''String''', all values will be null (or None, in python parlance).
+
+In the example below, we create an empty two-dimensional array of '''double[N][]''' type, where the smaller, inner arrays are null (just like in java a '''new double[5][]''' would have the second-order also all null):
+
+<source lang="python">
+from jarray import zeros
+
+twoDimArr = zeros(5, Class.forName("[D"))
+
+print twoDimArr
+# prints: array([D, [None, None, None, None, None])
+
+# fill each slot with a new array of length 3:
+for i in range(len(twoDimArr)):
+  twoDimArr[i] = zeros(3, 'd')
+
+print twoDimArr
+#prints: array([D, [array('d', [0.0, 0.0, 0.0]), array('d', [0.0, 0.0, 0.0]),
+# array('d', [0.0, 0.0, 0.0]), array('d', [0.0, 0.0, 0.0]), array('d', [0.0, 0.0, 0.0])])
+</source>
+
 [[Category:Scripting]]
 [[Category:Jython]]
 
