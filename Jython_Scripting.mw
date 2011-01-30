@@ -1051,6 +1051,16 @@ data = [1.0, 2.0, 3.0, 4.0]
 arr = array(data, 'd')
 </source>
 
+Other accepted primitive array types are:
+ z	boolean
+ c	char
+ b	byte
+ h	short
+ i	int
+ l	long
+ f	float
+ d	double
+
 But now suppose you want a two-dimensional double array, the equivalent of '''double[][]''' in java. How to do that? Here's how:
 
 <source lang="python">
@@ -1070,16 +1080,6 @@ from jarray import array
 data = [[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]]
 threeDimArr = array(data, Class.forName('[[D'))
 </source>
-
-Other accepted primitive array types are:
- z	boolean
- c	char
- b	byte
- h	short
- i	int
- l	long
- f	float
- d	double
 
 See the [http://www.jython.org/archive/21/docs/jarray.html jarray documentation].
 
