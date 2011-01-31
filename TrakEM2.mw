@@ -72,6 +72,7 @@ label (set to 30% transparency) are selected (pink and white frames; white is th
 [[Image:TrakEM2-trees.png|thumb|left|232px|The three TrakEM2 trees, as an interface for editing and visualizing the three internal TrakEM2 data structures.]]
 [[Image:Clahe-live-filter.jpg|thumb|left|232px|Effect of the [[Enhance Local Contrast (CLAHE)|CLAHE]] live filter in TrakEM2. Data with high dynamic range is displayed with perceptually boosted local contrast. [[Enhance Local Contrast (CLAHE)|CLAHE parameters]] are relative to display pixels and, therefore, will not result in an effective bandpass when zooming out largely on statically pre-processed images.]]
 [[Image:Neuronal-arbors-1.png|thumb|left|232px|Neuronal arbors reconstructed with TrakEM2 using the [http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees treeline] segmentation type.]]
+[[Image:TrakEM2-arealists.png|thumb|left|232px|Neuronal arbors from serial section electron microscopy reconstructed with TrakEM2 using the [http://www.ini.uzh.ch/~acardona/data.html manually segmentated data set].]]
 [[Image:TrakEM2_Display_segmentations.png|thumb|left|232px|Example TrakEM2 segmentations, including Ball, Pipe, Profile, AreaList and floating text labels.]]
 
 ----
