@@ -73,7 +73,7 @@ Implements Huang's fuzzy thresholding method. This uses Shannon's entropy functi
 | pages = 41-51
 }}
 
-(Also available [http://www.contrib.andrew.cmu.edu/~qwangnpu/Publications/2002/2002-06-Image%20Thresholding%20by%20Maximizing%20the%20Index%20of%20Non-Fuzziness%20of%202-D%20Grayscale%20Histogra.pdf here].) Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
+(Also available [http://www.cs.cmu.edu/afs/cs/Web/People/qwang/Publications/2002/2002-06-Image%20Thresholding%20by%20Maximizing%20the%20Index%20of%20Non-Fuzziness%20of%202-D%20Grayscale%20Histogra.pdf here].) Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
 
 === Intermodes ===
 This assumes a bimodal histogram. The histogram is iteratively smoothed using a running average of size 3, until there are only two local maxima: j and k. The threshold t is then computed as (j+k)/2. Images with histograms having extremely unequal peaks or a broad and ﬂat valley are unsuitable for this method.
