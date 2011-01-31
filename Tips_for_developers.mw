@@ -251,3 +251,23 @@ rt.addValue("bratwurst", -1);
 <source lang="java">
 rt.show("Results");
 </source>
+
+= Tips for Graphical User Interface (GUI) programming =
+
+== Programming with Swing components ==
+
+When programming with Swing, beware that Swing is not thread safe. Swing's golden rule states that:
+
+ Once a Swing component has been realized, all code that might affect
+ or depend on the state of that component should be executed in the
+ event-dispatching thread.
+
+When has a Swing component been realized? When it is visible inside Window or JFrame that got a call to <i>setVisible(true)</i>. This implies that its <i>paint(Graphics)</i> method has been called or will be called soon.
+
+These are the methods that can realize a component, or rather, methods called on a Window or Frame or JFrame that will realize all its children components:
+
+ '''setVisible(true)'''
+ '''show()'''
+ '''pack()''' (this might surprise you)
+
+Information extracted from the [http://java.sun.com/products/jfc/tsc/articles/threads/threads1.html Swing guide].
