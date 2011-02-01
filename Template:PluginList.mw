@@ -308,6 +308,11 @@
 * [[Update LOCI Plugins]] - file <tt>loci.plugins.Updater("")</tt>  -- ''java jar file''
 
 
+=== Plugins > Panorama ===
+
+* [[View equirectangular]] - file <tt>mpicbg.panorama.Panorama_View</tt>  -- ''java jar file''
+
+
 
 == Analyze ==
 
