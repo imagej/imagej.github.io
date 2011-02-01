@@ -56,4 +56,8 @@ To get information about source files and line numbers, also pass the ''-g'' opt
 
 See the [http://oprofile.sourceforge.net/doc/ OProfile manual] for more information.
 
+== Shark (for MacOSX) ==
+
+You might find [http://developer.apple.com/tools/sharkoptimize.html Shark 4] useful if you're on MacOSX.
+
 [[Category:Development]]
