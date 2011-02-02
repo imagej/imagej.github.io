@@ -1182,6 +1182,7 @@ for i in range(2, imp.getNSlices()+1):
 ImagePlus("XORed stack", stackXOR).show()
 </source>
 
+All the above is inspired by the [http://www.scipy.org/Cookbook/Weave Scientific Python Weaver, or scipy Weaver], which inlines C code inside a python file.
 
 [[Category:Scripting]]
 [[Category:Jython]]
