@@ -1114,6 +1114,39 @@ print twoDimArr
 # array('d', [0.0, 0.0, 0.0]), array('d', [0.0, 0.0, 0.0]), array('d', [0.0, 0.0, 0.0])])
 </source>
 
+
+=== Inline java code inside jython: the Weaver ===
+
+Jython is great at doing high-level operations on images. But sometimes one wants to edit pixels specifically. Such low-level loops in jython are far from the performance offered by java. But writing a special-purpose java class for a minor piece of code is painful and requires specific java skills regarding code compilation and classpath management.
+
+The weaver removes all the pain. Here is an example, where the <i>float[]</i> pixels array of the current image is iterated to compute the mean intensity:
+
+<source lang="python">
+from fiji.scripting import Weaver
+
+# The currently open image
+imp = IJ.getImage()
+
+fp = imp.getProcessor().convertToFloat()
+pixels = fp.getPixels()  # a float array, float[]
+w = Weaver.inline(
+    """
+    double sum = 0;
+    for (int i=0; i<pixels.length; i++) {
+        sum += pixels[i];
+    }
+    return sum / pixels.length;
+    """,
+    {"pixels" : pixels}, Double)
+
+mean = w.call()
+
+print mean
+</source>
+
+The above is trivial and it is meant only as an example (there are better ways to get the mean value, such as via <i>imp.getStatistics()</i>. Notice that the <i>Weaver.inline</i> function takes three arguments: the java code to inline, the map of bindings, and the return type. In the example, we pass only the <i>float[]</i> pixels array, and define <i>Double</i> as the return type. The return type is optional.
+
+
 [[Category:Scripting]]
 [[Category:Jython]]
 
