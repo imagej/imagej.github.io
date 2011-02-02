@@ -1146,7 +1146,7 @@ print mean
 
 The above is trivial and it is meant only as an example (there are better ways to get the mean value, such as via <i>imp.getStatistics()</i>. Notice that the <i>Weaver.inline</i> function takes three arguments: the java code to inline, the map of bindings, and the return type. In the example, we pass only the <i>float[]</i> pixels array, and define <i>Double</i> as the return type. The return type is optional.
 
-Internally, bindings are represented fields in a java class, set as either primitives (like double, int ...) or the least general public class or superclass of the object to bind.
+Internally, bindings are represented as fields in a java class, set as either primitives (like double, int ...) or the least general public class or superclass of the object to bind.
 
 There is a fourth optional argument for <i>inline</i> (boolean) to show the generated java code in a tab of the Script Editor.
 
