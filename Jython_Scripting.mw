@@ -1169,18 +1169,17 @@ w = Weaver.inline(
     """,
     {"slices" : slices})
 
-anded = []
 stack = imp.getStack()
-stackAND = ImageStack(stack.width, stack.height)
+stackXOR = ImageStack(stack.width, stack.height)
 
 for i in range(2, imp.getNSlices()+1):
   # Put the pixel arrays into the pre-made list
   slices[0] = stack.getPixels(i-1)
   slices[1] = stack.getPixels(i)
   # Invoke native code
-  stackAND.addSlice( str(i-1), w.call() )
+  stackXOR.addSlice( str(i-1), w.call() )
 
-ImagePlus("ANDed stack", stackAND).show()
+ImagePlus("XORed stack", stackXOR).show()
 </source>
 
 
