@@ -1148,7 +1148,7 @@ The above is trivial and it is meant only as an example (there are better ways t
 
 Internally, bindings are represented fields in a java class, set as either primitives (like double, int ...) or the least general public class or superclass of the object to bind.
 
-There is a fourth optional argument to inline (boolean) to show the generated java code in a tab of the Script Editor.
+There is a fourth optional argument for <i>inline</i> (boolean) to show the generated java code in a tab of the Script Editor.
 
 A better example that exploits the capabilities of the Weaver is the following: compile the function once, and then call it over and over with different parameters. The bindings cannot be changed, but if they are arrays or collections, one can change the elements of these collections. For example, to obtain a new ImageStack that is the result of applying XOR to each consecutive pair of slices (which will give you the boundaries of objects):
 
@@ -1185,6 +1185,8 @@ for i in range(2, imp.getNSlices()+1):
 
 ImagePlus("XORed stack", stackXOR).show()
 </source>
+
+Of course the Weaver is a java library, and may be used from any scripting language such as [[Javascript Scripting|Javascript]], [[JRuby Scripting|JRuby]], and [[:Category:Scripting|others]].
 
 All the above is inspired by the [http://www.scipy.org/Cookbook/Weave Scientific Python Weaver, or scipy Weaver], which inlines C code inside a python file.
 
