@@ -1146,6 +1146,43 @@ print mean
 
 The above is trivial and it is meant only as an example (there are better ways to get the mean value, such as via <i>imp.getStatistics()</i>. Notice that the <i>Weaver.inline</i> function takes three arguments: the java code to inline, the map of bindings, and the return type. In the example, we pass only the <i>float[]</i> pixels array, and define <i>Double</i> as the return type. The return type is optional.
 
+A better example that exploits the capabilities of the Weaver is the following: compile the function once, and then call it over and over with different parameters. The bindings cannot be changed, but if they are arrays or collections, one can change the elements of these collections. For example, to obtain a new ImageStack that is the result of applying XOR to each consecutive pair of slices (which will give you the boundaries of objects):
+
+<source lang="python">
+from fiji.scripting import Weaver
+
+# The currently open image, an 8-bit stack
+imp = IJ.openImage("http://imagej.nih.gov/ij/images/bat-cochlea-volume.zip")
+
+slices = [None, None]
+
+w = Weaver.inline(
+    """
+    byte[] pix1 = (byte[]) slices.get(0);
+    byte[] pix2 = (byte[]) slices.get(1);
+
+    byte[] xor = new byte[pix1.length];
+    for (int i=0; i<pix1.length; i++) {
+        xor[i] = (byte)(pix1[i] ^ pix2[i]);
+    }
+    return xor;
+    """,
+    {"slices" : slices})
+
+anded = []
+stack = imp.getStack()
+stackAND = ImageStack(stack.width, stack.height)
+
+for i in range(2, imp.getNSlices()+1):
+  # Put the pixel arrays into the pre-made list
+  slices[0] = stack.getPixels(i-1)
+  slices[1] = stack.getPixels(i)
+  # Invoke native code
+  stackAND.addSlice( str(i-1), w.call() )
+
+ImagePlus("ANDed stack", stackAND).show()
+</source>
+
 
 [[Category:Scripting]]
 [[Category:Jython]]
