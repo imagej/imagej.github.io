@@ -263,6 +263,7 @@
 * [[Interactive Moving Least Squares]] - file <tt>Transform_MovingLeastSquaresMesh</tt>  -- ''java jar file''
 * [[Interactive Stack Rotation]] - file <tt>Stack_Rotate</tt>  -- ''java jar file''
 * [[Landmark Correspondences]] - file <tt>Transform_Roi</tt>  -- ''java jar file''
+* [[Panorama equirectangular view]] - file <tt>mpicbg.panorama.Panorama_View</tt>  -- ''java jar file''
 * [[Transform Virtual Stack Slices]] - file <tt>register_virtual_stack.Transform_Virtual_Stack_MT</tt>  -- ''java jar file''
 
 ==== Plugins > Transform > TransformJ ====
@@ -306,11 +307,6 @@
 * [[LOCI Plugins Shortcut Window]] - file <tt>loci.plugins.shortcut.ShortcutPanel("")</tt>  -- ''java jar file''
 * [[-]] - file <tt></tt>  -- ''java jar file''
 * [[Update LOCI Plugins]] - file <tt>loci.plugins.Updater("")</tt>  -- ''java jar file''
-
-
-=== Plugins > Panorama ===
-
-* [[View equirectangular]] - file <tt>mpicbg.panorama.Panorama_View</tt>  -- ''java jar file''
 
 
 
