@@ -31,6 +31,7 @@
 * [[Multithreaded Image Processing in Javascript]] - file <tt>Multithreaded_Image_Processing_in_Javascript.js</tt>  -- ''javascript file''
 * [[Plasma Cloud]] - file <tt>Plasma_Cloud.rb</tt>  -- ''jruby script''
 * [[Same Slice in Multiple Images]] - file <tt>Same_Slice_in_Multiple_Images.rb</tt>  -- ''jruby script''
+* [[Scale by DPI]] - file <tt>Scale_by_DPI.js</tt>  -- ''javascript file''
 * [[blend two images]] - file <tt>blend_two_images.clj</tt>  -- ''clojure script''
 * [[celsius to fahrenheit]] - file <tt>celsius_to_fahrenheit.clj</tt>  -- ''clojure script''
 * [[chess ]] - file <tt>chess_.py</tt>  -- ''jython script''
