@@ -764,6 +764,46 @@ In the above dialog, you will be able to set the autosaving interval (see the bo
 
 Of course it may be easier to set that autosaving interval <b>before</b> running the long task!
 
+= Create a TrakEM2 project for fast visualization, without mipmaps =
+
+Create a TrakEM2 project that avoids generating mipmaps, then import lots of images from a text file that has four columns: the file path, the X, the Y, and the section index of each image tile. Then acquire a snapshot of the first section.
+
+<source lang="python">
+# Albert Cardona 2011-02-02
+# At Madison, Wisconsin, with Erwin Frise
+from ini.trakem2 import Project
+from ij.gui import Toolbar
+from java.awt import Color
+from ij import ImagePlus
+
+project = Project.newFSProject("blank", None, "/home/albert/Desktop/t2/")
+loader = project.getLoader()
+loader.setMipMapsRegeneration(False) # disable mipmaps
+layerset = project.getRootLayerSet()
+layerset.setSnapshotsMode(1) # outlines
+
+task = loader.importImages(
+          layerset.getLayers().get(0),  # the first layer
+          "/home/albert/Desktop/t2/example-data/images/list.txt", # the absolute file path to the text file with absolute image file paths
+          " ", # the column separator  <path> <x> <y> <section index>
+          1.0, # section thickness, defaults to 1
+          1.0, # calibration, defaults to 1
+          False, # whether to homogenize contrast, avoid
+          1.0) # scaling factor, default to 1
+
+task.join() # Optional: wait until all images have been imported
+
+# Export a snapshot of the layer at 25% magnification
+
+scale = 0.25
+layer = layerset.getLayers().get(0)
+flat = loader.makeFlatImage(ImagePlus.COLOR_RGB, layer, layerset.get2DBounds(), scale, layer.getAll(Patch), Color.black)
+
+imp = ImagePlus("snap " + str(scale), flat).show()
+
+print "done!"
+</source>
+
 = Enrich the GUI of TrakEM =
 
 === Add an extra tab to a Display ===
