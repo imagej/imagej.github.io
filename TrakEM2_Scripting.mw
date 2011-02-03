@@ -811,7 +811,7 @@ print "done!"
 
 From the right-click menu, one may choose "Export - Make flat image", which opens a dialog that lets one choose between 8-bit and RGB. These snapshots are created from the mipmaps, which are all 8-bit or RGB images.
 
-On occasions, one wants to create a flattened montage of images in their original bit depth, such as 16-bit or 32-bit. For this purpose, the static function [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Patch.html#makeFlatImage(int, ini.trakem2.display.Layer, java.awt.Rectangle, double, java.util.Collection, java.awt.Color, boolean) Patch.makeFlatImage] exists.
+On occasions, one wants to create a flattened montage of images in their original bit depth, such as 16-bit or 32-bit. For this purpose, the static function [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Patch.html#makeFlatImage(int,%20ini.trakem2.display.Layer,%20java.awt.Rectangle,%20double,%20java.util.Collection,%20java.awt.Color,%20boolean) Patch.makeFlatImage] exists.
 
 Here is an example that, for a given Layer and set of selected Patch instances (image tiles) in it, it makes a 16-bit flat montage image and returns it as an ImageJ's ImageProcessor, at 50% the original scale.
 
