@@ -863,10 +863,7 @@ def doSomething(evt):
   IJ.showMessage("Button pushed!")
 
 def addReconstructToolkit(display):
-  frame = display.getFrame()
-  split = frame.getContentPane().getComponent(0)
-  left = split.getComponent(0)
-  tabs = left.getComponent(2)
+  tabs = display.getTabbedPane()
   # Check that it's not there already
   title = "Reconstruct toolbar"
   for i in range(tabs.getTabCount()):
