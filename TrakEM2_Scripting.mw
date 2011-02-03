@@ -806,6 +806,47 @@ imp = ImagePlus("snap " + str(scale), flat).show()
 print "done!"
 </source>
 
+
+= Create a snapshot in 8-bit, 16-bit, 32-bit or RGB =
+
+From the right-click menu, one may choose "Export - Make flat image", which opens a dialog that lets one choose between 8-bit and RGB. These snapshots are created from the mipmaps, which are all 8-bit or RGB images.
+
+On occasions, one wants to create a flattened montage of images in their original bit depth, such as 16-bit or 32-bit. For this purpose, the static function [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Patch.html#makeFlatImage(int, ini.trakem2.display.Layer, java.awt.Rectangle, double, java.util.Collection, java.awt.Color, boolean) Patch.makeFlatImage] exists.
+
+Here is an example that, for a given Layer and set of selected Patch instances (image tiles) in it, it makes a 16-bit flat montage image and returns it as an ImageJ's ImageProcessor, at 50% the original scale.
+
+<source lang="python">
+from ini.trakem2.display import Display, Patch
+from java.awt import Color
+
+front = Display.getFront() # the active TrakEM2 display window
+layer = front.getLayer()
+tiles = front.getSelection().get(Patch)  # selected Patch instances only
+backgroundColor = Color.black
+scale = 0.5
+
+roi = tiles[0].getBoundingBox()
+for tile in tiles[1:]:
+  roi.add(tile.getBoundingBox())
+
+print "Creating flat image from", len(tiles), "image tiles"
+
+ip = Patch.makeFlatImage(
+           ImagePlus.GRAY16,
+           layer,
+           roi,
+           scale,
+           tiles,
+           backgroundColor,
+           True)  # use the min and max of each tile
+
+imp = ImagePlus("Flat montage", ip)
+imp.show()
+</source>
+
+
+For other output types, use ImagePlus.GRAY8, .GRAY16, GRAY32 or .COLOR_RGB, as listed in the documentation for the [http://pacific.mpi-cbg.de/javadoc/ij/ImagePlus.html ImagePlus] class.
+
 = Enrich the GUI of TrakEM =
 
 === Add an extra tab to a Display ===
