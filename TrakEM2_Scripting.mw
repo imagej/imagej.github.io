@@ -768,6 +768,8 @@ Of course it may be easier to set that autosaving interval <b>before</b> running
 
 Create a TrakEM2 project that avoids generating mipmaps, then import lots of images from a text file that has four columns: the file path, the X, the Y, and the section index of each image tile. Then acquire a snapshot of the first section.
 
+As a result of the script, a new Project tab will open in the "TrakEM2" window, and a new Display window will show. At any time, run "project.saveAs(xmlfilepath)" to store the project in an XML file, and from then on just "project.save()". Or right-click and choose "Project - Save", or push 's'.
+
 <source lang="python">
 # Albert Cardona 2011-02-02
 # At Madison, Wisconsin, with Erwin Frise
