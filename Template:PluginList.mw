@@ -31,7 +31,6 @@
 * [[Multithreaded Image Processing in Javascript]] - file <tt>Multithreaded_Image_Processing_in_Javascript.js</tt>  -- ''javascript file''
 * [[Plasma Cloud]] - file <tt>Plasma_Cloud.rb</tt>  -- ''jruby script''
 * [[Same Slice in Multiple Images]] - file <tt>Same_Slice_in_Multiple_Images.rb</tt>  -- ''jruby script''
-* [[Scale by DPI]] - file <tt>Scale_by_DPI.js</tt>  -- ''javascript file''
 * [[blend two images]] - file <tt>blend_two_images.clj</tt>  -- ''clojure script''
 * [[celsius to fahrenheit]] - file <tt>celsius_to_fahrenheit.clj</tt>  -- ''clojure script''
 * [[chess ]] - file <tt>chess_.py</tt>  -- ''jython script''
@@ -70,6 +69,16 @@
 * [[batch convert any to tif]] - file <tt>batch_convert_any_to_tif.txt</tt>  -- ''macro''
 
 
+=== Plugins > Scripts ===
+
+
+==== Plugins > Scripts > Image ====
+
+===== Plugins > Scripts > Image > Adjust =====
+
+* [[Scale to DPI]] - file <tt>Scale_to_DPI.js</tt>  -- ''javascript file''
+
+
 === Plugins > Utilities ===
 
 * [[Close All Without Saving]] - file <tt>Close_All_Without_Saving.txt</tt>  -- ''macro''
@@ -93,6 +102,22 @@
 
 * [[Test Marching Cubes]] - file <tt>MC_Test</tt>  -- ''java jar file''
 * [[Test Java3D]] - file <tt>Test_Java3D</tt>  -- ''java jar file''
+
+
+=== Plugins > Segmentation ===
+
+* [[Segment blob in 3D Viewer]] - file <tt>ij3d.segmentation.Blob_Segmentation_in_3D</tt>  -- ''java jar file''
+* [[Graph Cut]] - file <tt>Graph_Cut</tt>  -- ''java jar file''
+* [[Blow/Lasso Tool]] - file <tt>plugin.Lasso_</tt>  -- ''java jar file''
+* [[Robust Automatic Threshold Selection]] - file <tt>RATS_</tt>  -- ''java jar file''
+* [[Simple Neurite Tracer]] - file <tt>tracing.Simple_Neurite_Tracer</tt>  -- ''java jar file''
+* [[SIOX: Simple Interactive Object Extraction]] - file <tt>siox.Siox_Segmentation</tt>  -- ''java jar file''
+* [[Apply saved SIOX segmentator]] - file <tt>siox.Load_Segmentation</tt>  -- ''java jar file''
+* [[Snakuscule]] - file <tt>Snakuscule_</tt>  -- ''java jar file''
+* [[Statistical Region Merging]] - file <tt>SRM_</tt>  -- ''java jar file''
+* [[Trainable Segmentation]] - file <tt>trainableSegmentation.Trainable_Segmentation</tt>  -- ''java jar file''
+* [[Segmentation Editor]] - file <tt>Segmentation_Editor</tt>  -- ''java jar file''
+* [[Level Sets]] - file <tt>levelsets.ij.LevelSet</tt>  -- ''java jar file''
 
 
 === Plugins > Process ===
@@ -145,6 +170,7 @@
 * [[BeanShell Interpreter]] - file <tt>BSH.BSH_Interpreter</tt>  -- ''java jar file''
 * [[Refresh BSH Scripts]] - file <tt>BSH.Refresh_BSH_Scripts</tt>  -- ''java jar file''
 * [[Macro Interpreter]] - file <tt>CLI.CLI_</tt>  -- ''java jar file''
+* [[Refresh Macros]] - file <tt>CLI.Refresh_Macros</tt>  -- ''java jar file''
 * [[Clojure Interpreter]] - file <tt>Clojure.Clojure_Interpreter</tt>  -- ''java jar file''
 * [[Refresh Clojure Scripts]] - file <tt>Clojure.Refresh_Clojure_Scripts</tt>  -- ''java jar file''
 * [[JRuby Interpreter]] - file <tt>JRuby.JRuby_Interpreter</tt>  -- ''java jar file''
@@ -173,21 +199,6 @@
 * [[FeatureJ Panel]] - file <tt>FJ_Panel</tt>  -- ''java jar file''
 * [[FeatureJ Statistics]] - file <tt>FJ_Statistics</tt>  -- ''java jar file''
 * [[FeatureJ Structure]] - file <tt>FJ_Structure</tt>  -- ''java jar file''
-
-
-=== Plugins > Segmentation ===
-
-* [[Graph Cut]] - file <tt>Graph_Cut</tt>  -- ''java jar file''
-* [[Blow/Lasso Tool]] - file <tt>plugin.Lasso_</tt>  -- ''java jar file''
-* [[Robust Automatic Threshold Selection]] - file <tt>RATS_</tt>  -- ''java jar file''
-* [[Simple Neurite Tracer]] - file <tt>tracing.Simple_Neurite_Tracer</tt>  -- ''java jar file''
-* [[SIOX: Simple Interactive Object Extraction]] - file <tt>siox.Siox_Segmentation</tt>  -- ''java jar file''
-* [[Apply saved SIOX segmentator]] - file <tt>siox.Load_Segmentation</tt>  -- ''java jar file''
-* [[Snakuscule]] - file <tt>Snakuscule_</tt>  -- ''java jar file''
-* [[Statistical Region Merging]] - file <tt>SRM_</tt>  -- ''java jar file''
-* [[Trainable Segmentation]] - file <tt>trainableSegmentation.Trainable_Segmentation</tt>  -- ''java jar file''
-* [[Segmentation Editor]] - file <tt>Segmentation_Editor</tt>  -- ''java jar file''
-* [[Level Sets]] - file <tt>levelsets.ij.LevelSet</tt>  -- ''java jar file''
 
 
 === Plugins > Image5D ===
@@ -448,8 +459,6 @@
 
 === File > Open Samples ===
 
-* [[Spirals (Macro)]] - file <tt>ij.plugin.Macro_Runner("../macros/spirals.txt")</tt>  -- ''java jar file''
-* [[Adelson's Squares (Macro)]] - file <tt>ij.plugin.Macro_Runner("../macros/grey-squares.ijm")</tt>  -- ''java jar file''
 * [[Malaria Sporozoites (9.2MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/_malaria_parasites.tif")</tt>  -- ''java jar file''
 * [[First-instar brain (6.3MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/first-instar-brain.zip")</tt>  -- ''java jar file''
 * [[Shepp-Logan Phantom (Plugin)]] - file <tt>SheppLogan_</tt>  -- ''java jar file''
@@ -526,11 +535,6 @@
 ==== Image > Stacks > View5D ====
 
 * [[start viewer]] - file <tt>view5d.View5D_("")</tt>  -- ''java jar file''
-
-
-=== Image > Hyperstacks ===
-
-* [[Temporal-Color Code]] - file <tt>TemporalColorCoder</tt>  -- ''java jar file''
 
 
 === Image > Video Editing ===
