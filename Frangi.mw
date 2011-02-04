@@ -1,0 +1,12 @@
+{{Infobox Plugin
+| name                   = View5D
+| software               = ImageJ
+| author                 = Mark Longair
+| maintainer             = [[User:Mark|Mark Longair]]
+| filename               = link to the jar here
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Feature_Detection/fiji/features/Frangi_.java on gitweb]
+| released               = February 2011
+| latest version         = 0.0
+| status                 = 
+| category               = [[:Category:Plugins|Plugins]]
+}}
