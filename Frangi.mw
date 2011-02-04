@@ -10,3 +10,8 @@
 | status                 = 
 | category               = [[:Category:Plugins|Plugins]]
 }}
+
+This plugin implements the algorithm for detection of vessel- or tube-like structures in 2D and 3D images described in this paper:
+
+Alejandro F. Frangi, Wiro J. Niessen, Koen L. Vinc and Max A. Viergever '''Multiscale Vessel Enhancement Filtering''', ''Medical Image Computing and Computer-Assisted Interventation — MICCAI’98
+    Lecture Notes in Computer Science'', 1998, Volume 1496/1998, 130
