@@ -68,10 +68,18 @@ for d in Display.getFront().getSelected():
 The [http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Selection.html Selection] object of a [http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Display.html Display] can return a number of collections with any selected objects in it, for example of type [http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Patch.html Patch] (those that wrap an image). All you need to do is to call <i>[http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Selection.html#getSelected(java.lang.Class) getSelected]</i> with the name of the class to filter for:
 
 <source lang="python">
-for d in Display.getFront().getSelected(Patch):
+for d in Display.getSelected(Patch):
   print d.title
 </source>
 
+The above is a static call that retrieves the list for whichever Display window happens to be activated, in front of all others. If you have a Display instance, perform the same operation via the Display's Selection:
+
+<source lang="python">
+front = Display.getFront()
+selection = front.getSelection()
+for d in selection.get(Patch):
+  print d.title
+</source>
 
 === Setting and getting member objects in jython ===
 
