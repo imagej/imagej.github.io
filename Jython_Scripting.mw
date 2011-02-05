@@ -1030,14 +1030,13 @@ class Numbers:
 Now, to invoke these methods, notice how <i>two</i> doesn't need to be invoked on an instance (we merely prepend the class name), but <i>one</i> does:
 
 <source lang="python">
-print That.two()
+print Numbers.two()
 
-that = That()
+that = Numbers()
 print that.one()
 </source>
 
 Why would you want to use a static method? It is useful to keep the namespace tidy, to avoid name collisions.
-
 
 === Creating multi-dimensional native java arrays ===
 
