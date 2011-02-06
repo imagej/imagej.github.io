@@ -27,7 +27,7 @@
 ;<source lang="bash">git diff <commit a>:<file> <commit b>:<file> --color-words</source>
 :Display a diff with colored words between a file in one commit and a file in another commit.  Say "-S" to less to virtually wrap long lines.
 
-;<source lang="bash">git log --format='%aN' | sort -u</source>
+;<source lang="bash">git log --format='%aN <%ae&>' | sort -u</source>
 :Display all contributing authors of a project including their e-mail.  Respects .mailmap.
 
 ==Tutorials==
