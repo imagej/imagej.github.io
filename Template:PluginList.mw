@@ -129,6 +129,7 @@
 * [[Anisotropic Diffusion 2D]] - file <tt>Anisotropic_Diffusion_2D</tt>  -- ''java jar file''
 * [[Extended Depth of Field (Easy mode)...]] - file <tt>EDF_Easy_</tt>  -- ''java jar file''
 * [[Extended Depth of Field (Expert mode)...]] - file <tt>EDF_Expert_</tt>  -- ''java jar file''
+* [[Frangi Vesselness (imglib, experimental)]] - file <tt>fiji.features.Frangi_("")</tt>  -- ''java jar file''
 * [[Exact Euclidean Distance Transform (3D)]] - file <tt>fiji.process3d.EDT</tt>  -- ''java jar file''
 * [[Exact Signed Euclidean Distance Transform (3D)]] - file <tt>fiji.process3d.SEDT</tt>  -- ''java jar file''
 * [[Bilateral Filter]] - file <tt>Bilateral_Filter</tt>  -- ''java jar file''
