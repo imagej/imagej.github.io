@@ -23,26 +23,24 @@ If I want to show DAPI in green and EGFP as magenta, there is nothing "wrong" ab
 
 ----
 
-'''Questions you should ask before attempting colocalisation analysis from 2 colour channel images, using the pixel intensity spatial correlation methods of Manders and Costes:'''
+===Questions you should ask before attempting colocalisation analysis from 2 colour channel images, using the pixel intensity spatial correlation methods of Manders and Costes:===
 
 *Q1) Is the image data noisy?
 *Q2) Has there been lossy compression?
 *Q3) Is the intensity information saturated / clipped / overexposed?
 *Q4) Is there a problem with uniform background / detector offset?
+*Q5) What is the spatial resolution?
 
 ----
 
+===Check image data for problems and suitability for analysis===
 To begin with, we should check the images for problems that might make the colocalisation analysis methods fail or be unreliable.
 
-1) Significant noise (uncertainty in the pixel values - usually from detection of too few photons) means the methods we will use will significantly underestimate the true colocalization, or even completely fail to give the "right" result.
-
-2) Lossy compression messes up the intensity information of the pixels, causing the colocalization result to be more or less wrong. 
-
-3) Intensity clipping/saturation is bad news. Pixel intensity correlation measurements rely on the pixel intensities being true and not clipped to 255 when they were really higher!. We did this in the [[DetectInformationLoss]] tutorial, so do that first if you didn't already!  
-
-4) We should look for wrong offset / high background (since this confuses the auto threshold method, since zero signal is not zero pixel intensity but some larger number, see below), 
-
-Spatial resolution)
+*1) Significant noise (uncertainty in the pixel values - usually from detection of too few photons) means the methods we will use will significantly underestimate the true colocalization, or even completely fail to give the "right" result.
+*2) Lossy compression messes up the intensity information of the pixels, causing the colocalization result to be more or less wrong. 
+*3) Intensity clipping/saturation is bad news. Pixel intensity correlation measurements rely on the pixel intensities being true and not clipped to 255 when they were really higher!. We did this in the [[DetectInformationLoss]] tutorial, so do that first if you didn't already!  
+*4) We should look for wrong offset / high background (since this confuses the auto threshold method, since zero signal is not zero pixel intensity but some larger number, see below), 
+*5) Spatial resolution)
 The spatial resolution of the images, by definition, determines the spatial resolution that you are measuring colocalization at. The results will be different at different levels of spatial resolution. If the image is one big pixel, everything will colocalize! 
 
 The spatial resolution of the light microscope is limited by the wavelength of the light (and the NA of the objective lens) according to Ernst Abbe's work. Molecules / proteins are an order of magnitude smaller than the wavelength of visible light, so they could be many nm apart, but still appear in the same image pixel. Is that true colocalization? Maybe.... it depends how you define it! 
