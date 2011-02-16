@@ -585,6 +585,34 @@ mean) std-dev))]
  (.show (ImgLib/wrap normalized)))
 </source>
 
+There is a better way to compute the mean and variance of a collection of numbers, that involves traversing the collection only once. Clojure naturally helps with its very concise destructuring and its automatic promotion of numeric types to avoid overflow.
+
+<source lang="lisp">
+; ASSUMES a 32-bit image as the active image
+(ns test.imglib
+ (:import [mpicbg.imglib.image Image]
+          [script.imglib ImgLib]
+          [script.imglib.math Compute Subtract Divide]
+          [ij IJ]))
+
+(let [^Image img (ImgLib/wrap imp)
+      size (.size img)
+      [xs x2s] (reduce (fn [accum t]
+                         (let [xi (.getRealFloat t)]
+                           [(+ (accum 0) xi)
+                            (+ (accum 1) (* xi xi))]))
+                       [0 0]
+                       img)
+      mean (/ xs size)
+      variance (- (/ x2s size) (* mean mean))
+      std-dev (Math/sqrt variance)
+      ^Image normalized (Compute/inFloats (Divide. (Subtract. img mean) std-dev))]
+  (.. normalized getDisplay setMinMax)
+  (.show (ImgLib/wrap normalized))))
+</source>
+
+(Code adapted from a Common Lisp version by [http://nklein.com/2011/02/calculating-the-mean-and-variance-with-one-pass/ Patrick Stein].)
+
 == Looping an array of pixels ==
 <p>For example, to find the min and max values:</p>
 
