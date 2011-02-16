@@ -10,7 +10,7 @@
 *[http://clojure.org/api The Clojure API] (listing of all available functions, with explanations).
 *[http://clojure.org/cheatsheet Clojure cheat sheet]: a summary of all the essentials.
 
-<h3>Using Clojure inside Fiji</h3>
+== Using Clojure inside Fiji ==
 Go to "Plugins - Scripting - Clojure Interpreter". The prompt accepts any clojure code. See also Fiji's [[Script Editor]].
 
 See [[Scripting Help]] for details on keybindings and how to use the interpreter. <b>Control+)</b> will add all necessary ending parenthesis.
@@ -34,7 +34,7 @@ To execute a script, do any of:
 The script is <b>always</b> read directly from the source file, so no updating of menus is needed (unless its file name changes).
 
 
-<h4>Running Clojure files from the command line</h4>
+=== Running Clojure files from the command line ===
 Fiji can execute any clojure file directly:
 
  ./fiji plugins/Examples/blend_two_images.clj
@@ -42,7 +42,7 @@ Fiji can execute any clojure file directly:
 The file will run with the full classpath as set by fiji, which includes all jars in fiji/jars and fiji/plugins/ folders, among others.
 
 
-<h4>Getting a REPL without the usual ImageJ GUI</h4>
+=== Getting a REPL without the usual ImageJ GUI ===
 The simplest is:
 
   ./fiji --clojure
@@ -66,7 +66,7 @@ If no JVM arguments were specified, there's no need for the double dash:
 
 Just make sure to have the jline.jar in your classpath (or drop it into fiji/jars folder).
 
-<h4>Debugging with the Java Debugger</h4>
+=== Debugging with the Java Debugger ===
 
 If you have launched fiji with an agentlib, you may then connect to it via the <i>jdb</i>:
 
@@ -114,7 +114,7 @@ There are perhaps more convenient setups built into Eclipse, IntelliJ, NetBeans 
 
 Within the jdb prompt, type "help".
 
-<h3>Language basics</h3>
+== Language basics ==
 <p>A ';' defines the start of a comment, just like '//' does in Java.</p>
 <p>A function definition declares parameters within [].</p>
 <p>Local variables are declared with <i>let</i>, and global variables with <i>def</i>.</p>
@@ -122,7 +122,7 @@ Within the jdb prompt, type "help".
 <p></p>
 
 
-<h3>Calling methods and variables on a java object</h3>
+== Calling methods and variables on a java object ==
 <p>There are two ways, the second syntactic sugar of the first. Below, <b>imp</b> is a pointer to an ImagePlus:</p>
 
 <source lang="lisp">
@@ -186,7 +186,7 @@ PlugInFilter/DOES_ALL
 <p>Choose whatever matches your mental schemes best.</p>
 
 
-<h3>Calling static fields and methods: namespace syntax</h3>
+== Calling static fields and methods: namespace syntax ==
 
 <p>To call a <b>static</b> field or method, use namespace syntax:</p>
 
@@ -199,7 +199,7 @@ PlugInFilter/DOES_ALL
 <p>Above, notice how a class name is used instead of a pointer to call static fields and methods. Static fields and methods are just variables and functions that exist within the namespace of the class in which they are declared. Hence Clojure's namespace syntax makes way more sense than java code, that doesn't do such distinction and allows for loads of confusion (java allows invoking static methods and fields using a pointer to an instance of the class in which such static methods and fields are declared).</p>
 
 
-<h3>Defining variables: obtaining the current image</h3>
+== Defining variables: obtaining the current image ==
 As a local variable <b>imp</b> declared within a <i>let</i> statement:
 
 <source lang="lisp">
@@ -241,7 +241,7 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 </source>
 
 
-<h3>Creating objects: invoking constructors</h3>
+== Creating objects: invoking constructors ==
 
 A constructor is invoked by adding a dot '.' to the name of a class, followed by the arguments. Below, we create an ImageProcessor and then an ImagePlus with it, and finally we print the ImagePlus, which invokes toString() on it (like in java):
 
@@ -260,7 +260,7 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
 </source>
 
 
-<h3>Defining a closure</h3>
+== Defining a closure ==
 <p>In the following a function is declared within the scope of the local variable <b>rand</b>, which contains an instance of java.util.Random. All calls to the function <i>rand-double</i> will use the same random number generator instance with seed 69997.</p>
 <p>The <i>dotimes</i> loop will then print 10 different pseudo-random numbers. If the <b>rand</b> was a new Random with seed 69997 every time, all 10 numbers would be exactly the same.</p>
 <p>You can think of a function inside a closure as a static function using a static variable (in Java), but it's more than that, since the function will be able to access parameters on the global namespace and also in any other local namespace in which the <i>let</i> is declared. For example, another <i>let</i>, or even another <i>defn</i>!</p>
@@ -277,9 +277,9 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
 <p>Above, note the dot '.' after Random, which indicates we are calling the constructor (with a single parameter 69997, the pseudorandom generator seed to be used). Alternatively, one may use the java-like syntax: (new java.util.Random 69997) -- note the absence of a dot now.</p>
 
 
-<h3>Manipulating images</h3>
+== Manipulating images ==
 
-<h4>ImageJ Image internals: ImagePlus, ImageProcessor, ImageStack</h4>
+=== ImageJ Image internals: ImagePlus, ImageProcessor, ImageStack ===
 
 ImageJ has three basic objects:
 * The <b>[http://rsb.info.nih.gov/ij/developer/api/ij/ImagePlus.html ImagePlus]</b>, which wraps the ImageProcessor and contains properties and pointers to the ROI (region of interest) and the ImageWindow that may be displaying the image.
@@ -293,7 +293,7 @@ ImageJ has three basic objects:
 For extensive documentation, see the [http://albert.rierol.net/imagej_programming_tutorials.html#ImageJ%20programming%20basics Anatomy of an ImageJ image] ImageJ programming basics tutorial.
 
 
-<h4>Conventions in naming image variables</h4>
+=== Conventions in naming image variables ===
 
 By convention, variables are named:
 * <b>imp</b> to mean ImagePlus
@@ -301,7 +301,7 @@ By convention, variables are named:
 * <b>stack</b> to mean ImageStack
 
 
-<h4>Creating a new image</h4>
+=== Creating a new image ===
 
 From scratch:
 <source lang="lisp">
@@ -319,7 +319,7 @@ From a file:
 </source>
 
 
-<h4>Creating an image of the same type of an existing one</h4>
+=== Creating an image of the same type of an existing one ===
 
 <source lang="lisp">
 ; The original
@@ -332,7 +332,7 @@ From a file:
 
 Above, notice the parenthesis (createProcessor 768 768), which specify for which method those numbers are arguments for.
 
-<h4>Resizing an image</h4>
+=== Resizing an image ===
 
 The idea is to grab the ImageProcessor, duplicate it and resize it. The resizing returns a new ImageProcessor of the same type:
 
@@ -352,7 +352,7 @@ An alternative way would be to simply duplicate the processor of imp-1, and then
                        (.. imp-1 getProcessor duplicate (resize 768 768)))
 </source>
 
-<h4>Resizing an ImageStack</h4>
+=== Resizing an ImageStack ===
 
 This one is harder, because an ImageStack is just a wrapper for Object[] list of pixel arrays.
 ImageJ though provides a mid-level resizing method, via the [http://rsb.info.nih.gov/ij/developer/api/ij/plugin/CanvasResizer.html CanvasResizer] class:
@@ -412,7 +412,7 @@ Also, we must declare the type of the <i>ip2</i> because clojure cannot decide b
 Notice that each time you call getProcessor on an ImageStack, it returns a new ImageProcessor instance in a very costly way, by calling a series of <i>instanceof</i> on the pixels arrays to figure out which kind of ImageProcessor subclass it should create.
 
 
-<h4>Resizing an image or ImageStack using ROIs</h4>
+=== Resizing an image or ImageStack using ROIs ===
 
 ROIs (aka Region of Interest or selection) have bounds, defined by the minimal enclosing rectangle.
 
@@ -472,14 +472,14 @@ To handle any ImagePlus (with single slice or containing an ImageStack, i.e. man
 
 The above works with both single images and stacks.
 
-<h3>Manipulate images using ImgLib</h3>
+== Manipulate images using ImgLib ==
 
 With [[Imglib]], pixels are stored in native arrays of primitives such as int, float, double, etc. (or other more interesting forms, such as [http://download.oracle.com/javase/1.5.0/docs/api/java/awt/Shape.html Shape]. Such pixels are accessed with intermediate proxy objects that the JIT is able to completely remove out of the way.
 
 From Clojure, there are many ways in which to access the pixels. Here we list some examples of the pixels accessed as a Collection of accessor [http://pacific.mpi-cbg.de/javadoc/mpicbg/imglib/type/Type.html Type] objects.
 
 
-<h4>Multiply each pixel by 0.5</h4>
+=== Multiply each pixel by 0.5 ===
 
 Multiply in place each value by 0.5. The ImgLib/wrap is a thin wrapper that accesses directly the pixel array. Hence the original image will be changed.
 
@@ -552,7 +552,7 @@ What's more, the [http://pacific.mpi-cbg.de/javadoc/script/imglib/math/Compute.h
 
 All mathematical operations listed in java.lang.Math have a corresponding constructor for execution in Compute/inFloats. See the documentation for the [http://pacific.mpi-cbg.de/javadoc/script/imglib/math/package-frame.html script.imglib.math package].
 
-<h4>Normalize an image</h4>
+=== Normalize an image ===
 
 Assumes that <i>(IJ/getImage)</i> returns a 32-bit, float image. If that is not the case, convert the image to a float image first.
 
@@ -585,7 +585,7 @@ mean) std-dev))]
  (.show (ImgLib/wrap normalized)))
 </source>
 
-<h3>Looping an array of pixels</h3>
+== Looping an array of pixels ==
 <p>For example, to find the min and max values:</p>
 
 <source lang="lisp">
@@ -658,7 +658,7 @@ mean) std-dev))]
     (println "Not an 8-bit image")))
 </source>
 
-<h3>Executing commands from the menus</h3>
+== Executing commands from the menus ==
 <p>Any ImageJ menu command may be run on the active image:</p>                                                                                                                                                        
 <source lang="lisp">
 (ij.IJ/doCommand "Add Noise")
@@ -674,7 +674,7 @@ For even more reliable control, run the command directly on a specified image, i
 </source>
 To find out which arguments can any command accept, open the Plugins - Macros - Macro Recorder and run the command manually.
 
-<h3>Creating and using Clojure scripts as ImageJ plugins</h3>
+== Creating and using Clojure scripts as ImageJ plugins ==
 <p>Simply create a text file with the script inside, and place it in the plugins menu or any subfolder. Then call Plugins - Scripting - Refresh Clojure Scripts to make it appear on the menus.</p>
 
 <p>If the macros/StartupMacros.txt includes a call to the Refresh Clojure Scripts inside the AutoRun macro, then all your Clojure scripts will appear automatically on startup.</p>
@@ -683,7 +683,7 @@ To find out which arguments can any command accept, open the Plugins - Macros - 
 
 <p><b>Very important:</b> all scripts and commands from the interpreter will run within the same thread, and within the same clojure context.</p>
 
-<h3>Using java beans for quick and convenient access to an object's fields</h3>
+== Using java beans for quick and convenient access to an object's fields ==
 <p>Essentially it's all about using <i>get</i> methods in a trivial way. For example:</p>
 <source lang="lisp">
 (let [imp (ij.WindowManager/getCurrentImage)
@@ -696,7 +696,7 @@ To find out which arguments can any command accept, open the Plugins - Macros - 
 
 <h1>Examples</h1>
 
-<h3>Fixing overexposed images: setting a pixel value to a desirable one for all overexposed pixels</h3>
+== Fixing overexposed images: setting a pixel value to a desirable one for all overexposed pixels ==
 
 The problem: [http://ami.scripps.edu/software/leginon/ Leginon] or the Gatan TEM camera acquired an overexposed image, and set all pixels beyond range to zero.
 
@@ -720,7 +720,7 @@ In the example below, the <i>fix</i> function is called with the current image a
    (.updateAndDraw imp))
 </source>
 
-<h3>Creating a script for ImageJ</h3>
+== Creating a script for ImageJ ==
 
 Simply write the clojure script in a text file, and follow these conventions:
 
@@ -733,7 +733,7 @@ Once saved and in the menus, you need <b>not</b> call refresh scripts ever again
 
 See [[Scripting Help]] for more details, including how to use the built-in dynamic interpreter.
 
-<h3>Example Clojure plugins included in Fiji</h3>
+== Example Clojure plugins included in Fiji ==
 Open the plugins/Examples/ folder in Fiji installation directory. You'll find three Clojure examples:
 
 * [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Multithreaded_Image_Processing.clj;hb=HEAD Multithreaded_Image_Processing.clj]: illustrate, with macros (via [http://clojure.org/macros#toc9 defmacro]), how to automatically multithread the processing of an image using arbitrary subdivision of the image, such as one line per thread, for as many threads as cores the CPU has.
@@ -745,7 +745,7 @@ Open the plugins/Examples/ folder in Fiji installation directory. You'll find th
 
 <h1>Appendix</h1>
 
-<h3>Defining the output stream</h3>
+== Defining the output stream ==
 The default output stream is at variable <i>*out*</i>, which you may redefine to any kind of PrintWriter:
 <source lang="lisp">
 (let [all-out (new java.io.StringWriter)]
@@ -758,7 +758,7 @@ The default output stream is at variable <i>*out*</i>, which you may redefine to
    (ij.IJ/log (str all-out)))
 </source>
 
-<h3>Destructuring</h3>
+== Destructuring ==
 
 Destructuring is a shortcut to capture the contents of a variable into many variables.
 
@@ -802,7 +802,7 @@ Prints:
  :c 3 [:c 3]
  nil
 
-<h3>Namespaces</h3>
+== Namespaces ==
 * To list all existing namespaces:
 <source lang="lisp">
 >>> (all-ns)
@@ -828,7 +828,7 @@ A nicer way to print all public functions and variables from all namespaces, sor
 </source>
 Note above we use <i>destructuring</i>: the [k v] take the values of the key and the value of each entry in the ns-publics table. Actually, since we first sort the table, the k and v take the first and second values of each array pair in the sorted list of array pairs returned on applying <i>sort</i> to the <i>ns-publics</i>-generated table.
 
-<h3>Forget/Remove all variables from a namespace</h3>
+== Forget/Remove all variables from a namespace ==
 To forget all variables from the user namespace, do:
 <source lang="lisp">
 (map #(ns-unmap 'user %)
@@ -838,13 +838,13 @@ The above maps the function <i>ns-unmap</i> to each variable name declared in th
 
 <i>Thanks to AWizzArd from #clojure at irc.freenode.net for the tip.</i>
 
-<h3>JVM arguments</h3>
+== JVM arguments ==
 * To get the arguments passed to the JVM, see contents of variable *command-line-args*
 <source lang="lisp">
 (println *command-line-args*)
 </source>
 
-<h3>Reflection</h3>
+== Reflection ==
 * To list all methods of an object:
 
 <source lang="lisp">
@@ -867,8 +867,8 @@ The above maps the function <i>ns-unmap</i> to each variable name declared in th
 
 (Thanks to Craig McDaniel for posting the above function to Clojure's mailing list.)
 
-<h3>Lambda functions</h3>
-<h4>Declaration</h4>
+== Lambda functions ==
+=== Declaration ===
 * To declare functions on the fly, lambda style, with regex for arguments:
 
 For example, declare a function that takes 2 arguments, and returns the value of the first argument divided by 10, and multiplied by the second argument:
@@ -878,7 +878,7 @@ For example, declare a function that takes 2 arguments, and returns the value of
 </source>
 Of course there's no need to name the function, the above is just for illustration.
 
-<h4>Mapping a function to all elements in a list</h4>
+=== Mapping a function to all elements in a list ===
 
 * To declare a nameless function, and apply it to each element of a list:
 In this case, increment by one each value of a list from 0 to 9:
@@ -898,7 +898,7 @@ Above, we could have defined the function as #(+ %1 1):
 </source>
 Beware that the <i>map</i> function above applies the given function to each element of a list, and returns a <b>new</b> list with the results.
 
-<h3>Built-in documentation</h3>
+== Built-in documentation ==
 Use the function <b><i>doc</i></b> to query any other function or variable. For example, the list generator function <i>range</i>:
 <source lang="lisp">
 (doc range)
@@ -924,7 +924,7 @@ When not knowing what to search for, you may try <b><i>find-doc</i></b> instead,
   
   ... etc.
 
-<h4>Defining documentation for your own functions</h4>
+=== Defining documentation for your own functions ===
 So where does the documentation come from? Every definition of a function or macro or multimethod may take a description string before the arguments:
 <source lang="lisp">
 (defn area
@@ -940,7 +940,7 @@ So where does the documentation come from? Every definition of a function or mac
     Computes the area of a rectangle.
   nil
 
-<h4>Defining documentation for a variable</h4>
+=== Defining documentation for a variable ===
 <source lang="lisp">
 (def
   #^{:doc "The maximum number of connections"}
@@ -956,7 +956,7 @@ So where does the documentation come from? Every definition of a function or mac
 
 Function documentation is internally set like the above: <i>defn</i> is a macro that defines a function and puts the second argument as the doc string of the variable that points to the function body (among many other things).
 
-<h4>Adding a test function to a variable</h4>
+=== Adding a test function to a variable ===
 
 We first declare the variable, and then define it with a metadata map that includes a test function:
 
@@ -979,7 +979,7 @@ The test results, in this case, in an exception being thrown:
 
 Otherwise, it would just return the <i>:ok</i> keyword.
 
-<h3>A fibonacci sequence: lazy and infinite sequences</h3>
+== A fibonacci sequence: lazy and infinite sequences ==
 
 A beautiful example of using lazy sequences and applying functions to one or more sequences at a time.
 
@@ -1004,7 +1004,7 @@ Then we just <i>take</i> the first 10 elements of such lazy sequence, which are 
 Which outputs:
  (0 1 1 2 3 5 8 13 21 34)
 
-<h4>Printing lazy sequences to the REPL</h4>
+=== Printing lazy sequences to the REPL ===
 The REPL, when given a lazy sequence, will <b>traverse it in its entirety</b> to print it.
 
 Printing a potentially infinite lazy sequence to the REPL is something you don't want to do: besides triggering computation of each element, it would fill all memory and throw an OutOfMemoryException. And you'd get bored seeing elements pass by.
@@ -1028,7 +1028,7 @@ So now one can safely print the entire fibonnaci sequence, which will print only
 
 The <b>*print-length*</b> applies to all sequences to be printed in the REPL, but is specially useful for very large lazy sequences.
 
-<h3>Creating shallow and deep sequences from java arrays</h3>
+== Creating shallow and deep sequences from java arrays ==
 
 Many clojure functions take sequences, not native java arrays, as arguments. A java native array can be wrapped by a shallow sequence like the following:
 
@@ -1075,7 +1075,7 @@ So now any changes to the original <i>pixels</i> array will not affect the new s
 
 <i>Thanks to Chouser and wwmorgan for examples on #clojure at irc.freenode.net</i>
 
-<h3>Generating java classes in .class files from clojure code</h3>
+== Generating java classes in .class files from clojure code ==
 
 Using ahead of time (AOT) compilation with [http://clojure.org/compilation  gen-class], any clojure code can be compiled to a java class. Such class can then be used from java code, or from any scripting language like [[Jython Scripting|jython]], [[JRuby Scripting|jruby]], [[Javascript Scripting|javascript]], and [[:Category:Scripting|any other]].
 
@@ -1189,7 +1189,7 @@ The example clojure code:
     (.updateAndDraw imp)))
 </source>
 
-<h3>References, concurrency, transactions and synchronization</h3>
+== References, concurrency, transactions and synchronization ==
 
 Clojure supports thread concurrency without explicit locks. Compared to java code, this is a gigantic step forward: locks, and particularly multiple locks, are very hard to get right and very, very hard to debug properly (but see [http://albert.rierol.net/java_tricks.html#How%20to%20debug%20a%20multithreaded%20java%20program debugging multithreaded java programs]).
 
@@ -1277,7 +1277,7 @@ The assignment is done in a transaction, so no matter how many concurrent thread
               (count (set @ls))))) ; Make a hash set (with unique entries) from the list of ids
 </source>
 
-<h3>Using try/catch/finally and throwing Exceptions</h3>
+== Using try/catch/finally and throwing Exceptions ==
 
 <source lang="lisp">
 (try
@@ -1310,7 +1310,7 @@ Above, despite the type declaration, one can pass any value to the <i>area</i> f
  100
 
 
-<h3>Executing a command in a shell and capturing its output</h3>
+== Executing a command in a shell and capturing its output ==
 First we define the macro <i>exec</i>:
 <source lang="lisp">
 (import '(java.io BufferedReader InputStreamReader))
@@ -1355,7 +1355,7 @@ A third example, telling the music player XMMS2 to jump to a specific track in i
 The above is an extract from a clojure GUI for XMMS2, available at github [http://github.com/acardona/xmms2-clj/tree xmms2-gui].
 
 
-<h3>Creating a derivative of a function</h3>
+== Creating a derivative of a function ==
 
 The derivative of a function:
 
@@ -1404,7 +1404,7 @@ The derivative of x^3 is 3 * x^2, which for an x of 4 equals 48. Our derivative 
 The above code translated from lisp code at [http://funcall.blogspot.com/2009/03/not-lisp-again.html funcall blog]. Thanks [http://www.blogger.com/profile/03233353484280456977 Joe Marshall] for sharing this perl.
 
 
-<h3>Pretty printing a primitive array</h3>
+== Pretty printing a primitive array ==
 
 Suppose we create a primitive array of length 10:
 
@@ -1450,7 +1450,7 @@ user=> sa
 [0, 0, 0, 7, 0, 0, 0, 0, 0, 0]
 </source>
 
-<h3>Loading an image file into a byte array</h3>
+== Loading an image file into a byte array ==
 
 <source lang="lisp">
 (import [java.io File FileInputStream]
