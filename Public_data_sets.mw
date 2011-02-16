@@ -19,5 +19,7 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
 :The file is a tif hyperstack that can be loaded directly into the [[3D Viewer]].
 :The key idea is to setup the tracking system so that it requires minimal user interaction, and is general. For example, a user clicks on one cell in one time point, and the program should find all other time points of the same cell. Then the program should learn about the statistics of that cell, and offer the means to automatically find all other cells in the volume and track them as well. In summary, a machine learning approach to 4D tracking.
 
+* [http://www.cellimagelibrary.org/ The Cell Image Library] has many images related to cell biology; the images come with one of 4 licenses: Public Domain, Creative Commons Attribution, Creative Commons Attribution Non-Commercial Share-Alike, and Copyrighted (you need to ask the contributor whether you may use their image explicitly). This website allows you to contribute your own data sets, too!
+
 [[Category:Data]]
 [[Category:Segmentation]]
