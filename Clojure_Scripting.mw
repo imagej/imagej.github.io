@@ -559,7 +559,6 @@ Assumes that <i>(IJ/getImage)</i> returns a 32-bit, float image. If that is not 
 The example below creates a new result image. The original image is untouched. This is accomplished with minimal friction but best performance (like hand-coded with cursors or better) by using the high-level scripting library of imglib, and the [http://pacific.mpi-cbg.de/javadoc/script/imglib/math/Compute.html Compute]/inFloats method.
 
 <source lang="lisp">
-; ASSUMES a 32-bit image as the active image
 (ns test.imglib
  (:import [mpicbg.imglib.image Image]
           [script.imglib ImgLib]
@@ -588,16 +587,18 @@ mean) std-dev))]
 There is a better way to compute the mean and variance of a collection of numbers, that involves traversing the collection only once. Clojure naturally helps with its very concise destructuring and its automatic promotion of numeric types to avoid overflow.
 
 <source lang="lisp">
-; ASSUMES a 32-bit image as the active image
 (ns test.imglib
  (:import [mpicbg.imglib.image Image]
+          [mpicbg.imglib.type.numeric RealType]
           [script.imglib ImgLib]
           [script.imglib.math Compute Subtract Divide]
           [ij IJ]))
 
-(let [^Image img (ImgLib/wrap imp)
+(set! *warn-on-reflection* true)
+ 
+(let [^Image img (ImgLib/wrap (IJ/getImage))
       size (.size img)
-      [xs x2s] (reduce (fn [accum t]
+      [xs x2s] (reduce (fn [accum ^RealType t]
                          (let [xi (.getRealFloat t)]
                            [(+ (accum 0) xi)
                             (+ (accum 1) (* xi xi))]))
@@ -608,7 +609,7 @@ There is a better way to compute the mean and variance of a collection of number
       std-dev (Math/sqrt variance)
       ^Image normalized (Compute/inFloats (Divide. (Subtract. img mean) std-dev))]
   (.. normalized getDisplay setMinMax)
-  (.show (ImgLib/wrap normalized))))
+  (.show (ImgLib/wrap normalized)))
 </source>
 
 (Code adapted from a Common Lisp version by [http://nklein.com/2011/02/calculating-the-mean-and-variance-with-one-pass/ Patrick Stein].)
