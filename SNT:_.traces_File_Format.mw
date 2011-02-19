@@ -59,7 +59,7 @@ This represents a point in a path. A point element may have the following attrib
 * <tt>xd</tt>, <tt>yd</tt>, <tt>zd</tt><nowiki>: These three attributes give the position of the point in world coordinates. e.g. you can use these coordinates directly to calculate the length of paths.</nowiki>
 * '''[deprecated]''' <tt>x</tt>, <tt>y</tt>, <tt>z</tt><nowiki>: These attributes represent the position of the point in image coordinates (i.e. indices of voxels in each axis). They are still generated for backwards compatability, but it's better to use </nowiki><tt>xd</tt>, <tt>yd</tt> and <tt>zd</tt>.
 * <tt>r</tt><nowiki>: If present, this attribute gives the radius of the neuron at that point.</nowiki>
-* <tt>tx</tt>, <tt>ty</tt>, <tt>tz</tt><nowiki>: If present, these attributes give the tangent vector along the neuron at (</nowiki><tt>xd</tt>,Â <tt>yd</tt>,Â <tt>zd</tt>)
+* <tt>tx</tt>, <tt>ty</tt>, <tt>tz</tt><nowiki>: If present, these attributes give the tangent vector along the neuron at (</nowiki><tt>xd</tt>, <tt>yd</tt>, <tt>zd</tt>)
 
 === &lt;fill&gt; ===
 
