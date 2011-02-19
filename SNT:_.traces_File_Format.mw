@@ -6,27 +6,23 @@ The .traces files that are saved by Simple Neurite Tracer are gzip compressed XM
 
 The XML DTD is included in the DOCTYPE of each file. The root element is always &lt;tracings&gt;, and this can contain the following elements:
 
-* [#imagesize &lt;imagesize&gt;]
-* [#samplespacing &lt;samplespacing&gt;]
-* [#path &lt;path&gt;]
-* [#fill &lt;fill&gt;]
-* [#node &lt;node&gt;]
+* [[#imagesize|&lt;imagesize&gt;]]
+* [[#samplespacing|&lt;samplespacing&gt;]]
+* [[#path|&lt;path&gt;]]
+* [[#fill|&lt;fill&gt;]]
+* [[#node|&lt;node&gt;]]
 
 === &lt;imagesize&gt; ===
 
 There must be exactly one of these elements present, with attributes that describe the size of the image in terms of number of voxels across, up and down, e.g.:
 
- 
-      &lt;imagesize width="520" height="434" depth="117"/&gt;
- 
+<tt>&lt;imagesize width="520" height="434" depth="117"/&gt;</tt>
 
 === &lt;samplespacing&gt; ===
 
 There must be exactly one of these elements present, with attributes that describe the spacing of the samples in the image (voxels) in world-coordinates, e.g.:
 
- 
-      &lt;samplespacing x="0.28838738962693633" y="0.28838738962693633" z="1.2" units="micrometers"//&gt;
- 
+<tt>&lt;samplespacing x="0.28838738962693633" y="0.28838738962693633" z="1.2" units="micrometers"//&gt;</tt>
 
 === &lt;path&gt; ===
 
