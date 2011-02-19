@@ -6,11 +6,11 @@ The .traces files that are saved by Simple Neurite Tracer are gzip compressed XM
 
 The XML DTD is included in the DOCTYPE of each file. The root element is always &lt;tracings&gt;, and this can contain the following elements:
 
-* [[#imagesize|&lt;imagesize&gt;]]
-* [[#samplespacing|&lt;samplespacing&gt;]]
-* [[#path|&lt;path&gt;]]
-* [[#fill|&lt;fill&gt;]]
-* [[#node|&lt;node&gt;]]
+* [[#.3Cimagesize.3E|&lt;imagesize&gt;]]
+* [[#.3Csamplespacing.3E|&lt;samplespacing&gt;]]
+* [[#.3Cpath.3E|&lt;path&gt;]]
+* [[#.3Cfill.3E|&lt;fill&gt;]]
+* [[#.3Cnode.3E|&lt;node&gt;]]
 
 === &lt;imagesize&gt; ===
 
