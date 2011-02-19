@@ -77,6 +77,3 @@ The <tt>&lt;fill&gt;</tt> element represents a fill around a path. It contains a
 * <tt>previousid</tt><nowiki>: If present, this ID gives you previous node on the shortest route from the original paths to this point. It is not present for the points on the original paths, which also have a </nowiki><tt>distance</tt> attibute equal to 0.
 * <tt>distance</tt><nowiki>: This is the minimum "distance" so far found for any route moving from any point on the original paths to this node. (The complete route can be reconstructed by following </nowiki><tt>previousid</tt>s.)
 * <tt>status</tt><nowiki>: this attribute can either have the value </nowiki><tt>open</tt> or <tt>closed</tt>, which have their conventional meanings in A* search.
-
-----
-[mailto:Mark.Longair@ed.ac.uk Mark Longair]
