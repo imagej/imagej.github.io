@@ -1,4 +1,8 @@
-[[Image:SimpleNeuriteTracer2.png|thumb|600px|Simple Neurite Tracer: This image shows traced neurons in an adult <i>Drosophila</i> brain.  Neurites were reconstructed using the Simple Neurite Tracer.  The neuropil regions were segmented in the [[Segmentation Editor]] and added to the viewer with [[Show Color Surfaces]].]]
+[[Image:SimpleNeuriteTracer2.png|thumb|center|600px|Simple Neurite Tracer: This image shows traced neurons in an adult <i>Drosophila</i> brain.  Neurites were reconstructed using the Simple Neurite Tracer.  The neuropil regions were segmented in the [[Segmentation Editor]] and added to the viewer with [[Show Color Surfaces]].]]
+
+__NOTOC__
+
+<br style="clear: both" />
 
 {{Infobox Plugin
 | software               = ImageJ
@@ -10,9 +14,7 @@
 | status                 = stable
 }}
 
-__NOTOC__
-
-<br style="clear: both" />The main documentation for this plugin can be found at: http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/
+The main documentation for this plugin can be found at: http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/
 
 To help you to get started with using this plugin, there is an explanatory screencast here: http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/new-instructions.html
 
