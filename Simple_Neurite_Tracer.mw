@@ -66,6 +66,19 @@ Simple Neurite Tracer is also easy to use programmatically.  For instance, the e
 
 As another small example, if you just wanted to load a set of SWC files using the Simple Neurite Tracer API and display them in the 3D viewer, a Jython script like this will do: https://gist.github.com/838695
 
+== Authors ==
+
+Authors
+
+This plugin was written by myself, Mark Longair, except for the following important sections:
+
+    * The code for doing Gaussian convolutions of the image and the calculation of principal curvatures was written by Stephan Preibisch
+    * The code for loading AmiraMesh label files was written by Johannes Schindelin.
+    * The code for generating meshes of neurons for the 3D viewer was originally written by Albert Cardona for TrakEM2.
+    * This plugin also incorporates code from the LGPL licensed PAL library, although the functionality that relies on this is not currently exposed in this version. 
+
+Many thanks to all of those authors for releasing their code under the GPL.
+
 == References ==
 
 <references/>
