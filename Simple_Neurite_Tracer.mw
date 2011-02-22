@@ -31,15 +31,6 @@ This plugin is free software, licensed under the GNU GPL v3 (with the exception 
 Simple Neurite Tracer is distributed as part of Fiji - to install it, please [[Downloads|download Fiji]] and run "Help > Update Fiji" to make sure that you have the most recent version.  You can find the plugin in "Plugins > Segmentation > Simple Neurite Tracer" (or by bringing up the [[Using the Command Launcher|Command Finder]] and typing 'neurite tracer'.
 
 
-
-The plugin GUI (left) guides the user into creating paths semi-automatically, by clicking starting and ending points throughout the stack. Any ending point serves as starting point for a new segment of the same trace, unless the trace is declared complete.  Paths can start and / or end on any other path in order to create a branching structure.
-
-The "Pick Sigma and Maximum" window can be brought up by clicking on the "Pick Sigma Visually" button.  This provides an easy way to choose parameters that affect the diameter of tube-like structures that "Hessian based analysis" option picks out.
-
-In the center, the image stack is shown in the XY plane with all traces in the volume projected onto that slice.
-
-On the right, the ongoing tracing is shown in the context of the 3D volume view of the stack (via [[3D Viewer]] plugin). From the [[3D Viewer]], traces can be exported as meshes in wavefront or DXF formats for further processing in 3D applications like [http://www.blender.org Blender].
-
 == Tutorials ==
 
 Hopefully you should be able to use this software easily by following the suggested next steps in the top left of the main dialog.  However, to use the plugin more effectively, you may want to use some of the following materials:
