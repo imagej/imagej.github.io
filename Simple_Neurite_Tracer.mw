@@ -61,7 +61,7 @@ And there are a set of tutorials on specific subjects here:
 * [[Simple Neurite Tracer: Accurate point placement]]
 * [[Simple Neurite Tracer: Selecting paths]]
 * [[Simple Neurite Tracer: Using the three pane view]]
-* [[Simple Neurite Tracer: Frangi1998 Filtering]]
+* [[Simple Neurite Tracer: Preprocessing Data for Better Results]], such as using the algorithm from Frangi (1998) <ref>{{cite journal |author=F. Frangi, W. J. Niessen, K. L. Vinc, and M. A. Viergever|title=Multiscale Vessel Enhancement Filtering|journal=Medical Image Computing and Computer-Assisted Intervention — MICCAI’98 Lecture Notes in Computer Science|year=1998|volume=1496|pages=130|url=http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.110.7722&rep=rep1&type=pdf}}</ref>
 
 == Reference ==
 
