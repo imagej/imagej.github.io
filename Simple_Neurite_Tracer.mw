@@ -77,7 +77,7 @@ This plugin was written by myself, Mark Longair, except for the following import
 
 Many thanks to all of those authors for releasing their code under the GPL.
 
-===Acknowledgments===
+== Acknowledgments ==
 
 This software was developed during my PhD, funded by the [http://www.epsrc.ac.uk/ResearchFunding/Programmes/LifeSciencesInterface/ EPSRC / MRC life sciences interface programme], and in particular the [http://www.anc.inf.ed.ac.uk/neuroinformatics/ Doctoral Training Centre in Neuroinformatics at the University of Edinburgh]. A substantial part of the later development of this plugin was done during the [http://www.hhmi.org/janelia/ Janelia Farm] Hackathon of 2007, and I owe a debt of thanks to the Howard Hughes Medical Institute for making it possible for me to go to that event. Thank-you also to Arnim Jenett, Adrianna Teriakidis and Benny Lam for their feedback and help with testing various versions of this plugin.
 
