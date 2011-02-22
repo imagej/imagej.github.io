@@ -18,11 +18,21 @@ The SWC file format describes a single neuron's morphology (so every point is co
 
 ... and then click the "Export to SWC" button in the bottom right of that window.  If you haven't selected a completely connected set of paths, then you will get an error at this point - otherwise you will be prompted to save the SWC file.
 
+=== Setting the SWC point types ===
+
+There is now support in Simple Neurite Tracer for setting the type of SWC points contained in each path.  You can do this by selecting a set of paths and then choosing a value from the SWC Type context menu:
+
+[[Image:Snt-set-to-soma.png]]
+
+You can set each path to a different type in this way, e.g.:
+
+[[Image:Snt-after-setting-swc-types.png]]
+
+Note: setting an SWC type for every point is '''required''' by some software, such as L-measure.
+
 === Further Notes ===
 
 * You should only export your tracings to SWC for analysis in other tools, or or for uploading to databases that require that format.  The SWC format is very simple and you lose a lot of information if you don't save your tracings in the plugin's native format.
-
-* At the moment there is no way to specify the type of each point in this plugin, so in the SWC file each point will have the type UNDEFINED, as opposed to SOMA, AXON, DENDRITE, APICAL_DENDRITE etc.  Let me know if you require this facility.
 
 * The root node in an exported SWC file will be the first point in the primary path of the group in Simple Neurite Tracer.  So, if you care about this, then before saving you should pick the path in the group which starts with what you consider to be the root node, and click "Make Primary" in the Path Window before exporting.
 
