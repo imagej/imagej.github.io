@@ -42,6 +42,18 @@ On the right, the ongoing tracing is shown in the context of the 3D volume view 
 
 == Tutorials ==
 
+Hopefully you should be able to use this software easily by following the suggested next steps in the top left of the main dialog.  However, to use the plugin more effectively, you may want to use some of the following materials:
+
+There is an introductory screencast here:
+
+* [[Simple Neurite Tracer: Introductory Screencast]]
+
+... or if you prefer reading text, some basic instructions here:
+
+* [[Simple Neurite Tracer: Basic Instructions]]
+
+And there are a set of tutorials on specific subjects here:
+
 * [[Simple Neurite Tracer: Sholl analysis]]
 * A guide to loading the [[Diadem Challenge Data]]
 * [[Simple Neurite Tracer: "Export to SWC" Tutorial]]
