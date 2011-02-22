@@ -1,17 +1,11 @@
-(Return to the main [[Simple Neurite_Tracer]] page)
-
-=Step-by-Step Tracer Instructions=
+(Return to the main [[Simple Neurite Tracer]] page)
 
 These "step-by-step" instructions below assume that you have done the preliminary steps described on the [[Simple_Neurite_Tracer:_Basic_Instructions]] page including:
 
 * Starting up the plugin
 * Turning on "Hessian-based analysis"
 
-You can jump to the step-by-step guides to:
-
-* [#basic Trace a basic path]
-* [#branching Branching: Start a path on an existing path]
-* [#joining Joining: End a path on an existing path]
+=Step-by-Step Tracer Instructions=
 
 ==Trace a basic path:==
 
