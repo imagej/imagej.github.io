@@ -1,0 +1,112 @@
+(Return to the main [[Simple Neurite_Tracer]] page)
+
+=Step-by-Step Tracer Instructions=
+
+These "step-by-step" instructions below assume that you have done the preliminary steps described on the [[Simple_Neurite_Tracer:_Basic_Instructions]] page including:
+
+* Starting up the plugin
+* Turning on "Hessian-based analysis"
+
+You can jump to the step-by-step guides to:
+
+* [#basic Trace a basic path]
+* [#branching Branching: Start a path on an existing path]
+* [#joining Joining: End a path on an existing path]
+
+==Trace a basic path:==
+
+===1. Pick a start point===
+
+Before you pick a start point for your first path, the tracer will look like this:
+
+[[Image:cropped-before-starting.png]]
+
+Move through the image stack to find the start point of a path, then click there with the left mouse button.
+
+===2. Click a subsequent point===
+
+A small blue square should appear, showing the start of the path:
+
+[[Image:cropped-after-starting.png]]
+
+Move through the stack to find a subsequent point further along the same neuron, blood vessel, or whatever, and click there.
+
+During tracing, if a part cannot be found immediately, you may see the progress of the search in cyan:
+
+[[Image:cropped-mid-tracing.png]]
+
+You can scroll through the stack while such a search is in progress - if it appears not be making good progress, it's probably best to click "Abandon search" and pick a point closer to the start point.
+
+===3. Confirm the temporary path===
+
+Once the search has found that point, it is show in blue (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing "Y") that this path is following the route through the stack that you expect. If it is not, then click "No" or press "Escape" and you'll go back to step 2.
+
+[[Image:cropped-confirmation.png]]
+
+===4. After confirming the temporary path===
+
+Assuming you confirmed the path, the confirmed path will appear in red, like this:
+
+[[Image:cropped-confirmed.png]]
+
+Now you are essentially back at step 2. Normally you will go on top pick further points along the structure. However, if you have finished with that path, click "Complete Path" and you will go back to step 1.
+
+===5. After completing a path===
+
+If you completed that path it will be shown in pink:
+
+[[Image:cropped-completed-path.png]]
+
+==Branching: Start a path on an existing path==
+
+Before you pick a start point for your first path, the tracer will look like this: (I've zoomed in on the region of interest)
+
+[[Image:sb-before-selecting.png]]
+
+===1. Select the path to branch off===
+
+Clicking on each of the existing paths shows quickly that the path running to the top of the screen is Path 0. When that path is selected, it will be shown in green, as below:
+
+[[Image:sb-before-starting-path.png]]
+
+===2. Click while holding the branch modifier to start the branch===
+
+To force the start of the new path to be a branch off the selected path, hold down the "Control" key while you select it. (On Mac OS use "alt" instead.) On any platform I suggest holding down "Shift" in addition, since this will keep the current slices in all the panes centred on the point in the path. (Experiment with holding down shift with the branch modifier ("Control" or "alt") and moving the mouse if this doesn't make any sense - watch where the red crosshair goes.)
+
+Once you've started a path, it looks like this:
+
+[[Image:sb-started-branch.png]]
+
+===3. Continue adding to the path as normal===
+
+From this point on, you can carry on adding to the path as above, e.g. create a temporary path:
+
+[[Image:sb-temporary-path.png]]
+
+... and confirm it:
+
+[[Image:sb-confirmed-path.png]]
+
+When you decide to complete the path you should see in the path list that it has been recorded as starting on the existing path:
+
+[[Image:sb-completed-branch.png]]
+
+==Joining: End a path on an existing path==
+
+Supposing you want the end of a path that you're tracing to join onto an existing path, you just use the same modifier key when selecting the end point of the last part of the path. In more detail, if you're half way through tracing a path like this:
+
+[[Image:ej-cropped-half-finished.png]]
+
+... and you want the final part of that path to join up with the existing path running from the bottom to the top of the image. First, select that path in the path list, so that it turns green:
+
+[[Image:ej-cropped-selected-destination-path.png]]
+
+Now hold down "Control" (or "alt" on Mac OS) to restrict the end point to be a "join" on that existing path. Click (while still holding down the modifier key) to search for that end point and make it join the existing path. If the search can find a path to the end point, the result should look like this:
+
+[[Image:ej-cropped-end-join-created.png]]
+
+If you're happy with that, confirming the temporary path will automatically complete the whole path, since if you're creating an end join there cannot be any more to the path. The result will look like this:
+
+[[Image:ej-cropped-path-completed.png]]
+
+Note that the path list incidates that this new path (1) ends on the existing one (0).
