@@ -26,7 +26,8 @@ Select a point for the start of your first path. The instructions should change 
 
 Once you select that next point in the path you will either find that the path is found immediately, in which case the projected path is visible as a dark blue line, or the search may take longer, in which case the progress of the search is shown in light blue:
 
-<div class="photo-floating-left">[[Image:Snt-temporary-path.png]]<div class="caption">A temporary path, yet to be confirmed.</div></div><div class="photo-floating-left-no-clear">[[Image:Snt-searching-for-path.png]]<div class="caption"> The progress of the search for a temporary path. </div></div>
+[[Image:Snt-temporary-path.png|A temporary path, yet to be confirmed.]]
+[[Image:Snt-searching-for-path.png|The progress of the search for a temporary path.]]
 
 While the plugin is searching you can still move about in the image stack to see the progress through the depth of the stack as well. If it seems to be taking a very long time to find a path between the points you should probably cancel the search and try a point that's nearer, since the path searching slows down as it has explored more of the image.
 
@@ -34,13 +35,13 @@ Once you have a dark blue temporary path like that in the left hand image the in
 
 If you confirm that path then the path will turn red, to indicate that this is a confirmed part of the current path:
 
-<div class="photo-floating-left-no-clear">[[Image:Snt-confirmed-path.png]]<div class="caption"> The confirmed part of the current path. </div></div>
+[[Image:Snt-confirmed-path.png|The confirmed part of the current path.]]
 
 If you click further along the structure again then the dark blue colour will again show the temporary part of a path as opposed to the red confirmed part.
 
 Once you have picked out a few more points along the path, you can complete the path by clicking "Complete Path" at the top of the dialog. Completed paths are shown in pink and appear in the path list in the tracer's dialog box. If you select one or many paths in this list, the selected paths are shown in green instead of pink. (You need to have particular paths selected for filling out neurons or branching and joining paths.)
 
-<div class="photo-floating-left">[[Image:Snt-multiple-paths.png]]<div class="caption"> Several completed paths, with one selected (in green) </div></div>
+[[Image:Snt-multiple-paths.png|Several completed paths, with one selected (in green)]]
 
 You've probably noticed that the default presentation of the paths in an image is to show the a projection of the path through the entire stack, rather than just those points of the path that are in the current slice. This can become confusing with many paths in a single image, in which case you should change the "View paths" option from "projected through all slices" to "parts in nearby slices".
 
