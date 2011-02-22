@@ -5,6 +5,8 @@ These "step-by-step" instructions below assume that you have done the preliminar
 * Starting up the plugin
 * Turning on "Hessian-based analysis"
 
+Note that the screenshots here are from an early pre-release version of the plugin.  The path list in the current version is in a separate window, but otherwise the interface is the same.
+
 =Step-by-Step Tracer Instructions=
 
 ==Trace a basic path:==
@@ -33,7 +35,7 @@ You can scroll through the stack while such a search is in progress - if it appe
 
 ===3. Confirm the temporary path===
 
-Once the search has found that point, it is show in blue (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing "Y") that this path is following the route through the stack that you expect. If it is not, then click "No" or press "Escape" and you'll go back to step 2.
+Once the search has found that point, it is shown in blue (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing "Y") that this path is following the route through the stack that you expect. If it is not, then click "No" or press "Escape" and you'll go back to step 2.
 
 [[Image:Snt-cropped-confirmation.png]]
 
@@ -59,13 +61,13 @@ Before you pick a start point for your first path, the tracer will look like thi
 
 ===1. Select the path to branch off===
 
-Clicking on each of the existing paths shows quickly that the path running to the top of the screen is Path 0. When that path is selected, it will be shown in green, as below:
+To select the path you want to branch off from, you can either select it in the path list, or press 'g' while your mouse pointer is over the path.  When the path is selected, it will be shown in green, as below:
 
 [[Image:Snt-sb-before-starting-path.png]]
 
 ===2. Click while holding the branch modifier to start the branch===
 
-To force the start of the new path to be a branch off the selected path, hold down the "Control" key while you select it. (On Mac OS use "alt" instead.) On any platform I suggest holding down "Shift" in addition, since this will keep the current slices in all the panes centred on the point in the path. (Experiment with holding down shift with the branch modifier ("Control" or "alt") and moving the mouse if this doesn't make any sense - watch where the red crosshair goes.)
+To force the start of the new path to be a branch off the selected path, hold down the "Control" and "Shift" keys while you move the mouse to find the right point under the red cross-hairs.  Then click with the left mouse button - "Control" and "Shift" should still be held down.  Finally release the "Control" and "Shift" keys.  '''n.b. on Mac OS you must use "Alt" and "Shift" instead.'''
 
 Once you've started a path, it looks like this:
 
@@ -87,7 +89,7 @@ When you decide to complete the path you should see in the path list that it has
 
 ==Joining: End a path on an existing path==
 
-Supposing you want the end of a path that you're tracing to join onto an existing path, you just use the same modifier key when selecting the end point of the last part of the path. In more detail, if you're half way through tracing a path like this:
+Supposing you want the end of a path that you're tracing to join onto an existing path, you just use the same modifier key when selecting the end point of the last part of the path. To go into that in more detail, if you're half way through tracing a path like this:
 
 [[Image:Snt-ej-cropped-half-finished.png]]
 
@@ -95,7 +97,7 @@ Supposing you want the end of a path that you're tracing to join onto an existin
 
 [[Image:Snt-ej-cropped-selected-destination-path.png]]
 
-Now hold down "Control" (or "alt" on Mac OS) to restrict the end point to be a "join" on that existing path. Click (while still holding down the modifier key) to search for that end point and make it join the existing path. If the search can find a path to the end point, the result should look like this:
+Now hold down "Control"+"Shift" (or "Alt"+"Shift" on Mac OS) to restrict the end point to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that end point and make it join the existing path. If the search can find a path to the end point, the result should look like this:
 
 [[Image:Snt-ej-cropped-end-join-created.png]]
 
