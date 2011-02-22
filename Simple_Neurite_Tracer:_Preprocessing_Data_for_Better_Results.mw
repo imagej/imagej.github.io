@@ -14,7 +14,7 @@ The "*.tubes.tif" file must be a 32-bit float image.  Then, if you select the "U
 
 ... then tracing will take place on the preprocessed image rather than the raw image data or the "Hessian-based analysis" filtered values.
 
-== An Example Using Fragi 1998 ==
+== An Example Using Frangi et al.'s method ==
 
 === A single image ===
 
