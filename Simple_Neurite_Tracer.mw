@@ -68,8 +68,6 @@ As another small example, if you just wanted to load a set of SWC files using th
 
 == Authors ==
 
-Authors
-
 This plugin was written by myself, Mark Longair, except for the following important sections:
 
 * The code for doing Gaussian convolutions of the image and the calculation of principal curvatures was written by Stephan Preibisch
