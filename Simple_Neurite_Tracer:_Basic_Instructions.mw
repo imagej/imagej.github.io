@@ -12,7 +12,7 @@ The second option lets you choose whether you would like to see a 3D representat
 
 Your next view of the image will be something like this:
 
-[[Image:tracer-starting-smaller.png|600px]]
+[[Image:Snt-tracer-starting.png|600px]]
 
 The top of the left hand dialog box should always give you an idea about the next steps in basic tracing of paths. However, the first step when you load a new image should probably be to enable the option for using Hessian-based analysis of the image - this is done via a checkbox a little further down the dialog box. It will take some time to calculate the Gaussian convolution of the image once you select this option, but this only needs to be done once per image, so it's best to do it at the start. There is more on the use of this option below in the "Tips" section.
 
