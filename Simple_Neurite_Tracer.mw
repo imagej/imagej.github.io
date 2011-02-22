@@ -67,7 +67,7 @@ And there are a set of tutorials on specific subjects here:
 
 * [[Simple Neurite Tracer: .traces File Format]]
 
-Simple Neurite Tracer can easily be used programmatically.  For example, you can see the example in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Simple_Neurite_Tracer/tracing/Albert_Test.java Albert_Test.java]
+Simple Neurite Tracer can easily be used programmatically.  For example, you can see the example in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Simple_Neurite_Tracer/tracing/Albert_Test.java Albert_Test.java] to use the code to find a path between two arbitrary points in an image stack.
 
 As another small example, if you just wanted to load a set of SWC files using the Simple Neurite Tracer API and display them in the 3D viewer, a Jython script like this will do: https://gist.github.com/838695
 
