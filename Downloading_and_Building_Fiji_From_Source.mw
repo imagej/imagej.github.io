@@ -29,7 +29,9 @@ then you probably are behind a firewall that does not let you connect to port 94
 
 or
 
- git clone https://dscho@github.com/dscho/fiji.git
+ git clone https://yourusername@github.com/dscho/fiji.git
+
+... where you should replace <tt>yourusername</tt> with your GitHub username.
 
 ==== Cloning source as known contributor ====
 The above command creates a unknown contributor copy of Fiji in your computer. If you have your own user account in pacific.mpi-cbg.de, then you should clone fiji with the following command:
