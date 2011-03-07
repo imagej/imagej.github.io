@@ -16,7 +16,7 @@ See a [http://www.ini.uzh.ch/~acardona/img/trakem2_datastructure_diagram.svg Tra
 
 See also the complete [http://www.ini.uzh.ch/~acardona/api TrakEM2 API documentation]
 
-To run a script, follow isntructions as indicated in the [[Scripting Help]].
+To run a script, follow instructions as indicated in the [[Scripting Help]].
 
 === Get the instance of a selected image ===
 
