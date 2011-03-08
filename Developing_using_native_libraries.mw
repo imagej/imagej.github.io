@@ -2,7 +2,7 @@
 
 Sometimes, you may want to use 3rd party libraries that are not available as Java components, but only as native libraries.
 
-There are two options available to make use of native libraries: JNA and JNI (see below for detailed descriptions).
+There are two options available to make use of native libraries: [http://jna.java.net/ JNA] and JNI (see below for detailed descriptions).
 
 == Disadvantages of using native libraries ==
 
@@ -32,7 +32,7 @@ The benefits of JNI over JNA are:
 
 = JNA =
 
-The JNA project (''Java Native Access'') tries to provide an easy, pure-Java way to access native libraries using their native interface.
+The [http://jna.java.net/ JNA project] (''Java Native Access'') tries to provide an easy, pure-Java way to access native libraries using their native interface.
 
 == Functions ==
 
