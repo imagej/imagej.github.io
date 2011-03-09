@@ -43,8 +43,7 @@ The new imglib supports dimension-, storage- and data type independent image pro
 
 '''Goal:''' Implement generic algorithms for image processing.<br />
 '''Language:''' Java.<br />
-'''Mentor:''' [http://fly.mpi-cbg.de/preibisch Stephan Preibisch], [http://fly.mpi-cbg.de/saalfeld Stephan Saalfeld]], [http://www.wv.inf.tu-dresden.de/People/Pietzsch.html Tobias Pietzsch], [http://albert.rierol.net Albert Cardona]<br />
-
+'''Mentor:''' [http://fly.mpi-cbg.de/preibisch Stephan Preibisch], [http://fly.mpi-cbg.de/saalfeld Stephan Saalfeld], [http://www.wv.inf.tu-dresden.de/People/Pietzsch.html Tobias Pietzsch], [http://albert.rierol.net Albert Cardona]<br />
 
 == Reparing images with missing data by using contextual information ==
 
