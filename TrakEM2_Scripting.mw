@@ -414,6 +414,49 @@ def run():
 run()
 </source>
 
+
+= Interacting with Layers (Sections) =
+
+=== Calibrating the Z dimension ===
+
+=== Setting the Z value of each section ===
+
+Each [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Layer.html Layer] stores a Z coordinate as a <i>double</i>. This coordinate is in pixels.
+
+How to compute the Z coordinate of a [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Layer.html Layer]: suppose that the calibration specifies 4x4x50 nm. This means 4 nm/px in the X axis, 4 nm/px in the Y axis, and 50 nm/px in the Z axis. It is assumed that you set this values by right-clicking on the canvas window and choosing "Display - Calibration...", which opens the familiar ImageJ dialog for image calibration.
+
+Then you have to compute the thickness of a section relative to X axis coordinates. To do so:
+
+ layer thickness = (Z calibrated thickness) / (X calibrated thickness)
+
+In our example of 4x4x50 nm/px:
+
+ layer thickness = 50 / 4 = 12.5
+
+Then we must set this thickness to every section. This consists of the following steps to be done on the <i>Layer Tree</i> This is the tree that lists the layers in the TrakEM2 window):
+
+ 1. Right-click on the "Top Level [Layer Set]" node of the <i>Layer Tree</i>.  Then choose "Reset layer Z and thickness".
+ 2. Click on the first layer node, then shift+click on the last layer node. All nodes will be selected.
+ 3. Right-click on the selected nodes and choose "Scale...".
+ 4. In the dialog, type in "12.5"--the value we computed above.
+
+To accomplish the same programmatically, do the following:
+
+<source language="python">
+z = 0
+thickness = 12.5
+# Obtain the LayerSet instance:
+layerset = Display.getFront().getLayerSet()
+#
+for layer in layerset.getLayers():
+  layer.setZ(z)
+  layer.setThickness(thickness)
+  z += thickness
+
+# Update the GUI
+layerset.getProject().getLayerTree().updateUILater()
+</source>
+
 = Interacting with Treeline, AreaTree and Connector =
 
 All three types: "treeline", "areatree", and "connector" are expressed by homonimous classes that inherit from the abstract class [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.html ini.trakem2.display.Tree].
