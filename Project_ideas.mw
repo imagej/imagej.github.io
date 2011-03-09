@@ -20,6 +20,8 @@ The project would consist of
 '''Language:''' Java.<br />
 '''Contact:''' Bill Mohler (wmohler@neuron.uchc.edu)<br />
 
+'''Plugin:''' [[Jython_Scripting#Visualize_any_number_of_TIFF_stacks_in_a_single_composite_multi-color_image_stack| python script for multi-stack composite image]]
+
 == Interactively adjustable intensity/LUT curves ==
 
 In Fiji, you can adjust the dynamic range of an image by calling ''Image>Adjust>Brightness & Contrast''.  However, this only lets you choose a linear mapping between pixel intensity and lookup table.  This project aims to provide non-linear controls, such as piecewise linear functions, gamma curves, splines, etc
