@@ -25,6 +25,7 @@ We have several data sets of images and their corresponding manual segmentations
 
 You are welcome to use any scientifically-relevant dataset of your choice, but we will give priority to biologically-oriented data sets.
 
+A plugin already exists for Fiji: [[Trainable Segmentation]].
 
 '''Goal:''' Implement a number of segmentation algorithms based on machine learning.<br />
 '''Language:''' Java.<br />
