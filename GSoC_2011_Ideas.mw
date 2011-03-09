@@ -54,3 +54,17 @@ Other approaches are also welcome, such as using information from adjacent seria
 '''Goal:''' implement a plugin for interactive calligraphic effects.<br />
 '''Language:''' Java.<br />
 '''Mentor:''' [http://albert.rierol.net Albert Cardona]<br />
+
+== Robust blob segmentation ==
+
+In life sciences, you often cope with round structures of interest. Such round structures can be cells, vesicles, nuclei or similarly shaped objects. While an ellipse might be a good initial fit, the final outline most certainly is not.
+
+[[Image:NucleiDAPIconfocal.png|thumb|200px|center]]
+
+It is important to keep in mind that the objects are clearly convex, as they sometimes overlap, and we still want to find the objects correctly. See the adjacent image for an example.
+
+The purpose of this project is to segment in a fully automatic way round, convex structures in biological images. This could be done by using a simple template matching approach for the initial stage, or a Gaussian fit, followed by a fit of the whole outline under the desired constraints.
+
+'''Goal:''' Provide a robust blob segmentation algorithm that can work in 2D, 3D and 4D.<br />
+'''Language:''' Java<br />
+'''Mentor:''' [http://albert.rierol.net Albert Cardona]<br />
