@@ -417,7 +417,7 @@ run()
 
 = Interacting with Layers (Sections) =
 
-=== Calibrating the Z dimension ===
+=== Calibrating and setting the Z dimension ===
 
 Each [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Layer.html Layer] stores a Z coordinate and a thickness value with <i>double</i> precision. The Z  coordinate is in pixels.
 
