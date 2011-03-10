@@ -6,7 +6,7 @@ Our generic image processing library [[Imglib]] is designed to efficiently gener
 
 '''Goal:''' create a multi-scale disk-stored image data container for [[Imglib]] and use it for a rapid multi-view/multi-scale display of very large ''n''-dimensional image data.<br />
 '''Language:''' any supported by Fiji, preferably Java.<br />
-'''Contact:''' [http://albert.rierol.net Albert Cardona]
+'''Mentor:''' [http://albert.rierol.net Albert Cardona], [http://longair.net/mark Mark Longair]
 
 == Applying machine learning to the image segmentation problem ==
 
