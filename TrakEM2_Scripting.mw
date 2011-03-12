@@ -797,6 +797,32 @@ for origin,targets in graph.iteritems():
 
 Notice how about we called <i>getOrigins(Tree)</i> and <i>getTargets(Tree)</i>, which filters all potential origins and targets (Patch--an image--, AreaList, etc.) so that only Tree instances will be present in the lists.
 
+= Interact with a Ball object =
+
+== Set the radius of all balls of all Ball objects in a project ==
+
+<source lang="python">
+##############
+# Set a specific radius to all individual spheres
+# of all Ball objects of a TrakEM2 project.
+
+
+calibrated_radius = 40  # in microns, nm, whatever
+
+
+display = Display.getFront()
+layerset = display.getLayerSet()
+cal = layerset.getCalibration()
+# bring radius to pixels
+new_radius = calibrated_radius / cal.pixelWidth
+
+for ballOb in layerset.getZDisplayables(Ball):
+  for i in range(ballOb.getCount()):
+    ballOb.setRadius(i, new_radius)
+  ballOb.repaint(True, None)
+##############
+</source>
+
 = Save the project while running a task =
 
 While a task is running, the right-click menu shows only an entry to cancel the task. To save the project while the task is running, type the following into the [[Jython Interpreter]], and push return to execute it:
