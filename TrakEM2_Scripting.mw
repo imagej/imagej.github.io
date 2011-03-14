@@ -797,6 +797,89 @@ for origin,targets in graph.iteritems():
 
 Notice how about we called <i>getOrigins(Tree)</i> and <i>getTargets(Tree)</i>, which filters all potential origins and targets (Patch--an image--, AreaList, etc.) so that only Tree instances will be present in the lists.
 
+
+== Measure all spine necks in a neuronal arbor ==
+
+The idea is to label the beginning of a spine neck with the tag "neck start" and the end of the spine neck with the tag "neck end". It is assumed that the "next end" will always be in the subtree of the "neck start" node; in other words, that the direction of the tree is from "neck start" to "neck end".
+
+Then, we iterate all nodes of the arbor looking for nodes that have the "neck start" tag and measure the calibrated length of the neck. All measurements for all spine necks are printed out.
+
+<source lang="python">
+# 2011-03-13 Albert Cardona for Nuno da Costa
+# 
+# For a given Treeline or AreaTree that represents a neuronal arbor,
+# find all nodes that contain the tag "neck start"
+# and for each of those find the distance to a node
+# in their subtree that contains the tag "neck end".
+#
+# In short, measure the lengths of all spine necks
+# labeled as such in the arbor.
+
+
+from math import sqrt
+from ini.trakem2.display import Display, AreaTree, Treeline
+
+def findNeck(startNode):
+  """ Assumes necks are not branched. """ 
+  neck = []
+  for node in startNode.getSubtreeNodes():
+    tags = getTagsAsStrings(node)
+    if tags is None or not "neck end" in tags:
+      neck.append(node) # growing the neck
+      continue
+    # Else, end of neck:
+    neck.append(node)
+    return neck
+  print "Did not find a node with an end tag, for parent node " + startNode
+  return None # end tag not found!
+
+
+def getTagsAsStrings(node):
+  found = set()
+  tags = node.getTags()
+  if tags is None or 0 == len(tags):
+    return found
+  for tag in tags:
+    found.add(tag.toString())
+  return found
+
+
+def measureSpineNecks(neuron):
+  """ Expects an AreaTree or a Treeline for neuron.
+  Assumes that nodes with a tag "neck start" are parents or superparents of nodes with tags of "neck end".
+  """
+  print "Measurements for neuron '" + str(neuron) + "':"
+  for node in neuron.getRoot().getSubtreeNodes():
+    # Check if the node has the start tag
+    tags = getTagsAsStrings(node)
+    if tags is None or not "neck start" in tags:
+      continue
+    # Find its child node that has an end tag
+    neck = findNeck(node)
+    if neck is None:
+      continue
+    distance = neuron.measurePathDistance(neck[0], neck[-1])
+    print "  id:", neuron.getId(), "-- neck length: ", distance
+
+
+def isTree(x):
+  return isinstance(x, Treeline) or isinstance(x, AreaTree)
+
+
+
+# Measure in all treelines or areatrees:
+#trees = filter(isTree, Display.getFront().getLayerSet().getZDisplayables())
+
+# Measure only in the selected treelines or areatrees:
+trees = filter(isTree, Display.getSelected())
+
+if 0 == len(trees):
+  print "No trees found!"
+else:
+  for neuron in trees:
+    measureSpineNecks(neuron)
+</source>
+
 = Interact with a Ball object =
 
 == Set the radius of all balls of all Ball objects in a project ==
