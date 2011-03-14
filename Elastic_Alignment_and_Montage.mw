@@ -72,6 +72,7 @@ We perform block matching at a reasonably down-scaled version of the images.  Th
 
 ==Parameter Discussion==
 
+[[Image:Edge-filter.png|thumb|right|247px|Fig. 2: Edge response filter. The ratio of the two principal curvatures (Hessian eigenvalues) of at a detection determines how well it is defined in both dimensions. A large ratio signalizes an edge response.]]
 ;Input
 :Both plugins work with stacks of images.  The stacks might be virtual, which is strongly suggested for very large images.
 
@@ -83,8 +84,6 @@ We perform block matching at a reasonably down-scaled version of the images.  Th
 
 ;Block Matching
 :Here you specifiy the downscaled '''image size''' at which matching is performed.  Choose this size such that 1) high level noise is effectively invisible, 2) for series alignment such that a pixel is approximately as large as (or larger than) the section thickness.  The threshold for '''min r''' can be higher for montaging (same signal) than for series alignment (changing signal).  Higher values will lead to more matches rejected and thus less false positives.
-
-[[Image:Edge-filter.png|thumb|right|247px|Fig. 2: Edge response filter. The ratio of the two principal curvatures (Hessian eigenvalues) of at a detection determines how well it is defined in both dimensions. A large ratio signalizes an edge response.]]
 
 ==References==
 
