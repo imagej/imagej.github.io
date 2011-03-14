@@ -38,15 +38,15 @@ Check out all submodules that you want to work with e.g.
 
 <source lang="bash">
 cd ~/workspace/fiji
-git submodule update --init mpicbg
-git submodule update --init TrakEM2
+git submodule update --init modules/mpicbg
+git submodule update --init modules/TrakEM2
 </source>
 
 Check out the master branch of each of these submodules
 
 <source lang="bash">
 cd ~/workspace/fiji
-cd mpicbg
+cd modules/mpicbg
 git checkout master
 cd ../TrakEM2
 git checkout master
