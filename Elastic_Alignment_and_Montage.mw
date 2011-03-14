@@ -11,8 +11,10 @@
 }}
 The plugins '''Elastic Stack Alignment''' and '''Elastic Montage''' implement automatic elastic registration of 2d-images.  The applications are:
 
-# montaging mosaics from overlapping tiles where the tiles have non-linear relative deformation
-# alignment of deformed section series from serially sectioned volumes
+;Elastig Montage
+:montaging mosaics from overlapping tiles where the tiles have non-linear relative deformation
+;Elastic Stack Alignment
+:alignment of deformed section series from serially sectioned volumes
 
 Images are warped such that corresponding regions overlap optimally.  The warp for each single image is calculated such that each image in the whole global montage or series will be deformed minimally.  That way, arbitrarily large series of images can be aligned without accumulating artificial warps.
 
