@@ -9,6 +9,9 @@
 | status                 = experimental, active
 | category               = [[:Category:Plugins|Plugins]], [[:Category:Registration|Registration]]
 }}
+
+==Introduction==
+
 The plugins '''Elastic Stack Alignment''' and '''Elastic Montage''' implement automatic elastic registration of 2d-images.  The applications are:
 
 ;Elastig Montage
