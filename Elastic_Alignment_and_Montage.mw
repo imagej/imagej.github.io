@@ -27,6 +27,19 @@ Each image is tessellated into a mesh of regular triangles with each vertex bein
 
 For those vertices of a source image overlapping a target image, we identify its corresponding location in the target image.  The vertex is then connected into the target mesh by a zero-length spring with its target end being located at an arbitrary place in a triangle of the target mesh.  This `passive' end does not contribute to the deformation of the target mesh.  During simulation, it moves according to the affine transformation defined by the target triangle.  Vice versa, vertices of the target image are connected to their corresponding location in the source image with their `passive' ends being moved by the respective affine transformation of a source triangle.
 
+==Linear Initialization==
+
+Both relaxing the system of meshes and identifying corresponding locations between images require good initialization.  The former because the meshes will fold, the latter to narrow the matching space with the benefit of both, increased speed and better reliability.  We initialize the system with a linear-per image pre-alignment based on local image feature matches.<ref name="SaalfeldAl2010">
+|title = "As-rigid-as-possible mosaicking and serial section registration of large ssTEM datasets"
+|author = "Stephan Saalfeld and Albert Cardona and Volker Hartenstein and Pavel Tomancak"
+|journal = "Bioinformatics"
+|pages = "i57&ndash;i63"
+|volume = "26"
+|number = "12"
+|year = "2010"
+|doi = "10.1093/bioinformatics/btq219"
+</ref>
+
 ==Block Matching==
 
 [[Image:Edge-filter.png|thumb|right|247px|Fig. 2: Edge response filter. The ratio of the two principal curvatures (Hessian eigenvalues) of at a detection determines how well it is defined in both dimensions. A large ratio signalizes an edge response.]]
