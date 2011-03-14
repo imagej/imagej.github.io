@@ -80,7 +80,7 @@ We perform block matching at a reasonably down-scaled version of the images.  Th
 :The plugins export their output as a file or a series of files respectively.  In addition, previously extracted local features and feature correspondences are saved for later re-use during parameter triggering (thanks to Albert Cardona for adding this).  Make sure that you work in a clear folder when changing the input data because both saved matches and features are identified by their stack index and parameters only.
 
 ;Feature Extraction
-:Find documentation at the [Feature Extraction] page.  Note that the '''max error''' relative to the approximate linear transformation model will be used as the maximum search distance during block matching.  You should select an '''affine transformation''' in almost any case.  This pairwise model should approximate the actual deformation as closely as possible.
+:Find documentation at the [[Feature Extraction]] page.  Note that the '''max error''' relative to the approximate linear transformation model will be used as the maximum search distance during block matching.  You should select an '''affine transformation''' in almost any case.  This pairwise model should approximate the actual deformation as closely as possible.
 
 ;Block Matching
 :Here you specifiy the downscaled '''image size''' at which matching is performed.  Choose this size such that 1) high level noise is effectively invisible, 2) for series alignment such that a pixel is approximately as large as (or larger than) the section thickness.  The threshold for '''min r''' can be higher for montaging (same signal) than for series alignment (changing signal).  Higher values will lead to more matches rejected and thus less false positives.
