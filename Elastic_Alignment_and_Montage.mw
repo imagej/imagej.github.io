@@ -18,19 +18,18 @@ The plugins '''Elastic Stack Alignment''' and '''Elastic Montage''' implement au
 
 Images are warped such that corresponding regions overlap optimally.  The warp for each single image is calculated such that each image in the whole global montage or series will be deformed minimally.  That way, arbitrarily large series of images can be aligned without accumulating artificial warps.
 
-[[Image:Mesh.png|thumb|right|166px|Fig. 1: Triangular section mesh with a resolution of 5 vertices per each long row.]]
 ==Elastic Deformation with Spring Meshes==
 
+[[Image:Mesh.png|thumb|right|166px|Fig. 1: Triangular section mesh with a resolution of 5 vertices per each long row.]]
 We achieve this globally minimized deformation by simulating the alignment as an elastic system of spring connected vertices.  Zero-length springs connect corresponding locations between two overlapping images and warp the images towards perfect overlap.  Non-zero length springs within the image preserve each images shape at locally rigid transformation.  That way, the system penalizes arbitrary warp and distributes the deformation evenly among all images.
 
 Each image is tessellated into a mesh of regular triangles with each vertex being connected to its neighboring vertices by a spring (see Fig. 1).  A triangle of springs has two families of of cost minima in the plane: 1) at rigid transformations and 2) at rigid transformations flipped.  That is, for all local deformations smaller than the size of a triangle, the mesh will drag towards a rigid transformation.  For larger deformation, it may fold.  The vertices of a triangel define an affine transformation for all pixels in the triangle.
 
-For those vertices overlapping another image, we identify its corresponding location in that image and its mesh.  The vertex is then connected into this mesh by a zero-length spring that ends in an arbitrary triangle of the target mesh.
-
-[[Image:Edge-filter.png|thumb|right|247px|Fig. 2: Edge response filter. The ratio of the two principal curvatures (Hessian eigenvalues) of at a detection determines how well it is defined in both dimensions. A large ratio signalizes an edge response.]]
+For those vertices of a source image overlapping a target image, we identify its corresponding location in the target image.  The vertex is then connected into the target mesh by a zero-length spring with its target end being located at an arbitrary place in a triangle of the target mesh.  This `passive' end does not contribute to the deformation of the target mesh.  During simulation, it moves according to the affine transformation defined by the target triangle.  Vice versa, vertices of the target image are connected to their corresponding location in the source image with their `passive' ends being moved by the respective affine transformation of a source triangle.
 
 ==Block Matching==
 
+[[Image:Edge-filter.png|thumb|right|247px|Fig. 2: Edge response filter. The ratio of the two principal curvatures (Hessian eigenvalues) of at a detection determines how well it is defined in both dimensions. A large ratio signalizes an edge response.]]
 Corresponding locations are searched through block matching.  Initialized from an approximate linear pairwise alignment that is estimated using [[Feature Extraction|local image features]], the local vicinity around each vertex is inspected for an optimal match.  We use the The [http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient PMCC coefficent] ''r'' of a patch around the vertex and the overlapping patch in the other image as the quality measure for a match.  The location with maximal ''r'' specifies the offset of the vertex relative to the initial linear alignment.  In order to reject wrong matches. three local filters based on the correlation surface are in place:
 
 ;minimal threshold for ''r''
