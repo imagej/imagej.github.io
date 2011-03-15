@@ -91,7 +91,11 @@ We perform block matching at a reasonably down-scaled version of the images.  Th
 
 ;Optimization
 :'''Approximate optimization''' is used to initialize the alignment for block matching.  The iterative optimizer stops latest after '''maximal iterations''' but not earlier than '''maximal plateauwidth''' even if the square transfer error is not further decreasing, the same parameters need to be specified for '''spring mesh''' simulation.  Usually, only ''translation'' and ''rigid'' transformations will result in a reasonable configuration because both ''similarity'' and ''affine'' transforms have their global optimum at zero-size collapsed state.
-:For ''series alignment'', springs across sections have a spring constant of 1.0/distance with distance being the absolute index difference in the series.  For ''montage'', all springs between overlapping images have a spring constant of 1.0.  The constant of springs in the mesh is specified through '''stiffness'''.  Larger values will result in less deformed, less perfectly aligned results.  Very small values may result in unevenly distributed deformation due to premature `relaxation' of the simulation.
+:For ''series alignment'', springs across sections have a spring constant of 1.0/distance with distance being the absolute index difference in the series.  For ''montage'', all springs between overlapping images have a spring constant of 1.0.  The constant of springs in the mesh is specified through '''stiffness'''.  Larger values will result in less deformed, less perfectly aligned results.  Very small values may result in unevenly distributed deformation due to premature `relaxation' of the simulation.  You can specify the maximal stretch of springs after which they will disrupt.  We have not experimented with this extensively yet.
+
+==Future Work==
+
+We will include these experimental plugins into TrakEM2 for interactive and transparent elastic montaging and series alignment including previously added annotations.  We will further investigate in automatic selection of appropriate parameters depending on available meta-information of the data sets (resolution, section thickness, deformation priors,...).  We will investigate appropriate identification strategies for discontinuities in the transformation fields such as section ruptures or folds and cut springs at such places.  We will investigate strategies to solve the alignment through hierarchical stages of accuracy for gaining better local accuracy and improved speed.
 
 ==References==
 
