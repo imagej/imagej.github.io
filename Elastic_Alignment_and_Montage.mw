@@ -8,9 +8,9 @@
 | latest version         = March 11<sup>th</sup>, 2011
 | status                 = experimental, active
 | category               = [[:Category:Plugins|Plugins]], [[:Category:Registration|Registration]]
-}}
-==Introduction==
+}}==Introduction==
 
+[[Image:Aligned-series-crop-512.gif|thumb|right|166px|Example 2: Example for elastic alignment and montaging.  7 serial TEM sections of the neuropil of a ''Drosophila melanogaster'' first instar larva, detail at 100% pixel resolution. Image courtesy by [http://albert.rierol.net/ Albert Cardona].]][[Image:Aligned-series-512.gif|thumb|right|166px|Example 1: Example for elastic alignment and montaging.  7 serial TEM sections of the neuropil of a ''Drosophila melanogaster'' first instar larva, downscaled by a factor of 12.  Image courtesy by [http://albert.rierol.net/ Albert Cardona].]]
 The plugins '''Elastic Stack Alignment''' and '''Elastic Montage''' implement automatic elastic registration of 2d-images.  The applications are:
 
 ;Elastig Montage
