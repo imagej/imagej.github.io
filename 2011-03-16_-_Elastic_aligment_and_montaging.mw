@@ -1,0 +1,11 @@
+We have implemented a long-standing simple idea for elastic alignment of large section series and montaging mosaics from unpredictably deformed tiles inspired by work from Elisabeth Guest and Takeo Igarashi.  The idea is best explained at an old [http://fly.mpi-cbg.de/dev/?pid=13&zp=0&yp=915416000.3604&xp=497332000.1958&sid0=17&s0=2 poster from 2008] that you can browse
+through [http://fly.mpi-cbg.de/dev/?pid=13&zp=0&yp=915416000.3604&xp=497332000.1958&sid0=17&s0=2 CATMAID].
+
+Basically, each image is represented as an elastic mesh of spring-connected vertices that are dragged towards corresponding locations in overlapping images.  Corresponding locations are found by block matching.
+
+Find the (still experimental) plugins for series alignment and montaging in an updated Fiji's Registration menu.  [[Elastic_Alignment and Montage|Documentation]] is available at the [[Elastic_Alignment and Montage|Fiji Wiki]].
+
+Many thanks to Albert Cardona and Ignacio Arganda for pushing and
+helping.
+
+[[Category:News]]
