@@ -19,4 +19,27 @@ Examples are <code>IterableIntervalSubset</code>, arbitrary Neighborhoods, <code
 <code>HyperShpere</code>,
 <code>SuperInterval</code>&hellip;
 
+
+===We discussed the View concept (again) and Transforms:===
+We agreed that for Views that give transformed access it is more natural
+to specify the transform with respect to the underlying data.
+That is, the transform is applied to a coordinate in the data system to
+obtain a coordinate in the view system.
+
+In matrix notation, a transform would look like
+'''y = Tx'''.
+Here, it is natural to refer to '''x''' as the ''source''
+vector and to '''y''' as the ''target'' vector.
+
+Applied to Views, we will therefore completely reverse our previous opinion and
+refer to the underlying data as the ''Source''.
+
+The <code>View<T></code> interface would look like
+<source lang="java">
+public interface View<T> {
+    public T getSource();
+}
+</source>
+
+
 [[Category:ImgLib]]
