@@ -5,8 +5,9 @@ Basically, each image is represented as an elastic mesh of spring-connected vert
 
 Find the (still experimental) plugins for series alignment and montaging in an updated Fiji's Registration menu.  [[Elastic_Alignment and Montage|Documentation]] is available at the [[Elastic_Alignment and Montage|Fiji Wiki]].
 
-Many thanks to Albert Cardona and Ignacio Arganda for pushing and
-helping.
+Many thanks to [http://albert.rierol.net Albert Cardona] and [http://bioweb.cnb.csic.es/~iarganda/index_EN.html Ignacio Arganda-Carreras] for pushing and helping.
+
+Elastic alignment developed by [http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld].
 
 [[Category:News]]
 [[Category:Plugins]]
