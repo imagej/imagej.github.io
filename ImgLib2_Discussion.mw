@@ -41,7 +41,43 @@ public interface View<T> {
 }
 </source>
 
-==How to proceed with the imglib2 namespace?==
+For Transforms, we will adapt and simplify the <code>CoordinateTransform</code> and related interfaces from Fiji's mpicbg submodule.  There will be an integer and a real version as for <code>Positionable</code> and <code>Localizable</code>.  <code>Transform</code> and <code>RealTransform</code> can specify the number of dimensions of its source and target domain.  They look like
+<source lang="java">
+public interface Transform {
+    public int numSourceDimensions();
+    public int numTargetDimensions();
+    apply(long[] source, long[] target);
+    apply(Localizable source, Positionable target);
+}
+
+public interface RealTransform {
+    public int numSourceDimensions();
+    public int numTargetDimensions();
+    apply(double[] source, double[] target);
+    apply(RealLocalizable source, RealPositionable target);
+}
+</source>
+The apply methods transfer source coordinates into target coordinates.
+
+There will be an invertible version for each of these interfaces
+<source lang="java">
+public interface IvertibleTransform extends Transform {
+    applyInverse(long[] source, long[] target);
+    applyInverse(Positionable source, Localizable target);
+    InvertibleTransform inverse();
+}
+
+public interface IvertibleRealTransform extends RealTransform {
+    applyInverse(double[] source, source[] target);
+    applyInverse(RealPositionable source, RealLocalizable target);
+    InvertibleRealTransform inverse();
+}
+</source>
+Note that <code>target</code> is transferred into <code>source</code> in that case.
+
+We have extensively discussed the fact that for rendering a mapped image, an inverse transformation is required whereas one prefers to define transformations in the forward manner.  Nevertheless, a view (renderer) should use the forward defined instance of a <code>Transform</code> to create its result with changes applied to that transform having a direct effect on the result (no creation of a fresh `inverse').  Other than in mpicbg, we will achieve this by implementing Renderers for forward transformations (those transformations that can be specified in one direction only will be defined as forward transformations).  For invertible transformations, the Renderer will use a final <code>Inverter</code> that is a forward transformations that uses the inverse apply methods of an invertible transformation for its apply method.
+
+===How to proceed with the imglib2 namespace?===
 
 We think that it would be a great idea to be able to run both imglib and imglib2 together.  This would relieve us from the need to port all the legacy imglib code into imglib2.  Also, a shorter package hierarchy would be nice.  With org.imglib2, we would match the Maven convention and the URL is still not registered...
 
