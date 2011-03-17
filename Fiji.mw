@@ -30,8 +30,13 @@ Browse the [[:Category:News|news archive]].
 ;[[TrakEM2]]
 * Register/edit/analyze/segment/annotate/3D model terabytes of confocal and electron microscopy images.
 ;[[:Category:Transform|Transform]]
+* Interactive image transformation ([[Interactive_Rigid|rigid]], [[Interactive_Similarity|similarity]], [[Interactive_Affine|affine]], [[Interactive_Perspective|perspective]], [[Interactive_Moving_Least_Squares|deform]])
+* [[Interactive Stack Rotation]]
+* [[Landmark Correspondences|Landmark based transformation and deformation]]
+* [http://fly.mpi-cbg.de/saalfeld/Projects/panorama.html Panorama Viewer]
 * [[Distortion correction]]: correct lens deformation induced by the microscope (optical and electron microscopy). See the [http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf Distortion Correction plugin manual].
 ;[[Plugins_Menu#Plugins_.3E_Registration|Image registration]]
+* [[Elastic Alignment and Montage]]
 * [[SPIM Registration]] Registration and fusion of Selective Plane Illumination Microscopy data.
 *[[Stitching 2D/3D]] Stitch multiple image stacks across X,Y,Z.
 *[[Feature Extraction]] SIFT and MOPS.
