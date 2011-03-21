@@ -81,5 +81,83 @@ We have extensively discussed the fact that for rendering a mapped image, an inv
 
 We think that it would be a great idea to be able to run both imglib and imglib2 together.  This would relieve us from the need to port all the legacy imglib code into imglib2.  Also, a shorter package hierarchy would be nice.  With org.imglib2, we would match the Maven convention and the URL is still not registered...
 
+==2011-03-21==
+
+===Efficient access for RandomAccessibleViews===
+
+I've been thinking all day about a reasonable concept for concatenation and simplification of <code>Transforms</code> for <code>RandomAccessibleViews</code>.
+No satisfying result so far, so at least I want to start writing down what
+it might look like in the end and what the problems are.
+
+====Simplifying View Transformations====
+The idea is that a view should always give you a <code>RandomAccess</code>
+that is as efficient as possible.
+When views are layered on top of each other it is often possible to combine
+and simplify their transformations.
+
+Assume that we have a 90 degree rotated view '''A''' of an image '''I'''.
+and a 90 degree rotated view '''B''' of that view '''A'''.
+A <code>RandomAccess</code> on '''B''' could simply rotate by 90 degree and
+wrap a <code>RandomAccess</code> on '''A'''.
+The <code>RandomAccess</code> on '''A''' would in turn simply rotate by 90 degree and wrap a <code>RandomAccess</code> on '''I'''.
+
+However, this would not a good idea for a hierarchy of many views.
+Instead, when we request a <code>RandomAccess</code> from '''B''' then we would like one that directly wraps a <code>RandomAccess</code> on '''I''' and rotates coordinates by 180 degree.
+
+====Out-Of-Bounds Handling====
+In imglib2, out-of-bounds access is handled by [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=imglib.git;a=blob;f=imglib/src/main/java/mpicbg/imglib/ExtendedRandomAccessibleInterval.java;h=31dacac73d7c4377d2e2335681b3417e2c8665f4;hb=refs/heads/imglib2-dirty <code>ExtendedRandomAccessibleInterval</code>]
+If you have a <code>RandomAccessibleInterval</code> you can wrap it into
+an <code>ExtendedRandomAccessibleInterval</code> which extends to infinity.
+Like so:
+<source lang="java">
+F interval; // where F extends RandomAccessibleInterval< T >
+OutOfBoundsFactory< T, F > factory = new OutOfBoundsMirrorFactory< T, F >( OutOfBoundsMirrorFactory.Boundary.SINGLE );
+RandomAccessible< T > extended = new ExtendedRandomAccessibleInterval< T >( randomAccessible, factory );
+</source>
+
+<code>ExtendedRandomAccessibleInterval</code> is also a <code>RandomAccessibleView</code>.
+It might be inserted at any point in a view hierarchy.
+Here is an example:
+<source lang="java">
+Img< FloatType > img = LOCI.openLOCIFloatType(...);
+RandomAccessibleView< FloatType > view1 = Views.extend( img );	
+RandomAccessibleIntervalView< FloatType > view2 = Views.superIntervalView( view1, new long[] {-20, -20}, new long[] {157, 157} );		
+RandomAccessibleView< FloatType >         view3 = Views.extend( view2 );	
+RandomAccessibleIntervalView< FloatType > view4 = Views.superIntervalView( view3, new long[] {-100, -100}, new long[] {357, 357} );
+</source>
+
+
+The original <code>img</code> looks like this:
+
+[[File:Imglib2views_img.png‎]]
+
+This is extended to infinity (using mirroring strategy)
+resulting in the unbounded <code>RandomAccessible view1</code>.
+A crop of <code>view1</code> looks like this:
+
+[[File:Imglib2views_ext1.png‎]]
+
+Then we take a subview <code>view2</code> (which is again a bounded interval)
+
+[[File:Imglib2views_extsub1.png‎]]
+
+We extend that to get <code>view3</code> and take a subview <code>view4</code>
+which looks like this:
+
+[[File:Imglib2views_extsub1extsub2.png‎]]
+
+Now assume that we want <code>RandomAccess</code> into <code>view4</code>.
+If we know in advance interval in which we will use the access, <code>view4</code> can possibly provide more efficient access.
+Consider this:
+
+[[File:Imglib2views_extsub1extsub2regions.png‎]]
+
+If we want to access only the green region, the <code>RandomAccess</code>
+can fall through all the way to the original <code>img</code> without needing
+out-of-bounds values. We simply wrap a <code>RandomAccess</code> on <code>img</code> with a coordinate translation to the top-left corner of <code>view4</code>
+
+If we need to access the red region, we wrap a out-of-bounds <code>RandomAccess</code> on <code>view1</code> (which wraps a <code>RandomAccess</code> on the <code>img</code>).
+
+If we need to access the blue region, we wrap a out-of-bounds <code>RandomAccess</code> on <code>view3</code> (which wraps a out-of-bounds <code>RandomAccess</code> on <code>view1</code>, which which wraps a <code>RandomAccess</code> on the <code>img</code>).
 
 [[Category:ImgLib]]
