@@ -160,4 +160,9 @@ If we need to access the red region, we wrap a out-of-bounds <code>RandomAccess<
 
 If we need to access the blue region, we wrap a out-of-bounds <code>RandomAccess</code> on <code>view3</code> (which wraps a out-of-bounds <code>RandomAccess</code> on <code>view1</code>, which which wraps a <code>RandomAccess</code> on the <code>img</code>).
 
+A view hierarchy may consist of an arbitrary sequence of views that do
+coordinate transforms and extending views. Depending on interval we
+want to access, sometimes the extending views "disappear". In this case,
+transforms before and after the extending view can be concatenated and simplified if possible.
+
 [[Category:ImgLib]]
