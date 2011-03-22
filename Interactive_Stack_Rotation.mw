@@ -3,7 +3,7 @@
 | software               = Fiji
 | author                  = [[User:Saalfeld|Stephan Saalfeld]] ([mailto:saalfeld@mpi-cbg.de])
 | maintainer             = [[User:Saalfeld|Stephan Saalfeld]]
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/Stack_Rotate]
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=Stack_Rotate.java on gitweb]
 | released               = 2009
 | latest version         = 2010
 | status                 = stable, active
