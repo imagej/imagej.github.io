@@ -106,7 +106,7 @@ Instead, when we request a <code>RandomAccess</code> from '''B''' then we would 
 
 ===== Transformable (leek) =====
 
-Coincidentally, I was playing around with an idea for ROIs that might be applicable here. You'd like to be able to take a ROI in one space, apply a transform and get a ROI in the transformed space by transforming key internal coordinates. So that lead me to think of making ROIs implement "Transformable" if they wanted to. The some could be applied to a transform itself - have a transform implement transformable so that its internal matrix could get re-jiggered to operate in the new space.
+Coincidentally, I was playing around with an idea for ROIs that might be applicable here. You'd like to be able to take a ROI in one space, apply a transform and get a ROI in the transformed space by transforming key internal coordinates. So that lead me to think of making ROIs implement "Transformable" if they wanted to. The some transformation could be applied to a transform itself - have a transform implement transformable so that its internal matrix could get re-jiggered to operate in the new space.
 
 Here's the interface that I was planning on implementing:
 
