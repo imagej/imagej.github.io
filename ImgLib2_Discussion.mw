@@ -104,6 +104,40 @@ The <code>RandomAccess</code> on '''A''' would in turn simply rotate by 90 degre
 However, this would not a good idea for a hierarchy of many views.
 Instead, when we request a <code>RandomAccess</code> from '''B''' then we would like one that directly wraps a <code>RandomAccess</code> on '''I''' and rotates coordinates by 180 degree.
 
+===== Transformable (leek) =====
+
+Coincidentally, I was playing around with an idea for ROIs that might be applicable here. You'd like to be able to take a ROI in one space, apply a transform and get a ROI in the transformed space by transforming key internal coordinates. So that lead me to think of making ROIs implement "Transformable" if they wanted to. The some could be applied to a transform itself - have a transform implement transformable so that its internal matrix could get re-jiggered to operate in the new space.
+
+Here's the interface that I was planning on implementing:
+
+ package mpicbg.imglib.transform;
+ /**
+  * @author leek
+  *
+  * A class is transformable if it can produce a copy of
+  * itself in the transformed space using the supplied transform.
+  * 
+  * Note that a class may require either a Transform or an InvertibleTransform
+  * depending on whether the strategy is to transform coordinates in the
+  * source space into the destination space or to generate the object in
+  * the destination space by sampling invert-transformed points in the
+  * source space.
+  * 
+  */
+ public interface Transformable<O,T extends Transform> {
+    /**
+     * Generate a copy of the object in the transformed space.
+     * @param t the transform that maps points in the source space to those
+     *          in the destination space.
+     * @return a copy built to operate similarly in the transformed space.
+     */
+    public O transform(final T t);
+ }
+
+You'd only want to implement Transformable in cases where the object has internal state which allows the transformed object to operate more efficiently than transformation of the object's inputs, followed by application of the object's function. For ROIs, the savings are clear - cost to transform a handful of vertices in a polygon versus cost of back-transforming millions of coordinates into the original space.
+
+Now it obviously can be made to work for ROIs and it can be made to work to combine two linear transformations (dot product of matrices, right?). But other things are more complex and require more thought. At the end of it, each output is a function of the inputs and the trick is to composite a function that performs the operation. For a transform T1 to be transformable by transform T2, it seems that you need to combine and reduce an equation on the inputs of T1 for each of the outputs of T2. It's a difficult enough problem that you might not want to make a transform generally transformable - you might want to have compositors with special knowledge regarding which classes can be combined to yield a new one and how it's done.
+
 ====Out-Of-Bounds Handling====
 In imglib2, out-of-bounds access is handled by [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=imglib.git;a=blob;f=imglib/src/main/java/mpicbg/imglib/ExtendedRandomAccessibleInterval.java;h=31dacac73d7c4377d2e2335681b3417e2c8665f4;hb=refs/heads/imglib2-dirty <code>ExtendedRandomAccessibleInterval</code>]
 If you have a <code>RandomAccessibleInterval</code> you can wrap it into
