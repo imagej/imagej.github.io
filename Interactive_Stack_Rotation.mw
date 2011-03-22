@@ -1,0 +1,11 @@
+{{Infobox Plugin
+| name                   = Interactive Stack Rotation
+| software               = Fiji
+| author                  = [[User:Saalfeld|Stephan Saalfeld]] ([mailto:saalfeld@mpi-cbg.de])
+| maintainer             = [[User:Saalfeld|Stephan Saalfeld]]
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/Stack_Rotate]
+| released               = 2009
+| latest version         = 2010
+| status                 = stable, active
+| category               = [[:Category:Plugins|Plugins]], [[:Category:Transform|Transform]]
+}}<include iframe class="youtube-player" type="text/html" width="396" height="366" src="http://www.youtube.com/embed/7so6zkwvNeQ" frameborder="0" border="0" style="border:0px" />
