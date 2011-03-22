@@ -414,6 +414,34 @@ def run():
 run()
 </source>
 
+A similar measurement may be obtained like the following, if you don't mind typing in the IDs of the Ball (vesicles) and AreaList (the synaptic surface), and getting the results summarized into mean, standard deviation and median (of the distances of each vesicle to the mesh):
+
+<source lang="python">
+# The IDs of the Ball and AreaList instances
+vesiclesID = 1543
+synapticSurfaceID = 1541
+
+# Obtain the two TrakEM2 instances
+project = Project.getProjects()[0]
+vesicles = project.findById(vesiclesID)
+synapticSurface = project.findById(synapticSurfaceID)
+
+# A set of unique vertices defining the synaptic surface
+vertices = set(synapticSurface.generateTriangles(1, 2))
+
+# For every vesicle, measure its shortest distance to a vertex
+distances = [reduce(Math.min,
+                    map(lambda v: p.distance(v), vertices))
+             for p in vesicles.asWorldPoints()]
+
+# Compute average, median and standard deviation
+mean = sum(distances) / len(distances)
+stdDev = Math.sqrt(reduce(lambda s, e: s + pow(e - mean, 2),
+                          distances, 0)) / len(distances)
+median = sorted(distances)[len(distances)/2]
+
+print mean, stdDev, median
+</source>
 
 = Interacting with Layers (Sections) =
 
