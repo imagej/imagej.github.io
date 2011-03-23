@@ -39,3 +39,9 @@ Alternatively, right-click (or control-click) the Fiji.app and select "Show pack
 ==Adding new plugins and macros==
 
 For plugins, please follow the instructions about [[Installing 3rd party plugins]]. Otherwise, access the plugins folder as explained above and just drag and drop any plugin into the plugins folder, like you would do for ImageJ. Same for macros.
+
+== Installing OpenJDK for MacOSX ==
+
+There is [http://openjdk.java.net/projects/macosx-port/ an Apple-backed effort] to get a proper MacOSX backend into the BSD port of OpenJDK. So far, only Snow Leopard and later are supported, and preliminary builds can be found [http://code.google.com/p/openjdk-osx-build/ here].
+
+If you are experiencing problems, say, with AWT-AppKit related crashes, and if you do not mind working with an X11-based graphical user display, you might want to try OpenJDK.
