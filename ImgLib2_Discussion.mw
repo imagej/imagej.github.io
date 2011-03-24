@@ -81,6 +81,9 @@ We have extensively discussed the fact that for rendering a mapped image, an inv
 
 We think that it would be a great idea to be able to run both imglib and imglib2 together.  This would relieve us from the need to port all the legacy imglib code into imglib2.  Also, a shorter package hierarchy would be nice.  With org.imglib2, we would match the Maven convention and the URL is still not registered...
 
+
+Why not just call it "org.imglib" then? Wouldn't clash with "mpicbg.imglib" of imglib1.
+
 ==2011-03-21==
 
 ===Efficient access for RandomAccessibleViews===
