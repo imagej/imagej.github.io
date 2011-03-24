@@ -17,3 +17,7 @@ This is a list of the most commonly requested (or most important) wishlist items
 * The "fill volume" option works well, but currently isn't rendered in the 3D viewer and doesn't calculate radii around the path for export.  It would be useful to fit spheres within the fill to optimize the midpoint and generate radii.
 
 * The way that fills are stored in the .traces file format is very inefficient at the moment - it stores enough information to be able to restart the fill from the exact state that the search reached, and this isn't really necessary.
+
+* It has been requested that for RGB images, the tracer should convert the image stack to luminance values for tracing, but still display the full colour images in the interface.  I'd like to go further and add an option to display any one of:
+** The original image data.
+** The values which are being traced on, which might be preprocessed or just a simple transformation of the original data.
