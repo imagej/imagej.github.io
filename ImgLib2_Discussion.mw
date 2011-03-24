@@ -203,4 +203,45 @@ coordinate transforms and extending views. Depending on interval we
 want to access, sometimes the extending views "disappear". In this case,
 transforms before and after the extending view can be concatenated and simplified if possible.
 
+
+==2011-03-24==
+
+===Tranformation Hierarchies===
+We thought that it might at some point be useful to have a generic way of contracting chains of transforms.
+The idea is to have a hierarchy of transformations, i.e., a Translation is a Rigid transform is an Affine transform, etc.
+The hierarchy determines which transformations can be concatenated.
+It would be hard to concatenate transformations from different branches in
+the tree. For example, it is possible to concatenate a Translation and a Rotation to a Rigid transform. However, it is not clear whether we always want to do that.
+So we decided that transforms should be concatenable with their descendants in the hierarchy but not the other way around.
+That is, a Rigid can be concatenated with a Translation (resulting in another Rigid). But a Translation can not be concatenated with a Rigid (because this would not always result in another Translation).
+
+Having a generic way of concatenating Rigid with all of its children means
+that all children must also be a Rigid.
+That is, we must be able to ask a Translation for its rotation matrix and so
+on.
+I was afraid, that this adds too much (implementation) overhead, but Stephan convinced me that this is the best way to go.
+Actually, it should be possible to make this relatively painless by having an hierarchy of abstract transform classes.
+
+We settled on the following scheme for implementing the transformation hierarchy:
+
+There are interfaces <code>Concatenable</code> and <code>PreConcatenable</code>
+<source lang="java">
+public interface Concatenable< A >
+{
+    public Concatenable< A > concatenate( A a );
+
+    public Class< A > getConcatenableClass();
+}
+</source>
+if <code>T</code> implements <code>Concatenable< A ></code> that means
+I can concatenate it with an <code>A</code>, usually resulting in another <code>T</code>.
+
+The hierarchy of transforms is implemented by a hierarchy of interfaces.
+However these interfaces do implement <code>Concatenable</code>.
+<code>Rigid</code> cannot be <code>Concatenable< Rigid ></code> because this
+would mean that <code>Translation</code> (which extends <code>Rigid</code>) must
+be concatenable with <code>Rigid</code> (resulting in another <code>Translation</code>).
+
+
+
 [[Category:ImgLib]]
