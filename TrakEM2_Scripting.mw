@@ -828,6 +828,8 @@ Notice how about we called <i>getOrigins(Tree)</i> and <i>getTargets(Tree)</i>, 
 
 == Measure all spine necks in a neuronal arbor ==
 
+'''UPDATE''': as of version 0.8n, this functionality is included in TrakEM2. Right-click on a selected treeline or areatree and choose "Measure - Shortest distances between all pairs of nodes tagged as..."
+
 The idea is to label the beginning of a spine neck with the tag "neck start" and the end of the spine neck with the tag "neck end". It is assumed that the "next end" will always be in the subtree of the "neck start" node; in other words, that the direction of the tree is from "neck start" to "neck end".
 
 Then, we iterate all nodes of the arbor looking for nodes that have the "neck start" tag and measure the calibrated length of the neck. All measurements for all spine necks are printed out.
