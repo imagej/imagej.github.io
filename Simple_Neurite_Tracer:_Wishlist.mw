@@ -21,3 +21,5 @@ This is a list of the most commonly requested (or most important) wishlist items
 * It has been requested that for RGB images, the tracer should continue to convert the image stack to luminance values for tracing internally, but in the interface should instead display the full colour images.  I agree, but would like to go further and add an option to display any one of:
 ** The original image data.
 ** The values which are being traced on, which might be preprocessed or just a simple transformation of the original data.
+
+* Add a menu option to export all neurons as SWC files, i.e. one per connected set of paths.
