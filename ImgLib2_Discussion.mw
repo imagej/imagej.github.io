@@ -206,7 +206,7 @@ transforms before and after the extending view can be concatenated and simplifie
 
 ==2011-03-24==
 
-===Tranformation Hierarchies===
+===Transformation Hierarchies===
 We thought that it might at some point be useful to have a generic way of contracting chains of transforms.
 The idea is to have a hierarchy of transformations, i.e., a Translation is a Rigid transform is an Affine transform, etc.
 The hierarchy determines which transformations can be concatenated.
@@ -242,6 +242,43 @@ However these interfaces do implement <code>Concatenable</code>.
 would mean that <code>Translation</code> (which extends <code>Rigid</code>) must
 be concatenable with <code>Rigid</code> (resulting in another <code>Translation</code>).
 
+Instead, both the <code>Rigid</code> and <code>Concatenable< Rigid ></code> interfaces are implemented by the <code>RigidTransform</code> class
+<source lang="java">
+public class RigidTransform implements Rigid, Concatenable< Rigid >
+{
+    @Override
+    public RigidTransform concatenate( Rigid a ) {...}
+
+    @Override
+    public Class< Rigid > getConcatenableClass()
+    {
+        return Rigid.class;
+    }
+}
+</source>
+
+Similarly we have 
+<source lang="java">
+public class TranslationTransform implements Translation, Concatenable< Translation >
+{
+    @Override
+    public TranslationTransform concatenate( Translation a ) {...}
+
+    @Override
+    public Class< Translation > getConcatenableClass()
+    {
+        return Translation.class;
+    }
+}
+</source>
+
+Note, that <code>TranslationTransform</code> cannot extend <code>RigidTransform</code> (because otherwise it would inherit <code>Concatenable< Rigid ></code>.)
+
+We add an abstract class hierarchy between the interfaces and the transform
+classes.
+The abstract classes do not implement <code>Concatenable</code>, so at this level extension is still possible.
+
+This scheme is illustrated in the following figure:
 
 
 [[Category:ImgLib]]
