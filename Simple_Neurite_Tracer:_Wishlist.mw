@@ -18,6 +18,6 @@ This is a list of the most commonly requested (or most important) wishlist items
 
 * The way that fills are stored in the .traces file format is very inefficient at the moment - it stores enough information to be able to restart the fill from the exact state that the search reached, and this isn't really necessary.
 
-* It has been requested that for RGB images, the tracer should continue to convert the image stack to luminance values for tracing internally, but should instead display the full colour images in the interface.  I agree, but would like to go further and add an option to display any one of:
+* It has been requested that for RGB images, the tracer should continue to convert the image stack to luminance values for tracing internally, but in the interface should instead display the full colour images.  I agree, but would like to go further and add an option to display any one of:
 ** The original image data.
 ** The values which are being traced on, which might be preprocessed or just a simple transformation of the original data.
