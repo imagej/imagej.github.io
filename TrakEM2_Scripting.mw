@@ -825,6 +825,7 @@ for origin,targets in graph.iteritems():
 
 Notice how about we called <i>getOrigins(Tree)</i> and <i>getTargets(Tree)</i>, which filters all potential origins and targets (Patch--an image--, AreaList, etc.) so that only Tree instances will be present in the lists.
 
+'''NOTE''': you may also want to use the "Export - NeuroML" menu command, in the right-click popup menu.
 
 == Measure all spine necks in a neuronal arbor ==
 
