@@ -297,4 +297,21 @@ setPosition calls: ImgLib will always iterate over the dimensionality of the arr
  Positionable2d.setPostion( array[3] ) - NOT OK
  Positionable3d.setPostion( array[2] ) - OK
 
+
+We discussed this topic again and found that it is always bad practice to actually work with dimension vectors of different sizes.  Instead, one should use views that map into a common ''n''-space by either adding or removing a set of dimensions in one or both of the RandomAccessibles.  Still, the behavior needs to be specified strictly.  With an eye on efficiency and consistency, we revert our previous opinion to
+
+ Localizable2d.localize( array[3] ) - OK
+ Localizable3d.localize( array[2] ) - NOT OK
+ Localizable2d.localize( Localizable3d ) - OK
+ Localizable3d.localize( Localizable2d ) - NOT OK
+ 
+ Positionable2d.setPostion( array[3] ) - OK
+ Positionable3d.setPostion( array[2] ) - NOT OK
+ Positionable2d.setPostion( Localizable3d ) - OK
+ Positionable3d.setPostion( Localizable2d ) - NOT OK
+
+for the reason that in the latter case, the loop would require Localizable.numDimensions() to be called otherwise.  There will be many situations where this cannot be inlined and thus be slower than using a temporary ''n'' in the executing class.
+
+ 
+
 [[Category:ImgLib]]
