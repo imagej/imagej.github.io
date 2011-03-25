@@ -302,8 +302,6 @@ We discussed this topic again and found that it is always bad practice to actual
 
  Localizable2d.localize( array[3] ) - OK
  Localizable3d.localize( array[2] ) - NOT OK
- Localizable2d.localize( Localizable3d ) - OK
- Localizable3d.localize( Localizable2d ) - NOT OK
  
  Positionable2d.setPostion( array[3] ) - OK
  Positionable3d.setPostion( array[2] ) - NOT OK
