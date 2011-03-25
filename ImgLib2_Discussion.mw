@@ -279,5 +279,22 @@ We add an abstract class hierarchy between the interfaces and the transform
 classes.
 The abstract classes do not implement <code>Concatenable</code>, so at this level extension is still possible.
 
+==2011-03-25==
+
+===Get and Set Strategy for different dimensionalities===
+
+If one wants to work with images that have different dimensionalities (e.g. 2d and 3d), it should be clearly defined how ImgLib handles Positionables, Localizables and location arrays.
+
+getPosition calls: ImgLib will always iterate over the dimensionality of the Cursor which is queried for its position, i.e. one can always pass an array or Positionable with a higher dimensionality and it will only set the lower dimensionality entries.
+
+setPosition calls: ImgLib will always iterate over the dimensionality of the array that indicates the new location, i.e. one can pass an array or Localizable with a lower dimensionality and it will only set the new position in those lower dimensions.
+
+ For example 2d/3d:
+ 
+ Localizable2d.localize( array[3] ) - OK
+ Localizable3d.localize( array[2] ) - NOT OK
+ 
+ Positionable2d.setPostion( array[3] ) - NOT OK
+ Positionable3d.setPostion( array[2] ) - OK
 
 [[Category:ImgLib]]
