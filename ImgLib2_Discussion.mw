@@ -285,7 +285,7 @@ The abstract classes do not implement <code>Concatenable</code>, so at this leve
 
 If one wants to work with images that have different dimensionalities (e.g. 2d and 3d), it should be clearly defined how ImgLib handles Positionables, Localizables and location arrays.
 
-getPosition calls: ImgLib will always iterate over the dimensionality of the Cursor which is queried for its position, i.e. one can always pass an array or Positionable with a higher dimensionality and it will only set the lower dimensionality entries.
+getPosition calls: ImgLib will always iterate over the dimensionality of the Cursor which is queried for its position, i.e. one can always pass an array with a higher dimensionality and it will only set the lower dimensionality entries.
 
 setPosition calls: ImgLib will always iterate over the dimensionality of the array that indicates the new location, i.e. one can pass an array or Localizable with a lower dimensionality and it will only set the new position in those lower dimensions.
 
