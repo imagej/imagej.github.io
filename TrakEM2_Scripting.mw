@@ -430,8 +430,7 @@ synapticSurface = project.findById(synapticSurfaceID)
 vertices = set(synapticSurface.generateTriangles(1, 2))
 
 # For every vesicle, measure its shortest distance to a vertex
-distances = [reduce(Math.min,
-                    map(lambda v: p.distance(v), vertices))
+distances = [reduce(min, map(lambda v: p.distance(v), vertices))
              for p in vesicles.asWorldPoints()]
 
 # Compute average, median and standard deviation
