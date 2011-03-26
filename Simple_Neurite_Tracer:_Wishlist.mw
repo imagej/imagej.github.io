@@ -22,4 +22,4 @@ This is a list of the most commonly requested (or most important) wishlist items
 ** The original image data.
 ** The values which are being traced on, which might be preprocessed or just a simple transformation of the original data.
 
-* Add a menu option to export all neurons as SWC files, i.e. one per connected set of paths.  '''Done 2011-03-26'''
+* '''Done 2011-03-26''': Add a menu option to export all neurons as SWC files, i.e. one per connected set of paths.
