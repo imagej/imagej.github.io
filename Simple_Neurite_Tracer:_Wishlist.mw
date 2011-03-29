@@ -24,6 +24,7 @@ This is a list of the most commonly requested (or most important) wishlist items
 
 ----
 
+
 * '''Done 2011-03-26''': Add a menu option to export all neurons as SWC files, i.e. one per connected set of paths.
 
 * '''[[Simple_Neurite_Tracer:_3D_Interaction|Done]] 2011-03-29''': You should be able to do all the basic tracing operations in the 3D Viewer.  e.g. selecting the start point, selecting the subsequent points, and creating joins and branches.  This is partially implemented now - you can try switching between the "hand" and "wand" tool and clicking in the 3D viewer.  There's no visual feedback yet for what you're doing, however.  Ideally it would be nice not to have to switch tool, as well
