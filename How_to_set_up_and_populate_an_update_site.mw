@@ -1,0 +1,51 @@
+= How to setup a plugin distribution site =
+
+This tutorial explains how to set up a website to distribute your plugins. It assumes that:
+* Your plugins are correctly installed in Fiji
+* You have SSH access to a website that serves static web pages.
+* That server has an empty folder where you intend to publish your updates. The Fiji updater will not create new folders.
+
+
+= Start the updater and check your plugins =
+
+First, start the updater:
+[[Image:How_to_setup_a_plugin_distribution_site-1.jpg]]
+
+Click on the 'Advanced mode' button and set the view options to 'View non-Fiji plugins only' to see your plugins. In this case, the plugin we'll be uploading is contained in A_Jolly_Useful_Plugin.jar.
+
+== Set up the update site ==
+
+[[Image:How_to_setup_a_plugin_distribution_site-2.jpg]]
+
+Click the 'Manage update sites' button to bring up a dialog to allow entering your site information. Click the 'For Uploading' checkbox to specify that you'll be uploading your plugins to the site.
+
+[[Image:How_to_setup_a_plugin_distribution_site-4.jpg]]
+
+Click the 'Add' button and fill your choice of name for the site, the public URL, the SSH hostname, and the directory into which the site should be installed via SSH.
+* Note that the URL and the upload directory need to point to the same location on the server. In this case, the webserver maps http://genomics.lbl.gov/~gavin/FijiPlugins to ~gavin/public_html/FijiPlugins on the tatooine server.
+
+[[Image:How_to_setup_a_plugin_distribution_site-6.jpg]]
+
+Click 'OK' to add the update site. Click 'Yes' on the popup dialog to have Fiji set up the update site automatically. You will then need to enter your login credentials for the site. Once the site is set up, the 'Manage update sites' dialog should look something like this:
+
+[[IMage:How_to_setup_a_plugin_distribution_site-9.jpg]]
+
+If you made a mistake, you can edit the site information by pressing - you guessed it - the Edit button.
+
+==Upload your plugins==
+
+Close the dialog, and in the Status/Action column, set the your plugin's status to 'Upload it'. Select the name of your upload site in the popup dialog.
+
+[[Image:How_to_setup_a_plugin_distribution_site-13.jpg]]
+
+Note that this plugin's dependencies, ij.jar and someJarOrOther.jar, are automatically determined by the updater. Hence if you require 3rd party packages for your plugin you can place them into the jars folder of Fiji and the updater will automatically upload them to the site if necessary.
+
+Enter any information you wish to provide about the plugin:
+
+[[Image:How_to_setup_a_plugin_distribution_site-15.jpg]]
+
+Finally, click 'Upload to server' to copy your plugin to the server and allow others to access your plugin. If you have dependencies that are not part of Fiji (such as someJarOrOther.jar), Fiji will ask you if you want to upload the jar as well. Finally, you will be asked for your login credentials again and the files will be uploaded to the server. 
+
+That's it - you're done.
+
+[[Category:Tutorials]]
