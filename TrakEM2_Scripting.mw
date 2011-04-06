@@ -991,6 +991,10 @@ for ballOb in layerset.getZDisplayables(Ball):
 
 = Generate 3D meshes =
 
+In TrakEM2, 3D meshes are generated as a list of [http://download.java.net/media/java3d/javadoc/1.5.2-latest/javax/vecmath/Point3f.html Point3f] for each object. Then the list is wrapped into any of the subclasses of [http://pacific.mpi-cbg.de/javadoc/customnode/CustomMesh.html CustomMesh] of the 3D Viewer library, such as a [http://pacific.mpi-cbg.de/javadoc/customnode/CustomTriangleMesh.html CustomTriangleMesh] or a [http://pacific.mpi-cbg.de/javadoc/customnode/CustomLineMesh.html CustomLineMesh]. Then these mesh objects are encapsulated into a [http://pacific.mpi-cbg.de/javadoc/ij3d/Content.html Content] object and added to an instance of the [http://pacific.mpi-cbg.de/javadoc/ij3d/Image3DUniverse.html Image3DUniverse], which is the main window of the 3D Viewer.
+
+Of course, via scripting many of these steps may be skipped. Below are several examples on how to generate meshes programmatically and save them in [http://www.martinreddy.net/gfx/3d/OBJ.spec Wavefront] format.
+
 === Generate a 3D mesh for an AreaList ===
 
 This script illustrates how to bypass the 3D Viewer to generate meshes from an AreaList and then export the data in Wavefront format. The script exports an AreaList that has been selected in the front Display.
