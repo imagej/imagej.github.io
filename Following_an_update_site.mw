@@ -14,6 +14,8 @@ And click on the 'Advanced' button:
 
 [[Image:AddPluginSite-1.jpg|770px]]
 
+== Add update sites ==
+
 Click on the 'Manage update sites' button to bring up the site management dialog:
 
 [[Image:AddPluginSite-2.jpg|770px]]
@@ -30,9 +32,13 @@ Close the dialog and the list of plugins available on the site will show up:
 
 [[Image:AddPluginSite-5.jpg|770px]]
 
+== Choose and upload plugins ==
+
 You can select whether you want to install a particular plugin by changing the choice in the status/action column. In this case, there's only one plugin available (including a required jar file), so we're going to install all files. Click on 'Apply Changes' and the updates will be installed:
 
 [[Image:AddPluginSite-6.jpg|770px]]
+
+== Verify install ==
 
 Restart Fiji as instructed to finish the install. Check to see that the plugin works:
 
