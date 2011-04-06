@@ -1,0 +1,43 @@
+=How to add a plugin distribution site to your Fiji installation=
+
+This tutorial will explain how to add a plugin distribution site to your install of Fiji such that the plugins maintained there will be installed and updated just like normal Fiji plugins.
+
+In this tutorial we'll be adding plugins from the distribution site at genomics.lbl.gov/~gavin/FijiPlugins.
+
+== Start the Fiji updater ==
+
+First, start the updater:
+
+[[Image:How_to_setup_a_plugin_distribution_site-1.jpg]]
+
+And click on the 'Advanced' button:
+
+[[Image:AddPluginSite-1.jpg|770px]]
+
+Click on the 'Manage update sites' button to bring up the site management dialog:
+
+[[Image:AddPluginSite-2.jpg|770px]]
+
+Click the 'Add' button and fill in the name of your choice for the site and the url, which would be provided by the plugin's author or distributor.
+
+[[Image:AddPluginSite-3.jpg|770px]]
+
+Click 'OK':
+
+[[Image:AddPluginSite-4.jpg|770px]]
+
+Close the dialog and the list of plugins available on the site will show up:
+
+[[Image:AddPluginSite-5.jpg|770px]]
+
+You can select whether you want to install a particular plugin by changing the choice in the status/action column. In this case, there's only one plugin available (including a required jar file), so we're going to install all files. Click on 'Apply Changes' and the updates will be installed:
+
+[[Image:AddPluginSite-6.jpg|770px]]
+
+Restart Fiji as instructed to finish the install. Check to see that the plugin works:
+
+[[Image:AddPluginSite-7.jpg]]
+
+[[Image:AddPluginSite-8.jpg]]
+
+...and that's all there is to it.
