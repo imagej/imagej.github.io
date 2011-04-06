@@ -1,3 +1,5 @@
+If you want to set up a distribution site read [[How to setup a plugin distribution site|this page]] instead.
+
 =How to add a plugin distribution site to your Fiji installation=
 
 This tutorial will explain how to add a plugin distribution site to your install of Fiji such that the plugins maintained there will be installed and updated just like normal Fiji plugins.
