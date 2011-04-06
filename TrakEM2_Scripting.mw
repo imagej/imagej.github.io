@@ -1033,6 +1033,17 @@ TextWindow(".obj", meshData.toString(), 400, 400)
 TextWindow(materialFileName, materialData.toString(), 400, 400)
 </source>
 
+
+=== Generate 3D mesh for an AreaTree ===
+
+Just like for an AreaList (see above), but extract the triangles with:
+
+<source lang="python">
+triangles = areatree.generateMesh(1, resample).verts
+</source>
+
+The AreaTree's generateMesh returns a [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.MeshData.html MeshData] object with the list of vertices and the list of colors of each vertex. The <i>generateTriangles</i> method of an AreaTree returns a list of Point3f that are ready for creating a CustomLineMesh to represent the skeleton.
+
 = Save the project while running a task =
 
 While a task is running, the right-click menu shows only an entry to cancel the task. To save the project while the task is running, type the following into the [[Jython Interpreter]], and push return to execute it:
