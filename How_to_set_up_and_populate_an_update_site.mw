@@ -52,4 +52,8 @@ Check that your plugins are now registered as Fiji plugins by selecting 'View fi
 
 That's it - you're done. Now, anyone who wants a copy of your plugins merely needs to add your update site to the Update manger via the URL you specified, and your plugins will be added to and updated in their Fiji installations just like the standard Fiji plugins.
 
+==See Also==
+[[How to add a plugin distribution site]]
+
+
 [[Category:Tutorials]]
