@@ -66,4 +66,8 @@ If you disabled the startup check, you can reenable it via ''Edit>Options>Config
 
 [[Image:Snapshot of the Fiji Updater Configuration.png]]
 
+== Adding update sites ==
+
+If you want to update plugins from other update sites than the principal one, follow [[How to add a plugin distribution site|these instructions]].
+
 [[Category:Plugins]]
