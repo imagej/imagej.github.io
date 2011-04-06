@@ -1042,7 +1042,7 @@ Just like for an AreaList (see above), but extract the triangles with:
 triangles = areatree.generateMesh(1, resample).verts
 </source>
 
-The AreaTree's generateMesh returns a [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.MeshData.html MeshData] object with the list of vertices and the list of colors of each vertex. The <i>generateTriangles</i> method of an AreaTree returns a list of Point3f that are ready for creating a CustomLineMesh to represent the skeleton.
+The [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/AreaTree.html AreaTree]'s generateMesh returns a [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Tree.MeshData.html MeshData] object with the list of vertices and the list of colors of each vertex. The <i>generateTriangles</i> method of an [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/AreaTree.html AreaTree] returns a list of [http://download.java.net/media/java3d/javadoc/1.5.2-latest/javax/vecmath/Point3f.html Point3f] that are ready for creating a [http://pacific.mpi-cbg.de/javadoc/customnode/CustomLineMesh.html CustomLineMesh] (in PAIRWISE mode) to represent the skeleton.
 
 = Save the project while running a task =
 
