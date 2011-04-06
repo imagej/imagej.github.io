@@ -1038,7 +1038,7 @@ TextWindow(materialFileName, materialData.toString(), 400, 400)
 </source>
 
 
-=== Generate 3D mesh for an AreaTree ===
+=== Generate a 3D mesh for an AreaTree ===
 
 Just like for an AreaList (see above), but extract the triangles with:
 
