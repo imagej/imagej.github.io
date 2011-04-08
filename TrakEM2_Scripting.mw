@@ -2,6 +2,8 @@ Examples in [[Jython Scripting|Jython]].
 
 Open the "Plugins - Scripting - Jython Interpreter" (see [[Scripting Help]]) and make sure there is a TrakEM2 project open, with a display open. Then type or paste the examples below.
 
+Or open a new [[Script Editor]] window with "File - New - Script", then paste the example, select the "Language - Python", and push the "Run" button.
+
 = Introduction to scripting TrakEM2 =
 
 Some basics:
