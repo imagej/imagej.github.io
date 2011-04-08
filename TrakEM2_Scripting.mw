@@ -1208,5 +1208,6 @@ All the following are included in Fiji's plugins/Examples/TrakEM2_Example_Script
 *[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/T2_set_all_transforms_to_identity.py;hb=HEAD Set all transforms to identity] for TrakEM2 objects.
 *[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/T2_Select_All.py;hb=HEAD Select All] objects in TrakEM2.
 *[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/Measure_AreaLists.py;hb=HEAD Measure AreaList] in TrakEM2.
+* A [https://github.com/acardona/Fiji-TrakEM2-scripts/tree/master/TrakEM2 collection of scripts for TrakEM2], hosted by github. Mostly related to inspecting and analyzing [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Treeline.html Treeline], [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/AreaTree.html AreaTree] and [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Connector.html Connector] instances, when used for neural circuit reconstruction.
 
 [[Category:Scripting]]
