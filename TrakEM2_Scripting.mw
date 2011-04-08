@@ -1198,6 +1198,7 @@ else:
 == Jython scripting ==
 *[[Jython Scripting]] in fiji.
 *[http://www.jython.org Jython webpage].
+*[Fiji scripting tutorial http://www.ini.uzh.ch/~acardona/fiji-tutorial] in Jython.
 
 == Jython scripts for TrakEM2 ==
 
