@@ -23,5 +23,7 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
 
 * [http://www.cellimagelibrary.org/ The Cell Image Library] has many images related to cell biology; the images come with one of 4 licenses: Public Domain, Creative Commons Attribution, Creative Commons Attribution Non-Commercial Share-Alike, and Copyrighted (you need to ask the contributor whether you may use their image explicitly). This website allows you to contribute your own data sets, too!
 
+* [http://openconnectomeproject.org/ Open Connectome Project] hosts a 10 terabyte data set of the [http://www.nature.com/nature/journal/v471/n7337/full/nature09802.html mouse visual cortex] (Bock et al., 2011) with [http://fly.mpi-cbg.de/~saalfeld/catmaid/ CATMAID], and will offer means to run arbitrary programs on the data very soon.
+
 [[Category:Data]]
 [[Category:Segmentation]]
