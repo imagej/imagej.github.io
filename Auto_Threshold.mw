@@ -30,8 +30,16 @@ The '''Ignore black''' and '''Ignore white''' options set the image histogram bi
 
 It you are processing a stack, two additional options are available: '''Stack''' can be used to process all the slices (the threshold of each slice will be computed separately). If this option is left unchecked, only the current slice will be processed. '''Use stack histogram''' first computes the histogram of the whole stack, then computes the threshold based on that histogram and finally binarises all the slices with that single value. Selecting this option also selects the '''Stack''' option above automatically.
 
-'''Important note:''' This  plugin is accessed through the ''Image>Auto Threshold'' menu entry, however the thresholding methods were also partially implemented in ImageJ's thresholder applet accessible through the ''Image>Adjust>Threshold...'' menu entry.
+'''Important notes:''' 
+
+1. This  plugin is accessed through the ''Image>Auto Threshold'' menu entry, however the thresholding methods were also partially implemented in ImageJ's thresholder applet accessible through the ''Image>Adjust>Threshold...'' menu entry.
 While the Auto Threshold plugin can use or ignore the extremes of the image histogram (Ignore black, Ignore white) the applet cannot: the 'default' method ignores the histogram extremes but the others methods do not. This means that applying the two plugins to the same image can produce apparently different results. In essence, the Auto Threshold plugin, with the correct settings, can reproduce the results of the applet, but not the way round.
+
+2. From version 1.12 this plugin supports thresholding 16-bit images. Note that the ImageJ thresholder applet also processes 16-bit images, but in reality ImageJ bins the image into 256 bins. Since the Auto Threshold plugin propcesses the full greyscale space, it can be slow processing 16-bit images. Note that for speeding up, the histogram is bracketed to include the whole range of data (and avoid processing empty ranges of histogram bins at both extremes). 
+
+3. The same image in 8 and 16 bits (wihtout scaling) returns the same value of histogram, however Li's method originally would return different values if the image data was offset (as when adding a fixed value to all pixels). The current implementation avoids this offset dependent problem.
+
+4. The same image scaled by a fixed value (as when multiplying a constant to all pixels) returns a
 
 == Available methods ==
 
