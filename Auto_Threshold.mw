@@ -37,9 +37,9 @@ While the Auto Threshold plugin can use or ignore the extremes of the image hist
 
 2. From version 1.12 this plugin supports thresholding 16-bit images. Note that the ImageJ thresholder applet also processes 16-bit images, but in reality ImageJ bins the image into 256 bins. Since the Auto Threshold plugin processes the full greyscale space, it can be slow processing 16-bit images. Note that for speeding up, the histogram is bracketed to include the whole range of data (and avoid processing empty ranges of histogram bins at both extremes). 
 
-3. The same image in 8 and 16 bits (without scaling) returns the same value of histogram, however Li's method originally would return different values if the image data was offset (as when adding a fixed value to all pixels). The current implementation avoids this offset dependent problem.
+3. The same image in 8 and 16 bits (without scaling) returns the same value of histogram, however Li's method originally would return different values if the image data was offset (as when adding a fixed value to all pixels). The current implementation avoids this offset-dependent problem.
 
-4. The same image scaled by a fixed value (as when multiplying a constant to all pixels) returns a
+4. The same image scaled by a fixed value (as when multiplying a constant to all pixels) returns a similar value (within 2 greyscale levels of the original unscaled) for all methods except Huang, Li and Triangle.
 
 == Available methods ==
 
