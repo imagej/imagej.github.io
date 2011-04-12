@@ -83,6 +83,23 @@ for d in selection.get(Patch):
   print d.title
 </source>
 
+=== Find the file path of images that lay under a specific floating text label ===
+
+The idea is to add floating text labels over images (using the Text Tool), and then to search for all the images that are under the X,Y coordinate of each label. Then we print the 
+
+<source lang="python">
+regularExpression = ".*fold.*"
+
+for layer in Display.getFront().getLayerSet().getLayers():
+  for label in layer.getDisplayables(DLabel):
+    if label.getTitle().matches(regularExpression):
+      tx = label.getAffineTransform().getTranslationX()
+      ty = label.getAffineTransform().getTranslationY()
+      patches = layer.find(Patch, tx, ty)
+      for patch in patches:
+        print patch.getImageFilePath()
+</source>
+
 === Setting and getting member objects in jython ===
 
 In Jython as in Python, member objects have automatically <i>get</i> and <i>set</i> functions.
