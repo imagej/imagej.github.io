@@ -34,7 +34,7 @@ Close the dialog and the list of plugins available on the site will show up:
 
 [[Image:AddPluginSite-5.jpg|770px]]
 
-== Choose and upload plugins ==
+== Choose and download plugins ==
 
 You can select whether you want to install a particular plugin by changing the choice in the status/action column. In this case, there's only one plugin available (including a required jar file), so we're going to install all files. Click on 'Apply Changes' and the updates will be installed:
 
