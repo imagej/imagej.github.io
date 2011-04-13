@@ -9,6 +9,10 @@
 | status                 = beta
 }}
 
+The purpose of Fiji's Updater is to keep you up-to-date with all components of Fiji, i.e. ImageJ, the plugins and the core components (libraries) needed by the plugins.
+
+As of Fiji Madison, the Fiji Updater can handle [[#Adding update sites|3rd-party update sites]], i.e. anybody with write access to a web server can set up their own update site which users can decide to follow.
+
 == Automatic Update ==
 
 The Fiji Updater is a mechanism to update individual packages in Fiji.  It is automatically run when all the following conditions are met:
