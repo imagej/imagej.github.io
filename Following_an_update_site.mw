@@ -1,14 +1,14 @@
-If you want to set up a distribution site read [[How to setup a plugin distribution site|this page]] instead.
+If you want to set up an update site and upload plugins there, read [[How to setup a plugin distribution site|this page]] instead.
 
-=How to add a plugin distribution site to your Fiji installation=
+=How to add an update site to your Fiji installation=
 
-This tutorial will explain how to add a plugin distribution site to your install of Fiji such that the plugins maintained there will be installed and updated just like normal Fiji plugins.
+This tutorial will explain how to add an ''update site'' (also known as ''plugin distribution site'') to your install of Fiji such that the plugins maintained there will be installed and updated just like normal Fiji plugins.
 
 In this tutorial we'll be adding plugins from the distribution site at genomics.lbl.gov/~gavin/FijiPlugins.
 
-== Start the Fiji updater ==
+== Start the [[Fiji Updater]] ==
 
-First, start the updater:
+First, start the [[Fiji Updater|updater]]:
 
 [[Image:How_to_setup_a_plugin_distribution_site-1.jpg]]
 
