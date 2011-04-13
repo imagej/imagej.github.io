@@ -26,7 +26,15 @@ Click the 'Add' button and fill in your choice of name for the site, the public 
 
 [[Image:How_to_setup_a_plugin_distribution_site-6.jpg|770px]]
 
-Click 'OK' to add the update site. Click 'Yes' on the resulting popup dialog to have Fiji set up the update site automatically. You will then need to enter your login credentials for the site. Once the site is set up, the 'Manage update sites' dialog should look something like this:
+Click 'OK' to add the update site.
+
+If the update site has not been initialized yet (i.e. if nobody else has initialized that site yet), you will see a dialog like this:
+
+[[Image:How_to_setup_a_plugin_distribution_site-6a.jpg|center]]
+
+Click 'Yes'. You will then need to enter your login credentials for the site. This will upload an initial plugin database containing no records at all. Without this step, you will not be able to upload plugins.
+
+Once the site is set up, the 'Manage update sites' dialog should look something like this:
 
 [[IMage:How_to_setup_a_plugin_distribution_site-9.jpg|770px]]
 
