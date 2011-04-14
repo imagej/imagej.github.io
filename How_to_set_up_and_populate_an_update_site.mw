@@ -1,5 +1,3 @@
-= How to set up and populate an update site =
-
 This tutorial explains how to set up a website to distribute your plugins. It assumes that:
 * Your plugins are correctly installed in Fiji
 * You have SSH access to a website that serves static web pages.
