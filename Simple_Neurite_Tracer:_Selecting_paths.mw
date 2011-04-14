@@ -16,4 +16,10 @@ If you press the 'g' key with your mouse over a path in the 2D tracing view, tha
 
 (This was added in a recent version, so you may need to run "Update Fiji" in order for this to work.)
 
-If you select a path in the 3D viewer, it should now also be selected in the rest of the tracing interface.  You can do this via the "Select" menu or by clicking on the path in the 3D view.  Note that you will probably have the problem that clicks in the 3D view only select the volume - you can get around this by selecting the volume and then unticking "Edit > Hide/Show > Show content" to hide the volume rendering.  Then clicking on the paths should be easy.
+There are various ways to select a path in the 3D viewer, from easiest to most difficult:
+
+* If you press "g" when the mouse is over a path in the 3D Viewer, it will be selected.
+
+* If you select a path in the 3D viewer, it should now also be selected in the rest of the tracing interface.  One way of doing this is via the "Select" menu.
+
+* Alternatively, you can click on the path in the 3D view.  Note that you will probably have the problem that clicks in the 3D view only select the <i>volume</i> rather than the paths - you can get around this by selecting the volume and then unticking "Edit > Hide/Show > Show content" to hide the volume rendering.  Then clicking on the paths will be easy.
