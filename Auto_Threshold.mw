@@ -37,14 +37,14 @@ While the Auto Threshold plugin can use or ignore the extremes of the image hist
 
 '''2.''' From version 1.12 the plugin supports thresholding of 16-bit images. Note that the ImageJ thresholder applet also processes 16-bit images, but in reality ImageJ first computes a histogram with 256 bins. Since the Auto Threshold plugin processes the full greyscale space, it can be slow when dealing with 16-bit images. Note that for speeding up, the histogram is bracketed to include only the range of bins that contain data (and avoid processing empty histogram bins at both extremes). 
 
-'''3.''' The result of 16 bit images and stacks (if processed for all the slices) is an 8 bit image showing the result in white [255] to comply with the concept of "binary image": 8 bits with 0/255 values.
-However for stacks where only 1 slice is thresholded, the result remains a 16 bit image with the thresholded phase shown as white [65535]. This is to keep the data in the other slices.
-The "Try all" option retains the 16 bit format to show methods that maight fail.
+'''3.''' The result of 16 bit images and stacks (when processing all slices) is an 8 bit container showing the result in white [255] to comply with the concept of "binary image": 8 bits with 0/255 values.
+However for stacks where only 1 slice is thresholded, the result is still a 16 bit container with the thresholded phase shown as white [65535]. This is to keep the data untouched in the remaining slices.
+The "Try all" option retains the 16 bit format to show methods that might fail to obtain a threshold.
 Images and stacks that are not possible to threshold remain unchanged.
 
-'''4.''' The same image in 8 and 16 bits (without scaling) returns the same threshold value, however Li's method originally would return different values if the image data was offset (as when adding a fixed value to all pixels). The current implementation avoids this offset-dependent problem.
+'''4.''' The same image in 8 and 16 bits (without scaling) returns the same threshold value, however Li's method originally would return different values when the image data was offset (as when adding a fixed value to all pixels). The current implementation avoids this offset-dependent problem.
 
-'''5.''' The same image scaled by a fixed value (as when multiplying all pixels by a fixed value) returns a similar threshold result (within 2 greyscale levels of the original unscaled image) for all methods except Huang, Li and Triangle.
+'''5.''' The same image scaled by a fixed value (as when multiplying all pixels by a fixed value) returns a similar threshold result (within 2 greyscale levels of the original unscaled image) for all methods except Huang, Li and Triangle due to the way these algorithms work.
 
 == Available methods ==
 
