@@ -12,8 +12,6 @@ If you press the 'g' key with your mouse over a path in the 2D tracing view, tha
 
 === In the 3D tracing view ===
 
-(This was added in a recent version, so you may need to run "Update Fiji" in order for this to work.)
-
 There are various ways to select a path in the 3D viewer, from easiest to most difficult:
 
 * If you press "g" when the mouse is over a path in the 3D Viewer, it will be selected.
