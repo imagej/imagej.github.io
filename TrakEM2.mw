@@ -18,7 +18,7 @@ See [http://www.ini.uzh.ch/~acardona/snapshots.html TrakEM2 snapshots] for an ov
 
 == Features ==
 
-* '''Segmentation:''' manually draw areas across stacks, and sketch structures with balls and pipes.
+* '''Segmentation:''' manually draw areas across stacks, and sketch structures with balls and pipes. Skeletonize entire neuronal arborizations and represent synapses with relational connector objects.
 * '''Measurements:''' volumes, surfaces, lengths, and also measurements via ImageJ ROIs.
 * '''Image Registration:''' register floating image tiles to each other using [[Feature_Extraction|SIFT]] and global optimization algorithms.
 * '''3D Visualization:''' interacting with the [[3D Viewer]] plugin, TrakEM2 displays image volumes and 3D meshes of all kinds.
