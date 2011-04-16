@@ -41,8 +41,8 @@ Note that for speeding up, the histogram is bracketed to include only the range 
 
 '''3.''' The result of 16 bit images and stacks (when processing all slices) is an 8 bit container showing the result in white [255] to comply with the concept of "binary image" (i.e. 8 bits with 0 and 255 values).
 However, for stacks where only 1 slice is thresholded, the result is still a 16 bit container with the thresholded phase shown as white [65535]. This is to keep the data untouched in the remaining slices.
-The "Try all" option retains the 16 bit format to show methods that might fail to obtain a threshold.
-Images and stacks that impossible to threshold remain unchanged.
+The "Try all" option retains the 16 bit format to still show the images with methods that might fail to obtain a threshold.
+Images and stacks that are impossible to threshold remain unchanged.
 
 '''4.''' The same image in 8 and 16 bits (without scaling) returns the same threshold value, however Li's method originally would return different values when the image data was ''offset'' (e.g. when adding a fixed value to all pixels). The current implementation avoids this offset-dependent problem.
 
