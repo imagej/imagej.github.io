@@ -45,3 +45,7 @@ For plugins, please follow the instructions about [[Installing 3rd party plugins
 There is [http://openjdk.java.net/projects/macosx-port/ an Apple-backed effort] to get a proper MacOSX backend into the BSD port of OpenJDK. So far, only Snow Leopard and later are supported, and preliminary builds can be found [http://code.google.com/p/openjdk-osx-build/ here].
 
 If you are experiencing problems, say, with AWT-AppKit related crashes, and if you do not mind working with an X11-based graphical user display, you might want to try OpenJDK.
+
+As of mid-April 2011, OpenJDK for MacOSX has basic working support for Aqua, which you have to activate explicitly by passing the Java option ''-Dswing.defaultlaf=com.apple.laf.AquaLookAndFeel''.
+
+Since the development of OpenJDK for MacOSX is driven exclusively by Apple employees, the minimal MacOSX version required to run OpenJDK/Aqua is 10.6. If you require Fiji to run on earlier versions of MacOSX, you will have to go back to [http://landonf.bikemonkey.org/static/soylatte/ SoyLatte], where you will also find an X11-only OpenJDK version that runs on MacOSX 10.5/PowerPC (MacOSX 10.6+ does not support PowerPC). In the alternative, you can put in a considerable effort to "backport" OpenJDK :-).
