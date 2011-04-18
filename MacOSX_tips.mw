@@ -71,3 +71,7 @@ Now you can pass, say, [[Java Options]]:
 <source lang="bash">Contents/MacOS/fiji-macosx -verbose:gc --</source>
 
 '''Note''': to distinguish between options intended for Java and options intended for ImageJ, you need to separate the former from the latter with a double-dash: '''--'''. Since the default is to accept ImageJ options, you have to pass a trailing double-dash if you want to pass only Java options.
+
+== MacOSX keyboard shortcuts ==
+
+It is often helpful to use keyboard shortcuts when using Fiji. There are also operating system specific shortcuts which can be quite helpful. For example, pressing Command+Tab and releasing first only the Tab key will allow you to cycle through the running applications, while Command+backtick will do the same for the windows opened by the current application. [http://davespicks.com/ Dave Polaschek] has [http://davespicks.com/writing/programming/mackeys.html a comprehensive list].
