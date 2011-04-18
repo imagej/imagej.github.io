@@ -12,6 +12,8 @@ Use [http://java.sun.com/developer/technicalArticles/Programming/HPROF.html HPRO
 
 Use [http://download.oracle.com/docs/cd/E17409_01/javase/6/docs/technotes/guides/visualvm/index.html VisualVM] (a tutorial can be found [http://java.dzone.com/articles/profile-your-applications-java here]), which is a graphical alternative to HPROF, available in Sun's Java since version 6 update 7.
 
+See also [http://rejeev.blogspot.com/2009/04/analyzing-memory-leak-in-java.html Rejeev Divakaran's detailed instructions on memory profiling with VisualVM].
+
 == OProfile ==
 
 If you are on Linux, you can use [http://oprofile.sourceforge.net/news/ OProfile], a low-overhead profiler which uses a kernel module to minimize its impact.
