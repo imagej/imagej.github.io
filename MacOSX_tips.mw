@@ -49,3 +49,25 @@ If you are experiencing problems, say, with AWT-AppKit related crashes, and if y
 As of mid-April 2011, OpenJDK for MacOSX has basic working support for Aqua, which you have to activate explicitly by passing the Java option ''-Dswing.defaultlaf=com.apple.laf.AquaLookAndFeel''.
 
 Since the development of OpenJDK for MacOSX is driven exclusively by Apple employees, the minimal MacOSX version required to run OpenJDK/Aqua is 10.6. If you require Fiji to run on earlier versions of MacOSX, you will have to go back to [http://landonf.bikemonkey.org/static/soylatte/ SoyLatte], where you will also find an X11-only OpenJDK version that runs on MacOSX 10.5/PowerPC (MacOSX 10.6+ does not support PowerPC). In the alternative, you can put in a considerable effort to "backport" OpenJDK :-).
+
+== Running Fiji in the command line ==
+
+Often it is necessary to run Fiji in the command line, e.g. to pass some command-line options. To do so, start a Terminal (in the Finder, ''Go>Utilities''), and switch to the correct directory using the ''cd'' command. Note that the application itself is actually a directory called ''Fiji.app''. For example, if you installed Fiji into ''/Applications'' as recommended, do this:
+
+<source lang="bash">cd /Applications/Fiji.app</source>
+
+If you unpacked Fiji onto your desktop, do this:
+
+<source lang="bash">cd $HOME/Desktop/Fiji.app</source>
+
+Once you switched to the correct directory, start the Fiji launcher:
+
+<source lang="bash">Contents/MacOS/fiji-macosx</source>
+
+'''Note for Windows users''': A backslash is not the same as a slash. So: ''Contents\MacOS\fiji-macosx'' will '''not''' work.
+
+Now you can pass, say, [[Java Options]]:
+
+<source lang="bash">Contents/MacOS/fiji-macosx -verbose:gc --</source>
+
+'''Note''': to distinguish between options intended for Java and options intended for ImageJ, you need to separate the former from the latter with a double-dash: '''--'''. Since the default is to accept ImageJ options, you have to pass a trailing double-dash if you want to pass only Java options.
