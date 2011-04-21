@@ -1,8 +1,16 @@
 At the Madison hackathon, quite a lot has been done about design issues of the originally published ImgLib (which was already the 6th generation). Unfortunately, these improvements were not possible in a fully backwards-compatible manner.
 
-== Image -> Img ==
+== Where is the Image? ==
 
-In addition to a change from a class to an interface, the name has changed to ''Img'' (which is in line with the library name).
+In ''ImgLib'', the ''Image'' class was a wrapper for a limited subset of possible meta-data and a ''Container'' that provided access to the actual pixels.  The overwhelming majority of methods in both ''Image'' and ''Container'' were almost identical.  Furthermore, implementing algorithms for ''Image'' limited their portability to situations where different meta-data or less meta-data was required or different strategies for pixel access were appropriate.
+
+In ImgLib2, the Image class has been abandoned.  Instead, there is a set of interfaces that describe how data elements (pixels) can be accessed.  The most important interfaces are
+* ''RandomAccessible'', ''RealRandomAccessible''
+* ''IterableInterval'', ''IterableRealInterval''
+
+Actual images that store pixels in a regular equidistant grid implement the ''Img'' interface that combines a reasonable subset of the above interfaces.  The basic storage strategies like ''ArrayImg'', ''CellImg'', ''PlanarImg'', ''ImagePlusImg'' or ''ListImg'' implement this interface and can be used directly without being wrapped into something else.
+
+Opposed to the intuitive shortcut that you would just replace ''Image'' by ''Img'' then, we suggest to consider implementing algorithms for the type of pixel access that you actually need.  Iterating and localizing all pixels is possible with ''IterableRealInterval'' or ''IterableInterval'', random access comes from ''RandomAccessible'' and ''RealRandomAccessible''.  That is, in algorithm implementations, the ''Img'' interface is almost always a too strict constraint for the possible input, but mostly a good idea for writing the result.
 
 == RandomAccess does not take an OutOfBoundsStrategy any longer ==
 
