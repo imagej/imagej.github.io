@@ -1,0 +1,13 @@
+At the Madison hackathon, quite a lot has been done about design issues of the originally published ImgLib (which was already the 6th generation). Unfortunately, these improvements were not possible in a fully backwards-compatible manner.
+
+== Image -> Img ==
+
+In addition to a change from a class to an interface, the name has changed to ''Img'' (which is in line with the library name).
+
+== RandomAccess does not take an OutOfBoundsStrategy any longer ==
+
+TBDBSHK
+
+== The Whole Rest ==
+
+TO BE DONE by someone who knows.
