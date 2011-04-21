@@ -1,5 +1,13 @@
 At the Madison hackathon, quite a lot has been done about design issues of the originally published ImgLib (which was already the 6th generation). Unfortunately, these improvements were not possible in a fully backwards-compatible manner.
 
+=== Quickstart ===
+
+* Image is now Img (and it is an interface, no longer a class)
+: '''Note''': it is often better to replace the usage of Image by a more specific interface than Img; see below
+* ImgCursor is now Cursor
+* The ImageOpener is now ImgOpener
+* The ImgOpener returns an ImgPlus, not an Img
+
 == Where is the Image? ==
 
 In ''ImgLib'', the ''Image'' class was a wrapper for a limited subset of possible meta-data and a ''Container'' that provided access to the actual pixels.  The overwhelming majority of methods in both ''Image'' and ''Container'' were almost identical.  Furthermore, implementing algorithms for ''Image'' limited their portability to situations where different meta-data or less meta-data was required or different strategies for pixel access were appropriate.
@@ -13,15 +21,19 @@ Actual images that store pixels in a regular equidistant grid implement the ''Im
 Opposed to the intuitive shortcut that you would just replace ''Image'' by ''Img'' then, we suggest to consider implementing algorithms for the type of pixel access that you actually need.  Iterating and localizing all pixels is possible with ''IterableRealInterval'' or ''IterableInterval'', random access comes from ''RandomAccessible'' and ''RealRandomAccessible''.  That is, in algorithm implementations, the ''Img'' interface is almost always a too strict constraint for the possible input, but mostly a good idea for writing the result.
 
 [[Image:Imglib2-access.png|thumb|right|361px|'''Fig. 1'''  ImgLib2 interfaces for access to sample data and to real and integer coordinates in ''n''-dimensional Euclidean space.]]
+
 ==Where is the LocalizableCursor?==
 
 Iteration in ImgLib2 (as in ImgLib) implies constant and thus repeatable order.  Therefore a ''Cursor'' can always localize itself, either by going the hard way and reasoning the position from it's iteration index or by tracking the position per move.  There is no extra interface required to distinguish this behavior but you can choose which ''Cursor'' to acquire by ''Iterable(Real)Interval.cursor()'' and ''Iterable(Real)Interval.localizingCursor()''.  Fig.1 shows a UML-diagram visualizing the interface inheritance graph.
-
 
 ==Where is the LocalizableByDimCursor?==
 
 The ''LocalizableByDimCursor'' was a combination of an iterator and random access.  Combining these two concepts is a bad idea and so we split them.  Random access is provided by classes implementing the interfaces ''RandomAccess'' or ''RealRandomAccess''.  You get them by ''RandomAccessible.randomAccess()'' or ''RealRandomAccessible.realRandomAccess()'' respectively.  Fig.1 shows a UML-diagram visualizing the interface inheritance graph.
 
-== The Whole Rest ==
+==What happened to the RandomAccess with OutOfBoundsStrategy?==
+
+TO BE DONE by someone who knows.
+
+==Where did the NeighborhoodCursor go?==
 
 TO BE DONE by someone who knows.
