@@ -37,9 +37,9 @@ RandomAccess< IntType > randomAccess = extendedInterval.randomAccess();
 </source>
 That way, out of boundary location handling is available for all Intervals that are compatible with the passed ''OutOfBoundsFactory'' (the existing work for all ''RandomAccessible'' & ''Interval'').
 
-==Where did the NeighborhoodCursor go?==
+==Where did the NeighborhoodCursor and RegionOfInterestCursor go?==
 
-TO BE DONE by someone who knows.
+The have been removed and will be replaced by a slightly different concept that was not possible in ImgLib due to lack of appropriate interfaces.  Both ''Neighborhood'' and ''HyperBox'' will implement ''IterableInterval'' and/or ''RandomAccessible''.  The will be provided by an ''IterableInterval< Neighborhood >'' or ''RandomAccessible< HyperBox >'' respectively (extrapolate the missing combinations and real variants yourself).
 
 ==Changes within ImgLib2==
 
