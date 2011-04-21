@@ -25,9 +25,17 @@ Iteration in ImgLib2 (as in ImgLib) implies constant and thus repeatable order. 
 
 The ''LocalizableByDimCursor'' was a combination of an iterator and random access.  Combining these two concepts is a bad idea and so we split them.  Random access is provided by classes implementing the interfaces ''RandomAccess'' or ''RealRandomAccess''.  You get them by ''RandomAccessible.randomAccess()'' or ''RealRandomAccessible.realRandomAccess()'' respectively.  Fig. 2 shows a UML-diagram visualizing the interface inheritance graph.
 
-==What happened to the RandomAccess with OutOfBoundsStrategy?==
+==How does ImgLib2 handle OutOfBounds?==
 
-TO BE DONE by someone who knows.
+Handling out of bounds behavior is invariant to data storage.  We have therefore moved it into the final implementations ''ExtendedRandomAccessibleInterval'' and ''ExtendedRealRandomAccessibleRealInterval''.  The usage is trivial as follows:
+<source lang="java">
+ExtendedRandomAccessibleInterval< IntType, Img< IntType> > extendedInterval =
+    new ExtendedRandomAccessibleInterval< IntType, Img< IntType > >(
+        myIntImg,
+        new OutOfBoundsMirrorFactory< IntType, Img< IntType > >( Boundary.DOUBLE ) );
+RandomAccess< IntType > randomAccess = extendedInterval.randomAccess();
+</source>
+That way, out of boundary location handling is available for all Intervals that are compatible with the passed ''OutOfBoundsFactory'' (the existing work for all ''RandomAccessible'' & ''Interval'').
 
 ==Where did the NeighborhoodCursor go?==
 
