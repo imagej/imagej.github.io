@@ -41,8 +41,8 @@ Containers are now built in to the Img. For instance, PlanarImg (an implementati
 == Update cursor logic ==
 
 There were previously three types: Cursor, LocalizableCursor and LocalizableByDimCursor. This is still true, but the terminology has changed: a cursor can now be "localizable"—meaning you can tell where it is in the dimensional structure—and/or "positionable"—meaning you can move the cursor to somewhere else. Essentially, the three kinds of cursors are now:
-# img.cursor() – returns a Cursor without "read" or "write" access to the dimensional position. Use when you don't care where you are in the structure, and want the most efficient path.
-# img.localizingCursor() – returns a Cursor with "read-only" access to the dimensional position. Use when you need to know where the cursor currently sits, but don't need to change the position other than normal iteration.
+# img.cursor() – returns a Cursor with "read-only" access to the dimensional position which is calculated on demand which might be an expensive calculation. Use when you don't care where you are in the structure (or only sparsely need this information), and want the most efficient path.
+# img.localizingCursor() – returns a Cursor with "read-only" access to the dimensional position.  Such Cursors track their position at each fwd() call and thus can calculate it more efficiently than the above.  Use when you always or often need to know where the cursor currently sits, but don't need to change the position other than normal iteration.
 # img.randomAccess() – returns a RandomAccess with "read-write" access to the dimensional position. Use when you need to change the position.
 
 Another way of looking at it is that Cursors are similar to InputStreams and must go forward, whereas RandomAccesses are similar to RandomAccessFiles and can seek back and forth at will.
