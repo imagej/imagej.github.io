@@ -47,7 +47,7 @@ There were previously three types: Cursor, LocalizableCursor and LocalizableByDi
 
 Another way of looking at it is that Cursors are similar to InputStreams and must go forward, whereas RandomAccesses are similar to RandomAccessFiles and can seek back and forth at will.
 
-== Rename RGBLegacyType to ARGB ==
+== Rename RGBLegacyType to ARGBType ==
 
 If you were using RGBALegacyType, note that it has changed to ARGBType, but serves the same purpose.
 
