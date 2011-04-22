@@ -1,6 +1,6 @@
 At the Madison hackathon, quite a lot has been done about design issues of the originally published ImgLib (which was already the 6th generation). Unfortunately, these improvements were not possible in a fully backwards-compatible manner.
 
-=== Quickstart ===
+=== Summary ===
 
 * Image and Container are abandoned.  In case that write access is required, use Img instead, otherwise an apropriate access interface as described below.
 * The ImageOpener is renamed to now ImgOpener accordingly.
