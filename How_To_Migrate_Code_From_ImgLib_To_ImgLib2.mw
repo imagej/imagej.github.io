@@ -36,7 +36,7 @@ For dimensions(long[]), note that it only populates an existing array. There is 
 
 == Remove references to Container and ContainerFactory ==
 
-Containers are now built in to the Img. For instance, PlanarImg (an implementation of Img) essentially replaces PlanarContainer. Essentially, ContainerFactory and ImageFactory have been combined into ImgFactory. If you have code that creates a Container or ContainerFactory, it is no longer necessary—just create the correct kind of Img or ImgFactory instead (e.g., PlanarImgFactory).
+Containers are now built in to the Img. For instance, PlanarImg (an implementation of Img) replaces PlanarContainer. Essentially, ContainerFactory and ImageFactory have been combined into ImgFactory. If you have code that creates a Container or ContainerFactory, it is no longer necessary—just create the correct kind of Img or ImgFactory instead (e.g., PlanarImgFactory).
 
 == Update cursor logic ==
 
