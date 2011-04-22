@@ -12,10 +12,12 @@ Some core packages have also changed further:
 
 == Rename classes ==
 
-The Image class has been replaced with Img. Many classes with "Image" in the name have thus been changed to "Img" instead:
+In general, the Image class has been replaced with Img. Many classes with "Image" in the name have thus been changed to "Img" instead:
 * Image -> Img
 * ImageFactory -> ImgFactory
 * ImageOpener -> ImgOpener
+
+Please note that there are cases where using Img is not appropriate, and a better alternative exists; see the [[Changes from ImgLib1 to ImgLib2]] page for a more complete explanation.
 
 == Use long for dimensional lengths ==
 
