@@ -2,7 +2,8 @@ ImgLib2 is a major redesign of ImgLib, and [[Changes from ImgLib1 to ImgLib2|muc
 
 == Rename packages ==
 
-All packages have changed from prefix "mpicbg.imglib" to "net.imglib2" to avoid a name clash, and to conform to convention ([http://imglib2.net/ imglib2.net] now points to us).
+All packages have changed prefix to avoid a name clash, and to conform to convention ([http://imglib2.net/ imglib2.net] now points to us):
+* mpicbg.imglib -> net.imglib2
 
 Hence, it is easiest to perform a global search and replace for all instances of the old string with the new. This holds for all renames listed below.
 
