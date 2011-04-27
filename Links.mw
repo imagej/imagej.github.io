@@ -16,6 +16,12 @@ Links to the contributors' personal pages can be found [[Contributors|here]].
 * The Biomedical Imaging Group in Lausanne has [http://bigwww.epfl.ch/algorithms.html many interesting plugins].
 * Christian Henden has some interesting plugins (mainly in the Public Domain), including 3D threshold methods: http://www.pvv.org/~perchrh/imagej/
 
+== Image Processing and Ethics ==
+
+It becomes more and more important to have clear-cut guidelines what types of image processing are appropriate and what processing is questionable at best.
+
+[http://www.uab.edu/researchintegrityandimages/guidelines/list.html Here] is a comprehensive list of 12 rules you need to follow if you want to perform science rather than art.
+
 == Input/Output ==
 
 === Movie support ===
