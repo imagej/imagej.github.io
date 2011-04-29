@@ -1,12 +1,17 @@
-= Colocalization Analysis - using Coloc_2 =
+== Colocalization Analysis - using Coloc_2 ==
 
 The first part of this tutorial is the basic user documentation of the Coloc_2 plugin
-which is found in the Analyze - Colocalization Analysis menu. 
+which is found in the Analyze - Colocalization Analysis menu.
 
+Coloc_2 implements and performs, the pixel intensity correlation over space methods of [http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient Pearson], [[Image:Manders.pdf]], [[Image:Costes etalColoc.pdf]], Li and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
 
-=== What is Coloc_2 ===
+=== What is Coloc_2, and why? ===
 
-Coloc_2 is an imageJ / Fiji plugin that uses the new imglib image data container library for image processing, and implements the pixel intensity correlation over space methods of [http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient Pearson], [[Image:Manders.pdf]], [[Image:Costes etalColoc.pdf]], Li etc. in a pixel type independent and modular way.  This plugin supersedes the Colocalization Threshold and Colocalization Test plugins, which, unfortunately, were buggy, hard to maintain. These are now depreciated and not actively supported.
+Coloc_2 is an imageJ / Fiji plugin that uses the new imglib image data container library for image processing, and implements the above methods in a pixel data type (8, 16, 32-bit) independent and modular way. 
+
+One main feature of Coloc_2 is the standardised PDF output, which is intended to make the results of different colocalization experiments comparable. Please tell us what you think should be in this standard output, so it is suitable to put directly into the supplemental info of a research publication. 
+
+This plugin supersedes the Colocalization Threshold and Colocalization Test plugins, which, unfortunately, were buggy and hard to maintain. These older plugins are now depreciated and not actively supported.
 
 
 === How to use Coloc_2 ===
@@ -90,13 +95,13 @@ We need to think carefully about the correct or adequate spatial resolution in x
 
 There is another (badly behaved) sample data file here which we will use later: [http://pacific.mpi-cbg.de/samples/150707_WTstack.lsm 150707_WTstack.lsm].
 
-== Colocalisation Analysis - Using the methods of Manders and Costes, for spatial intensity correlation analysis, automatic thresholding and statistical significance testing. ==
+== Nots and details on performing colocalization analysis, including using the old plugins ==
 
 
 
 <ol>
 <li>
-'''[[Colocalization Threshold]] plugin:''' 
+'''[[Colocalization Threshold]] plugin:''' Note: this plugin is no longer under active development and support. Use Coloc_2 instead.
 
 <p>
 This plugin performs several functions for you in one go. With the "green" and "red" stacks of the [http://pacific.mpi-cbg.de/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif] dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [[#Why_scatter_plots.3F|Why scatter plots?]]), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do. 
@@ -197,7 +202,7 @@ Next is the topic: '''Regions of Interest (ROIs)''', and whether or not to consi
 
 ----
 
-<li>'''[[Colocalization Test]] plugin:''' 
+<li>'''[[Colocalization Test]] plugin:''' Not: This plugin is no longer actuvely developed or supported. Use Coloc_2 instead.
 </p>
     
 
