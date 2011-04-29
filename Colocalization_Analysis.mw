@@ -3,6 +3,11 @@
 The first part of this tutorial is the basic user documentation of the Coloc_2 plugin
 which is found in the Analyze - Colocalization Analysis menu. 
 
+=== What is Coloc_2 ===
+Coloc_2 is an imageJ / Fiji plugin that uses the new imglib image data container library for image processing, and implements the pixel intensity correlation over space methods of Pearson, Manders, Costes, Li etc. in a pixel type independent and modular way.  This plugin supersedes the Colocalization Threshold and Colocalization Test plugins, which were buggy, hard to maintain, and are now depreciated and not actively supported.
+
+=== How to use Coloc_2 ===
+
 * Open images to analyse. 
 ** you need a 2 colour channel image. If the image has moire then 2 channels, identify the two you want to analyse with each other, then split the channes into separate images (Image- Color - Split Channels)
 * If you want to analyse only some region of interest (ROI), there are 2 ways to do that:
@@ -24,9 +29,7 @@ which is found in the Analyze - Colocalization Analysis menu.
 **** If you dont, go back and read about what it is and why its important in colocalisation analysis (for instance read the [http://pacific.mpi-cbg.de/wiki/index.php/File:Costes_etalColoc.pdf Costes paper] )
 **** This size determines what size of image chunks are shuffled in the randomisation process. PSF sized image pieces make physical sense, as thats the size of the smallest objects in the image. 
 * Click OK to run the analysis. 
-** You will be asked if you want to save the results as a PDF file (if the Show "save PDF" dialog button was checked. So tell it where to save the PDF. This is standard output format, so you can compare with your friend,  same vs. same (neat eh!?) 
-
-
+** You will be asked if you want to save the results as a PDF file (if the Show "save PDF" dialog button was checked. So tell it where to save the PDF. This is standard output format, so you can compare with your friend,  same vs. same (neat eh!?)
 
 == Colocalisation Analysis - What is Colocalisation anyway? ==
 
