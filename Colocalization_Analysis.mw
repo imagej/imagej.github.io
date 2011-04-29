@@ -1,3 +1,18 @@
+{{Infobox Plugin
+| name                   = Coloc_2 - Standardized, modular, Colocalization analysis. 
+| software               = ImageJ - Fiji - imglib
+| author                 = Daniel J White, Tom Kazimiers, Johannes Schindelin
+| maintainer             = [mailto:white_at_mpi-cbg_dot_de Daniel White]
+| filename               = Colocalization.jar
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Colocalisation_Analysis/ColocImgLibGadgets.java;h=ce8c656ec6b484cdacd3001a5fc45754410a68aa;hb=HEAD on gitweb].
+| latest version         = Spring 2011
+| website                = Fiji
+| status                 = beta. Under development, but stable enough for real work. 
+}}
+
+
+
+
 == Colocalization Analysis - using Coloc_2 ==
 
 The first part of this tutorial is the basic user documentation of the Coloc_2 plugin
