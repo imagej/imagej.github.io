@@ -2,6 +2,7 @@
 
 * [[3D Viewer]] - file <tt>ImageJ_3D_Viewer</tt>  -- ''java jar file''
 * [[Volume Viewer]] - file <tt>Volume_Viewer</tt>  -- ''java jar file''
+* [[Optic Flow]] - file <tt>Optic_Flow</tt>  -- ''java jar file''
 
 
 === Plugins > Analyze ===
@@ -77,6 +78,12 @@
 ===== Plugins > Scripts > Image > Adjust =====
 
 * [[Scale to DPI]] - file <tt>Scale_to_DPI.js</tt>  -- ''javascript file''
+
+==== Plugins > Scripts > Plugins ====
+
+===== Plugins > Scripts > Plugins > Registration =====
+
+* [[Correct 3D drift]] - file <tt>Correct_3D_drift.py</tt>  -- ''jython script''
 
 
 === Plugins > Utilities ===
@@ -160,6 +167,26 @@
 * [[Fast FFT (2D/3D)]] - file <tt>registration3d.Fast_FourierTransform</tt>  -- ''java jar file''
 
 
+=== Plugins > ActionBar ===
+
+* [[Action Bar]] - file <tt>Action_Bar</tt>  -- ''java jar file''
+* [[ AnimationBar]] - file <tt>Action_Bar("ActionBar/_AnimationBar.txt")</tt>  -- ''java jar file''
+* [[ Demo]] - file <tt>Action_Bar("ActionBar/_Demo.txt")</tt>  -- ''java jar file''
+* [[ Magic Montage2]] - file <tt>Action_Bar("ActionBar/_Magic_Montage2.txt")</tt>  -- ''java jar file''
+* [[ StickyBarDemo1]] - file <tt>Action_Bar("ActionBar/_StickyBarDemo1.txt")</tt>  -- ''java jar file''
+* [[ StickyBarDemo2]] - file <tt>Action_Bar("ActionBar/_StickyBarDemo2.txt")</tt>  -- ''java jar file''
+* [[ ZoomBar]] - file <tt>Action_Bar("ActionBar/_ZoomBar.txt")</tt>  -- ''java jar file''
+* [[ lookuptables]] - file <tt>Action_Bar("ActionBar/_lookuptables.txt")</tt>  -- ''java jar file''
+* [[codeBar ]] - file <tt>Action_Bar("ActionBar/codeBar_.txt")</tt>  -- ''java jar file''
+* [[color and merge]] - file <tt>Action_Bar("ActionBar/color_and_merge.txt")</tt>  -- ''java jar file''
+* [[color mixer]] - file <tt>Action_Bar("ActionBar/color_mixer.txt")</tt>  -- ''java jar file''
+* [[createAB]] - file <tt>Action_Bar("ActionBar/createAB.txt")</tt>  -- ''java jar file''
+* [[demo counter]] - file <tt>Action_Bar("ActionBar/demo_counter.txt")</tt>  -- ''java jar file''
+* [[design action_bar]] - file <tt>Action_Bar("ActionBar/design_action_bar.txt")</tt>  -- ''java jar file''
+* [[ez counters]] - file <tt>Action_Bar("ActionBar/ez_counters.txt")</tt>  -- ''java jar file''
+* [[rotation bar]] - file <tt>Action_Bar("ActionBar/rotation_bar.txt")</tt>  -- ''java jar file''
+
+
 === Plugins > Skeleton ===
 
 * [[Analyze Skeleton (2D/3D)]] - file <tt>skeleton_analysis.AnalyzeSkeleton_</tt>  -- ''java jar file''
@@ -226,20 +253,6 @@
 * [[Transfer Channel Settings]] - file <tt>Transfer_Channel_Settings("")</tt>  -- ''java jar file''
 
 
-=== Plugins > Registration ===
-
-* [[Correct 3D drift]] - file <tt>fiji.scripting.jython.Jython_Script_Runner("/scripts/Correct_3D_drift.py")</tt>  -- ''java jar file''
-* [[StackReg]] - file <tt>StackReg_</tt>  -- ''java jar file''
-* [[TurboReg ]] - file <tt>TurboReg_</tt>  -- ''java jar file''
-* [[UnwarpJ]] - file <tt>UnwarpJ_</tt>  -- ''java jar file''
-* [[Align Image by line ROI]] - file <tt>Align_Image</tt>  -- ''java jar file''
-* [[Rigid Registration]] - file <tt>vib.RigidRegistration_</tt>  -- ''java jar file''
-* [[Moving Least Squares]] - file <tt>Moving_Least_Squares</tt>  -- ''java jar file''
-* [[bUnwarpJ]] - file <tt>bunwarpj.bUnwarpJ_</tt>  -- ''java jar file''
-* [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt>  -- ''java jar file''
-* [[Register Virtual Stack Slices]] - file <tt>register_virtual_stack.Register_Virtual_Stack_MT</tt>  -- ''java jar file''
-
-
 === Plugins > Tracking ===
 
 * [[MTrack2 ]] - file <tt>MTrack2_</tt>  -- ''java jar file''
@@ -294,6 +307,21 @@
 * [[TransformJ Turn]] - file <tt>TJ_Turn</tt>  -- ''java jar file''
 
 
+=== Plugins > Registration ===
+
+* [[StackReg]] - file <tt>StackReg_</tt>  -- ''java jar file''
+* [[TurboReg ]] - file <tt>TurboReg_</tt>  -- ''java jar file''
+* [[UnwarpJ]] - file <tt>UnwarpJ_</tt>  -- ''java jar file''
+* [[Align Image by line ROI]] - file <tt>Align_Image</tt>  -- ''java jar file''
+* [[Rigid Registration]] - file <tt>vib.RigidRegistration_</tt>  -- ''java jar file''
+* [[Moving Least Squares]] - file <tt>Moving_Least_Squares</tt>  -- ''java jar file''
+* [[bUnwarpJ]] - file <tt>bunwarpj.bUnwarpJ_</tt>  -- ''java jar file''
+* [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt>  -- ''java jar file''
+* [[Elastic Stack Alignment]] - file <tt>mpicbg.ij.plugin.ElasticAlign</tt>  -- ''java jar file''
+* [[Elastic Montaging]] - file <tt>mpicbg.ij.plugin.ElasticMontage</tt>  -- ''java jar file''
+* [[Register Virtual Stack Slices]] - file <tt>register_virtual_stack.Register_Virtual_Stack_MT</tt>  -- ''java jar file''
+
+
 === Plugins > Stacks ===
 
 * [[Crop (3D)]] - file <tt>stacks.Three_Pane_Crop</tt>  -- ''java jar file''
@@ -338,6 +366,7 @@
 
 * [[Colocalization Threshold]] - file <tt>Colocalisation_Threshold</tt>  -- ''java jar file''
 * [[Colocalization Test]] - file <tt>Colocalisation_Test</tt>  -- ''java jar file''
+* [[Coloc 2]] - file <tt>Coloc_2</tt>  -- ''java jar file''
 
 
 === Analyze > Optic Flow ===
@@ -358,6 +387,14 @@
 * [[Distance Map to Distance Ridge]] - file <tt>Distance_Ridge("run")</tt>  -- ''java jar file''
 * [[Distance Ridge to Local Thickness]] - file <tt>Local_Thickness_Parallel("run")</tt>  -- ''java jar file''
 * [[Local Thickness to Cleaned-Up Local Thickness]] - file <tt>Clean_Up_Local_Thickness("run")</tt>  -- ''java jar file''
+
+
+=== Analyze > Multi Kymograph ===
+
+* [[Multi Kymograph]] - file <tt>MultipleKymograph_</tt>  -- ''java jar file''
+* [[Multi Overlay]] - file <tt>MultipleOverlay_</tt>  -- ''java jar file''
+* [[Stack Difference]] - file <tt>StackDifference_</tt>  -- ''java jar file''
+* [[Walking Average]] - file <tt>WalkingAverage_</tt>  -- ''java jar file''
 
 
 === Analyze > Tools ===
@@ -516,6 +553,7 @@
 * [[Radial Reslice]] - file <tt>fiji.stacks.Radial_Reslice</tt>  -- ''java jar file''
 * [[Dynamic Reslice]] - file <tt>fiji.stacks.Dynamic_Reslice</tt>  -- ''java jar file''
 * [[Series Labeler]] - file <tt>Series_Labeler</tt>  -- ''java jar file''
+* [[Kalman Stack Filter]] - file <tt>Kalman_Filter</tt>  -- ''java jar file''
 * [[Time Stamper]] - file <tt>Time_Stamper</tt>  -- ''java jar file''
 * [[Reslice Z]] - file <tt>Reslice_Z</tt>  -- ''java jar file''
 
@@ -592,6 +630,7 @@
 === Process > Filters ===
 
 * [[Differentials]] - file <tt>Differentials_</tt>  -- ''java jar file''
+* [[Kuwahara Filter]] - file <tt>Kuwahara_Filter</tt>  -- ''java jar file''
 * [[Linear Kuwahara]] - file <tt>Kuwahara_LinearStructure_Filter_v3</tt>  -- ''java jar file''
 
 
