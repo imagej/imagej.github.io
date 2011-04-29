@@ -22,12 +22,11 @@ Coloc_2 implements and performs, the pixel intensity correlation over space meth
 
 === What is Coloc_2, and why? ===
 
-Coloc_2 is an imageJ / Fiji plugin that uses the new imglib image data container library for image processing, and implements the above methods in a pixel data type (8, 16, 32-bit) independent and modular way. 
+Coloc_2 is an imageJ / Fiji plugin that uses the new imglib image data container library for image processing, and implements the above methods in a pixel data type (8, 16, 32-bit) independent and modular and easily extensible way. The source code has unit tests to detect if changed break the maths. It should be easy to add new methods as the plugin is built for that. 
 
 One main feature of Coloc_2 is the standardised PDF output, which is intended to make the results of different colocalization experiments comparable. Please tell us what you think should be in this standard output, so it is suitable to put directly into the supplemental info of a research publication. 
 
-This plugin supersedes the Colocalization Threshold and Colocalization Test plugins, which, unfortunately, were buggy and hard to maintain. These older plugins are now depreciated and not actively supported.
-
+This plugin supersedes the Colocalization Threshold and Colocalization Test plugins, which, unfortunately, were buggy and hard to maintain. So we started from scratch with a carefully planned and designed new plugin. The older plugins are now depreciated and not actively supported.
 
 === How to use Coloc_2 ===
 
