@@ -1,10 +1,13 @@
-== Colocalization Analysis - using Coloc_2 ==
+= Colocalization Analysis - using Coloc_2 =
 
 The first part of this tutorial is the basic user documentation of the Coloc_2 plugin
 which is found in the Analyze - Colocalization Analysis menu. 
 
+
 === What is Coloc_2 ===
-Coloc_2 is an imageJ / Fiji plugin that uses the new imglib image data container library for image processing, and implements the pixel intensity correlation over space methods of Pearson, Manders, Costes, Li etc. in a pixel type independent and modular way.  This plugin supersedes the Colocalization Threshold and Colocalization Test plugins, which were buggy, hard to maintain, and are now depreciated and not actively supported.
+
+Coloc_2 is an imageJ / Fiji plugin that uses the new imglib image data container library for image processing, and implements the pixel intensity correlation over space methods of [http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient Pearson], [[Image:Manders.pdf]], [[Image:Costes etalColoc.pdf]], Li etc. in a pixel type independent and modular way.  This plugin supersedes the Colocalization Threshold and Colocalization Test plugins, which, unfortunately, were buggy, hard to maintain. These are now depreciated and not actively supported.
+
 
 === How to use Coloc_2 ===
 
@@ -32,12 +35,12 @@ Coloc_2 is an imageJ / Fiji plugin that uses the new imglib image data container
 ** You will be asked if you want to save the results as a PDF file (if the Show "save PDF" dialog button was checked. So tell it where to save the PDF. This is standard output format, so you can compare with your friend,  same vs. same (neat eh!?)
 *** Feel free to tell us what things you think should be included in this standardised PDF output file.
 
-== Colocalisation Analysis - What is Colocalisation anyway? ==
+== Colocalization Analysis - What is Colocalization anyway? ==
 
 
 Suppose you are given some images by a colleague, or have some images of your own, and you want to measure the amount of colocalisation between two of the dyes or stains in the images. First you have to define what you mean by colocalisation, and that is not trivial. One place to start reading about colocalisation and and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalisation analysis, look here: [https://ifn.mpi-cbg.de/wiki/ifn/index.php/Teaching_Material#IPF_Image_Processing_Courses Image Processing Courses at IFN Dresden]
 
-===There are two basic methods for colocalisation analysis:===
+===There are two basic methods for colocalization analysis:===
  <ol>
 <li> '''Pixel intensity Spatial Correlation Analysis''' (which is covered in this tutorial)</li>
 <li> '''Object Based Overlap Analysis''' (not covered in this tutorial, since it requires segmenting the image into objects and background, and thats a whole branch of image processing in itself). </li>
