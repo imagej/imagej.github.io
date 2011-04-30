@@ -664,6 +664,7 @@
 
 * [[Fit Circle to Image]] - file <tt>fiji.util.Circle_Fitter</tt>  -- ''java jar file''
 * [[Select Bounding Box]] - file <tt>fiji.selection.Select_Bounding_Box</tt>  -- ''java jar file''
+* [[Select Bounding Box (guess background color)]] - file <tt>fiji.selection.Select_Bounding_Box("autoselect")</tt>  -- ''java jar file''
 * [[Points from Mask]] - file <tt>fiji.selection.Binary_to_Point_Selection</tt>  -- ''java jar file''
 * [[Fill ROI holes]] - file <tt>Fill_holes</tt>  -- ''java jar file''
 
