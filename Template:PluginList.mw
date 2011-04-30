@@ -269,6 +269,7 @@
 * [[Stitch Sequence of Grids of Images]] - file <tt>Stitch_Image_Grid_Sequence</tt>  -- ''java jar file''
 * [[Stitch Collection of Images]] - file <tt>Stitch_Image_Collection</tt>  -- ''java jar file''
 * [[Stitch Directory with Images (unknown configuration)]] - file <tt>Stitch_Image_Directory</tt>  -- ''java jar file''
+* [[Stitch Multiple Series or Tile Scan File]] - file <tt>Stitch_Multiple_Series_File</tt>  -- ''java jar file''
 
 
 === Plugins > SPIM Registration ===
