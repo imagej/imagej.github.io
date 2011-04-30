@@ -41,6 +41,18 @@ IJ.run("Update Fiji");
 </source>
 * run the script via the ''Run'' menu
 
+== I updated to Ubuntu 11.04 and now I no longer see the Title bar when I close Fiji ==
+
+I can no longer move any windows or use the X on the title bar to close them.
+
+The solution is described in:
+http://www.pendrivelinux.com/ubuntu-desktop-effects-fixing-the-missing-titlebar/
+
+You must add the 2 options:
+
+* Option "AddARGBVisuals" "True"
+* Option "AddARGBGLXVisuals" "True"
+
 = [[3D Viewer]] =
 
 == The 3D Viewer opens a window saying ''An unexpected exception occurred.'' ==
