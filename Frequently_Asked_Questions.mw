@@ -49,7 +49,7 @@ This is not a Fiji problem but a consequence of having Desktop Effects enabled.
 One solution is described in:
 http://www.pendrivelinux.com/ubuntu-desktop-effects-fixing-the-missing-titlebar/
 
-Edit (as root) the file /etc/X11/xorg.conf and add the following 2 options in the '''Section "Device"''' before the '''EndSection''' line:
+Edit (as root) the file /etc/X11/xorg.conf and add the following 2 options in '''Section "Device"''' before the '''EndSection''' line:
    Option "AddARGBVisuals" "True"
    Option "AddARGBGLXVisuals" "True"
 
