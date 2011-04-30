@@ -89,7 +89,11 @@ All the other parameters are the same as explained in the section [[Stitching 2D
 
 == Stitch Directory with Images (unknown configuration) ==
 
-This plugin takes all images that are located in a given directory and tries to align them without any knowledge of the tile configuration. All other parameters are identical to those explained in the section [[Stitching 2D/3D#Stitch Grid of Images | Stitch Grid of Images]]. If the plugin does not find the correct alignment, you can try to increase the cross correlation threshold so that only pairwise alignments with very high quality are used for the global optimization. This increases the chance that the optimizer is able to detect the correct pairwise alignments. This, however, requires images with high quality as otherwise correct pairwise alignments with relatively low correlation are excluded. 
+This plugin takes all images that are located in a given directory and tries to align them without any knowledge of the tile configuration. All other parameters are identical to those explained in the section [[Stitching 2D/3D#Stitch Grid of Images | Stitch Grid of Images]]. If the plugin does not find the correct alignment, you can try to increase the cross correlation threshold so that only pairwise alignments with very high quality are used for the global optimization. This increases the chance that the optimizer is able to detect the correct pairwise alignments. This, however, requires images with high quality as otherwise correct pairwise alignments with relatively low correlation are excluded.
+
+== Stitch Multiple Series or Tile Scan File ==
+
+This plugin takes series of images contained in a single file, e.g. in the .lsm file format. It relies on [[Bio-Formats]]'s series support. The parameters are as explained in the section [[Stitching 2D/3D#Stitch Grid of Images | Stitch Grid of Images]].
 
 == Problems and Known Issues ==
 
