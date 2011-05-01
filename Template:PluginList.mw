@@ -26,6 +26,7 @@
 * [[Blobs Demo in Ruby]] - file <tt>Blobs_Demo_in_Ruby.rb</tt>  -- ''jruby script''
 * [[Delayed Snapshot]] - file <tt>Delayed_Snapshot.py</tt>  -- ''jython script''
 * [[Edit LUT As Text]] - file <tt>Edit_LUT_As_Text.py</tt>  -- ''jython script''
+* [[Fiji Cube]] - file <tt>Fiji_Cube.ijm</tt>  -- ''macro''
 * [[Fiji Logo 3D]] - file <tt>Fiji_Logo_3D.js</tt>  -- ''javascript file''
 * [[Find Dimension of Raw Image]] - file <tt>Find_Dimension_of_Raw_Image.py</tt>  -- ''jython script''
 * [[Multithreaded Image Processing]] - file <tt>Multithreaded_Image_Processing.clj</tt>  -- ''clojure script''
@@ -70,20 +71,20 @@
 * [[batch convert any to tif]] - file <tt>batch_convert_any_to_tif.txt</tt>  -- ''macro''
 
 
-=== Plugins > Scripts ===
-
-
-==== Plugins > Scripts > Image ====
-
-===== Plugins > Scripts > Image > Adjust =====
-
-* [[Scale to DPI]] - file <tt>Scale_to_DPI.js</tt>  -- ''javascript file''
-
-==== Plugins > Scripts > Plugins ====
-
-===== Plugins > Scripts > Plugins > Registration =====
+=== Plugins > Registration ===
 
 * [[Correct 3D drift]] - file <tt>Correct_3D_drift.py</tt>  -- ''jython script''
+* [[StackReg]] - file <tt>StackReg_</tt>  -- ''java jar file''
+* [[TurboReg ]] - file <tt>TurboReg_</tt>  -- ''java jar file''
+* [[UnwarpJ]] - file <tt>UnwarpJ_</tt>  -- ''java jar file''
+* [[Align Image by line ROI]] - file <tt>Align_Image</tt>  -- ''java jar file''
+* [[Rigid Registration]] - file <tt>vib.RigidRegistration_</tt>  -- ''java jar file''
+* [[Moving Least Squares]] - file <tt>Moving_Least_Squares</tt>  -- ''java jar file''
+* [[bUnwarpJ]] - file <tt>bunwarpj.bUnwarpJ_</tt>  -- ''java jar file''
+* [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt>  -- ''java jar file''
+* [[Elastic Stack Alignment]] - file <tt>mpicbg.ij.plugin.ElasticAlign</tt>  -- ''java jar file''
+* [[Elastic Montaging]] - file <tt>mpicbg.ij.plugin.ElasticMontage</tt>  -- ''java jar file''
+* [[Register Virtual Stack Slices]] - file <tt>register_virtual_stack.Register_Virtual_Stack_MT</tt>  -- ''java jar file''
 
 
 === Plugins > Utilities ===
@@ -308,21 +309,6 @@
 * [[TransformJ Turn]] - file <tt>TJ_Turn</tt>  -- ''java jar file''
 
 
-=== Plugins > Registration ===
-
-* [[StackReg]] - file <tt>StackReg_</tt>  -- ''java jar file''
-* [[TurboReg ]] - file <tt>TurboReg_</tt>  -- ''java jar file''
-* [[UnwarpJ]] - file <tt>UnwarpJ_</tt>  -- ''java jar file''
-* [[Align Image by line ROI]] - file <tt>Align_Image</tt>  -- ''java jar file''
-* [[Rigid Registration]] - file <tt>vib.RigidRegistration_</tt>  -- ''java jar file''
-* [[Moving Least Squares]] - file <tt>Moving_Least_Squares</tt>  -- ''java jar file''
-* [[bUnwarpJ]] - file <tt>bunwarpj.bUnwarpJ_</tt>  -- ''java jar file''
-* [[Linear Stack Alignment with SIFT]] - file <tt>SIFT_Align</tt>  -- ''java jar file''
-* [[Elastic Stack Alignment]] - file <tt>mpicbg.ij.plugin.ElasticAlign</tt>  -- ''java jar file''
-* [[Elastic Montaging]] - file <tt>mpicbg.ij.plugin.ElasticMontage</tt>  -- ''java jar file''
-* [[Register Virtual Stack Slices]] - file <tt>register_virtual_stack.Register_Virtual_Stack_MT</tt>  -- ''java jar file''
-
-
 === Plugins > Stacks ===
 
 * [[Crop (3D)]] - file <tt>stacks.Three_Pane_Crop</tt>  -- ''java jar file''
@@ -352,87 +338,14 @@
 
 
 
-== Analyze ==
-
-* [[3D Objects Counter]] - file <tt>_3D_objects_counter</tt>  -- ''java jar file''
-* [[3D OC Options]] - file <tt>_3D_OC_Options</tt>  -- ''java jar file''
-* [[Color Histogram]] - file <tt>ColorHistogram_</tt>  -- ''java jar file''
-* [[Color Inspector 3D]] - file <tt>Color_Inspector_3D</tt>  -- ''java jar file''
-* [[Directionality]] - file <tt>fiji.analyze.directionality.Directionality_</tt>  -- ''java jar file''
-* [[Shape Index Map]] - file <tt>fiji.geom.Shape_Index_Map</tt>  -- ''java jar file''
-* [[3D Surface Plot]] - file <tt>Interactive_3D_Surface_Plot</tt>  -- ''java jar file''
-
-
-=== Analyze > Colocalization ===
-
-* [[Colocalization Threshold]] - file <tt>Colocalisation_Threshold</tt>  -- ''java jar file''
-* [[Colocalization Test]] - file <tt>Colocalisation_Test</tt>  -- ''java jar file''
-* [[Coloc 2]] - file <tt>Coloc_2</tt>  -- ''java jar file''
-
-
-=== Analyze > Optic Flow ===
-
-* [[FlowJ]] - file <tt>FlowJ_</tt>  -- ''java jar file''
-* [[PIV analysis]] - file <tt>PIV_analyser</tt>  -- ''java jar file''
-
-
-=== Analyze > Classification ===
-
-* [[IsoData Classifier]] - file <tt>IsoData_Classifier</tt>  -- ''java jar file''
-
-
-=== Analyze > Local Thickness ===
-
-* [[Local Thickness (complete process)]] - file <tt>Local_Thickness_Driver("run")</tt>  -- ''java jar file''
-* [[Geometry to Distance Map]] - file <tt>EDT_S1D("run")</tt>  -- ''java jar file''
-* [[Distance Map to Distance Ridge]] - file <tt>Distance_Ridge("run")</tt>  -- ''java jar file''
-* [[Distance Ridge to Local Thickness]] - file <tt>Local_Thickness_Parallel("run")</tt>  -- ''java jar file''
-* [[Local Thickness to Cleaned-Up Local Thickness]] - file <tt>Clean_Up_Local_Thickness("run")</tt>  -- ''java jar file''
-
-
-=== Analyze > Multi Kymograph ===
-
-* [[Multi Kymograph]] - file <tt>MultipleKymograph_</tt>  -- ''java jar file''
-* [[Multi Overlay]] - file <tt>MultipleOverlay_</tt>  -- ''java jar file''
-* [[Stack Difference]] - file <tt>StackDifference_</tt>  -- ''java jar file''
-* [[Walking Average]] - file <tt>WalkingAverage_</tt>  -- ''java jar file''
-
-
-=== Analyze > Tools ===
-
-* [[PointPicker]] - file <tt>PointPicker_</tt>  -- ''java jar file''
-* [[Sync Windows]] - file <tt>Sync_Windows("")</tt>  -- ''java jar file''
-* [[Sync Measure 3D]] - file <tt>Sync_Measure_3D("")</tt>  -- ''java jar file''
-
-
-=== Analyze > QuickPALM ===
-
-* [[Analyse Particles]] - file <tt>QuickPALM.Analyse_Particles</tt>  -- ''java jar file''
-* [[Stop Analyse Particles (kills the threads)]] - file <tt>QuickPALM.Stop_processing</tt>  -- ''java jar file''
-* [[Reconstruct Dataset]] - file <tt>QuickPALM.Reconstruct_Dataset</tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[Create 3D calibration (requires astigmatism)]] - file <tt>QuickPALM.Create_3D_calibration</tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[Correct Particles Drift (based on ROI)]] - file <tt>QuickPALM.Correct_Drift2</tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[Fast VirtualStack Opener]] - file <tt>QuickPALM.Run_MyMacro("Fast_VirtualStack_Opener.txt")</tt>  -- ''java jar file''
-* [[Load Particles (.tif file - fast)]] - file <tt>QuickPALM.Load_particles_tableFromImg</tt>  -- ''java jar file''
-* [[Save Particles (.tif file - fast)]] - file <tt>QuickPALM.Save_particles_table2img</tt>  -- ''java jar file''
-* [[Sort Particles by frame (in a .tif particle table file)]] - file <tt>QuickPALM.Run_MyMacro("Sort_particles.txt")</tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[Update QuickPALM]] - file <tt>QuickPALM.Run_MyMacro("Update_.txt")</tt>  -- ''java jar file''
-* [[About...]] - file <tt>QuickPALM.Run_MyMacro("About_.txt")</tt>  -- ''java jar file''
-
-
-=== Analyze > TopoJ ===
-
-* [[Compute Topography]] - file <tt>Compute_Topography</tt>  -- ''java jar file''
-* [[Remove Slope]] - file <tt>Remove_Slope</tt>  -- ''java jar file''
-
-
-
 == File ==
 
+
+
+=== File > Open_Samples ===
+
+* [[Adelsons Squares]] - file <tt>Adelsons_Squares.ijm</tt>  -- ''macro''
+* [[Spirals ]] - file <tt>Spirals_.ijm</tt>  -- ''macro''
 
 
 === File > Import ===
@@ -516,13 +429,9 @@
 
 
 
-=== Image > Annotate ===
-
-* [[Arrow ]] - file <tt>fiji.util.ArrowTool</tt>  -- ''java jar file''
-
-
 === Image > Adjust ===
 
+* [[Scale to DPI]] - file <tt>Scale_to_DPI.js</tt>  -- ''javascript file''
 * [[Auto Threshold]] - file <tt>fiji.threshold.Auto_Threshold</tt>  -- ''java jar file''
 * [[Auto Local Threshold]] - file <tt>fiji.threshold.Auto_Local_Threshold</tt>  -- ''java jar file''
 * [[Auto Crop]] - file <tt>fiji.selection.Select_Bounding_Box("autocrop")</tt>  -- ''java jar file''
@@ -531,11 +440,22 @@
 
 === Image > Color ===
 
+* [[Set Color By Wavelength]] - file <tt>Set_Color_By_Wavelength.ijm</tt>  -- ''macro''
 * [[Simulate Color Blindness]] - file <tt>Simulate_Color_Blindness</tt>  -- ''java jar file''
 * [[Retinex]] - file <tt>Retinex_</tt>  -- ''java jar file''
 * [[Average Color]] - file <tt>Average_Color</tt>  -- ''java jar file''
 * [[RGB to CIELAB]] - file <tt>RGB_to_CIELAB</tt>  -- ''java jar file''
 * [[RGB to Luminance]] - file <tt>util.RGB_to_Luminance</tt>  -- ''java jar file''
+
+
+=== Image > Hyperstacks ===
+
+* [[Temporal-Color Code]] - file <tt>Temporal-Color_Code.ijm</tt>  -- ''macro''
+
+
+=== Image > Annotate ===
+
+* [[Arrow ]] - file <tt>fiji.util.ArrowTool</tt>  -- ''java jar file''
 
 
 === Image > Drawing ===
@@ -588,6 +508,85 @@
 * [[Make Transition]] - file <tt>video2.Make_Transition</tt>  -- ''java jar file''
 * [[Draw Roi]] - file <tt>video2.Draw_Roi</tt>  -- ''java jar file''
 * [[Move Roi]] - file <tt>video2.Move_Roi</tt>  -- ''java jar file''
+
+
+
+== Analyze ==
+
+* [[3D Objects Counter]] - file <tt>_3D_objects_counter</tt>  -- ''java jar file''
+* [[3D OC Options]] - file <tt>_3D_OC_Options</tt>  -- ''java jar file''
+* [[Color Histogram]] - file <tt>ColorHistogram_</tt>  -- ''java jar file''
+* [[Color Inspector 3D]] - file <tt>Color_Inspector_3D</tt>  -- ''java jar file''
+* [[Directionality]] - file <tt>fiji.analyze.directionality.Directionality_</tt>  -- ''java jar file''
+* [[Shape Index Map]] - file <tt>fiji.geom.Shape_Index_Map</tt>  -- ''java jar file''
+* [[3D Surface Plot]] - file <tt>Interactive_3D_Surface_Plot</tt>  -- ''java jar file''
+
+
+=== Analyze > Colocalization ===
+
+* [[Colocalization Threshold]] - file <tt>Colocalisation_Threshold</tt>  -- ''java jar file''
+* [[Colocalization Test]] - file <tt>Colocalisation_Test</tt>  -- ''java jar file''
+* [[Coloc 2]] - file <tt>Coloc_2</tt>  -- ''java jar file''
+
+
+=== Analyze > Optic Flow ===
+
+* [[FlowJ]] - file <tt>FlowJ_</tt>  -- ''java jar file''
+* [[PIV analysis]] - file <tt>PIV_analyser</tt>  -- ''java jar file''
+
+
+=== Analyze > Classification ===
+
+* [[IsoData Classifier]] - file <tt>IsoData_Classifier</tt>  -- ''java jar file''
+
+
+=== Analyze > Local Thickness ===
+
+* [[Local Thickness (complete process)]] - file <tt>Local_Thickness_Driver("run")</tt>  -- ''java jar file''
+* [[Geometry to Distance Map]] - file <tt>EDT_S1D("run")</tt>  -- ''java jar file''
+* [[Distance Map to Distance Ridge]] - file <tt>Distance_Ridge("run")</tt>  -- ''java jar file''
+* [[Distance Ridge to Local Thickness]] - file <tt>Local_Thickness_Parallel("run")</tt>  -- ''java jar file''
+* [[Local Thickness to Cleaned-Up Local Thickness]] - file <tt>Clean_Up_Local_Thickness("run")</tt>  -- ''java jar file''
+
+
+=== Analyze > Multi Kymograph ===
+
+* [[Multi Kymograph]] - file <tt>MultipleKymograph_</tt>  -- ''java jar file''
+* [[Multi Overlay]] - file <tt>MultipleOverlay_</tt>  -- ''java jar file''
+* [[Stack Difference]] - file <tt>StackDifference_</tt>  -- ''java jar file''
+* [[Walking Average]] - file <tt>WalkingAverage_</tt>  -- ''java jar file''
+
+
+=== Analyze > Tools ===
+
+* [[PointPicker]] - file <tt>PointPicker_</tt>  -- ''java jar file''
+* [[Sync Windows]] - file <tt>Sync_Windows("")</tt>  -- ''java jar file''
+* [[Sync Measure 3D]] - file <tt>Sync_Measure_3D("")</tt>  -- ''java jar file''
+
+
+=== Analyze > QuickPALM ===
+
+* [[Analyse Particles]] - file <tt>QuickPALM.Analyse_Particles</tt>  -- ''java jar file''
+* [[Stop Analyse Particles (kills the threads)]] - file <tt>QuickPALM.Stop_processing</tt>  -- ''java jar file''
+* [[Reconstruct Dataset]] - file <tt>QuickPALM.Reconstruct_Dataset</tt>  -- ''java jar file''
+* [[-]] - file <tt></tt>  -- ''java jar file''
+* [[Create 3D calibration (requires astigmatism)]] - file <tt>QuickPALM.Create_3D_calibration</tt>  -- ''java jar file''
+* [[-]] - file <tt></tt>  -- ''java jar file''
+* [[Correct Particles Drift (based on ROI)]] - file <tt>QuickPALM.Correct_Drift2</tt>  -- ''java jar file''
+* [[-]] - file <tt></tt>  -- ''java jar file''
+* [[Fast VirtualStack Opener]] - file <tt>QuickPALM.Run_MyMacro("Fast_VirtualStack_Opener.txt")</tt>  -- ''java jar file''
+* [[Load Particles (.tif file - fast)]] - file <tt>QuickPALM.Load_particles_tableFromImg</tt>  -- ''java jar file''
+* [[Save Particles (.tif file - fast)]] - file <tt>QuickPALM.Save_particles_table2img</tt>  -- ''java jar file''
+* [[Sort Particles by frame (in a .tif particle table file)]] - file <tt>QuickPALM.Run_MyMacro("Sort_particles.txt")</tt>  -- ''java jar file''
+* [[-]] - file <tt></tt>  -- ''java jar file''
+* [[Update QuickPALM]] - file <tt>QuickPALM.Run_MyMacro("Update_.txt")</tt>  -- ''java jar file''
+* [[About...]] - file <tt>QuickPALM.Run_MyMacro("About_.txt")</tt>  -- ''java jar file''
+
+
+=== Analyze > TopoJ ===
+
+* [[Compute Topography]] - file <tt>Compute_Topography</tt>  -- ''java jar file''
+* [[Remove Slope]] - file <tt>Remove_Slope</tt>  -- ''java jar file''
 
 
 
