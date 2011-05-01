@@ -226,7 +226,11 @@ Some example output:
 
 [[Image:Anaglyph.png|Example anaglyph image]]
 
-=== What next? ===
+== Library ==
+
+There is a library called [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/JRuby/imagej.rb;hb=master imagej.rb] for convenience. It contains a number of useful functions related to ImageJ.
+
+== What next? ==
 
 [You may want to first have a quick look at the [[Scripting Help]] page for generic instructions in using the interpreter and script interfaces, and the [[Scripting comparisons]] page for an example written in several of the different scripting languages available.  The JRuby example shows how to implement a Java interface in JRuby.]
 
