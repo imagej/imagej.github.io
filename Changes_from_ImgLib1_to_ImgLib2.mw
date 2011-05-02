@@ -53,10 +53,10 @@ RandomAccessible< IntType > interval = Views.extendMirrorSingle( myIntImg );
 /* Mirroring Strategy where the mirror lies behind the last pixel */
 RandomAccessible< IntType > interval = Views.extendMirrorDouble( myIntImg );
 
-/* Mirroring Strategy where periodicity of the space is assumed (like FFT) */
+/* Strategy where periodicity of the space is assumed (like FFT) */
 RandomAccessible< IntType > interval = Views.extendPeriodic( myIntImg );
 
-/* Mirroring Strategy that returns a constant value outside the boundaries */
+/* Strategy that returns a constant value outside the boundaries */
 RandomAccessible< IntType > interval = Views.extendValue( myIntImg, new IntType( 5 ) );
 </source>
 
