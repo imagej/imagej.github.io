@@ -37,7 +37,7 @@ RandomAccess< IntType > randomAccess = extendedInterval.randomAccess();
 </source>
 That way, out of boundary location handling is available for all Intervals that are compatible with the passed ''OutOfBoundsFactory'' (the existing work for all ''RandomAccessible'' & ''Interval'').
 
-A simple shortcut to is to call:
+A simple shortcut is to call:
 
 <source lang="java">
 RandomAccessible< IntType > interval = Views.extend( myIntImg, 
