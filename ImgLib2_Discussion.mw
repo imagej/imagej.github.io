@@ -310,6 +310,14 @@ We discussed this topic again and found that it is always bad practice to actual
 
 for the reason that in the latter case, the loop would require Localizable.numDimensions() to be called otherwise.  There will be many situations where this cannot be inlined and thus be slower than using a temporary ''n'' in the executing class.
 
- 
+==2011-05-02==
+
+===We discussed the ExtendedRandomAccessibleInterval:===
+
+Tobias and Preibisch discussed today that the name ExtendedRandomAccessibleInterval is somehow irritating and also to long as it will be heavily used for OutOfBounds strategies.
+
+It is irritating as it is actually NOT an Interval. Instead one could name it for example OutOfBoundsView, which is also much shorter. It is only used for this purpose and the name is self-explanatory. 
+
+We also added some convenience methods in the Views class to construct them very easily, see here: 
 
 [[Category:ImgLib]]
