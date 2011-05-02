@@ -44,7 +44,7 @@ RandomAccessible< IntType > interval = Views.extend( myIntImg,
      new OutOfBoundsMirrorFactory< IntType, Img< IntType > >( Boundary.DOUBLE ) );
 </source>
 
-For standard out of bounds strategies there are also static conviencience methods:
+For standard out of bounds strategies there are also static convenience methods:
 
 <source lang="java">
 /* Mirroring Strategy where the last pixel is the mirror */
@@ -59,6 +59,8 @@ RandomAccessible< IntType > interval = Views.extendPeriodic( myIntImg );
 /* Mirroring Strategy that returns a constant value outside the boundaries */
 RandomAccessible< IntType > interval = Views.extendValue( myIntImg, new IntType( 5 ) );
 </source>
+
+They placed in the Views class because it is a special view onto an Img<T> or also any RandomAccessibleInterval<T>.
 
 ==Where did the NeighborhoodCursor and RegionOfInterestCursor go?==
 
