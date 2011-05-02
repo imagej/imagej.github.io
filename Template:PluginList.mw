@@ -57,11 +57,6 @@
 * [[extract stack under arealist]] - file <tt>extract_stack_under_arealist.py</tt>  -- ''jython script''
 
 
-=== Plugins > JRuby ===
-
-* [[imagej]] - file <tt>imagej.rb</tt>  -- ''jruby script''
-
-
 === Plugins > Macros ===
 
 * [[About Plugin Macros]] - file <tt>About_Plugin_Macros.txt</tt>  -- ''macro''
