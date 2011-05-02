@@ -37,6 +37,13 @@ RandomAccess< IntType > randomAccess = extendedInterval.randomAccess();
 </source>
 That way, out of boundary location handling is available for all Intervals that are compatible with the passed ''OutOfBoundsFactory'' (the existing work for all ''RandomAccessible'' & ''Interval'').
 
+A simple shortcut to is to call:
+
+<source lang="java">
+RandomAccessible< IntType > interval = Views.extend( myIntImg, 
+     new OutOfBoundsMirrorFactory< IntType, Img< IntType > >( Boundary.DOUBLE ) );
+</source>
+
 ==Where did the NeighborhoodCursor and RegionOfInterestCursor go?==
 
 They have been removed and will be replaced by a slightly different concept that was not possible in ImgLib before due to lack of appropriate interfaces.  Both ''Neighborhood'' and ''HyperBox'' will implement ''IterableInterval'' and/or ''RandomAccessible''.  They will be provided by an ''IterableInterval< Neighborhood >'' or ''RandomAccessible< HyperBox >'' respectively (plus other combinations, and real variants).
