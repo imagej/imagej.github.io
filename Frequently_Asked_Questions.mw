@@ -55,6 +55,8 @@ Edit (as root) the file /etc/X11/xorg.conf and add the following 2 options in ''
 
 Another solution is to switch off the Desktop Effects.
 
+Please beware: After an update to 11.04, the problem reappeared. The xorg.conf remained with the above corrections but the title bar was gone. In this case it is sufficient to log out and then log in again.
+
 = [[3D Viewer]] =
 
 == The 3D Viewer opens a window saying ''An unexpected exception occurred.'' ==
