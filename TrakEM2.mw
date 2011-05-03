@@ -63,6 +63,17 @@ What the JVM flags mean:
 
 With the above settings, we have succesfully registered 33,000 image tiles corresponding to 459 serial sections, using the "Align multi-layer mosaic" TrakEM2 command.
 
+== How much RAM should I allocate to the JVM for Fiji to run TrakEM2? ==
+
+Use a computer that follows this rule of thumb: take the largest single 2D image in your dataset, then multiply its size by 10, and make sure that every core of your CPU has at least that much RAM available to it.
+
+For example, for a 4096x4096 16-bit image you will need at least 335 Mb
+per core, so at least 5.4 Gb of RAM for 16 cores. 8 Gb would likely work
+better. 32 Gb will be a pleasure to use.
+
+As for a graphics card buy the largest you can afford, both in computing
+power and in internal memory.
+
 == Examples ==
 
 [[Image:Trakem2-snap.jpg|thumb|left|232px|TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each.]]
