@@ -320,6 +320,14 @@ It is irritating as it is actually NOT an Interval. Instead one could name it fo
 
 We also added some convenience methods in the Views class to construct them very easily, see here: [[Changes from ImgLib1 to ImgLib2#How does ImgLib2 handle OutOfBounds? | How does ImgLib2 handle OutOfBounds?]]
 
-[[Category:ImgLib]]
 
-===Should Cursors have a bck() call?===
+===Should Iterator (and so Cursor) have a bck() call?===
+
+We have been discussing this several times with a two-folded answer:
+#Yes, because iteration order for ImgLib2 Iterators is claimed to be constant.  Given that, accessing the previous element (bck()) call is always defined.
+#No, because it would require a substantial extension of the existing interfaces and classes.  ImgLib2 Iterator could then implement ListIterator which is a lot of effort to implement.
+
+In principal, I strongly support introducing it.  It makes total sense but it is a change in the core.
+[[User:Saalfeld|Saalfeld]] 17:03, 3 May 2011 (CEST)
+
+[[Category:ImgLib]]
