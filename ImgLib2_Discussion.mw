@@ -320,7 +320,6 @@ It is irritating as it is actually NOT an Interval. Instead one could name it fo
 
 We also added some convenience methods in the Views class to construct them very easily, see here: [[Changes from ImgLib1 to ImgLib2#How does ImgLib2 handle OutOfBounds? | How does ImgLib2 handle OutOfBounds?]]
 
-
 ===Should Iterator (and so Cursor) have a bck() call?===
 
 We have been discussing this several times with a two-folded answer:
