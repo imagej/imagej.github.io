@@ -346,8 +346,11 @@ just for the case that somebody wants to implement it for some reason and does n
 ===Localizable and RealLocalizable Interface get()-methods===
 
 I noticed today that those two interfaces still have methods which are called getIntPostion(), getLongPosition() and so on which is different to all other naming schemes that are much better and shorter:
+
 - numDimensions instead of getNumDimensions()
+
 - localize instead of getLocation()
+
 etc... 
 
 should we maybe change it as well to intPosition(), longPosition, etc?
