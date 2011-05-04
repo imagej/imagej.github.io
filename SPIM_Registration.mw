@@ -136,6 +136,8 @@ For advanced SPIM registration all available parameters can be tuned using two c
 
 Time Point Pattern = "18"
 Acquisition Angle Pattern = "0-270:45"
+# The input files can be in any format that Fiji can read.
+# They need to be 3D stacks with correct calibration, though.
 Input File Pattern = "spim_TL{t}_Angle{a}.lsm"
 Input Directory = "F:\Stephan\dros\"
 Output Directory = "F:\Stephan\dros\output"
