@@ -341,4 +341,17 @@ just for the case that somebody wants to implement it for some reason and does n
 
 [[User:StephanP|StephanP]] 12:24, 4 May 2011 (CEST)
 
+==2011-05-04==
+
+===Localizable and RealLocalizable Interface get()-methods===
+
+I noticed today that those two interfaces still have methods which are called getIntPostion(), getLongPosition() and so on which is different to all other naming schemes that are much better and shorter:
+- numDimensions instead of getNumDimensions()
+- localize instead of getLocation()
+etc... 
+
+should we maybe change it as well to intPosition(), longPosition, etc?
+
+[[User:StephanP|StephanP]] 12:27, 4 May 2011 (CEST)
+
 [[Category:ImgLib]]
