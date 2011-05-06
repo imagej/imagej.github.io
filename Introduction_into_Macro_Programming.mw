@@ -394,7 +394,7 @@ setBatchMode(false);
 
 == Make a false-colored montage ==
 
-Here is a more complicated macro, maybe you can guess from reading the code how it does what it does? After that, you might want to try it on the Clown example...
+Here is a more complicated macro, maybe you can guess from reading the code how it does what it does? After that, you might want to try it on the Lena example...
 
 <source lang="java">
 function simplifyColors() {
@@ -404,7 +404,7 @@ function simplifyColors() {
 	stack = getImageID();
 	run("Duplicate...", "title=threshold");
 	run("Gamma...", "value=0.30");
-	run("Bilateral Filter", "spatial=15 range=250");
+	run("Bilateral Filter", "spatial=15 range=150");
 	run("Select All");
 	run("Copy");
 	close();
@@ -412,7 +412,7 @@ function simplifyColors() {
 	run("Paste");
 	setSlice(1);
 	run("Duplicate...", "title=bilateral");
-	run("Bilateral Filter", "spatial=15 range=250");
+	run("Bilateral Filter", "spatial=15 range=150");
 	run("Enhance Contrast", "saturated=0.4");
 	run("Select All");
 	run("Copy");
