@@ -394,17 +394,17 @@ setBatchMode(false);
 
 == Make a false-colored montage ==
 
-Here is a more complicated macro, maybe you can guess from reading the code what it does?
+Here is a more complicated macro, maybe you can guess from reading the code how it does what it does? After that, you might want to try it on the Clown example...
 
 <source lang="java">
-function step1() {
+function simplifyColors() {
 	run("Duplicate...", "title=step-1");
 	run("HSB Stack");
 	setSlice(2);
 	stack = getImageID();
 	run("Duplicate...", "title=threshold");
 	run("Gamma...", "value=0.30");
-	run("Bilateral Filter", "spatial=15 range=50");
+	run("Bilateral Filter", "spatial=15 range=250");
 	run("Select All");
 	run("Copy");
 	close();
@@ -412,7 +412,7 @@ function step1() {
 	run("Paste");
 	setSlice(1);
 	run("Duplicate...", "title=bilateral");
-	run("Bilateral Filter", "spatial=15 range=50");
+	run("Bilateral Filter", "spatial=15 range=250");
 	run("Enhance Contrast", "saturated=0.4");
 	run("Select All");
 	run("Copy");
@@ -489,26 +489,34 @@ function makeMontage(big) {
 		}
 	}
 
+	// create the panel
 	newImage("Warhol'ized " + getTitle(), "RGB white",
 		(w + 1) * columns + 1, (h + 1) * rows + 1, 1);
 	result = getImageID();
+
+	// for speed, and to minimize user interference, start the batch mode
 	setBatchMode(true);
 	selectImage(orig);
 	run("Duplicate...", "title=stack");
 	run("RGB Color");
-	step1();
+	simplifyColors();
 	run("RGB Stack");
 	stack = getImageID();
 
+	// fill the panel
 	for (column = 0; column < columns; column++)
 		for (row = 0; row < rows; row++) {
 			selectImage(stack);
 			index = column + columns * row;
 			i = inverts[index];
 			warholize(orders[index], i & 1, i & 2, i & 4);
+
+			// copy the false-color image into the clipboard
 			makeRectangle(0, 0, w, h);
 			run("Copy");
 			close();
+
+			// paste the clipboard, at the correct location
 			selectImage(result);
 			makeRectangle((w + 1) * column + 1, (h + 1) * row + 1, w, h);
 			run("Paste");
