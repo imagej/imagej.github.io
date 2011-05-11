@@ -629,13 +629,9 @@
 * [[Linear Kuwahara]] - file <tt>Kuwahara_LinearStructure_Filter_v3</tt>  -- ''java jar file''
 
 
-=== Process > Morphology ===
-
-* [[Gray Morphology]] - file <tt>GrayMorphology_</tt>  -- ''java jar file''
-
-
 === Process > Noise ===
 
+* [[ROF Denoise]] - file <tt>fiji.denoise.ROF_Denoise</tt>  -- ''java jar file''
 
 ==== Process > Noise > RandomJ ====
 
@@ -647,6 +643,11 @@
 * [[RandomJ Panel]] - file <tt>RJ_Panel</tt>  -- ''java jar file''
 * [[RandomJ Poisson]] - file <tt>RJ_Poisson</tt>  -- ''java jar file''
 * [[RandomJ Uniform]] - file <tt>RJ_Uniform</tt>  -- ''java jar file''
+
+
+=== Process > Morphology ===
+
+* [[Gray Morphology]] - file <tt>GrayMorphology_</tt>  -- ''java jar file''
 
 
 
