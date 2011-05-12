@@ -389,8 +389,10 @@ which saves a multiplication for many operations. It can also not be inlined by 
 
 The same applies for fwd(dim), bck(dim), move(dim), there a -- ++ and += can replace a array lookup...
 
-[[User:StephanP|StephanP]] 12:27, 4 May 2011 (CEST)
+[[User:StephanP|StephanP]] 12:27, 12 May 2011 (CEST)
 
 :What about having a 1D <code>RandomAccess</code> instead as we have done in <code>PlanarImg</code> for <code>Cursor</code>.  That could implement the <code>setPosition(long p, int d)</code> method ignoring <code>d</code>.  A 1D <code>RandomAccess</code> could, in addition, have the proposed method such that in situations where you know what you're doing (read: where you can cast), you have a shorter call available.  That approach would also relieve us from the need to implement that method in situations where it does not make sense at all, e.g. <code>ShapeImg</code>, that has no 1D. [[User:Saalfeld|Saalfeld]] 15:27, 12 May 2011 (CEST)
+
+I like this way of realizing it, maybe we could also implement it on ImgFactory level. If a Img implements RandomAccessible1D, the factory could also have a special create( long size ) method (in e.g. RandomAccessible1DFactory) which returns for example <I extends ArrayImg<T,?> & RandomAccessible1D>, so no unchecked casts are necessary. [[User:StephanP|StephanP]] 16:15, 12 May 2011 (CEST)
 
 [[Category:ImgLib]]
