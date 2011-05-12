@@ -8,13 +8,18 @@
 | latest version         = 14 Oct 2009
 | status                 = beta
 }}
-== Using the Script Editor ==
 
 The script editor is an invaluable help when writing scripts in any of Fiji's supported [[Scripting comparisons|languages]].
+
+=== Starting the editor ===
 
 To get started, start up the script editor:
 
 [[Image:Script-Editor-new.jpg]]
+
+There is also the keyboard shortcut ''{'' to open the editor.
+
+=== Choosing a language ===
 
 Then choose a language from the language menu:
 
@@ -24,7 +29,9 @@ Now you can write your script. In this tutorial, Jython was chosen as scripting 
 
 [[Image:Script-Editor-first-script.jpg]]
 
-Once you are satisfied with the script, run it.  This does not require saving, but of course, you should save your script later, when it works.
+=== Running the script ===
+
+Once you are satisfied with the script, run it.  This does not require saving, but of course you should save your script later when it works.
 
 [[Image:Script-Editor-run.jpg]]
 
@@ -34,6 +41,10 @@ You can use all of ImageJ's classes right away.  Here is an example that shows a
 For details how to  write dialogs in the different scripting languages, see [[Scripting comparisons]]
 
 [[Image:Script-Editor-dialog.jpg]]
+
+=== Further reading ===
+
+There are introductions into the following supported languages: [[Introduction into Macro Programming|ImageJ Macro Language]], [[Beanshell_Scripting|Beanshell]], [[Javascript_Scripting|Javascript]], [[JRuby_Scripting|JRuby]], [[Jython_Scripting|Jython]], and [[Clojure_Scripting|Clojure]] (see also [[Scripting Help]]).
 
 [[Category:Plugins]]
 [[Category:Tutorials]]
