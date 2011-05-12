@@ -385,7 +385,7 @@ public void setPositionDim0( final int pos )
 }
 </source>
 
-which saves a multiplication for almost every operation. It can also not be inlined as container.steps[ 0 ] cannot be made final, it could potentially always be changed...
+which saves a multiplication for almost every operation. It can also not be inlined by the JIT compiler as container.steps[ 0 ] cannot be made final, it could potentially always be changed...
 
 [[User:StephanP|StephanP]] 12:27, 4 May 2011 (CEST)
 
