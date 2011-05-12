@@ -365,7 +365,7 @@ Tobias pointed out that we should not as it is not clear if it is a getter or se
 
 Should we maybe have fast setPosition-calls for dimension 0?
 
-In many algorithms we will need 1-dimensional Img<T>, like Histograms, Gauss and many more. A fast setPositionDim0( long position ) could be quite some speedup for arrays as 
+In many algorithms we will need 1-dimensional Img<T>, like Histograms, Gauss and many more. A fast setPositionDim0(position) could be quite some speedup for arrays as 
 
 <source lang="java">
 public void setPosition( final int pos, final int dim )
