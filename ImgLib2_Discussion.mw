@@ -368,21 +368,21 @@ Should we maybe have fast setPosition-calls for dimension 0?
 In many algorithms we will need 1-dimensional Img<T>, like Histograms, Gauss and many more. A fast setPositionDim0( long position ) could be quite some speedup for arrays as 
 
 <source lang="java">
-	public void setPosition( final int pos, final int dim )
-	{
-		type.incIndex( ( pos - position[ dim ] ) * container.steps[ dim ] );
-		position[ dim ] = pos;
-	}
+public void setPosition( final int pos, final int dim )
+{
+	type.incIndex( ( pos - position[ dim ] ) * container.steps[ dim ] );
+	position[ dim ] = pos;
+}
 </source>
 
 could simply become
 
 <source lang="java">
-	public void setPositionDim0( final int pos )
-	{
-		type.incIndex( pos - position[ 0 ] );
-		position[ 0 ] = pos;
-	}
+public void setPositionDim0( final int pos )
+{
+	type.incIndex( pos - position[ 0 ] );
+	position[ 0 ] = pos;
+}
 </source>
 
 which saves a multiplication for almost every operation. It can also not be inlined as container.steps[ 0 ] cannot be made final, it could potentially always be changed...
