@@ -45,7 +45,7 @@ IJ.run("Update Fiji");
 
 I can no longer move any windows or use the X button on the title bar to close them (the window decorations all disappear).
 
-This is not a Fiji problem but a bug in the Ubuntu Desktop Effects.
+This is not a Fiji problem but a bug in the NVIDIA driver.
 One solution is described in:
 http://www.pendrivelinux.com/ubuntu-desktop-effects-fixing-the-missing-titlebar/
 
@@ -53,15 +53,15 @@ Edit (as root) the file /etc/X11/xorg.conf and add the following 2 options in ''
    Option "AddARGBVisuals" "True"
    Option "AddARGBGLXVisuals" "True"
 
-Another solution is to switch off the Desktop Effects.
-
-Please beware: After an update to 11.04, the problem reappeared. The xorg.conf remained with the above corrections but the title bar was gone. In this case it is sufficient to log out and then log in again. You can also restart the window manager without logging out by running
+The above eases the problem but does not completely solve it. The solution will be an updated driver from NVIDIA when it is available. If you choose to remain with Unity or Ubuntu Classic, you may log out and then log in again when the problem appears. You can also restart the window manager without logging out by running
    metacity --replace &
 
 or
    compiz --replace &
 
 in a terminal. This restores the window decorations but all windows from all virtual desktops end in the first one.
+
+Another solution is to install Unity-2D and choose it when you log in. This seems to work well. It also solves a number of general display problems.
 
 = [[3D Viewer]] =
 
