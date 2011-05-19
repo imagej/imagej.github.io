@@ -1,11 +1,26 @@
 {{Infobox Plugin
 | name                   = Advanced Weka Segmentation
 | software               = Fiji
-| author                 = [[User:Iarganda | Ignacio Arganda-Carreras]], Albert Cardona, Verena Kaynig
+| author                 = [[User:Iarganda | Ignacio Arganda-Carreras]], [http://albert.rierol.net Albert Cardona], [http://www.kaynig.de Verena Kaynig]
 | maintainer             = [[User:Iarganda | Ignacio Arganda-Carreras]]
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Trainable_Segmentation/trainableSegmentation;h=c38082682b56b221492a84f48fcc586d28dbd6fa;hb=HEAD on gitweb]
 | released               = May 19<sup>th</sup>, 2011
 | latest version         = May 19<sup>th</sup>, 2011
 | status                 = BETA, active
-| category               = [[:Category:Segmentation|Segmentation]]
+| category               = [[:Category:Segmentation|Segmentation]], [[:Category:Machine Learning|Machine Learning]]
 }}
+
+== Introduction ==
+The [[Advanced Weka Segmentation]] is a Fiji plugin that combines a collection of machine learning algorithms with a set of selected image features to produce pixel-based segmentations. [http://www.cs.waikato.ac.nz/ml/weka/ Weka] (Waikato Environment for Knowledge Analysis) can itself be called from the plugin. It contains a collection of visualization tools and algorithms for data analysis and predictive modeling, together with graphical user interfaces for easy access to this functionality. As described on their wikipedia site, the advantages of [http://www.cs.waikato.ac.nz/ml/weka/ Weka] include: 
+
+* freely availability under the GNU General Public License 
+
+* portability, since it is fully implemented in the Java programming language and thus runs on almost any modern computing platform 
+
+* a comprehensive collection of data preprocessing and modeling techniques 
+
+* ease of use due to its graphical user interfaces
+
+[http://www.cs.waikato.ac.nz/ml/weka/ Weka] supports several standard data mining tasks, more specifically, data preprocessing, clustering, classification, regression, visualization, and feature selection.
+
+The main goal of this plugin is to work as a '''bridge between the Machine Learning and the Image Processing''' fields. It provides the framework to use and, more important, '''compare''' any available classifier to perform image segmentation based on pixel classification.
