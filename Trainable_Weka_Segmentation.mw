@@ -58,3 +58,33 @@ Based on the current classifier, the probability of each pixel of belonging to e
 This button calls the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] code to generate the model performance chart, i.e. the [http://en.wikipedia.org/wiki/Receiver_operating_characteristic ROC], [http://en.wikipedia.org/wiki/Precision_and_recall precision/recall], etc. curves based on the training data.
 
 [[Image:AWS-Plot-result.png|thumb|300px|Weka model performance chart. Displayed after clicking on "Plot result"]]
+
+=== Options panel ===
+
+==== Apply classifier ====
+
+By clicking on this button we can apply the current classifier to any 2D image or stack of images we have in our file system. A dialog will pop up to ask the user for the input image or stack and it will perform its segmentation based on the current classifier and ---consequently--- selected features. This may take a while depending on the number and size of the input images and the number of cores of the machine. After finishing, the input image (or stack) and its corresponding segmentation will be displayed.
+
+==== Load classifier ====
+
+Here we can load any previously saved classifier. The plugin will check and adjust the selected features with the attributes of this new classifier. The classifier file format is the one used in [http://www.cs.waikato.ac.nz/ml/weka/ Weka] (.model).
+
+==== Save classifier ====
+
+It save the current classifier into a file, under the standard [http://www.cs.waikato.ac.nz/ml/weka/ Weka] format (.model). This allows us to store classifiers and apply them later on different sessions (option not available in the simple Trainable Segmentation plugin).
+
+==== Load data ====
+
+Here we can load the data (in [http://www.cs.waikato.ac.nz/ml/weka/ Weka] format) from previous traces on the same or other image or stack. Again, the plugin will check and force the consistency between the loaded data and the current image, features and classes. The input file format is the standard Weka format: ARFF. Notice the traces (regions of interests selected by the user) are not saved but their corresponding feature vectors.
+
+==== Save data ====
+
+With this button we can save the current trace information into a data file that we can handle later with the plugin or the Weka Explorer itself. The plugin will save the feature vectors derived from the pixels belonging to each trace into an ARFF file at a location chosen by the user.
+
+==== Create new class ====
+
+The default number of classes of the plugin is two, but through this button we can increase up to 5 the classes. The name of the new classes can be changed on the Settings dialog.
+
+==== Settings ====
+
+The rest of tunable parameters of the plugin can be changed on the Settings dialog, which is displayed when clicking on this button.
