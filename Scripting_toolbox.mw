@@ -20,13 +20,37 @@ imp.show();
 </source>
 
 
-* Python
+==== Python ====
 
-* Ruby
+<source lang="python">
+from ij import IJ
 
-* Clojure
+path = "/path/to/file"
+imp = IJ.openImage(path)
+imp.show()
+</source>
 
-* Beanshell
+==== Ruby ====
+
+==== Clojure ====
+
+<source lang="lisp">
+(import 'ij.IJ)
+
+(let [path "/path/to/file"
+      imp (IJ/openImage path)]
+  (.show imp))
+</source>
+
+==== Beanshell ====
+
+<source lang="java">
+import ij.IJ;
+
+path = "/path/to/file";
+imp = IJ.openImage(path);
+imp.show();
+</source>
 
 === Opening an image using Bio-Formats ===
 ==== Macro ====
