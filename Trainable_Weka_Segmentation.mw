@@ -39,3 +39,15 @@ The user can pan, zoom in and out, or scroll between slices (if the input image 
 This button activates the training process. One trace of two classes is the minimum required to start training. The first time this button is pressed, the features of the input image will be extracted and converted to a set of vectors of float values, which is the format the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] classifiers are expecting. This step can take some time depending on the size of the images, the number of features and the number of cores of the machine where Fiji is running. The feature calculation is done in a completely multi-thread fashion. The features will be only calculated the first time we train after starting the plugin or after changing any of the feature options.
 
 If the training ends correctly, then the displayed image will be completely segmented and the result will be overlayed with the corresponding class colors.  Notice that all buttons are now enabled, since all their functionalities are possible after training.
+
+==== Toggle overlay ====
+
+This button activates and deactivates the overlay of the result image. The transparency of the overlay image can be adjusted in the Settings dialog.
+
+==== Create result ====
+
+It creates displays the resulting image. This image is equivalent to the current overlay.
+
+==== Get probability ====
+
+Based on the current classifier, the probability of each pixel of belonging to each class is displayed on a 32-bit hyperstack.
