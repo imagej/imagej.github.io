@@ -115,6 +115,8 @@ for (i=0; i<list.length; i++) {
   }
 }</source>
 
+See also the tutorial ''[[How to apply a common operation to a complete directory]]''.
+
 * Javascript
 
 * Python
