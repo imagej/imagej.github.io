@@ -221,6 +221,23 @@ if (manager != null) {
 }
 </source>
 
+To get just the selected ROIs, use code similar to this:
+
+<source lang="java">
+import java.awt.List;
+...
+RoiManager manager = RoiManager.getInstance();
+if (manager != null) {
+	String[] labels = manager.getList().getSelectedItems();
+	Hashtable<String, Roi> table = (Hashtable<String, Roi>)manager.getROIs();
+	for (String label : labels) {
+		int slice = manager.getSliceNumber(label);
+		Roi roi = table.get(label);
+		... <do something with the ROI and the slice> ...
+	}
+}
+</source>
+
 == Show a results table ==
 
 First you need to get the results table instance (or create one):
