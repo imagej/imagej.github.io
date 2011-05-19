@@ -92,7 +92,7 @@ With this button we can save the current trace information into a data file that
 The default number of classes of the plugin is two, but through this button we can increase up to 5 the classes. The name of the new classes can be changed on the Settings dialog.
 
 ==== Settings ====
-
+[[Image:AWS-Settings.png|thumb|200px|Settings dialog of the Advanced Segmentation Plugin]]
 The rest of tunable parameters of the plugin can be changed on the Settings dialog, which is displayed when clicking on this button.
 
 [[Category:Plugins]]
