@@ -52,3 +52,7 @@ It creates displays the resulting image. This image is equivalent to the current
 ==== Get probability ====
 
 Based on the current classifier, the probability of each pixel of belonging to each class is displayed on a 32-bit hyperstack.
+
+==== Plot result ====
+
+This button calls the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] code to generate the model performance chart, i.e. the [http://en.wikipedia.org/wiki/Receiver_operating_characteristic ROC], [http://en.wikipedia.org/wiki/Precision_and_recall precision/recall], etc. curves based on the training data.
