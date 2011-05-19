@@ -94,3 +94,7 @@ The default number of classes of the plugin is two, but through this button we c
 ==== Settings ====
 
 The rest of tunable parameters of the plugin can be changed on the Settings dialog, which is displayed when clicking on this button.
+
+[[Category:Plugins]]
+[[Category:Segmentation]]
+[[Category:Machine Learning]]
