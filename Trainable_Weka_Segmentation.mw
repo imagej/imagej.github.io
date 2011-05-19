@@ -40,8 +40,9 @@ This button activates the training process. One trace of two classes is the mini
 
 If the training ends correctly, then the displayed image will be completely segmented and the result will be overlayed with the corresponding class colors.  Notice that all buttons are now enabled, since all their functionalities are possible after training.
 
-==== Toggle overlay ====
 
+==== Toggle overlay ====
+[[Image:AWS-Probability-maps.png|thumb|300px|Example of output of the "Get probability" button]]
 This button activates and deactivates the overlay of the result image. The transparency of the overlay image can be adjusted in the Settings dialog.
 
 ==== Create result ====
@@ -49,5 +50,5 @@ This button activates and deactivates the overlay of the result image. The trans
 It creates displays the resulting image. This image is equivalent to the current overlay.
 
 ==== Get probability ====
-[[Image:AWS-Probability-maps.png|thumb|300px|Example of output of the "Get probability" button]]
+
 Based on the current classifier, the probability of each pixel of belonging to each class is displayed on a 32-bit hyperstack.
