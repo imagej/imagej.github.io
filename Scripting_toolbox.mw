@@ -16,6 +16,7 @@ importClass(Packages.ij.IJ);
 
 var path = "/path/to/file";
 var imp = IJ.openImage(path);
+imp.show();
 </source>
 
 
@@ -26,7 +27,6 @@ var imp = IJ.openImage(path);
 * Clojure
 
 * Beanshell
-
 
 === Opening an image using Bio-Formats ===
 ==== Macro ====
