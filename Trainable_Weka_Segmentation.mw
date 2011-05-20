@@ -157,6 +157,18 @@ We can save the features as a stack of images by clicking on this button. It wil
 ===== Result overlay opacity =====
 This slider sets the opacity of the resulting overlay image. Depending on the image contrast of our input images, we might be interested on adjusting this value.
 
+==== WEKA ====
+
+The Weka button launches the Weka chooser, where we can start all the applications available in Weka. 
+
+=== Macro language compatibility ===
+Advanced Weka Segmentation is completely compatible with the popular ImageJ macro language. Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
+[[Image:AWS-macro-recording.png|thumb|760px|Example of macro recording of the Advanced Weka Segmentation tools.]]
+
+== Library use ==
+
+The plugin GUI is independent from the plugin methods. The methods are implemented in a separate file in a library-style fashion, so they can be called from any other Fiji plugin without having to interact with the GUI. This facilitates its integration with other plugins and allows easy scripting.
+
 
 [[Category:Plugins]]
 [[Category:Segmentation]]
