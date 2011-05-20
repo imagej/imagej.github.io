@@ -141,6 +141,11 @@ Each of the 6 resulting images is a feature. Hence pixels in lines of similarly 
 * '''Minimum sigma''': minimum radius of the filters used to create the features. By default 1 pixel.
 * '''Maximum sigma''': maximum radius of the filters used to create the features. By default 16 pixels.
 
+===== Classifier options =====
+
+The default classifier is a random forest with 200 trees and 2 random features per node. However the user can select any available classifier in the Weka by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
+
+
 [[Category:Plugins]]
 [[Category:Segmentation]]
 [[Category:Machine Learning]]
