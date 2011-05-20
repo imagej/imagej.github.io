@@ -136,10 +136,10 @@ Each of the 6 resulting images is a feature. Hence pixels in lines of similarly 
 
 ===== Feature options =====
 
-* Membrane thickness: expected value of the membrane thickness, 1 pixel by default. The more accurate, the more precise the filter will be.
-* Membrane patch size: this represents the size NxN of the field of view for the membrane projection filters.
-* Minimum sigma: minimum radius of the filters used to create the features. By default 1 pixel.
-* Maximum sigma: maximum radius of the filters used to create the features. By default 16 pixels.
+* '''Membrane thickness''': expected value of the membrane thickness, 1 pixel by default. The more accurate, the more precise the filter will be.
+* '''Membrane patch size''': this represents the size NxN of the field of view for the membrane projection filters.
+* '''Minimum sigma''': minimum radius of the filters used to create the features. By default 1 pixel.
+* '''Maximum sigma''': maximum radius of the filters used to create the features. By default 16 pixels.
 
 [[Category:Plugins]]
 [[Category:Segmentation]]
