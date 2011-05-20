@@ -145,6 +145,18 @@ Each of the 6 resulting images is a feature. Hence pixels in lines of similarly 
 [[Image:AWS-Classifier-selection.png|thumb|200px|Classifier selection in the Advanced Weka Segmentation settings dialog.]]
 The default classifier is a random forest with 200 trees and 2 random features per node. However the user can select any available classifier in the Weka by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
 
+===== Class names =====
+The classes can be renamed using these text boxes.
+
+===== Homogenize classes =====
+The classsifier uses by the default all the user traces to train. By clicking on this option, we filter first the classes in order to provide a homogeneous distribution of the samples. This implies that the less numerous classes will duplicate some of their samples and the more populated classes will lose some of their samples for the sake of even distribution. This option is hardly recommended if we want to give the same importance to all classes. An alternative is to use the Weka CostSensitiveClassifier and set a corresponding cost matrix.
+
+===== Save feature stack =====
+We can save the features as a stack of images by clicking on this button. It will use the last feature configuration that is available.
+
+===== Result overlay opacity =====
+This slider sets the opacity of the resulting overlay image. Depending on the image contrast of our input images, we might be interested on adjusting this value.
+
 
 [[Category:Plugins]]
 [[Category:Segmentation]]
