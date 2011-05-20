@@ -61,7 +61,9 @@ Based on the current classifier, the probability of each pixel of belonging to e
 
 ==== Plot result ====
 
-This button calls the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] code to generate the model performance chart, i.e. the [http://en.wikipedia.org/wiki/Receiver_operating_characteristic ROC], [http://en.wikipedia.org/wiki/Precision_and_recall precision/recall], etc. curves based on the training data.
+This button calls the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] code to generate the model performance chart, i.e. the [http://en.wikipedia.org/wiki/Receiver_operating_characteristic ROC], [http://en.wikipedia.org/wiki/Precision_and_recall precision/recall], etc. curves based on the training data. 
+
+These curves allow to visualize the performance of the classifier based on the different thresholds that can be applied to the probability maps.
 
 [[Image:AWS-Plot-result.png|thumb|300px|Weka model performance chart. Displayed after clicking on "Plot result"]]
 
