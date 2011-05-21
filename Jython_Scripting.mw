@@ -1290,5 +1290,5 @@ Notice, though, that <b>you don't need to do the .jar packaging at all</b>. Just
 *[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/Measure_AreaLists.py;hb=HEAD Measure AreaList] in TrakEM2.
 
 = See also =
-*Albert Cardona's crash course in [http://www.ini.uzh.ch/~acardona/fiji-tutorial/ Jython scripting with Fiji]. 
+*Albert Cardona's crash course in [http://www.ini.uzh.ch/~acardona/fiji-tutorial/index.html Jython scripting with Fiji]. 
 *Jython for [[TrakEM2 Scripting]].
