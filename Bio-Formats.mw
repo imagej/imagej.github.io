@@ -61,3 +61,26 @@ The '''LOCI Plugins Shortcut Window''' is a small window with a quick-launch but
 === Update LOCI Plugins ===
 
 The '''Update LOCI Plugins''' command will check online for updates to the LOCI Plugins. In the case of Fiji, we recommend that you do not use this method of update, but instead use the [[Update_Fiji|Fiji Updater]].
+
+== Scripting ==
+
+Bio-Formats has a high-level scripting interface, accessible by Java and all scripting languages supported by Fiji (but not the ImageJ macro language). Javascript example:
+
+<source lang="javascript">
+String id = "/path/to/myFile.ext";
+ImagePlus[] imps = BF.openImagePlus(id);
+</source>
+
+If needed, import options can be set:
+
+<source lang="javascript">
+String id = "/path/to/myFile.ext";
+ImporterOptions options = new ImporterOptions();
+options.setId(id);
+options.setAutoscale(true);
+options.setCrop(true);
+options.setCropRegion(0, new Region(x, y, w. h));
+options.setColorMode(ImporterOptions.COLOR_MODE_COMPOSITE);
+//...etc.
+ImagePlus[] imps = BF.openImagePlus(options);
+</source>
