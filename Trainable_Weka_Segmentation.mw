@@ -83,7 +83,7 @@ It save the current classifier into a file, under the standard [http://www.cs.wa
 
 ==== Load data ====
 
-Here we can load the data (in [http://www.cs.waikato.ac.nz/ml/weka/ Weka] format) from previous traces on the same or other image or stack. Again, the plugin will check and force the consistency between the loaded data and the current image, features and classes. The input file format is the standard Weka format: ARFF. Notice the traces (regions of interests selected by the user) are not saved but their corresponding feature vectors.
+Here we can load the data (in [http://www.cs.waikato.ac.nz/ml/weka/ Weka] format) from previous traces on the same or other image or stack. Again, the plugin will check and force the consistency between the loaded data and the current image, features and classes. The input file format is the standard Weka format: [http://weka.wikispaces.com/ARFF+%28stable+version%29 ARFF]. Notice the traces (regions of interests selected by the user) are not saved but their corresponding feature vectors.
 
 ==== Save data ====
 
