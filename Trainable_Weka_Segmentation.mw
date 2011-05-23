@@ -27,7 +27,7 @@ The [[Advanced Weka Segmentation]] is a Fiji plugin that combines a collection o
 
 * ease of use due to its graphical user interfaces
 
-[http://www.cs.waikato.ac.nz/ml/weka/ Weka] supports several standard data mining tasks, more specifically, data preprocessing, clustering, classification, regression, visualization, and feature selection.
+[http://www.cs.waikato.ac.nz/ml/weka/ Weka] supports several standard [http://en.wikipedia.org/wiki/Data_mining data mining] tasks, more specifically, data preprocessing, [http://en.wikipedia.org/wiki/Cluster_analysis clustering], [http://en.wikipedia.org/wiki/Classification_(machine_learning) classification], [http://en.wikipedia.org/wiki/Regression_analysis regression], visualization, and [http://en.wikipedia.org/wiki/Feature_selection feature selection].
 
 The main goal of this plugin is to work as a '''bridge between the Machine Learning and the Image Processing''' fields. It provides the framework to use and, more important, '''compare''' any available classifier to perform image segmentation based on pixel classification.
 
