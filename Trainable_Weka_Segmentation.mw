@@ -164,7 +164,7 @@ This slider sets the opacity of the resulting overlay image. Depending on the im
 The Weka button launches the Weka chooser, where we can start all the applications available in Weka. 
 
 === Macro language compatibility ===
-[Advanced Weka Segmentation] is completely compatible with the popular ImageJ macro language. Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
+[[Advanced Weka Segmentation]] is completely compatible with the popular ImageJ macro language. Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
 [[Image:AWS-macro-recording.png|thumb|760px|Example of macro recording of the Advanced Weka Segmentation tools.]]
 
 == Library use ==
