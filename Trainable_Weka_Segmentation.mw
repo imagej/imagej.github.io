@@ -91,7 +91,7 @@ With this button we can save the current trace information into a data file that
 
 ==== Create new class ====
 
-The default number of classes of the plugin is two, but through this button we can increase up to 5 the classes. The name of the new classes can be changed on the Settings dialog.
+The default number of classes of the plugin is two, but through this button we can increase up to 5 the classes. The name of the new classes can be changed on the [[Advanced_Weka_Segmentation#Settings|Settings dialog]].
 
 ==== Settings ====
 [[Image:AWS-Settings.png|thumb|200px|Settings dialog of the Advanced Segmentation Plugin]]
