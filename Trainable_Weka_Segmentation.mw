@@ -48,7 +48,7 @@ If the training ends correctly, then the displayed image will be completely segm
 
 
 ==== Toggle overlay ====
-[[Image:AWS-Probability-maps.png|thumb|250px|Example of output of the "Get probability" button]]
+[[Image:AWS-Probability-maps.png|thumb|250px|Example of resulting probability map displayed as a hyperstack]]
 This button activates and deactivates the overlay of the result image. The transparency of the overlay image can be adjusted in the [[Advanced_Weka_Segmentation#Settings|Settings dialog]].
 
 ==== Create result ====
