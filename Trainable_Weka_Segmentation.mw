@@ -98,7 +98,7 @@ The default number of classes of the plugin is two, but through this button we c
 The rest of tunable parameters of the plugin can be changed on the Settings dialog, which is displayed when clicking on this button.
 
 ===== Training features =====
-Here we can select and deselect the training features, which are the key of the learning procedure. The plugin creates a stack of images ---one image for each feature. For instance, if only Gaussian Blur is selected as a feature, the classifier will be trained on the original image and some blurred versions to it with different <math>\sigma</math> parameters for the Gaussian. 
+Here we can select and deselect the training features, which are the key of the learning procedure. The plugin creates a stack of images ---one image for each feature. For instance, if only [http://en.wikipedia.org/wiki/Gaussian_blur Gaussian Blur] is selected as a feature, the classifier will be trained on the original image and some blurred versions to it with different <math>\sigma</math> parameters for the Gaussian. 
 
 The different available features are:
 * '''Gaussian blur''': performs <math>n</math> individual convolutions with Gaussian
