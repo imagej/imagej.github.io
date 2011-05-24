@@ -105,7 +105,7 @@ The different available features are:
 kernels with <math>\sigma</math> equal to <math>1, 2, 4... 2^{n}</math>. The
 larger the radius the more blurred the image becomes until the pixels
 are homogeneous (by default <math>n=16</math>).
-* '''Sobel filter''': calculates the gradient at each pixel. Gaussian blurs
+* '''Sobel filter''': calculates the [http://en.wikipedia.org/wiki/Sobel_filter gradient at each pixel]. Gaussian blurs
 with <math>\sigma=1, 2, 4... 2^{n}</math> are performed prior to
 the filter.
 * '''Hessian''': Calculates a Hessian matrix <math>H</math> at each pixel. Prior to the application of any filters, a Gaussian blur with <math>\sigma=1, 2,
