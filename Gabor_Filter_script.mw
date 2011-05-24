@@ -142,3 +142,11 @@ result= new ImagePlus ("Gabor stack projections", resultStack) ;
 IJ.run(result, "Enhance Contrast", "saturated=0.4 normalize normalize_all");
 result.show();
 </source>
+
+==See also==
+
+* [[Beanshell Scripting]]
+* [[Scripting Help]]
+* [[Scripting_comparisons]]
+
+[[Category:Scripting]]
