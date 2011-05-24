@@ -57,7 +57,7 @@ It creates and displays the resulting image. This image is equivalent to the cur
 
 ==== Get probability ====
 
-Based on the current classifier, the probability of each pixel of belonging to each class is displayed on a 32-bit hyperstack.
+Based on the current classifier, the probability that each pixel belongs to each class is displayed on a 32-bit hyperstack.
 
 ==== Plot result ====
 
