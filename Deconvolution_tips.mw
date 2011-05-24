@@ -3,7 +3,7 @@ Compiled by E. Crowell and D. J. White
 
 === What the hell is the point spread function (PSF) and why should I care?===
 The PSF is the image of a point source of light as imaged through a lens (or set of lenses)
-It is the function (shape) describing the diffraction of light in an optical system. Foir a micrscope systems, it can be derived from processed images of sub-resolution fluorescent beads, or an approximation can be calculated from optical theory equations.
+It is the function (shape) describing the diffraction of light in an optical system. For microscope systems, it can be derived from processed images of sub-resolution fluorescent beads, or an approximation can be calculated from optical theory equations.
 
 Three different types of PSF images are useful:
 #The raw measured PSF obtained by imaging sub-resolution size beads using the optical system.
