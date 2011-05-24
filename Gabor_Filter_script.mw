@@ -9,7 +9,9 @@ Five different parameters can be adjusted:
 
 As result, the script will display the set of filters, the filtered version of the original image for each orientation, and the projections (average, min, max, mean and variance) of the stack of filtered images.
 
+== Example ==
 [[Image:Montage-Gabor-filter-5-angles.png|thumb|760px|Demonstration of a Gabor filter applied to the Leaf sample image. Five orientations are shown on the right (0°, 36°, 72°, 108° and 144°). The original Leaf picture is shown on the upper-left corner.]]
+
 
 == Code ==
 <source lang="java">
