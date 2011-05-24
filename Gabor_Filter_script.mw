@@ -1,6 +1,4 @@
-This is an example of how to create [http://en.wikipedia.org/wiki/Gabor_filter Gabor filters] in Fiji using Beanshell scripting.
-
-The script will create and apply a set of Gabor filters to the currently selected image.
+This is an example of how to create [http://en.wikipedia.org/wiki/Gabor_filter Gabor filters] in Fiji using Beanshell scripting. The script will create and apply a set of Gabor filters to the currently selected image.
 
 Five different parameters can be adjusted:
 * Sigma, which defines the size of the Gaussian envelope
@@ -9,11 +7,9 @@ Five different parameters can be adjusted:
 * Fx, the frequency of the sinusoidal component
 * nAngles, the number of filter orientations
 
+As result, the script will display the set of filters, the filtered version of the original image for each orientation, and the projections (average, min, max, mean and variance) of the stack of filtered images.
+
 [[Image:Montage-Gabor-filter-5-angles.png|thumb|760px|Demonstration of a Gabor filter applied to the Leaf sample image. Five orientations are shown on the right (0°, 36°, 72°, 108° and 144°). The original Leaf picture is shown on the upper-left corner.]]
-
-
-
-
 
 == Code ==
 <source lang="java">
@@ -115,7 +111,7 @@ for (i=0; i<nAngles; i++)
 				
 			
 
-// Normalize filtered stack (it seems necessary to have proper results)
+// Normalize filtered stack
 c = new ContrastEnhancer();
 for(int i=1 ; i <= is.getSize(); i++)
 {
@@ -125,9 +121,6 @@ for(int i=1 ; i <= is.getSize(); i++)
 
 projectStack = new ImagePlus("filtered stack",is);
 IJ.run(projectStack, "Enhance Contrast", "saturated=0.4 normalize normalize_all");
-//projectStack.updateAndDraw();
-//projectStack.show();
-
 				
 resultStack = new ImageStack(width, height);
 				
