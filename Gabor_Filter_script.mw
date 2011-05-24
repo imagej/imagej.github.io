@@ -37,7 +37,7 @@ psi = Math.PI / 4.0 * 0;
 Fx = 3.0;
 
 // Number of diferent orientation angles to use
-nAngles = 30;
+nAngles = 5;
 
 // copy original image and transform it to 32 bit 
 originalImage = IJ.getImage();
