@@ -144,7 +144,7 @@ Each of the 6 resulting images is a feature. Hence pixels in lines of similarly 
 
 ===== Classifier options =====
 [[Image:AWS-Classifier-selection.png|thumb|200px|Classifier selection in the Advanced Weka Segmentation [[Advanced_Weka_Segmentation#Settings|Settings dialog]].]]
-The default classifier is a random forest with 200 trees and 2 random features per node. However the user can select any available classifier in the Weka by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
+The default classifier is a '''multi-threaded''' version of  [http://en.wikipedia.org/wiki/Random_forest random forest] with 200 trees and 2 random features per node. However the user can select any available classifier in the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
 
 ===== Class names =====
 The classes can be renamed using these text boxes.
