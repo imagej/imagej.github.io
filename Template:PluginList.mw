@@ -2,7 +2,6 @@
 
 * [[3D Viewer]] - file <tt>ImageJ_3D_Viewer</tt>  -- ''java jar file''
 * [[Volume Viewer]] - file <tt>Volume_Viewer</tt>  -- ''java jar file''
-* [[Optic Flow]] - file <tt>Optic_Flow</tt>  -- ''java jar file''
 
 
 === Plugins > Analyze ===
@@ -119,6 +118,7 @@
 * [[Snakuscule]] - file <tt>Snakuscule_</tt>  -- ''java jar file''
 * [[Statistical Region Merging]] - file <tt>SRM_</tt>  -- ''java jar file''
 * [[Trainable Segmentation]] - file <tt>trainableSegmentation.Trainable_Segmentation</tt>  -- ''java jar file''
+* [[Advanced Weka Segmentation]] - file <tt>trainableSegmentation.Weka_Segmentation</tt>  -- ''java jar file''
 * [[Segmentation Editor]] - file <tt>Segmentation_Editor</tt>  -- ''java jar file''
 * [[Level Sets]] - file <tt>levelsets.ij.LevelSet</tt>  -- ''java jar file''
 
@@ -129,7 +129,7 @@
 * [[Convolve (3D)]] - file <tt>process3d.Convolve_3d</tt>  -- ''java jar file''
 * [[Smooth (3D)]] - file <tt>process3d.Smooth_</tt>  -- ''java jar file''
 * [[ImgLib Algorithm Launcher]] - file <tt>AlgorithmLauncher("")</tt>  -- ''java jar file''
-* [[Anisotropic Diffusion 2D]] - file <tt>Anisotropic_Diffusion_2D</tt>  -- ''java jar file''
+* [[Anisotropic Diffusion 2D]] - file <tt>anisotropic_diffusion.Anisotropic_Diffusion_2D</tt>  -- ''java jar file''
 * [[Extended Depth of Field (Easy mode)...]] - file <tt>EDF_Easy_</tt>  -- ''java jar file''
 * [[Extended Depth of Field (Expert mode)...]] - file <tt>EDF_Expert_</tt>  -- ''java jar file''
 * [[Frangi Vesselness (imglib, experimental)]] - file <tt>fiji.features.Frangi_("")</tt>  -- ''java jar file''
@@ -330,6 +330,13 @@
 * [[LOCI Plugins Shortcut Window]] - file <tt>loci.plugins.shortcut.ShortcutPanel("")</tt>  -- ''java jar file''
 * [[-]] - file <tt></tt>  -- ''java jar file''
 * [[Update LOCI Plugins]] - file <tt>loci.plugins.Updater("")</tt>  -- ''java jar file''
+
+
+=== Plugins > Optic Flow ===
+
+* [[Gaussian Window MSE]] - file <tt>mpicbg.ij.plugin.MSEGaussianFlow</tt>  -- ''java jar file''
+* [[Integral Block MSE]] - file <tt>mpicbg.ij.plugin.MSEBlockFlow</tt>  -- ''java jar file''
+* [[Integral Block PMCC]] - file <tt>mpicbg.ij.plugin.PMCCBlockFlow</tt>  -- ''java jar file''
 
 
 
