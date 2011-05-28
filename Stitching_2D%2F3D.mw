@@ -12,7 +12,7 @@
 }}
 == Citation ==
 Please note that the Stitching, as well as other plugins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
-* S. Preibisch, S. Saalfeld, P. Tomancak (2009) Globally optimal stitching of tiled 3D microscopic image acquisitions", ''Bioinformatics'', '''25'''(11):1463-1465. [http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184 Webpage] [http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf PDF]
+* S. Preibisch, S. Saalfeld, P. Tomancak (2009) "Globally optimal stitching of tiled 3D microscopic image acquisitions", ''Bioinformatics'', '''25'''(11):1463-1465. [http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184 Webpage] [http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf PDF]
 
 == Introduction ==
 There is an increasing demand to image large biological specimen at high resolution. Typically those specimen do not fit in the field of view of the microscope. To overcome this drawback, motorized stages moving the sample are used to create a tiled scan of the whole specimen. The physical coordinates provided by the microscope stage are not precise enough to allow reconstruction (”Stitching”) of the whole image from individual image stacks.
