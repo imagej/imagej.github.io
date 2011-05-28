@@ -1,3 +1,7 @@
+= Citation =
+Please note that the ImgLib, as well as other plugins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
+* S. Preibisch, P. Tomancak, S. Saalfeld (2010) "Into ImgLib – Generic Image Processing in Java", ''ImageJ User and Developer Conference 2010'' (1):72-76. [http://imagejconf.tudor.lu/program/workshops/preibisch/start Webpage] [http://fly.mpi-cbg.de/preibisch/pubs/imagejpaper2010.pdf PDF]
+
 = Introduction =
 
 In ImageJ, images can have a number of types (''8-bit gray'', ''8-bit with lookup table'', ''16-bit'', ''32-bit floating point'', ''RGB packed into a 32-bit int''), and up to 5 dimensions. Internally, every image is stored as an array of ''channels * slices * frames'' instances of the class ''ImageProcessor'', which in turn stores the pixel values as arrays of ''width * height'' values which have the native types ''byte'', ''short'', etc
