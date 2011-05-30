@@ -14,8 +14,10 @@
 ** ScaleSpace
 ** ...
 
+* '''JUnit''' tests should be placed in the respective subpackages and must not require any additional imports
+
+* '''Human tests''' that might display images, show graphs or require any other imports than the algorithm itself should be placed in the '''ImgLib2-Tests''' project following the path convention of the algorithm
+
 * Algorithms will have no direct dependency on the ImageJ2 plugin framework as they are generic; extra classes will provide access to the functionality of those algorithms
 
-* A '''Benchmarker class'' will be implemented to measure the performance on different containers, types, operating systems and machines
-
-*
+* A '''Benchmarker class''' will be implemented to measure the performance for different ''containers'', ''types'', ''operating systems'' and ''machines''
