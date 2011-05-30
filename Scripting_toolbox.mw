@@ -126,3 +126,37 @@ See also the tutorial ''[[How to apply a common operation to a complete director
 * Clojure
 
 * Beanshell
+
+=== Wait a given amount of time, or until user presses OK ===
+
+==== Macro ====
+
+<source lang="java">
+wait(100);
+</source>
+
+or
+
+<source lang="java">
+waitForUser();
+</source>
+
+==== Javascript ====
+
+<source lang="javascript">
+Thread.sleep(100);
+</source>
+
+or
+
+<source lang="javascript">
+
+</source>
+
+* Python
+
+* Ruby
+
+* Clojure
+
+* Beanshell
