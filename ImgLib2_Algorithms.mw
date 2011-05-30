@@ -6,6 +6,9 @@
 
 * More complicated algorithms that can provide significantly increased performance by implementing their own multithreading scenarios should implement the '''MultiThreading interface''' which allows to adjust the number of threads
 
+* Algorithms should take '''RandomAccessible''', '''RandomAccessibleInterval''' and/or '''Iterable''' as input, '''Img''' should be only used as temporary data structure
+** RandomAccessible
+
 * Algorithms will be split into Maven subpackages where each subpackage can manage its own dependencies and licenses
 ** [[Gauss ImgLib2 | Gauss]]
 ** [[FFT ImgLib2 | FFT]]
