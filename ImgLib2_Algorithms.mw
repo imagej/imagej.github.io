@@ -7,7 +7,9 @@
 * More complicated algorithms that can provide significantly increased performance by implementing their own multithreading scenarios should implement the '''MultiThreading interface''' which allows to adjust the number of threads
 
 * Algorithms should take '''RandomAccessible''', '''RandomAccessibleInterval''' and/or '''Iterable''' as input, '''Img''' should be only used as temporary data structure
-** RandomAccessible
+** '''RandomAccessible''' should be used if the OutOfBounds is defined externally (e.g. for gaussian convolution), an '''Interval''' should be passed as an extra parameter which defines the area that should be processed
+** '''RandomAccessibleInterval''' should be used if the algorithm defines its own OutOfBounds strategy (e.g. FFT) outside the given boundary; an '''Interval''' should be passed as an extra parameter which defines the area that should be processed
+** '''Iterable''' should be used if per-pixel operations are performed, here multithreading is delegated upstream
 
 * Algorithms will be split into Maven subpackages where each subpackage can manage its own dependencies and licenses
 ** [[Gauss ImgLib2 | Gauss]]
