@@ -1,6 +1,6 @@
 == Conventions for algorithm development in ImgLib2 ==
 
-* Algorithms should either implement '''java.lang.Runnable''' if they do not return an object or '''java.util.concurrent.Callable''' if they do
+* Algorithms should either implement '''java.lang.Runnable''' if they do not return an object or '''java.util.concurrent.Callable''' if they do; no further interface hierarchy will provided for now
 
 * Multithreading will be solved through the '''ops package''' for easily parallelizable algorithms
 
