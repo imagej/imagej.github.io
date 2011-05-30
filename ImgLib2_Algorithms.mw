@@ -7,11 +7,11 @@
 * More complicated algorithms that can provide significantly increased performance by implementing their own multithreading scenarios should implement the '''MultiThreading interface''' which allows to adjust the number of threads
 
 * Algorithms will be split into Maven subpackages where each subpackage can manage its own dependencies and licenses
-** Gauss
-** FFT
-** FourierConvolution
-** IntegralImg
-** ScaleSpace
+** [[Gauss ImgLib2 | Gauss]]
+** [[FFT ImgLib2 | FFT]]
+** [[FourierConvolution ImgLib2 | FourierConvolution]]
+** [[IntegralImg ImgLib2 | IntegralImg]]
+** [[ScaleSpace ImgLib2 | ScaleSpace]]
 ** ...
 
 * '''JUnit''' tests should be placed in the respective subpackages and must not require any additional imports
