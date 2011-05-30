@@ -18,6 +18,8 @@
 
 * '''Human tests''' that might display images, show graphs or require any other imports than the algorithm itself should be placed in the '''ImgLib2-Tests''' project following the path convention of the algorithm
 
+* Standard images for Human tests will not be part of the git repository but will be available as http-link; a special opener class '''net.imglib2.io.ImgIOUtils''' will provide download and permanent caching in the temporary directory of each computer
+
 * Algorithms will have no direct dependency on the ImageJ2 plugin framework as they are generic; extra classes will provide access to the functionality of those algorithms
 
 * A '''Benchmarker class''' will be implemented to measure the performance for different ''containers'', ''types'', ''operating systems'' and ''machines''
