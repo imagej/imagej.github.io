@@ -54,9 +54,6 @@ Edit (as root) the file /etc/X11/xorg.conf and add the following 2 options in ''
    Option "AddARGBGLXVisuals" "True"
 
 The above eases the problem but does not completely solve it. The solution will be an updated driver from NVIDIA when it is available. If you choose to remain with Unity or Ubuntu Classic, you may log out and then log in again when the problem appears. You can also restart the window manager without logging out by running
-   metacity --replace &
-
-or
    compiz --replace &
 
 in a terminal. This restores the window decorations but all windows from all virtual desktops end in the first one.
