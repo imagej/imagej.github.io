@@ -8,6 +8,8 @@ This is a list of the most commonly requested (or most important) wishlist items
 
 * It would be nice to optionally colour the paths by their SWC type.
 
+* Some people have requested an option to set paths to a particular colour via a right-click menu option in the path window.
+
 * Path finding and filling are very memory hungry in large stacks.  The data structures for storing the progress of these searches should be much more efficient.
 
 * It would be nice to be able to export paths to NeuroML as well as SWC.
