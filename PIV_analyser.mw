@@ -192,8 +192,7 @@ and drop it into the ''plugins'' menu. The plugin will appear in the ''Plugins >
 
 === Fiji ===
 
-The plugin is part of the Fiji distribution. You can find it in the ''Analyze > Optic Flow'' menu.
-
+The plugin is part of the Fiji distribution. You can find it in the ''Plugins > Optic Flow'' menu.
 
 == Usage ==
 
