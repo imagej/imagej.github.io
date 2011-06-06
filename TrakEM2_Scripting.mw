@@ -176,6 +176,83 @@ More convenient are the methods <i>scale</i>, <i>translate</i>, <i>rotate</i> an
 
 If you change the affine transform of a Displayable directly (by calling <i>getAffineTransform()</i> and then manipulating it), keep in mind that you will most likely screw up the internal cached maps for fast location of the Displayable object. To solve that, be sure to call <i>updateBucket()</i> on the affected Displayable object.
 
+
+=== Import images, montage them, blend them and save as .xml ===
+
+What follows is a small script that imports images from a single folder, sorting out which images go to what layer (section) by matching a regular expression pattern on the file name.
+
+Then the images are montaged layer-wise, and blended together (the borders of the overlapping images are faded out).
+
+Notice that, for this script to work for you, you will have to edit two lines:
+1. The source <i>folder</i> where images are to be found.
+2. The <i>pattern</i> to match, which dictates which image goes to which layer.
+
+Be sure as well to create as many layers as you need. If you don't know, use the  <i>getLayer</i> method on the <i>layerset</i> variable, which has the ability to create a new layer when asked to get one for a Z for which a layer doesn't exist yet.
+
+
+<source lang="python">
+# Albert Cardona 2011-06-05
+# Script for Colenso Speer
+
+import os, re
+
+#folder = "/path/to/folder/with/all/images/"
+folder = "/home/albert/Desktop/t2/example-data/images/2043_5_6_7"
+
+# 1. Create a TrakEM2 project
+project = Project.newFSProject("blank", None, folder)
+# OR: get the first open project
+# project = Project.getProjects().get(0)
+
+layerset = project.getRootLayerSet()
+
+#  2. Create 10 layers (or as many as you need)
+for i in range(10):
+  layerset.getLayer(i, 1, True)
+
+# ... and update the LayerTree:
+project.getLayerTree().updateList(layerset)
+# ... and the display slider
+Display.updateLayerScroller(layerset)
+
+# 3. To each layer, add images that have "_zN_" in the name
+#     where N is the index of the layer
+#     and also end with ".tif"
+filenames = os.listdir(folder)
+for i,layer in enumerate(layerset.getLayers()):
+  # EDIT the following pattern to match the filename of the images
+  # that must be inserted into section at index i:
+  pattern = re.compile(".*_z" + str(i) + "_.*\.tif")
+  for filename in filter(pattern.match, filenames):
+    filepath = os.path.join(folder, filename)
+    patch = Patch.createPatch(project, filepath)
+    layer.add(patch)
+  # Update internal quadtree of the layer
+  layer.recreateBuckets()
+
+# 4. Montage each layer independently
+from mpicbg.trakem2.align import Align, AlignTask
+param = Align.ParamOptimize()  # which extends Align.Param
+param.sift.maxOctaveSize = 512
+#  ... above, adjust other parameters as necessary
+# See:
+#    features: http://pacific.mpi-cbg.de/javadoc/mpicbg/trakem2/align/Align.Param.html
+#    transformation models: http://pacific.mpi-cbg.de/javadoc/mpicbg/trakem2/align/Align.ParamOptimize.html
+#    sift: http://pacific.mpi-cbg.de/javadoc/mpicbg/imagefeatures/FloatArray2DSIFT.Param.html
+AlignTask.montageLayers(param, layerset.getLayers(), False, False, False, False)
+
+# 5. Resize width and height of the world to fit the montages
+layerset.setMinimumDimensions()
+
+# 6. Blend images of each layer
+Blending.blendLayerWise(layerset.getLayers(), True, None)
+
+# 7. Save the project
+project.saveAs(os.path.join(folder, "montages.xml"), False)
+
+print "Done!"
+</source>
+
 = Manipulating Displayable objects =
 
 === Resetting the affine transform of all images in a Layer ===
