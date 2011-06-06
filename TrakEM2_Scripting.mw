@@ -184,10 +184,13 @@ What follows is a small script that imports images from a single folder, sorting
 Then the images are montaged layer-wise, and blended together (the borders of the overlapping images are faded out).
 
 Notice that, for this script to work for you, you will have to edit two lines:
-1. The source <i>folder</i> where images are to be found.
-2. The <i>pattern</i> to match, which dictates which image goes to which layer.
+  1. The source <i><b>folder</b></i> where images are to be found.
+  2. The <i><b>pattern</b></i> to match, which dictates which image goes to which layer.
 
 Be sure as well to create as many layers as you need. If you don't know, use the  <i>getLayer</i> method on the <i>layerset</i> variable, which has the ability to create a new layer when asked to get one for a Z for which a layer doesn't exist yet.
+
+Documentation you may want to look at:
+[http://pacific.mpi-cbg.de/javadoc/ini/trakem2/Project.html#newFSProject(java.lang.String,%20ini.trakem2.tree.TemplateThing,%20java.lang.String) Project.newFSProject], [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Patch.html#createPatch(ini.trakem2.Project,%20java.lang.String) Patch.createPatch], [http://pacific.mpi-cbg.de/javadoc/ini/trakem2/display/Layer.html#add(ini.trakem2.display.Displayable) Layer.add], [http://pacific.mpi-cbg.de/javadoc/mpicbg/trakem2/align/Align.html Align], [http://pacific.mpi-cbg.de/javadoc/mpicbg/trakem2/align/AlignTask.html AlignTask],
 
 
 <source lang="python">
