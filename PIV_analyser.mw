@@ -1,6 +1,3 @@
-<span style="color:red">Warning! Broken in Fiji-Heidelberg!</span> The version of this plugin that was shipped with the [[2010-06-14 - Fiji "Heidelberg" is out|Fiji-Heidelberg]] release is broken due to a bug in [[ImageJA]]. As of today (17/06/2010) this is fixed; just use the [[Fiji Updater]] to update ImageJA to a version that makes this plugin work.
-
-
 {{Infobox Plugin
 | name                   = PIV analyser
 | software               = ImageJ
