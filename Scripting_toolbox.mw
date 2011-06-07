@@ -160,3 +160,31 @@ or
 * Clojure
 
 * Beanshell
+
+=== Select multiple ROIs from ROI manager and combine them ===
+
+==== Macro ====
+<source lang="java">
+roiManager("select", newArray(0,2,4));
+roiManager("AND");
+</source>
+
+==== Javascript ====
+<source lang="javascript">
+importClass(Packages.ij.plugin.frame.RoiManager);
+
+rm = RoiManager.getInstance();
+rm.setSelectedIndexes([0,2,4]);
+rm.runCommand("AND");
+</source>
+
+* Python
+
+* Ruby
+
+* Clojure
+
+* Beanshell
+
+
+[[Category:Scripting]]
