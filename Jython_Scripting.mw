@@ -848,6 +848,86 @@ while len(chain) < len(points):
 print "Chain:", chain
 </source>
 
+=== Correct illumination in a stack: apply the illumination of one slice to all others ===
+
+The Multi-focus 3D Microscope (Sara Abrahamsson and Matz Gustafsson) takes a single image and later, computationally, 9 image planes are extracted.
+
+The middle slice usually has the desired illumination levels, while the other 8 slices (4 before and 4 after) do not. Here is a script to apply the illumination of the 5th slice to all other slices.
+
+The script takes a directory of images and processed them all, resulting in new images stored as "*-corrected.tif" in the same directory.
+
+<source lang="python">
+# Albert Cardona 2011-06-09 at HHMI Janelia Farm
+# Takes a stack of 9 slices
+# and then computes the mean and stdDev of slice number 5
+# and normalize the intensity of the other 8 slices
+# to that of slice 5.
+#
+# Created for Jiji Chen to process image stacks from
+# the multifocus 3D microscope from Matz Gustafsson
+# and Sara Abrahamsson
+
+
+from math import sqrt
+import os
+
+def computeMean(pixels):
+  return sum(pixels) / float(len(pixels))
+
+def computeStdDev(pixels, mean):
+  s = 0
+  for i in range(len(pixels)):
+    s += pow(pixels[i] - mean, 2)
+  return sqrt(s / float(len(pixels) -1))
+
+def process9ImagePlanes(imp):
+  # reference slice
+  refSlice = 5
+  ref = imp.getStack().getProcessor(5)
+  refMean = sum(ref.getPixels()) / float(len(ref.getPixels()))
+  refStdDev = computeStdDev(ref.getPixels(), refMean)
+
+  # New stack with the corrected slices
+  stack = ImageStack(ref.width, ref.height)
+
+  for i in range(1, 10):
+    # skip the reference slice
+    if 5 == i:
+      stack.addSlice(imp.getStack().getSliceLabel(5), ref.convertToFloat())
+      continue
+    ip = imp.getStack().getProcessor(i).convertToFloat()
+    mean = computeMean(ip.getPixels())
+    stdDev = computeStdDev(ip.getPixels(), mean)
+    ip.add(-mean)
+    ip.multiply(1/stdDev)
+    ip.multiply(refStdDev)
+    ip.add(refMean)
+    stack.addSlice(imp.getStack().getSliceLabel(i), ip)
+
+  return ImagePlus(imp.title, stack)
+
+
+def accept(filename):
+  """ Work only with TIFF files. """
+  return len(filename) - 4 == filename.rfind(".tif")
+
+def run():
+  dc = DirectoryChooser("pick folder with image stacks")
+  folder = dc.getDirectory()
+  if folder is None:
+    return
+  for filename in filter(accept, os.listdir(folder)):
+    imp = IJ.openImage(os.path.join(folder, filename))
+    if imp is None:
+      print "Failed to open image:", filename
+      continue
+    corrected = process9ImagePlanes(imp)
+    IJ.save(corrected, os.path.join(folder, filename[0:-4] + "-corrected.tif"))
+
+run()
+
+</source>
+
 == Tips and Tricks ==
 
 === Getting a list of all members in one package ===
