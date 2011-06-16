@@ -119,3 +119,11 @@ Please ask any person with a Wiki account to [[Help|register a new account for y
 == I have a problem that is not covered on this page! ==
 
 If you have an issue that is not mentioned here, you might want to [[Help:Contents|ask on one of the mailing lists, or via IRC, or enter a bug report]].
+
+= Miscellaneous =
+
+== What is this ''headless'' mode and what do I need it for? ==
+
+The term ''headless'' refers to running Fiji without a graphical desktop, e.g. on a cluster.
+
+For technical reasons, GUI elements such as a menu or a button cannot be used when running Java on Linux in headless mode. That is the reason why we put custom classes into a file called ''headless.jar'' which override specific ImageJ classes that would try to instantiate GUI elements. In headless mode, that ''.jar'' file is inserted into the Java class path. In non-headless mode, the ''.jar'' file is not inserted into the class path (that is the reason why ''headless.jar'' is not in the ''jars/'' subdirectory).
