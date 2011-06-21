@@ -7,7 +7,7 @@ To fetch the Fiji source code you should use [http://git.or.cz/ git] (Windows us
 ==== Cloning source as unknown contributor ====
 Your first step should be to "clone" the fiji repository with the following command:
 
- git clone contrib@pacific.mpi-cbg.de:/srv/git/fiji.git
+ git clone contrib@fiji.sc:/srv/git/fiji.git
 
 This should start downloading the base fiji repository and unpack it into a directory called "fiji" in your current directory.  Once this has successfully completed, change into the newly created "fiji" directory.
 
@@ -15,7 +15,7 @@ This should start downloading the base fiji repository and unpack it into a dire
 
  git clone git://github.com/dscho/fiji
  cd fiji
- git config remote.origin.url git://pacific.mpi-cbg.de/fiji.git
+ git config remote.origin.url git://fiji.sc/fiji.git
  git pull
 
 If you are getting errors like this:
@@ -25,7 +25,7 @@ If you are getting errors like this:
 
 then you probably are behind a firewall that does not let you connect to port 9418. [http://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker's_Guide_to_the_Galaxy Do not panic], though, you might be able to clone the repository with
 
- git clone contrib@pacific.mpi-cbg.de:/srv/git/fiji.git
+ git clone contrib@fiji.sc:/srv/git/fiji.git
 
 or
 
@@ -34,9 +34,9 @@ or
 ... where you should replace <tt>yourusername</tt> with your GitHub username.
 
 ==== Cloning source as known contributor ====
-The above command creates a unknown contributor copy of Fiji in your computer. If you have your own user account in pacific.mpi-cbg.de, then you should clone fiji with the following command:
+The above command creates a unknown contributor copy of Fiji in your computer. If you have your own user account in fiji.sc, then you should clone fiji with the following command:
  
- git clone ''username''@pacific.mpi-cbg.de:/srv/git/fiji.git
+ git clone ''username''@fiji.sc:/srv/git/fiji.git
 
 Just substitute ''username'' with your corresponding user name on that machine.
 
@@ -60,7 +60,7 @@ Alternately, if you want to automatically clone, configure and/or update a submo
 
 === Getting a snapshot without Git ===
 
-If you insist on not using Git, you can download a snapshot of Fiji [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=snapshot;h=master;sf=tgz here], but you need to make sure that you have a new enough Java version installed.
+If you insist on not using Git, you can download a snapshot of Fiji [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=snapshot;h=master;sf=tgz here], but you need to make sure that you have a new enough Java version installed.
 
 == Building Fiji from Source==
 
