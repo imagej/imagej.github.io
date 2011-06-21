@@ -2,9 +2,9 @@ __NOTOC__
 
 <span style="color:red">'''Critical:'''</span> if you updated and Fiji does not work anymore, you need to follow [[Fix_non-functional_Fiji_after_Update|these instructions]].<br/>
 
-If you encounter bugs, please consider submitting [http://pacific.mpi-cbg.de/bugzilla/ bug reports], or ask for help on [http://groups.google.com/group/fiji-users the mailing list], but we might ask you to test our fixes, too :-)
+If you encounter bugs, please consider submitting [http://fiji.sc/bugzilla/ bug reports], or ask for help on [http://groups.google.com/group/fiji-users the mailing list], but we might ask you to test our fixes, too :-)
 
-<b>Please note! The authoritative site for Fiji is <i>http://pacific.mpi-cbg.de</i>, so if you downloaded Fiji from some mirrors such as Softpedia and experience problems, please re-download from here and verify that the problem still exists.</b>
+<b>Please note! The authoritative site for Fiji is <i>http://fiji.sc/</i>, so if you downloaded Fiji from some mirrors such as Softpedia and experience problems, please re-download from here and verify that the problem still exists.</b>
 
 You can download the current version of Fiji ("Madison") for
 {{DownloadsCurrent}}
@@ -23,8 +23,8 @@ The easiest way to fetch the source code for Fiji is to use [http://git.or.cz/ g
 
 There are Debian packages of Fiji.  Add the following lines to /etc/apt/sources.list:
 
- <nowiki>deb http://pacific.mpi-cbg.de/downloads/apt/ ./</nowiki>
- <nowiki>deb-src http://pacific.mpi-cbg.de/downloads/apt/ ./</nowiki>
+ <nowiki>deb http://fiji.sc/downloads/apt/ ./</nowiki>
+ <nowiki>deb-src http://fiji.sc/downloads/apt/ ./</nowiki>
 
 Then do the following:
 
@@ -35,8 +35,8 @@ You should then be able to just run "fiji" from the command line.
 
 Alternatively, if you want to install the .deb files directly with dpkg, you can download the packages directly here:
 
-* [http://pacific.mpi-cbg.de/downloads/apt/binary-i386/fiji_20090513_i386.deb Package for i386 (32 bit)]
-* [http://pacific.mpi-cbg.de/downloads/apt/binary-amd64/fiji_20090513_amd64.deb Package for amd64 (64 bit)]
+* [http://fiji.sc/downloads/apt/binary-i386/fiji_20090513_i386.deb Package for i386 (32 bit)]
+* [http://fiji.sc/downloads/apt/binary-amd64/fiji_20090513_amd64.deb Package for amd64 (64 bit)]
 
 ==== Known Bugs ====
 
