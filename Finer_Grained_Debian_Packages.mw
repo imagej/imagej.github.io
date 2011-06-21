@@ -16,8 +16,8 @@ The improved system is described below.
 The relevant lines for /etc/apt/sources.list, if you don't mind trying the experimental versions of these packages, are:
 
 <nowiki>
-    deb http://pacific.mpi-cbg.de/downloads/apt-experimental/ ./
-    deb-src http://pacific.mpi-cbg.de/downloads/apt-experimental/ ./
+    deb http://fiji.sc/downloads/apt-experimental/ ./
+    deb-src http://fiji.sc/downloads/apt-experimental/ ./
 </nowiki>
 
 The packages are targetting Ubuntu 10.04 (Lucid Lynx) and Debian testing (squeeze) later than August 2010.
@@ -26,7 +26,7 @@ The packages are targetting Ubuntu 10.04 (Lucid Lynx) and Debian testing (squeez
 
 Mostly as a reminder to myself, the quick way to build new packages is:
 
-* Clone a new fiji.git, initialize and update the right submodules [FIXME: document which submodules are required, mentioned in the [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=debian/TODO TODO] at the moment]
+* Clone a new fiji.git, initialize and update the right submodules [FIXME: document which submodules are required, mentioned in the [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=debian/TODO TODO] at the moment]
 * Run <tt>debian/complete-build</tt>.  If anything doesn't work, then you can retry the build with <tt>debian/build-command</tt>.  Before retrying <tt>debian/complete-build</tt>, make sure that you've committed your changes, since afterwards you'll need to run <tt>git reset --hard</tt> to clean the tree so that <tt>debian/complete-build</tt> is happy to try again...
 * Assuming that you're building on an amd64 machine, run <tt>debian/build-in-i386-chroot</tt> to build the i386 packages.  (The chroot can be created as a one-off with debian/create-i386-chroot.py but you will still need to carefully customize /etc/schroot/schroot.conf )
 * Upload the new versions of the packages with <tt>debian/upload-to-pacific</tt>.
@@ -39,7 +39,7 @@ Mostly as a reminder to myself, the quick way to build new packages is:
 
 Clone the respository afresh with:
 
-    git clone git://pacific.mpi-cbg.de/fiji.git
+    git clone git://fiji.sc/fiji.git
 
 ... and then initialize and update the following submodules:
 
@@ -79,7 +79,7 @@ The build-command script, which will actually be used to build Fiji, needs to be
 
 ==== Build the source tree (to generate the control file from) ====
 
-Unfortunately, in order to accurately generate the Debian package-based dependencies from the file-based dependencies in [http://pacific.mpi-cbg.de/update/db.xml.gz] we need to build the complete tree in order to find all the generated files which need to be assigned to packages.  So, build Fiji with the command that debian/rules will use with:
+Unfortunately, in order to accurately generate the Debian package-based dependencies from the file-based dependencies in [http://fiji.sc/update/db.xml.gz] we need to build the complete tree in order to find all the generated files which need to be assigned to packages.  So, build Fiji with the command that debian/rules will use with:
 
   debian/build-command
 
