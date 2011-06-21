@@ -63,7 +63,7 @@ If the project uses a different source code management tool than Git, no problem
 Then add the submodule. Example:
 <source lang="bash">
 # clone the VIB repository
-git clone ssh://contrib@pacific.mpi-cbg.de/srv/git/VIB.git
+git clone ssh://contrib@fiji.sc/srv/git/VIB.git
 # first time, commit-submodule need to know the target, too ("jars/jgit.jar" in this case)
 ./fiji bin/commit-submodule.py VIB plugins/VIB_.jar
 </source>
@@ -71,7 +71,7 @@ git clone ssh://contrib@pacific.mpi-cbg.de/srv/git/VIB.git
 In the case of ''VIB'', it works as easily as that, because it has its own [[Fiji Build System|Fakefile]].  Submodules do not need to have that, you can provide one in ''staged-plugins/'', and they do not need to be installed in ''plugins/'', either:
 <source lang="bash">
 # clone the "egit" repository, but name it "jgit"
-git clone ssh://contrib@pacific.mpi-cbg.de/srv/git/egit jgit
+git clone ssh://contrib@fiji.sc/srv/git/egit jgit
 <create a staged-plugins/jgit.Fakefile>
 # first time, commit-submodule need to know the target, too ("jars/jgit.jar" in this case)
 ./fiji bin/commit-submodule.py jgit jars/jgit.jar
