@@ -12,7 +12,7 @@ All projects have the following basic requirements:
 * Unless otherwise stated, projects will require programming in Java.
 * All materials must be released under the [http://www.gnu.org/copyleft/gpl.html GNU General Public License (GPL)], version 2.
 * Individual students shall retain copyright on their works.
-* Projects must be tracked and managed in Git, and published on [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi] (we will provide you with an account).
+* Projects must be tracked and managed in Git, and published on [http://fiji.sc/cgi-bin/gitweb.cgi] (we will provide you with an account).
 * Weekly project status reports should be sent to the project's mentors.  Each status report should outline what was accomplished that week, any issues that prevented that week's goals from being completed, and your goals for the next week.  This will help you to break your project down into manageable chunks, and will also help the project's mentors to better support your efforts.
 
 Interested students are encouraged to read the
@@ -85,7 +85,7 @@ This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX 
 
 == Add more regression tests ==
 
-Whenever releasing Fiji, or after major changes, we would like to be reasonably safe that we did not break things that used to work before.  We already have a few [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=tests tests], but hardly enough.
+Whenever releasing Fiji, or after major changes, we would like to be reasonably safe that we did not break things that used to work before.  We already have a few [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=tests tests], but hardly enough.
 
 This project involves making a list of all the functionality Fiji provides already, and ideally to implement basic tests for all of them.
 
@@ -124,13 +124,13 @@ The core idea of this project is to generate a plugins manager, inspired in the 
 
 The lack of a plugin manager system is an enormous drag on the ability of good plugins to be widely distributed, and the ability of needy users to find them. The ability to be registered will also ensure proper compatibility with specific ImageJ versions, and the ability to track plugin versions.
 
-At the moment, there is a rudimentary [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Fiji_Updater/UpdateFiji.java plugin updater] which should be a good starting point for this project.  The list of current plugins used by that plugin can be found [http://pacific.mpi-cbg.de/update/current.txt here].
+At the moment, there is a rudimentary [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Fiji_Updater/UpdateFiji.java plugin updater] which should be a good starting point for this project.  The list of current plugins used by that plugin can be found [http://fiji.sc/update/current.txt here].
 
 '''Goal:''' Convert Fiji's update plugin into a proper plugin manager.<br />
 The GUI should have two main components: a tree with the plugins and a text pane for reading documentation.
 * The tree must mirror the user's plugins menu and provide the means to enable/disable plugins, i.e. to add/remove them from the menus. As well as indicate whether any updates are available for a plugin, or newly available plugins.
 * The text pane will offer the documentation on a plugin, and thus double as built-in plugin documentation GUI. The documentation must be fetched directly from this wiki site (displayed in a javax.swing.JEditorPane with an HTMLEditorKit).<br />
-The plugin manager will query a specific server based on pacific.mpi-cbg.de for updated and newly available plugins.
+The plugin manager will query a specific server based on fiji.sc for updated and newly available plugins.
 
 '''Language:''' Java or a JVM scripting language of your choice (preferrably Javascript, Jython, JRuby or Clojure).<br />
 '''Mentor:''' [http://www.ini.uzh.ch/people/acardona Albert Cardona] (acardona@ini.phys.ethz.ch), Johannes Schindelin (johannes.schindelin@gmx.de)<br />
@@ -160,7 +160,7 @@ The project would consist of
 
 * getting as many .m scripts for image processing as possible,
 
-* integrating JMathLib as a script language into Fiji (using the infrastructure shared by Jython, JRuby, Clojure, Javascript and BeanShell) -- I suggest having a look at [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/JRuby/JRuby_Interpreter.java the JRuby Interpreter] for an example,
+* integrating JMathLib as a script language into Fiji (using the infrastructure shared by Jython, JRuby, Clojure, Javascript and BeanShell) -- I suggest having a look at [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/JRuby/JRuby_Interpreter.java the JRuby Interpreter] for an example,
 
 * adapting (or overriding) JMathLib's image toolbox so that it integrates seamlessly with ImageJ,
 
