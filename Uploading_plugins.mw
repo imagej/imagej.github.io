@@ -21,11 +21,11 @@ Please make sure also that the files you are about to upload are clean. You shou
 
 Once everything is ready for upload, just click the button ''Upload to Server''.
 
-'''Note:''' you will need to have an account on [[Pacific]] which is in the group ''updaters'', and you will only be offered the upload option by the Updater if you work from a working directory with source files.
+'''Note:''' you will need to have an account on [[fiji.sc]] which is in the group ''updaters'', and you will only be offered the upload option by the Updater if you work from a working directory with source files.
 
 == Using the command line ==
 
-If you have an ssh account on pacific that is in the ''uploaders'' group, you can upload plugins.  To do this, run
+If you have an ssh account on ''fiji.sc'' that is in the ''uploaders'' group, you can upload plugins.  To do this, run
 
  git pull origin master
 
@@ -56,7 +56,7 @@ The reason why ''.jar'' files are different is that they are really nothing more
 
 === The database ===
 
-Originally, the database was stored in the file ''current.txt'', which is stored in the ''update/'' directory of pacific's web server.  Its format was simply lines in the form
+Originally, the database was stored in the file ''current.txt'', which is stored in the ''update/'' directory of [[fiji.sc]]'s web server.  Its format was simply lines in the form
 
  <filename> <timestamp> <checksum>
 
