@@ -22,7 +22,7 @@ You need to [http://oprofile.sourceforge.net/doc/setup-jit.html#setup-jit-jvm re
 
  sudo apt-get install libpopt-dev binutils-dev checkinstall && 
  cd $FIJI_ROOT && 
- git clone pacific.mpi-cbg.de:/srv/git/oprofile && 
+ git clone contrib@fiji.sc:/srv/git/oprofile && 
  cd oprofile/oprofile && 
  ./autogen.sh && 
  ./configure --with-java=$(pwd)/../../java/linux-amd64/jdk1.6.0_22/ &&
