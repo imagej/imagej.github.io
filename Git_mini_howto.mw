@@ -4,7 +4,7 @@ Most of these explanations are meant for the command line users.
 
 == Nomenclature ==
 
-A quick note on the nomenclature: ''fiji.git'' refers to the "official" repository on [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git].  After cloning it, you will have a local repository with a working directory, which will be referred to as "fiji/" in this document (and "cd fiji/" just tells you to make sure you are in that directory).
+A quick note on the nomenclature: ''fiji.git'' refers to the "official" repository on [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git].  After cloning it, you will have a local repository with a working directory, which will be referred to as "fiji/" in this document (and "cd fiji/" just tells you to make sure you are in that directory).
 
 If you are unsure about the meaning of any Git term, just consult the [http://git.or.cz/gitwiki/GitGlossary Git glossary].
 
@@ -12,27 +12,27 @@ If you are unsure about the meaning of any Git term, just consult the [http://gi
 
 You need to clone ''fiji.git'':
 
- $ git clone git://pacific.mpi-cbg.de/fiji.git/
+ $ git clone git://fiji.sc/fiji.git/
 
 If you want to contribute to Fiji, or if that clone times out (e.g. because you have a restrictive firewall), you might want to try this command '''instead''' (although you do not need to reclone if you cloned using the ''git://'' protocol; see "Contributing"):
 
- $ git clone ssh://contrib@pacific.mpi-cbg.de/srv/git/fiji.git/
+ $ git clone ssh://contrib@fiji.sc/srv/git/fiji.git/
 
 Both commands will create the directory ''fiji/'' and check out an initial version.
 
 = Contributing =
 
-As mentioned in "Cloning", you should clone from ssh://contrib@pacific.mpi-cbg.de/srv/git/fiji.git/.  However, you can easily add that as a so-called ''remote'' to an existing clone:
+As mentioned in "Cloning", you should clone from ssh://contrib@fiji.sc/srv/git/fiji.git/.  However, you can easily add that as a so-called ''remote'' to an existing clone:
 
  $ cd fiji/
- $ git remote add contrib ssh://contrib@pacific.mpi-cbg.de/srv/git/fiji.git/
+ $ git remote add contrib ssh://contrib@fiji.sc/srv/git/fiji.git/
 
 Before doing anything else, you should create a local "contrib" branch:
 
  $ cd fiji/
  $ git checkout -b contrib origin/contrib
 
-You should name the local branch ''contrib'', because pacific's ''contrib'' user -- in exchange for not needing a password -- can only write to the ''contrib'' branch.  In other words, if you use a different branch, all will work well locally, but when you try to push your changes upstream, it will fail.
+You should name the local branch ''contrib'', because the server's ''contrib'' user -- in exchange for not needing a password -- can only write to the ''contrib'' branch.  In other words, if you use a different branch, all will work well locally, but when you try to push your changes upstream, it will fail.
 
 Now you only need to make sure that Git knows about you (substitute your name/email here...):
 
