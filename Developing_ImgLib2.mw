@@ -6,7 +6,7 @@ Because people tend to have differing IDE configurations, we do not put project 
 
 == Getting the code ==
 
-You can clone the imglib code using git with the URL: '''git://pacific.mpi-cbg.de/imglib.git'''
+You can clone the imglib code using git with the URL: '''git://fiji.sc/imglib.git'''
 
 Alternately, you can [[Downloading and Building Fiji From Source#Submodules|use imglib as a submodule of Fiji]].
 
