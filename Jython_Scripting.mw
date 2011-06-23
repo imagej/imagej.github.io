@@ -928,6 +928,36 @@ run()
 
 </source>
 
+
+=== Add a mouse listener to the canvas of every open image ===
+
+<source lang="python">
+from java.awt.event import MouseAdapter
+
+def doSomething(imp):
+ """ A function to react to a mouse click on an image canvas. """
+ IJ.log("clicked on: " + str(imp))
+
+class ML(MouseAdapter):
+ def mousePressed(self, event):
+   canvas = event.getSource()
+   imp = canvas.getImage()
+   doSomething(imp)
+
+listener = ML()
+
+for imp in map(WindowManager.getImage, WindowManager.getIDList()):
+ win = imp.getWindow()
+ if win is None:
+   continue
+ win.getCanvas().addMouseListener(listener)
+</source>
+
+After running the script, clicking on any image will result in
+printing a line to the log window, like:
+
+  clicked on: imp[Untitled-1 400x200x1]
+
 == Tips and Tricks ==
 
 === Getting a list of all members in one package ===
