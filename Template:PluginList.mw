@@ -225,6 +225,15 @@
 * [[FeatureJ Structure]] - file <tt>FJ_Structure</tt>  -- ''java jar file''
 
 
+=== Plugins > Optic Flow ===
+
+* [[FlowJ]] - file <tt>FlowJ_</tt>  -- ''java jar file''
+* [[PIV analysis]] - file <tt>PIV_analyser</tt>  -- ''java jar file''
+* [[Gaussian Window MSE]] - file <tt>mpicbg.ij.plugin.MSEGaussianFlow</tt>  -- ''java jar file''
+* [[Integral Block MSE]] - file <tt>mpicbg.ij.plugin.MSEBlockFlow</tt>  -- ''java jar file''
+* [[Integral Block PMCC]] - file <tt>mpicbg.ij.plugin.PMCCBlockFlow</tt>  -- ''java jar file''
+
+
 === Plugins > Image5D ===
 
 * [[New Image5D]] - file <tt>New_Image5D("")</tt>  -- ''java jar file''
@@ -332,13 +341,6 @@
 * [[Update LOCI Plugins]] - file <tt>loci.plugins.Updater("")</tt>  -- ''java jar file''
 
 
-=== Plugins > Optic Flow ===
-
-* [[Gaussian Window MSE]] - file <tt>mpicbg.ij.plugin.MSEGaussianFlow</tt>  -- ''java jar file''
-* [[Integral Block MSE]] - file <tt>mpicbg.ij.plugin.MSEBlockFlow</tt>  -- ''java jar file''
-* [[Integral Block PMCC]] - file <tt>mpicbg.ij.plugin.PMCCBlockFlow</tt>  -- ''java jar file''
-
-
 
 == File ==
 
@@ -413,10 +415,10 @@
 
 === File > Open Samples ===
 
-* [[Malaria Sporozoites (9.2MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/_malaria_parasites.tif")</tt>  -- ''java jar file''
-* [[First-instar brain (6.3MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/first-instar-brain.zip")</tt>  -- ''java jar file''
+* [[Malaria Sporozoites (9.2MB)]] - file <tt>ij.plugin.URLOpener("http://fiji.sc/samples/_malaria_parasites.tif")</tt>  -- ''java jar file''
+* [[First-instar brain (6.3MB)]] - file <tt>ij.plugin.URLOpener("http://fiji.sc/samples/first-instar-brain.zip")</tt>  -- ''java jar file''
 * [[Shepp-Logan Phantom (Plugin)]] - file <tt>SheppLogan_</tt>  -- ''java jar file''
-* [[Sintered Alumina (2.6MB)]] - file <tt>ij.plugin.URLOpener("http://pacific.mpi-cbg.de/samples/Sintered_Alumina.tif.zip")</tt>  -- ''java jar file''
+* [[Sintered Alumina (2.6MB)]] - file <tt>ij.plugin.URLOpener("http://fiji.sc/samples/Sintered_Alumina.tif.zip")</tt>  -- ''java jar file''
 
 
 === File > New ===
@@ -445,6 +447,8 @@
 * [[Set Color By Wavelength]] - file <tt>Set_Color_By_Wavelength.ijm</tt>  -- ''macro''
 * [[Simulate Color Blindness]] - file <tt>Simulate_Color_Blindness</tt>  -- ''java jar file''
 * [[Retinex]] - file <tt>Retinex_</tt>  -- ''java jar file''
+* [[Replace Red with Magenta]] - file <tt>fiji.color.Convert_Red_To_Magenta</tt>  -- ''java jar file''
+* [[Replace Red with Magenta (system clipboard)]] - file <tt>fiji.color.Convert_Red_To_Magenta_Clipboard</tt>  -- ''java jar file''
 * [[Average Color]] - file <tt>Average_Color</tt>  -- ''java jar file''
 * [[RGB to CIELAB]] - file <tt>RGB_to_CIELAB</tt>  -- ''java jar file''
 * [[RGB to Luminance]] - file <tt>util.RGB_to_Luminance</tt>  -- ''java jar file''
@@ -531,12 +535,6 @@
 * [[Coloc 2]] - file <tt>Coloc_2</tt>  -- ''java jar file''
 
 
-=== Analyze > Optic Flow ===
-
-* [[FlowJ]] - file <tt>FlowJ_</tt>  -- ''java jar file''
-* [[PIV analysis]] - file <tt>PIV_analyser</tt>  -- ''java jar file''
-
-
 === Analyze > Classification ===
 
 * [[IsoData Classifier]] - file <tt>IsoData_Classifier</tt>  -- ''java jar file''
@@ -597,7 +595,7 @@
 * [[Report a Bug]] - file <tt>Bug_Submitter.Bug_Submitter</tt>  -- ''java jar file''
 * [[Upload Sample Image]] - file <tt>fiji.util.Fiji_Uploader</tt>  -- ''java jar file''
 * [[Help on Menu Item]] - file <tt>fiji.help.Context_Help</tt>  -- ''java jar file''
-* [[Fiji Wiki]] - file <tt>ij.plugin.BrowserLauncher("http://pacific.mpi-cbg.de/")</tt>  -- ''java jar file''
+* [[Fiji Wiki]] - file <tt>ij.plugin.BrowserLauncher("http://fiji.sc/")</tt>  -- ''java jar file''
 * [[Update Fiji]] - file <tt>fiji.updater.Updater("update")</tt>  -- ''java jar file''
 
 
