@@ -1,0 +1,40 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Replace Red with Magenta
+| maintainer             = [mailto:johannes_dot_schindelin_at_gmx_dot_de Johannes Schindelin]
+| author                 = Johannes Schindelin
+| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Fiji_Plugins/fiji/color/Convert_Red_To_Magenta.java;hb=refs/heads/master in gitweb]
+| released               = 27/06/2011
+| latest version         = 27/06/2011
+| status                 = 
+| category               = [[:Category:Plugins]]
+}}
+
+This plugin converts all occurrences of red in a red/green image with magenta, effectively replacing it with a magenta/green merge.
+
+Note: the plugin completely ignores the blue channel, and replaces it with a copy of the red channel.
+
+Example:
+
+{|
+|-
+|[[Image:Clown.jpg|left]]
+|[[Image:Clown-magenta.jpg|right]]
+|}
+
+== Replace Red with Magenta (system clipboard) ==
+
+Frequently all you [[#Why|want]] to do is to replace red by magenta in some images in a text document or a presentation. With this function, you only need to copy the image into the system clipboard in the other program, call this plugin in Fiji, and then you can paste the corrected image in the other program.
+
+== Why? ==
+
+8% of the male population is red-green blind. If given the task to find two colors maximizing the number of people who cannot see the difference, red and green are a wise choice. Yet, still way too many figures in scientific publications show red/green merges.
+
+At least magenta/green images help this situation. However, [[Spirals (Macro)|the only thing human eyes can quantify are numbers]].
+
+As a demonstration, call Fiji's ''File>Open Samples>Spirals'' and if you see a bright green and a bright yellow in the dominant spirals, you should look closer.
+
+However, in the 21st century, one should always use proper [[Colocalization]] with scatter plots and statistics. It is [[Coloc_2|too easy not to]].
+
+[[Category:Tutorials]]
+[[Category:Plugins]]
