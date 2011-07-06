@@ -24,7 +24,7 @@ Example:
 
 == Replace Red with Magenta (system clipboard) ==
 
-Frequently all you [[#Why|want]] to do is to replace red by magenta in some images in a text document or a presentation. With this function, you only need to copy the image into the system clipboard in the other program, call this plugin in Fiji, and then you can paste the corrected image in the other program.
+Frequently all you [[#Why.3F|want]] to do is to replace red by magenta in some images in a text document or a presentation. With this function, you only need to copy the image into the system clipboard in the other program, call this plugin in Fiji, and then you can paste the corrected image in the other program.
 
 == Why? ==
 
