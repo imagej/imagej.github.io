@@ -76,4 +76,30 @@ If you want to update plugins from other update sites than the principal one, fo
 
 You can also [[How to set up and populate an update site|set up and populate your own update site]].
 
+== Command-line usage ==
+
+It is possible to drive the Updater through Fiji's command-line option ''--update''. If you call that without arguments, it will show you what subcommands are available:
+
+<source lang="bash">
+./fiji --update
+</source>
+
+The simplest usage is to update either single files:
+
+<source lang="bash">
+./fiji --update update jars/ij.jar jars/Fiji.jar plugins/Fiji_Updater.jar
+</source>
+
+or all files that would be marked for update in the interactive Updater by default:
+
+<source lang="bash">
+./fiji --update update
+</source>
+
+If you configured upload sites, you can also use the command-line version of the Updater to upload files:
+
+<source lang="bash">
+./fiji --update upload plugins/My_New_Cool_Plugin.jar
+</source>
+
 [[Category:Plugins]]
