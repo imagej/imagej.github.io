@@ -392,6 +392,31 @@ selectImage(title);
 setBatchMode(false);
 </source>
 
+== Normalize all images to the global mean ==
+
+This macro takes the mean of all open images' means and then adjusts the pixel values in each image to that mean:
+
+<source lang="java">
+setBatchMode(true);
+
+total = 0;
+for (i = 1; i <= nImages; i++) {
+	selectImage(i);
+	getRawStatistics(dummy, mean, dummy, dummy, dummy, dummy2);
+	total = total + mean;
+}
+total = total / nImages;
+
+for (i = 1; i <= nImages; i++) {
+	selectImage(i);
+	getRawStatistics(dummy, mean, dummy, dummy, dummy, dummy2);
+	difference = total - mean;
+	run("Add...", "value=" + difference);
+}
+
+setBatchMode(false);
+</source>
+
 == Make a false-colored montage ==
 
 Here is a more complicated macro, maybe you can guess from reading the code how it does what it does? After that, you might want to try it on the Lena example...
