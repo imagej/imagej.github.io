@@ -172,7 +172,7 @@ The complete list of commands is as follows:
 run("Advanced Weka Segmentation"); 
 </source>
 * Add traces (current ROI) to a class:
-:Format: ''addTrace( class index, slice number )''.
+:Format: <code>addTrace( class index, slice number )</code>
 
 :For example, to add the selected ROI of the first slice to the first class, we type:
 <source lang="java">
@@ -198,7 +198,7 @@ call("trainableSegmentation.Weka_Segmentation.getProbability");
 call("trainableSegmentation.Weka_Segmentation.plotResultGraphs");
 </source>
 * Apply the current classifier to an image or stack:
-:Format: ''applyClassifier( input directory, input image or stack, show results flag, store results flag, probability maps flag, store folder)''
+:Format: <code>applyClassifier( input directory, input image or stack, show results flag, store results flag, probability maps flag, store folder)</code>
 
 :Example:
 <source lang="java">
