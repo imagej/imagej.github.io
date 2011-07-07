@@ -168,19 +168,18 @@ The Weka button launches the Weka chooser, where we can start all the applicatio
 
 The complete list of commands is as follows:
 * Start the plugin:
-<source lang="java">
+<source lang="java"> 
 run("Advanced Weka Segmentation"); 
 </source>
 * Add traces (current ROI) to a class:
-Format: ''addTrace( class index, slice number )''.
+:Format: ''addTrace( class index, slice number )''.
 
-For example, to add the selected ROI of the first slice to the first class, we type:
+:For example, to add the selected ROI of the first slice to the first class, we type:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.addTrace", "0", "1");
 </source>
 * Train classifier: 
-<source lang="java">
-call("trainableSegmentation.Weka_Segmentation.trainClassifier");
+<source lang="java">call("trainableSegmentation.Weka_Segmentation.trainClassifier");
 </source>
 * Toggle overlay:
 <source lang="java">
@@ -199,9 +198,9 @@ call("trainableSegmentation.Weka_Segmentation.getProbability");
 call("trainableSegmentation.Weka_Segmentation.plotResultGraphs");
 </source>
 * Apply the current classifier to an image or stack:
-Format: ''applyClassifier( input directory, input image or stack, show results flag, store results flag, probability maps flag, store folder )''
+:Format: ''applyClassifier( input directory, input image or stack, show results flag, store results flag, probability maps flag, store folder)''
 
-Example:
+:Example:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.applyClassifier",
 "/home/iarganda/data/", "input-image.tif", "showResults=true", 
