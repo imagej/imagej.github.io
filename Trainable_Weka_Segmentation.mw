@@ -167,68 +167,68 @@ The Weka button launches the Weka chooser, where we can start all the applicatio
 [[Image:AWS-macro-recording.png|thumb|760px|Example of macro recording of the Advanced Weka Segmentation tools.]]
 
 The complete list of commands is as follows:
-; Start the plugin:
+* Start the plugin:
 <source lang="java"> 
 run("Advanced Weka Segmentation"); 
 </source>
-; Add traces (current ROI) to a class:
-Format: <code>addTrace( class index, slice number )</code>
+* Add traces (current ROI) to a class:
+:Format: <code>addTrace( class index, slice number )</code>
 
-For example, to add the selected ROI of the first slice to the first class, we type:
+:For example, to add the selected ROI of the first slice to the first class, we type:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.addTrace", "0", "1");
 </source>
-; Train classifier: 
+* Train classifier: 
 <source lang="java">call("trainableSegmentation.Weka_Segmentation.trainClassifier");
 </source>
-; Toggle overlay:
+* Toggle overlay:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.toggleOverlay");
 </source>
-; Create binary result:
+* Create binary result:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.getResult");
 </source>
-; Get probability maps:
+* Get probability maps:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.getProbability");
 </source>
-; Plot the threshold curves:
+* Plot the threshold curves:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.plotResultGraphs");
 </source>
-; Apply the current classifier to an image or stack:
-Format: <code>applyClassifier( input directory, input image or stack, show results flag, store results flag, probability maps flag, store folder)</code>
+* Apply the current classifier to an image or stack:
+:Format: <code>applyClassifier( input directory, input image or stack, show results flag, store results flag, probability maps flag, store folder)</code>
 
-Example:
+:Example:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.applyClassifier",
 "/home/iarganda/data/", "input-image.tif", "showResults=true", 
 "storeResults=false", "probabilityMaps=false", "");
 </source>
-; Load a classifier from file:
+* Load a classifier from file:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.loadClassifier",
  "/home/iarganda/classifier.model");
 </source>
-; Save classifier into a file:
+* Save classifier into a file:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.saveClassifier",
  "/home/iarganda/classifier.model");
 </source>
-; Load data from an ARFF file:
+* Load data from an ARFF file:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.loadData", "/home/iarganda/data.arff");
 </source>
-; Save current data into a file:
+* Save current data into a file:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.saveData", "/home/iarganda/data.arff");
 </source>
-; Create new class:
+* Create new class:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.createNewClass", "new-class-name");
 </source>
-; Launch Weka:
+* Launch Weka:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.launchWeka");
 </source>
