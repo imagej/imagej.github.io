@@ -232,6 +232,45 @@ call("trainableSegmentation.Weka_Segmentation.createNewClass", "new-class-name")
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.launchWeka");
 </source>
+* Enable/disable a specific feature:
+:Format: <code>setFeature( "feature name=true or false" )</code>
+:Example (enable Variance filters):
+<source lang="java">
+call("trainableSegmentation.Weka_Segmentation.setFeature", "Variance=true");
+</source>
+* Change a class name:
+:Format: <code>changeClassName( class index, class new name )</code>
+:Example (change first class name to "background"):
+<source lang="java">
+call("trainableSegmentation.Weka_Segmentation.changeClassName", "0", "background");
+</source>
+* Set option to balance the class distributions:
+<source lang="java">
+call("trainableSegmentation.Weka_Segmentation.setClassHomogenization", "true");
+</source>
+* Set membrane thickness (in pixels):
+<source lang="java">
+call("trainableSegmentation.Weka_Segmentation.setMembraneThickness", "2");
+</source>
+* Set the membrane patch size (in pixels, NxN):
+<source lang="java">
+call("trainableSegmentation.Weka_Segmentation.setMembranePatchSize", "16");
+</source>
+* Set the minimum kernel radius (in pixels):
+<source lang="java">
+call("trainableSegmentation.Weka_Segmentation.setMinimumSigma", "2.0");
+</source>
+* Set the maximum kernel radius (in pixels):
+<source lang="java">
+call("trainableSegmentation.Weka_Segmentation.setMaximumSigma", "8.0");
+</source>
+* Set a new classifier:
+:Format: <code>setClassifier( classifier class, classifier options )</code>
+:Example (change classifier to NaiveBayes):
+<source lang="java">
+call("trainableSegmentation.Weka_Segmentation.setClassifier",
+"weka.classifiers.bayes.NaiveBayes", "");
+</source>
 
 == Library use ==
 
