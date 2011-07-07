@@ -271,7 +271,10 @@ call("trainableSegmentation.Weka_Segmentation.setMaximumSigma", "8.0");
 call("trainableSegmentation.Weka_Segmentation.setClassifier",
 "weka.classifiers.bayes.NaiveBayes", "");
 </source>
-
+* Set the result overlay opacity:
+<source lang="java">
+call("trainableSegmentation.Weka_Segmentation.setOpacity", "50");
+</source>
 =====Complete macro example:=====
 <source lang="java">
 // Open Leaf sample
