@@ -1406,9 +1406,9 @@ The above is an extract from a clojure GUI for XMMS2, available at github [http:
 
 The derivative of a function:
 
-                               f (x + dx) - f (x)
-       D f(x) = f'(x) = lim  --------------------
-                                      dx
+<math>
+D f(x) = f'(x) = \lim_{dx\rightarrow 0}\frac{f(x + dx) - f(x)}{dx}
+</math>
 
 We can approximate the derivative by choosing an arbitrarily precise value of the increment <i>dx</i>.
 
@@ -1449,7 +1449,6 @@ We can now call the cubic-prime function simply like any other function:
 The derivative of x^3 is 3 * x^2, which for an x of 4 equals 48. Our derivative is as precise as low is the value of the increment <i>dx</i>.
 
 The above code translated from lisp code at [http://funcall.blogspot.com/2009/03/not-lisp-again.html funcall blog]. Thanks [http://www.blogger.com/profile/03233353484280456977 Joe Marshall] for sharing this perl.
-
 
 == Pretty printing a primitive array ==
 
