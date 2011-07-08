@@ -37,7 +37,9 @@ The script is <b>always</b> read directly from the source file, so no updating o
 === Running Clojure files from the command line ===
 Fiji can execute any clojure file directly:
 
- ./fiji plugins/Examples/blend_two_images.clj
+<source lang="bash">
+./fiji plugins/Examples/blend_two_images.clj
+</source>
 
 The file will run with the full classpath as set by fiji, which includes all jars in fiji/jars and fiji/plugins/ folders, among others.
 
@@ -45,24 +47,32 @@ The file will run with the full classpath as set by fiji, which includes all jar
 === Getting a REPL without the usual ImageJ GUI ===
 The simplest is:
 
-  ./fiji --clojure
+<source lang="bash">
+./fiji --clojure
+</source>
 
 ... which you may enrich with memory settings, incremental garbage collection (works great for multicore CPUs), the enhanced JIT (server flag), and a debugger agent (and any other JVM flag):
 
-  ./fiji -Xmx2000m -Xincgc -server -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n --clojure --
+<source lang="bash">
+./fiji -Xmx2000m -Xincgc -server -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n --clojure --
+</source>
 
 Above, <b>notice the ending double dash --</b> which separates Fiji/JVM options from ImageJ options (in this case, none).
 
 For a nicer Repl, you may want to run the clojure.lang.Repl via the jline.ConsoleRunner, which gives you up and down arrow navigation, etc:
 
-  ./fiji -Xmx2000m -Xincgc -server -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n \
+<source lang="bash">
+./fiji -Xmx2000m -Xincgc -server -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n \
          --main-class jline.ConsoleRunner -- clojure.lang.Repl
+</source>
 
 Note that we put the double-dash between <i>jline.ConsoleRunner</i> (the main class to launch) and <i>clojure.lang.Repl</i> (its arguments).
 
 If no JVM arguments were specified, there's no need for the double dash:
 
-  ./fiji --main-class jline.ConsoleRunner clojure.lang.Repl
+<source lang="bash">
+./fiji --main-class jline.ConsoleRunner clojure.lang.Repl
+</source>
 
 Just make sure to have the jline.jar in your classpath (or drop it into fiji/jars folder).
 
@@ -72,12 +82,16 @@ If you have launched fiji with an agentlib, you may then connect to it via the <
 
 First launch fiji with the agentlib:
 
- ./fiji -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n --
+<source lang="bash">
+./fiji -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n --
+</source>
 
 Then connect, at the same port address:
 
-  cd fiji/java/linux/jdk1.6.0_12/bin/
-  ./jdb -attach 8010
+<source lang="bash">
+cd fiji/java/linux/jdk1.6.0_12/bin/
+./jdb -attach 8010
+</source>
 
 Which gives you a jdb prompt after printing:
 
@@ -1121,8 +1135,12 @@ To compile the clojure code to .class files, you need:
 </ol>
 
 For example:
- $ mkdir classes
- $ java -cp .:../../ij.jar:../../jars/clojure.jar:./classes/:./fj/tests/process/ clojure.lang.Repl
+
+<source lang="bash">
+$ mkdir classes
+$ java -cp .:../../ij.jar:../../jars/clojure.jar:./classes/:./fj/tests/process/ clojure.lang.Repl
+</source>
+
  user=> (compile 'fj.tests.process.FloatProcessorPlus)
  fj.tests.process.FloatProcessorPlus
  user=>
