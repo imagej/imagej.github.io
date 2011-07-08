@@ -16,7 +16,7 @@ Go to "Plugins - Scripting - Clojure Interpreter". The prompt accepts any clojur
 See [[Scripting Help]] for details on keybindings and how to use the interpreter. <b>Control+)</b> will add all necessary ending parenthesis.
 
 A minimal, complete clojure example:
-<source lang="lisp">
+<source lang="clojure">
 (import '(ij IJ))
 (def gold (IJ/openImage "http://rsb.info.nih.gov/ij/images/AuPbSn40.jpg"))
 (.show gold)
@@ -125,7 +125,7 @@ Within the jdb prompt, type "help".
 == Calling methods and variables on a java object ==
 <p>There are two ways, the second syntactic sugar of the first. Below, <b>imp</b> is a pointer to an ImagePlus:</p>
 
-<source lang="lisp">
+<source lang="clojure">
 ; java-ish way:
 (. imp (getProcessor))
 
@@ -138,7 +138,7 @@ Within the jdb prompt, type "help".
 
 <p>To call a method on an object returned by a method call, there is a simplified way:</p>
 
-<source lang="lisp">
+<source lang="clojure">
 ; double way:
 (. (. imp (getProcessor)) (getPixels))
 
@@ -153,25 +153,25 @@ Within the jdb prompt, type "help".
 </source>
 
 <p>Any number of concatenated method calls, both for static methods or for instances:</p>
-<source lang="lisp">
+<source lang="clojure">
 ; Concatenated call to static and instance methods
 (.. WindowManager getCurrentImage getProcessor getPixels)
 </source>
 
 <p>To call a variable or 'field', just do it like a method call but without the parentheses:</p>
 
-<source lang="lisp">
+<source lang="clojure">
 (. imp changes)
 </source>
 or more lisp-ish:
 
-<source lang="lisp">
+<source lang="clojure">
 (.changes imp)
 </source>
 
 <p>To enhance readability, use <i>import</i> when appropriate. Imports remain visible throughout the current namespace:</p>
 
-<source lang="lisp">
+<source lang="clojure">
 (import '(java.awt Color Rectangle)
         '(ij.plugin.filter PlugInFilter))
 
@@ -190,7 +190,7 @@ PlugInFilter/DOES_ALL
 
 <p>To call a <b>static</b> field or method, use namespace syntax:</p>
 
-<source lang="lisp">
+<source lang="clojure">
 (println "does all: " ij.plugin.filter.PlugInFilter/DOES_ALL)
 
 (ij.IJ/log "Some logged text")
@@ -202,7 +202,7 @@ PlugInFilter/DOES_ALL
 == Defining variables: obtaining the current image ==
 As a local variable <b>imp</b> declared within a <i>let</i> statement:
 
-<source lang="lisp">
+<source lang="clojure">
 (let [imp (ij.WindowManager/getCurrentImage)]
     ; print its name
     (println (.getTitle imp)))
@@ -213,7 +213,7 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 </source>
 <p>As a general variable visible from the entire namespace:</p>
 
-<source lang="lisp">
+<source lang="clojure">
 (def *imp* (ij.WindowManager/getCurrentImage))
 
 (println (.getTitle *imp*))
@@ -222,7 +222,7 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 <br />
 <p>A <i>let</i> statement lets you declare any number of paired variable name / values, even referring to each other in sequence:</p>
 
-<source lang="lisp">
+<source lang="clojure">
 (let [imp (ij.WindowManager/getCurrentImage)
       ip (.getProcessor imp)
       pix (.getPixels ip)
@@ -232,7 +232,7 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 </source>
 <p>Any number of <i>let</i> statements may be nested together:</p>
 
-<source lang="lisp">
+<source lang="clojure">
 (let [imp (ij.WindowManager/getCurrentImage)]
     ; do whatever processing here
     (let [ip (.getProcessor imp]
@@ -245,7 +245,7 @@ As a local variable <b>imp</b> declared within a <i>let</i> statement:
 
 A constructor is invoked by adding a dot '.' to the name of a class, followed by the arguments. Below, we create an ImageProcessor and then an ImagePlus with it, and finally we print the ImagePlus, which invokes toString() on it (like in java):
 
-<source lang="lisp">
+<source lang="clojure">
 (let [ip (ij.process.ByteProcessor. 400 400)
       imp (ij.ImagePlus. "my image" ip)]
   (println imp))
@@ -253,7 +253,7 @@ A constructor is invoked by adding a dot '.' to the name of a class, followed by
 
 An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnecessarily verbose:
 
-<source lang="lisp">
+<source lang="clojure">
 (let [ip (new ij.process.ByteProcessor 400 400)
       imp (new ij.ImagePlus "my image" ip)]
   (println imp))
@@ -265,7 +265,7 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
 <p>The <i>dotimes</i> loop will then print 10 different pseudo-random numbers. If the <b>rand</b> was a new Random with seed 69997 every time, all 10 numbers would be exactly the same.</p>
 <p>You can think of a function inside a closure as a static function using a static variable (in Java), but it's more than that, since the function will be able to access parameters on the global namespace and also in any other local namespace in which the <i>let</i> is declared. For example, another <i>let</i>, or even another <i>defn</i>!</p>
 
-<source lang="lisp">
+<source lang="clojure">
 (let [rand (java.util.Random. 69997)]
     (defn rand-double []
         (.nextDouble rand)))
@@ -304,7 +304,7 @@ By convention, variables are named:
 === Creating a new image ===
 
 From scratch:
-<source lang="lisp">
+<source lang="clojure">
 (import '(ij ImagePlus)
         '(ij.process ByteProcessor))
 
@@ -313,7 +313,7 @@ From scratch:
 </source>
 
 From a file:
-<source lang="lisp">
+<source lang="clojure">
 (let [imp (IJ/openImage "/path/to/an/image.tif")]
   (.show imp))
 </source>
@@ -321,7 +321,7 @@ From a file:
 
 === Creating an image of the same type of an existing one ===
 
-<source lang="lisp">
+<source lang="clojure">
 ; The original
 (def imp-1 (ImagePlus. "The source image" (FloatProcessor. 512 512)))
 
@@ -336,7 +336,7 @@ Above, notice the parenthesis (createProcessor 768 768), which specify for which
 
 The idea is to grab the ImageProcessor, duplicate it and resize it. The resizing returns a new ImageProcessor of the same type:
 
-<source lang="lisp">
+<source lang="clojure">
 (def imp-1 (IJ/openImage "/path/to/image1.tif"))
 
 (def imp-2 (ImagePlus. "A new larger one" (.. imp-1 getProcessor (createProcessor 1024 1024))))
@@ -347,7 +347,7 @@ The idea is to grab the ImageProcessor, duplicate it and resize it. The resizing
 </source>
 
 An alternative way would be to simply duplicate the processor of imp-1, and then enlarge it:
-<source lang="lisp">
+<source lang="clojure">
 (def imp-3 (ImagePlus. "A copy with extra empty space"
                        (.. imp-1 getProcessor duplicate (resize 768 768)))
 </source>
@@ -358,7 +358,7 @@ This one is harder, because an ImageStack is just a wrapper for Object[] list of
 ImageJ though provides a mid-level resizing method, via the [http://rsb.info.nih.gov/ij/developer/api/ij/plugin/CanvasResizer.html CanvasResizer] class:
 
 
-<source lang="lisp">
+<source lang="clojure">
 (import '(ij.plugin CanvasResizer)
         '(ij IJ ImagePlus))
 
@@ -388,7 +388,7 @@ Note that the above function <i>resize-image</i> will work for both stacks and n
 
 Of course nothing stops you from looping through the stack length, calling a new ImageProcessor for each slice, resizing it, composing a new ImageStack and with it a new ImagePlus.
 
-<source lang="lisp">
+<source lang="clojure">
 ; Grab the image in the currently active ImageWindow:
 (def imp-1 (IJ/getImage))
 
@@ -419,7 +419,7 @@ ROIs (aka Region of Interest or selection) have bounds, defined by the minimal e
 The core idea is to set a ROI to an ImageProcessor and call <i>crop</i> to obtain a new, subcopy of it.
 
 
-<source lang="lisp">
+<source lang="clojure">
 (def imp (IJ/getImage))
 
 (def imp-cropped (ImagePlus. "Cropped"
@@ -435,7 +435,7 @@ To handle any ImagePlus (with single slice or containing an ImageStack, i.e. man
 
 (which assumes the ROI is contained fully within the image; otherwise for stacks it will throw an Exception stating that, rightly, dimensions do not match.)
 
-<source lang="lisp">
+<source lang="clojure">
 (import '(ij.gui Roi)
         '(ij ImagePlus)
         '(ij.process ImageProcessor))
@@ -483,7 +483,7 @@ From Clojure, there are many ways in which to access the pixels. Here we list so
 
 Multiply in place each value by 0.5. The ImgLib/wrap is a thin wrapper that accesses directly the pixel array. Hence the original image will be changed.
 
-<source lang="lisp">
+<source lang="clojure">
 ; ASSUMES the current image is 32-bit
 (ns test.imglib
  (:import [mpicbg.imglib.image Image]
@@ -501,7 +501,7 @@ Multiply in place each value by 0.5. The ImgLib/wrap is a thin wrapper that acce
 
 In a more functional style, below we create an image with the same dimensions as the wrapped image, and set its pixel values to those of the original image times 0.5:
 
-<source lang="lisp">
+<source lang="clojure">
 (ns test.imglib
  (:import [mpicbg.imglib.image Image]
           [mpicbg.imglib.cursor Cursor]
@@ -532,7 +532,7 @@ In a more functional style, below we create an image with the same dimensions as
 
 The above, though, is unbearably verbose. A high-level access to the images enables mathematical operations without trading off any performance:
 
-<source lang="lisp">
+<source lang="clojure">
 (ns test.imglib
  (:import [mpicbg.imglib.image Image]
           [mpicbg.imglib.cursor Cursor]
@@ -558,7 +558,7 @@ Assumes that <i>(IJ/getImage)</i> returns a 32-bit, float image. If that is not 
 
 The example below creates a new result image. The original image is untouched. This is accomplished with minimal friction but best performance (like hand-coded with cursors or better) by using the high-level scripting library of imglib, and the [http://pacific.mpi-cbg.de/javadoc/script/imglib/math/Compute.html Compute]/inFloats method.
 
-<source lang="lisp">
+<source lang="clojure">
 (ns test.imglib
  (:import [mpicbg.imglib.image Image]
           [script.imglib ImgLib]
@@ -586,7 +586,7 @@ mean) std-dev))]
 
 There is a better way to compute the mean and variance of a collection of numbers, that involves traversing the collection only once. Clojure naturally helps with its very concise destructuring and its automatic promotion of numeric types to avoid overflow.
 
-<source lang="lisp">
+<source lang="clojure">
 (ns test.imglib
  (:import [mpicbg.imglib.image Image]
           [mpicbg.imglib.type.numeric RealType]
@@ -617,7 +617,7 @@ There is a better way to compute the mean and variance of a collection of number
 == Looping an array of pixels ==
 <p>For example, to find the min and max values:</p>
 
-<source lang="lisp">
+<source lang="clojure">
 ; Obtain the pixels array from the current image
 (let [imp (ij.WindowManager/getCurrentImage)
       pixels (.. imp getProcessor getPixels)
@@ -629,7 +629,7 @@ There is a better way to compute the mean and variance of a collection of number
 <p>The above code does not explicitly loop the pixels: it simply applies a function to an array.</p>
 <p>To loop pixels one by one, use any of the following:</p>
 
-<source lang="lisp">
+<source lang="clojure">
 (let [imp (ij.WindowManager/getCurrentImage)
       pixels (.. imp getProcessor getPixels)]
 
@@ -651,7 +651,7 @@ There is a better way to compute the mean and variance of a collection of number
 
 <p>Of course, there are lispier ways to loop an array of pixels. For example, to obtain the average of all pixels, we can use function <i>reduce</i>, which takes the first two elements of a list, applies a function to them, and then applies the function to the result and the next element, etc:</p>
 
-<source lang="lisp">
+<source lang="clojure">
 (let [fp (.getProcessor (ij.IJ/getImage))
       pix (.getPixels fp)]
    (if (instance? ij.process.FloatProcessor fp)
@@ -660,13 +660,13 @@ There is a better way to compute the mean and variance of a collection of number
 </source>
 
 <p>Above, notice that one could have used also <i>apply</i> to apply <i>+</i> to all element of an array, with the same result:</p>
-<source lang="lisp">
+<source lang="clojure">
       (println "Average pixel intensity" (/ (apply + pix) (count pix)))
 </source>
 
 <p>To sum all pixels in an 8-bit image, one needs first to bit-and all bytes to 255, so they become integers and can be summed. But of course we should not <i>bit-and</i> the sum! To solve this, <i>reduce</i> accepts a first value (in this case, zero):</p>
 
-<source lang="lisp">
+<source lang="clojure">
 (let [bp (.getProcessor (ij.IJ/getImage))
       pix (.getPixels bp)]
   (if (instance? ij.process.ByteProcessor bp)
@@ -676,7 +676,7 @@ There is a better way to compute the mean and variance of a collection of number
 
 <p>It could even be done using a local variable, but it's ugly and undesirable (why create it when it's not really needed)? Notice we need to create the local variable "sum" because variables declared by <i>let</i> are immutable.</p>
 
-<source lang="lisp">
+<source lang="clojure">
 (let [bp (.getProcessor (ij.IJ/getImage))
       pix (.getPixels bp)]
   (if (instance? ij.process.ByteProcessor bp)
@@ -689,15 +689,15 @@ There is a better way to compute the mean and variance of a collection of number
 
 == Executing commands from the menus ==
 <p>Any ImageJ menu command may be run on the active image:</p>                                                                                                                                                        
-<source lang="lisp">
+<source lang="clojure">
 (ij.IJ/doCommand "Add Noise")
 </source>
 <p>Be aware that the above starts a new Thread and forks. For reliable control, try the run method, which will wait until the plugin finishes execution.</p>
-<source lang="lisp">
+<source lang="clojure">
 (ij.IJ/run "Add Noise")
 </source>
 For even more reliable control, run the command directly on a specified image, instead of a possibly changing current image:
-<source lang="lisp">
+<source lang="clojure">
 (let [imp (ij.IJ/getImage)]
   (ij.IJ/run imp "Subtract..." "value=25"))
 </source>
@@ -714,7 +714,7 @@ To find out which arguments can any command accept, open the Plugins - Macros - 
 
 == Using java beans for quick and convenient access to an object's fields ==
 <p>Essentially it's all about using <i>get</i> methods in a trivial way. For example:</p>
-<source lang="lisp">
+<source lang="clojure">
 (let [imp (ij.WindowManager/getCurrentImage)
       b (bean imp)]
    (println (:title b)
@@ -733,7 +733,7 @@ The solution: iterate all pixels; if the pixel is zero then set it to a desirabl
 
 In the example below, the <i>fix</i> function is called with the current image and the value 32500 as a floating point number. Notice also the type definition (which is optional) of the float pixel array, to enhance execution speed:
 
-<source lang="lisp">
+<source lang="clojure">
 
  ; Assumes a FloatProcessor image
  (defn fix [imp max]
@@ -776,7 +776,7 @@ Open the plugins/Examples/ folder in Fiji installation directory. You'll find th
 
 == Defining the output stream ==
 The default output stream is at variable <i>*out*</i>, which you may redefine to any kind of PrintWriter:
-<source lang="lisp">
+<source lang="clojure">
 (let [all-out (new java.io.StringWriter)]
   (binding [*out* all-out]
      ; any typed input here
@@ -793,7 +793,7 @@ Destructuring is a shortcut to capture the contents of a variable into many vari
 
 An example: when looping a map, we get the entry, not the key and value of each entry:
 
-<source lang="lisp">
+<source lang="clojure">
 (doseq [e {:a 1 :b 2 :c 3}]
   (println e))
 </source>
@@ -807,7 +807,7 @@ Each "entry" is represented by a vector with two values.
 
 Now to loop more conveniently, we can assign the key and value to variables, by what is called destructuring (note the <i>[k v]</i> where the <i>e</i> was before)
 
-<source lang="lisp">
+<source lang="clojure">
 (doseq [[k v] {:a 1 :b 2 :c 3}]
   (println k v))
 </source>
@@ -820,7 +820,7 @@ Prints:
 
 Even better, we can preserve the whole entry as well, by using the keyword ":as":
 
-<source lang="lisp">
+<source lang="clojure">
 (doseq [[k v :as e] {:a 1 :b 2 :c 3}]
   (println k v e))
 </source>
@@ -833,24 +833,24 @@ Prints:
 
 == Namespaces ==
 * To list all existing namespaces:
-<source lang="lisp">
+<source lang="clojure">
 >>> (all-ns)
 (#<Namespace: xml> #<Namespace: zip> #<Namespace: clojure> #<Namespace: set> #<Namespace: user>)
 </source>
 
 * To list all functions and variables of a specific namespace, first get the namespace object by name:
-<source lang="lisp">
+<source lang="clojure">
 (ns-map (find-ns 'xml))
 </source>
 Note above the quoted string "xml" to avoid evaluating it to a (non-existing) value.
 
 * To list all functions and variables of all namespaces:
-<source lang="lisp">
+<source lang="clojure">
 (map ns-map (all-ns))
 </source>
 
 A nicer way to print all public functions and variables from all namespaces, sorted alphabetically:
-<source lang="lisp">
+<source lang="clojure">
 (doseq [name (all-ns)]
   (doseq [[k v] (sort (ns-publics name))]
     (println k v)))
@@ -859,7 +859,7 @@ Note above we use <i>destructuring</i>: the [k v] take the values of the key and
 
 == Forget/Remove all variables from a namespace ==
 To forget all variables from the user namespace, do:
-<source lang="lisp">
+<source lang="clojure">
 (map #(ns-unmap 'user %)
      (keys (ns-interns 'user)))
 </source>
@@ -869,14 +869,14 @@ The above maps the function <i>ns-unmap</i> to each variable name declared in th
 
 == JVM arguments ==
 * To get the arguments passed to the JVM, see contents of variable *command-line-args*
-<source lang="lisp">
+<source lang="clojure">
 (println *command-line-args*)
 </source>
 
 == Reflection ==
 * To list all methods of an object:
 
-<source lang="lisp">
+<source lang="clojure">
 (defn print-java-methods [obj]
   (doseq [method (seq (.getMethods (if (= (class obj) java.lang.Class)
                                     (identity obj)
@@ -901,7 +901,7 @@ The above maps the function <i>ns-unmap</i> to each variable name declared in th
 * To declare functions on the fly, lambda style, with regex for arguments:
 
 For example, declare a function that takes 2 arguments, and returns the value of the first argument divided by 10, and multiplied by the second argument:
-<source lang="lisp">
+<source lang="clojure">
 (let [doer #(* (/ %1 10) %2)]
   (doer 3 2))
 </source>
@@ -911,25 +911,25 @@ Of course there's no need to name the function, the above is just for illustrati
 
 * To declare a nameless function, and apply it to each element of a list:
 In this case, increment by one each value of a list from 0 to 9:
-<source lang="lisp">
+<source lang="clojure">
 (let [numbers (range 10)
       add-one (fn [x] (+ x 1))]
   (map add-one numbers))
 </source>
 There is no need to declare the names, the above is just for illustration.
 Above, we could have defined the function as #(+ %1 1):
-<source lang="lisp">
+<source lang="clojure">
 (map #(+ %1 1) (range 10))
 </source>
 ... or of course use the internal function <i>inc</i> which does exactly that:
-<source lang="lisp">
+<source lang="clojure">
 (map inc (range 4))
 </source>
 Beware that the <i>map</i> function above applies the given function to each element of a list, and returns a <b>new</b> list with the results.
 
 == Built-in documentation ==
 Use the function <b><i>doc</i></b> to query any other function or variable. For example, the list generator function <i>range</i>:
-<source lang="lisp">
+<source lang="clojure">
 (doc range)
 
 -------------------------
@@ -955,7 +955,7 @@ When not knowing what to search for, you may try <b><i>find-doc</i></b> instead,
 
 === Defining documentation for your own functions ===
 So where does the documentation come from? Every definition of a function or macro or multimethod may take a description string before the arguments:
-<source lang="lisp">
+<source lang="clojure">
 (defn area
   "Computes the area of a rectangle."
   [r]
@@ -970,7 +970,7 @@ So where does the documentation come from? Every definition of a function or mac
   nil
 
 === Defining documentation for a variable ===
-<source lang="lisp">
+<source lang="clojure">
 (def
   #^{:doc "The maximum number of connections"}
   max-con 10)
@@ -989,7 +989,7 @@ Function documentation is internally set like the above: <i>defn</i> is a macro 
 
 We first declare the variable, and then define it with a metadata map that includes a test function:
 
-<source lang="lisp">
+<source lang="clojure">
 (declare a)
 (def
   #^{:test #(if (< a 10) (throw (Exception. "Value under 10!")))}
@@ -998,7 +998,7 @@ We first declare the variable, and then define it with a metadata map that inclu
 
 ... which we then test, by invoking the function <i>test</i> not on the value of the variable <i>a</i> (which could have its own metadata map), but on the variable <i>a</i> itself, referred to with the <i>#'a</i>:
 
-<source lang="lisp">
+<source lang="clojure">
 (test #'a)
 </source>
 
@@ -1024,7 +1024,7 @@ In short, the lazy sequence <i>fibs</i> is an abstract way of representing a pot
 
 Then we just <i>take</i> the first 10 elements of such lazy sequence, which are created on the fly.
 
-<source lang="lisp">
+<source lang="clojure">
 (def fibs (lazy-cat [0 1]
                     (map + fibs (rest fibs))))
 
@@ -1046,7 +1046,7 @@ A good option is to print only part of it:
 For infinite lazy sequences, <i>drop</i> wouldn't save your REPL, and <i>take</i> could be perhaps too many still.
 
 To avoid accidental printing of complete lazy-sequences, you may set <b>*print-length*</b> to a reasonable number:
-<source lang="lisp">
+<source lang="clojure">
 (set! *print-length* 5)
 </source>
 So now one can safely print the entire fibonnaci sequence, which will print only the first 5 elements, followeed by dots:
@@ -1138,7 +1138,7 @@ Finally, a main method is not directly declared, but exists if a function named 
 
 The example clojure code:
 
-<source lang="lisp">
+<source lang="clojure">
 ; Albert Cardona 20081203
 ; Save this file as fj/tests/process/FloatProcessorPlus.clj
 
@@ -1225,7 +1225,7 @@ Clojure supports thread concurrency without explicit locks. Compared to java cod
 The most basic building blocks are [http://clojure.org/refs<i>references</i>], which are created with the <i>ref</i> function, and modified within transaction blocks (defined by <i>dosync</i>) using <i>commute</i> or <i>alter</i> functions (and [http://clojure.org/refs others]).
 
 To read out the value of a reference, call <i>deref</i> or just <i>@</i> on it:
-<source lang="lisp">
+<source lang="clojure">
 ; Create a new reference named 'id' initializated to value zero:
 (def id (ref 0))
 -> 0
@@ -1253,7 +1253,7 @@ Keep in mind the vector of ids assigned to the reference named 'ls' is always im
 
 The assignment is done in a transaction, so no matter how many concurrent threads try to do so, the resulting vector will have all the ids.
 
-<source lang="lisp">
+<source lang="clojure">
 ; Albert Cardona 2008-12-18
 ; Example clojure program using references and concurrent threads
 ; that alter the value of the references.
@@ -1308,7 +1308,7 @@ The assignment is done in a transaction, so no matter how many concurrent thread
 
 == Using try/catch/finally and throwing Exceptions ==
 
-<source lang="lisp">
+<source lang="clojure">
 (try
   (println "Going to throw ...")
   (throw (Exception. "Testing error catching"))
@@ -1322,7 +1322,7 @@ The assignment is done in a transaction, so no matter how many concurrent thread
 
 Of course you can throw any kind of exception you want. For example, in checking function arguments:
 
-<source lang="lisp">
+<source lang="clojure">
 (import '(java.awt Rectangle))
 
 (defn area [#^Rectangle r]
@@ -1341,7 +1341,7 @@ Above, despite the type declaration, one can pass any value to the <i>area</i> f
 
 == Executing a command in a shell and capturing its output ==
 First we define the macro <i>exec</i>:
-<source lang="lisp">
+<source lang="clojure">
 (import '(java.io BufferedReader InputStreamReader))
 
 (defmacro exec
@@ -1360,13 +1360,13 @@ Some explanations on the above macro syntax (see also [http://clojure.org/macros
 
 
 Then we give the macro a command to execute and a function to process its stdout output.
-<source lang="lisp">
+<source lang="clojure">
 ; List all files in the home directory:
 (exec "ls /home/albert/"
       #(doseq [line %1] (println line)))
 </source>
 A second example, printing the file size of each listed file in the home directory:
-<source lang="lisp">
+<source lang="clojure">
 ; Print the size of each file in the home directory:
 (import '(java.io File))
 
@@ -1376,7 +1376,7 @@ A second example, printing the file size of each listed file in the home directo
           (println (.length (File. (str dir line)))))))
 </source>
 A third example, telling the music player XMMS2 to jump to a specific track in its playlist:
-<source lang="lisp">
+<source lang="clojure">
 (let [track-number 125]
   (exec (str "xmms2 jump " track-number)
         (fn [lines] lines)))
@@ -1395,7 +1395,7 @@ The derivative of a function:
 We can approximate the derivative by choosing an arbitrarily precise value of the increment <i>dx</i>.
 
 So first we define a function that takes any function as argument and returns a new function that implements its derivative. For convenience, we define it within a closure that specifies the arbitrarily precise increment <i>dx</i> (but we could just pass it as argument):
-<source lang="lisp">
+<source lang="clojure">
 (let [dx (double 0.0001)]
   (defn derivative [f]
      "Return a function that is the derivative of the given function f, using dx increments."
@@ -1406,14 +1406,14 @@ So first we define a function that takes any function as argument and returns a 
 </source>
 
 Then, for any example function like the cube of x:
-<source lang="lisp">
+<source lang="clojure">
 (defn cubic [x]
   (let [a (double x)]
     (* a a a)))
 </source>
 
 ... we create its derivative function, which we place into a variable (note we use <i>def</i> and not <i>defn</i>):
-<source lang="lisp">
+<source lang="clojure">
 (def cubic-prime (derivative cubic))
 </source>
 
@@ -1437,12 +1437,12 @@ The above code translated from lisp code at [http://funcall.blogspot.com/2009/03
 
 Suppose we create a primitive array of length 10:
 
-<source lang="lisp">
+<source lang="clojure">
 user=> (def pa (make-array Integer/TYPE 10))
 </source>
 
 If we print it, we get:
-<source lang="lisp">
+<source lang="clojure">
 user=> (println pa)
 #<int[] [I@169bc15>
 </source>
@@ -1450,25 +1450,25 @@ user=> (println pa)
 ... which is not very useful. Instead, let's pretty print it.
 
 First, import the function <i>pprint</i> (and many other functions) from clojure-contrib pprint namespace:
-<source lang="lisp">
+<source lang="clojure">
 user=> (use 'clojure.contrib.pprint)
 </source>
 
 Then, use it:
-<source lang="lisp">
+<source lang="clojure">
 user=> (pprint pa)
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 </source>
 
 
 A similar result can be obtained by wrapping primitive arrays with <i>seq</i>, which generates a Collection view on the primitive array:
-<source lang="lisp">
+<source lang="clojure">
 user=> (println (seq pa))
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 </source>
 
 That <i>seq</i> creates only a view (and not a copy), you can convince yourself: changing the array changes the view, too:
-<source lang="lisp">
+<source lang="clojure">
 user=> (def sa (seq pa))
 user=> sa
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -1481,7 +1481,7 @@ user=> sa
 
 == Loading an image file into a byte array ==
 
-<source lang="lisp">
+<source lang="clojure">
 (import [java.io File FileInputStream]
 (defn ^bytes load-file
   "Load a file into a byte array."
@@ -1498,7 +1498,7 @@ user=> sa
 
 ... which then may be parsed as a java.awt.Image:
 
-<source lang="lisp">
+<source lang="clojure">
 (def img (javax.imageioImageIO/read
                (java.io.ByteArrayInputStream.
                  (load-file "/home/acardona/Desktop/t2/NileBend.jpg"))))
@@ -1507,7 +1507,7 @@ user=> sa
 
 ... which then may be shown as an ImagePlus:
 
-<source lang="lisp">
+<source lang="clojure">
 (.show (ij.ImagePlus. "nile bend" img))
 </source>
 
