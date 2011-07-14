@@ -24,6 +24,7 @@ This is a '''complementary plugin''' of [[Register Virtual Stack Slices]]. It al
 *Each image represents a slice in a sequence.
 *'''Output folder''': You have or create a folder to store the resulting virtual stack with the transformed images. 
 *'''Transform folder''': You have a folder with the transform files (from a [[Register Virtual Stack Slices]] execution).
+*'''Interpolate''': Toggle the interpolation for the result images.
 
 '''Step 1''': launch the "Plugins - Transform - Transform Virtual Stack Slices" plugin.
 [[Image:Main-Dialog-Transform Virtual Stack.png|thumb|400px|Transform Virtual Stack main dialog]]
