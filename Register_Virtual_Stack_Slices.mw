@@ -5,7 +5,7 @@
 | maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/register_virtual_stack_slices/register_virtual_stack/Register_Virtual_Stack_MT.java;hb=HEAD on gitweb]
 | released               = 2008
-| latest version         = July 13<sup>th</sup>, 2011
+| latest version         = July 14<sup>th</sup>, 2011
 | status                 = stable, active
 | category               = [[:Category:Registration|Registration]]
 }}{|
