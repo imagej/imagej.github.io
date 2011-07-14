@@ -5,7 +5,7 @@
 | maintainer             = [[User:Iarganda | Ignacio Arganda-Carreras]]
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Trainable_Segmentation/trainableSegmentation;h=c38082682b56b221492a84f48fcc586d28dbd6fa;hb=HEAD on gitweb]
 | released               = May 19<sup>th</sup>, 2011
-| latest version         = July 12<sup>th</sup>, 2011
+| latest version         = July 14<sup>th</sup>, 2011
 | status                 = '''BETA''', active
 | category               = [[:Category:Segmentation|Segmentation]], [[:Category:Machine Learning|Machine Learning]]
 }}
