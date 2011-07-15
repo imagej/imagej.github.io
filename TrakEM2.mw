@@ -63,6 +63,40 @@ What the JVM flags mean:
 
 With the above settings, we have succesfully registered 33,000 image tiles corresponding to 459 serial sections, using the "Align multi-layer mosaic" TrakEM2 command.
 
+== Preparing TrakEM2 for best performance ==
+
+=== For fastest browsing through layers ===
+Right-click on the canvas and choose "Display - Properties...". Then make sure that:
+* "snapshots mode" is set to "Disabled", or at most to "Outlines".
+* "Prepaint" is not checked, so that it is disabled.
+
+=== For importing large collections of images and editing them immediately afterwards ===
+
+The goal is to avoid generating mipmaps multiple times, which may be very time consuming.
+
+Right-click on the canvas and choose "Display - Properties...". Then make sure that:
+* "enable mipmaps" is not checked, so that it is disabled.
+
+Beware that <b>you will not be able to browse quickly</b> through layers while importing, given that mipmaps will not be generated.
+
+Now to correct the contrast, first <b>re-enable mipmaps</b> by going again to "Display - Properties..." and checking the "enable mipmaps" checkbox. Then you have two general (non-exclusive) options:
+
+A. Use the built-in commands from the right-click menu, such as:
+* "Adjust images - Enhance contrast layer-wise"
+* "Adjust images - Set min and max layer-wise"
+
+B. Create a preprocessor script and set it to all images. For example, a [[Beanshell Scripting|beanshell]] script to run [[CLAHE]] on each image. In the script, the <i>patch</i> and <i>imp</i> variables exist automatically, and represent the [http://fiji.sc/javadoc/ini/trakem2/display/Patch.html Patch] instance and the [http://fiji.sc/javadoc/ij/ImagePlus.html ImagePlus] instance that the Patch wraps, respectively.
+
+<source lang="java">
+import ij.IJ;
+IJ.run(imp, "Enhance Local Contrast (CLAHE)", "blocksize=127"
+   + "histogram=256 maximum=3 mask=*None* fast_(less_accurate)");
+</source>
+
+To set the script to all images, save the above to a file named "whatever.bsh" (notice the filename extension ".bsh") and then right-click on the TrakEM2 canvas and choose "Script - Set preprocessor script layer-wise", and choose the whole range of layers. This will set the script to every image of every layer, and trigger mipmap regeneration for every image. When TrakEM2 loads the image, the script will run on the image before TrakEM2 ever sees its contents.
+
+The preprocessor script gives you maximum power: do whatever you want with the image. For example, [[Jython Scripting#Correct_illumination_in_a_stack:_apply_the_illumination_of_one_slice_to_all_others | normalize the image]] relative to a known good mean and standard deviation for your data set.
+
 == How much RAM should I allocate to the JVM for Fiji to run TrakEM2? ==
 
 Use a computer that follows this rule of thumb: take the largest single 2D image in your dataset, then multiply its size by 10, and make sure that every core of your CPU has at least that much RAM available to it.
