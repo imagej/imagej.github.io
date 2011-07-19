@@ -1,6 +1,3 @@
-<span style="color:red">Warning! Broken in Fiji-Heidelberg!</span> The version of this plugin that was shipped with the [[2010-06-14 - Fiji "Heidelberg" is out|Fiji-Heidelberg]] release is broken and generate a null-pointer exception. As of today (17/06/2010) this is fixed; just use the [[Fiji Updater]] to update this plugin to a working version.
-
-
 {{Infobox Plugin
 | software               = Fiji
 | name                   = Image Expression Parser
@@ -136,7 +133,7 @@ Here is a list for supported functions and algorithms, as of version 2.1.
 <td>Power</td><td>pow</td>
 </tr>
 <tr>
-<td>Square Root</td><td>sqr</td>
+<td>Square Root</td><td>sqrt</td>
 </tr>
 <tr>
 <td>Absolute Value</td><td>abs</td>
