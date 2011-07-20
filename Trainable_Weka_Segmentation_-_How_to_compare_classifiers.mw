@@ -150,6 +150,17 @@ the datasets used in the experiment. In this example, there was only one dataset
 and '''SMO''' was better than '''NaiveBayes''' once and never equivalent to or worse than
 '''NaiveBayes''' (1/0/0); '''J48''' was also better than '''NaiveBayes''' on the dataset, and '''VotedPerceptron''' was worse.
 
+The standard deviation of the attribute being evaluated can be generated
+by selecting the ''Show std. deviations'' check box and hitting ''Perform test'' again.
+The value ''(10)'' at the beginning of the ''segment'' row represents the number of estimates that are used to calculate the standard deviation (the number of runs in
+this case).
+
+Selecting ''Number correct'' as the ''comparison ﬁeld'' and clicking ''Perform test''
+generates the average number correct (out of 975 test patterns - 33% of 2954
+patterns in the ''segment'' dataset).
+
+[[Image:Screenshot-AWS-tutorial-analyse-number-correct.png|700px]]
+
 [[Category:Tutorials]]
 [[Category:Segmentation]]
 [[Category:Machine Learning]]
