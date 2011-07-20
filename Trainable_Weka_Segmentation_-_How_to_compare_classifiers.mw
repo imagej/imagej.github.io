@@ -70,6 +70,10 @@ In this example, we open the ''albert'' directory and choose the ''data-compare.
 
 After clicking ''Open'' the ﬁle will be displayed in the datasets list. If one selects a directory and hits ''Open'', then all ARFF ﬁles will be added recursively. Files can be deleted from the list by selecting them and then clicking on ''Delete selected''.
 
+====Algorithms====
+New algorithms can be added via the ''Add new...'' button. Opening this dialog for the ﬁrst time, ''' ZeroR''' is presented, otherwise the one that was selected last:
+
+[[Image:Screenshot-AWS-tutorial-select-algorithm.png]]
 
 [[Category:Tutorials]]
 [[Category:Segmentation]]
