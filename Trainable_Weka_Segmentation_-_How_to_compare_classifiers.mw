@@ -97,6 +97,12 @@ For future re-use, one can save the current setup of the experiment to a ﬁle b
 
 [[Image:Screenshot-AWS-tutorial-save-setup.png]]
 
+By default, the format of the experiment ﬁles is the binary format that Java
+serialization oﬀers. The drawback of this format is the possible incompatibility
+between diﬀerent versions of Weka. A more robust alternative to the binary
+format is the XML format.
+
+Previously saved experiments can be loaded again via the ''Open...'' button.
 
 [[Category:Tutorials]]
 [[Category:Segmentation]]
