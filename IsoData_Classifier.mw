@@ -3,7 +3,7 @@
 | software               = Fiji
 | author                 = [mailto:johannes.schindelin_at_gmx.de Johannes Schindelin]
 | maintainer             = Johannes Schindelin
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/IsoData_Classifier/IsoData_Classifier.java;hb=HEAD on gitweb]
+| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/IsoData_Classifier;hb=HEAD on gitweb]
 | released               = 2009/11/21
 }}
 
@@ -12,3 +12,5 @@ This plugin calculates a classification based on the histogram of the image by g
 This plugin works on 8-bit and 16-bit grayscale images only.
 
 To start the plugin, go to ''Analyze > Classification > IsoData Classifier''.
+
+[[Image:IsoData Classifier.png|400px|thumb|Configuration dialog of the IsoData Classifier plugin]]
