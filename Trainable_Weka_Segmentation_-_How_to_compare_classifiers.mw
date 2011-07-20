@@ -140,7 +140,7 @@ The schemes used in the experiment are shown in the columns and the
 datasets used are shown in the rows.
 
 The percentage correct for each of the 4 schemes is shown in each dataset
-row: '''88.70%''' for '''NaiveBayes''', '''94.76%''' for '''SMO''', '''57.54%''' for '''VotedPerceptron''' and '''95.88%''' for J48. The annotation v or * indicates that a speciﬁc result is statistically better (v) or worse (*)
+row: '''88.70%''' for '''NaiveBayes''', '''94.76%''' for '''SMO''', '''57.64%''' for '''VotedPerceptron''' and '''95.88%''' for J48. The annotation v or * indicates that a speciﬁc result is statistically better (v) or worse (*)
 than the baseline scheme (in this case, '''NaiveBayes''') at the signiﬁcance level speciﬁed
 (currently 0.05). The results of both '''SMO''' and '''J48''' are statistically better than
 the baseline established by '''NaiveBayes'''. At the bottom of each column after the ﬁrst
