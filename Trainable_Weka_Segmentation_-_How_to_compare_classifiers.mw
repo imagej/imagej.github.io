@@ -136,6 +136,20 @@ Select the ''Percent correct'' attribute from the ''Comparison ﬁeld'' and clic
 
 [[Image:Screenshot-AWS-tutorial-percentage-correct-test.png|700px]]
 
+The schemes used in the experiment are shown in the columns and the
+datasets used are shown in the rows.
+
+The percentage correct for each of the 4 schemes is shown in each dataset
+row: '''88.70%''' for '''NaiveBayes''', '''94.76%''' for '''SMO''', '''57.54%''' for '''VotedPerceptron''' and '''95.88%''' for J48. The annotation v or * indicates that a speciﬁc result is statistically better (v) or worse (*)
+than the baseline scheme (in this case, '''NaiveBayes''') at the signiﬁcance level speciﬁed
+(currently 0.05). The results of both '''SMO''' and '''J48''' are statistically better than
+the baseline established by '''NaiveBayes'''. At the bottom of each column after the ﬁrst
+column is a count (xx/ yy/ zz) of the number of times that the scheme was
+better than (xx), the same as (yy), or worse than (zz), the baseline scheme on
+the datasets used in the experiment. In this example, there was only one dataset
+and '''SMO''' was better than '''NaiveBayes''' once and never equivalent to or worse than
+'''NaiveBayes''' (1/0/0); '''J48''' was also better than '''NaiveBayes''' on the dataset, and '''VotedPerceptron''' was worse.
+
 [[Category:Tutorials]]
 [[Category:Segmentation]]
 [[Category:Machine Learning]]
