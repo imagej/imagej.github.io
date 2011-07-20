@@ -75,6 +75,18 @@ New algorithms can be added via the ''Add new...'' button. Opening this dialog f
 
 [[Image:Screenshot-AWS-tutorial-select-algorithm.png]]
 
+With the ''Choose'' button one can open the ''GenericObjectEditor'' and choose another classiﬁer:
+
+[[Image:Screenshot-AWS-tutorial-select-NaivesBayes.png]]
+
+The ''Filter...'' button enables one to highlight classiﬁers that can handle certain attribute and class types. With the ''Remove ﬁlter'' button all the selected capabilities will get cleared and the highlighting removed again.
+
+Additional algorithms can be added again with the ''Add new...'' button. In our example, we add '''NaiveBayes''', '''SMO''', '''VotedPerceptron''' and '''J48''':
+
+[[Image:Screenshot-AWS-tutorial-add-some-algorithms.png|700px]]
+
+
+
 [[Category:Tutorials]]
 [[Category:Segmentation]]
 [[Category:Machine Learning]]
