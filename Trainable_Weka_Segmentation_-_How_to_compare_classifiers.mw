@@ -57,6 +57,20 @@ The user can choose between the following three diﬀerent types
 
 * '''Train/Test Percentage Split (order preserved)''' because it is impossible to specify an explicit train/test ﬁles pair, one can ''abuse'' this type to ''un-merge'' previously merged train and test ﬁle into the two original ﬁles (one only needs to ﬁnd out the correct percentage)
 
+Additionally, one can choose between ''Classiﬁcation'' and ''Regression'', depending on the datasets and classiﬁers one uses. ''Classiﬁcation'' is selected by default.
+
+''Note'': if the percentage splits are used, one has to make sure that the corrected paired ''T-Tester'' still produces sensible results with the given ratio.
+
+====Datasets====
+One can add dataset ﬁles either with an absolute path or with a relative one. The latter makes it often easier to run experiments on diﬀerent machines, hence one should check ''Use relative paths'', before clicking on ''Add new...'':
+
+[[Image:Screenshot-AWS-tutorial-add-dataset.png]]
+
+In this example, we open the ''albert'' directory and choose the ''data-compare.arﬀ'' dataset.
+
+After clicking ''Open'' the ﬁle will be displayed in the datasets list. If one selects a directory and hits ''Open'', then all ARFF ﬁles will be added recursively. Files can be deleted from the list by selecting them and then clicking on ''Delete selected''.
+
+
 [[Category:Tutorials]]
 [[Category:Segmentation]]
 [[Category:Machine Learning]]
