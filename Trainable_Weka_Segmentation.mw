@@ -167,7 +167,7 @@ The Weka button launches the Weka GUI Chooser, where we can start all the applic
 * '''KnowledgeFlow''': this environment supports essentially the same functions as the Explorer but with a drag-and-drop interface. One advantage is that it supports incremental learning.
 * '''SimpleCLI''': provides a simple command-line interface that allows direct execution of WEKA commands for operating systems that do not provide their own command line interface.
 
-For a complete step-by-step description on how to compare classifiers for image segmentation using [http://www.cs.waikato.ac.nz/ml/weka/ Weka], have a look at the [[Advanced Weka Segmentation - How to compare classifiers‎]] tutorial.
+For a complete step-by-step description on how to compare classifiers for image segmentation using the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] Explorer, have a look at the [[Advanced Weka Segmentation - How to compare classifiers‎]] tutorial.
 
 === Macro language compatibility ===
 [[Advanced Weka Segmentation]] is completely compatible with the popular [http://rsb.info.nih.gov/ij/developer/macro/macros.html ImageJ macro language]. Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
