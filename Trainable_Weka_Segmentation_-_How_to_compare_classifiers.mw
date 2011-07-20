@@ -118,6 +118,23 @@ If the experiment was deﬁned correctly, the 3 messages shown above will
 be displayed in the ''Log'' panel. The results of the experiment are saved to the
 dataset ''experiment-compare.arff''.
 
+====Analysing results====
+To analyse the results, select the ''Analyse'' tab at the top of the Experiment Environment
+window.
+
+Click on ''Experiment'' to analyse the results of the current experiment:
+
+[[Image:Screenshot-AWS-tutorial-Analyse-Result-Experiment.png|700px]]
+
+The number of result lines available (''Got 40 results'') is shown in the ''Source''
+panel. This experiment consisted of 10 runs, for 4 schemes, for 1 dataset, for a
+total of 40 result lines. Results can also be loaded from an earlier experiment ﬁle
+by clicking ''File'' and loading the appropriate ''.arﬀ'' results ﬁle. 
+
+Select the ''Percent correct'' attribute from the ''Comparison ﬁeld'' and click
+''Perform test'' to generate a comparison of the 4 schemes:
+
+[[Image:Screenshot-AWS-tutorial-percentage-correct-test.png|700px]]
 
 [[Category:Tutorials]]
 [[Category:Segmentation]]
