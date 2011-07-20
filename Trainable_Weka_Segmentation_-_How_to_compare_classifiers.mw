@@ -91,6 +91,12 @@ With the ''Load options...'' and ''Save options...'' buttons one can load and sa
 One can also paste classiﬁer settings here by right-clicking (or ''Alt-Shift-leftclicking'') and selecting the appropriate menu point from the popup menu, to either add a new classiﬁer or replace the selected one with a new setup. This is rather useful for transferring a classiﬁer setup from the Weka Explorer over to
 the Experimenter without having to setup the classiﬁer from scratch.
 
+====Saving the setup====
+
+For future re-use, one can save the current setup of the experiment to a ﬁle by clicking on ''Save...'' at the top of the window:
+
+[[Image:Screenshot-AWS-tutorial-save-setup.png]]
+
 
 [[Category:Tutorials]]
 [[Category:Segmentation]]
