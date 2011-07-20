@@ -19,9 +19,13 @@ After that, we use the selection tools to trace samples of both classes. By defa
 
 [[Image:Screenshot-AWS-tutorial-select-training-traces.png|700px]]
 
-Once we are satisfied with the amount of samples, we save the data into an ARFF file, the format WEKA understand. For that, we click on "Save data" and select the output file name ("data-compare.arff" in our case):
+Once we are satisfied with the amount of samples, we save the data into an ARFF file, the format WEKA understand. For that, we click on "Save data" and select the output path and file name ("data-compare.arff" in our case):
 
 [[Image:Screenshot-AWS-tutorial-save-data.png]]
+
+=== Launching the WEKA Experimenter ===
+In order to use the data we just saved for comparing classifiers, we need to open the WEKA Experimenter. For that, we first click on the WEKA button of the plugin GUI. Then the Weka GUI Chooser will pop up:
+[[Image:Screenshot-AWS-tutorial-WEKA-Chooser.png]]
 
 
 [[Category:Tutorials]]
