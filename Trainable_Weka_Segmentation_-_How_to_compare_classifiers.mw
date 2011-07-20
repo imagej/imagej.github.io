@@ -19,6 +19,10 @@ After that, we use the selection tools to trace samples of both classes. By defa
 
 [[Image:Screenshot-AWS-tutorial-select-training-traces.png|700px]]
 
+Once we are satisfied with the amount of samples, we save the data into an ARFF file, the format WEKA understand. For that, we click on "Save data" and select the output file name ("data-compare.arff" in our case):
+
+[[Image:Screenshot-AWS-tutorial-save-data.png]]
+
 
 [[Category:Tutorials]]
 [[Category:Segmentation]]
