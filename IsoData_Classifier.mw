@@ -14,3 +14,6 @@ This plugin works on 8-bit and 16-bit grayscale images only.
 To start the plugin, go to ''Analyze > Classification > IsoData Classifier''.
 
 [[Image:IsoData Classifier.png|400px|thumb|Configuration dialog of the IsoData Classifier plugin]]
+
+[[Category:Plugins]]
+[[Category:Segmentation]]
