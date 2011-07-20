@@ -23,10 +23,39 @@ Once we are satisfied with the amount of samples, we save the data into an ARFF 
 
 [[Image:Screenshot-AWS-tutorial-save-data.png]]
 
-=== Launching the WEKA Experimenter ===
-In order to use the data we just saved for comparing classifiers, we need to open the WEKA Experimenter. For that, we first click on the WEKA button of the plugin GUI. Then the Weka GUI Chooser will pop up:
+=== Working with the WEKA Experimenter ===
+In order to use the data we just saved for comparing classifiers, we need to open the WEKA Experimenter. For that, we first click on the WEKA button of the plugin GUI (last button of the left panel). Then the Weka GUI Chooser will pop up:
+
 [[Image:Screenshot-AWS-tutorial-WEKA-Chooser.png]]
 
+We click on "Experimenter" and the Weka Experiment Environment GUI will pop up:
+[[Image:Screenshot-AWS-Weka-Experiment-Environment.png|700px]]
+
+==== New experiment ====
+In this tutorial we use the "Simple" configuration mode. After clicking ''New'' default parameters for an Experiment are deﬁned:
+
+[[Image:Screenshot-Weka-Experiment-Environment-Simple-New.png|700px]]
+
+==== Results destination ====
+
+By default, an ARFF ﬁle is the destination for the results output. But you can choose between
+* ARFF ﬁle
+* CSV ﬁle
+* JDBC database
+CSV is similar to ARFF, but it can be used to be loaded in an external spreadsheet application. If the ﬁle name is left empty a temporary ﬁle will be created in the TEMP directory of the system. If one wants to specify an explicit results ﬁle, click on ''Browse'' and choose a ﬁlename. In our case, we set the filename to ''experiment-compare.arff'':
+
+[[Image:Screnshot-AWS-tutorial-save-destination-arff.png]]
+
+Click on ''Save'' and the name will appear in the edit ﬁeld next to ''ARFF ﬁle''.
+
+==== Experiment type ====
+The user can choose between the following three diﬀerent types
+* '''Cross-validation (default)''' performs stratiﬁed cross-validation with the given number of folds.
+* '''Train/Test Percentage Split (data randomized)''' splits a dataset according to the given percentage into a train and a test ﬁle (one cannot specify explicit training and test ﬁles in the Experimenter), after the order of the data has been randomized and stratiﬁed:
+
+[[Image:Screenshot-AWS-tutorial-select-experiment-type.png|700px]]
+
+* '''Train/Test Percentage Split (order preserved)''' because it is impossible to specify an explicit train/test ﬁles pair, one can ''abuse'' this type to ''un-merge'' previously merged train and test ﬁle into the two original ﬁles (one only needs to ﬁnd out the correct percentage)
 
 [[Category:Tutorials]]
 [[Category:Segmentation]]
