@@ -2,6 +2,14 @@
 In this tutorial we will show how to compare the performance of different classifiers in the same segmentation problem using the [[Advanced Weka Segmentation]] plugin. Most of the information of this tutorial has been extracted from the [http://iweb.dl.sourceforge.net/project/weka/documentation/3.7.x/WekaManual-3-7-3.pdf WEKA manual for version 3.7.3], chapter 6.
 
 === Starting the plugin ===
+To get started, open the 2D image or stack you want to work on and start up the Advanced Weka Segmentation plugin:
+
+[[Image:Screenshot-open-AWS.png|700px]]
+
+For this tutorial, we used one of the TEM sections from [[public data sets | Albert Cardona's public data set]].
+
+After loading, the main GUI of the plugin will pop up:
+[[Image:screenshot-AWS-startup.png|700px]]
 
 
 [[Category:Tutorials]]
