@@ -162,7 +162,7 @@ This slider sets the opacity of the resulting overlay image. Depending on the im
 
 The Weka button launches the Weka chooser, where we can start all the applications available in Weka.
 
-For a complete step-by-step description on how to compare classifiers for image segmentation have a look at the [[Advanced Weka Segmentation - How to compare classifiers‎]] tutorial.
+For a complete step-by-step description on how to compare classifiers for image segmentation using Weka, have a look at the [[Advanced Weka Segmentation - How to compare classifiers‎]] tutorial.
 
 === Macro language compatibility ===
 [[Advanced Weka Segmentation]] is completely compatible with the popular [http://rsb.info.nih.gov/ij/developer/macro/macros.html ImageJ macro language]. Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
