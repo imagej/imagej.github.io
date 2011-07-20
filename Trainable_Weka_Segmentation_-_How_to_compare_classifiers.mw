@@ -104,6 +104,21 @@ format is the XML format.
 
 Previously saved experiments can be loaded again via the ''Open...'' button.
 
+====Running an experiment====
+To run the current experiment, click the ''Run'' tab at the top of the Experiment
+Environment window. The current experiment performs 10 runs of Train/Test percentage split (with data randomized) on the TEM image dataset using the '''NaiveBayes''', '''SMO''', '''VotedPerceptron''' and '''J48''' schemes:
+
+[[Image:Screenshot-AWS-tutorial-Experiment-Initial-Run.png|700px]]
+
+Click ''Start'' to run the experiment:
+
+[[Image:Screenshot-AWS-tutorial-experiment-run.png|700px]]
+
+If the experiment was deﬁned correctly, the 3 messages shown above will
+be displayed in the ''Log'' panel. The results of the experiment are saved to the
+dataset ''experiment-compare.arff''.
+
+
 [[Category:Tutorials]]
 [[Category:Segmentation]]
 [[Category:Machine Learning]]
