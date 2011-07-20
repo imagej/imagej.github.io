@@ -162,12 +162,10 @@ This slider sets the opacity of the resulting overlay image. Depending on the im
 
 The Weka button launches the Weka GUI Chooser, where we can start all the applications available in [http://www.cs.waikato.ac.nz/ml/weka/ Weka]: 
 
-* '''Explorer''' An environment for exploring data with WEKA.
-* '''Experimenter''' An environment for performing experiments and conducting statistical tests between learning schemes.
-* '''KnowledgeFlow''' This environment supports essentially the same functions as the Explorer but with a drag-and-drop interface. One advantage is that it supports incremental learning.
-* '''SimpleCLI''' Provides a simple command-line interface that allows direct
-execution of WEKA commands for operating systems that do not provide
-their own command line interface.
+* '''Explorer''': an environment for exploring data with WEKA.
+* '''Experimenter''': an environment for performing experiments and conducting statistical tests between learning schemes.
+* '''KnowledgeFlow''': this environment supports essentially the same functions as the Explorer but with a drag-and-drop interface. One advantage is that it supports incremental learning.
+* '''SimpleCLI''': provides a simple command-line interface that allows direct execution of WEKA commands for operating systems that do not provide their own command line interface.
 
 For a complete step-by-step description on how to compare classifiers for image segmentation using [http://www.cs.waikato.ac.nz/ml/weka/ Weka], have a look at the [[Advanced Weka Segmentation - How to compare classifiers‎]] tutorial.
 
