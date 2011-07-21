@@ -119,6 +119,7 @@ be displayed in the ''Log'' panel. The results of the experiment are saved to th
 dataset ''experiment-compare.arff''.
 
 ====Analysing results====
+=====Setup=====
 To analyse the results, select the ''Analyse'' tab at the top of the Experiment Environment
 window.
 
@@ -181,6 +182,13 @@ To give one more control, the “Advanced setup” allows one to bring up all
 the options that a result matrix oﬀers. This includes the options described
 above, plus options like the width of the row names, or whether to enumerate
 the columns and rows.
+
+=====Saving the Results=====
+
+The information displayed in the ''Test output'' panel is controlled by the currently selected entry in the ''Result list'' panel. Clicking on an entry causes the results
+corresponding to that entry to be displayed.
+
+
 
 [[Category:Tutorials]]
 [[Category:Segmentation]]
