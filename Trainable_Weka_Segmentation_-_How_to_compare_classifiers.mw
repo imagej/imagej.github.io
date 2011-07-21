@@ -161,6 +161,27 @@ patterns in the ''segment'' dataset).
 
 [[Image:Screenshot-AWS-tutorial-analyse-number-correct.png|700px]]
 
+Clicking on the button for the ''Output format'' leads to a dialog that lets
+you choose the precision for the ''mean'' and the ''std. deviations'', as well as the
+format of the output. Checking the ''Show Average'' checkbox adds an additional
+line to the output listing the average of each column. With the ''Remove ﬁlter''
+''classnames'' checkbox one can remove the ﬁlter name and options from processed
+datasets (ﬁlter names in Weka can be quite lengthy).
+The following formats are supported:
+* CSV
+* GNUPlot
+* HTML
+* LaTeX
+* Plain text (default)
+* Signiﬁcance only
+
+[[Image:Screenshot-AWS-tutorial-analyse-precision-dialog.png]]
+
+To give one more control, the “Advanced setup” allows one to bring up all
+the options that a result matrix oﬀers. This includes the options described
+above, plus options like the width of the row names, or whether to enumerate
+the columns and rows.
+
 [[Category:Tutorials]]
 [[Category:Segmentation]]
 [[Category:Machine Learning]]
