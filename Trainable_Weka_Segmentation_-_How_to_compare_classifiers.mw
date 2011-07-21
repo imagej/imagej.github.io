@@ -188,7 +188,13 @@ the columns and rows.
 The information displayed in the ''Test output'' panel is controlled by the currently selected entry in the ''Result list'' panel. Clicking on an entry causes the results
 corresponding to that entry to be displayed.
 
+[[Image:Screenshot-AWS-tutorial-result-list-analyse.png]]
 
+The results shown in the ''Test output'' panel can be saved to a ﬁle by clicking
+''Save output''. Only one set of results can be saved at a time but Weka permits
+the user to save all results to the same ﬁle by saving them one at a time and
+using the ''Append'' option instead of the ''Overwrite'' option for the second and
+subsequent saves.
 
 [[Category:Tutorials]]
 [[Category:Segmentation]]
