@@ -102,10 +102,7 @@ The rest of tunable parameters of the plugin can be changed on the Settings dial
 Here we can select and deselect the training features, which are the key of the learning procedure. The plugin creates a stack of images ---one image for each feature. For instance, if only [http://en.wikipedia.org/wiki/Gaussian_blur Gaussian blur] is selected as a feature, the classifier will be trained on the original image and some blurred versions to it with different <math>\sigma</math> parameters for the Gaussian. 
 
 The different available features are:
-* '''Gaussian blur''': performs <math>n</math> individual convolutions with Gaussian
-kernels with <math>\sigma</math> equal to <math>1, 2, 4... 2^{n}</math>. The
-larger the radius the more blurred the image becomes until the pixels
-are homogeneous (by default <math>n=16</math>).
+* '''Gaussian blur''': performs <math>n</math> individual convolutions with Gaussian kernels with <math>\sigma</math> equal to <math>1, 2, 4... 2^{n}</math>. The larger the radius the more blurred the image becomes until the pixels are homogeneous (by default <math>n=16</math>).
 * '''Sobel filter''': calculates the [http://en.wikipedia.org/wiki/Sobel_filter gradient at each pixel]. [http://en.wikipedia.org/wiki/Gaussian_blur Gaussian blurs] with <math>\sigma=1, 2, 4... 2^{n}</math> are performed prior to the filter.
 * '''Hessian''': Calculates a [http://en.wikipedia.org/wiki/Hessian_matrix Hessian matrix] <math>H</math> at each pixel. Prior to the application of any filters, a [http://en.wikipedia.org/wiki/Gaussian_blur Gaussian blur] with <math>\sigma=1, 2,
 4... 2^{n}</math> is performed. The final features used for pixel classification, given the Hessian matrix <math>\left(\begin{array}{cc}
