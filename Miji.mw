@@ -10,6 +10,8 @@ will start a Fiji inside Matlab.
 
 = Getting started =
 
+== Using MATLAB as processing core and sending results to Fiji ==
+
 An example how to work with MIJ is provided here:
 
 <source lang="matlab">
@@ -21,6 +23,16 @@ MIJ.createImage('result',E);
 </source>
 
 If you get an error saying that some Plugin related classes cannot be found, please update your Fiji with ''Help>Update Fiji''!
+
+
+== Using Fiji as a 3D viewer for MATLAB ==
+
+A set of demos made for MATLAB users, and introducing how to install and use Fiji as a visualization tool for MATLAB is published on the [http://www.mathworks.com/matlabcentral/fileexchange/32344-hardware-accelerated-3d-viewer-for-matlab fex]. Individual pages are linked below:
+
+* [http://www.mathworks.com/matlabcentral/fileexchange/32344-hardware-accelerated-3d-viewer-for-matlab/content/MATLABJava3D/Matlab3DViewerIntroduction.html Introduction]
+* [http://www.mathworks.com/matlabcentral/fileexchange/32344-hardware-accelerated-3d-viewer-for-matlab/content/MATLABJava3D/Matlab3DViewerDemo_1.html Demo 1]
+* [http://www.mathworks.com/matlabcentral/fileexchange/32344-hardware-accelerated-3d-viewer-for-matlab/content/MATLABJava3D/Matlab3DViewerDemo_2.html Demo 2]
+
 
 = Getting help =
 
@@ -43,5 +55,8 @@ If you want to use the functions without starting Fiji's graphical interface, ju
 <source lang="matlab">
 Miji(false);
 </source>
+
+
+
 
 [[Category:Tutorials]]
