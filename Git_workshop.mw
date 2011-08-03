@@ -109,6 +109,10 @@ For ease of use, in addition to their long name (40 hex characters, quite klunky
 <source lang="bash">
 git log
 </source>
+* Inspecting the version history in a graphical way
+<source lang="bash">
+gitk
+</source>
 * Inspecting the version history with diffs
 <source lang="bash">
 git log -p
