@@ -54,6 +54,7 @@ git commit
 Notes:
 
 * All modified files should be added before calling ''git commit''
+* Since the added files are ''staged for commit'', the command ''git stage'' is a synonym for ''git add'
 * making use of the ''git status'' output
 * using a .gitignore file
 * adding a Sign-off (AKA S-O-B)
