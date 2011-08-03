@@ -386,6 +386,8 @@ Let's surf to http://github.com/git/hello-world and inspect the history
 
 = Advanced topics =
 
+* aliases
+
 * cherry-picking
 
 * partial staging
