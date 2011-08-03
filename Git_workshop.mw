@@ -21,6 +21,7 @@ Version control usually facilitates:
 * documentation (who did what when and why?)
 * documentation (how do I do ...?)
 * easy synchronization (staying up-to-date, integrating changes between multiple developers/machines)
+* finding the changes introducing regressions (AKA bugs) efficiently
 
 == Hands-on ==
 
