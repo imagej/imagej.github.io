@@ -313,6 +313,29 @@ macro "Save As JPEG Action Tool Options" {
 
 This section contains a number of macros which you can use as starting points to write your own macros.
 
+== Resizing to a given width of the selection bounds ==
+
+When you need to resize an image but all you know is the pixel width of a rectangular area you selected, this macro is for you:
+
+<source lang="java">
+desiredSelectionWidth = 480;
+
+roiType = selectionType();
+getSelectionCoordinates(x, y);
+getSelectionBounds(dummy, dummy, selectionWidth, selectionHeight);
+factor = desiredSelectionWidth / selectionWidth;
+newWidth = round(factor * getWidth());
+newHeight = round(factor * getHeight());
+run("Select None");
+run("Size...", "width=" + newWidth + " height=" + newHeight
+	+ " average interpolation=Bicubic");
+for (i = 0; i < x.length; i++) {
+	x[i] = round(x[i] * factor);
+	y[i] = round(y[i] * factor);
+}
+makeSelection(roiType, x, y);
+</source>
+
 == Splitting timepoints ==
 
 This macro splits a hyperstack into its individual timepoints, so that you end up with as many new images as the original hyperstack had frames:
