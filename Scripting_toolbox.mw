@@ -180,13 +180,27 @@ rm.setSelectedIndexes([0,2,4]);
 rm.runCommand("AND");
 </source>
 
-* Python
+==== Python ====
+<source lang="python">
+from ij.plugin.frame import RoiManager
+
+rm = RoiManager.getInstance()
+rm.setSelectedIndexes([0, 2, 4])
+rm.runCommand("AND")
+</source>
+
+==== Beanshell ====
+<source lang="java">
+import ij.plugin.frame.RoiManager;
+
+rm = RoiManager.getInstance();
+rm.setSelectedIndexes(new int[] { 0, 2, 4});
+rm.runCommand("AND");
+</source>
 
 * Ruby
 
 * Clojure
-
-* Beanshell
 
 === Unlocking an image ===
 
