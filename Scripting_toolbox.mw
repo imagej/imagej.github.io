@@ -188,5 +188,13 @@ rm.runCommand("AND");
 
 * Beanshell
 
+=== Unlocking an image ===
+
+Sometimes things go wrong and all you see is "blabla.jpg is locked" when you try to process the image in some way. Then all you can do is to force-unlock the image, like so:
+
+==== Beanshell ====
+<source lang="java">
+IJ.getImage().unlock();
+</source>
 
 [[Category:Scripting]]
