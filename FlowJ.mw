@@ -26,7 +26,7 @@ Please refer to the author [http://webscreen.ophth.uiowa.edu/bij/flowj.htm webpa
 
 Since FlowJ is maintained inside Fiji, the following changes have been made:
 
-* When you compute all flow fields and then display them, FlowJ now respected when you uncheck the "Display static background" box (noticed by Christina Eugster).
+* When you compute all flow fields and then display them, the "Display static background" box is now properly handled (noticed by Christina Eugster).
 * There is a "Display magnitude" button now to get the magnitudes of the flow vectors (i.e. the local "speed" in pixels per frame).
 
 [[Category:Plugins]]
