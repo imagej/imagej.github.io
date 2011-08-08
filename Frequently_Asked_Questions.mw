@@ -43,7 +43,10 @@ IJ.run("Update Fiji");
 
 == I updated to Ubuntu 11.04 and now I no longer see the Title bar when I close Fiji ==
 
-I can no longer move any windows or use the X button on the title bar to close them (the window decorations all disappear).
+I can no longer move any windows or use the X button on the title bar to close 
+them (the window decorations all disappear).
+
+If you are really on Ubuntu 11.04, an update should fix the problem. If you are not on Ubuntu 11.04, or if the update does not fix the problem, please read on for possible workarounds.
 
 This is not a Fiji problem but a bug in the NVIDIA driver.
 One solution is described in:
