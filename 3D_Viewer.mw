@@ -29,6 +29,19 @@ shows many of the features of the 3D viewer.
 
 For more information, please visit the original [http://3dviewer.neurofly.de homepage]
 
+== For developers ==
 
+A lot of functions of the 3D Viewer are macro-recordable. However, if that is not enough (or if the function is not recorded properly), it is better to [[Introduction to Plugin Programming|write a plugin]]. In the latter case no macros should be called from Java, as that would limit the code to work with the currently active 3D Viewer (even if the user clicked somewhere else).
+
+This code snippet should get you started:
+
+<source lang="java">
+Image3DUniverse univ = new Image3DUniverse();
+univ.show();
+univ.addMesh(yourImagePlus, null, "somename", 50, new boolean[] {true, true, true}, 2);
+...
+</source>
+
+Until the full 3D Viewer developer documentation is moved to this Wiki, you can find it [http://132.187.25.13/ij3d/?category=Documentation&page=Developer_HowTos here]; the JavaDocs can be found [http://fiji.sc/javadoc/ij3d/package-summary.html here].
 
 [[Category:Plugins]]
