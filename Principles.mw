@@ -31,6 +31,8 @@ Example: a section of the famous  [http://sampl.ece.ohio-state.edu/data/stills/c
 While most digital cameras save in JPEG format by default, it is very likely that they also support some non-lossy format (such as TIFF or a custom RAW format). Use those formats instead.
 A format called JPEG2000 supported by various slide scanners and used in "virtual slide" products was created to improve image quality and compression rates, however both lossy and non-lossy versions the JPEG2000 format exist. Use only the non-lossy formats.
 
+'''Multichannel images''' in particular are harmed by the JPEG format: since the multiple channels are misinterpreted as red, green and blue (while most channels integrate more than just one wavelength), JPEG will shift the colors imperceptibly to improve compression. In the worst case, this can lead to [[Colocalization_Analysis|colocalization]] where there was none.
+
 '''TIFF''' or '''PNG''' formats available in ImageJ/Fiji are non-lossy formats. TIFF preserves any calibrations applied to your images, but images are not compressed. PNG files are smaller as non-lossy compression is applied but they do not store calibration data.
 
 Once an image has been saved as compressed JPEG there is no way of reverting to the original, therefore an old JPEG-compressed image saved again as TIFF or PNG still contains all the original JPEG compression artifacts.
