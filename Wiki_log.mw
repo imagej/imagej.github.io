@@ -1,6 +1,8 @@
 Here is logged all modification made to the structure of this wiki (not its 
 content), such as installation of extension and so.
 
+* 11/08/16 - JES - excluded the Sandbox namespace from being logged in the recent changes
+
 * 11/07/07 - JES - switched to the (homegrown) JavaScript-based syntax highlighting (written by Johannes Schindelin, including an important fix by Melissa Linkert)
 
 * 11/04/04 - JES - activated the [http://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete UserMerge] extension
