@@ -1,6 +1,6 @@
 We have a channel on irc.freenode.net: [irc://irc.freenode.net/fiji-devel #fiji-devel]
 
 If you are unlucky enough not to have an IRC client, or if you are blocked by a restrictive firewall, you can try one of these options instead:
-* The [http://webchat.freenode.net/ freenode.net Javascript client]
+* The [http://webchat.freenode.net/?channels=fiji-devel freenode.net Javascript client]
 * Our [http://pacific.mpi-cbg.de/cgi-bin/cgiirc/irc.cgi CGI::IRC based web-interface]
 * A prettier, but closed-source [http://pacific.mpi-cbg.de/irc.html web interface using mibbit.com technology].
