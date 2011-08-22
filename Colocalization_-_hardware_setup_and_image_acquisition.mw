@@ -117,7 +117,7 @@ Types of Noise:
 
 So... this one is ''the'' very worst and most dangerous problem in colocalization experiments. It can be explained with the following spectra:
 
-[[Image:CrossTalkBleedThrough.jpg|500px]]
+[[Image:500px-CrossTalkBleedThrough.jpg|500px]]
 
 <br>In this picture, the detection setup is configured so as to measure emitted light from the second fluorophore. The problem is that in this detection channel, some of the light emitted by the first fluorophore is also collected and integrated to the channel 2 signal. This is called '''bleed-through'''. When you are going to compute colocalization of this channel with the first one, there will be a part of the signal that will colocalize with it whatever it is, since signal coming from the first fluorophore is present in both channels. That is, you generated false-positive result.
 
