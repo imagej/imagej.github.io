@@ -143,7 +143,7 @@ As a general rule, you should have each object you image sampled over many pixel
 
 Let's suppose that you have two objects each with different colour, and you would like to assess if they colocalize in space. If we assume that they don't colcocalise, if the colocalization procedure you are using is working, it should give you a negative result. Consider one molecule of each dye. They are sitting close to each other, but they are not colocalized (in the same place). Now, if the pixel size is so big that these two molecules are imaged on the same pixel, the procedure tells you that they are colocalized. Once again, you are producing false-positive results.
 
-[[Image:ColocalizationSampling.png|500px]]
+[[Image:500px-ColocalizationSampling.png|500px]]
 
 <br> Also remember: since we are doing light microscopy, two objects closer and smaller than the diffraction limit will appear colocalized whatever you do. Particular care must be taken in the case of Z-stack, where the resolution in the Z axis is generally lower than in the XY plane. In order to get around the diffraction limit, and to confirm your colocalisation result, you can do other methods too, such as FRET or FLIM, and immuno precipitation or cellular cofractionation.&nbsp;
 
