@@ -17,7 +17,10 @@ How can we properly define colocalization? One could suggest:
 # This is a subjective estimate,&nbsp;depending on how bright the two original images are, and as such is sensitive to manipulation of brightness and contrast of the original images and also incorrect image acquisition (especially saturated/out of detector range images).
 # A significant proportion of people are colour blind, and can't tell the difference between red and green anyway.&nbsp;
 # When 2 channel colour merge images are displayed on a computer screen they look different to when they are printed. Green looks brighter than red, and red brighter than blue, because of the way our eyes work. Different printers and different computer screens will give different looking representations of the same 2 channel colour merge image, so it is impossible to be objective about what you see and compre it with what someone else sees.&nbsp;
-# There are simple and quick objective methods to estimate colocalisation, so don't be lazy. You can use them to get hard objective statistics describing the colcoalisation in your images, and its easy to do.&nbsp;<br>
+# There are simple and quick objective methods to estimate colocalisation, so don't be lazy. You can use them to get hard objective statistics describing the colcoalisation in your images, and its easy to do.
+# Our brains find color contrast that is not even really there. In the following illusion, there are only really 3 colors. The "blue"and "green" are exactly the same color: Do not trust your eyes - measure it. 
+
+[[File:Spirals.png]]
 
 <br>
 
