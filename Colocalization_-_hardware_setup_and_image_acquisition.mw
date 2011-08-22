@@ -1,6 +1,6 @@
 == Foreword ==
 
-These notes primarily concern the '''pixel-based''' colocalization methods, where one looks for intensity correlation in different colour channels of individual pixels. sometimes it is more useful to look for '''object-based''' colocalization, where objects are segmented out of images, then objects in different colour channels are tested for spatial overlap / colocalization. In the '''object-based''' case, one attempts to acquire images suitable for segmentation. The following principles apply in the case of pixel-based colocalization, but most of the precautions underlined here are general.
+These notes primarily concern the '''pixel intensity correlation based''' colocalization methods, where one looks for intensity correlation in different colour channels of individual pixels. Sometimes it is more useful to look for '''object-based''' colocalization, where objects are segmented out of images, then objects in different colour channels are tested for spatial overlap:  colocalization. In the '''object-based''' case, one attempts to acquire images suitable for segmentation. The following principles apply in the case of pixel-based colocalization, but most of the precautions underlined here are general.
 
 == Introduction ==
 
