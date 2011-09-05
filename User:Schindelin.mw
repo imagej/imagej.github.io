@@ -4,7 +4,7 @@
 
 = A short story about Fiji =
 
-This story is not about [http://en.wikipedia.org/index.php/Fiji the island called ''Fiji'']. This story is how [http://pacific.mpi-cbg.de Fiji Is Just ImageJ] became born.
+This story is not about [http://en.wikipedia.org/index.php/Fiji the island called ''Fiji'']. This story is how [http://fiji.sc Fiji Is Just ImageJ] became born.
 
 == The beginning ==
 
@@ -26,7 +26,7 @@ Eventually, Albert told me: "Johannes, we need an installer for TrakEM2!"
 
 We kept chatting about that over a couple of weeks, if not months. At some stage, Albert had done away with the requirement of the PostgreSQL database. It was still the most efficient way to handle your data if you needed to access them from multiple computers, but now you could also store the intermediate data in plain files.
 
-Eventually, one dark December day in 2007 (and in Scotland, December <u>is</u> as darkI as it gets) I gave in.
+Eventually, one dark December day in 2007 (and in Scotland, December <u>is</u> as dark as it gets) I gave in.
 
 Out of frustration with my job, I had just started a distribution of [[Git]] for [http://msysgit.googlecode.com/ Windows] which included making an installer, so I thought I could put together an installer pretty quickly.
 
@@ -35,3 +35,25 @@ The first step was to get a version of ImageJ and TrakEM2 and Java (we were 100%
 After a couple of days I showed the result to Albert. So far, there was no installer, but it was a working ''portable application'', i.e. a big ''.zip'' file you could unpack and then double click on an executable which would run Java with all the parameters set correctly.
 
 To this date, there is no installer, but hey, maybe we get one in another 3 years...
+
+== The surprise ==
+
+When I showed the result to Albert, he seemed to be happy. At least he did not run away in disgust. But I did not hear a lot about Fiji from his side, except that he needed a way to contribute.
+
+Since I was heavily involved in the development of the version control software [http://git-scm.com/ Git] (contributing one or two useful things such as the config handling, the interactive rebase, the diffstat code, the low-level 3-way merge code, etc) it was natural that I kept all my work in a Git repository.
+
+But I had no public place to put it, where Albert could have accessed it.
+
+There was that computer in Würzburg -- lovingly dubbed ''Dumbo'', since we named all our computers after some movie persona, such as ''Agent Smith'', ''Minime'', and of course ''Dumbo'' -- which could be accessed from the outside, but it was already serving the ''Virtual Insect Brain Protocol'' and had only 128MB RAM which was way too little memory to handle a repository the size of Fiji.
+
+So Albert got me access to his computer. Back then, that was in Los Angeles in Volker Hartenstein's group, and Volker seemed to be okay with the idea of having an easy-to-install TrakEM2 developed with my help.
+
+By the way, this computer was called ''Instar'', but I have no idea whether that was only because it was used to develop things (''instar'' is a biological term describing a stage of larval development in insects).
+
+I continued to work on this Fiji thing and even got it to run on MacOSX, which was one of my goals: I wanted to support all the major platforms. Windows, MacOSX and Linux. Both 32-bit and 64-bit. It should not matter which Operating System you happened to have, the software should Just Run<sup>tm</sup>.
+
+After some weeks I was reasonably comfortable with Fiji and thought about wrapping this project up, since I had plans to work for Google.
+
+Little did I know just how many people Albert told about this project. I thought it was really focused on TrakEM2, but as Albert's motto is (or at least back then, was) ''The sky is the limit'', he had told a few people at the Max-Planck Institute of Molecular Cell Biology and Genetics in Dresden. Sorry for the lengthy title, earlier I always referred to it as "the Max-Planck in Dresden", but there are three. The MPI-CBG just happens to be the biggest one in Dresden. And probably also one of the most important Max-Planck Institutes on this planet. But sorry, I digress.
+
+At one point Albert told me. Apparently the good people in Dresden were not only interested in our little software project, but were actually enthusiastic. Enthusiastic enough that they provided us with a nice, beefy [[Pacific|server]], and offered to organize a [[hackathon]] to kick-start Fiji as a much bigger project!
