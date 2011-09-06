@@ -35,6 +35,14 @@ imp.show()
 
 ==== Ruby ====
 
+<source lang="ruby">
+include_class 'ij.IJ'
+
+path = "/path/to/file"
+imp = ij.IJ.openImage(path)
+imp.show
+</source>
+
 ==== Clojure ====
 
 <source lang="lisp">
