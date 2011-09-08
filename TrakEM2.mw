@@ -97,7 +97,6 @@ To set the script to all images, save the above to a file named "whatever.bsh" (
 
 The preprocessor script gives you maximum power: do whatever you want with the image. For example, [[Jython Scripting#Correct_illumination_in_a_stack:_apply_the_illumination_of_one_slice_to_all_others | normalize the image]] relative to a known good mean and standard deviation for your data set.
 
-
 === For regenerating mipmaps the fastest possible ===
 
 In TrakEM2 0.9a and later, the mipmaps machinery uses a multi-threaded Gaussian implementation now present in the latest ImageJ. This means that now there are two sets of threads:
