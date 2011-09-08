@@ -97,6 +97,25 @@ To set the script to all images, save the above to a file named "whatever.bsh" (
 
 The preprocessor script gives you maximum power: do whatever you want with the image. For example, [[Jython Scripting#Correct_illumination_in_a_stack:_apply_the_illumination_of_one_slice_to_all_others | normalize the image]] relative to a known good mean and standard deviation for your data set.
 
+
+=== For regenerating mipmaps the fastest possible ===
+
+In TrakEM2 0.9a and later, the mipmaps machinery uses a multi-threaded Gaussian implementation now present in the latest ImageJ. This means that now there are two sets of threads:
+
+<ol>
+ <li>The set of threads, where each thread regenerates the mipmap pyramid of a single image.</li>
+ <li>The set of threads that performs Gaussian blurring for downsampling, for each scaling iteration in the generation of the mipmap pyramid.</li>
+</ol>
+
+If your machine has 12 cores, the default settings will use 12 threads for mipmaps and 12 threads for gaussian blurring. This means that, if you are regenerating 12 or more images, there will be 12 + 12 * 12 = 156  concurrent threads. That's too many threads.
+
+You must decide between two strategies:
+
+<ul>
+ <li><b>Strategy A</b>: your data consists of large images (over 4000x4000). Right-click on the TrakEM2 display and choose "Project - Properties...", and set the mipmap threads to 1. Now, mipmaps will be regenerated for one single image at a time, using 12 threads (given 12 cores) for computing the Gaussians.</li>
+ <li><b>Strategy B</b>: your data consists of small images (smaller than 4000x4000). Go to the Fiji window and select "Edit - Options - Memory & Threads...", and set the number of threads to 1. Now, mipmaps will be regenerated for 12 images at a time (given 12 cores), using a single thread for each to compute the Gaussians.</li>
+</ul>
+
 == How much RAM should I allocate to the JVM for Fiji to run TrakEM2? ==
 
 Use a computer that follows this rule of thumb: take the largest single 2D image in your dataset, then multiply its size by 10, and make sure that every core of your CPU has at least that much RAM available to it.
