@@ -117,6 +117,8 @@ You must decide between two strategies:
 
 Use <b>strategy A</b> as well if your computer has little RAM, or if access to the images is slow and contentious (such as if the data lives in a USB hard drive).
 
+If you change the method for generating mipmaps to a non-Gaussian method, the above situation does not occur. Set the number of threads for regenerating mipmaps to the number of cores, or less if your computer doesn't have much RAM.
+
 == How much RAM should I allocate to the JVM for Fiji to run TrakEM2? ==
 
 Use a computer that follows this rule of thumb: take the largest single 2D image in your dataset, then multiply its size by 10, and make sure that every core of your CPU has at least that much RAM available to it.
