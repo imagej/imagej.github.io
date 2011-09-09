@@ -101,6 +101,8 @@ The rest of tunable parameters of the plugin can be changed on the Settings dial
 ===== Training features =====
 Here we can select and deselect the training features, which are the key of the learning procedure. The plugin creates a stack of images ---one image for each feature. For instance, if only [http://en.wikipedia.org/wiki/Gaussian_blur Gaussian blur] is selected as a feature, the classifier will be trained on the original image and some blurred versions to it with different <math>\sigma</math> parameters for the Gaussian. 
 
+If the input image is grayscale, the features will be calculated using double precision (32-bit images). In the case of RGB input images, the features will be RGB as well.
+
 The different available features are:
 * '''Gaussian blur''': performs <math>n</math> individual convolutions with Gaussian kernels with <math>\sigma</math> equal to <math>1, 2, 4... 2^{n}</math>. The larger the radius the more blurred the image becomes until the pixels are homogeneous (by default <math>n=16</math>).
 * '''Sobel filter''': calculates the [http://en.wikipedia.org/wiki/Sobel_filter gradient at each pixel]. [http://en.wikipedia.org/wiki/Gaussian_blur Gaussian blurs] with <math>\sigma=1, 2, 4... 2^{n}</math> are performed prior to the filter.
@@ -131,6 +133,9 @@ Each of the 6 resulting images is a feature. Hence pixels in lines of similarly 
 * '''Lipschitz filter''': from [http://rsbweb.nih.gov/ij/plugins/lipschitz/ Mikulas Stencel plugin]. This plugin implements Lipschitz cover of an image that is equivalent to a grayscale opening by a cone. The Lipschitz cover can be applied for the elimination of a slowly varying image background by subtraction of the lower Lipschitz cover (a top-hat procedure). Sequential double scan algorithm (according Rosenfeld) was used. We use down and top hats, with slope = 5, 10, 15, 20, 25.
 * '''Kuwahara filter''': another noise-reduction filter that preserves edges. This is a version of the [[Linear_Kuwahara | Kuwahara filter that uses linear kernels]] rather than square ones. We use the membrane patch size as kernel size, 30 angles and 0, 1 and 2.
 * '''Gabor filter''': at the moment this option may take some time and memory because it generates a very diverse range of [http://en.wikipedia.org/wiki/Gabor_filter Gabor filters] ('''45'''). ''' This may undergo changes in the future'''. The implementation details are included in this [[Gabor Filter script|script]].
+* '''Derivatives filter''': calculates high order derivatives of the input image (from the second to the 5th derivative) using [[FeatureJ]].
+* '''Laplacian filter''': computes the Laplacian of the input image using [[FeatureJ]]. It uses smoothing scale <math>\sigma=1, 2, 4... 2^{n}</math>.
+* '''Structure filter''': calculates for all elements in the input image, the eigenvalues (smallest and largest) of the so-called structure tensor using [[FeatureJ]]. It uses smoothing scale <math>\sigma=1, 2, 4... 2^{n}</math> and integration scales 1 and 3.
 
 ===== Feature options =====
 
