@@ -110,5 +110,9 @@ TODO, for the moment there's just a list here with known variables:
 
 TODO
 
+=== Default targets ===
+
+TODO (like '''plugins/*.jar <- src-plugins/*/**/*''')
+
 
 [[Category:Development]]
