@@ -19,11 +19,10 @@ MIJ.run('Embryos (42K)');
 I = MIJ.getCurrentImage;
 E = imadjust(wiener2(im2double(I(:,:,1))));
 imshow(E);
-MIJ.createImage('result',E);
+MIJ.createImage('result', E, true);
 </source>
 
 If you get an error saying that some Plugin related classes cannot be found, please update your Fiji with ''Help>Update Fiji''!
-
 
 == Using Fiji as a 3D viewer for MATLAB ==
 
