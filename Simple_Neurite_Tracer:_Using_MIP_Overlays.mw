@@ -1,0 +1,10 @@
+(Return to the main [[Simple Neurite Tracer]] page)
+
+If you are tracing bright neurons with a structure that appears clear when viewed in a Maximum Intensity Projection of the stack, you can now use a couple of new features of Simple Neurite Tracer to speed up your tracing.  These are:
+
+* The menu option "Show MIP overlays at 20% opacity".  This overlays the Maximum Intensity Projection over the slice views of your data, regardless of which your current slice is.
+* The key shortcut 'm', while your mouse is over a point in the image, is the same as a left mouse click at the point of maximum intensity under that point throughout the whole stack.
+
+These features are demonstrated in the following screencast:
+
+<include iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/Vt4m55V7AjI" frameborder="0" allowfullscreen></include>
