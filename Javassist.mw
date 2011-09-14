@@ -50,4 +50,4 @@ InstructionPrinter.print(method, System.err);
 
 If you absolutely do not want the output to go to ''System.err'', you could substitute it by ''new PrintStream(new IJLogOutputStream())'' (the class ''IJLogOutputStream'' is defined in [[Update Fiji|Fiji Updater]]'s ''fiji.updater.util'' class for you to reuse).
 
-[Category:Development]
+[[Category:Development]]
