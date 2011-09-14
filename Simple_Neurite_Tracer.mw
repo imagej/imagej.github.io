@@ -34,6 +34,12 @@ Please report any bugs that you find with Fiji's "Help > Report a Bug" menu opti
 
 I'm starting a public list of the most requested new features, which you can find on the [[Simple Neurite Tracer: Wishlist]] page.
 
+=== Citing Simple Neurite Tracer ===
+
+If you would like to reference Simple Neurite Tracer in a publication, you can cite:<ref>{{cite journal|author=Longair Mark, Baker DA, Armstrong JD.|title=Simple Neurite Tracer: Open Source software for reconstruction, visualization and analysis of neuronal processes.|journal=Bioinformatics|year=2011|url=http://bioinformatics.oxfordjournals.org/content/early/2011/07/04/bioinformatics.btr390.long}}</ref>
+
+<references />
+
 == Tutorials ==
 
 Hopefully you should be able to use this software easily by following the suggested next steps in the top left of the main dialog.  However, to use the plugin more effectively, you may want to use some of the following materials:
