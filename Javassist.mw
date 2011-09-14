@@ -1,0 +1,53 @@
+[http://www.javassist.org Javassist] is a Java library to generate, modify and inspect bytecode (i.e. the machine language of Java).
+
+= Quick example =
+
+Let's assume that you want to know which call paths lead to a given method (e.g. ''foo()'') in a given class (e.g. ''org.soft.micro.Narf''). 
+
+<source lang="java">
+// get the class pool
+ClassPool pool = ClassPool.getDefault();
+// access the class without loading it just yet
+CtClass clazz = pool.get("org.soft.micro.Narf");
+// get the method; you can find the signature (2nd parameter) like this:
+// fiji --javap -s org.soft.micro.Narf | grep -A1 foo
+CtMethod method = clazz.getMethod("foo", "()V");
+// now let's output a whole lot of stuff whenever this method is entered
+method.insertBefore("new Exception(\"Here I am!\").printStackTrace();");
+</source>
+
+Of course, you are not limited to outputting a stack trace. You could also generate Strings of those traces and put them into a Map, possibly counting the occurrences.
+
+Other useful actions include inspecting the parameters passed to the method which you can access by the special names ''$1'', ''$2'', ...
+
+Further reading: Javassist's [http://www.csg.is.titech.ac.jp/~chiba/javassist/tutorial/tutorial.html online tutorial].
+
+= Debugging =
+
+Javassist has very useful tools for disassembly and introspection. For example, you could inspect the contents of a class using some code like this:
+
+<source lang="java">
+// get the class pool
+ClassPool pool = ClassPool.getDefault();
+// access the class without loading it just yet
+CtClass clazz = pool.get("org.soft.micro.Narf");
+// output the contents
+ClassFileWriter.print(clazz.getClassFile());
+</source>
+
+Or you could disassemble a method like this:
+
+<source lang="java">
+// get the class pool
+ClassPool pool = ClassPool.getDefault();
+// access the class without loading it just yet
+CtClass clazz = pool.get("org.soft.micro.Narf");
+// get the method
+CtMethod method = clazz.getMethod("foo", "()V");
+// disassemble the method
+InstructionPrinter.print(method, System.err);
+</source>
+
+If you absolutely do not want the output to go to ''System.err'', you could substitute it by ''new PrintStream(new IJLogOutputStream())'' (the class ''IJLogOutputStream'' is defined in [[Update Fiji|Fiji Updater]]'s ''fiji.updater.util'' class for you to reuse).
+
+[Category:Development]
