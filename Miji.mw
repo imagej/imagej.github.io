@@ -26,11 +26,7 @@ If you get an error saying that some Plugin related classes cannot be found, ple
 
 == Using Fiji as a 3D viewer for MATLAB ==
 
-A set of demos made for MATLAB users, and introducing how to install and use Fiji as a visualization tool for MATLAB is published on the [http://www.mathworks.com/matlabcentral/fileexchange/32344-hardware-accelerated-3d-viewer-for-matlab fex]. Individual pages are linked below:
-
-* [http://www.mathworks.com/matlabcentral/fileexchange/32344-hardware-accelerated-3d-viewer-for-matlab/content/MatlabJava3D/Matlab3DViewerIntroduction.html Introduction]
-* [http://www.mathworks.com/matlabcentral/fileexchange/32344-hardware-accelerated-3d-viewer-for-matlab/content/MATLABJava3D/Matlab3DViewerDemo_1.html Demo 1]
-* [http://www.mathworks.com/matlabcentral/fileexchange/32344-hardware-accelerated-3d-viewer-for-matlab/content/MATLABJava3D/Matlab3DViewerDemo_2.html Demo 2]
+A set of demos made for MATLAB users, and introducing how to install and use Fiji as a visualization tool for MATLAB is published on the [http://www.mathworks.com/matlabcentral/fileexchange/32344-hardware-accelerated-3d-viewer-for-matlab fex].
 
 = Getting help =
 
