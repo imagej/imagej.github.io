@@ -78,13 +78,15 @@ importClass(Packages.loci.plugins.BF);
 
 var path = "/path/to/file";
 var imps = BF.openImagePlus(path);
+
+imps[0].show();
 </source>
 
 or, with more options:
 
 <source lang="javascript">
 importClass(Packages.loci.plugins.BF);
-importClass(Packages.loci.plugins.in.ImporterOptions);
+importClass(Packages['loci.plugins.in.ImporterOptions']); // 'in' is a reserved word, hence the different syntax
 importClass(Packages.loci.common.Region);
 
 
@@ -96,6 +98,8 @@ options.setCrop(true);
 options.setCropRegion(0, new Region(x, y, w. h));
 options.setColorMode(ImporterOptions.COLOR_MODE_COMPOSITE);
 var imps = BF.openImagePlus(options);
+
+imps[0].show();
 </source>
 
 * Python
@@ -105,7 +109,6 @@ var imps = BF.openImagePlus(options);
 * Clojure
 
 * Beanshell
-
 
 === Opening, processing, and saving a sequence of files in a folder ===
 
