@@ -142,7 +142,7 @@ The latest documentation of the code can be found here:
 [http://pacific.mpi-cbg.de/javadoc/skeleton_analysis/package-summary.html http://pacific.mpi-cbg.de/javadoc/skeleton_analysis/package-summary.html]
 
 == Changelog ==
-All changes can be seen in the [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/AnalyzeSkeleton_;h=97476cf88da4d5dd5a6ac6cdf9a5176c221378c6;hb=HEAD Fiji source repository].
+All changes can be seen in the [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=history;f=src-plugins/AnalyzeSkeleton_/skeleton_analysis;hb=HEAD Fiji source repository].
 
 '''2010/12/28''': Jan Eglinger added code to call the plugin from script in silent mode.
 
