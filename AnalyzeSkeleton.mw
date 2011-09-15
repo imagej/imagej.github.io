@@ -6,7 +6,7 @@
 | filename               = [http://bioweb.cnb.csic.es/~iarganda/AnalyzeSkeleton/downloads/AnalyzeSkeleton_.jar AnalyzeSkeleton_.jar] 
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/AnalyzeSkeleton_/skeleton_analysis;h=e930376dacbb6ccb5319695843bd5d18dc3531fe;hb=HEAD on gitweb]
 | released               = November 14<sup>th</sup>, 2008
-| latest version         = April 27<sup>th</sup>, 2011
+| latest version         = September 15<sup>th</sup>, 2011
 | status                 = stable, active
 | category               = [[:Category:Skeleton|Skeleton]], [[:Category:Analysis|Analysis]]
 }}Analysis of 2D and 3D skeleton images. For the ImageJ plugin, visit [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start AnalyzeSkeleton at ImageJ wiki].
