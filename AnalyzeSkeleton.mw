@@ -3,7 +3,6 @@
 | name                   = AnalyzeSkeleton
 | author                 = [[User:Iarganda | Ignacio Arganda-Carreras]]
 | maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
-| filename               = [http://bioweb.cnb.csic.es/~iarganda/AnalyzeSkeleton/downloads/AnalyzeSkeleton_.jar AnalyzeSkeleton_.jar] 
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/AnalyzeSkeleton_/skeleton_analysis;h=e930376dacbb6ccb5319695843bd5d18dc3531fe;hb=HEAD on gitweb]
 | released               = November 14<sup>th</sup>, 2008
 | latest version         = September 16<sup>th</sup>, 2011
