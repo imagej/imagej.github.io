@@ -137,6 +137,8 @@ c & d\end{array}\right)</math> are calculated thus:
 * '''Laplacian filter''': computes the Laplacian of the input image using [[FeatureJ]]. It uses smoothing scale <math>\sigma=1, 2, 4... 2^{n}</math>.
 * '''Structure filter''': calculates for all elements in the input image, the eigenvalues (smallest and largest) of the so-called structure tensor using [[FeatureJ]]. It uses smoothing scale <math>\sigma=1, 2, 4... 2^{n}</math> and integration scales 1 and 3.
 
+When using grayscale images, the input image will be also included as a feature. In the case of color (RGB) images, the '''Hue, Saturation and Brightness''' will be as well part of the features.
+
 ===== Feature options =====
 
 * '''Membrane thickness''': expected value of the membrane thickness, 1 pixel by default. The more accurate, the more precise the filter will be.
