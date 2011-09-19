@@ -16,6 +16,8 @@ The training data is a set of 30 sections from a serial section Transmission Ele
 
 The corresponding binary labels are provided in an in-out fashion, i.e. white for the pixels of segmented objects and black for the rest of pixels (which correspond mostly to membranes).
 
+To get the training data, please, send an e-mail with your contact information to [mailto:iarganda@mit.edu iarganda@mit.edu].
+
 ====Organizers====
 * [[User:Iarganda | Ignacio Arganda-Carreras]] (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
 * [http://hebb.mit.edu/people/seung/ Sebastian Seung] (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
