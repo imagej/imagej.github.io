@@ -1,6 +1,10 @@
 ====Summary==== 
 In this '''challenge''', a full stack of EM slices will be used to train machine learning algorithms for the purpose of automatic segmentation of neural structures. The images are representative of actual images in the real-world, containing some noise and small image alignment errors. None of these problems led to any difficulties in the manual labeling of each element in the image stack by an expert human neuroanatomist. The aim of the challenge is to compare and rank the different competing methods based on their pixel and object classification accuracy.
 
+====Training data====
+The training data is a set of 30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.
+The corresponding binary labels are provided in an in-out fashion, i.e. white for the pixels of segmented objects and black for the rest pixels (mostly membranes).
+
 ====Organizers====
 * [[User:Iarganda | Ignacio Arganda-Carreras]] (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
 * [http://hebb.mit.edu/people/seung/ Sebastian Seung] (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
