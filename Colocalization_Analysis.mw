@@ -20,6 +20,9 @@ which is found in the Analyze - Colocalization Analysis menu.
 
 Coloc_2 implements and performs, the pixel intensity correlation over space methods of [http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient Pearson], [[Media:Manders.pdf|Manders]], [[Media:Costes etalColoc.pdf|Costes]], Li and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
 
+None of this gives sensible results unless you have your imaging hardware set up appropriately, 
+and have aquired images properly, and have performed appropriate controls for bleed through and chromatic shift etc. See [[Colocalization_-_hardware_setup_and_image_acquisition|here for hardware set up guidelines]]
+
 === What is Coloc_2, and why? ===
 
 Coloc_2 is an imageJ / Fiji plugin that uses the new imglib image data container library for image processing, and implements the above methods in a pixel data type (8, 16, 32-bit) independent, modular and easily extensible way. The source code has unit tests to detect if changes to the source code break the maths. It should be easy to add new methods since the plugin is designed with that in mind. 
