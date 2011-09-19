@@ -1,9 +1,9 @@
-{|
-|style="vertical-align:top" |[[Image:Challenge-ISBI-2012-sample-image.png|760px]]
-|}
-====Summary==== 
+[[Image:Challenge-ISBI-2012-sample-image.png|thumb|500px]]In this '''challenge''', a full stack of EM slices will be used to train [http://en.wikipedia.org/wiki/Machine_learning machine learning] algorithms for the purpose of automatic segmentation of neural structures. 
 
-In this '''challenge''', a full stack of EM slices will be used to train [http://en.wikipedia.org/wiki/Machine_learning machine learning] algorithms for the purpose of automatic segmentation of neural structures. The images are representative of actual images in the real-world, containing some noise and small image alignment errors. None of these problems led to any difficulties in the manual labeling of each element in the image stack by an expert human neuroanatomist. The aim of the challenge is to compare and rank the different competing methods based on their pixel and object classification accuracy.
+
+The images are representative of actual images in the real-world, containing some noise and small image alignment errors. None of these problems led to any difficulties in the manual labeling of each element in the image stack by an expert human neuroanatomist. The aim of the challenge is to compare and rank the different competing methods based on their pixel and object classification accuracy.
+
+
 
 Relevant dates:
 * '''Deadline for submitting results''': February 1<sup>st</sup>, 2012
