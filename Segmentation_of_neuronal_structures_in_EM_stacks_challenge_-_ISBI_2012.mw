@@ -11,8 +11,10 @@ Relevant dates:
 * '''Notification of acceptance/presentation type''': March 15<sup>th</sup>, 2012
 
 ====Training data====
+[[Image:Challenge-ISBI-2012-Animation-Input-Labels.gif|thumb|400px|Input training data and corresponding labels]]
 The training data is a set of 30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.
-The corresponding binary labels are provided in an in-out fashion, i.e. white for the pixels of segmented objects and black for the rest pixels (mostly membranes).
+
+The corresponding binary labels are provided in an in-out fashion, i.e. white for the pixels of segmented objects and black for the rest of pixels (which correspond mostly to membranes).
 
 ====Organizers====
 * [[User:Iarganda | Ignacio Arganda-Carreras]] (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
