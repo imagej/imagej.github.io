@@ -33,11 +33,6 @@ Then do the following:
 
 You should then be able to just run "fiji" from the command line.
 
-Alternatively, if you want to install the .deb files directly with dpkg, you can download the packages directly here:
-
-* [http://fiji.sc/downloads/apt/binary-i386/fiji_20090513_i386.deb Package for i386 (32 bit)]
-* [http://fiji.sc/downloads/apt/binary-amd64/fiji_20090513_amd64.deb Package for amd64 (64 bit)]
-
 ==== Known Bugs ====
 
 * These packages should work for you, but fail to meet policy for being official Debian and Ubuntu packages in many ways - we are working towards this, however, so if you use the apt repository above and update regularly, you should see the packages improve and reduce in size over time.
