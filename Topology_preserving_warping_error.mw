@@ -1,0 +1,23 @@
+The warping error is segmentation metric that tolerates disagreements over boundary location, penalizes topological disagreements, and can be used directly
+as a cost function for learning boundary detection.
+
+==== Pixel error ====
+Let <math>l_i</math> denote the value of the boundary labeling <math>L</math> at image location <math>i</math>. The pixel error of <math>L</math> with respect to another binary labeling <math>L^*</math> is the number of pixel locations at which the two labelings disagree. This can also be written as the squared [http://en.wikipedia.org/wiki/Euclidean_distance Euclidean distance] <math>\parallel L - L^*\parallel^2</math>, which is equivalent to the [http://en.wikipedia.org/wiki/Hamming_distance Hamming distance] since the labels are binary-valued. 
+The pixel error is appealing because of its simplicity, but suffers from a serious defect. It is overly sensitive to minor displacements in the location of a boundary that are ubiquitous even when comparing one human boundary labeling to another. These disagreements cause no qualitative differences in the interpretation of the image, but can lead to large quantitative differences in pixel error.
+
+==== Digital topology and the warping error ====
+Let us introduce another metric for comparing boundary labelings, based on concepts from the field of digital topology. If <math>L^*</math> can be transformed into <math>L</math> by a sequence of pixel flips that each
+
+1. preserve a set of desired topological properties
+
+2. occur only at locations within a mask <math>M</math>,
+
+then we will say <math>L</math> is a ''warping of'' <math>L^*</math>, or <math>L 	\triangleleft L^*</math>. The first condition constrains <math>L</math> and <math>L^*</math> to be topologically equivalent. The second condition can be used to constrain L to be geometrically similar to <math>L</math>. Both conditions will be explained in more detail below.
+
+Now consider the pixel error of <math>T</math> relative to warpings of L. The ''warping error'' between some candidate labeling <math>T</math> and a reference labeling <math>L^*</math> is the Hamming distance (or equivalently squared Euclidean distance) between L and the “best warping” of <math>L^*</math> onto <math>T</math>:
+
+<math>D(T \parallel L^*) = \underset{L \triangleleft L^*}{min} \parallel T-L \parallel ^2 </math>
+
+=====Topological constraints=====
+To impose topological constraints on the warping, we use concepts from digital topology, a field that extends the concepts of continuous-space topology to digital images. One of the most fundamental principles of this field is that
+complementary definitions of adjacency must be used for foreground (“1”) and background (“0”) pixels, so that a digital analog of the [http://en.wikipedia.org/wiki/Jordan_Curve_Theorem Jordan Curve Theorem] holds. We use the 4-adjacency for foreground and the 8-adjacency for background, and calculate connected components based on these adjacencies.
