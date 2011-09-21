@@ -35,5 +35,4 @@ would cause by being flipped. The possible topological changes are splitting, me
 We will write simple(''L'') to denote the set of simple points of ''L'', and topo(''L'') to denote the set of simple and non-simple points of ''L'' that preserve some desired set of topological properties.
 
 =====Geometric constraints=====
-There are many ways to define the mask, depending on the exact nature of the desired geometric constraints. In our implementation below, we choose ''M'' to be the set of all pixels within Euclidean distance 5 from the background of
-''L''. This allows the foreground of ''L'' to expand arbitrarily, as long as topology is preserved. But the foreground can shrink by only a limited amount. Note that basing ''M'' on ''L'' makes warping an asymmetric relation.
+There are many ways to define the mask, depending on the exact nature of the desired geometric constraints. In our implementation below, we choose ''M'' to be the set of all pixels within [http://en.wikipedia.org/wiki/Euclidean_distance Euclidean distance] 5 from the background of ''L''. This allows the foreground of ''L'' to expand arbitrarily, as long as topology is preserved. But the foreground can shrink by only a limited amount. Note that basing ''M'' on ''L'' makes warping an asymmetric relation.
