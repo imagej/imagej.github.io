@@ -16,7 +16,7 @@ then we will say <math>L</math> is a ''warping of'' <math>L^*</math>, or <math>L
 
 Now consider the pixel error of <math>T</math> relative to warpings of L. The ''warping error'' between some candidate labeling <math>T</math> and a reference labeling <math>L^*</math> is the Hamming distance (or equivalently squared Euclidean distance) between L and the “best warping” of <math>L^*</math> onto <math>T</math>:
 
-<math>D(T \parallel L^*) = \underset{L \triangleleft L^*}{min} \parallel T-L \parallel ^2 </math>
+<math>D(T \parallel L^*) = \underset{L \triangleleft L^*}{min} \parallel T-L \parallel ^2 </math>                     (Eq. 1)
 
 =====Topological constraints=====
 To impose topological constraints on the warping, we use concepts from [http://en.wikipedia.org/wiki/Digital_topology digital topology], a field that extends the concepts of continuous-space topology to digital images. One of the most fundamental principles of this field is that
