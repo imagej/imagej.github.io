@@ -40,3 +40,15 @@ There are many ways to define the mask, depending on the exact nature of the des
 =====Descent algorithm for warping=====
 We do not know of an efficient algorithm for finding the global minimum in Eq. (1), and indeed this is likely to be an NP-hard problem. However, there is a very simple descent algorithm for finding local minima. During warping, we are
 allowed to flip simple points of ''L'' that lie inside the mask ''M'', i.e., points in the set <math>simple(L) \cap M</math>. Flipping any such pixel ''j'' of ''L'' satisfying <math> \mid t_j - l_j \mid > 0.5 </math> produces a new warping with smaller error. The descent algorithm greedily picks the pixel for which this error reduction is the largest, breaking ties randomly.
+
+Algorithm:
+:<math>warp(L^* \in B,T \in A,M \in B)</math>
+:<math>L</math> := <math>L^*</math>
+:do
+::<math>S := simple(L) \cap M</math>
+::<math>i := argmax_{j \in S} \mid t_j - l_j \mid</math> , breaking ties randomly
+::if <math>\mid t_i - l_i \mid > 0.5</math>
+:::<math>l_i := 1 - l_i</math>
+::else
+:::return <math>L</math>
+::end
