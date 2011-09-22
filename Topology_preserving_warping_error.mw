@@ -1,4 +1,4 @@
-The warping error is a segmentation metric that tolerates disagreements over boundary location, penalizes topological disagreements, and can be used directly
+The '''warping error''' is a segmentation metric that tolerates disagreements over boundary location, penalizes topological disagreements, and can be used directly
 as a cost function for learning boundary detection.
 
 ==== Pixel error ====
