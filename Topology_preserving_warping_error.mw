@@ -32,7 +32,7 @@ in the sense of sharing isomorphic adjacency trees can always be transformed int
 In short, by definition '''flipping a simple point is a topology-preserving operation and flipping a non-simple point is not topology-preserving'''. Non-simple points can be classified by the nature of the topological change they
 would cause by being flipped. The possible topological changes are '''splitting, merging, hole addition/deletion, or object addition/deletion'''. We may wish to allow some of these types of changes, and therefore flipping of some types of non-simple pixels.
 
-We will write simple(''L'') to denote the set of simple points of ''L'', and topo(''L'') to denote the set of simple and non-simple points of ''L'' that preserve some desired set of topological properties.
+We will write simple(''L'') to denote the set of simple points of ''L''.
 
 =====Geometric constraints=====
 There are many ways to define the mask, depending on the exact nature of the desired geometric constraints. In our implementation below, we choose ''M'' to be the set of all pixels within [http://en.wikipedia.org/wiki/Euclidean_distance Euclidean distance] 5 from the background of ''L''. This allows the foreground of ''L'' to expand arbitrarily, as long as topology is preserved. But the foreground can shrink by only a limited amount. Note that basing ''M'' on ''L'' makes warping an asymmetric relation.
