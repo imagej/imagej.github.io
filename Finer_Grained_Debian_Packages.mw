@@ -1,4 +1,6 @@
-'''FIXME: the packages need some more work still before being deployed to testers, but these instructions should build packages of some kind'''
+'''This page is only of interest for people who are interested in how the scripts under the debian subdirectory work - this is probably no one, so this page is largely here as a reminder to myself.'''
+
+FIXME: add information about the weekly build script to this page
 
 At the March 2010 Hackathon, I made lots of changes to the old package building machinery.  There were a number of problems with the old system, including:
 
@@ -15,10 +17,12 @@ The improved system is described below.
 
 The relevant lines for /etc/apt/sources.list, if you don't mind trying the experimental versions of these packages, are:
 
+<code>
 <nowiki>
     deb http://fiji.sc/downloads/apt-experimental/ ./
     deb-src http://fiji.sc/downloads/apt-experimental/ ./
 </nowiki>
+</code>
 
 The packages are targetting Ubuntu 10.04 (Lucid Lynx) and Debian testing (squeeze) later than August 2010.
 
