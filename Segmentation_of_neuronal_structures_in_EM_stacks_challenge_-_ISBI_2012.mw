@@ -22,6 +22,14 @@ The corresponding binary labels are provided in an in-out fashion, i.e. white fo
 
 To get the training data, please, send an e-mail with your contact information to [mailto:iarganda@mit.edu iarganda@mit.edu].
 
+==Evaluation metrics==
+In order to evaluate and rank the performances of the participant methods, we will use topology-based segmentation metrics, together with the pixel error. Each metric will have an updated leader-board. 
+
+The metric are:
+
+* [[Topology preserving warping error|Warping error]], a segmentation metric that tolerates disagreements over boundary location and penalizes topological disagreements.
+* [[Topology_preserving_warping_error#Pixel_error|Pixel error]], or squared Euclidean distance between the original and the result labels.
+
 ==Organizers==
 * [[User:Iarganda | Ignacio Arganda-Carreras]] (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
 * [http://hebb.mit.edu/people/seung/ Sebastian Seung] (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
