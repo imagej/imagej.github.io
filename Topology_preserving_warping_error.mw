@@ -64,10 +64,9 @@ There are many ways to define the '''mask''', depending on the exact nature of t
 
 ===Descent algorithm for warping===
 [[Image:Warping-error-animation.gif|thumb|300px|Example of the topology-preserving warping of one (binary) source image onto a target one.]]
-We do not know of an efficient algorithm for finding the global minimum in Eq. (1), and indeed this is likely to be an NP-hard problem. However, there is a very simple descent algorithm for finding local minima. During warping, we are
-allowed to flip simple points of ''L'' that lie inside the mask ''M'', i.e., points in the set <math>simple(L) \cap M</math>. Flipping any such pixel ''j'' of ''L'' satisfying <math> \mid t_j - l_j \mid > 0.5 </math> produces a new warping with smaller error. The descent algorithm greedily picks the pixel for which this error reduction is the largest, breaking ties randomly.
+As described by the authors, there is not an efficient algorithm for finding the global minimum in Eq. (1), and indeed this is likely to be an NP-hard problem. However, there is a very simple descent algorithm for finding local minima. During warping, we are allowed to flip simple points of ''L'' that lie inside the mask ''M'', i.e., points in the set <math>simple(L) \cap M</math>. Flipping any such pixel ''j'' of ''L'' satisfying <math> \mid t_j - l_j \mid > 0.5 </math> produces a new warping with smaller error. The descent algorithm greedily picks the pixel for which this error reduction is the largest, breaking ties randomly.
 
-Algorithm:
+Descent algorithm for warping the binary image ''L''<sup>*</sup> onto the binary image ''T'', under geometric constraints set by the mask image ''M'':
 :<math>warp(L^* \in B,T \in A,M \in B)</math>
 :<math>L</math> := <math>L^*</math>
 :do
@@ -79,8 +78,7 @@ Algorithm:
 :::return <math>L</math>
 ::end
 
-Since <math>\parallel T-L \parallel ^2</math> is decreasing, the algorithm is guaranteed to converge to a local minimum of the warping error. How problematic is the lack of an efficient algorithm for finding a global minimum? We do not think that it is a problem in practice. The warpings found by our descent
-algorithm look reasonable to the eye. In spite of the random choice of flipped pixels, the results are highly reproducible in practice.
+Since <math>\parallel T-L \parallel ^2</math> is decreasing, the algorithm is guaranteed to converge to a local minimum of the warping error. How problematic is the lack of an efficient algorithm for finding a global minimum? It does not seem a problem in practice. The warpings found by this descent algorithm look reasonable to the eye. In spite of the random choice of flipped pixels, the results are highly reproducible in practice.
 
 ===Warping error versus Rand error===
 At first glance, it may seem that the warping error measures only boundary detection performance. But we would like to argue that it is also a good measure of segmentation performance. This is because digital topology tells us
