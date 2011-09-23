@@ -17,11 +17,11 @@ The '''warping error''' is a [[:Category:Segmentation|segmentation]] metric that
 
 In other words, instead of measuring the geometric error (pixel agreement) between two segmentations, the '''warping error''' focuses on the objects and measures the topological error between them.
 
-=== Pixel error ===
+== Pixel error ==
 The simplest way of evaluating a segmentation is by measuring the pixel error between the original labels and the segmented ones. Let <math>l_i</math> denote the value of the boundary labeling ''L'' at image location ''i''. The pixel error of ''L'' with respect to another binary labeling ''L''<sup>*</sup> is the number of pixel locations at which the two labelings disagree. This can also be written as the squared [http://en.wikipedia.org/wiki/Euclidean_distance Euclidean distance] <math>\parallel L - L^*\parallel^2</math>, which is equivalent to the [http://en.wikipedia.org/wiki/Hamming_distance Hamming distance] since the labels are binary-valued. 
 The pixel error is appealing because of its simplicity, but suffers from a serious defect. It is overly sensitive to minor displacements in the location of a boundary that are ubiquitous even when comparing one human boundary labeling to another. These disagreements cause no qualitative differences in the interpretation of the image, but can lead to large quantitative differences in pixel error.
 
-=== Digital topology and the warping error ===
+== Digital topology and the warping error ==
 Jain ''et al.'' <ref name="Viren2010" /> introduced the '''warping error''', another metric for comparing boundary labelings based on concepts from the field of [http://en.wikipedia.org/wiki/Digital_topology digital topology]. 
 
 If ''L''<sup>*</sup> can be transformed into <math>L</math> by a sequence of pixel flips that each
@@ -38,7 +38,7 @@ Now consider the pixel error of ''T'' relative to warpings of ''L''<sup>*</sup>.
 
 In other words, the warping error between two segmentations is the '''minimum mean square error between the pixels of the target segmentation and the pixels of a topology-preserving warped source segmentation'''.
 
-====Topological constraints====
+===Topological constraints===
 To impose topological constraints on the warping, we use concepts from [http://en.wikipedia.org/wiki/Digital_topology digital topology], a field that extends the concepts of continuous-space topology to digital images. One of the most fundamental principles of this field is that
 complementary definitions of adjacency must be used for foreground (“1”) and background (“0”) pixels, so that a digital analog of the [http://en.wikipedia.org/wiki/Jordan_Curve_Theorem Jordan Curve Theorem] holds. We use the 4-adjacency for foreground and the 8-adjacency for background, and calculate [http://en.wikipedia.org/wiki/Connected-component_labeling connected components] based on these adjacencies.
 
@@ -54,10 +54,10 @@ would cause by being flipped. The possible topological changes are '''splitting,
 
 We will write simple(''L'') to denote the set of simple points of ''L''.
 
-====Geometric constraints====
+===Geometric constraints===
 There are many ways to define the mask, depending on the exact nature of the desired geometric constraints. In our implementation below, we choose ''M'' to be the set of all pixels within [http://en.wikipedia.org/wiki/Euclidean_distance Euclidean distance] 5 from the background of ''L''. This allows the foreground of ''L'' to expand arbitrarily, as long as topology is preserved. But the foreground can shrink by only a limited amount. Note that basing ''M'' on ''L'' makes warping an asymmetric relation.
 
-====Descent algorithm for warping====
+===Descent algorithm for warping===
 [[Image:Warping-error-animation.gif|thumb|300px|Example of the topology-preserving warping of one (binary) source image onto a target one.]]
 We do not know of an efficient algorithm for finding the global minimum in Eq. (1), and indeed this is likely to be an NP-hard problem. However, there is a very simple descent algorithm for finding local minima. During warping, we are
 allowed to flip simple points of ''L'' that lie inside the mask ''M'', i.e., points in the set <math>simple(L) \cap M</math>. Flipping any such pixel ''j'' of ''L'' satisfying <math> \mid t_j - l_j \mid > 0.5 </math> produces a new warping with smaller error. The descent algorithm greedily picks the pixel for which this error reduction is the largest, breaking ties randomly.
@@ -77,7 +77,7 @@ Algorithm:
 Since <math>\parallel T-L \parallel ^2</math> is decreasing, the algorithm is guaranteed to converge to a local minimum of the warping error. How problematic is the lack of an efficient algorithm for finding a global minimum? We do not think that it is a problem in practice. The warpings found by our descent
 algorithm look reasonable to the eye. In spite of the random choice of flipped pixels, the results are highly reproducible in practice.
 
-====Warping error versus Rand error====
+===Warping error versus Rand error===
 At first glance, it may seem that the warping error measures only boundary detection performance. But we would like to argue that it is also a good measure of segmentation performance. This is because digital topology tells us
 how any single pixel affects the global topology of an image.
 The warping error is an upper bound on the number of topologically-relevant
