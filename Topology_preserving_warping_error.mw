@@ -1,5 +1,5 @@
 [[Image:Warping-error-comparison.png|thumb|400px|Application of the topology-preserving warping error. Example A and B have the same amount of pixel with respect the ground truth, but example B has no topological error.]]
-The '''warping error''' is a segmentation metric that tolerates disagreements over boundary location, penalizes topological disagreements, and can be used directly as a cost function for learning boundary detection<ref name="SaalfeldAl2010">{{cite journal
+The '''warping error''' is a [[:Category:Segmentation|segmentation]] metric that tolerates disagreements over boundary location, penalizes topological disagreements, and can be used directly as a cost function for learning boundary detection<ref name="SaalfeldAl2010">{{cite journal
 |author = Jain, Viren and Bollmann, Benjamin and Richardson, Mark and Berger,
 	Daniel R. and Helmstaedter, Moritz N. and Briggman, Kevin L. and
 	Denk, Winfried and Bowden, Jared B. and Mendenhall, John M. and Abraham,
@@ -15,6 +15,7 @@ The '''warping error''' is a segmentation metric that tolerates disagreements ov
 |  doi = 10.1109/CVPR.2010.5539950
 }}</ref>.
 
+In other words, instead of measuring the geometric error (pixel agreement) between two segmentations, the '''warping error''' focuses on the objects and measures the topological error between them.
 
 ==== Pixel error ====
 Let <math>l_i</math> denote the value of the boundary labeling <math>L</math> at image location <math>i</math>. The pixel error of <math>L</math> with respect to another binary labeling <math>L^*</math> is the number of pixel locations at which the two labelings disagree. This can also be written as the squared [http://en.wikipedia.org/wiki/Euclidean_distance Euclidean distance] <math>\parallel L - L^*\parallel^2</math>, which is equivalent to the [http://en.wikipedia.org/wiki/Hamming_distance Hamming distance] since the labels are binary-valued. 
