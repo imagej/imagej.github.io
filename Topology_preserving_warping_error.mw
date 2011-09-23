@@ -23,9 +23,8 @@ Jain ''et al.'' <ref name="Viren2010" /> introduced the '''warping error''', ano
 
 If ''L''<sup>*</sup> can be transformed into <math>L</math> by a sequence of pixel flips that each
 
-1. preserve a set of desired topological properties
-
-2. occur only at locations within a mask ''M'',
+# preserve a set of desired topological properties
+# occur only at locations within a mask ''M'',
 
 then we will say ''L'' is a ''warping of'' ''L''<sup>*</sup>, or <math>L 	\triangleleft L^*</math>. The first condition constrains ''L'' and ''L''<sup>*</sup> to be '''topologically equivalent'''. The second condition can be used to constrain ''L'' to be geometrically similar to ''L''<sup>*</sup>. Both conditions will be explained in more detail below.
 
