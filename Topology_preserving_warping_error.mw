@@ -64,7 +64,7 @@ There are many ways to define the '''mask''', depending on the exact nature of t
 
 ===Descent algorithm for warping===
 [[Image:Warping-error-animation.gif|thumb|300px|Example of the topology-preserving warping of one (binary) source image onto a target one.]]
-As described by the authors, there is not an efficient algorithm for finding the global minimum in Eq. (1), and indeed this is likely to be an NP-hard problem. However, there is a very simple descent algorithm for finding local minima. During warping, we are allowed to flip simple points of ''L'' that lie inside the mask ''M'', i.e., points in the set <math>simple(L) \cap M</math>. Flipping any such pixel ''j'' of ''L'' satisfying <math> \mid t_j - l_j \mid > 0.5 </math> produces a new warping with smaller error. The descent algorithm greedily picks the pixel for which this error reduction is the largest, breaking ties randomly.
+As described by the authors, there is not an efficient algorithm for finding the global minimum in Eq. (1), and indeed this is likely to be an [http://en.wikipedia.org/wiki/NP-hard NP-hard] problem. However, there is a very simple descent algorithm for finding local minima. During warping, we are allowed to flip simple points of ''L'' that lie inside the mask ''M'', i.e., points in the set <math>simple(L) \cap M</math>. Flipping any such pixel ''j'' of ''L'' satisfying <math> \mid t_j - l_j \mid > 0.5 </math> produces a new warping with smaller error. The descent algorithm greedily picks the pixel for which this error reduction is the largest, breaking ties randomly.
 
 Descent algorithm for warping the binary image ''L''<sup>*</sup> onto the binary image ''T'', under geometric constraints set by the mask image ''M'':
 :<math>warp(L^* \in B,T \in A,M \in B)</math>
