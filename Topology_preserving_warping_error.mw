@@ -21,7 +21,7 @@ The pixel error is appealing because of its simplicity, but suffers from a serio
 == Digital topology and the warping error ==
 Jain ''et al.'' <ref name="Viren2010" /> introduced the '''warping error''', another metric for comparing boundary labelings based on concepts from the field of [http://en.wikipedia.org/wiki/Digital_topology digital topology]. 
 
-If ''L''<sup>*</sup> can be transformed into <math>L</math> by a sequence of pixel flips that each
+If ''L''<sup>*</sup> can be transformed into ''L'' by a sequence of pixel flips that each
 
 # preserve a set of desired topological properties
 # occur only at locations within a mask ''M'',
