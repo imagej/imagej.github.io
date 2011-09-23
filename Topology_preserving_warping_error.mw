@@ -60,7 +60,7 @@ We may wish to allow some of these types of changes, and therefore flipping of s
 We will write simple(''L'') to denote the set of simple points of ''L''.
 
 ===Geometric constraints===
-There are many ways to define the mask, depending on the exact nature of the desired geometric constraints. In our implementation below, we choose ''M'' to be the set of all pixels within [http://en.wikipedia.org/wiki/Euclidean_distance Euclidean distance] 5 from the background of ''L''. This allows the foreground of ''L'' to expand arbitrarily, as long as topology is preserved. But the foreground can shrink by only a limited amount. Note that basing ''M'' on ''L'' makes warping an asymmetric relation.
+There are many ways to define the '''mask''', depending on the exact nature of the desired geometric constraints. For example, in the original paper implementation, they choose ''M'' to be the set of all pixels within [http://en.wikipedia.org/wiki/Euclidean_distance Euclidean distance] 5 from the background of ''L''. This allows the foreground of ''L'' to expand arbitrarily, as long as topology is preserved. But the foreground can shrink by only a limited amount. Note that basing ''M'' on ''L'' makes warping an asymmetric relation.
 
 ===Descent algorithm for warping===
 [[Image:Warping-error-animation.gif|thumb|300px|Example of the topology-preserving warping of one (binary) source image onto a target one.]]
