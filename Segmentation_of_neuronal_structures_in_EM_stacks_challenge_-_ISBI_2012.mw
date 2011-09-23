@@ -14,7 +14,7 @@ Relevant dates:
 
 * '''Notification of acceptance/presentation type''': March 15<sup>th</sup>, 2012
 
-====Training data====
+==Training data==
 [[Image:Challenge-ISBI-2012-Animation-Input-Labels.gif|thumb|400px|Input training data and corresponding labels]]
 The training data is a set of 30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.
 
