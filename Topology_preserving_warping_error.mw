@@ -1,10 +1,7 @@
 [[Image:Warping-error-comparison.png|thumb|400px|Application of the topology-preserving warping error. Example A and B have the same amount of pixel error with respect to the ground truth, however, example B has no topological error.]]
 The '''warping error''' is a [[:Category:Segmentation|segmentation]] metric that tolerates disagreements over boundary location, penalizes topological disagreements, and can be used directly as a cost function for learning boundary detection<ref name="Viren2010">{{cite journal
-|author = Jain, Viren and Bollmann, Benjamin and Richardson, Mark and Berger,
-	Daniel R. and Helmstaedter, Moritz N. and Briggman, Kevin L. and
-	Denk, Winfried and Bowden, Jared B. and Mendenhall, John M. and Abraham,
-	Wickliffe C. and Harris, Kristen M. and Kasthuri, Narayanan and Hayworth, Ken J. and Schalek, Richard and Tapia, Juan Carlos and Lichtman,
-	Jeff W. and Seung, H. Sebastian
+|author = V. Jain, B. Bollmann, M. Richardson, D.R. Berger, M.N. Helmstaedter, K.L. Briggman, W. Denk, J.B. Bowden, J.M. Mendenhall, W.C. Abraham,
+	K.M. Harris, N. Kasthuri, K.J. Hayworth, R. Schalek, J.C. Tapia, J.W. Lichtman, S.H. Seung
 | title = Boundary Learning by Optimization with Topological Constraints
 | booktitle = 2010 IEEE CONFERENCE ON COMPUTER VISION AND PATTERN RECOGNITION
 	(CVPR)
