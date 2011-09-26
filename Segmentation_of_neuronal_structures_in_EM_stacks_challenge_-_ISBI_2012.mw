@@ -20,7 +20,7 @@ The training data is a set of 30 sections from a serial section Transmission Ele
 
 The corresponding binary labels are provided in an in-out fashion, i.e. white for the pixels of segmented objects and black for the rest of pixels (which correspond mostly to membranes).
 
-To get the training data, please, send an e-mail with your contact information to [mailto:iarganda@mit.edu iarganda@mit.edu].
+'''To get the training data, please, send an e-mail with your contact information to [mailto:iarganda@mit.edu iarganda@mit.edu]'''.
 
 ==Evaluation metrics==
 In order to evaluate and rank the performances of the participant methods, we will use topology-based segmentation metrics, together with the pixel error. Each metric will have an updated leader-board. 
