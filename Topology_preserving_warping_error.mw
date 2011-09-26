@@ -15,6 +15,7 @@ The '''warping error''' is a [[:Category:Segmentation|segmentation]] metric that
 In other words, instead of focusing on the geometric differences (pixel disagreement) between two segmentations, the '''warping error''' focuses on the objects and measures the topological error between them.
 
 == Pixel error ==
+[[Image:Pixel-error-description.png|thumb|360px|Pixel error between two different segmentations (A and B) with respect to the original labels (*, ground truth).]]
 The simplest way of evaluating a segmentation is by measuring the pixel error between the original labels and the segmented ones. Let <math>l_i</math> denote the value of the boundary labeling ''L'' at image location ''i''. The pixel error of ''L'' with respect to another binary labeling ''L''<sup>*</sup> is the number of pixel locations at which the two labelings disagree. This can also be written as the squared [http://en.wikipedia.org/wiki/Euclidean_distance Euclidean distance] <math>\parallel L - L^*\parallel^2</math>, which is equivalent to the [http://en.wikipedia.org/wiki/Hamming_distance Hamming distance] since the labels are binary-valued. 
 The pixel error is appealing because of its simplicity, but suffers from a serious defect. It is overly sensitive to minor displacements in the location of a boundary that are ubiquitous even when comparing one human boundary labeling to another. These disagreements cause no qualitative differences in the interpretation of the image, but can lead to large quantitative differences in pixel error.
 
