@@ -1,0 +1,1 @@
+Figure describing simple points (for topology preserving warping). Label relaxation is only allowed at simple points. The black pixels in the top circle and the white pixels in the bottom circle are not simple points, because flipping them would cause a merger or a split.
