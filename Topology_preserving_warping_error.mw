@@ -35,7 +35,7 @@ Now consider the pixel error of ''T'' relative to warpings of ''L''<sup>*</sup>.
 In other words, the warping error between two segmentations is the '''minimum mean square error between the pixels of the target segmentation and the pixels of a topology-preserving warped source segmentation'''.
 
 ===Topological constraints===
-[[Image:Simple-points-example.png|thumb|400px|Label relaxation is only allowed at simple points. The black pixels in the top circle and the white pixels in the bottom circle are not simple points, because flipping them would cause a merger or a split. Figure courtesy of [http://www.hhmi.org/research/fellows/jain_bio.html Viren Jain].]]
+[[Image:Simple-points-example.png|thumb|300px|Label relaxation is only allowed at simple points. The black pixels in the top circle and the white pixels in the bottom circle are not simple points, because flipping them would cause a merger or a split. Figure courtesy of [http://www.hhmi.org/research/fellows/jain_bio.html Viren Jain].]]
 To impose topological constraints on the warping, we use concepts from [http://en.wikipedia.org/wiki/Digital_topology digital topology], a field that extends the concepts of continuous-space topology to digital images. One of the most fundamental principles of this field is that
 complementary definitions of adjacency must be used for foreground (“1”) and background (“0”) pixels, so that a digital analog of the [http://en.wikipedia.org/wiki/Jordan_Curve_Theorem Jordan Curve Theorem] holds. We use the 4-adjacency for foreground and the 8-adjacency for background, and calculate [http://en.wikipedia.org/wiki/Connected-component_labeling connected components] based on these adjacencies.
 
