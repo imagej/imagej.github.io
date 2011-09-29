@@ -105,9 +105,15 @@ if( calculatePixelError )
 	pixelError = WekaSegmentation.pixelError( originalLabels, proposedLabels, threshold );
 	IJ.log("  Pixel error = " + pixelError);
 }
-
-		
 </source>
+
+If you run it, the following dialog will pop up:
+
+[[Image:Challenge-segmentation-metrics-script.png]]
+
+Here you can select among the open images which ones are the original and the proposed labels, along with the specific metrics you want to apply and the threshold to binarize the labels. 
+
+After clicking OK the metrics will applied and the results will be shown in the Log window:
 
 ==Organizers==
 * [[User:Iarganda | Ignacio Arganda-Carreras]] (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
