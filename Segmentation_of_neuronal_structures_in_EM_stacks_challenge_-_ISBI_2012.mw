@@ -30,6 +30,85 @@ The metric are:
 * [[Topology preserving warping error|Warping error]], a segmentation metric that tolerates disagreements over boundary location and penalizes topological disagreements.
 * [[Topology_preserving_warping_error#Pixel_error|Pixel error]], or squared Euclidean distance between the original and the result labels.
 
+===Script===
+To evaluate the performance of your segmentation method you can use the following Beanshell script in Fiji:
+
+<source lang=java>
+/**
+ * Script to calculate the pixel and warping error between
+ * some 2D original labels and their corresponding proposed 
+ * labels
+ * 
+ * @author Ignacio Arganda-Carreras (iarganda@mit.edu)
+ */
+
+import trainableSegmentation.*;
+
+// Get the list of images that are open
+ids = WindowManager.getIDList();
+
+if ( ids == null || ids.length < 2 )
+{
+	IJ.showMessage( "You should have at least two images open." );
+	return;
+}
+
+// Get all the titles of the open images		
+titles = new String[ ids.length ];
+for ( int i = 0; i < ids.length; ++i )
+{
+	titles[ i ] = ( WindowManager.getImage( ids[ i ] ) ).getTitle();
+}
+
+// Create dialog		
+gd = new GenericDialog( "Evaluate segmentation results" );
+		
+gd.addMessage( "Image Selection:" );
+current = WindowManager.getCurrentImage().getTitle();
+gd.addChoice( "Original_labels", titles, current );
+gd.addChoice( "Proposal", titles, current.equals( titles[ 0 ] ) ? titles[ 1 ] : titles[ 0 ] );
+		
+gd.addMessage( "Segmentation error metrics:" );
+gd.addCheckbox( "Pixel_error", true );
+gd.addCheckbox( "Warping_error", true );
+
+gd.addMessage( "Parameters:" );
+gd.addNumericField( "Binary_threshold:", 0.5, 2 );
+gd.showDialog();
+		
+if (gd.wasCanceled()) 
+	return;
+		
+originalLabels = WindowManager.getImage( ids[ gd.getNextChoiceIndex() ] );
+proposedLabels = WindowManager.getImage( ids[ gd.getNextChoiceIndex() ] );
+
+calculatePixelError = gd.getNextBoolean();
+calculateWarpingError = gd.getNextBoolean();
+		
+threshold = ( double )gd.getNextNumber();
+
+IJ.log("---");
+IJ.log("Evaluating segmentation...");
+IJ.log("  Original labels: " + originalLabels.getTitle());
+IJ.log("  Proposed labels: " + proposedLabels.getTitle());
+
+// Calculate segmentation error
+if( calculateWarpingError )
+{
+	IJ.log("Calculating warping error...");
+	warpingError = WekaSegmentation.warpingError( originalLabels, proposedLabels, null, threshold );
+	IJ.log("  Warping error = " + warpingError);
+}
+
+if( calculatePixelError )
+{
+	pixelError = WekaSegmentation.pixelError( originalLabels, proposedLabels, threshold );
+	IJ.log("  Pixel error = " + pixelError);
+}
+
+		
+</source>
+
 ==Organizers==
 * [[User:Iarganda | Ignacio Arganda-Carreras]] (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
 * [http://hebb.mit.edu/people/seung/ Sebastian Seung] (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
