@@ -102,6 +102,7 @@ if( calculateWarpingError )
 
 if( calculatePixelError )
 {
+	IJ.log("Calculating pixel error...");
 	pixelError = WekaSegmentation.pixelError( originalLabels, proposedLabels, threshold );
 	IJ.log("  Pixel error = " + pixelError);
 }
