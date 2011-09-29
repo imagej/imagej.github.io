@@ -31,7 +31,7 @@ The metric are:
 * [[Topology_preserving_warping_error#Pixel_error|Pixel error]], or squared Euclidean distance between the original and the result labels.
 
 ===Script===
-To evaluate the performance of your segmentation method you can use the following Beanshell script in Fiji:
+To evaluate the performance of your segmentation method you can use the following [[Beanshell_Scripting|Beanshell script]] in Fiji (just copy/paste it in the [[Script Editor]] or save it in a .bsh file and run it):
 
 <source lang=java>
 /**
