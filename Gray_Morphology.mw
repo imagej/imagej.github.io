@@ -1,0 +1,19 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Gray Morphology
+| author                 = Dimiter Prodanov
+| maintainer             = Dimiter Prodanov
+| filename               = Gray_Morphology.jar 
+| source                 = [http://fiji.sc/GrayMorphology_.java GrayMorphology_.java]
+| released               = September 15, 2003
+| latest version         = June 14, 2006
+| status                 = stable
+| category               = [[:Category:Segmentation|Segmentation]]
+| website                = [http://rsb.info.nih.gov/ij/plugins/gray-morphology.html Gray Morphology at the ImageJ website]
+}}
+
+This plugin performs [http://en.wikipedia.org/wiki/Mathematical_morphology mathematical morphology] on grayscale images. It only works on [[8-bit]] grayscale images.
+
+For more information on morphological operators in image processing, have a look at [http://homepages.inf.ed.ac.uk/rbf/HIPR2/matmorph.htm this page].
+
+[[Category:Segmentation]]
