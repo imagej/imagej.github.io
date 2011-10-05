@@ -14,6 +14,11 @@ The images are representative of actual images in the real-world, containing som
 
 * '''Notification of acceptance/presentation type''': March 15<sup>th</sup>, 2012
 
+==How to participate==
+'''Everybody''' can participate in the challenge. The only requirement consists of filling up the registration form [http://brainiac.mit.edu/isbi2012/ here] to get a user name and password to download the data and upload the results.
+
+The best ranked methods will be presented a the workshop previous to the [http://www.biomedicalimaging.org/ IEEE International Symposium on Biomedical Imaging (ISBI) 2012]
+
 ==Training data==
 [[Image:Challenge-ISBI-2012-Animation-Input-Labels.gif|thumb|400px|Input training data and corresponding labels]]
 The training data is a set of 30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.
