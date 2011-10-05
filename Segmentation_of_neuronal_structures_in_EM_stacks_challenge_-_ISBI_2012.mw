@@ -19,6 +19,8 @@ The images are representative of actual images in the real-world, containing som
 
 The best ranked methods will be presented a the workshop previous to the [http://www.biomedicalimaging.org/ IEEE International Symposium on Biomedical Imaging (ISBI) 2012]
 
+If you have any doubt regarding the challenge, please, do not hesitate to contact the [[Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012#Organizers|organizers]].
+
 ==Training data==
 [[Image:Challenge-ISBI-2012-Animation-Input-Labels.gif|thumb|400px|Input training data and corresponding labels]]
 The training data is a set of 30 sections from a serial section Transmission Electron Microscopy (ssTEM) data set of the Drosophila first instar larva ventral nerve cord (VNC). The microcube measures 2 x 2 x 1.5 microns approx., with a resolution of 4x4x50 nm/pixel.
