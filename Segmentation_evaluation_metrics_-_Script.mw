@@ -2,9 +2,12 @@ To evaluate the performance of your segmentation method you can use the [[Beansh
 
 <source lang=java>
 /**
- * Script to calculate the pixel and warping error between
- * some 2D original labels and their corresponding proposed 
- * labels
+ * Script to calculate the segmentation error between some 2D 
+ * original labels and their corresponding proposed labels. 
+ * The evaluation metrics are:
+ *  - Pixel error
+ *  - Warping error
+ *  - Rand error
  * 
  * @author Ignacio Arganda-Carreras (iarganda@mit.edu)
  */
@@ -38,6 +41,7 @@ gd.addChoice( "Proposal", titles, current.equals( titles[ 0 ] ) ? titles[ 1 ] : 
 gd.addMessage( "Segmentation error metrics:" );
 gd.addCheckbox( "Pixel_error", true );
 gd.addCheckbox( "Warping_error", true );
+gd.addCheckbox( "Rand_error", true );
 
 gd.addMessage( "Parameters:" );
 gd.addNumericField( "Binary_threshold:", 0.5, 2 );
@@ -51,6 +55,7 @@ proposedLabels = WindowManager.getImage( ids[ gd.getNextChoiceIndex() ] );
 
 calculatePixelError = gd.getNextBoolean();
 calculateWarpingError = gd.getNextBoolean();
+calculateRandError = gd.getNextBoolean();
 		
 threshold = ( double )gd.getNextNumber();
 
@@ -58,20 +63,29 @@ IJ.log("---");
 IJ.log("Evaluating segmentation...");
 IJ.log("  Original labels: " + originalLabels.getTitle());
 IJ.log("  Proposed labels: " + proposedLabels.getTitle());
+IJ.log("  Threshold: " + threshold);
 
-// Calculate segmentation error
+// Calculate segmentation error with the selected metrics
+
+if( calculatePixelError )
+{
+	IJ.log("Calculating pixel error...");
+	pixelError = WekaSegmentation.pixelError( originalLabels, proposedLabels, 0.5);
+	IJ.log("  Pixel error = " + pixelError);
+}
+
+if( calculateRandError )
+{
+	IJ.log("Calculating rand error...");
+	randError = WekaSegmentation.randError( originalLabels, proposedLabels, 0.5 );
+	IJ.log("  Rand error = " + randError);
+}
+		
 if( calculateWarpingError )
 {
 	IJ.log("Calculating warping error...");
 	warpingError = WekaSegmentation.warpingError( originalLabels, proposedLabels, null, threshold );
 	IJ.log("  Warping error = " + warpingError);
-}
-
-if( calculatePixelError )
-{
-	IJ.log("Calculating pixel error...");
-	pixelError = WekaSegmentation.pixelError( originalLabels, proposedLabels, threshold );
-	IJ.log("  Pixel error = " + pixelError);
 }
 </source>
 
