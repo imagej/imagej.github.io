@@ -1,4 +1,6 @@
-The following [[Beanshell_Scripting|Beanshell script]] allows you to evaluate the performance of your segmentation method. Just copy/paste it in the [[Script Editor]] or save it in a .bsh file and run it (File > Open):
+The following [[Beanshell_Scripting|Beanshell script]] allows you to evaluate the performance of your [[:Category:Segmentation|segmentation]] method. 
+
+Just copy/paste it in the [[Script Editor]] or save it into a .bsh file and run it (File > Open):
 
 <source lang=java>
 /**
