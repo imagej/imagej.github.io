@@ -76,19 +76,20 @@ if( calculatePixelError )
 	IJ.log("  Pixel error = " + pixelError);
 }
 
-if( calculateRandError )
-{
-	IJ.log("Calculating rand error...");
-	randError = WekaSegmentation.randError( originalLabels, proposedLabels, 0.5 );
-	IJ.log("  Rand error = " + randError);
-}
-		
 if( calculateWarpingError )
 {
 	IJ.log("Calculating warping error...");
 	warpingError = WekaSegmentation.warpingError( originalLabels, proposedLabels, null, threshold );
 	IJ.log("  Warping error = " + warpingError);
 }
+
+if( calculateRandError )
+{
+	IJ.log("Calculating Rand error...");
+	randError = WekaSegmentation.randError( originalLabels, proposedLabels, 0.5 );
+	IJ.log("  Rand error = " + randError);
+}
+		
 </source>
 
 If you run it, the following dialog will pop up:
