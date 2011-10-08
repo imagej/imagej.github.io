@@ -80,4 +80,6 @@ fiji --classpath=/path/to/bcel.jar:directory/ \
 
 (Side note: Apache calls the verifier ''JustIce'', but the name is not reflected in the program name, only in its output.)
 
+More on this issue can be found [http://elliotth.blogspot.com/2008/03/generating-jvm-bytecode.html here].
+
 [[Category:Development]]
