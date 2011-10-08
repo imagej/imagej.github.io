@@ -50,4 +50,34 @@ InstructionPrinter.print(method, System.err);
 
 If you absolutely do not want the output to go to ''System.err'', you could substitute it by ''new PrintStream(new IJLogOutputStream())'' (the class ''IJLogOutputStream'' is defined in [[Update Fiji|Fiji Updater]]'s ''fiji.updater.util'' class for you to reuse).
 
+= VerifyError =
+
+For security reasons, HotSpot does not allow any malformed bytecode to execute. To verify that the bytecode is reasonably sane, the code is ''verified'' before being executed.
+
+Unfortunately, the error messages of said verifier are not exactly stellar.
+
+If you want to avoid being misled by the error message (the method mentioned in the ''VerifyError'' is most likely to be <u>not</u> the offending one), and moreover want to know where in the bytecode the error happened, probably the easiest way to go forward is to use [http://commons.apache.org/bcel/ BCEL], Apache's ''Byte Code Engineering Library''. For that, you have to write out .class files first:
+
+<source lang="java">
+CtClass clazz = ...;
+...;
+
+File directory = ...;
+File file = new File(directory, clazz.getName().replace('.', '/') + ".class");
+file.getParentFile().makeDirectories();
+DataOutputStream out = new DataOutputStream(new FileOutputStream(file));
+clazz.getClassFile().write(out);
+out.close();
+</source>
+
+Then you can use the verifier:
+
+<source lang="bash">
+fiji --classpath=/path/to/bcel.jar:directory/ \
+        --main-class=org.apache.bcel.verifier.Verifier \
+        my.class.Name
+</source>
+
+(Side note: Apache calls the verifier ''JustIce'', but the name is not reflected in the program name, only in its output.)
+
 [[Category:Development]]
