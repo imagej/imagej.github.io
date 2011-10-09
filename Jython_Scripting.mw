@@ -1299,6 +1299,38 @@ Of course the Weaver is a java library, and may be used from any scripting langu
 
 All the above is inspired by the [http://www.scipy.org/Cookbook/Weave Scientific Python Weaver, or scipy Weaver], which inlines C code inside a python file.
 
+
+=== Reading command line arguments given to a script ===
+
+The Fiji launcher can execute scripts. When running scripts from the command line with the launcher, it is convenient to read out the arguments given to the script. For example, suppose you create a script to open an image file and do some processing with it, and you want to read the name of the file to open from the command line argument. Here's how:
+
+<source lang="python">
+import os, sys
+from ij import IJ
+
+# Expecting one argument: the file path
+if len(sys.argv) < 2:
+  print "Usage: ./fiji-linux64 <script-name> <file-path>"
+  sys.exit(1)
+
+filepath = sys.argv[1]
+
+# Check if the file exists
+if not os.path.exists(filepath):
+  print "File does not exist at path:", filepath
+  sys.exit(1)
+
+# Open the image
+imp = IJ.openImage(filepath)
+print "Processing:", imp.title
+
+# Do some processing ...
+
+</source>
+
+IMPORTANT: notice that, when executing scripts from the command line, there is no auto-importing of common imports. So above we <b>must</b> declare "from ij import IJ" to import the namespace <i>IJ</i> with all the static utility functions such as <i>openImage</i>.
+
+
 [[Category:Scripting]]
 [[Category:Jython]]
 
