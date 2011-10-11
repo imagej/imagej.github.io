@@ -7,7 +7,7 @@ The [http://en.wikipedia.org/wiki/Rand_index Rand index] is a well-known measure
 | pages = 846–850
 | number = 36
 | doi = 10.2307/2284239
-}}</ref>. Recently, it has been proposed as a measure of segmentation performance, since a segmentation can be regarded as a clustering of pixels<ref name="Unnikrishnan2007">{{cite journal
+}}</ref>. Recently, it has been proposed as a '''measure of segmentation performance''', since a segmentation can be regarded as a clustering of pixels<ref name="Unnikrishnan2007">{{cite journal
 |author = R. Unnikrishnan, C. Pantofaru, and M. Hebert
 | title = Toward objective evaluation of image segmentation algorithms
 | journal = IEEE Transactions on Pattern Analysis and Machine Intelligence
@@ -29,7 +29,7 @@ Given two segmentations <math>S_1</math> and <math>S_2</math> of an image <math>
 The Rand index, <math>RI</math>, is:
 :<math> RI = \frac{a+b}{{n \choose 2 }}</math>
 
-Here we instead define the closely related [[Rand error]], which is a measure of disagreement. The [[Rand error]] (RE) is the frequency with which the two segmentations disagree over whether a pair of pixels belongs to same or different objects:
+Here we instead define the closely related [[Rand error]], which is a measure of disagreement. The [[Rand error]] (RE) is the '''frequency with which the two segmentations disagree over whether a pair of pixels belongs to same or different objects''':
 
 :<math> RE = 1 - RI</math>
 
