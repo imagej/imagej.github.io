@@ -33,7 +33,25 @@ Here we instead define the closely related [[Rand error]], which is a measure of
 
 :<math> RE = 1 - RI</math>
 
-The [[Rand error]] is implemented in Fiji as part of the [[Advanced Weka Segmentation]] library and is accessible as described in this [[Segmentation_evaluation_metrics_-_Script|script]].
+==Implementation in Fiji==
+The [[Rand error]] metric is implemented in the [[Advanced Weka Segmentation]] library. Here is an example of how to use it in [[Beanshell_Scripting|Beanshell script]]:
+
+<source lang=java>
+import trainableSegmentation.WekaSegmentation;
+
+// original labels
+originalLabels = IJ.openImage("/path/original-labels.tif");
+
+// proposed (new) labels
+proposal = IJ.openImage("/path/proposed-labels.tif");
+
+// threshold to binarize labels (just in case they are not binary)
+threshold = 0.5;
+
+randError = WekaSegmentation.randError( originalLabels, proposal, threshold);
+
+IJ.log("Rand error between source image " + originalLabels.getTitle() + " and target image "
++ proposal.getTitle() + " = " + randError); 
 
 ==References==
 
