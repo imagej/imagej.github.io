@@ -16,7 +16,22 @@ The [http://en.wikipedia.org/wiki/Rand_index Rand index] is a well-known measure
 | pages = 929-944
 | issue = 6
 | doi = 10.1109/TPAMI.2007.1046
-}}</ref>. The [http://en.wikipedia.org/wiki/Rand_index Rand index] is defined as a measure of agreement. Here we instead define the closely related Rand error, which is a measure of disagreement.
+}}</ref>. More formally, define a segmentation as an integer-valued labeling of an image. Each object in a segmentation consists of a set of pixels sharing a common label. 
+
+The [http://en.wikipedia.org/wiki/Rand_index Rand index] is defined as a measure of agreement: 
+
+Given two segmentations <math>S_1</math> and <math>S_2</math> of an image <math>I</math> with <math>n</math> pixels, we define:
+
+* <math>a</math>, the number of pairs of pixels in <math>I</math> that are in the same object in <math>S_1</math> and in the same object in <math>S_2</math> (i.e., they have the same label)
+
+* <math>b</math>, the number of pairs of pixels in <math>I</math> that are in different objects in <math>S_1</math> and in different objects in <math>S_2</math> (i.e., they have different labels)
+
+The Rand index, <math>RI</math>, is:
+:<math> RI = \frac{a+b}{{n \choose 2 }}</math>
+
+Here we instead define the closely related [[Rand error]], which is a measure of disagreement. The [[Rand error]] (RE) is the frequency with which the two segmentations disagree over whether a pair of pixels belongs to same or different objects:
+
+:<math> RE = 1 - RI</math>
 
 ==References==
 
