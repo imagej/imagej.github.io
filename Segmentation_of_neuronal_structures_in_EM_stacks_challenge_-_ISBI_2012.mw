@@ -41,7 +41,7 @@ The metric are:
 
 * [[Topology preserving warping error|Warping error]], a segmentation metric that tolerates disagreements over boundary location and penalizes topological disagreements.
 * [[Topology_preserving_warping_error#Pixel_error|Pixel error]], or squared Euclidean distance between the original and the result labels.
-* [[Rand error]].
+* [[Rand error]], a measure of the dissimilarity between two clusters or segmentations.
 
 If you want to apply these metrics yourself to your own results, you can do it within Fiji using this [[Segmentation evaluation metrics - Script|script]].
 
