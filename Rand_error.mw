@@ -53,8 +53,10 @@ randError = WekaSegmentation.randError( originalLabels, proposal, threshold);
 IJ.log("Rand error between source image " + originalLabels.getTitle() + " and target image "
 + proposal.getTitle() + " = " + randError); 
 
+</source>
+
 ==References==
 
-<references />
+<references/>
 
 [[Category:Segmentation]]
