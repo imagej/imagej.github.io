@@ -958,6 +958,45 @@ printing a line to the log window, like:
 
   clicked on: imp[Untitled-1 400x200x1]
 
+
+=== Create a virtual stack from the TIF files present in a folder and its subfolders, recursively ===
+
+<source lang="python">
+# Walk recursively through an user-selected directory
+# and add all found filenames that end with ".tif"
+# to a VirtualStack, which is then shown.
+#
+# It is assumed that all images are of the same type
+# and have the same dimensions.
+
+import os
+
+def run():
+  srcDir = DirectoryChooser("Choose!").getDirectory()
+  if not srcDir:
+    # user canceled dialog
+    return
+  # Assumes all files have the same size
+  vs = None
+  for root, directories, filenames in os.walk(srcDir):
+    for filename in filenames:
+      # Skip non-TIFF files
+      if not filename.endswith(".tif"):
+        continue
+      path = os.path.join(root, filename)
+      # Upon finding the first image, initialize the VirtualStack
+      if vs is None:
+        imp = IJ.openImage(path)
+        vs = VirtualStack(imp.width, imp.height, None, srcDir)
+      # Add a slice, relative to the srcDir
+      vs.addSlice(path[len(srcDir):])
+  #
+  ImagePlus("Stack from subdirectories", vs).show()
+
+
+run()
+</source>
+
 == Tips and Tricks ==
 
 === Getting a list of all members in one package ===
