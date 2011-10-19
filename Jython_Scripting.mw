@@ -959,6 +959,42 @@ printing a line to the log window, like:
   clicked on: imp[Untitled-1 400x200x1]
 
 
+=== Add a key listener to the canvas of every open image ===
+
+<source lang="python">
+from java.awt.event import KeyEvent, KeyAdapter
+
+def doSomething(imp, keyEvent):
+ """ A function to react to key being pressed on an image canvas. """
+ IJ.log("clicked keyCode " + keyEvent.getKeyCode() " on image " + str(imp))
+ # Prevent further propagation of the key event:
+ keyEvent.consume()
+
+
+class ListenToKey(KeyAdapter):
+ def keyPressed(this, event):
+   imp = event.getSource().getImage()
+   doSomething(imp, event)
+   if KeyEvent.VK_G == keyCode:
+     IJ.log("G was pressed!")
+     event.consume() # AVOID propagation to other key listeners
+
+listener = ListenToKey()
+
+for imp in map(WindowManager.getImage, WindowManager.getIDList()):
+ win = imp.getWindow()
+ if win is None:
+   continue
+ canvas = win.getCanvas()
+ # Remove existing key listeners
+ kls = canvas.getKeyListeners()
+ map(canvas.removeKeyListener, kls)
+ # Add our key listener
+ canvas.add(listener)
+ # Re-add existing key listeners
+ map(canvas.addKeyListener, kls)
+</source>
+
 === Create a virtual stack from the TIF files present in a folder and its subfolders, recursively ===
 
 <source lang="python">
