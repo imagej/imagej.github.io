@@ -965,31 +965,30 @@ printing a line to the log window, like:
 from java.awt.event import KeyEvent, KeyAdapter
  
 def doSomething(imp, keyEvent):
- """ A function to react to key being pressed on an image canvas. """
- IJ.log("clicked keyCode " + str(keyEvent.getKeyCode()) + " on image " + str(imp))
- # Prevent further propagation of the key event:
- keyEvent.consume()
- 
- 
+  """ A function to react to key being pressed on an image canvas. """
+  IJ.log("clicked keyCode " + str(keyEvent.getKeyCode()) + " on image " + str(imp))
+  # Prevent further propagation of the key event:
+  keyEvent.consume()
+
 class ListenToKey(KeyAdapter):
- def keyPressed(this, event):
-   imp = event.getSource().getImage()
-   doSomething(imp, event)
+  def keyPressed(this, event):
+    imp = event.getSource().getImage()
+    doSomething(imp, event)
  
 listener = ListenToKey()
  
 for imp in map(WindowManager.getImage, WindowManager.getIDList()):
- win = imp.getWindow()
- if win is None:
-   continue
- canvas = win.getCanvas()
- # Remove existing key listeners
- kls = canvas.getKeyListeners()
- map(canvas.removeKeyListener, kls)
- # Add our key listener
- canvas.addKeyListener(listener)
- # Re-add existing key listeners
- map(canvas.addKeyListener, kls)
+  win = imp.getWindow()
+  if win is None:
+    continue
+  canvas = win.getCanvas()
+  # Remove existing key listeners
+  kls = canvas.getKeyListeners()
+  map(canvas.removeKeyListener, kls)
+  # Add our key listener
+  canvas.addKeyListener(listener)
+  # Optionally re-add existing key listeners
+  # map(canvas.addKeyListener, kls)
 </source>
 
 === Create a virtual stack from the TIF files present in a folder and its subfolders, recursively ===
