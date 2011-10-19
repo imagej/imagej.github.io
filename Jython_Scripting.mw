@@ -975,9 +975,6 @@ class ListenToKey(KeyAdapter):
  def keyPressed(this, event):
    imp = event.getSource().getImage()
    doSomething(imp, event)
-   if KeyEvent.VK_G == keyCode:
-     IJ.log("G was pressed!")
-     event.consume() # AVOID propagation to other key listeners
  
 listener = ListenToKey()
  
