@@ -18,7 +18,7 @@ Sets the thresholds for colocalization analysis, and also calculates Manders coe
 
 == Documentation ==
 
-===Note: this plugin is now depreciated. You should use the newer [[Coloc_2]] plugin instead===
+<span style="color:red">Note: this plugin is now deprecated. You should use the newer [[Coloc 2]] plugin instead.</span>
 
 See the great documentation for this plugin at [http://www.macbiophotonics.ca/imagej/colour_analysis.htm#6.3%20Colocalisation%20Threshold MBF ImageJ manual page]
 The method is that implemented in Costes et al. This uses a Pearson's correlation above and below the thresholds to iteratively find where the correlation between the two images is 0 and sets the thresholds there. It is pretty robust and importantly is reproducible and non subjective.
