@@ -44,3 +44,7 @@ For fluorescence images from optical microscopes, frrom a colocalization perspec
 *So depending how precise you need to be, over how large a field of view... the difficulty of the correction varies. 
 
 *We could add this kind of colour shift correction to the  new Coloc_2 plugin... by reusing TransformJ and maybe also bUnwarpJ. Any takers?
+
+
+[[Category:Colocalization]]
+[Category:Tutorials]]
