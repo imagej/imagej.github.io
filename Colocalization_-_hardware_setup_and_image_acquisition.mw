@@ -155,7 +155,9 @@ Let's suppose that you have two objects each with different colour, and you woul
 The problem with "saturated pixels" occurs mainly when we use pixel-based colocalization (''i.e.'' when we are interested in intensity correlation over space). It is possible to derive the quantitative error made with saturation. See [[Colocalization/ErrorDueToSaturation|here]]. If pixels/images are saturated (that is having pixels with an intensity level at the top of the range, ie 255 for 8 bit data) then they are missing information about the real spatial intensity distribution in the sample. This is the most important data in your analysis, as you are usually most interested in the brightest objects - right?! That means its a really bad idea to throw that information away when you collect the images.
 
 === Chromatic Shift ===
-If the microscope has poor quality or non chromatically corrected objective lenses (Apochromat) and / or has other alignment problems, then images of the same object in different colour channels will appear in different places. This is very bad, as it means that, especially for smaller objects, you miss some of the real colocalisation. The microscope should be checked with tertraspek bead samples before imaging to see if there is a significant problem. Images can be corrected for x y and z chromatic shift if a bead image has been taken under identical conditions. 
+If the microscope has poor quality or non chromatically corrected objective lenses (Apochromat) and / or has other alignment problems, then images of the same object in different colour channels will appear in different places. This is very bad, as it means that, especially for smaller objects, you miss some of the real colocalisation. The microscope should be checked with tertraspek bead samples before imaging to see if there is a significant problem. Images can be corrected for x y and z chromatic shift if a bead image has been taken under identical conditions.
+
+For more details and possible chromatic shift measurement and correction strategies see [[Chromatic_shift_origins_measurement_and_correction]]
 
 === Conclusion ===
 
