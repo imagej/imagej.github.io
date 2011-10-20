@@ -91,7 +91,7 @@ The transforms are saved as '''.XML''' files, following [[TrakEM2]] format.
 <li><b>maximum image size</b>, which limits the low-end size of the features (i.e. decrease maximum image size to increase the size of the smallest features to extract.)</li>
 <li><b>inlier ratio</b>, which determines when to reject the intersection set of feature correspondences between two images (ratio between correspondent features vs. all extracted features.)</li>
 </ul></li>
-<li>All types of images are accepted (8-bit, 16-bit, 32-bit and RGB) but only in  .tif, .jpg, .png, .gif, .tiff, .jpeg, .bmp, .pgm, or .ima format. Output images are save as TIFF.</li>
+<li>All types of images are accepted (8-bit, 16-bit, 32-bit and RGB) but only in  .tif, .jpg, .png, .gif, .tiff, .jpeg, .bmp, .pgm, or .ima format. Output images are saved as TIFF.</li>
 <li>If you selected the "Advanced setup" and "Elastic" as registration model, another window to adjust the elastic registration parameters will be shown.</li>
 [[Image:Rvs_elastic_options_351x446.png|280px|thumb|Elastic registration options]]
 
