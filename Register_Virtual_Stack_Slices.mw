@@ -60,9 +60,8 @@ If this option is used, '''no reference image needs to be selected'''. All image
 
 To do so, in the main dialog, you have to check the "Shrinkage constrain" option (see attached window). 
 
-[[Image:RVS_regularization_params.png|thumb|200px| Shrinkage regularization parameters ]]
 If you check as well the "Advance setup" checkbox from the same dialog, then a new window will appear to select the corresponding parameters to regularize the section shrinkage based on the properties of the transformation. If we choose "affine" as registration model, then we will be able to regularize:
-
+[[Image:RVS_regularization_params.png|thumb|200px| Shrinkage regularization parameters ]]
 * the [http://en.wikipedia.org/wiki/Shear_mapping shear],
 * the [http://en.wikipedia.org/wiki/Scaling_(geometry) scaling],
 * and the [http://en.wikipedia.org/wiki/Isotropy isotropy] or aspect ratio.
