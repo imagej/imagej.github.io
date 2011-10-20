@@ -1,0 +1,50 @@
+For imaged from optical microscopes, frrom a colocalization perspective....
+
+*Objective lenses are never perfect, not even really expensive ones that claim multi color chromatic correction. 
+When it comes to imaging diffraction limited objects with a 1.4 NA lens on a widefield system
+there will still be a unique colour shift in all three spatial dimensions for that particular lens, 
+and even how it is screwed in.
+
+*Also the alignment of the fluorescence filters in different cubes might bend different channels to slightly different places on the detector. 
+On the OMX you can even adjust this... normally its fixed on most systems but might also be tweakable. 
+
+*Olympus does all the chromatic correction in the lens, but others do some in the tube lens. 
+This is why its not a good idea to screw a Zeiss c-apochromat 100x 1.6 oil into an olympus stand.
+
+*So we are left with a systematic error that can be measured, actually to a precision of 10s of nm by Gaussian fitting bead images (like you do in PALM/SSTOR type super resolution and single molecule tracking. )
+
+*On a single point scanning confocal the matter is made worse by the more complicated optics. 
+The Zeiss 510 has a different pinhole per channel... and depending on their positions and correct setup, 
+the images of the bead in different channels is also affected by pinhole position settings. 
+
+*Nowadays with the Zeiss 7xx series and on the Olympus FV1000 and other modern point scanners there is only 1 pinhole
+for the emission light, so that problem is suppressed.  
+BUT, the 405 lasers come in through a different fibre than the Vis lasers.. and so there is a collimation adjustment to make
+Same for 2photon lasers.... getting the near UV and IR laser spots to coincide exactly with the vis lines is hard... so its best to get is as close as is reasonable to do, then measure the residual error then correct for it. 
+
+*There always remain measurable errors (unless you were really really lucky and happen to have a perfect lens, which is a 1 in a 1000 chance at best, plus perfectly aligned fluorescence filters)
+
+*OK, so at the simple level, we can assume that the whole field of view is shifted by some 3D shift per channel compared to the reference, usually green channel. So if we measure a few 1 or  0.5 or so micron beads (no need to use tiny beads here) near the centre of the field of view (where optics are best) we can calculate or guestimate  the center of mass of the bead images in each channel, and work out the shift vectors needed. These will be  between 10-1000 nm in xy and up to 500 or even 2000 micron in z. 
+BUT, they will never be whole xy pixels or z slice shifts... forget that idea its too crude.
+
+*see the 2 slides titled 
+"Check with multi-colour beads"
+at [http://ifn.mpi-cbg.de/wiki/ifn/images/0/0d/QuantitativeColocAnalysis-12-2010.pdf]
+
+*Now we can use Erik M's TransformJ Translate plugin in Fiji/ImageJ to do a sub pixel resolution shift for for each channel, as we have measured those shifts. 
+[http://www.imagescience.org/meijering/software/transformj/translate.html]
+Use a nice interpolation method to avoid smashing the information in your images - eg quintic B-spline interpolation
+Or one could imaging a Fourier based method... (using a phase shift?) THe 3D stitching plugin contains stuff that might do this but its not exposed in the GUIs... so scripting would be required there. 
+
+*Moving the images using a whole pixel or z plane shift will not be precise enough for high res colocalization analysis. 
+
+*At a higher level there may also be a magnification difference between the different colour channels. 
+On multi camera systems, like OMX or some HCS system there WILL be a rotation angle difference between the channel images. 
+TransformJ Affine plugin  might do the job,  which can also expand or shrink to e image to accommodate different magnification and rotation. 
+
+*Even worse could be  a non linear warp of the image that is different per channel. 
+Again these are measurable and fixable with some effort, eg using bUnwarpJ
+
+*So depending how precise you need to be, over how large a field of view... the difficulty of the correction varies. 
+
+*We could add this kind of colour shift correction to the  new Coloc_2 plugin... by reusing TransformJ and maybe also bUnwarpJ. Any takers?
