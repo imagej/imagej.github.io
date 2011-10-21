@@ -15,6 +15,7 @@ Just copy/paste it in the [[Script Editor]] or save it into a .bsh file and run 
  */
 
 import trainableSegmentation.*;
+import trainableSegmentation.metrics.*;
 
 // Get the list of images that are open
 ids = WindowManager.getIDList();
@@ -63,31 +64,34 @@ threshold = ( double )gd.getNextNumber();
 
 IJ.log("---");
 IJ.log("Evaluating segmentation...");
-IJ.log("  Original labels: " + originalLabels.getTitle());
-IJ.log("  Proposed labels: " + proposedLabels.getTitle());
-IJ.log("  Threshold: " + threshold);
+IJ.log("  Original labels: " + originalLabels.getTitle() );
+IJ.log("  Proposed labels: " + proposedLabels.getTitle() );
+IJ.log("  Threshold: " + threshold );
 
 // Calculate segmentation error with the selected metrics
 
 if( calculatePixelError )
 {
-	IJ.log("Calculating pixel error...");
-	pixelError = WekaSegmentation.pixelError( originalLabels, proposedLabels, 0.5);
+	IJ.log("Calculating pixel error..." );
+	metric = new PixelError( originalLabels, proposedLabels );
+	pixelError = metric.getMetricValue( threshold );
 	IJ.log("  Pixel error = " + pixelError);
 }
 
 if( calculateWarpingError )
 {
-	IJ.log("Calculating warping error...");
-	warpingError = WekaSegmentation.warpingError( originalLabels, proposedLabels, null, threshold );
-	IJ.log("  Warping error = " + warpingError);
+	IJ.log("Calculating warping error..." );
+	metric = new WarpingError( originalLabels, proposedLabels, null );    
+	warpingError = metric.getMetricValue( threshold );
+	IJ.log("  Warping error = " + warpingError );
 }
 
 if( calculateRandError )
 {
-	IJ.log("Calculating Rand error...");
-	randError = WekaSegmentation.randError( originalLabels, proposedLabels, 0.5 );
-	IJ.log("  Rand error = " + randError);
+	IJ.log("Calculating Rand error..." );
+	metric = new RandError( originalLabels, proposedLabels );
+	randError = metric.getMetricValue( threshold );
+	IJ.log("  Rand error = " + randError );
 }
 		
 </source>
