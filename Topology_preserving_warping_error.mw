@@ -92,13 +92,13 @@ The '''warping error''' can be distinguished from the [[Rand error]] in other re
 The warping error metric is implemented for 2D images in the [[Advanced Weka Segmentation]] library. Here is an example of how to use it in [[Beanshell_Scripting|Beanshell script]]:
 
 <source lang=java>
-import trainableSegmentation.WekaSegmentation;
+import trainableSegmentation.metrics.WarpingError;
 
 // original labels
 originalLabels = IJ.openImage("/path/original-labels.tif");
 
 // proposed (new) labels
-proposal = IJ.openImage("/path/proposed-labels.tif");
+proposedLabels = IJ.openImage("/path/proposed-labels.tif");
 
 // mask with geometric constraints
 mask = IJ.openImage("/path/mask.tif");
@@ -106,10 +106,12 @@ mask = IJ.openImage("/path/mask.tif");
 // threshold to binarize labels (just in case they are not binary)
 threshold = 0.5;
 
-warpingError = WekaSegmentation.warpingError( originalLabels, proposal, mask, threshold);
+metric = new WarpingError( originalLabels, proposedLabels, mask );
+
+warpingError = metric.getMetricValue( threshold );
 
 IJ.log("Warping error between source image " + originalLabels.getTitle() + " and target image " 
-+ proposal.getTitle() + " = " + warpingError);
++ proposedLabels.getTitle() + " = " + warpingError);
 
 </source>
 
