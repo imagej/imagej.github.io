@@ -39,7 +39,7 @@ In order to evaluate and rank the performances of the participant methods, we wi
 
 The metrics are:
 
-* Minimum Splits and Mergers Warping error, a segmentation metric penalizes topological disagreements, in this case, the object splits and mergers.
+* [[Minimum Splits and Mergers Warping error]], a segmentation metric that penalizes topological disagreements, in this case, the object splits and mergers.
 * Maximal F-score of Rand index, a measure of similarity between two clusters or segmentations.
 * [[Topology_preserving_warping_error#Pixel_error|Pixel error]], or squared Euclidean distance between the original and the result labels.
 
