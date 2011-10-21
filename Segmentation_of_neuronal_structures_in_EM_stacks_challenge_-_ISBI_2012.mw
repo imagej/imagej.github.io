@@ -37,11 +37,12 @@ The test data is another volume from the same Drosophila first instar larva VNC.
 ==Evaluation metrics==
 In order to evaluate and rank the performances of the participant methods, we will use topology-based segmentation metrics, together with the pixel error. Each metric will have an updated leader-board. 
 
-The metric are:
+The metrics are:
 
-* [[Topology preserving warping error|Warping error]], a segmentation metric that tolerates disagreements over boundary location and penalizes topological disagreements.
+* Minimum Splits & Mergers Warping error, a segmentation metric penalizes topological disagreements, in this case, the object splits and mergers.
+* Maximal F-score of Rand index, a measure of similarity between two clusters or segmentations.
 * [[Topology_preserving_warping_error#Pixel_error|Pixel error]], or squared Euclidean distance between the original and the result labels.
-* [[Rand error]], a measure of dissimilarity between two clusters or segmentations.
+
 
 If you want to apply these metrics yourself to your own results, you can do it within Fiji using this [[Segmentation evaluation metrics - Script|script]].
 
