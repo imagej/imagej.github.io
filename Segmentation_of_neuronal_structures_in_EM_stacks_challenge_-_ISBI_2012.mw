@@ -1,7 +1,7 @@
 [[Image:Challenge-ISBI-2012-sample-image.png|thumb|500px|Example of ssTEM image and its corresponding segmentation]]In this '''challenge''', a full stack of EM slices will be used to train [http://en.wikipedia.org/wiki/Machine_learning machine learning] algorithms for the purpose of automatic segmentation of neural structures. 
 
 
-The images are representative of actual images in the real-world, containing some noise and small image alignment errors. None of these problems led to any difficulties in the manual labeling of each element in the image stack by an expert human neuroanatomist. The aim of the challenge is to compare and rank the different competing methods based on their pixel and object classification accuracy.
+The images are representative of actual images in the real-world, containing some noise and small image alignment errors. None of these problems led to any difficulties in the manual labeling of each element in the image stack by an [http://albert.rierol.net expert human neuroanatomist]. The aim of the challenge is to compare and rank the different competing methods based on their pixel and object classification accuracy.
 
 
 
