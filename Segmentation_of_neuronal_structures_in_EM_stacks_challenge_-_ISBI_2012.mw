@@ -54,4 +54,34 @@ We understand that segmentation evaluation is an ongoing and sensitive research 
 * [http://albert.rierol.net/ Albert Cardona] (Institute of Neuroinformatics, Uni/ETH Zurich, Switzerland)
 * [[User:Schindelin | Johannes Schindelin]] (University of Wisconsin, WI, USA)
 
+==References==
+Publications about the data:
+
+* {{Cite journal
+  | author = Albert Cardona, Stephan Saalfeld, Stephan Preibisch, Benjamin Schmid, Anchi Cheng, Jim Pulokas, Pavel Tomancak and Volker Hartenstein
+  | title = An Integrated Micro- and Macroarchitectural Analysis of the ''Drosophila'' Brain by Computer-Assisted Serial Section Electron Microscopy
+  | journal = PLoS Biol
+  | year = 2010
+  | volume = 8
+  | pages = e1000502
+  | number = 10
+  | month = 10,
+  | doi = 10.1371/journal.pbio.1000502
+  | publisher = Public Library of Science
+  | url = http://dx.doi.org/10.1371%2Fjournal.pbio.1000502
+}}
+
+Publications about the metrics:
+* {{cite journal
+  |author = V. Jain, B. Bollmann, M. Richardson, D.R. Berger, M.N. Helmstaedter, K.L. Briggman, W. Denk, J.B. Bowden, J.M. Mendenhall, W.C. Abraham, K.M. Harris, N. Kasthuri, K.J. Hayworth, R. Schalek, J.C. Tapia, J.W. Lichtman, S.H. Seung
+  | title = Boundary Learning by Optimization with Topological Constraints
+  | booktitle = 2010 IEEE CONFERENCE ON COMPUTER VISION AND PATTERN RECOGNITION
+	(CVPR)
+  |  year = 2010
+  |  series = IEEE Conference on Computer Vision and Pattern Recognition
+  |  pages = 2488-2495
+  |  organization = IEEE Comp Soc
+  |  doi = 10.1109/CVPR.2010.5539950
+}}
+
 [[Category:Segmentation]]
