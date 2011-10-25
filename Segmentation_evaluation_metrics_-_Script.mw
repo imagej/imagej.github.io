@@ -6,93 +6,93 @@ Just copy/paste it in the [[Script Editor]] or save it into a .bsh file and run 
 /**
  * Script to calculate the segmentation error between some 2D 
  * original labels and their corresponding proposed labels. 
+ * 
  * The evaluation metrics are:
- *  - Pixel error
- *  - Warping error
- *  - Rand error
+ *  - Maximal F-score of pixel error
+ *  - Minimum Splits & Mergers Warping error
+ *  - Maximal F-score of Rand index
  * 
  * @author Ignacio Arganda-Carreras (iarganda@mit.edu)
  */
-
-import trainableSegmentation.*;
+ 
 import trainableSegmentation.metrics.*;
 
+ 
 // Get the list of images that are open
 ids = WindowManager.getIDList();
-
+ 
 if ( ids == null || ids.length < 2 )
 {
-	IJ.showMessage( "You should have at least two images open." );
-	return;
+    IJ.showMessage( "You should have at least two images open." );
+    return;
 }
-
-// Get all the titles of the open images		
+ 
+// Get all the titles of the open images        
 titles = new String[ ids.length ];
 for ( int i = 0; i < ids.length; ++i )
 {
-	titles[ i ] = ( WindowManager.getImage( ids[ i ] ) ).getTitle();
+    titles[ i ] = ( WindowManager.getImage( ids[ i ] ) ).getTitle();
 }
-
-// Create dialog		
+ 
+// Create dialog        
 gd = new GenericDialog( "Evaluate segmentation results" );
-		
+         
 gd.addMessage( "Image Selection:" );
 current = WindowManager.getCurrentImage().getTitle();
 gd.addChoice( "Original_labels", titles, current );
 gd.addChoice( "Proposal", titles, current.equals( titles[ 0 ] ) ? titles[ 1 ] : titles[ 0 ] );
-		
+         
 gd.addMessage( "Segmentation error metrics:" );
-gd.addCheckbox( "Pixel_error", true );
-gd.addCheckbox( "Warping_error", true );
-gd.addCheckbox( "Rand_error", true );
+gd.addCheckbox( "Maximal F-score pixel_error", true );
+gd.addCheckbox( "Minimum split-mergers ratio", true );
+gd.addCheckbox( "Maximal F-Score Rand index", true );
 
-gd.addMessage( "Parameters:" );
-gd.addNumericField( "Binary_threshold:", 0.5, 2 );
 gd.showDialog();
-		
+         
 if (gd.wasCanceled()) 
-	return;
-		
+    return;
+         
 originalLabels = WindowManager.getImage( ids[ gd.getNextChoiceIndex() ] );
 proposedLabels = WindowManager.getImage( ids[ gd.getNextChoiceIndex() ] );
-
+ 
 calculatePixelError = gd.getNextBoolean();
 calculateWarpingError = gd.getNextBoolean();
 calculateRandError = gd.getNextBoolean();
-		
-threshold = ( double )gd.getNextNumber();
-
+         
+ 
 IJ.log("---");
 IJ.log("Evaluating segmentation...");
-IJ.log("  Original labels: " + originalLabels.getTitle() );
-IJ.log("  Proposed labels: " + proposedLabels.getTitle() );
-IJ.log("  Threshold: " + threshold );
+IJ.log("  Original labels: " + originalLabels.getTitle());
+IJ.log("  Proposed labels: " + proposedLabels.getTitle() + "\n");
 
+ 
 // Calculate segmentation error with the selected metrics
-
+ 
 if( calculatePixelError )
 {
-	IJ.log("Calculating pixel error..." );
-	metric = new PixelError( originalLabels, proposedLabels );
-	pixelError = metric.getMetricValue( threshold );
-	IJ.log("  Pixel error = " + pixelError);
+    IJ.log("\nCalculating maximal F-score of pixel error...");
+    metric = new PixelError( originalLabels, proposedLabels );
+    maxFScore = metric.getPixelErrorMaximalFScore( 0.0, 1.0, 0.1 );	
+    IJ.log("Best F-score: " + maxFScore ); 
 }
 
 if( calculateWarpingError )
 {
-	IJ.log("Calculating warping error..." );
-	metric = new WarpingError( originalLabels, proposedLabels, null );    
-	warpingError = metric.getMetricValue( threshold );
-	IJ.log("  Warping error = " + warpingError );
+    IJ.log("\nCalculating warping error by minimizing splits and mergers...");
+    metric = new WarpingError( originalLabels, proposedLabels );    
+    warpingError = metric.getMinimumSplitsAndMergersErrorValue( 0.0, 0.9, 0.1, false );
+    IJ.log("  Warping error = " + warpingError);
+    IJ.log("  # errors (splits + mergers pixels) = " + Math.round(warpingError * originalLabels.getWidth() * originalLabels.getHeight() * originalLabels.getImageStackSize() ) );
+}
+ 
+if( calculateRandError )
+{   
+    IJ.log("\nCalculating maximal F-score of Rand index...");
+    metric = new RandError( originalLabels, proposedLabels );
+    maxFScore = metric.getRandIndexMaximalFScore( 0.0, 1.0, 0.1 );	
+    IJ.log("Best F-score: " + maxFScore );    
 }
 
-if( calculateRandError )
-{
-	IJ.log("Calculating Rand error..." );
-	metric = new RandError( originalLabels, proposedLabels );
-	randError = metric.getMetricValue( threshold );
-	IJ.log("  Rand error = " + randError );
-}
 		
 </source>
 
