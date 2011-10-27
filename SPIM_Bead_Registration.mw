@@ -31,6 +31,8 @@ The bead-registration plugins offers two registration options:
 * Single-channel
 * Multi-channel (same beads are visible in different channels)
 
-The typical option is single-channel registration, even if you want to process a multi-channel acquisitions. You can apply the registration of one channel later to other channels in the [[Multi-view fusion plugin]]. Multi-channel registration is only required if the '''same beads''' are visible in several channels. 
+The typical option is single-channel registration, even if you want to process a multi-channel acquisitions. You can apply the registration of one channel later to other channels in the [[multi-view fusion plugin]]. Multi-channel registration is only required if the '''same beads''' are visible in several channels. 
 
 Both options work in the exactly same way and have very similar options. The additional options of multi-channel registration are explained in the last section.
+
+'''Important note:'''The output of the plugin are not images, but only registration matrices that serve as basis for either [[multi-view fusion plugin]] or the [[multi-view deconvolution plugin]].
