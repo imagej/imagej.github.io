@@ -46,7 +46,7 @@ Processing a time lapse acquisition requires two steps. In the first step the re
 
 After all individual timepoints are registered and the cropping area is defined the plugin has to be called again. This time check '''Timelapse Registration''', insert the '''Reference Timepoint''', uncheck '''Register only (no fusion)''' and insert the coordinates of the cropping area of the reference timepoint. The created output images can be viewed for example with Plugins->Image5D->Virtual Image 5D Opener [http://rsbweb.nih.gov/ij/plugins/image5d.html].
 
-== SPIM Registration ==
+== '''''deprecated''''' SPIM bead-based registration ==
 [[Image:SPIM Registration.png|thumb|216px|Shows the SPIM Registration Dialog.]]
 
 * '''SPIM Data Directory''': Fill in the directory name that contains all the image files. You can either drag&drop the directory, browse for it or type the name directly.
