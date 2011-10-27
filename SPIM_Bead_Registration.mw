@@ -35,4 +35,4 @@ The typical option is single-channel registration, even if you want to process a
 
 Both options work in the exactly same way and have very similar options. The additional options of multi-channel registration are explained in the last section.
 
-'''Important note:'''The output of the plugin are not images, but only registration matrices that serve as basis for either [[multi-view fusion plugin]] or the [[multi-view deconvolution plugin]].
+'''''Important note:''' the output of the plugin are not images, but only registration matrices that serve as basis for either [[multi-view fusion plugin]] or the [[multi-view deconvolution plugin]].''
