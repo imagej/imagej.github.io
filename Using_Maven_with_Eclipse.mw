@@ -24,7 +24,7 @@ Restart Eclipse.
 
 == Configure Eclipse (Windows only) ==
 
-On Windows, you will need to launch Eclipse with the "-vm" flag pointing to an installation of the Java Development Kit (JDK).
+On Windows, you will need to configure Eclipse to use the Java Development Kit (JDK).
 
 First, download and install JDK 6 from the Java web site.
 
@@ -32,11 +32,7 @@ Take note of where the Java installation ended up; we will use "C:\Program Files
 
 Also take note of the path to your Eclipse installation; we will use "C:\Users\you\Programs\eclipse" though your path is likely to be different. 
 
-Next, create a shortcut to eclipse.exe that points to your installed JDK:
-* Right-click the Desktop, New, Shortcut
-* In the box, specify: "C:\Users\you\Programs\eclipse\eclipse.exe" -vm "C:\Program Files\Java\jdk1.6.0_20\bin"
-* Click Next, name the shortcut "Eclipse" and click Finish
-* Use this shortcut whenever you launch Eclipse; add to the Start menu or taskbar if you wish
+Open the file "C:\Users\you\Programs\eclipse\eclipse.ini" in a text editor, and follow [http://wiki.eclipse.org/Eclipse.ini#Specifying_the_JVM these instructions] to specify the JVM using the "-vm" flag. Be careful to follow the instructions exactly.
 
 Now update Eclipse's JRE to be JDK-aware:
 * Launch Eclipse
