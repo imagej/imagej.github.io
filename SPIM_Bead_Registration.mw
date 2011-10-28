@@ -41,11 +41,11 @@ Both options work in the exactly same way and have very similar options. The add
 
 [[Image:Spim beads singlechannel.jpg|thumb|260px|Shows the dialog for the bead-based registration]]
 
-* '''SPIM Data Directory''': Fill in the directory name that contains all the image files. You can either drag&drop the directory, browse for it or type the name directly.
-
-* '''Time Points to process''': Define the timepoint(s) that should be processed. You can give single numbers (e.g. 18), enumerate (e.g. 1, 18, 19, 100), define ranges (e.g. 1-18) or combine all of them in any combination wanted (e.g. 1,2,10,20-50).
+* '''SPIM Data Directory''': Fill in the directory name that contains all the image files (or directories with equally sized 2d image planes). You can either drag&drop the directory, browse for it or type the name directly.
 
 * '''Pattern of SPIM files''': Define the naming convention of the input files by explaining how the angle and the timepoint is encoded into the filename. For example the file names are named in following way <br>''spim_tl1_angle0.lsm'', ''spim_tl1_angle45.lsm'' ... ''spim_tl1_angle270.lsm''<br>''spim_tl2_angle0.lsm'', ... ''spim_tl2_angle270.lsm''<br>''spim_tl100_angle0.lsm'', ... ''spim_tl100_angle270.lsm''.<br> That means the pattern of the file names corresponds to '''spim_tl{t}_angle{a}.lsm''', where '''{t}''' is replaced with the current timepoint and '''{a}''' with the current angle. If the numbers contain leading zeros (e.g. 000, 045, 090, 135 instead of 0, 45, 90, 135), this can be encoded by simply adding more letters to the placeholder, in this case '''{aaa}'''.
+
+* '''Time Points to process''': Define the timepoint(s) that should be processed. You can give single numbers (e.g. 18), enumerate (e.g. 1, 18, 19, 100), define ranges (e.g. 1-18) or combine all of them in any combination wanted (e.g. 1,2,10,20-50).
 
 * '''Angles to process''': Define the angles (at least 2) that should be processed (for each timepoint if applicable). You can enumerate angles (e.g. 0, 90, 180, 270), define ranges in steps (e.g. 0-270:45 which means use angle 0 to 270 in steps of 45, i.e. 0, 45, 90, 135, 180, 225, 270) or combine all of them in any combination wanted (e.g. 0, 45, 180-270:45).
 
