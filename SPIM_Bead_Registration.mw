@@ -64,16 +64,10 @@ Both options work in the exactly same way and have very similar options. The add
 * '''Transformation model''': Choose the transformation model that will be used to align the datasets to each other, you have three choices:
 ** ''Translation'': correct for three-dimensional shift
 ** ''Rigid'': correct for three-dimensional shift and rotation, this option will additionally output an estimate of the rotation axis and rotation angle for each view
-** ''Affine'': correct for three-dimensional shift, rotation, shearing and anisotropic scaling, this model best describes the degrees of freedom of SPIM registration
+** ''Affine'': correct for three-dimensional shift, rotation, shearing and anisotropic scaling, this transformation model best describes the degrees of freedom of SPIM registration
 
-* '''Timelapse processing''': Checked if a timelapse processing should be performed. In this case the '''pre-registered''' timepoints are re-registered to one reference timepoint which results in an aligned time series.
+* '''Re-use per timepoint registration''': Loads the registration for each individual timepoint. This is basically only interesting if you perform a timelapse registration.
 
-* '''Reference Timepoint''': Define the reference timepoint for timelapse processing if timelapse processing above is checked.
+* '''Timelapse registration''': Checked if a timelapse registration should be performed. In this case the '''pre-registered''' individual timepoints are re-registered to one reference timepoint, which results in an aligned time series.
 
-* '''Load segmented beads''': If the registration of the time point is carried out more than once (to recompute the registration) the initial segmentation of the beads can be loaded to speed up processing. Note: if '''Load registration''' is checked, '''Load segmented beads''' is implicitly checked as well.
-
-* '''Bead Brightness''': Define the brightness of the used beads relative to the sample.
-
-* '''Load Registration''': If the registration of the time point is carried out more than once (either to define the correct cropping area or to perform timelapse processing) the initial segmentation of the beads and the final affine matrices of the views can be loaded to speed up processing. Note: if '''Load registration''' is checked, '''Load segmented beads''' is implicitly checked as well and '''Display registration''' will be ignored.
-
-* '''Register only (no fusion)''': Checked if no fusion of the data should be performed.
+* '''Select reference timepoint''': The reference timepoint can either be selected automatically based on the quality of the individual timepoint registrations or you can choose it yourself (see section timelapse registration).
