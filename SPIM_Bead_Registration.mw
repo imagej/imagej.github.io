@@ -71,3 +71,9 @@ Both options work in the exactly same way and have very similar options. The add
 * '''Timelapse registration''': Checked if a timelapse registration should be performed. In this case the '''pre-registered''' individual timepoints are re-registered to one reference timepoint, which results in an aligned time series.
 
 * '''Select reference timepoint''': The reference timepoint can either be selected automatically based on the quality of the individual timepoint registrations or you can choose it yourself (see section timelapse registration).
+
+== How timelapse registration works ==
+
+Processing a timelapse acquisition works in two steps. In the first step the registration for each individual timepoint will be computed and automatically stored. Based on these results, a reference timepoint will be selected either manually or automatically (see figure). Based on the selected timepoint, all other timepoints of the series will be registered relative to it. For fusing the data, the cropping area has to be defined in this timepoint.
+
+The created output images can be viewed for example with Plugins->Image5D->Virtual Image 5D Opener [http://rsbweb.nih.gov/ij/plugins/image5d.html].
