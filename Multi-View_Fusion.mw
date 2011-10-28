@@ -64,3 +64,14 @@ In the second dialog, you have to define the details of the multi-view fusion. I
 ** ''Fuse all images at once'' loads all the input images and computes the output image. This is the fastest method, but it also needs significant amounts of RAM. 
 ** ''Fuse images sequentially'' loads one input image after the other and computes the contribution sequentially. This is slower but typically uses less RAM. However, this methods needs to allocate the output image twice during the fusion process as it needs to store image content and weights separately. 
 ** ''Create independent registered images'' is a special output option where each view is transformed and saved individually, where all output images have the same bounding box. This option can be for example used to asses the registration quality by overlaying them afterwards.
+
+* '''Apply blending''': Check this if you want to apply blending at the edges of the overlapping views; this removes brightness differences at the hyperplanes where the overlapping images intersect. '''Note:''' If neither blending nor content-based weightening is selected, only normal averaging is performed for fusion.
+
+* '''Apply content-based weightening''': Check this if the content-based weightening should be used; this weights each pixel of each view by its local information content and thereby increases the contrast of the output image. '''Note:''' The content based weightening is rather fast but consumes a lot of RAM.
+
+'''Note:''' Blending and content-based fusion can be combined!
+
+* '''Output Image Scaling''': The factor defines the downsampling of the output image, e.g. 2 means that the output image will be half as big in each dimension and therefore need 8x less RAM than the full resolution output image. This is especially useful if the bounding box around the imaged sample (defined below) is not known yet as has to be determined.
+
+* '''Crop Offset Output Image X/Y/Z''': Defines the cropping offset in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping. '''Note:''' All the values are relative to the downsampling factor in '''Output Image Scaling'''.
+* '''Crop Size Output Image X/Y/Z''': Defines the cropped size in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping. '''Note:''' All the values are relative to the downsampling factor in '''Output Image Scaling'''.
