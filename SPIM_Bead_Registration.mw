@@ -52,12 +52,19 @@ Both options work in the exactly same way and have very similar options. The add
 * '''Re-use segmented beads''': If beads of all input stacks have been segmented in a previous run, they can be loaded here.
 
 * '''Bead brightness''': If the beads are not loaded, define their approximate brightness, you have the following options:
-** Very weak: the beads are hardly or not visible relative to the intensity of the imaged specimen
-** Weak: the beads are visible, but not as bright as the sample
-** Comparable to sample: the beads are as bright or slightly brighter than the sample
-** Strong: the beads are significantly brighter than the sample (you should consider using differently colored beads)
-** Advanced...: you know the parameters for the difference-of-gaussian detector, most likely from a previous run of the interactive tool. Note that a new window will pop up to query the parameters
-** Interactive...: an i
+** ''Very weak'': the beads are hardly or not visible relative to the intensity of the imaged specimen
+** ''Weak'': the beads are visible, but not as bright as the sample
+** ''Comparable to sample'': the beads are as bright or slightly brighter than the sample
+** ''Strong'': the beads are significantly brighter than the sample (you should consider using differently colored beads)
+** ''Advanced...'': you know the parameters for the difference-of-gaussian detector, most likely from a previous run of the interactive tool. Note that a new window will pop up to query the parameters
+** ''Interactive...'': an interactive tool will allow you to set the approximate parameters for your dataset
+
+* '''Override file dimensions''': If you know the calibration of your dataset you can enter it here and prevent the plugin from opening the file to determine the calibration that is stored (and which might be incorrect)
+
+* '''Transformation model''': Choose the transformation model that will be used to align the datasets to each other, you have three choices:
+** ''Translation'': correct for three-dimensional shift
+** ''Rigid'': correct for three-dimensional shift and rotation, this option will additionally output an estimate of the rotation axis and rotation angle for each view
+** ''Affine'': correct for three-dimensional shift, rotation, shearing and anisotropic scaling, this model best describes the degrees of freedom of SPIM registration
 
 * '''Timelapse processing''': Checked if a timelapse processing should be performed. In this case the '''pre-registered''' timepoints are re-registered to one reference timepoint which results in an aligned time series.
 
