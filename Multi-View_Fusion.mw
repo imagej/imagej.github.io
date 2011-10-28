@@ -16,21 +16,14 @@ Please note that the multi-view fusion plugin available through Fiji, is based o
 
 == Overview of the multi-view fusion plugin ==
 
-The multi-view fusion plugin is able to combine several 3d acquistions of the same specimen taken from different viewpoints (this includes different tiles) into one single output image . This can be done for single timepoints or an entire timeseries. Prerequisite for the fusion is an aligned dataset, which can be done using one of the plugins:
+The multi-view fusion plugin is able to combine several 3d acquistions of the same specimen taken from different viewpoints (this includes different tiles) into one single output image. This can be done for single timepoints or an entire timeseries. Prerequisite for the fusion is an aligned dataset, an overview of the complete registration and fusion process can be found [[SPIM_Registration|here]]. The registration can be achieved using one the following plugins:
 
 * [[SPIM_Bead_Registration|Bead-based registration]]
 * [[Segmentation-based registration]]
-
-An overview of the complete registration and fusion process can be found [[SPIM_Registration|here]].
-
 
 The multi-view fusion plugins offers two registration options:
 
 * Single-channel
 * Multi-channel
 
-
-
-The typical option is single-channel registration, even if you want to process a multi-channel acquisitions. You can apply the registration of one channel later to other channels in the [[Multi-View_Fusion|multi-view fusion plugin]]. Multi-channel registration is only required if the '''same beads''' are visible in several channels. 
-
-Both options work in the exactly same way and have very similar options. The additional options of multi-channel registration are explained in the last section.
+Note, that in order to fuse a multi-channel acquisition, a single-channel registration can be sufficient as the registration of one channel can be applied to other channels of the same timepoint. Both options work in the same way and have very similar options. The additional options of multi-channel registration are explained in the last section.
