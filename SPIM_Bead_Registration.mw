@@ -79,3 +79,7 @@ Both options work in the exactly same way and have very similar options. The add
 Processing a timelapse acquisition works in two steps. In the first step the registration for each individual timepoint will be computed and automatically stored. Based on these results, a reference timepoint will be selected either manually or automatically (see figure). Note that the panel will be also displayed when choosing automatic reference timepoint selection, but it cannot be changed. Based on the selected timepoint, all other timepoints of the series will be registered relative to it which leads to a properly aligned timeseries. 
 
 For fusing the data, the cropping area has to be defined in the reference timepoint. Therefore, the reference timepoint should be fused individually once, and afterwards the whole timeseries can be fused.
+
+== Multichannel registration ==
+
+The multi-channel registration will offer another field in which the channels that contain the same beads can be selected. In the file name pattern channels are coded as {c}, just as timepoints or angles. In the field '''Channels containing beads''' you can define the channels to process. You can give single numbers (e.g. 0), enumerate (e.g. 1, 2), define ranges (e.g. 1-3) or combine all of them in any combination wanted (e.g. 1,3-4). The bead brightness for each individual channel will be queried in individual dialogs afterwards.
