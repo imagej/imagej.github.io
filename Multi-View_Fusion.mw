@@ -28,9 +28,11 @@ The multi-view fusion plugins offers two registration options:
 
 Note, that in order to fuse a multi-channel acquisition, a single-channel registration can be sufficient as the registration of one channel can be applied to other channels of the same timepoint. Both options work in the same way and have very similar options. The additional options of multi-channel registration are explained in the last section.
 
-=== Creating a cropped output image ===
+== Creating a cropped output image ==
 
-As the output images are typically very large, as the plugin by default fused the complete bounding box around all registered views. Therefore, it is strongly recommended to define a cropping area where only the imaged sample is positioned in the output image. If you do not have enough memory to create an uncropped output image, there is an option to first create a down-sampled version of the output image in which you can identify the cropping area. In a second run, you can create the fused image with full resolution only for the cropped area that contains the specimen. Note that when you define the cropping area in a downsampled image, you need to adjust the the values to the original scale. That is, if you downsample 2-fold, you have to multiply all coordinates by 2.
+The output images are typically very large, as the plugin by default fuses the complete bounding box around all registered views. Therefore, it is recommended to define a cropping area in the output image that contains only the sample.
+
+If you do not have enough memory to create an uncropped output image, there is an option to first create a down-sampled version of the output image in which you can identify the cropping area. In a second run, you can create the fused image with full resolution only for the cropped area that contains the specimen. Note that when you define the cropping area in a downsampled image, you need to adjust the the values to the original scale. That is, if you downsample 2-fold, you have to multiply all coordinates by 2.
 
 == What do I have to consider when I want to fuse a timeseries? ==
 
