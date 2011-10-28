@@ -79,6 +79,6 @@ In the second dialog, you have to define the details of the multi-view fusion. I
 
 * '''Display output image:''' Display the fused image(s) when finished. Be careful when checking this button and performing a timelapse registration.
 
-* '''Save output image:''' Write the fused image(s) to disk when finished. It will save the output image(s) as a collection of two-dimensional planes. The created output images can be viewed for example with Plugins->Image5D->[http://rsbweb.nih.gov/ij/plugins/image5d.html Virtual Image 5D Opener] or via the [http://www.loci.wisc.edu/software/bio-formats LOCI Bioformats Importer].
+* '''Save output image:''' Write the fused image(s) to disk when finished. It will save the output image(s) as a collection of two-dimensional planes. The created output images can be viewed for example with Plugins->Image5D->[http://rsbweb.nih.gov/ij/plugins/image5d.html Virtual Image 5D Opener] or via the Plugins->LOCI->[http://www.loci.wisc.edu/software/bio-formats LOCI Bioformats Importer].
 
 '''Note:''' Unchecking both options will not produce any result!
