@@ -51,3 +51,9 @@ The multi-view fusion consists of two consecutive dialogs. The first dialog quer
 * '''Timepoints to process''': Define the timepoint(s) that should be processed. You can give single numbers (e.g. 18), enumerate (e.g. 1, 18, 19, 100), define ranges (e.g. 1-18) or combine all of them in any combination wanted (e.g. 1,2,10,20-50).
 
 * '''Angles to process''': Define the angles (at least 2) that should be processed (for each timepoint if applicable). You can enumerate angles (e.g. 0, 90, 180, 270), define ranges in steps (e.g. 0-270:45 which means use angle 0 to 270 in steps of 45, i.e. 0, 45, 90, 135, 180, 225, 270) or combine all of them in any combination wanted (e.g. 0, 45, 180-270:45).
+
+After entering the data the program will check which kind of registrations are available for each channel. Typically, the individual registration for each channel is available, and maybe also several timeseries registration with various reference timepoints. If no registration files could be found, the plugin will quit.
+
+[[Image:Spim multiview dialog2.jpg|thumb|300px|Shows the second dialog that queries the details of the multi-view fusion]]
+
+In the second dialog, you have to define the details of the multi-view fusion.
