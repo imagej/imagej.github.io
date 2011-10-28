@@ -71,7 +71,8 @@ In the second dialog, you have to define the details of the multi-view fusion. I
 
 '''Note:''' Blending and content-based fusion can be combined!
 
-* '''Output Image Scaling''': The factor defines the downsampling of the output image, e.g. 2 means that the output image will be half as big in each dimension and therefore need 8x less RAM than the full resolution output image. This is especially useful if the bounding box around the imaged sample (defined below) is not known yet as has to be determined.
+* '''Downsample image n-times''': The factor defines the downsampling of the output image, e.g. 2 means that the output image will be half as big in each dimension and therefore need 8x less RAM than the full resolution output image. This is especially useful if the bounding box around the imaged sample (defined below) is not known yet as has to be determined.
 
-* '''Crop Offset Output Image X/Y/Z''': Defines the cropping offset in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping. '''Note:''' All the values are relative to the downsampling factor in '''Output Image Scaling'''.
-* '''Crop Size Output Image X/Y/Z''': Defines the cropped size in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping. '''Note:''' All the values are relative to the downsampling factor in '''Output Image Scaling'''.
+* '''Crop output image offset x/y/z''': Defines the offset of the cropping area (bounding box) in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping. '''Note:''' All the values are relative to the downsampling factor in '''Downsample image n-times'''.
+
+* '''Crop output image size x/y/z''': Defines the size of the cropping area (bounding box) in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping. '''Note:''' All the values are relative to the downsampling factor in '''Downsample image n-times'''.
