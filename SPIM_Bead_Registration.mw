@@ -66,7 +66,7 @@ Both options work in the exactly same way and have very similar options. The add
 ** ''Rigid'': correct for three-dimensional shift and rotation, this option will additionally output an estimate of the rotation axis and rotation angle for each view
 ** ''Affine'': correct for three-dimensional shift, rotation, shearing and anisotropic scaling, this transformation model best describes the degrees of freedom of SPIM registration
 
-* '''Re-use per timepoint registration''': Loads the registration for each individual timepoint. This is basically only interesting if you perform a timelapse registration.
+* '''Re-use per timepoint registration''': Loads the registration for each individual timepoint. This is basically only interesting if you perform a timelapse registration (see below).
 
 * '''Timelapse registration''': Checked if a timelapse registration should be performed. In this case the '''pre-registered''' individual timepoints are re-registered to one reference timepoint, which results in an aligned time series.
 
