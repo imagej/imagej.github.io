@@ -1,1 +1,35 @@
-This will contain MV Fusion
+{{Infobox Plugin
+| name                   = Multi-view fusion plugin
+| software               = ImageJ
+| author                 = Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak
+| maintainer             = Stephan Preibisch
+| filename               = SPIM_Registration.jar
+| released               = February 2010
+| latest version         = October 2011
+| category               = [[:Category:Registration|SPIM Registration]]
+| website                = [http://fly.mpi-cbg.de/~preibisch Stephan Preibisch's homepage]
+}}
+
+== Citation ==
+Please note that the multi-view fusion plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
+* S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", ''Nature Methods'', '''7'''(6):418-419. [http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html Webpage] [[Media:Nmeth0610-418.pdf|PDF]] [[Media:Nmeth0610-418-S1.pdf|Supplement]]
+
+== Overview of the multi-view fusion plugin ==
+
+The multi-view fusion plugin is able to combine several . This can be done for single timepoints or an entire timeseries. Prerequisite for the fusion is an aligned dataset, which can be done using one of the plugins:
+
+* [[Bead-based registration]]
+* [[Segmentation-based registration]]
+
+
+
+The multi-view fusion plugins offers two registration options:
+
+* Single-channel
+* Multi-channel
+
+
+
+The typical option is single-channel registration, even if you want to process a multi-channel acquisitions. You can apply the registration of one channel later to other channels in the [[Multi-View_Fusion|multi-view fusion plugin]]. Multi-channel registration is only required if the '''same beads''' are visible in several channels. 
+
+Both options work in the exactly same way and have very similar options. The additional options of multi-channel registration are explained in the last section.
