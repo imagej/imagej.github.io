@@ -28,8 +28,12 @@ The multi-view fusion plugins offers two registration options:
 
 Note, that in order to fuse a multi-channel acquisition, a single-channel registration can be sufficient as the registration of one channel can be applied to other channels of the same timepoint. Both options work in the same way and have very similar options. The additional options of multi-channel registration are explained in the last section.
 
+== What do I have to consider when I want to fuse a timeseries? ==
+
+If you want to process a timeseries you should first run the fusion only for the reference timepoint in order to determine the correct cropping parameters. In a second run you can fuse the complete timeseries using these cropping parameters.
+
 == How to use the plugin ==
 
 [[Image:Spim multiview dialog1.jpg|thumb|300px|Shows the first dialog that queries the location of the multi-view files]]
 
-The multi-view fusion consists of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset. Please note that all the parameters will be looked up in the [[SPIM_Bead_Registration|Bead-based registration]] or [[Segmentation-based registration]], so typically just pressing ok is sufficient. However, if you process a timeseries you should first run the fusion only for the reference dataset, determine the correct cropping parameters and in a second run fuse the complete timeseries using these cropping parameters.
+The multi-view fusion consists of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset. Please note that all the parameters will be looked up in the [[SPIM_Bead_Registration|Bead-based registration]] or [[Segmentation-based registration]], so typically just pressing ok is sufficient. However,
