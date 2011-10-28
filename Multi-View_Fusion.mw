@@ -60,9 +60,7 @@ In the second dialog, you have to define the details of the multi-view fusion. I
 
 * '''Registration for channel ''x''''': You can choose which registration is used for this channel. You can typically choose between the individual registration of this timepoint or any registration to a reference timepoint. If you perform multichannel fusion, more than one channel might be available.
 
-* '''Fusion Method''': Define how the input data is handled in order to compute the output image(s). There are three options available: 
-**''Fuse all images at once'' loads all the input images and computes the output image. This is the fastest method, but it also needs significant amounts of RAM. 
-**''Fuse images sequentially'' loads one input image after the other and computes the contribution sequentially. This is slower but typically uses less RAM. However, this methods needs to allocate the output image twice during the fusion process as it needs to store image content and weights separately. 
-**''Create independent registered images'' is a special output option where each view is transformed and saved individually, where all output images have the same bounding box. This option can be for example used to asses the registration quality by overlaying them afterwards.
-
-transformed into a compatible bounding box and written as a separate file for further processing.
+* '''Fusion Method''': Define how the input data is handled in order to compute the output image(s). There are three options available:
+** ''Fuse all images at once'' loads all the input images and computes the output image. This is the fastest method, but it also needs significant amounts of RAM. 
+** ''Fuse images sequentially'' loads one input image after the other and computes the contribution sequentially. This is slower but typically uses less RAM. However, this methods needs to allocate the output image twice during the fusion process as it needs to store image content and weights separately. 
+** ''Create independent registered images'' is a special output option where each view is transformed and saved individually, where all output images have the same bounding box. This option can be for example used to asses the registration quality by overlaying them afterwards.
