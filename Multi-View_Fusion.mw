@@ -38,6 +38,10 @@ If you do not have enough memory to create an uncropped output image, there is a
 
 If you want to process a timeseries you should first run the fusion only for the reference timepoint in order to determine the correct cropping parameters. In a second run you can fuse the complete timeseries using these cropping parameters.
 
+== How do I view fused, saved output image(s) ==
+
+The fused images will be saved in the ''output'' directory of the dataset as a collection of two-dimensional planes. The created output images can be viewed for example with Plugins->Image5D->[http://rsbweb.nih.gov/ij/plugins/image5d.html Virtual Image 5D Opener] or via the Plugins->LOCI->[http://www.loci.wisc.edu/software/bio-formats Bio-Formats Importer] (check the option ''Group files with similar names'').
+
 == How to use the plugin ==
 
 [[Image:Spim multiview dialog1.jpg|thumb|300px|Shows the first dialog that queries the location of the multi-view files]]
@@ -79,6 +83,6 @@ In the second dialog, you have to define the details of the multi-view fusion. I
 
 * '''Display output image:''' Display the fused image(s) when finished. Be careful when checking this button and performing a timelapse registration.
 
-* '''Save output image:''' Write the fused image(s) to disk when finished. It will save the output image(s) as a collection of two-dimensional planes. The created output images can be viewed for example with Plugins->Image5D->[http://rsbweb.nih.gov/ij/plugins/image5d.html Virtual Image 5D Opener] or via the Plugins->LOCI->[http://www.loci.wisc.edu/software/bio-formats Bio-Formats Importer] (check the option ''Group files with similar names'').
+* '''Save output image:''' Write the fused image(s) to disk when finished. It will save the output image(s) as a collection of two-dimensional planes.
 
 '''Note:''' Unchecking both options will not produce any result!
