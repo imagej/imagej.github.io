@@ -74,6 +74,8 @@ Both options work in the exactly same way and have very similar options. The add
 
 == How timelapse registration works ==
 
-[[Image:Spim beads timelapse.jpg|thumb|500px|Shows the panel that displays the registration quality of an entire timelapse registration. The reference timepoint can be chosen manually by clicking or automatically by the plugin. The error should be as low as possible (around 1px), the correspondence ratio as high as possible (between 90-100%).]]
+[[Image:Spim beads timelapse.jpg|thumb|550px|Shows the panel that displays the registration quality of an entire timelapse registration. The reference timepoint can be chosen manually by clicking or automatically by the plugin. The error should be as low as possible (around 1px), the correspondence ratio as high as possible (between 90-100%).]]
 
-Processing a timelapse acquisition works in two steps. In the first step the registration for each individual timepoint will be computed and automatically stored. Based on these results, a reference timepoint will be selected either manually or automatically (see figure). Based on the selected timepoint, all other timepoints of the series will be registered relative to it. For fusing the data, the cropping area has to be defined in this timepoint.
+Processing a timelapse acquisition works in two steps. In the first step the registration for each individual timepoint will be computed and automatically stored. Based on these results, a reference timepoint will be selected either manually or automatically (see figure). Note that the panel will be also displayed when choosing automatic reference timepoint selection, but it cannot be changed. Based on the selected timepoint, all other timepoints of the series will be registered relative to it which leads to a properly aligned timeseries. 
+
+For fusing the data, the cropping area has to be defined in the reference timepoint. Therefore, the reference timepoint should be fused individually once, and afterwards the whole timeseries can be fused.
