@@ -49,6 +49,16 @@ Both options work in the exactly same way and have very similar options. The add
 
 * '''Angles to process''': Define the angles (at least 2) that should be processed (for each timepoint if applicable). You can enumerate angles (e.g. 0, 90, 180, 270), define ranges in steps (e.g. 0-270:45 which means use angle 0 to 270 in steps of 45, i.e. 0, 45, 90, 135, 180, 225, 270) or combine all of them in any combination wanted (e.g. 0, 45, 180-270:45).
 
+* '''Re-use segmented beads''': If beads of all input stacks have been segmented in a previous run, they can be loaded here.
+
+* '''Bead brightness''': If the beads are not loaded, define their approximate brightness, you have the following options:
+** Very weak: the beads are hardly or not visible relative to the intensity of the imaged specimen
+** Weak: the beads are visible, but not as bright as the sample
+** Comparable to sample: the beads are as bright or slightly brighter than the sample
+** Strong: the beads are significantly brighter than the sample (you should consider using differently colored beads)
+** Advanced...: you know the parameters for the difference-of-gaussian detector, most likely from a previous run of the interactive tool. Note that a new window will pop up to query the parameters
+** Interactive...: an i
+
 * '''Timelapse processing''': Checked if a timelapse processing should be performed. In this case the '''pre-registered''' timepoints are re-registered to one reference timepoint which results in an aligned time series.
 
 * '''Reference Timepoint''': Define the reference timepoint for timelapse processing if timelapse processing above is checked.
