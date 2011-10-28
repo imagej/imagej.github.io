@@ -36,3 +36,9 @@ The typical option is single-channel registration, even if you want to process a
 Both options work in the exactly same way and have very similar options. The additional options of multi-channel registration are explained in the last section.
 
 '''''Important note:''' the output of the plugin are not images, but only registration matrices that serve as basis for either [[multi-view fusion plugin]] or the [[multi-view deconvolution plugin]].''
+
+== How to use the plugin ==
+
+[[Image:Spim beads singlechannel.jpg|thumb|216px|Shows the SPIM Registration Dialog.]]
+
+File:Spim beads singlechannel.jpg
