@@ -37,7 +37,7 @@ After you built Fiji successfully, you can add your own plugins.
 * Create a ''staged-plugins/My_Plugin.config'' file.  This will be included in the .jar file as ''plugins.config''.
 * In Fiji's root folder, call '''./fiji bin/commit-plugin.py src-plugins/My_Plugin/'''.  Please make sure that it ends with a slash.  This command will make the necessary edits to the Fakefile and .gitignore, and ''staged-plugins/My_Plugin.config'', and commit everything needed for your plugin.  If you want to do this manually, look in the Git log for an example (e.g. TurboReg) and imitate it.
 * Now build the plugin with '''./fiji --build'''.
-* Now he will most likely complain that some libraries are missing, most importantly the central library ij.jar, you will need to specify which jars are required for the build:
+* Now Fiji Build will most likely complain that some libraries are missing, most importantly the central library ij.jar, you will need to specify which jars are required for the build:
 ** open the file "Fakefile" in the fiji root directory with a text editor of your choice
 ** find the section "From source"
 ** you will find a lot of entries which look like CLASSPATH(plugins/Whatever_plugin.jar)=jars/ij.jar
