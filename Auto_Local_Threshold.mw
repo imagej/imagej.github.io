@@ -5,7 +5,7 @@
 | maintainer             = Gabriel Landini (G.Landini at bham. ac. uk)
 | filename               = included in Auto_Threshold.jar
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Auto_Threshold;hb=HEAD on gitweb](1 file)
-| latest version         = v1.3 (1 November 2011)
+| latest version         = v1.4 (2 November 2011)
 | status                 = active 
 }}
 
@@ -90,6 +90,8 @@ Based on ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fouri
 === Mean ===
 This selects the threshold as the mean of the local greyscale distribution. A variation of this method uses the mean - C, where C is a constant.
 
+ pixel = ( pixel > mean - c ) ? object : background;
+
 '''Parameter 1''': is the ''C value''. The default value is 0. Any other number will change the default value.
 
 '''Parameter 2''': not used, ignored. 
@@ -100,6 +102,8 @@ This selects the threshold as the mean of the local greyscale distribution. A va
 === Median ===
 This selects the threshold as the median of the local greyscale distribution. A variation of this method uses the median - C, where C is a constant.
 
+ pixel = ( pixel > median - c ) ? object : background;
+
 '''Parameter 1''': is the ''C value''. The default value is 0. Any other number will change the default value.
 
 '''Parameter 2''': not used, ignored. 
@@ -108,7 +112,9 @@ This selects the threshold as the median of the local greyscale distribution. A 
 
 
 === MidGrey ===
-This selects the threshold as the mid-grey of the local greyscale distribution (i.e. (max + min)/2. A variation of this method uses the median - C, where C is a constant.
+This selects the threshold as the mid-grey of the local greyscale distribution (i.e. (max + min)/2. A variation of this method uses the mid-grey - C, where C is a constant.
+
+ pixel = ( pixel > ((max + min)/2) - c ) ? object : background;
 
 '''Parameter 1''': is the ''C value''. The default value is 0. Any other number will change the default value.
 
@@ -120,11 +126,11 @@ This selects the threshold as the mid-grey of the local greyscale distribution (
 === Niblack ===
 Implements Niblack's thresholding method:
 
- pixel = ( pixel >  mean + k * standard_deviation + c) ? object : background
+ pixel = ( pixel >  mean + k * standard_deviation - c) ? object : background
 
 '''Parameter 1''': is the ''k value''. The default value is 0.2 for bright objects and -0.2 for dark objects. Any other number than 0 will change the default value.
 
-'''Parameter 2''': is the ''c value''. This is an offset with a default value of 0. Any other number than 0 will change its value. This parameter was added in version 1.3 and is not part of the original implementation of the algorithm. The original algorithm is applied when c = 0. 
+'''Parameter 2''': is the ''C value''. This is an offset with a default value of 0. Any other number than 0 will change its value. This parameter was added in version 1.3 and is not part of the original implementation of the algorithm. The original algorithm is applied when C = 0. 
 
 * {{Citation
 | last = Niblack
