@@ -90,7 +90,7 @@ Based on ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fouri
 === Mean ===
 This selects the threshold as the mean of the local greyscale distribution. A variation of this method uses the mean - C, where C is a constant.
 
- pixel = ( pixel > mean - c ) ? object : background;
+ pixel = ( pixel > mean - c ) ? object : background
 
 '''Parameter 1''': is the ''C value''. The default value is 0. Any other number will change the default value.
 
@@ -102,7 +102,7 @@ This selects the threshold as the mean of the local greyscale distribution. A va
 === Median ===
 This selects the threshold as the median of the local greyscale distribution. A variation of this method uses the median - C, where C is a constant.
 
- pixel = ( pixel > median - c ) ? object : background;
+ pixel = ( pixel > median - c ) ? object : background
 
 '''Parameter 1''': is the ''C value''. The default value is 0. Any other number will change the default value.
 
