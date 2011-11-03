@@ -19,9 +19,9 @@ The easiest way to fetch the source code for Fiji is to use [http://git.or.cz/ g
 
 === Packages for Debian / Ubuntu ===
 
-'''These packages have not been extensively tested, so feedback to mark-fiji ''at'' longair.net would be very much appreciated.'''
+'''Please send any feedback about these packages to mark-fiji ''at'' longair.net would be very much appreciated.'''
 
-There are Debian packages of Fiji.  Add the following lines to /etc/apt/sources.list:
+There are Debian packages of Fiji.  If you want to use the latest version that we have tested and consider to be stable, add the following lines to /etc/apt/sources.list:
 
  <nowiki>deb http://fiji.sc/downloads/apt/ ./</nowiki>
  <nowiki>deb-src http://fiji.sc/downloads/apt/ ./</nowiki>
@@ -32,6 +32,18 @@ Then do the following:
  sudo apt-get install fiji
 
 You should then be able to just run "fiji" from the command line.
+
+=== Weekly Builds ===
+
+There is also an unstable version of the Debian Fiji packages, which is automatically built every week.  The advantage of this version is that you will get updates to Fiji more frequently, while the disadvantages are that these packages are very large, and may not have been tested at all.  If you want to use these packages, instead add the following to `/etc/apt/sources.list`:
+
+ <nowiki>deb http://pacific.mpi-cbg.de/downloads/apt-experimental/ ./</nowiki>
+ <nowiki>deb-src http://pacific.mpi-cbg.de/downloads/apt-experimental/ ./</nowiki>
+
+Then do:
+
+ sudo apt-get update
+ sudo apt-get install fiji
 
 ==== Known Bugs ====
 
