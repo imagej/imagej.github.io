@@ -33,7 +33,7 @@ Then do the following:
 
 You should then be able to just run "fiji" from the command line.
 
-=== Weekly Builds ===
+=== Experimental Weekly Builds ===
 
 There is also an unstable version of the Debian Fiji packages, which is automatically built every week.  The advantage of this version is that you will get updates to Fiji more frequently, while the disadvantages are that these packages are very large, and may not have been tested at all.  If you want to use these packages, instead add the following to `/etc/apt/sources.list`:
 
