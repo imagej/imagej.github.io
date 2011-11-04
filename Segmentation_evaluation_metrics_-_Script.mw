@@ -8,9 +8,9 @@ Just copy/paste it in the [[Script Editor]] or save it into a .bsh file and run 
  * original labels and their corresponding proposed labels. 
  * 
  * The evaluation metrics are:
- *  - Maximal F-score of pixel error
+ *  - Pixel error: 1 - maximal F-score of pixel similarity
  *  - Minimum Splits & Mergers Warping error
- *  - Maximal F-score of Rand index
+ *  - Rand error: 1 - maximal F-score of Rand index
  * 
  * @author Ignacio Arganda-Carreras (iarganda@mit.edu)
  */
@@ -70,18 +70,18 @@ IJ.log("  Proposed labels: " + proposedLabels.getTitle() + "\n");
  
 if( calculatePixelError )
 {
-    IJ.log("\nCalculating maximal F-score of pixel error...");
+    IJ.log("\nCalculating pixel error...");
     metric = new PixelError( originalLabels, proposedLabels );
     maxFScore = metric.getPixelErrorMaximalFScore( 0.0, 1.0, 0.1 );	
-    IJ.log("Best F-score: " + maxFScore ); 
+    IJ.log("  Minimum pixel error: " + (1.0 - maxFScore) ); 
 }
 
 if( calculateWarpingError )
 {
     IJ.log("\nCalculating warping error by minimizing splits and mergers...");
     metric = new WarpingError( originalLabels, proposedLabels );    
-    warpingError = metric.getMinimumSplitsAndMergersErrorValue( 0.0, 0.9, 0.1, false );
-    IJ.log("  Warping error = " + warpingError);
+    warpingError = metric.getMinimumSplitsAndMergersErrorValue( 0.0, 0.9, 0.1, false, 20 );
+    IJ.log("  Minimum warping error = " + warpingError);
     IJ.log("  # errors (splits + mergers pixels) = " + Math.round(warpingError * originalLabels.getWidth() * originalLabels.getHeight() * originalLabels.getImageStackSize() ) );
 }
  
@@ -90,8 +90,11 @@ if( calculateRandError )
     IJ.log("\nCalculating maximal F-score of Rand index...");
     metric = new RandError( originalLabels, proposedLabels );
     maxFScore = metric.getRandIndexMaximalFScore( 0.0, 1.0, 0.1 );	
-    IJ.log("Best F-score: " + maxFScore );    
+    IJ.log("  Minimum Rand error: " + (1.0 - maxFScore) );     
 }
+
+
+
 
 		
 </source>
