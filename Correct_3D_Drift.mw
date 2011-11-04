@@ -1,0 +1,11 @@
+This Fiji menu command is implemented by the script [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Scripts/Plugins/Registration/Correct_3D_drift.py;hb=HEAD "Correct 3D Drift"].
+
+1. The script expects the currently open and active image to be a hyperstack consisting of 2D or 3D volumes over time. The script registers the time points to each other using the phase correlation implementation of [[Imglib|ImgLib 1]].
+
+2. Then, a folder is asked for, where the registered time point volumes will be stored.
+
+3. The color channel to use for registration is asked for.
+
+4. After some processing (there are progress bars), the resulting, registered volumes are opened in a virtual hyperstack. They are already saved in the chosen target folder.
+
+The script was written by [[User:Albertcardona|Albert Cardona]] and [http://www.biolsci.monash.edu.au/staff/bryson-richardson/index.html Robert Bryson-Richardson] while attending the [http://cwp.embo.org/pc10-37/ Developmental Imaging EMBO course] organized by [http://www.igc.gulbenkian.pt/research/photo/556/ Gabriel] [http://www.igc.gulbenkian.pt/research/unit/51 G. Martins].
