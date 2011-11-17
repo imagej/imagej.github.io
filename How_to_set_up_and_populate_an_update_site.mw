@@ -20,11 +20,16 @@ Click the 'Manage update sites' button to bring up a dialog to allow entering yo
 [[Image:How_to_setup_a_plugin_distribution_site-4.jpg|770px]]
 
 Click the 'Add' button and fill in your choice of name for the site, the public URL, the SSH hostname, and the directory into which the site should be installed via SSH.
+
 * Note that the URL and the upload directory need to point to the same location on the server. In this case, the webserver maps ''genomics.lbl.gov/~gavin/FijiPlugins'' to ''~gavin/public_html/FijiPlugins'' on the ''tatooine'' server.
 
 [[Image:How_to_setup_a_plugin_distribution_site-6.jpg|770px]]
 
 Click 'OK' to add the update site.
+
+* Note: if your SSH account differs from your current machine's account, you can prefix the SSH host with ''<username>@'', e.g. ''gavinrocks@tattooine.pdq-bach.org''.
+
+* Note: if you can upload files to your site via SFTP, but not SSH, you need to prefix the SSH host with ''sftp:'', e.g. ''sftp:gavinrocks@tattooine.pdq-bach.org''.
 
 If the update site has not been initialized yet (i.e. if nobody else has initialized that site yet), you will see a dialog like this:
 
