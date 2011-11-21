@@ -3,13 +3,13 @@
 | name                   = Image Stabilizer
 | maintainer        =  [mailto:christophe_dot_leterrier_at_gmail_dot_com Christophe Leterrier]
 | author                 =  [mailto:kangli_at_cs_dot_cmu_dot_edu Kang Li] & [mailto:skang_at_andrew_dot_cmu_dot_edu Steven Kang]
-| filename               = [http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.class] and [http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer_Log_Applier.class]
-| source                 =[http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.java] and [http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer_Log_Applier.java]
+| filename               = [http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.class Image_Stabilizer.class] and [http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer_Log_Applier.class Image_Stabilizer_Log_Applier.class]
+| source                 =[http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.java Image_Stabilizer.java] and [http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer_Log_Applier.java Image_Stabilizer_Log_Applier.java]
 | released               = 07/02/2008
 | latest version         = 06/12/2009
 | status                 = unknown
 | category               = [[:Category:Registration|Registration]]
-| website                = [http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.html]
+| website                = http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.html
 }}
 
 
