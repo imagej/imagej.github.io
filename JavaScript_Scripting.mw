@@ -21,7 +21,7 @@ Due to potential ambiguities on classes names, the following classes are not imp
 - ij.plugin.Histogram (is in both script.imglib.analysis and ij.plugin)<br>
 - java.lang.Compiler (is in both java.lang and ij.plugin)<br>
 
-for reference, in ImageJ, these classes are imported by default:<br>
+For reference, in ImageJ, these classes are imported by default:<br>
 - ij.*<br>
 - ij.gui.*<br>
 - ij.process.*<br>
