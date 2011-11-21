@@ -28,6 +28,7 @@ Hint: To process very large image stacks, import the stack with the "Use Virtual
 
 == Change log ==
 2008/02/07: First version
+
 2008/02/10: Optimized for speed using gradient pyramids
 2008/02/12: Performed further speed optimizations and bug fixes
 2008/02/14: Added support for affine transformation
