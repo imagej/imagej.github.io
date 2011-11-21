@@ -12,45 +12,30 @@
 | website                = http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.html
 }}
 
+== What does it do? ==
 
-== What does it do ? ==
-This plugin:
-*'''counts the number of 3D objects in a stack.'''
-*'''quantifies for each found object the following parameters:'''
-**Integrated density;
-**Mean of the gray values;
-**Standard deviation of the gray values;
-**Minimum gray value;
-**Maximum gray value;
-**Median of the gray values;
-**Mean distance from the geometrical centre of the object to surface;
-**Standard deviation of the distance to surface;
-**Median distance to surface;
-**Centroid;
-**Centre of mass;
-**Bounding box.
-*'''generates results representations such as:'''
-**Objects' map;
-**Surface voxels' map;
-**Centroids' map;
-**Centres of masses' map.
+This plugin stabilizes jittery image stacks using the Lucas-Kanade algorithm. It supports both grayscale and color images.
 
-As ImageJ's “Analyze Particles” function, 3D-OC also has a “redirect to” option, allowing one image to be taken as a mask to quantify intensity related parameters on a second image.
+== How does it work? ==
 
-== Plugin's manual ==
-The plugin's manual might be downloaded from [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=plugin:analysis:3d_object_counter:3d-oc.pdf ImageJ's wiki.]
+It uses the currently shown slice in an image stack as the initial reference, or "template";
+It estimates the geometrical transformation needed to best align each of the other slices with the "template". The estimation and alignment are performed using the Lucas-Kanade algorithm;
+Once a slice is aligned, the "template" will be updated on the fly using the formula: new_template = a * old_template + (1 - a) * newly_aligned_slice, where "a" is the "template update coefficient" that can be adjusted when the plugin is run.
 
-== Install/Update ==
-v2.0 plugin is now contained in Fiji; just use [[Update_Fiji|Help>Update Fiji]] to get it.
+Hint: To process very large image stacks, import the stack with the "Use Virtual Stack" option enabled. The plugin will prompt you for an output directory to store the stabilized image sequence.
+
 
 == Reference ==
-The original  plugin was published here:
-[http://www3.interscience.wiley.com/cgi-bin/fulltext/118727584/PDFSTART S. Bolte & F. P. Cordelières, A guided tour into subcellular colocalization analysis in light microscopy, Journal of Microscopy, Volume 224, Issue 3: 213-232]
+K. Li, "The image stabilizer plugin for ImageJ," http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.html, February, 2008.
 
 == License ==
-This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see [http://www.gnu.org/licenses/ http://www.gnu.org/licenses/].
+Copyright (C) 2008-2009 Kang Li. All rights reserved.
+
+Permission to use, copy, modify, and distribute this software for any purpose without fee is hereby granted, provided that this entire notice is included in all copies of any software which is or includes a copy or modification of this software and in all copies of the supporting documentation for such software. Any for profit use of this software is expressly forbidden without first obtaining the explicit consent of the author.
+
+THIS SOFTWARE IS BEING PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTY. IN PARTICULAR, THE AUTHOR DOES NOT MAKE ANY REPRESENTATION OR WARRANTY OF ANY KIND CONCERNING THE MERCHANTABILITY OF THIS SOFTWARE OR ITS FITNESS FOR ANY PARTICULAR PURPOSE.
 
 
 
 [[Category:Plugins]]
-[[Category:Particle analysis]]
+[[Category:Registration]]
