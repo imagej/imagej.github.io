@@ -16,7 +16,7 @@
 
 This plugin stabilizes jittery image stacks using the Lucas-Kanade algorithm. It supports both grayscale and color images.
 
-
+[[File:exemple.gif]]
 
 == How does it work? ==
 
