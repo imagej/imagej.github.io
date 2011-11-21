@@ -13,25 +13,25 @@ in Fiji, theses classes are imported by default:<br>
 - java.lang.*<br>
 
 Due to potential ambiguities on classes names, the following classes are not imported: <br>
-ij.plugin.frame.ContrastPlot (is in both ij.plugin.frame and ini.trakem2.imaging)<br>
-ij.gui.Overlay (is in both ij.gui and ini.trakem2.display)<br>
-ij.gui.ColorPanel (is in both ij.gui and ij.plugin)<br>
-ij.plugin.Selection (is in both ij.plugin and ini.trakem2.display)<br>
-ij.plugin.FFT (is in both script.imglib.algorithm and ij.plugin)<br>
-ij.plugin.Histogram (is in both script.imglib.analysis and ij.plugin)<br>
-java.lang.Compiler (is in both java.lang and ij.plugin)<br>
+- ij.plugin.frame.ContrastPlot (is in both ij.plugin.frame and ini.trakem2.imaging)<br>
+- ij.gui.Overlay (is in both ij.gui and ini.trakem2.display)<br>
+- ij.gui.ColorPanel (is in both ij.gui and ij.plugin)<br>
+- ij.plugin.Selection (is in both ij.plugin and ini.trakem2.display)<br>
+- ij.plugin.FFT (is in both script.imglib.algorithm and ij.plugin)<br>
+- ij.plugin.Histogram (is in both script.imglib.analysis and ij.plugin)<br>
+- java.lang.Compiler (is in both java.lang and ij.plugin)<br>
 
 for reference, in ImageJ, these classes are imported by default:<br>
-ij.*<br>
-ij.gui.*<br>
-ij.process.*<br>
-ij.measure.*<br>
-ij.util.*;<br>
-ij.plugin.*<br>
-ij.plugin.filter.*<br>
-ij.plugin.frame.*<br>
-java.lang.*<br>
-java.awt.*<br>
+- ij.*<br>
+- ij.gui.*<br>
+- ij.process.*<br>
+- ij.measure.*<br>
+- ij.util.*;<br>
+- ij.plugin.*<br>
+- ij.plugin.filter.*<br>
+- ij.plugin.frame.*<br>
+- java.lang.*<br>
+- java.awt.*<br>
 
 
 You can specify further imports by:
