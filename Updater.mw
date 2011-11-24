@@ -52,7 +52,9 @@ You can keep the local version if you are certain that the version you have is n
 
 == Advanced mode ==
 
-In the advanced mode, you can see details about the Fiji components, choose not to update selected components, and search by filename. The details for each component can be edited by writing below the respective entry. To save the changes, you have to upload the plugin to the server.
+In the advanced mode, you can see details about the Fiji components, choose not to update selected components, and search by filename.
+
+Note: in the advanced mode you can also upload plugins to your [[Update Sites|update site]]. The details for each component can be edited by writing below the respective entry. To save the changes, you have to upload the plugin to the server.
 
 [[Image:Snapshot of the Advanced Mode of the Updater.png|750px]]
 
