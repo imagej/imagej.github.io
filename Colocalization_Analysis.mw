@@ -58,7 +58,7 @@ This plugin supersedes the Colocalization Threshold and Colocalization Test plug
 == Colocalization Analysis - What is Colocalization anyway? ==
 
 
-Suppose you are given some images by a colleague, or have some images of your own, and you want to measure the amount of colocalisation between two of the dyes or stains in the images. First you have to define what you mean by colocalisation, and that is not trivial. One place to start reading about colocalisation and and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalisation analysis, look here: [https://ifn.mpi-cbg.de/wiki/ifn/index.php/Teaching_Material#IPF_Image_Processing_Courses Image Processing Courses at IFN Dresden]
+Suppose you are given some images by a colleague, or have some images of your own, and you want to measure the amount of colocalisation between two of the dyes or stains in the images. First you have to define what you mean by colocalisation, and that is not trivial. For one place to start reading about colocalisation and and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalisation analysis, look here: [https://ifn.mpi-cbg.de/wiki/ifn/index.php/Teaching_Material#IPF_Image_Processing_Courses Image Processing Courses at IFN Dresden]
 
 ===There are two basic methods for colocalization analysis:===
  <ol>
