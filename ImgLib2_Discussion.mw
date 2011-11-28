@@ -429,5 +429,36 @@ The interfaces to be implemented can be found in packages <code>net.imglib2.conc
 
 Examples of implementation of the integer version of these interfaces can be found in <code>net.imglib2.transform.integer</code> (These are the ones I did for views).
 
+====Interpolated RealRandomAccessible====
+As the source for a RealView we need a <code>RealRandomAccessible</code>.
+This will be most likely a interpolated image.
+In <code>net.imglib.interpolation</code> we have <code>InterpolatorFactories</code> implementing nearest-neighbor and n-linear interpolation.
+What is left to do is write a (trivial) wrapper which turns a <code>RandomAccessible</code> into a <code>RealRandomAccessible</code> using an <code>InterpolatorFactory</code>. It would look more or less exactly like this:
+<source lang="java">
+public final class InterpolatedRandomAccessible< T > implements RealRandomAccessible< T >
+{
+	private final RandomAccessible< T > source;
+	
+	private final InterpolatorFactory< T, RandomAccessible< T > > factory;
+	
+	public InterpolatedRandomAccessible( final RandomAccessible< T > source, final InterpolatorFactory< T, RandomAccessible< T > > factory )
+	{
+		this.source = source;
+		this.factory = factory;
+	}
+
+	@Override
+	public int numDimensions()
+	{
+		return source.numDimensions();
+	}
+
+	@Override
+	public RealRandomAccess< T > realRandomAccess()
+	{
+		return factory.create( source );
+	} 
+}
+</source>
 
 [[Category:ImgLib]]
