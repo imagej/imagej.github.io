@@ -461,4 +461,8 @@ public final class InterpolatedRandomAccessible< T > implements RealRandomAccess
 }
 </source>
 
+====Using RealViews====
+Similar to what is now in <code>Views</code> there would be static methods to construct views, for example construct a RealView given a source RandomAccessible as well as source and target calibration.
+
+One would wrap all of the source images into <code>InterpolatedRandomAccessible</code> and use RealViews as required to match the calibration of the target image. Then to carry out some operation, one would iterate through the target image and fetch the (possibly interpolated) values from the corresponding locations in the respective source views.
 [[Category:ImgLib]]
