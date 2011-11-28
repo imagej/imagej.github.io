@@ -395,4 +395,9 @@ The same applies for fwd(dim), bck(dim), move(dim), there a -- ++ and += can rep
 
 :I like this way of realizing it, maybe we could also implement it on ImgFactory level. If a Img implements RandomAccessible1D, the factory could also have a special create( long size ) method (in e.g. RandomAccessible1DFactory) which returns for example <I extends ArrayImg<T,?> & RandomAccessible1D>, so no unchecked casts are necessary. [[User:StephanP|StephanP]] 16:15, 12 May 2011 (CEST)
 
+
+==2011-11-28==
+
+===RealViews===
+
 [[Category:ImgLib]]
