@@ -14,7 +14,7 @@
 
 == Purpose == 
 
-Performs one of a set of three statistical tests, comparing the Persons correlation coefficient of 2 colour channels in the real image data against the same image data with one of the colour channels scrambled or spatially shifted, repeated a number of times. 
+Performs one of a set of three statistical tests, comparing the Persons correlation coefficient of 2 colour channels in the real image data against a white noise image, or the same image data with one of the colour channels spatially shifted, repeated a number of times.
 
 == Documentation ==
 
