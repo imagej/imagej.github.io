@@ -400,4 +400,34 @@ The same applies for fwd(dim), bck(dim), move(dim), there a -- ++ and += can rep
 
 ===RealViews===
 
+Johannes pointed out that we will need to be able to handle images of different calibrations, e.g., compute the sum of two images with different pixel sizes.
+
+I think, what we need to achieve this is something similar to what we have with the (integer) Views now.
+I will call them "RealViews" for now, and hope that someone comes up with a better name...
+
+A RealView would implement (in analogy to the integer views)
+<source lang="java">
+public interface RealTransformedRealRandomAccessible< T > extends RealRandomAccessible< T >
+{
+	/**
+	 * @return the source {@link RealRandomAccessible}.
+	 */
+	public RandomAccessible< T > getSource();
+
+	/**
+	 * @return transformation from view coordinates into {@link #getSource()
+	 *         source} coordinates.
+	 */
+	public RealTransform getTransformToSource();	
+}
+</source>
+
+Note, that <code>RealTransform</code> implementations do not yet exist.
+However the ideas are in place, see 
+[http://fiji.sc/wiki/index.php/ImgLib2_Discussion#Transformation_Hierarchies Transformation Hierarchies] above.
+The interfaces to be implemented can be found in packages <code>net.imglib2.concatenate</code> and <code>net.imglib2.transform</code>.
+
+Examples of implementation of the integer version of these interfaces can be found in <code>net.imglib2.transform.integer</code> (These are the ones I did for views).
+
+
 [[Category:ImgLib]]
