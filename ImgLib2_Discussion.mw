@@ -412,7 +412,7 @@ public interface RealTransformedRealRandomAccessible< T > extends RealRandomAcce
 	/**
 	 * @return the source {@link RealRandomAccessible}.
 	 */
-	public RandomAccessible< T > getSource();
+	public RealRandomAccessible< T > getSource();
 
 	/**
 	 * @return transformation from view coordinates into {@link #getSource()
