@@ -1,0 +1,6 @@
+Need to write docs here for how to use this plugin for measuring chromatic shift in multi channel z stacks, or 2D images of a field of beads, and apply the transform to the biological  images. 
+
+I suggest a more descrioptive less technical name for the plugin might be better, eg
+Multi Channel Image Alignment with Fiducial Markers (beads) or soimnething shorter
+
+Dan
