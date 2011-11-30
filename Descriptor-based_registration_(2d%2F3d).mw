@@ -1,3 +1,16 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Descriptor-based registration
+| maintainer             = [mailto:preibischs_at_janelia_dot_hhmi_dot_org Stephan Preibisch]
+| author                 = Stephan Preibisch
+| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Descriptor_based_registration;hb=refs/heads/master in gitweb]
+| released               = 30/11/2011
+| latest version         = 30/11/2011
+| status                 = 
+| category               = [[:Category:Plugins]]
+| website                = 
+}}
+
 Need to write docs here for how to use this plugin for measuring chromatic shift in multi channel z stacks, or 2D images of a field of beads, and apply the transform to the biological  images. 
 
 I suggest a more descriptive less technical name for the plugin might be better, eg
