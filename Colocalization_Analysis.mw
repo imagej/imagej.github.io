@@ -5,7 +5,7 @@
 | maintainer             = [mailto:white_at_mpi-cbg_dot_de Daniel White]
 | filename               = Colocalization.jar
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Colocalisation_Analysis/ColocImgLibGadgets.java;h=ce8c656ec6b484cdacd3001a5fc45754410a68aa;hb=HEAD on gitweb].
-| latest version         = Spring 2011
+| latest version         = Dec 2011
 | website                = Fiji
 | status                 = beta. Under development, but stable enough for real work. 
 }}
