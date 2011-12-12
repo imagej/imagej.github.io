@@ -40,7 +40,7 @@ This plugin supersedes the Colocalization Threshold and Colocalization Test plug
 *** where the mask image is white (255 pixel value for an 8 bit greyscale image) colocalization will be analysed for those pixels only. Where it is black (zero pixel value), the pixels will be ignored: not included in the analysis. 
 *** you can use a z stack as a 3D mask... its up to you how you make that mask image, manually or by some automated method. 
 *Launch the Coloc_2 plugin from the menu item: Analyze - Colocalization Analysis - Coloc 2 
-** or use the command finder: press L then start typing Coloc, then choose the plugin with the arrow keys and hit enter, or mouse click it to launch the plugin. 
+** or use the command finder: press L then start typing Coloc, then choose the plugin with the arrow keys and hit enter, or double mouse click it to launch the plugin. 
 * In the plugin's graphical user interface (GUI) choose the 2 images you want to analyse in the first 2 drop down lists.
 ** Select the images according to which you want to be channel 1 and which to be channel 2. 
 ** In the third drop down list selection, select the image/channel you want to use that has the correct ROI
