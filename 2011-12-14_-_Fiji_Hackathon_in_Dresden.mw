@@ -3,6 +3,9 @@ We are in the middle of another great Fiji hackathon. This one is taking place b
 Here is the list of participants together with their primary affiliation :
 
 {|
+|Kevin Eliceiri
+|ImageJ2
+|-
 |Curtis Rueden	
 |IJ2/Fiji
 |-
@@ -37,10 +40,10 @@ Here is the list of participants together with their primary affiliation :
 |CRG Barcelona
 |-
 |Stephan Preibisch
-|ImgLib
+|Fiji/ImgLib
 |-
 |Benjamin Schmid	
-|3D Viewer
+|Fiji/3D Viewer
 |-
 |Pavel Tomancak	
 |Fiji
@@ -52,7 +55,7 @@ Here is the list of participants together with their primary affiliation :
 |Fiji/BoneJ
 |-
 |Tobias Pietzsch
-|ImgLib
+|Fiji/ImgLib
 |-
 |Peter Pitrone
 |SPIM
@@ -75,6 +78,7 @@ Here is the list of participants together with their primary affiliation :
 |Boris Flach
 |Computer Vision (Prague) special guest
 |}
+
 
 and here a picture of the group in action :
 
