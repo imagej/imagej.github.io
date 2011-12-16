@@ -9,3 +9,4 @@ For now, here are some links:
 * [[How To Migrate Code From ImgLib To ImgLib2]]
 * [[Changes from ImgLib1 to ImgLib2]]
 * [http://developer.imagej.net/ ImageJ2] uses ImgLib2 as its core data model
+* [/cgi-bin/gitweb.cgi?p=imglib.git Source code] via Gitweb
