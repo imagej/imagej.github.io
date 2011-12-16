@@ -1,0 +1,11 @@
+== ImgLib2 ==
+
+ImgLib2 is an updated design for the library formerly known as "[[Imglib]]" (a.k.a. "ImgLib1").
+
+In the future, this page will be the central portal for information on ImgLib2.
+
+For now, here are some links:
+* [[ImgLib2_Discussion|ImgLib2 development discussion]]
+* [[How To Migrate Code From ImgLib To ImgLib2]]
+* [[Changes from ImgLib1 to ImgLib2]]
+* [http://developer.imagej.net/ ImageJ2] uses ImgLib2 as its core data model
