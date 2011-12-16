@@ -49,7 +49,7 @@ Another way of looking at it is that Cursors are similar to InputStreams and mus
 
 == Update out of bounds code ==
 
-Out of bounds access is now handled differently. Previously you could pass an out of bounds strategy factor to a localizable cursor constructor. In a similar fashion now you extend an interval with an out of bounds strategy factory.
+Out of bounds access is now handled differently. Previously you could pass an out of bounds strategy factory to a localizable cursor constructor. In a similar fashion now you extend an interval with an out of bounds strategy factory.
 
 Here is an example:
 <code>
