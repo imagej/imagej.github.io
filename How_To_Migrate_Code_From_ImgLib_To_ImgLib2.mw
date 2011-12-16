@@ -72,4 +72,4 @@ The Display class and corresponding packages are no longer applicable to ImgLib2
 
 The RegionOfInterestCursor class is no longer available and its replacement is not yet in place. You'll need to work around this in the short term.
 
-The Image::clone() method does not yet have a replacement.
+The Image.clone() method has been now named Img.copy().
