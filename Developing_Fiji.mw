@@ -99,7 +99,7 @@ At some point, you might want to debug whatever you wrote.  There's a small [[De
 
 == Discussing code ==
 
-When you want to discuss your changes to some Fiji component, the preferred way is to inline a patch and sending it to the [http://groups.google.com/group/fiji-devel fiji-devel mailing list]. You can also send a link to your repository, e.g. a fork of [http://github.com/dscho/fiji Johannes' Fiji repository on github.com], but then commenting is not as easy (and the discussion will involve fewer developers).
+When you want to discuss your changes to some Fiji component, the preferred way is to inline a patch and sending it to the [http://groups.google.com/group/fiji-devel fiji-devel mailing list]. You can also send a link to your repository, e.g. a fork of [http://github.com/fiji/fiji the Fiji repository on github.com], but then commenting is not as easy (and the discussion will involve fewer developers).
 
 When discussing larger chunks of code (or a patch) on [irc://irc.freenode.net/fiji-devel IRC], you should not paste them directly, but you should use a [http://gist.github.com pastebin] instead.
 
