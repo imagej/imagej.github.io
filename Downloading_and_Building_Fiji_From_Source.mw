@@ -13,7 +13,7 @@ This should start downloading the base fiji repository and unpack it into a dire
 
 '''If this clone is slow''', you might want to try to clone from github.com, and after that switch back to the official repository:
 
- git clone git://github.com/dscho/fiji
+ git clone git://github.com/fiji/fiji
  cd fiji
  git config remote.origin.url git://fiji.sc/fiji.git
  git pull
@@ -29,7 +29,7 @@ then you probably are behind a firewall that does not let you connect to port 94
 
 or
 
- git clone https://yourusername@github.com/dscho/fiji.git
+ git clone https://yourusername@github.com/fiji/fiji.git
 
 ... where you should replace <tt>yourusername</tt> with your GitHub username.
 
