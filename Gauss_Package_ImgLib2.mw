@@ -74,8 +74,8 @@ Gauss.inNumericTypeInPlace( sigma, img );
 By default, the Gaussian convolution will use the OutOfBoundsMirrorFactory with single boundary. If another OutOfBoundsFactory is desired, it can be defined on any of those methods as follows:
 
 <source lang="java">
-// compute with float precision, but on T using an OutOfBoundsMirrorFactory where the "mirror"
-// lies behind the last pixel, i.e. all border pixels are there twice
+// compute with float precision, but on T using an periodic (FFT-like) strategy where at the end of
+// each dimension the image simply starts again
 final Img< T > convolved = Gauss.inFloat( sigma, img, 
   new OutOfBoundsPeriodicFactory<FloatType, RandomAccessibleInterval<FloatType>>() ) );
 </source>
