@@ -134,4 +134,4 @@ The second core idea is to not iterate over the output but over the input to sav
 
 For more details please refer to the source code for now, it is linked on top of this page.
 
-[[Image:Gauss.png|Visualizes the offsets and sizes required to perform an n-dimensional gaussian convolution]]
+[[Image:Gauss.png|780px|Visualizes the offsets and sizes required to perform an n-dimensional gaussian convolution]]
