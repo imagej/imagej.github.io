@@ -1,0 +1,18 @@
+{{Infobox Plugin
+| software               = Fiji/ImgLib2
+| name                   = Gaussian Convolution
+| author                 = Stephan Preibisch
+| maintainer           = Stephan Preibisch
+| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=imglib.git;a=tree;f=imglib2/algorithms/src/main/java/net/imglib2/algorithm/gauss;hb=refs/heads/master]
+| released               = 20 December 2011
+| latest version         = 20 December 2011
+| status                 = active
+| website                = [http://fly.mpi-cbg.de/preibisch]
+}}
+=== Gauss Package for ImgLib2 ===
+
+== Purpose ==
+
+The gauss package for ImgLib2 is an generic, optimized implementation of the traditional Gaussian convolution. It can perform anisotropic, n-dimensional convolution on any image or any interval on an image, if required even in-place. 
+
+The computation is performed multi-threaded and accesses each pixel of the input and output containers only once to guarantee high performance, even on paged cell containers. The precision of the computation can be of any ImgLib2 NumericType, however, there are more efficient implementations for convolution with float and double precision. Any precision of gaussian convolution can be computed on any type of real valued input data, it will be internally wrapped to either float or double.
