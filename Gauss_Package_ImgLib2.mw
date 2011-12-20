@@ -128,4 +128,8 @@ ImageJFunctions.show( img );
 
 == Implementation ==
 
+The first (obvious) core idea of the implementation is to break down the convolution into one-dimensional convolutions along each dimension. In order to properly convolve all input data, a continuously decreasing area has to be convolved when going along each dimension (see figure). This is necessary as the input for dimension d+1 has to be convolved in dimension d in order to produce the correct result.
+
+The second core idea is to not iterate over the output but over the input to save operations and access the input as little as possible as it might be an expensive operation (page cell container, renderer, ...). The following scheme depicts the "classical" convolution operation: 
+
 [[Image:Gauss.png|Visualizes the offsets and sizes required to perform an n-dimensional gaussian convolution]]
