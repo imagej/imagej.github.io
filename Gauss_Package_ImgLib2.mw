@@ -26,6 +26,8 @@ The Gauss package for ImgLib2 consists of several classes which abstract the con
 For computing a Gaussian convolution on an entire '''Img<T>''', simply call one the following lines of code:
 
 <source lang="java">
+import net.imglib2.algorithm.gauss.Gauss;
+
 // the source
 final Img< T > img = ...
 
@@ -77,6 +79,8 @@ By default, the Gaussian convolution will use the OutOfBoundsMirrorFactory with 
 final Img< T > convolved = Gauss.inFloat( sigma, img, 
   new OutOfBoundsMirrorFactory<FloatType, RandomAccessibleInterval<FloatType>>( Boundary.DOUBLE ) ) );
 </source>
+
+=== Computing gaussian convolutions on RandomAccessibles with Intervals ===
 
 For more advanced use of the Gaussian convolution, it accepts RandomAccessibles as input and output, too. In this way
 
