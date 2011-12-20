@@ -82,7 +82,7 @@ final Img< T > convolved = Gauss.inFloat( sigma, img,
 
 === Computing gaussian convolutions on RandomAccessibles with Intervals ===
 
-For more advanced use of the Gaussian convolution, it accepts RandomAccessibles as input and output, too. In this way
+For more advanced use of the Gaussian convolution, it accepts RandomAccessibles as input and output, too. In this way the developer has complete freedom which area to convolve and where to write the result. The input and output can be any RandomAccessible, i.e. also any kind of transformed View or Type.
 
 === Some examples ===
 <source lang="java">
