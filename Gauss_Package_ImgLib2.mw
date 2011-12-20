@@ -116,7 +116,7 @@ ImageJFunctions.show( img );
 final double[] sigma = new double[] { 2, 0.75 };
 
 // compute a gauss convolution with double precision
-ImageJFunctions.show( Gauss.inDouble( sigma, img );	
+ImageJFunctions.show( Gauss.inDouble( sigma, img ) );	
 
 // compute a Gaussian convolution in-place in a small Interval	
 Gauss.inFloat( sigma, Views.extendMirrorSingle( img ), new FinalInterval( new long[]{300,150},
