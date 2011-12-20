@@ -84,6 +84,14 @@ final Img< T > convolved = Gauss.inFloat( sigma, img,
 
 For more advanced use of the Gaussian convolution, it accepts RandomAccessibles as input and output, too. In this way the developer has complete freedom which area to convolve and where to write the result. The input and output can be any RandomAccessible, i.e. also any kind of transformed View or Type.
 
+To perform a Gaussian convolution on RandomAccessible you need to specify more input variables:
+* the '''sigma''' in each dimension
+* the '''input RandomAccessible''' (has to cover all the area required for the convolution, you might need to use Views.extend( ... ) if it is too small
+* the '''Interval''' in which the Randomaccessible should be convolved. Note that more pixels around this area are required to perform the convolution, see implementation
+* the '''output RandomAccessible''' specifies the target, i.e. where the result will be written to (can be the same as the input)
+* the '''Location in the output RandomAccessible''' defines where the content will be inserted
+* an '''ImageFactory''' for creating the temporary images, it has to be of the type in which the computation is performed. If it is inFloat, it will require an ImgFactory<FloatType>, inDouble will require ImgFactory<DoubleType> and inNumericType need an ImageFactory<T>
+
 === Some examples ===
 <source lang="java">
 // create a new, empty 2-d image
