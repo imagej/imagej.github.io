@@ -60,7 +60,7 @@ Gauss.inDoubleInPlace( sigma, img );
 
 //
 // precision defined by the type T itself (this will produce garbage if T has insufficient range 
-// or accuracy like ByteType, IntType, etc, but will work nicely on for example ComplexFloatType
+// or accuracy like ByteType, IntType, etc, but will work nicely on for example ComplexFloatType)
 //
 // compute with precision of T
 final Img< T > convolved = Gauss.inNumericType( sigma, img );
