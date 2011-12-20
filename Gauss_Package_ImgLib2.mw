@@ -126,6 +126,8 @@ Gauss.inFloat( sigma, Views.extendMirrorSingle( img ), new FinalInterval( new lo
 ImageJFunctions.show( img );
 </source>
 
+Another nice example of the generality of the gaussian convolution is the '''Game of Death 2''' which uses Gaussian convolution to simulate diffusion of different species of viruses. It redefines the add() operator of our new NumericType called '''LifeForm''' which can then be used to start the simulation. The '''Game of Death 2''' is included in the imglib repository.
+
 == Implementation ==
 
 The first (obvious) core idea of the implementation is to break down the convolution into one-dimensional convolutions along each dimension. In order to properly convolve all input data, a continuously decreasing area has to be convolved when going along each dimension (see figure). This is necessary as the input for dimension d+1 has to be convolved in dimension d in order to produce the correct result.
