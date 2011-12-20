@@ -34,7 +34,9 @@ final double[] sigma = new double[ img.numDimensions() ];
 for ( int d = 0; d < sigma.length; ++d )
     sigma[ d ] = 1 + d;
 
+//
 // float-precision
+//
 // compute with float precision, but on T
 final Img< T > convolved = Gauss.inFloat( sigma, img );
 
@@ -44,7 +46,9 @@ final Img< FloatType > convolved = Gauss.toFloat( sigma, img );
 // compute with float precision in-place
 Gauss.inFloatInPlace( sigma, img );
 
+//
 // double-precision
+//
 // compute with double precision, but on T
 final Img< T > convolved = Gauss.inDouble( sigma, img );
 
@@ -54,8 +58,10 @@ final Img< DoubleType > convolved = Gauss.toDouble( sigma, img );
 // compute with double precision in-place
 Gauss.inDoubleInPlace( sigma, img );
 
+//
 // precision defined by the type T itself (this will produce garbage if T has insufficient range 
 // or accuracy like ByteType, IntType, etc, but will work nicely on for example ComplexFloatType
+//
 // compute with precision of T
 final Img< T > convolved = Gauss.inNumericType( sigma, img );
 
