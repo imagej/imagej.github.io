@@ -84,4 +84,36 @@ final Img< T > convolved = Gauss.inFloat( sigma, img,
 
 For more advanced use of the Gaussian convolution, it accepts RandomAccessibles as input and output, too. In this way
 
+=== Some examples ===
+<source lang="java">
+// create a new, empty 2-d image
+final ArrayImgFactory<FloatType> factory = new ArrayImgFactory<FloatType>();
+final Img<FloatType> img = factory.create( new int[]{ 512, 256 }, new FloatType() );
+
+// fill it with some funny content			
+int i = 0;
+for ( final FloatType f : img )
+	f.set( i++ );
+			
+for ( final FloatType f : img )
+	if ( i++ % 7 == 0 || i % 8 == 0 )
+		f.set( f.get() * 1.5f );
+
+// show the input			
+ImageJFunctions.show( img );
+
+// define the 2-d sigmas
+final double[] sigma = new double[] { 2, 0.75 };
+
+// compute a gauss convolution in float precision
+ImageJFunctions.show( Gauss.inFloat( sigma, img );	
+
+// compute a Gaussian convolution in-place in a small Interval	
+Gauss.inFloat( sigma, Views.extendMirrorSingle( img ), new FinalInterval( new long[]{300,150},
+	new long[]{ 400,200 } ), img, new Location( new long[] {300,150} ), img.factory() );
+
+// show the result
+ImageJFunctions.show( img );
+</source>
+
 == Implementation ==
