@@ -67,7 +67,17 @@ final Img< T > convolved = Gauss.inNumericType( sigma, img );
 
 // compute with precision of T in-place
 Gauss.inNumericTypeInPlace( sigma, img );
-
 </source>
+
+By default, the Gaussian convolution will use the OutOfBoundsMirrorFactory with single boundary. If another OutOfBoundsFactory is desired, it can be defined on any of those methods as follows:
+
+<source lang="java">
+// compute with float precision, but on T using an OutOfBoundsMirrorFactory where the "mirror"
+// lies behind the last pixel, i.e. all border pixels are there twice
+final Img< T > convolved = Gauss.inFloat( sigma, img, 
+  new OutOfBoundsMirrorFactory<FloatType, RandomAccessibleInterval<FloatType>>( Boundary.DOUBLE ) ) );
+</source>
+
+For more advanced use of the Gaussian convolution, it accepts RandomAccessibles as input and output, too. In this way
 
 == Implementation ==
