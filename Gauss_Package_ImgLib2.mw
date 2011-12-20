@@ -77,7 +77,7 @@ By default, the Gaussian convolution will use the OutOfBoundsMirrorFactory with 
 // compute with float precision, but on T using an OutOfBoundsMirrorFactory where the "mirror"
 // lies behind the last pixel, i.e. all border pixels are there twice
 final Img< T > convolved = Gauss.inFloat( sigma, img, 
-  new OutOfBoundsMirrorFactory<FloatType, RandomAccessibleInterval<FloatType>>( Boundary.DOUBLE ) ) );
+  new OutOfBoundsPeriodicFactory<FloatType, RandomAccessibleInterval<FloatType>>() ) );
 </source>
 
 === Computing gaussian convolutions on RandomAccessibles with Intervals ===
