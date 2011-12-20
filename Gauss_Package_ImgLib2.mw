@@ -16,3 +16,26 @@
 The gauss package for ImgLib2 is an generic, optimized implementation of the traditional Gaussian convolution. It can perform anisotropic, n-dimensional convolution on any image or any interval on an image, if required even in-place. 
 
 The computation is performed multi-threaded and accesses each pixel of the input and output containers only once to guarantee high performance, even on paged cell containers. The precision of the computation can be of any ImgLib2 NumericType, however, there are more efficient implementations for convolution with float and double precision. Any precision of gaussian convolution can be computed on any type of real valued input data, it will be internally wrapped to either float or double. For other conversions (e.g. perform a gaussian convolution on complex float data with complex double precision) respective converters need to be provided. However, any NumericType can always be convolved with its own precision. Warning: this might reduce the accuracy of the computation significantly if the Type itself is an integer type.
+
+== Documentation ==
+
+The Gauss package for ImgLib2 consists of several classes which abstract the convolution operations to n dimensions. '''The developer/user should use the static methods provided in the Gauss.java class.''' It will determine itself which class should be used with which parameters in order to provide the best performance possible. 
+
+=== Computing gaussian convolutions on entire images ===
+
+For computing a Gaussian convolution on an entire '''Img<T>''', simply call one the following lines of code:
+
+<source lang="java">
+// the source
+final Img< T > img = ...
+
+// define the sigma for each dimension
+final double[] sigma = new double[ img.numDimensions() ];
+for ( int d = 0; d < sigma.length; ++d )
+    sigma[ d ] = 1 + d;
+
+// compute
+final Img< T > convolved = Gauss.inFloat( sigma, img );
+</source>
+
+== Implementation ==
