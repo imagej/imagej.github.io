@@ -55,7 +55,9 @@ Implements Bernsen's thresholding method.  Note that this implementation uses ci
 
 '''Parameter 2''': not used, ignored. 
 
-The method uses a user-provided ''contrast threshold''. The ''threshold'' is set at the midgrey value (the mean of the minimum and maximum grey values in the local window). If the ''local contrast'' (max-min) is below the ''contrast threshold'' the neighbourhood is considered to consist only of one class.
+The method uses a user-provided ''contrast threshold''. 
+If the ''local contrast'' (max-min) is above or equal to the ''contrast threshold'', the ''threshold'' is set at the ''local midgrey value'' (the mean of the minimum and maximum grey values in the local window). 
+If the ''local contrast'' is below the ''contrast threshold'' the neighbourhood is considered to consist only of one class and the pixel is set to object or background depending on the value of the midgrey.
 
  if ( local_contrast < contrast_threshold )
   pixel = ( mid_gray >= 128 ) ? object :  background
