@@ -3,22 +3,20 @@
 | software               = ImageJ
 | author                 = Rainer Heintzmann
 | maintainer             = Rainer Heintzmann, [[User:JeanYvesTinevez|Jean-Yves Tinevez]]
-| filename               = link to the jar here
+| filename               = [http://www.nanoimaging.uni-jena.de/View5D/View5D_Sources_V1.3.00.zip src of last release (zip)]
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/View5D_/view5d/View5D_.java;h=f631797d745106066d4b60b2d03412ffc9ae2d25;hb=refs/heads/master on gitweb]
 | released               = April 2007
-| latest version         = V1.2.17 - May 2010
-| status                 = 
+| latest version         = V1.3.00 - Jan 2011
+| status                 = not active - stable
 | category               = [[:Category:Plugins|Plugins]]
-| website                = [http://www.nanoimaging.de]
+| website                = [http://www.nanoimaging.de/View5D/ View5D homepage]
 }}
 
 
 == Purpose ==
 
-The View5D plugin interactively displays of up to 5 dimensional volumetric datasets.
-It can do convenient data inspection, basic particle tracking, and a lot more.
+View5D conveniently allows for the display and navigation through up to 5 dimensional volumetric datasets. It also features some analysis tools such as semiautomatic tracking and scattergrams.
 
-Rainer and friends have written a lot of tutorials and help around the user interface, so as to maximize usability of this plugin. Have a look here for more info: http://www.nanoimaging.de.
-
+Rainer and friends have written a lot of tutorials and help around the user interface, so as to maximize usability of this plugin. Have a look here for more info: [http://www.nanoimaging.de/View5D/ View5D homepage].
 
 [[Category:Plugins]]
