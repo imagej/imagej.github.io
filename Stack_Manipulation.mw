@@ -5,7 +5,7 @@
 | maintainer             = Jean-Yves Tinevez ([mailto:tinevez@mpi-cbg.de tinevez@mpi-cbg.de])
 | filename               = Stack_Manipulation.jar
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Stack_Manipulation;hb=HEAD on gitweb] (10 java files)
-| latest version         =  18 October 2010
+| latest version         =  27 December 2011
 | status                 = stable, not active 
 }}
 
@@ -14,7 +14,7 @@
 == Content and purpose ==
 
 This package regroups various "small" plugins dedicated to the manipulation of stacks, allowing to sort them, combine them, etc...
-As they are more of a utility package, they all can be found in the ''Image > Stacks > Manipulation'' menu.
+As they are more of a utility package, they all can be found in the ''Image > Stacks > Tools_'' menu, next to the ones provided by bare ImageJ.
 
 
 What they do is pretty much summarized by the following diagram, taken from the MacBiophotonics<ref>http://www.macbiophotonics.ca/imagej/stack.htm</ref> webpage. 
@@ -28,31 +28,15 @@ What they do is pretty much summarized by the following diagram, taken from the 
 * The '''Slice Keeper''' does the opposite that of '''Slice Remover'''. Instead of removing every nth slice in a stack, it creates a new stack by only keeping every nth slice from the original stack.
 
 
-* Since ImageJ version 1.44e (2 August 2010), the SubStack_Maker plugin is now part of ImageJ core (in ''Image>Stacks>Tools>Make Substack''), and has been consequently removed from this package.
-
-* Since ImageJ version 1.44f (22 August 2010), the Grouped Z stack projector plugin is part of ImageJ core (in ''Image > Stacks > Tools > Grouped Z Project..''), and has been consequently removed from this package.
-
 
 
 == Author and licenses ==
 
 We list here the authors for each part of this package, with corresponding licenses when relevant.
 
-
-=== Concatenate ===
-
-By [mailto:j.jackson_at_ucl.ac.uk Jon Jackson].
-Last modified June 29 2006.
-
-
-
 === DeInterleave  ===
 
 By [mailto:tcollins_at_macbiophotonics.ca Tony Collins].
-
-
-
-=== Stack Inserter ===
 
 
 
@@ -83,24 +67,12 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 
 
-=== Stack Combiner ===
-
-
 
 === Interleave ===
 
 By [mailto:tcollins_at_macbiophotonics.ca Tony Collins].
 
 
-
-=== Stack Reverser ===
-
-
-
-=== Stack Maker ===
-
-'''Demontager''': This plugin by Robert Clements converts a montaged image to an image stack based on the number of rows and columns input by the user. This is the opposite of what the Image/Stacks/Make Montage command does.
-http://rsb.info.nih.gov/ij/plugins/demontager.html
 
 === Slice Remover ===
 
