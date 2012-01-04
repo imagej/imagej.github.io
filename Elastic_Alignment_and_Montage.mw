@@ -13,10 +13,12 @@
 [[Image:Aligned-series-crop-512.gif|thumb|right|166px|Example 2: Example for elastic alignment and montaging.  7 serial TEM sections of the neuropil of a ''Drosophila melanogaster'' first instar larva, detail at 100% pixel resolution. Image courtesy of [http://albert.rierol.net/ Albert Cardona].]][[Image:Aligned-series-512.gif|thumb|right|166px|Example 1: Example for elastic alignment and montaging.  7 serial TEM sections of the neuropil of a ''Drosophila melanogaster'' first instar larva, downscaled by a factor of 12.  Image courtesy of [http://albert.rierol.net/ Albert Cardona].]]
 The plugins '''Elastic Stack Alignment''' and '''Elastic Montage''' implement automatic elastic registration of 2d-images.  The applications are:
 
-;Elastig Montage
+;Elastic Montage
 :montaging mosaics from overlapping tiles where the tiles have non-linear relative deformation
 ;Elastic Stack Alignment
 :alignment of deformed section series from serially sectioned volumes
+;TrakEM2
+:incorporates both elastic montaging and elastic series alignment through the alignment menu
 
 Images are warped such that corresponding regions overlap optimally.  The warp for each single image is calculated such that each image in the whole global montage or series will be deformed minimally.  That way, arbitrarily large series of images can be aligned without accumulating artificial warps.
 
@@ -95,7 +97,7 @@ We perform block matching at a reasonably down-scaled version of the images.  Th
 
 ==Future Work==
 
-We will include these experimental plugins into TrakEM2 for interactive and transparent elastic montaging and series alignment including previously added annotations.  We will further investigate in automatic selection of appropriate parameters depending on available meta-information of the data sets (resolution, section thickness, deformation priors,...).  We will investigate appropriate identification strategies for discontinuities in the transformation fields such as section ruptures or folds and cut springs at such places.  We will investigate strategies to solve the alignment through hierarchical stages of accuracy for gaining better local accuracy and improved speed.
+We will further investigate in automatic selection of appropriate parameters depending on available meta-information of the data sets (resolution, section thickness, deformation priors,...).  We will investigate appropriate identification strategies for discontinuities in the transformation fields such as section ruptures or folds and cut springs at such places.  We will investigate strategies to solve the alignment through hierarchical stages of accuracy for gaining better local accuracy and improved speed.
 
 ==References==
 
