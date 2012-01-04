@@ -5,20 +5,20 @@
 | maintainer             = [[User:Saalfeld|Stephan Saalfeld]]
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/plugin]
 | released               = March 11<sup>th</sup>, 2011
-| latest version         = March 11<sup>th</sup>, 2011
+| latest version         = October 22<sup>nd</sup>, 2011
 | status                 = experimental, active
 | category               = [[:Category:Plugins|Plugins]], [[:Category:Registration|Registration]]
 }}==Introduction==
 
 [[Image:Aligned-series-crop-512.gif|thumb|right|166px|Example 2: Example for elastic alignment and montaging.  7 serial TEM sections of the neuropil of a ''Drosophila melanogaster'' first instar larva, detail at 100% pixel resolution. Image courtesy of [http://albert.rierol.net/ Albert Cardona].]][[Image:Aligned-series-512.gif|thumb|right|166px|Example 1: Example for elastic alignment and montaging.  7 serial TEM sections of the neuropil of a ''Drosophila melanogaster'' first instar larva, downscaled by a factor of 12.  Image courtesy of [http://albert.rierol.net/ Albert Cardona].]]
-The plugins '''Elastic Stack Alignment''' and '''Elastic Montage''' implement automatic elastic registration of 2d-images.  The applications are:
+We describe here our elastic alignment method for series or groups of overlapping 2d-images.  The method is accessible through the plugins '''Elastic Stack Alignment''' and '''Elastic Montage''' and incorporated in the '''[[TrakEM2]]''' software.  Applications are:
 
 ;Elastic Montage
 :montaging mosaics from overlapping tiles where the tiles have non-linear relative deformation
 ;Elastic Stack Alignment
 :alignment of deformed section series from serially sectioned volumes
 ;TrakEM2
-:incorporates both elastic montaging and elastic series alignment through the alignment menu
+:incorporates both elastic montaging and elastic series alignment through the alignment menu for series alignment and montaging of large multi-tile section series
 
 Images are warped such that corresponding regions overlap optimally.  The warp for each single image is calculated such that each image in the whole global montage or series will be deformed minimally.  That way, arbitrarily large series of images can be aligned without accumulating artificial warps.
 
