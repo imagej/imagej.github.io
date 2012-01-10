@@ -33,7 +33,7 @@ The corresponding binary labels are provided in an in-out fashion, i.e. white fo
 '''To get the training data, please, register in the [http://brainiac.mit.edu/isbi2012/ challenge server], log in and go to the "Downloads" section'''.
 
 ==Test data==
-The contesting segmentation methods will be ranked by their performance on a test dataset, also available in the [http://brainiac.mit.edu/isbi2012/ challenge server], after registration. This test data is another volume from the same Drosophila first instar larva VNC as the training dataset.
+The contesting segmentation methods will be ranked by their performance on a test dataset, also available in the [http://fiji.sc/isbi-challenge/home/ challenge server], after registration. This test data is another volume from the same Drosophila first instar larva VNC as the training dataset.
 
 ==Results format==
 The '''results''' are expected to be uploaded in the [http://brainiac.mit.edu/isbi2012/ challenge server] server as a '''32-bit TIFF 3D image, which values between 0 (100% membrane certainty) and 1 (100% non-membrane certainty).'''
