@@ -39,7 +39,7 @@ The contesting segmentation methods will be ranked by their performance on a tes
 The '''results''' are expected to be uploaded in the [http://fiji.sc/isbi-challenge/home/ challenge server] server as a '''32-bit TIFF 3D image, which values between 0 (100% membrane certainty) and 1 (100% non-membrane certainty).'''
 
 ==Evaluation metrics==
-In order to evaluate and rank the performances of the participant methods, we will use topology-based segmentation metrics, together with the pixel error (for the sake of metric comparison). Each metric will have an updated leader-board. 
+In order to evaluate and rank the performances of the participant methods, we will use topology-based segmentation metrics, together with the pixel error (for the sake of metric comparison). Each metric has an updated leader-board, only visible when you log in into the server. 
 
 The metrics are:
 
@@ -49,7 +49,7 @@ The metrics are:
 
 If you want to apply these metrics yourself to your own results, you can do it within Fiji using this [[Segmentation evaluation metrics - Script|script]].
 
-We understand that segmentation evaluation is an ongoing and sensitive research topic, therefore we open the metrics to discussion. A decision on the final metric (the one which will determine the challenge winner) will be made public on December 1<sup>st</sup>, 2011. Please, do not hesitate to contact the [[Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012#Organizers|organizers]] to discuss about the metric selection.
+We understand that segmentation evaluation is an ongoing and sensitive research topic, therefore we open the metrics to discussion. Please, do not hesitate to contact the [[Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012#Organizers|organizers]] to discuss about the metric selection.
 
 ==Organizers==
 * [[User:Iarganda | Ignacio Arganda-Carreras]] (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
