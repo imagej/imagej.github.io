@@ -18,7 +18,7 @@ The images are representative of actual images in the real-world, containing som
 * '''Notification of acceptance/presentation type''': <del>March 15<sup>th</sup></del> March 16<sup>th</sup>, 2012
 
 ==How to participate==
-'''Everybody''' can participate in the challenge. The only requirement consists of filling up the registration form [http://brainiac.mit.edu/isbi2012/ here] to get a user name and password to download the data and upload the results.
+'''Everybody''' can participate in the challenge. The only requirement consists of filling up the registration form [http://fiji.sc/isbi-challenge/home/ here] to get a user name and password to download the data and upload the results.
 
 This challenge is part of a [http://www.biomedicalimaging.org/index.php/programme/contestworkshops?showall=&start=2 workshop] previous to the [http://www.biomedicalimaging.org/ IEEE International Symposium on Biomedical Imaging (ISBI) 2012]. After the publication of the evaluation ranking, teams will be invited to submit an abstract. During the workshop, participants will have the opportunity to present their methods and the results will be discussed.  
 
@@ -30,13 +30,13 @@ The training data is a set of 30 sections from a serial section Transmission Ele
 
 The corresponding binary labels are provided in an in-out fashion, i.e. white for the pixels of segmented objects and black for the rest of pixels (which correspond mostly to membranes).
 
-'''To get the training data, please, register in the [http://brainiac.mit.edu/isbi2012/ challenge server], log in and go to the "Downloads" section'''.
+'''To get the training data, please, register in the [http://fiji.sc/isbi-challenge/home/ challenge server], log in and go to the "Downloads" section'''.
 
 ==Test data==
-The contesting segmentation methods will be ranked by their performance on a test dataset, also available in the [http://brainiac.mit.edu/isbi2012/ challenge server], after registration. This test data is another volume from the same Drosophila first instar larva VNC as the training dataset.
+The contesting segmentation methods will be ranked by their performance on a test dataset, also available in the [http://fiji.sc/isbi-challenge/home/ challenge server], after registration. This test data is another volume from the same Drosophila first instar larva VNC as the training dataset.
 
 ==Results format==
-The '''results''' are expected to be uploaded in the [http://brainiac.mit.edu/isbi2012/ challenge server] server as a '''32-bit TIFF 3D image, which values between 0 (100% membrane certainty) and 1 (100% non-membrane certainty).'''
+The '''results''' are expected to be uploaded in the [http://fiji.sc/isbi-challenge/home/ challenge server] server as a '''32-bit TIFF 3D image, which values between 0 (100% membrane certainty) and 1 (100% non-membrane certainty).'''
 
 ==Evaluation metrics==
 In order to evaluate and rank the performances of the participant methods, we will use topology-based segmentation metrics, together with the pixel error (for the sake of metric comparison). Each metric will have an updated leader-board. 
