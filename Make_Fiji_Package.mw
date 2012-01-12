@@ -1,0 +1,20 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Fiji Packager
+| maintainer             = Johannes Schindelin
+| author                 = Johannes Schindelin
+| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Fiji_Package_Maker/fiji/packaging;hb=refs/heads/master in gitweb]
+| released               = 12/01/2012
+| latest version         = 12/01/2012
+| status                 = stable
+| category               = [[:Category:Plugins]]
+| website                = 
+}}
+The Fiji Packager allows you to bundle an existing Fiji installation with all 3rd party plugins and added update sites into a single archive (.zip, .tar.gz, .tar.bz2 are supported at the moment).
+
+After clicking on ''Plugins>Utilities>Make Fiji Package'' (note: there are two ''Plugins>Utilities'' menus because ImageJ1 enforces separate submenus for non-core plugins which makes things a little bit confusing), you will be asked for the format and the file name.
+
+After both are specified, the plugin does all the rest, reporting its progress in the status bar.
+
+[[Category:Tutorials]]
+[[Category:Plugins]]
