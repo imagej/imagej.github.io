@@ -1,5 +1,3 @@
-__TOC__
-
 {{Infobox Plugin
 | name                  = TrackMate_
 | software              = Fiji
@@ -10,6 +8,8 @@ __TOC__
 | status                = beta
 | category              = [[:Category:Segmentation|Segmentation]], [[:Category:Tracking|Tracking]]
 }}
+
+__TOC__
 
 '''Not released yet''' - this plugin is still in development, and is only available through downloading the source.
 
