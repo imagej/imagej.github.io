@@ -75,12 +75,11 @@ The segmentation / filtering / particle-linking processes and results are visual
 
 Several automated segmentation and linking algorithms are provided. But you are also offered to edit the results manually, or even to completely skip the automatic steps, and perform fully manual segmentation and/or linking.
 
-Some tools for track and spot analysis are included. Various plots can be made directly from the plugin and for instance used to derive numerical results from the tracks. If they are not enough, functions are provided to export the whole results to other analysis software such as [[MATLAB]].
+Some tools for track and spot analysis are included. Various plots can be made directly from the plugin and for instance used to derive numerical results from the tracks. If they are not enough, functions are provided to export the whole results to other analysis software such as MATLAB.
 
 TrackMate relies on several different libraries and plugins for data manipulation, analysis and visualization. This can be a pitfall when distributing a complex plugin, but this is where the Fiji magic comes into play. All dependencies are dealt with by through the Fiji updater. Installing TrackMate is easy as calling the [[Fiji Updater]], and the plugin must work out of the box. If this does not work for you, then it is a bug and we commit to fix it.
 
 A strong emphasis is made on performance, and TrackMate will take advantage of multi-cores hardware.
-
 
 ==== For developers ====
 
