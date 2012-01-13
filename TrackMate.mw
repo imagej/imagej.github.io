@@ -80,7 +80,7 @@ TrackMate was developed to serve as a tool for Life-Science image analysis commu
 
 
 
-== For users ===
+=== For users ===
 
 
 * [[Getting started with TrackMate]] is a basic tutorial that explains how TrackMate works on an easy image. You should start here.
@@ -88,10 +88,10 @@ TrackMate was developed to serve as a tool for Life-Science image analysis commu
 * [[Manual tracking using TrackMate]] shows how to perform manual segmentation and manual particle -linking.
 
 
-== For developers ==
+=== For developers ===
 
 
-Extending TrackMate is not completely trivial. Rather than sending you to the API, we propose you some tutorials using dummy examples.
+Extending TrackMate is not completely trivial. However, it should be of no difficulty for an average Java developer. Rather than sending you to the API, we propose you some tutorials using dummy examples.
 
 * [[How to write your own segmentation algorithm for TrackMate]]
 * [[How to write your own particle-linking algorithm for TrackMate]]
