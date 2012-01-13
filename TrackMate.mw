@@ -45,12 +45,11 @@ __TOC__
 === Single Particle Tracking ===
 
 
-It provides the tools to perform single particle tracking (SPT). SPT is an image analysis challenge where the goal is to segment and follow over time some labelled, spot-like structures. Each spot is segmented in multiple frames and its trajectory is reconstructed by assigning it an identity over these frames, in the shape of a track. These tracks can then be either visualized or yield further analysis results such as velocity, total displacement, diffusion characteristics, division events, etc...
+TrackMate provides the tools to perform single particle tracking (SPT). SPT is an image analysis challenge where the goal is to segment and follow over time some labelled, spot-like structures. Each spot is segmented in multiple frames and its trajectory is reconstructed by assigning it an identity over these frames, in the shape of a track. These tracks can then be either visualized or yield further analysis results such as velocity, total displacement, diffusion characteristics, division events, etc...
 
 TrackMate can deal with single particles, or spot-like objects. They are bright objects over a dark background for which the object contour shape is not important, but for which the main information can be extracted from the X,Y,Z coordinates over time. Examples include sub-resolution fluorescent spots, labelled traffic vesicles, nuclei or cells imaged at low resolution. 
 
 Though these objects are solely represented by a X,Y,Z,T coordinates array, TrackMate can compute numerical features for each spot, given its coordinates and a radius. For instance, the mean, max, min and median intensity will be computed, as well as the estimated radius, estimated morphology and orientation for each spot, allowing to follow how these feature evolves over time for one object.
-
 
 === TrackMate goals ===
 
