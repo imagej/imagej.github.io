@@ -22,6 +22,27 @@ __TOC__
 ''TrackMate is a Fiji plugin for you everyday 2D or 3D tracking problems.''
 
 
+
+
+=== Examples ===
+
+[[Image:TrackMate Celegans devel.gif|center|frame|200px|The first hour of a ''C.elegans'' embryo development, followed using TrackMate (strain: [http://www.wormbase.org/db/gene/strain?name=AZ212;class=Strain AZ212])]]
+
+
+[[Image:TrackMate Celegans lineage detail.png|300px|thumb|A detail of the corresponding unannotated lineage visualized in TrackScheme. The full lineage of this one hour of imaging is [[File:TrackMate Celegans lineage.pdf|there]].]]
+
+
+
+
+[[Image:TrackMate Split Merge Gapclosing.gif|frame|TrackMate can be set to detect and deal with gap-closing events, splitting events and merging events.]] 
+
+
+[[Image:TrackMate Celegans CellDiameter.png|frame|TrackMate can also be used for basic track analysis. Here is plotted the estimated diameter of a ''C.elegans'' cell as it divides over time.]] 
+
+
+<p>
+
+
 === Single Particle Tracking ===
 
 
