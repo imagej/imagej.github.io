@@ -1,12 +1,12 @@
 {{Infobox Plugin
 | name                  = TrackMate_
-| software             = Fiji
-| author                = [[User:NicholasPerry|Nick Perry]], [[JeanYvesTinevez|Jean-Yves Tinevez]]
-| maintainer         = [mailto:jean-yves.tinevez@pasteur.fr Jean-Yves Tinevez]
+| software              = Fiji
+| author                = [[User:NicholasPerry|Nick Perry]], [[JeanYvesTinevez|Jean-Yves Tinevez]], [[User:Schindelin|Johannes Schindelin]]
+| maintainer            = [mailto:jean-yves.tinevez@pasteur.fr Jean-Yves Tinevez]
 | source                = 
-| released             = Not released yet
-| status               = alpha
-| category             = [[:Category:Segmentation|Segmentation]], [[:Category:Tracking|Tracking]]
+| released              = Not released yet
+| status                = beta
+| category              = [[:Category:Segmentation|Segmentation]], [[:Category:Tracking|Tracking]]
 }}
 
 '''Not released yet''' - this plugin is still in development, and is only available through downloading the source.
@@ -14,6 +14,13 @@
 
 
 == General ==
+
+TrackMate is a Fiji plugin for you everyday tracking problems. Its development focuses on achieving two concomitant goals:
+
+For users, it provides the tools to solve single particle tracking (SPT) problems. SPT is an image analysis challenge where the goal is to segment and follow over time some labelled, spot-like structures. Each spot is segmented in multiple frames and its trajectory is reconstructed by assigning it an identity over these frames, in the shape of a track.
+
+
+
 
 The TrackMate plugin provides a way to semi-automatically segment "spherical" objects from a 2D or 3D image, and track them over time. Currently, only bright (white) objects on a dark (black) background are supported.
 
