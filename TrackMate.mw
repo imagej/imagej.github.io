@@ -29,7 +29,7 @@ __TOC__
 [[Image:TrackMate Celegans devel.gif|center|frame|200px|The first hour of a ''C.elegans'' embryo development, followed using TrackMate (strain: [http://www.wormbase.org/db/gene/strain?name=AZ212;class=Strain AZ212])]]
 
 
-[[Image:TrackMate Celegans lineage detail.png|300px|thumb|A detail of the corresponding unannotated lineage visualized in TrackScheme. The full lineage of this one hour of imaging is [[File:TrackMate Celegans lineage.pdf|there]].]]
+[[Image:TrackMate Celegans lineage detail.png|300px|thumb|A detail of the corresponding unannotated lineage visualized in TrackScheme. The full lineage of this one hour of imaging is [[:Image:TrackMate Celegans lineage.pdf|there]].]]
 
 
 
@@ -41,7 +41,6 @@ __TOC__
 
 
 <p>
-
 
 === Single Particle Tracking ===
 
