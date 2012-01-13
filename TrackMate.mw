@@ -19,7 +19,7 @@ __TOC__
 
 
 
-''TrackMate is a Fiji plugin for you everyday 2D or 3D tracking problems.''
+''TrackMate is your buddy for your everyday tracking .''
 
 
 
@@ -42,6 +42,11 @@ __TOC__
 
 <p>
 
+
+
+
+
+
 === Single Particle Tracking ===
 
 
@@ -51,11 +56,14 @@ TrackMate can deal with single particles, or spot-like objects. They are bright 
 
 Though these objects are solely represented by a X,Y,Z,T coordinates array, TrackMate can compute numerical features for each spot, given its coordinates and a radius. For instance, the mean, max, min and median intensity will be computed, as well as the estimated radius, estimated morphology and orientation for each spot, allowing to follow how these feature evolves over time for one object.
 
+
+
+
+
 === TrackMate goals ===
 
 
 Its development focuses on achieving two concomitant goals:
-
 
 ==== For users ====
 
@@ -76,7 +84,6 @@ A strong emphasis is made on performance, and TrackMate will take advantage of m
 
 ==== For developers ====
 
-
 Have you ever wanted to develop your own segmentation and/or particle-linking algorithm, but wanted to avoid the painful burden to also write a GUI, several visualization tools, analysis tools and exporting facilities? Then TrackMate is for you.
 
 We spent a considerable amount of time making TrackMate extensible in every aspect. It has a very modular design, that makes it easy to extend. You can for instance develop your own segmentation algorithm, extend TrackMate to include it, and benefit from the visualization tools and the GUI already there. Here is a list of the components you can extend and customize:
@@ -95,16 +102,17 @@ TrackMate was developed to serve as a tool for Life-Science image analysis commu
 
 
 
+
+
+
 == Documentation and tutorials ==
 
-
-
 === For users ===
-
 
 * [[Getting started with TrackMate]] is a basic tutorial that explains how TrackMate works on an easy image. You should start here.
 * [[TrackMate current components]] details and documents the automated segmentation algorithms, particle-linking algoirthms, etc.. currently implemented in TrackMate. 
 * [[Manual tracking using TrackMate]] shows how to perform manual segmentation and manual particle -linking.
+
 
 
 === For developers ===
