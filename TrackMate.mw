@@ -13,13 +13,50 @@
 
 
 
-== General ==
-
-TrackMate is a Fiji plugin for you everyday tracking problems. Its development focuses on achieving two concomitant goals:
-
-For users, it provides the tools to solve single particle tracking (SPT) problems. SPT is an image analysis challenge where the goal is to segment and follow over time some labelled, spot-like structures. Each spot is segmented in multiple frames and its trajectory is reconstructed by assigning it an identity over these frames, in the shape of a track.
 
 
+
+''TrackMate is a Fiji plugin for you everyday 2D or 3D tracking problems.''
+
+
+==== Single Particle Tracking ====
+
+
+It provides the tools to perform single particle tracking (SPT). SPT is an image analysis challenge where the goal is to segment and follow over time some labelled, spot-like structures. Each spot is segmented in multiple frames and its trajectory is reconstructed by assigning it an identity over these frames, in the shape of a track. These tracks can then be either visualized or yield further analysis results such as velocity, total displacement, diffusion characteristics, division events, etc...
+
+TrackMate can deal with single particles, or spot-like objects. They are bright objects over a dark background for which the object contour shape is not important, but for which the main information can be extracted from the X,Y,Z coordinates over time. Examples include sub-resolution fluorescent spots, labelled traffic vesicles, nuclei or cells imaged at low resolution. 
+
+Though these objects are solely represented by a X,Y,Z,T coordinates array, TrackMate can compute numerical features for each spot, given its coordinates and a radius. For instance, the mean, max, min and median intensity will be computed, as well as the estimated radius, estimated morphology and orientation for each spot, allowing to follow how these feature evolves over time for one object.
+
+
+==== TrackMate goals ====
+
+
+Its development focuses on achieving two concomitant goals:
+
+
+===== For users =====
+
+TrackMate aims at offering a generic solution that works out of the box, through a simple and sensible user interface. 
+
+The tracking process is divided in a series of steps, through which you will be guided thanks to a wizard-like GUI. It privileges tracking schemes where the segmentation step is decoupled from the tracking step.
+
+The segmentation / filtering / tracking processes and results are visualized immediately in 2D or 3D, allowing to judge their efficiency and adjust their control parameters. The visualization tools are the one shipped with Fiji and interact nicely with others plugin.
+
+Several automated segmentation and tracking algorithms are provided. But you are also offered to edit the results manually, or even to completely skip the automatic steps, and perform fully manual segmentation and/or tracking.
+
+Some tools for track and spot analysis are included. Various plots can be made directly from the plugin and for instance used to derive numerical results from the tracks. If they are not enough, functions are provided to export the whole results to other analysis software such as [[MATLAB]].
+
+TrackMate relies on several different libraries and plugins for data manipulation, analysis and visualization. This can be a pitfall when distributing a complex plugin, but this is where the Fiji magic comes into play. All dependences are dealt with by through the Fiji updater. Installing TrackMate is easy as calling the [[Fiji Updater]], and the plugin must work out of the box. If this does not work for you, then it is a bug and we commit to fix it.
+
+A strong emphasis is made on performance, and TrackMate will take advantage of multi-cores hardware.
+
+
+===== For developers =====
+
+Have you ever wanted to develop your own segmentation and/or tracking algorithm, but wanted to avoid the painful burden to also write a GUI, several visualization tools, analysis tools and exporting facilities? Then TrackMate is for you.
+
+ 
 
 
 The TrackMate plugin provides a way to semi-automatically segment "spherical" objects from a 2D or 3D image, and track them over time. Currently, only bright (white) objects on a dark (black) background are supported.
