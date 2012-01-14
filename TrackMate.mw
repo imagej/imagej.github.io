@@ -135,7 +135,7 @@ TrackMate actually depends on many other Fiji plugins or libraries. The [[Fiji B
 * Some algorithm in TrackMate rely on the facilities provided by the [http://commons.apache.org/math/ Commons-Math] Apache library and the [http://math.nist.gov/javanumerics/jama/ JAMA] matrix package. 
 * Exporting visualizations and analysis results to SVG, PDF and other formats are made through the [http://xmlgraphics.apache.org/batik/ Batik] and [http://itextpdf.com/ iText] libraries.
 * The TrackMate file format is plain XML, and is generated or loaded using the [http://www.jdom.org/ JDom] library.
-
+* For the icons, as almost every ImageJ plugin with a GUI, we used the [http://www.famfamfam.com/lab/icons/silk/ silk icon set], by Mark James. The TrackMate icon (the link) is taken from the [http://www.oxygen-icons.org/ oxygen icon set], released under the LGPL.
 
 
 [[Category:Segmentation]]
