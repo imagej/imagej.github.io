@@ -1,11 +1,8 @@
+This tutorial is the starting point for [[TrackMate]] users. It explains how it works by walking you through a simple case, using an easy image. Thee [[TrackMate]] plugin provides a way to semi-automatically segment spots or roughly spherical objects from a 2D or 3D image, and track them over time. 
 
-The TrackMate plugin provides a way to semi-automatically segment "spherical" objects from a 2D or 3D image, and track them over time. Currently, only bright (white) objects on a dark (black) background are supported.
+It follows the classical schemes, where the segmentation step and the particle-linking step are separated. 
 
-The plugin is logically separated into two distinct steps:
-
-<ol>
-<li>
-<p><b>Segmentation:</b> The segmentation step identifies where the objects are in the time-lapse image. All objects in all frames are identified in this first step (segmentation and tracking are not performed simultaneously). The method used here is the Laplacian of the Gaussian (LoG), followed by identification of regional maxima, or connected components of pixels with intensity strictly higher than all bordering pixels.</p> 
+The segmentation step identifies where the objects are in the time-lapse image. All objects in all frames are identified in this first step (segmentation and tracking are not performed simultaneously). The method used here is the Laplacian of the Gaussian (LoG), followed by identification of regional maxima, or connected components of pixels with intensity strictly higher than all bordering pixels.</p> 
 
 <p>The result is a candidate list of objects identified within the image. Since this approach to segmentation usually results in many false positives, a thresholding step is incorporated to separate true positives from the false positives. The objects can be thresholded on many features (the LoG value at the center of the object, the average brightness of the object within the expected volume, etc), and an automatic thresholding can be performed for any feature based on histogram thresholding. However, the user retains ultimate control and can threshold objects based on all features in any combination.</p>
 
@@ -72,3 +69,8 @@ The plugin is logically separated into two distinct steps:
 === Tracking ===
 
 <p>Once the segmented objects have been thresholded, click 'Next' to track the thresholded objects over time.</p>
+
+
+
+
+[[Category:Tutorial]]
