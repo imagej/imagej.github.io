@@ -9,7 +9,25 @@ In these views, TrackMate resembles a bit to the Spot Segmentation Wizard of [ht
 
 == The test image ==
 
-Grab the image we will use for this tutorial here.
+Grab the image we will use for this tutorial [http://fiji.sc/tinevez/TrackMate/FakeTracks.tif here], and open it in Fiji.
+
+[[Image:TrackMate FakeTracks.png|right|border|]]
+
+
+This is 128x128 stack of 50 frames, uncalibrated. It is noisy, but is still a very easy use case: there is at most 4 spots per frame, they are well separated, they are about the same size and the background is uniform. It is such an ideal case that you would not need TrackMate to deal with it. But for this first tutorial, it will help us getting through TrackMate without being bothered by difficulties.
+
+Also, if you look carefully, you will see that there are two splitting events - where a spot seems to divide in two spots in the next frame, one merging event - the opposite, and a gap closing event - where a spot disappear for one frame then reappear a bit further. TrackMate is made to handle these events, and we will see how. 
+
+
+== Starting TrackMate ==
+
+With this image selected, launch TrackMate from the menu ''Plugins > Tracking > Track Mate'' or from the [[Using the Command Launcher|Command launcher]]. The Track Mate GUI appears next to the image, displaying the starting dialog panel.
+
+This first panel allows you to check the spatial and temporal calibration of your data. It is very important to get it right, since everything afterwards will be based on physical units and not in pixel units (for instance μm and minutes, and not pixels and frames). In our case, that does not matter actually, since our test image has a dummy calibration (1 pixel = 1 pixel). 
+
+What is critical is also to check the dimensionality of the image. In our case, we have a 2D time-lapse of 50 frames. If metadata are not present or cannot be read, ImageJ tends to assume that stack always are Z-stack on a single time-point. 
+
+If the calibration or dimensionality of your data is not right, I recommend changing it in the image metadata itself, using ''Image > Properties'' (Ctrl+Shift+P). The press the 'Refresh' button on the TrackMate start panel to grab changes.
 
 
 The segmentation step identifies where the objects are in the time-lapse image. All objects in all frames are identified in this first step (segmentation and tracking are not performed simultaneously). The method used here is the Laplacian of the Gaussian (LoG), followed by identification of regional maxima, or connected components of pixels with intensity strictly higher than all bordering pixels.</p> 
