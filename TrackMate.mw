@@ -109,7 +109,8 @@ TrackMate was developed to serve as a tool for Life-Science image analysis commu
 === For users ===
 
 * [[Getting started with TrackMate]] is a basic tutorial that explains how TrackMate works on an easy image. You should start here.
-* [[#TrackMate current components|TrackMate current components]] details and documents the automated segmentation algorithms, particle-linking algoirthms, etc.. currently implemented in TrackMate. 
+* [[Track analysis using TrackMate]]
+* [[TrackMate algorithms|TrackMate algorithms]] details and documents the automated segmentation algorithms, particle-linking algorithms, etc.. currently implemented in TrackMate. 
 * [[Manual tracking using TrackMate]] shows how to perform manual segmentation and manual particle -linking.
 
 === For developers ===
