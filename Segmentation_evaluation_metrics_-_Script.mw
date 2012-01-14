@@ -81,7 +81,7 @@ if( calculateWarpingError )
     IJ.log("\nCalculating warping error by minimizing splits and mergers...");
     metric = new WarpingError( originalLabels, proposedLabels );    
     warpingError = metric.getMinimumSplitsAndMergersErrorValue( 0.0, 0.9, 0.1, false, 20 );
-    IJ.log("  Minimum warping error = " + warpingError);
+    IJ.log("  Minimum warping error: " + warpingError);
     IJ.log("  # errors (splits + mergers pixels) = " + Math.round(warpingError * originalLabels.getWidth() * originalLabels.getHeight() * originalLabels.getImageStackSize() ) );
 }
  
