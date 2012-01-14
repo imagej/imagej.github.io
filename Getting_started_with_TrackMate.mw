@@ -1,6 +1,16 @@
-This tutorial is the starting point for [[TrackMate]] users. It explains how it works by walking you through a simple case, using an easy image. Thee [[TrackMate]] plugin provides a way to semi-automatically segment spots or roughly spherical objects from a 2D or 3D image, and track them over time. 
+== Introduction ==
 
-It follows the classical schemes, where the segmentation step and the particle-linking step are separated. 
+This tutorial is the starting point for [[TrackMate]] users. It explains how it works by walking you through a simple case, using an easy image. 
+
+The [[TrackMate]] plugin provides a way to semi-automatically segment spots or roughly spherical objects from a 2D or 3D image, and track them over time. It follows the classical scheme, where the segmentation step and the particle-linking steps are separated. Therefore each step is handled in the user interface by a specific panel, and you will go back in forth through them. 
+Also, TrackMate has a fishing net with small holes: it will find as much spots as it can, even the ones you are not interested. So there is a step to filter them out before tracking. 
+In these views, TrackMate resembles a bit to the Spot Segmentation Wizard of [http://www.bitplane.com/go/products/imaris Imaris™].
+
+
+== The test image ==
+
+Grab the image we will use for this tutorial here.
+
 
 The segmentation step identifies where the objects are in the time-lapse image. All objects in all frames are identified in this first step (segmentation and tracking are not performed simultaneously). The method used here is the Laplacian of the Gaussian (LoG), followed by identification of regional maxima, or connected components of pixels with intensity strictly higher than all bordering pixels.</p> 
 
