@@ -52,83 +52,18 @@ You can also define a sub-region for processing: if you are only interested in f
 
 If you want to define the min and max '''Z''' and/ or '''T''', you have to edit manually the fields on the panel. 
 
-Defining a smaller area to analyze can be very beneficial to test and inspect for correct parameters, particularly for the segmentation step. In this tutorial, the image is so small and parse that we need not worrying about it.
+Defining a smaller area to analyze can be very beneficial to test and inspect for correct parameters, particularly for the segmentation step. In this tutorial, the image is so small and parse that we need not worrying about it. Press the '''Next'''button to step forward.
+
+<br style="clear: both" />
+
+== Choosing a segmenter ==
 
 
+[[Image:TrackMate SegmenterChoice.png|right|border|]]
 
+You are now offered to choose a segmentation algorithm ("segmenter") amongst the currently implemented ones. 
 
-
-
-
-
-The segmentation step identifies where the objects are in the time-lapse image. All objects in all frames are identified in this first step (segmentation and tracking are not performed simultaneously). The method used here is the Laplacian of the Gaussian (LoG), followed by identification of regional maxima, or connected components of pixels with intensity strictly higher than all bordering pixels.</p> 
-
-<p>The result is a candidate list of objects identified within the image. Since this approach to segmentation usually results in many false positives, a thresholding step is incorporated to separate true positives from the false positives. The objects can be thresholded on many features (the LoG value at the center of the object, the average brightness of the object within the expected volume, etc), and an automatic thresholding can be performed for any feature based on histogram thresholding. However, the user retains ultimate control and can threshold objects based on all features in any combination.</p>
-
-<p>Following thresholding, the candidate list of objects is refined to a finalized list of objects, which is used as the input for the tracking step.</p>
-</li>
-
-<li>
-<p><b>Tracking:</b> The tracking algorithm is an implementation of the algorithm described by Jaqaman, K. et al. in the paper 'Robust single-particle tracking in live-cell time-lapse sequences' (Nature Methods, 2008). In short, this algorithm turns tracking into two separate steps, each of which is solved as a Linear Assignment Problem (LAP).</p>
-
-<p>The two steps in this tracking method are: 
-
-<ol>
-<li> Links are made between objects in consecutive frames to create track segments (one-to-one)</li>
-<li> Links are made between track segments (merge, split, gap closure). </li>
-</ol>
-</p>
-
-<p>The tracking algorithm allows for the following, biologically defined events:
-
-<ul>
-<li>merging</li>
-<li>splitting</li>
-<li>disappearance</li>
-<li>appearance</li>
-</ul>
-</p>
-</li>
-</ol>
-
-== Settings ==
-
-<p>The only required setting is the <u>estimated diameter of the objects being tracked</u>, in physical units.</p>
-
-<p>The user can also choose to modify the calibration settings of the image,  and crop the image in any dimension (x, y, z, as well as t).</p>
-
-== Tutorial ==
-
-=== Initialization ===
-
-<p>Before starting the plugin, be sure to have the 2D or 3D image (over time, if tracking) selected. This image should contain roughly "spherical" blobs (for example: nuclei, bacteria, particles) that are to be segmented and tracked. Then, open the TrackMate plugin.</p>
-
-<p>The only required parameter for the plugin is the estimated diameter of the object in physical units. Once this has been entered, adjust calibration settings as needed (if the image is properly calibrated, you do not have to change the calibration settings). You may also crop the image in the x, y, z, and t dimensions. You may want to do this if the image contains objects you do not wish to track, large regions of noise, or if you do not want to track over all frames.</p>
-
-<p>Once all of the parameters have been set, select 'Next.' This initializes TrackMate's segmentation step, which is then executed.</p>
-
-=== Segmentation ===
-
-<p>The segmentation step identifies all potential objects in the image (over all frames). The actual segmentation is performed automatically, and requires no input from the user.</p>
-
-=== Thresholding Segmentation Results ===
-
-<p>You can now threshold the identified objects based on a number of features, the full list of which can be seen in the drop-down menu. The features can be used in combination with one another to refine the results. (Currently, only the logical operator 'and' is supported.)</p>
-
-<p>Select which features you would like to threshold the objects with (LoG is typically a good feature to threshold), and use the histograms to help determine good threshold values. Features can be added or removed using the '+' and '-' buttons, respectively. You may also choose whether to threshold objects above or below the value you pick.</p>
-
-<p>For many features, the 'noisy' objects (false positives) will be clumped together to the right or left end of the histogram in a pseudo-normal distribution. Typically, you will want to choose threshold values which exclude these regions of the histogram (we want only those few objects which meet our criteria).</p>
-
-<p>Note that each feature contains an 'auto' button, which will perform automatic thresholding on that feature (Otsu threshold).</p>
-
-<p>As a concrete example, suppose we want to select all objects based on the LoG value and the mean intensity within their estimated volume. To accomplish this, first select 'LoG Value' from the drop-down, and either press 'auto' or select the value manually using the histogram. Then select the '+' button to add another feature to threshold, and choose 'Mean Intensity' from the drop-down. Again, select the value to threshold on with either the 'auto' button or by choosing the value manually on the histogram.</p>
-
-<p>Once you are finished thresholding, select 'Next' to track the thresholded objects over time.</p>
-
-=== Tracking ===
-
-<p>Once the segmented objects have been thresholded, click 'Next' to track the thresholded objects over time.</p>
-
+The choice is actually quite limited. Apart 
 
 
 
