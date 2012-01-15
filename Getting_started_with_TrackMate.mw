@@ -63,7 +63,7 @@ Defining a smaller area to analyze can be very beneficial to test and inspect fo
 
 You are now offered to choose a segmentation algorithm ("segmenter") amongst the currently implemented ones. 
 
-The choice is actually quite limited. Apart from the '''Manual segmentation''', you will find 3 segmenters, but they are all based on [http://en.wikipedia.org/wiki/Blob_detection#The_Laplacian_of_Gaussian LoG segmentation]. They are described in detail elsewhere, but here is what you need to know. 
+The choice is actually quite limited. Apart from the '''Manual segmentation''', you will find 3 segmenters, but they are all based on [http://en.wikipedia.org/wiki/Blob_detection#The_Laplacian_of_Gaussian LoG (Laplacian of Gaussian) segmentation]. They are described in detail elsewhere, but here is what you need to know. 
 
 * The '''Log segmenter''' applies a plain LoG segmentation on the image. All calculations are made in the Fourier space, which makes it optimal for intermediate spot sizes, between ≈5 and ≈20 pixels in diameter.
 * The '''Dog segmenter''' uses the [http://en.wikipedia.org/wiki/Blob_detection#The_difference_of_Gaussians_approach difference of Gaussians] approach to approximate a LoG filter by the difference of 2 Gaussians. Calculations are made in the direct space, and it is optimal for small spot sizes, below ≈5 pixels.
@@ -71,8 +71,72 @@ The choice is actually quite limited. Apart from the '''Manual segmentation''', 
 
 In our case, let us just use the '''Dog segmenter'''.
 
+<br style="clear: both" />
+
+== The segmenter configuration panel ==
+
+[[Image:TrackMate SegmenterConfig.png|right|border|]]
+
+The LoG-based segmenters fortunately demand very few parameters to tune them. The only really important one is the ''Estimated blob diameter'''. Just enter the approximate size of the spots you are looking to tracks. Careful: you are expected to enter it in <u>physical units</u>. In our dummy example, there is no calibration (1 pixel = 1 pixel), so it does not appear here. 
+
+There are extra fields that you can configure also. The '''Threshold''' numerical value aims at helping dealing with situation where a gigantic number of spots can be found. Every spot with a maximal intensity value below this threshold value will not be retained, which can help saving memory. You set this field manually, or by adjusting the threshold using ImageJ: call the ''Image > Adjust > Threshold'' menu item (Ctrl + Shit + T), adjust the upper threshold to your liking, the press the '''Refresh''' button on the panel. This will grab the value you just set. 
+
+You can check '''Use median filter''': this will apply a 3x3 median filter prior to any processing. This can help dealing with images that have a marked salt & pepper noise which generates spurious spots. 
+
+We hope that TrackMate will be used in experiments requiring '''Sub-pixel localization''', such as following motor proteins in biophysical experiments, so we added schemes to achieve this. The one currently implemented uses a quadratic fitting scheme (made by Stephan Saalfeld and Stephan Preibisch) based on [http://www.cs.ubc.ca/~lowe/keypoints/ David Lowe SIFT work]<ref>David G. Lowe, "Distinctive image features from scale-invariant keypoints," International Journal of Computer Vision, 60, 2 (2004), pp. 91-110.</ref>. It has the advantage of being very quick, compared to the segmentation time itself.
+
+The two others automated segmenters share more or less the same fields in their own configuration panel. The '''Downsampled LoG segmenter''' simply asks for an extra down-sampling integer factor. 
+
+In our case, the spots we want to track are bout 5 pixels in diameter, so this is what we enter in the corresponding field. We don't need anything else. The '''Sub-pixel localization''' option adds a very little overhead so we can leave it on.
+
+<br style="clear: both" />
+
+== The segmentation process ==
+
+[[Image:TrackMate Segmenting.png|right|border|]]
+
+Once you are happy with the segmentation parameters, press the '''Next''' button and the segmentation will start. The TrackMate GUI displays the log panel, that you will meet several times during the process. It is basically made of a text area that recapitulates your choices and send information on the current process, and of a progress bar on top. You can copy-paste the text if you want to keep track of the process somewhere. 
+
+TrackMate takes advantage of multi-core computers, which seems to be the standard nowadays. It will segment one time-frame per core available. On computers with many cores, the progress bar will seems to move in a bulky way: if you have 16 cores, 16 time-points will be segmented at once, and it is likely that they will be finished approximately on the same time. So don't be worried if the progress bar does not move in the beginning for large images.
+
+On our dummy image, this is clearly something we need to worry about, and the segmentation should be over in a few seconds. Typically, this is the step that takes the longer. Once the segmentation is done, the '''Next''' button is re-enabled.
+
+<br style="clear: both" />
+
+== Initial spot filtering == 
+
+[[Image:TrackMate InitThresholding.png|right|border|]]
+
+Here is a difficult step to explain, particularly because we do not need at all now. If the explanations following in this paragraph seem foggy, please feel free to press the '''Next''' button and skip to the next paragraph. This one is all related to performance, memory and disk usage in difficult cases.
+
+TrackMate uses generic segmentation algorithms for which there is only a little number of parameters to specify. The price to pay then, is that you can get a lot of undesired spots as an outcome. And in some cases, a really large amount of those.
+
+This is why there is spot features and feature filters. In the next steps, each spot will have a series of numerical features calculated using its location, radius and the image it is found in, such as the mean pixel intensity. You will be able to define filters on these features, to retain only the ones that are relevant to your study.
+
+But for a very large number of spots - let's say: more than 1 million of them - performance issues can kick in. Those millions of spots will be stored in the model, and saved in the TrackMate file, in case you want to step back and change the filters because for instance you realized you are not happy with the end results (you can do that). Some visualization tools - the 3D displayer for instance - will generate the renderings for those millions of spots at once and hide or show them depending on the filter values, because it is too expensive to recreate the renderings while tuning the filter values.
+
+To deal with that, we added a first filter prior to any other step, that uses the '''Quality''' value. The quality value is set by the segmenter, and is an arbitrary measure of the likelihood of each spot to be relevant. 
 
 
 
+
+
+
+<br style="clear: both" />
+
+
+== Spot and spot filtering ==
+
+[[Image:TrackMate FilterSpots 1.png|right|border|]]
+
+[[Image:TrackMate FilterSpots 2.png|right|border|]]
+
+
+
+<br style="clear: both" />
+
+== References ==
+
+<references/>
 
 [[Category:Tutorials]]
