@@ -42,7 +42,7 @@ The advantage of this approach is that you can launch TrackMate, immediately pre
 
 [[Image:TrackMate StartPanel.png|right|border|]]
 
-This first panel allows you to check the spatial and temporal calibration of your data. It is very important to get it right, since everything afterwards will be based on physical units and not in pixel units (for instance μm and minutes, and not pixels and frames). In our case, that does not matter actually, since our test image has a dummy calibration (1 pixel = 1 pixel). 
+This first panel allows you to check the spatial and temporal calibration of your data. It is very important to get it right, since everything afterwards will be based on physical units and not in pixel units (for instance μm and minutes, and not pixels and frames). In our case, that does not matter actually, since our test image has a dummy calibration (<tt>1 pixel = 1 pixel</tt>). 
 
 What is critical is also to check the dimensionality of the image. In our case, we have a 2D time-lapse of 50 frames. If metadata are not present or cannot be read, ImageJ tends to assume that stack always are Z-stack on a single time-point. 
 
@@ -77,13 +77,13 @@ In our case, let us just use the '''Dog segmenter'''.
 
 [[Image:TrackMate SegmenterConfig.png|right|border|]]
 
-The LoG-based segmenters fortunately demand very few parameters to tune them. The only really important one is the ''Estimated blob diameter'''. Just enter the approximate size of the spots you are looking to tracks. Careful: you are expected to enter it in <u>physical units</u>. In our dummy example, there is no calibration (1 pixel = 1 pixel), so it does not appear here. 
+The LoG-based segmenters fortunately demand very few parameters to tune them. The only really important one is the ''Estimated blob diameter'''. Just enter the approximate size of the spots you are looking to tracks. Careful: you are expected to enter it in <u>physical units</u>. In our dummy example, there is no calibration (<tt>1 pixel = 1 pixel</tt>), so it does not appear here. 
 
 There are extra fields that you can configure also. The '''Threshold''' numerical value aims at helping dealing with situation where a gigantic number of spots can be found. Every spot with a maximal intensity value below this threshold value will not be retained, which can help saving memory. You set this field manually, or by adjusting the threshold using ImageJ: call the ''Image > Adjust > Threshold'' menu item (Ctrl + Shit + T), adjust the upper threshold to your liking, the press the '''Refresh''' button on the panel. This will grab the value you just set. 
 
 You can check '''Use median filter''': this will apply a 3x3 median filter prior to any processing. This can help dealing with images that have a marked salt & pepper noise which generates spurious spots. 
 
-We hope that TrackMate will be used in experiments requiring '''Sub-pixel localization''', such as following motor proteins in biophysical experiments, so we added schemes to achieve this. The one currently implemented uses a quadratic fitting scheme (made by Stephan Saalfeld and Stephan Preibisch) based on [http://www.cs.ubc.ca/~lowe/keypoints/ David Lowe SIFT work]<ref>David G. Lowe, "Distinctive image features from scale-invariant keypoints," International Journal of Computer Vision, 60, 2 (2004), pp. 91-110.</ref>. It has the advantage of being very quick, compared to the segmentation time itself.
+We hope that TrackMate will be used in experiments requiring '''Sub-pixel localization''', such as following motor proteins in biophysical experiments, so we added schemes to achieve this. The one currently implemented uses a quadratic fitting scheme (made by Stephan Saalfeld and Stephan Preibisch) based on [http://www.cs.ubc.ca/~lowe/keypoints/ David Lowe SIFT work]<ref>David G. Lowe, "Distinctive image features from scale-invariant keypoints", International Journal of Computer Vision, 60, 2 (2004), pp. 91-110.</ref>. It has the advantage of being very quick, compared to the segmentation time itself.
 
 The two others automated segmenters share more or less the same fields in their own configuration panel. The '''Downsampled LoG segmenter''' simply asks for an extra down-sampling integer factor. 
 
@@ -126,7 +126,7 @@ In our case, we see from the histogram that we could make sense of this step. Th
 
 [[Image:TrackMate DisplayerChoice.png|right|border|]]
 
-Here, you can choose between the two visualization tools that will be used to display the tracking results. The first one, '''HyerpStack displayer''', simply reuses ImageJ stack window and overlay the results non-destructively over the image. Choosing the '''3D viewer''' will open a new 3D viewer window, import that image data in it, and will display spots as 3D spheres and tracks as 3D lines.
+Here, you can choose between the two visualization tools that will be used to display the tracking results. The first one, '''HyperStack displayer''', simply reuses ImageJ stack window and overlay the results non-destructively over the image. Choosing the '''3D viewer''' will open a new 3D viewer window, import that image data in it, and will display spots as 3D spheres and tracks as 3D lines.
 
 Honestly, choose the HyperStack displayer. Unless you have a very specific and complicated case that needs to inspect results in 3D immediately, you do not need the 3D viewer. The HyperStack displayer is simpler, lighter, allow to manually edit spots, and you will be able to launch a 3D viewer at the end of the process and still get the benefits. 
 
@@ -174,7 +174,66 @@ You can inspect the data by scrolling on the hyperstack window and check that on
 
 You can stack several filters by simply clicking on the green '''+''' button. TrackMate will retain the spots that satisfy to <u>all</u> (logical ''and'') the criteria set by the filters. 
 
+Press '''Next''' when you are ready to build tracks with these spots.
+
 <br style="clear: both" />
+
+== Selecting a simple tracker ==
+
+[[Image:TrackMate TrackerChoice.png|border|]]
+
+The next panel let you choose amongst available particle-linking algorithms, or "trackers".
+
+The apparent profusion of choices should not disorient you, for it just that: an appearance. We chose to focus on the Linear Assignment Problem (LAP) in the framework first developed by Jaqaman et al<ref>[http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.]</ref>. 
+
+All the first 4 LAP trackers are based on LAP, with important differences described elsewhere. We focused on this method for it gave us a lot of flexibility and it can be configured easily to handle most cases. You can tune it to allow ''splitting events'', where a track splits in two, for instance following a cell that encounters mitosis. ''Merging events'' are handled too in the same way, though my small culture prevents me from quoting a relevant biological case obvious as the previous one. More importantly are ''gap-closing'' events, where a spot disappear for one frame (because it moves out of focus, because segmentation fails, ...) but the track manages to recuperates and connect with re-appearing spots later.
+
+Here are the main differences between the 4 '''LAP trackers'''. The LAP framework needs internally an solver that can deal with the [http://en.wikipedia.org/wiki/Assignment_problem assignment problem]. We implemented two of these algorithms: the [http://en.wikipedia.org/wiki/Hungarian_algorithm Hungarian algorithm] which is the classical one, and a new one, based on ideas by [http://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm Edmond, Karp and Tomizawa] that solves the same problem but much faster. They give the same results, so you can always use the fast ones.
+
+Each of these algorithms exists in two flavors: a simple one and a not simple one. There are again the same, but the simple ones propose fewer configuration options and a thus more concise configuration panel. In short:
+
+*  The simple ones only allow to deal with gap-closing events, and prevent splitting and merging events to be detected. Also, the costs to link two spots are computed solely based one their respective distance. 
+
+* The not simple ones allow to detect any kind of event, so if you need to build tracks that are splitting or merging, you must go for these ones. If you want to forbid the detection of gap-closing events, you want to use it as well. Also, you can alter the cost calculation to disfavor the linking of spots that have very different feature values.
+
+There is also a 5th tracker, the [http://en.wikipedia.org/wiki/Nearest_neighbor_search '''Nearest neighbor search'''] tracker. This is the most simple tracker you can build, and it is mostly here for demonstration purposes. Each spot in one frame is linked to another one in the next frame, disregarding any other spot, thus achieving only a very local optimum. You can set a maximal linking distance to prevent the results to be totally pathological, but this is as far as it goes. It may be of use for very large and easy datasets: its memory consumption is very limited (at maximum only two frames need to be in memory) and is quick (the nearest neighbor search is performed using [http://en.wikipedia.org/wiki/Kd_tree Kd-trees]).
+
+Right now, in our first trial, let us pick the '''Simple fast LAP tracker'''.
+
+== Configuring the simple LAP tracker ==
+
+[[Image:TrackMate TrackerConfiguration 1.png|TrackMate TrackerConfiguration 1.png]]
+
+As promised, there is only three configuration fields. 
+
+* The first one defines the maximal allowed linking distance. This value limits the spatial search range for candidate matching spots. If you know the maximal displacement of your object between two frame, you can put this value here. Theoretically, a too large value will demand more computation time. In our case, seeing the size of the dataset, this does not matter at all. This distance must be expressed in physical units, but again, you don't see it there for there is no spatial calibration on our image.
+
+* The second field defines the maximal distance for gap-closing. Two track segments will not be bridged if the last spot of the first segment is further away than the first spot of the second segment. In our dummy example stack, there is spot disappearance at the frame number 45, top left. So the spot on frame 44 and the spot on frame 46 must not be separated by more than the distance you set there to have a chance to be linked.
+
+* The third field also deal with the detection of gap-closing events, and sets the maximal ''time interval'' between two spots to be bridged. Careful, the time also must be in physical units. In our case, it is trivial for we have <tt>1 frane = 1 sec</tt>, but be careful when you have calibrations such as <tt>1 frame = 33 ms</tt>. In our case, since the only disappearance event we have last one frame, we can simply put this value to 2 frames duration, that is 2 sec. But actually it does not matter, as you can see by experimenting. 
+
+Press '''Next''' to start the tracking computation.
+
+== Our first tracking results ==
+
+Since our dataset is very small, you should see quasi-instantaneously the results appearing. They should look like this:
+
+[[Image:TrackMate TrackingResults 1.png|TrackMate TrackingResults 1.png]]
+
+Basically, the tracker held its promises: there is 6 tracks (the two immobile spots at the bottom left part of the image contributed a track each). These tracks are not branching. The red track indeed contains a gap closing event, that did not generate a track break. That would have been different if we would have used the '''Nearest neighbor search''' tracker: as it cannot deal with gap-closing events, we would have 7 tracks. 
+
+The track colors are yet meaningless; there are just used to facilitate separating different tracks visually.
+
+Now, we would like the shape of these tracks to change. We see that the green track is actually branching from the blue one at frame 10. The same goes for the yellow track, which branches from the green one at frame 17, and merges to the blue one at frame 27. To deal with that, we need to change of tracker. So go two steps back using the '''Previous''' button and go back to the tracker choice panel. There, select the '''Fast LAP tracker''' and move to its configuration panel. 
+
+== Configuring a not so simple tracker ==
+
+[[Image:TrackMate TrackerConfiguration 2.png]]
+
+Do not mind the track look change on the above picture compared to the previous one. I manually deleted a spurious single spot that escaped filtering, and generated a dull track that was one spot long. Deleting it changed the other tracks color.
+
+
+
 
 == References ==
 
