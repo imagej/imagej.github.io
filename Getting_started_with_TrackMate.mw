@@ -170,7 +170,9 @@ To move the threshold, simply click and drag inside the histogram window. Notice
 
 A filter can be set to be above or below the given threshold. You change this behavior using the radio buttons below the histogram window. In our case, we want it to be above of course. The '''Auto''' button uses [http://en.wikipedia.org/wiki/Otsu%27s_method Otsu's method] to determine automatically a threshold. In our case, we will put it manually around 33. 
 
+You can inspect the data by scrolling on the hyperstack window and check that only mostly good spots are retained. This is an easy image. The spots you have filtered out are not discarded; they are simply not shown and they will not be taken into account when doing particle linking. In a later stage, you can step back to this step, and retrieve the filtered out spots by removing or changing the filters.
 
+You can stack several filters by simply clicking on the green '''+''' button. TrackMate will retain the spots that satisfy to <u>all</u> (logical ''and'') the criteria set by the filters. 
 
 <br style="clear: both" />
 
