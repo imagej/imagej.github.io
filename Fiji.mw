@@ -13,23 +13,17 @@ For [[Developing_Fiji|developers]], Fiji is an open source project hosted in a [
 
 <b>[[Downloads|Download Fiji now]]</b>&nbsp;&nbsp;[[Image:Yada.png|middle|link=Downloads]]
 
-== [[News]] ==
-<listnews/>
-
-[[Special:NewsChannel|Subscribe]] to an RSS or Atom feed of the [[News|Fiji news]].
-
-Browse the [[:Category:News|news archive]].
-
-== Relationship to other Scientific Image Processing/Analysis Software ==
+<div style="float: right; width: 50%; margin-top: -12px;">
+== Collaboration ==
 
 The Fiji project is driven by a strong desire to improve the tools available for life sciences to process and analyze data. To this end, Fiji collaborates closely with the following projects:
 
 {|
-|[[File:ij2-logo.jpg|80px]]
-|[[File:bf-logo.jpg|120px]]
-|[[File:ome-logo.jpg|120px]]
-|[[File:mm-logo.jpg|120px]]
-|[[File:knime-logo.jpg|120px]]
+|[[File:ij2-logo.jpg|55px]]
+|[[File:bf-logo.jpg|75px]]
+|[[File:ome-logo.jpg|75px]]
+|[[File:mm-logo.jpg|75px]]
+|[[File:knime-logo.jpg|75px]]
 |-
 ![http://developer.imagej.net ImageJ2]
 ![http://loci.wisc.edu/software/bio-formats Bio-Formats]
@@ -37,6 +31,13 @@ The Fiji project is driven by a strong desire to improve the tools available for
 ![http://www.micro-manager.org/ µManager]
 ![http://tech.knime.org/community/image-processing KNIME]
 |}
+</div>
+== [[News]] ==
+<listnews/>
+
+[[Special:NewsChannel|Subscribe]] to an RSS or Atom feed of the [[News|Fiji news]].
+
+Browse the [[:Category:News|news archive]].
 
 == Documentation ==
 {{Documentation}}
