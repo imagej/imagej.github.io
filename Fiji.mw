@@ -20,6 +20,24 @@ For [[Developing_Fiji|developers]], Fiji is an open source project hosted in a [
 
 Browse the [[:Category:News|news archive]].
 
+== Relationship to other Scientific Image Processing/Analysis Software ==
+
+The Fiji project is driven by a strong desire to improve the tools available for life sciences to process and analyze data. To this end, Fiji collaborates closely with the following projects:
+
+{|
+|[[File:ij2-logo.jpg|80px]]
+|[[File:bf-logo.jpg|120px]]
+|[[File:ome-logo.jpg|120px]]
+|[[File:mm-logo.jpg|120px]]
+|[[File:knime-logo.jpg|120px]]
+|-
+![http://developer.imagej.net ImageJ2]
+![http://loci.wisc.edu/software/bio-formats Bio-Formats]
+![http://www.openmicroscopy.org/ OME]
+![http://www.micro-manager.org/ µManager]
+![http://tech.knime.org/community/image-processing KNIME]
+|}
+
 == Documentation ==
 {{Documentation}}
 
