@@ -469,7 +469,7 @@ One would wrap all of the source images into <code>InterpolatedRandomAccessible<
 
 ==2012-01-28==
 We have discussed with Tobias that two additional integer views would be very helpful:
-#Joining multiple images of the same size and dimensions into one or more dimensions of a single image (composition).
+#Joining multiple images of the same size and dimensions into one or more dimensions of a single image (composition as opposed to decomposition which is implemented by hyperslice views).
 #Adding a new dimension considering an existing dimension as interleaved data.
 When done properly this has the potential to replace or at least simplify PlanarImg like containers since they could be expressed as a composition of multiple ArrayImg-s.
 [[User:Saalfeld|Saalfeld]] 16:11, 18 January 2012 (CET)
