@@ -466,3 +466,9 @@ Similar to what is now in <code>Views</code> there would be static methods to co
 
 One would wrap all of the source images into <code>InterpolatedRandomAccessible</code> and use RealViews as required to match the calibration of the target image. Then to carry out some operation, one would iterate through the target image and fetch the (possibly interpolated) values from the corresponding locations in the respective source views.
 [[Category:ImgLib]]
+
+==2012-01-28==
+We have discussed with Tobias that two additional integer views would be very helpful:
+#Joining multiple images of the same size and dimensions into one or more dimensions of a single image (composition).
+#Adding a new dimension considering an existing dimension as interleaved data.
+[[User:Saalfeld|Saalfeld]] 16:11, 18 January 2012 (CET)
