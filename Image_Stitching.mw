@@ -151,9 +151,16 @@ For loading microscopic images we use the LOCI Bioformats importer. If you exper
 Three-dimensional stitching will not work for z-Stack size of smaller than 3 pixels. If you want to reconstruct such image from very thin tiles, duplicating of some of the stacks should solve the problem. Or you try to work just on the maximum/average intensity projections of the thin stacks.
 
 If you still have a known arrangement of tiles that is not covered by any of the grid methods, you can create yourself a tile configuration file which roughly describes the arrangement including the overlap. You can use this as input for the Grid/Collection stitching (option '''Positions from file -> Defined by TileConfiguration''') to refine it and find the correct alignment. Here is an example TileConfiguration.txt:
-<text>
-fdgdfgdf
-</text>
+
+ # Define the number of dimensions we are working on
+ dim = 3
+ # Define the image coordinates
+ img_73.tif; ; (0.0, 0.0, 0.0)
+ img_74.tif; ; (409.0, 0.0, 0.0)
+ img_75.tif; ; (0.0, 409.0, 0.0)
+ img_76.tif; ; (409.0, 409.0, 0.0)
+ img_77.tif; ; (0.0, 818.0, 0.0)
+ img_78.tif; ; (409.0, 818.0, 0.0)
 
 == Results & Computation time ==
 
