@@ -231,6 +231,7 @@ Although the Stitching depends on quite some Fiji-specific libraries, there is a
 It contains the following libraries, I thank all the authors for their support and help:
 * ''edu_mines_jtk.jar'': Efficient 1-dimensional FFT implementation by [http://inside.mines.edu/~dhale/jtk/ Dave Hale]. License: Common Public License - v 1.0
 * ''mpicbg.jar'': Transformation package by [http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld]
+* ''[[imglib]]'': N-dimensional image processing library for Java by Tobias Pietzsch, [http://fly.mpi-cbg.de/~preibisch/Stephan Preibisch] & [http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld]
 
 == See Also ==
 
