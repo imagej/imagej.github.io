@@ -32,4 +32,4 @@ Plase note: this is the new implementation of the Stitching plugin which is fina
 
 Due to the virtual input stacks and the direct export of the result to disk It is now possible to stitch an arbitrary amount of image tiles with limited RAM resources.
 
-The documentation of the '''old''' Stitching plugin collection can be found here [[Stitching 2D/3D]].
+The documentation of the '''old''' Stitching plugin collection can be found here: [[Stitching 2D/3D]].
