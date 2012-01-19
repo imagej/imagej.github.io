@@ -44,3 +44,5 @@ The Image Stitching package comes with 2 different plugins:
 Although both plugins make use of layered context-dependent Generic Dialogs, they are completely macro-scriptable.
 
 == Pairwise Stitching ==
+
+The Pairwise Stitching first [http://fiji.sc/wiki/index.php/File:PairwiseStitching1.png queries] for two input images that you intend to stitch. Once you selected the input images it will show the actual dialog for the Pairwise Stitching. The dialog will depend on the dimensionality of the input images. Please note that RGB input images will be converted into 8-Bit composite images.
