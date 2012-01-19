@@ -236,6 +236,7 @@ Additionally to the Stitching plugins, it contains the following libraries. I wa
 * ''loci_tools.jar'': [[http://loci.wisc.edu/software/bio-formats LOCI-Bioformats]]  Java library for reading and writing life sciences image file formats.
 
 Additionally, I want to thank the following people for discussions, providing images and pushing me to develop and continuously improve the Stitching plugins:
+
 Danielle Bower, Albert Cardona, Nicolas Gompel, Wieland Huttner, David Koos, Pavel Tomancak, James Truman and Daniel White
 
 == See Also ==
