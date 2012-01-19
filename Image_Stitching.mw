@@ -80,3 +80,4 @@ If a global optimization is necessary for time-point registration another dialog
 == Grid/Collection Stitching ==
 
 [[File:GridStitching1.png|thumb|230px|Shows the grid/collection selection dialog.]]
+This plugin is able to stitch an arbitrary collection or grid of images, it does not matter if it is 2d, 3d, 4d or 5d images as long as all images are of the same type. In contrast to the Pairwise Stitching of two images, this plugins will load (and potentially save) the images from/to harddisc.
