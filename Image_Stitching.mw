@@ -116,3 +116,9 @@ Once you selected your type of acquisition a second dialog will pop up that is s
 The user has to define the ''grid size'', that means how the input tiles are arranged (e.g. 7 x 7 image tiles). The ''tile overlap'' is a rough estimate. Note: Smaller overlap reduces computation time, but if the correct alignment is not found try increasing this value first.
 
 The grid stitching assumes that the tiles which are arranged in any kind of grid are incrementally numbered. The ''First tile index i'' defines the number of the first tile in your approximate tile configuration (see figure above). Next, you have to choose the ''directory'' that contains the different tiles. Note: if you just have one big file containing all tiles, choose the option ''Positions from file -> Defined by meta data'' in the first dialog.
+
+The next entry ''File name for tiles'' in the dialog is used to tell the plugin how to find the images which are in the grid (e.g. 49 different file names). Let's assume the files are simply named like this:
+
+'''Tile_001.lsm Tile_002.lsm .... Tile_049.lsm'''
+
+which translates to the following entry '''Tile_{iii}.lsm'''. It tells the plugin where to put the increasing number, and furthermore to use leading zeros with a length of 3. If the tiles would be called '''Tile_1.lsm Tile_2.lsm .... Tile_49.lsm''', it would translate to '''Tile_{i}.lsm'''
