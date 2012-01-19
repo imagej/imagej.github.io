@@ -78,3 +78,5 @@ If a global optimization is necessary for time-point registration another dialog
 * '''Absolute displacement threshold''': Removes links between images if the absolute displacement is higher than this value.
 
 == Grid/Collection Stitching ==
+
+[[File:GridStitching1.png|thumb|230px|Shows the grid/collection selection dialog.]]
