@@ -233,7 +233,7 @@ Additionally to the Stitching plugins, it contains the following libraries. I wa
 * ''mpicbg.jar'': Transformation package by [http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld]
 * ''[[imglib]]'': N-dimensional image processing library for Java by Tobias Pietzsch, [http://fly.mpi-cbg.de/~preibisch/ Stephan Preibisch] & [http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld]
 * ''fiji-lib.jar & Fiji_Plugins.jar'': Fiji libraries by [[http://loci.wisc.edu/people/johannes-schindelin Johannes Schindelin]]
-* ''loci_tools.jar'': [[http://loci.wisc.edu/software/bio-formats LOCI-Bioformats]]  Java library for reading and writing life sciences image file formats. I want to especially thank [[http://loci.wisc.edu/people/curtis-rueden Curtis Rueden]] and [[http://loci.wisc.edu/people/melissa-linkert Melissa Linkert]]
+* ''loci_tools.jar'': [http://loci.wisc.edu/software/bio-formats LOCI-Bioformats]  Java library for reading and writing life sciences image file formats. I want to especially thank [http://loci.wisc.edu/people/curtis-rueden Curtis Rueden] and [http://loci.wisc.edu/people/melissa-linkert Melissa Linkert]
 
 Additionally, I want to thank the following people for discussions, providing images and pushing me to develop and continuously improve the Stitching plugins:
 
