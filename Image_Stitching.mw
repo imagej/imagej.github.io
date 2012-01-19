@@ -141,3 +141,79 @@ Now, you can choose to open the input stacks as ''virtual stacks''. This results
 ''Computation parameters'': If you choose ''Save memory (but be slower)'' the stitching will compute all pairwise correlations one after another. Although it is performed multi-threaded it is slower than computing as many pairwise correlations at the same time as processors are available done by the option ''Save computation time (but use more RAM)''.
 
 Finally, you can choose whether to display the result or write the fused image to disk. If you choose to write it to disk, it will require very little memory to do so as it writes it slice-by-slice. You can later on open this dataset virtually or partially and convert it back to a Hyperstack (Image -> Hyperstacks -> Stack to Hyperstack ...). Writing it directly to disk, will, however, take more time than just displaying it.
+
+== Problems and Known Issues ==
+
+If the Stitch Grid, Stitch Collection or Stich with Unknown Configuration plugins are not able to create the correct output image you can do it yourself iteratively using the 2D/3D Stitching plugins. You just start with the first two images and fuse them. Using ROIs on clearly similar areas you can force a correct alignment. Afterwards you fuse the result with the third image and so on. The biggest drawback apart from the time consumption is that you can only use Maximum Intensity as fusion method, otherwise the image will look weird. Furthermore it will consume more memory.
+
+For loading microscopic images we use the LOCI Bioformats importer. If you experience problems loading files, convert them to TIFF before, it should be read fine.
+
+3D Stitching will not work for z-Stack size of smaller than 3 pixels. If you want to reconstruct such image from very thin tiles, duplicating of some of the stacks should solve the problem.
+
+== Results & Computation time ==
+
+[[Image:ResultsStitching.jpg|780px|Example of Stitching of 3D confocal stacks.]]<br />
+
+The figure shows stitched images of 3D confocal tiles. (A) shows a Drosophila melanogaster pupae expressing a GFP reporter under the regulation of the yellow gene, imaged few hours before eclosion using a 4× dry lens on an Optiphot confocal microscope (Nikon). It was stitched from three image stacks arranged in a 1 × 3 grid (Table 1 first row). The maximum intensity projection is shown. (B) shows the Drosophila larval nervous system stained with three dyes, stitched from a grid of 2 × 3 RGB images (see table 1 second row), the maximum intensity projection is shown. (C) shows a zone in the dorsal telencephalon of human embryonic tissue from week 17 post conception, incubated for 24 hours at 37°C in DiI. It was imaged using a 63×/1.4 objective on Zeiss LSM 510 equipped with a motorized stage. The final image was created from 24 image stacks arranged in a 4 × 6 grid (see table 1 third row), slice 18 is shown. Special thanks to Nicolas Gompel, James W. Truman, Simone Fietz and Wieland B. Huttner for providing the images.
+
+[http://fly.mpi-cbg.de/~preibisch/stitching.html For interactive examples of these datasets have a look here.]
+
+{| cellpadding="4" cellspacing="0" border="1"
+|-
+!tiles
+!individual tile dimension
+!output image dimension
+!output image size
+!computation time
+!min/avg/max displacement
+|-
+|3
+|1024&times;1024&times;42
+|1097&times;2345&times;43
+|108 MB (8 Bit)
+|0:42 min
+|0.00/0.00/0.00 px
+|-
+|6
+|512&times;512&times;86
+|975&times;1425&times;86
+|350 MB (RGB)
+|1:20 min
+|0.60/0.77/1.05 px
+|-
+|24
+|1024&times;1024&times;68
+|3570&times;5211&times;70
+|1200 MB (8 Bit)
+|22:43 min
+|0.49/0.76/0.99 px
+|-
+|72
+|512&times;512&times;122
+|3391&times;3847&times;145
+|1850 MB (8 Bit)
+|43:10 min
+|0.00/0.39/0.64 px
+|-
+|63
+|1024&times;1024&times;92
+|6088&times;7667&times;119
+|5424 MB (8 Bit)
+|178:57 min
+|0.00/0.66/1.18 px
+|}
+The Table shows examples of stitched data computed on an Intel® Quad-Core CPU machine with 2.67GHz and 24GB of RAM. The global alignments of all stitchings have an average error below 1 px, the displacements in row 1 are zero because the two alignments are independent of each other. Note that the computation time scales roughly linearly with the output image size.
+
+== Contact ==
+
+For any type of comment, questions or input please write to preibisch@mpi-cbg.de or visit my [http://fly.mpi-cbg.de/preibisch homepage].
+
+
+== See Also ==
+
+* [http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184 The Publication on the Stitching Plugin], S. Preibisch, S. Saalfeld, P. Tomancak (2009) Globally optimal stitching of tiled 3D microscopic image acquisitions", ''Bioinformatics'', '''25'''(11):1463-1465. [http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf PDF]
+* [[TrakEM2]] for non-destructive stitching with floating, adjustable images.
+* [http://www.xuvtools.org/doku.php XuvTools] similar stitching software from the University of Freiburg and the [http://dx.doi.org/10.1111/j.1365-2818.2008.03094.x abstract] of the accompying publication
+
+[[Category:Plugins]]
+[[Category:Stitching]]
