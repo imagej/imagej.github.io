@@ -61,3 +61,14 @@ The ''number of peaks'' defines the number of maxima in the Phase Correlation Ma
 If you do not check ''compute overlap'', the plugin will just apply the translation that can be inserted below.
 
 If you check ''supixel accuracy'', the plugin will compute a subpixel precise alignment between the two images (it hardly costs any computation time but some RAM). Furthermore, if subpixel localization is activated, linear interpolation will be used for the fusion. Otherwise no interpolation will be applied.
+
+When choosing the ''registration channels'' you define which part of the data will be used to compute the overlap. It has no influence on how the data is fused.
+
+If the input stacks are time-lapse images, you will have different choices on how to align over time:
+* ''Apply registration of first time-point to all other time-points'': The plugin will compute the stitching only for the first time-point and assume that this shift is correct for all time-points.
+* ''Register images adjacently over time'': The stitching will compute the shift between all images of all time-points, as well as of each image to the same image of the next time-point. A global optimization scheme will be used to minimize the global error and reject outliers. The parameters for this global optimization will be queried in an additional dialog.
+* ''Register all images over all time-points globally (expensive!)'': The stitching will compute the shift between all time-points and all images which will take a considerable amount of time. A global optimization scheme will be used to minimize the global error and reject outliers. The parameters for this global optimization will be queried in an additional dialog.
+
+[[File:PairwiseStitching3.png|thumb|230px|Shows the extra option for Pairwise Stitching when aligning all timepoints to each other.]]
+
+If a global optimization is necessary for time-point registration another dialog will pop up to ask for more parameters:
