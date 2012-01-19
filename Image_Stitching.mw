@@ -132,8 +132,12 @@ The next three entries describe the behaviour of the global optimization:
 * '''max/avg displacement threshold''': After the overlap between all individual tiles has been computed the global optimization computes an optimal arrangement of all tiles. After that, some image pairs will be placed different to each other compared to the individual alignment, which we call displacement. If there are no major alignment errors the average and maximal displacement will be below or around 1 pixel. If one of the individual alignment between two images was wrong, this pair will be displaced a lot in the global optimization as all other connecting tiles pull it towards the correct global position. If the maximal displacement is much higher than the average one it means that this individual alignment is most likely wrong and will be removed. Note: An image will just be removed if there is no link to another image any more.
 * '''absolute displacement threshold''': Removes links between images if the absolute displacement is higher than this value.
 
-Next, you can choose weather to ''compute the overlap'' or trust the (approximate) location defined by the grid, the meta data or the tile configuration file.
+Next, you can choose whether to ''compute the overlap'' or trust the (approximate) location defined by the grid, the meta data or the tile configuration file.
 
 If you check ''supixel accuracy'', the plugin will compute a subpixel precise alignment between the two images (it hardly costs any computation time but some RAM). Furthermore, if subpixel localization is activated, linear interpolation will be used for the fusion. Otherwise no interpolation will be applied.
 
 Now, you can choose to open the input stacks as ''virtual stacks''. This results in a significantly reduced memory consumption, however, it will consume more time to perform the computation.
+
+''Computation parameters'': If you choose ''Save memory (but be slower)'' the stitching will compute all pairwise correlations one after another. Although it is performed multi-threaded it is slower than computing as many pairwise correlations at the same time as processors are available done by the option ''Save computation time (but use more RAM)''.
+
+Finally, you can choose whether to display the result or write the fused image to disk. If you choose to write it to disk, it will require very little memory to do so as it writes it slice-by-slice. You can later on open this dataset virtually or partially and convert it back to a Hyperstack (Image -> Hyperstacks -> Stack to Hyperstack ...). Writing it directly to disk, will, however, take more time than just displaying it.
