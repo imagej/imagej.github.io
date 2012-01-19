@@ -51,6 +51,7 @@ There are several fusion methods available (new ones can be easily added by impl
 * '''Linear blending''': In the overlapping area the intensity are smoothly adjusted between the two images. 
 * '''Average''': In the overlapping area the average intensity between all images is computed ([http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Stitching_/mpicbg/stitching/fusion/AveragePixelFusion.java example source code]).
 * '''Median''': In the overlapping area the median intensity of all images is computed.
-''Max. Intensity''': In the overlapping area the maximum intensity between all images is used int the output image.
+* ''Max. Intensity''': In the overlapping area the maximum intensity between all images is used int the output image.
 * '''Min. Intensity''': In the overlapping area the minimum intensity between all images is used int the output image.
-* '''Red/Cyan Overlay''': In the output image the first image is colored in red, the second one colored in cyan to visualize the registration. In the overlapping area the intensities should appear in gray scales (R + GB). This fusion method does not work with RGB input images for obvious reasons.
+* '''Overlay into Composite''': all channels of all input images will be put into the output image as separate channels.
+* '''Do not fuse images''': no output images will be computed, just the overlap is computed.
