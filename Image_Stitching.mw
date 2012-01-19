@@ -126,3 +126,8 @@ which translates to the following entry '''tile_{iii}.lsm'''. It tells the plugi
 The ''Output textfile name'' defines the text files that will contain the initial approximate grid layout and the final positions of each tile after registration.
 
 The ''fusion methods'' are almost the same as the ones for the [[Image Stitching#Pairwise Stitching | Pairwise Stitching]], please check them out above.
+
+The next three entries describe the behaviour of the global optimization:
+* '''regression threshold''': If the regression threshold between two images after the individual stitching are below that number they are assumed to be non-overlapping. Typical values for a good registration are over 0.7, however in noisy images with less content also small regression thresholds can be a correct overlap.
+* '''max/avg displacement threshold''': After the overlap between all individual tiles has been computed the global optimization computes an optimal arrangement of all tiles. After that, some image pairs will be placed different to each other compared to the individual alignment, which we call displacement. If there are no major alignment errors the average and maximal displacement will be below or around 1 pixel. If one of the individual alignment between two images was wrong, this pair will be displaced a lot in the global optimization as all other connecting tiles pull it towards the correct global position. If the maximal displacement is much higher than the average one it means that this individual alignment is most likely wrong and will be removed. Note: An image will just be removed if there is no link to another image any more.
+* '''absolute displacement threshold''': Removes links between images if the absolute displacement is higher than this value.
