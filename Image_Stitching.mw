@@ -113,4 +113,6 @@ The first dialog queries the type image collection or image grid that you want t
 [[File:GridStitching2.png|400px|thumb|Shows the main dialog for the grid stitching.]]
 Once you selected your type of acquisition a second dialog will pop up that is slightly different depending up on your first selection. Here, I will explain the dialog that is used for any grid as this is the most complex one.
 
-The user has to define the ''grid size'', that means how the input tiles are arranged (e.g. 7 x 7 image tiles). The ''overlap'' is a rough estimate. Note: Smaller overlap reduces computation time, but if the correct alignment is not found try increasing this value first.
+The user has to define the ''grid size'', that means how the input tiles are arranged (e.g. 7 x 7 image tiles). The ''tile overlap'' is a rough estimate. Note: Smaller overlap reduces computation time, but if the correct alignment is not found try increasing this value first.
+
+The grid stitching assumes that the tiles which are arranged in any kind of grid are incrementally numbered. The ''First tile index i'' defines the number of the first tile in your approximate tile configuration (see figure above). Next, you have to choose the ''directory'' that contains the different tiles. Note: if you just have one big file containing all tiles, choose the option ''Positions from file -> Defined by meta data'' in the first dialog.
