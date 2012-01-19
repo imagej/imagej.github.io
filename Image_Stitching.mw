@@ -228,8 +228,8 @@ For any type of comment, questions or input please write to preibischs@janelia.h
 
 Although the Stitching depends on quite some Fiji-specific libraries, there is a download for ImageJ available on my webpage in the software section: [http://fly.mpi-cbg.de/~preibisch/software.html].
 
-It contains the following libraries, I that all the authors for their support:
-* '''edu_mines_jtk.jar''': 1-dimensional FFT implementation by [http://inside.mines.edu/~dhale/jtk/ Dave Hale]
+It contains the following libraries, I thank all the authors for their support and help:
+* ''edu_mines_jtk.jar'': 1-dimensional FFT implementation by [http://inside.mines.edu/~dhale/jtk/ Dave Hale]
 
 == See Also ==
 
