@@ -133,3 +133,7 @@ The next three entries describe the behaviour of the global optimization:
 * '''absolute displacement threshold''': Removes links between images if the absolute displacement is higher than this value.
 
 Next, you can choose weather to ''compute the overlap'' or trust the (approximate) location defined by the grid, the meta data or the tile configuration file.
+
+If you check ''supixel accuracy'', the plugin will compute a subpixel precise alignment between the two images (it hardly costs any computation time but some RAM). Furthermore, if subpixel localization is activated, linear interpolation will be used for the fusion. Otherwise no interpolation will be applied.
+
+Now, you can choose to open the input stacks as ''virtual stacks''. This results in a significantly reduced memory consumption, however, it will consume more time to perform the computation.
