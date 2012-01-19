@@ -55,3 +55,9 @@ There are several ''fusion methods'' available (new ones can be easily added by 
 * '''Min. Intensity''': In the overlapping area the minimum intensity between all images is used int the output image.
 * '''Overlay into Composite''': all channels of all input images will be put into the output image as separate channels.
 * '''Do not fuse images''': no output images will be computed, just the overlap is computed.
+
+The ''number of peaks'' defines the number of maxima in the Phase Correlation Matrix which are examined. If the stitching was not correct increasing this number might help.
+
+If you do not check ''compute overlap'', the plugin will just apply the translation that can be inserted below.
+
+If you check ''supixel accuracy'', the plugin will compute a subpixel precise alignment between the two images (it hardly costs any computation time but some RAM). Furthermore, if subpixel localization is activated, linear interpolation will be used for the fusion. Otherwise no interpolation will be applied.
