@@ -93,3 +93,4 @@ The first dialog queries the type image collection or image grid that you want t
 ** ''Down & Left'': Start on the top right and go left column by column.
 ** ''Up & Right'': Start on the bottom left and go right column by column.
 ** ''Left & Up'': Start on the bottom right and go left column by column.
+* '''Grid: snake by rows''': The images are arranged in a grid, one line after the other. After a line is finished the next line starts in reverse order the position where the previous line ended (no carriage return, like a snake).
