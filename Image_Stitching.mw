@@ -125,4 +125,4 @@ which translates to the following entry '''tile_{iii}.lsm'''. It tells the plugi
 
 The ''Output textfile name'' defines the text files that will contain the initial approximate grid layout and the final positions of each tile after registration.
 
-The ''fusion methods'' are almost the same as the ones for the Pairwise Stitching
+The ''fusion methods'' are almost the same as the ones for the [[Image Stitching#Pairwise Stitching | Pairwise Stitching]], please check them out above.
