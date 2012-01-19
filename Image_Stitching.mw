@@ -142,7 +142,7 @@ Now, you can choose to open the input stacks as ''virtual stacks''. This results
 
 Finally, you can choose whether to display the result or write the fused image to disk. If you choose to write it to disk, it will require very little memory to do so as it writes it slice-by-slice. You can later on open this dataset virtually or partially and convert it back to a Hyperstack (Image -> Hyperstacks -> Stack to Hyperstack ...). Writing it directly to disk, will, however, take more time than just displaying it.
 
-== Problems, known issues and some solutions ==
+== Problems, known issues and solutions ==
 
 If the Grid/Collection Stitching is not able to create the correct output image you can do it yourself iteratively using the Pairwise Stitching plugin. You just start with the first two images and fuse them. Using ROIs on clearly similar areas you can force a correct alignment. Afterwards you fuse the result with the third image and so on. The biggest drawback apart from the time consumption is that you can only use Maximum Intensity as fusion method, otherwise the image will look weird. Furthermore it will consume more memory.
 
