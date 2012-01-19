@@ -81,3 +81,10 @@ If a global optimization is necessary for time-point registration another dialog
 
 [[File:GridStitching1.png|thumb|230px|Shows the grid/collection selection dialog.]]
 This plugin is able to stitch an arbitrary collection or grid of images, it does not matter if it is 2d, 3d, 4d or 5d images as long as all images are of the same type. In contrast to the Pairwise Stitching of two images, this plugins will load (and potentially save) the images from/to harddisc.
+
+The first dialog queries the type image collection or image grid that you want to assemble. For each major type there are typically several subtypes you can choose from. For an easier understanding each option is supported by a small figure:
+* ''Grid: row-by-row'': The images are arranged in a grid, one line after the other. After a line is finished the new one always starts at the same position (carriage return, like reading a text).
+** '''Right & Down''': Start on the top left and go down line by line.
+** '''Left & Down''': Start on the top right and go down line by line.
+** '''Right & Up''': Start on the bottom left and go up line by line.
+** '''Left & Up''': Start on the bottom right and go up line by line.
