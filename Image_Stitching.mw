@@ -42,3 +42,5 @@ The Image Stitching package comes with 2 different plugins:
 * '''[[Image Stitching#Grid/Collection Stitching | Grid/Collection Stitching]]''': Stitch an arbitrary amount of 2d-5d input images. It supports cases where the approximate alignment is known (grid, stored in file, metadata) as well as completely unguided alignment.
 
 Although both plugins make use of layered context-dependent Generic Dialogs, they are completely macro-scriptable.
+
+== Pairwise Stitching ==
