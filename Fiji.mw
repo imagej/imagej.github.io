@@ -57,7 +57,7 @@ Browse the [[:Category:News|news archive]].
 ;[[Plugins_Menu#Plugins_.3E_Registration|Image registration]]
 * [[Elastic Alignment and Montage]]
 * [[SPIM Registration]] Registration and fusion of Selective Plane Illumination Microscopy data.
-*[[Stitching 2D/3D]] Stitch multiple image stacks across X,Y,Z.
+*[[Image Stitching]] Stitch multiple image stacks across X,Y,Z,T and C.
 *[[Feature Extraction]] SIFT and MOPS.
 * Consistent and elastic 2D registration ([http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/ bUnwarpJ])
 * [[Register_Virtual_Stack_Slices|Stack slice registration]]
