@@ -73,3 +73,4 @@ If the input stacks are time-lapse images, you will have different choices on ho
 [[File:PairwiseStitching3.png|thumb|230px|Shows the extra option for Pairwise Stitching when aligning all timepoints to each other.]]
 
 If a global optimization is necessary for time-point registration another dialog will pop up to ask for more parameters:
+* ''Computation parameters'': If you choose '''Save memory (but be slower)''' the stitching will compute all pairwise correlations one after another. Although it is performed multi-threaded it is slower than computing as many pairwise correlations at the same time as processors are available done by the option '''Save computation time (but use more RAM)'''.
