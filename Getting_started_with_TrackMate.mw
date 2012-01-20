@@ -232,8 +232,26 @@ Now, we would like the shape of these tracks to change. We see that the green tr
 
 Do not mind the track look change on the above picture compared to the previous one. I manually deleted a spurious single spot that escaped filtering, and generated a dull track that was one spot long. Deleting it changed the other tracks color.
 
+Look at the configuration panel. It is quite more complex than for the simple tracker, obviously, and it is the price for flexibility. Since it is quite long, the panel has to be scrolled to its bottom to venture on all fields.
+
+However, this apparent complexity is not that difficult to harness. If you look carefully, you will see that the main panel is made of 4 quasi-identical panel. Each one deals with one event type:
+
+The first one deals with the <u>frame-to-frame linking</u>. It consists in creating small track segments by linking spots in one frame to the spots in the frame just after, not minding anything else. That is of course not enough to make us happy: there might be some spot missing, failed detection that might have caused your tracks to be broken. But let us focus on this one now.
+
+Linking is made by minimizing a global cost (from one frame to another, yet). A short word on the linking logic:  The base cost of linking a particle with another one is simply the squared distance.<ref>There is some theoretical grounds for that, if you are investigating Brownian motion. See the article that details the segmenters and trackers for information.</ref> Following the proposal of Jaqaman ''et al.''<ref name="Jaqaman">Jaqaman, Loerke, Mettlen, Kuwata, Grinstein, Schmid, Danuser, ''"Robust single-particle tracking in live-cell time-lapse sequences"'', Nature Methods 5, 695 - 702 ('''2008''')</ref>, we also consider the possibility for a particle ''not'' to make any link, if is advantageous for the global cost. The sum of all costs are minimized to find to set of link for this pair of frame, and we move to the next one. 
+
+The '''Max distance''' field helps preventing irrelevant linking to occur. Two spots separated by more than this distance will never be considered for linking. This also saves some computation time. 
+
+The '''Feature penalties''' let you tune the linking cost using some measures of spot similarity. Typically in the single particle tracking framework, you cannot rely on shape 
+descriptors to identify a single object across multiple frames, for spots are "shapeless": they are just described by a X, Y, Z, T position tuple. 
+
+Yet, you might know your Biology better. For instance, you might be in the case where the mean intensity of a spot is roughly conserved along time, but vary even slightly from one spot to another. Or it might be the spot diameters, or a rough elliptic shape. Feature penalties allow you to penalize links between spots that have feature values that are different. Since the case you study might be anything, you can pick any feature to build your penalties. This one of the novelties in TrackMate, already evoked in Jaqaman ''et al.''<ref name="Jaqaman"/>, but extended here. 
+
+If you want to use feature penalties for frame-to-frame linking, simply press the green '''+''' button in the sub-panel. A combo-box will appear, in which you can choose the target feature. The text field ti its right allows specifying the penalty weight. Feature penalties will ''change'' the base cost, following
 
 
+
+For this, you can only configure the maximal linking distance and the feature penalties.
 
 == References ==
 
