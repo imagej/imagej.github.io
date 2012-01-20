@@ -1,0 +1,19 @@
+THIS IS A DRAFT WHERE SNIPPETS ARE LEFT
+
+
+
+=== Calculating linking costs ===
+
+
+# The distance between the two spots D is calculated 
+# If the spots are separated by more than the max distance, the link is forbidden. If not, 
+# For each feature in the map, a penalty p is calculated as 
+
+<math> p = 3 \times W \times \frac{ | f_1-f_2|}{f_1+f_2} </math>
+
+where W is the factor associated to the feature in the map. This expression is such that: 
+there is no penalty if the 2 feature values f1 and f2 are the same; 
+that, with a factor of 1, the penalty if 1 is one value is the double of the other; 
+the penalty is 2 if one is 5 times the other one. 
+All penalties are summed, to form P = (1 + ∑ p ) 
+The cost is set to the square of the product: C = ( D × P )²
