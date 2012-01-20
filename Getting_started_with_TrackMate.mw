@@ -184,7 +184,7 @@ Press '''Next''' when you are ready to build tracks with these spots.
 
 The next panel let you choose amongst available particle-linking algorithms, or "trackers".
 
-The apparent profusion of choices should not disorient you, for it just that: an appearance. We chose to focus on the Linear Assignment Problem (LAP) in the framework first developed by Jaqaman et al<ref>[http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.]</ref>. 
+The apparent profusion of choices should not disorient you, for it just that: an appearance. We chose to focus on the Linear Assignment Problem (LAP) in the framework first developed by Jaqaman ''et al.''<ref name="Jaqaman">[http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.]</ref>. 
 
 All the first 4 LAP trackers are based on LAP, with important differences described elsewhere. We focused on this method for it gave us a lot of flexibility and it can be configured easily to handle most cases. You can tune it to allow ''splitting events'', where a track splits in two, for instance following a cell that encounters mitosis. ''Merging events'' are handled too in the same way, though my small culture prevents me from quoting a relevant biological case obvious as the previous one. More importantly are ''gap-closing'' events, where a spot disappear for one frame (because it moves out of focus, because segmentation fails, ...) but the track manages to recuperates and connect with re-appearing spots later.
 
@@ -238,20 +238,25 @@ However, this apparent complexity is not that difficult to harness. If you look 
 
 The first one deals with the <u>frame-to-frame linking</u>. It consists in creating small track segments by linking spots in one frame to the spots in the frame just after, not minding anything else. That is of course not enough to make us happy: there might be some spot missing, failed detection that might have caused your tracks to be broken. But let us focus on this one now.
 
-Linking is made by minimizing a global cost (from one frame to another, yet). A short word on the linking logic:  The base cost of linking a particle with another one is simply the squared distance.<ref>There is some theoretical grounds for that, if you are investigating Brownian motion. See the article that details the segmenters and trackers for information.</ref> Following the proposal of Jaqaman ''et al.''<ref name="Jaqaman">Jaqaman, Loerke, Mettlen, Kuwata, Grinstein, Schmid, Danuser, ''"Robust single-particle tracking in live-cell time-lapse sequences"'', Nature Methods 5, 695 - 702 ('''2008''')</ref>, we also consider the possibility for a particle ''not'' to make any link, if is advantageous for the global cost. The sum of all costs are minimized to find to set of link for this pair of frame, and we move to the next one. 
+Linking is made by minimizing a global cost (from one frame to another, yet). A short word on the linking logic:  The base cost of linking a particle with another one is simply the squared distance.<ref>There is some theoretical grounds for that, if you are investigating Brownian motion. See the article that details the segmenters and trackers for information.</ref> Following the proposal of Jaqaman ''et al.''<ref name="Jaqaman"/>, we also consider the possibility for a particle ''not'' to make any link, if is advantageous for the global cost. The sum of all costs are minimized to find to set of link for this pair of frame, and we move to the next one. 
 
-The '''Max distance''' field helps preventing irrelevant linking to occur. Two spots separated by more than this distance will never be considered for linking. This also saves some computation time. 
+As for the simple tracker, the '''Max distance''' field helps preventing irrelevant linking to occur. Two spots separated by more than this distance will never be considered for linking. This also saves some computation time. 
 
 The '''Feature penalties''' let you tune the linking cost using some measures of spot similarity. Typically in the single particle tracking framework, you cannot rely on shape 
 descriptors to identify a single object across multiple frames, for spots are "shapeless": they are just described by a X, Y, Z, T position tuple. 
 
 Yet, you might know your Biology better. For instance, you might be in the case where the mean intensity of a spot is roughly conserved along time, but vary even slightly from one spot to another. Or it might be the spot diameters, or a rough elliptic shape. Feature penalties allow you to penalize links between spots that have feature values that are different. Since the case you study might be anything, you can pick any feature to build your penalties. This one of the novelties in TrackMate, already evoked in Jaqaman ''et al.''<ref name="Jaqaman"/>, but extended here. 
 
-If you want to use feature penalties for frame-to-frame linking, simply press the green '''+''' button in the sub-panel. A combo-box will appear, in which you can choose the target feature. The text field ti its right allows specifying the penalty weight. Feature penalties will ''change'' the base cost, following
+If you want to use feature penalties for frame-to-frame linking, simply press the green '''+''' button in the sub-panel. A combo-box will appear, in which you can choose the target feature. The text field ti its right allows specifying the penalty weight. Feature penalties will ''change'' the base cost. We will not go in the details here (particularly because we are not going to use feature penalties in this tutorial), but basically, two spots with different features will have a linking cost higher than if the selected features values were the same. The weight allows you to specify how much you want to penalize a specific feature difference. A weight of 10 is already very penalizing.
+
+In our case, given the sparsity of spots, we do not need help from the features at all. Remove any penalties you might have added, using the red '''-''' button. 
+
+
+The three other sub-panels deal with the second pass of the linking algorithm, where you take track segments created above and re-link them. This <u>gap-closing</u> part is already known to you, it is the same as we saw in the previous section: you have to specify a maximal distance, and a maximal time separation. You can also specify feature penalties, like for frame-to-frame linking. They will be computed on the last spot of the first segment and the first spot of the 2md segment you are trying to bridge.
 
 
 
-For this, you can only configure the maximal linking distance and the feature penalties.
+ 
 
 == References ==
 
