@@ -252,11 +252,13 @@ If you want to use feature penalties for frame-to-frame linking, simply press th
 In our case, given the sparsity of spots, we do not need help from the features at all. Remove any penalties you might have added, using the red '''-''' button. 
 
 
-The three other sub-panels deal with the second pass of the linking algorithm, where you take track segments created above and re-link them. This <u>gap-closing</u> part is already known to you, it is the same as we saw in the previous section: you have to specify a maximal distance, and a maximal time separation. You can also specify feature penalties, like for frame-to-frame linking. They will be computed on the last spot of the first segment and the first spot of the 2md segment you are trying to bridge.
+The three other sub-panels deal with the second pass of the linking algorithm, where you take track segments created above and re-link them. This <u>gap-closing</u> part is already known to you, it is the same as we saw in the previous section: you have to specify a maximal distance, and a maximal time separation. You can also specify feature penalties, like for frame-to-frame linking. They will be computed on the last spot of the first segment and the first spot of the 2nd segment you are trying to bridge.
 
+The 3rd and 4th panels deal respectively with track splitting events and track merging events. The mechanisms at play are the same that for the gap-closings: track segments are bridge together depending on the penalties, the max distance and the max time separation allowed. 
 
+For <u>track splitting</u>, the middle of a segment is offered to bridge to the start of another segment. For <u>track merging</u>, the end of a segment is offered to bridge to the middle of another one.  A check box sets if you want to forbid or allow any of these events. 
 
- 
+As an exercise, try to find the parameters the will fuse the central track segments in a single large track, with two splitting events and a merge event. You should obtain the track layout pictured below.
 
 == References ==
 
