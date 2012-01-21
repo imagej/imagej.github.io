@@ -260,6 +260,44 @@ For <u>track splitting</u>, the middle of a segment is offered to bridge to the 
 
 As an exercise, try to find the parameters the will fuse the central track segments in a single large track, with two splitting events and a merge event. You should obtain the track layout pictured below.
 
+[[Image:TrackMate TrackingResults 2.png]]
+
+
+== Filtering tracks ==
+
+The next panel is just the equivalent of the spot filtering step we met before, but this time we use track features,. The filter principles are the same: you simply add filters, choosing a target feature, until you are happy with the remaining tracks. As for the spots, the tracks are not really deleted; they are just hidden and you can retrieve them by switching back to this panel and delete the filters. 
+
+[[Image:TrackMate TrackingFiltering.png]]
+
+Here, we have a total of 4 tracks. The two immobile spots of the bottom left contribute one track each, that we can barely see because they do not move much. Let us say that we want to get rid of them. There are several ways to do that, but the simple is simply to add a filter on track displacement, as picture above. 
+
+
+== The end or so ==
+
+[[Image:TrackMate DisplayPanel.png]]
+
+We are now close to the end of a typical workflow for a tracking problem. The panel you see now is the one that recapitulates display option. You can set spot color by feature, hide them, show their name, etc... Find out what they do, display options are pretty much self-explanatory.
+
+The [[TrackScheme]] button launches a module that allow manually editing tracks, and performing analysis on them. It is the subject of another tutorial. 
+
+If you press '''Next''', you will see that there is still a panel after this one. It is the Action chooser panel, that allows you to execute simple actions on your data, such as exporting, copying, re-calculating feature, etc... 
+
+If you are happy with the results, you can save them now. Loading the resulting file again in TrackMate will bring you to this panel, where you can inspect those results conveniently 
+
+
+== Wrapping up ==
+
+That is the end of this introductory tutorial. As you can see, it is quite long. Hopefully that does not mean that TrackMate itself is complicated. We detailed what you could do for the tracking part (the analysis and editing part is still to be seen), but if you recapitulate what we changed from the default, that was pretty simple:
+* we set the segmentation diameter to 5;
+* we added a spot filter on mean pixel intensity;
+* we picked a not-so-simple tracker and allowed for splitting and merging;
+* we added a track filter on displacement.
+Now that you know how the plugin works, you should be able to reach the end result in less than 30 seconds...
+
+
+[[User:JeanYvesTinevez|JeanYvesTinevez]] 10:14, 21 January 2012 (CET)
+
+
 == References ==
 
 <references/>
