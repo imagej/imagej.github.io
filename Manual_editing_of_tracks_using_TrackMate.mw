@@ -1,0 +1,15 @@
+== Introduction ==
+
+This tutorial show how to manually edit, correct and create spots and tracks in [[TrackMate]]. You might want to use manual editing to correct mistakes of automated segmenting or tracking, to do a full manual annotation of a dataset, or to create a "ground-truth" data.
+
+Manual annotation is seldom the most adequate alternative: depending on the size of the target data, it can take an important amount of time and energy, is not objective, and is not reproducible. But sometimes you have to bite the bullet, whether because a segmenter does not exist for your kind of images, or because it is quicker to manually correct error than to come with the ultimate, flawless algorithm. We tried to make it as convenient, easy and quick as possible in TrackMate, should your science requires it.
+
+It is a good idea to be already familiar with the automated segmentation in TrackMate, following the [[Getting started with TrackMate]] tutorial. Here, we will use an incorrect automated segmentation result, and correct it manually. It is perfectly possible to skip the automated part and to do the whole process manually. 
+
+== The test image: Development of a ''C.elegans'' embryo ==
+
+Download the target image here: [http://fiji.sc/tinevez/TrackMate/Celegans-5pc_17timepoints.zip Celegans-5pc_17timepoints.zip (34 MB)]. It is a rather large file, so it is zipped. Unzip it somewhere; you should end up having a single tiff file, ''Celegans-5pc_17timepoints.tif'' of about 100 MB.
+
+Open it in Fiji. You will get an image 
+
+[[Category:Tutorials]]
