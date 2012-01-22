@@ -10,6 +10,8 @@ It is a good idea to be already familiar with the automated segmentation in Trac
 
 Download the target image here: [http://fiji.sc/tinevez/TrackMate/Celegans-5pc_17timepoints.zip Celegans-5pc_17timepoints.zip (34 MB)]. It is a rather large file, so it is zipped. Unzip it somewhere; you should end up having a single tiff file, ''Celegans-5pc_17timepoints.tif'' of about 100 MB.
 
-Open it in Fiji. You will get an image 
+Open it in Fiji. You will get a stack, made of 41 Z-slices over 17 time-points, each image being 240 x 295. As you can see in ''Image > Properties'' (Ctrl+Shift+P), it has a spatial and temporal calibration. 
+
+The context if the following: We used a ''C.elegans'' strain named [http://www.wormbase.org/db/gene/strain?name=AZ212;class=Strain AZ212] that has its histone H2B coupled to the eGFP. So you can see the nuclei in the 488 nm excitation fluorescence channel. 
 
 [[Category:Tutorials]]
