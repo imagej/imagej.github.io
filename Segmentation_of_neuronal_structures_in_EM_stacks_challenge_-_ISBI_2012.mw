@@ -43,7 +43,7 @@ The contesting segmentation methods will be ranked by their performance on a tes
 The '''results''' are expected to be uploaded in the [http://fiji.sc/isbi-challenge/home/ challenge server] server as a '''32-bit TIFF 3D image, which values between 0 (100% membrane certainty) and 1 (100% non-membrane certainty).'''
 
 ==Evaluation metrics==
-In order to evaluate and rank the performances of the participant methods, we will use topology-based segmentation metrics, together with the pixel error (for the sake of metric comparison). Each metric will have an updated leader-board. 
+In order to evaluate and rank the performances of the participant methods, we will use 2D topology-based segmentation metrics, together with the pixel error (for the sake of metric comparison). Each metric will have an updated leader-board. 
 
 The metrics are:
 
