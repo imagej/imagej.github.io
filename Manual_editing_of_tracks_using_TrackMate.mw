@@ -27,7 +27,10 @@ This tutorial uses the following strategy: we will use an inadequate set of segm
 
 Launch TrackMate (''Plugins > Tracking > Track Mate'') and select the ''C.elegans'' stack as a target. Check on the first panel that all the spatial calibration is OK. The pixel size is about 200 nm in XY, 1 μm in Z, and each frame is separated by 2 minutes.
 
-Select the '''Down sampled LoG segmenter'''. 
+Select the '''Downsampled LoG segmenter'''. This choice actually makes sense: the nuclei are about 8 μm in diameter, and with a sampling of 200 nm, that makes 40 pixels wide nuclei. It is already advantageous to use the down-sampled version of the LoG segmenter above 20 pixels: segmenting 3D data over time takes already quite some time. Having to track large objects allow to down-sample them, making the data to iterate over smaller, which speed up the process. 
+
+This comes at a cost: the localization precision. To simulate segmentation defects, we will make it very bad. In the segmenter configuration panel, choose a down-sampling factor of 10 (a factor of 4 would have been wiser), and a target nuclei radius of 8 μm, as depicted to the right. 
+
 
 
 
