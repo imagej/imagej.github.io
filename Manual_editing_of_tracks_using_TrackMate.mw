@@ -33,7 +33,48 @@ Select the '''Downsampled LoG segmenter'''. This choice actually makes sense: th
 
 This comes at a cost: the localization precision. To simulate segmentation defects, we will make it very bad. In the segmenter configuration panel, choose a down-sampling factor of 10 (a factor of 4 would have been wiser), and a target nuclei radius of 8 μm, as depicted to the right. 
 
+The segmentation should take you no more than a minute, even on a standard machine, a considerable improvement over a standard segmenter. But at what cost!
 
+<br style="clear: both" />
+
+[[Image:TrackMate DownsampledInitThreshold.png|right|border]]
+
+On the Initial thresholding panel, we see that it is easy to separate spurious spots using the '''Quality''' feature only. There is a big and sharp peak at the left of the histogram, while fewer spots spread over 40. Let's discard the spurious spots now and put a threshold on quality at about 40, to keep 56 spots. 
+
+Now move to the next panel. On the ''Displayer choice'' panel you must pick the '''HyperStack Displayer'''. It is the only one that allows for manual editing.
+
+On the ''Spot filters'' panel, the results of the segmentation will appear. It is likely that our results are the same if you used the same numerical values as above. So you should see that a nucleus was missed on the first frame, that when a cell just divided in two, there is only one detected spot, and that almost all polar bodies are incorrectly segmented. These are expected defects given our choice of segmentation algorithm and the parameters we have used. 
+
+We could fix them right now, before tracking. As soon as the HyperStack displayer catches your data, it can edit it at anytime in the process. But let us exploit these defects for our training purpose, by having them generating additional linking defects. 
+
+<br style="clear: both" />
+
+== Generating irrelevant tracks ==
+
+[[Image:Celegans-5pc 17timepoints-Incorrect.png|right|border]]
+
+Normally, TrackMate can robustly handles track splitting events, representing ''e.g.'' cell division. Though this happens in this movie, we choose to dismiss this possibility in the automated tracking part.
+
+In the ''Tracker choice'' panel, select the '''Simple Fast LAP tracker'''. Leave the default values for the parameters, and press '''Next'''. You should end up in having something similar to the image to the right.
+
+A quick assertion shows that for nuclei, the individual track branches are not so bad. Each of the retained spot could use some fine tuning, but the tracks are not completely pathological, disregarding the fact that splitting events are missed. The polar bodies tracking results are hopeless. 
+
+This is what we will now manually correct.
+
+<br style="clear: both" />
+
+== Launching TrackScheme ==
+
+Move to the ''Display options'' panel, skipping the track filtering part. 
+
+Launching [[TrackScheme]] is the only way to manually edit the tracks in TrackMate (the spots can be edited as soon as the HyperStack displayer is launched). You could launch it now by pressing the '''TrackScheme''' button, but there is a convenience trick you can do first. 
+
+Move the to next panel, the ''Action chooser'' panel. In the combo box, select the '''Grab spot image''' action, and press the execute button. Once it is done, go back to the ''Display option'' panel, and press the '''TrackScheme''' button to launch TrachScheme. 
+
+TrackScheme displays a kind of "track map", where a track is laid on pane, arranged vertically over time, as a Parisian subway train map. Each spot is displayed as a cell in the map. Since we used the '''Grab spot image''' action before, each cell displays a thumbnail of the spot.
+
+
+[[Image:TrackScheme Start.png|center|700px|border]]
 
 
 [[Category:Tutorials]]
