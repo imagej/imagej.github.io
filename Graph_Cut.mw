@@ -15,7 +15,7 @@
 
 The Graph Cut plugin provides a way to obtain a globally smooth binary segmentation. As input, you have to provide a gray-scale image that represents the pixel affinities for belonging to the foreground. Via a single parameter you can adjust the smoothness of the segmentation.
 
-This plugin is based on a reimplementation of Kolmogorov's [http://www.cs.ucl.ac.uk/staff/V.Kolmogorov/software.html maxflow v3.01] library, which was written in C++. If you intend to use it for a publication, please cite:
+This plugin is based on a reimplementation of Kolmogorov's [http://pub.ist.ac.at/~vnk/software.html#maxflow maxflow v3.01] library, which was written in C++. If you intend to use it for a publication, please cite:
 
 Yuri Boykov and Vladimir Kolmogorov, <b>An Experimental Comparison of Min-Cut/Max-Flow Algorithms for Energy Minimization in Computer Vision.</b>, In IEEE Transactions on Pattern Analysis and Machine Intelligence, September 2004.
 
