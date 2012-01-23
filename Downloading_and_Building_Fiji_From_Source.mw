@@ -74,8 +74,10 @@ You should now be able to build Fiji with:
 
 === Missing Java3D ===
 
-During the build process there might be complains about missing Java3D features if you already have a Java SDK installed. To force the build system to clone its own JDK with Java3D support (i.e. act as if there is no system-wide Java SDK found) you could make the system-wide installed Java SDK invisible for it before building:
+During the build process there might be complaints about missing Java3D features if you already have a Java SDK installed. To force the build system to clone a JDK with everything needed by Fiji (including Java3D support) you need to clear the environment variable ''JAVA_HOME'' before building:
 
- unset JAVA_HOME
+<code lang="bash">
+unset JAVA_HOME
+</code>
 
 [[Category:Development]]
