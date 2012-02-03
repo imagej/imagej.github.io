@@ -2,10 +2,10 @@
 | software               = ImageJ
 | name                   = Sync Windows
 | author                 = Joachim Walter (walter at biz.uni-muenchen.de)
-| maintainer             = [[Fiji Development Team]]
+| maintainer             = [mailto:fiji-devel@googlegroups.com Fiji Development Team]
 | filename               = Sync_Win.jar
 | source                 = on [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Sync_Win gitweb], or contained in [http://rsbweb.nih.gov/ij/plugins/download/jars/Sync_Win.jar Sync_Win.jar]
-| latest version         = v1.7 (14 August 2007)
+| latest version         = v1.7-fiji1 (3 Feb 2012)
 | status                 = inactive 
 }}
 
