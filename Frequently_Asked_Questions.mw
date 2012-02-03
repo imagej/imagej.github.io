@@ -83,6 +83,10 @@ There is a known problem with older Windows drivers for some Intel graphics card
 
 Unfortunately, there are quite a large number of possible reasons. Please help us by [[Debugging_intro#Debugging_Java3D_issues|debugging the issues]] and [[Help:Contents|contacting us]] (mailing list or IRC) with the information. You can also [[report a Bug]], which will provide a lot of addidtional, potentially useful information.
 
+== Only a gray rectangle is shown by the 3D Viewer ==
+
+As with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by [[Debugging_intro#Debugging_Java3D_issues|debugging the issues]] and [[Help:Contents|contacting us]] (preferably via mailing list) with the information. You can also [[report a Bug]], which will provide a lot of addidtional, potentially useful information.
+
 = Development =
 
 == How can I build Fiji myself? ==
