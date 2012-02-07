@@ -246,6 +246,13 @@ rt.show('Fit param for y = a + (b-a)*exp(-(x-c)*(x-c)/(2*d*d)')
 
 
 
+== Uses of this plugin ==
+
+This plugin has been used at least in the following publication: 
+
+* [http://www.sciencedirect.com/science/article/pii/S0165027011004171 '''Woolley et al.''' In situ characterization of the brain-microdevice interface using Device Capture Histology. ''Journal of Neuroscience Methods (2011) vol. 201 (1) pp. 67-77'']
+
+If you use it, please tell me so that I can add to this list.
 
 
 
