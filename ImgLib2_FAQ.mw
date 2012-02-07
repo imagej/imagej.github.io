@@ -1,4 +1,18 @@
-= How to create a new Image from scratch? =
+= ImgLib2 =
+
+== What ''is'' ImgLib2 anyway? ==
+
+It is a library that helps you to implement algorithms for multi-dimensional data processing. The idea is that you can concentrate on the essence of your algorithm rather than syntactic sugar. It is possible to implement an algorithm without specifying what the image's data type is, how many dimensions it has, and how the image is stored.
+
+ImgLib2 is also the basis of [http://developer.imagej.net/ ImageJ2].
+
+== How do I migrate my ImgLib1 code to ImgLib2? ==
+
+There is some [[How To Migrate Code From ImgLib To ImgLib2|rudimentary documentation]], but you will most likely need to ask more detailed questions on the [mailto:fiji-devel@googlegroups.com Fiji developers mailing list].
+
+= ImgLib1 (deprecated) =
+
+== How to create a new Image from scratch? ==
 
 There are three parts to it: the data type, the dimension and the storage strategy. Example: If you already have an image ''first'' whose dimensions you want to copy, and the result should be of float type and be stored in a single large array, you can use this snippet of code:
 
