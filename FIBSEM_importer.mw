@@ -36,3 +36,24 @@ FIBSEM_Reader.openAsFloat = true;
 * click Run
 
 From now on, every FIBSEM image of the '''currently running Fiji instance''' will be opened as float, the float values represent directly the measured voltage for each pixel.
+
+=== Access the complete metadata ===
+
+In order to access the complete metadata you have to make a new instance of the FIBSEM importer, load the dataset and afterwards request the metadata object. Here is the code how do it using the script editor and the Beanshell language (see above):
+
+<source lang="java">
+import io.FIBSEM_Reader;
+import io.FIBSEM_Reader.FIBSEMData;
+
+// open the file
+FIBSEM_Reader reader = new FIBSEM_Reader();
+reader.run( "/Users/preibischs/Desktop/Zeiss_12-01-14_210123.dat" );
+
+// get the metadata
+FIBSEMData metadata = reader.getHeader();
+
+// print all data into the log window
+IJ.log( "" + metadata );
+
+// print a single field
+IJ.log( "The resolution of the image is " + metadata.xRes + " x " + metadata.yRes + " pixels." );</source>
