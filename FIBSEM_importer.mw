@@ -10,3 +10,17 @@ It will be opened as unsigned 16-bit data ranging from 0 to 65535, where 0 corre
 For access to all the other meta-data, see the special options paragraph below.
 
 == Special options ==
+
+=== Open image as float ===
+
+It might make sense to open the image as float and not convert it into an unsigned short. To do so, one can set a switch in the FIBSEM importer using the '''script editor''':
+* File > New > Script
+* Language > Beanshell
+* type the following lines
+<source lang="java">
+import io.FIBSEM_Reader;
+FIBSEM_Reader.openAsFloat = true;
+</source>
+* click Run
+
+From now on, every FIBSEM image of the '''currently running Fiji instance''' will be opened as float, the float values represent directly the measured voltage for each pixel.
