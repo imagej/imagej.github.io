@@ -174,7 +174,7 @@ If you still have a known arrangement of tiles that is not covered by any of the
 
 === I want to define a different overlap for X and Y using a Grid-Layout ===
 
-This option exists, but is disabled by default as it seems to me to a non-standard case. You can enable it as follows using the '''script editor''':
+This option exists, but is disabled by default as it seems to be me to a non-standard case. You can enable it as follows using the '''script editor''':
 * File > New > Script
 * Language > Beanshell
 * type the following line (without the 001)
