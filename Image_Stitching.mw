@@ -177,7 +177,7 @@ If you still have a known arrangement of tiles that is not covered by any of the
 This option exists, but is disabled by default as it seems to me to a non-standard case. You can enable it as follows using the '''script editor''':
 * File > New > Script
 * Language > Beanshell
-* type the following lines
+* type the following line
 <source lang="java">
 plugin.Stitching_Grid.seperateOverlapY = true;
 </source>
