@@ -172,6 +172,19 @@ If you still have a known arrangement of tiles that is not covered by any of the
  img_77.tif; ; (0.0, 818.0, 0.0)
  img_78.tif; ; (409.0, 818.0, 0.0)
 
+=== I want to define a different overlap for X and Y using a Grid-Layout ===
+
+This option exists, but is disabled by default as it seems to me to a non-standard case. You can enable it as follows using the '''script editor''':
+* File > New > Script
+* Language > Beanshell
+* type the following lines
+<source lang="java">
+plugin.Stitching_Grid.seperateOverlapY = true;
+</source>
+* click Run
+
+From now on, there will be a second slider for the overlap in Y on the '''currently running Fiji instance'''.
+
 == Results & Computation time ==
 
 [[Image:ResultsStitching.jpg|780px|Example of Stitching of 3D confocal stacks.]]<br />
