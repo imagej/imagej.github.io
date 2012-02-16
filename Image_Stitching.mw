@@ -144,16 +144,22 @@ Finally, you can choose whether to display the result or write the fused image t
 
 == Problems, known issues and solutions ==
 
+=== If the output is not correct ===
 If the Grid/Collection Stitching is not able to create the correct output image you can do it yourself iteratively using the Pairwise Stitching plugin. You just start with the first two images and fuse them. Using ROIs on clearly similar areas you can force a correct alignment. Afterwards you fuse the result with the third image and so on. The biggest drawback apart from the time consumption is that you can only use Maximum Intensity as fusion method, otherwise the image will look weird. Furthermore it will consume more memory.
 
+=== Problems loading the images ===
 For loading microscopic images we use the LOCI Bioformats importer. If you experience problems loading files, convert them to TIFF before, it should be read fine.
 
+=== Minimal number of z-sections ===
 Three-dimensional stitching will not work for z-Stack size of smaller than 3 pixels. If you want to reconstruct such image from very thin tiles, duplicating of some of the stacks should solve the problem. Or you try to work just on the maximum/average intensity projections of the thin stacks.
 
+=== Register different channels to each other ===
 The plugin is not build to register different channels to each other. However, if you want to do that anyways simply convert channels into time-points and run it as if it was time-lapse registration. Afterwards you can convert it back. The easiest to achieve this is to use '''Image -> Hyperstacks -> Re-order hyperstack ...'''
 
+=== Timelapse alignment for Grid/Collection Stitching ===
 You might notice that the Grid/Collection Stitching does not offer any options for time-lapse alignment although it does perform it. For now, it always uses the option '''Apply registration of first time-point to all other time-points''' (as available in Pairwise Stitching)
 
+=== I have a known approximate arrangement for the tiles but it is not any of the grids ===
 If you still have a known arrangement of tiles that is not covered by any of the grid methods, you can create yourself a tile configuration file which roughly describes the arrangement including the overlap. You can use this as input for the Grid/Collection stitching (option '''Positions from file -> Defined by TileConfiguration''') to refine it and find the correct alignment. Here is an example TileConfiguration.txt:
 
  # Define the number of dimensions we are working on
