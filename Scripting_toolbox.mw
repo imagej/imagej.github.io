@@ -117,7 +117,7 @@ imps[0].show();
 <source lang="java">
 dir1 = getDirectory("Choose Source Directory ");
 dir2 = getDirectory("Choose Destination Directory ");
-list = getFileList(dir);
+list = getFileList(dir1);
 
 for (i=0; i<list.length; i++) {
   if (endsWith(list[i], ".tif")) {
