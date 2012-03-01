@@ -25,14 +25,14 @@ A plugin that allows the segmentation off cell wall boundaries from microscopy i
 * Settings are saved in properties files for different types of images to be segmented
 
 === Segmentation process === 
-==== Pre-processing of the image  ====
+===== Pre-processing of the image  =====
 1. Image filtering: a smooth image is very important for the algorithm to work because. Different filters can be found in Fiji. Classically, a Gaussian filter can be used to process the image
 
 2. Background subtraction: It is often useful to reduce long-range modulations of the background intensity. This can be achieved with Fiji’s background subtraction function.
 
 3. Enhance contrast: it is generally useful to find the right setting for the balloon inflation to normalized the range of pixel intensity. This can be done using the enhance contrast function of Fiji.
 
-==== Segmentation Stage  ====
+===== Segmentation Stage  =====
 1. Find image boundaries: this stage is compulsory, even if a pixel limit of 0 can be set if boundaries are those of the image. The function is based on a watershed algorithm to find the boundaries of the tissue to be segmented. It is used for example in the automatic sampling of cell interior point (3.b) or to stop balloons from expanding outside the region.
 
 2. Find cell centres: the algorithm needs to be initiated with a seed placed inside each cell of interest. There are three options to carry out this step:
