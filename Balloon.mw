@@ -1,5 +1,5 @@
 {{Infobox Plugin
-| screenshot             = [[Image:Plugin_screencapture.jpg|200px]]
+| screenshot             = 
 | software               = ImageJ
 | name                   = BalloonPlugin
 | author                 = Lionel Dupuy
@@ -22,6 +22,8 @@ A plugin that allows the segmentation off cell wall boundaries from microscopy i
 * The determination of the cells being in contact each other
 * All previous segmentation steps are automatic, but it is possible to make manual modifications at each step;
 * Settings are saved in properties files for different types of images to be segmented
+
+[[Image:Plugin_screencapture.jpg|200px]]
 
 === Segmentation process === 
 ===== Pre-processing of the image  =====
