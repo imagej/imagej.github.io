@@ -23,7 +23,7 @@ A plugin that allows the segmentation off cell wall boundaries from microscopy i
 * All previous segmentation steps are automatic, but it is possible to make manual modifications at each step;
 * Settings are saved in properties files for different types of images to be segmented
 
-[[Image:Plugin_screencapture.jpg|500px]]
+[[Image:Plugin_screencapture.jpg|700px]]
 
 === Segmentation process === 
 ===== Pre-processing of the image  =====
