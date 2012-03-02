@@ -184,12 +184,16 @@ You now have the tools to correct the 3 main mistakes our crude segmentation mad
 # When the top cell divides at frame 9, only one daughter cell is detected. Move the spot to a correct position, and create one for its sibling. It is also missed at the frame 10. 
 # The same things happened for the division of the bottom cell at frame 10. The sibling nucleus is also missing from frame 11.
 
+Notice that when you add spots, they also appear in the TrackScheme window as a magenta cells, on the far right in a lane without track number. As long as you do not incorporate them in a track, they will remain there.
+
 Also, if you feel courageous, you can improve the look of your TrackScheme layout by adjusting the spot radii. There is however an automated way to do so, which will see later. 
 
 You should end up in having a corrected segmentation, where every nuclei correspond to one spot in TrackMate, and it at the right location. Time yourself doing so, so that you learn how much you have to invest on manually correcting segmentation results, and decide if it is acceptable. 
 
 
 == Editing tracks ==
+
+If you want to skip the previous part of the tutorial and start uw
 
    
 
