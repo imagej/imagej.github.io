@@ -103,8 +103,8 @@ import ij.ImageJ;
  */
 public class Example1b
 {
-	// within this method we define <T> to be a RealType and a NativeType which means the Type is 	
-	// able to map the data into an java basic type array  
+	// within this method we define <T> to be a RealType and a NativeType which means the  	
+	// Type is able to map the data into an java basic type array  
 	public < T extends RealType< T > & NativeType< T > > Example1b() 
 		throws ImgIOException, IncompatibleTypeException
 	{
