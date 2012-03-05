@@ -1,7 +1,7 @@
 == Summary ==
 
-This page shows 10 increasingly complex examples of how to program with ImgLib2. The intention of these examples are not to explain ImgLib2 concepts, but rather to give some practical hints how to work with the library:
+This page shows ten increasingly complex examples of how to program with ImgLib2. The intention of these examples are not to explain ImgLib2 concepts, but rather to give some practical hints how to work with the library:
 
-* Example 1: opening, creating and displaying images
+* '''[[ImgLib2 Examples#Example 1 | Example 1]]''':: opening, creating and displaying images
 
 == Example 1 ==
