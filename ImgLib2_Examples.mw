@@ -24,7 +24,7 @@ The first example illustrates the most basic operations of opening, creating, an
 
 === Example 1a ===
 
-If you are already an ImageJ programmer, you might find it the easiest way to simply wrap an ImageJ image into ImgLib2. Here, the data is not copied, so editing the image in ImgLib2 will also modify the ImageJ ImagePlus. Internally, we use a compatibility Img to represent the data, which is in the case of higher dimensionality (>2d) slower than ImgLib2 can do with the ''ArrayImg''. Furthermore you are limited in dimensionality (2d-5d) and in the type of input data (UnsignedByteType, UnsignedShortType, FloatType and ARGBType).
+If you are already an ImageJ programmer, you might find it the easiest way to simply wrap an ImageJ image into ImgLib2. Here, the data is not copied, so editing the image in ImgLib2 will also modify the ImageJ ImagePlus. Internally, we use a compatibility Img to represent the data, which is in the case of higher dimensionality (>2d) slower than ImgLib2 can do with the '''ArrayImg'''. Furthermore you are limited in dimensionality (2d-5d), in the type of data ('''UnsignedByteType''', '''UnsignedShortType''', '''FloatType''' and '''ARGBType''') and maximal size of each 2d-plane (max. 46000x46000).
 
 <source lang="java">
 import java.io.File;
