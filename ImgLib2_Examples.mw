@@ -16,13 +16,13 @@ and Fiji/plugins:
 
 === Overview of examples ===
 
-* '''[[ImgLib2 Examples#Example 1 | Example 1]]''': opening, creating and displaying images
+* '''[[ImgLib2 Examples#Example 1 - opening, creating and displaying images | Example 1]]''': opening, creating and displaying images
 
-== Example 1 ==
+== Example 1 - opening, creating and displaying images ==
 
 The first example illustrates the most basic operations of opening, creating, and displaying image content in ImgLib2. It will first focus on entires images ('''Img<T>'''), but also show how to display subsets only.
 
-=== Example 1a ===
+=== Example 1a - wrapping ImageJ images ===
 
 If you are already an ImageJ programmer, you might find it the easiest way to simply wrap an ImageJ image into ImgLib2. Here, the data is not copied, so editing the image in ImgLib2 will also modify the ImageJ ImagePlus. 
 
