@@ -48,7 +48,8 @@ import ij.io.Opener;
  */
 public class Example1a
 {
-        // within this method we define <T> to be a NumericType (depends on the type of ImagePlus)
+	// within this method we define <T> to be a NumericType (depends on the type of ImagePlus)
+	// you might want to define it as RealType if you know it cannot be an ImageJ RGB Color image
 	public < T extends NumericType< T > > Example1a()
 	{
 		// define the file to open
