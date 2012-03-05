@@ -7,3 +7,53 @@ This page shows ten increasingly complex examples of how to program with ImgLib2
 == Example 1 ==
 
 The first example illustrates the most basic operations of opening, creating, and displaying image content in ImgLib2. It will first focus on entires images ('''Img<T>'''), but also show how to display subsets only.
+
+=== Example 1a ===
+
+<source lang="java">
+import java.io.File;
+
+import net.imglib2.img.ImagePlusAdapter;
+import net.imglib2.img.Img;
+import net.imglib2.img.display.imagej.ImageJFunctions;
+import net.imglib2.type.numeric.RealType;
+
+import ij.ImageJ;
+import ij.ImagePlus;
+import ij.io.Opener;
+
+/**
+ * Opens a file with ImageJ and wraps it into an ImgLib2 Img.
+ *
+ */
+public class Example1a
+{
+	// within this method we define <T> to be a RealType
+	public < T extends RealType< T > > Example1a()
+	{
+		// define the file to open
+		File file = new File( "DrosophilaWing.tif" );
+
+		// open a file with ImageJ
+		final ImagePlus imp = new Opener().openImage( file.getAbsolutePath() );
+
+		// display it via ImageJ
+		imp.show();
+
+		// wrap it into an ImgLib image (no copying)
+		final Img< T > image = ImagePlusAdapter.wrap( imp );
+
+		// display it via ImgLib using ImageJ
+		ImageJFunctions.show( image );
+	}
+
+	public static void main( String[] args )
+	{
+		// open an ImageJ window
+		new ImageJ();
+
+		// run the example
+		new Example1a();
+	}
+}
+</source>
