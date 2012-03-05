@@ -46,7 +46,7 @@ import ij.io.Opener;
  */
 public class Example1a
 {
-	// within this method we define <T> to be a RealType
+	// within this method we define <T> to be a RealType (depends on the type of ImagePlus)
 	public < T extends RealType< T > > Example1a()
 	{
 		// define the file to open
