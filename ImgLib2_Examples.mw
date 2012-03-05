@@ -34,20 +34,22 @@ import java.io.File;
 import net.imglib2.img.ImagePlusAdapter;
 import net.imglib2.img.Img;
 import net.imglib2.img.display.imagej.ImageJFunctions;
-import net.imglib2.type.numeric.RealType;
+import net.imglib2.type.numeric.NumericType;
 
 import ij.ImageJ;
 import ij.ImagePlus;
 import ij.io.Opener;
 
 /**
- * Opens a file with ImageJ and wraps it into an ImgLib2 Img.
+ * Opens a file with ImageJ and wraps it into an ImgLib {@link Image}.
+ *
+ * @author Stephan Preibisch &amp; Stephan Saalfeld
  *
  */
 public class Example1a
 {
-	// within this method we define <T> to be a RealType (depends on the type of ImagePlus)
-	public < T extends RealType< T > > Example1a()
+        // within this method we define <T> to be a NumericType (depends on the type of ImagePlus)
+	public < T extends NumericType< T > > Example1a()
 	{
 		// define the file to open
 		File file = new File( "DrosophilaWing.tif" );
