@@ -12,9 +12,9 @@ All examples presented on this page are always entire classes including a main m
 
 and Fiji/plugins:
 
-* loci_tools.jar (LOCI bioformats
+* loci_tools.jar (LOCI bioformats)
 
-=== Overview of all examples ===
+=== Overview of examples ===
 
 * '''[[ImgLib2 Examples#Example 1 | Example 1]]''': opening, creating and displaying images
 
