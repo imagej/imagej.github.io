@@ -202,7 +202,7 @@ public class Example1c
 }
 </source>
 
-=== Example 1d - displaying Intervals using Views ===
+=== Example 1d - displaying images partly using Views ===
 
 
 <source lang="java">
