@@ -219,9 +219,6 @@ import ij.ImageJ;
 
 /**
  * Open an ArrayImg< FloatType > and display partly and rotated  
- *
- * @author Stephan Preibisch
- *
  */
 public class Example1d
 {
