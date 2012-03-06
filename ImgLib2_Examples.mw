@@ -160,7 +160,7 @@ import net.imglib2.type.numeric.real.FloatType;
 import ij.ImageJ;
 
 /**
- * Create a new ImgLib {@link Image} of {@link Type} {@link FloatType}
+ * Create a new ImgLib2 Img of Type FloatType
  *
  */
 public class Example1c
