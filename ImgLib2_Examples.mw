@@ -85,7 +85,7 @@ The typical way to open an image in ImgLib2 is to make use of the LOCI bioformat
 
 Note that for ''(a)'' we use an '''ArrayImg''' to hold the data. This means the data is held in one single java basic type array which results in optimal performance. The absolute size of image is, however, limited to 2^31-1 (~2 billion) pixels. The type of '''Img''' to use is defined by a ""ImgFactory'''. The '''ArrayImgFactory''' in this case has no arguments.
 
-In ''(b)'' we use the '''CellImg''' instead. It partitions the image data into n-dimensional cells each holding only a part of the data. The size of each cell is defined in the '''CellImgFactory'''. If you use the maximal cell size of 2^31-1 pixels (i.e. a maximally sized java native type array), you can address up to 2^62 (~4 exabyte or 4 million terabyte of) pixels in one '''Img'''.
+In ''(b)'' we use the '''CellImg''' instead. It partitions the image data into n-dimensional cells each holding only a part of the data. The size of each cell is defined in the '''CellImgFactory'''. If you use the maximal cell size of 2^31-1 pixels (i.e. a maximally sized java native type array), you can address up to 2^62 pixels (~4 exapixels or 4 billion gigapixels) in one '''Img'''.
 
 '''Important''': it does not matter which type of '''Img''' you use to hold the data as we will use '''Iterators''' and '''RandomAccesses''' to access the image content. It might be, however, important if you work on two '''Img''' at the same time using '''Iterators''', see Example2.
 
