@@ -81,6 +81,12 @@ public class Example1a
 
 === Example 1b - opening an ImgLib2 image ===
 
+The typical way to open an image in ImgLib2 is to make use of the LOCI bioformats importer. Below you see two examples of how to an image in ''(a)'' its own type and ''(b)'' as float. For ''(a)'' we assume, however, that the file contains some real valued numbers as defined by the interface '''RealType''' (see here for a complete Type hierarchy). Color images are opened as well and color is represented as its own dimension (like in the ImageJ Hyperstacks).
+
+Note that for ''(a)'' we use an '''ArrayImg''' to hold the data. This means the data is held in one single java basic type array which results in optimal performance. The absolute size of image is, however, limited to 2^31-1 (~2 billion) pixels. 
+
+In ''(b)'' we use the '''CellImg''' instead. 
+
 <source lang="java">
 import java.io.File;
 
