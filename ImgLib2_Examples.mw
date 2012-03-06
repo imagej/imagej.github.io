@@ -167,8 +167,6 @@ import ij.ImageJ;
 
 /**
  * Create a new ImgLib2 Img of Type FloatType
- *
- * @author Stephan Preibisch & Stephan Saalfeld
  */
 public class Example1c
 {
