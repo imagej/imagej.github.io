@@ -83,7 +83,7 @@ public class Example1a
 
 The typical way to open an image in ImgLib2 is to make use of the LOCI bioformats importer. Below you see two examples of how to an image in ''(a)'' its own type and ''(b)'' as float. For ''(a)'' we assume, however, that the file contains some real valued numbers as defined by the interface '''RealType''' (see here for a complete Type hierarchy). Color images are opened as well and color is represented as its own dimension (like in the ImageJ Hyperstacks). 
 
-Note that for ''(a)'' we use an '''ArrayImg''' to hold the data. This means the data is held in one single java basic type array which results in optimal performance. The absolute size of image is, however, limited to 2^31-1 (~2 billion) pixels. The type of '''Img''' to use is defined by a '"ImgFactory'''. The '''ArrayImgFactory''' in this case has no arguments.
+Note that for ''(a)'' we use an '''ArrayImg''' to hold the data. This means the data is held in one single java basic type array which results in optimal performance. The absolute size of image is, however, limited to 2^31-1 (~2 billion) pixels. The type of '''Img''' to use is defined by an ImgFactory. The '''ArrayImgFactory''' in this case has no arguments.
 
 In ''(b)'' we use the '''CellImg''' instead. It partitions the image data into n-dimensional cells each holding only a part of the data. The size of each cell is defined in the '''CellImgFactory'''. If you use the maximal cell size of 2^31-1 pixels (i.e. a maximally sized java native type array), you can address up to 2^62 pixels (~4 exapixels or 4 billion gigapixels) in one '''Img'''.
 
