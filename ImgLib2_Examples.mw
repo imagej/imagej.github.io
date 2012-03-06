@@ -202,6 +202,9 @@ public class Example1c
 
 === Example 1d - displaying images partly using Views ===
 
+Using the concept of '''Views''' it is possible to display only parts of the image, display a rotated view and many more cool things. Note that you can also concatenate them. '''Views''' are much more powerful than shown in this example, they will be increasingly used throughout the examples.
+
+A '''View''' almost behaves are like an '''Img''', they share important concepts. Both are '''RandomAccessible''' and '''Views''' that are not infinite are also an '''Interval''' (i.e. have a defined size) and can therefore be made '''Iterable'''. In ImgLib2, all algorithms are implemented for these abstract concepts like '''RandomAccessible''', '''Iterable''' or '''Interval'''. This enables us, like in this example, to simply display a '''View''' the same way as an '''Img'''.
 
 <source lang="java">
 import net.imglib2.RandomAccessibleInterval;
