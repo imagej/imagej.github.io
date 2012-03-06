@@ -111,8 +111,10 @@ As an exercise, do this for the 3 others spurious spots that remain. With the cu
 
 Press the '''Redo layout''' button when you are done. There should be four tracks remaining. Notice that their color changed as you deleted some of them. Their default color-map goes from blue to red and is re-adjusted every time the track number changes. 
 
+If you want to skip and directly move to the spot editing part, you can download the following [http://fiji.sc/tinevez/TrackMate/Celegans-5pc_17timepoints_step1.xml TrackMate xml file]. Put it in the same folder as the .tif file, click the ''Load'' button in the bottom bar of TrackMate and browse to the xml file. It should open the image and display the edited tracks.
 
-== Spot editing with the HyperStack Displayer == 
+
+== Spot editing with the HyperStack Displayer ==
 
 We now wish to correct for segmentation mistakes, that caused some nuclei to be missed. Creating new spots is made directly in the HyperStack displayer. First, make sure the TrackMate tool (represented by a black 'TM' over a yellow pen) is selected in the ImageJ toolbar, as pictured below:
 
@@ -191,13 +193,77 @@ Also, if you feel courageous, you can improve the look of your TrackScheme layou
 You should end up in having a corrected segmentation, where every nuclei correspond to one spot in TrackMate, and it at the right location. Time yourself doing so, so that you learn how much you have to invest on manually correcting segmentation results, and decide if it is acceptable. 
 
 
-== Editing tracks ==
+== Editing tracks: creating links ==
 
-If you want to skip the previous part of the tutorial and start uw
+Now we want to connect the lonesome spots to the track they belong to. This is all about creating links, and there are two ways to do that.
 
-   
+
+=== By drag & drop ===
+
+You can create a link between two cells in TrackScheme simply by enabling the linking button on the TrackScheme toolbar, and dragging a line between the source cell and the target cell.
+
+This is pictured below, where the first cell of the top track is attached to the track number 2, as it should. For visibility, I brought on this screenshot the target cell closer to the lane of the track 2. You can normally find it either on its own lane or on the far right of the panel. 
+
+[[Image:TrackMate CreateLinksInTrackScheme annotated.png|700px]]
+
+Press the '''Redo layout''' button to see the arranged result. The first spot is now incorporated in the right track.
+
+
+=== Using selection and right-click menu ===
+
+The cell in TrackScheme cannot be easily moved due to a very tricky bug we cannot solve. When the source and target cells are far away, it might be better to use another way to create links. We do this using the shared selection.
+
+In TrackScheme, find the solitary cell in frame 9. That is the one we created earlier, to add a missed spot when the top cell was dividing. When you click on the corresponding cell in TrackScheme, it gets highlighted in green. In the HyperStack displayer, the displayed slice and time points are changed to display the spot, also highlighted in green.
+
+We want to link this cell to the mother cell in the frame 8, just before it divided. To do so, 
+* In the HyperStack displayer, move to the frame 8
+* Hold the 'Shift' key
+* Click on the mother cell
+It gets highlighted in the displayer, and in TrackScheme as well. You now have two cells in the selection.
+
+To create a link between the two, 
+* Right-click anywhere in TrackScheme
+* In the menu that pops-up, select '''Link 2 spots'''.
+The newly created link is displayed in magenta. Note that the track arrangement is not changed; you need to press the '''Redo layout''' button to rearrange the tracks. 
+
+After doing so, you should now see a branching track, as picture below:
+
+[[Image:TrackMate BranchingTrack.png]]
+
+
+
+=== Creating several links at once ===
+
+Using the 'Shift + Left click', we can put several cells in the selection, and create the links between each pair. For instance, we will now merge the small bud of the newly edited track with the solitary cell and the rest of the branch for the top cell lineage.
+
+In the HyperStack displayer with 'Shift-click', select 
+* the branch end of the second track in the frame 9,
+* the closest solitary cell in frame 10, 
+* the beginning of the track 3.
+You should have 3 cells in the selection, as you can verify in the left-side pane of TrackScheme. Bring the right-click menu of TrackScheme, and select '''Link 3 spots'''. <u>Two</u> links are created. You should see that the track colors have changed in the displayer.
+
+Pressing the '''Redo layout''' will re-arrange the 2nd track, which now has two branches that extend to the end of the movie. 
+
+
+As an exercise, try to merge the first track, the third track and the 2 solitary spots in one shot. 
+
+
+== Editing tracks: deleting links ==
+
+We do not have much to say here. The tracks we generated had missing links, but no spurious ones. So we do not need to remove any. But here is how to do it:
+
+In TrackScheme, select the target link by clicking on it; it gets highlighted in the displayer as well. Press the 'Delete' key to remove it. 
+
+Removing a link often splits a track in 2 new tracks. To have them properly re-arranged,  press the '''Redo layout''' button.
+
 
 == Wrapping up ==
 
+Plus or minus the localization errors and some incorrect cell radii, you now have the full lineage in 3D of this short movie. This concludes this tutorial on manual editing in TrackMate. Here is a picture of the final results, as well as the [http://fiji.sc/tinevez/TrackMate/Celegans-5pc_17timepoints_final.xml corresponding xml file]:
+
+[[Image:TrackMate SmallLineage.png]]
+
+
+[[User:JeanYvesTinevez|JeanYvesTinevez]] 14:57, 6 March 2012 (CET)
 
 [[Category:Tutorials]]
