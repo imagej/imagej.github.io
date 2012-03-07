@@ -443,6 +443,8 @@ public class Example2b
 }
 </source>
 
+[[Image:ResultsStitching.jpg|780px|Shows the result if two Cursors are used that have a different iteration order. Here we are wrongly copying an ArrayImg (left) into a CellImg (right).]]<br />
+
 <span style="color:#FF0000">The correct code for the copy-method requires the use of a '''RandomAccess'''.</span> We use a '''Cursor''' to iterate over all pixels of the input and a '''RandomAccess''' which we set to the same location the output.
 
 <source lang="java">
