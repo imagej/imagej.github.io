@@ -288,12 +288,10 @@ public < T extends Type< T > > Img< T > copyImage( ... )
 
 <source lang="java">
 import ij.ImageJ;
-
-import java.io.File;
-
 import net.imglib2.Cursor;
 import net.imglib2.exception.IncompatibleTypeException;
 import net.imglib2.img.Img;
+import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
 import net.imglib2.io.ImgIOException;
 import net.imglib2.io.ImgOpener;
