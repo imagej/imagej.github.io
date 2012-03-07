@@ -442,3 +442,5 @@ public class Example2b
 	}
 }
 </source>
+
+The correct code for the copy-method requires the use of a '''RandomAccess'''.
