@@ -365,7 +365,7 @@ public class Example2a
 
 === Example 2b - Duplicating an Img using a different ImgFactory ===
 
-<span style="color:#FF0000">'''WARNING: This example makes a mistake on purpose!'''</span> It intends to show that the iteration order of '''Cursors''' is important to consider. The goal is to copy the content of an '''ArrayImg''' (i.e. an '''Img''' that was created using an '''ArrayImgFactory''') into a '''CellImg'''. Using only '''Cursors''' for both images will have a wrong result as an '''ArrayImg''' and a '''CellImg''' have different iteration orders. An '''ArrayImg''' is iterated linearly, while a '''CellImg''' is iterate cell-by-cell, but linearly within each cell.
+<span style="color:#FF0000">'''WARNING: The first code in this example makes a mistake on purpose!'''</span> It intends to show that the iteration order of '''Cursors''' is important to consider. The goal is to copy the content of an '''ArrayImg''' (i.e. an '''Img''' that was created using an '''ArrayImgFactory''') into a '''CellImg'''. Using only '''Cursors''' for both images will have a wrong result as an '''ArrayImg''' and a '''CellImg''' have different iteration orders. An '''ArrayImg''' is iterated linearly, while a '''CellImg''' is iterate cell-by-cell, but linearly within each cell.
 
 <source lang="java">
 import ij.ImageJ;
