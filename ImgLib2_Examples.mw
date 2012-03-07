@@ -367,6 +367,8 @@ public class Example2a
 
 <span style="color:#FF0000">'''WARNING: This example makes a mistake on purpose!'''</span> It intends to show that the iteration order of '''Cursors''' is important to consider.
 
+The goal is to copy the content of an '''ArrayImg''' (i.e. an '''Img''' that was created using an '''ArrayImgFactory''') into a '''CellImg'''. Using only '''Cursors''' for both images will have a wrong result.
+
 <source lang="java">
 public < T extends Type< T > > Img< T > copyImage( ... )
 </source>
