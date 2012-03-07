@@ -255,3 +255,9 @@ public class Example1d
 </source>
 
 == Example 2 - How to use Cursor and RandomAccess ==
+
+
+=== Example 2a - Duplicating an Img ===
+
+<source lang="java">
+</source>
