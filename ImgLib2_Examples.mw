@@ -481,7 +481,7 @@ public < T extends Type< T >> Img< T > copyImage( final Img< T > input,
 }
 </source>
 
-== Example2c - Generic copying of image data ===
+=== Example2c - Generic copying of image data ===
 
 <source lang="java">
 import ij.ImageJ;
