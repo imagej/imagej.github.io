@@ -76,7 +76,7 @@ ImgLib2 provides more sophisticated ways of getting image data to your screen, b
 As a rule of thumb, if you have something remotely resembling a pixel grid, usually you can '''ImageJFunctions.show()''' it.
 
 === Opening And Displaying Image Files ===
-You can open image files with [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/io/ImgOpener.html ImgOpener] which is using LOCI Bio-Formats.
+You can open image files with [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/io/ImgOpener.html ImgOpener] which is using [http://loci.wisc.edu/software/bio-formats LOCI Bio-Formats].
 The following opens and displays an image file.
 <source lang="java">
 import net.imglib2.img.Img;
