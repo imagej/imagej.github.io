@@ -280,7 +280,7 @@ The copy method itself is a generic method, it will work on any kind of '''Type'
 <source lang="java">
 public < T extends Type< T > > Img< T > copyImage( ... )
 </source>
-'''< T extends Type< T > >''' basically means that '''T''' can be anything that extends '''Type'''. These can be final implementations such as '''FloatType''' or also intermediate interfaces such as '''RealType'''. This, however, also means that in the method body only operations supported by '''Type''' will be available. As the method returns a '''T''' as well, 
+'''< T extends Type< T > >''' basically means that '''T''' can be anything that extends '''Type'''. These can be final implementations such as '''FloatType''' or also intermediate interfaces such as '''RealType'''. This, however, also means that in the method body only operations supported by '''Type''' will be available. Note that the method returns a '''T''', which also means that in the constructor from which we call method it will also return an '''Img<FloatType>''' as we provide it with one. 
 
 <source lang="java">
 import ij.ImageJ;
