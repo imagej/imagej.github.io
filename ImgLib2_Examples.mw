@@ -394,7 +394,8 @@ public class Example2b
 	public Example2b() throws ImgIOException, IncompatibleTypeException
 	{
 		// open with ImgOpener using an ArrayImgFactory
-		Img< FloatType > img = new ImgOpener().openImg( "DrosophilaWing.tif", new ArrayImgFactory< FloatType >(), new FloatType() );
+		Img< FloatType > img = new ImgOpener().openImg( "DrosophilaWing.tif", 
+			new ArrayImgFactory< FloatType >(), new FloatType() );
 
 		// copy the image into a CellImg with a cellsize of 20x20
 		Img< FloatType > duplicate = copyImage( img, new CellImgFactory< FloatType >( 20 ) );
@@ -403,10 +404,12 @@ public class Example2b
 		ImageJFunctions.show( duplicate );
 	}
 
-	public < T extends Type< T >> Img< T > copyImage( final Img< T > input, final ImgFactory< T > imgFactory )
+	public < T extends Type< T >> Img< T > copyImage( final Img< T > input, 
+		final ImgFactory< T > imgFactory )
 	{
 		// create a new Image with the same dimensions but the other imgFactory
-		// note that the input provides the size for the new image as it implements the Interval interface
+		// note that the input provides the size for the new image as it 
+		// implements the Interval interface
 		Img< T > output = imgFactory.create( input, input.firstElement() );
 
 		// create a cursor for both images
