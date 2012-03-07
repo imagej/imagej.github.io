@@ -382,8 +382,8 @@ import net.imglib2.type.Type;
 import net.imglib2.type.numeric.real.FloatType;
 
 /**
- * Here we want to copy an Image into another with a different Container one using a generic method,
- * but we cannot do it with simple Cursors as we use different {@link ImgFactory}s
+ * Here we want to copy an ArrayImg into a CellImg using a generic method,
+ * but we cannot do it with simple Cursors as they have a different iteration order.
  *
  * @author Stephan Preibisch &amp; Stephan Saalfeld
  *
@@ -400,7 +400,8 @@ public class Example2b
 		// copy the image into a CellImg with a cellsize of 20x20
 		Img< FloatType > duplicate = copyImage( img, new CellImgFactory< FloatType >( 20 ) );
 
-		// display the copy
+		// display the copy and the original
+		ImageJFunctions.show( img );
 		ImageJFunctions.show( duplicate );
 	}
 
