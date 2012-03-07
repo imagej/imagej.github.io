@@ -258,7 +258,7 @@ public class Example1d
 
 The following examples illustrate how to access image data using '''Cursor''' and '''RandomAccess''' and what the basic properties of both methods are.
 
-Accessing pixels using a '''Cursor''' means to iterate all pixels similar to iterators in the Java collections framework . However, a '''Cursor''' just ensures to visit each pixel exactly once, the order of iteration is not fixed in order to optimize the speed of iteration. ''This implies that that the order of iteration on two different '''Img''' is not necessarily the same!'' '''Cursors''' can be created by any object that implements '''IterableInterval''', such as an '''Img'''. '''Cursors''' implement the java.lang.Iterable interface so they compatible with specialized Java language constructs.
+Accessing pixels using a '''Cursor''' means to iterate all pixels similar to iterators in the Java collections framework . However, a '''Cursor''' just ensures to visit each pixel exactly once, the order of iteration is not fixed in order to optimize the speed of iteration. ''This implies that that the order of iteration on two different '''Img''' is not necessarily the same!'' '''Cursors''' can be created by any object that implements '''IterableInterval''', such as an '''Img'''. '''Cursors''' implement the java.lang.Iterable interface so they are compatible with specialized Java language constructs.
 
 === Example 2a - Duplicating an Img ===
 
