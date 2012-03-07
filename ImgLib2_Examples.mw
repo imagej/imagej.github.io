@@ -264,7 +264,7 @@ In contrast to iterating image data, a '''RandomAccess''' can be placed at arbit
 
 '''Localizable''' is implemented by '''Cursor''' as well as '''RandomAccess''', which means they are able to report their current location. However, for '''Cursor''' we differentiate between a '''LocalizingCursor''' and a normal '''Cursor'''. A '''LocalizingCursor''' updates his position on every move, no matter if it is queried or not whereas a normal '''Cursor''' computes its location on demand. Using a '''LocalizingCursor''' is more efficient if the location is queried for every pixel, a '''Cursor''' will be faster when localizing only occasionally.
 
-The '''Sampler''' interface implemented by '''Cursor''' and '''RandomAccess''' provides access to the '''Type''' instance of the current pixel. Using the '''Type''' instance it is possible to read and write its current value. Depending on the capabilities of the '''Type''', more operations are available such as add, sum, mul and div for '''NumericTypes'''.
+The '''Sampler''' interface implemented by '''Cursor''' and '''RandomAccess''' provides access to the '''Type''' instance of the current pixel. Using the '''Type''' instance it is possible to read and write its current value. Depending on the capabilities of the '''Type''' more operations are available, e.g. +,-,*,/ if it is a '''NumericType'''.
 
 Note that '''IterableInterval''' implements the java.lang.Iterable interface which means it is compatible with specialized Java language constructs:
 <source lang="java">
