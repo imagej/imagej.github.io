@@ -264,9 +264,9 @@ for ( FloatType type : img )
 	type.set( 5 );
 </source>
 
-In contrast to iterating image data, a '''RandomAccess''' can be placed at arbitrary locations to query its value. It is possible to set them to a specific n-dimensional coordinate or move them relative to their current position. Note that relative movements are usually significantly more performant. A '''RandomAccess''' can be created by any object that implements '''RandomAccessible''', like an '''Img''' or any 
+In contrast to iterating image data, a '''RandomAccess''' can be placed at arbitrary locations to query its value. It is possible to set them to a specific n-dimensional coordinate or move them relative to their current position. Note that relative movements are usually significantly more performant. A '''RandomAccess''' can be created by any object that implements '''RandomAccessible''', like an '''Img''' or a '''View'''.
 
-'''Cursor''' as well as '''RandomAccess''' are by default '''Localizable''', which means they are able to report their current location. However, for '''Cursor''' we differentiate between a '''LocalizingCursor''' and a normal '''Cursor'''. A '''LocalizingCursor''' updates his position on every move, no matter if it is queried or not whereas a normal '''Cursor''' computes its location on demand. Using a '''LocalizingCursor''' is more efficient if the location is queried for every pixel, a '''Cursor''' will be faster when localizing only occasionally.
+'''Localizable''' is implemented by '''Cursor''' as well as '''RandomAccess''', which means they are able to report their current location. However, for '''Cursor''' we differentiate between a '''LocalizingCursor''' and a normal '''Cursor'''. A '''LocalizingCursor''' updates his position on every move, no matter if it is queried or not whereas a normal '''Cursor''' computes its location on demand. Using a '''LocalizingCursor''' is more efficient if the location is queried for every pixel, a '''Cursor''' will be faster when localizing only occasionally.
 
 === Example 2a - Duplicating an Img ===
 
