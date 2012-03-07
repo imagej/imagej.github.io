@@ -254,7 +254,7 @@ public class Example1d
 }
 </source>
 
-== Example 2 - How to use Cursor and RandomAccess ==
+== Example 2 - How to use Cursor, RandomAccess and Type ==
 
 The following examples illustrate how to access image data using '''Cursor''' and '''RandomAccess''' and what the basic properties of both methods are.
 
