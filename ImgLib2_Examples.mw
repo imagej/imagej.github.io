@@ -368,4 +368,73 @@ public class Example2a
 <span style="color:#FF0000">'''WARNING: This example makes a mistake on purpose!'''</span> It intends to show that the iteration order of '''Cursors''' is important to consider. The goal is to copy the content of an '''ArrayImg''' (i.e. an '''Img''' that was created using an '''ArrayImgFactory''') into a '''CellImg'''. Using only '''Cursors''' for both images will have a wrong result as an '''ArrayImg''' and a '''CellImg''' have different iteration orders. An '''ArrayImg''' is iterated linearly, while a '''CellImg''' is iterate cell-by-cell, but linearly within each cell.
 
 <source lang="java">
+import ij.ImageJ;
+import net.imglib2.Cursor;
+import net.imglib2.exception.IncompatibleTypeException;
+import net.imglib2.img.Img;
+import net.imglib2.img.ImgFactory;
+import net.imglib2.img.array.ArrayImgFactory;
+import net.imglib2.img.cell.CellImgFactory;
+import net.imglib2.img.display.imagej.ImageJFunctions;
+import net.imglib2.io.ImgIOException;
+import net.imglib2.io.ImgOpener;
+import net.imglib2.type.Type;
+import net.imglib2.type.numeric.real.FloatType;
+
+/**
+ * Here we want to copy an Image into another with a different Container one using a generic method,
+ * but we cannot do it with simple Cursors as we use different {@link ImgFactory}s
+ *
+ * @author Stephan Preibisch &amp; Stephan Saalfeld
+ *
+ */
+public class Example2b
+{
+
+	public Example2b() throws ImgIOException, IncompatibleTypeException
+	{
+		// open with ImgOpener using an ArrayImgFactory
+		Img< FloatType > img = new ImgOpener().openImg( "DrosophilaWing.tif", new ArrayImgFactory< FloatType >(), new FloatType() );
+
+		// copy the image into a CellImg with a cellsize of 20x20
+		Img< FloatType > duplicate = copyImage( img, new CellImgFactory< FloatType >( 20 ) );
+
+		// display the copy
+		ImageJFunctions.show( duplicate );
+	}
+
+	public < T extends Type< T >> Img< T > copyImage( final Img< T > input, final ImgFactory< T > imgFactory )
+	{
+		// create a new Image with the same dimensions but the other imgFactory
+		// note that the input provides the size for the new image as it implements the Interval interface
+		Img< T > output = imgFactory.create( input, input.firstElement() );
+
+		// create a cursor for both images
+		Cursor< T > cursorInput = input.cursor();
+		Cursor< T > cursorOutput = output.cursor();
+
+		// iterate over the input cursor
+		while ( cursorInput.hasNext())
+		{
+			// move both forward
+			cursorInput.fwd();
+			cursorOutput.fwd();
+
+			// set the value of this pixel of the output image, every Type supports T.set( T type )
+			cursorOutput.get().set( cursorInput.get() );
+		}
+
+		//. return the copy
+		return output;
+	}
+
+	public static void main( String[] args ) throws ImgIOException, IncompatibleTypeException
+	{
+		// open an ImageJ window
+		new ImageJ();
+
+		// run the example
+		new Example2b();
+	}
+}
 </source>
