@@ -362,3 +362,9 @@ public class Example2a
 	}
 }
 </source>
+
+=== Example 2b - Duplicating an Img using a different ImgFactory ===
+
+<source lang="java">
+public < T extends Type< T > > Img< T > copyImage( ... )
+</source>
