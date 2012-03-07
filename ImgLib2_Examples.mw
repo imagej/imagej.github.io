@@ -446,10 +446,12 @@ public class Example2b
 The correct code for the copy-method requires the use of a '''RandomAccess'''.
 
 <source lang="java">
-	public < T extends Type< T >> Img< T > copyImage( final Img< T > input, final ImgFactory< T > imgFactory )
+	public < T extends Type< T >> Img< T > copyImage( final Img< T > input, 
+		final ImgFactory< T > imgFactory )
 	{
 		// create a new Image with the same dimensions but the other imgFactory
-		// note that the input provides the size for the new image as it implements the Interval interface
+		// note that the input provides the size for the new image as it implements
+		// the Interval interface
 		Img< T > output = imgFactory.create( input, input.firstElement() );
 
 		// create a cursor that automatically localizes itself on every move
