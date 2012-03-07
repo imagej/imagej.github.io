@@ -446,7 +446,7 @@ public class Example2b
 [[Image:ImgLib2example2b.png|780px]]
 Shows the result if two Cursors are used that have a different iteration order. Here we are wrongly copying an ArrayImg (left) into a CellImg (right).
 
-<span style="color:#FF0000">The correct code for the copy-method requires the use of a '''RandomAccess'''.</span> We use a '''Cursor''' to iterate over all pixels of the input and a '''RandomAccess''' which we set to the same location the output. Note that the ''setPosition()'' call of the '''RandomAccess''' directly takes the '''Cursor''' as input, which is possible because '''Cursor''' implements '''Localizable'''.
+<span style="color:#FF0000">The correct code for the copy-method requires the use of a '''RandomAccess'''.</span> We use a '''Cursor''' to iterate over all pixels of the input and a '''RandomAccess''' which we set to the same location the output. Note that the ''setPosition()'' call of the '''RandomAccess''' directly takes the '''Cursor''' as input, which is possible because '''Cursor''' implements '''Localizable'''. Please also note that we use a '''LocalizingCursor''' instead of a normal '''Cursor''' because we need the location of the '''Cursor''' at every pixel.
 
 <source lang="java">
 	public < T extends Type< T >> Img< T > copyImage( final Img< T > input, 
