@@ -254,6 +254,9 @@ public class Example1d
 }
 </source>
 
+[[Image:ImgLib2example1d.jpg|780px]]
+Shows the original image, the View of an interval, as well as the by 90 degree rotated version of the view. Note that only the original image in kept in memory, both Views are completely virtual.
+
 == Example 2 - How to use Cursor, RandomAccess and Type ==
 
 The following examples illustrate how to access pixels using '''Cursor''' and '''RandomAccess''', their basic properties, and how to modify pixel values using '''Type'''.
