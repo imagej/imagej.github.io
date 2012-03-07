@@ -328,6 +328,8 @@ public class Example2a
 	public < T extends Type< T > > Img< T > copyImage( final Img< T > input )
 	{
 		// create a new Image with the same properties
+		// note that the input provides the size for the new image as it implements 
+		// the Interval interface
 		Img< T > output = input.factory().create( input, input.firstElement() );
 
 		// create a cursor for both images
