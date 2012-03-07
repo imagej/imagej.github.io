@@ -15,14 +15,15 @@ public class CreateAndDisplay
 {
 	public static void main( final String[] args )
 	{
-		final Img< UnsignedByteType > img = new ArrayImgFactory< UnsignedByteType >().create( new long[] { 400, 320 }, new UnsignedByteType() );
+		final Img< UnsignedByteType > img = new ArrayImgFactory< UnsignedByteType >()
+			.create( new long[] { 400, 320 }, new UnsignedByteType() );
 		ImageJFunctions.show( img );
 	}
 }
 </source>
 
 When you run this example, you should get a window showing a black 400x320 image.
-In line ''010'', the image is created. In line ''011'' it is displayed.
+In lines ''010&011'', the image is created. In line ''012'' it is displayed.
 Now, that is one awfully long line just to create a black image.  Let's break it down into smaller parts.
 <source lang="java">
 final ImgFactory< UnsignedByteType > factory = new ArrayImgFactory< UnsignedByteType >();
@@ -91,7 +92,8 @@ public class OpenAndDisplay
 	{
 		try
 		{
-			final Img< UnsignedByteType > img = new ImgOpener().openImg( "graffiti.tif", new ArrayImgFactory< UnsignedByteType >(), new UnsignedByteType() );
+			final Img< UnsignedByteType > img = new ImgOpener().openImg( "graffiti.tif",
+				new ArrayImgFactory< UnsignedByteType >(), new UnsignedByteType() );
 			ImageJFunctions.show( img );
 		}
 		catch ( final ImgIOException e )
@@ -172,7 +174,8 @@ public class DrawWhitePixels
 	public static void main( final String[] args )
 	{
 		final int[] dimensions = new int[] { 400, 320 };
-		final Img< UnsignedByteType > img = new ArrayImgFactory< UnsignedByteType >().create( dimensions, new UnsignedByteType() );
+		final Img< UnsignedByteType > img = new ArrayImgFactory< UnsignedByteType >()
+			.create( dimensions, new UnsignedByteType() );
 
 		final RandomAccess< UnsignedByteType > r = img.randomAccess();
 		final Random random = new Random();
@@ -190,10 +193,10 @@ public class DrawWhitePixels
 	}
 }
 </source>
-In lines ''013-014'' we create a 8-bit gray-level image,
-in line ''028'' we show the result (like in the [[ImgLib2 Documentation#Opening And Displaying Image Files | previous example]]).
+In lines ''013-015'' we create a 8-bit gray-level image,
+in line ''029'' we show the result (like in the [[ImgLib2 Documentation#Opening And Displaying Image Files | previous example]]).
 
-In line ''016'' we create a '''RandomAccess''' to the image.
+In line ''017'' we create a '''RandomAccess''' to the image.
 '''Img''' implements the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html RandomAccessible] interface, thus we can use '''randomAccess()'''
 to obtain one.
 The '''RandomAccess''' has the same generic type, '''UnsignedByteType''', as the image.
@@ -201,7 +204,7 @@ The '''RandomAccess''' has the same generic type, '''UnsignedByteType''', as the
 final RandomAccess< UnsignedByteType > r = img.randomAccess();
 </source>
 
-In the '''for''' loop (lines ''018-026'') we set 1000 random pixels to the value 255 (white).
+In the '''for''' loop (lines ''019-027'') we set 1000 random pixels to the value 255 (white).
 First we obtain the ''x'', ''y'' coordinates of a random pixel within the image boundaries.
 <source lang="java">
 final int x = ( int ) ( random.nextFloat() * img.max( 0 ) );
@@ -305,7 +308,8 @@ public class DrawWhitePixelsGeneric
 	public static void main( final String[] args )
 	{
 		final int[] dimensions = new int[] { 400, 320 };
-		final Img< UnsignedByteType > img = new ArrayImgFactory< UnsignedByteType >().create( dimensions, new UnsignedByteType() );
+		final Img< UnsignedByteType > img = new ArrayImgFactory< UnsignedByteType >()
+			.create( dimensions, new UnsignedByteType() );
 		draw( img, new UnsignedByteType( 255 ) );
 		ImageJFunctions.show( img );
 	}
@@ -361,7 +365,8 @@ We need to be able to get the number of dimensions and the extend in every dimen
 These two are conveniently gathered in [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessibleInterval.html RandomAccessibleInterval<T>].
 So lets make that
 <source lang="java">
-public static < T extends Type< T > > void draw( final RandomAccessibleInterval< T > img, final T white )
+public static < T extends Type< T > >
+	void draw( final RandomAccessibleInterval< T > img, final T white )
 { ... }
 </source>
 Now we are able to apply '''draw()''' to many ImgLib2 constructs that are not pixel '''Img'''s.
@@ -385,7 +390,8 @@ import net.imglib2.type.numeric.integer.UnsignedByteType;
 
 public class DrawWhitePixelsGeneric
 {
-	public static < T extends Type< T > > void draw( final RandomAccessibleInterval< T > img, final T white )
+	public static < T extends Type< T > >
+		void draw( final RandomAccessibleInterval< T > img, final T white )
 	{
 		final int n = img.numDimensions();
 		final long[] min = new long[ n ];
@@ -408,7 +414,8 @@ public class DrawWhitePixelsGeneric
 
 	public static void main( final String[] args )
 	{
-		final Img< ARGBType > img = new ArrayImgFactory< ARGBType >().create( new int[] {400, 320, 100}, new ARGBType() );
+		final Img< ARGBType > img = new ArrayImgFactory< ARGBType >()
+			.create( new int[] {400, 320, 100}, new ARGBType() );
 		draw( img, new ARGBType( 0xffffffff ) );
 		ImageJFunctions.show( img );
 	}
