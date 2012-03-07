@@ -18,11 +18,11 @@ and Fiji/plugins:
 
 * '''[[ImgLib2 Examples#Example 1 - opening, creating and displaying images | Example 1]]''': opening, creating and displaying images
 
-== Example 1 - opening, creating and displaying images ==
+== Example 1 - Opening, creating and displaying images ==
 
 The first example illustrates the most basic operations of opening, creating, and displaying image content in ImgLib2. It will first focus on entires images ('''Img<T>'''), but also show how to display subsets only.
 
-=== Example 1a - wrapping ImageJ images ===
+=== Example 1a - Wrapping ImageJ images ===
 
 If you are already an ImageJ programmer, you might find it the easiest way to simply wrap an ImageJ image into ImgLib2. Here, the data is not copied, so editing the image in ImgLib2 will also modify the ImageJ ImagePlus. 
 
@@ -79,7 +79,7 @@ public class Example1a
 }
 </source>
 
-=== Example 1b - opening an ImgLib2 image ===
+=== Example 1b - Opening an ImgLib2 image ===
 
 The typical way to open an image in ImgLib2 is to make use of the LOCI bioformats importer. Below you see two examples of how open to an image as ''(a)'' its own type (e.g. '''UnsignedByteType''') and ''(b)'' as float ('''FloatType'''). For ''(a)'' we assume, however, that the file contains some real valued numbers as defined by the interface '''RealType''' (see here for a complete Type hierarchy). Color images are opened as well and color is represented as its own dimension (like in the ImageJ Hyperstacks). 
 
@@ -151,7 +151,7 @@ public class Example1b
 }
 </source>
 
-=== Example 1c - creating a new ImgLib2 image ===
+=== Example 1c - Creating a new ImgLib2 image ===
 
 Another important way to instantiate a new ImgLib2 '''Img''' is to create a new one from scratch. This requires you to define its '''Type''' as well as the '''ImgFactory''' to use. It additionally need one instance of the '''Type''' that it is supposed to hold. 
 
@@ -200,7 +200,7 @@ public class Example1c
 }
 </source>
 
-=== Example 1d - displaying images partly using Views ===
+=== Example 1d - Displaying images partly using Views ===
 
 Using the concept of '''Views''' it is possible to display only parts of the image, display a rotated view and many more cool things. Note that you can also concatenate them. '''Views''' are much more powerful than shown in this example, they will be increasingly used throughout the examples.
 
