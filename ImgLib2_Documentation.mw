@@ -74,7 +74,6 @@ It works with 2D and 3D images and can handle most of the pixel types supported 
 ImgLib2 provides more sophisticated ways of getting image data to your screen, but we will not go into that now.
 As a rule of thumb, if you have something remotely resembling a pixel grid, usually you can '''ImageJFunctions.show()''' it.
 
-
 === Opening And Displaying Image Files ===
 You can open image files with [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/io/ImgOpener.html ImgOpener] which is using LOCI Bio-Formats.
 The following opens and displays an image file.
@@ -110,6 +109,7 @@ final ImgOpener opener = new ImgOpener();
 When opening an image, we can specify which memory layout to use and as which value type we want to load the image.
 We want to use the '''ArrayImg''' layout again, and we want to have '''UnsignedByteType''' values again.
 
+http://fiji.sc/wiki/index.php/ImgLib2_Documentation#Opening_And_Displaying_Image_Files
 Similar to the [[ImgLib2 Documentation#Opening And Displaying Image Files | above example]] we need an '''ImgFactory''' and an instance of the value type.
 <source lang="java">
 final ImgFactory< UnsignedByteType > factory = new ArrayImgFactory< UnsignedByteType >();
@@ -124,8 +124,301 @@ If there is a problem reading the image, '''openImg()''' throws an [http://code.
 If all goes well, we store the result in an [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/Img.html Img] variable for convenience.
 (Actually the result is an [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/ImgPlus.html ImgPlus] wrapping an '''ArrayImg'''.)
 
-
 === Notes ===
-
 * Note that '''Img''' is just convenience interface.  When you get more proficient with ImgLib2 you will find yourself using it less and less.  You will either be more concrete or more general than that.  In the above example, we could be more concrete -- the result of the '''ArrayImgFactory< UnsignedByteType >.create()''' is actually an '''ArrayImg< UnsignedByteType, ByteArray >'''.  In algorithm implementations, you want to be as generic as possible to not constrain yourself to specific image types.  You will specify only the super-interfaces of '''Img''' that you really need. For instance, if you need something which has boundaries and can be iterated you would use '''IterableInterval'''.
 * There are more [[ImgLib2 Examples]] on [[ImgLib2 Examples#Example 1 - Opening, creating and displaying images | Opening, creating and displaying images]].
+
+== Accessors ==
+In ImgLib2, images are manipulated using ''Accessors''.
+For pixel images, you can think of an accessor as a movable reference to a pixel.
+* You can move it around the image (for example make it reference a pixel at specific coordinates).
+* You can de-reference it to get the pixel value.
+* And of course, you can ask it's current position.
+
+The accessors provided by ImgLib2 typically implement '''Cursor''' or '''RandomAccess'''.
+'''Cursor''' and '''RandomAccess''' are aggregations of interfaces covering the above three points.
+A simplified UML diagram for the interface hierarchy is shown below.
+(The simplification is with respect to real-coordinate interfaces for continuous images that are left out for now.)
+
+[[File:imglib2-accessors-simplified-integer.png|770px|center|Simplified UML for ImgLib2 accessor interfaces]]
+
+
+ImgLib2 supports two basic access patterns:
+* [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccess.html RandomAccess] provides n-dimensional random access through the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Positionable.html Positionable] interface. It can be positioned at arbitrary integer coordinates.
+* [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html Cursor] provides iteration through the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Iterator.html Iterator] interface. It can be moved forward to visit all pixels of the image once.
+Both, '''RandomAccess''' and '''Cursor''' implement the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Sampler.html Sampler] interface which allows to access pixel values.
+Both implement the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Localizable.html Localizable] interface which allows to retrieve the accessors current pixel coordinates.
+Both inherit (through '''Localizable''') the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/EuclideanSpace.html EuclideanSpace] interval which allows to get the number of dimensions of the image.
+
+Note, that [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Sampler.html Sampler], [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccess.html RandomAccess], and [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html Cursor]
+have a type paramer '''<T>''' that refers to the value type of the underlying image.
+
+=== RandomAccess ===
+[http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccess.html RandomAccess] provides n-dimensional random access
+through the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Positionable.html Positionable] interface.
+It can be used to access pixels at arbitrary integer coordinates.
+The following code uses a '''RandomAccess''' to draw some white pixels into an image.
+<source lang="java">
+import java.util.Random;
+
+import net.imglib2.RandomAccess;
+import net.imglib2.img.Img;
+import net.imglib2.img.array.ArrayImgFactory;
+import net.imglib2.img.display.imagej.ImageJFunctions;
+import net.imglib2.type.numeric.integer.UnsignedByteType;
+
+public class DrawWhitePixels
+{
+	public static void main( final String[] args )
+	{
+		final int[] dimensions = new int[] { 400, 320 };
+		final Img< UnsignedByteType > img = new ArrayImgFactory< UnsignedByteType >().create( dimensions, new UnsignedByteType() );
+
+		final RandomAccess< UnsignedByteType > r = img.randomAccess();
+		final Random random = new Random();
+		for ( int i = 0; i < 1000; ++i )
+		{
+			final int x = ( int ) ( random.nextFloat() * img.max( 0 ) );
+			final int y = ( int ) ( random.nextFloat() * img.max( 1 ) );
+			r.setPosition( x, 0 );
+			r.setPosition( y, 1 );
+			final UnsignedByteType t = r.get();
+			t.set( 255 );
+		}
+
+		ImageJFunctions.show( img );
+	}
+}
+</source>
+In lines ''013-014'' we create a 8-bit gray-level image,
+in line ''028'' we show the result (like in the [[ImgLib2 Documentation#Opening And Displaying Image Files | previous example]]).
+
+In line ''016'' we create a '''RandomAccess''' to the image.
+'''Img''' implements the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html RandomAccessible] interface, thus we can use '''randomAccess()'''
+to obtain one.
+The '''RandomAccess''' has the same generic type, '''UnsignedByteType''', as the image.
+<source lang="java">
+final RandomAccess< UnsignedByteType > r = img.randomAccess();
+</source>
+
+In the '''for''' loop (lines ''018-026'') we set 1000 random pixels to the value 255 (white).
+First we obtain the ''x'', ''y'' coordinates of a random pixel within the image boundaries.
+<source lang="java">
+final int x = ( int ) ( random.nextFloat() * img.max( 0 ) );
+final int y = ( int ) ( random.nextFloat() * img.max( 1 ) );
+</source>
+Then we position the '''RandomAccess''' at those coordinates.
+<source lang="java">
+r.setPosition( x, 0 );
+r.setPosition( y, 1 );
+</source>
+The '''setPosition()''' method (from the '''Positionable''' interface) takes two parameters: the coordinate and the dimension.
+So we set the coordinate in dimension 0 to the value ''x'', and we set the coordinate in dimension 1 to the value ''y''.
+
+After the ''RandomAccess'' has been positioned correctly, we can '''get()''' the pixel at that coordinate.
+<source lang="java">
+final UnsignedByteType t = r.get();
+</source>
+We get an instance of the pixel value type '''UnsignedByteType''' that acts as a reference to the pixel.
+We set the pixel value via this reference
+<source lang="java">
+t.set( 255 );
+</source>
+=== Notes ===
+* '''get()''' is defined in the '''Sampler''' interface, so you can obtain pixel references from a '''Cursor''' in exactly the same way.
+* Often, the '''T''' obtained from '''Sampler<T>.get()''' is a proxy object that is re-used internally. You should assume that moving the accessor invalidates the proxy. If you want to keep a permanent reference to a pixel, use the '''Sampler<T>.copy()''' method. In the above example, this would return a copy of the RandomAccess refering to the same pixel.
+* The '''Positionable''', '''Localizable''', &hellip; interfaces are not restricted to accessors. In fact, many ImgLib2 entities are '''Localizable'''.  For instance, the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib/Point.html Point] class implements '''Positionable''' and '''Localizable''', and simply represents a n-dimensional coordinate.   In your own code, whenever you have something that can provide coordinates, you should consider implementing '''Localizable'''.
+
+=== A Taste of Generic Algorithms ===
+Before we move on to the "other" accessor, ''Cursor'', let's consider a generalization of the previous example.
+Let's say we like setting random pixels, and because we plan to do this a lot in the future, we extract this functionality into a method.
+
+Easy enough. But what if we want to apply the method to images of another value type, e.g. '''DoubleType''' or '''ARGBType'''?
+What if we want to apply it to a 3D image?
+ImgLib2 allows you to write code that handles of this transparently.
+In the following we write a function, that sets 1000 random pixels to "white", no matter what.
+
+Let's take it step by step, starting from the original non-generic version.
+First, we extract a set-1000-pixels method for 2D '''Img<UnsignedByteType>'''.
+<source lang="java">
+public static void draw( final Img< UnsignedByteType > img )
+{
+	final RandomAccess< UnsignedByteType > r = img.randomAccess();
+	final Random random = new Random();
+	for ( int i = 0; i < 1000; ++i )
+	{
+		final int x = ( int ) ( random.nextFloat() * img.max( 0 ) );
+		final int y = ( int ) ( random.nextFloat() * img.max( 1 ) );
+		r.setPosition( x, 0 );
+		r.setPosition( y, 1 );
+		final UnsignedByteType t = r.get();
+		t.set( 255 );
+	}
+}
+</source>
+
+We can add a generic parameter to the method handle arbitrary value types '''T'''.
+We want something like
+<source lang="java">
+public static < T > void draw( final Img< T > img )
+{ ... }
+</source>
+However, for a generic '''T''', we no longer know what "white" is. 255 will certainly not do.
+So we need to pass the "white" value into the method.
+<source lang="java">
+public static < T > void draw( final Img< T > img, final T white )
+{ ... }
+</source>
+Furthermore, we need a way to set a pixel to this value.
+Note, that the '''Sampler.get()''' method provides a ''reference'' to the pixel.
+Changing that reference won't do any good, and there is no '''Sampler.set()''' method!
+We need to ensure that we can use the reference to change the pixel value.
+
+At the root of the ImgLib2 type hierarchy lies [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Type.html Type].
+A type '''T''' extending '''Type<T>''' must have a '''set( T )''' method, which is exactly what we need.
+So we make our method only accept those '''T''''s.
+<source lang="java">
+public static < T extends Type< T > > void draw( final Img< T > img, final T white )
+{ ... }
+</source>
+
+Replacing the '''UnsignedByteType''' with the generic '''T''', and using '''white''' instead of 255,
+we obtain a more general version of '''draw()'''.
+<source lang="java">
+public class DrawWhitePixelsGeneric
+{
+	public static < T extends Type< T > > void draw( final Img< T > img, final T white )
+	{
+		final RandomAccess< T > r = img.randomAccess();
+		final Random random = new Random();
+		for ( int i = 0; i < 1000; ++i )
+		{
+			final int x = ( int ) ( random.nextFloat() * img.max( 0 ) );
+			final int y = ( int ) ( random.nextFloat() * img.max( 1 ) );
+			r.setPosition( x, 0 );
+			r.setPosition( y, 1 );
+			final T t = r.get();
+			t.set( white );
+		}
+	}
+
+	public static void main( final String[] args )
+	{
+		final int[] dimensions = new int[] { 400, 320 };
+		final Img< UnsignedByteType > img = new ArrayImgFactory< UnsignedByteType >().create( dimensions, new UnsignedByteType() );
+		draw( img, new UnsignedByteType( 255 ) );
+		ImageJFunctions.show( img );
+	}
+}
+</source>
+Note, that we have to pass '''new UnsignedByteType( 255 )''' when calling '''draw()'''.
+
+Next, lets think about dimsionality-independence.
+Instead of '''setPosition()''' for just dimensions 0 and 1, we can do so for as many dimensions as the image happens to have.
+We get the number of dimensions using
+<source lang="java">
+final int n = img.numDimensions();
+</source>
+('''Img''' also extends '''EuclideanSpace''').
+
+We loop over all dimensions when setting the position of the '''RandomAccess''':
+<source lang="java">
+for ( int d = 0; d < n; ++d )
+{
+	final int x = ( int ) ( random.nextFloat() * img.max( d ) );
+	r.setPosition( x, d );
+}
+</source>
+
+Setting the position dimension-by-dimension may be inefficient, because the '''RandomAccess''' might need to modify internal state
+with each '''setPosition()''' call.
+Instead, we may pass a '''int[]''' or '''long[]''' array comprising the coordinates to set the position at once.
+
+Now the method looks like this:
+<source lang="java">
+public static < T extends Type< T > > void draw( final Img< T > img, final T white )
+{
+	final int n = img.numDimensions();
+	final long[] pos = new long[ n ];
+
+	final RandomAccess< T > r = img.randomAccess();
+	final Random random = new Random();
+	for ( int i = 0; i < 1000; ++i )
+	{
+		for ( int d = 0; d < n; ++d )
+			pos[ d ] = ( int ) ( random.nextFloat() * img.max( d ) );
+		r.setPosition( pos );
+		final T t = r.get();
+		t.set( white );
+	}
+}
+</source>
+
+Finally, there is no need to restrict ourselves to '''Img'''.
+After all, we do not need many of the features of '''Img'''.
+We need be able to get a '''RandomAccess''', so we need [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html RandomAccessible<T>].
+We need to be able to get the number of dimensions and the extend in every dimension, so we need [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Interval.html Interval].
+These two are conveniently gathered in [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessibleInterval.html RandomAccessibleInterval<T>].
+So lets make that
+<source lang="java">
+public static < T extends Type< T > > void draw( final RandomAccessibleInterval< T > img, final T white )
+{ ... }
+</source>
+Now we are able to apply '''draw()''' to many ImgLib2 constructs that are not pixel '''Img'''s.
+For instance there are Views that employ on-the-fly coordinate transforms, sampled and interpolated data, etc.
+
+However, with great power comes great responsibility&hellip;
+Taking a general '''Interval''' means that we no longer can assume that the interval starts at coordinates ''(0,0,&hellip;,0)''.
+Thus we need to make a final modification to correctly draw between ''min'' and ''max'' of the interval.
+<source lang="java">
+import java.util.Random;
+
+import net.imglib2.RandomAccess;
+import net.imglib2.RandomAccessibleInterval;
+import net.imglib2.img.Img;
+import net.imglib2.img.array.ArrayImgFactory;
+import net.imglib2.img.display.imagej.ImageJFunctions;
+import net.imglib2.type.Type;
+import net.imglib2.type.numeric.ARGBType;
+import net.imglib2.type.numeric.integer.IntType;
+import net.imglib2.type.numeric.integer.UnsignedByteType;
+
+public class DrawWhitePixelsGeneric
+{
+	public static < T extends Type< T > > void draw( final RandomAccessibleInterval< T > img, final T white )
+	{
+		final int n = img.numDimensions();
+		final long[] min = new long[ n ];
+		img.min( min );
+		final long[] scale = new long[ n ];
+		for ( int d = 0; d < n; ++d )
+			scale[ d ] = img.max( d ) - min[ d ];
+		final long[] pos = new long[ n ];
+
+		final RandomAccess< T > r = img.randomAccess();
+		final Random random = new Random();
+		for ( int i = 0; i < 1000; ++i )
+		{
+			for ( int d = 0; d < n; ++d )
+				pos[ d ] = min[ d ] + ( long ) ( random.nextFloat() * scale[ d ] );
+			r.setPosition( pos );
+			r.get().set( white );
+		}
+	}
+
+	public static void main( final String[] args )
+	{
+		final Img< ARGBType > img = new ArrayImgFactory< ARGBType >().create( new int[] {400, 320, 100}, new ARGBType() );
+		draw( img, new ARGBType( 0xffffffff ) );
+		ImageJFunctions.show( img );
+	}
+}
+</source>
+And we used it on a 3D '''ARGBType''' image. Ta daaaaaa&hellip;
+=== Notes ===
+* Besides '''setPosition()''' in a single or all dimensions, you can also relatively move a '''RandomAccess''' in one or all dimensions, or move the '''RandomAccess''' pixel-wise in one dimension   (Have a look at the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Positionable.html Positionable] API doc!)  Which of those is most efficient depends on the situation.
+* By ''image'', we do not necessarily mean ''pixel image''.
+
+=== Cursor ===
+[http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html Cursor] provides iteration through the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Iterator.html Iterator] interface.
+A '''Cursor''' can be used to visit all pixels of the image once.
