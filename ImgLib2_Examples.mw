@@ -272,7 +272,7 @@ for ( UnsignedByteType type : img )
 	type.add( 5 );
 </source>
 
-=== Example 2a - Duplicating an Img ===
+=== Example 2a - Duplicating an Img using a generic method ===
 
 The goal of this example is to simply make a copy of an existing '''Img'''. For this task it is sufficient to employ '''Cursors'''. The order of iteration for both '''Img''' will be the same as it is instantiated using the same '''ImgFactory'''.
 
@@ -280,7 +280,7 @@ The copy method itself is a generic method, it will work on any kind of '''Type'
 <source lang="java">
 public < T extends Type< T > > Img< T > copyImage( ... )
 </source>
-'''< T extends Type< T > >''' basically means that '''T''' can be anything that extends '''Type'''. These can be final implementations such as '''FloatType''' or also intermediate interfaces such as '''RealType'''. 
+'''< T extends Type< T > >''' basically means that '''T''' can be anything that extends '''Type'''. These can be final implementations such as '''FloatType''' or also intermediate interfaces such as '''RealType'''. This, however, also means that in the method body only operations supported by '''Type''' will be available. 
 
 <source lang="java">
 import ij.ImageJ;
