@@ -336,10 +336,10 @@ public class Example2a
 		Cursor< T > cursorInput = input.cursor();
 		Cursor< T > cursorOutput = output.cursor();
 
-		// iterate over the input cursor
+		// iterate over the input
 		while ( cursorInput.hasNext())
 		{
-			// move both forward by one pixel
+			// move both cursors forward by one pixel
 			cursorInput.fwd();
 			cursorOutput.fwd();
 
