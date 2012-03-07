@@ -275,7 +275,10 @@ for ( UnsignedByteType type : img )
 
 === Example 2a - Duplicating an Img using a generic method ===
 
-The goal of this example is to make a copy of an existing '''Img'''. For this task it is sufficient to employ '''Cursors'''. The order of iteration for both '''Img''' will be the same as it is instantiated using the same '''ImgFactory'''.
+The goal of this example is to make a copy of an existing '''Img'''. For this task it is sufficient to employ '''Cursors'''. The order of iteration for both '''Img''''s will be the same as they are instantiated using the same '''ImgFactory'''. It is possible to test if two '''IterableInterval''' have the same iteration order:
+<source lang="java">
+boolean sameIterationOrder = interval1.equalIterationOrder( interval2 );
+</source>
 
 The copy method itself is a generic method, it will work on any kind of '''Type'''. In this particular case it works on a '''FloatType''', but would also work on anything else like for example a '''ComplexDoubleType'''. The declaration of the generic type is done in the method declaration:
 <source lang="java">
