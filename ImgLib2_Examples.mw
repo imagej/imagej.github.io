@@ -256,7 +256,7 @@ public class Example1d
 
 == Example 2 - How to use Cursor, RandomAccess and Type ==
 
-The following examples illustrate how to access image data using '''Cursor''' and '''RandomAccess''' and what the basic properties of both methods are.
+The following examples illustrate how to access pixels using '''Cursor''' and '''RandomAccess''', their basic properties, and how to modify their pixel values using '''Type'''.
 
 Accessing pixels using a '''Cursor''' means to iterate all pixels in a way similar iterating Java collections. However, a '''Cursor''' only ensures to visit each pixel exactly once, the order of iteration is not fixed in order to optimize the speed of iteration. This implies that that the order of iteration on two different '''Img''' is not necessarily the same, see example 2b! '''Cursors''' can be created by any object that implements '''IterableInterval''', such as an '''Img'''. '''Views''' that are not infinite can be made iterable (see example 2c). ''Note that in general a '''Cursor''' has significantly higher performance than a '''RandomAccess''' and should therefore be given preference if possible''.
 
