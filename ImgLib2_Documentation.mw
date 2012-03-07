@@ -103,7 +103,7 @@ public class OpenAndDisplay
 	}
 }
 </source>
-The image is loaded in line ''014''. Lets look the steps in more detail.
+The image is loaded in lines ''014&015''. Lets look the steps in more detail.
 We create an [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/io/ImgOpener.html ImgOpener]
 <source lang="java">
 final ImgOpener opener = new ImgOpener();
