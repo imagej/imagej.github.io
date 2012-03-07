@@ -513,7 +513,8 @@ public class Example2d
 	public Example2d() throws ImgIOException, IncompatibleTypeException
 	{
 		// open with ImgOpener using an ArrayImgFactory
-		Img< FloatType > img = new ImgOpener().openImg( "DrosophilaWing.tif", new ArrayImgFactory< FloatType >(), new FloatType() );
+		Img< FloatType > img = new ImgOpener().openImg( "DrosophilaWing.tif", 
+			new ArrayImgFactory< FloatType >(), new FloatType() );
 
 		// copy & display an image
 		Img< FloatType > duplicate = img.factory().create( img, img.firstElement() );
@@ -524,13 +525,17 @@ public class Example2d
 		//
 		// Views.offsetInterval() does not only define where it is, but also adds a translation so that
 		// the minimal coordinate (upper left) of the view maps to (0,0)
-		RandomAccessibleInterval< FloatType > viewSource = Views.offsetInterval( img, new long[] { 100, 100 }, new long[]{ 250, 150 } );
+		RandomAccessibleInterval< FloatType > viewSource = Views.offsetInterval( img, 
+			new long[] { 100, 100 }, new long[]{ 250, 150 } );
 
 		// and as target
-		RandomAccessibleInterval< FloatType > viewTarget = Views.offsetInterval( img, new long[] { 500, 200 }, new long[]{ 250, 150 } );
+		RandomAccessibleInterval< FloatType > viewTarget = Views.offsetInterval( img, 
+			new long[] { 500, 200 }, new long[]{ 250, 150 } );
 		
-		// now we make the target iterable (which is possible because it is a RandomAccessibleInterval)
-		IterableInterval< FloatType > iterableTarget = IterableRandomAccessibleInterval.create( viewTarget );
+		// now we make the target iterable 
+		// (which is possible because it is a RandomAccessibleInterval)
+		IterableInterval< FloatType > iterableTarget = 
+			IterableRandomAccessibleInterval.create( viewTarget );
 		
 		// copy it into the original image (overwriting part of img)
 		copy( viewSource, iterableTarget );
@@ -539,7 +544,8 @@ public class Example2d
 		ImageJFunctions.show( img );
 	}
 
-	public < T extends Type< T > > void copy( final RandomAccessible< T > source, final IterableInterval< T > target )
+	public < T extends Type< T > > void copy( final RandomAccessible< T > source, 
+		final IterableInterval< T > target )
 	{
 		// create a cursor that automatically localizes itself on every move
 		Cursor< T > targetCursor = target.localizingCursor();
