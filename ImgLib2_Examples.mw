@@ -262,7 +262,7 @@ Accessing pixels using a '''Cursor''' means to iterate all pixels in a way simil
 <source lang="java">
 for ( FloatType type : img )
       type.set( 5 );
-</source
+</source>
 
 
 In contrast to iterating image data, a '''RandomAccess''' can be placed at arbitrary locations to query its value. It is possible to set them to a specific n-dimensional coordinate or move them relative to their current position. Note that relative movements are usually significantly more performant. A '''RandomAccess''' can be created by any object that implements '''RandomAccessible''', like an '''Img''' or any 
