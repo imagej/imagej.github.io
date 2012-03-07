@@ -365,7 +365,7 @@ public class Example2a
 
 === Example 2b - Duplicating an Img using a different ImgFactory ===
 
- <span style="color:#FF0000"> '''WARNING: This example makes a mistake on purpose!''' </span> It intends to show that the iteration order of '''Cursors''' is important to consider.
+<span style="color:#FF0000">'''WARNING: This example makes a mistake on purpose!'''</span> It intends to show that the iteration order of '''Cursors''' is important to consider.
 
 <source lang="java">
 public < T extends Type< T > > Img< T > copyImage( ... )
