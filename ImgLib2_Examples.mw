@@ -253,3 +253,5 @@ public class Example1d
 	}
 }
 </source>
+
+== Example 2 - copying images using Cursor and RandomAccess ==
