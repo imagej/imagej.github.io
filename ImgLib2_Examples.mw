@@ -310,14 +310,12 @@ public class Example2a
 {
 	public Example2a() throws ImgIOException, IncompatibleTypeException
 	{
-		// define the file to open
-		File file = new File( "DrosophilaWing.tif" );
-
 		// open with ImgOpener using an ArrayImgFactory
-		Img< FloatType > image = new ImgOpener().openImg( file.getAbsolutePath() );
+		Img< FloatType > img = new ImgOpener().openImg( "DrosophilaWing.tif",
+			new ArrayImgFactory< FloatType >(), new FloatType() );
 
 		// copy the image, as it is a generic method it also works with FloatType
-		Img< FloatType > duplicate = copyImage( image );
+		Img< FloatType > duplicate = copyImage( img );
 
 		// display the copy
 		ImageJFunctions.show( duplicate );
