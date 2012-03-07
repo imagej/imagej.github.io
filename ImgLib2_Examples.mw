@@ -523,8 +523,8 @@ public class Example2d
 		
 		// use a View to define an interval as source for copying
 		//
-		// Views.offsetInterval() does not only define where it is, but also adds a translation so that
-		// the minimal coordinate (upper left) of the view maps to (0,0)
+		// Views.offsetInterval() does not only define where it is, but also adds a translation 
+		// so that the minimal coordinate (upper left) of the view maps to (0,0)
 		RandomAccessibleInterval< FloatType > viewSource = Views.offsetInterval( img, 
 			new long[] { 100, 100 }, new long[]{ 250, 150 } );
 
