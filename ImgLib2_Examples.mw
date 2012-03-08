@@ -731,3 +731,5 @@ public Example3a()
 </source>
 
 ==== Example 3a - Variation 3 ====
+
+If we want to compute the location of the minimal and maximal pixel value, an '''Iterator''' will not be sufficient as we need location information. Instead the location search will demand an '''IterableInterval''' as input data which can create '''Cursors'''.
