@@ -483,8 +483,9 @@ public < T extends Type< T >> Img< T > copyImage( final Img< T > input,
 
 === Example 2c - Generic copying of image data ===
 
-In order to write a method that generically copies data and therefore also works on for example '''Views''', it is necessary to implement it for the underlying concepts of '''RandomAccessible''', '''Interable''' and '''Interval'''.
+In order to write a method that generically copies data requires an implementation for the underlying concepts of '''RandomAccessible''', '''Interable''' and '''Interval'''. In that way, it will run on '''Img''', '''View''' and any other class implemented for these interfaces (even if they do not exist yet).
 
+Therefore we design the copy method in a way that the target is an '''IterableInterval''' and the source is '''RandomAccessible'''. In this way, we simply iterate over the target and copy the corresponding pixels from the source. As the source only needs to be '''RandomAccessible''', it can be basically anything that can return a value at a certain location. This can be as simple as an '''Img''', but also interpolated sparse data, a function, a ray-tracer, a '''View''', ....
 
 <source lang="java">
 import ij.ImageJ;
