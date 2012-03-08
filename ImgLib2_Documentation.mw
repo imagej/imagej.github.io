@@ -217,7 +217,7 @@ r.setPosition( y, 1 );
 The '''setPosition()''' method (from the '''Positionable''' interface) takes two parameters: the coordinate and the dimension.
 So we set the coordinate in dimension 0 to the value ''x'', and we set the coordinate in dimension 1 to the value ''y''.
 
-After the ''RandomAccess'' has been positioned correctly, we can '''get()''' the pixel at that coordinate.
+After the '''RandomAccess''' has been positioned correctly, we can '''get()''' the pixel at that coordinate.
 <source lang="java">
 final UnsignedByteType t = r.get();
 </source>
@@ -226,6 +226,7 @@ We set the pixel value via this reference
 <source lang="java">
 t.set( 255 );
 </source>
+
 === Notes ===
 * '''get()''' is defined in the '''Sampler''' interface, so you can obtain pixel references from a '''Cursor''' in exactly the same way.
 * Often, the '''T''' obtained from '''Sampler<T>.get()''' is a proxy object that is re-used internally. You should assume that moving the accessor invalidates the proxy. If you want to keep a permanent reference to a pixel, use the '''Sampler<T>.copy()''' method. In the above example, this would return a copy of the RandomAccess refering to the same pixel.
