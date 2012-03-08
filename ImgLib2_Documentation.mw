@@ -226,8 +226,7 @@ We set the pixel value via this reference
 <source lang="java">
 t.set( 255 );
 </source>
-
-=== Notes ===
+==== Notes ====
 * '''get()''' is defined in the '''Sampler''' interface, so you can obtain pixel references from a '''Cursor''' in exactly the same way.
 * Often, the '''T''' obtained from '''Sampler<T>.get()''' is a proxy object that is re-used internally. You should assume that moving the accessor invalidates the proxy. If you want to keep a permanent reference to a pixel, use the '''Sampler<T>.copy()''' method. In the above example, this would return a copy of the RandomAccess refering to the same pixel.
 * The '''Positionable''', '''Localizable''', &hellip; interfaces are not restricted to accessors. In fact, many ImgLib2 entities are '''Localizable'''.  For instance, the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib/Point.html Point] class implements '''Positionable''' and '''Localizable''', and simply represents a n-dimensional coordinate.   In your own code, whenever you have something that can provide coordinates, you should consider implementing '''Localizable'''.
@@ -423,7 +422,7 @@ public class DrawWhitePixelsGeneric
 </source>
 And we used it on a 3D '''ARGBType''' image (which means a color image with red/green/blue/alpha values). Ta daaaaaa&hellip;
 
-=== Notes ===
+==== Notes ====
 * Besides '''setPosition()''' in a single or all dimensions, you can also relatively move a '''RandomAccess''' in one or all dimensions, or move the '''RandomAccess''' pixel-wise in one dimension   (Have a look at the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Positionable.html Positionable] API doc!)  Which of those is most efficient depends on the situation.
 * By ''image'', we do not necessarily mean ''pixel image''.
 * we use the generic parameter <b>< T extends Type< T > ></b> instead of <b>< Type ></b> throughout ImgLib2 since that allows us to be more type-safe. Imagine implementing an <b>add(a, b)</b> method for a certain type: using the simpler generic parameter would not allow us to enforce both parameters to have the same subclass of <b>Type</b>!
