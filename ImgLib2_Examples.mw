@@ -630,7 +630,8 @@ public class Example3
 		File file = new File( "DrosophilaWing.tif" );
 
 		// open with ImgOpener using an ArrayImgFactory
-		Img< FloatType > img = new ImgOpener().openImg( file.getAbsolutePath(), new ArrayImgFactory< FloatType >(), new FloatType() );
+		Img< FloatType > img = new ImgOpener().openImg( file.getAbsolutePath(),
+			new ArrayImgFactory< FloatType >(), new FloatType() );
 
 		// compute min and max of the Image
 		FloatType min = img.firstElement().createVariable();
@@ -654,8 +655,9 @@ public class Example3
 	/**
 	 * Compute the min and max for any {@link Iterable}, like an {@link Img}.
 	 *
-	 * The only functionality we need for that is to iterate. Therefore we need no {@link Cursor} that can localize itself,
-	 * neither do we need a {@link RandomAccess}. So we simply use the most simple interface in the hierarchy.
+	 * The only functionality we need for that is to iterate. Therefore we need no {@link Cursor} 
+	 * that can localize itself, neither do we need a {@link RandomAccess}. So we simply use the
+	 * most simple interface in the hierarchy.
 	 *
 	 * @param input - the input that has to just be {@link Iterable}
 	 * @param min - the type that will have min
