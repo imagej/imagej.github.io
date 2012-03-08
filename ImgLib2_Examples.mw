@@ -613,6 +613,8 @@ Searching for the minimal and maximal value in a dataset is a very nice example 
 
 Below we show '''three''' small variations of the min/max search. First we show the implementation as described above. Second we illustrate that this also works on a standard Java '''ArrayList'''. Third we show how the implementation changes if we do not only want the min/max value, but also their location. This requires to use '''IterableInterval''' instead, as '''Cursor''' can return their location.
 
+==== Variation 1 ====
+
 <source lang="java">
 import ij.ImageJ;
 
@@ -700,6 +702,8 @@ public class Example3a
 	}
 </source>
 
+==== Variation 2 ====
+
 Note that this example would just the same way if the input is not an '''Img''', but for example just a standard Java '''ArrayList'''
 
 <source lang="java">
@@ -724,3 +728,5 @@ public Example3a()
 }
 
 </source>
+
+==== Variation 3 ====
