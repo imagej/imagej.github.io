@@ -2,7 +2,7 @@
 
 This page shows ten increasingly complex examples of how to program with ImgLib2. The intention of these examples are not to explain ImgLib2 concepts, but rather to give some practical hints how to work with the library and to grasp the principles in a learning-by-doing way.
 
-All examples presented on this page are always entire classes including a main method to run them. Simply copying them into your favorite editor and compiling it will run them. The required Java libraries (jar files) can be found in Fiji/jars:
+All examples presented on this page are always entire classes including a main method to run them. Simply copying them into your favorite editor (e.g. the [[Script Editor]]) and compile & run them. The required Java libraries (jar files) can be found in ''Fiji.app/jars/'':
 
 * imglib2.jar (the core)
 * imglib2-algorithms.jar (algorithms implemented in ImgLib2)
@@ -10,9 +10,9 @@ All examples presented on this page are always entire classes including a main m
 * imglib2-ij.jar (the ImageJ interaction)
 * ij.jar (ImageJ core, used for display)
 
-and Fiji/plugins:
+and ''Fiji.app/plugins/'':
 
-* loci_tools.jar (LOCI bioformats)
+* loci_tools.jar (LOCI [[Bio-Formats]])
 
 === Overview of examples ===
 
