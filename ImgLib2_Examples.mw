@@ -634,7 +634,8 @@ import net.imglib2.type.numeric.RealType;
  */
 public class Example3a
 {
-	public < T extends RealType< T > & NativeType< T > > Example3a() throws ImgIOException, IncompatibleTypeException
+	public < T extends RealType< T > & NativeType< T > > Example3a() 
+		throws ImgIOException, IncompatibleTypeException
 	{
 		// open with ImgOpener using an ArrayImgFactory
 		Img< T > img = new ImgOpener().openImg( "DrosophilaWing.tif" );
@@ -653,9 +654,9 @@ public class Example3a
 	/**
 	 * Compute the min and max for any {@link Iterable}, like an {@link Img}.
 	 *
-	 * The only functionality we need for that is to iterate. Therefore we need no {@link Cursor} that
-	 * can localize itself, neither do we need a {@link RandomAccess}. So we simply use the most
-	 * simple interface in the hierarchy.
+	 * The only functionality we need for that is to iterate. Therefore we need no {@link Cursor} 
+	 * that can localize itself, neither do we need a {@link RandomAccess}. So we simply use the
+	 * most simple interface in the hierarchy.
 	 *
 	 * @param input - the input that has to just be {@link Iterable}
 	 * @param min - the type that will have min
