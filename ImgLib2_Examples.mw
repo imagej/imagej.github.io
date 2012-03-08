@@ -607,6 +607,10 @@ The core idea is to implement algorithms as generic as possible in order to maxi
 
 Following those ideas, your newly implemented algorithm will be applicable to any kind of data and dimensionality it is defined for, not only a very small domain you are currently working with. Also note that quite often this actually makes the implementation simpler.
 
+== Example 3a -  Min & Max search ==
+
+Searching for the minimal and maximal value in a dataset is a very nice example to illustrate generic algorithms. In order to find min & max values, '''Types''' only need to be able to compare themselves. Therefore we do not need any numeric values, we only require them to implement the (Java) interface '''Comparable'''. Additionally, no random access to the data is required, we simply need to iterate all pixels, also their location is irrelevant. The image data we need only needs to be '''Iterable'''.
+
 <source lang="java">
 import ij.ImageJ;
 
