@@ -483,6 +483,9 @@ public < T extends Type< T >> Img< T > copyImage( final Img< T > input,
 
 === Example 2c - Generic copying of image data ===
 
+In order to write a method that generically copies data and therefore also works on for example '''Views''', it is necessary to implement it for the underlying concepts of '''RandomAccessible''', '''Interable''' and '''Interval'''.
+
+
 <source lang="java">
 import ij.ImageJ;
 import net.imglib2.Cursor;
