@@ -32,16 +32,16 @@ final UnsignedByteType type = new UnsignedByteType();
 final Img< UnsignedByteType > img = factory.create( dimensions, type );
 </source>
 
-Pixel images in ImgLib2 are created using an [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/ImgFactory.html ImgFactory].
+Pixel images in ImgLib2 are created using an [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/ImgFactory.html ImgFactory].
 There are different ImgFactories, that create pixel containers with different memory layouts.
-Here, we create an [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/array/ArrayImgFactory.html ArrayImgFactory].
+Here, we create an [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/array/ArrayImgFactory.html ArrayImgFactory].
 This factory creates in containers that map to a single flat Java array.
 <source lang="java">
 final ImgFactory< UnsignedByteType > factory
 		= new ArrayImgFactory< UnsignedByteType >();
 </source>
 The type parameter of the factory that specifies the value type of the image we want to create.
-We want to create a 8-bit gray-level image, thus we use [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/type/numeric/integer/UnsignedByteType.html UnsignedByteType].
+We want to create a 8-bit gray-level image, thus we use [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/type/numeric/integer/UnsignedByteType.html UnsignedByteType].
 
 Next we create a '''long[]''' array that specifies the image size in every dimension.
 The length of the array specifies the number of dimensions.
@@ -61,7 +61,7 @@ Then we can create the image, using the factory, dimensions, and type variable.
 <source lang="java">
 final Img< UnsignedByteType > img = factory.create( dimensions, type );
 </source>
-We store the result of the '''create()''' method in an [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/Img.html Img] variable.
+We store the result of the '''create()''' method in an [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/Img.html Img] variable.
 '''Img''' is a convenience interface that gathers properties of pixel image containers
 such as having a number of dimensions, being able to iterate it's pixels, etc.
 
@@ -69,14 +69,14 @@ This image is then displayed using
 <source lang="java">
 ImageJFunctions.show( img );
 </source>
-[http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/display/imagej/ImageJFunctions.html ImageJFunctions] provides convenience methods
+[http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/display/imagej/ImageJFunctions.html ImageJFunctions] provides convenience methods
 to wrap ImgLib2 constructs into ImageJ containers and display them.
 It works with 2D and 3D images and can handle most of the pixel types supported by ImgLib2.
 ImgLib2 provides more sophisticated ways of getting image data to your screen, but we will not go into that now.
 As a rule of thumb, if you have something remotely resembling a pixel grid, usually you can '''ImageJFunctions.show()''' it.
 
 === Opening And Displaying Image Files ===
-You can open image files with [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/io/ImgOpener.html ImgOpener] which is using [http://loci.wisc.edu/software/bio-formats LOCI Bio-Formats].
+You can open image files with [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/io/ImgOpener.html ImgOpener] which is using [http://loci.wisc.edu/software/bio-formats LOCI Bio-Formats].
 The following opens and displays an image file.
 <source lang="java">
 import net.imglib2.img.Img;
@@ -104,7 +104,7 @@ public class OpenAndDisplay
 }
 </source>
 The image is loaded in lines ''014&015''. Lets look the steps in more detail.
-We create an [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/io/ImgOpener.html ImgOpener]
+We create an [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/io/ImgOpener.html ImgOpener]
 <source lang="java">
 final ImgOpener opener = new ImgOpener();
 </source>
@@ -121,9 +121,9 @@ Then we can use the '''openImg()''' method, giving a filename, '''ImgFactory''',
 <source lang="java">
 final Img< UnsignedByteType > img = opener.openImg( "graffiti.tif", factory, type );
 </source>
-If there is a problem reading the image, '''openImg()''' throws an [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/io/ImgIOException.html ImgIOException].
-If all goes well, we store the result in an [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/Img.html Img] variable for convenience.
-(Actually the result is an [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/ImgPlus.html ImgPlus] wrapping an '''ArrayImg'''.)
+If there is a problem reading the image, '''openImg()''' throws an [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/io/ImgIOException.html ImgIOException].
+If all goes well, we store the result in an [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/Img.html Img] variable for convenience.
+(Actually the result is an [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/ImgPlus.html ImgPlus] wrapping an '''ArrayImg'''.)
 
 === Notes ===
 * Note that '''Img''' is just convenience interface.  When you get more proficient with ImgLib2 you will find yourself using it less and less.  You will either be more concrete or more general than that.  In the above example, we could be more concrete -- the result of the '''ArrayImgFactory< UnsignedByteType >.create()''' is actually an '''ArrayImg< UnsignedByteType, ByteArray >'''.  In algorithm implementations, you want to be as generic as possible to not constrain yourself to specific image types.  You will specify only the super-interfaces of '''Img''' that you really need. For instance, if you need something which has boundaries and can be iterated you would use '''IterableInterval'''.
@@ -145,18 +145,18 @@ A simplified UML diagram for the interface hierarchy is shown below.
 
 
 ImgLib2 supports two basic access patterns:
-* [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccess.html RandomAccess] provides n-dimensional random access through the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Positionable.html Positionable] interface. It can be positioned at arbitrary integer coordinates.
-* [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html Cursor] provides iteration through the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Iterator.html Iterator] interface. It can be moved forward to visit all pixels of the image once.
-Both, '''RandomAccess''' and '''Cursor''' implement the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Sampler.html Sampler] interface which allows to access pixel values.
-Both implement the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Localizable.html Localizable] interface which allows to retrieve the accessors current pixel coordinates.
-Both inherit (through '''Localizable''') the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/EuclideanSpace.html EuclideanSpace] interval which allows to get the number of dimensions of the image.
+* [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccess.html RandomAccess] provides n-dimensional random access through the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Positionable.html Positionable] interface. It can be positioned at arbitrary integer coordinates.
+* [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html Cursor] provides iteration through the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Iterator.html Iterator] interface. It can be moved forward to visit all pixels of the image once.
+Both, '''RandomAccess''' and '''Cursor''' implement the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Sampler.html Sampler] interface which allows to access pixel values.
+Both implement the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Localizable.html Localizable] interface which allows to retrieve the accessors current pixel coordinates.
+Both inherit (through '''Localizable''') the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/EuclideanSpace.html EuclideanSpace] interval which allows to get the number of dimensions of the image.
 
-Note, that [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Sampler.html Sampler], [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccess.html RandomAccess], and [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html Cursor]
+Note, that [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Sampler.html Sampler], [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccess.html RandomAccess], and [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html Cursor]
 have a type paramer '''<T>''' that refers to the value type of the underlying image.
 
 === RandomAccess ===
-[http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccess.html RandomAccess] provides n-dimensional random access
-through the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Positionable.html Positionable] interface.
+[http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccess.html RandomAccess] provides n-dimensional random access
+through the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Positionable.html Positionable] interface.
 It can be used to access pixels at arbitrary integer coordinates.
 The following code uses a '''RandomAccess''' to draw some white pixels into an image.
 <source lang="java">
@@ -196,7 +196,7 @@ In lines ''013-015'' we create a 8-bit gray-level image,
 in line ''029'' we show the result (like in the [[ImgLib2 Documentation#Opening And Displaying Image Files | previous example]]).
 
 In line ''017'' we create a '''RandomAccess''' to the image.
-'''Img''' implements the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html RandomAccessible] interface, thus we can use '''randomAccess()'''
+'''Img''' implements the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html RandomAccessible] interface, thus we can use '''randomAccess()'''
 to obtain one.
 The '''RandomAccess''' has the same generic type, '''UnsignedByteType''', as the image.
 <source lang="java">
@@ -229,7 +229,7 @@ t.set( 255 );
 === Notes ===
 * '''get()''' is defined in the '''Sampler''' interface, so you can obtain pixel references from a '''Cursor''' in exactly the same way.
 * Often, the '''T''' obtained from '''Sampler<T>.get()''' is a proxy object that is re-used internally. You should assume that moving the accessor invalidates the proxy. If you want to keep a permanent reference to a pixel, use the '''Sampler<T>.copy()''' method. In the above example, this would return a copy of the RandomAccess refering to the same pixel.
-* The '''Positionable''', '''Localizable''', &hellip; interfaces are not restricted to accessors. In fact, many ImgLib2 entities are '''Localizable'''.  For instance, the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib/Point.html Point] class implements '''Positionable''' and '''Localizable''', and simply represents a n-dimensional coordinate.   In your own code, whenever you have something that can provide coordinates, you should consider implementing '''Localizable'''.
+* The '''Positionable''', '''Localizable''', &hellip; interfaces are not restricted to accessors. In fact, many ImgLib2 entities are '''Localizable'''.  For instance, the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib/Point.html Point] class implements '''Positionable''' and '''Localizable''', and simply represents a n-dimensional coordinate.   In your own code, whenever you have something that can provide coordinates, you should consider implementing '''Localizable'''.
 
 === A Taste of Generic Algorithms ===
 Before we move on to the "other" accessor, ''Cursor'', let's consider a generalization of the previous example.
@@ -276,7 +276,7 @@ Note, that the '''Sampler.get()''' method provides a ''reference'' to the pixel.
 Changing that reference won't do any good, and there is no '''Sampler.set()''' method!
 We need to ensure that we can use the reference to change the pixel value.
 
-At the root of the ImgLib2 type hierarchy lies [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Type.html Type].
+At the root of the ImgLib2 type hierarchy lies [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Type.html Type].
 A type '''T''' extending '''Type<T>''' must have a '''set( T )''' method, which is exactly what we need.
 So we make our method only accept those '''T''''s.
 <source lang="java">
@@ -359,9 +359,9 @@ public static < T extends Type< T > > void draw( final Img< T > img, final T whi
 
 Finally, there is no need to restrict ourselves to '''Img'''.
 After all, we do not need many of the features of '''Img'''.
-We need be able to get a '''RandomAccess''', so we need [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html RandomAccessible<T>].
-We need to be able to get the number of dimensions and the extent in every dimension, so we need [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Interval.html Interval].
-These two are conveniently gathered in [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessibleInterval.html RandomAccessibleInterval<T>].
+We need be able to get a '''RandomAccess''', so we need [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html RandomAccessible<T>].
+We need to be able to get the number of dimensions and the extent in every dimension, so we need [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Interval.html Interval].
+These two are conveniently gathered in [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessibleInterval.html RandomAccessibleInterval<T>].
 So lets make that
 <source lang="java">
 public static < T extends Type< T > >
@@ -423,12 +423,12 @@ public class DrawWhitePixelsGeneric
 And we used it on a 3D '''ARGBType''' image (which means a color image with red/green/blue/alpha values). Ta daaaaaa&hellip;
 
 === Notes ===
-* Besides '''setPosition()''' in a single or all dimensions, you can also relatively move a '''RandomAccess''' in one or all dimensions, or move the '''RandomAccess''' pixel-wise in one dimension   (Have a look at the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Positionable.html Positionable] API doc!)  Which of those is most efficient depends on the situation.
+* Besides '''setPosition()''' in a single or all dimensions, you can also relatively move a '''RandomAccess''' in one or all dimensions, or move the '''RandomAccess''' pixel-wise in one dimension   (Have a look at the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Positionable.html Positionable] API doc!)  Which of those is most efficient depends on the situation.
 * By ''image'', we do not necessarily mean ''pixel image''.
 * we use the generic parameter <b>< T extends Type< T > ></b> instead of <b>< Type ></b> throughout ImgLib2 since that allows us to be more type-safe. Imagine implementing an <b>add(a, b)</b> method for a certain type: using the simpler generic parameter would not allow us to enforce both parameters to have the same subclass of <b>Type</b>!
 * we create as many variables as possible outside of the loop (in particular, objects) since creating objects costs a bit of execution time and can easily dominate the performance of the algorithm if one is not careful about it.
 
 
 === Cursor ===
-[http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html Cursor] provides iteration through the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Iterator.html Iterator] interface.
+[http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html Cursor] provides iteration through the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Iterator.html Iterator] interface.
 A '''Cursor''' can be used to visit all pixels of the image once.
