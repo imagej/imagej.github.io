@@ -431,5 +431,69 @@ And we used it on a 3D '''ARGBType''' image (which means a color image with red/
 
 
 === Cursor ===
-[http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html Cursor] provides iteration through the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Iterator.html Iterator] interface.
-A '''Cursor''' can be used to visit all pixels of the image once.
+A [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html Cursor] can be used to visit all pixels of an image once.
+However, the '''Cursor''' concept is not limited to pixel images.  A '''Cursor''' can be used to iterate every collection of '''Localizable''' samples.
+
+'''Cursor''' provides iteration through the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Iterator.html net.imglib2.Iterator] interface.
+'''Iterator.fwd()''' advances the cursor.
+'''Iterator.hasNext()''' returns true if the cursor can be advanced further.
+Initially, a '''Cursor''' points before the first element. You have to call '''fwd()''' once to move to the first element.
+
+Note, that the ImgLib2 [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Iterator.html net.imglib2.Iterator] interface is different from
+Java's [http://docs.oracle.com/javase/6/docs/api/index.html?java/util/Iterator.html java.util.Iterator].
+However, for convenience, '''Cursor''' implements '''java.util.Iterator''' as well.
+
+Just like RandomAccess, '''Cursor''' extends '''Sampler''', so you can '''get()''' the value of the current pixel (respectively sample).
+It also implements '''Localizable''', so you can query the coordinates of the current sample.
+
+Let's look at an example:
+We load an image and find the maximum value (the intensity of the brightest pixel).
+<source lang="java">
+import net.imglib2.Cursor;
+import net.imglib2.img.Img;
+import net.imglib2.img.array.ArrayImgFactory;
+import net.imglib2.io.ImgIOException;
+import net.imglib2.io.ImgOpener;
+import net.imglib2.type.numeric.integer.UnsignedByteType;
+
+public class FindMaximumValue
+{
+	public static void main( final String[] args ) throws ImgIOException
+	{
+		final Img< UnsignedByteType > img = new ImgOpener().openImg( "graffiti.tif",
+			new ArrayImgFactory< UnsignedByteType >(), new UnsignedByteType() );
+		final Cursor< UnsignedByteType > cursor = img.cursor();
+		int max = 0;
+		while ( cursor.hasNext() )
+		{
+			cursor.fwd();
+			final UnsignedByteType t = cursor.get();
+			max = Math.max( t.get(), max );
+		}
+		System.out.println( "max = " + max );
+	}
+}
+</source>
+In line ''014'' we get a '''Cursor''' from the image.
+In lines ''016-021'' we iterate the image using '''hasNext()''' and '''fwd()'''.
+In line ''019'' we ''get()'' the value at the current position.
+Again, this is an instance of the pixel value type UnsignedByteType that acts as a reference to the pixel.
+
+Cursor implements '''java.util.Iterator''' which has the ''next()'' method.
+This is a combination of ''fwd()'' and ''get()''.
+Instead of
+<source lang="java">
+cursor.fwd();
+final UnsignedByteType t = cursor.get();
+</source>
+we could write
+<source lang="java">
+final UnsignedByteType t = cursor.next();
+</source>
+
+For even more syntactic sugar, every '''IterableInterval''' (such as '''Img''') implements [http://docs.oracle.com/javase/6/docs/api/index.html?java/lang/Iterable.html java.lang.Iterable].
+This allows to use the Java '''for-each''' loop and replace the lengthy '''while''' loop like so:
+<source lang="java">
+for( UnsignedByteType t : img )
+	max = Math.max( t.get(), max );
+</source>
