@@ -547,6 +547,18 @@ public class Example2d
 		ImageJFunctions.show( img );
 	}
 
+	/**
+	 * Copy from a source that is just RandomAccessible to an IterableInterval. Latter one defines 
+	 * size and location of the copy operation. It will query the same pixel locations of the
+ 	 * IterableInterval in the RandomAccessible. It is up to the developer to ensure that these 
+	 * coordinates match. 
+	 * 
+	 * Note that both, input and output could be Views, Img or anything that implements 
+	 * those interfaces.
+	 * 
+	 * @param source - a RandomAccess as source that can be infinite
+	 * @param target - an IterableInterval as target
+	 */
 	public < T extends Type< T > > void copy( final RandomAccessible< T > source, 
 		final IterableInterval< T > target )
 	{
