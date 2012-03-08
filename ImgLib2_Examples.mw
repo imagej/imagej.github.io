@@ -642,7 +642,7 @@ public class Example3a
 	public < T extends RealType< T > & NativeType< T > > Example3a() 
 		throws ImgIOException, IncompatibleTypeException
 	{
-		// open with ImgOpener using an ArrayImgFactory
+		// open with ImgOpener (he will decide which Img is best)
 		Img< T > img = new ImgOpener().openImg( "DrosophilaWing.tif" );
 
 		// create two empty variables
