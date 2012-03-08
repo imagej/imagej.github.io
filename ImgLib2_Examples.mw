@@ -596,6 +596,147 @@ public class Example2d
 }
 </source>
 
-== Example 3 -  ==
+== Example 3 -  Writing generic algorihms ==
+
 <source lang="java">
+import ij.ImageJ;
+
+import java.io.File;
+import java.util.Iterator;
+
+import mpicbg.util.RealSum;
+import net.imglib2.Cursor;
+import net.imglib2.RandomAccess;
+import net.imglib2.exception.IncompatibleTypeException;
+import net.imglib2.img.Img;
+import net.imglib2.img.array.ArrayImgFactory;
+import net.imglib2.io.ImgIOException;
+import net.imglib2.io.ImgOpener;
+import net.imglib2.type.Type;
+import net.imglib2.type.numeric.RealType;
+import net.imglib2.type.numeric.real.FloatType;
+
+/**
+ * Perform a generic min, max search and compute the average intensity
+ *
+ * @author Stephan Preibisch &amp; Stephan Saalfeld
+ *
+ */
+public class Example3
+{
+	public Example3() throws ImgIOException, IncompatibleTypeException
+	{
+		// define the file to open
+		File file = new File( "DrosophilaWing.tif" );
+
+		// open with ImgOpener using an ArrayImgFactory
+		Img< FloatType > img = new ImgOpener().openImg( file.getAbsolutePath(), new ArrayImgFactory< FloatType >(), new FloatType() );
+
+		// compute min and max of the Image
+		FloatType min = img.firstElement().createVariable();
+		FloatType max = img.firstElement().createVariable();
+
+		computeMinMax( img, min, max );
+
+		System.out.println( "minimum Value: " + min );
+		System.out.println( "maximum Value: " + max );
+
+		// compute average of the image
+		double avg = computeAverage( img );
+		System.out.println( "average Value: " + avg );
+
+		// for completeness, compute the correct average of the image
+		// (important for huge number of pixels when the precision of double is not sufficient)
+		avg = computePreciseAverage( img );
+		System.out.println( "precise average Value: " + avg );
+	}
+
+	/**
+	 * Compute the min and max for any {@link Iterable}, like an {@link Img}.
+	 *
+	 * The only functionality we need for that is to iterate. Therefore we need no {@link Cursor} that can localize itself,
+	 * neither do we need a {@link RandomAccess}. So we simply use the most simple interface in the hierarchy.
+	 *
+	 * @param input - the input that has to just be {@link Iterable}
+	 * @param min - the type that will have min
+	 * @param max - the type that will have max
+	 */
+	public < T extends Comparable< T > & Type< T >> void computeMinMax( final Iterable< T >
+		input, final T min, final T max )
+	{
+		// create a cursor for the image (the order does not matter)
+		final Iterator< T > iterator = input.iterator();
+
+		// initialize min and max with the first image value
+		T type = iterator.next();
+
+		min.set( type );
+		max.set( type );
+
+		// loop over the rest of the data and determine min and max value
+		while ( iterator.hasNext() )
+		{
+			// we need this type more than once
+			type = iterator.next();
+
+			if ( type.compareTo( min ) < 0 )
+				min.set( type );
+
+			if ( type.compareTo( max ) > 0 )
+				max.set( type );
+		}
+	}
+
+	/**
+	 * Compute the average intensity for an {@link Iterable}.
+	 *
+	 * @param input - the input data
+	 * @return - the average as double
+	 */
+	public < T extends RealType< T > > double computeAverage( final Iterable< T > input )
+	{
+		// count all values
+		double sum = 0;
+		long count = 0;
+
+		for ( final T type : input )
+		{
+			sum += type.getRealDouble();
+			++count;
+		}
+
+		return sum / count;
+	}
+
+	/**
+	 * Compute the average for an {@link Iterable} correctly using mpicbg.util.RealSum
+	 * (it does accumulate errors when adding up many values)
+	 *
+	 * @param input - the input data
+	 * @return - the average as double
+	 */
+	public < T extends RealType< T > > double computePreciseAverage( final Iterable< T > input )
+	{
+		// count all values
+		RealSum realsum = new RealSum();
+		long count = 0;
+		
+		for ( T type : input )
+		{
+			realsum.add( type.getRealDouble() );
+			++count;
+		}
+			
+		return realsum.getSum() / count;
+	}
+
+	public static void main( String[] args ) throws ImgIOException, IncompatibleTypeException
+	{
+		// open an ImageJ window
+		new ImageJ();
+
+		// run the example
+		new Example3();
+	}
+}
 </source>
