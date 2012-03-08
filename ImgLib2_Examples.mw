@@ -612,9 +612,9 @@ Following those ideas, your newly implemented algorithm will be applicable to an
 
 Searching for the minimal and maximal value in a dataset is a very nice example to illustrate generic algorithms. In order to find min/max values, '''Types''' only need to be able to compare themselves. Therefore we do not need any numeric values, we only require them to implement the (Java) interface '''Comparable'''. Additionally, no random access to the data is required, we simply need to iterate all pixels, also their location is irrelevant. The image data we need only needs to be '''Iterable'''.
 
-Below we show '''three''' small variations of the min/max search. First we show the implementation as described above. Second we illustrate that this also works on a standard Java '''ArrayList'''. Third we show how the implementation changes if we do not only want the min/max value, but also their location. This requires to use '''IterableInterval''' instead, as '''Cursor''' can return their location.
+Below we show '''three''' small variations of the min/max search. [[ImgLib2 Examples#Example 3a - Variation 1 | First]] we show the implementation as described above. [[ImgLib2 Examples#Example 3a - Variation 2 | Second]] we illustrate that this also works on a standard Java '''ArrayList'''. [[ImgLib2 Examples#Example 3a - Variation 3 | Third]] we show how the implementation changes if we do not only want the min/max value, but also their location. This requires to use '''IterableInterval''' instead, as '''Cursor''' can return their location.
 
-==== Variation 1 ====
+==== Example 3a - Variation 1 ====
 
 <source lang="java">
 import ij.ImageJ;
@@ -703,7 +703,7 @@ public class Example3a
 	}
 </source>
 
-==== Variation 2 ====
+==== Example 3a - Variation 2 ====
 
 Note that this example would just the same way if the input is not an '''Img''', but for example just a standard Java '''ArrayList'''
 
@@ -730,4 +730,4 @@ public Example3a()
 
 </source>
 
-==== Variation 3 ====
+==== Example 3a - Variation 3 ====
