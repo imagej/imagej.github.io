@@ -422,13 +422,12 @@ public class DrawWhitePixelsGeneric
 </source>
 And we used it on a 3D '''ARGBType''' image (which means a color image with red/green/blue/alpha values). Ta daaaaaa&hellip;
 
-'''Notes:'''
-* we use the generic parameter <b>< T extends Type< T > ></b> instead of <b>< Type ></b> throughout ImgLib2 since that allows us to be more type-safe. Imagine implementing an <b>add(a, b)</b> method for a certain type: using the simpler generic parameter would not allow us to enforce both parameters to have the same subclass of <b>Type</b>!
-* we create as many variables as possible outside of the loop (in particular, objects) since creating objects costs a bit of execution time and can easily dominate the performance of the algorithm if one is not careful about it.
-
 === Notes ===
 * Besides '''setPosition()''' in a single or all dimensions, you can also relatively move a '''RandomAccess''' in one or all dimensions, or move the '''RandomAccess''' pixel-wise in one dimension   (Have a look at the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Positionable.html Positionable] API doc!)  Which of those is most efficient depends on the situation.
 * By ''image'', we do not necessarily mean ''pixel image''.
+* we use the generic parameter <b>< T extends Type< T > ></b> instead of <b>< Type ></b> throughout ImgLib2 since that allows us to be more type-safe. Imagine implementing an <b>add(a, b)</b> method for a certain type: using the simpler generic parameter would not allow us to enforce both parameters to have the same subclass of <b>Type</b>!
+* we create as many variables as possible outside of the loop (in particular, objects) since creating objects costs a bit of execution time and can easily dominate the performance of the algorithm if one is not careful about it.
+
 
 === Cursor ===
 [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html Cursor] provides iteration through the [http://code.imagej.net:8080/job/ImgLib-daily/javadoc/index.html?net/imglib2/Iterator.html Iterator] interface.
