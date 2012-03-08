@@ -600,6 +600,11 @@ public class Example2d
 
 Examples 1 and 2 tried to introduce important tools you need in order to implement algorithms with ImgLib2. This example will show three generic implementations of algorithms computing the average, min&max as well as the center of mass.
 
+The core idea is to implement algorithms as generic as possible in order to maximize code-reusability. This applies to all of the following concepts:
+* '''Type:'''
+* '''Image data:'''
+* '''Dimensionality:'''
+
 <source lang="java">
 import ij.ImageJ;
 
