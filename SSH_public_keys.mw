@@ -29,4 +29,6 @@ With this, you can connect to the remote machine with
 
  ssh fiji
 
+See also [http://help.github.com/win-set-up-git/ GitHub's documentation on SSH keys].
+
 [[Category:Git]]
