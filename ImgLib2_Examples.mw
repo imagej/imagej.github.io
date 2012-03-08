@@ -604,7 +604,7 @@ The core idea is to implement algorithms as generic as possible in order to maxi
 * '''Type:'''
 * '''Image data:'''
 * '''Dimensionality:'''
-Following those ideas, your newly implemented algorithm will be applicable to any type of data it is defined for, not only a very small domain. Also note that quite often this actually makes the implementation simpler.
+Following those ideas, your newly implemented algorithm will be applicable to any type of data it is defined for, not only a very small domain you are currently working with. Also note that quite often this actually makes the implementation simpler.
 
 <source lang="java">
 import ij.ImageJ;
