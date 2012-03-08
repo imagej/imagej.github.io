@@ -23,7 +23,7 @@ public class CreateAndDisplay
 </source>
 
 When you run this example, you should get a window showing a black 400x320 image.
-In lines ''010&011'', the image is created. In line ''012'' it is displayed.
+In lines ''010-011'', the image is created. In line ''012'' it is displayed.
 Now, that is one awfully long line just to create a black image.  Let's break it down into smaller parts.
 <source lang="java">
 final ImgFactory< UnsignedByteType > factory = new ArrayImgFactory< UnsignedByteType >();
@@ -103,7 +103,7 @@ public class OpenAndDisplay
 	}
 }
 </source>
-The image is loaded in lines ''014&015''. Lets look the steps in more detail.
+The image is loaded in lines ''014-015''. Lets look the steps in more detail.
 We create an [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/io/ImgOpener.html ImgOpener]
 <source lang="java">
 final ImgOpener opener = new ImgOpener();
