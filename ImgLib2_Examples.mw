@@ -489,7 +489,7 @@ Therefore we design the copy method in a way that the ''target'' is an '''Iterab
 
 As the ''source'' only needs to be '''RandomAccessible''', it can be basically anything that can return a value at a certain location. This can be as simple as an '''Img''', but also interpolated sparse data, a function, a ray-tracer, a '''View''', ....
 
-As the ''target'' needs to be an '''IterableInterval''', it is more confined. This, however does not necessarily mean it can only an '''Img''' or a '''View''' that is not infinite. 
+As the ''target'' needs to be an '''IterableInterval''', it is more confined. This, however does not necessarily mean it can only an '''Img''' or a '''View''' that is not infinite. It simply means it has to be something that is iterable and not infinite, which for example also applies to sparse data (e.g. a list of locations and their values).
 
 <source lang="java">
 import ij.ImageJ;
