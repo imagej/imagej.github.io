@@ -141,7 +141,7 @@ The accessors provided by ImgLib2 typically implement '''Cursor''' or '''RandomA
 A simplified UML diagram for the interface hierarchy is shown below.
 (The simplification is with respect to real-coordinate interfaces for continuous images that are left out for now.)
 
-[[File:imglib2-accessors-simplified-integer.png|770px|center|Simplified UML for ImgLib2 accessor interfaces]]
+[[File:imglib2-accessors-simplified-integer.png|775px|center|Simplified UML for ImgLib2 accessor interfaces]]
 
 
 ImgLib2 supports two basic access patterns:
