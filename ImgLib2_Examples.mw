@@ -828,5 +828,7 @@ public class Example3a
 
 === Example 3b -  Computing average ===
 
+In a very similar one can compute the average intensity for image data. Here, we need to restrict the '''Type''' of data to '''RealType''' as the actual computation will be done using a Java '''double'''. In theory, one could use '''NumericType''' as it offers the 
+
 <source lang="java">
 </source>
