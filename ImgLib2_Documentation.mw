@@ -496,3 +496,110 @@ This allows to use the Java '''for-each''' loop and replace the lengthy '''while
 for( UnsignedByteType t : img )
 	max = Math.max( t.get(), max );
 </source>
+However, note that in this construct the '''Cursor''' is hidden and you can not use it to get the current location.
+Therefore, you will often use the '''while''' form.
+
+Let's extend the previous example. Now we are also interested in the coordinates of the maximum.
+'''Cursor''' extends the '''Localizable''' interface which provides methods to get the current location either
+dimension-by-dimension or all at once. (Have a look at the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Localizable.html Localizable] API doc!)
+<source lang="java">
+import net.imglib2.Cursor;
+import net.imglib2.img.Img;
+import net.imglib2.img.array.ArrayImgFactory;
+import net.imglib2.io.ImgIOException;
+import net.imglib2.io.ImgOpener;
+import net.imglib2.type.numeric.integer.UnsignedByteType;
+
+public class FindMaximumValueAndLocation
+{
+	public static void main( final String[] args ) throws ImgIOException
+	{
+		final Img< UnsignedByteType > img = new ImgOpener().openImg( "graffiti.tif",
+			new ArrayImgFactory< UnsignedByteType >(), new UnsignedByteType() );
+		final Cursor< UnsignedByteType > cursor = img.cursor();
+		int max = 0;
+		final long[] pos = new long[2];
+		while ( cursor.hasNext() )
+		{
+			cursor.fwd();
+			final UnsignedByteType t = cursor.get();
+			if ( t.get() > max )
+			{
+				max = t.get();
+				cursor.localize( pos );
+			}
+		}
+		System.out.println( "max = " + max );
+		System.out.println( "found at ( " + pos[0] + ", " + pos[1] + ")" );
+	}
+}
+</source>
+In line ''016'' we create a '''long[]''' position field which is updated (''024'') everytime a better ''max'' value is found.
+Here, we use a 2D position field, because we know, that the position is 2D.
+
+==== Generic version ====
+Let's look at a generic version of the ''maximum-finding'' example.
+
+<source lang="java">
+import net.imglib2.Cursor;
+import net.imglib2.IterableInterval;
+import net.imglib2.img.Img;
+import net.imglib2.img.array.ArrayImgFactory;
+import net.imglib2.io.ImgIOException;
+import net.imglib2.io.ImgOpener;
+import net.imglib2.type.Type;
+import net.imglib2.type.numeric.integer.UnsignedByteType;
+
+public class FindMaximumValueAndLocationGeneric
+{
+	public static < T extends Comparable< T > >
+			Cursor< T > findmax( final IterableInterval< T > iterable )
+	{
+		final Cursor< T > cursor = iterable.cursor();
+		cursor.fwd();
+		Cursor< T > max = cursor.copyCursor();
+		while ( cursor.hasNext() )
+			if ( cursor.next().compareTo( max.get() ) > 0 )
+				max = cursor.copyCursor();
+		return max;
+	}
+
+	public static void main( final String[] args ) throws ImgIOException
+	{
+		final Img< UnsignedByteType > img = new ImgOpener().openImg( "graffiti.tif",
+			new ArrayImgFactory< UnsignedByteType >(), new UnsignedByteType() );
+		final Cursor< UnsignedByteType > max = findmax( img );
+		System.out.println( "max = " + max.get().get() );
+		System.out.println( "found at ( " + max.getLongPosition( 0 ) + ", " +
+											max.getLongPosition( 1 ) + ")" );
+	}
+}
+</source>
+We define the method '''findmax''' as
+<source lang="java">
+public static < T extends Comparable< T > >
+		Cursor< T > findmax( final IterableInterval< T > iterable )
+</source>
+First, note that we do not take an '''Img<T>''' as the parameter, because that would be too restrictive.
+All we need is something that is iterable. Because we can easily put interval bounds on every iterable
+set of Localizables, ImgLib2 does not define an '''Iterable''' super-interface for '''IterableInterval'''.
+So [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/IterableInterval.html IterableInterval<T>] is the most general we can go here.
+
+For finding the maximum, the only restriction we have to put on type '''T''' is that it is comparable.
+
+The return value of '''findmax''' is a '''Cursor<T>'''.
+Instead of creating a new class that represents a tuple of maximum value and coordinates, we simply
+return a '''Cursor''' positioned at the maximum.
+
+To remember the maximum, we simply take a new copy of the iterating cursor whenever a better ''max'' value is found.
+<source lang="java">
+if ( cursor.next().compareTo( max.get() ) > 0 )
+	max = cursor.copyCursor();
+</source>
+
+Lines ''028-031'' show how to use '''findmax''' and get the maximum value and coordinates from the resulting '''Cursor'''.
+For a change, we used the dimension-by-dimension '''getLongPosition()''' of the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Localizable.html Localizable] interface.
+
+==== Notes ====
+* The iteration order is subject to implementation, specialized for each memory layout to minimize access time.  For example, an [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/img/array/ArrayImg.html ArrayImg] has a different iteration order from a [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/cell/CellImg.html CellImg].  This is nicely illustrated in [[ImgLib2 Examples#Example 2b - Duplicating an Img using a different ImgFactory | ImgLib2 Example 2b - Duplicating an Img using a different ImgFactory ]].
+* Typically, there are two variants of Cursors available.  One that calculates its location per each iteration and one that calculates it only per localization request.  The former is more efficient when localization occurs frequently, the latter otherwise. In the ''maximum-finding'' example, we use the latter one.  The former one could be obtained using '''localizingCursor()''' instead of '''cursor()'''. (See [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/IterableInterval.html IterableInterval] API doc.)
