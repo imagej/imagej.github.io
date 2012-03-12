@@ -9,6 +9,7 @@ All examples presented on this page are always entire classes including a main m
 * imglib2-io.jar (input/output using LOCI bioformats)
 * imglib2-ij.jar (the ImageJ interaction)
 * ij.jar (ImageJ core, used for display)
+* mpicbg.jar (for RealSum in example 3b)
 
 and ''Fiji.app/plugins/'':
 
