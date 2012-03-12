@@ -619,3 +619,32 @@ The following image shows the UML diagram for the ImgLib2 accessor interface hie
 The real-coordinate counterparts that were missing in the simplified version [[ImgLib2 Documentation#Accessors | above]] are highlighted.
 
 [[File:imglib2-accessors-real.png|center|UML for ImgLib2 accessor interfaces]]
+
+
+Real equivalents of the '''Positionable''' and '''Localizable''' interfaces have been added by which real-valued coordinates can be accessed.
+
+Something that is [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealPositionable.html RealPositionable], can be positioned at real coordinates.
+There are methods to set absolute or relative position, for a single or all dimensions, in analogy to the integer '''Positionable'''.
+You can also set a '''RealPositionable''' to the location of a '''RealLocalizable'''.
+Note that [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealPositionable.html RealPositionable] extends '''Positionable''', which is quite natural:
+Whenever something can be positioned at arbitrary real coordinates, of course it can be positioned to integer coordinates as well.
+
+[http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealLocalizable.html RealLocalizable] allows to get a real coordinate from an accessor.
+Again, this is completely analogous to the integer '''Localizable'''.
+In this case, the inheritance relationship is the other way around -
+'''Localizable''' extends [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealLocalizable.html RealLocalizable].
+Something that is able to provide its integer coordinates is always able to provide them as real coordinates too.
+
+In Combination with '''Sampler''', we obtain random-access and iteration accessor interfaces.
+[http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealRandomAccess.html RealRandomAccess] provides n-dimensional random access
+through the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealPositionable.html RealPositionable] interface.
+[http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealCursor.html RealCursor] provides iteration through the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Iterator.html Iterator] interface.
+
+Both, '''RealRandomAccess''' and '''RealCursor''' are '''RealLocalizable'''.
+Note that the inheritance relationship of '''Localizable''' and '''RealLocalizable''' propagates to the cursors.
+Every '''Cursor''' is also a '''RealCursor''' (because it can provide its current integer coordinates as real coordinates as well).
+There is no such relationship between '''RandomAccess''' and '''RealRandomAccess'''.
+
+==== Notes ====
+The '''RealPositionable''', '''RealLocalizable''', &hellip; interfaces are not restricted to accessors.
+For example, the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib/RealPoint.html RealPoint] class implements '''RealPositionable''' and '''RealLocalizable''', and simply represents a n-dimensional coordinate.
