@@ -848,7 +848,8 @@ import net.imglib2.type.numeric.RealType;
  */
 public class Example3b
 {
-	public < T extends RealType< T > & NativeType< T > > Example3b() throws ImgIOException, IncompatibleTypeException
+	public < T extends RealType< T > & NativeType< T > > Example3b() throws 
+		ImgIOException, IncompatibleTypeException
 	{
 		// open with ImgOpener using an ArrayImgFactory
 		Img< T > img = new ImgOpener().openImg( "DrosophilaWing.tif" );
