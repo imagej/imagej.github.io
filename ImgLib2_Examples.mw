@@ -828,7 +828,65 @@ public class Example3a
 
 === Example 3b -  Computing average ===
 
-In a very similar one can compute the average intensity for image data. Here, we need to restrict the '''Type''' of data to '''RealType''' as the actual computation will be done using a Java '''double'''. In theory, one could use '''NumericType''' as it offers the 
+In a very similar way one can compute the average intensity for image data. Here, we need to restrict the '''Type''' of data to '''RealType''' as the actual computation will be done using a Java '''double'''. In theory, one could use '''NumericType''' as it offers the possibility to add. However, we cannot know if the '''NumericType''' provided is actually capable of adding up millions of pixels. Even if we would ask for a second '''NumericType''' that is capable of adding values up, it might still have numerical instabilities. ''Actually every Java native type has those instabilities''. Therefore we use the '''RealSum''' class that offers correct addition of even very large amounts of pixels. As we have this implementation only for double values, we restrict the method here to '''RealType'''.
 
 <source lang="java">
+import ij.ImageJ;
+import mpicbg.util.RealSum;
+import net.imglib2.exception.IncompatibleTypeException;
+import net.imglib2.img.Img;
+import net.imglib2.io.ImgIOException;
+import net.imglib2.io.ImgOpener;
+import net.imglib2.type.NativeType;
+import net.imglib2.type.numeric.RealType;
+
+/**
+ * Perform a generic computation of average intensity
+ *
+ * @author Stephan Preibisch &amp; Stephan Saalfeld
+ *
+ */
+public class Example3b
+{
+	public < T extends RealType< T > & NativeType< T > > Example3b() throws ImgIOException, IncompatibleTypeException
+	{
+		// open with ImgOpener using an ArrayImgFactory
+		Img< T > img = new ImgOpener().openImg( "DrosophilaWing.tif" );
+
+		// compute average of the image
+		double avg = computeAverage( img );
+		System.out.println( "average Value: " + avg );
+	}
+
+	/**
+	 * Compute the average intensity for an {@link Iterable}.
+	 *
+	 * @param input - the input data
+	 * @return - the average as double
+	 */
+	public < T extends RealType< T > > double computeAverage( final Iterable< T > input )
+	{
+		// Count all values using the RealSum class.
+		// It prevents numerical instabilities when adding up millions of pixels
+		RealSum realSum = new RealSum();
+		long count = 0;
+
+		for ( final T type : input )
+		{
+			realSum.add( type.getRealDouble() );
+			++count;
+		}
+
+		return realSum.getSum() / count;
+	}
+
+	public static void main( String[] args ) throws ImgIOException, IncompatibleTypeException
+	{
+		// open an ImageJ window
+		new ImageJ();
+
+		// run the example
+		new Example3b();
+	}
+}
 </source>
