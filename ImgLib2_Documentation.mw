@@ -424,10 +424,10 @@ And we used it on a 3D '''ARGBType''' image (which means a color image with red/
 
 ==== Notes ====
 * Besides '''setPosition()''' in a single or all dimensions, you can also relatively move a '''RandomAccess''' in one or all dimensions, or move the '''RandomAccess''' pixel-wise in one dimension   (Have a look at the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Positionable.html Positionable] API doc!)  Which of those is most efficient depends on the situation.
+* There is a '''setPosition()''' version which takes a '''Localizable'''. Often a situation occurs where you want to position accessor ''a'' to the same location as accessor ''b''. In this situation you can avoid localizing ''b'' into an array and using that array to set the position of ''a''. You can simply '''a.setPosition( b )''' because ''b'' is '''Localizable'''.
 * By ''image'', we do not necessarily mean ''pixel image''.
-* we use the generic parameter <b>< T extends Type< T > ></b> instead of <b>< Type ></b> throughout ImgLib2 since that allows us to be more type-safe. Imagine implementing an <b>add(a, b)</b> method for a certain type: using the simpler generic parameter would not allow us to enforce both parameters to have the same subclass of <b>Type</b>!
+* we use the generic parameter '''< T extends Type< T > >''' instead of '''< Type >''' throughout ImgLib2 since that allows us to be more type-safe. Imagine implementing an '''add(a, b)''' method for a certain type: using the simpler generic parameter would not allow us to enforce both parameters to have the same subclass of '''Type'''!
 * we create as many variables as possible outside of the loop (in particular, objects) since creating objects costs a bit of execution time and can easily dominate the performance of the algorithm if one is not careful about it.
-
 
 === Cursor ===
 A [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/Cursor.html Cursor] can be used to visit all pixels of an image once.
