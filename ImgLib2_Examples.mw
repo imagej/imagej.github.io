@@ -543,8 +543,7 @@ public class Example2d
 		
 		// now we make the target iterable 
 		// (which is possible because it is a RandomAccessibleInterval)
-		IterableInterval< FloatType > iterableTarget = 
-			IterableRandomAccessibleInterval.create( viewTarget );
+		IterableInterval< FloatType > iterableTarget = Views.iterable( viewTarget );
 		
 		// copy it into the original image (overwriting part of img)
 		copy( viewSource, iterableTarget );
