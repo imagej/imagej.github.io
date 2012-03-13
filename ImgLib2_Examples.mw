@@ -891,6 +891,9 @@ public class Example3b
 }
 </source>
 
-== Example 4 - Working with special iterables ==
+== Example 4 - Specialized iterables ==
+
+Example 4 will focus on how to work with specialized '''iterables'''. They are especially useful for performing operations in the local neighborhood of many pixels. 
+
 <source lang="java">
 </source>
