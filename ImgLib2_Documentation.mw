@@ -715,6 +715,7 @@ Actually, all we are left with is to implement the '''Sampler< UnsignedByteType 
 ImgLib2 provides several such abstract implementations to minimize development time for new accessor types.
 The following UML diagram shows '''MandelbrotRealRandomAccess''' and the derivative hierarchy of its parent classes.
 
+[[File:imglib2-abstract-accessors-real-new-vertical.png|center|UML for abstract RealRandomAccess class hierarchy]]
 
 ==== Notes ====
 The '''RealPositionable''', '''RealLocalizable''', &hellip; interfaces are not restricted to accessors.
