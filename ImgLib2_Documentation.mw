@@ -612,7 +612,7 @@ ImgLib2 is not restricted to rasterized images and integer coordinates
 It also supports continuous images and real-valued coordinates.
 Examples where this is appropriate are
 * an interpolated image, where an interpolated value can be obtained at any real coordinate. Note that this is a bounded, but continuous image. Thus it is not iterable.
-* a functionally generated image, where a value can be computed at any real coordinate (continuous, unbounded, non-iterable).
+* a procedurally generated image, where a value can be computed at any real coordinate (continuous, unbounded, non-iterable).
 * collections of samples taken at arbitrary real coordinates (discrete, bounded, iterable).
 
 The following image shows the UML diagram for the ImgLib2 accessor interface hierarchy.
