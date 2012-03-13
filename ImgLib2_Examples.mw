@@ -893,7 +893,7 @@ public class Example3b
 
 == Example 4 - Specialized iterables ==
 
-Example 4 will focus on how to work with specialized '''iterables'''. They are especially useful for performing operations in the local neighborhood of many pixels. 
+Example 4 will focus on how to work with specialized '''iterables'''. They are especially useful for performing operations in the local neighborhood of many pixels like finding local minima/maxima, texture analysis, convolution with non-separable, non-linear filters and many more. 
 
 <source lang="java">
 </source>
