@@ -825,7 +825,7 @@ public class Example3a
 }
 </source>
 
-=== Example 3b -  Computing average ===
+=== Example 3b - Computing average ===
 
 In a very similar way one can compute the average intensity for image data. Note that we restrict the '''Type''' of data to '''RealType'''. In theory, we could use '''NumericType''' as it offers the possibility to ''add'' up values. However, we cannot ensure that '''NumericType''' provided is capable of adding up millions of pixels without overflow. And even if we would ask for a second '''NumericType''' that is capable of adding values up, it might still have numerical instabilities. ''Note that actually every Java native type has those instabilities''. Therefore we use the '''RealSum''' class that offers correct addition of even very large amounts of pixels. As this implementation is only available for double values, we restrict the method here to '''RealType'''.
 
@@ -889,4 +889,8 @@ public class Example3b
 		new Example3b();
 	}
 }
+</source>
+
+== Example 4 - Working with special iterables ==
+<source lang="java">
 </source>
