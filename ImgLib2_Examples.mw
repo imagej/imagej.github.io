@@ -933,7 +933,9 @@ public class Example4b
 	public Example4b() throws ImgIOException, IncompatibleTypeException
 	{
 		// open with ImgOpener using an ImagePlusImg
-		ImagePlusImg< UnsignedByteType, ?> img = new ImagePlusImgFactory< UnsignedByteType >().create( new long[] { 256, 256, 256 }, new UnsignedByteType() );
+		ImagePlusImg< UnsignedByteType, ?> img 
+			= new ImagePlusImgFactory< UnsignedByteType >().create( 
+				new long[] { 256, 256, 256 }, new UnsignedByteType() );
 
 		// draw a small sphere for every pixel of a larger sphere
 		drawSpheres( img, 0, 255 );
@@ -946,7 +948,9 @@ public class Example4b
 		} 
 		catch ( ImgLibException e )
 		{
-			System.out.println( "This ImagePlusImg does not hold a native ImagePlus as container, either because the dimensionality is too high or because the type is not supported." );
+			System.out.println( "This ImagePlusImg does not hold a native ImagePlus as container,
+				either because the dimensionality is too high or because the type is not
+				supported." );
 			ImageJFunctions.show( img );
 		}
 	}
@@ -958,7 +962,9 @@ public class Example4b
 	 * @param minValue - the minimal intensity of one of the small spheres
 	 * @param maxValue - the maximal intensity of one of the small spheres
 	 */
-	public < T extends RealType< T > > void drawSpheres( final RandomAccessibleInterval< T > randomAccessible, final double minValue, final double maxValue )
+	public < T extends RealType< T > > void drawSpheres( 
+		final RandomAccessibleInterval< T > randomAccessible, 
+		final double minValue, final double maxValue )
 	{	
 		// the number of dimensions
 		int numDimensions = randomAccessible.numDimensions();
@@ -978,14 +984,16 @@ public class Example4b
 		// define the maximal radius of the small spheres
 		int maxRadius = 5;
 		
-		// compute the radius of the large sphere so that we do not draw outside of the defined interval
+		// compute the radius of the large sphere so that we do not draw 
+		// outside of the defined interval
 		long radiusLargeSphere = minSize / 2 - maxRadius - 1;
 		
 		// instantiate a random number generator
 		Random rnd = new Random( System.currentTimeMillis() );
 		
 		// define a hypersphere (n-dimensional sphere)
-		HyperSphere< T > hyperSphere = new HyperSphere<T>( randomAccessible, center, radiusLargeSphere );
+		HyperSphere< T > hyperSphere = 
+			new HyperSphere<T>( randomAccessible, center, radiusLargeSphere );
 		
 		// create a cursor on the hypersphere
 		HyperSphereCursor< T > cursor = hyperSphere.cursor();
@@ -997,8 +1005,10 @@ public class Example4b
 			// the random radius of the current small hypersphere
 			int radius = rnd.nextInt( maxRadius ) + 1;
 			
-			// instantiate a small hypersphere at the location of the current pixel in the large hypersphere
-			HyperSphere< T > smallSphere = new HyperSphere< T >( randomAccessible, cursor, radius );
+			// instantiate a small hypersphere at the location of the current pixel 
+			// in the large hypersphere
+			HyperSphere< T > smallSphere = 
+				new HyperSphere< T >( randomAccessible, cursor, radius );
 			
 			// define the random intensity for this small sphere
 			double randomValue = rnd.nextDouble();
@@ -1009,7 +1019,8 @@ public class Example4b
 				// scale to right range
 				randomValue = rnd.nextDouble() * ( maxValue - minValue ) + minValue;
 				
-				// set the value to all pixels in the small sphere if the intensity is brighter than the existing one
+				// set the value to all pixels in the small sphere if the intensity is 
+				// brighter than the existing one
 				for ( final T value : smallSphere )
 					value.setReal( Math.max( randomValue, value.getRealDouble() ) );
 			}
