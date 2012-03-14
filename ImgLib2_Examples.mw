@@ -901,7 +901,9 @@ Example 4 will focus on how to work with specialized '''iterables'''. They are e
 
 In the first sample we simply draw a sphere full of little spheres. We therefore create a large '''HyperSphere''' in the center of a '''RandomAccessibleInterval'''. Note that the '''HyperSphere''' only needs a '''RandomAccessible''', we need the additional '''Interval''' simply to compute the center and the radius of the large sphere. When iterating over all pixels of this large sphere, we create small '''HyperSpheres''' at every n'th pixel and fill them with a random intensity.
 
-This example illustrates the use of specialized '''Iterables''', and emphasizes the fact that they can be stacked on the underlying '''RandomAccessible''' using the location of one as the center of a new one. Another interesting aspect of this example is the use of the '''ImagePlusImgFactory''', which is the compatibility container for ImageJ. If the required dimensionality and '''Type''' is available in ImageJ, it will internally create an ImagePlus and work on it directly. In this case, one can request the ImagePlus and show it directly. It will, however, fail if '''Type''' and dimensionality is not supported by ImageJ and throw a '''ImgLibException'''.
+This example illustrates the use of specialized '''Iterables''', and emphasizes the fact that they can be stacked on the underlying '''RandomAccessible''' using the location of one as the center of a new one. 
+
+Another interesting aspect of this example is the use of the '''ImagePlusImgFactory''', which is the compatibility container for ImageJ. If the required dimensionality and '''Type''' is available in ImageJ, it will internally create an ImagePlus and work on it directly. In this case, one can request the ImagePlus and show it directly. It will, however, fail if '''Type''' and dimensionality is not supported by ImageJ and throw a '''ImgLibException'''.
 
 <source lang="java">
 </source>
