@@ -1047,7 +1047,38 @@ In this example we want to find all local minima in an image an display them as 
 
 We display the results using a binary image. ''Note that the '''BitType''' only requires one bit per pixel and therefore is very memory efficient.''
 
-The generic method for minima detection has some more interesting properties. The '''Type''' of the source image data actually does not require to be of '''Type''', it simply needs something that is comparable. Note that if one would increase the radius of the sphere to more than one, it would fail as we would try to write image data outside of the defined boundary. '''OutOfBoundsStrategies''' which define how to handle such cases is discusses in example 5.
+The generic method for minima detection has some more interesting properties. The '''Type''' of the source image data actually does not require to be of '''Type''', it simply needs something that is comparable. The '''LocalNeighborhood''' will iterate n-dimensionally all pixels adjacent to a certain location, but skip the central pixel (this corresponds to an both neighbors in 1d, an 8-neighborhood in 2d, a 26-neighborhood in 3d, and so on ...). This allows to efficiently detect if a pixel is a local minima or maxima. Note that the '''Cursor''' that performs the iteration can have special implementations for specific dimensionalities to speed up the iteration. See below the example for a specialized three-dimensional iteration:
+		// acces plan for neighborhood, starting at the 
+		// center position (x)
+		//
+		// upper z plane (z-1)
+		// -------------
+		// | 2 | 1 | 8 |
+		// |------------
+		// | 3 | 0 | 7 |
+		// |------------
+		// | 4 | 5 | 6 |
+		// -------------
+		//
+		// mid z plane (z=0)
+		// -------------
+		// | 11| 10| 9 |
+		// |------------
+		// | 12| x | 16|
+		// |------------
+		// | 13| 14| 15|
+		// -------------
+		//
+		// lower z plane(z+1)
+		// -------------
+		// | 20| 19| 18|
+		// |------------
+		// | 21| 25| 17|
+		// |------------
+		// | 22| 23| 24|
+		// -------------
+
+Note that if one would increase the radius of the sphere to more than one, it would fail as we would try to write image data outside of the defined boundary. '''OutOfBoundsStrategies''' which define how to handle such cases is discusses in example 5.
 
 <source lang="java">
 </source>
