@@ -1048,9 +1048,10 @@ In this example we want to find all local minima in an image an display them as 
 We display the results using a binary image. ''Note that the '''BitType''' only requires one bit per pixel and therefore is very memory efficient.''
 
 The generic method for minima detection has some more interesting properties. The '''Type''' of the source image data actually does not require to be of '''Type''', it simply needs something that is comparable. The '''LocalNeighborhood''' will iterate n-dimensionally all pixels adjacent to a certain location, but skip the central pixel (this corresponds to an both neighbors in 1d, an 8-neighborhood in 2d, a 26-neighborhood in 3d, and so on ...). This allows to efficiently detect if a pixel is a local minima or maxima. Note that the '''Cursor''' that performs the iteration can have special implementations for specific dimensionalities to speed up the iteration. See below the example for a specialized three-dimensional iteration:
-		// acces plan for neighborhood, starting at the 
-		// center position (x)
-		//
+
+ acces plan for neighborhood, starting at the 
+ center position (x)
+
 		// upper z plane (z-1)
 		// -------------
 		// | 2 | 1 | 8 |
