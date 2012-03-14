@@ -1041,7 +1041,7 @@ public class Example4a
 [[Image:ManySpheres.jpg|780px]]
 ''Shows the result of example 4a for the (a) two-dimensional, (b) three-dimensional and (c) four-dimensional case. The image series in (c) represents a movie of a three-dimensional rendering. The images of (b) and (c) were rendered using the ImageJ 3d Viewer.''
 
-=== Example 4b - Finding and displaying maxima ===
+=== Example 4b - Finding and displaying local minima ===
 
 In this example we want to find all local minima in an image an display them as small spheres. To not capture to much of the noise in the image data, we first perform an in-place Gaussian smoothing with a sigma of 1, i.e. the data will be overwritten with the result. A complete documentation of the gauss package for ImgLib2 can be found [[Gauss_Package_ImgLib2 | here]].
 
