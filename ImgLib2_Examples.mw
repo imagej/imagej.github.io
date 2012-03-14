@@ -1047,5 +1047,7 @@ In this example we want to find all local minima in an image an display them as 
 
 We display the results using a binary image. ''Note that the '''BitType''' only requires one bit per pixel and therefore is very memory efficient.''
 
+The generic method for minima detection has some interesting properties. The '''Type''' of the source image data actually does not require to be of '''Type''', it simply needs something that is comparable. Note that if one would increase the radius of the sphere to more than one, it would fail as we would try to write image data outside of the defined boundary. '''OutOfBoundsStrategies''' which define how to handle such cases is discusses in example 5.
+
 <source lang="java">
 </source>
