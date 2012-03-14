@@ -1053,7 +1053,7 @@ The generic method for minima detection has some more interesting properties. Th
  position is NOT part of iteration, which means the center pixel is not iterated. Note that 
  every step except for the last one can be done with a very simple move command.
  
- upper z plane (z-1)	center z plane (z=0)
+ upper z plane (z-1)	center z plane (z=0)	lower z plane(z+1)
  -------------		-------------		-------------
  | 2 | 1 | 8 |		| 11| 10| 9 |
  |------------		-------------		-------------
