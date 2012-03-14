@@ -1052,7 +1052,16 @@ The generic method for minima detection has some more interesting properties. Th
  Acces plan for a 3d neighborhood, starting at the center position marked by (x). The initial
  position is NOT part of iteration, which means the center pixel is not iterated. Note that 
  every step except for the last one can be done with a very simple move command.
- 
+
+ upper z plane (z-1)     mid z plane (z=0)
+ -------------	-------------
+ | 2 | 1 | 8 |	| 11| 10| 9 |
+ |------------	-------------
+ | 3 | 0 | 7 |	| 12| x | 16|
+ |------------	-------------
+ | 4 | 5 | 6 |	| 13| 14| 15|
+ -------------	-------------
+  
  upper z plane (z-1)
  -------------
  | 2 | 1 | 8 |
