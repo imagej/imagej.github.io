@@ -893,7 +893,10 @@ public class Example3b
 
 == Example 4 - Specialized iterables ==
 
-Example 4 will focus on how to work with specialized '''iterables'''. They are especially useful for performing operations in the local neighborhood of many pixels like finding local minima/maxima, texture analysis, convolution with non-separable, non-linear filters and many more. 
+Example 4 will focus on how to work with specialized '''iterables'''. They are especially useful when performing operations in the local neighborhood of many pixels - like finding local minima/maxima, texture analysis, convolution with non-separable, non-linear filters and many more. One elegant solution is to write a specialized '''Iterable''' that will iterate all pixels in the local neighborhood. We implemented two examples:
+* A '''HyperSphere''' that will iterate a n-dimensional sphere with a given radius at a defined location.
+* A '''LocalNeighborhood'' that will iterate n-dimensionally all 8-connected neighbors of a defined location, but not the central pixel.
+ 
 
 <source lang="java">
 </source>
