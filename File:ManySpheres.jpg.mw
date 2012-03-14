@@ -1,0 +1,1 @@
+Shows the result of example 4a for the (a) two-dimensional, (b) three-dimensional and (c) four-dimensional case. The images series in (c) represents a movie of a three-dimensional rendering. The images of (b) and (c) were rendered using the ImageJ 3d Viewer.
