@@ -656,7 +656,7 @@ import net.imglib2.RealPoint;
 import net.imglib2.RealRandomAccess;
 import net.imglib2.type.numeric.integer.UnsignedByteType;
 
-class MandelbrotRealRandomAccess extends RealPoint
+public class MandelbrotRealRandomAccess extends RealPoint
 		implements RealRandomAccess< UnsignedByteType >
 {
 	final UnsignedByteType t;
@@ -711,12 +711,110 @@ First of all, note that we extend [http://jenkins.imagej.net/job/ImgLib-daily/ja
 Instead of implementing the interface '''RealRandomAccess< UnsignedByteType >''', we make use of this class
 	which has most of the required methods implemented already.
 Actually, all we are left with is to implement the '''Sampler< UnsignedByteType >''' interface.
-
 ImgLib2 provides several such abstract implementations to minimize development time for new accessor types.
-The following UML diagram shows '''MandelbrotRealRandomAccess''' and the derivative hierarchy of its parent classes.
+The UML diagram below shows '''MandelbrotRealRandomAccess''' and the derivative hierarchy of its parent classes.
+
+The value (iteration count) at a 2D position ''(re0,im0)'' is computer in the static method '''mandelbrot()''' in lines ''016-032''.
+When calling it, we set the maximum number of iterations to 255.
+Thus we can use [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib/UnsignedByteType.html UnsignedByteType] as the value type of our accessor.
+Therefore, we implement the interface '''RealRandomAccess< UnsignedByteType >'''.
+
+In the constructor in lines ''010-014'', we call the super class constructor to initialise a 2-dimensional '''RealPoint'''.
+We create the '''UnsignedByteType''' member  ''t'' (declared in line ''008'') which will store the value that is returned by '''get()'''.
+
+Our super class [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealPoint.html RealPoint] implements the '''RealPositionable''' and '''RealLocalizable'''.
+We have access to the current position through the '''double[] position''' field inherited from [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealLocalizable.html RealLocalizable].
+In '''get()''' (lines ''035-038'') we use it to compute the value at the current position.
+The value is stored in '''t''' which is returned.
+
+Finally, we provide the '''copy()''' and '''copyRealRandomAccess()''' methods to complete the '''RealRandomAccess''' interface implementation.
+A copied accessor is supposed to refer to the same position and value, therefore we '''setPosition''' in line ''051''.
 
 [[File:imglib2-abstract-accessors-real-new-vertical.png|center|UML for abstract RealRandomAccess class hierarchy]]
 
+
+Now let's use the '''MandelbrotRealRandomAccess''' to render a pixel image:
+<source lang="java">
+import net.imglib2.Cursor;
+import net.imglib2.RealLocalizable;
+import net.imglib2.RealRandomAccess;
+import net.imglib2.img.Img;
+import net.imglib2.img.array.ArrayImgFactory;
+import net.imglib2.img.display.imagej.ImageJFunctions;
+import net.imglib2.type.numeric.integer.UnsignedByteType;
+
+public class DrawMandelbrot
+{
+	public static void main( final String[] args )
+	{
+		final int[] dimensions = new int[] { 600, 400 };
+		final Img< UnsignedByteType > img = new ArrayImgFactory< UnsignedByteType >()
+			.create( dimensions, new UnsignedByteType() );
+
+		final RealRandomAccess<UnsignedByteType> mb = new MandelbrotRealRandomAccess();
+
+		final double scale = 0.005;
+		final double[] offset = new double[] { -2, -1 };
+
+		final Cursor< UnsignedByteType > cursor = img.localizingCursor();
+		while( cursor.hasNext() )
+		{
+			cursor.fwd();
+			for ( int d = 0; d < 2; ++d )
+				mb.setPosition( scale * cursor.getIntPosition( d ) + offset[ d ], d );
+			cursor.get().set( mb.get() );
+		}
+
+		ImageJFunctions.show( img );
+	}
+}
+</source>
+
+We start by creating a 600&times;400 '''UnsignedByteType''' pixel image (lines ''013-015'').
+This is the target image into which we will render the mandelbrot fractal and which we will eventually display on screen (line ''031'').
+
+We create a '''MandelbrotRealRandomAccess''' which will provide samples from the fractal at arbitray positions.
+<source lang="java">
+final RealRandomAccess< UnsignedByteType > mb = new MandelbrotRealRandomAccess();
+</source>
+
+We render the fractal by iterating and setting the pixels of the target image (lines ''022-029'').
+In this case, we use a localizing '''Cursor''' because we need the cursor's position at every pixel.
+<source lang="java">
+final Cursor< UnsignedByteType > cursor = img.localizingCursor();
+</source>
+
+The current coordinates of the cursor are transferred to the '''RealRandomAccess''' using a scale factor and an offset.
+(Scale and offset are defined in lines ''019-020''.)
+We set the coordinates dimension-by-dimension:
+<source lang="java">
+for ( int d = 0; d < 2; ++d )
+	mb.setPosition( scale * cursor.getIntPosition( d ) + offset[ d ], d );
+</source>
+
+Finally, we get a reference to the current pixel, and set it to the
+value computed by the '''MandelbrotRealRandomAccess'''.
+<source lang="java">
+cursor.get().set( mb.get() );
+</source>
+'''cursor.get()''' gives the '''UnsignedByteType''' reference to the value under the cursor.
+'''mb.get()''' gives the '''UnsignedByteType''' reference to the value computed by the '''MandelbrotRealRandomAccess'''.
+Then we '''set()''' the value of the former to the value of the latter.
+
+When you run the code you will see this:
+[[File:mandelbrot-1.png|300px|center|Mandelbrot fractal]]
+
+Because we have a '''RealRandomAccess''' you can zoom in indefinitely (until you hit the '''double''' precision limit).
+If you like, you can play around with the scale and offset values.
+Here is another example obtained with
+<source lang="java">
+final double scale = 0.000125;
+final double[] offset = new double[] { -1.3875, 0.045 };
+</source>
+[[File:mandelbrot-2.png|300px|center|Mandelbrot fractal]]
+
+
 ==== Notes ====
-The '''RealPositionable''', '''RealLocalizable''', &hellip; interfaces are not restricted to accessors.
-For example, the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib/RealPoint.html RealPoint] class implements '''RealPositionable''' and '''RealLocalizable''', and simply represents a n-dimensional coordinate.
+* In line ''017'' we used a '''RealRandomAccess< UnsignedByteType >''' variable just to emphasize again the interface implemented by '''MandelbrotRealRandomAccess'''.  In real code, you would probably use the actual type.
+* Sampling from a transformed '''RealRandomAccess''' to create a pixel image is a quite common task.  ImgLib2 provides a framework for on-the-fly transformations, which will be explained later.
+* The '''RealPositionable''', '''RealLocalizable''', &hellip; interfaces are not restricted to accessors.  For example, the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib/RealPoint.html RealPoint] class implements '''RealPositionable''' and '''RealLocalizable''', and simply represents a n-dimensional coordinate.
