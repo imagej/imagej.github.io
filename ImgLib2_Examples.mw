@@ -1043,5 +1043,7 @@ public class Example4a
 
 === Example 4b - Finding and displaying maxima ===
 
+In this example we want to find all local minima in an image an display them as small spheres. To not capture to much of the noise in the image data, we first perform an in-place Gaussian smoothing with a sigma of 1, i.e. the data will be overwritten with the result. We display the results using a binary image. ''Note that the '''BitType''' only requires one bit per pixel and therefore is very memory efficient.''
+
 <source lang="java">
 </source>
