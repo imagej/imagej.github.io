@@ -895,8 +895,13 @@ public class Example3b
 
 Example 4 will focus on how to work with specialized '''iterables'''. They are especially useful when performing operations in the local neighborhood of many pixels - like finding local minima/maxima, texture analysis, convolution with non-separable, non-linear filters and many more. One elegant solution is to write a specialized '''Iterable''' that will iterate all pixels in the local neighborhood. We implemented two examples:
 * A '''HyperSphere''' that will iterate a n-dimensional sphere with a given radius at a defined location.
-* A '''LocalNeighborhood'' that will iterate n-dimensionally all 8-connected neighbors of a defined location, but not the central pixel.
- 
+* A '''LocalNeighborhood''' that will iterate n-dimensionally all 8-connected neighbors of a defined location, but not the central pixel.
+
+=== Example 4a - Drawing a sphere full of spheres ===
+
+In the first sample we simply draw a sphere full of little spheres. We therefore create a large '''HyperSphere''' in the center of a '''RandomAccessibleInterval'''. Note that the '''Iterables''' only need a '''RandomAccessible''', we need the '''Interval''' only to compute the center and the radius of the large sphere. When iterating over all pixels of this large sphere, we create small '''HyperSpheres''' at every n'th pixel and fill them with a random intensity.
+
+This example illustrates the use of such specialized '''Iterables''', and also that they can be stacked on the underlying '''RandomAccessible'''. 
 
 <source lang="java">
 </source>
