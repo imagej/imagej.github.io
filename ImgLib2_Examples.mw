@@ -1208,5 +1208,7 @@ public class Example4b
 
 == Example 5 - Out of bounds ==
 
+Many algorithms like ''convolutions'' require to access pixels outside of an '''Interval'', i.e. also pixel outside of an image. In ImgLib2 this is handled using '''Views''' which convert an '''RandomAccessibleInterval''' into an infinite '''RandomAccessible''' using an '''OutOfBoundsStrategy'''. Those infinite '''RandomAccesibless''' are able to return pixel values at any arbitrary location.
+
 <source lang="java">
 </source>
