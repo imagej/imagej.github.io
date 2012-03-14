@@ -1102,7 +1102,8 @@ import net.imglib2.type.numeric.RealType;
 import net.imglib2.view.Views;
 
 /**
- * Here we use special cursors to find the local minima and display them with spheres in another image
+ * Here we use special cursors to find the local minima and 
+ * display them with spheres in another image
  */
 public class Example4b
 {
@@ -1125,7 +1126,8 @@ public class Example4b
 	}
 
 	/**
-	 * Checks all pixels in the image if they are a local minima and draws a circle into the output if so
+	 * Checks all pixels in the image if they are a local minima and 
+	 * draws a circle into the output if they are
 	 * 
 	 * @param source - the image data to work on
 	 * @param imageFactory - the factory for the output img
