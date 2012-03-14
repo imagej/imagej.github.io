@@ -1206,12 +1206,6 @@ public class Example4b
 [[Image:AllMinima.jpg|780px]]
 ''Shows the result of the detection of local minima after the Gaussian blurring. (a) depicts the input image, (b) the blurred version (sigma=1) and (c) all local mimina drawn as circles with radius 1.''
 
-== Example 4 - Specialized iterables ==
-
-Example 4 will focus on how to work with specialized '''iterables'''. They are especially useful when performing operations in the local neighborhood of many pixels - like finding local minima/maxima, texture analysis, convolution with non-separable, non-linear filters and many more. One elegant solution is to write a specialized '''Iterable''' that will iterate all pixels in the local neighborhood. We implemented two examples:
-* A '''HyperSphere''' that will iterate a n-dimensional sphere with a given radius at a defined location.
-* A '''LocalNeighborhood''' that will iterate n-dimensionally all pixels adjacent to a certain location, but skip the central pixel (this corresponds to an both neighbors in 1d, an 8-neighborhood in 2d, a 26-neighborhood in 3d, and so on ...)
-
 == Example 5 - Out of bounds ==
 
 <source lang="java">
