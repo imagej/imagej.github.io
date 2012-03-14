@@ -1212,7 +1212,7 @@ Example 4 will focus on how to work with specialized '''iterables'''. They are e
 * A '''HyperSphere''' that will iterate a n-dimensional sphere with a given radius at a defined location.
 * A '''LocalNeighborhood''' that will iterate n-dimensionally all pixels adjacent to a certain location, but skip the central pixel (this corresponds to an both neighbors in 1d, an 8-neighborhood in 2d, a 26-neighborhood in 3d, and so on ...)
 
-=== Example 5 - Out of bounds ===
+== Example 5 - Out of bounds ==
 
 <source lang="java">
 </source>
