@@ -928,9 +928,9 @@ import net.imglib2.util.Util;
 /**
  * Draw a sphere full of little spheres
  */
-public class Example4b
+public class Example4a
 {
-	public Example4b() throws ImgIOException, IncompatibleTypeException
+	public Example4a() throws ImgIOException, IncompatibleTypeException
 	{
 		// open with ImgOpener using an ImagePlusImg
 		ImagePlusImg< UnsignedByteType, ?> img 
@@ -1033,7 +1033,7 @@ public class Example4b
 		new ImageJ();
 
 		// run the example
-		new Example4b();
+		new Example4a();
 	}
 }
 </source>
