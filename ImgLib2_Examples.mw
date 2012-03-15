@@ -1214,6 +1214,9 @@ Many algorithms like ''convolutions'' require to access pixels outside of an '''
 
 Which '''OutOfBoundsStrategies''' to use depends on task you want to perform. For convolutions we suggest the mirror strategy as it introduces the least artifacts. When working on Fourier images, the periodic strategy applies best as it correctly mimics its spatial properties. Random Value strategies might be useful to avoid accidental correlations and constant value strategies are the most performant and might work well for simple operations or to avoid exceptions when accidental writing or reading outside of the Interval occurs.
 
+[[File:OutOfBounds.jpg|780px]]
+''Illustrates the effect of various OutOfBoundsStrategies. (a) shows out of bounds with a constant value, (b) shows a mirroring strategy, (c) shows the periodic strategy, and (d) shows a strategy that uses random values.''
+
 <source lang="java">
 import ij.ImageJ;
 import net.imglib2.ExtendedRandomAccessibleInterval;
@@ -1309,9 +1312,6 @@ public class Example5
 	}
 }
 </source>
-
-[[File:OutOfBounds.jpg|780px]]
-''Illustrates the effect of various OutOfBoundsStrategies. (a) shows out of bounds with a constant value, (b) shows a mirroring strategy, (c) shows the periodic strategy, and (d) shows a strategy that uses random values.''
 
 == Example 6 - Basic built-in algorithms ==
 
