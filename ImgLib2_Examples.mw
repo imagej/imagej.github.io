@@ -1062,7 +1062,10 @@ The generic method for minima detection has some more interesting properties. Th
  | 4 | 5 | 6 |			| 13| 14| 15|			| 22| 23| 24|
  -------------			-------------			-------------
 
-Please note as well that if one would increase the radius of the sphere to more than one, it would fail as we would try to write image data outside of the defined boundary. '''OutOfBoundsStrategies''' which define how to handle such cases is discusses in example 5.
+Please note as well that if one would increase the radius of the sphere to more than one, it would fail as we would try to write image data outside of the defined boundary. '''OutOfBoundsStrategies''' which define how to handle such cases is discussed in example 5.
+
+[[Image:AllMinima.jpg|780px]]
+''Shows the result of the detection of local minima after the Gaussian blurring. (a) depicts the input image, (b) the blurred version (sigma=1) and (c) all local mimina drawn as circles with radius 1.''
 
 <source lang="java">
 import ij.ImageJ;
@@ -1202,9 +1205,6 @@ public class Example4b
 	}
 }
 </source>
-
-[[Image:AllMinima.jpg|780px]]
-''Shows the result of the detection of local minima after the Gaussian blurring. (a) depicts the input image, (b) the blurred version (sigma=1) and (c) all local mimina drawn as circles with radius 1.''
 
 == Example 5 - Out of bounds ==
 
