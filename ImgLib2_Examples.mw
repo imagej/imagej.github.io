@@ -1315,7 +1315,11 @@ public class Example5
 
 == Example 6 - Basic built-in algorithms ==
 
-ImgLib2 contains a growing number of built-in standard algorithms. In this section, we will show some of those, illustrate how to use them and give some examples of what it might be used for.
+ImgLib2 contains a growing number of built-in standard algorithms. In this section, we will show some of those, illustrate how to use them and give some examples of what it might be used for. 
+
+Typically algorithms provide static methods for simple calling, but they also have classes which you can instantiate yourself to have more options. 
+
+''Important: Algorithms do not allow to work on a different dimensionality than the input data. You can achieve that by selecting hyperslices using Views (see Example 6a - version 4). In this way you can for example apply two-dimensional gaussians to each frame of a time-series independently.''
 
 === Example 6a - Gaussian convolution ===
 
