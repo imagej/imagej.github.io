@@ -371,6 +371,9 @@ public class Example2a
 
 <span style="color:#FF0000">'''WARNING: The first code in this example makes a mistake on purpose!'''</span> It intends to show that the iteration order of '''Cursors''' is important to consider. The goal is to copy the content of an '''ArrayImg''' (i.e. an '''Img''' that was created using an '''ArrayImgFactory''') into a '''CellImg'''. Using only '''Cursors''' for both images will have a wrong result as an '''ArrayImg''' and a '''CellImg''' have different iteration orders. An '''ArrayImg''' is iterated linearly, while a '''CellImg''' is iterate cell-by-cell, but linearly within each cell.
 
+[[Image:ImgLib2example2b.png|780px]]
+''Shows the result if two Cursors are used that have a different iteration order. Here we are wrongly copying an ArrayImg (left) into a CellImg (right).''
+
 <source lang="java">
 import ij.ImageJ;
 import net.imglib2.Cursor;
@@ -446,9 +449,6 @@ public class Example2b
 	}
 }
 </source>
-
-[[Image:ImgLib2example2b.png|780px]]
-''Shows the result if two Cursors are used that have a different iteration order. Here we are wrongly copying an ArrayImg (left) into a CellImg (right).''
 
 <span style="color:#FF0000">The correct code for the copy-method requires the use of a '''RandomAccess'''.</span> We use a '''Cursor''' to iterate over all pixels of the input and a '''RandomAccess''' which we set to the same location the output. Note that the ''setPosition()'' call of the '''RandomAccess''' directly takes the '''Cursor''' as input, which is possible because '''Cursor''' implements '''Localizable'''. Please also note that we use a '''LocalizingCursor''' instead of a normal '''Cursor''' because we need the location of the '''Cursor''' at every pixel.
 
