@@ -1585,9 +1585,6 @@ public class Example6a4
 }
 </source>
 
-[[File:FourierConvolution.jpg|780px]]
-''Shows the effect of the Fourier convolution. The left image was convolved with the kernel depicted in the lower left corner, the right panel shows the convolved image. Note that the computation speed does not depend on the size or the shape of the kernel.''
-
 === Example 6b - Convolution in Fourier space ===
 
 In image processing it is sometimes necessary to convolve images with non-separable kernels. This can be efficiently done in Fourier space exploiting the ''convolution theorem''. It states that a convolution in real-space corresponds to a multiplication in Fourier-space, as vice versa. Note that the computation time for such a convolution is independent of the size and shape of the kernel. For the image below, computation tool around 300ms.
