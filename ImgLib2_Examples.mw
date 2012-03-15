@@ -1379,6 +1379,8 @@ public class Example6a1
 
 ==== Example 6a - Gaussian convolution (variation 2 - different OutOfBoundsStrategy) ====
 
+Here we use an '''OutOfBoundsStrategyConstantValue''' instead. It results in continuously darker borders as the zero-values from outside of the image are used in the convolution. Note that the computation is done in-place here. However, we still need to provide an '''ImgFactory''' as the Gaussian convolution needs to create temporary image(s) - except for the one-dimensional case.
+
 <source lang="java">
 import ij.ImageJ;
 import net.imglib2.Point;
