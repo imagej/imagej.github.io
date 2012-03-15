@@ -1628,9 +1628,6 @@ import mpicbg.util.RealSum;
 
 /**
  * Perform a gaussian convolution using fourier convolution
- *
- * @author Stephan Preibisch
- *
  */
 public class Example6b
 {
