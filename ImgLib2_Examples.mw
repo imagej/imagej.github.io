@@ -1330,6 +1330,8 @@ The Gaussian convolution has its own  [[Gauss_Package_ImgLib2 | wiki page]]. You
 
 ==== Example 6a - Gaussian convolution (variation 1 - simple) ====
 
+Here, we simply apply a Gaussian convolution with a sigma of 8. Note that it could be applied in-place as well when calling ''Gauss.inFloatInPlace( ... )''.
+
 <source lang="java">
 import ij.ImageJ;
 import net.imglib2.algorithm.gauss.Gauss;
