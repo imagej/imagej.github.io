@@ -1325,5 +1325,49 @@ Typically algorithms provide static methods for simple calling, but they also ha
 
 The Gaussian convolution has its own  [[Gauss_Package_ImgLib2 | wiki page]]. You can apply the Gaussian convolution with different sigmas in any dimension. It will work on any kind '''RandomAccessibleInterval'''. Below we show a examples of a simple gaussian convolution (variation 1), convolution using a different '''OutOfBoundsStrategy''' (variation 2), convolution of a part of an '''Interval''' (variation 3), and convolution of in a lower dimensionality than the image data (variation 4).
 
+==== Example 6a - Gaussian convolution (simple) ====
+
 <source lang="java">
+import ij.ImageJ;
+import net.imglib2.algorithm.gauss.Gauss;
+import net.imglib2.img.Img;
+import net.imglib2.img.array.ArrayImgFactory;
+import net.imglib2.img.display.imagej.ImageJFunctions;
+import net.imglib2.io.ImgIOException;
+import net.imglib2.io.ImgOpener;
+import net.imglib2.type.numeric.real.FloatType;
+
+/**
+ * Use of Gaussian Convolution on the Image
+ *
+ * @author Stephan Preibisch &amp; Stephan Saalfeld
+ *
+ */
+public class Example6a
+{
+	public Example6a() throws ImgIOException
+	{
+		// open with ImgOpener using an ArrayImgFactory
+		Img< FloatType > image = new ImgOpener().openImg( "DrosophilaWing.tif", 
+			new ArrayImgFactory< FloatType >(), new FloatType() );
+		
+		// perform gaussian convolution with float precision
+		double[] sigma = new double[ image.numDimensions() ];
+		
+		for ( int d = 0; d < image.numDimensions(); ++d )
+			sigma[ d ] = 8;
+
+		// convolve & display
+		ImageJFunctions.show( Gauss.toFloat( sigma, image ) );
+	}
+
+	public static void main( String[] args ) throws ImgIOException
+	{
+		// open an ImageJ window
+		new ImageJ();
+
+		// run the example
+		new Example6a();
+	}
+}
 </source>
