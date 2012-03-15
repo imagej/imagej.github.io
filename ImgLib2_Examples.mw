@@ -1312,3 +1312,14 @@ public class Example5
 
 [[File:OutOfBounds.jpg|780px]]
 ''Illustrates the effect of various OutOfBoundsStrategies. (a) shows out of bounds with a constant value, (b) shows a mirroring strategy, (c) shows the periodic strategy, and (d) shows a strategy that uses random values.''
+
+== Example 6 - Basic built-in algorithms ==
+
+ImgLib2 contains a growing number of built-in standard algorithms. In this section, we will show some of those, illustrate how to use them and give some examples of what it might be used for.
+
+=== Example 6a - Gaussian convolution ===
+
+The Gaussian convolution has its own wiki page.
+
+<source lang="java">
+</source>
