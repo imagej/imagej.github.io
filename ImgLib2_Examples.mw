@@ -905,6 +905,9 @@ This example illustrates the use of specialized '''Iterables''', and emphasizes 
 
 Another interesting aspect of this example is the use of the '''ImagePlusImgFactory''', which is the compatibility container for ImageJ. If the required dimensionality and '''Type''' is available in ImageJ, it will internally create an ImagePlus and work on it directly. In this case, one can request the ImagePlus and show it directly. It will, however, fail if '''Type''' and dimensionality is not supported by ImageJ and throw a '''ImgLibException'''.
 
+[[Image:ManySpheres.jpg|780px]]
+''Shows the result of example 4a for the (a) two-dimensional, (b) three-dimensional and (c) four-dimensional case. The image series in (c) represents a movie of a three-dimensional rendering. The images of (b) and (c) were rendered using the ImageJ 3d Viewer.''
+
 <source lang="java">
 import ij.ImageJ;
 import ij.ImagePlus;
@@ -1037,9 +1040,6 @@ public class Example4a
 	}
 }
 </source>
-
-[[Image:ManySpheres.jpg|780px]]
-''Shows the result of example 4a for the (a) two-dimensional, (b) three-dimensional and (c) four-dimensional case. The image series in (c) represents a movie of a three-dimensional rendering. The images of (b) and (c) were rendered using the ImageJ 3d Viewer.''
 
 === Example 4b - Finding and displaying local minima ===
 
