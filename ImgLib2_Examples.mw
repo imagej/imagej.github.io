@@ -207,6 +207,9 @@ Using the concept of '''Views''' it is possible to display only parts of the ima
 
 A '''View''' almost behaves are like an '''Img''', they share important concepts. Both are '''RandomAccessible''' and '''Views''' that are not infinite are also an '''Interval''' (i.e. have a defined size) and can therefore be made '''Iterable''' (see example 2c). In ImgLib2, all algorithms are implemented for these abstract concepts like '''RandomAccessible''', '''Iterable''' or '''Interval'''. This enables us, like in this example, to simply display a '''View''' the same way as an '''Img'''.
 
+[[Image:ImgLib2example1d.jpg|780px]]
+''Shows the original image, the View of an interval, as well as the by 90 degree rotated version of the view. Note that only the original image in kept in memory, both Views are completely virtual.''
+
 <source lang="java">
 import net.imglib2.RandomAccessibleInterval;
 import net.imglib2.exception.IncompatibleTypeException;
@@ -254,9 +257,6 @@ public class Example1d
 	}
 }
 </source>
-
-[[Image:ImgLib2example1d.jpg|780px]]
-''Shows the original image, the View of an interval, as well as the by 90 degree rotated version of the view. Note that only the original image in kept in memory, both Views are completely virtual.''
 
 == Example 2 - How to use Cursor, RandomAccess and Type ==
 
