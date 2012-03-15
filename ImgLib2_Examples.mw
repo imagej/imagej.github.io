@@ -1448,6 +1448,10 @@ public class Example6a2
 
 ==== Example 6a - Gaussian convolution (variation 3 - only part of an Interval) ====
 
+Here we only convolve part of an '''Interval''', or in this case part of the '''Img'''. Note that for convolution he will actually use the real image values outside of the defined '''Interval'''. The '''OutOfBoundsStrategy''' is only necessary if the kernel is that large so that it will actually grep image values outside of the underlying '''Img'''.
+
+Note: if you wanted, you could force him to use an '''OutOfBoundsStrategy''' directly outside of the '''Interval'''. For that you would have to create an '''RandomAccessibleInterval''' on the '''Img''', extend it by an '''OutOfBoundsStrategy''' and give this as input to the Gaussian convolution.
+
 <source lang="java">
 import ij.ImageJ;
 import net.imglib2.FinalInterval;
