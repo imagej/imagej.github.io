@@ -1462,9 +1462,9 @@ import net.imglib2.view.Views;
  * @author Stephan Preibisch &amp; Stephan Saalfeld
  *
  */
-public class Example6c
+public class Example6a3
 {
-	public Example6c() throws ImgIOException
+	public Example6a3() throws ImgIOException
 	{
 		// open with ImgOpener using an ArrayImgFactory
 		Img< FloatType > image = new ImgOpener().openImg( "DrosophilaWing.tif", 
@@ -1498,7 +1498,7 @@ public class Example6c
 		new ImageJ();
 
 		// run the example
-		new Example6c();
+		new Example6a3();
 	}
 }
 </source>
