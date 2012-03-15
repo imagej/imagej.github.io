@@ -1591,7 +1591,7 @@ In image processing it is sometimes necessary to convolve images with non-separa
 
 ''Note that it is useful to normalize the kernel prior to Fourier convolution so that the sum of all pixels is one. Otherwise, the resulting intensities will be increased.''
 
-<span style="color:#FF0000">''Important: This source code is only GPL!''</span>
+<span style="color:#FF0000">''Important: This source code is only GPLv2!''</span>
 
 <source lang="java">
 import net.imglib2.algorithm.fft.FourierConvolution;
