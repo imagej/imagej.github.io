@@ -1343,9 +1343,9 @@ import net.imglib2.type.numeric.real.FloatType;
  * @author Stephan Preibisch &amp; Stephan Saalfeld
  *
  */
-public class Example6a
+public class Example6a1
 {
-	public Example6a() throws ImgIOException
+	public Example6a1() throws ImgIOException
 	{
 		// open with ImgOpener using an ArrayImgFactory
 		Img< FloatType > image = new ImgOpener().openImg( "DrosophilaWing.tif", 
@@ -1367,7 +1367,7 @@ public class Example6a
 		new ImageJ();
 
 		// run the example
-		new Example6a();
+		new Example6a1();
 	}
 }
 </source>
