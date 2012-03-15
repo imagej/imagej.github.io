@@ -1628,7 +1628,8 @@ public class Example6b
 		ImageJFunctions.show( image ).setTitle( "drosophila wing");
 
 		// compute & show fourier convolution
-		ImageJFunctions.show( FourierConvolution.convolve( image, kernel ) ).setTitle( "convolution" );
+		ImageJFunctions.show( FourierConvolution.convolve( image, kernel ) )
+			.setTitle( "convolution" );
 	}
 	
 	/**
