@@ -1419,7 +1419,7 @@ public class Example6b
 		// infiniteImg ... the RandomAccessible that is the source for the convolution
 		// image ... defines the Interval in which convolution is performed
 		// image ... defines the RandomAccessible target of the convolution
-		// new Point( image.numDimensions() ) ... defines the offset for the target, in this case (0,0)
+		// new Point( image.numDimensions() ) ... defines the offset for the target, here it is (0,0)
 		// image.factory ... the image factory which is required to create temporary images
 		Gauss.inFloat( sigma, infiniteImg, image, image, 
 			new Point( image.numDimensions() ), image.factory() );
