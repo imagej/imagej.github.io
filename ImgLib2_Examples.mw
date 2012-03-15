@@ -1212,6 +1212,8 @@ Many algorithms like ''convolutions'' require to access pixels outside of an '''
 
 ''Important: One should never access pixels outside of the defined '''Interval''' as it will in most cases result in unexpected behavior, depending on the kind of underlying '''RandomAccessible'''. If it is for example an '''Img''', it will return wrong values or throw an exception.'' 
 
+Which '''OutOfBoundsStrategies''' to use depends on task you want to perform. For convolutions we suggest the mirror strategy as it introduces the least artifacts. When working on Fourier images, the periodic strategy applies best as it correctly mimics its spatial properties. Random Value strategies might be useful to avoid accidental correlations and constant value strategies are the most performant and might work well for simple operations or to avoid exceptions when accidental writing or reading outside of the Interval occurs.
+
 <source lang="java">
 import ij.ImageJ;
 import net.imglib2.ExtendedRandomAccessibleInterval;
