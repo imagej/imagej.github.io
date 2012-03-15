@@ -1319,7 +1319,7 @@ ImgLib2 contains a growing number of built-in standard algorithms. In this secti
 
 === Example 6a - Gaussian convolution ===
 
-The Gaussian convolution has its own wiki page.
+The Gaussian convolution has its own  [[Gauss_Package_ImgLib2 | wiki page]]. You can apply the Gaussian convolution with different sigmas in any dimension. It will work on any kind '''RandomAccessibleInterval'''. Below we show an example where we apply Gaussian convolution with a lower dimensionality and in-place only in a certain region. 
 
 <source lang="java">
 </source>
