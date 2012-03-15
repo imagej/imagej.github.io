@@ -1325,6 +1325,9 @@ Typically algorithms provide static methods for simple calling, but they also ha
 
 The Gaussian convolution has its own  [[Gauss_Package_ImgLib2 | wiki page]]. You can apply the Gaussian convolution with different sigmas in any dimension. It will work on any kind '''RandomAccessibleInterval'''. Below we show a examples of a simple gaussian convolution (variation 1), convolution using a different '''OutOfBoundsStrategy''' (variation 2), convolution of a part of an '''Interval''' (variation 3), and convolution of in a lower dimensionality than the image data (variation 4).
 
+[[File:GaussExamples.jpg|780px]]
+''Shows the result of the four examples for Gaussian convolution. (a) shows a simple Gaussian convolution with sigma=8. (b) shows the same Gaussian convolution but using an OutOfBoundsConstantValue instead. (c) shows the result when convolving part of the image in-place. (d) shows the result when individually convolving 1-dimensional parts on the image.''
+
 ==== Example 6a - Gaussian convolution (variation 1 - simple) ====
 
 <source lang="java">
