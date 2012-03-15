@@ -1397,7 +1397,7 @@ import net.imglib2.view.Views;
  */
 public class Example6b
 {
-	public Example6b() throws ImgIOException, IncompatibleTypeException
+	public Example6b() throws ImgIOException
 	{
 		// open with ImgOpener using an ArrayImgFactory
 		Img< FloatType > image = new ImgOpener().openImg( "DrosophilaWing.tif", 
@@ -1428,7 +1428,7 @@ public class Example6b
 		ImageJFunctions.show( image );
 	}
 
-	public static void main( String[] args ) throws ImgIOException, IncompatibleTypeException
+	public static void main( String[] args ) throws ImgIOException
 	{
 		// open an ImageJ window
 		new ImageJ();
