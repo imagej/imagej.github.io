@@ -306,7 +306,7 @@ IJ.log("The root of 12 is " + root);
 
 === Functional programming ===
 
-Supose you want to create a new image with the square values of the pixels in another image.
+Suppose you want to create a new image with the square values of the pixels in another image.
 
 First, we get a <i>source</i> image (such as the currently active image):
 
@@ -472,6 +472,17 @@ var imp2 = new ImagePlus("copy of " + imp.title, imp.getProcessor().duplicate().
 IJ.run( imp2, "Square", "");
 
 imp2.show();
+</source>
+
+=== Using other ''.js'' files as libraries ===
+
+Programming becomes most useful when code is reused. To that end, many programmers will generalize their code into functions that can be called from other scripts as well.
+
+To avoid copy-pasting all the time (which invariably leads to stale and unmaintainable code), a good idea is to store such general functions in separate ''.js'' files and let the Javascript interpreter know about them:
+
+<source lang="javascript">
+load("my-library-of-useful-functions.js");
+// now you can use the functions defined in above .js file
 </source>
 
 == ImageJ interaction ==
