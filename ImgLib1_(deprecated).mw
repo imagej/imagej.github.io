@@ -1,3 +1,6 @@
+= Deprecation notice =
+This page describes ImgLib1, the previous incarnation of the [[ImgLib2]] library. We encourage developers to use ImgLib2 instead, and migrate existing ImgLib1 programs to ImgLib2 whenever possible.
+
 = Citation =
 Please note that the ImgLib, as well as other plugins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 * S. Preibisch, P. Tomancak, S. Saalfeld (2010) "Into ImgLib – Generic Image Processing in Java", ''ImageJ User and Developer Conference 2010'' (1):72-76. [http://imagejconf.tudor.lu/program/workshops/preibisch/start Webpage] [http://fly.mpi-cbg.de/preibisch/pubs/imagejpaper2010.pdf PDF]
