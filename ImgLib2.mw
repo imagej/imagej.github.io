@@ -2,13 +2,17 @@ ImgLib2 is a general-purpose, multidimensional image processing library.
 
 It provides an interface-driven design that supports numeric and non-numeric data types (8-bit unsigned integer, 32-bit floating point, etc.) in an extensible way. It implements several data sources and sample organizations, including one single primitive array, one array per plane, N-dimensional array "cells" cached to and from disk on demand, and planes read on demand from disk.
 
+== Documentation ==
+
+To get started right away, see the [[ImgLib2 Documentation|Quickstart into ImgLib2]]. You can find some additional examples on the [[ImgLib2 Examples]] page.
+
+You can also [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/ browse the Javadocs online].
+
 == Source code ==
 
 You can find the source [http://github.com/imagej/imglib on GitHub].
 
-== Documentation ==
-
-To get started right away, see the [[ImgLib2 Documentation|Quickstart into ImgLib2]]. You can find some additional examples on the [[ImgLib2 Examples]] page.
+We also have a Jenkins continuous integration system that builds ImgLib2 [http://jenkins.imagej.net/job/ImgLib/ every time the code changes] as well as [http://jenkins.imagej.net/job/ImgLib-daily/ daily including Javadocs].
 
 == ImgLib2 vs. ImgLib1 ==
 
