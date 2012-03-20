@@ -1,5 +1,5 @@
 = Deprecation notice =
-This page describes ImgLib1, the previous incarnation of the [[ImgLib2]] library. We encourage developers to use ImgLib2 instead, and migrate existing ImgLib1 programs to ImgLib2 whenever possible.
+This page describes ImgLib1, the previous incarnation of the [[ImgLib2]] library. We encourage developers to use ImgLib2 instead, and [[How To Migrate Code From ImgLib To ImgLib2|migrate existing ImgLib1 programs to ImgLib2]] whenever possible.
 
 = Citation =
 Please note that the ImgLib, as well as other plugins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
