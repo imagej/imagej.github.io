@@ -14,7 +14,7 @@ To get started right away, see the [[ImgLib2 Documentation|Quickstart into ImgLi
 
 == ImgLib2 vs. ImgLib1 ==
 
-[[Imglib ImgLib1]] is the previous incarnation of the library. We encourage
+[[Imglib|ImgLib1]] is the previous incarnation of the library. We encourage
 developers to use ImgLib2 instead, and migrate existing ImgLib1 programs
 to ImgLib2 whenever possible.
 
