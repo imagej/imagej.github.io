@@ -17,8 +17,7 @@ There is also a Jenkins continuous integration system that builds ImgLib [http:/
 == ImgLib2 vs. ImgLib1 ==
 
 [[ImgLib1_(deprecated)|ImgLib1]] is the previous incarnation of the library. We encourage
-developers to use ImgLib2 instead, and migrate existing ImgLib1 programs
-to ImgLib2 whenever possible.
+developers to use ImgLib2 instead, and [[How To Migrate Code From ImgLib To ImgLib2|migrate existing ImgLib1 programs to ImgLib2]] whenever possible.
 
 For an explanation of how ImgLib2 has changed from ImgLib1, see the [[Changes from ImgLib1 to ImgLib2]] page.
 
