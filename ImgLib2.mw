@@ -1,13 +1,28 @@
 = ImgLib2 =
 
-ImgLib2 is an updated design for the library formerly known as "[[Imglib]]" (a.k.a. "ImgLib1").
+ImgLib2 is a general-purpose, multidimensional image processing library.
 
-Here is a [[ImgLib2 Documentation|Quickstart into ImgLib2]]. And more examples can be found [[ImgLib2 Examples|here]].
+It provides an interface-driven design that supports numeric and non-numeric data types (8-bit unsigned integer, 32-bit floating point, etc.) in an extensible way. It implements several data sources and sample organizations, including one single primitive array, one array per plane, N-dimensional array "cells" cached to and from disk on demand, and planes read on demand from disk.
 
-== Links ==
+== Source code ==
 
-* [http://fiji.sc/cgi-bin/gitweb.cgi?p=imglib.git Source code] via Gitweb
+You can find the source [http://github.com/imagej/imglib on GitHub].
+
+== Documentation ==
+
+To get started right away, see the [[ImgLib2 Documentation|Quickstart into ImgLib2]]. You can find some additional examples on the [[ImgLib2 Examples]] page.
+
+== ImgLib2 vs. ImgLib1 ==
+
+[[Imglib ImgLib1]] is the previous incarnation of the library. We encourage
+developers to use ImgLib2 instead, and migrate existing ImgLib1 programs
+to ImgLib2 whenever possible.
+
+For an explanation of how ImgLib2 has changed from ImgLib1, see the [[Changes from ImgLib1 to ImgLib2]] page.
+
+See the [[How To Migrate Code From ImgLib To ImgLib2]] page for details on how to update your ImgLib1-based code to use ImgLib2.
+
+== Other links ==
+
 * [[ImgLib2_Discussion|ImgLib2 development discussion]]
-* [[How To Migrate Code From ImgLib To ImgLib2]]
-* [[Changes from ImgLib1 to ImgLib2]]
 * [http://developer.imagej.net/ ImageJ2] uses ImgLib2 as its core data model
