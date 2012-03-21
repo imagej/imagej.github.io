@@ -1813,6 +1813,9 @@ Interpolation is a basic operation required in many image processing tasks. In t
 * '''Lanczos interpolation'''
 In the example we magnify a given real interval in the '''RealRandomAccessible''' which is based on the interpolation on an '''Img''' and compare the results of all three interpolation methods.
 
+[[File:Interpolation.jpg|779px]]
+''Shows the result for three different interpolators when magnifying the image by 10x. The nearest neighbor interpolation is computed fastest and is the most versatile as it requires no computation but just a lookout. The result is, however, very pixelated. The linear interpolation produces reasonable results and computes quite fast. The Lanczos interpolation shows visually most pleasing results but also introduces slight artifacts in the background.''
+
 <source lang="java">
 import net.imglib2.Cursor;
 import net.imglib2.FinalRealInterval;
