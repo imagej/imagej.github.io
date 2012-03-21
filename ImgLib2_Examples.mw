@@ -1875,8 +1875,8 @@ public class Example7
 			Views.extendMirrorSingle( img ), factory3 );
 		
 		// define the area in the interpolated image
-		double[] min = new double[]{ 100.12, 40.43 };
-		double[] max = new double[]{ 159.56, 74.933 };
+		double[] min = new double[]{ 105.12, 40.43 };
+		double[] max = new double[]{ 129.56, 74.933 };
 		
 		FinalRealInterval interval = new FinalRealInterval( min, max );
 		
