@@ -1806,3 +1806,8 @@ public class Example6c
 </source>
 
 == Example 7 - Interpolation ==
+
+Interpolation is a basic operation required in many image processing tasks. In the terminology of ImgLib2 it means to convert a '''RandomAccessible''' into a '''RealRandomAccessible''' which is able to create a '''RealRandomAccess'''. It can be positioned at real coordinates instead of only integer coordinates and a return a value for each real location. Currently, three interpolation schemes are available for ImgLib2:
+* '''Nearest neighbor interpolation''' (also for available for any kind of data that can return a nearest neighbor like sparse datasets)
+* '''Linear interpolation'''
+* '''Lanczos interpolation'''
