@@ -1811,3 +1811,4 @@ Interpolation is a basic operation required in many image processing tasks. In t
 * '''Nearest neighbor interpolation''' (also for available for any kind of data that can return a nearest neighbor like sparse datasets)
 * '''Linear interpolation'''
 * '''Lanczos interpolation'''
+In the example we magnify a given real interval in the '''RealRandomAccessible''' which is based on the interpolation on an '''Img''' and compare the results of all three interpolation methods.
