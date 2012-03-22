@@ -2091,6 +2091,10 @@ public class Example8a
 
 In this example we sample an existing image at random locations and render the result using a nearest neighbor interpolation as well as a distance-weighted average of the k nearest neighbors. 
 
+[[File:SparseImage2.jpg|638px]]
+''Shows the result of sparse sampling of an existing image using a varying number of random samples. The upper panel shows the rendering using nearest neighbor interpolation, the lower panel uses an interpolated, distance-weighted value of the k nearest neighbors relative to each sampled location (i.e. each pixel).''
+
+
 <source lang="java">
 import ij.ImageJ;
 
