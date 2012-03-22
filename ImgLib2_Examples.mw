@@ -1969,7 +1969,7 @@ In this example we create a certain number of random samples with random intensi
 [[File:SparseImage1.jpg|777px]]
 ''On the left hand side it shows nearest-neighbor rendered random sparse data as created in example 8a. The right hand side shows the result of a Gaussian convolution, run directly on the virtual RandomAccessibleInterval.''
 
-<source lang="Java">
+<source lang="java">
 import ij.ImageJ;
 
 import java.util.Random;
@@ -1985,12 +1985,10 @@ import net.imglib2.RealRandomAccessible;
 import net.imglib2.algorithm.gauss.Gauss;
 import net.imglib2.collection.KDTree;
 import net.imglib2.collection.RealPointSampleList;
-import net.imglib2.exception.IncompatibleTypeException;
 import net.imglib2.img.Img;
 import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
 import net.imglib2.interpolation.neighborsearch.NearestNeighborInterpolatorFactory;
-import net.imglib2.io.ImgIOException;
 import net.imglib2.neighborsearch.NearestNeighborSearch;
 import net.imglib2.neighborsearch.NearestNeighborSearchOnKDTree;
 import net.imglib2.type.numeric.real.FloatType;
@@ -2004,7 +2002,7 @@ import net.imglib2.view.Views;
  */
 public class Example8a
 {
-	public Example8a() throws ImgIOException, IncompatibleTypeException
+	public Example8a()
 	{
 		// the interval in which to create random points
 		FinalInterval interval = new FinalInterval( new long[] { 375, 200 } );
@@ -2078,7 +2076,7 @@ public class Example8a
 		return elements;
 	}
 
-	public static void main( String[] args ) throws ImgIOException, IncompatibleTypeException
+	public static void main( String[] args )
 	{
 		// open an ImageJ window
 		new ImageJ();
