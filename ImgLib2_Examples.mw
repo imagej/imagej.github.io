@@ -1706,6 +1706,8 @@ The final convolution of the inverse template with the image is performed using 
 [[File:Fourier.jpg|780px]]
 ''Shows the result and intermediate steps of the template matching using the Fourier space. In the upper panel you see the input image as well as the template that we use from matching. Below we show four different views of the Fast Fourier Transform of the template: the power spectrum, the phase spectrum, the real values, and the imaginary values. In the lower panel you see the result of the convolution of the inverse template with the image. The position where the template was located in the image is significantly visible. In the bottom right corner you see the inverse FFT of the inverse kernel.''
 
+<span style="color:#FF0000">''Important: This source code is only GPLv2!''</span>
+
 <source lang="java">
 import net.imglib2.algorithm.fft.FourierConvolution;
 import net.imglib2.algorithm.fft.FourierTransform;
