@@ -1965,3 +1965,6 @@ In order to display sparse data ImgLib2 currently supports two interpolation sch
 === Example 8a - Create random sparse data, display and convolve it ===
 
 In this example we create a certain number of random samples with random intensities inside a certain '''Interval'''. Using nearest neighbor interpolation we wrap it into a '''RealRandomAccessible''', wrap it again into a '''RandomAccessible''', define an '''Interval''' on it and display it. On the same ''virtual'' data we perform a Gaussian convolution and show it, too.
+
+[[File:SparseImage1.jpg|777px]]
+''On the left hand side it shows nearest-neighbor rendered random sparse data as created in example 8a. The right hand side shows the result of a Gaussian convolution, run directly on the virtual RandomAccessibleInterval.''
