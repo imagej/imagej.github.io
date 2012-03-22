@@ -2161,7 +2161,8 @@ public class Example8b
 	}
 
 	/**
-	 * Sample randomly n points from the input and display the interpolated result using nearest neighbors
+	 * Sample randomly n points from the input and display the interpolated result 
+	 * using nearest neighbors
 	 * 
 	 * @param input - the input data
 	 * @param interval - the size of the input (where to collect random samples)
