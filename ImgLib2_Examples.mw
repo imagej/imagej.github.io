@@ -1963,3 +1963,5 @@ In order to display sparse data ImgLib2 currently supports two interpolation sch
 ''This is, however, not only useful for display. Note that you execute on such data any algorithm or method that is implemented for '''RealRandomAccessible''' or '''RandomAccessible''', like Gaussian convolution in the first example. <span style="color:#FF0000">Note that none of these ever exists in memory, it is done completely virtual on just the sparse samples.</span>''
 
 === Example 8a - Create random sparse data, display and convolve it ===
+
+In this example we create a certain number of random samples with random intensities inside a certain '''Interval'''.
