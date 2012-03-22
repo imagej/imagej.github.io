@@ -2086,3 +2086,5 @@ public class Example8a
 	}
 }
 </source>
+
+=== Example 8b - Randomly sample an exisiting image and display it ===
