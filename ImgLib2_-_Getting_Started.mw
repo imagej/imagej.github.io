@@ -111,7 +111,7 @@ final ImgOpener opener = new ImgOpener();
 When opening an image, we can specify which memory layout to use and as which value type we want to load the image.
 We want to use the '''ArrayImg''' layout again, and we want to have '''UnsignedByteType''' values again.
 
-Similar to the [[ImgLib2 Documentation#Opening And Displaying Image Files | above example]] we need an '''ImgFactory''' and an instance of the value type.
+Similar to the [[ImgLib2 - Getting Started#Creating and Displaying an Image | above example]] we need an '''ImgFactory''' and an instance of the value type.
 <source lang="java">
 final ImgFactory< UnsignedByteType > factory = new ArrayImgFactory< UnsignedByteType >();
 final UnsignedByteType type = new UnsignedByteType();
