@@ -1,0 +1,30 @@
+In ImgLib2, images are represented by ''Accessibles''.
+''Image'' here refers to any (partial) function from coordinates to values.
+
+In the [[ImgLib2 Documentation#Accessors | previous section]] we have seen
+how pixel values can be manipulated using [[ImgLib2 Documentation#Accessors | Accessors]].
+You can obtain Accessors from ''Accessibles''.
+For example we have used
+<source lang="java">
+	final Cursor< UnsignedByteType > cursor = img.localizingCursor();
+</source>
+to obtain an iterating accessor from the Accessible '''img'''.
+
+''Accessibles'' represent the data itself.
+Pixel images, procedurally generated images, views into images (for instance sub-images),
+interpolated images, sparse collections of samples, the list of local intensity maxima of an image,
+list of nearest neighbors, ''etc.'', are all examples of Accessibles.
+
+The UML diagram below shows the integer part ''Accessible'' interface hierarchy.
+We will look at the full diagram including Accessibles for real coordinates later.
+
+[[File:imglib2-accessibles-integer.png|775px|center|UML for ImgLib2 integer accessible interfaces]]
+
+
+[http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html RandomAccessible] and
+[http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessibleInterval.html RandomAccessibleInterval] represent an image
+that is random-accessible at integer coordinates.
+(Remember, an image is a (possibly partial) function from coordinates to values.
+You can obtain a RandomAccess on the data using the '''randomAccess()''' method.
+
+ImgLib2 classes representing pixel data are all '''RandomAccessible'''.
