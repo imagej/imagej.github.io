@@ -62,7 +62,7 @@ public class DrawWhitePixels
 }
 </source>
 In lines ''013-015'' we create a 8-bit gray-level image,
-in line ''029'' we show the result (like in the [[ImgLib2 Documentation#Opening And Displaying Image Files | previous example]]).
+in line ''029'' we show the result (like in the [[ImgLib2 - Getting Started#Opening And Displaying Image Files | previous example]]).
 
 In line ''017'' we create a '''RandomAccess''' to the image.
 '''Img''' implements the [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html RandomAccessible] interface, thus we can use '''randomAccess()'''
@@ -485,7 +485,7 @@ Examples where this is appropriate are
 * collections of samples taken at arbitrary real coordinates (discrete, bounded, iterable).
 
 The following image shows the UML diagram for the ImgLib2 accessor interface hierarchy.
-The real-coordinate counterparts that were missing in the simplified version [[ImgLib2 Documentation#Accessors | above]] are highlighted.
+The real-coordinate counterparts that were missing in the simplified version [[ImgLib2 - Accessors#Introduction | above]] are highlighted.
 
 [[File:imglib2-accessors-real.png|center|UML for ImgLib2 accessor interfaces]]
 
