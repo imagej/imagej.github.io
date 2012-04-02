@@ -21,7 +21,7 @@ And the source code can be found at:
 
 To build a particular component of Fiji, simply invoke Fake on the target JAR you wish to build. Some examples:
 
-To build all of ImgLib1 and ImgLib2:
+To build all of ImgLib1 and ImgLib2 (assuming the JARs already exist):
  $ ./Build.sh jars/imglib*.jar
 
 To build all of ImgLib2 only:
@@ -34,7 +34,6 @@ You can also force a complete rebuild with:
  $ ./Build.sh jars/imglib2-algorithms.jar-rebuild
 
 Note that in the case of ImgLib, the above commands only make sense if you have initialized the ImgLib submodule in modules/imglib as [[Downloading and Building Fiji From Source#Submodules|described here]].
-
 
 == Command-line Maven ==
 
