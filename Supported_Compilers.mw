@@ -107,7 +107,7 @@ If you receive an email from Jenkins about a build failure, please take a look a
 
 # Use the commands given above to replicate the problem on your system.
 # Experiment with code changes to make the problem go away.
-# Push your changes, with an explanation of what you did and why needed to do it. In many cases it is wise to provide a comment in the code ([https://github.com/imagej/imglib/commit/5748a1be here] is an example) to educate others the issue, so that no one inadvertently removes your fix.
+# Push your changes, with an explanation of what you did and why needed to do it. In many cases it is wise to provide a comment in the code ([https://github.com/imagej/imglib/commit/5748a1be here] is an example) to educate others on the issue, so that no one inadvertently removes your fix.
 # After sufficient time elapses, verify that the Jenkins build is working again.
 
 If you need help, please write to [http://groups.google.com/group/fiji-devel fiji-devel] for assistance!
