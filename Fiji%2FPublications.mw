@@ -26,6 +26,8 @@
 
 * Not so simple [[Simple_Neurite_Tracer]], a product of the hard work of Mark Longair and one of the premier Fiji projects was published in Bioinformatics. <ref>{{cite journal|author=Longair Mark, Baker DA, Armstrong JD.|title=Simple Neurite Tracer: Open Source software for reconstruction, visualization and analysis of neuronal processes.|journal=Bioinformatics|year=2011|url=http://bioinformatics.oxfordjournals.org/content/early/2011/07/04/bioinformatics.btr390.long}}</ref>
 
+* We wanted to have the [[Balloon]] segmentation plugin in Fiji for a long time and our request for the source code pushed the corresponding Nature Methods paper<ref>{{cite journal|author=Federici Fernán, Dupuy Lionel, Laplaze Laurent, Heisler Marcus, Haseloff Jim.|title=Integrated genetic and computation methods for in planta cytometry|journal=Nature Methods |year=2012 |volume= advance online publication |url=http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1940.html}}</ref> forward. Thanks Lionel Dupuy!
+
 == References ==
 
 <references />
