@@ -79,7 +79,7 @@ ImporterOptions options = new ImporterOptions();
 options.setId(id);
 options.setAutoscale(true);
 options.setCrop(true);
-options.setCropRegion(0, new Region(x, y, w. h));
+options.setCropRegion(0, new Region(x, y, w, h));
 options.setColorMode(ImporterOptions.COLOR_MODE_COMPOSITE);
 //...etc.
 ImagePlus[] imps = BF.openImagePlus(options);
