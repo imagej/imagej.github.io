@@ -4,7 +4,7 @@
 | author                 = [http://loci.wisc.edu/ UW-Madison LOCI], [http://www.glencoesoftware.com/ Glencoe Software]
 | maintainer             = Curtis Rueden, Melissa Linkert
 | filename               = [http://loci.wisc.edu/bio-formats/downloads loci_tools.jar] 
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=bio-formats/.git;a=summary Git], [http://loci.wisc.edu/software/accessing-source-code SVN]
+| source                 = [https://github.com/openmicroscopy/bioformats Git]
 | latest version         = [http://loci.wisc.edu/bio-formats/downloads See Bio-Formats Downloads page]
 | status                 = active
 | category               = [[:Category:Import-Export]]
@@ -28,7 +28,7 @@ Often, you will not need to worry about this plugin to import your data, because
 
 The '''Bio-Formats Exporter''' is a plugin for exporting data to disk.
 
-It can save to the open [http://www.ome-xml.org/wiki/OmeTiff OME-TIFF] file format, as well as several movie formats (e.g., QuickTime, AVI) and graphics formats (e.g., PNG, JPEG).
+It can save to the open [http://www.openmicroscopy.org/site/support/file-formats/ome-tiff OME-TIFF] file format, as well as several movie formats (e.g., QuickTime, AVI) and graphics formats (e.g., PNG, JPEG).
 
 === Bio-Formats Remote Importer ===
 
