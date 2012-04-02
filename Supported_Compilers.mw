@@ -1,7 +1,7 @@
 There are three different compilers we try to support:
 
-# OpenJDK6
-# Oracle Java SE 6
+# OpenJDK6 Javac
+# Oracle Java SE 6 Javac
 # Eclipse JDT Core
 
 We do our best to ensure that all code in Fiji can be compiled with any of these three options. For more details, see the sections below.
@@ -56,7 +56,7 @@ When building with Maven on the command line, it will use your default installed
  Java(TM) SE Runtime Environment (build 1.6.0_26-b03)
  Java HotSpot(TM) 64-Bit Server VM (build 20.1-b02, mixed mode)
 
-On many systems, such as in the case above, the default installed JDK is '''[http://www.oracle.com/technetwork/java/javase/overview/index-jsp-136246.html Oracle's Java SE 6] platform'''. As such, we try to ensure that Fiji builds completely using Oracle's release of Java, since it is so common.
+On many systems, such as in the case above, the default installed JDK is '''[http://www.oracle.com/technetwork/java/javase/overview/index-jsp-136246.html Oracle's Java SE 6] platform'''. As such, we try to ensure that Fiji builds completely using Oracle's release of Javac, since it is so common.
 
 To build a Maven-based component of Fiji from the command line, simply run the "mvn" from that component's toplevel directory. For example:
 
