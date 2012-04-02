@@ -1,4 +1,10 @@
-There are three different compilers we try to support: OpenJDK6, Oracle Java SE 6 and Eclipse JDT. We do our best to ensure that all code in Fiji can be compiled with any of these three options. For more details, see the sections below.
+There are three different compilers we try to support:
+
+1. OpenJDK6
+2. Oracle Java SE 6
+3. Eclipse JDT Core
+
+We do our best to ensure that all code in Fiji can be compiled with any of these three options. For more details, see the sections below.
 
 
 == The Fiji Build System ==
