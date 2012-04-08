@@ -2,7 +2,7 @@ This page will give you an idea how Fiji's source code is organized.  Every dire
 
 == The Fiji launcher ==
 
-The [[Developing Fiji#The_Fiji_launcher|Fiji launcher]] is a relatively small C++ program whose source sits in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=fiji.cxx;hb=HEAD <Fiji-root>/fiji.cxx].
+The [[Fiji Launcher]] is a relatively small C++ program whose source sits in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=fiji.cxx;hb=HEAD <Fiji-root>/fiji.cxx].
 
 The whole purpose of the launcher is to make launching Java and Fiji easier, but there are a few other niceties in there, such as running Jython scripts or .jar files with the same classpath as Fiji.
 
