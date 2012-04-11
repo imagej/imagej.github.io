@@ -20,7 +20,7 @@ ToAST is a Fiji plugin performing tracking and analysis of motile fluorescent ob
 
 The input for ToAST is a binary image, to create one please go to ''Image>Adjust>Threshold'', select the level, press “apply”. You might need to invert the image to make the background value 255, the object – 0. Use of automated thresolding plugins is also possible. 
   
-[[File:TOast_1.jpg|150px]]
+[[File:TOast_1.jpg]]
 
 Run ''Plugins>Tracking>ToAST''. In the dialog window please select the parameters of image acquisition.
  
