@@ -39,10 +39,6 @@
 
 === Analyze > QuickPALM ===
 
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
 * [[Analyse Particles]] - file <tt>QuickPALM.Analyse_Particles</tt>  -- ''java jar file''
 * [[Correct Particles Drift (based on ROI)]] - file <tt>QuickPALM.Correct_Drift2</tt>  -- ''java jar file''
 * [[Create 3D calibration (requires astigmatism)]] - file <tt>QuickPALM.Create_3D_calibration</tt>  -- ''java jar file''
@@ -95,7 +91,6 @@
 
 === File > Import ===
 
-* [[-]] - file <tt></tt>  -- ''java jar file''
 * [[Amira...]] - file <tt>AmiraMeshReader_</tt>  -- ''java jar file''
 * [[Show Amira Surface]] - file <tt>isosurface.AmiraSurface</tt>  -- ''java jar file''
 * [[Analyze...]] - file <tt>Analyze_Reader</tt>  -- ''java jar file''
@@ -216,7 +211,7 @@
 
 * [[Auto Local Threshold]] - file <tt>fiji.threshold.Auto_Local_Threshold</tt>  -- ''java jar file''
 * [[Auto Threshold]] - file <tt>fiji.threshold.Auto_Threshold</tt>  -- ''java jar file''
-* [[Scale to DPI]] - file <tt>Scale_to_DPI.js</tt>  -- ''javascript file''
+* [[Scale to DPI]] - file <tt>Scale_to_DPI.js</tt>  -- ''javascript script''
 * [[Auto Crop (guess background color)]] - file <tt>fiji.selection.Select_Bounding_Box("autoautocrop")</tt>  -- ''java jar file''
 * [[Auto Crop]] - file <tt>fiji.selection.Select_Bounding_Box("autocrop")</tt>  -- ''java jar file''
 * [[Threshold Colour]] - file <tt>Threshold_Colour</tt>  -- ''java jar file''
@@ -321,30 +316,36 @@
 
 === Plugins > Examples ===
 
+* [[Add Popup Split Channels]] - file <tt>Add_Popup_Split_Channels.bsh</tt>  -- ''beanshell script''
 * [[Anaglyph for Red Cyan glasses]] - file <tt>Anaglyph_for_Red_Cyan_glasses.rb</tt>  -- ''jruby script''
 * [[Blobs Demo in Ruby]] - file <tt>Blobs_Demo_in_Ruby.rb</tt>  -- ''jruby script''
 * [[Delayed Snapshot]] - file <tt>Delayed_Snapshot.py</tt>  -- ''jython script''
+* [[Delayed Snapshot Window]] - file <tt>Delayed_Snapshot_Window.bsh</tt>  -- ''beanshell script''
 * [[Edit LUT As Text]] - file <tt>Edit_LUT_As_Text.py</tt>  -- ''jython script''
+* [[Extended Profile Plot]] - file <tt>Extended_Profile_Plot.bsh</tt>  -- ''beanshell script''
 * [[Fiji Cube]] - file <tt>Fiji_Cube.ijm</tt>  -- ''macro''
-* [[Fiji Logo 3D]] - file <tt>Fiji_Logo_3D.js</tt>  -- ''javascript file''
+* [[Fiji Logo 3D]] - file <tt>Fiji_Logo_3D.js</tt>  -- ''javascript script''
 * [[Find Dimension of Raw Image]] - file <tt>Find_Dimension_of_Raw_Image.py</tt>  -- ''jython script''
+* [[Image To Tool Icon]] - file <tt>Image_To_Tool_Icon.bsh</tt>  -- ''beanshell script''
 * [[Spheres and Tubes in 3D]] - file <tt>customnode.Mesh_Maker</tt>  -- ''java jar file''
 * [[Multithreaded Image Processing]] - file <tt>Multithreaded_Image_Processing.clj</tt>  -- ''clojure script''
-* [[Multithreaded Image Processing in Javascript]] - file <tt>Multithreaded_Image_Processing_in_Javascript.js</tt>  -- ''javascript file''
+* [[Multithreaded Image Processing in Javascript]] - file <tt>Multithreaded_Image_Processing_in_Javascript.js</tt>  -- ''javascript script''
 * [[Plasma Cloud]] - file <tt>Plasma_Cloud.rb</tt>  -- ''jruby script''
 * [[Same Slice in Multiple Images]] - file <tt>Same_Slice_in_Multiple_Images.rb</tt>  -- ''jruby script''
 * [[Single Voxel in 3D]] - file <tt>tracing.Test_Single_Voxel</tt>  -- ''java jar file''
+* [[The Hue Game]] - file <tt>The_Hue_Game.bsh</tt>  -- ''beanshell script''
 * [[blend two images]] - file <tt>blend_two_images.clj</tt>  -- ''clojure script''
 * [[celsius to fahrenheit]] - file <tt>celsius_to_fahrenheit.clj</tt>  -- ''clojure script''
 * [[chess ]] - file <tt>chess_.py</tt>  -- ''jython script''
-* [[downsample ]] - file <tt>downsample_.js</tt>  -- ''javascript file''
+* [[downsample ]] - file <tt>downsample_.js</tt>  -- ''javascript script''
 * [[list all threads]] - file <tt>list_all_threads.py</tt>  -- ''jython script''
 * [[random noise example]] - file <tt>random_noise_example.clj</tt>  -- ''clojure script''
 
 ==== Plugins > Examples > Command_Launchers ====
 
+* [[Command Launcher BeanShell]] - file <tt>Command_Launcher_BeanShell.bsh</tt>  -- ''beanshell script''
 * [[Command Launcher Clojure]] - file <tt>Command_Launcher_Clojure.clj</tt>  -- ''clojure script''
-* [[Command Launcher Javascript]] - file <tt>Command_Launcher_Javascript.js</tt>  -- ''javascript file''
+* [[Command Launcher Javascript]] - file <tt>Command_Launcher_Javascript.js</tt>  -- ''javascript script''
 * [[Command Launcher Python]] - file <tt>Command_Launcher_Python.py</tt>  -- ''jython script''
 * [[Command Launcher Ruby]] - file <tt>Command_Launcher_Ruby.rb</tt>  -- ''jruby script''
 
@@ -377,10 +378,6 @@
 
 === Plugins > Image5D ===
 
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
 * [[Duplicate]] - file <tt>Duplicate_Image5D("")</tt>  -- ''java jar file''
 * [[Hypervolume Opener]] - file <tt>Hypervolume_Opener("")</tt>  -- ''java jar file''
 * [[Image5D Extensions]] - file <tt>Image5D_Extensions("")</tt>  -- ''java jar file''
@@ -411,10 +408,6 @@
 
 === Plugins > LOCI ===
 
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
-* [[-]] - file <tt></tt>  -- ''java jar file''
 * [[LOCI Plugins Configuration]] - file <tt>loci.plugins.config.LociConfig("")</tt>  -- ''java jar file''
 * [[Bio-Formats Exporter]] - file <tt>loci.plugins.LociExporter("")</tt>  -- ''java jar file''
 * [[Bio-Formats Macro Extensions]] - file <tt>loci.plugins.macro.LociFunctions("")</tt>  -- ''java jar file''
