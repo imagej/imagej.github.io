@@ -315,7 +315,7 @@ This section contains a number of macros which you can use as starting points to
 
 == Resizing to a given width of the selection bounds ==
 
-When you need to resize an image but all you know is the pixel width of a rectangular area you selected, this macro is for you:
+When you need to resize an image but all you know is what width (in pixels) a structure has that you selected as a ROI, this macro is for you:
 
 <source lang="java">
 desiredSelectionWidth = 480;
