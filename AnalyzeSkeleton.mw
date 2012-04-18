@@ -138,7 +138,7 @@ IJ.log(cumulativeLengthOfShortestPaths);
 == API documentation ==
 The latest documentation of the code can be found here:
 
-[http://pacific.mpi-cbg.de/javadoc/skeleton_analysis/package-summary.html http://pacific.mpi-cbg.de/javadoc/skeleton_analysis/package-summary.html]
+[http://fiji.sc/javadoc/skeleton_analysis/package-summary.html http://fiji.sc/javadoc/skeleton_analysis/package-summary.html]
 
 == Changelog ==
 All changes can be seen in the [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=history;f=src-plugins/AnalyzeSkeleton_/skeleton_analysis;hb=HEAD Fiji source repository].
