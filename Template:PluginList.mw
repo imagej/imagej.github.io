@@ -211,6 +211,7 @@
 
 * [[Auto Local Threshold]] - file <tt>fiji.threshold.Auto_Local_Threshold</tt>  -- ''java jar file''
 * [[Auto Threshold]] - file <tt>fiji.threshold.Auto_Threshold</tt>  -- ''java jar file''
+* [[Bleach Correction]] - file <tt>emblcmci.BleachCorrection</tt>  -- ''java jar file''
 * [[Scale to DPI]] - file <tt>Scale_to_DPI.js</tt>  -- ''javascript script''
 * [[Auto Crop (guess background color)]] - file <tt>fiji.selection.Select_Bounding_Box("autoautocrop")</tt>  -- ''java jar file''
 * [[Auto Crop]] - file <tt>fiji.selection.Select_Bounding_Box("autocrop")</tt>  -- ''java jar file''
