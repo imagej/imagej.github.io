@@ -118,6 +118,7 @@
 * [[MRC Leginon ...]] - file <tt>io.Open_MRC_Leginon</tt>  -- ''java jar file''
 * [[TrakEM2 XML...]] - file <tt>ini.trakem2.Open_Project</tt>  -- ''java jar file''
 * [[PDF ...]] - file <tt>io.PDF_Viewer</tt>  -- ''java jar file''
+* [[Reconstruct Project...]] - file <tt>reconstructreader.reconstruct.Reconstruct_Reader</tt>  -- ''java jar file''
 * [[SVG...]] - file <tt>io.SVG_Reader</tt>  -- ''java jar file''
 * [[TorstenRaw GZ Reader...]] - file <tt>io.TorstenRaw_GZ_Reader</tt>  -- ''java jar file''
 
@@ -296,7 +297,6 @@
 == Plugins ==
 
 * [[3D Viewer]] - file <tt>ImageJ_3D_Viewer</tt>  -- ''java jar file''
-* [[reconstructreader.reconstruct.Reconstruct Reader]] - file <tt>reconstructreader.reconstruct.Reconstruct_Reader</tt>  -- ''java jar file''
 * [[Volume Viewer]] - file <tt>Volume_Viewer</tt>  -- ''java jar file''
 
 
