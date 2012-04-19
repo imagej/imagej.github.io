@@ -15,3 +15,7 @@ No changes are ever saved to the Reconstruct project. The new xml file associate
 == Known Bugs and Issues ==
 * For large projects with non-uniform image sizes, several traces will often be misplaced in the translated project.
 * After translation, the user is informed that TrakEM2 has detected a crash. This is because the translation process does not currently generate certain non-critical files that TrakEM2 expects to exist. This does not indicate an actual problem.
+
+----
+
+[[Category:Plugins]]
