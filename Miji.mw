@@ -51,6 +51,9 @@ Miji(false);
 </source>
 
 
+= Links =
+
+A related project is [http://code.google.com/p/matlabcontrol/ MatlabControl] which allows you to start Matlab conveniently from within Java.
 
 
 [[Category:Tutorials]]
