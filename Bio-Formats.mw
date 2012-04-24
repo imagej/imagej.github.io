@@ -1,6 +1,6 @@
 {{Infobox Plugin
 | software               = ImageJ
-| name                   = LOCI Bio-Formats plugins
+| name                   = OME Bio-Formats plugins
 | author                 = [http://loci.wisc.edu/ UW-Madison LOCI], [http://www.glencoesoftware.com/ Glencoe Software]
 | maintainer             = Curtis Rueden, Melissa Linkert
 | filename               = [http://loci.wisc.edu/bio-formats/downloads loci_tools.jar] 
@@ -42,7 +42,7 @@ The '''Bio-Formats Windowless Importer''' is a version of the '''Bio-Formats Imp
 
 === Bio-Formats Macro Extensions ===
 
-The LOCI plugins come with a set of macro extensions to enable additional functionality from macros. The '''Bio-Formats Macro Extensions''' plugin prints out the available commands to the ImageJ log window, along with instructions for using them.
+The Bio-Formats plugins come with a set of macro extensions to enable additional functionality from macros. The '''Bio-Formats Macro Extensions''' plugin prints out the available commands to the ImageJ log window, along with instructions for using them.
 
 === Stack Slicer ===
 
