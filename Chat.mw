@@ -1,4 +1,6 @@
-We have a channel on irc.freenode.net: [irc://irc.freenode.net/fiji-devel #fiji-devel]
+We have a chat room (also called channel) on irc.freenode.net: [irc://irc.freenode.net/fiji-devel #fiji-devel].
+
+If Javascript is enabled in your browser, you can connect right away, right here, by entering the captcha and clicking ''Connect'':
 
 <include iframe src="http://webchat.freenode.net?randomnick=1&channels=fiji-devel&uio=d4" width="647" height="400" />
 
