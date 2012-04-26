@@ -119,6 +119,16 @@ You need to update the ImageJA submodule:
 
 = Community =
 
+== Why is there Fiji when there is already ImageJ? And what is this ImageJ2 about? ==
+
+The ImageJ, Fiji and ImageJ2 projects are very closely related. Here are two attempts to clarify the situation:
+
+* [http://developer.imagej.net/faq#n141 in ImageJ2's Frequently Asked Questions]
+* [http://developer.imagej.net/2011/10/05/relation-between-imageja-and-imagej an ImageJ2 blog post clarifying specifically the relationship between ImageJ and the version used in Fiji]
+* [http://developer.imagej.net/2012/02/01/fiji-updater-has-been-integrated-imagej2-code-base an ImageJ2 blog post illustrating that we move code from Fiji to ImageJ2 as appropriate]
+
+In short: we all collaborate, but have slightly different focus, hence the different projects and names.
+
 == This is a Wiki but I cannot edit it! Why? ==
 
 We do not want to spend resources on spam reduction, so we settled on the following strategy: '''anybody''' with an account can add new accounts. So please ask in our [[IRC|chat room]] or on one of our [[Help:Contents#Getting_help_regarding_Fiji|mailing lists]] and direct the good people at [[Help:Contents#New_accounts|this page]]. You should have an account in less than 5 minutes after asking for it.
