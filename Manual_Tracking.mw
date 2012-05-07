@@ -8,11 +8,13 @@
 | released               = 25 June 2004 
 | latest version         = 15 June 2005
 | status                 = unknown
-| category               = [[:Category:Particle analysis|Particle analysis]]
+| category               = [[:Category:Particle analysis|Particle analysis]], [[:Category:Tracking|Tracking]]
 | documentation          = [http://rsb.info.nih.gov/ij/plugins/track/Manual%20Tracking%20plugin.pdf Manual Tracking Plugin.pdf]
 | website                = [http://rsb.info.nih.gov/ij/plugins/track/track.html]
 }}
 
 [[Category:Plugins]]
+[[Category:Particle analysis]]
+[[Category:Tracking]]
 
 See pdf documentation  [http://rsbweb.nih.gov/ij/plugins/track/Manual%20Tracking%20plugin.pdf here]
