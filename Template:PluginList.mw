@@ -544,7 +544,7 @@
 
 * [[Balloon]] - file <tt>BalloonSegmentation_</tt>  -- ''java jar file''
 * [[Segment blob in 3D Viewer]] - file <tt>ij3d.segmentation.Blob_Segmentation_in_3D</tt>  -- ''java jar file''
-* [[Graph Cut]] - file <tt>Graph_Cut</tt>  -- ''java jar file''
+* [[Graph Cut]] - file <tt>graphcut.Graph_Cut</tt>  -- ''java jar file''
 * [[Blow/Lasso Tool]] - file <tt>plugin.Lasso_</tt>  -- ''java jar file''
 * [[Level Sets]] - file <tt>levelsets.ij.LevelSet</tt>  -- ''java jar file''
 * [[Apply saved SIOX segmentator]] - file <tt>siox.Load_Segmentation</tt>  -- ''java jar file''
