@@ -592,6 +592,7 @@
 * [[MTrack2 ]] - file <tt>MTrack2_</tt>  -- ''java jar file''
 * [[Manual Tracking]] - file <tt>Manual_Tracking</tt>  -- ''java jar file''
 * [[ToAST]] - file <tt>ToAST25_</tt>  -- ''java jar file''
+* [[TrackMate]] - file <tt>fiji.plugin.trackmate.TrackMate_</tt>  -- ''java jar file''
 
 
 === Plugins > Transform ===
