@@ -152,7 +152,7 @@ The HyperStack displayer let you edit spots in two ways:
 
 === With the keyboard ===
 
-I have found using the mouse clicks sub-optimal and though for the carpal bones when editing a lot of spots. Using a combination of the mouse and keyboard proved to be more efficient. For this to work, the HyperStack window must be selected. 
+I have found using the mouse clicks sub-optimal and painful for the carpal bones when editing a lot of spots. Using a combination of the mouse and keyboard proved to be more efficient. For this to work, the HyperStack window must be selected. 
 
 ==== Moving an existing spot ====
 * Lay the mouse over the target spot (you do not need to select it).
@@ -176,7 +176,6 @@ I have found using the mouse clicks sub-optimal and though for the carpal bones 
 * Lay the mouse over the target spot.
 * Press the 'E' key to increase its radius, 'Q' to diminish it. 
 * 'Shit + Q' and 'Shit + E' change the radius by a bigger amount.
-
 
 == Adding missed spots ==
 
