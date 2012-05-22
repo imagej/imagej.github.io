@@ -5,7 +5,7 @@
 | maintainer            = [mailto:jean-yves.tinevez@pasteur.fr Jean-Yves Tinevez]
 | source                = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/TrackMate_;hb=HEAD on gitweb]
 | released              = 10/05/2012
-| status                = v1.0, active
+| status                = v1.1, active
 | category              = [[:Category:Segmentation|Segmentation]], [[:Category:Tracking|Tracking]]
 }}
 
@@ -126,6 +126,17 @@ TrackMate actually depends on many other Fiji plugins or libraries. The [[Fiji B
 * Exporting visualizations and analysis results to SVG, PDF and other formats are made through the [http://xmlgraphics.apache.org/batik/ Batik] and [http://itextpdf.com/ iText] libraries.
 * The TrackMate file format is plain XML, and is generated or loaded using the [http://www.jdom.org/ JDom] library.
 * For the icons, as almost every ImageJ plugin with a GUI, we used the [http://www.famfamfam.com/lab/icons/silk/ silk icon set], by Mark James. The TrackMate icon (the link) is taken from the [http://www.oxygen-icons.org/ oxygen icon set], released under the LGPL.
+
+
+
+== Version history ==
+
+* 10/05/2012 - v.10: Initial release
+* 22/05/2012 - v1.1: 
+** [[TrachScheme]] can change of display style.
+** De-activated folding branches in TrackScheme, as it was non-functional.
+** Fix bugs when loading invisible tracks.
+
 
 
 [[Category:Segmentation]]
