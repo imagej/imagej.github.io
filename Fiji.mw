@@ -48,6 +48,8 @@ Browse the [[:Category:News|news archive]].
 * Hardware-accelerated 3D volume and mesh visualization, and 3D registration of image stacks.
 ;[[TrakEM2]]
 * Register/edit/analyze/segment/annotate/3D model terabytes of confocal and electron microscopy images.
+;[[ImgLib2]]
+* Generic and extensible 'n'-dimensional image processing library for Java.
 ;[[:Category:Transform|Transform]]
 * Interactive image transformation ([[Interactive_Rigid|rigid]], [[Interactive_Similarity|similarity]], [[Interactive_Affine|affine]], [[Interactive_Perspective|perspective]], [[Interactive_Moving_Least_Squares|deform]])
 * [[Interactive Stack Rotation]]
@@ -74,7 +76,6 @@ Browse the [[:Category:News|news archive]].
 *[[:Category:Skeleton|Skeletons and tree analysis]]
 ;The core of Fiji.
 *[[ImageJA]]
-*[[imglib]]
 
 == [[Downloads]] ==
 
