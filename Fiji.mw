@@ -49,7 +49,7 @@ Browse the [[:Category:News|news archive]].
 ;[[TrakEM2]]
 * Register/edit/analyze/segment/annotate/3D model terabytes of confocal and electron microscopy images.
 ;[[ImgLib2]]
-* Generic and extensible 'n'-dimensional image processing library for Java.
+* Generic and extensible ''n''-dimensional image processing library for Java.
 ;[[:Category:Transform|Transform]]
 * Interactive image transformation ([[Interactive_Rigid|rigid]], [[Interactive_Similarity|similarity]], [[Interactive_Affine|affine]], [[Interactive_Perspective|perspective]], [[Interactive_Moving_Least_Squares|deform]])
 * [[Interactive Stack Rotation]]
