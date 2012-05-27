@@ -1,0 +1,1 @@
+Upload Cropped_source_image.jpg for CoverMaker_plugin
