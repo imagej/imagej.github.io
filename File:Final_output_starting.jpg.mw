@@ -1,0 +1,1 @@
+Upload Final_output_starting.jpg for CoverMaker_plugin
