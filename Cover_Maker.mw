@@ -22,7 +22,7 @@
 | number = 7325
 | year = 2010
 | doi = doi:10.1038/nature09634
-}}</ref>.]]This project explores the algorithms for reconstructing scientific images as a combination of other scientific images drawing from a large database of scientific imagery. The resulting image can be visually stunning given that a large database with good balance of colors is available. One such database consisting of about 80,000 images of gene expression patterns in Drosophila embryogenesis is provided [[#Databases|here]] as a starting point. The results of the plugin can be used as material for cover art such as for example the Nature cover on the right.
+}}</ref>.]]This project explores the algorithms for reconstructing scientific images as a combination of other scientific images drawing from a large database of scientific imagery. The resulting image can be visually stunning given that a large database with good balance of colors is available. One such database consisting of about 66,000 images of gene expression patterns in Drosophila embryogenesis is provided [[#Databases|here]] as a starting point. The results of the plugin can be used as material for cover art such as for example the Nature cover on the right.
 
 
 There are many online or offline solutions available for reconstructing images in this way, some of them undoubtedly more sophisticated than the CoverMaker. The CoverMaker is open source, integrated into Fiji and so can serve as platform for exploring the associated image analysis questions. Everyone is welcome to improve the code and the algorithms, contribute more image databases and show off the results of their experiments.
@@ -34,7 +34,7 @@ Please note that the Nature cover was NOT made with the CoverMaker plugin, but i
 |
 [[Image:Haeckel embryos white.png|thumb|left|350px|'''Drawing of Haeckel embryos.''' For afficionados this is in fact Romanes' 1892 copy of the [http://en.wikipedia.org/wiki/Ernst_Haeckel Ernst Haeckel] drawing. If you consider Haeckel a fraud, think again and start by reading the excellent Robert J. Richards book "[http://www.amazon.com/The-Tragic-Sense-Life-Evolutionary/dp/0226712141 The Tragic Sense of Life]".]]
 |
-[[Image:Haeckel embryos cover.png|thumb|left|350px|'''CoverMaker rendition of Haeckel embryos''' The image was generated using a database of 81,751 images of gene expression pattern during Drosophila embryogenesis visualized by histochemical RNA in situ hybridization.<ref name="Tomancak2002">{{cite journal
+[[Image:Haeckel embryos cover.png|thumb|left|350px|'''CoverMaker rendition of Haeckel embryos''' The image was generated using a database of 66,579 images of gene expression pattern during Drosophila embryogenesis visualized by histochemical RNA in situ hybridization.<ref name="Tomancak2002">{{cite journal
 | title = Systematic determination of patterns of gene expression during Drosophila embryogenesis.
 | author = P. Tomancak, A. Beaton, R. Weiszmann, E. Kwan, S. Shu, S.E. Lewis, S. Richards, M. Ashburner, V. Hartenstein, S.E. Celniker, G.M. Rubin
 | journal = Genome Biology
