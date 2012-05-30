@@ -196,7 +196,7 @@ mpicbg.stitching.fusion.BlendingPixelFusion.fractionBlended = 0.1;
 </source>
 * click Run
 
-From now on, there will be a second slider for the overlap in Y on the '''currently running Fiji instance'''.
+From now on, the blending will work only on the outer 10% of each tile. This change is only valid for the '''currently running Fiji instance'''.
 
 == Results & Computation time ==
 
