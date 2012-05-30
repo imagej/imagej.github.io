@@ -185,6 +185,19 @@ plugin.Stitching_Grid.seperateOverlapY = true;
 
 From now on, there will be a second slider for the overlap in Y on the '''currently running Fiji instance'''.
 
+=== I want to change the blending parameter for the fusion ===
+
+You can change the fraction of the area that is blended using the scripting language. By default it is set to 0.2 (20%), but you can change it to anything between 0 and 1. You can do so using the '''script editor''':
+* File > New > Script
+* Language > Beanshell
+* type the following line (without the 001) to change it to e.g. 10%
+<source lang="java">
+mpicbg.stitching.fusion.BlendingPixelFusion = 0.1;
+</source>
+* click Run
+
+From now on, there will be a second slider for the overlap in Y on the '''currently running Fiji instance'''.
+
 == Results & Computation time ==
 
 [[Image:ResultsStitching.jpg|780px|Example of Stitching of 3D confocal stacks.]]<br />
