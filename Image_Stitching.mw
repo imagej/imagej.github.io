@@ -192,7 +192,7 @@ You can change the fraction of the area that is blended using the scripting lang
 * Language > Beanshell
 * type the following line (without the 001) to change it to e.g. 10%
 <source lang="java">
-mpicbg.stitching.fusion.BlendingPixelFusion = 0.1;
+mpicbg.stitching.fusion.BlendingPixelFusion.fractionBlended = 0.1;
 </source>
 * click Run
 
