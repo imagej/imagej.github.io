@@ -142,7 +142,7 @@ Next we need to click on '''Browse''' and locate the [[#Databases|zip file]] con
 [[Image:Hires_cover_buildup_5.png|thumb|right|120px|'''Finished Cover''']]
 |
 |}
-When we zoom in on the final output image that was generated in this case at 300dpi and compare with the initial reconstructed image we will see the database images with much greater detail. The image can be made almost arbitrarily large and printed as a large poster.
+When we zoom in on the final output image that was generated in this case at 300dpi and compare with the initial reconstructed image we will see the database images with much greater detail. The image can be made almost arbitrarily large and printed as a large poster. ''Note'': the downsampler we use does not do a good job upsampling, thus when the originals are too small for a given dpi size combination artifacts in the output image will occur (grid of lines). This exception is currently not handled properly.
 
 {|
 |- 
