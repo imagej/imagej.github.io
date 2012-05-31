@@ -16,6 +16,8 @@ Even if JNA and JNI provide some convenience for using native libraries, there a
 
 * By using native libraries, it is much easier to produce fatal errors that tear down the complete Java virtual machine. Consequently, debugging can be really hard when using native libraries.
 
+For further arguments to use Java instead of native libraries, see also our [[Why Java|rationale for using Java]].
+
 == JNA vs JNI ==
 
 The benefits of JNA over JNI are:
