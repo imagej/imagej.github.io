@@ -97,7 +97,7 @@ A basic dialog box will appear prompting us to select the image database by clic
 
 Next '''click ok''' and the reconstruction will start. As a first step the template image will be cropped to the size that is multiple of the tile width and height (not shown, see [[#Future work|Future work]] for comment on the cropping issue.   
 
-Below we monitor the progress of building the plugin
+Below we monitor the progress of building the cover
 |
 [[Image:CoverMaker dialog 1.png|thumb|right|300px|'''The initial CoverMaker dialog box''']]
 |
