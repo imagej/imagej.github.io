@@ -178,7 +178,7 @@ Both output files are saved in the '''base directory'''. They can be directly us
 
 === Potential problems ===
 
-Sometimes an image with jpeg like extension is not in fact an jpeg. The script currently checks if the image has three channels and skips the image if this is not the case. However, in my experience a lot of unexpected things can happen when exploring large filesystems with diverse imagery. I have also seen situations where an image is properly downscaled for the tiles tif, but becomes corrupted during saving to the zip archive.... ??? Finally, as the searching of a large filesystem can take some time, random errors, corrupted images or insufficient memory can cause the script to crash.
+Sometimes an image with jpeg like extension is not in fact an jpeg. The script currently checks if the image has three channels and skips the image if this is not the case. However, in my experience, a lot of unexpected things can happen when exploring large filesystems with diverse imagery. Finally, as the searching of a large filesystem can take some time, random errors, corrupted images or insufficient memory can cause the script to crash.
 
 Catching these errors is the challenge for future improvements of the script.
 
