@@ -1,0 +1,72 @@
+== Found bugs == 
+
+Some users have reported bugs (thanks!). I list them here to help solve them:
+
+=== Conflict after segmentation ===
+
+Ronald Rock, Gordon Center for Integrative Science W229R. The University of Chicago
+
+'' The wizard gets stuck at "Set filters on spots" in the wizard.  My dataset is 512 x 512 x 1 x 375 frames, 16 bit, and ~240,000 spots are recognized at this point.  Fiji reports that I'm using ~10% of my memory allocation at this point. I'm on Mac OS X 10.7.4
+My console reports (when clicking next on "Set filters on spots")''
+
+<pre>
+5/29/12 5:48:17.859 PM [0x0-0x25e25e].org.fiji: Exception in thread "TrackMate moving to next state thread" 
+java.lang.NullPointerException 5/29/12 5:48:17.859 PM [0x0-0x25e25e].org.fiji: at java.util.ArrayList.<init>(ArrayList.java:131)
+
+5/29/12 5:48:17.859 PM [0x0-0x25e25e].org.fiji: at 
+fiji.plugin.trackmate.SpotCollection.filter(SpotCollection.java:191)
+
+5/29/12 5:48:17.859 PM [0x0-0x25e25e].org.fiji: at
+fiji.plugin.trackmate.TrackMate_.execSpotFiltering(TrackMate_.java:
+556)
+
+5/29/12 5:48:17.859 PM [0x0-0x25e25e].org.fiji: at
+fiji.plugin.trackmate.gui.SpotFilterDescriptor.aboutToHidePanel(SpotFilterDescriptor.java:
+106)
+
+5/29/12 5:48:17.859 PM [0x0-0x25e25e].org.fiji: at
+fiji.plugin.trackmate.gui.WizardController.next(WizardController.java:
+261)
+
+5/29/12 5:48:17.859 PM [0x0-0x25e25e].org.fiji: at
+fiji.plugin.trackmate.gui.WizardController.access
+$000(WizardController.java:18)
+
+5/29/12 5:48:17.859 PM [0x0-0x25e25e].org.fiji: at
+fiji.plugin.trackmate.gui.WizardController$1.run(WizardController.java:
+169)
+</pre>
+
+Like jil, this seems to be a bit random. Sometimes it works just
+fine.   I even just had it happen on your test data set
+(FakeTracks.tiff), clicking only on the next button (and not modifying
+any settings up to "Set filters on spots").  Here are the exceptions
+that I got leading up to the hang on FakeTracks.tiff.  The common
+feature seems to be that if I don't see the magenta circles, it will
+hang at this point.
+
+5/29/12 6:26:20.009 PM [0x0-0x2c42c4].org.fiji: Exception in thread
+"TrackMate spot feature calculating thread 1/4"
+java.lang.NullPointerException
+5/29/12 6:26:20.009 PM [0x0-0x2c42c4].org.fiji: 	at
+fiji.plugin.trackmate.features.spot.IndependentSpotFeatureAnalyzer.process(IndependentSpotFeatureAnalyzer.java:
+17)
+5/29/12 6:26:20.009 PM [0x0-0x2c42c4].org.fiji: 	at
+fiji.plugin.trackmate.features.FeatureModel$1.run(FeatureModel.java:
+301)
+
+The first is with the wizard when I hit "next" too soon after the previous step.  On some panels, the next button is disabled while the progress bar is up.  On a few, though, you can hit next with no indication that the click was registered.  Clicking next again will block forward progress through the wizard.  The biggest culprit is at "Initial thresholding".  On my machine, it takes about 5 seconds to move to the next panel, "Select a displayer".  I've trained myself to be more patient here.  Perhaps disabling the buttons between each step is an option?
+
+The second issue is with the tracker.  With my datasets, "Simple Fast LAP tracker" will always hang, and "Fast LAP tracker" will hang if I have enabled "Allow gap closing" (even with Max distance and Max frame interval both set to zero).  "Fast LAP tracker" succeeds with "Allow gap closing" disabled.  The linking process takes about 10 s total.
+
+
+
+== Users request ==
+
+We have received several requests from users to improve TrackMate. I list them here, and will erase them as they are implemented:
+
+=== Exporting tracks to TrackMate or computing velocities ===
+
+Ofra Golani, BioImaging Informatics - In-Vivo Imaging center, Weizmann Institute of Science.
+
+''We need to know the tracks velocity. How can I export the results to Matlab/ Excel for further processing? Is it planned to add velocity to track filters?''
