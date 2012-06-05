@@ -1,0 +1,59 @@
+Integral images have been introduced in by Crow (1984)<ref>{{cite conference
+ | last = Crow
+ | first = Franklin C.
+ | title = Summed-area tables for texture mapping
+ | booktitle = Proceedings of the 11<sup>th</sup> annual conference on Computer graphics and interactive techniques
+ | series = SIGGRAPH '84
+ | year = 1984
+ | pages = 207&ndash;212
+ | publisher = ACM
+ | address = New York, NY, USA
+ | isbn = 0-89791-138-5
+ | url = http://doi.acm.org/10.1145/800031.808600
+ | doi = 10.1145/800031.808600
+}}
+</ref> as a technique to improve texture rendering speed at multiple scales in perspective projections.  The technique has since then been used for a number of applications.  The most popular examples are fast normalized cross-correlation<ref>{{cite conference
+ | first = J. P.
+ | last = Lewis
+ | booktitle = Vision Interface
+ | volume = 95
+ | pages = 120&ndash;123
+ | publisher = Canadian Image Processing and Pattern Recognition Society
+ | title = Fast template matching
+ | year = 1995
+}}</ref>, the [http://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework Viola-Jones object detection framework]<ref>{{cite journal
+ | first1 = Paul
+ | last1 = Viola
+ | first2 = Michael J.
+ | last2 = Jones
+ | title = Robust Real-Time Face Detection
+ | journal = International Journal of Computer Vision
+ | pages = 137&ndash;154
+ | volume = 57
+ | number = 2
+ | year = 2004
+}}</ref>, and the [http://en.wikipedia.org/wiki/SURF Speeded Up Robust Feature (SURF)] transform<ref>{{cite journal
+ | first1 = Herbert
+ | last1 = Bay
+ | first2 = Andreas
+ | last2 = Ess
+ | first3 = Tinne
+ | last3 = Tuytelaars
+ | first4 = Luc
+ | last4 = Van Gool
+ | title = SURF: Speeded Up Robust Features
+ | journal = Computer Vision and Image Understanding (CVIU)
+ | volume = 110
+ | number = 3
+ | pages = 346&ndash;359
+ | year = 2008
+}}</ref>.  In Fiji, we currently use Integral Images for a number of basic statistic block filters.
+
+==Basic Block Statistics with Integral Images (Summed-Area Tables)==
+
+==References==
+
+<references />
+
+[[Category:Plugins]]
+[[Category:Filtering]]
