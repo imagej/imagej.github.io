@@ -97,6 +97,70 @@ which expands to
 
 Both sums can be generated from two Integral Images over <math>I(\vec{x})</math> and <math>I(\vec{x})^2</math> respectively.  For a two-dimensional image, both tables can be generated in a single loop with, on average, 1 product and 6 sums for calculation and 5 sums for data access per pixel.  Using those, the variance of an arbitrary rectangular block of pixels can be generated in constant time with 3 products and 9 sums for calculation and 2 products and 6 sums for data access.
 
+
+\section{Block Matching with Integral Images}
+
+We may deal with a situation where the intensities in two overlapping image regions <math>X</math> and <math>Y</math> might vary in brightness and contrast.  Then, a simple estimator like e.g. the ''Mean Square Error'' (MSE) cannot be used as a similarity measure because it is not invariant with respect to a linear transformation.  Instead, an appropriate measure for linear dependency would serve the purpose.  The ''Pearson Product-Moment Correlation Coefficient'' (PMCC) <math>\rho_{X,Y}</math> is an appropriate measure for linear dependency
+
+<math>
+\rho_{XY} = \frac{\sigma_{XY}}{\sigma_{X}\sigma_{Y}}
+</math>
+
+which, for <math>X</math> and <math></math> being a finite sample with <math>n</math>~elements each gives the ''Correlation Coefficient'' <math>r_{XY}</math>
+
+<math>
+r_{XY} = \frac{\sum_{i=1}^n(x_i-\mu_X)(y_i-\mu_Y)}{\sqrt{\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{\sum_{i=1}^n(y_i-\mu_Y)^2}}\quad\text{with}\quad\mu_X = \frac{1}{n}\sum_{i=1}^nx_i
+</math>
+
+that can be transformed yielding a set of independent sums.  For the numerator, that is
+
+<math>
+\begin{align}
+\sum_{i=1}^n(x_i-\mu_X)(y_i-\mu_Y) &= \sum_{i=1}^nx_iy_i-\sum_{i=1}^nx_i\mu_Y-\sum_{i=1}^ny_i\mu_X+\sum_{i=1}^n\mu_X\mu_Y \\
+ &= \sum_{i=1}^nx_iy_i-\mu_Y\sum_{i=1}^nx_i-\mu_X\sum_{i=1}^ny_i+n\mu_X\mu_Y \\
+ &= \sum_{i=1}^nx_iy_i-\frac{1}{n}\sum_{i=1}^ny_i\sum_{i=1}^nx_i
+\end{align}
+</math>
+
+For the denominator, it is handy to multiply with <math>\frac{n}{n}</math> first
+
+<math>
+\begin{align}
+r_{XY} &= \frac{\sum_{i=1}^nx_iy_i-\frac{1}{n}\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{\sqrt{\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{\sum_{i=1}^n(y_i-\mu_Y)^2}} \\
+ &= \frac{n\sum_{i=1}^nx_iy_i-\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{n\sqrt{\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{\sum_{i=1}^n(y_i-\mu_Y)^2}} \\
+ &= \frac{n\sum_{i=1}^nx_iy_i-\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{\sqrt{n\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{n\sum_{i=1}^n(y_i-\mu_Y)^2}}
+\end{align}
+</math>
+
+because
+
+<math>
+\begin{align}
+n\sum_{i=1}^n(x_i-\mu_X)^2 &= n\sum_{i=1}^n(x_i^2-2x_i\mu_X+\mu_X^2) \\
+ &= n\sum_{i=1}^nx_i^2 - 2n\mu_X\sum_{i=1}^nx_i + \left(\sum_{i=1}^nx_i\right)^2 \\
+ &= n\sum_{i=1}^nx_i^2 - 2\left(\sum_{i=1}^nx_i\right)^2 + \left(\sum_{i=1}^nx_i\right)^2 \\
+ &= n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)^2
+\end{align}
+</math>
+
+yielding
+
+<math>
+ r_{XY} = \frac{n\sum_{i=1}^nx_iy_i - \sum_{i=1}^nx_i\sum_{i=1}^ny_i}{\sqrt{n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)^2}\sqrt{n\sum_{i=1}^ny_i^2 - \left(\sum_{i=1}^ny_i\right)^2}}
+</math>
+
+which means that we can calculate <math>r_{XY}</math> for each block at a fix offset of two images from five summed-area tables at constant time.  In some situations (e.g. finding an extremum), it is sufficient to estimate <math>r_{XY}^2</math> and the sign of <math>r_{XY}</math>.  Then, the calculation of the two square roots can be avoided
+
+<math>
+r_{XY}^2 = \frac{a^2}{\left(n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)^2\right)\left(n\sum_{i=1}^ny_i^2 - \left(\sum_{i=1}^ny_i\right)^2\right)}
+</math>
+
+with
+
+<math>
+a = n\sum_{i=1}^nx_iy_i - \sum_{i=1}^nx_i\sum_{i=1}^ny_i\quad\text{and}\quad{}\sgn(r_{XY}) = \sgn(a)
+</math>
+
 ==References==
 
 <references />
