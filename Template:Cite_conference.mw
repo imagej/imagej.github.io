@@ -53,7 +53,7 @@
   |, {{#if: {{{location|}}}
     |{{{location}}}:&#32;
   }}{{{publisher}}}
-}}{{#if: {{{doi|}}} | . [[Digital object identifier|doi]]:[http://dx.doi.org/{{{doi}}} {{{doi}}}]
+}}{{#if: {{{doi|}}} | . doi:[http://dx.doi.org/{{{doi}}} {{{doi}}}]
 }}{{#if: {{{id|}}}
   |. {{{id}}}
 }}{{#if: {{{oclc|}}} | . [[OCLC]] [http://worldcat.org/oclc/{{urlencode:{{{oclc}}}}} {{{oclc}}}]
