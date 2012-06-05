@@ -1,3 +1,14 @@
+{{Infobox Plugin
+| name                   = Integral Image Filters
+| software               = Fiji
+| author                  = [[User:Saalfeld|Stephan Saalfeld]] ([mailto:saalfeld@mpi-cbg.de])
+| maintainer             = [[User:Saalfeld|Stephan Saalfeld]]
+| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/integral gitweb]
+| released               = March 21<sup>st</sup>, 2011
+| latest version         = February 22<sup>nd</sup>, 2012
+| status                 = stable, active
+| category               = [[:Category:Plugins|Plugins]], [[:Category:Filtering|Filtering]]
+}}
 Integral images have been introduced in by Crow (1984)<ref>{{cite conference
  | last = Crow
  | first = Franklin C.
