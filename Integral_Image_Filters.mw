@@ -110,7 +110,7 @@ which expands to
 Both sums can be generated from two Integral Images over <math>I(\vec{x})</math> and <math>I(\vec{x})^2</math> respectively.  For a two-dimensional image, both tables can be generated in a single loop with, on average, 1 product and 6 sums for calculation and 5 sums for data access per pixel.  Using those, the variance of an arbitrary rectangular block of pixels can be generated in constant time with 3 products and 9 sums for calculation and 2 products and 6 sums for data access.
 
 
-\section{Block Matching with Integral Images}
+===Block Matching with Integral Images===
 
 We may deal with a situation where the intensities in two overlapping image regions <math>X</math> and <math>Y</math> might vary in brightness and contrast.  Then, a simple estimator like e.g. the ''Mean Square Error'' (MSE) cannot be used as a similarity measure because it is not invariant with respect to a linear transformation.  Instead, an appropriate measure for linear dependency would serve the purpose.  The ''Pearson Product-Moment Correlation Coefficient'' (PMCC) <math>\rho_{X,Y}</math> is an appropriate measure for linear dependency
 
