@@ -51,6 +51,21 @@ Integral images have been introduced in by Crow (1984)<ref>{{cite conference
 
 ==Basic Block Statistics with Integral Images (Summed-Area Tables)==
 
+===Mean===
+The mean <math>\mu(X)</math> of a discrete set of random variables <math>X=\{x_1,\dots,x_n\}</math> is defined as
+
+<math>
+\mu=\sum_{i=1}^np_ix_i
+</math>
+
+Let <math>X</math> be the set of pixel values in a rectangular block with all pixel values having the same probability <math>p_i=\frac{1}{n}</math>, then
+
+<math>
+\mu=\frac{1}{n}\sum_{i=1}^nx_i
+</math>
+
+The sums can be generated from an Integral Image over <math>I(\vec{x})</math> .  The table can be generated in a single loop with, on average, 3~sums for calculation and 5~sums for data access per pixel.  Using that table, the mean of an arbitrary rectangular block of pixels can be generated in constant time with 1 product and 3 sums for calculation and 2 products and 6 sums for data access.
+
 ==References==
 
 <references />
