@@ -64,7 +64,40 @@ Let <math>X</math> be the set of pixel values in a rectangular block with all pi
 \mu=\frac{1}{n}\sum_{i=1}^nx_i
 </math>
 
-The sums can be generated from an Integral Image over <math>I(\vec{x})</math> .  The table can be generated in a single loop with, on average, 3~sums for calculation and 5~sums for data access per pixel.  Using that table, the mean of an arbitrary rectangular block of pixels can be generated in constant time with 1 product and 3 sums for calculation and 2 products and 6 sums for data access.
+The sums can be generated from an Integral Image over <math>I(\vec{x})</math> .  For a two-dimensional image, the table can be generated in a single loop with, on average, 3~sums for calculation and 5~sums for data access per pixel.  Using that table, the mean of an arbitrary rectangular block of pixels can be generated in constant time with 1 product and 3 sums for calculation and 2 products and 6 sums for data access.
+
+===Variance===
+
+The variance <math>\text{Var}(X)</math> of a discrete set of random variables <math>X=\{x_1,\dots,x_n\}</math> is defined as
+
+<math>
+\text{Var}(X) = \sum_{i=1}^np_i(x_i-\mu)^2 \quad\text{with}\quad \mu=\sum_{i=1}^np_ix_i
+</math>
+
+Let <math>X</math> be the set of pixel values in a rectangular block with all pixel values having the same probability <math>p_i=\frac{1}{n}</math>, then
+
+<math>
+\text{Var}(X) = \frac{1}{n}\sum_{i=1}^n(x_i-\mu)^2 \quad\text{and}\quad \mu=\frac{1}{n}\sum_{i=1}^nx_i
+</math>
+
+which expands to
+
+<math>
+\begin{align}
+\text{Var}(x) &= \frac{1}{n}\sum_{i=1}^n\left(x_i^2-2x_i\mu+\mu^2\right) \\
+%        &= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \frac{1}{n}\sum_{i=1}^n\mu^2 \\
+       &= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \mu^2 \\
+%        &= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \left(\frac{1}{n}\sum_{i=1}^nx_i\right)^2 \\
+       &= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2 \\
+       &= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{2\mu}{n}\sum_{i=1}^nx_i + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2 \\
+       &= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{2}{n^2}\left(\sum_{i=1}^nx_i\right)^2 + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2 \\
+       &= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2 \\
+       &= \frac{1}{n}\sum_{i=1}^nx_i^2 - \left(\frac{1}{n}\sum_{i=1}^nx_i\right)^2 \\
+       &= \frac{1}{n}\left(\sum_{i=1}^nx_i^2 - \frac{1}{n}\left(\sum_{i=1}^nx_i\right)^2\right)
+\end{align}
+</math>
+
+Both sums can be generated from two Integral Images over <math>I(\vec{x})</math> and <math>I(\vec{x})^2</math> respectively.  For a two-dimensional image, both tables can be generated in a single loop with, on average, 1 product and 6 sums for calculation and 5 sums for data access per pixel.  Using those, the variance of an arbitrary rectangular block of pixels can be generated in constant time with 3 products and 9 sums for calculation and 2 products and 6 sums for data access.
 
 ==References==
 
