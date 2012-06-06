@@ -24,6 +24,28 @@ dtruss ./fiji <args>
 
 To monitor all kinds of aspects of processes on Windows, use [http://technet.microsoft.com/en-us/sysinternals/bb896645.aspx Sysinternal's Process Monitor].
 
+= Debugging shared (dynamic) library issues =
+
+== Linux ==
+
+Set the ''LD_DEBUG'' environment variable before launching Fiji:
+
+<source lang="bash">
+LD_DEBUG=1 ./fiji <args>
+</source>
+
+== MacOSX ==
+
+Set the ''DYLD_PRINT_APIS'' environment variable before launching Fiji:
+
+<source lang="bash">
+DYLD_PRINT_APIS=1 ./fiji <args>
+</source>
+
+== Windows ==
+
+Often, dynamic library issues are connected to a dependent .dll file missing. Download [http://www.dependencywalker.com/ depends.exe] and load the .dll file you suspect is missing a dependency.
+
 = Debugging JVM hangs =
 
 When the Java VM hangs, the reason might be a dead-lock. You can often find out what is happening by reading the thread dump which you can get via ''Ctrl+\'' in the console where you started Fiji. On Linux and MacOSX, you can also send the signal ''3'' via the ''kill'' command.
