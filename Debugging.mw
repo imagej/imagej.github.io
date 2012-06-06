@@ -443,4 +443,30 @@ j3d.configURL	Unknown	1.3.1	Found in the ConfiguredUniverse class. Functionality
 |Default false. Completely disable DirectDraw and Direct3D by Java 2D (not Java 3D, actually). This avoids any problems associated with use of these APIs and their respective drivers.
 |}
 
+= Interactive debugging using a shared Terminal session =
+
+For users running Linux and MacOSX computers (or on Windows, [http://www.cygwin.com/ Cygwin] with an openssh server), one can use an SSH tunnel for a debugging session shared between a user and a developer. All that is needed is a shared account on a public SSH server, e.g. ''vib'' on Fiji's own server.
+
+The user should execute this command:
+
+<source lang="bash">
+ssh -R 2222:127.0.0.1:22 -t $ACCOUNT@$SSHSERVER screen
+</source>
+
+Once connected, the command
+
+<source lang="bash">
+ssh -p 2222 $LOCALACCOUNT@127.0.0.1
+</source>
+
+will open a connection back to the local machine.
+
+The developer should then execute this command:
+
+<source lang="bash">
+ssh -t $ACCOUNT@$SSHSERVER 'screen -x'
+</source>
+
+Since this provides a shared [http://savannah.gnu.org/projects/screen/ GNU screen] session, both the user and the developer can execute commands and see the output. It is even quite common to use the terminal window as sort of a private chat room by typing out what you have to say, ending the line with a ''Ctrl+C'' (lest it get executed as a command).
+
 [[Category:Development]]
