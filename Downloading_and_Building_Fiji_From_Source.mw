@@ -76,15 +76,17 @@ You should now be able to build Fiji with:
 
 === Multi-platform build confirmed successes ===
 
-Typically, multi-platform is plain hell. As today (June 2012), [[User:Schindelin|Johannes Schindelin]] put enough effort to ensure that Fiji builds '''at the very least''' on the following systems:
+Typically, multi-platform is plain hell. As of June 2012, [[User:Schindelin|Johannes Schindelin]] put enough effort to ensure that Fiji builds '''at the very least''' on the following systems:
 
-* Linux
+* Linux 32-bit with [http://www.ubuntu.com/ Ubuntu]
+* Linux 64-bit with [http://www.ubuntu.com/ Ubuntu]
 
 * Windows 64-bit with [http://msysgit.github.com/ MSysGit]
 * Windows 64-bit using [http://www.cygwin.com/ Cygwin]
 
-* MacOS X 10.5 (Leopard)
-* MacOS X 10.7 (Lion)
+* MacOSX 10.5 (Leopard)
+* MacOSX 10.6 (Snow Leopard)
+* MacOSX 10.7 (Lion)
 
 === Missing Java3D ===
 
