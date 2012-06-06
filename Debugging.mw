@@ -469,4 +469,6 @@ ssh -t $ACCOUNT@$SSHSERVER 'screen -x'
 
 Since this provides a shared [http://savannah.gnu.org/projects/screen/ GNU screen] session, both the user and the developer can execute commands and see the output. It is even quite common to use the terminal window as sort of a private chat room by typing out what you have to say, ending the line with a ''Ctrl+C'' (lest it get executed as a command).
 
+After the debugging party is over, the user can log out securely by hitting ''Ctrl+D'' to log out from the local machine (since the user typed in their password in the GNU screen session herself, there is no way for the developer to log back in without the user's explicit consent). Another ''Ctrl+D'' will terminate the GNU screen session, and yet another ''Ctrl+D'' will log out from the shared account on the SSH server.
+
 [[Category:Development]]
