@@ -72,6 +72,22 @@ You should now be able to build Fiji with:
 
 [[Image:Fiji-main-window.png|Fiji's main window]]
 
+
+
+=== Multi-platform build confirmed successes ===
+
+Typically, multi-platform is plain hell. As today (June 2012), [[Johannes Schindelin]] put enough effort to ensure that Fiji builds '''at the very least''' on the following systems:
+
+* Linux
+
+* Windows 64-bit with [http://msysgit.github.com/ MSysGit]
+* Windows 64-bit using [http://www.cygwin.com/ Cygwin]
+
+* MacOS X 10.5 (Leopard)
+* MacOS X 10.7 (Lion) 
+
+
+
 === Missing Java3D ===
 
 During the build process there might be complaints about missing Java3D features if you already have a Java SDK installed. To force the build system to clone a JDK with everything needed by Fiji (including Java3D support) you need to clear the environment variable ''JAVA_HOME'' before building:
