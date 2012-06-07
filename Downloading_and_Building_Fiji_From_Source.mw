@@ -82,7 +82,7 @@ Typically, multi-platform is plain hell. As of June 2012, [[User:Schindelin|Joha
 * Linux 64-bit with [http://www.ubuntu.com/ Ubuntu]
 
 * Windows 64-bit with [http://msysgit.github.com/ MSysGit]
-* Windows 64-bit using [http://www.cygwin.com/ Cygwin]
+* Windows 64-bit using [http://www.cygwin.com/ Cygwin] (you will need at least the <tt>curl</tt> & <tt>unzip</tt> functions to be installed)
 
 * MacOSX 10.5 (Leopard)
 * MacOSX 10.6 (Snow Leopard)
