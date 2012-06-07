@@ -34,7 +34,7 @@ Another method is to have a virtual desktop, e.g. [https://en.wikipedia.org/wiki
 
 '''Shortcomings:''' It is slower than it needs to be because of the overhead of starting the GUI, it is harder to configure, and plugins might get stuck because they wait for user input which never comes.
 
-Here is an example shell script that wraps a macro for use with Xvfb (thanks to Nestor Milyaev!):
+'''Example:''' Here is an example shell script that wraps a macro for use with Xvfb (thanks to Nestor Milyaev!):
 
 <source lang="bash">
 export DISPLAY=:1
