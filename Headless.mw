@@ -34,6 +34,23 @@ Another method is to have a virtual desktop, e.g. [https://en.wikipedia.org/wiki
 
 '''Shortcomings:''' It is slower than it needs to be because of the overhead of starting the GUI, it is harder to configure, and plugins might get stuck because they wait for user input which never comes.
 
+Here is an example shell script that wraps a macro for use with Xvfb (thanks to Nestor Milyaev!):
+
+<source lang="bash">
+export DISPLAY=:1
+Xvfb $DISPLAY -auth /dev/null &
+(
+# the '(' starts a new sub shell. In this sub shell we start the worker processes:
+
+script=$scriptDir"lsmrotate2nrrd.ijm \"dir="$1"&angle-x=$2&angle-y=
+$3&angle-z=$4&reverse=$5\" -batch"
+$fijiBin -macro $script # running the actual ijm script
+
+wait # waits until all 'program' processes are finished
+# this wait sees only the 'program' processes, not the Xvfb process
+)
+</source>
+
 == Rewriting as scripts or plugins ==
 
 The most robust method is to rewrite macros as scripts that do not require interaction with the GUI to begin with. Unfortunately, this is the most involved solution, too, since it usually takes some time to convert macros.
