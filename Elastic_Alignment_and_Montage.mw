@@ -76,6 +76,8 @@ We perform block matching at a reasonably down-scaled version of the images.  Th
 
 ==Parameter Discussion==
 
+All parameters that specify a distance in pixels refer to the original scale of the image.
+
 [[Image:Edge-filter.png|thumb|right|247px|Fig. 3: Edge response filter. The ratio of the two principal curvatures (Hessian eigenvalues) of at a detection determines how well it is defined in both dimensions. A large ratio signalizes an edge response.]]
 ;Input
 :Both plugins work with stacks of images.  The stacks might be virtual, which is strongly suggested for very large images.
