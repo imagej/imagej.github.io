@@ -3,7 +3,7 @@
 | software               = Fiji
 | author                 = [[User:Iarganda | Ignacio Arganda-Carreras]], [http://albert.rierol.net Albert Cardona], [http://www.kaynig.de Verena Kaynig]
 | maintainer             = [[User:Iarganda | Ignacio Arganda-Carreras]]
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Trainable_Segmentation/trainableSegmentation;h=5e5ffbd4ddffda72abd1d29099a2b1be523cdc1c;hb=HEAD on gitweb]
+| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Trainable_Segmentation/trainableSegmentation;hb=HEAD on gitweb]
 | released               = May 19<sup>th</sup>, 2011
 | latest version         = May 22<sup>nd</sup>, 2012
 | status                 = '''BETA''', active
