@@ -65,7 +65,7 @@ Ronald Rock, Gordon Center for Integrative Science W229R. The University of Chic
 
 ''I just ran into another issue that you may want to know about.  I've been using the ISBI xml format to extract the tracks for further analysis (seems easier to parse than the xml produced by the Save button).  However, I've noticed a clash with the track filters.  If I omit all track filters, then everything is fine.  However, if I filter on length, duration (8000 tracks -> 150 tracks), then I get the first 150 tracks out of 8000, instead of the  set of 150 that pass the filters.  Most of these tracks start on frame 0 or 1.  (I suppose this may be by design, if the competition doesn't care about filtering the tracks).''
 
-
+<u>Fixed in v1.2</u>
 
 
 
@@ -94,3 +94,5 @@ Ronald Rock, Gordon Center for Integrative Science W229R. The University of Chic
 Christoffel Dinant, Genome Integrity Unit. Danish Cancer Society Research Centre, Copenhagen, Denmark
 
 ''Now I have one question: After I segment and track the individual spots (cell nuclei in my case), can I extract and image stack for each cell for further analysis?''
+
+<u>Done in v1.2</u>
