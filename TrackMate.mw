@@ -5,7 +5,7 @@
 | maintainer            = [mailto:jean-yves.tinevez@pasteur.fr Jean-Yves Tinevez]
 | source                = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/TrackMate_;hb=HEAD on gitweb]
 | released              = 10/05/2012
-| status                = v1.1, active
+| status                = v1.2, active
 | category              = [[:Category:Segmentation|Segmentation]], [[:Category:Tracking|Tracking]]
 }}
 
@@ -136,7 +136,9 @@ TrackMate actually depends on many other Fiji plugins or libraries. The [[Fiji B
 ** [[TrachScheme]] can change of display style.
 ** De-activated folding branches in TrackScheme, as it was non-functional.
 ** Fix bugs when loading invisible tracks.
-
+* 13/06/2012 - v1.2:
+** Replace the ISBI challenge exporter by a simple track exporter
+** New action: capture the spot images along a track
 
 
 [[Category:Segmentation]]
