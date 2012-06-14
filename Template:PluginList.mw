@@ -604,6 +604,7 @@
 * [[Interactive Affine]] - file <tt>Transform_Affine</tt>  -- ''java jar file''
 * [[Interactive Moving Least Squares]] - file <tt>Transform_MovingLeastSquaresMesh</tt>  -- ''java jar file''
 * [[Interactive Perspective]] - file <tt>Transform_Perspective</tt>  -- ''java jar file''
+* [[Interactive Regularized Affine]] - file <tt>Transform_RegularizedAffine</tt>  -- ''java jar file''
 * [[Interactive Rigid]] - file <tt>Transform_Rigid</tt>  -- ''java jar file''
 * [[Landmark Correspondences]] - file <tt>Transform_Roi</tt>  -- ''java jar file''
 * [[Interactive Similarity]] - file <tt>Transform_Similarity</tt>  -- ''java jar file''
