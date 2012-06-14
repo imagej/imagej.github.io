@@ -134,14 +134,18 @@ TrackMate actually depends on many other Fiji plugins or libraries. The [[Fiji B
 
 == Version history ==
 
+Bug fixes are not mentioned here, and do not get their own release number. 
+
 * 10/05/2012 - v.10: Initial release
 * 22/05/2012 - v1.1: 
 ** [[TrachScheme]] can change of display style.
 ** De-activated folding branches in TrackScheme, as it was non-functional.
 ** Fix bugs when loading invisible tracks.
 * 13/06/2012 - v1.2:
-** Replace the ISBI challenge exporter by a simple track exporter
-** New action: capture the spot images along a track
+** Far better memory management and speed improvement in LAP trackers when dealing with gap-closing only.
+** Renamed the "Fast LAP tracker" and "Simple Fast LAP tracker" to "LAP tracker" and "Simple LAP tracker". Also removed the old "LAP tracker" and "Simple LAP tracker". They give the same results, but are just way slower.
+** Replaced the ISBI challenge exporter by a simple track exporter.
+** New action: capture the spot images along a track.
 
 
 [[Category:Segmentation]]
