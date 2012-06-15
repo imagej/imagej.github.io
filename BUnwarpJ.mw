@@ -6,7 +6,7 @@
 | filename               = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/bUnwarpJ_.jar bUnwarpJ_.jar] 
 | source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/bUnwarpJ_;hb=HEAD Git repository]
 | released               = July 20<sup>th</sup>, 2006
-| latest version         = March 26<sup>th</sup>, 2012
+| latest version         = June 15<sup>th</sup>, 2012
 | status                 = stable, active
 | category               = [[:Category:Registration|Registration]]
 | website                = [http://biocomp.cnb.csic.es/~iarganda/bUnwarpJ/ bUnwarpJ]
