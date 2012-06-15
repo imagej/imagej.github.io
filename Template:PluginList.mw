@@ -403,6 +403,7 @@
 === Plugins > Integral Image Filters ===
 
 * [[Mean]] - file <tt>mpicbg.ij.plugin.Mean</tt>  -- ''java jar file''
+* [[Normalize Local Contrast]] - file <tt>mpicbg.ij.plugin.NormalizeLocalContrast</tt>  -- ''java jar file''
 * [[Remove Outliers]] - file <tt>mpicbg.ij.plugin.RemoveOutliers</tt>  -- ''java jar file''
 * [[Sample Variance]] - file <tt>mpicbg.ij.plugin.SampleVariance</tt>  -- ''java jar file''
 * [[Standard Deviation]] - file <tt>mpicbg.ij.plugin.StandardDeviation</tt>  -- ''java jar file''
