@@ -1,0 +1,7 @@
+Stephan Saalfeld's elastic registration algorithm for serial section microscopy was published in Nature Methods. The programs implementing the approach are already for a while available in Fiji both as standalone plugins and as part of Albert Cardona's TrakEM2 suite.
+
+The paper is accompanied by number of spectacular videos visulazing the method, evalution and results for electron microscopy and array tomography section series. Check out the movies here. Additionally, you can browse through the reconstructed C. elegans dataset (courtesy of Rick Fetter) with CATAMID.
+
+Congratulation to everyone involved, particularly Stephan and Albert.
+
+[[Category:News]]
