@@ -8,7 +8,14 @@
 | latest version         = October 22<sup>nd</sup>, 2011
 | status                 = experimental, active
 | category               = [[:Category:Plugins|Plugins]], [[:Category:Registration|Registration]]
-}}==Introduction==
+}}== Citation ==
+Please note that the elastic alignment and montage plugin available through Fiji, is based on a publication. If you use it successfully for your research please cite our work:
+
+S. Saalfeld, R. Fetter, A. Cardona and P. Tomancak (2012) "Elastic volume reconstruction from series of ultra-thin microscopy sections, ''Nature Methods'', epub ahead of print. [http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2072.htmll Webpage] [[Media:Saalfeld_nmeth.2072.pdf|PDF]] [[Media:Saalfeld_nmeth.2072-S1.pdf|Supplement]]
+
+Supplementary videos demonstrating the performance of the method are available [http://fly.mpi-cbg.de/elastic here].
+
+==Introduction==
 
 [[Image:Aligned-series-crop-512.gif|thumb|right|166px|Example 2: Example for elastic alignment and montaging.  7 serial TEM sections of the neuropil of a ''Drosophila melanogaster'' first instar larva, detail at 100% pixel resolution. Image courtesy of [http://albert.rierol.net/ Albert Cardona].]][[Image:Aligned-series-512.gif|thumb|right|166px|Example 1: Example for elastic alignment and montaging.  7 serial TEM sections of the neuropil of a ''Drosophila melanogaster'' first instar larva, downscaled by a factor of 12.  Image courtesy of [http://albert.rierol.net/ Albert Cardona].]]
 We describe here our elastic alignment method for series or groups of overlapping 2d-images.  The method is accessible through the plugins '''Elastic Stack Alignment''' and '''Elastic Montage''' and incorporated in the '''[[TrakEM2]]''' software.  Applications are:
