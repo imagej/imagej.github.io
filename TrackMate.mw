@@ -104,6 +104,7 @@ TrackMate was developed to serve as a tool for Life-Science image analysis commu
 * [[Track analysis using TrackMate]]
 * [[TrackMate algorithms|TrackMate algorithms]] details and documents the automated segmentation algorithms, particle-linking algorithms, etc.. currently implemented in TrackMate. 
 * [[Manual tracking using TrackMate]] shows how to perform manual segmentation and manual particle -linking.
+* [[Scripting TrackMate]] shows how to do tracking using a a scripting language, ''e.g.'' from the Fiji [[Script Editor]].
 
 === For developers ===
 
