@@ -1,10 +1,10 @@
-Here is an example of full tracking process, using the easy image found in the [[Getting started with TrackMate|first tutorial]]. The following script works as following:
+Here is an example of full tracking process, using the easy image found in the [[Getting started with TrackMate|first tutorial]]. The following (Jython) script works as following:
 
 * It fetches the image from the web
 * It configures settings for segmentation and tracking
 * The model is instantiated, with the settings and imp objects
-* The trackmate plugin is instantiated with the model object
-* Then the trackmate object performs all the steps needed.
+* The [[TrackMate]] plugin is instantiated with the model object
+* Then the [[TrackMate]] object performs all the steps needed.
 * The final results is displayed as an overlay.
 
 
@@ -19,8 +19,8 @@ import fiji.plugin.trackmate.visualization.hyperstack.HyperStackDisplayer;
 
 # Get currently selected image
 # imp = WindowManager.getCurrentImage()
-imp = IJ.openImage('http://fiji.sc/tinevez/TrackMate/FakeTracks.tif');
-imp.show();
+imp = IJ.openImage('http://fiji.sc/tinevez/TrackMate/FakeTracks.tif')
+imp.show()
 
 #------------------------
 # Prepare settings object
@@ -31,7 +31,7 @@ settings = fiji.plugin.trackmate.Settings(imp)
 # Configure segmenter
 settings.segmenter = fiji.plugin.trackmate.segmentation.DogSegmenter()
 settings.segmenterSettings = fiji.plugin.trackmate.segmentation.LogSegmenterSettings()
-settings.segmenterSettings.expectedRadius = 2.5;
+settings.segmenterSettings.expectedRadius = 2.5
 
 # Configure tracker
 settings.tracker = fiji.plugin.trackmate.tracking.SimpleFastLAPTracker()
@@ -46,7 +46,7 @@ print(str(settings))
 model = fiji.plugin.trackmate.TrackMateModel()
 model.setSettings(settings)
 
-trackmate = fiji.plugin.trackmate.TrackMate_(model);
+trackmate = fiji.plugin.trackmate.TrackMate_(model)
 
 #---------------------
 # Execute segmentation
@@ -64,11 +64,11 @@ print(str(model.getSpots()))
 # Execute initial filtering
 #--------------------------
 
-model.setInitialSpotFilterValue(3.6);
+model.setInitialSpotFilterValue(3.6)
 
-print('Initial spot filtering with quality above '+str(model.getInitialSpotFilterValue()))
+print('Initial spot filtering with quality above ' + str(model.getInitialSpotFilterValue()))
 
-trackmate.execInitialSpotFiltering();
+trackmate.execInitialSpotFiltering()
 
 print(str(model.getSpots()))
 
@@ -76,12 +76,12 @@ print(str(model.getSpots()))
 # Execute spot filtering
 #--------------------------
 
-filter1 = fiji.plugin.trackmate.FeatureFilter('QUALITY', 20, True);
+filter1 = fiji.plugin.trackmate.FeatureFilter('QUALITY', 20, True)
 
-print('Spot filtering with '+str(filter1))
+print('Spot filtering with ' + str(filter1))
 
-model.addSpotFilter(filter1);
-trackmate.execSpotFiltering();
+model.addSpotFilter(filter1)
+trackmate.execSpotFiltering()
 
 print(str(model.getFilteredSpots()))
 
@@ -95,15 +95,15 @@ print(str(settings.trackerSettings))
 
 trackmate.execTracking()
 
-print('Found '+str(model.getNTracks())+' tracks.')
+print('Found ' + str(model.getNTracks()) + ' tracks.')
 
 #----------------
 # Display results
 #----------------
 
-displayer =  fiji.plugin.trackmate.visualization.hyperstack.HyperStackDisplayer();
-displayer.setModel(model);
-displayer.render();
-displayer.refresh();
+displayer =  fiji.plugin.trackmate.visualization.hyperstack.HyperStackDisplayer()
+displayer.setModel(model)
+displayer.render()
+displayer.refresh()
 
 </source>
