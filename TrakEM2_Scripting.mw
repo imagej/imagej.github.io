@@ -383,6 +383,20 @@ def run():
 run()
 </source>
 
+
+Notice that python (and jython) lets you use object instance methods as first-class functions, and contructors as well. This enables us to rewrite the "putAreas" function in a functional way, without using any temporary variables and without any if/else logic:
+
+<source lang="python">
+def putAreas(arealist):
+  """ Take all areas of an AreaList and put them in the ROI Manager."""
+  def put(arealist):
+  map(getRoiManager().addRoi,
+      map(ShapeRoi,
+          filter(lambda area: not area.isEmpty(),
+                 filter(None,
+                        map(arealist.getAreaAt, arealist.getLayerRange())))))
+</source>
+
 = Adding images =
 
 === Adding a single image to a layer shown in an open display ===
