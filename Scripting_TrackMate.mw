@@ -1,3 +1,21 @@
+== TrackMate scripting principle ==
+
+[[TrackMate_]] can be used out of the GUI, using a scripting language that allows making calls to Java. The most simple way to get started is to use the [[Script Editor]] of Fiji, which takes care of the difficult & boring part for you (such as path). The examples proposed on this page all use Jython, but can be adapted to anything. 
+
+Since we are calling the internals of TrackMate, we must get to know a bit of its guts. I have tried to come up with a rational design; though not always successfully. There is 3 main classes to interact with in a script:
+
+* TrackMateModel ([http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/TrackMate_/fiji/plugin/trackmate/TrackMateModel.java;hb=HEAD <code>fiji.plugin.trackmate.TrackMateModel</code>]) is the class in charge of <u>storing the data</u>. It cannot do anything to create it. It can help you follow manual modifications you would made in the manual editing mode, interrogate it, ... but it is conceptually just a data recipient. 
+
+* Settings ([http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/TrackMate_/fiji/plugin/trackmate/Settings.java;hb=HEAD <code>fiji.plugin.trackmate.Settings</code>]) is a part of the model. It is a class storing the fields that will configure TrackMate and pilot how the data is created. As you can see, it is mainly make of public fields. 
+
+* TrackMate ([http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/TrackMate_/fiji/plugin/trackmate/TrackMate_.java;hb=HEAD <code>fiji.plugin.trackmate.TrackMate_</code>]) is the actual Fiji plugin. When called from the Fiji menu, it launches the GUI. In scripts, we use it to actually <u>perform the analysis tasks</u>, such as generating spots from images, linking them into track, etc... It reads configuration information in the Settings object mentioned above and put the resulting data in the model.  
+ 
+So getting a working script is all about configuring a proper <code>Settings</code> object and calling <code>exec*</code> methods on a <code>TrackMate_</code> object.
+
+
+== A full example ==
+
+
 Here is an example of full tracking process, using the easy image found in the [[Getting started with TrackMate|first tutorial]]. The following (Jython) script works as following:
 
 * It fetches the image from the web
@@ -107,3 +125,6 @@ displayer.render()
 displayer.refresh()
 
 </source>
+
+
+[[User:JeanYvesTinevez|JeanYvesTinevez]] 17:35, 20 June 2012 (CEST)
