@@ -1,3 +1,6 @@
+__TOC__
+
+
 == TrackMate scripting principle ==
 
 [[TrackMate_]] can be used out of the GUI, using a scripting language that allows making calls to Java. The most simple way to get started is to use the [[Script Editor]] of Fiji, which takes care of the difficult & boring part for you (such as path). The examples proposed on this page all use Jython, but can be adapted to anything. 
@@ -192,7 +195,7 @@ displayer.refresh()
 
 # You might want to access only separate parts of the 
 # model. There are methods for that, but a certain order
-# must be repescted. For instance if you want the 
+# must be respected. For instance if you want the 
 # filtered spots:
 
 # You have to load first *all* the spots (can take a long time
@@ -208,11 +211,11 @@ print(str(spots))
 # If you want to get the tracks, it is a bit trickier. 
 # Internally, the tracks are stored as a huge mathematical
 # simple graph, which is what you retrieve from the file. 
-# There are methods to rebuild the acutal tracks, taking
-# into acount for everything, but frankly, if you want to 
+# There are methods to rebuild the actual tracks, taking
+# into account for everything, but frankly, if you want to 
 # do that it is simpler to go through the model shown above.
 # Here is how to retrieve the graph, which is actually more
-# intersting than just the tracks:
+# interesting than just the tracks:
 
 graph = reader.readTrackGraph(filtered_spots)
 # graph is a  org.jgrapht.graph.SimpleWeightedGraph
@@ -262,6 +265,12 @@ settings.imp = imp
 
 </source>
 
+We did not cover how to retrieve saved filters nor the list of filtered tracks. You will have to rely on the javadoc of the [http://fiji.sc/javadoc/fiji/plugin/trackmate/io/TmXmlReader.html TmXmlReader] class for that, and apply what we saw. The only key thing to remember is to call the method doublet
+<source lang="python">
+reader = fiji.plugin.trackmate.io.TmXmlReader(file, logger)
+reader.parse()
+</source>
+before questing the saved model.
 
 
 [[User:JeanYvesTinevez|JeanYvesTinevez]] 17:35, 20 June 2012 (CEST)
