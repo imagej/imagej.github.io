@@ -127,4 +127,141 @@ displayer.refresh()
 </source>
 
 
+
+== Loading and reading from a saved TrackMate XML file ==
+
+Scripting is a good way to interrogate and play non-interactively with tracking results. The example below shows how to load a XML TrackMate file and rebuild a full working model from it. 
+
+That way you could for instance redo a full tracking process by only changing one parameter with respect to the saved one. You might also want to check results without relying on the GUI. Etc...
+
+For the example below to work for you, you will have to edit line 12 and put the actual path to your TrackMate file.
+
+
+
+
+<source lang="python">
+import fiji.plugin.trackmate.io.TmXmlReader
+import fiji.plugin.trackmate.Logger
+import fiji.plugin.trackmate.visualization.hyperstack.HyperStackDisplayer
+import java.io.File
+
+
+#----------------
+# Setup variables
+#----------------
+
+# Put here the path to the TrackMate file you want to load
+file = java.io.File('E:/Users/JeanYves/Desktop/Data/FakeTracks.xml')
+
+# We have to feed a logger to the reader.
+logger = fiji.plugin.trackmate.Logger.DEFAULT_LOGGER
+
+#-------------------
+# Instantiate reader
+#-------------------
+
+reader = fiji.plugin.trackmate.io.TmXmlReader(file, logger)
+
+# We have to call 'parse()' before doing anything else. 
+# Problems with the file will be detected here.
+reader.parse()
+
+#-----------------
+# Get a full model
+#-----------------
+
+# This will return a fully working model, with everything
+# stored in the file. Missing fields (e.g. tracks) will be 
+# null or None in python
+model = reader.getModel();
+# model is a fiji.plugin.trackmate.TrackMateModel
+
+#----------------
+# Display results
+#----------------
+
+# We can now plainly display the model
+displayer =  fiji.plugin.trackmate.visualization.hyperstack.HyperStackDisplayer()
+displayer.setModel(model)
+displayer.render()
+displayer.refresh()
+
+#---------------------------------------------
+# Get only part of the data stored in the file
+#---------------------------------------------
+
+# You might want to access only separate parts of the 
+# model. There are methods for that, but a certain order
+# must be repescted. For instance if you want the 
+# filtered spots:
+
+# You have to load first *all* the spots (can take a long time
+# if your file is big):
+spots = reader.getAllSpots()
+# spots is a fiji.plugin.trackmate.SpotCollection
+
+# Then feed the spot collection to the next method:
+filtered_spots = reader.getFilteredSpots(spots)
+print('Filtered spots:')
+print(str(spots))
+
+# If you want to get the tracks, it is a bit trickier. 
+# Internally, the tracks are stored as a huge mathematical
+# simple graph, which is what you retrieve from the file. 
+# There are methods to rebuild the acutal tracks, taking
+# into acount for everything, but frankly, if you want to 
+# do that it is simpler to go through the model shown above.
+# Here is how to retrieve the graph, which is actually more
+# intersting than just the tracks:
+
+graph = reader.readTrackGraph(filtered_spots)
+# graph is a  org.jgrapht.graph.SimpleWeightedGraph
+# with generic types: <fiji.plugin.trackmate.Spot, 
+# org.jgrapht.graph.DefaultWeightedEdge>
+
+#---------------------------------------
+# Building a settings object from a file
+#---------------------------------------
+
+# Load the basic settings object
+settings = reader.getSettings()
+# settings is a fiji.plugin.trackmate.Settings
+print(str('Basic settings:'))
+print(str(settings))
+# Note that the settings object is not initialized with
+# stored image, segmentation settings and tracking settings.
+# You have to reconstruct it manually by pulling stored 
+# fields.
+
+# Load the segmentation settings
+reader.getSegmenterSettings(settings)
+print('Segmenter settings:')
+print(str(settings.segmenterSettings))
+
+# Load the tracker settings
+reader.getTrackerSettings(settings)
+print('Tracker settings:')
+print(str(settings.trackerSettings))
+
+# Calling these 2 extra methods also instantiated 
+# ready-to-rock segmenter and tracker, respectively:
+print('Segmenter chosen:')
+print(str(settings.segmenter))
+print('Tracker chosen:')
+print(str(settings.tracker))
+
+
+# Load and display the naked image.
+# Note that the XML file only stores a link to the image.
+# If the link is not valid, the image will not be found.
+imp = reader.getImage()
+imp.show()
+
+# We also have to feed it to the settings object:
+settings.imp = imp
+
+</source>
+
+
+
 [[User:JeanYvesTinevez|JeanYvesTinevez]] 17:35, 20 June 2012 (CEST)
