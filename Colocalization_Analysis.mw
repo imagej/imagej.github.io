@@ -4,7 +4,7 @@
 | author                 = Daniel J White, Tom Kazimiers, Johannes Schindelin
 | maintainer             = [mailto:white_at_mpi-cbg_dot_de Daniel White]
 | filename               = Colocalization.jar
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Colocalisation_Analysis/ColocImgLibGadgets.java;h=ce8c656ec6b484cdacd3001a5fc45754410a68aa;hb=HEAD on gitweb].
+| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Colocalisation_Analysis/ColocImgLibGadgets.java;h=ce8c656ec6b484cdacd3001a5fc45754410a68aa;hb=HEAD on gitweb].
 | latest version         = Dec 2011
 | website                = Fiji
 | status                 = beta. Under development, but stable enough for real work. 
@@ -71,7 +71,7 @@ At some point (preferably before you start), you should read these 2 papers very
 ===Open the sample data===
 First, lets open a sample data set that we know should have very good colocalisation because the 2 subunits of a dimeric protein are stained with green and red dyes respectively. The methods of Pearson, Manders, Costes and Li should work very well for this sample, but maybe we can see some problems with the data? Maybe we can decide if the data is suitable for this analysis or not? 
 
-'''Open this sample data file [http://pacific.mpi-cbg.de/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif].''' Then use the "Image-Color-Split Channels" menu command to get a separate z stack for the 2 dyes (you can throw the blue one away!).
+'''Open this sample data file [http://fiji.sc/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif].''' Then use the "Image-Color-Split Channels" menu command to get a separate z stack for the 2 dyes (you can throw the blue one away!).
 
 If you like, you can change the look up tables of the images (LUTs) so one is "green" and one is "magenta". Of course the colours here are always false. These false colours are only useful (to us as apes with trichromatic vision) to tell which channel is which: We are evolved to find red fruit in green trees. The optoelectronic detectors we use only see photons, and don't know what colour they are... that is determined by the fluorescence emission filters we use. There is no such thing as a green dye or a red dye, since they have broad emission spectra not a single wavelength corresponding to a certain "colour".
 If I want to show DAPI in green and EGFP as magenta, there is nothing "wrong" about that.  
@@ -108,7 +108,7 @@ We need to think carefully about the correct or adequate spatial resolution in x
 
 [http://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem Nyqvist] tells us the spatial sampling should be about three times smaller then the smallest object we want to resolve. Remember, spatial intensity correlation analysis, as we will perform here, can not tell you that 2 proteins are bound together in some biophysical bonding interaction. However, it might suggest that the 2 molecules occur with the same relative amounts when they are present in the set of spatial samples (pixels or voxels) with intensities above the thresholds we will calculate below. In any case, it might be a hint that "maybe they are binding partners or in the same macromolecular complex". You SHOULD follow up by determining true binding using [http://en.wikipedia.org/wiki/FLIM FLIM], [http://en.wikipedia.org/wiki/Förster_resonance_energy_transfer FRET] and biochemical methods like Immuno co-Precipitation etc.
 
-There is another (badly behaved) sample data file here which we will use later: [http://pacific.mpi-cbg.de/samples/150707_WTstack.lsm 150707_WTstack.lsm].
+There is another (badly behaved) sample data file here which we will use later: [http://fiji.sc/samples/150707_WTstack.lsm 150707_WTstack.lsm].
 
 == Notes and details on performing colocalization analysis (including using the old plugins) ==
 
@@ -119,7 +119,7 @@ There is another (badly behaved) sample data file here which we will use later: 
 '''[[Colocalization Threshold]] plugin:''' Note: this plugin is no longer under active development and support. Use Coloc_2 instead.
 
 <p>
-This plugin performs several functions for you in one go. With the "green" and "red" stacks of the [http://pacific.mpi-cbg.de/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif] dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [[#Why_scatter_plots.3F|Why scatter plots?]]), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do. 
+This plugin performs several functions for you in one go. With the "green" and "red" stacks of the [http://fiji.sc/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif] dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [[#Why_scatter_plots.3F|Why scatter plots?]]), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do. 
 </p>
 
 <p>
@@ -184,7 +184,7 @@ In images that have no empty regions, like tissue samples, it might then be a us
     <ol>
 
         <li>
-      '''The auto threshold calculation method can fail''' if you feed it inappropriate information. That means it does not like images with high offset / high flat background, which adds a constant number to the "real proportional" intensity relationship to the "concentration" of the dye. If pixels that contain no real signal have large intensity values, the algorithm has no way of knowing that, and can reach a result for the thresholds where one or both of them is below the value of the lowest intensity value present in that channels of the image. This means that ALL of that channel's pixels are considered to be colocalised, then the Manders Coefficients that you get will reflect that aberrant situation. In these cases, the background / offset should be carefully removed/subtracted before running the [[Colocalization Threshold]] plugin. The images below are an example of this situation, using the badly behaved data set:[http://pacific.mpi-cbg.de/samples/150707_WTstack.lsm 150707_WTstack.lsm]. Note that the vaules for M1 and tM1 are the same! This should not be the case. You can see the green channel threshold is wrongly set below the intensity where the image data actually starts :-O
+      '''The auto threshold calculation method can fail''' if you feed it inappropriate information. That means it does not like images with high offset / high flat background, which adds a constant number to the "real proportional" intensity relationship to the "concentration" of the dye. If pixels that contain no real signal have large intensity values, the algorithm has no way of knowing that, and can reach a result for the thresholds where one or both of them is below the value of the lowest intensity value present in that channels of the image. This means that ALL of that channel's pixels are considered to be colocalised, then the Manders Coefficients that you get will reflect that aberrant situation. In these cases, the background / offset should be carefully removed/subtracted before running the [[Colocalization Threshold]] plugin. The images below are an example of this situation, using the badly behaved data set:[http://fiji.sc/samples/150707_WTstack.lsm 150707_WTstack.lsm]. Note that the vaules for M1 and tM1 are the same! This should not be the case. You can see the green channel threshold is wrongly set below the intensity where the image data actually starts :-O
 
 [[Image:BadOffsetConfusesCostesAutoThreshold.png|300px]]
      </li>      
