@@ -26,13 +26,13 @@ Behind this barbaric name stand the part responsible for spot detection in your 
 
 === Difference of Gaussian particle detection (DoG segmenter) ===
 
-
-
 Given d an approximate expected particle diameter, determined upon inspection, two gaussian filters are produced with standard deviation σ₁ and σ₂:
-σ₁ = 1 / (1 + √2 ) ×  d
-σ₂ = √2 × σ₁
+* σ₁ = 1 / (1 + √2 ) ×  d
+* σ₂ = √2 × σ₁
 The image is filtered using these two gaussians, and the result of the second filter (largest sigma) is subtracted from the result of the first filter (smallest sigma). This yields a smoothed image with sharp local maximas at particle locations. A detection spot is then created for each of these maximas, and an arbitrary quality feature is assigned to the new spot by taking the smoothed image value at the maximum.
+
 To improve the localization accuracy, and extra step is taken to yield a sub-pixel localization of the spots. The position of each spot is recalculated using a simple parabolic interpolation scheme, as in [Lowe]. The quality feature is also interpolated using this scheme. 
+
 A large number of spurious spots are created by finding local maximas. There spurious spots are discarded inn extra step, by applying a threshold on the quality feature computed during segmentation. The value of this threshold is set manually, to match the SNR of the input image. Thresholded spots are then retained for subsequent particle-linking.
 
 
@@ -43,9 +43,10 @@ A large number of spurious spots are created by finding local maximas. There spu
 
 
 
-We implemented the renowned Linear Assignment Problem (LAP) method contributed by Jaqaman and colleagues [Jaqaman], with minor modifications on the linking costs calculations. We repeat here the ideas found in [Jaqaman].
+We implemented the renowned Linear Assignment Problem (LAP) method contributed by Jaqaman and colleagues<ref name="Jaqaman">[http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.]</ref>, with minor modifications on the linking costs calculations. We repeat here the ideas found in the reference paper.
 
 Particle-linking happens in two step: track segments creation from frame-to-frame particle linking, then track segments linking to achieve gap closing. The mathematical formulation used for both steps is linear assignment problem (LAP): a cost matrix is assembled contained all possible assignment costs. Actual assignments are retrieved by solving this matrix for minimal total cost. We describe first how cost matrices are arranged, then how individual costs are calculated.
+
 
 ==== Cost matrix for frame-to-frame linking ====
 
@@ -57,17 +58,22 @@ In the first step, two consecutive frames are inspected for linking. Each spot o
 
 * The bottom-left quadrant (size ''m'' x ''m'') contains the costs for a spot ''j'' in the frame ''t+1'' not to have any link with previous frame (yielding a segment start).
 
-* The bottom-right quadrant (size ''m'' x ''n'') is the auxiliary block mathematically required by the LAP formalism. A detailed explanation for its existence is given in the supplementary note 3 of [Jaqaman]. This quadrant is built by taking the transpose of the top-left quadrant, and replacing all non-blocking costs by the minimal cost.
+* The bottom-right quadrant (size ''m'' x ''n'') is the auxiliary block mathematically required by the LAP formalism. A detailed explanation for its existence is given in the supplementary note 3 of <ref name="Jaqaman"/>. This quadrant is built by taking the transpose of the top-left quadrant, and replacing all non-blocking costs by the minimal cost.
 
 
 ==== Solving LAP ====
 
-To solve this LAP, we rely on the Munkres & Kuhn algorithm<ref>For explanation note</ref>
+To solve this LAP, we rely on the Munkres & Kuhn algorithm<ref>J. Munkres, "Algorithms for the Assignment and Transportation Problems", Journal of the Society for Industrial and Applied Mathematics, 5(1):32–38, 1957 March</ref>, that solves the problem in polynomial time (''O(n<sup>3</sup>)''). The algorithm returns the assignment list that minimizes the sum of their costs. 
+
+The frame-to-frame linking described above is repeated first for all frame pairs. This yields a series of non-branching track segments. A track segment may be start or stop because of a missing detection, or because of a merge or split event, which is not taken into account at this stage. A second step where track segments are offered to link between each other (and not only spots) is need, and described further down.
+
 
 
 ==== Calculating linking costs ====
 
-In calculating costs, we deviate slightly from the original paper from [Jaqaman]. In the paper, costs depend solely on the spot-to-spot distance, possibly weighted by the difference in spot intensity. Here, we offer to the user to tune costs by adding penalties on spot features, as explained below.
+In calculating costs, we deviate slightly from the original paper from  Jaqaman ''et al.''<ref name="Jaqaman"/>. In the paper, costs depend solely on the spot-to-spot distance, possibly weighted by the difference in spot intensity. Here, we offer to the user to tune costs by adding penalties on spot features, as explained below.
+
+The user is asked for a maximal allowed linking distance, and for a series of spot features, alongside with weights. These parameters are used to tune the cost matrices. For two spots that may link, the linking cost is calculated as follow:
 
 # The distance between the two spots D is calculated 
 # If the spots are separated by more than the max allowed distance, the link is forbidden, and the cost is set to [http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html#POSITIVE_INFINITY infinity]. If not, 
@@ -78,8 +84,20 @@ In calculating costs, we deviate slightly from the original paper from [Jaqaman]
 # All penalties are summed, to form P = (1 + ∑ p ) 
 # The cost is set to the square of the product: C = ( D × P )²
 
+If the user feeds no penalty, the costs are simply the distances squared.
 
 
 
 
-Without penalties and with a maximal linking allowed distance,
+==== Cost calculation & Brownian motion ====
+
+Without penalties and with a maximal linking allowed distance, the returned solution is the one that minimizes the sum of squared distances. This actually corresponds to the case where the motion of spots is governed by [http://en.wikipedia.org/wiki/Brownian_motion Brownian motion]. See for instance Crocker and Grier<ref>[http://physics.nyu.edu/grierlab/methods3c/methods3c.pdf Crocker and Grier. "Methods of Digital Video Microscopy for Colloidal Studies." J Colloid Interf Sci (1996) vol. 179 (1) pp. 298-310]</ref>.
+
+By adding feature penalties, we aim at favoring linking particles that "resembles" each other. In brute single particle linking problems, spots are generally all the same, and they only differ by position. However, there is a variety of problems for which these feature penalties can add robustness to the tracking process.
+
+For instance, we originally developed [[TrackMate]] for semi-automated lineaging of ''C.elegans'' embryos, using a strain fluorescent in the nucleus. Cells that are dividing have a fluorescence distribution which is very different from non-dividing cells, and this can be exploited for robust tracking.
+
+
+
+
+<references/>
