@@ -1,3 +1,12 @@
+!! THIS IS DRAT !!
+
+The documentation on this page is very incomplete !!
+
+
+
+
+____
+
 This page documents the current components of [[TrackMate]]. TrackMate has a modular design, meaning that it is made of different modules that each have a specific role. Developers can build their own module and re-used the other ones and the GUI to achieve a quick development. The module types are (in the order you meet them when executing the plugin):
 
 # '''Spot segmenters'''. Taking your image data, they detect spots in them.
@@ -15,13 +24,38 @@ We describe here the best we can the current modules that are shipped with Track
 Behind this barbaric name stand the part responsible for spot detection in your image. The algorithm currently implemented are very generic and naive. They will most likely fail for complicated case such as touching objects, very weak SNR, etc... The 3 of them present are all based on Laplacian of Gaussian filtering, which we describe below.
 
 
+=== Difference of Gaussian particle detection (DoG segmenter) ===
 
 
+
+Given d an approximate expected particle diameter, determined upon inspection, two gaussian filters are produced with standard deviation σ₁ and σ₂:
+σ₁ = 1 / (1 + √2 ) ×  d
+σ₂ = √2 × σ₁
+The image is filtered using these two gaussians, and the result of the second filter (largest sigma) is subtracted from the result of the first filter (smallest sigma). This yields a smoothed image with sharp local maximas at particle locations. A detection spot is then created for each of these maximas, and an arbitrary quality feature is assigned to the new spot by taking the smoothed image value at the maximum.
+To improve the localization accuracy, and extra step is taken to yield a sub-pixel localization of the spots. The position of each spot is recalculated using a simple parabolic interpolation scheme, as in [Lowe]. The quality feature is also interpolated using this scheme. 
+A large number of spurious spots are created by finding local maximas. There spurious spots are discarded inn extra step, by applying a threshold on the quality feature computed during segmentation. The value of this threshold is set manually, to match the SNR of the input image. Thresholded spots are then retained for subsequent particle-linking.
+
+
+
+
+== LAP trackers ==
+
+
+
+
+We implemented the renowned Linear Assignment Problem (LAP) method contributed by Jaqaman and colleagues [Jaqaman], with minor modifications on the linking costs calculations. We repeat here the ideas found in [Jaqaman].
+Particle-linking happens in two step: track segments creation from frame-to-frame particle linking, then track segments linking to achieve gap closing. The mathematical formulation used for both steps is linear assignment problem (LAP): a cost matrix is assembled contained all possible assignment costs. Actual assignments are retrieved by solving this matrix for minimal total cost. More precisely:
+
+In the first step, two consecutive frames are inspected for linking. Each spot of the first frame is offered to link to any other spot in the next frame, or not to link.  This takes the shape of a (n+m) x (n+m) matrix (n is the number of spots in the frame t, m is the number of spots in the frame t+1), that can be divided in 4 quadrants. 
+
+# The top-left quadrant (size n x m) contains the costs for linking a spot i in the frame t to any spot j in the frame t+1.
+# The top-right quadrant (size n x n) contains the costs for a spot i in the frame t not to create a link with next frame (yielding a segment stop).
+# The bottom-left quadrant (size m x m) contains the costs for a spot j in the frame t+1 not to have any link with previous frame (yielding a segment start).
+# The bottom-right quadrant is the auxiliary block mathematically required by the LAP formalism. A detailed explanation for its presence is given in the supplementatry note 3 of [Jaqaman]
 
 
 
 === Calculating linking costs ===
-
 
 # The distance between the two spots D is calculated 
 # If the spots are separated by more than the max distance, the link is forbidden. If not, 
