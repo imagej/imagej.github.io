@@ -38,34 +38,48 @@ A large number of spurious spots are created by finding local maximas. There spu
 
 
 
-== LAP trackers ==
+=== LAP trackers ===
 
 
 
 
 We implemented the renowned Linear Assignment Problem (LAP) method contributed by Jaqaman and colleagues [Jaqaman], with minor modifications on the linking costs calculations. We repeat here the ideas found in [Jaqaman].
-Particle-linking happens in two step: track segments creation from frame-to-frame particle linking, then track segments linking to achieve gap closing. The mathematical formulation used for both steps is linear assignment problem (LAP): a cost matrix is assembled contained all possible assignment costs. Actual assignments are retrieved by solving this matrix for minimal total cost. More precisely:
 
-In the first step, two consecutive frames are inspected for linking. Each spot of the first frame is offered to link to any other spot in the next frame, or not to link.  This takes the shape of a (n+m) x (n+m) matrix (n is the number of spots in the frame t, m is the number of spots in the frame t+1), that can be divided in 4 quadrants. 
+Particle-linking happens in two step: track segments creation from frame-to-frame particle linking, then track segments linking to achieve gap closing. The mathematical formulation used for both steps is linear assignment problem (LAP): a cost matrix is assembled contained all possible assignment costs. Actual assignments are retrieved by solving this matrix for minimal total cost. We describe first how cost matrices are arranged, then how individual costs are calculated.
 
-# The top-left quadrant (size n x m) contains the costs for linking a spot i in the frame t to any spot j in the frame t+1.
-# The top-right quadrant (size n x n) contains the costs for a spot i in the frame t not to create a link with next frame (yielding a segment stop).
-# The bottom-left quadrant (size m x m) contains the costs for a spot j in the frame t+1 not to have any link with previous frame (yielding a segment start).
-# The bottom-right quadrant is the auxiliary block mathematically required by the LAP formalism. A detailed explanation for its presence is given in the supplementatry note 3 of [Jaqaman]
+==== Cost matrix for frame-to-frame linking ====
+
+In the first step, two consecutive frames are inspected for linking. Each spot of the first frame is offered to link to any other spot in the next frame, or not to link.  This takes the shape of a (''n''+''m'') x (''n''+''m'') matrix (n is the number of spots in the frame t, m is the number of spots in the frame t+1), that can be divided in 4 quadrants. 
+
+* The top-left quadrant (size ''n'' x ''m'') contains the costs for linking a spot ''i'' in the frame ''t'' to any spot ''j'' in the frame 't+1''.
+
+* The top-right quadrant (size ''n'' x ''n'') contains the costs for a spot ''i'' in the frame ''t'' not to create a link with next frame (yielding a segment stop).
+
+* The bottom-left quadrant (size ''m'' x ''m'') contains the costs for a spot ''j'' in the frame ''t+1'' not to have any link with previous frame (yielding a segment start).
+
+* The bottom-right quadrant (size ''m'' x ''n'') is the auxiliary block mathematically required by the LAP formalism. A detailed explanation for its existence is given in the supplementary note 3 of [Jaqaman]. This quadrant is built by taking the transpose of the top-left quadrant, and replacing all non-blocking costs by the minimal cost.
 
 
+==== Solving LAP ====
 
-=== Calculating linking costs ===
+To solve this LAP, we rely on the Munkres & Kuhn algorithm<ref>For explanation note</ref>
+
+
+==== Calculating linking costs ====
+
+In calculating costs, we deviate slightly from the original paper from [Jaqaman]. In the paper, costs depend solely on the spot-to-spot distance, possibly weighted by the difference in spot intensity. Here, we offer to the user to tune costs by adding penalties on spot features, as explained below.
 
 # The distance between the two spots D is calculated 
-# If the spots are separated by more than the max distance, the link is forbidden. If not, 
-# For each feature in the map, a penalty p is calculated as 
+# If the spots are separated by more than the max allowed distance, the link is forbidden, and the cost is set to [http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html#POSITIVE_INFINITY infinity]. If not, 
+# For each feature in the map, a penalty p is calculated as <br><math> p = 3 \times W \times \frac{ | f_1-f_2|}{f_1+f_2} </math><br>where W is the factor associated to the feature in the map. This expression is such that:
+#* there is no penalty if the 2 feature values f1 and f2 are the same; 
+#* with a factor of 1, the penalty is 1 is one value is the double of the other; 
+#* the penalty is 2 if one is 5 times the other one. 
+# All penalties are summed, to form P = (1 + ∑ p ) 
+# The cost is set to the square of the product: C = ( D × P )²
 
-<math> p = 3 \times W \times \frac{ | f_1-f_2|}{f_1+f_2} </math>
 
-where W is the factor associated to the feature in the map. This expression is such that: 
-there is no penalty if the 2 feature values f1 and f2 are the same; 
-that, with a factor of 1, the penalty if 1 is one value is the double of the other; 
-the penalty is 2 if one is 5 times the other one. 
-All penalties are summed, to form P = (1 + ∑ p ) 
-The cost is set to the square of the product: C = ( D × P )²
+
+
+
+Without penalties and with a maximal linking allowed distance,
