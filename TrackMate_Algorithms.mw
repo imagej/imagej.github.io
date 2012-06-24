@@ -73,7 +73,7 @@ The frame-to-frame linking described above is repeated first for all frame pairs
 
 In calculating costs, we deviate slightly from the original paper from  Jaqaman ''et al.''<ref name="Jaqaman"/>. In the paper, costs depend solely on the spot-to-spot distance, possibly weighted by the difference in spot intensity. Here, we offer to the user to tune costs by adding penalties on spot features, as explained below.
 
-The user is asked for a maximal allowed linking distance, and for a series of spot features, alongside with weights. These parameters are used to tune the cost matrices. For two spots that may link, the linking cost is calculated as follow:
+The user is asked for a maximal allowed linking distance (entered in physical units), and for a series of spot features, alongside with penalty weights. These parameters are used to tune the cost matrices. For two spots that may link, the linking cost is calculated as follow:
 
 # The distance between the two spots D is calculated 
 # If the spots are separated by more than the max allowed distance, the link is forbidden, and the cost is set to [http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html#POSITIVE_INFINITY infinity]. If not, 
@@ -93,9 +93,30 @@ If the user feeds no penalty, the costs are simply the distances squared.
 
 Without penalties and with a maximal linking allowed distance, the returned solution is the one that minimizes the sum of squared distances. This actually corresponds to the case where the motion of spots is governed by [http://en.wikipedia.org/wiki/Brownian_motion Brownian motion]. See for instance Crocker and Grier<ref>[http://physics.nyu.edu/grierlab/methods3c/methods3c.pdf Crocker and Grier. "Methods of Digital Video Microscopy for Colloidal Studies." J Colloid Interf Sci (1996) vol. 179 (1) pp. 298-310]</ref>.
 
-By adding feature penalties, we aim at favoring linking particles that "resembles" each other. In brute single particle linking problems, spots are generally all the same, and they only differ by position. However, there is a variety of problems for which these feature penalties can add robustness to the tracking process.
+By adding feature penalties, we aim at favoring linking particles that "resemble" each other. In brute single particle linking problems, spots are generally all the same, and they only differ by position. However, there is a variety of problems for which these feature penalties can add robustness to the tracking process.
 
 For instance, we originally developed [[TrackMate]] for semi-automated lineaging of ''C.elegans'' embryos, using a strain fluorescent in the nucleus. Cells that are dividing have a fluorescence distribution which is very different from non-dividing cells, and this can be exploited for robust tracking.
+
+
+
+==== Track segment linking ====
+
+In a second step, the track segments built above are offered to link between each other. Jaqaman and colleagues proposes to exploit again the LAP framework for this step. A new cost matrix is generated, but this time the following events are considered:
+
+* The end of a track segment is offered to link to any other track segment start. This corresponds to <u>gap-closing</u> events, where a link is created typically over two spots separated by a missed detection.
+
+* The start of a track segment is offered to link to the spots in the central part (not start, not end) of any other track segment. This corresponds to <u>splitting</u> events, where a track branches in two sub-tracks.
+
+* The end of a track segment is offered to link to the spots in the central part of any other track segment. This corresponds to <u>merging</u> events, where two tracks merges into one. I yet did not meet this case in Life-Sciences.
+
+* A spot part of any track segment is offered not to create any link. 
+
+The second cost matrix has a shape that resembles the first cost matrix, calculated for frame-to-frame linking, and which is best described in the original article. 
+
+As before, we modified the way costs are calculated, and re-used the feature penalties framework described above. Also, the user must provide on top a maximal time-difference to link, over which linking will be provided. Careful: this maximal time is expressed in physical units and not in number of frames. 
+
+
+
 
 
 
