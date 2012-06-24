@@ -36,7 +36,7 @@ To improve the localization accuracy, and extra step is taken to yield a sub-pix
 A large number of spurious spots are created by finding local maximas. There spurious spots are discarded inn extra step, by applying a threshold on the quality feature computed during segmentation. The value of this threshold is set manually, to match the SNR of the input image. Thresholded spots are then retained for subsequent particle-linking.
 
 
-
+== Spot trackers ==
 
 === LAP trackers ===
 
