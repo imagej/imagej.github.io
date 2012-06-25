@@ -34,7 +34,7 @@ Pressing the '''Load''' button opens a dialog asking you for a TrackMate file (t
 
 Now is a good time to speak strategy when it comes to saving/restoring. You can save at anytime in TrackMate. If you save just before the tracking process, you will be taken there with the data you generated so far upon loading. TrackMate saves a <u>link to the image file</u> (as an absolute file path) but not the image itself. When loading a TrackMate file, it tries first to retrieve and open this file in ImageJ. So it is a good idea to pre-process, crop, edit metadata and massage the target image first in Fiji, then save it as a .tif, then launch TrackMate. Particularly if you deal with a multi-series file, such as Leica .lif files.
 
-The advantage of this approach is that you can launch TrackMate, immediately press the load button, and everything you need will be loaded and displayed. However, if you need to change with the target file of if it cannot be retrieved, you will have to open the TrackMate XML file and edit its 4th line.
+The advantage of this approach is that you can launch TrackMate, immediately press the load button, and everything you need will be loaded and displayed. However, if you need to change with the target file or if it cannot be retrieved, you will have to open the TrackMate XML file and edit its 4th line.
 
 <br style="clear: both" />
 
