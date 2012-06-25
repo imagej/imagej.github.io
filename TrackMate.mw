@@ -133,6 +133,17 @@ TrackMate actually depends on many other Fiji plugins or libraries. The [[Fiji B
 
 
 
+
+== Acknowledgement ==
+
+We are extremely thankful for the support of [http://sorger.med.harvard.edu/people/khuloud-jaqaman/ Khuloud Jaqaman] while we were implementing in Java her work on robust LAP tracker, following her seminal paper published in the Danuser group<ref>Jaqaman et al. ''Robust single-particle tracking in live-cell time-lapse sequences''. '''Nat Methods''' (2008) vol. 5 (8) pp. 695-702</ref>.
+
+JYT acknowledges funding from the European commission FP7 ICT ([http://www.memi-fp7.org project “MEMI”]) at the beginning of this project. NP was a visiting student thanks to funds provisioned by the Stanford University.
+
+
+
+
+
 == Version history ==
 
 Bug fixes are not mentioned here, and do not get their own release number. 
@@ -147,6 +158,11 @@ Bug fixes are not mentioned here, and do not get their own release number.
 ** Renamed the "Fast LAP tracker" and "Simple Fast LAP tracker" to "LAP tracker" and "Simple LAP tracker". Also removed the old "LAP tracker" and "Simple LAP tracker". They give the same results, but are just way slower.
 ** Replaced the ISBI challenge exporter by a simple track exporter.
 ** New action: capture the spot images along a track.
+
+
+
+
+<references/>
 
 
 [[Category:Segmentation]]
