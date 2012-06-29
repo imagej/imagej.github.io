@@ -351,6 +351,11 @@
 * [[Command Launcher Python]] - file <tt>Command_Launcher_Python.py</tt>  -- ''jython script''
 * [[Command Launcher Ruby]] - file <tt>Command_Launcher_Ruby.rb</tt>  -- ''jruby script''
 
+==== Plugins > Examples > CoverMaker ====
+
+* [[Cover Maker]] - file <tt>Cover_Maker.py</tt>  -- ''jython script''
+* [[Prepare Cover Maker Database]] - file <tt>Prepare_Cover_Maker_Database.py</tt>  -- ''jython script''
+
 ==== Plugins > Examples > TrakEM2_Example_Scripts ====
 
 * [[Homogenize Ball Radius]] - file <tt>Homogenize_Ball_Radius.py</tt>  -- ''jython script''
