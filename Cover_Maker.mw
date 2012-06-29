@@ -187,7 +187,7 @@ Catching these errors is the challenge for future improvements of the script.
 Currently we provide a single database of images prepared for CoverMaker. The database contains 81,751 images of ''Drosophila melanogaster'' embryos stained by RNA ''in situ'' hybridization with probes for about 6000 genes. The images have been scaled to the size of 12x9 pixels resulting in a tif stack that can serve as input for the CoverMaker plugin.  Additionally, in order to save the high resolution images you will need the matching zip archive of original images.
 
 {| class="wikitable" style="text-align: center;"
-| Database type || scaled tiles (unzip) || originals (DO NOT unzip)
+| Database type || scaled tiles || originals (DO NOT unzip)
 |-
 | Drosophila Embryo ''in situ'' || [http://fiji.sc/samples/12_9.tif 12_9.tif]  (16.6MB) || [http://fiji.sc/samples/originals.zip originals.zip] (1.45GB)
 |}
