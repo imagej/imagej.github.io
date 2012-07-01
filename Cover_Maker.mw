@@ -91,7 +91,8 @@ We will start by opening an image that will serve as template. For the time bein
 |
 |-
 |
-Now we launch the CoverMaker python script by going..... TBD
+
+Now we launch the CoverMaker python script by going to Plugins -> Examples -> CoverMaker -> Cover Maker. (Or typing 'l' and searching with keyword 'cover').
 
 A basic dialog box will appear prompting us to select the image database by clicking on '''Browse''' and locating in the file system the [[#Databases|tif file]] containing down-sampled images. The tif file is called 12_9.tif indicating that the images have been scaled to the 12x9 pixel dimension. This is the default tile size. If you use a different database with different aspect ratio please change the default '''tile width and height''' in the dialog box.
 
