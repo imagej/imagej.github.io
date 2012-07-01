@@ -30,7 +30,7 @@
 
 * We wanted to have the [[Balloon]] segmentation plugin in Fiji for a long time and our request for the source code pushed the corresponding Nature Methods paper<ref>{{cite journal|author=Federici Fernán, Dupuy Lionel, Laplaze Laurent, Heisler Marcus, Haseloff Jim.|title=Integrated genetic and computation methods for in planta cytometry|journal=Nature Methods |year=2012 |volume= advance online publication |url=http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1940.html}}</ref> forward. Thanks Lionel Dupuy!
 
-* The [[Elastic Alignment and Montage|elastic alignment method]] available in Fiji and [[TrakEM2]] has been published in [http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2072.html Nature Methods].<ref>{{cite journal|author=Stephan Saalfeld, Richard Fetter, Albert Cardona, and Pavel Tomancak|year=Epub ahead of print 10 June 2012|title=Elastic volume reconstruction from series of ultra-thin microscopy sections|journal=Nature Methods|url=http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2072.html|doi=10.1038/nmeth.2072}}</ref>
+* The [[Elastic Alignment and Montage|elastic alignment method]] available in Fiji and [[TrakEM2]] has been published in [http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2072.html Nature Methods].<ref>{{cite journal|author=Stephan Saalfeld, Richard Fetter, Albert Cardona, and Pavel Tomancak|year=2012|title=Elastic volume reconstruction from series of ultra-thin microscopy sections|journal=Nature Methods|volume=9(7)|url=http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2072.html|doi=10.1038/nmeth.2072}}</ref>
 
 == References ==
 
