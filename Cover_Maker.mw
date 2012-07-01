@@ -153,7 +153,7 @@ When we zoom in on the final output image that was generated in this case at 300
 
 == Prepare CoverMaker Database ==
 
-In many ways preparing the image databases is a trickier business than actually performing the reconstruction. The aim of the '''Prepare_CoverMaker_Database.py''' script (Plugins -> Examples -> Cover Maker -> Prepare Cover Maker Datanase) is to explore your local filesystem for RGB images that could be used to build a database. As many things can go wrong in the process, it should be considered experimental.
+In many ways preparing the image databases is a trickier business than actually performing the reconstruction. The aim of the '''Prepare_CoverMaker_Database.py''' script (Plugins -> Examples -> Cover Maker -> Prepare Cover Maker Database) is to explore your local filesystem for RGB images that could be used to build a database. As many things can go wrong in the process, it should be considered experimental.
 
 === Input/Search/Output ===
 
