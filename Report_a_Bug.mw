@@ -10,7 +10,7 @@
 }}
 == Report a Bug ==
 
-To be able to track issues better, the Fiji project has a [http://pacific.mpi-cbg.de/bugzilla BugZilla] instance. However, BugZilla's user interface can be quite intimidating to somebody who just wants to report a bug. Therefore, Fiji offers an easier way to report a bug:
+To be able to track issues better, the Fiji project has a [http://fiji.sc/bugzilla BugZilla] instance. However, BugZilla's user interface can be quite intimidating to somebody who just wants to report a bug. Therefore, Fiji offers an easier way to report a bug:
 
 [[Image:Report_a_Bug-menu.jpg]]
 
