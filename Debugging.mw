@@ -193,6 +193,12 @@ if (dialog.getDirectory() != null) {
 }
 </source>
 
+= Debugging Swing (Event Dispatch Thread) issues =
+
+Swing does not allow us to call all the methods on all UI objects from wherever we want. Some things, such as ''setVisible(true)'' or ''pack()'' need to be called on the Event Dispatch Thread (AKA EDT). See Sun's [http://java.sun.com/products/jfc/tsc/articles/threads/threads1.html detailed explanation] as to why this is the case.
+
+There are a couple of ways to test for such EDT violations, see [http://weblogs.java.net/blog/alexfromsun/archive/2006/02/debugging_swing.html this blog post by Alexander Potochkin] (current versions of debug.jar can be found [http://java.net/projects/swinghelper/sources/svn/show/trunk/www/bin here]).
+
 = Debugging Java3D issues =
 
 When Java3D does not work, the first order of business is to use ''Plugins>Utilities>Debugging>Test Java3D''. If this shows a rotating cube, but the [[3D Viewer]] does not work, please click on ''Help>Java3D
