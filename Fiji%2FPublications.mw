@@ -32,6 +32,10 @@
 
 * The [[Elastic Alignment and Montage|elastic alignment method]] available in Fiji and [[TrakEM2]] has been published in [http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2072.html Nature Methods].<ref>{{cite journal|author=Stephan Saalfeld, Richard Fetter, Albert Cardona, and Pavel Tomancak|year=2012|title=Elastic volume reconstruction from series of ultra-thin microscopy sections|journal=Nature Methods|volume=9(7)|url=http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2072.html|doi=10.1038/nmeth.2072}}</ref>
 
+* A commentary by Albert Cardona and Pavel Tomancak discusses the impact and problems open source software development faces in academia<ref>{{cite journal |author=Albert Cardona and Pavel Tomancak|title=Current challenges in open-source bioimage informatics|journal=Nature Methods |year=2012 |volume= 9(7)|pages=661–665|url=http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2082.html}}</ref>.
+
+* A review of biological imaging software tools focusses on open source programs and Fiji is a big part of it<ref>{{cite journal |author=Kevin W Eliceiri, Michael R Berthold, Ilya G Goldberg, Luis Ibàñez, B S Manjunath, Maryann E Martone, Robert F Murphy, Hanchuan Peng, Anne L Plant, Badrinath Roysam, Nico Stuurmann, Jason R Swedlow, Pavel Tomancak & Anne E Carpenter|title=Biological imaging software tools|journal=Nature Methods |year=2012 |volume= 9(7)|pages=697–710|url=http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2084.html}}</ref>.
+
 == References ==
 
 <references />
