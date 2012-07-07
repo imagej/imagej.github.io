@@ -62,4 +62,39 @@ See the [http://oprofile.sourceforge.net/doc/ OProfile manual] for more informat
 
 You might find [http://developer.apple.com/tools/sharkoptimize.html Shark 4] useful if you're on MacOSX.
 
+= Memory profiling =
+
+Even if Java's memory management prevents most memory issues (unaligned writes, access to uninitialized/released memory), there is a chance of memory leaks: constant accumulation of objects over time, most likely because there are stale references to them.
+
+Note: ''heap'' is Java speak for ''memory''.
+
+== Javassist-based ==
+
+A quite versatile method is to use (and possibly modify) the class [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/fiji-compat/src/main/java/fiji/MemoryProfiler.java;hb=master fiji.MemoryProfiler] in ''fiji-compat.jar''.
+
+This memory profiler instruments all method entries and exists using javassist. At each exit, it reports the relative memory usage, the total memory usage, and the exit point of the current method. Call it like this:
+
+<source lang="bash">
+./fiji --main-class fiji.MemoryProfiler fiji.Main
+</source>
+
+Since the memory profiling slows down execution dramatically due to the synchronous output to stderr, you may want to limit the classes to be instrumented by setting the environment variable ''MEMORY_PROFILE_ONLY'' to a space-delimited list of classes.
+
+If you want to instrument any class handled by [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/fiji-compat/src/main/java/fiji/IJHacker.java;hb=master fiji.IJHacker], you need to use the slightly more complicated command line:
+
+<source lang="bash">
+./fiji -Dpatch.ij1=false --cp jars/javassist.jar --cp jars/fiji-compat.jar \
+	--cp jars/ij.jar --main-class fiji.MemoryProfiler -- ij.ImageJ
+</source>
+
+== Using JVisualVM ==
+
+JDK6 and newer come with a quite useful tool called ''jvisualvm''. It is in the ''bin/'' directory of the Java Development Kit (it does not come with the JRE, also known as ''Java Runtime Environment'').
+
+JVisualVM lets you attach to any local Java process and inspect the state. The most useful parts for memory profiling are the ''Memory'' section in the ''Monitor'' tab, showing the overall heap usage (where you can also make a Heap Dump which produces a double-clickable list of objects and their references), and the ''Memory'' button on the ''Sampler'' tab, which opens kind of a live version of the Heap Dump.
+
+When looking at a Heap Dump, make sure you click on the ''Classes'' button in the top row. This shows the list of classes that currently have referenced instances in the Java Virtual Machine. Double-clicking on the class name will open a detailed list of instances of that class, and when clicking on one item in that list, the upper right panel will show that instance's fields while the lower right panel will show the objects holding references to that particular instance.
+
+Note: at no time will JVisualVM stop the virtual machine it is attached to, so if the issues you experience are time-sensitive, you definitely want to put stop-gaps into the code to be able to look at things closely.
+
 [[Category:Development]]
