@@ -23,8 +23,6 @@ A few tips:
 
 = New accounts =
 
-The Fiji team does not have time to monitor the Wiki closely, and rather wants to spend that time to enhance Fiji and this Wiki instead.
-
-For this reason, we have a simple policy: to get an account, you need to ask personally someone who already has an account, and who then should click [{{SERVER}}/wiki/index.php?title=Special:Userlogin&type=signup this link] to create an account for you. That someone should use your surname as login, put in your full name, add a bogus password, repeat that bogus password and then click the ''by email'' button.
+You will need to register by email; just click on [{{SERVER}}/wiki/index.php?title=Special:Userlogin&type=signup this link] and submit the form. Note that you need to specify a valid email address because a link will be sent there.
 
 [[Category:Help]]
