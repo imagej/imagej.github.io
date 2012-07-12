@@ -514,7 +514,6 @@
 === Plugins > SPIM Registration ===
 
 * [[Bead-based registration]] - file <tt>fiji.plugin.Bead_Registration</tt>  -- ''java jar file''
-* [[Multi-view deconvolution]] - file <tt>fiji.plugin.Multi_View_Deconvolution</tt>  -- ''java jar file''
 * [[Multi-view fusion]] - file <tt>fiji.plugin.Multi_View_Fusion</tt>  -- ''java jar file''
 
 ==== Plugins > SPIM Registration > Utilities ====
