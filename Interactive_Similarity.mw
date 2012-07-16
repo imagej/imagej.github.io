@@ -3,7 +3,7 @@
 | software               = Fiji
 | author                 = Stephan Saalfeld
 | maintainer             = Stephan Saalfeld
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=Transform_Similarity.java;h=4b81bf292bde578020bf78e520ea171bfef2e69f;hb=HEAD  on gitweb]
+| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=Transform_Similarity.java in gitweb]
 | released               = November 22<sup>th</sup>, 2008
 | latest version         = December 15<sup>th</sup>, 2008
 | status                 = stable
