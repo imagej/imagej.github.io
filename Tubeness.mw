@@ -4,7 +4,8 @@
 | author                 = Mark Longair, Stephan Preibisch
 | maintainer             = Mark Longair
 | filename               = VIB_.jar
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=VIB.git;a=blob;f=features/Tubeness_.java;hb=HEAD on gitweb] status                 = stable
+| source                 = {{GitLink|jar=VIB_|path=features/Tubeness_.java}}
+| status                 = stable
 }}
 
 Documentation for the Tubeness plugin can be found here: http://homepages.inf.ed.ac.uk/s9808248/imagej/tubeness/
