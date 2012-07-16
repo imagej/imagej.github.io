@@ -3,13 +3,12 @@
 | software               = ImageJ
 | author                 = Johannes Schindelin
 | maintainer             = Johannes Schindelin
-| filename               = [http://pacific.mpi-cbg.de/update/plugins/Tutorial_Maker.jar-20090721160531 Tutorial_Maker.jar]
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Tutorial_Maker;hb=HEAD fiji.git]
+| filename               = [http://fiji.sc/update/plugins/Tutorial_Maker.jar-20090721160531 Tutorial_Maker.jar]
+| source                 = {{GitLink|jar=Tutorial_Maker}}
 | released               = July 2009
 | latest version         = July 2009
 | status                 = beta
 | category               = [[:Category:Plugins|Plugins]]
-| website                = http://pacific.mpi-cbg.de
 }}
 
 
