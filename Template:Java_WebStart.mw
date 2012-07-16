@@ -2,7 +2,7 @@
 
 Fiji provides two WebStart versions:
 
-* [http://pacific.mpi-cbg.de/webstart/Fiji-stable.jnlp stable], which has the same versions of the plugins as the [[Fiji Updater]] would provide, and
-* [http://pacific.mpi-cbg.de/webstart/Fiji.jnlp current], which follows the cutting-edge of Fiji's [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git source code repository].
+* [http://fiji.sc/webstart/Fiji-stable.jnlp stable], which has the same versions of the plugins as the [[Fiji Updater]] would provide, and
+* [http://fiji.sc/webstart/Fiji.jnlp current], which follows the cutting-edge of Fiji's [http://fiji.sc/fiji.git source code repository].
 
 Both are updated every night (to be precise, some time after 04:15 central European time).
