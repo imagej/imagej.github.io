@@ -3,7 +3,7 @@
 | software               = ImageJ
 | author                 = Jean-Yves Tinevez
 | maintainer             = Jean-Yves Tinevez ([mailto:tinevez_at_mpi-cbg_dot_de tinevez_at_mpi-cbg_dot_de])
-| filename               = [http://pacific.mpi-cbg.de/tinevez/PIV_analyser.jar PIV_analyser.jar]
+| filename               = [http://fiji.sc/tinevez/PIV_analyser.jar PIV_analyser.jar]
 | source                 = 
 | released               = 18 April 2009
 | latest version         = v1.2 (20 April 2009)
@@ -146,7 +146,7 @@ frame couples at once, depending how many CPUs it can find.
 
 
 The image to the right is made of 2000 small gaussian blobs (sigma=1), spawned randomly 
-(you can get the original file [http://pacific.mpi-cbg.de/tinevez/testpiv3.tif here]). The 
+(you can get the original file [http://fiji.sc/tinevez/testpiv3.tif here]). The 
 second frame was obtained by adding a shift to each blob, given by:
 
 * &Delta;Y = &alpha; &times; (X-Xm)
@@ -184,7 +184,7 @@ Image:Internal wave-fd.png|Result from analysis
 
 === ImageJ ===
 
-Download the jar file [http://pacific.mpi-cbg.de/tinevez/PIV_analyser.jar PIV_analyser.jar] 
+Download the jar file [http://fiji.sc/tinevez/PIV_analyser.jar PIV_analyser.jar] 
 and drop it into the ''plugins'' menu. The plugin will appear in the ''Plugins > Optic Flow > PIV analyser'' menu.
 
 === Fiji ===
