@@ -3,7 +3,7 @@
 | software               = Fiji
 | author                 = Stephan Saalfeld
 | maintainer             = Stephan Saalfeld
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=Transform_MovingLeastSquaresMesh.java;h=ea1e461b85046dcb84a75c0791b9d3506d85c219;hb=HEAD on gitweb]
+| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=Transform_MovingLeastSquaresMesh.java;hb=master on gitweb]
 | released               = July 18, 2008
 | latest version         = May 26, 2009
 | status                 = stable, active
