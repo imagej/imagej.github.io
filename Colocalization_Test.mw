@@ -4,7 +4,7 @@
 | author                 = Tony Collins (and others?)
 | maintainer             = [mailto:white_at_mpi-cbg_dot_de Dan White]
 | filename               = Colocalization.jar
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob_plain;f=src-plugins/Colocalisation_Analysis/Colocalisation_Test.java;hb=HEAD Colocalisation_Test.java on gitweb] , modified from [http://www.macbiophotonics.ca/ MBF]
+| source                 = {{GitLink|jar=Colocalisation_Analysis|path=Colocalisation_Test.java}}, modified from [http://www.macbiophotonics.ca/ MBF]
 | latest version         = june 2009
 | website                = [http://www.macbiophotonics.ca/imagej/colour_analysis.htm#6.2%20Colocalisation%20Test MBF ImageJ manual]
 | status                 = <span style="color:red">Deprecated, use [[Coloc 2]] instead.</span>
