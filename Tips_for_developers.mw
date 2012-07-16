@@ -113,10 +113,10 @@ You might need to adjust the bounding box if the second plot does not match the 
 
 == Duplicate, or convert between, ''ImageProcessor'' types ==
 
-The ''ImageProcessor'' class has several useful methods: [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html#duplicate() duplicate()], [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html#convertToByte(boolean) convertToByte()], [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html#convertToFloat() convertToFloat()],
-[http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html#convertToRGB() convertToRGB()], and [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html#convertToShort(boolean) convertToShort()].
+The ''ImageProcessor'' class has several useful methods: [http://fiji.sc/javadoc/ij/process/ImageProcessor.html#duplicate() duplicate()], [http://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToByte(boolean) convertToByte()], [http://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToFloat() convertToFloat()],
+[http://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToRGB() convertToRGB()], and [http://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToShort(boolean) convertToShort()].
 
-This [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html class] also has some other goodies, such as methods for convolution.
+This [http://fiji.sc/javadoc/ij/process/ImageProcessor.html class] also has some other goodies, such as methods for convolution.
 
 == How to store settings persistently ==
 
