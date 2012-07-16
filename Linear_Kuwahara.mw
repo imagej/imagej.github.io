@@ -3,7 +3,7 @@
 | name                   = Linear Kuwahara
 | maintainer             = Christian Tischer
 | author                 = Christian Tischer
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Linear_Kuwahara/Kuwahara_LinearStructure_Filter_v3.java;hb=refs/heads/master in gitweb]
+| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Linear_Kuwahara/src/main/java/Kuwahara_LinearStructure_Filter_v3.java in gitweb]
 | released               = 08/10/2010
 | latest version         = 08/10/2010
 | status                 = 
