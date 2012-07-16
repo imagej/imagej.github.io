@@ -257,7 +257,7 @@ IJ.showStatus(“Hello, world!”);
 
 == Frequently used operators ==
 
-The [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html ''ImageProcessor''] class has a few methods such as ''smooth()'', ''sharpen()'', ''findEdges()'', etc
+The [http://fiji.sc/javadoc/ij/process/ImageProcessor.html ''ImageProcessor''] class has a few methods such as ''smooth()'', ''sharpen()'', ''findEdges()'', etc
 
 '''Tip:''' use the Script Editor's functions in the ''Tools'' menu:
 * ''Open Help for Class...'' (opens the JavaDoc for a class in a browser),
@@ -266,7 +266,7 @@ The [http://pacific.mpi-cbg.de/javadoc/ij/process/ImageProcessor.html ''ImagePro
 
 == Plots ==
 
-You can show a plot window very easily using the [http://pacific.mpi-cbg.de/javadoc/ij/gui/Plot.html ''Plot''] class:
+You can show a plot window very easily using the [http://fiji.sc/javadoc/ij/gui/Plot.html ''Plot''] class:
 
 <source lang="java">
 void plot(double[] values) {
@@ -293,7 +293,7 @@ void plot(double[] values, double[] values2) {
 }
 </source>
 
-To update the contents of a plot window, remember the return value of ''plot.show()'' which is a [http://pacific.mpi-cbg.de/javadoc/ij/gui/PlotWindow.html ''PlotWindow''], and use its ''drawPlot()'' method:
+To update the contents of a plot window, remember the return value of ''plot.show()'' which is a [http://fiji.sc/javadoc/ij/gui/PlotWindow.html ''PlotWindow''], and use its ''drawPlot()'' method:
 
 <source lang="java">
 void plot(double[] values) {
