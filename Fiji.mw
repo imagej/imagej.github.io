@@ -12,7 +12,7 @@ The main focus of Fiji is to assist research in life sciences.
 
 For [[Fiji Usage|users]], Fiji is [[Downloads|easy to install]] and has an automatic update function, bundles a [[:Category:Plugins|lot of plugins]] and offers comprehensive [[documentation]].
 
-For [[Developing_Fiji|developers]], Fiji is an open source project hosted in a [[Git for dummies|Git version control]] [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi repository], with access to the source code of all internals, libraries and plugins, and eases the [[Developing_Fiji|development]] and [[:Category:Scripting|scripting]] of plugins.
+For [[Developing_Fiji|developers]], Fiji is an open source project hosted in a [[Git for dummies|Git version control]] [http://fiji.sc/cgi-bin/gitweb.cgi repository], with access to the source code of all internals, libraries and plugins, and eases the [[Developing_Fiji|development]] and [[:Category:Scripting|scripting]] of plugins.
 
 <b>[[Downloads|Download Fiji now]]</b>&nbsp;&nbsp;[[Image:Yada.png|middle|link=Downloads]]
 
@@ -94,4 +94,4 @@ See the [[Downloads]] page for debian packages and others.
 
 Fiji is released under the General Public License.
 
-Each component has [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=LICENSES;hb=HEAD its own license].
+Each component has [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=LICENSES;hb=HEAD its own license].
