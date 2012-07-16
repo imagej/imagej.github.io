@@ -3,7 +3,7 @@
 | name                   = Shepp-Logan Phantom
 | maintainer             = Philippe Thévenaz
 | author                 = Philippe Thévenaz
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/SheppLogan_/SheppLogan_.java;hb=refs/heads/master in gitweb]
+| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/SheppLogan_/src/main/java/SheppLogan_.java in gitweb]
 | released               = 16/09/2010
 | latest version         = 16/09/2010
 | status                 = 
