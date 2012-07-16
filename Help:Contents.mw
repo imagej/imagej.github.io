@@ -6,7 +6,7 @@ Alternatively, you might want to look in [[IRC]] for other users and developers 
 
 For video tutorials, please see our [http://youtube.com/fijichannel YouTube channel].
 
-If you encounter a bug, please consider taking some time to [http://pacific.mpi-cbg.de/bugzilla/ report a bug via web] (a simple version is available in Fiji itself, in ''Help>Report a Bug'') and test our fixes.  Remember: Fiji is a community effort, and it will be as good as you make it.
+If you encounter a bug, please consider taking some time to [http://fiji.sc/bugzilla/ report a bug via web] (a simple version is available in Fiji itself, in ''Help>Report a Bug'') and test our fixes.  Remember: Fiji is a community effort, and it will be as good as you make it.
 
 = Getting help regarding the Fiji Wiki =
 
@@ -14,7 +14,7 @@ If you look for help editing this Wiki, please look [http://www.mediawiki.org/wi
 
 A few tips:
 
-* to be able to edit a page, you need to log in. If you do not have a Fiji Wiki account yet, [http://pacific.mpi-cbg.de/wiki/index.php?title=Special:Userlogin&type=signup ask an existing user to create one for you] (there is an option to do that by sending an email to you).
+* to be able to edit a page, you need to log in. If you do not have a Fiji Wiki account yet, [http://fiji.sc/wiki/index.php?title=Special:Userlogin&type=signup register via email].
 * to edit a new page, just enter the title in the search box; there will be a red link you can follow to edit the page.
 * there are keyboard shortcuts available for ''Preview'' (Alt+P), ''Cancel'' (Alt+C) and ''Save Page'' (Alt+S). You can also jump between the main text and the summary with Tab and Shift+Tab. '''Note:''' the shortcut for ''Show Changes'' is Alt+V (<u>not</u> C!).
 * With Safari on MacOSX, the shortcuts are available through Ctrl+Alt+<key>
