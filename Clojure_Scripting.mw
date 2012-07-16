@@ -490,7 +490,7 @@ The above works with both single images and stacks.
 
 With [[Imglib]], pixels are stored in native arrays of primitives such as int, float, double, etc. (or other more interesting forms, such as [http://download.oracle.com/javase/1.5.0/docs/api/java/awt/Shape.html Shape]. Such pixels are accessed with intermediate proxy objects that the JIT is able to completely remove out of the way.
 
-From Clojure, there are many ways in which to access the pixels. Here we list some examples of the pixels accessed as a Collection of accessor [http://pacific.mpi-cbg.de/javadoc/mpicbg/imglib/type/Type.html Type] objects.
+From Clojure, there are many ways in which to access the pixels. Here we list some examples of the pixels accessed as a Collection of accessor [http://fiji.sc/javadoc/mpicbg/imglib/type/Type.html Type] objects.
 
 
 === Multiply each pixel by 0.5 ===
@@ -562,15 +562,15 @@ The above, though, is unbearably verbose. A high-level access to the images enab
     (.show (ImgLib/wrap copy)))
 </source>
 
-What's more, the [http://pacific.mpi-cbg.de/javadoc/script/imglib/math/Compute.html Compute]/inFloats method runs in parallel, with as many processors as your machine has cores. If you'd rather not execute the operation in parallel, add the desired number of threads as an argument to <i>inFloats</i>.
+What's more, the [http://fiji.sc/javadoc/script/imglib/math/Compute.html Compute]/inFloats method runs in parallel, with as many processors as your machine has cores. If you'd rather not execute the operation in parallel, add the desired number of threads as an argument to <i>inFloats</i>.
 
-All mathematical operations listed in java.lang.Math have a corresponding constructor for execution in Compute/inFloats. See the documentation for the [http://pacific.mpi-cbg.de/javadoc/script/imglib/math/package-frame.html script.imglib.math package].
+All mathematical operations listed in java.lang.Math have a corresponding constructor for execution in Compute/inFloats. See the documentation for the [http://fiji.sc/javadoc/script/imglib/math/package-frame.html script.imglib.math package].
 
 === Normalize an image ===
 
 Assumes that <i>(IJ/getImage)</i> returns a 32-bit, float image. If that is not the case, convert the image to a float image first.
 
-The example below creates a new result image. The original image is untouched. This is accomplished with minimal friction but best performance (like hand-coded with cursors or better) by using the high-level scripting library of imglib, and the [http://pacific.mpi-cbg.de/javadoc/script/imglib/math/Compute.html Compute]/inFloats method.
+The example below creates a new result image. The original image is untouched. This is accomplished with minimal friction but best performance (like hand-coded with cursors or better) by using the high-level scripting library of imglib, and the [http://fiji.sc/javadoc/script/imglib/math/Compute.html Compute]/inFloats method.
 
 <source lang="clojure">
 (ns test.imglib
@@ -779,12 +779,12 @@ See [[Scripting Help]] for more details, including how to use the built-in dynam
 == Example Clojure plugins included in Fiji ==
 Open the plugins/Examples/ folder in Fiji installation directory. You'll find three Clojure examples:
 
-* [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Multithreaded_Image_Processing.clj;hb=HEAD Multithreaded_Image_Processing.clj]: illustrate, with macros (via [http://clojure.org/macros#toc9 defmacro]), how to automatically multithread the processing of an image using arbitrary subdivision of the image, such as one line per thread, for as many threads as cores the CPU has.
-* [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/blend_two_images.clj;hb=HEAD blend_two_images.clj]: illustrates how to open two images from an URL, and blend the gray image into each channel of the color image.
-* [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/celsius_to_fahrenheit.clj;hb=HEAD celsius_to_fahrenheit.clj]: illustrates the usage of a Swing GUI, and how to instantiate anonymous classes from an interface (via [http://clojure.org/java_interop#toc20 proxy] Clojure function). This example is taken from the [http://clojure.org/jvm_hosted Clojure website].
-* [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/random_noise_example.clj;hb=HEAD random_noise_example.clj]: illustrates how to declare a function inside a closure (for private access to, in this case, a unique instance of a random number generator), and then fill all pixels of a ByteProcessor image with a random byte value.
-* [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Command_Launchers/Command_Launcher_Clojure.clj;hb=HEAD Command_Launcher_Clojure.clj]: illustrates how to create a GUI with a KeyListener, so that the typed text changes color from red to black when it matches the name of an ImageJ command. This example is also under the [[Scripting comparisons]], along equivalent versions written in Java, [[Jython Scripting|Jython]], [[Javascript_Scripting|Javascript]] and [[JRuby_Scripting|JRuby]].
-* [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Analyze/Dynamic_ROI_Profiler.clj;hb=HEAD Dynamic ROI Profiler]: illustrates how to add a MouseMotionListener and a WindowListener to an ImageWindow of an open image. Reads out the ROI (Region Of Interest), and if it's a line, polyline or rectangle, plots the profile of pixel intensity along the line. As the mouse moves or edits the ROI on the image, the profile is updated.
+* [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Multithreaded_Image_Processing.clj;hb=HEAD Multithreaded_Image_Processing.clj]: illustrate, with macros (via [http://clojure.org/macros#toc9 defmacro]), how to automatically multithread the processing of an image using arbitrary subdivision of the image, such as one line per thread, for as many threads as cores the CPU has.
+* [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/blend_two_images.clj;hb=HEAD blend_two_images.clj]: illustrates how to open two images from an URL, and blend the gray image into each channel of the color image.
+* [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/celsius_to_fahrenheit.clj;hb=HEAD celsius_to_fahrenheit.clj]: illustrates the usage of a Swing GUI, and how to instantiate anonymous classes from an interface (via [http://clojure.org/java_interop#toc20 proxy] Clojure function). This example is taken from the [http://clojure.org/jvm_hosted Clojure website].
+* [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/random_noise_example.clj;hb=HEAD random_noise_example.clj]: illustrates how to declare a function inside a closure (for private access to, in this case, a unique instance of a random number generator), and then fill all pixels of a ByteProcessor image with a random byte value.
+* [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Command_Launchers/Command_Launcher_Clojure.clj;hb=HEAD Command_Launcher_Clojure.clj]: illustrates how to create a GUI with a KeyListener, so that the typed text changes color from red to black when it matches the name of an ImageJ command. This example is also under the [[Scripting comparisons]], along equivalent versions written in Java, [[Jython Scripting|Jython]], [[Javascript_Scripting|Javascript]] and [[JRuby_Scripting|JRuby]].
+* [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Analyze/Dynamic_ROI_Profiler.clj;hb=HEAD Dynamic ROI Profiler]: illustrates how to add a MouseMotionListener and a WindowListener to an ImageWindow of an open image. Reads out the ROI (Region Of Interest), and if it's a line, polyline or rectangle, plots the profile of pixel intensity along the line. As the mouse moves or edits the ROI on the image, the profile is updated.
 
 <h1>Appendix</h1>
 
