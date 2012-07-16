@@ -4,7 +4,7 @@
 | software               = Fiji
 | author                  = [[User:Iarganda | Ignacio Arganda-Carreras]], Stephan Saalfeld, Johannes Schindelin
 | maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Siox_Segmentation;h=669134e98cc4e098f4eca63d0a12962535181e64;hb=d451306e290fb55a31052cbfc5426eaa70df17d6 on gitweb]
+| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Siox_Segmentation;h=669134e98cc4e098f4eca63d0a12962535181e64;hb=d451306e290fb55a31052cbfc5426eaa70df17d6 on gitweb]
 | released               = November 6<sup>th</sup>, 2009
 | latest version         = March 3<sup>rd</sup>, 2010
 | status                 = stable, active
@@ -119,8 +119,8 @@ The segmentator will be applied to the selected image or stack and the result wi
 
 ==API documentation==
 The latest documentation of the package can be found here:
-* For the SIOX plugin: [http://pacific.mpi-cbg.de/javadoc/siox/package-summary.html http://pacific.mpi-cbg.de/javadoc/siox/package-summary.html] 
-* For the SIOX library: [http://pacific.mpi-cbg.de/javadoc/org/siox/package-summary.html http://pacific.mpi-cbg.de/javadoc/org/siox/package-summary.html]
+* For the SIOX plugin: [http://fiji.sc/javadoc/siox/package-summary.html http://fiji.sc/javadoc/siox/package-summary.html] 
+* For the SIOX library: [http://fiji.sc/javadoc/org/siox/package-summary.html http://fiji.sc/javadoc/org/siox/package-summary.html]
 
 ==References==
 Most Comprehensive Work:
@@ -141,7 +141,7 @@ Thanks to Wayne Rasband, there is an [http://rsb.info.nih.gov/ij/plugins/siox/in
 [http://rsb.info.nih.gov/ij/plugins/siox/index.html http://rsb.info.nih.gov/ij/plugins/siox/index.html]
 
 ==Licenses==
-The [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Siox_Segmentation/org;h=902e7e0379b36f7f03b512552fb899861d866fa9;hb=d451306e290fb55a31052cbfc5426eaa70df17d6 SIOX Java library] developed by [http://www.gerald-friedland.org/ Gerald Friedland], [http://www.inf.fu-berlin.de/~jantz Kristian Jantz] and [http://www.inf.fu-berlin.de/~knipping Lars Knipping] is licensed under the '''Apache License''', Version 2.0 (the "License"): [http://www.apache.org/licenses/LICENSE-2.0 http://www.apache.org/licenses/LICENSE-2.0]. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+The [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Siox_Segmentation/org;h=902e7e0379b36f7f03b512552fb899861d866fa9;hb=d451306e290fb55a31052cbfc5426eaa70df17d6 SIOX Java library] developed by [http://www.gerald-friedland.org/ Gerald Friedland], [http://www.inf.fu-berlin.de/~jantz Kristian Jantz] and [http://www.inf.fu-berlin.de/~knipping Lars Knipping] is licensed under the '''Apache License''', Version 2.0 (the "License"): [http://www.apache.org/licenses/LICENSE-2.0 http://www.apache.org/licenses/LICENSE-2.0]. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 The Fiji plugin GUI, developed by [http://bioweb.cnb.csic.es/~iarganda/index_EN.html Ignacio Arganda-Carreras], [http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld] and [[User:Schindelin|Johannes Schindelin]] is free software; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
