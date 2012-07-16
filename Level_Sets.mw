@@ -5,7 +5,7 @@
 | author                 = Erwin Frise
 | maintainer             = Erwin Frise
 | filename               =  
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/level_sets/levelsets;hb=HEAD on gitweb]
+| source                 = {{GitLink|jar=level_sets}}
 | released               = August 2008
 | latest version         = April 2009
 | status                 = active
