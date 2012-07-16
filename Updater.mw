@@ -3,7 +3,7 @@
 | software               = Fiji
 | author                 = Johannes Schindelin, Yap Chin Kiet (Google Summer of Code 2009)
 | maintainer             = Johannes Schindelin
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Fiji_Updater;hb=HEAD gitweb]
+| source                 = {{GitLink|jar=Fiji_Updater}}
 | released               = 10 Oct 2008
 | latest version         = 14 Jun 2010
 | status                 = beta
