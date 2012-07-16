@@ -66,7 +66,7 @@ If you were using RGBALegacyType, note that it has changed to ARGBType, but serv
 
 == Use net.imglib2.display.Projector instead of mpicbg.imglib.image.display.Display ==
 
-The Display class and corresponding packages are no longer applicable to ImgLib2. Instead, create a Projector. See the [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=imglib.git;a=blob;f=imglib2/ui/src/main/java/net/imglib2/ui/ImgPanel.java;hb=refs/heads/master ImgPanel] class in the imglib-ui project for an example.
+The Display class and corresponding packages are no longer applicable to ImgLib2. Instead, create a Projector. See the [http://fiji.sc/cgi-bin/gitweb.cgi?p=imglib.git;a=blob;f=imglib2/ui/src/main/java/net/imglib2/ui/ImgPanel.java;hb=refs/heads/master ImgPanel] class in the imglib-ui project for an example.
 
 == Additional issues ==
 
