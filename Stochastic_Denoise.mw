@@ -3,7 +3,7 @@
 | name                   = Stochastic Denoise
 | maintainer             = [mailto:funke@phys.ini.ethz.ch Jan Funke]
 | author                 = Jan Funke
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=shortlog;h=refs/heads/stochastic-denoise on git web]
+| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=shortlog;h=refs/heads/stochastic-denoise on git web]
 | released               = 11/10/2010
 | latest version         = 11/10/2010
 | status                 = experimental
