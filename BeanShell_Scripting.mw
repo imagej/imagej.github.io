@@ -4,7 +4,7 @@
 | author                 = Johannes Schindelin
 | maintainer             = Johannes Schindelin
 | filename               = BSH_Interpreter.jar
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/BeanShell_Interpreter/BSH/BSH_Interpreter.java;hb=HEAD on gitweb]
+| source                 = {{GitLink|jar=BeanShell_Interpreter|path=BSH/BSH_Interpreter.java}}
 | status                 = stable
 }}
 
