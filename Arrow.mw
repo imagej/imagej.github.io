@@ -3,7 +3,7 @@
 | name                   = Arrow
 | author                 = Jean-Yves Tinevez & Johannes Schindelin
 | maintainer             = [mailto:jean-yves.tinevez@pasteur.fr Jean-Yves Tinevez]
-| source                 = in [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Arrow_/fiji/util;hb=HEAD git]
+| source                 = {{GitLink|jar=Arrow_}}
 | released               = December 2009
 | latest version         = December 2009
 | status                 = stable, active
@@ -16,7 +16,7 @@
 
 This version replaces the old <code>Arrow_.class</code> tool that was present in Fiji before. The main changes are the ability to draw the arrow as a floating selection, and to tune its shape. 
 
-Warning: Since <code>ImageJ version 1.43n</code>, a similar tool, made by Wayne Rasband, does a similar thing from the ImageJ core, see [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=imagej.git;a=blob;f=ij/gui/Arrow.java;hb=HEAD here].
+Warning: Since <code>ImageJ version 1.43n</code>, a similar tool, made by Wayne Rasband, does a similar thing from the ImageJ core, see {{GitLink|repository=ImageJA|path=ij/gui/Arrow.java|label=here}}.
 
 
 == Usage ==
