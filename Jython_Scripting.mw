@@ -526,7 +526,7 @@ Notice we used:
 
 Suppose you have a 4D multicolor image, and want to obtain a stack of slices corresponding to a specific color channel and time frame.
 
-The [http://pacific.mpi-cbg.de/javadoc/ij/CompositeImage.html CompositeImage] is a stack whose slices are interpreted as belonging to specific color channels, Z slices and time frames. To find out which slice corresponds to what, use the <i>getStackIndex</i> method of the [http://pacific.mpi-cbg.de/javadoc/ij/ImagePlus.html ImagePlus], which translates between color channels, z slices and time frames to the slice index in the underlying [http://pacific.mpi-cbg.de/javadoc/ij/ImageStack.html ImageStack].
+The [http://fiji.sc/javadoc/ij/CompositeImage.html CompositeImage] is a stack whose slices are interpreted as belonging to specific color channels, Z slices and time frames. To find out which slice corresponds to what, use the <i>getStackIndex</i> method of the [http://fiji.sc/javadoc/ij/ImagePlus.html ImagePlus], which translates between color channels, z slices and time frames to the slice index in the underlying [http://fiji.sc/javadoc/ij/ImageStack.html ImageStack].
 
 <source lang="python">
 from ij import IJ, ImagePlus, ImageStack
@@ -1527,17 +1527,17 @@ Notice, though, that <b>you don't need to do the .jar packaging at all</b>. Just
 
 = Jython examples in Fiji =
 
-*[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Find_Dimension_of_Raw_Image.py;hb=HEAD Find Dimension of Raw Image]
-*[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Edit_LUT_As_Text.py;hb=HEAD Edit LUT As Text]
-*[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Delayed_Snapshot.py;hb=HEAD Delayed Snapshot]
-*[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Command_Launchers/Command_Launcher_Python.py;hb=HEAD Command Launcher GUI]
-*[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/list_all_threads.py;hb=HEAD List all threads]
-*[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/chess_.py;hb=HEAD Chess]
+*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Find_Dimension_of_Raw_Image.py;hb=HEAD Find Dimension of Raw Image]
+*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Edit_LUT_As_Text.py;hb=HEAD Edit LUT As Text]
+*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Delayed_Snapshot.py;hb=HEAD Delayed Snapshot]
+*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Command_Launchers/Command_Launcher_Python.py;hb=HEAD Command Launcher GUI]
+*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/list_all_threads.py;hb=HEAD List all threads]
+*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/chess_.py;hb=HEAD Chess]
 
-*[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/extract_stack_under_arealist.py;hb=HEAD Extract stack under AreaList] in TrakEM2.
-*[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/T2_set_all_transforms_to_identity.py;hb=HEAD Set all transforms to identity] for TrakEM2 objects.
-*[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/T2_Select_All.py;hb=HEAD Select All] objects in TrakEM2.
-*[http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/Measure_AreaLists.py;hb=HEAD Measure AreaList] in TrakEM2.
+*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/extract_stack_under_arealist.py;hb=HEAD Extract stack under AreaList] in TrakEM2.
+*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/T2_set_all_transforms_to_identity.py;hb=HEAD Set all transforms to identity] for TrakEM2 objects.
+*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/T2_Select_All.py;hb=HEAD Select All] objects in TrakEM2.
+*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/Measure_AreaLists.py;hb=HEAD Measure AreaList] in TrakEM2.
 
 = See also =
 *Albert Cardona's crash course in [http://www.ini.uzh.ch/~acardona/fiji-tutorial/index.html Jython scripting with Fiji]. 
