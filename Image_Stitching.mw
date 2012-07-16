@@ -4,7 +4,7 @@
 | author                 = Stephan Preibisch
 | maintainer             = Stephan Preibisch
 | filename               = Stitching_.jar
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Stitching_;hb=HEAD on gitweb]
+| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Stitching_;hb=HEAD on gitweb]
 | released               = October 2008
 | latest version         = January 2012
 | category               = [[:Category:Stitching|Stitching]]
