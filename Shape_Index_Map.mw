@@ -3,7 +3,7 @@
 | name                   = Shape Index Map
 | maintainer             = [mailto:johannes_dot_schindelin_at_gmx_dot_de Johannes Schindelin]
 | author                 = Johannes Schindelin
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Fiji_Plugins/fiji/geom/Shape_Index_Map.java;hb=refs/heads/master in gitweb]
+| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Fiji_Plugins/src/main/java/fiji/geom/Shape_Index_Map.java in gitweb]
 | released               = 18/08/2010
 | latest version         = 18/08/2010
 | status                 = 
