@@ -4,7 +4,7 @@
 | author                 = Ben Tupper and Mike Sieracki
 | maintainer             = Ben Tupper
 | filename               = RATS_.java
-| source                 = on [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/RATS_/RATS_.java gitweb]
+| source                 = on [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/RATS_/RATS_.java gitweb]
 | released               = 17 December 2009
 | status                 = active
 | category               = [[:Category:Segmentation|Segmentation]]
