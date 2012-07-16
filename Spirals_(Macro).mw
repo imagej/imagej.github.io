@@ -1,4 +1,4 @@
-The [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=macros/spirals.txt;hb=refs/heads/master spirals macro] shows an optical illusion demonstrating that our vision is optimized for non-quantitative measurements. The perception of colors depends highly on the context (i.e. the surrounding colors).
+The [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Scripts/File/Open_Samples/Spirals_.ijm spirals macro] shows an optical illusion demonstrating that our vision is optimized for non-quantitative measurements. The perception of colors depends highly on the context (i.e. the surrounding colors).
 
 In the generated image, you perceive some green and some blue bands, but they have exactly the same color:
 
