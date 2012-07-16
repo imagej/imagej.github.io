@@ -2,7 +2,7 @@
 
 == What is a "ref"? ==
 
-In Git, a "ref" is a pointer into the commit graph (to visualize the commit graph, use the wonderful tool ''gitk'', or look at [http://pacific.mpi-cbg.de/git-browser/by-commit.html?r=fiji.git the git-browser]).
+In Git, a "ref" is a pointer into the commit graph (to visualize the commit graph, use the wonderful tool ''gitk''.
 
 Branches are implemented as refs ("refs/heads/master"), tracking branches, too ("refs/remotes/origin/master"), and tags ("refs/tags/v1.0").  The convention is that tags do not move (advance), while branches do.  These named refs are also referred to as ''symbolic refs''.
 
