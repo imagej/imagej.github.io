@@ -4,7 +4,7 @@
 | author                 = [[User:Iarganda | Ignacio Arganda-Carreras]]
 | maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
 | filename               = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/bUnwarpJ_.jar bUnwarpJ_.jar] 
-| source                 = [http://pacific.mpi-cbg.de/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/bUnwarpJ_;hb=HEAD Git repository]
+| source                 = {{GitLink|jar=bUnwarpJ_}}
 | released               = July 20<sup>th</sup>, 2006
 | latest version         = June 18<sup>th</sup>, 2012
 | status                 = stable, active
