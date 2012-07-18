@@ -44,23 +44,6 @@ Import all Fiji projects via ''File>Import>Maven>Existing Maven Project''. You c
 
 After finishing this, Eclipse builds the Fiji projects. There should not be any error message but several thousands of warnings that mostly come from Java1.4-style code or not unnecessary imports, variables or methods in the sources of authors who do not use an IDE as Eclipse and thus have no automatic assistance at cleaning up.  All these warnings can be ignored  having not effect to the functionality of the code.
 
-==Add Fiji Build==
-[[Image:Screenshot-Fiji_Builder.png|thumb|Add Fiji Builder|300px]]
-Eclipse compiles java sources to class files but Fiji requires those class files and corresponding configuration files in specific places.  For this reason, the Fiji build system was developed and we will use it as an alternative builder for the Fiji project in Eclipse.
-
-Select the Fiji project and open the project properties dialog (Project -> Properties).  Under Builder, add a new Builder with the following properties:
-
-;Location: <code>${workspace_loc:/fiji}/fiji</code>
-;Working Directory: <code>${workspace_loc:/fiji}</code>
-;Arguments: <code>--build</code>
-
-<span style="color:#ff0000"><b>Note:</b></span> If you want to build TrakEM2, you will have to explicitly build required plugins in prior, that is
-
-;Arguments: <code>--build plugins/bUnwarpJ_.jar plugins/level_sets.jar all</code>
-
-
-
-
 ==Add a Run Configuration==
 [[Image:Screenshot-Run.png|thumb|New Run Configuration|300px]]
 Fiji can be launched conveniently from inside Eclipse.  For this purpose, create a new Run Configuration (Run -> Run Configurations...)
