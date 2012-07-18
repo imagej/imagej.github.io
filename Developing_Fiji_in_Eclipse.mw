@@ -39,45 +39,10 @@ This will create the folder ''~/fiji/'' where you have the core Fiji repository 
 
 Should you want to work on source code that is not part of the core Fiji repository, you can check out submodules you want to work with. Note: not all repositories we reference in submodules are handled by Maven/
 
-==Create the Eclipse Project==
-[[Image:Screenshot-New_JRE.png|thumb|New JRE|300px]]
+==Create the Eclipse Projects==
+Import all Fiji projects via ''File>Import>Maven>Existing Maven Project''. You can point it to Fiji's ''src-plugins/'' directory, it will discover all the projects automatically. The simplest option is to just import all of them.
 
-[[Image:Screenshot-New_Java_Project.png|thumb|New Java Project|300px]]
-
-Launch Eclipse and create a new Java project (New -> Java Project).  As already mentioned, Fiji runs best with the included JRE that can be installed directly by the link Configure JREs.  Add a new JRE located in the submodule path, e.g. <code>~/workspace/fiji/java/linux-amd64</code>
-
-<span style="color:#ff0000"><b>Note:</b></span> Eclipse will try to set <code>fiji/bin</code> as output folder, which already contains files. We recommend to set it instead to something else, e.g. <code>fiji/build</code>
-
-Eclipse will add all found JRE system libraries automatically.  Choose Fiji's JRE as the project specific JRE.  `Next >' brings you to a screen for selecting sources and libraries.  Eclipse automatically put into the source list everything it could find in the project folder.  In Fiji's complex directory structure, this automatic selection is inadequate.  Remove everything from the source list and put into it only what you want to edit, e.g.
-
-* ImageJA/ij
-* mpicbg
-* TrakEM2
-
-If you want to develop a plugin without a separate submodule, put the respective folder under <code>fiji/src-plugins</code> into the source list.
-
-Add all jars in <code>fiji/jar</code>s and all jars in <code>fiji/java/linux-amd64/jdk1.6.0_10/jre/lib/ext</code> to the Libraries.  You are safe not to forget any of the required dependencies when you also add all build targets (all jar files in fiji/plugins) whose sources you do not have in the source list.  Unfortunately, the names of the submodules do not necessarily correlate with their build targets.  Therefore, here come some examples:
-
-{| class="wikitable"
-! source path
-! build target
-|-
-| fiji/bio-formats
-| fiji/plugins/loci_tools.jar
-|-
-| fiji/ImageJA/ij
-| fiji/jars/ij.jar
-|-
-| fiji/mpicbg
-| fiji/plugins/mpicbg_.jar
-|-
-| fiji/TrakEM2
-| fiji/plugins/TrakEM2_.jar
-|-
-| ...
-|}
-
-After finishing this, Eclipse once builds the Fiji project.  There should not be any error message but several thousands of warnings that mostly come from Java1.4-style code or not required imports, variables or methods in the sources of authors who do not use an IDE as Eclipse and thus have no automatic assistance at cleaning up.  All these warnings can be ignored  having not effect to the functionality of the code.
+After finishing this, Eclipse builds the Fiji projects. There should not be any error message but several thousands of warnings that mostly come from Java1.4-style code or not unnecessary imports, variables or methods in the sources of authors who do not use an IDE as Eclipse and thus have no automatic assistance at cleaning up.  All these warnings can be ignored  having not effect to the functionality of the code.
 
 ==Add Fiji Build==
 [[Image:Screenshot-Fiji_Builder.png|thumb|Add Fiji Builder|300px]]
