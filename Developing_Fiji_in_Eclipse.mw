@@ -54,16 +54,14 @@ Fiji can be launched conveniently from inside Eclipse.  For this purpose, create
 ;Main class: fiji.Main
 <dt>Arguments
 <dd>
-;VM arguments: <nowiki>-Xms3000m -Xmx3000m -Dplugins.dir=${workspace_loc:fiji} -Dmacros.dir=${workspace_loc:fiji}</nowiki>
+;VM arguments: <nowiki>-Xms3000m -Xmx3000m -Dplugins.dir=</nowiki>'''<project-directory>/target/'''
 ;Working directory: Other: ${system_property:user.home}/Desktop/
 <dt>JRE
 <dd>
 ;Runtime JRE: Alternate JRE: Fiji Java
 ;Java executable: Default (javaw)
-<dt>Classpath
-<dd>
-;User Entries: <code>fiji/ij.jar</code> and all jars in <code>fiji/jars</code>, <code>fiji/plugins</code>, and <code>fiji/jars/jython2.2.1</code>
+</dl>
 
-
+Note: you need to set the plugins.dir property to the ''.jar'' file which was generated in the ''target/'' subdirectory of the project you want to debug. Otherwise ImageJ 1.x will not find the plugins. Example: to debug the [[3D Viewer]], you'd need ''-Dplugins.dir=${system_property:user.home}/fiji/3D_Viewer/target/'' as VM argument.
 
 [[Category:Development]]
