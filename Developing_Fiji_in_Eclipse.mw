@@ -28,51 +28,16 @@ Install Git using your preferred package manager or download from the [http://gi
 
 ==Checkout Fiji==
 
-Go into your Eclipse workspace and clone the Fiji repository
+Do <span style="color:#ff0000">not</span> clone Fiji into your Eclipse work space. We are using Maven to manage our projects and Eclipse tries very hard to interfer with this when it is allowed to.
 
 <source lang="bash">
-cd ~/workspace
-git clone ssh://contrib@fiji.sc/srv/git/fiji.git
+cd ~/
+git clone git://github.com/fiji/fiji
 </source>
 
-This will create the folder ~/workspace/fiji where you have the core Fiji repository. 
+This will create the folder ''~/fiji/'' where you have the core Fiji repository (you will initialize your Eclipse work space in ''~/workspace/'' later).
 
-<span style="color:#ff0000"><b>Note:</b></span> change "contrib" for your user name in ''fiji.sc'' if you have an account there.
-
-In order to run Fiji properly, it is suggested to use the JRE which is shipped with Fiji.  This is a platform dependent submodule of the Fiji repository. It will be automatically checked out when compiling Fiji:
-
-<source lang="bash">
-cd ~/workspace/fiji
-./Build.sh
-</source>
-
-Check out all submodules that you want to work with e.g.
-
-<source lang="bash">
-cd ~/workspace/fiji
-git submodule update --init modules/mpicbg
-git submodule update --init modules/TrakEM2
-</source>
-
-Check out the master branch of each of these submodules
-
-<source lang="bash">
-cd ~/workspace/fiji
-cd modules/mpicbg
-git checkout master
-cd ../TrakEM2
-git checkout master
-</source>
-
-<span style="color:#ff0000"><b>Note:</b></span> if you check out blindly the ''master'' branch of all the submodules you are interested in, the compilation <u>might fail</u>. If you are interested in a compiling state, you need to stay with the state after ''git submodule update''.
-
-Fiji comes with its own build system that we will later use from Eclipse.  Test, if Fiji builds properly
-
-<source lang="bash">
-cd ~/workspace/fiji
-./Build.sh
-./fiji
-</source>
+Should you want to work on source code that is not part of the core Fiji repository, you can check out submodules you want to work with. Note: not all repositories we reference in submodules are handled by Maven/
 
 ==Create the Eclipse Project==
 [[Image:Screenshot-New_JRE.png|thumb|New JRE|300px]]
