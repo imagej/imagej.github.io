@@ -22,6 +22,8 @@ Results can be saved to file instead of being displayed in the results window (f
 Results are displayed over no more than 225 columns, so that also the most widely used spread-sheet program can deal with the output.
 
 The variables in the initial dialogue can be set from a macro, and the dialogue can be bypassed altogether. The following macro shows how to do this and also lists all the parameters that can be set from a macro:
+
+<source>
 call("MTrack2_.setProperty","minSize","2");
 call("MTrack2_.setProperty","maxSize","20");
 call("MTrack2_.setProperty","minTrackLength","3");
@@ -34,6 +36,8 @@ call("MTrack2_.setProperty","showPositions","true");
 call("MTrack2_.setProperty","skipDialogue","true");
 
 run("MTrack2 ");
+</source>
+
 
 [[Category:Plugins]]
 [[Category:Tracking]]
