@@ -6,6 +6,8 @@
 
 * Fiji was prominently featured in Nature Methods review [http://www.nature.com/nmeth/journal/v7/n3s/index.html supplement] on visualization <ref>{{cite journal |author=Thomas Walter, David W Shattuck, Richard Baldock, Mark E Bastin, Anne E Carpenter, Suzanne Duce, Jan Ellenberg, Adam Fraser, Nicholas Hamilton, Steve Pieper, Mark A Ragan, Jurgen E Schneider, Pavel Tomancak and Jean-Karim Hériché |title=Visualization of image data from cells to organisms |journal=Nature Methods |year=2010 |volume= 7 No 3s |pages=S26 -S41|url=http://www.nature.com/nmeth/journal/v7/n3s/abs/nmeth.1431.html}}</ref>
 
+* A review of biological imaging software tools focusses on open source programs and Fiji is a big part of it<ref>{{cite journal |author=Kevin W Eliceiri, Michael R Berthold, Ilya G Goldberg, Luis Ibàñez, B S Manjunath, Maryann E Martone, Robert F Murphy, Hanchuan Peng, Anne L Plant, Badrinath Roysam, Nico Stuurmann, Jason R Swedlow, Pavel Tomancak & Anne E Carpenter|title=Biological imaging software tools|journal=Nature Methods |year=2012 |volume= 9(7)|pages=697–710|url=http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2084.html}}</ref>.
+
 == Publications using or enhancing Fiji ==
 
 * [[Stitching]]<ref>{{cite journal |author=Preibisch S and Saalfeld S and Tomancak P |title=Globally Optimal Stitching of Tiled 3D Microscopic Image Acquisitions |journal=Bioinformatics |year=2009 |month=April |volume=25(11) |pages=1463-1465 |pmid=19346324|url=http://bioinformatics.oxfordjournals.org/cgi/content/full/25/11/1463}}</ref>
