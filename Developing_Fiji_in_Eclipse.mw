@@ -73,4 +73,16 @@ public static void main(String[] args) {
 }
 </source>
 
+==Adding new plugins==
+
+The easiest method is to copy an existing ''pom.xml'' and put it into a new sub-directory of ''src-plugins/''. By convention, that sub-directory should have the base name of the ''.jar'' file to be generated.
+
+The format of such a ''pom.xml'' is described briefly on our [[Maven]] page.
+
+Most importantly, you will need to adjust the ''artifactId'' and the ''dependencies'' section. Should you require a dependency that is not used in Fiji yet, you might want to search for the appropriate ''groupId'' and ''version'' in [http://maven.imagej.net:8081/ ImageJ2's Maven repository] (note: if your firewall does not allow you to access port 8081, you can access a slightly "crippled" version [http://maven.imagej.net/ here].
+
+Next, you will make the ''src/main/java/'' and ''src/main/resources/'' trees and add your Java sources to the former and resources (such as the ''plugins.config'' file) to the latter.
+
+After that, ask Eclipse to import it: ''File>Import>Maven>Import Existing Maven Project''.
+
 [[Category:Development]]
