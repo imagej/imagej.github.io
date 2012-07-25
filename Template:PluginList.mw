@@ -70,11 +70,6 @@
 
 
 
-=== Edit > Options ===
-
-* [[Configure Fiji Updater]] - file <tt>fiji.updater.UptodateCheck("config")</tt>  -- ''java jar file''
-
-
 === Edit > Selection ===
 
 * [[Points from Mask]] - file <tt>fiji.selection.Binary_to_Point_Selection</tt>  -- ''java jar file''
