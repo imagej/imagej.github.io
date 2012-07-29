@@ -10,18 +10,14 @@ For more information about Maven, see:
 
 '''Note:''' if you use Eclipse 3.7 Indigo or newer, you most likely have m2e already. If your ''File>Import'' offers you a ''Maven'' section, you have it, and can skip the rest of this section.
 
-From the Eclipse menu, choose Help > Install New Software...
-
-Click the Add button to add an update site:
-* Name: m2eclipse
-* Location: http://m2eclipse.sonatype.org/sites/m2e
-* Click OK
-
-Check the item that appears—Maven Integration for Eclipse—and click Next.
-
-Click Next again, accept the license terms, and click Finish.
-
-Restart Eclipse.
+* From the Eclipse menu, choose Help > Install New Software...
+* Click the Add button to add an update site:
+** Name: m2eclipse
+** Location: http://m2eclipse.sonatype.org/sites/m2e
+** Click OK
+* Check the item that appears—Maven Integration for Eclipse—and click Next.
+* Click Next again, accept the license terms, and click Finish.
+* Restart Eclipse.
 
 == Configure Eclipse (Windows only) ==
 
