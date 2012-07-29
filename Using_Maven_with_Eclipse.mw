@@ -41,7 +41,7 @@ Now update Eclipse's JRE to be JDK-aware:
 
 == Troubleshooting ==
 
-=== On Mac OS X, behind a firewall ==
+=== On Mac OS X, behind a firewall ===
 
 I ([[JeanYvesTinevez|Jean-Yves]] speaking) noticed a very annoying problem. At work, I live behind a firewall, and whatever I did, the version of maven shipped with Eclipse (Indigo or Juno) never managed to reach out the outside world (even tweaking proxy configuration). This resulted in the impossibility to import any maven project.
 
