@@ -21,6 +21,7 @@ If you want to contribute to Git, you can do that with the ''contrib'' user:  Ju
 Some useful documentation, in particular for Fiji:
 
 * [[Git_mini_howto|A really quick 'n dirty HOWTO]]
+* [http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html How to write good commit messages]
 * [[Git_topic_branches|Working with topic branches]]
 * [[Git_Conflicts|Description of merge conflicts and how to resolve them]]
 * [[Git_reflogs|A quick introduction into "Git refs"]]
