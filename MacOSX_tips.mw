@@ -9,10 +9,23 @@
 
 Fiji is ready to run!
 
-==Running Fiji on Java 1.5 (32-bit)==
+==Running Fiji in 32-bit mode==
 
-Fiji on intel Macs runs on Java 1.6 (64-bit). If you need to run it in 32-bit mode, use the following code:
- arch -i386 /Applications/Fiji/Fiji.app/Contents/MacOS/fiji-macosx
+Fiji on Intel Macs runs on Java 1.6 in 64-bit mode. If you need to run it in 32-bit mode, you can do so as follows:
+
+# Launch Fiji normally, and choose Edit > Options > Memory & Threads.
+# Reduce your Maximum Memory setting to ~1800 MB or less.
+# Quit Fiji.
+# Ctrl+click the Fiji icon and choose Options > Show in Finder.
+# Ctrl+click on the Fiji.app icon that pops up, and choose Show Info (or press Cmd+I).
+# Check the "Open in 32-bit mode" box in the Fiji.app info window.
+# Press the red X on the Fiji.app info window to close it.
+# Launch Fiji again, and the status bar should report "[32-bit]" in brackets.
+
+Alternately, you can execute the following code from the Terminal:
+ arch -i386 /Applications/Fiji.app/Contents/MacOS/ImageJ-macosx
+
+Either way, you will need to make sure your maximum memory limit is set below ~1800 MB.  If your maximum memory is set higher than the 32-bit limit, Fiji will not be able to start up successfully in 32-bit mode.
 
 == Limited PowerPC (G4/G5) Mac support ==
 
