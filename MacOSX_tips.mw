@@ -16,8 +16,8 @@ Fiji on Intel Macs runs on Java 1.6 in 64-bit mode. If you need to run it in 32-
 # Launch Fiji normally, and choose Edit > Options > Memory & Threads.
 # Reduce your Maximum Memory setting to ~1800 MB or less.
 # Quit Fiji.
-# Ctrl+click the Fiji icon and choose Options > Show in Finder.
-# Ctrl+click on the Fiji.app icon that pops up, and choose Show Info (or press Cmd+I).
+# Ctrl+click the Fiji dock icon and choose Options > Show in Finder.
+# Ctrl+click on the Fiji application icon that pops up, and choose Show Info (or press Cmd+I).
 # Check the "Open in 32-bit mode" box in the Fiji.app info window.
 # Press the red X on the Fiji.app info window to close it.
 # Launch Fiji again, and the status bar should report "[32-bit]" in brackets.
