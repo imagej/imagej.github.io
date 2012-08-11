@@ -1,12 +1,3 @@
-'''BROKEN'''
-
-'''After updating Fiji (August 2012) TrackMate will NOT work anymore. It get stuck at the initial thresholding step, whatever algorithm and image you choose. This problem is currently under investigation. '''
-
-'''BROKEN'''
-
-
-
-
 {{Infobox Plugin
 | name                  = TrackMate_
 | software              = Fiji
