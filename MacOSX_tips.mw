@@ -55,7 +55,9 @@ For plugins, please follow the instructions about [[Installing 3rd party plugins
 
 == Installing OpenJDK for MacOSX ==
 
-There is [http://openjdk.java.net/projects/macosx-port/ an Apple-backed effort] to get a proper MacOSX backend into the BSD port of OpenJDK. So far, only Snow Leopard and later are supported, and preliminary builds can be found [http://code.google.com/p/openjdk-osx-build/ here].
+Oracle now supports MacOSX JavaSE 7 [http://www.h-online.com/open/news/item/Java-SE-7-Update-6-hands-OS-X-support-to-Oracle-1667714.html officially].
+
+It is based on [http://openjdk.java.net/projects/macosx-port/ an Apple-backed effort] to get a proper MacOSX backend into the BSD port of OpenJDK. So far, only Snow Leopard and later are supported, and preliminary builds can be found [http://code.google.com/p/openjdk-osx-build/ here].
 
 If you are experiencing problems, say, with AWT-AppKit related crashes, and if you do not mind working with an X11-based graphical user display, you might want to try OpenJDK.
 
