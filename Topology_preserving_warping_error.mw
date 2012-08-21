@@ -30,7 +30,7 @@ If ''L''<sup>*</sup> can be transformed into ''L'' by a sequence of pixel flips 
 
 then we will say ''L'' is a ''warping of'' ''L''<sup>*</sup>, or <math>L 	\triangleleft L^*</math>. The first condition constrains ''L'' and ''L''<sup>*</sup> to be '''topologically equivalent'''. The second condition can be used to constrain ''L'' to be geometrically similar to ''L''<sup>*</sup>. Both conditions will be explained in more detail below.
 
-Now consider the pixel error of ''T'' relative to warpings of ''L''<sup>*</sup>. The ''warping error'' between some candidate labeling ''T'' and a reference labeling ''L''<sup>*</sup> is the [http://en.wikipedia.org/wiki/Hamming_distance Hamming distance] (or equivalently squared [http://en.wikipedia.org/wiki/Euclidean_distance Euclidean distance]) between ''L''<sup>*</sup> and the "best warping" of ''L''<sup>*</sup> onto ''T'':
+Now consider the pixel error of ''T'' relative to warpings of ''L''<sup>*</sup>. The ''warping error'' between some candidate labeling ''T'' and a reference labeling ''L''<sup>*</sup> is the [http://en.wikipedia.org/wiki/Hamming_distance Hamming distance] (or equivalently squared [http://en.wikipedia.org/wiki/Euclidean_distance Euclidean distance]) between ''L'' and the "best warping" of ''L''<sup>*</sup> onto ''T'':
 
 <math>D(T \parallel L^*) = \underset{L \triangleleft L^*}{min} \parallel T-L \parallel ^2 </math>                     (Eq. 1)
 
