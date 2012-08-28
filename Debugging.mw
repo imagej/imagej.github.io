@@ -1,3 +1,21 @@
+= Debugging plugins in an IDE (Netbeans, IntelliJ, Eclipse, etc) =
+
+To debug a plugin in an IDE, you most likely need to provide a ''main()'' method. To make things easier, we provide helper methods in ''fiji-lib'' in the class ''fiji.Debug'' to run plugins, and to load images and run filter plugins:
+
+<source lang="java">
+import fiji.Debug;
+
+...
+
+public void main(String[] args) {
+    Debug.runFilter("/home/clown/my-profile.jpg", "Gaussian Blur", "radius=2");
+}
+</source>
+
+You need to replace the first argument by a valid path to a sample image and the second argument by the name of your plugin (typically the class name with underscores replaced by spaces).
+
+If your plugin is not a filter plugin, i.e. if it does not require an image to run, simply use the ''Debug.run(plugin, parameters)'' method.
+
 = Switching on ImageJ's debug mode =
 
 ImageJ itself outputs a lot of debug messages, when asked for them: Simply check ''Debug mode'' in the dialog popping up when clicking on the ''Edit>Options>Misc...'' menu item.
