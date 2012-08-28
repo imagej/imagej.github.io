@@ -211,7 +211,7 @@ If this information is not enough to solve the trouble, or if ''Test Java3D'' di
 From the command line, you have several options to show more or less information about Java3D.
 
 === Windows ===
-On Windows, you <u>must</u> pass the ''--console'' option in any case. Example:
+On Windows, you <u>must</u> pass the ''--console'' option in any case. From the Start Menu's ''Run...'' call ''cmd.exe'' and in the command-line window that appears, type:
 
 <source lang="bash">
 cd Desktop\Fiji.app
@@ -219,7 +219,10 @@ fiji-win32 --console
 </source>
 
 '''Note:''' you may have unpacked Fiji somewhere else than the Desktop. If so, you have to use a different ''cd'' call.
+
 '''And note, too:''' on Windows 64, the executable is called ''fiji-win64'', of course.
+
+To copy text from the command-line window, you need to activate the Quick Edit mode: right-click on the window icon in the upper left corner of the command-line window, choose ''Properties...'' and check the "Quick Edit Mode" checkbox. After that, you can mark text by click-dragging with the left mouse button and copy it by right-clicking.
 
 === MacOSX ===
 On MacOSX, you need to remember that any application is just a directory with a special layout. So you can call Fiji like this from the ''Terminal'' (which you will find in the Finder by clicking on ''Go>Utilities''. Example command line:
