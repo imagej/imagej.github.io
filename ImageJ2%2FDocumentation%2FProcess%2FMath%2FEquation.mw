@@ -15,10 +15,10 @@ and returns u + v (resulting in a ramp).
 
 Note that index names do not have to be those defined in ImageJ 1.x (i.e. x, y, c, z, or t). They can be any name
 you designate. The key concept is that the order of index definition is important. If your input image is defined
-such that it has axes [X. Y, FREQUENCY] you want your equation to match (i.e. "[u,v,freq] , freq * 1.3" )
+such that it has axes [X,Y,FREQUENCY] you want your equation to match (i.e. "[u,v,freq] , freq * 1.3" )
 
 If you have a multidimensional set of data it is important to specify all axes as index variables. For instance for a 5d
-[X, Y, Z, C, T] data set we might want an equation that multiplies time by 2. If you specified it like this (" [ t ] , t * 2") the
+[X,Y,Z,C,T] data set we might want an equation that multiplies time by 2. If you specified it like this ("[ t ] , t * 2") the
 input image would substitute x values for the t variable and you would not get what you want. A correct specification
 would be: " [ x,y,z,c,t ] , t * 2"
 
