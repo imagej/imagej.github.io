@@ -52,200 +52,200 @@ Here are some simple examples:
 
 There are numerous built in functions that are enumerated here:
 
-abs : example ( "[x,y] , abs(y) " )
+<B>abs</B> : example ( "[x,y] , abs(y) " )
 
 <UL><LI>Returns the absolute value of its input.</LI></UL>
 
-acos : example ( "[x,y] , acos(y) " )
+<B>acos</B> : example ( "[x,y] , acos(y) " )
 
 <UL><LI>Returns the angle in radians whose cosine equals the given input.</LI></UL>
 
-acosh : example ( "[x,y] , acosh(y) " )
+<B>acosh</B> : example ( "[x,y] , acosh(y) " )
 
 <UL><LI>Returns the angle in radians whose hyperbolic cosine equals the given input.</LI></UL>
 
-acot : example ( "[x,y] , acot(y) " )
+<B>acot</B> : example ( "[x,y] , acot(y) " )
 
 <UL><LI>Returns the angle in radians whose cotangent equals the given input.</LI></UL>
 
-acoth : example ( "[x,y] , acoth(y) " )
+<B>acoth</B> : example ( "[x,y] , acoth(y) " )
 
 <UL><LI>Returns the angle in radians whose hyperbolic cotangent equals the given input.</LI></UL>
 
-acsc : example ( "[x,y] , acsc(y) " )
+<B>acsc</B> : example ( "[x,y] , acsc(y) " )
 
 <UL><LI>Returns the angle in radians whose cosecant equals the given input.</LI></UL>
 
-acsch : example ( "[x,y] , acsch(y) " )
+<B>acsch</B> : example ( "[x,y] , acsch(y) " )
 
 <UL><LI>Returns the angle in radians whose hyperbolic cosecant equals the given input.</LI></UL>
 
-angle : example ( "[x,y,z,c,t] , angle(z,t) " ) [Note - two index variable name arguments]
+<B>angle</B> : example ( "[x,y,z,c,t] , angle(z,t) " ) [Note - two index variable name arguments]
 
 <UL><LI>Returns the angle in radians of a given pixel along two specified axes.</LI></UL>
 
-asec : example ( "[x,y] , asec(y) " )
+<B>asec</B> : example ( "[x,y] , asec(y) " )
 
 <UL><LI>Returns the angle in radians whose secant equals the given input.</LI></UL>
 
-asech : example ( "[x,y] , asech(y) " )
+<B>asech</B> : example ( "[x,y] , asech(y) " )
 
 <UL><LI>Returns the angle in radians whose hyperbolic secant equals the given input.</LI></UL>
 
-asin : example ( "[x,y] , asin(y) " )
+<B>asin</B> : example ( "[x,y] , asin(y) " )
 
 <UL><LI>Returns the angle in radians whose sine equals the given input.</LI></UL>
 
-asinh : example ( "[x,y] , asinh(y) " )
+<B>asinh</B> : example ( "[x,y] , asinh(y) " )
 
 <UL><LI>Returns the angle in radians whose hyperbolic sine equals the given input.</LI></UL>
 
-atan : example ( "[x,y] , atan(y) " )
+<B>atan</B> : example ( "[x,y] , atan(y) " )
 
 <UL><LI>Returns the angle in radians whose tangent equals the given input.</LI></UL>
 
-atanh : example ( "[x,y] , atanh(y) " )
+<B>atanh</B> : example ( "[x,y] , atanh(y) " )
 
 <UL><LI>Returns the angle in radians whose hyperbolic tangent equals the given input.</LI></UL>
 
-cbrt : example ( "[x,y] , cbrt(y) " )
+<B>cbrt</B> : example ( "[x,y] , cbrt(y) " )
 
 <UL><LI>Returns the cube root of the given input.</LI></UL>
 
-ceil : example ( "[x,y] , ceil(y) " )
+<B>ceil</B> : example ( "[x,y] , ceil(y) " )
 
 <UL><LI>Returns the result of pushing a non integral input value to the next higher integral value.</LI></UL>
 
-cos : example ( "[x,y] , cos(y) " )
+<B>cos</B> : example ( "[x,y] , cos(y) " )
 
 <UL><LI>Returns the cosine of an input value.</LI></UL>
 
-cosh : example ( "[x,y] , cosh(y) " )
+<B>cosh</B> : example ( "[x,y] , cosh(y) " )
 
 <UL><LI>Returns the hyperbolic cosine of an input value.</LI></UL>
 
-cot : example ( "[x,y] , cot(y) " )
+<B>cot</B> : example ( "[x,y] , cot(y) " )
 
 <UL><LI>Returns the cotangent of an input value.</LI></UL>
 
-coth : example ( "[x,y] , coth(y) " )
+<B>coth</B> : example ( "[x,y] , coth(y) " )
 
 <UL><LI>Returns the hyperbolic cotangent of an input value.</LI></UL>
 
-csc : example ( "[x,y] , csc(y) " )
+<B>csc</B> : example ( "[x,y] , csc(y) " )
 
 <UL><LI>Returns the cosecant of an input value.</LI></UL>
 
-csch : example ( "[x,y] , csch(y) " )
+<B>csch</B> : example ( "[x,y] , csch(y) " )
 
 <UL><LI>Returns the hyperbolic cosecant of an input value.</LI></UL>
 
-dctr : example ( "[x,y] , dctr" ) [Note - no arguments]
+<B>dctr</B> : example ( "[x,y] , dctr" ) [Note - no arguments]
 
 <UL><LI>Returns the distance from the center of the image for each input pixel.</LI></UL>
 
-dim : example ( "[x,y,z], dim(z)" ) [Note - one index variable name argument]
+<B>dim</B> : example ( "[x,y,z], dim(z)" ) [Note - one index variable name argument]
 
 <UL><LI>Returns the dimension of a specified axis of an input image. I.e. for a 200x500 image dim(y) would be 500.</LI></UL>
 
-exp : example ( "[x,y] , exp(y) " )
+<B>exp</B> : example ( "[x,y] , exp(y) " )
 
 <UL><LI>Returns the result of raising the constant E to the power equal to the given input.</LI></UL>
 
-expm1 : example ( "[x,y] , expm1(y) " )
+<B>expm1</B> : example ( "[x,y] , expm1(y) " )
 
 <UL><LI>Returns the result of raising the constant E to the power equal to the given input and subtracting one.</LI></UL>
 
-floor : example ( "[x,y] , floor(y) " )
+<B>floor</B> : example ( "[x,y] , floor(y) " )
 
 <UL><LI>Returns the result of truncating an input value to an integral value.</LI></UL>
 
-gauss : example ( "[x,y] , gauss(y) " )
+<B>gauss</B> : example ( "[x,y] , gauss(y) " )
 
 <UL><LI>Returns a gaussian random variable of mean 0 and whose standard deviation matches the input value.</LI></UL>
 
-log : example ( "[x,y] , log(y) " )
+<B>log</B> : example ( "[x,y] , log(y) " )
 
 <UL><LI>Returns the natural log of the given input.</LI></UL>
 
-log1p : example ( "[x,y] , log1p(y) " )
+<B>log1p</B> : example ( "[x,y] , log1p(y) " )
 
 <UL><LI>Returns the natural log of the sum of the given input and one.</LI></UL>
 
-log10 : example ( "[x,y] , log10(y) " )
+<B>log10</B> : example ( "[x,y] , log10(y) " )
 
 <UL><LI>Returns the 10-based log of the given input.</LI></UL>
 
-log2 : example ( "[x,y] , log2(y) " )
+<B>log2</B> : example ( "[x,y] , log2(y) " )
 
 <UL><LI>Returns the 2-based log of the given input.</LI></UL>
 
-rand : example ( "[x,y] , rand(y) " )
+<B>rand</B> : example ( "[x,y] , rand(y) " )
 
 <UL><LI>Returns a random number uniformly distributed on the range of 0 up to but not including the input value.</LI></UL>
 
-rint : example ( "[x,y] , rint(y) " )
+<B>rint</B> : example ( "[x,y] , rint(y) " )
 
 <UL><LI>Returns the result of rounding a given input value to the nearest integer value (redundant).</LI></UL>
 
-round : example ( "[x,y] , round(y) " )
+<B>round</B> : example ( "[x,y] , round(y) " )
 
 <UL><LI>Returns the result of rounding a given input value to the nearest integer value (redundant).</LI></UL>
 
-sec : example ( "[x,y] , sec(y) " )
+<B>sec</B> : example ( "[x,y] , sec(y) " )
 
 <UL><LI>Returns the secant of an input value.</LI></UL>
 
-sech : example ( "[x,y] , sech(y) " )
+<B>sech</B> : example ( "[x,y] , sech(y) " )
 
 <UL><LI>Returns the hyperbolic secant of an input value.</LI></UL>
 
-signum : example ( "[x,y] , signum(y) " )
+<B>signum</B> : example ( "[x,y] , signum(y) " )
 
 <UL><LI>Returns -1, 0, or 1 depending upon whether a given input value is negative, zero, or positive.</LI></UL>
 
-sin : example ( "[x,y] , sin(y) " )
+<B>sin</B> : example ( "[x,y] , sin(y) " )
 
 <UL><LI>Returns the sine of an input value.</LI></UL>
 
-sinc : example ( "[x,y] , sinc(y) " )
+<B>sinc</B> : example ( "[x,y] , sinc(y) " )
 
 <UL><LI>Returns sin(x) / x for a given input value x.</LI></UL>
 
-sincpi : example ( "[x,y] , sincpi(y) " )
+<B>sincpi</B> : example ( "[x,y] , sincpi(y) " )
 
 <UL><LI>Returns sin(PI*x) / (PI*x) for a given input value x.</LI></UL>
 
-sinh : example ( "[x,y] , sinh(y) " )
+<B>sinh</B> : example ( "[x,y] , sinh(y) " )
 
 <UL><LI>Returns the hyperbolic sine of an input value.</LI></UL>
 
-sqr : example ( "[x,y] , sqr(y) " )
+<B>sqr</B> : example ( "[x,y] , sqr(y) " )
 
 <UL><LI>Returns the square of an input value.</LI></UL>
 
-sqrt : example ( "[x,y] , sqrt(y) " )
+<B>sqrt</B> : example ( "[x,y] , sqrt(y) " )
 
 <UL><LI>Returns the square root of an input value.</LI></UL>
 
-step : example ( "[x,y] , step(y) " )
+<B>step</B> : example ( "[x,y] , step(y) " )
 
 <UL><LI>Returns 0 if an input value is less than 0. Otherwise returns 1.</LI></UL>
 
-tan : example ( "[x,y] , tan(y) " )
+<B>tan</B> : example ( "[x,y] , tan(y) " )
 
 <UL><LI>Returns the tangent of an input value.</LI></UL>
 
-tanh : example ( "[x,y] , tanh(y) " )
+<B>tanh</B> : example ( "[x,y] , tanh(y) " )
 
 <UL><LI>Returns the hyperbolic tangent of an input value.</LI></UL>
 
-tmax : example ( "[x,y], tmax " ) [Note - no arguments]
+<B>tmax</B> : example ( "[x,y], tmax " ) [Note - no arguments]
 
 <UL><LI>Returns the maximum possible value of a pixel for a given input image. For an unsigned 8-bit image the
 value would be 255 and for a signed 8-bit image the value would be 127.</LI></UL>
 
-tmin : example ( "[x,y], tmin " ) [Note - no arguments]
+<B>tmin</B> : example ( "[x,y], tmin " ) [Note - no arguments]
  
 <UL><LI>Returns the minimum possible value of a pixel for a given input image. For an unsigned 8-bit image the
 value would be 0 and for a signed 8-bit image the value would be -128.</LI></UL>
