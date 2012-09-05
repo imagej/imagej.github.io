@@ -1,3 +1,251 @@
 This page documents that language that can be used to specify equations via the Process > Math > Equation command.
 
-TODO - fill me in ...
+The Process > Math > Equation dialog supports a powerful language for defining equations that can be used
+to fill images with data.
+
+An equation is defined by a list of index variable declarations and a formula definition. If the formula does not
+refer to any index variables they can be omitted from the definition. (Index variables are discussed a bit later)
+
+For example here is the most basic definition: "12"
+When you query this equation it returns the value 12. Note that there are no index variable definitions.
+
+Here is an example of an equation with index variable definitions: " [ u , v ] , u + v " 
+When you query this equation for a loaded image it substitutes each x index for u and each y index for v
+and returns u + v (resulting in a ramp).
+
+Note that index names do not have to be those defined in ImageJ 1.x (i.e. x, y, c, z, or t). They can be any name
+you designate. The key concept is that the order of index definition is important. If your input image is defined
+such that it has axes [X. Y, FREQUENCY] you want your equation to match (i.e. "[u,v,freq] , freq * 1.3" )
+
+If you have a multidimensional set of data it is important to specify all axes as index variables. For instance for a 5d
+[X, Y, Z, C, T] data set we might want an equation that multiplies time by 2. If you specified it like this (" [ t ] , t * 2") the
+input image would substitute x values for the t variable and you would not get what you want. A correct specification
+would be: " [ x,y,z,c,t ] , t * 2"
+
+However one can underspecify a set of axes without issue if they are not used. Given an input image whose axes
+are [X,Y,Z,C,T] I can legally specify a function like this: "[x,y,z], x + z". Notice that we don't care about the Y axis but
+we specify it to keep the positional indexes populated correctly. And we are ignoring the C and T axes too.
+
+One can also use the current image's data values as input to an equation.
+For instance here is an example that does so: "img + 23"
+When you query this equation for a loaded image it substitutes each pixel value for the "img" function and adds 23 to it
+(resulting in a brightening).
+
+Equations are specified in pieces. The equation language supports:
+  - add / subtract / multiply / divide / mod (+ - * / %)
+  - raising to a power ( ^ )
+  - negation ( - )
+  - variable index references ( x in "[x,y] , 3 * x" )
+  - an image reference ( img )
+  - calls to built in functions (such as sin(v) - more listed below)
+  - constants ( such as E and PI  in "E * 7" or "PI / 4" )
+  - parentheses
+
+Here are some simple examples: 
+  "7"
+  "7 + 4"
+  "[x], (3*x) - 9"
+  "[x,y], 200/(y + 30)"
+  "[x,y] , x^2 + y^2"
+  "img"
+  "[x,y] , sin(y)"
+
+There are numerous built in functions that are enumerated here:
+
+abs : example ( "[x,y] , abs(y) " )
+
+Returns the absolute value of its input.
+
+acos : example ( "[x,y] , acos(y) " )
+
+Returns the angle in radians whose cosine equals the given input.
+
+acosh : example ( "[x,y] , acosh(y) " )
+
+Returns the angle in radians whose hyperbolic cosine equals the given input.
+
+acot : example ( "[x,y] , acot(y) " )
+
+Returns the angle in radians whose cotangent equals the given input.
+
+acoth : example ( "[x,y] , acoth(y) " )
+
+Returns the angle in radians whose hyperbolic cotangent equals the given input.
+
+acsc : example ( "[x,y] , acsc(y) " )
+
+Returns the angle in radians whose cosecant equals the given input.
+
+acsch : example ( "[x,y] , acsch(y) " )
+
+Returns the angle in radians whose hyperbolic cosecant equals the given input.
+
+angle : example ( "[x,y,z,c,t] , angle(z,t) " ) [Note - two index variable name arguments]
+
+Returns the angle in radians of a given pixel along two specified axes.
+
+asec : example ( "[x,y] , asec(y) " )
+
+Returns the angle in radians whose secant equals the given input.
+
+asech : example ( "[x,y] , asech(y) " )
+
+Returns the angle in radians whose hyperbolic secant equals the given input.
+
+asin : example ( "[x,y] , asin(y) " )
+
+Returns the angle in radians whose sine equals the given input.
+
+asinh : example ( "[x,y] , asinh(y) " )
+
+Returns the angle in radians whose hyperbolic sine equals the given input.
+
+atan : example ( "[x,y] , atan(y) " )
+
+Returns the angle in radians whose tangent equals the given input.
+
+atanh : example ( "[x,y] , atanh(y) " )
+
+Returns the angle in radians whose hyperbolic tangent equals the given input.
+
+cbrt : example ( "[x,y] , cbrt(y) " )
+
+Returns the cube root of the given input.
+
+ceil : example ( "[x,y] , ceil(y) " )
+
+Returns the result of pushing a non integral input value to the next higher integral value.
+
+cos : example ( "[x,y] , cos(y) " )
+
+Returns the cosine of an input value.
+
+cosh : example ( "[x,y] , cosh(y) " )
+
+Returns the hyperbolic cosine of an input value.
+
+cot : example ( "[x,y] , cot(y) " )
+
+Returns the cotangent of an input value.
+
+coth : example ( "[x,y] , coth(y) " )
+
+Returns the hyperbolic cotangent of an input value.
+
+csc : example ( "[x,y] , csc(y) " )
+
+Returns the cosecant of an input value.
+
+csch : example ( "[x,y] , csch(y) " )
+
+Returns the hyperbolic cosecant of an input value.
+
+dctr : example ( "[x,y] , dctr" ) [Note - no arguments]
+
+Returns the distance from the center of the image for each input pixel.
+
+dim : example ( "[x,y,z], dim(z)" ) [Note - one index variable name argument]
+
+Returns the dimension of a specified axis of an input image. I.e. for a 200x500 image dim(y) would be 500.
+
+exp : example ( "[x,y] , exp(y) " )
+
+Returns the result of raising the constant E to the power equal to the given input.
+
+expm1 : example ( "[x,y] , expm1(y) " )
+
+Returns the result of raising the constant E to the power equal to the given input and subtracting one.
+
+floor : example ( "[x,y] , floor(y) " )
+
+Returns the result of truncating an input value to an integral value.
+
+gauss : example ( "[x,y] , gauss(y) " )
+
+Returns a gaussian random variable of mean 0 and whose standard deviation matches the input value.
+
+log : example ( "[x,y] , log(y) " )
+
+Returns the natural log of the given input.
+
+log1p : example ( "[x,y] , log1p(y) " )
+
+Returns the natural log of the sum of the given input and one.
+
+log10 : example ( "[x,y] , log10(y) " )
+
+Returns the 10-based log of the given input.
+
+log2 : example ( "[x,y] , log2(y) " )
+
+Returns the 2-based log of the given input.
+
+rand : example ( "[x,y] , rand(y) " )
+
+Returns a random number uniformly distributed on the range of 0 up to but not including the input value.
+
+rint : example ( "[x,y] , rint(y) " )
+
+Returns the result of rounding a given input value to the nearest integer value (redundant).
+
+round : example ( "[x,y] , round(y) " )
+
+Returns the result of rounding a given input value to the nearest integer value (redundant).
+
+sec : example ( "[x,y] , sec(y) " )
+
+Returns the secant of an input value.
+
+sech : example ( "[x,y] , sech(y) " )
+
+Returns the hyperbolic secant of an input value.
+
+signum : example ( "[x,y] , signum(y) " )
+
+Returns -1, 0, or 1 depending upon whether a given input value is negative, zero, or positive.
+
+sin : example ( "[x,y] , sin(y) " )
+
+Returns the sine of an input value.
+
+sinc : example ( "[x,y] , sinc(y) " )
+
+Returns sin(x) / x for a given input value x.
+
+sincpi : example ( "[x,y] , sincpi(y) " )
+
+Returns sin(PI*x) / (PI*x) for a given input value x.
+
+sinh : example ( "[x,y] , sinh(y) " )
+
+Returns the hyperbolic sine of an input value.
+
+sqr : example ( "[x,y] , sqr(y) " )
+
+Returns the square of an input value.
+
+sqrt : example ( "[x,y] , sqrt(y) " )
+
+Returns the square root of an input value.
+
+step : example ( "[x,y] , step(y) " )
+
+Returns 0 if an input value is less than 0. Otherwise returns 1.
+
+tan : example ( "[x,y] , tan(y) " )
+
+Returns the tangent of an input value.
+
+tanh : example ( "[x,y] , tanh(y) " )
+
+Returns the hyperbolic tangent of an input value.
+
+tmax : example ( "[x,y], tmax " ) [Note - no arguments]
+
+Returns the maximum possible value of a pixel for a given input image. For an unsigned 8-bit image the
+value would be 255 and for a signed 8-bit image the value would be 127.
+
+tmin : example ( "[x,y], tmin " ) [Note - no arguments]
+ 
+Returns the minimum possible value of a pixel for a given input image. For an unsigned 8-bit image the
+value would be 0 and for a signed 8-bit image the value would be -128.
