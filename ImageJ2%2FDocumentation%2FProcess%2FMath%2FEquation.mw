@@ -24,7 +24,7 @@ would be: "[x,y,z,c,t] , t * 2"
 
 However one can underspecify a set of axes without issue if they are not used. Given an input image whose axes
 are [X,Y,Z,C,T] I can legally specify a function like this: "[x,y,z], x + z". Notice that we don't care about the Y axis but
-we specify it to keep the positional indexes populated correctly. And we are ignoring the C and T axes too.
+we specify it to keep the positional indexes populated correctly. And we are ignoring the C and T axes.
 
 One can also use the current image's data values as input to an equation.
 For instance here is an example that does so: "img + 23"
