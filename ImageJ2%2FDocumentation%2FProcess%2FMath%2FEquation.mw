@@ -164,6 +164,10 @@ There are numerous built in functions that are enumerated here:
 
 <UL><LI>Returns a gaussian random variable of mean 0 and whose standard deviation matches the input value.</LI></UL>
 
+<B>img</B> : example ( "[x,y] , img " ) [Note - no arguments]
+
+<UL><LI>Returns pixel values from the currently active image.</LI></UL>
+
 <B>log</B> : example ( "[x,y] , log(y) " )
 
 <UL><LI>Returns the natural log of the given input.</LI></UL>
