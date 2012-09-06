@@ -41,7 +41,7 @@ Equations are specified in pieces. The equation language supports:
 Here are some simple examples: 
 <UL>
   <LI>"7"</LI>
-  <LI>"7 + 4"</LI>
+  <LI>"7 - PI + E"</LI>
   <LI>"[x], (3*x) - 9"</LI>
   <LI>"[x,y], 200/(y + 30)"</LI>
   <LI>"[x,y] , x^2 + y^2"</LI>
