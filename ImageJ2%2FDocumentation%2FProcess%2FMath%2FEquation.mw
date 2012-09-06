@@ -27,7 +27,7 @@ are [X,Y,Z,C,T] I can legally specify a function like this: "[x,y,z], x + z". No
 we specify it to keep the positional indexes populated correctly. And we are ignoring the C and T axes.
 
 One can also use the current image's data values as input to an equation.
-For instance here is an example that does so: "img + 23"
+For instance here is an example that does so: "img+23"
 When you query this equation for a loaded image it substitutes each pixel value for the "img" function and adds 23 to it
 (resulting in a brightening).
 
