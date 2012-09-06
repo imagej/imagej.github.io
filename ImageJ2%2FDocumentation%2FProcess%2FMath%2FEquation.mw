@@ -6,10 +6,10 @@ to fill images with data.
 An equation is defined by a list of index variable declarations and a formula definition. If the formula does not
 refer to any index variables they can be omitted from the definition. (Index variables are discussed a bit later)
 
-For example here is the most basic definition: "12"
+For example here is the most basic definition: <UL>"12"</UL>
 When you query this equation it returns the value 12. Note that there are no index variable definitions.
 
-Here is an example of an equation with index variable definitions: " [ u , v ] , u + v " 
+Here is an example of an equation with index variable definitions: <UL>" [ u , v ] , u + v "</UL> 
 When you query this equation for a loaded image it substitutes each x index for u and each y index for v
 and returns u + v (resulting in a ramp).
 
@@ -18,16 +18,13 @@ you designate. The key concept is that the order of index definition is importan
 such that it has axes [X,Y,FREQUENCY] you want your equation to match (i.e. "[u,v,freq] , freq * 1.3" )
 
 If you have a multidimensional set of data it is important to specify all axes as index variables. For instance for a 5d
-[X,Y,Z,C,T] data set we might want an equation that multiplies time by 2. If you specified it like this ("[ t ] , t * 2") the
-input image would substitute x values for the t variable and you would not get what you want. A correct specification
-would be: "[x,y,z,c,t] , t * 2"
+[X,Y,Z,C,T] data set we might want an equation that sets the pixel value to 2 times the time index. If you specified it like this <UL>"[ t ] , t * 2"</UL> the input image would substitute x values for the t variable and you would not get what you want. A correct specification would be: <UL>"[x,y,z,c,t] , t * 2"</UL>
 
 However one can underspecify a set of axes without issue if they are not used. Given an input image whose axes
-are [X,Y,Z,C,T] I can legally specify a function like this: "[x,y,z], x + z". Notice that we don't care about the Y axis but
-we specify it to keep the positional indexes populated correctly. And we are ignoring the C and T axes.
+are [X,Y,Z,C,T] I can legally specify a function like this: <UL>"[x,y,z], x + z"</UL> Notice that we don't care about the Y axis but we specify it to keep the positional indexes populated correctly. And we are ignoring the C and T axes.
 
 One can also use the current image's data values as input to an equation.
-For instance here is an example that does so: "img+23"
+For instance here is an example that does so: <UL>"img+23"</UL>
 When you query this equation for a loaded image it substitutes each pixel value for the "img" function and adds 23 to it
 (resulting in a brightening).
 
@@ -42,15 +39,17 @@ Equations are specified in pieces. The equation language supports:
   - parentheses
 
 Here are some simple examples: 
-  "7"
-  "7 + 4"
-  "[x], (3*x) - 9"
-  "[x,y], 200/(y + 30)"
-  "[x,y] , x^2 + y^2"
-  "img"
-  "[x,y] , sin(y)"
+<UL>
+  <LI>"7"</LI>
+  <LI>"7 + 4"</LI>
+  <LI>"[x], (3*x) - 9"</LI>
+  <LI>"[x,y], 200/(y + 30)"</LI>
+  <LI>"[x,y] , x^2 + y^2"</LI>
+  <LI>"img"</LI>
+  <LI>"[x,y] , sin(y)"</LI>
+</UL>
 
-There are numerous built in functions that are enumerated here:
+There are numerous built in functions that can appear in an equation. For reference they are enumerated here:
 
 <B>abs</B> : example ( "[x,y] , abs(y) " )
 
