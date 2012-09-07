@@ -28,3 +28,11 @@ ImageJA used to be a ''fork'' of [http://rsb.info.nih.gov/ij/ ImageJ], i.e. it w
 ** A simple bug fix in PolygonRoi drawing (it moves to the first point, but then draws a line to the same first point rather than the second).
 ** A little bug fix in StackWindow: if you have a 2D time lapse, ImageJ will still use the zSelector (rather than the tSelector).
 ** ImageJA can handle https:// URLs, too.
+
+== Where is the applet used? ==
+
+To the knowledge of the author of the advanced applet parts of ImageJA, the applet is used at least here:
+
+* [http://embl.de/ EMBL], for an internal web-based interface to a high-throughput system
+* [http://mpi-cbg.de/ MPI-CBG], to display ''C.elegans'' databases
+* In at least one [http://www.science-approach.com/ commercial e-learning website].
