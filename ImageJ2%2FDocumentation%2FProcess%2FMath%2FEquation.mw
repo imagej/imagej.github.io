@@ -253,4 +253,8 @@ value would be 255 and for a signed 8-bit image the value would be 127.</LI></UL
 <UL><LI>Returns the minimum possible value of a pixel for a given input image. For an unsigned 8-bit image the
 value would be 0 and for a signed 8-bit image the value would be -128.</LI></UL>
 
+<B>ulp</B> : example ( "[x,y], ulp(y) " )
+ 
+<UL><LI>Returns the the positive distance between the input floating-point value and the floating point value next larger in magnitude.</LI></UL>
+
 We can compare this language to the ImageJ 1.x Process > Math > Macro language. In ImageJ 1.x the default macro for the command is defined as "v = v + 50*sin(d/10)". Note that this exact string is not legal syntax in the new equation language. But it can now be specified as "img+50*sin(dctr/10)".
