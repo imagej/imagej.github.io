@@ -3,5 +3,5 @@ ImageJ2's Overlay Manager is fairly similar to the ImageJ 1.x ROI Manager. See t
 However there are some major differences between them. For instance:
 <ul>
 <li>In ImageJ2 overlays are automatically added to the Overlay Manager; they do not need to be selected and added separately.
-<li>Overlays are also removed from the Overlay Manager when no references to it exist from any open image. Thus the Overlay Manager does not act like a storage bin for overlays. It is rather a tool for working with overlays. Overlays can still be saved to and restored from disk.
+<li>Overlays are also removed from the Overlay Manager when no references to them exist from any open image. Thus the Overlay Manager does not act like a storage bin for overlays. It is rather a tool for working with overlays. Overlays can still be saved to and restored from disk.
 </ul>
