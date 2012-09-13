@@ -15,7 +15,7 @@ All examples presented on this page are always entire classes including a main m
 
 and ''Fiji.app/plugins/'':
 
-* loci_tools.jar (LOCI [[Bio-Formats]])
+* loci_tools.jar (OME [[Bio-Formats]])
 
 == Example 1 - Opening, creating and displaying images ==
 
@@ -81,13 +81,13 @@ public class Example1a
 
 === Example 1b - Opening an ImgLib2 image ===
 
-The typical way to open an image in ImgLib2 is to make use of the LOCI bioformats importer. Below you see two examples of how open to an image as ''(a)'' its own type (e.g. '''UnsignedByteType''') and ''(b)'' as float ('''FloatType'''). For ''(a)'' we assume, however, that the file contains some real valued numbers as defined by the interface '''RealType''' (see here for a complete Type hierarchy). Color images are opened as well and color is represented as its own dimension (like in the ImageJ Hyperstacks). 
+The typical way to open an image in ImgLib2 is to make use of the [http://loci.wisc.edu/software/bio-formats OME Bio-Formats] importer. Below you see two examples of how open to an image as ''(a)'' its own type (e.g. '''UnsignedByteType''') and ''(b)'' as float ('''FloatType'''). For ''(a)'' we assume, however, that the file contains some real valued numbers as defined by the interface '''RealType''' (see here for a complete Type hierarchy). Color images are opened as well and color is represented as its own dimension (like in the ImageJ Hyperstacks). 
 
 Note that for ''(a)'' we use an '''ArrayImg''' to hold the data. This means the data is held in one single java basic type array which results in optimal performance. The absolute size of image is, however, limited to 2^31-1 (~2 billion) pixels. The type of '''Img''' to use is defined by an '''ImgFactory'''. The '''ArrayImgFactory''' in this case has no arguments.
 
 In ''(b)'' we use the '''CellImg''' instead. It partitions the image data into n-dimensional cells each holding only a part of the data. The size of each cell is defined in the '''CellImgFactory'''. If you use the maximal cell size of 2^31-1 pixels (i.e. a maximally sized java native type array), you can address up to 2^62 pixels (~4 exapixels or 4 billion gigapixels) in one '''Img'''.
 
-The LOCI opener also requires '''Types''' that implement '''NativeType''', which means it is able to map the data into an java basic type array. All available '''Types''' until now are implementing '''NativeType''', if you want to work with some self-developed '''Type''' it would be easiest to copy the opened '''Img''' afterwards. Please also note that until now, the only '''Img''' that supports non-native types is the '''ListImg''' which stores every pixel as an individual object!
+The Bio-Formats importer also requires '''Types''' that implement '''NativeType''', which means it is able to map the data into an java basic type array. All available '''Types''' until now are implementing '''NativeType''', if you want to work with some self-developed '''Type''' it would be easiest to copy the opened '''Img''' afterwards. Please also note that until now, the only '''Img''' that supports non-native types is the '''ListImg''' which stores every pixel as an individual object!
 
 '''Important''': it does not matter which type of '''Img''' you use to hold the data as we will use '''Iterators''' and '''RandomAccesses''' to access the image content. It might be, however, important if you work on two '''Img''' at the same time using '''Iterators''', see Example2.
 
