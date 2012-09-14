@@ -1,6 +1,8 @@
 Here is logged all modification made to the structure of this wiki (not its 
 content), such as installation of extension and so.
 
+* 12/09/14 - JES - allow short URLs to work without redirection
+
 * 12/07/15 - JES - switch from the simple math captcha to [http://www.mediawiki.org/wiki/Extension:ConfirmEdit#ReCaptcha reCAPTCHA]; spammer bots seem to have become too clever
 
 * 12/07/15 - JES - [http://www.mediawiki.org/wiki/Extension:ConfirmEdit require a math captcha] to register an account: we got 83 new accounts in the past 5 days, most of them most likely spammers
