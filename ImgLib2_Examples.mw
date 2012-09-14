@@ -1673,9 +1673,32 @@ In image processing it is sometimes necessary to convolve images with non-separa
 [[File:FourierConvolution.jpg|780px]]
 ''Shows the effect of the Fourier convolution. The left image was convolved with the kernel depicted in the lower left corner, the right panel shows the convolved image. Note that the computation speed does not depend on the size or the shape of the kernel.''
 
+<span style="color:#FF0000">''Important: This source code is only GPLv2!''</span>
+
 '''[https://github.com/imagej/imglib/blob/master/imglib2/examples/src/main/java/Example6b.java Example6b.java]'''
 <source lang="java">
+/**
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License 2
+ * as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+ *
+ * An execption is the 1D FFT implementation of Dave Hale which we use as a
+ * library, wich is released under the terms of the Common Public License -
+ * v1.0, which is available at http://www.eclipse.org/legal/cpl-v10.html
+ *
+ * @author Stephan Preibisch (stephan.preibisch@gmx.de)
+ */
 import ij.ImageJ;
+import mpicbg.util.RealSum;
 import net.imglib2.algorithm.fft.FourierConvolution;
 import net.imglib2.exception.IncompatibleTypeException;
 import net.imglib2.img.Img;
@@ -1685,7 +1708,6 @@ import net.imglib2.io.ImgIOException;
 import net.imglib2.io.ImgOpener;
 import net.imglib2.type.numeric.RealType;
 import net.imglib2.type.numeric.real.FloatType;
-import util.RealSum;
 
 /**
  * Perform a gaussian convolution using fourier convolution
