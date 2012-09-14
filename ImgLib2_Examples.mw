@@ -31,6 +31,10 @@ Internally, we use a compatibility '''Img''' to represent the data which is as f
 
 '''[https://github.com/imagej/imglib/blob/master/imglib2/examples/src/main/java/Example1a.java Example1a.java]'''
 <source lang="java">
+import ij.ImageJ;
+import ij.ImagePlus;
+import ij.io.Opener;
+
 import java.io.File;
 
 import net.imglib2.img.ImagePlusAdapter;
@@ -39,14 +43,10 @@ import net.imglib2.img.display.imagej.ImageJFunctions;
 import net.imglib2.type.NativeType;
 import net.imglib2.type.numeric.NumericType;
 
-import ij.ImageJ;
-import ij.ImagePlus;
-import ij.io.Opener;
-
 /**
- * Opens a file with ImageJ and wraps it into an ImgLib {@link Image}.
+ * Opens a file with ImageJ and wraps it into an ImgLib {@link Img}.
  *
- * @author Stephan Preibisch &amp; Stephan Saalfeld
+ * @author Stephan Preibisch & Stephan Saalfeld
  *
  */
 public class Example1a
