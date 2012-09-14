@@ -2102,7 +2102,7 @@ import net.imglib2.view.Views;
 
 /**
  * Working with sparse data
- * 
+ *
  * Create some random points with random values, display them and perform
  * a Gaussian convolution on the VIRTUAL data
  */
@@ -2112,49 +2112,49 @@ public class Example8a
 	{
 		// the interval in which to create random points
 		FinalInterval interval = new FinalInterval( new long[] { 375, 200 } );
-		
+
 		// create an IterableRealInterval
 		IterableRealInterval< FloatType > realInterval = createRandomPoints( interval, 250 );
 
 		// using nearest neighbor search we will be able to return a value an any position in space
-		NearestNeighborSearch< FloatType > search = 
-			new NearestNeighborSearchOnKDTree<FloatType>( 
+		NearestNeighborSearch< FloatType > search =
+			new NearestNeighborSearchOnKDTree<FloatType>(
 				new KDTree< FloatType> ( realInterval ) );
-		
+
 		// make it into RealRandomAccessible using nearest neighbor search
-		RealRandomAccessible< FloatType > realRandomAccessible = 
+		RealRandomAccessible< FloatType > realRandomAccessible =
 			Views.interpolate( search, new NearestNeighborInterpolatorFactory< FloatType >() );
-		
+
 		// convert it into a RandomAccessible which can be displayed
 		RandomAccessible< FloatType > randomAccessible = Views.raster( realRandomAccessible );
-		
+
 		// set the initial interval as area to view
 		RandomAccessibleInterval< FloatType > view = Views.interval( randomAccessible, interval );
-		
+
 		// display the view
 		ImageJFunctions.show( view );
 
 		// compute a gauss on it
-		Img< FloatType > convolved = 
+		Img< FloatType > convolved =
 			new ArrayImgFactory< FloatType >().create( interval, new FloatType() );
 
-		Gauss.inFloat( new double[] { 3, 3 }, view, interval, convolved, 
+		Gauss.inFloat( new double[] { 3, 3 }, view, interval, convolved,
 			new Point( view.numDimensions() ), convolved.factory() );
-		
+
 		// display the view
 		ImageJFunctions.show( convolved );
 	}
 
 	/**
-	 * Create a number of n-dimensional random points in a certain interval 
+	 * Create a number of n-dimensional random points in a certain interval
 	 * having a random intensity 0...1
-	 * 
+	 *
 	 * @param interval - the interval in which points are created
 	 * @param numPoints - the amount of points
-	 * 
+	 *
 	 * @return a RealPointSampleList (which is an IterableRealInterval)
 	 */
-	public static RealPointSampleList< FloatType > createRandomPoints( 
+	public static RealPointSampleList< FloatType > createRandomPoints(
 		RealInterval interval, int numPoints )
 	{
 		// the number of dimensions
@@ -2162,23 +2162,23 @@ public class Example8a
 
 		// a random number generator
 		Random rnd = new Random( System.currentTimeMillis() );
-		
+
 		// a list of Samples with coordinates
-		RealPointSampleList< FloatType > elements = 
+		RealPointSampleList< FloatType > elements =
 			new RealPointSampleList<FloatType>( numDimensions );
-		
+
 		for ( int i = 0; i < numPoints; ++i )
 		{
 			RealPoint point = new RealPoint( numDimensions );
-			
+
 			for ( int d = 0; d < numDimensions; ++d )
-				point.setPosition( rnd.nextDouble() * 
+				point.setPosition( rnd.nextDouble() *
 					( interval.realMax( d ) - interval.realMin( d ) ) + interval.realMin( d ), d );
 
 			// add a new element with a random intensity in the range 0...1
 			elements.add( point, new FloatType( rnd.nextFloat() ) );
 		}
-		
+
 		return elements;
 	}
 
