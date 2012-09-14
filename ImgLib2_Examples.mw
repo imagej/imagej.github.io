@@ -374,16 +374,18 @@ public class Example2a
 
 === Example 2b - Duplicating an Img using a different ImgFactory ===
 
-<span style="color:#FF0000">'''WARNING: The first code in this example makes a mistake on purpose!'''</span> It intends to show that the iteration order of '''Cursors''' is important to consider. The goal is to copy the content of an '''ArrayImg''' (i.e. an '''Img''' that was created using an '''ArrayImgFactory''') into a '''CellImg'''. Using only '''Cursors''' for both images will have a wrong result as an '''ArrayImg''' and a '''CellImg''' have different iteration orders. An '''ArrayImg''' is iterated linearly, while a '''CellImg''' is iterate cell-by-cell, but linearly within each cell.
+<span style="color:#FF0000">'''WARNING:''' The '''copyImageWrong''' method in this example makes a mistake on purpose!</span> It intends to show that the iteration order of '''Cursors''' is important to consider. The goal is to copy the content of an '''ArrayImg''' (i.e. an '''Img''' that was created using an '''ArrayImgFactory''') into a '''CellImg'''. Using only '''Cursors''' for both images will have a wrong result as an '''ArrayImg''' and a '''CellImg''' have different iteration orders. An '''ArrayImg''' is iterated linearly, while a '''CellImg''' is iterate cell-by-cell, but linearly within each cell.
 
 [[Image:ImgLib2example2b.png|780px]]
 ''Shows the result if two Cursors are used that have a different iteration order. Here we are wrongly copying an ArrayImg (left) into a CellImg (right).''
+
+<span style="color:#FF0000">The correct code for the copy-method (in '''copyImageCorrect''') requires the use of a '''RandomAccess'''.</span> We use a '''Cursor''' to iterate over all pixels of the input and a '''RandomAccess''' which we set to the same location the output. Note that the ''setPosition()'' call of the '''RandomAccess''' directly takes the '''Cursor''' as input, which is possible because '''Cursor''' implements '''Localizable'''. Please also note that we use a '''LocalizingCursor''' instead of a normal '''Cursor''' because we need the location of the '''Cursor''' at every pixel.
 
 '''[https://github.com/imagej/imglib/blob/master/imglib2/examples/src/main/java/Example2b.java Example2b.java]'''
 <source lang="java">
 import ij.ImageJ;
 import net.imglib2.Cursor;
-import net.imglib2.exception.IncompatibleTypeException;
+import net.imglib2.RandomAccess;
 import net.imglib2.img.Img;
 import net.imglib2.img.ImgFactory;
 import net.imglib2.img.array.ArrayImgFactory;
@@ -398,31 +400,35 @@ import net.imglib2.type.numeric.real.FloatType;
  * Here we want to copy an ArrayImg into a CellImg using a generic method,
  * but we cannot do it with simple Cursors as they have a different iteration order.
  *
- * @author Stephan Preibisch &amp; Stephan Saalfeld
+ * @author Stephan Preibisch & Stephan Saalfeld
  *
  */
 public class Example2b
 {
 
-	public Example2b() throws ImgIOException, IncompatibleTypeException
+	public Example2b() throws ImgIOException
 	{
 		// open with ImgOpener using an ArrayImgFactory
-		Img< FloatType > img = new ImgOpener().openImg( "DrosophilaWing.tif", 
+		Img< FloatType > img = new ImgOpener().openImg( "DrosophilaWing.tif",
 			new ArrayImgFactory< FloatType >(), new FloatType() );
 
 		// copy the image into a CellImg with a cellsize of 20x20
-		Img< FloatType > duplicate = copyImage( img, new CellImgFactory< FloatType >( 20 ) );
+//		Img< FloatType > duplicate = copyImageWrong( img, new CellImgFactory< FloatType >( 20 ) );
+		Img< FloatType > duplicate = copyImageCorrect( img, new CellImgFactory< FloatType >( 20 ) );
 
 		// display the copy and the original
 		ImageJFunctions.show( img );
 		ImageJFunctions.show( duplicate );
 	}
 
-	public < T extends Type< T >> Img< T > copyImage( final Img< T > input, 
+	/**
+	 * WARNING: This method makes a mistake on purpose!
+	 */
+	public < T extends Type< T >> Img< T > copyImageWrong( final Img< T > input,
 		final ImgFactory< T > imgFactory )
 	{
 		// create a new Image with the same dimensions but the other imgFactory
-		// note that the input provides the size for the new image as it 
+		// note that the input provides the size for the new image as it
 		// implements the Interval interface
 		Img< T > output = imgFactory.create( input, input.firstElement() );
 
@@ -441,11 +447,42 @@ public class Example2b
 			cursorOutput.get().set( cursorInput.get() );
 		}
 
-		//. return the copy
+		// return the copy
 		return output;
 	}
 
-	public static void main( String[] args ) throws ImgIOException, IncompatibleTypeException
+	/**
+	 * This method copies the image correctly, using a RandomAccess.
+	 */
+  public < T extends Type< T >> Img< T > copyImageCorrect( final Img< T > input,
+    final ImgFactory< T > imgFactory )
+  {
+    // create a new Image with the same dimensions but the other imgFactory
+    // note that the input provides the size for the new image by implementing the Interval interface
+    Img< T > output = imgFactory.create( input, input.firstElement() );
+
+    // create a cursor that automatically localizes itself on every move
+    Cursor< T > cursorInput = input.localizingCursor();
+    RandomAccess< T > randomAccess = output.randomAccess();
+
+    // iterate over the input cursor
+    while ( cursorInput.hasNext())
+    {
+      // move input cursor forward
+      cursorInput.fwd();
+
+      // set the output cursor to the position of the input cursor
+      randomAccess.setPosition( cursorInput );
+
+      // set the value of this pixel of the output image, every Type supports T.set( T type )
+      randomAccess.get().set( cursorInput.get() );
+    }
+
+    // return the copy
+    return output;
+  }
+
+	public static void main( String[] args ) throws ImgIOException
 	{
 		// open an ImageJ window
 		new ImageJ();
@@ -453,38 +490,6 @@ public class Example2b
 		// run the example
 		new Example2b();
 	}
-}
-</source>
-
-<span style="color:#FF0000">The correct code for the copy-method requires the use of a '''RandomAccess'''.</span> We use a '''Cursor''' to iterate over all pixels of the input and a '''RandomAccess''' which we set to the same location the output. Note that the ''setPosition()'' call of the '''RandomAccess''' directly takes the '''Cursor''' as input, which is possible because '''Cursor''' implements '''Localizable'''. Please also note that we use a '''LocalizingCursor''' instead of a normal '''Cursor''' because we need the location of the '''Cursor''' at every pixel.
-
-<source lang="java">
-public < T extends Type< T >> Img< T > copyImage( final Img< T > input, 
-	final ImgFactory< T > imgFactory )
-{
-	// create a new Image with the same dimensions but the other imgFactory
-	// note that the input provides the size for the new image by implementing the Interval interface
-	Img< T > output = imgFactory.create( input, input.firstElement() );
-
-	// create a cursor that automatically localizes itself on every move
-	Cursor< T > cursorInput = input.localizingCursor();
-	RandomAccess< T > randomAccess = output.randomAccess();
-
-	// iterate over the input cursor
-	while ( cursorInput.hasNext())
-	{
-		// move input cursor forward
-		cursorInput.fwd();
-
-		// set the output cursor to the position of the input cursor
-		randomAccess.setPosition( cursorInput );
-
-		// set the value of this pixel of the output image, every Type supports T.set( T type )
-		randomAccess.get().set( cursorInput.get() );
-	}
-
-	// return the copy
-	return output;
 }
 </source>
 
