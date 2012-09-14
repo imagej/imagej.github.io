@@ -1163,22 +1163,22 @@ import net.imglib2.type.numeric.RealType;
 import net.imglib2.view.Views;
 
 /**
- * Here we use special cursors to find the local minima and 
+ * Here we use special cursors to find the local minima and
  * display them with spheres in another image
  */
 public class Example4b
 {
-	public < T extends RealType< T > & NativeType< T > > Example4a() 
+	public < T extends RealType< T > & NativeType< T > > Example4b()
 		throws ImgIOException, IncompatibleTypeException
 	{
 		// open with ImgOpener
 		Img< T > img = new ImgOpener().openImg( "DrosophilaWing.tif" );
-		
+
 		// first we do a small in-place gaussian smoothing with a sigma of 1
 		Gauss.inDoubleInPlace( new double[]{ 1, 1 }, img );
-		
+
 		// find local minima and paint them into another image as spheres
-		Img< BitType > display = 
+		Img< BitType > display =
 			findAndDisplayLocalMinima( img, new ArrayImgFactory< BitType >(), new BitType() );
 
 		// display output and input
@@ -1187,9 +1187,9 @@ public class Example4b
 	}
 
 	/**
-	 * Checks all pixels in the image if they are a local minima and 
+	 * Checks all pixels in the image if they are a local minima and
 	 * draws a circle into the output if they are
-	 * 
+	 *
 	 * @param source - the image data to work on
 	 * @param imageFactory - the factory for the output img
 	 * @param outputType - the output type
@@ -1205,13 +1205,13 @@ public class Example4b
 
 		// Create a new image for the output
 		Img< U > output = imageFactory.create( source, outputType );
-		
+
 		// define an interval that is one pixel smaller on each side in each dimension,
-		// so that the search in the 8-neighborhood (3x3x3...x3) never goes outside 
+		// so that the search in the 8-neighborhood (3x3x3...x3) never goes outside
 		// of the defined interval
 		long[] min = new long[ numDimensions ];
 		long[] max = new long[ numDimensions ];
-		
+
 		for ( int d = 0; d < numDimensions; ++d )
 		{
 			min[ d ] = source.min( d ) + 1;
@@ -1220,25 +1220,25 @@ public class Example4b
 
 		// create a view on the source with this interval
 		source = Views.interval( source, min, max );
-		
-		// create a Cursor that iterates over the source and checks in a 8-neighborhood 
+
+		// create a Cursor that iterates over the source and checks in a 8-neighborhood
 		// if it is a minima
 		Cursor< T > cursor = Views.iterable( source ).localizingCursor();
 
 		// instantiate a local neighborhood that we will use all the time
 		// it iterates all pixels adjacent to the center, but skips the center
 		// pixel (this corresponds to an 8-neighborhood in 2d or 26-neighborhood in 3d, ...)
-		LocalNeighborhood< T > localNeighborhood = 
+		LocalNeighborhood< T > localNeighborhood =
 			new LocalNeighborhood< T >( source, cursor );
-		
+
 		// iterate over the image
 		while ( cursor.hasNext() )
 		{
 			cursor.fwd();
-			
+
 			// update the local neighborhood cursor to the position of the cursor
 			localNeighborhood.updateCenter( cursor );
-			
+
 			// what is the value that we investigate
 			final T centerValue = cursor.get();
 
@@ -1254,9 +1254,9 @@ public class Example4b
 				{
 					isMinimum = false;
 					break;
-				}				
+				}
 			}
-			
+
 			if ( isMinimum )
 			{
 				// draw a sphere of radius one in the new image
