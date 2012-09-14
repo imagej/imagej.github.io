@@ -17,6 +17,8 @@ and ''Fiji.app/plugins/'':
 
 * loci_tools.jar (OME [[Bio-Formats]])
 
+Alternately, you can access the examples from the [https://github.com/imagej/imglib ImgLib Git repository]. After cloning the ImgLib source code, open the ''imglib2/examples'' project in your favorite IDE. See [[Developing_Imglib]] for further details.
+
 == Example 1 - Opening, creating and displaying images ==
 
 The first example illustrates the most basic operations of opening, creating, and displaying image content in ImgLib2. It will first focus on entires images ('''Img<T>'''), but also show how to display subsets only.
