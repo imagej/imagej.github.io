@@ -80,6 +80,7 @@ public class Example1a
 		new Example1a();
 	}
 }
+
 </source>
 
 === Example 1b - Opening an ImgLib2 image ===
