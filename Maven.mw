@@ -76,4 +76,4 @@ There are many more things you can do with Maven, but chances are you will not n
 
 The simplicity of the ''pom.xml'' you need comes from the fact that Maven defines implicit defaults. It calls that ''convention over configuration''.  But since we are not converting projects (or at least since we are flexible enough to adapt), it is strongly recommended to stay with the defaults as much as possible. It also makes your project more accessible, something that Fiji and the other projects in scijava excel at.
 
-Now, in the context of scijava, you will most likely never write a ''pom.xml'' from scratch. You will rather more likely edit an existing one, possibly after having copied it.
+Now, in the context of scijava, you will most likely never write a ''pom.xml'' from scratch. You will rather more likely edit an existing one, possibly after having copied it. We recommend using the [https://github.com/imagej/imagej-tutorials/tree/master/load-and-display-dataset ImageJ "Load and Display a Dataset" tutorial] as a starting point!
