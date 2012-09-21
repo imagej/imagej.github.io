@@ -120,7 +120,7 @@ This [http://fiji.sc/javadoc/ij/process/ImageProcessor.html class] also has some
 
 == How to store settings persistently ==
 
-ImageJ (and therefore Fiji, too) has a way to store key/value pairs persistently, i.e. they are available even after a restart. The settings are stored in a file called ''IJ_Prefs.txt'' in the subdirectory called ''.imagej/'' in your home directory (on Windows, directly in your home directory).
+ImageJ (and therefore Fiji, too) has a way to store key/value pairs persistently, i.e. they are available even after a restart. The settings are stored in a file called ''IJ_Prefs.txt'' in the subdirectory called ''.imagej/'' in your home directory (on Windows, directly in your home directory; on Mac, in ''~/Library/Preferences'').
 
 '''Note:''' the settings are only saved upon <u>regular</u> exit of Fiji; If you kill the process, or if the Java Runtime crashes, they are <u>not</u> saved. You can ask for the settings to be saved explicitly, though.
 
