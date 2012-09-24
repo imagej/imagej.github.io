@@ -1,0 +1,102 @@
+TrackScheme displays a kind of "track map", where a track is laid on pane, arranged vertically over time, as a Parisian subway train map. Each spot is displayed as a cell in the map. Each cell displays a thumbnail of the spot.
+
+
+[[Image:TrackScheme Start.png|center|700px|border]]
+
+
+== TrackScheme in a nutshell ==
+
+You can do quite some things using TrackScheme, notably track analysis. This is not the ofcus of this tutorial, we will simply be focusing on the track editing features. However, here is a brief description of what the toolbar buttons do.
+
+[[Image:TrackSchemeToolbarExplanation.png]]
+
+We will be mainly using the '''Redo layout''' and button. 
+
+
+=== Removing single spots in TrackScheme ===
+
+* Click on its cell in TrackScheme to select it. You should notice that the hyperstack displayer has moved to display the second frame, the central Z slice of the spot, and that the target spot is now colored in green. The TrackMate displayers and the TrackScheme are linked and share the same selection. This will become very handy soon.
+* With the TrackScheme window selected, press the 'delete' key. The cell disappears in TrackScheme, and the spot vanishes from the displayer. 
+* To refresh the view, click the '''Redo layout''' button in TrackScheme. Each column is re-populated and re-numbered.
+
+
+=== Removing whole tracks in TrackScheme ===
+
+* To select a whole track for deletion, there is two way:
+*# Draw a selection rectangle around the whole track representation. 
+*# Select one spot or link in the track. Right-click anywhere on TrackScheme: a menu appears, in which you will find '''Select whole track'''.
+* Notice in the displayer that the selected track appear with a green and thick line, so as to highlight it. 
+* To delete all of it, simply press the 'delete' key in TrackScheme, or use the right-click menu to do so. 
+
+Press the '''Redo layout''' button when you are done. There should be four tracks remaining. Notice that their color changed as you deleted some of them. Their default color-map goes from blue to red and is re-adjusted every time the track number changes. 
+
+
+== Editing tracks: creating links ==
+
+Now we want to connect the lonesome spots to the track they belong to. This is all about creating links, and there are two ways to do that.
+
+
+=== By drag & drop ===
+
+You can create a link between two cells in TrackScheme simply by enabling the linking button on the TrackScheme toolbar, and dragging a line between the source cell and the target cell.
+
+This is pictured below, where the first cell of the top track is attached to the track number 2, as it should. For visibility, I brought on this screenshot the target cell closer to the lane of the track 2. You can normally find it either on its own lane or on the far right of the panel. 
+
+[[Image:TrackMate CreateLinksInTrackScheme annotated.png|700px]]
+
+Press the '''Redo layout''' button to see the arranged result. The first spot is now incorporated in the right track.
+
+
+=== Using selection and right-click menu ===
+
+The cell in TrackScheme cannot be easily moved due to a very tricky bug we cannot solve. When the source and target cells are far away, it might be better to use another way to create links. We do this using the shared selection.
+
+In TrackScheme, find the solitary cell in frame 9. That is the one we created earlier, to add a missed spot when the top cell was dividing. When you click on the corresponding cell in TrackScheme, it gets highlighted in green. In the HyperStack displayer, the displayed slice and time points are changed to display the spot, also highlighted in green.
+
+We want to link this cell to the mother cell in the frame 8, just before it divided. To do so, 
+* In the HyperStack displayer, move to the frame 8
+* Hold the 'Shift' key
+* Click on the mother cell
+It gets highlighted in the displayer, and in TrackScheme as well. You now have two cells in the selection.
+
+To create a link between the two, 
+* Right-click anywhere in TrackScheme
+* In the menu that pops-up, select '''Link 2 spots'''.
+The newly created link is displayed in magenta. Note that the track arrangement is not changed; you need to press the '''Redo layout''' button to rearrange the tracks. 
+
+After doing so, you should now see a branching track, as picture below:
+
+[[Image:TrackMate BranchingTrack.png]]
+
+
+
+=== Creating several links at once ===
+
+Using the 'Shift + Left click', we can put several cells in the selection, and create the links between each pair. For instance, we will now merge the small bud of the newly edited track with the solitary cell and the rest of the branch for the top cell lineage.
+
+In the HyperStack displayer with 'Shift-click', select 
+* the branch end of the second track in the frame 9,
+* the closest solitary cell in frame 10, 
+* the beginning of the track 3.
+You should have 3 cells in the selection, as you can verify in the left-side pane of TrackScheme. Bring the right-click menu of TrackScheme, and select '''Link 3 spots'''. <u>Two</u> links are created. You should see that the track colors have changed in the displayer.
+
+Pressing the '''Redo layout''' will re-arrange the 2nd track, which now has two branches that extend to the end of the movie. 
+
+
+As an exercise, try to merge the first track, the third track and the 2 solitary spots in one shot. 
+
+
+== Editing tracks: deleting links ==
+
+We do not have much to say here. The tracks we generated had missing links, but no spurious ones. So we do not need to remove any. But here is how to do it:
+
+In TrackScheme, select the target link by clicking on it; it gets highlighted in the displayer as well. Press the 'Delete' key to remove it. 
+
+Removing a link often splits a track in 2 new tracks. To have them properly re-arranged,  press the '''Redo layout''' button.
+
+
+== Wrapping up ==
+
+Plus or minus the localization errors and some incorrect cell radii, you now have the full lineage in 3D of this short movie. This concludes this tutorial on manual editing in TrackMate. Here is a picture of the final results, as well as the [http://fiji.sc/tinevez/TrackMate/Celegans-5pc_17timepoints_final.xml corresponding xml file]:
+
+[[Image:TrackMate SmallLineage.png]]
