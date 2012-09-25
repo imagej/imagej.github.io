@@ -51,12 +51,12 @@ Press the '''Redo layout''' button to see the arranged result. The first spot is
 
 The cell in TrackScheme cannot be easily moved due to a very tricky bug we cannot solve. When the source and target cells are far away, it might be better to use another way to create links. We do this using the shared selection.
 
-In TrackScheme, find the solitary cell in frame 9. That is the one we created earlier, to add a missed spot when the top cell was dividing. When you click on the corresponding cell in TrackScheme, it gets highlighted in green. In the HyperStack displayer, the displayed slice and time points are changed to display the spot, also highlighted in green.
+In TrackScheme, select a cell. It gets highlighted in the linked viewers: the displayed slice and time points are changed to display the spot, also highlighted in green.
 
-We want to link this cell to the mother cell in the frame 8, just before it divided. To do so, 
-* In the HyperStack displayer, move to the frame 8
+We want to link this cell to another one. To do so, first select any cell by clicking on it, whether in the viewer or in the TrackScheme panel. It should get highlighted everywhere. Then, 
+* In the viewer, move to the frame that contains the target cell
 * Hold the 'Shift' key
-* Click on the mother cell
+* Click on the target cell
 It gets highlighted in the displayer, and in TrackScheme as well. You now have two cells in the selection.
 
 To create a link between the two, 
@@ -64,7 +64,7 @@ To create a link between the two,
 * In the menu that pops-up, select '''Link 2 spots'''.
 The newly created link is displayed in magenta. Note that the track arrangement is not changed; you need to press the '''Redo layout''' button to rearrange the tracks. 
 
-After doing so, you should now see a branching track, as picture below:
+This can be used to create branching links, as picture below:
 
 [[Image:TrackMate BranchingTrack.png]]
 
@@ -72,31 +72,14 @@ After doing so, you should now see a branching track, as picture below:
 
 === Creating several links at once ===
 
-Using the 'Shift + Left click', we can put several cells in the selection, and create the links between each pair. For instance, we will now merge the small bud of the newly edited track with the solitary cell and the rest of the branch for the top cell lineage.
+Using the 'Shift + Left click', we can put several cells in the selection, and create the links between each pair. Simply use 'Shift-click' to add or remove cells from the selection. They get highlighted both in TrackScheme, in the linked viewer, and on TrackScheme sidebar.  
 
-In the HyperStack displayer with 'Shift-click', select 
-* the branch end of the second track in the frame 9,
-* the closest solitary cell in frame 10, 
-* the beginning of the track 3.
-You should have 3 cells in the selection, as you can verify in the left-side pane of TrackScheme. Bring the right-click menu of TrackScheme, and select '''Link 3 spots'''. <u>Two</u> links are created. You should see that the track colors have changed in the displayer.
-
-Pressing the '''Redo layout''' will re-arrange the 2nd track, which now has two branches that extend to the end of the movie. 
-
-
-As an exercise, try to merge the first track, the third track and the 2 solitary spots in one shot. 
+Bring the right-click menu of TrackScheme, and select '''Link X spots'''. Links are created for cells that are consecutive in time, regardless of the frame interval between two consecutive cells. If creating these links generate a novel track, you should see that the track colors have changed in the displayer. No links are created between two cells if they are already linked, or if they belong to the same frame.
 
 
 == Editing tracks: deleting links ==
 
-We do not have much to say here. The tracks we generated had missing links, but no spurious ones. So we do not need to remove any. But here is how to do it:
 
-In TrackScheme, select the target link by clicking on it; it gets highlighted in the displayer as well. Press the 'Delete' key to remove it. 
+In TrackScheme, links are selectable, therefore deletable. Select the target link by clicking on it; it gets highlighted in the displayer as well. Press the 'Delete' key to remove it. 
 
 Removing a link often splits a track in 2 new tracks. To have them properly re-arranged,  press the '''Redo layout''' button.
-
-
-== Wrapping up ==
-
-Plus or minus the localization errors and some incorrect cell radii, you now have the full lineage in 3D of this short movie. This concludes this tutorial on manual editing in TrackMate. Here is a picture of the final results, as well as the [http://fiji.sc/tinevez/TrackMate/Celegans-5pc_17timepoints_final.xml corresponding xml file]:
-
-[[Image:TrackMate SmallLineage.png]]
