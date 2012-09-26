@@ -16,6 +16,26 @@ You need to replace the first argument by a valid path to a sample image and the
 
 If your plugin is not a filter plugin, i.e. if it does not require an image to run, simply use the ''Debug.run(plugin, parameters)'' method.
 
+== Attaching to ImageJ instances ==
+
+Sometimes, we need to debug things directly in ImageJ, for example because there might be issues with the plugin discovery (ImageJ wants to find the plugins in ''<ImageJ>/plugins/'', and often we want to bundle them as ''.jar'' files, both of which are incompatible with Eclipse debugging). JDWP (''Java Debug Wire Protocol'') to the rescue!
+
+After starting the Java Virtual Machine in a special mode, debuggers (such as Eclipse's built-in one) can attach to it. To start Fiji in said mode, you need to pass the ''-agentlib:jdwp=...'' Java option:
+
+<source lang="bash">
+Fiji.app/fiji-linux64 -agentlib:jdwp=server=y,transport=dt_socket --
+</source>
+
+(the ''--'' marker separates the Java options -- if any -- from the ImageJ options). Once started that way, Fiji will wait for the debugger to be attached, after printing a message such as:
+
+<blockquote>Listening for transport dt_socket at address: 46317</blockquote>
+
+In Eclipse (or whatever [https://en.wikipedia.org/wiki/JDWP JDWP]-enabled debugger) select the correct project so that the source code can be found, mark the break-points where you want execution to halt (e.g. to inspect variables' values), and after clicking on ''Run>Debug Configurations...'' right-click on the ''Remote Java Application'' item in the left-hand side list and select ''New''. Now you only need to make sure that the port matches the value that was printed to the console earlier (in the example above, ''46317'').
+
+'''Note''': you might want to set aside a fixed port number if you do this often, so that you can re-use the same Debug Configuration without having to re-set the port all the time. Typically, ports above 49152 are available for such use. The command-line option needs to be adjusted in that case, like this: ''-agentlib:jdwp=server=y,transport=dt_socket<b>,address=50001</b>''.
+
+'''Note, too''': calling ''fiji -agentlib:jdwp=help --'' will print nice usage information with documentation of other JDWP options.
+
 = Switching on ImageJ's debug mode =
 
 ImageJ itself outputs a lot of debug messages, when asked for them: Simply check ''Debug mode'' in the dialog popping up when clicking on the ''Edit>Options>Misc...'' menu item.
