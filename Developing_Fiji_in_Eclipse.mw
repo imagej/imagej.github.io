@@ -28,14 +28,14 @@ Install Git using your preferred package manager or download from the [http://gi
 
 ==Checkout Fiji==
 
-Do <span style="color:#ff0000">not</span> clone Fiji into your Eclipse work space. We are using Maven to manage our projects and Eclipse tries very hard to interfer with this when it is allowed to.
+Do <span style="color:#ff0000">not</span> clone Fiji into your Eclipse work space. We are using Maven to manage our projects and Eclipse tries very hard to interfere with this when it is allowed to.
 
 <source lang="bash">
 cd ~/
 git clone git://github.com/fiji/fiji
 </source>
 
-This will create the folder ''~/fiji/'' where you have the core Fiji repository (you will initialize your Eclipse work space in ''~/workspace/'' later).
+This will create the folder ''~/fiji/'' where you have the core Fiji repository (you will initialize your Eclipse workspace in ''~/workspace/'' later).
 
 Should you want to work on source code that is not part of the core Fiji repository, you can check out submodules you want to work with. Note: not all repositories we reference in submodules are handled by Maven/
 
