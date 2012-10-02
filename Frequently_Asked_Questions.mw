@@ -89,9 +89,51 @@ As with 3D Viewer crashes, there are quite a large number of possible reasons. P
 
 = Development =
 
-== How can I build Fiji myself? ==
+== How do I develop Fiji in Eclipse? ==
+
+Please refer to the page ''[[Developing Fiji in Eclipse]]''.
+
+== How can I build Fiji from the command-line? ==
 
 [[Downloading and Building Fiji From Source|Download and build it]]. You need Git for that (if you are on Windows, please use [http://msysgit.googlecode.com Git for Windows]).
+
+== What is Maven, and why did you pick it? ==
+
+Maven is a system to build ''.jar'' files from source code, and to manage dependencies (i.e. it is easy to specify which minimal version of, say, ImageJ is required by the source code).
+
+We picked it because we need a standard way to interact and collaborate with other projects and with each other. For starters, it allows developers to stay with their favorite development environment (Eclipse, Netbeans, IntelliJ, etc).
+
+For details, please refer to our page on [[Maven]].
+
+== How do I create a new ImageJ plugin using Maven? ==
+
+Please refer to our page on [[Maven]].
+
+== How do I upload a new release of a Fiji plugin? ==
+
+Please refer to our tutorial [[Uploading plugins|how to upload files]].
+
+== How do I upload a new release of a core ImageJ library such as ImgLib? ==
+
+The same way as a Fiji plugin. But it will upload to the ImageJ update site (you can only upload to one update site at a time, though, see also [[http://trac.imagej.net/ticket/1468 this ticket]]).
+
+== What is the recommended way to develop in Fiji? ==
+
+Over the years we evolved a development style as follows:
+
+* create a topic branch
+* test as much as you need to be comfortable to merge
+* merge
+* deal with any fall-out
+
+This development style has been adopted by the [http://developer.imagej.net/ ImageJDev team], with two additions (making the fall-out step much smaller):
+
+* tests are added as automated regression tests (to be run by [http://jenkins.imagej.net/ the continuous integration] whenever new changes were pushed) whenever possible.
+* merges are usually done with ''--no-ff'', so that even fast-forwarding branches (i.e. rebased on top of ''master'') will get a merge commit in which the branch is described more broadly.
+
+== How to report issues? ==
+
+Add a ticket report to [http://fiji.sc/bugzilla/ Fiji's] or to [http://trac.imagej.net/ ImageJDev's] ticket system; private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in Fiji. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
 
 == I cloned fiji.git, but have a compile error regarding a class ''Appearance''. ==
 
@@ -140,50 +182,6 @@ Please ask any person with a Wiki account to [[Help|register a new account for y
 == I have a problem that is not covered on this page! ==
 
 If you have an issue that is not mentioned here, you might want to [[Help:Contents|ask on one of the mailing lists, or via IRC]], or [http://fiji.sc/bugzilla/ enter a bug report].
-
-== How to report issues? ==
-
-Add a ticket report to [http://fiji.sc/bugzilla/ Fiji's] or to [http://trac.imagej.net/ ImageJDev's] ticket system; private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in Fiji. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
-
-= Development =
-
-== What is Maven, and why did you pick it? ==
-
-Maven is a system to build ''.jar'' files from source code, and to manage dependencies (i.e. it is easy to specify which minimal version of, say, ImageJ is required by the source code).
-
-We picked it because we need a standard way to interact and collaborate with other projects and with each other. For starters, it allows developers to stay with their favorite development environment (Eclipse, Netbeans, IntelliJ, etc).
-
-For details, please refer to our page on [[Maven]].
-
-== How do I develop Fiji in Eclipse? ==
-
-Please refer to the page ''[[Developing Fiji in Eclipse]]''.
-
-== How do I create a new ImageJ plugin using Maven? ==
-
-Please refer to our page on [[Maven]].
-
-== How do I upload a new release of a Fiji plugin? ==
-
-Please refer to our tutorial [[Uploading plugins|how to upload files]].
-
-== How do I upload a new release of a core ImageJ library such as ImgLib? ==
-
-The same way as a Fiji plugin. But it will upload to the ImageJ update site (you can only upload to one update site at a time, though, see also [[http://trac.imagej.net/ticket/1468 this ticket]]).
-
-== What is the recommended way to develop in Fiji? ==
-
-Over the years we evolved a development style as follows:
-
-* create a topic branch
-* test as much as you need to be comfortable to merge
-* merge
-* deal with any fall-out
-
-This development style has been adopted by the [http://developer.imagej.net/ ImageJDev team], with two additions (making the fall-out step much smaller):
-
-* tests are added as automated regression tests (to be run by [http://jenkins.imagej.net/ the continuous integration] whenever new changes were pushed) whenever possible.
-* merges are usually done with ''--no-ff'', so that even fast-forwarding branches (i.e. rebased on top of ''master'') will get a merge commit in which the branch is described more broadly.
 
 == How to report issues? ==
 
