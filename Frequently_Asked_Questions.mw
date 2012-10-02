@@ -115,7 +115,7 @@ Please refer to our tutorial [[Uploading plugins|how to upload files]].
 
 == How do I upload a new release of a core ImageJ library such as ImgLib? ==
 
-The same way as a Fiji plugin. But it will upload to the ImageJ update site (you can only upload to one update site at a time, though, see also [[http://trac.imagej.net/ticket/1468 this ticket]]).
+The same way as a Fiji plugin. But it will upload to the ImageJ update site (you can only upload to one update site at a time, though, see also [http://trac.imagej.net/ticket/1468 this ticket]).
 
 == What is the recommended way to develop in Fiji? ==
 
