@@ -51,8 +51,6 @@ Browse the [[:Category:News|news archive]].
 
 ;[[3D Viewer]]
 * Hardware-accelerated 3D volume and mesh visualization, and 3D registration of image stacks.
-;[[ImgLib2]]
-* Generic and extensible ''n''-dimensional image processing library for Java.
 ;[[:Category:Transform|Transform]]
 * Interactive image transformation ([[Interactive_Rigid|rigid]], [[Interactive_Similarity|similarity]], [[Interactive_Affine|affine]], [[Interactive_Perspective|perspective]], [[Interactive_Moving_Least_Squares|deform]])
 * [[Interactive Stack Rotation]]
@@ -77,6 +75,8 @@ Browse the [[:Category:News|news archive]].
 * [[SIOX:_Simple_Interactive_Object_Extraction|SIOX: Simple Interactive Object Extraction]]
 ;Analysis
 *[[:Category:Skeleton|Skeletons and tree analysis]]
+;[[ImgLib2]]
+* Generic and extensible ''n''-dimensional image processing library for Java.
 ;[[TrakEM2]]
 * Register/edit/analyze/segment/annotate/3D model terabytes of confocal and electron microscopy images.
 ;The core of Fiji.
