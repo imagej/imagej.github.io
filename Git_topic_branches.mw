@@ -113,31 +113,35 @@ Consider such a history (the first "word" is the abbreviated commit name):
  0470894... Untrack generated files
  e0acf90... Add Fake, a specialized yet simple substitute for 'make'
  047ad28... Fake: implement up-to-date test and use it in make()
- deadbee... fixup for initial Fake commit
+ deadbee... fixup! Add Fake, a specialized yet simple substitute for 'make'
 
 where ''0470894'' is the tip of the ''master'' branch, and ''deadbee'' fixes some severe issue in the commit ''e0acf90'', that should not have been committed as is.
 
+Note that the ''fixup!'' commit can be made easily by calling ''git commit --fixup <commit-to-fixup>''.
+
 To reorder the commits and merge the two commits (''squash'' in Git terminology, as ''merge'' already means to merge branches), call
 
- $ git rebase -i master
+<code lang="bash">
+$ git rebase -i --autosquash master
+</code>
 
 This will fire up an editor with a list of commits to be applied on top of ''master'':
 
  pick e0acf90 Add Fake, a specialized yet simple substitute for 'make'
- pick 047ad28 Fake: implement up-to-date test and use it in make()
- pick deadbee fixup for initial Fake commit
-
-Just move the last line, and substitute the command "pick" (as in "cherry-pick") with "squash":
-
- pick e0acf90 Add Fake, a specialized yet simple substitute for 'make'
- squash deadbee fixup for initial Fake commit
+ fixup deadbee fixup! Add Fake, a specialized yet simple substitute for 'make'
  pick 047ad28 Fake: implement up-to-date test and use it in make()
 
-Save that, and exit the editor.  The rebase will be started, and when the two commits are squashed, another editor instance will pop up with the two commit messages combined; edit it to the final commit message, save and exit, and the rebase will continue.
+Note that the ''autosquash'' mode interpreted the special commit message of the fixup commit, moved the last line and substituted the command "pick" (as in "cherry-pick") with "fixup".
 
-Note: as with cherry-picking and merging, conflicts can arise.  You will have to resolve them, "git add" the resolved files, but you do not need to commit; calling
+Save that, and exit the editor.  The rebase will be started and amend the first commit with the fixup commit.
 
- $ git rebase --continue
+Note: If you want to default to the ''autosquash'' mode, you can tell Git so: ''git config --global rebase.autosquash true'' (you only need to do this once).
+
+Note: as with cherry-picking and merging, conflicts can arise.  You will [[Merge_Conflicts|have to resolve them]], "git add" the resolved files, but you do not need to commit; calling
+
+<code lang="bash">
+$ git rebase --continue
+</code>
 
 will pick up the changes, apply the correct commit author and message, and fire up an editor for you to verify the contents.  As before, save and exit, and the rebase will continue.
 
@@ -147,7 +151,9 @@ Sometimes you realize by the sheer size of the list of commits that you made a m
 
 Even at later stages, e.g. when you have a huge conflict and would prefer to go back and merge instead of rebase, you can abort the rebase.  Just call
 
- $ git rebase --abort
+<code lang="bash">
+$ git rebase --abort
+</code>
 
 and Git will bring you back to where you were before you started the rebase.
 
