@@ -1088,7 +1088,7 @@ from ij import WindowManager as WM
 
 # If the images are open:
 volume = WM.getImage("stack.tif")
-imageMask = WM.getImage("mask.tif")
+mask = WM.getImage("mask.tif")
 
 # Or if the images have to be loaded from files:
 # volume = IJ.openImage("/Users/sara/images/stack.tif")
