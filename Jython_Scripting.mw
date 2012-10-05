@@ -1069,6 +1069,8 @@ run()
 
 === Apply a binary mask to every slice in an image stack ===
 
+Will work with regular stacks and with any kind of complex stack like a composite image or a 4d volume. Keep in mind that all stack types in ImageJ consists of a sequence of 2d images, each editable with an [http://rsb.info.nih.gov/ij/developer/api/ij/process/ImageProcessor.html ImageProcessor] obtained from the [http://rsb.info.nih.gov/ij/developer/api/ij/ImageStack.html ImageStack] that one can get from the [http://rsb.info.nih.gov/ij/developer/api/ij/ImagePlus.html ImagePlus]. (The [http://rsb.info.nih.gov/ij/developer/api/ij/ImagePlus.html ImagePlus] being what the opener or the [http://rsb.info.nih.gov/ij/developer/api/ij/WindowManager.html WindowManager] provides.)
+
 <source lang="python">
 # Albert Cardona 2012-10-05 for Sara Abrahamsson
 #
