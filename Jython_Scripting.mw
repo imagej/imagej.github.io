@@ -1066,6 +1066,53 @@ def run():
 run()
 </source>
 
+
+=== Apply a binary mask to every slice in an image stack ===
+
+<source lang="python">
+# Albert Cardona 2012-10-05 for Sara Abrahamsson
+#
+# Take a stack of images and a mask,
+# and clear the area outside the mask for every image.
+#
+# ASSUMES that the mask:
+# 1. Is 8-bit;
+# 2. has the area to keep as 255;
+# 3. has the area to clear as zeros.
+
+
+from ij import IJ
+from ij import WindowManager as WM
+
+# If the images are open:
+volume = WM.getImage("stack.tif")
+imageMask = WM.getImage("mask.tif")
+
+# Or if the images have to be loaded from files:
+# volume = IJ.openImage("/Users/sara/images/stack.tif")
+# mask = IJ.open("/Users/sara/images/mask.tif")
+
+# Obtain the underlying stack of 2d images
+stack = volume.getStack()
+
+# Fill every stack slice with zeros for the area outside the mask
+for i in xrange(1, stack.getSize() + 1):
+  # ip is the ImageProcessor for one stack slice
+  ip = stack.getProcessor(i)
+  ip.setValue(0)
+  ip.fill(mask)
+
+volume.updateAndDraw()
+volume.show()
+</source>
+
+Note that it is counterintuitive that the area outside the mask gets filled with zeros. If you want the area inside the mask to get filled with zeros, then add this step before the loop:
+
+<source lang="python">
+mask = mask.duplicate()
+mask.invert()
+</source>
+
 == Tips and Tricks ==
 
 === Getting a list of all members in one package ===
