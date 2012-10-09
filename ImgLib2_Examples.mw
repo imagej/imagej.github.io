@@ -1151,10 +1151,12 @@ Please note as well that if one would increase the radius of the sphere to more 
 <source lang="java">
 import ij.ImageJ;
 import net.imglib2.Cursor;
+import net.imglib2.Interval;
 import net.imglib2.RandomAccessibleInterval;
 import net.imglib2.algorithm.gauss.Gauss;
 import net.imglib2.algorithm.region.hypersphere.HyperSphere;
-import net.imglib2.algorithm.region.localneighborhood.LocalNeighborhood;
+import net.imglib2.algorithm.region.localneighborhood.Neighborhood;
+import net.imglib2.algorithm.region.localneighborhood.RectangleShape;
 import net.imglib2.exception.IncompatibleTypeException;
 import net.imglib2.img.Img;
 import net.imglib2.img.ImgFactory;
@@ -1165,6 +1167,7 @@ import net.imglib2.io.ImgOpener;
 import net.imglib2.type.NativeType;
 import net.imglib2.type.logic.BitType;
 import net.imglib2.type.numeric.RealType;
+import net.imglib2.util.Intervals;
 import net.imglib2.view.Views;
 
 /**
@@ -1205,47 +1208,32 @@ public class Example4b
 			RandomAccessibleInterval< T > source,
 			ImgFactory< U > imageFactory, U outputType )
 	{
-		// we need the number of dimensions a lot
-		final int numDimensions = source.numDimensions();
-
 		// Create a new image for the output
 		Img< U > output = imageFactory.create( source, outputType );
 
 		// define an interval that is one pixel smaller on each side in each dimension,
 		// so that the search in the 8-neighborhood (3x3x3...x3) never goes outside
 		// of the defined interval
-		long[] min = new long[ numDimensions ];
-		long[] max = new long[ numDimensions ];
-
-		for ( int d = 0; d < numDimensions; ++d )
-		{
-			min[ d ] = source.min( d ) + 1;
-			max[ d ] = source.max( d ) - 1;
-		}
+		Interval interval = Intervals.expand( source, -1 );
 
 		// create a view on the source with this interval
-		source = Views.interval( source, min, max );
+		source = Views.interval( source, interval );
 
 		// create a Cursor that iterates over the source and checks in a 8-neighborhood
 		// if it is a minima
-		Cursor< T > cursor = Views.iterable( source ).localizingCursor();
+		final Cursor< T > center = Views.iterable( source ).cursor();
 
-		// instantiate a local neighborhood that we will use all the time
-		// it iterates all pixels adjacent to the center, but skips the center
-		// pixel (this corresponds to an 8-neighborhood in 2d or 26-neighborhood in 3d, ...)
-		LocalNeighborhood< T > localNeighborhood =
-			new LocalNeighborhood< T >( source, cursor );
+		// instantiate a RectangleShape to access rectangular local neighborhoods
+		// of radius 1 (that is 3x3x...x3 neighborhoods), skipping the center pixel
+		// (this corresponds to an 8-neighborhood in 2d or 26-neighborhood in 3d, ...)
+		final RectangleShape shape = new RectangleShape( 1, true );
 
-		// iterate over the image
-		while ( cursor.hasNext() )
+		// iterate over the set of neighborhoods in the image
+		for ( final Neighborhood< T > localNeighborhood : shape.neighborhoods( source ) )
 		{
-			cursor.fwd();
-
-			// update the local neighborhood cursor to the position of the cursor
-			localNeighborhood.updateCenter( cursor );
-
-			// what is the value that we investigate
-			final T centerValue = cursor.get();
+			// what is the value that we investigate?
+			// (the center cursor runs over the image in the same iteration order as neighborhood)
+			final T centerValue = center.next();
 
 			// keep this boolean true as long as no other value in the local neighborhood
 			// is larger or equal
@@ -1265,7 +1253,7 @@ public class Example4b
 			if ( isMinimum )
 			{
 				// draw a sphere of radius one in the new image
-				HyperSphere< U > hyperSphere = new HyperSphere< U >( output, cursor, 1 );
+				HyperSphere< U > hyperSphere = new HyperSphere< U >( output, center, 1 );
 
 				// set every value inside the sphere to 1
 				for ( U value : hyperSphere )
@@ -1466,9 +1454,9 @@ Here we use an '''OutOfBoundsStrategyConstantValue''' instead. It results in con
 '''[https://github.com/imagej/imglib/blob/master/imglib2/examples/src/main/java/Example6a2.java Example6a2.java]'''
 <source lang="java">
 import ij.ImageJ;
-import net.imglib2.Point;
 import net.imglib2.RandomAccessible;
-import net.imglib2.algorithm.gauss.Gauss;
+import net.imglib2.algorithm.gauss3.Gauss3;
+import net.imglib2.exception.IncompatibleTypeException;
 import net.imglib2.img.Img;
 import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
@@ -1486,7 +1474,7 @@ import net.imglib2.view.Views;
  */
 public class Example6a2
 {
-	public Example6a2() throws ImgIOException
+	public Example6a2() throws ImgIOException, IncompatibleTypeException
 	{
 		// open with ImgOpener using an ArrayImgFactory
 		Img< FloatType > image = new ImgOpener().openImg( "DrosophilaWing.tif",
@@ -1506,18 +1494,14 @@ public class Example6a2
 		//
 		// sigma .. the sigma
 		// infiniteImg ... the RandomAccessible that is the source for the convolution
-		// image ... defines the Interval in which convolution is performed
-		// image ... defines the RandomAccessible target of the convolution
-		// new Point( image.numDimensions() ) ... defines the offset for the target, here it is (0,0)
-		// image.factory ... the image factory which is required to create temporary images
-		Gauss.inFloat( sigma, infiniteImg, image, image,
-			new Point( image.numDimensions() ), image.factory() );
+		// image ... defines the RandomAccessibleInterval that is the target of the convolution
+		Gauss3.gauss( sigma, infiniteImg, image );
 
 		// show the in-place convolved image (note the different outofboundsstrategy at the edges)
 		ImageJFunctions.show( image );
 	}
 
-	public static void main( String[] args ) throws ImgIOException
+	public static void main( String[] args ) throws ImgIOException, IncompatibleTypeException
 	{
 		// open an ImageJ window
 		new ImageJ();
@@ -1538,15 +1522,17 @@ Note: if you wanted, you could force him to use an '''OutOfBoundsStrategy''' dir
 <source lang="java">
 import ij.ImageJ;
 import net.imglib2.FinalInterval;
-import net.imglib2.Point;
 import net.imglib2.RandomAccessible;
-import net.imglib2.algorithm.gauss.Gauss;
+import net.imglib2.RandomAccessibleInterval;
+import net.imglib2.algorithm.gauss3.Gauss3;
+import net.imglib2.exception.IncompatibleTypeException;
 import net.imglib2.img.Img;
 import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
 import net.imglib2.io.ImgIOException;
 import net.imglib2.io.ImgOpener;
 import net.imglib2.type.numeric.real.FloatType;
+import net.imglib2.util.Intervals;
 import net.imglib2.view.Views;
 
 /**
@@ -1558,35 +1544,34 @@ import net.imglib2.view.Views;
  */
 public class Example6a3
 {
-	public Example6a3() throws ImgIOException
+	public Example6a3() throws ImgIOException, IncompatibleTypeException
 	{
 		// open with ImgOpener using an ArrayImgFactory
 		Img< FloatType > image = new ImgOpener().openImg( "DrosophilaWing.tif",
 			new ArrayImgFactory< FloatType >(), new FloatType() );
 
 		// perform gaussian convolution with float precision
-		double[] sigma = new double[ image.numDimensions() ];
-
-		for ( int d = 0; d < image.numDimensions(); ++d )
-			sigma[ d ] = 8;
+		double sigma = 8;
 
 		// we need to extend it nevertheless as the algorithm needs more pixels from around
 		// the convolved area and we are not sure how much exactly (altough we could compute
-		// it with some effort from the sigma)
+		// it with some effort from the sigma).
+		// Here we let the Views framework take care of the details. The Gauss convolution
+		// knows which area of the source image is required, and if the extension is not needed,
+		// it will operate on the original image with no runtime overhead.
 		RandomAccessible< FloatType> infiniteImg = Views.extendMirrorSingle( image );
 
-		// define the area
-		long[] min = new long[] { 100, 30 };
-		long[] max = new long[] { 500, 250 };
-		FinalInterval region = new FinalInterval( min, max );
+		// define the area of the image which we want to compute
+		FinalInterval interval = Intervals.createMinMax( 100, 30, 500, 250 );
+		RandomAccessibleInterval< FloatType > region = Views.interval( image, interval );
 
 		// call the gauss, we convolve only a region and write it back to the exact same coordinates
-		Gauss.inFloat( sigma, infiniteImg, region, image, new Point( min ), image.factory() );
+		Gauss3.gauss( sigma, infiniteImg, region );
 
 		ImageJFunctions.show( image );
 	}
 
-	public static void main( String[] args ) throws ImgIOException
+	public static void main( String[] args ) throws ImgIOException, IncompatibleTypeException
 	{
 		// open an ImageJ window
 		new ImageJ();
@@ -1606,9 +1591,9 @@ Specifically, we apply 1-dimensional Gaussian convolution in 30-pixel wide strip
 '''[https://github.com/imagej/imglib/blob/master/imglib2/examples/src/main/java/Example6a4.java Example6a4.java]'''
 <source lang="java">
 import ij.ImageJ;
-import net.imglib2.Point;
 import net.imglib2.RandomAccessibleInterval;
-import net.imglib2.algorithm.gauss.Gauss;
+import net.imglib2.algorithm.gauss3.Gauss3;
+import net.imglib2.exception.IncompatibleTypeException;
 import net.imglib2.img.Img;
 import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
@@ -1625,7 +1610,7 @@ import net.imglib2.view.Views;
  */
 public class Example6a4
 {
-	public Example6a4() throws ImgIOException
+	public Example6a4() throws ImgIOException, IncompatibleTypeException
 	{
 		// open with ImgOpener using an ArrayImgFactory
 		Img< FloatType > image = new ImgOpener().openImg( "DrosophilaWing.tif",
@@ -1650,15 +1635,14 @@ public class Example6a4
 						Views.hyperSlice( image, dim, pos );
 
 					// compute the gauss in-place on the view
-					Gauss.inFloat( sigma, Views.extendMirrorSingle( view ), view, view,
-						new Point( view.numDimensions() ), image.factory() );
+					Gauss3.gauss( sigma, Views.extendMirrorSingle( view ), view );
 				}
 
 		// show the result
 		ImageJFunctions.show( image );
 	}
 
-	public static void main( String[] args ) throws ImgIOException
+	public static void main( String[] args ) throws ImgIOException, IncompatibleTypeException
 	{
 		// open an ImageJ window
 		new ImageJ();
