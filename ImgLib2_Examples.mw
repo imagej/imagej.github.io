@@ -1,6 +1,6 @@
 {{Infobox Plugin
-| name                   = ImgLib2 Examples
-| software               = Generic Image Processing for Java
+| name                   = Examples
+| software               = ImgLib2
 | author                 = Stephan Preibisch
 | maintainer             = Stephan Preibisch, Curtis Rueden
 | released               = March 2012
