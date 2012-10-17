@@ -183,6 +183,14 @@ There are numerous built in functions that can appear in an equation. For refere
 
 <UL><LI>Returns the 2-based log of the given input.</LI></UL>
 
+<B>max</B> : example ( "[x,y] , max(x,y) " )
+
+<UL><LI>Returns the maximum of the two input values.</LI></UL>
+
+<B>min</B> : example ( "[x,y] , min(x,y) " )
+
+<UL><LI>Returns the minimum of the two input values.</LI></UL>
+
 <B>rand</B> : example ( "[x,y] , rand(y) " )
 
 <UL><LI>Returns a random number uniformly distributed on the range of 0 up to but not including the input value.</LI></UL>
