@@ -219,7 +219,7 @@ public class Example1c
 
 By using the concept of '''Views''' it is possible to display only parts of the image, display a rotated view, and many more cool things. Note that you can also concatenate them. '''Views''' are much more powerful than shown in this example, they will be increasingly used throughout the examples.
 
-A '''View''' almost behaves similar to an '''Img''', and in fact they share important concepts. Both are '''RandomAccessible''' and '''Views''' that are not infinite. Also they are both an '''Interval''' (i.e. have a defined size) and can therefore be made '''Iterable''' (see example 2c). In ImgLib2, all algorithms are implemented for abstract concepts like '''RandomAccessible''', '''Iterable''' or '''Interval'''. This enables us, as can be seen below, to display a '''View''' the exact same way we would also display an '''Img'''.
+A '''View''' almost behaves similar to an '''Img''', and in fact they share important concepts. Both are '''RandomAccessible''', and '''Views''' that are not infinite are also an '''Interval''' (i.e. those '''Views''' have a defined size) and can therefore be made '''Iterable''' (see example 2c). In ImgLib2, all algorithms are implemented for abstract concepts like '''RandomAccessible''', '''Iterable''' or '''Interval'''. This enables us, as can be seen below, to display a '''View''' the exact same way we would also display an '''Img'''.
 
 [[Image:ImgLib2example1d.jpg|780px]]
 ''Shows the original image, the View of an interval, as well as the by 90 degree rotated version of the view. Note that only the original image in kept in memory, both Views are completely virtual.''
