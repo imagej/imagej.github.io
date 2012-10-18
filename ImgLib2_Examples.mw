@@ -167,7 +167,7 @@ public class Example1b
 
 === Example 1c - Creating a new ImgLib2 image ===
 
-Another important way to instantiate a new ImgLib2 '''Img''' is to create a new one from scratch. This requires you to define its '''Type''' as well as the '''ImgFactory''' to use. It additionally need one instance of the '''Type''' that it is supposed to hold. 
+Another important way to instantiate a new ImgLib2 '''Img''' is to create a new one from scratch. This requires you to define its '''Type''' as well as the '''ImgFactory''' to use. It does additionally need one instance of the '''Type''' that it is supposed to hold. 
 
 Once you have one instance of an '''Img''', it is very easy to create another one using the same '''Type''' and '''ImgFactory''', even if it has a different size. Note that the call '''img.firstElement()''' returns the first pixel of any '''Iterable''', e.g. an '''Img'''.
 
