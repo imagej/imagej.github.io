@@ -14,8 +14,8 @@ You can download the current version of Fiji ("Madison") for
 {{Java_WebStart}}
 
 === Source Code ===	 
-			
-The easiest way to fetch the source code for Fiji is to use [http://git.or.cz/ git]. For further guidance on this, please refer to the page [[Downloading and Building Fiji From Source]].
+
+The easiest way to fetch the source code for Fiji is to use [https://github.com/fiji/fiji git]. For further guidance on this, please refer to the page [[Downloading and Building Fiji From Source]].
 
 === Packages for Debian / Ubuntu ===
 
