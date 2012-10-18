@@ -2,11 +2,10 @@ __NOTOC__
 
 <span style="color:red">'''Critical:'''</span> if you updated and Fiji does not work anymore, you need to follow [[Fix_non-functional_Fiji_after_Update|these instructions]].<br/>
 
-If you encounter bugs, please consider submitting [http://fiji.sc/bugzilla/ bug reports], or ask for help on [http://groups.google.com/group/fiji-users the mailing list], but we might ask you to test our fixes, too :-)
+If you encounter bugs, there are many ways to get help; please see the [[Help:Contents|Getting Help]] page.
 
 <b>Please note! The authoritative site for Fiji is <i>http://fiji.sc/</i>, so if you downloaded Fiji from some mirrors such as Softpedia and experience problems, please re-download from here and verify that the problem still exists.</b>
 
-You can download the current version of Fiji ("Madison") for
 {{DownloadsCurrent}}
 
 === Java WebStart ===
