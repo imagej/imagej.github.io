@@ -1137,11 +1137,10 @@ In this example we want to find all local minima in an image an display them as 
 
 We display the results using a binary image. ''Note that the '''BitType''' only requires one bit per pixel and therefore is very memory efficient.''
 
-The generic method for minima detection has some more interesting properties. The '''Type''' of the source image data actually does not require to be of '''Type''', it simply needs something that is comparable. The '''LocalNeighborhood''' will iterate n-dimensionally all pixels adjacent to a certain location, but skip the central pixel (this corresponds to an both neighbors in 1d, an 8-neighborhood in 2d, a 26-neighborhood in 3d, and so on ...). This allows to efficiently detect if a pixel is a local minima or maxima. Note that the '''Cursor''' that performs the iteration can have special implementations for specific dimensionalities to speed up the iteration. See below the example for a specialized three-dimensional iteration:
+The generic method for minima detection has some more interesting properties. The type of the source image data actually does not require to be of '''Type''', it simply needs something that is comparable. The '''LocalNeighborhood''' will iterate n-dimensionally all pixels adjacent to a certain location, but skip the central pixel (this corresponds to an both neighbors in 1d, an 8-neighborhood in 2d, a 26-neighborhood in 3d, and so on ...). This allows to efficiently detect if a pixel is a local minima or maxima. Note that the '''Cursor''' that performs the iteration can have special implementations for specific dimensionalities to speed up the iteration. See below the example for a specialized three-dimensional iteration:
 
  Acces plan for a 3d neighborhood, starting at the center position marked by (x). The initial
- position is NOT part of iteration, which means the center pixel is not iterated. Note that 
- every step except for the last one can be done with a very simple move command.
+ position is, in this example, NOT part of iteration, which means the center pixel is not iterated. Note that every step except for the last one can be done with a very simple move command.
  
  upper z plane (z-1)		center z plane (z=0)		lower z plane(z+1)
  -------------			-------------			-------------
@@ -1152,7 +1151,7 @@ The generic method for minima detection has some more interesting properties. Th
  | 4 | 5 | 6 |			| 13| 14| 15|			| 22| 23| 24|
  -------------			-------------			-------------
 
-Please note as well that if one would increase the radius of the sphere to more than one, it would fail as we would try to write image data outside of the defined boundary. '''OutOfBoundsStrategies''' which define how to handle such cases is discussed in example 5.
+Please note as well that if one would increase the radius of the '''RectangleShape''' to more than 1 (without at the same time changing the '''View''' on  source that creates an inset border of exactly this one pixel), this example would fail as we would try to write image data outside of the defined boundary. '''OutOfBoundsStrategies''' which define how to handle such cases is discussed in example 5.
 
 [[Image:AllMinima.jpg|780px]]
 ''Shows the result of the detection of local minima after the Gaussian blurring. (a) depicts the input image, (b) the blurred version (sigma=1) and (c) all local mimina drawn as circles with radius 1.''
