@@ -727,7 +727,7 @@ public class Example3a1
 
 ==== Example 3a - Variation 2 ====
 
-Note that this example would just the same way if the input is not an '''Img''', but for example just a standard Java '''ArrayList'''
+Note that this example works just the same way if the input is not an '''Img''', but for example just a standard Java '''ArrayList'''.
 
 '''[https://github.com/imagej/imglib/blob/master/imglib2/examples/src/main/java/Example3a2.java Example3a2.java]'''
 <source lang="java">
