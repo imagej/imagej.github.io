@@ -3,8 +3,12 @@ Please download the following material for the Workshop "Advanced Programming wi
 [http://fly.mpi-cbg.de/~pietzsch/advanced-imglib2.zip advanced-imglib2.zip]
 
 The zip file contains an Eclipse project with all example code and images.
-Just unzip it in your Eclipse workspace. In Eclipse choose "File->Import..." in the main menu.
+The pdf slides of the workshop presentation are also included in the zip file.
 
+Just unzip it in your Eclipse workspace. In Eclipse choose "File->Import..." in the main menu. This brings up the following dialog. Choose "Existing Projects into Workspace" and click "Next".
 [[Image:workshop-2012-import-1.png]]
 
+Browse to the location of the unzipped directory.
 [[Image:workshop-2012-import-2.png]]
+
+Click "Finish". You're done.
