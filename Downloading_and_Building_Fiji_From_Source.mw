@@ -44,7 +44,7 @@ Just substitute ''username'' with your corresponding user name on that machine.
 
 Some plugins are managed as submodules.  If you want to work on them, you will have to initialize and update them.  (For more on submodules, see the [[Git submodule tutorial]].)  For example, if you know that you're going to need to work on the <tt>ImageJA</tt>, <tt>TrakEM2</tt> and <tt>mpicbg</tt> submodules, you should initialize and update them with the following commands:
 
- git submodule init modules/ImageJA modules/TrakEM2 modules/mpicbg
+ git submodule init modules/ImageJA modules/TrakEM2 modules/mpicbg modules/imglib
  git submodule update
 
 '''Note:''' in the common case, you do not need <u>any</u> submodule to be checked out (except the Java submodule, which will be checked out automatically once you run the [[Fiji Build System|Fiji Build]] with:
