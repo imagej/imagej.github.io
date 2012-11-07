@@ -64,6 +64,12 @@ In ''Advanced Mode'', you can update your Fiji-specific Java. Just click the ''U
 
 [[Image:Snapshot of the Java Update option of the Fiji Updater.png|750px]]
 
+== Starting the Updater manually ==
+
+Just click on the ''Help>Update Fiji'' menu item:
+
+[[Image:Fiji_Updater-screenshot.png]]
+
 == Configuring the Updater ==
 
 When the updater detects that there are updates available, it offers the user the choice: update right now, delay (i.e. ask again in one week), or disable the startup check.
