@@ -1,0 +1,7 @@
+FijiArchipelago is a plugin that brings Cluster functionality to Fiji
+
+This is a placeholder in the wiki that will be filled out in the coming days (I hope).
+
+To test FijiArchipelago, clone the most recent version of the git repository. Compile this, then create a virtual stack containing images on a network drive that is accessible to multiple computers. Now, click Plugins->Cluster->Benchmark...
+
+[[Category:Plugins]]
