@@ -1,7 +1,64 @@
 FijiArchipelago is a plugin that brings Cluster functionality to Fiji
 
-This is a placeholder in the wiki that will be filled out in the coming days (I hope).
+== Overview ==
+FijiArchipelago is a tool designed to make it easy for programmers to export Fiji/ImageJ functionality over a network to several other computers.
 
-To test FijiArchipelago, clone the most recent version of the git repository. Compile this, then create a virtual stack containing images on a network drive that is accessible to multiple computers. Now, click Plugins->Cluster->Benchmark...
+The "root node," or the computer on which the cluster is started, operates as a server. "Client nodes" must be able to reach that server over a network, and must also have access to a shared network file resource.
+
+Client machines are started automatically through a user interface. Fiji is started by opening a remote shell (currently ssh using JSch), then running fiji with some arguments that indicate how the client should access the server.
+
+This project currently works for machines that share the same local network, but is also intended to be used eventually on HPC clusters with a qsub or similar architecture, specifically the University of Texas's TACC. This work is ongoing.
+
+== Requirements ==
+* Server and clients should all have the same version of Fiji installed.
+* FijiArchipelago makes use of key pair authentication, so the server must have a private key file that matches a public key file on the client.
+* Clients must be able to access the server at the configured port.
+* Server and clients must have access to a shared network file server.
+
+So far, this has been tested only on Linux machines, but it should be platform-independent.
+
+== Usage ==
+
+=== Users ===
+
+To start a Cluster, navigate to Plugins->Cluster->Start Cluster...
+
+==== Start Cluster Dialog ====
+
+* Server Port Number: This is the port that the FijiArchipelago server will listen on.
+* Remote Machine User Name: The username to use to start fiji on remote machines
+* SSH Private Key File: The location of the private key file to use for authentication. Currently, this has been tested only with password-less keys, but it should work with password-protected keys as well.
+* Local Exec Root: The folder containing the fiji executable
+* Local File Root: A folder that is shared over the network
+* Default Exec Root for Remote Nodes: This is used as the default folder for the fiji location on remote machines.
+* Default File Root for Remote Nodes: This is used as the default network share location for remote nodes. This should reference the same resource as Local File Root.
+
+==== Configure Nodes Dialog ====
+
+===== Add a node =====
+Click the Add Node... button to add a new node
+* Hostname: The hostname of the new client node. This hostname is used for ssh purposes.
+* User name: The user name to use for ssh access. This defaults to the name entered in the previous dialog.
+* Port: The ssh port for this machine, with a default of 22.
+* Number of Threads: The number of desired threads to use on this machine.
+* Remote Exec Root: The folder containing the fiji executable on this client.
+* Remote File Root: The folder on this client corresponding to the location of the shared resource folder entered as Local File Root in the previous dialog.
+Click OK
+
+===== Load from File / Save to File =====
+The nodes entered on this dialog may be saved to a configuration file for later use. Multiple cluster files may be loaded, to add several groups of similar machines to use with the cluster. For instance, you might save host01, host02, ... host10 to fiji.cluster, and different-host01, different-host02, ... different-host10 to fiji-different.cluster, then load both files later to add all twenty hosts to one FijiArchipelago configuration.
+
+===== Start the Cluster =====
+Once you press OK on the Configure Nodes Dialog window, each listed host will be contacted via ssh using the username and private key file that were provided. FijiArchipelago will attempt to start an instance of fiji in headless mode, which should then contact your local computer on the indicated port to submit itself as ready to accept jobs.
+
+A window will appear with a big "Stop Cluster" button in it. Click this button to stop the cluster and all instances of fiji on your client machines.
+
+==== SIFT Extraction Example ====
+
+Use File->Import->Image Sequence... to import a virtual stack of many images.
+Click Plugins->Cluster->Benchmark... to run a SIFT benchmark of your cluster against your local machine. This will start a cluster if there isn't one already. SIFT features will be extracted from all images in the stack using default parameters over the cluster, then using all available cores on your local machine (including virtual, or hyper-threaded cores).
+
+
+
 
 [[Category:Plugins]]
