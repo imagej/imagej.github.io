@@ -58,7 +58,22 @@ A window will appear with a big "Stop Cluster" button in it. Click this button t
 Use File->Import->Image Sequence... to import a virtual stack of many images.
 Click Plugins->Cluster->Benchmark... to run a SIFT benchmark of your cluster against your local machine. This will start a cluster if there isn't one already. SIFT features will be extracted from all images in the stack using default parameters over the cluster, then using all available cores on your local machine (including virtual, or hyper-threaded cores).
 
+=== Programmers ===
+FijiArchipelago exports [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/compute/ProcessManager.java ProcessManagers] by serialization over a network Socket to the client computers. A ProcessManager is created from a [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/data/DataChunk.java DataChunk], [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/compute/ChunkProcessor.java ChunkProcessor], and [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/compute/ProcessListener.java ProcessListener].
+* DataChunk - contains serializable data, a reference to a unique index, and a mark. Suppose two DataChunks chunkA and chunkB share the same index, but chunkA has mark 0 and chunkB mark 1. This indicates that chunkB is the result of running a ProcessManager over chunkA.
+* ChunkProcessor - a serializable object that does the work of processing one DataChunk into another.
+* ProcessListener - this need not be serializable, as it is not sent to the client node. The processFinished method is called when the results of running the ProcessManager are returned to the local machine.
 
+Once a ProcessManager is created, it may be submitted to the cluster using Cluster.queueJob(), or as a collection using Cluster.queueJobs()
 
+Currently, only one Cluster may be operated as a server at a time. This instance is referenced by Cluster.getCluster(). Cluster.activeCluster() indicates whether there is an active Cluster already.
+
+An example may be found in [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/example/Cluster_SIFT.java#L71 Cluster_SIFT] 
+
+===== Planned Features =====
+* On-the-fly addition of new cluster nodes
+* Volunteer cluster nodes, in other words, the ability to operate an instance of fiji in client mode through the plugin menu.
+* The ability to detect crashed nodes and re-queue their jobs
+* Menu-click supercomputing, or the ability to submit to a qsub-enabled HPC cluster from a local machine.
 
 [[Category:Plugins]]
