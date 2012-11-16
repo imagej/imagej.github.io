@@ -25,6 +25,8 @@ To start a Cluster, navigate to Plugins->Cluster->Start Cluster...
 
 ==== Start Cluster Dialog ====
 
+[[File:FijiArchipelagoShot01.png|500px]]
+
 * Server Port Number: This is the port that the FijiArchipelago server will listen on.
 * Remote Machine User Name: The username to use to start fiji on remote machines
 * SSH Private Key File: The location of the private key file to use for authentication. Currently, this has been tested only with password-less keys, but it should work with password-protected keys as well.
@@ -35,7 +37,12 @@ To start a Cluster, navigate to Plugins->Cluster->Start Cluster...
 
 ==== Configure Nodes Dialog ====
 
+[[File:FijiArchipelagoShot02.png|500px]]
+
 ===== Add a node =====
+
+[[File:FijiArchipelagoShot03.png|500px]]
+
 Click the Add Node... button to add a new node
 * Hostname: The hostname of the new client node. This hostname is used for ssh purposes.
 * User name: The user name to use for ssh access. This defaults to the name entered in the previous dialog.
