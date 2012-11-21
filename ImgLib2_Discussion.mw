@@ -473,3 +473,17 @@ We have discussed with Tobias that two additional integer views would be very he
 #Adding a new dimension considering an existing dimension as interleaved data.
 When done properly this has the potential to replace or at least simplify PlanarImg like containers since they could be expressed as a composition of multiple ArrayImg-s.
 [[User:Saalfeld|Saalfeld]] 16:11, 18 January 2012 (CET)
+
+==2012-11-21==
+Another useful integer view comes to mind:
+#Stack two images with all dimensions ''d'' < ''n''-1 in the (''n''-1)<sup>th</sup> dimension.  That would enable to load an image piecewise or to grow a time sequence ''etc.''
+
+The stack view is a special form of a `composite' view (do not confuse with dimensional composition as mentioned above---clarify terminology!) that consists of two <code>RandomAccessible<T></code> or <code>RandomAccessibleInterval<T></code> that combine their values following some composition rule.  Examples:
+#a stack of images
+#two images overlaid on top of each other
+#an image that includes another image at a specified location
+...
+
+For those that are familiar with it, AWT has the <code>Composite</code> interface to specify the pixel operation for combining two rasters (such as copy, add, multiply, alpha, ''etc.'').  TrakEM2 is another good example from the Fiji universe.  It represents 3D images that are a stack of 2D images that are composites of transformed 2D images or 2D projections of 3D images.
+
+For ImgLib2, we could have the composition principle generalized and provide some special purpose implementations (stacking, AWT raster composition, TrakEM2-alike images).
