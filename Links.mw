@@ -63,6 +63,8 @@ If you're still unsure and think that your code is not good enough, then publish
 
 * [http://www.slideshare.net/marakana/effective-java-still-effective-after-all-these-years Effective Java]
 
+* [https://wikis.oracle.com/display/HotSpotInternals Details about Sun's/Oracle's Java Just-In-Time (JIT) compiler], and in particular, [https://wikis.oracle.com/display/HotSpotInternals/PerformanceTechniques performance techniques] of the JIT.
+
 == Miscellaneous ==
 
 * An [http://rsbweb.nih.gov/ij/docs/install/osx.html#icon explanation] where ImageJ's icon's [http://www.arsmachina.com/s-hart1209.htm microscope] comes from.
