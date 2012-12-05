@@ -27,7 +27,7 @@ Click the 'Add' button and fill in your choice of name for the site, the public 
 
 Click 'OK' to add the update site.
 
-* Note: if your SSH account differs from your current machine's account, you can prefix the SSH host with ''<username>@'', e.g. ''gavinrocks@tattooine.pdq-bach.org''.
+* Note: you need to prefix the SSH host with ''<username>@'', e.g. ''gavinrocks@tattooine.pdq-bach.org''.
 
 * Note: if you can upload files to your site via SFTP, but not SSH, you need to prefix the SSH host with ''sftp:'', e.g. ''sftp:gavinrocks@tattooine.pdq-bach.org''.
 
