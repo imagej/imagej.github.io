@@ -62,7 +62,7 @@ import mpicbg.imglib.image.Image;
 import mpicbg.imglib.image.ImagePlusAdapter;
 import mpicbg.imglib.type.numeric.RealType;
  
-public class Example_Cursors<T> implements PlugIn {
+public class Example_Cursors<T extends RealType<T>> implements PlugIn {
  
 	public void run(String arg) {
 
@@ -124,7 +124,7 @@ import mpicbg.imglib.image.ImagePlusAdapter;
 import mpicbg.imglib.type.numeric.RealType;
 import mpicbg.imglib.algorithm.math.MathLib;
 
-public class Localizable_Cursors<T> implements PlugIn {
+public class Localizable_Cursors<T extends RealType<T>> implements PlugIn {
  
 	public void run(String arg) {
  
@@ -213,7 +213,7 @@ import mpicbg.imglib.image.ImagePlusAdapter;
 import mpicbg.imglib.image.display.imagej.ImageJFunctions;
 import mpicbg.imglib.type.numeric.RealType;
  
-public class LocalizableByDim_Cursors<T> implements PlugIn {
+public class LocalizableByDim_Cursors<T extends RealType<T>> implements PlugIn {
  
 	public void run(String arg) {
  
