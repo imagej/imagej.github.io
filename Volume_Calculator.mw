@@ -38,7 +38,7 @@ If your image is not binary then it must be thresholded in order for the first s
 
 
 ===Volume Calculation===
-The Volume Calculator is located in Fiji's Plugins menu. When run, it will take the current image as input. Processing begins immediately; its progress is shown in the status bar. After a successful run, the plugin will display the Volume Calculator window (Figure 2.)
+The Volume Calculator is located at Plugins>Analyze in the Fiji menu. When run, it will take the current image as input. Processing begins immediately; its progress is shown in the status bar. After a successful run, the plugin will display the Volume Calculator window (Figure 2.)
 This window is actually the [[3D Viewer]] plugin. Volume Calculator has taken its final result - a Java 3D representation of the analyzed image - and asked the [[3D Viewer]] to display it.
  
 ====User Interface====
@@ -88,19 +88,6 @@ Another form of selection is to click a ponit on a line once and then click anot
 [[Image:VolCal-5.png|thumb|380px|Figure 4. Two groups of measurements.]]The Volume Calculator allows you to gather measurements into an arbitrary number of groups. The lines in each group are distinguished by the color given to them when they are selected for measurement. Initially there is only one color available: Red. It is shown, selected, in the bottom area of the window in Figure 3. To create another group of measurements, you push the New Volume Color button. A color dialog will be presented. Create a color and press OK. A new entry will  appear with that color. The color will be automatically selected so that any new selections will be shown in that color. In Figure 4, a second color has been added and a measurement made.
  
 The Volume Calculator keeps track of the what measurements are associated with a color. If you select a line with a color different from the measurement color, the volume of that line is subtracted from the original color total and added to the measurement color total.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 == References ==
 The Volume Calculator plugin uses the following plugins: 
