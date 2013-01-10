@@ -5,12 +5,13 @@ Just copy/paste it in the [[Script Editor]] or save it into a .bsh file and run 
 <source lang=java>
 /**
  * Script to calculate the segmentation error between some 2D 
- * original labels and their corresponding proposed labels. 
+ * original labels and their corresponding proposed labels as 
+ * they were used in the ISBI-2012 challenge. 
  * 
  * The evaluation metrics are:
  *  - Pixel error: 1 - maximal F-score of pixel similarity
  *  - Minimum Splits & Mergers Warping error
- *  - Rand error: 1 - maximal F-score of Rand index
+ *  - Adapted Rand error: 1 - maximal F-score of Rand index
  * 
  * @author Ignacio Arganda-Carreras (iarganda@mit.edu)
  */
@@ -90,7 +91,7 @@ if( calculateRandError )
     IJ.log("\nCalculating maximal F-score of Rand index...");
     metric = new RandError( originalLabels, proposedLabels );
     maxFScore = metric.getRandIndexMaximalFScore( 0.0, 1.0, 0.1 );	
-    IJ.log("  Minimum Rand error: " + (1.0 - maxFScore) );     
+    IJ.log("  Minimum Adapted Rand error: " + (1.0 - maxFScore) );     
 }
 
 
