@@ -2,14 +2,14 @@
 | software               = ImageJ
 | name                   = Time Stamper
 | author                 = Wayne Rasband
-| maintainer         = [[Dan White]]
-| filename               = [http://rsb.info.nih.gov/ij/plugins/download/Time_Stamper.class Time_Stamper.class] (3,779 Bytes)
-| source                 = [http://rsb.info.nih.gov/ij/plugins/download/Time_Stamper.java Time_Stamper.java] (2,537 Bytes)
+| maintainer         = Tom Kazimiers
+| filename               = [http://imagej.net/plugins/download/Time_Stamper.class Time_Stamper.class] (3,779 Bytes)
+| source                 = [http://imagej.net/plugins/download/Time_Stamper.java Time_Stamper.java] (2,537 Bytes)
 | released               = 22 June 2001 
 | latest version         = 10 May 2005
 | status                 = unknown
 | category               = [[:Category:Image annotation|Image annotation]]
-| website                = [http://rsb.info.nih.gov/ij/plugins/stamper.html]
+| website                = [http://imagej.net/plugins/stamper.html]
 }}
 This plugin adds time stamps to a stack. The times are drawn in the current foreground color. Use the color picker (''Image > Color > Color Picker'' or double-click on the color picker button [[Image:color_picker.png|16px]] ) to set the foreground color. A dialog box allows the user to specify the starting time, time between frames, location, font size, decimal places and unit of time. Create a rectangular selection and the X and Y locations in the dialog box will be based on that selection. Set time between frames to zero to display nothing but the text in the Suffix field.
 
