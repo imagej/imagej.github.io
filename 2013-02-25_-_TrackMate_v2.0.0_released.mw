@@ -1,0 +1,17 @@
+Since June 2012:
+
+
+=== Changelog since v1.2 ===
+
+==== Highlights ====
+
+
+==== Improvements ====
+
+* Much better memory management in LAP tracker: Tracking on large number of spots will consume much less memory if tracks are not branching. 
+* Spe
+* Better GUI refreshing when performing heavy calculations.
+
+==== Bug fixes ====
+
+* Fix the bug that caused the GUI to often hang after the initial filtering step.
