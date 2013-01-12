@@ -9,7 +9,8 @@ Most changes in this version are for developers and are not displayed in the tex
 
 * TrackMate now uses [[ImgLib2]] internally, and is therefore ready to be moved to [[ImageJ2]].
 * TrackMate now computes edge features (on top of spot and track features). These features enable the immediate measure of velocity, displacement, etc... 
-* Edge features are however not saved to the XML file for disk space reasons. They recalculated on the fly upon loafing. 
+* Tracks can be colored in the Hyperstack displayer, in the 3D viewer and in TrackScheme using indifferently track or edge features. 
+* Edge features are however not saved to the XML file for disk space reasons. They recalculated on the fly upon loading. 
 * All spot, edge and track features are computed automatically and kept in sync even versus manual modifications. 
 * All spot, edge and track features can be exported as ImageJ results tables. Then they can be exported to text files, readable by let's say Excel. Please note that the authors of the plugin do not deem Excel as a proper solution for scientific analysis and recommend more professional solutions. 
 * All spot, edge and track features can be plotted as specialized graphs, thanks to a dedicated GUI panel.
