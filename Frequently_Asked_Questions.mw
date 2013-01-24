@@ -20,6 +20,14 @@ To be picked up as a plugin, the ''.jar'''s file name must contain an underscore
 
 The safest way to ensure these conventions is to use the ''File>Export as .jar file'' menu item.
 
+== I tried to update Fiji via ''Help>Update Fiji'', but it throws an exception instead? ==
+
+The easiest way to get back a functional updater is to import [https://github.com/fiji/fiji/raw/master/plugins/Scripts/Plugins/Utilities/Fix_Updater.js this URL] via ''File>Import>URL...''.
+
+If that does not work, please delete the files ''ij-ui-swing-updater-2.0.0-SNAPSHOT.jar'', ''ij-updater-core-2.0.0-SNAPSHOT.jar'' and ''ij-core-2.0.0-SNAPSHOT.jar'' from the ''Fiji.app/jars/'' directory (MacOSX users, Ctrl-click on the Fiji icon and select ''Open Package Contents'' and open the ''jars/'' directory you see there). After that, the Updater should magically repair itself.
+
+If that still fails, please download a fresh copy from [[Downloads|here]].
+
 == I updated Fiji via ''Help>Update Fiji'', and now it does not start anymore! ==
 
 If you are on MacOSX, most likely you did not update in some time, and you were bitten by a bug in the updater that is already fixed (but you did not get the fix in time). Please follow [[Fix non-functional Fiji after Update on MacOSX|these instructions]].
