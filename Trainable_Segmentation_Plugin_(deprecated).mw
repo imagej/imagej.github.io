@@ -79,8 +79,8 @@ Common problems and solutions:
 *''' I don't find the plugin in my Fiji menus!''': Don't worry, depending on your Fiji release, the updater may not offer you this plugin automatically. Just go to "Help > Update Fiji", then click on "Advanced mode", and on the "View Options" box, select "View uninstalled plugins only". Then the Trainable Segmentation plugin should appear and you should be able to install it.
 
 == See Also ==
-[[Trainable Segmentation Plugin Implementation]]
-[[Scripting the Trainable Segmentation]]
+* [[Trainable Segmentation Plugin Implementation]]
+* [[Scripting the Trainable Segmentation]]
 
 [[Category:Segmentation]]
 [[Category:Tutorials]]
