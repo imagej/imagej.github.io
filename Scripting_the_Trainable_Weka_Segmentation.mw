@@ -94,3 +94,105 @@ if (!wekaSegmentation.trainClassifier())
 output = wekaSegmentation.applyClassifier(image);
 output.show();
 </source>
+
+= Define labels programmatically =
+
+Here is a simple script in Beanshell doing the following:
+                                                                                
+# It takes one image (2D or stack) as training input image and a binary image as the corresponding labels.
+# Train a classifier (in this case a random forest, but you can change it) based on randomly selected pixels of the training image. The number of samples (pixels to use for training) is also a parameter, and it will be equal for each class.
+# Apply the trained classifier to a test image (2D or stack).
+
+<source lang="java">
+import ij.*;
+import ij.process.*;
+import trainableSegmentation.*;
+import hr.irb.fastRandomForest.*;
+
+// training input image (it could be a stack or a single 2D image)
+image = IJ.openImage("/data/challenge/train-volume-john.tif");
+// corresponding binary labels
+labels = IJ.openImage("/data/challenge/train-labels-john.tif");
+
+seg = new WekaSegmentation(image);
+
+// number of samples to use per slice
+nSamplesToUse = 2000;
+
+
+// Classifier
+// In this case we use a Fast Random Forest
+rf = new FastRandomForest();
+// Number of trees in the forest
+rf.setNumTrees(100);		
+// Number of features per tree
+rf.setNumFeatures(0);
+// Seed
+rf.setSeed( (new java.util.Random()).nextInt() );
+
+// set classifier
+seg.setClassifier(rf);
+
+// Parameters 
+// membrane patch size
+seg.setMembranePatchSize(11);
+// maximum radius of the filters
+seg.setMaximumSigma(16.0f);
+
+// Selected attributes
+enableFeatures = new boolean[]{
+			true, 	/* Gaussian_blur */
+			true, 	/* Sobel_filter */
+			true, 	/* Hessian */
+			true, 	/* Difference_of_gaussians */
+			true, 	/* Membrane_projections */
+			false, 	/* Variance */
+			false, 	/* Mean */
+			false, 	/* Minimum */
+			false, 	/* Maximum */
+			false, 	/* Median */
+			false,	/* Anisotropic_diffusion */
+			false, 	/* Bilateral */
+			false, 	/* Lipschitz */
+			false, 	/* Kuwahara */
+			false,	/* Gabor */
+			false, 	/* Derivatives */
+			false, 	/* Laplacian */
+			false,	/* Structure */
+			false,	/* Entropy */
+			false	/* Neighbors */
+};
+
+
+seg.setEnabledFeatures( enableFeatures );
+
+// add balanced labels
+seg.addRandomBalancedBinaryData(image, labels, "class 2", "class 1", nSamplesToUse);
+
+// Train classifier
+seg.trainClassifier();
+
+// apply classifier to current image
+seg.applyClassifier(true);
+
+// display classified image
+/*
+prob = seg.getClassifiedImage();
+prob.setTitle( "Probability maps of train image" );
+prob.show();
+*/
+
+// Test image
+image = IJ.openImage("/data/challenge/test-volume-john.tif");
+
+// Apply trained classifier to test image
+prob = seg.applyClassifier(image, 0, true );
+
+// Display results
+prob.setTitle( "Probability maps of test image" );
+prob.show();
+
+image.show();
+
+IJ.log("---");
+</source>
