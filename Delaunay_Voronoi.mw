@@ -3,7 +3,7 @@
 | name                   = Delaunay/Voronoi
 | author                 = Johannes Schindelin, L. Paul Chew
 | maintainer             = Johannes Schindelin
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/VIB_/Delaunay_Voronoi.java;hb=refs/heads/master gitweb]
+| source                 = {{GitLink|jar=VIB_|path=Delaunay_Voronoi.java}}
 | released               = 14 August 2006
 | latest version         = 11 December 2008
 | status                 = stable
