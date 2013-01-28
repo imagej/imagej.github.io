@@ -66,16 +66,14 @@ Use File->Import->Image Sequence... to import a virtual stack of many images.
 Click Plugins->Cluster->Benchmark... to run a SIFT benchmark of your cluster against your local machine. This will start a cluster if there isn't one already. SIFT features will be extracted from all images in the stack using default parameters over the cluster, then using all available cores on your local machine (including virtual, or hyper-threaded cores).
 
 === Programmers ===
-FijiArchipelago exports [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/compute/ProcessManager.java ProcessManagers] by serialization over a network Socket to the client computers. A ProcessManager is created from a [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/data/DataChunk.java DataChunk], [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/compute/ChunkProcessor.java ChunkProcessor], and [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/compute/ProcessListener.java ProcessListener].
-* DataChunk - contains serializable data, a reference to a unique index, and a mark. Suppose two DataChunks chunkA and chunkB share the same index, but chunkA has mark 0 and chunkB mark 1. This indicates that chunkB is the result of running a ProcessManager over chunkA.
-* ChunkProcessor - a serializable object that does the work of processing one DataChunk into another.
-* ProcessListener - this need not be serializable, as it is not sent to the client node. The processFinished method is called when the results of running the ProcessManager are returned to the local machine.
+FijiArchipelago implements [http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ExecutorService.html ExecutorService]. Unlike a typical ExecutorService, any Callable or Runnable submitted to a Cluster will be exported over the network to a remote machine.
 
-Once a ProcessManager is created, it may be submitted to the cluster using Cluster.queueJob(), or as a collection using Cluster.queueJobs()
+
+To make this work, any objects submitted to a Cluster are Serialized and transmitted to a remote instance of Fiji. The returned result is Serialized remotely, then retrieved by the local, or root node. Any submitted Callable or Runnable must implement Serializable. Failure to do so will result in a NotSerializableException at runtime. A consequence of Serialization is that the deep equality of objects is not preserved. In other words, a Callable that is designed to return an object that has been instantiated prior to submission will effectively return a clone. 
 
 Currently, only one Cluster may be operated as a server at a time. This instance is referenced by Cluster.getCluster(). Cluster.activeCluster() indicates whether there is an active Cluster already.
 
-An example may be found in [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/example/Cluster_SIFT.java#L71 Cluster_SIFT] 
+An example may be found in [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/example/Cluster_SIFT.java Cluster_SIFT]. An example that demonstrates the breakage of deep equality may be found in [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/example/Equality_Example.javaEquality_Example]
 
 ===== Planned Features =====
 * On-the-fly addition of new cluster nodes
