@@ -135,9 +135,11 @@ Make sure your project lives in ''src-plugins/<artifactId>'', that there is a co
 
 Also make sure that you do not have any circular dependencies. In other words, if your plugin is Plugin_A which depends on Plugin_B, be sure that Plugin_B does not depend on Plugin_A, or any other package that depends on Plugin_A.
 
-= How do I make my modifications to one subproject available to a depending subproject using maven? =
+= How do I make my modifications to one project available to a depending project using maven? =
 
-For example, suppose you have made changes to TrakEM2 that you want to take advantage of in a plugin. Compiling with mvn may result in errors indicating that your modifications do not exist. In this case, run "mvn install" in the modules/TrakEM2 directory. This should install the relevant, fresh TrakEM2 jars into the correct locations.
+For example, suppose you have made changes to TrakEM2 that you want to take advantage of in a plugin. Compiling with mvn may result in errors indicating that your modifications do not exist. In this case, run "mvn install" in the ''modules/TrakEM2'' directory. This should install the relevant, fresh TrakEM2 jars into the correct locations.
+
+Also make sure that the ''groupId'', ''artifactId'' '''and''' ''version'' in the ''<dependencies>'' section of the dependencee match the settings in the dependency's ''pom.xml'' file.
 
 = Where can I find more information about Maven? =
 
