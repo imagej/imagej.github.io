@@ -11,9 +11,9 @@ This project currently works for machines that share the same local network, but
 
 == Requirements ==
 * Server and clients should all have the same version of Fiji installed.
-* FijiArchipelago makes use of key pair authentication, so the server must have a private key file that matches a public key file on the client.
+* FijiArchipelago makes use of ssh and ssh key pair authentication, so the server must have a private key file that matches a public key in authorized_hosts on the client.
 * Clients must be able to access the server at the configured port.
-* Server and clients must have access to a shared network file server.
+* Server and clients must have access to a shared network file server if file transfer is required.
 
 So far, this has been tested only on Linux machines, but it should be platform-independent.
 
