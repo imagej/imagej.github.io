@@ -80,5 +80,6 @@ An example may be found in [https://github.com/fiji/fiji/blob/master/src-plugins
 * Volunteer cluster nodes, in other words, the ability to operate an instance of fiji in client mode through the plugin menu.
 * The ability to detect crashed nodes and re-queue their jobs
 * Menu-click supercomputing, or the ability to submit to a qsub-enabled HPC cluster from a local machine.
+* Security - Use ssh streams or SSLSockets to transfer objects, potentially allowing insecure Sockets as a non-default option.
 
 [[Category:Plugins]]
