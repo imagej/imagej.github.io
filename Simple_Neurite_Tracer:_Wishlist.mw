@@ -14,9 +14,13 @@ This is a list of the most commonly requested (or most important) wishlist items
 
 * It would be nice to be able to export paths to NeuroML as well as SWC.
 
-* The "fit volume" option is rather naive, and doesn't work well for noisy stacks.  For clear processes it's still a nice way to visualize the traces, but it should be replaced by a better algorithm.
+* The "fit volume" option is very naive, and doesn't work well for noisy stacks.  For clear processes it's still a nice way to visualize the traces, but it should be replaced by a better algorithm.  <em>Update:</em> this option should be deprecated - for reconstruction it's vastly better to use [Simple_Neurite_Tracer:_Tubular_Geodesics|the Tubular Geodesics method]].
 
 * The "fill volume" option works well, but currently isn't rendered in the 3D viewer and doesn't calculate radii around the path for export.  It would be useful to fit spheres within the fill to optimize the midpoint and generate radii.
+
+* Make the Tubular Geodesics plugins available through the Fijij Updater.
+
+* There should be an Undo option when tracing - a big job to implement, unfortunately
 
 * The way that fills are stored in the .traces file format is very inefficient at the moment - it stores enough information to be able to restart the fill from the exact state that the search reached, and this isn't really necessary.
 
