@@ -61,6 +61,12 @@ There are also [[Scripting comparisons]].
 
 See also the [[PlugIn Design Guidelines]].
 
+=== Plugins in the Fiji Source Tree ===
+
+The sources for many useful plugins are maintained in src-plugins/ in the Fiji source tree. In order to be built by the Fiji Build System, they must be properly [[Maven_-_Frequently_Asked_Questions|Mavenized]]. In other words, there should be a pom.xml file that describes the plugin, and its artifactId should be added as a module in the modules section of [https://github.com/fiji/fiji/blob/master/src-plugins/pom.xml the pom file for src-plugins] (alphabetically, please).
+
+See also [[Maven_-_Frequently_Asked_Questions]]
+
 == Adding submodules ==
 
 Some projects have their own source code repositories.  In this case, we do not copy the files into ''src-plugins/'', but use [[Git_submodule_tutorial|submodules]].
