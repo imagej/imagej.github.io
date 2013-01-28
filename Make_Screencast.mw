@@ -1,0 +1,17 @@
+{{Infobox Plugin
+| software               = Fiji
+| name                   = Make_Screencast.bsh
+| author                 = Johannes Schindelin
+| maintainer             = Johannes Schindelin
+| filename               = Make_Screencast.bsh
+| source                 = in [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Scripts/File/Make_Screencast.bsh gitweb]
+| status                 = stable
+}}
+
+'''Make Screencast''' is a [[Beanshell Scripting|Beanshell]] script to record a screencast in [http://en.wikipedia.org/wiki/Ogg Ogg] or [http://en.wikipedia.org/wiki/QuickTime_File_Format Quicktime] video formats.
+
+Access it via ''File > Make Screencast''.
+
+Stop recording the screencast via ''File > Stop Screencast''.
+
+'''Note''': This script requires the open source video player [http://www.videolan.org/vlc/index.html VLC] to be installed. When started, it tries to autodetect VLC on your system, and asks to install it if it fails to detect it.
