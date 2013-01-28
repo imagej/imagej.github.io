@@ -1,120 +1,37 @@
-== Introduction ==
-
 The goal of Fiji's build system is to make it extremely simple to define the tasks that are needed for Fiji.
 
-The system finds its ''targets'' in a file called ''Fakefile'' (''Fiji's mAKE FILE'').  The contents of that file look like this:
+To accomplish that, Fiji uses [[MiniMaven]], a cut-down clone of [[Maven]].
 
- all <- example.jar another-example.jar
- 
- example.jar <- example/**/*.java README LICENSE
- 
- another-example.jar <- SomeClass.java
+= Command-line interface =
 
-This file defines three targets: the default target called 'all', and two targets building .jar files.  The operation is defined implicitly by the name of the target.
+If you want to build Fiji completely, just clone ''git://github.com/fiji/fiji'', change the directory to the cloned one, and launch:
 
-Note that the Fiji source tree is now built by [[Maven_-_Frequently_Asked_Questions|Maven]]
+<source lang="bash">
+./Build.sh
+</source>
 
-== Nomenclature ==
+== Command-line options == 
 
-The ''Fakefile'' contains ''rules'' for ''targets'' that are defined in the following form:
+You can add individual targets (versions in versioned file names are ignored), e.g.:
 
- target <- prerequisites
+<source lang="bash">
+./Build.sh jars/fiji-compat.jar
+</source>
 
-If a prerequisite is also the target of another rule, the program builds that target before building the current one.
+If you want to force a rebuild, just attach the suffix ''--rebuild'' to the file name:
 
-== Calling Fiji's build system ==
+<source lang="bash">
+./Build.sh jars/fiji-compat.jar-rebuild
+</source>
 
-If you have a working Fiji launcher, you can call the build system like this:
+The special ''clean'' target deletes all artifacts and intermediate build products:
 
- ./fiji --build
+<source lang="bash">
+./Build.sh clean
+</source>
 
-If your Fiji launcher does not work, or you do not have one yet, bootstrap it like this:
+= History =
 
- ./Build.sh fiji
-
-You can ask the program to build only specific targets by passing them as parameters:
-
- ./fiji --build ij.jar
-
-Further, all variable definitions passed as parameters will override what is found in the Fakefile:
-
- ./fiji --build debug=true fake.jar
-
-== Target types ==
-
-The following target types are available:
-
-;The ''all'' target:
-:The first target in the ''Fakefile'' is always the default target. It lists all subtargets that are to be made by default.
-
-;''.jar'' targets:
-:If the target name ends with ''.jar'', a .jar is made.  If the last prerequisite also ends in ''.jar'', the build system will copy that file instead of trying to compile ''.java'' files.
-
-:The system is actually quite clever when it comes to putting the compiled classes into the ''.jar'' files; it figures out in which package the class lives, and uses the corresponding path.
-
-;''.class'' targets:
-:Targets whose name end in ''.class'' compile a single ''.java'' file (the last prerequisite is used to define that), and copies the resulting ''.class'' file (and the other generated classes that are used by this class) to the given destination.
-
-;''.cxx'' and ''.c'' targets:
-:If the last prerequisite ends in ''.cxx'' or ''.c'', the GNU C compiler is called to compile the prerequisites.
-
-;"SubBuild" targets:
-:If the last prerequisite specifies a directory, the build system looks for a ''Fakefile'' or a ''Makefile'' there.  According to what was found, Fiji's build system or ''make'' is called, and the target is copied over to the given destination.
-
-;Special targets:
-:Some targets are predefined, but can be overridden in the ''Fakefile''.  These include ''clean'', ''show-vars'' and others.
-
-== Special targets ==
-
-;clean
-:Remove all generated targets.  This target is not well tested.  '''Use with care'''.
-
-;show-vars
-:Show all defined variables
-
-;show-rules
-:Show all rules (with expanded variables)
- 
-;check
-:Instead of building the targets, this target just shows which targets are not up to date and would be built.
-
-== Variables ==
-
-You can define variables in the usual way:
-
- ONE=1
-
-This can be done either in the Fakefile or on the command line, as in this example:
-
- ./fiji --build debug=true
-
-Variables can be referenced in all parts of a rule.  Variables can be overridden per-target:
-
- ONE(ij.jar)=2
- ij.jar <- bla$ONE.java
-
-This is especially useful if you need to set a plugin specific CLASSPATH:
-
- CLASSPATH(plugins/my_plugin.jar)=plugins/some_other_plugin.jar
-
-
-=== Predefined variables ===
-
-TODO, for the moment there's just a list here with known variables:
-
-* debug (default: debug=false)
-* showdeprecation (default: showdeprecation=false, switches the java compiler options "-deprecation" and "-Xlint:unchecked" on)
-* verbose (default: verbose=false)
-
-== Other features ==
-
-=== Precompiled targets ===
-
-TODO
-
-=== Default targets ===
-
-TODO (like '''plugins/*.jar <- src-plugins/*/**/*''')
-
+There used to be a custom build system for Fiji called "Fiji Build", but it became unmaintainable and always had the rather big shortcoming of not integrating well with integrated development environments such as Netbeans, Eclipse, IntelliJ, etc. It has been deprecated in January 2013.
 
 [[Category:Development]]
