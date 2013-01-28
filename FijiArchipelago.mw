@@ -73,7 +73,7 @@ To make this work, any objects submitted to a Cluster are Serialized and transmi
 
 Currently, only one Cluster may be operated as a server at a time. This instance is referenced by Cluster.getCluster(). Cluster.activeCluster() indicates whether there is an active Cluster already.
 
-An example may be found in [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/example/Cluster_SIFT.java Cluster_SIFT]. An example that demonstrates the breakage of deep equality may be found in [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/example/Equality_Example.javaEquality_Example]
+An example may be found in [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/example/Cluster_SIFT.java Cluster_SIFT]. An example that demonstrates the breakage of deep equality may be found in [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/example/Equality_Example.java Equality_Example]
 
 ===== Planned Features =====
 * On-the-fly addition of new cluster nodes
