@@ -129,6 +129,12 @@ import imagej.util.Manifest;
     String version = manifest.getImplementationBuild();
 </source>
 
+= Why isn't my plugin in src-plugins compiled by Build.sh? =
+Make sure you have a correctly formatted pom.xml, and that the artifactId for your plugin has been added as a module in the modules section of src-plugins/pom.xml
+
+Make sure that you do not have any circular dependencies. In other words, if your plugin is Plugin_A which depends on Plugin_B, be sure that Plugin_B does not depend on Plugin_A, or any other package that depends on Plugin_A
+
+
 = Where can I find more information about Maven? =
 
 * [http://developer.imagej.net/learning-maven ImageJDev's Learning Maven]
