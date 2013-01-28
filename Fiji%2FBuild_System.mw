@@ -12,6 +12,8 @@ The system finds its ''targets'' in a file called ''Fakefile'' (''Fiji's mAKE FI
 
 This file defines three targets: the default target called 'all', and two targets building .jar files.  The operation is defined implicitly by the name of the target.
 
+Note that the Fiji source tree is now built by [[Maven_-_Frequently_Asked_Questions|Maven]]
+
 == Nomenclature ==
 
 The ''Fakefile'' contains ''rules'' for ''targets'' that are defined in the following form:
