@@ -1,5 +1,11 @@
 MiniMaven is a minimal build and dependency management system. It reads project configurations in the same format as [[Maven]] (''pom.xml'' files).
 
+== Why Maven? ==
+
+In the Fiji project, we need an easy way to define projects and their dependencies. We also want to support the widest variety of development tools, such as IntelliJ, Netbeans or Eclipse.
+
+Maven is a standard way to do exactly that.
+
 == Why MiniMaven? ==
 
 The only reason for MiniMaven to exist is that Maven -- while powerful -- is also pretty resource-hungry. In contrast to MiniMaven, Maven requires many more CPU cycles, takes longer, and downloads many more bytes (due to downloading and running requiring Maven plugins and their dependencies).
