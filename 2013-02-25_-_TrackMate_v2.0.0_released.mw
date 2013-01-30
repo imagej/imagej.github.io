@@ -1,3 +1,6 @@
+TrackMate v2.0.0 is NOT yet released. We just update this page as fixes appear during the release-candidates period.
+
+
 Since June 2012:
 
 
@@ -42,6 +45,7 @@ Even if the detectors and trackers are still the same that of versions 1.x, ther
 * In TrackScheme, the selection table can be exported as an ImageJ results table.
 * Better track layout in TrackScheme for tree-like structures. 
 * Improved the performance of several track analyzers. 
+* Full keyboard navigation. The filter panels that appear in the GUI can have their threshold entered by keyboard (just type a number - possibly decimal - and wait 1 s.).
 
 ==== Bug fixes ====
 
