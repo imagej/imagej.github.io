@@ -66,16 +66,16 @@ The '''Update LOCI Plugins''' command will check online for updates to the LOCI 
 
 == Scripting ==
 
-Bio-Formats has a high-level scripting interface, accessible by Java and all scripting languages supported by Fiji (but not the ImageJ macro language). Javascript example:
+Bio-Formats has a high-level scripting interface, accessible by Java and all scripting languages supported by Fiji (but not the ImageJ macro language). Java example:
 
-<source lang="javascript">
+<source lang="java">
 String id = "/path/to/myFile.ext";
 ImagePlus[] imps = BF.openImagePlus(id);
 </source>
 
 If needed, import options can be set:
 
-<source lang="javascript">
+<source lang="java">
 String id = "/path/to/myFile.ext";
 ImporterOptions options = new ImporterOptions();
 options.setId(id);
@@ -86,3 +86,15 @@ options.setColorMode(ImporterOptions.COLOR_MODE_COMPOSITE);
 //...etc.
 ImagePlus[] imps = BF.openImagePlus(options);
 </source>
+
+== Source code ==
+
+The official Bio-Formats repository is:
+
+    https://github.com/openmicroscopy/bioformats
+
+However, we sometimes deploy fixes to Fiji before they are integrated into Bio-Formats upstream. The code currently in use by Fiji is on the <code>fiji</code> branch of Fiji's Bio-Formats fork on GitHub:
+
+    https://github.com/fiji/bioformats/tree/fiji
+
+Typically this branch either matches the upstream <code>develop</code> branch precisely, or is a version of <code>develop</code> with one or more [https://github.com/openmicroscopy/bioformats/pulls pending topic branches] merged.
