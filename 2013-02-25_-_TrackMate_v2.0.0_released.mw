@@ -21,7 +21,7 @@ Most changes in this version are for developers and are not displayed in the tex
 * All spot, edge and track features can be plotted as specialized graphs, thanks to a dedicated GUI panel.
 [[File:TrackMate GrapherPanel.png|center|200px|caption]]
 * Tracks can be named in TrackScheme. These names are used to sort alphanumerically the tracks as they are laid out. 
-* We use [http://semver.org/ semantic versioning] for release numbers from now on. The rules about backward incompatible changes - described below - required a major version change.
+* We use [http://semver.org/ semantic versioning] for release numbers from now on. The rules about backward incompatible changes - described below - required a major version change. However, we reserve the right to make a major number change only when there is backward incompatible changes to the user only. API changes might not trigger a major version change.
 
 ==== Backward incompatible changes ====
 
@@ -45,7 +45,8 @@ Even if the detectors and trackers are still the same that of versions 1.x, ther
 * In TrackScheme, the selection table can be exported as an ImageJ results table.
 * Better track layout in TrackScheme for tree-like structures. 
 * Improved the performance of several track analyzers. 
-* Full keyboard navigation. The filter panels that appear in the GUI can have their threshold entered by keyboard (just type a number - possibly decimal - and wait 1 s.).
+* Full keyboard navigation. 
+* The filter panels that appear in the GUI can have their threshold entered by keyboard: Set the focus to the histogram panel (press tab until the threshold value is displayed in dark red instead of orange, or click the panel), and type a number - possibly decimal,  wait 1 s. You can also use the arrow keys to change it by 10% (left/right) or set it to a max or min value (up/down).
 
 ==== Bug fixes ====
 
@@ -53,3 +54,4 @@ Even if the detectors and trackers are still the same that of versions 1.x, ther
 * Fix the bug that caused the GUI to often hang after the initial filtering step.
 * Fix a bug when rendering tracks in the 3D viewer: the filtered-out tracks were displayed anyway. Noticed by David Mason.
 * Fix a bug causing TrackScheme and XML files to sometimes receive empty tracks.
+* Numerous minor bugfixes.
