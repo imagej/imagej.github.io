@@ -95,12 +95,12 @@ output = wekaSegmentation.applyClassifier(image);
 output.show();
 </source>
 
-= Define labels programmatically =
+= Define binary labels programmatically =
 
 Here is a simple script in Beanshell doing the following:
                                                                                 
 # It takes one image (2D or stack) as training input image and a binary image as the corresponding labels.
-# Train a classifier (in this case a random forest, but you can change it) based on randomly selected pixels of the training image. The number of samples (pixels to use for training) is also a parameter, and it will be equal for each class.
+# Train a classifier (in this case a random forest, but it can be changed) based on randomly selected pixels of the training image. The number of samples (pixels to use for training) is also a parameter, and it will be the same for each class.
 # Apply the trained classifier to a test image (2D or stack).
 
 <source lang="java">
