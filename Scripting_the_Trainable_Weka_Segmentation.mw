@@ -110,10 +110,11 @@ import trainableSegmentation.*;
 import hr.irb.fastRandomForest.*;
 
 // training input image (it could be a stack or a single 2D image)
-image = IJ.openImage("/data/challenge/train-volume-john.tif");
+image = IJ.openImage("train-volume.tif");
 // corresponding binary labels
-labels = IJ.openImage("/data/challenge/train-labels-john.tif");
+labels = IJ.openImage("train-labels.tif");
 
+// create Weka segmentator
 seg = new WekaSegmentation(image);
 
 // number of samples to use per slice
@@ -163,29 +164,31 @@ enableFeatures = new boolean[]{
 			false	/* Neighbors */
 };
 
-
+// Enable features in the segmentator
 seg.setEnabledFeatures( enableFeatures );
 
-// add balanced labels
+// Add balanced labels
 seg.addRandomBalancedBinaryData(image, labels, "class 2", "class 1", nSamplesToUse);
 
 // Train classifier
 seg.trainClassifier();
 
-// apply classifier to current image
-seg.applyClassifier(true);
 
-// display classified image
+// Un-comment next 7 lines to segment and display training image
 /*
+// Apply classifier to current image
+seg.applyClassifier( true );
+
+// Display classified image
 prob = seg.getClassifiedImage();
 prob.setTitle( "Probability maps of train image" );
 prob.show();
 */
 
-// Test image
-image = IJ.openImage("/data/challenge/test-volume-john.tif");
+// Open test image
+image = IJ.openImage("test-volume.tif");
 
-// Apply trained classifier to test image
+// Apply trained classifier to test image and get probabilities
 prob = seg.applyClassifier(image, 0, true );
 
 // Display results
