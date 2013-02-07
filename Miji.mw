@@ -24,6 +24,43 @@ MIJ.createImage('result', E, true);
 
 If you get an error saying that some Plugin related classes cannot be found, please update your Fiji with ''Help>Update Fiji''!
 
+== Running ImageJ commands ==
+
+In ImageJ, you can [http://mirror.imagej.net/docs/guide/146-31.html#sub:Record... record macros], one of the most powerful ways to use the program. Most of the recorded statements will look like this:
+
+<source lang="javascript">
+run("Command", "key1=7 key2 key3=[C:\\Documents and Settings\\Fiji\\Test.png]");
+</source>
+
+The first parameter to the ''run()'' method is the menu item's label which identifies the plugin to run (in this example, the label would read: ''Command'').
+
+The second parameter is a String containing values the user specified via an [http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/gui/GenericDialog.html ImageJ dialog]. Every value is identified by a label, and except for checkboxes (such as ''key2'' in the example above), they have values. If the values contain spaces, you need to  enclose the value in square brackets (such as ''key3'' in the example above).
+
+Note that the backslash is a so-called ''escape character'', i.e. it can be used to insert special characters such as line breaks or tabs. To insert a plain backslash, it has to be repeated therefore (as in the ''key3'' value: '''C:\Documents and Settings''' becomes '''"C:\\Documents and Settings"''').
+
+You can use those recorded statements in a slightly modified form via MIJ:
+
+# replace the double quotes by single quotes
+# prefix the ''run'' name with ''MIJ.''
+
+The above example would read like this:
+
+<source lang="matlab">
+MIJ.run('Command', 'key1=7 key2 key3=[C:\\Documents and Settings\\Fiji\\Test.png]');
+</source>
+
+Note: in Matlab, it is not strictly necessary to end the ''MIJ.run()'' statement with a semicolon, because it does not return anything. However, it is good practice with MIJ to end all statements in semicolons: some functions return images, cluttering the output and taking a very long time to print if the statement does not end in a semicolon.
+
+== Opening images ==
+
+Normally, the best way to use MIJ is to [[#Running ImageJ commands|use ImageJ's macro recorder]]. However, this procedure does not work when opening images because ImageJ records simply: '''open("/path/to/image.png");'''
+
+Instead, one needs to keep in mind how ''run()'' statements are constructed and imitate it for the ''Open...'' command:
+
+<source lang="matlab">
+MIJ.run('Open...', 'path=[C:\\Documents and Settings\\Fiji\\Test.png]');
+</source>
+
 == Using Fiji as a 3D viewer for MATLAB ==
 
 A set of demos made for MATLAB users, and introducing how to install and use Fiji as a visualization tool for MATLAB is published on the [http://www.mathworks.com/matlabcentral/fileexchange/32344-hardware-accelerated-3d-viewer-for-matlab fex].
