@@ -1,0 +1,13 @@
+[http://openspim.org OpenSPIM] wiki is available for viewing and contributions. 
+
+OpenSPIM is an Open Access platform for applying and enhancing '''Selective Plane Illumination Microscopy''' (SPIM). SPIM is a hot microscopy technology that will over time bring novel biological insigths in the hands of developmental and cell biologist. Bringing the technology into those hands is the point of the OpenSPIM project.
+
+OpenSPIM has very close ties to Fiji. The microscope is driven from OpenSPIM plugin inside microManager running under Fiji. Many of the complex image processing pipelines required for dealing with the massive multi-view SPIM time-lapse data like registration, fusion and visualization are already for a some time available in Fiji. Fiji and OpenSPIM merge the ideas of open source software and open access hardware into one integrated platform ready for application and further technological innovation.
+
+Improtantly, many of the people behind Fiji are also driving the OpenSPIM project.
+
+The motto of OpenSPIMis best summarized by this statement crafted by Pavel Tomancak and Johannes Schindelin.
+
+"We hope that OpenSPIM in its radical openness will demonstrate that the benefits brought to science by the Open Source approach apply equally well to hardware."
+
+[[Category:News]]
