@@ -4,7 +4,7 @@ OpenSPIM is an Open Access platform for applying and enhancing '''Selective Plan
 
 OpenSPIM has very close ties to Fiji. The microscope is driven from [http://openspim.org/Downloads OpenSPIM plugin] inside [http://valelab.ucsf.edu/~MM/MMwiki/ microManager] running under Fiji. Many of the complex image processing pipelines required for dealing with the massive multi-view SPIM time-lapse data like [[SPIM_Registration|registration]], [[Multi-View_Fusion|fusion]], deconvolution (coming soon) and visualization (also coming soon) are available in Fiji. Fiji and OpenSPIM merge the ideas of Open Source software and Open Access hardware into one integrated platform ready for application and further technological innovation.
 
-Improtantly, many of the [[http://openspim.org/People people]] behind Fiji are also driving the OpenSPIM project.
+Improtantly, many of the [http://openspim.org/People people] behind OpenSPIM are also driving the Fiji project.
 
 The motto of OpenSPIM is best summarized by this statement crafted by Pavel Tomancak and Johannes Schindelin.
 
