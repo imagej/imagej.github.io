@@ -167,6 +167,12 @@ You need to update the ImageJA submodule:
 
  git submodule update ImageJA
 
+== Class loading issue in 3-rd party libraries (e.g. JPPF) ==
+
+Libraries trying to load resources or classes with the current thread's class loader rather than with IJ's class loader may fail. The solution is to first set the current thread's class loader to the IJ-classloader. This must be done from THE SAME THREAD that will later call the problematic code:
+
+ Thread.currentThread().setContextClassLoader(IJ.getClassLoader());
+
 = Community =
 
 == Why is there Fiji when there is already ImageJ? And what is this ImageJ2 about? ==
