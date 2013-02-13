@@ -58,7 +58,9 @@ Note:
 Use the library in this way:
 
 <source lang="java">
-C c = (C)NativeLibrary.loadLibrary("c", C.class);
+import com.sun.jna.Native;
+
+C c = (C)Native.loadLibrary("c", C.class);
 int result = c.symlink(source, target);
 </source>
 
