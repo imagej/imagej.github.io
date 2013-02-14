@@ -83,7 +83,7 @@ Browse the [[:Category:News|news archive]].
 
 == [[Downloads]] ==
 
-<span style="color:red">'''Critical:'''</span> if you updated and Fiji does not work anymore, you need to follow [[Fix_non-functional_Fiji_after_Update|these instructions]].
+<span style="color:red">'''Critical:'''</span> if your updater does not work any longer, please drag & drop [https://github.com/fiji/fiji/raw/master/plugins/Scripts/Plugins/Utilities/Fix_Updater.js this link] to your Fiji main window and follow the instructions in the text window. If that does not work, pleasefollow [[Fix_non-functional_Fiji_after_Update|these instructions]].
 
 {{DownloadsCurrent}}
 
