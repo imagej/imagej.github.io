@@ -1,0 +1,11 @@
+{{Infobox Plugin
+| name                   = Multi-view deconvolution plugin
+| software               = ImageJ
+| author                 = Stephan Preibisch, Fernando Amat, Eugene Myers, Pavel Tomancak
+| maintainer             = Stephan Preibisch
+| filename               = SPIM_Registration.jar
+| released               = February 2013
+| latest version         = February 2013
+| category               = [[:Category:Registration|SPIM Registration]]
+| website                = [http://fly.mpi-cbg.de/~preibisch Stephan Preibisch's homepage]
+}}
