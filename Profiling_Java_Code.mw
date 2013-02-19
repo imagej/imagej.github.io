@@ -20,20 +20,23 @@ If you are on Linux, you can use [http://oprofile.sourceforge.net/news/ OProfile
 
 You need to [http://oprofile.sourceforge.net/doc/setup-jit.html#setup-jit-jvm recompile OProfile] for Java support (at least on Ubuntu, there is no precompiled OProfile package with Java support). On Linux, you can use this shell script to compile and install it:
 
- sudo apt-get install libpopt-dev binutils-dev checkinstall && 
- cd $FIJI_ROOT && 
- git clone contrib@fiji.sc:/srv/git/oprofile && 
- cd oprofile/oprofile && 
- ./autogen.sh && 
- ./configure --with-java=$(pwd)/../../java/linux-amd64/jdk1.6.0_22/ &&
- make && 
- sudo checkinstall
+<source lang="bash">
+sudo apt-get install libpopt-dev binutils-dev checkinstall && 
+git clone contrib@fiji.sc:/srv/git/oprofile && 
+cd oprofile/oprofile && 
+./autogen.sh && 
+./configure --with-java=$(pwd)/../../java/linux-amd64/jdk1.6.0_22/ &&
+make && 
+sudo checkinstall
+</source>
 
 You should make sure that the path to the JDK is correct. (But you do not need to use ''checkinstall'', but it will make it easy to remove the package once you do not want it anymore.)
 
 === Start the profiler ===
 
- sudo opcontrol --start --no-vmlinux
+<source lang="bash">
+sudo opcontrol --start --no-vmlinux
+</source>
 
 Recent versions of OProfile require that a user account ''oprofile'' with default group ''oprofile'' exist before starting the OProfile daemon. On current Ubuntu systems, you can make one by calling '''sudo adduser oprofile''' (Ubuntu creates a default group of the same name for each new user account). If you do not have such an account, you will get something like ''anon (tgid:10014 range:0x100000-0x103000)'' in the report.
 
@@ -43,12 +46,16 @@ Recent versions of OProfile require that a user account ''oprofile'' with defaul
 
 === Stop the profiler ===
 
- sudo opcontrol --stop
+<source lang="bash">
+sudo opcontrol --stop
+</source>
 
 === Getting at the profiling data ===
 
- sudo opcontrol --dump && 
- opreport -l image:\*/fiji
+<source lang="bash">
+sudo opcontrol --dump && 
+opreport -l image:\*/fiji
+</source>
 
 If you get entries like ''"anon (tgid:10014 range:0x100000-0x103000)'' you probably did not create a user account ''oprofile'' in a group ''oprofile'' before starting the OProfile daemon.
 
