@@ -199,3 +199,7 @@ image.show();
 
 IJ.log("---");
 </source>
+
+[[Category:Scripting]]
+[[Category:Segmentation]]
+[[Category:Machine Learning]]
