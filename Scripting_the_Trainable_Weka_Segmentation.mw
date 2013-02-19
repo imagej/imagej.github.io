@@ -1,4 +1,4 @@
-[[Script Editor|Scripting]] is one of the reasons Fiji is so powerful, and the Trainable Segmentation is one of the best examples for scriptable Fiji components.
+[[Script Editor|Scripting]] is one of the reasons Fiji is so powerful, and the Trainable Segmentation library (that includes the [[Advanced Weka Segmentation]] plugin methods) is one of the best examples for scriptable Fiji components.
 
 = Define your own features =
 
