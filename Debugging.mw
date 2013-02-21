@@ -252,40 +252,23 @@ If this information is not enough to solve the trouble, or if ''Test Java3D'' di
 
 From the command line, you have several options to show more or less information about Java3D.
 
-=== Windows ===
-On Windows, you <u>must</u> pass the ''--console'' option in any case. From the Start Menu's ''Run...'' call ''cmd.exe'' and in the command-line window that appears, type:
+=== Windows & Linux ===
 
-<source lang="bash">
-cd Desktop\Fiji.app
-fiji-win32 --console
-</source>
+Please find the ''ImageJ-<platform>'' executable in the Fiji.app/ directory (on 32-bit Windows, that would be ''ImageJ-win32.exe''. Make a copy in the same directory and rename that to ''debug'' (on Windows: ''debug.exe''). Simply double-click that.
 
-'''Note:''' you may have unpacked Fiji somewhere else than the Desktop. If so, you have to use a different ''cd'' call.
+On Windows, you will see a console window popping up; to copy information for pasting somewhere else, please right-click the upper-left window icon, select ''Properties...'', activate the ''Quick Edit'' mode. Then mark the text in question by dragging the mouse with the left mouse button pressed, and copy it to the clipboard by right-clicking.
 
-'''And note, too:''' on Windows 64, the executable is called ''fiji-win64'', of course.
-
-To copy text from the command-line window, you need to activate the Quick Edit mode: right-click on the window icon in the upper left corner of the command-line window, choose ''Properties...'' and check the "Quick Edit Mode" checkbox. After that, you can mark text by click-dragging with the left mouse button and copy it by right-clicking.
+On Linux, the output will be written to the file ''.xsession-errors'' in the home directory.
 
 === MacOSX ===
+
 On MacOSX, you need to remember that any application is just a directory with a special layout. So you can call Fiji like this from the ''Terminal'' (which you will find in the Finder by clicking on ''Go>Utilities''. Example command line:
 
 <source lang="bash">
-cd /Applications/Fiji.app
-Contents/MacOS/fiji-macosx
+cd /Applications/Fiji.app/Contents/MacOS/
+cp fiji-macosx debug
+./debug
 </source>
-
-'''Note:''' on Tiger, you need to call ''fiji-tiger'' instead of ''fiji-macosx''.
-
-=== Linux ===
-
-As you might have guessed, on Linux it is a simple matter of
-
-<source lang="bash">
-cd /path/to/Fiji.app
-./fiji-linux
-</source>
-
-'''Note:''' on 64-bit Linux, the executable is called ''fiji-linux64'' instead.
 
 == Show Java3D debug messages ==
 
