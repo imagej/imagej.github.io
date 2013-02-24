@@ -222,4 +222,29 @@ Sometimes things go wrong and all you see is "blabla.jpg is locked" when you try
 IJ.getImage().unlock();
 </source>
 
+=== Scripting [[Feature Extraction|SIFT]] ===
+
+The ''Scale-Invariant Feature Transform'' poses a relatively powerful way to reduce the complexity when trying to find matching parts of large images. Fiji has an implementation of this algorithm which you can use like so:
+
+==== Beanshell ====
+<source lang="java">
+import java.util.ArrayList;
+
+import mpicbg.ij.SIFT;
+import mpicbg.imagefeatures.Feature;
+import mpicbg.imagefeatures.FloatArray2DSIFT;
+
+param = new FloatArray2DSIFT.Param();
+sift = new SIFT(new FloatArray2DSIFT(param));
+features = new ArrayList();
+// ''ip'' refers to an ImageProcessor
+sift.extractFeatures(ip, features);
+
+// print coordinates
+for (Feature feature : features)
+    print("x: " + feature.location[0] + ", y: " + feature.location[1]);
+</source>
+
+For more information, please browse the [http://jenkins.imagej.net/job/Saalfeld-MPICBG-Maven/javadoc/mpicbg/imagefeatures/Feature.html Javadoc of the Feature class].
+
 [[Category:Scripting]]
