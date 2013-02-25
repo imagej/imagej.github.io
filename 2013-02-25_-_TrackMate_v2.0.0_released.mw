@@ -1,4 +1,8 @@
-TrackMate v2.0.0 is NOT yet released. We just update this page as fixes appear during the release-candidates period.
+We just released a new major version of TrackMate, our framework to perform automated and manual tracking of blob-like structures. 
+
+Most visible changes involve data export and basic analysis, user interface, performance improvement ... There is no new tracking and detection algorithm in this release. We hope nevertheless that you will enjoy this brand new version. 
+
+We would like to thank the users we contacted for the release-candidates testing, and who greatly facilitated this release.
 
 
 Since June 2012:
