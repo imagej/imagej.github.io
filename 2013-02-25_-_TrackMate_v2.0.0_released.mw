@@ -20,7 +20,7 @@ Most changes in this version are for developers and are not displayed in the tex
 [[File:TrackMate AnalysisButton.png|center|400px]]
 * All spot, edge and track features can be plotted as specialized graphs, thanks to a dedicated GUI panel.
 [[File:TrackMate GrapherPanel.png|center|200px|caption]]
-* Tracks can be named in TrackScheme. These names are used to sort alphanumerically the tracks as they are laid out. 
+* Tracks can be named in TrackScheme. These names are used to sort alphanumerically the tracks as they are laid out. To change the name of a track, just double-click its current name in the TrackScheme view.
 * We use [http://semver.org/ semantic versioning] for release numbers from now on. The rules about backward incompatible changes - described below - required a major version change. However, we reserve the right to make a major number change only when there is backward incompatible changes to the user only. API changes might not trigger a major version change.
 
 ==== Backward incompatible changes ====
@@ -55,3 +55,6 @@ Even if the detectors and trackers are still the same that of versions 1.x, ther
 * Fix a bug when rendering tracks in the 3D viewer: the filtered-out tracks were displayed anyway. Noticed by David Mason.
 * Fix a bug causing TrackScheme and XML files to sometimes receive empty tracks.
 * Numerous minor bugfixes.
+
+
+[[Category:News]]
