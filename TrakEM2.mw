@@ -38,6 +38,7 @@ TrakEM2 interacts with the [[3D Viewer]] for visualization of image volumes and 
 * [http://www.ini.uzh.ch/~acardona/trakem2_manual.html Manual]
 * [[TrakEM2 tutorials]] with video tutorials.
 * Examples of [[TrakEM2 Scripting|scripting in TrakEM2]].
+* Writing [[TrakEM2_TPlugIn|plugins for TrakEM2]].
 
 == Running fiji for heavy-duty, memory-intensive, high-performance TrakEM2 tasks ==
 
