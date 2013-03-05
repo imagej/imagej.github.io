@@ -1,8 +1,9 @@
-If you want to download from someone else's update site, see: [[How to follow a 3rd party update site]].
+<div style="background:#ffd; padding: 10px 10px 0 10px; border: 1px solid black;">
+To '''download from someone else's update site''', see: [[How to follow a 3rd party update site]].
 
-If you want to browse a list of existing update sites, see: [[List of update sites]].
+To '''browse a list of existing update sites''', see: [[List of update sites]].
+</div>
 
-----
 
 This tutorial explains how to set up a website to distribute your plugins. It assumes that:
 * Your plugins are correctly installed in Fiji
