@@ -1,8 +1,9 @@
-If you want to create your own update site, see: [[How to set up and populate an update site]].
+<div style="background:#ffd; padding: 10px 10px 0 10px; border: 1px solid black;">
+To '''create your own update site''', see: [[How to set up and populate an update site]].
 
-If you want to browse a list of existing update sites, see: [[List of update sites]].
+To '''browse a list of existing update sites''', see: [[List of update sites]].
+</div>
 
-----
 
 =How to add an update site to your Fiji installation=
 
