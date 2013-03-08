@@ -18,6 +18,23 @@ Links to the contributors' personal pages can be found [[Contributors|here]].
 * The Biomedical Imaging Group in Lausanne has [http://bigwww.epfl.ch/algorithms.html many interesting plugins].
 * Christian Henden has some interesting plugins (mainly in the Public Domain), including 3D threshold methods: http://www.pvv.org/~perchrh/imagej/
 
+== Related projects ==
+
+{|
+|-
+|[[File:Ij2-logo.jpg|left|150px]]
+|valign=center|The [http://developer.imagej.net/ next generation ImageJ].
+|-
+|[[File:Knime-logo.jpg|left|150px]]
+|valign=center|The [http://tech.knime.org/community/image-processing Konstanz kNowledge Information Mining Environment].
+|-
+|[[File:Mm-logo.jpg|left|150px]]
+|valign=center|[http://micro-manager.org/ µManager] is an extensive software suite to interact with microscopes. It integrates nicely as an ImageJ plugin (''Plugins>Micro-Manager>Micro-Manager Studio'').
+|-
+|[[File:OpenSPIM-logo.png|left|150px]]
+|valign=center|[http://openspim.org/ OpenSPIM] is an Open Access and Open Source project to make Single Plane Illumination Microscopy (SPIM) accessible to researchers working with, or on, SPIM technology.
+|}
+
 == Image Processing and Ethics ==
 
 It becomes more and more important to have clear-cut guidelines what types of image processing are appropriate and what processing is questionable at best.
