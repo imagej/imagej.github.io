@@ -6,7 +6,7 @@
 | filename        =  [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.0.0-SNAPSHOT.jar Sholl_Analysis.jar]
 | released        = December 2012
 | status          = stable
-| category       = [[:Category:Plugins|Plugins]],  [[:Category:Segmentation|Segmentation]], [[:Category:Analysis|Analysis]]
+| category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]]
 }}
 
 Bitmap Sholl for 2D and 3D images. For the ImageJ plugin, visit the  [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:asa:start ImageJ wikipage]. For analysis of traced arbors have a look at [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].
@@ -199,3 +199,6 @@ Available [https://github.com/tferr/ASA/blob/master/Notes here].
 
 == License ==
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+[Category:Plugins]]
+[[Category:Analysis]]
