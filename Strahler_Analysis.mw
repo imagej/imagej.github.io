@@ -15,14 +15,16 @@ A [[Beanshell_Scripting|BeanShell]] script that performs Strahler analysis on to
 
 [http://en.wikipedia.org/wiki/Strahler_number Strahler numbering] is a numerical procedure that summarizes the branching complexity of a mathematical tree.
 
-There are different approaches to classify a tree-like structure by its Horton-Strahler numbers. One is iterative tree simplification, a method that requires detecting all terminal branches and all the degree-one paths leading to them. [[AnalyzeSkeleton]] is able to detect and prune terminal branches, which, in the case of radial arbors (i.e., structures that branch out in all directions: e.g., neurons in dissociated cultures, Retinal Ganglion Cells, Chandelier neurons, etc.) is usually sufficient to provide satisfactory simplification of the structure. Thus, this [https://github.com/tferr/Scripts/blob/master/Strahler_Analysis.bsh Strahler_Analysis.bsh] skeletonizes a grayscale image containing the structure of interest, and calls [[AnalyzeSkeleton]] iteratively to retrieve Horton-Strahler counts.
+There are different approaches to classify a tree-like structure by its Horton-Strahler numbers. One is iterative tree simplification, a method that requires detecting all terminal branches and all the degree-one paths leading to them.
+
+[[AnalyzeSkeleton]] is able to detect and prune terminal branches, which, in the case of radial arbors (i.e., structures that branch out in all directions: e.g., neurons in dissociated cultures, Retinal Ganglion Cells, Chandelier neurons, etc.) is usually sufficient to provide satisfactory simplification of the structure. Thus, [https://github.com/tferr/Scripts/blob/master/Strahler_Analysis.bsh Strahler_Analysis.bsh] takes a grayscale image containing the structure of interest, and calls [[AnalyzeSkeleton]] iteratively to retrieve Horton-Strahler counts (see the  [https://github.com/tferr/Scripts/blob/master/Strahler_Analysis.bsh source code] for details).
 
 == Installation ==
-Install [https://github.com/tferr/Scripts/blob/master/Strahler_Analysis.bsh Strahler_Analysis.bsh] in the plugins/ folder using the ''Plugins>Install...'' command. 
+Download [https://github.com/tferr/Scripts/blob/master/Strahler_Analysis.bsh Strahler_Analysis.bsh] and place it in the plugins/ folder using the ''Plugins>Install...'' command. 
 If you are not using Fiji, the script should remind you to install [[AnalyzeSkeleton]] and [[Skeletonize3D]], if you have not done so.
 
 == Usage ==
-Once you get acquainted with [[Skeletonize3D]] and [[AnalyzeSkeleton]], the script parameters become self-explanatory. The following description was taken from the scripts's built-in help dialog:
+Once you get acquainted with [[Skeletonize3D]] and [[AnalyzeSkeleton]], the script parameters become self-explanatory. The following descriptions were taken from the scripts's built-in help:
 
 ;Max. number of iterations
 :The maximum number of elimination steps to be used, i.e., the highest Strahler order ('"root node") to be considered. Note that the analysis will stop as soon as there is only one end-point/branch in the skeleton, which may happen before the specified cycle.
@@ -40,5 +42,14 @@ Hold down ''Alt'' while confirming the dialog prompt (or activate ''Debug mode''
 To [http://doube.org/ Michael Doube] and [[User:Iarganda|Ignacio Arganda-Carreras]] for developing [[AnalyzeSkeleton]].
 
 
+== License ==
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+
 == References ==
 *{{citation|last=Strahler|first=A. N.|authorlink=Arthur Newell Strahler|year=1952|title=Hypsometric (area-altitude) analysis of erosional topology|journal=Geological Society of America Bulletin|volume=63|issue=11|pages=1117–1142|doi=10.1130/0016-7606(1952)63[1117:HAAOET]2.0.CO;2}}.
+
+[[Category:Skeleton]]
+[[Category:Scripting]]
+[[Category:Analysis]]
+[[Category:Plugins]]
