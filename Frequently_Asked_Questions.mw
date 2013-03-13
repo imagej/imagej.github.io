@@ -10,6 +10,12 @@ This problem usually arises when 12-bit or 14-bit images are loaded into Fiji wi
 
 The installation of Fiji is described on specific pages for [[Install_Fiji_on_MacOSX|MacOSX]], [[Install_Fiji_on_Windows|Windows]] and [[Install_Fiji_on_Linux|Linux]].
 
+== How do I turn my ImageJ installation into a Fiji one? ==
+
+Fiji is just ImageJ. Hence it is very easy to bootstrap the updater and add the Fiji update site: Simply drag 'n drop [http://update.imagej.net/fix.js this link] onto your running ImageJ and run the Javascript that was opened in a text window.
+
+After that, you can run Fiji/ImageJ using the ImageJ launcher that was installed into the ImageJ directory.
+
 == How do I install additional plugins? ==
 
 You can drag 'n drop the .jar files onto the Fiji window, or use ''Plugins>Install Plugin...'' with .jar, .class and .java files, or copy the plugins to ''Fiji.app/plugins/'' and call ''Help>Refresh Menus'' manually. A walk-through with screenshots is available [[Installing 3rd party plugins|here]].
