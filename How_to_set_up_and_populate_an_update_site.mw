@@ -7,7 +7,11 @@ To '''browse a list of existing update sites''', see: [[List of update sites]].
 
 This tutorial explains how to set up a website to distribute your plugins. It assumes that:
 * Your plugins are correctly installed in Fiji
-* You have a [[#Dropbox|Dropbox account]], or SSH/FTP access to a website that serves static web pages.
+* You have either:
+<ol style="list-style-type:lower-alpha">
+  <li>A [[#Dropbox|Dropbox account]]; or</li>
+  <li>SSH/FTP access to a website that serves static web pages.</li>
+</ol>
 * In case you want to use your own server, it must have an empty, public web accessible folder where you intend to publish your updates. The Fiji updater will not create that empty folder.
 
 == Start the [[Fiji Updater|updater]] and check your plugins ==
