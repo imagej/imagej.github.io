@@ -7,8 +7,8 @@ To '''browse a list of existing update sites''', see: [[List of update sites]].
 
 This tutorial explains how to set up a website to distribute your plugins. It assumes that:
 * Your plugins are correctly installed in Fiji
-* You have SSH access to a website that serves static web pages.
-* That server has an empty, public web accessible folder where you intend to publish your updates. The Fiji updater will not create that empty folder.
+* You have a [[#Dropbox|Dropbox account]], or SSH/FTP access to a website that serves static web pages.
+* In case you want to use your own server, it must have an empty, public web accessible folder where you intend to publish your updates. The Fiji updater will not create that empty folder.
 
 == Start the [[Fiji Updater|updater]] and check your plugins ==
 
@@ -37,6 +37,8 @@ Click 'OK' to add the update site.
 * Note: you need to prefix the SSH host with ''<username>@'', e.g. ''gavinrocks@tattooine.pdq-bach.org''.
 
 * Note: if you can upload files to your site via SFTP, but not SSH, you need to prefix the SSH host with ''sftp:'', e.g. ''sftp:gavinrocks@tattooine.pdq-bach.org''.
+
+* Note: if you want to use your Dropbox account, please look [[#Dropbox|here]] for details.
 
 If the update site has not been initialized yet (i.e. if nobody else has initialized that site yet), you will see a dialog like this:
 
@@ -69,6 +71,23 @@ Check that your plugins are now registered as Fiji plugins by selecting 'View fi
 [[Image:UpdaterFinalScreen.jpg|770px]]
 
 That's it - you're done. Now, anyone who wants a copy of your plugins merely needs to [[How to follow a 3rd party update site|add your update site]] to the Update manger via the URL you specified, and your plugins will be downloaded and updated in their Fiji installations just like the standard Fiji plugins.
+
+== Dropbox ==
+
+You can use the ''Public/'' folder of a [http://dropbox.com Dropbox] account to publish your plugins.
+
+All you need to do is enter the appropriate information:
+
+; Name:
+: a nickname for your update site, e.g. ''Johannes Dropbox''.
+; URL:
+: the public URL of the ''Public/'' folder of your Dropbox account. Simple right-click on the ''How to use the Public folder.rtf'' file after loggin into your Dropbox account, select ''Copy public link'' and remove the file name from the URL. Example: http://dl.dropbox.com/u/41712216/
+; SSH host:
+: we will pretend that the server is local, so put in ''file:localhost''.
+; Upload directory:
+: this must be the absolute path to your local Dropbox' Public/ folder. Example: ''/home/mike/Dropbox/''
+
+<span style='text-color: red;'>Note!</span> The updater will ask you whether you want to initialize the update site. This might trigger an error message like this: ''Could not initialize update site 'Johannes Dropbox'''. No need to worry! This error happens because the updater assumes that the file it wrote will be available via the URL immediately! However, just clicking ''OK'' in the error message followed by clicking ''OK'' in the ''Add update site'' dialog will work around the slight delay caused by the synchronization of the Dropbox.
 
 ==See Also==
 [[How to follow a 3rd party update site]]
