@@ -143,7 +143,7 @@ JYT acknowledges funding from the European commission FP7 ICT ([http://www.memi-
 
 Bug fixes are not mentioned here, and do not get their own release number. 
 
-* 10/05/2012 - v.10: Initial release
+* 10/05/2012 - v.1.0: Initial release
 * 22/05/2012 - v1.1: 
 ** [[TrachScheme]] can change of display style.
 ** De-activated folding branches in TrackScheme, as it was non-functional.
@@ -185,7 +185,8 @@ Bug fixes are not mentioned here, and do not get their own release number.
 ** Fix a bug when rendering tracks in the 3D viewer: the filtered-out tracks were displayed anyway. Noticed by David Mason.
 ** Fix a bug causing TrackScheme and XML files to sometimes receive empty tracks.
 ** Numerous minor bugfixes.
-
+* 15/03/2013 - v2.0.1:
+** Fix a bug noticed by Jan Brocher that prevented track splitting and merging events to be correctly detected in some cases.
 
 
 
