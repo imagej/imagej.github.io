@@ -582,10 +582,12 @@ makeMontage(false);
 
 == Mimic the ''merge sides'' command in the BioRad MRC600 confocal ==
 Macro to mimic the merge sides command in the original BioRad MRC600 confocal. 
+
 For an example raw image, see http://www.flickr.com/photos/mcammer/1618746622/
+
 For an example result, see http://www.flickr.com/photos/mcammer/8551068739/
-Splits a grayscale image and merges.
-Works on stacks.
+
+Splits a grayscale image and merges.  Works on stacks.
 
 Michael Cammer  michael.cammer@med.nyu.edu with editing by Johannes Schindelin [Johannes.Schindelin@gmx.de]   20130312
 
