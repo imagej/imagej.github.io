@@ -580,6 +580,34 @@ randomize = true;
 makeMontage(false);
 </source>
 
+'== Mimic the ''merge sides'' command in the BioRad MRC600 confocal =='
+// Macro to mimic the merge sides command in the original // BioRad MRC600 confocal.  Splits a grayscale image and merges.
+// Works on stacks.
+
+// Michael Cammer  michael.cammer@med.nyu.edu with editing by Johannes Schindelin [Johannes.Schindelin@gmx.de] // 20120312
+
+<source lang="java">
+macro "Split and Merge" {
+  width = getWidth();
+  height = getHeight();
+  if ( (width % 2) == 0  ) exit("Image not even # pixels wide.");
+  makeRectangle(0, 0, width/2, height);
+  right = getImageID();
+  slices = nSlices;
+  run("Duplicate...", "title=LEFT duplicate range=1-"+slices);
+  selectImage(right);
+  makeRectangle(width/2, 0, width/2, height);
+  run("Crop");
+  rightTitle = getTitle();
+  run("Merge Channels...", "c1=LEFT c2="+right);
+  rename("merged_"+right);
+}  // end
+</source>
+
+
+
+
+
 == More example macros ==
 
 There are quite a lot of macros on the [http://imagej.nih.gov/ij/macros/ ImageJ website], and specifically [http://imagej.nih.gov/ij/macros/examples/ example macros] including a few from the Macro workshop at the [http://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2010 ImageJ conference 2010]. Since there is no categorized index, you might want to use the search facility on [http://imagej.nih.gov/ij/developer/index.html this page].
