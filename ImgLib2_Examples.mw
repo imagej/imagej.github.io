@@ -1809,8 +1809,6 @@ The final convolution of the inverse template with the image is performed using 
  * An exception is the 1D FFT implementation of Dave Hale which we use as a
  * library, which is released under the terms of the Common Public License -
  * v1.0, which is available at http://www.eclipse.org/legal/cpl-v10.html
- *
- * @author Stephan Preibisch (stephan.preibisch@gmx.de)
  */
 import ij.ImageJ;
 import net.imglib2.algorithm.fft.FourierConvolution;
