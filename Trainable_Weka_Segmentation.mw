@@ -331,6 +331,8 @@ The plugin GUI is independent from the plugin methods. The methods are implement
 
 For examples on how to use the plugin methods from scripts, have a look at the [[Scripting_the_Trainable_Segmentation|Trainable Segmentation scripting]] page.
 
+The '''API of the WekaSegmentation''' library is available [http://fiji.sc/javadoc/trainableSegmentation/WekaSegmentation.html here].
+
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
