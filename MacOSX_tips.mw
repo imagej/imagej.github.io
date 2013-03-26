@@ -77,13 +77,13 @@ If you unpacked Fiji onto your desktop, do this:
 
 Once you switched to the correct directory, start the Fiji launcher:
 
-<source lang="bash">Contents/MacOS/fiji-macosx</source>
+<source lang="bash">Contents/MacOS/ImageJ-macosx</source>
 
-'''Note for Windows users''': A backslash is not the same as a slash. So: ''Contents\MacOS\fiji-macosx'' will '''not''' work.
+'''Note for Windows users''': A backslash is not the same as a slash. So: ''Contents\MacOS\ImageJ-macosx'' will '''not''' work.
 
 Now you can pass, say, [[Java Options]]:
 
-<source lang="bash">Contents/MacOS/fiji-macosx -verbose:gc --</source>
+<source lang="bash">Contents/MacOS/ImageJ-macosx -verbose:gc --</source>
 
 '''Note''': to distinguish between options intended for Java and options intended for ImageJ, you need to separate the former from the latter with a double-dash: '''--'''. Since the default is to accept ImageJ options, you have to pass a trailing double-dash if you want to pass only Java options.
 
