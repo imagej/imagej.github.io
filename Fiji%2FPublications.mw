@@ -8,6 +8,8 @@
 
 * A review of biological imaging software tools focusses on open source programs and Fiji is a big part of it<ref>{{cite journal |author=Kevin W Eliceiri, Michael R Berthold, Ilya G Goldberg, Luis Ibàñez, B S Manjunath, Maryann E Martone, Robert F Murphy, Hanchuan Peng, Anne L Plant, Badrinath Roysam, Nico Stuurmann, Jason R Swedlow, Pavel Tomancak & Anne E Carpenter|title=Biological imaging software tools|journal=Nature Methods |year=2012 |volume= 9(7)|pages=697–710|url=http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2084.html}}</ref>.
 
+* A German article about Fiji was published in the popular scientific journal [http://www.laborwelt.de/spezialthemen/bioinformatik/bildanalyse-mit-fiji.html Laborwelt] (with one erratum: the authors would never claim that Fiji succeeds ImageJ; rather, Fiji <u>Is Just ImageJ</u>).
+
 == Publications using or enhancing Fiji ==
 
 * [[Stitching]]<ref>{{cite journal |author=Preibisch S and Saalfeld S and Tomancak P |title=Globally Optimal Stitching of Tiled 3D Microscopic Image Acquisitions |journal=Bioinformatics |year=2009 |month=April |volume=25(11) |pages=1463-1465 |pmid=19346324|url=http://bioinformatics.oxfordjournals.org/cgi/content/full/25/11/1463}}</ref>
