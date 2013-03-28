@@ -1,0 +1,21 @@
+The ''Spirals'' sample is designed to disspell the all-too-common idea that human beings are able to quantify color. If you ever hear a scientist say: <span style='font-size: 20px;'>"But I can see it!"</span> show them this image:
+
+[[File:Spirals.png]]
+
+Ask them to point to the green and then to the blue spiral arms. And then explain to them that most human beings see this, it is quite normal, there is nothing to be ashamed of, but there are no green or blue spiral arms. The arms have the *exact* same color. They do not have a different color.
+
+== The macro ==
+
+Any self-respecting scientist will doubt your statement. This is where the source code comes in. In Fiji, press the ''Shift'' key and then open ''File>Open Samples>Spirals (macro)'' which will open the macro in the [[Script Editor]] instead of running it directly.
+
+Alternatively, you can drag & drop [https://raw.github.com/fiji/fiji/master/plugins/Scripts/File/Open_Samples/Spirals_.ijm this link] to your main window.
+
+You can inspect the source code, run it, change it, run it again. This is the proper scientific way to convince yourself that the spiral arms have indeed the exact same color.
+
+The macro originally produced exactly the above image (it was in fact made using the original version). It was since changed to address the all-too-common, triumphant response: "Yeah, but I want to quantify red vs green".
+
+== Take home message ==
+
+You cannot quantify color by eye. Nobody can. The only thing you can quantify by eye are written-out numbers.
+
+[[Category:Tutorials]]
