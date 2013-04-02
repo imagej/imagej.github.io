@@ -138,26 +138,27 @@ See also the [[Clojure Scripting]] documentation page.
 
 <source lang="lisp">
 (import '(java.awt Color)
-        '(java.awt.event TextListener))
+        '(java.awt.event TextListener)
+        '(ij.gui GenericDialog)
+        '(ij IJ)
+        '(ij Menus))
 
-(let [commands (. (.. ij.Menus (getCommands) (keySet)) (toArray))
-      gd (new ij.gui.GenericDialog "Command Launcher")]
-  (. gd (addStringField "Command: " "" ))
-  (let [prompt (.. gd (getStringFields) (get 0))]
-    (. prompt (setForeground (. Color red)))
-    (. prompt (addTextListener (proxy [TextListener] []
+(let [commands (keys (. Menus getCommands))
+      gd (GenericDialog. "Command Launcher")]
+  (.addStringField gd "Command: " "")
+  (let [prompt (. (. gd getStringFields) get 0)]
+    (doto prompt
+      (.setForeground (. Color red))
+      (.addTextListener (proxy [TextListener] []
         (textValueChanged [tvc]
-            (let [text (. prompt (getText))
-                  len (count commands)]
-                (loop [i 0]
-                    (if (< i len)
-                      (if (= text (aget commands i))
-                        (. prompt (setForeground (. Color black)))
-                        (recur (inc i)))
-                      (. prompt (setForeground (. Color red)))))))))))
-  (. gd (showDialog))
-  (if (not (. gd (wasCanceled)))
-   (. ij.IJ (doCommand (. gd (getNextString))))))
+          (let [text (.getText prompt)]
+            (.setForeground prompt
+              (if (some #{text} commands)
+                (. Color black)
+                (. Color red)))))))))
+  (.showDialog gd)
+  (when-not (.wasCanceled gd)
+    (IJ/doCommand (.getNextString gd))))
 </source>
 
 A second version, lispier, rewritten from the above by Clojure's author [http://clojure.sourceforge.net Rich Hickey]. Note the use of the ''some'' funtion to check whether any given key in a list (''text'' is the only key here) is contained in a set of keys (''commands''):
