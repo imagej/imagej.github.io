@@ -9,17 +9,17 @@ ____
 
 This page documents the current components of [[TrackMate]]. TrackMate has a modular design, meaning that it is made of different modules that each have a specific role. Developers can build their own module and re-used the other ones and the GUI to achieve a quick development. The module types are (in the order you meet them when executing the plugin):
 
-# '''Spot segmenters'''. Taking your image data, they detect spots in them.
-# '''Spot feature calculators'''. Each spot can receive a wide range of features, calculated from their location, radius and the image data. For instance: max intensity in spot, rough morphology, etc... They are then used to filter out spurious spots and retain only good ones for the subsequent tracking step.
-# '''Diplayers'''. Display the segmentation and tracking results overlaid on your image data.
+# '''Spot detectors'''. Taking your image data, they detect spots in them.
+# '''Spot analyzers'''. Each spot can receive a wide range of features, calculated from their location, radius and the image data. For instance: max intensity in spot, rough morphology, etc... They are then used to filter out spurious spots and retain only good ones for the subsequent tracking step.
+# '''Views'''. Display the segmentation and tracking results overlaid on your image data.
 # '''Spot trackers'''. Take the filtered spots and link them together to build tracks.
-# '''Track feature calculators'''. Like for spot feature calculators, but operate on whole track. Can be used to report track mean velocity, displacement, etc... They are also used to filter spurious tracks.
+# '''Track analyzers'''. Like for spot analyzers, but operate on whole track. Can be used to report track mean velocity, displacement, etc... They are also used to filter spurious tracks.
 # '''Actions'''. Miscellaneous actions you can take on the complete result of the tracking process. It can be used to copy the track overlay to another image, launch a 3D viewer, export the results to a simple format, generate a track stack, etc...
 
 We describe here the best we can the current modules that are shipped with TrackMate.
 
 
-== Spot segmenters ==
+== Spot detectors ==
 
 Behind this barbaric name stand the part responsible for spot detection in your image. The algorithm currently implemented are very generic and naive. They will most likely fail for complicated case such as touching objects, very weak SNR, etc... The 3 of them present are all based on Laplacian of Gaussian filtering, which we describe below.
 
@@ -36,12 +36,47 @@ To improve the localization accuracy, and extra step is taken to yield a sub-pix
 A large number of spurious spots are created by finding local maximas. There spurious spots are discarded inn extra step, by applying a threshold on the quality feature computed during segmentation. The value of this threshold is set manually, to match the SNR of the input image. Thresholded spots are then retained for subsequent particle-linking.
 
 
+
+
+
+== Spot analyzers ==
+
+Spot features, such as 'Max intensity', 'Estimated diameter', etc., are calculated for all spots just after the initial filtering step. They are then used to select spots, based on filters set to retain only spots with a given feature below or above a specified threshold.
+By the way initial filtering is a good way to limit spot feature calculation time on spots you know to be spurious. With the current features, this not such a reason to do it: most feature analyzer are cheap computationally. 
+
+
+=== Mean, Median, Min, Max, Total intensity and its Standard Deviation ===
+
+The plain statistical estimates are simply calculated from all the values for pixels within the physical radius from the spot center. 
+
+
+=== Contrast & Signal/Noise ratio ===
+
+This contrast followed  [http://en.wikipedia.org/wiki/Michelson_contrast#Formula Michelson contrast] definition: <code>C = (I_in - I_out) / (I_in + I_out)</code> where <code>I_in</code> is the mean intensity inside the spot volume (using the physical radius), and <code>I_out</code> is the mean intensity in a ring ranging from its radius to twice its radius. 
+
+The spots's SNR is computed a <code>(I_in - I_out) / std_in</code> where <code>std_in</code> is the standard deviation computed within the spot. 
+
+These two values depend greatly on the correctness of the radius of each spot. Negative values might be caused by incorrect radius.
+
+
+=== Estimated diameter ===
+
+This feature estimates an optimal diameter for each spot, based on contrast calculation. 
+
+The mean pixel intensity is calculated in 20 concentric, tangent rings, centered at the target spot location, and with radiuses ranging from a 10th of the spot radius to twice its radius. The contrast at a given radius is defined as the difference between the mean intensity of a ring with inner radius the radius sought, and the previous ring. 
+
+The estimated diameter is then defined as the radius that maximizes this contrast. A quadratic interpolation is performed to improve diameter accuracy. 
+
+
+
+
+
+
+
+
 == Spot trackers ==
 
 === LAP trackers ===
-
-
-
 
 We implemented the renowned Linear Assignment Problem (LAP) method contributed by Jaqaman and colleagues<ref name="Jaqaman">[http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.]</ref>, with minor modifications on the linking costs calculations. We repeat here the ideas found in the reference paper.
 
