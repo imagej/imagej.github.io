@@ -29,11 +29,9 @@ All detectors must at least provide the following common spot features:
 
 * X, Y, and Z: the spot coordinates in space. Coordinates are expressed in physical units (μm, ...).
 * R the spot radius, also in physical units. The current detectors only set this radius value to be the one specified by the user. More advanced detectors - yet to be implemented - could retrieve each spot radius from the raw image. 
-* Quality: The implementation varies greatly from detector to detector, but this
-value reflects the quality of automated detection. It must be a positive real number, large values indicating good confidence in detection result for the target spot. This sole feature is then used in the initial filtering step, where spots with a quality lower that a specified threshold are purely and simply discarded. 
+* Quality: The implementation varies greatly from detector to detector, but this value reflects the quality of automated detection. It must be a positive real number, large values indicating good confidence in detection result for the target spot. This sole feature is then used in the initial filtering step, where spots with a quality lower that a specified threshold are purely and simply discarded. 
 
 The two other time features - T and Frame number - are set by TrackMate itself when performing detection on all the timepoints of the target raw data. T is expressed in physical units, and the Frame number - starting from 0 - is simply the frame the spot was found in.
-
 
 === Difference of Gaussian particle detection (DoG segmenter) ===
 
