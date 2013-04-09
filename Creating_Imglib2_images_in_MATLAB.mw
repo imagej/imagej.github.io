@@ -105,6 +105,8 @@ But when we call the <code>getCurrentStorageArray</code> method, we retrieve thi
 >> imshow(K')
 </source>
 
+But of course, there is a MATLAB function that does all of this for you, and that you can also find in the scripts folder of your Fiji installation: [https://github.com/fiji/fiji/blob/master/scripts/copytoMatlab.m copytoMatlab]. 
+
 
 
 == MATLAB arrays are not shared ==
@@ -120,7 +122,7 @@ We expect the underlying raw data - an array of doubles - to be share between MA
 
 It did not work: the ImgLib2 image did not see the change. This means that it does not wrap <b>the</b> MATLAB array, but a copy of it. This is a shame and this is of crucial importance. Not only we might have some very large data to process we wish not to duplicate in memory, but we might want to take advantage of some ImgLib2 algorithms that run ''in place'' and modify the source image. 
 
-This is by construction, and there is no workaround, at least for Java<ref>for C++, you can write a Mex wrapper that will force MATLAB to operate on the reference of an array.</ref>. MATLAB passes all the data ''per-value'', not ''per-reference'' and this is what happened here.
+This is by construction, and there is no workaround, at least for Java<ref>For C++, you can write a Mex wrapper that will force MATLAB to operate on the reference of an array.</ref>. MATLAB passes all the data ''per-value'', not ''per-reference'' and this is what happened here.
 
 
 == Using Java arrays in MATLAB ==
