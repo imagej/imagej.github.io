@@ -81,21 +81,18 @@ A first attempt to solve this would be to try and use Java arrays in MATLAB, whi
 
 But this would unsatisfactory as well. The <code>javaArray</code> function allows the creation of Java ''objects'', but not of ''primitive types''. As suggested on the MATLAB docs, and noted [http://stackoverflow.com/questions/5554518/can-matlab-not-read-back-a-double-array-from-java here]:
 
-  MATLAB can pass Java objects when calling a Java function, 
-  and modifications to these objects are afterwards available 
-  in MATLAB - <u>except when the Java object is an array of a 
-  primitive data type</u>. In this case automatic conversion
-  between MATLAB and Java kicks in, making a Java array-of-
-  primitive-double correspond directly to a double matrix 
-  in MATLAB - which is by MATLAB conventions a thing 
-  "passed as value" so no return values are possible.
+  MATLAB can pass Java objects when calling a Java function, and modifications to 
+  these objects are afterwards available in MATLAB - <u>except when the Java 
+  object is an array of a primitive data type</u>. In this case automatic conversion
+  between MATLAB and Java kicks in, making a Java array-of-primitive-double 
+  correspond directly to a double matrix in MATLAB - which is by MATLAB 
+  conventions a thing "passed as value" so no return values are possible.
 
 So this means that we could create an array of <code>java.lang.Double[]</code> and use its reference, but we cannot have and manipulate a plain native <code>double[]</code> array without MATLAB shadowing any change because it operates on a copy.
 
 An array of <code>java.lang.Double[]</code> is not acceptable for most of our use cases. We expect to deal sometimes with very large images - the main reason for trying to escape duplicating data in memory - and a <code>Double</code> object adds some overhead on the primitive it wraps we would like to avoid.
 
 As of now (MATLAB 2013a), this answer seems to be definitive: There is no workaround if we are to stay with a native array in MATLAB.
-
 
 == Using ImgLib2 types as primary data holder ==
 
