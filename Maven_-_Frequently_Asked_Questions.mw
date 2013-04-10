@@ -22,7 +22,13 @@ However, once you become more comfortable with Maven, I suggest using [http://st
 
 For example, while you develop your plugin, you might use the version ''1.0.0-SNAPSHOT'' to indicate that this is not the final ''1.0.0'' version but leads up to it. Once you are happy with the plugin in its current form, switch to ''1.0.0''. Note, however, that Maven will not like it too much if you change the sources of the final ''1.0.0'' version without advancing the version in the ''pom.xml'' file.
 
-= How is the imagej version determined (<version>${imagej1.version}</version>) ? =
+= How is the imagej version determined? =
+
+In many ''pom.xml'' files, you can see that the version of the ''ij'' dependency is declared like this:
+
+<source lang="xml">
+<version>${imagej1.version}</version>
+</source>
 
 The string ''${imagej1.version}'' is a property that gets replaced with the actual value. This value is [https://github.com/scijava/scijava-common/blob/5c1764b9/pom-scijava/pom.xml#L21 defined in the pom-scijava parent configuration]. Currently the value is ''[1.45s,)'' which means ''the latest release version you can find equal to or greater than 1.45s.''
 
@@ -30,7 +36,7 @@ Browse the latest pom-scijava [https://github.com/scijava/scijava-common/blob/ma
 
 Browse the available versions of ImageJ 1.x [http://maven.imagej.net/content/repositories/releases/net/imagej/ij/ here].
 
-As of this writing, 1.47h is the latest available version, so that's the one Maven will use with your plugin.
+As of this writing, 1.47n is the latest available version, so that's the one Maven will use with your plugin.
 
 If you require an ImageJ 1.x version newer than 1.45s (e.g. due to the use of a method or class that was only introduced in a later version) you probably want to override the setting in your ''pom.xml'' file's ''<properties>'' section:
 
@@ -42,7 +48,7 @@ If you require an ImageJ 1.x version newer than 1.45s (e.g. due to the use of a 
 </properties>
 </source>
 
-= What does this message mean? ''Property 'imagej.app.directory' unset; Skipping copy-jars'' =
+= What's this: ''Property 'imagej.app.directory' unset; Skipping copy-jars'' =
 
 This is part of the [https://github.com/scijava/scijava-common/tree/master/imagej-maven-plugin imagej-maven-plugin] (enabled for you by pom-scijava). As you suspected, it copies your plugin's ''.jar'' file to your ImageJ plugins folder. But you have to specify where:
 
@@ -53,13 +59,11 @@ mvn -Dimagej.app.directory=/Applications/ImageJ.app
 One way to do that in NetBeans is to right-click your project, select ''Custom>Goals...'' which brings up the ''Run Maven'' dialog box. Then specify '''install''' for the Goals and
 '''-Dimagej.app.directory=/Applications/ImageJ.app''' for the Properties.
 
-= During run an imagej jar from ~/.m2.... is started, is this only for test/debug? How to use my own imagej? =
+= How to use my own, custom ImageJ version? =
 
-This is only used to compile your .jar file. If you set the
-imagej.app.directory property properly, it will actually be copied into
-the jars/ subdirectory of the location you pointed the property to.
+The dependencies specified in ''pom.xml'' are only used to compile your .jar file. If you set the ''imagej.app.directory'' property properly, it will copy things into the ''jars/'' subdirectory of the location you pointed the property to.
 
-= My software is dependent from other plugins, such as Particle8_ from Gabriel Landini's Morphology, can/is this incorporated in the imagej maven repository? =
+= My software depends on a ''.jar'' file that is not available via Maven! = 
 
 The easiest way to do that would probably to install it locally for the
 moment. Please see Maven's console log for details how to do that after
@@ -90,9 +94,11 @@ mvn install:install-file \
   -Dpackaging=jar -DgeneratePom=true
 </source>
 
-= In my ant script I'm using a call to svnversion, in order to place the latest build number and date in the about box. Can this be done with Maven? =
+= Can I call ''svnversion'' via Maven? =
 
-In general, you can call any needed Ant functionality using the [http://maven.apache.org/plugins/maven-antrun-plugin/ maven-antrun-plugin]. However, for your requirement here, you won't need it.
+Typically you want to do that to put the current revision into an About box or something similar.
+
+In general, you can call any needed Ant functionality using the [http://maven.apache.org/plugins/maven-antrun-plugin/ maven-antrun-plugin]. However, for the About box, there is a much better solution:
 
 The pom-scijava parent uses the buildnumber-maven-plugin to embed the SCM revision and date in the JAR manifest. You can enable this behavior by adding the following lines to your POM:
 
@@ -105,16 +111,16 @@ The pom-scijava parent uses the buildnumber-maven-plugin to embed the SCM revisi
 </plugins>
 </source>
 
-Then, your About dialog box can access the information from the ''.jar'' file's manifest using the [http://jenkins.imagej.net/job/ImageJ-daily/javadoc/imagej/util/Manifest.html java.util.jar.Manifest class] of [https://github.com/imagej/imagej/blob/7ffe00ef/core/core/src/main/java/imagej/util/Manifest.java ImageJ2].
+Then, your About dialog box can access the information from the ''.jar'' file's manifest using the [http://jenkins.imagej.net/job/SciJava-common/javadoc/org/scijava/util/Manifest.html Manifest class] of [https://github.com/scijava/scijava-common/blob/master/src/main/java/org/scijava/util/Manifest.java scijava-common].
 
-You would need to add a dependency on ''ij-core'' like this:
+You would need to add a dependency on ''scijava-common'' like this:
 
 <source lang="xml">
 <dependencies>
   <dependency>
-    <groupId>${imagej.groupId}</groupId>
+    <groupId>${scijava-common.groupId}</groupId>
     <artifactId>ij-core</artifactId>
-    <version>${imagej.version}</version>
+    <version>${scijava-common.version}</version>
   </dependency>
 </dependencies>
 </source>
@@ -122,20 +128,20 @@ You would need to add a dependency on ''ij-core'' like this:
 and then add code like this:
 
 <source lang="java">
-import imagej.util.Manifest;
+import org.scijava.util.Manifest;
 
 ...
     Manifest manifest = Manifest.getManifest(MyBeautifulPlugin.class);
     String version = manifest.getImplementationBuild();
 </source>
 
-= Why isn't my plugin in src-plugins compiled by Build.sh? =
+= Why isn't my plugin in ''src-plugins/'' compiled by ''Build.sh''? =
 
 Make sure your project lives in ''src-plugins/<artifactId>'', that there is a correctly formatted ''pom.xml'' file inside that directory, and that the artifactId for your plugin has been added as a module in the modules section of ''src-plugins/pom.xml''.
 
 Also make sure that you do not have any circular dependencies. In other words, if your plugin is Plugin_A which depends on Plugin_B, be sure that Plugin_B does not depend on Plugin_A, or any other package that depends on Plugin_A.
 
-= How do I make my modifications to one project available to a depending project using maven? =
+= How do I make my modified project available to a depending project using Maven? =
 
 For example, suppose you have made changes to TrakEM2 that you want to take advantage of in a plugin. Compiling with mvn may result in errors indicating that your modifications do not exist. In this case, run "mvn install" in the ''modules/TrakEM2'' directory. This should install the relevant, fresh TrakEM2 jars into the correct locations.
 
