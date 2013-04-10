@@ -147,6 +147,14 @@ For example, suppose you have made changes to TrakEM2 that you want to take adva
 
 Also make sure that the ''groupId'', ''artifactId'' '''and''' ''version'' in the ''<dependencies>'' section of the dependencee match the settings in the dependency's ''pom.xml'' file.
 
+= How can I run individual tests with Maven? =
+
+As described [http://maven.apache.org/surefire/maven-surefire-plugin/examples/single-test.html here]:
+
+<source lang="bash">
+mvn -Dtest='TestCircle#mytest' test
+</source>
+
 = Where can I find more information about Maven? =
 
 * [http://developer.imagej.net/learning-maven ImageJDev's Learning Maven]
