@@ -1,4 +1,4 @@
-<includeonly>{| class="infobox" cellspacing="5" style="width: 31em; font-size: 90%; text-align: left; float: right; border: 1px dashed #303030;"
+<includeonly>{| class="infobox" cellspacing="5" style="width: 31em; font-size: 90%; text-align: left; float: right; border: 1px dashed #a0a0a0;"
 ! colspan="2" style="text-align: center; font-size: 130%;" | {{{title|{{{name|{{PAGENAME}}}}}}}} ({{{software|}}})
 |-
 {{#if:{{{author|}}}|
