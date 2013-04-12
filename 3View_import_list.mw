@@ -1,0 +1,63 @@
+{{Infobox Plugin
+| name                   = 3View import list
+| software               = ImageJ
+| author                 = Nuno Dias
+| maintainer             = Nuno Dias
+| source                 = [https://dl.dropboxusercontent.com/u/5200940/3view_import_list.zip link]
+| released               = March 2013
+| latest version         = March 2013
+}}
+
+== Import 3View montages into TrakEM2: overview ==
+The purpose of this plugin is to create a text file with a list of files from Gatan’s 3View montage image stacks. This text file can then be used to automatically import all the images into TrakEM2, as they are, stored in the original directories.
+
+In montage mode, [http://www.gatan.com/software/ Gatan’s DigitalMicrograph] software saves the files for each tile in their own directory. Taking the example of a 2x3 montage with 10 z slices, at the end of the job there will be 6 folders created, with 10 files each. The folders are named following the pattern ‘Montage_xxx’, where xxx is a number (starting at 000).
+
+This plugin will read all Gatan’s files (.dm3) inside the folders and create a file list in a text document (.txt), in a format suitable for importing into TrakEM2, directly from their original directories. You can move the parent directory from the acquisition computer to any other suitable location, of course. The plugin will also attempt to read metadata from the files to automatically calculate the montage configuration (how many tiles in x and y) and to provide rough coordinates for the image positioning, according to image size and overlap. This information will leave the images roughly in place in the TrakEM2 workspace and makes the next step - stitching the images - much quicker.
+ 
+== Installation instructions ==
+The general ImageJ plugin installation rules apply. You must [https://dl.dropboxusercontent.com/u/5200940/3view_import_list.zip download] and copy 3view_import_list.py and MakeImportList4TrakEM2.py together in the same directory. The third file, TrakEM2_import_list.py is optional (see point 3 below). If you want to call the script from your own code, only the second file is necessary. As a suggestion only, you can follow these steps:
+
+# Copy 3view_import_list.py and MakeImportList4TrakEM2.py to: \Fiji.app\plugins\Scripts\Plugins\Utilities.
+# Restart FIJI for the plugin to appear in the menu. The option ‘3View import list’ will appear under Plugins > Utilities (the first Utilities folder…)
+# Extra: if you need to use different settings other than file type .dm3, other directory names or name of the final text file, you can copy TrakEM2_import_list.py to the same folder and select the plugin with this name from the same menu location.
+
+== How to use ==
+# After selecting the plugin from the Fiji menu:
+# Select the parent directory where all the ‘Montage_xxx’ folders are located;
+# The plugin ''would'' try to produce the final text file without any further input from the user if possible, calculating tile configuration and overlap using metadata from the image files, but this feature is not working at the moment. See bold text below.
+# The Fiji log and the status messages in Fiji window will show step-by-step information of what is happening. The whole operation should only take a few seconds. You can use this plugin over a network connection, but the actual importing job (step 6 below) should be done with the files placed in a local hard drive or through an extremely fast data connection, for an optimal performance.
+# The text file will be saved in the same directory initially selected by the user.
+# To actually use the text file, right-click anywhere in the TrakEM2 workspace (the black area) and select Import > Import from text file… After selecting the file, you should get a window asking for some options. These should be left at default, making sure ‘Column separator’ indicates ‘tab’. TrakEM2 will then ask for the location of the files to be imported and you should provide the parent folder where all the ‘Montage_xxx’ directories are located - the very same one you selected when running this plugin. TrakEM2 will then import every file in the list and create the minimaps for fast loading/zooming. This may take a while.
+
+== Small print: what is allowed and the known limitations ==
+# '''Reading stage coordinates from the metadata is currently not possible. This means the user will always be asked for the tile configuration and overlap.'''
+# You can have other directories at the same level of the montage directories (for example, the TrakEM2 data directory). Also, any sub-directories of those montage directories you may create and their contents will be completely ignored. However, you shouldn’t have directories in the parent directory following the same ‘Montage_xxx’ pattern that are actually not part of the dataset. 
+# You can have other file formats together with the .dm3 files, those will be ignored.
+# All .dm3 files within the montage directories will be added to the list.
+# The plugin doesn’t check/care if the number of files is not the same in every directory; what is mandatory is to have at least one file in the first, the second and the last directories.
+# If for some reason you need to change the numbering of the directories, just make sure they stay in the same order. Non-consecutive numbering is not a problem; directories will simply be read in ascending order.
+#If stage position values cannot be read or the calculated tile configuration doesn’t match the number of detected folders, the plugin will ask the user for the x and y tile number and overlap percentage.
+#If you plan to add or modify files inside the acquisition directories, because you need to merge interrupted acquisition jobs for example, you have to modify the numbering so that the final 4 digits of the file name match the z position of the image in the stack. Z positions are not being read from the metadata exactly to accommodate for situations like this.<br />Tip: doing this by hand is tedious and error prone; there are however free software applications that can automate this file renaming job easily.
+# If you run the slightly modified version, ‘TrakEM2 import list’, you can choose another file format other than .dm3, choose another folder pattern (these are [http://en.wikipedia.org/wiki/Regular_expression Regular Expression] patterns) or a different file name for the final text file. However, the image files still need to have metadata for at least pixel dimension information, in micrometers. Currently I don’t have any ‘non-automatic’ version that will take all required information for the user.<br />Note 1: The numbering in the files must have 4 digits. I ''may'' fix this in the future.<br />Note 2: The file format input is case sensitive: '.tif' is not the same as '.TIF'
+# To automate or call the plugin from another script, you need to provide the details mentioned in the previous point. See the file 'TrakEM2_import_list.py' for an example.
+# The plugin assumes all files have the same pixel dimension (size).
+# The plugin assumes pixels to be square and overlap to be the same in x and y.
+# The plugin ''should'' work independently of operative system (Linux, Windows, Mac). Feedback is appreciated.
+# Because of the 45º angle between the FoV and the X/Y axis in the 3View stage, this plugin will probably fail if provided with a dataset acquired with an angle close to zero (ie, from another system/stage). Because of the behavior indicated in point 7, stripping the files from any stage position metadata would be a way to circumvent this limitation. 
+#As a bonus, you can also use this plugin to create an import file for a single position z stack; in that case it doesn’t matter where the images came from, as no montage calculations are necessary.<br />Note 1: selecting the 'main' plugin for a situation like this using .dm3 files, you still must have the folder name match the pattern ‘Montage_xxx’.<br />Note 2: to create a file list of images in another file format (.tif files for example) using the 'alternate' ‘TrakEM2 import list’ plugin, you don't need to modify the directory name where you keep the files in the options dialog. However, you must choose its the parent directory in the ‘Choose directory’ dialog, as you would in the normal case. As an example, if you have your image files in C:\data\images\stack1, you should select the directory C:\data\images\ and submit ‘stack1’ as the 'Directory RegExp' value in the ‘Import parameters’ dialog.
+
+== Contact ==
+All comments, questions or suggestions are very welcome. Please send an email to  nuno.dias at emez.ethz.ch or ngdias at ibmc.up.pt
+
+== Acknowledgements ==
+*[http://loci.wisc.edu/people/curtis-rueden Curtis Rueden]
+*[http://www.ini.uzh.ch/~acardona/fiji-tutorial/ This page] prepared by Albert Cardona
+*[http://fiji.sc/Jython_Scripting This other page] prepared by Albert Cardona
+*Many, many people who ask and reply to questions about Python all over the Internet
+
+== See Also ==
+
+* [http://www.ini.uzh.ch/~acardona/trakem2_manual.html#importing_list Importing list] How the text file should look like.
+
+[[Category:Plugins]]
