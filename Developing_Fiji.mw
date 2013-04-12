@@ -124,7 +124,7 @@ Please make sure that you are a little familiar with [[Git mini howto|Git]].  On
 Alternatively, you can make an account for yourself on GitHub and fork fiji.git:
 
 # create an account on [http://github.com/ GitHub]
-# Fork [http://github.com/dscho/fiji Fiji]:
+# Fork [http://github.com/fiji/fiji Fiji]:
 : [[Image:GitHub-fork.png]]
 # clone it
 
