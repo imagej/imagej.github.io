@@ -48,7 +48,7 @@ The general ImageJ plugin installation rules apply. You must [https://dl.dropbox
 #As a bonus, you can also use this plugin to create an import file for a single position z stack; in that case it doesn’t matter where the images came from, as no montage calculations are necessary.<br />Note 1: selecting the 'main' plugin for a situation like this using .dm3 files, you still must have the folder name match the pattern ‘Montage_xxx’.<br />Note 2: to create a single-position file list of images in another file format (.tif files for example) using the 'alternate' ‘TrakEM2 import list’ plugin, you don't need to modify the directory name where you keep the files in the options dialog and you can just submit this name in the 'Directory RegExp' field (no Regular Expression special patterns are necessary). However, you must choose its parent directory in the ‘Choose directory’ dialog, as you would in every case. As an example, if you have your image files in C:\data\images\stack1, you should select the directory C:\data\images\ and submit ‘stack1’ as the 'Directory RegExp' value in the ‘Import parameters’ dialog.
 
 == Contact ==
-All comments, questions or suggestions are very welcome. Please send an email to  nuno.dias at emez.ethz.ch or ngdias at ibmc.up.pt
+All comments, questions or suggestions are very welcome. Please send an email to  nuno.dias at emez.ethz.ch or ngdias at ibmc.up.pt.
 
 == Acknowledgements ==
 *[http://loci.wisc.edu/people/curtis-rueden Curtis Rueden]
