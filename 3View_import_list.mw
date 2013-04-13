@@ -9,12 +9,12 @@
 }}
 
 == Import 3View montages into TrakEM2: overview ==
-The purpose of this plugin is to create a text file with a list of files from Gatan’s 3View montage image stacks. This text file can then be used to automatically import all the images into TrakEM2, as they are, stored in the original directories.
+The purpose of this plugin is to create a text file with a list of files from [http://www.gatan.com/products/sem_products/products/3View_landing.php Gatan’s 3View] montage image stacks. This text file can then be used to automatically import all the images into TrakEM2, as they are, stored in the original directories.
 
 In montage mode, [http://www.gatan.com/software/ Gatan’s DigitalMicrograph] software saves the files for each tile in their own directory. Taking the example of a 2x3 montage with 10 z slices, at the end of the job there will be 6 folders created, with 10 files each. The folders are named following the pattern ‘Montage_xxx’, where xxx is a number (starting at 000).
 
 This plugin will read all Gatan’s files (.dm3) inside the folders and create a file list in a text document (.txt), in a format suitable for importing into TrakEM2, directly from their original directories. You can move the parent directory from the acquisition computer to any other suitable location, of course. The plugin will also attempt to read metadata from the files to automatically calculate the montage configuration (how many tiles in x and y) and to provide rough coordinates for the image positioning, according to image size and overlap. This information will leave the images roughly in place in the TrakEM2 workspace and makes the next step - stitching the images - much quicker.
- 
+
 == Installation instructions ==
 The general ImageJ plugin installation rules apply. You must [https://dl.dropboxusercontent.com/u/5200940/3view_import_list.zip download] and copy 3view_import_list.py and MakeImportList4TrakEM2.py together in the same directory. The third file, TrakEM2_import_list.py is optional (see point 3 below). If you want to call the script from your own code, only the second file is necessary. As a suggestion only, you can follow these steps:
 
