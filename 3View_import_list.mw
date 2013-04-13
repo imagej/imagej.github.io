@@ -16,11 +16,11 @@ In montage mode, [http://www.gatan.com/software/ Gatan’s DigitalMicrograph] so
 This plugin will read all Gatan’s files (.dm3) inside the folders and create a file list in a text document (.txt), in a format suitable for importing into TrakEM2, directly from their original directories. You can move the parent directory from the acquisition computer to any other suitable location, of course. The plugin will also attempt to read metadata from the files to automatically calculate the montage configuration (how many tiles in x and y) and to provide rough coordinates for the image positioning, according to image size and overlap. This information will leave the images roughly in place in the TrakEM2 workspace and makes the next step - stitching the images - much quicker.
 
 == Installation instructions ==
-The general ImageJ plugin installation rules apply. You must [https://dl.dropboxusercontent.com/u/5200940/3view_import_list.zip download] and copy 3view_import_list.py and MakeImportList4TrakEM2.py together in the same directory. The third file, TrakEM2_import_list.py is optional (see point 3 below). If you want to call the script from your own code, only the second file is necessary. As a suggestion only, you can follow these steps:
+The [http://fiji.sc/Jython_Scripting#Using_a_jython_script_as_a_plugin Jython plugin installation rules] apply. You must [https://dl.dropboxusercontent.com/u/5200940/3view_import_list.zip download] and copy 3view_import_list.py and MakeImportList4TrakEM2.py together in the same directory. The third file, TrakEM2_import_list.py is optional (see point 3 below). If you want to call the script from your own code, only the second file is necessary. As a suggestion only, you can follow these steps:
 
-# Copy 3view_import_list.py and MakeImportList4TrakEM2.py to: \Fiji.app\plugins\Scripts\Plugins\Utilities.
-# Restart FIJI for the plugin to appear in the menu. The option ‘3View import list’ will appear under Plugins > Utilities (the first Utilities folder…)
-# Extra: if you need to use different settings other than file type .dm3, other directory names or name of the final text file, you can copy TrakEM2_import_list.py to the same folder and select the plugin with this name from the same menu location.
+# Copy 3view_import_list.py and MakeImportList4TrakEM2.py into Fiji directory \Fiji.app\plugins\Scripts\Plugins\Utilities.
+# To make the plugin appear in the menu, you have the option of selecting  "Plugins>Scripting>Refresh Jython Scripts", "Help>Refresh Menus" or restarting Fiji. The option ‘3View import list’ will then appear under Plugins > Utilities (the first Utilities folder…)
+# Extra: if you need to use different settings other than file type .dm3, other directory names or change the name of the final text file, you can copy TrakEM2_import_list.py to the same folder and select the plugin with this name from the same menu location.
 
 == How to use ==
 # After selecting the plugin from the Fiji menu:
