@@ -11,7 +11,8 @@
 }}
 
 
-test
+This software implements the tracking method described in the following paper:
+"A Divide and Conquer Strategy for the Maximum Likelihood localization of Ultra Low Intensity Objects" By Alexander Krull et Al, 2013 (Final Journal).
  
 ==Load the data==
 [[Image:OpenData.png]]
