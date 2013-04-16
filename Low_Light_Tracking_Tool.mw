@@ -1,5 +1,13 @@
 = Blob Tracker =
 
+ This software implements the tracking method described in the following paper: 
+  "A divide and conquer strategy for the maximum likelihood localization of ultra low intensity objects"
+   By Alexander Krull et Al, 2013. (Enter final journal)
+
+ Plugin Authors:
+ Alexander Krull
+ Damien Ramunno-Johnson
+ 
 ==Load the data==
 [[Image:OpenData.png]]
 
@@ -37,6 +45,7 @@ The control panel is the other window you will see that will allow you to do the
 
 Click on the New Session button, or select from the menu.  The New session window opens.  Here you can pick a name for the session, your tracking method, and which channel you want to track.  
 
+====Tracking Methods====
 
 ===Pick Session Options===
 
@@ -89,11 +98,7 @@ The data is already saved automatically by default. You can turn that off by unc
 
 You can also reload previously tracked data by clicking on the address bar and navigating to the data's location.  You can then retrack, or examine the data. 
 
-===Tips===
 
-If you have multichannel data, each channel needs its own session.  You can select which sessions are visible by checking their boxes in the Visible Sessions list. You can use the current session drop down menu to switch between sessions. 
-
-Using the Merge, Split, Trim, and Delete buttons allows you to edit your traces by combing or deleting them. One useful exampling is if you object disappears periodically but you know that it is not a new object, and would like to combine the two seperate traces you create. 
 
 ==3D Data==
 
@@ -101,7 +106,16 @@ Using the Merge, Split, Trim, and Delete buttons allows you to edit your traces 
 
 3D data is very similar to 2D data, there are just a few more windows that open when you start. The data window, and the kymographs appears, but a second set of windows appear.  A max z projection window, and max Y and X projects. The side projections are usefully to place your starting tracking in the correct slice. So before clicking on the object in the data window, change the z to the correct plane first. 
 
+Otherwise, tracking functions the same. It is best optimize the sigma value for 3D tracking, and then used a fixed value to increased speed.
+
 [[Image:NewWithDot.jpg]]
 
 
+==Tips==
+
+If you have multichannel data, each channel needs its own session.  You can select which sessions are visible by checking their boxes in the Visible Sessions list. You can use the current session drop down menu to switch between sessions. 
+
+Using the Merge, Split, Trim, and Delete buttons allows you to edit your traces by combing or deleting them. One useful exampling is if you object disappears periodically but you know that it is not a new object, and would like to combine the two seperate traces you create. 
+
+You can zoom into the kymographs by moving the cursor over the kymograph window and holding down shift, while using the scroll wheel on the mouse.
 [[Category:Tutorials]]
