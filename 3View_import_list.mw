@@ -49,7 +49,7 @@ The [http://fiji.sc/Jython_Scripting#Using_a_jython_script_as_a_plugin Jython pl
 
 == Code ==
 3view_import_list.py
-<source>
+<source lang="python">
 import sys
 from ij import IJ
 from ij.io import DirectoryChooser
@@ -71,7 +71,7 @@ else:
 	IJ.showStatus('Completed. Files added to import list: ' + str(how_many))
 </source>
 TrakEM2_import_list.py
-<source>
+<source lang="python">
 import sys
 from ij import IJ
 from ij.io import DirectoryChooser
@@ -110,7 +110,7 @@ else:
 		IJ.showStatus('Completed. Files added to import list: ' + str(how_many))
 </source>
 MakeImportList4TrakEM2.py
-<source>
+<source lang="python">
 import os, re, math, sys
 from ij import IJ
 from ij.gui import GenericDialog
