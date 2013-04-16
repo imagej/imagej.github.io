@@ -1,3 +1,17 @@
+{{Infobox Plugin
+| name                   = Advanced Weka Segmentation
+| software               = Fiji
+| author                 = Alexander Krull, Damien Ramunno-Johnson ([User:damienrj])
+| maintainer             = [[User:Iarganda | Ignacio Arganda-Carreras]]
+| source                 = {{GitLink|jar=Trainable_Segmentation}}
+| released               = April ?<sup>th</sup>, 2013
+| latest version         = April ?<sup>st</sup>, 2013
+| status                 = stable, active
+| category               = [[:Category:Tracking|Tracking]]]
+}}
+
+
+
 == Introduction ==
 
  This software implements the tracking method described in the following paper: 
