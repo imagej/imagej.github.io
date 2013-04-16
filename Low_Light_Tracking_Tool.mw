@@ -11,16 +11,7 @@
 }}
 
 
-
-
-
- This software implements the tracking method described in the following paper: 
-  "A divide and conquer strategy for the maximum likelihood localization of ultra low intensity objects"
-   By Alexander Krull et Al, 2013. (Enter final journal)
-
- Plugin Authors:
- Alexander Krull
- Damien Ramunno-Johnson
+test
  
 ==Load the data==
 [[Image:OpenData.png]]
@@ -41,13 +32,6 @@ Example: My pixel size for my data is 100 nm, and my slice thickness is 200 nm. 
 
 ==2D Data==
 
- This software implements the tracking method described in the following paper: 
-  "A divide and conquer strategy for the maximum likelihood localization of ultra low intensity objects"
-   By Alexander Krull et Al, 2013. (Enter final journal)
-
- Plugin Authors:
- Alexander Krull
- Damien Ramunno-Johnson
 
 [[Image:Opendatasmall.png]]
 
