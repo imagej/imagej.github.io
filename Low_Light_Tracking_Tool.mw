@@ -96,9 +96,12 @@ If you have multichannel data, each channel needs its own session.  You can sele
 Using the Merge, Split, Trim, and Delete buttons allows you to edit your traces by combing or deleting them. One useful exampling is if you object disappears periodically but you know that it is not a new object, and would like to combine the two seperate traces you create. 
 
 ==3D Data==
-3D data is very similar to 2D data, there are just a few more windows that open when you start. The data window, and the kymographs appears, but a second set of windows appear.  A max z projection window, and max Y and X projects. The side projections are usefully to place your starting tracking in the correct slice.
 
 [[Image:NewWindows.jpg]]
+
+3D data is very similar to 2D data, there are just a few more windows that open when you start. The data window, and the kymographs appears, but a second set of windows appear.  A max z projection window, and max Y and X projects. The side projections are usefully to place your starting tracking in the correct slice. So before clicking on the object in the data window, change the z to the correct plane first. 
+
+[[Image:NewWithDot.jpg]]
 
 
 [[Category:Tutorials]]
