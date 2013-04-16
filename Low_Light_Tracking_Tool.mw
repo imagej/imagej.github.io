@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | name                   = Advanced Weka Segmentation
 | software               = Fiji
-| author                 = Alexander Krull, Damien Ramunno-Johnson ([User:damienrj])
+| author                 = Alexander Krull, Damien Ramunno-Johnson ([User:damienrj | Damien Ramunno-Johnson])
 | maintainer             = [[User:Iarganda | Ignacio Arganda-Carreras]]
 | source                 = {{GitLink|jar=Trainable_Segmentation}}
 | released               = April ?<sup>th</sup>, 2013
