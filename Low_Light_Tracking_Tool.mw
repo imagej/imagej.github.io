@@ -9,7 +9,7 @@ After the data is loaded, start the plugin
 
 [[Image:GlobalOptions.png]]
 
-Enter intensity offset, and $\Delta$Z ratio. 
+Enter intensity offset, and ΔZ ratio. 
 
 The Offset applies if there is a minimum value that the camera registers. 
 Example: some microscopes would not allow a value under 100, so in that case you would enter 100 as the offset.
@@ -32,6 +32,8 @@ If you would like the windows to become larger, or smaller change the size of th
 The control panel is the other window you will see that will allow you to do the tracking.
 
 ===Create Session===
+
+
 
 ===Pick Session Options===
 
