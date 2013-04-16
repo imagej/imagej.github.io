@@ -2,8 +2,8 @@
 | name                   = Advanced Weka Segmentation
 | software               = Fiji
 | author                 = Alexander Krull,  [[User:damienrj | Damien Ramunno-Johnson]]
-| maintainer             = [[User:Iarganda | Ignacio Arganda-Carreras]]
-| source                 = {{GitLink|jar=Trainable_Segmentation}}
+| maintainer             = Alexander Krull,  [[User:damienrj | Damien Ramunno-Johnson]]
+| source                 = Add Link
 | released               = April ?<sup>th</sup>, 2013
 | latest version         = April ?<sup>st</sup>, 2013
 | status                 = stable, active
