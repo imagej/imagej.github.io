@@ -118,4 +118,9 @@ If you have multichannel data, each channel needs its own session.  You can sele
 Using the Merge, Split, Trim, and Delete buttons allows you to edit your traces by combing or deleting them. One useful exampling is if you object disappears periodically but you know that it is not a new object, and would like to combine the two seperate traces you create. 
 
 You can zoom into the kymographs by moving the cursor over the kymograph window and holding down shift, while using the scroll wheel on the mouse.
+
+== License ==
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 [[Category:Tutorials]]
