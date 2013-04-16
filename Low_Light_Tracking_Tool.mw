@@ -44,12 +44,59 @@ Click on the New Session button, or select from the menu.  The New session windo
 
 After clicking Ok, a new window will open. In this window you can choose a manual sigma, or select automatic sigma.  Min and Max are only used if automatic is selected. 
 
-You also can set your quality threshold.  Smaller number are higher quality, while larger numbers are lower quality but faster. 
+You also can set your quality threshold.  Smaller numbers are higher quality, while larger numbers are lower quality but faster. 
 
 Automatic sigma can also be slower, more so for 3D data.
 
+This can be changed from the Session Options menu, under edit.
+
+===Select Objects to Track===
+To track an object, double click on it in the data window. This will create a circle around the object. An entry will then be in the table in the control panel. You can change the label by clicking on the text in the label field, or change the color by clicking on the colored area. 
+
+[[Image:CreateDots.png]]
+
+===Edit Dots===
+
+[[Image:ObjectOption.png]]
+
+If at this point you find that the parameters you picked were less ideal you can change the parameters. If you change the session options, that only affects new selections. So you have two options, delete the old ones, or change their parameters with the edit Object selection from the edit menu.
+
 ===Start Tracking===
 
+Only the highlighted objects will be tracked.  So in this example, both are highlighted and will be tracked at the same time.
+
+At this point you have three options.  
+
+First, if you have automatic sigma selected you can use the optimize button. This will optimize the sigma value, and then you can turn off automatic sigma for each object. This will make the tracking faster.
+
+Second, if you have noisy data you can select the Multiscale method. This will use iterative smoothing to find the object. You can change the default behavior in the edit menu.
+
+[[Image:MScaleOptions.png]]
+
+Third, click on Start Tracking.
+
+===Result===
+
+[[Image:Result1.png]]
+
+You can watch the lines follow they kymograph as the tracking is in progress.  If you see the tracking looks incorrect and lost the object you can click on Stop Tracking and adjust the object location and the software will resume from the new starting point.
+
+[[Image:Result2.png]]
+
+The table now contains more information now, with the first frame of the trace, and the last frame.  Double clicking on the ID# of the object will jump the frame number to the beginning and end of the trace. 
+
+The data is already saved automatically by default. You can turn that off by unchecking the Auto Save box.  
+
+You can also reload previously tracked data by clicking on the address bar and navigating to the data's location.  You can then retrack, or examine the data. 
+
+===Tips===
+
+If you have multichannel data, each channel needs its own session.  You can select which sessions are visible by checking their boxes in the Visible Sessions list. You can use the current session drop down menu to switch between sessions. 
+
+Using the Merge, Split, Trim, and Delete buttons allows you to edit your traces by combing or deleting them. One useful exampling is if you object disappears periodically but you know that it is not a new object, and would like to combine the two seperate traces you create. 
 
 ==3D Data==
+3D data is very similar to 2D data, there are just a few more windows that open when you start. 
+
+
 [[Category:Tutorials]]
