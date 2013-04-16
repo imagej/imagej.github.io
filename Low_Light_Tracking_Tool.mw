@@ -1,5 +1,5 @@
 {{Infobox Plugin
-| name                   = Advanced Weka Segmentation
+| name                   = Blob Tracking
 | software               = Fiji
 | author                 = Alexander Krull,  [[User:damienrj | Damien Ramunno-Johnson]]
 | maintainer             = Alexander Krull,  [[User:damienrj | Damien Ramunno-Johnson]]
@@ -7,7 +7,7 @@
 | released               = April ?<sup>th</sup>, 2013
 | latest version         = April ?<sup>st</sup>, 2013
 | status                 = stable, active
-| category               = [[:Category:Tracking|Tracking]]]
+| category               = [[:Category:Tracking|Tracking]]
 }}
 
 
