@@ -33,10 +33,20 @@ The control panel is the other window you will see that will allow you to do the
 
 ===Create Session===
 
+[[Image:NewSession.png]]
+
+Click on the New Session button, or select from the menu.  The New session window opens.  Here you can pick a name for the session, your tracking method, and which channel you want to track.  
 
 
 ===Pick Session Options===
 
+[[Image:SessionOptions.png]]
+
+After clicking Ok, a new window will open. In this window you can choose a manual sigma, or select automatic sigma.  Min and Max are only used if automatic is selected. 
+
+You also can set your quality threshold.  Smaller number are higher quality, while larger numbers are lower quality but faster. 
+
+Automatic sigma can also be slower, more so for 3D data.
 
 ===Start Tracking===
 
