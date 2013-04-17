@@ -75,7 +75,7 @@ Once we have training samples for both classes, we are ready to train the classi
 segmentator.trainClassifier();
 </source>
 
-=== Getting results ===
+=== Applying classifier (getting results) ===
 Once the classifier is trained (it will be displayed in the Log window), we can apply it to the entire training image and obtain a result in the form of a labeled image or a probability map for each class:
 
 <source lang="java">
