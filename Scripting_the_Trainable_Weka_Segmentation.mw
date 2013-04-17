@@ -76,7 +76,7 @@ segmentator.trainClassifier();
 </source>
 
 === Getting results ===
-Once the classifier is trained (it will be displayed in the Log window), we can apply to the entire training image and obtain a result in the form of a labeled image or a probability map for each class:
+Once the classifier is trained (it will be displayed in the Log window), we can apply it to the entire training image and obtain a result in the form of a labeled image or a probability map for each class:
 
 <source lang="java">
 // apply classifier to current training image and get label result 
@@ -86,7 +86,7 @@ segmentator.applyClassifier( false );
 result = segmentator.getClassifiedImage();
 </source>
 
-Of course, we might be interested on applying the trained classifier to a complete new 2D image or stack. In that case we use:
+Of course, we might be interested on '''applying the trained classifier to a complete new 2D image or stack'''. In that case we use:
 
 <source lang="java">
 // open test image
