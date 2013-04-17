@@ -96,7 +96,7 @@ Third, click on Start Tracking.
 
 [[Image:Result1.png]]
 
-You can watch the lines follow they kymograph as the tracking is in progress.  If you see the tracking looks incorrect and lost the object you can click on Stop Tracking and adjust the object location and the software will resume from the new starting point.
+You can watch the trace fill in the kymograph line as the tracking is in progress.  If you see the tracking looks incorrect and lost the object, you can click on Stop Tracking and adjust the object location and the software will resume from the new starting point.
 
 [[Image:Result2.png]]
 
@@ -104,9 +104,7 @@ The table now contains more information now, with the first frame of the trace, 
 
 The data is already saved automatically by default. You can turn that off by unchecking the Auto Save box.  
 
-You can also reload previously tracked data by clicking on the address bar and navigating to the data's location.  You can then retrack, or examine the data. 
-
-
+You can also reload previously tracked data by clicking on the address bar and navigating to the data's location.  You can then retrack, or examine the data.
 
 ==3D Data==
 
