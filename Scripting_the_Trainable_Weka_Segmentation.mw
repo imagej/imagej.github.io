@@ -75,6 +75,26 @@ Once we have training samples for both classes, we are ready to train the classi
 segmentator.trainClassifier();
 </source>
 
+=== Getting results ===
+Once the classifier is trained (it will be displayed in the Log window), we can apply to the entire training image and obtain a result in the form of a labeled image or a probability map for each class:
+
+<source lang="java">
+// apply classifier to current training image and get label result 
+// (set parameter to true to get probabilities)
+segmentator.applyClassifier( false );
+// get result (float image)
+result = segmentator.getClassifiedImage();
+</source>
+
+Of course, we might be interested on applying the trained classifier to a complete new 2D image or stack. In that case we use:
+
+<source lang="java">
+// open test image
+testImage = IJ.openImage( "test-image.tif" );
+// get result (labels float image)
+result = segmentator.applyClassifier( testImage )
+</source>
+
 = Define your own features =
 
 Here is a little Javascript that makes two features from the Clown example and uses them to train a classifier (see the inline comments for more information):
