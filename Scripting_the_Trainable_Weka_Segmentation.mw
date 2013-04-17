@@ -2,7 +2,7 @@
 
 = Getting started =
 
-The first thing you need to start scripting is to know which methods you can use. For that, please have a look at the '''API of the WekaSegmentation''' class, which is available [http://fiji.sc/javadoc/trainableSegmentation/WekaSegmentation.html here].
+The first thing you need to start scripting the is to know which methods you can use. For that, please have a look at the '''API of the Trainable Segmentation''' library, which is available [http://fiji.sc/javadoc/trainableSegmentation/package-tree.html here].
 
 = Define your own features =
 
