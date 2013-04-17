@@ -47,7 +47,7 @@ labels  = IJ.openImage( "binary-labels.tif" );
 segmentator.addBinaryData( labels, 1, "class 2", "class 1" );
 </source>
 
-You can also add samples from a new input image and its corresponding labels:
+3) You can also add samples from a new input image and its corresponding labels:
 <source lang="java">
 // open new input image
 input2  = IJ.openImage( "input-image-2.tif" );
@@ -58,13 +58,21 @@ labels2  = IJ.openImage( "binary-labels-2.tif" );
 segmentator.addBinaryData( input2, labels2, "class 2", "class 1" );
 </source>
 
-If you want to balance the number of samples for each class you can do it in a similar way using this other method:
+4) If you want to balance the number of samples for each class you can do it in a similar way using this other method:
 
 <source lang="java">
 numSamples = 1000;
 // for all slices in input2, add 1000 white pixels as labels for class 2 and 
 // 1000 black pixels as labels for class 1
 segmentator.addRandomBalancedBinaryData( input2, labels2, "class 2", "class 1" , numSamples);
+</source>
+
+5) You can use all methods available in the API to add labels from a binary image in many differente ways. Please, have a look at them and decided which one fits better your needs.
+
+=== Training classifier ===
+Once we have training samples for both classes, we are ready to train the classifier of our segmentator:
+<source lang="java">
+segmentator.trainClassifier();
 </source>
 
 = Define your own features =
