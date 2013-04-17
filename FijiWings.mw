@@ -1,0 +1,63 @@
+[[Image:IMAGE]].]]
+
+__NOTOC__
+
+<br style="clear: both" />
+
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = FijiWings
+| author                 = Alex Dobens, Leonard Dobens [http://sbs.umkc.edu/dobens/]
+| maintainer             = Leonard Dobes
+| filename               = fiji-macosx-20130412094659.zip
+| source                 = TBA
+| status                 = stable
+}}
+
+To help you to get started with using this plugin, there is an explanatory screencast here: [[LINK]]
+
+=== Introduction ===
+
+This plugin is designed to allow easy semi-automatic tracing of wing veins and determination of trichome number and density.  The plugin has built-in tools for analysis an.  The native file format is open and XML-based.  This plugin is Free Software (also known as Open Source software) - to obtain the source code, please see [[LINK]].
+
+=== Licensing ===
+
+This plugin is free software, licensed under the GNU GPL v3 so please do contribute any patches or suggestions that you think would be useful. Please email me at dobensl@umkc.edu with any feedback.
+
+=== Installation ===
+
+FijiWings is distributed as packaged version of Fiji - to install it, please [[LINK]] and unzip and place in Applications folder (ensure another copy of Fiji is not in the folder).  Also download the file "data.arff" and place in the package contents of FujiWings (control click>package contents) in the plugins>ActionBar folder.
+
+=== Feedback ===
+
+Please report any bugs that you find with Fiji's "Help > Report a Bug" menu option.  For other feedback please email ''dobensl'' at ''umkc.edu''.   There are other ways of giving feedback on Fiji (e.g. the mailing lists, IRC, etc.) listed at [[Help:Contents]].
+
+=== Citing Fijiwings ===
+
+If you would like to reference Simple Neurite Tracer in a publication, you can cite:
+
+: FijiWings: an open source toolkit for semi-automated morphometric analysis of insect wings, Alexander C. Dobens and Leonard L. Dobens, in preparation
+ [LINK]. 
+
+== Tutorials ==
+
+
+== Technical Documentation ==
+
+
+== Authors ==
+
+These macros were written by Alexander Dobens with feedback and direction from Leonard Dobens:
+
+Many thanks to all of those authors for releasing their code under the GPL.
+
+== Acknowledgments ==
+
+
+
+== References ==
+
+<references/>
+
+[[Category:Plugins]]
+[[Category:Segmentation]]
