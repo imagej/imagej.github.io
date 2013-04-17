@@ -123,6 +123,34 @@ segmentator.saveData( "my-traces-data.arff" );
 segmentator.loadTrainingData( "my-traces-data.arff" );
 </source>
 
+=== Setting the classifier ===
+By default, the classifier is a multi-threaded implementation of a random forest. You can change it to any other classifier available in the [ http://weka.sourceforge.net/doc.dev/weka/classifiers/Classifier.html WEKA API]. For example, we can use SMO:
+
+<source lang="java">
+import weka.classifiers.functions.SMO;
+// create new SMO classifier (default parameters)
+classifier = new SMO();
+// assign classifier to segmentator
+segmentator.setClassifier( classifier );
+</source>
+
+We might also want to use the default random forest but tune its parameters. In that case, we can write something like this:
+
+<source lang="java">
+import hr.irb.fastRandomForest.FastRandomForest;
+// create random forest classifier
+rf = new FastRandomForest();
+// set number of trees in the forest
+rf.setNumTrees( 100 );        
+// set number of features per tree (0 for automatic selection)
+rf.setNumFeatures( 0 );
+// set random seed
+rf.setSeed( (new java.util.Random()).nextInt() );
+ 
+// set classifier
+segmentator.setClassifier( rf );
+</source>
+
 = Define your own features =
 
 Here is a little Javascript that makes two features from the Clown example and uses them to train a classifier (see the inline comments for more information):
