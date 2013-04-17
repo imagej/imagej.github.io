@@ -18,7 +18,8 @@ This software implements the tracking method described in the following paper:
 [[Image:OpenData.png]]
 
 Load the image stack to be tracked. Use whichever method you prefer in Fiji.
-After the data is loaded, start the plugin
+After the data is loaded, start the plugin.
+
 ==Starting the Plugin==
 
 [[Image:GlobalOptions.png]]
