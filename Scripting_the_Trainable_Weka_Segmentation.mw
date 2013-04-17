@@ -92,7 +92,35 @@ Of course, we might be interested on '''applying the trained classifier to a com
 // open test image
 testImage = IJ.openImage( "test-image.tif" );
 // get result (labels float image)
-result = segmentator.applyClassifier( testImage )
+result = segmentator.applyClassifier( testImage );
+</source>
+
+=== Save/Load operations ===
+If the classifier you trained is good enough for your purposes, you may want to save it into a file:
+
+<source lang="java">
+// save classifier into a file (.model)
+segmentator.saveClassifier( "my-cool-trained-classifier.model" );
+</source>
+
+... and load it later in another script to apply it on new images:
+<source lang="java">
+// load classifier from file
+segmentator.loadClassifier( "my-cool-trained-classifier.model" );
+</source>
+
+You may also want to save the training data into a file you can open later in WEKA:
+
+<source lang="java">
+// save data into a ARFF file
+segmentator.saveData( "my-traces-data.arff" );
+</source>
+
+... or load a file with traces information into the segmentator to use it as part of the training:
+
+<source lang="java">
+// load training data from ARFF file
+segmentator.loadTrainingData( "my-traces-data.arff" );
 </source>
 
 = Define your own features =
