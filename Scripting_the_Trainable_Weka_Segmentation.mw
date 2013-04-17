@@ -6,6 +6,7 @@ The first thing you need to start scripting the is to know which methods you can
 
 Let's go through the basic commands with examples written in Beanshell:
 
+=== Initialization ===
 In order to include all the library methods, the easiest (but not elegant) way of doing it is importing the whole library:
 
 <source lang="java">
@@ -24,6 +25,7 @@ segmentator = new WekaSegmentation( input );
 At it is now, the segmentator has default parameters and default classifier. That means that it will use the same features that are set by default in the [[Advanced Weka Segmentation | Advanced Weka Segmentation plugin]], 2 classes (named "class 1" and "class 2") and a random forest classifier with 200 trees and 2 random features per node. 
 If we are fine with that, we can now add some labels for our training data and train the classifier based on them.
 
+=== Adding training samples ===
 There are different ways of adding labels to our data:
 
 1) we can add any type of ROI to any of the existing classes using "addExample":
