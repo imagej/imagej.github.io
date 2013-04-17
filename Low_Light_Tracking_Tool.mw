@@ -63,7 +63,7 @@ After clicking Ok, a new window will open. In this window you can choose a manua
 
 You also can set your quality threshold.  Smaller numbers are higher quality, while larger numbers are lower quality but faster. 
 
-Automatic sigma can also be slower, more so for 3D data.
+Automatic sigma can also be slower, this is more so for 3D data.
 
 This can be changed from the Session Options menu, under edit.
 
