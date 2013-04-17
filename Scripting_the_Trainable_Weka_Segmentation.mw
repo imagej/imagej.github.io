@@ -40,7 +40,8 @@ segmentator.addExample( 1, new Roi( 400, 400, 30, 30 ), 1 );
 <source lang="java">
 // open binary label image
 labels  = IJ.openImage( "binary-labels.tif" );
-// for slice #1, add white pixels as labels for class 2 and black pixels as labels for class 1
+// for slice #1, add white pixels as labels for class 2 and 
+// black pixels as labels for class 1
 segmentator.addBinaryData( labels, 1, "class 2", "class 1");
 </source>
 
