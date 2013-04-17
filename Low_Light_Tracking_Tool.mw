@@ -27,7 +27,7 @@ After the data is loaded, start the plugin.
 Enter intensity offset, and ΔZ ratio. 
 
 The Offset applies if there is a minimum value that the camera registers. 
-Example: some microscopes would not allow a value under 100, so in that case you would enter 100 as the offset.
+Example: Some microscopes would not allow a value under 100, so in that case you would enter 100 as the offset.
 
 The z ratio, is the slice thickness, divided by the pixel width. This value is only used for 3D data.
 Example: My pixel size for my data is 100 nm, and my slice thickness is 200 nm. I would then enter a value of 2.
