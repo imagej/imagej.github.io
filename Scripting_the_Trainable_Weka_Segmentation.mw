@@ -8,6 +8,42 @@ Let's go through the basic commands with examples written in Beanshell:
 
 In order to include all the library methods, the easiest (but not elegant) way of doing it is importing the whole library:
 
+<source lang="java">
+import trainableSegmentation.*;
+</source>
+
+Now we are ready to play. We can open our input image and assign it to a WekaSegmentation object or segmentator:
+
+<source lang="java">
+// input train image
+input  = IJ.openImage( "input-grayscale-or-color-image.tif" );
+// create Weka Segmentation object
+segmentator = new WekaSegmentation( input );
+</source>
+
+At it is now, the segmentator has default parameters and default classifier. That means that it will use the same features that are set by default in the [[Advanced Weka Segmentation | Advanced Weka Segmentation plugin]], 2 classes (named "class 1" and "class 2") and a random forest classifier with 200 trees and 2 random features per node. 
+If we are fine with that, we can now add some labels for our training data and train the classifier based on them.
+
+There are different ways of adding labels to our data:
+
+1) we can add any type of ROI to any of the existing classes using "addExample":
+
+<source lang="java">
+// add pixels to first class (0) from ROI in slice # 1
+segmentator.addExample( 0, new Roi( 10, 10, 50, 50 ), 1 );
+// add pixels to second class (1) from ROI in slice # 1
+segmentator.addExample( 1, new Roi( 400, 400, 30, 30 ), 1 );
+</source>
+
+2) add the labels from a binary image, where white pixels belong to one class and black pixels belong to the other class:
+
+<source lang="java">
+// open binary label image
+labels  = IJ.openImage( "binary-labels.tif" );
+// for slice #1, add white pixels as labels for class 2 and black pixels as labels for class 1
+segmentator.addBinaryData( labels, 1, "class 2", "class 1");
+</source>
+
 = Define your own features =
 
 Here is a little Javascript that makes two features from the Clown example and uses them to train a classifier (see the inline comments for more information):
