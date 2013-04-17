@@ -1,5 +1,9 @@
 [[Script Editor|Scripting]] is one of the reasons Fiji is so powerful, and the Trainable Segmentation library (that includes the [[Advanced Weka Segmentation]] plugin methods) is one of the best examples for scriptable Fiji components.
 
+= Getting started =
+
+The first thing you need to start scripting is to know which methods you can use. For that, please have a look at the '''API of the WekaSegmentation''' class, which is available [http://fiji.sc/javadoc/trainableSegmentation/WekaSegmentation.html here].
+
 = Define your own features =
 
 Here is a little Javascript that makes two features from the Clown example and uses them to train a classifier (see the inline comments for more information):
