@@ -120,7 +120,7 @@ Otherwise, tracking function is the same. It is best to optimize the sigma value
 
 If you have multichannel data, each channel needs its own session.  You can select which sessions are visible by checking their boxes in the Visible Sessions list. You can use the current session drop down menu to switch between sessions. 
 
-Using the Merge, Split, Trim, and Delete buttons allows you to edit your traces by combining or deleting them. One useful exampling is if your object disappears periodically but you know that it is not a new object, and would like to combine the two seperate traces you create. 
+Using the Merge, Split, Trim, and Delete buttons allows you to edit your traces by combining or deleting them. One useful example is if your object disappears periodically but you know that it is not a new object, and would like to combine the two seperate traces you create. 
 
 You can zoom into the kymographs by moving the cursor over the kymograph window and holding down shift, while using the scroll wheel on the mouse.
 
