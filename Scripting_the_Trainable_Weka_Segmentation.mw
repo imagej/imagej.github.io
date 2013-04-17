@@ -124,7 +124,7 @@ segmentator.loadTrainingData( "my-traces-data.arff" );
 </source>
 
 === Setting the classifier ===
-By default, the classifier is a multi-threaded implementation of a random forest. You can change it to any other classifier available in the [ http://weka.sourceforge.net/doc.dev/weka/classifiers/Classifier.html WEKA API]. For example, we can use SMO:
+By default, the classifier is a multi-threaded implementation of a random forest. You can change it to any other classifier available in the [http://weka.sourceforge.net/doc.dev/weka/classifiers/Classifier.html  WEKA API]. For example, we can use SMO:
 
 <source lang="java">
 import weka.classifiers.functions.SMO;
