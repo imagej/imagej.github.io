@@ -8,4 +8,6 @@ It is typically used to locate ''objects'' and ''boundaries''.
 
 More precisely, image segmentation is the process of ''assigning a label'' to every pixel in an image such that pixels with the same label share certain visual characteristics.
 
+= See also =
+
 For a list of Fiji plugins which perform image segmentation, see: [[:Category:Segmentation]].
