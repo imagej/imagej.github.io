@@ -76,10 +76,13 @@ Currently, only one Cluster may be operated as a server at a time. This instance
 An example may be found in [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/example/Cluster_SIFT.java Cluster_SIFT]. An example that demonstrates the breakage of deep equality may be found in [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/example/Equality_Example.java Equality_Example]
 
 ===== Planned Features =====
-* On-the-fly addition of new cluster nodes
-* Volunteer cluster nodes, in other words, the ability to operate an instance of fiji in client mode through the plugin menu.
-* The ability to detect crashed nodes and re-queue their jobs
+* On-the-fly addition of new cluster nodes - complete
+* Volunteer cluster nodes, in other words, the ability to operate an instance of fiji in client mode through the plugin menu. - complete
+* The ability to detect crashed nodes and re-queue their jobs - complete
 * Menu-click supercomputing, or the ability to submit to a qsub-enabled HPC cluster from a local machine.
-* Security - Use ssh streams or SSLSockets to transfer objects, potentially allowing insecure Sockets as a non-default option.
+* Security - Use ssh streams or SSLSockets to transfer objects, potentially allowing insecure Sockets as a non-default option. - complete
+
+
+Note: as of 04/2031 this wiki article is out of date. I'll correct this in the coming weeks. (-Larry).
 
 [[Category:Plugins]]
