@@ -36,8 +36,8 @@ One good workflow for segmentation in ImageJ is as follows:
 #* If you ran filters on your data, you probably want to [http://imagej.net/docs/guide/146-26.html#sub:Revert%5Br%5D Revert] those changes first.
 # Do some numerical analysis on the selected data; e.g.:
 #* [http://imagej.net/docs/guide/146-30.html#sub:Measure...%5Bm%5D Measure] the entire selection directly.
-#** Control which measurements are done using [http://imagej.nih.gov/ij/docs/guide/146-30.html#sub:Set-Measurements... Set Measurements].
-#* Use [http://imagej.nih.gov/ij/docs/guide/146-30.html#sub:Analyze-Particles... Analyze Particles] to extract desirable objects from your selection and report individual statistics on them.
+#** Control which measurements are done using [http://imagej.net/docs/guide/146-30.html#sub:Set-Measurements... Set Measurements].
+#* Use [http://imagej.net/docs/guide/146-30.html#sub:Analyze-Particles... Analyze Particles] to extract desirable objects from your selection and report individual statistics on them.
 #* Use the [http://imagej.net/docs/guide/146-30.html#fig:The-ROI-Manager ROI Manager] to '''Add''' the selection and then '''Split''' it (under the '''More''' button), then use '''Multi Measure''' (also under '''More''') to report statistics on the objects.
 #* [[Macros_Intro|Write a macro]] to automate this sort of analysis, loop over objects in the ROI manager, measure and manipulate them, etc.
 
