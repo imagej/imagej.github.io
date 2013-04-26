@@ -83,6 +83,6 @@ An example may be found in [https://github.com/fiji/fiji/blob/master/src-plugins
 * Security - Use ssh streams or SSLSockets to transfer objects, potentially allowing insecure Sockets as a non-default option. - complete
 
 
-Note: as of 04/2031 this wiki article is out of date. I'll correct this in the coming weeks. (-Larry).
+Note: as of 04/2013 this wiki article is out of date. I'll correct this in the coming weeks. (-Larry).
 
 [[Category:Plugins]]
