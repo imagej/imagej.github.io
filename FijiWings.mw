@@ -37,7 +37,6 @@ Please report any bugs that you find with Fiji's "Help > Report a Bug" menu opti
 If you would like to reference FijiWings in a publication, you can cite:
 
 : FijiWings: an open source toolkit for semi-automated morphometric analysis of insect wings, Alexander C. Dobens and Leonard L. Dobens, in preparation
- [LINK].
 
 == Tutorials ==
 
@@ -45,8 +44,8 @@ TBA
 
 == Technical Documentation ==
 
-see<<http://sourceforge.net/projects/fijiwings>
->
+see <http://sourceforge.net/projects/fijiwings>
+
 == Authors ==
 
 These macros were written by Alexander Dobens with feedback and direction from Leonard Dobens:
