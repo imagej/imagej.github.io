@@ -9,16 +9,16 @@ __NOTOC__
 | name                   = FijiWings
 | author                 = Alex Dobens, Leonard Dobens [http://sbs.umkc.edu/dobens/]
 | maintainer             = Leonard Dobes
-| filename               = fiji-macosx-20130412094659.zip
+| filename               = fiji-macosx.zip
 | source                 = TBA
 | status                 = stable
 }}
 
-To help you to get started with using this plugin, there is an explanatory screencast here: [[LINK]]
+To help you to get started with using this plugin, there is an explanatory screencast here: TBA]
 
 === Introduction ===
 
-This plugin is designed to allow easy semi-automatic tracing of wing veins and determination of trichome number and density.  The plugin has built-in tools for analysis an.  The native file format is open and XML-based.  This plugin is Free Software (also known as Open Source software) - to obtain the source code, please see [[LINK]].
+This plugin is designed to allow easy semi-automatic tracing of wing veins and determination of trichome number and density.  The plugin has built-in tools for analysis an.  The native file format is open and XML-based.  This plugin is Free Software (also known as Open Source software) -and is supplied as a packaged version of Fiji, here <http://sourceforge.net/projects/fijiwings>.
 
 === Licensing ===
 
@@ -26,7 +26,7 @@ This plugin is free software, licensed under the GNU GPL v3 so please do contrib
 
 === Installation ===
 
-FijiWings is distributed as packaged version of Fiji - to install it, please [[LINK]] and unzip and place in Applications folder (ensure another copy of Fiji is not in the folder).  Also download the file "data.arff" and place in the package contents of FujiWings (control click>package contents) in the plugins>ActionBar folder.
+FijiWings is distributed as packaged version of Fiji - to install it, please <http://sourceforge.net/projects/fijiwings> and unzip and place in Applications folder (ensure another copy of Fiji is not in the folder).  Also download the file "data.arff" and place in the package contents of FujiWings (control click>package contents) in the plugins>ActionBar folder.
 
 === Feedback ===
 
@@ -41,23 +41,14 @@ If you would like to reference FijiWings in a publication, you can cite:
 
 == Tutorials ==
 
+TBA
 
 == Technical Documentation ==
 
-
+see<<http://sourceforge.net/projects/fijiwings>
+>
 == Authors ==
 
 These macros were written by Alexander Dobens with feedback and direction from Leonard Dobens:
 
 Many thanks to all of those authors for releasing their code under the GPL.
-
-== Acknowledgments ==
-
-
-
-== References ==
-
-<references/>
-
-[[Category:Plugins]]
-[[Category:Segmentation]]
