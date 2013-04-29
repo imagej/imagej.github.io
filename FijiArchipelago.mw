@@ -44,7 +44,7 @@ So far, this has been extensively tested only on Linux machines, but it should b
 
 The Cluster user interface will open. The cluster must be configured before it may be started.
 
-[[File:Archipelago_01.png|500px]]
+[[File:Archipelago_01.png|300px]]
 
 
 ==== Configure the Root Node ====
