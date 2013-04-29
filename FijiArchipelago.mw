@@ -1,88 +1,165 @@
-FijiArchipelago is a plugin that brings Cluster functionality to Fiji
+{{Infobox Plugin
+| name                   = Fiji Archipelago
+| author                 = Larry Lindsey
+| maintainer             = Larry Lindsey
+| released               = April 2013
+| latest version         = April 2013
+| status                 = beta
+| category               = [[:Category:Plugins|Plugins]]
+}}
+
+Fiji Archipelago is a plugin that brings Cluster functionality to Fiji
 
 == Overview ==
-FijiArchipelago is a tool designed to make it easy for programmers to export Fiji/ImageJ functionality over a network to several other computers.
+Fiji Archipelago is a tool designed to make it easy for programmers to export Fiji/ImageJ functionality over a network to several other computers.
 
-The "root node," or the computer on which the cluster is started, operates as a server. "Client nodes" must be able to reach that server over a network, and must also have access to a shared network file resource.
+For the purposes of this article, the root node is the computer from which the cluster is started and managed. Client nodes are computers that perform computations exported from the root node. A program consists of several processes, the computations that are exported to the client nodes.
 
-Client machines are started automatically through a user interface. Fiji is started by opening a remote shell (currently ssh using JSch), then running fiji with some arguments that indicate how the client should access the server.
-
-This project currently works for machines that share the same local network, but is also intended to be used eventually on HPC clusters with a qsub or similar architecture, specifically the University of Texas's TACC. This work is ongoing.
+Client nodes may be started by the root node, or the root node may be configured to accept client nodes that have been started manually. In the case that they are started by the root node, clients nodes are accessed using ssh via the JSch library. By default, client/root communication is done over standard IO over ssh, but insecure socket communication is also available, and this is how manually started nodes must communicate.
 
 == Requirements ==
-* Server and clients should all have the same version of Fiji installed.
-* FijiArchipelago makes use of ssh and ssh key pair authentication, so the server must have a private key file that matches a public key in authorized_hosts on the client.
-* Clients must be able to access the server at the configured port.
+* Root and client nodes should all have the same version of Fiji installed.
+* Fiji Archipelago makes use of ssh and ssh key pair authentication, so the server must have a private key file that matches a public key in authorized_hosts on the client.
 * Server and clients must have access to a shared network file server if file transfer is required.
 
-So far, this has been tested only on Linux machines, but it should be platform-independent.
+So far, this has been extensively tested only on Linux machines, but it should be platform-independent.
+
+== Features ==
+
+* On-the-fly addition of new cluster nodes
+* Volunteer cluster nodes. A node may be started manually (this has security implications).
+* Processes running on nodes that crash or are cancelled are automatically rescheduled.
+* Security - root/client communication is done over ssh standard IO by default.
+* Easy API - submit Callables to an ExecutorService.
+
+=== Planned ===
+* Explicit support for qsub-enabled HPC clusters.
+** Archipelago should already be usable on qsub clusters in which the compute nodes can access sockets on the login node (and it doesn't violate your usage policy).
 
 == Usage ==
 
-=== Users ===
+=== Starting a Cluster ===
 
-To start a Cluster, navigate to Plugins->Cluster->Start Cluster...
+* From the ImageJ window, select Plugins->Cluster->Start Cluster...
 
-==== Start Cluster Dialog ====
+The Cluster user interface will open. The cluster must be configured before it may be started.
 
-[[File:FijiArchipelagoShot01.png|500px]]
+[[File:Archipelago_01.png|500px]]
 
-* Server Port Number: This is the port that the FijiArchipelago server will listen on.
-* Remote Machine User Name: The username to use to start fiji on remote machines
-* SSH Private Key File: The location of the private key file to use for authentication. Currently, this has been tested only with password-less keys, but it should work with password-protected keys as well.
-* Local Exec Root: The folder containing the fiji executable
-* Local File Root: A folder that is shared over the network
-* Default Exec Root for Remote Nodes: This is used as the default folder for the fiji location on remote machines.
-* Default File Root for Remote Nodes: This is used as the default network share location for remote nodes. This should reference the same resource as Local File Root.
 
-==== Configure Nodes Dialog ====
+==== Configure the Root Node ====
 
-[[File:FijiArchipelagoShot02.png|500px]]
+[[File:Archipelago_02.png|500px]]
 
-===== Add a node =====
+* Click the Configure Root Node... button
+** Local Exec Root: The folder containing your local fiji (or ImageJ) executable. This field may disappear in future versions.
+** Local File Root: A shared network folder, if one is available. Not necessary for most jobs.
+** User Name: Your user name on this machine
+** Default Client Exec Root: The folder containing fiji (or ImageJ) on most remote clients. This field may disappear in future versions.
+** Default Client File Root: The matching network folder, relative to remote clients.
 
-[[File:FijiArchipelagoShot03.png|500px]]
+* Click the OK button
 
-Click the Add Node... button to add a new node
-* Hostname: The hostname of the new client node. This hostname is used for ssh purposes.
-* User name: The user name to use for ssh access. This defaults to the name entered in the previous dialog.
-* Port: The ssh port for this machine, with a default of 22.
-* Number of Threads: The number of desired threads to use on this machine.
-* Remote Exec Root: The folder containing the fiji executable on this client.
-* Remote File Root: The folder on this client corresponding to the location of the shared resource folder entered as Local File Root in the previous dialog.
-Click OK
 
-===== Load from File / Save to File =====
-The nodes entered on this dialog may be saved to a configuration file for later use. Multiple cluster files may be loaded, to add several groups of similar machines to use with the cluster. For instance, you might save host01, host02, ... host10 to fiji.cluster, and different-host01, different-host02, ... different-host10 to fiji-different.cluster, then load both files later to add all twenty hosts to one FijiArchipelago configuration.
+==== Configure Remote Nodes ====
 
-===== Start the Cluster =====
-Once you press OK on the Configure Nodes Dialog window, each listed host will be contacted via ssh using the username and private key file that were provided. FijiArchipelago will attempt to start an instance of fiji in headless mode, which should then contact your local computer on the indicated port to submit itself as ready to accept jobs.
+===== Via SSH =====
 
-A window will appear with a big "Stop Cluster" button in it. Click this button to stop the cluster and all instances of fiji on your client machines.
+Archipelago uses JSch to start remote nodes by ssh. This requires key file authentication, in order for Fiji Archipelago to avoid storing your password. There are two options with regard to how the root and client nodes communicate.
+
+
+The default is the SSH Shell method, which uses standard IO over ssh for communication. The benefits of this method are that traffic is encrypted and security concerns are deferred to your implementation of ssh.
+
+The other option is the Insecure Socket Shell method, which starts the remote nodes by ssh and causes them to connect to an insecure server running on the root node. This may be faster, but should not be used on an unprotected network.
+
+[[File:Archipelago_03.png|500px]]
+
+* Click Configure Cluster Nodes...
+This will open the cluster node configuration window
+* Click Add Node...
+
+[[File:Archipelago_04.png|500px]]
+
+This will open a dialog for adding a new cluster node, with the following fields:
+** Hostname: The hostname or IP address for this host
+** User name: The username for this host
+** Thread Limit: Allow up to this many processes to be scheduled on this host. If set to 0, this defaults to the number of available cores.
+** Remote Fiji Root: The folder containing fiji or ImageJ on this host.
+** Remote File Root: The shared network folder relative to this host.
+** Shell: SSH Shell or Insecure Socket Shell
+** keyfile: Your ssh keyfile, as generated in Linux by ssh-keygen
+** executable: either fiji or ImageJ
+** ssh-port: the ssh port for this host
+
+* Click OK
+* When you have added all of your nodes, click OK
+
+===== Via Keyboard =====
+
+Client nodes may also be started locally, ie, by walking over to them and using a keyboard an mouse (or script). This requires the use of an insecure server, and is not recommended on untrusted networks.
+
+On the root node, once the cluster is started, click the Start Insecure Server button.
+
+On the client node:
+* Start Fiji
+* From the ImageJ window, select Plugins->Cluster->Attach to Cluster...
+* Enter the hostname and port for your root node
+* Click OK
+
+or
+
+* Run ./fiji --full-classpath --main-class edu.utexas.clm.archipelago.Fiji_Archipelago root.node.hostname port
+
+The default port is 4012. The server is started automatically when a client node is started with the insecure socket shell option.
+
+==== Saving  ====
+
+Clicking the Save to Configuration File... button will save the current configuration to an xml file for later use. This will save the root node configuration, as well as any nodes that appear in the Configure Cluster Nodes... dialog. This excludes any nodes that have stopped or crashed.
+
+==== Loading ====
+
+Click the Load Configuration File... button to load an existing configuration file. This will automatically configure the root node and any client nodes indicated in the file. The cluster should be startable immediately afterward.
+
+==== Start the Cluster ====
+
+Click the Start Cluster button. When the cluster is running, this button will change to Stop Cluster. When clicked, the cluster and all running client nodes will stop.
+
+==== Start the Server ====
+
+To allow "volunteer nodes" to attach, click the Start Insecure Server button. This starts a server on the default port of 4012. Because the socket is insecure and unencrypted, this exposes you to a security risk.
+
+==== Show Node Statistics ====
+
+[[File:Archipelago_05.png|500px]]
+
+
+Clicking the Show Node Statistics button will open a dialog that displays usage stats for running client nodes:
+* Host: the hostname of the client node in question
+* state: the state of the node, active, inactive, or stopped.
+* n Jobs: k/n, where there are k running processes out of n available cores.
+* Beat: Client nodes send a heartbeat message to the root node approximately once per second. This indicates the length of time since the last heartbeat was received.
+* MB Used: The number of megabytes of RAM used by Fiji's JVM on the client node.
+* MB Total: The number of megabytes of RAM that are available to the remote JVM.
+* Stop: Click this button to shut the client node down. Any running processes will be rescheduled on other nodes, if available.
+
+==== Debug Output ====
+
+Select this checkbox if you would like to display debug output on your command line. This is potentially verbose, but should include useful information if your cluster behaves erroneously.
 
 ==== SIFT Extraction Example ====
 
 Use File->Import->Image Sequence... to import a virtual stack of many images.
-Click Plugins->Cluster->Benchmark... to run a SIFT benchmark of your cluster against your local machine. This will start a cluster if there isn't one already. SIFT features will be extracted from all images in the stack using default parameters over the cluster, then using all available cores on your local machine (including virtual, or hyper-threaded cores).
+Click Plugins->Cluster->Benchmark... to run a SIFT benchmark of your cluster against your local machine. This will start a cluster if there isn't one already. SIFT features will be extracted from all images in the stack using default parameters over the cluster, then using all available cores on your local machine (including virtual, or hyper-threaded cores), for benchmarking and comparison purposes.
 
-=== Programmers ===
-FijiArchipelago implements [http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ExecutorService.html ExecutorService]. Unlike a typical ExecutorService, any Callable or Runnable submitted to a Cluster will be exported over the network to a remote machine.
+== Programmers ==
+The Cluster class provides 
+[http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ExecutorService.html ExecutorServices] through Cluster.getService(n). The argument n may be either an int or a float. If an int, any processes submitted to the ExecutorService are assumed to require n number of cores. If a float, processes are assumed to require a fraction n of the available resources of any given computer. For most usage cases, Cluster.getCluster().getService(1) will returne the desired service.
 
 
-To make this work, any objects submitted to a Cluster are Serialized and transmitted to a remote instance of Fiji. The returned result is Serialized remotely, then retrieved by the local, or root node. Any submitted Callable or Runnable must implement Serializable. Failure to do so will result in a NotSerializableException at runtime. A consequence of Serialization is that the deep equality of objects is not preserved. In other words, a Callable that is designed to return an object that has been instantiated prior to submission will effectively return a clone. 
+To make this work, submissions to a Cluster are serialized and transmitted to a remote instance of Fiji. The returned result is serialized remotely, then retrieved by the root node. Any submitted Callable or Runnable must implement Serializable. Failure to do so will result in a NotSerializableException at runtime. A consequence of Serialization is that the deep equality of objects is not preserved. In other words, a Callable that is designed to return an object that has been instantiated prior to submission will effectively return a clone. 
 
-Currently, only one Cluster may be operated as a server at a time. This instance is referenced by Cluster.getCluster(). Cluster.activeCluster() indicates whether there is an active Cluster already.
+While many Clusters may exist on a single root node, only one is "official." This instance is referenced by Cluster.getCluster(). Cluster.activeCluster() indicates whether there is existing active Cluster.
 
 An example may be found in [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/example/Cluster_SIFT.java Cluster_SIFT]. An example that demonstrates the breakage of deep equality may be found in [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/archipelago/example/Equality_Example.java Equality_Example]
-
-===== Planned Features =====
-* On-the-fly addition of new cluster nodes - complete
-* Volunteer cluster nodes, in other words, the ability to operate an instance of fiji in client mode through the plugin menu. - complete
-* The ability to detect crashed nodes and re-queue their jobs - complete
-* Menu-click supercomputing, or the ability to submit to a qsub-enabled HPC cluster from a local machine.
-* Security - Use ssh streams or SSLSockets to transfer objects, potentially allowing insecure Sockets as a non-default option. - complete
-
-
-Note: as of 04/2013 this wiki article is out of date. I'll correct this in the coming weeks. (-Larry).
 
 [[Category:Plugins]]
