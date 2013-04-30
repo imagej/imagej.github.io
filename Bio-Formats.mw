@@ -93,7 +93,11 @@ The official Bio-Formats repository is:
 
     https://github.com/openmicroscopy/bioformats
 
-However, we sometimes deploy fixes to Fiji before they are integrated into Bio-Formats upstream. The code currently in use by Fiji is on the <code>fiji</code> branch of Fiji's Bio-Formats fork on GitHub:
+Bio-Formats has multiple integration branches: <code>dev_4_4</code> is the "stable" 4.4.x line, while <code>develop</code> is the "development" 4.5.x line.
+
+Fiji ships builds from the '''4.5.x development''' line. Furthermore, we sometimes deploy fixes to Fiji before they are integrated into Bio-Formats upstream.
+
+The code currently in use by Fiji is on the <code>fiji</code> branch of Fiji's Bio-Formats fork on GitHub:
 
     https://github.com/fiji/bioformats/tree/fiji
 
