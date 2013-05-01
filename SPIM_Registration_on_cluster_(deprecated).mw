@@ -464,4 +464,88 @@ Tips and tricks:
 
 == Multiview deconvolution ==
 
+Another, more advanced, way to fuse the registered data is multiview deconvolution which will be described eloquently and in details [http://fiji.sc/Multi-View_Deconvolution here]. 
+
+<source lang="bash">
+#!/bin/bash
+dir="/projects/tomancak_lightsheet/Tassos"
+jobs="$dir/jobs/deconvolution"
+
+mkdir -p $jobs
+
+for i in `seq 1 715`
+do
+  	job="$jobs/deconvolution-$i.job"
+        echo $job
+        echo "#!/bin/bash" > "$job"
+        echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms100g -Xmx100g
+-Ddir=$dir -Dtimepoint=$i -Dangles=1-6 -Dreference=714 -Dx=36 -Dy=168 -Dz=282 -Dw=1824 
+-Dh=834 -Dd=810 -- --no-splash 
+/projects/tomancak_lightsheet/Tassos/jobs/deconvolution/deconvolution.bsh" >> "$job"
+        chmod a+x "$job"
+done
+</source>
+
+<source lang="bash">
+#!/bin/bash
+xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms100g -Xmx100g 
+-Ddir=/projects/tomancak_lightsheet/Valia/Valia -Dtimepoint=1 -Dangles=1-6 -Dreference=714 
+-Dx=36 -Dy=168 -Dz=282 -Dw=1824 -Dh=834 -Dd=810 -- --no-splash 
+/projects/tomancak_lightsheet/Tassos/jobs/deconvolution/deconvolution.bsh
+</source>
+
+<source lang="java">
+import ij.IJ;
+import java.lang.Runtime;
+
+runtime = Runtime.getRuntime();
+System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
+
+dir = System.getProperty( "dir" );
+timepoint = System.getProperty( "timepoint" );
+angles = System.getProperty( "angles" );
+reference = System.getProperty( "reference" );
+x = System.getProperty( "x" );
+y = System.getProperty( "y" );
+z = System.getProperty( "z" );
+w = System.getProperty( "w" );
+h = System.getProperty( "h" );
+d = System.getProperty( "d" );
+iter = System.getProperty( "iter" );
+
+IJ.run("Multi-view deconvolution", "spim_data_directory=" + dir + " " +
+        "pattern_of_spim=spim_TL{t}_Angle{a}.tif" + " " +
+        "timepoints_to_process=" + timepoint + " " +
+        "angles=" + angles + " " +
+        "registration=[Time-point registration (reference=" + reference + ") of channel 0]" + " " +
+        "crop_output_image_offset_x=" + x + " " +
+        "crop_output_image_offset_y=" + y + " " +
+        "crop_output_image_offset_z=" + z + " " +
+        "crop_output_image_size_x=" + w + " " +
+        "crop_output_image_size_y=" + h + " " +
+        "crop_output_image_size_z=" + d + " " +
+        "type_of_iteration=[Conditional Probability (fast, precise)]" + " " +
+        "number_of_iterations=10" + " " +
+        "use_tikhonov_regularization tikhonov_parameter=0.0060" + " " +
+        "imglib_container=[Array container]" + " " +
+        "compute=[in 512x512x512 blocks]" + " " +
+        "compute_on=[CPU (Java)]" + " " +
+        "fused_image_output=[Save 2d-slices, one directory per time-point]"
+        );
+
+/* shutdown */
+runtime.exit(0);
+</source>
+
+
+
+<source lang="bash">
+#!/bin/bash
+
+for file in `ls ${1} | grep ".job$"`
+do
+  	bsub -q medium -n 12 -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+done
+</source>
+
 == 3D rendering ==
