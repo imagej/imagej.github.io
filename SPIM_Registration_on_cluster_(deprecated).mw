@@ -145,6 +145,7 @@ This will look into the current directory for all files ending with '''.job''' (
 
 * ''-q short''  selects the queue to which the job will be submitted (this one allows jobs that run up to 4 hours on MPI-CBG cluster).
 * ''-n 1'' specifies how many processors will the job request, in this case just one (we will only open and save one file)
+* -R span[hosts=1] says that if we were requesting more than one processor, they would be on a single physical machine (host).
 * ''-o "out.%j"'' will create output file called out.<job_number> in the current directory
 * ''-e "err.%J"'' will send errors to the file called err.<job_number> in the current directory
 * ''${1}/$file'' will evaluate to ./resave-<number>.job i.e. the bash script that the cluster node will run - see above
