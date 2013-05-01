@@ -43,7 +43,7 @@ As a first step we will open the .czi files and save them as '''.tif'''. This is
 
 ''Note: The Lustre filesystem on MPI-CBG cluster is made to be able to handle such situation, where hundreds of nodes are going to simultaneously read and write big files to it. If your cluster is using a Network File System (NFS) this may not be such a good idea...''
 
-We have an 240 time-point, 3 view dataset (angles 325, 235 and 190) in a directory 
+We have an 240 time-point, 3 view dataset (angles 325, 235 and 280) in a directory 
 
  cd /projects/tomancak_lightsheet/Tassos/
  ls -1
@@ -75,12 +75,12 @@ do
         echo $job
         echo "#!/bin/bash" > "$job"
         echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=$dir
--Dtimepoint=$i -Dangle=190 -- --no-splash ${jobs}/resaving.bsh" >> "$job"
+-Dtimepoint=$i -Dangle=280 -- --no-splash ${jobs}/resaving.bsh" >> "$job"
         chmod a+x "$job"
 done
 </source>
 
-We customize the script by editing the parameters inside it. One can think of it as a template that is used as a starting point to adapt to the particular situation. For instance we can change the directory '''dir''' where the data are to be found, the place where the output will go '''jobs''', the number of time-points to process '''for i in `seq 1 240`''' and most importantly the angle to be processed '''-Dangle=190'''. The strategy we follow here is to create jobs to process one angle at a time for all available time-points.
+We customize the script by editing the parameters inside it. One can think of it as a template that is used as a starting point to adapt to the particular situation. For instance we can change the directory '''dir''' where the data are to be found, the place where the output will go '''jobs''', the number of time-points to process '''for i in `seq 1 240`''' and most importantly the angle to be processed '''-Dangle=280'''. The strategy we follow here is to create jobs to process one angle at a time for all available time-points.
 
 This will generate 240 '''resave-<number>.job''' files in the current directory
 
@@ -96,11 +96,11 @@ each one of those files looks like this
 #!/bin/bash
 xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64
 -Ddir=/projects/tomancak_lightsheet/Tassos
--Dtimepoint=38 -Dangle=190 -- --no-splash
+-Dtimepoint=38 -Dangle=280 -- --no-splash
  /projects/tomancak_lightsheet/Tassos/jobs/resaving/resaving.bsh
 </source>
 
-running this job a any cluster node will launch fiji in a so-called virtual frame buffer (the nodes don't have graphics capabilities but we can simulate that) and then inside Fiji it will launch a '''Beanshell script''' called '''resaving.bsh''' passing it thee parameters : the directory (/projects/tomancak_lightsheet/Tassos), the time-point (38) and the angle (190).
+running this job a any cluster node will launch fiji in a so-called virtual frame buffer (the nodes don't have graphics capabilities but we can simulate that) and then inside Fiji it will launch a '''Beanshell script''' called '''resaving.bsh''' passing it thee parameters : the directory (/projects/tomancak_lightsheet/Tassos), the time-point (38) and the angle (280).
 
 Lets create that script in the current directory
 
@@ -149,7 +149,7 @@ This will look into the current directory for all files ending with '''.job''' (
 * ''-e "err.%J"'' will send errors to the file called err.<job_number> in the current directory
 * ''${1}/$file'' will evaluate to ./resave-<number>.job i.e. the bash script that the cluster node will run - see above
 
-Lets recapitulate. We have created '''create-resaving-jobs''' that when run creates many '''resave-<number>.job''' files those are going to be submitted to the cluter using '''submit-jobs''' and on the cluster nodes will run '''resaving.bsh''' using Fiji and the specified parameters.
+Lets recapitulate. We have created '''create-resaving-jobs''' that, when executed, creates many '''resave-<number>.job''' files. Those are going to be submitted to the cluter using '''submit-jobs''' and on the cluster nodes will run '''resaving.bsh''' using Fiji and the specified parameters.
 
 So lets run it. We need to issue the following command 
 
@@ -173,7 +173,30 @@ We can monitor running jobs with
  445493  tomanca RUN   short      madmax      n18         *ave-4.job May  1 11:36
  445494  tomanca RUN   short      madmax      n21         *ave-5.job May  1 11:36
 
-or whatever your submission system offers. At the end of the run
+or whatever your submission system offers. At the end of the run we will have a lot of '''err.<job_number>''' and '''out.<job_number>''' files in the working directory.
+
+ err.445490
+ out.445490
+ err.445491
+ out.445491
+ ....
+
+The err.* are hopefully empty. The out.* contain Fiji log output if any. In this case it should look something like this. Most importantly in the directory /projects/tomancak_lightsheet/Tassos we now have for each .czi file a corresponding .tif file which was the goal of the whole exercise
+
+ls *Angle280*
+ spim_TL1_Angle280.czi
+ spim_TL1_Angle280.tif
+ spim_TL2_Angle280.czi
+ spim_TL2_Angle280.tif
+ spim_TL3_Angle280.czi
+ spim_TL3_Angle280.tif
+ ...
+
+We can remove the .czi files (rm *.czi) as we do not need them anymore (but check some of the tifs first!).
+
+Now we must repeat the whole procedure for the other two angles (325 and 235). Open create-resaving-jobs and change 280 to 325 and follow the recipe again. There are of course ways to automate that.
+
+On our cluster powered by the Lustre filesystem the resaving operation takes only minutes. Imagine what is happening - up to 480 processors are accessing the file system reading .czi files and immediately resaving it to that very same filesystem as tif - all at the same time. The files are 1.8GB each. Beware: this may not work at all on lesser filesystems - the Lustre is made for this.
 
 == Bead-based multi-view registration ==
 
