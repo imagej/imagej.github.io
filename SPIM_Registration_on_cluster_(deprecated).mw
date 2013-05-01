@@ -46,6 +46,14 @@ As a first step we will open the .czi files and save them as '''.tif'''. This is
 We have an 240 time-point, 3 view dataset (angles 325, 235 and 190) in a directory 
 
  cd /projects/tomancak_lightsheet/Tassos/
+ ls -1
+ spim_TL1_Angle235.czi
+ spim_TL1_Angle280.czi
+ spim_TL1_Angle325.czi
+ spim_TL1_Angle235.czi
+ spim_TL1_Angle280.czi
+ spim_TL1_Angle325.czi
+ ...
 
 we create a subdirectory '''jobs/resaving''' and change to it
 
@@ -56,7 +64,7 @@ Now we create a bash script '''create-resaving-jobs''' that will generate the so
 
 <source lang="bash">
 #!/bin/bash
-dir="/projects/tomancak_lightsheet/Tassos/"
+dir="/projects/tomancak_lightsheet/Tassos"
 jobs="$dir/jobs/resaving"
 
 mkdir -p $jobs
@@ -66,30 +74,106 @@ do
   	job="$jobs/resave-$i.job"
         echo $job
         echo "#!/bin/bash" > "$job"
-        echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=$dir //
+        echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=$dir
 -Dtimepoint=$i -Dangle=190 -- --no-splash ${jobs}/resaving.bsh" >> "$job"
         chmod a+x "$job"
 done
 </source>
 
+We customize the script by editing the parameters inside it. One can think of it as a template that is used as a starting point to adapt to the particular situation. For instance we can change the directory '''dir''' where the data are to be found, the place where the output will go '''jobs''', the number of time-points to process '''for i in `seq 1 240`''' and most importantly the angle to be processed '''-Dangle=190'''. The strategy we follow here is to create jobs to process one angle at a time for all available time-points.
+
 This will generate 240 '''resave-<number>.job''' files in the current directory
 
- /projects/tomancak_lightsheet/Tassos//jobs/resaving/resave-1.job
- /projects/tomancak_lightsheet/Tassos//jobs/resaving/resave-2.job
- /projects/tomancak_lightsheet/Tassos//jobs/resaving/resave-3.job
- /projects/tomancak_lightsheet/Tassos//jobs/resaving/resave-4.job
- /projects/tomancak_lightsheet/Tassos//jobs/resaving/resave-5.job
+ /projects/tomancak_lightsheet/Tassos/jobs/resaving/resave-1.job
+ /projects/tomancak_lightsheet/Tassos/jobs/resaving/resave-2.job
+ /projects/tomancak_lightsheet/Tassos/jobs/resaving/resave-3.job
  ...
- /projects/tomancak_lightsheet/Tassos//jobs/resaving/resave-240.job
+ /projects/tomancak_lightsheet/Tassos/jobs/resaving/resave-240.job
 
 each one of those files looks like this
 
 <source lang="bash">
 #!/bin/bash
-xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 //
--Ddir=/projects/tomancak_lightsheet/Tassos/ //
--Dtimepoint=38 -Dangle=190 -- --no-splash // /projects/tomancak_lightsheet/Tassos//jobs/resaving/resaving.bsh
+xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64
+-Ddir=/projects/tomancak_lightsheet/Tassos
+-Dtimepoint=38 -Dangle=190 -- --no-splash
+ /projects/tomancak_lightsheet/Tassos/jobs/resaving/resaving.bsh
 </source>
+
+running this job a any cluster node will launch fiji in a so-called virtual frame buffer (the nodes don't have graphics capabilities but we can simulate that) and then inside Fiji it will launch a '''Beanshell script''' called '''resaving.bsh''' passing it thee parameters : the directory (/projects/tomancak_lightsheet/Tassos), the time-point (38) and the angle (190).
+
+Lets create that script in the current directory
+
+<source lang="java">
+import ij.IJ;
+import ij.ImagePlus;
+import java.lang.Runtime;
+import java.io.File;
+import java.io.FilenameFilter;
+
+runtime = Runtime.getRuntime();
+
+dir = System.getProperty( "dir" );
+timepoint = System.getProperty( "timepoint" ); 
+angle = System.getProperty( "angle" );
+
+IJ.run("Bio-Formats Importer", "open=" + dir + "spim_TL" + timepoint + "_Angle" + angle + ".czi" +
+" autoscale color_mode=Default specify_range view=[Standard ImageJ] stack_order=Default              
+t_begin=1000 t_end=1000 t_step=1");
+IJ.saveAs("Tiff ", dir + "spim_TL" + timepoint + "_Angle" + angle + ".tif");
+
+/* shutdown */
+runtime.exit(0);
+</source>
+
+''Note: The t_begin=1000 t_end=1000 are parameters passed to Bioformats Opener. This is a hack. The .czi files think that they are part of a long time-lapse despite the fact that they were saved as single, per angle .czi. In order to trick bioformats into opening just the timepoint which contains actual data we set the time coordinate way beyond the actual length of the time-course (in this case 240). This results in Bioformats importing the "last" timepoint in the series which contains the data. This will change!
+
+Now we need to create yet another bash script (last one) called  '''submit jobs'''
+
+<source lang="bash">
+#!/bin/bash
+
+for file in `ls ${1} | grep ".job$"`
+do
+  	bsub -q short -n 1 -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+done
+</source>
+
+This will look into the current directory for all files ending with '''.job''' (we created them before) and submit all of them to the cluster with the '''bsub''' command.
+
+ bsub -q short -n 1 -R span[hosts=1] -o "out.123345" -e "err.123456" ./resave-1.job
+
+* ''-q short''  selects the queue to which the job will be submitted (this one allows jobs that run up to 4 hours on MPI-CBG cluster).
+* ''-n 1'' specifies how many processors will the job request, in this case just one (we will only open and save one file)
+* ''-o "out.%j"'' will create output file called out.<job_number> in the current directory
+* ''-e "err.%J"'' will send errors to the file called err.<job_number> in the current directory
+* ''${1}/$file'' will evaluate to ./resave-<number>.job i.e. the bash script that the cluster node will run - see above
+
+Lets recapitulate. We have created '''create-resaving-jobs''' that when run creates many '''resave-<number>.job''' files those are going to be submitted to the cluter using '''submit-jobs''' and on the cluster nodes will run '''resaving.bsh''' using Fiji and the specified parameters.
+
+So lets run it. We need to issue the following command 
+
+ ./submit-jobs .
+
+the dot at the end tells submit job where to look for .job files i.e. in the current directory. What you should see is something like this
+
+ [tomancak@madmax resaving]$ ./submit-jobs .
+ Job <445490> is submitted to queue <short>.
+ Job <445491> is submitted to queue <short>.
+ Job <445492> is submitted to queue <short>.
+ ....
+
+We can monitor running jobs with 
+
+ bjobs -r
+ JOBID   USER    STAT  QUEUE      FROM_HOST   EXEC_HOST   JOB_NAME   SUBMIT_TIME 
+ 445490  tomanca RUN   short      madmax      n17         *ave-1.job May  1 11:36 
+ 445491  tomanca RUN   short      madmax      n33         *ave-2.job May  1 11:36
+ 445492  tomanca RUN   short      madmax      n01         *ave-3.job May  1 11:36
+ 445493  tomanca RUN   short      madmax      n18         *ave-4.job May  1 11:36
+ 445494  tomanca RUN   short      madmax      n21         *ave-5.job May  1 11:36
+
+or whatever your submission system offers. At the end of the run
 
 == Bead-based multi-view registration ==
 
