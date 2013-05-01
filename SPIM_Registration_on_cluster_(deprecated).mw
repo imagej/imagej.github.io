@@ -199,7 +199,9 @@ Now we must repeat the whole procedure for the other two angles (325 and 235). O
 
 On our cluster powered by the Lustre filesystem the resaving operation takes only minutes. Imagine what is happening - up to 480 processors are accessing the file system reading .czi files and immediately resaving it to that very same filesystem as tif - all at the same time. The files are 1.8GB each. Beware: this may not work at all on lesser filesystems - the Lustre is made for this.
 
-== Bead-based multi-view registration ==
+== Registration ==
+
+=== Bead-based multi-view registration ===
 
 The first real step in the SPIMage processing pipeline, after re-saving as .tif, is to register the views within each timepoint. We will use for that the bead based registration plug-in in Fiji. The principle of the plug-in are described [http://fiji.sc/SPIM_Registration_Method here] while the parameters are discussed [http://fiji.sc/SPIM_Bead_Registrationn here].
 
@@ -287,7 +289,7 @@ Some tips and tricks
 * the registration needs at least as much memory on the node to be able to simultaneously open all views (3x1.8GB here). Since our nodes have 128GB of shared memory it is not really an issue here, we can run registration using 12 cores on one machine at the same time. 
 * the crucial parameter for bead based registation is the "channel_0_threshold=0.0069"; determine it on a local workstation using Fiji GUI. Clusters typically do not have graphical interface
 
-== Time-lapse registration ==
+=== Time-lapse registration ===
 
 Once the per-time-point registration is finished it is necessary to register all the time-points in the time-series to a reference time-point (to remove potential sample drift during imaging). The parameters for time series registration are described [http://fiji.sc/SPIM_Bead_Registration#How_timelapse_registration_works here].
 
@@ -368,7 +370,9 @@ Tips and tricks
 * the xy_resolution can be set to 0 since the plugin only uses the ratio between xy and z
 * For very long time-series where the sample potentially jumps in the field of view it may be necessary to register several segments of the series separately.
 
-== Content based multiview fusion ==
+== Fusion ==
+
+=== Content based multiview fusion ===
 
 After registration we need to combine the views into a single output image. The content based fusion algorithm in Fiji solves that problem by evaluating local image entropy and weighing differentially the information in areas where several views overlap. For details see [http://fiji.sc/Multi-View_Fusion here].
 
@@ -462,7 +466,7 @@ Tips and tricks:
 
 * TBD
 
-== Multiview deconvolution ==
+=== Multiview deconvolution ===
 
 Another, more advanced, way to fuse the registered data is multiview deconvolution which will be described eloquently and in details [http://fiji.sc/Multi-View_Deconvolution here]. 
 
