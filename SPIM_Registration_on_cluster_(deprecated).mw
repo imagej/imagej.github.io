@@ -293,7 +293,80 @@ Once the per-time-point registration is finished it is necessary to register all
 
 The time-series registration is not really a cluster type of task as it is run on a single processor in a linear fashion. But since until now we have everything on the cluster filesystem it is useful to execute it here.
 
-It is a very bad idea to execute anything other then submitting jobs on a cluster head node. LSF offers a useful alternative - a special queue allowing us to connect directly to a free node of the cluster and execute commands interactively.
+It is a very bad idea to execute anything other then submitting jobs on a cluster head node. LSF offers a useful alternative - a special '''interactive''' queue allowing us to connect directly to a free node of the cluster and execute commands interactively.
+
+ bsub -q interactive -Is bash
+ Job <445547> is submitted to queue <interactive>.
+ <<Waiting for dispatch ...>>
+ <<Starting on n27>>
+
+We are now on node 27 and can use the filesystem as if we were on the head node (not every queuing system will enable this).
+
+We create a bash script '''timelapse.interactive'''
+
+<source lang="bash">
+#!/bin/bash
+xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 
+-Ddir=/projects/tomancak_lightsheet/Tassos/ -Dtimepoint=1-240 -Dangles=325,280,235
+ -- --no-splash ./time-lapse.bsh
+</source>
+
+It calls time-lapse.bsh that will run fiji with the appropriate parameters for timelapse registration plug-in
+
+<source lang="java">
+import ij.IJ;
+import java.lang.Runtime;
+
+runtime = Runtime.getRuntime();
+System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
+
+dir = System.getProperty( "dir" );
+timepoint = System.getProperty( "timepoint" );
+angles = System.getProperty( "angles" );
+
+IJ.run("Bead-based registration", "select_type_of_registration=Single-channel" + " " +
+        "select_type_of_detection=[Difference-of-Mean (Integral image based)]" + " " +
+        "spim_data_directory=" + dir + " " +
+        "pattern_of_spim=spim_TL{t}_Angle{a}.tif" + " " +
+        "timepoints_to_process=" + timepoint + " " +
+        "angles_to_process=" + angles + " " +
+        "load_segmented_beads" + " " +
+        "subpixel_localization=[3-dimensional quadratic fit (all detections)]" + " " +
+        "specify_calibration_manually xy_resolution=1.000 z_resolution=3.934431791305542" + " " +
+        "transformation_model=Affine" + " " +
+        "channel_0_radius_1=2" + " " +
+        "channel_0_radius_2=3" + " " +
+        "channel_0_threshold=0.0098" + " " +
+        "re-use_per_timepoint_registration" + " " +
+        "timelapse_registration" + " " +
+        "select_reference=[Manually (specify)]" + " " +
+        "reference_timepoint=709"
+        );
+
+/* shutdown */
+runtime.exit(0);
+</source>
+
+Executing the timelapse.interactive 
+
+ ./timelapse.interactive
+
+will start a long stream of timelapse registration output. Its a good idea to redirect it to a file like this:
+
+ ./timelapse.interactive > timelapse_reg.out
+
+We can just as well run the timelapse registration from the head node by issuing
+
+ bsub -q short -n 1 -R span[hosts=1] -o "out.%J" -e "err.%J" ./timelapse.interactive
+
+In this case the output will go into out.<job_number> file in the working directory.
+
+Tips and tricks
+
+* The crucial parameter of timelapse registration is "reference_timepoint=709". It could be either a timepoint with low registration error or a timepoint in the middle of the time series.
+* It si important to specify the z_resolution in timelapse.bsh ("specify_calibration_manually xy_resolution=1.000 z_resolution=3.934431791305542" ), otherwise the plugin will open every raw data file to read the metadata which can take quite long.
+* the xy_resolution can be set to 0 since the plugin only uses the ratio between xy and z
+* For very long time-series where the sample potentially jumps in the field of view it may be necessary to register several segments of the series separately.
 
 == Content based multiview fusion ==
 
