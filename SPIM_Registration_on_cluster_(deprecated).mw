@@ -311,7 +311,7 @@ xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64
  -- --no-splash ./time-lapse.bsh
 </source>
 
-It calls time-lapse.bsh that will run fiji with the appropriate parameters for timelapse registration plug-in
+It calls '''time-lapse.bsh''' that will run fiji with the appropriate parameters for timelapse registration plug-in
 
 <source lang="java">
 import ij.IJ;
