@@ -16,7 +16,7 @@ The Lightsheet.Z1 data are saved into the proprietary Zeiss file format '''.czi'
 
 First we have to get the data to the cluster. This is easier said then done because we are potentially talking about terabytes of data. Moving data over 10Gb Ethernet is highly recommended otherwise the data transfer will take days. 
 
-Please note that currently the Zeiss processing computer does not support data transfer while the acquisition computer is acquiring which means that you need to include the transfer time when booking the instruments. Transferring 5TB of data over shared 1Gb network connection can take days!!!
+Please note that currently the Zeiss processing computer does not support data transfer while the acquisition computer is acquiring which means that you need to include the transfer time when booking the instruments. Transferring 5TB of data over shared 1Gb network connection will take a while...
 
 === Installing Fiji on the cluster ===
 
