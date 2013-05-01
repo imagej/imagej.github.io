@@ -466,6 +466,8 @@ Tips and tricks:
 
 Another, more advanced, way to fuse the registered data is multiview deconvolution which will be described eloquently and in details [http://fiji.sc/Multi-View_Deconvolution here]. 
 
+By now you should know the drill... Create a directory jobs/deconvolution and in there bash script '''create-deconvolution-jobs'''
+
 <source lang="bash">
 #!/bin/bash
 dir="/projects/tomancak_lightsheet/Tassos"
@@ -473,7 +475,7 @@ jobs="$dir/jobs/deconvolution"
 
 mkdir -p $jobs
 
-for i in `seq 1 715`
+for i in `seq 1 240`
 do
   	job="$jobs/deconvolution-$i.job"
         echo $job
@@ -486,6 +488,8 @@ do
 done
 </source>
 
+that will generate many '''deconvolution-<number>.job''' scripts
+
 <source lang="bash">
 #!/bin/bash
 xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms100g -Xmx100g 
@@ -493,6 +497,8 @@ xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms100g -Xmx100
 -Dx=36 -Dy=168 -Dz=282 -Dw=1824 -Dh=834 -Dd=810 -- --no-splash 
 /projects/tomancak_lightsheet/Tassos/jobs/deconvolution/deconvolution.bsh
 </source>
+
+Each of these will run '''deconvolution.bsh'''
 
 <source lang="java">
 import ij.IJ;
@@ -537,7 +543,7 @@ IJ.run("Multi-view deconvolution", "spim_data_directory=" + dir + " " +
 runtime.exit(0);
 </source>
 
-
+on a cluster node when submitted by '''submit-jobs'''
 
 <source lang="bash">
 #!/bin/bash
@@ -547,5 +553,9 @@ do
   	bsub -q medium -n 12 -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
 done
 </source>
+
+Tips and tricks:
+
+* TBD
 
 == 3D rendering ==
