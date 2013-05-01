@@ -2,7 +2,7 @@ Light sheet microscopy such as SPIM produces enormous amounts of data especially
 
 We will use data derived from the [http://microscopy.zeiss.com/microscopy/en_de/products/imaging-systems/lightsheet-z-1.html Lightsheet.Z1] a commercial realisation of SPIM offered by Zeiss. The Lightsheet.Z1 data can be truly massive and cluster computing may well be the only way to deal with the data deluge coming of the microscope.
 
-Every cluster is different both in terms of the used hardware and the software running on it, particularly the scheduling system. Here we use cluster computer at the MPI-CBG that consists of '''44''' nodes each with '''12''' Intel Xeon E5-2640 processor running @ 2.50 GHz and '''128GB''' of run. The cluster has access to 200TB of data storage is provided by a dedicated Lustre Server architecture. For more info on Lustre see [http://en.wikipedia.org/wiki/Lustre_(file_system) here], suffice to say that it is optimised for high performance input/output (read/write) operations which is crucial for the SPIM data volumes.
+Every cluster is different both in terms of the used hardware and the software running on it, particularly the scheduling system. Here we use cluster computer at the MPI-CBG that consists of '''44''' nodes each with '''12''' Intel Xeon E5-2640 processor running @ 2.50 GHz and '''128GB''' of memory. The cluster nodes have access to 200TB of data storage provided by a dedicated Lustre Server architecture. For more info on Lustre see [http://en.wikipedia.org/wiki/Lustre_(file_system) here], suffice to say that it is optimised for high performance input/output (read/write) operations which is crucial for the SPIM data volumes.
 
 Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system running on the MPI-CBG cluster is '''LSF''' - [http://en.wikipedia.org/wiki/Platform_LSF Load Sharing Facility]. The basic principles of job submission are the same across queuing systems, but the exact syntax will of course differ.
 
@@ -39,7 +39,57 @@ Done, you are ready to use Fiji on the cluster.
  
 == Saving data as tif ==
 
+As a first step we will open the .czi files and save them as '''.tif'''. This is necessary because Fiji's bead based registration currently cannot open the .czi files. Opening hundreds of files several GB each sequentially and re-saving them as tif may take a long time on a single computer. We will use the cluster to speed-up that operation significantly.
 
+''Note: The Lustre filesystem on MPI-CBG cluster is made to be able to handle such situation, where hundreds of nodes are going to simultaneously read and write big files to it. If your cluster is using a Network File System (NFS) this may not be such a good idea...''
+
+We have an 240 time-point, 3 view dataset (angles 325, 235 and 190) in a directory 
+
+ cd /projects/tomancak_lightsheet/Tassos/
+
+we create a subdirectory '''jobs/resaving''' and change to it
+
+ mkdir jobs/resaving
+ cd jobs/resaving
+
+Now we create a bash script '''create-resaving-jobs''' that will generate the so called job files that will be submitted to the cluster nodes (I use nano but any editor will do)
+
+<source lang="bash">
+#!/bin/bash
+dir="/projects/tomancak_lightsheet/Tassos/"
+jobs="$dir/jobs/resaving"
+
+mkdir -p $jobs
+
+for i in `seq 1 240`
+do
+  	job="$jobs/resave-$i.job"
+        echo $job
+        echo "#!/bin/bash" > "$job"
+        echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=$dir //
+-Dtimepoint=$i -Dangle=190 -- --no-splash ${jobs}/resaving.bsh" >> "$job"
+        chmod a+x "$job"
+done
+</source>
+
+This will generate 240 '''resave-<number>.job''' files in the current directory
+
+ /projects/tomancak_lightsheet/Tassos//jobs/resaving/resave-1.job
+ /projects/tomancak_lightsheet/Tassos//jobs/resaving/resave-2.job
+ /projects/tomancak_lightsheet/Tassos//jobs/resaving/resave-3.job
+ /projects/tomancak_lightsheet/Tassos//jobs/resaving/resave-4.job
+ /projects/tomancak_lightsheet/Tassos//jobs/resaving/resave-5.job
+ ...
+ /projects/tomancak_lightsheet/Tassos//jobs/resaving/resave-240.job
+
+each one of those files looks like this
+
+<source lang="bash">
+#!/bin/bash
+xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 //
+-Ddir=/projects/tomancak_lightsheet/Tassos/ //
+-Dtimepoint=38 -Dangle=190 -- --no-splash // /projects/tomancak_lightsheet/Tassos//jobs/resaving/resaving.bsh
+</source>
 
 == Bead-based multi-view registration ==
 
