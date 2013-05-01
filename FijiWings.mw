@@ -18,7 +18,7 @@ To help you to get started with using this plugin, there is an explanatory scree
 
 === Introduction ===
 
-This plugin is designed to allow easy semi-automatic tracing of wing veins and determination of trichome number and density.  The plugin has built-in tools for analysis an.  The native file format is open and XML-based.  This plugin is Free Software (also known as Open Source software) -and is supplied as a packaged version of Fiji, here <http://sourceforge.net/projects/fijiwings>.
+This set of macros control plugin to perform semi-automatic tracing of insect wing veins and determination of trichome number and density.   The native file format is open and XML-based.  This plugin is Free Software (also known as Open Source software) and is supplied as a packaged version of Fiji, here <http://sourceforge.net/projects/fijiwings>.
 
 === Licensing ===
 
