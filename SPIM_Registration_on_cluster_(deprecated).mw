@@ -1,11 +1,42 @@
 Light sheet microscopy such as SPIM produces enormous amounts of data especially when used in long-term time-lapse mode. In order to view and in some cases analyze the data it is necessary to process them which involves registration of the views within time-points, correction of sample drift across the time-lapse registration, fusion of data into single 3d image per time-point which may require multiview deconvolution and 3d rendering of the fused volumes. Here we describe how to perform such processing in parallel on a cluster computer.
 
-We will use data derived from the Lightsheet.Z1 a commercial realisation of SPIM offered by Zeiss. The Lightsheet.Z1 data can be truly massive and cluster computing may well be the only way to deal with the data deluge coming of the microscope.
+We will use data derived from the [http://microscopy.zeiss.com/microscopy/en_de/products/imaging-systems/lightsheet-z-1.html Lightsheet.Z1] a commercial realisation of SPIM offered by Zeiss. The Lightsheet.Z1 data can be truly massive and cluster computing may well be the only way to deal with the data deluge coming of the microscope.
 
-Every cluster is different both in terms of the used hardware and the software running on it, particularly the scheduling system. Here we use cluster computer at the MPI-CBG that consists of 44 nodes each with 12 Intel Xeon E5-2640 processor running @ 2.50 GHz and 128GB of run. The cluster has access to 200TB of data storage is provided by a dedicated Lustre Server architecture. For more info on Lustre see [http://en.wikipedia.org/wiki/Lustre_(file_system) here], suffice to say that it is optimised for high performance input/output (read/write) operations which is crucial for the SPIM data volumes.
+Every cluster is different both in terms of the used hardware and the software running on it, particularly the scheduling system. Here we use cluster computer at the MPI-CBG that consists of '''44''' nodes each with '''12''' Intel Xeon E5-2640 processor running @ 2.50 GHz and '''128GB''' of run. The cluster has access to 200TB of data storage is provided by a dedicated Lustre Server architecture. For more info on Lustre see [http://en.wikipedia.org/wiki/Lustre_(file_system) here], suffice to say that it is optimised for high performance input/output (read/write) operations which is crucial for the SPIM data volumes.
 
-Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system running on the MPI-CBG cluster is LSF - Load Sharing Facility. The basic principles of job submission are the same across queuing systems, but the exact syntax will of course differ.
+Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system running on the MPI-CBG cluster is '''LSF''' - [http://en.wikipedia.org/wiki/Platform_LSF Load Sharing Facility]. The basic principles of job submission are the same across queuing systems, but the exact syntax will of course differ.
 
+== Pre-requisites ==
+
+=== Saving data on Lighsheet.Z1 ===
+
+The Lightsheet.Z1 data are saved into the proprietary Zeiss file format '''.czi'''. Zeiss is working with [http://loci.wisc.edu/software/bio-formats Bioformats] to make the .czi files compatible with Open Source platforms including Fiji. At the moment Fiji can only open .czi files that are saved as a single file per view where the left and right illumination images have been fused into one image inside the Zeiss ZEN software. This situation is going to change, for now if you want to process the data with Fiji, save them in that way (TBD).
+
+=== Transferring data ===
+
+First we have to get the data to the cluster. This is easier said then done because we are potentially talking about terabytes of data. Moving data over 10Gb Ethernet is highly recommended otherwise the data transfer will take days. 
+
+Please note that currently the Zeiss processing computer does not support data transfer while the acquisition computer is acquiring which means that you need to include the transfer time when booking the instruments. Transferring 5TB of data over shared 1Gb network connection can take days!!!
+
+=== Installing Fiji on the cluster ===
+
+Change to a directory where you have sufficient privileges to install software.
+
+ cd /sw/users/tomancak/packages
+
+Download Fiji nightly build from [http://fiji.sc/Downloads Fiji's download page]. In all likelihood you will need the Linux (64 bit) version (unless you are of course using some sort of Windows/Mac cluster). Unzip and unpack the tarball
+
+ gunzip fiji-linux64.tar.gz
+ tar -xvf fiji-linux64.tar
+
+Change to the newly created Fiji-app directory and [http://fiji.sc/Update_Fiji#Command-line_usage update] Fiji from the command line  
+
+  ./ImageJ-linux64 --update update
+
+''Note: The output that follows may have some warnings and errors, but as long as it says somewhere Done: Checksummer and Done: Downloading... everything should be fine.''
+
+Done, you are ready to use Fiji on the cluster.
+ 
 == Saving data as tif ==
 
 
