@@ -608,7 +608,8 @@ run("Image Sequence...", "open=[/projects/tomancak_lightsheet/Tassos/output/" + 
 rename("output");
 setMinAndMax(65, 5300);
 run("8-bit");
-
+run("Add...", "value=1 stack");   // because 3d viewer will re-scale the bounding box with 0 in the background
+ 
 run("3D Viewer");
 call("ij3d.ImageJ3DViewer.setCoordinateSystem", "false");
 
