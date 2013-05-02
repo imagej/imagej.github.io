@@ -569,4 +569,91 @@ Tips and tricks:
 
 == 3D rendering ==
 
+Finally we want generate a beautiful 3d rendering of the downsampled, fused data and run it as movies at conferences... ;-).
+
+
+We start by creating our old friend, the '''create-render-job''' bash script
+
+<source lang="bash">
+#!/bin/bash
+dir="/projects/tomancak_lightsheet/Tassos/"
+jobs="$dir/jobs"
+
+mkdir -p $jobs
+
+for i in `seq 1 241`
+do
+  	job="$jobs/3d_rendering/render-$i.job"
+        echo $job
+        echo "#!/bin/bash" > "$job"
+        echo "xvfb-run -as\"-screen 0 1280x1024x24\" 
+/sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms10g -Xmx10g -macro /projects/tomancak_lightsheet/Tassos/jobs/3d_rendering/render.ijm $i" >> "$job"
+        chmod a+x "$job"
+done
+</source>
+
+who will create '''render-<number>.job'''
+
+<source lang="bash">
+#!/bin/bash
+xvfb-run -as"-screen 0 1280x1024x24" /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms10g -Xmx10g -macro /projects/tomancak_lightsheet/Tassos/jobs/3d_rendering/render.ijm 1
+</source>
+
+This script is in this case running an ImageJ macro '''render.ijm'''
+
+<source lang="bash">
+timepoint = getArgument;
+
+run("Image Sequence...", "open=[/projects/tomancak_lightsheet/Tassos/output/" + timepoint + "/] number=467 starting=1 increment=1 scale=100 file=[.tif] or=[] sort");
+rename("output");
+setMinAndMax(65, 5300);
+run("8-bit");
+
+run("3D Viewer");
+call("ij3d.ImageJ3DViewer.setCoordinateSystem", "false");
+
+call("ij3d.ImageJ3DViewer.add", "output", "None", "output", "0", "true", "true", "true", "1", "0");
+call("ij3d.ImageJ3DViewer.select", "output");
+wait( 1000 );
+
+call("ij3d.ImageJ3DViewer.setTransform", "1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 -400.0 0.0 0.0 0.0 1.0 ");
+
+call("ij3d.ImageJ3DViewer.setThreshold", "30");
+call("ij3d.ImageJ3DViewer.setTransparency", "0.35");
+
+wait( 1000 );
+call("ij3d.ImageJ3DViewer.select", "Dummy");
+wait( 1000 );
+call("ij3d.ImageJ3DViewer.snapshot", "968", "934");
+wait( 1000 );
+call("ij3d.ImageJ3DViewer.select", "output");
+wait( 1000 );
+call("ij3d.ImageJ3DViewer.delete");
+
+selectWindow("Snapshot");
+saveAs("Tiff", "/projects/tomancak_lightsheet/Tassos/rendering/render_tp" + timepoint + "_Angle0.tif");
+call("java.lang.System.exit", 0);
+</source>
+
+We submit is as usual using '''./submit-jobs .'''
+
+<source lang="bash">
+#!/bin/bash
+
+for file in `ls ${1} | grep ".job$"`
+do
+  	bsub -q short -n 1 -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+done
+</source>
+
+Tips and tricks
+
+* This approach to making 3d rendering movies is clearly a hack.
+* We are using an interplay of Fiji basic functions to pre-process the image by rotating it to the desired position and then calling 3dVIewer to render it at that position while zooming in a bit.
+* You can use the TransformJ commands to rotate your fused stack to the orientation you like, possibly crop it if its too big and then open it in 3dViewer.
+* You have to master the intricacies of ImageJ macro language to achieve that (like calling windows by name, closing unused windows etc.). Whoever wants to rewrite it into a real script is VERY welcome.
+* Even better would be to pass the transformation matrix to the 3dViewer, but it proved unreliable. 
+* The key to making it work on a cluster is to provide specific parameters about screen size to the xvfb-run script. Otherwise it doesn't work. Thanks to Stephan Saalfeld for figuring it out.
+* The cluster makes it fairly easy to experiment with parameters and angles of view - on a single computer the same task would take days and since we are using ImageJ macro you would not be able to touch the computer.
+
 [[Category:Registration|SPIM Registration]]
