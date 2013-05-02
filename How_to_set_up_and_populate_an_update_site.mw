@@ -89,7 +89,7 @@ All you need to do is enter the appropriate information:
 ; Name:
 : a nickname for your update site, e.g. ''Johannes Dropbox''.
 ; URL:
-: the public URL of the ''Public/'' folder of your Dropbox account. Simple right-click on the ''How to use the Public folder.rtf'' file after loggin into your Dropbox account, select ''Copy public link'' and remove the file name from the URL. Example: http://dl.dropbox.com/u/41712216/
+: the public URL of the ''Public/'' folder of your Dropbox account. Simple right-click on the ''How to use the Public folder.rtf'' file after loggin into your Dropbox account, select ''Copy public link'' and remove the file name from the URL. Example: https://www.dropbox.com/sh/la8g3k4uzhg53kz/UZUKTY-CX4/
 ; SSH host:
 : we will pretend that the server is local, so put in ''file:localhost''.
 ; Upload directory:
