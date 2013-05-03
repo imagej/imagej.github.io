@@ -1,7 +1,4 @@
-<div style="background:#fdd; padding: 10px 10px 0 10px; border: 1px solid black;">
-'''DEPRECATION NOTICE:''' 
-This page describes ImgLib1, the previous incarnation of the [[ImgLib2]] library. We encourage developers to use ImgLib2 instead, and [[How To Migrate Code From ImgLib To ImgLib2|migrate existing ImgLib1 programs to ImgLib2]] whenever possible.
-</div>
+{{ImgLib1_Deprecation_Notice}}
 
 
 The [[Imglib]] library makes extensive use of [http://en.wikipedia.org/wiki/Generics_in_Java Java generics]. Generics appeared in Java from version 1.5, and they introduce new semantic items that can be puzzling if you never used them before. The programming techniques associated are quite new to the ImageJ world, and using Imglib inside your plugins will change their typical layout.
