@@ -215,9 +215,9 @@ On our cluster powered by the Lustre filesystem the resaving operation takes onl
 
 === Bead-based multi-view registration ===
 
-The first real step in the SPIMage processing pipeline, after re-saving as .tif, is to register the views within each timepoint. We will use for that the bead based registration plug-in in Fiji. The principle of the plug-in are described [http://fiji.sc/SPIM_Registration_Method here] while the parameters are discussed [http://fiji.sc/SPIM_Bead_Registrationn here].
+The first real step in the SPIMage processing pipeline, after re-saving as .tif, is to register the views within each timepoint. We will use for that the bead based registration plug-in in Fiji. The principle of the plug-in are described [[SPIM_Registration_Method|here]] while the parameters are discussed [[SPIM_Bead_Registration|here]].
 
-This description focuses on cluster processing and is less verbose, for details see section on resaving as the principles are the same.
+This description focuses on cluster processing and is less verbose, for details see section on [[SPIM_Registration_on_cluster#Saving_data_as_tif|resaving]] as the principles are the same.
 
 In a directory jobs/registration create bash script '''create-registration-jobs'''
 
