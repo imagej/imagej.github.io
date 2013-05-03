@@ -2,11 +2,11 @@
 
 The [[ImgLib2]] library uses [http://maven.apache.org/ Maven] to manage project dependencies. One advantage of this approach is nice integration with various development environments (IDEs).
 
-Because people tend to have differing IDE configurations, we do not put project metadata files (e.g., .classpath, .project and .settings for Eclipse) into the git repository. Instead, the IDE can use Maven's pom.xml file directly to manage your dependencies in a better way.
+Because people tend to have differing IDE configurations, we do not put project metadata files (e.g., <code>.classpath</code>, <code>.project</code> and <code>.settings</code> for Eclipse) into the git repository. Instead, the IDE can use Maven's <code>pom.xml</code> file directly to manage your dependencies in a better way.
 
 == Getting the code ==
 
-You can clone the ImgLib2 code using git with the URL: '''git://github.com/imagej/imglib'''
+You can clone the ImgLib2 code using Git with the URL: '''git://github.com/imagej/imglib'''
 
 Alternately, you can [[Downloading and Building Fiji From Source#Submodules|use ImgLib2 as a submodule of Fiji]].
 
