@@ -1,3 +1,9 @@
+<div style="background:#fdd; padding: 10px 10px 0 10px; border: 1px solid black;">
+'''DEPRECATION NOTICE:''' 
+This page describes ImgLib1, the previous incarnation of the [[ImgLib2]] library. We encourage developers to use ImgLib2 instead, and [[How To Migrate Code From ImgLib To ImgLib2|migrate existing ImgLib1 programs to ImgLib2]] whenever possible.
+</div>
+
+
 The [[Imglib]] library makes extensive use of [http://en.wikipedia.org/wiki/Generics_in_Java Java generics]. Generics appeared in Java from version 1.5, and they introduce new semantic items that can be puzzling if you never used them before. The programming techniques associated are quite new to the ImageJ world, and using Imglib inside your plugins will change their typical layout.
 
 This short page does not aim at being an introduction on generics, but rather is a quick and dirty introduction on how to tune your java files to use Imglib. The deep meaning of semantics is skipped, and we will try to provide a quick template to start with. However, we will attempt to be quite pedestrian when ImageJ itself is involved, and try to display the code and the commands needed to generate a plugin from scratch.  
