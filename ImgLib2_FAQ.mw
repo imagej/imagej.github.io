@@ -12,6 +12,11 @@ There is some [[How To Migrate Code From ImgLib To ImgLib2|rudimentary documenta
 
 = ImgLib1 (deprecated) =
 
+<div style="background:#fdd; padding: 10px 10px 0 10px; border: 1px solid black;">
+'''DEPRECATION NOTICE:''' 
+This section describes ImgLib1, the previous incarnation of the [[ImgLib2]] library. We encourage developers to use ImgLib2 instead, and [[How To Migrate Code From ImgLib To ImgLib2|migrate existing ImgLib1 programs to ImgLib2]] whenever possible.
+</div>
+
 == How to create a new Image from scratch? ==
 
 There are three parts to it: the data type, the dimension and the storage strategy. Example: If you already have an image ''first'' whose dimensions you want to copy, and the result should be of float type and be stored in a single large array, you can use this snippet of code:
