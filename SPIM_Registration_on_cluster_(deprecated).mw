@@ -481,7 +481,7 @@ Tips and tricks:
 * It is not necessary or even possible to 3D render the full resolution data. Thus we use the "downsample_output=4" option to make it 4 times smaller.
 * The downsampling also reduces the storage requirements for the fused data which can be unrealistic for full resolution data (tens of terabytes).
 * The fusion code is multi-threaded, therefore we request 12 processors on one host "bsub -n 12 -R span[hosts=1]" and request as much memory as possible "fiji-linux64 -Xms100g -Xmx100g". Requesting 12 hosts guarantees all the memory on a single node is available for the job (128GB). It may be difficult to get that when others are running small, single processor jobs on the cluster.
-* The integral image mediates weightening is much faster than the traditional gauss method, for large images it may be the only option as one can also run out of 128GB of RAM with this data.
+* The integral image mediated weightening is much faster than the traditional gauss method, for large images it may be the only option as one can also run out of 128GB of RAM with this data.
 
 === Multiview deconvolution ===
 
