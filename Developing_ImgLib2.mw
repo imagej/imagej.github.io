@@ -1,52 +1,52 @@
 == Introduction ==
 
-The [[Imglib]] library uses [http://maven.apache.org/ Maven] to manage project dependencies. One advantage of this approach is nice integration with various development environments (IDEs).
+The [[ImgLib2]] library uses [http://maven.apache.org/ Maven] to manage project dependencies. One advantage of this approach is nice integration with various development environments (IDEs).
 
 Because people tend to have differing IDE configurations, we do not put project metadata files (e.g., .classpath, .project and .settings for Eclipse) into the git repository. Instead, the IDE can use Maven's pom.xml file directly to manage your dependencies in a better way.
 
 == Getting the code ==
 
-You can clone the imglib code using git with the URL: '''git://fiji.sc/imglib.git'''
+You can clone the ImgLib2 code using git with the URL: '''git://github.com/imagej/imglib'''
 
-Alternately, you can [[Downloading and Building Fiji From Source#Submodules|use imglib as a submodule of Fiji]].
+Alternately, you can [[Downloading and Building Fiji From Source#Submodules|use ImgLib2 as a submodule of Fiji]].
 
 
-== Developing Imglib with Eclipse ==
+== Developing ImgLib2 with Eclipse ==
 
-To develop imglib in Eclipse, follow these steps:
+To develop ImgLib2 in Eclipse, follow these steps:
 
 # [[Using Maven with Eclipse|Install the Maven plugin]]
 # Choose File > Import from the Eclipse menu
 # Select "Existing Maven Projects" and click Next
-# For the Root Directory, specify the path where you cloned imglib
-# From the projects list, check all '''except the top-level parent project'''
+# For the Root Directory, specify the path where you cloned ImgLib2
+# From the projects list, leave all items checked
 # Click Finish
 
-For fresh installs, it will initially take some time (a few minutes) for Maven to download all the dependencies for both its own plugins, and for imglib. This is a one-time cost. After that, Maven will check for module updates once a day, which is generally fast.
+For fresh installs, it will initially take some time (a few minutes) for Maven to download all the dependencies for both its own plugins, and for ImgLib2. This is a one-time cost. After that, Maven will check for module updates once a day, which is generally fast.
 
-Once you have the imglib projects within Eclipse, you can reap the benefits of the improved dependency management. For example, if you have the imglib and imglib-algorithms projects open, the imglib-algorithms project will have an Eclipse project build dependency on imglib. If you then close the imglib project, the dependency within imglib-algorithms with automatically become a library dependency to imglib-2.0-SNAPSHOT.jar, rather than the project.
+Once you have the ImgLib2 projects within Eclipse, you can reap the benefits of the improved dependency management. For example, if you have the <code>imglib2</code> and <code>imglib2-algorithms</code> projects open, the <code>imglib2-algorithms</code> project will have an Eclipse project build dependency on <code>imglib2</code>. If you then close the <code>imglib2</code> project, the dependency within <code>imglib2-algorithms</code> with automatically become a library dependency to <code>imglib2-2.0-SNAPSHOT.jar</code>, rather than the project.
 
 
-== Developing Imglib with IDEA ==
+== Developing ImgLib2 with IDEA ==
 
 IntelliJ IDEA comes with built-in support for Maven.
 
-More instructions coming soon (see also [http://imagejdev.org/idea Developing ImageJ with IDEA]).
+More instructions coming soon (see also [http://developer.imagej.net/idea Developing ImageJ with IDEA]).
 
 
-== Developing Imglib with NetBeans ==
+== Developing ImgLib2 with NetBeans ==
 
 NetBeans comes with built-in support for Maven.
 
-More instructions coming soon (see also [http://imagejdev.org/netbeans Developing ImageJ with NetBeans]).
+More instructions coming soon (see also [http://developer.imagej.net/netbeans Developing ImageJ with NetBeans]).
 
-== Developing Imglib with command line tools ==
+== Developing ImgLib2 with command line tools ==
 
-You can use the mvn command line tool to build imglib. Just type "mvn" from any of the sub-project directories, or from the parent directory to build all four modules. By default, Maven will compile the code, run unit tests, create JAR files and install them in your local Maven repository (typically found in ~/.m2/repository). Maven does its work in a subfolder called "target" which is where you'll find compiled classes and JAR artifacts.
+You can use the mvn command line tool to build ImgLib2. Just type "mvn" from any of the sub-project directories, or from the parent directory to build all four modules. By default, Maven will compile the code, run unit tests, create JAR files and install them in your local Maven repository (typically found in <code>~/.m2/repository</code>). Maven does its work in a subfolder called <code>target</code> which is where you'll find compiled classes and JAR artifacts.
 
 For more on using the Maven command line tool, see [http://maven.apache.org/run-maven/index.html Building a Project with Maven] on the Maven web site.
 
-Alternately, if you have imglib checked out as a Fiji submodule, you can build it using the [[Fiji Build System]].
+Alternately, if you have ImgLib2 checked out as a Fiji submodule, you can build it using the [[Fiji Build System]].
 
 [[Category:ImgLib]]
 [[Category:Tutorials]]
