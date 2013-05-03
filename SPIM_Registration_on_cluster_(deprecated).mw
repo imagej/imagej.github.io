@@ -213,6 +213,8 @@ On our cluster powered by the Lustre filesystem the resaving operation takes onl
 
 == Registration ==
 
+SPIM registration consists of '''within time-point''' registration of the views followed by '''across time-point''' registration of the time-series. Both are achieved using Fiji's bead based SPIM registration plugin. The per-time-point registration is a pre-requisite for time-lapse registration. For detailed overview see [[SPIM_Registration|here]].
+
 === Bead-based multi-view registration ===
 
 The first real step in the SPIMage processing pipeline, after re-saving as .tif, is to register the views within each timepoint. We will use for that the bead based registration plug-in in Fiji. The principle of the plug-in are described [[SPIM_Registration_Method|here]] while the parameters are discussed [[SPIM_Bead_Registration|here]].
