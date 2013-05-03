@@ -487,7 +487,7 @@ Tips and tricks:
 
 Another, more advanced, way to fuse the registered data is multiview deconvolution which will be described eloquently and in details [http://fiji.sc/Multi-View_Deconvolution here]. 
 
-By now you should know the drill... Create a directory jobs/deconvolution and in there bash script '''create-deconvolution-jobs'''
+By now you should know the drill... Create a directory jobs/deconvolution and in there a bash script '''create-deconvolution-jobs'''
 
 <source lang="bash">
 #!/bin/bash
