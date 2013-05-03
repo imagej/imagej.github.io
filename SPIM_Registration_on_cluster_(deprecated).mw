@@ -112,7 +112,7 @@ xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64
  /projects/tomancak_lightsheet/Tassos/jobs/resaving/resaving.bsh
 </source>
 
-running this job a any cluster node will launch fiji in a so-called virtual frame buffer (the nodes don't have graphics capabilities but we can simulate that) and then inside Fiji it will launch a '''Beanshell script''' called '''resaving.bsh''' passing it thee parameters : the directory (/projects/tomancak_lightsheet/Tassos), the time-point (38) and the angle (280).
+running this job a any cluster node will launch fiji in a so-called virtual frame buffer (the nodes don't have graphics capabilities enabled but we can simulate that) and then inside Fiji it will launch a '''Beanshell script''' called '''resaving.bsh''' passing it thee parameters : the directory (/projects/tomancak_lightsheet/Tassos), the time-point (38) and the angle (280).
 
 Lets create that script in the current directory
 
