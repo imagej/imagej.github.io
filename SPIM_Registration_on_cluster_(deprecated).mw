@@ -22,7 +22,7 @@ Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system
 
 === Saving data on Lighsheet.Z1 ===
 
-The Lightsheet.Z1 data are saved into the proprietary Zeiss file format '''.czi'''. Zeiss is working with [http://loci.wisc.edu/software/bio-formats Bioformats] to make the .czi files compatible with Open Source platforms including Fiji. At the moment Fiji can only open .czi files that are saved as a single file per view where the left and right illumination images have been fused into one image inside the Zeiss ZEN software. This situation is going to change, for now if you want to process the data with Fiji, save them in that way (TBD).
+The Lightsheet.Z1 data are saved into the proprietary Zeiss file format '''.czi'''. Zeiss is working with [http://loci.wisc.edu/software/bio-formats Bioformats] to make the .czi files compatible with Open Source platforms including Fiji. At the moment Fiji can only open .czi files that are saved as a single file per view where the left and right illumination images have been fused into one image inside the Zeiss ZEN software. This situation is going to change, for now, if you want to process the data with Fiji, save them in that way (TBD).
 
 === Transferring data ===
 
