@@ -299,7 +299,7 @@ Some tips and tricks
 
 * the bead based registration code is '''NOT''' multi-threaded, thus 1 processor is sufficient (bsub -n 1)
 * the registration needs at least as much memory on the node to be able to simultaneously open all views (3x1.8GB here). Since our nodes have 128GB of shared memory it is not really an issue here, we can run registration using 12 cores on one machine at the same time. 
-* the crucial parameter for bead based registation is the "channel_0_threshold=0.0069"; determine it on a local workstation using Fiji GUI. Clusters typically do not have graphical interface
+* the crucial parameter for bead based registation is the "channel_0_threshold=0.0069"; determine it on a local workstation using Fiji GUI. Clusters typically do not have graphical interface.
 
 === Time-lapse registration ===
 
