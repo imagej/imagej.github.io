@@ -49,4 +49,4 @@ Multi-view SPIM datasets are typically rather large, therefore it is recommended
 
 == Cluster processing ==
 
-See dedicated [http://fiji.sc/SPIM_Registration_on_cluster page] describing how to process SPIM data from Lighsheet.Z1 on the MPI-CBG cluster.
+See dedicated [[SPIM_Registration_on_cluster|page]] describing how to process SPIM data from Lighsheet.Z1 on the MPI-CBG cluster.
