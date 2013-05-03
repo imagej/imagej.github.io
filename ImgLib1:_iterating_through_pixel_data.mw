@@ -1,8 +1,12 @@
+<div style="background:#fdd; padding: 10px 10px 0 10px; border: 1px solid black;">
+'''DEPRECATION NOTICE:''' 
+This page describes ImgLib1, the previous incarnation of the [[ImgLib2]] library. We encourage developers to use ImgLib2 instead, and [[How To Migrate Code From ImgLib To ImgLib2|migrate existing ImgLib1 programs to ImgLib2]] whenever possible.
+</div>
+
+
 The architecture of [[Imglib]] aims at completely separating the image - which can be seen as a data container - from the concrete basic data type it encapsulates. In practice, this means that you can write "blind" algorithms, which can safely ignore whether they operate on a <code>uint8</code> image, a RGB image or a <code>uint16</code> stack of 15 slices.
 
 This in turn imposes a certain gymnastic when accessing the underlying data is involved. Here, we will make a brief introduction on how to do this with Imglib. We assume you want to use Imglib in a Java plugin, and that you are already familiar with Java itself.
-
-
 
 == The <tt>Image</tt> objects ==
 
