@@ -72,7 +72,7 @@ we create a subdirectory '''jobs/resaving''' and change to it
  mkdir jobs/resaving
  cd jobs/resaving
 
-Now we create a bash script '''create-resaving-jobs''' that will generate the so called job files that will be submitted to the cluster nodes (I use nano but any editor will do)
+Now we create a bash script '''create-resaving-jobs''' that will generate the so called job files that will be submitted to the cluster nodes (I use ''nano'' but any editor will do)
 
 <source lang="bash">
 #!/bin/bash
