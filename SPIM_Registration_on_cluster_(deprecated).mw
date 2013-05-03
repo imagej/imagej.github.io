@@ -379,7 +379,7 @@ Tips and tricks
 
 * The crucial parameter of timelapse registration is "reference_timepoint=709". It could be either a timepoint with low registration error or a timepoint in the middle of the time series.
 * It si important to specify the z_resolution in timelapse.bsh ("specify_calibration_manually xy_resolution=1.000 z_resolution=3.934431791305542" ), otherwise the plugin will open every raw data file to read the metadata which can take quite long.
-* the xy_resolution can be set to 0 since the plugin only uses the ratio between xy and z
+* the xy_resolution can be set to 1 since the plugin only uses the ratio between xy and z
 * For very long time-series where the sample potentially jumps in the field of view it may be necessary to register several segments of the series separately.
 
 == Fusion ==
