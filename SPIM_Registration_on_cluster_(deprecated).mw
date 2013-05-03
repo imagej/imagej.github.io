@@ -386,6 +386,8 @@ Tips and tricks
 
 == Fusion ==
 
+In multi-view SPIM imaging fusion means combination of registered views into a single output image. Fiji currently implements two distinct fusion strategies: content based fusion and multi-view deconvolution. For detailed overview see [[SPIM_Registration|SPIM registration]] page.
+
 === Content based multiview fusion ===
 
 After registration we need to combine the views into a single output image. The content based fusion algorithm in Fiji solves that problem by evaluating local image entropy and weighing differentially the information in areas where several views overlap. For details see [http://fiji.sc/Multi-View_Fusion here].
