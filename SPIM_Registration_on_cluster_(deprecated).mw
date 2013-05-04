@@ -585,13 +585,13 @@ Tips and tricks:
 
 == 3D rendering ==
 
-Finally we want generate a beautiful 3d rendering of the downsampled, fused data and run it as movies at conferences... ;-).
+Finally we want generate a beautiful 3D rendering of the downsampled, fused data and run it as movies at conferences... ;-).
 
 The preparation phase of 3D rendering is a bit more complicated. We will use the [[Interactive_Stack_Rotation|interactive Stack Rotation]] plugin to position the specimen the way we want to render it and then send it to [[3D_Viewer|3DViewer]] plugin. Here is the recipe:
 
-1. Open fused image stack and launch Interactive Stack Rotation plugin (Plugins->Transform->Interactive Stack Rotation).
+1. Open fused image stack and launch Interactive Stack Rotation plugin (Plugins->Transform->Interactive Stack Rotation). ''Note: Familiarize yourself with the keystrokes that navigate the Interactive Stack Rotation. This is an extremely powerful way of looking at nearly isotropic 3D data coming from SPIM. More advanced version honoring these keystroke conventions is coming to Fiji soon (by Tobias Pietzsch).'' 
 
-2. Use the key commands to rotate the specimen into the position from which you want to 3d render it. ''Note that the top slice with the lower z-index will be facing towards you when rendering in 3d Viewer.''
+2. Use the key commands to rotate the specimen into the position from which you want to 3D render it. ''Note that the top slice with the lower z-index will be facing towards you when rendering in 3d Viewer.''
 
 3. Record the transform by pressing letter '''E''' on the keyboard. The transformation matrix will appear in the Fiji log window.
 
@@ -818,12 +818,14 @@ done
 
 Tips and tricks
 
-* This approach to making 3d rendering movies is clearly a hack.
-* We are using an interplay of Fiji basic functions to pre-process the image by rotating it to the desired position and then calling 3dVIewer to render it at that position while zooming in a bit.
-* You can use the TransformJ commands to rotate your fused stack to the orientation you like, possibly crop it if its too big and then open it in 3dViewer.
-* You have to master the intricacies of ImageJ macro language to achieve that (like calling windows by name, closing unused windows etc.). Whoever wants to rewrite it into a real script is VERY welcome.
-* Even better would be to pass the transformation matrix to the 3dViewer, but it proved unreliable. 
-* The key to making it work on a cluster is to provide specific parameters about screen size to the xvfb-run script. Otherwise it doesn't work. Thanks to Stephan Saalfeld for figuring it out.
-* The cluster makes it fairly easy to experiment with parameters and angles of view - on a single computer the same task would take days and since we are using ImageJ macro you would not be able to touch the computer.
+* This approach to making 3d rendering movies is still a hack, although its better than pure macro and TransformJ. We are working on a better solution.
+* We are using an interplay of Interactive Stack Rotation to pre-process the image by rotating it to the desired position and then calling 3dVIewer to render it at that position while zooming in a bit.
+* You can also use the TransformJ commands to rotate your fused stack to the orientation you like, possibly crop it if its too big and then open it in 3dViewer. Recording this as a macro and making it work (ala Stephan Preibisch) is possible, but it is incredibly laborious and nerve wracking.
+* Whoever wants to rewrite the macro parts of '''render.bsh''' into a real script is VERY welcome.
+* Even better would be, obviously, to pass the transformation matrix to the 3dViewer, but it proved unreliable. 
+* The key to making it work on a cluster is to provide specific parameters about screen size to the '''xvfb-run''' script (-as\"-screen 0 1280x1024x24\"). Otherwise it doesn't work. Thanks to Stephan Saalfeld for figuring it out.
+* The cluster makes it fairly easy to experiment with parameters and angles of view - on a single computer the same task would take days and since we are using ImageJ macro you would not be able to touch the computer. MPI-CBG cluster renders 800+ timepoints in half an hour even under full load from other users.
+
+The 3D rendering is relatively complex (we are working on a simpler solution) but extremely rewarding. ''Drosophila'' embryogenesis movie coming here soon.
 
 [[Category:Registration|SPIM Registration]]
