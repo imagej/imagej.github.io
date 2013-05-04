@@ -26,7 +26,15 @@ This plugin is free software, licensed under the GNU GPL v3 so please do contrib
 
 === Installation ===
 
-FijiWings is distributed as packaged version of Fiji - to install it, please <http://sourceforge.net/projects/fijiwings> and unzip and place in Applications folder (ensure another copy of Fiji is not in the folder).  Also download the file "data.arff" and place in the package contents of FujiWings (control click>package contents) in the plugins>ActionBar folder.
+FijiWings is distributed in two ways:
+
+(1) Simple: as packaged version of Fiji - to install it, please <http://sourceforge.net/projects/fijiwings> and unzip and place in Applications folder (ensure another copy of Fiji is not in the folder).  Also download the file "data.arff" and place in the package contents of FujiWings (control click>package contents) in the plugins>ActionBar folder.
+
+(2) To put FijiWings in your copy of Fiji as a custom ActionBar, install the plug-ins ActionBar (http://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:action_bar:start) and install ROI color coder (http://imagejdocu.tudor.lu/doku.php?id=macro:roi_color_coder) then move the following three files into "Fiji/plugins/ActionBar/":
+(a) FijiWings_1.5.txt
+(b) Stepwise_segmentation.txt
+(c) data.arff
+(these files will be uploaded to Source Forge shortly)
 
 === Feedback ===
 
