@@ -587,11 +587,31 @@ Tips and tricks:
 
 Finally we want generate a beautiful 3d rendering of the downsampled, fused data and run it as movies at conferences... ;-).
 
-The preparation phase of 3D rendering is a bit more complicated. We will use the [[Interactive_Stack_Rotation|interactive Stack Rotation]] plugin to position the specimen the way we want to render it and then send it to [[3D_Viewer|3DViewer]] plugin.
+The preparation phase of 3D rendering is a bit more complicated. We will use the [[Interactive_Stack_Rotation|interactive Stack Rotation]] plugin to position the specimen the way we want to render it and then send it to [[3D_Viewer|3DViewer]] plugin. Here is the recipe:
 
+1. Open fused image stack and launch Interactive Stack Rotation plugin (Plugins->Transform->Interactive Stack Rotation).
 
+2. Use the key commands to rotate the specimen into the position from which you want to 3d render it. ''Note that the top slice with the lower z-index will be facing towards you when rendering in 3d Viewer.''
 
-We cluster processing by creating our old friend, the '''create-render-job''' bash script
+3. Record the transform by pressing letter '''E''' on the keyboard. The transformation matrix will appear in the Fiji log window.
+
+4. Copy the transform into the render.bsh script shown below in the position specified in comments (line X).
+
+5. Press enter to apply the transformation to the stack.
+
+6. Now use the rectangle tool to define a crop area that will include the specimen with minimal background. Write down the ''x'',''y''coordinates ''width'' and ''height'' of the crop  area and paste them into the render.bsh script (line X). 
+
+7. Apply crop (Image->Crop).
+
+8. Determine the z-index where the specimen starts and ends and paste them into the render.bsh script (line X). 
+
+9. RUn Duplicate command (Image->Duplicate) and enter the z-index as range (for example 20-200). A tightly cropped specimen stack should be the result of this series of operations.
+
+10. Adjust brightness and contrast on the stack to see the data well, perhaps slightly saturating and write the min and max into the render.bsh script (line X). 
+
+11. Launch the 3d Viewer and experiment with threshold (3d Viewer->Adjust Threshold) and  transparency (3DViewer->Edit->Change Transparency) and enter them into the render.bsh script (lines X and X).
+
+We are ready to begin the cluster processing by creating our old friend, the '''create-render-job''' bash script in a directory jobs/3d_rendering
 
 <source lang="bash">
 #!/bin/bash
@@ -602,12 +622,12 @@ mkdir -p $jobs
 
 for i in `seq 1 241`
 do
-  	job="$jobs/3d_rendering/render-$i.job"
-        echo $job
-        echo "#!/bin/bash" > "$job"
-        echo "xvfb-run -as\"-screen 0 1280x1024x24\" 
-/sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms10g -Xmx10g -macro /projects/tomancak_lightsheet/Tassos/jobs/3d_rendering/render.ijm $i" >> "$job"
-        chmod a+x "$job"
+	job="$jobs/3d_rendering/render-$i.job"
+	echo $job
+	echo "#!/bin/bash" > "$job"
+	echo "xvfb-run -as\"-screen 0 1280x1024x24\" /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms20g -Xmx20g -D
+dir=$dir -Dtimepoint=$i -Dangle=1  -- --no-splash $dir/jobs/3d_rendering/render.bsh" >> "$job"
+	chmod a+x "$job"
 done
 </source>
 
@@ -615,10 +635,11 @@ who will create '''render-<number>.job'''
 
 <source lang="bash">
 #!/bin/bash
-xvfb-run -as"-screen 0 1280x1024x24" /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms10g -Xmx10g -macro /projects/tomancak_lightsheet/Tassos/jobs/3d_rendering/render.ijm 1
+xvfb-run -as"-screen 0 1280x1024x24" /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms20g -Xmx20g -Ddir=/projects/tomancak_lightsheet/Tassos -Dtimepoin
+t=1 -Dangle=1  -- --no-splash /projects/tomancak_lightsheet/Tassos/jobs/3d_rendering/render.bsh
 </source>
 
-This script is in this case running an ImageJ macro '''render.ijm'''
+This script is passing a ''directory'', ''timepoint'' and rendering ''angle'' parameters to '''render.bsh''' Beanshell script. The script  
 
 <source lang="bash">
 timepoint = getArgument;
