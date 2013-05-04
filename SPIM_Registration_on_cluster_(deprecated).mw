@@ -595,9 +595,9 @@ The preparation phase of 3D rendering is a bit more complicated. We will use the
 
 3. Record the transform by pressing letter '''E''' on the keyboard. The transformation matrix will appear in the Fiji log window.
 
-4. Copy the transform into the render.bsh script shown below in the position specified in comments (line X).
+4. Copy the transform into the render.bsh script shown below into line X (read the comments if unsure).
 
-5. Press enter to apply the transformation to the stack.
+5. Press '''enter''' to apply the transformation to the stack.
 
 6. Now use the rectangle tool to define a crop area that will include the specimen with minimal background. Write down the ''x'',''y''coordinates ''width'' and ''height'' of the crop  area and paste them into the render.bsh script (line X). 
 
@@ -605,11 +605,11 @@ The preparation phase of 3D rendering is a bit more complicated. We will use the
 
 8. Determine the z-index where the specimen starts and ends and paste them into the render.bsh script (line X). 
 
-9. RUn Duplicate command (Image->Duplicate) and enter the z-index as range (for example 20-200). A tightly cropped specimen stack should be the result of this series of operations.
+9. Run Duplicate command (Image->Duplicate) and enter the z-index as range (for example 20-200). A tightly cropped specimen stack should be the result of this series of operations.
 
 10. Adjust brightness and contrast on the stack to see the data well, perhaps slightly saturating and write the min and max into the render.bsh script (line X). 
 
-11. Launch the 3d Viewer and experiment with threshold (3d Viewer->Adjust Threshold) and  transparency (3DViewer->Edit->Change Transparency) and enter them into the render.bsh script (lines X and X).
+11. Launch the 3d Viewer and experiment with threshold (3d Viewer then Edit->Adjust Threshold) and  transparency (3DViewer then Edit->Change Transparency) and enter them into the render.bsh script (lines X and X).
 
 We are ready to begin the cluster processing by creating our old friend, the '''create-render-job''' bash script in a directory jobs/3d_rendering
 
@@ -639,7 +639,7 @@ xvfb-run -as"-screen 0 1280x1024x24" /sw/users/tomancak/packages/Fiji.app/ImageJ
 t=1 -Dangle=1  -- --no-splash /projects/tomancak_lightsheet/Tassos/jobs/3d_rendering/render.bsh
 </source>
 
-Each bash script is passing a ''directory'', ''timepoint'' and rendering ''angle'' parameters to '''render.bsh''' Beanshell script. The script is little more complicated than before. It combines Saalfeld Beanshell magic with my clumsy macro language. It is necessary to change the parameters inside the script according to the recipe above for each individual rendering run. 
+Each bash script is passing a ''directory'', ''timepoint'' and rendering ''angle'' parameters to '''render.bsh''' Beanshell script. The script is little more complicated than before. It combines Saalfeld's Beanshell magic with my clumsy macro programming. It is necessary to change the parameters inside the script according to the recipe above for each individual rendering run. 
 
 <source lang="bash">
 mport java.lang.Runtime;
@@ -818,14 +818,14 @@ done
 
 Tips and tricks
 
-* This approach to making 3d rendering movies is still a hack, although its better than pure macro and TransformJ. We are working on a better solution.
+* This approach to making 3D rendering movies is still a hack, although its better than pure macro and TransformJ. We are working on a better solution.
 * We are using an interplay of Interactive Stack Rotation to pre-process the image by rotating it to the desired position and then calling 3dVIewer to render it at that position while zooming in a bit.
 * You can also use the TransformJ commands to rotate your fused stack to the orientation you like, possibly crop it if its too big and then open it in 3dViewer. Recording this as a macro and making it work (ala Stephan Preibisch) is possible, but it is incredibly laborious and nerve wracking.
 * Whoever wants to rewrite the macro parts of '''render.bsh''' into a real script is VERY welcome.
-* Even better would be, obviously, to pass the transformation matrix to the 3dViewer, but it proved unreliable. 
+* Even better would be, obviously, to pass the transformation matrix to the 3D Viewer, but it proved unreliable. 
 * The key to making it work on a cluster is to provide specific parameters about screen size to the '''xvfb-run''' script (-as\"-screen 0 1280x1024x24\"). Otherwise it doesn't work. Thanks to Stephan Saalfeld for figuring it out.
 * The cluster makes it fairly easy to experiment with parameters and angles of view - on a single computer the same task would take days and since we are using ImageJ macro you would not be able to touch the computer. MPI-CBG cluster renders 800+ timepoints in half an hour even under full load from other users.
 
-The 3D rendering is relatively complex (we are working on a simpler solution) but extremely rewarding. ''Drosophila'' embryogenesis movie coming here soon.
+The 3D rendering is relatively complex (we are working on a simpler solution) but extremely rewarding. ''Drosophila'' embryogenesis movie coming soon here.
 
 [[Category:Registration|SPIM Registration]]
