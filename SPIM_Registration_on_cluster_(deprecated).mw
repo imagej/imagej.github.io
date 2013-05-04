@@ -587,8 +587,11 @@ Tips and tricks:
 
 Finally we want generate a beautiful 3d rendering of the downsampled, fused data and run it as movies at conferences... ;-).
 
+The preparation phase of 3D rendering is a bit more complicated. We will use the [[Interactive_Stack_Rotation|interactive Stack Rotation]] plugin to position the specimen the way we want to render it and then send it to [[3D_Viewer|3DViewer]] plugin.
 
-We start by creating our old friend, the '''create-render-job''' bash script
+
+
+We cluster processing by creating our old friend, the '''create-render-job''' bash script
 
 <source lang="bash">
 #!/bin/bash
