@@ -613,7 +613,7 @@ The preparation phase of 3D rendering is a bit more complicated. We will use the
 
 We are ready to begin the cluster processing by creating our old friend, the '''create-render-job''' bash script in a directory jobs/3d_rendering
 
-<source lang="bash">
+<source lang="java">
 #!/bin/bash
 dir="/projects/tomancak_lightsheet/Tassos/"
 jobs="$dir/jobs"
@@ -639,41 +639,170 @@ xvfb-run -as"-screen 0 1280x1024x24" /sw/users/tomancak/packages/Fiji.app/ImageJ
 t=1 -Dangle=1  -- --no-splash /projects/tomancak_lightsheet/Tassos/jobs/3d_rendering/render.bsh
 </source>
 
-This script is passing a ''directory'', ''timepoint'' and rendering ''angle'' parameters to '''render.bsh''' Beanshell script. The script  
+Each bash script is passing a ''directory'', ''timepoint'' and rendering ''angle'' parameters to '''render.bsh''' Beanshell script. The script is little more complicated than before. It combines Saalfeld Beanshell magic with my clumsy macro language. It is necessary to change the parameters inside the script according to the recipe above for each individual rendering run. 
 
 <source lang="bash">
-timepoint = getArgument;
+mport java.lang.Runtime;
+import ij.ImagePlus;
+import ij.ImageStack;
+import ij.process.ImageProcessor;
+import ij.IJ;
+import ij.measure.Calibration;
+import mpicbg.ij.stack.InverseTransformMapping;
+import mpicbg.models.TranslationModel3D;
+import mpicbg.models.AffineModel3D;
+import mpicbg.models.InverseCoordinateTransformList;
 
-run("Image Sequence...", "open=[/projects/tomancak_lightsheet/Tassos/output/" + timepoint + "/] number=467 starting=1 increment=1 scale=100 file=[.tif] or=[] sort");
-rename("output");
-setMinAndMax(65, 5300);
-run("8-bit");
-run("Add...", "value=1 stack");   // because 3d viewer will re-scale the bounding box with 0 in the background
+runtime = Runtime.getRuntime();
+
+dir = System.getProperty("dir");
+timepoint = System.getProperty( "timepoint" );
+angle = System.getProperty("angle");
+
+System.out.println("Opening");
+System.out.println(dir);
+System.out.println(timepoint);
+
+IJ.run("Image Sequence...", "open=" + dir + "/output_fusion/" + " " +
+        "number=809 starting=1 increment=1 scale=100" + " " +
+        "file=img_tl" + timepoint + "_" + " " +
+        "or=[] sort");
+
+ij.IJ.setMinAndMax(200, 600);   // set properly in gui
+
+/* down scale if necessary with macro */
+
+System.out.println("Scaling");
+
+IJ.run("Scale...", "x=0.5 y=0.5 z=0.5 depth=405 interpolation=Bilinear average process create title=scaled");
+
+System.out.println("Rotating");
  
-run("3D Viewer");
-call("ij3d.ImageJ3DViewer.setCoordinateSystem", "false");
+/* paste the 3d transform matrix from Interactive Stack Rotation here*/
+am = new float[]{
+        0.97536975, -0.14100166, 0.16962992, 0.0, -0.18503368, -0.9416376, 0.28122446, 0.0, 0.12007594, -0.30568472, -0.9445343, 0.0};
 
-call("ij3d.ImageJ3DViewer.add", "output", "None", "output", "0", "true", "true", "true", "1", "0");
-call("ij3d.ImageJ3DViewer.select", "output");
-wait( 1000 );
+imp = IJ.getImage();
 
-call("ij3d.ImageJ3DViewer.setTransform", "1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 -400.0 0.0 0.0 0.0 1.0 ");
+System.out.println(imp);
 
-call("ij3d.ImageJ3DViewer.setThreshold", "30");
-call("ij3d.ImageJ3DViewer.setTransparency", "0.35");
+/* un-scale */
+c = imp.getCalibration();
+zFactor = (float)(c.pixelDepth / c.pixelWidth);
+unScale = new AffineModel3D();
+unScale.set(
+        1.0f, 0.0f, 0.0f, 0.0f,
+        0.0f, 1.0f, 0.0f, 0.0f,
+        0.0f, 0.0f, zFactor, 0.0f);
 
-wait( 1000 );
-call("ij3d.ImageJ3DViewer.select", "Dummy");
-wait( 1000 );
-call("ij3d.ImageJ3DViewer.snapshot", "968", "934");
-wait( 1000 );
-call("ij3d.ImageJ3DViewer.select", "output");
-wait( 1000 );
-call("ij3d.ImageJ3DViewer.delete");
+/* center shift */
+centerShift = new TranslationModel3D();
+centerShift.set(-imp.getWidth() / 2, -imp.getHeight() / 2, -imp.getStack().getSize() / 2 * zFactor);
 
-selectWindow("Snapshot");
-saveAs("Tiff", "/projects/tomancak_lightsheet/Tassos/rendering/render_tp" + timepoint + "_Angle0.tif");
-call("java.lang.System.exit", 0);
+/* center un-shift */
+centerUnShift = new TranslationModel3D();
+centerUnShift.set(imp.getWidth() / 2, imp.getHeight() / 2, imp.getStack().getSize() / 2 * zFactor);
+
+/* rotation */
+rotation = new AffineModel3D();
+rotation.set(
+        am[0], am[1], am[2], am[3],
+        am[4], am[5], am[6], am[7],
+        am[8], am[9], am[10], am[11]);
+
+transform = new AffineModel3D();
+transform.preConcatenate(unScale);
+transform.preConcatenate(centerShift);
+transform.preConcatenate(rotation);
+transform.preConcatenate(centerUnShift);
+
+
+/* bounding volume */
+min = new float[]{0, 0, 0};
+max = new float[]{imp.getWidth(), imp.getHeight(), imp.getStack().getSize()};
+transform.estimateBounds(min, max);
+w = (int)Math.ceil(max[0] - min[0]);
+h = (int)Math.ceil(max[1] - min[1]);
+d = (int)Math.ceil(max[2] - min[2]);
+
+/* bounding volume offset */
+minShift = new TranslationModel3D();
+minShift.set(-min[0], -min[1], -min[2]);
+transform.preConcatenate(minShift);
+
+/* render target stack */
+mapping = new InverseTransformMapping(transform);
+
+ip = imp.getStack().getProcessor(1).createProcessor(imp.getWidth(), imp.getHeight());
+
+System.out.println(ip);
+
+targetStack = new ImageStack(w, h);
+
+for (s = 0; s < d; ++s) {
+        ip = ip.createProcessor(w, h);
+        mapping.setSlice(s);
+        try {
+                mapping.mapInterpolated(imp.getStack(), ip);
+        }
+        catch (Exception e)        {
+                e.printStackTrace();
+        }
+        targetStack.addSlice("", ip);
+}
+
+/* set proper calibration (it's isotropic at the former x,y-scale now) */
+impTarget = new ImagePlus("target", targetStack);
+
+
+System.out.println(impTarget);
+
+calibration = imp.getCalibration().copy();
+calibration.pixelDepth = calibration.pixelWidth;
+impTarget.setCalibration(calibration);
+impTarget.show();
+
+/* MACRO */
+System.out.println("Cropping");
+
+IJ.run("Select Bounding Box");
+ij.IJ.makeRectangle(24, 170, 960, 362);
+IJ.run("Crop");
+IJ.run("Duplicate...", "duplicate range=146-480");
+
+impdupl = IJ.getImage();   // catch the new window - who knows why....
+impdupl.show();
+
+IJ.run("8-bit");
+IJ.run("Add...", "value=1 stack");   // because 3d viewer will re-scale the bounding box
+
+System.out.println("Rendering");
+
+IJ.run("3D Viewer");
+ij.IJ.wait(1000);
+
+ij3d.ImageJ3DViewer.setCoordinateSystem("false");
+ij3d.ImageJ3DViewer.add("target-1", "None", "target-1", "0", "true", "true", "true", "1", "0");
+ij.IJ.wait(1000);
+
+ij3d.ImageJ3DViewer.select("target-1");
+ij.IJ.wait(1000);
+ij3d.ImageJ3DViewer.setTransform("1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 -1050.0 0.0 0.0 0.0 1.0");
+ij.IJ.wait(5000);
+
+
+ij3d.ImageJ3DViewer.setThreshold("50");
+ij3d.ImageJ3DViewer.setTransparency("0.15");
+ij.IJ.wait(5000);
+
+ij3d.ImageJ3DViewer.select("Dummy");
+ij3d.ImageJ3DViewer.snapshot("961", "356");
+
+IJ.selectWindow("Snapshot");
+IJ.saveAs("Tiff", dir + "/rendering/render_tp" + timepoint + "_Angle" + angle + ".tif");
+
+/* shutdown */
+runtime.exit(0);
 </source>
 
 We submit is as usual using '''./submit-jobs .'''
