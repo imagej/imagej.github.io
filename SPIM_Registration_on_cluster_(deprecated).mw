@@ -307,7 +307,7 @@ Some tips and tricks
 
 Once the per-time-point registration is finished it is necessary to register all the time-points in the time-series to a reference time-point (to remove potential sample drift during imaging). The parameters for time series registration are described [http://fiji.sc/SPIM_Bead_Registration#How_timelapse_registration_works here].
 
-The time-series registration is not really a cluster type of task as it is run on a single processor in a linear fashion. But since until now we have everything on the cluster filesystem it is useful to execute it here.
+The time-series registration is not really a cluster type of task as it is run on a single processor in a linear fashion. But since until now we have everything on the cluster filesystem it is useful to execute it here. ''Note: I do not mean that timelapse registration cannot be parallelized, we just have not implemented it because it runs fairly fast in the current, linear fashion.''
 
 It is a very bad idea to execute anything other then submitting jobs on a cluster head node. LSF offers a useful alternative - a special '''interactive''' queue allowing us to connect directly to a free node of the cluster and execute commands interactively.
 
