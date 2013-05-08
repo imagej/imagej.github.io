@@ -14,7 +14,7 @@ Like other LUTs, it is available from the Image > Lookup Tables menu.
 
 == Labelings ==
 
-The Glasbey LUT has numerous uses. It is ideal when coloring a "labeling" of integer-coded regions, since each region will then appear obviously different:
+The Glasbey LUT has numerous uses. It is ideal when coloring a "labeling" of integer-coded regions, since each region will then appear obviously distinct:
 
 [[File:Glasbey-labeling.png|center]]
 
