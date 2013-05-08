@@ -6,9 +6,11 @@
 | category               = [[:Category:Color_processing]]
 }}
 
+[[File:Glasbey.png|right]]
+
 The Glasbey lookup table (LUT) is a color table structured in a maximally discontinuous manner. That is, adjacent color bins are chosen to be as distinct from one another as possible.
 
-[[File:Glasbey.png|right]]
+Like other LUTs, it is available from the Image > Lookup Tables menu.
 
 == Labelings ==
 
@@ -28,5 +30,3 @@ Glasbey can also be used to illustrate otherwise-subtle phenomena such as JPEG c
 The Glasbey LUT is based on the publication:
 
 Glasbey, Chris, et al. "[http://onlinelibrary.wiley.com/doi/10.1002/col.20327/abstract Colour displays for categorical images]." ''Color Research & Application'' 32.4 (2007): 304-309.
-
-Like other LUTs, it is available in the Image > Lookup Tables menu.
