@@ -1,0 +1,32 @@
+{{Infobox Plugin
+| name                   = Glasbey
+| software               = Discontinuous color table
+| maintainer             = Gabriel Landini
+| source                 = [https://github.com/fiji/fiji/blob/master/luts/glasbey.lut]
+| category               = [[:Category:Color_processing]]
+}}
+
+The Glasbey lookup table (LUT) is a color table structured in a maximally discontinuous manner. That is, adjacent color bins are chosen to be as distinct from one another as possible.
+
+[[File:Glasbey.png|right]]
+
+== Labelings ==
+
+The Glasbey LUT has numerous uses. It is ideal when coloring a "labeling" of integer-coded regions, since each region will then appear obviously different:
+
+[[File:Glasbey-labeling.png|center]]
+
+== JPEG artifacts ==
+
+Glasbey can also be used to illustrate otherwise-subtle phenomena such as JPEG compression artifacts.
+
+[[File:JPEG-grayscale.png|frame|center|Comparison of the Boats sample image before and after being resaved as a JPEG. The grayscale LUT makes it very difficult (for most people) to see any visual difference between the two.]]
+[[File:JPEG-glasbey.png|frame|center|Comparison of the Boats sample image before and after being resaved as a JPEG. The Glasbey LUT makes it quite obvious where JPEG compression caused a loss of data fidelity.]]
+
+== Publication ==
+
+The Glasbey LUT is based on the publication:
+
+Glasbey, Chris, et al. "[http://onlinelibrary.wiley.com/doi/10.1002/col.20327/abstract Colour displays for categorical images]." ''Color Research & Application'' 32.4 (2007): 304-309.
+
+Like other LUTs, it is available in the Image > Lookup Tables menu.
