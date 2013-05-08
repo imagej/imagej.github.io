@@ -20,10 +20,10 @@ The Glasbey LUT has numerous uses. It is ideal when coloring a "labeling" of int
 
 == JPEG artifacts ==
 
-Glasbey can also be used to illustrate otherwise-subtle phenomena such as JPEG compression artifacts.
+Glasbey can also be used to illustrate otherwise-subtle phenomena such as JPEG compression artifacts. Here is a comparison of the Boats sample image before and after being resaved as a JPEG:
 
-[[File:JPEG-grayscale.png|frame|center|Comparison of the Boats sample image before and after being resaved as a JPEG. The grayscale LUT makes it very difficult (for most people) to see any visual difference between the two.]]
-[[File:JPEG-glasbey.png|frame|center|Comparison of the Boats sample image before and after being resaved as a JPEG. The Glasbey LUT makes it quite obvious where JPEG compression caused a loss of data fidelity.]]
+[[File:JPEG-grayscale.png|frame|center|The grayscale LUT makes it very difficult (for most people) to see any visual difference.]]
+[[File:JPEG-glasbey.png|frame|center|The Glasbey LUT makes it quite obvious where JPEG compression caused a loss of data fidelity.]]
 
 == Publication ==
 
