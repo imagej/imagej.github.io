@@ -5,12 +5,12 @@ __NOTOC__
 <br style="clear: both" />
 
 {{Infobox Plugin
-| software               = ImageJ
+| software               = Fiji/ImageJ
 | name                   = FijiWings
 | author                 = Alex Dobens, Leonard Dobens [http://sbs.umkc.edu/dobens/]
-| maintainer             = Leonard Dobes
+| maintainer             = Leonard Dobens
 | filename               = fiji-macosx.zip
-| source                 = TBA
+| source                 = https://sourceforge.net/projects/fijiwings/
 | status                 = stable
 }}
 
