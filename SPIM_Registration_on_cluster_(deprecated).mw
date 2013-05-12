@@ -497,7 +497,41 @@ The GPU mediated deconvolution is faster, but currently only by a factor of 2-3 
 
 ==== Multiview deconvolution on CPU ====
 
-By now you should know the drill... Create a directory jobs/deconvolution and in there a bash script '''create-deconvolution-jobs'''
+In contrast to the multiview fusion plugin described above, Stephan Preibisch, in his infinite wisdom ;-), did not implement the option to scale down the data before deconvolution starts. Since deconvolution is a very expensive operation, it will take a very long time (hours) for full resolution data. If the sole purpose of fusing the data by deconvolution is to render them in 3D, the full resolution images are not necessary, ergo we need to downsample. Fortunately Stephan implemented a workaround in the form of a script that prepends a transformation (such as scaling) to the raw SPIM data.
+
+The script can be found under Plugins->SPIM registration->Utilities->Apply external transformation (or press '''l''' and type Apply external transformation). The data entry is reminiscent to the one used in SPIM registration, the screen that comes after that is not.
+
+PUT SCREENSHOT HERE
+
+What we are looking at is the so called Affine Transformation Matrix that will be pre-concatenated to the transformation matrix in the registration files from bead based registration. The m00, m11 and m22 entries of the matrix represent the scaling of the image and so by setting all three of them to 0.5 we will downscale the image by a factor of 2.
+
+The output of running the Apply external transformation will look like this:
+
+ Pre-concatenating model:
+ 3d-affine: (0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0)
+ Applying model to: spim_TL400_Angle1.tif.registration.to_400
+ Applying model to: spim_TL400_Angle2.tif.registration.to_400
+ Applying model to: spim_TL400_Angle3.tif.registration.to_400
+ Applying model to: spim_TL400_Angle4.tif.registration.to_400
+ Applying model to: spim_TL400_Angle5.tif.registration.to_400
+ Applying model to: spim_TL400_Angle6.tif.registration.to_400
+
+and the registration files ''spim_TL400_Angle1.tif.registration.to_400'' in the ''registration/'' directory will now end with something like this:
+
+ Previous model: (0.996656, 0.0014411004, 0.003138572, -5.4490294, -0.0019162297, 0.9955152, -8.5441023E-4, -81.664116, -5.4249633E-4, -2.910602E-4, 0.9978538, 10.278229)
+ Pre-concatenated model: (0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0)
+
+Now this looks elegant, but there are several caveats. The pre-concatenation of transformation models is not reversible (or at least not easily in the current code framework) and so before applying external transformation we recommend to archive the old, unmodified registration files. For example by packaging them to a tar archive
+
+ tar -cvf all_to_400_regs.tar *.to_400
+
+and decompressing in order to get to the original, unaltered transformation models
+
+  tar -xvf all_to_400_regs.tar
+
+Second issue, AND IMPORTANT ONE. The new transformation (scaling) must be applied to every timepoint in the registered time-series INCLUDING the reference time-point. For good measure, it is also necessary to apply the transformation to the original non-time-series .registration files of the reference time-point ONLY. Don't ask me why... These two steps (pre-concatenating transformation models to reference time point just once) are really not clusterizable and so we recommend to do them manually in Fiji on a local machine and copy the modified registration files to the ''registration/'' directory on the cluster. Yes, it is clunky, but its better than nothing.
+
+Now we are ready for the cluster mediated deconvolution on the downscaled data. By now you should know the drill... Create a directory jobs/deconvolution and in there a bash script '''create-deconvolution-jobs'''
 
 <source lang="bash">
 #!/bin/bash
@@ -513,7 +547,7 @@ do
         echo "#!/bin/bash" > "$job"
         echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms100g -Xmx100g
 -Ddir=$dir -Dtimepoint=$i -Dangles=1-6 -Dreference=714 -Dx=36 -Dy=168 -Dz=282 -Dw=1824 
--Dh=834 -Dd=810 -- --no-splash 
+-Dh=834 -Dd=810 -Diter=10 -- --no-splash 
 /projects/tomancak_lightsheet/Tassos/jobs/deconvolution/deconvolution.bsh" >> "$job"
         chmod a+x "$job"
 done
@@ -525,11 +559,13 @@ that will generate many '''deconvolution-<number>.job''' scripts
 #!/bin/bash
 xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms100g -Xmx100g 
 -Ddir=/projects/tomancak_lightsheet/Valia/Valia -Dtimepoint=1 -Dangles=1-6 -Dreference=714 
--Dx=36 -Dy=168 -Dz=282 -Dw=1824 -Dh=834 -Dd=810 -- --no-splash 
+-Dx=36 -Dy=168 -Dz=282 -Dw=1824 -Dh=834 -Dd=810 -Diter=10 -- --no-splash 
 /projects/tomancak_lightsheet/Tassos/jobs/deconvolution/deconvolution.bsh
 </source>
 
-Each of these will run '''deconvolution.bsh'''
+''Note the new parameter '''iter''' which specifies how many iterations of the multiview deconvolution we want to run. This should be determined empirically on a local GUI Fiji set-up.''
+
+Each of the ''deconvolution-<number>.job'' scripts will run '''deconvolution.bsh'''
 
 <source lang="java">
 import ij.IJ;
