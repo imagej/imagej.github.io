@@ -497,9 +497,9 @@ The GPU mediated deconvolution is faster, but currently only by a factor of 2-3 
 
 ==== Multiview deconvolution on CPU ====
 
-In contrast to the multiview fusion plugin described above, Stephan Preibisch, in his infinite wisdom ;-), did not implement the option to scale down the data before deconvolution starts. Since deconvolution is a very expensive operation, it will take a very long time (hours) for full resolution data. If the sole purpose of fusing the data by deconvolution is to render them in 3D, the full resolution images are not necessary, ergo we need to downsample. Fortunately Stephan implemented a workaround in the form of a script that prepends a transformation (such as scaling) to the raw SPIM data.
+In contrast to the multiview fusion plugin described above, Stephan Preibisch, in his infinite wisdom ;-), did not implement the option to scale down the data before deconvolution starts. Since deconvolution is a very expensive operation, it will take a very long time (hours) on full resolution data. If the sole purpose of fusing the data by deconvolution is to render them in 3D, the full resolution images are not necessary, ergo we need to downsample. Fortunately Stephan implemented a workaround in the form of a script that prepends a transformation (such as scaling) to the raw SPIM data.
 
-The script can be found under Plugins->SPIM registration->Utilities->Apply external transformation (or press '''l''' and type Apply external transformation). The data entry is reminiscent to the one used in SPIM registration, the screen that comes after that is not.
+The script can be found under Plugins->SPIM registration->Utilities->Apply external transformation (or press letter '''l''' and type Apply external transformation). The initial dialog is reminiscent of SPIM registration, the screen that comes after that is not.
 
 PUT SCREENSHOT HERE
 
@@ -571,6 +571,9 @@ Each of the ''deconvolution-<number>.job'' scripts will run '''deconvolution.bsh
 import ij.IJ;
 import java.lang.Runtime;
 
+fiji.plugin.Multi_View_Deconvolution.psfSize = 31;
+fiji.plugin.Multi_View_Deconvolution.isotropic = true;
+
 runtime = Runtime.getRuntime();
 System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
 
@@ -586,29 +589,48 @@ h = System.getProperty( "h" );
 d = System.getProperty( "d" );
 iter = System.getProperty( "iter" );
 
+IJ.run("Apply external transformation", 
+	"spim_data_directory=" + dir + " " +
+	"pattern_of_spim=spim_TL{t}_Angle{a}.tif" + " " + 
+	"timepoints_to_process=" + timepoint + " " +
+	"angles=" + angles + " " +
+	"how_to_provide_affine_matrix=[As individual entries]" +  " " + 
+	"m00=0.5 m01=0 m02=0 m03=0 m10=0 m11=0.5 m12=0 m13=0 m20=0 m21=0 m22=0.5 m23=0" +  " " + 
+	"apply_to=[Time-point registration (reference=" + reference + ")]");
+
 IJ.run("Multi-view deconvolution", "spim_data_directory=" + dir + " " +
-        "pattern_of_spim=spim_TL{t}_Angle{a}.tif" + " " +
-        "timepoints_to_process=" + timepoint + " " +
-        "angles=" + angles + " " +
-        "registration=[Time-point registration (reference=" + reference + ") of channel 0]" + " " +
-        "crop_output_image_offset_x=" + x + " " +
-        "crop_output_image_offset_y=" + y + " " +
-        "crop_output_image_offset_z=" + z + " " +
-        "crop_output_image_size_x=" + w + " " +
-        "crop_output_image_size_y=" + h + " " +
-        "crop_output_image_size_z=" + d + " " +
-        "type_of_iteration=[Conditional Probability (fast, precise)]" + " " +
-        "number_of_iterations=10" + " " +
-        "use_tikhonov_regularization tikhonov_parameter=0.0060" + " " +
-        "imglib_container=[Array container]" + " " +
-        "compute=[in 512x512x512 blocks]" + " " +
-        "compute_on=[CPU (Java)]" + " " +
-        "fused_image_output=[Save 2d-slices, one directory per time-point]"
-        );
+	"pattern_of_spim=spim_TL{t}_Angle{a}.tif" + " " + 
+	"timepoints_to_process=" + timepoint + " " +
+	"angles=" + angles + " " + 
+	"registration=[Time-point registration (reference=" + reference + ") of channel 0]" + " " +
+	"crop_output_image_offset_x=" + x + " " +
+	"crop_output_image_offset_y=" + y + " " +
+	"crop_output_image_offset_z=" + z + " " +
+	"crop_output_image_size_x=" + w + " " +
+	"crop_output_image_size_y=" + h + " " +
+	"crop_output_image_size_z=" + d + " " +
+	"type_of_iteration=[Conditional Probability (fast, precise)]" + " " +
+	"number_of_iterations=" + iter + " " +
+	"use_tikhonov_regularization tikhonov_parameter=0.0060" + " " +
+	"imglib_container=[Array container]" + " " +
+	"compute=[in 512x512x512 blocks]" + " " +
+//	"blocksize_x=1024 blocksize_y=1024 blocksize_z=1024" + " " +
+	"compute_on=[CPU (Java)]" + " " +
+	"fused_image_output=[Save 2d-slices, one directory per time-point]"
+	);
 
 /* shutdown */
 runtime.exit(0);
 </source>
+
+Stuff that matters here is the parameter 
+
+* '''number_of_iterations=10''' specifies the number of iterations (10 is a good guess) 
+* '''compute_on=[CPU (Java)]''' here we indicate that we want to use CPU
+* '''compute=[in 512x512x512 blocks]''' most likely we will have to compute in blocks unless we have really a lot of memory available.
+* '''fiji.plugin.Multi_View_Deconvolution.psfSize = 31;''' this parameter should be considered advanced for now, it specifies the size of the area used to extract the Point Spread Function (PSF) from the beads in the image. Default is 19.
+
+otherwise the parameters are similar to content based fusion or constants.''
 
 on a cluster node when submitted by '''submit-jobs'''
 
@@ -623,7 +645,7 @@ done
 
 Tips and tricks:
 
-* TBD
+*
 
 ==== Multiview deconvolution on GPU ====
 
