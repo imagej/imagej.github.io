@@ -491,6 +491,12 @@ Tips and tricks:
 
 Another, more advanced, way to fuse the registered data is multiview deconvolution which will be described eloquently and in details [http://fiji.sc/Multi-View_Deconvolution here]. 
 
+The deconvolution can be executed either on the CPU (Central Processing Unit - i.e. the main processor of the computer) or on GPU (Graphical Processing Unit - i.e. the graphics card). The pre-requisite for the GPU processing is to have one or more graphics cards capable of [http://www.nvidia.de/object/cuda_home_new.html CUDA] such as NVIDIA Tesla or Quadro or GeForce. Since the GPU accelerated multi-view deconvolution is not yet published and the necessary C code has to be obtained from Stephan Preibisch by request we will focus for now on deconvolution using CPU. 
+
+The GPU mediated deconvolution is faster, but currently only by a factor of 2-3 and so the CPU version makes sense, especially when you have a big cluster of CPUs and no or few GPUs.
+
+==== Multiview deconvolution on CPU ====
+
 By now you should know the drill... Create a directory jobs/deconvolution and in there a bash script '''create-deconvolution-jobs'''
 
 <source lang="bash">
@@ -582,6 +588,10 @@ done
 Tips and tricks:
 
 * TBD
+
+== Multiview deconvolution on GPU ==
+
+Coming soon.
 
 == 3D rendering ==
 
