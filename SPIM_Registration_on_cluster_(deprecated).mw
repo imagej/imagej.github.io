@@ -645,7 +645,11 @@ done
 
 Tips and tricks:
 
-*
+* Multiview deconvolution needs as much memory as possible.
+* The memory requirements can be mitigated by using smaller blocks and the processing will take longer.
+* The output deconvolved image will have extremely compressed dynamic range, i.e. will look pitch black upon opening. Set the min and max to 0.0 and 0.05 to see anything.
+* The PSFs of the beads will become smaller (ideally points) but brighter.
+* The image will appear much more noisy compared to content fused or raw data.
 
 ==== Multiview deconvolution on GPU ====
 
