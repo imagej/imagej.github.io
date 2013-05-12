@@ -589,6 +589,9 @@ h = System.getProperty( "h" );
 d = System.getProperty( "d" );
 iter = System.getProperty( "iter" );
 
+//First we pre-concatenate a transformation matrix that downscales the image by a factor of 2, 
+//comment the following macro command out if you want to deconvolve full resolution data.  
+
 IJ.run("Apply external transformation", 
 	"spim_data_directory=" + dir + " " +
 	"pattern_of_spim=spim_TL{t}_Angle{a}.tif" + " " + 
@@ -650,6 +653,8 @@ Tips and tricks:
 * The output deconvolved image will have extremely compressed dynamic range, i.e. will look pitch black upon opening. Set the min and max to 0.0 and 0.05 to see anything.
 * The PSFs of the beads will become smaller (ideally points) but brighter.
 * The image will appear much more noisy compared to content fused or raw data.
+* The '''deconvolution.bsh''' script by default downscales the images before deconvolution commences. If you want to do that do not forget do first downscale manually the reference time-point (as described - both the original and the timelapse registration versions), use it to define the crop area on a local machine and transfer the .registration and .registration.to_<reference timepoint> files FOR THE REFERENCE TIMEPOINT to the cluster. If you don't get it - call me ;-).
+* In order to deconvolve full resolution data, no need to do the previous step however the pre-concatenation macro MUST BE commented out in the deconvolution script. Otherwise things will get really weird!
 
 ==== Multiview deconvolution on GPU ====
 
