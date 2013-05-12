@@ -497,16 +497,16 @@ The GPU mediated deconvolution is faster, but currently only by a factor of 2-3 
 
 ==== Multiview deconvolution on CPU ====
 
+[[Image:Apply External Transformation screenshot.jpeg|thumb|200px]]
+
 In contrast to the multiview fusion plugin described above, Stephan Preibisch, in his infinite wisdom ;-), did not implement the option to scale down the data before deconvolution starts. Since deconvolution is a very expensive operation, it will take a very long time (hours) on full resolution data. If the sole purpose of fusing the data by deconvolution is to render them in 3D, the full resolution images are not necessary, ergo we need to downsample. Fortunately Stephan implemented a workaround in the form of a script that prepends a transformation (such as scaling) to the raw SPIM data.
 
 The script can be found under Plugins->SPIM registration->Utilities->Apply external transformation (or press letter '''l''' and type Apply external transformation). The initial dialog is reminiscent of SPIM registration, the screen that comes after that is not.
 
-PUT SCREENSHOT HERE
-
 What we are looking at is the so called Affine Transformation Matrix that will be pre-concatenated to the transformation matrix in the registration files from bead based registration. The m00, m11 and m22 entries of the matrix represent the scaling of the image and so by setting all three of them to 0.5 we will downscale the image by a factor of 2.
 
 The output of running the Apply external transformation will look like this:
-
+<br><br><br>
  Pre-concatenating model:
  3d-affine: (0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0)
  Applying model to: spim_TL400_Angle1.tif.registration.to_400
