@@ -623,7 +623,7 @@ IJ.run("Multi-view deconvolution", "spim_data_directory=" + dir + " " +
 runtime.exit(0);
 </source>
 
-Stuff that matters here is the parameter 
+Stuff that matters here are the following parameters: 
 
 * '''number_of_iterations=10''' specifies the number of iterations (10 is a good guess) 
 * '''compute_on=[CPU (Java)]''' here we indicate that we want to use CPU
