@@ -1,23 +1,23 @@
 {{Infobox Plugin
-| name                   = Advanced Weka Segmentation
+| name                   = Trainable Weka Segmentation
 | software               = Fiji
 | author                 = [[User:Iarganda | Ignacio Arganda-Carreras]], [http://albert.rierol.net Albert Cardona], [http://www.kaynig.de Verena Kaynig]
 | maintainer             = [[User:Iarganda | Ignacio Arganda-Carreras]]
 | source                 = {{GitLink|jar=Trainable_Segmentation}}
 | released               = May 19<sup>th</sup>, 2011
-| latest version         = April 3<sup>rd</sup>, 2013
+| latest version         = May 14<sup>th</sup>, 2013
 | status                 = stable, active
 | category               = [[:Category:Segmentation|Segmentation]], [[:Category:Machine Learning|Machine Learning]]
 }}
 
-'''Advanced''': this plugin has many more features and options than the basic and easier to use [[Trainable Segmentation]] plugin.
+'''Trainable''': this plugin can be trained and learn from the user input to perform the same task in unknown untested data.
 
 '''Weka''': it makes use of all the powerful tools and classifiers from the latest version of [http://www.cs.waikato.ac.nz/ml/weka/ Weka].
 
 '''Segmentation''': it provides a labeled result based on the training of a chosen classifier.
 
 == Introduction ==
-The [[Advanced Weka Segmentation]] is a Fiji plugin that combines a collection of machine learning algorithms with a set of selected image features to produce pixel-based segmentations. [http://www.cs.waikato.ac.nz/ml/weka/ Weka] (Waikato Environment for Knowledge Analysis) can itself be called from the plugin. It contains a collection of visualization tools and algorithms for data analysis and predictive modeling, together with graphical user interfaces for easy access to this functionality. As described on their wikipedia site, the advantages of [http://www.cs.waikato.ac.nz/ml/weka/ Weka] include: 
+The [[Trainable Weka Segmentation]] is a Fiji plugin that combines a collection of machine learning algorithms with a set of selected image features to produce pixel-based segmentations. [http://www.cs.waikato.ac.nz/ml/weka/ Weka] (Waikato Environment for Knowledge Analysis) can itself be called from the plugin. It contains a collection of visualization tools and algorithms for data analysis and predictive modeling, together with graphical user interfaces for easy access to this functionality. As described on their wikipedia site, the advantages of [http://www.cs.waikato.ac.nz/ml/weka/ Weka] include: 
 
 * freely availability under the [http://www.gnu.org/licenses/gpl.txt GNU General Public License]
 
@@ -32,7 +32,7 @@ The [[Advanced Weka Segmentation]] is a Fiji plugin that combines a collection o
 The main goal of this plugin is to work as a '''bridge between the Machine Learning and the Image Processing''' fields. It provides the framework to use and, more important, '''compare''' any available classifier to perform image segmentation based on pixel classification.
 
 == The Graphical User Interface ==
-[[Image:Advanced-Weka-Segmentation-GUI.png|thumb|400px|Example of the first look of the plugin window when using it on a TEM image]] [[Advanced Weka Segmentation]] runs on any 2D image or 2D stack of images (of any type).
+[[Image:Advanced-Weka-Segmentation-GUI.png|thumb|400px|Example of the first look of the plugin window when using it on a TEM image]] [[Trainable Weka Segmentation]] runs on any 2D image or 2D stack of images (of any type).
 
 
 By default, the plugin starts with two classes, i.e. it will produce '''binary pixel classification'''. The user can add traces to both classes using the whole set of [http://rsbweb.nih.gov/ij/docs/guide/userguide-19b.html#toc-Section-19 tools for ROI] (region of interest) drawing available in Fiji. That includes rectangular, round rectangular, oval, elliptical, brush polygon and freehand selections. By default, the freehand selection tool (of 1 pixel width) is automatically selected. 
@@ -147,7 +147,7 @@ When using grayscale images, the input image will be also included as a feature.
 * '''Maximum sigma''': maximum radius of the filters used to create the features. By default 16 pixels.
 
 ===== Classifier options =====
-[[Image:AWS-Classifier-selection.png|thumb|200px|Classifier selection in the Advanced Weka Segmentation [[Advanced_Weka_Segmentation#Settings|Settings dialog]].]]
+[[Image:AWS-Classifier-selection.png|thumb|200px|Classifier selection in the Trainable Weka Segmentation [[Advanced_Weka_Segmentation#Settings|Settings dialog]].]]
 The default classifier is a '''multi-threaded''' version of  [http://en.wikipedia.org/wiki/Random_forest random forest] with 200 trees and 2 random features per node. However the user can select any available classifier in the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
 
 ===== Class names =====
@@ -171,16 +171,16 @@ The Weka button launches the Weka GUI Chooser, where we can start all the applic
 * '''KnowledgeFlow''': this environment supports essentially the same functions as the Explorer but with a drag-and-drop interface. One advantage is that it supports incremental learning.
 * '''SimpleCLI''': provides a simple command-line interface that allows direct execution of [http://www.cs.waikato.ac.nz/ml/weka/ Weka] commands for operating systems that do not provide their own command line interface.
 
-For a complete step-by-step description on how to compare classifiers for image segmentation using the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] Explorer, have a look at the [[Advanced Weka Segmentation - How to compare classifiers‎]] tutorial.
+For a complete step-by-step description on how to compare classifiers for image segmentation using the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] Explorer, have a look at the [[Trainable Weka Segmentation - How to compare classifiers‎]] tutorial.
 
 === Macro language compatibility ===
-[[Advanced Weka Segmentation]] is completely compatible with the popular [http://rsb.info.nih.gov/ij/developer/macro/macros.html ImageJ macro language]. Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
-[[Image:AWS-macro-recording.png|thumb|760px|Example of macro recording of the Advanced Weka Segmentation tools.]]
+[[Trainable Weka Segmentation]] is completely compatible with the popular [http://rsb.info.nih.gov/ij/developer/macro/macros.html ImageJ macro language]. Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
+[[Image:AWS-macro-recording.png|thumb|760px|Example of macro recording of the Trainable Weka Segmentation tools.]]
 
 The complete list of commands is as follows:
 * Start the plugin:
 <source lang="java"> 
-run("Advanced Weka Segmentation"); 
+run("Trainable Weka Segmentation"); 
 </source>
 * Add traces (current ROI) to a class:
 :Format: <code>addTrace( class index, slice number )</code>
@@ -292,11 +292,11 @@ call("trainableSegmentation.Weka_Segmentation.setOpacity", "50");
 run("Leaf (36K)");
 
 // start plugin
-run("Advanced Weka Segmentation");
+run("Trainable Weka Segmentation");
 
 // wait for the plugin to load
 wait(3000);
-selectWindow("Advanced Weka Segmentation");
+selectWindow("Trainable Weka Segmentation");
 
 // add one region of interest to each class
 makeRectangle(367, 0, 26, 94);
