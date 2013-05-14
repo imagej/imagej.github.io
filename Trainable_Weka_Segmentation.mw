@@ -40,7 +40,7 @@ By default, the plugin starts with two classes, i.e. it will produce '''binary p
 The user can pan, zoom in and out, or scroll between slices (if the input image is a stack) in the main canvas as if it were any other Fiji window. On the left side of the canvas there are two panels of buttons, one for the training and one for the general options. On the right side of the image canvas we have a panel with the list of traces for each class and a button to add the current ROI to that specific class. All buttons contain a short explanation of their functionality that is displayed when the cursor lingers over the buttons.
 
 === Training panel ===
-[[Image:AWS-GUI-after-training.png|thumb|400px|Example of the aspect of the plugin window after training on a TEM image]]
+[[Image:TWS-GUI-after-training.png|thumb|400px|Example of the aspect of the plugin window after training on a TEM image]]
 ==== Train classifier ====
 This button activates the training process. One trace of two classes is the minimum required to start training. The first time this button is pressed, the features of the input image will be extracted and converted to a set of vectors of float values, which is the format the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] classifiers are expecting. This step can take some time depending on the size of the images, the number of features and the number of cores of the machine where Fiji is running. The feature calculation is done in a completely multi-thread fashion. The features will be only calculated the first time we train after starting the plugin or after changing any of the feature options.
 
