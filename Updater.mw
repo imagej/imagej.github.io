@@ -110,4 +110,14 @@ If you configured upload sites, you can also use the command-line version of the
 ./fiji --update upload plugins/My_New_Cool_Plugin.jar
 </source>
 
+== Bootstrapping the updater ==
+
+If you do not have Fiji yet, you can download [http://update.imagej.net/bootstrap.js bootstrap.js] and run it like this:
+
+<source lang="bash">
+jrunscript bootstrap.js help
+</source>
+
+This uses the '''jrunscript''' executable of your Java installation to run the Javascript file tracked in Fiji's [https://github.com/fiji/fiji/blob/master/plugins/Scripts/Plugins/Utilities/Fix_Updater.js source code repository] that was originally intended to fix existing installations, but enhanced to initialize the updater in an ImageJ 1.x-only directory -- or even from a complete fresh state.
+
 [[Category:Plugins]]
