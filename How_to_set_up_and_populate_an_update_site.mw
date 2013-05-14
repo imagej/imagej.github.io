@@ -9,7 +9,8 @@ This tutorial explains how to set up a website to distribute your plugins. It as
 * Your plugins are correctly installed in Fiji
 * You have either:
 <ol style="list-style-type:lower-alpha">
-  <li>A [[#Dropbox|Dropbox account]]; or</li>
+  <li>[[Special:ChangeUploadPassword|Initialized your personal update site]]; or</li>
+  <li>WebDAV write access to a website that serves static web pages.</li>
   <li>SSH/FTP access to a website that serves static web pages.</li>
 </ol>
 * In case you want to use your own server, it must have an empty, public web accessible folder where you intend to publish your updates. The Fiji updater will not create that empty folder.
@@ -30,19 +31,37 @@ Click the 'Manage update sites' button to bring up a dialog to allow entering yo
 
 [[Image:How_to_setup_a_plugin_distribution_site-4.jpg|770px]]
 
-Click the 'Add' button and fill in your choice of name for the site, the public URL, the SSH hostname, and the directory into which the site should be installed via SSH.
+Click the 'Add' button and fill in your choice of name for the site and the public URL. The values for the SSH hostname and the upload directory depend on what type of update site you have:
 
-* Note that the URL and the upload directory need to point to the same location on the server. In this case, the webserver maps ''genomics.lbl.gov/~gavin/FijiPlugins'' to ''~gavin/public_html/FijiPlugins'' on the ''tatooine'' server.
+{| class="wikitable" style="border-top: 1px solid gray; border-bottom: 1px solid gray;" width="100%"
+! Type of the update site
+! SSH host
+! upload directory
+|- style="border-top: 1px solid gray; background-color: #ddd;"
+! style="text-align: center" | personal update site
+| webdav:<username>
+| .
+|-
+! style="text-align: center" | website with WebDAV write-access
+| webdav:<username>
+| .
+|- style="background-color: #ddd;"
+! style="text-align: center" | website with SSH write-access
+| ssh:<username>@<hostname>
+| <directory-on-server>
+|-
+! style="text-align: center" | website with SFTP write-access
+| sftp:<username>@<hostname>
+| <directory-on-server>
+|}
+
+* Note that for SFTP and SSH, the URL and the upload directory need to point to the same location on the server. In this case, the webserver maps ''genomics.lbl.gov/~gavin/FijiPlugins'' to ''~gavin/public_html/FijiPlugins'' on the ''tatooine'' server.
+
+* Note: you need to prefix the SSH host with ''<username>@'', e.g. ''gavinrocks@tattooine.pdq-bach.org''.
 
 [[Image:How_to_setup_a_plugin_distribution_site-6.jpg|770px]]
 
 Click 'OK' to add the update site.
-
-* Note: you need to prefix the SSH host with ''<username>@'', e.g. ''gavinrocks@tattooine.pdq-bach.org''.
-
-* Note: if you can upload files to your site via SFTP, but not SSH, you need to prefix the SSH host with ''sftp:'', e.g. ''sftp:gavinrocks@tattooine.pdq-bach.org''.
-
-* Note: if you want to use your Dropbox account, please look [[#Dropbox|here]] for details.
 
 If the update site has not been initialized yet (i.e. if nobody else has initialized that site yet), you will see a dialog like this:
 
@@ -79,23 +98,6 @@ That's it - you're done. Now, anyone who wants a copy of your plugins merely nee
 == Publishing your update site ==
 
 If you want to let other people know about your update site, just add it to the  [[list of update sites]].
-
-== Dropbox ==
-
-You can use the ''Public/'' folder of a [http://dropbox.com Dropbox] account to publish your plugins.
-
-All you need to do is enter the appropriate information:
-
-; Name:
-: a nickname for your update site, e.g. ''Johannes Dropbox''.
-; URL:
-: the public URL of the ''Public/'' folder of your Dropbox account. Simple right-click on the ''How to use the Public folder.rtf'' file after loggin into your Dropbox account, select ''Copy public link'' and remove the file name from the URL. Example: https://www.dropbox.com/sh/la8g3k4uzhg53kz/UZUKTY-CX4/
-; SSH host:
-: we will pretend that the server is local, so put in ''file:localhost''.
-; Upload directory:
-: this must be the absolute path to your local Dropbox' Public/ folder. Example: ''/home/mike/Dropbox/''
-
-<span style='text-color: red;'>Note!</span> The updater will ask you whether you want to initialize the update site. This might trigger an error message like this: ''Could not initialize update site 'Johannes Dropbox'''. No need to worry! This error happens because the updater assumes that the file it wrote will be available via the URL immediately! However, just clicking ''OK'' in the error message followed by clicking ''OK'' in the ''Add update site'' dialog will work around the slight delay caused by the synchronization of the Dropbox.
 
 ==See Also==
 [[How to follow a 3rd party update site]]
