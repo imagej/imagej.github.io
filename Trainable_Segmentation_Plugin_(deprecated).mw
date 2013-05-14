@@ -1,3 +1,8 @@
+<div style="background:#fdd; padding: 10px 10px 0 10px; border: 1px solid black;">
+'''DEPRECATION NOTICE:''' 
+This page describes the Trainable Segmentation plugin, the previous incarnation of the [[Trainable Weka Segmentation]] plugin and library. We encourage users and developers to work with the more advanced and properly maintained [[Trainable Weka Segmentation]] instead.
+</div>
+
 {{Infobox Plugin
 | name                   = Trainable Segmentation
 | software               = Fiji
@@ -6,7 +11,7 @@
 | source                 = {{GitLink|jar=Trainable_Segmentation}}
 | released               = March 16<sup>th</sup>, 2010
 | latest version         = January 6<sup>th</sup>, 2012
-| status                 = deprecated
+| status                 = '''deprecated'''
 | category               = [[:Category:Segmentation|Segmentation]]
 }}
 
