@@ -11,10 +11,10 @@
 }}
 
 == User Manual ==
-This manual shows you how to use the Trainable Segmentation plugin. Trainable means that you have to draw some examples of at least 2 different things you want to differentiate in the image and then a classifier is trained by your examples and segments the rest of the image. 
+This manual shows you how to use the '''deprecated''' Trainable Segmentation plugin. Trainable means that you have to draw some examples of at least 2 different things you want to differentiate in the image and then a classifier is trained by your examples and segments the rest of the image. 
 Afterwards you can also apply the trained classifier to other images or stacks. 
 
-The plugin can be found in the Fiji menu under Plugins / Segmentation / Trainable Segmentation.
+The plugin can be found in the Fiji menu under Plugins > Segmentation > deprecated >Trainable Segmentation.
 
 === Chose training image ===
 
@@ -22,7 +22,7 @@ First, you have to choose the image you want to train on.
 
 [[Image:trainingImage.jpg]]
 
-Now open the plugin (Plugins / Segmentation / Trainable Segmentation). It opens a training window that contains the training image.
+Now open the plugin (Plugins > Segmentation > deprecated > Trainable Segmentation). It opens a training window that contains the training image.
 
 [[Image:Playground.jpg]]
 
