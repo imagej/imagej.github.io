@@ -95,7 +95,7 @@ With this button we can save the current trace information into a data file that
 The default number of classes of the plugin is two, but through this button we can increase up to 5 the classes. The name of the new classes can be changed on the [[Advanced_Weka_Segmentation#Settings|Settings dialog]].
 
 ==== Settings ====
-[[Image:AWS-Settings.png|thumb|200px|Settings dialog of the Trainable Segmentation Plugin]]
+[[Image:AWS-Settings.png|thumb|300px|Settings dialog of the Trainable Segmentation Plugin]]
 The rest of tunable parameters of the plugin can be changed on the Settings dialog, which is displayed when clicking on this button.
 
 ===== Training features =====
@@ -147,7 +147,7 @@ When using grayscale images, the input image will be also included as a feature.
 * '''Maximum sigma''': maximum radius of the filters used to create the features. By default 16 pixels.
 
 ===== Classifier options =====
-[[Image:AWS-Classifier-selection.png|thumb|200px|Classifier selection in the Trainable Weka Segmentation [[Advanced_Weka_Segmentation#Settings|Settings dialog]].]]
+[[Image:AWS-Classifier-selection.png|thumb|300px|Classifier selection in the Trainable Weka Segmentation [[Advanced_Weka_Segmentation#Settings|Settings dialog]].]]
 The default classifier is a '''multi-threaded''' version of  [http://en.wikipedia.org/wiki/Random_forest random forest] with 200 trees and 2 random features per node. However the user can select any available classifier in the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
 
 ===== Class names =====
