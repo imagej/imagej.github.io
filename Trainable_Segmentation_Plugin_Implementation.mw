@@ -1,4 +1,9 @@
-This page provides a high level overview of how the [[Trainable Segmentation]] plugin (TSP) works.
+<p><div style="background:#fdd; padding: 10px 10px 0 10px; border: 1px solid black;">
+'''DEPRECATION NOTICE:''' 
+This page describes the implementation of the '''deprecated''' Trainable Segmentation plugin, the previous incarnation of the [[Trainable Weka Segmentation]] plugin and library. We encourage users and developers to work with the more advanced and properly maintained [[Trainable Weka Segmentation]] instead.
+</div></p>
+
+This page provides a high level overview of how the '''deprecated''' [[Trainable Segmentation]] plugin (TSP) works.
 
 ==Summary==
 The plug in creates a set of features for each input image pixel by individually applying various filters (for example, Gaussian blur) to the image. The user then selects sets of pixels in the image and assigns each set to a class (e.g. background, cells, nucleus, spores, cell membranes). The plug in builds a forest of classification trees by bootstrapping the feature data and assigned classes for the user chosen pixels. This is the classifier. The classifier can then be used to segment the trained image and other images by applying the forest to each pixel - the trees 'vote' for which class each pixel belongs to based on its features.
