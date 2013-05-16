@@ -676,7 +676,7 @@ The preparation phase of 3D rendering is a bit more complicated. We will use the
 
 5. Press '''enter''' to apply the transformation to the stack.
 
-6. Now use the rectangle tool to define a crop area that will include the specimen with minimal background. Write down the ''x'',''y''coordinates ''width'' and ''height'' of the crop  area and paste them into the render.bsh script (line 128). 
+6. Now use the rectangle tool to define a crop area that will include the specimen with minimal background. Write down the ''x'',''y''coordinates ''width'' and ''height'' of the crop  area and paste them into the render.bsh script (line 128). ''Note: A more efficient way to capture the numbers is to start macro record before and simply copy and paste them from the macro recorder window.'' 
 
 7. Apply crop (Image->Crop).
 
