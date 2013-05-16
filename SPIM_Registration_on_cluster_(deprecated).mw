@@ -721,7 +721,7 @@ t=1 -Dangle=1  -- --no-splash /projects/tomancak_lightsheet/Tassos/jobs/3d_rende
 Each bash script is passing a ''directory'', ''timepoint'' and rendering ''angle'' parameters to '''render.bsh''' Beanshell script. The script is little more complicated than before. It combines Saalfeld's Beanshell magic with my clumsy macro programming. It is necessary to change the parameters inside the script according to the recipe above for each individual rendering run. 
 
 <source lang="bash">
-mport java.lang.Runtime;
+import java.lang.Runtime;
 import ij.ImagePlus;
 import ij.ImageStack;
 import ij.process.ImageProcessor;
