@@ -24,6 +24,10 @@ Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system
 
 The Lightsheet Z.1 data are saved into the proprietary Zeiss file format '''.czi'''. Zeiss is working with [http://loci.wisc.edu/software/bio-formats Bioformats] to make the .czi files compatible with Open Source platforms including Fiji. At the moment Fiji can only open .czi files that are saved as a single file per view where the left and right illumination images have been fused into one image inside the Zeiss ZEN software. This situation is going to change, for now, if you want to process the data with Fiji, save them in that way (TBD).
 
+=== Getting familiar with Linux command line environment ===
+
+It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate [[Linux_command_line_tutorial]] page that explains the bare essentials.
+
 === Transferring data ===
 
 First we have to get the data to the cluster. This is easier said then done because we are potentially talking about terabytes of data. Moving data over 10Gb Ethernet is highly recommended otherwise the data transfer will take days. 
@@ -48,7 +52,7 @@ Change to the newly created Fiji-app directory and [http://fiji.sc/Update_Fiji#C
 ''Note: The output that follows may have some warnings and errors, but as long as it says somewhere Done: Checksummer and Done: Downloading... everything should be fine.''
 
 Done, you are ready to use Fiji on the cluster.
- 
+
 == Saving data as tif ==
 
 As a first step we will open the .czi files and save them as '''.tif'''. This is necessary because Fiji's bead based registration currently cannot open the .czi files. Opening hundreds of files several GB each sequentially and re-saving them as tif may take a long time on a single computer. We will use the cluster to speed-up that operation significantly.
