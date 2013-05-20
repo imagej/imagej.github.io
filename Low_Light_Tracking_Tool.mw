@@ -20,25 +20,28 @@ The plugin can be easily installed via the projects update site.
 ===Update Fiji===
 [[File:LLTT_Install1.jpg]]
 
-Hit 'Update Fiji' in the 'Help' menu.
+Hit '''Update Fiji''' in the '''Help''' menu.
 We suggest that you perform all available updates. 
 
 [[File:LLTT_Install2.jpg]]
 
 ===Add the project's update site===
-Please restart Fiji and hit 'Update Fiji' in the 'Help' menu once more. 
-Now hit the 'Advanced mode' button.
+Please restart Fiji and hit '''Update Fiji''' in the '''Help''' menu once more. 
+Now hit the '''Advanced mode''' button.
 
 [[File:LLTT_Install3.jpg]]
 
-Hit 'Manage update sites'.
+Hit '''Manage update sites'''.
 
 [[File:LLTT_Install4.jpg]]
 
-Hit the 'add' button. 
-Enter ''''''
+Hit the '''Add''' button. 
+Enter '''http://sites.imagej.net/Alex-krull/''' in the ''URL'' field.
+You can choose what to enter in the ''Name'' field. We suggest ''LLTT''.
 
 [[File:LLTT_Install5.jpg]]
+
+Install or update all 6 items shown above by hitting '''Apply changes'''
 
 ==Load the data==
 [[Image:OpenData.png]]
