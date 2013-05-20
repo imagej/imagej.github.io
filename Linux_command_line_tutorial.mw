@@ -140,4 +140,10 @@ Good, looks like 200 are finished. Its tempting to keep pressing enter on those 
 
  watch -n5 'ls ../../output/*.tif | wc -l' 
 
-we get the number of files automatically updated every 5 seconds (without the -n paramater every 2s by default).
+outputs continuously
+
+ Every 5.0s: ls ../../output/*.tif | wc -l                                                                                             
+ Mon May 20 21:16:37 2013
+ 180
+
+i.e. we get the number of files automatically updated every 5 seconds (without the -n paramater every 2s by default).
