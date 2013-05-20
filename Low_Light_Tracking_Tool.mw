@@ -148,7 +148,16 @@ The columns in each file have the following meaning:
 * column 8 the maximum value of sigma in case sigma is determined automatically
 * column 9 boolean value indicating if sigma was fixed (1) or determined automatically (0)
 * column 10 boolean value indicating if object was assumed to be coupled (assumed to have the same flux and sigma) with others.
+* column 11 the estimated flux
+* column 12 the estimated background flux per pixel
+* column 13 the total estimated background flux in the considered window
+* column 14 the number of pixels in the considered window
+* column 15 the fraction of flux in the considered window assumed to belong to the tracked object
+* column 16 the total estimated flux in the considered window
+* column 17 the estimated flux
+* column 18 the number of required iterations
 
+ 
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 [[Category:Tutorials]]
