@@ -17,13 +17,15 @@ This software implements the localization algorithm described in the following p
 ==Installation of the plugin== 
 The plugin can be easily installed via the projects update site.
 
+===Update Fiji===
 [[File:LLTT_Install1.jpg]]
 
-Hit the 'Update Fiji' in the Help menu.
+Hit 'Update Fiji' in the Help menu.
+We suggest that you perform all available updates. 
 
 [[File:LLTT_Install2.jpg]]
 
-We suggest that you perform all available updates. 
+===Add the project's update site===
 Please restart Fiji and hit 'Update Fiji' once more. 
 Now hit the 'Advanced mode' Button.
 
