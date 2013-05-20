@@ -10,8 +10,7 @@
 | category               = [[:Category:Tracking|Tracking]]
 }}
 
-This software is a tool for the tracking of low light subresolution objects in fluorescent microscopy images or other imaging techniques. The software implements the theoretically optimal maximum likelihood approach. It thus attempts to find the position estimate yielding the highest probability to generate the observed image.  
-This software implements the localization algorithm described in the following paper:
+This software is a tool for the tracking of low light subresolution objects in fluorescent microscopy. It can be applied in other fields as well. The plugin implements the localization algorithm described in the following paper:
 "A Divide and Conquer Strategy for the Maximum Likelihood localization of Low Intensity Objects" By Alexander Krull et al, 2013 (Final Journal).
 
 ==Installation of the plugin== 
