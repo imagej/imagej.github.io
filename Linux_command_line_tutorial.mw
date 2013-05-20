@@ -117,14 +117,27 @@ This tells the interpreter to look for the file executable_script in the current
 
 '''man'''
 
-== Cluster commands ==
+== Using it on the cluster ==
 
-'''bqueues'''
+Here we put all of that goodness to work to make our life on a cluster easier.
 
-'''bjobs'''
+Once we submit the jobs we want to monitor the progress. For example '''bjobs -r''' gives us an output summarising our running jobs. If there are many its not that useful. How about counting them?
 
-'''bsub'''
+ bjobs -r | wc -l
+ 160
 
-'''bpeek'''
+More useful, we have 160 jobs running. Still how about the pending ones? We can do that:
 
-'''bkill'''
+ bjobs -r | grep PEND | wc -l
+ 40
+
+Ok 40. Now, how many jobs actually finished successfully? Lets say they create some ''.tif'' files a few directories down
+
+ ls ../../output/*.tif | wc -l
+ 200
+
+Good, looks like 200 are finished. Its tempting to keep pressing enter on those commands but its also tiresome. Using
+
+ watch -n5 'ls ../../output/*.tif | wc -l' 
+
+we get the number of files automatically updated every 5 seconds (without the -n paramater every 2s by default).
