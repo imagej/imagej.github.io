@@ -39,9 +39,11 @@ Hit the '''Add''' button.
 Enter '''http://sites.imagej.net/Alex-krull/''' in the ''URL'' field.
 You can choose what to enter in the ''Name'' field. We suggest ''LLTT''.
 
+===Install files===
 [[File:LLTT_Install5.jpg]]
 
 Install or update all 6 items shown above by hitting '''Apply changes'''
+Please restart Fiji afterwards.
 
 ==Load the data==
 [[Image:OpenData.png]]
