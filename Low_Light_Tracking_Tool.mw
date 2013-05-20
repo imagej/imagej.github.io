@@ -10,7 +10,7 @@
 | category               = [[:Category:Tracking|Tracking]]
 }}
 
-
+This software is a tool for the tracking of low light subresolution objects in fluorescent microscopy images or other imaging techniques.  
 This software implements the tracking method described in the following paper:
 "A Divide and Conquer Strategy for the Maximum Likelihood localization of Ultra Low Intensity Objects" By Alexander Krull et al, 2013 (Final Journal).
 
