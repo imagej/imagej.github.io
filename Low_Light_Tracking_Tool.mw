@@ -35,9 +35,10 @@ Hit '''Manage update sites'''.
 [[File:LLTT_Install6.jpg]]
 
 Hit the '''Add''' button. 
-Enter '''http://sites.imagej.net/Alex-krull/''' in the ''URL'' field.
-You can choose what to enter in the ''Name'' field. We suggest ''LLTT''.
-Hit the '''enter key''' and than the '''Close''' button.
+Enter '''<code><nowiki>http://sites.imagej.net/LLT/</nowiki></code>''' in the ''URL'' field.
+You can choose what to enter in the ''Name'' field. We suggest '''<code><nowiki>LLTT</nowiki></code>'''.
+
+When you are done hit the '''enter key''' and afterwards the '''Close''' button.
 
 ===Install files===
 [[File:LLTT_Install5.jpg]]
