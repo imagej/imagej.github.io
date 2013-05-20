@@ -32,7 +32,7 @@ Now hit the '''Advanced mode''' button.
 
 Hit '''Manage update sites'''.
 
-[[File:LLTT_Install4.jpg]]
+[[File:LLTT_Install6.jpg]]
 
 Hit the '''Add''' button. 
 Enter '''http://sites.imagej.net/Alex-krull/''' in the ''URL'' field.
@@ -42,7 +42,7 @@ Hit the '''enter key''' and than the '''Close''' button.
 ===Install files===
 [[File:LLTT_Install5.jpg]]
 
-Install or update all 6 items shown above by hitting '''Apply changes'''
+Install or update all 6 items shown above by hitting '''Apply changes'''.
 Please restart Fiji afterwards.
 
 ==Load the data==
