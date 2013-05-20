@@ -111,6 +111,8 @@ This tells the interpreter to look for the file executable_script in the current
 
 '''grep'''
 
+'''sort'''
+
 '''find'''
 
 '''man'''
