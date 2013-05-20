@@ -27,11 +27,17 @@ We suggest that you perform all available updates.
 
 ===Add the project's update site===
 Please restart Fiji and hit 'Update Fiji' in the 'Help' menu once more. 
-Now hit the 'Advanced mode' Button.
+Now hit the 'Advanced mode' button.
 
 [[File:LLTT_Install3.jpg]]
 
 Hit 'Manage update sites'.
+
+[[File:LLTT_Install4.jpg]]
+
+Hit the 'add' button. Fille the 
+
+[[File:LLTT_Install5.jpg]]
 
 ==Load the data==
 [[Image:OpenData.png]]
