@@ -13,10 +13,10 @@
 This software is a tool for the tracking of low-light sub-resolution objects in fluorescent microscopy. It can be applied in other fields as well. The plugin implements the localization algorithm described in the following paper:
 "A Divide and Conquer Strategy for the Maximum Likelihood localization of Low Intensity Objects" By Alexander Krull et al, 2013 (Final Journal).
 
-==Installation of the plugin== 
+=Installation of the plugin= 
 The plugin can be easily installed via the projects update site.
 
-===Add the project's update site to your Fiji===
+==Add the project's update site to your Fiji==
 Please refer to the [[Update_Sites | tutorial]] on how to add our update site to your Fiji installation.  
 Our update site has the following URL:
 
@@ -24,18 +24,18 @@ Our update site has the following URL:
 
 [[File:LLTT_Install4.jpg]]
 
-===Install the required files===
+==Install the required files==
 [[File:LLTT_Install5.jpg]]
 
 Install or update all 6 items shown above by hitting '''Apply changes'''.
 Please restart Fiji afterwards.
 
-==Load the data==
+=Load the data=
 [[Image:OpenData.png]]
 
 Load the image stack or hyper stack to be tracked. Use whichever method you prefer in Fiji.
 
-==Starting the Plugin==
+=Starting the Plugin=
 
 [[Image:LLTT_Start1.jpg]]
 
@@ -43,7 +43,7 @@ After the data is loaded, start the plugin by clicking:
 
 '''plugins->Tracking->Low Light Tracking Tool'''
 
-==Viewing and navigating through data==
+=Viewing and navigating through data=
 
 [[Image:LLTT_GlobalOptions2d.jpg]]
 
@@ -68,23 +68,23 @@ You have three ways of navigating through your stack or hyper stack:
 * You can set frame number, slice number and channel number in the control window.
 * You can use your middle mouse button to directly click into one of the kymographs to set the frame number. If you are working with 3D data you can click into one of the side projections with your middle mouse button to set the slice number.
 
-==Tracking==
-===Create Session===
+=Tracking=
+==Create Session==
 
 [[Image:LLTT ChooseSession.jpg]]
 
 Click on the New Session button, or select from the menu.  The New session window opens.  Here you can pick a name for the session as well as the channel you want to track on. Finally you can choose your tracking method.
 
-===Choose a tracking method===
+==Choose a tracking method==
 
 There are currently two tracking algorithms available:
-====GaussianML====
+===GaussianML===
 This algorithm implements the maximum likelihood estimator based on a shot noise model. This means it considers the statistics of photon distribution in the image generation process to find the best location estimate. In our publication this is referred to as the inner loop.
 
-====EMCCD-GaussinML====
+===EMCCD-GaussinML===
 This algorithm implements the maximum likelihood estimator based on a more sophisticated model including the stochastic amplification process in an EMCCD. We have shown, that it yields more accurate results in situations with low light levels. In our publication this algorithm is referred to as the '''Nested Maximum Likelihood Algorithm'''.
 
-===Pick Session Options===
+==Pick Session Options==
 
 [[Image:SessionOptions.png]]
 
@@ -96,20 +96,20 @@ Automatic sigma can also be slower, this is more so for 3D data.
 
 This can be changed from the Session Options menu, under edit.
 
-===Select Objects to Track===
+==Select Objects to Track==
 To track an object, make sure the cross hair icon in the Fiji toolbar is selected and then double click roughly on the object you would like to track in the main window. This will create a new trace which is shown a circle. An accordant entry will appear in the table in the control panel. You can select the traces by clicking on them here or directly in the main window to move them around or edit them. Multiple traces can be selected by holding the shift or control key when selecting.
 
 [[Image:CreateDots.png]]
 
 You can change a trace's label by clicking on the text in the label field, or change the color by clicking on the colored area.
 
-===Edit Dots===
+==Edit Dots==
 
 [[Image:ObjectOption.png]]
 
 If at this point you find that the parameters you picked were less ideal you can change the parameters. If you change the session options, that only affects new selections. So you have two options, delete the old ones, or change their parameters with the edit Object selection from the edit menu.
 
-===Start Tracking===
+==Start Tracking==
 
 Only the highlighted objects will be tracked.  So in this example, both are highlighted and will be tracked at the same time.
 
@@ -123,7 +123,7 @@ Second, if you try to track fast moving objects you can select the Multiscale me
 
 Third, click on Start Tracking.
 
-===Result===
+==Result==
 
 [[Image:Result1.png]]
 
@@ -139,7 +139,7 @@ The file format is described [[Low_Light_Tracking_Tool#File_format | below]].
 
 You can also reload previously tracked data and undo any unsaved changes by pressing the reload button. If you want to open data which is stored in a different location you can load it by clicking on the address bar and navigating to the data's location. You can then re-track, or examine the data.
 
-==3D Data==
+=3D Data=
 
 When working with 3D data you will be asked to provide the ''ΔZ ratio'' in addition to the three other values. 
 
@@ -154,13 +154,13 @@ Otherwise, tracking function is the same. It is best to optimize the sigma value
 
 [[Image:NewWithDot.jpg]]
 
-==Tips==
+=Tips=
 
 * If you have multichannel data, each channel needs its own session.  You can select which sessions are visible by checking their boxes in the Visible Sessions list. You can use the current session drop down menu to switch between sessions. 
 * Using the Merge, Split, Trim, and Delete buttons allows you to edit your traces by combining or deleting them. One useful example is if your object disappears periodically but you know that it is not a new object, and would like to combine the two separate traces you create. 
 * You can zoom into the kymographs by moving the cursor over the kymograph window and holding down shift, while using the scroll wheel on the mouse.
 
-==File format==
+=File format=
 The tracking results are stored in text files with the ending '.trcT'. Each file holds the result of one trace. The structure of the file name is the following:
 
 <name of image file>_<name of session>_<label of trace>_<id of trace>.trcT
@@ -185,7 +185,7 @@ The columns have the following meaning:
 * column 15 the fraction of flux in the considered window assumed to belong to the tracked object
 * column 16 the total estimated flux in the considered window
 
-== License ==
+= License =
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
  
 
