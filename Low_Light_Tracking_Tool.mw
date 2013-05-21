@@ -122,6 +122,13 @@ You can also reload previously tracked data by clicking on the address bar and n
 
 ==3D Data==
 
+When working with 3D data you will be asked to provide the ''ΔZ ratio'' in addition to the three other values. 
+
+The z ratio, is the slice thickness, divided by the pixel width. This value is only used for 3D data.
+Example: My pixel size for my data is 100 nm, and my slice thickness is 200 nm. I would then enter a value of 2.
+
+
+
 [[Image:NewWindows.jpg]]
 
 3D data is very similar to 2D data, there are just a few more windows that open when you start. The data window, and the kymographs appears, but a second set of windows appear.  A max Z projection window, and max Y and X projects. The side projections are useful to place your starting tracking in the correct slice. So before clicking on the object in the data window, change the z to the correct plane first. 
