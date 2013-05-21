@@ -38,6 +38,12 @@ After the data is loaded, start the plugin.
 
 ==Starting the Plugin==
 
+[[Image:LLTT_Start1.jpg]]
+
+the plugin can be found in
+
+'''plugins->Tracking->Low_Light_Tracking_Tool'''
+
 [[Image:GlobalOptions.png]]
 
 Enter intensity offset, and ΔZ ratio. 
