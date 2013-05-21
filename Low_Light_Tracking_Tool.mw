@@ -171,8 +171,6 @@ The columns have the following meaning:
 * column 14 the number of pixels in the considered window
 * column 15 the fraction of flux in the considered window assumed to belong to the tracked object
 * column 16 the total estimated flux in the considered window
-* column 17 the estimated flux
-* column 18 the number of required iterations
 
 == License ==
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
