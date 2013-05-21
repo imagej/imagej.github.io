@@ -114,7 +114,7 @@ You can watch the trace fill in the kymograph line as the tracking is in progres
 
 [[Image:Result2.png]]
 
-The table now contains more information now, with the first frame of the trace, and the last frame.  Double clicking on the ID# of the object will jump the frame number to the beginning and end of the trace. 
+The table now contains more information, with the first frame of the trace, and the last frame.  Double clicking on the ID# of the object will jump the frame number to the beginning and end of the trace. 
 
 The data is already saved automatically by default. You can turn that off by unchecking the Auto Save box.  
 
