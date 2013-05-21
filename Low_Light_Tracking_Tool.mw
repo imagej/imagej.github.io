@@ -150,8 +150,9 @@ The tracking results are stored in text files with the ending '.trcT'. Each file
 
 <name of image file>_<name of session>_<label of trace>_<id of trace>.trcT
 
-The files are created in the working directory.
-The columns in each file have the following meaning:
+The files are created in the working directory. Each file begins with some lines starting with '#'. These lines store information for the tracking program they will be ignored by most programs like matlab or gnuplot potentially used to further analize the data.
+This meta information is followed by columns of data holding the actual tracking results. 
+The columns have the following meaning:
 * column 1 frame number
 * column 2 trace id
 * column 3 x-position in pixels
@@ -170,7 +171,6 @@ The columns in each file have the following meaning:
 * column 16 the total estimated flux in the considered window
 * column 17 the estimated flux
 * column 18 the number of required iterations
-
 
 == License ==
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
