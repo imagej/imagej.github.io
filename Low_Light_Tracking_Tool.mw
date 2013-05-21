@@ -89,9 +89,11 @@ Automatic sigma can also be slower, this is more so for 3D data.
 This can be changed from the Session Options menu, under edit.
 
 ===Select Objects to Track===
-To track an object, make sure the cross hair icon in the Fiji toolbar is selected and then double click on the object you would like to track in the data window. This will create a circle around the object. An entry will then be in the table in the control panel. You can change the label by clicking on the text in the label field, or change the color by clicking on the colored area. 
+To track an object, make sure the cross hair icon in the Fiji toolbar is selected and then double click roughly on the object you would like to track in the main window. This will create a new trace which is shown a circle. An accordant entry will appear in the table in the control panel. You can select the traces by clicking on them here or directly in the main window to move them around or edit them. Multiple traces can be selected by holding the shift or control key when selecting.
 
 [[Image:CreateDots.png]]
+
+You can change a trace's label by clicking on the text in the label field, or change the color by clicking on the colored area.
 
 ===Edit Dots===
 
