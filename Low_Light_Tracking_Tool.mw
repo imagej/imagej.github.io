@@ -17,8 +17,12 @@ This software is a tool for the tracking of low light subresolution objects in f
 The plugin can be easily installed via the projects update site.
 
 ===Add the project's update site===
+Please refer to the [[Update_Sites | Tutorial]] to at our update site with the 
+URL:
+
+  '''<code><nowiki>http://sites.imagej.net/Alex-krull/</nowiki></code>'''
+
 [[File:LLTT_Install4.jpg]]
-Please refer to the [[Update_Sites | Tutorial]] to at our update site with the URL:  '''<code><nowiki>http://sites.imagej.net/LLT/</nowiki></code>'''
 
 ===Install files===
 [[File:LLTT_Install5.jpg]]
