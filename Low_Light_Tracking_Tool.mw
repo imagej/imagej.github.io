@@ -68,6 +68,7 @@ You have three ways of navigating through your stack or hyper stack:
 * You can set frame number, slice number and channel number in the control window.
 * You can use your middle mouse button to directly click into one of the kymographs to set the frame number. If you are working with 3D data you can click into one of the side projections with your middle mouse button to set the slice number.
 
+==Tracking==
 ===Create Session===
 
 [[Image:LLTT ChooseSession.jpg]]
@@ -75,6 +76,13 @@ You have three ways of navigating through your stack or hyper stack:
 Click on the New Session button, or select from the menu.  The New session window opens.  Here you can pick a name for the session, your tracking method, and which channel you want to track.  
 
 ====Tracking Methods====
+
+There are currently two tracking methods available:
+====GaussianML====
+This algorithm implements the maximum likelihood estimator based on a shot noise model. This means it considers the statistics of photon distribution in the image generation process to find the best location estimate. In our publication this is referred to as the inner loop.
+
+====EMCCD-GaussinML====
+This algorithm implements the maximum likelihood estimator based on a more sophisticated model including the stochastic amplification process in an EMCCD. We have shown, that it yields more accurate results in situations with low light levels. In our publication this algorithm is referred to as the '''Nested Maximum Likelihood Algorithm'''.
 
 ===Pick Session Options===
 
