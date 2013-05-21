@@ -45,19 +45,9 @@ After the data is loaded, start the plugin by clicking:
 
 ==2D Data==
 
-
 [[Image:LLTT_GlobalOptions2d.jpg]]
 
-Enter intensity offset, and ΔZ ratio. 
-
-The Offset applies if there is a minimum value that the camera registers. 
-Example: Some microscopes would not allow a value under 100, so in that case you would enter 100 as the offset.
-
-The z ratio, is the slice thickness, divided by the pixel width. This value is only used for 3D data.
-Example: My pixel size for my data is 100 nm, and my slice thickness is 200 nm. I would then enter a value of 2.
-
-
-
+You will be asked to enter three values. Cameras used in microscopy often add a bias or '''Intensity Offset''' in order to avoid negative values caused by read out noise. This quantitiy should be specified here, in order to optain optimal tracking results. If you are using an EMCCD camera you should specify the mean ''EMCCD gain''' that was used. Otherwise set it to ''1.0''. Finally you have to provide the ratio ('''Electrons per A/D count''') at which the analog digital unit in your camera converts photo electrons into A/D count. Pleas consult you camera's specs sheet to optain this information.
 
 [[Image:Opendatasmall.png]]
 
