@@ -47,7 +47,7 @@ After the data is loaded, start the plugin by clicking:
 
 [[Image:LLTT_GlobalOptions2d.jpg]]
 
-You will be asked to enter three values. Cameras used in microscopy often add a bias or '''Intensity Offset''' in order to avoid negative values caused by read out noise. This quantitiy should be specified here, in order to optain optimal tracking results. If you are using an EMCCD camera you should specify the mean ''EMCCD gain''' that was used. Otherwise set it to ''1.0''. Finally you have to provide the ratio ('''Electrons per A/D count''') at which the analog digital unit in your camera converts photo electrons into A/D count. Pleas consult you camera's specs sheet to optain this information.
+You will be asked to enter three values. Cameras used in microscopy often add a bias or '''Intensity Offset''' in order to avoid negative values caused by read out noise. This quantitiy should be specified here, in order to optain optimal tracking results. If you are using an EMCCD camera you should specify the mean ''EMCCD gain''' that was used. Otherwise set it to ''1.0''. Finally you have to provide the ratio ( '''Electrons per A/D count''' ) at which the analog digital unit in your camera converts photo electrons into A/D count. Pleas consult you camera's specs sheet to optain this information.
 
 [[Image:Opendatasmall.png]]
 
