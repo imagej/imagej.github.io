@@ -73,11 +73,11 @@ You have three ways of navigating through your stack or hyper stack:
 
 [[Image:LLTT ChooseSession.jpg]]
 
-Click on the New Session button, or select from the menu.  The New session window opens.  Here you can pick a name for the session, your tracking method, and which channel you want to track.  
+Click on the New Session button, or select from the menu.  The New session window opens.  Here you can pick a name for the session as well as the channel you want to track on. Finally you can choose your tracking method.
 
-====Tracking Methods====
+===Choose a tracking method===
 
-There are currently two tracking methods available:
+There are currently two tracking algorithms available:
 ====GaussianML====
 This algorithm implements the maximum likelihood estimator based on a shot noise model. This means it considers the statistics of photon distribution in the image generation process to find the best location estimate. In our publication this is referred to as the inner loop.
 
