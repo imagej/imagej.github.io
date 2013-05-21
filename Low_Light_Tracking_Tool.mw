@@ -118,7 +118,7 @@ The table now contains more information, with the first frame of the trace, and 
 
 The data is already saved automatically by default. You can turn that off by unchecking the Auto Save box. The data can than be saved using the save button.
 The data is by default stored in the directory of the stack you are working on.
-The file format is described below.
+The file format is described [[Low_Light_Tracking_Tool#File_format | below]].
 
 You can also reload previously tracked data by pressing the reload button. If the data is stored in a different location you can load it by clicking on the address bar and navigating to the data's location. You can then retrack, or examine the data.
 
