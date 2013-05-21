@@ -33,18 +33,20 @@ Please restart Fiji afterwards.
 ==Load the data==
 [[Image:OpenData.png]]
 
-Load the image stack to be tracked. Use whichever method you prefer in Fiji.
-After the data is loaded, start the plugin.
+Load the image stack or hyper stack to be tracked. Use whichever method you prefer in Fiji.
 
 ==Starting the Plugin==
 
 [[Image:LLTT_Start1.jpg]]
 
-To start the plugin click:
+After the data is loaded, start the plugin by clicking:
 
 '''plugins->Tracking->Low Light Tracking Tool'''
 
-[[Image:GlobalOptions.png]]
+==2D Data==
+
+
+[[Image:LLTT_GlobalOptions2d.jpg]]
 
 Enter intensity offset, and ΔZ ratio. 
 
@@ -54,7 +56,7 @@ Example: Some microscopes would not allow a value under 100, so in that case you
 The z ratio, is the slice thickness, divided by the pixel width. This value is only used for 3D data.
 Example: My pixel size for my data is 100 nm, and my slice thickness is 200 nm. I would then enter a value of 2.
 
-==2D Data==
+
 
 
 [[Image:Opendatasmall.png]]
