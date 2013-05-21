@@ -100,7 +100,7 @@ At this point you have three options.
 
 First, if you have automatic sigma selected you can use the optimize button. This will optimize the sigma value, and then you can turn off automatic sigma for each object. This will make the tracking faster.
 
-Second, if you have noisy data you can select the Multiscale method. This will use iterative smoothing to find the object. You can change the default behavior in the edit menu.
+Second, if you try to track fast moving objects you can select the Multiscale method. This will use iterative smoothing in each frame to find the object. You can change the default behavior in the edit menu.
 
 [[Image:MScaleOptions.png]]
 
