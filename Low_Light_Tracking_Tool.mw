@@ -10,7 +10,7 @@
 | category               = [[:Category:Tracking|Tracking]]
 }}
 
-This software is a tool for the tracking of low light subresolution objects in fluorescent microscopy. It can be applied in other fields as well. The plugin implements the localization algorithm described in the following paper:
+This software is a tool for the tracking of low-light sub-resolution objects in fluorescent microscopy. It can be applied in other fields as well. The plugin implements the localization algorithm described in the following paper:
 "A Divide and Conquer Strategy for the Maximum Likelihood localization of Low Intensity Objects" By Alexander Krull et al, 2013 (Final Journal).
 
 ==Installation of the plugin== 
@@ -47,7 +47,7 @@ After the data is loaded, start the plugin by clicking:
 
 [[Image:LLTT_GlobalOptions2d.jpg]]
 
-You will be asked to enter three values. Cameras used in microscopy often add a bias or '''Intensity Offset''' in order to avoid negative values caused by read out noise. This quantitiy should be specified here, in order to optain optimal tracking results. If you are using an EMCCD camera you should specify the mean '''EMCCD gain''' that was used. Otherwise set it to ''1.0''. Finally you have to provide the ratio ('''Electrons per A/D count''') at which the analog digital unit in your camera converts photo electrons into A/D counts. Please consult you camera's specs sheet to optain this information.
+You will be asked to enter three values. Cameras used in microscopy often add a bias or '''Intensity Offset''' in order to avoid negative values caused by read out noise. This quantity should be specified here, in order to obtain optimal tracking results. If you are using an EMCCD camera you should specify the mean '''EMCCD gain''' that was used. Otherwise set it to ''1.0''. Finally you have to provide the ratio ('''Electrons per A/D count''') at which the analog digital unit in your camera converts photo electrons into A/D counts. Please consult you camera's specs sheet to obtain this information.
 
 [[Image:Opendatasmall.png]]
 
@@ -82,7 +82,7 @@ Automatic sigma can also be slower, this is more so for 3D data.
 This can be changed from the Session Options menu, under edit.
 
 ===Select Objects to Track===
-To track an object, make sure the cross hair icon in the fiji toolbar is selected and then double click on the object you would like to track in the data window. This will create a circle around the object. An entry will then be in the table in the control panel. You can change the label by clicking on the text in the label field, or change the color by clicking on the colored area. 
+To track an object, make sure the cross hair icon in the Fiji toolbar is selected and then double click on the object you would like to track in the data window. This will create a circle around the object. An entry will then be in the table in the control panel. You can change the label by clicking on the text in the label field, or change the color by clicking on the colored area. 
 
 [[Image:CreateDots.png]]
 
@@ -120,7 +120,7 @@ The tracking results are already saved automatically by default. You can turn th
 They by default stored in the directory of the image stack you are working on.
 The file format is described [[Low_Light_Tracking_Tool#File_format | below]].
 
-You can also reload previously tracked data and undo any unsaved changes by pressing the reload button. If you want to open data which is stored in a different location you can load it by clicking on the address bar and navigating to the data's location. You can then retrack, or examine the data.
+You can also reload previously tracked data and undo any unsaved changes by pressing the reload button. If you want to open data which is stored in a different location you can load it by clicking on the address bar and navigating to the data's location. You can then re-track, or examine the data.
 
 ==3D Data==
 
@@ -143,7 +143,7 @@ Otherwise, tracking function is the same. It is best to optimize the sigma value
 
 If you have multichannel data, each channel needs its own session.  You can select which sessions are visible by checking their boxes in the Visible Sessions list. You can use the current session drop down menu to switch between sessions. 
 
-Using the Merge, Split, Trim, and Delete buttons allows you to edit your traces by combining or deleting them. One useful example is if your object disappears periodically but you know that it is not a new object, and would like to combine the two seperate traces you create. 
+Using the Merge, Split, Trim, and Delete buttons allows you to edit your traces by combining or deleting them. One useful example is if your object disappears periodically but you know that it is not a new object, and would like to combine the two separate traces you create. 
 
 You can zoom into the kymographs by moving the cursor over the kymograph window and holding down shift, while using the scroll wheel on the mouse.
 
@@ -152,7 +152,7 @@ The tracking results are stored in text files with the ending '.trcT'. Each file
 
 <name of image file>_<name of session>_<label of trace>_<id of trace>.trcT
 
-The files are created in the working directory. Each file begins with some lines starting with '#'. These lines store information for the tracking program they will be ignored by most programs like matlab or gnuplot potentially used to further analize the data.
+The files are created in the working directory. Each file begins with some lines starting with '#'. These lines store information for the tracking program they will be ignored by most programs like matlab or gnuplot potentially used to further analyze the data.
 This meta information is followed by columns of data holding the actual tracking results. 
 The columns have the following meaning:
 * column 1 frame number
@@ -160,8 +160,8 @@ The columns have the following meaning:
 * column 3 x-position in pixels
 * column 4 y-position in pixels
 * column 5 z-position in pixels
-* column 6 the standard deviation (in x and y) of the Gaussion used as Point Spread Funtion PSF
-* column 7 the standard deviation (in z) of the Gaussion used as Point Spread Funtion PSF
+* column 6 the standard deviation (in x and y) of the Gaussian used as Point Spread Function PSF
+* column 7 the standard deviation (in z) of the Gaussian used as Point Spread Function PSF
 * column 8 the maximum value of sigma in case sigma is determined automatically
 * column 9 boolean value indicating if sigma was fixed (1) or determined automatically (0)
 * column 10 boolean value indicating if object was assumed to be coupled (assumed to have the same flux and sigma) with others.
