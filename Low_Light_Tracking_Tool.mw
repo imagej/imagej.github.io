@@ -92,10 +92,10 @@ Click on the New Session button, or select from the menu.  The New session windo
 
 There are currently two tracking algorithms available:
 ===GaussianML===
-This algorithm implements the maximum likelihood estimator based on a shot noise model. This means it considers the statistics of photon distribution in the image generation process to find the optimal location estimate. In our publication this is referred to as the inner loop.
+This algorithm implements the [http://en.wikipedia.org/wiki/Maximum_likelihood_estimator maximum likelihood estimator] based on a [http://en.wikipedia.org/wiki/Shot_noise shot noise] model. This means it considers the statistics of photon distribution in the image generation process to find the optimal location estimate. In our publication this is referred to as the inner loop.
 
 ===EMCCD-GaussianML===
-This algorithm implements the maximum likelihood estimator based on a more sophisticated model including the stochastic amplification process in an [http://en.wikipedia.org/wiki/Electron-multiplying_CCD EMCCD]. We have shown, that it yields more accurate results in situations with low light levels. In our publication this algorithm is referred to as the '''Nested Maximum Likelihood Algorithm'''.
+This algorithm implements the maximum likelihood estimator based on a more sophisticated model which in addition includes the stochastic amplification process in an [http://en.wikipedia.org/wiki/Electron-multiplying_CCD EMCCD] camera. We have shown, that it yields more accurate results in situations with low light levels. In our publication this algorithm is referred to as the '''Nested Maximum Likelihood Algorithm'''.
 
 ==Pick Session Options==
 
