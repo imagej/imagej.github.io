@@ -97,7 +97,7 @@ This algorithm implements the [http://en.wikipedia.org/wiki/Maximum_likelihood_e
 ===EMCCD-GaussianML===
 This algorithm implements the maximum likelihood estimator based on a more sophisticated model which in addition includes the stochastic amplification process in an [http://en.wikipedia.org/wiki/Electron-multiplying_CCD EMCCD] camera. We have shown, that it yields more accurate results in situations with low light levels. In our publication this algorithm is referred to as the '''Nested Maximum Likelihood Algorithm'''.
 
-==Pick Session Options==
+==Pick session options==
 
 [[Image:SessionOptions.png]]
 
