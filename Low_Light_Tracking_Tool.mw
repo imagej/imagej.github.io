@@ -54,7 +54,9 @@ Upon start of the plugin you will be asked to enter three values.
 ;EMCCD gain
 :If you are using an EMCCD camera you should specify the mean '''EMCCD gain''' that was used. Otherwise set it to ''1.0''. 
 ;Electrons per A/D count
-:Finally you have to provide the ratio at which the analog digital unit in your camera converts photo electrons into A/D counts. Please consult you camera's specs sheet to obtain this information.
+:Finally you have to provide the ratio at which the analog digital unit in your camera converts photo electrons into A/D counts. 
+Please consult you camera's specs sheet to obtain this information.
+The '''EMCCD gain''' and  '''Electrons per A/D count''' are only required for tracking with the [[Low_Light_Tracking_Tool#EMCCD-GaussianML | EMCCD-GaussianML method]]. The [[Low_Light_Tracking_Tool#GaussianML | GaussianML method]] uses these values only to correct the measured flux of the object and background.
 
 ==Windows==
 
