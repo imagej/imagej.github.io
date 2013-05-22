@@ -63,13 +63,10 @@ The '''EMCCD gain''' and  '''Electrons per A/D count''' are required for trackin
 
 =The User Interface=
 ==The different windows==
-When the plugin starts on a 2D image stack you have three windows and the control panel. 
+When the plugin starts on a 2D image stack you have three windows and the control panel. The main data window lets you move through the slices like normal. On the sides you see the two kymographs, which make is easier to see movement over time. 
+The control window will help you to organize your tracking activity. 
 
 [[Image:Opendatasmall.png]]
-
-The main data window lets you move through the slices like normal. On the sides you see the two kymographs, which make is easier to see movement over time. 
-The control window will help you to organize your tracking activity
-.
 [[Image:Controlwindownew.png]]
 
 If you would like the windows to become larger or smaller, change the size of the main data window and then select '''Arrange Windows''', from the '''View''' menu. Alternatively you can use the [[Low_Light_Tracking_Tool#Hot-Keys | hot-key]] '''Ctrl-W''' (when the focus is on the control panel) or '''W''' (when the focus is on one of the other windows).  This will also organize the windows if they have become scattered.
