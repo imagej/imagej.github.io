@@ -51,15 +51,17 @@ You will be asked to enter three values. Cameras used in microscopy often add a 
 
 [[Image:Opendatasmall.png]]
 
-When the plugin starts you have three windows.  The main data window lets you move through the slices like normal. On the sides you see the two kymographs, which make is easier to see movement over time. 
+When the plugin starts you have three windows and the control panel.  The main data window lets you move through the slices like normal. On the sides you see the two kymographs, which make is easier to see movement over time. 
 
 [[Image:Opendatalarge.png]]
 
 If you would like the windows to become larger or smaller, change the size of the data window and then select arrange windows, from the view menu. Or use Ctrl-W.  Arrange windows, will also organize the windows if they have become scattered.
 
+If you close one of the windows you can bring them back using the '''windows''' menu in the control panel.
+
 [[Image:Controlwindownew.png]]
 
-The control panel is the other window you will see that will allow you to do the tracking.
+The control panel is the window you see above. It will allow you to do the tracking.
 
 ==Navigation==
 The yellow lines in the kymographs indicate what frame you are currently working on. If you work with 3D data yellow lines in the side projections indicate what slice you are looking at. 
