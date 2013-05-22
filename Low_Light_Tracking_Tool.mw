@@ -216,9 +216,9 @@ The columns have the following meaning:
 * column 8 the maximum value of  σ in case  σ is determined automatically
 * column 9 boolean value indicating if  σ was fixed (1) or determined automatically (0)
 * column 10 boolean value indicating if object was assumed to be coupled (assumed to have the same flux and  σ) with others.
-* column 11 the estimated flux
-* column 12 the estimated background flux per pixel
-* column 13 the total estimated background flux in the considered window
+* column 11 the estimated flux in photons
+* column 12 the estimated background flux in photons per pixel
+* column 13 the total estimated background flux in the considered window in photons
 * column 14 the number of pixels in the considered window
 * column 15 the fraction of flux in the considered window assumed to belong to the tracked object
 * column 16 the total estimated flux in the considered window
