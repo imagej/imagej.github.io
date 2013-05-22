@@ -135,8 +135,7 @@ The software will start at the frame you are currently looking at and continue w
 Objects that are very close to each other should generally be tracked jointly by selecting them both before starting to track.
 Objects which are far away from each other should be tracked in individually one after the other.
 
-=Result=
-
+=== Viewing results==
 [[Image:Result1.png]]
 
 You can watch the trace fill in the kymograph line as the tracking is in progress.  If you see the tracking looks incorrect and lost the object, you can click on '''Stop Tracking''' and adjust the object location and the software will resume from the new starting point.
@@ -145,13 +144,14 @@ You can watch the trace fill in the kymograph line as the tracking is in progres
 
 The table now contains more information, with the first frame of the trace, and the last frame.  Double clicking on the ID# of the object will jump the frame number to the beginning and end of the trace. 
 
-The tracking results are already saved automatically by default. You can turn that off by unchecking the Auto Save box. The results can than be saved using the save button.
-They by default stored in the directory of the image stack you are working on.
+===Saving and Loading===
+The tracking results are already saved automatically by default. You can turn that off by un-checking the '''Auto Save''' box. The results can than be saved using the '''Save''' button.
+They are by default stored in the directory of the image stack you are working on.
 The file format is described [[Low_Light_Tracking_Tool#File_format | below]].
-
+When you start the plugin again with the same data file your results will be automatically loaded. 
 You can also reload previously tracked data and undo any unsaved changes by pressing the reload button. If you want to open data which is stored in a different location you can load it by clicking on the address bar and navigating to the data's location. You can then re-track, or examine the data.
 
-==Deleting and manipulating traces and sessions==
+===Deleting and manipulating traces and sessions===
 Using the '''Merge''', '''Split''', '''Trim''', and '''Delete''' buttons allows you to edit your traces by combining or deleting them. Sessions can be deleted using the ''''Delete session'''' button.
 
 ;Merging
