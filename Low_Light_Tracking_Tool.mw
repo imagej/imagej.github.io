@@ -203,7 +203,7 @@ The columns have the following meaning:
 * column 3 x-position in pixels
 * column 4 y-position in pixels
 * column 5 z-position in pixels
-* column 6 the standard deviation (in x and y) of the Gaussian used as Point Spread Function PSF
+* column 6  σ, the standard deviation (in x and y) of the Gaussian used as Point Spread Function PSF
 * column 7 the standard deviation (in z) of the Gaussian used as Point Spread Function PSF
 * column 8 the maximum value of  σ in case  σ is determined automatically
 * column 9 boolean value indicating if  σ was fixed (1) or determined automatically (0)
