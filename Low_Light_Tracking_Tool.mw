@@ -33,7 +33,8 @@ Please restart Fiji afterwards.
 =Load the data=
 [[Image:OpenData.png]]
 
-Load the image stack or hyper stack to be tracked. Use whichever method you prefer in Fiji. You can optain a file with sample data [[File:LLTT_BeadsExampleData.zip | here]].
+Load the image stack or hyper stack to be tracked. Use whichever method you prefer in Fiji. You can optain a file with sample data here:
+[[File:LLTT_BeadsExampleData.zip]].
 
 =Starting the Plugin=
 
