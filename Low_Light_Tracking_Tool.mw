@@ -134,7 +134,7 @@ The settings you make here will effect the selected object in the very frame you
 
 Only the highlighted objects will be tracked.  So in the example above both are highlighted and will be tracked at the same time.
 To start tracking select at least one trace and click on the '''Start tracking''' button or hit the hot-key '''G'''. 
-The software will start at the frame you are currently looking at and continue with the following frames until the end of the movie  or until you hit '''G''' again or click on '''Stopp tracking'''
+The software will start at the frame you are currently looking at and continue with the following frames until the end of the movie  or until you hit '''G''' again or click on '''Stop tracking'''
 
 Objects that are very close to each other should generally be tracked jointly by selecting them both before starting to track.
 Objects which are far away from each other should be tracked in individually one after the other.
