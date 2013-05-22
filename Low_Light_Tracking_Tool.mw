@@ -68,8 +68,11 @@ When the plugin starts on a 2D image stack you have three windows and the contro
 [[Image:Opendatasmall.png]]
 
 The main data window lets you move through the slices like normal. On the sides you see the two kymographs, which make is easier to see movement over time. 
+The control window will help you to organize your tracking activity
+.
 [[Image:Controlwindownew.png]]
-If you would like the windows to become larger or smaller, change the size of the data window and then select '''Arrange Windows''', from the '''View''' menu. Alternatively you can use the [[Low_Light_Tracking_Tool#Hot-Keys | hot-key]] '''Ctrl-W''' (when the focus is on the control panel) or '''W''' (when the focus is on one of the other windows).  This will also organize the windows if they have become scattered.
+
+If you would like the windows to become larger or smaller, change the size of the main data window and then select '''Arrange Windows''', from the '''View''' menu. Alternatively you can use the [[Low_Light_Tracking_Tool#Hot-Keys | hot-key]] '''Ctrl-W''' (when the focus is on the control panel) or '''W''' (when the focus is on one of the other windows).  This will also organize the windows if they have become scattered.
 
 If you close some of the windows you can bring them back using the '''windows''' menu in the control panel.
 If you close the control panel, this will terminate the program. Don't forget to [[Low_Light_Tracking_Tool#Saving_and_Loading | '''Save''']] your results before.
