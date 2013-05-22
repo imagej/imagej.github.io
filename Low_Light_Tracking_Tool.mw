@@ -96,11 +96,11 @@ This algorithm implements the maximum likelihood estimator based on a more sophi
 
 [[Image:SessionOptions.png]]
 
-After clicking Ok, a new window will open. In this window you can choose a manual sigma, or select automatic sigma.  Min and Max are only used if automatic is selected. 
+After clicking Ok, a new window will open. In this window you can choose a '''sigma''' value, which denotes the standard deviation (in pixels) of the Gaussian used to approximate the Point Spread Function (PSF). If you select automatic, this value is used only as initialization. In this case Min and Max are used as bounds for the estimation. These values will be the default values for all new traces you make in this session.
 
-You also can set your quality threshold.  Smaller numbers are higher quality, while larger numbers are lower quality but faster. 
+You also can set your quality threshold.  Smaller numbers are higher quality, while larger numbers are lower quality but faster.
 
-Automatic sigma can also be slower, this is more so for 3D data.
+Fixed sigma can be more stable and also faster, this is more so for 3D data.
 
 This can be changed from the Session Options menu, under edit.
 
