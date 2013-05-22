@@ -23,37 +23,7 @@ The easiest way to fetch the source code for Fiji is to use [https://github.com/
 
 <div style="background:#ffd; padding: 10px 10px 0 10px; border: 1px solid black;">
 <b>Note:</b> We have received some reports of the Debian packages below not working. Unfortunately, we do not currently have the resources to address these issues. If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us [http://fiji.sc/IRC in IRC] or contact the [http://groups.google.com/group/fiji-devel fiji-devel mailing list].
+
+We are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads above instead.
+
 </div>
-
-
-'''Please send any feedback about these packages to mark-fiji ''at'' longair.net would be very much appreciated.'''
-
-There are Debian packages of Fiji.  If you want to use the latest version that we have tested and consider to be stable, add the following lines to /etc/apt/sources.list:
-
- <nowiki>deb http://fiji.sc/downloads/apt/ ./</nowiki>
- <nowiki>deb-src http://fiji.sc/downloads/apt/ ./</nowiki>
-
-Then do the following:
-
- sudo apt-get update
- sudo apt-get install fiji
-
-You should then be able to just run "fiji" from the command line.
-
-==== Experimental Weekly Builds ====
-
-There is also an unstable version of the Debian Fiji packages, which is automatically built every week.  The advantage of this version is that you will get updates to Fiji more frequently, while the disadvantages are that these packages are very large, and may not have been tested at all.  If you want to use these packages, instead add the following to `/etc/apt/sources.list`:
-
- <nowiki>deb http://fiji.sc/downloads/apt-experimental/ ./</nowiki>
- <nowiki>deb-src http://fiji.sc/downloads/apt-experimental/ ./</nowiki>
-
-Then do:
-
- sudo apt-get update
- sudo apt-get install fiji
-
-==== Known Bugs ====
-
-* These packages should work for you, but fail to meet policy for being official Debian and Ubuntu packages in many ways - we are working towards this, however, so if you use the apt repository above and update regularly, you should see the packages improve and reduce in size over time.
-
-* These packages aren't signed at the moment, so you will get a warning about the packages not being authenticated.
