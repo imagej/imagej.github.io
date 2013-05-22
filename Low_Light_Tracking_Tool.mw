@@ -136,7 +136,7 @@ The software will start at the frame you are currently looking at and continue w
 Objects that are very close to each other should generally be tracked jointly by selecting them both before starting to track.
 Objects which are far away from each other should be tracked in individually one after the other.
 
-==Viewing results==
+=Working with tracking results=
 [[Image:Result1.png]]
 
 You can watch the trace fill in the kymograph line as the tracking is in progress.  If you see the tracking looks incorrect and lost the object, you can click on '''Stop Tracking''' and adjust the object location and the software will resume from the new starting point.
