@@ -101,8 +101,7 @@ After clicking Ok, a new window will open. In this window you can choose a '''si
 You also can set your quality threshold.  Smaller numbers are higher quality, while larger numbers are lower quality but faster.
 
 Fixed sigma can be more stable and also faster, this is more so for 3D data.
-
-This can be changed from the Session Options menu, under edit.
+All settings can later be altered by clicking on '''Session Options''', under '''Edit'''.
 
 ==Select Objects to Track==
 To track an object, make sure the cross hair icon in the Fiji toolbar is selected and then double click roughly on the object you would like to track in the main window. This will create a new trace which is shown a circle. An accordant entry will appear in the table in the control panel. You can select the traces by clicking on them here or directly in the main window to move them around or edit them. Multiple traces can be selected by holding the shift or control key when selecting.
