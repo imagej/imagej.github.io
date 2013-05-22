@@ -17,7 +17,7 @@ This software is a tool for the tracking of low-light sub-resolution objects in 
 The plugin can be easily installed via the projects update site.
 
 ==Add the project's update site to your Fiji installation==
-Please refer to the [[Update_Sites | tutorial]] on how to add our update site to your Fiji installation.  
+Please refer to the [[Update_Sites | '''tutorial''']] on how to add our update site to your Fiji installation.  
 Our update site has the following URL:
 
   '''<code><nowiki>http://sites.imagej.net/Alex-krull/</nowiki></code>'''
