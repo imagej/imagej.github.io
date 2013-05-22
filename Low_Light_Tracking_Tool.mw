@@ -118,13 +118,9 @@ If at this point you find that the parameters you picked were less ideal you can
 
 ==Start Tracking==
 
-Only the highlighted objects will be tracked.  So in this example, both are highlighted and will be tracked at the same time.
-
-At this point you have three options.  
-
-Second, if you try to track fast moving objects you can select the Multiscale method. This will use iterative smoothing in each frame to find the object. 
-
-Third, click on Start Tracking.
+Only the highlighted objects will be tracked.  So in the example above both are highlighted and will be tracked at the same time.
+To start tracking select at least one trace and click on the '''Start tracking''' button or hit the hot-key '''G'''. 
+The software will start at the frame you are currently looking at and continue with the following frames until you hit '''G''' again or click on '''Stop tracking'''
 
 ==Result==
 
