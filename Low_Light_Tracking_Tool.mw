@@ -141,11 +141,15 @@ You can also reload previously tracked data and undo any unsaved changes by pres
 ==Deleting and manipulating traces and sessions==
 Using the '''Merge''', '''Split''', '''Trim''', and '''Delete''' buttons allows you to edit your traces by combining or deleting them. Sessions can be deleted using the ''''Delete session'''' button.
 
-One useful application for merging of two traces is if your object disappears periodically but you know that it is not a new object, and would like to combine the two separate traces you create. You have to select at least two traces to merge them.
-Splitting will do the opposite and make two traces out of one by cutting it at the current frame.
-Trimming has the same effect but it keeps only the first part, while discarding the second.  
-When you delete a trace or a session you will be asked whether to delete the corresponding files as well. If you delete the files the traces will be '''permanently (!)''' removed. If you don't delete them, they can be restored using the '''reload''' button.
-Changes done by'''Merge''', '''Split''' and '''Trim''' can also be undone in this way. They are made permanent only when you hit the '''Save''' button or start tracking with the '''Autosave''' option activated.   
+;Merging
+:One useful application for merging of two traces is if your object disappears periodically but you know that it is not a new object, and would like to combine the two separate traces you create. You have to select at least two traces to merge them.
+;Splitting
+:Splitting will do the opposite of merging and make two traces out of one by cutting it at the current frame.
+;Trimming
+:Trimming has the same effect as  splitting but it keeps only the first part, while discarding the second.
+;Deletion
+:When you delete a trace or a session you will be asked whether to delete the corresponding files as well. If you delete the files the traces will be '''permanently (!)''' removed. If you don't delete them, they can be restored using the '''reload''' button.
+Changes done by'''Merge''', '''Split''' and '''Trim''' can also be undone in this way. They are made permanent only when you hit the '''Save''' button or start tracking with the '''Autosave''' option activated.
 
 =Advanced features=
 
