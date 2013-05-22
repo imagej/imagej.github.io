@@ -21,9 +21,6 @@ The easiest way to fetch the source code for Fiji is to use [https://github.com/
 
 === Packages for Debian / Ubuntu ===
 
-<div style="background:#ffd; padding: 10px 10px 0 10px; border: 1px solid black;">
-<b>Note:</b> We have received some reports of the Debian packages below not working. Unfortunately, we do not currently have the resources to address these issues. If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us [http://fiji.sc/IRC in IRC] or contact the [http://groups.google.com/group/fiji-devel fiji-devel mailing list].
+We used to offer Debian packages. Unfortunately, for a variety of reasons, we are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads above instead.
 
-We are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads above instead.
-
-</div>
+If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us [http://fiji.sc/IRC in IRC] or contact the [http://groups.google.com/group/fiji-devel fiji-devel mailing list].
