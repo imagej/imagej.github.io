@@ -138,6 +138,15 @@ The file format is described [[Low_Light_Tracking_Tool#File_format | below]].
 
 You can also reload previously tracked data and undo any unsaved changes by pressing the reload button. If you want to open data which is stored in a different location you can load it by clicking on the address bar and navigating to the data's location. You can then re-track, or examine the data.
 
+==Deleting and manipulating traces and sessions==
+Using the '''Merge''', '''Split''', '''Trim''', and '''Delete''' buttons allows you to edit your traces by combining or deleting them. Sessions can be deleted using the ''''Delete session'''' button.
+
+One useful application for merging of two traces is if your object disappears periodically but you know that it is not a new object, and would like to combine the two separate traces you create. You have to select at least two traces to merge them.
+Splitting will do the opposite and make two traces out of one by cutting it at the current frame.
+Trimming has the same effect but it keeps only the first part, while discarding the second.  
+When you delete a trace or a session you will be asked whether to delete the corresponding files as well. If you delete the files the traces will be '''permanently (!)''' removed. If you don't delete them, they can be restored using the '''reload''' button.
+Changes done by'''Merge''', '''Split''' and '''Trim''' can also be undone in this way. They are made permanent only when you hit the '''Save''' button or start tracking with the '''Autosave''' option activated.   
+
 =Advanced features=
 
 ==3D Data==
@@ -165,8 +174,7 @@ The algorithm builds a [http://en.wikipedia.org/wiki/Pyramid_%28image_processing
 Localization is than first performed on the top level of the pyramid, and repeated until its bottom, which is the original image.
 
 =Tips=
-* If you have multichannel data, each channel needs its own session.  You can select which sessions are visible by checking their boxes in the Visible Sessions list. You can use the current session drop down menu to switch between sessions. 
-* Using the Merge, Split, Trim, and Delete buttons allows you to edit your traces by combining or deleting them. One useful example is if your object disappears periodically but you know that it is not a new object, and would like to combine the two separate traces you create. 
+* If you have multichannel data, each channel needs its own session.  You can select which sessions are visible by checking their boxes in the Visible Sessions list. You can use the current session drop down menu to switch between sessions.
 * You can zoom into the kymographs by moving the cursor over the kymograph window and holding down shift, while using the scroll wheel on the mouse.
 * You can use the '''optimize''' button. This will perform the tracking of the selected objects on the single frame you are looking at. You can use this for example with '''autosigma''' turned on to determine the size of the target's PSF on a single frame.
 
