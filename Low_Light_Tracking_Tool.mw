@@ -197,7 +197,7 @@ Localization is than first performed on the top level of the pyramid, and repeat
 
 =Tips=
 * If you want to be able to see the original image data and find your tracking results get in the way, you use the hot-key '''P''' or '''Ctrl-P''' respectively to hide all overlays (all circles line and cross-hairs drawn on top of the image).
-* You can use '''File->Export images''' to export a sequence of image with the tracking results drawn on top of them. You can use this to create a movie in order to demonstrate your tracking results. In your working directory a new folder named '''movieMain''' will be create and filled with images.
+* You can use '''File->Export images''' to export a sequence of image with the tracking results drawn on top of them. You can use this to create a movie in order to demonstrate your tracking results. In your working directory a new folder named '''movieMain''' will be created and filled with images.
 * If you have multichannel data, each channel needs its own session.  You can select which sessions are visible by checking their boxes in the Visible Sessions list. You can use the current session drop down menu to switch between sessions.
 * You can zoom into the kymographs by moving the cursor over the kymograph window and holding down '''Shift''', while using the scroll wheel on the mouse.
 * You can use the '''optimize''' button. This will perform the tracking of the selected objects on the single frame you are looking at. You can use this for example with '''Automatic σ''' turned on to determine the size of the target's PSF on a single frame.
