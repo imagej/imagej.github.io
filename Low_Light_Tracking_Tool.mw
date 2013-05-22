@@ -61,7 +61,6 @@ Please consult you camera's specs sheet to obtain this information.
 The '''EMCCD gain''' and  '''Electrons per A/D count''' are only required for tracking with the [[Low_Light_Tracking_Tool#EMCCD-GaussianML | EMCCD-GaussianML method]]. The [[Low_Light_Tracking_Tool#GaussianML | GaussianML method]] uses these values only to correct the measured flux of the object and background.
 
 ==Windows==
-
 When the plugin starts you have three windows and the control panel.
 
 [[Image:Opendatasmall.png]]
@@ -164,6 +163,9 @@ Using the '''Merge''', '''Split''', '''Trim''', and '''Delete''' buttons allows 
 ;Deletion
 :When you delete a trace or a session you will be asked whether to delete the corresponding files as well. If you delete the files the traces will be '''permanently (!)''' removed. If you don't delete them, they can be restored using the '''reload''' button.
 Changes done by'''Merge''', '''Split''' and '''Trim''' can also be undone in this way. They are made permanent only when you hit the '''Save''' button or start tracking with the '''Autosave''' option activated.
+
+==Closing the program==
+You can close the plugin by closing the control panel. Don't forget to '''Save''' your results (in cause Autosave is not enabled).
 
 =Advanced features=
 
