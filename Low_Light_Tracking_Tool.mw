@@ -30,15 +30,16 @@ Our update site has the following URL:
 Install or update all 6 items shown above by hitting '''Apply changes'''.
 Please restart Fiji afterwards.
 
-=Load the data=
+=To begin=
+
+==Load the data==
 [[Image:OpenData.png]]
 
 Load the image stack or hyper stack to be used for tracking. Use whichever method you prefer in Fiji. The LLTT-plugin will work with 8-bit, 16-bit 32-bit-float data. Moreover you can use 3D and multichannel hyperstacks.
 You can obtain a file with sample data here:
 [[File:LLTT_BeadsExampleData.zip]].
 
-=Starting the Plugin=
-
+==Start the LLTT-plugin==
 [[Image:LLTT_Start1.jpg]]
 
 After the data is loaded, start the plugin by clicking:
