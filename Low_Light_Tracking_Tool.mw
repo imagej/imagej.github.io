@@ -40,11 +40,11 @@ You can obtain a file with sample data here:
 [[File:LLTT_BeadsExampleData.zip]].
 
 ==Start the LLTT-plugin==
-[[Image:LLTT_Start1.jpg]]
-
 After the data is loaded, start the plugin by clicking:
 
 '''plugins->Tracking->Low Light Tracking Tool'''
+
+[[Image:LLTT_Start1.jpg]]
 
 =Start up and navigation=
 
