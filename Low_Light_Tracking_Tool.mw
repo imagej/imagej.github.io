@@ -48,9 +48,10 @@ After the data is loaded, start the plugin by clicking:
 =Start up and navigation=
 
 ==Set global options==
+Upon start of the plugin you will be asked to enter three values.
 
 [[Image:LLTT_GlobalOptions2d.jpg]]
-Upon start of the plugin you will be asked to enter three values.
+
 ;Intensity Offset
 :Cameras used in microscopy often add a bias or '''Intensity Offset''' in order to avoid potentially negative values caused by read out noise. This quantity should be specified here, in order to obtain optimal tracking results.
 ;EMCCD gain
