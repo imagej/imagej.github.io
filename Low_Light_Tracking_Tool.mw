@@ -72,7 +72,7 @@ The main data window lets you move through the slices like normal. On the sides 
 
 [[Image:Opendatalarge.png]]
 
-If you would like the windows to become larger or smaller, change the size of the data window and then select '''arrange windows''', from the '''View''' menu. Alternatively you can use the hotkey '''Ctrl-W''' (when the focus is on the control panel) or '''W''' (when the focus is on one of the other windows).  This will also organize the windows if they have become scattered.
+If you would like the windows to become larger or smaller, change the size of the data window and then select '''Arrange Windows''', from the '''View''' menu. Alternatively you can use the hotkey '''Ctrl-W''' (when the focus is on the control panel) or '''W''' (when the focus is on one of the other windows).  This will also organize the windows if they have become scattered.
 
 If you close some of the windows you can bring them back using the '''windows''' menu in the control panel.
 
