@@ -204,7 +204,7 @@ Localization is than first performed on the top level of the pyramid, and repeat
 =Hot-Keys=
 There are several hot-keys you can use. You can find the key to press in the menus of the control panel. When the focus is on the control panel you have to press '''Ctrl''' to access hot-keys. When the focus is on one of the other windows this is not necessary.
 
-=File format=
+=File Format=
 The tracking results are stored in text files with the ending '.trcT'. Each file holds the result of one trace. The structure of the file name is the following:
 
 '''<name of image file>_<name of session>_<label of trace>_<id of trace>.trcT'''
