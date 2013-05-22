@@ -135,7 +135,7 @@ The software will start at the frame you are currently looking at and continue w
 Objects that are very close to each other should generally be tracked jointly by selecting them both before starting to track.
 Objects which are far away from each other should be tracked in individually one after the other.
 
-==Result==
+=Result=
 
 [[Image:Result1.png]]
 
