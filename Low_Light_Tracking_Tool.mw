@@ -135,14 +135,14 @@ The software will start at the frame you are currently looking at and continue w
 Objects that are very close to each other should generally be tracked jointly by selecting them both before starting to track.
 Objects which are far away from each other should be tracked in individually one after the other.
 
-=== Viewing results===
+== Viewing results==
 [[Image:Result1.png]]
 
 You can watch the trace fill in the kymograph line as the tracking is in progress.  If you see the tracking looks incorrect and lost the object, you can click on '''Stop Tracking''' and adjust the object location and the software will resume from the new starting point.
 
 [[Image:Result2.png]]
 
-The table now contains more information, with the first frame of the trace, and the last frame.  Double clicking on the ID# of the object will jump the frame number to the beginning and end of the trace. 
+The table now contains more information, with the first frame of the trace, and the last frame.  Double clicking on the ID# of the object will jump the frame number to the beginning and end of the trace.
 
 ===Saving and Loading===
 The tracking results are already saved automatically by default. You can turn that off by un-checking the '''Auto Save''' box. The results can than be saved using the '''Save''' button.
