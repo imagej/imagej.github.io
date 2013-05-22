@@ -196,7 +196,7 @@ Localization is than first performed on the top level of the pyramid, and repeat
 * You can use the '''optimize''' button. This will perform the tracking of the selected objects on the single frame you are looking at. You can use this for example with '''Automatic σ''' turned on to determine the size of the target's PSF on a single frame.
 
 =Hot-keys=
-There are several hot-keys you can use. You can find the key to press in the menus of the control panel. When the focus is on the control-panel you have to press '''Ctrl''' to access hot-keys. When the focus is on one of the other windows this is not necessary. 
+There are several hot-keys you can use. You can find the key to press in the menus of the control panel. When the focus is on the control panel you have to press '''Ctrl''' to access hot-keys. When the focus is on one of the other windows this is not necessary. 
 
 =File format=
 The tracking results are stored in text files with the ending '.trcT'. Each file holds the result of one trace. The structure of the file name is the following:
