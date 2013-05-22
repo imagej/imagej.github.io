@@ -111,8 +111,8 @@ You also can set your quality threshold.  Smaller numbers are higher quality, wh
 Fixed  σ can be more stable and also faster, this is more so for 3D data.
 All settings can later be altered by clicking on '''Session Options''', under '''Edit'''.
 
-==Select Objects to Track==
-To track an object, make sure the cross hair icon in the Fiji toolbar is selected and then double click roughly on the object you would like to track in the main window. This will create a new trace which is shown a circle. An accordant entry will appear in the table in the control panel. You can select the traces by clicking on them here or directly in the main window to move them around or edit them. Multiple traces can be selected by holding '''Shift''' or '''Ctrl''' when selecting.
+==Adding objects to track==
+To track an object, make sure the cross hair icon in the Fiji toolbar is selected and then double click roughly on the object you would like to track in the main window. This will introduce a new object, which is represented as a circle. An accordant entry will appear in the table in the control panel representing the objects trace. You can select the traces by clicking on them in the control panel or directly in the main window. You can then move them around, using drag and drop or edit them. Multiple Objects can be selected by holding '''Shift''' or '''Ctrl''' when selecting.
 
 [[Image:CreateDots.png]]
 
