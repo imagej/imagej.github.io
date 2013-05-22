@@ -122,7 +122,7 @@ You can change a trace's label by clicking on the text in the label field, or ch
 
 [[Image:ObjectOption.png]]
 
-If at this point you find that the parameters you picked were less ideal you can change the parameters. If you change the session options, that only affects new selections. So you have two options, delete the old ones, or change their parameters with the '''Edit Object''' selection from the '''Edit''' menu.
+If at this point you find that the parameters you picked were less ideal you can change the parameters with the '''Edit Object''' selection from the '''Edit''' menu or using '''O''' or '''Ctrl-O''' respectively.
 
 ==Start Tracking==
 
