@@ -66,6 +66,7 @@ The '''EMCCD gain''' and  '''Electrons per A/D count''' are required for trackin
 When the plugin starts on a 2D image stack you have three windows and the control panel. 
 
 [[Image:Opendatasmall.png]]
+[[Image:Controlwindownew.png]]
 
 The main data window lets you move through the slices like normal. On the sides you see the two kymographs, which make is easier to see movement over time. 
 
@@ -75,10 +76,6 @@ If you would like the windows to become larger or smaller, change the size of th
 
 If you close some of the windows you can bring them back using the '''windows''' menu in the control panel.
 If you close the control panel, this will terminate the program. Don't forget to [[Low_Light_Tracking_Tool#Saving_and_Loading | '''Save''']] your results before.
-
-[[Image:Controlwindownew.png]]
-
-The control panel is the window you see above. It will allow you to do the tracking.
 
 ==Navigation==
 The yellow lines in the kymographs indicate what frame you are currently working on. If you work with 3D data yellow lines in the side projections indicate what slice you are looking at. 
