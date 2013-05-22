@@ -158,6 +158,8 @@ You can change the default behavior in the edit menu.
 
 [[Image:MScaleOptions.png]]
 
+The algorithm builds a [http://en.wikipedia.org/wiki/Pyramid_%28image_processing%29 pyramid] by repetitively smothing the image with a Gaussian kernel of the size set in the '''Smoothing σ''' field and than down-sampling it by a factor  set in the '''Downscaling''' field. The pyramid's hight (i.e. the number of repetitions) can be set in the '''iterations''' field
+
 =Tips=
 * If you have multichannel data, each channel needs its own session.  You can select which sessions are visible by checking their boxes in the Visible Sessions list. You can use the current session drop down menu to switch between sessions. 
 * Using the Merge, Split, Trim, and Delete buttons allows you to edit your traces by combining or deleting them. One useful example is if your object disappears periodically but you know that it is not a new object, and would like to combine the two separate traces you create. 
