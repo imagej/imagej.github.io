@@ -14,7 +14,7 @@ This software is a tool for the tracking of low-light sub-resolution objects in 
 "A Divide and Conquer Strategy for the Maximum Likelihood localization of Low Intensity Objects" By Alexander Krull et al, 2013 (under preparation).
 
 =Installation of the plugin= 
-The plugin can be easily installed via the projects update site.
+The plugin can be quickly installed via the projects update site.
 
 ==Add the project's update site to your Fiji installation==
 Please refer to the [[Update_Sites | '''tutorial''']] on how to add our update site to your Fiji installation.  
