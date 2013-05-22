@@ -71,7 +71,7 @@ The control window will help you to organize your tracking activity.
 
 If you would like the windows to become larger or smaller, change the size of the main data window and then select '''Arrange Windows''', from the '''View''' menu. Alternatively you can use the [[Low_Light_Tracking_Tool#Hot-Keys | hot-key]] '''Ctrl-W''' (when the focus is on the control panel) or '''W''' (when the focus is on one of the other windows).  This will also organize the windows if they have become scattered.
 
-If you close some of the windows you can bring them back using the '''windows''' menu in the control panel.
+If you close some of the windows you can bring them back using the '''Windows''' menu in the control panel.
 If you close the control panel, this will terminate the program. Don't forget to [[Low_Light_Tracking_Tool#Saving_and_Loading | '''Save''']] your results before.
 
 ==Navigation==
