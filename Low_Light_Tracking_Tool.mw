@@ -139,11 +139,13 @@ The file format is described [[Low_Light_Tracking_Tool#File_format | below]].
 
 You can also reload previously tracked data and undo any unsaved changes by pressing the reload button. If you want to open data which is stored in a different location you can load it by clicking on the address bar and navigating to the data's location. You can then re-track, or examine the data.
 
+=Advanced features=
+
 =3D Data=
 
-When working with 3D data you will be asked to provide the ''ΔZ ratio'' in addition to the three other values. 
+The plugin can be used to track objects in 3D volumes, as well. When working with 3D data you will be asked upon startup to provide the '''ΔZ ratio''' in addition to the '''Intensity Offset''', '''EMCCD gain'''and '''Electrons per A/D count'''.
 
-The z ratio, is the slice thickness, divided by the pixel width. This value is only used for 3D data.
+The '''ΔZ ratio''', is the slice thickness, divided by the pixel width. This value is only used for 3D data.
 Example: My pixel size for my data is 100 nm, and my slice thickness is 200 nm. I would then enter a value of 2.
 
 [[Image:NewWindows.jpg]]
