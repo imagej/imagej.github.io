@@ -128,7 +128,7 @@ To start tracking select at least one trace and click on the '''Start tracking''
 The software will start at the frame you are currently looking at and continue with the following frames until the end of the movie  or until you hit '''G''' again or click on '''Stop tracking'''
 
 Objects that are very close to each other should generally be tracked jointly by selecting them both before starting to track.
-Objects which are far away from another should be tracked in succession.
+Objects which are far away from another should be tracked in individually one after the other.
 
 ==Result==
 
