@@ -144,7 +144,7 @@ You can watch the trace fill in the kymograph line as the tracking is in progres
 
 The table now contains more information, with the first frame of the trace, and the last frame.  Double clicking on the ID# of the object will jump the frame number to the beginning and end of the trace.
 
-===Saving and Loading===
+==Saving and Loading==
 The tracking results are already saved automatically by default. You can turn that off by un-checking the '''Auto Save''' box. The results can than be saved using the '''Save''' button.
 They are by default stored in the directory of the image stack you are working on.
 The file format is described [[Low_Light_Tracking_Tool#File_format | below]].
