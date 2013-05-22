@@ -52,9 +52,10 @@ After the data is loaded, start the plugin by clicking:
 Upon start of the plugin you will be asked to enter three values. Cameras used in microscopy often add a bias or '''Intensity Offset''' in order to avoid potentially negative values caused by read out noise. This quantity should be specified here, in order to obtain optimal tracking results. If you are using an EMCCD camera you should specify the mean '''EMCCD gain''' that was used. Otherwise set it to ''1.0''. Finally you have to provide the ratio ('''Electrons per A/D count''') at which the analog digital unit in your camera converts photo electrons into A/D counts. Please consult you camera's specs sheet to obtain this information.
 
 ==Windows==
-[[Image:Opendatasmall.png]]
 
-When the plugin starts you have three windows and the control panel.  The main data window lets you move through the slices like normal. On the sides you see the two kymographs, which make is easier to see movement over time. 
+When the plugin starts you have three windows and the control panel.
+[[Image:Opendatasmall.png]]
+ The main data window lets you move through the slices like normal. On the sides you see the two kymographs, which make is easier to see movement over time. 
 
 [[Image:Opendatalarge.png]]
 
