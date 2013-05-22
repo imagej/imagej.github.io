@@ -64,7 +64,7 @@ Please consult you camera's specs sheet to obtain this information.
 The '''EMCCD gain''' and  '''Electrons per A/D count''' are required for tracking with the [[Low_Light_Tracking_Tool#EMCCD-GaussianML | EMCCD-GaussianML method]]. The [[Low_Light_Tracking_Tool#GaussianML | GaussianML method]] uses these values to correct the measured flux of the object and background.
 
 ==Windows==
-When the plugin starts on a 2d image stack you have three windows and the control panel.
+When the plugin starts on a 2D image stack you have three windows and the control panel.
 
 [[Image:Opendatasmall.png]]
 
