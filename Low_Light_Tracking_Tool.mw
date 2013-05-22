@@ -151,7 +151,7 @@ The file format is described [[Low_Light_Tracking_Tool#File_format | below]].
 When you start the plugin again with the same data file your results will be automatically loaded. 
 You can also reload previously tracked data and undo any unsaved changes by pressing the reload button. If you want to open data which is stored in a different location you can load it by clicking on the address bar and navigating to the data's location. You can then re-track, or examine the data.
 
-===Deleting and manipulating traces and sessions===
+==Deleting and manipulating traces and sessions==
 Using the '''Merge''', '''Split''', '''Trim''', and '''Delete''' buttons allows you to edit your traces by combining or deleting them. Sessions can be deleted using the ''''Delete session'''' button.
 
 ;Merging
