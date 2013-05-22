@@ -33,7 +33,7 @@ Please restart Fiji afterwards.
 =Load the data=
 [[Image:OpenData.png]]
 
-Load the image stack or hyper stack to be tracked. Use whichever method you prefer in Fiji. The LLTT-plugin will work with 8-bit, 16-bit 32-bit-float data. Moreover you can use 3D and multichannel hyperstacks.
+Load the image stack or hyper stack to be used for tracking. Use whichever method you prefer in Fiji. The LLTT-plugin will work with 8-bit, 16-bit 32-bit-float data. Moreover you can use 3D and multichannel hyperstacks.
 You can obtain a file with sample data here:
 [[File:LLTT_BeadsExampleData.zip]].
 
