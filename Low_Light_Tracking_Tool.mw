@@ -231,7 +231,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 [[Category:Tutorials]]
 
 == Colt library ==
-We redistribute packages from the colt library. They have the following licenses: 
+We redistribute packages from the [http://acs.lbl.gov/software/colt/ colt] library. They have the following licenses: 
 
 Packages cern.colt* , cern.jet*, cern.clhep
 Copyright (c) 1999 CERN - European Organization for Nuclear Research.
