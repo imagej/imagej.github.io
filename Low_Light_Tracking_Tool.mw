@@ -159,7 +159,7 @@ Using the '''Merge''', '''Split''', '''Trim''', and '''Delete''' buttons allows 
 :Trimming has the same effect as  splitting but it keeps only the first part, while discarding the second.
 ;Deletion
 :When you delete a trace or a session you will be asked whether to delete the corresponding files as well. If you delete the files the traces will be '''permanently (!)''' removed. If you don't delete them, they can be restored using the '''reload''' button.
-Changes done by'''Merge''', '''Split''' and '''Trim''' can also be undone in this way. They are made permanent only when you hit the '''Save''' button or start tracking with the '''Autosave''' option activated.
+Changes done by '''Merge''', '''Split''' and '''Trim''' can also be undone in this way. They are made permanent only when you hit the '''Save''' button or start tracking with the '''Autosave''' option activated.
 
 =Advanced Features=
 
