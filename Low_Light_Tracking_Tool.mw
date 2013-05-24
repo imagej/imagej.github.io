@@ -81,7 +81,7 @@ There are three ways of navigating through your stack or hyper stack:
 * You can set frame number, slice number and channel number in the control window.
 * You can use your middle mouse button to directly click into one of the kymographs to set the frame number. If you are working with 3D data you can click into one of the side projections with your middle mouse button to set the slice number.
 
-=Basic Tracking=
+=Basic tracking=
 ==Create Session==
 
 [[Image:LLTT ChooseSession.jpg]]
@@ -123,7 +123,7 @@ The default settings made in the session options dialog will only effect only ne
 
 The settings you make here will effect the selected object in the very frame you are looking at.
 
-==Start Tracking==
+==Start tracking==
 
 Only the highlighted objects will be tracked.  So in the example above both are highlighted and will be tracked at the same time.
 To start tracking select at least one trace and click on the '''Start tracking''' button or hit the hot-key '''G'''. 
@@ -132,7 +132,7 @@ The software will start at the frame you are currently looking at and continue w
 Objects that are very close to each other should generally be tracked jointly by selecting them both before starting to track.
 Objects which are far away from each other should be tracked in individually one after the other.
 
-=Working With Tracking Results=
+=Working with tracking results=
 [[Image:Result1.png]]
 
 You can watch the trace fill in the kymograph line as the tracking is in progress.  If you see the tracking looks incorrect and lost the object, you can click on '''Stop Tracking''' and adjust the object location and the software will resume from the new starting point.
@@ -141,7 +141,7 @@ You can watch the trace fill in the kymograph line as the tracking is in progres
 
 The table now contains more information, with the first frame of the trace, and the last frame.  Double clicking on the ID# of the object will jump the frame number to the beginning and end of the trace.
 
-==Saving and Loading==
+==Saving and loading==
 The tracking results are already saved automatically by default. You can turn that off by un-checking the '''Auto Save''' box. The results can than be saved using the '''Save''' button.
 They are by default stored in the directory of the image stack you are working on.
 The file format is described [[Low_Light_Tracking_Tool#File_format | below]].
@@ -161,9 +161,9 @@ Using the '''Merge''', '''Split''', '''Trim''', and '''Delete''' buttons allows 
 :When you delete a trace or a session you will be asked whether to delete the corresponding files as well. If you delete the files the traces will be '''permanently (!)''' removed. If you don't delete them, they can be restored using the '''reload''' button.
 Changes done by '''Merge''', '''Split''' and '''Trim''' can also be undone in this way. They are made permanent only when you hit the '''Save''' button or start tracking with the '''Autosave''' option activated.
 
-=Advanced Features=
+=Advanced features=
 
-==3D Data==
+==3D data==
 The plugin can be used to track objects in 3D volumes, as well. When working with 3D data you will be asked upon startup to provide the '''ΔZ ratio''' in addition to the '''Intensity Offset''', '''EMCCD gain'''and '''Electrons per A/D count'''.
 
 The '''ΔZ ratio''', is the slice thickness, divided by the pixel width. This value is only used for 3D data.
@@ -195,10 +195,10 @@ Localization is than first performed on the top level of the pyramid, and repeat
 * You can zoom into the kymographs by moving the cursor over the kymograph window and holding down '''Shift''', while using the scroll wheel on the mouse.
 * You can use the '''optimize''' button. This will perform the tracking of the selected objects on the single frame you are looking at. You can use this for example with '''Automatic σ''' turned on to determine the size of the target's PSF on a single frame.
 
-=Hot-Keys=
-There are several hot-keys you can use. You can find the key to press in the menus of the control panel. When the focus is on the control panel you have to press '''Ctrl''' to access hot-keys. When the focus is on one of the other windows this is not necessary.
+=Hotkeys=
+There are several hot-keys you can use. You can find the key to press in the menus of the control panel. When the focus is on the control panel you have to press '''Ctrl''' to access hotkeys. When the focus is on one of the other windows this is not necessary.
 
-=File Format=
+=File format=
 The tracking results are stored in text files with the ending '.trcT'. Each file holds the result of one trace. The structure of the file name is the following:
 
 '''<name of image file>_<name of session>_<label of trace>_<id of trace>.trcT'''
