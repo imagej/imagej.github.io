@@ -36,6 +36,8 @@ Please note that currently the Zeiss processing computer does not support data t
 
 === Installing Fiji on the cluster ===
 
+''Note: in case you use the MPI-CBG cluster 'madmax' you might spare yourself some minutes and just hijack Pavel's well maintained Fiji installation. Just skipt the Fiji installation section and do not change the path to the Fiji executables (/sw/users/tomancak/packages/...) used in the example scripts shown below.)''
+
 Change to a directory where you have sufficient privileges to install software.
 
  cd /sw/users/tomancak/packages
@@ -76,7 +78,7 @@ we create a subdirectory '''jobs/resaving''' and change to it
  mkdir jobs/resaving
  cd jobs/resaving
 
-Now we create a bash script '''create-resaving-jobs''' that will generate the so called job files that will be submitted to the cluster nodes (I use ''nano'' but any editor will do)
+Now we create a bash script '''create-resaving-jobs''' that will generate the so called job files that will be submitted to the cluster nodes (I use ''nano'' but any editor will do. Using nano type '''nano create-resaving-jobs''' and cut&past the script from below into that file.)
 
 <source lang="bash">
 #!/bin/bash
@@ -97,6 +99,8 @@ done
 </source>
 
 We customize the script by editing the parameters inside it. One can think of it as a template that is used as a starting point to adapt to the particular situation. For instance we can change the directory '''dir''' where the data are to be found, the place where the output will go '''jobs''', the number of time-points to process '''for i in `seq 1 240`''' and most importantly the angle to be processed '''-Dangle=280'''. The strategy we follow here is to create jobs to process one angle at a time for all available time-points.
+
+In order to be able to run this (and other scripts we will create further below), you might have to execute the following command: '''chmod a+x create-resaving-jobs'''. Finally execute the script by calling '''./create-resaving-jobs''' (you will have to be in the folder containing the script).
 
 This will generate 240 '''resave-<number>.job''' files in the current directory
 
