@@ -63,7 +63,7 @@ The '''EMCCD gain''' and  '''Electrons per A/D count''' are required for trackin
 
 =The User Interface=
 ==The different windows==
-When the plugin starts on a 2D image stack you have three windows and the control panel. The main data window lets you move through the slices like normal. On the sides you see the two kymographs, which make is easier to see movement over time. 
+When the plugin starts on a 2D image stack you have three windows and the control panel. The main data window lets you move through the slices like normal. On the sides you see the two kymographs, which makes it easier to see movement over time. 
 The control window will help you to organize your tracking activity. 
 
 [[Image:Opendatasmall.png]]
@@ -86,7 +86,7 @@ There are three ways of navigating through your stack or hyper stack:
 
 [[Image:LLTT ChooseSession.jpg]]
 
-Click on the New Session button, or select from the menu.  The New session window opens.  Here you can pick a name for the session as well as the channel you want to track on. Finally you can choose your tracking method.
+Click on the '''New Session''' button, or select from the menu.  The New session window opens.  Here you can pick a name for the session as well as the channel you want to track on. Finally you can choose your tracking method.
 
 ==Choose a tracking method==
 
