@@ -149,7 +149,7 @@ When you start the plugin again with the same data file your results will be aut
 You can also reload previously tracked data and undo any unsaved changes by pressing the reload button. If you want to open data which is stored in a different location you can load it by clicking on the address bar and navigating to the data's location. You can then re-track, or examine the data.
 
 ==Deleting and manipulating traces and sessions==
-Using the '''Merge''', '''Split''', '''Trim''', and '''Delete''' buttons allows you to edit your traces by combining or deleting them. Sessions can be deleted using the ''''Delete session'''' button.
+Using the '''Merge''', '''Split''', '''Trim''' and '''Delete''' buttons allows you to edit your traces by combining or deleting them. Sessions can be deleted using the ''''Delete Session'''' button.
 
 ;Merging
 :One useful application for merging of two traces is if your object disappears periodically but you know that it is not a new object, and would like to combine the two separate traces you create. You have to select at least two traces to merge them.
@@ -164,16 +164,16 @@ Changes done by '''Merge''', '''Split''' and '''Trim''' can also be undone in th
 =Advanced features=
 
 ==3D data==
-The plugin can be used to track objects in 3D volumes, as well. When working with 3D data you will be asked upon startup to provide the '''ΔZ ratio''' in addition to the '''Intensity Offset''', '''EMCCD gain'''and '''Electrons per A/D count'''.
+The plugin can be used to track objects in 3D volumes as well. When working with 3D data you will be asked upon startup to provide the '''ΔZ ratio''' in addition to the '''Intensity Offset''', '''EMCCD gain''' and '''Electrons per A/D count'''.
 
-The '''ΔZ ratio''', is the slice thickness, divided by the pixel width. This value is only used for 3D data.
-Example: My pixel size for my data is 100 nm, and my slice thickness is 200 nm. I would then enter a value of 2.
+The '''ΔZ ratio''' is the slice thickness divided by the pixel width. This value is only used for 3D data.
+Example: My pixel size for my data is 100 nm and my slice thickness is 200 nm. I would then enter a value of 2.
 
 [[Image:NewWindows.jpg]]
 
-3D data is very similar to 2D data, there are just a few more windows that open when you start. The data window, and the kymographs appears, but a second set of windows appear.  A max Z projection window, and max Y and X projects. The side projections are useful to place your starting tracking in the correct slice. So before clicking on the object in the data window, change the z to the correct plane first. 
+3D data is very similar to 2D data, there are just a few more windows that open when you start. The data window and the kymographs appears, but a second set of windows appear.  A max Z projection window and max Y and X projects. The side projections are useful to place your starting tracking in the correct slice. So before clicking on the object in the data window, change the z to the correct plane first. 
 
-Otherwise, tracking function is the same. It is best to optimize the  σvalue for 3D tracking, and then use a fixed value to increase speed.
+Otherwise, tracking function is the same. It is best to optimize the  σ-value for 3D tracking and then use a fixed value to increase speed.
 
 [[Image:NewWithDot.jpg]]
 
