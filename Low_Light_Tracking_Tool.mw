@@ -101,11 +101,11 @@ This algorithm implements the maximum likelihood estimator based on a more sophi
 
 [[Image:SessionOptions.png]]
 
-After clicking '''Ok''', a new window will open. In this window you can choose a '''σ''' value, which denotes the standard deviation (in pixels) of the Gaussian used to approximate the [http://en.wikipedia.org/wiki/Point_spread_function Point Spread Function] (PSF) of the tracked objects. If you select '''Automatic σ''', this value is used only as initialization. In this case '''Min''' and '''Max''' are used as bounds for the estimation. These values will be the default values for all new traces you make in this session.
+After clicking '''OK''', a new window will open. In this window you can choose a '''σ''' value, which denotes the standard deviation (in pixels) of the Gaussian used to approximate the [http://en.wikipedia.org/wiki/Point_spread_function Point Spread Function] (PSF) of the tracked objects. If you select '''Automatic σ''', this value is used only as initialization. In this case '''Min''' and '''Max''' are used as bounds for the estimation. These values will be the default values for all new traces you make in this session.
 
 You also can set your quality threshold.  Smaller numbers are higher quality, while larger numbers are lower quality but faster.
 
-Fixed  σ can be more stable and also faster, this is more so for 3D data.
+Fixed  '''σ''' can be more stable and also faster, this is more so for 3D data.
 All settings can later be altered by clicking on '''Session Options''', under '''Edit'''.
 
 ==Adding objects to track==
