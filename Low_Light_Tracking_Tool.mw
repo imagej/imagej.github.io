@@ -109,15 +109,15 @@ Fixed  '''σ''' can be more stable and also faster, this is more so for 3D data.
 All settings can later be altered by clicking on '''Session Options''', under '''Edit'''.
 
 ==Adding objects to track==
-To add an object in order to track it, make sure the cross hair icon in the Fiji toolbar is selected and then double click roughly on the object you would like to track in the main window. This new object is represented as a circle. An accordant entry will appear in the table in the control panel representing the objects trace. You can select objects by clicking on them in the control panel or directly in the main window. You can then move them around, using drag and drop or edit them. Multiple Objects can be selected by holding '''Shift''' when selecting.
+To add an object in order to track it, make sure the cross hair icon in the Fiji toolbar is selected and then double click roughly on the object you would like to track in the main window. This new object is represented as a circle. An accordant entry will appear in the table in the control panel representing the objects trace. You can select objects by clicking on them in the control panel or directly in the main window. You can then move them around, using drag and drop or edit them. Multiple objects can be selected by holding '''Shift''' when selecting.
 
 [[Image:CreateDots.png]]
 
-You can change a trace's label by clicking on the text in the label field, or change the color by clicking on the colored area.
+You can change a trace's label by clicking on the text in the label field or change the color by clicking on the colored area.
 
 ==Edit individual objects==
 
-The default settings made in the session options dialog will only effect only new traces. If at this point you find that the parameters you picked were less ideal you can change the parameters with the '''Edit Object''' selection from the '''Edit''' menu.
+The default settings made in the session options dialog will only effect new traces. If at this point you find that the parameters you picked were less ideal you can change the parameters with the '''Edit Object''' selection from the '''Edit''' menu.
 
 [[Image:ObjectOption.png]]
 
