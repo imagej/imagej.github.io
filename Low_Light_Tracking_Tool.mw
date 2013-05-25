@@ -79,14 +79,14 @@ The yellow lines in the kymographs indicate what frame you are currently working
 There are three ways of navigating through your stack or hyper stack:
 * You can use ImageJ/Fiji slider controls below the main window.
 * You can set frame number, slice number and channel number in the control window.
-* You can use your middle mouse button to directly click into one of the kymographs to set the frame number. If you are working with 3D data you can click into one of the side projections with your middle mouse button to set the slice number.
+* You can use your middle mouse button to click directly into one of the kymographs to set the frame number. If you are working with 3D data you can click into one of the side projections with your middle mouse button to set the slice number.
 
 =Basic tracking=
-==Create Session==
+==Create session==
 
 [[Image:LLTT ChooseSession.jpg]]
 
-Click on the '''New Session''' button, or select from the menu.  The New session window opens.  Here you can pick a name for the session as well as the channel you want to track on. Finally you can choose your tracking method.
+Click on the '''New Session''' button or select from the menu.  The '''New session''' window opens.  Here you can pick a name for the session as well as the channel you want to track on. Finally you can choose your tracking method.
 
 ==Choose a tracking method==
 
