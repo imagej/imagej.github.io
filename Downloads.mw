@@ -21,12 +21,11 @@ For more detailed instructions, see the installation walkthroughs:
 * [[Install Fiji on Linux]]
 
 <div style="background:#ffd; margin-top: 0; padding: 10px 10px 0 10px; border: 1px solid black;">
-<h3 style="text-align: center; margin-top: 0; padding-top: 0; color: red;">Do not install Fiji to <code>Program Files</code>!</h3>
+<h3 style="text-align: center; margin-top: 0; padding-top: 0; color: red;">Caution: "<code>Program Files</code>" not recommended!</h3>
 <p>
-If you are installing Fiji on Windows, we strongly recommend putting your installation beneath your home directory (e.g., <code>C:\Users\jsmith\Fiji.app</code>), '''''not''''' beneath <code>C:\Program Files\Fiji.app</code>. We know this is unintuitive, but Windows does not allow Java to write data within <code>Program Files</code>; you '''''will''''' have problems with Fiji updating itself if you install it there.
+If you are installing Fiji on Windows, we strongly recommend that you store your Fiji.app directory somewhere in your user space (e.g., "<code>C:\Users\[your name]\Fiji.app</code>") rather than in "<code>C:\Program Files</code>" or other system-wide directory. If you move Fiji.app to such a directory, modern versions of Windows will deny Fiji write permission to its own directory structure, preventing it from being able to update.
 </p>
 </div>
-
 
 == Java WebStart ==
 
