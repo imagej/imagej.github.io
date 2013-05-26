@@ -11,7 +11,7 @@ If you encounter bugs, there are many ways to get help; please see the [[Help:Co
 
 {{DownloadsCurrent}}
 
-=== Installation ===
+== Installation ==
 
 Fiji comes as a [http://en.wikipedia.org/wiki/Portable_application portable application]. That means that you do not have to install it; just download, unpack and start it.
 
@@ -28,15 +28,15 @@ If you are installing Fiji on Windows, we strongly recommend putting your instal
 </div>
 
 
-=== Java WebStart ===
+== Java WebStart ==
 
 {{Java_WebStart}}
 
-=== Source Code ===	 
+== Source Code ==
 
 The easiest way to fetch the source code for Fiji is to use [https://github.com/fiji/fiji git]. For further guidance on this, please refer to the page [[Downloading and Building Fiji From Source]].
 
-=== Packages for Debian / Ubuntu ===
+== Packages for Debian / Ubuntu ==
 
 We used to offer Debian packages. Unfortunately, for a variety of reasons, we are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads above instead.
 
