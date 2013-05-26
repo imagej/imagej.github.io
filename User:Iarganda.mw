@@ -6,7 +6,6 @@ You can find more information about me in my website: [http://biocomp.cnb.csic.e
 
 == Maintained plugins ==
 
-* [[Trainable Weka Segmentation]]
 * [[AnalyzeSkeleton]]
 * [[BUnwarpJ]]
 * [[Register Virtual Stack Slices]]
@@ -14,3 +13,4 @@ You can find more information about me in my website: [http://biocomp.cnb.csic.e
 * [[Skeletonize3D]]
 * [[Spline Deformation Generator]]
 * [[Transform Virtual Stack Slices]]
+* [[Trainable Weka Segmentation]]
