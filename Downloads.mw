@@ -11,6 +11,23 @@ If you encounter bugs, there are many ways to get help; please see the [[Help:Co
 
 {{DownloadsCurrent}}
 
+=== Installation ===
+
+Fiji comes as a [http://en.wikipedia.org/wiki/Portable_application portable application]. That means that you do not have to install it; just download, unpack and start it.
+
+For more detailed instructions, see the installation walkthroughs:
+* [[Install Fiji on Windows]]
+* [[Install Fiji on MacOSX]]
+* [[Install Fiji on Linux]]
+
+<div style="background:#ffd; margin-top: 0; padding: 10px 10px 0 10px; border: 1px solid black;">
+<h3 style="text-align: center; margin-top: 0; padding-top: 0; color: red;">Do not install Fiji to <code>Program Files</code>!</h3>
+<p>
+If you are installing Fiji on Windows, we strongly recommend putting your installation beneath your home directory (e.g., <code>C:\Users\jsmith\Fiji.app</code>), '''''not''''' beneath <code>C:\Program Files\Fiji.app</code>. We know this is unintuitive, but Windows does not allow Java to write data within <code>Program Files</code>; you '''''will''''' have problems with Fiji updating itself if you install it there.
+</p>
+</div>
+
+
 === Java WebStart ===
 
 {{Java_WebStart}}
