@@ -1,8 +1,4 @@
-If you want to install Fiji on Linux, and you have a [http://www.debian.org/ Debian] or [http://www.ubuntu.com/ Ubuntu] system, you should follow the [[Downloads#Packages_for_Debian_.2F_Ubuntu|instructions]] for installing the packages.
-
-If not, or if you lack system administrator privileges, you can download the [http://en.wikipedia.org/wiki/Portable_application portable application] (this means that you do not have to install the program; just unpacking it is enough).
-
-== Installing Fiji as a portable application ==
+Fiji comes as a [http://en.wikipedia.org/wiki/Portable_application portable application]. That means that you do not have to install it; just download, unpack and start it.
 
 First, go to the main page and click on the ''Downloads'' link:
 
