@@ -68,7 +68,7 @@ Browse the [[:Category:News|news archive]].
 * [http://132.187.25.13/home/?category=Download&page=SegmentationEditor Segmentation Editor]
 * Manual (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2])
 * [[Level Sets]]
-* [[Trainable Segmentation Plugin|Trainable Segmentation]]
+* [[Trainable Weka Segmentation|Trainable Segmentation]]
 * [[SIOX:_Simple_Interactive_Object_Extraction|SIOX: Simple Interactive Object Extraction]]
 ;[[:Category:Tracking|Tracking]]
 * [[TrackMate]]
