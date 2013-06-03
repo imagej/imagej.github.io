@@ -209,10 +209,11 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 
 * '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]]''' Mark Longair's plugin for semi-automated three-dimensional tracing, featuring [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl analysis]] for traced cells
 
+* '''[[Strahler_Analysis|Strahler_Analysis]]''' Strahler Analysis on skeletonized arbors.
+
 * '''[http://www.imagescience.org/meijering/software/neuronj/ NeuronJ]''' ImageJ plugin for semi-automated tracing and quantification of two-dimensional arbors
 
 * '''[http://www.reading.ac.uk/neuromantic/ Neuromantic]''' Standalone program for (semi-manual/semi-automatic) neuronal reconstruction, performing Sholl on traced cells
-
 
 == References ==
 <references/>
