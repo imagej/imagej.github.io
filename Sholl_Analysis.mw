@@ -203,7 +203,31 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 :Retrieves information about the plugin version and a link to its Git source code.
 
 
-== Known Issues ==
+== FAQ ==
+#'''Why do I need to threshold the cell?'''
+#: Counting intersections is really a binary procedure: a shell either intercepts a branch or it doesn't. For this reason the image must be split in two phases: arbor and background. 
+#'''My images don't look that great. How can I treat them prior to analysis?'''
+#: 
+#'''The plugin complains about a wrong image type. Why?'''
+#: Although ImageJ can threshold RGB images, the plugin can only parse grayscale images (8-bit and 16-bit). Images of fluorescent-labeled cells are typically non-RGB images. Conversions between different image types is explained in the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide].
+#'''How can I save/edit the ''Sholl Results'' table?'''
+#: Select the table, then choose <u>File▷ Save As…</u> As with any other ImageJ table, the file extension to be used when saving the ''Sholl Results'' can be specified using the <u>Edit▷ Options▷ Input/Output…</u> command (see the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
+#'''Can I modify the number of decimal places used by the ''Sholl Results'' table?'''
+#: Yes. Use the ''Decimal places'' field in <u>Analyze▷ Set Measurements…</u>
+#'''I cannot see the option to save the results. Why?'''
+#: The image you are trying to analyze is not saved locally. Saving it to a local directory (e.g., your Desktop or Home folder) should re-enable it.
+#'''I cannot see the hemicircle/hemisphere option. Why?'''
+#: This option is only available if an orthogonal line has been created by holding Shift when using the Straight Line Selection Tool. See the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for the full list of key modifiers that can be used while creating straight line ROIS.
+#'''With 3D images, How do I set the Z-position of the center?'''
+#: The Z-position (depth) of the center of analysis is the active Z-slice of the stack. It is reported in the ''Sholl Results'' table.
+#'''The shape of the polynomial curve changes at the edges. Why?'''
+#: 
+#'''Why do I have to manually chose the order of the polynomial function?'''
+#: 
+#'''The 3D profile looks worse than the 2D profile of the Maximum Intensity Projection of the same cell. Why?'''
+#:
+#'''I have several images I would like to batch process. What is the procedure?'''
+#:
 
 == Related Links ==
 
