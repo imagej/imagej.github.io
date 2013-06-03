@@ -185,7 +185,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 
 ;Mean value
 :The mean value<ref name="Stulic"></ref> of the fitted polynomial function [[#Sholl Methods|(1)]], representing the average of intersections over the whole area occupied by the arbor. Sometimes abbreviated as M<sub>v</sub> or N<sub>avg</sub> .
-:On the Sholl plot, it is highlighted as the height of the rectangle that has the width of ''Enclosing radius'' − ''First intersecting radius'' and the same area of the area under the fitted curve on that discrete interval. It is analogous to '''''Mean inters.''''' (cf. [[#Descriptors_based_on_sampled_data|Descriptors based on sampled data]]), the arithmetic mean of sampled intersections throughout the arbor. 
+:On the Sholl plot, it is highlighted as the height of the rectangle that has the width of ''Enclosing radius'' − ''First intersecting radius'' and the same area of the area under the fitted curve on that discrete interval. It is analogous to '''''Mean inters.''''', the arithmetic mean of sampled intersections throughout the arbor (cf. [[#Descriptors_based_on_sampled_data|Descriptors based on sampled data]]).
 
 ;Ramification index (Cv)
 :Schoenen Ramification index retrieved from fitted profile:  The ration between ''Critical value'' and  ''Number of primary branches''. As mentioned earlier, the number of primary branches is inferred from the number of intersections at ''Starting radius''.
