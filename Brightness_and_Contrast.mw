@@ -1,0 +1,30 @@
+'''Note:''' This page refers to the version of [http://developer.imagej.net/downloads ImageJ2] currently in development. For more information on using Fiji and ImageJ1, please reference the [[:Category:Tutorials|Fiji]] and [http://imagej.nih.gov/ij/docs/ ImageJ1] tutorials.
+
+This tool may be used to adjust the brightness and contrast of an active image.
+
+==Usage==
+
+The Brightness and Contrast tool may be accessed through ''Image>Adjust>Brightness/Contrast'' or Ctrl+Shift-C.
+
+[[File:Brightness_Contrast_Window.png|right|266x177px]]
+
+The upper and lower limits of the display range can be adjusted by modifying the minimum and maximum settings. Image brightness and image contrast can be modified by using the brightness and contrast sliders or by using the arrows on the right of the window to adjust the range.
+
+Selecting 'OK' will make the specified changes to the display and close the Brightness/Contrast window. All channels in an image will be simultaneously updated automatically.
+
+ImageJ may provide intelligent thresholding based on the image's histogram through ''Image>Adjust>Auto-Contrast'' or Ctrl+Alt+Shift-L. Repeated usage of this process will allow more pixel values to become saturated.
+
+==Example==
+
+The below images show the effects of adjusting brightness and contrast settings.
+
+'''Before'''
+
+[[File:Brightness_Contrast_Before.png|350x404px]]
+
+
+'''After'''
+
+[[File:Brightness_Contrast_After.png|350x404px]]
+
+[[Category:Cookbook]]
