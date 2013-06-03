@@ -70,7 +70,7 @@ Input values take into account the scale information of the image that can be se
 | (1)&nbsp;&nbsp;
 | Linear (N)
 |style="white-space:nowrap"|&nbsp;&nbsp; <i>N</i> = a + br + cr<sup>2</sup> + dr<sup>3</sup>  + er<sup>4</sup> + fr<sup>5</sup> + ... + ir<sup>8</sup>&nbsp;&nbsp;
-| &nbsp;<br>Outputs a "traditional" [''N'' vs ''Distance''] profile. Data is fitted to a 5<sup>th</sup>-8<sup>th</sup> order polynomial<ref name="Stulic"/> .Critical radius (C<sub>r</sub>), Critical value (C<sub>v</sub> or N<sub>m</sub>) and Mean value of function (N<sub>av</sub>) are calculated<br>&nbsp;
+| &nbsp;<br>Outputs a "traditional" [''N'' vs ''Distance''] profile. Data is fitted to a 5<sup>th</sup>-8<sup>th</sup> order polynomial<ref name="Stulic"/> .Critical radius (C<sub>r</sub>), Critical value (C<sub>v</sub> or N<sub>m</sub>) and Mean value of function (N<sub>avg</sub>) are calculated<br>&nbsp;
 |-
 | (2)&nbsp;&nbsp;
 | Intersections/Area&nbsp;(N/S)&nbsp;&nbsp;
@@ -95,6 +95,9 @@ Input values take into account the scale information of the image that can be se
 |-
 |style="border: 0px;"|'''''S'''''
 |style="border: 0px;" colspan="3"|Area (<u>S</u>urface) of sampling circle (πr<sup>2</sup>) / volume of sampling sphere (4/3πr<sup>3</sup>)
+|-
+|style="border: 0px;"|'''''log'''''
+|style="border: 0px;" colspan="3"|Natural logarithm, the logarithm to the base ''e''<sup>&nbsp;</sup>
 |}
 </center>
 <br>
