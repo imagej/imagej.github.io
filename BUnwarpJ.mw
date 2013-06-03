@@ -2,7 +2,7 @@
 | software               = ImageJ
 | name                   = bUnwarpJ
 | author                 = [[User:Iarganda | Ignacio Arganda-Carreras]]
-| maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
+| maintainer             = Ignacio Arganda-Carreras ([mailto:iargandacarreras@gmail.com iargandacarreras@gmail.com])
 | filename               = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/bUnwarpJ_.jar bUnwarpJ_.jar] 
 | source                 = {{GitLink|jar=bUnwarpJ_}}
 | released               = July 20<sup>th</sup>, 2006
