@@ -118,30 +118,41 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 === Descriptors based on sampled data ===
 [[File:BitmapSholl-Plot.png|right|Sholl Plot]]
 
-;Intersecting Radii
+;Intersecting radii
 :The number of sampling radii intersecting the arbor at least once.
 
-;Sum of intersections (''Sum Inters.'')
+;Sum of intersections (''Sum inters.'')
 :The sum of all intersections.
 
-;Average intersections (''Avg Inters.'')
-:''Sum Inters.'' divided by ''Intersecting Radii''.
+;Mean of intersections (''Mean inters.'')
+:''Sum inters.'' divided by ''Intersecting radii''.
 
-;Highest intersection count (''Max Inters.'')
-:The highest number of intersections sampled, i.e., the maximum in a "traditional" [''N'' vs ''Distance''] profile (raw data), reflecting the number of processes/branches in the arbor.
+;Median of intersections (''Median Inters.'')
+:The median value of sampled intersections.
 
-;Highest intersection count radius (''Max Inters. radius'')
-:The distance at which the ''Highest intersection count'' occurred, reflecting sites of highest branch density.
+;Highest count of intersections (''Max inters.'')
+:The maximum value of sampled intersections, i.e., the maximum in a "traditional" [''N'' vs ''Distance''] profile (raw data), reflecting the number of processes/branches in the arbor. Note that if the same maximum occurs multiple times, only the first occurrence is considered.
+: See also '''''Critical value''''' in [[#Descriptors_based_on_fitted_data|Descriptors based on fitted data]].
+
+;Radius of highest count of intersections (''Max inters. radius'')
+:The distance at which the ''Highest count of intersections'' occurred, reflecting sites of highest branch density.
+: See also '''''Critical radius''''' in [[#Descriptors_based_on_fitted_data|Descriptors based on fitted data]].
+
+;Schoenen Ramification index (''Ramification index (sampled)'')
+:A measure of ramification<ref name="Schoenen">J Schoenen. The dendritic organization of the human spinal cord: the dorsal horn. Neuroscience, 7(9):2057–87, Jan 1982, [http://www.ncbi.nlm.nih.gov/pubmed?term=7145088 PMID: 7145088]</ref>: the ratio between ''Max inters.'' and the number of primary branches. Primary branches are those originating directly from cell soma (when the center of analysis is the perikaryon) and are inferred from the number of intersections at ''Starting radius''.
+: See also '''''Ramification index (Cv)''''' in [[#Descriptors_based_on_fitted_data|Descriptors based on fitted data]].
+
+;Radius of centroid (''Centroid radius'')
+:The abcissa of the centroid (i.e., the geometric center or barycenter) of the linear ("traditional" [''N'' vs ''Distance'']) Sholl profile.
+
+;Centroid intersections (''Centroid inters.'')
+:The ordinate of the centroid (i.e., the geometric center or barycenter) of the linear ("traditional" [''N'' vs ''Distance'']) Sholl profile.
 
 ;Enclosing radius
-:The last (thus, the widest) of ''Intersecting Radii''.
+:The last (thus, the widest) of ''Intersecting radii''.
 
 ;Enclosed field
 :For 2D images, the area of the smallest circle enclosing the arbor. For stacks, the volume of the smallest sphere enclosing the arbor. It is derived from ''Enclosing radius''.
-
-;Schoenen Ramification index (''Ramification index'')
-:A measure of ramification<ref name="Schoenen">J Schoenen. The dendritic organization of the human spinal cord: the dorsal horn. Neuroscience, 7(9):2057–87, Jan 1982, [http://www.ncbi.nlm.nih.gov/pubmed?term=7145088 PMID: 7145088]</ref>: the ratio between ''Max Inters.'' and the number of primary branches. Primary branches are those originating directly from cell soma (when the center of analysis is the perikaryon) and are inferred from the number of intersections at ''Starting radius''.
-
 
 === Descriptors based on fitted data ===
 
