@@ -198,6 +198,21 @@ mpicbg.stitching.fusion.BlendingPixelFusion.fractionBlended = 0.1;
 
 From now on, the blending will work only on the outer 10% of each tile. This change is only valid for the '''currently running Fiji instance'''.
 
+=== I want to ignore the movment of tiles in z ===
+
+Sometimes people only want to stitch in x and y, but not in z. There is an ad-hoc way of achieving this which will only ignore the translation in z at the time of the global optimization and fusion. If this turns out to be more useful, I will integrate more properly.
+
+You can activate the option using the '''script editor''':
+* File > New > Script
+* Language > Beanshell
+* type the following line (without the 001) to change it to e.g. 10%
+<source lang="java">
+mpicbg.stitching.GlobalOptimization.ignoreZ = true;
+</source>
+* click Run
+
+From now on, any shift in z will be ignored for 3d acquisitions. This change is only valid for the '''currently running Fiji instance'''.
+
 == Results & Computation time ==
 
 [[Image:ResultsStitching.jpg|780px|Example of Stitching of 3D confocal stacks.]]<br />
