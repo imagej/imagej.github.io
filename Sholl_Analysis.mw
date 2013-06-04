@@ -206,7 +206,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 == FAQ ==
 #'''Why do I need to threshold the cell?'''
 #: Counting intersections is really a binary procedure: a shell either intercepts a branch or it doesn't. For this reason the image must be split in two phases: arbor and background. 
-#'''My images don't look that great. How can I treat them prior to analysis?'''
+#'''My images do not look that great. How can I treat them prior to analysis?'''
 #: 
 #'''The plugin complains about a wrong image type. Why?'''
 #: Although ImageJ can threshold RGB images, the plugin can only parse grayscale images (8-bit and 16-bit). Images of fluorescent-labeled cells are typically non-RGB images. Conversions between different image types is explained in the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide].
@@ -220,14 +220,18 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 #: This option is only available if an orthogonal line has been created by holding Shift when using the Straight Line Selection Tool. See the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for the full list of key modifiers that can be used while creating straight line ROIS.
 #'''With 3D images, How do I set the Z-position of the center?'''
 #: The Z-position (depth) of the center of analysis is the active Z-slice of the stack. It is reported in the ''Sholl Results'' table.
+#'''The 3D profile looks worse than the 2D profile of the Maximum Intensity Projection of the same cell. Why?'''
+#:
 #'''The shape of the polynomial curve changes at the edges. Why?'''
 #: 
 #'''Why do I have to manually chose the order of the polynomial function?'''
 #: 
-#'''The 3D profile looks worse than the 2D profile of the Maximum Intensity Projection of the same cell. Why?'''
-#:
 #'''I have several images I would like to batch process. What is the procedure?'''
 #:
+#'''I think I found a bug. How do I report it?'''
+#:
+#'''This documentation is not that useful. How long do I have to wait until it gets improved?'''
+#: Around 20 seconds. This is the time it will take you to [[Help:Contents#New_accounts|create an account]] on this wiki. Once you have created one, you will be able to improve this page yourself.
 
 == Related Links ==
 
