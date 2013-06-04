@@ -27,7 +27,7 @@ The plugin requires a binary image or a segmented grayscale image containing a s
 # Segment the arbor using <u>Image▷Adjust▷Threshold...</u>
 # Select the center of analysis with thePoint Selection Tool. Alternatively, make a Straight Line Selection from the focus of the arbor to its most distal point. This will automatically set both the center and ''Ending radius''.
 # Run <u>Analyze▷Sholl Analysis...</u>, adjusting the default [[#Parameters|Parameters]] in the dialog prompt.
-# '''Problems? See the  [[#FAQ|FAQs section]]'''.
+# '''Problems? See the  [[#FAQ|FAQs]]'''.
 
 == Parameters ==
 Input values take into account the scale information of the image that can be set using the <u>Analyze▷Set Scale...</u> or <u>Image▷Properties...</u> commands.
