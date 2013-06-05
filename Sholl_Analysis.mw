@@ -9,7 +9,21 @@
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]]
 }}
 
-Bitmap Sholl for 2D and 3D images. For the ImageJ plugin, visit the  [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:asa:start ImageJ wikipage]. For analysis of traced arbors have a look at [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].
+Bitmap Sholl for 2D and 3D images. For analysis of traced arbors have a look at [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].
+
+<div style="float:right;
+            border: 1px solid #ccc;
+            padding: 5px !important;
+            border-radius: .75em;
+            -moz-border-radius: .75em;
+            -webkit-border-radius: .75em;
+            margin-top: 11em;
+            background-color: #f9f9f9;">
+'''Non-Fiji User?'''
+: Jump to [[#Non-Fiji_users|Installation notes]]
+'''Having Problems?'''
+: Jump to [[#FAQ|FAQs]] 
+</div>
 
 == Introduction ==
 [[ File:BitmapSholl-CA1mask.png|frame|Mouse hippocampal CA1 cell <ref name="Gross">TA Ferreira, LL Iacono and CT Gross. Serotonin receptor 1A modulates actin dynamics and restricts dendritic growth in hippocampal neurons. Eur J Neurosci 32(1):18-26, Jul 2010 [http://www.ncbi.nlm.nih.gov/pubmed?term=20561047 PMID: 20561047]</ref> in which apical and basal dendrites have been analyzed separately and color coded according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). Critical radius (''rc'') and average number of intersections (''Nav'') are indicated.]]
