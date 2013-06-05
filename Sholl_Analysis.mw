@@ -249,6 +249,11 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 #'''This documentation is not that useful. How long do I have to wait until it gets improved?'''
 #: Around 20 seconds. This is the time it will take you to [[Help:Contents#New_accounts|create an account]] on this wiki. Once you have created one, you will be able to improve this page yourself.
 
+== Non-Fiji users ==
+If you are not using Fiji, download <tt>Sholl_Analysis.jar</tt> from the direct link listed on the [[#top|top of this page]] and place it in the <tt>ImageJ/plugins/</tt> directory. Alternatively, drag the downloaded jar and drop it on the main window. Restart ImageJ and run the new <u>Analyze▷Sholl Analysis...</u> command.
+
+Please note that Fiji is the most convenient way of keeping your ImageJ distribution up-to-date. Without access to Fiji's [[Update_Fiji|built-in updater]], you are strongly advised to upgrade ImageJ to its latest version using <u>Help▷Update ImageJ...</u>. Without Fiji, you will also have to manually update the Sholl Analysis plugin by checking the [https://github.com/tferr/ASA/blob/master/Notes Release Notes].
+
 == Related Links ==
 
 * '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]]''' Mark Longair's plugin for semi-automated three-dimensional tracing, featuring [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl analysis]] for traced cells
