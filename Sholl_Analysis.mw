@@ -91,7 +91,7 @@ Input values take into account the scale information of the image that can be se
 | (1)&nbsp;&nbsp;
 | Linear (N)
 |style="white-space:nowrap"|&nbsp;&nbsp; <i>N</i> = a + br + cr<sup>2</sup> + dr<sup>3</sup>  + er<sup>4</sup> + fr<sup>5</sup> + ... + ir<sup>8</sup>&nbsp;&nbsp;
-| &nbsp;<br>Outputs a "traditional" [''N'' vs ''Distance''] profile. Data is fitted to a 5<sup>th</sup>-8<sup>th</sup> order polynomial<ref name="Stulic"/> .Critical radius (C<sub>r</sub>), Critical value (C<sub>v</sub> or N<sub>m</sub>) and Mean value of function (N<sub>avg</sub>) are calculated<br>&nbsp;
+| &nbsp;<br>Outputs a "traditional" [''N'' vs ''Distance''] profile. Data is fitted to a 5<sup>th</sup>-8<sup>th</sup> order polynomial<ref name="Stulic"/> .Critical radius (C<sub>r</sub>), Critical value (C<sub>v</sub> or N<sub>m</sub>) and Mean value of function (N<sub>av</sub>) are calculated<br>&nbsp;
 |-
 | (2)&nbsp;&nbsp;
 | Intersections/Area&nbsp;(N/S)&nbsp;&nbsp;
@@ -198,15 +198,48 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 : See also '''''Max inters. radius''''' in [[#Descriptors_based_on_sampled_data|Descriptors based on sampled data]].
 
 ;Mean value
-:The mean value<ref name="Stulic"></ref> of the fitted polynomial function [[#Sholl Methods|(1)]], representing the average of intersections over the whole area occupied by the arbor. Sometimes abbreviated as M<sub>v</sub> or N<sub>avg</sub> .
+:The mean value<ref name="Stulic"></ref> of the fitted polynomial function [[#Sholl Methods|(1)]], representing the average of intersections over the whole area occupied by the arbor. Sometimes abbreviated as M<sub>v</sub> or N<sub>av</sub> .
 :On the Sholl plot, it is highlighted as the height of the rectangle that has the width of ''Enclosing radius'' − ''First intersecting radius'' and the same area of the area under the fitted curve on that discrete interval. It is analogous to '''''Mean inters.''''', the arithmetic mean of sampled intersections throughout the arbor (cf. [[#Descriptors_based_on_sampled_data|Descriptors based on sampled data]]).
 
 ;Ramification index (Cv)
 :Schoenen Ramification index retrieved from fitted profile:  The ration between ''Critical value'' and  ''Number of primary branches''. As mentioned earlier, the number of primary branches is inferred from the number of intersections at ''Starting radius''.
 : See also '''''Ramification index (sampled)''''' in [[#Descriptors_based_on_sampled_data|Descriptors based on sampled data]].
 
-== Auxiliary Commands ==
+== Batch Processing ==
+It is fairly simple to automate the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji (see  [[Introduction into Macro Programming|ImageJ Macro Language]], [[Beanshell_Scripting|Beanshell]], [[Javascript_Scripting|Javascript]], [[JRuby_Scripting|JRuby]], [[Jython_Scripting|Jython]], and [[Clojure_Scripting|Clojure]] (see also [[Script Editor]] and  [[Scripting Help]]).
 
+Independently of which strategy is used, the Sholl Analysis plugin will need to access the ROI marking the center of analysis.  One could instruct ImageJ to read the coordinates of pre-designed ROIs from a text file, store a list of line selections in the ROI Manager, or write a morphology-based routine that detects the center of analysis. However, marking the center of analysis is probably something that you will want to do manually. Here is a routine using the ImageJ macro language:
+
+# Place all the .tif images to be processed in a single folder.
+#:It is critical that you work with .tif files (<u>File▷ Save As...▷ Tiff...</u>) because only this format saves the active ROI. If you use any other format, any selection you create is lost as soon as you close the image (which would force you to use <u>File▷ Save As...▷ Selection...</u> to save the ROI in a separate file).
+#: Tip: The <u>Process▷ Batch▷ Convert...</u> command allows bulk conversion between image formats.
+#Select the Point Selection Tool in the main window and activate the Threshold Widget (<u>Image▷ Adjust▷ Threshold...</u>). Open the first image.
+#Adjust threshold levels. Press the ''Apply'' button of the Threshold Widget. Mark the center of analysis by clicking over it.
+#Press ''Shift'' + ''O'' (shortcut for <u>File▷ Open Next</u>) and repeat the procedure until all images are marked.
+#Use the Macro Recorder (<u>Plugins▷ Macros▷ Record...</u>) to create a simple macro that will call the plugin with suitable parameters. The single line of code should look something like this:
+<source lang="java">
+run("Sholl Analysis...", "starting=10 ending=max radius_step=0 samples=1 sholl=Intersections save"); </source>
+<ol start="6">
+<li>Copy the above line of code to the <u>Process▷ Batch▷ Macro...</u> prompt. Hit ''Process''.
+</li>
+</ol>
+
+Of course you can also automate any of the previous steps. However, do not forget to ensure that the center of analysis will be available when the plugin is called:
+
+<source lang="java">
+// Impose spatial calibration
+     run("Properties...", "unit=um pixel_width=1.5 pixel_height=1.5 voxel_depth=3.0");
+// Subtract background
+     run("Subtract Background...", "rolling=50 sliding stack");
+// Apply a favorite threshold
+    setAutoThreshold("Huang dark stack");
+// >>>> Make sure the initial point selection remains available <<<<
+    run("Restore Selection");
+// Run the plugin
+run("Sholl Analysis...", "starting=10 ending=max radius_step=0 samples=1 sholl=Intersections fit polynomial=[8th degree] create background=0 save"); 
+</source>
+
+== Auxiliary Commands ==
 ;File▷Open Samples▷ddaC Neuron
 :Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run <u>Image▷Show Info...</u> to know more about this cell type.
 
@@ -215,7 +248,6 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 
 ;Help▷About Plugins▷Sholl Plugins...
 :Retrieves information about the plugin version and a link to its Git source code.
-
 
 == FAQ ==
 #'''Why do I need to threshold the cell?'''
@@ -242,8 +274,6 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 #: 
 #'''What can I do with the ''Sholl mask''?'''
 #: 
-#'''I have several images I would like to batch process. What is the procedure?'''
-#:
 #'''I think I found a bug. How do I report it?'''
 #:
 #'''This documentation is not that useful. How long do I have to wait until it gets improved?'''
