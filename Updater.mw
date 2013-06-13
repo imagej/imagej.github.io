@@ -120,4 +120,8 @@ jrunscript bootstrap.js help
 
 This uses the '''jrunscript''' executable of your Java installation to run the Javascript file tracked in Fiji's [https://github.com/fiji/fiji/blob/master/plugins/Scripts/Plugins/Utilities/Fix_Updater.js source code repository] that was originally intended to fix existing installations, but enhanced to initialize the updater in an ImageJ 1.x-only directory -- or even from a complete fresh state.
 
+== Development ==
+
+As of September 2012, the Fiji Updater has moved to ImageJ2. Details can be found in the announcement: [[2012-09-14 - The Updater moved]].
+
 [[Category:Plugins]]
