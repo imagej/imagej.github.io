@@ -10,3 +10,12 @@
 * [[Directionality]]
 * [[Stack Manipulation]]
 * [[TrackMate]] (single particle tracking)
+
+==== Building Fiji ====
+
+(currently just a scratchpad to collect stuff that should go in the official "fiji-devel" page)
+
+===== requirements =====
+for ubuntu 12.04 (precise)
+
+ git-core curl zip
