@@ -18,4 +18,4 @@
 ===== requirements =====
 for ubuntu 12.04 (precise)
 
- git-core curl zip
+ git-core curl unzip
