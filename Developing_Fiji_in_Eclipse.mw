@@ -16,7 +16,7 @@ One other shortcoming -- Eclipse's unwillingness to let the developer specify th
 
 ==Install Eclipse==
 
-Install Eclipse using your preferred package manager or download the appropriate binaries of the [http://www.eclipse.org/downloads/ Eclipse IDE for Java Developers].  Launch Eclipse and decide for a workspace location (e.g. <code>~/worspace</code>).  Usually, current Java works just fine, but for some developers, Eclipse is not stable with Sun/Oracle Java 6.  That is, you will eventually have to install Java 5 as an alternative JRE and make a custom launcher for Eclipse, e.g.
+Install Eclipse using your preferred package manager or download the appropriate binaries of the [http://www.eclipse.org/downloads/ Eclipse IDE for Java Developers].  Launch Eclipse and decide for a workspace location (e.g. <code>~/workspace</code>).  Usually, current Java works just fine, but for some developers, Eclipse is not stable with Sun/Oracle Java 6.  That is, you will eventually have to install Java 5 as an alternative JRE and make a custom launcher for Eclipse, e.g.
 
 <source lang="bash">
 /usr/lib/jvm/java-1.5.0-sun/bin/java -cp /usr/lib/eclipse/startup.jar org.eclipse.core.launcher.Main
