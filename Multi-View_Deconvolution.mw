@@ -6,7 +6,11 @@
 | source                 = {{GitLink|jar=SPIM_Registration}}
 | filename               = SPIM_Registration.jar
 | released               = February 2013
-| latest version         = February 2013
+| latest version         = June 2013
 | category               = [[:Category:Registration|SPIM Registration]]
 | website                = [http://fly.mpi-cbg.de/~preibisch Stephan Preibisch's homepage]
 }}
+
+== Overview of the multi-view fusion plugin ==
+
+The goal of the multi-view deconvolution plugin is to compute one image from several 3d acquisitions (views) of the same specimen, taken in different orientations. The deconvolution tries to estimate the most probable image that best explains all views, given the point spread function of the microscope. It can be computed for single timepoints or an entire timeseries. Prerequisite for the fusion is an aligned dataset, an overview of the complete registration and fusion process can be found [[SPIM_Registration|here]].
