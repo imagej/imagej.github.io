@@ -17,7 +17,7 @@ __NOTOC__
 
 This set of macros control plugin to perform semi-automatic tracing of insect wing veins and determination of trichome number and density.   The native file format is open and XML-based.  This plugin is Free Software (also known as Open Source software) and is supplied as a packaged version of Fiji, here <http://sourceforge.net/projects/fijiwings>.
 
-To help you to get started with using this plugin, there is an explanatory screencast here: http://www.youtube.com/watch?v=rz_rBDhrQ5Y
+To help you to get started with using this plugin, there is an explanatory screencast here: http://wiki.imagej.net/User:Dobensl
 
 === Licensing ===
 
