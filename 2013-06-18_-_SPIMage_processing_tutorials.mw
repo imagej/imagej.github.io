@@ -1,4 +1,12 @@
-As part of Fiji's sister project - [http://openspim.org '''OpenSPIM''']1 - we have assembled detailed step-by-step tutorials for [http://openspim.org/Operation#Data_processing '''SPIMage processing'''].
+As part of Fiji's sister project - [http://openspim.org '''OpenSPIM''']<ref name="Pitrone2013">{{cite journal
+| author = Pitrone P. G., Schindelin J., Stuyvenberg L., Preibisch S., Weber M.; Eliceiri K. W., Huisken J., Tomancak P. 
+| title = OpenSPIM: an open access light sheet microscopy platform
+| journal = Nature Methods
+| volume = 
+| number =
+| pages = 
+| year = 2013
+}}</ref> - we have assembled detailed step-by-step tutorials for [http://openspim.org/Operation#Data_processing '''SPIMage processing'''].
 
 * We start by defining [http://openspim.org/Pre-requisites '''System requirements'''] and downloading [http://openspim.org/Raw_data '''sample OpenSPIM data],
 * followed by optional [http://openspim.org/Pre-processing '''pre-processing steps'''].
@@ -8,7 +16,6 @@ As part of Fiji's sister project - [http://openspim.org '''OpenSPIM''']1 - we ha
 
 The pipeline is relatively linear as described above, we highlight the steps where [http://openspim.org/Registration#Cross-road_in_SPIM_plugins '''alternative routes exist'''].
 
-
-1. Pitrone P. G., Schindelin J., Stuyvenberg L., Preibisch S., Weber M.; Eliceiri K. W., Huisken J., Tomancak P. (2013) OpenSPIM: an open access light sheet microscopy platform Nat. Methods in press PDF Supplement
+<references/> 
 
 [[Category:News]]
