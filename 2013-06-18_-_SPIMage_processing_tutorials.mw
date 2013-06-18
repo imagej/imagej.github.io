@@ -1,0 +1,14 @@
+As part of Fiji's sister project - [http://openspim.org '''OpenSPIM''']1 - we have assembled detailed step-by-step tutorials for [http://openspim.org/Operation#Data_processing '''SPIMage processing'''].
+
+* We start by defining [http://openspim.org/Pre-requisites '''System requirements'''] and downloading [http://openspim.org/Raw_data '''sample OpenSPIM data],
+* followed by optional [http://openspim.org/Pre-processing '''pre-processing steps'''].
+* [http://openspim.org/Registration '''Multi-view registration'''] is at the heart of SPIMage processing pipeline.
+* [http://openspim.org/Fusion '''Multi-view Fusion'''] section discusses how to combine several view into one output image
+* [http://openspim.org/Timelapse_Registration '''Time series registration'''] removes the sample drift across long-term timelapse.
+
+The pipeline is relatively linear as described above, we highlight the steps where [http://openspim.org/Registration#Cross-road_in_SPIM_plugins '''alternative routes exist'''].
+
+
+1. Pitrone P. G., Schindelin J., Stuyvenberg L., Preibisch S., Weber M.; Eliceiri K. W., Huisken J., Tomancak P. (2013) OpenSPIM: an open access light sheet microscopy platform Nat. Methods in press PDF Supplement
+
+[[Category:News]]
