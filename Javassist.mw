@@ -32,7 +32,7 @@ ClassPool pool = ClassPool.getDefault();
 // access the class without loading it just yet
 CtClass clazz = pool.get("org.soft.micro.Narf");
 // output the contents
-ClassFileWriter.print(clazz.getClassFile());
+ClassFilePrinter.print(clazz.getClassFile());
 </source>
 
 Or you could disassemble a method like this:
