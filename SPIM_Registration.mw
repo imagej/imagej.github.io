@@ -35,6 +35,19 @@ We developed several algorithms for the registration and fusion of multi-angle S
 
 '''''Please note:''''' ''the SPIM registration has been rewritten and now replaces the "old" plugin collection (Registration, Advanced Registration, MultiChannel Registration) which has been moved to the deprecated folder. For information regarding these outdated plugins please refer to this [[SPIM_Bead_Registration_(deprecated)|page]].''
 
+== Detailed tutorials ==
+
+SPIM registration is particularly useful for processing of data acquired on [http://openspim.org '''OpenSPIM''']. Detailed step-by-step tutorials are available on the [http://openspim.org/Operation#Data_processing '''OpenSPIM wiki'''].
+
+* We start by defining [http://openspim.org/Pre-requisites '''System requirements'''] and downloading [http://openspim.org/Raw_data '''sample OpenSPIM data],
+* followed by optional [http://openspim.org/Pre-processing '''pre-processing steps'''].
+* [http://openspim.org/Registration '''Multi-view registration'''] is at the heart of SPIMage processing pipeline.
+* [http://openspim.org/Fusion '''Multi-view Fusion'''] section discusses how to combine several view into one output image
+* [http://openspim.org/Timelapse_Registration '''Time series registration'''] removes the sample drift across long-term timelapse.
+
+The pipeline is relatively linear as described above, we highlight the steps where [http://openspim.org/Registration#Cross-road_in_SPIM_plugins '''alternative routes exist'''].
+
+
 == How do I view fused, saved output image(s) ==
 
 The fused images will be saved in the ''output'' directory of the dataset as a collection of two-dimensional planes. The created output images can be viewed for example with Plugins->Image5D->[http://rsbweb.nih.gov/ij/plugins/image5d.html Virtual Image 5D Opener] or via the Plugins->LOCI->[http://www.loci.wisc.edu/software/bio-formats Bio-Formats Importer] (check the option ''Group files with similar names'').
