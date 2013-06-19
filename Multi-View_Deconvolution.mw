@@ -83,9 +83,9 @@ The available options are:
 
 ''Note: Note that when CUDA crashes (e.g. because of out-of-memory), Java usually crashes with it.''
 
-* '''PSF Estimation:''' The PSFs can either be extracted from the corresponding beads that were found during the bead-based registration or an image of the PSF can be provided (needs have the same calibration as the input views).
+* '''PSF Estimation:''' The PSFs can either be extracted from the corresponding beads that were detected during the bead-based registration or image(s) of the PSF can be provided. You can use a simulated PSF for your data or measured PSF's from another experiment (see PSF display for details how to store them). You can either use the same PSF for all views, it will be transformed according to the registrations of each view, or you specify a PSF for each view. In the latter case you can choose to transform the PSF's or you provide them already transformed. Typically, you will transform them. In case the PSFs are transformed, they to have the same calibration as the input views.
 
-* '''PSF display:''' In order to verify the extracted PSFs they can be displayed as maximum intensity projection along the rotation axis, as averaged three-dimensional volume or each PSF individually as three-dimensional volume.
+* '''PSF display:''' In order to verify or store the extracted PSFs they can be displayed as maximum intensity projection along the rotation axis, as averaged three-dimensional volume or each PSF individually as three-dimensional volume. For the last two cases you can choose to display them in the same calibration as the input views or already transformed. You can save them and provide them as input for another deconvolution experiment where no beads were included.
 
 * '''Debug Mode:''' The debug mode will not only compute the final image but also show intermediate iterations in an ImageJ window. This allows to identify the correct number of iterations desired for your dataset. You will be queried in a subsequent dialog after every how many iterations you want to see current state of the iteration. It makes sense to not run the debug mode on the entire dataset but maybe a smaller part. Although the output might not be identical it gives a pretty good idea of how many iterations are required.
 
