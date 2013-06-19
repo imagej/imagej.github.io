@@ -34,3 +34,7 @@ It is highly recommended that before starting the multi-view deconvolution, to u
 </span>
 
 == How to use the plugin ==
+
+[[Image:Spim multiview dialog1.jpg|thumb|300px|Shows the first dialog that queries the location of the multi-view files]]
+
+The multi-view deconvolution consists like the multi-view fusion of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset. Please note that all the parameters will be transferred from the [[Multi-View_Fusion|Multi-view fusion]] dialog that you used before to set the bounding box (cropping area).
