@@ -52,3 +52,8 @@ In the second dialog, you have to define the detailed instruction of how to run 
 * '''Crop output image offset x/y/z:''' Defines the offset of the cropping area (bounding box) in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 refers to the top-front-left corner of the bounding box surrounding all views. 
 
 * '''Crop output image size x/y/z:''' Defines the size of the cropping area (bounding box) in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping.
+
+''Note: The values defining the bounding box are identical to those provided in the multi-view fusion!''
+
+* '''Type of iteration:''' There are several iteration schemes that have been developed and can be used. They differ from each other by convergence time and image quality, which is of course a trade-off:
+** ''Fuse all images at once'' loads
