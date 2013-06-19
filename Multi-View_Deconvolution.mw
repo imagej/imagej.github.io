@@ -21,10 +21,12 @@ Prerequisite for the fusion is an aligned dataset, an overview of the complete r
 
 ==== Prerequisites Steps II - PSF's ====
 
-The multi-view deconvolutiofn additionally requires estimates of the PSF for each view. They can be directly and automatically measured from the data itself if fluorescent beads were added to the volume around the sample and the [[SPIM_Bead_Registration|Bead-based registration]] was used to register the views.
+The multi-view deconvolution additionally requires estimates of the PSF for each view. They can be directly and automatically measured from the data itself if fluorescent beads were added to the volume around the sample and the [[SPIM_Bead_Registration|Bead-based registration]] was used to register the views.
 
-Alternatively an estimate or a simulated PSF can be provided as a 3d image. This is especially helpful in case the registration was achieved in any another way, for example using the [[Segmentation-based registration]] or by an external program.
+Alternatively, an estimate or a simulated PSF can be provided as a 3d image. This is especially helpful in case the registration was achieved in any another way, for example using the [[Segmentation-based registration]] or by an external program.
 
 ==== Prerequisites Steps III - Cropping Area ====
 
-It is highly recommended that before starting the multi-view deconvolution, the [[Multi-View_Fusion|Multi-view fusion]]
+It is highly recommended that before starting the multi-view deconvolution, to use the [[Multi-View_Fusion|Multi-view fusion]] in order to determine the right bounding box for the image to be deconvolved.
+
+''Note: Do not set the bounding box too close to the imaged sample as it might result in artifacts. A distance of around 30-50 pixels between sample and the bounding box is suggested for the multi-view deconvolution.''
