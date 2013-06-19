@@ -77,9 +77,11 @@ The available options are:
 
 * '''Compute:''' Define if the multi-view deconvolution should be computed for the entire image at once or in blocks. The result will be 100% identical! Computing in blocks saves a significant amount of RAM at the cost of higher computation time. If you run out of memory, try computing it in small blocks. If you select to choose a manually defined block size, a subsequent dialog will query the dimensions. 
 
-''Note: For computation on the CPU, specific block sizes are not important (it is not a traditional power-of-2 scheme). However, on the GPU it is highly recommended to use only power-of-two values (..., 256, 512, ...), or maximally a sum of power-of-two values (..., 384, 768, ...)''
+''Note: For computation on the CPU, specific block sizes are not important (it is not a traditional power-of-2 scheme). However, on the GPU it is highly recommended to use only power-of-two values (256, 512, etc.), or maximally a sum of power-of-two values (384, 768, etc.)''
 
-* '''Compute on:''' The multi-view deconvolution can be computed on the CPU or the GPU via JNA and CUDA. The CPU computation is built in Fiji, the CUDA code requires to load a native library (*.dll, *.so) that needs to be copied into the Fiji directory before starting Fiji.
+* '''Compute on:''' The multi-view deconvolution can be computed on the CPU or the GPU via JNA and CUDA. The CPU computation is built in Fiji, the CUDA code requires to load a native library (*.dll, *.so) that needs to be copied into the Fiji directory before starting Fiji. If you chose to compute the entire image at once on the GPU, a subsequent dialog will query which CUDA device to use. If you chose blocks on CUDA, you can choose in a subsequent dialog which GPU's will be used. If you have more than one CUDA device, use them both. It is usually not faster to let the CPU's compute blocks as well, but it might be.
+
+''Note: Note that when CUDA crashes (e.g. because of out-of-memory), Java usually crashes with it.''
 
 * '''PSF Estimation:''' The PSFs can either be extracted from the corresponding beads that were found during the bead-based registration or an image of the PSF can be provided (needs have the same calibration as the input views).
 
