@@ -85,4 +85,4 @@ In the second dialog, you have to define the details of the multi-view fusion. I
 
 * '''Save output image:''' Write the fused image(s) to disk when finished. It will save the output image(s) as a collection of two-dimensional planes.
 
-'''Note:''' Unchecking both options will not produce any result!
+'''Note:''' A suggested bounding box for the [http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip example dataset] is offset: [272, 352, 360] -- size: [720, 380, 350]
