@@ -134,3 +134,15 @@ In the course of optimizing the block size you might get sick of the fact that i
 fiji.plugin.Multi_View_Deconvolution.makeAllPSFSameSize = true;
 </source>
 Note that you might want to go to this detail of optimization if you have to deconvolve hundreds or thousands of timepoints.
+
+=== Intermediate (de)activation of the debug mode ===
+
+Maybe you ran the deconvolution already for some time because the image is gigantic and computed in small blocks and you just want to check the current state at the next iteration. Or you maybe want to deactivate the the debug mode because you are afraid it runs out of memory with the next debug image. You can do so by executing
+<source lang="java">
+mpicbg.spim.postprocessing.deconvolution2.debug = true; // or false
+</source>
+You can also change the interval
+<source lang="java">
+mpicbg.spim.postprocessing.deconvolution2.debugInterval = 10;
+</source>
+Now, I will only debug every 10'th iteration.
