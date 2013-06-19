@@ -94,3 +94,24 @@ The available options are:
 * '''Load images sequentially:''' You usually want to activate this option as it saves a lot of memory and at the same time is just unnoticeably slower.
 
 * '''Fused image output:''' You can choose to display the result, save it the output directory as slices or create a different directory for each timepoint that is processed.
+
+== How do I ... Problems, known issues and solutions ==
+
+Some tipps and tricks in the next few paragraphs require to change a static variable in the source code that changes the behavior of the plugin. This is done using the '''script editor''' and works as follows:
+* File > New > Script
+* Language > Beanshell
+* type the command, e.g.
+<source lang="java">
+System.gc();
+</source>
+* click Run
+This just cleans up the RAM, which might be useful. Note that changes that are made (not in this case though) are only valid for the '''currently running Fiji instance'''.
+
+
+=== I want to change the size of the PSFs that are extracted ===
+
+The plugin does some choice of what the area it is it uses to extract the PSF around the detected corresponding beads. You can change it in Beanshell by:
+<source lang="java">
+fiji.plugin.Multi_View_Deconvolution.psfSize3d = new int[]{ 31, 31, 31 };
+</source>
+This changes the area to 31x31x31 pixel around a detected bead (in original calibration of the input views).
