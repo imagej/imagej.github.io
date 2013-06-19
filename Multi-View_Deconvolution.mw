@@ -11,7 +11,7 @@
 | website                = [http://fly.mpi-cbg.de/~preibisch Stephan Preibisch's homepage]
 }}
 
-== Overview of the multi-view fusion plugin ==
+== Overview of the multi-view deconvolution plugin ==
 
 The multi-view deconvolution plugin is an image fusion plugin that computes one single image from several three-dimensional (3d) acquisitions (views) of the same specimen, taken in different orientations. The deconvolution tries to estimate the most probable image that best explains all views, given the individual point spread function (PSF) of each view. It can be computed for single timepoints or an entire timeseries.
 
@@ -94,6 +94,15 @@ The available options are:
 * '''Load images sequentially:''' You usually want to activate this option as it saves a lot of memory and at the same time is just unnoticeably slower.
 
 * '''Fused image output:''' You can choose to display the result, save it the output directory as slices or create a different directory for each timepoint that is processed.
+
+== Multi-Channel Multi-View Deconvolution ==
+
+Multi-Channel deconvolution can be achieved by running the plugin on both channels individually. First, you have to make sure that both channels are aligned to each other. You have two choices
+'''(1)''' Run the [[SPIM_Bead_Registration|Bead-based registration]] on just one channel and duplicate and rename the *.dim, *.beads.txt and *.registration files for the other channels. Now when you run the deconvolution on the channel that contained the beads choose to export the PSF's in original calibration. For the other channels run the deconvolution with loaded PSFs. Alternatively use simulated PSFs. Simply merge the result of all channels.
+
+'''(2)''' Run the  [[Multichannel_registration|Multi-channel bead based registration]], it requires that the same beads are visible in all channels and will register all to each other. Now run the deconvolution individually on both channels and extract the PSF's from the image or use simulated PSFs. Now there will be the problem that the images will most likely suffer an offset to each other, you might even need to define two different bounding boxes. The good news is that we know exactly what the offset - even with different bounding boxes - is. For that you need to note down one line in the output of the deconvolution (fusion is actually the same) of the channels:
+ Location of pixel (0,0,0) in global coordinates is: (367.39523, 452.0, 105.90103)
+The difference between these coordinates of the different channels can for example be applied afterwards using TransformJ -> Translate.
 
 == How do I ... Problems, known issues and solutions ==
 
