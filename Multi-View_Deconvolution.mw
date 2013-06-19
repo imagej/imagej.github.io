@@ -146,3 +146,14 @@ You can also change the interval
 mpicbg.spim.postprocessing.deconvolution2.debugInterval = 10;
 </source>
 Now, I will only debug every 10'th iteration.
+
+=== Start deconvolution with a previous result ===
+
+By default, the deconvolution is initialized with a constant value for each pixel. You have, however, the chance to initialize with a different image. This way you can simply add more iterations to an existing result or even try to combine different parameters. You can do so by setting the input image
+<source lang="java">
+mpicbg.spim.postprocessing.deconvolution2.initialImage = "/users/preibischs/data/psi_10.tif";
+</source>
+and re-running the deconvolution. Note that there is a minimal value for the deconvolved image by definition, here we use 0.0001. By default the image will be checked for anomalies. You can disable the check by executing
+<source lang="java">
+mpicbg.spim.postprocessing.deconvolution2.checkNumbers = false;
+</source>
