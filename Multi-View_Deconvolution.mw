@@ -47,7 +47,9 @@ After providing the data the plugin will check which kind of registrations are a
 
 In the second dialog, you have to define the detailed instruction of how to run the multi-view deconvolution.
 
+<span style="color:#A52A2A">
 ''Note: Many of the options that are only mentioned here are explained in detail in the supplement of the not yet published publication. We will upload graphs, comparisons, etc. once the paper is accepted.''
+</span>
 
 The available options are:
 
