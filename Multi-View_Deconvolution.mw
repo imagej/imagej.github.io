@@ -65,5 +65,4 @@ The available options are:
 ** ''Independent (slow, very precise)'' Is an ad-hoc optimization, yields reasonable results in case of very high signal-to-noise levels. In this case it is very fast.
 ** ''Efficient Bayesian - Optimization I (fast, precise)'' Is an optimization of the Efficient Bayesian multi-view deconvolution which approximates the conditional probabilities - the default choice.
 ** ''Efficient Bayesian (less fast, more precise)'' Incorporates conditional probabilities between the views into account without making any further assumptions.
-** ''Independent (slow, very precise)'' assumes the individual views to be independent. This scheme converges slowest, but is least susceptible to noise and distortions (relevant at low signal-noise-ratios, 
-imprecise alignments and inaccurate estimations of the PSFs)
+** ''Independent (slow, very precise)'' assumes the individual views to be independent. This scheme converges slowest, but is least susceptible to noise and distortions (relevant at low signal-noise-ratios, imprecise alignments and inaccurate estimations of the PSFs)
