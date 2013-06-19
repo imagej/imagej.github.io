@@ -38,3 +38,13 @@ It is highly recommended that before starting the multi-view deconvolution, to u
 [[Image:Spim multiview dialog1.jpg|thumb|300px|Shows the first dialog that queries the location of the multi-view files]]
 
 The multi-view deconvolution consists like the multi-view fusion of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset. Please note that all the parameters will be transferred from the [[Multi-View_Fusion|Multi-view fusion]] dialog that you used before to set the bounding box (cropping area).
+
+We omit a detailed explanation of the parameters here as it is identical to the explanation provided [[Multi-View_Fusion#How_to_use_the_plugin|Multi-view fusion dialog]].
+
+After providing the data the plugin will check which kind of registrations are available. Typically, the individual registration for each channel is available, and maybe also several timeseries registration with various reference timepoints. If no registration files could be found, the plugin will quit.
+
+In the second dialog, you have to define the detailed instruction of how to run the multi-view deconvolution. The available options are:
+
+* '''Registration for channel 0:''' You can choose which registration is used for this channel. You can typically choose between the individual registration of this timepoint or any registration to a reference timepoint.
+
+[[Image:mv_deconvolution.png|thumb|400px|Shows the second dialog that queries detailed parameters]]
