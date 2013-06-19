@@ -125,7 +125,7 @@ This for example subtracts a value of 100 from each pixel before starting, also 
 
 === How do I choose an efficient block size for the CPU ===
 
-This is pretty tricky right now. You want to use as few blocks as possible given a certain size. If you choose a block size of let's say 512x512x512px you end up with an '''effective block size''' of maybe 475x489x432px, it depends on the size of the transformed PSF. It is computed as blocksize - kernelsize + 1. So you cannot really predict it before running a deconvolution once. It also different for each view (see ????????). However, the '''effective block size''' relative to your bounding box size defines how many blocks you will require to cover your bounding box. How many blocks and '''effective block size''' is written to the standard out. In the future I plan to make this easier.
+This is pretty tricky right now. You want to use as few blocks as possible given a certain size. If you choose a block size of let's say 512x512x512px you end up with an '''effective block size''' of maybe 475x489x432px, it depends on the size of the transformed PSF. It is computed as blocksize - kernelsize + 1. So you cannot really predict it before running a deconvolution once. It also different for each view (see [[Multi-View_Deconvolution#How_do_I_make_all_PSF.27s_the_same_size]]). However, the '''effective block size''' relative to your bounding box size defines how many blocks you will require to cover your bounding box. How many blocks and '''effective block size''' is written to the standard out. In the future I plan to make this easier.
 
 === How do I make all PSF's the same size ===
 
