@@ -48,7 +48,7 @@ After providing the data the plugin will check which kind of registrations are a
 In the second dialog, you have to define the detailed instruction of how to run the multi-view deconvolution.
 
 <span style="color:#A52A2A">
-''Note: Many of the options that are only mentioned here are explained in detail in the supplement of the not yet published publication. We will upload graphs, comparisons, etc. once the paper is accepted.''
+''Note: Some of the options that are only mentioned here are explained in detail in the supplement of the not yet published publication. We will upload graphs, comparisons, etc. once the paper is accepted.''
 </span>
 
 The available options are:
@@ -62,4 +62,8 @@ The available options are:
 ''Note: The values defining the bounding box are identical to those provided in the multi-view fusion!''
 
 * '''Type of iteration:''' There are several iteration schemes that have been developed and can be used. They differ from each other by convergence time and image quality, which is of course a trade-off:
-** ''Fuse all images at once'' loads
+** ''Independent (slow, very precise)'' Is an ad-hoc optimization, yields reasonable results in case of very high signal-to-noise levels. In this case it is very fast.
+** ''Efficient Bayesian - Optimization I (fast, precise)'' Is an optimization of the Efficient Bayesian multi-view deconvolution which approximates the conditional probabilities - the default choice.
+** ''Efficient Bayesian (less fast, more precise)'' Incorporates conditional probabilities between the views into account without making any further assumptions.
+** ''Independent (slow, very precise)'' assumes the individual views to be independent. This scheme converges slowest, but is least susceptible to noise and distortions (relevant at low signal-noise-ratios, 
+imprecise alignments and inaccurate estimations of the PSFs)
