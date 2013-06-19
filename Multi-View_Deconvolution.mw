@@ -92,3 +92,5 @@ The available options are:
 * '''Debug Mode:''' The debug mode will not only compute the final image but also show intermediate iterations in an ImageJ window. This allows to identify the correct number of iterations desired for your dataset. You will be queried in a subsequent dialog after every how many iterations you want to see current state of the iteration. It makes sense to not run the debug mode on the entire dataset but maybe a smaller part. Although the output might not be identical it gives a pretty good idea of how many iterations are required.
 
 * '''Load images sequentially:''' You usually want to activate this option as it saves a lot of memory and at the same time is just unnoticeably slower.
+
+* '''Fused image output:''' You can choose to display the result, save it the output directory as slices or create a different directory for each timepoint that is processed.
