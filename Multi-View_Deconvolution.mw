@@ -69,15 +69,20 @@ The available options are:
 ** ''Independent (slow, very precise)'' assumes the individual views to be independent. This scheme converges slowest, but is least susceptible to noise and distortions (relevant at low signal-noise-ratios, imprecise alignments and inaccurate estimations of the PSFs)
 
 * '''Number of iterations:''' Typical multi-view deconvolution scenarios comprising around 4-8 views need 10-15 iterations when using ''Efficient Bayesian - Optimization I (fast, precise)'' as iteration scheme. The behavior relative to another number of views and different optimization schemes can be found in Supplementary Figure 4 (to be linked).
+''Note: In order to determine the correct number of iterations for your dataset we suggest to use the Debug Mode (see below) on a partial volume.''
 
 * '''Use Tikhonov Regularization/Tikhonov Parameter:''' The regularization can be (de)activated. The behavior of the Tikhonov Parameter is shown in Supplementary Figures 5 and 6 (to be linked). 
 
 * '''ImgLib Container:''' Defines which container is used to hold the image data in memory. The ArrayContainer is usually the right choice as it provides highest performance. The PlanarContainer and CellContainer might(!) help in case it runs out of memory, but they save only a few percent.
 
-* '''Compute:''' Define if the multi-view deconvolution should be computed for the entire image at once or in blocks. The result will be 100% identical! Computing in blocks saves a significant amount of RAM at the cost of higher computation time. If you run out of memory, try computing it in small blocks.
+* '''Compute:''' Define if the multi-view deconvolution should be computed for the entire image at once or in blocks. The result will be 100% identical! Computing in blocks saves a significant amount of RAM at the cost of higher computation time. If you run out of memory, try computing it in small blocks. If you select to choose a manually defined block size, a subsequent dialog will query the dimensions. 
+
+''Note: For computation on the CPU, specific block sizes are not important (it is not a traditional power-of-2 scheme). However, on the GPU it is highly recommended to use only power-of-two values (..., 256, 512, ...), or maximally a sum of power-of-two values (..., 384, 768, ...)''
 
 * '''Compute on:''' The multi-view deconvolution can be computed on the CPU or the GPU via JNA and CUDA. The CPU computation is built in Fiji, the CUDA code requires to load a native library (*.dll, *.so) that needs to be copied into the Fiji directory before starting Fiji.
 
 * '''PSF Estimation:''' The PSFs can either be extracted from the corresponding beads that were found during the bead-based registration or an image of the PSF can be provided (needs have the same calibration as the input views).
 
 * '''PSF display:''' In order to verify the extracted PSFs they can be displayed as maximum intensity projection along the rotation axis, as averaged three-dimensional volume or each PSF individually as three-dimensional volume.
+
+* '''Debug Mode:''' The debug mode will not only compute the final image but also show intermediate iterations in an ImageJ window. This allows to identify the correct number of iterations desired for your dataset. You will be queried in a subsequent dialog after every how many iterations you want to see current state of the iteration. It makes sense to not run the debug mode on the entire dataset but maybe a smaller part. Although the output might not be identical it gives a pretty good idea of how many iterations are required.
