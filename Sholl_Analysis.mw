@@ -120,18 +120,11 @@ Input values take into account the scale information of the image that can be se
 |style="border: 0px;"|'''''log'''''
 |style="border: 0px;" colspan="3"|Natural logarithm, the logarithm to the base ''e''<sup>&nbsp;</sup>
 |}
+
+
+[[ File:ShollPlots.png|frame|center|Linear, Linear (norm.), Semi-log and Log-log profiles for the ddaC cell (File▷Open Samples▷ddaC Neuron)]]
+
 </center>
-<br>
-<div style="float:center;
-            border: 1px solid #ccc;
-            padding: 5px !important;
-            border-radius: .75em;
-            -moz-border-radius: .75em;
-            -webkit-border-radius: .75em;
-            margin-bottom: 1em;
-            background-color: #ffefbe;">
-The terms ''Critical radius'' (''C<sub>r</sub>'') and ''Critical value'' (''C<sub>v</sub>'') are arbitrary, and previous authors have used different terms to describe the largest value taken by the Sholl profile (cf. [http://en.wikipedia.org/wiki/Sholl_analysis Wikipedia]). Since Sholl analysis is not restricted to dendritic arbors (it can be applied to any tree-like structure such as axonal arbors,  mammary glands or blood vessels), this plugin introduces the term ''critical radius'', renaming ''Dendrite maximum'' (''N<sub>m</sub>'') to ''Critical value''. Thus, we may not follow the conventions adopted by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].</div>
-<br>
 
 == Descriptors ==
 Morphometric descriptors and other properties of the arbor are printed to a dedicated results table named ''Sholl Results''. Listed values can be displayed in scientific notation and with the precision specified in <u>Analyze▷Set Measurements...</u> The first columns log analysis parameters: Image filename and voxel unit; Lower and Upper Threshold levels; Method choice; X,Y (in pixels) and Z (slice number) coordinates of center of analysis; ''Starting'' and ''Ending radius''; ''Radius step'' and ''Number of Samples per Radius''. Other parameters are described below.
