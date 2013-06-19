@@ -29,4 +29,6 @@ Alternatively, an estimate or a simulated PSF can be provided as a 3d image. Thi
 
 It is highly recommended that before starting the multi-view deconvolution, to use the [[Multi-View_Fusion|Multi-view fusion]] in order to determine the right bounding box for the image to be deconvolved.
 
+<span style="color:#A52A2A">
 ''Note: Do not set the bounding box too close to the imaged sample as it might result in artifacts. A distance of around 30-50 pixels between sample and the bounding box is suggested for the multi-view deconvolution.''
+</span>
