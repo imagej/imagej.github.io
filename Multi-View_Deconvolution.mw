@@ -45,7 +45,11 @@ After providing the data the plugin will check which kind of registrations are a
 
 [[Image:mv_deconvolution.png|thumb|400px|Shows the second dialog that queries detailed parameters]]
 
-In the second dialog, you have to define the detailed instruction of how to run the multi-view deconvolution. The available options are:
+In the second dialog, you have to define the detailed instruction of how to run the multi-view deconvolution.
+
+''Note: Many of the options that are only mentioned here are explained in detail in the supplement of the not yet published publication. We will upload graphs, comparisons, etc. once the paper is accepted.''
+
+The available options are:
 
 * '''Registration for channel 0:''' You can choose which registration is used for this channel. You can typically choose between the individual registration of this timepoint or any registration to a reference timepoint.
 
