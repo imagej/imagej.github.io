@@ -41,7 +41,7 @@ The multi-view deconvolution consists like the multi-view fusion of two consecut
 
 We omit a detailed explanation of the parameters here as it is identical to the explanation provided [[Multi-View_Fusion#How_to_use_the_plugin|Multi-view fusion dialog]].
 
-After providing the data the plugin will check which kind of registrations are available (*.registration and *.registration_.to{tt}). Typically, the individual registration for each channel is available, and maybe also several timeseries registration with various reference timepoints. If no registration files could be found, the plugin will quit.
+After providing the data the plugin will check which kind of registrations are available (*.registration and *.registration_.to{tt}). Typically, the individual registration is available, and maybe also several time-series registrations to various reference timepoints. If no registration files could be found, the plugin will quit.
 
 In the second dialog, you have to define the detailed instruction of how to run the multi-view deconvolution. The available options are:
 
