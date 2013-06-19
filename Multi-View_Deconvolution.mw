@@ -32,3 +32,5 @@ It is highly recommended that before starting the multi-view deconvolution, to u
 <span style="color:#A52A2A">
 ''Note: Do not set the bounding box too close to the imaged sample as it might result in artifacts. A distance of around 30-50 pixels between sample and the bounding box is suggested for the multi-view deconvolution.''
 </span>
+
+== How to use the plugin ==
