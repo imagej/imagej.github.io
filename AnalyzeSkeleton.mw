@@ -2,7 +2,7 @@
 | software               = ImageJ
 | name                   = AnalyzeSkeleton
 | author                 = [[User:Iarganda | Ignacio Arganda-Carreras]]
-| maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
+| maintainer             = [[User:Iarganda | Ignacio Arganda-Carreras]]
 | source                 = {{GitLink|jar=AnalyzeSkeleton_}}
 | released               = November 14<sup>th</sup>, 2008
 | latest version         = January 26<sup>th</sup>, 2012
