@@ -122,3 +122,15 @@ You can subtract background before running the deconvolution (everything belong 
 fiji.plugin.Multi_View_Deconvolution.subtractBackground = 100;
 </source>
 This for example subtracts a value of 100 from each pixel before starting, also before starting to extract the PSFs.
+
+=== How do I choose an efficient block size for the CPU ===
+
+This is pretty tricky right now. You want to use as few blocks as possible given a certain size. If you choose a block size of let's say 512x512x512px you end up with an '''effective block size''' of maybe 475x489x432px, it depends on the size of the transformed PSF. It is computed as blocksize - kernelsize + 1. So you cannot really predict it before running a deconvolution once. It also different for each view (see ????????). However, the '''effective block size''' relative to your bounding box size defines how many blocks you will require to cover your bounding box. How many blocks and '''effective block size''' is written to the standard out. In the future I plan to make this easier.
+
+=== How do I make all PSF's the same size ===
+
+In the course of optimizing the block size you might get sick of the fact that it is different for each view. It might pose huge problems. I therefore added the option to make all transformed PSFs the same size before starting the deconvolution. This means that the '''effective block size''' will be the same for all views.
+<source lang="java">
+fiji.plugin.Multi_View_Deconvolution.makeAllPSFSameSize = true;
+</source>
+Note that you might want to go to this detail of optimization if you have to deconvolve hundreds or thousands of timepoints.
