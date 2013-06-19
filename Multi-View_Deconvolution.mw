@@ -107,7 +107,6 @@ System.gc();
 * click Run
 This just cleans up the RAM, which might be useful. Note that changes that are made (not in this case though) are only valid for the '''currently running Fiji instance'''.
 
-
 === I want to change the size of the PSFs that are extracted ===
 
 The plugin does some choice of what the area it is it uses to extract the PSF around the detected corresponding beads. You can change it in Beanshell by:
@@ -115,3 +114,11 @@ The plugin does some choice of what the area it is it uses to extract the PSF ar
 fiji.plugin.Multi_View_Deconvolution.psfSize3d = new int[]{ 31, 31, 31 };
 </source>
 This changes the area to 31x31x31 pixel around a detected bead (in original calibration of the input views).
+
+=== I want to subtract background before running the deconvolution ===
+
+You can subtract background before running the deconvolution (everything belong 0 is clipped). To do so type in the script editor:
+<source lang="java">
+fiji.plugin.Multi_View_Deconvolution.subtractBackground = 100;
+</source>
+This for example subtracts a value of 100 from each pixel before starting, also before starting to extract the PSFs.
