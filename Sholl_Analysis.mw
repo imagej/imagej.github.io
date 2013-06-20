@@ -76,10 +76,10 @@ Input values take into account the scale information of the image that can be se
 * '''Fit profile and compute descriptors''' <sup>&nbsp;</sup>If checked, data is fitted according to the chosen Sholl Method and respective [[#Descriptors|descriptors]] calculated. If unchecked, only sampled data is plotted.
 ** '''Show fitting details''' <sup>&nbsp;</sup>Choose this option to have all of the parameters of the simplex fitting printed to the Log window. The coefficient of determination (''R<sup>2</sup>'', a measure of goodness of fit) is always stored in the ''Sholl Results'' table even when this option is not selected.
 
-==== Sholl Methods ====
+==== Choice of Method ====
 The [[#Sholl_Methods|types]] of profiles that can be obtained. ''Linear'' (Profile without normalization), or normalized profiles: ''Linear-norm'', ''Semi-log'', or ''Log-log''.
 * '''Polynomial''' <sup>&nbsp;</sup> Specifies the degree of the polynomial to be fitted to the ''Linear'' profile ("Traditional Sholl"): 4<sup>th</sup>-8<sup>th</sup> degree. Note that the "polynomial of best fit" must be empirically determined for each analyzed cell type.
-* '''Normalizer''' The parameter of the sampling shell to be used as normalizer in ''Linear-norm'', ''Semi-log'', or ''Log-log''. It is described in [[#Sholl_Methods|table below]].
+* '''Normalizer''' The parameter of the sampling shell to be used as normalizer in ''Linear-norm'', ''Semi-log'', or ''Log-log''. It is described in [[#Sholl_Methods|Sholl Methods]].
 
 ==== Output Options ====
 * '''Create intersections mask''' <sup>&nbsp;</sup>If checked, a 32–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile.<p>The default Lookup Table used by the mask is modeled after the [http://www.mathworks.com/help/matlab/ref/colormap.html MATLAB "jet" color map] (a rainbow color map based on a fluid-jet simulation by NCSA) but you can apply any of your favorite LUTs using the <u>Image▷Lookup Tables▷</u> submenu. WYSIWYG (RGB) versions of these masks can be otained using <u>Image▷Overlay▷Flatten</u> or <u>Analyze▷Tools▷Calibration Bar...</u></p>
@@ -90,8 +90,13 @@ The [[#Sholl_Methods|types]] of profiles that can be obtained. ''Linear'' (Profi
 
 
 == Sholl Methods ==
-<br>
 <center>
+[[ File:ShollPlots.png|center|]]
+
+'''Linear, Linear-norm, Semi-log and Log-log profiles for the ddaC cell (File▷Open Samples▷ddaC Neuron)'''. The plugin automatically highlights most of the retrieved [[#Descriptors_based_on_fitted_data|Descriptors]]. ''Linear profile'': Mean value (horizontal grid line) and Centroid (colored mark). ''Semi-log profile'': Sholl decay retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10-90 (red line).  
+
+
+
 {| style="padding: 60px;" rules="rows"
 ! align="Center"| &nbsp;
 !style="height: 2em;"| Method
@@ -130,14 +135,6 @@ The [[#Sholl_Methods|types]] of profiles that can be obtained. ''Linear'' (Profi
 |style="border: none;"|'''''log'''''<sub>&nbsp;</sub>
 |style="border: none;" colspan="3"|Natural logarithm, the logarithm to the base ''e''<sup>&nbsp;</sup><sub>&nbsp;</sub>
 |}
-
-
-
-
-[[ File:ShollPlots.png|center|]]
-
-
-'''Linear, Linear (norm.), Semi-log and Log-log profiles for the ddaC cell (File▷Open Samples▷ddaC Neuron)'''. The plugin automatically highlights most of the retrieved [[#Descriptors_based_on_fitted_data|Descriptors]]. ''Linear profile'': Mean value (horizontal grid line) and Centroid (colored mark). ''Semi-log profile'': Sholl decay retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10-90 (red line).  
 </center>
 
 
@@ -223,7 +220,6 @@ The terms ''Critical radius'' (''C<sub>r</sub>'') and ''Critical value'' (''C<su
 :Schoenen Ramification index retrieved from fitted profile:  The ration between ''Critical value'' and  ''Number of primary branches''. As mentioned earlier, the number of primary branches can be inferred from the number of intersections at ''Starting radius''.
 : See also '''''Ramification index (sampled)''''' in [[#Descriptors_based_on_sampled_data|Descriptors based on sampled data]].
 
-
 == Batch Processing ==
 It is fairly simple to automate the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji (see  [[Introduction into Macro Programming|ImageJ Macro Language]], [[Beanshell_Scripting|Beanshell]], [[Javascript_Scripting|Javascript]], [[JRuby_Scripting|JRuby]], [[Jython_Scripting|Jython]], and [[Clojure_Scripting|Clojure]] (see also [[Script Editor]] and  [[Scripting Help]]).
 
@@ -258,7 +254,6 @@ Of course you can also automate any of the previous steps. However, do not forge
 run("Sholl Analysis...", "starting=10 ending=max radius_step=0 samples=1 sholl=Intersections fit polynomial=[8th degree] create background=0 save"); 
 </source>
 
-
 == Auxiliary Commands ==
 ;File▷Open Samples▷ddaC Neuron
 :Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run <u>Image▷Show Info...</u> to know more about this cell type.
@@ -266,9 +261,8 @@ run("Sholl Analysis...", "starting=10 ending=max radius_step=0 samples=1 sholl=I
 ;Image▷Lookup Tables▷Sholl LUT
 : Adjusts the background color of the Sholl lookup table as specified in the main [[#Parameters|dialog prompt]].
 
-;Help▷About Plugins▷Sholl Plugins...
+;Help▷About Plugins▷About Sholl Analysis...
 :Retrieves information about the plugin version and a link to its Git source code.
-
 
 == FAQ ==
 #'''Why do I need to threshold the cell?'''
@@ -300,12 +294,10 @@ run("Sholl Analysis...", "starting=10 ending=max radius_step=0 samples=1 sholl=I
 #'''This documentation is not that useful. How long do I have to wait until it gets improved?'''
 #: Around 20 seconds. This is the time it will take you to [[Help:Contents#New_accounts|create an account]] on this wiki. Once you have created one, you will be able to improve this page yourself.
 
-
 == Non-Fiji users ==
-If you are not using Fiji, download <tt>Sholl_Analysis.jar</tt> from the direct link listed on the [[#top|top of this page]] and place it in the <tt>ImageJ/plugins/</tt> directory. Alternatively, drag the downloaded jar and drop it on the main window. Restart ImageJ and run the new <u>Analyze▷Sholl Analysis...</u> command.
+If you are not using Fiji, download ''Sholl_Analysis.jar'' from the direct link listed on the [[#top|top of this page]] and place it in the ''ImageJ/plugins/'' directory. Alternatively, drag the downloaded jar and drop it on the main window. Restart ImageJ and run the new <u>Analyze▷Sholl Analysis...</u> command.
 
 Please note that Fiji is the most convenient way of keeping your ImageJ distribution up-to-date. Without access to Fiji's [[Update_Fiji|built-in updater]], you are strongly advised to upgrade ImageJ to its latest version using <u>Help▷Update ImageJ...</u>. Without Fiji, you will also have to manually update the Sholl Analysis plugin by checking the [https://github.com/tferr/ASA/blob/master/Notes Release Notes].
-
 
 == Related Links ==
 * '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]]''' Mark Longair's plugin for semi-automated three-dimensional tracing, featuring [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl analysis]] for traced cells
@@ -316,14 +308,11 @@ Please note that Fiji is the most convenient way of keeping your ImageJ distribu
 
 * '''[http://www.reading.ac.uk/neuromantic/ Neuromantic]''' Standalone program for (semi-manual/semi-automatic) neuronal reconstruction, performing Sholl on traced cells
 
-
 == References ==
 <references/>
 
-
 == Release Notes ==
 Available [https://github.com/tferr/ASA/blob/master/Notes here].
-
 
 == License ==
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
