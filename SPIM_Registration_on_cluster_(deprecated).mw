@@ -497,7 +497,7 @@ Tips and tricks:
 
 === Multiview deconvolution ===
 
-Another, more advanced, way to fuse the registered data is multiview deconvolution which will be described eloquently and in details [http://fiji.sc/Multi-View_Deconvolution here]. 
+Another, more advanced, way to fuse the registered data is multiview deconvolution which is described  [http://fiji.sc/Multi-View_Deconvolution here]. 
 
 The deconvolution can be executed either on the CPU (Central Processing Unit - i.e. the main processor of the computer) or on GPU (Graphical Processing Unit - i.e. the graphics card). The pre-requisite for the GPU processing is to have one or more graphics cards capable of [http://www.nvidia.de/object/cuda_home_new.html CUDA] such as NVIDIA Tesla or Quadro or GeForce. Since the GPU accelerated multi-view deconvolution is not yet published and the necessary C code has to be obtained from Stephan Preibisch by request we will focus for now on deconvolution using CPU. 
 
