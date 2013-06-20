@@ -34,7 +34,7 @@ We click on "Experimenter" and the Weka Experiment Environment GUI will pop up:
 [[Image:Screenshot-AWS-Weka-Experiment-Environment.png|700px]]
 
 ==== New experiment ====
-In this tutorial we use the "Simple" configuration mode. After clicking ''New'' default parameters for an Experiment are deﬁned:
+In this tutorial we use the "Simple" configuration mode. After clicking ''New'', default parameters for an Experiment are deﬁned:
 
 [[Image:Screenshot-Weka-Experiment-Environment-Simple-New.png|700px]]
 
