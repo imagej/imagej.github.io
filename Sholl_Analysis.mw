@@ -71,16 +71,16 @@ Input values take into account the scale information of the image that can be se
 :Please keep in mind that this is just a refinement feature, and you should not expect it to mitigate the effects derived from ill-segmented arbors.
 
 ==== Ramification Indices and Curve Fitting ====
-* <span id="PrimaryBranches"></span>'''Number of Primary branches''' The number of primary branches (i.e., those originating directly from cell soma when the center of analysis is the perikaryon) to be used in the calculation of Schoenen indices: [[#SchoenenSampled|Ramification index (sampled)]] and [[#SchoenenFitted|Ramification index (Cv)]] .
+* <span id="PrimaryBranches"></span>'''Number of Primary branches''' The number of primary branches (i.e., those originating directly from cell soma when the center of analysis is the perikaryon) to be used in the calculation of Schoenen indices: [[#SchoenenSampled|Ramification index (sampled)]] and [[#SchoenenFitted|Ramification index (Cv)]].<br><br>
 ** '''Infer from Starting radius''' If checked, the ''Number of Primary branches'' is inferred from the count of intersections at [[#StartRadius|Starting radius]].
 
-* '''Fit profile and compute descriptors''' <sup>&nbsp;</sup>If checked, data is fitted according to the chosen  [[#Sholl_Methods|method]] and appropriate [[#Descriptors|descriptors]] calculated. If unchecked, only sampled data is plotted.
+* '''Fit profile and compute descriptors''' <sup>&nbsp;</sup>If checked, data is fitted according to the chosen  [[#Sholl_Methods|method]] and appropriate [[#Descriptors|descriptors]] calculated. If unchecked, only sampled data is plotted.<br><br>
 ** '''Show fitting details''' <sup>&nbsp;</sup>Choose this option to have all of the parameters of the simplex fitting printed to the Log window. The coefficient of determination (''R<sup>2</sup>'', a measure of goodness of fit) is always stored in the ''Sholl Results'' table even when this option is not selected.
 
 ==== Choice of Method(s) ====
 The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile without normalization), or normalized profiles: ''Linear-norm'', ''Semi-log'', or ''Log-log''.
 * '''Polynomial''' <sup>&nbsp;</sup> Specifies the degree of the [[#MethodsTable|polynomial]] to be fitted to the ''Linear'' profile: 4<sup>th</sup>-8<sup>th</sup> degree. Note that the "polynomial of best fit" must be empirically determined for each analyzed cell type.
-* '''Normalizer''' The property of the sampling shell to be used as normalizer in ''Linear-norm'', ''Semi-log'', or ''Log-log'', as [[#MethodsTable|described below]].
+* '''Normalizer''' The property of the sampling shell to be used in the normalization of ''Linear-norm'', ''Semi-log'', and ''Log-log'' profiles. It is [[#MethodsTable|described below]].
 
 ==== Output Options ====
 * '''Create intersections mask''' <sup>&nbsp;</sup>If checked, a 32–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile.<p>The default Lookup Table used by the mask is modeled after the [http://www.mathworks.com/help/matlab/ref/colormap.html MATLAB "jet" color map] (a rainbow color map based on a fluid-jet simulation by NCSA) but you can apply any of your favorite LUTs using the <u>Image▷Lookup Tables▷</u> submenu. WYSIWYG (RGB) versions of these masks can be otained using <u>Image▷Overlay▷Flatten</u> or <u>Analyze▷Tools▷Calibration Bar...</u></p>
@@ -186,7 +186,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 
 === Descriptors based on fitted data ===
 ;<span id="ShollDecay"></span>Sholl regression coefficient
-:The | slope | ''k'' of the linear regression described in [[#eq3|(3)]]<ref name="Stulic"></ref> <ref name="Ristanovic">NT Milosević and D Ristanović. The Sholl analysis of neuronal cell images: Semi-log or log-log method? J Theor Biol, 245(1):130–40, Mar 2007, [http://www.ncbi.nlm.nih.gov/pubmed?term=17084415 PMID: 17084415]</ref>, a measure of the rate of decay of the number of branches with distance from the center of analysis. Higher ''k'' values reflect larger changes in the function log(N/S).
+:The | slope | ''k'' of the linear regression described in [[#eq3|(3)]]<ref name="Stulic"></ref> <ref name="Ristanovic">NT Milosević and D Ristanović. The Sholl analysis of neuronal cell images: Semi-log or log-log method? J Theor Biol, 245(1):130–40, Mar 2007, [http://www.ncbi.nlm.nih.gov/pubmed?term=17084415 PMID: 17084415]</ref>, a measure of the rate of decay of the number of branches with distance from the center of analysis. Higher ''k'' values reflect larger changes in the function log(N/S). To optimize the fit, the plugin retrieves a [[#ShollPlots|second linear regression]] centered around the median distance, excluding distances at the edges of the profile. Details of this second fit are also registered on the [[#Descriptors|''Sholl table'']] under dedicated columns, e.g., ''Sholl regression coefficient [P10-P90]'', when data within the 10<sup>th</sup>—90<sup>th</sup> percentile is used.
 
 ;Regression intercept
 :The y-coordinate ''m'' described in [[#eq3|(3)]].
@@ -219,6 +219,9 @@ The terms [[#CriticalRadius|Critical radius (Cr)]] and [[#CriticalValue|Critical
 ;<span id="SchoenenFitted"></span>Schoenen Ramification index (''Ramification index (Cv)'')
 :Schoenen Ramification index retrieved from fitted profile:  The ration between [[#CriticalValue|Critical value]] and  [[#PrimaryBranches|Number of primary branches]].
 : See also [[#SchoenenSampled|Ramification index (sampled)]]
+
+;Polynomial R<sup>2</sup> (''Poly. R^2'')
+:The coefficient of determination of the polynomial fit describe in [[#eq1|(1)]].
 
 == Batch Processing ==
 It is fairly simple to automate the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji (see  [[Introduction into Macro Programming|ImageJ Macro Language]], [[Beanshell_Scripting|Beanshell]], [[Javascript_Scripting|Javascript]], [[JRuby_Scripting|JRuby]], [[Jython_Scripting|Jython]], and [[Clojure_Scripting|Clojure]] (see also [[Script Editor]] and  [[Scripting Help]]).
