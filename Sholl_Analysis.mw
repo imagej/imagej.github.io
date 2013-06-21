@@ -1,11 +1,12 @@
 {{Infobox Plugin
 | software        = ImageJ
-| name            = Bitmap Sholl Analysis
-| author          = Tiago Ferreira
-| source          = {{GitLink|jar=Sholl_Analysis}}
+| name             = Bitmap Sholl Analysis
+| author           = Tiago Ferreira
+| source           = {{GitLink|jar=Sholl_Analysis}}
 | filename        =  [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.0.0-SNAPSHOT.jar Sholl_Analysis.jar]
-| released        = December 2012
-| status          = stable
+| latest version = v3.1 (June 2013)
+| released         = December 2012
+| status            = stable, active
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]]
 }}
 
