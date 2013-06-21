@@ -123,20 +123,19 @@ The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile wit
 | Log-log&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 | log(''N/S'') = a <i>e</i><sup>−b &times; log(r)</sup> + c
 |&nbsp;<br>Outputs a [<i>log(N/S)</i> vs <i>log(Distance)</i>] profile. Sampled data is fitted to an exponential with offset<br>&nbsp;
-|-
-|style="border: none;" |'''''N'''''<sub>&nbsp;</sub>
-|style="border: none;" colspan="3"|For 2D images, the <u>N</u>umber of clusters of pixels (8–connected) intersecting the circumference of radius ''r''<sup>&nbsp;</sup><br>For 3D images, the <u>N</u>umber of clusters of voxels (26-connected) intersecting the surface of the sphere of radius ''r''<sub>&nbsp;</sub>
-|-
-|style="border: none;"|'''''r'''''<sub>&nbsp;</sub>
-|style="border: none;" colspan="3"|Distance from center of analysis (<u>r</u>adius of Sholl circle/sphere)<sup>&nbsp;</sup><sub>&nbsp;</sub>
-|-
-|style="border: none;"|'''''S'''''<sub>&nbsp;</sub>
-|style="border: none;" colspan="3"|For 2D images, the area of the sampling circle (πr<sup>2</sup>) or the length of the respective circumference (2πr).<br>For 3D images, the volume of the sampling sphere (4/3πr<sup>3</sup>) or its respective  surface (4πr<sup>2</sup>)<br><sub>&nbsp;</sub>
-|-
-|style="border: none;"|'''''log'''''<sub>&nbsp;</sub>
-|style="border: none;" colspan="3"|Natural logarithm, the logarithm to the base ''e''<sup>&nbsp;</sup><sub>&nbsp;</sub>
 |}
 </center>
+
+
+<span style="display: inline-block; width: 25px">'''''N'''''</span> For 2D images, the <u>N</u>umber of clusters of pixels (8–connected) intersecting the circumference of radius ''r''<br>
+<span style="display: inline-block; width: 25px">&nbsp;</span> For 3D images, the <u>N</u>umber of clusters of voxels (26-connected) intersecting the surface of the sphere of radius ''r''
+
+<span style="display: inline-block; width: 25px">'''''r'''''</span> Distance from center of analysis (<u>r</u>adius of Sholl circle/sphere)
+
+<span style="display: inline-block; width: 25px">'''''S'''''</span>For 2D images, the area of the sampling circle (πr<sup>2</sup>) or the length of the respective circumference (2πr)<br>
+<span style="display: inline-block; width: 25px">&nbsp;</span>For 3D images, the volume of the sampling sphere (4/3πr<sup>3</sup>) or its respective  surface (4πr<sup>2</sup>)
+
+<span style="display: inline-block; width: 25px">'''''log'''''</span>Natural logarithm, the logarithm to the base ''e''
 
 
 
@@ -199,7 +198,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 : See also [[#MaxInters|Max inters.]]
 
 ;<span id="CriticalRadius"></span>Critical radius (Cr)
-:The distance at which ''Critical value'' occurs. Calculated with a precision of 1/1000 of ''Radius step size''. Sometimes abbreviated as ''r<sub>c</sub>'' .
+:The distance at which ''Critical value'' occurs. Calculated with a precision of 1/1000 of ''Radius step size''. Sometimes abbreviated as ''r<sub>c</sub>''.
 : See also [[#MaxIntersRadius|Max inters. radius]]
 
 <div style="float:center;
