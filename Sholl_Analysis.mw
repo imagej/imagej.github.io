@@ -228,11 +228,11 @@ Independently of which strategy is used, the Sholl Analysis plugin will need to 
 
 Here is a routine using the ImageJ macro language:
 
-# Place all the .tif images to be processed in a single folder.
-#Select the Point Selection Tool in the main ImageJ window and activate the Threshold widget (<u>Image▷ #Adjust▷ Threshold...</u>). Open the first image.
-#Adjust threshold levels. Press the ''Apply'' button of the Threshold widget to create a binary image.
-#Select the z-slice containing the center of analysis. Click over the center with the Point Selection Tool and press ''B'' (shortcut for <u>Image▷ Overlay▷ Add Selection...</u>). This will add the point ROI to the image overlay. Save the image as .TIFF by pressing ''S'' (<u>File▷ Save As...▷ Tiff...</u>).
-#Repeat the last 2 steps until all images are marked (Use ''Shift'' + ''O'' (shortcut for <u>File▷ Open Next</u> to iterate rapidly through all the images).
+#'''Place all the .tif images to be processed in a single folder'''.
+#Select the Point Selection Tool in the main ImageJ window and activate the Threshold widget (<u>Image▷ Adjust▷ Threshold...</u>). '''Make sure ''Set stack positions'' is active in the <u>Image▷ Overlay▷ Overlay Options...</u> prompt'''. Open the first image.
+#'''Adjust threshold levels'''. Press the ''Apply'' button of the Threshold widget to create a binary image.
+#Select the z-slice containing the center of analysis. '''Click over the center with the Point Selection Tool and press ''B''''' (shortcut for <u>Image▷ Overlay▷ Add Selection...</u>). This will add the point ROI to the image overlay. Save the image as .TIFF by pressing ''S'' (<u>File▷ Save As...▷ Tiff...</u>).
+#'''Repeat the last 2 steps''' until all images are marked (Use ''Shift'' + ''O'' (shortcut for <u>File▷ Open Next</u> to iterate rapidly through all the images).
 
 Now that all the images are marked, we just need a working macro. We will open the Macro Recorder (<u>Plugins▷ Macros▷ Record...</u>) and run ''Sholl Analysis'' on one of the images to find out how to call the plugin with suitable parameters. The single line of code that appears in the recorder window will look something like this:
 <source lang="java">
@@ -243,17 +243,18 @@ run("Sholl Analysis...", "starting=10 ending=400 radius_step=0 infer fit linear 
 Now, we just need to assemble a working macro to be pasted in the <u>Process▷ Batch▷ Macro...</u> prompt:
 <source lang="java">
 // Get the number of ROIs of the image overlay
-nROIs = Overlay.size();
+nROIs = Overlay.size;
 
 // We cannot proceed if no ROI is available (safety check)
 if (nROIs==0)
    exit("No ROI was found. Cannot proceed.");
 
-// Select the last ROI of the overlay. With stacks, this will automatically activate the Z-slice in which the ROI was created
+// Select the last ROI of the overlay. Because we have activated the "Set stack positions" option,
+// this will automatically activate the Z-slice in which the ROI was created (3D images)
 Overlay.activateSelection(nROIs-1);
 
-// We now call the plugin as detailed by the Macro Recorder.
-// We'll set 'Ending radius' to a non-numeric value to make sure the maximum length for each individual image is used
+// We now call the plugin as detailed by the Macro Recorder. We'll set 'Ending radius' to a
+// non-numeric value to make sure the maximum length for each individual image is used
 run("Sholl Analysis...", "starting=10 ending=max radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 </source>
 
@@ -268,14 +269,14 @@ Of course you can also automate any preceding steps. However, do not forget to e
 // Apply a favorite threshold
     setAutoThreshold("Huang dark stack");
 // >>>> Make sure the initial point selection remains available <<<<
-    Overlay.activateSelection( Overlay.size()-1 );
+    Overlay.activateSelection( Overlay.size - 1 );
 // Run the plugin
 run("Sholl Analysis...", "starting=10 ending=max radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 </source>
 
 That's it. Use the Macro Recorder to generate the customizations you will need before parsing the entire folder of images with <u>Process▷ Batch▷ Macro...</u>
 
-'''Tip:''' You will soon realize that plugins are controlled by a single sentence  in which all arguments are separated by a space. Input fields and choice lists appear as ''keyword=value'' pairs, active checkboxes by a single keyword. Options that you do not use can be omitted. This makes it easier to generate customizable macros:
+'''Tip:''' As you may have noticed, ImageJ plugins are controlled by a single sentence  in which all arguments are separated by a space. Input fields and choice lists appear as ''keyword=value'' pairs, active checkboxes by a single keyword. Options that are not needed can be omitted. This makes it easier to generate customizable macros:
 
 <source lang="java">
 start = 10;  // variable that controls starting radius
@@ -287,7 +288,6 @@ setBatchMode(true);
 // Run the plugin
 run("Sholl Analysis...", "starting="+ start +" ending="+ end +"radius_step="+ step +" infer save do");
 </source>
-
 
 == Auxiliary Commands ==
 ;File▷Open Samples▷ddaC Neuron
