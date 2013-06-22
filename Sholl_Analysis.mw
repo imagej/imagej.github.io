@@ -27,7 +27,7 @@ Bitmap Sholl for 2D and 3D images. For analysis of traced arbors have a look at 
 </div>
 
 == Introduction ==
-[[ File:BitmapSholl-CA1mask.png|frame|Mouse hippocampal CA1 cell <ref name="Gross">TA Ferreira, LL Iacono and CT Gross. Serotonin receptor 1A modulates actin dynamics and restricts dendritic growth in hippocampal neurons. Eur J Neurosci 32(1):18-26, Jul 2010 [http://www.ncbi.nlm.nih.gov/pubmed?term=20561047 PMID: 20561047]</ref> in which apical and basal dendrites have been analyzed separately and color coded according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''rc'') and [[#MeanValueOfFunction|average number of intersections]] (''Nav'') are indicated.]]
+[[ File:BitmapSholl-CA1mask.png|frame|[[Skeletonize3D|Skeletonized]] Mouse hippocampal CA1 cell <ref name="Gross">TA Ferreira, LL Iacono and CT Gross. Serotonin receptor 1A modulates actin dynamics and restricts dendritic growth in hippocampal neurons. Eur J Neurosci 32(1):18-26, Jul 2010 [http://www.ncbi.nlm.nih.gov/pubmed?term=20561047 PMID: 20561047]</ref> in which apical and basal dendrites have been analyzed separately and color coded according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''rc'') and [[#MeanValueOfFunction|average number of intersections]] (''Nav'') are indicated.]]
 This plugin performs 2D and 3D Sholl on grayscale images of single neurons. Sholl<ref name="Sholl">DA Sholl. Dendritic organization in the neurons of the visual and motor cortices of the cat. J Anat, 87(4):387–406, Sep 1953, [http://www.ncbi.nlm.nih.gov/pubmed?term=13117757  PMID: 13117757]</ref> is a popular technique used by neuroanatomists to describe neuronal arbors. The major advantages of this plugin over other implementations are:
 * It does not require previous tracing of the arbor
 * Retrieves quantitative descriptors from the Sholl profile, allowing statistical comparisons between arbors
@@ -185,7 +185,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 
 === Descriptors based on fitted data ===
 ;<span id="ShollDecay"></span>Sholl regression coefficient
-:The | slope | ''k'' of the linear regression described in [[#eq3|(3)]]<ref name="Stulic"></ref> <ref name="Ristanovic">NT Milosević and D Ristanović. The Sholl analysis of neuronal cell images: Semi-log or log-log method? J Theor Biol, 245(1):130–40, Mar 2007, [http://www.ncbi.nlm.nih.gov/pubmed?term=17084415 PMID: 17084415]</ref>, a measure of the rate of decay of the number of branches with distance from the center of analysis. Higher ''k'' values reflect larger changes in the function log(N/S). To optimize the fit, the plugin retrieves a [[#ShollPlots|second linear regression]] centered around the median distance, excluding distances at the edges of the profile. Details of this second fit are also registered on the [[#Descriptors|''Sholl table'']] under dedicated columns, e.g., ''Sholl regression coefficient [P10-P90]'', when data within the 10<sup>th</sup>—90<sup>th</sup> percentile is used.
+:The | slope | ''k'' of the linear regression described in [[#eq3|(3)]], a measure of the rate of decay of the number of branches with distance from the center of analysis<ref name="Ristanovic">NT Milosević and D Ristanović. The Sholl analysis of neuronal cell images: Semi-log or log-log method? J Theor Biol, 245(1):130–40, Mar 2007, [http://www.ncbi.nlm.nih.gov/pubmed?term=17084415 PMID: 17084415]</ref>. Higher ''k'' values reflect larger changes in the function log(N/S). To optimize the fit, the plugin retrieves a [[#ShollPlots|second linear regression]] centered around the median distance, excluding distances at the edges of the profile. Details of this second fit are also registered on the [[#Descriptors|''Sholl table'']] under dedicated columns, e.g., ''Sholl regression coefficient [P10-P90]'', when data within the 10<sup>th</sup>—90<sup>th</sup> percentile is used.
 
 ;Regression intercept
 :The y-coordinate ''m'' described in [[#eq3|(3)]].
@@ -340,7 +340,7 @@ Please note that Fiji is the most convenient way of keeping your ImageJ distribu
 == Related Links ==
 * '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]]''' Mark Longair's plugin for semi-automated three-dimensional tracing, featuring [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl analysis]] for traced cells
 
-* '''[[Strahler_Analysis|Strahler_Analysis]]''' Strahler Analysis on skeletonized arbors.
+* '''[[Strahler_Analysis|Strahler_Analysis]]''' Strahler Analysis on [[Skeletonize3D|skeletonized]] arbors.
 
 * '''[http://www.imagescience.org/meijering/software/neuronj/ NeuronJ]''' ImageJ plugin for semi-automated tracing and quantification of two-dimensional arbors
 
