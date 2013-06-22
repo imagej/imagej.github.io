@@ -1,6 +1,6 @@
 = Getting help regarding Fiji =
 
-You might want to subscribe to the [https://list.nih.gov/cgi-bin/wa.exe?SUBED1=IMAGEJ&A=1 ImageJ] (or [http://groups.google.com/group/fiji-devel Fiji developers']) mailing list, or just browse the archives for help.
+You might want to subscribe to the [https://list.nih.gov/cgi-bin/wa.exe?SUBED1=IMAGEJ&A=1 ImageJ mailing list], the [http://imagej.net/mailman/listinfo/imagej-devel ImageJ developers' mailing list] or the [http://groups.google.com/group/fiji-devel Fiji developers' mailing list]. If you have a natural allergy toward subscribing to mailing lists, the developers' mailing lists moderate posts from non-members (make '''really''' sure that you '''reply-to-all''' for that reason!), you can use [http://nabble.com Nabble]'s forum interface to [http://imagej.1557.x6.nabble.com/ ImageJ], [http://imagej-devel.54429.x6.nabble.com ImageJ-devel] or [http://fiji-devel.54424.x6.nabble.com/ fiji-devel]. Or just browse the archives to find information regarding your problem.
 
 Alternatively, you might want to look in [[IRC]] for other users and developers of Fiji.
 
