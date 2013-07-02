@@ -1,0 +1,4 @@
+=== Introduction ===
+From version 3.7.2, Weka has a '''package manager''' (understanding package not in the java sense but as a bundle of additional functionality, separate from that supplied in the main weka.jar file). Many learning algorithms and tools that were present in earlier versions of Weka have become separate packages from version 3.7.2.
+
+In this tutorial we describe step by step '''how to add new classifiers''' to the [[Trainable Weka Segmentation]] plugin using the Weka package manager.
