@@ -51,7 +51,7 @@ We click OK and the package will be installed. If everything goes right, the pac
 [[Image:Weka-package-manager-loaded-package.png|700px]]
 
 
-This means the classifier is now installed and ready to use. We can check it out by going to the settings dialog of the [[Trainable Weka Segmentation]] plugin and confirming the classifier is now listed:
+This means the ''ClassificationViaClustering'' classifier '''is now installed''' and ready to use. We can check it out by going to the settings dialog of the [[Trainable Weka Segmentation]] plugin and confirming the classifier is now listed:
 
 [[Image:TWS-settings-new-classifier.png]]
 
