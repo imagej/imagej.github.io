@@ -71,7 +71,7 @@ Input values take into account the scale information of the image that can be se
 :Please keep in mind that this is just a refinement feature, and you should not expect it to mitigate the effects derived from ill-segmented arbors.
 
 ==== Ramification Indices and Curve Fitting ====
-* <span id="PrimaryBranches"></span>'''Number of Primary branches''' The number of primary branches (i.e., those originating directly from cell soma when the center of analysis is the perikaryon) to be used in the calculation of Schoenen indices: [[#SchoenenSampled|Ramification index (sampled)]] and [[#SchoenenFitted|Ramification index (CV)]].<br><br>
+* <span id="PrimaryBranches"></span>'''Number of Primary branches''' The number of primary branches (i.e., those originating directly from cell soma when the center of analysis is the perikaryon) to be used in the calculation of [[#SchoenenSampled|Schoenen ramification indices]].<br><br>
 ** '''Infer from Starting radius''' If checked, the ''Number of Primary branches'' is inferred from the count of intersections at [[#StartRadius|Starting radius]].
 
 * '''Fit profile and compute descriptors''' <sup>&nbsp;</sup>If checked, data is fitted according to the chosen  [[#Sholl_Methods|method]] and appropriate [[#Descriptors|descriptors]] calculated. If unchecked, only sampled data is plotted.<br><br>
@@ -94,7 +94,7 @@ The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile wit
 <center>
 <span id="ShollPlots"></span>[[File:ShollPlots.png|center|]]
 
-'''''Linear'', ''Linear-norm'', ''Semi-log'' and ''Log-log'' profiles for the ddaC cell (File▷Open Samples▷ddaC Neuron)'''. Most of the retrieved [[#Descriptors_based_on_fitted_data|Descriptors]] are automatically highlighted by the plugin. ''Linear profile'': [[#MeanValueOfFunction|Mean value]] (horizontal grid line) and [[#Centroid|Centroid]] (colored mark). Logarithmic profiles: The [[#ShollDecay|Sholl decay]] can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10-90 (red line).  For this particular cell type, the Semi-log method is more informative when compared to the Log-log method.
+'''''Linear'', ''Linear-norm'', ''Semi-log'' and ''Log-log'' profiles for the ddaC cell (File▷Open Samples▷ddaC Neuron)'''. Most of the retrieved [[#Descriptors_based_on_fitted_data|Descriptors]] are automatically highlighted by the plugin. ''Linear profile'': [[#MeanValueOfFunction|Mean value]] (horizontal grid line) and [[#Centroid|Centroid]] (colored mark). Logarithmic profiles: The [[#ShollDecay|Sholl regression coefficient]] (also known as Sholl decay) can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10-90 (red line).  For this particular cell type, the Semi-log method is more informative when compared to the Log-log method.
 
 
 <span id="MethodsTable"></span>
@@ -105,24 +105,24 @@ The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile wit
 ! Description
 |-
 | <span id="eq1">(1)</span>&nbsp;&nbsp;
-| Linear&nbsp;&nbsp;&nbsp;&nbsp;
+|style="white-space:nowrap"| Linear
 |style="white-space:nowrap"|&nbsp;&nbsp; <i>N</i> = a + br + cr<sup>2</sup> + dr<sup>3</sup>  + er<sup>4</sup> + fr<sup>5</sup> + ... + ir<sup>8</sup>&nbsp;&nbsp;
-| &nbsp;<br>Outputs a [''N'' vs ''Distance''] profile. Data is fitted to a polynomial function<ref name="Stulic"/>. [[#CriticalRadius|Critical radius]], [[#CriticalValue|Critical value]] and [[#MeanValueOfFunction|Mean value of function]] are calculated<br>&nbsp;
+| &nbsp;&nbsp;&nbsp;<br>Outputs a [''N'' vs ''Distance''] profile. Data is fitted to a polynomial function<ref name="Stulic"/>. [[#CriticalRadius|Critical radius]], [[#CriticalValue|Critical value]] and [[#MeanValueOfFunction|Mean value of function]] are calculated<br>&nbsp;
 |-
 | <span id="eq2">(2)</span>&nbsp;&nbsp;
-| Linear-norm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-| ''N/S'' = a r<sup>b</sup>
+|style="white-space:nowrap"|  Linear-norm
+|style="white-space:nowrap"|&nbsp;&nbsp; ''N/S'' = a r<sup>b</sup>
 | &nbsp;<br>Outputs a [<i>N/S</i> vs <i>Distance</i>] profile. Points are fitted to a power function. It is an intermediate representation of the data. Once plotted under a logarithmic scale, it is identical to the Semi-log profile<br>&nbsp;
 |-
 | <span id="eq3">(3)</span>&nbsp;&nbsp;
-| Semi-log&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-| log(''N/S'') = -k r + m
+|style="white-space:nowrap"|  Semi-log
+|style="white-space:nowrap"|&nbsp;&nbsp; log(''N/S'') = -k r + m
 |&nbsp;<br>Outputs a [<i>log(N/S)</i> vs <i>Distance</i>] profile. A linear regression is fitted to the sampled data. The [[#ShollDecay|Sholl regression coefficient]] (''k'') is calculated<br>&nbsp;
 |-
 | <span id="eq4">(4)</span>&nbsp;&nbsp;
-| Log-log&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-| log(''N/S'') = -k log(r) + m
-|&nbsp;<br>Outputs a [<i>log(N/S)</i> vs <i>log(Distance)</i>] profile. Data is also fitted to a straight line. This is an alternative approach of obtaining a relevant [[#ShollDecay|regression coefficient]], when the Semi-log method returns a poor fit<br>&nbsp;
+|style="white-space:nowrap"| Log-log
+|style="white-space:nowrap"|&nbsp;&nbsp;  log(''N/S'') = -k × log(r) + m
+|&nbsp;<br>Outputs a [<i>log(N/S)</i> vs <i>log(Distance)</i>] profile. Data is also fitted to a straight line. This is an alternative approach<ref name="Ristanovic"></ref> of obtaining a relevant [[#ShollDecay|regression coefficient]], when the Semi-log method returns a poor fit<br>&nbsp;
 |}
 </center>
 
@@ -136,7 +136,7 @@ The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile wit
 
 <span style="display: inline-block; width: 25px">'''''S'''''</span>The [[#Choice_of_Method(s)|chosen property ]] of the sampling shell to be used in the normalization of ''Linear-norm'', ''Semi-log'', and ''Log-log'' profiles.<br> <span style="display: inline-block; width: 25px">&nbsp;</span>For 2D images, the ''Perimeter'' of the sampling circumference (2πr) or the ''Area'' of the corresponding circle (πr<sup>2</sup>)<br> <span style="display: inline-block; width: 25px">&nbsp;</span>For 3D images, the ''Surface'' of the sampling sphere (4πr<sup>2</sup>) or its respective ''Volume'' (4/3πr<sup>3</sup>)<br>
 
-'''N.B.''' A third normalization option is also available when performing [[#StepSize|non-continuous]] sampling: ''Annulus'' / ''Spherical shell''.<br>
+'''N.B.''' A third normalization option is also available when performing [[#StepSize|non-continuous sampling]]: ''Annulus'' / ''Spherical shell''.<br>
 In this case, the normalization is performed against the area of the annulus formed between the circumferences at ''r'' ± ''Radius step size''/2 (2D images), or against the volume between the two spheres at ''r'' ± ''Radius step size''/2 (3D images).<br>
 
 
@@ -187,19 +187,19 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 
 === Descriptors based on fitted data ===
 ;<span id="ShollDecay"></span>Sholl regression coefficient
-:The | slope | ''k'' of the linear regression described in [[#eq3|(3)]], a measure of the rate of decay of the number of branches with distance from the center of analysis<ref name="Ristanovic">NT Milosević and D Ristanović. The Sholl analysis of neuronal cell images: Semi-log or log-log method? J Theor Biol, 245(1):130–40, Mar 2007, [http://www.ncbi.nlm.nih.gov/pubmed?term=17084415 PMID: 17084415]</ref>. Higher ''k'' values reflect larger changes in the function log(N/S). To optimize the fit, the plugin retrieves a [[#ShollPlots|second linear regression]] centered around the median distance, excluding distances at the edges of the profile. Details of this second fit are also registered on the [[#Descriptors|''Sholl table'']] under dedicated columns, e.g., ''Sholl regression coefficient [P10-P90]'', when data within the 10<sup>th</sup>—90<sup>th</sup> percentile is used.
+:The | slope | ''k'' of the linear regression described in [[#eq3|(3)]] and [[#eq4|(4)]], a measure of the rate of decay of the number of branches with distance from the center of analysis<ref name="Ristanovic">NT Milosević and D Ristanović. The Sholl analysis of neuronal cell images: Semi-log or log-log method? J Theor Biol, 245(1):130–40, Mar 2007, [http://www.ncbi.nlm.nih.gov/pubmed?term=17084415 PMID: 17084415]</ref>. Higher ''k'' values reflect larger changes in the function log(N/S). To optimize the fit, the plugin retrieves a [[#ShollPlots|second linear regression]] centered around the median distance, excluding distances at the edges of the profile. Details of this second fit are also registered on the [[#Descriptors|''Sholl table'']] under dedicated columns, e.g., ''Sholl regression coefficient [P10-P90]'', when data within the 10<sup>th</sup>—90<sup>th</sup> percentile is used.
 
 ;Regression intercept
-:The y-coordinate ''m'' described in [[#eq3|(3)]].
+:The y-coordinate ''m'' described in [[#eq3|(3)]] and [[#eq4|(4)]].
 
 ;Regression R<sup>2</sup> (''Regression R^2'')
-:The coefficient of determination of the linear regression described in [[#eq3|(3)]].
+:The coefficient of determination of the linear regression described in [[#eq3|(3)]] and [[#eq4|(4)]].
 
 ;<span id="CriticalValue"></span>Critical value (CV)
 :The local maximum of the polynomial fit, i.e, ''N'' at ''CR'' in [[#eq1|(1)]]. Sometimes abbreviated as ''N<sub>m</sub>''.
 : See also [[#MaxInters|Max inters.]]
 
-;<span id="CriticalRadius"></span>Critical radius (Cr)
+;<span id="CriticalRadius"></span>Critical radius (CR)
 :The distance at which ''Critical value'' occurs. Calculated with a precision of 1/1000 of ''Radius step size''. Sometimes abbreviated as ''r<sub>c</sub>''.
 : See also [[#MaxIntersRadius|Max inters. radius]]
 
@@ -211,10 +211,10 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
             -webkit-border-radius: .75em;
             margin-bottom: 1em;
             background-color: #ffefbe;">
-The terms [[#CriticalRadius|Critical radius (Cr)]] and [[#CriticalValue|Critical value (CV)]] are arbitrary, and previous authors have used different terms to describe the largest value taken by the Sholl profile (cf. [http://en.wikipedia.org/wiki/Sholl_analysis Wikipedia]). Since Sholl analysis is not restricted to dendritic arbors (it can be applied to any tree-like structure such as axonal arbors,  mammary glands or blood vessels), this plugin introduces the term ''Critical radius'', renaming ''Dendrite maximum'' (''N<sub>m</sub>'') to ''Critical value''. Thus, we may not follow the conventions adopted by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].</div>
+The terms [[#CriticalRadius|Critical radius (CR)]] and [[#CriticalValue|Critical value (CV)]] are arbitrary, and previous authors have used different terms to describe the largest value taken by the Sholl profile (cf. [http://en.wikipedia.org/wiki/Sholl_analysis Wikipedia]). Since Sholl analysis is not restricted to dendritic arbors (it can be applied to any tree-like structure such as axonal arbors,  mammary glands or blood vessels), this plugin introduces the term ''Critical radius'', renaming ''Dendrite maximum'' (''N<sub>m</sub>'') to ''Critical value''. Thus, we may not follow the conventions adopted by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].</div>
 
 ;<span id="MeanValueOfFunction"></span>Mean value
-:The mean value<ref name="Stulic"></ref> of the fitted polynomial function [[#eq1|(1)]], representing the average of intersections over the whole area occupied by the arbor. Sometimes abbreviated as Mv or Nav.
+:The mean value<ref name="Stulic"></ref> of the fitted polynomial function [[#eq1|(1)]], representing the average of intersections over the whole area occupied by the arbor. Sometimes abbreviated as MV or Nav.
 :On the Sholl plot, it is [[#ShollPlots|highlighted]] as the height of the rectangle that has the width of ''Enclosing radius'' − ''First intersecting radius'' and the same area of the area under the fitted curve on that discrete interval. It is analogous to '''''Mean inters.''''', the arithmetic mean of sampled intersections throughout the arbor (cf. [[#Descriptors_based_on_sampled_data|Descriptors based on sampled data]]).
 
 ;<span id="SchoenenFitted"></span>Schoenen Ramification index (''Ramification index (CV)'')
@@ -281,7 +281,7 @@ run("Sholl Analysis...", "starting=10 ending=max radius_step=0 infer fit linear 
 
 That's it. Use the Macro Recorder to generate the customizations you will need before parsing the entire folder of images with <u>Process▷ Batch▷ Macro...</u>
 
-'''Tip:''' As you may have noticed, ImageJ plugins are controlled by a single sentence  in which all arguments are separated by a space. Input fields and choice lists appear as ''keyword=value'' pairs, active checkboxes by a single keyword. Options that are not needed can be omitted. This makes it easier to generate customizable macros:
+'''Tip:''' As you may have noticed, ImageJ plugins are controlled by a single sentence  in which arguments are separated by a space. Input fields and choice lists appear as ''keyword=value'' pairs, active checkboxes by a single keyword. Options that are not needed can be omitted. This makes it easier to generate customizable macros:
 
 <source lang="java">
 start = 10;  // variable that controls starting radius
@@ -291,7 +291,7 @@ step  = 2;   // variable that controls step size
 // Enter batch mode
 setBatchMode(true);
 // Run the plugin
-run("Sholl Analysis...", "starting="+ start +" ending="+ end +"radius_step="+ step +" infer save do");
+run("Sholl Analysis...", "starting="+ start +" ending="+ end +"radius_step="+ step +" infer linear save do");
 </source>
 
 == Auxiliary Commands ==
@@ -307,27 +307,27 @@ run("Sholl Analysis...", "starting="+ start +" ending="+ end +"radius_step="+ st
 == FAQ ==
 #'''Why do I need to threshold the cell?'''
 #: Counting intersections is really a binary procedure: a shell either intercepts a branch or it doesn't. For this reason the image must be split in two phases: arbor and background. 
-#'''My images do not look that great. How can I treat them prior to analysis?'''
-#: 
 #'''The plugin complains about a wrong image type. Why?'''
 #: Although ImageJ can threshold RGB images, the plugin can only parse grayscale images (8-bit and 16-bit). Images of fluorescent-labeled cells are typically non-RGB images. Conversions between different image types is explained in the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide].
+#'''I cannot see the hemicircle/hemisphere option. Why?'''
+#: This option is only available if an orthogonal line has been created by holding Shift when using the Straight Line Selection Tool. See the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for the full list of key modifiers that can be used while creating straight line ROIS.
+#'''With 3D images, How do I set the Z-position of the center?'''
+#: The Z-position (depth) of the center of analysis is the active Z-slice of the stack. It is reported in the ''Sholl Results'' table.
+#'''Why so many parameters?'''
+#:The plugin is designed for the analysis of a wide diversity of arbors and it is not biased to any particular cell type. The only way to ensure this is by giving users full control over the mathematical techniques used by the plugin to analyze sampled data.
 #'''How can I save/edit the ''Sholl Results'' table?'''
 #: Select the table, then choose <u>File▷ Save As…</u> As with any other ImageJ table, the file extension to be used when saving the tables created by the plugin can be specified using the <u>Edit▷ Options▷ Input/Output…</u> command (see the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
 #'''Can I modify the number of decimal places used by the ''Sholl Results'' table?'''
 #: Yes. Use the options ''Decimal places'' and ''Scientific notation'' in <u>Analyze▷ Set Measurements…</u>
 #'''I cannot see the option to save the results. Why?'''
 #: The image you are trying to analyze is not saved locally. Saving it to a local directory (e.g., your Desktop or Home folder) should re-enable it.
-#'''I cannot see the hemicircle/hemisphere option. Why?'''
-#: This option is only available if an orthogonal line has been created by holding Shift when using the Straight Line Selection Tool. See the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for the full list of key modifiers that can be used while creating straight line ROIS.
-#'''With 3D images, How do I set the Z-position of the center?'''
-#: The Z-position (depth) of the center of analysis is the active Z-slice of the stack. It is reported in the ''Sholl Results'' table.
+#'''What can I do with the ''Sholl mask''?'''
+#:
 #'''The 3D profile looks worse than the 2D profile of the Maximum Intensity Projection of the same cell. Why?'''
 #:
 #'''The shape of the polynomial changes at the edges of the profile. Why?'''
-#: 
-#'''Why do I have to manually choose the order of the polynomial function?'''
-#: 
-#'''What can I do with the ''Sholl mask''?'''
+#:
+#'''My images do not look that great. How can I treat them prior to analysis?'''
 #: 
 #'''I found a bug. How do I report it?'''
 #: Use Fiji's built-in [[Report a Bug]] command. Alternatively, report it to the [http://imagej.nih.gov/ij/list.html ImageJ mailing list]. Don't forget to include the steps needed to reproduce the problem. 
