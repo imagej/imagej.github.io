@@ -53,7 +53,7 @@ Input values take into account the scale information of the image that can be se
 * <span id="EndRadius"></span>'''Ending radius''' <sup>&nbsp;</sup>The radius of the largest sampling circle/sphere. Note that this distance may not be actually sampled, if ''Radius step size'' is not a divisor of ''Ending radius''-''Starting radius''.
 : '''Tip:''' You can clear this field (or set it to ''max'' or ''NaN'') to sample the entire image. This is particularly useful when running the plugin from a macro that processes images with different dimensions.
 
-* '''Radius step size''' <sup>&nbsp;</sup>The sampling interval between radii of consecutive sampling circles/spheres. This value may be set to zero for continuous (1-voxel increment) measurements.
+* <span id="StepSize"></span>'''Radius step size''' <sup>&nbsp;</sup>The sampling interval between radii of consecutive sampling circles/spheres. This value may be set to zero for continuous (1-voxel increment) measurements.
 :For anisotropic images, setting ''Radius step size'' to zero, sets the step length to the dimension of a matching isotropic voxel, i.e., the square root of the product of the pixel dimensions (2D images) or the cube root of the product of the voxel dimensions (image stacks).
 
 * '''Restrict analysis to hemicircle/hemisphere''' <sup>&nbsp;</sup>This option is only available when an orthogonal radius has been created (by holding Shift when using the Straight Line Selection Tool). It can be used to limit the analysis to sub-compartments of the arbor (e.g., apical vs basal dendrites, in the case of pyramidal neurons, as in illustration above).
@@ -61,7 +61,7 @@ Input values take into account the scale information of the image that can be se
 
 ==== Multiple Samples and Noise Reduction ====
 [[ File:BitmapSholl-Prompt_v3.png|right ]]
-* '''Samples per radius ''(2D images only)''''' <sup>&nbsp;</sup>Defines the number of measurements to be performed at each sampling circumference. These measurements are then combined into a single value according to the chosen integration method (see [[#SamplesIntegration|Samples Integration]]''). This strategy, a break from previous approaches, increases the accuracy of non-continuos profiles by diluting out the effect of processes extending tangent to the sampling circumference.
+* '''Samples per radius ''(2D images only)''''' <sup>&nbsp;</sup>Defines the number of measurements to be performed at each sampling circumference. These measurements are then combined into a single value according to the chosen [[#SamplesIntegration|integration method]]. This strategy, a break from previous approaches, increases the accuracy of non-continuos profiles by diluting out the effect of processes extending tangent to the sampling circumference.
 :Visually, this option can be imagined as the "thickness" of the sampling circumference: e.g.: for a radius of 100 pixels and a value of 3 ''Samples per radius'', the final number of intersections would integrate the measurements sampled at distances 99, 100 and 101.
 :Note that it would not make sense to increase the number of samples beyond the length of ''Radius step size''. For this reason, this option is limited to a draconian (and arbitrary) maximum of 10 samples.
 
@@ -71,7 +71,7 @@ Input values take into account the scale information of the image that can be se
 :Please keep in mind that this is just a refinement feature, and you should not expect it to mitigate the effects derived from ill-segmented arbors.
 
 ==== Ramification Indices and Curve Fitting ====
-* <span id="PrimaryBranches"></span>'''Number of Primary branches''' The number of primary branches (i.e., those originating directly from cell soma when the center of analysis is the perikaryon) to be used in the calculation of Schoenen indices: [[#SchoenenSampled|Ramification index (sampled)]] and [[#SchoenenFitted|Ramification index (Cv)]].<br><br>
+* <span id="PrimaryBranches"></span>'''Number of Primary branches''' The number of primary branches (i.e., those originating directly from cell soma when the center of analysis is the perikaryon) to be used in the calculation of Schoenen indices: [[#SchoenenSampled|Ramification index (sampled)]] and [[#SchoenenFitted|Ramification index (CV)]].<br><br>
 ** '''Infer from Starting radius''' If checked, the ''Number of Primary branches'' is inferred from the count of intersections at [[#StartRadius|Starting radius]].
 
 * '''Fit profile and compute descriptors''' <sup>&nbsp;</sup>If checked, data is fitted according to the chosen  [[#Sholl_Methods|method]] and appropriate [[#Descriptors|descriptors]] calculated. If unchecked, only sampled data is plotted.<br><br>
@@ -79,7 +79,7 @@ Input values take into account the scale information of the image that can be se
 
 ==== Choice of Method(s) ====
 The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile without normalization), or normalized profiles: ''Linear-norm'', ''Semi-log'', or ''Log-log''.
-* '''Polynomial''' <sup>&nbsp;</sup> Specifies the degree of the [[#MethodsTable|polynomial]] to be fitted to the ''Linear'' profile: 4<sup>th</sup>-8<sup>th</sup> degree. Note that the "polynomial of best fit" must be empirically determined for each analyzed cell type.
+* '''Polynomial''' <sup>&nbsp;</sup> Specifies the degree of the [[#MethodsTable|polynomial]] to be fitted to the ''Linear'' profile: 4<sup>th</sup>–8<sup>th</sup> degree. Note that the "polynomial of best fit" must be empirically determined for each analyzed cell type.
 * '''Normalizer''' The property of the sampling shell to be used in the normalization of ''Linear-norm'', ''Semi-log'', and ''Log-log'' profiles. It is [[#MethodsTable|described below]].
 
 ==== Output Options ====
@@ -94,7 +94,7 @@ The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile wit
 <center>
 <span id="ShollPlots"></span>[[File:ShollPlots.png|center|]]
 
-'''''Linear'', ''Linear-norm'', ''Semi-log'' and ''Log-log'' profiles for the ddaC cell (File▷Open Samples▷ddaC Neuron)'''. Most of the retrieved [[#Descriptors_based_on_fitted_data|Descriptors]] are automatically highlighted by the plugin. ''Linear profile'': [[#MeanValueOfFunction|Mean value]] (horizontal grid line) and [[#Centroid|Centroid]] (colored mark). ''Semi-log profile'': [[#ShollDecay|Sholl decay]] retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10-90 (red line).  
+'''''Linear'', ''Linear-norm'', ''Semi-log'' and ''Log-log'' profiles for the ddaC cell (File▷Open Samples▷ddaC Neuron)'''. Most of the retrieved [[#Descriptors_based_on_fitted_data|Descriptors]] are automatically highlighted by the plugin. ''Linear profile'': [[#MeanValueOfFunction|Mean value]] (horizontal grid line) and [[#Centroid|Centroid]] (colored mark). Logarithmic profiles: The [[#ShollDecay|Sholl decay]] can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10-90 (red line).  For this particular cell type, the Semi-log method is more informative when compared to the Log-log method.
 
 
 <span id="MethodsTable"></span>
@@ -112,17 +112,17 @@ The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile wit
 | <span id="eq2">(2)</span>&nbsp;&nbsp;
 | Linear-norm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 | ''N/S'' = a r<sup>b</sup>
-| &nbsp;<br>Outputs a [<i>N/S</i> vs <i>Distance</i>] profile. Data is fitted to a power function<br>&nbsp;
+| &nbsp;<br>Outputs a [<i>N/S</i> vs <i>Distance</i>] profile. Points are fitted to a power function. It is an intermediate representation of the data. Once plotted under a logarithmic scale, it is identical to the Semi-log profile<br>&nbsp;
 |-
 | <span id="eq3">(3)</span>&nbsp;&nbsp;
 | Semi-log&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 | log(''N/S'') = -k r + m
-|&nbsp;<br>Outputs a 'Sholl decay plot', i.e., a [<i>log(N/S)</i> vs <i>Distance</i>] profile. A linear regression is fittedto the sampled data. The [[#ShollDecay|Sholl regression coefficient]] (''k'', the absolute value of the regression slope) is calculated<br>&nbsp;
+|&nbsp;<br>Outputs a [<i>log(N/S)</i> vs <i>Distance</i>] profile. A linear regression is fitted to the sampled data. The [[#ShollDecay|Sholl regression coefficient]] (''k'') is calculated<br>&nbsp;
 |-
 | <span id="eq4">(4)</span>&nbsp;&nbsp;
 | Log-log&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-| log(''N/S'') = a <i>e</i><sup>−b &times; log(r)</sup> + c
-|&nbsp;<br>Outputs a [<i>log(N/S)</i> vs <i>log(Distance)</i>] profile. Sampled data is fitted to an exponential with offset<br>&nbsp;
+| log(''N/S'') = -k log(r) + m
+|&nbsp;<br>Outputs a [<i>log(N/S)</i> vs <i>log(Distance)</i>] profile. Data is also fitted to a straight line. This is an alternative approach of obtaining a relevant [[#ShollDecay|regression coefficient]], when the Semi-log method returns a poor fit<br>&nbsp;
 |}
 </center>
 
@@ -136,8 +136,9 @@ The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile wit
 
 <span style="display: inline-block; width: 25px">'''''S'''''</span>The [[#Choice_of_Method(s)|chosen property ]] of the sampling shell to be used in the normalization of ''Linear-norm'', ''Semi-log'', and ''Log-log'' profiles.<br> <span style="display: inline-block; width: 25px">&nbsp;</span>For 2D images, the ''Perimeter'' of the sampling circumference (2πr) or the ''Area'' of the corresponding circle (πr<sup>2</sup>)<br> <span style="display: inline-block; width: 25px">&nbsp;</span>For 3D images, the ''Surface'' of the sampling sphere (4πr<sup>2</sup>) or its respective ''Volume'' (4/3πr<sup>3</sup>)<br>
 
-'''N.B.''' A third normalization option is also available: ''Annulus'' / ''Spherical shell''. In this case, the normalization is performed against the area of the annulus formed between the circumferences at ''r'' ± ''Radius step size''/2 (2D images), or against the volume between the two spheres at ''r'' ± ''Radius step size''/2 (3D images).<br>
-Please note that the default fitting functions were thought exclusively for Area/Volume normalizations and different types of normalizations may require alternative fits. 
+'''N.B.''' A third normalization option is also available when performing [[#StepSize|non-continuous]] sampling: ''Annulus'' / ''Spherical shell''.<br>
+In this case, the normalization is performed against the area of the annulus formed between the circumferences at ''r'' ± ''Radius step size''/2 (2D images), or against the volume between the two spheres at ''r'' ± ''Radius step size''/2 (3D images).<br>
+
 
 
 == Descriptors ==
@@ -170,7 +171,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 
 ;<span id="SchoenenSampled"></span>Schoenen Ramification index (''Ramification index (sampled)'')
 :A measure of ramification<ref name="Schoenen">J Schoenen. The dendritic organization of the human spinal cord: the dorsal horn. Neuroscience, 7(9):2057–87, Jan 1982, [http://www.ncbi.nlm.nih.gov/pubmed?term=7145088 PMID: 7145088]</ref>: the ratio between ''Max inters.'' and the number of [[#PrimaryBranches|primary branches]].
-: See also [[#SchoenenFitted|Ramification index (Cv)]]
+: See also [[#SchoenenFitted|Ramification index (CV)]]
 
 ;<span id="Centroid">Radius of centroid (''Centroid radius'')
 :The abcissa of the centroid (i.e., the geometric center or barycenter) of the linear profile. It is [[#ShollPlots|highlighted]] on the ''N'' vs ''Distance'' plot.
@@ -194,8 +195,8 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 ;Regression R<sup>2</sup> (''Regression R^2'')
 :The coefficient of determination of the linear regression described in [[#eq3|(3)]].
 
-;<span id="CriticalValue"></span>Critical value (Cv)
-:The local maximum of the polynomial fit, i.e, ''N'' at ''Cr'' in [[#eq1|(1)]]. Sometimes abbreviated as ''N<sub>m</sub>''.
+;<span id="CriticalValue"></span>Critical value (CV)
+:The local maximum of the polynomial fit, i.e, ''N'' at ''CR'' in [[#eq1|(1)]]. Sometimes abbreviated as ''N<sub>m</sub>''.
 : See also [[#MaxInters|Max inters.]]
 
 ;<span id="CriticalRadius"></span>Critical radius (Cr)
@@ -210,13 +211,13 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
             -webkit-border-radius: .75em;
             margin-bottom: 1em;
             background-color: #ffefbe;">
-The terms [[#CriticalRadius|Critical radius (Cr)]] and [[#CriticalValue|Critical value (Cv)]] are arbitrary, and previous authors have used different terms to describe the largest value taken by the Sholl profile (cf. [http://en.wikipedia.org/wiki/Sholl_analysis Wikipedia]). Since Sholl analysis is not restricted to dendritic arbors (it can be applied to any tree-like structure such as axonal arbors,  mammary glands or blood vessels), this plugin introduces the term ''Critical radius'', renaming ''Dendrite maximum'' (''N<sub>m</sub>'') to ''Critical value''. Thus, we may not follow the conventions adopted by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].</div>
+The terms [[#CriticalRadius|Critical radius (Cr)]] and [[#CriticalValue|Critical value (CV)]] are arbitrary, and previous authors have used different terms to describe the largest value taken by the Sholl profile (cf. [http://en.wikipedia.org/wiki/Sholl_analysis Wikipedia]). Since Sholl analysis is not restricted to dendritic arbors (it can be applied to any tree-like structure such as axonal arbors,  mammary glands or blood vessels), this plugin introduces the term ''Critical radius'', renaming ''Dendrite maximum'' (''N<sub>m</sub>'') to ''Critical value''. Thus, we may not follow the conventions adopted by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].</div>
 
 ;<span id="MeanValueOfFunction"></span>Mean value
 :The mean value<ref name="Stulic"></ref> of the fitted polynomial function [[#eq1|(1)]], representing the average of intersections over the whole area occupied by the arbor. Sometimes abbreviated as Mv or Nav.
 :On the Sholl plot, it is [[#ShollPlots|highlighted]] as the height of the rectangle that has the width of ''Enclosing radius'' − ''First intersecting radius'' and the same area of the area under the fitted curve on that discrete interval. It is analogous to '''''Mean inters.''''', the arithmetic mean of sampled intersections throughout the arbor (cf. [[#Descriptors_based_on_sampled_data|Descriptors based on sampled data]]).
 
-;<span id="SchoenenFitted"></span>Schoenen Ramification index (''Ramification index (Cv)'')
+;<span id="SchoenenFitted"></span>Schoenen Ramification index (''Ramification index (CV)'')
 :Schoenen Ramification index retrieved from fitted profile:  The ration between [[#CriticalValue|Critical value]] and  [[#PrimaryBranches|Number of primary branches]].
 : See also [[#SchoenenSampled|Ramification index (sampled)]]
 
@@ -236,7 +237,7 @@ Here is a routine using the ImageJ macro language:
 #Select the Point Selection Tool in the main ImageJ window and activate the Threshold widget (<u>Image▷ Adjust▷ Threshold...</u>). '''Make sure ''Set stack positions'' is active in the <u>Image▷ Overlay▷ Overlay Options...</u> prompt'''. Open the first image.
 #'''Adjust threshold levels'''. Press the ''Apply'' button of the Threshold widget to create a binary image.
 #Select the z-slice containing the center of analysis. '''Click over the center with the Point Selection Tool and press ''B''''' (shortcut for <u>Image▷ Overlay▷ Add Selection...</u>). This will add the point ROI to the image overlay. Save the image as .TIFF by pressing ''S'' (<u>File▷ Save As...▷ Tiff...</u>).
-#'''Repeat the last 2 steps''' until all images are marked (Use ''Shift'' + ''O'' (shortcut for <u>File▷ Open Next</u> to iterate rapidly through all the images).
+#'''Repeat the last 2 steps''' until all images are marked. '''Tip:''' Use ''Shift'' + ''O'' (shortcut for <u>File▷ Open Next</u>) to iterate rapidly through all the images.
 
 Now that all the images are marked, we just need a working macro. We will open the Macro Recorder (<u>Plugins▷ Macros▷ Record...</u>) and run ''Sholl Analysis'' on one of the images to find out how to call the plugin with suitable parameters. The single line of code that appears in the recorder window will look something like this:
 <source lang="java">
