@@ -25,9 +25,13 @@ However, it is much more powerful than that.  Amongst other things, you can
 
 The Fiji launcher can do more, just call '''./fiji --help''' for a short description.
 
-== The Fakefile system ==
+== Building Fiji ==
 
-Fiji comes with its own builder, named [[Fiji Build System]].  There are already other build systems, such as Ant or Maven, but at least it is simple and small.  For details, go to [[Fiji Build System|this page]].
+Fiji is organized into a set of [[Maven]] projects. For convenience and speed, we use [[ImageJ2]]' minimal Maven-lookalike [[MiniMaven]] to build Fiji, and to make things even more convenient, there is a single shell script you need to call that builds it all:
+
+<source lang="bash">
+./Build.sh
+</source>
 
 == Adding plugins ==
 
@@ -36,10 +40,10 @@ After you built Fiji successfully, you can add your own plugins.
 * If you haven't done so, pick a name for your .jar file, say ''My_Plugin''.  Make sure that it has at least one underscore in it, otherwise ImageJ will not pick it up.  If you cannot think of a name with an underscore, just append one.  Then create a subdirectory ''src-plugins/My_Plugin''.
 * Now put your sources into that subdirectory.  Please no .class files.  Readme or license files are okay, however.
 * Create a ''staged-plugins/My_Plugin.config'' file.  This will be included in the .jar file as ''plugins.config''.
-* In Fiji's root folder, call '''./fiji bin/commit-plugin.py src-plugins/My_Plugin/'''.  Please make sure that it ends with a slash.  This command will make the necessary edits to the Fakefile and .gitignore, and ''staged-plugins/My_Plugin.config'', and commit everything needed for your plugin.  If you want to do this manually, look in the Git log for an example (e.g. TurboReg) and imitate it.
+* In Fiji's root folder, call '''./fiji bin/commit-plugin.py src-plugins/My_Plugin/'''.  Please make sure that it ends with a slash.  This command will make the necessary edits to the ''pom.xml'' and ''.gitignore'' files, and ''staged-plugins/My_Plugin.config'', and commit everything needed for your plugin.  If you want to do this manually, look in the Git log for an example (e.g. TurboReg) and imitate it.
 * Now build the plugin with '''./fiji --build'''.
 * Now Fiji Build will most likely complain that some libraries are missing, most importantly the central library ij.jar, you will need to specify which jars are required for the build:
-** open the file "Fakefile" in the fiji root directory with a text editor of your choice
+** open the file ''pom.xml'' in the ''src-plugins/'' directory with a text editor of your choice
 ** find the section "From source"
 ** you will find a lot of entries which look like CLASSPATH(plugins/Whatever_plugin.jar)=jars/ij.jar
 ** Add an entry for your plugin and add the required jars, e.g. CLASSPATH(plugins/My_plugin.jar)=jars/ij.jar:jars/imglib.jar - if you want to write a plugin using imglib
@@ -81,21 +85,13 @@ git clone ssh://contrib@fiji.sc/srv/git/VIB.git
 ./fiji bin/commit-submodule.py VIB plugins/VIB_.jar
 </source>
 
-In the case of ''VIB'', it works as easily as that, because it has its own [[Fiji Build System|Fakefile]].  Submodules do not need to have that, you can provide one in ''staged-plugins/'', and they do not need to be installed in ''plugins/'', either:
-<source lang="bash">
-# clone the "egit" repository, but name it "jgit"
-git clone ssh://contrib@fiji.sc/srv/git/egit jgit
-<create a staged-plugins/jgit.Fakefile>
-# first time, commit-submodule need to know the target, too ("jars/jgit.jar" in this case)
-./fiji bin/commit-submodule.py jgit jars/jgit.jar
-</source>
+Submodules '''must''' be Maven projects themselves.
 
 So what does ''commit-submodule.py'' do? It
 * verifies that the submodule is pushed,
 * makes sure that the submodule is recorded in ''.gitmodules'',
-* adds the target to the ''Fakefile'',
-* adds the target to ''.gitignore'' so it is not committed by accident,
-* adds a precompiled/<target> to ensure that the submodule does not need to be checked out, and
+* adds the target to the ''modules/pom.xml'' file,
+* adds the target to ''.gitignore'' so it is not committed by accident, and
 * finally commits the result
 
 == Testing ==
