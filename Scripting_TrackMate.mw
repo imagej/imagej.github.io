@@ -7,7 +7,7 @@ __TOC__
 
 Since we are calling the internals of TrackMate, we must get to know a bit of its guts. I have tried to come up with a rational design; though not always successfully. There is 3 main classes to interact with in a script:
 
-* TrackMateModel ([http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/TrackMate_/src/main/java/fiji/plugin/trackmate/TrackMateModel.java;hb=HEAD <code>fiji.plugin.trackmate.TrackMateModel</code>]) is the class in charge of <u>storing the data</u>. It cannot do anything to create it. It can help you follow manual modifications you would made in the manual editing mode, interrogate it, ... but it is conceptually just a data recipient. 
+* Model ([http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/TrackMate_/src/main/java/fiji/plugin/trackmate/TrackMateModel.java;hb=HEAD <code>fiji.plugin.trackmate.TrackMateModel</code>]) is the class in charge of <u>storing the data</u>. It cannot do anything to create it. It can help you follow manual modifications you would made in the manual editing mode, interrogate it, ... but it is conceptually just a data recipient. 
 
 * Settings ([http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/TrackMate_/src/main/java/fiji/plugin/trackmate/Settings.java;hb=HEAD <code>fiji.plugin.trackmate.Settings</code>]) is a part of the model. It is a class storing the fields that will configure TrackMate and pilot how the data is created. As you can see, it is mainly make of public fields. 
 
@@ -29,101 +29,108 @@ Here is an example of full tracking process, using the easy image found in the [
 * The final results is displayed as an overlay.
 
 
-<source lang="python">
-import fiji.plugin.trackmate.Settings;
-import fiji.plugin.trackmate.TrackMateModel;
-import fiji.plugin.trackmate.TrackMate_;
-import fiji.plugin.trackmate.Logger;
-import fiji.plugin.trackmate.segmentation.DogSegmenter;
-import fiji.plugin.trackmate.tracking.SimpleFastLAPTracker;
-import fiji.plugin.trackmate.visualization.hyperstack.HyperStackDisplayer;
- 
+<source lang="python">import fiji.plugin.trackmate.Settings as Settings
+import fiji.plugin.trackmate.Model as Model
+import fiji.plugin.trackmate.SelectionModel as SelectionModel
+import fiji.plugin.trackmate.TrackMate as TrackMate
+import fiji.plugin.trackmate.Logger as Logger
+import fiji.plugin.trackmate.detection.DetectorKeys as DetectorKeys
+import fiji.plugin.trackmate.detection.DogDetectorFactory as DogDetectorFactory
+import fiji.plugin.trackmate.tracking.SimpleFastLAPTracker as SimpleFastLAPTracker
+import fiji.plugin.trackmate.tracking.LAPUtils as LAPUtils
+import fiji.plugin.trackmate.visualization.hyperstack.HyperStackDisplayer as HyperStackDisplayer
+import fiji.plugin.trackmate.features.FeatureFilter as FeatureFilter
+
 # Get currently selected image
-# imp = WindowManager.getCurrentImage()
-imp = IJ.openImage('http://fiji.sc/tinevez/TrackMate/FakeTracks.tif')
+imp = WindowManager.getCurrentImage()
+#imp = IJ.openImage('http://fiji.sc/samples/FakeTracks.tif')
 imp.show()
- 
+  
 #------------------------
 # Prepare settings object
 #------------------------
- 
-settings = fiji.plugin.trackmate.Settings(imp)
- 
-# Configure segmenter
-settings.segmenter = fiji.plugin.trackmate.segmentation.DogSegmenter()
-settings.segmenterSettings = fiji.plugin.trackmate.segmentation.LogSegmenterSettings()
-settings.segmenterSettings.expectedRadius = 2.5
- 
+  
+settings = Settings()
+settings.setFrom(imp)
+  
+# Configure detector
+settings.detectorFactory = DogDetectorFactory()
+settings.detectorSettings = { 
+	DetectorKeys.KEY_DO_SUBPIXEL_LOCALIZATION : True,
+	DetectorKeys.KEY_RADIUS : 2.5,
+	DetectorKeys.KEY_TARGET_CHANNEL : 1,
+	DetectorKeys.KEY_THRESHOLD : 0.,
+	DetectorKeys.KEY_DO_MEDIAN_FILTERING : False,
+}  
+
 # Configure tracker
-settings.tracker = fiji.plugin.trackmate.tracking.SimpleFastLAPTracker()
-settings.trackerSettings = fiji.plugin.trackmate.tracking.LAPTrackerSettings()
- 
+settings.tracker = SimpleFastLAPTracker()
+settings.trackerSettings = LAPUtils.getDefaultLAPSettingsMap()
+
 print(str(settings))
- 
+  
 #-----------------------------
 # Instantiate model and plugin
 #-----------------------------
- 
-model = fiji.plugin.trackmate.TrackMateModel()
-model.setSettings(settings)
- 
-trackmate = fiji.plugin.trackmate.TrackMate_(model)
- 
+  
+model = Model()
+trackmate = TrackMate(model, settings)
+  
 #---------------------
 # Execute segmentation
 #---------------------
- 
+  
 print('Segmenting with parameters:')
-print(str(settings.segmenter))
-print(str(settings.segmenterSettings))
- 
-trackmate.execSegmentation()
- 
+print(str(settings.detectorFactory))
+print(str(settings.detectorSettings))
+  
+trackmate.execDetection()
+  
 print(str(model.getSpots()))
- 
+  
 #--------------------------
 # Execute initial filtering
 #--------------------------
- 
+  
 settings.initialSpotFilterValue = 3.6
- 
+  
 print('Initial spot filtering with quality above ' + str(settings.initialSpotFilterValue))
- 
+  
 trackmate.execInitialSpotFiltering()
- 
+  
 print(str(model.getSpots()))
- 
+  
 #--------------------------
 # Execute spot filtering
 #--------------------------
- 
-filter1 = fiji.plugin.trackmate.FeatureFilter('QUALITY', 20, True)
- 
+  
+filter1 = FeatureFilter('QUALITY', 20, True)
+  
 print('Spot filtering with ' + str(filter1))
- 
+  
 settings.addSpotFilter(filter1)
-trackmate.execSpotFiltering()
- 
-print(str(model.getFilteredSpots()))
- 
+trackmate.execSpotFiltering(True)
+  
+print(str(model.getSpots()))
+  
 #-----------------
 # Execute tracking
 #-----------------
- 
+  
 print('Tracking with parameters:')
 print(str(settings.tracker))
 print(str(settings.trackerSettings))
- 
+  
 trackmate.execTracking()
- 
-print('Found ' + str(model.getNTracks()) + ' tracks.')
- 
+  
+print('Found ' + str(model.getTrackModel().nTracks(True)) + ' tracks.')
+  
 #----------------
 # Display results
 #----------------
- 
-displayer =  fiji.plugin.trackmate.visualization.hyperstack.HyperStackDisplayer()
-displayer.setModel(model)
+
+selectionModel = SelectionModel(model)
+displayer =  HyperStackDisplayer(model, selectionModel, imp)
 displayer.render()
 displayer.refresh()
 </source>
