@@ -6,11 +6,11 @@ Go to [http://fiji.sc/Downloads Fiji wiki] and download Fiji for your operating 
 
 === Update Fiji ===
 
-Launch Fiji and it should ask you if you want to update. Say yes. 
+:"ch Fiji and it should ask you if you want to update. Say yes. 
 
 ''If it says that there is an update for an updater say OK to that as well.''
 
-Fiji is build every night and so there will probably be no updates, unless someone pushed something new today. You should see a window like this:
+The Fiji packages are re-built whenever something has been uploaded to the update site, therefore it is unlikely you need to update -- unless someone pushed something new within the past few minutes. You should see a window like this:
 
 [[Image:Mamed-1.jpg]]
 
