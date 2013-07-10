@@ -38,7 +38,7 @@ Now we are ready to proceed by clicking '''close'''.  A new screen pops up with 
 
 [[Image:Mamed-6.jpg]]
 
-Click '''Apply changes''' to download and install the big data viewer.
+Click '''Apply changes''' to download and install the big data viewer. You need to restart Fiji and once you do that you should have a new item in the plugins folder called '''BigDataViewer'''.
 
 If you have problems, come to me, its important to have this working before we start otherwise we won't manage.
 
