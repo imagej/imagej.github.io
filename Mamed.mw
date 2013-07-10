@@ -24,9 +24,9 @@ Now click '''Manage update sites'''. You get a list of default update sites.
 
 Now we need to add an update site by clicking '''Add'''
 
-[[Image:Mamed-4.jpg]]
+[[Image:Pietzsch_update_site.png]]
 
-In the filed '''URL''' type ''http://sites.imagej.net/Pietzsch'' 
+In the field '''URL''' type ''http://sites.imagej.net/Pietzsch'' 
 
 ''Copy and paste it, the name is rather impossible to spell ;-).''
 
