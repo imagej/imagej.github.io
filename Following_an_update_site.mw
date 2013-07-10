@@ -24,15 +24,9 @@ And click on the 'Advanced' button:
 
 Click on the 'Manage update sites' button to bring up the site management dialog:
 
-[[Image:AddPluginSite-2.jpg|770px]]
+[[Image:Mamed-3.jpg|770px]]
 
-Click the 'Add' button and fill in the name of your choice for the site and the url, which would be provided by the plugin's author or distributor.
-
-[[Image:AddPluginSite-3.jpg|770px]]
-
-Click 'OK':
-
-[[Image:AddPluginSite-4.jpg|770px]]
+If the update site you want to follow is listed, just click the checkbox next to its name. If it is not listed, you can add Click the 'Add' button and fill in the name of your choice for the site and the url, which would be provided by the plugin's author or distributor. Note: it might be better for you or the update site owner to add the information to the [[List of update sites]] to make it easier to add.
 
 Close the dialog and the list of plugins available on the site will show up:
 
