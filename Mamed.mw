@@ -28,7 +28,9 @@ Now we need to add an update site by clicking '''Add'''
 
 In the filed '''URL''' type ''http://sites.imagej.net/Pietzsch'' 
 
-''Copy and paste it, the name is rather impossible to spell ;-). Now after you click enter you will likely get an error message. Click '''Ok''' because it IS ok. Its not a feature but a bug. Finally we have to click on the check box next to the '''New''' update site to include - the error message may pop up again - ignore it, click Ok.
+''Copy and paste it, the name is rather impossible to spell ;-).''
+
+Now after you click enter you will likely get an error message. Click '''Ok''' because it IS ok. Its not a feature but a bug. Finally we have to click on the check box next to the '''New''' update site to include - the error message may pop up again - ignore it, click Ok.
 
 Now we are ready to proceed by clicking '''Add my site'''.  A new screen pops up with a lot of giberish, this is the stuff we need.
 
