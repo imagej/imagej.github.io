@@ -4,7 +4,7 @@
 | author           = Tiago Ferreira
 | source           = {{GitLink|jar=Sholl_Analysis}}
 | filename        =  [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.0.0-SNAPSHOT.jar Sholl_Analysis.jar]
-| latest version = v3.1 (June 2013)
+| latest version = v3.1 (July 2013)
 | released         = December 2012
 | status            = stable, active
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]]
@@ -79,7 +79,7 @@ Input values take into account the scale information of the image that can be se
 
 ==== Choice of Method(s) ====
 The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile without normalization), or normalized profiles: ''Linear-norm'', ''Semi-log'', or ''Log-log''.
-* '''Polynomial''' <sup>&nbsp;</sup> Specifies the degree of the [[#MethodsTable|polynomial]] to be fitted to the ''Linear'' profile: 4<sup>th</sup>–8<sup>th</sup> degree. While the polynomial of best approximation, or "best fit", should be empirically determined for each analyzed cell type, it is possible to ask the plugin to predict the order of the fitting polynomial (or at least try) using the choice ''Best fitting degree''. In this case, the plugin will loop through all the available choice of polynomials, perform the fit and choose the one associated with a higher coefficient of determination.
+* '''Polynomial''' <sup>&nbsp;</sup> Specifies the degree of the [[#MethodsTable|polynomial]] to be fitted to the ''Linear'' profile: 4<sup>th</sup>–8<sup>th</sup> degree. While the polynomial of best approximation, or "best fit", should be empirically determined for each analyzed cell type, it is possible to ask the plugin to predict the order of the fitting polynomial (or at least try) using the choice ''Best fitting degree''. In this case, the plugin will loop through all the available choices of polynomials, perform each fit int the background and choose the one with the highest coefficient of determination.
 :The ''Best fitting degree'' choice is obviously much more computer-intensive and can be monitored by activating the ''Show fitting details'' checkbox.
 * <span id="Normalizer"></span>'''Normalizer''' The property of the sampling shell to be used in the normalization of ''Linear-norm'', ''Semi-log'', and ''Log-log'' profiles. It is [[#MethodsTable|described below]].
 
@@ -223,18 +223,27 @@ The terms [[#CriticalRadius|Critical radius (CR)]] and [[#CriticalValue|Critical
 ;Polynomial R<sup>2</sup> (''Polyn. R^2'')
 :The coefficient of determination of the polynomial fit described in [[#eq1|(1)]].
 
-
+<span id="Importing"></span>
 == Importing Profiles Obtained Elsewhere ==
-<span id="Importing"></span>[[ File:BitmapSholl-TabularPrompt.png|right ]]As of version 3.1 it is possible to analyze profiles obtained from traced data. This feature is specifically target at users of [[Simple Neurite Tracer]], Fiji's remarkable framework for semi-automated reconstruction of neuronal arbors, but can be extended to tracings obtained in any other program.
+[[ File:BitmapSholl-TabularPrompt.png|right ]]As of version 3.1 it is possible to analyze profiles obtained from traced data. This feature is specifically targeted at users of [[Simple Neurite Tracer]], Fiji's remarkable framework for semi-automated reconstruction of neuronal arbors, but can be extended to tracings obtained by other programs.
 
+
+This option is triggered by running  <u>Analyze▷ Sholl Analysis...</u> while holding the ''Alt'' key, which prompts a simplified version of the main dialog [[#Ramification Indices and Curve Fitting|described above]].
 
 #Load tracings (typically a .swc or a .traces file) into [[Simple_Neurite_Tracer:_Basic_Instructions|Simple Neurite Tracer]]
 #Retrieve the linear Sholl profile by following these [[Simple_Neurite_Tracer:_Sholl_analysis|instructions]]
-#Export ''detailed data''  (.csv file) and load it into ImageJ. You can do so by dragging & dropping the .csv file over the main ImageJ window, or by using <u>File▷ Import▷ Results...</u>
-# Confirm that data was imported properly into ImageJ's Results Table. Pressing the backspace key over selected rows will exclude them from the analysis.
-# Run <u>Analyze▷ Sholl Analysis...</u> while holding the ''Alt'' key. You will be presented with the prompt depicted on the right, a simplified version of the main prompt [[#Ramification Indices and Curve Fitting|described above]].
-#If the profile could not be analyzed, an error (hopefully self-explanatory) is displayed in the Log window.
-'''Tip:''' In a [[#Batch_Processing|macro]], the tabular import can be evoked by using the <tt>[http://imagej.nih.gov/ij/developer/macro/functions.html#setKeyDown setKeyDown("alt")]</tt> macro function.
+#Export ''detailed data''  (.csv file). You now have two options:
+:If data does not need to be edited:
+:#Empty/close the ImageJ Results Table (if open) and run the plugin while holding the ''Alt'' key.  You will be prompted to indicate the path of the saved  profile. Because the plugin is aware of the file's directory, saving options are available.
+:If data needs to be modified, the profile must be first loaded by ImageJ:
+:#You can do so by dragging & dropping its file into the main ImageJ window, or by using <u>File▷ Import▷ Results...</u>
+:#Press the backspace key over selected rows to exclude them from the analysis.
+:#Run the plugin while holding the ''Alt'' key. Because the plugin did not keep track of any directory, saving options are disabled.
+
+Notes:
+*For ''Annulus/Spherical shell'' normalization [[#StepSize|Radius step size]] is calculated from the difference between the first two rows in ''Distance column''.
+*In a [[#Batch_Processing|macro]], the [http://imagej.nih.gov/ij/developer/macro/functions.html#setKeyDown setKeyDown("alt")] macro function can be used to prompt tabular data.
+
 
 == Batch Processing ==
 It is fairly simple to automate the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji (see  [[Introduction into Macro Programming|ImageJ Macro Language]], [[Beanshell_Scripting|Beanshell]], [[Javascript_Scripting|Javascript]], [[JRuby_Scripting|JRuby]], [[Jython_Scripting|Jython]], and [[Clojure_Scripting|Clojure]] (see also [[Script Editor]] and  [[Scripting Help]]).
@@ -314,7 +323,7 @@ run("Sholl Analysis...", "starting="+ start +" ending="+ end +"radius_step="+ st
 : Adjusts the background color of the Sholl lookup table as specified in the main [[#Parameters|dialog prompt]].
 
 ;Help▷About Plugins▷About Sholl Analysis...
-:Retrieves information about the plugin version and a link to its Git source code.
+:Retrieves information about the plugin version and a link to its Git source code repository.
 
 == FAQ ==
 #'''Why do I need to threshold the cell?'''
