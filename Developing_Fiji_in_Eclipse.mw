@@ -1,3 +1,7 @@
+==Purpose==
+
+The purpose of this tutorial is to get you started hacking on Fiji's source code inside Eclipse. If what you need is to develop a ''plugin'' for ImageJ, you do not actually need Fiji's source. Rather, see [https://github.com/imagej/minimal-ij1-plugin this example] after which you can model your plugin.
+
 ==Introduction==
 
 [http://www.eclipse.org Eclipse] is a powerful Integrated Development Environment (a so-called ''IDE'') primarily intended to develop Java projects. It is similar to [http://netbeans.org/ NetBeans] and [http://www.jetbrains.com/idea/ IntelliJ].
