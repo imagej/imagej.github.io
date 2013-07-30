@@ -36,8 +36,7 @@ Offset = 0, number of image = 1, gap = 0, ‘white’ is zero = off
 ‘Little-endian byte order’ = on, ‘open all files in folder’ = on to open all files in folder.
 Non-image files will also be opened and may appear as blank images and need deleting: ''Image>Stacks>Delete slice''. The stack will "interleave” the multiple channels you recorded, and can be de-interleaved via ''Plugins>Stacks - Shuffling>DeInterleave''. 
 *'''Importing AVI and MOV files:'''
-There are two plugins which can open uncompressed AVIs and some types of MOV file. 
-Uncompressed AVIs can be opened via ''File>Import>AVI''
+There are two plugins which can open uncompressed AVIs and some types of MOV file. AVIs can be opened via ''File>Import>AVI''
 *'''Other Import functions:'''
 Animated GIF- This plugin opens an animated GIF file as an RGB stack. Also opens single GIF images.
 
