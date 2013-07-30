@@ -2,7 +2,6 @@ The File / Import submenu.
 
 Most of the commands listed, particularly Fiji extensions, are also available (via HandleExtraFileTypes) simply by using the File / Open... menu item.
 
-See also the [[Bio-Formats]] plugins.
 
 *'''ImageJ built-in:'''
 Fiji primarily uses TIFF as the image file format. The menu command ''File>Save'' will save in TIFF format. The menu command ''File>Open'' will open TIFF files and import a number of other common file formats (e.g. JPEG, GIF, BMP, PGM, PNG) as well as those detailed below. Files can be also dragged and dropped to the toolbar to open them
