@@ -52,7 +52,7 @@ You can also define a sub-region for processing: if you are only interested in f
 
 If you want to define the min and max '''Z''' and/ or '''T''', you have to edit manually the fields on the panel. 
 
-Defining a smaller area to analyze can be very beneficial to test and inspect for correct parameters, particularly for the segmentation step. In this tutorial, the image is so small and parse that we need not worrying about it. Press the '''Next'''button to step forward.
+Defining a smaller area to analyze can be very beneficial to test and inspect for correct parameters, particularly for the segmentation step. In this tutorial, the image is so small and parse that we need not worrying about it. Press the '''Next''' button to step forward.
 
 <br style="clear: both" />
 
