@@ -24,17 +24,17 @@ Also, if you look carefully, you will see that there are two splitting events - 
 
 [[Image:TrackMate MainButtons.png|right|border|]]
 
-With this image selected, launch TrackMate from the menu ''Plugins > Tracking > Track Mate'' or from the [[Using the Command Launcher|Command launcher]]. The Track Mate GUI appears next to the image, displaying the starting dialog panel.
+With this image selected, launch TrackMate from the menu ''Plugins > Tracking > TrackMate'' or from the [[Using the Command Launcher|Command launcher]]. The TrackMate GUI appears next to the image, displaying the starting dialog panel.
 
-But first, just a few words about its look. The user interface is a single frame divided in a main panel, that displays context-dependent dialogs, and a permanent bottom panel containing  the four main buttons depicted right. 
+But first, just a few words about its look. The user interface is a single frame - that can be resized - divided in a main panel, that displays context-dependent dialogs, and a permanent bottom panel containing  the four main buttons depicted on the right. 
 
 The '''Next''' button allows to step through the tracking process. It might be disabled depending on the current panel content. For instance, if you do not select a valid image in the first panel, it will be disabled. The '''Previous''' button steps back in the process, without executing actions. For instance, if you go back on the segmentation panel, segmentation will not be re-executed. 
 
-Pressing the '''Load''' button opens a dialog asking you for a TrackMate file (they are plain XML files). Depending on when in the process you saved it, it will load all of its data and put you at the adequate step to pursue or inspect tracking results. The '''Save''' button does of course the converse.
+The '''Save''' button creates a XML file that contains all of the data you generated at the moment you click it. Since you can save at any time, the resulting file might miss tracks, spots, etc... You can load the saved file using the menu item ''Plugins > Tracking > Load a TrackMate file''. It will restore the session just where you saved it.
 
 Now is a good time to speak strategy when it comes to saving/restoring. You can save at anytime in TrackMate. If you save just before the tracking process, you will be taken there with the data you generated so far upon loading. TrackMate saves a <u>link to the image file</u> (as an absolute file path) but not the image itself. When loading a TrackMate file, it tries first to retrieve and open this file in ImageJ. So it is a good idea to pre-process, crop, edit metadata and massage the target image first in Fiji, then save it as a .tif, then launch TrackMate. Particularly if you deal with a multi-series file, such as Leica .lif files.
 
-The advantage of this approach is that you can launch TrackMate, immediately press the load button, and everything you need will be loaded and displayed. However, if you need to change with the target file or if it cannot be retrieved, you will have to open the TrackMate XML file and edit its 4th line.
+The advantage of this approach is that you load in TrackMate, and everything you need will be loaded and displayed. However, if you need to change the target file or if it cannot be retrieved, you will have to open the TrackMate XML file and edit its 4th line.
 
 <br style="clear: both" />
 
