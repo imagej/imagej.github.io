@@ -83,7 +83,8 @@ The estimated diameter is then defined as the radius that maximizes this contras
 
 === LAP trackers ===
 
-We implemented the renowned Linear Assignment Problem (LAP) method contributed by Jaqaman and colleagues<ref name="Jaqaman">[http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.]</ref>, with minor modifications on the linking costs calculations. We repeat here the ideas found in the reference paper.
+The Linear Assignment Problem (LAP) trackers implemented here follow a stripped down version of 
+the renowned  method contributed by Jaqaman and colleagues<ref name="Jaqaman">[http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.]</ref>. We repeat here the ideas found in the reference paper, then stresses the differences with the nominal implementation. 
 
 Particle-linking happens in two step: track segments creation from frame-to-frame particle linking, then track segments linking to achieve gap closing. The mathematical formulation used for both steps is linear assignment problem (LAP): a cost matrix is assembled contained all possible assignment costs. Actual assignments are retrieved by solving this matrix for minimal total cost. We describe first how cost matrices are arranged, then how individual costs are calculated.
 
@@ -164,8 +165,9 @@ As before, we modified the way costs are calculated, and re-used the feature pen
 
 
 
+==== Main differences with the Jaqaman paper<ref name="Jaqaman"/> ====
 
-
+The nominal implementation of the paper remains the one developed under [[:Category:Matlab|Matlab]] by Khulud Jaqaman and published in Nature Methods, can be found on [http://www.utsouthwestern.edu/labs/jaqaman/software/ Khulud homepage]. TrackMate juts bundles a stripped down version of this framework. 
 
 
 <references/>
