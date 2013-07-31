@@ -46,9 +46,9 @@ This first panel allows you to check the spatial and temporal calibration of you
 
 What is critical is also to check the dimensionality of the image. In our case, we have a 2D time-lapse of 50 frames. If metadata are not present or cannot be read, ImageJ tends to assume that stack always are Z-stack on a single time-point. 
 
-If the calibration or dimensionality of your data is not right, I recommend changing it in the image metadata itself, using ''Image > Properties'' (Ctrl+Shift+P). The press the 'Refresh' button on the TrackMate start panel to grab changes.
+If the calibration or dimensionality of your data is not right, I recommend changing it in the image metadata itself, using ''Image > Properties'' (Ctrl+Shift+P). The press the 'Refresh source' button on the TrackMate start panel to grab changes.
 
-You can also define a sub-region for processing: if you are only interested in finding spots in a defined region of the image, you can use any of the ROI tools of ImageJ to draw a closed area on the image. Once you are happy with it, press the '''Refresh''' button on the panel to pass it to TrackMate. You should see that the '''X''' '''Y''' start and end values change to reflect the bounding box of the ROI you defined. The ROI needs not to be a square. It can be any closed shape. 
+You can also define a sub-region for processing: if you are only interested in finding spots in a defined region of the image, you can use any of the ROI tools of ImageJ to draw a closed area on the image. Once you are happy with it, press the '''Refresh source''' button on the panel to pass it to TrackMate. You should see that the '''X''' '''Y''' start and end values change to reflect the bounding box of the ROI you defined. The ROI needs not to be a square. It can be any closed shape. 
 
 If you want to define the min and max '''Z''' and/ or '''T''', you have to edit manually the fields on the panel. 
 
