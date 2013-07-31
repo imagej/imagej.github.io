@@ -94,15 +94,18 @@ In our case, the spots we want to track are about 5 pixels in diameter, so this 
 
 <br style="clear: both" />
 
-== The segmentation process ==
+== The detection process ==
 
 [[Image:TrackMate Segmenting.png|right|border|]]
 
-Once you are happy with the segmentation parameters, press the '''Next''' button and the segmentation will start. The TrackMate GUI displays the log panel, that you will meet several times during the process. It is basically made of a text area that recapitulates your choices and send information on the current process, and of a progress bar on top. You can copy-paste the text if you want to keep track of the process somewhere. 
+Once you are happy with the segmentation parameters, press the '''Next''' button and the segmentation will start. The TrackMate GUI displays the '''log panel''', that you will meet several times during the process. It is basically made of a text area that recapitulates your choices and send information on the current process, and of a progress bar on top. You can copy-paste the text if you want to keep track of the process somewhere. You can even add comments as text in it: it is editable, and everything you type there is saved in the XML file, and retrieved upon loading. You can access the log panel anytime, by clicking on the log button at the bottom of the TrackMate window. 
+
+Should the process be long enough, you should be able to see that the '''Next''' button turned into a '''Cancel''' button. If you press it while the detection is running, TrackMate will finish the detection of the current frames, and stop. You could now go on with the spots it found, or go back and restart. 
 
 TrackMate takes advantage of multi-core computers, which seems to be the standard nowadays. It will segment one time-frame per core available. On computers with many cores, the progress bar will seems to move in a bulky way: if you have 16 cores, 16 time-points will be segmented at once, and it is likely that they will be finished approximately on the same time. So don't be worried if the progress bar does not move in the beginning for large images.
 
 On our dummy image, this is clearly something we need to worry about, and the segmentation should be over in a few seconds. Typically, this is the step that takes the longer. Once the segmentation is done, the '''Next''' button is re-enabled.
+
 
 <br style="clear: both" />
 
