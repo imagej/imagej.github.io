@@ -5,7 +5,7 @@
 | maintainer            = [mailto:jean-yves.tinevez@pasteur.fr Jean-Yves Tinevez]
 | source                = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/TrackMate_;hb=HEAD on gitweb]
 | released              = 10/05/2012
-| status                = v2.0.2, active
+| status                = v2.0.4, active
 | category              = [[:Category:Segmentation|Segmentation]], [[:Category:Tracking|Tracking]]
 }}
 
@@ -96,7 +96,11 @@ Do you want to make your new algorithms usable by the reviewers of your submitte
 
 TrackMate was developed to serve as a tool for Life-Science image analysis community, so that new tracking tools can be developed more easily and quickly, and so that end-users can use them to perform their own research. We will support you if need help to reuse it.
 
+
+
 == Documentation and tutorials ==
+
+* [[TrackMate version history]]
 
 === For users ===
 
@@ -107,7 +111,6 @@ TrackMate was developed to serve as a tool for Life-Science image analysis commu
 * [[Scripting TrackMate]] shows how to do tracking using a a scripting language, ''e.g.'' from the Fiji [[Script Editor]].
 
 === For developers ===
-
 
 Extending TrackMate is not completely trivial. However, it should be of no difficulty for an average Java developer. Rather than sending you to the API, we propose you some tutorials using dummy examples.
 
@@ -139,62 +142,13 @@ We are extremely thankful for the support of [http://www.utsouthwestern.edu/labs
 
 JYT acknowledges funding from the European commission FP7 ICT ([http://www.memi-fp7.org project “MEMI”]) at the beginning of this project. NP was a visiting student thanks to funds provisioned by the Stanford University.
 
-== Version history ==
 
-Bug fixes are not mentioned here, and do not get their own release number. 
 
-* 10/05/2012 - v.1.0: Initial release
-* 22/05/2012 - v1.1: 
-** [[TrachScheme]] can change of display style.
-** De-activated folding branches in TrackScheme, as it was non-functional.
-** Fix bugs when loading invisible tracks.
-* 13/06/2012 - v1.2:
-** Far better memory management and speed improvement in LAP trackers when dealing with gap-closing only.
-** Renamed the "Fast LAP tracker" and "Simple Fast LAP tracker" to "LAP tracker" and "Simple LAP tracker". Also removed the old "LAP tracker" and "Simple LAP tracker". They give the same results, but are just way slower.
-** Replaced the ISBI challenge exporter by a simple track exporter.
-** New action: capture the spot images along a track.
-* 25/02/2013 - v2.0.0: [[2013-02-25 - TrackMate v2.0.0 released|Major update]]:
-** TrackMate now uses [[ImgLib2]] internally, and is therefore ready to be moved to [[ImageJ2]].
-** TrackMate now computes edge features (on top of spot and track features). These features enable the immediate measure of velocity, displacement, etc... 
-** Tracks can be colored in the Hyperstack displayer, in the 3D viewer and in TrackScheme using indifferently track or edge features. 
-** All spot, edge and track features are computed automatically and kept in sync even versus manual modifications. 
-** All spot, edge and track features are saved in the XML file. 
-** All spot, edge and track features can be exported as ImageJ results tables. Then they can be exported to text files, readable by let's say Excel. (Please note that the authors of the plugin do not deem Excel as a proper solution for scientific analysis and recommend more professional solutions.)
-** All spot, edge and track features can be plotted as specialized graphs, thanks to a dedicated GUI panel.
-** Tracks can be named in TrackScheme. These names are used to sort alphanumerically the tracks as they are laid out. To change the name of a track, just double-click its current name in the TrackScheme view.
-** We use [http://semver.org/ semantic versioning] for release numbers from now on. The rules about backward incompatible changes - described below - required a major version change. However, we reserve the right to make a major number change only when there is backward incompatible changes to the user only. API changes might not trigger a major version change.
-** The XML file format changed and is therefore not compatible anymore between major versions. However, XML files generated with the previous version (v1.2) can be imported in v2.0.0. and are converted on the fly.
-** In linear-assignment-problem trackers (LAP tracker and simple LAP tracker), the time interval to bridge gaps is specified in frame interval instead of time interval.
-** In LAP trackers, detection of  split and merge events are constrained to two consecutive frames. 
-** The spot morphology analyzer is disabled.
-** Removed the spot intensity kurtosis, skewness and variance features.
-** Much better memory management in LAP tracker: Tracking on large number of spots will consume much less memory if tracks are not branching. 
-** Speed up considerably the loading of large xml files.
-** Better GUI refreshing when performing heavy calculations.
-** All major operations are now multi-threaded, notably computing spot, edge and track features.
-** Track layout in TrackScheme is now deterministic: when branching, branches are sorted left to right using the name of the first spot in the branches. 
-** Spots added manually are added in TrackScheme live in a dedicated column, to facilitate manual tracking.
-** In TrackScheme, added menu items to select tracks downward or upward in time from current selection.
-** In TrackScheme, the selection table can be exported as an ImageJ results table.
-** Better track layout in TrackScheme for tree-like structures. 
-** Improved the performance of several track analyzers. 
-** Full keyboard navigation. 
-** The filter panels that appear in the GUI can have their threshold entered by keyboard: Set the focus to the histogram panel (press tab until the threshold value is displayed in dark red instead of orange, or click the panel), and type a number - possibly decimal,  wait 1 s. You can also use the arrow keys to change it by 10% (left/right) or set it to a max or min value (up/down).
-** Fix a nasty and dangerous bug in LoG detector:  We were not converting the filter sigma to pixel coordinates, yielding different filter strengths depending on the spatial calibration entered, even if the user-specified radius was the same. This generated a weirdness in spot coordinates that Alison Twelvetrees noted.
-** Fix the bug that caused the GUI to often hang after the initial filtering step.
-** Fix a bug when rendering tracks in the 3D viewer: the filtered-out tracks were displayed anyway. Noticed by David Mason.
-** Fix a bug causing TrackScheme and XML files to sometimes receive empty tracks.
-** Numerous minor bugfixes.
-* 15/03/2013 - v2.0.1:
-** Fix a bug noticed by Jan Brocher that prevented track splitting and merging events to be correctly detected in some cases.
-* 22/03/2013 - v2.0.2:
-** Fix a bug that prevented selecting edges when the 3D displayer is used. 
-** Fix a bug that prevented some spots to be displayed in the side table of TrackScheme. 
-** Fix a bug that prevented v2.0.0 xml files to be read.
-** Fix a bug that crashed the 3D viewer when there is no spot in frame.
-** Slight optimization of the 3D viewer startup.
-* 5/6/2013 - v2.0.4:
-** Fix a GUI bug, noticed by Tobias Pietzsch.
+
+
+
+
+
 
 <references/>
 
