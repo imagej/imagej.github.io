@@ -56,20 +56,20 @@ Defining a smaller area to analyze can be very beneficial to test and inspect fo
 
 <br style="clear: both" />
 
-== Choosing a segmenter ==
+== Choosing a detector ==
 
 
 [[Image:TrackMate SegmenterChoice.png|right|border|]]
 
-You are now offered to choose a segmentation algorithm ("segmenter") amongst the currently implemented ones. 
+You are now offered to choose a detection algorithm ("detector") amongst the currently implemented ones. 
 
-The choice is actually quite limited. Apart from the '''Manual segmentation''', you will find 3 segmenters, but they are all based on [http://en.wikipedia.org/wiki/Blob_detection#The_Laplacian_of_Gaussian LoG (Laplacian of Gaussian) segmentation]. They are described in detail elsewhere, but here is what you need to know. 
+The choice is actually quite limited. Apart from the '''Manual annotation''', you will find 3 detectors, but they are all based on [http://en.wikipedia.org/wiki/Blob_detection#The_Laplacian_of_Gaussian LoG (Laplacian of Gaussian) segmentation]. They are described in detail elsewhere, but here is what you need to know. 
 
-* The '''Log segmenter''' applies a plain LoG segmentation on the image. All calculations are made in the Fourier space, which makes it optimal for intermediate spot sizes, between ≈5 and ≈20 pixels in diameter.
-* The '''Dog segmenter''' uses the [http://en.wikipedia.org/wiki/Blob_detection#The_difference_of_Gaussians_approach difference of Gaussians] approach to approximate a LoG filter by the difference of 2 Gaussians. Calculations are made in the direct space, and it is optimal for small spot sizes, below ≈5 pixels.
-* The '''Downsmapled LoG segmenter''' uses the LoG segmenter, but downsizes the image by an integer factor before filtering. This makes it optimal for large spot sizes, above ≈20 pixels in diameter, at the cost of localization precision.
+* The '''Log detector''' applies a plain LoG segmentation on the image. All calculations are made in the Fourier space, which makes it optimal for intermediate spot sizes, between ≈5 and ≈20 pixels in diameter.
+* The '''Dog detector''' uses the [http://en.wikipedia.org/wiki/Blob_detection#The_difference_of_Gaussians_approach difference of Gaussians] approach to approximate a LoG filter by the difference of 2 Gaussians. Calculations are made in the direct space, and it is optimal for small spot sizes, below ≈5 pixels.
+* The '''Downsmapled LoG detector''' uses the LoG detector, but downsizes the image by an integer factor before filtering. This makes it optimal for large spot sizes, above ≈20 pixels in diameter, at the cost of localization precision.
 
-In our case, let us just use the '''Dog segmenter'''.
+In our case, let us just use the '''Dog detector'''.
 
 <br style="clear: both" />
 
