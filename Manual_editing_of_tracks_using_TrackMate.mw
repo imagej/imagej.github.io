@@ -108,7 +108,7 @@ Press the '''Redo layout''' button when you are done. There should be four track
 
 == Spot editing with the HyperStack Displayer ==
 
-We now wish to correct for segmentation mistakes, that caused some nuclei to be missed. Creating new spots is made directly in the HyperStack displayer. First, make sure the TrackMate tool (represented by a black 'TM' over a yellow pen) is selected in the ImageJ toolbar, as pictured below:
+We now wish to correct for segmentation mistakes, that caused some nuclei to be missed. Creating new spots is made directly in the HyperStack displayer. First, make sure the TrackMate tool (represented by a blue track over a green background) is selected in the ImageJ toolbar, as pictured below:
 
 [[Image:TrackMate Toolbar.png|center|]]
 
@@ -156,6 +156,7 @@ I have found using the mouse clicks sub-optimal and painful for the carpal bones
 * Lay the mouse anywhere on the image.
 * Press the 'A' key.
 * A new spot is <u>a</u>dded at the mouse location.  
+By default, the new spot has the radius of the last spot edited with the mouse. So if you want to set the default radius, just double-click inside a spot that has the desired radius, then double-click again to leave editing mode. From now on, the radius of this spot will by used by default.
 
 ==== Deleting an existing spot ==== 
 
