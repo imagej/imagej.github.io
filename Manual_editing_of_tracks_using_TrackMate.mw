@@ -189,12 +189,11 @@ Now we want to connect the lonesome spots to the track they belong to. This is a
 
 You can create a link between two cells in TrackScheme simply by enabling the linking button on the TrackScheme toolbar, and dragging a line between the source cell and the target cell.
 
-This is pictured below, where the first cell of the top track is attached to the track number 2, as it should. For visibility, I brought on this screenshot the target cell closer to the lane of the track 2. You can normally find it either on its own lane or on the far right of the panel. 
+This is pictured below, where the fore-to-last cell of the track 4 is connected to the new spot. For visibility, I brought on this screenshot the target cell closer to the lane of the track 4. You can normally find it either  on the far right of the panel. 
 
 [[Image:TrackMate CreateLinksInTrackScheme annotated.png|700px]]
 
 Press the '''Redo layout''' button to see the arranged result. The first spot is now incorporated in the right track.
-
 
 === Using selection and right-click menu ===
 
