@@ -128,7 +128,7 @@ In our case, we see from the histogram that we could make sense of this step. Th
 <br style="clear: both" />
 
 
-== Selecting a displayer ==
+== Selecting a view ==
 
 [[Image:TrackMate DisplayerChoice.png|right|border|]]
 
@@ -136,16 +136,10 @@ Here, you can choose between the two visualization tools that will be used to di
 
 Honestly, choose the HyperStack displayer. Unless you have a very specific and complicated case that needs to inspect results in 3D immediately, you do not need the 3D viewer. The HyperStack displayer is simpler, lighter, allow to manually edit spots, and you will be able to launch a 3D viewer at the end of the process and still get the benefits. 
 
-<br style="clear: both" />
-
-== Computing spot feature and rendering displayer ==
-
-[[Image:TrackMate ComputeSpotFeatures.png|right|border|]]
-
-We are now back to the log panel. As you pressed the '''Next''' button, two process started: 
+When you press the '''Next''' button, two process starts: 
 * the features of all spots (well, those you left after the initial filtering step) are calculated;
 * the displayer selected does everything it needs to prepare displaying them. 
-So nothing much. When the '''Next''' button is re-enabled, press it to move to the spot filtering step. 
+So nothing much. Let's carry on.
 
 <br style="clear: both" />
 
@@ -161,7 +155,7 @@ The spot filtering panel is divided in two. The upper part, which is empty now, 
 
 Let us try it to play with it to find the best feature to filter out spurious spots. 
 
-By default , when the combo-box is on '''Default''', all spots are purple. By clicking on it, you see that you can select amongst all the possible features calculated. For instance, if you select '''X''', the spots will be colored according to their X position. A colored bar below the combo-box indicates the range the color gradient corresponds to. 
+By default , when the combo-box is on '''Uniform color''', all spots are purple. By clicking on it, you see that you can select amongst all the possible features calculated. For instance, if you select '''X''', the spots will be colored according to their X position. A colored bar below the combo-box indicates the range the color gradient corresponds to. 
 
 '''X''' does not seem to be a good feature to select relevant spots. We know that '''Quality''' should be, by construction, but let us pick '''Mean intensity'''. By scrolling through the time slide you should be able to see that now all the spurious spots have a blue to turquoise color, whether the real one stands forward in red or yellow. 
 
@@ -173,6 +167,12 @@ similar to the image below.
 We note that the histogram has a very desirable shape: a massive peak at low intensity represent most of the spots. There are other smaller peaks at higher intensity, and fortunately, they are very well separated from the large peak. 
 
 To move the threshold, simply click and drag inside the histogram window. Notice how the overlay is updated to display only the remaining spots after filtering.
+
+<u>Interlude</u>: A word on the GUI: I put some effort into having a GUI that can be navigated almost solely with the keyboard. Any of the small filter panel can be controlled with the keyboard. For instance: give the histogram the focus by either pressing the Tab key or clicking into it. 
+<ul>
+  <li> The floating threshold value should turn from orange to dark red. You can now type a numerical value (including decimals using the dot '.' as separator); wait two seconds, and the threshold value will be updated to what you just typed.
+  <li> Ot use the arrow keys: the left and right arrow keys will change the threshold value by 10%, the up and down arrow will set it to the max and min value respectively. 
+</ul>
 
 A filter can be set to be above or below the given threshold. You change this behavior using the radio buttons below the histogram window. In our case, we want it to be above of course. The '''Auto''' button uses [http://en.wikipedia.org/wiki/Otsu%27s_method Otsu's method] to determine automatically a threshold. In our case, we will put it manually around 33. 
 
