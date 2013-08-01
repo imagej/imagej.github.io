@@ -222,7 +222,7 @@ Press '''Next''' to start the tracking computation.
 
 == Our first tracking results ==
 
-Since our dataset is very small, you should see quasi-instantaneously the results appearing. They should look like this:
+You are now shown the log panel, where the tracking process is logged. Since our dataset is very small, it should complete very quickly. Press '''Next''' again to see the results. They should look like this:
 
 [[Image:TrackMate TrackingResults 1.png|TrackMate TrackingResults 1.png]]
 
@@ -230,7 +230,7 @@ Basically, the tracker held its promises: there is 6 tracks (the two immobile sp
 
 The track colors are yet meaningless; there are just used to facilitate separating different tracks visually.
 
-Now, we would like the shape of these tracks to change. We see that the green track is actually branching from the blue one at frame 10. The same goes for the yellow track, which branches from the green one at frame 17, and merges to the blue one at frame 27. To deal with that, we need to change of tracker. So go two steps back using the '''Previous''' button and go back to the tracker choice panel. There, select the '''Fast LAP tracker''' and move to its configuration panel. 
+Now, we would like the shape of these tracks to change. We see that the yellow track is actually branching from the blue one at frame 10. The same goes for the orange track, which branches from the green one at frame 17, and merges to the blue one at frame 27. To deal with that, we need to change of tracker. So go two steps back using the '''Previous''' button and go back to the tracker choice panel. There, select the '''LAP tracker''' and move to its configuration panel.
 
 == Configuring a not so simple tracker ==
 
