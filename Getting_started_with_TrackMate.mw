@@ -216,7 +216,7 @@ As promised, there is only three configuration fields.
 
 * The second field defines the maximal distance for gap-closing. Two track segments will not be bridged if the last spot of the first segment is further away than the first spot of the second segment. In our dummy example stack, there is spot disappearance at the frame number 45, top left. So the spot on frame 44 and the spot on frame 46 must not be separated by more than the distance you set there to have a chance to be linked.
 
-* The third field also deal with the detection of gap-closing events, and sets the maximal ''time interval'' between two spots to be bridged. Careful, the time also must be in physical units. In our case, it is trivial for we have <tt>1 frane = 1 sec</tt>, but be careful when you have calibrations such as <tt>1 frame = 33 ms</tt>. In our case, since the only disappearance event we have last one frame, we can simply put this value to 2 frames duration, that is 2 sec. But actually it does not matter, as you can see by experimenting. 
+* The third field also deal with the detection of gap-closing events, and sets the maximal ''frame interval'' between two spots to be bridged. Careful, the time is set in frame interval, here we do not want the physical time. In our case, since the only disappearance event we have last one frame, we can simply put this value to 2 frames duration. But actually it does not matter, as you can see by experimenting. 
 
 Press '''Next''' to start the tracking computation.
 
