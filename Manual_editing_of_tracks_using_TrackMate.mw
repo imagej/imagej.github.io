@@ -77,9 +77,12 @@ Move to the ''Display options'' panel, skipping the track filtering part.
 
 [[TrackScheme]] also allows manually editing the tracks. Press the '''TrackScheme''' button on the last panel. By default, the tracks are displayed as colored circles joined by lines. Each circle represent a spot, and the lines represent a link connecting two dots. The selection in TrackScheme is share across TrackMate, so if you select one circle, it will be highlighted in the HyperStack viewer as well (circled in green). 
 
-
-
 [[Image:TrackScheme Start.png|center|700px|border]]
+
+
+TrackScheme launches with a simple style: each spot is represented with a circle. You can get more information by changing the style. Next to the '''Style''' button in the TrackScheme toolbar, there is combo-box ini which you can select either '''simple''' or '''full'''. Select '''full'''. Each spot is now represented by a rounded rectangle, with the default name printed on the right. Go back in the TrackScheme toolbar. Next to the style combo-box, there is greyed-out button showing 3 pictures. Press it; after some time, each spot in TrackScheme will contain a thumbnail of the spot taken in the raw image. This is very handy to quickly detect detection problems.
+
+[[Image:TrackScheme Full.png|center|700px|border]]
 
 == TrackScheme in a nutshell ==
 
