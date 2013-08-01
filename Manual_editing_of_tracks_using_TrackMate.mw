@@ -233,7 +233,7 @@ Removing a link often splits a track in 2 new tracks. To have them properly re-a
 
 == Wrapping up ==
 
-Plus or minus the localization errors and some incorrect cell radii, you now have the full lineage in 3D of this short movie. This concludes this tutorial on manual editing in TrackMate. Here is a picture of the final results, as well as the [http://fiji.sc/tinevez/TrackMate/Celegans-5pc_17timepoints_final.xml corresponding xml file]:
+Plus or minus the localization errors and some incorrect cell radii, you now have the full lineage in 3D of this short movie. This concludes this tutorial on manual editing in TrackMate. Here is a picture of the final results:
 
 [[Image:TrackMate SmallLineage.png]]
 
