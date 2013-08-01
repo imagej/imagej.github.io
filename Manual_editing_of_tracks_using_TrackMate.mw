@@ -220,19 +220,7 @@ After doing so, you should now see a branching track, as picture below. Notice t
 
 === Creating several links at once ===
 
-Using the 'Shift + Left click', we can put several cells in the selection, and create the links between each pair. For instance, we will now merge the small bud of the newly edited track with the solitary cell and the rest of the branch for the top cell lineage.
-
-In the HyperStack displayer with 'Shift-click', select 
-* the branch end of the second track in the frame 9,
-* the closest solitary cell in frame 10, 
-* the beginning of the track 3.
-You should have 3 cells in the selection, as you can verify in the left-side pane of TrackScheme. Bring the right-click menu of TrackScheme, and select '''Link 3 spots'''. <u>Two</u> links are created. You should see that the track colors have changed in the displayer.
-
-Pressing the '''Redo layout''' will re-arrange the 2nd track, which now has two branches that extend to the end of the movie. 
-
-
-As an exercise, try to merge the first track, the third track and the 2 solitary spots in one shot. 
-
+Using the 'Shift + Left click', we can put several cells in the selection, and create the links between each pair. We don't have the need for it, but this is a good way to create a single track from several solitary spots: Just select them all (dragging a selection box or shift-clicking) and select the '''Link N spots'' menu item.
 
 == Editing tracks: deleting links ==
 
