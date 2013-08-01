@@ -201,9 +201,9 @@ Press the '''Redo layout''' button to see the arranged result. The first spot is
 
 The cell in TrackScheme cannot be easily moved due to a very tricky bug we cannot solve. When the source and target cells are far away, it might be better to use another way to create links. We do this using the shared selection.
 
-In TrackScheme, find the solitary cell in frame 9. That is the one we created earlier, to add a missed spot when the top cell was dividing. When you click on the corresponding cell in TrackScheme, it gets highlighted in green. In the HyperStack displayer, the displayed slice and time points are changed to display the spot, also highlighted in green.
+In TrackScheme, find the first spot of Track_4, in frame 9. When you click on the corresponding cell in TrackScheme, it gets highlighted in green. In the HyperStack viewer, the displayed slice and time points are changed to display the spot, also highlighted in green.
 
-We want to link this cell to the mother cell in the frame 8, just before it divided. To do so, 
+We want to link this cell to the mother cell in Track_0, frame 8, just before it divided. To do so, 
 * In the HyperStack displayer, move to the frame 8
 * Hold the 'Shift' key
 * Click on the mother cell
@@ -212,13 +212,11 @@ It gets highlighted in the displayer, and in TrackScheme as well. You now have t
 To create a link between the two, 
 * Right-click anywhere in TrackScheme
 * In the menu that pops-up, select '''Link 2 spots'''.
-The newly created link is displayed in magenta. Note that the track arrangement is not changed; you need to press the '''Redo layout''' button to rearrange the tracks. 
+The newly created link is displayed in magenta. Note that the track arrangement is not changed; you need to press the '''Redo layout''' button to rearrange the tracks.
 
-After doing so, you should now see a branching track, as picture below:
+After doing so, you should now see a branching track, as picture below. Notice that the track colors are out of sync. The colors are not automatically updated when changing a track layout. You have to click the '''Style''' button in the TrackScheme toolbar to do so. Do so.
 
 [[Image:TrackMate BranchingTrack.png]]
-
-
 
 === Creating several links at once ===
 
