@@ -73,15 +73,13 @@ This is what we will now manually correct.
 
 Move to the ''Display options'' panel, skipping the track filtering part. 
 
-Launching [[TrackScheme]] is the only way to manually edit the tracks in TrackMate (the spots can be edited as soon as the HyperStack displayer is launched). You could launch it now by pressing the '''TrackScheme''' button, but there is a convenience trick you can do first. 
+[[TrackScheme]] is a TrackMate tool for the visualization and editing of tracks. It displays a kind of "track map", where a track is laid on a pane, arranged vertically over time, as a Parisian subway train map. Tracks are displayed hierarchically, discarding the spatial location of each spot. Each spot is laid out going through time from top to bottom. It is a great tool particularly to study and edit lineages. 
 
-Move the to next panel, the ''Action chooser'' panel. In the combo box, select the '''Grab spot image''' action, and press the execute button. Once it is done, go back to the ''Display option'' panel, and press the '''TrackScheme''' button to launch TrachScheme. 
+[[TrackScheme]] also allows manually editing the tracks. Press the '''TrackScheme''' button on the last panel. By default, the tracks are displayed as colored circles joined by lines. Each circle represent a spot, and the lines represent a link connecting two dots. The selection in TrackScheme is share across TrackMate, so if you select one circle, it will be highlighted in the HyperStack viewer as well (circled in green). 
 
-TrackScheme displays a kind of "track map", where a track is laid on pane, arranged vertically over time, as a Parisian subway train map. Each spot is displayed as a cell in the map. Since we used the '''Grab spot image''' action before, each cell displays a thumbnail of the spot.
 
 
 [[Image:TrackScheme Start.png|center|700px|border]]
-
 
 == TrackScheme in a nutshell ==
 
