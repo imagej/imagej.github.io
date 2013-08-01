@@ -104,6 +104,8 @@ We will first start by removing all the bad spots and tracks. We decide not to k
 * Notice in the displayer that the selected track appear with a green and thick line, so as to highlight it. 
 * To delete all of it, simply press the 'delete' key in TrackScheme, or use the right-click menu to do so. 
 
+Do the same for Track_1, since we do not care for polar bodies.
+
 Press the '''Redo layout''' button when you are done. There should be four tracks remaining. Notice that their color changed as you deleted some of them. Their default color-map goes from blue to red and is re-adjusted every time the track number changes.
 
 == Spot editing with the HyperStack Displayer ==
