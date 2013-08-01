@@ -283,10 +283,11 @@ We are now close to the end of a typical workflow for a tracking problem. The pa
 
 The [[TrackScheme]] button launches a module that allow manually editing tracks, and performing analysis on them. It is the subject of another tutorial. 
 
-If you press '''Next''', you will see that there is still a panel after this one. It is the Action chooser panel, that allows you to execute simple actions on your data, such as exporting, copying, re-calculating feature, etc... 
+If you press '''Next''', you will see that there is still two panels after this one. The first one allows to plot any kind of feature as a function of another one. TrackMate deals with 3 kind of features: spot, link and track feature, depending on where it makes sense to compute them. For instance, instantaneous velocity is computed over a link (between two spots linked in a track), so you will find it on the '''Links''' tab. The '''+''' and '''-''' buttons allow you add several features on the Y-axis, and they will be pooled on the same graph or not, depending on the dimensionality of the features.
 
-If you are happy with the results, you can save them now. Loading the resulting file again in TrackMate will bring you to this panel, where you can inspect those results conveniently 
+The last panel is the Action chooser panel, that allows you to execute simple actions on your data, such as exporting, copying, re-calculating feature, etc... 
 
+If you are happy with the results, you can save them now. Loading the resulting file again in TrackMate will bring you to this panel, where you can inspect those results conveniently
 
 == Wrapping up ==
 
