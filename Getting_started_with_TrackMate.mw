@@ -236,15 +236,13 @@ Now, we would like the shape of these tracks to change. We see that the yellow t
 
 [[Image:TrackMate TrackerConfiguration 2.png]]
 
-Do not mind the track look change on the above picture compared to the previous one. I manually deleted a spurious single spot that escaped filtering, and generated a dull track that was one spot long. Deleting it changed the other tracks color.
-
 Look at the configuration panel. It is quite more complex than for the simple tracker, obviously, and it is the price for flexibility. Since it is quite long, the panel has to be scrolled to its bottom to venture on all fields.
 
 However, this apparent complexity is not that difficult to harness. If you look carefully, you will see that the main panel is made of 4 quasi-identical panel. Each one deals with one event type:
 
 The first one deals with the <u>frame-to-frame linking</u>. It consists in creating small track segments by linking spots in one frame to the spots in the frame just after, not minding anything else. That is of course not enough to make us happy: there might be some spot missing, failed detection that might have caused your tracks to be broken. But let us focus on this one now.
 
-Linking is made by minimizing a global cost (from one frame to another, yet). A short word on the linking logic:  The base cost of linking a particle with another one is simply the squared distance.<ref>There is some theoretical grounds for that, if you are investigating Brownian motion. See the article that details the segmenters and trackers for information.</ref> Following the proposal of Jaqaman ''et al.''<ref name="Jaqaman"/>, we also consider the possibility for a particle ''not'' to make any link, if is advantageous for the global cost. The sum of all costs are minimized to find to set of link for this pair of frame, and we move to the next one. 
+Linking is made by minimizing a global cost (from one frame to another, yet). A short word on the linking logic:  The base cost of linking a particle with another one is simply the squared distance<ref>. There is some theoretical grounds for that, if you are investigating Brownian motion. See the article that details the segmenters and trackers for information.</ref> Following the proposal of Jaqaman ''et al.''<ref name="Jaqaman"/>, we also consider the possibility for a particle ''not'' to make any link, if is advantageous for the global cost. The sum of all costs are minimized to find to set of link for this pair of frame, and we move to the next one. 
 
 As for the simple tracker, the '''Max distance''' field helps preventing irrelevant linking to occur. Two spots separated by more than this distance will never be considered for linking. This also saves some computation time. 
 
@@ -258,16 +256,15 @@ If you want to use feature penalties for frame-to-frame linking, simply press th
 In our case, given the sparsity of spots, we do not need help from the features at all. Remove any penalties you might have added, using the red '''-''' button. 
 
 
-The three other sub-panels deal with the second pass of the linking algorithm, where you take track segments created above and re-link them. This <u>gap-closing</u> part is already known to you, it is the same as we saw in the previous section: you have to specify a maximal distance, and a maximal time separation. You can also specify feature penalties, like for frame-to-frame linking. They will be computed on the last spot of the first segment and the first spot of the 2nd segment you are trying to bridge.
+The three other sub-panels deal with the second pass of the linking algorithm, where you take track segments created above and relink them. This <u>gap-closing</u> part is already known to you, it is the same as we saw in the previous section: you have to specify a maximal distance, and a maximal frame separation. You can also specify feature penalties, like for frame-to-frame linking. They will be computed on the last spot of the first segment and the first spot of the 2nd segment you are trying to bridge.
 
-The 3rd and 4th panels deal respectively with track splitting events and track merging events. The mechanisms at play are the same that for the gap-closings: track segments are bridge together depending on the penalties, the max distance and the max time separation allowed. 
+The 3rd and 4th panels deal respectively with track splitting events and track merging events. The mechanisms at play are the same that for the gap-closings: track segments are bridge together depending on the penalties and on the max distance allowed. Track splitting and merging are only allowed from one frame to the next one. 
 
 For <u>track splitting</u>, the middle of a segment is offered to bridge to the start of another segment. For <u>track merging</u>, the end of a segment is offered to bridge to the middle of another one.  A check box sets if you want to forbid or allow any of these events. 
 
 As an exercise, try to find the parameters the will fuse the central track segments in a single large track, with two splitting events and a merge event. You should obtain the track layout pictured below.
 
 [[Image:TrackMate TrackingResults 2.png]]
-
 
 == Filtering tracks ==
 
