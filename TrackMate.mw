@@ -83,9 +83,10 @@ A strong emphasis is made on performance, and TrackMate will take advantage of m
 Have you ever wanted to develop your own segmentation and/or particle-linking algorithm, but wanted to avoid the painful burden to also write a GUI, several visualization tools, analysis tools and exporting facilities? Then TrackMate is for you.
 
 We spent a considerable amount of time making TrackMate extensible in every aspect. It has a very modular design, that makes it easy to extend. You can for instance develop your own segmentation algorithm, extend TrackMate to include it, and benefit from the visualization tools and the GUI already there. Here is a list of the components you can extend and customize:
-* segmentation algorithms
+* detection algorithms
 * particle-linking algorithms
 * numerical features for spots (such as mean intensity, etc..)
+* numerical features for links (such as velocity, orientation, etc..)
 * numerical features for tracks (total displacement, length, etc...)
 * visualization tools
 * post-processing actions (exporting, data massaging, etc...)
@@ -95,8 +96,6 @@ Do you want to make your new algorithms usable by the reviewers of your submitte
 
 
 TrackMate was developed to serve as a tool for Life-Science image analysis community, so that new tracking tools can be developed more easily and quickly, and so that end-users can use them to perform their own research. We will support you if need help to reuse it.
-
-
 
 == Documentation and tutorials ==
 
