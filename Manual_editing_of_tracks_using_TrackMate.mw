@@ -47,9 +47,7 @@ On the ''Spot filters'' panel, the results of the detection will appear. It is l
 
 Anyway, let's correct it now. Just add a filter on Quality, and take a value of 200; 63 spots should remain, and the spurious ones should disappear. 
 
-Almost all polar bodies are incorrectly detected, and the localization of cells is bad. These are expected defects given our choice of detection algorithm and the parameters we have used. Here, the results are not so bad, unfortunately for this tutorial. So for educational purposes we will soon deface them.
-
-We could fix them right now, before tracking. As soon as the HyperStack displayer catches your data, it can edit it at anytime in the process. But let us exploit these defects for our training purpose, by having them generating additional linking defects. 
+Almost all polar bodies are incorrectly detected, and the localization of cells is bad. These are expected defects given our choice of detection algorithm and the parameters we have used. Here, the results are not so bad, unfortunately for this tutorial. We could fix them right now, before tracking. You can actually edit the results any time after the first panel of TrackMate. But let us exploit these defects for our training purpose, by having them generating additional linking defects. 
 
 
 [[Image:TrackMate DownsampleFilter.png|border]]
