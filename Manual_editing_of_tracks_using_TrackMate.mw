@@ -61,7 +61,7 @@ Almost all polar bodies are incorrectly detected, and the localization of cells 
 
 Normally, TrackMate can robustly handles track splitting events, representing ''e.g.'' cell division. Though this happens in this movie, we choose to dismiss this possibility in the automated tracking part.
 
-In the ''Tracker choice'' panel, select the '''Simple Fast LAP tracker'''. Leave the default values for the parameters, and press '''Next'''. You should end up in having something similar to the image to the right.
+In the ''Tracker choice'' panel, select the '''Simple LAP tracker'''. Leave the default values for the parameters, and press '''Next'''. You should end up in having something similar to the image to the right.
 
 A quick assertion shows that for nuclei, the individual track branches are not so bad. Each of the retained spot could use some fine tuning, but the tracks are not completely pathological, disregarding the fact that splitting events are missed. The polar bodies tracking results are hopeless. 
 
