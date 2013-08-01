@@ -27,9 +27,9 @@ This tutorial uses the following strategy: we will use an inadequate set of segm
 
 [[Image:TrackMate DownsampledLogSegmenter.png|right|border]]
 
-Launch TrackMate (''Plugins > Tracking > Track Mate'') and select the ''C.elegans'' stack as a target. Check on the first panel that all the spatial calibration is OK. The pixel size is about 200 nm in XY, 1 μm in Z, and each frame is separated by 2 minutes.
+Launch TrackMate (''Plugins > Tracking > TrackMate'') and select the ''C.elegans'' stack as a target. Check on the first panel that all the spatial calibration is OK. The pixel size is about 200 nm in XY, 1 μm in Z, and each frame is separated by 2 minutes.
 
-Select the '''Downsampled LoG segmenter'''. This choice actually makes sense: the nuclei are about 8 μm in diameter, and with a sampling of 200 nm, that makes 40 pixels wide nuclei. It is already advantageous to use the down-sampled version of the LoG segmenter above 20 pixels: segmenting 3D data over time takes already quite some time. Having to track large objects allow to down-sample them, making the data to iterate over smaller, which speed up the process. 
+Select the '''Downsampled LoG detector'''. This choice actually makes sense: the nuclei are about 8 μm in diameter, and with a sampling of 200 nm, that makes 40 pixels wide nuclei. It is already advantageous to use the down-sampled version of the LoG segmenter above 20 pixels: segmenting 3D data over time takes already quite some time. Having to track large objects allow to downsample them, making the data to iterate over smaller, which speed up the process. 
 
 This comes at a cost: the localization precision. To simulate segmentation defects, we will make it very bad. In the segmenter configuration panel, choose a down-sampling factor of 10 (a factor of 4 would have been wiser), and a target nuclei radius of 8 μm, as depicted to the right. 
 
@@ -39,13 +39,21 @@ The segmentation should take you no more than a minute, even on a standard machi
 
 [[Image:TrackMate DownsampledInitThreshold.png|right|border]]
 
-On the Initial thresholding panel, we see that it is easy to separate spurious spots using the '''Quality''' feature only. There is a big and sharp peak at the left of the histogram, while fewer spots spread over 40. Let's discard the spurious spots now and put a threshold on quality at about 40, to keep 56 spots. 
+On the Initial thresholding panel, we see that it is easy to separate spurious spots using the '''Quality''' feature only. There is a big and sharp peak at the left of the histogram. By moving the slider around you can get the remaining number of spot after filtering. If we put the threshold around 70, just above the first sharp peak, we see that we are left with about 115 spots. Now: We have 17 time-points, each of them containing at most 4 cells and two polar bodies (check the raw movie). So 115 remaining spots seems to be correct, therefore the threshold set at 70 seems right. 
 
 Now move to the next panel. On the ''Displayer choice'' panel you must pick the '''HyperStack Displayer'''. It is the only one that allows for manual editing.
 
-On the ''Spot filters'' panel, the results of the segmentation will appear. It is likely that our results are the same if you used the same numerical values as above. So you should see that a nucleus was missed on the first frame, that when a cell just divided in two, there is only one detected spot, and that almost all polar bodies are incorrectly segmented. These are expected defects given our choice of segmentation algorithm and the parameters we have used. 
+On the ''Spot filters'' panel, the results of the detection will appear. It is likely that our results are the same if you used the same numerical values as above. And you can see that there are still a lot of spurious spots amongst the remaining 115. We were wrong when we selected the initial threshold. 
+
+Anyway, let's correct it now. Just add a filter on Quality, and take a value of 200; 63 spots should remain, and the spurious ones should disappear. 
+
+Almost all polar bodies are incorrectly detected, and the localization of cells is bad. These are expected defects given our choice of detection algorithm and the parameters we have used. Here, the results are not so bad, unfortunately for this tutorial. So for educational purposes we will soon deface them.
 
 We could fix them right now, before tracking. As soon as the HyperStack displayer catches your data, it can edit it at anytime in the process. But let us exploit these defects for our training purpose, by having them generating additional linking defects. 
+
+
+[[Image:TrackMate DownsampleFilter.png|border]]
+
 
 <br style="clear: both" />
 
