@@ -10,18 +10,18 @@ Many more file formats can be imported via Fiji plugins. One plugin is called Bi
 http://loci.wisc.edu/software/bio-formats
 Drag and dropping an image file to the Fiji toolbar will prompt the Bio-Formats plugin to select the appropriate import function. You will be prompted with a dialog and your preferences remembered. These are self-explanatory.
 Some image file formats are more akin to databases rather than images (e.g. Leica LIF files). In these cases a second dialog will list the images in the 'database' prompting you to select which to open.
-There are three forms of Bio-Format you can use to import data into Fiji. One way is Bio-format remote. For this selection the image doesn’t have to be saved onto your computer or a disk. It is recommended to save it, and then use the regular Bio-Formats for the best quality image. Another Bio-Format option is called Bio-Formats windowless. With this option, Fiji uses the settings that were previously used for a Bio-Format image. So it skips all the dialog boxes at the beginning. The final option is the regular Bio-Format which you should select if you need to change the settings for importing an image.
+There are three forms of Bio-Format you can use to import data into Fiji. One way is Bio-format remote. For this selection the image doesn’t have to be saved onto your computer or a disk. It is recommended to save it, and then use the regular Bio-Formats for the best quality image. Another Bio-Format option called Bio-Formats windowless. With this option, Fiji uses the settings that were previously used for Bio-Format. So it skips all dialog boxes at the beginning. The final option is the regular Bio-Format which you should select if you need to change the settings for importing an image.
 *'''Zeiss LSM Panel:'''
 The LSM panel plugin duplicates the Zeiss LSM file import function of the LOCI Bio-Format Importer, but will also extensively catalogue the LSM metadata. The ''[[LSM Toolbox]]'' is activated by the menu command ''File>Import>LSM.'' Once you select LSM the panel will appear.
 Images are opened as 8-bit color images with the “no-palette” pseudo color from the LSM acquisition software. Each channel is imported as a separate image/stack. Lambda stacks are therefore imported as multiple images, not a single stack. They can be converted to a stack with the menu command: ''Image>Stacks>Images to stack.''
-Once opened, the file information can be accessed and the information can be irreversibly stamped in to the images or exported to a text file. 
+Once opened, the file information can be accessed and the information can be irreversibly stamped into the images or exported. 
 *'''Importing Noran SGI file:'''
 Noran movies can be opened in several ways:
-''File>Import>Noran movie'' opens the entire movie as an image stack. 
+''File>Import>Noran movie'' opens entire movie as an image stack. 
 ''File>Import>Noran Selection…'' allows you to specify a range of frames to be opened as a stack.
 The Noran SGI plugins are not bundled with the Fiji package. To receive them, please contact ''tonyc@uhnresearch.ca'' or their author, Greg Joss, so he can keep track of users. Greg Joss ''gjoss@bio.mq.edu.au'' is in the Dept. of Biology, Macquarie University, Sydney, Australia.
 *'''Importing multiple files from folder:'''
-Each time point of an experiment acquired with software such as Perkin Elmer’s UltraVIEW or Scion Image’s time lapse macro is saved by the acquisition software as a single TIF file. The experimental sequence can be imported to Fiji via the menu command ''File>Import>Image Sequence.''
+Each time point of an experiment acquired with software such as Perkin Elmer’s UltraVIEW or Scion Image’s time lapse macro is saved by the acquisition software as a single TIF. The experimental sequence can be imported to Fiji via the menu command ''File>Import>Image Sequence.''
 Locate the directory, click on the first image in the sequence and OK all dialogs. (You may get a couple of error messages while Fiji tries to open any non-image files in the experimental directory.) The stack will “interleave” the multiple channels you recorded, and can be de-interleaved via ''Plugins>Stacks - Shuffling>Deinterleave''
 Selected images that are not the same size can be imported as individual images windows using ''File/Import'' and select each individual image you want imported into Fiji. Then you can put those images into a stack by ''Image>Stacks>Images to stack'' Unlike the ''File>Import>Image Sequence'' function, the images don’t need to be the same dimensions. If memory is limited, stacks can be opened as Virtual-Stacks with most of the stack remaining on the disk until it is required.
 *'''Importing Multi-RAW sequence from folder:'''
@@ -33,11 +33,11 @@ Image type = 16-bit unsigned            (or 8 bit typically)
 Width and height as determined earlier
 Offset = 0, number of image = 1, gap = 0, ‘white’ is zero = off
 ‘Little-endian byte order’ = on, ‘open all files in folder’ = on to open all files in folder.
-Non-image files will also be opened and may appear as blank images and need deleting: ''Image>Stacks>Delete slice''. The stack will "interleave” the multiple channels you recorded, and can be de-interleaved via ''Plugins>Stacks - Shuffling>DeInterleave''. 
+Non-images will also be opened and may appear as blank images and need deleting: ''Image>Stacks>Delete slice''. The stack will "interleave” the multiple channels you recorded, and can be de-interleaved via ''Plugins>Stacks - Shuffling>DeInterleave''. 
 *'''Importing AVI and MOV files:'''
 There are two plugins which can open uncompressed AVIs and some types of MOV file. AVIs can be opened via ''File>Import>AVI''
 *'''Other Import functions:'''
-Animated GIF- This plugin opens an animated GIF file as an RGB stack. Also opens single GIF images.
+Animated GIF- This plugin opens animated GIF files as an RGB stack. Also opens single GIF images.
 
 ==Fiji Extensions==
 
