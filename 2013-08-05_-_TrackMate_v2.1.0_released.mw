@@ -1,24 +1,9 @@
-<span style="color:red">This page documents the changes in the <u>release candidate</u> of TrackMate v2.1.0. This version is not yet available through normal update channel. If you want to test it, you have to [[Update Sites|add]] the TrackMate-devel update site to the Fiji updater. Here is how to do it:</span>
-
-<ul>
-  <li>Go to the ''Help > Update Fiji'' menu item. 
-  <li>Select ''Advanced mode'', then ''Manage update sites''. 
-  <li>Click ''Add'' and in the ''URL'' column enter '''http://sites.imagej.net/TrackMate-dev/'''. Then ''Close''. 
-</ul>
-
-TrackMate v2.1.0 should overwrites your current version of TrackMate. More details on how to add an update site can be found here: [[How to follow a 3rd party update site]]
-
-
-
-
-
-
-
 
 A new minor version of [[TrackMate_]] has been released. This page lists the changes that are visible to the user. 
 
 Version 2.1.0 focuses mainly on performance and usability improvements for manual editing and manual tracking using TrackMate. It also features GUI improvements.
 
+We are grateful to Jan Brocher and Masanari Takamiya for comments and bug reports during the release candidate process.
 
 
 
@@ -48,7 +33,7 @@ Version 2.1.0 focuses mainly on performance and usability improvements for manua
 
 ==== Bug fixes ====
 
-* A 'Locale' problem prevented the entering of numerical features correctly on system relying on other decimal separators that the dot. TrackMate now enforces the dot to be used as a decimal separator on all Locales.
+* A 'Locale' problem prevented the entering of numerical features correctly on system relying on other decimal separators that the dot. TrackMate now enforces the dot to be used as a decimal separator on all Locales. <b>However</b> there are still reports that this fails on Windows machine with exotic (''i.e.'' non dot as decimal separator) locales. 
 * Numerous other bugfixes.
 
-[[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 06:53, 11 July 2013 (CDT)
+[[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 05:03, 5 August 2013 (CDT)
