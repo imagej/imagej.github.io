@@ -104,9 +104,11 @@ TrackMate was developed to serve as a tool for Life-Science image analysis commu
 === For users ===
 
 * [[Getting started with TrackMate]] is a basic tutorial that explains how TrackMate works on an easy image. You should start here.
+* [[TrackScheme]]: the tool for the visualization, editing and analysis of tracks.
+* [[Manual tracking with TrackMate]]
+* [[Manual editing of tracks using TrackMate]] shows how to manually curate and edit tracking results.
 * [[Track analysis using TrackMate]]
 * [[TrackMate algorithms|TrackMate algorithms]] details and documents the automated segmentation algorithms, particle-linking algorithms, etc.. currently implemented in TrackMate. 
-* [[Manual_editing_of_tracks_using_TrackMate]] shows how to manually curate and edit tracking results.
 * [[Scripting TrackMate]] shows how to do tracking using a a scripting language, ''e.g.'' from the Fiji [[Script Editor]].
 
 === For developers ===
