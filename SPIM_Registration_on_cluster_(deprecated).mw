@@ -1324,6 +1324,9 @@ Execute script
 The '''fusion.bsh''' script needs to be set for multi channel registration. Under '''select_channel''' Multi-channel registration=[Individual registration of channel 1] registration=[Individual registration of channel 1] will be set. '''downsample_output''' in this case is set to 4. 
 
 <source lang="java">
+import ij.IJ;
+import java.lang.Runtime;
+
 runtime = Runtime.getRuntime();
 System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
 
