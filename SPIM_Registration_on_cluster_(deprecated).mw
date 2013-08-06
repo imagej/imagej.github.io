@@ -990,7 +990,7 @@ Run this script:
 
  ./create-split-jobs
 
-This '''creat-split-jobs''' will use the '''split.bsh''' script (written by Stephan Saalfeld). This script will split each file into individual channels and will save them into the directory '''split'''.
+The '''creat-split-jobs''' will use the '''split.bsh''' (written by Stephan Saalfeld). This script will split each file into individual channels and will save them into the directory '''split'''.
 
 <source lang="java">
 import ij.IJ;
