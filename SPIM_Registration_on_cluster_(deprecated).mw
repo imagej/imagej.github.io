@@ -1235,24 +1235,30 @@ An additional registration file will be created in the directory '''registration
  spim_TL1_Angle32_Channel1.tif.registration.to_1
  ...
 
-====Dublicate registration files====
+====Duplicate registration files====
+
+Since the fusion requires the presents of registration files for both channel, we will duplicate the existing files of channel 1 and save them as registration files for channel 0. The following script '''dublicate_rename_registration.bsh''' will do just that.
+
+You will need to modify the '''time points''', '''angles''', the used reference time point in registration.to_{your reference} and the '''directory'''. 
+
+The script will copy the existing files and save them under a new name with just the channel name changed. 
 
 <source lang="bash">
 #!/bin/bsh
 
-# timepoints
+# modify time points
 for i in `seq 1 72`
  do 
 
-#angles  
+#modify angles  
  for a in 32 104 176 248 320
    do
  
+#modify reference in time-lapse registration
 for end in "beads.txt" "dim" "registration" "registration.to_1" 
     do
  
 # modify directories accordingly
-
 cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/registration/
 cp ./spim_TL"$i"_Angle"$a"_Channel1.tif."$end" ./spim_TL"$i"_Angle"$a"_Channel0.tif."$end"
      done
@@ -1262,6 +1268,22 @@ done
 echo Dublication complete! Have a nice day!
 exit 0
 </source>
+
+Execute the script:
+
+ ./dublicate_rename_registration.bsh
+
+Now for each channel of each angle and timepoint registration files should be present.
+
+ spim_TL1_Angle32_Channel0.tif.beads.txt            
+ spim_TL1_Angle32_Channel0.tif.dim                  
+ spim_TL1_Angle32_Channel0.tif.registration        
+ spim_TL1_Angle32_Channel0.tif.registration.to_1    
+ spim_TL1_Angle32_Channel1.tif.beads.txt           
+ spim_TL1_Angle32_Channel1.tif.dim                 
+ spim_TL1_Angle32_Channel1.tif.registration        
+ spim_TL1_Angle32_Channel1.tif.registration.to_1
+ ...
 
 ====Fusion of 2 channels====
 
