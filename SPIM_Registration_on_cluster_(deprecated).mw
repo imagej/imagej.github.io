@@ -1295,29 +1295,36 @@ Now for each channel of each angle and timepoint registration files should be pr
 
 ====Fusion for 2 channels====
 
-'''create_fusion_jobs'''
+The '''create_fusion_jobs''' for 2 channels works the same as for the single channel fusion. Just modify the '''directory''', the '''number of time points''', the angles under '''-Dangles''' and choose a '''cropping area (-Dx, -Dy, -Dz, -Dw, -Dh, -Dd)'''.
 
 <source lang="bash">
 #!/bin/bash
+
+#modify directory
 dir="/projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split"
 jobs="/projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/jobs/fusion"
 
 mkdir -p $jobs
 
-#for i in 1
-
-for i in `seq 2 72`
+# modify number of timepoints
+for i in `seq 1 72`
 
 do
 	job="$jobs/fusion-$i.job"
 	echo $job
 	echo "#!/bin/bash" > "$job"
+
+#modify -Dangles and cropping area
 	echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms100g -Xmx100g -Ddir=$dir -Dtimepoint=$i -Dangles=32,104,176,248,320 -Dchannels=0,1 -Dreference=0 -Dx=68 -Dy=250 -Dz=404 -Dw=1746 -Dh=846 -Dd=654 -- --no-splash $jobs/fusion.bsh" >> "$job"
 	chmod a+x "$job"
 done
 </source>
 
-'''fusion.bsh'''
+Execute script
+ 
+ ./create-fusion-jobs
+
+The '''fusion.bsh''' script needs to be set for multi channel registration. Under '''select_channel''' Multi-channel registration=[Individual registration of channel 1] registration=[Individual registration of channel 1] will be set. '''downsample_output''' in this case is set to 4. 
 
 <source lang="java">
 runtime = Runtime.getRuntime();
@@ -1359,7 +1366,12 @@ IJ.run("Multi-view fusion", "select_channel=Multi-channel registration=[Individu
 runtime.exit(0);
 </source>
 
-'''submit-jobs'''
+The '''submit-jobs''' script is modified according to the requirements of the fusion:
+
+*"-W 00:20" 
+*"-R rusage[mem=50000]
+
+Worked for in my example, but again I would recommend that you modify with the information from a small set of your own data. 
 
 <source lang="bash">
 #!/bin/bash
@@ -1369,3 +1381,7 @@ do
 	bsub -q short -n 12 -W 00:20 -R rusage[mem=50000] -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
 done
 </source>
+
+ ./submit-jobs .
+
+The fused images will be saved into separate subdirectories for each time point into the output directory.
