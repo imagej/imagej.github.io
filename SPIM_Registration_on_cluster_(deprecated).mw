@@ -1239,7 +1239,7 @@ An additional registration file will be created in the directory '''registration
 
 Since the fusion requires the presents of registration files for both channel, we will duplicate the existing files of channel 1 and save them as registration files for channel 0. The following script '''dublicate_rename_registration.bsh''' will do just that.
 
-You will need to modify the '''time points''', '''angles''', the used reference time point in registration.to_{your reference} and the '''directory'''. 
+You will need to modify the '''time points''', '''angles''', the used reference time point in '''registration.to_{your reference}''' and the '''directory'''. 
 
 The script will copy the existing files and save them under a new name with just the channel name changed. 
 
