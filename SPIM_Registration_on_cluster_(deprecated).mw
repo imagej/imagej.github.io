@@ -1041,9 +1041,6 @@ It pays of to do a test run with a small set. You can then determine the rough r
 #!/bin/bash
 
 for file in `ls ${1} | grep ".job$"`
-#!/bin/bash
-
-for file in `ls ${1} | grep ".job$"`
 do
 	bsub -q short -n 1 -W 00:05 -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
 done
