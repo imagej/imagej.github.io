@@ -954,7 +954,6 @@ mkdir -p $jobs
 #modify the number of Timepoints
 for i in `seq 1 72`
 
-
 do
 
 #modify the angles
