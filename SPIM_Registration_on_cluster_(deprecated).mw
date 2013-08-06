@@ -959,7 +959,7 @@ do
 done
 </source>
 
-This script will use the "split.bsh" script (written by Stephan Saalfeld) that will split the file into individual channels:
+This script will use the "split.bsh" script (written by Stephan Saalfeld) that will split the file into individual channels. In this script the individual channels will be saved into the directory /split which you should create before running the script. 
 
 <source lang=java>
 import ij.IJ;
@@ -993,6 +993,8 @@ for ( c = 0; c < imp.getNChannels(); ++c )
 			stack.getProcessor(
 				imp.getStackIndex( c + 1, z + 1, 1 ) ) );
 	impc = new ImagePlus( imp.getTitle() + " #" + ( c + 1 ), channelStack );
+
+/*Save individual files in the directory /split*/
 	IJ.save( impc, dir + "/split/" + imp.getTitle().replaceFirst( ".tif$", "_Channel" + ( c ) + ".tif" ) );
 }
 
