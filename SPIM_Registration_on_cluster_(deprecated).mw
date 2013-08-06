@@ -959,9 +959,9 @@ do
 done
 </source>
 
-This script will use the "split.bsh" script (written by Stephan Saalfeld) that will split the file into individual channels. In this script the individual channels will be saved into the directory /split which you should create before running the script. 
+This script will use the "split.bsh" script (written by Stephan Saalfeld) that will split the file into individual channels. In this script the individual channels will be saved into the directory /split which you should create in the directory where the files are before running the script. 
 
-<source lang=java>
+<source lang="java">
 import ij.IJ;
 import ij.ImagePlus;
 import ij.ImageStack;
@@ -1001,6 +1001,24 @@ for ( c = 0; c < imp.getNChannels(); ++c )
 /* shutdown */
 runtime.exit(0);
 </source>
+
+Using the script "submit-jobs" will send the jobs to the cluster. It pays of to do a test run with a small set. You can then determine the rough runtime and memory requirements of the jobs by looking at the output files. This information will allow the queuing system to put you in faster and reduces the number of failed jobs. The splitting will be rather fast 1-2 min and will require very little memory. 
+
+<source lang="bash">
+#!/bin/bash
+
+for file in `ls ${1} | grep ".job$"`
+#!/bin/bash
+
+for file in `ls ${1} | grep ".job$"`
+do
+	bsub -q short -n 1 -W 00:05 -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+done
+</source>
+
+
+
+
 
 ====Registration of 2 channels====
 
