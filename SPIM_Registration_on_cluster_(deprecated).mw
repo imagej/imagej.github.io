@@ -1076,24 +1076,37 @@ You can now remove the .tif files that contain both channels. Determine which ch
 
 ====Mulitview registration for 2 channels====
 
+In this example the beads are visible in channel 1. Therefore, we will proceed to register this channel. 
+Modify in the '''create-registration-jobs''' script the '''directory''', the '''number of time points''' and the '''angles (-Dangles)'''.
+
 <source lang="bash">
 #!/bin/bash
+
+#modify directory
 dir="/projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/"
 jobs="/projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/jobs/registration"
 
 mkdir -p $jobs
 
-#for i in 1
-for i in `seq 13 72`
+#Number of time points
+for i in `seq 1 72`
 
 do
 	job="$jobs/register-$i.job"
 	echo $job
 	echo "#!/bin/bash" > "$job"
+
+#modify -Dangles
 	echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=$dir -Dtimepoint=$i -Dangles=32,104,176,248,320 -- --no-splash ${jobs}/registration.bsh" >> "$job"
 	chmod a+x "$job"
 done
 </source>
+
+ ./create-registration-jobs
+
+The '''registration.bsh''' stays in principle the same as in the single channel. The only thing you need to modify is '''pattern_of_spim''' otherwise the program will not recognise the files. Just add the name of the channel to the file name. 
+
+As before you would change the '''z-resolution''', radius '''channel_0_radius_1''', '''channel_0_radius_2''' and the '''channel_0_threshold''' according to the parameters you would have determined manually. 
 
 <source lang="java">
 import ij.IJ;
@@ -1112,6 +1125,7 @@ angles = System.getProperty( "angles" );
 IJ.run("Bead-based registration", "select_type_of_registration=Single-channel" + " " +
 	"select_type_of_detection=[Difference-of-Mean (Integral image based)] " + " " +			
 	"spim_data_directory=" + dir + " " +
+/*modify pattern of file*/
 	"pattern_of_spim=spim_TL{t}_Angle{a}_Channel1.tif" + " " +
 	"timepoints_to_process=" + timepoint + " " +
 	"angles_to_process=" + angles + " " +
@@ -1129,6 +1143,12 @@ IJ.run("Bead-based registration", "select_type_of_registration=Single-channel" +
 runtime.exit(0);
 </source>
 
+The '''submit-jobs''' script is modified for the requirements of the registration. Determine these parameters with a small set before you apply them to all files. 
+
+*"-n 5" use one processor per angle.
+*"-W 00:15" Walltime of the job restricted to 15 min.
+*"-R rusage[mem=10000]" 10000MB of memory is required. 
+
 <source lang="bash">
 #!/bin/bash
 
@@ -1137,6 +1157,15 @@ do
 	bsub -q short -n 5 -W 00:15 -R rusage[mem=10000] -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
 done
 </source>
+
+ ./submit-jobs .
+
+The registration files should now be written in the directory '''registration'''. For each angle of each time point 3 registration files should be present:
+
+ spim_TL1_Angle32_Channel1.tif.beads.txt            
+ spim_TL1_Angle32_Channel1.tif.dim                  
+ spim_TL1_Angle32_Channel1.tif.registration
+ ...
 
 ====Time-lapse registration for 2 channels====
 
