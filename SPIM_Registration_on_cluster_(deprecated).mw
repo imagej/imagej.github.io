@@ -1293,7 +1293,9 @@ Now for each channel of each angle and timepoint registration files should be pr
  spim_TL1_Angle32_Channel1.tif.registration.to_1
  ...
 
-====Fusion of 2 channels====
+====Fusion for 2 channels====
+
+'''create_fusion_jobs'''
 
 <source lang="bash">
 #!/bin/bash
@@ -1314,6 +1316,8 @@ do
 	chmod a+x "$job"
 done
 </source>
+
+'''fusion.bsh'''
 
 <source lang="java">
 runtime = Runtime.getRuntime();
@@ -1354,6 +1358,8 @@ IJ.run("Multi-view fusion", "select_channel=Multi-channel registration=[Individu
 /* shutdown */
 runtime.exit(0);
 </source>
+
+'''submit-jobs'''
 
 <source lang="bash">
 #!/bin/bash
