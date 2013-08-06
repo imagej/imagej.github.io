@@ -927,7 +927,7 @@ The 3D rendering is relatively complex (we are working on a simpler solution) bu
 
 ==Processing 2 channels==
 
-Rename and save the data as .tif following the steps described above. Each file contains 2 channels, which we need to split into individual files, before we can proceed. To do this we create a bash script "create-split-jobs" that will create the jobs that will be send to the cluster. 
+Rename and save the data as .tif following the steps described above. Each file contains 2 channels, which we need to split into individual files before we can proceed. To do this we create a bash script "create-split-jobs" that will create the jobs that will be send to the cluster. 
 
 <source lang="bash">
 #!/bin/bash
