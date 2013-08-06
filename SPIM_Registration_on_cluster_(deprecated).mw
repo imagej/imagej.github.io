@@ -937,7 +937,7 @@ This part will deal with the processing of SPIM data with 2 channels. The regist
 Rename and save the data as '''.tif''' following the steps described above. The data should be present now in the following format:
 
  cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
- ls -l
+ ls
  spim_TL1_Angle32.tif
  spim_TL1_Angle104.tif
  spim_TL1_Angle176.tif
@@ -1059,7 +1059,7 @@ Finally you should find the individual channels in the directory '''split'''.
 To the information of the time point and the angle, the channel information is added. 
 
  cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split
- ls -l
+ ls 
  spim_TL1_Angle32_Channel0.tif
  spim_TL1_Angle32_Channel1.tif
  spim_TL1_Angle104_Channel0.tif
