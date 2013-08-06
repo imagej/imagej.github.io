@@ -926,7 +926,15 @@ The 3D rendering is relatively complex (we are working on a simpler solution) bu
 
 ==Processing 2 channels==
 
-Rename and save the data as '''.tif''' following the steps described above. 
+This part will deal with the processing of SPIM data with 2 channels. The registration and fusion works very similar and needs only a few adjustments to the scripts above, which I will point out specifically. There are 2 main differences:
+
+1. The Zeiss SPIM currently does not allow to export individual channels. Thus we need to split the channels and save them as separate .tif files. 
+
+2. In our case only 1 channel will have beads visible. Thus we will perform the registration only on this channel. The fusion program however, requires that registration files are present for both channels. To work around that, we will just duplicate the registration files from the channel that contains the beads. 
+
+====Separating the channels====
+
+Rename and save the data as '''.tif''' following the steps described above. The data should be present now in the following format:
 
  cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
  ls -l
@@ -937,12 +945,17 @@ Rename and save the data as '''.tif''' following the steps described above.
  spim_TL1_Angle320.tif
  ...
 
-Each file contains 2 channels, which we need to split into individual files before we can proceed. We will save the individual channels into a new directory. 
+Each file contains 2 channels, which we need to split into individual files before we can proceed. We will save the individual channels into a new subdirectory:
 
  mkdir split 
 
 
-To separate the channels we create a bash script '''create-split-jobs'''. This will create the jobs that will be send to the cluster. You will need to edit the '''directory''', the number of '''time points''' and the '''angles'''.
+To separate the channels we create a bash script '''create-split-jobs'''. Save this script in a new subdirectory in the jobs directory.
+
+ mkdir jobs/split_channels
+ cd jobs/split_channels
+
+The '''creat-split-jobs''' will create the jobs that will be send to the cluster. You will need to edit the '''directory''', the number of '''time points''' and the '''angles'''.
 
 <source lang="bash">
 #!/bin/bash
@@ -973,9 +986,11 @@ do
 done
 </source>
 
+Run this script:
+
  ./create-split-jobs
 
-This script will use the '''split.bsh''' script (written by Stephan Saalfeld). This script will split each file into individual channels and will save them into the directory '''split'''.
+This '''creat-split-jobs''' will use the '''split.bsh''' script (written by Stephan Saalfeld). This script will split each file into individual channels and will save them into the directory '''split'''.
 
 <source lang="java">
 import ij.IJ;
@@ -1018,7 +1033,9 @@ for ( c = 0; c < imp.getNChannels(); ++c )
 runtime.exit(0);
 </source>
 
-Using the script "submit-jobs" will send the jobs to the cluster. It pays of to do a test run with a small set. You can then determine the rough runtime and memory requirements of the jobs by looking at the output files. This information will allow the queuing system to put you in faster and eliminates failed jobs. The splitting will be rather fast 1-2 min and will require very little memory. 
+Using the script "submit-jobs" will send the jobs to the cluster. 
+
+It pays of to do a test run with a small set. You can then determine the rough runtime and memory requirements of the jobs by looking at the output files. This information will allow the queuing system to put you in faster and eliminates failed jobs. The splitting will be rather fast 1-2 min and will require very little memory. 
 
 <source lang="bash">
 #!/bin/bash
@@ -1039,7 +1056,7 @@ Run the script by:
  ./submit-jobs .
 
 Finally you should find the individual channels in the directory '''split'''.
-To the information of the time point and the angle, the channel information added. 
+To the information of the time point and the angle, the channel information is added. 
 
  cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split
  ls -l
