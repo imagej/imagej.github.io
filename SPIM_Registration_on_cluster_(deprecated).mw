@@ -1271,7 +1271,7 @@ exit 0
 
 Execute the script:
 
- ./dublicate_rename_registration.bsh
+  sh dublicate_rename_registration.bsh
 
 Now for each channel of each angle and timepoint registration files should be present.
 
