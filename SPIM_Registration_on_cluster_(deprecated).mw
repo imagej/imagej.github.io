@@ -1261,7 +1261,7 @@ for i in `seq 1 72`
  for a in 32 104 176 248 320
    do
  
-#modify reference in time-lapse registration
+#modify reference in time-lapse registration file ending
 for end in "beads.txt" "dim" "registration" "registration.to_1" 
     do
  
