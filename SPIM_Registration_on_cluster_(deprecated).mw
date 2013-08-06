@@ -1244,7 +1244,7 @@ An additional registration file will be created in the directory '''registration
 
 ====Duplicate registration files====
 
-Since the fusion requires the presents of registration files for both channel, we will duplicate the existing files of channel 1 and save them as registration files for channel 0. The following script '''dublicate_rename_registration.bsh''' will do just that.
+Since the fusion requires the presents of registration files for both channel, we will duplicate the existing files of channel 1 and save them as registration files for channel 0. The following script '''dublicate_rename_registration.bsh''' will do just that. Create this script in the jobs directory. 
 
 You will need to modify the '''time points''', '''angles''', the used reference time point in '''registration.to_{your reference}''' and the '''directory'''. 
 
@@ -1281,7 +1281,8 @@ Execute the script:
   sh dublicate_rename_registration.bsh
 
 Now for each channel of each angle and timepoint registration files should be present.
-
+ cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/registration
+ ls
  spim_TL1_Angle32_Channel0.tif.beads.txt            
  spim_TL1_Angle32_Channel0.tif.dim                  
  spim_TL1_Angle32_Channel0.tif.registration        
