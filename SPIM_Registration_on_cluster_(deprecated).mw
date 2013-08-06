@@ -975,7 +975,7 @@ done
 
  ./create-split-jobs
 
-This script will use the '''split.bsh''' script (written by Stephan Saalfeld). This script will split the file into individual channels and will save them into the directory '''split'''.
+This script will use the '''split.bsh''' script (written by Stephan Saalfeld). This script will split each file into individual channels and will save them into the directory '''split'''.
 
 <source lang="java">
 import ij.IJ;
@@ -1039,7 +1039,7 @@ Run the script by:
  ./submit-jobs .
 
 Finally you should find the individual channels in the directory '''split'''.
-To the information of the time point and the angle will be the channel information added. 
+To the information of the time point and the angle, the channel information added. 
 
  cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split
  ls -l
@@ -1055,4 +1055,4 @@ To the information of the time point and the angle will be the channel informati
  spim_TL1_Angle320_Channel1.tif
  ...
 
-You can now remove the .tif files that contain both channels.
+You can now remove the .tif files that contain both channels. Determine which channel contains the beads. The multi-view registration and the time-lapse registration will be performed only on this channel.
