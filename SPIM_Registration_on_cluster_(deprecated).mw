@@ -1169,10 +1169,16 @@ The registration files should now be written in the directory '''registration'''
 
 ====Time-lapse registration for 2 channels====
 
+In the script '''timelapse.interactive'''  modify '''-Ddir=''', '''-Dtimepoint=''', '''-Dreferencetp=''' (choose a good time point as reference) and '''-Dangles='''. 
+
 <source lang="bash">
 #!/bin/bash
 xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=/projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/ -Dtimepoint=1-72 -Dreferencetp=1 -Dangles=32,104,176,248,320 -- --no-splash ./time-lapse.bsh
 </source>
+
+Analog to the Multi-view registration add the channel information to the name of the file in the '''pattern_of_spim''' part of the script. 
+
+Give the '''z-resolution''', '''channel_0_radius_1''', '''channel_0_radius_2''' and the '''channel_0_threshold''' as before.
 
 <source lang="java">
 import ij.IJ;
@@ -1189,6 +1195,7 @@ referencetp = System.getProperty( "referencetp" );
 IJ.run("Bead-based registration", "select_type_of_registration=Single-channel" + " " +
 	"select_type_of_detection=[Difference-of-Mean (Integral image based)]" + " " +
 	"spim_data_directory=" + dir + " " +
+/*modify pattern_of_spim*/
         "pattern_of_spim=spim_TL{t}_Angle{a}_Channel1.tif" + " " +
         "timepoints_to_process=" + timepoint + " " +
         "angles_to_process=" + angles + " " +
@@ -1209,11 +1216,24 @@ IJ.run("Bead-based registration", "select_type_of_registration=Single-channel" +
 runtime.exit(0);
 </source>
 
+Again modify the '''submit-jobs''' script according to the need of your timelapse registration. 
+For my example these modifications worked: 
+
+*"-W 0025"
+*"-R rusage[mem=5000]
+
 <source lang="bash">
 #!/bin/bash
 
 bsub -q short  -n 12 -W 00:25 -R rusage[mem=5000] -R span[hosts=1] -o "out.%J" -e "err.%J" ./timelapse.interactive
 </source>
+
+ ./submit-jobs .
+
+An additional registration file will be created in the directory '''registration'''.
+
+ spim_TL1_Angle32_Channel1.tif.registration.to_1
+ ...
 
 ====Dublicate registration files====
 
