@@ -933,7 +933,7 @@ Rename and save the data as .tif following the steps described above.
  ls -l
  spim_TL1_Angle32.tif
  spim_TL1_Angle104.tif
- spim_TL_Angle176.tif
+ spim_TL1_Angle176.tif
  spim_TL1_Angle248.tif
  spim_TL1_Angle320.tif
  ...
