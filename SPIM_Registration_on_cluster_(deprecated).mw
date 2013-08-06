@@ -1371,7 +1371,7 @@ The '''submit-jobs''' script is modified according to the requirements of the fu
 *"-W 00:20" 
 *"-R rusage[mem=50000]
 
-Worked for in my example, but again I would recommend that you modify with the information from a small set of your own data. 
+Worked in my example, but again I would recommend that you modify this with the information from a small set of your own data. 
 
 <source lang="bash">
 #!/bin/bash
