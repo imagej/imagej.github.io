@@ -1074,7 +1074,7 @@ To the information of the time point and the angle, the channel information is a
 
 You can now remove the .tif files that contain both channels. Determine which channel contains the beads. The multi-view registration and the time-lapse registration will be performed only on this channel.
 
-====Mulitview registration for 2 channels====
+====Multi-view registration for 2 channels====
 
 In this example the beads are visible in channel 1. Therefore, we will proceed to register this channel. 
 Modify in the '''create-registration-jobs''' script the '''directory''', the '''number of time points''' and the '''angles (-Dangles)'''.
