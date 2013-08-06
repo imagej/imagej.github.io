@@ -1234,6 +1234,11 @@ bsub -q short  -n 12 -W 00:25 -R rusage[mem=5000] -R span[hosts=1] -o "out.%J" -
 
 An additional registration file will be created in the directory '''registration'''.
 
+ cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/registration
+ ls
+ spim_TL1_Angle32_Channel1.tif.beads.txt            
+ spim_TL1_Angle32_Channel1.tif.dim                  
+ spim_TL1_Angle32_Channel1.tif.registration
  spim_TL1_Angle32_Channel1.tif.registration.to_1
  ...
 
