@@ -1140,6 +1140,52 @@ done
 
 ====Time-lapse registration for 2 channels====
 
+<source lang="bash">
+#!/bin/bash
+xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=/projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/ -Dtimepoint=1-72 -Dreferencetp=1 -Dangles=32,104,176,248,320 -- --no-splash ./time-lapse.bsh
+</source>
+
+<source lang="java">
+import ij.IJ;
+import java.lang.Runtime;
+
+runtime = Runtime.getRuntime();
+System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
+
+dir = System.getProperty( "dir" );
+timepoint = System.getProperty( "timepoint" );
+angles = System.getProperty( "angles" );
+referencetp = System.getProperty( "referencetp" );
+
+IJ.run("Bead-based registration", "select_type_of_registration=Single-channel" + " " +
+	"select_type_of_detection=[Difference-of-Mean (Integral image based)]" + " " +
+	"spim_data_directory=" + dir + " " +
+        "pattern_of_spim=spim_TL{t}_Angle{a}_Channel1.tif" + " " +
+        "timepoints_to_process=" + timepoint + " " +
+        "angles_to_process=" + angles + " " +
+        "load_segmented_beads" + " " +
+	"subpixel_localization=[3-dimensional quadratic fit (all detections)]" + " " +
+	"specify_calibration_manually xy_resolution=1.000 z_resolution=3.278693914413452" + " " +
+	"transformation_model=Affine" + " " + 
+	"channel_0_radius_1=3" + " " +
+	"channel_0_radius_2=5" + " " +
+	"channel_0_threshold=0.007" + " " +
+	"re-use_per_timepoint_registration" + " " +
+	"timelapse_registration" + " " +
+	"select_reference=[Manually (specify)]" + " " +
+	"reference_timepoint=" + referencetp
+	);
+
+/* shutdown */
+runtime.exit(0);
+</source>
+
+<source lang="bash">
+#!/bin/bash
+
+bsub -q short  -n 12 -W 00:25 -R rusage[mem=5000] -R span[hosts=1] -o "out.%J" -e "err.%J" ./timelapse.interactive
+</source>
+
 ====Dublicate registration files====
 
 <source lang="bash">
