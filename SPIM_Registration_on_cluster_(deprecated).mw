@@ -1162,6 +1162,8 @@ done
 
 The registration files should now be written in the directory '''registration'''. For each angle of each time point 3 registration files should be present:
 
+cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/registration
+ls
  spim_TL1_Angle32_Channel1.tif.beads.txt            
  spim_TL1_Angle32_Channel1.tif.dim                  
  spim_TL1_Angle32_Channel1.tif.registration
