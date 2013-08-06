@@ -1073,3 +1073,168 @@ To the information of the time point and the angle, the channel information is a
  ...
 
 You can now remove the .tif files that contain both channels. Determine which channel contains the beads. The multi-view registration and the time-lapse registration will be performed only on this channel.
+
+====Mulitview registration for 2 channels====
+
+<source lang="bash">
+#!/bin/bash
+dir="/projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/"
+jobs="/projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/jobs/registration"
+
+mkdir -p $jobs
+
+#for i in 1
+for i in `seq 13 72`
+
+do
+	job="$jobs/register-$i.job"
+	echo $job
+	echo "#!/bin/bash" > "$job"
+	echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=$dir -Dtimepoint=$i -Dangles=32,104,176,248,320 -- --no-splash ${jobs}/registration.bsh" >> "$job"
+	chmod a+x "$job"
+done
+</source>
+
+<source lang="java">
+import ij.IJ;
+import ij.ImagePlus;
+import java.lang.Runtime;
+import java.io.File;
+import java.io.FilenameFilter;
+
+runtime = Runtime.getRuntime();
+System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
+
+dir = System.getProperty( "dir" );
+timepoint = System.getProperty( "timepoint" );
+angles = System.getProperty( "angles" );
+
+IJ.run("Bead-based registration", "select_type_of_registration=Single-channel" + " " +
+	"select_type_of_detection=[Difference-of-Mean (Integral image based)] " + " " +			
+	"spim_data_directory=" + dir + " " +
+	"pattern_of_spim=spim_TL{t}_Angle{a}_Channel1.tif" + " " +
+	"timepoints_to_process=" + timepoint + " " +
+	"angles_to_process=" + angles + " " +
+//	"load_segmented_beads" + " " +
+	"bead_brightness=[Advanced ...]" + " " +
+	"subpixel_localization=[3-dimensional quadratic fit (all detections)]" + " " +
+	"specify_calibration_manually xy_resolution=1.000 z_resolution=3.4972729682922363" + " " +
+	"transformation_model=Affine" + " " + 
+	"channel_0_radius_1=3" + " " +
+	"channel_0_radius_2=5" + " " +
+	"channel_0_threshold=0.0070"
+	);
+
+/* shutdown */
+runtime.exit(0);
+</source>
+
+<source lang="bash">
+#!/bin/bash
+
+for file in `ls ${1} | grep ".job$"`
+do
+	bsub -q short -n 5 -W 00:15 -R rusage[mem=10000] -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+done
+</source>
+
+====Time-lapse registration for 2 channels====
+
+====Dublicate registration files====
+
+<source lang="bash">
+#!/bin/bsh
+
+# timepoints
+for i in `seq 1 72`
+ do 
+
+#angles  
+ for a in 32 104 176 248 320
+   do
+ 
+for end in "beads.txt" "dim" "registration" "registration.to_1" 
+    do
+ 
+# modify directories accordingly
+
+cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/registration/
+cp ./spim_TL"$i"_Angle"$a"_Channel1.tif."$end" ./spim_TL"$i"_Angle"$a"_Channel0.tif."$end"
+     done
+   done
+done
+
+echo Dublication complete! Have a nice day!
+exit 0
+</source>
+
+====Fusion of 2 channels====
+
+<source lang="bash">
+#!/bin/bash
+dir="/projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split"
+jobs="/projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/jobs/fusion"
+
+mkdir -p $jobs
+
+#for i in 1
+
+for i in `seq 2 72`
+
+do
+	job="$jobs/fusion-$i.job"
+	echo $job
+	echo "#!/bin/bash" > "$job"
+	echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms100g -Xmx100g -Ddir=$dir -Dtimepoint=$i -Dangles=32,104,176,248,320 -Dchannels=0,1 -Dreference=0 -Dx=68 -Dy=250 -Dz=404 -Dw=1746 -Dh=846 -Dd=654 -- --no-splash $jobs/fusion.bsh" >> "$job"
+	chmod a+x "$job"
+done
+</source>
+
+<source lang="java">
+runtime = Runtime.getRuntime();
+System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
+
+dir = System.getProperty( "dir" );
+timepoint = System.getProperty( "timepoint" );
+angles = System.getProperty( "angles" );
+channels = System.getProperty( "channels");
+reference = System.getProperty( "reference" );
+x = System.getProperty( "x" );
+y = System.getProperty( "y" );
+z = System.getProperty( "z" );
+w = System.getProperty( "w" );
+h = System.getProperty( "h" );
+d = System.getProperty( "d" );
+iter = System.getProperty( "iter" );
+
+IJ.run("Multi-view fusion", "select_channel=Multi-channel registration=[Individual registration of channel 1] registration=[Individual registration of channel 1]" + " " + 
+"spim_data_directory=" + dir + " " +
+"pattern_of_spim=spim_TL{t}_Angle{a}_Channel{c}.tif timepoints_to_process=" + timepoint + " " +
+"angles=" + angles + " " +
+"channels=" + channels + " " +
+"fusion_method=[Fuse into a single image]" + " " +
+"process_views_in_paralell=All" + " " + 
+"blending" + " " +
+"content_based_weights_(fast," + " " +
+"downsample_output=4" + " " + 
+"registration=[Individual registration of channel 0]" + " " +
+"crop_output_image_offset_x=" + x + " " +
+"crop_output_image_offset_y=" + y + " " +
+"crop_output_image_offset_z=" + z + " " +
+"crop_output_image_size_x=" + w + " " +
+"crop_output_image_size_y=" + h + " " +
+"crop_output_image_size_z=" + d + " " +
+"fused_image_output=[Save 2d-slices, one directory per time-point]");
+
+/* shutdown */
+runtime.exit(0);
+</source>
+
+<source lang="bash">
+#!/bin/bash
+
+for file in `ls ${1} | grep ".job$"`
+do
+	bsub -q short -n 12 -W 00:20 -R rusage[mem=50000] -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+done
+</source>
