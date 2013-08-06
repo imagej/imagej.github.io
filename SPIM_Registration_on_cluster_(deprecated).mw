@@ -923,3 +923,136 @@ Tips and tricks
 The 3D rendering is relatively complex (we are working on a simpler solution) but extremely rewarding. ''Drosophila'' embryogenesis movie coming soon here.
 
 [[Category:Registration|Registration]]
+
+==Processing 2 channels==
+
+Rename and save the data as '''.tif''' following the steps described above. 
+
+ cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
+ ls -l
+ spim_TL1_Angle32.tif
+ spim_TL1_Angle104.tif
+ spim_TL1_Angle176.tif
+ spim_TL1_Angle248.tif
+ spim_TL1_Angle320.tif
+ ...
+
+Each file contains 2 channels, which we need to split into individual files before we can proceed. We will save the individual channels into a new directory. 
+
+ mkdir split 
+
+
+To separate the channels we create a bash script '''create-split-jobs'''. This will create the jobs that will be send to the cluster. You will need to edit the '''directory''', the number of '''time points''' and the '''angles'''.
+
+<source lang="bash">
+#!/bin/bash
+
+#path of the directory where to find the files
+dir="/projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/"
+
+#path where to find the job script
+jobs="$dir/jobs/split_channels"
+
+mkdir -p $jobs
+
+#modify the number of time points
+for i in `seq 1 72`
+
+do
+
+#modify the angles
+for a in 32 104 176 248 320       
+
+do
+          	job="$jobs/split-$i-$a.job"
+                echo $job
+                echo "#!/bin/bash" > "$job"
+                echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=$dir -Dtimepoint=$i -Dangle=$a -- --no-splash ${jobs}/split.bsh" >> "$job"
+                chmod a+x "$job"
+        done
+done
+</source>
+
+ ./create-split-jobs
+
+This script will use the '''split.bsh''' script (written by Stephan Saalfeld). This script will split the file into individual channels and will save them into the directory '''split'''.
+
+<source lang="java">
+import ij.IJ;
+import ij.ImagePlus;
+import ij.ImageStack;
+import java.lang.Runtime;
+import java.io.File;
+import java.io.FilenameFilter;
+
+
+runtime = Runtime.getRuntime();
+
+dir = System.getProperty( "dir" ); 
+timepoint = System.getProperty( "timepoint" );
+angle = System.getProperty( "angle" );
+
+//open image
+
+System.out.println( dir );
+imp = new ImagePlus( dir + "spim_TL" + timepoint + "_Angle" + angle + ".tif" );
+System.out.println( imp.getTitle() );
+
+/* split channels */
+stack = imp.getStack();
+for ( c = 0; c < imp.getNChannels(); ++c )
+{
+	channelStack = new ImageStack( imp.getWidth(), imp.getHeight() );
+	for ( z = 0; z < imp.getNSlices(); ++z )
+		channelStack.addSlice(
+			"",
+			stack.getProcessor(
+				imp.getStackIndex( c + 1, z + 1, 1 ) ) );
+	impc = new ImagePlus( imp.getTitle() + " #" + ( c + 1 ), channelStack );
+
+/*Save individual files in the directory /split*/
+	IJ.save( impc, dir + "/split/" + imp.getTitle().replaceFirst( ".tif$", "_Channel" + ( c ) + ".tif" ) );
+}
+
+/* shutdown */
+runtime.exit(0);
+</source>
+
+Using the script "submit-jobs" will send the jobs to the cluster. It pays of to do a test run with a small set. You can then determine the rough runtime and memory requirements of the jobs by looking at the output files. This information will allow the queuing system to put you in faster and eliminates failed jobs. The splitting will be rather fast 1-2 min and will require very little memory. 
+
+<source lang="bash">
+#!/bin/bash
+
+for file in `ls ${1} | grep ".job$"`
+#!/bin/bash
+
+for file in `ls ${1} | grep ".job$"`
+do
+	bsub -q short -n 1 -W 00:05 -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+done
+</source>
+
+*"-W 00:05" will limit the wall time of the job to 5 minutes. 
+
+Run the script by:
+
+ ./submit-jobs .
+
+Finally you should find the individual channels in the directory '''split'''.
+To the information of the time point and the angle will be the channel information added. 
+
+ cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split
+ ls -l
+ spim_TL1_Angle32_Channel0.tif
+ spim_TL1_Angle32_Channel1.tif
+ spim_TL1_Angle104_Channel0.tif
+ spim_TL1_Angle104_Channel1.tif
+ spim_TL1_Angle176_Channel0.tif
+ spim_TL1_Angle176_Channel1.tif
+ spim_TL1_Angle248_Channel0.tif
+ spim_TL1_Angle248_Channel1.tif
+ spim_TL1_Angle320_Channel0.tif
+ spim_TL1_Angle320_Channel1.tif
+ ...
+
+You can now remove the .tif files that contain both channels.
