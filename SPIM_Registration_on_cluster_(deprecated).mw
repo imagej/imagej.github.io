@@ -929,14 +929,14 @@ The 3D rendering is relatively complex (we are working on a simpler solution) bu
 
 Rename and save the data as .tif following the steps described above. 
 
-/projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
-ls -l
-spim_TL1_Angle32.tif
-spim_TL1_Angle104.tif
-spim_TL_Angle176.tif
-spim_TL1_Angle248.tif
-spim_TL1_Angle320.tif
-...
+ cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
+ ls -l
+ spim_TL1_Angle32.tif
+ spim_TL1_Angle104.tif
+ spim_TL_Angle176.tif
+ spim_TL1_Angle248.tif
+ spim_TL1_Angle320.tif
+ ...
 
 Each file contains 2 channels, which we need to split into individual files before we can proceed. To do this we create a bash script "create-split-jobs" that will create the jobs that will be send to the cluster. 
 
@@ -1028,7 +1028,19 @@ done
 </source>
 
 
-
+ cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split
+ ls -l
+ spim_TL1_Angle32_Channel0.tif
+ spim_TL1_Angle32_Channel1.tif
+ spim_TL1_Angle104_Channel0.tif
+ spim_TL1_Angle104_Channel1.tif
+ spim_TL1_Angle176_Channel0.tif
+ spim_TL1_Angle176_Channel1.tif
+ spim_TL1_Angle248_Channel0.tif
+ spim_TL1_Angle248_Channel1.tif
+ spim_TL1_Angle320_Channel0.tif
+ spim_TL1_Angle320_Channel1.tif
+ ...
 
 
 ====Registration of 2 channels====
