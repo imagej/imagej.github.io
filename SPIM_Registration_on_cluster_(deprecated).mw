@@ -927,6 +927,79 @@ The 3D rendering is relatively complex (we are working on a simpler solution) bu
 
 ==Processing 2 channels==
 
+Rename and save the data as .tif following the steps described above. Each file contains 2 channels, which we need to split into individual files, before we can proceed. To do this we create a bash script "create-split-jobs" that will create the jobs that will be send to the cluster. 
+
+<source lang="bash">
+#!/bin/bash
+
+#path of the directory where to find the files
+dir="/projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/"
+
+#path where to find the job script
+jobs="$dir/jobs/split_channels"
+
+mkdir -p $jobs
+
+#modify the number of Timepoints
+for i in `seq 1 72`
+
+
+do
+
+#modify the angles
+for a in 32 104 176 248 320       
+
+do
+          	job="$jobs/split-$i-$a.job"
+                echo $job
+                echo "#!/bin/bash" > "$job"
+                echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=$dir -Dtimepoint=$i -Dangle=$a -- --no-splash ${jobs}/split.bsh" >> "$job"
+                chmod a+x "$job"
+        done
+done
+</source>
+
+This script will use the "split.bsh" script (written by Stephan Saalfeld) that will split the file into individual channels:
+
+<source lang=java>
+import ij.IJ;
+import ij.ImagePlus;
+import ij.ImageStack;
+import java.lang.Runtime;
+import java.io.File;
+import java.io.FilenameFilter;
+
+
+runtime = Runtime.getRuntime();
+
+dir = System.getProperty( "dir" ); 
+timepoint = System.getProperty( "timepoint" );
+angle = System.getProperty( "angle" );
+
+//open image
+
+System.out.println( dir );
+imp = new ImagePlus( dir + "spim_TL" + timepoint + "_Angle" + angle + ".tif" );
+System.out.println( imp.getTitle() );
+
+/* split channels */
+stack = imp.getStack();
+for ( c = 0; c < imp.getNChannels(); ++c )
+{
+	channelStack = new ImageStack( imp.getWidth(), imp.getHeight() );
+	for ( z = 0; z < imp.getNSlices(); ++z )
+		channelStack.addSlice(
+			"",
+			stack.getProcessor(
+				imp.getStackIndex( c + 1, z + 1, 1 ) ) );
+	impc = new ImagePlus( imp.getTitle() + " #" + ( c + 1 ), channelStack );
+	IJ.save( impc, dir + "/split/" + imp.getTitle().replaceFirst( ".tif$", "_Channel" + ( c ) + ".tif" ) );
+}
+
+/* shutdown */
+runtime.exit(0);
+</source>
+
 ====Registration of 2 channels====
 
 ====Fusion of 2 channels====
