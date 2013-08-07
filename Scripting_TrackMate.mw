@@ -1,5 +1,4 @@
-<span style="color:red">The code listed here does not work: it belong to TrackMate version 1.x. A new version of this page is under construction. 
-07/2013</span>
+
 
 
 __TOC__
@@ -274,7 +273,7 @@ Scripting is a good way to interrogate and play non-interactively with tracking 
 
 That way you could for instance redo a full tracking process by only changing one parameter with respect to the saved one. You might also want to check results without relying on the GUI. Etc...
 
-For the example below to work for you, you will have to edit line 12 and put the actual path to your TrackMate file.
+For the example below to work for you, you will have to edit line 20 and put the actual path to your TrackMate file.
 
 
 
