@@ -26,7 +26,7 @@ Here is an example of full tracking process, using the easy image found in the [
 * It fetches the image from the web
 * It configures settings for segmentation and tracking
 * The model is instantiated, with the settings and imp objects
-* The [[TrackMate]] plugin is instantiated with the model object
+* The [[TrackMate]] class is instantiated with the model object
 * Then the [[TrackMate]] object performs all the steps needed.
 * The final results is displayed as an overlay.
 
@@ -44,8 +44,8 @@ import fiji.plugin.trackmate.visualization.hyperstack.HyperStackDisplayer as Hyp
 import fiji.plugin.trackmate.features.FeatureFilter as FeatureFilter
 
 # Get currently selected image
-imp = WindowManager.getCurrentImage()
-#imp = IJ.openImage('http://fiji.sc/samples/FakeTracks.tif')
+#imp = WindowManager.getCurrentImage()
+imp = IJ.openImage('http://fiji.sc/samples/FakeTracks.tif')
 imp.show()
   
 #------------------------
@@ -136,12 +136,6 @@ displayer =  HyperStackDisplayer(model, selectionModel, imp)
 displayer.render()
 displayer.refresh()
 </source>
-
-
-
-
-
-
 
 == Use the process method ==
 
