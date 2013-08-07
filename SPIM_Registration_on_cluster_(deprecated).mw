@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | name                   = Selective Plane Illumination Microscopy Registration on a cluster
 | software               = Fiji
-| author                 = Stephan Saalfeld, Pavel Tomancak
+| author                 = Stephan Saalfeld, Christopher Schmied, Pavel Tomancak
 | maintainer             = Pavel Tomancak
 | filename               = n.a.
 | released               = May 2013
