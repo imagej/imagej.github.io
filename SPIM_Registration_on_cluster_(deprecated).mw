@@ -928,7 +928,7 @@ The 3D rendering is relatively complex (we are working on a simpler solution) bu
 
 This part will deal with the processing of SPIM data with 2 channels. The registration and fusion works very similar and needs only a few adjustments to the scripts above, which I will point out specifically. There are 2 main differences:
 
-1. The Zeiss SPIM currently does not allow to export individual channels. Thus we need to split the channels and save them as separate .tif files. 
+1. The Zeiss SPIM currently does not allow to export individual channels when acquiring 2 channels in fast frame mode. Thus we need to split the channels and save them as separate .tif files. When using the sequential mode you can skip this step. 
 
 2. In our case only 1 channel will have beads visible. Thus we will perform the registration only on this channel. The fusion program however, requires that registration files are present for both channels. To work around that, we will just duplicate the registration files from the channel that contains the beads. 
 
