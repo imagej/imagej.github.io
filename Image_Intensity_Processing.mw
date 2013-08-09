@@ -1,5 +1,5 @@
 = 4. Intensity vs Time analysis =
-== 4.1 Brightness and Contrast [[Image:intens2.jpg]] ==
+== 4.1 Brightness and Contrast ==
 To improve the visualisation of the image, the displayed brightness and contrast can be adjusted with “''Image/Adjust/Brightness/Contrast...''” (hotkey: Shift+C).
 
 The “''Auto”''&nbsp;applies an intelligent contrast stretch to the&nbsp;''way in which the image is displayed''. The brightness and contrast is adjusted based on an analysis of the image's (or selection’s) histogram. If pressed repeatedly, it allows a progressively increasing percentage of pixels to become saturated.
