@@ -4,8 +4,7 @@
 | name                   = Analyze_Stripes
 | author                 = Justin R. Bickford
 | maintainer             = Justin R. Bickford
-| filename               = Analyze_Stripes_v2.4.1.ijm
-| source                 = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=macro:analyze_stripes_v2.4.1.ijm hosted on ImageJ website]
+| filename               = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=macro:analyze_stripes_v2.4.1.ijm Analyze_Stripes_v2.4.1.ijm]
 | released               = 9 August 2013
 | latest version         = 9 August 2013
 | status                 = stable
