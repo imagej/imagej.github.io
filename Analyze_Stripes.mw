@@ -1,4 +1,25 @@
 == Analyze Stripes ==
+{{Infobox Plugin
+| software               = ImageJ or Fiji
+| name                   = Analyze_Stripes
+| author                 = Justin R. Bickford
+| maintainer             = Justin R. Bickford
+| filename               = Analyze_Stripes_v2.4.1.ijm
+| source                 = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=macro:analyze_stripes_v2.4.1.ijm hosted on ImageJ website]
+| released               = 9 August 2013
+| latest version         = 9 August 2013
+| status                 = stable
+| category               = [[:Category:Analysis|Analysis]]
+| website                = [http://imagejdocu.tudor.lu/doku.php?id=macro:analyze_stripes Analyze_Stripes website]
+}}
+
+== Purpose ==
+
+Analyze_Stripes is a Fiji (or ImageJ) macro designed to automatically measure the width, edge roughness, and orientation angle of stripes.
+
+== Documentation ==
+
+Complete documentation may be found at the [http://imagejdocu.tudor.lu/doku.php?id=macro:analyze_stripes Analyze_Stripes website]. 
 
 
 [[Category:Tutorials]]
