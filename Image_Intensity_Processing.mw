@@ -33,7 +33,7 @@ The Multi Measure plugin that comes with the installation is v3.2.
 
 3.&nbsp;Rename this image “Ref&nbsp;''expt name''” or something memorable.
 
-4.&nbsp;Open “''ROI Manager''” plugin (“''Analyze>Tools>Roi Manager''&nbsp;”&nbsp;or toolbar icon&nbsp;).
+4.&nbsp;Open “''ROI Manager''” plugin (“''Analyze/Tools/Roi Manager''&nbsp;”&nbsp;or toolbar icon&nbsp;).
 
 5.&nbsp;Select ROIs and "''Add''" to ROI manager. Clicking "''Show All''" helps avoid analysing the same cell twice.
 
