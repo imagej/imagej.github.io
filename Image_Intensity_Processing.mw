@@ -29,7 +29,7 @@ The Multi Measure plugin that comes with the installation is v3.2.
 
 1.&nbsp;Open confocal-series. Remove background (See&nbsp;Background correction)
 
-2.&nbsp;It’s worthwhile generating a reference stack to add the ROIs to. Use the “''Image/Stacks/Z-project''”function http://fiji.sc/mbf/intensity_vs_time_ana.htm#_ftn1 §]. Select the “Average” option.
+2.&nbsp;It’s worthwhile generating a reference stack to add the ROIs to. Use the “''Image/Stacks/Z-project''” function. Select the “Average” option.
 
 3.&nbsp;Rename this image “Ref&nbsp;''expt name''” or something memorable.
 
