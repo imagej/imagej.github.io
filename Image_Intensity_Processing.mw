@@ -27,19 +27,19 @@ Multiple ROIs can be analysed at once using Bob Dougherty’s “''Multi Measure
 
 The Multi Measure plugin that comes with the installation is v3.2.
 
-1.&nbsp;Open t-series.Remove background (See&nbsp;Background correction)
+1.&nbsp;Open confocal-series. Remove background (See&nbsp;Background correction)
 
-2.&nbsp;It’s worthwhile generating a reference stack to add the ROIs to. Use the “''Image/Stacks/Z-project''”function (hotkey: Shift+Z)[http://fiji.sc/mbf/intensity_vs_time_ana.htm#_ftn1 §]. Select the “Average” option.
+2.&nbsp;It’s worthwhile generating a reference stack to add the ROIs to. Use the “''Image/Stacks/Z-project''”function http://fiji.sc/mbf/intensity_vs_time_ana.htm#_ftn1 §]. Select the “Average” option.
 
 3.&nbsp;Rename this image “Ref&nbsp;''expt name''” or something memorable.
 
 4.&nbsp;Open “''ROI Manager''” plugin (“''Analyze>Tools>Roi Manager''&nbsp;”&nbsp;or toolbar icon&nbsp;).
 
-5.&nbsp;Select ROIs and "''Add''" to ROI manager (hotkey: t). Clicking "''Show All''" helps avoid analysing the same cell twice.
+5.&nbsp;Select ROIs and "''Add''" to ROI manager. Clicking "''Show All''" helps avoid analysing the same cell twice.
 
 6.&nbsp;Once finished selecting ROIs to be analysed in the reference image, you can draw them to the reference image by clicking the "''More>>''" button and selecting&nbsp;''Draw''. Save the reference image to the&nbsp;experiment’s data folder and then select the stack to be analysed by clicking on it.
 
-7.&nbsp;Click "''More>>''" button in the ROI manager and select “''Multi''” button to measure all the ROIs. Click “Yes” on “''Process stack?''” dialog. This will put values from each slice in to a single row (multiple columns per slice). Clicking on "''Measure''" will put all values from all slices and each ROI in a&nbsp; single column.
+7.&nbsp;Click "''More>>''" button in the ROI manager and select “''Multi Measure''” button to measure all the ROIs. Click “Ok”. This will put values from each slice in to a single row (multiple columns per slice). Clicking on "''Measure''" will put all values from all slices and each ROI in a&nbsp; single column.
 
 8.&nbsp;Go to “Results” window. Select menu item “''Edit/Select All…''”. Then “''Edit/Copy All''”.
 
@@ -51,7 +51,7 @@ The Multi Measure plugin that comes with the installation is v3.2.
 
 The ROIs can be stored and re-opened later using the Multi Measure dialog button “''Save''”. Save them in the experimental data folder. The ROIs can be opened later either individually (Multi Measure dialog button “''Open''”) or all at once (Multi Measure dialog button “''Open All''”) which opens all the ROIs in a folder.
 
-Oval and rectangular ROIs can also be restored individually from x, y, l, h values using “''Plugins/ROI/SpecifyROI…''” (hotkey: Shift + G)''.''
+Oval and rectangular ROIs can also be restored individually from x, y, l, h values using “''Plugins/ROI/SpecifyROI…''”.
 
 == 4.5. Ratio Analysi[[Image:intens1.jpg]]s ==
 Analysis of dual-channel ratio images requires careful background subtraction prior to analysis. See section&nbsp;
