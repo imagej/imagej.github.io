@@ -1,6 +1,6 @@
 = 4. Intensity vs Time analysis =
 == 4.1 Brightness and Contrast [[Image:intens2.jpg]] ==
-To improve the visualisation of the image, the displayed brightness and contrast can be adjusted with “''Image/Adjust/Brightness-Contrast''” (hotkey: Shift+C).
+To improve the visualisation of the image, the displayed brightness and contrast can be adjusted with “''Image/Adjust/Brightness/Contrast...''” (hotkey: Shift+C).
 
 The “''Auto”''&nbsp;applies an intelligent contrast stretch to the&nbsp;''way in which the image is displayed''. The brightness and contrast is adjusted based on an analysis of the image's (or selection’s) histogram. If pressed repeatedly, it allows a progressively increasing percentage of pixels to become saturated.
 
@@ -10,7 +10,7 @@ If&nbsp;''Auto''&nbsp;does not produce a desirable result, select a region of th
 
 '''Pressing the&nbsp;''Apply''&nbsp;button permanently changes the&nbsp;''actual&nbsp;''grey values of the image. Don’t press this button during while analysing image intensity!'''
 
-If you prefer the image to be displayed as “black on white” rather than “white on black”, the image display can be “inverted” by the command “''Image/Color Tables/Invert-LUT''”. The command “''Edit/Invert…''” inverts the pixel&nbsp;''values''&nbsp;not just the way the image is displayed.
+If you prefer the image to be displayed as “black on white” rather than “white on black”, the image display can be “inverted” by the command “''Image/Lookup Tables/Invert LUT''”. The command “''Edit/Invert''” inverts the pixel&nbsp;''values''&nbsp;not just the way the image is displayed.
 
 == 4.2 Getting intensity values from single ROI ==
 If the movie has been opened as a stack, the ROI selected can be analysed with the command: “''Plugins/Intensity vs Time Plot''”&nbsp;(hotkey: “1”). This generates a single column of numbers - one slice intensity per row.
