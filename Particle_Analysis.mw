@@ -33,13 +33,11 @@ Objects in a binary image that are slightly overlapping may be separated using t
 The image first needs to be converted to binary (set via thresholding). The black pixels are then replaced with grey pixels of an intensity proportional to their distance from a white pixel (i.e. black pixels close to the edge are light grey, those closer to the ‘middle) are nearer black. This is the Euclidian distance map (EDM). From this it calculated the centres of the objects the&nbsp;''ultimate eroded points''&nbsp;(UEPs), i.e. points that are equidistance from the edges. These points ere then dilated until the meet another black pixel, then a watershed line is drawn.
 
 === 5.1.3 Analyse Particles ===
-Once the image has been segmented, the menu command “''Analyze/Analyze particles”''&nbsp;can be used to obtain various information regarding particle size and numbers[[Image:partic8.jpg]].
+Once the image has been segmented, the menu command “''Analyze/Analyze particles...”''&nbsp;can be used to obtain various information regarding particle size and numbers[[Image:partic8.jpg]].
 
 Set the minimum size and maximum size to exclude objects that appear in the binary image that are clearly not objects of interest. Select the “Show: Outlines” option to display an image of the detected objects. This can then be merged with the original for presentation purposes. Invert the outline image and use the menu command “''Plugins/Colour functions/Colour merge”''&nbsp;to add the original and outline image.
 
-The particle analysis can be automated via plugins or macros once the correct threshold value and particle size range has been determined for your objects of interest. See the “''Plugins/Particle Analysis/ Nucleus counter''” plugin and its source code to customise it to your images.
-
-&nbsp;
+The particle analysis can be automated via plugins or macros once the correct threshold value and particle size range has been determined for your objects of interest. See the “''Plugins/Particle Analysis/ Nucleus counter''” plugin and its source code to customise it to your images.&nbsp;
 
 === 5.1.4 Nucleus Counter ===
 This plugin automates many of the steps discussed above. The user can:1. Enter the size range which should be counted[[Image:partic9.jpg]].2. Select the automatic thresholding method. This can be either "Current", "Otsu", Maximum Entropy", "Mixture Modelling" or k-means" clustering. "Current" uses the threshold that has been set manually, see above.3. Opt to perform a background correction.4. Opt to perform a "Smooth" filter.5. Opt to perform a watershed separation.6. Opt to add the particles to ROI manager7. Opt for a summary.
