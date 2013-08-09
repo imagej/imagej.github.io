@@ -23,7 +23,7 @@ The results are displayed in a plot-window with the ROI details in the plot wind
 The plugin “''Plugins/Stacks – T-functions/Intensity v Time Monitor&nbsp;''(this is the&nbsp;''Dynamic ZProfile from''Kevin (Gali) Baler (gliblr at yahoo.com) and Wayne Rasband simply renamed)&nbsp;”&nbsp;will update the plot window each time the ROI selection is moved. This may help locate initiation sites of calcium signals for example.
 
 ==  4.4 Getting intensity values from multiple ROIs ==
-Multiple ROIs can be analysed at once using Bob Dougherty’s “''Multi Measure''” plugin. There is a native “ROI manager” function which does a similar job except the results generated are not sorted in to columns. Check Bob’s website for updates:&nbsp;[http://www.optinav.com/ImageJplugins/list.htm http://www.optinav.com/ImageJplugins/list.htm]
+Multiple ROIs can be analysed at once using Bob Dougherty’s “''Multi Measure''” plugin. There is a native “ROI manager” function which does a similar job except the results generated are not sorted in to columns. Check Bob’s website for updates:&nbsp;[http://www.optinav.com/imagej.html http://www.optinav.com/imagej.html]
 
 The Multi Measure plugin that comes with the installation is v3.2.
 
