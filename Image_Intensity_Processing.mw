@@ -130,7 +130,7 @@ To use:
 
 '''The plugin assumes the larger of the last two ROIs in the ROI manager is the whole cell ROI and the smaller the bleached ROI.'''
 
-4. Run the FRAP profiler plugin (''Plugins>Stacks - T-functions>FRAP_Profiler'')
+4. Run the FRAP profiler plugin.
 
 5. The plugin will return the intensity vs time plot; the normalised intensity vs time plot of the bleached area and the curve fit.
 
