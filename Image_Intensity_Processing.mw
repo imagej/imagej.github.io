@@ -145,5 +145,196 @@ The normalisation corrects for the bleaching dues to image acquisition and assum
 
 '''Ict<nowiki>= intensity of whole cell at time t.</nowiki>'''
 
+= 7 Image intensity Processing =
+== 7.1 Brightness and Contrast ==
+
+{| style="border-spacing:0;"
+| style="border:none;padding:0in;"| The&nbsp;''Brightness and Contrast&nbsp;''window (Hotkey: Shift+C; menu command “''Image/Adjust/Brightness and Contrast…”'') will allow you to change the way the image is displayed. The x-axis of the plot represents the pixel intensities in the image; the y-axis represents the intensity that they are displayed (bottom of y-axis is display black; top is display white). Initially, there is a linear relationship between the image intensity and the display intensity. Increase the minimum value to display your image background as black (i.e.) zero and decrease the maximum value to display the brightest objects in your image as white. This is best achieved in a greyscale image by loading the “HiLo LUT” (“''Plugins/LUT/Hi Lo Indicator…”''<nowiki>; hotkey: F1).</nowiki>
+
+The&nbsp;''Auto&nbsp;''button applies a linear histogram stretch (a.k.a.&nbsp;''Normalisation''), i.e. it sets the displayed value to match the maximum and minimum intensity in the image. Clicking the Auto button again will allow increasing amounts of saturation. By clicking the&nbsp;''Apply&nbsp;''button the values in the image are changed to match their displayed value. Do not do this prior to quantifying intensity values! If you are processing a stack, you will be given the option to apply this adjustment to the entire stack.
+
+If&nbsp;''Auto''&nbsp;does not produce a desirable result, select a region of the cell plus some background with an ROI tool, then hit the&nbsp;''Auto''&nbsp;button again. It will then do a stretch based on the intensities within the ROI.
+
+If you prefer the movie to be displayed as “White and Black” rather than “Black and White”, the image display can be “inverted” by the command “''Image/Color Tables/Invert-LUT''”. The command “''Edit/Invert…''” inverts the pixel&nbsp;''values''&nbsp;not just the way the image is displayed.
+| style="border:none;padding:0in;"| [[Image:image_31.jpg]]
+
+|}
+== 7.2 Non-linear contrast stretching ==
+=== 7.2.1 Equalization ===
+
+{| style="border-spacing:0;"
+| style="border:none;padding:0in;"| More control of the brightness and contrast adjustment can be achieved with the“''Process/Enhance contrast”''&nbsp;menu command. Here, when applied to a stack, it applies the adjustment based on each slice’s histogram, not just the one currently displayed as is done with the&nbsp;''Brightness and Contrast&nbsp;''window.
+
+“Equalisation” applies a non-linear stretch of the histogram based on the square root of the intensity (see online guide to image processing:[http://www.dai.ed.ac.uk/HIPR2/histeq.htm http://www.dai.ed.ac.uk/HIPR2/histeq.htm]).
+
+The “Normalize” option performs a simple linear stretch on the image in a similar way to the “''Auto”''&nbsp;option in the Brightness and Contrast window, except that when applied to a stack each slice in stack is adjusted differently based on the slice’s histogram.
+| style="border:none;padding:0in;"| [[Image:image_32.jpg]]
+
+|}
+[[Image:image_33.gif]]=== 7.2.2 Gamma ===
+<nowiki>This can be though of as a non-linear histogram adjustment. Faint objects can be made more intense without saturating bright objects (gamma <1). Similarly, medium-intensity objects can be made fainter without dimming the bright objects (gamma > 1). The intensity of each pixel is “raised to the power” of the gamma value and then scaled to 8-bits or the min and max of 16-bit images.</nowiki>
+
+For 8 bit images; New intensity = 255 ×&nbsp;''<nowiki>[(old intensity÷255)</nowiki>&nbsp;gamma'']
+
+Gamma can be adjusted via the “''Process/Math/Gamma”''&nbsp;command or the “''Plugins/Utilities/Gamma Scroll-bar''”&nbsp;plugin. The latter will open up a new window copy of your image and you can adjust the gamma with the scroll bar. Click on “''Done”''&nbsp;when you are finished. This is a bit flaky and doesn’t react well if you change images in mid-adjust! This does not work on stacks. You can use the Scroll-bar to determine the desired gamma value on one slice of your stack, and then apply this gamma value to the stack via the “''Process/Math/Gamma”''&nbsp;command.
+
+
+== 7.4 Filtering ==
+See the online reference:&nbsp;[http://www.dai.ed.ac.uk/HIPR2/filtops.htm http://www.dai.ed.ac.uk/HIPR2/filtops.htm]&nbsp;for a simple explanation of digital filtering.
+
+Filters can be found under the menu item “''Process/Filters...''”''.''&nbsp;Typically use a “''Radius (pixels)''” of 1 which equates to a 3×3 “kernel” – see online reference.
+
+''Mean filter'': the pixel is replaced with the average of it and its neighbours within the radius. The menu item “''Process/Smooth''” is a 3×3 mean filter.
+
+''Gaussian filter'': The is similar to smoothing but replaces the pixel with a pixel of value proportional to a normal distribution of it’s neighbours – not explained well, I know, but you’ve probably skipped the online reference and you need to read that to understand the way the filter works properly.
+
+''Median filter'': the pixel is replaced with the median of it and its adjacent neighbours. This removes noise and&nbsp;''preserves boundaries''&nbsp;better than simple mean filtering, but can look odd. (The menu item “''Process/Noise/Despeckle''” is a 3×3 median filter).
+
+''Kalman filter''&nbsp;: Sophisticated filtering for time-course experiments – a sort of “weighted running average”. Best used if the sample frequency is higher than the “event” frequency i.e. slowly occurring events. Otherwise you get odd, blurry results. “''Process/Filter/Kalman Stack…”.''
+
+''Sigma filter'': A modification on the standard mean filter but preserves edges better – can be though of as a “gentle smooth”. The user specifies the kernel size, the Sigma width and the minimum number of pixels to include. A&nbsp;''Sigma''&nbsp;value for the kernel is calculated (based on the variance and mean of the intensities) and only pixels within this&nbsp;''Sigma range''&nbsp;(=&nbsp;''Sigma''&nbsp;× the user defined&nbsp;''Sigma Width&nbsp;''scaling factor) are used to calculate the mean. If there are too few pixels (exact number set in the user dialog:''Minimum number of pixels'') in the kernel that are within the Sigma range then the central pixel which is assumed to be spuriously low or high and the mean of the rest of the kernel is taken. Increasing the''Sigma width''&nbsp;and the&nbsp;''minimum number of pixels''&nbsp;results in increased smoothing and loss of edges. This plugin is under development, please send me any feedback. “''Process/Filter/Sigma Filter…”&nbsp;''J.S. Lee, Digital Image Smoothing and the Sigma Filter, Computer Vision, Graphics, and Image Processing 24, (1983) p. 255-269.
+
+''Anisotropic Diffusion.''&nbsp;This is an edge preserving smoothing filter.
+
+[[Image:image_2.jpg]]&nbsp;
+
+== 7.5 Background correction ==
+Background correction can be done in several ways and is facilitated if the grey image has the “''Plugins/LUT/Hi Lo indicator''” (Hotkey: F1) LUT loaded. This displays the zero values blue and the 255 white values red.
+
+If the background is relatively even across the image, it is most simply remove with the''Brightness&Contrast''&nbsp;command – slowly raise the&nbsp;''Minimum''&nbsp;value until most of the background is displayed blue. The press the&nbsp;''Apply&nbsp;''button to change the grey-values and remove the background.
+
+=== 7.5.1 Rolling-Ball background correction ===
+For uneven background the menu command “''Process/Subtract background''” can be used. This menu command removes uneven background from images using a “rolling ball” algorithm. The radius should be set to at least the size of the largest object that is&nbsp;''not''&nbsp;part of the background. It can also be used to remove background from gels where the background is white. Running the command several times may produce better results.
+
+
+
+{| style="border-spacing:0;"
+| style="border:none;padding:0.0194in;"| &nbsp;'''RAW'''
+| style="border:none;padding:0.0194in;"| &nbsp;
+| style="border:none;padding:0.0194in;"| “'''''Process/Subtract Background…”'''''
+
+|-
+| style="border:none;padding:0.0194in;"| [[Image:image_35.jpg]]
+| style="border:none;padding:0.0194in;"| [[Image:image_36.jpg]]
+| style="border:none;padding:0.0194in;"| [[Image:image_37.jpg]]
+
+|}
+&nbsp;
+
+Once the background has been evened, final adjustments can be made with the&nbsp;''Brightness&Contrast''control.
+
+&nbsp;
+
+
+
+{| style="border-spacing:0;"
+| style="border:none;padding:0.0194in;"| [[Image:image_38.jpg]]
+| style="border:none;padding:0.0194in;"| [[Image:image_39.jpg]]
+| style="border:none;padding:0.0194in;"| [[Image:image_40.jpg]]
+
+|}
+=== 7.5.2 ROI background correction ===
+The rolling-ball algorithm is time consuming. If the background is even across the field of view it is possible to select a background region of interest and subtract the mean value of this area for each slice from each slice. Use the selection tools to select an area of background and run the menu command “''Plugins/ROI/BG Subtraction from ROI”''. This macro will subtract the mean of the ROI from the image plus an additional value equal to the standard deviation of the ROI multiplied by the scaling factor you enter (3 by default).
+
+<nowiki>i.e. it subtracts [mean + (sd×scalingfactor)]</nowiki>
+
+This macro also works with stacks and so can be used with time-courses with varying background.
+
+&nbsp;
+
+
+
+{| style="border-spacing:0;"
+| style="border:none;padding:0in;"| <center>'''Before correction'''</center>
+| style="border:none;padding:0in;"| <center>&nbsp;'''Background intensity over time'''</center>
+| style="border:none;padding:0in;"| <center>'''After “''ROI_BG_Correction''”'''</center>
+
+|-
+| style="border:none;padding:0in;"| [[Image:image_41.gif]]
+| style="border:none;padding:0in;"| [[Image:image_42.gif]]
+| style="border:none;padding:0in;"| [[Image:image_43.gif]]
+
+|}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+== 7.1 Flat-field correction ==
+=== 7.1.1 Proper correction ===
+This technique is applied to brightfield images. Uneven illumination, dirt/dust on lenses can result in a poor quality image. This can be corrected by acquiring a “flat-field” reference image&nbsp;''with the same intensity illumination as the experiment''. The flat field image should, ideally, be a field of view of the coverslip without any cells/debris. This is often not possible with the experimental coverslip, so a fresh coverslip may be used with approximately the same amount of buffer as the experiment. With fixed-specimens try removing the slide completely
+
+
+
+{| style="border-spacing:0;"
+| colspan="3" | [[Image:image_44.gif]]
+
+|-
+|| <center>'''RAW'''</center>
+|| <center>'''Flat-field'''</center>
+|| <center>&nbsp;'''Processed'''</center>
+
+|}
+
+{| style="border-spacing:0;"
+|| [[Image:image_1.jpg]]
+|| 1.&nbsp;Open both experimental image and flat-field image.
+
+2.&nbsp;“''Select all''” of the flat-field image (hotkey: A) and measure the average intensity (hotkey: M). This value will appear in the results window and represents your k1 value below.
+
+3.&nbsp;Use the “''Image Calculator plus''” plugin (“''Analyse''/''Tools/Calculator plus''”&nbsp;).
+
+4.&nbsp;i1 = experimental image; i2 = flat-field image; k1 = mean flat-field intensity; k2 = 0. Select the "''Divide"&nbsp;''operation.
+
+This can also be done using the “''Process/Image Calculator”''function and ensuring the “32-bit Result” option is checked. You will then need to adjust the brightness and contrast and change the image to 8-bit.
+
+&nbsp;
+
+|}
+=== 7.1.2 Pseudo-correction ===
+
+{| style="border-spacing:0;"
+| colspan="2"  style="border:none;padding:0in;"| [[Image:image_3.gif]]Often it is not possible to obtain a flat-field reference image. However, it is still possible to correct for illumination intensity (although not small defects such as dust) by making a “pseudo-flat field” image by performing a large-kernel filter on the image to be corrected. This is particularly useful for DIC images where there is an intrinsic, and distracting, gradient in illumination.
+
+The menu command “''Process''/''Filters/Pseudo-flat field''&nbsp;” automates this process. You are prompted to enter the kernel size for the mean filter; try the default value of 50 first. You can opt to keep the flat field image open to check whether the kernel is large enough. The objects should not be visible in the flat field image.
+
+This can also be used with stacks for brightfield time-courses that vary in intensity with time. This is time consuming though.
+
+|-
+| style="border:none;padding:0in;"| [[Image:image_4.gif]]
+| style="border:none;padding:0in;"| The first RAW image (top) pseudo-flat field corrected. Here the pseudo-flat field corrects for the uneven illumination but does not correct the dust specks. Compare this with the result of a proper flat-field correction above.
+
+|}
+&nbsp;
+
+=== 7.1.3 FFT background correction ===
+We sometimes see uneven illumination and also horizontal "scan lines" in transmitted light images acquired with confocal microscopes. This background can be corrected using the native FFT bandpass function (''Process/FFT/Bandpass...).''
+
+Experiment with the settings to optimise the filtering.
+
+
+&nbsp;
+
+== 7.2 Masking unwanted regions ==
+=== 7.2.1 Simple masking ===
+Draw around the area you want with one of the ROI tools then use: “''Edit/Clear outside''”''.&nbsp;''This will change area outside the selected region to the background value.
+
+&nbsp;
+
+=== 7.2.2 Complex masking ===
+A more sophisticated masking can be done by “thresholding” the image and subtracting this new binary image from the original.
+
+1.&nbsp;Duplicate the image (if it’s a stack it’s worthwhile generating a “average projection” of a few frames).
+
+2.&nbsp;Threshold this image using the menu command “''Image/Adjust/Threshold''” (hotkey Shift+T).
+
+3.&nbsp;Hit the Auto button and then adjust the sliders until cells are all highlighted red.
+
+4.&nbsp;Then click “''Apply''”. Check the tick box: “black foreground, white background”. You should now have a white and black image with your cells black and background white. If you have white cells and black background, invert the image with “''Edit/Invert''”.
+
+5.&nbsp;This can be smoothed (“''Process/Smooth''”) and the black area enlarged slightly with “''Process/Binary/Dilate''” to give a better mask
+
+6.&nbsp;Using the regular Image calculator “''Process/Image calculator''” subtract this black and white “mask” image from your original image/stack.
+
+&nbsp;
+
+&nbsp;
 
 [[Category:Cookbook]]
