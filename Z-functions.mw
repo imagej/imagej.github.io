@@ -79,6 +79,21 @@ Beyond the display modes, the image may also be analyzed in different ways throu
 
 The z-Aspect may be used to either stretch or compress data along the Z axis while the X and Y axes dimensions remain unchanged. The sampling value can be used to control how many samples are utilized to blend the rendering’s values. Typically, higher sampling values will result in better quality results, though the tradeoff is a slightly slower processing time.
 
+==3D Viewer==
+
+This method is accessed via ''Plugins>3D>3D Viewer''. The 3D Viewer uses a stack of images to visualize it in 3D space as a volume, a surface, or orthoslices. When the plugin is run, you will have the option to choose a name for the new image as well as the display method: volume, orthoslice, surface, surface plot 2D, or multiorthoslices. Color, threshold, sampling factor, channels, and starting time point may also be selected. The starting time point is used to insert the rendering into a movie where the rendering is present starting at the time point specified. At this time point, modification of the image is possible within the viewer. Many of these variables may be updated in the viewer once the rendering is generated.
+
+[[File:3d_viewer_window.png]]
+
+To use the 3D Viewer, an 8-bit or RGB image is required. If used on another type of stack, the plugin will have a prompt for you to choose to convert to these types.
+
+The current display mode may be changed by clicking ''Edit>Display As''. This will let you choose from 'Volume', 'Orthoslice', 'Multi-orthoslice', 'Surface', and 'Surface Plot 2D'. When using the 'Orthoslice' mode, you can right click on the viewer and select 'Adjust Slices' to update the placement of the x, y, and z coordinates. You can also press the 'x', 'y', or 'z' keys in combination with arrow keys to move the slices.  
+
+[[File:3d_viewer_volume.png]]
+
+The “Edit” menu supplies some more options to change the color and transparency of the rendering. ''Edit>Change Color'' can be used to edit the color of the rendering, including an option to apply to all time points. ''Edit>Change Transparency'' may be used for a straightforward way to edit the transparency for all types of displays. ''Edit>Change Channels'' provides the option to select or deselect any combination of the red, green, and blue channels. ''Edit>Adjust Threshold'' can be used for both the 'Volume' and the 'Surface' viewing options.
+
+''Edit>Transformation>Set Transform'' can give more control over the placement of the rendering by specifying rotation origin and rotation axis. You can also use the 3x4 matrix in "Set Transform" to specify the x, y, and z axes of the transformed coordinate system in the first three columns and the vector from the old origin to the new origin in the fourth column.
 == Stack Reslice==
 This generates a “side-view” of a stack along a user defined line. Select part of stack to be axially sectioned using the line ROI tool from the toolbar. Select menu item “''Image>Stacks>Reslice''" after drawing a straight line or rectangle onto an open stack.
 
