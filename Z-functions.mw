@@ -63,15 +63,6 @@ Opacity, transparency, and depth cues may also be specified.
 
 [[File:3d_project_depth_cues.png]]
 
-Try these initial settings:
-
-1. '''''Projection Method: '''''Use “''Brightest point''” method.
-
-2. '''''Axis of Rotation''''': Select “''y-axis''”. There’s a bug which causes errors in x-axis rotation. If you want an x-axis rotation, prior to running the 3D-project command rotate the stack by 90° (''Image/Rotate/Flip 90° right''), 3D-project, the rotate the projection stack back 90° (''Image/Rotate/Flip 90° left''). Keep an eye out in the ImageJ/News web page to see if this bug is corrected.
-
-3. '''''Slice Spacing: '''''This determines you aspect ratio of the stack. Biorad stacks are internally calibrated and this value should be correct – unless you set the wrong objective in the Biorad software during acquisition.
-
-4. '''''Interpolate when slice spacing > 0''''': check this option, although it will slow down the render so for a large data set it may be worthwhile having this “off” while you’re sorting out the settings.
 
 == [[Image:z.htm54.jpg]]10.3 Surface Render ==
 “''Plugins/VolumeJ/VolumeJ'' ”. This is a 3D reconstruction method where the object surface will appear opaque, giving a more “solid” look to the object. See: [http://bij.isi.uu.nl/vj_manual.htm http://bij.isi.uu.nl/vj_manual.htm] and [http://bij.isi.uu.nl/vr.htm http://bij.isi.uu.nl/vr.htm] for updates.
