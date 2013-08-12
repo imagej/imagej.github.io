@@ -2,7 +2,7 @@
 == Stack-Projections ==
 A z-series is generally difficult to represent as a 2-D image for publication purposes. A montage will allow the 3-D dataset to be visualised in 2-D, but results in each frame being very small. There are several ways to "flatten” the 3D stack.
 
-=== Maximum intensity Z-projection: ===
+=== Maximum Intensity Z-projection: ===
 Z Project is a method of analyzing a stack by applying different projection methods to the pixels within the stack. This process may be used to highlight specific data from the stack and is accessed using ''Image>Stacks>Z Project…''
 
 When Z Project opens, it prompts for a start and stop slice, which will determine the range of the stack that will be included in the z projection. The default for these values is the endpoint slices of the stack. 
@@ -29,7 +29,7 @@ The plugin will then apply the selected projection method to subgroups with this
 
 Grouped Z Projector applied to two halves of a stack, resulting in the two slices shown.
 
-=== Sobel filter based Focusing ===
+=== Sobel Filter Based Focusing ===
 The Stack Focuser plugin uses a Sobel edge filter to calculate “best focus”. Try “3” for the kernel value in the first instance. The result is a "height map" showing the focused images. Only works on 8- or 16-bit images. It can result in a “pixelly” image.
 
 [[File:stack_focuser_example.png]]
@@ -38,7 +38,7 @@ Result of the Stack Focuser plugin with '3' as kernel value.
 
 The plugin can be downloaded [http://rsbweb.nih.gov/ij/plugins/stack-focuser.html here].
 
-=== Wavelet-transform based focusing ===
+=== Wavelet-transform Based Focusing ===
 Authors: Daniel Sage, Jesse Berent, Brigitte Forster, Dimitri Van De Ville, Biomedical Imaging Group, Swiss Federal Institute of Technology Lausanne (EPFL), Switzerland, [http://bigwww.epfl.ch/demo/edf/index.html http://bigwww.epfl.ch/demo/edf/index.html].
 
 Superior, but slower, algorithm compared to the Sobel-filter focusing. Menu command “''Plugins>Process>Extended Depth of Field''” plugin uses a wavelet transform (a more sophisticated transform compared to the Fourier transform) to calculate to “best focus”. Run plugin and check "Show 3D View". Works with RGB images. A full description of the plugin and the can be found at the authors' website. A topology image is also generated. Please cite the authors' papers below if you publish work using this plugin.
