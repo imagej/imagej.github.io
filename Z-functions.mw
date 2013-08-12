@@ -64,17 +64,20 @@ Opacity, transparency, and depth cues may also be specified.
 [[File:3d_project_depth_cues.png]]
 
 
-== [[Image:z.htm54.jpg]]10.3 Surface Render ==
-“''Plugins/VolumeJ/VolumeJ'' ”. This is a 3D reconstruction method where the object surface will appear opaque, giving a more “solid” look to the object. See: [http://bij.isi.uu.nl/vj_manual.htm http://bij.isi.uu.nl/vj_manual.htm] and [http://bij.isi.uu.nl/vr.htm http://bij.isi.uu.nl/vr.htm] for updates.
+==Volume Viewer==
+The Volume Viewer (''Plugins>Volume Viewer'')  provides 3D rendering of a stack as well as slices of the XY, YZ, and XZ planes. Volume Viewer also offers more detailed interpolation and viewing methods than some of the other 3D rendering techniques.
 
-&nbsp;
+The different display modes contain many options with which you can view the rendering: 'Slice', 'Slice & Borders', 'Max Projection', 'Projection', and 'Volume'.
 
-&nbsp;
+[[File:volume_viewer_display_modes.png]]
 
-&nbsp;
+For all display modes, the position may be updated by holding the ‘Shift’ key and moving the displayed image with the mouse. Orientation may also be updated by adjusting the rotation values at the bottom of Volume Viewer: these values represent the degree of rotation along each axis, and may be changed to provide a more concise orientation than manual movement with the mouse.  When using the arrows, the numbers may range -360 to 360 degrees, though the range will be interpreted as -180 to 180 when rotating manually. When using the mouse, these values update automatically. The XY, YZ, or XZ planes can also be viewed at any time by using the buttons at the bottom of the viewer.
 
-&nbsp;
+Beyond the display modes, the image may also be analyzed in different ways through the selection of an interpolation method. These are of especial importance for the ‘Slice’, ‘Slice & Borders’, and ‘Volume’ modes. The methods available are ‘Nearest Neighbor’, ‘Trilinear’, ‘Tricubic Smooth’, and ‘Tricubic Sharp’.
 
+[[File:volume_viewer_interpolation_methods.png]]
+
+The z-Aspect may be used to either stretch or compress data along the Z axis while the X and Y axes dimensions remain unchanged. The sampling value can be used to control how many samples are utilized to blend the rendering’s values. Typically, higher sampling values will result in better quality results, though the tradeoff is a slightly slower processing time.
 
 == 10.4 Axial-sectionin[[Image:z.htm55.jpg]]g ==
 This generates a “side-view” of a stack along a user defined line. Select part of stack to be axially sectioned using the line ROI tool from the toolbar. Select menu item:
