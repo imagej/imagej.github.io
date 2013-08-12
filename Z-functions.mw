@@ -79,20 +79,12 @@ Beyond the display modes, the image may also be analyzed in different ways throu
 
 The z-Aspect may be used to either stretch or compress data along the Z axis while the X and Y axes dimensions remain unchanged. The sampling value can be used to control how many samples are utilized to blend the rendering’s values. Typically, higher sampling values will result in better quality results, though the tradeoff is a slightly slower processing time.
 
-== 10.4 Axial-sectionin[[Image:z.htm55.jpg]]g ==
-This generates a “side-view” of a stack along a user defined line. Select part of stack to be axially sectioned using the line ROI tool from the toolbar. Select menu item:
+== Stack Reslice==
+This generates a “side-view” of a stack along a user defined line. Select part of stack to be axially sectioned using the line ROI tool from the toolbar. Select menu item “''Image>Stacks>Reslice''" after drawing a straight line or rectangle onto an open stack.
 
-“''Plugins/Stacks – Z-functions/ReslicePlus'' ”.
+[[File:stack_reslice_example.png]]
 
-You will be prompted for the line width. Enter the width of line you wish to be averaged. An axial-section stack will be generated, each slice representing the axial section of a single-pixel wide line along the line of interest. The title of the new image contains the line co-ordinates and the slice width. The line can be restored using the menu item “''Plugins/ROI/SpecifyLine'' ”.
-
-To average the pseudo-linescan “stack”, select “''Image/Stack/Z projection''” and select the ''Average'' command. A polyline can be used although this will only allow a single pixel slice to be made.
-
-You can also ‘reslice’ your stack using the native function “''Image/Stacks/Reslice''” but this will not return the line coordinates.
-
-&nbsp;
-
-&nbsp;
+From this point, you can generate a new stack by reconstructing the slices along the selection. If you drew a line, the new stack will be from the angle of this new line. You’ll also be able to specify the number of slices to include in the stack and the spacing between the slices. Since you will be specifying both values, it is up to you to determine how many slices are needed to represent the region of interest in a substack. If you drew a rectangle over the initial stack, you won’t be able to specify the number of slices, though you can still control the spacing. The application will then create a new stack depicting the region of interest chosen with the rectangle.
 
 == 10.5 Orthogonal views ==
 “''Plugins/Stacks – Z-functions/Volume View''&nbsp;will allow users to display the xy, x,z and yz views of a selected point in the image (click on desired point). After selecting a point a ''Volume View ''can be generated with the Ortview plugin’s menu command “''Options/Volume View''”. This will open an ''ImageJ'' window[[Image:z.htm56.jpg]] with the volume image.The stack can be smoothed with various algorithms selected from the “''Process''” menu. One of the algorithms is a 2x2x2 smooth. This will take in to account adjacent slices and may be the best way to gently smooth stacks. The smoothed stack can be sent to an ImageJ window for subsequent processing, analysis or export via the OrtView menu command “''File/ExportImages/Export Transaxial Stack''”
