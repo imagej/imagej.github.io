@@ -21,7 +21,7 @@ Automatic particle analysis requires the image to be a “binary” image i.e. b
 |}
 &nbsp;
 
-[[File:manual_thresholding_5.1.1.1_2.jpg|thumb||right|]] For colour images, setting the threshold is done with the command sequence “''Image/Adjust/Color Threshold...''”. The "Thresholding method"&nbsp; option allows the user to choose a thresholding techniqe other than the default. The "Threshold color"&nbsp; option allows the user to choose between Red, White, Black, or B&W as the thresholding color. The "Color space"&nbsp; option allows the user to choose between HSB, RGB, Lab, and YUV. The background of the thresholded image can be made light or dark. The image can be converted to a binary image via the menu command&nbsp;“''Image/Type/8-bit''”.
+[[File:color_thresholding_manual_threshold.png|thumb|right]] For colour images, setting the threshold is done with the command sequence “''Image/Adjust/Color Threshold...''”. The "Thresholding method"&nbsp; option allows the user to choose a thresholding techniqe other than the default. The "Threshold color"&nbsp; option allows the user to choose between Red, White, Black, or B&W as the thresholding color. The "Color space"&nbsp; option allows the user to choose between HSB, RGB, Lab, and YUV. The background of the thresholded image can be made light or dark. The image can be converted to a binary image via the menu command&nbsp;“''Image/Type/8-bit''”.
 
 &nbsp;'''5.1.1.2 Automatic thresholding'''
 
