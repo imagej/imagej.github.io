@@ -99,52 +99,6 @@ This plugin is an alternative to the orthogonal views option. After making a poi
 When running the plugin, it is possible to adjust the aspect ratio of the three axes. The stack is initially assumed to contain cubic voxels, or, a 1:1:1 ratio. These numbers may be modified to change dimensions of the XZ and YZ plane images. The gap between the Z planes may also be updated from its initial value of 1 pixel.
 
 == 10.6 Stereo Pairs and Anaglyphs ==
-=== 10.6.1 Volume rendered-anaglyphs ===
-'''''These plugins are under development and are at an early stage – please send feedback to tonyc@uhnresearch.ca.'''''
-
-This is an adaptation of the methods described at: [http://rsb.info.nih.gov/nih-image/more-docs/confocals.html http://rsb.info.nih.gov/nih-image/more-docs/confocals.html].
-
-The menu command “''Plugins/Stacks – Z-functions/Stereo pair'' ” plugin will create a side by side stereo pair from your stack and also a red-green anaglyph. The plugin will let you specify which of the stereo pair projections you want and also the angle of rotation between the pairs. Typical values would be 6-9°. 
-
-
-<center>'''Stereo Pair'''</center>
-
-
-
-{| style="border-spacing:0;"
-| style="border-top:0.75pt solid #111111;border-bottom:0.05pt solid #111111;border-left:0.75pt solid #111111;border-right:none;padding:0.0194in;"| [[Image:z.htm58.jpg]]
-| style="border-top:0.75pt solid #111111;border-bottom:0.05pt solid #111111;border-left:0.05pt solid #111111;border-right:0.75pt solid #111111;padding:0.0194in;"| [[Image:z.htm59.jpg]]
-
-|-
-| style="border-top:none;border-bottom:0.75pt solid #111111;border-left:0.75pt solid #111111;border-right:none;padding:0.0194in;"| '''Red-Green Anaglyph'''
-| style="border-top:none;border-bottom:0.75pt solid #111111;border-left:0.05pt solid #111111;border-right:0.75pt solid #111111;padding:0.0194in;"| <center>&nbsp;'''Red-Cyan Anaglyph'''</center>
-
-|}
-&nbsp;&nbsp;
-
-=== 10.6.2 Surface rendered-anaglyphs ===
-Surface stereo pairs are simply made with VolumeJ’s stereo pair button. This generates a stereo pair with a 5° difference.[[Image:z.htm60.jpg]] 
-
-These two images can be merged to form an anaglyph using either the menu command “''Plugin/Colour Functions/Colour merge''” or “''Image/Color/RGB merge''”.
-
-The “left eye” needs to be red; the “right eye” cyan or green.
-
-&nbsp;
-
-'''''Surface rendered anaglyph movies '''''can be constructed using VolumeJ following an approach from Harvey Karten and Joel Sheffield. 
-
-1. Surface render your z-series (see Section 10.3 Surface Render) with a “Cine frame increment” of 6-9°.
-
-2. Duplicate the Surface rendered movie.
-
-3. Delete the top slice from the original movie.
-
-4. Delete the last slice from the duplicate movie.
-
-5. Merge the stacks using the menu command “''Image/Color/RGB merge''”.
-
-6. Assign the duplicate stack as red and the original stack as green. For Red-Green anaglyphs set blue to be none; for red-cyan anaglyphs set the blue channel to be the same as the green.
-
-|}
+To create an anaglyph of two images, you can use the Two Shot Anaglyph plugin, found [http://rsbweb.nih.gov/ij/plugins/anaglyph.html here]. This plugin may be used with two RGB Color images of the same dimensions to make a stereo image.
 
 [[Category:Cookbook]]
