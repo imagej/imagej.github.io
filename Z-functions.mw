@@ -1,8 +1,8 @@
 
-== 10.1 Stack-Projections ==
+== Stack-Projections ==
 A z-series is generally difficult to represent as a 2-D image for publication purposes. A montage will allow the 3-D dataset to be visualised in 2-D, but results in each frame being very small. There are several ways to "flatten” the 3D stack.
 
-=== 10.1.1 Maximum intensity Z-projection: ===
+=== Maximum intensity Z-projection: ===
 Z Project is a method of analyzing a stack by applying different projection methods to the pixels within the stack. This process may be used to highlight specific data from the stack and is accessed using ''Image>Stacks>Z Project…''
 
 When Z Project opens, it prompts for a start and stop slice, which will determine the range of the stack that will be included in the z projection. The default for these values is the endpoint slices of the stack. 
@@ -13,7 +13,7 @@ There are six different projection types to choose from: average intensity, maxi
 
 [[File:z_project_types.png|425x314px|The six projection methods clockwise from top left: average intensity, maximum intensity, minimum intensity, median, standard deviation, and sum slices.]]
 
-===10.1.2 Grouped Z Projector===
+===Grouped Z Projector===
 
 This plugin is available for download [http://rsbweb.nih.gov/ij/plugins/group.html here].
 
@@ -23,14 +23,14 @@ The plugin will then apply the selected projection method to subgroups with this
 
 [[File:grouped_z_stack.png|377x245px]]
 
-=== 10.1.3 Sobel filter based Focusing ===
+=== Sobel filter based Focusing ===
 The Stack Focuser plugin uses a Sobel edge filter to calculate “best focus”. Try “3” for the kernel value in the first instance. The result is a "height map" showing the focused images. Only works on 8- or 16-bit images. It can result in a “pixelly” image.
 
 [[File:stack_focuser_example.png]]
 
 The plugin can be downloaded [http://rsbweb.nih.gov/ij/plugins/stack-focuser.html here].
 
-=== 10.1.4 Wavelet-transform based focussing ===
+=== Wavelet-transform based focussing ===
 Authors: Daniel Sage, Jesse Berent, Brigitte Forster, Dimitri Van De Ville, Biomedical Imaging Group, Swiss Federal Institute of Technology Lausanne (EPFL), Switzerland, [http://bigwww.epfl.ch/demo/edf/index.html http://bigwww.epfl.ch/demo/edf/index.html].
 
 Superior, but slower, algorithm compared to the Sobel-filter focussing. Menu command “''Plugins>Process>Extended Depth of Field''” plugin uses a wavelet transform (a more sophisticated transform compared to the Fourier transform) to calculate to “best focus”. Run plugin and check "Show 3D View". Works with RGB images. A full description of the plugin and the can be found at the authors' website. A topology image is also generated. Please cite the authors' papers below if you publish work using this plugin.
@@ -43,7 +43,7 @@ B. Forster, D. Van De Ville, J. Berent, D. Sage, M. Unser , "[http://bigwww.epfl
 
 J. Berent, B. Forster, D. Van De Ville, D. Sage, M. Unser, "[http://bigwww.epfl.ch/demo/edf/poster.pdf Extended depth-of-focus for color images in light microscopy using the wavelet transform,]" Poster at the Autumn Meeting of the Swiss Society of Pharmacology and Toxicology, October 27-28, 2003, Basel, Switzerland.
 
-==10.1.5 Depth Coding==
+==Depth Coding==
 
 One method of preserving some z-information in a 2D image is to 'depth-encode' the stack. A monochrome 3D image can be coloured so that the colour represents the z-depth. Any subsequent projection will retain this z-encoding. An 8 bit stack can be depth encoded with the menu command "''Image>Hyperstacks>Temporal-Color Code''". From there you will be able to choose a LUT as well as the start and end slices from the stack.
 
@@ -55,7 +55,7 @@ Z coded stack:
 
 [[File:z_coded_stack_colored.png]]
 
-== 10.2 Volume render: 3D Project ==
+== Volume render: 3D Project ==
 
 3D project (Image>Stacks>3D Project) creates a 3D rendering from a stack and rotates the resulting object through a range of angles. When using this plugin, you will be prompted for a variety of initial specifications. Based on these values, the program will generate a stack depicting a 360 degree rotation of the resulting 3D projection. There are three projection methods available: nearest point, brightest point, and mean value. 
 
@@ -110,19 +110,19 @@ This generates a “side-view” of a stack along a user defined line. Select pa
 
 From this point, you can generate a new stack by reconstructing the slices along the selection. If you drew a line, the new stack will be from the angle of this new line. You’ll also be able to specify the number of slices to include in the stack and the spacing between the slices. Since you will be specifying both values, it is up to you to determine how many slices are needed to represent the region of interest in a substack. If you drew a rectangle over the initial stack, you won’t be able to specify the number of slices, though you can still control the spacing. The application will then create a new stack depicting the region of interest chosen with the rectangle.
 
-== 10.5 Orthogonal Views ==
+== Orthogonal Views ==
 A straightforward method to visualize 3D renderings is through orthogonal views, accessed via Image>Stacks>Orthogonal Views. This method may be used with a stack to display the XZ and YZ planes at a given point in the 3D image. When Orthogonal Views is opened, windows containing the two planes will dock alongside the original stack, with the intersection of the yellow lines on the stack indicating the point in the stack that is being analyzed. The views in the XZ and YZ planes will update automatically, either as the stack is set to a different slice or the lines are manually adjusted on any of the three windows. 
 
 [[File:orthogonal_views_example.png|292x350px]]
 
-=== 10.5.1 Stack Slicer ===
+=== Stack Slicer ===
 This plugin is available for download [http://rsbweb.nih.gov/ij/plugins/stack-slicer/index.html here].
 
 This plugin is an alternative to the orthogonal views option. After making a point selection on the original stack, you can run the plugin to generate images of the XZ and YZ planes intersecting with this point. By selecting the rotate YZ option, the image of the YZ plane will rotate 90 degrees counterclockwise. 
 
 When running the plugin, it is possible to adjust the aspect ratio of the three axes. The stack is initially assumed to contain cubic voxels, or, a 1:1:1 ratio. These numbers may be modified to change dimensions of the XZ and YZ plane images. The gap between the Z planes may also be updated from its initial value of 1 pixel.
 
-== 10.6 Stereo Pairs and Anaglyphs ==
+==  Stereo Pairs and Anaglyphs ==
 To create an anaglyph of two images, you can use the Two Shot Anaglyph plugin, found [http://rsbweb.nih.gov/ij/plugins/anaglyph.html here]. This plugin may be used with two RGB Color images of the same dimensions to make a stereo image.
 
 [[Category:Cookbook]]
