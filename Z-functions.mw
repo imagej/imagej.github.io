@@ -47,14 +47,21 @@ Z coded stack:
 
 [[File:z_coded_stack_colored.png]]
 
-== 10.2 Volume render ==
-This is a 3D reconstruction method where the object will appear semitransparent.[[Image:z.htm53.jpg]] 
+== 10.2 Volume render: 3D Project ==
 
-Select the z-series stack then run the menu command: "''Plugins/Stacks Z-functions/360° 3D-project". ''If you want the stack to just rock back and forth use the menu command: "''Plugins/Stacks Z-functions/Rocking 3D-project". ''
+3D project (Image>Stacks>3D Project) creates a 3D rendering from a stack and rotates the resulting object through a range of angles. When using this plugin, you will be prompted for a variety of initial specifications. Based on these values, the program will generate a stack depicting a 360 degree rotation of the resulting 3D projection. There are three projection methods available: nearest point, brightest point, and mean value. 
 
-&nbsp;
+[[File:3d_project_window.png]]
 
-Greater control over the settings can be achieved using the menu command: “''Image/Stack/3D-Project''”.
+The 3D project plugin will prompt for the slice interval between slices. Depending on the image properties, this could refer to a particular measurement between slices, such as millimeters, or may default to the number of pixels if a measurement system is not specified. Based on the selection of the slice interval, you can influence the overall shape of the 3D rendering by stretching or compressing the image in the z direction. 
+
+Selection of the initial angle impacts the starting orientation of the volume while the total rotation will determine what views of the volume are possible, as well as the number of slices in the final stack. Also impacting the number of slices included is the rotation angle increment, which determines how much the volume is rotated between two consecutive slices.
+
+The interpolation tool is relevant for images where the spacing between slices is greater than 1.0 pixels. In this case, interpolation uses z-scaling to eliminate the gaps for the final 3D rendering. If checked but the slice spacing is less than 1.0 pixels, the option will be ignored.
+
+Opacity, transparency, and depth cues may also be specified.
+
+[[File:3d_project_depth_cues.png]]
 
 Try these initial settings:
 
