@@ -1,1 +1,68 @@
+{| style="border-spacing:0;"
+| style="border:0.75pt solid #808080;padding:0.0194in;"| = 9  Stack-slice manipulations =
+== 9.1 Slice shuffling/removing/Adding ==
+Once imported, the slices in each stack can be manipulated in many ways. See images below for explanation of some of these functions
+
+Deleting single slice: “''Image/Stacks/Delete Slice”''
+
+Deleting a number of slices: “''Plugins/Stacks - Reducing/Slice remover'' ”
+
+Select the slices to remove: “''Plugins/Stacks- Reducing/Substack maker'' ”
+
+Stack to images/Images to stack: “''Image/Stacks/Stack to images” (Images to Stack…''). “''Images to Stack''” requires images to be the same size “''Plugins/Stack – building/Stack Builder''”&nbsp;works on images of different sizes. The sequence in the stack is determined by the order in which they were opened/created.
+
+Montage: ''Image/Stack/montage…'' Many settings are self explanatory. Ideal for generating a montage of a stack for a lab book.
+
+Reversing stack: “''Plugins/Stacks – Stack Shuffling/Stack reverser”''
+
+Concatenate: “''Plugins/Stacks – Building/Concatenator”''
+
+Stack Combine: “''Plugins/Stacks – Building/Stack Combiner'' ”
+
+(De)Interleave: “''Plugins/Stacks – Shuffling/DeInterleave”'' and “''/Interleave'' ”
+
+Stack Inserter: “''Plugins/Stacks – Building/Stack Inserter”''
+
+Stack Sorter'': ''“''Plugins/Stacks – Shuffling/Stack Sorter'' ”. Control the position of individual slices or groups of slice. Advanced “Insert” functionality.
+
+&nbsp;[[Image:stack.7.jpg]]&nbsp;
+
+&nbsp;
+
+== 9.2 Stack dimension manipulations ==
+Images and stacks can be resized and rotated with native functions or the more sophisticated TransformJ set of plugins from Erik Meijering. These are found in the “''Plugins/TransformJ'' ” menu list.
+
+E. H. W. Meijering, W. J. Niessen, M. A. Viergever, [http://imagescience.bigr.nl/meijering/publications/abstracts/media2001.html Quantitative Evaluation of Convolution-Based Methods for Medical Image Interpolation], ''Medical Image Analysis'', vol. 5, no. 2, June 2001, pp. 111-126.
+
+More details can be found on this web-site: [http://www.imagescience.org/meijering/software/transformj/ http://www.imagescience.org/meijering/software/transformj/]
+
+Spatial calibrations are lost so see the section on how to copy calibrations from one image to another with scaling (12.1.1.1)
+
+
+'''''9.3 Zoomify plugi[[Image:Zoomed.gif]]n'''''
+
+This plugin will generate a movie sequence so that the first frame includes the whole image and the last is the user defined ROI at 100%. The first slice image is the whole of the original&nbsp; image, scaled so that it fits in to the framesize of the ROI, the intermediate images as progressively scaled so that the last frame is 100%. The scale factor is noted as the label slice in the stack.
+
+The user selects an ROI which will become the final frame and is prompted to enter the desire number of frames in the movie.
+
+&nbsp;
+
+'''''9.4 Align slices in stack'''''
+
+The plugin "''Plugins/Stacks - shuffling/Align Slices''" is the [http://bigwww.epfl.ch/thevenaz/stackreg/ StackReg] (plus [http://bigwww.epfl.ch/thevenaz/turboreg/ TurboReg]) plugins from bundled. The plugin takes a stack with misaligned slices and aligns the slices with respect to the current slice. Open stack, scroll to the most centred slice and run the plugin. "Rigid body" method seems to produce the best results for microscopy images.
+
+Based on:
+
+P. Thévenaz, U.E. Ruttimann, M. Unser, "[http://bigwww.epfl.ch/publications/thevenaz9801.html A Pyramid Approach to Subpixel Registration Based on Intensity]," IEEE Transactions on Image Processing, vol. 7, no. 1, pp. 27-41, January 1998.
+
+'''Time series before alignment'''[[Image:stack.1.gif]]
+
+'''After'''[[Image:stack.2.gif]]
+
+&nbsp;
+
+|}
+
+
+
 [[Category:Cookbook]]
