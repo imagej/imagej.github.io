@@ -65,10 +65,6 @@ Crosses are reversibly overlaid on to the image, incrementally changing colour (
 
 This produces the “Point List” dialog allowing you to&nbsp;''Show'',&nbsp;''Save''&nbsp;or&nbsp;''Open''&nbsp;the points’ coordinates. Clicking “''Show''” displays the coordinates in the&nbsp;''Results''&nbsp;window, where they can be saved or copied to the system clipboard. Once finished, you can return to the regular ImageJ toolbar by clicking the&nbsp;&nbsp;button.
 
-&nbsp;
-
-&nbsp;
-
 == 5.3 Particle tracking ==
 '''5.3.1&nbsp;Automatic Tracking'''
 
