@@ -4,7 +4,7 @@ Particle counting can be done automatically if the specimen lends itself to it, 
 == 5.1 Automatic Particle counting ==
 The biggest issue is one referred to as “segmentation” which is to distinguish the object from the background. Once the objects has been successfully segmented, they can then be analysed.
 
-&nbsp;'''RAW Threshold Watershed “AnalyzeParticles” Merge'''
+&nbsp;'''RAW    Threshold    Watershed    “AnalyzeParticles”'''
 [[File:Raw_Threshold_Watershed_AnalyzeParticles2.jpg|center|266*177px]]
 
 === 5.1.1 Setting a threshold ===
