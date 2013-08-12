@@ -66,13 +66,13 @@ When then “''Plugins/Particle counting/Cell Counter''” plugin) is run, a new
 === 5.2.2 Point Picker ===
 “''Plugins/Particle counting/PointPicker''&nbsp;”''.''&nbsp;Running this plugin will change the ImageJ toolbar to the PointPicker toolbar (below).
 
-&nbsp;[[Image:partic1.gif]]
+&nbsp;
 
 &nbsp;
 
-Crosses are reversibly overlaid on to the image, incrementally changing colour (this differs from the''Crosshair&nbsp;''tool which irreversible stamps a point in the image). With the Point Picker tool, crosses can be moved and deleted. Once marking is complete, the cross coordinates can be accessed via the&nbsp;[[Image:partic10.gif]]button.
+Crosses are reversibly overlaid on to the image, incrementally changing colour (this differs from the''Crosshair&nbsp;''tool which irreversible stamps a point in the image). With the Point Picker tool, crosses can be moved and deleted. Once marking is complete, the cross coordinates can be accessed via the&nbsp;button.
 
-[[Image:partic11.jpg]]This produces the “Point List” dialog allowing you to&nbsp;''Show'',&nbsp;''Save''&nbsp;or&nbsp;''Open''&nbsp;the points’ coordinates. Clicking “''Show''” displays the coordinates in the&nbsp;''Results''&nbsp;window, where they can be saved or copied to the system clipboard. Once finished, you can return to the regular ImageJ toolbar by clicking the&nbsp;[[Image:partic12.gif]]&nbsp;button.
+This produces the “Point List” dialog allowing you to&nbsp;''Show'',&nbsp;''Save''&nbsp;or&nbsp;''Open''&nbsp;the points’ coordinates. Clicking “''Show''” displays the coordinates in the&nbsp;''Results''&nbsp;window, where they can be saved or copied to the system clipboard. Once finished, you can return to the regular ImageJ toolbar by clicking the&nbsp;&nbsp;button.
 
 &nbsp;
 
