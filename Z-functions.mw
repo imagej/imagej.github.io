@@ -15,14 +15,23 @@ There are six different projection types to choose from: average intensity, maxi
 
 [[File:z_project_types.png|425x314px|The six projection methods clockwise from top left: average intensity, maximum intensity, minimum intensity, median, standard deviation, and sum slices.]]
 
-=== 10.1.2 Sobel filter based Focusing ===
+===10.1.2 Grouped Z Projector===
+
+This plugin is available for download [http://rsbweb.nih.gov/ij/plugins/group.html here].
+
+The Grouped Z Projector plugin works similarly to Z Project in terms of projection methods. This plugin uses the maximum intensity, average intensity, or sum slices projection method to apply a z projection to a stack of images. Unlike the standard Z Project, this plugin prompts for a group size that must be a factor of the total number of slices in the stack.
+
+The plugin will then apply the selected projection method to subgroups with this number of slices, starting with the first slice. The result of running this plugin is a new stack where each slice is a a projection of a subset of the original stack. This is a useful plugin for analyzing large stacks where the change from slice to slice is still relevant, but not all slices need to be examined individually. If group size is selected as the same as the number of slices in the stack, Grouped Z Projector will evaluate the stack in the same manner as Z Project.
+
+[File:grouped_z_stack]
+=== 10.1.3 Sobel filter based Focusing ===
 The Stack Focuser plugin uses a Sobel edge filter to calculate “best focus”. Try “3” for the kernel value in the first instance. The result is a "height map" showing the focused images. Only works on 8- or 16-bit images. It can result in a “pixelly” image.
 
 [[File:stack_focuser_example.png]]
 
 The plugin can be downloaded [http://rsbweb.nih.gov/ij/plugins/stack-focuser.html here].
 
-=== 10.1.3 Wavelet-transform based focussing ===
+=== 10.1.4 Wavelet-transform based focussing ===
 Authors: Daniel Sage, Jesse Berent, Brigitte Forster, Dimitri Van De Ville, Biomedical Imaging Group, Swiss Federal Institute of Technology Lausanne (EPFL), Switzerland, [http://bigwww.epfl.ch/demo/edf/index.html http://bigwww.epfl.ch/demo/edf/index.html].
 
 Superior, but slower, algorithm compared to the Sobel-filter focussing. Menu command “''Plugins>Process>Extended Depth of Field''” plugin uses a wavelet transform (a more sophisticated transform compared to the Fourier transform) to calculate to “best focus”. Run plugin and check "Show 3D View". Works with RGB images. A full description of the plugin and the can be found at the authors' website. A topology image is also generated. Please cite the authors' papers below if you publish work using this plugin.
@@ -35,7 +44,7 @@ B. Forster, D. Van De Ville, J. Berent, D. Sage, M. Unser , "[http://bigwww.epfl
 
 J. Berent, B. Forster, D. Van De Ville, D. Sage, M. Unser, "[http://bigwww.epfl.ch/demo/edf/poster.pdf Extended depth-of-focus for color images in light microscopy using the wavelet transform,]" Poster at the Autumn Meeting of the Swiss Society of Pharmacology and Toxicology, October 27-28, 2003, Basel, Switzerland.
 
-==10.1.4 Depth Coding==
+==10.1.5 Depth Coding==
 
 One method of preserving some z-information in a 2D image is to 'depth-encode' the stack. A monochrome 3D image can be coloured so that the colour represents the z-depth. Any subsequent projection will retain this z-encoding. An 8 bit stack can be depth encoded with the menu command "''Image>Hyperstacks>Temporal-Color Code''". From there you will be able to choose a LUT as well as the start and end slices from the stack.
 
