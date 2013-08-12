@@ -92,7 +92,9 @@ To generate a reference image:
 
 &nbsp;
 
-== 4.6 Obtaining timestamp data == ''NOTE: MAY BE OUT OF DATE''&nbsp;
+== 4.6 Obtaining timestamp data == 
+''NOTE: MAY BE OUT OF DATE''&nbsp;
+
 === 4.6.1 Zeiss LSM ===
 Once imported via the Zeiss LSM panel, the timestamp data can be extracted with the panel’s ‘Apply t-stamp’ button. This will then ask you if you want the timestamp to be added to the image, or displayed in a text file for saving/pasting to excel etc.
 
