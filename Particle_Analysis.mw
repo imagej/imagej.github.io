@@ -16,7 +16,7 @@ Automatic particle analysis requires the image to be a “binary” image i.e. b
 
 {| style="border-spacing:0;"
 | style="border:none;padding:0in;"| [[Image:partic6.jpg]]
-| style="border:none;padding:0in;"| There are several ways to set thresholds. For monochrome images it is most simply done via thee menu command “''Image/Adjust/Threshold''”. While the threshold is being set, the pixels within the threshold range are displayed in red. The user then changes then “''Apply''” the threshold and the image will be converted to a binary image.
+| style="border:none;padding:0in;"| There are several ways to set thresholds. Monochrome images are most simply thresholded via the menu command “''Image/Adjust/Threshold''”. While the threshold is being set, the pixels within the threshold range are displayed in red. The user can change the threshold settings and then hit “''Apply''”. The threshold will be set and the image will be converted to binary. The user has different options for setting a manual threshold. In the threshold box there is a drop-down menu that is automatically set to default. The user can choose between 15 other threshold techniques for his or her individual data set to find the one that works the best. There is also another drop-down menu that allows the user to choose the colors used when thresholding. Red on top of white is the default. If the dark background box is checked, the foreground color will be switched with the background color. The stack histogram option can also be checked.
 
 |}
 &nbsp;
