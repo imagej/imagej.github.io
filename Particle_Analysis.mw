@@ -30,7 +30,7 @@ One concern with setting a threshold manually is the potential to introduce user
 === 5.1.2 Watershed separation ===
 Objects in a binary image that are slightly overlapping may be separated using the menu command “''Process/Binary/Watershed”.''&nbsp;
 
-The image first needs to be converted to binary (set via thresholding). The black pixels are then replaced with grey pixels of an intensity proportional to their distance from a white pixel (i.e. black pixels close to the edge are light grey, those closer to the ‘middle') are nearer black. This is the Euclidian distance map (EDM). From this the centres of the objects can be calculated.&nbsp;''ultimate eroded points''&nbsp;(UEPs), i.e. points that are equidistance from the edges. These points are then dilated until they meet another black pixel after which a watershed line is drawn.
+The image first needs to be converted to binary (set via thresholding). The black pixels are then replaced with grey pixels of an intensity proportional to their distance from a white pixel (i.e. black pixels close to the edge are light grey, those closer to the ‘middle') are nearer black. This is the Euclidian distance map (EDM). From this the centres of the objects can be calculated. These are the &nbsp;''ultimate eroded points''&nbsp;(UEPs), i.e. points that are equidistance from the edges. These points are then dilated until they meet another black pixel after which a watershed line is drawn.
 
 === 5.1.3 Analyse Particles ===
 Once the image has been segmented, the menu command “''Analyze/Analyze particles...”''&nbsp;can be used to obtain various information regarding particle size and numbers[[Image:partic8.jpg]].
