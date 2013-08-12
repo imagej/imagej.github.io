@@ -45,6 +45,7 @@ This plugin automates many of the steps discussed above. The user can:1. Enter t
 Other options can easily be added on request.
 
 The count, area and average size are returned as a text window and the outlined particles are overlaid on a duplicate of the original image.
+
 [[File:nucleus_counter_2.jpg]]
 
 &nbsp;
