@@ -40,7 +40,7 @@ Set the minimum size and maximum pixel area size to exclude objects that appear 
 The particle analysis can be automated via plugins or macros once the correct threshold value and particle size range has been determined for your objects of interest. See the “''Plugins/Particle Analysis/ Nucleus counter''” plugin and its source code to customize it to your images.&nbsp;
 
 === 5.1.4 Nucleus Counter ===
-This plugin automates many of the steps discussed above. The user can:1. Enter the size range which should be counted[[Image:partic9.jpg]].2. Select the automatic thresholding method. This can be either "Current", "Otsu", Maximum Entropy", "Mixture Modelling" or k-means" clustering. "Current" uses the threshold that has been set manually, see above.3. Opt to perform a background correction.4. Opt to perform a "Smooth" filter.5. Opt to perform a watershed separation.6. Opt to add the particles to ROI manager7. Opt for a summary.
+This plugin automates many of the steps discussed above. The user can:1. Enter the size range which should be counted[[File:nucleus_counter_1.jpg]].2. Select the automatic thresholding method. This can be either "Current", "Otsu", Maximum Entropy", "Mixture Modelling" or k-means" clustering. "Current" uses the threshold that has been set manually, see above.3. Opt to perform a background correction.4. Opt to perform a "Smooth" filter.5. Opt to perform a watershed separation.6. Opt to add the particles to ROI manager7. Opt for a summary.
 
 Other options can easily be added on request.
 
