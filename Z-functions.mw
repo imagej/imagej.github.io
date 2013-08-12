@@ -61,7 +61,7 @@ The interpolation tool is relevant for images where the spacing between slices i
 
 Opacity, transparency, and depth cues may also be specified.
 
-[[File:3d_project_depth_cues.png]]
+[[File:3d_project_depth_cues.png|189x189px]]
 
 
 ==Volume Viewer==
@@ -69,7 +69,7 @@ The Volume Viewer (''Plugins>Volume Viewer'')  provides 3D rendering of a stack 
 
 The different display modes contain many options with which you can view the rendering: 'Slice', 'Slice & Borders', 'Max Projection', 'Projection', and 'Volume'.
 
-[[File:volume_viewer_display_modes.png]]
+[[File:volume_viewer_display_modes.png|400x91px]]
 
 For all display modes, the position may be updated by holding the ‘Shift’ key and moving the displayed image with the mouse. Orientation may also be updated by adjusting the rotation values at the bottom of Volume Viewer: these values represent the degree of rotation along each axis, and may be changed to provide a more concise orientation than manual movement with the mouse.  When using the arrows, the numbers may range -360 to 360 degrees, though the range will be interpreted as -180 to 180 when rotating manually. When using the mouse, these values update automatically. The XY, YZ, or XZ planes can also be viewed at any time by using the buttons at the bottom of the viewer.
 
