@@ -75,7 +75,7 @@ For all display modes, the position may be updated by holding the ‘Shift’ ke
 
 Beyond the display modes, the image may also be analyzed in different ways through the selection of an interpolation method. These are of especial importance for the ‘Slice’, ‘Slice & Borders’, and ‘Volume’ modes. The methods available are ‘Nearest Neighbor’, ‘Trilinear’, ‘Tricubic Smooth’, and ‘Tricubic Sharp’.
 
-[[File:volume_viewer_interpolation_methods.png]]
+[[File:volume_viewer_interpolation_methods.png|279x279px]]
 
 The z-Aspect may be used to either stretch or compress data along the Z axis while the X and Y axes dimensions remain unchanged. The sampling value can be used to control how many samples are utilized to blend the rendering’s values. Typically, higher sampling values will result in better quality results, though the tradeoff is a slightly slower processing time.
 
