@@ -89,7 +89,7 @@ From this point, you can generate a new stack by reconstructing the slices along
 == 10.5 Orthogonal Views ==
 A straightforward method to visualize 3D renderings is through orthogonal views, accessed via Image>Stacks>Orthogonal Views. This method may be used with a stack to display the XZ and YZ planes at a given point in the 3D image. When Orthogonal Views is opened, windows containing the two planes will dock alongside the original stack, with the intersection of the yellow lines on the stack indicating the point in the stack that is being analyzed. The views in the XZ and YZ planes will update automatically, either as the stack is set to a different slice or the lines are manually adjusted on any of the three windows. 
 
-[[File:orthogonal_views_example.png|217x262px]]
+[[File:orthogonal_views_example.png|292x350px]]
 
 === 10.5.1 Stack Slicer ===
 This plugin is available for download [http://rsbweb.nih.gov/ij/plugins/stack-slicer/index.html here].
