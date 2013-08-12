@@ -2,27 +2,27 @@
 ==  Slice shuffling/removing/Adding ==
 Once imported, the slices in each stack can be manipulated in many ways. See images below for explanation of some of these functions
 
-Deleting single slice: “''Image/Stacks/Delete Slice”''
+Deleting single slice: “''Image/Stacks/Delete Slice''"
 
-Deleting a number of slices: “''Plugins/Stacks - Reducing/Slice remover'' ”
+Deleting a number of slices: “''Image/Stacks/Tools/Slice remover'' ”
 
-Select the slices to remove: “''Plugins/Stacks- Reducing/Substack maker'' ”
+Select the slices to remove: “''Image/Stacks/Tools/Make substack'' ”
 
-Stack to images/Images to stack: “''Image/Stacks/Stack to images” (Images to Stack…''). “''Images to Stack''” requires images to be the same size “''Plugins/Stack – building/Stack Builder''”&nbsp;works on images of different sizes. The sequence in the stack is determined by the order in which they were opened/created.
+Stack to images/Images to stack: “''Image/Stacks/Stack to images” (Images to Stack…''). “''Images to Stack''” requires images to be the same size.
 
-Montage: ''Image/Stack/montage…'' Many settings are self explanatory. Ideal for generating a montage of a stack for a lab book.
+Montage: "''Image/Stack/Make Montage…''" Many settings are self explanatory. Ideal for generating a montage of a stack for a lab book.
 
-Reversing stack: “''Plugins/Stacks – Stack Shuffling/Stack reverser”''
+Reversing stack: “''Image/Stacks/Tools/Reverse''"
 
-Concatenate: “''Plugins/Stacks – Building/Concatenator”''
+Concatenate: “''Image/Stacks/Tools/Concatenate''"
 
-Stack Combine: “''Plugins/Stacks – Building/Stack Combiner'' ”
+Stack Combine: “''Image/Stacks/Tools/Combine'' ”
 
-(De)Interleave: “''Plugins/Stacks – Shuffling/DeInterleave”'' and “''/Interleave'' ”
+(De)Interleave: “''Image/Stacks/Tools/DeInterleave”'' and “''/Interleave'' ”
 
-Stack Inserter: “''Plugins/Stacks – Building/Stack Inserter”''
+Stack Inserter: “''Image/Stacks/Tools/Insert''"
 
-Stack Sorter'': ''“''Plugins/Stacks – Shuffling/Stack Sorter'' ”. Control the position of individual slices or groups of slice. Advanced “Insert” functionality.
+Stack Sorter: “''Image/Stacks/Tools/Stack Sorter''”. Control the position of individual slices or groups of slice. Advanced “Insert” functionality.
 
 [[File:stack_slice_manipulations1.png]]
 
