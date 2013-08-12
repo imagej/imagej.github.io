@@ -86,10 +86,17 @@ This generates a “side-view” of a stack along a user defined line. Select pa
 
 From this point, you can generate a new stack by reconstructing the slices along the selection. If you drew a line, the new stack will be from the angle of this new line. You’ll also be able to specify the number of slices to include in the stack and the spacing between the slices. Since you will be specifying both values, it is up to you to determine how many slices are needed to represent the region of interest in a substack. If you drew a rectangle over the initial stack, you won’t be able to specify the number of slices, though you can still control the spacing. The application will then create a new stack depicting the region of interest chosen with the rectangle.
 
-== 10.5 Orthogonal views ==
-“''Plugins/Stacks – Z-functions/Volume View''&nbsp;will allow users to display the xy, x,z and yz views of a selected point in the image (click on desired point). After selecting a point a ''Volume View ''can be generated with the Ortview plugin’s menu command “''Options/Volume View''”. This will open an ''ImageJ'' window[[Image:z.htm56.jpg]] with the volume image.The stack can be smoothed with various algorithms selected from the “''Process''” menu. One of the algorithms is a 2x2x2 smooth. This will take in to account adjacent slices and may be the best way to gently smooth stacks. The smoothed stack can be sent to an ImageJ window for subsequent processing, analysis or export via the OrtView menu command “''File/ExportImages/Export Transaxial Stack''”
+== 10.5 Orthogonal Views ==
+A straightforward method to visualize 3D renderings is through orthogonal views, accessed via Image>Stacks>Orthogonal Views. This method may be used with a stack to display the XZ and YZ planes at a given point in the 3D image. When Orthogonal Views is opened, windows containing the two planes will dock alongside the original stack, with the intersection of the yellow lines on the stack indicating the point in the stack that is being analyzed. The views in the XZ and YZ planes will update automatically, either as the stack is set to a different slice or the lines are manually adjusted on any of the three windows. 
 
-A fuller description of the plugins capabilities can be found in the ''OrtView'' help file (found in the folder: ''C:\ImageJ\Plugins\Stacks – Z&T functions\OrtViewHelp.txt). ''&nbsp;The plugin is easy to use but limited to grey-scale images (8- or 16-bit) due to its nuclear medicine heritage.
+[[File:orthogonal_views_example.png]]
+
+=== 10.5.1 Stack Slicer ===
+This plugin is available for download [http://rsbweb.nih.gov/ij/plugins/stack-slicer/index.html here].
+
+This plugin is an alternative to the orthogonal views option. After making a point selection on the original stack, you can run the plugin to generate images of the XZ and YZ planes intersecting with this point. By selecting the rotate YZ option, the image of the YZ plane will rotate 90 degrees counterclockwise. 
+
+When running the plugin, it is possible to adjust the aspect ratio of the three axes. The stack is initially assumed to contain cubic voxels, or, a 1:1:1 ratio. These numbers may be modified to change dimensions of the XZ and YZ plane images. The gap between the Z planes may also be updated from its initial value of 1 pixel.
 
 == 10.6 Stereo Pairs and Anaglyphs ==
 === 10.6.1 Volume rendered-anaglyphs ===
