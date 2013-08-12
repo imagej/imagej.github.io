@@ -57,11 +57,6 @@ You can use the ImageJ toolbar&nbsp;''Crosshair (mark and count)''&nbsp;tool to 
 When then “''Plugins/Particle counting/Cell Counter''” plugin) is run, a new Image window is generated with the original image plus four buttons along the bottom (Red type, Green type, Blue type and Yellow type). Clicking on a button changes the colour of the marking tool. The results table keeps a tally of the number of each of the cell types marked. Clicking the Results button will generate a summary of the data.
 
 [[File:cell_counter.jpg]]
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 === 5.2.2 Point Picker ===
 “''Plugins/Particle counting/PointPicker''&nbsp;”''.''&nbsp;Running this plugin will change the ImageJ toolbar to the PointPicker toolbar (below).
