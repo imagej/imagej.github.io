@@ -1,7 +1,5 @@
 
-
-{| style="border-spacing:0;"
-| style="border:0.75pt solid #808080;padding:0.0194in;"| == 10.1 Stack-Projections ==
+== 10.1 Stack-Projections ==
 A z-series is generally difficult to represent as a 2-D image for publication purposes. A montage will allow the 3-D dataset to be visualised in 2-D, but results in each frame being very small. There are several ways to "flatten” the 3D stack.
 
 === 10.1.1 Maximum intensity Z-projection: ===
