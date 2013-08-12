@@ -9,9 +9,13 @@ When Z Project opens, it prompts for a start and stop slice, which will determin
 
 [[File:z_project_window.png|right|175x124px|Prompt for Z Project.]]
 
+The prompt for Z Project.
+
 There are six different projection types to choose from: average intensity, maximum intensity, minimum intensity, sum slices, standard deviation, and median. The appropriate projection type will vary depending on the type of data being represented. As seen below, by applying a z transform to an MRI stack using different projection methods, the results can be very different. In the case of the MRI stack, maximum intensity is a preferable method to view the external head rendering while other methods of projection may be used to examine the internal brain components. These remaining methods also have their distinguishing characteristics, as seen by the median projection which gives the clearest rendering with the trade-off of less of filtering out more of the image in the projection.
 
-[[File:z_project_types.png|425x314px|The six projection methods clockwise from top left: average intensity, maximum intensity, minimum intensity, median, standard deviation, and sum slices.]]
+[[File:z_project_types.png|425x314px]]
+
+The six projection methods clockwise from top left: average intensity, maximum intensity, minimum intensity, median, standard deviation, and sum slices.
 
 ===Grouped Z Projector===
 
@@ -23,10 +27,14 @@ The plugin will then apply the selected projection method to subgroups with this
 
 [[File:grouped_z_stack.png|377x245px]]
 
+Grouped Z Projector applied to two halves of a stack, resulting in the two slices shown.
+
 === Sobel filter based Focusing ===
 The Stack Focuser plugin uses a Sobel edge filter to calculate “best focus”. Try “3” for the kernel value in the first instance. The result is a "height map" showing the focused images. Only works on 8- or 16-bit images. It can result in a “pixelly” image.
 
 [[File:stack_focuser_example.png]]
+
+Result of the Stack Focuser plugin with '3' as kernel value.
 
 The plugin can be downloaded [http://rsbweb.nih.gov/ij/plugins/stack-focuser.html here].
 
@@ -61,6 +69,7 @@ Z coded stack:
 
 [[File:3d_project_window.png|225x293px]]
 
+The prompt seen when running 3D project.
 The 3D project plugin will prompt for the slice interval between slices. Depending on the image properties, this could refer to a particular measurement between slices, such as millimeters, or may default to the number of pixels if a measurement system is not specified. Based on the selection of the slice interval, you can influence the overall shape of the 3D rendering by stretching or compressing the image in the z direction. 
 
 Selection of the initial angle impacts the starting orientation of the volume while the total rotation will determine what views of the volume are possible, as well as the number of slices in the final stack. Also impacting the number of slices included is the rotation angle increment, which determines how much the volume is rotated between two consecutive slices.
@@ -71,6 +80,8 @@ Opacity, transparency, and depth cues may also be specified.
 
 [[File:3d_project_depth_cues.png|387x237px]]
 
+At left, an image with surface depth cues at 100% and interior depth cues at 50%. The image on the right has surface depth cues at 100% and interior depth cues at 50%.
+
 
 ==Volume Viewer==
 The Volume Viewer (''Plugins>Volume Viewer'')  provides 3D rendering of a stack as well as slices of the XY, YZ, and XZ planes. Volume Viewer also offers more detailed interpolation and viewing methods than some of the other 3D rendering techniques.
@@ -79,11 +90,15 @@ The different display modes contain many options with which you can view the ren
 
 [[File:volume_viewer_display_modes.png|400x91px]]
 
+Display modes from left to right: slice, slice & borders, max projection, projection, volume.
+
 For all display modes, the position may be updated by holding the ‘Shift’ key and moving the displayed image with the mouse. Orientation may also be updated by adjusting the rotation values at the bottom of Volume Viewer: these values represent the degree of rotation along each axis, and may be changed to provide a more concise orientation than manual movement with the mouse.  When using the arrows, the numbers may range -360 to 360 degrees, though the range will be interpreted as -180 to 180 when rotating manually. When using the mouse, these values update automatically. The XY, YZ, or XZ planes can also be viewed at any time by using the buttons at the bottom of the viewer.
 
 Beyond the display modes, the image may also be analyzed in different ways through the selection of an interpolation method. These are of especial importance for the ‘Slice’, ‘Slice & Borders’, and ‘Volume’ modes. The methods available are ‘Nearest Neighbor’, ‘Trilinear’, ‘Tricubic Smooth’, and ‘Tricubic Sharp’.
 
 [[File:volume_viewer_interpolation_methods.png|279x279px]]
+
+Interpolation methods clockwise from top left: nearest neighbor, trilinear, tricubic sharp, tricubic smooth.
 
 The z-Aspect may be used to either stretch or compress data along the Z axis while the X and Y axes dimensions remain unchanged. The sampling value can be used to control how many samples are utilized to blend the rendering’s values. Typically, higher sampling values will result in better quality results, though the tradeoff is a slightly slower processing time.
 
@@ -93,11 +108,15 @@ This method is accessed via ''Plugins>3D>3D Viewer''. The 3D Viewer uses a stack
 
 [[File:3d_viewer_window.png|201x247px]]
 
+The window seen when 3D Viewer is opened.
+
 To use the 3D Viewer, an 8-bit or RGB image is required. If used on another type of stack, the plugin will have a prompt for you to choose to convert to these types.
 
 The current display mode may be changed by clicking ''Edit>Display As''. This will let you choose from 'Volume', 'Orthoslice', 'Multi-orthoslice', 'Surface', and 'Surface Plot 2D'. When using the 'Orthoslice' mode, you can right click on the viewer and select 'Adjust Slices' to update the placement of the x, y, and z coordinates. You can also press the 'x', 'y', or 'z' keys in combination with arrow keys to move the slices.  
 
 [[File:3d_viewer_volume.png|264x286px]]
+
+Example of the type of volume seen in 3D viewer.
 
 The “Edit” menu supplies some more options to change the color and transparency of the rendering. ''Edit>Change Color'' can be used to edit the color of the rendering, including an option to apply to all time points. ''Edit>Change Transparency'' may be used for a straightforward way to edit the transparency for all types of displays. ''Edit>Change Channels'' provides the option to select or deselect any combination of the red, green, and blue channels. ''Edit>Adjust Threshold'' can be used for both the 'Volume' and the 'Surface' viewing options.
 
@@ -108,12 +127,16 @@ This generates a “side-view” of a stack along a user defined line. Select pa
 
 [[File:stack_reslice_example.png]]
 
+Stack resliced along a vertical axis.
+
 From this point, you can generate a new stack by reconstructing the slices along the selection. If you drew a line, the new stack will be from the angle of this new line. You’ll also be able to specify the number of slices to include in the stack and the spacing between the slices. Since you will be specifying both values, it is up to you to determine how many slices are needed to represent the region of interest in a substack. If you drew a rectangle over the initial stack, you won’t be able to specify the number of slices, though you can still control the spacing. The application will then create a new stack depicting the region of interest chosen with the rectangle.
 
 == Orthogonal Views ==
 A straightforward method to visualize 3D renderings is through orthogonal views, accessed via Image>Stacks>Orthogonal Views. This method may be used with a stack to display the XZ and YZ planes at a given point in the 3D image. When Orthogonal Views is opened, windows containing the two planes will dock alongside the original stack, with the intersection of the yellow lines on the stack indicating the point in the stack that is being analyzed. The views in the XZ and YZ planes will update automatically, either as the stack is set to a different slice or the lines are manually adjusted on any of the three windows. 
 
 [[File:orthogonal_views_example.png|292x350px]]
+
+Example of image seen with orthogonal views.
 
 === Stack Slicer ===
 This plugin is available for download [http://rsbweb.nih.gov/ij/plugins/stack-slicer/index.html here].
