@@ -23,7 +23,7 @@ The Grouped Z Projector plugin works similarly to Z Project in terms of projecti
 
 The plugin will then apply the selected projection method to subgroups with this number of slices, starting with the first slice. The result of running this plugin is a new stack where each slice is a a projection of a subset of the original stack. This is a useful plugin for analyzing large stacks where the change from slice to slice is still relevant, but not all slices need to be examined individually. If group size is selected as the same as the number of slices in the stack, Grouped Z Projector will evaluate the stack in the same manner as Z Project.
 
-[File:grouped_z_stack.png]
+[[File:grouped_z_stack.png]]
 
 === 10.1.3 Sobel filter based Focusing ===
 The Stack Focuser plugin uses a Sobel edge filter to calculate “best focus”. Try “3” for the kernel value in the first instance. The result is a "height map" showing the focused images. Only works on 8- or 16-bit images. It can result in a “pixelly” image.
