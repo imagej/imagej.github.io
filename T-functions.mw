@@ -3,23 +3,10 @@ Often, during acquisition of a time-course, the fluorophore may bleach and the i
 
 '''Corrected intensity = (Intensity at time ''t'') ''÷'' exp<sup>-k×''t''</sup>''' where k = decay constant
 
-New plugin used with Fiji: Imaged/Adjust/Bleach Correction. Has correction methods simple ratio, exponential fit, histogram matching.
+You can use the plugin "''Image/Adjust/Bleach Correction''" with the exponential fitting method. It may be worth performing a background subtraction prior to running the plugin. Simple ratio and histogram matching methods are also options.
 
-If you know the decay constant (k), you can use the “''Plugins/Stacks - T-functions/Bleach Correction'' ” plugin. Run the plugin and enter the decay constant. It may be worth performing a background subtraction prior to running the plugin. Note that the plugin is expecting the k value to be “per-slice” rather than per-second, per-minute etc.
+[[File:bleach_correction_window.png]]
 
-
-
-{| style="border-spacing:0;"
-| style="border-top:0.75pt solid #111111;border-bottom:0.05pt solid #111111;border-left:0.75pt solid #111111;border-right:none;padding:0.0194in;"| [[Image:t.htm1.jpg]]
-| style="border-top:0.75pt solid #111111;border-bottom:0.05pt solid #111111;border-left:0.05pt solid #111111;border-right:none;padding:0.0194in;"| &nbsp;
-| style="border-top:0.75pt solid #111111;border-bottom:0.05pt solid #111111;border-left:0.05pt solid #111111;border-right:0.75pt solid #111111;padding:0.0194in;"| [[Image:t.htm2.jpg]]
-
-|-
-| style="border-top:none;border-bottom:0.75pt solid #111111;border-left:0.75pt solid #111111;border-right:none;padding:0.0194in;"| '''RAW time course'''
-| style="border-top:none;border-bottom:0.75pt solid #111111;border-left:0.05pt solid #111111;border-right:none;padding:0.0194in;"| &nbsp;
-| style="border-top:none;border-bottom:0.75pt solid #111111;border-left:0.05pt solid #111111;border-right:0.75pt solid #111111;padding:0.0194in;"| <center>'''Bleach corrected time course'''</center>
-
-|}
 The k value can be calculated in ImageJ by:
 
 1. Make sure the “''Edit/Options/Plot profile options''” setting “Do not save X-values” is off. 
