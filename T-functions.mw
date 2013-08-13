@@ -30,7 +30,7 @@ There are several drawbacks with the use of single wavelength fluorescent probes
 
 First ensure the image is properly background corrected (7.5 Background correction).
 
-'')Steps can all be implemented, need to find appropriate dataset to make sure this series of steps still works.)''
+''(Steps can all be implemented, need to find appropriate dataset to make sure this series of steps still works.)''
 
 1. Generate an “F0” image by averaging the first few frames of the stack. This can be done with the “''Image/Stacks/Z-project''”[http://www.uhnresearch.ca/facilities/wcif/imagej/t.htm#_ftn1 §] menu item, using the “''Average''” drop-down box option. Select “Start slice” as 1 and “Stop Slice” as 5-10 depending on how many frames you wish to average. Rename the new z-projected image (“''Image/Rename''”) “Fzero”.
 
