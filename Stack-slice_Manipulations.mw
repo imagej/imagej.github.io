@@ -40,7 +40,8 @@ Stack Inserter: “''Image/Stacks/Tools/Insert''"
 *Superimpose the source by specifying the (X,Y) coordinates for the location of the upper left hand corner.
 *No automatic resizing, so the smaller stack should not be used as the destination.
 
-Stack Sorter: “''Image/Stacks/Tools/Stack Sorter''”. Control the position of individual slices or groups of slice. Advanced “Insert” functionality.
+Stack Sorter: “''Image/Stacks/Tools/Stack Sorter''”.
+*Control the position of individual slices or groups of slice. *Advanced “Insert” functionality.
 
 [[File:stack_slice_manipulations1.png]]
 
