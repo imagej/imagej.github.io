@@ -46,13 +46,11 @@ Stack Sorter: “''Image/Stacks/Tools/Stack Sorter''”.
 [[File:stack_slice_manipulations1.png]]
 
 ==  Stack dimension manipulations ==
-Images and stacks can be resized and rotated with native functions or the more sophisticated TransformJ set of plugins from Erik Meijering. These are found in the “''Plugins/TransformJ'' ” menu list.
+Images and stacks can be resized and rotated with native functions or the more sophisticated TransformJ set of plugins from Erik Meijering. These are found in the “''Plugins/Transform/TransformJ'' ” menu list.
 
 E. H. W. Meijering, W. J. Niessen, M. A. Viergever, [http://www.ncbi.nlm.nih.gov/pubmed/11516706 Quantitative Evaluation of Convolution-Based Methods for Medical Image Interpolation], ''Medical Image Analysis'', vol. 5, no. 2, June 2001, pp. 111-126.
 
-More details can be found on this web-site: [http://www.imagescience.org/meijering/software/transformj/ http://www.imagescience.org/meijering/software/transformj/]
-
-Spatial calibrations are lost so see the section on how to copy calibrations from one image to another with scaling (12.1.1.1)
+More details about each plugin in the menu can be found on [http://www.imagescience.org/meijering/software/transformj/ this website.]
 
 == Zoomify plugin[[Image:Zoomed.gif]]==
 
