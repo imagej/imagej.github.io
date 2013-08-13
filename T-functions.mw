@@ -1,11 +1,19 @@
-== Correcting for bleachin[[Image:t.htm4.jpg]]g ==
+== Correcting for bleaching ==
 Often, during acquisition of a time-course, the fluorophore may bleach and the intensity of the image be reduced. This can make it harder to discern events at the end of the sequence. A stretch in contrast at time point 1 may not be adequate at time point 100. The process of bleaching and decrease in image intensity can be fitted with a mono-exponential decay, although it often follows a bi-exponential. A mono-exponential decay is described by the equation:
 
 '''Corrected intensity = (Intensity at time ''t'') ''÷'' exp<sup>-k×''t''</sup>''' where k = decay constant
 
+[[File:bleach_correction_window.png|198x86px]]
+
 You can use the plugin "''Image/Adjust/Bleach Correction''" with the exponential fitting method. It may be worth performing a background subtraction prior to running the plugin. Simple ratio and histogram matching methods are also options.
 
-[[File:bleach_correction_window.png|198x86px]]
+Raw time course
+
+[[File:bleach_raw_data.png]]
+
+Bleach corrected time course
+
+[[File:bleach_corrected_data.png]]
 
 The k value can be calculated in ImageJ by:
 
