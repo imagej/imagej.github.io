@@ -12,15 +12,24 @@ Select the slices to remove: “''Image/Stacks/Tools/Make substack''”
 *Indicate a range or list of slices to include in substack; increments are possible.
 *Option to delete the slices included from the original stack.
 
-Stack to images/Images to stack: “''Image/Stacks/Stack to images” (Images to Stack…''). “''Images to Stack''” requires images to be the same size.
+Stack to images/Images to stack: “''Image/Stacks/Stack to images” (Images to Stack…''). 
+*“''Images to Stack''” requires images to be the same size. If different sized images, will be presented with options to make uniform.
+*When using "Images to Stack", the original images will close once the stack is formed.
 
-Montage: "''Image/Stack/Make Montage…''" Many settings are self explanatory. Ideal for generating a montage of a stack for a lab book.
+Montage: "''Image/Stack/Make Montage…''" 
+*Many settings are self explanatory. 
+*Ideal for generating a montage of a stack for a lab book.
+*Can do reverse operation with "''Image/Stack/Tools/Montage to Stack''", but will need to specify the number of rows and columns to ensure the correct number of slices.
 
 Reversing stack: “''Image/Stacks/Tools/Reverse''"
 
 Concatenate: “''Image/Stacks/Tools/Concatenate''"
+*Stacks must be the same dimension and image type.
+*"Open as a 4D Image" option interprets separate stacks as belonging to a single 4D dataset. For example, concatenating two 25-slice stacks would result in a 25-slice stack with two different time points at each slice.
 
 Stack Combine: “''Image/Stacks/Tools/Combine''”
+*Can choose which stack comes first
+*If a different number of slices in the two stacks, the shorter will have blank slices appended to the end so they are the same length.
 
 (De)Interleave: “''Image/Stacks/Tools/DeInterleave”'' and “''/Interleave''”
 
