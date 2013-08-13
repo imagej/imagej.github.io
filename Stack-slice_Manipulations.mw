@@ -65,19 +65,19 @@ The user selects an ROI which will become the final frame and is prompted to ent
 
 ==Align slices in stack==
 
-The plugin "''Plugins/Stacks - shuffling/Align Slices''" is the [http://bigwww.epfl.ch/thevenaz/stackreg/ StackReg] (plus [http://bigwww.epfl.ch/thevenaz/turboreg/ TurboReg]) plugins from bundled. The plugin takes a stack with misaligned slices and aligns the slices with respect to the current slice. Open stack, scroll to the most centred slice and run the plugin. "Rigid body" method seems to produce the best results for microscopy images.
+The plugins [http://bigwww.epfl.ch/thevenaz/stackreg/ StackReg] (to align a stack) [http://bigwww.epfl.ch/thevenaz/turboreg/ TurboReg] (to align more than one image or stack) can be used for alignment and are located by "''Plugins/Registration/StackReg or TurboReg''" StackReg takes a stack with misaligned slices and aligns the slices with respect to the current slice. Open stack, scroll to the most centred slice and run the plugin. "Rigid body" method seems to produce the best results for microscopy images.
 
 Based on:
 
 P. Thévenaz, U.E. Ruttimann, M. Unser, "[http://bigwww.epfl.ch/publications/thevenaz9801.html A Pyramid Approach to Subpixel Registration Based on Intensity]," IEEE Transactions on Image Processing, vol. 7, no. 1, pp. 27-41, January 1998.
 
-'''Time series before alignment'''[[Image:stack.1.gif]]
+Time series before alignment
 
-'''After'''[[Image:stack.2.gif]]
+[[File:pre_alignment.png]]
 
-&nbsp;
+After
 
-|}
+[[File:after_alignment.png]]
 
 
 
