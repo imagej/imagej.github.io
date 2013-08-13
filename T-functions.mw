@@ -15,27 +15,11 @@ Bleach corrected time course
 
 [[File:bleach_corrected_data.png]]
 
-The k value can be calculated in ImageJ by:
-
-1. Make sure the “''Edit/Options/Plot profile options''” setting “Do not save X-values” is off. 
-
-2. Select a region of the cell or the whole image and plot the decay using the menu command “''Image/Stack/Plot Z-axis profile”''
-
-3. Click the ''Copy'' button of the plot window.
-
-4. Open the curve fitting dialog: “''Analyze/Tools/Curve fitting”''.
-
-5. Delete the default data and paste in your copied data.
-
-6. Select “Exponential” from the option list and click the “Fit” button. 
-
-7. In the ''Log ''window, scroll down to find the value labelled as “-b”, this is your ''k'' value.
-
 Since bleaching is often not mono-exponential, quantification of fluorescence intensities after bleach correction is not possible. This plugin should really only be used to enhance time-course movies for presentation rather than quantification.
 
-[[Image:t.htm5.jpg]]
+[[File:contrast_window.png|right]]
 
-Another way to compensate for bleaching is to use the menu item “''Process/Enhance Contrast''”. This method is quicker to implement than the proper bleach correction above and can be useful for correcting for fluorophore bleaching during a movie '''''if the intensity of the fluorophore is changing only because of bleaching.'' '''Check the “Process Entire Stack” option and the plugin will scan through the stack applying Brightness and the contrast adjustment selected on each slice based on each slice’s histogram (see section 7.2). The intensity values are adjusted so that quantitative intensity measurements are no longer possible. 
+Another way to compensate for bleaching is to use the menu item “''Process/Enhance Contrast''”. This method is quicker to implement than the proper bleach correction above and can be useful for correcting for fluorophore bleaching during a movie '''''if the intensity of the fluorophore is changing only because of bleaching.'' '''Check the “Process Entire Stack” option and the plugin will scan through the stack applying Brightness and the contrast adjustment selected on each slice based on each slice’s histogram. The intensity values are adjusted so that quantitative intensity measurements are no longer possible. 
 
 Again, use this function to enhance movies for presentation, not quantification.
 
