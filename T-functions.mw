@@ -5,7 +5,7 @@ Often, during acquisition of a time-course, the fluorophore may bleach and the i
 
 You can use the plugin "''Image/Adjust/Bleach Correction''" with the exponential fitting method. It may be worth performing a background subtraction prior to running the plugin. Simple ratio and histogram matching methods are also options.
 
-[[File:bleach_correction_window.png]]
+[[File:bleach_correction_window.png|198x86px]]
 
 The k value can be calculated in ImageJ by:
 
