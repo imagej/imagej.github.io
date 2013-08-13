@@ -17,7 +17,7 @@ Bleach corrected time course
 
 Since bleaching is often not mono-exponential, quantification of fluorescence intensities after bleach correction is not possible. This plugin should really only be used to enhance time-course movies for presentation rather than quantification.
 
-[[File:contrast_window.png|right]]
+[[File:contrast_window.png|right|141x142px]]
 
 Another way to compensate for bleaching is to use the menu item “''Process/Enhance Contrast''”. This method is quicker to implement than the proper bleach correction above and can be useful for correcting for fluorophore bleaching during a movie '''''if the intensity of the fluorophore is changing only because of bleaching.'' '''Check the “Process Entire Stack” option and the plugin will scan through the stack applying Brightness and the contrast adjustment selected on each slice based on each slice’s histogram. The intensity values are adjusted so that quantitative intensity measurements are no longer possible. 
 
