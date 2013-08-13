@@ -1,4 +1,5 @@
 =  Stack-slice manipulations =
+''Having difficulty finding zoomify plugin''
 ==  Slice shuffling/removing/Adding ==
 Once imported, the slices in each stack can be manipulated in many ways. See images below for explanation of some of these functions
 
@@ -55,7 +56,7 @@ More details about each plugin in the menu can be found on [http://www.imagescie
 An alternative method for cropping a stack is found with "''Plugins>Stacks>Crop (3D)''" After selecting 'OK', you will be presented with panels of the ZY and XZ planes, as well as the original stack, where you can use the mouse to crop the stack in any of the three directions.
 
 
-== Zoomify plugin[[Image:Zoomed.gif]]==
+== Zoomify plugin==
 
 This plugin will generate a movie sequence so that the first frame includes the whole image and the last is the user defined ROI at 100%. The first slice image is the whole of the original&nbsp; image, scaled so that it fits in to the framesize of the ROI, the intermediate images as progressively scaled so that the last frame is 100%. The scale factor is noted as the label slice in the stack.
 
