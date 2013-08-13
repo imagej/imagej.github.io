@@ -32,8 +32,13 @@ Stack Combine: “''Image/Stacks/Tools/Combine''”
 *If a different number of slices in the two stacks, the shorter will have blank slices appended to the end so they are the same length.
 
 (De)Interleave: “''Image/Stacks/Tools/DeInterleave”'' and “''/Interleave''”
+*Deinterleave will distribute slices between new stacks as indicated by the specified number of channels.
+*Interleave is the reverse process and may be applied to two stacks at a time.
 
 Stack Inserter: “''Image/Stacks/Tools/Insert''"
+*Used with two stacks, one is the source and the other the destination.
+*Superimpose the source by specifying the (X,Y) coordinates for the location of the upper left hand corner.
+*No automatic resizing, so the smaller stack should not be used as the destination.
 
 Stack Sorter: “''Image/Stacks/Tools/Stack Sorter''”. Control the position of individual slices or groups of slice. Advanced “Insert” functionality.
 
