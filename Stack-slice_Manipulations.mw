@@ -3,10 +3,14 @@
 Once imported, the slices in each stack can be manipulated in many ways. See images below for explanation of some of these functions
 
 Deleting single slice: “''Image/Stacks/Delete Slice''"
+*Deletes the first slice in a stack.
 
-Deleting a number of slices: “''Image/Stacks/Tools/Slice remover'' ”
+Deleting a number of slices: “''Image/Stacks/Tools/Slice remover''”
+*Indicate the first and last slices in the range to remove, as well as increment between slices.
 
-Select the slices to remove: “''Image/Stacks/Tools/Make substack'' ”
+Select the slices to remove: “''Image/Stacks/Tools/Make substack''”
+*Indicate a range or list of slices to include in substack; increments are possible.
+*Option to delete the slices included from the original stack.
 
 Stack to images/Images to stack: “''Image/Stacks/Stack to images” (Images to Stack…''). “''Images to Stack''” requires images to be the same size.
 
@@ -16,9 +20,9 @@ Reversing stack: “''Image/Stacks/Tools/Reverse''"
 
 Concatenate: “''Image/Stacks/Tools/Concatenate''"
 
-Stack Combine: “''Image/Stacks/Tools/Combine'' ”
+Stack Combine: “''Image/Stacks/Tools/Combine''”
 
-(De)Interleave: “''Image/Stacks/Tools/DeInterleave”'' and “''/Interleave'' ”
+(De)Interleave: “''Image/Stacks/Tools/DeInterleave”'' and “''/Interleave''”
 
 Stack Inserter: “''Image/Stacks/Tools/Insert''"
 
