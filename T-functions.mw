@@ -1,7 +1,9 @@
 == Correcting for bleachin[[Image:t.htm4.jpg]]g ==
 Often, during acquisition of a time-course, the fluorophore may bleach and the intensity of the image be reduced. This can make it harder to discern events at the end of the sequence. A stretch in contrast at time point 1 may not be adequate at time point 100. The process of bleaching and decrease in image intensity can be fitted with a mono-exponential decay, although it often follows a bi-exponential. A mono-exponential decay is described by the equation:
 
-'''Corrected intensity = (Intensity at time ''t'') ''÷'' exp-k×''t''''' k = decay constant
+'''Corrected intensity = (Intensity at time ''t'') ''÷'' exp<sup>-k×''t''</sup>''' where k = decay constant
+
+New plugin used with Fiji: Imaged/Adjust/Bleach Correction. Has correction methods simple ratio, exponential fit, histogram matching.
 
 If you know the decay constant (k), you can use the “''Plugins/Stacks - T-functions/Bleach Correction'' ” plugin. Run the plugin and enter the decay constant. It may be worth performing a background subtraction prior to running the plugin. Note that the plugin is expecting the k value to be “per-slice” rather than per-second, per-minute etc.
 
