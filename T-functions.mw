@@ -88,7 +88,9 @@ Rapid frame-to-frame changes in intensity (e.g. calcium “puffs” or TMRE “d
 '''''Note: '''''&nbsp;The plugin generates a second result stack. For large memory consuming stacks, run the plugin with the Alt-key down. If the plugin is run with the Alt-key down, the calculation is made on the original stack. Plugin may also be useful to clean up time courses prior to motion tracking.&nbsp;
 
 ==Surface plotting ==
-[[Image:t.htm9.jpg]][[Image:t.htm8.jpg]]Surface plots can be generated in two ways: via the menu command “''Analyze/Surface plot''” or via the plugin “''Plugins/VolumeJ/SurfaceJ'' ”. These functions will surface-plot movies as well as single frame images. Ensure the features you’re interested in are “Contrast stretched” optimally. This can be done using a “Max intensity projection” on the stack. Getting the max and min pixel intensities and applying these to the stack. Remember, do not perform intensity analysis on images that have had their contrast stretched.
+[[File:surface_plot_compare.png]]
+
+[[Image:t.htm8.jpg]]Surface plots can be generated in two ways: via the menu command “''Analyze/Surface plot''” or via the plugin “''Plugins/VolumeJ/SurfaceJ'' ”. These functions will surface-plot movies as well as single frame images. Ensure the features you’re interested in are “Contrast stretched” optimally. This can be done using a “Max intensity projection” on the stack. Getting the max and min pixel intensities and applying these to the stack. Remember, do not perform intensity analysis on images that have had their contrast stretched.
 
 ===“Analyze/Surface plot” settings ===
 When this function is selected, a dialog will appear. Try the settings below first and play with them to optimise the surface plot. The LUT of the final surface plot is taken from the LUT of the image.
