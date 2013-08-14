@@ -28,13 +28,11 @@ Again, use this function to enhance movies for presentation, not quantification.
 
 There are several drawbacks with the use of single wavelength fluorescent probes; some include uneven fluorescence intensity (F) due to cell thickness and cell to cell variation in loading. These can be largely corrected for by normalising fluorescence against resting fluorescence i.e. F0. This does not correct for bleaching and dye loss during the experiment.
 
-First ensure the image is properly background corrected (7.5 Background correction).
+First ensure the image is properly background corrected.
 
-''(Steps can all be implemented, need to find appropriate dataset to make sure this series of steps still works.)''
+1. Generate an “F0” image by averaging the first few frames of the stack. This can be done with the “''Image/Stacks/Z-project''" menu item, using the “''Average Intensity''” drop-down box option. Select “Start slice” as 1 and “Stop slice” as 5-10 depending on how many frames you wish to average. Rename the new z-projected image (“''Image/Rename''”) “Fzero”.
 
-1. Generate an “F0” image by averaging the first few frames of the stack. This can be done with the “''Image/Stacks/Z-project''”[http://www.uhnresearch.ca/facilities/wcif/imagej/t.htm#_ftn1 §] menu item, using the “''Average''” drop-down box option. Select “Start slice” as 1 and “Stop Slice” as 5-10 depending on how many frames you wish to average. Rename the new z-projected image (“''Image/Rename''”) “Fzero”.
-
-2. Open the “Image Calculator Plus” via “''Process/Image Calculator''”. 
+2. Open the “Image Calculator” via “''Process/Image Calculator''”. 
 
 3. Image 1 = Original stack 
 
@@ -42,25 +40,23 @@ First ensure the image is properly background corrected (7.5 Background correcti
 
 5. Operation = “Divide”
 
-6. Select “32-bit Result” and “Create New Window”
+6. Select "32-bit Result" and “Create New Window”. Choose "yes" to process all images in the stack.
 
 7. Rename this result window (“''Image/Rename''”) FdivF0.
 
-8. The maximum and minimum intensity in the stack can be determined with the “''Analyze/Tools/Stack Histogram'' ” plugin.
+8. The maximum and minimum intensity in the stack can be determined with the “''Analyze/Histogram'' ” plugin, using the stack histogram option.
 
-9. Using the Brightness and Contrast (See section 4.1) dialog set the maximum and minimum to these values.
+9. Using the Brightness and Contrast dialog set the maximum and minimum to these values.
 
 10. Convert the 32-bit stack to 8-bit (“''Image/Type/8-bit”'').
 
-11. The Images in FdivF0 will probably have a noisy background between the cells and need to be cleaned up. Using your original stack, create a mask of the cells. This is done by first thresholding the original; stack (“''Image/Adjust/Threshold''”). Hit the Auto button and then adjust the sliders until cells are all highlighted red. Then click “''Apply''”. Check the tick box: “black foreground, white background”. You should now have a white and black image with your cells black and background white. If you have white cells and black background, invert the image with “''Edit/Invert''”.
+11. The Images in FdivF0 will probably have a noisy background between the cells and need to be cleaned up. Using your original stack, create a mask of the cells. This is done by first thresholding the original stack (“''Image/Adjust/Threshold''”). Hit the Auto button and then adjust the sliders until cells are all highlighted red. Then click “''Apply''”. Check the tick box: “black foreground, white background”. You should now have a white and black image with your cells black and background white. If you have white cells and black background, invert the image with “''Edit/Invert''”.
 
 12. Using the Image calculator “''Process/Image calculator''” to subtract this black and white stack from your FdivF0 stack. 
 
 13. Pseudocolour to taste.
 
 This process could relatively easily be automated via a plugin or macro. However, due to multiple user-defined steps (i.e. how many frames for the Z-projection, the thresholding of the original stack for the mask, whether it’s better to correct for bleaching before thresholding the stack) I have not done so.
-
-Much of this is automated in the plugin "''Plugins/Stacks - T-functions/F divided by F0''".
 
 ==Delta-F ==
 
