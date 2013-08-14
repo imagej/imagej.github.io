@@ -2,6 +2,8 @@
 == Introduction ==
 These two plugins from Bob Dougherty are used together to firstly generate an image-stack of the point-spread function (PSF). The second plugin uses this PSF image stack along with your sample-stack with the Iterative Deconvolution 3D plugin. Image right is a single slice taken from a stack before and after deconvolution using these plugins. 
 
+[[File:deconvoluted_data.png]]
+
 ''See the plugins' homepages for more details:'' [http://www.optinav.com/Diffraction-PSF-3D.htm Diffraction PSF 3D] & [http://www.optinav.com/Iterative-Deconvolve-3D.htm Iterative Deconvolution 3D]
  
 == Generating a PSF image stack ==
