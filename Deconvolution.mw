@@ -1,6 +1,6 @@
 = Deconvolution =
 == Introduction ==
-These two plugins from Bob Dougherty are used together to firstly generate an image-stack of the point-spread function (PSF). The second plugin uses this PSF image stack along with your sample-stack with the Iterative Deconvolution 3D plugin. Image right is a single slice taken from a stack before and after deconvolution using these plugins. 
+These two plugins from Bob Dougherty are used together to firstly generate an image-stack of the point-spread function (PSF). The second plugin uses this PSF image stack along with your sample-stack with the Iterative Deconvolution 3D plugin. The image below is a single slice taken from a stack before and after deconvolution using these plugins. 
 
 [[File:deconvoluted_data.png]]
 
