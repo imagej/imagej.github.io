@@ -1,22 +1,19 @@
-{| style="border-spacing:0;"
-| style="border:0.75pt solid #808080;padding:0.0194in;"| = 12 Deconvolution =
+= Deconvolution =
 == Introduction ==
 These two plugins from Bob Dougherty are used together to firstly generate an image-stack of the point-spread function (PSF). The second plugin uses this PSF image stack along with your sample-stack with the Iterative Deconvolution 3D plugin. Image right is a single slice taken from a stack before and after deconvolution using these plugins. 
 
-
-== See the plugins' homepages for more details: [http://www.uhnresearch.ca/facilities/wcif/software/Colocalisation_Threshold.doc Diffraction PSF 3D] & [http://www.optinav.com/ImageJplugins/Iterative-Deconvolve-3D.htm Iterative Deconvolution 3D] ==
-== 12.1 Generating a PSF image stack ==
+''See the plugins' homepages for more details:'' [http://www.optinav.com/Diffraction-PSF-3D.htm Diffraction PSF 3D] & [http://www.optinav.com/Iterative-Deconvolve-3D.htm Iterative Deconvolution 3D]
+ 
+== Generating a PSF image stack ==
 Run: "''Plugins/Deconvolution/Diffraction PSF 3D''". A dialog will appear. Most of these are self explanatory. The width, height and depth values are for the PSF image, not your image stack. The correct values will need to be empirically determined.
 
-
-== 12.2 Iterative deconvolution ==
+== Iterative deconvolution ==
 Run: "''Plugins/Deconvolution/Iterative Deconvolve 3D''". 
 
 [[Image:12_dec3.jpg]]Select the image and PSF stack. 
 
 Start with the default values. Set iterations to equal 10 initially.
 
-|}
 
 
 
