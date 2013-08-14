@@ -7,7 +7,9 @@ These two plugins from Bob Dougherty are used together to firstly generate an im
 ''See the plugins' homepages for more details:'' [http://www.optinav.com/Diffraction-PSF-3D.htm Diffraction PSF 3D] & [http://www.optinav.com/Iterative-Deconvolve-3D.htm Iterative Deconvolution 3D]
  
 == Generating a PSF image stack ==
-Run: "''Plugins/Deconvolution/Diffraction PSF 3D''". A dialog will appear. Most of these are self explanatory. The width, height and depth values are for the PSF image, not your image stack. The correct values will need to be empirically determined.
+Run the Diffraction PSF 3D plugin. A dialog will appear. Most of these are self explanatory. The width, height and depth values are for the PSF image, not your image stack. The correct values will need to be empirically determined.
+
+[[File:diffraction_psf_window.png]]
 
 == Iterative deconvolution ==
 Run: "''Plugins/Deconvolution/Iterative Deconvolve 3D''". 
