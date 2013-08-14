@@ -53,7 +53,7 @@ J. Berent, B. Forster, D. Van De Ville, D. Sage, M. Unser, "[http://bigwww.epfl.
 
 ==Depth Coding==
 
-One method of preserving some z-information in a 2D image is to 'depth-encode' the stack. A monochrome 3D image can be coloured so that the colour represents the z-depth. Any subsequent projection will retain this z-encoding. An 8 bit stack can be depth encoded with the menu command "''Image>Hyperstacks>Temporal-Color Code''". From there you will be able to choose a LUT as well as the start and end slices from the stack.
+One method of preserving some z-information in a 2D image is to 'depth-encode' the stack. A monochrome 3D image can be colored so that the color represents the z-depth. Any subsequent projection will retain this z-encoding. An 8 bit stack can be depth encoded with the menu command "''Image>Hyperstacks>Temporal-Color Code''". From there you will be able to choose a LUT as well as the start and end slices from the stack.
 
 Original stack:
 
