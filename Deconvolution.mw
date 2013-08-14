@@ -9,7 +9,7 @@ These two plugins from Bob Dougherty are used together to firstly generate an im
 == Generating a PSF image stack ==
 Run the Diffraction PSF 3D plugin. A dialog will appear. Most of these are self explanatory. The width, height and depth values are for the PSF image, not your image stack. The correct values will need to be empirically determined.
 
-[[File:diffraction_psf_window.png]]
+[[File:diffraction_psf_window1.png]]
 
 == Iterative deconvolution ==
 Run: "''Plugins/Deconvolution/Iterative Deconvolve 3D''". 
