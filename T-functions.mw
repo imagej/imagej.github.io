@@ -64,7 +64,7 @@ This process could relatively easily be automated via a plugin or macro. However
 
 [[File:delta_f_raw.png]]
 [[File:delta_f_corrected.png]]
-
+'''''Raw'''''               '''''Delta-F up'''''
 
 Rapid frame-to-frame changes in intensity (e.g. calcium “puffs” or TMRE “depolarisations”) can best be illustrated by performing subtracting each frame from the previous/next. 
 
