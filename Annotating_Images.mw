@@ -25,7 +25,7 @@ The spatial calibration can be reapplied in three ways: manually via the “''Im
 # Click the OK button.
 # Another dialog will open giving you the opportunity to enter a value by which the receiving image has been scaled.
 
-[[File:copy_pixel_size_values.png]]
+[[File:copy_pixel_size_values.png|180x240px]]
 
 ====“Set Scale” ====
 If you know the size of a feature (previously applied scale bar for instance) you can use this command to apply a calibration.
