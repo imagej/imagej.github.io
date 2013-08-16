@@ -91,18 +91,15 @@ Adding text to a stack is a slightly different process. You can draw a text box 
 
 === Adding timestamps ===
 
-1. Draw a rectangular ROI at the location and of the approximate size of the desired counter. The text will, by default be of the same height as the ROI and aligned to its left edge. Ensure it is not too close to the edge of the image. This will result in a bar underneath the counter e.g. 
+1. Open the time stamper through "''Image/Stacks/Time Stamper''". From here, you can specify the location, interval, format, and other properties of the time stamp.
 
- [[Image:annota66.gif]]
+[[File:time_stamper.png]]
 
+2. Alternatively, you can also draw a rectangular ROI at the location and approximate size of the desired counter. The text will, by default, be of the same height as the ROI and will be aligned to its left edge. Note that if the rectangle is drawn on the right side of the image, the text could be cut off on the right if the size is too large.
 
-2. Run the “''Plugins/Movies/Time Stamper''” .
+Remember: bigger text will typically look smoother and the timestamp will be easier to read. It may be worth changing it to a consistent value for all of your movies.
 
-3. Enter appropriate settings. The X and Y location and font size are taken from the ROI and can be changed at this point. 
-
-Remember, the bigger the text, the smoother it will look and the easier the timestamp will be to read. Bigger is better. It may be worth changing it to a consistent value for all your movies. 
-
-Also, bear in mind that the interval needn’t be “time". The Time Stamper plugin also can be used to add “z-axis depths” to z-stacks and “angle of rotation” to rotating volume movies ( ° = Alt+247; µ = Alt+230).
+Also, bear in mind that the interval needn't be "time". The Time Stamper can also be used to add "z-axis depths" to z-stacks and "angle of rotation" to rotating volume movies (° = Alt+247; µ = Alt+230).
 
 === Adding event marker to movie ===
 The “''Plugins/Movies/Event Stamper” ''plugin can be used to add text to a movie for a designated number of frames, e.g. “Agonist ON”. This is simply done by running the ''Event Stamper ''plugin setting the desired text in the “Text” box, enter start frame and end frame and click OK. The text size and location is taken from the current ROI and can be changed once the dialog is opened. 
