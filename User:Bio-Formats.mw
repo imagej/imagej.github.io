@@ -1,1 +1,16 @@
-This is a placeholder user account which corresponds to the [http://sites.imagej.net/Bio-Formats/ Bio-Formats update site]. See also [[List of update sites]].
+This account is used to manage the [http://sites.imagej.net/Bio-Formats/ Bio-Formats update site]. See also [[List of update sites]].
+
+To activate it in your Fiji setup:
+
+* [[Update_Sites|''Help>Update Fiji'']]
+* Click ''Manage update sites''
+* Check ''Bio-Formats daily builds''
+* Click ''Close''
+
+Five files should appear on the list with ''Status/Action'' of ''Update it''.
+
+* Click ''Apply changes''
+* Restart Fiji
+* ''Help>About Plugins>LOCI Plugins...''
+
+The dialog should now show a build date of ''14 August 2013'' or later.
