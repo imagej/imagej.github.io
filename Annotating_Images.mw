@@ -59,7 +59,9 @@ Firstly, save your images before adding text. Many things can go wrong here and 
 
 Text color is set via the color picker button on the tool bar. Double-click on it to pull up the palette and select a color – usually black or white. 
 
-Pseudocolored images should be converted to RGB prior to adding text. The text is “anti-aliased”. This means that instead of being completely white in color, some pixels on the curved edges of letters are averaged with neighbouring pixels to be gray, giving a smoother appearance to the text. ->
+Pseudocolored images should be converted to RGB prior to adding text. The text is “anti-aliased”. This means that instead of being completely white in color, some pixels on the curved edges of letters are averaged with neighbouring pixels to be gray, giving a smoother appearance to the text.
+
+[[File:aliased_text.png]]
 
 The text looks better, however, it means that some of the text’s pixels are not gray-scale value 255 and so some LUTs will have them displayed as yellow/orange/green thereby loosing the nice smoothing effect of the antialiasing e.g. with the Hot Green Blue LUT the counter on frame 1 looks like->
 
