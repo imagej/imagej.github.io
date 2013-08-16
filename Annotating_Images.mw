@@ -10,7 +10,7 @@ Biorad PIC, Noran MOV and Zeiss LSM confocal image files (''Leica and Olympus?''
 
 If the files have no calibration, you need to acquire images of a stage micrometer ''with the same settings ''(camera binning, objective, confocal zoom and frame size etc.) as your experiment. The calibration can be applied using the “''Plugins/Spatial calibration/Set scale''” command (see below) from the MBF plugins collection. The spatial calibration can be found (and set) in the “''Image/Properties''” dialog. Also look at the “''Microscope scale'' ” plugin which can be customised to apply spatial calibrations from a drop-down box of objectives (http://rsb.info.nih.gov/ij/plugins/microscope-scale.html).
 
-[[File:set_scale_plugin.png]]
+[[File:set_scale_plugin.png|179x200px]]
 
 '''Many image processing functions can cause the spatial calibration to be lost'''. If the final image has lost its calibration open original file and access the spatial calibration via: “''Image/Properties''”. Copy these values to the “''Image/Properties''” of your final, processed image. Replacing the word “micron” with “um” will automatically convert to “µm”. 
 
