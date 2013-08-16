@@ -120,6 +120,6 @@ Also, bear in mind that the interval needn’t be “time". The Time Stamper plu
 === Adding event marker to movie ===
 The “''Plugins/Movies/Event Stamper” ''plugin can be used to add text to a movie for a designated number of frames, e.g. “Agonist ON”. This is simply done by running the ''Event Stamper ''plugin setting the desired text in the “Text” box, enter start frame and end frame and click OK. The text size and location is taken from the current ROI and can be changed once the dialog is opened. 
 
-[http://www.uhnresearch.ca/facilities/wcif/imagej/annotating_images.htm#_ftnref2 [2]] This plugin simply points to the native menu command “''Analyze/Tools/Scale bar…”. ''It is included here just to keep the spatial calibration functions in one place.
+
 
 [[Category:Cookbook]]
