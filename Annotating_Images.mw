@@ -18,7 +18,7 @@ The spatial calibration can be reapplied in three ways: manually via the “''Im
 
 ==== “Copy-calibration”  ====
 
-[[Image:annota61.jpg]]
+[[File:copy_pixel_size.png]]
 # Re-open the original image with the calibration
 # Run the “''Plugins/Spatial Calibration/Copy Pixel Size''” plugin. 
 # In the “''from” ''drop-down box select the original image; in the “''to”'' box, select your processed image. 
