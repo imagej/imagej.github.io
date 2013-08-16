@@ -14,7 +14,7 @@ If the files have no calibration, you need to acquire images of a stage micromet
 
 '''Many image processing functions can cause the spatial calibration to be lost'''. If the final image has lost its calibration open original file and access the spatial calibration via: “''Image/Properties''”. Copy these values to the “''Image/Properties''” of your final, processed image. Replacing the word “micron” with “um” will automatically convert to “µm”. 
 
-The spatial calibration can be reapplied in three ways: manually via the “''Image/Properties''” dialog; via the “''Plugins/Spatial calibration/Copy Pixel Size'' ” plugin; or via the “''Plugins/Spatial calibration/Set scale” ''command
+The spatial calibration can be reapplied in three ways: manually via the “''Image/Properties''” dialog; via the “''Plugins/Spatial calibration/Copy Pixel Size'' ” plugin that applies pixel size of one image to a second image; or via the “''Plugins/Spatial calibration/Set scale” ''command. ''Set scale'' and ''Copy Pixel Size'' are both included in the MBF plugins.
 
 ==== “Copy-calibration”  ====
 
