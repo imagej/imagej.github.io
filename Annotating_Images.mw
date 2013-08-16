@@ -78,35 +78,16 @@ To avoid this, convert the pseudocolored image from its current format (i.e. ''8
 Text on converted image.
 
 === Adding Text/Line/Box  ===
-====  Adding to a single image ====
+
 Adding a text line or box to a single frame should be done in a package such as CorelDRAW, Adobe Illustrator, Deneba Canvas etc. However, there are times when lines and boxes are required, e.g. to reference an analyzed/sectioned region.
 
-Drawing of lines/boxes is achieved by first ''selecting'' the desired line/box in the image with the line/rectangle ROI tool from the toolbar or defining the box via “''Plugins/Specify ROI…''”. The line/box can be resized here to the desired size/shape with the small square handles on the ROI. The line/box can then be stamped in to the image through "''Edit/Draw''". This will add the box/line to a single frame, the color determined by the color picker toolbar button and the width in pixels defined in “''Edit/Options/Line width''”. The line width must be determined before the it is drawn on the image. 
+Drawing of lines/boxes is achieved by first ''selecting'' the desired line/box in the image with the line/rectangle ROI tool from the toolbar or defining the box via “''Plugins/Specify ROI…''”. The line/box can be resized here to the desired size/shape with the small square handles on the ROI. The line/box can then be stamped in to the image through "''Edit/Draw''" or shortcut "Ctrl+d". This will add the box/line to a single frame, the color determined by the color picker toolbar button and the width in pixels defined in “''Edit/Options/Line width''”. The line width must be determined before the it is drawn on the image. 
 
-Adding text is done by the toolbar’s text button. Click the toolbar, click the image, and write the desired text. The font size and style are both set by double clicking the toolbar-text button and the color is determined by the color picker toolbar button. Antialiasing can be turned on/off via the menu item “''Edit/Options/Fonts''” and unchecking the "Smooth" option (although this option does not affect the `Stamper plugins which have antialiasing on permanently). The text is stamped in to the image by right clicking and selecting “''Draw''”.
+Adding text is done by the toolbar’s text button. Click the toolbar, click the image, and write the desired text. The font size and style are both set by double clicking the toolbar-text button and the color is determined by the color picker toolbar button. Antialiasing can be turned on/off via the menu item “''Edit/Options/Fonts''” and unchecking the "Smooth" option (although this option does not affect the `Stamper plugins which have antialiasing on permanently). The text is stamped in to the image through the same methods of drawing on a box or line.
 
-==== Adding to movie-stack ====
-Drawing/writing on a stack only adds the drawn object to the current slice*. If you want the text/box/line to be added to an entire “movie stack” you need to create a new single frame image add the text/box/line to this and then ''add'' this single frame to the “movie stack”. This is best done by:
+It is possible to add a line, box, or text to each slice in a stack. After adding to a single slice and selecting "''Edit/Draw''", you will be asked if  you want to apply the selection to every slice. Keep in mind that there is no undo option for this operation.
 
-1. Duplicate a frame from the “movie stack” (“''Image/Duplicate''” and disable “''Duplicate entire stack''” option). 
-
-2. Rename (“''Image/Rename''”) “text/box/line image”
-
-3. Select the whole image (“''Edit/Selection/Select all''” or Shift-A)
-
-4. Edit/Clear
-
-5. Go to the “movie stack” and ''select'' the desired text/box/line (see ''6.7.2.1 ''above).
-
-6. Go to the “text/box/line image” 
-
-7. Restore the selection by “''Edit/Selection/Restore''” – or Shift-E.
-
-8. ''Draw ''the selection (right click the selection and select ''Draw'')
-
-9. Use the Image Calculator (“''Image/Calculator''”) to add the “text/box/line image” to the “movie image”.
-
-*This may become redundant as ImageJ develops. Keep a look out in the ImageJ/News web page.
+Adding text to a stack is a slightly different process. You can draw a text box by following the same steps, but on a stack, keyboard shortcut "Ctrl+b" will overlay the text on the current slice, while shortcut "Ctrl+d" will draw the text on every slice of the stack.
 
 === Adding timestamps ===
 
