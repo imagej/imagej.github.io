@@ -63,17 +63,19 @@ Pseudocolored images should be converted to RGB prior to adding text. The text i
 
 [[File:aliased_text.png]]
 
-The text looks better, however, it means that some of the text’s pixels are not gray-scale value 255 and so some LUTs will have them displayed as yellow/orange/green thereby loosing the nice smoothing effect of the antialiasing e.g. with the Hot Green Blue LUT the counter on frame 1 looks like->
+The text looks better, however, it means that some of the text’s pixels are not gray-scale value 255 and so some LUTs will have them displayed as yellow/orange/green thereby loosing the nice smoothing effect of the antialiasing.
+
+[[File:antialiased_lut.png]]
+
+Frame 1 counter text when used with Hot Green LUT.
 
 If you use the red or blue LUT then the text will appear red or blue even though you selected the text to be “white” via the color picker.
 
-To avoid this, convert the pseudocolored image from its current format (i.e. ''8-bit color'') to an RGB image with “''Image/Type/RGB color''” before adding the text. e.g. in the example above->
+To avoid this, convert the pseudocolored image from its current format (i.e. ''8-bit color'') to an RGB image with “''Image/Type/RGB color''” before adding the text.
 
-[[Image:annota1.gif]]
+[[File:corrected_lut.png]]
 
-[[Image:annota64.gif]]
-
-[[Image:annota65.gif]]
+Text on converted image.
 
 === Adding Text/Line/Box  ===
 ====  Adding to a single image ====
