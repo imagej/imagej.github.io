@@ -28,12 +28,14 @@ The spatial calibration can be reapplied in three ways: manually via the “''Im
 [[File:copy_pixel_size_values.png|180x240px]]
 
 ====“Set Scale” ====
-If you know the size of a feature (previously applied scale bar for instance) you can use this command to apply a calibration.
+If you know the size of a feature (for instance, a previously applied scale bar) you can use this command to apply a calibration.
 
 # Using the line selection tool, draw a ling along the length of the feature/scale bar.
-# Run the menu command “''Plugins/Spatial calibration/Set scale''”[http://www.uhnresearch.ca/facilities/wcif/imagej/annotating_images.htm#_ftn1 [1]].
+# Run the menu command “''Plugins/Spatial calibration/Set scale''”
 # Enter the dimensions of the object/scale bar in the “''known distance”'' box and set the units in the ''Unit of length'' box.
 # Do not check ''Global'' unless you wish all your images to have this calibration! Click OK.
+
+This simple plugin simply points to the native menu command “''Analyze/Set scale…”'' and is included here to keep the spatial calibration functions in one place.
 
 === Adding scale-bar  ===
 
@@ -112,6 +114,6 @@ Also, bear in mind that the interval needn’t be “time". The Time Stamper plu
 === Adding event marker to movie ===
 The “''Plugins/Movies/Event Stamper” ''plugin can be used to add text to a movie for a designated number of frames, e.g. “Agonist ON”. This is simply done by running the ''Event Stamper ''plugin setting the desired text in the “Text” box, enter start frame and end frame and click OK. The text size and location is taken from the current ROI and can be changed once the dialog is opened. 
 
-[http://www.uhnresearch.ca/facilities/wcif/imagej/annotating_images.htm#_ftnref1 [1]] This simple plugin simply points to the native menu command “''Analyze/Set scale…”'' and is included here to keep the spatial calibration functions in one place.[http://www.uhnresearch.ca/facilities/wcif/imagej/annotating_images.htm#_ftnref2 [2]] This plugin simply points to the native menu command “''Analyze/Tools/Scale bar…”. ''It is included here just to keep the spatial calibration functions in one place.
+[http://www.uhnresearch.ca/facilities/wcif/imagej/annotating_images.htm#_ftnref2 [2]] This plugin simply points to the native menu command “''Analyze/Tools/Scale bar…”. ''It is included here just to keep the spatial calibration functions in one place.
 
 [[Category:Cookbook]]
