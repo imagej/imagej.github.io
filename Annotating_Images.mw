@@ -53,7 +53,7 @@ This plugin simply points to the native menu command “''Analyze/Tools/Scale ba
 
 ==  Text and lines ==
 === Issues with adding text ===
-Adding text to single frame images should be done in CorelDRAW or some such application so the text does not become part of the image and can therefore be edited/moved/removed at any time. Adding text to an image/movie is irreversible so should not be done on RAW data. Images can be copied to and pasted from the system clipboard between programs using the “''Plugins/Utilities/Copy-Paste to clipboard'' ” panel (hot key: Shift+V) – only available using JRE 1.4 and above. If you find the image is not pasting accurately, try using the receiving application’s “''Edit/Paste Special''” function and select “''Device independent bitmap''”.
+Adding text to single frame images should be done in CorelDRAW or some such application so the text does not become part of the image and can therefore be edited/moved/removed at any time. Adding text to an image/movie is irreversible so should not be done on RAW data. Images can be copied to and pasted from the system clipboard between programs using the “''Plugins/Utilities/Copy-Paste to clipboard'' ” panel (hot key: Shift+V) – only available using JRE 1.4 and above. (Plugin documentation found [http://rsbweb.nih.gov/ij/plugins/clipboard.html here]). If you find the image is not pasting accurately, try using the receiving application’s “''Edit/Paste Special''” function and select “''Device independent bitmap''”.
 
 Firstly, save your images before adding text. Many things can go wrong here and often cannot be corrected so it’s best to have a saved version ready to reopen.
 
