@@ -93,7 +93,7 @@ Adding text to a stack is a slightly different process. You can draw a text box 
 
 1. Open the time stamper through "''Image/Stacks/Time Stamper''". From here, you can specify the location, interval, format, and other properties of the time stamp.
 
-[[File:time_stamper.png]]
+[[File:time_stamper.png|166x237px]]
 
 2. Alternatively, you can also draw a rectangular ROI at the location and approximate size of the desired counter. The text will, by default, be of the same height as the ROI and will be aligned to its left edge. Note that if the rectangle is drawn on the right side of the image, the text could be cut off on the right if the size is too large.
 
