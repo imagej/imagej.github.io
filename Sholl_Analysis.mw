@@ -1,16 +1,17 @@
 {{Infobox Plugin
-| software        = ImageJ
-| name             = Bitmap Sholl Analysis
-| author           = Tiago Ferreira
-| source           = {{GitLink|jar=Sholl_Analysis}}
-| filename        =  [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.0.0-SNAPSHOT.jar Sholl_Analysis.jar]
+| software       = ImageJ
+| name           = Bitmap Sholl Analysis
+| author         = Tiago Ferreira, Tom Maddock
+| maintainer     = Tiago Ferreira
+| source         = {{GitLink|jar=Sholl_Analysis}}
+| filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.0.0-SNAPSHOT.jar Sholl_Analysis.jar]
 | latest version = v3.1 (July 2013)
-| released         = December 2012
-| status            = stable, active
+| released       = December 2012
+| status         = stable, active
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]]
 }}
 
-Bitmap Sholl for 2D and 3D images. For analysis of traced arbors have a look at [[#Importing|Importing Profiles Obtained Elsewhere]].
+Bitmap Sholl for 2D and 3D images. For analysis of previously traced arbors have a look at [[#Importing|Importing Profiles]].
 
 <div style="float:right;
             border: 1px solid #ccc;
@@ -70,7 +71,9 @@ Input values take into account the scale information of the image that can be se
 * '''Ignore isolated (6-connected) voxels ''(3D images only)''''' <sup>&nbsp;</sup>If checked, single isolated voxels intersecting the surface of sampling spheres are not taken into account, which may allow for smoother profiles on noisy stacks. However, it should be noted that connectivity in the stack volume may not reflect connectivity on the surface of a digitized sphere. Indeed, in certain contexts, it is possible (though unlikely) to obtain higher intersection counts when this filtering option is active.
 :Please keep in mind that this is just a refinement feature, and you should not expect it to mitigate the effects derived from ill-segmented arbors.
 
-==== Ramification Indices and Curve Fitting ====
+==== Descriptors and Curve Fitting ====
+* <span id="EnclosingRadiusCutoff"></span>'''Enclosing radius cutoff''' The number of intersections to be used in the definition of [[#EnclosingRadius|Enclosing radius]].
+
 * <span id="PrimaryBranches"></span>'''Number of Primary branches''' The number of primary branches (i.e., those originating directly from cell soma when the center of analysis is the perikaryon) to be used in the calculation of [[#SchoenenSampled|Schoenen ramification indices]].<br><br>
 ** '''Infer from Starting radius''' If checked, the ''Number of Primary branches'' is inferred from the count of intersections at [[#StartRadius|Starting radius]].
 
@@ -85,7 +88,7 @@ The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile wit
 
 ==== Output Options ====
 * '''Create intersections mask''' <sup>&nbsp;</sup>If checked, a 16–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile.<p>The default Lookup Table used by the mask is modeled after the [http://www.mathworks.com/help/matlab/ref/colormap.html MATLAB "jet" color map] (a rainbow color map based on a fluid-jet simulation by NCSA) but you can apply any of your favorite LUTs using the <u>Image▷Lookup Tables▷</u> submenu. WYSIWYG versions (RGB images) of these masks can be otained using <u>Image▷Overlay▷Flatten</u> or <u>Analyze▷Tools▷Calibration Bar...</u></p>
-** '''Background''' <sup>&nbsp;</sup>The background color (gray level) of the mask from 0 (black) to 255 (white). It can be changed at any later point using <u>Image▷Color▷Edit Lut...</u> or <u>Image▷Lookup Tables▷[[#Auxiliary Commands|Sholl LUT]]</u>.
+** '''Background''' <sup>&nbsp;</sup>The background color (gray level) of the mask from 0 (black) to 255 (white). It can be changed at any later point using <u>Image▷Color▷Edit Lut...</u>.
 
 * '''Save results on image directory ''(only available when image is saved locally)''''' <sup>&nbsp;</sup> If checked, all the results (with the exception of the ''[[#Descriptors|Sholl Table]]'') are saved to the image directory. These include: 1) Sholl plots (saved as PNG images), 2) A table containing detailed data (saved according to the extension and format specified in <u>Edit▷Options▷Input/Output...</u>) and 3) The Sholl mask (saved as a 16-bit TIFF).<p>Files are named after the image filename and analysis method. When this option is not available, profiles can always be retrieved using the ''List'', ''Save...'' and ''Copy...'' commands at the bottom of plot windows.</p>
 ** '''Do not display saved files''' If checked, saved files are directly saved to disk and are not displayed. Activate this option when [[#Batch_Processing|batch processing]] files.
@@ -180,8 +183,8 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 ;Centroid intersections (''Centroid inters.'')
 :The ordinate of the centroid (i.e., the geometric center or barycenter) of the linear profile. It is [[#ShollPlots|highlighted]] on the ''N'' vs ''Distance'' plot.
 
-;Enclosing radius
-:The last (thus, the widest) of ''Intersecting radii''.
+;<span id="EnclosingRadius"></span>Enclosing radius
+:The last (thus, the widest) of ''Intersecting radii'' to be associated with the number of intersections specified by [[#EnclosingRadiusCutoff|Enclosing radius cutoff]]. For a cutoff of 1 (the default) ''Enclosing radius'' is the widest of ''Intersecting radii''. It reflects the [http://en.wikipedia.org/wiki/Feret_diameter Feret length] of the arbor.
 
 
 === Descriptors based on fitted data ===
@@ -241,8 +244,8 @@ This option is triggered by running  <u>Analyze▷ Sholl Analysis...</u> while h
 :#Run the plugin while holding the ''Alt'' key. Because the plugin did not keep track of any directory, saving options are disabled.
 
 Notes:
-*For ''Annulus/Spherical shell'' normalization [[#StepSize|Radius step size]] is calculated from the difference between the first two rows in ''Distance column''.
-*In a [[#Batch_Processing|macro]], the [http://imagej.nih.gov/ij/developer/macro/functions.html#setKeyDown setKeyDown("alt")] macro function can be used to prompt tabular data.
+*For ''Annulus/Spherical shell'' [[#Normalizer|normalization]], [[#StepSize|Radius step size]] is calculated from the difference between the first two rows in ''Distance column''.
+*In a [[#Batch_Processing|macro]], the [http://imagej.nih.gov/ij/developer/macro/functions.html#setKeyDown setKeyDown("alt")] macro function can be used input tabular data.
 
 
 == Batch Processing ==
@@ -309,8 +312,6 @@ start = 10;  // variable that controls starting radius
 end   = 200; // variable that controls ending radius
 step  = 2;   // variable that controls step size
 
-// Enter batch mode
-setBatchMode(true);
 // Run the plugin
 run("Sholl Analysis...", "starting="+ start +" ending="+ end +"radius_step="+ step +" infer linear save do");
 </source>
@@ -319,13 +320,12 @@ run("Sholl Analysis...", "starting="+ start +" ending="+ end +"radius_step="+ st
 ;File▷Open Samples▷ddaC Neuron
 :Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run <u>Image▷Show Info...</u> to know more about this cell type.
 
-;Image▷Lookup Tables▷Sholl LUT
-: Adjusts the background color of the Sholl lookup table as specified in the main [[#Parameters|dialog prompt]].
-
 ;Help▷About Plugins▷About Sholl Analysis...
 :Retrieves information about the plugin version and a link to its Git source code repository.
 
 == FAQ ==
+#'''What is the difference between ''Sholl Analysis'' and an homonymous plugin released by the Ghosh laboratory in 2005'''?
+#:The [http://labs.biology.ucsd.edu/ghosh/software/ original Sholl Analysis plugin] by Tom Maddock (version 1.0) was released for ImageJ 1.35 and can be considered deprecated software. The current implementation inherits most of Tom's work (e.g., it still uses the initial 2D algorithm) but extends its utiliy beyond the original design of version 1.0. You can follow the history of the plugin {{GitLink|jar=Sholl_Analysis}}.
 #'''Why do I need to threshold the cell?'''
 #: Counting intersections is really a binary procedure: a shell either intercepts a branch or it doesn't. For this reason the image must be split in two phases: arbor and background.
 #'''The plugin complains about a wrong image type. Why?'''
