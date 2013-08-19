@@ -75,7 +75,7 @@ We have an 240 time-point, 3 view dataset (angles 325, 235 and 280) in a directo
 
 we create a subdirectory '''jobs/resaving''' and change to it
 
- mkdir jobs/resaving
+ mkdir -p jobs/resaving
  cd jobs/resaving
 
 Now we create a bash script '''create-resaving-jobs''' that will generate the so called job files that will be submitted to the cluster nodes (I use ''nano'' but any editor will do. Using nano type '''nano create-resaving-jobs''' and cut&past the script from below into that file.)
