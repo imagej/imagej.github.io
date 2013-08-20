@@ -99,3 +99,8 @@ This just cleans up the RAM, which might be useful. Note that changes that are m
 === How to set the min and max intensity for each view ===
 
 The min and max intensity for each view is determined by looking through all the pixels of the stack and finding the lowest and highest intensity. All intensities are then normalized to [0...1] depending on those intensities. If there is a huge difference between different views (maybe because of a piece of dirt only visible in some views), it can be set manually.
+
+<source lang="java">
+mpicbg.spim.registration.ViewDataBeads.minmaxset = new float[]{ 0, 65535 };
+</source>
+This command sets the min and max of all views to 0 and 65535.
