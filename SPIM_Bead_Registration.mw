@@ -83,3 +83,19 @@ For fusing the data, the cropping area has to be defined in the reference timepo
 == Multichannel registration ==
 
 The multi-channel registration will offer another field in which the channels that contain the same beads can be selected. In the file name pattern channels are coded as {c}, just as timepoints or angles. In the field '''Channels containing beads''' you can define the channels to process. You can give single numbers (e.g. 0), enumerate (e.g. 1, 2), define ranges (e.g. 1-3) or combine all of them in any combination wanted (e.g. 1,3-4). The bead brightness for each individual channel will be queried in individual dialogs afterwards.
+
+== How do I ... Problems, known issues and solutions ==
+
+Some tipps and tricks in the next few paragraphs require to change a static variable in the source code that changes the behavior of the plugin. This is done using the '''script editor''' and works as follows:
+* File > New > Script
+* Language > Beanshell
+* type the command, e.g.
+<source lang="java">
+System.gc();
+</source>
+* click Run
+This just cleans up the RAM, which might be useful. Note that changes that are made (not in this case though) are only valid for the '''currently running Fiji instance'''.
+
+=== How to set the min and max intensity for each view ===
+
+The min and max intensity for each view is determined by looking through all the pixels of the stack and finding the lowest and highest intensity. All intensities are then normalized to [0...1] depending on those intensities. If there is a huge difference between different views (maybe because of a piece of dirt only visible in some views), it can be set manually.
