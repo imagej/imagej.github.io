@@ -55,6 +55,8 @@ Change to the newly created Fiji-app directory and [http://fiji.sc/Update_Fiji#C
 
 Done, you are ready to use Fiji on the cluster.
 
+== Renaming files ==
+
 == Saving data as tif ==
 
 As a first step we will open the .czi files and save them as '''.tif'''. This is necessary because Fiji's bead based registration currently cannot open the .czi files. Opening hundreds of files several GB each sequentially and re-saving them as tif may take a long time on a single computer. We will use the cluster to speed-up that operation significantly.
