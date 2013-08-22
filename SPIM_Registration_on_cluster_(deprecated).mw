@@ -70,7 +70,7 @@ The output files of the Zeiss SPIM look like this:
   29072013_HisRuby_Stock1(4).czi
   ...
 
-In this example we have 5 angles. The files displayed thus show the first time point of this time series. The first file (does not contain a index) is the master file. This file would open all subsequent files in the Zeiss program. We need to give this file the index (0) in order to use it. 
+In this example we have 5 angles. The files displayed show the first time point of this time series. The first file (does not contain a index) is the master file. This file would open all subsequent files in the Zeiss program. We need to give this file the index (0) in order to use it. 
 
   cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
   ls
