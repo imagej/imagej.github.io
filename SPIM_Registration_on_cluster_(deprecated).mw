@@ -81,7 +81,8 @@ In this example we have 5 angles. The files displayed show the first time point 
   29072013_HisRuby_Stock1(4).czi
   ...
 
-Now we can rename the files using this shell script. Modify the '''angles''', the '''last index''' and '''source pattern'''. 
+
+Now we can rename the files using the following shell script. Make a script with the name '''rename-zeis-files.sh'''  Modify the '''angles''', the '''last index''' and '''source pattern'''. 
 
 <source lang="bash">
 #num_angles=5
@@ -119,6 +120,21 @@ while [ $i -le ${last_index} ]; do
 	let t=t+1
 done
 </source>
+
+   chomd a+x
+ 
+   ./rename-zeiss_files.sh
+
+The files should now be named like this: 
+ 
+  cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
+  ls
+  spim_TL1_Angle12.czi
+  spim_TL1_Angle84.czi
+  spim_TL1_Angle156.czi
+  spim_TL1_Angle228.czi
+  spim_TL1_Angle300.czi
+  ...
 
 == Saving data as tif ==
 
