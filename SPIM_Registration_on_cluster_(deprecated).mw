@@ -122,7 +122,6 @@ done
 </source>
 
    chomd a+x
- 
    ./rename-zeiss_files.sh
 
 The files should now be named like this: 
