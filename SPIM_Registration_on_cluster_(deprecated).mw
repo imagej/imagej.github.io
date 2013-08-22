@@ -57,7 +57,7 @@ Done, you are ready to use Fiji on the cluster.
 
 == Renaming files ==
 
-We need to change the file name from a simple index to a pattern that contains the time point and the angle information. 
+We need to change the file name from a simple index to a pattern that contains the time point and the angle information.
 
 The output files of the Zeiss SPIM look like this: 
 
@@ -135,6 +135,30 @@ The files should now be named like this:
   spim_TL1_Angle248.czi
   spim_TL1_Angle320.czi
   ...
+
+To check if all time points and angles of a time point are present, you can use the following script. Modify the '''time points''' and the '''number of angles'''.
+
+<source lang="bash">
+#!/bin/bash
+
+#timepoints
+for i in `seq 1 72`
+do
+
+num=$(ls ../spim_TL"$i"_Angle*.czi |wc -l)
+
+#number of angles
+if [ $num  -ne 5 ]
+
+then 
+echo "TL"$i" TP or angles missing"
+
+fi
+
+done
+</source>
+
+The script will return you the specific time points that are missing or the time points that have missing angles.
 
 == Saving data as tif ==
 
