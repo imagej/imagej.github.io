@@ -81,17 +81,20 @@ In this example we have 5 angles. The files displayed show the first time point 
   29072013_HisRuby_Stock1(4).czi
   ...
 
-Now we can rename the files using this shell script: 
+Now we can rename the files using this shell script. Modify the '''angles''', the '''last index''' and '''source pattern'''. 
 
 <source lang="bash">
 #num_angles=5
 angles=( 300 12 84 156 228 )
-first_index=1
+#index
+first_index=0
 last_index=350
 
+#timepoint
 first_timepoint=1
 
-source_pattern=../27072013_HisRuby_Stock5_Subset\{index\}.czi
+#source_pattern
+source_pattern=../29072013_HisRuby_Stock1\{index\}.czi
 target_pattern=../spim_TL\{timepoint\}_Angle\{angle\}.czi
 
 # --------------------------------------------------------
