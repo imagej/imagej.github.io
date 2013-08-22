@@ -86,10 +86,10 @@ Now we can rename the files using the following shell script. Make a script with
 
 <source lang="bash">
 #num_angles=5
-angles=( 300 12 84 156 228 )
+angles=( 320 32 104 176 248 )
 #index
 first_index=0
-last_index=350
+last_index=344
 
 #timepoint
 first_timepoint=1
@@ -129,11 +129,11 @@ The files should now be named like this:
  
   cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
   ls
-  spim_TL1_Angle12.czi
-  spim_TL1_Angle84.czi
-  spim_TL1_Angle156.czi
-  spim_TL1_Angle228.czi
-  spim_TL1_Angle300.czi
+  spim_TL1_Angle32.czi
+  spim_TL1_Angle104.czi
+  spim_TL1_Angle176.czi
+  spim_TL1_Angle248.czi
+  spim_TL1_Angle320.czi
   ...
 
 == Saving data as tif ==
