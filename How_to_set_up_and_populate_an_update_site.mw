@@ -47,7 +47,7 @@ Click the 'Add' button and fill in your choice of name for the site and the publ
 | .
 |- style="background-color: #ddd;"
 ! style="text-align: center" | website with SSH write-access
-| ssh:<username>@<hostname>
+| <username>@<hostname>
 | <directory-on-server>
 |-
 ! style="text-align: center" | website with SFTP write-access
