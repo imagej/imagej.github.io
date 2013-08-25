@@ -173,8 +173,8 @@ All changes can be seen in the [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=h
 
 '''2008/11/16''': First release.
 
-== References ==
-If you need to cite the plugin, please do so by citing the following paper:
+== References and citation ==
+If you need to '''cite the plugin''', please do so by citing the following paper:
 * Ignacio Arganda-Carreras, Rodrigo Fernandez-Gonzalez, Arrate Munoz-Barrutia, Carlos Ortiz-De-Solorzano, [http://www3.interscience.wiley.com/journal/123322233/abstract "3D reconstruction of histological sections: Application to mammary gland tissue"], Microscopy Research and Technique, Volume 73, Issue 11, pages 1019–1029, October 2010.
 The shortest path calculation and its applications have been published as:
 * G. Polder, H.L.E Hovens and A.J Zweers, Measuring shoot length of submerged aquatic plants using graph analysis (2010), In: Proceedings of the ImageJ User and Developer Conference, Centre de Recherche Public Henri Tudor, Luxembourg, 27-29 October, pp 172-177.
