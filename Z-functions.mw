@@ -152,4 +152,19 @@ When running the plugin, it is possible to adjust the aspect ratio of the three 
 ==  Stereo Pairs and Anaglyphs ==
 To create an anaglyph of two images, you can use the Two Shot Anaglyph plugin, found [http://rsbweb.nih.gov/ij/plugins/anaglyph.html here]. This plugin may be used with two RGB Color images of the same dimensions to make a stereo image.
 
+===Volume rendered-anaglyphs===
+
+This is an adaptation of the methods described at [[http://rsb.info.nih.gov/nih-image/more-docs/confocals.html]].
+
+The MBF plugin found at "''Plugins/Stacks/Z&T Projections/Stereo Pair''" will create a side by side stereo pair from your stack and also a red-green anaglyph. The plugin will let you specify which of the stereo pair projections you want and also the angle of rotation between the pairs. Typical values would be 6-9°.
+
+[[File:stereo_pair.png]]
+
+Stereo pair
+
+[[File:anaglyph_comparisons.png]]
+
+Red-green anaglyph at left, red-cyan anaglyph on the right.
+
+
 [[Category:Cookbook]]
