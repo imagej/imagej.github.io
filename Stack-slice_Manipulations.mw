@@ -1,7 +1,7 @@
 =  Stack-slice manipulations =
 
 ==  Slice shuffling/removing/Adding ==
-Once imported, the slices in each stack can be manipulated in many ways. See images below for explanation of some of these functions
+Once imported, the slices in each stack can be manipulated in many ways. See images below for an explanation of some of these functions
 
 Deleting single slice: “''Image/Stacks/Delete Slice''"
 *Deletes the first slice in a stack.
