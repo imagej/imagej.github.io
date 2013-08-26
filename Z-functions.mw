@@ -9,8 +9,6 @@ When Z Project opens, it prompts for a start and stop slice, which will determin
 
 [[File:z_project_window.png|right|175x124px|Prompt for Z Project.]]
 
-The prompt for Z Project.
-
 There are six different projection types to choose from: average intensity, maximum intensity, minimum intensity, sum slices, standard deviation, and median. The appropriate projection type will vary depending on the type of data being represented. As seen below, by applying a z transform to an MRI stack using different projection methods, the results can be very different. In the case of the MRI stack, maximum intensity is a preferable method to view the external head rendering while other methods of projection may be used to examine the internal brain components. These remaining methods also have their distinguishing characteristics, as seen by the median projection which gives the clearest rendering with the trade-off of less of filtering out more of the image in the projection.
 
 [[File:z_project_types.png|425x314px]]
