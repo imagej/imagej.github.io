@@ -99,7 +99,7 @@ Adding text to a stack is a slightly different process. You can draw a text box 
 
 Remember: bigger text will typically look smoother and the timestamp will be easier to read. It may be worth changing it to a consistent value for all of your movies.
 
-Also, bear in mind that the interval needn't be "time". The Time Stamper can also be used to add "z-axis depths" to z-stacks and "angle of rotation" to rotating volume movies (° = Alt+247; µ = Alt+230).
+Also, bear in mind that the interval needn't be "time". The Time Stamper can also be used to add "z-axis depths" to z-stacks and "angle of rotation" to rotating volume movies (° = Alt+248; µ = Alt+230).
 
 === Adding event marker to movie ===
 The “''Plugins/Movies/Event Stamper” ''plugin can be used to add text to a movie for a designated number of frames, e.g. “Agonist ON”. This is simply done by running the ''Event Stamper ''plugin setting the desired text in the “Text” box, enter start frame and end frame and click OK. The text size and location is taken from the current ROI and can be changed once the dialog is opened. 
