@@ -68,7 +68,7 @@ First ensure the image is properly background corrected.
 
 '''''Delta-F up'''''
 
-Rapid frame-to-frame changes in intensity (e.g. calcium “puffs” or TMRE “depolarisations”) can best be illustrated by performing subtracting each frame from the previous/next. 
+Rapid frame-to-frame changes in intensity (e.g. calcium “puffs” or TMRE “depolarisations”) can best be illustrated by subtracting each frame from the previous/next. 
 
 Use the plugin "''Delta F up''" from the [http://imagej.nih.gov/ij/plugins/mbf/index.html MBF plugin collection].
 
