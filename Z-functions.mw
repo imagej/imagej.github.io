@@ -63,6 +63,10 @@ Z coded stack:
 
 [[File:z_coded_stack_colored.png]]
 
+Maximum Intensity Projections of each:
+
+[[File:depth_code_max.png]]
+
 == 3D Project ==
 
 3D project (Image>Stacks>3D Project) creates a 3D rendering from a stack and rotates the resulting object through a range of angles. When using this plugin, you will be prompted for a variety of initial specifications. Based on these values, the program will generate a stack depicting a 360 degree rotation of the resulting 3D projection. There are three projection methods available: nearest point, brightest point, and mean value. 
