@@ -58,8 +58,6 @@ First ensure the image is properly background corrected.
 
 13. Pseudocolor to taste.
 
-This process could relatively easily be automated via a plugin or macro. However, due to multiple user-defined steps (i.e. how many frames for the Z-projection, the thresholding of the original stack for the mask, whether it’s better to correct for bleaching before thresholding the stack) I have not done so.
-
 ==Delta-F ==
 
 [[File:delta_f_raw.png]]
