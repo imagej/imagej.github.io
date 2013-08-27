@@ -91,6 +91,9 @@ Surface plots can be generated in many ways: notably via the menu command “''A
 ===“Analyze/Surface plot” settings ===
 When this function is selected, a dialog will appear. Try the settings below first and play with them to optimise the surface plot. The LUT of the final surface plot is taken from the LUT of the image.
 
+==="Interactive 3D Surface Plot" Settings===
+Once this plugin is run, a surface plot will appear along with menus including options to modify the plot including plot type (dots, lines, mesh, filled, and isolines), gradients, smoothing, and scale.
+
 ===SurfaceJ settings ===
 You can surface plot either a single frame or a movie. Surface rendering is a slow process so it is best to pick a frame from the movie that shows the features you’re trying to demonstrate. Duplicate this (Ctrl+D) and use it as a test image to get the best settings for surface plotting your movie. 
 
