@@ -86,7 +86,7 @@ For drops in intensity (e.g. TMRE plus irradiation induced mitochondrial depolar
 ==Surface plotting ==
 [[File:surface_plot_compare.png]]
 
-Surface plots can be generated in two ways: via the menu command “''Analyze/Surface plot''” or via the plugin “''Plugins/VolumeJ/SurfaceJ'' ”. These functions will surface-plot movies as well as single frame images. Ensure the features you’re interested in are “Contrast stretched” optimally. This can be done using a “Max intensity projection” on the stack. Getting the max and min pixel intensities and applying these to the stack. Remember, do not perform intensity analysis on images that have had their contrast stretched.
+Surface plots can be generated in many ways: notably via the menu command “''Analyze/Surface plot''” or via the plugins “''Plugins/VolumeJ/SurfaceJ''” and ''"Interactive 3D Surface Plot''" (available [http://rsbweb.nih.gov/ij/plugins/surface-plot-3d.html here]). These functions will surface-plot movies as well as single frame images. Ensure the features you’re interested in are “Contrast stretched” optimally. This can be done using a “Max intensity projection” on the stack. Getting the max and min pixel intensities and applying these to the stack. Remember, do not perform intensity analysis on images that have had their contrast stretched.
 
 ===“Analyze/Surface plot” settings ===
 When this function is selected, a dialog will appear. Try the settings below first and play with them to optimise the surface plot. The LUT of the final surface plot is taken from the LUT of the image.
