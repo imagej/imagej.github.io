@@ -62,7 +62,7 @@ This plugin, included in the MBF plugin set, will generate a movie sequence so t
 
 To use this plugin, select an ROI which will become the final frame, but do not apply the ROI using Edit>Draw. After the ROI is selected, run the plugin and you will be prompted for the desired number of frames in the movie.
 
-[[File:zoomify_start.png]]
+[[File:zoomify_start.png|266x200px]]
 
 [[File:zoomify_montage.png]]
 
