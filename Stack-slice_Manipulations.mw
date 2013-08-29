@@ -59,9 +59,9 @@ An alternative method for cropping a stack is found with "''Plugins>Stacks>Crop 
 == Zoomify plugin==
 ''Need to look into debugging for this plugin''
 
-This plugin will generate a movie sequence so that the first frame includes the whole image and the last is the user defined ROI at 100%. The first slice image is the whole of the original image, scaled so that it fits in to the framesize of the ROI, the intermediate images as progressively scaled so that the last frame is 100%. The scale factor is noted as the label slice in the stack.
+This plugin will generate a movie sequence so that the first frame includes the whole image and the last is the user defined ROI at 100%. The first slice image is the whole of the original image, scaled so that it fits into the framesize of the ROI, the intermediate images as progressively scaled so that the last frame is 100%. The scale factor is noted as the label slice in the stack.
 
-The user selects an ROI which will become the final frame and is prompted to enter the desire number of frames in the movie.
+The user selects an ROI which will become the final frame and is prompted to enter the desired number of frames in the movie.
 
 ==Align slices in stack==
 
