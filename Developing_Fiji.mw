@@ -33,6 +33,8 @@ Fiji is organized into a set of [[Maven]] projects. For convenience and speed, w
 ./Build.sh
 </source>
 
+See the [[Supported Compilers]] page for more details on the Fiji build system.
+
 == Adding plugins ==
 
 After you built Fiji successfully, you can add your own plugins.
