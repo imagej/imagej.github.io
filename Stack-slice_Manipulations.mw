@@ -64,7 +64,11 @@ To use this plugin, select an ROI which will become the final frame, but do not 
 
 [[File:zoomify_start.png|359x270px]]
 
+Image with selected ROI
+
 [[File:zoomify_montage.png|533x111px]]
+
+Series generated with zoomify
 
 ==Align slices in stack==
 
