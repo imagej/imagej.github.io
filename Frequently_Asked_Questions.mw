@@ -121,7 +121,7 @@ For details, please refer to our page on [[Maven]].
 
 == What is MiniMaven and why did you create it? ==
 
-See the [[MiniMaven]] and [[Supported Compilers]] pages for an explanation.
+Please refer to the [[MiniMaven]] and [[Supported Compilers]] pages for an explanation.
 
 == How do I create a new ImageJ plugin using Maven? ==
 
