@@ -1,7 +1,7 @@
 = Annotating images =
 
 == Scale bar ==
-Scale bars should be present on all publication/presentation images/movies. It’s worth putting them in sooner rather than later. Choose a standard scale bar size for all your images if possible to avoid confusion.
+Scale bars should be present on all publications/presentation images/movies. It’s worth putting them in sooner rather than later. Choose a standard scale bar size for all your images if possible to avoid confusion.
 
 === Spatial calibration ===
 The spatial calibration of an image can be found in ImageJ via the menu item “''Image/Properties''”. It can be manually (re)applied here also. The units ‘um” are automatically changed to “µm”.
