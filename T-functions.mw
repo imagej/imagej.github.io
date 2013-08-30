@@ -29,7 +29,7 @@ Again, use this function to enhance movies for presentation, not quantification.
 [[File:f_f0_raw.png]]
 [[File:f_f0_corrected.png]]
 
-There are several drawbacks with the use of single wavelength fluorescent probes; some include uneven fluorescence intensity (F) due to cell thickness and cell to cell variation in loading. These can be largely corrected for by normalising fluorescence against resting fluorescence i.e. F0. This does not correct for bleaching and dye loss during the experiment.
+There are several drawbacks with the use of single wavelength fluorescent probes; some include uneven fluorescence intensity (F) due to cell thickness and cell to cell variation in loading. These can be largely corrected for by normalizing fluorescence against resting fluorescence i.e. F0. This does not correct for bleaching and dye loss during the experiment.
 
 First ensure the image is properly background corrected.
 
