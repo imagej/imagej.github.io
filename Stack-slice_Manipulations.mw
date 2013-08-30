@@ -73,7 +73,7 @@ Series generated with zoomify
 
 ==Align slices in stack==
 
-The plugins [http://bigwww.epfl.ch/thevenaz/stackreg/ StackReg] (to align a stack) [http://bigwww.epfl.ch/thevenaz/turboreg/ TurboReg] (to align more than one image or stack) can be used for alignment and are located by "''Plugins/Registration/StackReg or TurboReg''" StackReg takes a stack with misaligned slices and aligns the slices with respect to the current slice. Open stack, scroll to the most centred slice and run the plugin. "Rigid body" method seems to produce the best results for microscopy images. To run StackReg, Turboreg must also be installed.
+The plugins [http://bigwww.epfl.ch/thevenaz/stackreg/ StackReg] (to align a stack) [http://bigwww.epfl.ch/thevenaz/turboreg/ TurboReg] (to align more than one image or stack) can be used for alignment and are located by "''Plugins/Registration/StackReg or TurboReg''" StackReg takes a stack with misaligned slices and aligns the slices with respect to the current slice. Open stack, scroll to the most centered slice and run the plugin. "Rigid body" method seems to produce the best results for microscopy images. To run StackReg, Turboreg must also be installed.
 
 Based on:
 
