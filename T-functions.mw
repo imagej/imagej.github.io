@@ -101,7 +101,7 @@ The options with three text-entry boxes along side represent x, y and z values.
 
 “''Rotate(°):''” value of -20 in the first (''x''-axis) box gives a good 3D effect. Play with this.
 
-&nbsp;“''Scale''”. Set to 0.5 speeds things along also when adjusting the settings and set to 2 or more for the final surface plotting.
+“''Scale''”. Set to 0.5 speeds things along also when adjusting the settings and set to 2 or more for the final surface plotting.
 
 “''Aspect ''/:” Surface plot is can be stretched in “height” by increasing the z-axis aspect (i.e. the third) box. Although 1 is usually OK if you’ve stretched the contrast properly. This will not affect the pseudocolour of the peaks which is determined by the pixel intensity.
 
