@@ -63,7 +63,7 @@ Pseudocolored images should be converted to RGB prior to adding text. The text i
 
 [[File:aliased_text.png]]
 
-The text looks better, however, it means that some of the text’s pixels are not gray-scale value 255 and so some LUTs will have them displayed as yellow/orange/green thereby loosing the nice smoothing effect of the antialiasing.
+The text looks better; however, it means that some of the text’s pixels are not gray-scale value 255 and so some LUTs will have them displayed as yellow/orange/green thereby loosing the nice smoothing effect of the antialiasing.
 
 [[File:antialiased_lut.png]]
 
