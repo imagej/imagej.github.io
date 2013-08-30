@@ -45,7 +45,7 @@ Run the scale bar dialog via “''Plugins/Spatial calibration/Add Scale bar''”
 
 You can also use the line ROI tool to draw a line of approximately the desired length and position. In this case, the length of the scale-bar will be the length of the line ROI, though you can still choose if you want the scale-bar in the position you've drawn it or a different position on the image.
 
-If you’ve used the “Green” LUT then the “white” (i.e. gray level 255) scale-bar will appear green. Convert the image from 8-bit color to RGB with “''Image/Type/RGB color''” before adding the scale bar to get a white scale-bar on a pseudocolored image.
+If you’ve used the “Green” LUT, then the “white” (i.e. gray level 255) scale-bar will appear green. Convert the image from 8-bit color to RGB with “''Image/Type/RGB color''” before adding the scale bar to get a white scale-bar on a pseudocolored image.
 
 Check the “''Label all slices''” box to add a scale-bar to the whole stack.
 
