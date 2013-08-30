@@ -79,7 +79,7 @@ Text on converted image.
 
 === Adding Text/Line/Box  ===
 
-Adding a text line or box to a single frame should be done in a package such as CorelDRAW, Adobe Illustrator, Deneba Canvas etc. However, there are times when lines and boxes are required, e.g. to reference an analyzed/sectioned region.
+Adding a text, line, or box to a single frame should be done in a package such as CorelDRAW, Adobe Illustrator, Deneba Canvas etc. However, there are times when lines and boxes are required, e.g. to reference an analyzed/sectioned region.
 
 Drawing of lines/boxes is achieved by first ''selecting'' the desired line/box in the image with the line/rectangle ROI tool from the toolbar or defining the box via “''Plugins/Specify ROI…''”. The line/box can be resized here to the desired size/shape with the small square handles on the ROI. The line/box can then be stamped in to the image through "''Edit/Draw''" or shortcut "Ctrl+d". This will add the box/line to a single frame, the color determined by the color picker toolbar button and the width in pixels defined in “''Edit/Options/Line width''”. The line width must be determined before the it is drawn on the image. 
 
