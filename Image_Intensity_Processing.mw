@@ -153,9 +153,6 @@ The normalisation corrects for the bleaching dues to image acquisition and assum
 
 “Equalize contrast” applies a non-linear stretch of the histogram based on the square root of the intensity (see online guide to image processing: [http://www.dai.ed.ac.uk/HIPR2/histeq.htm http://www.dai.ed.ac.uk/HIPR2/histeq.htm]).
 
-The “Normalize” option performs a simple linear stretch on the image in a similar way to the “''Auto”''&nbsp;option in the Brightness and Contrast window, except that when applied to a stack each slice in stack is adjusted differently based on the slice’s histogram.
-| style="border:none;padding:0in;"| [[Image:image_32.jpg]]
-
 |}
 [[Image:image_33.gif]]=== 4.9.2 Gamma ===
 <nowiki>This can be though of as a non-linear histogram adjustment. Faint objects can be made more intense without saturating bright objects (gamma <1). Similarly, medium-intensity objects can be made fainter without dimming the bright objects (gamma > 1). The intensity of each pixel is “raised to the power” of the gamma value and then scaled to 8-bits or the min and max of 16-bit images.</nowiki>
