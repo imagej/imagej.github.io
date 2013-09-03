@@ -154,7 +154,8 @@ The normalisation corrects for the bleaching dues to image acquisition and assum
 “Equalize contrast” applies a non-linear stretch of the histogram based on the square root of the intensity (see online guide to image processing: [http://www.dai.ed.ac.uk/HIPR2/histeq.htm http://www.dai.ed.ac.uk/HIPR2/histeq.htm]).
 
 |}
-[[Image:image_33.gif]]=== 4.9.2 Gamma ===
+[[File:equalize_histrogram.jpg|right]]
+=== 4.9.2 Gamma ===
 <nowiki>This can be though of as a non-linear histogram adjustment. Faint objects can be made more intense without saturating bright objects (gamma <1). Similarly, medium-intensity objects can be made fainter without dimming the bright objects (gamma > 1). The intensity of each pixel is “raised to the power” of the gamma value and then scaled to 8-bits or the min and max of 16-bit images.</nowiki>
 
 For 8 bit images; New intensity = 255 ×&nbsp;''<nowiki>[(old intensity÷255)</nowiki>&nbsp;gamma'']
