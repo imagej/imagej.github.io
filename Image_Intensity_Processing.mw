@@ -180,7 +180,7 @@ Filters can be found under the menu item “''Process/Filters...''”''.''&nbsp;
 
 ''Anisotropic Diffusion.''&nbsp;This is an edge preserving smoothing filter.
 
-[[Image:image_2.jpg]]&nbsp;
+[[File:anisotropic_diffusion_filter.jpg]]&nbsp;
 
 == 4.11 Background correction ==
 Background correction can be done in several ways and is facilitated if the grey image has the “''Plugins/LUT/Hi Lo indicator''” (Hotkey: F1) LUT loaded. This displays the zero values blue and the 255 white values red.
