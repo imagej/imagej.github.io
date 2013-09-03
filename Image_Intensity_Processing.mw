@@ -183,7 +183,7 @@ Filters can be found under the menu item “''Process/Filters...''”''.''&nbsp;
 [[File:anisotropic_diffusion_filter.jpg]]&nbsp;
 
 == 4.11 Background correction ==
-Background correction can be done in several ways and is facilitated if the grey image has the “''Plugins/LUT/Hi Lo indicator''” LUT loaded. This displays the zero values blue and the 255 white values red.
+Background correction can be done in several ways and is facilitated if the grey image has the “''Image/Lookup Tables/HiLo''” LUT loaded. This displays the zero values blue and the 255 white values red.
 
 If the background is relatively even across the image, it is most simply remove with the''Brightness&Contrast''&nbsp;command – slowly raise the&nbsp;''Minimum''&nbsp;value until most of the background is displayed blue. The press the&nbsp;''Apply&nbsp;''button to change the grey-values and remove the background.
 
