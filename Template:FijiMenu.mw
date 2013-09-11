@@ -16,7 +16,9 @@
 * [[Links]]
 * [[Advanced Usage|more...]]
 
-=== Developing Fiji ===
-* [[Overview of Fiji's source code]]
-* [[Downloading and Building Fiji From Source|Compile Fiji from source code]]
-* [[Developing Fiji|more...]]
+=== Developing for Fiji ===
+* [[Introduction into Developing Plugins]]
+* [https://www.youtube.com/watch?v=Ac-6gJ2eRb0 Developing ImageJ 1.x plugins with NetBeans]
+* [[Developing Fiji]] (i.e., the Fiji source code itself)
+* [[Developing Fiji in Eclipse]] (i.e., the Fiji source code itself)
+* [[:Category:Development|more...]]
