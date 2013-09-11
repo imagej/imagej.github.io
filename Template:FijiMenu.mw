@@ -9,7 +9,7 @@
 
 === Advanced Fiji usage ===
 * [[:Category:Registration|Registering 3D images]]
-* [[:Category:Segmentation|Segmenting images]]
+* [[Segmentation|Segmenting images]]
 * [[Useful keyboard shortcuts]]
 * [[:Category:Scripting|Scripting]]: with [[Introduction into Macro Programming|Macros]], in [[Beanshell_Scripting|Beanshell]], in [[Javascript_Scripting|Javascript]], in [[JRuby_Scripting|JRuby]], in [[Jython_Scripting|Jython]], in [[Clojure_Scripting|Clojure]] (see also [[Scripting Help]]).
 * Some [[ImageJ tricks]]
