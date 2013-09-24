@@ -4,7 +4,7 @@
 
 TrackMate as shipped via the main update site is currently broken. 
 
-These problems most likely originate from a rent change in imglib2, the library on which depend TrackMate. While waiting for a fix in the core of Fiji, here are some instructions to have a working TrackMate:
+These problems most likely originate from a recent change in imglib2, the library on which depend TrackMate. While waiting for a fix in the core of Fiji, here are some instructions to have a working TrackMate:
 
 You basically need to subscribe to the TrackMate devel update site. Here is how to do it:
 
