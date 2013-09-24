@@ -235,9 +235,9 @@ This macro also works with stacks and so can be used with time-courses with vary
 | style="border:none;padding:0in;"| <center>'''After “''ROI_BG_Correction''”'''</center>
 
 |-
-| style="border:none;padding:0in;"| [[Image:image_41.gif]]
-| style="border:none;padding:0in;"| [[Image:image_42.gif]]
-| style="border:none;padding:0in;"| [[Image:image_43.gif]]
+| style="border:none;padding:0in;"| [[File:roi_back_corr_before.gif]]
+| style="border:none;padding:0in;"| [[File:roi_back_corr_during.gif]]
+| style="border:none;padding:0in;"| [[File:roi_back_corr_after.gif]]
 
 |}
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
