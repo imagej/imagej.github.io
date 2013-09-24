@@ -1,6 +1,7 @@
 *need to check microscope types
 *test spatial calibration plugins
 *other applications for adding text?
+*use different LUT for first '0 sec' image
 = Annotating images =
 
 == Scale bar ==
