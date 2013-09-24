@@ -1,3 +1,25 @@
+
+<tt>
+<span style="color:#FF0000">Current problems with TrackMate (24/09/2013) </span>
+
+TrackMate as shipped via the main update site is currently broken. 
+
+These problems most likely originate from a rent change in imglib2, the library on which depend TrackMate. While waiting for a fix in the core of Fiji, here are some instructions to have a working TrackMate:
+
+You basically need to subscribe to the TrackMate devel update site. Here is how to do it:
+
+Go to the Fiji updater Help > Update Fiji
+Click on Manage Update sites 
+In the list that appear, you will find an item named "TrackMate-dev". Select it. 
+Close and update. Several libraries will be downloaded.
+Restart Fiji. TrackMate should now work.
+
+Please note that this repository normally ships the devel version of TrackMate. There might be undocumented features added since the version 2.1.0 That you know. 
+
+</tt>
+
+
+
 {{Infobox Plugin
 | name                  = TrackMate_
 | software              = Fiji
