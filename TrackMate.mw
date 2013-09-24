@@ -8,11 +8,11 @@ These problems most likely originate from a recent change in imglib2, the librar
 
 You basically need to subscribe to the TrackMate devel update site. Here is how to do it:
 
-Go to the Fiji updater Help > Update Fiji
-Click on Manage Update sites 
-In the list that appear, you will find an item named "TrackMate-dev". Select it. 
-Close and update. Several libraries will be downloaded.
-Restart Fiji. TrackMate should now work.
+* Go to the Fiji updater Help > Update Fiji
+* Click on Manage Update sites 
+* In the list that appear, you will find an item named "TrackMate-dev". Select it. 
+* Close and update. Several libraries will be downloaded.
+* Restart Fiji. TrackMate should now work.
 
 Please note that this repository normally ships the devel version of TrackMate. There might be undocumented features added since the version 2.1.0 That you know. 
 
