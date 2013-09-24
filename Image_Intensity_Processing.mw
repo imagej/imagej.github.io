@@ -198,9 +198,9 @@ For uneven background the menu command “''Process/Subtract background''” can
 | style="border:none;padding:0.0194in;"| “'''''Process/Subtract Background…”'''''
 
 |-
-| style="border:none;padding:0.0194in;"| [[Image:image_35.jpg]]
-| style="border:none;padding:0.0194in;"| [[File: rolling_ball_back_corr.jpg]]
-| style="border:none;padding:0.0194in;"| [[Image:image_37.jpg]]
+| style="border:none;padding:0.0194in;"| [[File:raw_rolling_ball_back_corr.jpg]]
+| style="border:none;padding:0.0194in;"| [[File:rolling_ball_back_corr.jpg]]
+| style="border:none;padding:0.0194in;"| [[File:]]processed_rolling_ball_back_corr.jpg
 
 |}
 &nbsp;
@@ -217,6 +217,7 @@ Once the background has been evened, final adjustments can be made with the&nbsp
 | style="border:none;padding:0.0194in;"| [[Image:image_40.jpg]]
 
 |}
+
 === 4.11.2 ROI background correction ===
 The rolling-ball algorithm is time consuming. If the background is even across the field of view it is possible to select a background region of interest and subtract the mean value of this area for each slice from each slice. Use the selection tools to select an area of background and run the menu command “''Plugins/ROI/BG Subtraction from ROI”''. This macro will subtract the mean of the ROI from the image plus an additional value equal to the standard deviation of the ROI multiplied by the scaling factor you enter (3 by default).
 
