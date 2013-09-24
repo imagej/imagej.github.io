@@ -39,7 +39,7 @@ The plugin can be downloaded [http://rsbweb.nih.gov/ij/plugins/stack-focuser.htm
 === Wavelet-transform Based Focusing ===
 Authors: Daniel Sage, Jesse Berent, Brigitte Forster, Dimitri Van De Ville, Biomedical Imaging Group, Swiss Federal Institute of Technology Lausanne (EPFL), Switzerland, [http://bigwww.epfl.ch/demo/edf/index.html http://bigwww.epfl.ch/demo/edf/index.html].
 
-Superior, but slower, algorithm compared to the Sobel-filter focusing. Menu command “''Plugins>Process>Extended Depth of Field''” plugin uses a wavelet transform (a more sophisticated transform compared to the Fourier transform) to calculate to “best focus”. Run plugin and check "Show 3D View". Works with RGB images. A full description of the plugin can be found at the authors' website. A topology image is also generated. Please cite the authors' papers below if you publish work using this plugin.
+Superior, but slower, algorithm compared to the Sobel-filter focusing. Menu command “''Plugins>Process>Extended Depth of Field''” plugin uses a wavelet transform (a more sophisticated transform compared to the Fourier transform) to calculate to “best focus”. Run plugin and check "Show 3D View". Works with RGB images. A more detailed description of the wavelet transform extended depth of field plugin can be found at the authors' website. A topology image is also generated. Please cite the authors' papers below if you publish work using this plugin.
 
 [[File:Extended_depth_of_field.png]]
 
