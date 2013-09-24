@@ -34,7 +34,7 @@ The Stack Focuser plugin uses a Sobel edge filter to calculate “best focus”.
 
 Result of the Stack Focuser plugin with '3' as kernel value.
 
-The plugin can be downloaded [http://rsbweb.nih.gov/ij/plugins/stack-focuser.html here].
+The plugin can be downloaded [http://rsbweb.nih.gov/ij/plugins/stack-focuser.html here] and is also included in the MBF plugins collection.
 
 === Wavelet-transform Based Focusing ===
 Authors: Daniel Sage, Jesse Berent, Brigitte Forster, Dimitri Van De Ville, Biomedical Imaging Group, Swiss Federal Institute of Technology Lausanne (EPFL), Switzerland, [http://bigwww.epfl.ch/demo/edf/index.html http://bigwww.epfl.ch/demo/edf/index.html].
