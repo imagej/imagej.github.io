@@ -3,6 +3,7 @@
 *other orthogonal view options?
 *check if updated research for the volume rendered anaglyphs
 
+''9/26: Check if macros are okay for missing 3d-project plugins, reslicePlus still needs to be found, look into anaglyphs (data/updates for volume rendered, new approach for surface rendered)''
 == Stack-Projections ==
 A z-series is generally difficult to represent as a 2-D image for publication purposes. A montage will allow the 3-D dataset to be visualised in 2-D, but results in each frame being very small. There are several ways to "flatten” the 3D stack.
 
