@@ -2,6 +2,8 @@
 *reconsider including k value calculation for bleaching correction
 *look at how "f divided by f0" plugin works
 
+''9/26: checked k value calculation, should be fine for inclusion. "F divided by F0" plugin is not working, neither is macro.''
+
 == Correcting for bleaching ==
 Often, during acquisition of a time-course, the fluorophore may bleach and the intensity of the image be reduced. This can make it harder to discern events at the end of the sequence. A stretch in contrast at time point 1 may not be adequate at time point 100. The process of bleaching and decrease in image intensity can be fitted with a mono-exponential decay, although it often follows a bi-exponential. A mono-exponential decay is described by the equation:
 
