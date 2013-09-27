@@ -4,7 +4,9 @@ The feature is so popular that we worked hard to allow for [[Update_Sites|3rd-pa
 
 But this just changed.
 
-For a couple of weeks now, the updater supports [[Personal_Update_Sites|personal update sites]], the perfect way for '''every''' Fiji/ImageJ user to share their macros, scripts and plugins. Thanks to [http://loci.wisc.edu/ LOCI at UW-Madison], everybody who wants to distribute their macros, scripts and/or plugins can do so within five minutes.
+For a couple of weeks now, the updater supports [[Personal_Update_Sites|personal update sites]], the perfect way for '''every''' Fiji/ImageJ user to share their macros, scripts and plugins. Thanks to [http://loci.wisc.edu/ LOCI at UW-Madison] who host the personal update sites, everybody who wants to distribute their macros, scripts and/or plugins can do so within five minutes.
+
+From now on, there is no excuse anymore for articles demonstrating or using ImageJ macros or plugins... it is too easy to set up an update site and upload those macros and plugins...
 
 [[Personal Update Sites|Find out how...]]
 
