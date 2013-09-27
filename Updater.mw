@@ -58,12 +58,6 @@ Note: in the advanced mode you can also upload plugins to your [[Update Sites|up
 
 [[Image:Snapshot of the Advanced Mode of the Updater.png|750px]]
 
-== Advanced Mode / Update Java ==
-
-In ''Advanced Mode'', you can update your Fiji-specific Java. Just click the ''Update Java'' button:
-
-[[Image:Snapshot of the Java Update option of the Fiji Updater.png|750px]]
-
 == Starting the Updater manually ==
 
 Just click on the ''Help>Update Fiji'' menu item:
