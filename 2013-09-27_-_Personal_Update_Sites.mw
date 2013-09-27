@@ -1,0 +1,11 @@
+Probably the most popular feature of Fiji is the updater which lets users and developers alike keep up-to-date without hassles. Developers upload their macros, scripts or plugins, and users are notified whenever there are new versions available that can be downloaded with a couple of mouse clicks.
+
+The feature is so popular that we worked hard to allow for [[Update_Sites|3rd-party update sites]]. The only problem with such sites was that you needed to have your own server to [[Adding Update Sites|set up your own update site]].
+
+But this just changed.
+
+For a couple of weeks now, the updater supports [[Personal_Update_Sites|personal update sites]], the perfect way for '''every''' Fiji/ImageJ user to share their macros, scripts and plugins. Thanks to [http://loci.wisc.edu/ LOCI at UW-Madison], everybody who wants to distribute their macros, scripts and/or plugins can do so within five minutes.
+
+[[Personal Update Sites|Find out how...]]
+
+[[Category:News]]
