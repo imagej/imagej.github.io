@@ -5,15 +5,117 @@ To '''browse a list of existing update sites''', see: [[List of update sites]].
 </div>
 
 
-This tutorial explains how to set up a website to distribute your plugins. It assumes that:
-* Your plugins are correctly installed in Fiji
-* You have either:
-<ol style="list-style-type:lower-alpha">
-  <li>[[Special:ChangeUploadPassword|Initialized your personal update site]]; or</li>
-  <li>WebDAV write access to a website that serves static web pages.</li>
-  <li>SSH/FTP access to a website that serves static web pages.</li>
-</ol>
-* In case you want to use your own server, it must have an empty, public web accessible folder where you intend to publish your updates. The Fiji updater will not create that empty folder.
+This tutorial explains how to set up a website to distribute your plugins. It assumes that your plugins are correctly installed in your local Fiji setup.
+
+= Initializing an update site =
+
+== Add your personal update site ==
+
+By far the easiest method to provide your macros, scripts and plugins to other users, letting them keep up-to-date in the most convenient manner, is to set up your ''personal update site''.
+
+A ''personal update site'' is hosted on <nowiki>http://sites.imagej.net/<fiji-wiki-account></nowiki>. If you do not have a Fiji Wiki account yet, no need to worry, you can register one while setting up your update site.
+
+First of all, start the updater with ''Help>Update Fiji'' and click on the ''Manage update sites'' button:
+
+[[File:Mamed-3.jpg|770px]]
+
+Now, click ''Add my site''.
+
+=== Specifying an existing Fiji Wiki account ===
+
+If you already have a Fiji Wiki account, enter the name of that account and click ''OK'':
+
+[[Image:Personal-Update-Site-1.png|770px]]
+
+If the update site was never initialized, you will then be asked to provide the password and the initialisation will be performed.
+
+If you do not have a Fiji Wiki account, you will need to create one:
+
+=== Creating a new Fiji Wiki account ===
+
+Specify the desired account name. If it is taken already, you will be asked for the password (and need to cancel the dialog and start over). If the account is available, the updater will greet you with this message:
+
+[[Image:Personal-Update-Site-2.png|770px]]
+
+After clicking ''OK'', the updater will let you type in your name and your email address:
+
+[[Image:Personal-Update-Site-3.png|770px]]
+
+After you specified the information and click ''OK'', the updater will acknowledge thusly:
+
+[[Image:Personal-Update-Site-4.png|770px]]
+
+You should soon receive a mail notifying you about the newly created account, and a temporary password. You need to [http://fiji.sc/Special:UserLogin log into the Fiji Wiki] to reset the password:
+
+[[Image:Personal-Update-Site-5.png|770px]]
+
+Now you can continue in the updater: type in your password and press the ''OK'' button:
+
+[[Image:Personal-Update-Site-6.png|770px]]
+
+This will initialize your update site and it will be added to your list of active update sites:
+
+[[Image:Personal-Update-Site-7.png|770px]]
+
+Now you are ready to [[#Uploading files to your update site|upload files]]. After that, you might want to consider to add your site into the alphabetical list on [[List_of_update_sites|this page]] for the convenience of other Fiji users (your update site will then be shown in the ''Manage update sites'' dialog by default).
+
+== Adding an update site on your own server ==
+
+If you have an own server or web space with WebDAV, SFTP or SSH access, you can create a directory in that web space and initialize it as an update site, too. Just call the updater with ''Help>Update Fiji'' and click the ''Manage update sites'' button:
+
+[[File:Mamed-3.jpg|770px]]
+
+Now press the ''Add'' button, provide a nick name for your update site, the URL of your web space, and ''upload information''.
+
+The ''upload information'' depends on the protocol available for uploading:
+
+{|border=1
+|-
+!Protocol
+!Host
+!Directory on Host
+|-
+|WebDAV
+|''webdav:'', or ''webdav:<webdav-user>''
+|''.''
+|-
+|SFTP
+|''sftp:<sftp-user>@<sftp-host>''
+|''<absolute-path>''
+|-
+|SSH
+|''ssh:<ssh-user>@<ssh-host>''
+|''<absolute-path>''
+|-
+|}
+
+In case you want to use an SFTP/SSH server, it must have an empty, public web accessible folder where you intend to publish your updates. The Fiji updater will not create that empty folder.
+
+''Example:'' Let's assume you have SFTP access to a machine known as ''imagej.example.org'' to the internet, and let's assume that you have a user account ''myself'' that has write access to the path ''/var/www/my-update-site/'' on that machine that is served via http://imagej.example.org/my-update-site/. Then the line you need to add  might look like this:
+
+{|border=1
+|-
+!Name
+!URL
+!Host
+!Directory on Host
+|-
+|My Update Site
+|http://imagej.example.org/my-update-site/
+|myself@imagej.example.org
+|/var/www/my-update-site/
+|-
+|}
+
+If the update site has not been initialized yet (i.e. if nobody else has initialized that site yet), you will see a dialog like this:
+
+[[Image:How_to_setup_a_plugin_distribution_site-6a.jpg|center]]
+
+Just click ''OK'' and let the updater upload an empty file index (it is stored in the file ''db.xml.gz'' which is also called the ''database'' in the documentation of the updater).
+
+= Uploading files to your update site =
+
+Note: you cannot simply copy files to your web space; the updater would miss all kinds of important information, and consequently refuse to accept that update site. You '''need''' to let the updater handle the file uploading.
 
 == Start the [[Fiji Updater|updater]] and check your plugins ==
 
@@ -21,65 +123,11 @@ First, start the [[Fiji Updater|updater]]:
 
 [[Image:How_to_setup_a_plugin_distribution_site-1.jpg]]
 
-Click on the 'Advanced mode' button and set the view options to 'View non-Fiji plugins only' to see your plugins. In this case, the plugin we'll be uploading is contained in ''A_Jolly_Useful_Plugin.jar''.
+Click on the ''Advanced mode'' button and set the view options to ''View local-only files'' to see your plugins. In this case, the plugin we'll be uploading is contained in ''A_Jolly_Useful_Plugin.jar''.
 
-[[Image:How_to_setup_a_plugin_distribution_site-2.jpg|770px]]
+Select the file to upload, right-click (on MacOSX, Ctrl+click) for the context menu and select "Upload to <name>".
 
-== Set up the update site ==
-
-Click the 'Manage update sites' button to bring up a dialog to allow entering your site information. Click the 'For Uploading' checkbox to specify that you'll be uploading your plugins to the site.
-
-[[Image:How_to_setup_a_plugin_distribution_site-4.jpg|770px]]
-
-Click the 'Add' button and fill in your choice of name for the site and the public URL. The values for the SSH hostname and the upload directory depend on what type of update site you have:
-
-{| class="wikitable" style="border-top: 1px solid gray; border-bottom: 1px solid gray;" width="100%"
-! Type of the update site
-! SSH host
-! upload directory
-|- style="border-top: 1px solid gray; background-color: #ddd;"
-! style="text-align: center" | personal update site
-| webdav:<username>
-| .
-|-
-! style="text-align: center" | website with WebDAV write-access
-| webdav:<username>
-| .
-|- style="background-color: #ddd;"
-! style="text-align: center" | website with SSH write-access
-| <username>@<hostname>
-| <directory-on-server>
-|-
-! style="text-align: center" | website with SFTP write-access
-| sftp:<username>@<hostname>
-| <directory-on-server>
-|}
-
-* Note that for SFTP and SSH, the URL and the upload directory need to point to the same location on the server. In this case, the webserver maps ''genomics.lbl.gov/~gavin/FijiPlugins'' to ''~gavin/public_html/FijiPlugins'' on the ''tatooine'' server.
-
-* Note: you need to prefix the SSH host with ''<username>@'', e.g. ''gavinrocks@tattooine.pdq-bach.org''.
-
-[[Image:How_to_setup_a_plugin_distribution_site-6.jpg|770px]]
-
-Click 'OK' to add the update site.
-
-If the update site has not been initialized yet (i.e. if nobody else has initialized that site yet), you will see a dialog like this:
-
-[[Image:How_to_setup_a_plugin_distribution_site-6a.jpg|center]]
-
-Click 'Yes'. You will then need to enter your login credentials for the site. This will upload an initial plugin database containing no records at all. Without this step, you will not be able to upload plugins.
-
-Once the site is set up, the 'Manage update sites' dialog should look something like this:
-
-[[IMage:How_to_setup_a_plugin_distribution_site-9.jpg|770px]]
-
-If you made a mistake, you can edit the site information by pressing - you guessed it - the Edit button.
-
-== Upload your plugins ==
-
-Close the dialog, and in the Status/Action column, set the your plugin's status to 'Upload it'. Select the name of your upload site in the resulting popup dialog.
-
-[[Image:How_to_setup_a_plugin_distribution_site-13.jpg|770px]]
+[[Image:Upload-to-update-site.png|770px]]
 
 Note that this plugin's dependencies, ''ij.jar'' and ''someJarOrOther.jar'', are automatically determined by the updater. Hence if you require 3rd party packages for your plugin you can place them into the jars folder of Fiji and the updater will automatically upload them to the site.
 
@@ -87,7 +135,7 @@ Enter any information you wish to provide about the plugin:
 
 [[Image:How_to_setup_a_plugin_distribution_site-15.jpg|770px]]
 
-Finally, click 'Upload to server' to copy your plugin to the server and allow others to access your plugin. If you have dependencies that are not part of Fiji (such as ''someJarOrOther.jar''), Fiji will ask you if you want to upload the jar as well. Finally, you will be asked for your login credentials again and the files will be uploaded to the server. 
+Finally, click 'Upload to server' to upload your plugin to the server and allow others to access it. If you have dependencies that are not part of Fiji, the updater will ask you if you want to upload that jar as well. Finally, you will be asked for your login credentials again and the files will be uploaded to the server. 
 
 Check that your plugins are now registered as Fiji plugins by selecting 'View files of the '[your site name here]' site':
 
@@ -95,11 +143,12 @@ Check that your plugins are now registered as Fiji plugins by selecting 'View fi
 
 That's it - you're done. Now, anyone who wants a copy of your plugins merely needs to [[How to follow a 3rd party update site|add your update site]] to the Update manger via the URL you specified, and your plugins will be downloaded and updated in their Fiji installations just like the standard Fiji plugins.
 
-== Publishing your update site ==
+= Publishing your update site =
 
 If you want to let other people know about your update site, just add it to the  [[list of update sites]].
 
-==See Also==
+= See Also =
+
 [[How to follow a 3rd party update site]]
 
 [[Category:Tutorials]]
