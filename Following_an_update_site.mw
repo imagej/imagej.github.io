@@ -18,11 +18,13 @@ First, start the [[Fiji Updater|updater]]:
 
 == Add update sites ==
 
-Click on the 'Manage update sites' button to bring up the site management dialog:
+Click on the ''Manage update sites'' button to bring up the site management dialog:
 
 [[Image:Mamed-3.jpg|770px]]
 
-If the update site you want to follow is listed, just click the checkbox next to its name. If it is not listed, you can add Click the 'Add' button and fill in the name of your choice for the site and the url, which would be provided by the plugin's author or distributor. Note: it might be better for you or the update site owner to add the information to the [[List of update sites]] to make it easier to add.
+If the update site you want to follow is listed, just click the checkbox next to its name. If it is not listed, you can add Click the ''Add'' button and fill in the name of your choice for the site and the URL, which would be provided by the plugin's author or distributor.
+
+'''Note:''' the list of update sites shown by default is the one you can view and edit [[List of update sites|here]]. Feel free to encourage update site maintainers to [http://fiji.sc/List_of_update_sites?action=edit add] their update sites.
 
 Close the dialog and the list of plugins available on the site will show up:
 
