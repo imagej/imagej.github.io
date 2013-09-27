@@ -64,14 +64,6 @@ Just click on the ''Help>Update Fiji'' menu item:
 
 [[Image:Fiji_Updater-screenshot.png]]
 
-== Configuring the Updater ==
-
-When the updater detects that there are updates available, it offers the user the choice: update right now, delay (i.e. ask again in one week), or disable the startup check.
-
-If you disabled the startup check, you can reenable it via ''Edit>Options>Configure Fiji Updater'':
-
-[[Image:Snapshot of the Fiji Updater Configuration.png]]
-
 == Adding update sites ==
 
 If you want to update plugins from other update sites than the principal one, follow [[How to follow a 3rd party update site|these instructions]].
