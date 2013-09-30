@@ -277,14 +277,14 @@ This can also be done using the “''Process/Image Calculator”''function and e
 === 4.12.2 Pseudo-correction ===
 
 {| style="border-spacing:0;"
-| colspan="2"  style="border:none;padding:0in;"| [[Image:image_3.gif]]Often it is not possible to obtain a flat-field reference image. However, it is still possible to correct for illumination intensity (although not small defects such as dust) by making a “pseudo-flat field” image by performing a large-kernel filter on the image to be corrected. This is particularly useful for DIC images where there is an intrinsic, and distracting, gradient in illumination.
+| colspan="2"  style="border:none;padding:0in;"| [[File:pseudoCorrectionImage.gif]]Often it is not possible to obtain a flat-field reference image. However, it is still possible to correct for illumination intensity (although not small defects such as dust) by making a “pseudo-flat field” image by performing a large-kernel filter on the image to be corrected. This is particularly useful for DIC images where there is an intrinsic, and distracting, gradient in illumination.
 
-The menu command “''Process''/''Filters/Pseudo-flat field''&nbsp;” automates this process. You are prompted to enter the kernel size for the mean filter; try the default value of 50 first. You can opt to keep the flat field image open to check whether the kernel is large enough. The objects should not be visible in the flat field image.
+This can be accomplished simply by subtracting the Gaussian-blurred image version of the image.
 
 This can also be used with stacks for brightfield time-courses that vary in intensity with time. This is time consuming though.
 
 |-
-| style="border:none;padding:0in;"| [[Image:image_4.gif]]
+| style="border:none;padding:0in;"| [[File:pseudoCorrRawCorrected.gif]]
 | style="border:none;padding:0in;"| The first RAW image (top) pseudo-flat field corrected. Here the pseudo-flat field corrects for the uneven illumination but does not correct the dust specks. Compare this with the result of a proper flat-field correction above.
 
 |}
