@@ -1,0 +1,123 @@
+Colour Image processing
+
+Images can have colour in three ways: a pseudocolour, as an RGB image or as a colour composite image.
+
+Pseudocolour
+
+A pseudo-coloured image is a single channel, (i.e. grey) image that has colour ascribed to it via a “look up table” or LUT (a.k.a. palette, colour table). This is literally a table of grey values (zero to 256 or 4095 whether 8-bit or 12-bit grey) with accompanying red, green and blue values. So instead of displaying a grey, the image displays a pixel with a defined amount of each colour. Differences in colour in the pseudo-coloured image reflect differences in intensity of the object rather than differences in colour of the specimen that has been imaged. For pseudocolour functions see later.
+
+24-bit RGB images
+
+The colours in RGB images (24-bit, 8-bits for each of the red, green and blue channels) and used to show multi-channel images. The colours are designed to reflect genuine colours, i.e. the green in an RGB image reflects green colour in the specimen, the differences in intensity of the green reflects differences in intensity of green in the specimen. There are several RGB functions in ImageJ. Native functions can be found in “Image/Color” and additional RGB functions can be found in “Plugins/Colour functions”.Another option would be to use Magenta rather than red in red-green-blue merge. An RGB merged image can be converted to "MGB" with the menu command "Plugins/Colour Functions/RGB to MGB".
+
+Colour Composite Images
+
+A colour composite can be thought of as similar to the way software like photoshop handle colour images - in 'layers', which ImageJ calls "channels". The advantages with this type of image over RGB images are:
+
+1. Each channel is kept separate from the others and can be turned on and off vial the 'Channels' dialog (Image>Hyperstacks>Channels or shift+z).
+
+2. Each original channel can be kept as 16-bit.
+
+3. More than 3 channels can be merged and kept separate. Each channel can be selected via the scroll bar at the bottom of the window.
+
+4. The contrast and brightness of individual channels can be adjusted after merging.
+
+Colour composite images can be converted to 24-bit RGB via the Channels dialog.
+
+ The disadvantage of the Composite image type is that this relatively recent ImageJ development is not supported by all existing plugins. Sometime your composite can revert to a multi-slice stack. To convert it back to a composite you can use the menu command "Image>Color>Make Composite".
+8.1 Merging multi-channel images
+8.1.1   Interleaved multi-channel experiments
+
+Multi-channel experiments acquired on some systems are imported with the different channels interleaved, i.e. slice 1 is timepoint1-channel1, slice2 is timepoint1-channel2. The stack needs to be “De-interleaved” before it can be RGB-merged. This can be done with “Plugins/Stacks-Shuffling/DeInterleave” and entering the number of channels in the dialog (typically “2”). The two stacks can then be merged via: “Image/Color/RGB merge”.
+8.1.2  RGB colour merging
+
+The native ImageJ function "Image>Color>RGB merge" can be used to merge red, green and/or blue channel images or Image Stacks
+
+This reduces 16-bit images to 8-bits (based on the current Brightness and Contrast values) then generates a 24-bit RGB image.
+
+ 
+
+An alternative to the normal Red-Green merge is to merge the images based on Cyan and Magenta, or Cyan-Yellow or any other colour combination. 
+
+This can aid visualisation of colocalisation due to our poor perception of red and green colours. The “Plugins/Colour functions/Colour Merge” function gives the user the option of using the ‘difference’ arithmetic processing on the image stacks you select. This is not strictly a merge (when cyan and magenta merge they produce white, not yellow) but facilitates visualisation of the separate channels (See Demandolx and Davoust, J. Microscopy, 1997 v185. p21). You can perform a true merge if you turn off the “Difference” option.
+
+Run the plugin and select the two images to be merged. Select the desired colours from the drop-down options. <Current> uses the LUT that the image currently has (this is often the desired LUT). The “Difference” option performs a “difference” arithmetic operation rather than a “addition”. If the “Pre-sub 2 from 1” option is checked the second image is subtracted from the first prior to merging.
+Merging transmitted light and fluorescence images
+
+Fluorescence and transmitted light brightfield images can be merged with the “Plugins/Colour functions/RGB-Grey Merge”  plugin. This plugin has been edited to include the option for users to pre-subtract a fraction of the fluorescence channel from the grey channel prior to merging. This can prevent a 'washed out' look to the fluorescence.
+
+This also reduces 16-bit images to 8-bits (based on the current Brightness and Contrast values) then generates a 24-bit RGB image.
+
+ 
+
+ 
+
+ 
+8.1.3. Merging images to a colour composite
+
+The menu command "Plugins>Colour>Composite merge" opens a dialog to merge grey, red, green, and blue channels to a new composite image.
+
+ 
+8.2 Splitting multi-channel Images
+
+RGB 24-bit
+
+An RGB image or stack can be split to the respective red, green and blue image components using the menu command "Image>Color>RGB split". Running this command with the Alt-key down keeps the original RGB image/stack.
+
+Sometime a merged RGB image may need to be displayed along with the separate channels in a final figure
+
+.  
+
+The plugin "Plugins/Colour Function/RGB to Montage" works with single slice RGB images. A new RGB stack is created, channel1 being the red channel; 2 the green and 3 the blue. The fourth slice is the merged slice. If a channel is empty (e.g. a red-green merged image will have no blue) then the slice is omitted. The then plugin prompts you for the layout of the montage. You have the option to alter the width of the white border between the image panels.
+
+If the 'Pseudocolour 'option is off, each channel will be greyscale.
+
+If scale bar size is set to zero, no scale bar will be added.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Colour Composite
+
+The composite can be reverted to a greyscale stack via the menu command "Image>Hyperstacks>Hyperstack to Stack". The channels can be subsequently split to individual images via the menu command "Image>Stacks>Stack to Images".
+
+     
+8.3          Pseudocolour
+
+Judicious use of LUTs can be very useful in highlighting the desired features of an image. The human eye can only perceive relatively few shades in one scene. Pseudo-colouring images can make the data more visible
+
+	
+
+  Traditional “Green” LUT
+	
+
+Enhanced “Green Hot” LUT
+Microtubules under nucleus now more apparent
+
+Have a play and see which LUT helps illustrates the features in your image.
+
+Montage compiled from a stack generated using the plugin “Plugins/LUT/List LUTs.
+
+Different LUTs are available via the menu commands “Image/Lookup table” and also “Plugins/LUT”. Custom LUTs can be made with the “Plugins/LUT/LUT panel”. Extra LUTs can be found in C:\ImageJ\LUT and can be applied by highlighting your image and selecting “Plugins/LUT/OpenLUT ” then selecting the required *.lut file. Opening LUTs via this command rather than other ways (i.e. “File/Open…” or “File/Import/LUT…”) prevents the default folder from changing to “C:\ImageJ\LUT”. Custom LUTs can be made and edited using the “Plugins/LUT/LUT panel ” plugin.
+
+When using a non-standard LUT it may be useful to add a greyscale ramp so the user can judge which colour represents which grey-scale value. A ramp can be added with the native function "Analyze/Tools/Calibration Bar"  or by making a selection the size and position that you want the ramp and running the plugin "Plugins/LUT/Add Ramp". If there is no space for teh ramp, try enlarging the image canvas with the menu command "ImageAdjust/Canvas Size".
+
+	
+
+Analyze/Tools/Calibration Bar
+	
+
+Plugins/LUT/Add Ramp
+
+[[Category: Cookbook]]
