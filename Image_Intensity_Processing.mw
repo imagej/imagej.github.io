@@ -161,7 +161,7 @@ The normalisation corrects for the bleaching dues to image acquisition and assum
 
 For 8 bit images; New intensity = 255 ×&nbsp;''<nowiki>[(old intensity÷255)</nowiki>&nbsp;gamma'']
 
-Gamma can be adjusted via the “''Process/Math/Gamma”''&nbsp;command or the “''Plugins/Utilities/Gamma Scroll-bar''”&nbsp;plugin. The latter will open up a new window copy of your image and you can adjust the gamma with the scroll bar. Click on “''Done”''&nbsp;when you are finished. This is a bit flaky and doesn’t react well if you change images in mid-adjust! You can use the Scroll-bar to determine the desired gamma value on one slice of your stack, and then apply this gamma value to the stack via the “''Process/Math/Gamma”''&nbsp;command. [[File:gamma_pic.jpg]]
+Gamma can be adjusted via the “''Process/Math/Gamma”''&nbsp;command. It will allow you to adjust the gamma with the scroll bar. Click on “''Ok”''&nbsp;when you are finished. You can use the Scroll-bar to determine the desired gamma value on one slice of your stack &nbsp;. There is also an option to preview the results. [[File:gamma_pic.jpg]]
 
 == 4.10 Filtering ==
 See the online reference:&nbsp;[http://www.dai.ed.ac.uk/HIPR2/filtops.htm http://www.dai.ed.ac.uk/HIPR2/filtops.htm]&nbsp;for a simple explanation of digital filtering.
