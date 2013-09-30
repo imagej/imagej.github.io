@@ -91,6 +91,14 @@ Opacity, transparency, and depth cues may also be specified.
 
 At left, an image with surface depth cues at 100% and interior depth cues at 50%. The image on the right has surface depth cues at 100% and interior depth cues at 50%.
 
+Try these initial settings:
+
+1. Projection Method: Use ''"Brightest point''" method.
+
+2. Slice Spacing: This determines your aspect ratio of the stack. Biorad stacks are internally calibrated and this value should be correct - unless you set the wrong objective in the Biorad software during acquisition.
+
+3. Interpolate: Used when slice spacing > 0,  check this option, although it will slow down the render so for a large data set it may be worthwhile having this "off" while you're sorting out the settings.
+
 ==Volume Viewer==
 The Volume Viewer (''Plugins>Volume Viewer'')  provides 3D rendering of a stack as well as slices of the XY, YZ, and XZ planes. Volume Viewer also offers more detailed interpolation and viewing methods than some of the other 3D rendering techniques.
 
