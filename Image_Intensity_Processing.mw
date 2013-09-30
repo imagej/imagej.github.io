@@ -291,11 +291,11 @@ This can also be used with stacks for brightfield time-courses that vary in inte
 &nbsp;
 
 === 4.12.3 FFT background correction ===
-We sometimes see uneven illumination and also horizontal "scan lines" in transmitted light images acquired with confocal microscopes. This background can be corrected using the native FFT bandpass function (''Process/FFT/Bandpass...).''
+We sometimes see uneven illumination and also horizontal "scan lines" in transmitted light images acquired with confocal microscopes. This background can be corrected using the native FFT bandpass function (''Process/FFT/Bandpass Filter...).''
 
-Experiment with the settings to optimise the filtering.
+Experiment with the settings to optimize the filtering. The user can choose to filter structures down to a certain number of pixels. The default value is 40 pixels. He or she can filter small structures up to a certain value. The default value is 3 pixels. The user can choose from a drop down menu whether to suppress stripes with None, Horizontal, or Vertical. The tolerance of direction can be chosen. The default is 5%. Finally, the user can choose whether to allow autoscale after filtering, saturation of the image when autoscaling, whether or not to display the filter, and whether or not to process an entire stack.
 
-
+[[File:newFftBandFilter.jpg]]
 &nbsp;
 
 == 4.13 Masking unwanted regions ==
