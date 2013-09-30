@@ -309,7 +309,7 @@ A more sophisticated masking can be done by “thresholding” the image and sub
 
 1.&nbsp;Duplicate the image (if it’s a stack it’s worthwhile generating a “average projection” of a few frames).
 
-2.&nbsp;Threshold this image using the menu command “''Image/Adjust/Threshold''” (hotkey Shift+T).
+2.&nbsp;Threshold this image using the menu command “''Image/Adjust/Threshold''”.
 
 3.&nbsp;Hit the Auto button and then adjust the sliders until cells are all highlighted red.
 
