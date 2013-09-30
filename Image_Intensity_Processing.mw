@@ -161,7 +161,7 @@ The normalisation corrects for the bleaching dues to image acquisition and assum
 
 For 8 bit images; New intensity = 255 ×&nbsp;''<nowiki>[(old intensity÷255)</nowiki>&nbsp;gamma'']
 
-Gamma can be adjusted via the “''Process/Math/Gamma”''&nbsp;command. It will allow you to adjust the gamma with the scroll bar. Click on “''Ok”''&nbsp;when you are finished. You can use the Scroll-bar to determine the desired gamma value on one slice of your stack &nbsp;. There is also an option to preview the results&nbsp. 
+Gamma can be adjusted via the “''Process/Math/Gamma”''&nbsp;command. It will allow you to adjust the gamma with the scroll bar. Click on “''Ok”''&nbsp;when you are finished. You can use the Scroll-bar to determine the desired gamma value on one slice of your stack &nbsp;. There is also an option to preview the results&nbsp;. 
 
 [[File:gamma_pic.jpg]]
 
