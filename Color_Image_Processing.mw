@@ -4,7 +4,7 @@ Images with color come in three different types: pseudo-color, RGB image, or col
 
 Pseudo-color
 
-A pseudo-colored image is a single channel, (i.e. grey) image that has color ascribed to it via a “look up table” or LUT (a.k.a. palette, color table). This is literally a table of grey values (zero to 256 or 4095 whether 8-bit or 12-bit grey) with accompanying red, green and blue values. So instead of displaying a grey, the image displays a pixel with a defined amount of each color. Differences in color in the pseudo-colored image reflect differences in intensity of the object rather than differences in color of the specimen that has been imaged. For pseudo-color functions see later.
+A pseudo-colored image has a single channel, (i.e. grey) image that has color ascribed to it via a “look up table” or LUT (a.k.a. palette, color table). This is literally a table of grey values (zero to 256 or 4095 whether 8-bit or 12-bit grey) with accompanying red, green and blue values. So instead of displaying a grey, the image displays a pixel with a defined amount of each color. Differences in color in the pseudo-colored image reflect differences in intensity of the object rather than differences in color of the specimen that has been imaged. For pseudo-color functions see later.
 
 24-bit RGB images
 
