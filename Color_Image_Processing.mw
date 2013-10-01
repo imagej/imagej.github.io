@@ -8,7 +8,7 @@ A pseudo-colored image has a single channel, (i.e. grey) image that has color as
 
 24-bit RGB images
 
-The colors in RGB images (24-bit, 8-bits for each of the red, green and blue channels) are used to show multi-channel images. The colors are designed to reflect genuine colors, i.e. the green in an RGB image reflects green color in the specimen, the differences in intensity of the green reflects differences in intensity of green in the specimen. There are several RGB functions in FIJI. Native functions can be found in “Image/Color” and additional RGB functions can be found in “Plugins/Color functions”. Another option would be to use Magenta rather than red in red-green-blue merge. An RGB merged image can be converted to "MGB" with the menu command "Plugins/Color Functions/RGB to MGB".
+The colors in RGB images (24-bit, 8-bits for each of the red, green and blue channels) are used to show multi-channel images. The colors are designed to reflect genuine colors (i.e. the green in an RGB image reflects green color in the specimen). There are several RGB functions in FIJI. Native functions can be found in “Image/Color”. /*Another option would be to use Magenta rather than red in red-green-blue merge. An RGB merged image can be converted to "MGB" with the menu command "Plugins/Color Functions/RGB to MGB".*/ FIX
 
 Color Composite Images
 
