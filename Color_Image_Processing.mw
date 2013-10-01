@@ -12,7 +12,7 @@ The colors in RGB images (24-bit with 8-bits for each of the red, green and blue
 
 Color Composite Images
 
-A color composite can be thought of as similar to the way software like Photoshop handle color images - in 'layers', which FIJI calls "channels". The advantages with this type of image over RGB images are:
+A color composite is similar to color images in the software Photoshop.In Photoshop these images are made of "layers", and in FIJI they are made of  "channels". Both "layers" and "channels" are the same idea. The advantages of using this type of image instead of RGB images include:
 
 1. Each channel is kept separate from the others and can be turned on and off vial the 'Channels' dialog (Image>Hyperstacks>Channels or shift+z).
 
