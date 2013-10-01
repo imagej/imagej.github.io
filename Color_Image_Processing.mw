@@ -1,6 +1,6 @@
 Color Image processing
 
-Images can have color in three ways: a pseudo-color, as an RGB image or as a color composite image.
+Images with color come in three different types: pseudo-color, as an RGB image, or as a color composite image.
 
 Pseudo-color
 
