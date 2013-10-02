@@ -8,7 +8,7 @@ Deleting single slice: “''Image/Stacks/Delete Slice''"
 *Deletes the currently displayed slice in a stack.
 
 Deleting a number of slices: “''Image/Stacks/Tools/Slice remover''”
-*Indicate the first and last slices in the range to remove, as well as increment between slices.
+*Indicate the first and last slices in the range to remove, as well as increment of removal between slices.
 
 Select the slices to remove: “''Image/Stacks/Tools/Make substack''”
 *Indicate a range or list of slices to include in substack; increments are possible.
