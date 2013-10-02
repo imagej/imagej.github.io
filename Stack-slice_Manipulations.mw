@@ -11,8 +11,8 @@ Deleting a number of slices: “''Image/Stacks/Tools/Slice remover''”
 *Indicate the first and last slices in the range to remove, as well as increment of removal between slices.
 
 Select the slices to remove: “''Image/Stacks/Tools/Make substack''”
-*Indicate a range or list of slices to include in substack; increments are possible.
-*Option to delete the slices included from the original stack.
+*Indicate a range or list of slices to include in new substack; increments are possible.
+*Option to delete the slices from the original stack.
 
 Stack to images/Images to stack: “''Image/Stacks/Stack to images” (Images to Stack…''). 
 *“''Images to Stack''” requires images to be the same size. If different sized images, will be presented with options to make uniform.
@@ -31,7 +31,7 @@ Concatenate: “''Image/Stacks/Tools/Concatenate''"
 
 Stack Combine: “''Image/Stacks/Tools/Combine''”
 *Can choose which stack comes first
-*If a different number of slices in the two stacks, the shorter will have blank slices appended to the end so they are the same length.
+*If the two stacks contain a different number of slices, the shorter will have blank slices appended to the end so they are the same length.
 
 (De)Interleave: “''Image/Stacks/Tools/DeInterleave”'' and “''/Interleave''”
 *Deinterleave will distribute slices between new stacks as indicated by the specified number of channels.
