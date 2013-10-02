@@ -14,7 +14,7 @@ Color Composite Images
 
 A color composite image is similar to color images in the image processing software Photoshop.In Photoshop these images are made of "layers", and in Fiji they are made of "channels". Both "layers" and "channels" are the same idea. The advantages of using this type of image instead of RGB images include:
 
-1. Each channel is kept separate from the others and can be turned on or off using the 'Channels Tool' ("Image/Color/Channels Tool").
+1. Each channel is kept separate from the others and can be turned on or off using the 'Channels Tool' ("Image/Color/Channels Tool"). The user has the option to view the image as a composite of all or some of the different channels, to view the image by individual channels, or as individual greyscale channels. There is a button labeled 'More' at the bottom of the window that allows the user to make a composite, convert the image to RGB, merge or split channels, edit the image's LUT, or choose new channel colors from a list.
 
 2. Each original channel can be kept as 16-bit.
 
