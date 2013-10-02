@@ -1,15 +1,15 @@
 = 4. Intensity vs Time analysis =
 == 4.1 Brightness and Contrast ==
 [[File:brightness_contrast_pic.png|thumb|right]]
-To improve the visualisation of the image, the displayed brightness and contrast can be adjusted with “''Image/Adjust/Brightness/Contrast...''” (hotkey: Shift+C).
+To improve the visualization of the image, the displayed brightness and contrast can be adjusted with “''Image/Adjust/Brightness/Contrast...''”.
 
-The “''Auto”''&nbsp;applies an intelligent contrast stretch to the&nbsp;''way in which the image is displayed''. The brightness and contrast is adjusted based on an analysis of the image's (or selection’s) histogram. If pressed repeatedly, it allows a progressively increasing percentage of pixels to become saturated.
+The “''Auto”''&nbsp; button applies an intelligent contrast stretch to the&nbsp;''way in which the image is displayed''. The brightness and contrast is adjusted based on an analysis of the image's (or selection’s) histogram. If pressed repeatedly, it allows an increasing percentage of pixels to become saturated.
 
 ''Reset''&nbsp;changes the “maximum” and “minimum” back to 0 and 255 for 8-bit images and back to the maximum and minimum of the image’s histogram for 16-bit images.
 
-If&nbsp;''Auto''&nbsp;does not produce a desirable result, select a region of the cell plus some background with a region-of-interest (ROI) tool, then hit the “''Auto''” button again. It will then do a stretch based on the intensities within the ROI.
+If the&nbsp;''Auto''&nbsp; button does not produce a desirable result, select a region of the cell plus some background with a region-of-interest (ROI) tool, then hit the “''Auto''” button again. It will then do a stretch based on the intensities within the ROI.
 
-'''Pressing the&nbsp;''Apply''&nbsp;button permanently changes the&nbsp;''actual&nbsp;''grey values of the image. Don’t press this button during while analysing image intensity!'''
+'''Pressing the&nbsp;''Apply''&nbsp;button permanently changes the&nbsp;''actual&nbsp;''grey values of the image. Don’t press this button while analyzing image intensity!'''
 
 If you prefer the image to be displayed as “black on white” rather than “white on black”, the image display can be “inverted” by the command “''Image/Lookup Tables/Invert LUT''”. The command “''Edit/Invert''” inverts the pixel&nbsp;''values''&nbsp;not just the way the image is displayed.
 
