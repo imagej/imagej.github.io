@@ -5,7 +5,7 @@
 Once imported, the slices in each stack can be manipulated in many ways. See images below for an explanation of some of these functions
 
 Deleting single slice: “''Image/Stacks/Delete Slice''"
-*Deletes the first slice in a stack.
+*Deletes the currently displayed slice in a stack.
 
 Deleting a number of slices: “''Image/Stacks/Tools/Slice remover''”
 *Indicate the first and last slices in the range to remove, as well as increment between slices.
