@@ -57,6 +57,10 @@ More details about each plugin in the menu can be found on [http://www.imagescie
 
 An alternative method for cropping a stack is found with "''Plugins>Stacks>Crop (3D)''" After selecting 'OK', you will be presented with panels of the ZY and XZ planes, as well as the original stack, where you can use the mouse to crop the stack in any of the three directions.
 
+[[File:3dcrop.png]]
+
+Window for the Crop (3D) plugin.
+
 
 == Zoomify plugin==
 
