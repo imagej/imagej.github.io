@@ -8,13 +8,13 @@ A pseudo-colored image has a single channel, (i.e. grey) image that has color as
 
 24-bit RGB images
 
-The colors in RGB images (24-bit with 8-bits for each of the red, green and blue channels) are used to show multi-channel images. The colors are designed to reflect genuine colors (i.e. the green in an RGB image reflects green color in the specimen). There are several RGB functions in FIJI. Native functions can be found in “Image/Color”.
+The colors in RGB images (24-bit with 8-bits for each of the red, green and blue channels) are used to show multi-channel images. The colors are designed to reflect genuine colors (i.e. the green in an RGB image reflects green color in the specimen). There are several RGB functions in Fiji. Native functions can be found in “Image/Color”.
 
 Color Composite Images
 
-A color composite image is similar to color images in the image processing software Photoshop.In Photoshop these images are made of "layers", and in FIJI they are made of "channels". Both "layers" and "channels" are the same idea. The advantages of using this type of image instead of RGB images include:
+A color composite image is similar to color images in the image processing software Photoshop.In Photoshop these images are made of "layers", and in Fiji they are made of "channels". Both "layers" and "channels" are the same idea. The advantages of using this type of image instead of RGB images include:
 
-1. Each channel is kept separate from the others and can be turned on or off vial the 'Channels' dialog (Image>Hyperstacks>Channels).
+1. Each channel is kept separate from the others and can be turned on or off using the 'Channels Tool' ("Image/Color/Channels Tool").
 
 2. Each original channel can be kept as 16-bit.
 
