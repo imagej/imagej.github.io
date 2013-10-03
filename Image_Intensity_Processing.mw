@@ -14,7 +14,7 @@ If the&nbsp;''Auto''&nbsp; button does not produce a desirable result, select a 
 If you prefer the image to be displayed as “black on white” rather than “white on black”, the image display can be “inverted” by the command “''Image/Lookup Tables/Invert LUT''”. The command “''Edit/Invert''” inverts the pixel&nbsp;''values''&nbsp;not just the way the image is displayed.
 
 == 4.2 Getting intensity values from single ROI ==
-If the movie has been opened as a stack, the ROI selected can be analyzed with the command: “''Image/Stacks/Plot Z Axis Profile''”. This generates a single column of numbers - one slice intensity per row.
+If working with a stack, the ROI selected can be analyzed with the command: “''Image/Stacks/Plot Z Axis Profile''”. This generates a single column of numbers - one slice intensity per row.
 
 The top 6 rows of the column are details of the ROI. This is useful to ensure the same ROI isn’t analyzed twice and allows relocation of any interesting ROIs. The details are comprised of area, x-coordinate, y-coordinate, AR, roundness, and solidity of the ROI. If the ROI is a polyline/freehand ROI rather than a square/oval, the details are given as if the ROI was an oval/square. The (oval) ROI can be restored by entering the details prompted by the “''Edit/Selection/Restore Selection''”&nbsp;(hotkey: “Ctrl + Shift + E”) command.
 
