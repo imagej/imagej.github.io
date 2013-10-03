@@ -1,4 +1,5 @@
-*find relevant datasets 
+*find relevant datasets
+*Slow runtime on plugins (because of stack size?) 
 
 = Deconvolution =
 == Introduction ==
