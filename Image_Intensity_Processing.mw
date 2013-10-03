@@ -46,7 +46,9 @@ The Multi Measure plugin that comes with the installation is v3.2.
 
 9.&nbsp;Go to Excel and paste data. With large data sets this can take some time so check you’re pasting new data in and not the last dataset copied from Multi Measure.
 
-[[File:roi_manager_results_box.jpg]]10.&nbsp;To copy ROI co-ordinates in to the Excel spreadsheet, ensure there is an empty row above the intensity data. Got to Multi Measure dialog and click “Copy list” button.
+[[File:roi_manager_results_box.jpg]]
+
+10.&nbsp;To copy ROI co-ordinates in to the Excel spreadsheet, ensure there is an empty row above the intensity data. Got to Multi Measure dialog and click “Copy list” button.
 
 14.&nbsp;Go to Excel, select the empty cell above the first data column and then paste the ROI co-ordinates.
 
