@@ -40,9 +40,9 @@ The Multi Measure plugin that comes with the installation is v3.2.
 
 6.&nbsp;Once finished selecting ROIs to be analysed in the reference image, you can draw them to the reference image by clicking the "''More>>''" button and selecting&nbsp;''Draw''. Save the reference image to the&nbsp;experiment’s data folder and then select the stack to be analysed by clicking on it.
 
-7.&nbsp;Click "''More>>''" button in the ROI manager and select “''Multi Measure''” button to measure all the ROIs. Click “Ok”. This will put values from each slice in to a single row (multiple columns per slice). Clicking on "''Measure''" will put all values from all slices and each ROI in a&nbsp; single column.
+7.&nbsp;Click "''More>>''" button in the ROI manager and select “''Multi Measure''” button to measure all the ROIs. Click “Ok”. This will put values from each slice in to a single row (multiple columns per slice). Clicking on "''Measure all 50 slices''" will put all values from all slices and each ROI in a&nbsp; single column.
 
-8.&nbsp;Go to “Results” window. Select menu item “''Edit/Select All…''”. Then “''Edit/Copy All''”.
+8.&nbsp;Go to “Results” window. Select menu item “''Edit/Select All…''”. Then “''Edit/Copy''”.
 
 9.&nbsp;Go to Excel and paste data. With large data sets this can take some time so check you’re pasting new data in and not the last dataset copied from Multi Measure.
 
