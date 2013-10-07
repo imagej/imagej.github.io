@@ -54,7 +54,7 @@ Bio-Formats has started [http://www.loci.wisc.edu/bio-formats-format/quicktime-m
 
 == Image Processing ==
 
-[http://alvyray.com/Memos/6_pixel.pdf A pixel is not a little square]. Really. It is not. Pixels may be spaced on a regular grid. But that does not make them square. Even thinking about them as squares will harm your analysis, since it is simply wrong.
+[http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf A pixel is not a little square]. Really. It is not. Pixels may be spaced on a regular grid. But that does not make them square. Even thinking about them as squares will harm your analysis, since it is simply wrong.
 
 Explore the [http://homepages.inf.ed.ac.uk/rbf/HIPR2/ Hypermedia Image Processing Reference] of the Department of Artificial Intelligence in the University of Edinburgh for an extensive overview of available image processing techniques.
 
