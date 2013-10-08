@@ -98,7 +98,12 @@ To generate a reference image:
 ''NOTE: MAY BE OUT OF DATE''&nbsp;
 
 === 4.6.1 Zeiss LSM ===
-Once imported via the Zeiss LSM panel, the timestamp data can be extracted with the panel’s ‘Apply t-stamp’ button. This will then ask you if you want the timestamp to be added to the image, or displayed in a text file for saving/pasting to excel etc.
+Tools for working with Carl Zeiss LSM510 .lsm files The LSM_Toolbox is a project aiming at the integration of common useful functions around the Zeiss lsm file format, that should enhance usability of confocal lsm files kept in their native format, thus preserving all available metadata.
+
+In Fiji, corresponding commands are:
+
+    File>Import > Show LSMToolbox which displays the toolbox, from which all commands can be called;
+    Help>About Plugins > LSMToolbox... which displays information about the plugin.
 
 === 4.6.2 Noran ===
 In most instances the x-axis data, i.e. time of each frame, can be calculated from acquisition rates and frame number (e.g. frame 301 acquired with the acquisition rate set to 1 frame per 0.5 seconds was acquired at 25 minutes). However, the acquisition rate is non-linear, in the above experiment frame 301 was actually acquired at 25 minutes 12 seconds. Each frame has stored with it a “timestamp”, the precise time (in nanoseconds!) that it was acquired. This information can be extracted from an opened movie.
