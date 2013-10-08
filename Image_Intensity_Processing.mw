@@ -103,11 +103,7 @@ Tools for working with Carl Zeiss LSM510 .lsm files The LSM_Toolbox is a project
 In Fiji, corresponding commands are: "''File/Import/Show LSMToolbox''" which displays the toolbox, from which all commands can be called and "''Help/About Plugins/LSMToolbox...''" which displays information about the plugin.
 
 === 4.6.2 Noran ===
-In most instances the x-axis data, i.e. time of each frame, can be calculated from acquisition rates and frame number (e.g. frame 301 acquired with the acquisition rate set to 1 frame per 0.5 seconds was acquired at 25 minutes). However, the acquisition rate is non-linear, in the above experiment frame 301 was actually acquired at 25 minutes 12 seconds. Each frame has stored with it a “timestamp”, the precise time (in nanoseconds!) that it was acquired. This information can be extracted from an opened movie.
-
-The movie must be opened as a stack and the timestamps can be extracted with the command: “''Import/Noran timestamp (msec)''”&nbsp;&nbsp;while the Noran Movie is open and selected.&nbsp;The timestamp data appears in the “''Results''” window. To copy data, click with the right mouse button on the windows, select “''Select All''”, then right-click again and select&nbsp;''Copy''. The timestamp data (accompanied by the movie filename) can then be pasted into Excel.
-
-The Noran SGI plugins are not bundled with the ImageJ package. To receive them, please contact[mailto:tonyc@uhnresearch.ca tonyc@uhnresearch.ca]<nowiki>&nbsp;or their author, Greg Joss <gjoss@bio.mq.edu.au>, Dept of Biology, Macquarie University, Sydney, Australia.</nowiki>
+Noran movies can be opened in several ways: File>Import>Noran movie opens entire movie as an image stack. File>Import>Noran Selection… allows you to specify a range of frames to be opened as a stack. The Noran SGI plugins are not bundled with the Fiji package. To receive them, please contact tonyc@uhnresearch.ca or their author, Greg Joss, so he can keep track of users. Greg Joss gjoss@bio.mq.edu.au is in the Dept. of Biology, Macquarie University, Sydney, Australia.
 
 === 4.6.3 Biorad ===
 This can be accessed via the menu command “''Image/Show Info…''”. Scroll down and it should give the time at which each slice was acquired. This can be selected, copied in to Excel and the time number obtained by searching and replacing (Excel menu command “''Edit/Replace''”) the text, leaving only the time data. The “elapsed” time can then be calculated by subtracting row 1 from all subsequent rows.
