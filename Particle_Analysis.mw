@@ -1,13 +1,13 @@
-= 5. Particle Analysis =
+= Particle Analysis =
 Particle counting can be done automatically if the specimen lends itself to it, i.e. the individual particles can touch – but not too much! If automatic particle counting cannot be done, ImageJ can facilitate manual counting with the “Point Picker” or “Cell counter” plugin.
 
-== 5.1 Automatic Particle counting ==
+== Automatic Particle counting ==
 The biggest issue is one referred to as “segmentation” which is to distinguish the object from the background. Once the objects has been successfully segmented, they can then be analysed.
 
 &nbsp;'''RAW    Threshold    Watershed    “AnalyzeParticles”'''
 [[File:Raw_Threshold_Watershed_AnalyzeParticles2.jpg|center|266*177px]]
 
-=== 5.1.1 Setting a threshold ===
+=== Setting a threshold ===
 &nbsp;&nbsp;&nbsp;&nbsp;'''5.1.1.1 Manual thresholding'''
 
 Automatic particle analysis requires the image to be a “binary” image i.e. black or white. The software needs to know exactly where the edges are to perform morphology measurements. A “threshold” range is set and pixels in the image whose value lies in this range are converted to black; pixels with values outside this range are converted to white (or vice-versa depending on what the user requests).
@@ -23,23 +23,23 @@ Automatic particle analysis requires the image to be a “binary” image i.e. b
 
 [[File:color_thresholding_manual_threshold2.png|thumb|right]] For colour images, setting the threshold is done with the command sequence “''Image/Adjust/Color Threshold...''”. The "Thresholding method"&nbsp; option allows the user to choose a thresholding techniqe other than the default. The "Threshold color"&nbsp; option allows the user to choose between Red, White, Black, or B&W as the thresholding color. The "Color space"&nbsp; option allows the user to choose between HSB, RGB, Lab, and YUV. The background of the thresholded image can be made light or dark. The image can be converted to a binary image via the menu command&nbsp;“''Image/Type/8-bit''”.
 
-&nbsp;'''5.1.1.2 Automatic thresholding'''
+&nbsp;'''Automatic thresholding'''
 
 One concern with setting a threshold manually is the potential to introduce user-bias. There are many algorithms described to automatically calculate the threshold. A evaluation of over 40 of these can be found in this paper: Sezgin & Sankur. 2004.&nbsp; Survey over image thresholding techniques and quantitative performance evaluation. Journal of Electronic Imaging, 2004. (13:146-165).&nbsp;''MBF ImageJ''&nbsp;has several plugins found in the menu "''Image/Adjust/Threshold''" for automatic calculation of an image threshold. These include Otsu's thresholding, maximum entropy threshold, mixture modelling thresholding. There is also k-means clustering which can segment an image in to multiple bands and can be used with colour images. [[File:automatic_thresholding_5.1.1.2.jpg]]
 
-=== 5.1.2 Watershed separation ===
+=== Watershed separation ===
 Objects in a binary image that are slightly overlapping may be separated using the menu command “''Process/Binary/Watershed”.''&nbsp;
 
 The image first needs to be converted to binary (set via thresholding). The black pixels are then replaced with grey pixels of an intensity proportional to their distance from a white pixel (i.e. black pixels close to the edge are light grey, those closer to the ‘middle') are nearer black. This is the Euclidian distance map (EDM). From this the centres of the objects can be calculated. These are the &nbsp;''ultimate eroded points''&nbsp;(UEPs), i.e. points that are equidistance from the edges. These points are then dilated until they meet another black pixel after which a watershed line is drawn.
 
-=== 5.1.3 Analyze Particles ===
+=== Analyze Particles ===
 Once the image has been segmented, the menu command “''Analyze/Analyze particles...”''&nbsp;can be used to obtain various information regarding particle size and numbers [[File:analyze_particles_screenshot.png|thumb||right]].
 
 Set the minimum size and maximum pixel area size to exclude objects that appear in the binary image that are clearly not objects of interest. Roundness values between 0.0 and 1.0 can also be selected to help exclude unwanted objects. Select the “Show: Outlines” option to display an image of the detected objects. The "Show" drop-down menu also allows the user to show Nothing, Bare Outlines, Ellipses, Masks, Count Masks, Overlay Outlines, and Overlay Masks. The user can choose whether to "Display results", "Clear Results", "Summarize", "Add to Manager", "Exclude on edges", Include holes", "Record starts", and/or "In situ Show".
 
 The particle analysis can be automated via plugins or macros once the correct threshold value and particle size range has been determined for your objects of interest. See the “''Plugins/Particle Analysis/ Nucleus counter''” plugin and its source code to customize it to your images.&nbsp;
 
-=== 5.1.4 Nucleus Counter ===
+=== Nucleus Counter ===
 This plugin automates many of the steps discussed above. The user can:1. Enter the size range which should be counted[[File:nucleus_counter_1.jpg|right]].2. Select the automatic thresholding method. This can be either "Current", "Otsu", Maximum Entropy", "Mixture Modelling" or k-means" clustering. "Current" uses the threshold that has been set manually, see above.3. Opt to perform a background correction.4. Opt to perform a "Smooth" filter.5. Opt to perform a watershed separation.6. Opt to add the particles to ROI manager7. Opt for a summary.
 
 Other options can easily be added on request.
@@ -50,23 +50,23 @@ The count, area and average size are returned as a text window and the outlined 
 
 &nbsp;
 
-== 5.2 Manual Counting ==
+== Manual Counting ==
 You can use the ImageJ toolbar&nbsp;''Crosshair (mark and count)''&nbsp;tool to count particles. However, a greater degree of control can be accessed with the “Point Picker” or “Cell counter” plugin.
 
-=== 5.2.1 Cell Counter ===
+=== Cell Counter ===
 When then “''Plugins/Particle counting/Cell Counter''” plugin) is run, a new Image window is generated with the original image plus four buttons along the bottom (Red type, Green type, Blue type and Yellow type). Clicking on a button changes the colour of the marking tool. The results table keeps a tally of the number of each of the cell types marked. Clicking the Results button will generate a summary of the data.
 
 [[File:cell_counter.jpg]]
 
-=== 5.2.2 Point Picker ===
+=== Point Picker ===
 “''Plugins/Particle counting/PointPicker''&nbsp;”''.''&nbsp;Running this plugin will change the ImageJ toolbar to the PointPicker toolbar (below).
 
 Crosses are reversibly overlaid on to the image, incrementally changing colour (this differs from the''Crosshair&nbsp;''tool which irreversible stamps a point in the image). With the Point Picker tool, crosses can be moved and deleted. Once marking is complete, the cross coordinates can be accessed via the&nbsp;button.
 
 This produces the “Point List” dialog allowing you to&nbsp;''Show'',&nbsp;''Save''&nbsp;or&nbsp;''Open''&nbsp;the points’ coordinates. Clicking “''Show''” displays the coordinates in the&nbsp;''Results''&nbsp;window, where they can be saved or copied to the system clipboard. Once finished, you can return to the regular ImageJ toolbar by clicking the&nbsp;&nbsp;button.
 
-== 5.3 Particle tracking ==
-'''5.3.1&nbsp;Automatic Tracking'''
+== Particle tracking ==
+'''&nbsp;Automatic Tracking'''
 
 '''Particle Tracker'''
 
@@ -76,7 +76,7 @@ This produces the “Point List” dialog allowing you to&nbsp;''Show'',&nbsp;''
 
 &nbsp;
 
-'''5.3.2 Manual Tracking'''
+'''Manual Tracking'''
 
 '''MTrackJ'''
 
