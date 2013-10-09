@@ -28,18 +28,16 @@ Color composite images can be converted to 24-bit RGB via the 'Channels Tool' di
 
  The disadvantage of the Composite image type is that this relatively recent Fiji development is not supported by all existing plugins. Sometime the composite can revert to a multi-slice stack. To convert it back to a composite you can use the menu command "Image/Color/Make Composite".
 
-== 8.1 Merging multi-channel images ==
-=== 8.1.1   Interleaved multi-channel experiments ===
+== Merging multi-channel images ==
+=== Interleaved multi-channel experiments ===
 
 Multi-channel experiments acquired on some systems are imported with the different channels interleaved, i.e. slice 1 is timepoint1-channel1, slice2 is timepoint1-channel2. The stack needs to be “De-interleaved” before it can be RGB-merged. This can be done with “Plugins/Stacks-Shuffling/DeInterleave” and entering the number of channels in the dialog (typically “2”). The two stacks can then be merged via: “Image/Color/RGB merge”.
 
-=== 8.1.2  RGB color merging ===
+=== RGB color merging ===
 
 The native FIJI function "Image>Color>RGB merge" can be used to merge red, green and/or blue channel images or Image Stacks
 
 This reduces 16-bit images to 8-bits (based on the current Brightness and Contrast values) then generates a 24-bit RGB image.
-
- 
 
 An alternative to the normal Red-Green merge is to merge the images based on Cyan and Magenta, or Cyan-Yellow or any other color combination. 
 
@@ -53,12 +51,12 @@ Fluorescence and transmitted light brightfield images can be merged with the “
 
 This also reduces 16-bit images to 8-bits (based on the current Brightness and Contrast values) then generates a 24-bit RGB image.
  
-=== 8.1.3. Merging images to a color composite ===
+=== Merging images to a color composite ===
 
 The menu command "Plugins>Color>Composite merge" opens a dialog to merge grey, red, green, and blue channels to a new composite image.
 
  
-== 8.2 Splitting multi-channel Images ==
+== Splitting multi-channel Images ==
 
 RGB 24-bit
 
@@ -77,7 +75,7 @@ If scale bar size is set to zero, no scale bar will be added.
 The composite can be reverted to a greyscale stack via the menu command "Image>Hyperstacks>Hyperstack to Stack". The channels can be subsequently split to individual images via the menu command "Image>Stacks>Stack to Images".
 
      
-== 8.3 Pseudo-color ==
+== Pseudo-color ==
 
 Judicious use of LUTs can be very useful in highlighting the desired features of an image. The human eye can only perceive relatively few shades in one scene. Pseudo-coloring images can make the data more visible
 
