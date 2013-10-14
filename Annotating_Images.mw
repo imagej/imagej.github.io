@@ -34,7 +34,7 @@ The spatial calibration can be reapplied in three ways: manually via the “''Im
 ====“Set Scale” ====
 If you know the size of a feature (for instance, a previously applied scale bar) you can use this command to apply a calibration.
 
-# Using the line selection tool, draw a ling along the length of the feature/scale bar.
+# Using the line selection tool, draw a ling along the length of the feature/scale bar. Do not choose "''Edit/Draw''" after adding the line.
 # Run the menu command “''Plugins/Spatial calibration/Set scale''”
 # Enter the dimensions of the object/scale bar in the “''known distance”'' box and set the units in the ''Unit of length'' box.
 # Do not check ''Global'' unless you wish all your images to have this calibration! Click OK.
