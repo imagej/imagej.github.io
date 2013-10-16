@@ -26,7 +26,7 @@ A color composite image is similar to the color images one would find in the ima
 
 Color composite images can be converted to 24-bit RGB via the 'Channels Tool' dialog box.
 
- The disadvantage of the Composite image type is that this relatively recent Fiji development is not supported by all existing plugins. Sometime the composite can revert to a multi-slice stack. To convert it back to a composite you can use the menu command "Image/Color/Make Composite".
+The disadvantage of the Composite image type is that this relatively recent Fiji development is not supported by all existing plugins. Sometime the composite can revert to a multi-slice stack. To convert it back to a composite you can use the menu command "Image/Color/Make Composite".
 
 == Merging multi-channel images ==
 === Interleaved multi-channel experiments ===
