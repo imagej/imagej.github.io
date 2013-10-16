@@ -33,6 +33,8 @@ The disadvantage of the Composite image type is that this relatively recent Fiji
 
 Multi-channel experiments acquired on some systems are imported with the different channels interleaved, i.e. Slice 1 is Timepoint1-channel1 and Slice 2 is Timepoint1-channel2. The stack needs to be “De-interleaved” before it can be RGB-merged. This can be done with “Image/Stacks/Tools/Deinterleave” and entering the number of channels in the dialog (typically “2”). You can also choose to check a box for whether or not the source stacks should be kept. The two stacks can then be merged via: “Image/Color/RGB merge”.
 
+[[File: deinterleaver.jpg]]
+
 === RGB color merging ===
 
 The native FIJI function "Image>Color>RGB merge" can be used to merge red, green and/or blue channel images or Image Stacks
