@@ -49,15 +49,16 @@ Run the plugin and select the two images to be merged. Select the desired colors
 
 == Merging transmitted light and fluorescence images ==
 
-Fluorescence and transmitted light brightfield images can be merged with the “Plugins/Color functions/RGB-Grey Merge”  plugin. This plugin has been edited to include the option for users to pre-subtract a fraction of the fluorescence channel from the grey channel prior to merging. This can prevent a 'washed out' look to the fluorescence.
+Fluorescence and transmitted light brightfield images can be merged with the “Image/Color/Merge Channels...”. This instruction lets you than choose the C4 (gray) option. This can prevent a 'washed out' look to the fluorescence.
 
 This also reduces 16-bit images to 8-bits (based on the current Brightness and Contrast values) then generates a 24-bit RGB image.
  
 === Merging images to a color composite ===
 
-The menu command "Plugins>Color>Composite merge" opens a dialog to merge grey, red, green, and blue channels to a new composite image.
+The menu command "Image/Color/Merge Channels..." opens a dialog to merge grey, red, green, blue, cyan, magenta, and yellow channels to a new composite image.
 
- 
+[[File: merge_channels.jpg]]
+
 == Splitting multi-channel Images ==
 
 RGB 24-bit
