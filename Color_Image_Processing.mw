@@ -31,7 +31,7 @@ The disadvantage of the Composite image type is that this relatively recent Fiji
 == Merging multi-channel images ==
 === Interleaved multi-channel experiments ===
 
-Multi-channel experiments acquired on some systems are imported with the different channels interleaved, i.e. slice 1 is timepoint1-channel1, slice2 is timepoint1-channel2. The stack needs to be “De-interleaved” before it can be RGB-merged. This can be done with “Plugins/Stacks-Shuffling/DeInterleave” and entering the number of channels in the dialog (typically “2”). The two stacks can then be merged via: “Image/Color/RGB merge”.
+Multi-channel experiments acquired on some systems are imported with the different channels interleaved, i.e. Slice 1 is Timepoint1-channel1 and Slice 2 is Timepoint1-channel2. The stack needs to be “De-interleaved” before it can be RGB-merged. This can be done with “Image/Stacks/Tools/Deinterleave” and entering the number of channels in the dialog (typically “2”). You can also choose to check a box for whether or not the source stacks should be kept. The two stacks can then be merged via: “Image/Color/RGB merge”.
 
 === RGB color merging ===
 
