@@ -51,7 +51,7 @@ The count, area and average size are returned as a text window and the outlined 
 &nbsp;
 
 == Manual Counting ==
-You can use the ImageJ toolbar&nbsp;''Crosshair (mark and count)''&nbsp;tool to count particles. However, a greater degree of control can be accessed with the “Point Picker” or “Cell counter” plugin.
+You can use the Fiji toolbar&nbsp;''Crosshair (mark and count)''&nbsp;tool to count particles. However, a greater degree of control can be accessed with the “Point Picker” or “Cell counter” plugin.
 
 === Cell Counter ===
 When then “''Plugins/Particle counting/Cell Counter''” plugin) is run, a new Image window is generated with the original image plus four buttons along the bottom (Red type, Green type, Blue type and Yellow type). Clicking on a button changes the colour of the marking tool. The results table keeps a tally of the number of each of the cell types marked. Clicking the Results button will generate a summary of the data.
@@ -59,11 +59,11 @@ When then “''Plugins/Particle counting/Cell Counter''” plugin) is run, a new
 [[File:cell_counter.jpg]]
 
 === Point Picker ===
-“''Plugins/Particle counting/PointPicker''&nbsp;”''.''&nbsp;Running this plugin will change the ImageJ toolbar to the PointPicker toolbar (below).
+“''Plugins/Particle counting/PointPicker''&nbsp;”''.''&nbsp;Running this plugin will change the Fiji toolbar to the PointPicker toolbar (below).
 
 Crosses are reversibly overlaid on to the image, incrementally changing colour (this differs from the''Crosshair&nbsp;''tool which irreversible stamps a point in the image). With the Point Picker tool, crosses can be moved and deleted. Once marking is complete, the cross coordinates can be accessed via the&nbsp;button.
 
-This produces the “Point List” dialog allowing you to&nbsp;''Show'',&nbsp;''Save''&nbsp;or&nbsp;''Open''&nbsp;the points’ coordinates. Clicking “''Show''” displays the coordinates in the&nbsp;''Results''&nbsp;window, where they can be saved or copied to the system clipboard. Once finished, you can return to the regular ImageJ toolbar by clicking the&nbsp;&nbsp;button.
+This produces the “Point List” dialog allowing you to&nbsp;''Show'',&nbsp;''Save''&nbsp;or&nbsp;''Open''&nbsp;the points’ coordinates. Clicking “''Show''” displays the coordinates in the&nbsp;''Results''&nbsp;window, where they can be saved or copied to the system clipboard. Once finished, you can return to the regular Fiji toolbar by clicking the&nbsp;&nbsp;button.
 
 == Particle tracking ==
 '''&nbsp;Automatic Tracking'''
