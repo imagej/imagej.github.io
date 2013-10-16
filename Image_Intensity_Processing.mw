@@ -117,7 +117,7 @@ A line of interest must be drawn followed by the command: “''Image/Stacks/Resl
 This example shows the elementary calcium events preceding a calcium wave. HeLa cell loaded with the calcium-sensitive fluorophore, Fluo-3 and imaged whilst responding to application of histamine.&nbsp;'''A'''. Frame taken from time-course at the peak of the calcium-release response. ('''B''') The line of pixels along X-Y was taken and stacked side by side from right-to left to generate a "pseudo-line scan". This allows visualisation of the progression of the wave from its initiation site.
 
 
-&nbsp;ImageJ assumes stacks to be&nbsp;''z''-series rather than&nbsp;''t''-series so many functions related to the third-dimension of an image stack are called “''z-”''&nbsp;something – e.g. “z-axis profile” is intensity over time plot.
+&nbsp;Fiji assumes stacks to be&nbsp;''z''-series rather than&nbsp;''t''-series so many functions related to the third-dimension of an image stack are called “''z-”''&nbsp;something – e.g. “z-axis profile” is intensity over time plot.
 
 == FRAP Analysis ==
 The FRAP profiler plugin will analyse the intensity of a beached ROI over time and normalise this against the intensity of the whole cell. It will then find the minimum intensity in the bleach ROI and fit the recovery&nbsp; from this point.
