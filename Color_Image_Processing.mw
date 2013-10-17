@@ -69,7 +69,7 @@ Sometime a merged RGB image may need to be displayed along with the separate cha
 
 It works with single slice RGB images. A new RGB stack is created, channel 1 being the red channel; 2 the green and 3 the blue. The fourth slice is the merged slice. If a channel is empty (e.g. a red-green merged image will have no blue) then the slice is omitted. The then plugin prompts you for the layout of the montage. You have the option to alter the width of the white border between the image panels. If the 'Pseudo-color 'option is off, each channel will be greyscale. If scale bar size is set to zero, no scale bar will be added.
 
-[[File: splitting_multichannel_pics]]
+[[File: splitting_multichannel_pics.jpg]]
 
 == Color Composite ==
 
