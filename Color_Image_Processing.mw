@@ -73,9 +73,8 @@ It works with single slice RGB images. A new RGB stack is created, channel 1 bei
 
 == Color Composite ==
 
-The composite can be reverted to a greyscale stack via the menu command "Image>Hyperstacks>Hyperstack to Stack". The channels can be subsequently split to individual images via the menu command "Image>Stacks>Stack to Images".
+The composite can be reverted to a greyscale stack via the menu command "Image/Hyperstacks/Hyperstack to Stack". The channels can be subsequently split to individual images via the menu command "Image/Stacks/Stack to Images".
 
-     
 == Pseudo-color ==
 
 Judicious use of LUTs can be very useful in highlighting the desired features of an image. The human eye can only perceive relatively few shades in one scene. Pseudo-coloring images can make the data more visible
