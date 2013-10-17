@@ -77,16 +77,18 @@ The composite can be reverted to a greyscale stack via the menu command "Image/H
 
 == Pseudo-color ==
 
-Judicious use of LUTs can be very useful in highlighting the desired features of an image. The human eye can only perceive relatively few shades in one scene. Pseudo-coloring images can make the data more visible
+Judicious use of LUTs can be very useful in highlighting the desired features of an image. The human eye can perceive relatively few shades in one image. Pseudo-coloring images can make data more visible
 
 Traditional “Green” LUT
-	
+[[File: traditional_green_lut.jpg]]	
 
 Enhanced “Green Hot” LUT
+[[File: enhanced_green_hot_lut.jpg]]
 
 Microtubules under nucleus now more apparent
 
 Have a play and see which LUT helps illustrates the features in your image.
+[[File: list_of_luts.jpg]]
 
 Montage compiled from a stack generated using the plugin “Plugins/LUT/List LUTs.
 
