@@ -93,7 +93,7 @@ Have a play and see which LUT helps illustrates the features in your image.
 
 [[File: list_of_luts.jpg]]
 
-Montage compiled from a stack generated using the plugin “Plugins/LUT/List LUTs.
+Montage compiled from a stack generated using the plugin “Image/Color/Display LUTs".
 
 Different LUTs are available via the menu commands “Image/Lookup table” and also “Plugins/LUT”. Custom LUTs can be made with the “Plugins/LUT/LUT panel”. Extra LUTs can be found in C:\ImageJ\LUT and can be applied by highlighting your image and selecting “Plugins/LUT/OpenLUT ” then selecting the required *.lut file. Opening LUTs via this command rather than other ways (i.e. “File/Open…” or “File/Import/LUT…”) prevents the default folder from changing to “C:\ImageJ\LUT”. Custom LUTs can be made and edited using the “Plugins/LUT/LUT panel ” plugin.
 
