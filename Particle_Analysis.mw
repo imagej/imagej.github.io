@@ -25,6 +25,7 @@ Automatic particle analysis requires a “binary” image i.e. black or white. T
 
 &nbsp;'''Automatic thresholding'''
 
+
 One concern with setting a threshold manually is the potential to introduce user-bias. There are many algorithms described to automatically calculate the threshold. An evaluation of over 40 of these can be found in this paper: Sezgin & Sankur. 2004.&nbsp; Survey over image thresholding techniques and quantitative performance evaluation. Journal of Electronic Imaging, 2004. (13:146-165).&nbsp;''Fiji''&nbsp;has several plugins found in the menu "''Image/Adjust/Threshold''" for automatic calculation of an image threshold. These include Otsu's thresholding, maximum entropy threshold, mixture modelling thresholding. There is also k-means clustering which can segment an image in to multiple bands and can be used with color images. [[File:automatic_thresholding_5.1.1.2.jpg]]
 
 === Watershed separation ===
