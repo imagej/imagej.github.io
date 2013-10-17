@@ -36,6 +36,7 @@ The image first needs to be converted to binary (set via thresholding). The blac
 === Analyze Particles ===
 Once the image has been segmented, the menu command “''Analyze/Analyze particles...”''&nbsp;can be used to obtain various information regarding particle size and numbers [[File:analyze_particles_screenshot.png|thumb||right]].
 
+
 Set the minimum size and maximum pixel area size to exclude objects that appear in the binary image that are clearly not objects of interest. Roundness values between 0.0 and 1.0 can also be selected to help exclude unwanted objects. Select the “Show: Outlines” option to display an image of the detected objects. The "Show" drop-down menu also allows the user to show Nothing, Bare Outlines, Ellipses, Masks, Count Masks, Overlay Outlines, and Overlay Masks. The user can choose whether to "Display results", "Clear Results", "Summarize", "Add to Manager", "Exclude on edges", Include holes", "Record starts", and/or "In situ Show".
 
 The particle analysis can be automated via plugins or macros once the correct threshold value and particle size range has been determined for your objects of interest. See the “''Plugins/Particle Analysis/ Nucleus counter''” plugin and its source code to customize it to your images.&nbsp;
