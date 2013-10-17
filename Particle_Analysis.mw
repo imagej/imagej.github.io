@@ -1,5 +1,5 @@
 = Particle Analysis =
-Particle counting can be done automatically if the specimen lends itself to it, i.e. the individual particles can touch – but not too much! If automatic particle counting cannot be done, Fiji can facilitate manual counting with the “Point Picker” or “Cell counter” plugin.
+Particle counting can be done automatically if the specimen lends itself to it, i.e. the individual particles can touch – but not too much! If automatic particle counting cannot be done, manual counting can be done with the “Point Picker” or “Cell counter” plugins. They will have to be downloaded to the Fiji plugins folder.
 
 == Automatic Particle counting ==
 The biggest issue is one referred to as “segmentation” which is to distinguish the object from the background. Once the objects has been successfully segmented, they can then be analysed.
