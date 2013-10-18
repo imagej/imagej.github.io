@@ -85,7 +85,7 @@ This produces the “Point List” dialog allowing you to&nbsp;''Show'',&nbsp;''
 '''&nbsp;Automatic Tracking'''
 
 '''Particle Tracker'''
-Particle Tracker is a 2D feature point-tracking tool for the automated detection and analysis of particle trajectories as recorded by video imaging in cell biology. The algorithm is decsribed in Sbalzarini and Koumoutsakos (2005[1]). 
+Particle Tracker is a 2D feature point-tracking plugin for the automated detection and analysis of particle trajectories as recorded by video imaging in cell biology. The algorithm is decsribed in Sbalzarini and Koumoutsakos (2005[1]). 
 &nbsp;
 
 '''TrackMate''' 
