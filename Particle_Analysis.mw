@@ -85,10 +85,14 @@ This produces the “Point List” dialog allowing you to&nbsp;''Show'',&nbsp;''
 '''&nbsp;Automatic Tracking'''
 
 '''Particle Tracker'''
+Particle Tracker is a 2D feature point-tracking tool for the automated detection and analysis of particle trajectories as recorded by video imaging in cell biology. The algorithm is decsribed in Sbalzarini and Koumoutsakos (2005[1]). 
 
 &nbsp;
 
-'''SpotTracker'''
+'''TrackMate''' 
+This plugin allows you to perform single particle tracking of spot-like structures. For more in-depth information, see the tutorial and explanation in the Tutorials Documentation.
+
+Simply click on the Content tab at the top of this page and then choose Documentation from the drop down menu. Under the heading that says "Using Fiji" you should see a Tutorials link. Click this link and then look for the one labeled TrackMate.
 
 &nbsp;
 
