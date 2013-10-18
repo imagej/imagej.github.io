@@ -1,0 +1,47 @@
+ImageJ has been extended with thousands of [http://en.wikipedia.org/wiki/Plug-in_(computing) plugins]!
+
+== Types of plugins ==
+
+There are four tiers of plugins:
+# [http://imagej.net/docs/guide/146-Part-V.html#toc-Part-V Core ImageJ plugins], bundled with the base ImageJ distribution. (449 as of this writing)
+# [[:Category:Plugins|Core Fiji plugins]], bundled with the Fiji distribution of ImageJ. (811 as of this writing)
+# Plugins installable from an [[List_of_update_sites|ImageJ update site]].
+# [http://imagej.net/plugins/ Additional plugins] available for manual installation only.
+
+== Using an ImageJ update site ==
+
+The Fiji distribution of ImageJ includes the [[Update Fiji|ImageJ Updater]]: a painless way to install and update plugins. Simply [[Update Sites|add the update site]] containing your plugins of interest, and they will be installed automatically for you.
+
+== Installing plugins manually ==
+
+If the plugin you want is not distributed via an ImageJ update site, please encourage the plugin's maintainer to do so! Anyone can create their own [[How to set up and populate an update site|personal update site]] hosted on [http://sites.imagej.net/ sites.imagej.net], freeing plugin authors from the burden of distribution and server maintenance.
+
+In the meantime, to install a plugin manually, follow the plugin's installation instructions, if any. The plugin will consist of one or more files which must be downloaded and (typically) placed in ImageJ's <tt>plugins</tt> folder:
+* If the file suffix is <tt>.jar</tt> or <tt>.class</tt> then it is usually enough to simply restart ImageJ after dropping the file into <tt>plugins</tt>.
+* If the file suffix is <tt>.java</tt> then you typically must execute the [http://imagej.net/docs/guide/146-31.html#toc-Subsection-31.5 Compile and Run] command on the file to first compile it to a <tt>.class</tt>. After running this command once and restarting ImageJ, the plugin will become available in ImageJ's <tt>Plugins</tt> menu.
+
+== User-specific plugins ==
+
+The Fiji distribution of ImageJ, in addition to looking for plugins in the <tt>plugins</tt> subfolder, also looks in the <tt>.plugins</tt> subfolder of the current user's home folder. This is useful if you want to install some of your own plugins without affecting the system-wide ImageJ installation.
+
+== Configuring where ImageJ looks for plugins ==
+
+Power users may wish to configure exactly which folder(s) ImageJ scans for plugins. The default folder is the <tt>plugins</tt> folder of the ImageJ installation. However, this can be overridden using the <tt>plugins.dir</tt> system property. See the ImageJ web site's article [http://imagej.net/docs/menus/plugins.html#dir Changing Location of Plugins Directory].
+
+== Multiple plugin directories ==
+
+For ultimate control, Fiji also provides support for manually configuring the list of plugin paths, similar to Java's classpath, using the <tt>ij1.plugin.dirs</tt> system property.
+
+E.g., on 64-bit Linux:
+
+ $FIJI/ImageJ-linux64 -Dij1.plugin.dirs=$FIJI/jars:$FIJI/plugins:$HOME/.plugins
+
+On OS X:
+
+ $FIJI/Contents/MacOS/ImageJ-macosx -Dij1.plugin.dirs=$FIJI/jars:$FIJI/plugins:$HOME/.plugins
+
+On 64-bit Windows:
+
+ %FIJI%\ImageJ-win64 -Dij1.plugin.dirs=%FIJI%\jars;%FIJI%\plugins;%HOMEDRIVE%%HOMEPATH%\.plugins
+
+Where <tt>$FIJI</tt> (or <tt>%FIJI%</tt> on Windows) is the path to your Fiji installation.
