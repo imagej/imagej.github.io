@@ -22,7 +22,7 @@ In the meantime, to install a plugin manually, follow the plugin's installation 
 
 == User-specific plugins ==
 
-The Fiji distribution of ImageJ, in addition to looking for plugins in the <tt>plugins</tt> subfolder, also looks in the <tt>.plugins</tt> subfolder of the current user's home folder. This is useful if you want to install some of your own plugins without affecting the system-wide ImageJ installation.
+The Fiji distribution of ImageJ, in addition to looking in the <tt>plugins</tt> folder of Fiji itself, also looks in the <tt>.plugins</tt> folder in the current user's home folder. This is useful if you want to install some of your own plugins without affecting the system-wide ImageJ installation.
 
 == Configuring where ImageJ looks for plugins ==
 
