@@ -106,9 +106,6 @@ When this function is selected, a dialog will appear. Try the settings below fir
 
 [[File:analyze_surface.png|212x243px]]
 
-==="Interactive 3D Surface Plot" Settings===
-Once this plugin is run, a surface plot will appear along with menus including options to modify the plot including plot type (dots, lines, mesh, filled, and isolines), gradients, smoothing, and scale. You can use the mouse to move the surface plot and examine it from new angles.
-
 ===SurfaceJ settings ===
 You can surface plot either a single frame or a movie. Surface rendering is a slow process so it is best to pick a frame from the movie that shows the features you’re trying to demonstrate. Duplicate this (Ctrl+D) and use it as a test image to get the best settings for surface plotting your movie. 
 
