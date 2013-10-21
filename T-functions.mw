@@ -127,7 +127,4 @@ The options with three text-entry boxes along side represent x, y and z values.
 
 “''Render surface plot''”: starts surface plotting.
 
-
-[http://www.uhnresearch.ca/facilities/wcif/imagej/t.htm#_ftnref1 §] ImageJ assumes stacks to be ''z''-series rather than ''t''-series so many functions related to the third-dimension of an image stack are called “''z-”'' something – e.g. “z-axis profile” is an “intensity vs time” plot.
-
 [[Category:Cookbook]]
