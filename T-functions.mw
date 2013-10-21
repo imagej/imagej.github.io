@@ -107,6 +107,8 @@ When this function is selected, a dialog will appear. Try the settings below fir
 [[File:analyze_surface.png|212x243px]]
 
 ===SurfaceJ settings ===
+To use SurfaceJ, you must download the zip files for bij plugin and bij sources from [http://bij.isi.uu.nl/ here]. You must also copy bij.jar into Fiji's jars folder.
+
 You can surface plot either a single frame or a movie. Surface rendering is a slow process so it is best to pick a frame from the movie that shows the features you’re trying to demonstrate. Duplicate this (Ctrl+D) and use it as a test image to get the best settings for surface plotting your movie. 
 
 Select the image to be rendered with the “''Source image(s)''” drop down box.
@@ -123,7 +125,7 @@ The options with three text-entry boxes along side represent x, y and z values.
 
 “''Gaussian Smoothing''” value of 2-4. This slows rendering down but gives smoother surface plot.
 
-“''Rendering surface plot''”: starts surface plotting.
+“''Render surface plot''”: starts surface plotting.
 
 
 [http://www.uhnresearch.ca/facilities/wcif/imagej/t.htm#_ftnref1 §] ImageJ assumes stacks to be ''z''-series rather than ''t''-series so many functions related to the third-dimension of an image stack are called “''z-”'' something – e.g. “z-axis profile” is an “intensity vs time” plot.
