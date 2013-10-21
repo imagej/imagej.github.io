@@ -139,7 +139,11 @@ The “Edit” menu supplies some more options to change the color and transpare
 ==Other Volume Rendering Methods==
 3D reconstruction methods where the object will appear semitransparent include ''360° 3D-project'' and ''Rocking 3D-project''. These are macros contained in the MBF plugin package. ''360° 3D-project'' produces a stack with a 360° rotation of the z-transform. The results will look similar to those generated with the ''Grouped Z Projector'' plugin. If you want the stack to just rock back and forth, use the ''Rocking 3D-project'' macro.
 
+==Surface Render==
 
+VolumeJ is a 3D reconstruction method where the object surface will appear opaque, giving a more "solid" look to the object. To use VolumeJ, download the zip files for the bij plugin and bij sources from [http://bij.isi.uu.nl/ here]. You'll also need to copy bij.jar to Fiji's jars folder before running the plugin. VolumeJ's interactive rendering option is currently not working: check back for more updates.
+
+[[File:volumej.png]]
 
 == Stack Reslice==
 This generates a “side-view” of a stack along a user defined line. Select part of stack to be axially sectioned using the line ROI tool from the toolbar. Select menu item “''Image>Stacks>Reslice''" after drawing a straight line or rectangle onto an open stack.
