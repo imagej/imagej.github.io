@@ -104,7 +104,7 @@ Surface plots can be generated in many ways: notably via the menu command “''A
 ===“Analyze/Surface plot” settings ===
 When this function is selected, a dialog will appear. Try the settings below first and play with them to optimise the surface plot. The LUT of the final surface plot is taken from the LUT of the image.
 
-[[File:analyze_surface.png]]
+[[File:analyze_surface.png|212x243px]]
 
 ==="Interactive 3D Surface Plot" Settings===
 Once this plugin is run, a surface plot will appear along with menus including options to modify the plot including plot type (dots, lines, mesh, filled, and isolines), gradients, smoothing, and scale. You can use the mouse to move the surface plot and examine it from new angles.
