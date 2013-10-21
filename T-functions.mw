@@ -1,4 +1,4 @@
-''8/14: Things to check for this page: delta f functions, surfaceJ plugin, maybe get a more appropriate dataset?''
+''8/14: Things to check for this page: delta f functions, maybe get a more appropriate dataset?''
 *look at how "f divided by f0" plugin works
 
 ''9/26: "F divided by F0" plugin is not working, neither is macro.''
@@ -103,6 +103,8 @@ Surface plots can be generated in many ways: notably via the menu command “''A
 
 ===“Analyze/Surface plot” settings ===
 When this function is selected, a dialog will appear. Try the settings below first and play with them to optimise the surface plot. The LUT of the final surface plot is taken from the LUT of the image.
+
+[[File:analyze_surface.png]]
 
 ==="Interactive 3D Surface Plot" Settings===
 Once this plugin is run, a surface plot will appear along with menus including options to modify the plot including plot type (dots, lines, mesh, filled, and isolines), gradients, smoothing, and scale. You can use the mouse to move the surface plot and examine it from new angles.
