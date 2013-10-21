@@ -52,7 +52,7 @@ There are several drawbacks with the use of single wavelength fluorescent probes
 
 First ensure the image is properly background corrected.
 
-1. Generate an “F0” image by averaging the first few frames of the stack. This can be done with the “''Image/Stacks/Z-project''" menu item, using the “''Average Intensity''” drop-down box option. Select “Start slice” as 1 and “Stop slice” as 5-10 depending on how many frames you wish to average. Rename the new z-projected image (“''Image/Rename''”) “Fzero”.
+1. Generate an “F0” image by averaging the first few frames of the stack. This can be done with the “''Image/Stacks/Z-project''" menu item (Fiji assumes stacks to be z-series rather than t-series), using the “''Average Intensity''” drop-down box option. Select “Start slice” as 1 and “Stop slice” as 5-10 depending on how many frames you wish to average. Rename the new z-projected image (“''Image/Rename''”) “Fzero”.
 
 2. Open the “Image Calculator” via “''Process/Image Calculator''”. 
 
