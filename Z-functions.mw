@@ -145,6 +145,24 @@ VolumeJ is a 3D reconstruction method where the object surface will appear opaqu
 
 [[File:volumej.png|348x269px]]
 
+1. Select the volume stack that is to be rendered.
+
+2. Select the classifier (i.e. rendering algorithm). Choose 'Gradient no index' for grayscale stacks; choose 'Ramp + index' for RGB stacks.
+
+3. Set the classifier threshold as the intensity of the "surface" of the object. This can be determined using the ''"Image/Adjust/Threshold"'' command.
+
+4. Set the classifier deviation. High values result in a "blobby" look while low values result in sharp edges. A good compromise is 1-2.
+
+5. Set the rotation angle (try -20 in the first box to "tip" the volume backwards slightly).
+
+6. Ensure that the aspect ratio is correct: VolumeJ should pick up the spatial calibration of the stack if it is present.
+
+7. Set the scale as 0.5 for faster preliminary renderings. Set it to 1 or 2 for the final rendering.
+
+8. Click on the ''"Render"'' button to start rendering.
+
+9. Click on ''"Stop renderer"'' if you've made a mistake.
+
 == Stack Reslice==
 This generates a “side-view” of a stack along a user defined line. Select part of stack to be axially sectioned using the line ROI tool from the toolbar. Select menu item “''Image>Stacks>Reslice''" after drawing a straight line or rectangle onto an open stack.
 
