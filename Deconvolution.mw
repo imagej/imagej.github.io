@@ -15,7 +15,7 @@ Run the Diffraction PSF 3D plugin. A dialog will appear. Most of these are self 
 [[File:diffraction_psf_window1.png|377x317px]]
 
 == Iterative deconvolution ==
-Run the Iterative Deconvolve 3D plugin. Select the image and PSF. Start with the default values. Set iterations to equal 10 initially.
+Run the Iterative Deconvolve 3D plugin. Select the image and PSF. Start with the default values. Set iterations to equal 10 initially. Be careful not to represent the PSF with a stack or the plugin will run out of memory and terminate.
 
 [[File:iterative_deconvolve_window.png|411x272px]]
 
