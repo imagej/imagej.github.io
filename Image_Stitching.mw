@@ -110,7 +110,7 @@ The first dialog queries the type image collection or image grid that you want t
 ** ''Defined by TileConfiguration'': The next dialog will query for a tile configuration file that specifies the filenames as well as the approximate position of each tile in pixel coordinates. This is especially useful if the tiles are arranged in a way that is not covered by any of the other grid/snake options - or maybe also in z! You will find an example tile configuration file [[Image Stitching#Problems, known issues and solutions | below]]. If you want to manually or automatically create such a file I suggest creating one using grid stitching (even if you do not have any image data) and changing it accordingly.
 ** ''Defined by meta data'': Use this option if all tiles are stored in one big file that also contains the approximate stage positions in its meta data. When importing you will have the chance to further increase the overlap and define if the stage coordinates are calibrated or in pixel coordinates.
 
-[[File:GridStitching2.png|400px|thumb|Shows the main dialog for the grid stitching.]]
+[[File:GridStitching1013.png|400px|thumb|Shows the main dialog for the grid stitching.]]
 Once you selected your type of acquisition a second dialog will pop up that is slightly different depending up on your first selection. Here, I will explain the dialog that is used for any grid as this is the most complex one.
 
 The user has to define the ''grid size'', that means how the input tiles are arranged (e.g. 7 x 7 image tiles). The ''tile overlap'' is a rough estimate. Note: Smaller overlap reduces computation time, but if the correct alignment is not found try increasing this value first.
@@ -138,9 +138,20 @@ The next three entries describe the behaviour of the global optimization:
 * '''max/avg displacement threshold''': After the overlap between all individual tiles has been computed the global optimization computes an optimal arrangement of all tiles. After that, some image pairs will be placed different to each other compared to the individual alignment, which we call displacement. If there are no major alignment errors the average and maximal displacement will be below or around 1 pixel. If one of the individual alignment between two images was wrong, this pair will be displaced a lot in the global optimization as all other connecting tiles pull it towards the correct global position. If the maximal displacement is much higher than the average one it means that this individual alignment is most likely wrong and will be removed. Note: An image will just be removed if there is no link to another image any more.
 * '''absolute displacement threshold''': Removes links between images if the absolute displacement is higher than this value.
 
+There are then a series of toggles you can now choose to enable or disable.
+
+First, you can ''add tiles as ROIs'', which will generate a ROI in the ImageJ RoiManager for each stitched tile. If possible, the ROI name will contain the source file for its corresponding tile, allowing easy identification of images of interest. This will also enable and select the [[ROI Picker | ROI Picker]] tool, so you can select the ROI covering a desired visual area.
+
 Next, you can choose whether to ''compute the overlap'' or trust the (approximate) location defined by the grid, the meta data or the tile configuration file.
 
+The ''invert x'' and ''invert y'' options are extremely important if you know your dataset was collected with inverted coordinates in either of these axes. If your stitched image comes back with tiles appearing to be flipped horizontally and/or vertically, try enabling these options (as appropriate).
+
+The ''ignore Z stage position'' can be useful if individual tiles for a given XY plane in your dataset were acquired at slightly different Z positions (e.g. on a sloping gradient). The stitching plugin relies on matching Z positions to define XY planes, so if your stitched image comes back with lots of empty space and tiles scattered between slices, try this option.
+
 If you check ''supixel accuracy'', the plugin will compute a subpixel precise alignment between the two images (it hardly costs any computation time but some RAM). Furthermore, if subpixel localization is activated, linear interpolation will be used for the fusion. Otherwise no interpolation will be applied.
+
+[[File:DownsampleDialog.png|100px|thumb|Shows the secondary dialog for downsampling during stitching.]]
+If ''downsample tiles'' is selected, a dialog will pop up during the stitching process allowing you to specify a new (smaller) image size. The current image size will be displayed at first. You can enter either a new scale (from 0-1) or a direct pixel value for the new height and width. A variety of interpolation algorithms can be selected. When you are happy with the downsampler settings, click ''ok'' and stitching will continue. Note that downsampling will occur before matching or fusion of tiles, so using this option can significantly speed up these operations and reduce the final fused image's memory footprint.
 
 Now, you can choose to open the input stacks as ''virtual stacks''. This results in a significantly reduced memory consumption, however, it will consume more time to perform the computation.
 
