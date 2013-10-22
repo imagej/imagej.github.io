@@ -1,0 +1,19 @@
+{{Infobox Plugin
+| software               = Fiji
+| name                   = ROI Picker
+| author                 = Mark Hiner
+| maintainer             = Mark Hiner
+| source                 = [http://github.com/fiji/fiji/blob/master/src-plugins/Stitching_/src/main/java/tools/RoiPicker.java]
+| released               = 30 August 2013
+| latest version         = 22 October 2013
+| status                 = second version
+| category               = [[:Category:Plugins|Plugins]]
+}}
+
+== Purpose ==
+
+
+[[File:ROI_Picker.png|thumb|390px|The ROI Picker tool selected.]] 
+[[Category:Plugins]]
+
+This tool allows clicking to select existing ROIs. Clicking within the bounds of a ROI will select it in the ROI Manager. If multiple ROIs overlap over the clicked area, the union of the ROIs will be selected. Repeated clicks with the tool will then cycle through all individual ROIs in the union.
