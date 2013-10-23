@@ -289,7 +289,9 @@ This can also be done using the “''Process/Image Calculator”''function and e
 === Pseudo-correction ===
 
 {| style="border-spacing:0;"
-| colspan="2"  style="border:none;padding:0in;"| [[File:pseudoCorrectionImage.gif]]Often it is not possible to obtain a flat-field reference image. However, it is still possible to correct for illumination intensity (although not small defects such as dust) by making a “pseudo-flat field” image by performing a large-kernel filter on the image to be corrected. This is particularly useful for DIC images where there is an intrinsic, and distracting, gradient in illumination.
+| colspan="2"  style="border:none;padding:0in;"| [[File:pseudoCorrectionImage.gif]]
+
+Often it is not possible to obtain a flat-field reference image. However, it is still possible to correct for illumination intensity (although not small defects such as dust) by making a “pseudo-flat field” image by performing a large-kernel filter on the image to be corrected. This is particularly useful for DIC images where there is an intrinsic, and distracting, gradient in illumination.
 
 This can be accomplished simply by subtracting the Gaussian-blurred image version of the image.
 
