@@ -315,7 +315,7 @@ Experiment with the settings to optimize the filtering. The user can choose to f
 
 == Masking unwanted regions ==
 === Simple masking ===
-Draw around the area you want with one of the ROI tools then use: “''Edit/Clear outside''”''.&nbsp;''This will change area outside the selected region to the background value.
+Draw around the area you want with one of the ROI tools then use: “''Edit/Clear outside''”''.&nbsp;''This will change the area outside the selected region to the background value.
 
 &nbsp;
 
