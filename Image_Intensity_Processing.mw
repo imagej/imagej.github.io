@@ -271,10 +271,6 @@ This technique is applied to brightfield images. Uneven illumination, dirt/dust 
 
 |}
 
-{| style="border-spacing:0;"
-|| <center>[[File:calculator_plus_flat_field.jpg]]</center>
-|}
-
 1.&nbsp;Open both experimental image and flat-field image.
 
 2.&nbsp;“''Select all''” of the flat-field image (hotkey: A) and measure the average intensity (hotkey: M). This value will appear in the results window and represents your k1 value below.
@@ -285,9 +281,9 @@ This technique is applied to brightfield images. Uneven illumination, dirt/dust 
 
 This can also be done using the “''Process/Image Calculator”''function and ensuring the “32-bit Result” option is checked. You will then need to adjust the brightness and contrast and change the image to 8-bit.
 
-&nbsp;
+<center>[[File:calculator_plus_flat_field.jpg]]</center>
 
-|}
+&nbsp;
 
 === Pseudo-correction ===
 
