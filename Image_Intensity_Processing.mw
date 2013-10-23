@@ -125,8 +125,8 @@ This example shows the elementary calcium events preceding a calcium wave. HeLa 
 
 &nbsp;Fiji assumes stacks to be&nbsp;''z''-series rather than&nbsp;''t''-series so many functions related to the third-dimension of an image stack are called “''z-”''&nbsp;something – e.g. “z-axis profile” is intensity over time plot.
 
-== FRAP Analysis ==
-The FRAP profiler plugin will analyse the intensity of a beached ROI over time and normalise this against the intensity of the whole cell. It will then find the minimum intensity in the bleach ROI and fit the recovery&nbsp; from this point.
+== FRAP (Fluorescence Recovery After Photobleaching) Analysis ==
+The FRAP profiler plugin will analyse the intensity of a bleached ROI over time and normalise this against the intensity of the whole cell. It will then find the minimum intensity in the bleached ROI and fit the recovery&nbsp; from this point.
 
 To use:
 
