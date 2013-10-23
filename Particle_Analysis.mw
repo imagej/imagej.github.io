@@ -15,7 +15,7 @@ Automatic particle analysis requires a “binary” image i.e. black or white. T
 
 
 {| style="border-spacing:0;"
-| style="border:none;padding:0in;"| [[File:black_white_threshold.png|thumb|right]]
+| style="border:none;padding:0in;"| [[File:black_white_threshold.png|thumb|left]]
 | style="border:none;padding:0in;"| There are several ways to set thresholds. Monochrome images are most simply thresholded via the menu command “''Image/Adjust/Threshold''”. The threshold can be set using the slider bars. The pixels within the threshold range are displayed in red. When you are satisfied with the threshold settings, you can then hit “''Apply''”. This will permanently apply the threshold settings and convert the image to binary. You have different options for setting a manual threshold. The drop-down menu set to "Default" allows you to choose between "Default" and 15 other threshold techniques. The drop-down menu set to "Red" allows you to choose between a red on white color scheme, a black on white color scheme, or an over and under color scheme. The "Dark Background" box will flip the foreground color with the background color. You can also choose to check the Stack histogram box to produce a histogram for an entire stack.
 
 |}
@@ -28,7 +28,7 @@ Automatic particle analysis requires a “binary” image i.e. black or white. T
 
 One concern with setting a threshold manually is the potential to introduce user-bias. There are many algorithms described to automatically calculate the threshold. An evaluation of over 40 of these can be found in this paper: Sezgin & Sankur. 2004.&nbsp; Survey over image thresholding techniques and quantitative performance evaluation. Journal of Electronic Imaging, 2004. (13:146-165).&nbsp;''Fiji''&nbsp;has several plugins found in the menu "''Image/Adjust/Threshold''" for automatic calculation of an image threshold. These include Otsu's thresholding, maximum entropy threshold, and mixture modelling thresholding. For a complete list of the methods available with Fiji see the Plugins section located in the Documentation section under the Content tab at the top of this page. 
 
-[[File:automatic_thresholding_5.1.1.2.jpg|left]]
+[[File:automatic_thresholding_5.1.1.2.jpg]]
 
 === Watershed separation ===
 Objects in a binary image that are slightly overlapping may be separated using the menu command “''Process/Binary/Watershed”.''&nbsp;
