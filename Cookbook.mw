@@ -1,3 +1,8 @@
+<div style="background:#ffd; padding: 10px 10px 0 10px; border: 1px solid black;">
+'''Please note:''' This section of the wiki is a work in progress. The content is still being written, and the structure is not yet finalized.
+</div>
+
+
 == Introduction ==
 
 This book intends to be an analysis-oriented introduction and user guide to Fiji. It is inspired by the defunct [[MBF Plugin Collection|MBF "ImageJ for microscopy" manual]] which went offline in November 2012.
