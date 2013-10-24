@@ -1,5 +1,3 @@
-*debug "F divided by F0" plugin or macro
-
 == Correcting for bleaching ==
 Often, during acquisition of a time-course, the fluorophore may bleach and the intensity of the image be reduced. This can make it harder to discern events at the end of the sequence. A stretch in contrast at time point 1 may not be adequate at time point 100. The process of bleaching and decrease in image intensity can be fitted with a mono-exponential decay, although it often follows a bi-exponential. A mono-exponential decay is described by the equation:
 
@@ -74,6 +72,8 @@ First ensure the image is properly background corrected.
 12. Using the Image calculator “''Process/Image calculator''” to subtract this black and white stack from your FdivF0 stack. 
 
 13. Pseudocolor to taste.
+
+The F divided by F0 steps are automated in the ''"F_div_F0"'' macro found in the MBF ImageJ macros folder. This plugin will return the FdivF0 stack and a thresholded FdivF0 stack. 
 
 ==Delta-F ==
 
