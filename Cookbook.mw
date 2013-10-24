@@ -1,62 +1,18 @@
 == Introduction ==
 
-This book intends to be a users' guide for Fiji.  No prior knowledge of ImageJ, programming, or "computer lingo" should be necessary to understand the recipes.
+This book intends to be an analysis-oriented introduction and user guide to Fiji. It is inspired by, and to a large extent modeled after, the defunct [[MBF Plugin Collection|MBF "ImageJ for microscopy" manual]] which went offline in November 2012.
 
-== Recipes ==
+== Topics ==
 
 Cooks call them ''recipes'', biologists ''protocols'', and programmers call them ''HOWTOs''.  No matter how you refer to them, here they are:
 
-=== How to get the appropriate version of Fiji running ===
-
-Please see the instructions for [[Install Fiji on Linux|Linux]], [[Install Fiji on MacOSX|MacOSX]], [[Install Fiji on Windows|Windows]].
-
-=== How to open/import raw data ===
-
-<div style="background:#ffd; padding: 10px 10px 0 10px; border: 1px solid black;">
-'''Remark:''' programmers are often confused what you mean by ''raw data'' -- you talk about ''unprocessed'' data, while they refer to a certain file format.
-</div>
-
-
-Images come in many formats: LSM, Metamorph, Spot, CellR..... etc.  Most of them can be opened by Fiji (thanks to the [[Bio-Formats]] plugin.
-
-The easiest method is to mark the files you want to open the folder (in Finder, Explorer, Konqueror or whatever the program is called on your operating system), and drag-n-drop them onto the Fiji main window.
-
-=== How to navigate through 3D or 4D data ===
-
-(turning, playing/making movies, projections)
-
-=== How to measure angles (in 2D or 3D), distances, areas, intensities ===
-
-=== How do I overlay two gray images, one as red and the other as green? ===
-
-Use Image>Color>Merge Channels...
-
-TODO: screenshot, explain what "Composite" does (which is on by default...)
-
-=== How to put several images into one panel ===
-
-=== How to analyze colocalization of labels ===
-Read this: [[Colocalization Analysis]]
-
-=== How to stitch together two images ===
-
-=== How to view your data using volume rendering ===
-
-=== How to segment objects, track them, deconvolution, filtering ===
-
-all of which 2D, 3D and 4D
-
-=== How to export measurements for use in other programs, such as R, Matlab or Excel ===
-
-=== How to plot graphs from the measurements directly ===
-
-=== How to control a microscope ===
-
-(x-y-z drive, stacks, timeseries, autofocus, find object although they have moved and keep them in the field of view between timepoints; ,maybe even get a warning in the 4th floor, when something fails at the scope in the cellar)
-
-=== How to make simple macros/scripting (like do a given operation of whole bunch of pictures....) ===
-
-== Judith's questions ==
-
-=== What is the secret meaning of life ===
-42
+* [[Annotating Images]]
+* [[Brightness and Contrast]]
+* [[Color Image Processing]]
+* [[Deconvolution]]
+* [[Image Intensity Processing]]
+* [[MBF Plugin Collection]]
+* [[Particle Analysis]]
+* [[Stack-slice Manipulations]]
+* [[T-functions]]
+* [[Z-functions]]
