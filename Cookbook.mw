@@ -12,7 +12,10 @@ Please see the instructions for [[Install Fiji on Linux|Linux]], [[Install Fiji 
 
 === How to open/import raw data ===
 
- Remark: programmers are often confused what you mean by ''raw data'' -- you talk about ''unprocessed'' data, while they refer to a certain file format.
+<div style="background:#ffd; padding: 10px 10px 0 10px; border: 1px solid black;">
+'''Remark:''' programmers are often confused what you mean by ''raw data'' -- you talk about ''unprocessed'' data, while they refer to a certain file format.
+</div>
+
 
 Images come in many formats: LSM, Metamorph, Spot, CellR..... etc.  Most of them can be opened by Fiji (thanks to the [[Bio-Formats]] plugin.
 
