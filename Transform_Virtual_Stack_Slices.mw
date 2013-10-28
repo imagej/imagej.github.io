@@ -5,7 +5,7 @@
 | maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
 | source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/register_virtual_stack_slices/src/main/java/register_virtual_stack/Transform_Virtual_Stack_MT.java;hb=HEAD on gitweb]
 | released               = September 24<sup>th</sup>, 2009
-| latest version         = July 14<sup>th</sup>, 2011
+| latest version         = October 28<sup>th</sup>, 2013
 | status                 = stable, active
 | category               = [[:Category:Registration|Registration]], [[:Category:Transform|Transform]]
 }}{|
