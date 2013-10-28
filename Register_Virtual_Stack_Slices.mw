@@ -5,7 +5,7 @@
 | maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
 | source                 = {{GitLink|jar=register_virtual_stack_slices|path=register_virtual_stack/Register_Virtual_Stack_MT.java}}
 | released               = 2008
-| latest version         = October 28<sup>th</sup>, 2013
+| latest version         = November 27<sup>th</sup>, 2012
 | status                 = stable, active
 | category               = [[:Category:Registration|Registration]]
 }}{|
