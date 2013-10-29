@@ -12,7 +12,7 @@ The spatial calibration of an image can be found in ImageJ via the menu item “
 
 Biorad PIC, Noran MOV and Zeiss LSM confocal image files (''Leica and Olympus?'') are internally calibrated – based on the zoom and objective magnification settings. Some experimental file formats are not calibrated (e.g. Perkin Elmer) and some “exported” image files (e.g. Zeiss zvi’s exported as TIFFs) lose their calibration information. This is sloppy programming on part of the microscope manufacturers.
 
-If the files have no calibration, you need to acquire images of a stage micrometer ''with the same settings ''(camera binning, objective, confocal zoom and frame size etc.) as your experiment. The calibration can be applied using the “''Plugins/Spatial calibration/Set scale''” command (see below) from the MBF plugins collection. The spatial calibration can be found (and set) in the “''Image/Properties''” dialog. Also look at the “''Microscope scale'' ” plugin which can be customized to apply spatial calibrations from a drop-down box of objectives (http://rsb.info.nih.gov/ij/plugins/microscope-scale.html).
+If the files have no calibration, you need to acquire images of a stage micrometer ''with the same settings ''(camera binning, objective, confocal zoom and frame size etc.) as your experiment. The calibration can be applied using the “''Analyze/Set Scale''" (see below). The spatial calibration can be found (and set) in the “''Image/Properties''” dialog. Also look at the “''Microscope scale'' ” plugin which can be customized to apply spatial calibrations from a drop-down box of objectives (http://rsb.info.nih.gov/ij/plugins/microscope-scale.html).
 
 [[File:set_scale_plugin.png|179x200px]]
 
