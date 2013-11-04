@@ -69,15 +69,15 @@ The count, area and average size are returned as a text window and the outlined 
 &nbsp;
 
 == Manual Counting ==
-You can use the Fiji toolbar&nbsp;''Crosshair (mark and count)''&nbsp;tool to count particles. However, a greater degree of control can be accessed with the “Point Picker” or “Cell counter” plugins that must be downloaded into the Fiji plugins folder.
+You can use the Fiji toolbar&nbsp;''Crosshair (mark and count)''&nbsp;tool to count particles. However, a greater degree of control can be accessed with the “PointPicker” or “Cell counter” plugins.
 
 === Cell Counter ===
-When then Cell Counter plugin is run, a new Image window is generated with the original image plus four buttons along the bottom (Red type, Green type, Blue type and Yellow type). Clicking on a button changes the color of the marking tool. The results table keeps a tally of the number of each of the cell types marked. Clicking the Results button will generate a summary of the data.
+When then "Cell Counter" plugin is run, a new Image window is generated with the original image plus four buttons along the bottom (Red type, Green type, Blue type and Yellow type). Clicking on a button changes the color of the marking tool. The results table keeps a tally of the number of each of the cell types marked. Clicking the Results button will generate a summary of the data.
 
 [[File:cell_counter.jpg]]
 
-=== Point Picker ===
-When the PointPicker plugin is run it will change the Fiji toolbar to the PointPicker toolbar.
+=== PointPicker ===
+When the "PointPicker" plugin is run it will change the Fiji toolbar to the "PointPicker" toolbar.
 
 Crosses are reversibly overlaid on to the image, incrementally changing color (this differs from the''Crosshair&nbsp;''tool which irreversibly stamps a point in the image). With the Point Picker tool, crosses can be moved and deleted. Once marking is complete, the cross coordinates can be accessed via the&nbsp;button.
 
