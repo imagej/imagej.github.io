@@ -44,7 +44,7 @@ Set the minimum size and maximum pixel area size to exclude objects that appear 
 The particle analysis can be automated via plugins or macros once the correct threshold value and particle size range has been determined for your objects of interest. Download the "Nucleus counter" plugin to your Fiji plugins folder and view its source code to customize it to your images.&nbsp;
 
 === Nucleus Counter ===
-This plugin, that must be downloaded into the Fiji plugins folder, automates many of the steps discussed above. You can:
+This plugin automates many of the steps discussed above. You can:
 
 1. Enter the size range which should be counted[[File:nucleus_counter_1.jpg|right]].
 
