@@ -1,6 +1,6 @@
-Writing papers and making figures is and always will be a big part of what scientists do. Many of us use open source software such as Fiji to process images however the Figure is often finalized in commercial software - typically from Adobe. Needless to say neither Photoshop nor Illustrator are designed to make the process of scientific figure making easier. 
+Writing papers and making figures is and always will be a big part of what scientists do. Many of us use open source software, such as Fiji, to process images however the figure is often finalised in commercial software - typically from Adobe. Needless to say neither Photoshop nor Illustrator are designed to make  scientific figures. 
 
-Two groups have recently introduced plugins that leverage the tools available in ImageJ/Fiji to make scientific figures. Both tools are made by scientists introducing innovative concepts specifically designed to make scientitific figure making easier and more controlled.
+Two groups have recently introduced plugins that leverage the tools available in ImageJ/Fiji to make scientific figures. Both tools are made by scientists introducing innovative concepts specifically designed to make scientific figure making easier and more controlled.
 
 [http://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:figurej:start '''FigureJ'''] from ''Jerome Mutterer'' and [http://srv-gred.u-clermont1.fr/labmirouse/software/ '''ScientiFig'''] from ''Benoit Aigouy'' are well documented, open source ([https://github.com/mutterer/figurej FigureJ] [https://github.com/baigouy/ScientiFig ScientiFig]) and published:
 
