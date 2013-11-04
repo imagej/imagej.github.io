@@ -91,14 +91,13 @@ Particle Tracker is a 2D feature point-tracking plugin for the automated detecti
 &nbsp;
 
 '''TrackMate''' 
-This plugin allows you to perform single particle tracking of spot-like structures. For more in-depth information, see the tutorial and explanation in the Tutorials Documentation.
+Use the menu command&nbsp; "Plugins/Tracking/TrackMate". This plugin allows you to perform single particle tracking of spot-like structures. For more in-depth information, see the tutorial and explanation in the Tutorials Documentation.
 
 Simply click on the Content tab at the top of this page and then choose Documentation from the drop down menu. Under the heading that says "Using Fiji" you should see a Tutorials link. Click this link and then look for the one labeled TrackMate.
 &nbsp;
 
 '''Manual Tracking'''
-
-Download the Manual_Tracking Plugin the the Fiji plugins folder. This tool allows you to keep track of the movement of a cell.
+Use the menu command&nbsp; "Plugins/Tracking/Manual Tracking". This tool allows you to keep track of the movement of a cell.
 
 &nbsp;
 
