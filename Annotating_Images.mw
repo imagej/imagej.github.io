@@ -3,14 +3,14 @@
 = Annotating images =
 
 == Scale bar ==
-Scale bars should be present on all publications/presentation images/movies. It’s worth putting them in sooner rather than later. Choose a standard scale bar size for all your images if possible to avoid confusion.
+All images for publications or presentations should include a scale bar. To avoid confusion, a standard size should be used for the scale bars on all images if possible.
 
 === Spatial calibration ===
-The spatial calibration of an image can be found in ImageJ via the menu item “''Image/Properties''”. It can be manually (re)applied here also. The units ‘um” are automatically changed to “µm”.
+You can access and edit an image's spatial calibration using "''Image/Properties''". Note that the units "um" will automatically change to “µm”.
 
-Biorad PIC, Noran MOV and Zeiss LSM confocal image files (''Leica and Olympus?'') are internally calibrated – based on the zoom and objective magnification settings. Some experimental file formats are not calibrated (e.g. Perkin Elmer) and some “exported” image files (e.g. Zeiss zvi’s exported as TIFFs) lose their calibration information. This is sloppy programming on part of the microscope manufacturers.
+Some microscope models (Biorad PIC, Noran MOV, and Zeiss LSM confocal image files) will use the zoom and objective magnification settings for internal calibration. However, it is important to keep in mind that some file formats (e.g. Perkin Elmer) are not calibrated while some "exported" image files (e.g. Zeiss zvi's exported as TIFFs) will lose their calibration information completely.
 
-If the files have no calibration, you need to acquire images of a stage micrometer ''with the same settings ''(camera binning, objective, confocal zoom and frame size etc.) as your experiment. The calibration can be applied using the “''Analyze/Set Scale''" (see below). The spatial calibration can be found (and set) in the “''Image/Properties''” dialog. Also look at the “''Microscope scale'' ” plugin which can be customized to apply spatial calibrations from a drop-down box of objectives (http://rsb.info.nih.gov/ij/plugins/microscope-scale.html).
+In the case that the files have no calibration, you can apply the calibration using images of a stage micrometer with the same settings as your experiment. These settings include camera binning, frame size, objective, confocal zoom, etc. Then the calibration can be applied using "'Analyze/Set Scale''" (see below). Spatial calibration can also be found and set in the "''Image/Properties''" dialog. The "''Microscope Scale''" plugin is another alternative and can be customized using a drop-down box of objectives to apply spatial calibrations (http://rsb.info.nih.gov/ij/plugins/microscope-scale.html).
 
 [[File:set_scale_plugin.png|179x200px]]
 
