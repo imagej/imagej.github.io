@@ -1,0 +1,12 @@
+== Rectangular structuring element ==
+
+=== 2D case ===
+
+If the image has <code>M</code> pixels, and that the rectangle is a square of side 
+<code>R</code>, then the non-optimized case should have a processing time proportional to <code>M × R²</code>. The optimized case replace iterating over the square by iterating twice over a line of length <code>R</code>. Therefore its processing time should be proportional to <code> 2 × M × R</code>. 
+
+The performance improvement should therefore be equal to <code>R / 2</code>. A linear fit of the actual curve rather shows that the law is <code> 0.73 × R + 0.37</code>. This extra benefit - I don't why it's there. 
+
+=== 3D case ===
+
+Here the standard case takes a time proportional to <code>M × R³</code>, and the optimized case a time proportional to <code> 3 × M × R</code>. Therefore the performance ratio should be  <code>R² / 3</code>. A fit shows that this ratio follows <code>0.63 × R² + 0.57 × R + 0.48</code>.
