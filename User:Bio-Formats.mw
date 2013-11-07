@@ -1,4 +1,4 @@
-This account is used to manage the [http://sites.imagej.net/Bio-Formats/ Bio-Formats update site]. See also [[List of update sites]].
+This account is used to manage the [http://sites.imagej.net/Bio-Formats/ Bio-Formats 4 update site]. See also [[List of update sites]].
 
 To activate it in your Fiji setup:
 
@@ -13,4 +13,4 @@ Five files should appear on the list with ''Status/Action'' of ''Update it''.
 * Restart Fiji
 * ''Help>About Plugins>LOCI Plugins...''
 
-The dialog should now show a build date of ''14 August 2013'' or later.
+The dialog should now show a very recent build date (within the last few days).
