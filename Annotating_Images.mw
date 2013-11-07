@@ -40,17 +40,15 @@ This plugin simply points to the native menu command “''Analyze/Set scale…�
 
 === Adding scale-bar  ===
 
-Use the line ROI tool to draw a line of approximately the desired length and position.
+First, use the line ROI tool to draw a line of approximately the desired position and length.
 
-Run the scale bar dialog via “''Plugins/Spatial calibration/Add Scale bar''”. Change the “''Width in ***''” value to something sensible i.e. 5, 10, 50 etc. Stick to something consistent. “''Height''” will determine how many pixels fat your bar will be.
-
-You can also use the line ROI tool to draw a line of approximately the desired length and position. In this case, the length of the scale-bar will be the length of the line ROI, though you can still choose if you want the scale-bar in the position you've drawn it or a different position on the image.
+Run the scale bar dialog via the "Add Scale Bar" plugin. Change the “''Width in ***''” value to something sensible (5, 10, 50 etc.). “''Height''” will determine how many pixels fat your bar will be.
 
 If you’ve used the “Green” LUT, then the “white” (i.e. gray level 255) scale-bar will appear green. Convert the image from 8-bit color to RGB with “''Image/Type/RGB color''” before adding the scale bar to get a white scale-bar on a pseudocolored image.
 
 Check the “''Label all slices''” box to add a scale-bar to the whole stack.
 
-This plugin simply points to the native menu command “''Analyze/Tools/Scale bar…”.'' It is included here just to keep the spatial calibration functions in one place.
+This plugin points to the native menu command “''Analyze/Tools/Scale bar…”.''
 
 ==  Text and lines ==
 === Issues with adding text ===
