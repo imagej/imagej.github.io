@@ -52,17 +52,15 @@ This plugin points to the native menu command “''Analyze/Tools/Scale bar…”
 
 ==  Text and lines ==
 === Issues with adding text ===
-Adding text to single frame images should be done in CorelDRAW or some such application so the text does not become part of the image and can therefore be edited/moved/removed at any time. Adding text to an image/movie is irreversible so should not be done on raw data. Images can be copied to and pasted from the system clipboard between programs using the System Clipboard plugin (Plugin documentation found [http://rsbweb.nih.gov/ij/plugins/clipboard.html here])or by using the ''"Copy to System"'' and ''"Paste"'' options in the ''Edit'' menu. If you find the image is not pasting accurately, try using the receiving application’s “''Edit/Paste Special''” function and select “''Device independent bitmap''”.
+Adding text to single frame images should be done in CorelDRAW or a similar application so the text does not become part of the image and can therefore be edited at any time. Adding text to an image/movie is irreversible so should not be done on raw data. Images can be copied to and pasted from the system clipboard between programs using the System Clipboard plugin (Plugin documentation found [http://rsbweb.nih.gov/ij/plugins/clipboard.html here])or by using the ''"Copy to System"'' and ''"Paste"'' options in the ''Edit'' menu. In the case that an image is not pasting accurately, use "''Edit/Paste Special''" in the receiving application, then select "''Device independent bitmap''".
 
-Firstly, save your images before adding text. Many things can go wrong here and often cannot be corrected so it’s best to have a saved version ready to reopen.
+Always save your images before adding text. Text color is set via the color picker button on the tool bar. Double-click on it to open the palette and choose a color. 
 
-Text color is set via the color picker button on the tool bar. Double-click on it to pull up the palette and select a color – usually black or white. 
-
-Pseudocolored images should be converted to RGB ("''Image/Type/RGB color"'') prior to adding text. The text is “anti-aliased”. This means that instead of being completely white in color, some pixels on the curved edges of letters are averaged with neighboring pixels to be gray, giving a smoother appearance to the text.
+Pseudocolored images should be converted to RGB ("''Image/Type/RGB color"'') prior to adding text. The text is “anti-aliased”. This means that instead of being completely white in color, some pixels on the curved edges of letters are averaged with neighboring pixels. This makes these pixels gray and helps the text to appear smoother.
 
 [[File:aliased_text.png]]
 
-The text looks better; however, it means that some of the text’s pixels are not gray-scale value 255 and so some LUTs will have them displayed as yellow/orange/green thereby loosing the nice smoothing effect of the antialiasing.
+Since some of the pixels in anti-aliased text are not gray-scale value 255, some LUTS will display the pixels as other colors such as orange or green. This will lose the smoothing affect from antialiasing.
 
 [[File:antialiased_lut.png]]
 
@@ -78,11 +76,11 @@ Text on converted image.
 
 === Adding Text/Line/Box  ===
 
-Adding a box, line, or text to a single frame should be done in a package such as CorelDRAW, Adobe Illustrator, Deneba Canvas etc. However, there are times when lines and boxes are required, e.g. to reference an analyzed/sectioned region.
+Adding a box, line, or text to a single frame should ideally be done in a package such as CorelDRAW, Adobe Illustrator, Deneba Canvas etc. However, there are times when lines and boxes are required in ImageJ, e.g. to reference an analyzed/sectioned region.
 
-Drawing of lines/boxes is achieved by first ''selecting'' the desired line/box in the image with the line/rectangle ROI tool from the toolbar or defining the box via “''Plugins/Specify ROI…''” or "''Plugins/Specify Line''". The line/box can be resized here to the desired size/shape with the small square handles on the ROI. The line/box can then be stamped in to the image through "''Edit/Draw''" or shortcut "Ctrl+d". If you're drawing the ROI to a stack, you'll be asked if you want to process all of the slices. Choosing 'yes' will draw the ROI on every slice while choosing 'no' will result in the ROI only being added to the current frame. The color is determined by the color picker toolbar button and the width in pixels defined in “''Edit/Options/Line width''”. The line width must be determined before it is drawn on the image. 
+Drawing lines/boxes is achieved by first using the line/rectangle ROI tool from the toolbar or defining the box via the ''Specify Line'' or ''Specify ROI'' plugins. The line/box can then be stamped in to the image through "''Edit/Draw''" or the shortcut "Ctrl+d". If you're drawing the ROI on a stack, you'll be asked if you want to process all of the slices. Choosing 'yes' will draw the ROI on every slice while choosing 'no' will result in the ROI only being added to the current frame. The color is determined by the color picker toolbar button and the width in pixels is defined in “''Edit/Options/Line width''”. The line width must be determined before it is drawn on the image. 
 
-Adding text is done by the toolbar’s text button. Click the toolbar, click the image, and write the desired text. The font size and style are both set by double clicking the toolbar-text button and the color is determined by the color picker toolbar button. Antialiasing can be turned on/off via the menu item “''Edit/Options/Fonts''” and unchecking the "Smooth" option (although this option does not affect the Stamper plugins which have antialiasing on permanently). The text is stamped in to the image through the same methods of drawing on a box or line (''Edit/Draw'' or "Ctrl+d").
+Adding text is done with the toolbar’s text button. Click the toolbar, click the image, and write the desired text. Double click on the toolbar-text button to set the font size and style. Color is determined by the color picker toolbar button. Antialiasing can be turned on/off via the menu item “''Edit/Options/Fonts''” and unchecking the "Smooth" option (although this option does not affect the Stamper plugins which have antialiasing on permanently). The text is stamped onto the image through the same methods of drawing on a box or line (''Edit/Draw'' or "Ctrl+d").
 
 It is possible to add a line, box, or text to each slice in a stack. After adding to a single slice and selecting "''Edit/Draw''", you will be asked if  you want to apply the selection to every slice. Keep in mind that there is no undo option for this operation.
 
@@ -90,7 +88,7 @@ Adding text to a stack is a slightly different process. You can draw a text box 
 
 === Adding timestamps ===
 
-1. Open the time stamper through "''Image/Stacks/Time Stamper2''". From here, you can specify the location, interval, format, and other properties of the time stamp.
+1. Open the ''Time Stamper2'' plugin. From here, you can specify the location, interval, format, and other properties of the time stamp.
 
 [[File:time_stamper.png|166x237px]]
 
@@ -100,8 +98,8 @@ Remember: bigger text will typically look smoother and the timestamp will be eas
 
 Also, bear in mind that the interval needn't be "time". The Time Stamper can also be used to add "z-axis depths" to z-stacks and "angle of rotation" to rotating volume movies (° = Alt+248; µ = Alt+230).
 
-=== Adding event marker to movie ===
-The “''Plugins/Movies/Event Stamper” ''plugin can be used to add text to a movie for a designated number of frames, e.g. “Agonist ON”. This is simply done by running the ''Event Stamper ''plugin setting the desired text in the “Text” box, enter start frame and end frame and click OK. The text size and location are taken from the current ROI and can be changed once the dialog is opened. 
+=== Adding event markers to a movie ===
+The ''Event Stamper'' plugin can be used to add text to a movie for a designated number of frames. Set the desired text in the “Text” box, enter the start frame and end frame and click OK. The text size and location are taken from the current ROI and can be changed once the dialog is open. 
 
 
 
