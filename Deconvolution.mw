@@ -1,6 +1,6 @@
 = Deconvolution =
 == Introduction ==
-These two plugins from Bob Dougherty are used together to firstly generate an image-stack of the point-spread function (PSF). The second plugin uses this PSF image stack along with your sample-stack with the Iterative Deconvolution 3D plugin. The image below is a single slice taken from a stack before and after deconvolution using these plugins. 
+These two plugins from Bob Dougherty are used together to generate an image-stack of the point-spread function (PSF). The Iterative Deconvolution 3D plugin uses this PSF image stack along with your sample-stack. The image below is a single slice taken from a stack before and after deconvolution using these plugins. 
 
 [[File:deconvoluted_data.png]]
 
@@ -10,12 +10,12 @@ These two plugins from Bob Dougherty are used together to firstly generate an im
 
 The Diffraction PSF 3D plugin can be used to generate theoretical PSFs assuming they arise only from diffraction. These PSFs may be used with other deconvolution plugins later.
 
-Run the Diffraction PSF 3D plugin. A dialog will appear. Most of these are self explanatory. The width, height and depth values are for the PSF image, not your image stack. The correct values will need to be empirically determined.
+Run the Diffraction PSF 3D plugin. A dialog will appear; most of the fields are self explanatory. The width, height and depth values are for the PSF image, not your image stack. The correct values will need to be empirically determined.
 
 [[File:diffraction_psf_window1.png|377x317px]]
 
 == Iterative deconvolution ==
-Run the Iterative Deconvolve 3D plugin. Select the image and PSF. Start with the default values. Set iterations to equal 10 initially. Be careful not to represent the PSF with a stack or the plugin will run out of memory and terminate.
+Run the Iterative Deconvolve 3D plugin, then select the image and PSF. Start with the default values and set iterations to 10 initially. Be careful not to represent the PSF with a stack or the plugin will run out of memory and terminate.
 
 [[File:iterative_deconvolve_window.png|411x272px]]
 
