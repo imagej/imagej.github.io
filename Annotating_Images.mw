@@ -14,30 +14,29 @@ In the case that the files have no calibration, you can apply the calibration us
 
 [[File:set_scale_plugin.png|179x200px]]
 
-Many image processing functions can cause the spatial calibration to be lost. If the final image has lost its calibration, open the original file and access the spatial calibration via: “''Image/Properties''”. Copy these values to the “''Image/Properties''” of your final, processed image. Replacing the word “micron” with “um” will automatically convert to “µm”. 
+Sometimes the spatial calibration may be lost after applying an image processing function. In this case, use the spatial calibration from the original file (use "''Image/Properties''") to update the "''Image/Properties''" values of the final, processed image.
 
-The spatial calibration can be reapplied in three ways: manually via the “''Image/Properties''” dialog; via the “''Plugins/Spatial calibration/Copy Pixel Size'' ” plugin that applies pixel size of one image to a second image; or via the “''Plugins/Spatial calibration/Set scale” ''command. ''Set scale'' and ''Copy Pixel Size'' are both included in the MBF plugins.
+There are three ways to reapply spatial calibration: manually via the “''Image/Properties''” dialog; via the "Copy Pixel Size" plugin that applies pixel size of one image to a second image; or via the "Set Scale" plugin. 
 
 ==== “Copy-calibration”  ====
 
 [[File:copy_pixel_size.png]]
-# Re-open the original image with the calibration
-# Run the “''Plugins/Spatial Calibration/Copy Pixel Size''” plugin. 
-# In the “''from” ''drop-down box select the original image; in the “''to”'' box, select your processed image. 
-# Click the OK button.
-# Another dialog will open giving you the opportunity to enter a value by which the receiving image has been scaled.
+# Open the image with the original calibration
+# Run the "Copy Pixel Size" plugin. 
+# In the “''from''" drop-down box select the original image; in the “''to''" box, select the processed image. Click OK.
+# In the new dialog, enter a value by which the receiving image has been scaled.
 
 [[File:copy_pixel_size_values.png|180x240px]]
 
 ====“Set Scale” ====
 If you know the size of a feature (for instance, a previously applied scale bar) you can use this command to apply a calibration.
 
-# Using the line selection tool, draw a ling along the length of the feature/scale bar. Do not choose "''Edit/Draw''" after adding the line.
-# Run the menu command “''Plugins/Spatial calibration/Set scale''”
-# Enter the dimensions of the object/scale bar in the “''known distance”'' box and set the units in the ''Unit of length'' box.
-# Do not check ''Global'' unless you wish all your images to have this calibration! Click OK.
+# Using the line selection tool, draw a line along the length of the feature or scale bar. Do not choose "''Edit/Draw''" after adding the line.
+# Run the menu command “''Plugins/Spatial calibration/Set scale''".
+# Enter the dimensions of the object/scale bar in the “''known distance''” box and set the units in the "''Unit of length''" box.
+# Do not check ''Global'' unless you wish all your images to have this calibration. Click OK.
 
-This simple plugin simply points to the native menu command “''Analyze/Set scale…”'' and is included here to keep the spatial calibration functions in one place.
+This plugin simply points to the native menu command “''Analyze/Set scale…”''.
 
 === Adding scale-bar  ===
 
