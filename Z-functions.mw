@@ -2,10 +2,10 @@
 *VolumeJ interactive rendering?
 
 == Stack-Projections ==
-A z-series is generally difficult to represent as a 2-D image for publication purposes. A montage will allow the 3-D dataset to be visualised in 2-D, but results in each frame being very small. There are several ways to "flatten” the 3D stack.
+A z-series is generally difficult to represent as a 2-D image for publication purposes. A montage will allow the 3-D dataset to be visualized in 2-D, but results in each frame being very small. There are several ways to "flatten” the 3D stack.
 
 === Maximum Intensity Z-projection: ===
-Z Project is a method of analyzing a stack by applying different projection methods to the pixels within the stack. This process may be used to highlight specific data from the stack and is accessed using ''Image>Stacks>Z Project…''
+Z Project is a method of analyzing a stack by applying different projection methods to the pixels within the stack. This process may be used to highlight specific data from the stack and is accessed using ''Image/Stacks/Z Project…''
 
 When Z Project opens, it prompts for a start and stop slice, which will determine the range of the stack that will be included in the z projection. The default for these values is the endpoint slices of the stack. 
 
@@ -19,29 +19,25 @@ The six projection methods clockwise from top left: average intensity, maximum i
 
 ===Grouped Z Projector===
 
-This plugin is available for download [http://rsbweb.nih.gov/ij/plugins/group.html here].
-
 The Grouped Z Projector plugin works similarly to Z Project in terms of projection methods. This plugin uses the maximum intensity, average intensity, or sum slices projection method to apply a z projection to a stack of images. Unlike the standard Z Project, this plugin prompts for a group size that must be a factor of the total number of slices in the stack.
 
-The plugin will then apply the selected projection method to subgroups with this number of slices, starting with the first slice. The result of running this plugin is a new stack where each slice is a a projection of a subset of the original stack. This is a useful plugin for analyzing large stacks where the change from slice to slice is still relevant, but not all slices need to be examined individually. If group size is selected as the same as the number of slices in the stack, Grouped Z Projector will evaluate the stack in the same manner as Z Project.
+The plugin will then apply the selected projection method to subgroups with this number of slices, starting with the first slice. The result of running this plugin is a new stack where each slice is a a projection of a subset of the original stack. This is a useful plugin for analyzing large stacks where the change from slice to slice is still relevant, but not all slices need to be examined individually. If group size is set to equal the number of slices in the stack, Grouped Z Projector will evaluate the stack in the same manner as Z Project.
 
 [[File:grouped_z_stack.png|377x245px]]
 
 Grouped Z Projector applied to two halves of a stack, resulting in the two slices shown.
 
 === Sobel Filter Based Focusing ===
-The Stack Focuser plugin uses a Sobel edge filter to calculate “best focus”. Try “3” for the kernel value in the first instance. The result is a "height map" showing the focused images. Only works on 8- or 16-bit images. It can result in a “pixelly” image.
+The Stack Focuser plugin uses a Sobel edge filter to calculate “best focus”. Try “3” for the kernel value in the first instance. The result is a "height map" showing the focused images. This plugin only works on 8- or 16-bit images. It can result in a “pixelly” image.
 
 [[File:stack_focuser_example.png]]
 
-Result of the Stack Focuser plugin with '3' as kernel value.
-
-The plugin can be downloaded [http://rsbweb.nih.gov/ij/plugins/stack-focuser.html here] and is also included in the MBF plugins collection.
+Result of the Stack Focuser plugin with '3' as the kernel value.
 
 === Wavelet-transform Based Focusing ===
 Authors: Daniel Sage, Jesse Berent, Brigitte Forster, Dimitri Van De Ville, Biomedical Imaging Group, Swiss Federal Institute of Technology Lausanne (EPFL), Switzerland, [http://bigwww.epfl.ch/demo/edf/index.html http://bigwww.epfl.ch/demo/edf/index.html].
 
-Superior, but slower, algorithm compared to the Sobel-filter focusing. Menu command “''Plugins>Process>Extended Depth of Field''” plugin uses a wavelet transform (a more sophisticated transform compared to the Fourier transform) to calculate to “best focus”. Run plugin and check "Show 3D View". Works with RGB images. A more detailed description of the wavelet transform extended depth of field plugin can be found at the authors' website. A topology image is also generated. Please cite the authors' papers below if you publish work using this plugin.
+This is a superior but slower, algorithm compared to the Sobel-filter focusing. The "''Extended Depth of Field''” plugin uses a wavelet transform (a more sophisticated transform compared to the Fourier transform) to calculate “best focus”. Run the plugin and check "Show 3D View". This plugin will work with RGB images. A more detailed description of the wavelet transform extended depth of field plugin can be found at the authors' website. A topology image is also generated. Please cite the authors' papers below if you publish work using this plugin.
 
 [[File:Extended_depth_of_field.png]]
 
@@ -53,9 +49,9 @@ J. Berent, B. Forster, D. Van De Ville, D. Sage, M. Unser, "[http://bigwww.epfl.
 
 ==Depth Coding==
 
-One method of preserving some z-information in a 2D image is to 'depth-encode' the stack. A monochrome 3D image can be colored so that the color represents the z-depth. Any subsequent projection will retain this z-encoding. An 8 bit stack can be depth encoded with the menu command "''Image>Hyperstacks>Temporal-Color Code''". From there you will be able to choose a LUT as well as the start and end slices from the stack.
+One method of preserving some z-information in a 2D image is to 'depth-encode' the stack. A monochrome 3D image can be colored so that the color represents the z-depth. Any subsequent projection will retain this z-encoding. An 8-bit stack can be depth encoded with the menu command "''Image/Hyperstacks/Temporal-Color Code''". From there you will be able to choose a LUT as well as the start and end slices from the stack.
 
-Another option is to use the MBF plugin ''Z Code Stack'' (''Plugins/Stacks/Z&T Projections/Z Code Stack'') for the results shown below.
+Another option is to use the plugin ''Z Code Stack'' for the results shown below.
 
 Original stack:
 
@@ -71,7 +67,7 @@ Maximum Intensity Projections of each:
 
 == 3D Project ==
 
-3D project (Image>Stacks>3D Project) creates a 3D rendering from a stack and rotates the resulting object through a range of angles. When using this plugin, you will be prompted for a variety of initial specifications. Based on these values, the program will generate a stack depicting a 360 degree rotation of the resulting 3D projection. There are three projection methods available: nearest point, brightest point, and mean value. 
+3D project (Image/Stacks/3D Project) creates a 3D rendering from a stack and rotates the resulting object through a range of angles. When using this plugin, you will be prompted for a variety of initial specifications. Based on these values, the program will generate a stack depicting a 360 degree rotation of the resulting 3D projection. There are three projection methods available: nearest point, brightest point, and mean value. 
 
 [[File:3d_project_window.png|225x293px]]
 
