@@ -1,3 +1,15 @@
+<tt>!!Work in Progress!! 
+
+This page centralizes documentation and current performance of the morphological operation package in imglib2. As the package is under development, the information here might be irrelevant or useless</tt>
+
+
+== Diamond structuring element ==
+
+This structuring element can be exactly decomposed in a series of smaller diamond and diamond tips, as proposed in [http://www.sciencedirect.com/science/article/pii/1049965292900553.htm Rein van den Boomgard and Richard van Balen, Methods for Fast Morphological Image Transforms Using Bitmapped Binary Images, CVGIP: Models and Image Processing, vol. 54, no. 3, May 1992, pp. 252-254.]
+
+Here is a comparison on how the decomposed version performs versus the non-decomposed one.
+
+
 == Rectangular structuring element ==
 
 === 2D case ===
