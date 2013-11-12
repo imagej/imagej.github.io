@@ -179,14 +179,14 @@ From this point, you can generate a new stack by reconstructing the slices along
 The ''Dynamic Reslice'' plugin is used the same way as "''Image/Stacks/Reslice''". This plugin will dynamically update the slice generated as the ROI is changed on the original image.
 
 == Orthogonal Views ==
-A straightforward method to visualize 3D renderings is through orthogonal views, accessed via Image>Stacks>Orthogonal Views. This method may be used with a stack to display the XZ and YZ planes at a given point in the 3D image. When Orthogonal Views is opened, windows containing the two planes will dock alongside the original stack, with the intersection of the yellow lines on the stack indicating the point in the stack that is being analyzed. The views in the XZ and YZ planes will update automatically, either as the stack is set to a different slice or the lines are manually adjusted on any of the three windows. 
+A straightforward method to visualize 3D renderings is through orthogonal views, accessed via "''Image/Stacks/Orthogonal Views''". This method may be used with a stack to display the XZ and YZ planes at a given point in the 3D image. When Orthogonal Views is opened, windows containing the two planes will dock alongside the original stack, with the intersection of the yellow lines on the stack indicating the point in the stack that is being analyzed. The views in the XZ and YZ planes will update automatically, either as the stack is set to a different slice or the lines are manually adjusted on any of the three windows. 
 
 [[File:orthogonal_views_example.png|292x350px]]
+
 
 Example of image seen with orthogonal views.
 
 === Stack Slicer ===
-This plugin is available for download [http://rsbweb.nih.gov/ij/plugins/stack-slicer/index.html here].
 
 This plugin is an alternative to the orthogonal views option. After making a point selection on the original stack, you can run the plugin to generate images of the XZ and YZ planes intersecting with this point. By selecting the rotate YZ option, the image of the YZ plane will rotate 90 degrees counterclockwise. 
 
