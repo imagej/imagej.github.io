@@ -139,7 +139,7 @@ The “Edit” menu supplies some more options to change the color and transpare
 ''Edit/Transformation/Set Transform'' can give more control over the placement of the rendering by specifying rotation origin and rotation axis. You can also use the 3x4 matrix in "Set Transform" to specify the x, y, and z axes of the transformed coordinate system in the first three columns and the vector from the old origin to the new origin in the fourth column.
 
 ==Other Volume Rendering Methods==
-3D reconstruction methods where the object will appear semitransparent include ''360° 3D-project'' and ''Rocking 3D-project''. These are macros contained in the MBF plugin package. ''360° 3D-project'' produces a stack with a 360° rotation of the z-transform. The results will look similar to those generated with the ''Grouped Z Projector'' plugin. If you want the stack to just rock back and forth, use the ''Rocking 3D-project'' macro.
+3D reconstruction methods where the object will appear semitransparent include ''360° 3D-project'' and ''Rocking 3D-project''. ''360° 3D-project'' produces a stack with a 360° rotation of the z-transform. The results will look similar to those generated with the ''Grouped Z Projector'' plugin. If you want the stack to just rock back and forth, use the ''Rocking 3D-project'' macro.
 
 ==Surface Render==
 
