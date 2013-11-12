@@ -118,23 +118,24 @@ The z-Aspect may be used to either stretch or compress data along the Z-axis whi
 
 ==3D Viewer==
 
-This method is accessed via ''Plugins>3D>3D Viewer''. The 3D Viewer uses a stack of images to visualize it in 3D space as a volume, a surface, or orthoslices. When the plugin is run, you will have the option to choose a name for the new image as well as the display method: volume, orthoslice, surface, surface plot 2D, or multiorthoslices. Color, threshold, sampling factor, channels, and starting time point may also be selected. The starting time point is used to insert the rendering into a movie where the rendering is present starting at the time point specified. At this time point, modification of the image is possible within the viewer. Many of these variables may be updated in the viewer once the rendering is generated.
+This plugin is found in the plugins folder. The 3D Viewer uses a stack of images to visualize it in 3D space as a volume, a surface, or orthoslices. When the plugin is run, you will have the option to choose a name for the new image as well as the display method: volume, orthoslice, surface, surface plot 2D, or multiorthoslices. Color, threshold, sampling factor, channels, and starting time point may also be selected. The starting time point is used when inserting the rendering into a movie: the rendering will be present starting at the time point specified. At this time point, modification of the image is possible within the viewer. Many of these variables may be updated in the viewer once the rendering is generated.
 
 [[File:3d_viewer_window.png|201x247px]]
 
 The window seen when 3D Viewer is opened.
 
+
 To use the 3D Viewer, an 8-bit or RGB image is required. If used on another type of stack, the plugin will have a prompt for you to choose to convert to these types.
 
-The current display mode may be changed by clicking ''Edit>Display As''. This will let you choose from 'Volume', 'Orthoslice', 'Multi-orthoslice', 'Surface', and 'Surface Plot 2D'. When using the 'Orthoslice' mode, you can right click on the viewer and select 'Adjust Slices' to update the placement of the x, y, and z coordinates. You can also press the 'x', 'y', or 'z' keys in combination with arrow keys to move the slices.  
+The current display mode may be changed by clicking ''Edit/Display As''. This will let you choose from 'Volume', 'Orthoslice', 'Multi-orthoslice', 'Surface', and 'Surface Plot 2D'. When using the 'Orthoslice' mode, you can right click on the viewer and select 'Adjust Slices' to update the placement of the x, y, and z coordinates. You can also press the 'x', 'y', or 'z' keys in combination with arrow keys to move the slices.  
 
 [[File:3d_viewer_volume.png|264x286px]]
 
 Example of the type of volume seen in 3D viewer.
 
-The “Edit” menu supplies some more options to change the color and transparency of the rendering. ''Edit>Change Color'' can be used to edit the color of the rendering, including an option to apply to all time points. ''Edit>Change Transparency'' may be used for a straightforward way to edit the transparency for all types of displays. ''Edit>Change Channels'' provides the option to select or deselect any combination of the red, green, and blue channels. ''Edit>Adjust Threshold'' can be used for both the 'Volume' and the 'Surface' viewing options.
+The “Edit” menu supplies some more options to change the color and transparency of the rendering. ''Edit/Change Color'' can be used to edit the color of the rendering, including an option to apply to all time points. ''Edit/Change Transparency'' may be used for a straightforward way to edit the transparency for all types of displays. ''Edit/Change Channels'' provides the option to select or deselect any combination of the red, green, and blue channels. ''Edit/Adjust Threshold'' can be used for both the 'Volume' and the 'Surface' viewing options.
 
-''Edit>Transformation>Set Transform'' can give more control over the placement of the rendering by specifying rotation origin and rotation axis. You can also use the 3x4 matrix in "Set Transform" to specify the x, y, and z axes of the transformed coordinate system in the first three columns and the vector from the old origin to the new origin in the fourth column.
+''Edit/Transformation/Set Transform'' can give more control over the placement of the rendering by specifying rotation origin and rotation axis. You can also use the 3x4 matrix in "Set Transform" to specify the x, y, and z axes of the transformed coordinate system in the first three columns and the vector from the old origin to the new origin in the fourth column.
 
 ==Other Volume Rendering Methods==
 3D reconstruction methods where the object will appear semitransparent include ''360° 3D-project'' and ''Rocking 3D-project''. These are macros contained in the MBF plugin package. ''360° 3D-project'' produces a stack with a 360° rotation of the z-transform. The results will look similar to those generated with the ''Grouped Z Projector'' plugin. If you want the stack to just rock back and forth, use the ''Rocking 3D-project'' macro.
