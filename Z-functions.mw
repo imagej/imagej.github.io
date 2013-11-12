@@ -143,19 +143,20 @@ The “Edit” menu supplies some more options to change the color and transpare
 
 ==Surface Render==
 
-VolumeJ is a 3D reconstruction method where the object surface will appear opaque, giving a more "solid" look to the object. To use VolumeJ, download the zip files for the bij plugin and bij sources from [http://bij.isi.uu.nl/ here]. You'll also need to copy bij.jar to Fiji's jars folder before running the plugin. VolumeJ's interactive rendering option is currently not working: check back for more updates.
+VolumeJ is a 3D reconstruction method where the object surface will appear opaque, giving a more "solid" look to the object. VolumeJ's interactive rendering option is currently not working: check back for more updates.
 
 [[File:volumej.png|348x269px]]
 
-1. Select the volume stack that is to be rendered.
+
+1. Select the volume stack to render.
 
 2. Select the classifier (i.e. rendering algorithm). Choose 'Gradient no index' for grayscale stacks; choose 'Ramp + index' for RGB stacks.
 
 3. Set the classifier threshold as the intensity of the "surface" of the object. This can be determined using the ''"Image/Adjust/Threshold"'' command.
 
-4. Set the classifier deviation. High values result in a "blobby" look while low values result in sharp edges. A good compromise is 1-2.
+4. Set the classifier deviation. Low values tend to result in sharper edges while higher values may be unfocused. A good compromise is 1-2.
 
-5. Set the rotation angle (try -20 in the first box to "tip" the volume backwards slightly).
+5. Set the rotation angle (try -20 in the first box to rotate the volume backwards slightly).
 
 6. Ensure that the aspect ratio is correct: VolumeJ should pick up the spatial calibration of the stack if it is present.
 
