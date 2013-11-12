@@ -167,15 +167,16 @@ VolumeJ is a 3D reconstruction method where the object surface will appear opaqu
 9. Click on ''"Stop renderer"'' if you've made a mistake.
 
 == Stack Reslice==
-This generates a “side-view” of a stack along a user defined line. Select part of stack to be axially sectioned using the line ROI tool from the toolbar. Select menu item “''Image>Stacks>Reslice''" after drawing a straight line or rectangle onto an open stack.
+This generates a “side-view” of a stack along a user defined line. Select part of a stack to be axially sectioned using the line ROI tool from the toolbar. Select the menu item “''Image/Stacks/Reslice''" after drawing a straight line or rectangle onto an open stack.
 
 [[File:stack_reslice_example.png]]
 
 Stack resliced along a vertical axis.
 
-From this point, you can generate a new stack by reconstructing the slices along the selection. If you drew a line, the new stack will be from the angle of this new line. You’ll also be able to specify the number of slices to include in the stack and the spacing between the slices. Since you will be specifying both values, it is up to you to determine how many slices are needed to represent the region of interest in a substack. If you drew a rectangle over the initial stack, you won’t be able to specify the number of slices, though you can still control the spacing. The application will then create a new stack depicting the region of interest chosen with the rectangle.
 
-The ''Dynamic Reslice'' plugin is used the same way as "''Image>Stacks>Reslice''". This plugin will dynamically update the slice generated as the ROI is changed on the original image.
+From this point, you can generate a new stack by reconstructing the slices along the selection. If you drew a line, the new stack will be from the angle of this new line, as if it "cut" through the stack. You’ll also be able to specify the number of slices to include in the stack and the spacing between the slices. Since you will be specifying both values, it is up to you to determine how many slices are needed to represent the region of interest in a substack. If you drew a rectangle over the initial stack, you won’t be able to specify the number of slices, though you can still control the spacing. The application will then create a new stack depicting the region of interest chosen with the rectangle.
+
+The ''Dynamic Reslice'' plugin is used the same way as "''Image/Stacks/Reslice''". This plugin will dynamically update the slice generated as the ROI is changed on the original image.
 
 == Orthogonal Views ==
 A straightforward method to visualize 3D renderings is through orthogonal views, accessed via Image>Stacks>Orthogonal Views. This method may be used with a stack to display the XZ and YZ planes at a given point in the 3D image. When Orthogonal Views is opened, windows containing the two planes will dock alongside the original stack, with the intersection of the yellow lines on the stack indicating the point in the stack that is being analyzed. The views in the XZ and YZ planes will update automatically, either as the stack is set to a different slice or the lines are manually adjusted on any of the three windows. 
