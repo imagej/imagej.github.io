@@ -193,21 +193,23 @@ This plugin is an alternative to the orthogonal views option. After making a poi
 When running the plugin, it is possible to adjust the aspect ratio of the three axes. The stack is initially assumed to contain cubic voxels, or, a 1:1:1 ratio. These numbers may be modified to change dimensions of the XZ and YZ plane images. The gap between the Z planes may also be updated from its initial value of 1 pixel.
 
 ==  Stereo Pairs and Anaglyphs ==
-To create an anaglyph of two images, you can use the Two Shot Anaglyph plugin, found [http://rsbweb.nih.gov/ij/plugins/anaglyph.html here]. This plugin may be used with two RGB Color images of the same dimensions to make a stereo image.
+To create an anaglyph of two images, you can use the Two Shot Anaglyph plugin. This plugin may be used with two RGB Color images of the same dimensions to make a stereo image.
 
 ===Volume-rendered anaglyphs===
 
 This is an adaptation of the methods described at [http://rsb.info.nih.gov/nih-image/more-docs/confocals.html http://rsb.info.nih.gov/nih-image/more-docs/confocals.html].
 
-The MBF plugin found at "''Plugins/Stacks/Z&T Projections/Stereo Pair''" can use your stack to create a side by side stereo pair, a red-cyan anaglyph, a red-green anaglyph, or a rotation movie based on user specifications. The plugin will let you specify which of the stereo pair projections you want and also the angle of rotation between the pairs. Typical values would be 6-9°.
+This plugin from the MBF collection can use your stack to create a side by side stereo pair, a red-cyan anaglyph, a red-green anaglyph, or a rotation movie based on user specifications. The plugin will let you specify which of the stereo pair projections you want as well as the angle of rotation between the pairs. Typical values are 6-9°.
 
 [[File:stereo_pair.png]]
 
 Stereo pair
 
+
 [[File:anaglyph_comparisons.png]]
 
 Red-green anaglyph at left, red-cyan anaglyph on the right.
+
 
 ===Surface-rendered anaglyphs===
 Surface stereo pairs for a stack are simply made with VolumeJ's stereo pair button. This generates a stereo pair with a 5° difference.
@@ -229,4 +231,5 @@ Surface rendered anaglyph movies can be constructed using VolumeJ following an a
 5. Merge the stacks using the menu command ''"Image/Color/RGB merge"''.
 
 6. Assign the duplicate stack as red and the original stack as green. For Red-Green anaglyphs, set blue to be none. For red-cyan anaglyphs, set the blue channel to be the same as green.
+
 [[Category:Cookbook]]
