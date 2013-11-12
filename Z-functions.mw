@@ -67,17 +67,17 @@ Maximum Intensity Projections of each:
 
 == 3D Project ==
 
-3D project (Image/Stacks/3D Project) creates a 3D rendering from a stack and rotates the resulting object through a range of angles. When using this plugin, you will be prompted for a variety of initial specifications. Based on these values, the program will generate a stack depicting a 360 degree rotation of the resulting 3D projection. There are three projection methods available: nearest point, brightest point, and mean value. 
+3D project (Image/Stacks/3D Project) creates a 3D rendering from a stack and rotates the resulting object through a range of angles. When using this plugin, you will be prompted for a variety of initial specifications. Based on these values, the program will generate a stack depicting a 360 degree rotation of the 3D projection. There are three projection methods available: nearest point, brightest point, and mean value. 
 
 [[File:3d_project_window.png|225x293px]]
 
 The prompt seen when running 3D project.
 
-The 3D project plugin will prompt for the slice interval between slices. Depending on the image properties, this could refer to a particular measurement between slices, such as millimeters, or may default to the number of pixels if a measurement system is not specified. Based on the selection of the slice interval, you can influence the overall shape of the 3D rendering by stretching or compressing the image in the z direction. 
+The 3D project plugin will prompt for the slice interval between slices. Depending on the image properties, this could refer to a particular measurement between slices, such as millimeters, or will default to the number of pixels if a measurement system is not specified. Based on the selection of the slice interval, you can influence the overall shape of the 3D rendering by stretching or compressing the image in the z direction. 
 
-Selection of the initial angle impacts the starting orientation of the volume while the total rotation will determine what views of the volume are possible, as well as the number of slices in the final stack. Also impacting the number of slices included is the rotation angle increment, which determines how much the volume is rotated between two consecutive slices.
+Selection of the initial angle corresponds to the starting orientation of the volume while the total rotation will determine what views of the volume are rendered, as well as the number of slices in the final stack. Also impacting the number of slices included is the rotation angle increment, which determines how much the volume is rotated between two consecutive slices.
 
-The interpolation tool is relevant for images where the spacing between slices is greater than 1.0 pixels. In this case, interpolation uses z-scaling to eliminate the gaps for the final 3D rendering. If checked but the slice spacing is less than 1.0 pixels, the option will be ignored.
+The interpolation tool is relevant for images where the spacing between slices is greater than 1.0 pixels. In this case, interpolation uses z-scaling to eliminate the gaps for the final 3D rendering. If the slice spacing is less than 1.0 pixels, the option will be ignored.
 
 Opacity, transparency, and depth cues may also be specified.
 
@@ -89,9 +89,9 @@ Try these initial settings:
 
 1. Projection Method: Use ''"Brightest point''" method.
 
-2. Slice Spacing: This determines your aspect ratio of the stack. Biorad stacks are internally calibrated and this value should be correct - unless you set the wrong objective in the Biorad software during acquisition.
+2. Slice Spacing: This determines your aspect ratio of the stack. Biorad stacks are internally calibrated and this value should be correct unless you set the wrong objective in the Biorad software during acquisition.
 
-3. Interpolate: Used when slice spacing > 0,  check this option, although it will slow down the render so for a large data set it may be worthwhile having this "off" while you're sorting out the settings.
+3. Interpolate: Used when slice spacing > 0. Check this option although it will slow down the renderer. For a large data set, it may be worthwhile having this "off" initially while you're selecting the settings.
 
 ==Volume Viewer==
 The Volume Viewer (''Plugins>Volume Viewer'')  provides 3D rendering of a stack as well as slices of the XY, YZ, and XZ planes. Volume Viewer also offers more detailed interpolation and viewing methods than some of the other 3D rendering techniques.
