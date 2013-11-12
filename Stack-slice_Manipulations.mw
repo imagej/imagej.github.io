@@ -1,20 +1,20 @@
 =  Stack-slice manipulations =
 
 ==  Slice shuffling/removing/Adding ==
-Once imported, the slices in each stack can be manipulated in many ways. See images below for an explanation of some of these functions
+The slices in each stack can be manipulated in many ways. Some of these functions are described below.
 
-Deleting single slice: “''Image/Stacks/Delete Slice''"
+Deleting a single slice: “''Image/Stacks/Delete Slice''"
 *Deletes the currently displayed slice in a stack.
 
 Deleting a number of slices: “''Image/Stacks/Tools/Slice remover''”
-*Indicate the first and last slices in the range to remove, as well as increment of removal between slices.
+*Indicate the first and last slices in the range to remove, as well as the increment of slices to remove between the first and last slices.
 
 Select the slices to remove: “''Image/Stacks/Tools/Make substack''”
 *Indicate a range or list of slices to include in new substack; increments are possible.
 *Option to delete the slices from the original stack.
 
-Stack to images/Images to stack: “''Image/Stacks/Stack to images” (Images to Stack…''). 
-*“''Images to Stack''” requires images to be the same size. If different sized images, will be presented with options to make uniform.
+Stack to images/Images to stack: “''Image/Stacks/Stack to images” (Images to Stack…)''. 
+*“''Images to Stack''” requires images to be the same size. If different sized images are used, you will be presented with options to make the size uniform.
 *When using "Images to Stack", the original images will close once the stack is formed.
 
 Montage: "''Image/Stack/Make Montage…''" 
@@ -42,19 +42,17 @@ Stack Inserter: “''Image/Stacks/Tools/Insert''"
 *No automatic resizing, so the smaller stack should not be used as the destination.
 
 Stack Sorter: “''Image/Stacks/Tools/Stack Sorter''”.
-*Control the position of individual slices or groups of slice.
+*Control the position of individual slices or groups of slices.
 *Advanced “Insert” functionality.
 
 [[File:stack_slice_manipulations1.png]]
 
 ==  Stack dimension manipulations ==
-Images and stacks can be resized and rotated with native functions or the more sophisticated TransformJ set of plugins from Erik Meijering. These are found in the “''Plugins/Transform/TransformJ'' ” menu list.
+Images and stacks can be resized and rotated with native functions or with the more sophisticated TransformJ set of plugins from Erik Meijering. These are found in the “''Plugins/Transform/TransformJ'' ” menu list and more details about each plugin in the menu can be found on [http://www.imagescience.org/meijering/software/transformj/ this website.]
 
 E. H. W. Meijering, W. J. Niessen, M. A. Viergever, [http://www.ncbi.nlm.nih.gov/pubmed/11516706 Quantitative Evaluation of Convolution-Based Methods for Medical Image Interpolation], ''Medical Image Analysis'', vol. 5, no. 2, June 2001, pp. 111-126.
 
-More details about each plugin in the menu can be found on [http://www.imagescience.org/meijering/software/transformj/ this website.]
-
-An alternative method for cropping a stack is found with "''Plugins>Stacks>Crop (3D)''" After selecting 'OK', you will be presented with panels of the ZY and XZ planes, as well as the original stack, where you can use the mouse to crop the stack in any of the three directions.
+An alternative method for cropping a stack is found with "''Plugins/Stacks/Crop (3D)''" After selecting 'OK', you will be presented with panels of the ZY and XZ planes, as well as the original stack, where you can use the mouse to crop the stack in any of the three directions.
 
 [[File:3dcrop.png]]
 
@@ -63,13 +61,14 @@ Window for the Crop (3D) plugin.
 
 == Zoomify plugin==
 
-This plugin, included in the MBF plugin set, will generate a movie sequence so that the first frame includes the whole image and the last is the user defined ROI at 100%. The first slice image is the whole of the original image, scaled so that it fits into the framesize of the ROI, the intermediate images as progressively scaled so that the last frame is 100%. The scale factor is noted as the label slice in the stack.
+This plugin, included in the MBF plugin set, will generate a movie sequence such that the first frame includes the whole image and the last is the user defined ROI at 100%. The first slice image is the whole of the original image, scaled so that it fits into the framesize of the ROI. The intermediate images are progressively scaled so that the last frame is 100%. The scale factor is noted as the label slice in the stack.
 
-To use this plugin, select an ROI which will become the final frame, but do not apply the ROI using Edit>Draw. After the ROI is selected, run the plugin and you will be prompted for the desired number of frames in the movie.
+To use this plugin, select an ROI which will become the final frame, but do not apply the ROI using "''Edit/Draw''". After the ROI is selected, run the plugin and you will be prompted for the desired number of frames in the movie.
 
 Image with selected ROI
 
 [[File:zoomify_start.png|359x270px]]
+
 
 Series generated with zoomify
 
