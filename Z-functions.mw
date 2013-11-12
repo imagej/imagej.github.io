@@ -73,6 +73,7 @@ Maximum Intensity Projections of each:
 
 The prompt seen when running 3D project.
 
+
 The 3D project plugin will prompt for the slice interval between slices. Depending on the image properties, this could refer to a particular measurement between slices, such as millimeters, or will default to the number of pixels if a measurement system is not specified. Based on the selection of the slice interval, you can influence the overall shape of the 3D rendering by stretching or compressing the image in the z direction. 
 
 Selection of the initial angle corresponds to the starting orientation of the volume while the total rotation will determine what views of the volume are rendered, as well as the number of slices in the final stack. Also impacting the number of slices included is the rotation angle increment, which determines how much the volume is rotated between two consecutive slices.
@@ -84,6 +85,7 @@ Opacity, transparency, and depth cues may also be specified.
 [[File:3d_project_depth_cues.png|387x237px]]
 
 At left, an image with surface depth cues at 100% and interior depth cues at 50%. The image on the right has surface depth cues at 100% and interior depth cues at 50%.
+
 
 Try these initial settings:
 
