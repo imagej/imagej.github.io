@@ -133,6 +133,7 @@ The current display mode may be changed by clicking ''Edit/Display As''. This wi
 
 Example of the type of volume seen in 3D viewer.
 
+
 The “Edit” menu supplies some more options to change the color and transparency of the rendering. ''Edit/Change Color'' can be used to edit the color of the rendering, including an option to apply to all time points. ''Edit/Change Transparency'' may be used for a straightforward way to edit the transparency for all types of displays. ''Edit/Change Channels'' provides the option to select or deselect any combination of the red, green, and blue channels. ''Edit/Adjust Threshold'' can be used for both the 'Volume' and the 'Surface' viewing options.
 
 ''Edit/Transformation/Set Transform'' can give more control over the placement of the rendering by specifying rotation origin and rotation axis. You can also use the 3x4 matrix in "Set Transform" to specify the x, y, and z axes of the transformed coordinate system in the first three columns and the vector from the old origin to the new origin in the fourth column.
