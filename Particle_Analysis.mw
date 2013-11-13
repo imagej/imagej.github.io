@@ -79,7 +79,7 @@ When then "Cell Counter" plugin is run, a new Image window is generated with the
 === PointPicker ===
 When the "PointPicker" plugin is run it will change the Fiji toolbar to the "PointPicker" toolbar.
 
-Crosses are reversibly overlaid on to the image, incrementally changing color (this differs from the''Crosshair&nbsp;''tool which irreversibly stamps a point in the image). With the Point Picker tool, crosses can be moved and deleted. Once marking is complete, the cross coordinates can be accessed via the&nbsp;button.
+Crosses are reversibly overlaid on to the image, incrementally changing color (this differs from the ''Crosshair&nbsp;''tool which irreversibly stamps a point in the image). With the Point Picker tool, crosses can be moved and deleted. Once marking is complete, the cross coordinates can be accessed via the&nbsp;button.
 
 This produces the “Point List” dialog allowing you to&nbsp;''Show'',&nbsp;''Save''&nbsp;or&nbsp;''Open''&nbsp;the points’ coordinates. Clicking “''Show''” displays the coordinates in the&nbsp;''Results''&nbsp;window, where they can be saved or copied to the system clipboard. Once finished, you can return to the regular Fiji toolbar by clicking the&nbsp;&nbsp;button.
 
