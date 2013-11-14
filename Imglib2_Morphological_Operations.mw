@@ -31,6 +31,34 @@ File:RectangleStrel3DPerformanceComparison.png|Processing time ratio.
 </gallery>
 
 
+
+== Square structuring element ==
+
+
+=== Decomposition ===
+
+
+The square is just a special case of the rectangle, implemented for convenience. It has the same decomposition principle. And similar conclusions can be reached: 
+
+
+==== 2D case ====
+
+<gallery heights="300" widths="300" mode="packed-hover">
+File:SquareStrel2DPerformance.png|Processing time for the dilation of a 100x100 image.
+File:SquareStrel2DPerformanceComparison.png|Processing time ratio.
+File:SquareStrel2DPerformanceWMATLAB.png|First image zoomed to highlight MATLAB performance.
+</gallery>
+
+==== 3D case ====
+
+
+<gallery heights="300" widths="300" mode="packed-hover">
+File:SquareStrel3DPerformance.png|Processing time for the dilation of a 49x49x49 image.
+File:SquareStrel3DPerformanceComparison.png|Processing time ratio.
+File:SquareStrel3DPerformanceWMATLAB.png|First image zoomed to highlight MATLAB performance.
+</gallery>
+
+
 == Diamond structuring element ==
 
 === Shape ===
