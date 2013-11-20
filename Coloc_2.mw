@@ -57,7 +57,7 @@ This plugin supersedes the Colocalization Threshold and Colocalization Test plug
 ** You will be asked if you want to save the results as a PDF file (if the Show "save PDF" dialog button was checked. So tell it where to save the PDF. This is standard output format, so you can compare with your friend,  same vs. same (neat eh!?)
 *** Feel free to tell us what things you think should be included in this standardised PDF output file.
 
-== Colocalization Analysis - What is Colocalization anyway? ==
+== Something to do before using Coloc2 ==
 
 
 Suppose you are given some images by a colleague, or have some images of your own, and you want to measure the amount of colocalisation between two of the dyes or stains in the images. First you have to define what you mean by colocalisation, and that is not trivial. For one place to start reading about colocalisation and and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalisation analysis, look here: [https://ifn.mpi-cbg.de/wiki/ifn/index.php/Teaching_Material#IPF_Image_Processing_Courses Image Processing Courses at IFN Dresden]
