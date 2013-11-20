@@ -246,14 +246,13 @@ In images that have no empty regions, like tissue samples, it might then be a us
 
 === Colocalization Test ===
 
-<p>
+
 '''[[Colocalization Test]] plugin:''' Note: This plugin is no longer actively developed or supported. Use Coloc_2 instead.
-</p>
     
 
-   <p>
+
 To perform the Costes test for statistical significance (which you should ALWAYS do after calculating the thresholded Manders coefficients and the scatterplot), choose menu item: "Analyse-Colocalization-Colocalization Test"
-   </p>
+
 
    <p>
 [[Image:ColocTestGUI1.png|400px]]
