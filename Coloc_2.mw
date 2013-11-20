@@ -250,6 +250,70 @@ Again, as for the [[Colocalization Threshold]] plugin, using an ROI here may wel
 </ol>
 == Notes about old colocalization plugins ==
 
+=== Colocalization Threshold ===
+
+<ol>
+<li>
+'''[[Colocalization Threshold]] plugin:''' Note: this plugin is no longer under active development and support. Use Coloc_2 instead.
+
+<p>
+This plugin performs several functions for you in one go. With the "green" and "red" stacks of the [http://fiji.sc/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif] dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [[#Why_scatter_plots.3F|Why scatter plots?]]), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do. 
+</p>
+
+<p>
+[[Image:Coloc1.png|300px]]
+[[Image:Coloc1b.png|300px]]
+[[Image:Coloc2.png|300px]]
+<\p>
+
+   <ol>
+
+   <li>
+It generates a 2D Histogram / Scatterplot / Fluorogram. this is a really good way to visualise the correlation of the pixel intensities, over all pixels/voxels in the image, and can tell you immediately about problems such as intensity saturation/clipping, wrong offset, emission bleedthrough (fluorescence signal from the wrong dye in the detection channel), and even if there are multiple populations of colocalising species with different ratios of dyes in the same sample. Think of it just like a FACS or Flow cytometry scatter plot; indeed it is very similar.
+   </li>
+
+   <li>
+It makes a linear regression fit of the data in the scatter plot. That is the diagonal white line in the scatter plot, the gradient of which is the ratio of the intensities of the 2 channels. 
+   </li>
+
+    <li>
+It does the Costes method auto threshold determination. The thresholds are the intensity levels above which for both channels you say the two dyes are "colocalised". This method uses an iterative procedure to determine what pair of thresholds for the 2 channels of the scatterplot give a [http://en.wikipedia.org/wiki/Correlation Pearson's correlation coefficient (r)] of zero for the pixels below the thresholds. That means that all the pixels which have intensities above the two thresholds have greater than zero correlation, and the pixels below the thresholds have none or anti correlated intensities. The method is pretty robust (so long as you don't stupidly defeat it, i.e. with image data with high offsets / background), and is fully reproducible, meaning you will always get the same thresholds for the same data set, and similar thresholds for similar datasets. Threshold setting is a big problem in colocalisation analysis. If you use a tool that allows you to manually set the thresholds, obviously you can get any result you like, since you are subjectively deciding what is colocalised and what isn't. This might please your boss, but it's not very scientific is it? So don't do that! Use the Costes auto threshold instead! Some people say the Costes method sets the thresholds too low, and lower than they would set them by eye. That might be true, but manual methods are subjective and totally unreliable. The thresholds that Costes method sets always mean the correlation below the thresholds is zero. That's a good thing.
+   </li>
+
+   <li>
+The plugin finally sends a bunch of statistics and results to the results window. You need to turn them all on using the "set options" checkbox of the plugin GUI. Some of these results are pretty uninformative. They are listed here, in arguably order of usefulness:
+
+         <ol>
+
+
+          <li>
+The thresholded Mander's split colocalisation coefficients (zero is no colocalisation, one means perfect colocalisation. There is one coefficient per channel, which tells you the proportion of signal in that channels that colocalises with the other channel. Of course this might be different for the two channels! The thresholded Mander's coefficients are probably the numbers you would publish (not the Pearson's coefficients as these are less informative).
+          </li>
+    
+            <li>
+The thresholds that were set by the Costes Auto threshold method. 
+            </li>
+ 
+             <li>
+The Pearson's coefficients for: the whole image, image above thresholds (should be close to 1 for very good colocalizing dyes) and image below thresholds (should be around zero, because that's how the Costes auto threshold method tries to set them... so if it is not close to zero, something went wrong!)
+            </li>
+
+             <li>
+Linear regression solution: If the image data are close to ideal, with comparable mean intensity in both channels and no problems exist with offset/background, then by definition, the gradient of the regression line will be close to unity (1) and the intercept will be close to zero. These are both good things for the quality of the result. This information might be less useful in other situations, e.g. where there is only sparse data in one channel, or there are multiple colocalising populations of signals (several clearly independent patches/blobs in the scatterplot).
+           </li>
+
+           <li>
+The % volume and intensity colocalised values are pretty useless as they are very dependent on how much stuff and how much background there is in a certain image, and you will get totally different values for different images of the same sample, that happen to have different areas of background.
+In images that have no empty regions, like tissue samples, it might then be a useful number. Maybe % intensity above threshold colocalised might be a useful value in some cases?
+           </li>
+         
+           </ol>
+
+   </li>
+
+  
+   </ol>
+
 == Why scatter plots instead of colour merge images? ==
 
 Far too often, composite/merge images of red and green channels are considered sufficient to demonstrate colocalisation. This is plain wrong. The problems with red/green merge images for colour-blind people aside, there is another very good reason to require scatter plots: the perception of human eyes and brain can be fooled very easily.  Just have a look at this image:
