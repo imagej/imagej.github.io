@@ -252,8 +252,7 @@ Again, as for the [[Colocalization Threshold]] plugin, using an ROI here may wel
 
 === Colocalization Threshold ===
 
-<ol>
-<li>
+
 '''[[Colocalization Threshold]] plugin:''' Note: this plugin is no longer under active development and support. Use Coloc_2 instead.
 
 <p>
@@ -308,11 +307,6 @@ In images that have no empty regions, like tissue samples, it might then be a us
            </li>
          
            </ol>
-
-   </li>
-
-  
-   </ol>
 
 == Why scatter plots instead of colour merge images? ==
 
