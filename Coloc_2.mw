@@ -97,7 +97,7 @@ We need to think carefully about the correct or adequate spatial resolution in x
 
 There is another (badly behaved) sample data file here which we will use later: [http://fiji.sc/samples/150707_WTstack.lsm 150707_WTstack.lsm].
 
-== Notes and details on performing colocalization analysis (including using the old plugins) ==
+== Notes and details on performing Coloc2 ==
 
 
 
