@@ -244,6 +244,53 @@ In images that have no empty regions, like tissue samples, it might then be a us
          
            </ol>
 
+=== Colocalization Test ===
+
+<li>'''[[Colocalization Test]] plugin:''' Note: This plugin is no longer actively developed or supported. Use Coloc_2 instead.
+</p>
+    
+
+   <p>
+To perform the Costes test for statistical significance (which you should ALWAYS do after calculating the thresholded Manders coefficients and the scatterplot), choose menu item: "Analyse-Colocalization-Colocalization Test"
+   </p>
+
+   <p>
+[[Image:ColocTestGUI1.png|400px]]
+   </p>
+
+   <p>
+Choose the correct Channel 1 and Channel 2 images stacks from the drop down lists. Make sure "Current Slice Only" is off, and "Keep Example Randomized Image" and Show All R values" are on. Then click "OK"
+</p>
+
+[[Image:ColocTestGUI2.png|200px]]
+
+<p>
+The results window will then display the calculated P-value, and some other details of the test calculation. 
+</p>
+
+[[Image:ColocTestResult.png|400px]]
+
+   <p> The Costes method for [[http://en.wikipedia.org/wiki/Statistical_significance Statistical Significance]] relies on the spatial calibration of the image, knowledge of the [[http://en.wikipedia.org/wiki/Numerical_aperture  Numerical Aperture (N.A.)]] of the objective lens, and the fluorescence emission wavelength to calculate how many pixels the [http://en.wikipedia.org/wiki/Point_spread_function point spread function] covers in the image. Then it takes the image in one of the channels, and randomizes it by moving PSF sized chunks of the image to random locations in a new random test image. Then it calculates the [[http://en.wikipedia.org/wiki/Correlation Pearson's correlation coefficient (r)]] between the randomized image and the original image of the other channel. If the correlation of the randomized image with the real image of the other channel is as good as or better then the correlation between the two real images, then any correlation that you measure is no better then what you would have got by chance for this image.  This test is performed many (100) times, and the P-value is output, which is the proportion of random images that had better correlation than the real image. A P-value of 1.00 means that none of the randomised images had better correlation. 0.95 is the normal statistical confidence limit of 95%. Anything lower than that, and the correlation / colocalisation that you measure in the real images is not likely to be better than random chance, and thus is probably not interesting. 
+    </p>
+
+   <p>
+In this case the P-value should be 1.00. Since you told it to display the Pearson's correlation (r) values (R values here), they are in another window. You can see they are all close to zero, and in the results you can see that on average the randomized R value is about zero, meaning that the randomized images all had no correlation with the real image. Which is a good thing! 
+   </p>
+
+   <p>
+Other available methods, such as Fay and Van Steensel, do the same thing but randomize the image in less rigorous but very simple ways, which may lead to errors such as over or under estimation of the P-value. However, they are faster than the Costes method. 
+
+   </p>
+
+   <p>
+Again, as for the [[Colocalization Threshold]] plugin, using an ROI here may well make very good sense, as you are only interested in the correlation between the 2 colour channels in parts of the image where the biology you are interested in is located. Background its typically uninteresting, and you can exclude it from the analysis. Its probably sensible to to use the same ROI as you used in the [[Colocalization Threshold]] plugin!
+
+   </p>
+
+</li>
+
+</ol>
+
 == Why scatter plots instead of colour merge images? ==
 
 Far too often, composite/merge images of red and green channels are considered sufficient to demonstrate colocalisation. This is plain wrong. The problems with red/green merge images for colour-blind people aside, there is another very good reason to require scatter plots: the perception of human eyes and brain can be fooled very easily.  Just have a look at this image:
