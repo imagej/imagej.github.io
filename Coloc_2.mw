@@ -246,7 +246,7 @@ In images that have no empty regions, like tissue samples, it might then be a us
 
 === Colocalization Test ===
 
-<li>'''[[Colocalization Test]] plugin:''' Note: This plugin is no longer actively developed or supported. Use Coloc_2 instead.
+'''[[Colocalization Test]] plugin:''' Note: This plugin is no longer actively developed or supported. Use Coloc_2 instead.
 </p>
     
 
@@ -286,10 +286,6 @@ Other available methods, such as Fay and Van Steensel, do the same thing but ran
 Again, as for the [[Colocalization Threshold]] plugin, using an ROI here may well make very good sense, as you are only interested in the correlation between the 2 colour channels in parts of the image where the biology you are interested in is located. Background its typically uninteresting, and you can exclude it from the analysis. Its probably sensible to to use the same ROI as you used in the [[Colocalization Threshold]] plugin!
 
    </p>
-
-</li>
-
-</ol>
 
 == Why scatter plots instead of colour merge images? ==
 
