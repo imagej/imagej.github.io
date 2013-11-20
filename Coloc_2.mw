@@ -246,6 +246,7 @@ In images that have no empty regions, like tissue samples, it might then be a us
 
 === Colocalization Test ===
 
+<P>
 '''[[Colocalization Test]] plugin:''' Note: This plugin is no longer actively developed or supported. Use Coloc_2 instead.
 </p>
     
