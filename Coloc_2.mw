@@ -59,17 +59,6 @@ This plugin supersedes the Colocalization Threshold and Colocalization Test plug
 
 == Something to do before using Coloc2 ==
 
-
-Suppose you are given some images by a colleague, or have some images of your own, and you want to measure the amount of colocalisation between two of the dyes or stains in the images. First you have to define what you mean by colocalisation, and that is not trivial. For one place to start reading about colocalisation and and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalisation analysis, look here: [https://ifn.mpi-cbg.de/wiki/ifn/index.php/Teaching_Material#IPF_Image_Processing_Courses Image Processing Courses at IFN Dresden]
-
-===There are two basic methods for colocalization analysis:===
- <ol>
-<li> '''Pixel intensity Spatial Correlation Analysis''' (which is covered in this tutorial)</li>
-<li> '''Object Based Overlap Analysis''' (not covered in this tutorial, since it requires segmenting the image into objects and background, and thats a whole branch of image processing in itself). See the [http://rsbweb.nih.gov/ij/plugins/track/jacop.html JACoP imageJ plugin] for object based methods. I hope we can add similar methods to Colo_2 soon. Let us know if you want to do it.</li>
-</ol>
-
-At some point (preferably before you start), you should read these 2 papers very carefully: [[Media:Manders.pdf|Manders et al.]] and [[Media:Costes etalColoc.pdf|Costes et al.]], since we are going to use these methods for the analysis in this tutorial. Don't be scared by the maths, its actually very simple :-)
-
 ===Open the sample data===
 First, lets open a sample data set that we know should have very good colocalisation because the 2 subunits of a dimeric protein are stained with green and red dyes respectively. The methods of Pearson, Manders, Costes and Li should work very well for this sample, but maybe we can see some problems with the data? Maybe we can decide if the data is suitable for this analysis or not? 
 
