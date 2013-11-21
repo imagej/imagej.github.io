@@ -156,7 +156,7 @@ Implements Niblack's thresholding method:
 Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
 
 === Otsu ===
-Implements a local version of Otsu's global threshold clustering. The algorithm searches for the threshold that minimizes the intra-class variance, defined as a weighted sum of variances of the two classes. The local set is a circulare ROI and the central pixel is tested against the Otsu threshold found for that region.
+Implements a local version of Otsu's global threshold clustering. The algorithm searches for the threshold that minimizes the intra-class variance, defined as a weighted sum of variances of the two classes. The local set is a circular ROI and the central pixel is tested against the Otsu threshold found for that region.
 * {{Citation
 | last = Otsu
 | first = N
