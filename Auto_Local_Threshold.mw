@@ -87,6 +87,12 @@ If the ''local contrast'' is below the ''contrast threshold'' the neighbourhood 
 
 Based on ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
 
+=== Contrast ===
+Based on a simple contrast toggle. Sets the pixel value to either white (255) or black (0) depending on whether its current value is closest to the local maximum or minimum respectively. The procedure is an extreme case of Toggle Contrast Enhancement, see for example:
+
+    Soille P, Morphological Image Analysis: Principles and applications. Springer, 2004, p. 259.
+
+This procedure does not have user-provided parameters other than the kernel radius.
 
 === Mean ===
 This selects the threshold as the mean of the local greyscale distribution. A variation of this method uses the mean - C, where C is a constant.
