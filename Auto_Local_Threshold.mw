@@ -41,12 +41,11 @@ This produces a montage with results from all the methods, so one can explore ho
 Original image
 
 
-[[Image:Epithm.png]]
+[[Image:epithm2.png]]
 
 Try all methods.
 
 When processing stacks with many slices, the montages can become very large (several times the original stack size) and one risks running out of ram. A popup window will appear (when stacks have more than 25 slices) to confirm whether the procedure should display the stack montages.
-
 
 === Bernsen ===
 Implements Bernsen's thresholding method.  Note that this implementation uses circular windows instead of rectangular in the original.
