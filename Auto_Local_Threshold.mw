@@ -187,7 +187,7 @@ This is a modification of Sauvola's thresholding method to deal with low contras
 
 In this method, the threshold t is computed as:
 
-t = mean * (1 + p * exp(-q * mean) + k * ((stdev / r) - 1))
+  t = mean * (1 + p * exp(-q * mean) + k * ((stdev / r) - 1))
 
 where mean and stdev are the local mean and standard deviation respectively.
 Phansalkar recommends ''k'' = 0.25, ''r'' = 0.5, ''p'' = 2 and ''q'' = 10. In this plugin, ''k'' and ''r'' are the parameters 1 and 2 respectively, but the values of ''p'' and ''q'' are fixed.
