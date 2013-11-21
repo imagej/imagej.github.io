@@ -156,6 +156,21 @@ Implements a local version of Otsu's global threshold clustering. The algorithm 
 Wikipedia article on Otsu's global threshold method: http://en.wikipedia.org/wiki/Otsu's_method 
 Ported from C++ code by Jordan Bevik.
 
+=== Phansalkar ===
+This is a modification of Sauvola's thresholding method to deal with low contrast images.
+
+    Phansalskar N. et al. Adaptive local thresholding for detection of nuclei in diversity stained cytology images. International Conference on Communications and Signal Processing (ICCSP), 2011, 218-220.
+
+In this method, the threshold t is computed as:
+
+t = mean * (1 + p * exp(-q * mean) + k * ((stdev / r) - 1))
+
+where mean and stdev are the local mean and standard deviation respectively.
+Phansalkar recommends k = 0.25, r = 0.5, p = 2 and q = 10. In this plugin, k and r are the parameters 1 and 2 respectively, but the values of p and q are fixed.
+Parameter 1: is the k value. The default value is 0.25. Any other number than 0 will change its value.
+Parameter 2: is the r value. The default value is 0.5. This value is different from Sauvola's because it uses the normalised intensity of the image. Any other number than 0 will change its value
+Implemented from Phansalkar's paper description, although this version uses a circular rather than rectangular local window.
+
 === Sauvola ===
 Implements Sauvola's thresholding method, which is a variation of Niblack's method
 
