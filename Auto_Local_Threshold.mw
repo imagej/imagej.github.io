@@ -150,7 +150,7 @@ Implements Niblack's thresholding method:
 | first = W
 | year = 1986
 | journal = 
-| title = An introduction to Digital Image Processing" Prentice-Hall
+| title = An introduction to Digital Image Processing, Prentice-Hall
 }}
 
 Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
