@@ -167,7 +167,9 @@ t = mean * (1 + p * exp(-q * mean) + k * ((stdev / r) - 1))
 
 where mean and stdev are the local mean and standard deviation respectively.
 Phansalkar recommends k = 0.25, r = 0.5, p = 2 and q = 10. In this plugin, k and r are the parameters 1 and 2 respectively, but the values of p and q are fixed.
+
 '''Parameter 1''': is the '''k value'''. The default value is 0.25. Any other number than 0 will change its value.
+
 '''Parameter 2''': is the '''r value'''. The default value is 0.5. This value is different from Sauvola's because it uses the normalised intensity of the image. Any other number than 0 will change its value.
 
 Implemented from Phansalkar's paper description, although this version uses a circular rather than rectangular local window.
