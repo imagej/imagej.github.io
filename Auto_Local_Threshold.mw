@@ -170,8 +170,13 @@ Ported from C++ code by Jordan Bevik.
 
 === Phansalkar ===
 This is a modification of Sauvola's thresholding method to deal with low contrast images.
-
-    Phansalskar N. et al. Adaptive local thresholding for detection of nuclei in diversity stained cytology images. International Conference on Communications and Signal Processing (ICCSP), 2011, 218-220.
+* {{Citation
+| last = Phansalskar
+| first = N
+| year = 2011
+| journal = International Conference on Communications and Signal Processing (ICCSP), 218-220.
+| title = Adaptive local thresholding for detection of nuclei in diversity stained cytology images. 
+}}
 
 In this method, the threshold t is computed as:
 
