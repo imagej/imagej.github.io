@@ -148,6 +148,13 @@ Implements Niblack's thresholding method:
 
 Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
 
+=== Otsu ===
+Implements a local version of Otsu's global threshold clustering. The algorithm searches for the threshold that minimizes the intra-class variance, defined as a weighted sum of variances of the two classes. The local set is a circulare ROI and the central pixel is tested against the Otsu threshold found for that region.
+
+    Otsu N. (1979) A threshold selection method from gray-level histograms, IEEE Trans. Sys., Man., Cyber. 9: 62-66. doi:10.1109/TSMC.1979.4310076.
+
+Wikipedia article on Otsu's global threshold method: http://en.wikipedia.org/wiki/Otsu's_method 
+Ported from C++ code by Jordan Bevik.
 
 === Sauvola ===
 Implements Sauvola's thresholding method, which is a variation of Niblack's method
