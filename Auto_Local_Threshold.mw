@@ -166,6 +166,7 @@ Implements a local version of Otsu's global threshold clustering. The algorithm 
 
 
 Wikipedia article on Otsu's global threshold method: http://en.wikipedia.org/wiki/Otsu's_method 
+
 Ported from C++ code by Jordan Bevik.
 
 === Phansalkar ===
