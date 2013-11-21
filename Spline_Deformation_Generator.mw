@@ -3,10 +3,10 @@
 | name                   = SplineDeformationGenerator
 | author                 = [[User:Iarganda | Ignacio Arganda-Carreras]] and [http://biocomp.cnb.csic.es/~coss/ Carlos Óscar Sánchez Sorzano]
 | maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
-| filename               = [http://biocomp.cnb.csic.es/~iarganda/SplineDeformationGenerator/downloads/SplineDeformationGenerator_.jar SplineDeformationGenerator_.jar] 
+| filename               = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/SplineDeformationGenerator_.jar SplineDeformationGenerator_.jar] 
 | source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/SplineDeformationGenerator_/src/main/java/SplineDeformationGenerator/SplineDeformationGenerator_.java;hb=HEAD Git repository]
 | released               = March 30<sup>th</sup>, 2007
-| latest version         = June 12<sup>th</sup>, 2008
+| latest version         = November 21<sup>st</sup>, 2013
 | status                 = active
 | category               = [[:Category:Transform|Transform]]
 | website                = [http://biocomp.cnb.csic.es/~iarganda/SplineDeformationGenerator/ SplineDeformationGenerator]
