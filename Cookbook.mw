@@ -10,7 +10,6 @@ This book intends to be an analysis-oriented introduction and user guide to Fiji
 
 Cooks call them ''recipes'', biologists ''protocols'', and programmers call them ''HOWTOs''.  No matter how you refer to them, here they are:
 
-* [[About the Cookbook]]
 * [[Installation]]
 * [[Importing Image Files]]
 * [[Saving and Exporting]]
