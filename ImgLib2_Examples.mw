@@ -134,25 +134,30 @@ public class Example1b
 		File file = new File( "DrosophilaWing.tif" );
 		String path = file.getAbsolutePath();
 
-		// create the ImgOpener and ImgOptions
+		// create the ImgOpener
 		ImgOpener imgOpener = new ImgOpener();
-		ImgOptions imgOptions = new ImgOptions();
 
 		// open with ImgOpener as an ArrayImg
-		imgOptions.setImgModes( ImgMode.ARRAY );
-		Img< T > image = imgOpener.openImg( path, imgOptions );
+		Img< T > image = imgOpener.openImg( path );
 
 		// display it via ImgLib using ImageJ
 		ImageJFunctions.show( image );
 
-		// open with ImgOpener as a CellImg with FloatType
-		// it will be opened as float independent of the type of the image
-		// to enforce to open it as FloatType, an instance of FloatType has to be passed along
+		// create the ImgOptions. This gives us configuration control over how
+		// the ImgOpener will open its datasets.
+		ImgOptions imgOptions = new ImgOptions();
+
+		// ImgOpener will use its own heuristic for determining what Img type to
+		// use, but we can encourage specific types through our ImgOptions.
+		// CellImgs dynamically load image regions and are useful when an image
+		// won't fit in memory
 		imgOptions.setImgModes( ImgMode.CELL );
-		Img< FloatType > imageFloat = imgOpener.openImg( path, new FloatType(), imgOptions );
+
+		// open with ImgOpener as a CellImg
+		Img< FloatType > imageCell = imgOpener.openImg( path, imgOptions );
 
 		// display it via ImgLib using ImageJ
-		ImageJFunctions.show( imageFloat );
+		ImageJFunctions.show( imageCell );
 	}
 
 	public static void main( String[] args ) throws ImgIOException
@@ -243,14 +248,14 @@ public class Example1d
 {
 	public Example1d() throws ImgIOException
 	{
-		// open file as float
+		// open file as float with ImgOpener
 		Img< FloatType > img =
 			new ImgOpener().openImg( "DrosophilaWing.tif", new FloatType() );
 
 		// display image
 		ImageJFunctions.show( img );
 
-		// use a View to define an interval (min and max coordinate, including) to display
+		// use a View to define an interval (min and max coordinate, inclusive) to display
 		RandomAccessibleInterval< FloatType > view =
 				Views.interval( img, new long[] { 200, 200 }, new long[]{ 500, 350 } );
 
@@ -270,7 +275,6 @@ public class Example1d
 		new Example1d();
 	}
 }
-
 </source>
 
 == Example 2 - How to use Cursor, RandomAccess and Type ==
@@ -309,12 +313,11 @@ public < T extends Type< T > > Img< T > copyImage( ... )
 '''[https://github.com/imagej/imglib/blob/master/examples/src/main/java/Example2a.java Example2a.java]'''
 <source lang="java">
 import ij.ImageJ;
-import net.imglib2.Cursor;
-import net.imglib2.img.Img;
-import net.imglib2.img.array.ArrayImgFactory;
-import net.imglib2.img.display.imagej.ImageJFunctions;
 import io.scif.img.ImgIOException;
 import io.scif.img.ImgOpener;
+import net.imglib2.Cursor;
+import net.imglib2.img.Img;
+import net.imglib2.img.display.imagej.ImageJFunctions;
 import net.imglib2.type.Type;
 import net.imglib2.type.numeric.real.FloatType;
 
@@ -328,9 +331,9 @@ public class Example2a
 {
 	public Example2a() throws ImgIOException
 	{
-		// open with ImgOpener using an ArrayImgFactory
+		// open with ImgOpener as a FloatType
 		Img< FloatType > img = new ImgOpener().openImg( "DrosophilaWing.tif",
-			new ArrayImgFactory< FloatType >(), new FloatType() );
+			new FloatType() );
 
 		// copy the image, as it is a generic method it also works with FloatType
 		Img< FloatType > duplicate = copyImage( img );
@@ -419,9 +422,11 @@ public class Example2b
 
 	public Example2b() throws ImgIOException
 	{
-		// open with ImgOpener using an ArrayImgFactory
+		// open with ImgOpener. In addition to using ImgOptions, we can directly
+		// pass an ImgFactory to the ImgOpener. This bypasses the Img selection
+		// heuristic and allows custom ImgFactory implementations to be used
 		Img< FloatType > img = new ImgOpener().openImg( "DrosophilaWing.tif",
-			new ArrayImgFactory< FloatType >(), new FloatType() );
+			new ArrayImgFactory< FloatType >() );
 
 		// copy the image into a CellImg with a cellsize of 20x20
 //		Img< FloatType > duplicate = copyImageWrong( img, new CellImgFactory< FloatType >( 20 ) );
@@ -517,16 +522,15 @@ As the ''target'' needs to be an '''IterableInterval''', it is more confined. Th
 '''[https://github.com/imagej/imglib/blob/master/examples/src/main/java/Example2c.java Example2c.java]'''
 <source lang="java">
 import ij.ImageJ;
+import io.scif.img.ImgIOException;
+import io.scif.img.ImgOpener;
 import net.imglib2.Cursor;
 import net.imglib2.IterableInterval;
 import net.imglib2.RandomAccess;
 import net.imglib2.RandomAccessible;
 import net.imglib2.RandomAccessibleInterval;
 import net.imglib2.img.Img;
-import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
-import io.scif.img.ImgIOException;
-import io.scif.img.ImgOpener;
 import net.imglib2.type.Type;
 import net.imglib2.type.numeric.real.FloatType;
 import net.imglib2.view.Views;
@@ -542,9 +546,9 @@ public class Example2c
 {
 	public Example2c() throws ImgIOException
 	{
-		// open with ImgOpener using an ArrayImgFactory
-		Img< FloatType > img = new ImgOpener().openImg( "DrosophilaWing.tif",
-			new ArrayImgFactory< FloatType >(), new FloatType() );
+		// open with ImgOpener as a float
+		Img<FloatType> img = new ImgOpener().openImg("DrosophilaWing.tif",
+			new FloatType());
 
 		// copy & display an image
 		Img< FloatType > duplicate = img.factory().create( img, img.firstElement() );
@@ -907,10 +911,9 @@ In a very similar way one can compute the average intensity for image data. Note
 
 '''[https://github.com/imagej/imglib/blob/master/examples/src/main/java/Example3b.java Example3b.java]'''
 <source lang="java">
-import net.imglib2.img.Img;
 import io.scif.img.ImgIOException;
 import io.scif.img.ImgOpener;
-import net.imglib2.img.array.ArrayImgFactory;
+import net.imglib2.img.Img;
 import net.imglib2.type.NativeType;
 import net.imglib2.type.numeric.RealType;
 import net.imglib2.util.RealSum;
@@ -926,9 +929,8 @@ public class Example3b
 	public < T extends RealType< T > & NativeType< T > > Example3b() throws
 		ImgIOException
 	{
-		// open with ImgOpener using an ArrayImgFactory
-		final Img< T > img = new ImgOpener().openImg( "DrosophilaWing.tif",
-			new ArrayImgFactory< T >() );
+		// open with ImgOpener
+		final Img< T > img = new ImgOpener().openImg( "DrosophilaWing.tif" );
 
 		// compute average of the image
 		final double avg = computeAverage( img );
@@ -963,7 +965,6 @@ public class Example3b
 		new Example3b();
 	}
 }
-
 </source>
 
 == Example 4 - Specialized iterables ==
@@ -1144,6 +1145,8 @@ Please note as well that if one would increase the radius of the '''RectangleSha
 '''[https://github.com/imagej/imglib/blob/master/examples/src/main/java/Example4b.java Example4b.java]'''
 <source lang="java">
 import ij.ImageJ;
+import io.scif.img.ImgIOException;
+import io.scif.img.ImgOpener;
 import net.imglib2.Cursor;
 import net.imglib2.Interval;
 import net.imglib2.RandomAccessibleInterval;
@@ -1156,8 +1159,6 @@ import net.imglib2.img.Img;
 import net.imglib2.img.ImgFactory;
 import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
-import io.scif.img.ImgIOException;
-import io.scif.img.ImgOpener;
 import net.imglib2.type.NativeType;
 import net.imglib2.type.logic.BitType;
 import net.imglib2.type.numeric.RealType;
@@ -1171,7 +1172,7 @@ import net.imglib2.view.Views;
 public class Example4b
 {
 	public < T extends RealType< T > & NativeType< T > > Example4b()
-		throws ImgIOException, IncompatibleTypeException
+		throws ImgIOException
 	{
 		// open with ImgOpener
 		Img< T > img = new ImgOpener().openImg( "DrosophilaWing.tif" );
@@ -1283,14 +1284,13 @@ Which '''OutOfBoundsStrategies''' to use depends on task you want to perform. Fo
 '''[https://github.com/imagej/imglib/blob/master/examples/src/main/java/Example5.java Example5.java]'''
 <source lang="java">
 import ij.ImageJ;
+import io.scif.img.ImgIOException;
+import io.scif.img.ImgOpener;
 import net.imglib2.ExtendedRandomAccessibleInterval;
 import net.imglib2.FinalInterval;
 import net.imglib2.RandomAccessible;
 import net.imglib2.img.Img;
-import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
-import io.scif.img.ImgIOException;
-import io.scif.img.ImgOpener;
 import net.imglib2.outofbounds.OutOfBoundsConstantValueFactory;
 import net.imglib2.type.numeric.real.FloatType;
 import net.imglib2.view.Views;
@@ -1303,9 +1303,9 @@ public class Example5
 {
 	public Example5() throws ImgIOException
 	{
-		// open with ImgOpener using an ArrayImgFactory
+		// open with ImgOpener as a FloatType
 		Img< FloatType > image = new ImgOpener().openImg( "DrosophilaWingSmall.tif",
-			new ArrayImgFactory< FloatType >(), new FloatType() );
+			new FloatType() );
 
 		// create an infinite view where all values outside of the Interval are 0
 		RandomAccessible< FloatType> infinite1 =
@@ -1315,7 +1315,7 @@ public class Example5
 		RandomAccessible< FloatType> infinite2 =
 			Views.extendValue( image, new FloatType( 128 ) );
 
-		// create an infinite view where all outside valuesare random in a range of 0-255
+		// create an infinite view where all outside values are random in a range of 0-255
 		RandomAccessible< FloatType> infinite3 = Views.extendRandom( image, 0, 255 );
 
 		// create an infinite view where all values outside of the Interval are
@@ -1398,12 +1398,11 @@ Here, we simply apply a Gaussian convolution with a sigma of 8. Note that it cou
 '''[https://github.com/imagej/imglib/blob/master/examples/src/main/java/Example6a1.java Example6a1.java]'''
 <source lang="java">
 import ij.ImageJ;
-import net.imglib2.algorithm.gauss.Gauss;
-import net.imglib2.img.Img;
-import net.imglib2.img.array.ArrayImgFactory;
-import net.imglib2.img.display.imagej.ImageJFunctions;
 import io.scif.img.ImgIOException;
 import io.scif.img.ImgOpener;
+import net.imglib2.algorithm.gauss.Gauss;
+import net.imglib2.img.Img;
+import net.imglib2.img.display.imagej.ImageJFunctions;
 import net.imglib2.type.numeric.real.FloatType;
 
 /**
@@ -1416,9 +1415,9 @@ public class Example6a1
 {
 	public Example6a1() throws ImgIOException
 	{
-		// open with ImgOpener using an ArrayImgFactory
+		// open with ImgOpener as a FloatType
 		Img< FloatType > image = new ImgOpener().openImg( "DrosophilaWing.tif",
-			new ArrayImgFactory< FloatType >(), new FloatType() );
+			new FloatType() );
 
 		// perform gaussian convolution with float precision
 		double[] sigma = new double[ image.numDimensions() ];
@@ -1448,14 +1447,13 @@ Here we use an '''OutOfBoundsStrategyConstantValue''' instead. It results in con
 '''[https://github.com/imagej/imglib/blob/master/examples/src/main/java/Example6a2.java Example6a2.java]'''
 <source lang="java">
 import ij.ImageJ;
+import io.scif.img.ImgIOException;
+import io.scif.img.ImgOpener;
 import net.imglib2.RandomAccessible;
 import net.imglib2.algorithm.gauss3.Gauss3;
 import net.imglib2.exception.IncompatibleTypeException;
 import net.imglib2.img.Img;
-import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
-import io.scif.img.ImgIOException;
-import io.scif.img.ImgOpener;
 import net.imglib2.type.numeric.real.FloatType;
 import net.imglib2.view.Views;
 
@@ -1470,9 +1468,9 @@ public class Example6a2
 {
 	public Example6a2() throws ImgIOException, IncompatibleTypeException
 	{
-		// open with ImgOpener using an ArrayImgFactory
+		// open with ImgOpener as a FloatType
 		Img< FloatType > image = new ImgOpener().openImg( "DrosophilaWing.tif",
-			new ArrayImgFactory< FloatType >(), new FloatType() );
+			new FloatType() );
 
 		// perform gaussian convolution with float precision
 		double[] sigma = new double[ image.numDimensions() ];
@@ -1515,16 +1513,15 @@ Note: if you wanted, you could force him to use an '''OutOfBoundsStrategy''' dir
 '''[https://github.com/imagej/imglib/blob/master/examples/src/main/java/Example6a3.java Example6a3.java]'''
 <source lang="java">
 import ij.ImageJ;
+import io.scif.img.ImgIOException;
+import io.scif.img.ImgOpener;
 import net.imglib2.FinalInterval;
 import net.imglib2.RandomAccessible;
 import net.imglib2.RandomAccessibleInterval;
 import net.imglib2.algorithm.gauss3.Gauss3;
 import net.imglib2.exception.IncompatibleTypeException;
 import net.imglib2.img.Img;
-import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
-import io.scif.img.ImgIOException;
-import io.scif.img.ImgOpener;
 import net.imglib2.type.numeric.real.FloatType;
 import net.imglib2.util.Intervals;
 import net.imglib2.view.Views;
@@ -1540,9 +1537,9 @@ public class Example6a3
 {
 	public Example6a3() throws ImgIOException, IncompatibleTypeException
 	{
-		// open with ImgOpener using an ArrayImgFactory
+		// open with ImgOpener as a FloatType
 		Img< FloatType > image = new ImgOpener().openImg( "DrosophilaWing.tif",
-			new ArrayImgFactory< FloatType >(), new FloatType() );
+			new FloatType() );
 
 		// perform gaussian convolution with float precision
 		double sigma = 8;
@@ -1585,14 +1582,13 @@ Specifically, we apply 1-dimensional Gaussian convolution in 30-pixel wide strip
 '''[https://github.com/imagej/imglib/blob/master/examples/src/main/java/Example6a4.java Example6a4.java]'''
 <source lang="java">
 import ij.ImageJ;
+import io.scif.img.ImgIOException;
+import io.scif.img.ImgOpener;
 import net.imglib2.RandomAccessibleInterval;
 import net.imglib2.algorithm.gauss3.Gauss3;
 import net.imglib2.exception.IncompatibleTypeException;
 import net.imglib2.img.Img;
-import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
-import io.scif.img.ImgIOException;
-import io.scif.img.ImgOpener;
 import net.imglib2.type.numeric.real.FloatType;
 import net.imglib2.view.Views;
 
@@ -1606,9 +1602,9 @@ public class Example6a4
 {
 	public Example6a4() throws ImgIOException, IncompatibleTypeException
 	{
-		// open with ImgOpener using an ArrayImgFactory
+		// open with ImgOpener as a FloatType
 		Img< FloatType > image = new ImgOpener().openImg( "DrosophilaWing.tif",
-			new ArrayImgFactory< FloatType >(), new FloatType() );
+			new FloatType() );
 
 		// perform all (n-1)-dimensional gaussian (in this case it means 1d) on
 		// some of the row/columns
@@ -1681,16 +1677,15 @@ In image processing it is sometimes necessary to convolve images with non-separa
  * @author Stephan Preibisch (stephan.preibisch@gmx.de)
  */
 import ij.ImageJ;
-import mpicbg.util.RealSum;
+import io.scif.img.ImgIOException;
+import io.scif.img.ImgOpener;
 import net.imglib2.algorithm.fft.FourierConvolution;
 import net.imglib2.exception.IncompatibleTypeException;
 import net.imglib2.img.Img;
-import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
-import io.scif.img.ImgIOException;
-import io.scif.img.ImgOpener;
 import net.imglib2.type.numeric.RealType;
 import net.imglib2.type.numeric.real.FloatType;
+import net.imglib2.util.RealSum;
 
 /**
  * Perform a gaussian convolution using fourier convolution
@@ -1700,10 +1695,10 @@ public class Example6b
 	public Example6b() throws ImgIOException, IncompatibleTypeException
 	{
 		// open with ImgOpener using an ArrayImgFactory
-		Img< FloatType > image = new ImgOpener().openImg( "DrosophilaWing.tif",
-			new ArrayImgFactory< FloatType >(), new FloatType() );
-		Img< FloatType > kernel = new ImgOpener().openImg( "kernelGauss.tif",
-			new ArrayImgFactory< FloatType >(), new FloatType() );
+		final Img< FloatType > image = new ImgOpener().openImg( "DrosophilaWing.tif",
+			new FloatType() );
+		final Img< FloatType > kernel = new ImgOpener().openImg( "kernelGauss.tif",
+			new FloatType() );
 
 		// normalize the kernel, otherwise we add energy to the image
 		norm( kernel );
@@ -1746,7 +1741,7 @@ public class Example6b
 			type.setReal( type.get() / sum );
 	}
 
-	public static void main( String[] args ) throws ImgIOException, IncompatibleTypeException
+	public static void main( final String[] args ) throws ImgIOException, IncompatibleTypeException
 	{
 		// open an ImageJ window
 		new ImageJ();
@@ -1755,6 +1750,7 @@ public class Example6b
 		new Example6b();
 	}
 }
+
 </source>
 
 === Example 6c - Complex numbers and Fourier transforms ===
@@ -1795,20 +1791,21 @@ The final convolution of the inverse template with the image is performed using 
  * v1.0, which is available at http://www.eclipse.org/legal/cpl-v10.html
  */
 import ij.ImageJ;
+import io.scif.img.ImgIOException;
+import io.scif.img.ImgOpener;
 import net.imglib2.algorithm.fft.FourierConvolution;
 import net.imglib2.algorithm.fft.FourierTransform;
 import net.imglib2.algorithm.fft.InverseFourierTransform;
-import net.imglib2.display.ComplexImaginaryFloatConverter;
-import net.imglib2.display.ComplexPhaseFloatConverter;
-import net.imglib2.display.ComplexRealFloatConverter;
+import net.imglib2.converter.ComplexImaginaryFloatConverter;
+import net.imglib2.converter.ComplexPhaseFloatConverter;
+import net.imglib2.converter.ComplexRealFloatConverter;
 import net.imglib2.exception.IncompatibleTypeException;
 import net.imglib2.img.Img;
-import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
-import io.scif.img.ImgIOException;
-import io.scif.img.ImgOpener;
+import net.imglib2.type.numeric.RealType;
 import net.imglib2.type.numeric.complex.ComplexFloatType;
 import net.imglib2.type.numeric.real.FloatType;
+import net.imglib2.util.RealSum;
 
 /**
  * Perform template matching by convolution in the Fourier domain
@@ -1820,11 +1817,11 @@ public class Example6c
 {
 	public Example6c() throws ImgIOException, IncompatibleTypeException
 	{
-		// open with ImgOpener using an ArrayImgFactory
-		Img< FloatType > image = new ImgOpener().openImg( "DrosophilaWing.tif",
-			new ArrayImgFactory< FloatType >(), new FloatType() );
-		Img< FloatType > template = new ImgOpener().openImg( "WingTemplate.tif",
-			new ArrayImgFactory< FloatType >(), new FloatType() );
+		// open with ImgOpener as FloatTypes
+		final Img< FloatType > image = new ImgOpener().openImg( "DrosophilaWing.tif",
+			new FloatType() );
+		final Img< FloatType > template = new ImgOpener().openImg( "WingTemplate.tif",
+			new FloatType() );
 
 		// display image and template
 		ImageJFunctions.show( image ).setTitle( "input" );
@@ -1872,13 +1869,42 @@ public class Example6c
 		ImageJFunctions.show( templateInverse ).setTitle( "inverse template" );
 
 		// normalize the inverse template
-		Example6b.norm( templateInverse );
+		norm( templateInverse );
 
 		// compute fourier convolution of the inverse template and the image and display it
 		ImageJFunctions.show( FourierConvolution.convolve( image, templateInverse ) );
 	}
+	
+	/**
+	 * Computes the sum of all pixels in an iterable using RealSum
+	 *
+	 * @param iterable - the image data
+	 * @return - the sum of values
+	 */
+	public static < T extends RealType< T > > double sumImage( final Iterable< T > iterable )
+	{
+		final RealSum sum = new RealSum();
 
-	public static void main( String[] args ) throws ImgIOException, IncompatibleTypeException
+		for ( final T type : iterable )
+			sum.add( type.getRealDouble() );
+
+		return sum.getSum();
+	}
+
+	/**
+	 * Norms all image values so that their sum is 1
+	 *
+	 * @param iterable - the image data
+	 */
+	public static void norm( final Iterable< FloatType > iterable )
+	{
+		final double sum = sumImage( iterable );
+
+		for ( final FloatType type : iterable )
+			type.setReal( type.get() / sum );
+	}
+
+	public static void main( final String[] args ) throws ImgIOException, IncompatibleTypeException
 	{
 		// open an ImageJ window
 		new ImageJ();
@@ -1931,7 +1957,7 @@ public class Example7
 	{
 		// open with ImgOpener using an ArrayImgFactory
 		Img< FloatType > img = new ImgOpener().openImg( "DrosophilaWing.tif",
-			new ArrayImgFactory< FloatType >(), new FloatType() );
+			new FloatType() );
 
 		ImageJFunctions.show( img );
 
@@ -2184,6 +2210,8 @@ In this example we sample an existing image at random locations and render the r
 '''[https://github.com/imagej/imglib/blob/master/examples/src/main/java/Example8b.java Example8b.java]'''
 <source lang="java">
 import ij.ImageJ;
+import io.scif.img.ImgIOException;
+import io.scif.img.ImgOpener;
 
 import java.util.Random;
 
@@ -2198,13 +2226,10 @@ import net.imglib2.RealRandomAccessible;
 import net.imglib2.collection.KDTree;
 import net.imglib2.collection.RealPointSampleList;
 import net.imglib2.img.Img;
-import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
 import net.imglib2.interpolation.neighborsearch.InverseDistanceWeightingInterpolatorFactory;
 import net.imglib2.interpolation.neighborsearch.NearestNeighborInterpolatorFactory;
 import net.imglib2.interpolation.randomaccess.NLinearInterpolatorFactory;
-import io.scif.img.ImgIOException;
-import io.scif.img.ImgOpener;
 import net.imglib2.neighborsearch.KNearestNeighborSearch;
 import net.imglib2.neighborsearch.KNearestNeighborSearchOnKDTree;
 import net.imglib2.neighborsearch.NearestNeighborSearch;
@@ -2222,9 +2247,9 @@ public class Example8b
 {
 	public Example8b() throws ImgIOException
 	{
-		// open with ImgOpener using an ArrayImgFactory
+		// open with ImgOpener using a FloatType
 		Img< FloatType > img = new ImgOpener().openImg( "DrosophilaWingSmall.tif",
-			new ArrayImgFactory< FloatType >(), new FloatType() );
+			 new FloatType() );
 
 		// show the image
 		ImageJFunctions.show( img );
