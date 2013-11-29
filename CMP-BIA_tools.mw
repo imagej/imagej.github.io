@@ -1,0 +1,18 @@
+{{Infobox Plugin
+| name                   = CMP-BIA tools
+| software               = ImagejJ/Fiji
+| author                 = Jiří Borovec
+| maintainer             = Jiří Borovec ([mailto:jiri.borovec(at)fel.cvut.cz email])
+| filename               = [http://cmp.felk.cvut.cz/~borovji3/SW/CMP_BIA-0.1-SNAPSHOT.jar CMP_BIA-0.1.jar]
+| source                 = [https://github.com/Borda/ij-CMP-BIA GitHub.com]
+| released               = 2013
+| version                = 0.1
+| latest version         = November 27<sup>th</sup>, 2013
+| license                = GPLv2
+| category               = [[:Category:Segmentation|Segmentation]]
+}}
+
+ImageJ/Fiji library and plugins to perform segmentation and registration.
+
+== Features ==
+* SLIC superpixels
