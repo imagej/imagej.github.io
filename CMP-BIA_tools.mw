@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | name                   = CMP-BIA tools
 | software               = ImagejJ/Fiji
-| author                 = Jiří Borovec
+| author                 = Jiří Borovec ([http://cmp.felk.cvut.cz/~borovji3/ web])
 | maintainer             = Jiří Borovec ([mailto:jiri.borovec(at)fel.cvut.cz email])
 | filename               = [http://cmp.felk.cvut.cz/~borovji3/SW/CMP_BIA-0.1-SNAPSHOT.jar CMP_BIA-0.1.jar]
 | source                 = [https://github.com/Borda/ij-CMP-BIA GitHub.com]
