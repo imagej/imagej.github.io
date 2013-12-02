@@ -10,11 +10,10 @@
 | latest version         = December 2<sup>th</sup>, 2013
 | license                = GPLv2
 | category               = [[:Category:Segmentation|Segmentation]]
-}}
+}} 
+The CMP-BIA tools is a package for ImageJ/Fiji performing image segmentation and registration. The package mainly contains of user-friendly plugins fully compatible with ImageJ 1.x. All source codes are also publicly available as Maven project (see the [http://github.com/Borda/ij-CMP-BIA GitHub] repository). The API in this package can be also used for further development of other Java/ImageJ features related to Image Processing.
 
-The CMP-BIA tools is a package for ImageJ/Fiji performing image segmentation and registration. The package mainly contains user-friendly plugins and also a complex library for further usage (see the [http://github.com/Borda/ij-CMP-BIA GitHub] repository).
-
-All included methods are mainly related to medical imaging but it can be also used in the fields. 
+Note, all included methods are mainly related to medical imaging but it can be also used in the fields.
 
 == About us ==
 
@@ -24,6 +23,10 @@ All included methods are mainly related to medical imaging but it can be also us
 
 == Features ==
 * '''''SLIC superpixels''''' - is segmentation tool for clustering regions - superpixels - in given image which are usually used for other segmentation techniques. The only two parameters are average (initial) size of each superpixel and rigidity parameter in range ''<0,1>''.
+
+== Coming soon ==
+* ''Image segmentation''
+* ''Simultaneous segmentation and registration''
 
 
 == References ==
