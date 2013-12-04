@@ -142,6 +142,32 @@ followed by thread dumps and other useful information including the command-line
 
 The most important part is the line after the line ''# Problematic frame:'' because it usually gives you an idea in which component the crash was triggered.
 
+== Out of memory error ==
+
+If the specific exception you're receiving (or you suspect) is an OutOfMemoryError, there are JVM flags that can be enabled when running Fiji to help pinpoint the problem:
+
+<source lang="bash">
+./fiji -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/desired/path/
+</source>
+
+The first option: 
+
+<source>
+-XX:+HeapDumpOnOutOfMemoryError
+</source>
+
+tells the JVM to create a heap dump (.hprof file) if an OutOfMemoryError is thrown. This is basically a snapshot of the JVM state when memory ran out.
+
+The second option:
+
+<source>
+-XX:HeapDumpPath=/desired/path/
+</source>
+
+is not required, but convenient for controlling where the resulting .hprof file is written. Note that these heap dumps are named by PID, and thus are not easily human distinguishable.
+
+After acquiring a heap dump, you can analyze it yourself, e.g. with a [http://www.eclipse.org/mat/ memory analyzer], or post on [https://groups.google.com/forum/#!forum/fiji-devel fiji-devel] with a brief explanation of your problem.
+
 = Debugging Java code with jdb =
 == How to attach the Java debugger jdb to a running fiji process ==
 This requires two separate processes, fiji itself and the debugger.  You can do this either in one shell, backgrounding the first process or in two shells, this is recommended.  In the two shells do the following:
