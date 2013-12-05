@@ -3,9 +3,7 @@
 
 ''Animated GIF…'' Choosing this option from the "''Save as''" menu saves a stack as an animated GIF. It is only compatible on RGB or 8 bit images. A more suitable option would be saving as ''GIF'', where the only limitation is that any RGB color stacks must be converted to 8 bit color.
 
-Uncompressed AVI files are exported via either “''File/Save as…/AVI…” ''and opened via “''File/Save as/AVI..''”. The frame-rate of the exported AVI movie is determined in the “''Image/Stacks/Animation Options…''” settings and can be between 0.1 and 100 frames per second (fps).
-
-The AVI format that ImageJ saves is “uncompressed”. Uncompressed files are large, but should be playable on any PC/Mac without any decoder issues. There is freeware available that will convert between AVI types (e.g. RAD Video Tools) but once compressed, ImageJ will no longer be able to import them (unless you use the RAD video tools to resave them as uncompressed AVIs).
+Uncompressed AVI files are exported via “''File/Save as…/AVI…” ''. The frame rate and compression option of the exported AVI movie is selected in the resulting window. Frame rate can be between 0.1 and 100 frames per second (fps). The compression may be in JPEG, PNG, or uncompressed. Though uncompressed files are large, they should be playable on any PC/Mac without decoder issues.
 
 QuickTime MOV files are exported via the menu command “''File/Save As/QuickTime Export'' ” and opened via the menu command “''File/Import/QuickTime…'' ”.
 
