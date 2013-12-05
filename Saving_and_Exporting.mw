@@ -5,10 +5,6 @@
 
 Uncompressed AVI files are exported via “''File/Save as…/AVI…” ''. The frame rate and compression option of the exported AVI movie is selected in the resulting window. Frame rate can be between 0.1 and 100 frames per second (fps). The compression may be in JPEG, PNG, or uncompressed. Though uncompressed files are large, they should be playable on any PC/Mac without decoder issues.
 
-QuickTime MOV files are exported via the menu command “''File/Save As/QuickTime Export'' ” and opened via the menu command “''File/Import/QuickTime…'' ”.
-
-The frame-rate of the final QuickTime movie is set in the dialog that pops up after you’ve named you *.MOV file. Compression settings are also set here. Despite this greater flexibility compared to AVI files, AVIs tend to be more ''MSWindows'' friendly and do not require a custom installation of QuickTime (see section 1.4).
-
 Flash MX will import uncompressed AVI files. The frame-rate will then be determined by Flash, not the AVI movie file.
 
 [[Category:Cookbook]]
