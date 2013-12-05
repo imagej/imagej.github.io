@@ -1,13 +1,9 @@
 =Saving and Exporting=
 [[File:save_as1.png|right]] [[File:save_as2.png|right]]The “''File/Save''” (hotkey: S) menu command will save the image as a TIF file. Other formats are available (see menu image on the right) and can be accessed by “''File/Save As...''”. When the “''Save as''” dialog is opened, Fiji will enter the image window’s name, plus the appropriate file suffix, as the “File Name”.
 
-ImageJ will not add the suffix back if you delete it while changing the file name. This may make your file inaccessible from other programs, which require the suffix to identify the file format.
+''Animated GIF…'' Choosing this option from the "''Save as''" menu saves a stack as an animated GIF. It is only compatible on RGB or 8 bit images.
 
-You can tell this from the name in the image window – it should display a suffix after it has been saved. If you have deleted the file suffix then resaving the file in the desired format usually restores it. 
-
-''Animated GIF…'' This plugin saves a stack as an animated GIF. It works on RGB or 8 bit images.
-
-PNG, PICT, XBM, TGA, Photoshop (PSD), XPM or PCX can be saved with “''File/Save As/Jimi Writer…'' ”. Run the plugin and select the desired format from the drop-down box.
+PICT, XBM, TGA, Photoshop (PSD) or PCX can be saved with “''File/Save As/Jimi Writer…'' ”. Run the plugin and select the desired format from the drop-down box.
 
 Uncompressed AVI files are exported via either “''File/Save as…/AVI…” ''and opened via “''File/Save as/AVI..''”. The frame-rate of the exported AVI movie is determined in the “''Image/Stacks/Animation Options…''” settings and can be between 0.1 and 100 frames per second (fps).
 
