@@ -7,4 +7,6 @@ Uncompressed AVI files are exported via “''File/Save as…/AVI…” ''. The f
 
 Flash MX will import uncompressed AVI files. The frame-rate will then be determined by Flash, not the AVI movie file.
 
+''Image Sequence...'' This option saves each slice in a stack as a separate TIF file. You will be presented with the option to either name the images numerically or with the slice labels.
+
 [[Category:Cookbook]]
