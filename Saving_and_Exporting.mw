@@ -1,0 +1,27 @@
+{| style="border-spacing:0;"
+| style="border:0.75pt solid #808080;padding:0.0194in;"| = 3  Saving and Exporting Files =
+[[Image:saving1.gif]]The “''File/Save''” (hotkey: S) menu command will save the image as a TIF file. Other formats are available (see menu image on the right) and can be accessed by “''File/Save As...''”.&nbsp; When the “''Save''” or “''Save as''” dialog is opened, ImageJ will enter the image window’s name, plus the appropriate file suffix, as the “File Name”.
+
+ImageJ will not add the suffix back if you delete it while changing the file name. This may make your file inaccessible from other programs, which require the suffix to identify the file format.
+
+You can tell this from the name in the image window – it should display a suffix after it has been saved. If you have deleted the file suffix then resaving the file in the desired format usually restores it. 
+
+''Animated GIF…'' &nbsp;This plugin saves a stack as an animated GIF. It works on RGB or 8 bit images.
+
+PNG, PICT, XBM, TGA, Photoshop (PSD), XPM or PCX can be saved with “''File/Save As/Jimi Writer…'' ”. Run the plugin and select the desired format from the drop-down box.
+
+Uncompressed AVI files are exported via either “''File/Save as…/AVI…” ''and opened via “''File/Save as/AVI..''”. The frame-rate of the exported AVI movie is determined in the “''Image/Stacks/Animation Options…''” settings and can be between 0.1 and 100 frames per second (fps).
+
+The AVI format that ImageJ saves is “uncompressed”. Uncompressed files are large, but should be playable on any PC/Mac without any decoder issues. There is freeware available that will convert between AVI types (e.g. RAD Video Tools) but once compressed, ImageJ will no longer be able to import them (unless you use the RAD video tools to resave them as uncompressed AVIs).
+
+QuickTime MOV files are exported via the menu command “''File/Save As/QuickTime Export'' ” and opened via the menu command “''File/Import/QuickTime…'' ”.
+
+The frame-rate of the final QuickTime movie is set in the dialog that pops up after you’ve named you *.MOV file. Compression settings are also set here. Despite this greater flexibility compared to AVI files, AVIs tend to be more ''MSWindows'' friendly and do not require a custom installation of QuickTime (see section 1.4).
+
+Flash MX will import uncompressed AVI files. The frame-rate will then be determined by Flash, not the AVI movie file.
+
+|}
+
+
+
+[[Category:Cookbook]]
