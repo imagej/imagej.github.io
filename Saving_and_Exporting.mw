@@ -1,5 +1,5 @@
 =Saving and Exporting=
-[[File:save_as1.png|right]] [[File:save_as2.png|right]]The “''File/Save''” (hotkey: S) menu command will save the image as a TIF file. Other formats are available (see menu image on the right) and can be accessed by “''File/Save As...''”. When the “''Save''” or “''Save as''” dialog is opened, ImageJ will enter the image window’s name, plus the appropriate file suffix, as the “File Name”.
+[[File:save_as1.png|right]] [[File:save_as2.png|right]]The “''File/Save''” (hotkey: S) menu command will save the image as a TIFF file. Other formats are available (see menu image on the right) and can be accessed by “''File/Save As...''”. When the “''Save''” or “''Save as''” dialog is opened, ImageJ will enter the image window’s name, plus the appropriate file suffix, as the “File Name”.
 
 ImageJ will not add the suffix back if you delete it while changing the file name. This may make your file inaccessible from other programs, which require the suffix to identify the file format.
 
