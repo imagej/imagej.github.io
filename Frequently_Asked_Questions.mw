@@ -28,9 +28,9 @@ Fiji will report itself as "up to date" as long as all files installed in your F
 
 To be certain, run Help > Update Fiji, and click the "Advanced mode" button. Then verify the following View Options:
 
-* ''View uninstalled files only'': Shows files that are available from remote ImageJ update sites, but *not* installed in your Fiji. Consider changing the "Status/Action" to "Install" for these items, especially any .jar files that are flagged with "Not installed" status.
-* ''View locally modified files only'': Shows files that have been edited locally (i.e., do not match any version from the remote update sites). Consider changing the "Status/Action" to "Update" for these items, especially any .jar files that you did not intentionally modify.
-* ''View local-only files'': Shows files that are not known at all to the remote update sites. These files were likely added manually (e.g., if you installed additional plugins manually; see "How do I install additional plugins" below). Consider deleting these files if you do not need them, especially any .jar files of unknown origin or conflicting file names.
+* '''View uninstalled files only:''' Shows files that are available from remote ImageJ update sites, but ''not'' installed in your Fiji. Consider changing the "Status/Action" to "Install" for these items, especially any .jar files that are flagged with "Not installed" status.
+* '''View locally modified files only:''' Shows files that have been edited locally (i.e., do not match any version from the remote update sites). Consider changing the "Status/Action" to "Update" for these items, especially any .jar files that you did not intentionally modify.
+* '''View local-only files:''' Shows files that are not known at all to the remote update sites. These files were likely added manually (e.g., if you installed additional plugins manually; see "How do I install additional plugins" below). Consider deleting these files if you do not need them, especially any .jar files of unknown origin or conflicting file names.
 
 If you flag any changes to be made, press the "Apply changes" to update your Fiji. And after restarting Fiji, you might want to run Help > Update Fiji again to make sure everything looks the way you expect!
 
