@@ -22,6 +22,18 @@ Fiji is just ImageJ. Hence it is very easy to bootstrap the updater and add the 
 
 After that, you can run Fiji/ImageJ using the ImageJ launcher that was installed into the ImageJ directory.
 
+== How can I verify that my Fiji is really 100% up to date? ==
+
+Fiji will report itself as "up to date" as long as all files installed in your Fiji match the latest versions from the remote update sites. However, there are cases where your Fiji may report itself as "up to date" but still be missing critical files, or have mismatching versions (e.g., the dreaded "NoSuchMethodError").
+
+To be certain, run Help > Update Fiji, and click the "Advanced mode" button. Then verify the following View Options:
+
+* ''View uninstalled files only'': Shows files that are available from remote ImageJ update sites, but *not* installed in your Fiji. Consider changing the "Status/Action" to "Install" for these items, especially any .jar files that are flagged with "Not installed" status.
+* ''View locally modified files only'': Shows files that have been edited locally (i.e., do not match any version from the remote update sites). Consider changing the "Status/Action" to "Update" for these items, especially any .jar files that you did not intentionally modify.
+* ''View local-only files'': Shows files that are not known at all to the remote update sites. These files were likely added manually (e.g., if you installed additional plugins manually; see "How do I install additional plugins" below). Consider deleting these files if you do not need them, especially any .jar files of unknown origin or conflicting file names.
+
+If you flag any changes to be made, press the "Apply changes" to update your Fiji. And after restarting Fiji, you might want to run Help > Update Fiji again to make sure everything looks the way you expect!
+
 == How do I install additional plugins? ==
 
 You can drag 'n drop the .jar files onto the Fiji window, or use ''Plugins>Install Plugin...'' with .jar, .class and .java files, or copy the plugins to ''Fiji.app/plugins/'' and call ''Help>Refresh Menus'' manually. A walk-through with screenshots is available [[Installing 3rd party plugins|here]].
