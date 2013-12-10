@@ -12,7 +12,7 @@ The tests reported here were run on an Apple MacPro, 2 x 2.66 GHz 6-Core Intel X
 
 ==== Processing time for a 2D image ====
 
-For a 'uint16' image containing 200 spots of radius 3, varying its size. 
+For a ''uint16'' image, varying its size, containing 200 gaussian spots of radius 3 (everything is in pixel units).
 
 {|  class="wikitable" cellspacing="10"
 ! align="left"|N (pixels)	
@@ -94,3 +94,22 @@ Unsurprisingly, we find that the execution time is proportional to the number of
 |}
 
 And again, the processing time is found to be linear with the number of pixels. The linear fit is slightly steeper, however: ''t (ms) = 4.6e-4 x Npixels'', which we attribute to the 3D kernel overhead.
+
+
+==== Processing time for a 2D image as a function of the spot radius ====
+
+We used a 1024x1024 ''uint16'' image, with 200 gaussian spots, the size of which we varied. The detector was tuned to this radius. 
+
+[[File:TrackMate DogTimeVsRadius2D.png|400px]]
+
+We find the processing time to increase linearly with the specified radius, following approximately ''t (ms) = 20.5 x radius + 260''. As the difference-of-gaussians is calculated in the direct space, an linear increase is expected as there is more pixels to iterate over. Without optimization, we should however have found it to be increase with the square of the radius, and find the same dependence that for the image size. Thanks to the clever implementation of gaussian filtering<ref>https://github.com/imagej/imglib/blob/master/algorithms/core/src/main/java/net/imglib2/algorithm/gauss3/Gauss3.java</ref>, this is avoided.
+
+
+
+
+
+
+
+
+
+<references/>
