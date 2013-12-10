@@ -5,5 +5,92 @@
 
 == Time of execution == 
 
+The tests reported here were run on an Apple MacPro, 2 x 2.66 GHz 6-Core Intel Xeon, 24 Go 1333 MHz DDR3, running Mac OS X v10.7.5, with Java 1.6. The detectors instantiated were tamed to use only 1 thread. Unless indicated, the median filter and the sub-pixel localization were not done. 
 
 === The DoG detector ===
+
+
+==== Processing time for a 2D image ====
+
+For a 'uint16' image containing 200 spots of radius 3, varying its size. 
+
+{|  class="wikitable" cellspacing="10"
+! align="left"|N (pixels)	
+!Image size
+!Time (ms)
+|-
+|256	
+|16x16
+|3.0
+|-
+|1024	
+|32x32
+|2.95
+|-
+|4096
+|64x64	
+|3.95
+|-
+|16384
+|128x128	
+|7.9
+|-
+|65536	
+|256x256
+|23.35
+|-
+|262144	
+|512x512
+|88.2
+|-
+|1048576
+|1024x1024	
+|357.3
+|-
+|2359296	
+|1536x1536
+|789.85
+|-
+|4194304	
+|2048x2048
+|1463.4
+|}
+
+
+Unsurprisingly, we find that the execution time is proportional to the number of pixels, following approximately ''t (ms) = 3.4e-4 x Npixels''.
+
+
+
+==== Processing time for a 3D image ====
+
+{|  class="wikitable" cellspacing="10"
+! align="left"|N (pixels)
+!Image size
+!Time (ms)
+|-
+|4096
+|16x16x16
+|8.7
+|-
+|32768
+|32x32x32
+|23.5
+|-
+|262144
+|64x64x64
+|129.3
+|-
+|2097152
+|128x128x128
+|875.1
+|-
+|16777216
+|256x256x256
+|7054.0
+|-
+|134217728
+|512x512x512
+|61477.2
+|}
+
+And again, the processing time is found to be linear with the number of pixels. The linear fit is slightly steeper, however: ''t (ms) = 4.6e-4 x Npixels'', which we attribute to the 3D kernel overhead.
