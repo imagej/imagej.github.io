@@ -91,8 +91,8 @@ ImagePlus[] imps = BF.openImagePlus(options);
 
 Fiji ships '''4.4.x''' release versions of Bio-Formats. However, given the long time frame between releases, you can update to the latest code by toggling one of two update sites:
 
-* '''Bio-Formats 4''' is the latest stable build of version 4.4.x.
-* '''Bio-Formats 5''' is the latest unstable build of version 5.x.
+* '''Bio-Formats 4''' is the latest stable build of version 4.4.x. It has bugfixes but no new features.
+* '''Bio-Formats 5''' is the latest unstable build of version 5.x. It has both bugfixes and new features.
 
 If unsure which to choose, we recommend '''Bio-Formats 5''' because it contains the very latest bugfixes—and when reporting a bug, the developers may ask you to test against '''Bio-Formats 5''' anyway.
 
