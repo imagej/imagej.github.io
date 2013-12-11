@@ -11,7 +11,7 @@
 | license                = GPLv2
 | category               = [[:Category:Segmentation|Segmentation]]
 }} 
-The CMP-BIA tools is a package for ImageJ/Fiji performing image segmentation and registration. The package mainly contains of user-friendly plugins fully compatible with ImageJ 1.x. All source codes are also publicly available as Maven project (see the [http://github.com/Borda/ij-CMP-BIA GitHub] repository). The API in this package can be also used for further development of other Java/ImageJ features related to Image Processing.
+The CMP-BIA tools is a package for ImageJ/Fiji which will perform image segmentation and registration. The package will contain mainly user-friendly plugins fully compatible with ImageJ 1.x (and later also ImageJ 2.x). All source codes are publicly available as Maven project (see the [http://github.com/Borda/ij-CMP-BIA GitHub] repository). The API in this package can be also used for further development of other Java/ImageJ features related to Image Processing.
 
 Note, all included methods are mainly related to medical imaging but it can be also used in the fields.
 
@@ -22,7 +22,8 @@ Note, all included methods are mainly related to medical imaging but it can be a
 '''Biomedical Imaging Algorithms''' group ([http://www.fel.cvut.cz/vv/tymy/mip.html BIA]) headed by ''[http://cmp.felk.cvut.cz/~kybic/ doc. Jan Kybic]'' develops new algorithms for biomedical image processing. We process images from different modalities, such as magnetic resonance, ultrasound, computed tomography, or microscopy. We work in 2D, 3D and 4D. We know how to preprocess the data, how to register, segment, model, reconstruct and classify them. We use techniques from image processing, numerical mathematics, as well as machine learning.
 
 == Features ==
-* '''''SLIC superpixels''''' - is segmentation tool for clustering regions - superpixels - in given image which are usually used for other segmentation techniques. The only two parameters are average (initial) size of each superpixel and rigidity parameter in range ''<0,1>''.
+* '''''SLIC superpixels''''' - is segmentation method for clustering similar regions - superpixels - in given image which are usually used for other segmentation techniques. The only two parameters are average (initial) size of each superpixel and rigidity parameter in range ''<0,1>''.
+
 
 == Coming soon ==
 * ''Image segmentation''
