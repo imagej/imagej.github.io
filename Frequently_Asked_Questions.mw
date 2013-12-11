@@ -251,7 +251,7 @@ In the future, we plan to make this easier by having one single easy command for
 
 The ImageJ, Fiji and ImageJ2 projects are very closely related. Here are two attempts to clarify the situation:
 
-* [http://developer.imagej.net/faq#n141 in ImageJ2's Frequently Asked Questions]
+* [http://developer.imagej.net/faq#t21n141 in ImageJ2's Frequently Asked Questions]
 * [http://developer.imagej.net/2011/10/05/relation-between-imageja-and-imagej an ImageJ2 blog post clarifying specifically the relationship between ImageJ and the version used in Fiji]
 * [http://developer.imagej.net/2012/02/01/fiji-updater-has-been-integrated-imagej2-code-base an ImageJ2 blog post illustrating that we move code from Fiji to ImageJ2 as appropriate]
 
