@@ -14,7 +14,7 @@ This is most likely an AWT issue with Apple's version of Java 6. There is even a
 
 == How do I launch Fiji with a different version of Java? ==
 
-Use the `--java-home` command line option. Examples:
+Use the <code>--java-home</code> command line option. Examples:
 
 On OS X:
 
