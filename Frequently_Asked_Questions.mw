@@ -10,6 +10,24 @@ This problem usually arises when 12-bit or 14-bit images are loaded into Fiji wi
 
 This is most likely an AWT issue with Apple's version of Java 6. There is even a [http://fiji.sc/bugzilla/show_bug.cgi?id=197 bug in our bug tracker about it]. The problem is that we did not manage to find a work-around because the bug appears to be in the MacOSX-specific part of the Java Virtual Machine that was provided by Apple. It seems to be related to opening new windows while mouse updates are processed, though. If you have this issue, or find out what causes it, please comment on [http://fiji.sc/bugzilla/show_bug.cgi?id=197 this bug report].
 
+= Running =
+
+== How do I launch Fiji with a different version of Java? ==
+
+Use the `--java-home` command line option. Examples:
+
+On OS X:
+
+ /Applications/Fiji.app/Contents/MacOS/ImageJ-macosx --java-home \
+   '/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home'
+
+On Linux:
+
+ $HOME/Fiji.app/ImageJ-linux64 --java-home \
+   /usr/lib/jvm/java-7-openjdk-amd64
+
+One downside of doing this is that Fiji will launch in a separate process, which has some unintuitive side effects. For example, Ubuntu's Unity user interface will not allow you to "Pin to Launcher" in this case...
+
 = Installing/Updating =
 
 == How do I install Fiji? ==
