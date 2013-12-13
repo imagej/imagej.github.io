@@ -115,7 +115,6 @@ But there is a very easy method to use gdb to inspect serious errors such as seg
 <source lang="bash">
 ./fiji -XX:OnError="gdb - %p" --
 </source>
-
 == Using lldb ==
 
 On newer OS X versions, gdb has been replaced with lldb. For those familiar with gdb already, there is an [http://lldb.llvm.org/lldb-gdb.html LLDB to GDB Command Map] cheat sheet which may be useful.
