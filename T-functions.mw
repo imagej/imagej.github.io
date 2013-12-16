@@ -3,7 +3,7 @@ Often, during acquisition of a time-course, the fluorophore may bleach and the i
 
 '''Corrected intensity = (Intensity at time ''t'') ''÷'' exp<sup>-k×''t''</sup>''' where k = decay constant
 
-[[File:bleach_correction_window.png|198x86px]]
+[[File:bleach_correction_window.png|257x112px]]
 
 If you know the decay constant ''k'', you can use the plugin "''Image/Adjust/Bleach Correction''" with the exponential fitting method. It may be worth performing a background subtraction prior to running the plugin. Note that the plugin is expecting the k value to be "per-slice" rather than per-second, per-minute, etc.
 
