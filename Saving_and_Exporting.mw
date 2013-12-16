@@ -9,4 +9,6 @@ Flash MX will import uncompressed AVI files. The frame-rate will then be determi
 
 ''Image Sequence...'' This option saves each slice in a stack as a separate TIF file. You will be presented with the option to either name the images numerically or with the slice labels.
 
+''Selection...'' After drawing an ROI onto an image, the selection's coordinates can be saved using this option. Once the ROI is deselected, it can be restored at any time in the same location by opening the saved ROI.
+
 [[Category:Cookbook]]
