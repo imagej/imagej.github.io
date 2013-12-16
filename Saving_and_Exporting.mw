@@ -11,4 +11,8 @@ Flash MX will import uncompressed AVI files. The frame-rate will then be determi
 
 ''Selection...'' After drawing an ROI onto an image, the selection's coordinates can be saved using this option. Once the ROI is deselected, it can be restored at any time in the same location by opening the saved ROI.
 
+''XY Coordinates...'' This option is similar to "''Save as/Selection...''", but this choice saves the coordinates of the selection in a text file with two columns for X and Y coordinates.
+
+
+
 [[Category:Cookbook]]
