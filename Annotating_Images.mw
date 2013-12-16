@@ -1,12 +1,10 @@
-*need to check microscope types
-*use different LUT for first '0 sec' image
 = Annotating Images =
 
 == Scale bar ==
-All images for publications or presentations should include a scale bar. To avoid confusion, a standard size should be used for the scale bars on all images if possible.
+All images for publications should include a scale bar. A standard size should be used for the scale bars on all images if possible to help avoid confusion.
 
 === Spatial calibration ===
-You can access and edit an image's spatial calibration using "''Image/Properties''". Note that the units "um" will automatically change to “µm”.
+An image's spatial calibration can be edited using "''Image/Properties''". Note that the units "um" will automatically change to “µm”.
 
 Some microscope models (Biorad PIC, Noran MOV, and Zeiss LSM confocal image files) will use the zoom and objective magnification settings for internal calibration. However, it is important to keep in mind that some file formats (e.g. Perkin Elmer) are not calibrated while some "exported" image files (e.g. Zeiss zvi's exported as TIFFs) will lose their calibration information completely.
 
@@ -14,9 +12,9 @@ In the case that the files have no calibration, you can apply the calibration us
 
 [[File:set_scale_plugin.png|179x200px]]
 
-Sometimes the spatial calibration may be lost after applying an image processing function. In this case, use the spatial calibration from the original file (use "''Image/Properties''") to update the "''Image/Properties''" values of the final, processed image.
+Sometimes the spatial calibration may be lost after applying an image processing function. In this case, use the original file's spatial calibration (located under "''Image/Properties''") to update the "''Image/Properties''" values of the final, processed image.
 
-There are three ways to reapply spatial calibration: manually via the “''Image/Properties''” dialog; via the "Copy Pixel Size" plugin that applies pixel size of one image to a second image; or via the "Set Scale" plugin. 
+There are three ways to reapply spatial calibration: manually via the “''Image/Properties''” dialog; using the "Copy Pixel Size" plugin that applies pixel size of one image to a second image; or with the "Set Scale" plugin. 
 
 ==== “Copy-calibration”  ====
 
@@ -29,18 +27,18 @@ There are three ways to reapply spatial calibration: manually via the “''Image
 [[File:copy_pixel_size_values.png|180x240px]]
 
 ====“Set Scale” ====
-If you know the size of a feature (for instance, a previously applied scale bar) you can use this command to apply a calibration.
+If you know the size of a feature (for example, a previously applied scale bar) you can use this command to apply a calibration.
 
 # Using the line selection tool, draw a line along the length of the feature or scale bar. Do not choose "''Edit/Draw''" after adding the line.
 # Run the menu command “''Plugins/Spatial calibration/Set scale''".
 # Enter the dimensions of the object/scale bar in the “''known distance''” box and set the units in the "''Unit of length''" box.
-# Do not check ''Global'' unless you wish all your images to have this calibration. Click OK.
+# Do not check ''Global'' unless you want all your images to have this calibration. Click OK.
 
 This plugin simply points to the native menu command “''Analyze/Set scale…”''.
 
 === Adding scale-bar  ===
 
-First, use the line ROI tool to draw a line of approximately the desired position and length.
+First, use the line ROI tool to draw a line with approximately the desired location and length.
 
 Run the scale bar dialog via the "Add Scale Bar" plugin. Change the “''Width in ***''” value to something sensible (5, 10, 50 etc.). “''Height''” will determine how many pixels fat your bar will be.
 
@@ -52,7 +50,7 @@ This plugin points to the native menu command “''Analyze/Tools/Scale bar…”
 
 ==  Text and lines ==
 === Issues with adding text ===
-Adding text to single frame images should be done in CorelDRAW or a similar application so the text does not become part of the image and can therefore be edited at any time. Adding text to an image/movie is irreversible so should not be done on raw data. Images can be copied to and pasted from the system clipboard between programs using the System Clipboard plugin (Plugin documentation found [http://rsbweb.nih.gov/ij/plugins/clipboard.html here])or by using the ''"Copy to System"'' and ''"Paste"'' options in the ''Edit'' menu. In the case that an image is not pasting accurately, use "''Edit/Paste Special''" in the receiving application, then select "''Device independent bitmap''".
+Adding text to single frame images should be done in CorelDRAW or a similar application so the text does not become part of the image and can therefore be edited at any time. Adding text to an image/movie is irreversible so it should not be done on raw data. Images can be copied to and pasted from the system clipboard between programs using the System Clipboard plugin (Plugin documentation found [http://rsbweb.nih.gov/ij/plugins/clipboard.html here])or by using the ''"Copy to System"'' and ''"Paste"'' options in the ''Edit'' menu. In the case that an image is not pasting accurately, use "''Edit/Paste Special''" in the receiving application, then select "''Device independent bitmap''".
 
 Always save your images before adding text. Text color is set via the color picker button on the tool bar. Double-click on it to open the palette and choose a color. 
 
@@ -60,13 +58,13 @@ Pseudocolored images should be converted to RGB ("''Image/Type/RGB color"'') pri
 
 [[File:aliased_text.png]]
 
-Since some of the pixels in anti-aliased text are not gray-scale value 255, some LUTS will display the pixels as other colors such as orange or green. This will lose the smoothing affect from antialiasing.
+Since some of the pixels in anti-aliased text do not have the gray-scale value of 255, some LUTS will display the pixels as other colors such as orange or green. This will lose the smoothing affect from antialiasing.
 
 [[File:antialiased_lut.png]]
 
 Frame 1 counter text when used with Hot Green LUT.
 
-If you use the red or blue LUT then the text will appear red or blue even though you selected the text to be “white” via the color picker.
+Another potential problem is that if you use the red or blue LUT then the text will appear red or blue even though you selected the text to be “white” via the color picker.
 
 To avoid this, convert the pseudocolored image from its current format (i.e. ''8-bit color'') to an RGB image with “''Image/Type/RGB color''” before adding the text.
 
@@ -75,8 +73,6 @@ To avoid this, convert the pseudocolored image from its current format (i.e. ''8
 Text on converted image.
 
 === Adding Text/Line/Box  ===
-
-Adding a box, line, or text to a single frame should ideally be done in a package such as CorelDRAW, Adobe Illustrator, Deneba Canvas etc. However, there are times when lines and boxes are required in ImageJ, e.g. to reference an analyzed/sectioned region.
 
 Drawing lines/boxes is achieved by first using the line/rectangle ROI tool from the toolbar or defining the box via the ''Specify Line'' or ''Specify ROI'' plugins. The line/box can then be stamped in to the image through "''Edit/Draw''" or the shortcut "Ctrl+d". If you're drawing the ROI on a stack, you'll be asked if you want to process all of the slices. Choosing 'yes' will draw the ROI on every slice while choosing 'no' will result in the ROI only being added to the current frame. The color is determined by the color picker toolbar button and the width in pixels is defined in “''Edit/Options/Line width''”. The line width must be determined before it is drawn on the image. 
 
@@ -92,15 +88,13 @@ Adding text to a stack is a slightly different process. You can draw a text box 
 
 [[File:time_stamper.png|166x237px]]
 
-2. Alternatively, you can also draw a rectangular ROI at the location and approximate size of the desired counter. The text will, by default, be of the same height as the ROI and will be aligned to its left edge. Note that if the rectangle is drawn on the right side of the image, the text could be cut off on the right if the size is too large.
+2. Alternatively, you can also draw a rectangular ROI at the location and approximate size of the desired counter. The text will, by default, be the same height as the ROI and aligned to its left edge. Note that if the rectangle is drawn on the right side of the image, the text could be cut off on the right in the case that the size is too large.
 
 Remember: bigger text will typically look smoother and the timestamp will be easier to read. It may be worth changing it to a consistent value for all of your movies.
 
-Also, bear in mind that the interval needn't be "time". The Time Stamper can also be used to add "z-axis depths" to z-stacks and "angle of rotation" to rotating volume movies (° = Alt+248; µ = Alt+230).
+Also, bear in mind that the interval doesn't necessarily need to be "time". The Time Stamper can also be used to add "z-axis depths" to z-stacks and "angle of rotation" to rotating volume movies (° = Alt+248; µ = Alt+230).
 
 === Adding event markers to a movie ===
 The ''Event Stamper'' plugin can be used to add text to a movie for a designated number of frames. Set the desired text in the “Text” box, enter the start frame and end frame and click OK. The text size and location are taken from the current ROI and can be changed once the dialog is open. 
-
-
 
 [[Category:Cookbook]]
