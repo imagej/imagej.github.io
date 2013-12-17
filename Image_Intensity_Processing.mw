@@ -28,31 +28,31 @@ The results are displayed in a plot-window with the ROI details in the plot wind
 The plugin “''Plot Z Axis Profile"&nbsp;''(this is the&nbsp;''Z Profiler'' from Kevin (Gali) Baler (gliblr at yahoo.com) and Wayne Rasband simply renamed)&nbsp;&nbsp;will monitor the intensity of a moving ROI using a particle tracking tool. This tool can be either manual or automatic. Use the “''Image/Stacks/Plot Z Axis Profile''”&nbsp; command.
 
 ==  Getting intensity values from multiple ROIs ==
-Multiple ROIs can be analyzed at once using Bob Dougherty’s “''Multi Measure''” plugin. There is a native “ROI manager” function that does a similar job except the results generated are not sorted into columns. Check Bob’s website for updates:&nbsp;[http://www.optinav.com/imagej.html http://www.optinav.com/imagej.html]
+You can analyze multiple ROIs at once with Bob Dougherty’s “''Multi Measure''” plugin. The native “ROI manager” function does a similar job except doesn't generate the results in sorted columns. Check Bob’s website for updates:&nbsp;[http://www.optinav.com/imagej.html http://www.optinav.com/imagej.html]
 
 The Multi Measure plugin that comes with the installation is v3.2.
 
-1.&nbsp;Open confocal-series. Remove background (See&nbsp;Background correction)
+1.&nbsp;Open confocal-series and remove the background (See&nbsp;Background correction)
 
-2.&nbsp;It’s worthwhile generating a reference stack to add the ROIs to. Use the “''Image/Stacks/Z-project''” function. Select the “Average” option.
+2.&nbsp;Generate a reference stack for the addition of ROIs. Use the “''Image/Stacks/Z-project''” function and select the “Average”.
 
-3.&nbsp;Rename this image “Ref&nbsp;''expt name''” or something memorable.
+3.&nbsp;Rename this image something memorable.
 
-4.&nbsp;Open “''ROI Manager''” plugin (“''Analyze/Tools/Roi Manager''&nbsp;”&nbsp;or toolbar icon&nbsp;).
+4.&nbsp;Open the “''ROI Manager''” plugin (“''Analyze/Tools/Roi Manager''&nbsp;”&nbsp;or toolbar icon&nbsp;).
 
-5.&nbsp;Select ROIs and "''Add''" to ROI manager. Clicking "''Show All''" helps avoid analysing the same cell twice.
+5.&nbsp;Select ROIs and "''Add''" to the ROI manager. Click the "''Show All''" button to help avoid analyzing the same cell twice.
 
-6.&nbsp;Once finished selecting ROIs to be analysed in the reference image, you can draw them to the reference image by clicking the "''More>>''" button and selecting&nbsp;''Draw''. Save the reference image to the&nbsp;experiment’s data folder and then select the stack to be analysed by clicking on it.
+6.&nbsp;After selecting ROIs to be analyzed in the reference image, you can draw them to the reference image by clicking the "''More>>''" button and selecting&nbsp;''Draw''. Save the reference image to the&nbsp;experiment’s data folder and then click on the stack to be analyzed.
 
-7.&nbsp;Click "''More>>''" button in the ROI manager and select “''Multi Measure''” button to measure all the ROIs. Click “Ok”. This will put values from each slice in to a single row (multiple columns per slice). Clicking on "''Measure all 50 slices''" will put all values from all slices and each ROI in a&nbsp; single column.
+7.&nbsp;Click the "''More>>''" button in the ROI manager and select the “''Multi Measure''” button to measure all the ROIs. Click “Ok”. This will put values from each slice in to a single row with multiple columns per slice. Clicking on "''Measure all 50 slices''" will put all values from all slices and each ROI in a&nbsp; single column.
 
-8.&nbsp;Go to “Results” window. Select menu item “''Edit/Select All…''”. Then “''Edit/Copy''”.
+8.&nbsp;Go to the “Results” window and select the menu item “''Edit/Select All…''”. Then “''Edit/Copy''”.
 
-9.&nbsp;Go to Excel and paste data. With large data sets this can take some time so check you’re pasting new data in and not the last dataset copied from Multi Measure.
+9.&nbsp;Go to Excel and paste in the data. Check that everything was pasted in correctly
 
 [[File: roi_select_all.jpg]]
 
-10.&nbsp;To copy ROI co-ordinates in to the Excel spreadsheet, ensure there is an empty row above the intensity data. Got to Multi Measure dialog and click “Copy list” button.
+10.&nbsp;To copy ROI coordinates in to the Excel spreadsheet, ensure there is an empty row above the intensity data. Got to Multi Measure dialog and click “Copy list” button.
 
 14.&nbsp;Go to Excel, select the empty cell above the first data column and then paste the ROI co-ordinates.
 
