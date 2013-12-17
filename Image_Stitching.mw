@@ -181,7 +181,7 @@ If you still have a known arrangement of tiles that is not covered by any of the
 
  # Define the number of dimensions we are working on
  dim = 3
- # Define the image coordinates
+ # Define the image coordinates (in pixels)
  img_73.tif; ; (0.0, 0.0, 0.0)
  img_74.tif; ; (409.0, 0.0, 0.0)
  img_75.tif; ; (0.0, 409.0, 0.0)
