@@ -52,13 +52,12 @@ The Multi Measure plugin that comes with the installation is v3.2.
 
 [[File: roi_select_all.jpg]]
 
-10.&nbsp;To copy ROI coordinates in to the Excel spreadsheet, ensure there is an empty row above the intensity data. Got to Multi Measure dialog and click “Copy list” button.
+10.&nbsp;To copy ROI coordinates into the Excel spreadsheet, there needs to be an empty row above the intensity data. Use the Multi Measure dialog and click the “Copy list” button.
 
-14.&nbsp;Go to Excel, select the empty cell above the first data column and then paste the ROI co-ordinates.
+14.&nbsp;In Excel, click the empty cell above the first data column and paste in the ROI coordinates.
+Save the ROIs with the Multi Measure button “''Save''”. Put them in the experimental data folder. The ROIs can be opened later either individually with the button “''Open''” or all at once with the button “''Open All''”.
 
-The ROIs can be stored and re-opened later using the Multi Measure dialog button “''Save''”. Save them in the experimental data folder. The ROIs can be opened later either individually (Multi Measure dialog button “''Open''”) or all at once (Multi Measure dialog button “''Open All''”) which opens all the ROIs in a folder.
-
-Oval and rectangular ROIs can also be restored individually from x, y, l, h values using “''Plugins/ROI/SpecifyROI…''”.
+Oval and rectangular ROIs can be restored individually from x, y, l, h values with the “''Plugins/ROI/SpecifyROI…''” command.
 
 == Ratio Analysis ==
 [[File:intensity_ratio_analysis.jpg|right]]
