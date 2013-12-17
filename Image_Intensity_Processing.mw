@@ -7,15 +7,15 @@ Contrast is the separation of the lightest and darkest parts of an image. An inc
 
 Adjust the brightness and contrast with “''Image/Adjust/Brightness/Contrast...''” to make visualization of the image easier.
 
-The “''Auto”''&nbsp; button applies an intelligent contrast stretch to the&nbsp;''way in which the image is displayed''. The brightness and contrast is adjusted based on an analysis of the image's (or selection’s) histogram. If pressed repeatedly, it allows an increasing percentage of pixels to become saturated.
+Press the “''Auto”''&nbsp; button to apply an intelligent contrast stretch to the&nbsp;''the image display''. Brightness and contrast is adjusted by taking into account the image's histogram. If pressed repeatedly, the button increases the percentage of saturated pixels.
 
-''Reset''&nbsp;changes the “maximum” and “minimum” back to 0 and 255 for 8-bit images and back to the maximum and minimum of the image’s histogram for 16-bit images.
+The ''Reset''&nbsp;button makes the “maximum” 0 and the “minimum” 255 in 8-bit images and the "maximum" and "minimum" equal to the smallest and largest pixel values in the image’s histogram for 16-bit images.
 
-If the&nbsp;''Auto''&nbsp; button does not produce a desirable result, select a region of the cell plus some background with a region-of-interest (ROI) tool, then hit the “''Auto''” button again. It will then do a stretch based on the intensities within the ROI.
+If the&nbsp;''Auto''&nbsp; button does not produce a desirable result, use the region-of-interest (ROI) tool to select part of the cell and some background, then hit the “''Auto''” button again. The stretch will then be based on the intensities of the ROI.
 
-'''Pressing the&nbsp;''Apply''&nbsp;button permanently changes the&nbsp;''actual&nbsp;''grey values of the image. Don’t press this button while analyzing image intensity!'''
+'''Pressing the&nbsp;''Apply''&nbsp;button permanently changes the&nbsp;''actual&nbsp;''grey values of the image. If just analyzing image intensity do not press this button.
 
-If you prefer the image to be displayed as “black on white” rather than “white on black”, the image display can be “inverted” by the command “''Image/Lookup Tables/Invert LUT''”. The command “''Edit/Invert''” inverts the pixel&nbsp;''values''&nbsp;not just the way the image is displayed.
+If you prefer the image to be displayed as “black on white” rather than “white on black”, then use the “inverted” command: “''Image/Lookup Tables/Invert LUT''”. The command “''Edit/Invert''” inverts the pixel&nbsp;''values themselves''&nbsp;permanently.
 
 == Getting intensity values from single ROI ==
 If working with a stack, the ROI selected can be analyzed with the command: “''Image/Stacks/Plot Z Axis Profile''”. This generates a single column of numbers - one slice intensity per row.
