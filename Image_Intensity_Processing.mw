@@ -27,7 +27,7 @@ The results are displayed in a plot-window with the ROI details in the plot wind
 == Dynamic intensity vs Time analysis ==
 The plugin “''Plot Z Axis Profile"&nbsp;''(this is the&nbsp;''Z Profiler'' from Kevin (Gali) Baler (gliblr at yahoo.com) and Wayne Rasband simply renamed)&nbsp;&nbsp;will monitor the intensity of a moving ROI using a particle tracking tool. This tool can be either manual or automatic. Use the “''Image/Stacks/Plot Z Axis Profile''”&nbsp; command.
 
-==  Getting intensity values from multiple ROIs ==
+== Getting intensity values from multiple ROIs ==
 You can analyze multiple ROIs at once with Bob Dougherty’s “''Multi Measure''” plugin. The native “ROI manager” function does a similar job except doesn't generate the results in sorted columns. Check Bob’s website for updates:&nbsp;[http://www.optinav.com/imagej.html http://www.optinav.com/imagej.html]
 
 The Multi Measure plugin that comes with the installation is v3.2.
