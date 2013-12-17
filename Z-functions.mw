@@ -143,7 +143,11 @@ The “Edit” menu supplies some more options to change the color and transpare
 
 ==Surface Render==
 
-VolumeJ is a 3D reconstruction method where the object surface will appear opaque, giving a more "solid" look to the object. VolumeJ's interactive rendering option is currently not working: check back for more updates.
+VolumeJ is a 3D reconstruction method where the object surface will appear opaque, giving a more "solid" look to the object.
+
+<div style="background:#ffd; padding: 10px 10px 0 10px; border: 1px solid black;">
+NB: VolumeJ's interactive rendering option is currently not working. Other modes should work.
+</div>
 
 [[File:volumej.png|348x269px]]
 
