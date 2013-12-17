@@ -1,7 +1,7 @@
-=  Stack-slice manipulations =
+= Stack-slice manipulations =
 
-==  Slice shuffling/removing/Adding ==
-The slices in each stack can be manipulated in many ways. Some of these functions are described below.
+== Slice shuffling/removing/Adding ==
+The slices in a stack can be manipulated in many ways. Some of these functions are described below.
 
 Deleting a single slice: “''Image/Stacks/Delete Slice''"
 *Deletes the currently displayed slice in a stack.
@@ -38,7 +38,7 @@ Stack Combine: “''Image/Stacks/Tools/Combine''”
 
 Stack Inserter: “''Image/Stacks/Tools/Insert''"
 *Used with two stacks, one is the source and the other the destination.
-*Superimpose the source by specifying the (X,Y) coordinates for the location of the upper left hand corner.
+*Superimpose the source by specifying the X and Y coordinates for the location of the upper left hand corner.
 *No automatic resizing, so the smaller stack should not be used as the destination.
 
 Stack Sorter: “''Image/Stacks/Tools/Stack Sorter''”.
@@ -76,7 +76,7 @@ Series generated with zoomify
 
 ==Align slices in stack==
 
-The plugins StackReg (to align a stack) and TurboReg (to align more than one image or stack) can be used for alignment and are located by "''Plugins/Registration/StackReg or TurboReg''". StackReg takes a stack with misaligned slices and aligns the slices with respect to the current slice. Open the stack, scroll to the most centered slice and run the plugin. The "Rigid body" method typically produces the best results for microscopy images. The TurboReg plugin must be installed before using StackReg.
+The plugins StackReg (to align a stack) and TurboReg (to align more than one image or stack) can be used for alignment and are found at "''Plugins/Registration/StackReg or TurboReg''". StackReg takes a stack with misaligned slices and aligns the slices with respect to the current slice. Open the stack, scroll to the most centered slice and run the plugin. The "Rigid body" method typically produces the best results for microscopy images. The TurboReg plugin must be installed before using StackReg.
 
 Based on:
 
