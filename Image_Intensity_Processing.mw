@@ -5,7 +5,7 @@ Brightness is the visual perception of reflected light. Increased brightness ref
 
 Contrast is the separation of the lightest and darkest parts of an image. An increase in contrast will darken shadows and lighten highlights. Increasing contrast is generally used to make objects in an image more distinguishable.
 
-To improve the visualization of the image, the displayed brightness and contrast can be adjusted with “''Image/Adjust/Brightness/Contrast...''”.
+Adjust the brightness and contrast with “''Image/Adjust/Brightness/Contrast...''” to make visualization of the image easier.
 
 The “''Auto”''&nbsp; button applies an intelligent contrast stretch to the&nbsp;''way in which the image is displayed''. The brightness and contrast is adjusted based on an analysis of the image's (or selection’s) histogram. If pressed repeatedly, it allows an increasing percentage of pixels to become saturated.
 
