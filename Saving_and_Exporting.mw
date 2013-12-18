@@ -1,6 +1,8 @@
 =Saving and Exporting=
 [[File:save_as1.png|right]] [[File:save_as2.png|right]]The “''File/Save''” (hotkey: S) menu command will save the image as a TIF file. Other formats are available (see menu image on the right) and can be accessed by “''File/Save As...''”. When the “''Save as''” dialog is opened, Fiji will enter the image window’s name, plus the appropriate file suffix, as the “File Name". 
 
+Files may also be exported to many file types using the Bio-Formats Exporter found at ''"Plugins/LOCI"''. As of this writing, the supported file types are Animated PNG, AVI, Encapsulated PostScript (EPS, EPSI), Image Cytometry Standard (IDS, ICS), Java source code, JPEG, JPEG-2000, OME-TIFF, OME-XML, QuickTime, and TIF. 
+
 ''Animated GIF…'' Choosing this option from the "''Save as''" menu saves a stack as an animated GIF. It is only compatible on RGB or 8 bit images. A more suitable option would be saving as ''GIF'', where the only limitation is that any RGB color stacks must be converted to 8 bit color.
 
 Uncompressed AVI files are exported via “''File/Save as…/AVI…” ''. The frame rate and compression option of the exported AVI movie is selected in the resulting window. Frame rate can be between 0.1 and 100 frames per second (fps). The compression may be in JPEG, PNG, or uncompressed. Though uncompressed files are large, they should be playable on any PC/Mac without decoder issues.
