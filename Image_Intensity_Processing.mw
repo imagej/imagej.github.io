@@ -150,7 +150,7 @@ The “Equalize contrast” command applies a non-linear stretch of the histogra
 [[File:equalize_histrogram.jpg]]
 
 === Gamma ===
-<nowiki>This can be though of as a non-linear histogram adjustment. Faint objects can be made more intense without saturating bright objects (gamma <1). Similarly, medium-intensity objects can be made fainter without dimming the bright objects (gamma > 1). The intensity of each pixel is “raised to the power” of the gamma value and then scaled to 8-bits or the min and max of 16-bit images.</nowiki>
+<nowiki>Gamma performs a non-linear histogram adjustment. Faint objects become more intense while bright objects do not (gamma <1). Also, medium-intensity objects become fainter while bright objects do not (gamma > 1). The intensity of each pixel is “raised to the power” of the gamma value and then scaled to 8-bits or the min and max of 16-bit images.</nowiki>
 
 For 8 bit images; New intensity = 255 ×&nbsp;''<nowiki>[(old intensity÷255)</nowiki>&nbsp;gamma'']
 
