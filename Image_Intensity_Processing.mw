@@ -142,9 +142,9 @@ To use:
 === Equalization ===
 
 {| style="border-spacing:0;"
-| style="border:none;padding:0in;"| More control of the brightness and contrast adjustment can be achieved with the“''Process/Enhance contrast”''&nbsp;menu command. Here, when applied to a stack, it applies the adjustment based on each slice’s histogram, not just the one currently displayed as is done with the&nbsp;''Brightness and Contrast&nbsp;''window.
+| style="border:none;padding:0in;"| You can have more control over brightness and contrast adjustments with the“''Process/Enhance contrast”''&nbsp;menu command. With a stack, it analyzes the each slice’s histogram to make the adjustment.
 
-“Equalize contrast” applies a non-linear stretch of the histogram based on the square root of the intensity (see online guide to image processing: [http://www.dai.ed.ac.uk/HIPR2/histeq.htm http://www.dai.ed.ac.uk/HIPR2/histeq.htm]).
+The “Equalize contrast” command applies a non-linear stretch of the histogram based on the square root of its intensity.
 
 |}
 [[File:equalize_histrogram.jpg]]
