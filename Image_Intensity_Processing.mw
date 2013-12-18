@@ -113,11 +113,11 @@ Noran movies can be opened in several ways: File>Import>Noran movie opens entire
 This reading can be found by using the menu command “''Image/Show Info…''”. Scroll down to get the time each slice was acquired. Select this time, copy it into Excel, and find the time number obtained by using the Excel menu command “''Edit/Replace''”. This will leave only the time data. The “elapsed” time can then be calculated by subtracting row 1 from all subsequent rows.
 
 == Pseudo-linescan ==
-“Linescanning” is a mode of acquisition common to many confocal microscopes where a single pixel wide line is acquired over a period of time instead of the norma1 2-D, x-y image. Usually this allows faster acquisition. The single pixel wide images over the time course are stacked from left to right to generate a 2-D image (i,e,&nbsp;''x''-''t'').
+Linescanning involves acquiring a single line, one pixel in width, from a common confocal microscope instead of a standard 2D image. This is usually a faster way to take an image. All the single pixel-wide images are then stacked to recreate the 2D image.
 
-A “pseudo-linescan” is the generation of a linescan-type x-t plot from a 3-D (''x, y, t'')&nbsp;timecourse and can be useful in displaying 3-D data (x, y, t) in 2 dimensions.
+A pseudo-linescan generation of a 3-D (''x, y, t'') image. It is useful for displaying 3-D data in 2 dimensions.
 
-A line of interest must be drawn followed by the command: “''Image/Stacks/Reslice”''&nbsp;or keyboard “/”. It will prompt for the line width. Enter the width of line you wish to be averaged. A pseudo-linescan “stack” will be generated, each slice representing the pseudo-linescan of a single-pixel wide line along the line of interest. To average the pseudo-linescan “stack”, select “''Image/Stacks/Z-Project…''” and select the&nbsp;''Average''&nbsp;command. A polyline can be used although this will only allow a single pixel slice to be made.
+A line of interest is drawn followed by the command: “''Image/Stacks/Reslice”''&nbsp;or with the keyboard button “/”. It will ask you for the line width that you wish to be averaged. It will generate a pseudo-linescan “stack” with each slice representing the pseudo-linescan of a single-pixel wide line along the line of interest. Average the pseudo-linescan “stack” by selecting “''Image/Stacks/Z-Project…''” and use the&nbsp;''Average''&nbsp;command. A poly-line can be utilized, but this will only generate a single pixel slice.
 
 This example shows the elementary calcium events preceding a calcium wave. HeLa cell loaded with the calcium-sensitive fluorophore, Fluo-3 and imaged whilst responding to application of histamine.&nbsp;('''A'''). Frame taken from time-course at the peak of the calcium-release response. ('''B''') The line of pixels along X-Y was taken and stacked side by side from right-to left to generate a "pseudo-line scan". This allows visualisation of the progression of the wave from its initiation site.
 
