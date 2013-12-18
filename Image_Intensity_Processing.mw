@@ -122,30 +122,21 @@ A line of interest is drawn followed by the command: “''Image/Stacks/Reslice�
 &nbsp;Fiji's default settings assume that stacks are&nbsp;''z''-series rather than&nbsp;''t''-series. This means that many functions related to the third-dimension of an image stack are referred to with a “''z-”''&nbsp;. Just keep this in mind.
 
 == FRAP (Fluorescence Recovery After Photobleaching) Analysis ==
-The FRAP profiler plugin will analyse the intensity of a bleached ROI over time and normalise this against the intensity of the whole cell. It will then find the minimum intensity in the bleached ROI and fit the recovery&nbsp; from this point.
+The FRAP profiler plugin will analyze the intensity of a bleached ROI over time and normalize it against the intensity of the whole cell. After that it will find the minimum intensity in the bleached ROI and fit the recovery with this point in mind.
 
 To use:
 
-1. Open the&nbsp;ROI manager.
+1. Open the ROI manager.
 
-2. Draw around the bleached ROI and Add to the ROI manager.
+2. Draw around the bleached ROI and add it to the ROI manager.
 
-3. Draw around the whole cell and add to ROI manager. The normalisation corrects for the bleaching dues to image acquisition and assumes the whole cell is in the field of view.
+3. Draw around the whole cell and add that to the ROI manager. The normalization corrects for the bleaching that occurs during image acquisition and assumes the whole cell is in the field of view.
 
-'''The plugin assumes the larger of the last two ROIs in the ROI manager is the whole cell ROI and the smaller the bleached ROI.'''
+'''The plugin assumes the larger of the two ROIs in the ROI manager is the whole cell ROI and that the smaller ROI is the bleached part.'''
 
 4. Run the FRAP profiler plugin.
 
-5. The plugin will return the intensity vs time plot; the normalised intensity vs time plot of the bleached area and the curve fit.
-
-The normalisation corrects for the bleaching dues to image acquisition and assumes the whole cell is in the field of view.
-
-'''normalised intensity at time t = It&nbsp;<nowiki>= (Ib</nowiki>t&nbsp;÷ Ibmax)&nbsp; ÷ (Ict&nbsp;÷ Icmax)'''
-
-'''Ibt<nowiki>= intensity of bleached ROI at time t.</nowiki>'''
-
-'''Ict<nowiki>= intensity of whole cell at time t.</nowiki>'''
-
+5. The plugin will return the intensity vs time plot, the normalized intensity vs time plot of the bleached area, and the curve fit.
 
 == Non-linear contrast stretching ==
 === Equalization ===
