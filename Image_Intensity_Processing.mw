@@ -63,25 +63,25 @@ Oval and rectangular ROIs can be restored individually from x, y, l, h values wi
 [[File:intensity_ratio_analysis.jpg|right]]
 Ratiometric imaging compares the recordings of two different signals to see if there are any similarities between them. It is done by dividing one channel by another channel to produce a third ratiometric channel. This technique is useful because it corrects for dye leakage, unequal dye loading, and photo-bleaching. An example application would be measuring intracellular ion, pH, and voltage dynamics in real time. 
 
-Analysis of dual-channel ratio images requires careful background subtraction prior to analysis. See section&nbsp; '''1.11 Background correction.&nbsp;'''The ''Ratio_Profiler''&nbsp;plugin will perform ratiometric analysis of a single ROI on a dual-channel interleaved stack, i.e. the odd-slices are channel 1 images, the even slices channel 2. Perkin Elmer&nbsp;''Ultraview''&nbsp;and Leica SP dual channel experiments can be directly imported as an interleaved stack using the menu command "''File/Import/Image Sequence''". If your two channels are opened as separate stacks, e.g. Zeiss, the two channels can be interleaved (mixed together by alternating between them) with the menu command "''Plugins/Stacks - Shuffling/Stack Interleaver''".
+Background subtraction is needed before analysis of dual-channel ratio images. See section&nbsp; '''1.11 Background correction.&nbsp;'''The ''Ratio_Profiler''&nbsp;plugin will perform ratiometric analysis of a single ROI on a dual-channel interleaved stack. The odd-slices are channel 1 images and the even slices are channel 2 images. If your two channels are opened as separate stacks, such as Zeiss, the two channels can be interleaved (mixed together by alternating between them) with the menu command "''Plugins/Stacks - Shuffling/Stack Interleaver''".
 
-The plugin will generate a green-plot of the ratio values (Ch1÷Ch2 by default; Ch2÷Ch1 if the plugin is run with the Alt-key down); a second plot of the intensities of the individual channels (Ch1 and Ch2); and a results table.
+The plugin will generate a green-plot of the ratio values. Ch1÷Ch2 is the default and you can get Ch2÷Ch1 if the plugin is run with the Alt-key down. It will also generate a second plot of the intensities of the individual channels, Ch1 and Ch2, as well as a results table.
 
-The first row of the results table is the x, y, width and height of the ROI.
+The first row of the results table contains values for the x, y, width and height of the ROI.
 
-From the second row downward, the first column is the time&nbsp;or slice number; the second column the Ch1 mean intensity, Ch2 mean intensity and the ratio value. If the stack has its frame interval calibrated, the "Time" value will be in seconds otherwise it is "Slices". The frame interval can be set for the stack via the menu command&nbsp;''"Image/Properties"''&nbsp;dialog.
+From the second row downward, the first column is the time&nbsp;(slice number), the second column is the Ch1 mean intensity, and the third channel is the Ch2 mean intensity and the ratio value. The stack must have its frame interval calibrated in order for the "Time" value to be in seconds. Otherwise, it is "Slices". The frame interval can be set for the stack via the menu command&nbsp;''"Image/Properties"''&nbsp;.
 
-This table can be copied to the clipboard for pasting to another program by using the "''Edit/Copy All''" menu command.
+This table can be copied to the clipboard and pasted elsewhere with the "''Edit/Copy All''" menu command.
 
 &nbsp;
 
 '''''&nbsp;Ratio Analysis Using ROI manager'''''
 
-1.&nbsp;BG subtract&nbsp;the image.
+1.Subtract the background from the image.
 
 2. Open&nbsp;''ROI manager''&nbsp;(''Analyze/Tools/ROI manager...'') and click the "Show All" button.
 
-3. Select the cells to be analyzed and add to the ROI manager ("Add" button or keyboard 't' key).
+3. Select the cells to be analyzed and add them to the ROI manager ("Add" button or keyboard 't' key).
 
 4. Run the plugin.
 
@@ -89,11 +89,11 @@ The results window contains the mean&nbsp; of ch1 and ch2 and their ratio. Each 
 
 To generate a reference image:
 
-1. flatten the stack (''Image/Stacks/Zproject" "Projection type: Maximimum"''),
+1. Flatten the stack with the menu command(''Image/Stacks/Zproject" with "Projection type: Maximum"''),
 
-2. Adjust the&nbsp;brightness and contrast&nbsp;if required.
+2. Adjust the brightness and contrast if necessary.
 
-3. Ensure the new image is selected and click the "More" button in the ROI manager then select "Label".
+3. Select the new image and click the "More" button in the ROI manager. After that select "Label".
 
 &nbsp;
 
