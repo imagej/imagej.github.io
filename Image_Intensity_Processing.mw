@@ -150,7 +150,6 @@ The normalisation corrects for the bleaching dues to image acquisition and assum
 '''Ict<nowiki>= intensity of whole cell at time t.</nowiki>'''
 
 
-= Image Intensity Processing =
 == Non-linear contrast stretching ==
 === Equalization ===
 
