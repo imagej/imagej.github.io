@@ -35,9 +35,9 @@ Fiji has several plugins found in the menu "''Image/Adjust/Threshold''" for auto
 [[File:automatic_thresholding_5.1.1.2.jpg]]
 
 === Watershed separation ===
-Objects in a binary image that are slightly overlapping may be separated using the menu command “''Process/Binary/Watershed”.''&nbsp;
+Overlapping objects in a binary image can be separated using the menu command “''Process/Binary/Watershed”.''&nbsp;
 
-The image first needs to be converted to binary (set via thresholding). The black pixels are then replaced with grey pixels of an intensity proportional to their distance from a white pixel (i.e. black pixels close to the edge are light grey, those closer to the ‘middle') are nearer black. This is the Euclidian distance map (EDM). From this the centres of the objects can be calculated. These are the &nbsp;''ultimate eroded points''&nbsp;(UEPs), i.e. points that are equidistance from the edges. These points are then dilated until they meet another black pixel after which a watershed line is drawn.
+First convert the image to binary by thresholding. The black pixels are then replaced with grey pixels of an intensity proportional to their distance from a white pixel. Black pixels closer to the edge are lighter than black pixels that are more central. This is the Euclidian distance map (EDM) of the black area. From this the centers of the objects are calculated. These are the ultimate eroded points (UEPs) of each black area meaning they are equidistant from each edge. These points are then dilated until they touch another black pixel. This meeting point is where a watershed line is drawn.
 
 === Analyze Particles ===
 Once the image has been segmented, the menu command “''Analyze/Analyze particles...”''&nbsp;can be used to obtain various information regarding particle size and numbers [[File:analyze_particles_screenshot.png|thumb||right]].
