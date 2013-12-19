@@ -273,15 +273,15 @@ This can also be done using the “''Process/Image Calculator”''function with 
 | colspan="2"  style="border:none;padding:0in;"| [[File:pseudoCorrectionImage.gif]]
 
 
-Often it is not possible to obtain a flat-field reference image. However, it is still possible to correct for illumination intensity (although not small defects such as dust) by making a “pseudo-flat field” image by performing a large-kernel filter on the image to be corrected. This is particularly useful for DIC images where there is an intrinsic, and distracting, gradient in illumination.
+Sometimes it is not possible to obtain a flat-field reference image. It is still possible to correct for illumination intensity, though not small defects like dust, by making a “pseudo-flat field” image by performing a large-kernel filter on the image to be corrected. For those working with DIC images, this is particularly useful because they generally have an intrinsic, and distracting, gradient in illumination.
 
 This can be accomplished simply by subtracting the Gaussian-blurred image version of the image.
 
-This can also be used with stacks for brightfield time-courses that vary in intensity with time. This is time consuming though.
+This can also be used with stacks for brightfield time-courses that vary in intensity with time. Doing this with stacks can be time consuming.
 
 |-
 | style="border:none;padding:0in;"| [[File:pseudoCorrRawCorrected.gif]]
-| style="border:none;padding:0in;"| The first RAW image (top) pseudo-flat field corrected. Here the pseudo-flat field corrects for the uneven illumination but does not correct the dust specks. Compare this with the result of a proper flat-field correction above.
+| style="border:none;padding:0in;"| The first RAW image (top) is pseudo-flat field corrected. Here the pseudo-flat field corrects for the uneven illumination, but does not correct for the dust specks. Look at this compared to the result of a proper flat-field correction above.
 
 |}
 &nbsp;
