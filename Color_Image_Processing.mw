@@ -91,14 +91,14 @@ Have a play and see which LUT helps illustrates the features in your image.
 
 [[File: list_of_luts.jpg]]
 
-Montage compiled from a stack generated using the menu commands “Image/Color/Display LUTs".
+Montage compiled from a stack generated using the menu commands “''Image/Color/Display LUTs''".
 
-Different LUTs are available via the menu commands “Image/Lookup Tables”. 
+Different LUTs are available via the menu commands “''Image/Lookup Tables''”. 
 
-When using a non-standard LUT it may be useful to add a greyscale ramp so the user can judge which color represents which grey-scale value. A ramp can be added with the native function "Analyze/Tools/Calibration Bar...". If there is no space for the ramp, try enlarging the image canvas with the menu command "Image/Adjust/Canvas Size...".
-
-Analyze/Tools/Calibration Bar...
+When using a non-standard LUT it may be useful to add a greyscale ramp so the user can judge which color represents which grey-scale value. A ramp can be added with the native function "''Analyze/Tools/Calibration Bar...''". If there is no space for the ramp, try enlarging the image canvas with the menu command "''Image/Adjust/Canvas Size...''".
 
 [[File: analyze_calibration_bar.jpg]]
+
+Analyze/Tools/Calibration Bar...
 
 [[Category: Cookbook]]
