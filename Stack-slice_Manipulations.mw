@@ -48,7 +48,7 @@ Stack Sorter: “''Image/Stacks/Tools/Stack Sorter''”.
 [[File:stack_slice_manipulations1.png]]
 
 ==  Stack dimension manipulations ==
-Images and stacks can be resized and rotated with native functions or with the more sophisticated TransformJ set of plugins from Erik Meijering. These are found in the “''Plugins/Transform/TransformJ'' ” menu list and more details about each plugin in the menu can be found on [http://www.imagescience.org/meijering/software/transformj/ this website.]
+Images and stacks can be resized and rotated with native functions or with the more sophisticated TransformJ set of plugins from Erik Meijering. More details about each TransformJ plugin can be found on [http://www.imagescience.org/meijering/software/transformj/ this website.]
 
 E. H. W. Meijering, W. J. Niessen, M. A. Viergever, [http://www.ncbi.nlm.nih.gov/pubmed/11516706 Quantitative Evaluation of Convolution-Based Methods for Medical Image Interpolation], ''Medical Image Analysis'', vol. 5, no. 2, June 2001, pp. 111-126.
 
@@ -57,7 +57,6 @@ An alternative method for cropping a stack is found with "''Plugins/Stacks/Crop 
 [[File:3dcrop.png]]
 
 Window for the Crop (3D) plugin.
-
 
 == Zoomify plugin==
 
