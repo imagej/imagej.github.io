@@ -217,7 +217,7 @@ Red-green anaglyph at left, red-cyan anaglyph on the right.
 ===Surface-rendered anaglyphs===
 Surface stereo pairs for a stack are simply made with VolumeJ's stereo pair button. This generates a stereo pair with a 5° difference.
 
-These two images can be merged to form an anaglyph using either the menu command ''"Image/Color/RGB merge"'' or the MBF plugin ''"Colour merge"''.
+These two images can be merged to form an anaglyph using either the menu command ''"Image/Color/RGB merge"'' or the plugin ''"Colour merge"''.
 
 The "left eye" needs to be red; the "right eye" green or cyan.
 
