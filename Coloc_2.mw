@@ -44,11 +44,11 @@ This draft is a work in progress of a new Coloc2 page focusing on the plugin its
 == Something to do before using Coloc2 ==
 
 ===Open the sample data===
-First, lets open a sample data set that we know should have very good colocalisation because the 2 subunits of a dimeric protein are stained with green and red dyes respectively. The methods of Pearson, Manders, Costes and Li should work very well for this sample, but maybe we can see some problems with the data? Maybe we can decide if the data is suitable for this analysis or not? 
+First, let's open a sample data set that we know should have very good colocalisation because the 2 subunits of a dimeric protein are stained with green and red dyes respectively. The methods of Pearson, Manders, Costes and Li should work very well for this sample, but maybe we can see some problems with the data? Maybe we can decide if the data is suitable for this analysis or not? 
 
 '''Open this sample data file [http://fiji.sc/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif].''' Then use the "Image-Color-Split Channels" menu command to get a separate z stack for the 2 dyes (you can throw the blue one away!).
 
-If you like, you can change the look up tables of the images (LUTs) so one is "green" and one is "magenta". Of course the colours here are always false. These false colours are only useful (to us as apes with trichromatic vision) to tell which channel is which: We are evolved to find red fruit in green trees. The optoelectronic detectors we use only see photons, and don't know what colour they are... that is determined by the fluorescence emission filters we use. There is no such thing as a green dye or a red dye, since they have broad emission spectra not a single wavelength corresponding to a certain "colour".
+If you like, you can change the look up tables of the images (LUTs) so one is "green" and one is "magenta". Of course the colors here are always false. These false colors are only useful to tell which channel is which. The optoelectronic detectors we use only see photons, and don't know what color they are; that is determined by the fluorescence emission filters we use. There is no such thing as a green dye or a red dye, since they have broad emission spectra not a single wavelength corresponding to a certain "color".
 If I want to show DAPI in green and EGFP as magenta, there is nothing "wrong" about that.  
 
 [[Image:SplitChannels.png|300px]]
