@@ -33,7 +33,6 @@ Note, all included methods are mainly related to medical imaging but it can be a
 
 == jSLIC - superpixel segmentation ==
 
-[[Image:Fiji_jSLIC_gui.jpg|right|250px|jSLIC interface]]
 The amount of data in medical imaging to be processed is increasing - images in histology can easily have 50.000x50.000 pixels or even more. The segmentation or registration of these large images is very demanding. The complexity of segmentation and registration can be reduced by using superpixels.
 
 Recently, SLIC (Simple Linear Iterative Clustering) was introduced for general images and presented as a powerful intermediate phase for further image segmentation, classification and registration. SLIC is an adaptation of the k-means
@@ -41,8 +40,9 @@ algorithm for superpixel generation with two important distinctions: (a) the wei
 
 We made a Java-based open source implementation  jSLIC - the superpixel clustering with better performance than the original SLIC. Moreover, we proposed a different regularisation parameter, which influences the compactness of resulting superpixels and propose a default value r=0.2. The new post-processing step gives more reliable superpixels shapes, with no need of decreasing superpixel size. 
 
-=== Parameters ===
+=== How to use the plugin ===
 
+[[Image:Fiji_jSLIC_gui.jpg|right|250px|jSLIC interface]]
 As you can see the Interface to the plugin contains a parameters for superpixel configuration and also its final visualisation.
 
 ==== Configuration ====
