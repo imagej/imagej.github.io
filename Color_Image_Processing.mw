@@ -71,7 +71,7 @@ It works with single slice RGB images. A new RGB stack is created, channel 1 bei
 
 == Color Composite ==
 
-The composite can be reverted to a greyscale stack via the menu command "Image/Hyperstacks/Hyperstack to Stack". The channels can be subsequently split to individual images via the menu command "Image/Stacks/Stack to Images".
+The composite can be reverted to a greyscale stack via the menu command "''Image/Hyperstacks/Hyperstack to Stack''". The channels can be subsequently split to individual images via the menu command "''Image/Stacks/Stack to Images''".
 
 == Pseudo-color ==
 
