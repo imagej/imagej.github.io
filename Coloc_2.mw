@@ -53,7 +53,7 @@ If I want to show DAPI in green and EGFP as magenta, there is nothing "wrong" ab
 
 [[Image:SplitChannels.png|300px]]
 
-===Questions you should ask before attempting colocalisation analysis from 2 colour channel images, using the pixel intensity spatial correlation methods of Manders and Costes:===
+===Questions you should ask before attempting colocalization analysis from 2 color channel images, using the pixel intensity spatial correlation methods of Manders and Costes:===
 
 *Q1) Is the image data noisy?
 *Q2) Has there been lossy compression?
