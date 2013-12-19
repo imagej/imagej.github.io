@@ -238,7 +238,7 @@ This macro, because it also works with stacks, can be used on time-courses with 
 
 == Flat-field correction ==
 === Proper correction ===
-This technique is applied to brightfield images. Uneven illumination, dirt/dust on lenses can result in a poor quality image. This can be corrected by acquiring a “flat-field” reference image&nbsp;''with the same intensity illumination as the experiment''. The flat field image should, ideally, be a field of view of the coverslip without any cells/debris. This is often not possible with the experimental coverslip, so a fresh coverslip may be used with approximately the same amount of buffer as the experiment. With fixed-specimens try removing the slide completely
+Use this technique on brightfield images. You can correct uneven illumination or dirt/dust on lenses by acquiring a “flat-field” reference image&nbsp;''with the same intensity illumination as the experiment''. The flat field image should be as close as possible to a field of view of the cover slip without any cells/debris. This is often not possible with the experimental cover slip, so a fresh cover slip may be used with approximately the same amount of buffer as the experiment.
 
 
 
@@ -253,15 +253,15 @@ This technique is applied to brightfield images. Uneven illumination, dirt/dust 
 |}
 
 
-1.&nbsp;Open both experimental image and flat-field image.
+1. Open both the experimental image and the flat-field image.
 
-2.&nbsp;“''Select all''” of the flat-field image (hotkey: A) and measure the average intensity (hotkey: M). This value will appear in the results window and represents your k1 value below.
+2. Click the &nbsp;“''Select all''” button on the flat-field image and measure the average intensity. This value, the k1 value, will appear in the results window.
 
-3.&nbsp;Use the “''Image Calculator plus''” plugin (“''Analyse''/''Tools/Calculator plus''”&nbsp;).
+3. Use the “''Image Calculator plus''” plugin (Analyze/Tools/Calculator plus).
 
-4.&nbsp;i1 = experimental image; i2 = flat-field image; k1 = mean flat-field intensity; k2 = 0. Select the "''Divide"&nbsp;''operation.
+4. i1 = experimental image; i2 = flat-field image; k1 = mean flat-field intensity; k2 = 0. Select the "''Divide"&nbsp;''operation.
 
-This can also be done using the “''Process/Image Calculator”''function and ensuring the “32-bit Result” option is checked. You will then need to adjust the brightness and contrast and change the image to 8-bit.
+This can also be done using the “''Process/Image Calculator”''function with the “32-bit Result” option checked. Then adjust the brightness and contrast and convert the image to 8-bit.
 
 [[File:calculator_plus_flat_field.jpg]]
 
