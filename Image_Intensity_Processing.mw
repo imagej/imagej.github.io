@@ -165,7 +165,7 @@ Filters can be found using the menu command “''Process/Filters...''”''.''&nb
 
 ''Mean filter'': the pixel is replaced with the average of itself and its neighbors within the specified radius. The menu item “''Process/Smooth''” is a 3×3 mean filter.
 
-''Gaussian filter'': The is similar to a smoothing filter but instead replaces the pixel value with a value proportional to a normal distribution of it’s neighbors.
+''Gaussian filter'': This is similar to a smoothing filter but instead replaces the pixel value with a value proportional to a normal distribution of its neighbors.
 
 ''Median filter'': The pixel value is replaced with the median of itself and its adjacent neighbors. This removes noise and&nbsp;''preserves boundaries''&nbsp;better than simple average filtering. The menu item “''Process/Noise/Despeckle''” is a 3×3 median filter.
 
