@@ -107,7 +107,7 @@ The LSM_Toolbox is a project aiming at the integration of common useful function
 In Fiji, corresponding commands are: "''File/Import/Show LSMToolbox''" which displays the toolbox, from which all commands can be called and "''Help/About Plugins/LSMToolbox...''" which displays information about the plugin.
 
 === Noran ===
-Noran movies can be opened in several ways: File>Import>Noran movie opens entire movie as an image stack. "''File/Import/Noran''" Selection… allows you to specify a range of frames to be opened as a stack. The Noran SGI plugins are not bundled with the Fiji package. To receive them, please contact tonyc@uhnresearch.ca or their author, Greg Joss, so he can keep track of users. Greg Joss gjoss@bio.mq.edu.au is in the Dept. of Biology, Macquarie University, Sydney, Australia.
+Noran movies can be opened in several ways: "''File/Import/Noran movie''" opens entire movie as an image stack. "''File/Import/Noran Selection…''" allows you to specify a range of frames to be opened as a stack. The Noran SGI plugins are not bundled with the Fiji package. To receive them, please contact tonyc@uhnresearch.ca or their author, Greg Joss, so he can keep track of users. Greg Joss gjoss@bio.mq.edu.au is in the Dept. of Biology, Macquarie University, Sydney, Australia.
 
 === Biorad ===
 This reading can be found by using the menu command “''Image/Show Info…''”. Scroll down to get the time each slice was acquired. Select this time, copy it into Excel, and find the time number obtained by using the Excel menu command “''Edit/Replace''”. This will leave only the time data. The “elapsed” time can then be calculated by subtracting row 1 from all subsequent rows.
