@@ -60,7 +60,7 @@ Window for the Crop (3D) plugin.
 
 == Zoomify plugin==
 
-This plugin, included in the MBF plugin set, will generate a movie sequence such that the first frame includes the whole image and the last is the user defined ROI at 100%. The first slice image is the whole of the original image, scaled so that it fits into the framesize of the ROI. The intermediate images are progressively scaled so that the last frame is 100%. The scale factor is noted as the label slice in the stack.
+The Zoomify plugin will generate a movie sequence such that the first frame includes the whole image and the last is the user defined ROI at 100%. The first slice image is the whole of the original image, scaled so that it fits into the framesize of the ROI. The intermediate images are progressively scaled so that the last frame is 100%. The scale factor is noted as the label slice in the stack.
 
 To use this plugin, select an ROI which will become the final frame, but do not apply the ROI using "''Edit/Draw''". After the ROI is selected, run the plugin and you will be prompted for the desired number of frames in the movie.
 
