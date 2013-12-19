@@ -203,7 +203,7 @@ To create an anaglyph of two images, you can use the Two Shot Anaglyph plugin. T
 
 This is an adaptation of the methods described at [http://rsb.info.nih.gov/nih-image/more-docs/confocals.html http://rsb.info.nih.gov/nih-image/more-docs/confocals.html].
 
-This plugin from the MBF collection can use your stack to create a side by side stereo pair, a red-cyan anaglyph, a red-green anaglyph, or a rotation movie based on user specifications. The plugin will let you specify which of the stereo pair projections you want as well as the angle of rotation between the pairs. Typical values are 6-9°.
+This plugin can use your stack to create a side by side stereo pair, a red-cyan anaglyph, a red-green anaglyph, or a rotation movie based on user specifications. The plugin will let you specify which of the stereo pair projections you want as well as the angle of rotation between the pairs. Typical values are 6-9°.
 
 [[File:stereo_pair.png]]
 
@@ -213,7 +213,6 @@ Stereo pair
 [[File:anaglyph_comparisons.png]]
 
 Red-green anaglyph at left, red-cyan anaglyph on the right.
-
 
 ===Surface-rendered anaglyphs===
 Surface stereo pairs for a stack are simply made with VolumeJ's stereo pair button. This generates a stereo pair with a 5° difference.
