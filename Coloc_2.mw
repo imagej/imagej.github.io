@@ -17,30 +17,29 @@ This draft is a work in progress of a new Coloc2 page focusing on the plugin its
 
 == How to use Coloc_2 ==
 
-* Open images to analyse. 
-** you need a 2 colour channel image. If the image has more than 2 channels, identify the two you want to analyse with each other, then split the channels into separate images (Image- Color - Split Channels)
-* If you want to analyse only some region of interest (ROI), there are 2 ways to do that:
-** Select a region of interest with one of the imageJ selection tools, in one of the images. 
+* Open images to analyze. 
+** You need a 2 color channel image. If the image has more than 2 channels, identify the two you want to analyze with each other, then split the channels into separate images (Image- Color - Split Channels)
+* If you want to analyze only some region of interest (ROI), there are 2 ways to do that:
+** Select a region of interest with one of the ImageJ selection tools, in one of the images. 
 *** If the image is a z stack, then the ROI applies in all "slices" of the stack. 
-**You can have a third "binary mask" image, with the same x,y,z dimensions as the 2 images to be analysed:
-*** where the mask image is white (255 pixel value for an 8 bit greyscale image) colocalization will be analysed for those pixels only. Where it is black (zero pixel value), the pixels will be ignored: not included in the analysis. 
-*** you can use a z stack as a 3D mask... its up to you how you make that mask image, manually or by some automated method. 
+**You can have a third "binary mask" image, with the same x,y,z dimensions as the 2 images to be analyzed:
+*** where the mask image is white (255 pixel value for an 8 bit greyscale image) colocalization will be analyzed for those pixels only. Where it is black (zero pixel value), the pixels will be ignored: not included in the analysis. 
+*** you can use a z stack as a 3D mask... it's up to you how you make that mask image, manually or by some automated method. 
 *Launch the Coloc_2 plugin from the menu item: Analyze - Colocalization Analysis - Coloc 2 
 ** or use the command finder: press L then start typing Coloc, then choose the plugin with the arrow keys and hit enter, or double mouse click it to launch the plugin. 
-* In the plugin's graphical user interface (GUI) choose the 2 images you want to analyse in the first 2 drop down lists.
+* In the plugin's graphical user interface (GUI) choose the 2 images you want to analyze in the first 2 drop down lists.
 ** Select the images according to which you want to be channel 1 and which to be channel 2. 
 ** In the third drop down list selection, select the image/channel you want to use that has the correct ROI
 *** or you can choose a mask image - it must have the same xyz dimensions (number of pixels and slices) as the other 2 images. 
-* Choose which "Algorithms" are run and which statistics you wish to calculate, and if you want to save the "standardised" PDF result file, when the OK button is pressed. 
+* Choose which "Algorithms" are run and which statistics you wish to calculate, and if you want to save the "standardized" PDF result file, when the OK button is pressed. 
 ** Turn the options on and off by clicking the selection button at the left of the Algorithm description
 ** Also choose the approximate size of the point spread function (PSF) in your images, and the number of iterations to run the Costes statistical significance test (We suggest a large number... the larger the number the longer the analysis will take. Do, at the very very least, 10 iterations (100 would be better).
-*** You should know approx. how big the PSF is (in pixels) in your images. 
-**** If you dont, go back and read about what it is and why its important in colocalisation analysis (for instance read the [[Media:Costes_etalColoc.pdf|Costes paper]] )
-**** This size determines what size of image chunks are shuffled in the randomisation process. PSF sized image pieces make physical sense, as thats the size of the smallest objects in the image. 
+*** You should know approximately how big the PSF is (in pixels) in your images. 
+**** If you dont, go back and read about what it is and why it's important in colocalisation analysis (for instance read the [[Media:Costes_etalColoc.pdf|Costes paper]] )
+**** This size determines what size of image chunks are shuffled in the randomization process. PSF sized image pieces make physical sense, as that's the size of the smallest objects in the image. 
 * Click OK to run the analysis. 
-** You will be asked if you want to save the results as a PDF file (if the Show "save PDF" dialog button was checked. So tell it where to save the PDF. This is standard output format, so you can compare with your friend,  same vs. same (neat eh!?)
-*** Feel free to tell us what things you think should be included in this standardised PDF output file.
-
+** You will be asked if you want to save the results as a PDF file (if the Show "save PDF" dialog button was checked. So tell it where to save the PDF. This is standard output format, so you can compare with your friend,  same vs. same.
+*** Feel free to tell us what things you think should be included in this standardized PDF output file.
 
 == Something to do before using Coloc2 ==
 
