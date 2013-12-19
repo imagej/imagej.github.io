@@ -3,7 +3,7 @@
 | software               = ImagejJ/Fiji
 | author                 = Jiří Borovec ([http://cmp.felk.cvut.cz/~borovji3/ web])
 | maintainer             = Jiří Borovec ([mailto:jiri.borovec(at)fel.cvut.cz email])
-| filename               = [http://cmp.felk.cvut.cz/~borovji3/SW/CMP_BIA-0.1-SNAPSHOT.jar CMP_BIA-0.1.jar]
+| filename               = [http://cmp.felk.cvut.cz/~borovji3/ImageJ/CMP_BIA-0.2-SNAPSHOT.jar CMP_BIA-0.2.jar]
 | source                 = [https://github.com/Borda/ij-CMP-BIA GitHub.com]
 | released               = 2013
 | version                = 0.1
@@ -43,9 +43,21 @@ We made a Java-based open source implementation  jSLIC - the superpixel clusteri
 
 === Parameters ===
 
+As you can see the Interface to the plugin contains a parameters for superpixel configuration and also its final visualisation.
+
+==== Configuration ====
+
 For the configuration there are only two parameters to be set:
-* ''Image segmentation'' - in general it can be seen as an average superpixels size.
-* ''Regularisation'' - influence the compactness of estimated superpixels. The range is from 0 (very elastic superpixels) to 1 (superpixels are nearly squares). Experimentally, we set as optimal value 0.2 for most cases.
+* '''Image segmentation''' - in general it can be seen as an average superpixels size.
+* '''Regularisation''' - influence the compactness of estimated superpixels. The range is from 0 (very elastic superpixels) to 1 (superpixels are nearly squares). Experimentally, we set as optimal value 0.2 for most cases.
+
+==== Visualisation ====
+
+To show of handle segmentation results we presented a few approaches:
+* ''Overlap contours'' - simply draw the contours on resulting superpixels into the image by chosen colour.
+* ''Export segments as ROIs'' - all superpixels are exported as polygons into the [http://rsb.info.nih.gov/ij/plugins/roi-manager-tools/index.html ROI Manager].
+* ''Show final segmentation'' - add one more stack and fill each superpixel by a random colour. 
+* ''Save segmentation into file'' - export the superpixel segmentation into a text file as segmentation matrix with labels.
 
 [[Image:Human Breast Cytokeratin jSLIC.jpg|400px|Sample of jSLIC segmented histological tissue]]
 [[Image:Human Breast Cytokeratin jSLIC 50px 0-2.png|400px|Sample of jSLIC segmented histological tissue]]
