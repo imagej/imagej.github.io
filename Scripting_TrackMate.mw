@@ -31,110 +31,113 @@ Here is an example of full tracking process, using the easy image found in the [
 * The final results is displayed as an overlay.
 
 
-<source lang="python">import fiji.plugin.trackmate.Settings as Settings
-import fiji.plugin.trackmate.Model as Model
-import fiji.plugin.trackmate.SelectionModel as SelectionModel
-import fiji.plugin.trackmate.TrackMate as TrackMate
-import fiji.plugin.trackmate.Logger as Logger
-import fiji.plugin.trackmate.detection.DetectorKeys as DetectorKeys
-import fiji.plugin.trackmate.detection.DogDetectorFactory as DogDetectorFactory
-import fiji.plugin.trackmate.tracking.SimpleFastLAPTracker as SimpleFastLAPTracker
-import fiji.plugin.trackmate.tracking.LAPUtils as LAPUtils
+<source lang="python">from fiji.plugin.trackmate import Model
+from fiji.plugin.trackmate import Settings
+from fiji.plugin.trackmate import TrackMate
+from fiji.plugin.trackmate import SelectionModel
+from fiji.plugin.trackmate import Logger
+from fiji.plugin.trackmate.detection import LogDetectorFactory
+from fiji.plugin.trackmate.tracking import FastLAPTracker
+from fiji.plugin.trackmate.tracking import LAPUtils
 import fiji.plugin.trackmate.visualization.hyperstack.HyperStackDisplayer as HyperStackDisplayer
 import fiji.plugin.trackmate.features.FeatureFilter as FeatureFilter
-
+import sys
+import fiji.plugin.trackmate.features.track.TrackDurationAnalyzer as TrackDurationAnalyzer
+ 
 # Get currently selected image
-#imp = WindowManager.getCurrentImage()
-imp = IJ.openImage('http://fiji.sc/samples/FakeTracks.tif')
+imp = WindowManager.getCurrentImage()
+#imp = IJ.openImage('http://fiji.sc/samples/FakeTracks.tif')
 imp.show()
-  
+ 
+ 
+#----------------------------
+# Create the model object now
+#----------------------------
+ 
+# Some of the parameters we configure below need to have
+# a reference to the model at creation. So we create an
+# empty model now.
+ 
+model = Model()
+ 
+# Send all messages to ImageJ log window.
+model.setLogger(Logger.IJ_LOGGER)
+ 
+ 
+    
 #------------------------
 # Prepare settings object
 #------------------------
-  
+    
 settings = Settings()
 settings.setFrom(imp)
-  
-# Configure detector
-settings.detectorFactory = DogDetectorFactory()
+    
+# Configure detector - We use the Strings for the keys
+settings.detectorFactory = LogDetectorFactory()
 settings.detectorSettings = { 
-	DetectorKeys.KEY_DO_SUBPIXEL_LOCALIZATION : True,
-	DetectorKeys.KEY_RADIUS : 2.5,
-	DetectorKeys.KEY_TARGET_CHANNEL : 1,
-	DetectorKeys.KEY_THRESHOLD : 0.,
-	DetectorKeys.KEY_DO_MEDIAN_FILTERING : False,
+    'DO_SUBPIXEL_LOCALIZATION' : True,
+    'RADIUS' : 2.5,
+    'TARGET_CHANNEL' : 1,
+    'THRESHOLD' : 0.,
+    'DO_MEDIAN_FILTERING' : False,
 }  
-
-# Configure tracker
-settings.tracker = SimpleFastLAPTracker()
-settings.trackerSettings = LAPUtils.getDefaultLAPSettingsMap()
-
-print(str(settings))
-  
-#-----------------------------
-# Instantiate model and plugin
-#-----------------------------
-  
-model = Model()
-trackmate = TrackMate(model, settings)
-  
-#---------------------
-# Execute segmentation
-#---------------------
-  
-print('Segmenting with parameters:')
-print(str(settings.detectorFactory))
-print(str(settings.detectorSettings))
-  
-trackmate.execDetection()
-  
-print(str(model.getSpots()))
-  
-#--------------------------
-# Execute initial filtering
-#--------------------------
-  
-settings.initialSpotFilterValue = 3.6
-  
-print('Initial spot filtering with quality above ' + str(settings.initialSpotFilterValue))
-  
-trackmate.execInitialSpotFiltering()
-  
-print(str(model.getSpots()))
-  
-#--------------------------
-# Execute spot filtering
-#--------------------------
-  
-filter1 = FeatureFilter('QUALITY', 20, True)
-  
-print('Spot filtering with ' + str(filter1))
-  
+ 
+# Configure spot filters - Classical filter on quality
+filter1 = FeatureFilter('QUALITY', 1, True)
 settings.addSpotFilter(filter1)
-trackmate.execSpotFiltering(True)
   
-print(str(model.getSpots()))
-  
-#-----------------
-# Execute tracking
-#-----------------
-  
-print('Tracking with parameters:')
-print(str(settings.tracker))
-print(str(settings.trackerSettings))
-  
-trackmate.execTracking()
-  
-print('Found ' + str(model.getTrackModel().nTracks(True)) + ' tracks.')
-  
+# Configure tracker - We want to allow merges and fusions
+settings.tracker = FastLAPTracker()
+settings.trackerSettings = LAPUtils.getDefaultLAPSettingsMap() # almost good enough
+settings.trackerSettings['ALLOW_TRACK_SPLITTING'] = True
+settings.trackerSettings['ALLOW_TRACK_MERGING'] = True
+ 
+# Configure track analyzers - Later on we want to filter out tracks 
+# based on their displacement, so we need to state that we want 
+# track displacement to be calculated. By default, out of the GUI, 
+# not features are calculated. 
+ 
+# The displacement feature is provided by the TrackDurationAnalyzer.
+ 
+settings.addTrackAnalyzer(TrackDurationAnalyzer())
+ 
+# Configure track filters - We want to get rid of the two immobile spots at 
+# the bottom right of the image. Track displacement must be above 10 pixels.
+ 
+filter2 = FeatureFilter('TRACK_DISPLACEMENT', 10, True)
+settings.addTrackFilter(filter2)
+ 
+ 
+#-------------------
+# Instantiate plugin
+#-------------------
+ 
+trackmate = TrackMate(model, settings)
+    
+#--------
+# Process
+#--------
+ 
+ok = trackmate.checkInput()
+if not ok:
+    sys.exit(str(trackmate.getErrorMessage()))
+ 
+ok = trackmate.process()
+if not ok:
+    sys.exit(str(trackmate.getErrorMessage()))
+ 
+    
 #----------------
 # Display results
 #----------------
-
+  
 selectionModel = SelectionModel(model)
 displayer =  HyperStackDisplayer(model, selectionModel, imp)
 displayer.render()
 displayer.refresh()
+ 
+# Echo results with the logger we set at start:
+model.getLogger().log(str(model))
 </source>
 
 == Use the process method ==
