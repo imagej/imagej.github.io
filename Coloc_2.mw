@@ -35,7 +35,7 @@ This draft is a work in progress of a new Coloc2 page focusing on the plugin its
 ** Turn the options on and off by clicking the selection button at the left of the Algorithm description
 ** Also choose the approximate size of the point spread function (PSF) in your images, and the number of iterations to run the Costes statistical significance test (We suggest a large number... the larger the number the longer the analysis will take. Do, at the very very least, 10 iterations (100 would be better).
 *** You should know approximately how big the PSF is (in pixels) in your images. 
-**** If you dont, go back and read about what it is and why it's important in colocalisation analysis (for instance read the [[Media:Costes_etalColoc.pdf|Costes paper]] )
+**** If you dont, go back and read about what it is and why it's important in colocalization analysis (for instance read the [[Media:Costes_etalColoc.pdf|Costes paper]] )
 **** This size determines what size of image chunks are shuffled in the randomization process. PSF sized image pieces make physical sense, as that's the size of the smallest objects in the image. 
 * Click OK to run the analysis. 
 ** You will be asked if you want to save the results as a PDF file (if the Show "save PDF" dialog button was checked. So tell it where to save the PDF. This is standard output format, so you can compare with your friend,  same vs. same.
