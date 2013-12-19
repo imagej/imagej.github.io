@@ -215,11 +215,9 @@ Once the background has been evened, final adjustments can be made with the&nbsp
 |}
 
 === ROI background correction ===
-The rolling-ball algorithm is time consuming. If the background is even across the field of view it is possible to select a background region of interest and subtract the mean value of this area for each slice from each slice. Use the selection tools to select an area of background and run the menu command “''Process/Subtract Background”''. This macro will subtract the mean of the ROI from the image plus an additional value equal to the standard deviation of the ROI multiplied by the scaling factor you enter (3 by default).
+The rolling-ball algorithm takes a lot of time. To speed up the process with an image that has a more even background, select a region of interest from the background and subtract the mean value of this area for each slice from each slice. Use the selection tools to select an area of background and run the menu command “''Process/Subtract Background”''. This macro will subtract the mean of the ROI from the image plus an additional value equal to the standard deviation of the ROI multiplied by the scaling factor you enter. The default for this is 3.
 
-<nowiki>i.e. it subtracts [mean + (sd×scalingfactor)]</nowiki>
-
-This macro also works with stacks and so can be used with time-courses with varying background.
+This macro, because it also works with stacks, can be used on time-courses with varying backgrounds.
 
 &nbsp;
 
