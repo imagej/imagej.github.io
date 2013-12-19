@@ -89,7 +89,6 @@ Crosses are reversibly overlaid on to the image, incrementally changing color (t
 This produces the “Point List” dialog allowing you to&nbsp;''Show'',&nbsp;''Save''&nbsp;or&nbsp;''Open''&nbsp;the points’ coordinates. Clicking “''Show''” displays the coordinates in the&nbsp;''Results''&nbsp;window, where they can be saved or copied to the system clipboard. Once finished, you can return to the regular Fiji toolbar by clicking the&nbsp;&nbsp;button.
 
 == Particle tracking ==
-'''&nbsp;Automatic Tracking'''
 
 '''Particle Tracker'''
 Particle Tracker is a 2D feature point-tracking plugin for the automated detection and analysis of particle trajectories as recorded by video imaging in cell biology. The algorithm is decsribed in Sbalzarini and Koumoutsakos (2005[1]). 
@@ -102,7 +101,6 @@ Simply click on the Content tab at the top of this page and then choose Document
 &nbsp;
 
 '''Manual Tracking'''
-
 Use the menu command&nbsp; "Plugins/Tracking/Manual Tracking". This tool allows you to keep track of the movement of a cell.
 
 &nbsp;
