@@ -61,13 +61,11 @@ The menu command "''Image/Color/Merge Channels...''" opens a dialog to merge gre
 
 == Splitting multi-channel Images ==
 
-RGB 24-bit
+An RGB image or stack can be split to the respective red, green and blue image components using the menu command "''Image/Color/Split Channels''".
 
-An RGB image or stack can be split to the respective red, green and blue image components using the menu command "Image/Color/Split Channels".
+Sometime a merged RGB image may need to be displayed along with the separate channels in a final figure. This can be done with the "RGB to Montage" plugin.
 
-Sometime a merged RGB image may need to be displayed along with the separate channels in a final figure. This can be done by downloading the "RGB to Montage" plugin to the plugins folder.
-
-It works with single slice RGB images. A new RGB stack is created, channel 1 being the red channel; 2 the green and 3 the blue. The fourth slice is the merged slice. If a channel is empty (e.g. a red-green merged image will have no blue) then the slice is omitted. The then plugin prompts you for the layout of the montage. You have the option to alter the width of the white border between the image panels. If the 'Pseudo-color 'option is off, each channel will be greyscale. If scale bar size is set to zero, no scale bar will be added.
+It works with single slice RGB images. A new RGB stack is created, channel 1 being the red channel; 2 the green and 3 the blue. The fourth slice is the merged slice. If a channel is empty (e.g. a red-green merged image will have no blue) then the slice is omitted. Then the plugin prompts you for the layout of the montage. You have the option to alter the width of the white border between the image panels. If the 'Pseudo-color 'option is off, each channel will be greyscale. If scale bar size is set to zero, no scale bar will be added.
 
 [[File: splitting_multichannel_pics.jpg]]
 
