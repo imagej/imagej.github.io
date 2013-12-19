@@ -52,6 +52,7 @@ This plugin automates many of the steps discussed above. You can:
 
 1. Enter the size range which should be counted[[File:nucleus_counter_1.jpg|right]].
 
+
 2. Select the automatic thresholding method. This can be either "Current", "Otsu", Maximum Entropy", "Mixture Modelling" or k-means" clustering. "Current" uses the threshold that has been set manually, see above.
 
 3. Opt to perform a background correction.
