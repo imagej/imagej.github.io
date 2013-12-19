@@ -301,19 +301,19 @@ Use one of the ROI tools to draw around the area of interest and then select: �
 &nbsp;
 
 === Complex masking ===
-A more sophisticated masking can be done by “thresholding” the image and subtracting this new binary image from the original.
+More sophisticated masking can be done by “thresholding” the image and subtracting the new binary image from the original image.
 
-1.&nbsp;Duplicate the image (if it’s a stack it’s worthwhile generating a “average projection” of a few frames).
+1. Duplicate the image, or, if it’s a stack, generate an “average projection” of a few frames.
 
-2.&nbsp;Threshold this image using the menu command “''Image/Adjust/Threshold''”.
+2. Threshold this image with the menu command “''Image/Adjust/Threshold''”.
 
-3.&nbsp;Hit the Auto button and then adjust the sliders until cells are all highlighted red.
+3. Hit the Auto button and adjust the sliders until all the cells are highlighted red.
 
-4.&nbsp;Then click “''Apply''”. Check the tick box: “black foreground, white background”. You should now have a white and black image with your cells black and background white. If you have white cells and black background, invert the image with “''Edit/Invert''”.
+4. Click “''Apply''”. Check the following box: “black foreground, white background”. You should now have a white and black image with your cells black and background white. If you have white cells and black background, invert the image with “''Edit/Invert''”.
 
-5.&nbsp;This can be smoothed (“''Process/Smooth''”) and the black area enlarged slightly with “''Process/Binary/Dilate''” to give a better mask
+5. This can be smoothed with the command “''Process/Smooth''” and the black area enlarged slightly with “''Process/Binary/Dilate''” to give a better mask.
 
-6.&nbsp;Using the regular Image calculator “''Process/Image calculator''” subtract this black and white “mask” image from your original image/stack.
+6. Using the regular Image calculator “''Process/Image calculator''” subtract this black and white “mask” image from your original image or stack.
 
 &nbsp;
 
