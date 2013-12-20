@@ -20,19 +20,13 @@ Bleach corrected time course
 
 The k value can be calculated in ImageJ by:
 
-1. Make sure the ''"Edit/Options/Profile Plot Options"'' setting "Do not save x-values" is off.
-
-2. Select a region of the cell or the whole image and plot the decay using the menu command ''"Image/Stacks/Plot Z-axis Profile"''.
-
-3. Click the ''Copy'' button of the plot window.
-
-4. Open the curve fitting dialog ''"Analyze/Tools/Curve Fitting"''.
-
-5. Delete the default data and paste in your copied data.
-
-6. Select "Exponential" from the option list and click the "Fit" button.
-
-7. In the ''Log'' window, scroll down to find the value labeled as "b", this is your ''k'' value.
+# Make sure the ''"Edit/Options/Profile Plot Options"'' setting "Do not save x-values" is off.
+# Select a region of the cell or the whole image and plot the decay using the menu command ''"Image/Stacks/Plot Z-axis Profile"''.
+# Click the ''Copy'' button of the plot window.
+# Open the curve fitting dialog ''"Analyze/Tools/Curve Fitting"''.
+# Delete the default data and paste in your copied data.
+# Select "Exponential" from the option list and click the "Fit" button.
+# In the ''Log'' window, scroll down to find the value labeled as "b", this is your ''k'' value.
 
 Since bleaching is often not mono-exponential, quantification of fluorescence intensities after bleach correction is not possible. This plugin should only be used to enhance time-course movies for presentation rather than quantification.
 
@@ -50,23 +44,15 @@ There are several drawbacks with the use of single wavelength fluorescent probes
 
 First ensure the image is properly background corrected:
 
-1. Generate an “F0” image by averaging the first few frames of the stack. This can be done with the “''Image/Stacks/Z-project''" menu item (Fiji assumes stacks to be z-series rather than t-series), using the “''Average Intensity''” drop-down box option. Select “Start slice” as 1 and “Stop slice” as 5-10 depending on how many frames you wish to average. Rename the new z-projected image (“''Image/Rename''”) “Fzero”.
-
-2. Open the “Image Calculator” via “''Process/Image Calculator''”. Set Image 1 as the original stack, image 2 as "Fzero", and the operation as divide. Select "32-bit Result" and "Create New Window".
-
-3. Rename this result window (“''Image/Rename''”) FdivF0.
-
-4. The maximum and minimum intensity in the stack can be determined with the ''Analyze Histogram'' plugin, using the stack histogram option.
-
-5. Using the Brightness and Contrast dialog, set the maximum and minimum to these values.
-
-6. Convert the 32-bit stack to 8-bit (“''Image/Type/8-bit”'').
-
-7. The Images in FdivF0 will probably have a noisy background between the cells and will need to be cleaned up. Using your original stack, create a mask of the cells. This is done by first thresholding the original stack (“''Image/Adjust/Threshold''”). Hit the Auto button and then adjust the sliders until cells are all highlighted red. Then click “''Apply''”. Check the tick box: “black foreground, white background”. You should now have a white and black image with your cells black and background white. If you have white cells and black background, invert the image with “''Edit/Invert''”.
-
-8. Use the Image calculator “''Process/Image calculator''” to subtract this black and white stack from your FdivF0 stack. 
-
-9. Pseudocolor to taste.
+# Generate an “F0” image by averaging the first few frames of the stack. This can be done with the “''Image/Stacks/Z-project''" menu item (Fiji assumes stacks to be z-series rather than t-series), using the “''Average Intensity''” drop-down box option. Select “Start slice” as 1 and “Stop slice” as 5-10 depending on how many frames you wish to average. Rename the new z-projected image (“''Image/Rename''”) “Fzero”.
+# Open the “Image Calculator” via “''Process/Image Calculator''”. Set Image 1 as the original stack, image 2 as "Fzero", and the operation as divide. Select "32-bit Result" and "Create New Window".
+# Rename this result window (“''Image/Rename''”) FdivF0.
+# The maximum and minimum intensity in the stack can be determined with the ''Analyze Histogram'' plugin, using the stack histogram option.
+# Using the Brightness and Contrast dialog, set the maximum and minimum to these values.
+# Convert the 32-bit stack to 8-bit (“''Image/Type/8-bit”'').
+# The Images in FdivF0 will probably have a noisy background between the cells and will need to be cleaned up. Using your original stack, create a mask of the cells. This is done by first thresholding the original stack (“''Image/Adjust/Threshold''”). Hit the Auto button and then adjust the sliders until cells are all highlighted red. Then click “''Apply''”. Check the tick box: “black foreground, white background”. You should now have a white and black image with your cells black and background white. If you have white cells and black background, invert the image with “''Edit/Invert''”.
+# Use the Image calculator “''Process/Image calculator''” to subtract this black and white stack from your FdivF0 stack. 
+# Pseudocolor to taste.
 
 The F divided by F0 steps are automated in the ''"F_div_F0"'' macro. This will return the FdivF0 stack and a thresholded FdivF0 stack. 
 
