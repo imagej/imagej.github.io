@@ -1,3 +1,5 @@
+{{Cookbook}}
+
 = Stack-slice manipulations =
 
 == Slice shuffling/removing/Adding ==
@@ -90,6 +92,5 @@ After
 
 [[File:after_alignment.png]]
 
-
-
 [[Category:Cookbook]]
+[[Category:Tutorials]]
