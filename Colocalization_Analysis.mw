@@ -47,7 +47,7 @@ Coloc 2 implements and performs the pixel intensity correlation over space metho
 
 None of this gives sensible results unless you have your imaging hardware set up appropriately and have acquired images properly, and have performed appropriate controls for bleed-through and chromatic shift etc. See [[Colocalization_-_hardware_setup_and_image_acquisition|here for hardware set up guidelines]].
 
-This plugin supersedes the [[Colocalization Threshold]] and Colocalization Test plugins, which unfortunately were buggy and hard to maintain. So we started from scratch with a carefully planned and designed new plugin. While the old plugins are described below as well, we recommend that you use Coloc 2 instead.
+This plugin supersedes the [[Colocalization Threshold]] and [[Colocalization Test]] plugins, which unfortunately were buggy and hard to maintain. So we started from scratch with a carefully planned and designed new plugin. While the old plugins are described below as well, we recommend that you use Coloc 2 instead.
 
 == What is Coloc 2 ==
 
