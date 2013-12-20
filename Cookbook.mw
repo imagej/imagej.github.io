@@ -1,23 +1,8 @@
-= Introduction =
+{{Cookbook}}
 
 This book intends to be an analysis-oriented introduction and user guide to Fiji. It is inspired by the defunct [[MBF Plugin Collection|MBF "ImageJ for microscopy" manual]] which went offline in November 2012, and describes many of the same plugins of that distribution.
 
-= Topics =
-
-Cooks call them ''recipes'', biologists ''protocols'', and programmers call them ''HOWTOs''.  No matter how you refer to them, here they are:
-
-* [[Installation|Installing Fiji]]
-* [[Importing Image Files]]
-* [[Saving and Exporting]]
-* [[Particle Analysis]]
-* [[Colocalization Analysis]]
-* [[Image Intensity Processing]]
-* [[Color Image Processing]]
-* [[Stack-slice Manipulations]]
-* [[Z-functions]]
-* [[T-functions]]
-* [[Deconvolution]]
-* [[Annotating Images]]
+Cooks call them ''recipes'', biologists ''protocols'', and programmers call them ''HOWTOs''.  No matter how you refer to them, you'll find the book topics in the sidebar to the right.
 
 [[Category:Cookbook]]
 [[Category:Tutorials]]
