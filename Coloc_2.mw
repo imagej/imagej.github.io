@@ -15,7 +15,7 @@ This draft is a work in progress of a new Coloc2 page focusing on the plugin its
 | status                 = beta. Under development, but stable enough for real work. 
 }}
 
-== How to use Coloc 2 ==
+= How to use Coloc 2 =
 
 * Open images to analyze. 
 ** You need a 2 color channel image. If the image has more than 2 channels, identify the two you want to analyze with each other, then split the channels into separate images (Image- Color - Split Channels)
@@ -41,9 +41,9 @@ This draft is a work in progress of a new Coloc2 page focusing on the plugin its
 ** You will be asked if you want to save the results as a PDF file (if the Show "save PDF" dialog button was checked. So tell it where to save the PDF. This is standard output format, so you can compare with your friend,  same vs. same.
 *** Feel free to tell us what things you think should be included in this standardized PDF output file.
 
-== Something to do before using Coloc2 ==
+= Something to do before using Coloc2 =
 
-===Open the sample data===
+==Open the sample data==
 First, let's open a sample data set that we know should have very good colocalization because the 2 subunits of a dimeric protein are stained with green and red dyes respectively. The methods of Pearson, Manders, Costes and Li should work very well for this sample, but maybe we can see some problems with the data? Maybe we can decide if the data is suitable for this analysis or not? 
 
 '''Open this sample data file [http://fiji.sc/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif].''' Then use the "Image-Color-Split Channels" menu command to get a separate z stack for the 2 dyes (you can throw the blue one away!).
@@ -53,7 +53,7 @@ If I want to show DAPI in green and EGFP as magenta, there is nothing "wrong" ab
 
 [[Image:SplitChannels.png|300px]]
 
-===Questions you should ask before attempting colocalization analysis from 2 color channel images, using the pixel intensity spatial correlation methods of Manders and Costes:===
+==Questions you should ask before attempting colocalization analysis from 2 color channel images, using the pixel intensity spatial correlation methods of Manders and Costes:==
 
 *Q1) Is the image data noisy?
 *Q2) Has there been lossy compression?
@@ -61,7 +61,7 @@ If I want to show DAPI in green and EGFP as magenta, there is nothing "wrong" ab
 *Q4) Is there a problem with uniform background / detector offset?
 *Q5) What is the spatial resolution?
 
-===Check image data for problems and suitability for analysis===
+==Check image data for problems and suitability for analysis==
 To begin with, we should check the images for problems that might make the colocalisation analysis methods fail or be unreliable.
 
 *1) Significant noise (uncertainty in the pixel values - usually from detection of too few photons) means the methods we will use will significantly underestimate the true colocalization, or even completely fail to give the "right" result.
@@ -81,7 +81,7 @@ We need to think carefully about the correct or adequate spatial resolution in x
 
 There is another (badly behaved) sample data file here which we will use later: [http://fiji.sc/samples/150707_WTstack.lsm 150707_WTstack.lsm].
 
-== Notes and details on performing Coloc2 ==
+= Notes and details on performing Coloc2 =
 
 
 <li>
