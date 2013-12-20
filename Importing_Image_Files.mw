@@ -1,7 +1,8 @@
+{{Cookbook}}
+
 The File / Import submenu.
 
 Most of the commands listed, particularly Fiji extensions, are also available (via HandleExtraFileTypes) simply by using the File / Open... menu item.
-
 
 *'''ImageJ built-in:'''
 Fiji primarily uses TIFF as the image file format. The menu command ''File>Save'' will save in TIFF format. The menu command ''File>Open'' will open TIFF files and import a number of other common file formats (e.g. JPEG, GIF, BMP, PGM, PNG) as well as those detailed below. Files can be also dragged and dropped to the toolbar to open them
@@ -59,6 +60,7 @@ Animated GIF- This plugin opens animated GIF files as an RGB stack. Also opens s
 * '''[[LSM Toolbox | Show LSM Toolbox]]''': Open the LSM Toolbox window, from which LSM files can be opened, viewed in multi dimensions, montaged,  their metadata directly inspected, time and z stamped and more. 
 
 [[Category:Cookbook]]
+[[Category:Tutorials]]
 [[Category:Menus]]
 [[Category:Plugins]]
 [[Category:Import-Export]]
