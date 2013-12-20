@@ -41,7 +41,7 @@ Files may also be exported to many file types using the Bio-Formats Exporter fou
 * QuickTime
 * TIFF
 
-See the Export column of the [[http://openmicroscopy.org/site/support/bio-formats5/supported-formats.html Bio-Formats list of supported formats]] for an up-to-date list of formats which can be exported.
+See the Export column of the [http://openmicroscopy.org/site/support/bio-formats5/supported-formats.html Bio-Formats list of supported formats] for an up-to-date list of formats which can be exported.
 
 [[Category:Cookbook]]
 [[Category:Tutorials]]
