@@ -1,4 +1,5 @@
 __FORCETOC__ {{Cookbook}}
+
 == Image formats ==
 
 [[File:save_as1.png|right]] [[File:save_as2.png|right]]The “''File/Save''” (hotkey: S) menu command will save the image as a TIF file. Other formats are available (see menu image on the right) and can be accessed by “''File/Save As...''”. When the “''Save as''” dialog is opened, Fiji will enter the image window’s name, plus the appropriate file suffix, as the “File Name".
