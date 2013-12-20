@@ -89,6 +89,10 @@ We need to think carefully about the correct or adequate spatial resolution in x
 
 [http://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem Nyqvist] tells us the spatial sampling should be about three times smaller then the smallest object we want to resolve. Remember, spatial intensity correlation analysis, as we will perform here, can not tell you that 2 proteins are bound together in some biophysical bonding interaction. However, it might suggest that the 2 molecules occur with the same relative amounts when they are present in the set of spatial samples (pixels or voxels) with intensities above the thresholds we will calculate below. In any case, it might be a hint that "maybe they are binding partners or in the same macromolecular complex". You should follow up by determining true binding using [http://en.wikipedia.org/wiki/FLIM FLIM], [http://en.wikipedia.org/wiki/Förster_resonance_energy_transfer FRET] and biochemical methods like Immuno co-Precipitation etc.
 
+== Further reading ==
+
+* [http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3074624/?report=printable A practical guide to evaluating colocalization in biological microscopy].
+
 == Older colocalization plugins ==
 
 === Colocalization Threshold ===
