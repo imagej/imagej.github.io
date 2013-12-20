@@ -91,11 +91,9 @@ At left, an image with surface depth cues at 100% and interior depth cues at 50%
 
 Try these initial settings:
 
-1. Projection Method: Use ''"Brightest point''" method.
-
-2. Slice Spacing: This determines your aspect ratio of the stack. Biorad stacks are internally calibrated and this value should be correct unless you set the wrong objective in the Biorad software during acquisition.
-
-3. Interpolate: Used when slice spacing > 0. Check this option although it will slow down the renderer. For a large data set, it may be worthwhile having this "off" initially while you're selecting the settings.
+# Projection Method: Use ''"Brightest point''" method.
+# Slice Spacing: This determines your aspect ratio of the stack. Biorad stacks are internally calibrated and this value should be correct unless you set the wrong objective in the Biorad software during acquisition.
+# Interpolate: Used when slice spacing > 0. Check this option although it will slow down the renderer. For a large data set, it may be worthwhile having this "off" initially while you're selecting the settings.
 
 == Volume Viewer ==
 
@@ -155,24 +153,15 @@ NB: VolumeJ's interactive rendering option is currently not working. Other modes
 
 [[File:volumej.png|348x269px]]
 
-
-1. Select the volume stack to render.
-
-2. Select the classifier (i.e. rendering algorithm). Choose 'Gradient no index' for grayscale stacks; choose 'Ramp + index' for RGB stacks.
-
-3. Set the classifier threshold as the intensity of the "surface" of the object. This can be determined using the ''"Image/Adjust/Threshold"'' command.
-
-4. Set the classifier deviation. Low values tend to result in sharper edges while higher values may be unfocused. A good compromise is 1-2.
-
-5. Set the rotation angle (try -20 in the first box to rotate the volume backwards slightly).
-
-6. Ensure that the aspect ratio is correct: VolumeJ should pick up the spatial calibration of the stack if it is present.
-
-7. Set the scale as 0.5 for faster preliminary renderings. Set it to 1 or 2 for the final rendering.
-
-8. Click on the ''"Render"'' button to start rendering.
-
-9. Click on ''"Stop renderer"'' if you've made a mistake.
+# Select the volume stack to render.
+# Select the classifier (i.e. rendering algorithm). Choose 'Gradient no index' for grayscale stacks; choose 'Ramp + index' for RGB stacks.
+# Set the classifier threshold as the intensity of the "surface" of the object. This can be determined using the ''"Image/Adjust/Threshold"'' command.
+# Set the classifier deviation. Low values tend to result in sharper edges while higher values may be unfocused. A good compromise is 1-2.
+# Set the rotation angle (try -20 in the first box to rotate the volume backwards slightly).
+# Ensure that the aspect ratio is correct: VolumeJ should pick up the spatial calibration of the stack if it is present.
+# Set the scale as 0.5 for faster preliminary renderings. Set it to 1 or 2 for the final rendering.
+# Click on the ''"Render"'' button to start rendering.
+# Click on ''"Stop renderer"'' if you've made a mistake.
 
 == Stack Reslice ==
 
@@ -228,17 +217,12 @@ The "left eye" needs to be red; the "right eye" green or cyan.
 
 Surface rendered anaglyph movies can be constructed using VolumeJ following an approach from Harvey Karten and Joel Sheffield.
 
-1. Surface render your z-series with a "Cine frame increment" of 6-9°.
-
-2. Duplicate the surface rendered movie.
-
-3. Delete the top slice from the original movie.
-
-4. Delete the last slice from the duplicate movie.
-
-5. Merge the stacks using the menu command ''"Image/Color/RGB merge"''.
-
-6. Assign the duplicate stack as red and the original stack as green. For Red-Green anaglyphs, set blue to be none. For red-cyan anaglyphs, set the blue channel to be the same as green.
+# Surface render your z-series with a "Cine frame increment" of 6-9°.
+# Duplicate the surface rendered movie.
+# Delete the top slice from the original movie.
+# Delete the last slice from the duplicate movie.
+# Merge the stacks using the menu command ''"Image/Color/RGB merge"''.
+# Assign the duplicate stack as red and the original stack as green. For Red-Green anaglyphs, set blue to be none. For red-cyan anaglyphs, set the blue channel to be the same as green.
 
 [[Category:Cookbook]]
 [[Category:Tutorials]]
