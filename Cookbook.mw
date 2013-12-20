@@ -6,5 +6,25 @@ Cooks call them ''recipes'', biologists ''protocols'', and programmers call them
 
 Like the rest of the Fiji wiki, this Cookbook is a community project. Please feel welcome to edit and expand the material here!
 
+== Installation ==
+
+This cookbook makes use of several plugins beyond those available in Fiji out of the box. You can install them as follows:
+* Help > Update Fiji
+* Manage update sites
+* Tick the "Cookbook" update site
+* Close
+* Apply changes
+* Restart Fiji
+
+== Source ==
+
+The source code [COMING SOON] for the Cookbook plugins can be found [https://github.com/fiji/cookbook on GitHub].
+
+== Credits ==
+
+The Cookbook plugins were collated from various sources and have various authors and licenses.
+
+MORE DETAILS COMING SOON
+
 [[Category:Cookbook]]
 [[Category:Tutorials]]
