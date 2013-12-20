@@ -5,14 +5,14 @@ This draft is a work in progress of a new Coloc2 page focusing on the plugin its
 
 {{Infobox Plugin
 | name                   = Coloc 2 - Standardized, modular, Colocalization analysis. 
-| software               = ImageJ - Fiji - imglib
+| software               = ImageJ - Fiji - ImgLib
 | author                 = Daniel J White, Tom Kazimiers, Johannes Schindelin
 | maintainer             = [mailto:white_at_mpi-cbg_dot_de Daniel White]
-| filename               = Colocalization.jar
+| filename               = Colocalisation_Analysis.jar
 | source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Colocalisation_Analysis;hb=HEAD on gitweb].
 | latest version         = Dec 2011
 | website                = Fiji
-| status                 = beta. Under development, but stable enough for real work. 
+| status                 = Beta. Under development, but stable enough for real work. 
 }}
 
 = What is Coloc 2 =
