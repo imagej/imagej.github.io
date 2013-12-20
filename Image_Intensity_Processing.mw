@@ -251,11 +251,8 @@ Use this technique on brightfield images. You can correct uneven illumination or
 |}
 
 # Open both the experimental image and the flat-field image.
-
 # Click the &nbsp;“''Select all''” button on the flat-field image and measure the average intensity. This value, the k1 value, will appear in the results window.
-
 # Use the “''Image Calculator plus''” plugin (Analyze/Tools/Calculator plus).
-
 # i1 = experimental image; i2 = flat-field image; k1 = mean flat-field intensity; k2 = 0. Select the "''Divide"&nbsp;''operation.
 
 This can also be done using the “''Process/Image Calculator”''function with the “32-bit Result” option checked. Then adjust the brightness and contrast and convert the image to 8-bit.
