@@ -1,5 +1,4 @@
-*find RGB merge command
-*VolumeJ interactive rendering?
+{{Cookbook}}
 
 == Stack-Projections ==
 A z-series is generally difficult to represent as a 2-D image for publication purposes. A montage will allow the 3-D dataset to be visualized in 2-D, but results in each frame being very small. There are several ways to "flatten” the 3D stack.
@@ -209,7 +208,6 @@ This plugin can use your stack to create a side by side stereo pair, a red-cyan 
 
 Stereo pair
 
-
 [[File:anaglyph_comparisons.png]]
 
 Red-green anaglyph at left, red-cyan anaglyph on the right.
@@ -217,7 +215,7 @@ Red-green anaglyph at left, red-cyan anaglyph on the right.
 ===Surface-rendered anaglyphs===
 Surface stereo pairs for a stack are simply made with VolumeJ's stereo pair button. This generates a stereo pair with a 5° difference.
 
-These two images can be merged to form an anaglyph using either the menu command ''"Image/Color/RGB merge"'' or the plugin ''"Colour merge"''.
+These two images can be merged to form an anaglyph using either the menu command ''"Image/Color/Merge channels"'' or the plugin ''"Colour merge"''.
 
 The "left eye" needs to be red; the "right eye" green or cyan.
 
@@ -236,3 +234,4 @@ Surface rendered anaglyph movies can be constructed using VolumeJ following an a
 6. Assign the duplicate stack as red and the original stack as green. For Red-Green anaglyphs, set blue to be none. For red-cyan anaglyphs, set the blue channel to be the same as green.
 
 [[Category:Cookbook]]
+[[Category:Tutorials]]
