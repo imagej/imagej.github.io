@@ -1,12 +1,12 @@
-{{Cookbook}}
+__FORCETOC__ {{Cookbook}}
 
-= What is colocalization? =
+== What is colocalization? ==
 
 Suppose you are given some images by a colleague, or have some images of your own, and you want to measure the amount of colocalisation between two of the dyes or stains in the images. First you have to define what you mean by colocalisation, and that is not trivial. For one place to start reading about colocalisation and and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalisation analysis, look here: [https://ifn.mpi-cbg.de/wiki/ifn/index.php/Teaching_Material#IPF_Image_Processing_Courses Image Processing Courses at IFN Dresden]
 
-== Methods of colocalization analysis ==
+=== Methods of colocalization analysis ===
 
-=== Pixel intensity spatial correlation analysis ===
+==== Pixel intensity spatial correlation analysis ====
 
 There are two colocalization coefficients to express the fraction of colocalizing objects in each component of a dual-color image:
 # '''Pearson's correlation coefficient.''' Not sensitive to differences in signal intensities between the two components, but it is not unambiguous because of the strong influence of the ratio of the number of objects in the two components.
@@ -14,13 +14,13 @@ There are two colocalization coefficients to express the fraction of colocalizin
 
 These coefficients measure the significance of true colocalization. The significance test is derived to evaluate the probability that the measured value of r from the two colors is significantly greater than values of r that would be calculated if there was only random overlap. This test is performed by randomly scrambling the blocks of pixels (instead of individual pixels, because each pixel's intensity is correlated with its neighboring pixels) in one image, and then measuring the correlation of this image with the other (unscrambled) image. You can get more details in [[Media:Costes etalColoc.pdf|Costes et al.]]
 
-=== Object-based overlap analysis ===
+==== Object-based overlap analysis ====
 
 This cookbook does not cover object-based overlap analysis, since it requires segmenting the image into objects and background, and that is a whole branch of image processing in itself. See the [http://rsbweb.nih.gov/ij/plugins/track/jacop.html JACoP imageJ plugin] for object based methods.
 
 The [https://en.wikipedia.org/wiki/Pauli_exclusion_principle Pauli exclusion principle] states that two particles can not have the same quantum numbers so they can not be in the same place. Actually, nothing is "really" colocalised. We must colocalise at some spatial scale. At the other extreme, a universe of one voxel (not cubic of course) is completely colocalised. So we are, in fact, between the two extremes. You can find more details about this issue in the following sections.
 
-= Why scatter plots instead of colour merge images? =
+== Why scatter plots instead of colour merge images? ==
 
 Far too often, composite/merge images of red and green channels are considered sufficient to demonstrate colocalisation. This is plain wrong. The problems with red/green merge images for colour-blind people aside, there is another very good reason to require scatter plots: the perception of human eyes and brain can be fooled very easily.  Just have a look at this image:
 
@@ -32,7 +32,7 @@ So... now, how do you feel about determining colocalization by looking for yello
 
 An even beter reason to always look at scatterplots / 2D histograms / cytofluorograms is that they actually show the thing you are looking for and talking about - the correlation (or not) between the intensities of the 2 colour channels of the pixels over space.
 
-= A sample dataset =
+== A sample dataset ==
 
 Let's open a sample data set that we know should have very good colocalization because the 2 subunits of a dimeric protein are stained with green and red dyes respectively. The methods of Pearson, Manders, Costes and Li should work very well for this sample, but maybe we can see some problems with the data? Maybe we can decide if the data is suitable for this analysis or not? 
 
@@ -43,7 +43,7 @@ If I want to show DAPI in green and EGFP as magenta, there is nothing "wrong" ab
 
 [[Image:SplitChannels.png|300px]]
 
-= Colocalization analysis using Coloc 2 =
+== Colocalization analysis using Coloc 2 ==
 
 Coloc 2 implements and performs the pixel intensity correlation over space methods of [http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient Pearson], [[Media:Manders.pdf|Manders]], [[Media:Costes etalColoc.pdf|Costes]], [[Media:LietAlColoc.pdf|Li]] and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
 
@@ -51,19 +51,19 @@ None of this gives sensible results unless you have your imaging hardware set up
 
 This plugin supersedes the [[Colocalization Threshold]] and [[Colocalization Test]] plugins, which unfortunately were buggy and hard to maintain. So we started from scratch with a carefully planned and designed new plugin. While the old plugins are described below as well, we recommend that you use Coloc 2 instead.
 
-== What is Coloc 2 ==
+=== What is Coloc 2 ===
 
 Coloc 2 is a plugin that uses the new ImgLib image data container library for image processing, and implements the above methods in a pixel data type (8, 16, 32-bit) independent, modular and easily extensible way. The source code has unit tests to detect if changes to the source code break the maths. It should be easy to add new methods since the plugin is designed with that in mind. 
 
 One main feature of Coloc 2 is the standardised PDF output, which is intended to make the results of different colocalization experiments comparable.
 
-== How to use Coloc 2 ==
+=== How to use Coloc 2 ===
 
 Please see the [[Coloc2]] page for complete instructions on using the Coloc 2 plugin, including common pitfalls of the pixel intensity spatial correlation methods that it employs.
 
-= Precautions and notes =
+== Precautions and notes ==
 
-== Check image data for problems and suitability for analysis ==
+=== Check image data for problems and suitability for analysis ===
 
 Questions you should ask before attempting colocalisation analysis from 2 colour channel images, using the pixel intensity spatial correlation methods of Manders and Costes: 
 
@@ -89,9 +89,9 @@ We need to think carefully about the correct or adequate spatial resolution in x
 
 [http://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem Nyqvist] tells us the spatial sampling should be about three times smaller then the smallest object we want to resolve. Remember, spatial intensity correlation analysis, as we will perform here, can not tell you that 2 proteins are bound together in some biophysical bonding interaction. However, it might suggest that the 2 molecules occur with the same relative amounts when they are present in the set of spatial samples (pixels or voxels) with intensities above the thresholds we will calculate below. In any case, it might be a hint that "maybe they are binding partners or in the same macromolecular complex". You should follow up by determining true binding using [http://en.wikipedia.org/wiki/FLIM FLIM], [http://en.wikipedia.org/wiki/Förster_resonance_energy_transfer FRET] and biochemical methods like Immuno co-Precipitation etc.
 
-= Older colocalization plugins =
+== Older colocalization plugins ==
 
-== Colocalization Threshold ==
+=== Colocalization Threshold ===
 
 <span style="color: red">Note: this plugin is no longer under active development and support. Use [[Coloc 2]] instead.</span>
 
@@ -124,7 +124,6 @@ The plugin finally sends a bunch of statistics and results to the results window
 
          <ol>
 
-
           <li>
 The thresholded Mander's split colocalisation coefficients (zero is no colocalisation, one means perfect colocalisation. There is one coefficient per channel, which tells you the proportion of signal in that channels that colocalises with the other channel. Of course this might be different for the two channels! The thresholded Mander's coefficients are probably the numbers you would publish (not the Pearson's coefficients as these are less informative).
           </li>
@@ -148,13 +147,11 @@ In images that have no empty regions, like tissue samples, it might then be a us
          
            </ol>
 
-=== Colocalization Test ===
-
+==== Colocalization Test ====
 
 <span style="color: red">Note: This plugin is no longer actively developed or supported. Use [[Coloc 2]] instead.</span>
 
 The [[Colocalization Test]] plugin performs the Costes test for statistical significance (which you should ALWAYS do after calculating the thresholded Manders coefficients and the scatterplot). It is in the menus at "Analyse-Colocalization-Colocalization Test"
-
 
 [[Image:ColocTestGUI1.png|400px]]
 
@@ -163,7 +160,6 @@ Choose the correct Channel 1 and Channel 2 images stacks from the drop down list
 [[Image:ColocTestGUI2.png|200px]]
 
 The results window will then display the calculated P-value, and some other details of the test calculation. 
-
 
 [[Image:ColocTestResult.png|400px]]
 
