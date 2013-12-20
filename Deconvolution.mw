@@ -1,8 +1,9 @@
 {{Cookbook}}
 
-= Deconvolution =
+__FORCETOC__
 
 == Introduction ==
+
 These two plugins from Bob Dougherty are used together to generate a stack of the point-spread function (PSF). The Iterative Deconvolution 3D plugin uses this PSF image stack along with a stack of your sample images. The image below is a single slice taken from a stack before and after deconvolution using these plugins. 
 
 [[File:deconvoluted_data.png]]
@@ -18,6 +19,7 @@ To use, run the "Diffraction PSF 3D" plugin. A dialog will appear; most of the f
 [[File:diffraction_psf_window1.png|377x317px]]
 
 == Iterative deconvolution ==
+
 Run the Iterative Deconvolve 3D plugin, then select the image and PSF. Start with the default values and set iterations to 10 initially. Be careful not to represent the PSF with a stack or the plugin will run out of memory and terminate.
 
 [[File:iterative_deconvolve_window.png|411x272px]]
