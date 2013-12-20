@@ -49,20 +49,13 @@ The particle analysis can be automated via plugins or macros once the correct th
 === Nucleus Counter ===
 This plugin automates many of the steps discussed above.
 
-1. Enter the size range to be counted[[File:nucleus_counter_1.jpg|right]].
-
-
-2. Select the automatic thresholding method. This can be either "Current", "Otsu", Maximum Entropy", "Mixture Modelling" or k-means" clustering. "Current" uses the threshold that has been set manually, see above.
-
-3. Perform a background correction.
-
-4. Use a "Smooth" filter.
-
-5. Perform a watershed separation.
-
-6. Add the particles to the ROI manager.
-
-7. Say yes to a summary.
+# Enter the size range to be counted[[File:nucleus_counter_1.jpg|right]].
+# Select the automatic thresholding method. This can be either "Current", "Otsu", Maximum Entropy", "Mixture Modelling" or k-means" clustering. "Current" uses the threshold that has been set manually, see above.
+# Perform a background correction.
+# Use a "Smooth" filter.
+# Perform a watershed separation.
+# Add the particles to the ROI manager.
+# Say yes to a summary.
 
 Other options can easily be added on request.
 
