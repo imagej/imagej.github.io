@@ -47,17 +47,6 @@ Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs
 ** You will be asked if you want to save the results as a PDF file (if the Show "save PDF" dialog button was checked. So tell it where to save the PDF. This is standard output format, so you can compare with your friend,  same vs. same.
 *** Feel free to tell us what things you think should be included in this standardized PDF output file.
 
-= Something to do before using Coloc2 =
-
-==Open the sample data==
-First, let's open a sample data set that we know should have very good colocalization because the 2 subunits of a dimeric protein are stained with green and red dyes respectively. The methods of Pearson, Manders, Costes and Li should work very well for this sample, but maybe we can see some problems with the data? Maybe we can decide if the data is suitable for this analysis or not? 
-
-'''Open this sample data file [http://fiji.sc/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif].''' Then use the "Image-Color-Split Channels" menu command to get a separate z stack for the 2 dyes (you can throw the blue one away!).
-
-If you like, you can change the look up tables of the images (LUTs) so one is "green" and one is "magenta". Of course the colors here are always false. These false colors are only useful to tell which channel is which. The optoelectronic detectors we use only see photons, and don't know what color they are; that is determined by the fluorescence emission filters we use. There is no such thing as a green dye or a red dye, since they have broad emission spectra not a single wavelength corresponding to a certain "color".
-If I want to show DAPI in green and EGFP as magenta, there is nothing "wrong" about that.  
-
-[[Image:SplitChannels.png|300px]]
 
 = Pitfalls of the Manders and Costes methods =
 
@@ -80,6 +69,5 @@ Whether or not to consider zero - zero pixels as part of the interesting data fo
 
 [[Image:ColocWithROI.png|300px]]
 
-[[Category:Tutorials]]
 [[Category:Colocalization]]
 [[Category:Color processing]]
