@@ -1,20 +1,10 @@
 {{Cookbook}}
 
-= Installing Fiji =
+Just decide which operating system you want to install Fiji on today, and click on the link:
 
-Just decide which operating system you want to install Fiji on today, and click on the link...
-
-== Linux ==
-
-[[Install Fiji on Linux]]
-
-== MacOSX ==
-
-[[Install Fiji on MacOSX]]
-
-== Windows ==
-
-[[Install Fiji on Windows]]
+* [[Install Fiji on Linux]]
+* [[Install Fiji on MacOSX]]
+* [[Install Fiji on Windows]]
 
 [[Category:Cookbook]]
 [[Category:Tutorials]]
