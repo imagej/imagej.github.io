@@ -64,5 +64,9 @@ Whether or not to consider zero - zero pixels as part of the interesting data fo
 
 [[Image:ColocWithROI.png|300px]]
 
+== Other pitfalls ==
+
+Please see the [[Colocalization Analysis]] page for further discussion of precautions.
+
 [[Category:Colocalization]]
 [[Category:Color processing]]
