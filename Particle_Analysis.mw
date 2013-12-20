@@ -1,3 +1,5 @@
+{{Cookbook}}
+
 = Particle Analysis =
 Automatic particle counting can be done if the image does not have too many individual particles touching. Manual particle counting can be done using the "Point Picker" or “Cell counter” plugins. The "PointPicker" plugin can be found via the menu command&nbsp; "Analyze/Tools/PointPicker".
 
@@ -11,8 +13,6 @@ Automatic particle counting can be done if the image does not have too many indi
 &nbsp;&nbsp;&nbsp;&nbsp;'''5.1.1.1 Manual thresholding'''
 
 Automatic particle analysis requires a “binary”, black and white, image. A threshold range is set to tell the objects of interest apart from the background. All pixels in the image whose values lie under the threshold are converted to black and all pixels with values above the threshold are converted to white, or vice-versa.
-
-
 
 {| style="border-spacing:0;"
 | style="border:none;padding:0in;"| [[File:black_white_threshold.png|thumb|left]]
@@ -92,17 +92,14 @@ The “Point List” dialog allows you to&nbsp;''Show'',&nbsp;''Save''&nbsp;or&n
 
 '''Particle Tracker'''
 Particle Tracker is a 2D feature point-tracking plugin for the automated detection and analysis of particle trajectories as recorded by video imaging in cell biology. The algorithm is decsribed in Sbalzarini and Koumoutsakos (2005[1]). 
-&nbsp;
 
 '''TrackMate''' 
 Use the menu command&nbsp; "Plugins/Tracking/TrackMate". This plugin allows you to perform single particle tracking of spot-like structures. For more in-depth information, see the tutorial and explanation in the Tutorials Documentation.
 
 Simply click on the Content tab at the top of this page and then choose Documentation from the drop down menu. Under the heading that says "Using Fiji" you should see a Tutorials link. Click this link and then look for the one labeled TrackMate.
-&nbsp;
 
 '''Manual Tracking'''
 Use the menu command&nbsp; "Plugins/Tracking/Manual Tracking". This tool allows you to keep track of the movement of a cell.
 
-&nbsp;
-
 [[Category:Cookbook]]
+[[Category:Tutorials]]
