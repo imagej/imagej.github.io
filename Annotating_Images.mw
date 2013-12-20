@@ -1,3 +1,5 @@
+{{Cookbook}}
+
 = Annotating Images =
 
 == Scale bar ==
@@ -96,3 +98,4 @@ Also, bear in mind that the interval doesn't necessarily need to be "time". The 
 The ''Event Stamper'' plugin can be used to add text to a movie for a designated number of frames. Set the desired text in the “Text” box, enter the start frame and end frame and click OK. The text size and location are taken from the current ROI and can be changed once the dialog is open. 
 
 [[Category:Cookbook]]
+[[Category:Tutorials]]
