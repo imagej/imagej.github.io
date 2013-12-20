@@ -24,7 +24,7 @@ This Cookbook makes use of several plugins beyond those available in Fiji out of
 
 == Source ==
 
-The source code [COMING SOON] for the Cookbook plugins can be found [https://github.com/fiji/cookbook on GitHub].
+The source code for the Cookbook plugins is coming soon to a [https://github.com/fiji/cookbook on GitHub near you]!
 
 If you need the source for these plugins RIGHT NOW, you can find it bundled inside the old [http://imagej.nih.gov/ij/plugins/mbf/ MBF ImageJ plugins] distribution. But we'll have them organized more cleanly in the GitHub repository very soon!
 
