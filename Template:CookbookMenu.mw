@@ -1,0 +1,17 @@
+{| class="infobox" cellspacing="5" style="width: 18em; font-size: 90%; text-align: left; float: right; border: 1px dashed #a0a0a0;"
+! colspan="2" style="font-size: 130%;" | Cookbook Topics
+|-
+|
+* [[Installation|Installing Fiji]]
+* [[Importing Image Files]]
+* [[Saving and Exporting]]
+* [[Particle Analysis]]
+* [[Colocalization Analysis]]
+* [[Image Intensity Processing]]
+* [[Color Image Processing]]
+* [[Stack-slice Manipulations]]
+* [[Z-functions]]
+* [[T-functions]]
+* [[Deconvolution]]
+* [[Annotating Images]]
+|}
