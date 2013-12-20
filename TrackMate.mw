@@ -132,12 +132,10 @@ TrackMate actually depends on many other Fiji plugins or libraries. The [[Fiji B
 * Internally, the tracks are represented by a mathematical [http://en.wikipedia.org/wiki/Graph_%28mathematics%29 graph]. To manipulate it, we take advantage of the excellent [http://www.jgrapht.org/ JGraphT] library.
 * TrackScheme, the TrackMate component that is used to visualize and edit tracks uses [http://www.jgraph.com/jgraph.html JGraphX] for its UI.
 * To display plots and histograms we use [http://www.jfree.org/jfreechart/ JFreeChart].
-* Some algorithm in TrackMate rely on the facilities provided by the [http://commons.apache.org/math/ Commons-Math] Apache library and the [http://math.nist.gov/javanumerics/jama/ JAMA] matrix package. 
+* Some algorithm in TrackMate rely on the [http://math.nist.gov/javanumerics/jama/ JAMA] matrix package. 
 * Exporting visualizations and analysis results to SVG, PDF and other formats are made through the [http://xmlgraphics.apache.org/batik/ Batik] and [http://itextpdf.com/ iText] libraries.
 * The TrackMate file format is plain XML, and is generated or loaded using the [http://www.jdom.org/ JDom] library.
-* For the icons, as almost every ImageJ plugin with a GUI, we used the [http://www.famfamfam.com/lab/icons/silk/ silk icon set], by Mark James. 
-
-
+* For the icons, as almost every ImageJ plugin with a GUI, we used the [http://www.famfamfam.com/lab/icons/silk/ silk icon set], by Mark James.
 
 == Acknowledgements ==
 
