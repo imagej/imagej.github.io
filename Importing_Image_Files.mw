@@ -58,6 +58,7 @@ Animated GIF- This plugin opens animated GIF files as an RGB stack. Also opens s
 * '''Analyze...'''
 * '''[[LSM Toolbox | Show LSM Toolbox]]''': Open the LSM Toolbox window, from which LSM files can be opened, viewed in multi dimensions, montaged,  their metadata directly inspected, time and z stamped and more. 
 
+[[Category:Cookbook]]
 [[Category:Menus]]
 [[Category:Plugins]]
 [[Category:Import-Export]]
