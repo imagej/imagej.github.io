@@ -1,11 +1,11 @@
 {{Cookbook}}
 
-= Annotating Images =
-
 == Scale bar ==
+
 All images for publications should include a scale bar. A standard size should be used for the scale bars on all images if possible to help avoid confusion.
 
 === Spatial calibration ===
+
 An image's spatial calibration can be edited using "''Image/Properties''". Note that the units "um" will automatically change to “µm”.
 
 Some microscope models (e.g., Biorad PIC, and Zeiss LSM confocal image files) will use the zoom and objective magnification settings for internal calibration. However, it is important to keep in mind that some file formats (e.g. Perkin Elmer) are not calibrated while some "exported" image files (e.g. Zeiss zvi's exported as TIFFs) will lose their calibration information completely.
@@ -18,7 +18,7 @@ Sometimes the spatial calibration may be lost after applying an image processing
 
 There are three ways to reapply spatial calibration: manually via the “''Image/Properties''” dialog; using the "Copy Pixel Size" plugin that applies pixel size of one image to a second image; or with the "Set Scale" plugin. 
 
-==== “Copy-calibration”  ====
+==== Copy-calibration ====
 
 [[File:copy_pixel_size.png]]
 # Open the image with the original calibration
@@ -28,7 +28,7 @@ There are three ways to reapply spatial calibration: manually via the “''Image
 
 [[File:copy_pixel_size_values.png|180x240px]]
 
-====“Set Scale” ====
+==== Set Scale ====
 If you know the size of a feature (for example, a previously applied scale bar) you can use this command to apply a calibration.
 
 # Using the line selection tool, draw a line along the length of the feature or scale bar. Do not choose "''Edit/Draw''" after adding the line.
@@ -49,7 +49,9 @@ Check the “''Label all slices''” box to add a scale-bar to the whole stack.
 This plugin points to the native menu command “''Analyze/Tools/Scale bar…”.''
 
 ==  Text and lines ==
+
 === Issues with adding text ===
+
 Adding text to single frame images should be done in CorelDRAW or a similar application so the text does not become part of the image and can therefore be edited at any time. Adding text to an image/movie is irreversible so it should not be done on raw data. Images can be copied to and pasted from the system clipboard between programs using the System Clipboard plugin (Plugin documentation found [http://rsbweb.nih.gov/ij/plugins/clipboard.html here])or by using the ''"Copy to System"'' and ''"Paste"'' options in the ''Edit'' menu. In the case that an image is not pasting accurately, use "''Edit/Paste Special''" in the receiving application, then select "''Device independent bitmap''".
 
 Always save your images before adding text. Text color is set via the color picker button on the tool bar. Double-click on it to open the palette and choose a color. 
@@ -95,6 +97,7 @@ Remember: bigger text will typically look smoother and the timestamp will be eas
 Also, bear in mind that the interval doesn't necessarily need to be "time". The Time Stamper can also be used to add "z-axis depths" to z-stacks and "angle of rotation" to rotating volume movies (° = Alt+248; µ = Alt+230).
 
 === Adding event markers to a movie ===
+
 The ''Event Stamper'' plugin can be used to add text to a movie for a designated number of frames. Set the desired text in the “Text” box, enter the start frame and end frame and click OK. The text size and location are taken from the current ROI and can be changed once the dialog is open. 
 
 [[Category:Cookbook]]
