@@ -1,8 +1,3 @@
-<div style="background:#ffd; padding: 10px 10px 0 10px; border: 1px solid black;">
-This draft is a work in progress of a new Coloc2 page focusing on the plugin itself and its usage. It will go hand in hand with the [[Colocalization Cookbook]] page, which will eventually replace the page [[Colocalization Analysis]].
-</div>
-
-
 {{Infobox Plugin
 | name                   = Coloc 2 - Standardized, modular, Colocalization analysis. 
 | software               = ImageJ - Fiji - ImgLib
