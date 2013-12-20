@@ -1,7 +1,9 @@
 {{Cookbook}}
 
-= Intensity vs Time analysis =
+= Image Intensity Processing =
+
 == Brightness and Contrast ==
+
 [[File:brightness_contrast_pic.png|thumb|right]]
 Brightness is the visual perception of reflected light. Increased brightness refers to an image's increased luminance. 
 
@@ -27,9 +29,11 @@ The top 6 rows of the column are details of the ROI. This makes sure the same RO
 The results are displayed in a plot-window with the ROI details in the plot window title. The plot contains the buttons&nbsp;''List, Save, Copy.&nbsp;''The&nbsp;''Copy''&nbsp;button puts the data in the clipboard so it can be pasted into an Excel sheet. The settings for the copy button can be found under “''Edit/Options/Profile Plot Options''”. Recommended settings include:&nbsp;''Do not save x-values&nbsp;''(prevents slice number data being pasted into Excel) and&nbsp;''Autoclose''&nbsp; so that you don't have to close the analyzed plot each time.
 
 == Dynamic intensity vs Time analysis ==
+
 The plugin “''Plot Z Axis Profile"&nbsp;''(this is the&nbsp;''Z Profiler'' from Kevin (Gali) Baler (gliblr at yahoo.com) and Wayne Rasband simply renamed)&nbsp;&nbsp;will monitor the intensity of a moving ROI using a particle tracking tool. This tool can be either manual or automatic. Use the “''Image/Stacks/Plot Z Axis Profile''”&nbsp; command.
 
 == Getting intensity values from multiple ROIs ==
+
 You can analyze multiple ROIs at once with Bob Dougherty’s “''Multi Measure''” plugin. The native “ROI manager” function does a similar job except doesn't generate the results in sorted columns. Check Bob’s website for updates:&nbsp;[http://www.optinav.com/imagej.html http://www.optinav.com/imagej.html]
 
 The Multi Measure plugin that comes with the installation is v3.2.
@@ -62,6 +66,7 @@ Save the ROIs with the Multi Measure button “''Save''”. Put them in the expe
 Oval and rectangular ROIs can be restored individually from x, y, l, h values with the “''Plugins/ROI/SpecifyROI…''” command.
 
 == Ratio Analysis ==
+
 [[File:intensity_ratio_analysis.jpg|right]]
 Ratiometric imaging compares the recordings of two different signals to see if there are any similarities between them. It is done by dividing one channel by another channel to produce a third ratiometric channel. This technique is useful because it corrects for dye leakage, unequal dye loading, and photo-bleaching. An example application would be measuring intracellular ion, pH, and voltage dynamics in real time. 
 
@@ -97,24 +102,24 @@ To generate a reference image:
 
 3. Select the new image and click the "More" button in the ROI manager. After that select "Label".
 
-&nbsp;
-
-&nbsp;
-
 == Obtaining timestamp data == 
 
 === Zeiss LSM ===
+
 The LSM_Toolbox is a project aiming at the integration of common useful functions around the Zeiss LSM file format, that should enhance usability of confocal LSM files kept in their native format, thus preserving all available metadata.
 
 In Fiji, corresponding commands are: "''File/Import/Show LSMToolbox''" which displays the toolbox, from which all commands can be called and "''Help/About Plugins/LSMToolbox...''" which displays information about the plugin.
 
 === Noran ===
+
 Noran movies can be opened in several ways: "''File/Import/Noran movie''" opens entire movie as an image stack. "''File/Import/Noran Selection…''" allows you to specify a range of frames to be opened as a stack. The Noran SGI plugins are not bundled with the Fiji package. To receive them, please contact tonyc@uhnresearch.ca or their author, Greg Joss, so he can keep track of users. Greg Joss gjoss@bio.mq.edu.au is in the Dept. of Biology, Macquarie University, Sydney, Australia.
 
 === Biorad ===
+
 This reading can be found by using the menu command “''Image/Show Info…''”. Scroll down to get the time each slice was acquired. Select this time, copy it into Excel, and find the time number obtained by using the Excel menu command “''Edit/Replace''”. This will leave only the time data. The “elapsed” time can then be calculated by subtracting row 1 from all subsequent rows.
 
 == Pseudo-linescan ==
+
 Linescanning involves acquiring a single line, one pixel in width, from a common confocal microscope instead of a standard 2D image. This is usually a faster way to take an image. All the single pixel-wide images are then stacked to recreate the 2D image.
 
 A pseudo-linescan generation of a 3-D (''x, y, t'') image. It is useful for displaying 3-D data in 2 dimensions.
@@ -124,23 +129,27 @@ A line of interest is drawn followed by the command: “''Image/Stacks/Reslice�
 &nbsp;Fiji's default settings assume that stacks are&nbsp;''z''-series rather than&nbsp;''t''-series. This means that many functions related to the third-dimension of an image stack are referred to with a “''z-”''&nbsp;. Just keep this in mind.
 
 == FRAP (Fluorescence Recovery After Photobleaching) Analysis ==
+
 The FRAP profiler plugin will analyze the intensity of a bleached ROI over time and normalize it against the intensity of the whole cell. After that it will find the minimum intensity in the bleached ROI and fit the recovery with this point in mind.
 
 To use:
 
-1. Open the ROI manager.
+<ol>
+<li>Open the ROI manager.</li>
 
-2. Draw around the bleached ROI and add it to the ROI manager.
+<li>Draw around the bleached ROI and add it to the ROI manager.</li>
 
-3. Draw around the whole cell and add that to the ROI manager. The normalization corrects for the bleaching that occurs during image acquisition and assumes the whole cell is in the field of view.
+<li>Draw around the whole cell and add that to the ROI manager. The normalization corrects for the bleaching that occurs during image acquisition and assumes the whole cell is in the field of view.</li>
 
 '''The plugin assumes the larger of the two ROIs in the ROI manager is the whole cell ROI and that the smaller ROI is the bleached part.'''
 
-4. Run the FRAP profiler plugin.
+<li>Run the FRAP profiler plugin.</li>
 
-5. The plugin will return the intensity vs time plot, the normalized intensity vs time plot of the bleached area, and the curve fit.
+<li>The plugin will return the intensity vs time plot, the normalized intensity vs time plot of the bleached area, and the curve fit.</li>
+</ol>
 
 == Non-linear contrast stretching ==
+
 === Equalization ===
 
 {| style="border-spacing:0;"
@@ -152,6 +161,7 @@ The “Equalize contrast” command applies a non-linear stretch of the histogra
 [[File:equalize_histrogram.jpg]]
 
 === Gamma ===
+
 <nowiki>Gamma performs a non-linear histogram adjustment. Faint objects become more intense while bright objects do not (gamma <1). Also, medium-intensity objects become fainter while bright objects do not (gamma > 1). The intensity of each pixel is “raised to the power” of the gamma value and then scaled to 8-bits or the min and max of 16-bit images.</nowiki>
 
 For 8 bit images; New intensity = 255 ×&nbsp;''<nowiki>[(old intensity÷255)</nowiki>&nbsp;gamma'']
@@ -161,6 +171,7 @@ Gamma can be adjusted via the “''Process/Math/Gamma”''&nbsp;command. It will
 [[File:gamma_pic.jpg]]
 
 == Filtering ==
+
 See the online reference:&nbsp;[http://www.dai.ed.ac.uk/HIPR2/filtops.htm http://www.dai.ed.ac.uk/HIPR2/filtops.htm]&nbsp;for an explanation of digital filters and how they work.
 
 Filters can be found using the menu command “''Process/Filters...''”''.''&nbsp;
@@ -180,100 +191,81 @@ Filters can be found using the menu command “''Process/Filters...''”''.''&nb
 ''Kalman filter'': This filter, also known as the Linear Quadratic Estimation, recursively operates on noisy inputs to compute a statistically optimal estimate of the underlying system state.
 
 == Background correction ==
+
 Background correction can be done in multiple ways. A simple method is to use the “''Image/Lookup Tables/HiLo''” LUT to display zero values as blue and white values (pixel value 255) as red.
 
 With a background that is relatively even across the image, remove it with the ''Brightness/Contrast''&nbsp;command by slowly raising the&nbsp;''Minimum''&nbsp;value until most of the background is displayed blue. Press the&nbsp;''Apply&nbsp;''button to make a permanent change.
 
 === Rolling-Ball background correction ===
+
 To fix an uneven background use the menu command “''Process/Subtract background''”. This will use a “rolling ball” algorithm on the uneven background. The radius should be set to at least the size of the largest object that is&nbsp;''not''&nbsp;part of the background. It can also be used to remove background from gels where the background is white. Running the command several times may produce better results. The user can choose whether or not to have a light background, create a background with no subtraction, have a sliding paraboloid, disable smoothing, or preview the results. The default value for the rolling ball radius is 50 pixels. 
-
-
 
 {| style="border-spacing:0;"
 | style="border:none;padding:0.0194in;"| &nbsp;'''RAW'''
 | style="border:none;padding:0.0194in;"| &nbsp;
 | style="border:none;padding:0.0194in;"| “'''''Process/Subtract Background…”'''''
-
 |-
 | style="border:none;padding:0.0194in;"| [[File:raw_rolling_ball_back_corr.jpg]]
 | style="border:none;padding:0.0194in;"| [[File:rolling_ball_back_corr.jpg]]
 | style="border:none;padding:0.0194in;"| [[File:processed_rolling_ball_back_corr.jpg]]
 
 |}
-&nbsp;
 
 Once the background has been evened, final adjustments can be made with the&nbsp;''Brightness/Contrast'' control.
-
-&nbsp;
-
-
 
 {| style="border-spacing:0;"
 | style="border:none;padding:0.0194in;"| [[File:bright_contr_roll_ball.jpg]]
 | style="border:none;padding:0.0194in;"| [[File:histogram_roll_ball.jpg]]
 | style="border:none;padding:0.0194in;"| 
 [[File:bright_contr_control_roll_ball.jpg]]
-
 |}
 
 === ROI background correction ===
+
 The rolling-ball algorithm takes a lot of time. To speed up the process with an image that has a more even background, select a region of interest from the background and subtract the mean value of this area for each slice from each slice. Use the selection tools to select an area of background and run the menu command “''Process/Subtract Background”''. This macro will subtract the mean of the ROI from the image plus an additional value equal to the standard deviation of the ROI multiplied by the scaling factor you enter. The default for this is 3.
 
 This macro, because it also works with stacks, can be used on time-courses with varying backgrounds.
-
-&nbsp;
-
-
 
 {| style="border-spacing:0;"
 | style="border:none;padding:0in;"| <center>'''Before correction'''</center>
 | style="border:none;padding:0in;"| <center>&nbsp;'''Background intensity over time'''</center>
 | style="border:none;padding:0in;"| <center>'''After “''ROI_BG_Correction''”'''</center>
-
 |-
 | style="border:none;padding:0in;"| [[File:roi_back_corr_before.gif]]
 | style="border:none;padding:0in;"| [[File:roi_back_corr_during.gif]]
 | style="border:none;padding:0in;"| [[File:roi_back_corr_after.gif]]
-
 |}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 == Flat-field correction ==
+
 === Proper correction ===
+
 Use this technique on brightfield images. You can correct uneven illumination or dirt/dust on lenses by acquiring a “flat-field” reference image&nbsp;''with the same intensity illumination as the experiment''. The flat field image should be as close as possible to a field of view of the cover slip without any cells/debris. This is often not possible with the experimental cover slip, so a fresh cover slip may be used with approximately the same amount of buffer as the experiment.
-
-
 
 {| style="border-spacing:0;"
 | colspan="3" | [[File:flat_field_correction.gif]]
-
 |-
 || <center>'''RAW'''</center>
 || <center>'''Flat-field'''</center>
 || <center>&nbsp;'''Processed'''</center>
-
 |}
 
+# Open both the experimental image and the flat-field image.
 
-1. Open both the experimental image and the flat-field image.
+# Click the &nbsp;“''Select all''” button on the flat-field image and measure the average intensity. This value, the k1 value, will appear in the results window.
 
-2. Click the &nbsp;“''Select all''” button on the flat-field image and measure the average intensity. This value, the k1 value, will appear in the results window.
+# Use the “''Image Calculator plus''” plugin (Analyze/Tools/Calculator plus).
 
-3. Use the “''Image Calculator plus''” plugin (Analyze/Tools/Calculator plus).
-
-4. i1 = experimental image; i2 = flat-field image; k1 = mean flat-field intensity; k2 = 0. Select the "''Divide"&nbsp;''operation.
+# i1 = experimental image; i2 = flat-field image; k1 = mean flat-field intensity; k2 = 0. Select the "''Divide"&nbsp;''operation.
 
 This can also be done using the “''Process/Image Calculator”''function with the “32-bit Result” option checked. Then adjust the brightness and contrast and convert the image to 8-bit.
 
 [[File:calculator_plus_flat_field.jpg]]
 
-&nbsp;
-
 === Pseudo-correction ===
 
 {| style="border-spacing:0;"
 | colspan="2"  style="border:none;padding:0in;"| [[File:pseudoCorrectionImage.gif]]
-
 
 Sometimes it is not possible to obtain a flat-field reference image. It is still possible to correct for illumination intensity, though not small defects like dust, by making a “pseudo-flat field” image by performing a large-kernel filter on the image to be corrected. For those working with DIC images, this is particularly useful because they generally have an intrinsic, and distracting, gradient in illumination.
 
@@ -286,9 +278,9 @@ This can also be used with stacks for brightfield time-courses that vary in inte
 | style="border:none;padding:0in;"| The first RAW image (top) is pseudo-flat field corrected. Here the pseudo-flat field corrects for the uneven illumination, but does not correct for the dust specks. Look at this compared to the result of a proper flat-field correction above.
 
 |}
-&nbsp;
 
 === FFT background correction ===
+
 You can correct for uneven illumination and horizontal "scan lines" in transmitted light images acquired using confocal microscopes by using the native FFT bandpass function (''Process/FFT/Bandpass Filter...).''
 
 You can experiment with the settings to optimize the filtering and also choose to filter structures down to a certain number of pixels. The default value is 40 pixels. You can filter small structures up to a certain value. The default value is 3 pixels. The user can choose from a drop down menu whether to suppress stripes with None, Horizontal, or Vertical. The tolerance of direction can be chosen. The default is 5%. Finally, the user can choose whether to allow autoscale after filtering, saturation of the image when autoscaling, whether or not to display the filter, and whether or not to process an entire stack.
@@ -296,7 +288,9 @@ You can experiment with the settings to optimize the filtering and also choose t
 [[File:newFftBandFilter.jpg]]
 
 == Masking unwanted regions ==
+
 === Simple masking ===
+
 Use one of the ROI tools to draw around the area of interest and then select: “''Edit/Clear outside''”''. ''This will change the area outside the selected region to the background value.
 
 === Complex masking ===
