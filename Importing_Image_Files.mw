@@ -8,7 +8,7 @@ Most of the commands listed, particularly Fiji extensions, are also available (v
 
 Fiji primarily uses TIFF as the image file format. The menu command ''File>Save'' will save in TIFF format. The menu command ''File>Open'' will open TIFF files and import a number of other common file formats (e.g. JPEG, GIF, BMP, PGM, PNG) as well as those detailed below. Files can be also dragged and dropped to the toolbar to open them.
 
-== [[Bio-Formats]] ==
+== Bio-Formats ==
 
 Many more file formats can be imported via Fiji plugins. One plugin is called [[Bio-Formats]]. This will import and export a wide number of file formats along with their important metadata. They can be accessed directly via the menu command ''File>Import>Bio-Formats'' or indirectly via the ''File>Open'' menu command which will use the Bio-Formats suite if needed. See the [http://openmicroscopy.org/site/support/bio-formats5/supported-formats.html list of supported file formats] on the Bio-Formats website for the complete list (135 as of this writing).
 
