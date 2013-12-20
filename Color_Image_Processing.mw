@@ -1,6 +1,4 @@
-{{Cookbook}}
-
-= Color Image Processing =
+__FORCETOC__ {{Cookbook}}
 
 Images with color come in three different forms: pseudo-color, 24-bit RGB image, or color composite image.
 
