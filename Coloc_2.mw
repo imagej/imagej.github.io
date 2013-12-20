@@ -4,7 +4,7 @@ This draft is a work in progress of a new Coloc2 page focusing on the plugin its
 
 
 {{Infobox Plugin
-| name                   = Coloc_2 - Standardized, modular, Colocalization analysis. 
+| name                   = Coloc 2 - Standardized, modular, Colocalization analysis. 
 | software               = ImageJ - Fiji - imglib
 | author                 = Daniel J White, Tom Kazimiers, Johannes Schindelin
 | maintainer             = [mailto:white_at_mpi-cbg_dot_de Daniel White]
@@ -15,7 +15,7 @@ This draft is a work in progress of a new Coloc2 page focusing on the plugin its
 | status                 = beta. Under development, but stable enough for real work. 
 }}
 
-== How to use Coloc_2 ==
+== How to use Coloc 2 ==
 
 * Open images to analyze. 
 ** You need a 2 color channel image. If the image has more than 2 channels, identify the two you want to analyze with each other, then split the channels into separate images (Image- Color - Split Channels)
@@ -25,7 +25,7 @@ This draft is a work in progress of a new Coloc2 page focusing on the plugin its
 **You can have a third "binary mask" image, with the same x,y,z dimensions as the 2 images to be analyzed:
 *** where the mask image is white (255 pixel value for an 8 bit greyscale image) colocalization will be analyzed for those pixels only. Where it is black (zero pixel value), the pixels will be ignored: not included in the analysis. 
 *** you can use a z stack as a 3D mask... it's up to you how you make that mask image, manually or by some automated method. 
-*Launch the Coloc_2 plugin from the menu item: Analyze - Colocalization Analysis - Coloc 2 
+*Launch the Coloc 2 plugin from the menu item: Analyze - Colocalization Analysis - Coloc 2 
 ** or use the command finder: press L then start typing Coloc, then choose the plugin with the arrow keys and hit enter, or double mouse click it to launch the plugin. 
 * In the plugin's graphical user interface (GUI) choose the 2 images you want to analyze in the first 2 drop down lists.
 ** Select the images according to which you want to be channel 1 and which to be channel 2. 
