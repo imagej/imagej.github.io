@@ -10,9 +10,11 @@ Fiji primarily uses TIFF as the image file format. The menu command ''File>Save'
 
 == Bio-Formats ==
 
-Many more file formats can be imported via Fiji plugins. One plugin is called [[Bio-Formats]]. This will import and export a wide number of file formats along with their important metadata. They can be accessed directly via the menu command ''File>Import>Bio-Formats'' or indirectly via the ''File>Open'' menu command which will use the Bio-Formats suite if needed. See the [http://openmicroscopy.org/site/support/bio-formats5/supported-formats.html list of supported file formats] on the Bio-Formats website for the complete list (135 as of this writing).
+Many more file formats can be imported via Fiji plugins. One plugin is called [[Bio-Formats]]. This will import and export a wide number of file formats along with their important metadata. They can be accessed directly via the menu command ''File>Import>Bio-Formats'' or indirectly via the ''File>Open'' menu command which will use the Bio-Formats plugin if needed. See the [http://openmicroscopy.org/site/support/bio-formats5/supported-formats.html list of supported file formats] on the Bio-Formats website for the complete list (135 as of this writing).
 
-Drag and dropping an image file to the Fiji toolbar will prompt the Bio-Formats plugin to select the appropriate import function. You will be prompted with a dialog and your preferences remembered.
+If Bio-Formats is used, you will be prompted with a big dialog and your preferences remembered.
+
+Drag and dropping an image file to the Fiji toolbar will effectively open the file the same as the ''File>Open'' command.
 
 Some image file formats are more akin to databases rather than images (e.g. Leica LIF files). In these cases a second dialog will list the images in the 'database' prompting you to select which to open.
 
