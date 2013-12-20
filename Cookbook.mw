@@ -30,9 +30,18 @@ If you need the source for these plugins RIGHT NOW, you can find it bundled insi
 
 == Credits ==
 
-The Cookbook plugins were collated from various sources and have various authors and licenses.
+The Cookbook pages themselves were adapted from the defunct [[MBF Plugin Collection|MBF "ImageJ for microscopy" manual]], originally written by Tony Collins.
 
-MORE DETAILS COMING SOON
+The initial Cookbook technical writer team:
+* Katie Hildebrand
+* Amanda MacAllister
+* Ruizhi "Ray" Liao
+* [[User:Schindelin|Johannes Schindelin]]
+* [[User:Rueden|Curtis Rueden]]
+
+The plugins featured in the Cookbook were collated from various sources and have various authors and licenses.
+
+MORE PLUGIN AUTHORSHIP DETAILS COMING SOON
 
 [[Category:Cookbook]]
 [[Category:Tutorials]]
