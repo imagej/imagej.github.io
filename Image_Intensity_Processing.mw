@@ -1,3 +1,5 @@
+{{Cookbook}}
+
 = Intensity vs Time analysis =
 == Brightness and Contrast ==
 [[File:brightness_contrast_pic.png|thumb|right]]
@@ -292,31 +294,26 @@ You can correct for uneven illumination and horizontal "scan lines" in transmitt
 You can experiment with the settings to optimize the filtering and also choose to filter structures down to a certain number of pixels. The default value is 40 pixels. You can filter small structures up to a certain value. The default value is 3 pixels. The user can choose from a drop down menu whether to suppress stripes with None, Horizontal, or Vertical. The tolerance of direction can be chosen. The default is 5%. Finally, the user can choose whether to allow autoscale after filtering, saturation of the image when autoscaling, whether or not to display the filter, and whether or not to process an entire stack.
 
 [[File:newFftBandFilter.jpg]]
-&nbsp;
 
 == Masking unwanted regions ==
 === Simple masking ===
-Use one of the ROI tools to draw around the area of interest and then select: “''Edit/Clear outside''”''.&nbsp;''This will change the area outside the selected region to the background value.
-
-&nbsp;
+Use one of the ROI tools to draw around the area of interest and then select: “''Edit/Clear outside''”''. ''This will change the area outside the selected region to the background value.
 
 === Complex masking ===
+
 More sophisticated masking can be done by “thresholding” the image and subtracting the new binary image from the original image.
 
-1. Duplicate the image, or, if it’s a stack, generate an “average projection” of a few frames.
+# Duplicate the image, or, if it’s a stack, generate an “average projection” of a few frames.
 
-2. Threshold this image with the menu command “''Image/Adjust/Threshold''”.
+# Threshold this image with the menu command “''Image/Adjust/Threshold''”.
 
-3. Hit the Auto button and adjust the sliders until all the cells are highlighted red.
+# Hit the Auto button and adjust the sliders until all the cells are highlighted red.
 
-4. Click “''Apply''”. Check the following box: “black foreground, white background”. You should now have a white and black image with your cells black and background white. If you have white cells and black background, invert the image with “''Edit/Invert''”.
+# Click “''Apply''”. Check the following box: “black foreground, white background”. You should now have a white and black image with your cells black and background white. If you have white cells and black background, invert the image with “''Edit/Invert''”.
 
-5. This can be smoothed with the command “''Process/Smooth''” and the black area enlarged slightly with “''Process/Binary/Dilate''” to give a better mask.
+# This can be smoothed with the command “''Process/Smooth''” and the black area enlarged slightly with “''Process/Binary/Dilate''” to give a better mask.
 
-6. Using the regular Image calculator “''Process/Image calculator''” subtract this black and white “mask” image from your original image or stack.
-
-&nbsp;
-
-&nbsp;
+# Using the regular Image calculator “''Process/Image calculator''” subtract this black and white “mask” image from your original image or stack.
 
 [[Category:Cookbook]]
+[[Category:Tutorials]]
