@@ -134,19 +134,11 @@ The FRAP profiler plugin will analyze the intensity of a bleached ROI over time 
 
 To use:
 
-<ol>
-<li>Open the ROI manager.</li>
-
-<li>Draw around the bleached ROI and add it to the ROI manager.</li>
-
-<li>Draw around the whole cell and add that to the ROI manager. The normalization corrects for the bleaching that occurs during image acquisition and assumes the whole cell is in the field of view.</li>
-
-'''The plugin assumes the larger of the two ROIs in the ROI manager is the whole cell ROI and that the smaller ROI is the bleached part.'''
-
-<li>Run the FRAP profiler plugin.</li>
-
-<li>The plugin will return the intensity vs time plot, the normalized intensity vs time plot of the bleached area, and the curve fit.</li>
-</ol>
+# Open the ROI manager.
+# Draw around the bleached ROI and add it to the ROI manager.
+# Draw around the whole cell and add that to the ROI manager. The normalization corrects for the bleaching that occurs during image acquisition and assumes the whole cell is in the field of view. '''The plugin assumes the larger of the two ROIs in the ROI manager is the whole cell ROI and that the smaller ROI is the bleached part.'''
+# Run the FRAP profiler plugin.
+# The plugin will return the intensity vs time plot, the normalized intensity vs time plot of the bleached area, and the curve fit.
 
 == Non-linear contrast stretching ==
 
