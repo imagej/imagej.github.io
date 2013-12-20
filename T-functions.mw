@@ -1,4 +1,7 @@
+{{Cookbook}}
+
 == Correcting for bleaching ==
+
 Often, during acquisition of a time-course, the fluorophore may bleach and the intensity of the image is reduced. This can make it harder to discern events at the end of the sequence. A stretch in contrast at the first time point may not be adequate 100 time points later. The process of bleaching and decrease in image intensity can be fitted with a mono-exponential decay, although it often follows a bi-exponential. A mono-exponential decay is described by the equation:
 
 '''Corrected intensity = (Intensity at time ''t'') ''÷'' exp<sup>-k×''t''</sup>''' where k = decay constant
@@ -115,3 +118,4 @@ The options with three text-entry boxes along side represent x, y and z values.
 “''Render surface plot''”: starts surface plotting.
 
 [[Category:Cookbook]]
+[[Category:Tutorials]]
