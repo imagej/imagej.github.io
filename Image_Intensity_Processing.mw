@@ -298,15 +298,10 @@ Use one of the ROI tools to draw around the area of interest and then select: �
 More sophisticated masking can be done by “thresholding” the image and subtracting the new binary image from the original image.
 
 # Duplicate the image, or, if it’s a stack, generate an “average projection” of a few frames.
-
 # Threshold this image with the menu command “''Image/Adjust/Threshold''”.
-
 # Hit the Auto button and adjust the sliders until all the cells are highlighted red.
-
 # Click “''Apply''”. Check the following box: “black foreground, white background”. You should now have a white and black image with your cells black and background white. If you have white cells and black background, invert the image with “''Edit/Invert''”.
-
 # This can be smoothed with the command “''Process/Smooth''” and the black area enlarged slightly with “''Process/Binary/Dilate''” to give a better mask.
-
 # Using the regular Image calculator “''Process/Image calculator''” subtract this black and white “mask” image from your original image or stack.
 
 [[Category:Cookbook]]
