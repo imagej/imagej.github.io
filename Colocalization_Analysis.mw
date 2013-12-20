@@ -1,125 +1,100 @@
-{{Infobox Plugin
-| name                   = Coloc_2 - Standardized, modular, Colocalization analysis. 
-| software               = ImageJ - Fiji - imglib
-| author                 = Daniel J White, Tom Kazimiers, Johannes Schindelin
-| maintainer             = [mailto:white_at_mpi-cbg_dot_de Daniel White]
-| filename               = Colocalization.jar
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Colocalisation_Analysis;hb=HEAD on gitweb].
-| latest version         = Dec 2011
-| website                = Fiji
-| status                 = beta. Under development, but stable enough for real work. 
-}}
-
-
-
-
-== Colocalization Analysis - using Coloc_2 ==
-
-The first part of this tutorial is the basic user documentation of the Coloc_2 plugin which is found in the Analyze - Colocalization Analysis menu.
-
-Coloc_2 implements and performs the pixel intensity correlation over space methods of [http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient Pearson], [[Media:Manders.pdf|Manders]], [[Media:Costes etalColoc.pdf|Costes]], [[Media:LietAlColoc.pdf|Li]] and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
-
-None of this gives sensible results unless you have your imaging hardware set up appropriately and have acquired images properly, and have performed appropriate controls for bleed-through and chromatic shift etc. See [[Colocalization_-_hardware_setup_and_image_acquisition|here for hardware set up guidelines]]
-
-=== What is Coloc_2, and why? ===
-
-Coloc_2 is an ImageJ / Fiji plugin that uses the new ImgLib image data container library for image processing, and implements the above methods in a pixel data type (8, 16, 32-bit) independent, modular and easily extensible way. The source code has unit tests to detect if changes to the source code break the maths. It should be easy to add new methods since the plugin is designed with that in mind. 
-
-One main feature of Coloc_2 is the standardised PDF output, which is intended to make the results of different colocalization experiments comparable. Please tell us what you think should be in this standard output, so it is suitable to put directly into the supplemental info of a research publication. 
-
-This plugin supersedes the Colocalization Threshold and Colocalization Test plugins, which, unfortunately, were buggy and hard to maintain. So we started from scratch with a carefully planned and designed new plugin. The older plugins are now retired and not actively supported.
-
-=== How to use Coloc_2 ===
-
-* Open images to analyse. 
-** you need a 2 colour channel image. If the image has more than 2 channels, identify the two you want to analyse with each other, then split the channels into separate images (Image- Color - Split Channels)
-* If you want to analyse only some region of interest (ROI), there are 2 ways to do that:
-** Select a region of interest with one of the imageJ selection tools, in one of the images. 
-*** If the image is a z stack, then the ROI applies in all "slices" of the stack. 
-**You can have a third "binary mask" image, with the same x,y,z dimensions as the 2 images to be analysed:
-*** where the mask image is white (255 pixel value for an 8 bit greyscale image) colocalization will be analysed for those pixels only. Where it is black (zero pixel value), the pixels will be ignored: not included in the analysis. 
-*** you can use a z stack as a 3D mask... its up to you how you make that mask image, manually or by some automated method. 
-*Launch the Coloc_2 plugin from the menu item: Analyze - Colocalization Analysis - Coloc 2 
-** or use the command finder: press L then start typing Coloc, then choose the plugin with the arrow keys and hit enter, or double mouse click it to launch the plugin. 
-* In the plugin's graphical user interface (GUI) choose the 2 images you want to analyse in the first 2 drop down lists.
-** Select the images according to which you want to be channel 1 and which to be channel 2. 
-** In the third drop down list selection, select the image/channel you want to use that has the correct ROI
-*** or you can choose a mask image - it must have the same xyz dimensions (number of pixels and slices) as the other 2 images. 
-* Choose which "Algorithms" are run and which statistics you wish to calculate, and if you want to save the "standardised" PDF result file, when the OK button is pressed. 
-** Turn the options on and off by clicking the selection button at the left of the Algorithm description
-** Also choose the approximate size of the point spread function (PSF) in your images, and the number of iterations to run the Costes statistical significance test (We suggest a large number... the larger the number the longer the analysis will take. Do, at the very very least, 10 iterations (100 would be better).
-*** You should know approx. how big the PSF is (in pixels) in your images. 
-**** If you dont, go back and read about what it is and why its important in colocalisation analysis (for instance read the [[Media:Costes_etalColoc.pdf|Costes paper]] )
-**** This size determines what size of image chunks are shuffled in the randomisation process. PSF sized image pieces make physical sense, as thats the size of the smallest objects in the image. 
-* Click OK to run the analysis. 
-** You will be asked if you want to save the results as a PDF file (if the Show "save PDF" dialog button was checked. So tell it where to save the PDF. This is standard output format, so you can compare with your friend,  same vs. same (neat eh!?)
-*** Feel free to tell us what things you think should be included in this standardised PDF output file.
-
-== Colocalization Analysis - What is Colocalization anyway? ==
-
+= What is colocalization? =
 
 Suppose you are given some images by a colleague, or have some images of your own, and you want to measure the amount of colocalisation between two of the dyes or stains in the images. First you have to define what you mean by colocalisation, and that is not trivial. For one place to start reading about colocalisation and and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalisation analysis, look here: [https://ifn.mpi-cbg.de/wiki/ifn/index.php/Teaching_Material#IPF_Image_Processing_Courses Image Processing Courses at IFN Dresden]
 
-===There are two basic methods for colocalization analysis:===
- <ol>
-<li> '''Pixel intensity Spatial Correlation Analysis''' (which is covered in this tutorial)</li>
-<li> '''Object Based Overlap Analysis''' (not covered in this tutorial, since it requires segmenting the image into objects and background, and thats a whole branch of image processing in itself). See the [http://rsbweb.nih.gov/ij/plugins/track/jacop.html JACoP imageJ plugin] for object based methods. I hope we can add similar methods to Colo_2 soon. Let us know if you want to do it.</li>
-</ol>
+== Methods of colocalization analysis ==
 
-At some point (preferably before you start), you should read these 2 papers very carefully: [[Media:Manders.pdf|Manders et al.]] and [[Media:Costes etalColoc.pdf|Costes et al.]], since we are going to use these methods for the analysis in this tutorial. Don't be scared by the maths, its actually very simple :-)
+=== Pixel intensity spatial correlation analysis ===
 
-===Open the sample data===
-First, lets open a sample data set that we know should have very good colocalisation because the 2 subunits of a dimeric protein are stained with green and red dyes respectively. The methods of Pearson, Manders, Costes and Li should work very well for this sample, but maybe we can see some problems with the data? Maybe we can decide if the data is suitable for this analysis or not? 
+There are two colocalization coefficients to express the fraction of colocalizing objects in each component of a dual-color image:
+# '''Pearson's correlation coefficient.''' Not sensitive to differences in signal intensities between the two components, but it is not unambiguous because of the strong influence of the ratio of the number of objects in the two components.
+# '''Manders coefficients.''' Proportional to the amount of fluorescence of the colocalizing objects in each component, which is dependent on the intensities of the signals. You can get more details in [[Media:Manders.pdf|Manders et al.]]
+
+These coefficients measure the significance of true colocalization. The significance test is derived to evaluate the probability that the measured value of r from the two colors is significantly greater than values of r that would be calculated if there was only random overlap. This test is performed by randomly scrambling the blocks of pixels (instead of individual pixels, because each pixel's intensity is correlated with its neighboring pixels) in one image, and then measuring the correlation of this image with the other (unscrambled) image. You can get more details in [[Media:Costes etalColoc.pdf|Costes et al.]]
+
+=== Object-based overlap analysis ===
+
+This cookbook does not cover object-based overlap analysis, since it requires segmenting the image into objects and background, and that is a whole branch of image processing in itself. See the [http://rsbweb.nih.gov/ij/plugins/track/jacop.html JACoP imageJ plugin] for object based methods.
+
+The [https://en.wikipedia.org/wiki/Pauli_exclusion_principle Pauli exclusion principle] states that two particles can not have the same quantum numbers so they can not be in the same place. Actually, nothing is "really" colocalised. We must colocalise at some spatial scale. At the other extreme, a universe of one voxel (not cubic of course) is completely colocalised. So we are, in fact, between the two extremes. You can find more details about this issue in the following sections.
+
+= Why scatter plots instead of colour merge images? =
+
+Far too often, composite/merge images of red and green channels are considered sufficient to demonstrate colocalisation. This is plain wrong. The problems with red/green merge images for colour-blind people aside, there is another very good reason to require scatter plots: the perception of human eyes and brain can be fooled very easily.  Just have a look at this image:
+
+[[Image:Spirals.png|300px|center]]
+
+Most people might think that the prominent spirals are in shades of green and blue, but they actually have <b>exactly the same color!</b> You can verify this yourself by calling File>Open Samples>[[Spirals (Macro)]] in Fiji.
+
+So... now, how do you feel about determining colocalization by looking for yellow blobs? Doesn't make much sense does it? You need to measure something, not simply subjectively "look at" a red/green colour merge image. 
+
+An even beter reason to always look at scatterplots / 2D histograms / cytofluorograms is that they actually show the thing you are looking for and talking about - the correlation (or not) between the intensities of the 2 colour channels of the pixels over space.
+
+= A sample dataset =
+
+Let's open a sample data set that we know should have very good colocalization because the 2 subunits of a dimeric protein are stained with green and red dyes respectively. The methods of Pearson, Manders, Costes and Li should work very well for this sample, but maybe we can see some problems with the data? Maybe we can decide if the data is suitable for this analysis or not? 
 
 '''Open this sample data file [http://fiji.sc/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif].''' Then use the "Image-Color-Split Channels" menu command to get a separate z stack for the 2 dyes (you can throw the blue one away!).
 
-If you like, you can change the look up tables of the images (LUTs) so one is "green" and one is "magenta". Of course the colours here are always false. These false colours are only useful (to us as apes with trichromatic vision) to tell which channel is which: We are evolved to find red fruit in green trees. The optoelectronic detectors we use only see photons, and don't know what colour they are... that is determined by the fluorescence emission filters we use. There is no such thing as a green dye or a red dye, since they have broad emission spectra not a single wavelength corresponding to a certain "colour".
+If you like, you can change the look up tables of the images (LUTs) so one is "green" and one is "magenta". Of course the colors here are always false. These false colors are only useful to tell which channel is which. The optoelectronic detectors we use only see photons, and don't know what color they are; that is determined by the fluorescence emission filters we use. There is no such thing as a green dye or a red dye, since they have broad emission spectra not a single wavelength corresponding to a certain "color".
 If I want to show DAPI in green and EGFP as magenta, there is nothing "wrong" about that.  
 
 [[Image:SplitChannels.png|300px]]
 
-----
+= Colocalization analysis using Coloc 2 =
 
-===Questions you should ask before attempting colocalisation analysis from 2 colour channel images, using the pixel intensity spatial correlation methods of Manders and Costes:===
+Coloc 2 implements and performs the pixel intensity correlation over space methods of [http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient Pearson], [[Media:Manders.pdf|Manders]], [[Media:Costes etalColoc.pdf|Costes]], [[Media:LietAlColoc.pdf|Li]] and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
 
-*Q1) Is the image data noisy?
-*Q2) Has there been lossy compression?
-*Q3) Is the intensity information saturated / clipped / overexposed?
-*Q4) Is there a problem with uniform background / detector offset?
-*Q5) What is the spatial resolution?
+None of this gives sensible results unless you have your imaging hardware set up appropriately and have acquired images properly, and have performed appropriate controls for bleed-through and chromatic shift etc. See [[Colocalization_-_hardware_setup_and_image_acquisition|here for hardware set up guidelines]].
 
-----
+This plugin supersedes the [[Colocalization Threshold]] and Colocalization Test plugins, which unfortunately were buggy and hard to maintain. So we started from scratch with a carefully planned and designed new plugin. While the old plugins are described below as well, we recommend that you use Coloc 2 instead.
 
-===Check image data for problems and suitability for analysis===
+== What is Coloc 2 ==
+
+Coloc 2 is a plugin that uses the new ImgLib image data container library for image processing, and implements the above methods in a pixel data type (8, 16, 32-bit) independent, modular and easily extensible way. The source code has unit tests to detect if changes to the source code break the maths. It should be easy to add new methods since the plugin is designed with that in mind. 
+
+One main feature of Coloc 2 is the standardised PDF output, which is intended to make the results of different colocalization experiments comparable.
+
+== How to use Coloc 2 ==
+
+Please see the [[Coloc2]] page for complete instructions on using the Coloc 2 plugin, including common pitfalls of the pixel intensity spatial correlation methods that it employs.
+
+= Precautions and notes =
+
+== Check image data for problems and suitability for analysis ==
+
+Questions you should ask before attempting colocalisation analysis from 2 colour channel images, using the pixel intensity spatial correlation methods of Manders and Costes: 
+
+# Is the image data noisy?
+# Has there been lossy compression?
+# Is the intensity information saturated / clipped / overexposed?
+# Is there a problem with uniform background / detector offset?
+# What is the spatial resolution?
+
 To begin with, we should check the images for problems that might make the colocalisation analysis methods fail or be unreliable.
-
-*1) Significant noise (uncertainty in the pixel values - usually from detection of too few photons) means the methods we will use will significantly underestimate the true colocalization, or even completely fail to give the "right" result.
-*2) Lossy compression messes up the intensity information of the pixels, causing the colocalization result to be more or less wrong. 
-*3) Intensity clipping/saturation is bad news. Pixel intensity correlation measurements rely on the pixel intensities being true and not clipped to 255 when they were really higher!. We did this in the [[DetectInformationLoss]] tutorial, so do that first if you didn't already!  
-*4) We should look for wrong offset / high background (since this confuses the auto threshold method, since zero signal is not zero pixel intensity but some larger number, see below), 
-*5) Spatial resolution)
+# Significant noise (uncertainty in the pixel values - usually from detection of too few photons) means the methods we will use will significantly underestimate the true colocalization, or even completely fail to give the "right" result.
+# Lossy compression messes up the intensity information of the pixels, causing the colocalization result to be more or less wrong. 
+# Intensity clipping/saturation is bad news. Pixel intensity correlation measurements rely on the pixel intensities being true and not clipped to 255 when they were really higher! See the [[Detect Information Loss]] tutorial for details on how to detect such problems.
+# We should look for wrong offset / high background (since this confuses the auto threshold method, since zero signal is not zero pixel intensity but some larger number)
+# Spatial resolution
 The spatial resolution of the images, by definition, determines the spatial resolution that you are measuring colocalization at. The results will be different at different levels of spatial resolution. If the image is one big pixel, everything will colocalize! 
 
-The spatial resolution of the light microscope is limited by the wavelength of the light (and the NA of the objective lens) according to Ernst Abbe's work. Molecules / proteins are an order of magnitude smaller than the wavelength of visible light, so they could be many nm apart, but still appear in the same image pixel. Is that true colocalization? Maybe.... it depends how you define it! 
+The spatial resolution of the light microscope is limited by the wavelength of the light (and the NA of the objective lens) according to Ernst Abbe's work. Molecules / proteins are an order of magnitude smaller than the wavelength of visible light, so they could be many nm apart, but still appear in the same image pixel. Is that true colocalization? Maybe, but it depends how you define it! 
 
 Are the images spatially calibrated? If not then we need to calibrate them so we know the spatial sampling rate (think pixel or voxel size) in x, y and z. See the [[SpatialCalibration]] tutorial for how to do that. We need the images to be spatially calibrated in order for the Costes statistical significance test (below) method to work properly.
 
 We need to think carefully about the correct or adequate spatial resolution in x, y and probably z. This depends on the [http://en.wikipedia.org/wiki/Numerical_aperture Numerical Aperture] of the objective lens. You can calculate the correct pixel or voxel sizes for the objective lens you are using, to get the maximum resolution that that objective lens can really see: [http://support.svi.nl/wiki/NyquistCalculator Nyquist Calculator]]. Essentially the pixels / voxels should be about 3 times smaller then the resolution of the lens. On the other hand, if you are only interested in larger objects, and not the smallest details the objective can see, it makes sense to have larger pixels or voxels. Again, these should be about 3 times smaller than the smallest feature you want to resolve.  
 
-[http://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem Nyqvist] tells us the spatial sampling should be about three times smaller then the smallest object we want to resolve. Remember, spatial intensity correlation analysis, as we will perform here, can not tell you that 2 proteins are bound together in some biophysical bonding interaction. However, it might suggest that the 2 molecules occur with the same relative amounts when they are present in the set of spatial samples (pixels or voxels) with intensities above the thresholds we will calculate below. In any case, it might be a hint that "maybe they are binding partners or in the same macromolecular complex". You SHOULD follow up by determining true binding using [http://en.wikipedia.org/wiki/FLIM FLIM], [http://en.wikipedia.org/wiki/Förster_resonance_energy_transfer FRET] and biochemical methods like Immuno co-Precipitation etc.
+[http://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem Nyqvist] tells us the spatial sampling should be about three times smaller then the smallest object we want to resolve. Remember, spatial intensity correlation analysis, as we will perform here, can not tell you that 2 proteins are bound together in some biophysical bonding interaction. However, it might suggest that the 2 molecules occur with the same relative amounts when they are present in the set of spatial samples (pixels or voxels) with intensities above the thresholds we will calculate below. In any case, it might be a hint that "maybe they are binding partners or in the same macromolecular complex". You should follow up by determining true binding using [http://en.wikipedia.org/wiki/FLIM FLIM], [http://en.wikipedia.org/wiki/Förster_resonance_energy_transfer FRET] and biochemical methods like Immuno co-Precipitation etc.
 
-There is another (badly behaved) sample data file here which we will use later: [http://fiji.sc/samples/150707_WTstack.lsm 150707_WTstack.lsm].
+= Older colocalization plugins =
 
-== Notes and details on performing colocalization analysis (including using the old plugins) ==
+== Colocalization Threshold ==
 
-
-
-<ol>
-<li>
-'''[[Colocalization Threshold]] plugin:''' Note: this plugin is no longer under active development and support. Use Coloc_2 instead.
+<span style="color: red">Note: this plugin is no longer under active development and support. Use [[Coloc 2]] instead.</span>
 
 <p>
-This plugin performs several functions for you in one go. With the "green" and "red" stacks of the [http://fiji.sc/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif] dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [[#Why_scatter_plots.3F|Why scatter plots?]]), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do. 
+The [[Colocalization Threshold]] plugin performs several functions for you in one go. With the "green" and "red" stacks of the [http://fiji.sc/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif] dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [[#Why_scatter_plots.3F|Why scatter plots?]]), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do. 
 </p>
 
 <p>
@@ -171,109 +146,34 @@ In images that have no empty regions, like tissue samples, it might then be a us
          
            </ol>
 
-   </li>
-
-  
-   </ol>
-
-----
-
-<li>
-''' Real problems and pitfalls using the Manders and Costes methods for colocalisation analysis. '''
-
-    <ol>
-
-        <li>
-      '''The auto threshold calculation method can fail''' if you feed it inappropriate information. That means it does not like images with high offset / high flat background, which adds a constant number to the "real proportional" intensity relationship to the "concentration" of the dye. If pixels that contain no real signal have large intensity values, the algorithm has no way of knowing that, and can reach a result for the thresholds where one or both of them is below the value of the lowest intensity value present in that channels of the image. This means that ALL of that channel's pixels are considered to be colocalised, then the Manders Coefficients that you get will reflect that aberrant situation. In these cases, the background / offset should be carefully removed/subtracted before running the [[Colocalization Threshold]] plugin. The images below are an example of this situation, using the badly behaved data set:[http://fiji.sc/samples/150707_WTstack.lsm 150707_WTstack.lsm]. Note that the vaules for M1 and tM1 are the same! This should not be the case. You can see the green channel threshold is wrongly set below the intensity where the image data actually starts :-O
-
-[[Image:BadOffsetConfusesCostesAutoThreshold.png|300px]]
-     </li>      
-
-    <li>
-'''Effect of noise on Manders Coefficients'''.
-In the case of perfect colocalisation, where the intensities of the 2 channels are always the same: Low red with low green, and high green with high red, the scatterplot would have all the data point falling on a straight diagonal line, since the green intensity would always bee the same as that of the red! however, that is the ideal case and real biological data is noisy! Noise (be it from the dyes not staining every single molecule, or from statistical photon shot noise from recording the signal from too few photons, or from other noise sources) will cause the pixel intensities to deviate from the perfect case, to be lower or higher than they really are on average. This causes scatter in the distribution of the data point in the scatterplot perpendicular to the line of regression fit. So you can see the noise by looking at how spread or tight the scatterplot points are. Also, since Manders coefficients are measuring correlation, and noise lowers the similarity of two identical signals, noise lowers the Manders coefficients to less than they should be for an image with very low noise. So for the same object under the microscope, a nosier images will appear to give less colocalisation than a clean low noise image. That means you cant compare different images with different signal:noise levels, unless you have some way of estimating the noise and correcting for it. 
-   </li>
-
-   <li>
-''' Fluorescence Emission Bleed Through Looks Like Perfect Colocalisation!!!'''
-As is often true for DAPI nuclear stain and GFP dye pairs, when images are captured at the same time, with both dyes being excited and detected simultaneously, fluorescence emission bleed through gives misleading results, as the signal from the DAPI also appears also in the GFP detection channel! Where there is more DAPI, there is also more signal in the GFP channel. This looks like really good colocalisation, but of course it is totally false! It is a problem with the imaging systems not being set up correctly or not used correctly. This can also happen with many other dye combinations, if they have overlapping emission spectra. Always check your spectra. You can do that here: [http://probes.invitrogen.com/servlets/spectraviewer Invitrogen Fluorescent Dye Spectra Viewer]]. To be safe, check your emission filter sets don't allow in the wrong signal, and do '''"sequential imaging"''', so you only excite and image one dye at a time. 
-
-[[Image:ColocBleedThru.png|300px]]
-
-   </li>
-
-   
-     <li>
-Next is the topic: '''Regions of Interest (ROIs)''', and whether or not to consider zero - zero pixels as part of the interesting data for the algorithms to deal with. If you think about it, in a fluorescence image there is typically quite a large area which is black in both channels... for instance where there is space between cells, or just no signal in either channel since that area is not part of an interesting area of the sample. A philosophical point... but a significant one: Why bother taking images of black areas? Why bother analyzing black areas for colocalisation?  Surely you are not interested in those regions, as they contain no information of use to you? If you perform these pixel intensity correlation methods and include zero zero pixels, then of course these pixels have a very high correlation! They have the same value. But they are totally uninteresting! Sure, the auto threshold method excludes them from the tM1 and tM2 figures, but why include them in the first place? Probably better not to include them unless there is a good reason to do that. Why not just image the area, or just analyze the area where your biology is happening? If you analyse an image with large areas of close to zero and zero intensities, then the autothreshold method will tend to lower the thresholds to include more of that non interesting background. If you image the same sample, but only image a patch of the interesting part, say cytoplasm, then the autothreshold will probably give higher thresholds, and exclude more non interesting background, so the thresholded Manders coefficients will better reflect the biologically interesting parts of the image data - right? You can analyze only a region of interest by making an ROI then selecting the use ROI option in the plugin. You can use a regular shape (rectangle or ellipse) or even a freehand ROI to manually select the interesting part of the image and ignore the part you know is background. Yes, this is a subjective decision, so be careful! You can see in the following example screenshot that for the same misbehaving data set, using an ROI which roughly gets just the cell, the thresholds were calculated properly and the tM1 and tM2 are sensible and lower then 1.00:  
-
-[[Image:ColocWithROI.png|300px]]
-     </li>
+=== Colocalization Test ===
 
 
-     
-      </ol>
+<span style="color: red">Note: This plugin is no longer actively developed or supported. Use [[Coloc 2]] instead.</span>
+
+The [[Colocalization Test]] plugin performs the Costes test for statistical significance (which you should ALWAYS do after calculating the thresholded Manders coefficients and the scatterplot). It is in the menus at "Analyse-Colocalization-Colocalization Test"
 
 
-
-----
-
-<li>'''[[Colocalization Test]] plugin:''' Note: This plugin is no longer actively developed or supported. Use Coloc_2 instead.
-</p>
-    
-
-   <p>
-To perform the Costes test for statistical significance (which you should ALWAYS do after calculating the thresholded Manders coefficients and the scatterplot), choose menu item: "Analyse-Colocalization-Colocalization Test"
-   </p>
-
-   <p>
 [[Image:ColocTestGUI1.png|400px]]
-   </p>
 
-   <p>
 Choose the correct Channel 1 and Channel 2 images stacks from the drop down lists. Make sure "Current Slice Only" is off, and "Keep Example Randomized Image" and Show All R values" are on. Then click "OK"
-</p>
 
 [[Image:ColocTestGUI2.png|200px]]
 
-<p>
 The results window will then display the calculated P-value, and some other details of the test calculation. 
-</p>
+
 
 [[Image:ColocTestResult.png|400px]]
 
-   <p> The Costes method for [[http://en.wikipedia.org/wiki/Statistical_significance Statistical Significance]] relies on the spatial calibration of the image, knowledge of the [[http://en.wikipedia.org/wiki/Numerical_aperture  Numerical Aperture (N.A.)]] of the objective lens, and the fluorescence emission wavelength to calculate how many pixels the [http://en.wikipedia.org/wiki/Point_spread_function point spread function] covers in the image. Then it takes the image in one of the channels, and randomizes it by moving PSF sized chunks of the image to random locations in a new random test image. Then it calculates the [[http://en.wikipedia.org/wiki/Correlation Pearson's correlation coefficient (r)]] between the randomized image and the original image of the other channel. If the correlation of the randomized image with the real image of the other channel is as good as or better then the correlation between the two real images, then any correlation that you measure is no better then what you would have got by chance for this image.  This test is performed many (100) times, and the P-value is output, which is the proportion of random images that had better correlation than the real image. A P-value of 1.00 means that none of the randomised images had better correlation. 0.95 is the normal statistical confidence limit of 95%. Anything lower than that, and the correlation / colocalisation that you measure in the real images is not likely to be better than random chance, and thus is probably not interesting. 
-    </p>
+The Costes method for [[http://en.wikipedia.org/wiki/Statistical_significance Statistical Significance]] relies on the spatial calibration of the image, knowledge of the [[http://en.wikipedia.org/wiki/Numerical_aperture  Numerical Aperture (N.A.)]] of the objective lens, and the fluorescence emission wavelength to calculate how many pixels the [http://en.wikipedia.org/wiki/Point_spread_function point spread function] covers in the image. Then it takes the image in one of the channels, and randomizes it by moving PSF sized chunks of the image to random locations in a new random test image. Then it calculates the [[http://en.wikipedia.org/wiki/Correlation Pearson's correlation coefficient (r)]] between the randomized image and the original image of the other channel. If the correlation of the randomized image with the real image of the other channel is as good as or better then the correlation between the two real images, then any correlation that you measure is no better then what you would have got by chance for this image.  This test is performed many (100) times, and the P-value is output, which is the proportion of random images that had better correlation than the real image. A P-value of 1.00 means that none of the randomised images had better correlation. 0.95 is the normal statistical confidence limit of 95%. Anything lower than that, and the correlation / colocalisation that you measure in the real images is not likely to be better than random chance, and thus is probably not interesting. 
 
-   <p>
 In this case the P-value should be 1.00. Since you told it to display the Pearson's correlation (r) values (R values here), they are in another window. You can see they are all close to zero, and in the results you can see that on average the randomized R value is about zero, meaning that the randomized images all had no correlation with the real image. Which is a good thing! 
-   </p>
 
-   <p>
 Other available methods, such as Fay and Van Steensel, do the same thing but randomize the image in less rigorous but very simple ways, which may lead to errors such as over or under estimation of the P-value. However, they are faster than the Costes method. 
 
-   </p>
-
-   <p>
 Again, as for the [[Colocalization Threshold]] plugin, using an ROI here may well make very good sense, as you are only interested in the correlation between the 2 colour channels in parts of the image where the biology you are interested in is located. Background its typically uninteresting, and you can exclude it from the analysis. Its probably sensible to to use the same ROI as you used in the [[Colocalization Threshold]] plugin!
-
-   </p>
-
-</li>
-
-</ol>
-
-== Why scatter plots instead of colour merge images? ==
-
-Far too often, composite/merge images of red and green channels are considered sufficient to demonstrate colocalisation. This is plain wrong. The problems with red/green merge images for colour-blind people aside, there is another very good reason to require scatter plots: the perception of human eyes and brain can be fooled very easily.  Just have a look at this image:
-
-[[Image:Spirals.png|300px|center]]
-
-Most people might think that the prominent spirals are in shades of green and blue, but they actually have <b>exactly the same color!</b> You can verify this yourself by calling File>Open Samples>[[Spirals (Macro)]] in Fiji.
-
-So... now, how do you feel about determining colocalization by looking for yellow blobs? Doesn't make much sense does it? You need to measure something, not simply subjectively "look at" a red/green colour merge image. 
-
-An even beter reason to always look at scatterplots / 2D histograms / cytofluorograms is that they actually show the thing you are looking for and talking about - the correlation (or not) between the intensities of the 2 colour channels of the pixels over space. 
 
 [[Category:Tutorials]]
 [[Category:Colocalization]]
 [[Category:Color processing]]
+[[Category:Cookbook]]
