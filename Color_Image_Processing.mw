@@ -1,34 +1,34 @@
 __FORCETOC__ {{Cookbook}}
 
+== Types of color images ==
+
 Images with color come in three different forms: pseudo-color, 24-bit RGB image, or color composite image.
 
-== Pseudo-color ==
+=== Pseudo-color ===
 
 A pseudo-colored image has a single channel, (i.e. grey) image that has color ascribed to it via a “Look Up Table” or LUT (a.k.a. palette, color table). This is a table of grey values (zero to 256 or 4095 whether 8-bit or 12-bit grey) with accompanying red, green and blue values. Instead of displaying grey, the image displays a pixel with a defined amount of each color. Differences in color in the pseudo-colored image reflect differences in intensity of the object rather than differences in color of the specimen that has been imaged. For pseudo-color functions see later.
 
-== 24-bit RGB images ==
+=== 24-bit RGB images ===
 
 The colors in RGB images (24-bit with 8-bits for each of the red, green and blue channels) are used to show multi-channel images. The colors are designed to reflect genuine colors (i.e. the green in an RGB image reflects green color in the specimen). There are several RGB functions in Fiji. Native functions can be found in “Image/Color”. 
 
 [[File:24bit_rgb_images.jpg]]
 
-== Color Composite Images ==
+=== Color Composite Images ===
 
 A color composite image is similar to the color images one would find in the image processing software Photoshop. In Photoshop these images are made of "layers", and in Fiji they are made of "channels". Both "layers" and "channels" are the same idea. The advantages of using this type of image instead of RGB images include:
 
-1. Each channel is kept separate from the others and can be turned on or off using the 'Channels Tool' ("Image/Color/Channels Tool"). You have the option of viewing the image as a composite of all or some of the different channels, as individual channels, or as individual greyscale channels. There is a button labeled 'More' at the bottom of the window that allows you to make a composite, convert the image to RGB, merge or split channels, edit the image's LUT, or choose new channel colors from a list.
-
-2. Each original channel can be kept as 16-bit.
-
-3. More than 3 channels can be merged and kept separate. Each channel can be selected via the scroll bar at the bottom of the window.
-
-4. The contrast and brightness of individual channels can be adjusted after merging.
+# Each channel is kept separate from the others and can be turned on or off using the 'Channels Tool' ("Image/Color/Channels Tool"). You have the option of viewing the image as a composite of all or some of the different channels, as individual channels, or as individual greyscale channels. There is a button labeled 'More' at the bottom of the window that allows you to make a composite, convert the image to RGB, merge or split channels, edit the image's LUT, or choose new channel colors from a list.
+# Each original channel can be kept as 16-bit.
+# More than 3 channels can be merged and kept separate. Each channel can be selected via the scroll bar at the bottom of the window.
+# The contrast and brightness of individual channels can be adjusted after merging.
 
 Color composite images can be converted to 24-bit RGB via the 'Channels Tool' dialog box.
 
 The disadvantage of the Composite image type is that this relatively recent Fiji development is not supported by all existing plugins. Sometime the composite can revert to a multi-slice stack. To convert it back to a composite you can use the menu command "Image/Color/Make Composite".
 
 == Merging multi-channel images ==
+
 === Interleaved multi-channel experiments ===
 
 Multi-channel experiments acquired on some systems are imported with the different channels interleaved, i.e. Slice 1 is Timepoint1-channel1 and Slice 2 is Timepoint1-channel2. The stack needs to be “De-interleaved” before it can be RGB-merged. This can be done with “''Image/Stacks/Tools/Deinterleave''” and entering the number of channels in the dialog (typically “2”). You can also choose to check a box for whether or not the source stacks should be kept. The two stacks can then be merged via: “''Image/Color/RGB merge''”.
