@@ -1,8 +1,7 @@
-{{Cookbook}}
-
-= Stack-slice Manipulations =
+__FORCETOC__ {{Cookbook}}
 
 == Slice shuffling/removing/Adding ==
+
 The slices in a stack can be manipulated in many ways. Some of these functions are described below.
 
 Deleting a single slice: “''Image/Stacks/Delete Slice''"
@@ -50,6 +49,7 @@ Stack Sorter: “''Image/Stacks/Tools/Stack Sorter''”.
 [[File:stack_slice_manipulations1.png]]
 
 ==  Stack dimension manipulations ==
+
 Images and stacks can be resized and rotated with native functions or with the more sophisticated TransformJ set of plugins from Erik Meijering. More details about each TransformJ plugin can be found on [http://www.imagescience.org/meijering/software/transformj/ this website.]
 
 E. H. W. Meijering, W. J. Niessen, M. A. Viergever, [http://www.ncbi.nlm.nih.gov/pubmed/11516706 Quantitative Evaluation of Convolution-Based Methods for Medical Image Interpolation], ''Medical Image Analysis'', vol. 5, no. 2, June 2001, pp. 111-126.
@@ -75,7 +75,7 @@ Series generated with zoomify
 
 [[File:zoomify_montage.png|533x111px]]
 
-==Align slices in stack==
+== Align slices in stack ==
 
 The plugins StackReg (to align a stack) and TurboReg (to align more than one image or stack) can be used for alignment and are found at "''Plugins/Registration/StackReg or TurboReg''". StackReg takes a stack with misaligned slices and aligns the slices with respect to the current slice. Open the stack, scroll to the most centered slice and run the plugin. The "Rigid body" method typically produces the best results for microscopy images. The TurboReg plugin must be installed before using StackReg.
 
