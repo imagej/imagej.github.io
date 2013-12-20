@@ -1,3 +1,5 @@
+{{Cookbook}}
+
 = Color Image processing =
 
 Images with color come in three different forms: pseudo-color, 24-bit RGB image, or color composite image.
@@ -102,3 +104,4 @@ When using a non-standard LUT it may be useful to add a greyscale ramp so the us
 Analyze/Tools/Calibration Bar...
 
 [[Category: Cookbook]]
+[[Category:Tutorials]]
