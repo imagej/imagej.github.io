@@ -1,3 +1,5 @@
+{{Cookbook}}
+
 = What is colocalization? =
 
 Suppose you are given some images by a colleague, or have some images of your own, and you want to measure the amount of colocalisation between two of the dyes or stains in the images. First you have to define what you mean by colocalisation, and that is not trivial. For one place to start reading about colocalisation and and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalisation analysis, look here: [https://ifn.mpi-cbg.de/wiki/ifn/index.php/Teaching_Material#IPF_Image_Processing_Courses Image Processing Courses at IFN Dresden]
@@ -173,7 +175,7 @@ Other available methods, such as Fay and Van Steensel, do the same thing but ran
 
 Again, as for the [[Colocalization Threshold]] plugin, using an ROI here may well make very good sense, as you are only interested in the correlation between the 2 colour channels in parts of the image where the biology you are interested in is located. Background its typically uninteresting, and you can exclude it from the analysis. Its probably sensible to to use the same ROI as you used in the [[Colocalization Threshold]] plugin!
 
+[[Category:Cookbook]]
 [[Category:Tutorials]]
 [[Category:Colocalization]]
 [[Category:Color processing]]
-[[Category:Cookbook]]
