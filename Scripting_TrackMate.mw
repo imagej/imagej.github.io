@@ -560,11 +560,14 @@ The reason for this is that TrackMate caches each modification made to its model
 * And what happens to the track name? What track, amongst the 3 new ones, will receive the old name?
 Well, TrackMate does that for you automatically, but for the chain of events to happen timely, you must make your edits within this <code>model.beginUpdate() / model.endUpdate()</code> code block. 
 
-The script below just show you how to use this construct to build and populate a model from scratch. Appending content to a model is done by, sequentially:
+This script just shows you how to use this construct to build and populate a model from scratch. Appending content to a model is done by, sequentially:
 * Creating spot objects. You have to provide their x, y, z location, as well as a radius and a quality value for each. At this stage, you don't provide at what frame (or time) they belong. 
 * This is done by adding the spot to the model, using <code>model.addSpotTo(Spot, frame)</code>, frame being a positive integer number.
 * Then you create a link, or an edge as it is called in TrackMate, between two spots. You have to provide the link cost: <code>model.addEdge(Spot1, Spot2, cost)</code>.
 Spot quality and link cost are typically useful to quantify automatic spot detection and linking. We typically use negative values for these two numbers when doing manual edits. 
+
+The script below does this:
+[[File:TrackMate_AnimatedName.gif]]
 
 <source lang="python">
 import ij.gui.NewImage as NewImage
