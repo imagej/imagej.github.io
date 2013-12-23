@@ -544,6 +544,28 @@ for id in model.getTrackModel().trackIDs(True):
 
 == Manually creating a model ==
 
+TrackMate aims at combining automatic and manual tracking facilities. This is also the case when scripting: a part of the API offers to a edit a model extensively. A few code patterns must be followed.
+
+First, every edit must happen between a call to <code>model.beginUpdate()</code> and <code>model.endUpdate()</code>:
+<source lang="python">
+model.beginUpdate()
+# ... do whatever you want to the model here.
+model.endUpdate()
+</source>
+The reason for this is that TrackMate caches each modification made to its model. This is required because we can deal with a rather complex content. For instance: imagine you have a single track that splits in two branches at some point. If you decide to remove the spot at the fork, a complex series of events will happen:
+* First, three edges will be removed: the ones that were connected to the spot you just removed.
+* Then the spot will actually be removed from the model.
+* But then you need to recompute the tracks, because now, you have 3 tracks instead of 1.
+* But also: all the numerical features of the tracks are now invalid, and you need to recompute them. 
+* And what happens to the track name? What track, amongst the 3 new ones, will receive the old name?
+Well, TrackMate does that for you automatically, but for the chain of events to happen timely, you must make your edits within this <code>model.beginUpdate() / model.endUpdate()</code> code block. 
+
+The script below just show you how to use this construct to build and populate a model from scratch. Appending content to a model is done by, sequentially:
+* Creating spot objects. You have to provide their x, y, z location, as well as a radius and a quality value for each. At this stage, you don't provide at what frame (or time) they belong. 
+* This is done by adding the spot to the model, using <code>model.addSpotTo(Spot, frame)</code>, frame being a positive integer number.
+* Then you create a link, or an edge as it is called in TrackMate, between two spots. You have to provide the link cost: <code>model.addEdge(Spot1, Spot2, cost)</code>.
+Spot quality and link cost are typically useful to quantify automatic spot detection and linking. We typically use negative values for these two numbers when doing manual edits. 
+
 <source lang="python">
 import ij.gui.NewImage as NewImage
 import fiji.plugin.trackmate.Settings as Settings
