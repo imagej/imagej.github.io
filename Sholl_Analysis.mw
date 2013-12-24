@@ -125,8 +125,11 @@ The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile wit
 |style="white-space:nowrap"| Log-log
 |style="white-space:nowrap"|&nbsp;&nbsp;  log(''N/S'') = -k × log(r) + m
 |&nbsp;<br>Outputs a <i>log(N/S) vs log(Distance)</i> profile. Data is also fitted to a straight line. This is an alternative approach<ref name="Ristanovic"></ref> of obtaining a relevant [[#ShollDecay|regression coefficient]], when the Semi-log method returns a poor fit<br>&nbsp;
+|-
+| 
 |}
 </center>
+
 
 <span style="display: inline-block; width: 25px">'''''N'''''</span> For 2D images, the <u>N</u>umber of clusters of pixels (8–connected) intersecting the circumference of radius ''r''<br>
 <span style="display: inline-block; width: 25px">&nbsp;</span> For 3D images, the <u>N</u>umber of clusters of voxels (26-connected) intersecting the surface of the sphere of radius ''r''
