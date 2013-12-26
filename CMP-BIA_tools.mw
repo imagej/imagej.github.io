@@ -11,15 +11,9 @@
 | license                = GPLv2
 | category               = [[:Category:Segmentation|Segmentation]]
 }} 
-The CMP-BIA tools is a package for ImageJ/Fiji which will perform image segmentation and registration. The package will contain mainly user-friendly plugins fully compatible with ImageJ 1.x (and later also ImageJ 2.x). All source codes are publicly available as Maven project (see the [http://github.com/Borda/ij-CMP-BIA GitHub] repository). The API in this package can be also used for further development of other Java/ImageJ features related to Image Processing.
+The CMP-BIA tools is a package for ImageJ/Fiji which will perform image segmentation and registration. All source codes are publicly available as Maven project (see the [http://github.com/Borda/ij-CMP-BIA GitHub] repository). The API in this package can be also used for further development of other Java/ImageJ features related to Image Processing.
 
 Note, all included methods are mainly related to medical imaging but it can be also used in the fields.
-
-== About us ==
-
-'''Center for Machine Perception''' ([http://cmp.felk.cvut.cz/ CMP]) is a university research center performing fundamental and applied research in computer vision, robotics, machine learning, pattern recognition, and mathematics. 
-
-'''Biomedical Imaging Algorithms''' group ([http://www.fel.cvut.cz/vv/tymy/mip.html BIA]) headed by ''[http://cmp.felk.cvut.cz/~kybic/ doc. Jan Kybic]'' develops new algorithms for biomedical image processing. We process images from different modalities, such as magnetic resonance, ultrasound, computed tomography, or microscopy. We work in 2D, 3D and 4D. We know how to preprocess the data, how to register, segment, model, reconstruct and classify them. We use techniques from image processing, numerical mathematics, as well as machine learning.
 
 == Features ==
 * '''''[http://imagejdocu.tudor.lu/doku.php?id=plugin:segmentation:jslic:start jSLIC superpixels]''''' - is segmentation method for clustering similar regions - superpixels - in given image which are usually used for other segmentation techniques. The only two parameters are average (initial) size of each superpixel and rigidity parameter in range ''<0,1>''.
@@ -30,13 +24,9 @@ Note, all included methods are mainly related to medical imaging but it can be a
 * ''Simultaneous segmentation and registration''
 
 
-
 == jSLIC - superpixel segmentation ==
 
-The amount of data in medical imaging to be processed is increasing - images in histology can easily have 50.000x50.000 pixels or even more. The segmentation or registration of these large images is very demanding. The complexity of segmentation and registration can be reduced by using superpixels.
-
-Recently, SLIC (Simple Linear Iterative Clustering) was introduced for general images and presented as a powerful intermediate phase for further image segmentation, classification and registration. SLIC is an adaptation of the k-means
-algorithm for superpixel generation with two important distinctions: (a) the weighted distance measure combines colour (using the CIELAB colour space, which is widely considered as perceptually uniform for small colour distances) and spatial proximity and (b) the search space is reduced by limiting to a region 2Sx2S, proportional to the superpixel size S. The search space reduction has a great impact on the speed of whole algorithm.
+Recently, SLIC (Simple Linear Iterative Clustering) was introduced for general images and presented as a powerful intermediate phase for further image segmentation, classification and registration. SLIC is an adaptation of the k-means algorithm for superpixel generation with two important distinctions: (a) the weighted distance measure combines colour (using the CIELAB colour space, which is widely considered as perceptually uniform for small colour distances) and spatial proximity and (b) the search space is reduced by limiting to a region 2Sx2S, proportional to the superpixel size S. The search space reduction has a great impact on the speed of whole algorithm.
 
 We made a Java-based open source implementation  jSLIC - the superpixel clustering with better performance than the original SLIC. Moreover, we proposed a different regularisation parameter, which influences the compactness of resulting superpixels and propose a default value r=0.2. The new post-processing step gives more reliable superpixels shapes, with no need of decreasing superpixel size. 
 
@@ -45,7 +35,7 @@ We made a Java-based open source implementation  jSLIC - the superpixel clusteri
 [[Image:Fiji_jSLIC_gui.jpg|right|250px|jSLIC interface]]
 As you can see the Interface to the plugin contains a parameters for superpixel configuration and also its final visualisation.
 
-==== Configuration ====
+==== Parameters ====
 
 For the configuration there are only two parameters to be set:
 * '''Image segmentation''' - in general it can be seen as an average superpixels size.
@@ -56,7 +46,7 @@ For the configuration there are only two parameters to be set:
 To show of handle segmentation results we presented a few approaches:
 * ''Overlap contours'' - simply draw the contours on resulting superpixels into the image by chosen colour.
 * ''Export segments as ROIs'' - all superpixels are exported as polygons into the [http://rsb.info.nih.gov/ij/plugins/roi-manager-tools/index.html ROI Manager].
-* ''Show final segmentation'' - add one more stack and fill each superpixel by a random colour. 
+* ''Show final segmentation'' - add one more layer and fill each superpixel by a random colour. 
 * ''Save segmentation into file'' - export the superpixel segmentation into a text file as segmentation matrix with labels.
 
 [[Image:Human Breast Cytokeratin jSLIC.jpg|300px|Sample of jSLIC segmented histological tissue]]
