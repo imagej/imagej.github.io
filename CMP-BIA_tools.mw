@@ -18,8 +18,7 @@ All source codes are publicly available as Maven project (see the [http://github
 
 Note, all included methods are mainly related to medical imaging but it can be also used in the fields.
 
-Please note that these plugins available through Fiji, is based on publications. If you use it successfully for your research please be so kind to cite our related work in [[References]]
-
+Please note that these plugins available through Fiji, is based on publications. If you use it successfully for your research please be so kind to cite our related work in [[#References|References]].
 
 = Plugins =
 
