@@ -20,6 +20,8 @@ Note, all included methods are mainly related to medical imaging but it can be a
 
 Please note that these plugins available through Fiji, is based on publications. If you use it successfully for your research please be so kind to cite our related work in [[#References|References]].
 
+'''Center for Machine Perception''' ([http://cmp.felk.cvut.cz CMP]) is a university research center performing fundamental and applied research in computer vision, robotics, machine learning, pattern recognition, and mathematics. '''Biomedical Imaging Algorithms''' group ([http://www.fel.cvut.cz/vv/tymy/mip.html BIA]) headed by ''[http://cmp.felk.cvut.cz/~kybic/ Jan Kybic]'' develops new algorithms for biomedical image processing.
+
 = Plugins =
 
 The package currently contains a few plugins:
@@ -40,7 +42,7 @@ As you can see the Interface to the plugin contains a parameters for superpixel 
 ==== Parameters ====
 
 For the configuration there are only two parameters to be set:
-* '''Image segmentation''' - in general it can be seen as an average superpixels size.
+* '''Init. grid size''' - in general it can be seen as an average superpixels size.
 * '''Regularisation''' - influence the compactness of estimated superpixels. The range is from 0 (very elastic superpixels) to 1 (superpixels are nearly squares). Experimentally, we set as optimal value 0.2 for most cases.
 
 ==== Visualisation ====
