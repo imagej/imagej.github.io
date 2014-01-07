@@ -113,7 +113,7 @@ If the update site has not been initialized yet (i.e. if nobody else has initial
 
 Just click ''OK'' and let the updater upload an empty file index (it is stored in the file ''db.xml.gz'' which is also called the ''database'' in the documentation of the updater).
 
-It is also possible to create an [[Group_Update_Sites|update site for a group]] that multiple users can upload to.
+It is also possible to create an [[Group_Update_Sites|update site for a group]] to which multiple users can upload.
 
 = Uploading files to your update site =
 
