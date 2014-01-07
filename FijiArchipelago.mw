@@ -138,7 +138,7 @@ Click the Start Cluster button. When the cluster is running, this button will ch
 
 ==== Start the Server ====
 
-To allow "volunteer nodes" to attach, click the Start Insecure Server button. This starts a server on the default port of 4012. Because the socket is insecure and unencrypted, this exposes you to a security risk.
+To allow "volunteer nodes" to attach, click the Start Insecure Server button. This starts a server on the default port of 4012. The socket is insecure and unencrypted, and therefore may pose a security risk.
 
 ==== Show Node Statistics ====
 
