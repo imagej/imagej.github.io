@@ -108,7 +108,7 @@ This will open a dialog for adding a new cluster node, with the following fields
 
 ===== Via Keyboard =====
 
-Client nodes may also be started locally, ie, by walking over to them and using a keyboard an mouse (or script). This requires the use of an insecure server, and is not recommended on untrusted networks.
+Client nodes may also be started locally, ie, by walking over to them and using a keyboard and mouse (or script). This requires insecure socket connections, and is not recommended on untrusted networks.
 
 On the root node, once the cluster is started, click the Start Insecure Server button.
 
@@ -122,7 +122,7 @@ or
 
 * Run ./fiji --full-classpath --main-class edu.utexas.clm.archipelago.Fiji_Archipelago root.node.hostname port
 
-The default port is 4012. The server is started automatically when a client node is started with the insecure socket shell option.
+The default port is 4012.
 
 ==== Saving  ====
 
