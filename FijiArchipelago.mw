@@ -158,11 +158,6 @@ Clicking the Show Node Statistics button will open a dialog that displays usage 
 
 Select this checkbox if you would like to display debug output on your command line. This is potentially verbose, but should include useful information if your cluster behaves erroneously.
 
-==== SIFT Extraction Example ====
-
-Use File->Import->Image Sequence... to import a virtual stack of many images.
-Click Plugins->Cluster->Benchmark... to run a SIFT benchmark of your cluster against your local machine. This will start a cluster if there isn't one already. SIFT features will be extracted from all images in the stack using default parameters over the cluster, then using all available cores on your local machine (including virtual, or hyper-threaded cores), for benchmarking and comparison purposes.
-
 == Programmers ==
 The Cluster class provides 
 [http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ExecutorService.html ExecutorServices] through Cluster.getService(n). The argument n may be either an int or a float. If an int, any processes submitted to the ExecutorService are assumed to require n number of cores. If a float, processes are assumed to require a fraction n of the available resources of any given computer. For most usage cases, Cluster.getCluster().getService(1) will return the desired service.
