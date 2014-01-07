@@ -152,7 +152,7 @@ Clicking the Show Node Statistics button will open a dialog that displays usage 
 * Beat: Client nodes send a heartbeat message to the root node approximately once per second. This indicates the length of time since the last heartbeat was received.
 * MB Used: The number of megabytes of RAM used by Fiji's JVM on the client node.
 * MB Total: The number of megabytes of RAM that are available to the remote JVM.
-* Stop: Click this button to shut the client node down. Any running processes will be rescheduled on other nodes, if available.
+* Stop: Click this button to shut the client node down. Any running processes will be rescheduled on other nodes, once they become available.
 
 ==== Debug Output ====
 
