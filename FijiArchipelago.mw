@@ -48,7 +48,7 @@ This plugin accelerates image classification with the [[Trainable_Weka_Segmentat
 
 Run the batch segmentation plugin by selecting Plugins -> Batch -> Weka Segmentation 2D
 
-This plugin is designed for serial, two-dimensional sections.
+This plugin is designed for two-dimensional serial sections.
 
 === Starting a Cluster ===
 
