@@ -32,11 +32,21 @@ So far, this has been extensively tested only on Linux machines, but it should b
 * Security - root/client communication is done over ssh standard IO by default.
 * Easy API - submit Callables to an ExecutorService.
 
-=== Planned ===
-* Explicit support for qsub-enabled HPC clusters.
-** Archipelago should already be usable on qsub clusters in which the compute nodes can access sockets on the login node (and it doesn't violate your usage policy).
-
 == Usage ==
+
+=== Existing Archipelago Plugins ===
+
+The following plugins are available by  [[How_to_follow_a_3rd_party_update_site#Add_update_sites | adding the MySite]] for the user Lindsey.
+
+==== TrakEM2 Archipelago ====
+
+This plugin allows clusterized least-squares and elastic alignment in TrakEM2. Right Click in the TrakEM2 canvas window, then select "Setup Cluster...". If you have not yet started an Archipelago Cluster, you will be prompted to do so. Start the alignment as usual.
+
+==== Batch Weka Segmentation ====
+
+This plugin accelerates image classification with the [[Trainable_Weka_Segmentation | Trainable Weka Segmentation]] plugin. To use it, create a classifier and save it (ie, a .model file).
+
+Run the batch segmentation plugin by selecting Plugins -> Batch -> Weka Segmentation 2D
 
 === Starting a Cluster ===
 
