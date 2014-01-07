@@ -318,7 +318,7 @@ step  = 2;   // variable that controls step size
 run("Sholl Analysis...", "starting="+ start +" ending="+ end +"radius_step="+ step +" infer linear save do");
 </source>
 === Batch Analysis of Previously Obtained Profiles ===
-If you already have obtained 'raw profiles' (i.e., sampled data) and would like to retrieve the same [[#Metrics|metrics]] calculated by the plugin when analyzing bitmap images, you can use the [http://imagej.nih.gov/ij/developer/macro/functions.html#setKeyDown setKeyDown("alt")] as when [[#Importing|triggering this option]] through the ImageJ menu. Here is an example macro runs the plugin over a folder of .csv files containing Sholl profiles of sampled values (such as the ones produced by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]]):
+If you already have obtained profiles from traced cells and would like to retrieve the same [[#Metrics|metrics]] calculated by the plugin when analyzing bitmap images, you can use the [http://imagej.nih.gov/ij/developer/macro/functions.html#setKeyDown setKeyDown("alt")] as when [[#Importing|triggering this option]] through the ImageJ menu. Here is an example macro that runs the plugin over a folder of .csv files containing Sholl profiles produced by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]]:
 
 <source lang="java">
 distanceCol = "Radius";		// Column in .csv file listing distances
@@ -346,6 +346,7 @@ function closeResults() {
 		{ selectWindow("Results"); run("Close"); }
 }
 </source>
+
 == Auxiliary Commands ==
 ;File▷Open Samples▷ddaC Neuron
 :Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run <u>Image▷Show Info...</u> to know more about this cell type.
