@@ -354,35 +354,37 @@ function closeResults() {
 :Retrieves information about the plugin version and a link to its Git source code repository.
 
 == FAQ ==
-#'''What is the difference between ''Sholl Analysis'' and an homonymous plugin released by the Ghosh laboratory in 2005'''?
+#<span id="faq1"></span>'''What is the difference between ''Sholl Analysis'' and an homonymous plugin released by the Ghosh laboratory in 2005'''?
 #:The [http://labs.biology.ucsd.edu/ghosh/software/ original Sholl Analysis plugin] by Tom Maddock (version 1.0) was released for ImageJ 1.35 and can be considered deprecated software. The current implementation inherits most of Tom's work (e.g., it still uses the initial 2D algorithm) but extends its utiliy beyond the original design of version 1.0. You can follow the history of the plugin {{GitLink|jar=Sholl_Analysis}}.
-#'''Why do I need to threshold the cell?'''
+#<span id="faq2"></span>'''Why do I need to threshold the cell?'''
 #: Counting intersections is really a binary procedure: a shell either intercepts a branch or it doesn't. For this reason the image must be split in two phases: arbor and background.
-#'''The plugin complains about a wrong image type. Why?'''
+#<span id="faq3"></span>'''The plugin complains about a wrong image type. Why?'''
 #: Although ImageJ can threshold RGB images, the plugin can only parse grayscale images (8-bit and 16-bit). Images of fluorescent-labeled cells are typically non-RGB images. Conversions between different image types is explained in the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide].
-#'''I cannot see the hemicircle/hemisphere option. Why?'''
+#<span id="faq4"></span>'''I cannot see the hemicircle/hemisphere option. Why?'''
 #: This option is only available if an orthogonal line has been created by holding Shift when using the Straight Line Selection Tool. See the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for the full list of key modifiers that can be used while creating straight line ROIs.
-#'''With 3D images, How do I set the Z-position of the center?'''
+#<span id="faq5"></span>'''With 3D images, How do I set the Z-position of the center?'''
 #: The Z-position (depth) of the center of analysis is the active Z-slice of the stack. It is reported in the ''Sholl Results'' table.
-#'''Why so many parameters?'''
+#<span id="faq6"></span>'''Why so many parameters?'''
 #:The plugin is designed for the analysis of a wide diversity of arbors and it is not biased to any particular cell type. The only way to ensure this is by giving users full control over the mathematical techniques used by the plugin to analyze sampled data.
-#'''How can I save/edit the ''Sholl Results'' table?'''
+#<span id="faq7"></span>'''How can I save/edit the ''Sholl Results'' table?'''
 #: Select the table, then choose <u>File▷ Save As…</u>The filename extension can be specified using the <u>Edit▷ Options▷ Input/Output…</u> command (see the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
-#'''Can I modify the number of decimal places used by the ''Sholl Results'' table?'''
+#<span id="faq8"></span>'''Can I modify the number of decimal places used by the ''Sholl Results'' table?'''
 #: Yes. Use the options ''Decimal places'' and ''Scientific notation'' in <u>Analyze▷ Set Measurements…</u>
-#'''I cannot see the option to save the results. Why?'''
+#<span id="faq9"></span>'''I cannot see the option to save the results. Why?'''
 #: The image you are trying to analyze is not saved locally. Saving it to a local directory (e.g., your Desktop or Home folder) should re-enable it.
-#'''What can I do with the ''Sholl mask''?'''
+#<span id="faq10"></span>'''What can I do with the ''Sholl mask''?'''
+#: The Sholl mask ([[#Introduction|see example above]]) is just a maximum intensity projection of the analyzed cell in which intersection counts are used as pixel intensities. As explained in [[#Output_Options|Output Options]], its LUT can be modified, and intensities calibrated using ImageJ default commands. 
+#<span id="faq11"></span>'''The 3D profile looks ''worse'' than the 2D profile of the Maximum Intensity Projection of the same cell. Why?'''
+#: An anisotropic voxel size will have a strong impact on [[#StepSize|step size]]. On the other hand, 2D and 3D images can be sampled differently depending on the [[#Parameters|options chosen]]. If <u>Image▷ Properties…</u> reports the appropriate spatial calibration, make sure to read [[#Definition_of_Shells |Definition of Shells]] before deciding which type of images to use.
+#<span id="faq12"></span>'''The shape of the polynomial changes at the edges of the profile. Why?'''
+#: Inflection points at [[#StartRadius|starting/ending radius]] are usually associated with a poor fit and/or the fact that all the radii in which no intersections were counted are ignored. The latter is required to calculate the [[#ShollDecay|Sholl regression coefficient]], as ''log(0)'' is undefined.
+#<span id="faq13"></span>'''My images do not look that great. How can I treat them prior to analysis?'''
 #:
-#'''The 3D profile looks worse than the 2D profile of the Maximum Intensity Projection of the same cell. Why?'''
-#:
-#'''The shape of the polynomial changes at the edges of the profile. Why?'''
-#:
-#'''My images do not look that great. How can I treat them prior to analysis?'''
-#:
-#'''I found a bug. How do I report it?'''
+#<span id="faq14"></span>'''None of the fitting options is suitable for my datasets. What should I do?'''
+#: You could explore ImageJ's built-in CurveFitter (<u>Analyze▷ Tools▷ Curve Fitting…</u>), but ultimately you may need to use dedicated software. You could also [[#faq15|contact the developers]] to see if it would be possible to extend the repertoire of fitting options.
+#<span id="faq15"></span>'''I found a bug. How do I report it?'''
 #: Use Fiji's built-in [[Report a Bug]] command. Alternatively, report it to the [http://imagej.nih.gov/ij/list.html ImageJ mailing list]. Don't forget to include the steps needed to reproduce the problem.
-#'''This documentation is not that useful. How long do I have to wait until it gets improved?'''
+#<span id="faq16"></span>'''This documentation is not that useful. How long do I have to wait until it gets improved?'''
 #: Around 20 seconds. This is the time it will take you to [[Help:Contents#New_accounts|create an account]] on this wiki. Once you have created one, you will be able to improve this page yourself.
 
 == Non-Fiji users ==
