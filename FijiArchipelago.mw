@@ -15,7 +15,7 @@ Fiji Archipelago is a tool designed to make it easy for programmers to export Fi
 
 For the purposes of this article, the root node is the computer from which the cluster is started and managed. Client nodes are computers that perform computations exported from the root node. A program consists of several processes, the computations that are exported to the client nodes.
 
-Client nodes may be started by the root node, or the root node may be configured to accept client nodes that have been started manually. In the case that they are started by the root node, clients nodes are accessed using ssh via the JSch library. By default, client/root communication is done over standard IO over ssh, but insecure socket communication is also available, and this is how manually started nodes must communicate.
+Client nodes may be started by the root node, or the root node may be configured to accept client nodes that have been started manually. By default, client/root communication is done over standard IO over ssh, but insecure socket communication is also available.
 
 == Requirements ==
 * Root and client nodes should all have the same version of Fiji installed.
