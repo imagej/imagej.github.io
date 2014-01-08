@@ -3,7 +3,7 @@
 | software              = Fiji
 | author                = [[User:NicholasPerry|Nick Perry]], [[JeanYvesTinevez|Jean-Yves Tinevez]], [[User:Schindelin|Johannes Schindelin]]
 | maintainer            = [mailto:jean-yves.tinevez@pasteur.fr Jean-Yves Tinevez]
-| source                = [https://github.com/fiji/fiji/tree/master/src-plugins/TrackMate_ on GitHub]
+| source                = [https://github.com/fiji/TrackMate on GitHub]
 | released              = 10/05/2012
 | status                = v2.1.1, active
 | category              = [[:Category:Segmentation|Segmentation]], [[:Category:Tracking|Tracking]]
