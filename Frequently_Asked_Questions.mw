@@ -268,6 +268,10 @@ Here are several ways to do so:
 
 In the future, we plan to make this easier by having one single easy command for viewing the source code.
 
+== What are "external" plugins? ==
+
+As far as users are concerned, external Fiji plugins are exactly the same as internal Fiji plugins. For developers, [[External plugins|"external plugin"]] simply implies that the plugin's source code is maintained in its own source code repository. For example, [[TrakEM2]] has been an external Fiji plugin since Fiji's inception.
+
 = Community =
 
 == Why is there Fiji when there is already ImageJ? And what is this ImageJ2 about? ==
