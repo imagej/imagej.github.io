@@ -1,31 +1,30 @@
+<div style="float:right;">
 {{Infobox Plugin
-| software       = ImageJ
+| software       = ImageJ/Fiji
 | name           = Bitmap Sholl Analysis
 | author         = Tiago Ferreira, Tom Maddock
 | maintainer     = Tiago Ferreira
-| source         = {{GitLink|jar=Sholl_Analysis}}
+| source         = [https://github.com/tferr/ASA on GitHub]
 | filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.0.0-SNAPSHOT.jar Sholl_Analysis.jar]
-| latest version = v3.1 (July 2013)
 | released       = December 2012
+| latest version = v3.3 (December 2013)
 | status         = stable, active
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]]
 }}
 
-Bitmap Sholl for 2D and 3D images. For analysis of previously traced arbors have a look at [[#Importing_Profiles_Obtained_Elsewhere|Importing Profiles Obtained Elsewhere]].
+&nbsp;<br /> <br /> <br /> <br /> <br /> <br />
+<span style="font-size:175%;">Shortcuts</span>
 
-<div style="float:right;
-            border: 1px solid #ccc;
-            padding: 5px !important;
-            border-radius: .75em;
-            -moz-border-radius: .75em;
-            -webkit-border-radius: .75em;
-            margin-top: 11em;
-            background-color: #f9f9f9;">
-'''Non-Fiji User?'''
-: Jump to [[#Non-Fiji_users|Installation notes]]
+'''Analysis of traced arbors?'''
+: Jump to [[#Importing_Profiles_Obtained_Elsewhere|Importing Profiles]]
 '''Having Problems?'''
 : Jump to [[#FAQ|FAQs]]
+'''Non-Fiji User?'''
+: Jump to [[#Non-Fiji_users|Installation notes]]
 </div>
+
+Bitmap Sholl for 2D and 3D images. For analysis of previously traced arbors have a look at [[#Importing_Profiles_Obtained_Elsewhere|Importing Profiles Obtained Elsewhere]].
+
 
 == Introduction ==
 [[ File:BitmapSholl-CA1mask.png|frame|[[Skeletonize3D|Skeletonized]] Mouse hippocampal CA1 cell <ref name="Gross">TA Ferreira, LL Iacono and CT Gross. Serotonin receptor 1A modulates actin dynamics and restricts dendritic growth in hippocampal neurons. Eur J Neurosci 32(1):18-26, Jul 2010 [http://www.ncbi.nlm.nih.gov/pubmed?term=20561047 PMID: 20561047]</ref> in which apical and basal dendrites have been analyzed separately and color coded according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''rc'') and [[#MeanValueOfFunction|Mean value]] (''Nav'') are indicated.]]
@@ -406,7 +405,7 @@ Please note that Fiji is the most convenient way of keeping your ImageJ distribu
 <references/>
 
 == Release Notes ==
-Available [https://github.com/tferr/ASA/blob/master/Notes here].
+Available [https://raw.github.com/tferr/ASA/master/Notes here].
 
 == License ==
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
