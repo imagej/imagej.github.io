@@ -19,7 +19,6 @@ mvn -DupdateReleaseInfo=true deploy
 </pre>
 
 # Hit the ''Build Now'' button in the Jenkins job to trigger a build and deployment of the plugin.
-
 # Once the Jenkins job deployed the external plugin, add the current version to ''pom.xml'''s ''<properties>'' section and then add it as a ''<dependency>'' in ''external/pom.xml''. You should also add the base name of the repository to ''external/.gitignore'' and mention the URL to the external plugin's source code repository in the commit message.
 
 = How to make an internal plugin an external one =
