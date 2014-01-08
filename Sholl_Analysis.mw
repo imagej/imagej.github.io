@@ -23,8 +23,7 @@
 : Jump to [[#Non-Fiji_users|Installation notes]]
 </div>
 
-Bitmap Sholl for 2D and 3D images. For analysis of previously traced arbors have a look at [[#Importing_Profiles_Obtained_Elsewhere|Importing Profiles Obtained Elsewhere]].
-
+Automated bitmap Sholl for direct analysis of fluorescent images, featuring powerful quantifications  based on curve fitting. Analysis of previously traced arbors is also possible.
 
 == Introduction ==
 [[ File:BitmapSholl-CA1mask.png|frame|[[Skeletonize3D|Skeletonized]] Mouse hippocampal CA1 cell <ref name="Gross">TA Ferreira, LL Iacono and CT Gross. Serotonin receptor 1A modulates actin dynamics and restricts dendritic growth in hippocampal neurons. Eur J Neurosci 32(1):18-26, Jul 2010 [http://www.ncbi.nlm.nih.gov/pubmed?term=20561047 PMID: 20561047]</ref> in which apical and basal dendrites have been analyzed separately and color coded according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''rc'') and [[#MeanValueOfFunction|Mean value]] (''Nav'') are indicated.]]
@@ -33,7 +32,7 @@ This plugin performs 2D and 3D Sholl on grayscale images of single neurons. Shol
 * Retrieves quantitative descriptors from the Sholl profile, allowing statistical comparisons between arbors
 * Performs <i>Continuous Sholl</i> around arbitrary foci
 
-Its internal algorithm is based upon how Sholl analysis is done by hand — it creates a series of concentric circles/spheres around the focus of a neuronal arbor, and counts how many times the arbor intersects the sampling circles/spheres. Nevertheless, it takes this task beyond conventional approaches by offering [[#Multiple Samples and Noise Reduction|repeated sampling]] and several [[#Sholl Methods|analysis methods]] including Linear with [[#MeanValueOfFunction|mean value of function]]<ref name="Stulic">D Ristanović, NT Milosević and V Stulić. Application of modified Sholl analysis to neuronal dendritic arborization of the cat spinal cord. J Neurosci Methods, 158(2):212–8, Dec 2006, [http://www.ncbi.nlm.nih.gov/pubmed?term=16814868 PMID: 16814868]</ref>, Semi-log and Log–log.
+Its internal algorithm is based upon how Sholl analysis is done by hand — it creates a series of concentric circles/spheres around the focus of a neuronal arbor, and counts how many times the arbor intersects the sampling circles/spheres. Nevertheless, it takes this task beyond conventional approaches by offering [[#Multiple Samples and Noise Reduction|repeated sampling]] and several [[#Sholl Plots|analysis methods]] including Linear with [[#MeanValueOfFunction|mean value of function]]<ref name="Stulic">D Ristanović, NT Milosević and V Stulić. Application of modified Sholl analysis to neuronal dendritic arborization of the cat spinal cord. J Neurosci Methods, 158(2):212–8, Dec 2006, [http://www.ncbi.nlm.nih.gov/pubmed?term=16814868 PMID: 16814868]</ref>, Semi-log and Log–log.
 
 == Usage ==
 The plugin requires a binary image or a segmented grayscale image containing a single neuron.
@@ -55,7 +54,7 @@ Input values take into account the scale information of the image that can be se
 * <span id="StepSize"></span>'''Radius step size''' <sup>&nbsp;</sup>The sampling interval between radii of consecutive sampling circles/spheres. This value may be set to zero for continuous (1-voxel increment) measurements.
 :For anisotropic images, setting ''Radius step size'' to zero, sets the step length to the dimension of a matching isotropic voxel, i.e., the square root of the product of the pixel dimensions (2D images) or the cube root of the product of the voxel dimensions (image stacks).
 
-* '''Restrict analysis to hemicircle/hemisphere''' <sup>&nbsp;</sup>This option is only available when an orthogonal radius has been created (by holding Shift when using the Straight Line Selection Tool). It can be used to limit the analysis to sub-compartments of the arbor (e.g., apical vs basal dendrites, in the case of pyramidal neurons, as in illustration above).
+* '''Restrict analysis to hemicircle/hemisphere''' <sup>&nbsp;</sup>This option is only available when an orthogonal radius has been created (by holding Shift while using the Straight Line Selection Tool). It can be used to limit the analysis to sub-compartments of the arbor (e.g., apical vs basal dendrites, in the case of pyramidal neurons, as in illustration above).
 :For horizontal lines, this option instructs the algorithm to measure intersections at sites equidistant from the center that have y-coordinates above/below the drawn line. For vertical lines, it instructs the plugin to measure intersections at sites equidistant from the center that have x-coordinates to the left/right of the drawn line.
 
 ==== Multiple Samples and Noise Reduction ====
@@ -91,11 +90,11 @@ The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile wit
 * '''Save results on image directory ''(only available when image is saved locally)''''' <sup>&nbsp;</sup> If checked, all the results (with the exception of the ''[[#Metrics|Sholl Table]]'') are saved to the image directory. These include: 1) Sholl plots (saved as PNG images), 2) A table containing detailed data (saved according to the extension and format specified in <u>Edit▷Options▷Input/Output...</u>) and 3) The Sholl mask (saved as a 16-bit TIFF).<p>Files are named after the image filename and analysis method. When this option is not available, profiles can always be retrieved using the ''List'', ''Save...'' and ''Copy...'' commands at the bottom of plot windows.</p>
 ** '''Do not display saved files''' If checked, saved files are directly saved to disk and are not displayed. Activate this option when [[#Batch_Processing|batch processing]] files.
 
-== Sholl Methods ==
+== Sholl Plots ==
 <center>
 <span id="ShollPlots"></span>[[File:ShollPlots.png|center|]]
 
-'''''Linear'', ''Linear-norm'', ''Semi-log'' and ''Log-log'' profiles for the ddaC cell (File▷Open Samples▷ddaC Neuron)'''. Most of the retrieved [[#Metrics_based_on_fitted_data|metrics]] are automatically highlighted by the plugin. ''Linear profile'': [[#MeanValueOfFunction|Mean value]] (horizontal grid line) and [[#Centroid|Centroid]] (colored mark). Logarithmic profiles: The [[#ShollDecay|Sholl regression coefficient]] (also known as Sholl decay) can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10–90 (red line).  For this particular cell type, the Semi-log method is more informative when compared to the Log-log method.
+'''''Linear'', ''Linear-norm'', ''Semi-log'' and ''Log-log'' profiles for the ddaC cell (File▷Open Samples▷ddaC Neuron), version 3.0'''. Most of the retrieved [[#Metrics_based_on_fitted_data|metrics]] are automatically highlighted by the plugin. ''Linear profile'': [[#MeanValueOfFunction|Mean value]] (horizontal grid line) and [[#Centroid|Centroid]] (colored mark). Logarithmic profiles: The [[#ShollDecay|Sholl regression coefficient]] (also known as Sholl decay) can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10–90 (red line).  For this particular cell type, the Semi-log method is more informative when compared to the Log-log method.
 
 
 <span id="MethodsTable"></span>
