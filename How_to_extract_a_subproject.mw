@@ -1,0 +1,27 @@
+Whether a Fiji plugin is called ''internal'' or ''external'' is a purely technical matter: ''external plugins''' source code is maintained in separate repositories.
+
+For example, [[TrackMate]] started out as an internal plugin, but for ease of development -- and in particular, to ease contributing to it -- the source code of TrackMate was moved into [https://github.com/fiji/TrackMate its own repository].
+
+= How to add a new external plugin =
+
+The following steps are required:
+
+# Ensure that the plugin has a public repository (it can be in the ''fiji'' org on GitHub or outside, that does not matter).
+
+# If it is a GitHub repository and you can change the settings, activate the ''Jenkins (Git plugin)'' hook in ''Settings>Service Hooks'' and set the URL to ''http://jenkins.imagej.net/''
+
+# Add a Jenkins job to the [http://jenkins.imagej.net/view/Fiji/ Fiji view] of ImageJ's Jenkins server. The easiest way is to copy the ''TrackMate'' job and edit the description as well as the repository URL. If the Maven configuration of the external plugin does not list ImageJ's Maven repositories, you will have to insert ''-DaltDeploymentRepository=imagej.snapshots::default::http://maven.imagej.net/content/repositories/snapshots'' into the ''mvn -DupdateReleaseInfo=true deploy'' call.
+
+# Hit the ''Build Now'' button in the Jenkins job to trigger a build and deployment of the plugin.
+
+# Once the Jenkins job deployed the external plugin, add the current version to ''pom.xml'''s ''<properties>'' section and then add it as a ''<dependency>'' in ''external/pom.xml''. You should also add the base name of the repository to ''external/.gitignore'' and mention the URL to the external plugin's source code repository in the commit message.
+
+= How to make an internal plugin an external one =
+
+If you want to add an external plugin that is currently an internal plugin, i.e. its source code is maintained in [https://github.com/fiji/fiji fiji.git], you will need to perform the following steps in the same commit that adds the plugin as an external one:
+
+# remove the directory ''src-plugins/<artifactId>/'',
+# remove the respective ''<module>'' line in ''src-plugins/pom.xml'', and
+# adjust ''.gitignore'' to list ''/plugins/<artifactId>-[0-9]*.jar'' in the section ''Dependencies copied by MiniMaven'' instead of ''Files generated from sources in src-plugins/''.
+
+[[Category:Development]]
