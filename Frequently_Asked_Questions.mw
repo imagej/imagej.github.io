@@ -252,11 +252,11 @@ Here are several ways to do so:
 #* Using the Command Finder, locate your command, taking note of the Class column's value. 
 #** E.g., if we type "make binary" we see that the class is <code>ij.plugin.Thresholder</code>.
 #* Open the relevant project in GitHub:
-#** For "ij." classes, go to: https://github.com/fiji/ImageJA
+#** For "ij." classes, go to: https://github.com/imagej/ImageJA
 #** For "fiji." and many other package prefixes, go to: https://github.com/fiji/fiji
 #* Press the T key, and type the name of the file you are looking for.
 #** In the example above, this is Thresholder.java.
-#* You should end up with a hit like: https://github.com/fiji/ImageJA/blob/master/src/main/java/ij/plugin/Thresholder.java.
+#* You should end up with a hit like: https://github.com/imagej/ImageJA/blob/master/src/main/java/ij/plugin/Thresholder.java.
 #* This method requires that you know in which repository the code lives. However, you can combine it with the '''fiji.sc search''' method above to figure out which repository, then load the code on GitHub, if desired.
 # '''Using the "Open Source for Menu Item" command:'''
 #* Run Plugins > Scripting > Open Source for Menu Item.
