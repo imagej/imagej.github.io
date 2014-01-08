@@ -4,9 +4,9 @@
 | author                 = Stephan Preibisch
 | maintainer             = Stephan Preibisch
 | filename               = Stitching_.jar
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Stitching_;hb=HEAD on gitweb]
+| source                 = [[https://github.com/fiji/TrackMate on GitHub] on GitHub]
 | released               = October 2008
-| latest version         = January 2012
+| status                  = active
 | category               = [[:Category:Stitching|Stitching]]
 | website                = [http://fly.mpi-cbg.de/~preibisch Stephan Preibisch's homepage]
 }}
