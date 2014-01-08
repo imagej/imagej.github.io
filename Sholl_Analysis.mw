@@ -3,7 +3,7 @@
 | software       = ImageJ/Fiji
 | name           = Bitmap Sholl Analysis
 | author         = Tiago Ferreira, Tom Maddock
-| maintainer     = Tiago Ferreira
+| maintainer     = [mailto:tiago_dot_ferreira_at_mail_dot_mcgill_dot_ca Tiago Ferreira]
 | source         = [https://github.com/tferr/ASA on GitHub]
 | filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.0.0-SNAPSHOT.jar Sholl_Analysis.jar]
 | released       = December 2012
@@ -40,7 +40,7 @@ The plugin requires a binary image or a segmented grayscale image containing a s
 # Segment the arbor using <u>Image▷Adjust▷Threshold...</u>
 # Select the center of analysis with the Point Selection Tool. Alternatively, make a Straight Line Selection from the focus of the arbor to its most distal point. This will automatically set both the center and [[#EndRadius|Ending radius]].
 # Run <u>Analyze▷Sholl Analysis...</u>, adjusting the default [[#Parameters|Parameters]] in the dialog prompt.
-# '''Problems? Read the  [[#FAQ|FAQs]]'''.
+# Problems? Read the  [[#FAQ|FAQs]].
 
 == Parameters ==
 Input values take into account the scale information of the image that can be set using the <u>Analyze▷Set Scale...</u> or <u>Image▷Properties...</u> commands. The prompt is organized into 5 sections:
@@ -58,7 +58,7 @@ Input values take into account the scale information of the image that can be se
 :For horizontal lines, this option instructs the algorithm to measure intersections at sites equidistant from the center that have y-coordinates above/below the drawn line. For vertical lines, it instructs the plugin to measure intersections at sites equidistant from the center that have x-coordinates to the left/right of the drawn line.
 
 ==== Multiple Samples and Noise Reduction ====
-[[ File:BitmapSholl-Prompt_v3.png|right ]]
+[[ File:BitmapSholl-Prompt_v3.png|right |Main prompt (version 3.1)]]
 * '''Samples per radius ''(2D images only)''''' <sup>&nbsp;</sup>Defines the number of measurements to be performed at each sampling circumference. These measurements are then combined into a single value according to the chosen [[#SamplesIntegration|integration method]]. This strategy, a break from previous approaches, increases the accuracy of non-continuos profiles by diluting out the effect of processes extending tangent to the sampling circumference.
 :Visually, this option can be imagined as the "thickness" of the sampling circumference: e.g.: for a radius of 100 pixels and a value of 3 ''Samples per radius'', the final number of intersections would integrate the measurements sampled at distances 99, 100 and 101.
 :Note that it would not make sense to increase the number of samples beyond the length of ''Radius step size''. For this reason, this option is limited to a draconian (and arbitrary) maximum of 10 samples.
@@ -80,7 +80,7 @@ Input values take into account the scale information of the image that can be se
 ==== Choice of Method(s) ====
 The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile without normalization), or normalized profiles: ''Linear-norm'', ''Semi-log'', or ''Log-log''.
 * '''Polynomial''' <sup>&nbsp;</sup> Specifies the degree of the [[#MethodsTable|polynomial]] to be fitted to the ''Linear'' profile: 4<sup>th</sup>–8<sup>th</sup> degree. While the polynomial of best approximation, or "best fit", should be empirically determined for each analyzed cell type, it is possible to ask the plugin to predict the order of the fitting polynomial (or at least try) using the choice ''Best fitting degree''. In this case, the plugin will loop through all the available choices of polynomials, perform each fit int the background and choose the one with the highest coefficient of determination.
-:The ''Best fitting degree'' choice is obviously much more computer-intensive and can be monitored by activating the ''Show fitting details'' checkbox.
+:The ''Best fitting degree'' choice is obviously more computer-intensive and can be monitored by activating the ''Show fitting details'' checkbox.
 * <span id="Normalizer"></span>'''Normalizer''' The property of the sampling shell to be used in the normalization of ''Linear-norm'', ''Semi-log'', and ''Log-log'' profiles. It is [[#MethodsTable|described below]].
 
 ==== Output Options ====
@@ -144,7 +144,7 @@ In this case, the normalization is performed against the area of the annulus for
 == Metrics ==
 Morphometric descriptors and other properties of the arbor are printed to a dedicated table named ''Sholl Results''. Listed values can be displayed in scientific notation and with the precision specified in <u>Analyze▷Set Measurements...</u> The first columns log analysis parameters: ''Image filename and voxel unit'', ''Lower'' and ''Upper Threshold levels'', ''X,Y'' (in pixels) and ''Z'' (slice number) coordinates of center of analysis, ''Starting'' and ''Ending radius'', ''Radius step'', ''Number of Samples per Radius'', etc. Other parameters are described below.
 
-[[File:BitmapSholl-Table.png|100%|center|Sholl Table]]
+[[File:BitmapSholl-Table.png|100%|center|Descriptors and metrics are listed in the Sholl Table]]
 
 === Metrics based on sampled data ===
 ;Intersecting radii
@@ -211,8 +211,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
             border: 1px solid #ccc;
             padding: 5px !important;
             border-radius: .75em;
-            -moz-border-radius: .75em;
-            -webkit-border-radius: .75em;
+            text-align:center;
             margin-bottom: 1em;
             background-color: #ffefbe;">
 Previous authors have used different terms to describe the largest value taken by the Sholl profile (cf. [http://en.wikipedia.org/wiki/Sholl_analysis Wikipedia], [[#References|References]]). Since the Sholl technique is not restricted to dendritic arbors (it can be applied to any tree-like structure such as axonal arbors, mammary glands or blood vessels), this plugin introduces the term [[#CriticalRadius|Critical radius]], renaming ''Dendrite maximum'' (''N<sub>m</sub>'') to [[#CriticalValue|Critical value]]. Thus, we may not follow the conventions adopted by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].</div>
@@ -256,19 +255,25 @@ Notes:
 *In a [[#Batch_Analysis_of_Previously_Obtained_Profiles|macro]], the [http://imagej.nih.gov/ij/developer/macro/functions.html#setKeyDown setKeyDown("alt")] macro function can be used input tabular data.
 
 == Batch Processing ==
-It is fairly simple to automate the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji (see  [[Introduction into Macro Programming|ImageJ Macro Language]], [[Beanshell_Scripting|Beanshell]], [[Javascript_Scripting|Javascript]], [[JRuby_Scripting|JRuby]], [[Jython_Scripting|Jython]], and [[Clojure_Scripting|Clojure]] (see also [[Script Editor]] and  [[Scripting Help]]).
+It is fairly simple to automate (see [[Script Editor]] and  [[Scripting Help]]) the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji ([[Introduction into Macro Programming|ImageJ Macro Language]], [[Beanshell_Scripting|Beanshell]], [[Javascript_Scripting|Javascript]], [[JRuby_Scripting|JRuby]], [[Jython_Scripting|Jython]], [[Clojure_Scripting|Clojure]], ...).
 
-Independently of which strategy is used, the Sholl Analysis plugin will need to access the ROI marking the center of analysis.  One could instruct ImageJ to read the coordinates of pre-existing ROIs from a text file, store a list of line selections in the ROI Manager, or write a morphology-based routine that detects the center of analysis. However, marking the center of analysis is probably something that you will want to do manually.
-
-:'''When working with ROIs, it is critical that you work with .tif files because only this format keeps track of image overlays'''. If you use any other format, any selection you create is lost as soon as you close the image. The <u>Process▷ Batch▷ Convert...</u> command allows bulk conversion between image formats.
-
-Here is a routine using the ImageJ macro language:
+=== Batch Analysis of Bitmap Images ===
+Any macro or script must allow the Sholl Analysis plugin to access the ROI marking the center of analysis. One could instruct ImageJ to read the coordinates of pre-existing ROIs from a text file, store a list of line selections in the ROI Manager, or write a morphology-based routine that detects the center of the arbor. However, marking the center of analysis is probably something that you will want to do manually. Here is a workflow:
 
 #'''Place all the .tif images to be processed in a single folder'''.
-#Select the Point Selection Tool in the main ImageJ window and activate the Threshold widget (<u>Image▷ Adjust▷ Threshold...</u>). '''Make sure ''Set stack positions'' is active in the <u>Image▷ Overlay▷ Overlay Options...</u> prompt'''. Open the first image.
+#Select the Point Selection Tool in the main ImageJ window and activate the Threshold widget (<u>Image▷ Adjust▷ Threshold...</u>). Make sure ''Set stack positions'' is active in the <u>Image▷ Overlay▷ Overlay Options...</u> prompt. Open the first image.
 #'''Adjust threshold levels'''. Press the ''Apply'' button of the Threshold widget to create a binary image.
 #Select the z-slice containing the center of analysis. '''Click over the center with the Point Selection Tool and press ''B''''' (shortcut for <u>Image▷ Overlay▷ Add Selection...</u>). This will add the point ROI to the image overlay. Save the image as .TIFF by pressing ''S'' (<u>File▷ Save As...▷ Tiff...</u>).
-#'''Repeat the last 2 steps''' until all images are marked. '''Tip:''' Use ''Shift'' + ''O'' (shortcut for <u>File▷ Open Next</u>) to iterate rapidly through all the images.
+#'''Repeat the last 2 steps''' until all images are marked, using ''Shift'' + ''O'' (shortcut for <u>File▷ Open Next</u>) to iterate through all the images.
+
+<div style="float:center;
+            border: 1px solid #ccc;
+            padding: 5px !important;
+            border-radius: .75em;
+            text-align:center;
+            margin-bottom: 1em;
+            background-color: #ffefbe;">
+When working with ROIs, it is critical that you work with .tif files because only this format keeps track of image overlays. The <u>Process▷ Batch▷ Convert...</u> command allows bulk conversion between image formats.</div>
 
 Now that all the images are marked, we just need a working macro. We will open the Macro Recorder (<u>Plugins▷ Macros▷ Record...</u>) and run ''Sholl Analysis'' on one of the images to find out how to call the plugin with suitable parameters. The single line of code that appears in the recorder window will look something like this:
 <source lang="java">
@@ -345,6 +350,8 @@ function closeResults() {
 		{ selectWindow("Results"); run("Close"); }
 }
 </source>
+== Pre-processing ==
+Examples to be added soon.
 
 == Auxiliary Commands ==
 ;File▷Open Samples▷ddaC Neuron
@@ -375,11 +382,11 @@ function closeResults() {
 #<span id="faq10"></span>'''What can I do with the ''Sholl mask''?'''
 #: The Sholl mask ([[#Introduction|see example above]]) is just a maximum intensity projection of the analyzed cell in which intersection counts are used as pixel intensities. As explained in [[#Output_Options|Output Options]], its LUT can be modified, and intensities calibrated using ImageJ default commands. 
 #<span id="faq11"></span>'''The 3D profile looks ''worse'' than the 2D profile of the Maximum Intensity Projection of the same cell. Why?'''
-#: An anisotropic voxel size will have a strong impact on [[#StepSize|step size]]. On the other hand, 2D and 3D images can be sampled differently depending on the [[#Parameters|options chosen]]. If <u>Image▷ Properties…</u> reports the appropriate spatial calibration, make sure to read [[#Definition_of_Shells |Definition of Shells]] before deciding which type of images to use.
+#: An anisotropic voxel size will have a strong impact on [[#StepSize|step size]]. On the other hand, 2D and 3D images can be sampled differently depending on the [[#Parameters|options chosen]]. If <u>Image▷ Properties…</u> reports the appropriate spatial calibration, make sure to read [[#Multiple_Samples_and_Noise_Reduction|Multiple Samples and Noise Reduction]] before deciding which type of images to use.
 #<span id="faq12"></span>'''The shape of the polynomial changes at the edges of the profile. Why?'''
 #: Inflection points at [[#StartRadius|starting/ending radius]] are usually associated with a poor fit and/or the fact that all the radii in which no intersections were counted are ignored. The latter is required to calculate the [[#ShollDecay|Sholl regression coefficient]], as ''log(0)'' is undefined.
 #<span id="faq13"></span>'''My images do not look that great. How can I treat them prior to analysis?'''
-#:
+#: Have a look at [[#Pre-processing| Pre-processing]].
 #<span id="faq14"></span>'''None of the fitting options is suitable for my datasets. What should I do?'''
 #: You could explore ImageJ's built-in CurveFitter (<u>Analyze▷ Tools▷ Curve Fitting…</u>), but ultimately you may need to use dedicated software. You could also [[#faq15|contact the developers]] to see if it would be possible to extend the repertoire of fitting options.
 #<span id="faq15"></span>'''I found a bug. How do I report it?'''
