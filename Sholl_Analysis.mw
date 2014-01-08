@@ -8,7 +8,7 @@
 | filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.0.0-SNAPSHOT.jar Sholl_Analysis.jar]
 | released       = December 2012
 | latest version = v3.3 (December 2013)
-| status         = stable, active
+| status         = stable, active ([https://github.com/tferr/ASA/blob/master/Notes Release Notes])
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]]
 }}
 
@@ -29,21 +29,21 @@ Automated bitmap Sholl for direct analysis of fluorescent images, featuring powe
 [[ File:BitmapSholl-CA1mask.png|frame|[[Skeletonize3D|Skeletonized]] Mouse hippocampal CA1 cell <ref name="Gross">TA Ferreira, LL Iacono and CT Gross. Serotonin receptor 1A modulates actin dynamics and restricts dendritic growth in hippocampal neurons. Eur J Neurosci 32(1):18-26, Jul 2010 [http://www.ncbi.nlm.nih.gov/pubmed?term=20561047 PMID: 20561047]</ref> in which apical and basal dendrites have been analyzed separately and color coded according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''rc'') and [[#MeanValueOfFunction|Mean value]] (''Nav'') are indicated.]]
 This plugin performs 2D and 3D Sholl on grayscale images of single neurons. Sholl<ref name="Sholl">DA Sholl. Dendritic organization in the neurons of the visual and motor cortices of the cat. J Anat, 87(4):387–406, Sep 1953, [http://www.ncbi.nlm.nih.gov/pubmed?term=13117757  PMID: 13117757]</ref> is a popular technique used by neuroanatomists to describe neuronal arbors. The major advantages of this plugin over other implementations are:
 * It does not require previous tracing of the arbor
-* Retrieves quantitative descriptors from the Sholl profile, allowing statistical comparisons between arbors
+* Retrieves [[#Metrics|quantitative descriptors]] from the Sholl profile, allowing statistical comparisons between arbors
 * Performs <i>Continuous Sholl</i> around arbitrary foci
 
-Its internal algorithm is based upon how Sholl analysis is done by hand — it creates a series of concentric circles/spheres around the focus of a neuronal arbor, and counts how many times the arbor intersects the sampling circles/spheres. Nevertheless, it takes this task beyond conventional approaches by offering [[#Multiple Samples and Noise Reduction|repeated sampling]] and several [[#Sholl Plots|analysis methods]] including Linear with [[#MeanValueOfFunction|mean value of function]]<ref name="Stulic">D Ristanović, NT Milosević and V Stulić. Application of modified Sholl analysis to neuronal dendritic arborization of the cat spinal cord. J Neurosci Methods, 158(2):212–8, Dec 2006, [http://www.ncbi.nlm.nih.gov/pubmed?term=16814868 PMID: 16814868]</ref>, Semi-log and Log–log.
+Its internal algorithm is based upon how Sholl analysis is done by hand — it creates a series of concentric circles/spheres (''shells'') around the focus of a neuronal arbor, and counts how many times the arbor intersects the sampling shells. Nevertheless, it takes this task beyond conventional approaches by offering [[#Multiple Samples and Noise Reduction|repeated sampling]], [[#Metrics|curve fitting]] and several [[#Sholl Plots|analysis methods]] including Linear, Semi-log and Log–log.
 
 == Usage ==
 The plugin requires a binary image or a segmented grayscale image containing a single neuron.
 
-# Segment the arbor using <u>Image▷Adjust▷Threshold...</u>
+# Segment the arbor using <span style="border-bottom:1px dashed #aaa;">Image▷ Adjust▷ Threshold...</span>
 # Select the center of analysis with the Point Selection Tool. Alternatively, make a Straight Line Selection from the focus of the arbor to its most distal point. This will automatically set both the center and [[#EndRadius|Ending radius]].
-# Run <u>Analyze▷Sholl Analysis...</u>, adjusting the default [[#Parameters|Parameters]] in the dialog prompt.
+# Run <span style="border-bottom:1px dashed #aaa;">Analyze▷ Sholl Analysis...</span>, adjusting the default [[#Parameters|Parameters]] in the dialog prompt.
 # Problems? Read the  [[#FAQ|FAQs]].
 
 == Parameters ==
-Input values take into account the scale information of the image that can be set using the <u>Analyze▷Set Scale...</u> or <u>Image▷Properties...</u> commands. The prompt is organized into 5 sections:
+Input values take into account the scale information of the image that can be set using the <span style="border-bottom:1px dashed #aaa;">Analyze▷ Set Scale...</span> or <span style="border-bottom:1px dashed #aaa;">Image▷ Properties...</span> commands. The prompt is organized into 5 sections:
 
 ==== Definition of Shells ====
 * <span id="StartRadius"></span>'''Starting radius''' <sup>&nbsp;</sup>The radius of the smallest sampling circle/sphere, i.e., the first distance to be sampled.
@@ -52,9 +52,9 @@ Input values take into account the scale information of the image that can be se
 : '''Tip:''' You can clear this field (or set it to ''NaN'') to sample the entire image. This is particularly useful when running the plugin from a [[#Batch_Processing|macro]] that processes images with different dimensions.
 
 * <span id="StepSize"></span>'''Radius step size''' <sup>&nbsp;</sup>The sampling interval between radii of consecutive sampling circles/spheres. This value may be set to zero for continuous (1-voxel increment) measurements.
-:For anisotropic images, setting ''Radius step size'' to zero, sets the step length to the dimension of a matching isotropic voxel, i.e., the square root of the product of the pixel dimensions (2D images) or the cube root of the product of the voxel dimensions (image stacks).
+:For stacks with anisotropic voxel size, setting ''Radius step size'' to zero, sets the step length to the dimension of the matching isotropic voxel, i.e., the cube root of the product of the voxel dimensions or the square root of the product of the pixel dimensions (2D images).
 
-* '''Restrict analysis to hemicircle/hemisphere''' <sup>&nbsp;</sup>This option is only available when an orthogonal radius has been created (by holding Shift while using the Straight Line Selection Tool). It can be used to limit the analysis to sub-compartments of the arbor (e.g., apical vs basal dendrites, in the case of pyramidal neurons, as in illustration above).
+* '''Restrict analysis to hemicircle/hemisphere''' <sup>&nbsp;</sup>This option is only available when an orthogonal radius has been created (by holding Shift while using the Straight Line Selection Tool). It can be used to limit the analysis to sub-compartments of the arbor (e.g., apical vs basal dendrites, in the case of pyramidal neurons, as in illustration [[#Introduction|above]]).
 :For horizontal lines, this option instructs the algorithm to measure intersections at sites equidistant from the center that have y-coordinates above/below the drawn line. For vertical lines, it instructs the plugin to measure intersections at sites equidistant from the center that have x-coordinates to the left/right of the drawn line.
 
 ==== Multiple Samples and Noise Reduction ====
@@ -79,22 +79,22 @@ Input values take into account the scale information of the image that can be se
 
 ==== Choice of Method(s) ====
 The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile without normalization), or normalized profiles: ''Linear-norm'', ''Semi-log'', or ''Log-log''.
-* '''Polynomial''' <sup>&nbsp;</sup> Specifies the degree of the [[#MethodsTable|polynomial]] to be fitted to the ''Linear'' profile: 4<sup>th</sup>–8<sup>th</sup> degree. While the polynomial of best approximation, or "best fit", should be empirically determined for each analyzed cell type, it is possible to ask the plugin to predict the order of the fitting polynomial (or at least try) using the choice ''Best fitting degree''. In this case, the plugin will loop through all the available choices of polynomials, perform each fit int the background and choose the one with the highest coefficient of determination.
+* '''Polynomial''' <sup>&nbsp;</sup> Specifies the degree of the [[#MethodsTable|polynomial]] to be fitted to the ''Linear'' profile<ref name="Stulic">D Ristanović, NT Milosević and V Stulić. Application of modified Sholl analysis to neuronal dendritic arborization of the cat spinal cord. J Neurosci Methods, 158(2):212–8, Dec 2006, [http://www.ncbi.nlm.nih.gov/pubmed?term=16814868 PMID: 16814868]</ref>. While the polynomial of best approximation, or "best fit", should be empirically determined for each analyzed cell type, it is possible to ask the plugin to predict the order of the fitting polynomial (or at least try) using the choice ''Best fitting degree''. In this case, the plugin will loop through all the available choices of polynomials, perform each fit int the background and choose the one with the highest coefficient of determination.
 :The ''Best fitting degree'' choice is obviously more computer-intensive and can be monitored by activating the ''Show fitting details'' checkbox.
 * <span id="Normalizer"></span>'''Normalizer''' The property of the sampling shell to be used in the normalization of ''Linear-norm'', ''Semi-log'', and ''Log-log'' profiles. It is [[#MethodsTable|described below]].
 
 ==== Output Options ====
-* '''Create intersections mask''' <sup>&nbsp;</sup>If checked, a 16–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile.<p>The default Lookup Table used by the mask is modeled after the [http://www.mathworks.com/help/matlab/ref/colormap.html MATLAB "jet" color map] (a rainbow color map based on a fluid-jet simulation by NCSA) but you can apply any of your favorite LUTs using the <u>Image▷Lookup Tables▷</u> submenu. WYSIWYG versions (RGB images) of these masks can be otained using <u>Image▷Overlay▷Flatten</u> or <u>Analyze▷Tools▷Calibration Bar...</u></p>
-** '''Background''' <sup>&nbsp;</sup>The background color (gray level) of the mask from 0 (black) to 255 (white). It can be changed at any later point using <u>Image▷Color▷Edit Lut...</u>.
+* '''Create intersections mask''' <sup>&nbsp;</sup>If checked, a 16–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile.<p>The default Lookup Table (LUT) used by the mask is modeled after the [http://www.mathworks.com/help/matlab/ref/colormap.html MATLAB "jet" color map] (a rainbow color map based on a fluid-jet simulation by NCSA) but you can apply any of your favorite LUTs using the <span style="border-bottom:1px dashed #aaa;">Image▷ Lookup Tables▷</span> submenu. WYSIWYG versions (RGB images) of these masks can be otained using <span style="border-bottom:1px dashed #aaa;">Image▷ Overlay▷ Flatten</span> or <span style="border-bottom:1px dashed #aaa;">Analyze▷ Tools▷ Calibration Bar...</span></p>
+** '''Background''' <sup>&nbsp;</sup>The background color (gray level) of the mask from 0 (black) to 255 (white). It can be changed at any later point using <span style="border-bottom:1px dashed #aaa;">Image▷ Color▷ Edit Lut...</span>
 
-* '''Save results on image directory ''(only available when image is saved locally)''''' <sup>&nbsp;</sup> If checked, all the results (with the exception of the ''[[#Metrics|Sholl Table]]'') are saved to the image directory. These include: 1) Sholl plots (saved as PNG images), 2) A table containing detailed data (saved according to the extension and format specified in <u>Edit▷Options▷Input/Output...</u>) and 3) The Sholl mask (saved as a 16-bit TIFF).<p>Files are named after the image filename and analysis method. When this option is not available, profiles can always be retrieved using the ''List'', ''Save...'' and ''Copy...'' commands at the bottom of plot windows.</p>
+* '''Save results on image directory ''(only available when image is saved locally)''''' <sup>&nbsp;</sup> If checked, all the results (with the exception of the ''[[#Metrics|Sholl Table]]'') are saved to the image directory. These include: 1) Sholl plots (saved as PNG images), 2) A table containing detailed data (saved according to the extension and format specified in <span style="border-bottom:1px dashed #aaa;">Edit▷ Options▷ Input/Output...</span>) and 3) The Sholl mask (saved as a 16-bit TIFF).<p>Files are named after the image filename and analysis method. When this option is not available, profiles can always be retrieved using the ''List'', ''Save...'' and ''Copy...'' commands of plot windows.</p>
 ** '''Do not display saved files''' If checked, saved files are directly saved to disk and are not displayed. Activate this option when [[#Batch_Processing|batch processing]] files.
 
 == Sholl Plots ==
 <center>
 <span id="ShollPlots"></span>[[File:ShollPlots.png|center|]]
 
-'''''Linear'', ''Linear-norm'', ''Semi-log'' and ''Log-log'' profiles for the ddaC cell (File▷Open Samples▷ddaC Neuron), version 3.0'''. Most of the retrieved [[#Metrics_based_on_fitted_data|metrics]] are automatically highlighted by the plugin. ''Linear profile'': [[#MeanValueOfFunction|Mean value]] (horizontal grid line) and [[#Centroid|Centroid]] (colored mark). Logarithmic profiles: The [[#ShollDecay|Sholl regression coefficient]] (also known as Sholl decay) can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10–90 (red line).  For this particular cell type, the Semi-log method is more informative when compared to the Log-log method.
+'''''Linear'', ''Linear-norm'', ''Semi-log'' and ''Log-log'' profiles for the ddaC cell (<span style="border-bottom:1px dashed #aaa;">File▷ Open Samples▷ ddaC Neuron</span>), version 3.0'''. Most of the retrieved [[#Metrics_based_on_fitted_data|metrics]] are automatically highlighted by the plugin. ''Linear profile'': [[#MeanValueOfFunction|Mean value]] (horizontal grid line) and [[#Centroid|Centroid]] (colored mark). Logarithmic profiles: The [[#ShollDecay|Sholl regression coefficient]] (also known as Sholl decay) can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10–90 (red line).  For this particular cell type, the Semi-log method is more informative when compared to the Log-log method.
 
 
 <span id="MethodsTable"></span>
@@ -106,7 +106,7 @@ The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile wit
 |-
 | <span id="eq1">(1)</span>&nbsp;&nbsp;
 |style="white-space:nowrap"| Linear
-|style="white-space:nowrap"|&nbsp;&nbsp; <i>N</i> = a + br + cr<sup>2</sup> + dr<sup>3</sup>  + er<sup>4</sup> + fr<sup>5</sup> + ... + ir<sup>8</sup>&nbsp;&nbsp;
+|style="white-space:nowrap"|&nbsp;&nbsp; <i>N</i> = a + br + cr<sup>2</sup> + dr<sup>3</sup>  + er<sup>4</sup> + fr<sup>5</sup> + ... + xr<sup>n</sup>&nbsp;&nbsp;
 | &nbsp;&nbsp;&nbsp;<br>Outputs a ''N vs Distance'' profile. Data is fitted to a polynomial function<ref name="Stulic"/>. [[#CriticalRadius|Critical radius]], [[#CriticalValue|Critical value]] and [[#MeanValueOfFunction|Mean value of function]] are calculated<br>&nbsp;
 |-
 | <span id="eq2">(2)</span>&nbsp;&nbsp;
@@ -129,10 +129,10 @@ The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile wit
 </center>
 
 
-<span style="display: inline-block; width: 25px">'''''N'''''</span> For 2D images, the <u>N</u>umber of clusters of pixels (8–connected) intersecting the circumference of radius ''r''<br>
-<span style="display: inline-block; width: 25px">&nbsp;</span> For 3D images, the <u>N</u>umber of clusters of voxels (26-connected) intersecting the surface of the sphere of radius ''r''
+<span style="display: inline-block; width: 25px">'''''N'''''</span> For 2D images, the <span style="border-bottom:1px dashed #aaa;">N</span>umber of clusters of pixels (8–connected) intersecting the circumference of radius ''r''<br>
+<span style="display: inline-block; width: 25px">&nbsp;</span> For 3D images, the <span style="border-bottom:1px dashed #aaa;">N</span>umber of clusters of voxels (26-connected) intersecting the surface of the sphere of radius ''r''
 
-<span style="display: inline-block; width: 25px">'''''r'''''</span> Distance from center of analysis (<u>r</u>adius of Sholl circle/sphere)
+<span style="display: inline-block; width: 25px">'''''r'''''</span> Distance from center of analysis (<span style="border-bottom:1px dashed #aaa;">r</span>adius of Sholl circle/sphere)
 
 <span style="display: inline-block; width: 25px">'''''log'''''</span>Natural logarithm, the logarithm to the base ''e''
 
@@ -142,7 +142,7 @@ The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile wit
 In this case, the normalization is performed against the area of the annulus formed between the circumferences at ''r'' ± ''Radius step size''/2 (2D images), or against the volume between the two spheres at ''r'' ± ''Radius step size''/2 (3D images).<br>
 
 == Metrics ==
-Morphometric descriptors and other properties of the arbor are printed to a dedicated table named ''Sholl Results''. Listed values can be displayed in scientific notation and with the precision specified in <u>Analyze▷Set Measurements...</u> The first columns log analysis parameters: ''Image filename and voxel unit'', ''Lower'' and ''Upper Threshold levels'', ''X,Y'' (in pixels) and ''Z'' (slice number) coordinates of center of analysis, ''Starting'' and ''Ending radius'', ''Radius step'', ''Number of Samples per Radius'', etc. Other parameters are described below.
+Morphometric descriptors and other properties of the arbor are printed to a dedicated table named ''Sholl Results''. Listed values can be displayed in scientific notation and with the precision specified in <span style="border-bottom:1px dashed #aaa;">Analyze▷ Set Measurements...</span> The first columns log analysis parameters: ''Image filename and voxel unit'', ''Lower'' and ''Upper Threshold levels'', ''X,Y'' (in pixels) and ''Z'' (slice number) coordinates of center of analysis, ''Starting'' and ''Ending radius'', ''Radius step'', ''Number of Samples per Radius'', etc. Other parameters are described below.
 
 [[File:BitmapSholl-Table.png|100%|center|Descriptors and metrics are listed in the Sholl Table]]
 
@@ -161,18 +161,18 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 :The median value of sampled intersections.
 
 ;Skewness<span id="Skewness"></span>
-:The [http://en.wikipedia.org/wiki/Skewness skewness] of the sampled data, an indication of how symmetrical the distribution is around its mean. Positive values indicate an asymmetrical distribution with a longer tail to the right. Negative values indicate data with a longer tail to the left. Albeit arbitrary, a common rule of thumb considers that if the skewness is greater than 1.0 (or less than -1.0), the distribution may be considered far from symmetrical.
+:The [http://en.wikipedia.org/wiki/Skewness skewness] of the sampled data, an indication of how symmetrical the distribution is around its mean. Positive values indicate an asymmetrical distribution with a longer tail to the right. Negative values indicate data with a longer tail to the left. A popular rule of thumb considers that if the skewness is greater than 1.0 (or less than -1.0), the distribution may be considered far from symmetrical.
 : See also [[#Skewness-fitted|Skewness (fitted data)]]
 
 ;Kurtosis<span id="Kurtosis"></span>
 :The [http://en.wikipedia.org/wiki/Kurtosis kurtosis] of the sampled data, which quantifies whether the shape of the distribution matches the Gaussian distribution, assuming that a Gaussian distribution has a kurtosis of 0. A distribution more peaked than a Gaussian has a positive kurtosis while a negative value indicates a flatter distribution.
 : See also [[#Kurtosis-fitted|Kurtosis (fitted data)]]
 
-;<span id="MaxInters></span>Highest count of intersections (''Max inters.'')
+;<span id="MaxInters"></span>Highest count of intersections (''Max inters.'')
 :The maximum value of sampled intersections, i.e., the maximum in a linear [''N'' vs ''Distance''] profile, reflecting the highest number of processes/branches in the arbor.
 : See also [[#CriticalValue|Critical value]]
 
-;<span id="MaxIntersRadius></span>Radius of highest count of intersections (''Max inters. radius'')
+;<span id="MaxIntersRadius"></span>Radius of highest count of intersections (''Max inters. radius'')
 :The distance at which the ''Highest count of intersections'' occurred, reflecting sites of highest branch density. Note that if the same maximum occurs multiple times, only the first distance is considered.
 : See also [[#CriticalRadius|Critical radius]]
 
@@ -236,9 +236,9 @@ Previous authors have used different terms to describe the largest value taken b
 <span id="Importing"></span>
 
 == Importing Profiles Obtained Elsewhere ==
-[[ File:BitmapSholl-TabularPrompt.png|right ]]As of version 3.1 it is possible to analyze profiles obtained from traced data. This feature is specifically targeted at users of [[Simple Neurite Tracer]], Fiji's remarkable framework for semi-automated reconstruction of neuronal arbors, but can be extended to tracings obtained with other software.
+[[ File:BitmapSholl-TabularPrompt.png|right |Tabular prompt (version 3.1)]]As of version 3.1 it is possible to analyze profiles obtained from traced data. This feature is specifically targeted at users of [[Simple Neurite Tracer]], Fiji's remarkable framework for semi-automated reconstruction of neuronal arbors, but can be extended to tracings obtained with other software.
 
-This option is triggered by running  <u>Analyze▷ Sholl Analysis...</u> while holding the ''Alt'' key, which prompts a simplified version of the main dialog [[#Ramification Indices and Curve Fitting|described above]].
+This option is triggered by running  <span style="border-bottom:1px dashed #aaa;">Analyze▷ Sholl Analysis...</span> while holding the ''Alt'' key, which prompts a simplified version of the main dialog [[#Ramification Indices and Curve Fitting|described above]].
 
 #Load tracings (typically a .swc or a .traces file) into [[Simple_Neurite_Tracer:_Basic_Instructions|Simple Neurite Tracer]]
 #Retrieve the linear Sholl profile by following these [[Simple_Neurite_Tracer:_Sholl_analysis|instructions]]
@@ -246,7 +246,7 @@ This option is triggered by running  <u>Analyze▷ Sholl Analysis...</u> while h
 :If data does not need to be edited:
 :#Empty/close the ImageJ Results Table (if open) and run the plugin while holding the ''Alt'' key.  You will be prompted to indicate the path of the saved  profile. Because the plugin is aware of the file's directory, saving options are available.
 :If data needs to be modified, the profile must be first loaded by ImageJ:
-:#You can do so by dragging & dropping its file into the main ImageJ window, or by using <u>File▷ Import▷ Results...</u>
+:#You can do so by dragging & dropping its file into the main ImageJ window, or by using <span style="border-bottom:1px dashed #aaa;">File▷ Import▷ Results...</span>
 :#Press the backspace key over selected rows to exclude them from the analysis.
 :#Run the plugin while holding the ''Alt'' key. Because the plugin did not keep track of any directory, saving options are disabled.
 
@@ -255,16 +255,16 @@ Notes:
 *In a [[#Batch_Analysis_of_Previously_Obtained_Profiles|macro]], the [http://imagej.nih.gov/ij/developer/macro/functions.html#setKeyDown setKeyDown("alt")] macro function can be used input tabular data.
 
 == Batch Processing ==
-It is fairly simple to automate (see [[Script Editor]] and  [[Scripting Help]]) the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji ([[Introduction into Macro Programming|ImageJ Macro Language]], [[Beanshell_Scripting|Beanshell]], [[Javascript_Scripting|Javascript]], [[JRuby_Scripting|JRuby]], [[Jython_Scripting|Jython]], [[Clojure_Scripting|Clojure]], ...).
+It is fairly simple to [[Scripting Help|automate]] the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji ([[Introduction into Macro Programming|ImageJ Macro Language]], [[Beanshell_Scripting|Beanshell]], [[Javascript_Scripting|Javascript]], [[JRuby_Scripting|JRuby]], [[Jython_Scripting|Jython]], [[Clojure_Scripting|Clojure]], ...).
 
 === Batch Analysis of Bitmap Images ===
 Any macro or script must allow the Sholl Analysis plugin to access the ROI marking the center of analysis. One could instruct ImageJ to read the coordinates of pre-existing ROIs from a text file, store a list of line selections in the ROI Manager, or write a morphology-based routine that detects the center of the arbor. However, marking the center of analysis is probably something that you will want to do manually. Here is a workflow:
 
 #'''Place all the .tif images to be processed in a single folder'''.
-#Select the Point Selection Tool in the main ImageJ window and activate the Threshold widget (<u>Image▷ Adjust▷ Threshold...</u>). Make sure ''Set stack positions'' is active in the <u>Image▷ Overlay▷ Overlay Options...</u> prompt. Open the first image.
+#Select the Point Selection Tool in the main ImageJ window and activate the Threshold widget (<span style="border-bottom:1px dashed #aaa;">Image▷ Adjust▷ Threshold...</span>). Make sure ''Set stack positions'' is active in the <span style="border-bottom:1px dashed #aaa;">Image▷ Overlay▷ Overlay Options...</span> prompt. Open the first image.
 #'''Adjust threshold levels'''. Press the ''Apply'' button of the Threshold widget to create a binary image.
-#Select the z-slice containing the center of analysis. '''Click over the center with the Point Selection Tool and press ''B''''' (shortcut for <u>Image▷ Overlay▷ Add Selection...</u>). This will add the point ROI to the image overlay. Save the image as .TIFF by pressing ''S'' (<u>File▷ Save As...▷ Tiff...</u>).
-#'''Repeat the last 2 steps''' until all images are marked, using ''Shift'' + ''O'' (shortcut for <u>File▷ Open Next</u>) to iterate through all the images.
+#Select the z-slice containing the center of analysis. '''Click over the center with the Point Selection Tool and press ''B''''' (shortcut for <span style="border-bottom:1px dashed #aaa;">Image▷ Overlay▷ Add Selection...</span>). This will add the point ROI to the image overlay. Save the image as .TIFF by pressing ''S'' (<span style="border-bottom:1px dashed #aaa;">File▷ Save As...▷ Tiff...</span>).
+#'''Repeat the last 2 steps''' until all images are marked, using ''Shift'' + ''O'' (shortcut for <span style="border-bottom:1px dashed #aaa;">File▷ Open Next</span>) to iterate through all the images.
 
 <div style="float:center;
             border: 1px solid #ccc;
@@ -273,14 +273,14 @@ Any macro or script must allow the Sholl Analysis plugin to access the ROI marki
             text-align:center;
             margin-bottom: 1em;
             background-color: #ffefbe;">
-When working with ROIs, it is critical that you work with .tif files because only this format keeps track of image overlays. The <u>Process▷ Batch▷ Convert...</u> command allows bulk conversion between image formats.</div>
+When working with ROIs, it is critical that you work with .tif files because only this format keeps track of image overlays. The <span style="border-bottom:1px dashed #aaa;">Process▷ Batch▷ Convert...</span> command allows bulk conversion between image formats.</div>
 
-Now that all the images are marked, we just need a working macro. We will open the Macro Recorder (<u>Plugins▷ Macros▷ Record...</u>) and run ''Sholl Analysis'' on one of the images to find out how to call the plugin with suitable parameters. The single line of code that appears in the recorder window will look something like this:
+Now that all the images are marked, we just need to ask ImageJ to generate some lines of code. We will open the Macro Recorder (<span style="border-bottom:1px dashed #aaa;">Plugins▷ Macros▷ Record...</span>) and run ''Sholl Analysis'' on one of the images to find out how to call the plugin with suitable parameters. In this example, we will use the ImageJ macro language. The single line of code that appears in the recorder window will look something like this:
 <source lang="java">
 run("Sholl Analysis...", "starting=10 ending=400 radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 </source>
 
-Now, we just need to assemble a working macro to be pasted in the <u>Process▷ Batch▷ Macro...</u> prompt:
+Now, we just need to assemble a working macro to be pasted in the <span style="border-bottom:1px dashed #aaa;">Process▷ Batch▷ Macro...</span> prompt:
 <source lang="java">
 // Get the number of ROIs of the image overlay
 nROIs = Overlay.size;
@@ -310,7 +310,7 @@ Of course you can also automate any preceding steps. However, do not forget to e
 // Run the plugin
 run("Sholl Analysis...", "starting=10 ending=NaN radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 </source>
-That's it. Use the Macro Recorder to generate the customizations you will need before parsing the entire folder of images with <u>Process▷ Batch▷ Macro...</u>
+That's it. Use the Macro Recorder to generate the customizations you will need before parsing the entire folder of images with <span style="border-bottom:1px dashed #aaa;">Process▷ Batch▷ Macro...</span>
 
 '''Tip:''' As you may have noticed, ImageJ plugins are controlled by a single sentence  in which arguments are separated by a space. Input fields and choice lists appear as ''keyword=value'' pairs, active checkboxes by a single keyword. Options that are not needed can be omitted. This makes it easier to generate customizable macros:
 <source lang="java">
@@ -354,11 +354,11 @@ function closeResults() {
 Examples to be added soon.
 
 == Auxiliary Commands ==
-;File▷Open Samples▷ddaC Neuron
-:Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run <u>Image▷Show Info...</u> to know more about this cell type.
+;File▷ Open Samples▷ ddaC Neuron
+:Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run <span style="border-bottom:1px dashed #aaa;">Image▷ Show Info...</span> to know more about this cell type.
 
-;Help▷About Plugins▷About Sholl Analysis...
-:Retrieves information about the plugin version and a link to its Git source code repository.
+;Help▷ About Plugins▷ About Sholl Analysis...
+:Retrieves information about the plugin version and a link to its Git source code [https://github.com/tferr/ASA repository].
 
 == FAQ ==
 #<span id="faq1"></span>'''What is the difference between ''Sholl Analysis'' and an homonymous plugin released by the Ghosh laboratory in 2005'''?
@@ -374,30 +374,33 @@ Examples to be added soon.
 #<span id="faq6"></span>'''Why so many parameters?'''
 #:The plugin is designed for the analysis of a wide diversity of arbors and it is not biased to any particular cell type. The only way to ensure this is by giving users full control over the mathematical techniques used by the plugin to analyze sampled data.
 #<span id="faq7"></span>'''How can I save/edit the ''Sholl Results'' table?'''
-#: Select the table, then choose <u>File▷ Save As…</u>The filename extension can be specified using the <u>Edit▷ Options▷ Input/Output…</u> command (see the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
+#: Select the table, then choose <span style="border-bottom:1px dashed #aaa;">File▷ Save As…</span>The filename extension can be specified using the <span style="border-bottom:1px dashed #aaa;">Edit▷ Options▷ Input/Output…</span> command (see the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
 #<span id="faq8"></span>'''Can I modify the number of decimal places used by the ''Sholl Results'' table?'''
-#: Yes. Use the options ''Decimal places'' and ''Scientific notation'' in <u>Analyze▷ Set Measurements…</u>
+#: Yes. Use the options ''Decimal places'' and ''Scientific notation'' in <span style="border-bottom:1px dashed #aaa;">Analyze▷ Set Measurements…</span>
 #<span id="faq9"></span>'''I cannot see the option to save the results. Why?'''
 #: The image you are trying to analyze is not saved locally. Saving it to a local directory (e.g., your Desktop or Home folder) should re-enable it.
-#<span id="faq10"></span>'''What can I do with the ''Sholl mask''?'''
+#<span id="faq10"></span>'''What is the ''Sholl mask''?'''
 #: The Sholl mask ([[#Introduction|see example above]]) is just a maximum intensity projection of the analyzed cell in which intersection counts are used as pixel intensities. As explained in [[#Output_Options|Output Options]], its LUT can be modified, and intensities calibrated using ImageJ default commands. 
 #<span id="faq11"></span>'''The 3D profile looks ''worse'' than the 2D profile of the Maximum Intensity Projection of the same cell. Why?'''
-#: An anisotropic voxel size will have a strong impact on [[#StepSize|step size]]. On the other hand, 2D and 3D images can be sampled differently depending on the [[#Parameters|options chosen]]. If <u>Image▷ Properties…</u> reports the appropriate spatial calibration, make sure to read [[#Multiple_Samples_and_Noise_Reduction|Multiple Samples and Noise Reduction]] before deciding which type of images to use.
+#: An anisotropic voxel size will have a strong impact on [[#StepSize|step size]]. On the other hand, 2D and 3D images can be sampled differently depending on the [[#Parameters|options chosen]]. If <span style="border-bottom:1px dashed #aaa;">Image▷ Properties…</span> reports the appropriate spatial calibration, make sure to read [[#Multiple_Samples_and_Noise_Reduction|Multiple Samples and Noise Reduction]] before deciding which type of images to use.
 #<span id="faq12"></span>'''The shape of the polynomial changes at the edges of the profile. Why?'''
 #: Inflection points at [[#StartRadius|starting/ending radius]] are usually associated with a poor fit and/or the fact that all the radii in which no intersections were counted are ignored. The latter is required to calculate the [[#ShollDecay|Sholl regression coefficient]], as ''log(0)'' is undefined.
 #<span id="faq13"></span>'''My images do not look that great. How can I treat them prior to analysis?'''
 #: Have a look at [[#Pre-processing| Pre-processing]].
 #<span id="faq14"></span>'''None of the fitting options is suitable for my datasets. What should I do?'''
-#: You could explore ImageJ's built-in CurveFitter (<u>Analyze▷ Tools▷ Curve Fitting…</u>), but ultimately you may need to use dedicated software. You could also [[#faq15|contact the developers]] to see if it would be possible to extend the repertoire of fitting options.
+#: You could explore ImageJ's built-in CurveFitter (<span style="border-bottom:1px dashed #aaa;">Analyze▷ Tools▷ Curve Fitting…</span>), but ultimately you may need to use dedicated software. You could also [[#faq15|contact the developers]] to see if it would be possible to extend the repertoire of fitting options.
 #<span id="faq15"></span>'''I found a bug. How do I report it?'''
 #: Use Fiji's built-in [[Report a Bug]] command. Alternatively, report it to the [http://imagej.nih.gov/ij/list.html ImageJ mailing list]. Don't forget to include the steps needed to reproduce the problem.
 #<span id="faq16"></span>'''This documentation is not that useful. How long do I have to wait until it gets improved?'''
 #: Around 20 seconds. This is the time it will take you to [[Help:Contents#New_accounts|create an account]] on this wiki. Once you have created one, you will be able to improve this page yourself.
 
 == Non-Fiji users ==
-If you are not using Fiji, download ''Sholl_Analysis.jar'' from the direct link listed on the [[#top|top of this page]] and place it in the ''ImageJ/plugins/'' directory. Alternatively, drag the downloaded jar and drop it on the main window. Restart ImageJ and run the new <u>Analyze▷Sholl Analysis...</u> command.
+If you are not using Fiji, download ''Sholl_Analysis.jar'' from the direct link listed on the [[#top|top of this page]] and place it in the ''ImageJ/plugins/'' directory. Alternatively, drag the downloaded jar and drop it on the main window. Restart ImageJ and run the new <span style="border-bottom:1px dashed #aaa;">Analyze▷ Sholl Analysis...</span> command.
 
-Please note that Fiji is the most convenient way of keeping your ImageJ distribution up-to-date. Without access to Fiji's [[Update_Fiji|built-in updater]], you are strongly advised to upgrade ImageJ to its latest version using <u>Help▷Update ImageJ...</u>. Without Fiji, you will also have to manually update the Sholl Analysis plugin by checking the [https://github.com/tferr/ASA/blob/master/Notes Release Notes].
+Please note that Fiji is the most convenient way of keeping your ImageJ distribution up-to-date. Without access to Fiji's [[Update_Fiji|built-in updater]], you are strongly advised to upgrade ImageJ to its latest version using <span style="border-bottom:1px dashed #aaa;">Help▷ Update ImageJ...</span> Without Fiji, you will also have to manually update the Sholl Analysis plugin by checking the [https://github.com/tferr/ASA/blob/master/Notes Release Notes].
+
+== Release Notes ==
+Available on [https://raw.github.com/tferr/ASA/master/Notes Github].
 
 == Related Links ==
 * '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]]''' Mark Longair's plugin for semi-automated three-dimensional tracing, featuring [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl analysis]] for traced cells
@@ -410,9 +413,6 @@ Please note that Fiji is the most convenient way of keeping your ImageJ distribu
 
 == References ==
 <references/>
-
-== Release Notes ==
-Available [https://raw.github.com/tferr/ASA/master/Notes here].
 
 == License ==
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
