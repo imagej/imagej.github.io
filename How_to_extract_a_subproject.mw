@@ -10,7 +10,13 @@ The following steps are required:
 
 # If it is a GitHub repository and you can change the settings, activate the ''Jenkins (Git plugin)'' hook in ''Settings>Service Hooks'' and set the URL to ''http://jenkins.imagej.net/''
 
-# Add a Jenkins job to the [http://jenkins.imagej.net/view/Fiji/ Fiji view] of ImageJ's Jenkins server. The easiest way is to copy the ''TrackMate'' job and edit the description as well as the repository URL. If the Maven configuration of the external plugin does not list ImageJ's Maven repositories, you will have to insert ''-DaltDeploymentRepository=imagej.snapshots::default::http://maven.imagej.net/content/repositories/snapshots'' into the ''mvn -DupdateReleaseInfo=true deploy'' call.
+# Add a Jenkins job to the [http://jenkins.imagej.net/view/Fiji/ Fiji view] of ImageJ's Jenkins server. The easiest way is to copy the ''TrackMate'' job and edit the description as well as the repository URL. If the Maven configuration of the external plugin does not list ImageJ's Maven repositories, you will have to insert:
+<pre>-DaltDeploymentRepository=imagej.snapshots::default::http://maven.imagej.net/content/repositories/snapshots
+</pre>
+into the call:
+<pre>
+mvn -DupdateReleaseInfo=true deploy
+</pre>
 
 # Hit the ''Build Now'' button in the Jenkins job to trigger a build and deployment of the plugin.
 
