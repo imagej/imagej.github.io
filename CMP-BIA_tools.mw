@@ -3,7 +3,7 @@
 | software               = ImagejJ/Fiji
 | author                 = Jiří Borovec ([http://cmp.felk.cvut.cz/~borovji3/ web])
 | maintainer             = Jiří Borovec ([mailto:jiri.borovec(at)fel.cvut.cz email])
-| filename               = [http://cmp.felk.cvut.cz/~borovji3/ImageJ/CMP_BIA-0.2-SNAPSHOT.jar CMP_BIA-0.2.jar]
+| filename               = [http://sites.imagej.net/CMP-BIA/plugins/ CMP_BIA-0.2.jar]
 | source                 = [https://github.com/Borda/ij-CMP-BIA GitHub.com]
 | released               = 2013
 | version                = 0.2
@@ -58,6 +58,7 @@ To show of handle segmentation results we presented a few approaches:
 [[Image:Human Breast Cytokeratin jSLIC.jpg|300px|Sample of jSLIC segmented histological tissue.]]
 [[Image:Human Breast Cytokeratin jSLIC 50px 0-2.png|300px|Sample of jSLIC segmented histological tissue.]]
 [[Image:jSLIC-AuPbSn40.jpg|340px|Sample of jSLIC segmented AuPbSn40.]]
+[[Image:jSLIC-Leaf.jpg|260px|Sample of jSLIC segmented Leaf.]]
 
 = References =
 
