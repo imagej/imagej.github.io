@@ -200,11 +200,11 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 ;Regression R<sup>2</sup> (''Regression R^2'')
 :The coefficient of determination of the linear regression described in [[#eq3|(3)]] and [[#eq4|(4)]].
 
-;<span id="CriticalValue"></span>Critical value (CV)
-:The local maximum of the polynomial fit, i.e, ''N'' at ''CR'' in [[#eq1|(1)]]. Sometimes abbreviated as ''N<sub>m</sub>''.
+;<span id="CriticalValue"></span>Critical value
+:The local maximum of the polynomial fit, i.e, ''N'' at ''Critical radius'' in [[#eq1|(1)]]. Sometimes abbreviated as ''N<sub>m</sub>''.
 : See also [[#MaxInters|Max inters.]]
 
-;<span id="CriticalRadius"></span>Critical radius (CR)
+;<span id="CriticalRadius"></span>Critical radius
 :The distance at which ''Critical value'' occurs. Calculated with a precision of 1/1000 of ''Radius step size''. Sometimes abbreviated as ''r<sub>c</sub>''.
 : See also [[#MaxIntersRadius|Max inters. radius]]
 
@@ -236,6 +236,7 @@ Previous authors have used different terms to describe the largest value taken b
 :The coefficient of determination of the polynomial fit described in [[#eq1|(1)]].
 
 <span id="Importing"></span>
+
 == Importing Profiles Obtained Elsewhere ==
 [[ File:BitmapSholl-TabularPrompt.png|right ]]As of version 3.1 it is possible to analyze profiles obtained from traced data. This feature is specifically targeted at users of [[Simple Neurite Tracer]], Fiji's remarkable framework for semi-automated reconstruction of neuronal arbors, but can be extended to tracings obtained with other software.
 
