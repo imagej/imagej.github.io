@@ -21,7 +21,8 @@ into the call:
 If you want to add an external plugin that is currently an internal plugin, i.e. its source code is maintained in [https://github.com/fiji/fiji fiji.git], you will need to perform the following steps in the same commit that adds the plugin as an external one:
 
 # remove the directory ''src-plugins/<artifactId>/'',
-# remove the respective ''<module>'' line in ''src-plugins/pom.xml'', and
-# adjust ''.gitignore'' to list ''/plugins/<artifactId>-[0-9]*.jar'' in the section ''Dependencies copied by MiniMaven'' instead of ''Files generated from sources in src-plugins/''.
+# remove the respective ''<module>'' line in ''src-plugins/pom.xml'',
+# adjust ''.gitignore'' to list ''/plugins/<artifactId>-[0-9]*.jar'' in the section ''Dependencies copied by MiniMaven'' instead of ''Files generated from sources in src-plugins/'', and finally
+# edit the plugin's wiki page to reflect the new Git repository location.
 
 [[Category:Development]]
