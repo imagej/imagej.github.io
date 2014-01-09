@@ -5,19 +5,16 @@ For example, [[TrackMate]] started out as an internal plugin, but for ease of de
 = How to add a new external plugin =
 
 The following steps are required:
-
-# Ensure that the plugin has a public repository (it can be in the ''fiji'' org on GitHub or outside, that does not matter).
-# If it is a GitHub repository and you can change the settings, activate the ''Jenkins (Git plugin)'' hook in ''Settings>Service Hooks'' and set the URL to ''http://jenkins.imagej.net/''
-# Add a Jenkins job to the [http://jenkins.imagej.net/view/Fiji/ Fiji view] of ImageJ's Jenkins server. The easiest way is to copy the ''TrackMate'' job and edit the description as well as the repository URL. If the Maven configuration of the external plugin does not list ImageJ's Maven repositories, you will have to insert:
-<pre>-DaltDeploymentRepository=imagej.snapshots::default::http://maven.imagej.net/content/repositories/snapshots
-</pre>
+<ol>
+<li>Ensure that the plugin has a public repository (it can be in the ''fiji'' org on GitHub or outside, that does not matter).</li>
+<li>If it is a GitHub repository and you can change the settings, activate the ''Jenkins (Git plugin)'' hook in ''Settings>Service Hooks'' and set the URL to ''http://jenkins.imagej.net/''</li>
+<li>Add a Jenkins job to the [http://jenkins.imagej.net/view/Fiji/ Fiji view] of ImageJ's Jenkins server. The easiest way is to copy the ''TrackMate'' job and edit the description as well as the repository URL. If the Maven configuration of the external plugin does not list ImageJ's Maven repositories, you will have to insert:
+<pre>-DaltDeploymentRepository=imagej.snapshots::default::http://maven.imagej.net/content/repositories/snapshots</pre>
 into the call:
-<pre>
-mvn -DupdateReleaseInfo=true deploy
-</pre>
-
-# Hit the ''Build Now'' button in the Jenkins job to trigger a build and deployment of the plugin.
-# Once the Jenkins job deployed the external plugin, add the current version to ''pom.xml'''s ''<properties>'' section and then add it as a ''<dependency>'' in ''external/pom.xml''. You should also add the base name of the repository to ''external/.gitignore'' and mention the URL to the external plugin's source code repository in the commit message.
+<pre>mvn -DupdateReleaseInfo=true deploy</pre>
+</li>
+<li>Hit the ''Build Now'' button in the Jenkins job to trigger a build and deployment of the plugin.</li>
+<li>Once the Jenkins job deployed the external plugin, add the current version to ''pom.xml'''s ''<properties>'' section and then add it as a ''<dependency>'' in ''external/pom.xml''. You should also add the base name of the repository to ''external/.gitignore'' and mention the URL to the external plugin's source code repository in the commit message.</li>
 
 = How to make an internal plugin an external one =
 
