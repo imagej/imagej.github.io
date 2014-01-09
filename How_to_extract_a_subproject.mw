@@ -7,9 +7,7 @@ For example, [[TrackMate]] started out as an internal plugin, but for ease of de
 The following steps are required:
 
 # Ensure that the plugin has a public repository (it can be in the ''fiji'' org on GitHub or outside, that does not matter).
-
 # If it is a GitHub repository and you can change the settings, activate the ''Jenkins (Git plugin)'' hook in ''Settings>Service Hooks'' and set the URL to ''http://jenkins.imagej.net/''
-
 # Add a Jenkins job to the [http://jenkins.imagej.net/view/Fiji/ Fiji view] of ImageJ's Jenkins server. The easiest way is to copy the ''TrackMate'' job and edit the description as well as the repository URL. If the Maven configuration of the external plugin does not list ImageJ's Maven repositories, you will have to insert:
 <pre>-DaltDeploymentRepository=imagej.snapshots::default::http://maven.imagej.net/content/repositories/snapshots
 </pre>
