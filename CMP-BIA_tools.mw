@@ -53,12 +53,14 @@ To show of handle segmentation results we presented a few approaches:
 * ''Show final segmentation'' - add one more layer and fill each superpixel by a random colour. 
 * ''Save segmentation into file'' - export the superpixel segmentation into a text file as segmentation matrix with labels. The first line mark the image dimensions (''Dims: {width} {height}'') and then follow the labeling where each number represents  the superpixel index. (Note, number of lines is equal to ''{image width}'' and there is ''{image height}'' number of indexes which are splitted by blanc space.) Have a look at sample file [[File:jSLIC-AuPbSn40.zip| jSLIC-AuPbSn40]]. 
 
-[[Image:jSLIC-Lena-ROIs.jpg|220px|Sample of jSLIC segmented Lena with ROI manager.]]
-[[Image:jSLIC-Lena-ROIs-2.jpg|220px|Sample of jSLIC segmented  Lena with ROI manager.]]
-[[Image:Human Breast Cytokeratin jSLIC.jpg|300px|Sample of jSLIC segmented histological tissue.]]
-[[Image:Human Breast Cytokeratin jSLIC 50px 0-2.png|300px|Sample of jSLIC segmented histological tissue.]]
-[[Image:jSLIC-AuPbSn40.jpg|340px|Sample of jSLIC segmented AuPbSn40.]]
-[[Image:jSLIC-Leaf.jpg|260px|Sample of jSLIC segmented Leaf.]]
+<gallery mode="packed-hover">
+Image:jSLIC-Lena-ROIs.jpg|Sample of jSLIC segmented Lena with ROI manager.
+Image:jSLIC-Lena-ROIs-2.jpg|Sample of jSLIC segmented  Lena with ROI manager.
+Image:Human Breast Cytokeratin jSLIC.jpg|Sample of jSLIC segmented histological tissue.
+Image:Human Breast Cytokeratin jSLIC 50px 0-2.png|Sample of jSLIC segmented histological tissue.
+Image:jSLIC-AuPbSn40.jpg|Sample of jSLIC segmented AuPbSn40.
+Image:jSLIC-Leaf.jpg|Sample of jSLIC segmented Leaf.
+</gallery>
 
 = References =
 
