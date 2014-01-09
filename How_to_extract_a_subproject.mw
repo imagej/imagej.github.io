@@ -60,7 +60,7 @@ Then update Fiji's Git repository:
 <li>Adjust ''.gitignore'' to list ''/plugins/<artifactId>-[0-9]*.jar'' in the section ''Dependencies copied by MiniMaven'' instead of ''Files generated from sources in src-plugins/''</li>
 <li>Commit the result:
 <pre>git commit -a</pre>
-with a commit message modeled after [https://github.com/fiji/fiji/commit/bd88afe2dfccf71d30141dc3270570bdc8e977d8 this one]</li>
+with a commit message modeled after [https://github.com/fiji/fiji/commit/bd88afe2dfccf71d30141dc3270570bdc8e977d8 this one].</li>
 </ol>
 
 == Changes to online resources ==
