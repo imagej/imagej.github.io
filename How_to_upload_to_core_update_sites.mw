@@ -26,6 +26,8 @@ In the ''Manage update sites'' dialog, on the Fiji update site line, add the fol
 
 Note that your username will always start with an upper case letter. It should look like this:
 
+[[File:Update_site_fiji_creds.png|770px]]
+
 You can now close the ''Manage update sites'' window and go on to [[#Uploading your resources | Uploading your resources]].
 
 == Configuring ImageJ2 update site ==
@@ -38,6 +40,8 @@ In the ''Manage update sites'' dialog, on the ImageJ update site line, add the f
 * Directory on host = '''/home/imagej/update-site/'''
 
 It should look like this:
+
+[[File:Update_site_ij2_creds.png|770px]]
 
 You can now close the ''Manage update sites'' window and go on to [[#Uploading your resources | Uploading your resources]].
 
