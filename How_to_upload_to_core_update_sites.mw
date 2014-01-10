@@ -32,7 +32,7 @@ You can now close the ''Manage update sites'' window and go on to [[#Uploading y
 
 == Configuring ImageJ2 update site ==
 
-The ImageJ2 update site uses [http://en.wikipedia.org/wiki/Secure_Shell ssh] authentication. You will need a login with [http://update.imagej.net the imageJ update site].
+The ImageJ2 update site uses [http://en.wikipedia.org/wiki/Secure_Shell ssh] authentication. You will need a login with [http://update.imagej.net the imageJ update site] that some administrator will have to add to the ''ij-update'' group.
 
 In the ''Manage update sites'' dialog, on the ImageJ update site line, add the following information:
 
