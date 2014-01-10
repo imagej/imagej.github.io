@@ -1,8 +1,10 @@
 {{Infobox Plugin
-| software        = ImageJ
+| software        = ImageJ/Fiji
 | name            = Strahler Analysis
 | author          = Tiago Ferreira
-| filename        = [https://github.com/tferr/Scripts/blob/master/Strahler_Analysis.bsh Strahler_Analysis.bsh]
+| maintainer     = [mailto:tiago_dot_ferreira_at_mail_dot_mcgill_dot_ca Tiago Ferreira]
+| filename        = [https://raw.github.com/tferr/Scripts/master/Strahler_Analysis.bsh Strahler_Analysis.bsh]
+| source         = [https://github.com/tferr/Scripts on GitHub]
 | released        = March 2013
 | status          = Experimental
 | category        = [[:Category:Skeleton|Skeleton]], [[:Category:Analysis|Analysis]], [[:Category:Scripting|Scripting]], [[:Category:Plugins|Plugins]]
@@ -18,11 +20,11 @@ A [[Beanshell_Scripting|BeanShell]] script that performs Strahler analysis on to
 
 There are different approaches to classify a tree-like structure by its Horton-Strahler numbers. One is iterative tree simplification, a method that requires detecting all terminal branches and all the degree-one paths leading to them.
 
-[[AnalyzeSkeleton]] is able to detect and prune terminal branches, which, in the case of radial arbors  is usually sufficient to provide satisfactory simplification of the structure. As explained in [https://github.com/tferr/Scripts/blob/master/Strahler_Analysis.bsh Strahler_Analysis.bsh], the script takes a grayscale image containing a single arbor, and calls [[AnalyzeSkeleton]] iteratively to retrieve Horton-Strahler counts from the [[Skeletonize3D|skeletonized centerlines]] of the image/stack.
+[[AnalyzeSkeleton]] is able to detect and prune terminal branches, which, in the case of radial arbors  is usually sufficient to provide satisfactory simplification of the structure. As explained in [https://raw.github.com/tferr/Scripts/master/Strahler_Analysis.bsh Strahler_Analysis.bsh], the script takes a grayscale image containing a single arbor, and calls [[AnalyzeSkeleton]] iteratively to retrieve Horton-Strahler counts from the [[Skeletonize3D|skeletonized centerlines]] of the image/stack.
 
 
 == Installation ==
-Download [https://github.com/tferr/Scripts/blob/master/Strahler_Analysis.bsh Strahler_Analysis.bsh] and place it in the plugins/ folder using the Plugins▷ Install... command. 
+Download [https://raw.github.com/tferr/Scripts/master/Strahler_Analysis.bsh Strahler_Analysis.bsh] and place it in the plugins/ folder using the Plugins▷ Install... command. 
 If you are not using Fiji, the script should remind you to install [[AnalyzeSkeleton]] and [[Skeletonize3D]], if you have not done so.
 
 
