@@ -14,7 +14,6 @@ A [[Beanshell_Scripting|BeanShell]] script that performs Strahler analysis on to
 
 [http://en.wikipedia.org/wiki/Strahler_number Strahler numbering] is a numerical procedure that summarizes the branching complexity of a mathematical tree. In the life sciences, it is useful to study the complexity of radial arbors (i.e., structures that branch out evenly in multiple directions). In neurobiology, radial ramification is a hallmark of certain cell types such as Retinal Ganglion Cells, Chandelier neurons or Drosophila Class IV sensory neurons.
 
-
 == Description == 
 [[Image:StrahlerAnimation.gif|350px|thumb|right|Strahler Analysis by iterative tree simplification]]
 
@@ -22,11 +21,9 @@ There are different approaches to classify a tree-like structure by its Horton-S
 
 [[AnalyzeSkeleton]] is able to detect and prune terminal branches, which, in the case of radial arbors  is usually sufficient to provide satisfactory simplification of the structure. As explained in [https://raw.github.com/tferr/Scripts/master/Strahler_Analysis.bsh Strahler_Analysis.bsh], the script takes a grayscale image containing a single arbor, and calls [[AnalyzeSkeleton]] iteratively to retrieve Horton-Strahler counts from the [[Skeletonize3D|skeletonized centerlines]] of the image/stack.
 
-
 == Installation ==
-Download [https://raw.github.com/tferr/Scripts/master/Strahler_Analysis.bsh Strahler_Analysis.bsh] and place it in the plugins/ folder using the Plugins▷ Install... command. 
+Download [https://raw.github.com/tferr/Scripts/master/Strahler_Analysis.bsh Strahler_Analysis.bsh] and place it in the plugins/ folder using the <span style="border-bottom:1px dotted #ccc;">Plugins▷ Install...</span> command. 
 If you are not using Fiji, the script should remind you to install [[AnalyzeSkeleton]] and [[Skeletonize3D]], if you have not done so.
-
 
 == Usage ==
 Once you get acquainted with [[Skeletonize3D]] and [[AnalyzeSkeleton]], the script parameters become self-explanatory. The following descriptions were taken from the script's built-in help:
@@ -40,20 +37,20 @@ Once you get acquainted with [[Skeletonize3D]] and [[AnalyzeSkeleton]], the scri
 ;Original grayscale image
 :The initial non-thinned image to be used for intensity-based elimination of closed loops. Requires at least two open images.
 
-==== Notes ====
-
+== Notes ==
 * Images are processed directly (work with a copy if you want to preserve original image). Only binary and 8-bit grayscale images can be processed.
-* Hold down ''Alt'' while confirming the dialog prompt (or activate ''Debug mode'' in Edit▷ Options▷ Misc...) to document individual pruning cycles.
-* Horton-Strahler counts are listed on a dedicated ''Results'' table saved according to the extension and format specified in Edit▷ Options▷ Input/Output...
+* Hold down ''Alt'' while confirming the dialog prompt (or activate ''Debug mode'' in <span style="border-bottom:1px dotted #ccc;"> Edit▷ Options▷ Misc...</span>) to document individual pruning cycles.
+* Horton-Strahler counts are listed on a dedicated table saved according to the extension and format specified in <span style="border-bottom:1px dotted #ccc;"> Edit▷ Options▷ Input/Output...</span> 
 
+== Related Links ==
+* [[AnalyzeSkeleton]] and [[Skeletonize3D]], analysis of topographic skeletons 
+* [[Sholl Analysis]], bitmap morphometry based on the Sholl technique
 
 == References ==
 *{{citation|last=Strahler|first=A. N.|year=1952|title=Hypsometric (area-altitude) analysis of erosional topology|journal=Geological Society of America Bulletin|volume=63|issue=11|pages=1117–1142|doi=10.1130/0016-7606(1952)63[1117:HAAOET]2.0.CO;2}}.
 
-
 == Acknowledgments ==
 To [http://doube.org/ Michael Doube] and [[User:Iarganda|Ignacio Arganda-Carreras]], developers of [[AnalyzeSkeleton]].
-
 
 == License ==
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
