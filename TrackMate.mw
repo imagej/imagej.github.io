@@ -121,6 +121,13 @@ Extending TrackMate is not completely trivial. However, it should be of no diffi
 * [[How to write your own particle-linking algorithm for TrackMate]]
 
 
+== Who uses TrackMate ==
+
+We don't know in all honesty, since we did not write a paper specifically for TrackMate. People might use it and cite the Fiji paper, which is fine. A crude search on Google yields this:
+
+* Chen et al. The bacterial carbon-fixing organelle is formed by shell envelopment of preassembled cargo. PLoS ONE (2013) vol. 8 (9) pp. e76127
+* Phang et al. POPX2 phosphatase regulates the KIF3 kinesin motor complex. J Cell Sci (2013) pp. 
+
 
 == TrackMate components ==
 
