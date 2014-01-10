@@ -1,0 +1,46 @@
+<div style="background:#ffd; padding: 10px 10px 0 10px; border: 1px solid black;">
+To '''create your own update site''', see: [[How to set up and populate an update site]].
+</div>
+
+
+This tutorial explains how to upload changes to core Fiji libraries.
+
+= Uploading to core update sites =
+
+== Getting started ==
+
+First of all, start the updater with ''Help>Update Fiji'' and click on the ''Manage update sites'' button:
+
+[[File:Mamed-3.jpg|770px]]
+
+From this dialog, you can edit the desired update site(s) to add your authentication information.
+
+== Configuring Fiji update site ==
+
+The Fiji update site uses [http://en.wikipedia.org/wiki/WebDAV webDAV] authentication. To upload something, you will need to [http://fiji.sc/index.php?title=Special:UserLogin&type=signup create a wiki account].
+
+In the ''Manage update sites'' dialog, on the Fiji update site line, add the following information:
+
+* Host = '''webdav:YourFijiWikiLogin'''
+* Directory on host = '''./'''
+
+Note that your username will always start with an upper case letter. It should look like this:
+
+You can now close the ''Manage update sites'' window and go on to [[#Uploading your resources | Uploading your resources]].
+
+== Configuring ImageJ2 update site ==
+
+The ImageJ2 update site uses [http://en.wikipedia.org/wiki/Secure_Shell ssh] authentication. You will need a login with [http://update.imagej.net the imageJ update site].
+
+In the ''Manage update sites'' dialog, on the ImageJ update site line, add the following information:
+
+* Host = '''yourImageJLogin@update.imagej.net'''
+* Directory on host = '''/home/imagej/update-site/'''
+
+It should look like this:
+
+You can now close the ''Manage update sites'' window and go on to [[#Uploading your resources | Uploading your resources]].
+
+== Uploading your resources ==
+
+See the [[How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site | Uploading files to your update site]] section of the set up and populate tutorial.
