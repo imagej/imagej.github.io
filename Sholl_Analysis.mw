@@ -7,7 +7,7 @@
 | source         = [https://github.com/tferr/ASA on GitHub]
 | filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.0.0-SNAPSHOT.jar Sholl_Analysis.jar]
 | released       = December 2012
-| latest version = v3.3 (December 2013)
+| latest version = '''v3.3''' (December 2013)
 | status         = stable, active ([https://github.com/tferr/ASA/blob/master/Notes Release Notes])
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]]
 }}
@@ -24,22 +24,23 @@
 :Jump to [[#Non-Fiji_users|Installation notes]]
 </div>
 
-Automated bitmap Sholl for direct analysis of fluorescent images, featuring powerful quantifications  based on curve fitting. Analysis of previously traced arbors is also possible.
+Automated bitmap Sholl for direct analysis of fluorescent images of neuronal arbors, featuring powerful quantifications  based on curve fitting. Analysis of previously traced arbors is also possible.
 
 == Introduction ==
 [[ File:BitmapSholl-CA1mask.png|frame|[[Skeletonize3D|Skeletonized]] Mouse hippocampal CA1 cell <ref name="Gross">TA Ferreira, LL Iacono and CT Gross. Serotonin receptor 1A modulates actin dynamics and restricts dendritic growth in hippocampal neurons. Eur J Neurosci 32(1):18-26, Jul 2010 [http://www.ncbi.nlm.nih.gov/pubmed?term=20561047 PMID: 20561047]</ref> in which apical and basal dendrites have been analyzed separately and color coded according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''rc'') and [[#MeanValueOfFunction|Mean value]] (''Nav'') are indicated.]]
-This plugin performs 2D and 3D Sholl on grayscale images of single neurons. Sholl<ref name="Sholl">DA Sholl. Dendritic organization in the neurons of the visual and motor cortices of the cat. J Anat, 87(4):387–406, Sep 1953, [http://www.ncbi.nlm.nih.gov/pubmed?term=13117757  PMID: 13117757]</ref> is a popular technique used by neuroanatomists to describe neuronal arbors. The major advantages of this plugin over other implementations are:
-* It does not require previous tracing of the arbor
-* Retrieves [[#Metrics|quantitative descriptors]] from the Sholl profile, allowing statistical comparisons between arbors
-* Performs <i>Continuous Sholl</i> around arbitrary foci
 
-Its internal algorithm is based upon how Sholl analysis is done by hand — it creates a series of concentric circles/spheres (''shells'') around the focus of a neuronal arbor, and counts how many times the arbor intersects the sampling shells. Nevertheless, it takes this task beyond conventional approaches by offering [[#Multiple Samples and Noise Reduction|repeated sampling]], [[#Metrics|curve fitting]] and several [[#Sholl Plots|analysis methods]] including Linear, Semi-log and Log–log.
+The Sholl technique<ref name="Sholl">DA Sholl. Dendritic organization in the neurons of the visual and motor cortices of the cat. J Anat, 87(4):387–406, Sep 1953, [http://www.ncbi.nlm.nih.gov/pubmed?term=13117757  PMID: 13117757]</ref> is used to describe neuronal arbors. This plugin performs  Sholl directly on 2D and 3D grayscale images of isolated neurons. Its internal algorithm to collect data is based upon how Sholl analysis is done by hand — it creates a series of concentric ''shells'' (circles or spheres) around the focus of a neuronal arbor, and counts how many times the arbor intersects the sampling shells.
+The major advantages of this plugin over other implementations are:
+* It does not require previous tracing of the arbor
+* It combines [[#MethodsTable|curve fitting]] with several [[#Sholl Plots|methods]] to automatically retrieve [[#Metrics|quantitative descriptors]] from sampled data, which allows direct statistical comparisons between arbors
+* It allows [[#Multiple Samples and Noise Reduction|continuous and repeated sampling]] around user-defined foci
+* It allows [[#Batch Processing|batch processing]]
 
 == Usage ==
 The plugin requires a binary image or a segmented grayscale image containing a single neuron.
 
-# Segment the arbor using <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span>
-# Select the center of analysis with the Point Selection Tool. Alternatively, make a Straight Line Selection from the focus of the arbor to its most distal point. This will automatically set both the center and [[#EndRadius|Ending radius]].
+# Segment the neuronal arbor using <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span>
+# Select the center of analysis with the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span>. Alternatively, make a straight line (<span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>) from the focus of the arbor to its most distal point. This will automatically set both the center and [[#EndRadius|Ending radius]].
 # Run <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span>, adjusting the default [[#Parameters|Parameters]] in the dialog prompt.
 # Problems? Read the  [[#FAQ|FAQs]].
 
@@ -55,7 +56,7 @@ Input values take into account the scale information of the image that can be se
 * <span id="StepSize"></span>'''Radius step size''' <sup>&nbsp;</sup>The sampling interval between radii of consecutive sampling circles/spheres. This value may be set to zero for continuous (1-voxel increment) measurements.
 :For stacks with anisotropic voxel size, setting ''Radius step size'' to zero, sets the step length to the dimension of the matching isotropic voxel, i.e., the cube root of the product of the voxel dimensions or the square root of the product of the pixel dimensions (2D images).
 
-* '''Restrict analysis to hemicircle/hemisphere''' <sup>&nbsp;</sup>This option is only available when an orthogonal radius has been created (by holding ''Shift'' while using the Straight Line Selection Tool). It can be used to limit the analysis to sub-compartments of the arbor (e.g., apical vs basal dendrites, in the case of pyramidal neurons, as in illustration [[#Introduction|above]]).
+* '''Restrict analysis to hemicircle/hemisphere''' <sup>&nbsp;</sup>This option is only available when an orthogonal radius has been created (by holding ''Shift'' while using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>). It can be used to limit the analysis to sub-compartments of the arbor (e.g., apical vs basal dendrites, in the case of pyramidal neurons, as in illustration [[#Introduction|above]]).
 :For horizontal lines, this option instructs the algorithm to measure intersections at sites equidistant from the center that have y-coordinates above/below the drawn line. For vertical lines, it instructs the plugin to measure intersections at sites equidistant from the center that have x-coordinates to the left/right of the drawn line.
 
 ==== Multiple Samples and Noise Reduction ====
@@ -263,9 +264,9 @@ It is fairly simple to [[Scripting Help|automate]] the analysis of multiple imag
 Any macro or script must allow the Sholl Analysis plugin to access the ROI marking the center of analysis. One could instruct ImageJ to read the coordinates of pre-existing ROIs from a text file, store a list of line selections in the ROI Manager, or write a morphology-based routine that detects the center of the arbor. However, marking the center of analysis is probably something that you will want to do manually. Here is a workflow:
 
 #Place all the .tif images to be processed in a single folder.
-#Select the Point Selection Tool in the main ImageJ window and activate the Threshold widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span>). Make sure ''Set stack positions'' is active in the <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Overlay Options...</span> prompt. Open the first image.
+#Select the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> in the main ImageJ window and activate the Threshold widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span>). Make sure ''Set stack positions'' is active in the <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Overlay Options...</span> prompt. Open the first image.
 #Adjust threshold levels. Press the ''Apply'' button of the Threshold widget to create a binary image.
-#Select the z-slice containing the center of analysis. Click over the center with the Point Selection Tool and press ''B'' (shortcut for <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Add Selection...</span>). This will add the point ROI to the image overlay. Save the image as .TIFF by pressing ''S'' (<span style="border-bottom:1px dotted #ccc;">File▷ Save As...▷ Tiff...</span>).
+#Select the z-slice containing the center of analysis. Click over the center with the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> and press ''B'' (shortcut for <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Add Selection...</span>). This will add the point ROI to the image overlay. Save the image as .TIFF by pressing ''S'' (<span style="border-bottom:1px dotted #ccc;">File▷ Save As...▷ Tiff...</span>).
 #Repeat the last 2 steps until all images are marked, using ''Shift'' + ''O'' (shortcut for <span style="border-bottom:1px dotted #ccc;">File▷ Open Next</span>) to iterate through all the images.
 
 <div style="float:center;
@@ -353,16 +354,21 @@ function closeResults() {
 }
 </source>
 == Pre-processing ==
-As mentioned, the quality of the analysis relies on the quality of the segmentation of the image. Unfortunately it is not possible to generalize the type of routines used to segment imagery from fluoresce microscopy. However, noise can be mitigated through the usage of [[:Category:Filtering|processing filters]], specially edge-preserving ones:
-* Median Filtering, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Filters▷ Median/Median 3D...</span>
-* [[Anisotropic_Diffusion_2D|Anisotropic Diffusion]], e.g., <span style="border-bottom:1px dotted #ccc;">Plugins▷ Process▷ Anisotropic Diffusion 2D</span>
+As mentioned, the quality of the analysis relies on how the arbor was segmented. Unfortunately, it is not possible to generalize universal routines that efficiently binarise grayscale images and any procedure must be tailored to the characteristics of each individual dataset. However, noise in imagery from fluorescence microscopy can be mitigated through the usage of processing filters, specially edge-preserving ones:
+* Median Filtering (2D/3D), e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Filters▷</span>, <span style="border-bottom:1px dotted #ccc;">Plugins▷ 3D▷</span>
+* [[Anisotropic_Diffusion_2D|Anisotropic Diffusion]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Process▷ Anisotropic Diffusion 2D</span>
 * Sobel Edge Detection, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Find Edges</span>
 * Frequency filters, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ FFT▷ Bandpass Filter...</span> 
 * [[Rolling_Ball_Background_Subtraction|Rolling Ball]] or "Top hat" filters, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Subtract Background...</span>
 
+
 On the other hand, it is possible to adopt more sophisticated [[:Category:Segmentation|segmentation algorithms]] when [[Auto_Threshold|global thresholding methods]] do not yield satisfactory results:
+* [[Auto Local Threshold|Local Threshold]], <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷</span>
 * [[RATS:_Robust_Automatic_Threshold_Selection|Robust Automatic Threshold Selection]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
 * [[Level_Sets|Level Sets]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
+
+Semi-automated segmentation can also be improved through the usage of simple [[:Category:Scripting|scripts]] that automate frequently used commands, including the ones in this [https://github.com/tferr/Scripts Github repository]. For more information about image processing have a look at the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide], the Fiji [[Cookbook]], the vast repertoire of  Fiji's [[:Category:Tutorials|tutorials]], the [http://imagejdocu.tudor.lu ImageJ Information and Documentation Portal], and the remaining documentation resources (<span style="border-bottom:1px dotted #ccc;">Help▷ Documentation...</span>).
+
 == Auxiliary Commands ==
 ;File▷ Open Samples▷ ddaC Neuron
 :Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run <span style="border-bottom:1px dotted #ccc;">Image▷ Show Info...</span> to know more about this cell type.
@@ -372,13 +378,13 @@ On the other hand, it is possible to adopt more sophisticated [[:Category:Segmen
 
 == FAQ ==
 #<span id="faq1"></span>'''What is the difference between ''Sholl Analysis'' and an homonymous plugin released by the Ghosh laboratory in 2005'''?
-#:The [http://labs.biology.ucsd.edu/ghosh/software/ original Sholl Analysis plugin] by Tom Maddock (version 1.0) was released for ImageJ 1.35 and can be considered deprecated software. The current implementation inherits Tom's initial 2D algorithm, but has numerous added features to enhance its utility. You can follow the history of the plugin on [https://github.com/tferr/ASA GitHub].
+#:The [http://labs.biology.ucsd.edu/ghosh/software/ original Sholl Analysis plugin] by Tom Maddock (version 1.0) was released for ImageJ 1.35 and is now deprecated software. The current implementation inherits Tom's initial 2D algorithm, but has numerous [[#Release_Notes|added features]] to enhance its utility. Note that throughout 2012 the ''Sholl Analysis'' plugin was temporarily called ''Advanced Sholl Analysis''. You can follow the entire history of the plugin on [https://github.com/tferr/ASA GitHub]. 
 #<span id="faq2"></span>'''Why do I need to threshold the cell?'''
 #: Counting intersections is really a binary procedure: a shell either intercepts a branch or it doesn't. For this reason the image must be split in two phases: arbor and background.
 #<span id="faq3"></span>'''The plugin complains about a wrong image type. Why?'''
 #: Although ImageJ can threshold RGB images, the plugin can only parse grayscale images (8-bit and 16-bit). Images of fluorescence-labeled cells are typically non-RGB images. Conversions between different image types is explained in the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide].
 #<span id="faq4"></span>'''I cannot see the hemicircle/hemisphere option. Why?'''
-#: This option is only available if an orthogonal line has been created by holding ''Shift'' when using the Straight Line Selection Tool. See the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for the full list of key modifiers that can be used while creating straight line ROIs.
+#: This option is only available if an orthogonal line has been created by holding ''Shift'' when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for the full list of key modifiers that can be used while creating straight line ROIs.
 #<span id="faq5"></span>'''With 3D images, how do I set the Z-position of the center?'''
 #: The Z-position (depth) of the center of analysis is the active Z-slice of the stack. It is reported in the ''Sholl Results'' table.
 #<span id="faq6"></span>'''Why so many parameters?'''
@@ -390,7 +396,7 @@ On the other hand, it is possible to adopt more sophisticated [[:Category:Segmen
 #<span id="faq9"></span>'''I cannot see the option to save the results. Why?'''
 #: The image you are trying to analyze is not saved locally. Saving it to a local directory (e.g., your Desktop or Home folder) should re-enable it.
 #<span id="faq10"></span>'''What is the ''Sholl mask''?'''
-#: The Sholl mask ([[#Introduction|see example above]]) is simply a maximum intensity projection of the analyzed cell in which intersection counts are used as pixel intensities. As explained in [[#Output_Options|Output Options]], its LUT can be modified, and intensities calibrated using ImageJ default commands.
+#: The Sholl mask ([[#Introduction|see example above]]) is simply an illustration: a maximum intensity projection of the analyzed cell in which intersection counts are used as pixel intensities. As explained in [[#Output_Options|Output Options]], its LUT can be modified, and intensities calibrated using ImageJ default commands.
 #<span id="faq11"></span>'''The 3D profile looks ''worse'' than the 2D profile of the Maximum Intensity Projection of the same cell. Why?'''
 #: An anisotropic voxel size will have a strong impact on [[#StepSize|step size]]. On the other hand, 2D and 3D images can be sampled differently depending on the [[#Parameters|options chosen]]. If <span style="border-bottom:1px dotted #ccc;">Image▷ Properties…</span> reports the appropriate spatial calibration, make sure to read [[#Multiple_Samples_and_Noise_Reduction|Multiple Samples and Noise Reduction]] before deciding which type of images to use.
 #<span id="faq12"></span>'''The shape of the polynomial changes at the edges of the profile. Why?'''
