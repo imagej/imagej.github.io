@@ -1,7 +1,7 @@
 <div style="float:right;">
 {{Infobox Plugin
 | software       = ImageJ/Fiji
-| name           = Bitmap Sholl Analysis
+| name           = Sholl Analysis
 | author         = Tiago Ferreira, Tom Maddock
 | maintainer     = [mailto:tiago_dot_ferreira_at_mail_dot_mcgill_dot_ca Tiago Ferreira]
 | source         = [https://github.com/tferr/ASA on GitHub]
@@ -378,7 +378,7 @@ Semi-automated segmentation can also be improved through the usage of simple [[:
 
 == FAQ ==
 #<span id="faq1"></span>'''What is the difference between ''Sholl Analysis'' and an homonymous plugin released by the Ghosh laboratory in 2005'''?
-#:The [http://labs.biology.ucsd.edu/ghosh/software/ original Sholl Analysis plugin] by Tom Maddock (version 1.0) was released for ImageJ 1.35 and is now deprecated software. The current implementation inherits Tom's initial 2D algorithm, but has numerous [[#Release_Notes|added features]] to enhance its utility. Note that throughout 2012 the ''Sholl Analysis'' plugin was temporarily called ''Advanced Sholl Analysis''. You can follow the entire history of the plugin on [https://github.com/tferr/ASA GitHub]. 
+#:The [http://labs.biology.ucsd.edu/ghosh/software/ original Sholl Analysis plugin] by Tom Maddock (version 1.0) was released for ImageJ 1.35 and is now deprecated software. The current implementation inherits Tom's initial 2D algorithm, but has numerous [[#Release_Notes|added features]] to enhance its utility. Note that throughout 2012 the plugin was temporarily called ''Advanced Sholl Analysis''. You can follow the entire history of the plugin on [https://github.com/tferr/ASA GitHub]. 
 #<span id="faq2"></span>'''Why do I need to threshold the cell?'''
 #: Counting intersections is really a binary procedure: a shell either intercepts a branch or it doesn't. For this reason the image must be split in two phases: arbor and background.
 #<span id="faq3"></span>'''The plugin complains about a wrong image type. Why?'''
