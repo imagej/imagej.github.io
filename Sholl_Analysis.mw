@@ -367,7 +367,7 @@ On the other hand, it is possible to adopt more sophisticated [[:Category:Segmen
 * [[RATS:_Robust_Automatic_Threshold_Selection|Robust Automatic Threshold Selection]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
 * [[Level_Sets|Level Sets]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
 
-Semi-automated segmentation can also be improved through the usage of simple [[:Category:Scripting|scripts]] that automate frequently used commands, including the ones in this [https://github.com/tferr/Scripts Github repository]. For more information about image processing have a look at the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide], the Fiji [[Cookbook]], the vast repertoire of  Fiji's [[:Category:Tutorials|tutorials]], the [http://imagejdocu.tudor.lu ImageJ Information and Documentation Portal], and the remaining documentation resources (<span style="border-bottom:1px dotted #ccc;">Help▷ Documentation...</span>).
+Semi-automated segmentation can also be improved through the usage of simple [[:Category:Scripting|scripts]] that automate frequently used commands, including the ones in this [https://github.com/tferr/Scripts Github repository]. For more information about image processing have a look at the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide], the Fiji [[Cookbook]], Fiji [[:Category:Tutorials|tutorials]], the [http://imagejdocu.tudor.lu ImageJ Information and Documentation Portal], and remaining documentation resources (<span style="border-bottom:1px dotted #ccc;">Help▷ Documentation...</span>).
 
 == Auxiliary Commands ==
 ;File▷ Open Samples▷ ddaC Neuron
