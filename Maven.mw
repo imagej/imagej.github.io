@@ -8,6 +8,8 @@ Many convenient IDEs (integrated development environments) including [http://ecl
 
 = What does it take to make a new Maven project? =
 
+== POM and directory structure ==
+
 All it really takes is a ''pom.xml'' file and a certain directory structure:
 
 <pre>
@@ -47,6 +49,8 @@ The first 6 lines are of course just a way to say "Hi, Maven? How are you today?
 
 The only relevant parts are the ''groupId'', which by convention is something like the inverted domain name (similar to the Java package convention), the name of the artifact to build (it will be put into ''target/'', under the name ''<artifactId>-<version>.jar''). And of course the version.
 
+== Maven repositories ==
+
 Maven is not only a build tool but first and foremost a dependency management tool. It has so-called Maven repositories where it stores compiled artifacts. [http://developer.imagej.net/ ImageJ2] has a [http://maven.imagej.net/ Maven repository]. (For those familiar with Fiji's previous build system: it is like [[Fake|Fiji Build]]'s precompiled/ directory, but done right.)
 
 For Maven to know what you are looking for, you typically have to add the dependencies into the ''pom.xml'' file. For example, every ImageJ 1.x plugin will depend on ImageJ 1.x. So let's add that (before the final ''</project>'' line):
@@ -81,9 +85,15 @@ For Maven to find the dependencies, it has to know about the location of the rep
 </repositories>
 </source>
 
-You will see that there are two different repository types: releases and snapshots. The snapshot versions are "in-progress" versions. If you declare a dependency with a ''-SNAPSHOT'' suffix in the version, Maven will look once a day for new artifacts of the same versions; otherwise, Maven will look whether it has that version already and not bother re-downloading.
+== Releases and snapshots ==
+
+There are two different sorts of Maven artifacts (i.e., JAR files): releases and snapshots. The snapshot versions are "in-progress" versions. If you declare a dependency with a ''-SNAPSHOT'' suffix in the version, Maven will look once a day for new artifacts of the same versions; otherwise, Maven will look whether it has that version already and not bother re-downloading.
+
+== Producing multiple JAR files ==
 
 So what if you have multiple ''.jar'' files you want to build in the same project? Then these need to live in their own subdirectories and there needs to be a common parent POM, a so-called ''aggregator'' POM (only this POM needs to have the scijava POM as parent, of course). For an example, look at Fiji's [https://github.com/fiji/fiji/blob/master/src-plugins/pom.xml src-plugins/pom.xml]. Basically, it is adding the ''<packaging>pom</packaging>'' entry as well as a couple of subdirectory names to the ''<modules>'' section.
+
+== Convention over configuration ==
 
 There are many more things you can do with Maven, but chances are you will not need them.
 
