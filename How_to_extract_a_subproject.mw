@@ -25,32 +25,32 @@ If you want to convert a plugin from an internal one (i.e., source code maintain
 First, factor out the plugin's source code from ''fiji.git'':
 
 <ol>
+<li>Clone Fiji into a new repository:
+<source lang="bash">
+git clone -b HEAD . external/<new-repository-name>
+</source>
+Where ''<new-repository-name>'' is the name you want to give the external repository.</li>
 <li>Use Git's ''filter-branch'' feature to extract the Git history of only that plugin:
-<pre>git checkout -b extracted-history
-git filter-branch -f --prune-empty --subdirectory-filter src-plugins/My_Plugin</pre>
+<source lang="bash">
+cd external/<new-repository-name>/
+git filter-branch -f --prune-empty --subdirectory-filter src-plugins/My_Plugin
+</source>
 Where ''My_Plugin'' is the folder containing the plugin's source code.</li>
 <li>Edit the ''<scm>'' section of the ''pom.xml'' to reflect the new remote repository's URL (see [https://github.com/fiji/jep/commit/b76f4a1df830c090fc96ab99bb145dd67e8e69ce example]):
-<pre>vi pom.xml
-git commit -m 'Update SCM location' pom.xml</pre>
+<source lang="bash">vi pom.xml
+git commit -m 'Update SCM location' pom.xml</source>
 </li>
 <li>Substitute the ''pom-fiji-plugins'' parent by the ''pom-fiji'' parent (see [https://github.com/fiji/jep/commit/336c0a46fad855508aaa905a9f82e5d88136df91 example]).</li>
 <li>Override the ''imagej.app.directory'' property (see [https://github.com/fiji/Stitching/commit/35753ef1c6b11e2abf8917d5f1d64bd60143bc0a example]).</li>
 <li>Make sure the project still builds:
-<pre>mvn clean install</pre>
+<source lang="bash">mvn clean install</source>
 </li>
 <li>Add (or adjust) the ''.gitignore'' file (see [https://github.com/fiji/spimreconstruction/commit/cf95dcc06b31c0044b58213c12f886027a5eb3ba example]).</li>
-<li>Push the resultant history to the plugin's new repository:
-<pre>git remote add newrepo git@github.com:fiji/my-plugin
-git push newrepo extracted-history:master</pre>
+<li>Connect your repository with the remote one:
+<source lang="bash">git remote set-url origin git@github.com:fiji/my-plugin</source>
 Where ''git@github.com:fiji/my-plugin'' is the remote URL for the plugin's new dedicated repository.</li>
-<li>Clone the plugin code to a new project directory:
-<pre>cd ..
-git clone git@github.com:fiji/my-plugin</pre>
-</li>
-<li>Switch your Fiji back to master and clean up:
-<pre>cd ../fiji
-git checkout master
-git branch -D extracted-history</pre>
+<li>Push the resultant history to the plugin's new repository:
+<source lang="bash">git push origin HEAD:refs/heads/master</source></li>
 </ol>
 
 == Changes to fiji.git ==
