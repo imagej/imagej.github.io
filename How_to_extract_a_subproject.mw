@@ -66,9 +66,9 @@ Then update Fiji's Git repository:
 <li>Make really, really sure that there are only changes related to making your plugin an external one:
 <source lang="bash">git status</source>
 This is good advice in general: check '''git status''' *everytime* before you commit (e.g. to prevent making a fool out of yourself).</li>
-<li>Commit the result:
+<li>Commit the result (if you want to be a nice person, you mention the current commit in the external repository to ease rebasing existing topic branches):
 <source lang="bash">git commit -a</source>
-with a commit message modeled after [https://github.com/fiji/fiji/commit/bd88afe2dfccf71d30141dc3270570bdc8e977d8 this one].</li>
+with a commit message modeled after [https://github.com/fiji/fiji/commit/cd94282cde98c2f7039bd3823df6502cdd36a048#diff-e905d2f0f7f93323fb269a935bb84a87L101 this one].</li>
 </ol>
 
 == Changes to online resources ==
