@@ -57,13 +57,17 @@ Where ''git@github.com:fiji/my-plugin'' is the remote URL for the plugin's new d
 
 Then update Fiji's Git repository:
 <ol>
-<li>Add the ''${<artifactId>.version}'' property to ''pom.xml''</li>
-<li>Add the plugin as a dependency to ''external/pom.xml'' (using the newly-added ''version'' property)</li>
-<li>Remove the directory ''src-plugins/<artifactId>/''</li>
-<li>Remove the respective ''<module>'' line in ''src-plugins/pom.xml''</li>
-<li>Adjust ''.gitignore'' to list ''/plugins/<artifactId>-[0-9]*.jar'' in the section ''Dependencies copied by MiniMaven'' instead of ''Files generated from sources in src-plugins/''</li>
+<li>Add the ''${<artifactId>.version}'' property to ''pom.xml'' (see [https://github.com/fiji/fiji/commit/cd94282cde98c2f7039bd3823df6502cdd36a048#diff-600376dffeb79835ede4a0b285078036R25 example])</li>
+<li>Add the plugin as a dependency to ''external/pom.xml'' (using the newly-added ''version'' property, see [https://github.com/fiji/fiji/commit/cd94282cde98c2f7039bd3823df6502cdd36a048#diff-daf49d6db7f6a92ae7e49b73d0ef5739L27 example])</li>
+<li>Adjust ''external/.gitignore'' to ignore if the external repository is cloned into ''external/'' (see [https://github.com/fiji/fiji/commit/bd6f0c243b28fcc89454fba49919a89b22541fc0 example])</li>
+<li>Remove the directory ''src-plugins/<artifactId>/'' (see [https://github.com/fiji/fiji/commit/cd94282cde98c2f7039bd3823df6502cdd36a048#diff-da71ec6511879b643fc452f0e3fd22b4L1 example])</li>
+<li>Remove the respective ''<module>'' line in ''src-plugins/pom.xml'' (see [https://github.com/fiji/fiji/commit/cd94282cde98c2f7039bd3823df6502cdd36a048#diff-e905d2f0f7f93323fb269a935bb84a87L101 example])</li>
+<li>Adjust ''.gitignore'' to list ''/plugins/<artifactId>-[0-9]*.jar'' in the section ''Dependencies copied by MiniMaven'' instead of ''Files generated from sources in src-plugins/'' (see [https://github.com/fiji/fiji/commit/a7391f5fbe1a91595cb2f7a1a04c035215291f15 example])</li>
+<li>Make really, really sure that there are only changes related to making your plugin an external one:
+<source lang="bash">git status</source>
+This is good advice in general: check '''git status''' *everytime* before you commit (e.g. to prevent making a fool out of yourself).</li>
 <li>Commit the result:
-<pre>git commit -a</pre>
+<source lang="bash">git commit -a</source>
 with a commit message modeled after [https://github.com/fiji/fiji/commit/bd88afe2dfccf71d30141dc3270570bdc8e977d8 this one].</li>
 </ol>
 
