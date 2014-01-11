@@ -29,7 +29,7 @@ First, factor out the plugin's source code from ''fiji.git'':
 <pre>git checkout -b extracted-history
 git filter-branch -f --prune-empty --subdirectory-filter src-plugins/My_Plugin</pre>
 Where ''My_Plugin'' is the folder containing the plugin's source code.</li>
-<li>Edit the ''<scm>'' section of the ''pom.xml'' to reflect the new remote repository's URL:
+<li>Edit the ''<scm>'' section of the ''pom.xml'' to reflect the new remote repository's URL (see [https://github.com/fiji/jep/commit/b76f4a1df830c090fc96ab99bb145dd67e8e69ce example]):
 <pre>vi pom.xml
 git commit -m 'Update SCM location' pom.xml</pre>
 </li>
