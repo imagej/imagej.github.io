@@ -33,9 +33,11 @@ Where ''My_Plugin'' is the folder containing the plugin's source code.</li>
 <pre>vi pom.xml
 git commit -m 'Update SCM location' pom.xml</pre>
 </li>
+<li>Override the ''imagej.app.directory'' property (see [https://github.com/fiji/Stitching/commit/35753ef1c6b11e2abf8917d5f1d64bd60143bc0a example]).</li>
 <li>Make sure the project still builds:
 <pre>mvn clean install</pre>
 </li>
+<li>Add (or adjust) the ''.gitignore'' file (see [https://github.com/fiji/spimreconstruction/commit/cf95dcc06b31c0044b58213c12f886027a5eb3ba example]).</li>
 <li>Push the resultant history to the plugin's new repository:
 <pre>git remote add newrepo git@github.com:fiji/my-plugin
 git push newrepo extracted-history:master</pre>
