@@ -54,7 +54,8 @@ git branch -D extracted-history</pre>
 
 Then update Fiji's Git repository:
 <ol>
-<li>Add the plugin as a dependency to ''external/pom.xml''</li>
+<li>Add the ''${<artifactId>.version}'' property to ''pom.xml''</li>
+<li>Add the plugin as a dependency to ''external/pom.xml'' (using the newly-added ''version'' property)</li>
 <li>Remove the directory ''src-plugins/<artifactId>/''</li>
 <li>Remove the respective ''<module>'' line in ''src-plugins/pom.xml''</li>
 <li>Adjust ''.gitignore'' to list ''/plugins/<artifactId>-[0-9]*.jar'' in the section ''Dependencies copied by MiniMaven'' instead of ''Files generated from sources in src-plugins/''</li>
