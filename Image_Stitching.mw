@@ -148,6 +148,9 @@ Now, you can choose to open the input stacks as ''virtual stacks''. This results
 
 Finally, you can choose whether to display the result or write the fused image to disk. If you choose to write it to disk, it will require very little memory to do so as it writes it slice-by-slice. You can later on open this dataset virtually or partially and convert it back to a Hyperstack (Image -> Hyperstacks -> Stack to Hyperstack ...). Writing it directly to disk, will, however, take more time than just displaying it.
 
+=== Grid Collection/Stitching plugin ===
+Please see the [[Grid/Collection Stitching Plugin]] page for a complete set of instruction on how to use Grid/Collection stitching in Fiji.
+
 == Problems, known issues and solutions ==
 
 === If the output is not correct ===
