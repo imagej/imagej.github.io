@@ -1,15 +1,15 @@
 {{Infobox Plugin
-| name                   = Coloc 2 - Standardized, modular, Colocalization analysis. 
-| software               = ImageJ - Fiji - ImgLib
-| author                 = Daniel J White, Tom Kazimiers, Johannes Schindelin
-| maintainer             = [mailto:white_at_mpi-cbg_dot_de Daniel White]
-| filename               = Colocalisation_Analysis.jar
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Colocalisation_Analysis;hb=HEAD on gitweb].
-| latest version         = Dec 2011
-| website                = Fiji
-| status                 = Beta. Under development, but stable enough for real work. 
+| name                   = Stitching
+| software               = ImageJ
+| author                 = Stephan Preibisch
+| maintainer             = Stephan Preibisch<br/>Mark Hiner<br/>Curtis Rueden
+| filename               = Stitching_.jar
+| source                 = [https://github.com/fiji/Stitching/blob/master/src/main/java/plugin/Stitching_Grid.java on GitHub]
+| released               = October 2008
+| status                  = active
+| category               = [[:Category:Stitching|Stitching]]
+| website                = [http://fly.mpi-cbg.de/~preibisch Stephan Preibisch's homepage]
 }}
-
 = What is Grid/Collection Stitching? =
 When a large biological specimen must be pictured in high resolution, it must be done in tiles as the entire thing could not fit into the field view of the microscope. Once the entire specimen has been imaged, the tiles must be fit or stitched together to form one coherent image. Some overlap will be present between each tile and its neighbors to verify its location in the image.
 
@@ -33,3 +33,11 @@ To learn more about Stitching, please read the [[Stitching]] section of Fiji's [
 *Click ok and the images will begin to be stitched together.
 
 = Pitfalls of the Grid/Collection Stitching plugin =
+== Inversion of Coordinates ==
+Certain data sets have caused an inversion of coordinates when stitched together. The plugin is unable to discern the inversion without human intervention. After stitching, if the output image appears incorrect, redo the stitch. Depending on which axis the image has been inverted upon(the user will need to know this) select the corresponding option within the second dialog box. This will invert the selected coordinates before stitching the image create the correct image. 
+
+== Speed ==
+If "use virtual memory" has been selected but the stitching plugin is still taking a considerable amount of time, try allocating more memory to the process. 
+*Open Memory from the menu item Edit -> Options -> Memory & Threads
+*Enter the amount of memory you would like to be allocated to the Fiji application in megabytes
+**Check the amount of installed RAM on your computer to ensure you do not try to allocate more memory than exists.
