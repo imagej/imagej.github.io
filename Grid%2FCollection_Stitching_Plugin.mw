@@ -31,3 +31,5 @@ To learn more about Stitching, please read the [[Stitching]] section of Fiji's [
 *If the data computed is too large for computer memory, check “use virtual memory.” This will be considerably slower, but will save RAM
 **Alternatively, more memory can be allocated to the FIJI operation 
 *Click ok and the images will begin to be stitched together.
+
+= Pitfalls of the Grid/Collection Stitching plugin =
