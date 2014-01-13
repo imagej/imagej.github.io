@@ -1,15 +1,4 @@
-{{Infobox Plugin
-| name                   = Stitching
-| software               = ImageJ
-| author                 = Stephan Preibisch
-| maintainer             = Stephan Preibisch<br/>Mark Hiner<br/>Curtis Rueden
-| filename               = Stitching_.jar
-| source                 = [https://github.com/fiji/Stitching on GitHub]
-| released               = October 2008
-| status                  = active
-| category               = [[:Category:Stitching|Stitching]]
-| website                = [http://fly.mpi-cbg.de/~preibisch Stephan Preibisch's homepage]
-}}
+__FORCETOC__ {{Cookbook}}
 
 == Citation ==
 Please note that the Stitching, as well as other plugins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
