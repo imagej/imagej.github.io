@@ -407,7 +407,9 @@ Semi-automated segmentation can also be improved through the usage of simple [[:
 #: You could explore ImageJ's built-in CurveFitter (<span style="border-bottom:1px dotted #ccc;">Analyze▷ Tools▷ Curve Fitting…</span>), but ultimately you may need to use dedicated software. You could also [[#faq15|contact the developers]] to see if it would be possible to extend the repertoire of fitting options.
 #<span id="faq15"></span>'''I found a bug. How do I report it?'''
 #: Use Fiji's built-in [[Report a Bug]] command. Alternatively, report it to the [http://imagej.nih.gov/ij/list.html ImageJ mailing list]. Don't forget to include the steps needed to reproduce the problem.
-#<span id="faq16"></span>'''This documentation is not that useful. How long do I have to wait until it gets improved?'''
+#<span id="faq16"></span>'''My version is not the latest after running <span style="border-bottom:1px dotted #ccc;">Help▷ Update Fiji...</span> Why?'''
+#:You have manually installed/modified ''Sholl_Analysis.jar''. Run the [[Update Fiji|Updater]], choose ''Advanced Mode'' then type "Sholl" in the ''Search'' field, selecting ''Sholl_Analysis.jar'' from the list of files. If the ''Details pane'' indicates an available update, click on ''Locally modified'' under ''Status/Action'' and choose ''Install/Update''. The latest version will be available once you press ''Apply changes''.
+#<span id="faq17"></span>'''This documentation is not that useful. How long do I have to wait until it gets improved?'''
 #: Around 20 seconds. This is the time it will take you to [[Help:Contents#New_accounts|create an account]] on this wiki. Once you have created one, you will be able to improve this page yourself.
 
 == Non-Fiji users ==
