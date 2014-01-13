@@ -2,16 +2,17 @@
 ! colspan="2" style="font-size: 130%;" | Fiji Cookbook Topics
 |-
 |
-* [[Cookbook|Introduction and Installation]]
-* [[Importing Image Files]]
-* [[Saving and Exporting]]
-* [[Particle Analysis]]
-* [[Colocalization Analysis]]
-* [[Image Intensity Processing]]
-* [[Color Image Processing]]
-* [[Stack-slice Manipulations]]
-* [[Z-functions]]
-* [[T-functions]]
-* [[Deconvolution]]
 * [[Annotating Images]]
+* [[Colocalization Analysis]]
+* [[Color Image Processing]]
+* [[Cookbook|Introduction and Installation]]
+* [[Deconvolution]]
+* [[Image Intensity Processing]]
+* [[Importing Image Files]]
+* [[Image Stitching]]
+* [[Particle Analysis]]
+* [[Saving and Exporting]]
+* [[Stack-slice Manipulations]]
+* [[T-functions]]
+* [[Z-functions]]
 |}
