@@ -2,12 +2,13 @@
 ! colspan="2" style="font-size: 130%;" | Fiji Cookbook Topics
 |-
 |
+* [[Cookbook|Introduction and Installation]]
 * [[Annotating Images]]
 * [[Colocalization Analysis]]
 * [[Color Image Processing]]
-* [[Cookbook|Introduction and Installation]]
 * [[Deconvolution]]
 * [[Image Intensity Processing]]
+* [[Image Stitching]]
 * [[Importing Image Files]]
 * [[Particle Analysis]]
 * [[Saving and Exporting]]
