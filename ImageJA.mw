@@ -2,7 +2,7 @@
 | software               = ImageJA
 | name                   = ImageJA
 | author                 = Wayne Rasband, Johannes Schindelin, Albert Cardona, et al
-| filename               = [http://maven.imagej.net/content/repositories/releases/net/imagej/ij/ ij.jar] 
+| filename               = [http://maven.imagej.net/content/repositories/releases/net/imagej/ij/ JAR files in ImageJ Maven repository] 
 | source                 = [https://github.com/imagej/ImageJA Git repository]
 | released               = 17/03/2007
 | latest version         = auto-updated by [http://jenkins.imagej.net/view/Synchronizers/job/Synchronize-with-ImageJ1/ ImageJ2's Jenkins]
