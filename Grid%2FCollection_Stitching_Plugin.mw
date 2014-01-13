@@ -39,9 +39,10 @@ Certain data sets have caused an inversion of coordinates when stitched together
 
 == Speed ==
 If "use virtual memory" has been selected but the stitching plugin is still taking a considerable amount of time, try allocating more memory to the process. 
-*Open Memory from the menu item Edit -> Options -> Memory & Threads
+*Open Memory from the menu item Edit>Options>Memory & Threads
 *Enter the amount of memory you would like to be allocated to the Fiji application in megabytes
 **Check the amount of installed RAM on your computer to ensure you do not try to allocate more memory than exists.
+
 = Other Pitfalls = 
 Please see the [[Image Stitching]] page for other precautions.
 
