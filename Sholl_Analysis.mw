@@ -31,7 +31,7 @@ Automated bitmap Sholl for direct analysis of fluorescent images of neuronal arb
 
 The Sholl technique<ref name="Sholl">DA Sholl. Dendritic organization in the neurons of the visual and motor cortices of the cat. J Anat, 87(4):387–406, Sep 1953, [http://www.ncbi.nlm.nih.gov/pubmed?term=13117757  PMID: 13117757]</ref> is used to describe neuronal arbors. This plugin performs  Sholl directly on 2D and 3D grayscale images of isolated neurons. Its internal algorithm to collect data is based upon how Sholl analysis is done by hand — it creates a series of concentric ''shells'' (circles or spheres) around the focus of a neuronal arbor, and counts how many times the arbor intersects the sampling shells.
 The major advantages of this plugin over other implementations are:
-* It does not require previous tracing of the arbor
+* It does not require previous tracing of the arbor (although analysis can be applied to [[#Importing_Profiles_Obtained_Elsewhere|previously traced arbors]])
 * It combines [[#MethodsTable|curve fitting]] with several [[#Sholl Plots|methods]] to automatically retrieve [[#Metrics|quantitative descriptors]] from sampled data, which allows direct statistical comparisons between arbors
 * It allows [[#Multiple Samples and Noise Reduction|continuous and repeated sampling]] around user-defined foci
 * It allows [[#Batch Processing|batch processing]]
