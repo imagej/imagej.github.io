@@ -82,7 +82,8 @@ Input values take into account the scale information of the image that can be se
 ==== Choice of Method(s) ====
 The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile without normalization), or normalized profiles: ''Linear-norm'', ''Semi-log'', or ''Log-log''.
 * '''Polynomial''' <sup>&nbsp;</sup> Specifies the degree of the [[#MethodsTable|polynomial]] to be fitted to the ''Linear'' profile<ref name="Stulic">D Ristanović, NT Milosević and V Stulić. Application of modified Sholl analysis to neuronal dendritic arborization of the cat spinal cord. J Neurosci Methods, 158(2):212–8, Dec 2006, [http://www.ncbi.nlm.nih.gov/pubmed?term=16814868 PMID: 16814868]</ref>. While the polynomial of best approximation, or "best fit", should be empirically determined for each analyzed cell type, it is possible to ask the plugin to predict the order of the fitting polynomial (or at least try) using the choice ''Best fitting degree''. In this case, the plugin will loop through all the available choices of polynomials, perform each fit in the background and choose the one with the highest coefficient of determination.
-:The ''Best fitting degree'' choice is obviously more computer-intensive and can be monitored by activating the ''Show fitting details'' checkbox.
+* '''Most informative''' <sup>&nbsp;</sup> Select this option when you cannot predict which type of normalized profile best describes the dataset. If chosen, the plugin will use the [[#Dratio|Determination ratio]] to determine which of ''Semi-log'' or ''Log-log'' methods is more appropriate.  ''Linear-norm'' is not performed.
+:The ''Best fitting degree'' and ''Most informative'' choices are obviously more computer-intensive and can be monitored by activating the ''Show fitting details'' checkbox.
 * <span id="Normalizer"></span>'''Normalizer''' The property of the sampling shell to be used in the normalization of ''Linear-norm'', ''Semi-log'', and ''Log-log'' profiles. It is [[#MethodsTable|described below]].
 
 ==== Output Options ====
@@ -97,7 +98,7 @@ The [[#MethodsTable|type]] of profile(s) to be obtained. ''Linear'' (profile wit
 <span id="ShollPlots"></span>[[File:ShollPlots.png|center|]]
 
 '''''Linear'', ''Linear-norm'', ''Semi-log'' and ''Log-log'' profiles for the ddaC cell (<span style="border-bottom:1px dotted #ccc;">File▷ Open Samples▷ ddaC Neuron</span>), version 3.0'''.
-Most of the retrieved [[#Metrics_based_on_fitted_data|metrics]] are automatically highlighted by the plugin. ''Linear profile'': [[#MeanValueOfFunction|Mean value]] (horizontal grid line) and [[#Centroid|Centroid]] (colored mark). Logarithmic profiles: The [[#ShollDecay|Sholl regression coefficient]] (also known as Sholl decay) can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10–90 (red line).  For this particular cell type, the Semi-log method is more informative when compared to the Log-log method.
+Most of the retrieved [[#Metrics_based_on_fitted_data|metrics]] are automatically highlighted by the plugin. ''Linear profile'': [[#MeanValueOfFunction|Mean value]] (horizontal grid line) and [[#Centroid|Centroid]] (colored mark). Logarithmic profiles: The [[#ShollDecay|Sholl regression coefficient]] (also known as Sholl decay) can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10–90 (red line).  For this particular cell type, the Semi-log method is more [[#Dratio|informative]] when compared to the Log-log method.
 
 
 <span id="MethodsTable"></span>
@@ -193,6 +194,9 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 :The last (thus, the widest) of ''Intersecting radii'' to be associated with the number of intersections specified by [[#EnclosingRadiusCutoff|Enclosing radius cutoff]]. For a cutoff of 1 (the default) ''Enclosing radius'' is the widest of ''Intersecting radii''. It reflects the [http://en.wikipedia.org/wiki/Feret_diameter Feret length] of the arbor.
 
 === Metrics based on fitted data ===
+;<span id="Dratio"></span>Determination ratio
+:The ratio of the coefficient of determination for the semi-log method and that for the log–log method. If the semi-log method is more informative than the log–log method, the ''Determination ratio'' is larger than 1. It is the parameter used by the plugin to predict the normalization method that is the [[#Choice_of_Method(s)|most informative]].
+
 ;<span id="ShollDecay"></span>Sholl regression coefficient (''Regression coefficient'')
 :The slope (multiplied by -1) of the linear regression described in [[#eq3|(3)]] and [[#eq4|(4)]], i.e., ''k'', a measure of the rate of decay of the number of branches with distance from the center of analysis<ref name="Ristanovic">NT Milosević and D Ristanović. The Sholl analysis of neuronal cell images: Semi-log or log-log method? J Theor Biol, 245(1):130–40, Mar 2007, [http://www.ncbi.nlm.nih.gov/pubmed?term=17084415 PMID: 17084415]</ref>. Higher ''k'' values reflect larger changes in the function log(N/S). To optimize the fit, the plugin retrieves a [[#ShollPlots|second linear regression]] centered around the median distance, excluding distances at the edges of the profile. Details of this second fit are also registered on the [[#Metrics|''Sholl table'']] under dedicated columns, e.g., ''Sholl regression coefficient [P10-P90]'', when data within the 10<sup>th</sup>–90<sup>th</sup> percentile is used.
 
