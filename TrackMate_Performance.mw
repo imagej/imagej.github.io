@@ -15,7 +15,7 @@ The computer used for these tests is the following:
 
 The tests reported here were run on an Apple MacPro, 2 x 2.66 GHz 6-Core Intel Xeon, 24 Go 1333 MHz DDR3, running Mac OS X v10.7.5, with Java 1.6. The detectors instantiated were tamed to use only 1 thread. Unless indicated, the median filter and the sub-pixel localization were not done. 
 
-=== The DoG detector. ===
+=== The DoG & LoG detectors. ===
 
 
 ==== Processing time for a 2D image as a function of its size. ====
