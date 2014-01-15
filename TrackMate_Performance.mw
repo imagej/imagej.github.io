@@ -78,6 +78,11 @@ For the DoG detector, unsurprisingly, we find that the execution time is proport
 
 The LoG detector operates in Fourier space, and because of the Fourier transform implementation we use, the images are padded with 0s to reach a size equal to a power of 2. This does not show here as all but one tests are made with such a size. Still, the execution time slightly deviates from the linear case, and shows a slight quadratic shape. The best linear fit yields a low in ''t (ms) = 3.8e-4 x Npixels'', showing that the LoG detector is slightly quicker than the DoG detector.
 
+[[File:TrackMate_DoGandLoGTimeVsPixels.png|400px]]
+
+
+
+
 ==== Processing time for a 3D image as a function of its size. ====
 
 {|  class="wikitable" cellspacing="10"
