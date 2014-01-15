@@ -80,6 +80,8 @@ The LoG detector operates in Fourier space, and because of the Fourier transform
 
 [[File:TrackMate_DoGandLoGTimeVsPixels.png|400px]]
 
+
+
 ==== Processing time for a 3D image as a function of its size. ====
 
 {|  class="wikitable" cellspacing="10"
@@ -121,6 +123,12 @@ The LoG detector operates in Fourier space, and because of the Fourier transform
 |}
 
 And again, the processing time is found to be linear with the number of pixels. The linear fit is slightly steeper, however: ''t (ms) = 4.6e-4 x Npixels'', which we attribute to the 3D kernel overhead.
+
+Interestingly, the LoG detector seems to become the slowest at intermediate size, which I cannot interpret well. 
+
+[[File:TrackMate_DoGandLoGTimeVsPixels3D.png|400px]]
+
+
 
 
 ==== Processing time for a 2D image as a function of the spot radius. ====
