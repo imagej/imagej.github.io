@@ -85,31 +85,39 @@ The LoG detector operates in Fourier space, and because of the Fourier transform
 {|  class="wikitable" cellspacing="10"
 ! align="left"|N (pixels)
 !Image size
-!Time (ms)
+!DoG detector time (ms)
+!LoG detector time (ms)
 |-
 |4096
 |16x16x16
 |8.7
+|24.7
 |-
 |32768
 |32x32x32
 |23.5
+|38.5
 |-
 |262144
 |64x64x64
 |129.3
+|159.2
+|
 |-
 |2097152
 |128x128x128
 |875.1
+|936.3
 |-
 |16777216
 |256x256x256
 |7054.0
+|7462.4
 |-
 |134217728
 |512x512x512
 |61477.2
+|58860.6
 |}
 
 And again, the processing time is found to be linear with the number of pixels. The linear fit is slightly steeper, however: ''t (ms) = 4.6e-4 x Npixels'', which we attribute to the 3D kernel overhead.
