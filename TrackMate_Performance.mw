@@ -144,9 +144,20 @@ We find the processing time to increase linearly with the specified radius, foll
 
 This time we used a 256x256x256 3D image, but with otherwise the same parameters. 
 
-[[File:DoGandLoGTimeVsRadius3D|400px]]
+[[File:TrackMate_DoGandLoGTimeVsRadius3D|400px]]
 
-The processing time increases, but this time deviates slightly from linearity. 
+The processing time increases, but this time deviates slightly from linearity in the DoG case. We retrieve the 3D kernel overhead we had for the 3D images.
+
+The LoG performance clearly highlights the 0-padding used because of the Fourier transform: Indeed, the processing time increase in a step-wise manner. We use the Fourier transform to compute the convolution by the LoG kernel. But for the implementation we use, the kernel image (and the source image as well) are padded by 0 until their size reaches a power of 2 (128, 256, 512, etc...). Whenever the required kernel size is smaller than this power of 2, its size is increased to this value. Because ultimately the processing time depends on the number of pixels, we see a constant processing time until the kernel size imposes a larger power of 2.
+
+
+==== Choosing between DoG and LoG based on performance ====
+
+
+This stepwise evolution makes it slightly harder to choose between LoG and DoG detectors based on performance. As a crude rule of thumb we will remember that
+
+* The LoG detector outperforms the DoG detector in 2D for radiuses larger than 2 pixels.
+* The LoG detector outperforms the DoG detector in 3D for radiuses larger than 4 pixels.
 
 
 <references/>
