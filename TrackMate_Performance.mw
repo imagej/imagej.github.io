@@ -144,7 +144,7 @@ We find the processing time to increase linearly with the specified radius, foll
 
 This time we used a 256x256x256 3D image, but with otherwise the same parameters. 
 
-[[File:TrackMate DogTimeVsRadius3D.png|400px]]
+[[File:DoGandLoGTimeVsRadius3D|400px]]
 
 The processing time increases, but this time deviates slightly from linearity. 
 
