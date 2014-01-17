@@ -163,7 +163,7 @@ Thread.sleep(100);
 or
 
 <source lang="javascript">
-
+new WaitForUserDialog("Action required", "Please press OK when done.").show();
 </source>
 
 * Python
