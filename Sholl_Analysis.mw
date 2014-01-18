@@ -7,8 +7,8 @@
 | source         = [https://github.com/tferr/ASA on GitHub]
 | filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.0.0-SNAPSHOT.jar Sholl_Analysis.jar]
 | released       = December 2012
-| latest version = '''3.3''', December 2013 ([https://github.com/tferr/ASA/blob/master/Notes Release Notes])
-| status         = stable, active (see [[#Release Notes and Pre-releases|Pre-releases]])
+| latest version = '''3.3''', December 2013 ([https://github.com/tferr/ASA/blob/master/Notes.md#release-notes-for-sholl-analysis Release Notes])
+| status         = See [[#Release Notes and Pre-releases|Pre-releases]] and [https://github.com/tferr/ASA/blob/master/Notes.md#development-builds Development Notes]
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]]
 }}
 
@@ -412,17 +412,17 @@ Semi-automated segmentation can also be improved through the usage of simple [[:
 #<span id="faq15"></span>'''I found a bug. How do I report it?'''
 #: Use Fiji's built-in [[Report a Bug]] command. Alternatively, report it to the [http://imagej.nih.gov/ij/list.html ImageJ mailing list]. Don't forget to include the steps needed to reproduce the problem.
 #<span id="faq16"></span>'''My version is not the latest after running <span style="border-bottom:1px dotted #ccc;">Help▷ Update Fiji...</span> Why?'''
-#:You have manually installed/modified ''Sholl_Analysis.jar''. Run the [[Update Fiji|Updater]], choose ''Advanced Mode'' then type "Sholl" in the ''Search'' field, selecting ''Sholl_Analysis.jar'' from the list of files. If the ''Details pane'' indicates an available update, click on ''Locally modified'' under ''Status/Action'' and choose ''Install/Update''. The latest version will be available once you press ''Apply changes''.
+#:You have manually installed/modified ''Sholl_Analysis.jar'' ([[#Release Notes and Pre-releases|Development build]]?). Run the [[Update Fiji|Updater]], choose ''Advanced Mode'' then ''View locally modified files'' under ''View Options''. Type "Sholl" in the ''Search'' field, selecting ''Sholl_Analysis.jar'' from the list of files. If the ''Details pane'' indicates an available update, click on ''Locally modified'' under ''Status/Action'' and choose ''Install/Update''. The latest release version will be available once you press ''Apply changes''.
 #<span id="faq17"></span>'''This documentation is not that useful. How long do I have to wait until it gets improved?'''
 #: Around 20 seconds. This is the time it will take you to [[Help:Contents#New_accounts|create an account]] on this wiki. Once you have created one, you will be able to improve this page yourself.
 
 == Non-Fiji users ==
 If you are not using Fiji, download ''Sholl_Analysis.jar'' from the direct link listed on the [[#top|top of this page]] and place it in the ''ImageJ/plugins/'' directory. Alternatively, drag the downloaded jar and drop it on the main window. Restart ImageJ and run the new <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span> command.
 
-Please note that Fiji is the most convenient way of keeping your ImageJ distribution up-to-date. Without access to Fiji's [[Update_Fiji|built-in updater]], you are strongly advised to upgrade ImageJ to its latest version using <span style="border-bottom:1px dotted #ccc;">Help▷ Update ImageJ...</span> Without Fiji, you will also have to manually update the Sholl Analysis plugin by checking the [https://github.com/tferr/ASA/blob/master/Notes Release Notes].
+Please note that Fiji is the most convenient way of keeping your ImageJ distribution up-to-date. Without access to Fiji's [[Update_Fiji|built-in updater]], you are strongly advised to upgrade ImageJ to its latest version using <span style="border-bottom:1px dotted #ccc;">Help▷ Update ImageJ...</span> Without Fiji, you will also have to manually update the Sholl Analysis plugin by checking the [https://github.com/tferr/ASA/blob/master/Notes.md#release-notes-for-sholl-analysis Release Notes].
 
 == Release Notes and Pre-releases ==
-Releases notes are available on [https://raw.github.com/tferr/ASA/master/Notes Github]. If you do not mind unstable software, development builds may be found [http://jenkins.imagej.net/job/Sholl-Analysis here]. Once new features mature, these "pre-releases" will be made available as usual.
+Releases notes are available on [https://github.com/tferr/ASA/blob/master/Notes.md#release-notes-for-sholl-analysis Github]. If you do not mind unstable software, [https://github.com/tferr/ASA/blob/master/Notes.md#development-builds development builds] may be found [http://jenkins.imagej.net/job/Sholl-Analysis here]. Once new features mature and no major issues are found these development versions will be made available as usual.
 
 == Related Links ==
 * '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]]''' Mark Longair's plugin for semi-automated three-dimensional tracing, featuring [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl analysis]] for traced cells
