@@ -184,11 +184,11 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 :A measure of ramification<ref name="Schoenen">J Schoenen. The dendritic organization of the human spinal cord: the dorsal horn. Neuroscience, 7(9):2057–87, Jan 1982, [http://www.ncbi.nlm.nih.gov/pubmed?term=7145088 PMID: 7145088]</ref>: the ratio between ''Max inters.'' and the number of [[#PrimaryBranches|primary branches]].
 : See also [[#SchoenenFitted|Ramification index (CV)]]
 
-;<span id="Centroid">Radius of centroid (''Centroid radius'')
-:The abcissa of the centroid (i.e., the geometric center or barycenter) of the linear profile. It is [[#ShollPlots|highlighted]] on the ''N'' vs ''Distance'' plot.
+;<span id="Centroid">Centroid radius
+:The abcissa of the [http://en.wikipedia.org/wiki/Centroid centroid] (i.e., the geometric center or barycenter) of the linear profile. It is [[#ShollPlots|highlighted]] on the ''N'' vs ''Distance'' plot.
 
-;Centroid intersections (''Centroid inters.'')
-:The ordinate of the centroid (i.e., the geometric center or barycenter) of the linear profile. It is [[#ShollPlots|highlighted]] on the ''N'' vs ''Distance'' plot.
+;Centroid value
+:The ordinate of the [http://en.wikipedia.org/wiki/Centroid centroid] (i.e., the geometric center or barycenter) of the linear profile. It is [[#ShollPlots|highlighted]] on the ''N'' vs ''Distance'' plot.
 
 ;<span id="EnclosingRadius"></span>Enclosing radius
 :The last (thus, the widest) of ''Intersecting radii'' to be associated with the number of intersections specified by [[#EnclosingRadiusCutoff|Enclosing radius cutoff]]. For a cutoff of 1 (the default) ''Enclosing radius'' is the widest of ''Intersecting radii''. It reflects the [http://en.wikipedia.org/wiki/Feret_diameter Feret length] of the arbor.
