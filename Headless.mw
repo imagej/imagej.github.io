@@ -26,6 +26,12 @@ Nowadays, we use [[Javassist]] for run-time patching, but if you still require a
 
 '''Shortcoming:''' There are plugins which are even more bound to a GUI than ImageJ 1.*. Naturally, these plugins will still try to instantiate GUI elements when being called in headless mode, failing.
 
+=== Running Scripts in Headless Mode ===
+
+If you want to run ''scripts'' (JRuby, Jython, etc.) in headless mode, then you have to make sure you run the appropriate "Refresh ... Scripts" plugin first. For example, if you have a script called test_ruby.rb, which appears in the Plugins menu somewhere as "test ruby", then you can run that with:
+
+  fiji --headless -eval 'run("Refresh JRuby Scripts",""); run("test ruby","");'
+
 == Xvfb ==
 
 Another method is to have a virtual desktop, e.g. [https://en.wikipedia.org/wiki/Xvfb Xvfb]. This will allow Fiji to start with a virtualised graphical desktop.
