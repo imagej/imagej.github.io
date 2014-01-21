@@ -40,7 +40,7 @@ If you add a new script and ImageJ is running, just go to Plugins - Scripting an
 
 For the script to appear in the Plugin menus, it needs to terminate in the appropriate file extension. For example, ".js" for javascript, ".py" for jython, ".rb" for jruby, ".clj" for clojure, and ".bs" for beanshell script.  The script must also contain a '_' (underscore) in the name.  The extension will be stripped and any underscores will be turned into spaces before the script is added to the menus.
 
-== Running Scripts in Headless Mode ==
+== Running scripts in headless mode ==
 
 See the [[Headless#Running_Scripts_in_Headless_Mode|Headless]] page for instructions on executing scripts headlessly.
 
