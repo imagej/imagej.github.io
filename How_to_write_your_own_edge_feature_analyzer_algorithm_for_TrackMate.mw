@@ -88,7 +88,94 @@ These 4 methods are:
 
 * <code>getFeatureDimensions()</code> returns a last map, that gives a dimension to your features. Physical dimensions are listed in the  [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/Dimension.java Dimension enum].
 
+In this tutorial, our analyzer just returns one feature, which is an angle. So a concrete implementation could be:
 
+<source lang="java">
+package plugin.trackmate.examples.edgeanalyzer;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.swing.ImageIcon;
+
+import fiji.plugin.trackmate.Dimension;
+import fiji.plugin.trackmate.features.edges.EdgeAnalyzer;
+
+public class EdgeAngleAnalyzer implements EdgeAnalyzer
+{
+
+	private static final String KEY = "Edge angle";
+
+	private static final String EDGE_ANGLE = "EDGE_ANGLE";
+
+	private static final List< String > FEATURES = new ArrayList< String >( 1 );
+
+	public static final Map< String, String > FEATURE_NAMES = new HashMap< String, String >( 1 );
+
+	public static final Map< String, String > FEATURE_SHORT_NAMES = new HashMap< String, String >( 1 );
+
+	public static final Map< String, Dimension > FEATURE_DIMENSIONS = new HashMap< String, Dimension >( 1 );
+
+	static
+	{
+		FEATURES.add( EDGE_ANGLE );
+		FEATURE_NAMES.put( EDGE_ANGLE, "Link angle" );
+		FEATURE_SHORT_NAMES.put( EDGE_ANGLE, "Angle" );
+		FEATURE_DIMENSIONS.put( EDGE_ANGLE, Dimension.ANGLE );
+	}
+
+	@Override
+	public String getKey()
+	{
+		return KEY;
+	}
+
+	@Override
+	public String getName()
+	{
+		return "Edge angle";
+	}
+
+	@Override
+	public List< String > getFeatures()
+	{
+		return FEATURES;
+	}
+
+	@Override
+	public Map< String, String > getFeatureShortNames()
+	{
+		return FEATURE_SHORT_NAMES;
+	}
+
+	@Override
+	public Map< String, String > getFeatureNames()
+	{
+		return FEATURE_NAMES;
+	}
+
+	@Override
+	public Map< String, Dimension > getFeatureDimensions()
+	{
+		return FEATURE_DIMENSIONS;
+	}
+
+	@Override
+	public String getInfoText()
+	{
+		return "";
+	}
+
+	@Override
+	public ImageIcon getIcon()
+	{
+		return null;
+	}
+}
+</source>
 
 
 
