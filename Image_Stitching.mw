@@ -213,7 +213,7 @@ Sometimes people only want to stitch in x and y, but not in z. There is an ad-ho
 You can activate the option using the '''script editor''':
 * File > New > Script
 * Language > Beanshell
-* type the following line (without the 001) to change it to e.g. 10%
+* type the following line (without the 001):
 <source lang="java">
 mpicbg.stitching.GlobalOptimization.ignoreZ = true;
 </source>
