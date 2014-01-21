@@ -24,14 +24,74 @@ All of these modules implement an interface, specific to the module class. For i
 There is therefore 7 interfaces. They do have in common that they all extend the mother module interface called [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/TrackMateModule.java TrackMateModule].
 
 TrackMateModule is used for two basic purpose:
-* It itself extends the SciJavaPlugin interface, which will fuel the automatic discovery of new modules.
+* It itself extends the SciJavaPlugin interface, which will fuel the automatic discovery of new modules. We will discuss this point last.
+
 * It has basic methods for the GUI integration:
 *# <code>getKey()</code> returns a unique string identifier that is used internally to reference the algorithm. For instance: <code>"EDGE_VELOCITY_ANALYZER"</code>
 *# <code>getName()</code> returns a string suitable to be displayed in the GUI that named the algorithm. For instance <code>"Edge velocity"</code>.
 *# <code>getIcon()</code> returns an <code>ImageIcon</code> to be displayed in the GUI.
 *# <code>getInfoText()</code> returns a html string that briefly documents what the algorithm does. Basic html markup is accepted, so you can have something like
-<pre>"<html>Plot the number of spots in each frame as a function <br>of time. Only the <u>filtered</u> 
-spots are taken into account. </html>"</pre>
+<pre>"<html>Plot the number of spots in each frame as a function <br>of time. Only the
+<u>filtered</u> spots are taken into account. </html>"</pre>
+
+These are the methods used to integrate you module within the GUI. According to the class of the module, some might be plainly ignored. For instance, the edge analyzers subject of this tutorial ignore the icon and info text, since they are used silently within the GUI to provide new features. 
+
+
+== Basic project structure ==
+
+Before we step into the edge analyzers specific, you want to setup a development environment that will ease TrackMate module development. Rather than listing the requirement, just check [https://github.com/fiji/TrackMate-examples this github repository], and clone it. It contains the files of this tutorial series and more importantly, is configured to depend on the latest TrackMate version, which will make it available to your code. 
+
+Compiling this project with maven will generate a jar, that you will be able to drop in the fiji plugins folder. Your modules will then be automatically detected and integrated in TrackMate.
+
+But more on that later.
+
+
+== Let's get started ==
+
+But let's get back on our edge analyzer. 
+
+For this tutorial, we are going to do something simple, at least mathematically. We will write an edge analyzer that can return the angle (in radians) of a link 
+in the XY plane. Nothing more. 
+
+So create a package for your new analyzer in our project, for instance <code>fiji.plugin.trackmate.examples.edgeanalyzer</code>.
+
+In this package, create a class <code>EdgeAngleAnalyzer</code> and let it implement the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java EdgeAnalyzer] interface. You should be getting something like this:
+
+<source lang="java">
+package plugin.trackmate.examples.edgeanalyzer;
+
+import fiji.plugin.trackmate.features.edges.EdgeAnalyzer;
+
+public class EdgeAngleAnalyzer implements EdgeAnalyzer
+{
+}
+</source>
+
+
+== Feature analyzers specific methods == 
+
+Eclipse will immediately complain (I suppose you are using Eclipse; but when it comes to complaining, everything tends to be general) that your class needs to implement some abstract method. Let it fill some stubs, so that we have:
+
+<source lang="java">
+</source>
+
+We see the general module methods we discussed above, plus some specific to edge analyzers. Actually, most of the new methods are generic for <i>all</i> the feature analyzers (spot, track or edge). These methods belong to the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/FeatureAnalyzer.java FeatureAnalyzer] interface, which <code>EdgeAnalyzer</code> extends, of course. 
+
+They exist because TrackMate needs to know what your feature analyzer does. Since it computes numerical features, it needs to know what features it computes, their name, their short name (when we want to show them in crowded part of the GUI) and their physical dimension. Indeed, TrackMate wants to know the dimension of the feature you generate, for it was coded in part by a conflicted physicist who does not want angles and velocities to be plotted on the same graph. 
+
+These 4 methods are:
+* <code>getFeatures()</code> returns a list of string that identifies the features the analyzer generate. There can be more than one. This list must contain strings that can be used in a XML file. Historically, we use capitalized strings, in the shape of java constants, such as <code>DISPLACEMENT</code>. We call them feature keys.
+
+* <code>getFeatureNames()</code> returns a map that links the feature keys to the feature names. For instance in the GUI, we want to display "Displacement" rather than "DISPLACEMENT", so that is what this map is about. It is important that the keys of this map are the keys defined in the list above. 
+
+* <code>getFeatureShortNames()</code> returns another map with the same rules. We just use its value to display short names of features when this is needed in the GUI. There are no general advice on how to shorten your feature names; just try until it fits.
+
+* <code>getFeatureDimensions()</code> returns a last map, that gives a dimension to your features. Physical dimensions are listed in the  [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/Dimension.java Dimension enum].
+
+
+
+
+
 
 
 [[Category:Tutorials]]
