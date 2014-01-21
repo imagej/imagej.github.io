@@ -97,9 +97,12 @@ Do you want to make your new algorithms usable by the reviewers of your submitte
 
 TrackMate was developed to serve as a tool for Life-Science image analysis community, so that new tracking tools can be developed more easily and quickly, and so that end-users can use them to perform their own research. We will support you if need help to reuse it.
 
+
+
 == Documentation and tutorials ==
 
 * [[TrackMate version history]]
+
 
 === For users ===
 
@@ -110,15 +113,27 @@ TrackMate was developed to serve as a tool for Life-Science image analysis commu
 * [[Track analysis using TrackMate]]
 * [[TrackMate algorithms|TrackMate algorithms]] details and documents the automated segmentation algorithms, particle-linking algorithms, etc.. currently implemented in TrackMate. 
 * [[Using TrackMate with MATLAB]] documents the MATLAB functions shipped with Fiji that allows importing data generated with TrackMate into MATLAB.
-* [[Scripting TrackMate]] shows how to do tracking using a scripting language, ''e.g.'' from the Fiji [[Script Editor]].
 * [[TrackMate Performance]] reports various measures of the performance of its components. Performance reports include execution time of course, but also results accuracy which is more delicate to evaluate.
+
 
 === For developers ===
 
-Extending TrackMate is not completely trivial. However, it should be of no difficulty for an average Java developer. Rather than sending you to the API, we propose you some tutorials using dummy examples.
+* [[Scripting TrackMate]] shows how to do tracking using a scripting language, ''e.g.'' from the Fiji [[Script Editor]]. These example scripts will show you how to use TrackMate as a library and familiarize yourself with the API.
 
-* [[How to write your own segmentation algorithm for TrackMate]]
+But the really interesting part for developers is the ability to extend TrackMate. 
+
+Do you have a tracking or a detection algorithm you want to implement? Of course you can write a whole software from scratch. But at some point you will have to design a model to hold the data, to write code that can load and save the results, visualize them, have even a minimalistic GUI, and allow to manually correct the outcome of your algorithm. This can be long, tedious and boring, while the part that interests you is just the core algorithm. 
+
+We propose you to use TrackMate as a home for your algorithm. The framework is already there; it might not be perfect  but can get your algorithm integrated very quickly. And then you can benefit from the other modules. 
+
+The subject of extending TrackMate is not completely trivial. However, recent advances in the [http://www.scijava.org/ SciJava package], brewed by the Fiji and ImageJ2 teams considerably simplified the task. It should be of no difficulty for an average Java developer. 
+
+The following tutorials show how to integrate a module of each kind in TrackMate. They are listed by increasing complexity, and it is a good idea to practice them in this order. 
+
+* [[How to write your own edge feature analyzer algorithm for TrackMate]]
+* [[How to write your own detection algorithm for TrackMate]]
 * [[How to write your own particle-linking algorithm for TrackMate]]
+
 
 
 == Who uses TrackMate ==
@@ -127,6 +142,7 @@ We don't know in all honesty, since we did not write a paper specifically for Tr
 
 * Chen et al. The bacterial carbon-fixing organelle is formed by shell envelopment of preassembled cargo. PLoS ONE (2013) vol. 8 (9) pp. e76127
 * Phang et al. POPX2 phosphatase regulates the KIF3 kinesin motor complex. J Cell Sci (2013) pp. 
+
 
 
 == TrackMate components ==
