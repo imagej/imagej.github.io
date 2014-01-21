@@ -30,13 +30,13 @@ Fiji provides the capability to execute ImageJ plugins, macros and scripts in he
 
 '''Shortcoming:''' There are plugins which are even more bound to a GUI than ImageJ 1.x is. Naturally, these plugins will still try to instantiate GUI elements when being called in headless mode, failing.
 
-=== Running Macros in Headless Mode ===
+=== Running macros in headless mode ===
 
 To run a ''macro'' in headless mode, use the <code>-macro</code> command line argument along with the <code>--headless</code> option, as follows:
 
   ImageJ --headless -macro myMacro.ijm
 
-=== Running Scripts in Headless Mode ===
+=== Running scripts in headless mode ===
 
 To run a ''script'' (JRuby, Jython, etc.) in headless mode, you must first run the appropriate "Refresh ... Scripts" plugin, then invoke the script command. For example, if you have a script called <code>test_ruby.rb</code>, which appears in the Plugins menu somewhere as "test ruby", then you can run it with:
 
