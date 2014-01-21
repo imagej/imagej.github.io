@@ -212,12 +212,6 @@ it means that you do not have ''Java3D'' installed. This happens typically when 
 
 Alternatively, if you have write permissions to the path ''JAVA_HOME'' points to, you could install ''Java3D'' manually.
 
-== I tried to build Fiji, but get ''Target misc/headless.jar was not built!'' ==
-
-You need to update the ImageJA submodule:
-
- git submodule update ImageJA
-
 == Class loading issue in 3-rd party libraries (e.g. JPPF) ==
 
 Libraries trying to load resources or classes with the current thread's class loader rather than with IJ's class loader may fail. The solution is to first set the current thread's class loader to the IJ-classloader. This must be done from <u>the same thread</u> that will later call the problematic code:
