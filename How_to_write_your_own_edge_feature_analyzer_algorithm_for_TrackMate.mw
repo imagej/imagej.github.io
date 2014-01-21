@@ -1,8 +1,8 @@
 == Introduction ==
 
-This page is a tutorial that shows how to integrate your own edge feature analyzer algorithm in TrackMate. It is the first in the series of tutorials dedicated to TrackMate extension, and should be read first by scientist willing to extend TrackMate. 
+This page is a tutorial that shows how to integrate your own edge feature analyzer algorithm in TrackMate. It is the first in the series of tutorials dedicated to TrackMate extension, and should be read first by scientists willing to extend TrackMate. 
 
-All these tutorials assume you are familiar with Java development. You should be at ease with java core concepts such as object oriented design, inheritance, interfaces, etc...  Ideally you would even know that maven exists and that it can help you compile software. Beyond this, the tutorials will provide what you need to know. 
+All these tutorials assume you are familiar with Java development. You should be at ease with java core concepts such as object oriented design, inheritance, interfaces, etc...  Ideally you would even know that maven exists and that it can help you to compile software. Beyond this, the tutorials will provide what you need to know. 
 
 Edge feature analyzers are algorithms that can associate one or more scalar numerical features  to an edge, or a link between two spots in TrackMate. For instance, the instantaneous velocity is an edge feature (you need two linked spots to compute a displacement and a time interval), which happens to be provided by the algorithm named [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/edges/EdgeVelocityAnalyzer.java EdgeVelocityAnalyzer.java].
 
@@ -10,7 +10,7 @@ Edge feature analyzers are algorithms that can associate one or more scalar nume
 
 == TrackMate modules ==
 
-TrackMate is extended by writing ''modules''. Modules are just the basic algorithms that provide TrackMate with core functionality, that the GUI and API wraps. There are 7 classes of modules:
+TrackMate is extended by writing ''modules''. Modules are just the basic algorithms that provide TrackMate with core functionality, that the GUI and API wrap. There are 7 classes of modules:
 
 * detection algorithms
 * particle-linking algorithms
@@ -70,10 +70,7 @@ public class EdgeAngleAnalyzer implements EdgeAnalyzer
 
 == Feature analyzers specific methods == 
 
-Eclipse will immediately complain (I suppose you are using Eclipse; but when it comes to complaining, everything tends to be general) that your class needs to implement some abstract method. Let it fill some stubs, so that we have:
-
-<source lang="java">
-</source>
+Eclipse will immediately complain (I suppose you are using Eclipse; but when it comes to complaining, everything tends to be general) that your class needs to implement some abstract method. A variety of methods popup. 
 
 We see the general module methods we discussed above, plus some specific to edge analyzers. Actually, most of the new methods are generic for <i>all</i> the feature analyzers (spot, track or edge). These methods belong to the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/FeatureAnalyzer.java FeatureAnalyzer] interface, which <code>EdgeAnalyzer</code> extends, of course. 
 
@@ -140,6 +137,18 @@ public class EdgeAngleAnalyzer implements EdgeAnalyzer
 	}
 
 	@Override
+	public String getInfoText()
+	{
+		return "";
+	}
+
+	@Override
+	public ImageIcon getIcon()
+	{
+		return null;
+	}
+
+	@Override
 	public List< String > getFeatures()
 	{
 		return FEATURES;
@@ -161,18 +170,6 @@ public class EdgeAngleAnalyzer implements EdgeAnalyzer
 	public Map< String, Dimension > getFeatureDimensions()
 	{
 		return FEATURE_DIMENSIONS;
-	}
-
-	@Override
-	public String getInfoText()
-	{
-		return "";
-	}
-
-	@Override
-	public ImageIcon getIcon()
-	{
-		return null;
 	}
 }
 </source>
