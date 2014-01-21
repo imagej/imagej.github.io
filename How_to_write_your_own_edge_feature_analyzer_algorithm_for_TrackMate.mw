@@ -1,0 +1,37 @@
+== Introduction ==
+
+This page is a tutorial that shows how to integrate your own edge feature analyzer algorithm in TrackMate. It is the first in the series of tutorials dedicated to TrackMate extension, and should be read first by scientist willing to extend TrackMate. 
+
+All these tutorials assume you are familiar with Java development. You should be at ease with java core concepts such as object oriented design, inheritance, interfaces, etc...  Ideally you would even know that maven exists and that it can help you compile software. Beyond this, the tutorials will provide what you need to know. 
+
+Edge feature analyzers are algorithms that can associate one or more scalar numerical features  to an edge, or a link between two spots in TrackMate. For instance, the instantaneous velocity is an edge feature (you need two linked spots to compute a displacement and a time interval), which happens to be provided by the algorithm named [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/edges/EdgeVelocityAnalyzer.java EdgeVelocityAnalyzer.java].
+
+
+
+== TrackMate modules ==
+
+TrackMate is extended by writing ''modules''. Modules are just the basic algorithms that provide TrackMate with core functionality, that the GUI and API wraps. There are 7 classes of modules:
+
+* detection algorithms
+* particle-linking algorithms
+* numerical features for spots (such as mean intensity, etc..)
+* numerical features for links (such as velocity, orientation, etc..)
+* numerical features for tracks (total displacement, length, etc...)
+* visualization tools
+* post-processing actions (exporting, data massaging, etc...)
+
+All of these modules implement an interface, specific to the module class. For instance, an edge analyzer algorithm will implement the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java EdgeAnalyzer] interface. 
+There is therefore 7 interfaces. They do have in common that they all extend the mother module interface called [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/TrackMateModule.java TrackMateModule].
+
+TrackMateModule is used for two basic purpose:
+* It itself extends the SciJavaPlugin interface, which will fuel the automatic discovery of new modules.
+* It has basic methods for the GUI integration:
+*# <code>getKey()</code> returns a unique string identifier that is used internally to reference the algorithm. For instance: <code>"EDGE_VELOCITY_ANALYZER"</code>
+*# <code>getName()</code> returns a string suitable to be displayed in the GUI that named the algorithm. For instance <code>"Edge velocity"</code>.
+*# <code>getIcon()</code> returns an <code>ImageIcon</code> to be displayed in the GUI.
+*# <code>getInfoText()</code> returns a html string that briefly documents what the algorithm does. Basic html markup is accepted, so you can have something like
+<pre>"<html>Plot the number of spots in each frame as a function <br>of time. Only the <u>filtered</u> 
+spots are taken into account. </html>"</pre>
+
+
+[[Category:Tutorials]]
