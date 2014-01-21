@@ -4,7 +4,7 @@ To activate it in your Fiji setup:
 
 * [[Update_Sites|''Help>Update Fiji'']]
 * Click ''Manage update sites''
-* Check ''Bio-Formats daily builds''
+* Check ''Bio-Formats 4''
 * Click ''Close''
 
 Five files should appear on the list with ''Status/Action'' of ''Update it''.
