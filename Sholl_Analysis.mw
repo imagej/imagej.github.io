@@ -7,7 +7,7 @@
 | source         = [https://github.com/tferr/ASA on GitHub]
 | filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.0.0-SNAPSHOT.jar Sholl_Analysis.jar]
 | released       = December 2012
-| latest version = '''3.3''', December 2013 ([https://github.com/tferr/ASA/blob/master/Notes.md#release-notes-for-sholl-analysis Release Notes])
+| latest version = '''3.4''', January 2014 ([https://github.com/tferr/ASA/blob/master/Notes.md#release-notes-for-sholl-analysis Release Notes])
 | status         = See [[#Release Notes and Pre-releases|Pre-releases]] and [https://github.com/tferr/ASA/blob/master/Notes.md#development-builds Development Notes]
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]]
 }}
