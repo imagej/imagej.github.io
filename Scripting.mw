@@ -44,6 +44,6 @@ For the script to appear in the Plugin menus, it needs to terminate in the appro
 
 If you want to run scripts in headless mode (i.e. without the GUI, by invoking fiji with the --headless option) then you have to make sure you run the appropriate "Refresh ... Scripts" plugin first.  Also, you need to append -batch to the command.  For example, if you have a script called test_ruby.rb, which appears in the Plugins menu somewhere as "test ruby", then you can run that with:
 
-  fiji --headless -eval 'run("Refresh JRuby Scripts",""); run("test ruby","");' -batch
+  fiji --headless -eval 'run("Refresh JRuby Scripts",""); run("test ruby","");'
 
 [[Category:Scripting]]
