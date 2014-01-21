@@ -310,6 +310,4 @@ So the true reason why we use Java is probably: it makes Fiji accessible.
 
 == What is this ''headless'' mode and what do I need it for? ==
 
-The term ''headless'' refers to running Fiji without a graphical desktop, e.g. on a cluster.
-
-For technical reasons, GUI elements such as a menu or a button cannot be used when running Java on Linux in headless mode. That is the reason why we put custom classes into a file called ''headless.jar'' which override specific ImageJ classes that would try to instantiate GUI elements. In headless mode, that ''.jar'' file is inserted into the Java class path. In non-headless mode, the ''.jar'' file is not inserted into the class path (that is the reason why ''headless.jar'' is not in the ''jars/'' subdirectory).
+The term ''headless'' refers to running Fiji without a graphical desktop, e.g. on a cluster. See the [[Headless]] page for more information.
