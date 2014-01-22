@@ -27,7 +27,7 @@ First, factor out the plugin's source code from ''fiji.git'':
 <ol>
 <li>Clone Fiji into a new repository:
 <source lang="bash">
-git clone -b HEAD . external/<new-repository-name>
+git clone -b master . external/<new-repository-name>
 </source>
 Where ''<new-repository-name>'' is the name you want to give the external repository.</li>
 <li>Use Git's ''filter-branch'' feature to extract the Git history of only that plugin:
@@ -46,6 +46,9 @@ git commit -m 'Update SCM location' pom.xml</source>
 <source lang="bash">mvn clean install</source>
 </li>
 <li>Add (or adjust) the ''.gitignore'' file (see [https://github.com/fiji/spimreconstruction/commit/cf95dcc06b31c0044b58213c12f886027a5eb3ba example]).</li>
+<li>Commit everything, mentioning from which Fiji commit the history was rewritten (see [https://github.com/scijava/jep/commit/660930836860c6f67ecb53d091eb1730ecb68c80 example]):
+<source lang="bash">git add . && git commit -s</source>
+</li>
 <li>Connect your repository with the remote one:
 <source lang="bash">git remote set-url origin git@github.com:fiji/my-plugin</source>
 Where ''git@github.com:fiji/my-plugin'' is the remote URL for the plugin's new dedicated repository.</li>
