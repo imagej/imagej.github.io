@@ -2,13 +2,13 @@
 | software               = ImageJ
 | name                   = Colour Deconvolution
 | author                 = Gabriel Landini
-| filename               = [http://www.dentistry.bham.ac.uk/landinig/software/colour_deconvolution.zip colour_deconvolution.zip] 
+| filename               = [http://www.mecourse.com/landinig/software/colour_deconvolution.zip colour_deconvolution.zip] 
 | source                 = in zip file
 | released               = 30 March 2004 
 | latest version         = 04 February 2007
 | status                 = active
 | category               = [[:Category:Color processing|Color processing]]
-| website                = [http://www.dentistry.bham.ac.uk/landinig/software/cdeconv/cdeconv.html]
+| website                = [http://www.mecourse.com/landinig/software/cdeconv/cdeconv.html]
 }}
 
 == Purpose ==
@@ -17,7 +17,7 @@ Similarly to the command ''Image>Color>RGB split'', this plugin unmixes an RGB i
 
 == Documentation ==
 
-See [http://www.dentistry.bham.ac.uk/landinig/software/cdeconv/cdeconv.html Gabriel Landini webpage].
+See [http://www.mecourse.com/landinig/software/cdeconv/cdeconv.html Gabriel Landini webpage].
 
 This plugin implements the method described in the following paper:
 
