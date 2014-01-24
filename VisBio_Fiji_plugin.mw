@@ -18,4 +18,8 @@ To use VisBio you must first import an Image Sequence. After you have one import
 *To display every individual image within the view, unselect "Parallel projection"
 *To compact the images, decrease the amount of stretch within the stack
 
-[[Image:Top_of_stack.png|200px|right]][[Image:Bottom_of_stack.png|200px|center]][[Image:Stack_cross_section.png|200px|right]]
+<gallery>
+Top_of_stack.png|The first image within the Ortho Stack
+Bottom_of_stack.png| Last image in the Ortho Stack
+Stack_cross_section.png| A cross sectional view of the Ortho Stack
+<gallery>
