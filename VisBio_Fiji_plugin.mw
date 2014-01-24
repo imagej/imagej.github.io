@@ -9,3 +9,14 @@ To update the VisBio Plugin:
 * Select the "LOCI" site to update all LOCI plugins, including VisBio 
 * Close "Manage Update Sites" and select "Apply changes"
 * Restart ImageJ and the update will be in effect
+
+== Using VisBio ==
+To use VisBio you must first import an Image Sequence. After you have one imported, follow the following directions: 
+
+*Select the imported image sequence
+*Select Plugins > VisBio > Ortho Stack 
+*To display every individual image within the view, unselect "Parallel projection"
+*To compact the images, decrease the amount of stretch within the stack
+
+== Creating an Image sequence == 
+To create an image sequence
