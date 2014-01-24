@@ -22,4 +22,4 @@ To use VisBio you must first import an Image Sequence. After you have one import
 Top_of_stack.png|The first image within the Ortho Stack
 Bottom_of_stack.png| Last image in the Ortho Stack
 Stack_cross_section.png| A cross sectional view of the Ortho Stack
-<gallery mode=packed-hover>
+<gallery>
