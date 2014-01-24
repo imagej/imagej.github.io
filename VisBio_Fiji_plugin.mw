@@ -17,6 +17,3 @@ To use VisBio you must first import an Image Sequence. After you have one import
 *Select Plugins > VisBio > Ortho Stack 
 *To display every individual image within the view, unselect "Parallel projection"
 *To compact the images, decrease the amount of stretch within the stack
-
-== Creating an Image sequence == 
-To create an image sequence
