@@ -53,6 +53,17 @@
 | url = http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2507.html
 }}</ref> relies heavily on Fiji for microscope operation and SPIMage processing.
 
+*  [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MosaicSuite]<ref name="Shivanadan2013">{{cite journal
+| author = Shivanandan A.; Radenovic A., Sbalzarini I. F.
+| title = MosaicIA: an ImageJ/Fiji plugin for spatial pattern and interaction analysis 
+| journal = BMC Bioinformatics
+| volume = 14
+| number = 
+| pages = 1-10
+| year = 2013
+| url = http://www.biomedcentral.com/1471-2105/14/349
+}}</ref> from Ivo Sbalzarini's lab published in BMC Bioinformatics.
+
 *  [[Low_Light_Tracking_Tool|Low Light Tracking Tool]]<ref name="Krull2014">{{cite journal
 | author = Krull, A., Steinborn A., Ananthanarayanan V., Ramunno-Johnson D., Petersohn U., Tolic-Norrelykke I. M. 
 | title = A divide and conquer strategy for the maximum likelihood localization of low intensity objects. 
