@@ -1,0 +1,9 @@
+One of the main missions of the Fiji project is to bring advanced computer vision algorithms into the hands of biologists. For that to happen it is necessary that computer vision researchers contribute their algorithms and plugins to the platform. 
+
+This process has started and one example is the MosaicSuite of image processing algorithms developed by the [http://mosaic.mpi-cbg.de/?q=welcome MOSAIC group] headed by Ivo Sbalzarini at [http://www.mpi-cbg.de/en/research/research-groups/ivo-sbalzarini.html MPI-CBG in Dresden]. The suite includes tools for segmentation, particle tracking and more.
+
+All information on how to install the tools, [http://mosaic.mpi-cbg.de/Downloads/MosaicToolboxSuite_docs.zip documentation] and [https://git.mpi-cbg.de/gitweb/?p=ImageJ.git;a=summary developer information] is available on the [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MOSAIC group website].
+
+The plugins are available in Fiji through a dedicated [[List_of_update_sites|update site]].
+
+We are looking forward to more contributions from the MOSAIC group in the future.
