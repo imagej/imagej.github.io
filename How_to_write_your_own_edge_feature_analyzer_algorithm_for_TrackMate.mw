@@ -67,6 +67,8 @@ public class EdgeAngleAnalyzer implements EdgeAnalyzer
 }
 </source>
 
+It is important to note that we provide a blank constructor. This is very important: with the way we use SciJavaPlugin integration, we cannot use the constructor to pass any object reference. If your analyzer needs some objects which are not provided through the interface methods, then you cannot code it with TrackMate directly. However we should cover most use-cases with what we have. 
+
 
 == Feature analyzers specific methods == 
 
@@ -177,6 +179,134 @@ public class EdgeAngleAnalyzer implements EdgeAnalyzer
 	}
 }
 </source>
+
+
+
+== Multithreading & Benchmarking methods ==
+
+There are also 4 methods which we will skip right now. They are related to the multi-threading aspect of the analyzer. You can code your analyzer to exploit a multithreaded environment, and TrackMate will configure it through the following methods:
+
+<source lang="java">
+	@Override
+	public void setNumThreads()
+	{
+		// We ignore multithreading for this tutorial.
+	}
+
+	@Override
+	public void setNumThreads( final int numThreads )
+	{
+		// We ignore multithreading for this tutorial.
+	}
+
+	@Override
+	public int getNumThreads()
+	{
+		// We ignore multithreading for this tutorial.
+		return 1;
+	}
+</source>
+
+There is also 
+<source lang="java">public long getProcessingTime()</source> 
+that returns how much milliseconds was spent on computing the features. 
+
+
+
+== The core methods ==
+
+What is really important is the two methods that actually perform the work:
+* <code>isLocal()</code>
+* <code> process( final Collection< DefaultWeightedEdge > edges, final Model model )</code> 
+
+Let's see how they would look for our example angle analyzer.
+
+=== <code>isLocal()</code> ===
+
+This method simply returns a boolean that states whether the features you compute are ''local'' ones or not.  By local I mean the following: Does your feature value for an edge depends on the other edges? If no, then it is a local feature: it does not affect the other edges. If yes, then it is non local. Note that it applies to all the features provided by an analyzer.
+
+This distinction fosters some optimization in TrackMate. You know that TrackMate does automated and manual tracking. Doing both in the same software proved challenging to code, particularly when you want to offer good performance when manually correcting very large datasets. When you do a manual modification of the data, TrackMate recomputes all the feature live, so that they are always in sync. But if you make a single punctual modification of an edge, you want to recompute features only for this edge, not for all the others if they are not affected. TrackMate can do that if the feature is local. This is why this method exists. 
+
+An example of a local edge feature would be the instantaneous velocity. The velocity of an edge only depends on this edge and not on the rest. You might say that if you modify the position of a spot, all the edges touching this spot will be affected, so it is not local. But no: all the edges touching the spot will be modified, therefore will be marked for update, but the other edges that are not modified will not have their velocity affected. So the velocity is a local feature. 
+
+An example of a non-local edge feature would be the distance of an edge to its closest neighbor. If you move an edge, its own feature value will be affected. But this will also affect the closest distance to many other edges. So it is non-local and we ''a priori'' have to recompute it for all edges. 
+
+In our case, we are coding an analyzer that returns the angle of a single edge, regardless of the angles of the other edges. It is therefore a local feature. 
+
+
+=== <code>process( final Collection< DefaultWeightedEdge > edges, final Model model )</code> ===
+
+The method that actually performs the work is the less elaborated. The concrete implementation is provided with <code>edges</code>, the collection of the edge whose features are to be calculated, and <code>model</code>, the TrackMate model that holds all the information you need.
+
+There is just one thing to know: Once you computed the numerical value of your feature, you need to store it in the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/FeatureModel.java FeatureModel]. The feature model is a part of the main model.
+
+It works like a 2D Map:
+<source lang="java">
+	final FeatureModel fm = model.getFeatureModel();
+	Double val = Double.valueOf(3.1451564);
+	String FEATURE = "MY_AWESOME_EDGE_FEATURE";
+	fm.putEdgeFeature( edge, FEATURE, val );
+</source>
+
+And for our XY edge angle, here are the methods content:
+
+<source lang="java">
+	@Override
+	public void process( final Collection< DefaultWeightedEdge > edges, final Model model )
+	{
+		final FeatureModel fm = model.getFeatureModel();
+		for ( final DefaultWeightedEdge edge : edges )
+		{
+			final Spot source = model.getTrackModel().getEdgeSource( edge );
+			final Spot target = model.getTrackModel().getEdgeTarget( edge );
+
+			final double x1 = source.getDoublePosition( 0 );
+			final double y1 = source.getDoublePosition( 1 );
+			final double x2 = target.getDoublePosition( 0 );
+			final double y2 = target.getDoublePosition( 1 );
+
+			final double angle = Math.atan2( y2 - y1, x2 - x1 );
+			fm.putEdgeFeature( edge, EDGE_ANGLE, Double.valueOf( angle ) );
+		}
+	}
+
+	@Override
+	public boolean isLocal()
+	{
+		return true;
+	}
+</source>
+
+
+
+== Making the analyzer discoverable ==
+
+Right now, your analyzer is functionnal. It compiles and would return expected results. Everything is fine.
+
+Except that TrackMate doesn't even know it exists. It sits in his lonely corner and is perfectly useless. 
+
+Until TrackMate v2.2.0, there was no other to extend TrackMate than to modify it or fork it, then recompile and redeploy it from scratch. With v2.2.0 we beneficiated from the effort of the ImageJ2 team who built a very simple and very clever discovery mechanism, that allow to simply drop a jar in the plugins folder of Fiji and have TrackMate be aware of it. On top of it all, it is plain and simple.
+
+Just add the following line before the class declaration:
+<source lang="java">
+@Plugin( type = EdgeAnalyzer.class )
+public class EdgeAngleAnalyzer implements EdgeAnalyzer
+{
+...
+</source>
+
+and that's it. 
+
+Just the line <code>@Plugin( type = EdgeAnalyzer.class )</code> is enough. There are also mechanisms that allow fine tuning of priority, visibility (in the GUI menus), or enabling/disabling, but we will see this later.  
+
+Right now, just compile your project, and drop the resulting jar in the Fiji plugins folder. Here is what you get:
+
+[[File:TrackMate DevelopEdgeAnalyzer.png]]
+
+Great, no?
+
+[[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 10:25, 27 January 2014 (CST)
+
 
 
 
