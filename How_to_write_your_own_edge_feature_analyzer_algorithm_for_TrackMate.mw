@@ -303,7 +303,15 @@ Right now, just compile your project, and drop the resulting jar in the Fiji plu
 
 [[File:TrackMate DevelopEdgeAnalyzer.png]]
 
+
+== Wrapping up ==
+
 Great, no?
+
+You can find the full source for this example [https://github.com/fiji/TrackMate-examples/blob/master/src/main/java/plugin/trackmate/examples/edgeanalyzer/EdgeAngleAnalyzer.java here]. It can also be used as a template for your analyzer.
+
+
+
 
 [[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 10:25, 27 January 2014 (CST)
 
