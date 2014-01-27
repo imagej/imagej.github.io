@@ -103,9 +103,10 @@ import fiji.plugin.trackmate.features.edges.EdgeAnalyzer;
 
 public class EdgeAngleAnalyzer implements EdgeAnalyzer
 {
-
+	// The key used to identify this analyzer
 	private static final String KEY = "Edge angle";
 
+	// The feature key of the only feature this analyzer provide.
 	private static final String EDGE_ANGLE = "EDGE_ANGLE";
 
 	private static final List< String > FEATURES = new ArrayList< String >( 1 );
@@ -116,6 +117,7 @@ public class EdgeAngleAnalyzer implements EdgeAnalyzer
 
 	public static final Map< String, Dimension > FEATURE_DIMENSIONS = new HashMap< String, Dimension >( 1 );
 
+	// Let's fill the feature list, names, short names and dimensions.
 	static
 	{
 		FEATURES.add( EDGE_ANGLE );
@@ -139,12 +141,14 @@ public class EdgeAngleAnalyzer implements EdgeAnalyzer
 	@Override
 	public String getInfoText()
 	{
+		// We don't use info texts for edge analyzers. 
 		return "";
 	}
 
 	@Override
 	public ImageIcon getIcon()
 	{
+		// Same.
 		return null;
 	}
 
