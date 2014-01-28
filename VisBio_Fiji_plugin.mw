@@ -26,7 +26,7 @@ To update the VisBio Plugin:
 To use VisBio you must first import an Image Sequence. After you have one imported, follow the following directions: 
 
 *Select the imported image sequence
-*Select Plugins > VisBio > Ortho Stack 
+*Select ''Plugins>VisBio>Ortho Stack'' 
 *To display every individual image within the view, unselect "Parallel projection"
 *To compact the images, decrease the amount of stretch within the stack
 
