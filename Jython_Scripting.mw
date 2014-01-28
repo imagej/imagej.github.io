@@ -1148,7 +1148,7 @@ def process(imp, convert, roi, time_zero, time_range):
   stack = imp.getStack()
   size = stack.getSize()
   bounds = roi.getBounds()
-  new_stack = new ImageStack(bounds.width, bounds.height)
+  new_stack = ImageStack(bounds.width, bounds.height)
   for i in xrange(1, size + 1):
     ip = convert(stack.getProcessor(i))
     ip.setRoi(roi)
