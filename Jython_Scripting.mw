@@ -1115,6 +1115,80 @@ mask = mask.duplicate()
 mask.invert()
 </source>
 
+
+=== Open and save movies with the FFMPEG I/O plugin ===
+
+First open the [[Fiji Updater]], push the "Manage update sites" at the bottom left of the dialog, and install the [http://fiji.sc/~schindelin/ffmpeg-plugins/ FFMPEG] plugin by [[User:Schindelin|Johannes Schindelin]] by ticking its checkbox, as [http://fiji.sc/How_to_follow_a_3rd_party_update_site explained in more detail here].
+
+<source lang="python">
+from fiji.ffmpeg import IO
+from java.awt import Color
+import os
+
+def load(path, first_frame=0, last_frame=-1):
+  """ Load the whole movie by default. """
+  io = IO()
+  imp = io.readMovie(path, False, first_frame, last_frame)
+  return imp
+
+def save(path, imp, frame_rate=30, bit_rate=400000):
+  """ frame_rate in fps (frames per second).
+      bit_rate defines the quality of the movie: higher bit rate results in larger, higher quality movies.
+      The movie format (e.g. AVI, MPG, etc.) is chosen by the path filename extension. """
+  io = IO()
+  io.writeMovie(imp, path, frame_rate, bit_rate)
+
+
+def process(imp, convert, roi, time_zero, time_range):
+  """ Crop, convert to another format, and time-stamp. """
+  stack = imp.getStack()
+  size = stack.getSize()
+  bounds = roi.getBounds()
+  new_stack = new ImageStack(bounds.width, bounds.height)
+  for i in xrange(1, size + 1):
+    ip = convert(stack.getProcessor(i))
+    ip.setRoi(roi)
+    c = ip.crop()
+    c.setColor(Color.white)
+    time = "%.2f" % (time_zero + time_range * (float(i-1) / (size -1)))
+    c.drawString(time, 5, 15)
+    new_stack.addSlice(str(i), c)
+
+  return ImagePlus(imp.title, new_stack)
+
+
+def batch_process(extension, source_dir, output_dir, convert, roi, time_zero, time_range):
+  for filename in os.listdir(source_dir):
+    if filename.endswith(extension):
+      if os.path.exists(target_dir + filename):
+        # Skip if movie exists at destination
+        continue
+      imp = load(source_dir + filename)
+      imp2 = process(imp, convert, roi, time_zero, time_range)
+      imp.flush()
+      save(target_dir + filename, imp2)
+      imp2.flush()
+
+
+def convert(ip):
+  """ Convert to 8=bit and crop the range to [0, 128] pixel values. """
+  c = ip.convertToByte(True)
+  c.setMinAndMax(0, 128)
+  return c
+
+
+source_dir = '/path/to/list_of_AVI_movies/'
+target_dir = '/path/to/new_list_of_AVI_movies/'
+
+roi = Roi(50, 50, 256, 256)
+time_zero = 30   # start at 30 seconds
+time_range = 30  # range of (also) 30 seconds
+
+# Process all AVI movie files, saving them also as AVI files
+batch_process('.avi', source_dir, target_dir, convert, roi, time_zero, time_range)
+
+</source>
+
 == Tips and Tricks ==
 
 === Getting a list of all members in one package ===
