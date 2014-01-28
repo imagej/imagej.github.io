@@ -1,3 +1,15 @@
+{{Infobox Plugin
+| name                   = VisBio- orthogonal projection plugin
+| software               = ImageJ - Fiji - ImgLib
+| author                 = Curtis Rueden, Melissa Linkert, Eric Kjellman
+| maintainer             = [mailto:ctrueden@wisc.edu Curtis Rueden]
+| filename               = Colocalisation_Analysis.jar
+| source                 = [https://github.com/uw-loci/visbio-imagej Github].
+| latest version         = Jan 2014
+| website                = Fiji
+| status                 = Beta. Under development, but stable enough for real work. 
+}}
+
 == What is the VisBio Plugin? ==
 The VisBio Ortho Stack plugin is a simple 3D visualization plugin for Fiji that displays a stack of image planes in a parallel or perspective projection along the z plane. The plugin can control several common operations, such as specifying distance between cross sections, rotating and zooming the RD view, and saving a snapshot of the current image to a file. 
 
