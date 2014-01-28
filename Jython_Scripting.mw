@@ -1120,7 +1120,11 @@ mask.invert()
 
 First open the [[Fiji Updater]], push the "Manage update sites" at the bottom left of the dialog, and install the [http://fiji.sc/~schindelin/ffmpeg-plugins/ FFMPEG] plugin by [[User:Schindelin|Johannes Schindelin]] by ticking its checkbox, as [http://fiji.sc/How_to_follow_a_3rd_party_update_site explained in more detail here].
 
+See also the java documentation for the [https://code.google.com/p/fiji-bi/source/browse/src-plugins/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/IO.java?r=43f8e9079edc8d17bb9405876a95e254c91088d7 IO] class from the [https://code.google.com/p/fiji-bi/source/browse/src-plugins/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/?r=43f8e9079edc8d17bb9405876a95e254c91088d7 FFMPEG plugin source code site].
+
 <source lang="python">
+""" Albert Cardona for Marta Zlatic, 2014-01-24. """
+
 from fiji.ffmpeg import IO
 from java.awt import Color
 import os
