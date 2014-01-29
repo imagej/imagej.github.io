@@ -3,7 +3,7 @@
 | software               = ImageJ - Fiji - ImgLib
 | author                 = Curtis Rueden, Melissa Linkert, Eric Kjellman
 | maintainer             = [mailto:ctrueden@wisc.edu Curtis Rueden]
-| filename               = Colocalisation_Analysis.jar
+| filename               = visbio.jar
 | source                 = [https://github.com/uw-loci/visbio-imagej Github].
 | latest version         = Jan 2014
 | website                = Fiji
