@@ -41,7 +41,7 @@ Where ''My_Plugin'' is the folder containing the plugin's source code.</li>
 git commit -m 'Add SCM location' pom.xml</source>
 </li>
 <li>Substitute the ''pom-fiji-plugins'' parent by the ''pom-fiji'' parent (see [https://github.com/fiji/jep/commit/336c0a46fad855508aaa905a9f82e5d88136df91 example]).</li>
-<li>Add a ''<developers>'' section to the ''pom.xml'' to indicate the project developers. You can also add ''<contributors>'' if desired and relevant. See [https://github.com/fiji/TrackMate/commit/f0c2cf6cca3e198ba5b9283a71fc564f41c642d5 example].
+<li>Add a ''<developers>'' section to the ''pom.xml'' to indicate the project developers (see [https://github.com/fiji/TrackMate/commit/f0c2cf6cca3e198ba5b9283a71fc564f41c642d5 example]). You can also add ''<contributors>'' if desired and relevant.
 <li>Override the ''imagej.app.directory'' property (see [https://github.com/fiji/Stitching/commit/35753ef1c6b11e2abf8917d5f1d64bd60143bc0a example]).</li>
 <li>Make sure the project still builds:
 <source lang="bash">mvn clean install</source>
