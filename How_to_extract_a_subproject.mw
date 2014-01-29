@@ -60,6 +60,7 @@ Where ''git@github.com:fiji/my-plugin'' is the remote URL for the plugin's new d
 
 Then update Fiji's Git repository:
 <ol>
+<li>First, <strong><em>quit your IDE</em></strong> if it is currently open.</li>
 <li>Add the ''${<artifactId>.version}'' property to ''pom.xml'' (see [https://github.com/fiji/fiji/commit/cd94282cde98c2f7039bd3823df6502cdd36a048#diff-600376dffeb79835ede4a0b285078036R25 example])</li>
 <li>Add the plugin as a dependency to ''external/pom.xml'' (using the newly-added ''version'' property, see [https://github.com/fiji/fiji/commit/cd94282cde98c2f7039bd3823df6502cdd36a048#diff-daf49d6db7f6a92ae7e49b73d0ef5739L27 example])</li>
 <li>Adjust ''external/.gitignore'' to ignore if the external repository is cloned into ''external/'' (see [https://github.com/fiji/fiji/commit/bd6f0c243b28fcc89454fba49919a89b22541fc0 example])</li>
