@@ -1,0 +1,61 @@
+<code>DRAFT!! NOT RELEASED YET</code>
+
+
+
+A new minor version of [[TrackMate_]] has been released. This page lists the changes that are visible to the user. 
+
+Version 2.2.0 focuses mainly on extendability, tracking performance and detection accuracy.
+
+
+==== Highlights ====
+
+* Major improvement for tracking performance: The LAP trackers are now based on the [http://link.springer.com/article/10.1007%2FBF02278710 Jonker-Volgenant] solver, which performs better than the Munkres-Kuhn we were using until then. Our initial tests report that this new version runs 2x to 4x faster.
+
+* A major problem was found in the LoG detector: Because of a severe rounding error, the LoG detector was not behaving as a true LoG detector, which strongly hindered its accuracy and potence. The problem is now fixed and the accuracy of the detector has vastly improved. You should now observe much better results when using this detector: less spurious spots, better spot size sensitivity, better sensitivity to faint spots. Of course, the results will be different when comparing to v2.1.1. 
+
+* We also took the chance to rewrite all the detectors from scratch, using the latest development in [[ImgLib2]]
+
+* Complete rewrite of the way we handle modules in TrackMate. TrackMate now uses [http://www.scijava.org/ SciJava] and exploit its automatic discovery mechanism for modules. Practically, it is now very easy to extend TrackMate, and you do not depend on us anymore at all for anything. We could completely disappear and you would still be able to extend TrackMate so that it suits your need, without requiring any of our help. Several [[TrackMate#For_developers_2|tutorials]] describe how to do this. This is made possible thanks to the enormous efforts of the SciJava team. Thanks to them!
+
+
+
+==== Improvements ====
+
+* In [[TrackScheme]], the tracks can be navigated through  using the keyboard:
+** UP: previous spot in time.
+** DOWN: next spot in time.
+** LEFT: next sibling within the same track
+** RIGHT: previous sibling within the same track
+** PAGE-DOWN: jump to next track, same frame
+** PAGE-UP: jump to previous track, same frame
+
+* Major performance improvement when launching [[TrackScheme]] on a large models.
+
+* Major performance improvement when selecting/deselecting in [[TrackScheme]] 
+
+* The 3D viewer is now in sync with manual modification. Any edit made to the model is immediately echoed on the 3D viewer. This comes at a price: the 3D viewer cannot be used for very large model in an efficient manner.
+
+* The user can now define a ''depth of drawing'' display setting, that limits the number of Z-slices on which we draw the model. This is useful on very thick samples where the drawing of all the data across all Zs can become confusing.
+
+* Minor improvement for the track display on the main view, for large models.
+
+* Ship a MATLAB function to import in MATLAB the tracks exported by TrackMate. Check [[Using_TrackMate_with_MATLAB|this]].
+
+* Warn the user if they feed TrackMate with a stack that has no time-points by plenty of Z-slices. This is one of the main reason we get irrelevant bug reports: By default, ImageJ considers that a multi-image file is always made of 1 time-points and many Z-slices. Whereas users mean to feed TrackMate with a movie made of several 2D planes filmed over time. We now warn the user that the dimensionality stored in the image might not be the one they expect.
+
+==== Bug fixes ====
+
+* Fix a major bug with the DoG detector preventing to use it with a ROI.
+
+* Fixed a minor warning triggered when using the 3D viewer as the main view for TrackMate.
+
+* When navigating backward in the GUI, the model is cleared when it is sensible. This is made to avoid having "ghost" results floating over unprocessed images.
+
+
+
+[[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 05:03, 5 August 2013 (CDT)
+
+
+
+
+[[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 04:29, 30 January 2014 (CST)
