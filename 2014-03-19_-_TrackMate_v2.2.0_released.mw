@@ -1,5 +1,14 @@
-<code>DRAFT!! NOT RELEASED YET</code>
+<span style="color:red">This page documents the changes in the <u>release candidate</u> of TrackMate v2.2.0. This version is not yet available through normal update channel. If you want to test it, you have to [[Update Sites|add]] the TrackMate-devel update site to the Fiji updater. Here is how to do it:</span>
 
+<ul>
+  <li>Go to the ''Help > Update Fiji'' menu item. 
+  <li>Select ''Advanced mode'', then ''Manage update sites''. 
+  <li>Click ''Add'' and in the ''URL'' column enter '''http://sites.imagej.net/TrackMate-dev/'''. Then ''Close''. 
+</ul>
+
+TrackMate v2.2.0 should overwrites your current version of TrackMate. More details on how to add an update site can be found here: [[How to follow a 3rd party update site]]
+
+_____
 
 
 A new minor version of [[TrackMate_]] has been released. This page lists the changes that are visible to the user. 
