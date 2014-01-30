@@ -49,6 +49,9 @@ Another speed reduction will occur if the tiles used have varying z coordinates.
 
 [[Image:Z_variance.png|thumb|right|250px|Example of a dataset with z-variance.]]
 
+== Memory == 
+Even using virtual memory with maximum memory allocation can still be too much for some computers to handle, especially given the size of larger image files. The limited amount of memory available to most computers means that during the stitching of a large image file, the plugin will be trying to store more pixels within memory than there is space for. When this event occurs, Fiji will either stall and need to be force closed, or will display the message "<Out of Memory>." To fix this issue, select "Downsampling" in the Stitching GUI to allow for the image to be stitched in pieces. Please see the [[Downsampling]] page for more information. 
+
 = Other Pitfalls = 
 Please see the [[Image Stitching]] page for other precautions.
 
