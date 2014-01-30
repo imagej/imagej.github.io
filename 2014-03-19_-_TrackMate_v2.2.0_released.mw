@@ -3,7 +3,7 @@
 <ul>
   <li>Go to the ''Help > Update Fiji'' menu item. 
   <li>Select ''Advanced mode'', then ''Manage update sites''. 
-  <li>Click ''Add'' and in the ''URL'' column enter '''http://sites.imagej.net/TrackMate-dev/'''. Then ''Close''. 
+  <li>Check the '''TrackMate-dev''' box. Then ''Close''. 
 </ul>
 
 TrackMate v2.2.0 should overwrites your current version of TrackMate. More details on how to add an update site can be found here: [[How to follow a 3rd party update site]]
