@@ -18,13 +18,40 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
 ==== Highlights ====
 
-* Major improvement for tracking performance: The LAP trackers are now based on the [http://link.springer.com/article/10.1007%2FBF02278710 Jonker-Volgenant] solver, which performs better than the Munkres-Kuhn we were using until then. Our initial tests report that this new version runs 2x to 4x faster.
+* Major '''improvement for tracking performance''': The LAP trackers are now based on the [http://link.springer.com/article/10.1007%2FBF02278710 Jonker-Volgenant] solver, which performs better than the Munkres-Kuhn we were using until then. Our initial tests report that this new version runs 2x to 4x faster.
 
-* A major problem was found in the LoG detector: Because of a severe rounding error, the LoG detector was not behaving as a true LoG detector, which strongly hindered its accuracy and potence. The problem is now fixed and the accuracy of the detector has vastly improved. You should now observe much better results when using this detector: less spurious spots, better spot size sensitivity, better sensitivity to faint spots. Of course, the results will be different when comparing to v2.1.1. 
+* A '''major problem was found in the LoG detector''': Because of a severe rounding error, the LoG detector was not behaving as a true LoG detector, which strongly hindered its accuracy and potence. The problem is now fixed and '''the accuracy of the detector has vastly improved'''. You should now observe much better results when using this detector: less spurious spots, better spot size sensitivity, better sensitivity to faint spots. On its side, the DoG detector now handles spots that lie on the border of the images better. Of course, the results will be different when comparing to v2.1.1. 
 
-* We also took the chance to rewrite all the detectors from scratch, using the latest development in [[ImgLib2]]
+* We also took the chance to rewrite all the detectors from scratch, using the latest development in [[ImgLib2]]. This prompted '''major performance improvement for the detection process'''. Here are the results of a quick benchmark:
+{| class="wikitable" style="text-align: right; margin: auto;" cellpadding="20"
+!Detector
+!v2.1.1
+!v2.2.0
+!speedup factor
+|-
+|LoG detector for 2D images
+|13.4s
+|1.2s
+|x11
+|-
+|DoG detector for 2D images
+|3.5s
+|1.1s
+|x3
+|-
+|LoG detector for 3D images
+|291s
+|18.2s
+|x15
+|-
+|DoG detector for 3D images
+|21.6s
+|15.1s
+|x1.4
+|}
+(This benchmark was done with the ISBI challenge datasets). You can find more benchmarks [[TrackMate Performance|here]]. 
 
-* Complete rewrite of the way we handle modules in TrackMate. TrackMate now uses [http://www.scijava.org/ SciJava] and exploit its automatic discovery mechanism for modules. Practically, it is now very easy to extend TrackMate, and you do not depend on us anymore at all for anything. We could completely disappear and you would still be able to extend TrackMate so that it suits your need, without requiring any of our help. Several [[TrackMate#For_developers_2|tutorials]] describe how to do this. This is made possible thanks to the enormous efforts of the SciJava team. Thanks to them!
+* Complete rewrite of the way we handle modules in TrackMate. TrackMate now uses [http://www.scijava.org/ SciJava] and exploit its automatic discovery mechanism for modules. Practically, '''it is now very easy to extend TrackMate''', and you do not depend on us anymore at all for anything. We could completely disappear and you would still be able to extend TrackMate so that it suits your need, without requiring any of our help. Several [[TrackMate#For_developers_2|tutorials]] describe how to do this. This is made possible thanks to the enormous efforts of the SciJava team. Thanks to them!
 
 
 
