@@ -1,4 +1,8 @@
-<span style="color:red">This page documents the changes in the <u>release candidate</u> of TrackMate v2.2.0. This version is not yet available through normal update channel. If you want to test it, you have to [[Update Sites|add]] the TrackMate-devel update site to the Fiji updater. Here is how to do it:</span>
+<span style="color:red">This page documents the changes in the <u>release candidate</u> of TrackMate v2.2.0. 
+
+We are now testing RC2!!
+
+This version is not yet available through normal update channel. If you want to test it, you have to [[Update Sites|add]] the TrackMate-devel update site to the Fiji updater. Here is how to do it:</span>
 
 <ul>
   <li>Go to the ''Help > Update Fiji'' menu item. 
@@ -79,6 +83,8 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 * Ship a MATLAB function to import in MATLAB the tracks exported by TrackMate. Check [[Using_TrackMate_with_MATLAB|this]].
 
 * Warn the user if they feed TrackMate with a stack that has no time-points by plenty of Z-slices. This is one of the main reason we get irrelevant bug reports: By default, ImageJ considers that a multi-image file is always made of 1 time-points and many Z-slices. Whereas users mean to feed TrackMate with a movie made of several 2D planes filmed over time. We now warn the user that the dimensionality stored in the image might not be the one they expect.
+
+* '''Fine tune multithreading'''. Before this version, TrackMate was doing multithreading during detection in the following way:  We run the detection process on as many frames as we have threads, and each frame is processed using 1 thread.   This is suboptimal if we have a large number of threads, but a few number of frames (e.g. 1 frame, 24 threads). This release fixes this: If we have 10 threads and 15 frames to process, we process 10 frames at once, and allocate 1 thread per frame. But if we have 10 threads and 2  frames, we process the 2 frames at once, and allocate 5 threads per  frame if we can.  For this to work of course, the detector must be multithreaded, which is the case with the ones we ship now.
 
 ==== Bug fixes ====
 
