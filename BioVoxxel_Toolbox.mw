@@ -1,4 +1,4 @@
-
+== '''BioVoxxel Toolset Documentation''' ==
 {{Infobox Plugin
 | software               = ImageJ / Fiji
 | name                   = BioVoxxel Toolbox
@@ -7,9 +7,6 @@
 | maintainer             = Jan Brocher
 | latest version         = 04. February 2014
 }}
-
-== '''BioVoxxel Toolset Documentation''' ==
-
 '''For Fiji users:'''
 
 You can setup an automatic update for the BioVoxxel Toolbox. Just run the Fiji update and switch in the main window to 'Advanced mode'. Then click on 'Manage update sites'. Here you simply need to activate the "BioVoxxel" update site [http://fiji.sc/List_of_update_sites].
