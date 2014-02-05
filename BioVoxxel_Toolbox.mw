@@ -15,8 +15,11 @@ How to: Key in minimal and maximal exclusion values connected with a hyphen. You
 Shape descriptors which are not available under IJ or Fiji so far are:
 
 Extent = [net area of feature] / [bounding rectangle]
+
 Compactness = [sqrt(4 * area / PI)] / [major axis]
+
 Feret's AR = [maximum caliper diameter] / [minimum caliper diameter]
+
 Status: v0.8, Maintenance active
 
 Future: Suggestions are welcome!
