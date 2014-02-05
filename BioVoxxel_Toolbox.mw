@@ -16,6 +16,10 @@ You can setup an automatic update for the BioVoxxel Toolbox. Just run the Fiji u
 
 You will find all functions of the BioVoxxel Toolbox under the icon of the green BioVoxxel cube after selecting BioVoxxel Toolbox from the More Tools Icon (last Icon in the ImageJ/Fiji Icon list with the double arrow).
 
+----
+
+
+
 '''Advanced Particle Analyzer:'''
 
 Purpose: The "Advanced Particle Analyzer" is based on the ImageJ "Analyze Particles..." command. It enables the user to further restrict the analysis on particles according to parameter spezifications of shape descriptors and angle orientations. Thus, setting minimal and maximal exclusion ranges, particles from a binary image can be also extracted from an image choosing "Masks" as an output type.
