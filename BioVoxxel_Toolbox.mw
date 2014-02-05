@@ -158,7 +158,7 @@ Publication: a publication regarding the threshold check and its quantification 
 
 Output interpretation: You will get a stack with each thresholding method represented in a single stack slice. The following colors should help in interpreting the thresholding result:
 
-[[File:ThresholdCheck.png|600px]]
+[[File:ThresholdCheck.png|770px]]
 
 '''blue''' = this is thresholded as background and also represents black or very dark areas in the original image, thus most likely beeing really background.
 
