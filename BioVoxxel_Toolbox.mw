@@ -17,7 +17,7 @@ You will find all functions of the BioVoxxel Toolbox under the icon of the green
 
 
 
-'''Advanced Particle Analyzer:'''
+'''[[Advanced Particle Analyzer]]:'''
 
 Purpose: The "Advanced Particle Analyzer" is based on the ImageJ "Analyze Particles..." command. It enables the user to further restrict the analysis on particles according to parameter spezifications of shape descriptors and angle orientations. Thus, setting minimal and maximal exclusion ranges, particles from a binary image can be also extracted from an image choosing "Masks" as an output type.
 
