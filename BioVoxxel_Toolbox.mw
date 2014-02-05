@@ -24,6 +24,7 @@ Future: Suggestions are welcome!
 ----
 
 
+
 '''Field-of-view measure correction:'''
 
 Purpose: The macro eliminates all particles in a binary image which touch the edges, then counts the remaining particles and corrects for the counting and the mean area bias due to the edge intersection using the following formula:
@@ -41,6 +42,7 @@ Future: Suggestions are welcome!
 ----
 
 
+
 '''Shape Descriptor Maps:'''
 
 Purpose: Shape descriptors of the particles in an 8-bit binary image will be color coded (smallest to biggest values) and are shown in a stack containing the original image in the first slice and the "shape descriptor maps" in the consecutive ones. The respective shape descriptors are indicated in each slice. A calibration bar (LUT can be selected in the setup) enables easier overview and interpretation. The highest descriptor values can also be displayd as an orientation. Since version 0.3, the distribution plots of all shape descriptor values can be displayed in an additional separate stack. This macro helps to visually identify features in images according to their shape properties. Additionally, you can use the color coded images for consecutive thresholding to extract specific features from the images, e.g. according to their angular orientation.
@@ -55,6 +57,7 @@ Future: Suggestions are welcome!
 
 ----
  
+
 
 '''Binary Feature Extractor:'''
 
@@ -72,6 +75,7 @@ Future: A further dialog will be added which will allow the user to determine th
 
 ----
  
+
 
 '''Speckle Inspector:'''
 
@@ -94,6 +98,7 @@ Future: suggestions are welcome!
 ----
  
 
+
 '''Watershed Irregular Structures:'''
 
 Purpose: The standard watershed algorithm in ImageJ is very usefull to separate connected, roughly circular structures. Nevertheless, it gets into trouble while separating irregular structures. The Irregular Watershed enables the user to separate also irregular shaped structures to a certain extend.
@@ -108,6 +113,7 @@ Future: other erosion algorithms will potentially be included to improve the wat
 
 ----
  
+
 
 '''EDM Erosion and EDM Dilation:'''
 
@@ -124,6 +130,7 @@ Future: suggestions are welcome!
 ----
  
 
+
 '''Auto Binary Masking:'''
 
 Purpose: The macro enables to mask images with their thresholded binary counterparts. Works with 2D images and 3D stacks.
@@ -137,6 +144,7 @@ Future: Will be implemented for hyperstacks. Suggestions are welcome!
 ----
  
 
+
 '''Threshold Check:'''
 
 Purpose: The "Threshold Check" should simply provide a help in deciding which of the 16 Auto Threshold and the 9 Auto Local Threshold outputs from the respective plugins results in the potentially best binary image outcome. This is not an absolute measure but should rather assist in the decision for the application of one specific auto threshold algorithm in non-obvious cases. In the new version you can choose additionally to quantify the quality of the thresholding.
@@ -149,13 +157,13 @@ Output interpretation: You will get a stack with each thresholding method repres
 
 [[File:ThresholdCheck.png|600px]]
 
-blue = this is thresholded as background and also represents black or very dark areas in the original image, thus most likely beeing really background.
+'''blue''' = this is thresholded as background and also represents black or very dark areas in the original image, thus most likely beeing really background.
 
-cyan = these areas have a certain brightness level in the original image but are not recognized by the respective tresholding algorithm, hence might point out a underestimation of features by the threshold.
+'''cyan''' = these areas have a certain brightness level in the original image but are not recognized by the respective tresholding algorithm, hence might point out a underestimation of features by the threshold.
 
-orange/yellow = these are features standing out from the background in the original image (orange=medium intensity; yellow=high intensity) which are recognized by the thresholding algorithm as foreground features and thus most likely represent features of interest (depending on the image context and quality). If you set a certain value for saturation the yellow parts will increase at costs of the orange ones due to a oversaturation of the original image.
+'''orange/yellow''' = these are features standing out from the background in the original image (orange=medium intensity; yellow=high intensity) which are recognized by the thresholding algorithm as foreground features and thus most likely represent features of interest (depending on the image context and quality). If you set a certain value for saturation the yellow parts will increase at costs of the orange ones due to a oversaturation of the original image.
 
-red/dark orange = these areas have a very low brightness (or are black) in the original image but are thresholded as foreground and therefore most likely represent an overestimation by the threshold.
+'''red/dark orange''' = these areas have a very low brightness (or are black) in the original image but are thresholded as foreground and therefore most likely represent an overestimation by the threshold.
 
 Caution: Interpretation should be done with care and in context to the original image and imaging settings. This macro is thought to assist in the decision for choosing a good thresholding method. It is no absolute measure for thresholding quality!
 
@@ -178,6 +186,7 @@ Future: Suggestions are welcome!
 ----
  
 
+
 '''Background Division:'''
 
 Purpose: The macro enables to "subtract" background due to inequal lighting from grayscale and true color images. It creates an artificial flat-field image from the selected original image. For true color images this is done using the brightness channel of an HSB stack. The original image (brightness channel for true color images) is divided by the flat-field image and the brightness is set back to "normal" using the mean intensity of the original image.
@@ -190,6 +199,7 @@ Future: suggestions are welcome!
 
 ----
  
+
 
 '''Contrast Detection:'''
 
@@ -204,6 +214,7 @@ Future: suggestions are welcome!
 ----
  
 
+
 '''Difference of Gaussian and Difference from Median:'''
 
 Purpose: Uses a basic difference of Gaussian method for feature detection and a method which gives the difference between the original and a specified "Median" filter on a copy of the original image.
@@ -215,6 +226,7 @@ Status: maintenance active
 Future: Suggestions are welcome!
 
 ----
+
  
 
 '''Hyperstack Color Coding:'''
@@ -228,6 +240,7 @@ Status: v0.1, maintenance active
 Future: Suggestions are welcome!
 
 ----
+
  
 
 '''Neighbor Analysis:'''
@@ -247,6 +260,7 @@ Status: maintenance active
 Future: Suggestions are welcome!
 
 ----
+
  
 
 '''Distribution Analysis:'''
@@ -266,6 +280,7 @@ Status: maintenance active
 Future: Suggestions are welcome!
 
 ----
+
  
 
 '''Skeleton Length (corrected):'''
@@ -285,6 +300,7 @@ Future: Suggestions are welcome!
 ----
 
 
+
 '''Nearest Neighbor Indicator (Separate Tool):'''
 
 Purpose/How to: This tool enables the user to click in any feature in a binary image to identify all neigbors and the nearest neighbor of this feature. Therefore, the tool needs to be activated. Then any click will lead to a new calculation of the neighbors depending on the location clicked on.
@@ -302,6 +318,7 @@ Status: maintenance active
 Future: Suggestions are welcome!
  
 ----
+
 
 
 '''Gaussian weighted Median filter (plugin, called from BioVoxxel Toolbox):'''
