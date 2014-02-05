@@ -6,7 +6,7 @@ Purpose: The "Advanced Particle Analyzer" is based on the ImageJ "Analyze Partic
 
 Example: If you want to extract/analyze only particles with a certain Feret's Angle or exclude elongated structures using the aspect ratio (AR) or circilarity you can specify so in the initial dialog box.
 
-[[File:http://www.biovoxxel.de/mediapool/127/1273896/resources/MacroHelp/AdvancedParticleAnalyzer.png]]
+[[File:AdvancedParticleAnalyzer.png|770px]]
 
 How to: Key in minimal and maximal exclusion values connected with a hyphen. You can use integers as well as numbers containing decimal places. The option "Frame count correction" eliminates particles from 2 edges of choice to correct the count for edge touching particles.
 
@@ -43,7 +43,7 @@ Purpose: Shape descriptors of the particles in an 8-bit binary image will be col
 
 How to: Select analysis modes and start.
 
-
+[[File:ShapeDescriptorMaps.png|770px]]
 
 Status: v0.3, Maintenance active
 
