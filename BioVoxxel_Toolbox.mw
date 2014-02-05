@@ -1,0 +1,316 @@
+BioVoxxel Toolset Documentation
+
+Advanced Particle Analyzer:
+
+Purpose: The "Advanced Particle Analyzer" is based on the ImageJ "Analyze Particles..." command. It enables the user to further restrict the analysis on particles according to parameter spezifications of shape descriptors and angle orientations. Thus, setting minimal and maximal exclusion ranges, particles from a binary image can be also extracted from an image choosing "Masks" as an output type.
+
+Example: If you want to extract/analyze only particles with a certain Feret's Angle or exclude elongated structures using the aspect ratio (AR) or circilarity you can specify so in the initial dialog box.
+
+[[File:http://www.biovoxxel.de/mediapool/127/1273896/resources/MacroHelp/AdvancedParticleAnalyzer.png]]
+
+How to: Key in minimal and maximal exclusion values connected with a hyphen. You can use integers as well as numbers containing decimal places. The option "Frame count correction" eliminates particles from 2 edges of choice to correct the count for edge touching particles.
+
+Shape descriptors which are not available under IJ or Fiji so far are:
+
+Extent = [net area of feature] / [bounding rectangle]
+Compactness = [sqrt(4 * area / PI)] / [major axis]
+Feret's AR = [maximum caliper diameter] / [minimum caliper diameter]
+Status: v0.8, Maintenance active
+
+Future: Suggestions are welcome!
+
+ 
+
+Field-of-view measure correction:
+
+Purpose: The macro eliminates all particles in a binary image which touch the edges, then counts the remaining particles and corrects for the counting and the mean area bias due to the edge intersection using the following formula:
+
+count correction factor = (ImgWidth * ImgHeight) / ((ImgWidth-BBWidth) * (ImgHeight-BBHeight))
+
+with "ImgWidth" and "ImgHeight" as the size of the analyzed image and "BBWidth" and "BBHeight" as the bounding box dimensions of each particle. This is recommended as a correction for the bias when measuring features in a field of view because bigger particles are more likely to touch the edges of the field of view and thus their area is are underestimated. This underestimation is proportionate to the particle size. (according to J. Russ, The Image Processing Handbook, 2010, 6th Edition).
+
+How to: only works on individual 8-bit binary images.
+
+Status: v0.1, maintenance active
+
+Future: Suggestions are welcome!
+
+ 
+
+Shape Descriptor Maps:
+
+Purpose: Shape descriptors of the particles in an 8-bit binary image will be color coded (smallest to biggest values) and are shown in a stack containing the original image in the first slice and the "shape descriptor maps" in the consecutive ones. The respective shape descriptors are indicated in each slice. A calibration bar (LUT can be selected in the setup) enables easier overview and interpretation. The highest descriptor values can also be displayd as an orientation. Since version 0.3, the distribution plots of all shape descriptor values can be displayed in an additional separate stack. This macro helps to visually identify features in images according to their shape properties. Additionally, you can use the color coded images for consecutive thresholding to extract specific features from the images, e.g. according to their angular orientation.
+
+How to: Select analysis modes and start.
+
+
+
+Status: v0.3, Maintenance active
+
+Future: Suggestions are welcome!
+
+ 
+
+Binary Feature Extractor:
+
+Purpose: The "Feature Extractor" is aimed to select isolate specific features in a binary image by other binary particles as selectors which are located completely inside the features or overlap partially with those. It additionally allows also to get a visual combination of extracted features and selectors (combining those images by using a boolean OR function). The idea for the feature extractor is taken from J. Russ "The Image Processing Handbook" 6th Edition.
+
+Example: A specific nuclear fluorescent staining is thresholded as the selector while the complete cells are thresholded as the features to be extracted.
+
+How to: First, specify the images you want to work with. The macro then calculates and extracts the features which overlap with the selector (so far, already 1 pixel is sufficient).
+
+
+
+Status: v0.3, maintenance active
+
+Future: A further dialog will be added which will allow the user to determine the minimum/maximum  overlap of the features as additional selector. Further suggestions are welcome!
+
+ 
+
+Speckle Inspector:
+
+Purpose: The "Speckle Inspector" is able to identify bigger features by the number of containing smaller features/speckles.
+
+How to: In the setup dialog the user can enter the 2 images to be analyzed as well as lower and upper limits of speckle numbers, speckle sizes, feature size and feature circularity to determine characteristics which include/exclude speckles and features from the analysis according to the entered parameters.
+
+
+
+The macro gives different outputs. The optical output is an color-coded image, where positive features (lying inbetween the determined minimum and maximum parameters) are colord in magenta, features containing less than the specified minimum speckle numbers are colored in blue and features containing more than the specified maximum speckle numbers are colored in green. In the same image the features are numbered to identify them in the respective speckle list as well as the ROI manager. Furthermore, they contain the number of "speckles" per feature in brackets. The second output are all feature selection ROIs in the ImageJ/Fiji ROI manager. Moreover a list of all features and respective speckle numbers is given if "show speckle list" was ticked. The "Log" window depicts an analysis of the features showing overall numbers of features and speckles as well as the numbers for the features lying below, inbetween, and above the thresholds.
+
+
+
+Version: v1.2
+
+Status: maintenance active
+
+Future: suggestions are welcome!
+
+ 
+
+Watershed Irregular Structures:
+
+Purpose: The standard watershed algorithm in ImageJ is very usefull to separate connected, roughly circular structures. Nevertheless, it gets into trouble while separating irregular structures. The Irregular Watershed enables the user to separate also irregular shaped structures to a certain extend.
+
+
+
+How to: In one dialog the user needs to specify the number of erosion cycles to be used for the separation algorithm. "0" prevents watershedding. Since increasing numbers use a decreasing size of selector for the separations to be skipped, a too high number might result in unwanted separation in the peripheral regions of the features. The separation only works in the 2D space at the moment and has its limitations when the connecting "bridges" between the features are too broad (as true for the normal watershed algorithm).
+
+Status: maintenance active
+
+Future: other erosion algorithms will potentially be included to improve the watershedding
+
+ 
+
+EDM Erosion and EDM Dilation:
+
+Purpose: The standard binary erosion and dilation suffers from the artefact that under higher iteration cycles the binary structures get irregularly deformed (see image below, second column). The EDM based methods for erosion and dilation prevent these artifacts. The method is using thresholding on a 8-bit euclidean distance map of the original image to facilitate the erosion or dilation.
+
+
+
+How to: The number of erosion/dilation cycled determines how many rows of pixels should be eliminated/added to the binary features.
+
+Status: works only on 2D images, maintenance active
+
+Future: suggestions are welcome!
+
+ 
+
+Auto Binary Masking:
+
+Purpose: The macro enables to mask images with their thresholded binary counterparts. Works with 2D images and 3D stacks.
+
+How to: Original and binary mask images need to be identified from the drop-down menu and the user needs to specify if black or white areas in the binary image should be transparent. The output image shows the masked features from the original image.
+
+Status: maintenance active
+
+Future: Will be implemented for hyperstacks. Suggestions are welcome!
+
+ 
+
+Threshold Check:
+
+Purpose: The "Threshold Check" should simply provide a help in deciding which of the 16 Auto Threshold and the 9 Auto Local Threshold outputs from the respective plugins results in the potentially best binary image outcome. This is not an absolute measure but should rather assist in the decision for the application of one specific auto threshold algorithm in non-obvious cases. In the new version you can choose additionally to quantify the quality of the thresholding.
+
+How to: The user needs to first select the image the in which the thresholds should be checked (including all the pre-processing you want/need to apply). Be aware to also specify if you are thresholding bright or dark features in the first checkbox! You can also choose to ignore black or white pixels from the threshold calculations (as in the normal AutoThreshold dialog). Furthermore, you can choose to include also the 9 Auto Local Thresholds with the respective parameters (for further reading check out: Auto Local Thresholds. Finally, you can include a quantification of the results and choose if you want to have an overview montage in addition to the normal stack output. Thresholds are indicated in the upper left corner of the images for better identification.
+
+Publication: a publication regarding the threshold check and its quantification is currectly submitted.
+
+Output interpretation: You will get a stack with each thresholding method represented in a single stack slice. The following colors should help in interpreting the thresholding result:
+
+
+
+blue = this is thresholded as background and also represents black or very dark areas in the original image, thus most likely beeing really background.
+
+cyan = these areas have a certain brightness level in the original image but are not recognized by the respective tresholding algorithm, hence might point out a underestimation of features by the threshold.
+
+orange/yellow = these are features standing out from the background in the original image (orange=medium intensity; yellow=high intensity) which are recognized by the thresholding algorithm as foreground features and thus most likely represent features of interest (depending on the image context and quality). If you set a certain value for saturation the yellow parts will increase at costs of the orange ones due to a oversaturation of the original image.
+
+red/dark orange = these areas have a very low brightness (or are black) in the original image but are thresholded as foreground and therefore most likely represent an overestimation by the threshold.
+
+Caution: Interpretation should be done with care and in context to the original image and imaging settings. This macro is thought to assist in the decision for choosing a good thresholding method. It is no absolute measure for thresholding quality!
+
+Quantification: The Quantification is shown in a results window in %Area. The threshold names are followed by either _under, _positive or _over. This referres to the following:
+
+- under: the percentage of pixels in comparison to the complete image which seem to be under-thresholded (displayed in cyan)
+
+- positive: the percentage of pixels inside the thresholded region which seem to be well thresholded (displayed in bright orange and yellow)
+
+- over: the percentage (100-positive) of pixels inside the thresholded region which seem to be over-thresholded (displayed in red)
+
+The macro finally suggests thresholds which perform best in respect to the reference point selection. This suggestion always needs to be compared to the color-coded visual output and to the necessities for the following analysis.
+
+Potential issues: If it is not correctly defined if the user is looking for bright or dark objects the output will be incorrectly determined.
+
+Status: v3.0 (rewritten), maintenance active
+
+Future: Suggestions are welcome!
+
+ 
+
+Background Division:
+
+Purpose: The macro enables to "subtract" background due to inequal lighting from grayscale and true color images. It creates an artificial flat-field image from the selected original image. For true color images this is done using the brightness channel of an HSB stack. The original image (brightness channel for true color images) is divided by the flat-field image and the brightness is set back to "normal" using the mean intensity of the original image.
+
+How to: You need to specify a gaussian blurring radius in a way to eliminate specific feature appearance but to keep the difference in shading/lighting. Therefore, rather big radii (sigma) are needed (potentially between 50-150). By ticking the "Preview"-box you can check the flat-field quality.
+
+Status: stable, maintenance active
+
+Future: suggestions are welcome!
+
+ 
+
+Contrast Detection:
+
+Purpose: The macro determines mostly edges or contrast in the sense of brightness changes. As basis serves the difference between a grayscale erosion and a grayscale dilation which is finally subtracted from the original.
+
+How to: Radius determines the radius of the "Minimum" and "Maximum" grayscale erosion and dilation which is applied to copies of the original image. An increasing radius also leads to increased sizes of the displayed contrast in the output image. "Enhance edges in original" leads to an edge-enhanced copy of the original image using the algorithm of the macro. Enhance contrast might lead to a better edge detection of faint structures. "Final maxima filter" applies a maximum grayscale filter to the output image to achieve a thinning of the contrast lines detected. "Inverse" might be used to detect the contrast in an inverted fashion or might be necessary when dark features are detected on a bright background.
+
+
+
+Status: works only on 2D images, maintenance active
+
+Future: suggestions are welcome!
+
+ 
+
+Difference of Gaussian and Difference from Median:
+
+Purpose: Uses a basic difference of Gaussian method for feature detection and a method which gives the difference between the original and a specified "Median" filter on a copy of the original image.
+
+How to: Difference of Gaussian needs the specification of 2 different Gaussian blurring radii and Difference from Median needs the specification of a Median kernel radius.
+
+Status: maintenance active
+
+Future: Suggestions are welcome!
+
+ 
+
+Hyperstack Color Coding:
+
+Purpose: This macro enables the color coding of the time or volume dimension in stacks and hyperstacks. Multi-channels need to be split up before color coding can be done. The macro is based on the idea of the plugin from Kota Miura and Johannes Schindelin. In contrast to the latter, it keeps the coded stack besides the creation of an additional color-coded z-projection.
+
+How to: Given that you start with a hyperstack, you can choose between time and volume to be color coded. You can choose to create a z-projection by choosing from different projection types (as available in the ImageJ "Z-Project" function). Furthermore, a separated calibration bar can be created which will be horizontal for coded time stacks and vertical for coded volume stacks.
+
+Status: v0.1, maintenance active
+
+Future: Suggestions are welcome!
+
+ 
+
+Neighbor Analysis:
+
+Purpose: This macro enables the color coding of particles in an 8-bit binary image according to the number of neighbors of each individual particle. Depending on the method chosen, different neighbor particles will be considered during the analysis.
+
+How to: Specify the analysis parameters (same input as for "Analyze Particles..."), choose if you want to include an initial watershed separation of the particles in the starting image and select if you want to display a calibration bar in addition to the analysis output. According to the calibration bar you can interpret the color coding. Mouse hovering over the colored particles enables you to see the respective number of neighbors in the ImageJ/Fiji main window as the number behind "index=".
+
+Methods: "Voronoi" analyzes the paticles according to the directly correlated voronoi map. "UEP Voronoi" uses the voronoi map from the ultimate eroded points of the particles. This might underestimate the real number of neighbors and is rather suitable for roundish structures. "Centroid Neighborhood" analyzes an area corresponding to a circle with the specified neighborhood radius around the centroid of each particle. "Particle Neighborhood" analyzes also an area around each particle with the specified radius as distance to the particle border.
+
+
+
+Version: 0.3
+
+Status: maintenance active
+
+Future: Suggestions are welcome!
+
+ 
+
+Distribution Analysis:
+
+Purpose: This macro statistically determines if particles (according to their ultimate eroded point, UEP) in a 2D image are likely to be randomly distributed, self-avoiding or build clusters.
+
+How to: Starting with a binary image the setup dialog allows similar as the "Analyze Particles" to exclude particles by size and circularity as well as edge touching particles and include holes. The evaluation can be based on the mean nearest neighbor distance or the median nearest neighbor distance. The latter is suitable to better minimize the influence of outliers. Finally, the confidence interval of the statistical evaluation can be chosen between 95%, 99% and 99.9%.
+
+Method: The UEPs of the particles are generated and the nearest neighbor distance is determined for each particle. According to particle number and analyzed area the theoretical nearest neighbor distance is calculated (according to J. Russ, The Image Processing Handbook, 2010, 6th Edition). It is assumed that in the case of normally distributed particles, the mean equals the median. Thus, the method is implemented for the comparison of both, mean and median, from the assumption with the measured values. The measured (mean or median) nearest neighbour distance is statistically compared to the theoretical one. Therefore, first a suitable test method is determined according to the homogeneity of the variance using an F-Test. This finally decides about the use of either a Student's T-Test or a Welch Test for the final statistical evaluation.
+
+
+
+Version: 0.1, new release
+
+Status: maintenance active
+
+Future: Suggestions are welcome!
+
+ 
+
+Skeleton Length (corrected):
+
+Purpose: This macro determines the length of particles along their ultimate eroded skeleton, applying the "Skeletonize" function on binary particles. Since the skeleton is shorter than the actual particle it belongs to a correction is needed to get the complete particle length.
+
+How to: Start with an image holding the binary particles and run the macro. Exclude particled as desired as for the normal "Analyze Particles".
+
+Method: The correction of the skeleton length is achieved by adding the intensity values (raw integrated density) of the particles distance map at the position of the 2 endpoints of each skeleton. This gives a fairly good estimated correction.
+
+Version: 0.1, new release
+
+Status: maintenance active
+
+Future: Suggestions are welcome!
+
+ 
+
+Nearest Neighbor Indicator (Separate Tool):
+
+Purpose/How to: This tool enables the user to click in any feature in a binary image to identify all neigbors and the nearest neighbor of this feature. Therefore, the tool needs to be activated. Then any click will lead to a new calculation of the neighbors depending on the location clicked on.
+
+Output: A copy of the original image is created with the particle of interest (POI) in red, neighbors in blue and the nearest neighbor in yellow. If more then one neighbor has the same distance to the POI all neighbors with that distance will be indicated in yellow.
+
+Method: As measure for the distance between the particles the minimum separation distance is taken by analysis of the intensity coded Voronoi cell algorithm of ImageJ. The lowest non-background intensity is used to indicate the nearest neighbor.
+
+
+
+Version: first release (0.1)
+
+Status: maintenance active
+
+Future: Suggestions are welcome!
+
+ 
+
+Gaussian weighted Median filter (plugin, called from BioVoxxel Toolbox):
+
+Purpose/How to: This filter is basically a normal median filter (as in ImageJ/Fiji) but with a weighted filter matrix. The radius is given in pixels. The weight is determined automatically by a 2D gaussian function (approximated to integer values) over the size of the filter grid. Thus, pixel closer to the filter center get a higher weight compared to more distant ones. This reduces the intensity homogenizing effect from a normal median filter but increases the edge-perservation of features.
+
+Output: The filter will be applied directly on the input image. It is undoable (by pressing [z]) and will be recorded by the macro recorder.
+
+Limitation: So far, the filter is only applicable on 8-bit and 16-bit single images.
+
+Installation: Save .class file in ImageJ plugins directory or any subfolder.
+
+Version: first release (0.1)
+
+Status: maintenance active
+
+Future: Will be adjusted für 32-bit float-type images as well as RGB images and stacks. Suggestions are welcome!
+
+ 
+
+All BioVoxxel Macros were developed by Jan Brocher
+
+The macros can be freely used, redistributed and changed according to the GNU GPL License v3.0. 
+
+For questions, comments and suggestions please contact: jan.brocher(at)biovoxxel.de
+
+There is NO WARRANTY of functionality for those macros.
+
+In no event neither Jan Brocher nor BioVoxxel shall be liable to any party for direct, indirect, special, incidental, or consequential damages or data loss of any kind arising out of the use of this software and its documentation, even if advised of the possibility thereof.
