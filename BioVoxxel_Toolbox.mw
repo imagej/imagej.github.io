@@ -15,9 +15,7 @@ You will find all functions of the BioVoxxel Toolbox under the icon of the green
 
 ----
 
-
-
-'''[[Advanced Particle Analyzer]]:'''
+=Advanced Particle Analyzer=
 
 Purpose: The "Advanced Particle Analyzer" is based on the ImageJ "Analyze Particles..." command. It enables the user to further restrict the analysis on particles according to parameter spezifications of shape descriptors and angle orientations. Thus, setting minimal and maximal exclusion ranges, particles from a binary image can be also extracted from an image choosing "Masks" as an output type.
 
@@ -41,9 +39,7 @@ Future: Suggestions are welcome!
 
 ----
 
-
-
-'''Field-of-view measure correction:'''
+=Field-of-view measure correction=
 
 Purpose: The macro eliminates all particles in a binary image which touch the edges, then counts the remaining particles and corrects for the counting and the mean area bias due to the edge intersection using the following formula:
 
@@ -59,9 +55,7 @@ Future: Suggestions are welcome!
 
 ----
 
-
-
-'''Shape Descriptor Maps:'''
+=Shape Descriptor Maps=
 
 Purpose: Shape descriptors of the particles in an 8-bit binary image will be color coded (smallest to biggest values) and are shown in a stack containing the original image in the first slice and the "shape descriptor maps" in the consecutive ones. The respective shape descriptors are indicated in each slice. A calibration bar (LUT can be selected in the setup) enables easier overview and interpretation. The highest descriptor values can also be displayd as an orientation. Since version 0.3, the distribution plots of all shape descriptor values can be displayed in an additional separate stack. This macro helps to visually identify features in images according to their shape properties. Additionally, you can use the color coded images for consecutive thresholding to extract specific features from the images, e.g. according to their angular orientation.
 
@@ -75,9 +69,7 @@ Future: Suggestions are welcome!
 
 ----
  
-
-
-'''Binary Feature Extractor:'''
+=Binary Feature Extractor=
 
 Purpose: The "Feature Extractor" is aimed to select isolate specific features in a binary image by other binary particles as selectors which are located completely inside the features or overlap partially with those. It additionally allows also to get a visual combination of extracted features and selectors (combining those images by using a boolean OR function). The idea for the feature extractor is taken from J. Russ "The Image Processing Handbook" 6th Edition.
 
@@ -93,9 +85,7 @@ Future: A further dialog will be added which will allow the user to determine th
 
 ----
  
-
-
-'''Speckle Inspector:'''
+=Speckle Inspector=
 
 Purpose: The "Speckle Inspector" is able to identify bigger features by the number of containing smaller features/speckles.
 
@@ -115,9 +105,7 @@ Future: suggestions are welcome!
 
 ----
  
-
-
-'''Watershed Irregular Structures:'''
+=Watershed Irregular Structures=
 
 Purpose: The standard watershed algorithm in ImageJ is very usefull to separate connected, roughly circular structures. Nevertheless, it gets into trouble while separating irregular structures. The Irregular Watershed enables the user to separate also irregular shaped structures to a certain extend.
 
@@ -131,9 +119,7 @@ Future: other erosion algorithms will potentially be included to improve the wat
 
 ----
  
-
-
-'''EDM Erosion and EDM Dilation:'''
+=EDM Erosion and EDM Dilation=
 
 Purpose: The standard binary erosion and dilation suffers from the artefact that under higher iteration cycles the binary structures get irregularly deformed (see image below, second column). The EDM based methods for erosion and dilation prevent these artifacts. The method is using thresholding on a 8-bit euclidean distance map of the original image to facilitate the erosion or dilation.
 
@@ -147,9 +133,7 @@ Future: suggestions are welcome!
 
 ----
  
-
-
-'''Auto Binary Masking:'''
+=Auto Binary Masking=
 
 Purpose: The macro enables to mask images with their thresholded binary counterparts. Works with 2D images and 3D stacks.
 
@@ -161,9 +145,7 @@ Future: Will be implemented for hyperstacks. Suggestions are welcome!
 
 ----
  
-
-
-'''Threshold Check:'''
+=Threshold Check=
 
 Purpose: The "Threshold Check" should simply provide a help in deciding which of the 16 Auto Threshold and the 9 Auto Local Threshold outputs from the respective plugins results in the potentially best binary image outcome. This is not an absolute measure but should rather assist in the decision for the application of one specific auto threshold algorithm in non-obvious cases. In the new version you can choose additionally to quantify the quality of the thresholding.
 
@@ -203,9 +185,7 @@ Future: Suggestions are welcome!
 
 ----
  
-
-
-'''Background Division:'''
+=Background Division=
 
 Purpose: The macro enables to "subtract" background due to inequal lighting from grayscale and true color images. It creates an artificial flat-field image from the selected original image. For true color images this is done using the brightness channel of an HSB stack. The original image (brightness channel for true color images) is divided by the flat-field image and the brightness is set back to "normal" using the mean intensity of the original image.
 
@@ -217,9 +197,7 @@ Future: suggestions are welcome!
 
 ----
  
-
-
-'''Contrast Detection:'''
+=Contrast Detection=
 
 Purpose: The macro determines mostly edges or contrast in the sense of brightness changes. As basis serves the difference between a grayscale erosion and a grayscale dilation which is finally subtracted from the original.
 
@@ -245,9 +223,7 @@ Future: Suggestions are welcome!
 
 ----
 
- 
-
-'''Hyperstack Color Coding:'''
+=Hyperstack Color Coding=
 
 Purpose: This macro enables the color coding of the time or volume dimension in stacks and hyperstacks. Multi-channels need to be split up before color coding can be done. The macro is based on the idea of the plugin from Kota Miura and Johannes Schindelin. In contrast to the latter, it keeps the coded stack besides the creation of an additional color-coded z-projection.
 
@@ -259,9 +235,7 @@ Future: Suggestions are welcome!
 
 ----
 
- 
-
-'''Neighbor Analysis:'''
+=Neighbor Analysis=
 
 Purpose: This macro enables the color coding of particles in an 8-bit binary image according to the number of neighbors of each individual particle. Depending on the method chosen, different neighbor particles will be considered during the analysis.
 
@@ -279,9 +253,7 @@ Future: Suggestions are welcome!
 
 ----
 
- 
-
-'''Distribution Analysis:'''
+=Distribution Analysis=
 
 Purpose: This macro statistically determines if particles (according to their ultimate eroded point, UEP) in a 2D image are likely to be randomly distributed, self-avoiding or build clusters.
 
@@ -299,9 +271,7 @@ Future: Suggestions are welcome!
 
 ----
 
- 
-
-'''Skeleton Length (corrected):'''
+=Skeleton Length (corrected)=
 
 Purpose: This macro determines the length of particles along their ultimate eroded skeleton, applying the "Skeletonize" function on binary particles. Since the skeleton is shorter than the actual particle it belongs to a correction is needed to get the complete particle length.
 
@@ -317,9 +287,7 @@ Future: Suggestions are welcome!
 
 ----
 
-
-
-'''Nearest Neighbor Indicator (Separate Tool):'''
+=Nearest Neighbor Indicator (Separate Tool)=
 
 Purpose/How to: This tool enables the user to click in any feature in a binary image to identify all neigbors and the nearest neighbor of this feature. Therefore, the tool needs to be activated. Then any click will lead to a new calculation of the neighbors depending on the location clicked on.
 
@@ -337,9 +305,8 @@ Future: Suggestions are welcome!
  
 ----
 
-
-
-'''Gaussian weighted Median filter (plugin, called from BioVoxxel Toolbox):'''
+=Gaussian weighted Median filter= 
+(plugin, called from BioVoxxel Toolbox)
 
 Purpose/How to: This filter is basically a normal median filter (as in ImageJ/Fiji) but with a weighted filter matrix. The radius is given in pixels. The weight is determined automatically by a 2D gaussian function (approximated to integer values) over the size of the filter grid. Thus, pixel closer to the filter center get a higher weight compared to more distant ones. This reduces the intensity homogenizing effect from a normal median filter but increases the edge-perservation of features.
 
