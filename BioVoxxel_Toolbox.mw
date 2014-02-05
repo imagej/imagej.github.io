@@ -59,7 +59,7 @@ Example: A specific nuclear fluorescent staining is thresholded as the selector 
 
 How to: First, specify the images you want to work with. The macro then calculates and extracts the features which overlap with the selector (so far, already 1 pixel is sufficient).
 
-
+[[File:FeatureExtractor1.png|770px]]
 
 Status: v0.3, maintenance active
 
@@ -73,11 +73,11 @@ Purpose: The "Speckle Inspector" is able to identify bigger features by the numb
 
 How to: In the setup dialog the user can enter the 2 images to be analyzed as well as lower and upper limits of speckle numbers, speckle sizes, feature size and feature circularity to determine characteristics which include/exclude speckles and features from the analysis according to the entered parameters.
 
-
+[[File:SpeckleInspector1.png|770px]]
 
 The macro gives different outputs. The optical output is an color-coded image, where positive features (lying inbetween the determined minimum and maximum parameters) are colord in magenta, features containing less than the specified minimum speckle numbers are colored in blue and features containing more than the specified maximum speckle numbers are colored in green. In the same image the features are numbered to identify them in the respective speckle list as well as the ROI manager. Furthermore, they contain the number of "speckles" per feature in brackets. The second output are all feature selection ROIs in the ImageJ/Fiji ROI manager. Moreover a list of all features and respective speckle numbers is given if "show speckle list" was ticked. The "Log" window depicts an analysis of the features showing overall numbers of features and speckles as well as the numbers for the features lying below, inbetween, and above the thresholds.
 
-
+[[File:SpeckleInspector2.png|770px]]
 
 Version: v1.2
 
@@ -91,7 +91,7 @@ Watershed Irregular Structures:
 
 Purpose: The standard watershed algorithm in ImageJ is very usefull to separate connected, roughly circular structures. Nevertheless, it gets into trouble while separating irregular structures. The Irregular Watershed enables the user to separate also irregular shaped structures to a certain extend.
 
-
+[[File:WatershedIrregularFeatures.png|770px]]
 
 How to: In one dialog the user needs to specify the number of erosion cycles to be used for the separation algorithm. "0" prevents watershedding. Since increasing numbers use a decreasing size of selector for the separations to be skipped, a too high number might result in unwanted separation in the peripheral regions of the features. The separation only works in the 2D space at the moment and has its limitations when the connecting "bridges" between the features are too broad (as true for the normal watershed algorithm).
 
@@ -105,7 +105,7 @@ EDM Erosion and EDM Dilation:
 
 Purpose: The standard binary erosion and dilation suffers from the artefact that under higher iteration cycles the binary structures get irregularly deformed (see image below, second column). The EDM based methods for erosion and dilation prevent these artifacts. The method is using thresholding on a 8-bit euclidean distance map of the original image to facilitate the erosion or dilation.
 
-
+[[File:EDMErosionDilation.png|770px]]
 
 How to: The number of erosion/dilation cycled determines how many rows of pixels should be eliminated/added to the binary features.
 
@@ -137,7 +137,7 @@ Publication: a publication regarding the threshold check and its quantification 
 
 Output interpretation: You will get a stack with each thresholding method represented in a single stack slice. The following colors should help in interpreting the thresholding result:
 
-
+[[File:ThresholdCheck.png|770px]]
 
 blue = this is thresholded as background and also represents black or very dark areas in the original image, thus most likely beeing really background.
 
@@ -185,8 +185,6 @@ Purpose: The macro determines mostly edges or contrast in the sense of brightnes
 
 How to: Radius determines the radius of the "Minimum" and "Maximum" grayscale erosion and dilation which is applied to copies of the original image. An increasing radius also leads to increased sizes of the displayed contrast in the output image. "Enhance edges in original" leads to an edge-enhanced copy of the original image using the algorithm of the macro. Enhance contrast might lead to a better edge detection of faint structures. "Final maxima filter" applies a maximum grayscale filter to the output image to achieve a thinning of the contrast lines detected. "Inverse" might be used to detect the contrast in an inverted fashion or might be necessary when dark features are detected on a bright background.
 
-
-
 Status: works only on 2D images, maintenance active
 
 Future: suggestions are welcome!
@@ -225,7 +223,7 @@ How to: Specify the analysis parameters (same input as for "Analyze Particles...
 
 Methods: "Voronoi" analyzes the paticles according to the directly correlated voronoi map. "UEP Voronoi" uses the voronoi map from the ultimate eroded points of the particles. This might underestimate the real number of neighbors and is rather suitable for roundish structures. "Centroid Neighborhood" analyzes an area corresponding to a circle with the specified neighborhood radius around the centroid of each particle. "Particle Neighborhood" analyzes also an area around each particle with the specified radius as distance to the particle border.
 
-
+[[File:NeighborAnalysis.png|770px]]
 
 Version: 0.3
 
@@ -243,7 +241,7 @@ How to: Starting with a binary image the setup dialog allows similar as the "Ana
 
 Method: The UEPs of the particles are generated and the nearest neighbor distance is determined for each particle. According to particle number and analyzed area the theoretical nearest neighbor distance is calculated (according to J. Russ, The Image Processing Handbook, 2010, 6th Edition). It is assumed that in the case of normally distributed particles, the mean equals the median. Thus, the method is implemented for the comparison of both, mean and median, from the assumption with the measured values. The measured (mean or median) nearest neighbour distance is statistically compared to the theoretical one. Therefore, first a suitable test method is determined according to the homogeneity of the variance using an F-Test. This finally decides about the use of either a Student's T-Test or a Welch Test for the final statistical evaluation.
 
-
+[[File:DistributionAnalysis.png|770px]]
 
 Version: 0.1, new release
 
