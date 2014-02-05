@@ -181,7 +181,7 @@ The macro finally suggests thresholds which perform best in respect to the refer
 
 Potential issues: If it is not correctly defined if the user is looking for bright or dark objects the output will be incorrectly determined.
 
-Status: v3.0 (rewritten), maintenance active
+Status: v2.1 (rewritten), maintenance active
 
 Future: Suggestions are welcome!
 
