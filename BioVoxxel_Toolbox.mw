@@ -1,5 +1,15 @@
 
+{{Infobox Plugin
+| software               = ImageJ / Fiji
+| name                   = BioVoxxel Toolbox
+| author                 = Jan Brocher
+| website                = www.biovoxxel.de  [http://www.biovoxxel.de/index.html]
+| maintainer             = Jan Brocher
+| latest version         = 04. February 2014
+}}
+
 == '''BioVoxxel Toolset Documentation''' ==
+
 
 
 '''Advanced Particle Analyzer:'''
