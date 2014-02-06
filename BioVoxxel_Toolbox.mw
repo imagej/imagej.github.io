@@ -147,7 +147,7 @@ Future: Will be implemented for hyperstacks. Suggestions are welcome!
 
 ----
  
-=Threshold Check=
+'''=Threshold Check='''
 
 Purpose: The "Threshold Check" should simply provide a help in deciding which of the 16 [[Auto Threshold]] and the 9 [[Auto Local Threshold]] outputs from the respective plugins results in the potentially best binary image outcome. This is not an absolute measure but should rather assist in the decision for the application of one specific auto threshold algorithm in non-obvious cases. In the new version you can choose additionally to quantify the quality of the thresholding.
 
@@ -186,7 +186,7 @@ Status: v2.1 (rewritten), maintenance active
 Future: Suggestions are welcome!
 
 ----
- 
+
 =Background Division=
 
 Purpose: The macro enables to "subtract" background due to inequal lighting from grayscale and true color images. It creates an artificial flat-field image from the selected original image. For true color images this is done using the brightness channel of an HSB stack. The original image (brightness channel for true color images) is divided by the flat-field image and the brightness is set back to "normal" using the mean intensity of the original image.
