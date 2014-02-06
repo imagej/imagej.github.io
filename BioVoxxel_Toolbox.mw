@@ -316,7 +316,7 @@ Output: The filter will be applied directly on the input image. It is undoable (
 
 Limitation: So far, the filter is only applicable on 8-bit and 16-bit single images.
 
-Installation: Save .class file in ImageJ plugins directory or any subfolder.
+Installation: Save [http://www.biovoxxel.de/BioVoxxel%20Macro%20Toolset/Gaussian_Weighted_Median.class Gaussian_Weighted_Median.class] file in ImageJ plugins directory or any subfolder.
 
 Version: first release (0.1)
 
