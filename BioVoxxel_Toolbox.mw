@@ -65,12 +65,12 @@ How to: Select analysis modes and start.
 
 [[File:ShapeDescriptorMaps.png|600px]]
 
-Status: v0.3, Maintenance active
+Status: v0.4, Maintenance active
 
 Future: Suggestions are welcome!
 
 ----
- 
+
 =Binary Feature Extractor=
 
 Purpose: The "Feature Extractor" is aimed to select isolate specific features in a binary image by other binary particles as selectors which are located completely inside the features or overlap partially with those. It additionally allows also to get a visual combination of extracted features and selectors (combining those images by using a boolean OR function). The idea for the feature extractor is taken from J. Russ "The Image Processing Handbook" 6th Edition.
