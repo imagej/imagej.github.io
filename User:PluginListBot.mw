@@ -1,3 +1,1 @@
-Every night, Fiji is test-compiled completely from source code, the so-called [[2009-09-10 - Nightly build tests operational|nightly build]]. This is done to verify that there are no bugs missed by developers (e.g. for the Apple support, we are still stuck with Java 1.5, and a developer might have introduced something that compiles only with Java 1.6).
-
-After every successful nightly build, the [[Template:PluginList|list of plugins]] is updated. To mark this as an automatic update, this update is performed via the account named ''PluginListBot''.
+Everytime the continuous release is updated (triggered by a change on the update sites), the [[Template:PluginList|list of plugins]] is updated. To mark this as an automatic update, this update is performed via the account named ''PluginListBot''.
