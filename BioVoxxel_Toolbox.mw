@@ -212,7 +212,7 @@ If the image contains dark features on a bright background this needs to be indi
 
 If the subtraction plot checkbox is activated (recommended), the user will be able to check the subtraction event along a predifined straight line selection. The line can be drawn before the macro is run. If no line selection exists, the macro will ask to draw one (only works with straight lines). The subtraction plot shows the original intensity distribution along the defined line (gray), the intensity distribution of the constructed median background (red), the intensities of the median background by offset and dilation (green), and the final intensity plot after subtraction (blue). This might indicate potential need for further improvement.
 
-[[File:Example.jpg]]
+[[File:MedianBackgroundSubtraction.png|600px]]
 
 Version: v0.1 (first release, 14-02-2014)
 
