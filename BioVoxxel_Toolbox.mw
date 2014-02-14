@@ -207,7 +207,7 @@ Purpose: The macro determines mostly edges or contrast in the sense of brightnes
 
 How to: Radius determines the radius of the "Minimum" and "Maximum" grayscale erosion and dilation which is applied to copies of the original image. An increasing radius also leads to increased sizes of the displayed contrast in the output image. "Enhance edges in original" leads to an edge-enhanced copy of the original image using the algorithm of the macro. Enhance contrast might lead to a better edge detection of faint structures. "Final maxima filter" applies a maximum grayscale filter to the output image to achieve a thinning of the contrast lines detected. "Inverse" might be used to detect the contrast in an inverted fashion or might be necessary when dark features are detected on a bright background.
 
-Status: works only on 2D images, maintenance active
+Status: works only on 2D images, deprecated, no further maintenance!
 
 Future: suggestions are welcome!
 
