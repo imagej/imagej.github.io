@@ -39,7 +39,7 @@ If you are already an ImageJ programmer, you might find it the easiest way to si
 
 Internally, we use a compatibility '''Img''' to represent the data which is as fast as ImageJ but in the case of higher dimensionality (>2d) is slower than ImgLib2 can do with the '''ArrayImg'''. Furthermore you are limited in dimensionality (2d-5d), in the type of data ('''UnsignedByteType''', '''UnsignedShortType''', '''FloatType''' and '''ARGBType''') and maximal size of each 2d-plane (max. 46000x46000).
 
-'''[https://github.com/imglib/imglib/blob/master/src/main/java/Example1a.java Example1a.java]'''
+'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example1a.java Example1a.java]'''
 <source lang="java">
 import ij.ImageJ;
 import ij.ImagePlus;
