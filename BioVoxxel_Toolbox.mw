@@ -222,9 +222,9 @@ Future: suggestions are welcome!
 
 ----
 
-=Normalized Intensity Plot=
+=Scaled Intensity Plot=
 
-Purpose: The tool first creates a normal intensity plot along any line type selection or of a rectangular selection. In the case of a rectangular selection it can be chosen if the plotting direction should be horizontal or vertical. The intensities along other direction are then averaged. After the initial plot the user can choose to normalize the plotting window to a specific size and recolor the plot line. 
+Purpose: The tool first creates a normal intensity plot along any line type selection or of a rectangular selection. In the case of a rectangular selection it can be chosen if the plotting direction should be horizontal or vertical. The intensities along other direction are then averaged. After the initial plot the user can choose to scale the plotting window to a specific size and recolor the plot line. 
 This should enable to better compare intensity plots from different images or selections which is only possible if they have the same scaling. The latter is done in unscaled units (pixels). 
 Tipp: The latter can also easily be done when several normalized plot profiles are created (also in different colors) you can convert one plot window into an RGB image and simply copy the others into the existing one by setting the "Paste Control..." to teh mode "Transparent-white".
 
