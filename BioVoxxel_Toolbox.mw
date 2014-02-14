@@ -201,11 +201,24 @@ Future: suggestions are welcome!
 
 ----
 
-=Contrast Detection=
+=Flat-field and Pseudo flat-field correction=
 
-Purpose: The macro determines mostly edges or contrast in the sense of brightness changes. As basis serves the difference between a grayscale erosion and a grayscale dilation which is finally subtracted from the original.
+Purpose: The macro enables to "subtract" background due to inequal lighting from grayscale and true color images. It either uses a previously taken flat-field image (>Flat-field correction) or creates an artificial flat-field image (>Pseudo flat-field correction) from the selected original image. For true color images this is done using the brightness channel of an HSB stack. The original image (brightness channel for true color images) is divided by the flat-field image and the brightness is normalized using the mean intensity of the original image.
 
-How to: Radius determines the radius of the "Minimum" and "Maximum" grayscale erosion and dilation which is applied to copies of the original image. An increasing radius also leads to increased sizes of the displayed contrast in the output image. "Enhance edges in original" leads to an edge-enhanced copy of the original image using the algorithm of the macro. Enhance contrast might lead to a better edge detection of faint structures. "Final maxima filter" applies a maximum grayscale filter to the output image to achieve a thinning of the contrast lines detected. "Inverse" might be used to detect the contrast in an inverted fashion or might be necessary when dark features are detected on a bright background.
+How to: You need either choose the two images in the "Flat-field" version or specify a gaussian blurring radius for the "Pseudo flat-field correction" in a way to eliminate specific feature appearance but to keep the difference in shading/lighting. Therefore, rather big radii (sigma) are needed (potentially between 40-150, but this depends on image and feature size).
+
+Version: v0.2 (14-02-2014)
+
+Status: stable, maintenance active
+
+Future: suggestions are welcome!
+
+----
+=Median Background Subtraction=
+
+Purpose: This tool enables to subtract the background from an image by contruction of a background image by applying a median filter to a copy of the original image and subtracting this from the original.
+
+How to: The user can forst specify a median offset as well as a dilation. The median offset is a pixel intensity value which will be subtracted from the median background before the actual subtraction. Thus, the subtraction can be reduced (or enhanced with negative values) to correct for a too high (too low) estimation of the background (see 
 
 Status: works only on 2D images, deprecated, no further maintenance!
 
@@ -215,7 +228,7 @@ Future: suggestions are welcome!
  
 
 
-'''Difference of Gaussian and Difference from Median:'''
+'''Difference of Gaussian and Difference from Median'''
 
 Purpose: Uses a basic difference of Gaussian method for feature detection and a method which gives the difference between the original and a specified "Median" filter on a copy of the original image.
 
