@@ -187,18 +187,20 @@ Future: Suggestions are welcome!
 
 ----
 
-=Background Division=
+=Flat-field and Pseudo flat-field correction=
 
-Purpose: The macro enables to "subtract" background due to inequal lighting from grayscale and true color images. It creates an artificial flat-field image from the selected original image. For true color images this is done using the brightness channel of an HSB stack. The original image (brightness channel for true color images) is divided by the flat-field image and the brightness is set back to "normal" using the mean intensity of the original image.
+Purpose: The macro enables to "subtract" background due to inequal lighting from grayscale and true color images. It either uses a previously taken flat-field image (>Flat-field correction) or creates an artificial flat-field image (>Pseudo flat-field correction) from the selected original image. For true color images this is done using the brightness channel of an HSB stack. The original image (brightness channel for true color images) is divided by the flat-field image and the brightness is normalized using the mean intensity of the original image.
 
-How to: You need to specify a gaussian blurring radius in a way to eliminate specific feature appearance but to keep the difference in shading/lighting. Therefore, rather big radii (sigma) are needed (potentially between 50-150). By ticking the "Preview"-box you can check the flat-field quality.
+How to: You need either choose the two images in the "Flat-field" version or specify a gaussian blurring radius for the "Pseudo flat-field correction" in a way to eliminate specific feature appearance but to keep the difference in shading/lighting. Therefore, rather big radii (sigma) are needed (potentially between 40-150, but this depends on image and feature size).
+
+Version: v0.2 (14-02-2014)
 
 Status: stable, maintenance active
 
 Future: suggestions are welcome!
 
 ----
- 
+
 =Contrast Detection=
 
 Purpose: The macro determines mostly edges or contrast in the sense of brightness changes. As basis serves the difference between a grayscale erosion and a grayscale dilation which is finally subtracted from the original.
