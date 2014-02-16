@@ -228,7 +228,7 @@ Purpose: The tool creates a intensity plot along any kind of lines as well as fr
 This should enable to better compare intensity plots from different images or selections which is only possible if they have the same scaling. The latter is done in unscaled units (pixels). 
 If a new plot line is added to an existing plot the choice "Draw grid lines" is either ignored or forced depending on how the destination plot was created using the same tool. 
 
-[[File:ScaledIntensityPlots.png|600px]]
+[[File:ScaledIntensityPlot.png|600px]]
 
 Version: v0.1 (first release, 14-02-2014)
 
@@ -236,18 +236,6 @@ Status: maintenance active!
 
 Future: potentially also display using scaled units!
  
-----
-
-=Combine Plots=
-
-Purpose: This tool combines two intensity plots. Therefore, in the ideal case the plots should have been created with the same line or rectangular selection and the same scaling using the "Scaled Intensity Plot" tool (see above).
-
-Version: v0.1 (first release, 14-02-2014)
-
-Status: maintenance active!
-
-Future: potentially also display using scaled units!
-
 ----
 
 =Difference of Gaussian and Difference from Median=
