@@ -228,7 +228,7 @@ Purpose: The tool creates a intensity plot along any kind of lines as well as fr
 This should enable to better compare intensity plots from different images or selections which is only possible if they have the same scaling. The latter is done in unscaled units (pixels). 
 If a new plot line is added to an existing plot the choice "Draw grid lines" is either ignored or forced depending on how the destination plot was created using the same tool. 
 
-[[File:ScaledIntensityPlot.png]]
+[[File:ScaledIntensityPlot.png|600px]]
 
 Version: v0.1 (first release, 14-02-2014)
 
