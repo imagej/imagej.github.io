@@ -224,9 +224,11 @@ Future: suggestions are welcome!
 
 =Scaled Intensity Plot=
 
-Purpose: The tool creates a intensity plot along any kind of lines as well as from rectangular selections (as does >Analyze >Plot Profile) but with the initial possibility to influence the displayed intensity scale. This enables to create plots which later can be overlayed using the "Combine Plots" tool. In the case of a rectangular selection it can be chosen if the plotting direction should be horizontal or vertical. The intensities along the other direction are then averaged. Additionally, the color and look of the plot line can be chosen the plot line.
+Purpose: The tool creates a intensity plot along any kind of lines as well as from rectangular selections (as does >Analyze >Plot Profile) but with the initial possibility to influence the displayed intensity scale. This enables to create plots which can be overlayed by choosing "add to existing plot". In the case of a rectangular selection it can be chosen if the plotting direction should be horizontal or vertical. The intensities along the other direction are then averaged. Additionally, the color and look of the plot line can be chosen.
 This should enable to better compare intensity plots from different images or selections which is only possible if they have the same scaling. The latter is done in unscaled units (pixels). 
-Tipp: The latter can also easily be done when several normalized plot profiles are created (also in different colors) you can convert one plot window into an RGB image and simply copy the others into the existing one by setting the "Paste Control..." to the mode "Transparent-white".
+If a new plot line is added to an existing plot the choice "Draw grid lines" is either ignored or forced depending on how the destination plot was created using the same tool. 
+
+[[File:ScaledIntensityPlots.png|600px]]
 
 Version: v0.1 (first release, 14-02-2014)
 
