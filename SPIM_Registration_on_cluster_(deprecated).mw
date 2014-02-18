@@ -436,9 +436,9 @@ We create a bash script '''timelapse.interactive'''
 
 <source lang="bash">
 #!/bin/bash
-xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 
-         -Ddir=/projects/tomancak_lightsheet/Tassos/ -Dtimepoint=1-240
-         -Dangles=325,280,235 
+xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+         -Ddir=/projects/tomancak_lightsheet/Tassos/ -Dtimepoint=1-240 \
+         -Dangles=325,280,235 \
           -- --no-splash ./time-lapse.bsh
 </source>
 
@@ -1091,7 +1091,9 @@ do
           	job="$jobs/split-$i-$a.job"
                 echo $job
                 echo "#!/bin/bash" > "$job"
-                echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=$dir -Dtimepoint=$i -Dangle=$a -- --no-splash ${jobs}/split.bsh" >> "$job"
+                echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+                     -Ddir=$dir -Dtimepoint=$i -Dangle=$a \
+                     -- --no-splash ${jobs}/split.bsh" >> "$job"
                 chmod a+x "$job"
         done
 done
@@ -1205,7 +1207,9 @@ do
 	echo "#!/bin/bash" > "$job"
 
 #modify -Dangles
-	echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=$dir -Dtimepoint=$i -Dangles=32,104,176,248,320 -- --no-splash ${jobs}/registration.bsh" >> "$job"
+	echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+              -Ddir=$dir -Dtimepoint=$i -Dangles=32,104,176,248,320 \
+              -- --no-splash ${jobs}/registration.bsh" >> "$job"
 	chmod a+x "$job"
 done
 </source>
@@ -1283,7 +1287,10 @@ In the script '''timelapse.interactive'''  modify '''-Ddir=''', '''-Dtimepoint='
 
 <source lang="bash">
 #!/bin/bash
-xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=/projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/ -Dtimepoint=1-72 -Dreferencetp=1 -Dangles=32,104,176,248,320 -- --no-splash ./time-lapse.bsh
+xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+-Ddir=/projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/ \
+-Dtimepoint=1-72 -Dreferencetp=1 -Dangles=32,104,176,248,320 \
+-- --no-splash ./time-lapse.bsh
 </source>
 
 Analog to the Multi-view registration add the channel information to the name of the file in the '''pattern_of_spim''' part of the script. 
@@ -1423,7 +1430,11 @@ do
 	echo "#!/bin/bash" > "$job"
 
 #modify -Dangles and cropping area
-	echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms100g -Xmx100g -Ddir=$dir -Dtimepoint=$i -Dangles=32,104,176,248,320 -Dchannels=0,1 -Dreference=0 -Dx=68 -Dy=250 -Dz=404 -Dw=1746 -Dh=846 -Dd=654 -- --no-splash $jobs/fusion.bsh" >> "$job"
+	echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+             -Xms100g -Xmx100g -Ddir=$dir -Dtimepoint=$i \
+             -Dangles=32,104,176,248,320 -Dchannels=0,1 -Dreference=0 \
+             -Dx=68 -Dy=250 -Dz=404 -Dw=1746 -Dh=846 -Dd=654 \
+             -- --no-splash $jobs/fusion.bsh" >> "$job"
 	chmod a+x "$job"
 done
 </source>
