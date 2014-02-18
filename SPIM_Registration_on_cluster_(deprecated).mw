@@ -436,10 +436,10 @@ We create a bash script '''timelapse.interactive'''
 
 <source lang="bash">
 #!/bin/bash
-xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
-        -Ddir=/projects/tomancak_lightsheet/Tassos/ -Dtimepoint=1-240 \
-        -Dangles=325,280,235 \
-        -- --no-splash ./time-lapse.bsh
+xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 
+         -Ddir=/projects/tomancak_lightsheet/Tassos/ -Dtimepoint=1-240
+         -Dangles=325,280,235 
+          -- --no-splash ./time-lapse.bsh
 </source>
 
 It calls '''time-lapse.bsh''' that will run fiji with the appropriate parameters for timelapse registration plug-in
@@ -524,7 +524,8 @@ do
         echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
               -Xms100g -Xmx100g -Ddir=$dir -Dtimepoint=$i -Dangles=325,280,235 \
               -Dreference=120 -Dx=0 -Dy=0 -Dz=0 -Dw=1936 -Dh=1860 -Dd=1868 \
-              -- --no-splash /projects/tomancak_lightsheet/Tassos/jobs/fusion/fusion.bsh" >> "$job"
+              -- --no-splash /projects/tomancak_lightsheet/Tassos/jobs/fusion/fusion.bsh" \
+              >> "$job"
         chmod a+x "$job"
 done
 </source>
