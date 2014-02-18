@@ -5,11 +5,13 @@ For basic Wiscan data acquisition, the following steps will allow for a correct 
 *Check to make sure the microscope is in the correct startup setup
 *Log into Wiscan with the given username and password
 *Depending on the two Wiscan devices:
-**Turn on machines 1-8 (Microscope 1)
-**Turn on the pockle cell machine and the light reader (Microscope 2)
+**OWS Microscope
+*** Turn on machines 1-8 
+**SLIM microscope
+*** Turn on the pockle cell machine and the light reader 
 
 === Safety Precautions ===
-==== SLIM  ====
-====OWS ====
+==== OWS  ====
+====SLIM ====
 == Prairie Data Acquisition ==
 === Safety Precautions ===
