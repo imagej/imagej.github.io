@@ -40,16 +40,22 @@ Please note that currently the Zeiss processing computer does not support data t
 
 Change to a directory where you have sufficient privileges to install software.
 
- cd /sw/users/tomancak/packages
+<source lang="bash">
+cd /sw/users/tomancak/packages
+</source>
 
 Download Fiji nightly build from [http://fiji.sc/Downloads Fiji's download page]. In all likelihood you will need the Linux (64 bit) version (unless you are of course using some sort of Windows/Mac cluster). Unzip and unpack the tarball
 
- gunzip fiji-linux64.tar.gz
- tar -xvf fiji-linux64.tar
+<source lang="bash">
+gunzip fiji-linux64.tar.gz
+tar -xvf fiji-linux64.tar
+</source>
 
 Change to the newly created Fiji-app directory and [http://fiji.sc/Update_Fiji#Command-line_usage update] Fiji from the command line  
 
-  ./ImageJ-linux64 --update update
+<source lang="bash">
+./ImageJ-linux64 --update update
+</source>
 
 ''Note: The output that follows may have some warnings and errors, but as long as it says somewhere Done: Checksummer and Done: Downloading... everything should be fine.''
 
@@ -61,26 +67,29 @@ We need to change the file name from a simple index to a pattern that contains t
 
 The output files of the Zeiss SPIM look like this: 
 
-  cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
-  ls
-  29072013_HisRuby_Stock1.czi
-  29072013_HisRuby_Stock1(1).czi
-  29072013_HisRuby_Stock1(2).czi
-  29072013_HisRuby_Stock1(3).czi
-  29072013_HisRuby_Stock1(4).czi
-  ...
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
+ls
+29072013_HisRuby_Stock1.czi
+29072013_HisRuby_Stock1(1).czi
+29072013_HisRuby_Stock1(2).czi
+29072013_HisRuby_Stock1(3).czi
+29072013_HisRuby_Stock1(4).czi
+...
+</source>
 
 In this example we have 5 angles. The files displayed show the first time point of this time series. The first file (does not contain a index) is the master file. This file would open all subsequent files in the Zeiss program, but also contains the first angle of the first time point. We need to give this file the index (0) in order to use it. Neglecting this file, will result in a frame shift in the data.
 
-  cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
-  ls
-  29072013_HisRuby_Stock1(0).czi
-  29072013_HisRuby_Stock1(1).czi
-  29072013_HisRuby_Stock1(2).czi
-  29072013_HisRuby_Stock1(3).czi
-  29072013_HisRuby_Stock1(4).czi
-  ...
-
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
+ls
+29072013_HisRuby_Stock1(0).czi
+29072013_HisRuby_Stock1(1).czi
+29072013_HisRuby_Stock1(2).czi
+29072013_HisRuby_Stock1(3).czi
+29072013_HisRuby_Stock1(4).czi
+...
+</source>
 
 Now we can rename the files using the following shell script. Make a script with the name '''rename-zeis-files.sh'''  Modify the '''angles''', the '''last index''' and '''source pattern'''. 
 
@@ -126,14 +135,16 @@ done
 
 The files should now be named like this: 
  
-  cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
-  ls
-  spim_TL1_Angle32.czi
-  spim_TL1_Angle104.czi
-  spim_TL1_Angle176.czi
-  spim_TL1_Angle248.czi
-  spim_TL1_Angle320.czi
-  ...
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
+ls
+spim_TL1_Angle32.czi
+spim_TL1_Angle104.czi
+spim_TL1_Angle176.czi
+spim_TL1_Angle248.czi
+spim_TL1_Angle320.czi
+...
+</source>
 
 To check if all time points and angles of a time point are present, you can use the following script. Modify the '''time points''' and the '''number of angles'''.
 
@@ -167,20 +178,24 @@ As a first step we will open the .czi files and save them as '''.tif'''. This is
 
 We have an 240 time-point, 3 view dataset (angles 325, 235 and 280) in a directory 
 
- cd /projects/tomancak_lightsheet/Tassos/
- ls -1
- spim_TL1_Angle235.czi
- spim_TL1_Angle280.czi
- spim_TL1_Angle325.czi
- spim_TL1_Angle235.czi
- spim_TL1_Angle280.czi
- spim_TL1_Angle325.czi
- ...
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Tassos/
+ls -1
+spim_TL1_Angle235.czi
+spim_TL1_Angle280.czi
+spim_TL1_Angle325.czi
+spim_TL1_Angle235.czi
+spim_TL1_Angle280.czi
+spim_TL1_Angle325.czi
+...
+</source>
 
 we create a subdirectory '''jobs/resaving''' and change to it
 
- mkdir -p jobs/resaving
- cd jobs/resaving
+<source lang="bash">
+mkdir -p jobs/resaving
+cd jobs/resaving
+</source>
 
 Now we create a bash script '''create-resaving-jobs''' that will generate the so called job files that will be submitted to the cluster nodes (I use ''nano'' but any editor will do. Using nano type '''nano create-resaving-jobs''' and cut&past the script from below into that file.)
 
@@ -266,7 +281,9 @@ done
 
 This will look into the current directory for all files ending with '''.job''' (we created them before) and submit all of them to the cluster with the '''bsub''' command.
 
- bsub -q short -n 1 -R span[hosts=1] -o "out.123345" -e "err.123456" ./resave-1.job
+<source lang="bash">
+bsub -q short -n 1 -R span[hosts=1] -o "out.123345" -e "err.123456" ./resave-1.job
+</source>
 
 * ''-q short''  selects the queue to which the job will be submitted (this one allows jobs that run up to 4 hours on MPI-CBG cluster).
 * ''-n 1'' specifies how many processors will the job request, in this case just one (we will only open and save one file)
@@ -279,25 +296,31 @@ Lets recapitulate. We have created '''create-resaving-jobs''' that, when execute
 
 So lets run it. We need to issue the following command 
 
- ./submit-jobs .
+<source lang="bash">
+./submit-jobs .
+</source>
 
 the dot at the end tells submit job where to look for .job files i.e. in the current directory. What you should see is something like this
 
- [tomancak@madmax resaving]$ ./submit-jobs .
- Job <445490> is submitted to queue <short>.
- Job <445491> is submitted to queue <short>.
- Job <445492> is submitted to queue <short>.
- ....
+<source lang="bash">
+[tomancak@madmax resaving]$ ./submit-jobs .
+Job <445490> is submitted to queue <short>.
+Job <445491> is submitted to queue <short>.
+Job <445492> is submitted to queue <short>.
+....
+</source>
 
 We can monitor running jobs with 
 
- bjobs -r
+<source lang="bash">
+bjobs -r
  JOBID   USER    STAT  QUEUE      FROM_HOST   EXEC_HOST   JOB_NAME   SUBMIT_TIME 
  445490  tomanca RUN   short      madmax      n17         *ave-1.job May  1 11:36 
  445491  tomanca RUN   short      madmax      n33         *ave-2.job May  1 11:36
  445492  tomanca RUN   short      madmax      n01         *ave-3.job May  1 11:36
  445493  tomanca RUN   short      madmax      n18         *ave-4.job May  1 11:36
  445494  tomanca RUN   short      madmax      n21         *ave-5.job May  1 11:36
+</source>
 
 or whatever your submission system offers. At the end of the run we will have a lot of '''err.<job_number>''' and '''out.<job_number>''' files in the working directory.
 
@@ -309,6 +332,7 @@ or whatever your submission system offers. At the end of the run we will have a 
 
 The err.* are hopefully empty. The out.* contain Fiji log output if any. In this case it should look something like [[media:resaving_output.pdf|this]]. Most importantly in the directory /projects/tomancak_lightsheet/Tassos we now have for each .czi file a corresponding .tif file which was the goal of the whole exercise
 
+<source lang="bash">
  ls *Angle280*
  spim_TL1_Angle280.czi
  spim_TL1_Angle280.tif
@@ -317,6 +341,7 @@ The err.* are hopefully empty. The out.* contain Fiji log output if any. In this
  spim_TL3_Angle280.czi
  spim_TL3_Angle280.tif
  ...
+</source>
 
 We can remove the .czi files (rm *.czi) as we do not need them anymore (but check some of the tifs first!).
 
@@ -425,10 +450,12 @@ The time-series registration is not really a cluster type of task as it is run o
 
 It is a very bad idea to execute anything other then submitting jobs on a cluster head node. LSF offers a useful alternative - a special '''interactive''' queue allowing us to connect directly to a free node of the cluster and execute commands interactively.
 
- bsub -q interactive -Is bash
- Job <445547> is submitted to queue <interactive>.
- <<Waiting for dispatch ...>>
- <<Starting on n27>>
+<source lang="bash">
+bsub -q interactive -Is bash
+Job <445547> is submitted to queue <interactive>.
+<<Waiting for dispatch ...>>
+<<Starting on n27>>
+</source>
 
 We are now on node 27 and can use the filesystem as if we were on the head node (not every queuing system will enable this).
 
@@ -480,15 +507,21 @@ runtime.exit(0);
 
 Executing the timelapse.interactive 
 
- ./timelapse.interactive
+<source lang="bash">
+./timelapse.interactive
+</source>
 
 will start a long stream of timelapse registration output. Its a good idea to redirect it to a file like this:
 
- ./timelapse.interactive > timelapse_reg.out
+<source lang="bash">
+./timelapse.interactive > timelapse_reg.out
+</source>
 
 We can just as well run the timelapse registration from the head node by issuing
 
- bsub -q short -n 1 -R span[hosts=1] -o "out.%J" -e "err.%J" ./timelapse.interactive
+<source lang="bash">
+bsub -q short -n 1 -R span[hosts=1] -o "out.%J" -e "err.%J" ./timelapse.interactive
+</source>
 
 In this case the output will go into out.<job_number> file in the working directory.
 
@@ -639,11 +672,15 @@ and the registration files ''spim_TL400_Angle1.tif.registration.to_400'' in the 
 
 Now this looks elegant, but there are several caveats. The pre-concatenation of transformation models is not reversible (or at least not easily in the current code framework) and so before applying external transformation we recommend to archive the old, unmodified registration files. For example by packaging them to a tar archive
 
- tar -cvf all_to_400_regs.tar *.to_400
+<source lang="bash">
+tar -cvf all_to_400_regs.tar *.to_400
+</source>
 
 and decompressing in order to get to the original, unaltered transformation models
 
-  tar -xvf all_to_400_regs.tar
+<source lang="bash">
+tar -xvf all_to_400_regs.tar
+</source>
 
 Second issue, AND IMPORTANT ONE. The new transformation (scaling) must be applied to every timepoint in the registered time-series INCLUDING the reference time-point. For good measure, it is also necessary to apply the transformation to the original non-time-series .registration files of the reference time-point ONLY. Don't ask me why... These two steps (pre-concatenating transformation models to reference time point just once) are really not clusterizable and so we recommend to do them manually in Fiji on a local machine and copy the modified registration files to the ''registration/'' directory on the cluster. Yes, it is clunky, but its better than nothing.
 
@@ -1047,24 +1084,29 @@ This part will deal with the processing of SPIM data with 2 channels. The regist
 
 Rename and save the data as '''.tif''' following the steps described above. The data should be present now in the following format:
 
- cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
- ls
- spim_TL1_Angle32.tif
- spim_TL1_Angle104.tif
- spim_TL1_Angle176.tif
- spim_TL1_Angle248.tif
- spim_TL1_Angle320.tif
- ...
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1
+ls
+spim_TL1_Angle32.tif
+spim_TL1_Angle104.tif
+spim_TL1_Angle176.tif
+spim_TL1_Angle248.tif
+spim_TL1_Angle320.tif
+...
+</source>
 
 Each file contains 2 channels, which we need to split into individual files before we can proceed. We will save the individual channels into a new subdirectory:
 
- mkdir split 
-
+<source lang="bash">
+mkdir split 
+</source>
 
 To separate the channels we create a bash script '''create-split-jobs'''. Save this script in a new subdirectory in the jobs directory.
 
- mkdir jobs/split_channels
- cd jobs/split_channels
+<source lang="bash">
+mkdir jobs/split_channels
+cd jobs/split_channels
+</source>
 
 The '''creat-split-jobs''' will create the jobs that will be send to the cluster. You will need to edit the '''directory''', the number of '''time points''' and the '''angles'''.
 
@@ -1101,7 +1143,9 @@ done
 
 Run this script:
 
- ./create-split-jobs
+<source lang="bash">
+./create-split-jobs
+</source>
 
 The '''creat-split-jobs''' will use the '''split.bsh''' (written by Stephan Saalfeld). This script will split each file into individual channels and will save them into the directory '''split'''.
 
@@ -1163,24 +1207,28 @@ done
 
 Run the script by:
 
- ./submit-jobs .
+<source lang="bash">
+./submit-jobs .
+</source>
 
 Finally you should find the individual channels in the directory '''split'''.
 To the information of the time point and the angle, the channel information is added. 
 
- cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split
- ls 
- spim_TL1_Angle32_Channel0.tif
- spim_TL1_Angle32_Channel1.tif
- spim_TL1_Angle104_Channel0.tif
- spim_TL1_Angle104_Channel1.tif
- spim_TL1_Angle176_Channel0.tif
- spim_TL1_Angle176_Channel1.tif
- spim_TL1_Angle248_Channel0.tif
- spim_TL1_Angle248_Channel1.tif
- spim_TL1_Angle320_Channel0.tif
- spim_TL1_Angle320_Channel1.tif
- ...
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split
+ls 
+spim_TL1_Angle32_Channel0.tif
+spim_TL1_Angle32_Channel1.tif
+spim_TL1_Angle104_Channel0.tif
+spim_TL1_Angle104_Channel1.tif
+spim_TL1_Angle176_Channel0.tif
+spim_TL1_Angle176_Channel1.tif
+spim_TL1_Angle248_Channel0.tif
+spim_TL1_Angle248_Channel1.tif
+spim_TL1_Angle320_Channel0.tif
+spim_TL1_Angle320_Channel1.tif
+...
+</source>
 
 You can now remove the .tif files that contain both channels. Determine which channel contains the beads. The multi-view registration and the time-lapse registration will be performed only on this channel.
 
@@ -1214,7 +1262,9 @@ do
 done
 </source>
 
- ./create-registration-jobs
+<source lang="bash">
+./create-registration-jobs
+</source>
 
 The '''registration.bsh''' stays in principle the same as in the single channel. The only thing you need to modify is '''pattern_of_spim''' otherwise the program will not recognise the files. Just add the name of the channel to the file name. 
 
@@ -1270,16 +1320,20 @@ do
 done
 </source>
 
- ./submit-jobs .
+<source lang="bash">
+./submit-jobs .
+</source>
 
 The registration files should now be written in the directory '''registration'''. For each angle of each time point 3 registration files should be present:
 
- cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/registration
- ls
- spim_TL1_Angle32_Channel1.tif.beads.txt            
- spim_TL1_Angle32_Channel1.tif.dim                  
- spim_TL1_Angle32_Channel1.tif.registration
- ...
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/registration
+ls
+spim_TL1_Angle32_Channel1.tif.beads.txt            
+spim_TL1_Angle32_Channel1.tif.dim                  
+spim_TL1_Angle32_Channel1.tif.registration
+...
+</source>
 
 ====Time-lapse registration for 2 channels====
 
@@ -1345,17 +1399,21 @@ For my example these modifications worked:
 bsub -q short  -n 12 -W 00:25 -R rusage[mem=5000] -R span[hosts=1] -o "out.%J" -e "err.%J" ./timelapse.interactive
 </source>
 
- ./submit-jobs .
+<source lang="bash">
+./submit-jobs .
+</source>
 
 An additional registration file will be created in the directory '''registration'''.
 
- cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/registration
- ls
- spim_TL1_Angle32_Channel1.tif.beads.txt            
- spim_TL1_Angle32_Channel1.tif.dim                  
- spim_TL1_Angle32_Channel1.tif.registration
- spim_TL1_Angle32_Channel1.tif.registration.to_1
- ...
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/registration
+ls
+spim_TL1_Angle32_Channel1.tif.beads.txt            
+spim_TL1_Angle32_Channel1.tif.dim                  
+spim_TL1_Angle32_Channel1.tif.registration
+spim_TL1_Angle32_Channel1.tif.registration.to_1
+...
+</source>
 
 ====Duplicate registration files====
 
@@ -1393,20 +1451,24 @@ exit 0
 
 Execute the script:
 
-  sh dublicate_rename_registration.bsh
+<source lang="bash">
+sh dublicate_rename_registration.bsh
+</source>
 
 Now for each channel of each angle and timepoint registration files should be present.
- cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/registration
- ls
- spim_TL1_Angle32_Channel0.tif.beads.txt            
- spim_TL1_Angle32_Channel0.tif.dim                  
- spim_TL1_Angle32_Channel0.tif.registration        
- spim_TL1_Angle32_Channel0.tif.registration.to_1    
- spim_TL1_Angle32_Channel1.tif.beads.txt           
- spim_TL1_Angle32_Channel1.tif.dim                 
- spim_TL1_Angle32_Channel1.tif.registration        
- spim_TL1_Angle32_Channel1.tif.registration.to_1
- ...
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/29072013_HisRuby_Stock1/split/registration
+ls
+spim_TL1_Angle32_Channel0.tif.beads.txt            
+spim_TL1_Angle32_Channel0.tif.dim                  
+spim_TL1_Angle32_Channel0.tif.registration        
+spim_TL1_Angle32_Channel0.tif.registration.to_1    
+spim_TL1_Angle32_Channel1.tif.beads.txt           
+spim_TL1_Angle32_Channel1.tif.dim                 
+spim_TL1_Angle32_Channel1.tif.registration        
+spim_TL1_Angle32_Channel1.tif.registration.to_1
+...
+</source>
 
 ====Fusion for 2 channels====
 
@@ -1441,7 +1503,9 @@ done
 
 Execute script
  
- ./create-fusion-jobs
+<source lang="bash">
+./create-fusion-jobs
+</source>
 
 The '''fusion.bsh''' script needs to be set for multi channel registration. Under '''select_channel''' Multi-channel registration=[Individual registration of channel 1] registration=[Individual registration of channel 1] will be set. '''downsample_output''' in this case is set to 4. 
 
@@ -1504,6 +1568,8 @@ do
 done
 </source>
 
- ./submit-jobs .
+<source lang="bash">
+./submit-jobs .
+</source>
 
 The fused images will be saved into separate subdirectories for each time point into the output directory.
