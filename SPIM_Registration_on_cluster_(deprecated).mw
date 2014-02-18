@@ -660,10 +660,10 @@ do
   	job="$jobs/deconvolution-$i.job"
         echo $job
         echo "#!/bin/bash" > "$job"
-        echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms100g -Xmx100g
--Ddir=$dir -Dtimepoint=$i -Dangles=1-6 -Dreference=714 -Dx=36 -Dy=168 -Dz=282 -Dw=1824 
--Dh=834 -Dd=810 -Diter=10 -- --no-splash 
-/projects/tomancak_lightsheet/Tassos/jobs/deconvolution/deconvolution.bsh" >> "$job"
+        echo "xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+      -Xms100g -Xmx100g -Ddir=$dir -Dtimepoint=$i -Dangles=1-6 -Dreference=714 \
+      -Dx=36 -Dy=168 -Dz=282 -Dw=1824 -Dh=834 -Dd=810 -Diter=10 \
+      -- --no-splash /projects/tomancak_lightsheet/Tassos/jobs/deconvolution/deconvolution.bsh" >> "$job"
         chmod a+x "$job"
 done
 </source>
@@ -820,8 +820,10 @@ do
 	job="$jobs/3d_rendering/render-$i.job"
 	echo $job
 	echo "#!/bin/bash" > "$job"
-	echo "xvfb-run -as\"-screen 0 1280x1024x24\" /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Xms20g -Xmx20g -D
-dir=$dir -Dtimepoint=$i -Dangle=1  -- --no-splash $dir/jobs/3d_rendering/render.bsh" >> "$job"
+	echo "xvfb-run -as\"-screen 0 1280x1024x24\" \
+             /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 \
+             -Xms20g -Xmx20g -Ddir=$dir -Dtimepoint=$i -Dangle=1  \
+             -- --no-splash $dir/jobs/3d_rendering/render.bsh" >> "$job"
 	chmod a+x "$job"
 done
 </source>
