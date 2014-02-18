@@ -131,7 +131,7 @@ done
 </source>
 
 <source lang="bash">
-chomd a+x
+chmod a+x
 ./rename-zeiss_files.sh
 </source>
 
@@ -1419,7 +1419,7 @@ spim_TL1_Angle32_Channel1.tif.registration.to_1
 
 ====Duplicate registration files====
 
-Since the fusion requires the presents of registration files for both channel, we will duplicate the existing files of channel 1 and save them as registration files for channel 0. The following script '''dublicate_rename_registration.bsh''' will do just that. Create this script in the jobs directory. 
+Since the fusion requires the presents of registration files for both channel, we will duplicate the existing files of channel 1 and save them as registration files for channel 0. The following script '''duplicate_rename_registration.bsh''' will do just that. Create this script in the jobs directory. 
 
 You will need to modify the '''time points''', '''angles''', the used reference time point in '''registration.to_{your reference}''' and the '''directory'''. 
 
@@ -1447,14 +1447,14 @@ cp ./spim_TL"$i"_Angle"$a"_Channel1.tif."$end" ./spim_TL"$i"_Angle"$a"_Channel0.
    done
 done
 
-echo Dublication complete! Have a nice day!
+echo Duplication complete! Have a nice day!
 exit 0
 </source>
 
 Execute the script:
 
 <source lang="bash">
-sh dublicate_rename_registration.bsh
+sh duplicate_rename_registration.bsh
 </source>
 
 Now for each channel of each angle and timepoint registration files should be present.
