@@ -1,0 +1,15 @@
+To begin stitching, you must first create a dataset that contains the correct format that the Fiji Stitching plugin can identify and analyze. Currently, Fiji supports formats from two systems of microscope, which are Wiscan and Prairie. 
+ 
+== Wiscan Data Acquisition ==
+For basic Wiscan data acquisition, the following steps will allow for a correct datasets:
+*Check to make sure the microscope is in the correct startup setup
+*Log into Wiscan with the given username and password
+*Depending on the two Wiscan devices:
+**Turn on machines 1-8 (Microscope 1)
+**Turn on the pockle cell machine and the light reader (Microscope 2)
+
+=== Safety Precautions ===
+==== Microscope 1 ====
+====Microscope 2 ====
+== Prairie Data Acquisition ==
+=== Safety Precautions ===
