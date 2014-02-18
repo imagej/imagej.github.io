@@ -130,8 +130,10 @@ while [ $i -le ${last_index} ]; do
 done
 </source>
 
-   chomd a+x
-   ./rename-zeiss_files.sh
+<source lang="bash">
+chomd a+x
+./rename-zeiss_files.sh
+</source>
 
 The files should now be named like this: 
  
