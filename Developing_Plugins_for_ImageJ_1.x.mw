@@ -93,6 +93,8 @@ To plunge into writing plugins, make sure that there is an active image (e.g. a 
 
 = ImageJ's API =
 
+The source of the various Fiji-related projects is spread over several source code repositories, and so is their API documentation. An overview of all the javadoc resources can be found on [http://javadoc.imagej.net/ this page with javadoc links].
+
 == The class ''IJ'' ==
 
 The class {{GitLink|repository=ImageJA|path=ij/IJ.java|label=ij.IJ}} is a convenience class with many static functions. Two of them are particularly useful for debugging:
