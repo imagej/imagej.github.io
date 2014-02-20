@@ -1,15 +1,51 @@
 To begin stitching, you must first create a dataset that contains the correct format that the Fiji Stitching plugin can identify and analyze. Currently, Fiji supports formats from two systems of microscope, which are Wiscan and Prairie. 
  
 == Wiscan Data Acquisition ==
-For basic Wiscan data acquisition, the following steps will allow for a correct datasets:
-*Check to make sure the microscope is in the correct startup setup
-*Log into Wiscan with the given username and password
-*Depending on the two Wiscan devices:
-**OWS Microscope
-*** Turn on machines 1-8 
-**SLIM microscope
-*** Turn on the pockle cell machine and the light reader 
+Make sure the image being used has been set up correctly:
 
+Ensure the the outer shutter lever is pointing towards image and the inner shutter lever is pointing towards the computer
+
+Turn on the external xyz manipulator
+
+NOTE: Do not attempt to adjust the focus of the image with the manual knob. You will wear down the gears.
+
+Log in to Wiscan
+
+Start Scan and ensure your image is in focus on the left side of your screen
+
+Use the joystick to choose your initial image frame
+
+Adjust the pockle cell dials until you can see an image on the right side of your screen (the blue portion)
+
+Turn on the __ . Increase the number until a very small amount of red can be seen in your image
+
+NOTE: Ensure only a small amount of red can be seen in the frame of your image. If too much of a contrast is present, it will burn out the microscope's laser
+
+ Stop scan
+
+ Define the start position in your metadata by selecting "manual update" then "set 0"
+
+ Generate the specifics of your image acquisition by selecting "generate"
+
+Set the size of each image taken (in microns)
+
+Set the amount of overlap you wish to have in your image, then press "calculate number of positions"
+
+NOTE- You can also set your own step size and overlap amount and calculate the size of each image
+
+Once you have calculated all the necessary positions, you can save this data using the "save positions" button and load them back into Wiscan at a later date
+
+Select Z motor
+
+under 4d imaging, calculate Z bottom, Z top, and Z step
+
+ These numbers should be set as 0 unless you are imaging in more than one plane of your sample
+
+Select "Use XY coordinates" and then start sequence
+
+Once Wiscan has run, your output will be a series of images that can be stitched together. 
+
+NOTE- If an noticeable amount of overlay can be seen in your images, there is a pixel to micron error within the microscope's initial setup. To fix this, recalibrate the microscope's objectives. 
 === Safety Precautions ===
 ==== OWS  ====
 ====SLIM ====
