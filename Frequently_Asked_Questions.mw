@@ -258,7 +258,7 @@ Here are several ways to do so:
 #* Run the command whose source you want to see.
 #** E.g., Process > Binary > Make Binary.
 #** Again, select it from the menu directly, not using the Command Finder.
-#* This will open the source using the [http://fiji.sc/cgi-bin/gitweb.cgi fiji.sc gitweb interface].
+#* This will open the source using the [http://fiji.sc/git fiji.sc gitweb interface].
 
 In the future, we plan to make this easier by having one single easy command for viewing the source code.
 
