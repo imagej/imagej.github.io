@@ -84,7 +84,7 @@ Purpose: The "Feature Extractor" is aimed to select isolate specific features in
 
 Example: A specific nuclear fluorescent staining is thresholded as the selector while the complete cells are thresholded as the features to be extracted.
 
-How to: First, specify the images containing on the one hand the objects to extract or on the other hand the selectors (e.g. marker staining, cell masks) which defines the objects that should be extracted. The macro then extracts the features which overlap with the selector. The "% minimal overlap" option enables to define a minimal overlap fraction (in percent) of the object area with the selector area. The object is only extracted if the overlap is equal or bigger than the defined minimal overlap.
+How to: First, specify the images containing on the one hand the objects to extract and on the other hand the selectors (e.g. marker staining, cell masks) which defines the objects that should be extracted. The macro then extracts the features which overlap with the selector. The "% minimal overlap" option enables to define a minimal overlap fraction (in percent) of the object area with the selector area. The object is only extracted if the overlap is equal or bigger than the defined minimal overlap.
 
 [[File:FeatureExtractor1.png|750px]]
 
