@@ -61,13 +61,16 @@ Future: Suggestions are welcome!
 
 =Shape Descriptor Maps=
 
-Purpose: Shape descriptors of the particles in an 8-bit binary image will be color coded (smallest to biggest values) and are shown in a stack containing the original image in the first slice and the "shape descriptor maps" in the consecutive ones. The respective shape descriptors are indicated in each slice. A calibration bar (LUT can be selected in the setup) enables easier overview and interpretation. The highest descriptor values can also be displayd as an orientation. Since version 0.3, the distribution plots of all shape descriptor values can be displayed in an additional separate stack. This macro helps to visually identify features in images according to their shape properties. Additionally, you can use the color coded images for consecutive thresholding to extract specific features from the images, e.g. according to their angular orientation.
+Purpose: Shape descriptors of the particles in an 8-bit binary image will be color coded (smallest to biggest values) and are shown in a stack containing the original image in the first slice and the "shape descriptor maps" in the consecutive ones. The respective shape descriptors are indicated in each slice. A calibration bar (LUT can be selected in the setup) enables easier overview and interpretation. The highest descriptor values can also be displayd as an orientation. Since version 0.6, when "interactive plots" is enabled, the user can simply click on one of the slices in the color coded output stack to receive a plot of the respective size sorted shape descriptor. To finally abort the macro when interactive plots is active "Esc" needs to be pressed. 
+The interactive plots enable to hover over the plot surface and determine potential exclusion parameters for which can be used with the "Advanced Particle Analyzer".
+
+This macro helps to visually identify features in images according to their shape properties. Additionally, you can also use the color coded images for consecutive color thresholding after transfering them into RGB mode to extract specific features from the images, according to their coding color.
 
 How to: Select analysis modes and start.
 
 [[File:ShapeDescriptorMaps.png|750px]]
 
-Status: v0.4, Maintenance active
+Status: v0.6, Maintenance active
 
 Future: Suggestions are welcome!
 
