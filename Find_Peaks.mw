@@ -1,0 +1,55 @@
+<seo metak="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" metad="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" />
+{{Infobox Plugin
+| software        = ImageJ/Fiji
+| name            = Find Peaks
+| author          = Tiago Ferreira
+| maintainer     = [mailto:tiago_dot_ferreira_at_mail_dot_mcgill_dot_ca Tiago Ferreira]
+| filename        = [https://raw.github.com/tferr/Scripts/master/Analysis/Find_Peaks.bsh Find_Peaks.bsh]
+| source         = [https://github.com/tferr/Scripts/tree/master/Analysis#find-peaks on GitHub]
+| released        = February 2014
+| status          = Experimental
+| category        = [[:Category:Analysis|Analysis]], [[:Category:Scripting|Scripting]], [[:Category:Plugins|Plugins]]
+}}
+__NOTOC__ 
+A [[Beanshell_Scripting|BeanShell]] script that retrieves local maxima and minima from an ImageJ plot.
+
+
+== Description == 
+TO BE DONE.
+
+== Installation ==
+Download [https://raw.github.com/tferr/Scripts/master/Analysis/Find_Peaks.bsh Find_Peaks.bsh] and place it in the plugins/ folder using the <span style="border-bottom:1px dotted #ccc;">Plugins▷ Install...</span> command.
+
+== Usage ==
+
+;Peak amplitude
+: TO BE DONE.
+
+;Min. value of maxima
+: TO BE DONE.
+
+;Max. value of minima
+: TO BE DONE.
+
+;Min. peak distance
+:The smallest separation between peaks (in X-axis units). When this value is not zero, smaller peaks that occur within the specified vicinity will be ignored. This works in the following way: 1) Identified peaks that fulfill all criteria above are sorted in descending order; 2) Beginning with the largest peak, the script ignores all remaining peaks that are not separated by more than ''Min. peak distance''.
+
+;Min. peak distance
+:TO BE DONE.
+
+;Exclude peaks on edges of plot
+:TO BE DONE.
+
+== Notes ==
+TO BE DONE.
+
+== Related Links ==
+TO BE DONE.
+
+== License ==
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+
+[[Category:Scripting]]
+[[Category:Analysis]]
+[[Category:Plugins]]
