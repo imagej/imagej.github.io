@@ -18,7 +18,95 @@ A [[Beanshell_Scripting|BeanShell]] script that retrieves local maxima and minim
 TO BE DONE.
 
 == Installation ==
-Download [https://raw.github.com/tferr/Scripts/master/Analysis/Find_Peaks.bsh Find_Peaks.bsh] and place it in the plugins/ folder using the <span style="border-bottom:1px dotted #ccc;">Plugins▷ Install...</span> command.
+Open the [[Script Editor]], select ''Language>Beanshell'' and paste the following script (you can double-click the text to select it after which the usual ''Edit>Copy'', ''[focus on the editor window]'', ''Edit>Paste'' stanza works just fine):
+
+<source lang="java">
+/* Find Peaks: Returns the local maxima and minima of an ImageJ plot.
+ * https://github.com/tferr/Scripts#scripts
+ *
+ * Installation: Update ImageJ to version 1.48d or newer. Save this file in the plugins/
+ * folder using the 'Plugins>Install...' command.
+ *
+ * Tiago Ferreira, v1.0.0 2014.02.21
+ */
+
+//import ij.gui.Plot;
+//import ij.gui.PlotWindow;
+//import ij.plugin.filter.MaximumFinder;
+//import ij.util.Tools;
+import org.apache.commons.math3.stat.descriptive.moment.StandardDeviation;
+
+// If true, a peak is only accepted if it is separated by two qualified valleys
+boolean excludeOnEdges = false;
+
+int[] findPositions(double[] values, double tolerance, boolean minima) {
+	int[] positions = null;
+	MaximumFinder maxFinder = new MaximumFinder();
+	if (minima)
+		positions = maxFinder.findMinima(values, tolerance, excludeOnEdges);
+	else
+		positions = maxFinder.findMaxima(values, tolerance, excludeOnEdges);
+	return positions;
+}
+
+int[] findMaxima(double[] values, double tolerance) {
+	return findPositions(values, tolerance, false);
+}
+
+int[] findMinima(double[] values, double tolerance) {
+	return findPositions(values, tolerance, true);
+}
+
+double[] getCoordinates(double[] values, int[] positions) {
+	int size = positions.length;
+	double[] cc = new double[size];
+	for (int i=0; i<size; i++)
+		cc[i] = values[ positions[i] ];
+	return cc;
+}
+
+
+double[] xvalues;
+double[] yvalues;
+PlotWindow pw;
+
+ImagePlus imp = WindowManager.getCurrentImage();
+ImageWindow win = imp.getWindow();
+if (win==null) IJ.error("There are no plots open.");
+if (win instanceof PlotWindow) {
+	pw = (PlotWindow)win;
+	xvalues = Tools.toDouble(pw.getXValues());
+	yvalues = Tools.toDouble(pw.getYValues());
+} else {
+	IJ.error(imp.getTitle() +"\nis not a plot window.");
+	return;
+}
+tolerance = IJ.getNumber("Depth of qualified valleys >", new StandardDeviation().evaluate(yvalues));
+if (tolerance==IJ.CANCELED) return;
+maxima = findMaxima(yvalues, tolerance);
+minima = findMinima(yvalues, tolerance);
+xMaxima = getCoordinates(xvalues, maxima);
+yMaxima = getCoordinates(yvalues, maxima);
+xMinima = getCoordinates(xvalues, minima);
+yMinima = getCoordinates(yvalues, minima);
+
+plotTitle = imp.getTitle();
+Plot plot = new Plot("Maxima "+ plotTitle, "", "", xvalues, yvalues);
+plot.setLineWidth(2);
+plot.setColor(Color.RED);
+plot.addPoints(xMaxima, yMaxima, Plot.CIRCLE);
+plot.addLabel(0.33, 0.0, "# Maxima: "+ maxima.length);
+plot.setColor(Color.BLUE);
+plot.addPoints(xMinima, yMinima, Plot.CIRCLE);
+plot.addLabel(0.00, 0.0, "# Minima: "+ minima.length);
+plot.setColor(Color.BLACK);
+plot.addLabel(0.66, 0.0, "Tolerance: "+ IJ.d2s(tolerance, 5));
+plot.setLineWidth(1);
+if (plotTitle.startsWith("Maxima")) 
+	pw.drawPlot(plot);
+else
+	plot.show();
+</source>
 
 == Usage ==
 
