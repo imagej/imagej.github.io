@@ -10,18 +10,12 @@
 | status          = Experimental
 | category        = [[:Category:Analysis|Analysis]], [[:Category:Scripting|Scripting]], [[:Category:Plugins|Plugins]]
 }}
-__NOTOC__ 
+
 A [[Beanshell_Scripting|BeanShell]] script that retrieves local maxima and minima from an ImageJ plot.
 
-
-== Description == 
-TO BE DONE.
-
-
 == Options ==
-
 ;Peak amplitude
-:The smallest depth (in Y-axis units) that a qualified valley must exceed. By default, it is set to one standard deviation of the data. Note that peaks with flat tops are retrieved at their centers. Applies to both maxima and minima.
+:The smallest depth (in Y-axis units) that a qualified valley must exceed. By default, it is set to one standard deviation of the data. 
 
 ;Min. value of maxima
 :The smallest value (in Y-axis units) a qualified maxima must exceed. This filter is disabled when set to ''NaN'' (Not a Number).
@@ -35,9 +29,14 @@ TO BE DONE.
 ;Exclude peaks on edges of plot
 :If active, a peak is only accepted if it is separated by two qualified valleys. If disabled (the default), peaks at the limits of the data range (i.e., flanked only by one valley) are also considered.
 
+[[File:FindPeaksSnapshot.png|thumb|right|550px|Analysis of synthetic data plotted from a .csv file. CSV files can be imported into ImageJ by drag and drop, or by using <span style="border-bottom:1px dotted #ccc;">File▷ Import▷ Results</span>. Once [[#options|options]] are specified, coordinates of retrieved peaks are logged to the table of a new plot window]]
 
-== Related Links ==
-TO BE DONE.
+
+== Notes ==
+* Both maxima (highlighted in red) and minima (highlighted in blue) are listed in descending order, from the largest to smallest amplitude
+* Peaks with flat tops are retrieved at their centers
+* Peak coordinates are logged according to the following layout: [''X0,Y0'']: Original data; [''X1,Y1'']: Maxima; [''X2,Y2'']: Minima
+* ''Min. peak distance'' can be used for peak width filtering
 
 
 == Installation ==
