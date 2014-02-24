@@ -81,7 +81,8 @@ if (win instanceof PlotWindow) {
 	IJ.error(imp.getTitle() +"\nis not a plot window.");
 	return;
 }
-tolerance = IJ.getNumber("Depth of qualified valleys >", new StandardDeviation().evaluate(yvalues));
+tolerance = IJ.getNumber("Depth of qualified valleys >",
+	new StandardDeviation().evaluate(yvalues));
 if (tolerance==IJ.CANCELED) return;
 maxima = findMaxima(yvalues, tolerance);
 minima = findMinima(yvalues, tolerance);
