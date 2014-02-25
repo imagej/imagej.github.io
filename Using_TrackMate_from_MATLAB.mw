@@ -194,7 +194,7 @@ settings.addTrackAnalyzer(TrackDurationAnalyzer())
     
 % Configure track filters - We want to get rid of the two immobile spots at 
 % the bottom right of the image. Track displacement must be above 10 pixels.
-filter2 = fiji.plugin.trackmate.features.FeatureFilter('TRACK_DISPLACEMENT', 10.0, true);
+filter2 = FeatureFilter('TRACK_DISPLACEMENT', 10.0, true);
 settings.addTrackFilter(filter2)
     
     
@@ -230,8 +230,6 @@ displayer.refresh()
 % Echo results
 display(model.toString())
 </source>
-
-
 
 == Why is this greater than it seems? ==
 
