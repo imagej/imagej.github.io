@@ -1,0 +1,134 @@
+This page shows how to use and control TrackMate directly from ''within MATLAB''. This is great and made possible thanks to the great [[Miji]] tool, that make the Fiji classes visible from MATLAB. Check this page first if you have not already. 
+
+All the following examples assume you have launched MATLAB, and properly initiated Miji, using for instance
+
+<source lang="matlab">
+Miji(false)
+</source>
+or 
+<source lang="matlab">
+Miji(true)
+</source>
+if you want the Fiji window to be visible.
+
+Apart from that, the collections of examples that follow just look like several scripts. Which is actually the case: We use the MATLAB interpreter as a scripting interface for TrackMate, as we did in the [[Scripting TrackMate]] page. We separated this page to highlight MATLAB specificities and to exploit its capabilities better.
+
+
+== A simple tracking example ==
+
+Here we open an image though Fiji (not though MATLAB) and track its content. The results are displayed in a Fiji window as well. MATLAB is used here only to control TrackMate and does not really plays a role in the process. This example is actually the same that in the first [[Scripting TrackMate]] example.
+
+Note that we used the fully qualified name for TrackMate classes, ''e.g.'' <code>fiji.plugin.trackmate.TrackMate</code> instead of <code>TrackMate</code>. This is the first way to import classes in a MATLAB script. We will see another way later.
+
+<source lang="matlab">
+% Get currently selected image
+% imp = ij.IJ.openImage('http://fiji.sc/samples/FakeTracks.tif')
+imp = ij.ImagePlus('/Users/tinevez/Desktop/Data/FakeTracks.tif');
+imp.show()
+   
+   
+%----------------------------
+% Create the model object now
+%----------------------------
+   
+% Some of the parameters we configure below need to have
+% a reference to the model at creation. So we create an
+% empty model now.
+model = fiji.plugin.trackmate.Model();
+   
+% Send all messages to ImageJ log window.
+model.setLogger(fiji.plugin.trackmate.Logger.IJ_LOGGER)
+      
+%------------------------
+% Prepare settings object
+%------------------------
+      
+settings = fiji.plugin.trackmate.Settings();
+settings.setFrom(imp)
+      
+% Configure detector - We use a java map
+settings.detectorFactory = fiji.plugin.trackmate.detection.LogDetectorFactory();
+map = java.util.HashMap();
+map.put('DO_SUBPIXEL_LOCALIZATION', true);
+map.put('RADIUS', 2.5);
+map.put('TARGET_CHANNEL', 1);
+map.put('THRESHOLD', 0);
+map.put('DO_MEDIAN_FILTERING', false);
+settings.detectorSettings = map;
+   
+% Configure spot filters - Classical filter on quality
+filter1 = fiji.plugin.trackmate.features.FeatureFilter('QUALITY', 1.0, true);
+settings.addSpotFilter(filter1)
+    
+% Configure tracker - We want to allow splits and fusions
+settings.trackerFactory = fiji.plugin.trackmate.tracking.FastLAPTrackerFactory();
+settings.trackerSettings = fiji.plugin.trackmate.tracking.LAPUtils.getDefaultLAPSettingsMap(); % almost good enough
+settings.trackerSettings.put('ALLOW_TRACK_SPLITTING', true);
+settings.trackerSettings.put('ALLOW_TRACK_MERGING', true);
+   
+% Configure track analyzers - Later on we want to filter out tracks 
+% based on their displacement, so we need to state that we want 
+% track displacement to be calculated. By default, out of the GUI, 
+% not features are calculated. 
+   
+% The displacement feature is provided by the TrackDurationAnalyzer.
+settings.addTrackAnalyzer(fiji.plugin.trackmate.features.track.TrackDurationAnalyzer())
+   
+% Configure track filters - We want to get rid of the two immobile spots at 
+% the bottom right of the image. Track displacement must be above 10 pixels.
+filter2 = fiji.plugin.trackmate.features.FeatureFilter('TRACK_DISPLACEMENT', 10.0, true);
+settings.addTrackFilter(filter2)
+   
+   
+%-------------------
+% Instantiate plugin
+%-------------------
+   
+trackmate = fiji.plugin.trackmate.TrackMate(model, settings);
+      
+%--------
+% Process
+%--------
+   
+ok = trackmate.checkInput();
+if ~ok
+    display(trackmate.getErrorMessage())
+end
+
+ok = trackmate.process();
+if ~ok
+    display(trackmate.getErrorMessage())
+end
+      
+%----------------
+% Display results
+%----------------
+    
+selectionModel = fiji.plugin.trackmate.SelectionModel(model);
+displayer =  fiji.plugin.trackmate.visualization.hyperstack.HyperStackDisplayer(model, selectionModel, imp);
+displayer.render()
+displayer.refresh()
+   
+% Echo results
+display(model.toString())
+</source>
+
+
+== Why is this greater than it seems? ==
+
+Because your just ran a MATLAB script that uses and benefits from multithreading without relying on any toolbox! Here is how to tune the number of threads used by TrackMate:
+
+TODO
+
+
+
+
+
+
+
+
+08:40, 25 February 2014 (CST)
+
+[[Category:Matlab]]
+[[Category:Scripting]]
+[[Category:Tracking]]
