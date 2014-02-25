@@ -311,6 +311,8 @@ Purpose: The "Cluster Finder" is thought to detect local particle clusters in a 
 How To: Choose a cluster detector size in % width of the complete image. As an example, e.g. 10% leads to the creation of 100 equally sized selections in the same aspect ratio as the image which are initially distributed to cover the complete image. The density (as a x-fold value) enables to adjust the sensitivity because found clusters are only accepted as a cluster when their density is at least x-fold of the total image density.
 Each individual cluster finding process is aborted if a local cluster was not found after the specified number of maximal iterations. Those aborted clusters can be shown as blue ROIs in the image if desired.
 
+Consider that the detector size as well as density settings and heterogenious particle sizes influence if a cluster is found and additionally accepted as a cluster.
+
 [[File:ClusterFinder.png|750px]]
 
 Method: The cluster finding process is done according to the mean shift method towards the center of mass of clusters. The latter is influenced by particle number. For heterogenious particle sizes (if specified) the ultimate eroded point map is taken for the cluster determination by taking into account that bigger particles cannot cluster as compact as smaller ones. Thus, the bigger the pparticles in a specific cluster the lower minimal density limit values are expected which is automatically adjusted.
@@ -322,6 +324,7 @@ Status: maintenance active
 Future: Suggestions are welcome!
 
 ----
+
 =Skeleton Length (corrected)=
 
 Purpose: This macro determines the length of particles along their ultimate eroded skeleton, applying the "Skeletonize" function on binary particles. Since the skeleton is shorter than the actual particle it belongs to, a correction is needed to get the complete particle length.
