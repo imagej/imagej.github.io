@@ -119,6 +119,7 @@ TrackMate was developed to serve as a tool for Life-Science image analysis commu
 === For developers ===
 
 * [[Scripting TrackMate]] shows how to do tracking using a scripting language, ''e.g.'' from the Fiji [[Script Editor]]. These example scripts will show you how to use TrackMate as a library and familiarize yourself with the API.
+* [[Using TrackMate from MATLAB]] shows how to use MATLAB as a scripting language for TrackMate, and benefit from MATLAB facilities.
 
 But the really interesting part for developers is the ability to extend TrackMate. 
 
