@@ -114,6 +114,125 @@ display(model.toString())
 </source>
 
 
+
+== Using imports in MATLAB ==
+
+MATLAB lets you import java names into its workspace, using the <code>import</code> command. Check [http://www.mathworks.fr/fr/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html#f46341 this]. So we could rewrite the above script as follow:
+
+
+<source lang="matlab">
+%----------------------------------
+% Import Fiji and TrackMate classes
+%----------------------------------
+
+import java.util.HashMap
+import ij.*
+import fiji.plugin.trackmate.*
+import fiji.plugin.trackmate.detection.*
+import fiji.plugin.trackmate.features.*
+import fiji.plugin.trackmate.features.track.*
+import fiji.plugin.trackmate.tracking.*
+import fiji.plugin.trackmate.visualization.hyperstack.*
+
+
+%--------------------
+% Pick a source image
+%--------------------
+
+% Get currently selected image
+% imp = IJ.openImage('http://fiji.sc/samples/FakeTracks.tif')
+imp = ImagePlus('/Users/tinevez/Desktop/Data/FakeTracks.tif');
+imp.show()
+    
+    
+%----------------------------
+% Create the model object now
+%----------------------------
+    
+% Some of the parameters we configure below need to have
+% a reference to the model at creation. So we create an
+% empty model now.
+model = Model();
+    
+% Send all messages to ImageJ log window.
+model.setLogger(Logger.IJ_LOGGER)
+       
+%------------------------
+% Prepare settings object
+%------------------------
+       
+settings = Settings();
+settings.setFrom(imp)
+       
+% Configure detector - We use a java map
+settings.detectorFactory = LogDetectorFactory();
+map = HashMap();
+map.put('DO_SUBPIXEL_LOCALIZATION', true);
+map.put('RADIUS', 2.5);
+map.put('TARGET_CHANNEL', 1);
+map.put('THRESHOLD', 0);
+map.put('DO_MEDIAN_FILTERING', false);
+settings.detectorSettings = map;
+    
+% Configure spot filters - Classical filter on quality
+filter1 = FeatureFilter('QUALITY', 1.0, true);
+settings.addSpotFilter(filter1)
+     
+% Configure tracker - We want to allow splits and fusions
+settings.trackerFactory = FastLAPTrackerFactory();
+settings.trackerSettings = LAPUtils.getDefaultLAPSettingsMap(); % almost good enough
+settings.trackerSettings.put('ALLOW_TRACK_SPLITTING', true);
+settings.trackerSettings.put('ALLOW_TRACK_MERGING', true);
+    
+% Configure track analyzers - Later on we want to filter out tracks 
+% based on their displacement, so we need to state that we want 
+% track displacement to be calculated. By default, out of the GUI, 
+% not features are calculated. 
+    
+% The displacement feature is provided by the TrackDurationAnalyzer.
+settings.addTrackAnalyzer(TrackDurationAnalyzer())
+    
+% Configure track filters - We want to get rid of the two immobile spots at 
+% the bottom right of the image. Track displacement must be above 10 pixels.
+filter2 = fiji.plugin.trackmate.features.FeatureFilter('TRACK_DISPLACEMENT', 10.0, true);
+settings.addTrackFilter(filter2)
+    
+    
+%-------------------
+% Instantiate plugin
+%-------------------
+    
+trackmate = TrackMate(model, settings);
+       
+%--------
+% Process
+%--------
+    
+ok = trackmate.checkInput();
+if ~ok
+    display(trackmate.getErrorMessage())
+end
+ 
+ok = trackmate.process();
+if ~ok
+    display(trackmate.getErrorMessage())
+end
+       
+%----------------
+% Display results
+%----------------
+     
+selectionModel = SelectionModel(model);
+displayer = HyperStackDisplayer(model, selectionModel, imp);
+displayer.render()
+displayer.refresh()
+    
+% Echo results
+display(model.toString())
+</source>
+
+
+
 == Why is this greater than it seems? ==
 
 Because your just ran a MATLAB script that uses and benefits from multithreading without relying on any toolbox! Here is how to tune the number of threads used by TrackMate:
@@ -127,7 +246,7 @@ TODO
 
 
 
-08:40, 25 February 2014 (CST)
+[[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 08:48, 25 February 2014 (CST)
 
 [[Category:Matlab]]
 [[Category:Scripting]]
