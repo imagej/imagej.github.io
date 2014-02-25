@@ -1,53 +1,55 @@
 To begin stitching, you must first create a dataset that contains the correct format that the Fiji Stitching plugin can identify and analyze. Currently, Fiji supports formats from two systems of microscope, which are Wiscan and Prairie. 
  
 == Wiscan Data Acquisition ==
-Make sure the image being used has been set up correctly:
+<ol>
+<li>Make sure the image being used has been set up correctly:
+<ol>
+<li>Ensure the the outer shutter lever is pointing towards image and the inner shutter lever is pointing towards the computer</li>
 
-Ensure the the outer shutter lever is pointing towards image and the inner shutter lever is pointing towards the computer
+<li>Turn on the external xyz manipulator</li>
 
-Turn on the external xyz manipulator
+*NOTE: Do not attempt to adjust the focus of the image with the manual knob. You will wear down the gears. </ol>
 
-NOTE: Do not attempt to adjust the focus of the image with the manual knob. You will wear down the gears.
+<li>Log in to Wiscan</li>
 
-Log in to Wiscan
+<li>Start Scan and ensure your image is in focus on the left side of your screen<\li>
 
-Start Scan and ensure your image is in focus on the left side of your screen
+<li>Use the joystick to choose your initial image frame</li>
 
-Use the joystick to choose your initial image frame
+<li>Adjust the pockle cell dials until you can see an image on the right side of your screen (the blue portion)</li>
 
-Adjust the pockle cell dials until you can see an image on the right side of your screen (the blue portion)
+<li>Turn on the __ . Increase the number until a very small amount of red can be seen in your image</li>
 
-Turn on the __ . Increase the number until a very small amount of red can be seen in your image
+*NOTE: Ensure only a small amount of red can be seen in the frame of your image. If too much of a contrast is present, it will burn out the microscope's laser
 
-NOTE: Ensure only a small amount of red can be seen in the frame of your image. If too much of a contrast is present, it will burn out the microscope's laser
+ <li>Stop scan</li>
 
- Stop scan
+ <li>Define the start position in your metadata by selecting "manual update" then "set 0"</li>
 
- Define the start position in your metadata by selecting "manual update" then "set 0"
+ <li>Generate the specifics of your image acquisition by selecting "generate"</li>
 
- Generate the specifics of your image acquisition by selecting "generate"
+<li>Set the size of each image taken (in microns)</li>
 
-Set the size of each image taken (in microns)
+<li>Set the amount of overlap you wish to have in your image, then press "calculate number of positions"</li>
 
-Set the amount of overlap you wish to have in your image, then press "calculate number of positions"
+*NOTE- You can also set your own step size and overlap amount and calculate the size of each image
 
-NOTE- You can also set your own step size and overlap amount and calculate the size of each image
+<li>Once you have calculated all the necessary positions, you can save this data using the "save positions" button and load them back into Wiscan at a later date</li>
 
-Once you have calculated all the necessary positions, you can save this data using the "save positions" button and load them back into Wiscan at a later date
+<li>Select Z motor</li>
 
-Select Z motor
+<li>under 4d imaging, calculate Z bottom, Z top, and Z step</li>
 
-under 4d imaging, calculate Z bottom, Z top, and Z step
+<li>These numbers should be set as 0 unless you are imaging in more than one plane of your sample</li>
 
- These numbers should be set as 0 unless you are imaging in more than one plane of your sample
+<li>Select "Use XY coordinates" and then start sequence</li>
 
-Select "Use XY coordinates" and then start sequence
+<li>Once Wiscan has run, your output will be a series of images that can be stitched together.</li>
 
-Once Wiscan has run, your output will be a series of images that can be stitched together. 
-
-NOTE- If an noticeable amount of overlay can be seen in your images, there is a pixel to micron error within the microscope's initial setup. To fix this, recalibrate the microscope's objectives. 
+*NOTE- If an noticeable amount of overlay can be seen in your images, there is a pixel to micron error within the microscope's initial setup. To fix this, recalibrate the microscope's objectives. 
 === Safety Precautions ===
 ==== OWS  ====
 ====SLIM ====
+
 == Prairie Data Acquisition ==
 === Safety Precautions ===
