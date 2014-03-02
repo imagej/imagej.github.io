@@ -314,7 +314,7 @@ Each individual cluster finding process is aborted if a local cluster was not fo
 
 Consider that the detector size as well as density settings influence if a cluster is found and finally accepted as a cluster.
 
-[[File:ClusterIndicator.png]]
+[[File:ClusterIndicator.png|750px]]
 
 Method: The cluster finding process is done according to the mean shift method towards the center of mass of clusters. The latter is influenced by particle number, size and neighbor distance.
 
