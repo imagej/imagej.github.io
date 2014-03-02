@@ -304,20 +304,21 @@ Status: maintenance active
 Future: Suggestions are welcome!
 
 ----
-=Cluster Finder=
+=Cluster Indicator=
 
-Purpose: The "Cluster Finder" is thought to detect local particle clusters in a binary image. Different particle sizes are taken into account.
+Purpose: The "Cluster Indicator" is thought to detect local particle clusters in a binary image. Different particle sizes are taken into account.
 
-How To: Choose a cluster detector size in % width of the complete image. As an example, e.g. 10% leads to the creation of 100 equally sized selections in the same aspect ratio as the image which are initially distributed to cover the complete image. The density (as a x-fold value) enables to adjust the sensitivity because found clusters are only accepted as a cluster when their density is at least x-fold of the total image density.
-Each individual cluster finding process is aborted if a local cluster was not found after the specified number of maximal iterations. Those aborted clusters can be shown as blue ROIs in the image if desired.
+How To: Choose a cluster detector size in as a circle radius in pixels. Circle ROIs of the specified size are initially distributed with sufficient overlap to cover the complete image. 
+The density (as a x-fold value) enables to adjust the sensitivity because found clusters are only accepted as a cluster when their density of neighbor distance is at least x-fold of the total neighbor distance in the image. As measure of the particle distances to their neighbors the inverted voronoi is taken. This accounts for both, particle size and distance.
+Each individual cluster finding process is aborted if a local cluster was not found after the specified number of maximal iterations. Those aborted clusters can be shown as blue ROIs in the image if desired (see checkbox).
 
-Consider that the detector size as well as density settings and heterogenious particle sizes influence if a cluster is found and additionally accepted as a cluster.
+Consider that the detector size as well as density settings influence if a cluster is found and finally accepted as a cluster.
 
 [[File:ClusterFinder.png|750px]]
 
-Method: The cluster finding process is done according to the mean shift method towards the center of mass of clusters. The latter is influenced by particle number. For heterogenious particle sizes (if specified) the ultimate eroded point map is taken for the cluster determination by taking into account that bigger particles cannot cluster as compact as smaller ones. Thus, the bigger the pparticles in a specific cluster the lower minimal density limit values are expected which is automatically adjusted.
+Method: The cluster finding process is done according to the mean shift method towards the center of mass of clusters. The latter is influenced by particle number, size and neighbor distance.
 
-Version: first release (0.1)
+Version: v0.2 (development !!!)
 
 Status: maintenance active
 
