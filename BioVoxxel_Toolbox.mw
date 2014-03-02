@@ -304,7 +304,7 @@ Status: maintenance active
 Future: Suggestions are welcome!
 
 ----
-=Cluster Indicator=
+=Cluster Indicator (under development, functionality limited)=
 
 Purpose: The "Cluster Indicator" is thought to detect local particle clusters in a binary image. Different particle sizes are taken into account.
 
