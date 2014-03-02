@@ -304,7 +304,7 @@ Status: maintenance active
 Future: Suggestions are welcome!
 
 ----
-=Cluster Indicator (under development, functionality limited)=
+=Cluster Indicator (under development)=
 
 Purpose: The "Cluster Indicator" is thought to detect local particle clusters in a binary image. Different particle sizes are taken into account.
 
@@ -314,6 +314,7 @@ Each individual cluster finding process is aborted if a local cluster was not fo
 
 Consider that the detector size as well as density settings influence if a cluster is found and finally accepted as a cluster.
 
+[[File:ClusterIndicator.png]]
 
 Method: The cluster finding process is done according to the mean shift method towards the center of mass of clusters. The latter is influenced by particle number, size and neighbor distance.
 
