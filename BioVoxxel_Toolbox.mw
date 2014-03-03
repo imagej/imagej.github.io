@@ -293,7 +293,8 @@ Purpose: This macro statistically determines if particles (according to their ul
 
 How to: Starting with a binary image the setup dialog allows similar as the "Analyze Particles" to exclude particles by size and circularity as well as edge touching particles and include holes. The evaluation can be based on the mean nearest neighbor distance or the median nearest neighbor distance. The latter is suitable to better minimize the influence of outliers. Finally, the confidence interval of the statistical evaluation can be chosen between 95%, 99% and 99.9%.
 
-Method: The UEPs of the particles are generated and the nearest neighbor distance is determined for each particle. According to particle number and analyzed area the theoretical nearest neighbor distance is calculated (according to J. Russ, The Image Processing Handbook, 2010, 6th Edition). It is assumed that in the case of normally distributed particles, the mean equals the median. Thus, the method is implemented for the comparison of both, mean and median, from the assumption with the measured values. The measured (mean or median) nearest neighbour distance is statistically compared to the theoretical one. Therefore, first a suitable test method is determined according to the homogeneity of the variance using an F-Test. This finally decides about the use of either a Student's T-Test or a Welch Test for the final statistical evaluation.
+Method: The UEPs of the particles are generated and the nearest neighbor distance is determined for each particle. According to particle number and analyzed area the theoretical nearest neighbor distance is calculated using the formula: 0.5*sqrt(area/n) (according to J. Russ, The Image Processing Handbook, 2010, 6th Edition). This assumption ignores differences in particle size, so far. 
+It is assumed that in the case of normally distributed particles, the mean equals the median. Thus, the method is implemented for the comparison of both, mean and median, from the assumption with the measured values. The measured (mean or median) nearest neighbour distance is statistically compared to the theoretical one. Therefore, first a suitable test method is determined according to the homogeneity of the variance using an F-Test. This finally decides about the use of either a Student's T-Test or a Welch Test for the final statistical evaluation.
 
 [[File:DistributionAnalysis.png|750px]]
 
@@ -304,6 +305,7 @@ Status: maintenance active
 Future: Suggestions are welcome!
 
 ----
+
 =Cluster Indicator (under development)=
 
 Purpose: The "Cluster Indicator" is thought to detect local particle clusters in a binary image. Different particle sizes are taken into account.
