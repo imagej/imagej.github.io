@@ -160,7 +160,7 @@ Purpose: The "Threshold Check" should simply provide a help in deciding which of
 
 How to: The user needs to first select the image the in which the thresholds should be checked (including all the pre-processing you want/need to apply). Be aware to also specify if you are thresholding bright or dark features in the first checkbox! You can also choose to ignore black or white pixels from the threshold calculations (as in the normal AutoThreshold dialog). Furthermore, you can choose to include also the 9 Auto Local Thresholds with the respective parameters (for further reading check out: Auto Local Thresholds. Finally, you can include a quantification of the results and choose if you want to have an overview montage in addition to the normal stack output. Thresholds are indicated in the upper left corner of the images for better identification.
 
-Publication: a publication regarding the threshold check and its quantification is currectly submitted.
+Publication: a publication regarding the threshold check and its quantification is already accepted and will be mentioned here when online.
 
 Output interpretation: You will get a stack with each thresholding method represented in a single stack slice. The following colors should help in interpreting the thresholding result:
 
