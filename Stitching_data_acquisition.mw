@@ -1,16 +1,24 @@
-To begin stitching, you must first create a dataset that contains the correct format that the Fiji Stitching plugin can identify and analyze. Currently, Fiji supports formats from two systems of microscope, which are Wiscan and Prairie. 
- 
 == Wiscan Data Acquisition ==
 <ol>
 <li>Make sure the image being used has been set up correctly:
 <ol>
-<li>Ensure the the outer shutter lever is pointing towards image and the inner shutter lever is pointing towards the computer</li>
+<li>On the computer, click and hold the shutter button until it turns yellow. The shutter is now activated</li>
+<li>Ensure the the outer shutter lever is pointing towards "Lamp" and the inner shutter lever is pointing to the right</li>
 
-<li>Turn on the external xyz manipulator</li>
+<li>Turn on the xyz controller</li>
 
-*NOTE: Do not attempt to adjust the focus of the image with the manual knob. You will wear down the gears. </ol>
+*NOTE: Do not attempt to adjust the focus of the image with the manual knob while the controller is engaged. You will wear down the gears. </ol>
+
+<li>Move the outer shutter lever toward "Image" and the inner shutter lever toward</li>
+
+<li> Turn on the Pockel Power Cell </li>
+
+<li> Turn on the Ti Sapph Shutter Controller</li>
 
 <li>Log in to Wiscan</li>
+
+<li>Turn on the detector</li>
+*Note: DO NOT turn on the detector till the main lights are off. You WILL damage the detector.
 
 <li>Start Scan and ensure your image is in focus on the left side of your screen<\li>
 
@@ -18,9 +26,8 @@ To begin stitching, you must first create a dataset that contains the correct fo
 
 <li>Adjust the pockle cell dials until you can see an image on the right side of your screen (the blue portion)</li>
 
-<li>Turn on the __ . Increase the number until a very small amount of red can be seen in your image</li>
-
-*NOTE: Ensure only a small amount of red can be seen in the frame of your image. If too much of a contrast is present, it will burn out the microscope's laser
+<li>Adjust the detector so that only a small amount of red can be seen in the frame of your image. If too much of a contrast is present, it will burn out the microscope's laser </li>
+*Note: The normal range for the detector is 300-500. You should not go above 620.
 
  <li>Stop scan</li>
 
@@ -50,6 +57,3 @@ To begin stitching, you must first create a dataset that contains the correct fo
 === Safety Precautions ===
 ==== OWS  ====
 ====SLIM ====
-
-== Prairie Data Acquisition ==
-=== Safety Precautions ===
