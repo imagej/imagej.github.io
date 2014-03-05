@@ -257,7 +257,9 @@ Version: v0.1 (first release, 05-03-2014)
 
 Status: maintenance active!
 
-Future: will be implemented for 32-bit images as well. suggestions welcome!
+Future: will be implemented for 32-bit images as well. 
+        upper intensity limit will be made individually adjustable.
+        suggestions welcome!
 
 ----
 
