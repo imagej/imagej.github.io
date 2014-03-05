@@ -89,22 +89,19 @@ ImagePlus[] imps = BF.openImagePlus(options);
 
 == Daily builds ==
 
-Fiji ships '''4.4.x''' release versions of Bio-Formats. However, given the long time frame between releases, you can update to the latest code by toggling one of two update sites:
+Fiji ships '''5.0.x''' release versions of Bio-Formats. However, given the long time frame between releases, you can update to the latest code by toggling the '''Bio-Formats''' update site, which includes the latest bug-fixes.
 
-* '''Bio-Formats 4''' is the latest stable build of version 4.4.x. It has bugfixes but no new features.
-* '''Bio-Formats 5''' is the latest unstable build of version 5.x. It has both bugfixes and new features.
-
-If unsure which to choose, we recommend '''Bio-Formats 5''' because it contains the very latest bugfixes—and when reporting a bug, the developers may ask you to test against '''Bio-Formats 5''' anyway.
+When reporting a bug, the developers may ask you to test with the '''Bio-Formats''' update site enabled.
 
 To enable the Bio-Formats update site:
 
 # Launch the updater: '''Update Fiji''' from the '''Help''' menu.
 # Click the '''Manage update sites''' button.
-# Tick the '''Bio-Formats 5''' box: [[File:Bf-manage-update-sites.png|700px|center]]
-# Click the '''Close''' button. The updater should want to update several files now: [[File:Bf-jars-to-update.png|700px|center]]
+# Tick the '''Bio-Formats''' box: [[File:Bf-manage-update-sites.png|700px|center]]
+# Click the '''Close''' button. The updater should want to update some files now: [[File:Bf-jars-to-update.png|700px|center]]
 # Click the '''Apply changes''' button.
 # Restart Fiji when prompted.
-# To verify the upgrade, choose '''LOCI plugins...''' from '''About Plugins''' beneath the '''Help''' menu: [[File:Bf-about-loci-plugins.png|700px|center]]
+# To verify the upgrade, choose '''Bio-Formats Plugins...''' from '''About Plugins''' beneath the '''Help''' menu: [[File:Bf-about-loci-plugins.png|700px|center]]
 
 == Source code ==
 
