@@ -160,8 +160,6 @@ Purpose: The "Threshold Check" should simply provide a help in deciding which of
 
 How to: The user needs to first select the image the in which the thresholds should be checked (including all the pre-processing you want/need to apply). Be aware to also specify if you are thresholding bright or dark features in the first checkbox! You can also choose to ignore black or white pixels from the threshold calculations (as in the normal AutoThreshold dialog). Furthermore, you can choose to include also the 9 Auto Local Thresholds with the respective parameters (for further reading check out: Auto Local Thresholds. Finally, you can include a quantification of the results and choose if you want to have an overview montage in addition to the normal stack output. Thresholds are indicated in the upper left corner of the images for better identification.
 
-Publication: a publication regarding the threshold check and its quantification is already accepted and will be mentioned here when online.
-
 Output interpretation: You will get a stack with each thresholding method represented in a single stack slice. The following colors should help in interpreting the thresholding result:
 
 [[File:ThresholdCheck.png|770px]]
@@ -176,7 +174,7 @@ Output interpretation: You will get a stack with each thresholding method repres
 
 Caution: Interpretation should be done with care and in context to the original image and imaging settings. This macro is thought to assist in the decision for choosing a good thresholding method. It is no absolute measure for thresholding quality!
 
-Quantification: The Quantification is shown in a results window in %Area. The threshold names are followed by either _under, _positive or _over. This referres to the following:
+Quantification: The Quantification is shown in a results window in %Area. The threshold names are followed by either (under), (positive) or (over). This referres to the following:
 
 '''- under:''' the percentage of pixels in comparison to the complete image which seem to be under-thresholded (displayed in cyan)
 
@@ -184,11 +182,13 @@ Quantification: The Quantification is shown in a results window in %Area. The th
 
 '''- over:''' the percentage (100-positive) of pixels inside the thresholded region which seem to be over-thresholded (displayed in red)
 
-The macro finally suggests thresholds which perform best in respect to the reference point selection. This suggestion always needs to be compared to the color-coded visual output and to the necessities for the following analysis.
+The macro finally suggests thresholds which perform best in respect to the reference point selection. This suggestion depends on the reference point selection and always needs to be compared to the color-coded visual output as well as to the necessities for the following analysis.
 
-Potential issues: If it is not correctly defined if the user is looking for bright or dark objects the output will be incorrectly determined.
+Potential issues: If the user does not correctly define if he/she is looking for bright or dark objects the output will be incorrectly determined.
 
-Status: v2.1 (rewritten), maintenance active
+'''Publication:''' a publication regarding the threshold check and its quantification is accepted and will be mentioned here when online.
+
+Status: v2.2 (performance improved), maintenance active
 
 Future: Suggestions are welcome!
 
