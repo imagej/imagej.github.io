@@ -320,6 +320,8 @@ Two possible methods can be chosen:
 
 Each individual cluster finding process is aborted if a local cluster was not found after the specified number of maximal iterations. Those aborted clusters can be shown as blue ROIs in the image if desired (see checkbox).
 
+Clusters overlapping more than 40% (minimal center-ROI overlap) can also be fused to one cluster if specified so.
+
 Consider that the detector size as well as density settings influence if a cluster is found and finally accepted as a cluster. This on the one hand leads to a certain bias but should enable the user to search for clusters of different sizes and densities.
 
 [[File:ClusterIndicator.png|750px]]
