@@ -22,7 +22,7 @@
 
 <li>Start Scan and ensure your image is in focus on the left side of your screen<\li>
 
-<li>Use the joystick to choose your initial image frame</li>
+<li>Use the computer xyz controller to choose your initial image frame</li>
 
 <li>Adjust the pockle cell dials until you can see an image on the right side of your screen (the blue portion)</li>
 
@@ -54,6 +54,16 @@
 <li>Once Wiscan has run, your output will be a series of images that can be stitched together.</li>
 
 *NOTE- If an noticeable amount of overlay can be seen in your images, there is a pixel to micron error within the microscope's initial setup. To fix this, recalibrate the microscope's objectives. 
+
+<gallery mode ="packed-hover" heights=" 180 ">
+File:Frame mover.jpg | (xyz computer controller)
+File:Lever 1.jpg| (Internal microscope lever)
+File:OWS 1.jpg | (Microscope setup)
+File:X y z.jpg| (XYZ controller)
+File:Pockel cell.jpg| (Pockel Cell machine)
+File:Ti saph.jpg | (Ti Sapph Shutter control)
+File:Photosensor.jpg | Detector
+</gallery>
 === Safety Precautions ===
 ==== OWS  ====
 ====SLIM ====
