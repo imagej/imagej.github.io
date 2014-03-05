@@ -105,10 +105,6 @@ To enable the Bio-Formats update site:
 
 == Source code ==
 
-The official Bio-Formats 4 source code is at:
+The Bio-Formats source code is at:
 
-    https://github.com/openmicroscopy/bioformats/tree/dev_4_4
-
-The official Bio-Formats 5 source code is at:
-
-    https://github.com/openmicroscopy/bioformats/tree/develop
+    https://github.com/openmicroscopy/bioformats/tree/dev_5_0
