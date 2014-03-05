@@ -101,7 +101,7 @@ To enable the Bio-Formats update site:
 # Click the '''Close''' button. The updater should want to update some files now: [[File:Bf-jars-to-update.png|700px|center]]
 # Click the '''Apply changes''' button.
 # Restart Fiji when prompted.
-# To verify the upgrade, choose '''Bio-Formats Plugins...''' from '''About Plugins''' beneath the '''Help''' menu: [[File:Bf-about-loci-plugins.png|700px|center]]
+# To verify the upgrade, choose '''Bio-Formats Plugins...''' from '''About Plugins''' beneath the '''Help''' menu: [[File:Bf-about-plugins.png|700px|center]]
 
 == Source code ==
 
