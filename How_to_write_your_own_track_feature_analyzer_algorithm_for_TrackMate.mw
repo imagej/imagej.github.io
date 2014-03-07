@@ -1,0 +1,211 @@
+== Introduction == 
+
+This article is the second in the series dedicated to extending TrackMate with your own modules. Here we focus on creating '''feature analyzers''': small algorithms that calculate one or several numerical values for the TrackMate results. The [[How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate|previous article]] forcused on writing edge analyzers: algorithms that allocate a numericla value to the link between two spots.
+
+In this article, we will create a '''feature analyzer for tracks''' that calculate numerical values for whole tracks. To make it simple, and also to answer the request of a colleague, we will make an analyzer that reports the location of the starting and ending points of a track. 
+
+Actually, we will not learn much beyond what we saw previously. We will use the SciJava discovery mechanism without subtleties, as before. The only little change os that our analyzer will generate 6 numerical values instead of 1. 
+
+
+== Track analyzers ==
+
+All the track feature analyzers must implement [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackAnalyzer.java TrackAnalyzer interface]. Like for the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java EdgeAnalyzer] interface, it extends both
+* [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/FeatureAnalyzer.java FeatureAnalyzer] that helps you declaring what you compute, 
+* and [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/TrackMateModule.java TrackMateModule], that is in charge of the integration in TrackMate.
+
+The only changes for us are two methods specific to tracks:
+
+<source lang="java">public void process( final Collection< Integer > trackIDs, final Model model );</source>
+the does the actual feature calculation for the specified tracks, and
+
+<source lang="java">public boolean isLocal();</source> 
+that specified whether the calculation of the features for one track affects only this track or all the tracks. For the discussion on local ''vs'' non-local feature analyzers, I report you to the [[How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate#isLocal.28.29|previous article item]].
+
+
+== Track feature analyzer header ==
+
+Like all TrackMate modules, you need to annotate your class to make it discoverable by TrackMate. It takes the following shape:
+
+<source lang="java">
+@Plugin( type = TrackAnalyzer.class )
+public class TrackStartSpotAnalyzer implements TrackAnalyzer
+{
+        // etc...
+</source>
+and that's good enough.
+
+
+
+
+== Declaring features ==
+
+Declaring the features your provide is done as before. This time, a single analyzer returns 6 values, so you need to declare them. Here is the related code:
+
+<source lang="java">
+@Plugin( type = TrackAnalyzer.class )
+public class TrackStartSpotAnalyzer implements TrackAnalyzer
+{
+
+	private static final String KEY = "TRACK_START_SPOT_ANALYZER";
+
+	public static final String TRACK_START_X = "TRACK_START_X";
+
+	public static final String TRACK_START_Y = "TRACK_START_Y";
+
+	public static final String TRACK_START_Z = "TRACK_START_Z";
+
+	public static final String TRACK_STOP_X = "TRACK_STOP_X";
+
+	public static final String TRACK_STOP_Y = "TRACK_STOP_Y";
+
+	public static final String TRACK_STOP_Z = "TRACK_STOP_Z";
+
+	private static final List< String > FEATURES = new ArrayList< String >( 6 );
+
+	private static final Map< String, String > FEATURE_SHORT_NAMES = new HashMap< String, String >( 6 );
+
+	private static final Map< String, String > FEATURE_NAMES = new HashMap< String, String >( 6 );
+
+	private static final Map< String, Dimension > FEATURE_DIMENSIONS = new HashMap< String, Dimension >( 6 );
+
+	static
+	{
+		FEATURES.add( TRACK_START_X );
+		FEATURES.add( TRACK_START_Y );
+		FEATURES.add( TRACK_START_Z );
+		FEATURES.add( TRACK_STOP_X );
+		FEATURES.add( TRACK_STOP_Y );
+		FEATURES.add( TRACK_STOP_Z );
+
+		FEATURE_NAMES.put( TRACK_START_X, "Track start X" );
+		FEATURE_NAMES.put( TRACK_START_Y, "Track start Y" );
+		FEATURE_NAMES.put( TRACK_START_Z, "Track start Z" );
+		FEATURE_NAMES.put( TRACK_STOP_X, "Track stop X" );
+		FEATURE_NAMES.put( TRACK_STOP_Y, "Track stop Y" );
+		FEATURE_NAMES.put( TRACK_STOP_Z, "Track stop Z" );
+
+		FEATURE_SHORT_NAMES.put( TRACK_START_X, "X start" );
+		FEATURE_SHORT_NAMES.put( TRACK_START_Y, "Y start" );
+		FEATURE_SHORT_NAMES.put( TRACK_START_Z, "Z start" );
+		FEATURE_SHORT_NAMES.put( TRACK_STOP_X, "X stop" );
+		FEATURE_SHORT_NAMES.put( TRACK_STOP_Y, "Y stop" );
+		FEATURE_SHORT_NAMES.put( TRACK_STOP_Z, "Z stop" );
+
+		FEATURE_DIMENSIONS.put( TRACK_START_X, Dimension.POSITION );
+		FEATURE_DIMENSIONS.put( TRACK_START_Y, Dimension.POSITION );
+		FEATURE_DIMENSIONS.put( TRACK_START_Z, Dimension.POSITION );
+		FEATURE_DIMENSIONS.put( TRACK_STOP_X, Dimension.POSITION );
+		FEATURE_DIMENSIONS.put( TRACK_STOP_Y, Dimension.POSITION );
+		FEATURE_DIMENSIONS.put( TRACK_STOP_Z, Dimension.POSITION );
+	}
+        
+	/*
+	 * FEATUREANALYZER METHODS
+	 */
+
+	@Override
+	public List< String > getFeatures()
+	{
+		return FEATURES;
+	}
+
+	@Override
+	public Map< String, String > getFeatureShortNames()
+	{
+		return FEATURE_SHORT_NAMES;
+	}
+
+	@Override
+	public Map< String, String > getFeatureNames()
+	{
+		return FEATURE_NAMES;
+	}
+
+	@Override
+	public Map< String, Dimension > getFeatureDimensions()
+	{
+		return FEATURE_DIMENSIONS;
+	}
+</source>
+
+Let's compute them now.
+
+
+
+
+== Accessing tracks in TrackMate == 
+
+In the previous article, we went maybe a bit quickly on how to access data in TrackMate. This is not the goal of this series, but here is a quick recap:
+
+All the track structure is stored in a sub-component of the model called the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/TrackModel.java TrackModel]. It stores the collection of links between two spots that builds a graph, and has some rather complex logic to maintain a list of connected components: the tracks. 
+
+The tracks themselves are indexed by their ID, stored as an <code>int</code>, that has no particular meaning. Once you have the ID of track, you can get the spots it contains with
+
+<source lang="java">trackModel.trackSpots( trackID )</source>
+
+and its links (or edges) with 
+
+<source lang="java">trackModel.trackEdges( trackID )</source>
+
+Let's exploit this.
+
+
+
+== Calculating the position of start and end points ==
+
+Well, it is just about retrieving a track and identifying its starting and end points. Here is the whole code for the processing method:
+
+<source lang="java">
+
+	@Override
+	public void process( final Collection< Integer > trackIDs, final Model model )
+	{
+		// The feature model where we store the feature values:
+		final FeatureModel fm = model.getFeatureModel();
+
+		// Loop over all the tracks we have to process.
+		for ( final Integer trackID : trackIDs )
+		{
+			// The tracks are indexed by their ID. Here is how to get their
+			// content:
+			final Set< Spot > spots = model.getTrackModel().trackSpots( trackID );
+			// Or .trackEdges( trackID ) if you want the edges.
+
+			// This set is NOT ordered. If we want the first one and last one we
+			// have to sort them:
+			final Comparator< Spot > comparator = Spot.frameComparator;
+			final List< Spot > sorted = new ArrayList< Spot >( spots );
+			Collections.sort( sorted, comparator );
+
+			// Extract and store feature values.
+			final Spot first = sorted.get( 0 );
+			fm.putTrackFeature( trackID, TRACK_START_X, Double.valueOf( first.getDoublePosition( 0 ) ) );
+			fm.putTrackFeature( trackID, TRACK_START_Y, Double.valueOf( first.getDoublePosition( 1 ) ) );
+			fm.putTrackFeature( trackID, TRACK_START_Z, Double.valueOf( first.getDoublePosition( 2 ) ) );
+
+			final Spot last = sorted.get( sorted.size() - 1 );
+			fm.putTrackFeature( trackID, TRACK_STOP_X, Double.valueOf( last.getDoublePosition( 0 ) ) );
+			fm.putTrackFeature( trackID, TRACK_STOP_Y, Double.valueOf( last.getDoublePosition( 1 ) ) );
+			fm.putTrackFeature( trackID, TRACK_STOP_Z, Double.valueOf( last.getDoublePosition( 2 ) ) );
+
+			// Et voilà!
+		}
+	}
+</source>
+
+The whole code for the analyzer can be found [https://github.com/fiji/TrackMate-examples/blob/master/src/main/java/plugin/trackmate/examples/trackanalyzer/TrackStartSpotAnalyzer.java here].
+
+
+
+== Wrapping up ==
+
+Et ca marche !
+
+[[File:TrackMate TrackAnalyzerExample.png|600px]]
+
+In the next article we will build a spot analyzer and complicate things a bit, by introducing the notion of ''priority''. See you there.
+
+
+[[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 16:02, 7 March 2014 (CST)
+
+[[Category:Tutorials]]
