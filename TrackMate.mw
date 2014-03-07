@@ -132,10 +132,9 @@ The subject of extending TrackMate is not completely trivial. However, recent ad
 The following tutorials show how to integrate a module of each kind in TrackMate. They are listed by increasing complexity, and it is a good idea to practice them in this order. 
 
 * [[How to write your own edge feature analyzer algorithm for TrackMate]]
+* [[How to write your own track feature analyzer algorithm for TrackMate]]
 * [[How to write your own detection algorithm for TrackMate]]
 * [[How to write your own particle-linking algorithm for TrackMate]]
-
-
 
 == Who uses TrackMate ==
 
