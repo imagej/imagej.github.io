@@ -1,6 +1,6 @@
 == Introduction == 
 
-This article is the second in the series dedicated to extending TrackMate with your own modules. Here we focus on creating '''feature analyzers''': small algorithms that calculate one or several numerical values for the TrackMate results. The [[How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate|previous article]] forcused on writing edge analyzers: algorithms that allocate a numericla value to the link between two spots.
+This article is the second in the series dedicated to extending TrackMate with your own modules. Here we focus on creating '''feature analyzers''': small algorithms that calculate one or several numerical values for the TrackMate results. The [[How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate|previous article]] focused on writing edge analyzers: algorithms that allocate a numerical value to the link between two spots.
 
 In this article, we will create a '''feature analyzer for tracks''' that calculate numerical values for whole tracks. To make it simple, and also to answer the request of a colleague, we will make an analyzer that reports the location of the starting and ending points of a track. 
 
