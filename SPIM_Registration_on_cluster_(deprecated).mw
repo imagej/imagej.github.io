@@ -2745,9 +2745,136 @@ done
 
 === Split channels ===
 
+<source lang="bash">
+#!/bin/bash
+
+source /projects/tomancak_lightsheet/Christopher/pipeline/master
+
+target_split=${dir}${target_split}
+
+mkdir -p ${jobs_split}
+mkdir -p ${target_split}
+
+for i in $timepoint
+#for i in 1
+
+do
+
+for a in $angles_split
+
+do
+          	job="$jobs_split/split-$i-$a.job"
+                echo $job
+                echo "#!/bin/bash" > "$job"
+                echo "$XVFB_RUN -a $Fiji -Ddir=$dir -Dtimepoint=$i -Dangle=$a \
+		-Dpad=$pad_resave -Dtarget_split=$target_split -- --no-splash $split" >> "$job"
+                chmod a+x "$job"
+        done
+done
+</source>
+
+<source lang="java">
+import ij.IJ;
+import ij.ImagePlus;
+import ij.ImageStack;
+import java.lang.Runtime;
+import java.io.File;
+import java.io.FilenameFilter;
+
+
+runtime = Runtime.getRuntime();
+
+dir = System.getProperty( "dir" ); 
+int timepoint = Integer.parseInt( System.getProperty( "timepoint" ) );
+angle = System.getProperty( "angle" );
+target_split = System.getProperty( "target_split" );
+int pad = Integer.parseInt( System.getProperty( "pad" ) );
+
+System.out.println( "timpoint=" + timepoint );
+System.out.println( "angles=" + angles );
+System.out.println( "target_split=" + target_split );
+System.out.println( "pad=" + pad );
+
+//open image
+
+System.out.println( dir );
+imp = new ImagePlus( dir + "spim_TL" + IJ.pad( timepoint , pad ) + "_Angle" + angle + ".tif" );
+System.out.println( imp.getTitle() );
+
+/* split channels */
+stack = imp.getStack();
+for ( c = 0; c < imp.getNChannels(); ++c )
+{
+	channelStack = new ImageStack( imp.getWidth(), imp.getHeight() );
+	for ( z = 0; z < imp.getNSlices(); ++z )
+		channelStack.addSlice(
+			"",
+			stack.getProcessor(
+				imp.getStackIndex( c + 1, z + 1, 1 ) ) );
+	impc = new ImagePlus( imp.getTitle() + " #" + ( c + 1 ), channelStack );
+	IJ.save( impc, target_split + imp.getTitle().replaceFirst( ".tif$", "_Channel" + ( c ) + ".tif" ) );
+}
+
+/* shutdown */
+runtime.exit(0);
+
+
+</source>
+
+<source lang="bash">
+#!/bin/bash
+
+for file in `ls ${1} | grep ".job$"`
+do
+	bsub -q short -n 1  -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+done
+</source>
+
+
 === Multi-view registration ===
 
 === Timelapse registration ===
+
+=== Dublicate registration files ===
+
+<source lang="bash">
+
+#!/bin/bash
+source /projects/tomancak_lightsheet/Christopher/pipeline/master
+
+reftp=${referencetp}
+ref=registration.to_"${reftp}"
+#echo "${ref}"
+
+channel_source=${channel_source}
+channel_target=${channel_target}
+
+
+
+for i in $timepoint
+do 
+	i=`printf "%0${pad_resave}d" "$i"`	
+	
+	for a in $angles_split
+  		do
+   
+			for end in "beads.txt" "dim" "registration" "$ref" 
+   				do
+
+		#echo $dir/registration/spim_TL"$i"_Angle"$a"_Channel"${channel_source}".tif."$end" $dir/registration/spim_TL"$i"_Angle"$a"_Channel"${channel_target}".tif."$end"
+		cp $dir/registration/spim_TL"$i"_Angle"$a"_Channel1.tif."$end" $dir/registration/spim_TL"$i"_Angle"$a"_Channel0.tif."$end"
+   
+	done
+
+  done
+
+done
+
+echo Dublication complete! Have a nice day!
+exit 0
+
+</source >
+
 
 === Content based multi-view fusion ===
 
