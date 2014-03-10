@@ -1590,20 +1590,20 @@ Currently the master file is useable for the following steps
 * Resave .czi files
 * Resave .ome.tiff files
 * Registration
-• Timelapse registration
-• Content based fusion
-• External transformation
-• Deconvolution
-• 3D-rendering
+* Timelapse registration
+* Content based fusion
+* External transformation
+* Deconvolution
+* 3D-rendering
 
 Multi-channel processing:
-• Rename .czi files
-• Resave .czi files
-• Registration
-• Timelapse registration
-• Content based fusion
-• External transformation
-• Deconvolution
+* Rename .czi files
+* Resave .czi files
+* Registration
+* Timelapse registration
+* Content based fusion
+* External transformation
+* Deconvolution
 
 The scripts now work with padded zeros. 
 
