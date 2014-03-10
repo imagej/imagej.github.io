@@ -2145,82 +2145,596 @@ done
 
 
 <source lang="bash">
+#!/bin/bash
+source /projects/tomancak_lightsheet/Christopher/pipeline/master
+
+mkdir -p $jobs_timelapse
+
+  	job="$jobs_timelapse/register-timelapse.job"
+        echo $job
+        echo "#!/bin/bash" > "$job"
+	echo "$XVFB_RUN -a $Fiji -Dtype_of_registration=$type_of_registration \
+		-Dtype_of_detection=$type_of_detection -Ddir=$dir -Dpattern=$channel_pattern_beads \
+		-Dtimepoint=$timelapse_timepoint -Dangles=$angles \
+		-Dsubpixel_localization=$subpixel_localization -Dxy_resolution=$xy_resolution \
+		-Dz_scaling=$z_scaling -Dtransformation_model=$transformation_model -Dimglib_container=$imglib_container \
+		-Dradius1=$radius1 -Dradius2=$radius2 -Dthreshold=$threshold \
+        	-Dinitial_sigma=$initial_sigma -Dthreshold_gaussian=$threshold_gaussian \
+        	-Dreferencetp=$referencetp -- --no-splash $timelapse_registration" >> "$job"   
+	chmod a+x "$job"
+</source>
+
+
+<source lang="java">
+import ij.IJ;
+import java.lang.Runtime;
+
+runtime = Runtime.getRuntime();
+System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
+
+type_of_registration = System.getProperty( "type_of_registration" );
+type_of_detection = System.getProperty( "type_of_detection" );
+
+dir = System.getProperty( "dir" );
+pattern = System.getProperty( "pattern" );
+timepoint = System.getProperty( "timepoint" );
+angles = System.getProperty( "angles" );
+
+subpixel_localization = System.getProperty( "subpixel_localization" );
+int xy_resolution = Integer.parseInt( System.getProperty( "xy_resolution" ) );
+float z_scaling =Float.parseFloat( System.getProperty( "z_scaling" ) );
+transformation_model = System.getProperty( "transformation_model" );
+imglib_container = System.getProperty( "imglib_container" );
+
+//Parameters for difference of mean
+int radius1 = Integer.parseInt( System.getProperty( "radius1" ) );
+int radius2 = Integer.parseInt( System.getProperty( "radius2" ) );
+float threshold = Float.parseFloat( System.getProperty( "threshold" ) );
+
+//Parameters for difference of gaussian
+//float initial_sigma = Float.parseFloat( System.getProperty( "initial_sigma" ) );
+//float threshold_gaussian = Float.parseFloat( System.getProperty( "threshold_gaussian" ) );
+
+referencetp = Integer.parseInt( System.getProperty( "referencetp" ) );
+
+System.out.println( "type_of_registration=" + type_of_registration );
+System.out.println( "type_of_detection=" + type_of_detection );
+System.out.println( "dir=" + dir );
+System.out.println( "pattern_of_spim=" + pattern );
+System.out.println( "timepoint=" + timepoint );
+System.out.println( "angles=" + angles );
+System.out.println( "xy_resolution=" + xy_resolution );
+System.out.println( "z_resolution=" + z_scaling );
+System.out.println( "transformation_model=" + transformation_model );
+System.out.println( "imglib_container=" + imglib_container );
+System.out.println( "radius1=" + radius1 );
+System.out.println( "radius2=" + radius2 );
+System.out.println( "threshold=" + threshold );
+System.out.println( "initial_sigma=" + initial_sigma );
+System.out.println( "threshold_gaussian=" + threshold_gaussian );
+System.out.println( "referencetp=" + referencetp );
+
+
+
+IJ.run("Bead-based registration", "select_type_of_registration=" + type_of_registration + " " +
+	"select_type_of_detection=[" + type_of_detection + "]" + " " +
+	"spim_data_directory=" + dir + " " +
+        "pattern_of_spim=" + pattern  + " " +
+        "timepoints_to_process=" + timepoint + " " +
+        "angles_to_process=" + angles + " " +
+        "load_segmented_beads" + " " +
+	"subpixel_localization=[" + subpixel_localization + "]" + " " +
+	"specify_calibration_manually xy_resolution=" + xy_resolution + " z_resolution=" + z_scaling + " " +
+	"transformation_model=" + transformation_model  + " " + 
+//	"imglib_container=[" + imglib_container + "] + " " +
+	"channel_0_radius_1=" + radius1 + " " +
+	"channel_0_radius_2=" + radius2 + " " +
+	"channel_0_threshold=" + threshold + " " +
+//	"channel_0_initial_sigma=" + initial_sigma + " " +
+//	"channel_0_threshold=" + threshold_gaussian + " " +
+	"re-use_per_timepoint_registration" + " " +
+	"timelapse_registration" + " " +
+	"select_reference=[Manually (specify)]" + " " +
+	"reference_timepoint=" + referencetp + " "
+	);
+
+/* shutdown */
+runtime.exit(0);
+
+
 </source>
 
 
 <source lang="bash">
-</source>
+#!/bin/bash
 
-
-<source lang="bash">
+bsub -q short -n 12 -W 00:10 -R rusage[mem=10000] -R span[hosts=1] -o "out.%J" -e "err.%J" ./register-timelapse.job
 </source>
 
 === Content based multi-view fusion ===
 
 
 <source lang="bash">
+#!/bin/bash
+source /projects/tomancak_lightsheet/Christopher/pipeline/master
+
+mkdir -p $jobs_fusion
+
+for i in $timepoint
+
+do
+	job="$jobs_fusion/fusion-$i.job"
+	echo $job
+	echo "#!/bin/bash" > "$job"
+	echo "$XVFB_RUN -a $Fiji -Xms100g -Xmx100g -Dselect_channel=$select_channel \
+		-Dregistration_fusion=$registration_fusion -Ddir=$dir \
+		-Dpattern_of_spim=$pattern_of_spim -Dtimepoint=$i -Dangles=$angles \
+		-Dfusion_method=$fusion_method -Dprocess_views_in_paralell=$process_views_in_paralell \
+		-Dblending=$blending -Dweights=$weights -Ddownsample_output=$downsample_output \
+		-Dx=$x -Dy=$y -Dz=$z -Dw=$w -Dh=$h -Dd=$d -Dfused_image_output=$fused_image_output\
+		-- --no-splash $fusion" >> "$job"
+	chmod a+x "$job"
+done
+
+</source>
+
+
+<source lang="java">
+import ij.IJ;
+import java.lang.Runtime;
+
+runtime = Runtime.getRuntime();
+System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
+
+select_channel = System.getProperty( "select_channel" );
+dir = System.getProperty( "dir" );
+pattern_of_spim = System.getProperty( "pattern_of_spim" );
+timepoint = System.getProperty( "timepoint" );
+angles = System.getProperty( "angles" );
+
+fusion_method = System.getProperty( "fusion_method" );
+process_views_in_paralell = System.getProperty( "process_views_in_paralell" );
+blending = System.getProperty( "blending" );
+weights = System.getProperty( "weights" );
+downsample_output = Integer.parseInt( System.getProperty( "downsample_output" ) );
+registration_fusion = System.getProperty( "registration_fusion" );
+
+x = System.getProperty( "x" );
+y = System.getProperty( "y" );
+z = System.getProperty( "z" );
+w = System.getProperty( "w" );
+h = System.getProperty( "h" );
+d = System.getProperty( "d" );
+
+fused_image_output = System.getProperty( "fused_image_output" );
+
+System.out.println( "Channel=" + select_channel );
+System.out.println( "Registration=" + registration_fusion );
+System.out.println( "dir=" + dir );
+System.out.println( "Pattern=" + pattern_of_spim );
+System.out.println( "timepoint=" + timepoint );
+System.out.println( "angles=" + angles );
+
+System.out.println( "fusion_method=" + fusion_method );
+System.out.println( "process_views_in_paralell=" + process_views_in_paralell ); 
+System.out.println( blending );
+System.out.println( weights );
+System.out.println( "Downsample=" + downsample_output );
+System.out.println( "cropping=" + x + " " + y + " " + z + " " + w + " " + h + " " + d );
+System.out.println( "fused_image_output=" + fused_image_output );
+
+IJ.run("Multi-view fusion", "select_channel=" + select_channel + " " + 
+	"registration=[" + registration_fusion + "]" + " " +
+	"registration=[" + registration_fusion + "]" + " " +		//Comment out for Single-Channel fusion
+	"spim_data_directory=" + dir + " " +
+	"pattern_of_spim=" + pattern_of_spim + " " +
+	"timepoints_to_process=" + timepoint + " " +
+	"angles=" + angles + " " +
+	"fusion_method=[" + fusion_method + "]" + " " +
+	"process_views_in_paralell=" + process_views_in_paralell + " " + 
+	" + blending + " + " " +
+	" + weights + " + " " +
+	"downsample_output=" + downsample_output + " " + 
+	"crop_output_image_offset_x=" + x + " " +
+	"crop_output_image_offset_y=" + y + " " +
+	"crop_output_image_offset_z=" + z + " " +
+	"crop_output_image_size_x=" + w + " " +
+	"crop_output_image_size_y=" + h + " " +
+	"crop_output_image_size_z=" + d + " " +
+	"fused_image_output=[" + fused_image_output + "]");
+
+/* shutdown */
+runtime.exit(0);
+
 </source>
 
 
 <source lang="bash">
-</source>
+#!/bin/bash
 
+for file in `ls ${1} | grep ".job$"`
+do
+	bsub -q short -n 12 -W 00:20 -R rusage[mem=30000] -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+done
 
-<source lang="bash">
 </source>
 
 === Multi-view deconvolution ===
 
 
-<source lang="bash">
-</source>
-
-
-<source lang="bash">
-</source>
-
-
-<source lang="bash">
-</source>
-
 ==== External transformation ====
 
 
 <source lang="bash">
+#!/bin/bash
+source /projects/tomancak_lightsheet/Christopher/pipeline/master
+
+mkdir -p $jobs_external_transformation	
+	
+	job="$jobs_external_transformation/external_transformation.job"
+	echo $job
+	echo "#!/bin/bash" > "$job"
+	echo "$XVFB_RUN -a $Fiji -Xms40g -Xmx40g -Ddir=$dir -Dpattern_of_spim=$pattern_extrans \
+		-Dtimepoint=$external_transformation_timepoint -Dangles=$angles -Dreferencetp=$referencetp \
+		-Dm00=$m00 -Dm11=$m11 -Dm22=$m22 -- --no-splash $external_transformation" >> "$job"
+	chmod a+x "$job"
+</source>
+
+
+<source lang="java">
+import ij.IJ;
+import java.lang.Runtime;
+
+runtime = Runtime.getRuntime();
+System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
+
+dir = System.getProperty( "dir" );
+pattern_of_spim = System.getProperty( "pattern_of_spim" );
+timepoint = System.getProperty( "timepoint" );
+angles = System.getProperty( "angles" );
+referencetp = System.getProperty( "referencetp" );
+how_to_provide_affine_matrix = System.getProperty( "how_to_provide_affine_matrix" );
+float m00 = Float.parseFloat( System.getProperty( "m00" ) );
+float m11 = Float.parseFloat( System.getProperty( "m11" ) );
+float m22 = Float.parseFloat( System.getProperty( "m22" ) );
+
+System.out.println( "dir=" + dir );
+System.out.println( "pattern_of_spim=" + pattern_of_spim );
+System.out.println( "timepoint=" + timepoint );
+System.out.println( "angles=" + angles );
+System.out.println( "reference timepoint=" +referencetp );
+System.out.println( "transformation m00=" + m00 + " " + "m11=" + m11 + " " + "m22=" + m22 );
+
+
+IJ.run("Apply external transformation",
+        "spim_data_directory=" + dir + " " +
+        "pattern_of_spim=" + pattern_of_spim + " " +
+        "timepoints_to_process=" + timepoint + " " +
+        "angles=" + angles + " " +
+        "how_to_provide_affine_matrix=[As individual entries]" +  " " +
+// 	"m00=0.5 m01=0 m02=0 m03=0 m10=0 m11=0.5 m12=0 m13=0 m20=0 m21=0 m22=0.5 m23=0" +  " " + 
+	"m00=" + m00 + " " + "m01=0 m02=0 m03=0 m10=0 m11=" + m11 + " " + "m12=0 m13=0 m20=0 m21=0 m22=" + m22 + " " + "m23=0" +  " " +
+        "apply_to=[Time-point registration (reference=" + referencetp + ")]");
+
+IJ.run("Apply external transformation",
+        "spim_data_directory=" + dir + " " +
+        "pattern_of_spim=" + pattern_of_spim + " " +
+        "timepoints_to_process=" + referencetp + " " +
+        "angles=" + angles + " " +
+        "how_to_provide_affine_matrix=[As individual entries]" +  " " +
+//      "m00=0.5 m01=0 m02=0 m03=0 m10=0 m11=0.5 m12=0 m13=0 m20=0 m21=0 m22=0.5 m23=0" +  " " +
+   	"m00=" + m00 + " " + "m01=0 m02=0 m03=0 m10=0 m11=" + m11 + " " + "m12=0 m13=0 m20=0 m21=0 m22=" + m22 + " " + "m23=0" +  " " + 
+	"apply_to=[Individual registration]");
+
+/* shutdown */
+runtime.exit(0);
+
 </source>
 
 
 <source lang="bash">
-</source>
+#!/bin/bash
 
+for file in `ls ${1} | grep ".job$"`
+do
+	bsub -q short -n 12 -W 00:05 -R rusage[mem=10000] -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+done
 
-<source lang="bash">
 </source>
 
 ==== Deconvolution ====
 
 
 <source lang="bash">
+#!/bin/bash
+source /projects/tomancak_lightsheet/Christopher/pipeline/master
+
+mkdir -p $jobs_deconvolution
+
+for i in $timepoint
+do
+	job="$jobs_deconvolution/deconvolution-$i.job"
+	echo $job
+	echo "#!/bin/bash" > "$job"
+	echo "$XVFB_RUN -a $Fiji -Xms110g -Xmx110g -Ddir=$dir -Dpattern_of_spim=$pattern_deconvo \
+	-Dtimepoint=$i -Dangles=$angles -Dreferencetp=$referencetp \
+	-Dx=$decox -Dy=$decoy -Dz=$decoz -Dw=$decow -Dh=$decoh -Dd=$decod \
+	-Dtype_of_iteration=$type_of_iteration -Dosem_acceleration=$osem_acceleration \
+	-Duse_tikhonov_regularization=$use_tikhonov_regularization -DTikhonov_parameter=$Tikhonov_parameter \
+	-Dcompute=$compute -Dcompute_on=$compute_on -Dpsf_estimation=$psf_estimation \
+	-Dpsf_display=$psf_display -Dload_input_images_sequentially=$load_input_images_sequentially \
+	-Dfused_image_output=$fused_image_output -Diter=$iter \
+	-- --no-splash $deconvolution" >> "$job"
+	chmod a+x "$job"
+done
+</source>
+
+
+<source lang="java">
+import ij.IJ;
+import java.lang.Runtime;
+
+fiji.plugin.Multi_View_Deconvolution.psfSize = 31;
+fiji.plugin.Multi_View_Deconvolution.isotropic = true;
+
+runtime = Runtime.getRuntime();
+System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
+
+dir = System.getProperty( "dir" );
+pattern_of_spim = System.getProperty( "pattern_of_spim" );
+timepoint = System.getProperty( "timepoint" );
+angles = System.getProperty( "angles" );
+referencetp = System.getProperty( "referencetp" );
+
+x = System.getProperty( "x" );
+y = System.getProperty( "y" );
+z = System.getProperty( "z" );
+w = System.getProperty( "w" );
+h = System.getProperty( "h" );
+d = System.getProperty( "d" );
+
+type_of_iteration = System.getProperty( "type_of_iteration" );
+osem_acceleration = System.getProperty( "osem_acceleration" );
+use_tikhonov_regularization = System.getProperty( "use_tikhonov_regularization" );
+float Tikhonov_parameter = Float.parseFloat( System.getProperty( "Tikhonov_parameter" ) );
+compute = System.getProperty( "compute" );
+compute_on = System.getProperty( "compute_on" );
+psf_estimation = System.getProperty( "psf_estimation" );
+psf_display = System.getProperty( "psf_display" );
+load_input_images_sequentially = System.getProperty( "load_input_images_sequentially" );
+fused_image_output = System.getProperty( "fused_image_output" );
+
+iter = System.getProperty( "iter" );
+
+System.out.println( "dir=" + dir );
+System.out.println( "pattern_of_spim=" + pattern_of_spim );
+System.out.println( "timepoint=" + timepoint );
+System.out.println( "angles=" + angles );
+System.out.println( "reference timepoint=" +referencetp );
+System.out.println( "cropping parameters=" + x + " " + y + " " + z + " " + w + " " + h + " " + d );
+System.out.println( "type_of_iteration=" + type_of_iteration );
+System.out.println( "osem_acceleration=" + osem_acceleration );
+System.out.println( use_tikhonov_regularization );
+System.out.println( "Tikhonov_parameter=" + Tikhonov_parameter );
+System.out.println( "compute=" + compute );
+System.out.println( "compute_on=" + compute_on );
+System.out.println( "psf_estimation=" + psf_estimation );
+System.out.println( "psf_display=" + psf_display );
+System.out.println( load_input_images_sequentially );
+System.out.println( "fused_image_output=" + fused_image_output );
+
+IJ.run("Multi-view deconvolution", "spim_data_directory=" + dir + " " +
+	"pattern_of_spim=" + pattern_of_spim + " " + 
+	"timepoints_to_process=" + timepoint + " " +
+	"angles=" + angles + " " + 
+	"registration=[Time-point registration (reference=" + referencetp + ") of channel 0]" + " " +
+	"crop_output_image_offset_x=" + x + " " +
+	"crop_output_image_offset_y=" + y + " " +
+	"crop_output_image_offset_z=" + z + " " +
+	"crop_output_image_size_x=" + w + " " +
+	"crop_output_image_size_y=" + h + " " +
+	"crop_output_image_size_z=" + d + " " +
+	"type_of_iteration=[" + type_of_iteration + "]" + " " +
+	"osem_acceleration=[" + osem_acceleration + "]" + " " +
+	"number_of_iterations=" + iter + " " + 
+	" + use_tikhonov_regularization + " + " " + 
+	"tikhonov_parameter=" + Tikhonov_parameter + " " +
+//	"compute=[in 512x512x512 blocks]" + " " +
+	"compute=[" + compute + "]" + " " +
+	"compute_on=[" + compute_on + "]" + " " +  
+	"psf_estimation=[" + psf_estimation + "]" + " " +
+//	"psf_display=[" + psf_display + "]" + " " +
+	"psf_display=[Do not show PSF's]" + " " +
+	" + load_input_images_sequentially + " + " " +
+	"fused_image_output=[" + fused_image_output + "]"
+	);
+
+/* shutdown */
+runtime.exit(0);
+
 </source>
 
 
 <source lang="bash">
-</source>
+#!/bin/bash
 
-
-<source lang="bash">
+for file in `ls ${1} | grep ".job$"`
+do
+	bsub -q short -n 12 -R rusage[mem=117000] -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+done
 </source>
 
 === 3d Rendering ===
 
 <source lang="bash">
+#!/bin/bash
+source /projects/tomancak_lightsheet/Christopher/pipeline/master
+
+source_rendering=${dir}${source_rendering}
+target_rendering=${dir}${target_rendering}
+
+mkdir -p $jobs_rendering
+mkdir -p $target_rendering 
+
+for i in $timepoint
+
+do
+	job="$jobs_rendering/render-$i.job"
+	echo $job
+	echo "#!/bin/bash" > "$job"
+	echo "$XVFB_RUN -as\"-screen 0 1280x1024x24\" \
+		$Fiji_rendering -Xms20g -Xmx20g -Ddir=$source_rendering \
+		-Dtimepoint=$i -Dnframes=$nframes -Dtarget_rendering=$target_rendering\
+		-Dminimum_rendering=$minimum_rendering -Dmaximum_rendering=$maximum_rendering \
+		-- --no-splash $rendering" >> "$job"
+	chmod a+x "$job"
+done
+
+
 </source>
 
-<source lang="bash">
+<source lang="java">
+import java.lang.Runtime;
+import ij.ImagePlus;
+import ij.ImageStack;
+import ij.process.ImageProcessor;
+import ij.IJ;
+import ij.measure.Calibration;
+import mpicbg.ij.stack.InverseTransformMapping;
+import mpicbg.models.TranslationModel3D;
+import mpicbg.models.AffineModel3D;
+import mpicbg.models.InverseCoordinateTransformList;
+import ij.process.ImageStatistics;
+import ij.process.StackStatistics;
+
+runtime = Runtime.getRuntime();
+
+dir = System.getProperty( "dir" );
+timepoint = Integer.parseInt( System.getProperty( "timepoint" ) );
+int nFrames = Integer.parseInt( System.getProperty( "nframes" ) );
+target_rendering = System.getProperty( "target_rendering" );
+float minimum_rendering = Float.parseFloat( System.getProperty( "minimum_rendering" ));
+float maximum_rendering = Float.parseFloat( System.getProperty( "maximum_rendering" ));
+
+System.out.println( "Opening" );
+System.out.println( "dir=" + dir );
+System.out.println( "timepoint=" + timepoint);
+System.out.println( "Number of frames=" + nFrames );
+System.out.println( "target_directory=" + target_rendering );
+System.out.println( "MinMax=" + minimum_rendering + " " + maximum_rendering );
+
+IJ.run("Image Sequence...", "open=" + dir + "/" + timepoint + " " +
+        "number=1000 starting=1 increment=1 scale=100" + " " +
+        "file=.tif" + " " +
+        "or=[] sort");
+
+imp = IJ.getImage();
+	
+/*
+ * Get min and max using stack histogram.
+ * @param sat_lov
+ *           how many pixels are allowed to be below min.
+ * @param sat_high
+ *           how many pixels are allowed to be above max.
+ * @param stats
+ *           stack histogram.
+ * @return double[2] {min,max}
+ */
+double[] getMinAndMax( double sat_low, double sat_high, ImageStatistics stats ) {
+	int hmin, hmax;
+	int[] histogram = stats.histogram;
+	int hsize = histogram.length;
+	int t_low = (int)(stats.pixelCount*sat_low);
+	int t_high = (int)(stats.pixelCount*sat_high);
+
+	int i = -1;
+	boolean found = false;
+	int count = 0;
+	int maxindex = hsize-1;
+	do {
+		i++;
+		count += histogram[i];
+		found = count>t_low;
+	} while (!found && i<maxindex);
+	hmin = i;
+
+	i = hsize;
+	count = 0;
+	do {
+		i--;
+		count += histogram[i];
+		found = count>t_high;
+	} while (!found && i>0);
+	hmax = i;
+
+	double scale = (double)hsize / (stats.histMax - stats.histMin);
+	double[] a = new double[2];
+	a[0]= (double)hmin / scale + stats.histMin;
+	a[1]= ((double)hmax + 1.0) / scale + stats.histMin;
+	return a;
+}
+
+System.out.println("Analyzing histogram");
+
+/*
+ * compute max, min and convert to 8 bit
+ */
+stats = new StackStatistics( imp, 10000, 0.0, 0.0 );
+double[] minmax = getMinAndMax( minimum_rendering, maximum_rendering , stats );
+IJ.setMinAndMax( imp, minmax[0], minmax[1] );
+
+System.out.println("Orienting");
+
+/* orientation
+*orientation = new net.imglib2.realtransform.AffineTransform3D();
+*orientation.set(1.0, 0.0, 0.0, 0.0, 0.0, -0.978154, -0.20791358, 0.0, 0.0, 0.20791358, -0.978154, 0.0);
+*/
+
+
+/* rotation */
+theta = ( double )timepoint / 180.0 * Math.PI;
+orientation = new net.imglib2.realtransform.AffineTransform3D();
+orientation.rotate( 0, theta );
+transform = new net.imglib2.realtransform.AffineTransform3D();
+transform.preConcatenate(orientation);
+
+System.out.println("Rendering");
+
+omp = net.imglib2.render.volume.Renderer.runGray(
+	imp,                                      //impSource 3d image, will be converted to singel channle float even if it is ARGB-color
+	imp.getWidth(),                       //@param width width of the target canvas
+	imp.getHeight(),                       //@param height height of the target canvas
+	0,                                        //@param min minimum intensity
+	minmax[ 1 ] * 2,                          //@param max maximum intensity
+	//orientation,				//orientation from transformation matrix	
+	transform,  				//orientation initial transformation assuming that the 3d volume is centered (e.g. export of Interactive Stack Rotation)
+	//( double )timepoint / ( double )nFrames,//animation a value between 0 and 1 that specifies the camera position along a predefined path
+	0,
+	1,                                        //stepSize z-stepping for the volume renderer higher is faster but less beautiful
+	0,					  //bg background intensity
+	1,					  //interpolationMethod 0 NN, 1 NL
+	1.0 / ( minmax[ 1 ] ),                    //alphaScale scale factor for linear intensity to alpha transfer
+//	- (minmax[0] + (minmax[0]*0.2)));
+	-( minmax[ 1 ] - minmax[ 0 ] ) * 0.5);      //alphaOffset offset for linear intensity to alpha transfer
+
+omp.show();
+IJ.save( omp, target_rendering + "/render_tp" + IJ.pad(timepoint, 4) + ".tif" );
+
+System.out.println("All done");
+
+/* shutdown */
+runtime.exit(0);
+
 </source>
 
 
 <source lang="bash">
+#!/bin/bash
+
+for file in `ls ${1} | grep ".job$"`
+do
+	bsub -q short -n 1 -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+done
 </source>
 
 == Multi-channel Processing ==
