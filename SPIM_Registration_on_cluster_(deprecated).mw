@@ -1576,7 +1576,7 @@ done
 
 The fused images will be saved into separate subdirectories for each time point into the output directory.
 
-=== NEW PIPELINE ===
+==== NEW PIPELINE ====
 
 The new pipeline is centered around a configuration file, the master file, that contains all the relevant processing parameters. It increases the efficiency of the processing significanlty since only this file is manipulated for each dataset, instead of the scripts in each processing step individually. 
 
@@ -1858,3 +1858,45 @@ Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 
 
 </source>
+
+=== Single-channel Processing ===
+
+== Rename .czi files ==
+
+== Resave .czi files ==
+
+== Resave .ome.tiff files ==
+
+== Multi-view registration ==
+
+== Timelapse registration ==
+
+== Multi-view content based fusion ==
+
+== Multi-view deconvolution ==
+
+= External transformation =
+
+= Deconvolution =
+
+== 3d Rendering ==
+
+=== Multi-channel Processing ===
+
+== Rename .czi files ==
+
+== Resave .czi files ==
+
+== Split channels ==
+
+== Multi-view registration ==
+
+== Timelapse registration ==
+
+== Multi-view content based fusion ==
+
+== Multi-view deconvolution ==
+
+= External transformation =
+
+= Deconvolution =
