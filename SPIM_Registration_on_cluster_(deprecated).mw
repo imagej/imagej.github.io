@@ -1578,11 +1578,15 @@ The fused images will be saved into separate subdirectories for each time point 
 
 === NEW PIPELINE ===
 
-The new pipeline is centered around a configuration file, the master file, that contains all the relevant processing parameters. It increases the efficiency of the processing significanlty since only this file is manipulated for each dataset, instead of the script in each processing step individually. 
+The new pipeline is centered around a configuration file, the master file, that contains all the relevant processing parameters. It increases the efficiency of the processing significanlty since only this file is manipulated for each dataset, instead of the scripts in each processing step individually. 
+
+The 'master files' has two parts. The first part contains all the relevant processing parameters for each individual processing step. The second part contains some more advanced settings and the links for the job scripts and directories. 
+
+The new pipeline also comes with a new set of scripts that are specifically modified to be used with the master file. The general idea is to have these job scripts together with the master file on an independent location of the dataset on your processing server. 
 
 <source lang="bash">
 #!/bin/bash
-
+####============================= Processing Parameters ==============================
 ####--------------------------------- General Parameters ---------------------------------
 ###Data directory
 dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel"
@@ -1610,8 +1614,6 @@ referencetp="1"
 ##Manual calibration
 xy_resolution="1"
 z_scaling="3.2643520832"
-
-####============================= Processing Parameters ==============================
 
 ###---------- Renaming .czi files ----------
 first_index="0"
