@@ -1991,7 +1991,7 @@ done
 
 </source>
 
-<source lang="bash">
+<source lang="java">
 import ij.IJ;
 import ij.ImagePlus;
 import java.lang.Runtime;
