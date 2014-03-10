@@ -1575,3 +1575,292 @@ done
 </source>
 
 The fused images will be saved into separate subdirectories for each time point into the output directory.
+
+=== NEW PIPELINE ===
+
+The new pipeline is centered around a configuration file, the master file, that contains all the relevant processing parameters. It increases the efficiency of the processing significanlty since only this file is manipulated for each dataset, instead of the script in each processing step individually. 
+
+<source lang="bash">
+#!/bin/bash
+
+####--------------------------------- General Parameters ---------------------------------
+###Data directory
+dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel"
+#dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/multi-channel/"
+#dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/multi-channel/channel_split"
+
+###Dataset core parameters
+timepoint="`seq 1 3`"
+#timepoint="1"
+angles="1,2,3"
+num_angles="3"
+
+##pattern of spim data: padded zeros use tt as place holder
+##change pattern for single-channel: (e.g. spim_TL{tt}_Angle{a}.tif) 
+##or multi-channel processing: (e.g. spim_TL{tt}_Angle{a}_Channel{c}.tif)
+pattern_of_spim="spim_TL{tt}_Angle{a}.tif"
+#pattern_of_spim="spim_TL{tt}_Angle{a}_Channel{c}.tif"
+
+##For multi-channel processing
+channels="0,1"
+
+#Timelapse registration
+referencetp="1"
+
+##Manual calibration
+xy_resolution="1"
+z_scaling="3.2643520832"
+
+####============================= Processing Parameters ==============================
+
+###---------- Renaming .czi files ----------
+first_index="0"
+last_index="8"
+first_timepoint="1"
+angles_renaming=(1 2 3)
+
+##For padded zero 2 = 01; 3 = 001
+pad_rename_czi="2"
+
+##Change directory and pattern
+source_pattern=/2013-11-14_His-YFP\(\{index\}\).czi
+target_pattern=/spim_TL\{timepoint\}_Angle\{angle\}.czi
+
+###---------- Resaving .czi or ome.tiff as .tif ----------
+##use ometiff_resave for ome.tiff and czi_resave for .czi
+angle_resaving="1 2 3"
+
+##For padded zero 2 = 01; 3 = 001
+pad_resave="2"
+
+###---------- Split Channels (Only for multi-channel data) ----------
+##Outputs channls as spim_TL{tt}_Angle{a}_Channel0,spim_TL{tt}_Angle{a}_Channel1 ...
+angles_split="1 2 3 4 5"
+
+##Target directory 
+target_split="/channel_split/"
+
+###---------- Multi-view registration (Difference of mean or Difference of Gaussian) ----------
+##Specify the Pattern for Detection of the beads single channel: spim_TL{t}_Angle{a}.tif
+##multi-channel: spim_TL{t}_Angle{a}_Channel1.tif were 1 is the Channel that contains the beads
+channel_pattern_beads="spim_TL{tt}_Angle{a}.tif"
+#channel_pattern_beads="spim_TL{tt}_Angle{a}_Channel1.tif"
+
+##Difference of mean (Comment out Difference of Gaussian parts in registration.bsh script)
+type_of_detection="\"Difference-of-Mean (Integral image based)\""
+radius1="2"
+radius2="3"
+threshold="0.008"
+
+##Difference of Gaussian (Comment out Differnce of Mean parts in registration.bsh script)
+#type_of_detection="\"Difference-of-Gaussian\""
+#initial_sigma="1.8000"
+#threshold_gaussian="0.0080"
+
+###---------- Timelapse registration ----------
+timelapse_timepoint="1-3"
+
+###---------- Dublicate Registration files (Only for multi-channel data) ----------
+#Channel that contain the beads
+channel_source="1"
+channel_target="0"
+
+###---------- Multi-view content based fusion ----------
+##Change between Single-Channel	or Mulit-channel fusion
+##If single channel then comment out 2nd fusion command in fusion.bsh script
+select_channel="Single-channel"
+#select_channel="Multi-channel"
+
+##Use timelapse registration or Individual registration
+##For timelapse registration specify reference timepoint:
+registration_fusion="\"Time-point registration (reference=1) of channel 0\""
+##Individual registration:
+#"\"Individual registration of channel 0\""
+downsample_output="2"
+
+##Cropping parameters of full resolution
+x="100"
+y="226"
+z="355"
+w="1731"
+h="820"
+d="755"
+
+###---------- External transformation for multi-view deconvolution ----------
+##Only single channel, use external transformation for each individual channel
+##For downsampling 2x use 0.5
+##Caution: Before applying the exteranl transformation make a copy of the registration files
+pattern_deconvo="spim_TL{tt}_Angle{a}.tif"
+#pattern_extrans="spim_TL{tt}_Angle{a}_Channel1.tif"
+external_transformation_timepoint="1-3"
+m00="0.5"
+m11="0.5"
+m22="0.5"
+
+###---------- Multi-view deconvolution ----------
+##Only for single channel, use deconvolution for each individual channel
+pattern_deconvo="spim_TL{tt}_Angle{a}.tif"
+#pattern_deconvo="spim_TL{tt}_Angle{a}_Channel1.tif"
+iter="1"
+
+##Cropping parameters: if downsampled divid fusion cropping parameters by this factor 
+decox="50"
+decoy="113"
+decoz="177"
+decow="865"
+decoh="410"
+decod="377"
+
+###---------- Rendering ----------
+##Two different sets of scripts, one for single channel and one for multi-channel; choose:
+##Working directory
+jobs_rendering="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/single_rendering"
+
+##Working script
+rendering="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/single_rendering/render-mov1.bsh"
+
+##source
+source_rendering="/output_fusion"
+
+##target directory
+target_rendering="/rendering"
+
+nframes="3"
+##Min Max
+minimum_rendering="0.6"
+maximum_rendering="0.005"
+
+##For multi-channel rendering:
+zSlices="369"
+
+##Orientation or rotation
+#still needs to be put into the script directly
+#under construction
+
+###---------- Hdf5 ----------
+#under construction
+#exportXMLFilename="single_channel.xml"
+#angles="1,2,3"
+#overrideZStretching="true"
+#num_jobs="0-3"
+
+####============== Directories for scripts and advanced settings for processing ==============
+
+####--------------------------------- Fiji settings --------------------------------- 
+
+XVFB_RUN="/sw/bin/xvfb-run"
+Fiji="/sw/users/tomancak/packages/Fiji.app/ImageJ-linux64"
+
+####--------------------------------- Pre-processing ---------------------------------
+### Resaving .czi into .tif files
+##Working directory
+jobs_resaving="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/czi_resave/"
+
+##Working script
+resaving="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/czi_resave/resaving.bsh"
+
+###Resaving ome.tiff into .tif files
+##Working directory
+jobs_resaving_ometiff="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/ometiff_resave/"
+
+##Working script
+resaving_ometiff="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/ometiff_resave/resaving-ometiff.bsh"
+
+###Split channels 
+##Working directory
+jobs_split="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/split_channels/"
+
+##Working script
+split="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/split_channels/split.bsh"
+
+
+####--------------------------------- Multi-view Registration ---------------------------------
+##Working directory
+jobs_registration="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/registration/"
+
+##Working script
+registration="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/registration/registration.bsh"
+
+##registration parameters 
+type_of_registration="Single-channel"
+bead_brightness="\"Advanced ...\""
+subpixel_localization="\"3-dimensional quadratic fit (all detections)\""
+transformation_model="Affine"
+imglib_container="\"Array container (images smaller ~2048x2048x450 px)\""
+
+####--------------------------------- Timelapse registration ---------------------------------
+##Working directory
+jobs_timelapse="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/timelapse_registration/"
+
+##Working script
+timelapse_registration="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/timelapse_registration/time-lapse.bsh"
+
+####--------------------------------- Multi-view fusion ----------------------------------------
+##Working directory
+jobs_fusion="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/fusion/"
+
+##Working script
+fusion="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/fusion/fusion.bsh"
+
+##Fusion parameters
+fusion_method="\"Fuse into a single image\""
+process_views_in_paralell="All"
+blending="blending"
+weights="\"content_based_weights_(fast,\""
+fused_image_output="\"Save 2d-slices, one directory per time-point\""
+
+####--------------------------------- External transformation ---------------------------------
+##Working directory
+jobs_external_transformation="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/external_transformation/"
+
+##Working script
+external_transformation="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/external_transformation/external_transformation.bsh"
+
+####--------------------------------- Multi-view deconvolution ---------------------------------
+##Working directory
+jobs_deconvolution="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/deconvolution/"
+
+##Working script
+deconvolution="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/deconvolution/deconvolution.bsh"
+
+##Deconvolution parameters
+type_of_iteration="\"Efficient Bayesian - Optimization I (fast, precise)\""
+osem_acceleration="\"1 (balanced)\""
+use_tikhonov_regularization="use_tikhonov_regularization"
+Tikhonov_parameter="0.0006"
+compute="\"in 512x512x512 blocks\""
+compute_on="\"CPU (Java)\""
+psf_estimation="\"Extract from beads\""
+
+psf_display="\"Do not show PSF's\""
+load_input_images_sequentially="load_input_images_sequentially"
+fused_image_output="\"Save 2d-slices, one directory per time-point\""
+
+####--------------------------------- Rendering ---------------------------------
+##Fiji for rendering
+Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
+
+##Orientation or rotation how to implement this?
+#/* rotation */
+#theta = ( double )timepoint / 180.0 * Math.PI;
+#orientation = new net.imglib2.realtransform.AffineTransform3D();
+#orientation.rotate( 0, theta );"
+
+#orientation.set(
+#         0.9735211, -0.1672357, 0.15585439, 0.0, 
+#        -0.18660265, -0.9751887, 0.11918401, 0.0, 
+#         0.13205509, -0.14511211, -0.9805735, 0.0);
+
+
+####--------------------------------- HDF5 ---------------------------------
+
+##Working directory
+jobs_hdf5="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/hdf5/"
+
+##Working script
+hdf5="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/hdf5/export.bsh"
+
+##Target directory
+hdf5_target="/projects/tomancak_lightsheet/Christopher/Test_script/single_channel/output_hdf5"
+
+</source>
