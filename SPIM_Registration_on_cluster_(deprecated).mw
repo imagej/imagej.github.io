@@ -2044,7 +2044,8 @@ do
 		-Dsubpixel_localization=$subpixel_localization -Dxy_resolution=$xy_resolution \
 		-Dz_scaling=$z_scaling -Dtransformation_model=$transformation_model \
 		-Dimglib_container=$imglib_container -Dradius1=$radius1 -Dradius2=$radius2 \
-                -Dthreshold=$threshold -Dinitial_sigma=$initial_sigma -Dthreshold_gaussian=$threshold_gaussian \
+                -Dthreshold=$threshold -Dinitial_sigma=$initial_sigma \
+                -Dthreshold_gaussian=$threshold_gaussian \
 		-- --no-splash $registration" >> "$job"
 	chmod a+x "$job"
 done
