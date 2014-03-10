@@ -1584,9 +1584,9 @@ The 'master file' has two parts. The first part contains all the relevant proces
 
 The new pipeline also comes with a new set of scripts that are specifically modified to be used with the master file. The general idea is to have these job scripts together with the master file independent from the dataset. The scripts will use the master file as a source for the processing parameters. The jobs will be created and executed in the job directories. 
 
-Currently the master file is useable for the following steps
-1. Single-channel processing:
-• Rename .czi files
+Currently the master file is useable for the following steps¶ 
+1. Single-channel processing:¶ 
+• Rename .czi files¶ 
 • Resave .czi files
 • Resave .ome.tiff files
 • Registration
