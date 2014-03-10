@@ -1857,4 +1857,4 @@ fused_image_output="\"Save 2d-slices, one directory per time-point\""
 Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 
 
-<\source>
+</source>
