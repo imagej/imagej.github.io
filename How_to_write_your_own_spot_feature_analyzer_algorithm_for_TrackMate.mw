@@ -1,0 +1,38 @@
+== Introduction == 
+
+This third article in the series dedicated to extending TrackMate deals with spot feature analyzer. This is the last of the three kind of feature analyzers you can create, and it focuses on spots, or detections. 
+
+Spot features are typically calculated from the spot location and the image data. For instance, there is a spot feature that reports the mean intensity within the spot radius. You need to have the spot location, its radius and the image data to compute it.
+
+In this tutorial, we will generate an analyzer that is not directly calculated from the image data. This will enable us to skip over introducing [[ImgLib2]] API, which would have considerably augmented the length of this series. But this choice does not only aim at nurturing my laziness: We will make our feature '''depend on other features''' which will allow us to introduce '''analyzers priority'''. 
+
+But before this, let's visit the spot feature analyzers specificities. 
+
+
+
+
+== Spot analyzers and spot analyzer factories ==
+
+In the two previous articles we dealt with [[How to write your own edge feature analyzer algorithm for TrackMate|edge]] and [[How to write your own track feature analyzer algorithm for TrackMate|track]] analyzers. We could make them in a single class, and this class embedded both the code for
+* TrackMate integration (feature names, dimensions, declaration, etc...);
+* and actual feature calculation.
+For spot analyzer, the two are separated. 
+
+You must first create a [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/spot/SpotAnalyzerFactory.java SpotAnalyzerFactory]. This factory will be in charge of the TrackMate integration. The interface extends both the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/TrackMateModule.java TrackMateModule] and the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/FeatureAnalyzer.java FeatureAnalyzer] interfaces. It is the class you will need to annotate with a [[SciJava]] annotation for automatic discovery.
+
+But it is also in charge of instantiating [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/spot/SpotAnalyzer.java SpotAnalyzer]s. As you can see, this interface just extends ImgLib2 [https://github.com/imglib/imglib/blob/master/algorithms/core/src/main/java/net/imglib2/algorithm/Algorithm.java Algorithm], so all parameters will have to be passed in the constructor, which can be what you want thanks to the factory. We do not need a return value method, because results are stored directly inside the spot objects. But we will see this later.
+
+Let's get started with our example.
+
+
+
+== The spot analyzer factory ==
+
+We want to generate an analyzer that will compute for each spot, its intensity relative to the mean intensity of all spots in the same frame. So you get for this feature a value of 1 if its intensity is equal to the mean, etc... We could have our analyzer actually compute the pixel intensity for each spot, take the mean over a frame, then normalize, etc... But, there is an analyzer that already computes the spot intensity and we can re-use it. Check the [[https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/spot/SpotIntensityAnalyzerFactory.java SpotIntensityAnalyzerFactory].
+
+
+
+
+
+
+[[Category:Tutorials]]
