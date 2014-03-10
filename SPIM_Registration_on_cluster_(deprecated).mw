@@ -1618,7 +1618,9 @@ All the scripts now work with padded zeros.
 
 <source lang="bash">
 #!/bin/bash
+
 ####============================= Processing Parameters ==============================
+
 ####--------------------------------- General Parameters ---------------------------------
 ###Data directory
 dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel"
