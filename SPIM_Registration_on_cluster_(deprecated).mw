@@ -1870,7 +1870,102 @@ Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 
 === Rename .czi files ===
 
+<source lang="bash">
+#!/bin/bash
+
+source /projects/tomancak_lightsheet/Christopher/pipeline/master
+
+source_pattern=${dir}${source_pattern}
+target_pattern=${dir}${target_pattern}
+
+# --------------------------------------------------------
+
+i=${first_index}
+t=${first_timepoint}
+t=`printf "%0${pad_rename_czi}d" "$t"`
+
+while [ $i -le $last_index ]; do
+
+	for a in "${angles_renaming[@]}"; do
+		source=${source_pattern/\{index\}/${i}}
+		tmp=${target_pattern/\{timepoint\}/${t}}
+		target=${tmp/\{angle\}/${a}}
+		
+		echo ${source} ${target}	
+
+		#mv ${source} ${target}
+		cp ${source} ${target}
+		let i=i+1
+		
+	done
+	let t=t+1
+	t=`printf "%0${pad_rename_czi}d" "$t"`
+	
+done
+
+</source>
+
 === Resave .czi files ===
+
+<source lang="bash">
+#!/bin/bash
+
+source /projects/tomancak_lightsheet/Christopher/pipeline/master
+
+mkdir -p $jobs_resaving
+
+for i in $timepoint
+
+do
+	for a in $angle_resaving
+	do
+		job="$jobs_resaving/resave-$i-$a.job"
+		echo $job
+		echo "$XVFB_RUN -a $Fiji -Ddir=$dir -Dtimepoint=$i -Dangle=$a \
+			-Dpad=$pad_resave -- --no-splash $resaving" >> "$job"
+		chmod a+x "$job"
+	done
+done
+</source>
+
+
+<source lang="bash">
+import ij.IJ;
+import ij.ImagePlus;
+import java.lang.Runtime;
+import java.io.File;
+import java.io.FilenameFilter;
+
+runtime = Runtime.getRuntime();
+
+dir = System.getProperty( "dir" );
+int timepoint = Integer.parseInt( System.getProperty( "timepoint" ) );
+angle = System.getProperty( "angle" );
+int pad = Integer.parseInt( System.getProperty( "pad" ) );
+
+System.out.println( "timepoint" );
+System.out.println( "pad" );
+
+//resave as tif
+ 
+IJ.run("Bio-Formats Importer", "open=" + dir + "spim_TL" + IJ.pad( timepoint, pad ) + "_Angle" + angle + ".czi" + 
+" autoscale color_mode=Default specify_range view=[Standard ImageJ] stack_order=Default t_begin=1000 t_end=1000 t_step=1");
+IJ.saveAs("Tiff ", dir + "spim_TL" + IJ.pad( timepoint, pad ) + "_Angle" + angle + ".tif");
+
+/* shutdown */
+runtime.exit(0);
+</source>
+
+
+<source lang="bash">
+#!/bin/bash
+
+for file in `ls ${1} | grep ".job$"`
+do
+	bsub -q short -n 1 -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+done
+
+</source>
 
 === Resave .ome.tiff files ===
 
@@ -1907,3 +2002,6 @@ Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 ==== External transformation ====
 
 ==== Deconvolution ====
+
+<source lang="bash">
+</source>
