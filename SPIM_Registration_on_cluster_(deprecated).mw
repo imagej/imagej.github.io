@@ -1893,8 +1893,8 @@ while [ $i -le $last_index ]; do
 		
 		echo ${source} ${target}	
 
-		#mv ${source} ${target}
-		cp ${source} ${target}
+		mv ${source} ${target}
+		#cp ${source} ${target}
 		let i=i+1
 		
 	done
