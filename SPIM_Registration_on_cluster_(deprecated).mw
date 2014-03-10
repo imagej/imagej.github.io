@@ -1591,11 +1591,11 @@ Currently the master file is useable for the following steps.
 * Rename .czi files
 * Resave .czi files
 * Resave .ome.tiff files
-* Registration
+* Multi-view registration
 * Timelapse registration
-* Content based fusion
+* Content based multi-view fusion
 * External transformation
-* Deconvolution
+* Multi-view deconvolution
 * 3D-rendering
 
 
@@ -1605,9 +1605,9 @@ Currently the master file is useable for the following steps.
 * Resave .czi files
 * Registration
 * Timelapse registration
-* Content based fusion
+* Content based multi-view fusion
 * External transformation
-* Deconvolution
+* Multi-view deconvolution
 
 The scripts now work with padded zeros. 
 
