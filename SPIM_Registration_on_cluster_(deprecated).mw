@@ -1598,7 +1598,8 @@ Currently the master file is useable for the following steps.
 * Deconvolution
 * 3D-rendering
 
-Multi-channel processing:
+
+2. Multi-channel processing:
 
 * Rename .czi files
 * Resave .czi files
