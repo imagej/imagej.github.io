@@ -1873,11 +1873,11 @@ Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 
 === Timelapse registration ===
 
-== Multi-view content based fusion ==
+=== Multi-view content based fusion ===
 
-== Multi-view deconvolution ==
+=== Multi-view deconvolution ===
 
-=== External transformation ===
+==== External transformation ====
 
 = Deconvolution =
 
