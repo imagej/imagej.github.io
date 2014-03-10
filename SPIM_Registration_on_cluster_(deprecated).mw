@@ -2024,6 +2024,33 @@ done
 
 </source>
 
+=== Checkpoint ===
+
+<source lang="bash">
+#!/bin/bash
+
+source /projects/tomancak_lightsheet/Christopher/pipeline/master
+
+
+for i in $timepoint
+
+	do
+		i=`printf "%0${pad_resave}d" "$i"`
+		num=$(ls $dir/spim_TL"$i"_Angle*.czi |wc -l)
+
+			if [ $num  -ne $num_angles ]
+
+	then 
+		echo "TL"$i": TP or angles missing"
+
+	else 
+		echo "TL"$i": Correct"
+
+fi
+
+done
+</source>
+
 === Multi-view registration ===
 
 <source lang="bash">
