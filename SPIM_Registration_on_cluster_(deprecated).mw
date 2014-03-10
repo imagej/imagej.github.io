@@ -1576,7 +1576,7 @@ done
 
 The fused images will be saved into separate subdirectories for each time point into the output directory.
 
-==== NEW PIPELINE ====
+= NEW PIPELINE =
 
 The new pipeline is centered around a configuration file, the master file, that contains all the relevant processing parameters. It increases the efficiency of the processing significanlty since only this file is manipulated for each dataset, instead of the scripts in each processing step individually. 
 
@@ -1610,6 +1610,8 @@ Currently the master file is useable for the following steps.
 * Deconvolution
 
 The scripts now work with padded zeros. 
+
+== Master file ==
 
 <source lang="bash">
 #!/bin/bash
