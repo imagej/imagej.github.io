@@ -1585,25 +1585,25 @@ The 'master file' has two parts. The first part contains all the relevant proces
 The new pipeline also comes with a new set of scripts that are specifically modified to be used with the master file. The general idea is to have these job scripts together with the master file independent from the dataset. The scripts will use the master file as a source for the processing parameters. The jobs will be created and executed in the job directories. 
 
 Currently the master file is useable for the following steps
-Single-channel processing:
-Rename .czi files
-Resave .czi files
-Resave .ome.tiff files
-Registration
-Timelapse registration
-Content based fusion
-External transformation
-Deconvolution
-3D-rendering
+1. Single-channel processing:
+• Rename .czi files
+• Resave .czi files
+• Resave .ome.tiff files
+• Registration
+• Timelapse registration
+• Content based fusion
+• External transformation
+• Deconvolution
+• 3D-rendering
 
 Multi-channel processing:
-Rename .czi files
-Resave .czi files
-Registration
-Timelapse registration
-Content based fusion
-External transformation
-Deconvolution
+• Rename .czi files
+• Resave .czi files
+• Registration
+• Timelapse registration
+• Content based fusion
+• External transformation
+• Deconvolution
 
 The scripts now work with padded zeros. 
 
@@ -1613,12 +1613,9 @@ The scripts now work with padded zeros.
 ####--------------------------------- General Parameters ---------------------------------
 ###Data directory
 dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel"
-#dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/multi-channel/"
-#dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/multi-channel/channel_split"
 
 ###Dataset core parameters
 timepoint="`seq 1 3`"
-#timepoint="1"
 angles="1,2,3"
 num_angles="3"
 
@@ -1627,9 +1624,6 @@ num_angles="3"
 ##or multi-channel processing: (e.g. spim_TL{tt}_Angle{a}_Channel{c}.tif)
 pattern_of_spim="spim_TL{tt}_Angle{a}.tif"
 #pattern_of_spim="spim_TL{tt}_Angle{a}_Channel{c}.tif"
-
-##For multi-channel processing
-channels="0,1"
 
 #Timelapse registration
 referencetp="1"
@@ -1715,7 +1709,7 @@ d="755"
 ##Only single channel, use external transformation for each individual channel
 ##For downsampling 2x use 0.5
 ##Caution: Before applying the exteranl transformation make a copy of the registration files
-pattern_deconvo="spim_TL{tt}_Angle{a}.tif"
+pattern_extrans="spim_TL{tt}_Angle{a}.tif"
 #pattern_extrans="spim_TL{tt}_Angle{a}_Channel1.tif"
 external_transformation_timepoint="1-3"
 m00="0.5"
@@ -1761,13 +1755,6 @@ zSlices="369"
 ##Orientation or rotation
 #still needs to be put into the script directly
 #under construction
-
-###---------- Hdf5 ----------
-#under construction
-#exportXMLFilename="single_channel.xml"
-#angles="1,2,3"
-#overrideZStretching="true"
-#num_jobs="0-3"
 
 ####============== Directories for scripts and advanced settings for processing ==============
 
@@ -1865,27 +1852,5 @@ fused_image_output="\"Save 2d-slices, one directory per time-point\""
 ##Fiji for rendering
 Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 
-##Orientation or rotation how to implement this?
-#/* rotation */
-#theta = ( double )timepoint / 180.0 * Math.PI;
-#orientation = new net.imglib2.realtransform.AffineTransform3D();
-#orientation.rotate( 0, theta );"
 
-#orientation.set(
-#         0.9735211, -0.1672357, 0.15585439, 0.0, 
-#        -0.18660265, -0.9751887, 0.11918401, 0.0, 
-#         0.13205509, -0.14511211, -0.9805735, 0.0);
-
-
-####--------------------------------- HDF5 ---------------------------------
-
-##Working directory
-jobs_hdf5="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/hdf5/"
-
-##Working script
-hdf5="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/hdf5/export.bsh"
-
-##Target directory
-hdf5_target="/projects/tomancak_lightsheet/Christopher/Test_script/single_channel/output_hdf5"
-
-</source>
+<\source>
