@@ -1929,7 +1929,7 @@ done
 </source>
 
 
-<source lang="Java">
+<source lang="java">
 import ij.IJ;
 import ij.ImagePlus;
 import java.lang.Runtime;
