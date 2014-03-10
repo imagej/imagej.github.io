@@ -1609,7 +1609,8 @@ Currently the master file is useable for the following steps.
 * External transformation
 * Multi-view deconvolution
 
-The scripts now work with padded zeros. 
+
+All the scripts now work with padded zeros. 
 
 == Master file ==
 
@@ -1873,7 +1874,7 @@ Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 
 === Timelapse registration ===
 
-=== Multi-view content based fusion ===
+=== Content based multi-view fusion ===
 
 === Multi-view deconvolution ===
 
@@ -1895,7 +1896,7 @@ Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 
 === Timelapse registration ===
 
-=== Multi-view content based fusion ===
+=== Content based multi-view fusion ===
 
 === Multi-view deconvolution ===
 
