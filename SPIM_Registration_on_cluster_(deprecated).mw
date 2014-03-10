@@ -1586,10 +1586,10 @@ The new pipeline also comes with a new set of scripts that are specifically modi
 
 Currently the master file is useable for the following steps
 1. Single-channel processing:
-• Rename .czi files
-• Resave .czi files
-• Resave .ome.tiff files
-• Registration
+* Rename .czi files
+* Resave .czi files
+* Resave .ome.tiff files
+* Registration
 • Timelapse registration
 • Content based fusion
 • External transformation
