@@ -1879,25 +1879,25 @@ Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 
 ==== External transformation ====
 
-= Deconvolution =
+==== Deconvolution ====
 
-== 3d Rendering ==
+=== 3d Rendering ===
 
 == Multi-channel Processing ==
 
-== Rename .czi files ==
+=== Rename .czi files ===
 
-== Resave .czi files ==
+=== Resave .czi files ===
 
-== Split channels ==
+=== Split channels ===
 
-== Multi-view registration ==
+=== Multi-view registration ===
 
-== Timelapse registration ==
+=== Timelapse registration ===
 
-== Multi-view content based fusion ==
+=== Multi-view content based fusion ===
 
-== Multi-view deconvolution ==
+=== Multi-view deconvolution ===
 
 = External transformation =
 
