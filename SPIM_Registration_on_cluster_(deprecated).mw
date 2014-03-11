@@ -1928,7 +1928,7 @@ ls
 2013-11-14_His-YFP(8).czi
 </source>
 
-Since the Z.1 writes the first angle of the first timepoint without index we add (0) as the first index. 
+It is very important to note that the Z.1 writes the first angle of the first timepoint without index. Thus we need to add (0) as the first index to this file. Forgetting this step will lead to a frameshift in the dataset during renaming. 
 
 <source lang="bash">
 mv 2013-11-14_His-YFP.czi 2013-11-14_His-YFP(0).czi
@@ -1943,7 +1943,6 @@ ls
 2013-11-14_His-YFP(7).czi
 2013-11-14_His-YFP(8).czi
 </source>
-
 
 For renaming the .czi files relevant section in the master file looks like this:
 
@@ -1962,9 +1961,11 @@ source_pattern=/2013-11-14_His-YFP\(\{index\}\).czi
 target_pattern=/spim_TL\{timepoint\}_Angle\{angle\}.czi
 </source>
 
-The first index is 0 since we have 3 timepoints with 3 angles, we have 9 timepoints in total. Thus the last index is 8. Then we define how the new name will start, the first timepoint will be 1 and there are three angles. For demonstration we will use padded zeros. 2 means the output will look like this: 01. 
+The first index is 0. Since we have 3 timepoints with 3 angles, we have 9 timepoints in total. Thus the last index is 8. Then we define how the new name will start. The first timepoint will be 1 and there are three angles. 
+For demonstration we will use padded zeros. 2 means the output will look like this: 01. 
+The "source pattern" states how the old .czi are named and the "target_pattern" defines how the new files will be named. It is important that these patterns are correct.
 
-For renaming the .czi files we use the rename-zeiss-files.sh script:
+For renaming the .czi files we use the '''rename-zeiss-files.sh''' script:
 
 <source lang="bash">
 #!/bin/bash
