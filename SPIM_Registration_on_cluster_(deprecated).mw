@@ -1612,6 +1612,8 @@ Currently the master file is useable for the following steps.
 
 All the scripts now work with padded zeros. 
 
+At the moment this tutorial is written for advanced users that already used the previous pipeline. 
+
 == Master file ==
 
 There are two parts in this file:
