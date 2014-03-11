@@ -1729,12 +1729,15 @@ h="820"
 d="755"
 
 ###---------- External transformation for multi-view deconvolution ----------
-##Only single channel, use external transformation for each individual channel
-##For downsampling 2x use 0.5
 ##Caution: Before applying the exteranl transformation make a copy of the registration files
+##Only single channel, use external transformation for each individual channel
 pattern_extrans="spim_TL{tt}_Angle{a}.tif"
 #pattern_extrans="spim_TL{tt}_Angle{a}_Channel1.tif"
+
+##timepoints:
 external_transformation_timepoint="1-3"
+
+##For downsampling 2x use 0.5
 m00="0.5"
 m11="0.5"
 m22="0.5"
