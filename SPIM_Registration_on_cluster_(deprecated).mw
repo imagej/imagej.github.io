@@ -1931,6 +1931,20 @@ ls
 2013-11-14_His-YFP(8).czi
 </source>
 
+<source lang="bash">
+###---------- Renaming .czi files ----------
+first_index="0"
+last_index="8"
+first_timepoint="1"
+angles_renaming=(1 2 3)
+ 
+##For padded zero 2 = 01; 3 = 001
+pad_rename_czi="2"
+ 
+##Change directory and pattern
+source_pattern=/2013-11-14_His-YFP\(\{index\}\).czi
+target_pattern=/spim_TL\{timepoint\}_Angle\{angle\}.czi
+</source>
 
 <source lang="bash">
 #!/bin/bash
