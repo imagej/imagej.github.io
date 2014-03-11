@@ -3300,7 +3300,10 @@ The '''master file''' has all the necessary information to easily switch between
 
 === First steps ===
 
-For the general parameters select the option for multi-channel data: '''pattern_of_spim="spim_TL{tt}_Angle{a}_Channel{c}.tif"'''
+Since we already did set up the master file and the scripts properly the only things we need to manipulate this time are the processing parameters (see First time using the master file)
+
+Change the data directory '''dir='''. The example dataset has again 3 timepoints but 5 angles. For multi-channel processing select the option for multi-channel data: '''pattern_of_spim="spim_TL{tt}_Angle{a}_Channel{c}.tif"'''.
+Also change the reference timepoint and the calibration settings.
 
 <source lang="bash">
 ####--------------------------------- General Parameters ---------------------------------
@@ -3309,8 +3312,8 @@ dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/multi-channel/"
  
 ###Dataset core parameters
 timepoint="`seq 1 3`"
-angles="1,2,3"
-num_angles="3"
+angles="1,2,3,4,5"
+num_angles="5"
  
 ###pattern of spim data:
 #pattern_of_spim="spim_TL{tt}_Angle{a}.tif"
@@ -3324,8 +3327,10 @@ referencetp="1"
  
 ###Manual calibration
 xy_resolution="1"
-z_scaling="3.2643520832"
+z_scaling="3.481975"
 </source>
+
+The dataset is in the specified directory:
 
 <source lang="bash">
 cd /projects/tomancak_lightsheet/Christopher/Test_scripts/multi-channel/
@@ -3371,7 +3376,95 @@ ls
 
 === Rename .czi files ===
 
+The renaming in the multi-channel data follows the exact same principle as in the single-channel data. Just modify the master file accordingly and then execute the '''rename-zeiss-files.sh''' script.
+
+<source lang="bash">
+###---------- Renaming .czi files ----------
+first_index="0"
+last_index="14"
+first_timepoint="1"
+angles_renaming=(1 2 3 4 5)
+
+##For padded zero 2 = 01; 3 = 001
+pad_rename_czi="2"
+
+##Change directory and pattern
+source_pattern=/2014-02-14_Stock19_Stock17\(\{index\}\).czi
+target_pattern=/spim_TL\{timepoint\}_Angle\{angle\}.czi
+</source>
+
+The '''.czi''' files should now be renamed:
+
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/Test_scripts/multi-channel/
+ls
+spim_TL01_Angle1.czi
+spim_TL01_Angle2.czi
+spim_TL01_Angle3.czi
+spim_TL01_Angle4.czi
+spim_TL01_Angle5.czi
+spim_TL02_Angle1.czi
+spim_TL02_Angle2.czi
+spim_TL02_Angle3.czi
+spim_TL02_Angle4.czi
+spim_TL02_Angle5.czi
+spim_TL03_Angle1.czi
+spim_TL03_Angle2.czi
+spim_TL03_Angle3.czi
+spim_TL03_Angle4.czi
+spim_TL03_Angle5.czi
+</source>
+
 === Resave .czi files ===
+
+The resaving also relies on the same scripts as for the single-channel data. Specify the correct angles and the correct parameter for the padded zero: 
+
+<source lang="bash">
+###---------- Resaving .czi or ome.tiff as .tif ----------
+##use ometiff_resave for ome.tiff and czi_resave for .czi
+angle_resaving="1 2 3 4 5"
+
+##For padded zero 2 = 01; 3 = 001
+pad_resave="2"
+</source>
+
+Create the jobs by executing the '''create-resaving-jobs''' script and submit them by using the '''submit-jobs''' script. 
+
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/Test_scripts/multi-channel/
+ls
+spim_TL01_Angle1.czi
+spim_TL01_Angle1.tif
+spim_TL01_Angle2.czi
+spim_TL01_Angle2.tif
+spim_TL01_Angle3.czi
+spim_TL01_Angle3.tif
+spim_TL01_Angle4.czi
+spim_TL01_Angle4.tif
+spim_TL01_Angle5.czi
+spim_TL01_Angle5.tif
+spim_TL02_Angle1.czi
+spim_TL02_Angle1.tif
+spim_TL02_Angle2.czi
+spim_TL02_Angle2.tif
+spim_TL02_Angle3.czi
+spim_TL02_Angle3.tif
+spim_TL02_Angle4.czi
+spim_TL02_Angle4.tif
+spim_TL02_Angle5.czi
+spim_TL02_Angle5.tif
+spim_TL03_Angle1.czi
+spim_TL03_Angle1.tif
+spim_TL03_Angle2.czi
+spim_TL03_Angle2.tif
+spim_TL03_Angle3.czi
+spim_TL03_Angle3.tif
+spim_TL03_Angle4.czi
+spim_TL03_Angle4.tif
+spim_TL03_Angle5.czi
+spim_TL03_Angle5.tif
+</source>
+
 
 === Split channels ===
 
