@@ -52,12 +52,15 @@ Since we want to build a feature that does not need the image data, the construc
 
 As you noted in the above method, each analyzer is meant to operate only on one frame. It can access the whole model, but it is supposed to compute the values for all the spots of a single frame. This permits multithreading: The factory will be asked to generate as many analyzer as there is threads available, and they will run concurrently. And we, as we build our analyzer - do not have to worry about concurrent issues. 
 
-A little word about the expected execution context: The TrackMate GUI operates in steps, as you have noted. First the detection step generates spots, then they are filtered, then they are tracked, etc... Therefore, when I said earlier that the whole model is available for calculation, this is not entirely true. When using the GUI, spot numerical features are used to filter spots after they have been detected.  So that this stage, there is no tracks yet. There is not even filtered spots. A spot feature cannot depend on this object, and this is a built-in limitation of TrackMate. So be cautious on what your numerical feature depends. 
+A little word about the expected execution context: The TrackMate GUI operates in steps, as you have noted. First the detection step generates spots, then they are filtered, then they are tracked, etc... Therefore, when I said earlier that the whole model is available for calculation, this is not entirely true. When using the GUI, spot numerical features are used to filter spots after they have been detected.  So that this stage, there is no tracks yet. There is not even filtered spots. A spot feature cannot depend on these objects, and this is a built-in limitation of TrackMate. So be cautious on what your numerical feature depends. 
 
-In our case, we do not have to worry. Here is what the <code>process()</code> method of the analyzer looks like:
+Before we go into the code, here is quick recap on the TrackMate model API. After the detection step, the spots are stored in a [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/SpotCollection.java SpotCollection] object. It gathers all the spots, and can deal with their filtering visibility, etc... Spot analyzers are meant to operate only on one frame, so we will need to require the spot of this frame. The target frame is specified at construction time, by the factory. 
+
+The [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/spot/SpotAnalyzer.java SpotAnalyzer] interface is pretty naked. There is nothing specific, and all the logic has to go in the <code>process()</code> method. There is no need to have a method to return the results of the computation, for spot objects can store their own feature values, thanks to the <code>Spot.putFeature(feature, value)</code> method.
+
+Here is what the <code>process()</code> method of the analyzer looks like:
 
 <source lang="java">
-
 	@Override
 	public boolean process()
 	{
@@ -120,16 +123,40 @@ In our case, we do not have to worry. Here is what the <code>process()</code> me
 	}
 </source>
 
+The code for the whole class is [https://github.com/fiji/TrackMate-examples/blob/master/src/main/java/plugin/trackmate/examples/spotanalyzer/RelativeIntensitySpotAnalyzer.java here].
 
 
 
+== Using SciJava priority to determine order of execution ==
+
+Now it's time to discuss the delicate subject of dependency. 
+
+As stated above, our new analyzer depends on some other features to compute. Therefore, the analyzers that calculate these other features need to run ''before'' our analyzer. Or else you will bet <code>NullPointerException</code>s randomly. 
+
+TrackMate does not offer a real in-depth module dependency management. It simply offers to '''determine''' the order of analyzer execution thanks to the [[SciJava]] plugin '''priority parameter'''. 
+
+For instance, if you check the annotation part of the spot analyzer factory, you can see that there is an extra parameter, <code>priority</code>:
+
+<source lang="java">
+@Plugin( type = SpotAnalyzerFactory.class, priority = 1d )
+</source>
+
+This priority parameter accepts a <code>double</code> as value and this value determines the order of execution. Careful, the rule is the opposite of what would make sense for a priority: 
+
+{{ambox | text =Feature analyzers are executed in order according to '''increasing priority'''. This means that analyzers with the greatest priority are executed last. }}
+
+By convention, if your feature analyzer depends on the features calculated by N other analyzers, you take the larger priority of these analyzers, and add 1. In our case, we depend on the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/spot/SpotIntensityAnalyzerFactory.java SpotIntensityAnalyzerFactory], which as a priority of 0 (the default if the parameter is unspecified). So quite logically, we set the priority of our analyzer to be 1. This ensures the proper execution order.
 
 
+
+== Wrapping up ==
+
+Apart from the discussion on the priority and execution order, there is not much to say.  It works!
 
 [[File:TrackMate CustomSpotAnalyzer 01.png|600px]]
 
 
 
-
+[[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 07:32, 11 March 2014 (CDT)
 
 [[Category:Tutorials]]
