@@ -3820,12 +3820,3 @@ runtime.exit(0);
 </source>
 
 Create the fusion jobs by executing the '''create_fusion_jobs''' and submit the to the cluster.
-
-=== Multi-view deconvolution ===
-
-==== External transformation ====
-
-==== Deconvolution ====
-
-<source lang="bash">
-</source>
