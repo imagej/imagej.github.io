@@ -3724,6 +3724,103 @@ chmod a+x dublicate_rename_registration.sh
 
 === Content based multi-view fusion ===
 
+For the content based multi-view fusion use '''select_channel="Multi-channel"'''. Specify the registration, the downsampling and the cropping accordingly:
+
+<source lang="bash">
+###---------- Multi-view content based fusion ----------
+##Change between Single-Channel or Mulit-channel fusion
+##If single channel then comment out 2nd fusion command in fusion.bsh script
+#select_channel="Single-channel"
+select_channel="Multi-channel"
+
+##Use timelapse registration or Individual registration
+##For timelapse registration specify reference timepoint:
+registration_fusion="\"Time-point registration (reference=1) of channel 0\""
+##Individual registration:
+#"\"Individual registration of channel 0\""
+downsample_output="2"
+
+##Cropping parameters of full resolution
+x="0"
+y="314"
+z="320"
+w="1858"
+h="758"
+d="740"
+</source>
+
+In the '''fusion.bsh''' script comment in the additional registration '''"registration=[" + registration_fusion + "]" + " " +''' line (Line 46). 
+
+<source lang="java">
+import ij.IJ;
+import java.lang.Runtime;
+ 
+runtime = Runtime.getRuntime();
+System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
+ 
+select_channel = System.getProperty( "select_channel" );
+dir = System.getProperty( "dir" );
+pattern_of_spim = System.getProperty( "pattern_of_spim" );
+timepoint = System.getProperty( "timepoint" );
+angles = System.getProperty( "angles" );
+ 
+fusion_method = System.getProperty( "fusion_method" );
+process_views_in_paralell = System.getProperty( "process_views_in_paralell" );
+blending = System.getProperty( "blending" );
+weights = System.getProperty( "weights" );
+downsample_output = Integer.parseInt( System.getProperty( "downsample_output" ) );
+registration_fusion = System.getProperty( "registration_fusion" );
+ 
+x = System.getProperty( "x" );
+y = System.getProperty( "y" );
+z = System.getProperty( "z" );
+w = System.getProperty( "w" );
+h = System.getProperty( "h" );
+d = System.getProperty( "d" );
+ 
+fused_image_output = System.getProperty( "fused_image_output" );
+ 
+System.out.println( "Channel=" + select_channel );
+System.out.println( "Registration=" + registration_fusion );
+System.out.println( "dir=" + dir );
+System.out.println( "Pattern=" + pattern_of_spim );
+System.out.println( "timepoint=" + timepoint );
+System.out.println( "angles=" + angles );
+ 
+System.out.println( "fusion_method=" + fusion_method );
+System.out.println( "process_views_in_paralell=" + process_views_in_paralell );
+System.out.println( blending );
+System.out.println( weights );
+System.out.println( "Downsample=" + downsample_output );
+System.out.println( "cropping=" + x + " " + y + " " + z + " " + w + " " + h + " " + d );
+System.out.println( "fused_image_output=" + fused_image_output );
+ 
+IJ.run("Multi-view fusion", "select_channel=" + select_channel + " " +
+    "registration=[" + registration_fusion + "]" + " " +
+    "registration=[" + registration_fusion + "]" + " " +        //Comment out for Single-Channel fusion
+    "spim_data_directory=" + dir + " " +
+    "pattern_of_spim=" + pattern_of_spim + " " +
+    "timepoints_to_process=" + timepoint + " " +
+    "angles=" + angles + " " +
+    "fusion_method=[" + fusion_method + "]" + " " +
+    "process_views_in_paralell=" + process_views_in_paralell + " " +
+    " + blending + " + " " +
+    " + weights + " + " " +
+    "downsample_output=" + downsample_output + " " +
+    "crop_output_image_offset_x=" + x + " " +
+    "crop_output_image_offset_y=" + y + " " +
+    "crop_output_image_offset_z=" + z + " " +
+    "crop_output_image_size_x=" + w + " " +
+    "crop_output_image_size_y=" + h + " " +
+    "crop_output_image_size_z=" + d + " " +
+    "fused_image_output=[" + fused_image_output + "]");
+ 
+/* shutdown */
+runtime.exit(0);
+</source>
+
+Create the fusion jobs by executing the '''create_fusion_jobs''' and submit the to the cluster.
+
 === Multi-view deconvolution ===
 
 ==== External transformation ====
