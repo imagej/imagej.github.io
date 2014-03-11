@@ -3302,7 +3302,7 @@ The '''master file''' has all the necessary information to easily switch between
 
 Since we already did set up the master file and the scripts properly the only things we need to manipulate this time are the processing parameters (see First time using the master file)
 
-Change the data directory '''dir='''. The example dataset has again 3 timepoints but 5 angles. For multi-channel processing select the option for multi-channel data: '''pattern_of_spim="spim_TL{tt}_Angle{a}_Channel{c}.tif"'''.
+Change the data directory '''dir='''. The example dataset has 3 timepoints and 5 angles. For multi-channel processing select the option for multi-channel data: '''pattern_of_spim="spim_TL{tt}_Angle{a}_Channel{c}.tif"'''.
 Also change the reference timepoint and the calibration settings.
 
 <source lang="bash">
