@@ -217,7 +217,7 @@ The <code>@Plugin( type = TrackAnalyzer.class )</code> annotation accepts extra 
 
 The first one we will see is the <code>enabled</code> value. It accepts a <code>boolean</code> as value and by default it is <code>true</code>. Its usage is obvious:
 
-{{ambox | If you want to disable a TrackMate module, add the <code>enabled = false<code> annotation parameter.}}
+{{ambox | text = If you want to disable a TrackMate module, add the <code>enabled = false<code> annotation parameter.}}
 
 Disabled modules are not even instantiated. They are as good as dead, except that you can change your mind easily. By the way, you can see that the TrackMate source tree has many of these disabled modules...
 
