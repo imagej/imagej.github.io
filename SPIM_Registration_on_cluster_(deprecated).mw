@@ -1606,9 +1606,6 @@ Currently the master file is useable for the following steps.
 * Registration
 * Timelapse registration
 * Content based multi-view fusion
-* External transformation
-* Multi-view deconvolution
-
 
 All the scripts now work with padded zeros. 
 
