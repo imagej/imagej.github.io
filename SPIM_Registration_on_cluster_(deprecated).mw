@@ -3662,7 +3662,7 @@ The time-lapse registration uses the already defined multi-view registration. Sp
 timelapse_timepoint="1-3"
 </source>
 
-Create the register-timelapse.job by executin tht '''create-timelapse-jobs''' and then submit them to the cluster.
+Create the register-timelapse.job by executing the '''create-timelapse-jobs''' and then submit them to the cluster.
 
 === Dublicate registration files ===
 
