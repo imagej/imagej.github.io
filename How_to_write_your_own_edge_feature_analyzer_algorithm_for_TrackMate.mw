@@ -297,7 +297,7 @@ public class EdgeAngleAnalyzer implements EdgeAnalyzer
 
 and that's it. Let me repeat:
 
-{{ambox | To make a TrackMate module discoverable in TrackMate, just annotate its class with <code>@Plugin( type = TheTrackMateModuleClassYouAreExtending.class )</code>.}}
+{{ambox | text= To make a TrackMate module discoverable in TrackMate, just annotate its class with <code>@Plugin( type = TheTrackMateModuleClassYouAreExtending.class )</code>.}}
 
 Just the line <code>@Plugin( type = EdgeAnalyzer.class )</code> is enough. There are also mechanisms that allow fine tuning of priority, visibility (in the GUI menus), or enabling/disabling, but we will see this later.  
 
