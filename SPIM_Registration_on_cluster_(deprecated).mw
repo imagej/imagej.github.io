@@ -2163,11 +2163,27 @@ done
 
 </source>
 
-Execute the script (use chmod a+x when first executing a script).
+The script should now get all the necessary parameters from the '''master file'''. Execute the script (use chmod a+x when first executing a script).
 
 <source lang="bash">
 chmod a+x rename-zeiss_files.sh
 ./rename-zeiss_files.sh
+</source>
+
+The .czi files should now be renamed accordingly:
+
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel
+ls
+spim_TL01_Angle1.czi
+spim_TL01_Angle2.czi
+spim_TL01_Angle3.czi
+spim_TL02_Angle1.czi
+spim_TL02_Angle2.czi
+spim_TL02_Angle3.czi
+spim_TL03_Angle1.czi
+spim_TL03_Angle2.czi
+spim_TL03_Angle3.czi
 </source>
 
 === Resave .czi files ===
