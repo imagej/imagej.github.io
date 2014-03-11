@@ -2489,7 +2489,7 @@ done
 
 The '''registration.bsh''' script. Important here is to comment out the indicated parts depending on the registration method. Otherwise the script may not work properly. 
 
-<source lang="bash">
+<source lang="java">
 import ij.IJ;
 import ij.ImagePlus;
 import java.lang.Runtime;
