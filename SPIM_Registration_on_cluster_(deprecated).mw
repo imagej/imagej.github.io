@@ -1717,7 +1717,7 @@ select_channel="Single-channel"
 ##For timelapse registration specify reference timepoint:
 registration_fusion="\"Time-point registration (reference=1) of channel 0\""
 ##Individual registration:
-#"\"Individual registration of channel 0\""
+#registration_fusion="\"Individual registration of channel 0\""
 downsample_output="2"
 
 ##Cropping parameters of full resolution
