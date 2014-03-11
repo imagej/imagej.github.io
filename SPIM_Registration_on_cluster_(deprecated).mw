@@ -2435,7 +2435,7 @@ done
 
 === Multi-view registration ===
 
-For the registration use the relevant part in the '''master file'''. Change the pattern of the spim data accordingly. You can choose between Difference of mean and Differnce of gaussian registration, change the parameters accordingly. It is important to comment out for example the Difference of Gaussian parts in the '''registration.bsh''' script when you want to use the Difference of mean registration. There will be an error otherwise.
+For the registration use the relevant part in the '''master file'''. Change the pattern of the spim data accordingly. You can choose between Difference of mean and Difference of gaussian registration, change the parameters accordingly. It is important to comment out for example the Difference of Gaussian parts in the '''registration.bsh''' script when you want to use the Difference of mean registration. There will be an error otherwise.
 
 <source lang="bash">
 ###---------- Multi-view registration (Difference of mean or Difference of Gaussian) ----------
