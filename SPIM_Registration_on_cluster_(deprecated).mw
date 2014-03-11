@@ -2168,7 +2168,7 @@ done
 
 </source>
 
-The script should now get all the necessary parameters from the '''master file'''. Execute the script (use chmod a+x when first executing a script).
+The script should now get all the necessary parameters from the '''master file'''. Execute the script (use chmod a+x when executing a script the first time).
 
 <source lang="bash">
 chmod a+x rename-zeiss_files.sh
