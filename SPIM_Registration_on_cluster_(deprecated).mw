@@ -2836,9 +2836,29 @@ done
 
 === Multi-view deconvolution ===
 
+Before performing multi-view deconvolution we need to apply the external transformation onto the registration files for downsampling the deconvolution. Make a copy of the registration files as backup before applying the external transformation. 
 
 ==== External transformation ====
 
+For the external transformation in the master file specify the pattern of the spim files, the timepoints that need to be transformed and for downsampling twice use 0.5:
+
+<source lang="bash">
+###---------- External transformation for multi-view deconvolution ----------
+##Caution: Before applying the exteranl transformation make a copy of the registration files!
+##Only single channel, use external transformation for each individual channel
+pattern_extrans="spim_TL{tt}_Angle{a}.tif"
+#pattern_extrans="spim_TL{tt}_Angle{a}_Channel1.tif"
+
+##timepoints:
+external_transformation_timepoint="1-3"
+
+##For downsampling 2x use 0.5:
+m00="0.5"
+m11="0.5"
+m22="0.5"
+</source>
+
+The '''create_external_transformation''' script:
 
 <source lang="bash">
 #!/bin/bash
@@ -2855,6 +2875,7 @@ mkdir -p $jobs_external_transformation
 	chmod a+x "$job"
 </source>
 
+The '''external_transformation.bsh''' script:
 
 <source lang="java">
 import ij.IJ;
@@ -2906,6 +2927,7 @@ runtime.exit(0);
 
 </source>
 
+Submit the external transformation job to the cluster with the '''submit-jobs''' script:
 
 <source lang="bash">
 #!/bin/bash
