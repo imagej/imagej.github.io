@@ -1614,7 +1614,7 @@ All the scripts now work with padded zeros.
 
 == Master file ==
 
-
+We will discuss each section of this file with the associated processing step.
 
 <source lang="bash">
 #!/bin/bash
