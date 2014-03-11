@@ -1614,6 +1614,17 @@ All the scripts now work with padded zeros.
 
 == Master file ==
 
+There are two big parts:
+
+1.Processing Parameters
+
+2.Directories for scripts and advanced settings for processing
+
+The first part contains everything relevant for processing and will be modified for each dataset. It is further structured according to each sequential processing step.  
+
+The second part contains the links for the working directories and scripts. Since the jobs scripts should rest at one particular location these links need to be changed the first time you start processing. 
+This part also contains more advanced settings for registration, fusion and deconvolution. Which should be only touched when fully understanding these steps. 
+
 We will discuss each section of this file with the associated processing step.
 
 <source lang="bash">
