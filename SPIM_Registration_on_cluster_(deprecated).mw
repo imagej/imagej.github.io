@@ -2697,9 +2697,9 @@ bsub -q short -n 12 -W 00:10 -R rusage[mem=10000] -R span[hosts=1] -o "out.%J" -
 
 === Content based multi-view fusion ===
 
-The relevant part in the '''master file''': For single-channel data use '''select_channel="Single-channel"'''.
+The relevant part in the '''master file''': 
 
-For using the timelapse registration select '''registration_fusion="\"Time-point registration (reference=1) of channel 0\""''' and specifify the correct reference timepoint in '''(reference=1)'''. If you want to use the registration of the individual timepoints for the fusion select '''registration_fusion="\"Individual registration of channel 0\""''' instead. 
+For single-channel data use '''select_channel="Single-channel"'''. For using the timelapse registration select '''registration_fusion="\"Time-point registration (reference=1) of channel 0\""''' and specifify the correct reference timepoint in '''(reference=1)'''. If you want to use the registration of the individual timepoints for the fusion select '''registration_fusion="\"Individual registration of channel 0\""''' instead. 
 
 Specify how much you want to downsample the fusion. However always use the cropping parameters for the full resolution when defining the cropping area.  
 
