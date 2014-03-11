@@ -3576,6 +3576,43 @@ do
 done
 </source>
 
+The split files will be now saved in a new directory:
+
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/Test_scripts/multi-channel/channel_split
+ls
+spim_TL01_Angle1_Channel0.tif
+spim_TL01_Angle1_Channel1.tif
+spim_TL01_Angle2_Channel0.tif
+spim_TL01_Angle2_Channel1.tif
+spim_TL01_Angle3_Channel0.tif
+spim_TL01_Angle3_Channel1.tif
+spim_TL01_Angle4_Channel0.tif
+spim_TL01_Angle4_Channel1.tif
+spim_TL01_Angle5_Channel0.tif
+spim_TL01_Angle5_Channel1.tif
+spim_TL02_Angle1_Channel0.tif
+spim_TL02_Angle1_Channel1.tif
+spim_TL02_Angle2_Channel0.tif
+spim_TL02_Angle2_Channel1.tif
+spim_TL02_Angle3_Channel0.tif
+spim_TL02_Angle3_Channel1.tif
+spim_TL02_Angle4_Channel0.tif
+spim_TL02_Angle4_Channel1.tif
+spim_TL02_Angle5_Channel0.tif
+spim_TL02_Angle5_Channel1.tif
+spim_TL03_Angle1_Channel0.tif
+spim_TL03_Angle1_Channel1.tif
+spim_TL03_Angle2_Channel0.tif
+spim_TL03_Angle2_Channel1.tif
+spim_TL03_Angle3_Channel0.tif
+spim_TL03_Angle3_Channel1.tif
+spim_TL03_Angle4_Channel0.tif
+spim_TL03_Angle4_Channel1.tif
+spim_TL03_Angle5_Channel0.tif
+spim_TL03_Angle5_Channel1.tif
+</source>
+
 === Multi-view registration ===
 
 === Timelapse registration ===
