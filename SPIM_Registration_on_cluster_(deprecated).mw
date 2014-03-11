@@ -1873,21 +1873,7 @@ Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 
 === First steps ===
 
-<source lang="bash">
-cd /projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel
-ls
-2013-11-14_His-YFP.czi
-2013-11-14_His-YFP(1).czi
-2013-11-14_His-YFP(2).czi
-2013-11-14_His-YFP(3).czi
-2013-11-14_His-YFP(4).czi
-2013-11-14_His-YFP(5).czi
-2013-11-14_His-YFP(6).czi
-2013-11-14_His-YFP(7).czi
-2013-11-14_His-YFP(8).czi
-</source>
-
-Directory that contains the data: 
+Modify the master file accordingly. Directory that contains the data: 
 
 <source lang="bash">
 ###Data directory
@@ -1917,7 +1903,23 @@ xy_resolution="1"
 z_scaling="3.2643520832"
 </source>
 
+=== Rename .czi files ===
 
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel
+ls
+2013-11-14_His-YFP.czi
+2013-11-14_His-YFP(1).czi
+2013-11-14_His-YFP(2).czi
+2013-11-14_His-YFP(3).czi
+2013-11-14_His-YFP(4).czi
+2013-11-14_His-YFP(5).czi
+2013-11-14_His-YFP(6).czi
+2013-11-14_His-YFP(7).czi
+2013-11-14_His-YFP(8).czi
+</source>
+
+Since the Z.1 writes the first angle of the first timepoint without index we add (0) as the first index. 
 
 <source lang="bash">
 mv 2013-11-14_His-YFP.czi 2013-11-14_His-YFP(0).czi
@@ -1933,9 +1935,6 @@ ls
 2013-11-14_His-YFP(8).czi
 </source>
 
-
-
-=== Rename .czi files ===
 
 <source lang="bash">
 #!/bin/bash
