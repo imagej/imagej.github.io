@@ -3615,6 +3615,15 @@ spim_TL03_Angle5_Channel0.tif
 spim_TL03_Angle5_Channel1.tif
 </source>
 
+Since the data directory changed we need to use a different directory in the master file: 
+
+<source lang="bash">
+####--------------------------------- General Parameters ---------------------------------
+###Data directory
+#dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel/"
+dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel/channel-split"
+</source>
+
 === Multi-view registration ===
 
 === Timelapse registration ===
