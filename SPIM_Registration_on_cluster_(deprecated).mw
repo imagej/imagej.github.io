@@ -2361,6 +2361,19 @@ This script will return the number of the timepoint that is missing or has missi
 
 === Resave .ome.tiff files ===
 
+To resave '''.ome.tiff''' files as '''.tif''' we use the same part in the master file as when you would resave '''.czi''' files. In the relevant part in the master file we just need to specify the angles and if we used padded zeros: 
+
+<source lang="bash">
+###---------- Resaving .czi or ome.tiff as .tif ----------
+##use ometiff_resave for ome.tiff and czi_resave for .czi
+angle_resaving="1 2 3"
+ 
+##For padded zero 2 = 01; 3 = 001
+pad_resave="2"
+</source>
+
+The create '''create-ometiff-jobs''' file. Create the resaving jobs by executing this script:
+
 <source lang="bash">
 #!/bin/bash
 
@@ -2382,6 +2395,8 @@ do
 done
 
 </source>
+
+The '''resaving-ometiff.bsh''' script:
 
 <source lang="java">
 import ij.IJ;
@@ -2405,6 +2420,8 @@ IJ.saveAs("Tiff", dir + "spim_TL" + IJ.pad( timepoint, pad ) + "_Angle" + angle 
 /* shutdown */
 runtime.exit(0);
 </source>
+
+Submit the job files using the '''submit-jobs''' script:
 
 <source lang="bash">
 #!/bin/bash
