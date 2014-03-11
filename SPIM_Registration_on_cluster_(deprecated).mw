@@ -2943,6 +2943,25 @@ done
 
 ==== Deconvolution ====
 
+For deconvolution specify again the spim pattern, the number of iterations and the cropping parameters. The cropping area is defined on the downsampled data. Therefore divide the full resolution cropping area by the factor you downsampled the registration files. 
+
+<source lang="bash">
+###---------- Multi-view deconvolution ----------
+##Only for single channel, use deconvolution for each individual channel
+pattern_deconvo="spim_TL{tt}_Angle{a}.tif"
+#pattern_deconvo="spim_TL{tt}_Angle{a}_Channel1.tif"
+iter="1"
+ 
+##Cropping parameters: if downsampled divid fusion cropping parameters by this factor
+decox="50"
+decoy="113"
+decoz="177"
+decow="865"
+decoh="410"
+decod="377"
+</source>
+
+The '''create_deconvolution_jobs''' script:
 
 <source lang="bash">
 #!/bin/bash
@@ -2968,6 +2987,7 @@ do
 done
 </source>
 
+The '''deconvolution.bsh''' script: 
 
 <source lang="java">
 import ij.IJ;
@@ -3053,6 +3073,7 @@ runtime.exit(0);
 
 </source>
 
+Submit the deconvolution jobs using the '''submit-jobs''' script:
 
 <source lang="bash">
 #!/bin/bash
