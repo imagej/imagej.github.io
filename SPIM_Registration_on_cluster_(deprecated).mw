@@ -3476,7 +3476,7 @@ The channels are then split into separated files. The algorithm will output the 
 
 etc...
 
-In the '''master file''' Specify the number of angles and the directory where you want to save the resulting files:
+In the '''master file''' Specify the number of angles and give a name for a new directory within the data directory where you want to save the resulting files. This directory will be created for you:
 
 <source lang="bash">
 ###---------- Split Channels (Only for multi-channel data) ----------
