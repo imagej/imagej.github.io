@@ -3817,4 +3817,4 @@ IJ.run("Multi-view fusion", "select_channel=" + select_channel + " " +
 runtime.exit(0);
 </source>
 
-Create the fusion jobs by executing the '''create_fusion_jobs''' and submit the to the cluster.
+Create the fusion jobs by executing the '''create_fusion_jobs''' and submit them to the cluster.
