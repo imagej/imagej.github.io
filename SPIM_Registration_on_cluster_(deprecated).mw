@@ -2172,7 +2172,7 @@ chmod a+x rename-zeiss_files.sh
 ./rename-zeiss_files.sh
 </source>
 
-The .czi files should now be renamed accordingly:
+The .czi files are now be renamed accordingly:
 
 <source lang="bash">
 cd /projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel
