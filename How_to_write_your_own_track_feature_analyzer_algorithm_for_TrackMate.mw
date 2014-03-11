@@ -4,7 +4,9 @@ This article is the second in the series dedicated to extending TrackMate with y
 
 In this article, we will create a '''feature analyzer for tracks''' that calculate numerical values for whole tracks. To make it simple, and also to answer the request of a colleague, we will make an analyzer that reports the location of the starting and ending points of a track. 
 
-Actually, we will not learn much beyond what we saw previously. We will use the SciJava discovery mechanism without subtleties, as before. The only little change os that our analyzer will generate 6 numerical values instead of 1. 
+Actually, we will not learn much beyond what we saw previously. The only little change is that our analyzer will generate 6 numerical values instead of 1. 
+We will use the [[SciJava]] discovery mechanism as before, but just for the sake of it, we will introduce how to '''disable''' modules.
+
 
 
 == Track analyzers ==
@@ -203,9 +205,24 @@ Et ca marche !
 
 [[File:TrackMate TrackAnalyzerExample.png|600px]]
 
-In the next article we will build a spot analyzer and complicate things a bit, by introducing the notion of ''priority''. See you there.
+In the next article we will build a spot analyzer and complicate things a bit, by introducing the notion of ''priority''. But before this, a short word on how to disable a module.
 
 
-[[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 16:02, 7 March 2014 (CST)
+
+== How to disable a module ==
+
+Suppose you have in your code tree a TrackMate module you wish not to use anymore. The trivial way would be to delete its class, but here is another one what allows us to introduce [[SciJava]] plugin annotation parameters. 
+
+The <code>@Plugin( type = TrackAnalyzer.class )</code> annotation accepts extra parameters on top of the <code>type</code> one. They all take the shape of a <code>key = value</code> pair, and a few of them allow the fine tuning of the TrackMate module integration.
+
+The first one we will see is the <code>enabled</code> value. It accepts a <code>boolean</code> as value and by default it is <code>true</code>. Its usage is obvious:
+
+{{ambox | If you want to disable a TrackMate module, add the <code>enabled = false<code> annotation parameter.}}
+
+Disabled modules are not even instantiated. They are as good as dead, except that you can change your mind easily. By the way, you can see that the TrackMate source tree has many of these disabled modules...
+
+
+
+[[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 14:23, 11 March 2014 (CDT)
 
 [[Category:Tutorials]]
