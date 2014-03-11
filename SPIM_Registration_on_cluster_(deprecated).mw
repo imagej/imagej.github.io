@@ -2549,7 +2549,6 @@ IJ.run("Bead-based registration", "select_type_of_registration=" + type_of_regis
 	"pattern_of_spim=" + pattern + " " +
 	"timepoints_to_process=" + timepoint + " " +
 	"angles_to_process=" + angles + " " +
-//	"load_segmented_beads" + " " +
 	"bead_brightness=[" + bead_brightness + "]" + " " +
 	"subpixel_localization=[" + subpixel_localization + "]" + " " +
 	"specify_calibration_manually xy_resolution=" + xy_resolution + " z_resolution=" + z_scaling + " " +
