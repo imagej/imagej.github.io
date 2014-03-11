@@ -2357,6 +2357,8 @@ fi
 done
 </source>
 
+This script will return the number of the timepoint that is missing or has missing angles.
+
 === Resave .ome.tiff files ===
 
 <source lang="bash">
