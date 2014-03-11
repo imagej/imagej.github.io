@@ -1883,7 +1883,7 @@ Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 == Single-channel Processing ==
 
 === First steps ===
-We start by defining the general parameters of the spim dataset in the master file. First we give the directory that contains the data. The example timelapse has 3 timepoints and 3 angles. We need to modify the pattern of the spim data, define the reference timpoint and the calibration. For the sake of demonstration I included padded zeros in the pattern and will used padded zeros throughout the tutorial:
+We start by defining the general parameters of the spim dataset in the master file. First we give the directory that contains the data. Then we define the number of timepoints and angles, our example has 3 timepoints and 3 angles. Finally we need to modify the pattern of the spim data, define the reference timpoint and the calibration. For the sake of demonstration we included padded zeros in the pattern and will use padded zeros throughout the tutorial:
 
 <source lang="bash">
 ####--------------------------------- General Parameters ---------------------------------
