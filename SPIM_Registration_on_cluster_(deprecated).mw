@@ -1912,6 +1912,72 @@ jobs_split="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_
 ##Working script
 split="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/split_channels/split.bsh"
 
+####--------------------------------- Multi-view Registration ---------------------------------
+##Working directory
+jobs_registration="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/registration/"
+ 
+##Working script
+registration="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/registration/registration.bsh"
+ 
+##registration parameters
+type_of_registration="Single-channel"
+bead_brightness="\"Advanced ...\""
+subpixel_localization="\"3-dimensional quadratic fit (all detections)\""
+transformation_model="Affine"
+imglib_container="\"Array container (images smaller ~2048x2048x450 px)\""
+ 
+####--------------------------------- Timelapse registration ---------------------------------
+##Working directory
+jobs_timelapse="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/timelapse_registration/"
+ 
+##Working script
+timelapse_registration="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/timelapse_registration/time-lapse.bsh"
+ 
+####--------------------------------- Multi-view fusion ----------------------------------------
+##Working directory
+jobs_fusion="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/fusion/"
+ 
+##Working script
+fusion="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/fusion/fusion.bsh"
+ 
+##Fusion parameters
+fusion_method="\"Fuse into a single image\""
+process_views_in_paralell="All"
+blending="blending"
+weights="\"content_based_weights_(fast,\""
+fused_image_output="\"Save 2d-slices, one directory per time-point\""
+ 
+####--------------------------------- External transformation ---------------------------------
+##Working directory
+jobs_external_transformation="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/external_transformation/"
+ 
+##Working script
+external_transformation="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/external_transformation/external_transformation.bsh"
+ 
+####--------------------------------- Multi-view deconvolution ---------------------------------
+##Working directory
+jobs_deconvolution="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/deconvolution/"
+ 
+##Working script
+deconvolution="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/deconvolution/deconvolution.bsh"
+ 
+##Deconvolution parameters
+type_of_iteration="\"Efficient Bayesian - Optimization I (fast, precise)\""
+osem_acceleration="\"1 (balanced)\""
+use_tikhonov_regularization="use_tikhonov_regularization"
+Tikhonov_parameter="0.0006"
+compute="\"in 512x512x512 blocks\""
+compute_on="\"CPU (Java)\""
+psf_estimation="\"Extract from beads\""
+ 
+psf_display="\"Do not show PSF's\""
+load_input_images_sequentially="load_input_images_sequentially"
+fused_image_output="\"Save 2d-slices, one directory per time-point\""
+ 
+####--------------------------------- Rendering ---------------------------------
+##Fiji for rendering
+Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
+
 </source>
 
 == Single-channel Processing ==
