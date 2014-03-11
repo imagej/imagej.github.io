@@ -3613,7 +3613,7 @@ spim_TL03_Angle5_Channel0.tif
 spim_TL03_Angle5_Channel1.tif
 </source>
 
-Since the data directory changed we need to use a different directory in the master file: 
+We will proceed to work with the files were the channels are split. Since the data directory in these files is now different we need to use a different directory in the master file. From then on, all the output will be saved into this directory: 
 
 <source lang="bash">
 ####--------------------------------- General Parameters ---------------------------------
