@@ -2303,6 +2303,60 @@ done
 ./submit-jobs .
 </source>
 
+The '''.tif''' files can now be found in the data directory together with the '''.czi''' files:
+
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel
+ls
+spim_TL01_Angle1.czi
+spim_TL01_Angle1.tif
+spim_TL01_Angle2.czi
+spim_TL01_Angle2.tif
+spim_TL01_Angle3.czi
+spim_TL01_Angle3.tif
+spim_TL02_Angle1.czi
+spim_TL02_Angle1.tif
+spim_TL02_Angle2.czi
+spim_TL02_Angle2.tif
+spim_TL02_Angle3.czi
+spim_TL02_Angle3.tif
+spim_TL03_Angle1.czi
+spim_TL03_Angle1.tif
+spim_TL03_Angle2.czi
+spim_TL03_Angle2.tif
+spim_TL03_Angle3.czi
+spim_TL03_Angle3.tif
+</source>
+
+After this step inspect the '''.tif''' files and check if all of them are present and that they correspond to the '''.czi''' files. 
+
+To check if all the files are present use the '''checkpoint.sh''' script: 
+
+<source lang="bash">
+#!/bin/bash
+
+source /projects/tomancak_lightsheet/Christopher/pipeline/master
+
+
+for i in $timepoint
+
+        do
+          	i=`printf "%0${pad_resave}d" "$i"`
+                num=$(ls $dir/spim_TL"$i"_Angle*.tif |wc -l)
+
+                        if [ $num  -ne $num_angles ]
+
+        then
+            	echo "TL"$i": TP or angles missing"
+
+        else
+            	echo "TL"$i": Correct"
+
+fi
+
+done
+</source>
+
 === Resave .ome.tiff files ===
 
 <source lang="bash">
