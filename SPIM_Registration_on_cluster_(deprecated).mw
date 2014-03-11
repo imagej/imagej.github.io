@@ -2328,7 +2328,7 @@ spim_TL03_Angle3.czi
 spim_TL03_Angle3.tif
 </source>
 
-After this step inspect the '''.tif''' files and check if all of them are present and that they correspond to the '''.czi''' files. 
+After this step inspect the '''.tif''' files and check if all of them are present and that they correspond to the '''.czi''' files. If that is the case transfer the '''.czi''' files onto a tape for long term storage. 
 
 To check if all the files are present use the '''checkpoint.sh''' script: 
 
