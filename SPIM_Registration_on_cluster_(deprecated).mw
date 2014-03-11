@@ -1623,7 +1623,7 @@ All the scripts now work with padded zeros.
 
 ####--------------------------------- General Parameters ---------------------------------
 ###Data directory
-dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel"
+dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel/"
 
 ###Dataset core parameters
 timepoint="`seq 1 3`"
