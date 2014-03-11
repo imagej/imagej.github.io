@@ -2697,6 +2697,36 @@ bsub -q short -n 12 -W 00:10 -R rusage[mem=10000] -R span[hosts=1] -o "out.%J" -
 
 === Content based multi-view fusion ===
 
+The relevant part in the '''master file''': For single-channel data use '''select_channel="Single-channel"'''.
+
+For using the timelapse registration select '''registration_fusion="\"Time-point registration (reference=1) of channel 0\""''' and specifify the correct reference timepoint in '''(reference=1)'''. If you want to use the registration of the individual timepoints for the fusion select '''registration_fusion="\"Individual registration of channel 0\""''' instead. 
+
+Specify how much you want to downsample the fusion. However always use the cropping parameters for the full resolution when defining the cropping area.  
+
+<source lang="bash">
+###---------- Multi-view content based fusion ----------
+##Change between Single-Channel or Mulit-channel fusion
+##If single channel then comment out 2nd fusion command in fusion.bsh script
+select_channel="Single-channel"
+#select_channel="Multi-channel"
+ 
+##Use timelapse registration or Individual registration
+##For timelapse registration specify reference timepoint:
+registration_fusion="\"Time-point registration (reference=1) of channel 0\""
+##Individual registration:
+#registration_fusion="\"Individual registration of channel 0\""
+downsample_output="2"
+ 
+##Cropping parameters of full resolution
+x="100"
+y="226"
+z="355"
+w="1731"
+h="820"
+d="755"
+</source>
+
+Execute the '''create_fusion_jobs''' script for writing the fusion jobs:
 
 <source lang="bash">
 #!/bin/bash
@@ -2719,9 +2749,9 @@ do
 		-- --no-splash $fusion" >> "$job"
 	chmod a+x "$job"
 done
-
 </source>
 
+The '''fusion.bsh''' script, for single channel comment out the additional '''"registration=[" + registration_fusion + "]" + " " +''' line:
 
 <source lang="java">
 import ij.IJ;
@@ -2769,7 +2799,7 @@ System.out.println( "fused_image_output=" + fused_image_output );
 
 IJ.run("Multi-view fusion", "select_channel=" + select_channel + " " + 
 	"registration=[" + registration_fusion + "]" + " " +
-	"registration=[" + registration_fusion + "]" + " " +		//Comment out for Single-Channel fusion
+//	"registration=[" + registration_fusion + "]" + " " +		//Comment out for Single-Channel fusion
 	"spim_data_directory=" + dir + " " +
 	"pattern_of_spim=" + pattern_of_spim + " " +
 	"timepoints_to_process=" + timepoint + " " +
@@ -2792,6 +2822,7 @@ runtime.exit(0);
 
 </source>
 
+For submitting the fusion jobs execute the '''submit-jobs''' script:
 
 <source lang="bash">
 #!/bin/bash
