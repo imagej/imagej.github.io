@@ -3145,7 +3145,7 @@ do
 done
 </source>
 
-In the '''render-mov1.bsh''' script for getting a fixed orientation modify the transformation matrics and comment out the rotation function as well as the rotation command in the rendering part of the script. For rotation comment out the transformation matrics and the orientation command in the rendering part of the script. 
+In the '''render-mov1.bsh''' script for getting a fixed orientation modify the transformation matrics and comment out the rotation function (Line 99-103) as well as the rotation command (Line 116: '''transform''') in the rendering part of the script. For rotation comment out the transformation matrics (Line 93-94) and the orientation command (Line 115: '''orientation''') in the rendering part of the script. 
 
 <source lang="java">
 import java.lang.Runtime;
