@@ -1912,7 +1912,7 @@ z_scaling="3.2643520832"
 
 === Rename .czi files ===
 
-The exmaple dataset is in the aforementioned directory:
+The example dataset is in the aforementioned directory:
 
 <source lang="bash">
 cd /projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel
