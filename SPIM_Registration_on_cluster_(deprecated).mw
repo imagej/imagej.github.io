@@ -3626,6 +3626,33 @@ dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel/chann
 
 === Multi-view registration ===
 
+In the example dataset the beads were only visible in Channel1. We will perform a single-channel bead registration only on this channel. We therefore need to specify the spim data pattern accordingly: 
+
+'''channel_pattern_beads="spim_TL{tt}_Angle{a}_Channel1.tif"'''
+
+Change the detection parameters for the chosen detection method. 
+
+<source lang="bash">
+###---------- Multi-view registration (Difference of mean or Difference of Gaussian) ----------
+##Specify the Pattern for Detection of the beads single channel: spim_TL{t}_Angle{a}.tif
+##multi-channel: spim_TL{t}_Angle{a}_Channel1.tif were 1 is the Channel that contains the beads
+#channel_pattern_beads="spim_TL{tt}_Angle{a}.tif"
+channel_pattern_beads="spim_TL{tt}_Angle{a}_Channel1.tif"
+ 
+##Difference of mean (Comment out Difference of Gaussian parts in registration.bsh script)
+type_of_detection="\"Difference-of-Mean (Integral image based)\""
+radius1="2"
+radius2="3"
+threshold="0.009"
+ 
+##Difference of Gaussian (Comment out Differnce of Mean parts in registration.bsh script)
+#type_of_detection="\"Difference-of-Gaussian\""
+#initial_sigma="1.8000"
+#threshold_gaussian="0.0080"
+</source>
+
+Execute the '''create-registration-jobs''' script to create the jobs for registration and send them to the cluster by executing the '''submit-jobs''' script.
+
 === Timelapse registration ===
 
 === Dublicate registration files ===
