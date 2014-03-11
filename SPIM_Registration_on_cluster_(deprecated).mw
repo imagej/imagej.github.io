@@ -1872,32 +1872,29 @@ Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 == Single-channel Processing ==
 
 === First steps ===
-We start by defining the general parameters of the spim dataset in the master file. First we give the directory that contains the data: 
+We start by defining the general parameters of the spim dataset in the master file. First we give the directory that contains the data. The example timelapse has 3 timepoints and 3 angles. We need to modify the pattern of the spim data, define the reference timpoint and the calibration. For the sake of demonstration I included padded zeros in the pattern and will used padded zeros throughout the tutorial:
 
 <source lang="bash">
+####--------------------------------- General Parameters ---------------------------------
 ###Data directory
-dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel"
-</source>
-
-The example timelapse has 3 timepoints and 3 angles: 
-
-<source lang="bash">
+dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel/"
+ 
 ###Dataset core parameters
 timepoint="`seq 1 3`"
 angles="1,2,3"
 num_angles="3"
-</source>
-
-Next we need to modify the pattern of the spim data, define the reference timpoint and the calibration. For the sake of demonstration I included padded zeros in the pattern and will used padded zeros throughout the tutorial:
-
-<source lang="bash">
-##pattern of spim data:
+ 
+###pattern of spim data:
 pattern_of_spim="spim_TL{tt}_Angle{a}.tif"
-
-#Timelapse registration
+#pattern_of_spim="spim_TL{tt}_Angle{a}_Channel{c}.tif"
+##change pattern for single-channel: (e.g. spim_TL{tt}_Angle{a}.tif)
+##or multi-channel processing: (e.g. spim_TL{tt}_Angle{a}_Channel{c}.tif)
+##for padded zeros use tt as place holder
+ 
+###Timelapse registration
 referencetp="1"
-
-##Manual calibration
+ 
+###Manual calibration
 xy_resolution="1"
 z_scaling="3.2643520832"
 </source>
