@@ -3339,6 +3339,8 @@ The channels are then split into separated files. The algorithm will output the 
 
 etc...
 
+In the '''master file''' Specify the number of angles and the directory where you want to save the resulting files:
+
 <source lang="bash">
 ###---------- Split Channels (Only for multi-channel data) ----------
 ##Outputs channls as spim_TL{tt}_Angle{a}_Channel0,spim_TL{tt}_Angle{a}_Channel1 ...
@@ -3436,7 +3438,6 @@ do
 	bsub -q short -n 1  -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
 done
 </source>
-
 
 === Multi-view registration ===
 
