@@ -1980,7 +1980,7 @@ Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 
 </source>
 
-Then you need to change in each shell script particulary the '''create-jobs''' script the link to the '''master file'''.
+Then you need to change in each shell script particulary in the '''create-jobs''' scripts the link to the '''master file'''.
 
 This link is given in the 3rd line of each shell script. For example in the '''rename-zeiss-files.sh''':
 
