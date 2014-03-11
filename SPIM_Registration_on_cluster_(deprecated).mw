@@ -1870,6 +1870,46 @@ Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 
 == Single-channel Processing ==
 
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel
+ls
+2013-11-14_His-YFP.czi
+2013-11-14_His-YFP(1).czi
+2013-11-14_His-YFP(2).czi
+2013-11-14_His-YFP(3).czi
+2013-11-14_His-YFP(4).czi
+2013-11-14_His-YFP(5).czi
+2013-11-14_His-YFP(6).czi
+2013-11-14_His-YFP(7).czi
+2013-11-14_His-YFP(8).czi
+</source>
+
+Directory that contains the data: 
+
+dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel"
+
+The example timelapse has 3 timepoints and 3 angles: 
+
+timepoint="`seq 1 3`"
+angles="1,2,3"
+num_angles="3"
+
+<source lang="bash">
+mv 2013-11-14_His-YFP.czi 2013-11-14_His-YFP(0).czi
+ls
+2013-11-14_His-YFP(0).czi
+2013-11-14_His-YFP(1).czi
+2013-11-14_His-YFP(2).czi
+2013-11-14_His-YFP(3).czi
+2013-11-14_His-YFP(4).czi
+2013-11-14_His-YFP(5).czi
+2013-11-14_His-YFP(6).czi
+2013-11-14_His-YFP(7).czi
+2013-11-14_His-YFP(8).czi
+</source>
+
+
+
 === Rename .czi files ===
 
 <source lang="bash">
