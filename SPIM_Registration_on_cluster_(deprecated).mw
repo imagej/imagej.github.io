@@ -3305,7 +3305,7 @@ For the general parameters select the option for multi-channel data: '''pattern_
 <source lang="bash">
 ####--------------------------------- General Parameters ---------------------------------
 ###Data directory
-dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel/"
+dir="/projects/tomancak_lightsheet/Christopher/Test_scripts/multi-channel/"
  
 ###Dataset core parameters
 timepoint="`seq 1 3`"
@@ -3327,7 +3327,51 @@ xy_resolution="1"
 z_scaling="3.2643520832"
 </source>
 
-For renaming and resaving follow the same steps as when you would process single-channel data.
+<source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/Test_scripts/multi-channel/
+ls
+2014-02-14_Stock19_Stock17.czi
+2014-02-14_Stock19_Stock17(1).czi
+2014-02-14_Stock19_Stock17(2).czi
+2014-02-14_Stock19_Stock17(3).czi
+2014-02-14_Stock19_Stock17(4).czi
+2014-02-14_Stock19_Stock17(5).czi
+2014-02-14_Stock19_Stock17(6).czi
+2014-02-14_Stock19_Stock17(7).czi
+2014-02-14_Stock19_Stock17(8).czi
+2014-02-14_Stock19_Stock17(9).czi
+2014-02-14_Stock19_Stock17(10).czi
+2014-02-14_Stock19_Stock17(11).czi
+2014-02-14_Stock19_Stock17(12).czi
+2014-02-14_Stock19_Stock17(13).czi
+2014-02-14_Stock19_Stock17(14).czi
+</source>
+
+Add the (0) index to the first '''.czi''' file:
+
+<source lang="bash">
+mv 2014-02-14_Stock19_Stock17.czi 2014-02-14_Stock19_Stock17(0).czi
+ls
+2014-02-14_Stock19_Stock17(0).czi
+2014-02-14_Stock19_Stock17(1).czi
+2014-02-14_Stock19_Stock17(2).czi
+2014-02-14_Stock19_Stock17(3).czi
+2014-02-14_Stock19_Stock17(4).czi
+2014-02-14_Stock19_Stock17(5).czi
+2014-02-14_Stock19_Stock17(6).czi
+2014-02-14_Stock19_Stock17(7).czi
+2014-02-14_Stock19_Stock17(8).czi
+2014-02-14_Stock19_Stock17(9).czi
+2014-02-14_Stock19_Stock17(10).czi
+2014-02-14_Stock19_Stock17(11).czi
+2014-02-14_Stock19_Stock17(12).czi
+2014-02-14_Stock19_Stock17(13).czi
+2014-02-14_Stock19_Stock17(14).czi
+</source>
+
+=== Rename .czi files ===
+
+=== Resave .czi files ===
 
 === Split channels ===
 
