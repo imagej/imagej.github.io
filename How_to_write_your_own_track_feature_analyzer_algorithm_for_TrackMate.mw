@@ -221,6 +221,9 @@ The first one we will see is the <code>enabled</code> value. It accepts a <code>
 
 Like this:
 
+<source lang="java">
+@Plugin( type = TrackAnalyzer.class, enabled = false )
+</source>
 
 Disabled modules are not even instantiated. They are as good as dead, except that you can change your mind easily. By the way, you can see that the TrackMate source tree has many of these disabled modules...
 
