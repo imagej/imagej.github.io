@@ -1964,7 +1964,7 @@ target_pattern=/spim_TL\{timepoint\}_Angle\{angle\}.czi
 
 The first index is 0 since we have 3 timepoints with 3 angles, we have 9 timepoints in total. Thus the last index is 8. Then we define how the new name will start, the first timepoint will be 1 and there are three angles. For demonstration we will use padded zeros. 2 means the output will look like this: 01. 
 
-We use the rename-zeiss-files.sh script for this job:
+For renaming the .czi files we use the rename-zeiss-files.sh script:
 
 <source lang="bash">
 #!/bin/bash
@@ -2001,9 +2001,10 @@ done
 
 </source>
 
+Execute the script (use chmod a+x when first executing a script).
 
 <source lang="bash">
-chmod a+x
+chmod a+x rename-zeiss_files.sh
 ./rename-zeiss_files.sh
 </source>
 
