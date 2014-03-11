@@ -2577,6 +2577,14 @@ done
 
 === Timelapse registration ===
 
+The timelapse registration is using the registration parameters specified before and the reference timepoint specified in the general parameters. The part in the master file for timelapse registration looks like this: 
+
+<source lang="bash">
+###---------- Timelapse registration ----------
+timelapse_timepoint="1-3"
+</source>
+
+For creating the timelapse registration job (only one job) execute the '''create-timelapse-jobs''' script:
 
 <source lang="bash">
 #!/bin/bash
@@ -2598,6 +2606,7 @@ mkdir -p $jobs_timelapse
 	chmod a+x "$job"
 </source>
 
+For the '''time-lapse.bsh''' script comment out the same parts that you commented out for the '''registration.bsh''' script.  
 
 <source lang="java">
 import ij.IJ;
@@ -2620,12 +2629,12 @@ float z_scaling =Float.parseFloat( System.getProperty( "z_scaling" ) );
 transformation_model = System.getProperty( "transformation_model" );
 imglib_container = System.getProperty( "imglib_container" );
 
-//Parameters for difference of mean
+//Parameters for difference of mean !!Comment out for Difference of Gaussian!!
 int radius1 = Integer.parseInt( System.getProperty( "radius1" ) );
 int radius2 = Integer.parseInt( System.getProperty( "radius2" ) );
 float threshold = Float.parseFloat( System.getProperty( "threshold" ) );
 
-//Parameters for difference of gaussian
+//Parameters for difference of gaussian !!Comment out for Differnence of Mean!!
 //float initial_sigma = Float.parseFloat( System.getProperty( "initial_sigma" ) );
 //float threshold_gaussian = Float.parseFloat( System.getProperty( "threshold_gaussian" ) );
 
@@ -2661,11 +2670,11 @@ IJ.run("Bead-based registration", "select_type_of_registration=" + type_of_regis
 	"specify_calibration_manually xy_resolution=" + xy_resolution + " z_resolution=" + z_scaling + " " +
 	"transformation_model=" + transformation_model  + " " + 
 //	"imglib_container=[" + imglib_container + "] + " " +
-	"channel_0_radius_1=" + radius1 + " " +
-	"channel_0_radius_2=" + radius2 + " " +
-	"channel_0_threshold=" + threshold + " " +
-//	"channel_0_initial_sigma=" + initial_sigma + " " +
-//	"channel_0_threshold=" + threshold_gaussian + " " +
+	"channel_0_radius_1=" + radius1 + " " +  //Comment out for Difference of Gaussian
+	"channel_0_radius_2=" + radius2 + " " + //Comment out for Difference of Gaussian
+	"channel_0_threshold=" + threshold + " " + //Comment out for Difference of Gaussian
+//	"channel_0_initial_sigma=" + initial_sigma + " " + //Comment out for Difference of Mean
+//	"channel_0_threshold=" + threshold_gaussian + " " + //Comment out for Difference of Mean
 	"re-use_per_timepoint_registration" + " " +
 	"timelapse_registration" + " " +
 	"select_reference=[Manually (specify)]" + " " +
@@ -2678,6 +2687,7 @@ runtime.exit(0);
 
 </source>
 
+Submit the '''register-timelapse.job''' to the cluster using the '''submit-jobs''' script:
 
 <source lang="bash">
 #!/bin/bash
