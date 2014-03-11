@@ -2230,7 +2230,7 @@ Execute this script:
 ./create-resaving-jobs 
 </source>
 
-This should create for our example dataset jobs for each '''.czi''' file. 
+This should create jobs for each '''.czi''' file. 
 
 <source lang="bash">
 ls
