@@ -2233,6 +2233,7 @@ Execute this script:
 This should create jobs for each '''.czi''' file. 
 
 <source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/czi_resave/
 ls
 create-resaving-jobs
 resave-1-1.job
@@ -2251,6 +2252,7 @@ submit-jobs
 Each job file should contain the relevant parameters for the job, where to find '''FIJI''' and the actual job script:
 
 <source lang="bash">
+cd /projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/czi_resave/
 cat resave-1-1.job
 /sw/bin/xvfb-run -a /sw/users/tomancak/packages/Fiji.app/ImageJ-linux64 -Ddir=/projects/tomancak_lightsheet/Christopher/Test_scripts/single-channel/ -Dtimepoint=1 -Dangle=1 			
 -Dpad=2 -- --no-splash /projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/czi_resave/resaving.bsh
