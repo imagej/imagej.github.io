@@ -2487,7 +2487,7 @@ done
 
 </source>
 
-The '''registration.bsh''' script. Important here is to comment out the indicated parts depending on the registration method. Otherwise the script may not work properly. 
+The '''registration.bsh''' script. Important here is to comment out the indicated parts depending on the registration method. Otherwise the script may not work properly. For the Difference of Mean registration comment out Difference of Gaussian with Line 33-34 and 68-69. For Difference of Gaussian comment out Line 28-30 and Line 65-67. 
 
 <source lang="java">
 import ij.IJ;
