@@ -2041,6 +2041,8 @@ do
 done
 </source>
 
+These settings only need to be changed once if the job scripts and the master file stay in the same directories.
+
 == Single-channel Processing ==
 
 === First steps ===
