@@ -1980,6 +1980,67 @@ Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 
 </source>
 
+Then you need to change in each shell script particulary the '''create-jobs''' script the link to the '''master file'''.
+
+This link is given in the 3rd line of each shell script. For example in the '''rename-zeiss-files.sh''':
+
+<source lang="bash">
+#!/bin/bash
+
+source /projects/tomancak_lightsheet/Christopher/pipeline/master
+ 
+source_pattern=${dir}${source_pattern}
+target_pattern=${dir}${target_pattern}
+ 
+# --------------------------------------------------------
+ 
+i=${first_index}
+t=${first_timepoint}
+t=`printf "%0${pad_rename_czi}d" "$t"`
+ 
+while [ $i -le $last_index ]; do
+ 
+    for a in "${angles_renaming[@]}"; do
+        source=${source_pattern/\{index\}/${i}}
+        tmp=${target_pattern/\{timepoint\}/${t}}
+        target=${tmp/\{angle\}/${a}}
+         
+        echo ${source} ${target}   
+ 
+        mv ${source} ${target}
+        #cp ${source} ${target}
+        let i=i+1
+         
+    done
+    let t=t+1
+    t=`printf "%0${pad_rename_czi}d" "$t"`
+     
+done
+</source>
+
+Or the '''create-resaving-jobs''' file: 
+
+<source lang="bash">
+#!/bin/bash
+ 
+source /projects/tomancak_lightsheet/Christopher/pipeline/master
+ 
+mkdir -p $jobs_resaving
+ 
+for i in $timepoint
+ 
+do
+    for a in $angle_resaving
+    do
+        job="$jobs_resaving/resave-$i-$a.job"
+        echo $job
+        echo "$XVFB_RUN -a $Fiji -Ddir=$dir -Dtimepoint=$i -Dangle=$a \
+            -Dpad=$pad_resave -- --no-splash $resaving" >> "$job"
+        chmod a+x "$job"
+    done
+done
+</source>
+
 == Single-channel Processing ==
 
 === First steps ===
