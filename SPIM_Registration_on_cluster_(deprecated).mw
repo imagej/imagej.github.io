@@ -3666,9 +3666,22 @@ Create the register-timelapse.job by executing the '''create-timelapse-jobs''' a
 
 === Dublicate registration files ===
 
-<source lang="bash">
+For further processing we need registration files for both channels. Therefore we dublicate the existing registration files and rename them to the missing channel. We advise to make a backup of the registration files at this point. 
 
+In the master file specify which channel was registered ('''channel_source''') and which channel still needs registration files ('''channel_target''').
+
+<source lang="bash">
+###---------- Dublicate Registration files (Only for multi-channel data) ----------
+#Channel that contain the beads
+channel_source="1"
+channel_target="0"
+</source >
+
+For dublicating the registration files just execute the '''dublicate_rename_registration.sh''' script. 
+
+<source lang="bash">
 #!/bin/bash
+
 source /projects/tomancak_lightsheet/Christopher/pipeline/master
 
 reftp=${referencetp}
@@ -3704,6 +3717,10 @@ exit 0
 
 </source >
 
+<source lang="bash">
+chmod a+x dublicate_rename_registration.sh
+./dublicate_rename_registration.sh
+</source >
 
 === Content based multi-view fusion ===
 
