@@ -3086,6 +3086,10 @@ done
 
 === 3d Rendering ===
 
+In the '''master file''' specify the working directory and script for rendering single-channel data. Under '''source_rendering''' give the directory where to find the fusion or deconvolution output. Under '''target_directory''' give the name of a directory where to save the data within the data directory. A directory will be made for you. Specify the number of frames and the min max values for setting the brightness and contrast for the rendering. 
+
+At the moment it is not possible to put in the orientation or the rotation parameters from the master file. I will work on it. Thus you need to modify the '''render-mov1.bsh''' accordingly. 
+
 <source lang="bash">
 ###---------- Rendering ----------
 ##Two different sets of scripts, one for single channel and one for multi-channel; choose:
@@ -3114,6 +3118,8 @@ zSlices="369"
 #under construction
 </source>
 
+The '''create_render_jobs''' script:
+
 <source lang="bash">
 #!/bin/bash
 source /projects/tomancak_lightsheet/Christopher/pipeline/master
@@ -3138,6 +3144,8 @@ do
 	chmod a+x "$job"
 done
 </source>
+
+In the '''render-mov1.bsh''' script for getting a fixed orientation modify the transformation matrics and comment out the rotation function as well as the rotation command in the rendering part of the script. For rotation comment out the transformation matrics and the orientation command in the rendering part of the script. 
 
 <source lang="java">
 import java.lang.Runtime;
@@ -3231,13 +3239,13 @@ IJ.setMinAndMax( imp, minmax[0], minmax[1] );
 
 System.out.println("Orienting");
 
-/* orientation
-*orientation = new net.imglib2.realtransform.AffineTransform3D();
-*orientation.set(1.0, 0.0, 0.0, 0.0, 0.0, -0.978154, -0.20791358, 0.0, 0.0, 0.20791358, -0.978154, 0.0);
-*/
+/* orientation comment out for rotation */
+/*orientation = new net.imglib2.realtransform.AffineTransform3D();
+ *orientation.set(1.0, 0.0, 0.0, 0.0, 0.0, -0.978154, -0.20791358, 0.0, 0.0, 0.20791358, -0.978154, 0.0);
+ */
 
 
-/* rotation */
+/* rotation Comment out for orientation */
 theta = ( double )timepoint / 180.0 * Math.PI;
 orientation = new net.imglib2.realtransform.AffineTransform3D();
 orientation.rotate( 0, theta );
@@ -3246,14 +3254,16 @@ transform.preConcatenate(orientation);
 
 System.out.println("Rendering");
 
+//Comment out orientation or transformation accordingly:
+
 omp = net.imglib2.render.volume.Renderer.runGray(
 	imp,                                      //impSource 3d image, will be converted to singel channle float even if it is ARGB-color
 	imp.getWidth(),                       //@param width width of the target canvas
 	imp.getHeight(),                       //@param height height of the target canvas
 	0,                                        //@param min minimum intensity
 	minmax[ 1 ] * 2,                          //@param max maximum intensity
-	//orientation,				//orientation from transformation matrix	
-	transform,  				//orientation initial transformation assuming that the 3d volume is centered (e.g. export of Interactive Stack Rotation)
+	//orientation,				//orientation from transformation matrix comment out for rotation
+	transform,  				//orientation initial  transformation assuming that the 3d volume is centered (e.g. export of Interactive Stack Rotation) Comment out if orientation is used!
 	//( double )timepoint / ( double )nFrames,//animation a value between 0 and 1 that specifies the camera position along a predefined path
 	0,
 	1,                                        //stepSize z-stepping for the volume renderer higher is faster but less beautiful
@@ -3273,6 +3283,7 @@ runtime.exit(0);
 
 </source>
 
+Submit the rendering jobs by using the '''submit-jobs''' script:
 
 <source lang="bash">
 #!/bin/bash
