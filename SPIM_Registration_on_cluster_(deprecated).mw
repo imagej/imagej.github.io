@@ -3088,7 +3088,7 @@ done
 
 In the '''master file''' specify the working directory and script for rendering single-channel data. Under '''source_rendering''' give the directory where to find the fusion or deconvolution output. Under '''target_directory''' give the name of a directory where to save the data within the data directory. A directory will be made for you. Specify the number of frames and the min max values for setting the brightness and contrast for the rendering. 
 
-At the moment it is not possible to put in the orientation or the rotation parameters from the master file. I will work on it. Thus you need to modify the '''render-mov1.bsh''' accordingly. 
+At the moment it is not possible to put in the orientation or the rotation parameters from the master file. We will work on this part. Thus you need to modify the '''render-mov1.bsh''' accordingly. 
 
 <source lang="bash">
 ###---------- Rendering ----------
