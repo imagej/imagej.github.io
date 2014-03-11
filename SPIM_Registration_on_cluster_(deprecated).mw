@@ -3655,6 +3655,15 @@ Execute the '''create-registration-jobs''' script to create the jobs for registr
 
 === Timelapse registration ===
 
+The time-lapse registration uses the already defined multi-view registration. Specify the timepoints you want to use for timelapse registration.
+
+<source lang="bash">
+###---------- Timelapse registration ----------
+timelapse_timepoint="1-3"
+</source>
+
+Create the register-timelapse.job by executin tht '''create-timelapse-jobs''' and then submit them to the cluster.
+
 === Dublicate registration files ===
 
 <source lang="bash">
