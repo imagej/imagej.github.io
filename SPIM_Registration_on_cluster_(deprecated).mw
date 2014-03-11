@@ -3087,6 +3087,34 @@ done
 === 3d Rendering ===
 
 <source lang="bash">
+###---------- Rendering ----------
+##Two different sets of scripts, one for single channel and one for multi-channel; choose:
+##Working directory
+jobs_rendering="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/single_rendering"
+ 
+##Working script
+rendering="/projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/single_rendering/render-mov1.bsh"
+ 
+##source
+source_rendering="/output_fusion"
+ 
+##target directory
+target_rendering="/rendering"
+ 
+nframes="3"
+##Min Max
+minimum_rendering="0.6"
+maximum_rendering="0.005"
+ 
+##For multi-channel rendering:
+zSlices="369"
+ 
+##Orientation or rotation
+#still needs to be put into the script directly
+#under construction
+</source>
+
+<source lang="bash">
 #!/bin/bash
 source /projects/tomancak_lightsheet/Christopher/pipeline/master
 
@@ -3109,8 +3137,6 @@ do
 		-- --no-splash $rendering" >> "$job"
 	chmod a+x "$job"
 done
-
-
 </source>
 
 <source lang="java">
