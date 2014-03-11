@@ -1889,7 +1889,7 @@ angles="1,2,3"
 num_angles="3"
 </source>
 
-Next we need to modify the pattern of the spim data, define the reference timpoint and the calibration. For the sake of demonstration I included padded zeros:
+Next we need to modify the pattern of the spim data, define the reference timpoint and the calibration. For the sake of demonstration I included padded zeros in the pattern and will used padded zeros throughout the tutorial:
 
 <source lang="bash">
 ##pattern of spim data:
