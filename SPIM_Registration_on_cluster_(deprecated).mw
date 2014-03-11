@@ -2435,6 +2435,29 @@ done
 
 === Multi-view registration ===
 
+For the registration use the relevant part in the '''master file'''. Change the pattern of the spim data accordingly. You can choose between Difference of mean and Differnce of gaussian registration, change the parameters accordingly. It is important to comment out for example the Difference of Gaussian parts in the '''registration.bsh''' script when you want to use the Difference of mean registration. There will be an error otherwise.
+
+<source lang="bash">
+###---------- Multi-view registration (Difference of mean or Difference of Gaussian) ----------
+##Specify the Pattern for Detection of the beads single channel: spim_TL{t}_Angle{a}.tif
+##multi-channel: spim_TL{t}_Angle{a}_Channel1.tif were 1 is the Channel that contains the beads
+channel_pattern_beads="spim_TL{tt}_Angle{a}.tif"
+#channel_pattern_beads="spim_TL{tt}_Angle{a}_Channel1.tif"
+ 
+##Difference of mean (Comment out Difference of Gaussian parts in registration.bsh script)
+type_of_detection="\"Difference-of-Mean (Integral image based)\""
+radius1="2"
+radius2="3"
+threshold="0.008"
+ 
+##Difference of Gaussian (Comment out Differnce of Mean parts in registration.bsh script)
+#type_of_detection="\"Difference-of-Gaussian\""
+#initial_sigma="1.8000"
+#threshold_gaussian="0.0080"
+</source>
+
+The '''create-registration-jobs''' script. Execute this script for creating the registration jobs.
+
 <source lang="bash">
 #!/bin/bash
 source /projects/tomancak_lightsheet/Christopher/pipeline/master
@@ -2460,6 +2483,8 @@ do
 done
 
 </source>
+
+The '''registration.bsh''' script. Important here is to comment out the indicated parts depending on the registration method. Otherwise the script may not work properly. 
 
 <source lang="bash">
 import ij.IJ;
@@ -2536,10 +2561,10 @@ IJ.run("Bead-based registration", "select_type_of_registration=" + type_of_regis
 
 /* shutdown */
 runtime.exit(0);
-
-
 </source>
 
+
+Submit the jobs by using the '''submit-jobs''' script:
 
 <source lang="bash">
 #!/bin/bash
