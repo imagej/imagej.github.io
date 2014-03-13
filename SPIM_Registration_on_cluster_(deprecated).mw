@@ -3508,7 +3508,7 @@ You can check if all parameters are correct. The important line ist the last '''
 num_export_job="`seq 0 3`"
 </source>
 
-There must always be a "0" job. This job generates the '''.xml''' file. The other jobs will write '''.h5''' files that contain the actual data. The rest works analogous to the other parts of the pipline. Create the jobs with the '''create_export_jobs''' script: 
+There must always be a "0" job. This job generates the '''.xml''' file. The other jobs will write '''.h5''' files that contain the actual data. The rest works analogous to the other parts of the pipline. Create the jobs with the '''create_export_jobs''' script. This script will also create a new directory within the spim data directory. 
 
 <source lang="bash">
 #!/bin/bash
