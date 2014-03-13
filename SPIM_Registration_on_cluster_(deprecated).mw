@@ -1610,7 +1610,7 @@ Currently the master file is useable for the following steps.
 * Export to hdf5 format 
 
 
-All the scripts now work with padded zeros. 
+All the scripts work with padded zeros. 
 
 At the moment this tutorial is written for advanced users that already used the previous pipeline. 
 
