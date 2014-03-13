@@ -3508,7 +3508,7 @@ You can check if all parameters are correct. The important line ist the last '''
 num_export_job="`seq 0 3`"
 </source>
 
-There must always be a "0" job. This job be generates the '''.xml''' file. The other jobs will write '''.h5''' files that contain the actual data.
+There must always be a "0" job. This job generates the '''.xml''' file. The other jobs will write '''.h5''' files that contain the actual data.
 
 == Multi-channel Processing ==
 
