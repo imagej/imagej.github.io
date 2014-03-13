@@ -3541,7 +3541,133 @@ do
 done
 </source>
 
+Each job will use the '''export.bsh''' script:
+
 <source lang="java">
+import creator.Scripting;
+import creator.Scripting.PartitionedSequenceWriter;
+import creator.SetupAggregator;
+import creator.spim.imgloader.StackImageLoader;
+import mpicbg.spim.data.SequenceDescription;
+import mpicbg.spim.data.ViewRegistration;
+import mpicbg.spim.data.ViewRegistrations;
+import mpicbg.spim.data.ViewSetup;
+import net.imglib2.realtransform.AffineTransform3D;
+import viewer.hdf5.Partition;
+
+String path = System.getProperty( "path" );
+String exportXmlFilename = System.getProperty( "exportXmlFilename" );
+
+//int[][] spimresolutions = System.getProperty( "spimresolutions" );
+//int[][] spimsubdivisions = System.getProperty( "spimsubdivisions" );
+
+inputFilePattern = System.getProperty( "inputFilePattern" );
+channels = System.getProperty( "channels" );
+angles = System.getProperty( "angles" );
+timepoints = System.getProperty( "timepoints" );
+int referenceTimePoint = Integer.parseInt( System.getProperty( "referenceTimePoint" ) );
+//overrideImageZStretching = System.getProperty( "overrideImageZStretching" );
+float zStretching = Float.parseFloat( System.getProperty( "zStretching" ) );
+
+//int[][] fusionresolutions = System.getProperty( "fusionresolutions" );
+//int[][] fusionsubdivisions = System.getProperty( "fusionsubdivisions" );
+
+String filepath = System.getProperty( "filepath" );
+String filepattern = System.getProperty( "filepattern" );
+int numSlices = Integer.parseInt( System.getProperty( "numSlices" ) );
+int sliceValueMin = Integer.parseInt( System.getProperty( "sliceValueMin" ) ); 
+int sliceValueMax = Integer.parseInt( System.getProperty( "sliceValueMax" ) );
+
+int cropOffsetX = Integer.parseInt( System.getProperty( "cropOffsetX" ) ); 
+int cropOffsetY = Integer.parseInt( System.getProperty( "cropOffsetY" ) );
+int cropOffsetZ = Integer.parseInt( System.getProperty( "cropOffsetZ" ) );
+int scale = Integer.parseInt( System.getProperty( "scale" ) );
+
+
+String exportXmlFilename = path + exportXmlFilename;
+inputDirectory = path + "/";
+overrideImageZStretching = true;
+String filepath = path + filepath; 
+
+// ==============================================================================
+
+int[][] spimresolutions = { { 1, 1, 1 }, { 2, 2, 1 }, { 4, 4, 2 }, { 8, 8, 4 } };
+int[][] spimsubdivisions = { { 32, 32, 4 }, { 16, 16, 8 }, { 8, 8, 8 }, { 8, 8, 8 } };
+// int[][] spimresolutions = { { 1, 1, 1 }, { 2, 2, 1 }, { 4, 4, 2 } };
+// int[][] spimsubdivisions = { { 32, 32, 4 }, { 16, 16, 8 }, { 8, 8, 8 } };
+
+int[][] fusionresolutions = { { 1, 1, 1 }, { 2, 2, 2 }, { 4, 4, 4 }, { 8, 8, 8 } };
+int[][] fusionsubdivisions = { { 16, 16, 16 }, { 16, 16, 16 }, { 8, 8, 8 }, { 8, 8, 8 } };
+
+// =============================================================================
+
+System.out.println( "path=" + path );
+System.out.println( "Xml Filename=" + exportXmlFilename );
+System.out.println( "inputFilePattern=" + inputFilePattern );
+System.out.println( "channels=" + channels );
+System.out.println( "angles=" + angles );
+System.out.println( "timepoints=" + timepoints );
+System.out.println( "referenceTimePoint=" + referenceTimePoint);
+System.out.println( "overrideImageZStretching=" + overrideImageZStretching );
+System.out.println( "zStretching=" + zStretching );
+System.out.println( "filepath=" + filepath );
+System.out.println( "filepattern=" + filepattern );
+System.out.println( "sliceValueMin=" + sliceValueMin );
+System.out.println( "sliceValueMax=" + sliceValueMax );
+System.out.println( "cropOffsetX=" + cropOffsetX );
+System.out.println( "cropOffsetY=" + cropOffsetY );
+System.out.println( "cropOffsetZ=" + cropOffsetZ );
+System.out.println( "scale=" + scale ); 
+
+// =============================================================================
+
+spimseq = Scripting.createSpimRegistrationSequence( inputDirectory, inputFilePattern, channels, angles, timepoints, referenceTimePoint, overrideImageZStretching, zStretching );
+fusionTransforms = Scripting.getFusionTransforms( spimseq, scale, cropOffsetX, cropOffsetY, cropOffsetZ );
+fusion = Scripting.createFusionResult( spimseq, filepath, filepattern, numSlices, sliceValueMin, sliceValueMax, fusionTransforms );
+
+
+SetupAggregator aggregator = new SetupAggregator();
+aggregator.addSetups( spimseq, spimresolutions, spimsubdivisions );
+aggregator.addSetups( fusion, fusionresolutions, fusionsubdivisions );
+
+
+// splitting ...
+int timepointsPerPartition = 2;
+int setupsPerPartition = 0;
+ArrayList partitions = Scripting.split( aggregator, timepointsPerPartition, setupsPerPartition, exportXmlFilename );
+
+PartitionedSequenceWriter writer = new PartitionedSequenceWriter( aggregator, exportXmlFilename, partitions );
+printnumjobs = Boolean.parseBoolean( System.getProperty( "printnumjobs" ) );
+if ( printnumjobs )
+{
+	print( "number of jobs: " + ( writer.numPartitions() + 1 ) );
+}
+else
+{
+	jobid = Integer.parseInt( System.getProperty( "partition" ) );
+	if ( jobid == 0 )
+	{
+		writer.writeXmlAndLinks();
+	}
+	else
+	{
+		writer.writePartition( jobid - 1 );
+	}
+}
+
+/* shutdown */
+System.exit(0);
+</source>
+
+Send the jobs to the cluster using the '''submit-jobs''' script:
+
+<source lang="bash">
+#!/bin/bash
+
+for file in `ls ${1} | grep ".job$"`
+do
+	bsub -q short -n 8 -W 01:00 -R rusage[mem=10000] -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+done
 </source>
 
 == Multi-channel Processing ==
