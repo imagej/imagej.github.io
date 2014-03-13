@@ -3501,6 +3501,15 @@ Fail to open stderr file output/err.861957: No such file or directory.
 The stderr output is included in this report.
 </source>
 
+You can check if all parameters are correct. The important line ist the last '''number of jobs: 3'''. This means we need to adjust the '''master file''' accordingly: 
+
+<source lang="bash">
+##Number of jobs
+num_export_job="`seq 0 3`"
+</source>
+
+There must always be a "0" job. This job be generates the '''.xml''' file. The other jobs will write '''.h5''' files that contain the actual data.
+
 == Multi-channel Processing ==
 
 The '''master file''' has all the necessary information to easily switch between single-channel and multi-channel data. You just need to make the correct settings in the master file and use 2 additional scripts for the current pipeline to process multi-channel datasets. In this chapter I will point out the necessary changes specifically. 
