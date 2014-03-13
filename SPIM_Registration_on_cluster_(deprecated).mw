@@ -2033,6 +2033,16 @@ fused_image_output="\"Save 2d-slices, one directory per time-point\""
 ##Fiji for rendering
 Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 
+####--------------------------------- hdf5 export ---------------------------------
+ 
+##Fiji_tobias
+Fiji_export="/sw/users/pietzsch/packages/Fiji.app/ImageJ-linux64"
+ 
+##Working directory
+jobs_export="/projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/hdf5/"
+ 
+##Working script
+export="/projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/hdf5/export.bsh"
 </source>
 
 Then you need to change in each shell script particulary in the '''create-jobs''' scripts the link to the '''master file'''.
