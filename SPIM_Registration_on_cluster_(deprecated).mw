@@ -3508,7 +3508,41 @@ You can check if all parameters are correct. The important line ist the last '''
 num_export_job="`seq 0 3`"
 </source>
 
-There must always be a "0" job. This job generates the '''.xml''' file. The other jobs will write '''.h5''' files that contain the actual data.
+There must always be a "0" job. This job generates the '''.xml''' file. The other jobs will write '''.h5''' files that contain the actual data. The rest works analogous to the other parts of the pipline. Create the jobs with the '''create_export_jobs''' script: 
+
+<source lang="bash">
+#!/bin/bash
+
+source /projects/pilot_spim/Christopher/pipeline/master
+
+target_hdf5=${dir}${target_hdf5}
+
+echo $target_hdf5
+
+mkdir -p $target_hdf5
+
+for i in $num_export_job
+do
+  	job="$jobs_export/export-$i.job"
+        echo $job
+        echo "#!/bin/bash" > "$job"
+        #echo "source $config" >> "$job"
+        echo "$XVFB_RUN -a $Fiji_export -Xmx10g -Dpartition=$i \
+        -Dpath=$path -DexportXmlFilename=$exportXmlFilename -Dspimresolutions=$spimresolutions \
+        -Dspimsubdivisions=$spimsubdivisions -DinputFilePattern=$inputFilePattern \
+        -Dchannels=$channels_export -Dangles=$angles_export -Dtimepoints=$timepoint_export \
+        -DreferenceTimePoint=$referencetp_export -DoverrideImageZStretching=$overrideImageZStretching \
+        -DzStretching=$z_scaling -Dfusionresolutions=$fusionresolutions \
+        -Dfusionsubdivisions=$fusionsubdivisions -Dfilepath=$filepath -Dfilepattern=$filepattern \
+        -DnumSlices=$export_numSlices -DsliceValueMin=$sliceValueMin -DsliceValueMax=$sliceValueMax \
+        -DcropOffsetX=$cropOffsetX -DcropOffsetY=$cropOffsetY -DcropOffsetZ=$cropOffsetZ -Dscale=$scale \
+        -- --no-splash $export" >> "$job"
+        chmod a+x "$job"
+done
+</source>
+
+<source lang="java">
+</source>
 
 == Multi-channel Processing ==
 
