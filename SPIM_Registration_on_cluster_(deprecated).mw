@@ -3336,6 +3336,93 @@ do
 done
 </source>
 
+=== Hdf5 export ===
+
+The part in the master file covering the hdf5 export:
+
+<source lang="bash">
+###---------- hdf5 export ----------
+##Target directory
+target_hdf5="/hdf5/"
+
+##Number of jobs
+num_export_job="`seq 0 3`"
+
+#Path directory
+#path="\"/projects/pilot_spim/Christopher/Test_scripts/single-channel\""
+path="\"/projects/pilot_spim/Christopher/Test_scripts/multi-channel/channel_split\""
+
+#Xml filename
+exportXmlFilename="\"/hdf5/Test_single.xml\""
+
+##Spim pattern
+##For single channel:spim_TL{tt}_Angle{a}.tif
+##For 2 channel: spim_TL{tt}_Angle{a}_Channel{c}.tif
+#inputFilePattern="\"spim_TL{tt}_Angle{a}.tif\""
+inputFilePattern="\"spim_TL{tt}_Angle{a}_Channel{c}.tif\""
+
+##Channels: change for 2 channel data
+channels_export="\"0\""
+#channels_export="\"0,1\""
+
+angles_export="\"1,2,3,4,5\""
+timepoint_export="\"1-3\""
+referencetp_export="\"1\""
+
+filepath="\"/output_fusion/\""
+filepattern="\"%1\\\$d/img_tl%1\\\$d_ch%2\\\$d_z%3\\\$03d.tif\""
+
+export_numSlices="369"
+sliceValueMin="0"
+sliceValueMax="60000"
+
+cropOffsetX="0"
+cropOffsetY="314"
+cropOffsetZ="320"
+scale="2"
+
+</source>
+
+The first step is to determine the number of necessary jobs. Execute the '''run_numjobs''' script. This job runs throught the '''export.bsh''' script and calculates the number of necessary jobs. 
+
+<source lang="bash">
+#!/bin/bash
+
+source /projects/pilot_spim/Christopher/pipeline/master
+
+job="$jobs_export/getnumjobs"
+        echo $job
+        echo "#!/bin/bash" > "$job"
+        echo "$XVFB_RUN -a $Fiji_export -Xmx10g -Dprintnumjobs=true \
+                -Dpath=$path -DexportXmlFilename=$exportXmlFilename -Dspimresolutions=$spimresolutions \
+                -Dspimsubdivisions=$spimsubdivisions -DinputFilePattern=$inputFilePattern \
+                -Dchannels=$channels_export -Dangles=$angles_export -Dtimepoints=$timepoint_export \
+                -DreferenceTimePoint=$referencetp_export -DoverrideImageZStretching=$overrideImageZStretching \
+                -DzStretching=$z_scaling -Dfusionresolutions=$fusionresolutions \
+                -Dfusionsubdivisions=$fusionsubdivisions -Dfilepath=$filepath -Dfilepattern=$filepattern \
+                -DnumSlices=$export_numSlices -DsliceValueMin=$sliceValueMin -DsliceValueMax=$sliceValueMax \
+                -DcropOffsetX=$cropOffsetX -DcropOffsetY=$cropOffsetY -DcropOffsetZ=$cropOffsetZ -Dscale=$scale \
+                -- --no-splash $export" >> "$job"
+
+chmod a+x "$job"
+
+bsub -q short -n 1 -R span[hosts=1] -o "numjobsout" -e "output/err.%J" "$job"
+</source>
+
+This script will write a job file '''getnumjobs''' which will be send directly to the cluster. 
+
+<source lang="bash">
+#!/bin/bash
+/sw/bin/xvfb-run -a /sw/users/pietzsch/packages/Fiji.app/ImageJ-linux64 -Xmx10g -Dprintnumjobs=true 		-Dpath="/projects/pilot_spim/Christopher/Test_scripts/single-channel" -DexportXmlFilename="/hdf5/Test_single.xml" -Dspimresolutions=         	-Dspimsubdivisions= -DinputFilePattern="spim_TL{tt}_Angle{a}.tif"         	-Dchannels="0" -Dangles="1,2,3" -Dtimepoints="1-3"         	-DreferenceTimePoint="1" -DoverrideImageZStretching=         	-DzStretching=3.2643520832 -Dfusionresolutions=         	-Dfusionsubdivisions= -Dfilepath="/output_fusion/" -Dfilepattern="%1\$d/img_tl%1\$d_ch%2\$d_z%3\$03d.tif"         	-DnumSlices=376 -DsliceValueMin=0 -DsliceValueMax=60000         	-DcropOffsetX=0 -DcropOffsetY=314 -DcropOffsetZ=320 -Dscale=2 		-- --no-splash /projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/hdf5/export.bsh
+</source>
+
+The output of this job will be the '''numjobsout''' file. 
+
+<source lang="bash">
+
+
+</source>
+
 == Multi-channel Processing ==
 
 The '''master file''' has all the necessary information to easily switch between single-channel and multi-channel data. You just need to make the correct settings in the master file and use 2 additional scripts for the current pipeline to process multi-channel datasets. In this chapter I will point out the necessary changes specifically. 
