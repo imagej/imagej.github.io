@@ -4197,6 +4197,8 @@ Create the fusion jobs by executing the '''create_fusion_jobs''' and submit them
 
 === Hdf5 export ===
 
+Change the necessary parameters in the '''master file''':
+
 <source lang="bash">
 ###---------- hdf5 export ----------
 ##Target directory
@@ -4256,6 +4258,8 @@ The '''getnumjobs''' file:
 -DcropOffsetX=0 -DcropOffsetY=314 -DcropOffsetZ=320 -Dscale=2 		
 -- --no-splash /projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/hdf5/export.bsh
 </source>
+
+The output of the '''getnumjobs''':
 
 <source lang="bash">
 cat numjobsout
@@ -4323,3 +4327,5 @@ number of jobs: 3
 
 PS: The stderr output (if any) follows:
 </source>
+
+Modify the '''master file''' accordingly. Create the jobs using the '''create_export_jobs''' script and submit them to the cluster.
