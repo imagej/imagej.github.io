@@ -3430,8 +3430,75 @@ This script will write a job file '''getnumjobs''' which will be send directly t
 The output of this job will be the '''numjobsout''' file. 
 
 <source lang="bash">
+our job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/hdf5//getnumjobs
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      3.39 sec.
+    Max Memory :         3 MB
+    Max Swap   :        33 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+path=/projects/pilot_spim/Christopher/Test_scripts/single-channel
+Xml Filename=/projects/pilot_spim/Christopher/Test_scripts/single-channel/hdf5/Test_single.xml
+inputFilePattern=spim_TL{tt}_Angle{a}.tif
+channels=0
+angles=1,2,3
+timepoints=1-3
+referenceTimePoint=1
+overrideImageZStretching=true
+zStretching=3.481975
+filepath=/projects/pilot_spim/Christopher/Test_scripts/single-channel/output_fusion/
+filepattern=%1$d/img_tl%1$d_ch%2$d_z%3$03d.tif
+sliceValueMin=0
+sliceValueMax=60000
+cropOffsetX=100
+cropOffsetY=226
+cropOffsetZ=355
+scale=2
+ChannelPattern: 0
+Channels: (0)
+ChannelsToRegister: 0
+ChannelsRegister: (0)
+ChannelsToFuse: 0
+ChannelsFuse: (0)
+(Thu Mar 13 09:44:10 CET 2014): Loading timepoint 1
+Using model: mpicbg.models.AffineModel3D
+(Thu Mar 13 09:44:10 CET 2014): Loading timepoint 2
+Using model: mpicbg.models.AffineModel3D
+(Thu Mar 13 09:44:10 CET 2014): Loading timepoint 3
+Using model: mpicbg.models.AffineModel3D
+Using model: mpicbg.models.AffineModel3D
+Using model: mpicbg.models.AffineModel3D
+Using model: mpicbg.models.AffineModel3D
+Using model: mpicbg.models.AffineModel3D
+Dimension of final output image:
+From : (-4.3802876, -48.357666, -589.2959) to (1932.7172, 1272.5442, 761.48395)
+Size: (1937.0974, 1320.9019, 1350.7798) needs 13185 MB of RAM
+Scaled size(2): (969, 660, 675) needs 1648 MB of RAM
+tx = 96.0 ty = 178.0 tz = -234.0 scale = 2
+number of jobs: 3
 
 
+PS: The stderr output (if any) follows:
+
+
+
+PS:
+
+Fail to open stderr file output/err.861957: No such file or directory.
+The stderr output is included in this report.
 </source>
 
 == Multi-channel Processing ==
