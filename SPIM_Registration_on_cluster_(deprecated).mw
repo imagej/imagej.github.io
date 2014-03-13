@@ -3430,7 +3430,7 @@ This script will write a job file '''getnumjobs''' which will be send directly t
 The output of this job will be the '''numjobsout''' file: 
 
 <source lang="bash">
-our job looked like:
+your job looked like:
 
 ------------------------------------------------------------
 # LSBATCH: User input
