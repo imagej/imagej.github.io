@@ -1931,13 +1931,6 @@ jobs_export="/projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/hdf5
 ##Working script
 export="/projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/hdf5/export.bsh"
 
-##Not implemented yet
-#spimresolutions="{ { 1, 1, 1 }, { 2, 2, 1 }, { 4, 4, 2 }, { 8, 8, 4 } }"
-#spimsubdivisions="{ { 32, 32, 4 }, { 16, 16, 8 }, { 8, 8, 8 }, { 8, 8, 8 } }"
-
-#fusionresolutions = "{ { 1, 1, 1 }, { 2, 2, 2 }, { 4, 4, 4 }, { 8, 8, 8 } }"
-#fusionsubdivisions = "{ { 16, 16, 16 }, { 16, 16, 16 }, { 8, 8, 8 }, { 8, 8, 8 } }"
-
 </source>
 
 == First time using the master file ==
