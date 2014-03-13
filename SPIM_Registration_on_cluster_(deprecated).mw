@@ -1597,6 +1597,7 @@ Currently the master file is useable for the following steps.
 * External transformation
 * Multi-view deconvolution
 * 3D-rendering
+* Export to hdf5 format
 
 
 2. Multi-channel processing:
@@ -1606,7 +1607,7 @@ Currently the master file is useable for the following steps.
 * Registration
 * Timelapse registration
 * Content based multi-view fusion
-
+* Export to hdf5 format 
 
 All the scripts now work with padded zeros. 
 
@@ -1781,6 +1782,46 @@ zSlices="369"
 ##Orientation or rotation
 #still needs to be put into the script directly
 #under construction
+
+###---------- hdf5 export ----------
+##Target directory
+target_hdf5="/hdf5/"
+
+##Number of jobs
+num_export_job="`seq 0 3`"
+
+#Path directory
+path="\"/projects/pilot_spim/Christopher/Test_scripts/single-channel\""
+#path="\"/projects/pilot_spim/Christopher/Test_scripts/multi-channel/channel_split\""
+
+#Xml filename
+exportXmlFilename="\"/hdf5/Test_single.xml\""
+
+##Spim pattern
+##For single channel:spim_TL{tt}_Angle{a}.tif
+##For 2 channel: spim_TL{tt}_Angle{a}_Channel{c}.tif
+inputFilePattern="\"spim_TL{tt}_Angle{a}.tif\""
+#inputFilePattern="\"spim_TL{tt}_Angle{a}_Channel{c}.tif\""
+
+##Channels: change for 2 channel data
+channels_export="\"0\""
+#channels_export="\"0,1\""
+
+angles_export="\"1,2,3\""
+timepoint_export="\"1-3\""
+referencetp_export="\"1\""
+
+filepath="\"/output_fusion/\""
+filepattern="\"%1\\\$d/img_tl%1\\\$d_ch%2\\\$d_z%3\\\$03d.tif\""
+
+export_numSlices="376"
+sliceValueMin="0"
+sliceValueMax="60000"
+
+cropOffsetX="100"
+cropOffsetY="226"
+cropOffsetZ="355"
+scale="2"
 
 ####============== Directories for scripts and advanced settings for processing ==============
 
