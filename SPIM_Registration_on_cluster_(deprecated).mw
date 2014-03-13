@@ -3427,7 +3427,7 @@ This script will write a job file '''getnumjobs''' which will be send directly t
 -- --no-splash /projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/hdf5/export.bsh
 </source>
 
-The output of this job will be the '''numjobsout''' file. 
+The output of this job will be the '''numjobsout''' file: 
 
 <source lang="bash">
 our job looked like:
