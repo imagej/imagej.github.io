@@ -3450,6 +3450,8 @@ This script will write a job file '''getnumjobs''' which will be send directly t
 The output of this job will be the '''numjobsout''' file: 
 
 <source lang="bash">
+cat numjobsout
+
 your job looked like:
 
 ------------------------------------------------------------
