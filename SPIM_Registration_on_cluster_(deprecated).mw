@@ -1920,6 +1920,26 @@ fused_image_output="\"Save 2d-slices, one directory per time-point\""
 ##Fiji for rendering
 Fiji_rendering="/sw/users/tomancak/packages/Fiji.app.render/ImageJ-linux64"
 
+####--------------------------------- hdf5 export ---------------------------------
+
+##Fiji_tobias
+Fiji_export="/sw/users/pietzsch/packages/Fiji.app/ImageJ-linux64"
+
+##Working directory
+jobs_export="/projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/hdf5/"
+
+##Working script
+export="/projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/hdf5/export.bsh"
+
+##overrideImageZStretching does not work
+#overrideImageZStretching="true"
+
+##Not implemented yet
+#spimresolutions="{ { 1, 1, 1 }, { 2, 2, 1 }, { 4, 4, 2 }, { 8, 8, 4 } }"
+#spimsubdivisions="{ { 32, 32, 4 }, { 16, 16, 8 }, { 8, 8, 8 }, { 8, 8, 8 } }"
+
+#fusionresolutions = "{ { 1, 1, 1 }, { 2, 2, 2 }, { 4, 4, 4 }, { 8, 8, 8 } }"
+#fusionsubdivisions = "{ { 16, 16, 16 }, { 16, 16, 16 }, { 8, 8, 8 }, { 8, 8, 8 } }"
 
 </source>
 
