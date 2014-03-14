@@ -12,7 +12,7 @@
 }}
 
 ==Series Labeler - what is it?==
-This plugin is inspired by the Time_Stamper plugins from ImageJ
+This plugin is inspired by the [[Time Stamper]] plugins from ImageJ
 and from Tony Collins' plugin collection at macbiophotonics, 
 as well as the imageJ built in Image - Stack - Label command. 
 
