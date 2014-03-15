@@ -64,7 +64,7 @@ Possible origins of blur are:
 
 <br> Some things we can't do anything about (hey, that's the ''light'' microscopy facility, hum?):
 
-* Diffraction: it is nonsense to state that two objects are closer than the resolution limit of the objective lens / microscope used. The spatial resolution of the microscope is limited by diffraction, and is dependent on the wavelength of the light (shorter is better) and the numerical aperture (NA) of the objective lens (higher is better). XY resolution is better than resolution in Z direction (about 3x better for a high NA objective. Spatial sampling should be done so that there are not less than and not too many more than 2.3 pixels across the resolution limit (according to Nyqvist). For a high NA lens (say a 63x 1.4 oil immersion) this means the pixels in XY should be a bout 80-100 nm, and in Z about 250 nm. Also see Sampling below.
+* Diffraction: The spatial resolution of the conventional widefield or confocal (as typically used - noise limited) light microscope is limited by diffraction, and is dependent on the wavelength of the light (shorter is better) and the numerical aperture (NA) of the objective lens (higher is better). XY resolution is better than resolution in Z direction (about 3x better for a high NA objective. Spatial sampling should be done so that there are not less than and not too many more than 2.3 pixels across the resolution limit (according to Nyqvist). For a high NA lens (say a 63x 1.4 oil immersion) this means the pixels in XY should be about 80-100 nm, and in Z about 250 nm. Also see Sampling below.
 
 
 If the blurring of you images is too much, you might want to consider [[deconvolution]]. Have a look at 
