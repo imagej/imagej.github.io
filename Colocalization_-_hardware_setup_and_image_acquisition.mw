@@ -99,7 +99,7 @@ Getting rid of high background? Consider:
 
  ''Definition:'' Uncertainty of signal. 
 
-False colocalisation in a pixel might come from noise, and not be real.&nbsp;
+Colocalisation in a pixel might be false, coming from noise, and thus, not be real.&nbsp;
 
 Types of Noise:
 
