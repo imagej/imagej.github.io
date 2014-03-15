@@ -100,6 +100,7 @@ Getting rid of high background? Consider:
  ''Definition:'' Uncertainty of signal. 
 
 Colocalisation in a pixel might be false, coming from noise, and thus, not be real.&nbsp;
+For correlation based statistical approaches to colocalisation analysis, increasing noise lowers the apparent colocalisation. Hence, for noisy images, an attempt must be made to suppress or remove the noise in order to get closer to the true noise free correlation. Constrained iterative deconvolution can act as a smart noise filter that increases contrast and suppresses noise, so widefield and confocal image data should be deconvolved before colocalisation analysis. 
 
 Types of Noise:
 
