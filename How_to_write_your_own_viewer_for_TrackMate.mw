@@ -24,7 +24,20 @@ Right now, we just focus on building the view.
 
 
 
+== The [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/visualization/ViewFactory.java ViewFactory]. ==
+
+The factory itself has nothing particular. On top of the TrackMateModule methods, it just has a method to instantiate the view it controls:
+
+
+
+
+
 == The [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/visualization/TrackMateModelView.java TrackMateModelView] interface. ==
+
+This is where the hard work takes place and there is a lot to say. However, the method you find in this interface are scarce and relate just to general use: 
+
+
+
 
 
 
