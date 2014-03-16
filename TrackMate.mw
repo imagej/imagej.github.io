@@ -134,6 +134,8 @@ The following tutorials show how to integrate a module of each kind in TrackMate
 * [[How to write your own edge feature analyzer algorithm for TrackMate]]
 * [[How to write your own track feature analyzer algorithm for TrackMate]]
 * [[How to write your own spot feature analyzer algorithm for TrackMate]]
+* [[How to write your own viewer for TrackMate]]
+* [[How to write custom actions for TrackMate]]
 * [[How to write your own detection algorithm for TrackMate]]
 * [[How to write your own particle-linking algorithm for TrackMate]]
 
