@@ -4332,7 +4332,6 @@ int n = Integer.parseInt( System.getProperty( "zSlices" ) );
 
 float min_ch0 = Float.parseFloat( System.getProperty( "min_ch0" ) ); 
 float max_ch0 = Float.parseFloat( System.getProperty( "max_ch0" ) );
-
 float min_ch1 = Float.parseFloat( System.getProperty( "min_ch1" ) );
 float max_ch1 = Float.parseFloat( System.getProperty( "max_ch1" ) );
 
@@ -4350,15 +4349,9 @@ System.out.println( "MinMax channel1 =" + min_ch1 + ";" + max_ch1 );
 // Open channel 0
 IJ.run("Image Sequence...", "open=" + dir +  "/" + timepoint + "/img_tl" + timepoint + "_ch0_z000.tif number=" + n + " starting=1 increment=1 scale=100 file=ch0 sort");
 imp1 = IJ.getImage();
-//IJ.run(imp1, "Scale...", "x=0.5 y=0.5 z=0.5 depth=" + (n/2) + " average process create title=" + imp1.getTitle() );
-//imp1.close();
-imp1 = IJ.getImage();
 
 // Open channel 1
 IJ.run("Image Sequence...", "open=" + dir + "/" + timepoint + "/img_tl" + timepoint + "_ch1_z000.tif number=" + n + " starting=1 increment=1 scale=100 file=ch1 sort");
-imp2 = IJ.getImage();
-//IJ.run(imp2, "Scale...", "x=0.5 y=0.5 z=0.5 depth=" + (n/2) + " average process create title=" + imp2.getTitle());
-//imp2.close();
 imp2 = IJ.getImage();
 
 int n = imp1.getNSlices();
