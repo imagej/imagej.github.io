@@ -4249,7 +4249,6 @@ target_rendering="/rendering"
 
 nframes="6"
 
-##For 2 channel rendering:
 ##Min Max single channel
 #minimum_rendering="0.6"
 #maximum_rendering="0.005"
@@ -4261,8 +4260,12 @@ max_ch0=0.01
 min_ch1=0.9
 max_ch1=0.01
 
-##Number of slces (only 2 channel)
+##For multi-channel rendering:
 zSlices="369"
+
+##Orientation or rotation
+#still needs to be put into the script directly
+#under construction
 </source>
 
 First specify the directory of the jobs. The 2 channel rendering uses the '''multi-render-mov.bsh''' script, you need to select this script for rendering.
