@@ -4262,6 +4262,269 @@ max_ch1=0.01
 zSlices="369"
 </source>
 
+<source lang="bash">
+#!/bin/bash
+source /projects/pilot_spim/Christopher/pipeline/master
+
+source_rendering=${dir}${source_rendering}
+target_rendering=${dir}${target_rendering}
+
+mkdir -p $jobs_rendering
+mkdir -p $target_rendering 
+
+for i in $timepoint
+
+do
+	job="$jobs_rendering/render-$i.job"
+	echo $job
+	echo "#!/bin/bash" > "$job"
+	echo "$XVFB_RUN -as\"-screen 0 1280x1024x24\" \
+		$Fiji_rendering -Xms20g -Xmx20g -Ddir=$source_rendering \
+		-Dtimepoint=$i -Dnframes=$nframes -Dtarget_rendering=$target_rendering\
+		-Dminimum_rendering=$minimum_rendering -Dmaximum_rendering=$maximum_rendering \
+		-Dmin_ch0=$min_ch0 -Dmax_ch0=$max_ch0 -Dmin_ch1=$min_ch1 -Dmax_ch1=$max_ch1 \
+		-DzSlices=$zSlices -- --no-splash $rendering" >> "$job"
+	chmod a+x "$job"
+done
+</source>
+
+
+<source lang="java">
+/*
+ * two channels composite form two independent files
+ */
+import java.lang.Runtime;
+import ij.CompositeImage;
+import ij.ImagePlus;
+import ij.ImageStack;
+import ij.process.ImageProcessor;
+import ij.IJ;
+import ij.measure.Calibration;
+import mpicbg.ij.stack.InverseTransformMapping;
+import mpicbg.models.TranslationModel3D;
+import mpicbg.models.AffineModel3D;
+import mpicbg.models.InverseCoordinateTransformList;
+import ij.process.ImageStatistics;
+import ij.process.StackStatistics;
+import ij.plugin.filter.GaussianBlur;
+import net.imglib2.type.numeric.ARGBDoubleType;
+import net.imglib2.type.numeric.ARGBType;
+import net.imglib2.type.numeric.AbstractARGBDoubleType;
+import net.imglib2.type.numeric.NativeARGBDoubleType;
+runtime = Runtime.getRuntime();
+
+/* read parameters from command line */
+//dir = System.getProperty( "dir" );
+dir2 = System.getProperty( "target_rendering" );
+dir = System.getProperty( "dir" );
+
+int timepoint = Integer.parseInt( System.getProperty( "timepoint" ) );
+int nFrames = Integer.parseInt( System.getProperty( "nframes" ) );
+int n = Integer.parseInt( System.getProperty( "zSlices" ) ); 
+
+float min_ch0 = Float.parseFloat( System.getProperty( "min_ch0" ) ); 
+float max_ch0 = Float.parseFloat( System.getProperty( "max_ch0" ) );
+
+float min_ch1 = Float.parseFloat( System.getProperty( "min_ch1" ) );
+float max_ch1 = Float.parseFloat( System.getProperty( "max_ch1" ) );
+
+
+/* local test */
+//dir = "/media/data1/saalfeld/christopher";
+//timepoint = 40;
+//nFrames = 82;
+//n = 188
+
+System.out.println("Opening");
+
+System.out.println(dir);
+System.out.println(dir2);
+//System.out.println(output);
+System.out.println(timepoint);
+System.out.println(nFrames);
+System.out.println(n);
+System.out.println( "MinMax channel0 =" + min_ch0 + ";" + max_ch0 );
+System.out.println( "MinMax channel1 =" + min_ch1 + ";" + max_ch1 );
+
+
+// Open channel 0
+IJ.run("Image Sequence...", "open=" + dir +  "/" + timepoint + "/img_tl" + timepoint + "_ch0_z000.tif number=" + n + " starting=1 increment=1 scale=100 file=ch0 sort");
+imp1 = IJ.getImage();
+//IJ.run(imp1, "Scale...", "x=0.5 y=0.5 z=0.5 depth=" + (n/2) + " average process create title=" + imp1.getTitle() );
+//imp1.close();
+imp1 = IJ.getImage();
+
+// Open channel 1
+IJ.run("Image Sequence...", "open=" + dir + "/" + timepoint + "/img_tl" + timepoint + "_ch1_z000.tif number=" + n + " starting=1 increment=1 scale=100 file=ch1 sort");
+imp2 = IJ.getImage();
+//IJ.run(imp2, "Scale...", "x=0.5 y=0.5 z=0.5 depth=" + (n/2) + " average process create title=" + imp2.getTitle());
+//imp2.close();
+imp2 = IJ.getImage();
+
+int n = imp1.getNSlices();
+
+/*
+ * Get min and max using stack histogram.
+ * @param sat_lov
+ *           how many pixels are allowed to be below min.
+ * @param sat_high
+ *           how many pixels are allowed to be above max.
+ * @param stats
+ *           stack histogram.
+ * @return double[2] {min,max}
+ */
+double[] getMinAndMax( double sat_low, double sat_high, ImageStatistics stats ) {
+	int hmin, hmax;
+	int[] histogram = stats.histogram;
+	int hsize = histogram.length;
+	int t_low = (int)(stats.pixelCount*sat_low);
+	int t_high = (int)(stats.pixelCount*sat_high);
+
+	int i = -1;
+	boolean found = false;
+	int count = 0;
+	int maxindex = hsize-1;
+	do {
+		i++;
+		count += histogram[i];
+		found = count>t_low;
+	} while (!found && i<maxindex);
+	hmin = i;
+
+	i = hsize;
+	count = 0;
+	do {
+		i--;
+		count += histogram[i];
+		found = count>t_high;
+	} while (!found && i>0);
+	hmax = i;
+
+	double scale = (double)hsize / (stats.histMax - stats.histMin);
+	double[] a = new double[2];
+	a[0]= (double)hmin / scale + stats.histMin;
+	a[1]= ((double)hmax + 1.0) / scale + stats.histMin;
+	return a;
+}
+
+System.out.println("Analyzing histogram");
+
+/*
+ * compute max, min
+ */
+stats = new StackStatistics( imp1, 10000, 0.0, 0.0 );
+double[] minmax1 = getMinAndMax( min_ch0, max_ch0, stats );
+IJ.setMinAndMax( imp1, minmax1[0], minmax1[1] );
+
+stats = new StackStatistics( imp2, 10000, 0.0, 0.0 );
+double[] minmax2 = getMinAndMax( min_ch1, max_ch1, stats );
+IJ.setMinAndMax( imp2, minmax2[0], minmax2[1] );
+
+stack = new ImageStack( imp1.getWidth(), imp1.getHeight() );
+for ( int i = 0; i < n; ++i ) {
+	stack.addSlice( "", imp1.getStack().getProcessor( i + 1 ).duplicate() );
+	stack.addSlice( "", imp2.getStack().getProcessor( i + 1 ).duplicate() );
+}
+
+imp = new ImagePlus("", stack );
+imp.setDimensions(2, n, 1);
+imp.setOpenAsHyperStack(true);
+imp = new CompositeImage(imp,CompositeImage.COMPOSITE);
+
+imp.show();
+
+imp1.changes = false;
+imp2.changes = false;
+imp1.close();
+imp2.close();
+
+System.out.println( "Transformation" ); 
+
+/* transformation */
+affine = new net.imglib2.realtransform.AffineTransform3D();
+
+/* constant orientation */
+orientation = new net.imglib2.realtransform.AffineTransform3D();
+orientation.set(
+        0.9902683, -0.09312532, 0.10342625, 0.0,
+        -0.13917312, -0.66262114, 0.735916, 0.0,
+        0.0, -0.74314815, -0.669133, 0.0);
+
+affine.preConcatenate( orientation );
+
+/* rotation */
+//theta = ( double )timepoint / 180.0 * Math.PI;
+//affine.rotate( 0, theta );
+
+/* color conversion */
+/* background */
+bgARGB = new ARGBDoubleType( 1, 0, 0, 0 );
+
+/* intensity offsets an preprocessing */
+/* gfp */
+for ( int i = 0; i < n; ++i ) {
+	ip = imp.getStack().getProcessor(imp.getStackIndex(1,i + 1,1));
+	ip.subtract(minmax1[0]);
+	ip.multiply(1.0 / (minmax1[1]-minmax1[0]));
+}
+
+
+/* ruby */
+offset = ( minmax2[ 1 ] - minmax2[ 0 ] ) * 0.35;
+for ( int i = 0; i < n; ++i ) {
+	ip = imp.getStack().getProcessor(imp.getStackIndex(2,i + 1,1));
+//	new GaussianBlur().blurGaussian(ip, 1.5, 1.5, 0.001);
+	ip.subtract(minmax2[0]);
+	ip.multiply(1.0 / (minmax2[1] - minmax2[0]));
+}
+
+s1 = 1.0;
+s2 = 1.0;
+a1 = 1.0;
+a2 = 1.0;
+
+composite2ARGBDouble =
+	new net.imglib2.render.volume.RealCompositeARGBDoubleConverter( 2 );
+	
+	composite2ARGBDouble.setARGB( new ARGBDoubleType( a1, 0, s1, 0 ), 0 );
+	composite2ARGBDouble.setARGB( new ARGBDoubleType( a2, s2, 0, s2 ), 1 );
+
+omp = net.imglib2.render.volume.Renderer.runARGB(
+	imp,
+	imp.getWidth(),
+	imp.getHeight(),
+	affine,
+	0,
+	1,
+	bgARGB,
+	1,
+	composite2ARGBDouble );
+	
+//omp = net.imglib2.render.volume.Renderer.runARGB(
+//	imp,
+//	imp.getWidth(),
+//	imp.getHeight(),
+//	affine,
+//	1.0,
+//	1.0,
+//	new Translation3D(),
+//	1,
+//	bgARGB,
+//	net.imglib2.render.volume.Renderer.Interpolation.NN,
+//	composite2ARGBDouble );
+	
+System.out.println("Saving=" + dir2 );
+
+omp.show();
+
+IJ.save( omp, dir2 + "/render_tp" + IJ.pad(timepoint, 4) + ".tif" );
+
+System.out.println("All done");
+
+/* shutdown */
+runtime.exit(0);
+</source>
+
 === Hdf5 export ===
 
 Change the necessary parameters in the '''master file''':
