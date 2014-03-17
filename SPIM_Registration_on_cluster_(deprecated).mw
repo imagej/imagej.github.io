@@ -4220,6 +4220,39 @@ Create the fusion jobs by executing the '''create_fusion_jobs''' and submit them
 
 ===3D-rendering for 2 channels ===
 
+<source "lang=bash">
+###---------- Rendering ----------
+##Two different sets of scripts, one for single channel and one for multi-channel; choose:
+##Working directory
+jobs_rendering="/projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/3d_rendering_cpu"
+
+##Working script
+#rendering="/projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/3d_rendering_cpu/single-render-mov.bsh"
+rendering="/projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/3d_rendering_cpu/multi-render-mov.bsh"
+
+##source
+source_rendering="/output_fusion"
+
+##target directory
+target_rendering="/rendering"
+
+nframes="6"
+
+##Min Max single channel
+#minimum_rendering="0.6"
+#maximum_rendering="0.005"
+
+##Min Max multi channel
+min_ch0=0.9
+max_ch0=0.01
+
+min_ch1=0.9
+max_ch1=0.01
+
+##For multi-channel rendering:
+zSlices="369"
+</source>
+
 === Hdf5 export ===
 
 Change the necessary parameters in the '''master file''':
