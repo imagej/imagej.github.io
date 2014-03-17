@@ -4323,7 +4323,6 @@ import net.imglib2.type.numeric.NativeARGBDoubleType;
 runtime = Runtime.getRuntime();
 
 /* read parameters from command line */
-//dir = System.getProperty( "dir" );
 dir2 = System.getProperty( "target_rendering" );
 dir = System.getProperty( "dir" );
 
@@ -4337,18 +4336,10 @@ float max_ch0 = Float.parseFloat( System.getProperty( "max_ch0" ) );
 float min_ch1 = Float.parseFloat( System.getProperty( "min_ch1" ) );
 float max_ch1 = Float.parseFloat( System.getProperty( "max_ch1" ) );
 
-
-/* local test */
-//dir = "/media/data1/saalfeld/christopher";
-//timepoint = 40;
-//nFrames = 82;
-//n = 188
-
 System.out.println("Opening");
 
 System.out.println(dir);
 System.out.println(dir2);
-//System.out.println(output);
 System.out.println(timepoint);
 System.out.println(nFrames);
 System.out.println(n);
