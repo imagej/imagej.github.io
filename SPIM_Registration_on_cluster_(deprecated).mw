@@ -4229,6 +4229,8 @@ Create the fusion jobs by executing the '''create_fusion_jobs''' and submit them
 
 ===3D-rendering for 2 channels ===
 
+The relevant part in the master file:
+
 <source lang="bash">
 ###---------- Rendering ----------
 ##Two different sets of scripts, one for single channel and one for multi-channel; choose:
@@ -4247,6 +4249,7 @@ target_rendering="/rendering"
 
 nframes="6"
 
+##For 2 channel rendering:
 ##Min Max single channel
 #minimum_rendering="0.6"
 #maximum_rendering="0.005"
@@ -4258,9 +4261,14 @@ max_ch0=0.01
 min_ch1=0.9
 max_ch1=0.01
 
-##For multi-channel rendering:
+##Number of slces (only 2 channel)
 zSlices="369"
 </source>
+
+First specify the directory of the jobs. The 2 channel rendering uses the '''multi-render-mov.bsh''' script, you need to select this script for rendering.
+Specify which output you want to process and where you want to save the results of the rendering within in the original directory. Finally give the number of frames, the min and max values and the number of slices of the output. 
+
+The '''create-render-jobs''' script:
 
 <source lang="bash">
 #!/bin/bash
@@ -4288,6 +4296,7 @@ do
 done
 </source>
 
+The jobs will use the '''multi-render-mov.bsh''' script for rendering:
 
 <source lang="java">
 /*
@@ -4524,6 +4533,8 @@ System.out.println("All done");
 /* shutdown */
 runtime.exit(0);
 </source>
+
+Execute the '''create-render-jobs''' script and submit the jobs to the cluster with the '''submit-jobs''' script.
 
 === Hdf5 export ===
 
