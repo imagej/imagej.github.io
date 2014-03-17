@@ -4218,6 +4218,8 @@ runtime.exit(0);
 
 Create the fusion jobs by executing the '''create_fusion_jobs''' and submit them to the cluster.
 
+===3D-rendering for 2 channels ===
+
 === Hdf5 export ===
 
 Change the necessary parameters in the '''master file''':
