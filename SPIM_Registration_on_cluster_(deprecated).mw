@@ -1607,6 +1607,7 @@ Currently the master file is useable for the following steps.
 * Registration
 * Timelapse registration
 * Content based multi-view fusion
+* 3D-rendering for 2 channels
 * Export to hdf5 format 
 
 
