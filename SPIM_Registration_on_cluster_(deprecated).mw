@@ -4220,7 +4220,7 @@ Create the fusion jobs by executing the '''create_fusion_jobs''' and submit them
 
 ===3D-rendering for 2 channels ===
 
-<source "lang=bash">
+<source lang="bash">
 ###---------- Rendering ----------
 ##Two different sets of scripts, one for single channel and one for multi-channel; choose:
 ##Working directory
