@@ -4296,7 +4296,7 @@ do
 done
 </source>
 
-The jobs will use the '''multi-render-mov.bsh''' script for rendering:
+The jobs will use the '''multi-render-mov.bsh''' script for rendering. The postion can be set by changing the transformation matrix (line 141-143). For rotation comment in Line 150-151. 
 
 <source lang="java">
 /*
