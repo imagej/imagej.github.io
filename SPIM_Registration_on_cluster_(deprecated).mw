@@ -3204,7 +3204,7 @@ The '''create_render_jobs''' script:
 
 <source lang="bash">
 #!/bin/bash
-#!/bin/bash
+
 source /projects/pilot_spim/Christopher/pipeline/master
  
 source_rendering=${dir}${source_rendering}
