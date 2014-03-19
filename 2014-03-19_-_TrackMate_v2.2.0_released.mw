@@ -1,20 +1,3 @@
-<span style="color:red">This page documents the changes in the <u>release candidate</u> of TrackMate v2.2.0. 
-
-We are now testing RC4!!
-
-This version is not yet available through normal update channel. If you want to test it, you have to [[Update Sites|add]] the TrackMate-devel update site to the Fiji updater. Here is how to do it:</span>
-
-<ul>
-  <li>Go to the ''Help > Update Fiji'' menu item. 
-  <li>Select ''Advanced mode'', then ''Manage update sites''. 
-  <li>Check the '''TrackMate-dev''' box. Then ''Close''. 
-</ul>
-
-TrackMate v2.2.0 should overwrites your current version of TrackMate. More details on how to add an update site can be found here: [[How to follow a 3rd party update site]]
-
-_____
-
-
 A new minor version of [[TrackMate_]] has been released. This page lists the changes that are visible to the user. 
 
 Version 2.2.0 focuses mainly on extendability, tracking performance and detection accuracy.
@@ -86,6 +69,16 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
 * '''Fine tune multithreading'''. Before this version, TrackMate was doing multithreading during detection in the following way:  We run the detection process on as many frames as we have threads, and each frame is processed using 1 thread.   This is suboptimal if we have a large number of threads, but a few number of frames (e.g. 1 frame, 24 threads). This release fixes this: If we have 10 threads and 15 frames to process, we process 10 frames at once, and allocate 1 thread per frame. But if we have 10 threads and 2  frames, we process the 2 frames at once, and allocate 5 threads per  frame if we can.  For this to work of course, the detector must be multithreaded, which is the case with the ones we ship now.
 
+* TrackMate can now load partial TrackMate files, and still display all the information it could retrieve, instead of generating an error and quitting. This is useful if you have file that contains the model section, but not the settings section.
+
+* Improved user messaging when loading a file.
+
+* Spots can be colored by the features of the track they belong to.
+
+* Slightly better memory management for spot, edge and track coloring for large models.
+
+* The GUI does not freeze when computing histograms.
+
 ==== Bug fixes ====
 
 * Fix a major bug with the DoG detector preventing to use it with a ROI.
@@ -94,9 +87,10 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
 * When navigating backward in the GUI, the model is cleared when it is sensible. This is made to avoid having "ghost" results floating over unprocessed images.
 
+* Fix several issues with zooming and decorations in TrackScheme. Fix a bug that caused the sliders to disappear for the simple style and with some zoom levels. Zooming should be now more efficient, and offers more zoom levels.
 
 
 
 
 
-[[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 04:29, 30 January 2014 (CST)
+[[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 05:32, 19 March 2014 (CDT)
