@@ -57,9 +57,11 @@
 *NOTE- If an noticeable amount of overlay can be seen in your images, there is a pixel to micron error within the microscope's initial setup. To fix this, recalibrate the microscope's objectives. 
 
 ==Generate the grid ==
+[[Image:BasicGrid.png|250px|right]]
 === The basic grid ===
 <ol>
 <li>Fill in the Dimensions of X and Y in #X and #Y respectively</li>
+[[Image:OverlappedGrid.png|250px|right]]
 <li>Enter the step size in microns</li>
 <li>Select "Calculate total size from # Pos" to find the total size of your stitched image (optional) </li>
 <li>Select "OK" </li>
@@ -74,6 +76,7 @@
 </ol>
 
 === Calculating grid using total sample size ===
+[[Image:SampleSize.png|250px|right]]
 <ol>
 <li>Enter the total size dimensions of your stitched image in microns into the "Total Size" boxes </li>
 <li>Enter the step size or the overlap for you stitched images and select  "Calculate total size from # Pos" </li>
@@ -83,6 +86,7 @@
 ===Computing the grid between two stage positions ===
 <ol>
 <li>Determine your step size using either a pre-calculated value or the overlap slider </li>
+[[Image:StageGrid.png|250px|right]]
 <li>During your scan, use the XY motor controller to position on corner of your tissue into the field of view </li>
 <li>Select "Set current pos at START corner"</li> 
 <li>Select "OK" </li>
