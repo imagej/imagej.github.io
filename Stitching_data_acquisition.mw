@@ -56,6 +56,7 @@
 
 *NOTE- If an noticeable amount of overlay can be seen in your images, there is a pixel to micron error within the microscope's initial setup. To fix this, recalibrate the microscope's objectives. 
 
+==Generate the grid ==
 === The basic grid ===
 <ol>
 <li>Fill in the Dimensions of X and Y in #X and #Y respectively</li>
@@ -86,6 +87,7 @@
 <li>Select "Set current pos at START corner"</li> 
 <li>Select "OK" </li>
 </ol>
+
 = Gallery =
 <gallery>
 File:Frame mover.jpg | (xyz computer controller)
