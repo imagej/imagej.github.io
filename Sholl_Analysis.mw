@@ -88,7 +88,7 @@ Input values take into account the scale information of the image that can be se
 * <span id="Normalizer"></span>'''Normalizer''' The property of the sampling shell to be used in the normalization of ''Linear-norm'', ''Semi-log'', and ''Log-log'' profiles. It is [[#MethodsTable|described below]].
 
 ==== Output Options ====
-* '''Create intersections mask''' <sup>&nbsp;</sup>If checked, a 16–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile.<p>The default Lookup Table (LUT) used by the mask is modeled after the [http://www.mathworks.com/help/matlab/ref/colormap.html MATLAB "jet" color map] (a rainbow color map based on a fluid-jet simulation by NCSA) but you can apply any of your favorite LUTs using the <span style="border-bottom:1px dotted #ccc;">Image▷ Lookup Tables▷</span> submenu. WYSIWYG versions (RGB images) of these masks can be otained using <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Flatten</span> or <span style="border-bottom:1px dotted #ccc;">Analyze▷ Tools▷ Calibration Bar...</span></p>
+* '''Create intersections mask''' <sup>&nbsp;</sup>If checked, a 16–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile.<p>The default Lookup Table (LUT) used by the mask is modeled after the [http://www.mathworks.com/help/matlab/ref/colormap.html MATLAB "jet" color map] (a rainbow color map based on a fluid-jet simulation by NCSA) but you can apply any of your favorite LUTs using the <span style="border-bottom:1px dotted #ccc;">Image▷ Lookup Tables▷</span> submenu. WYSIWYG versions (RGB images) of these masks can be otained using by pressing {{key press|Shift|F}} (shortcut for <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Flatten</span>) or by running <span style="border-bottom:1px dotted #ccc;">Analyze▷ Tools▷ Calibration Bar...</span></p>
 ** '''Background''' <sup>&nbsp;</sup>The background color (gray level) of the mask from 0 (black) to 255 (white). It can be changed at any later point using <span style="border-bottom:1px dotted #ccc;">Image▷ Color▷ Edit Lut...</span>
 
 * '''Save results on image directory ''(only available when image is saved locally)''''' <sup>&nbsp;</sup> If checked, all the results (with the exception of the ''[[#Metrics|Sholl Table]]'') are saved to the image directory. These include: 1) Sholl plots (saved as PNG images), 2) A table containing detailed data (saved according to the extension and format specified in <span style="border-bottom:1px dotted #ccc;">Edit▷ Options▷ Input/Output...</span>) and 3) The Sholl mask (saved as a 16-bit TIFF).<p>Files are named after the image filename and analysis method. When this option is not available, profiles can always be retrieved using the ''List'', ''Save...'' and ''Copy...'' commands of plot windows.</p>
@@ -253,19 +253,20 @@ Previous authors have used different terms to describe the largest value taken b
 <span id="Importing"></span>
 
 == Importing Profiles Obtained Elsewhere ==
-[[ File:BitmapSholl-TabularPrompt.png|right |Tabular prompt (version 3.1)]]As of version 3.1 it is possible to analyze profiles obtained from traced data. This feature is specifically targeted at users of [[Simple Neurite Tracer]], Fiji's remarkable framework for semi-automated reconstruction of neuronal arbors, but can be extended to tracings obtained with other software.
+[[ File:BitmapSholl-TabularPrompt.png|right |Tabular prompt (version 3.1)]]As of version 3.1 it is possible to analyze profiles obtained from traced data. This feature is specifically targeted at users of [[Simple Neurite Tracer]], Fiji's framework for semi-automated reconstruction of neuronal arbors, but can be extended to tracings obtained with other software.
 
-This option is triggered by running  <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span> while holding the ''Alt'' key, which prompts a simplified version of the [[#Multiple Samples and Noise Reduction|main dialog]].
+
+This option is triggered by holding {{key press|Alt}} while running  <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span>, which prompts a simplified version of the [[#Multiple Samples and Noise Reduction|main dialog]].
 
 #Load tracings (typically a .swc or a .traces file) into [[Simple_Neurite_Tracer:_Basic_Instructions|Simple Neurite Tracer]]
 #Retrieve the linear Sholl profile by following these [[Simple_Neurite_Tracer:_Sholl_analysis|instructions]]
 #Export ''detailed data''  (.csv file). You now have two options:
 :If data does not need to be edited:
-:#Close the ImageJ Results Table (if open) and run the plugin while holding the ''Alt'' key.  You will be prompted to indicate the path of the saved  profile. Because the plugin is aware of the file's directory, saving options are available.
+:#Close the ImageJ Results Table (if open) and run the plugin while holding {{key press|Alt}}.  You will be prompted to indicate the path of the saved  profile. Because the plugin is aware of the file's directory, saving options are available.
 :If data needs to be modified, the profile must be first loaded by ImageJ:
 :#You can do so by dragging & dropping its file into the main ImageJ window, or by using <span style="border-bottom:1px dotted #ccc;">File▷ Import▷ Results...</span>
-:#Press the backspace key over selected rows to exclude them from the analysis.
-:#Run the plugin while holding the ''Alt'' key. Because the plugin did not keep track of any directory, saving options are disabled.
+:#Press the {{key press|Backspace}} key over selected rows to exclude them from the analysis.
+:#Run the plugin while holding {{key press|Alt}}. Because the plugin did not keep track of any directory, saving options are disabled.
 
 Notes:
 *For ''Annulus/Spherical shell'' [[#Normalizer|normalization]], [[#StepSize|Radius step size]] is calculated from the difference between the first two rows in ''Distance column''.
@@ -278,10 +279,10 @@ It is fairly simple to [[Scripting Help|automate]] the analysis of multiple imag
 Any macro or script must allow the Sholl Analysis plugin to access the ROI marking the center of analysis. One could instruct ImageJ to read the coordinates of pre-existing ROIs from a text file, store a list of line selections in the ROI Manager, or write a morphology-based routine that detects the center of the arbor. However, marking the center of analysis is probably something that you will want to do manually. Here is a workflow:
 
 #Place all the .tif images to be processed in a single folder.
-#Select the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> in the main ImageJ window and activate the Threshold widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span>). Make sure ''Set stack positions'' is active in the <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Overlay Options...</span> prompt. Open the first image.
+#Select the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> in the main ImageJ window and press {{key press|Shift|T}} to activate the Threshold widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span>). Make sure ''Set stack positions'' is active in the <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Overlay Options...</span> prompt. Open the first image.
 #Adjust threshold levels. Press the ''Apply'' button of the Threshold widget to create a binary image.
-#Select the z-slice containing the center of analysis. Click over the center with the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> and press ''B'' (shortcut for <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Add Selection...</span>). This will add the point ROI to the image overlay. Save the image as .TIFF by pressing ''S'' (<span style="border-bottom:1px dotted #ccc;">File▷ Save As...▷ Tiff...</span>).
-#Repeat the last 2 steps until all images are marked, using ''Shift'' + ''O'' (shortcut for <span style="border-bottom:1px dotted #ccc;">File▷ Open Next</span>) to iterate through all the images.
+#Select the z-slice containing the center of analysis. Click over the center with the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> and press {{key press|B}} (shortcut for <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Add Selection...</span>). This will add the point ROI to the image overlay. Save the image as .TIFF by pressing {{key press|S}} (<span style="border-bottom:1px dotted #ccc;">File▷ Save As...▷ Tiff...</span>).
+#Repeat the last 2 steps until all images are marked, using {{key press|Shift|O}} (shortcut for <span style="border-bottom:1px dotted #ccc;">File▷ Open Next</span>) to iterate through all the images.
 
 <div style="float:center;
             border: 1px solid #ccc;
@@ -385,7 +386,7 @@ Semi-automated segmentation can also be improved through the usage of simple [[:
 
 == Auxiliary Commands ==
 ;File▷ Open Samples▷ ddaC Neuron
-:Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run <span style="border-bottom:1px dotted #ccc;">Image▷ Show Info...</span> to know more about this cell type.
+:Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run <span style="border-bottom:1px dotted #ccc;">Image▷ Show Info...</span> (shortcut: {{key press|I}} ) to know more about this cell type.
 
 ;Help▷ About Plugins▷ About Sholl Analysis...
 :Retrieves information about the plugin version and a link to its Git source code [https://github.com/tferr/ASA repository].
@@ -398,7 +399,7 @@ Semi-automated segmentation can also be improved through the usage of simple [[:
 #<span id="faq3"></span>'''The plugin complains about a wrong image type. Why?'''
 #: Although ImageJ can threshold RGB images, the plugin can only parse grayscale images (8-bit and 16-bit). Images of fluorescence-labeled cells are typically non-RGB images. Conversions between different image types is explained in the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide].
 #<span id="faq4"></span>'''I cannot see the hemicircle/hemisphere option. Why?'''
-#: This option is only available if an orthogonal line has been created by holding ''Shift'' when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for the full list of key modifiers that can be used while creating straight line ROIs.
+#: This option is only available if an orthogonal line has been created by holding {{key press|Shift}} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for the full list of key modifiers that can be used while creating straight line ROIs.
 #<span id="faq5"></span>'''With 3D images, how do I set the Z-position of the center?'''
 #: The Z-position (depth) of the center of analysis is the active Z-slice of the stack. It is reported in the ''Sholl Results'' table.
 #<span id="faq6"></span>'''Why so many parameters?'''
@@ -412,7 +413,7 @@ Semi-automated segmentation can also be improved through the usage of simple [[:
 #<span id="faq10"></span>'''What is the ''Sholl mask''?'''
 #: The Sholl mask ([[#Introduction|see example above]]) is simply an illustration: a maximum intensity projection of the analyzed cell in which intersection counts are used as pixel intensities. As explained in [[#Output_Options|Output Options]], its LUT can be modified, and intensities calibrated using ImageJ default commands.
 #<span id="faq11"></span>'''The 3D profile looks ''worse'' than the 2D profile of the Maximum Intensity Projection of the same cell. Why?'''
-#: An anisotropic voxel size will have a strong impact on [[#StepSize|step size]]. On the other hand, 2D and 3D images can be sampled differently depending on the [[#Parameters|options chosen]]. If <span style="border-bottom:1px dotted #ccc;">Image▷ Properties…</span> reports the appropriate spatial calibration, make sure to read [[#Multiple_Samples_and_Noise_Reduction|Multiple Samples and Noise Reduction]] before deciding which type of images to use.
+#: An anisotropic voxel size will have a strong impact on [[#StepSize|step size]]. On the other hand, 2D and 3D images can be sampled differently depending on the [[#Parameters|options chosen]]. If <span style="border-bottom:1px dotted #ccc;">Image▷ Properties…</span> (shortcut: {{key press|Shift|P}} ) reports the appropriate spatial calibration, make sure to read [[#Multiple_Samples_and_Noise_Reduction|Multiple Samples and Noise Reduction]] before deciding which type of images to use.
 #<span id="faq12"></span>'''The shape of the polynomial changes at the edges of the profile. Why?'''
 #: Inflection points at [[#StartRadius|starting/ending radius]] are usually associated with a poor fit and/or the fact that all the radii in which no intersections were counted are ignored. The latter is required to calculate the [[#ShollDecay|Sholl regression coefficient]], as ''log(0)'' is undefined.
 #<span id="faq13"></span>'''My images do not look that great. How can I treat them prior to analysis?'''
