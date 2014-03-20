@@ -265,7 +265,7 @@ This option is triggered by holding {{key press|Alt}} while running  <span style
 :#Close the ImageJ Results Table (if open) and run the plugin while holding {{key press|Alt}}.  You will be prompted to indicate the path of the saved  profile. Because the plugin is aware of the file's directory, saving options are available.
 :If data needs to be modified, the profile must be first loaded by ImageJ:
 :#You can do so by dragging & dropping its file into the main ImageJ window, or by using <span style="border-bottom:1px dotted #ccc;">File▷ Import▷ Results...</span>
-:#Press the {{key press|Backspace}} key over selected rows to exclude them from the analysis.
+:#Press {{key press|Backspace}} over selected rows to exclude them from the analysis.
 :#Run the plugin while holding {{key press|Alt}}. Because the plugin did not keep track of any directory, saving options are disabled.
 
 Notes:
