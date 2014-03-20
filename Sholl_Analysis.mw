@@ -180,11 +180,12 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 <div id="LocalMaxima" style="float:center;
             border: 1px solid #ccc;
             padding: 5px !important;
-            border-radius: .75em;
             text-align:center;
-            margin-bottom: 1em;
-            background-color: #ffefbe;">
-By default only the absolute maximum is noted. However, it is possible to apply peak detection techniques to the profile to retrieve other sites of high density branching. [[Find Peaks]] is a script that retrieves local maxima directly from the profiles output by ''Sholl Analysis''</div>
+            margin-top: 1em;
+            margin-bottom: 2em;
+            background-color: #ffefbe;
+            {{border-radius|.75em}}{{box-shadow}}">
+By default only the absolute maximum is noted. However, it is possible to apply peak detection techniques to the profile to retrieve other sites of high density branching. [[Find Peaks]] is a script that retrieves local maxima directly from data output by ''Sholl Analysis''.</div>
 
 ;<span id="MaxIntersRadius"></span>Radius of highest count of intersections (''Max inters. radius'')
 :The distance at which the ''Highest count of intersections'' occurred, reflecting sites of highest branch density. Note that if the same maximum occurs multiple times, only the first distance is considered.
@@ -224,14 +225,15 @@ By default only the absolute maximum is noted. However, it is possible to apply 
 :The distance at which ''Critical value'' occurs. Calculated with a precision of 1/1000 of ''Radius step size''. Sometimes abbreviated as ''r<sub>c</sub>''.
 : See also [[#MaxIntersRadius|Max inters. radius]]
 
-<div style="float:center;
+<div id="Nomenclature" style="float:center;
             border: 1px solid #ccc;
             padding: 5px !important;
-            border-radius: .75em;
             text-align:center;
-            margin-bottom: 1em;
-            background-color: #ffefbe;">
-Previous authors have used different terms to describe the largest value taken by the Sholl profile (cf. [http://en.wikipedia.org/wiki/Sholl_analysis Wikipedia], [[#References|References]]). Since the Sholl technique is not restricted to dendritic arbors (it can be applied to any tree-like structure such as axonal arbors, mammary glands or blood vessels), this plugin introduces the term [[#CriticalRadius|Critical radius]], renaming ''Dendrite maximum'' (''N<sub>m</sub>'') to [[#CriticalValue|Critical value]]. Thus, we may not follow the conventions adopted by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].</div>
+            margin-top: 1em;
+            margin-bottom: 2em;
+            background-color: #ffefbe;
+            {{border-radius|.75em}}{{box-shadow}}">
+Previous authors have used different terms to describe the largest value taken by the Sholl profile (cf. [http://en.wikipedia.org/wiki/Sholl_analysis Wikipedia], [[#References|References]]). Since the Sholl technique is not restricted to dendritic arbors (it can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels), this plugin introduces the term [[#CriticalRadius|Critical radius]], renaming ''Dendrite maximum'' (''N<sub>m</sub>'') to [[#CriticalValue|Critical value]]. Thus, we may not follow the conventions adopted by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].</div>
 
 ;<span id="MeanValueOfFunction"></span>Mean value
 :The mean value<ref name="Stulic"></ref> of the fitted polynomial function [[#eq1|(1)]], representing the average of intersections over the whole area occupied by the arbor. Sometimes abbreviated as MV or Nav.
@@ -287,10 +289,11 @@ Any macro or script must allow the Sholl Analysis plugin to access the ROI marki
 <div style="float:center;
             border: 1px solid #ccc;
             padding: 5px !important;
-            border-radius: .75em;
             text-align:center;
-            margin-bottom: 1em;
-            background-color: #ffefbe;">
+            margin-top: 1em;
+            margin-bottom: 2em;
+            background-color: #ffefbe;
+            {{border-radius|.75em}}{{box-shadow}}">
 When working with ROIs, it is critical that you work with .tif files because only this format keeps track of image overlays. The <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Convert...</span> command allows bulk conversion between image formats.</div>
 
 Now that all the images are marked, we just need to ask ImageJ to generate some lines of code. We will open the Macro Recorder (<span style="border-bottom:1px dotted #ccc;">Plugins▷ Macros▷ Record...</span>) and run ''Sholl Analysis'' on one of the images to find out how to call the plugin with suitable parameters. In this example, we will use the ImageJ macro language. The single line of code that appears in the recorder window will look something like this:
