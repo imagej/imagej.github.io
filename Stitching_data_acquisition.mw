@@ -1,4 +1,4 @@
-== Wiscan Data Acquisition ==
+= Wiscan Data Acquisition =
 [[Image:OWS 1.jpg|300px|thumb|Microscope setup]]
 <ol>
 <li>Make sure the image being used has been set up correctly:
@@ -34,7 +34,7 @@
 
  <li>Define the start position in your metadata by selecting "manual update" then "set 0"</li>
 
- <li>Generate the specifics of your image acquisition by selecting "generate"</li>
+ <li>Generate the specifics of your image acquisition using generate grid</li>
 
 <li>Set the size of each image taken (in microns)</li>
 
@@ -56,6 +56,9 @@
 
 *NOTE- If an noticeable amount of overlay can be seen in your images, there is a pixel to micron error within the microscope's initial setup. To fix this, recalibrate the microscope's objectives. 
 
+==Grid Generation / Stitching Interface==
+=== The basic grid ===
+
 <gallery>
 File:Frame mover.jpg | (xyz computer controller)
 File:Lever 1.jpg| (Internal microscope lever)
@@ -64,6 +67,3 @@ File:Pockel cell.jpg| (Pockel Cell machine)
 File:Ti saph.jpg | (Ti Sapph Shutter control)
 File:Photosensor.jpg | Detector
 </gallery>
-=== Safety Precautions ===
-==== OWS  ====
-====SLIM ====
