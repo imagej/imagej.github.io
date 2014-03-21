@@ -133,9 +133,17 @@ For example, {{key press|Left}} rotates by
 Using {{key press|I}} you can switch between nearest-neighbor and trilinear interpolation schemes.
 The difference is clearly visible when you zoom in such that individual source pixels are visible.
 
+[[Image:bdv-interpolation.png]]
+
+Trilinear interpolation results in smoother images but is a bit more expensive computationally.
+Nearest-neighbor is faster but looks more pixelated.
+
 
 === Displaying Multiple Sources ===
+BigDataViewer datasets typically contain more than one source.
+For a SPIM sequence one usually has multiple angles and possibly fused and deconvoled data on top.
 
+Select ''Settings > Visibility & Grouping'' from the BigDataViewer menu to bring up a dialog to control source visibility.
 
 
 === Opening BigDataViewer Datasets as Fiji Stacks ===
