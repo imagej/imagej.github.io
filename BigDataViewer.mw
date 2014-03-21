@@ -31,16 +31,16 @@ The XML file contains metadata, for example the registration of sources to the g
 To get BigDataViewer you need to enable its update site in the Fiji Updater.
 Select ''Help > Update Fiji'' from the Fiji menu to start the updater.
 
-[[Image:bdv-imagej-updater-1.png]]
+[[Image:bdv-imagej-updater-1.png|500px]]
 
 Click on ''Manage update sites''. This brings up a dialog where you can activate additional update sites.
 
-[[Image:bdv-manage-update-sites-1.png]]
+[[Image:bdv-manage-update-sites-1.png|500px]]
 
 Activate the BigDataViewer update site and ''Close'' the dialog.
 Now you should see additional files appearing for download.
 
-[[Image:bdv-imagej-updater-2.png]]
+[[Image:bdv-imagej-updater-2.png|500px]]
 
 Click ''Apply changes'' and restart Fiji.
 
@@ -143,10 +143,36 @@ BigDataViewer datasets typically contain more than one source.
 For a SPIM sequence one usually has multiple angles and possibly fused and deconvoled data on top.
 
 Select ''Settings > Visibility & Grouping'' from the BigDataViewer menu to bring up a dialog to control source visibility.
+You can also bring up this dialog by the shortcut {{key press|F6}}.
 
+[[Image:bdv-visibility.png|500px]]
+
+Using the current source checkboxes (A in the figure above), you can switch between available sources.
+The first ten sources can also be made current by the number keys {{key press|1}} through {{key press|0}} in the main BigDataViewer window.
+
+To view multiple sources overlaid at the same time, switch to ''fused mode'' using the checkbox (B).
+You can also switch between normal and fused mode using the shortcut {{key press|F}} in the main window.
+In fused mode individual sources can be turned on and off using the checkboxes (C) or shortcuts {{key press|Shift|1}} through {{key press|Shift|0}} in the main window.
+
+Whether in normal or fused mode, the (unselectable) boxes (D) provide feedback on which sources are actually currently displayed.
+Also the main window provides feedback:
+
+[[Image:bdv-overlays-1.png|500px]]
+
+In the top-left corner an overview of the dataset is displayed (E).
+Visible sources are displayed as green/magenta wireframe boxes, invisible sources are displayed as grey wireframe boxes.
+The dimensions of the boxes illustrate the size of the source images. The filled grey rectangle illustrates the screen area, i.e., the portion of the currently displayed slice.
+For the visible sources, the part that is in front of the screen is green, the part that is behind the screen is magenta.
+
+At the top of the window, the name of the current source is shown (F).
+
+Note, that also in fused mode there is always a ''current source'', although this source may not even be visible.
+Commands such as {{key press|Shift|X}} (rotate to ZY-plane) refer to the local coordinate system of the current source.
+
+=== Setting Brightness and Color ===
+
+=== Grouping Sources ===
 
 === Opening BigDataViewer Datasets as Fiji Stacks ===
-
-
 
 == Exporting Datasets for the BigDataViewer ==
