@@ -138,7 +138,6 @@ The difference is clearly visible when you zoom in such that individual source p
 Trilinear interpolation results in smoother images but is a bit more expensive computationally.
 Nearest-neighbor is faster but looks more pixelated.
 
-
 === Displaying Multiple Sources ===
 BigDataViewer datasets typically contain more than one source.
 For a SPIM sequence one usually has multiple angles and possibly fused and deconvoled data on top.
