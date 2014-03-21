@@ -23,7 +23,7 @@ In a multi-angle, multi-channel SPIM sequence, each channel of each angle is a s
 BigDataViewer comes with a custom data format that is is optimized for fast random access to very large data sets.
 This permits browsing to any location within a multi-terabyte recording in a fraction of a second.
 
-The file format is based on XML and HDF5~\cite{hdf5}.
+The file format is based on XML and HDF5.
 Images are represented as tiled multi-resolution pyramids, and stored in HDF5 chunked multi-dimensional arrays.
 The XML file contains metadata, for example the registration of sources to the global coordinate system.
 
