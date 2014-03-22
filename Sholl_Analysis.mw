@@ -61,7 +61,7 @@ Input values take into account the scale information of the image that can be se
 :For horizontal lines, this option instructs the algorithm to measure intersections at sites equidistant from the center that have y-coordinates above/below the drawn line. For vertical lines, it instructs the plugin to measure intersections at sites equidistant from the center that have x-coordinates to the left/right of the drawn line.
 
 ==== Multiple Samples and Noise Reduction ====
-[[ File:BitmapSholl-Prompt_v3.png|right |Main prompt (version 3.1)]]
+[[ File:BitmapSholl-Prompt_v3.png|320px|right |Main prompt (version 3.4.1)]]
 * '''Samples per radius ''(2D images only)''''' <sup>&nbsp;</sup>Defines the number of measurements to be performed at each sampling circumference. These measurements are then combined into a single value according to the chosen [[#SamplesIntegration|integration method]]. This strategy, a break from previous approaches, increases the accuracy of non-continuos profiles by diluting out the effect of processes extending tangent to the sampling circumference.
 :Visually, this option can be imagined as the "thickness" of the sampling circumference: e.g., for a radius of 100 pixels and a value of 3 ''Samples per radius'', the final number of intersections would integrate the measurements sampled at distances 99, 100 and 101.
 :Note that it would not make sense to increase the number of samples beyond the length (in pixels) of ''Radius step size''. For this reason, this option is limited to a draconian (and arbitrary) maximum of 10 samples.
