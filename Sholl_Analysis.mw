@@ -255,7 +255,7 @@ Previous authors have used different terms to describe the largest value taken b
 <span id="Importing"></span>
 
 == Importing Profiles Obtained Elsewhere ==
-[[ File:BitmapSholl-TabularPrompt.png|right |Tabular prompt (version 3.1)]]As of version 3.1 it is possible to analyze profiles obtained from traced data. This feature is specifically targeted at users of [[Simple Neurite Tracer]], Fiji's framework for semi-automated reconstruction of neuronal arbors, but can be extended to tracings obtained with other software.
+[[ File:BitmapSholl-TabularPrompt.png|320px|right |Tabular prompt (version 3.1)]]As of version 3.1 it is possible to analyze profiles obtained from traced data. This feature is specifically targeted at users of [[Simple Neurite Tracer]], Fiji's framework for semi-automated reconstruction of neuronal arbors, but can be extended to tracings obtained with other software.
 
 
 This option is triggered by holding {{key press|Alt}} while running  <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span>, which prompts a simplified version of the [[#Multiple Samples and Noise Reduction|main dialog]].
