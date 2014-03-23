@@ -4,7 +4,7 @@
 | author                 = Jan Brocher
 | website                = [http://www.biovoxxel.de/index.html www.biovoxxel.de]
 | maintainer             = Jan Brocher
-| latest version         = 05. March 2014
+| latest version         = 22. March 2014
 | source                 =[http://www.biovoxxel.de/BioVoxxel%20Macro%20Toolset/BioVoxxel_Toolbox.ijm BioVoxxel_Toolbox.ijm]
 | category               = [[:Category:Particle analysis|Particle analysis]]
 }}
@@ -168,7 +168,7 @@ Output interpretation: You will get a stack with each thresholding method repres
 
 '''cyan''' = these areas have a certain brightness level in the original image but are not recognized by the respective tresholding algorithm, hence might point out a underestimation of features by the threshold.
 
-'''orange/yellow''' = these are features standing out from the background in the original image (orange=medium intensity; yellow=high intensity) which are recognized by the thresholding algorithm as foreground features and thus most likely represent features of interest (depending on the image context and quality). If you set a certain value for saturation the yellow parts will increase at costs of the orange ones due to a oversaturation of the original image.
+'''orange/yellow''' = these are features standing out from the background in the original image (orange=medium intensity; yellow=high intensity) which are recognized by the thresholding algorithm as foreground features and thus most likely represent features of interest (depending on the image context and quality).
 
 '''red/dark orange''' = these areas have a very low brightness (or are black) in the original image but are thresholded as foreground and therefore most likely represent an overestimation by the threshold.
 
