@@ -40,15 +40,14 @@ The major advantages of this plugin over other implementations are:
 == Usage ==
 The plugin requires a binary image or a segmented grayscale image containing a single neuron.
 
-# Segment the neuronal arbor using <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> (shortcut: {{key press|Shift|T}} ).
-# Press [[#Cf._Segmentation|Cf. Segmentation]] to visually inspect the two thresholded phases: ''arbor'' and ''background''.
+# Segment the neuronal arbor using <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> (shortcut: <span style="display:inline-block;">{{key press|Shift|T}} </span>).
 # Select the center of analysis with the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span>. Alternatively, make a straight line (<span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>) from the focus of the arbor to its most distal point. This will automatically set both the center and [[#EndRadius|Ending radius]].
 # Run <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span>, adjusting the default [[#Parameters|Parameters]] in the dialog prompt.
+# Press [[#Cf._Segmentation|Cf. Segmentation]] to visually inspect the two thresholded phases: ''arbor'' and ''background''.
 # Problems? Read the  [[#FAQ|FAQs]].
 
-
 == Parameters ==
-Input values take into account the scale information of the image that can be set using the <span style="border-bottom:1px dotted #ccc;">Analyze▷ Set Scale...</span> or <span style="border-bottom:1px dotted #ccc;">Image▷ Properties...</span> The prompt is organized into 5 sections:
+Input values take into account the scale information of the image that can be set using the <span style="border-bottom:1px dotted #ccc;">Analyze▷ Set Scale...</span> or <span style="border-bottom:1px dotted #ccc;">Image▷ Properties...</span> (<span style="display:inline-block;">{{key press|Shift|P}} </span>). The prompt is organized into 5 sections:
 
 ==== Definition of Shells ====
 * <span id="StartRadius"></span>'''Starting radius''' <sup>&nbsp;</sup>The radius of the smallest sampling circle/sphere, i.e., the first distance to be sampled.
@@ -115,9 +114,8 @@ Press ''Cf. Segmentation'' to visually confirm which phase of the segmented imag
 |-
 |<center>[[File:CfSegmentation.png|700px|center|]]</center>
 |-
-|With binary images, ''Sholl Analysis'' assumes the background to have a value of zero, independently of the image lookup table or the state of the ''Black background option'' in <span style="border-bottom:1px dotted #ccc;">Process▷ Binary▷ Options...</span> Confusing background with foreground will lead to aberrant results.<p>'''Top row:''' Image properly segmented: Arbor is sampled. '''Bottom row:''' Segmentation of the same image after running <span style="border-bottom:1px dotted #ccc;">Edit▷ Invert</span> ( {{key press|Shift|I}} ): Background is sampled. Note the reversal of ''Cf. Segmentation'' display and how the ''Intersections mask'' no longer decorates the axonal processes but the interstitial spaces between them. Also, note how the number of sampled intersections (hue ramp on upper left) increases.
+|With binary images, ''Sholl Analysis'' assumes the background to have a value of zero, independently of the image lookup table or the state of the ''Black background option'' in <span style="border-bottom:1px dotted #ccc;">Process▷ Binary▷ Options...</span> Confusing background with foreground will lead to aberrant results.<p>'''Top row:''' Image properly segmented: Arbor is sampled. '''Bottom row:''' Segmentation of the same image after running <span style="border-bottom:1px dotted #ccc;">Edit▷ Invert</span> <span style="display:inline-block;">({{key press|Shift|I}})</span>: Background is sampled. Note the reversal of [[#Cf._Segmentation|Cf. Segmentation]] display and how the [[#Output_Options|intersections mask]] no longer decorates the axonal processes but the interstitial spaces between them. Also, note the increased number of sampled intersections (hue ramp on upper left).
 |}
-
 
 == Sholl Plots ==
 <center>
@@ -168,9 +166,7 @@ Most of the retrieved [[#Metrics_based_on_fitted_data|metrics]] are automaticall
 
 <span style="display: inline-block; width: 25px">'''''S'''''</span>The [[#Choice_of_Method(s)|chosen property ]] of the sampling shell to be used in the normalization of ''Linear-norm'', ''Semi-log'', and ''Log-log'' profiles.<br> <span style="display: inline-block; width: 25px">&nbsp;</span>For 2D images, the ''Perimeter'' of the sampling circumference (2πr) or the ''Area'' of the corresponding circle (πr<sup>2</sup>)<br> <span style="display: inline-block; width: 25px">&nbsp;</span>For 3D images, the ''Surface'' of the sampling sphere (4πr<sup>2</sup>) or its respective ''Volume'' (4/3πr<sup>3</sup>)<br>
 
-'''N.B.''' A third [[#Normalizer|normalization option]] is also available when performing [[#StepSize|non-continuous sampling]]: ''Annulus'' / ''Spherical shell''.<br>
-In this case, the normalization is performed against the area of the annulus formed between the circumferences at ''r'' ± ''Radius step size''/2 (2D images), or against the volume between the two spheres at ''r'' ± ''Radius step size''/2 (3D images).<br>
-
+'''N.B.''' A third [[#Normalizer|normalization option]] is also available when performing [[#StepSize|non-continuous sampling]]: ''Annulus''/''Spherical shell''. In this case, the normalization is performed against the area of the annulus formed between the circumferences at ''r'' ± ''Radius step size''/2 (2D images), or against the volume between the two spheres at ''r'' ± ''Radius step size''/2 (3D images).<br>
 
 == Metrics ==
 Morphometric descriptors and other properties of the arbor are printed to a dedicated table named ''Sholl Results''. Listed values can be displayed in scientific notation and with the precision specified in <span style="border-bottom:1px dotted #ccc;">Analyze▷ Set Measurements...</span> The first columns log analysis parameters: ''Image filename and voxel unit'', ''Lower'' and ''Upper Threshold levels'', ''X,Y'' (in pixels) and ''Z'' (slice number) coordinates of center of analysis, ''Starting'' and ''Ending radius'', ''Radius step'', ''Number of Samples per Radius'', etc. Other parameters are described below.
@@ -259,7 +255,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
             margin-bottom: 2em;
             background-color: #ffefbe;
             {{border-radius|.75em}}{{box-shadow}}">
-'''Nomenclature:''' Previous authors have used different terms to describe the largest value taken by the Sholl profile (cf. [http://en.wikipedia.org/wiki/Sholl_analysis Wikipedia], [[#References|References]]). Since the Sholl technique is not restricted to dendritic arbors (it can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels), this plugin introduces the term [[#CriticalRadius|Critical radius]], renaming ''Dendrite maximum'' (''N<sub>m</sub>'') to [[#CriticalValue|Critical value]]. Thus, we may not follow the conventions adopted by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].</div>
+'''Nomenclature:''' [[#References|Previous authors]] have used different terms to describe the largest value taken by the Sholl profile. Since the Sholl technique is not restricted to dendritic arbors and can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels (cf. [[#Citations|List of citations]]), ''Sholl Analysis'' introduces the term [[#CriticalRadius|Critical radius]], renaming ''Dendrite maximum'' (''N<sub>m</sub>'') to [[#CriticalValue|Critical value]]. Thus, ''Sholl Analysis'' may not follow the conventions adopted by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].</div>
 
 ;<span id="MeanValueOfFunction"></span>Mean value
 :The mean value<ref name="Stulic"></ref> of the fitted polynomial function [[#eq1|(1)]], representing the average of intersections over the whole area occupied by the arbor. Sometimes abbreviated as MV or Nav.
@@ -280,10 +276,8 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 
 <span id="Importing"></span>
 
-
 == Importing Profiles Obtained Elsewhere ==
 [[ File:BitmapSholl-TabularPrompt.png|320px|right |Tabular prompt (version 3.4.1)]]As of version 3.1 it is possible to analyze profiles obtained from traced data. This feature is specifically targeted at users of [[Simple Neurite Tracer]], Fiji's framework for semi-automated reconstruction of neuronal arbors, but can be extended to tracings obtained with other software.
-
 
 This option is triggered by holding {{key press|Alt}} while running  <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span>, which prompts a simplified version of the [[#Multiple Samples and Noise Reduction|main dialog]].
 
@@ -300,7 +294,6 @@ This option is triggered by holding {{key press|Alt}} while running  <span style
 Notes:
 *For ''Annulus/Spherical shell'' [[#Normalizer|normalization]], [[#StepSize|Radius step size]] is calculated from the difference between the first two rows in ''Distance column''.
 *In a [[#Batch_Analysis_of_Previously_Obtained_Profiles|macro]], the [http://imagej.nih.gov/ij/developer/macro/functions.html#setKeyDown setKeyDown("alt")] macro function can be used input tabular data.
-
 
 == Batch Processing ==
 It is fairly simple to [[Scripting Help|automate]] the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji ([[Introduction into Macro Programming|ImageJ Macro Language]], [[Beanshell_Scripting|Beanshell]], [[Javascript_Scripting|Javascript]], [[JRuby_Scripting|JRuby]], [[Jython_Scripting|Jython]], [[Clojure_Scripting|Clojure]], ...).
@@ -442,9 +435,9 @@ Semi-automated segmentation can also be improved through the usage of simple [[:
 #<span id="faq9"></span>'''I cannot see the option to save the results. Why?'''
 #: The image you are trying to analyze is not saved locally. Saving it to a local directory (e.g., your Desktop or Home folder) should re-enable it.
 #<span id="faq10"></span>'''What is the ''Sholl mask''?'''
-#: The Sholl mask ([[#Introduction|see example above]]) is simply an illustration: a maximum intensity projection of the analyzed cell in which intersection counts are used as pixel intensities. As explained in [[#Output_Options|Output Options]], its LUT can be modified, and intensities calibrated using ImageJ default commands.
+#: The Sholl mask ([[#Introduction|see example above]]) is simply an illustration: a maximum intensity projection of the analyzed cell in which intersection counts are used as pixel intensities. As explained in [[#Output_Options|Output Options]], its LUT can be modified, and intensities calibrated using ImageJ default commands. As mentioned, it can also be used to visually inspect for [[#Cf._Segmentation|segmentation artifacts]].
 #<span id="faq11"></span>'''The 3D profile looks ''worse'' than the 2D profile of the Maximum Intensity Projection of the same cell. Why?'''
-#: An anisotropic voxel size will have a strong impact on [[#StepSize|step size]]. On the other hand, 2D and 3D images can be sampled differently depending on the [[#Parameters|options chosen]]. If <span style="border-bottom:1px dotted #ccc;">Image▷ Properties…</span> (shortcut: {{key press|Shift|P}} ) reports the appropriate spatial calibration, make sure to read [[#Multiple_Samples_and_Noise_Reduction|Multiple Samples and Noise Reduction]] before deciding which type of images to use.
+#: An anisotropic voxel size will have a strong impact on [[#StepSize|step size]]. On the other hand, 2D and 3D images can be sampled differently depending on the [[#Parameters|options chosen]]. If <span style="border-bottom:1px dotted #ccc;">Image▷ Properties…</span> ({{key press|Shift|P}}) reports the appropriate spatial calibration, make sure to read [[#Multiple_Samples_and_Noise_Reduction|Multiple Samples and Noise Reduction]] before deciding which type of images to use.
 #<span id="faq12"></span>'''The shape of the polynomial changes at the edges of the profile. Why?'''
 #: Inflection points at [[#StartRadius|starting/ending radius]] are usually associated with a poor fit and/or the fact that all the radii in which no intersections were counted are ignored. The latter is required to calculate the [[#ShollDecay|Sholl regression coefficient]], as ''log(0)'' is undefined.
 #<span id="faq13"></span>'''My images do not look that great. How can I treat them prior to analysis?'''
@@ -475,32 +468,28 @@ Releases notes are available on [https://github.com/tferr/ASA/blob/master/Notes.
 
 * '''[http://www.reading.ac.uk/neuromantic/ Neuromantic]''' Standalone program for (semi-manual/semi-automatic) neuronal reconstruction
 
+== Citations ==
+
 == References ==
 <references >
 <ref name="Gross">
 Ferreira TA, Iacono LL, Gross CT. Serotonin receptor 1A modulates actin dynamics and restricts dendritic growth in hippocampal neurons. Eur J Neurosci. 2010 Jul;32(1):18-26. [http://www.ncbi.nlm.nih.gov/pubmed?term=20561047 PMID: 20561047]
 </ref>
-
 <ref name="Sholl">
 Sholl DA. Dendritic organization in the neurons of the visual and motor cortices of the cat. J Anat. 1953 Oct;87(4):387-406. [http://www.ncbi.nlm.nih.gov/pubmed?term=13117757  PMID: 13117757]
 </ref>
-
 <ref name="Stulic">
 Ristanović D, Milosević NT, Stulić V. Application of modified Sholl analysis to neuronal dendritic arborization of the cat spinal cord. J Neurosci Methods. 2006 Dec 15;158(2):212-8. [http://www.ncbi.nlm.nih.gov/pubmed?term=16814868 PMID: 16814868]
 </ref>
-
 <ref name="Schoenen">
 Schoenen J. The dendritic organization of the human spinal cord: the dorsal horn. Neuroscience. 1982;7(9):2057-87.[http://www.ncbi.nlm.nih.gov/pubmed?term=7145088 PMID: 7145088]
 </ref>
-
 <ref name="Ristanovic">
 Milosević NT, Ristanović D. The Sholl analysis of neuronal cell images: semi-log or log-log method? J Theor Biol. 2007 Mar 7;245(1):130-40 [http://www.ncbi.nlm.nih.gov/pubmed?term=17084415 PMID: 17084415]
 </ref>
-
 <ref name="DIADEM">
 Brown KM, Barrionuevo G, Canty AJ, De Paola V, Hirsch JA, Jefferis GS, Lu J, Snippe M, Sugihara I, Ascoli GA. The DIADEM data sets: representative light microscopy images of neuronal morphology to advance automation of digital reconstructions. Neuroinformatics. 2011 Sep;9(2-3):143-57, [http://www.ncbi.nlm.nih.gov/pubmed?term=21249531 PMID: 21249531]
 </ref>
-
 </references>
 
 == License ==
