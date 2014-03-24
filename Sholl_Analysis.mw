@@ -409,6 +409,15 @@ On the other hand, it is possible to adopt more sophisticated [[:Category:Segmen
 Semi-automated segmentation can also be improved through the usage of simple [[:Category:Scripting|scripts]] that automate frequently used commands, including the ones in this [https://github.com/tferr/Scripts#scripts Github repository]. For more information about image processing have a look at the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide], the Fiji [[Cookbook]], Fiji [[:Category:Tutorials|tutorials]], the [http://imagejdocu.tudor.lu ImageJ Information and Documentation Portal], and remaining documentation resources (<span style="border-bottom:1px dotted #ccc;">Help▷ Documentation...</span>).
 
 == Extended Fitting ==
+[[ File:AnimatedPolyFit.gif|frame|Sampled data from the ddaC cell (<span style="border-bottom:1px dotted #ccc;">File▷ Open Samples▷ ddaC Neuron</span>) being fitted to polynomials of varying degree using the Complementary Fitting Toolbox.]]
+
+''Sholl Analysis'' tries to be as flexible as possible by providing several options for normalization and curve fitting. However, it cannot offer exhaustive curve fitting options for two main reasons: 1) Extensive options would clutter the plugin's interface and 2) Determining ''best fit models'' requires reasonable choices that are not amenable to full automation. For these reasons,  complimentary tools for curve fitting can be installed as needed to complement the plugin. As of version 3.4.1, the ''Complementary Fitting Toolbox'' consists of the following tools:
+
+* '''[[Find Peaks]]:''' Retrieves local maxima under several filtering options such as peak amplitude, peak height and peak width. Can be used to retrieve secondary sites of higher branch density ([https://raw.githubusercontent.com/tferr/Scripts/master/Analysis/Find_Peaks.bsh direct download]).
+* '''Fit Polynomial:''' Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions. Requires the [http://commons.apache.org/proper/commons-math/ apache commons math library], distributed with Fiji. The script provides [[#Non-Fiji_users|Non-Fiji users]] with direct download links that will install all required dependencies ([https://raw.githubusercontent.com/tferr/Scripts/master/Analysis/Fit_Polynomial.bsh direct download]).
+* '''Plot Results:''' Whole-purpose routine that plots data from imported spreadsheets ([https://raw.githubusercontent.com/tferr/Scripts/master/Analysis/Plot_Results.bsh direct download]). 
+
+Right now, these [[Beanshell_Scripting|Beanshell]] scripts are installed individually from their [https://github.com/tferr/Scripts/blob/master/Analysis/README.md#analysis GitHub repository], but soon they will be available through the [[Update Fiji|Fiji Updater]] by means of an [[List_of_update_sites|update site]].
 
 == Auxiliary Commands ==
 ;File▷ Open Samples▷ ddaC Neuron
