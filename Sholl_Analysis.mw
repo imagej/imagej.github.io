@@ -223,7 +223,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
             margin-bottom: 2em;
             background-color: #ffefbe;
             {{border-radius|.75em}}{{box-shadow}}">
-'''''Max inters.:''''' By default only the absolute maximum is noted. However, it is possible to apply peak detection techniques to the profile to retrieve other sites of high density branching. See [[#Complementary_Tools|Complementary Tools]] and [[Find Peaks]] for more details.</div>
+'''''Max inters.:''''' By default only the absolute maximum is noted. However, it is possible to apply peak detection techniques to the profile to retrieve other sites of high density branching. See [[#Complementary_Tools|Complementary Tools]] for more details.</div>
 
 ;<span id="MaxIntersRadius"></span>Radius of highest count of intersections (''Max inters. radius'')
 :The distance at which the ''Highest count of intersections'' occurred, reflecting sites of highest branch density. Note that if the same maximum occurs multiple times, only the first distance is considered.
