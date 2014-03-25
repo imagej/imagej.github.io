@@ -35,6 +35,7 @@ A [[Beanshell_Scripting|BeanShell]] script that retrieves local maxima and minim
 * Peaks with flat tops are retrieved at their centers
 * Peak coordinates are logged according to the following layout: [''X0,Y0'']: Original data; [''X1,Y1'']: Maxima; [''X2,Y2'']: Minima
 * ''Min. peak distance'' can be used for peak width filtering
+* Right now, ''Find Peaks'' needs to be [[#Installation|installed]] manually from its [https://github.com/tferr/Scripts/tree/master/Analysis#analysis GitHub repository], but soon it will be available through the [[Update Fiji|Fiji Updater]] by means of an [[List_of_update_sites|update site]].
 
 == Related Resources ==
 Analysis of 1D-signals was discussed in March 2014 on the [https://list.nih.gov/cgi-bin/wa.exe?A1=ind1403&L=IMAGEJ#32 ImageJ mailing list]. That discussion highlighted the following alternatives to ''Find Peaks'':
