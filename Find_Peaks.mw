@@ -47,7 +47,7 @@ Open the [[Script Editor]], select ''Language>Beanshell'' and paste the followin
  * https://github.com/tferr/Scripts#scripts
  *
  * Requires ImageJ 1.48d or newer. See http://fiji.sc/Find_Peaks for details.
- * Tiago Ferreira, v1.0.1 2014.02.23
+ * Tiago Ferreira, v1.0.2 2014.03.07
  */
 
 double tolerance;
@@ -82,21 +82,22 @@ double[] getCoordinates(double[] values, int[] positions) {
 	return cc;
 }
 
-void prompt() {
+boolean prompt() {
 	GenericDialog gd = new GenericDialog("Find Local Maxima/Minima...");
-	gd.addNumericField("Min._peak_amplitude:",tolerance,2);
-	gd.addNumericField("Min._peak_distance:",minPeakDistance,2);
-	gd.addNumericField("Min._value of maxima:",minMaximaValue,2,6,"(NaN: no filtering)");
-	gd.addNumericField("Max._value of minima:",maxMinimaValue,2,6,"(NaN: no filtering)");
-	gd.addCheckbox("Exclude peaks on edges of plot",excludeOnEdges);
+	gd.addNumericField("Min._peak_amplitude:", tolerance, 2);
+	gd.addNumericField("Min._peak_distance:", minPeakDistance, 2);
+	gd.addNumericField("Min._value of maxima:", minMaximaValue, 2, 6, "(NaN: no filtering)");
+	gd.addNumericField("Max._value of minima:", maxMinimaValue, 2, 6, "(NaN: no filtering)");
+	gd.addCheckbox("Exclude peaks on edges of plot", excludeOnEdges);
 	gd.addHelp("http://fiji.sc/Find_Peaks");
 	gd.showDialog();
-	if (gd.wasCanceled()) return;
+	boolean dialogOKed = (gd.wasCanceled()) ? false : true;
 	tolerance = gd.getNextNumber();
 	minPeakDistance = gd.getNextNumber();
 	minMaximaValue = gd.getNextNumber();
 	maxMinimaValue = gd.getNextNumber();
 	excludeOnEdges = gd.getNextBoolean();
+	return dialogOKed;
 }
 
 int[] trimPeakHeight(int[] positions, boolean minima) {
@@ -161,9 +162,9 @@ if (win!=null && (win instanceof PlotWindow)) {
 	return;
 }
 
-prompt();
-maxima = findMaxima(yvalues, tolerance);
-minima = findMinima(yvalues, tolerance);
+if (!prompt()) return;
+int[] maxima = findMaxima(yvalues, tolerance);
+int[] minima = findMinima(yvalues, tolerance);
 if (!Double.isNaN(minMaximaValue))
 	maxima = trimPeakHeight(maxima, false);
 if (!Double.isNaN(maxMinimaValue))
@@ -172,10 +173,10 @@ if (minPeakDistance>0) {
 	maxima = trimPeakDistance(maxima);
 	minima = trimPeakDistance(minima);
 }
-xMaxima = getCoordinates(xvalues, maxima);
-yMaxima = getCoordinates(yvalues, maxima);
-xMinima = getCoordinates(xvalues, minima);
-yMinima = getCoordinates(yvalues, minima);
+double[] xMaxima = getCoordinates(xvalues, maxima);
+double[] yMaxima = getCoordinates(yvalues, maxima);
+double[] xMinima = getCoordinates(xvalues, minima);
+double[] yMinima = getCoordinates(yvalues, minima);
 
 String plotTitle = imp.getTitle();
 Plot plot = new Plot("Peaks in "+ plotTitle, "", "", xvalues, yvalues);
@@ -187,15 +188,13 @@ plot.setColor(Color.BLUE);
 plot.addPoints(xMinima, yMinima, Plot.CIRCLE);
 plot.addLabel(0.25, 0, minima.length +" minima");
 plot.setColor(Color.BLACK);
-plot.addLabel(0.50, 0, "Min. amp.: "+ IJ.d2s(tolerance,2)
-			+"  Min. dx.: "+ IJ.d2s(minPeakDistance,2) );
+plot.addLabel(0.50, 0, "Min. amp.: "+ IJ.d2s(tolerance,2) +"  Min. dx.: "+ IJ.d2s(minPeakDistance,2) );
 plot.setLineWidth(1);
 if (plotTitle.startsWith("Peaks in"))
 	pw.drawPlot(plot);
 else
 	plot.show();
 </source>
-
 
 == License ==
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
