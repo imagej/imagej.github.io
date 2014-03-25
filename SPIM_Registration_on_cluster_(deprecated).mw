@@ -2218,6 +2218,7 @@ target_pattern=${dir}${target_pattern}
 i=${first_index}
 t=${first_timepoint}
 t=`printf "%0${pad_rename_czi}d" "$t"`
+t="$(( 10#$t ))"
 
 while [ $i -le $last_index ]; do
 
@@ -2235,7 +2236,7 @@ while [ $i -le $last_index ]; do
 	done
 	let t=t+1
 	t=`printf "%0${pad_rename_czi}d" "$t"`
-	
+	t="$(( 10#$t ))"
 done
 
 </source>
