@@ -58,10 +58,10 @@ Input values take into account the scale information of the image that can be se
             padding: 5px !important;
             text-align:center;
             margin-top: 1em;
-            margin-bottom: 2em;
+            margin-bottom: 1em;
             background-color: #ffefbe;
             {{border-radius|.75em}}{{box-shadow}}">
-'''Tip:''' You can clear ''Ending radius'' (or set it to ''NaN'') to sample the entire image. This is particularly useful when running the plugin from a [[#Batch_Processing|macro]] that processes images with different dimensions.</div>
+'''Tip:''' You can clear ''Ending radius'' (or set it to ''NaN'', ''Not a Number'') to sample the entire image. This is particularly useful when running the plugin from a [[#Batch_Processing|macro]] that processes images with different dimensions.</div>
 
 * <span id="StepSize"></span>'''Radius step size''' <sup>&nbsp;</sup>The sampling interval between radii of consecutive sampling circles/spheres. This value may be set to zero for continuous (1-voxel increment) measurements.
 :For stacks with anisotropic voxel size, setting ''Radius step size'' to zero, sets the step length to the dimension of the matching isotropic voxel, i.e., the cube root of the product of the voxel dimensions or the square root of the product of the pixel dimensions (2D images).
@@ -106,7 +106,7 @@ Input values take into account the scale information of the image that can be se
             margin-bottom: 2em;
             background-color: #ffefbe;
             {{border-radius|.75em}}{{box-shadow}}">
-'''Tip:''' [[#Extended_Fitting|Extended Fitting]] describes how to extend fitting options with complementary tools.</div>
+'''Tip:''' [[#Complementary_Tools|Complementary Tools]] describes how to extend curve fitting beyond default options.</div>
 
 ==== Choice of Method(s) ====
 <span id="Sholl_Methods"></span>The [[#MethodsTable|type of profile(s)]] to be obtained. ''Linear'' (profile without normalization), or normalized profiles: ''Linear-norm'', ''Semi-log'', or ''Log-log''.
@@ -223,7 +223,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
             margin-bottom: 2em;
             background-color: #ffefbe;
             {{border-radius|.75em}}{{box-shadow}}">
-'''''Max inters.:''''' By default only the absolute maximum is noted. However, it is possible to apply peak detection techniques to the profile to retrieve other sites of high density branching. See [[#Extended_Fitting|Extended Fitting]] and [[Find Peaks]] for more details.</div>
+'''''Max inters.:''''' By default only the absolute maximum is noted. However, it is possible to apply peak detection techniques to the profile to retrieve other sites of high density branching. See [[#Complementary_Tools|Complementary Tools]] and [[Find Peaks]] for more details.</div>
 
 ;<span id="MaxIntersRadius"></span>Radius of highest count of intersections (''Max inters. radius'')
 :The distance at which the ''Highest count of intersections'' occurred, reflecting sites of highest branch density. Note that if the same maximum occurs multiple times, only the first distance is considered.
@@ -426,13 +426,13 @@ Semi-automated segmentation can also be improved through the usage of simple [[:
 
 For more information about image processing have a look at the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide], the Fiji [[Cookbook]], Fiji [[:Category:Tutorials|tutorials]], the [http://imagejdocu.tudor.lu ImageJ Information and Documentation Portal], and remaining documentation resources (<span style="border-bottom:1px dotted #ccc;">Help▷ Documentation...</span>).
 
-== Extended Fitting ==
-[[ File:AnimatedPolyFit.gif|frame|Sampled data from the ddaC cell (<span style="border-bottom:1px dotted #ccc;">File▷ Open Samples▷ ddaC Neuron</span>) being fitted to polynomials of varying degree using the Complementary Fitting Toolbox.]]
+== Complementary Tools ==
+<span id="Extended_Fitting"></span>[[ File:AnimatedPolyFit.gif|frame|Sampled data from the ddaC cell (<span style="border-bottom:1px dotted #ccc;">File▷ Open Samples▷ ddaC Neuron</span>) being fitted to polynomials of varying degree using the Complementary Fitting Toolbox.]]
 
 ''Sholl Analysis'' tries to be as flexible as possible by providing several options for normalization and curve fitting. However, it cannot offer exhaustive curve fitting options for two main reasons: 1) Extensive options would clutter the plugin's interface and 2) Determining ''best fit models'' requires reasonable choices that are not amenable to full automation. For these reasons,  complementary tools for curve fitting can be installed as needed to complement the plugin. As of version 3.4.1, the ''Complementary Fitting Toolbox'' consists of the following tools:
 
 * '''[[Find Peaks]]:''' Retrieves local maxima under several filtering options such as peak amplitude, peak height and peak width. Can be used to retrieve secondary sites of higher branch density ([https://raw.githubusercontent.com/tferr/Scripts/master/Analysis/Find_Peaks.bsh direct download]).
-* '''Fit Polynomial:''' Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions. Requires the [http://commons.apache.org/proper/commons-math/ apache commons math library], distributed with Fiji. The script provides [[#Non-Fiji_users|Non-Fiji users]] with direct download links that will install all required dependencies ([https://raw.githubusercontent.com/tferr/Scripts/master/Analysis/Fit_Polynomial.bsh direct download]).
+* '''Fit Polynomial:''' Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions. Requires the [http://commons.apache.org/proper/commons-math/ apache commons math library], distributed with Fiji. The script provides [[#Non-Fiji_users|Non-Fiji users]] with direct download links that install all required dependencies ([https://raw.githubusercontent.com/tferr/Scripts/master/Analysis/Fit_Polynomial.bsh direct download]).
 * '''Plot Results:''' Whole-purpose routine that plots data from imported spreadsheets ([https://raw.githubusercontent.com/tferr/Scripts/master/Analysis/Plot_Results.bsh direct download]). 
 
 Right now, these [[Beanshell_Scripting|Beanshell]] scripts are installed individually from their [https://github.com/tferr/Scripts/blob/master/Analysis/README.md#analysis GitHub repository], but soon they will be available through the [[Update Fiji|Fiji Updater]] by means of an [[List_of_update_sites|update site]].
@@ -472,7 +472,7 @@ Right now, these [[Beanshell_Scripting|Beanshell]] scripts are installed individ
 #<span id="faq13"></span>'''My images do not look that great. How can I treat them prior to analysis?'''
 #: Have a look at [[#Pre-processing| Pre-processing]].
 #<span id="faq14"></span>'''None of the fitting options is suitable for my datasets. What should I do?'''
-#: Have a look at [[#Extended_Fitting|Extended Fitting]].
+#: Have a look at [[#Complementary Tools|Complementary Tools]].
 #<span id="faq15"></span>'''I found a bug. How do I report it?'''
 #: Use Fiji's built-in [[Report a Bug]] command. Alternatively, report it to the [http://imagej.nih.gov/ij/list.html ImageJ mailing list]. Don't forget to include the steps needed to reproduce the problem.
 #<span id="faq16"></span>'''My version is not the latest after running <span style="border-bottom:1px dotted #ccc;">Help▷ Update Fiji...</span> Why?'''
@@ -488,7 +488,7 @@ Please note that Fiji is the most convenient way of keeping your ImageJ distribu
 == Release Notes and Pre-releases ==
 Releases notes are available on [https://github.com/tferr/ASA/blob/master/Notes.md#release-notes-for-sholl-analysis Github]. If you do not mind unstable software, [https://github.com/tferr/ASA/blob/master/Notes.md#development-builds development builds] may be found [http://jenkins.imagej.net/job/Sholl-Analysis here]. Once new features mature and no major issues are found these development versions will be made available, as usual, through [[Update_Fiji|Fiji's Updater]].
 
-== Related Links ==
+== Related Resources ==
 * '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]]''' Mark Longair's plugin for semi-automated three-dimensional tracing, featuring [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl analysis]] for traced cells
 
 * '''[[Strahler_Analysis|Strahler_Analysis]]''' Strahler Analysis on [[Skeletonize3D|skeletonized]] arbors.
@@ -498,6 +498,14 @@ Releases notes are available on [https://github.com/tferr/ASA/blob/master/Notes.
 * '''[http://www.reading.ac.uk/neuromantic/ Neuromantic]''' Standalone program for (semi-manual/semi-automatic) neuronal reconstruction
 
 == Citations ==
+While under development, ''Sholl Analysis'' has contributed to the following publications:
+
+# Ultanir SK, Kim JE, Hall BJ, Deerinck T, Ellisman M, Ghosh A. Regulation of spine morphology and spine density by NMDA receptor signaling in vivo. Proc Natl Acad Sci U S A. 2007 Dec 4;104(49):19553-8 [http://www.ncbi.nlm.nih.gov/pubmed?term=18048342 PMID: 18048342]
+# Stark KL, Xu B, Bagchi A, Lai WS, Liu H, Hsu R, Wan X, Pavlidis P, Mills AA, Karayiorgou M, Gogos JA. Altered brain microRNA biogenesis contributes to phenotypic deficits in a 22q11-deletion mouse model. Nat Genet. 2008 Jun;40(6):751-60 [http://www.ncbi.nlm.nih.gov/pubmed?term=18469815 PMID: 18469815]
+# Strasser GA, Kaminker JS, Tessier-Lavigne M. Microarray analysis of retinal endothelial tip cells identifies CXCR4 as a mediator of tip cell morphology and branching. Blood. 2010 Jun 17;115(24):5102-10 [http://www.ncbi.nlm.nih.gov/pubmed?term=20154215 PMID: 20154215]
+# Xing L, Yao X, Williams KR, Bassell GJ. Negative regulation of RhoA translation and signaling by hnRNP-Q1 affects cellular morphogenesis. Mol Biol Cell. 2012 Apr;23(8):1500-9. [http://www.ncbi.nlm.nih.gov/pubmed?term=22357624 PMID: 22357624]
+# Chen Y, Fu WY, Ip JP, Ye T, Fu AK, Chao MV, Ip NY. Ankyrin repeat-rich membrane spanning protein (kidins220) is required for neurotrophin and ephrin receptor-dependent dendrite development. J Neurosci. 2012 Jun 13;32(24):8263-9. [http://www.ncbi.nlm.nih.gov/pubmed?term=22699907 PMID: 22699907]
+# Ferreira T, Ou Y, Li S, Giniger E, van Meyel DJ. Dendrite architecture organized by transcriptional control of the F-actin nucleator Spire. Development. 2014 Feb;141(3):650-60. [http://www.ncbi.nlm.nih.gov/pubmed?term=24449841 PMID: 24449841]
 
 == References ==
 <references >
