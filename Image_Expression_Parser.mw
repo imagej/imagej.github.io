@@ -231,6 +231,35 @@ result_imp.updateAndDraw()
 </source>
 
 
+Here is another example in [[Javascript]] contributed by Jeff Hanson:
+
+
+<source lang="javascript">
+// This script was created as an javascript equivalent of the Python example here:
+//   http://fiji.sc/Image_Expression_Parser#Calling_the_plugin_from_elsewhere
+
+importClass(Packages.fiji.process.Image_Expression_Parser); 
+importClass(java.util.HashMap);
+importPackage(Packages.mpicbg.imglib);
+
+expression = 'A^2';
+
+imp = IJ.getImage();
+
+img = Packages.mpicbg.imglib.image.ImagePlusAdapter.wrap(imp);
+
+imgMap = new java.util.HashMap();
+imgMap.put('A', img);
+parser = new Packages.fiji.process.Image_Expression_Parser();
+parser.setImageMap(imgMap);
+parser.setExpression(expression);
+parser.process();
+result = parser.getResult();
+resultImp = Packages.mpicbg.imglib.image.display.imagej.ImageJFunctions.copyToImagePlus(result);
+IJ.run(resultImp, "Enhance Contrast", "saturated=0.35");
+resultImp.show();
+</source>
+
 == Version history ==
 
 * v1.0 - Feb 2010 - First working version.
