@@ -498,14 +498,6 @@ Releases notes are available on [https://github.com/tferr/ASA/blob/master/Notes.
 * '''[http://www.reading.ac.uk/neuromantic/ Neuromantic]''' Standalone program for (semi-manual/semi-automatic) neuronal reconstruction
 
 == Citations ==
-While under development, ''Sholl Analysis'' has contributed to the following publications:
-
-# Ultanir SK, Kim JE, Hall BJ, Deerinck T, Ellisman M, Ghosh A. Regulation of spine morphology and spine density by NMDA receptor signaling in vivo. Proc Natl Acad Sci U S A. 2007 Dec 4;104(49):19553-8 [http://www.ncbi.nlm.nih.gov/pubmed?term=18048342 PMID: 18048342]
-# Stark KL, Xu B, Bagchi A, Lai WS, Liu H, Hsu R, Wan X, Pavlidis P, Mills AA, Karayiorgou M, Gogos JA. Altered brain microRNA biogenesis contributes to phenotypic deficits in a 22q11-deletion mouse model. Nat Genet. 2008 Jun;40(6):751-60 [http://www.ncbi.nlm.nih.gov/pubmed?term=18469815 PMID: 18469815]
-# Strasser GA, Kaminker JS, Tessier-Lavigne M. Microarray analysis of retinal endothelial tip cells identifies CXCR4 as a mediator of tip cell morphology and branching. Blood. 2010 Jun 17;115(24):5102-10 [http://www.ncbi.nlm.nih.gov/pubmed?term=20154215 PMID: 20154215]
-# Xing L, Yao X, Williams KR, Bassell GJ. Negative regulation of RhoA translation and signaling by hnRNP-Q1 affects cellular morphogenesis. Mol Biol Cell. 2012 Apr;23(8):1500-9. [http://www.ncbi.nlm.nih.gov/pubmed?term=22357624 PMID: 22357624]
-# Chen Y, Fu WY, Ip JP, Ye T, Fu AK, Chao MV, Ip NY. Ankyrin repeat-rich membrane spanning protein (kidins220) is required for neurotrophin and ephrin receptor-dependent dendrite development. J Neurosci. 2012 Jun 13;32(24):8263-9. [http://www.ncbi.nlm.nih.gov/pubmed?term=22699907 PMID: 22699907]
-# Ferreira T, Ou Y, Li S, Giniger E, van Meyel DJ. Dendrite architecture organized by transcriptional control of the F-actin nucleator Spire. Development. 2014 Feb;141(3):650-60. [http://www.ncbi.nlm.nih.gov/pubmed?term=24449841 PMID: 24449841]
 
 == References ==
 <references >
