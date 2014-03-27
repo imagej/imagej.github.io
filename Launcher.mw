@@ -29,7 +29,7 @@ where xyz is your platform.
 The launcher can do all kinds of things, like:
 
 * Launch ImageJ with a different amount of memory (<code>--mem</code> option)
-* Run [[Headless|Headless macros and scripts in headless mode]]
+* Run [[Headless|macros and scripts in headless mode]]
 * Control the [[Updater]] from the command line
 
 == Download ==
