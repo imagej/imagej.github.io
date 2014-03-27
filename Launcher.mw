@@ -34,4 +34,4 @@ The launcher can do all kinds of things, like:
 
 == Download ==
 
-Up-to-date versions can always be downloaded from Jenkins' platform-specific configurations.
+Up-to-date versions can always be [http://jenkins.imagej.net/job/ImageJ-launcher/ downloaded from Jenkins].
