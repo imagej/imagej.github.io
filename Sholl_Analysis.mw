@@ -122,7 +122,7 @@ Input values take into account the scale information of the image that can be se
 ** '''Do not display saved files''' If checked, saved files are directly saved to disk and are not displayed. Activate this option when [[#Batch_Processing|batch processing]] files.
 
 ==== Cf. Segmentation ====
-Press ''Cf. Segmentation'' to visually confirm which phase of the segmented image will be sampled. This command highlights ''arbor'' and ''background'' and is particularly useful when analyzing blank and white (binary) images or when using the ''B&W'' lookup table in the Threshold Widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> ({{key press|Shift|T}}). Together with [[#Output_Options|intersections masks]], this command allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [http://diademchallenge.org DIADEM] dataset<ref name="DIADEM"/>:
+Press ''Cf. Segmentation'' to visually confirm which phase of the segmented image will be sampled. This command highlights ''arbor'' from ''background'' and is particularly useful when analyzing black and white (binary) images or when using the ''B&W'' lookup table in the Threshold Widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> ({{key press|Shift|T}}). Together with [[#Output_Options|intersections masks]], this command allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [http://diademchallenge.org DIADEM] dataset<ref name="DIADEM"/>:
 
 
 {|
@@ -130,8 +130,18 @@ Press ''Cf. Segmentation'' to visually confirm which phase of the segmented imag
 |-
 |<center>[[File:CfSegmentation.png|700px|center|]]</center>
 |-
-|With binary images, ''Sholl Analysis'' assumes the background to have a value of zero, independently of the image lookup table or the state of the ''Black background option'' in <span style="border-bottom:1px dotted #ccc;">Process▷ Binary▷ Options...</span> Confusing background with foreground will lead to aberrant results.<p>'''Top row:''' Image properly segmented: Arbor is sampled. '''Bottom row:''' Segmentation of the same image after running <span style="border-bottom:1px dotted #ccc;">Edit▷ Invert</span> <span style="display:inline-block;">({{key press|Shift|I}})</span>: Background is sampled. Note the reversal of [[#Cf._Segmentation|Cf. Segmentation]] output and how the [[#Output_Options|intersections mask]] no longer decorates the axonal processes but the interstitial spaces between them. Also, note the increased number of sampled intersections (hue ramp on upper left).
+|'''Top row:''' Image properly segmented: Arbor is sampled. '''Bottom row:'''  Aberrant segmentation: Background is sampled. Note the reversal of [[#Cf._Segmentation|Cf. Segmentation]] output and how the [[#Output_Options|intersections mask]] no longer decorates the axonal processes but the interstitial spaces between them. Also, note the increased number of sampled intersections (hue ramp on upper left).
 |}
+
+<div id="Binary_Artifacts" style="float:center;
+            border: 1px solid #ccc;
+            padding: 5px !important;
+            text-align:center;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            background-color: #ffefbe;
+            {{border-radius|.75em}}{{box-shadow}}">
+'''N.B.:''' With binary images, ''Sholl Analysis'' assumes the background to have a value of zero, independently of the image lookup table (<span style="border-bottom:1px dotted #ccc;">Image▷ Lookup Tables▷ Invert LUT</span>) or the state of the ''Black background option'' in <span style="border-bottom:1px dotted #ccc;">Process▷ Binary▷ Options...</span> Confusing background with foreground will lead to aberrant results, including overestimation of processes and artifacts at distances intersecting the boundaries of the image canvas.</div>
 
 == Sholl Plots ==
 <center>
