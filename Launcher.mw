@@ -1,3 +1,31 @@
-The ImageJ/Fiji launcher is a native executable whose purpose is to start up a Java Virtual Machine and run ImageJ 1.x, Fiji or ImageJ2 in it.
+The ImageJ launcher is a native application for launching ImageJ.
 
-Its source code lives on [https://github.com/imagej/imagej-launcher GitHub]. It is used in the [http://jenkins.imagej.net/job/ImageJ1-releases/ ImageJ 1.x releases], the [[Downloads|Fiji distribution]] as well as in [http://developer.imagej.net/about ImageJ2]. It is built by ImageJ2's [http://jenkins.imagej.net/job/ImageJ-launcher/ Jenkins server] (i.e. the server that builds and tests all of Fiji/ImageJ's source continuously).
+== Introduction ==
+
+The launcher supports the following flavors of ImageJ:
+
+* [http://imagej.net/ ImageJ1]
+* [[ImageJ2]]
+* [[Fiji]]
+
+The launcher is a native executable whose purpose is to start up a Java Virtual Machine and run ImageJ 1.x, Fiji or ImageJ2 in it. It is used in the [http://jenkins.imagej.net/job/ImageJ1-releases/ ImageJ 1.x releases], the [[Downloads|Fiji distribution]] as well as in [http://developer.imagej.net/about ImageJ2]. It is built by ImageJ2's [http://jenkins.imagej.net/job/ImageJ-launcher/ Jenkins server] (i.e. the server that builds and tests all of Fiji/ImageJ's source continuously).
+
+== Source ==
+
+Its source code lives on [https://github.com/imagej/imagej-launcher GitHub].
+
+== Purpose ==
+
+The launcher provides a platform-specific entry point into the ImageJ Java application. Its most major function is to facilitate the ImageJ Updater feature by taking care of pending updates when ImageJ is first launched.
+
+== Usage ==
+
+For an overview of supported options, run:
+
+ ./ImageJ-xyz --help
+
+where xyz is your platform.
+
+== Download ==
+
+Up-to-date versions can always be downloaded from Jenkins' platform-specific configurations.
