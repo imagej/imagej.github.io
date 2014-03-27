@@ -457,40 +457,127 @@ Right now, these [[Beanshell_Scripting|Beanshell]] scripts are installed individ
 :Retrieves information about the plugin version and a link to its Git source code [https://github.com/tferr/ASA repository].
 
 == FAQ ==
-#<span id="faq1"></span>'''What is the difference between ''Sholl Analysis'' and an homonymous plugin released by the Ghosh laboratory in 2005'''?
-#:The [http://labs.biology.ucsd.edu/ghosh/software/ original Sholl Analysis plugin] by Tom Maddock (version 1.0) was released for ImageJ 1.35 and is now deprecated software. The current implementation inherits Tom's initial 2D algorithm, but has numerous [[#Release_Notes|added features]] to enhance its utility. Note that throughout 2012 the plugin was temporarily called ''Advanced Sholl Analysis''. You can follow the entire history of the plugin on [https://github.com/tferr/ASA GitHub]. 
-#<span id="faq2"></span>'''Why do I need to threshold the cell?'''
-#: Counting intersections is really a binary procedure: a shell either intercepts a branch or it doesn't. For this reason the image must be split in two phases: arbor and background.
-#<span id="faq3"></span>'''The plugin complains about a wrong image type. Why?'''
-#: Although ImageJ can threshold RGB images, the plugin can only parse grayscale images (8-bit and 16-bit). Images of fluorescence-labeled cells are typically non-RGB images. Conversions between different image types is explained in the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide].
-#<span id="faq4"></span>'''I cannot see the hemicircle/hemisphere option. Why?'''
-#: This option is only available if an orthogonal line has been created by holding {{key press|Shift}} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for the full list of key modifiers that can be used while creating straight line ROIs.
-#<span id="faq5"></span>'''With 3D images, how do I set the Z-position of the center?'''
-#: The Z-position (depth) of the center of analysis is the active Z-slice of the stack. It is reported in the ''Sholl Results'' table.
-#<span id="faq6"></span>'''Why so many parameters?'''
-#:The plugin is designed for the analysis of a wide diversity of arbors and it is not biased to any particular cell type. The only way to ensure this broad applicability is to give users full control over the mathematical techniques used by the plugin to analyze sampled data.
-#<span id="faq7"></span>'''How can I save/edit the ''Sholl Results'' table?'''
-#: Select the table, then choose <span style="border-bottom:1px dotted #ccc;">File▷ Save As…</span>The filename extension can be specified using <span style="border-bottom:1px dotted #ccc;">Edit▷ Options▷ Input/Output…</span> (see the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
-#<span id="faq8"></span>'''Can I modify the number of decimal places used by the ''Sholl Results'' table?'''
-#: Yes. Use the options ''Decimal places'' and ''Scientific notation'' in <span style="border-bottom:1px dotted #ccc;">Analyze▷ Set Measurements…</span>
-#<span id="faq9"></span>'''I cannot see the option to save the results. Why?'''
-#: The image you are trying to analyze is not saved locally. Saving it to a local directory (e.g., your Desktop or Home folder) should re-enable it.
-#<span id="faq10"></span>'''What is the ''Sholl mask''?'''
-#: The Sholl mask ([[#Introduction|see example above]]) is simply an illustration: a maximum intensity projection of the analyzed cell in which intersection counts are used as pixel intensities. As explained in [[#Output_Options|Output Options]], its LUT can be modified, and intensities calibrated using ImageJ default commands. As mentioned, it can also be used to visually inspect for [[#Cf._Segmentation|segmentation artifacts]].
-#<span id="faq11"></span>'''The 3D profile looks ''worse'' than the 2D profile of the Maximum Intensity Projection of the same cell. Why?'''
-#: An anisotropic voxel size will have a strong impact on [[#StepSize|step size]]. On the other hand, 2D and 3D images can be sampled differently depending on the [[#Parameters|options chosen]]. If <span style="border-bottom:1px dotted #ccc;">Image▷ Properties…</span> ({{key press|Shift|P}}) reports the appropriate spatial calibration, make sure to read [[#Multiple_Samples_and_Noise_Reduction|Multiple Samples and Noise Reduction]] before deciding which type of images to use.
-#<span id="faq12"></span>'''The shape of the polynomial changes at the edges of the profile. Why?'''
-#: Inflection points at [[#StartRadius|starting/ending radius]] are usually associated with a poor fit and/or the fact that all the radii in which no intersections were counted are ignored. The latter is required to calculate the [[#ShollDecay|Sholl regression coefficient]], as ''log(0)'' is undefined.
-#<span id="faq13"></span>'''My images do not look that great. How can I treat them prior to analysis?'''
-#: Have a look at [[#Pre-processing| Pre-processing]].
-#<span id="faq14"></span>'''None of the fitting options is suitable for my datasets. What should I do?'''
-#: Have a look at [[#Complementary Tools|Complementary Tools]].
-#<span id="faq15"></span>'''I found a bug. How do I report it?'''
-#: Use Fiji's built-in [[Report a Bug]] command. Alternatively, report it to the [http://imagej.nih.gov/ij/list.html ImageJ mailing list]. Don't forget to include the steps needed to reproduce the problem.
-#<span id="faq16"></span>'''My version is not the latest after running <span style="border-bottom:1px dotted #ccc;">Help▷ Update Fiji...</span> Why?'''
-#:You have manually installed/modified ''Sholl_Analysis.jar'' ([[#Release Notes and Pre-releases|Development build]]?). Run the [[Update Fiji|Updater]], choose ''Advanced Mode'' then ''View locally modified files'' under ''View Options''. Type "Sholl" in the ''Search'' field, selecting ''Sholl_Analysis.jar'' from the list of files. If the ''Details pane'' indicates an available update, click on ''Locally modified'' under ''Status/Action'' and choose ''Install/Update''. The latest release version will be available once you press ''Apply changes''.
-#<span id="faq17"></span>'''This documentation is not that useful. How long do I have to wait until it gets improved?'''
-#: Around 20 seconds. This is the time it will take you to [[Help:Contents#New_accounts|create an account]] on this wiki. Once you have created one, you will be able to improve this page yourself.
+'''General'''
+<ol>
+	<li>
+		<span id="faq:plugin"></span>'''What is the difference between ''Sholl Analysis'' and an homonymous plugin released by the Ghosh laboratory in 2005'''?
+	</li>
+	<dl><dd>
+		The [http://labs.biology.ucsd.edu/ghosh/software/ original Sholl Analysis plugin] by Tom Maddock (version 1.0) was released for ImageJ 1.35 and is now deprecated, unmaintained software that behaves erratically in newer versions of ImageJ. The current implementation of  ''Sholl Analysis'' inherits Tom's initial 2D algorithm, but has numerous [[#Release_Notes|added features]] to enhance its utility. Note that throughout 2012 the plugin was temporarily called ''Advanced Sholl Analysis''. You can follow the entire history of the plugin on [https://github.com/tferr/ASA GitHub].
+	</dd></dl>
+	<li>
+		<span id="faq:threshold"></span>'''Why do I need to threshold the cell?'''
+	</li>
+	<dl><dd>
+		Counting intersections is really a binary procedure: a shell either intercepts a branch or it doesn't. For this reason the image must be split in two phases: ''arbor'' and ''background''.
+	</dd></dl>
+	<li>
+		<span id="faq:pre-processing"></span>'''My images do not look that ''great''. How can I treat them prior to analysis?'''
+	</li>
+	<dl><dd>
+		Have a look at [[#Pre-processing| Pre-processing]].
+	</dd></dl>
+</ol>
+
+'''Analysis'''
+<ol START="4">
+	<li>
+		<span id="faq:image-types"></span>'''The plugin complains about a wrong image type. Why?'''
+	</li>
+	<dl><dd>
+		Although ImageJ can threshold RGB images, the plugin can only parse grayscale images (8-bit and 16-bit). Images of fluorescence-labeled cells are typically non-RGB images. Conversions between different image types is explained in the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide].
+	</dd></dl>
+	<li>
+		<span id="faq:compartments"></span>'''I cannot see the hemicircle/hemisphere option. Why?'''
+	</li>
+	<dl><dd>
+		This option is only available if an orthogonal line has been created by holding {{key press|Shift}} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for the full list of key modifiers that can be used while creating straight line ROIs.
+	</dd></dl>
+	<li>
+		<span id="faq:z-position"></span>'''With 3D images, how do I set the Z-position of the center?'''
+	</li>
+	<dl><dd>
+		The Z-position (depth) of the center of analysis is the active Z-slice of the stack. It is reported in the ''Sholl Results'' table.
+	</dd></dl>
+	<li>
+		<span id="faq:saving"></span>'''I cannot see the option to save the results. Why?'''
+	</li>
+	<dl><dd>
+		The image you are trying to analyze is not saved locally. Saving it to a local directory (e.g., your Desktop or Home folder) should re-enable it.
+	</dd></dl>
+	<li>
+		<span id="faq:parameters"></span>'''Why so many parameters?'''
+	</li>
+	<dl><dd>
+		The plugin is designed for the analysis of a wide diversity of arbors and it is not biased to any particular cell type. The only way to ensure this broad applicability is to give users full control over the mathematical techniques used by the plugin to analyze sampled data.
+	</dd></dl>
+</ol>
+
+'''Results'''
+<ol START="9">
+	<li>
+		<span id="faq:Sholl-table"></span>'''How can I save/edit the ''Sholl Results'' table?'''
+	</li>
+	<dl><dd>
+		Select the table, then choose <span style="border-bottom:1px dotted #ccc;">File▷ Save As…</span>The filename extension can be specified using <span style="border-bottom:1px dotted #ccc;">Edit▷ Options▷ Input/Output…</span> (see the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
+	</dd></dl>
+	<li>
+		<span id="faq:precision"></span>'''Can I modify the number of decimal places used by the ''Sholl Results'' table?'''
+	</li>
+	<dl><dd>
+		Yes. Use the options ''Decimal places'' and ''Scientific notation'' in <span style="border-bottom:1px dotted #ccc;">Analyze▷ Set Measurements…</span>
+	</dd></dl>	
+	<li>
+		<span id="faq:sholl-mask"></span>'''What is the ''Sholl mask''?'''
+	</li>
+	<dl><dd>
+		The Sholl mask ([[#Introduction|see example above]]) is simply an illustration: a maximum intensity projection of the analyzed cell in which intersection counts are used as pixel intensities. As explained in [[#Output_Options|Output Options]], its LUT can be modified, and intensities calibrated using ImageJ default commands. As mentioned, it can also be used to visually inspect for [[#Cf._Segmentation|segmentation artifacts]].
+	</dd></dl>
+	<li>
+		<span id="faq:3Dvs2D"></span>'''The 3D profile looks ''worse'' than the 2D profile of the Maximum Intensity Projection of the same cell. Why?'''
+	</li>
+	<dl><dd>
+		An anisotropic voxel size will have a strong impact on [[#StepSize|step size]]. On the other hand, 2D and 3D images can be sampled differently depending on the [[#Parameters|options chosen]]. If <span style="border-bottom:1px dotted #ccc;">Image▷ Properties…</span> ({{key press|Shift|P}}) reports the appropriate spatial calibration, make sure to read [[#Multiple_Samples_and_Noise_Reduction|Multiple Samples and Noise Reduction]] before deciding which type of images to use.
+	</dd></dl>
+</ol>
+
+'''Curve Fitting'''
+<ol START="13">
+	<li>
+		<span id="faq:inflection-points"></span>'''The shape of the polynomial changes at the edges of the profile. Why?'''
+	</li>
+	<dl><dd>
+		Inflection points at [[#StartRadius|starting/ending radius]] are usually associated with a poor fit and/or the fact that all the radii in which no intersections were counted are ignored. The latter is required to calculate the [[#ShollDecay|Sholl regression coefficient]], as ''log(0)'' is undefined.
+	</dd></dl>
+	<li>
+		<span id="faq:poor-fitting"></span>'''None of the fitting options is suitable for my datasets. What should I do?'''
+	</li>
+	<dl><dd>
+		Have a look at [[#Complementary Tools|Complementary Tools]].
+	</dd></dl>
+</ol>
+
+'''Updates and Improvements'''
+<ol START="15">
+	<li>
+		<span id="faq:bug-report"></span>'''I found a bug. How do I report it?'''
+	</li>
+	<dl><dd>
+		Use Fiji's built-in [[Report a Bug]] command. Alternatively, report it to the [http://imagej.nih.gov/ij/list.html ImageJ mailing list]. Don't forget to include the steps needed to reproduce the problem.
+	</dd></dl>
+	<li>
+		<span id="faq:updates"></span>'''My version is not the latest after running <span style="border-bottom:1px dotted #ccc;">Help▷ Update Fiji...</span> Why?'''
+	</li>
+	<dl><dd>
+		You have manually installed/modified ''Sholl_Analysis.jar'' ([[#Release Notes and Pre-releases|Development build]]?). Run the [[Update Fiji|Updater]], choose ''Advanced Mode'' then ''View locally modified files'' under ''View Options''. Type "Sholl" in the ''Search'' field, selecting ''Sholl_Analysis.jar'' from the list of files. If the ''Details pane'' indicates an available update, click on ''Locally modified'' under ''Status/Action'' and choose ''Install/Update''. The latest release version will be available once you press ''Apply changes''.
+	</dd></dl>
+	<li>
+		<span id="faq:documentation"></span>'''This documentation is not that useful. How long do I have to wait until it gets improved?'''
+	</li>
+	<dl><dd>
+		Around 20 seconds. This is the time it will take you to [[Help:Contents#New_accounts|create an account]] on this wiki. Once you have created one, you will be able to improve this page yourself.
+	</dd></dl>
+</ol>
 
 == Non-Fiji users ==
 If you are not using Fiji, download ''Sholl_Analysis.jar'' from the direct link listed on the [[#top|top of this page]] and place it in the ''ImageJ/plugins/'' directory. Alternatively, drag the downloaded jar and drop it on the main window. Restart ImageJ and run the new <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span> command.
