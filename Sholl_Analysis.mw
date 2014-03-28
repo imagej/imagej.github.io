@@ -130,7 +130,7 @@ Press ''Cf. Segmentation'' to visually confirm which phase of the segmented imag
 |-
 |<center>[[File:CfSegmentation.png|700px|center|]]</center>
 |-
-|'''Top row:''' Image properly segmented: Arbor is sampled. '''Bottom row:'''  Aberrant segmentation (inverted image): Background is sampled. Note the reversal of [[#Cf._Segmentation|Cf. Segmentation]] output and how the [[#Output_Options|intersections mask]] no longer decorates the axonal processes but the interstitial spaces between them. As a consequence of the phase inversion, the program oversamples axonal processes (cf. hue ramps on upper left of intersections mask). Also, note that the initial black and white images would look the same under an inverted lookup table  (<span style="border-bottom:1px dotted #ccc;">Image▷ Lookup Tables▷ Invert LUT</span>).
+|'''Top row:''' Image properly segmented: Arbor is sampled. '''Bottom row:'''  Aberrant segmentation (inverted image): Background is sampled. Note the reversal of [[#Cf._Segmentation|Cf. Segmentation]] output and how the [[#Output_Options|intersections mask]] no longer decorates the axonal processes but the interstitial spaces between them. As a consequence of the phase inversion, the program oversamples axonal processes (cf. hue ramps on upper left of intersections mask). Also, note that the initial black and white image would look the same under an inverted lookup table  (<span style="border-bottom:1px dotted #ccc;">Image▷ Lookup Tables▷ Invert LUT</span>).
 |}
 
 <div id="Binary_Artifacts" style="float:center;
