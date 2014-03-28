@@ -203,8 +203,13 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 ;Intersecting radii
 :The number of sampling radii intersecting the arbor at least once.
 
-;Sum of intersections (''Sum inters.'')
+;Area under the curve (''AUC'')<span id="AUC"></span>
+:The area under the curve is an integrated measurement of the sampled data. It corresponds to the area between the sampled curve and the horizontal axis, computed using the [http://en.wikipedia.org/wiki/Trapezoidal_rule trapezoidal rule], an extremely simple approach to retrieve an approximation of the definite integral of the sampled profile. The accuracy of this metric is largely affected by sampling distance: e.g., if you double [[#StepSize|Radius step size]] (i.e., reduce sample size by half), the accuracy of the numerical integration will go down by a factor of 4.
+: See also [[#Sum|''Sum inters.'']]
+
+;Sum of intersections (''Sum inters.'')<span id="Sum"></span>
 :The sum of all intersections.
+: See also [[#AUC |''AUC'']]
 
 ;Mean of intersections (''Mean inters.'')
 :''Sum inters.'' divided by ''Intersecting radii''.
