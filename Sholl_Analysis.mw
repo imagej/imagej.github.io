@@ -130,9 +130,7 @@ Press ''Cf. Segmentation'' to visually confirm which phase of the segmented imag
 |-
 |<center>[[File:CfSegmentation.png|700px|center|]]</center>
 |-
-|'''Top row:''' Image properly segmented: Arbor is sampled. '''Bottom row:'''  Aberrant segmentation (inverted image): Background is sampled.
-|-
-|Note the reversal of [[#Cf._Segmentation|Cf. Segmentation]] output and how the [[#Output_Options|intersections mask]] no longer decorates the axonal processes but the interstitial spaces between them. As a consequence of the phase inversion, the program samples an increased number of Sholl intersections (cf. hue ramps on upper left of intersections mask). Also, note that the initial black and white images would look the same under an inverted lookup table  (<span style="border-bottom:1px dotted #ccc;">Image▷ Lookup Tables▷ Invert LUT</span>).
+|'''Top row:''' Image properly segmented: Arbor is sampled. '''Bottom row:'''  Aberrant segmentation (inverted image): Background is sampled. Note the reversal of [[#Cf._Segmentation|Cf. Segmentation]] output and how the [[#Output_Options|intersections mask]] no longer decorates the axonal processes but the interstitial spaces between them. As a consequence of the phase inversion, the program oversamples axonal processes (cf. hue ramps on upper left of intersections mask). Also, note that the initial black and white images would look the same under an inverted lookup table  (<span style="border-bottom:1px dotted #ccc;">Image▷ Lookup Tables▷ Invert LUT</span>).
 |}
 
 <div id="Binary_Artifacts" style="float:center;
@@ -443,7 +441,7 @@ For more information about image processing have a look at the [http://imagej.ni
 
 ''Sholl Analysis'' tries to be as flexible as possible by providing several options for normalization and curve fitting. However, it cannot offer exhaustive curve fitting options for two main reasons: 1) Extensive options would clutter the plugin's interface and 2) Determining ''best fit models'' requires reasonable choices that are not amenable to full automation. For these reasons,  complementary tools for curve fitting can be installed as needed to complement the plugin. As of version 3.4.1, the ''Complementary Fitting Toolbox'' consists of the following tools:
 
-* '''[[Find Peaks]]:''' Retrieves local maxima under several filtering options such as peak amplitude, peak height and peak width. Can be used to retrieve secondary sites of higher branch density ([https://raw.githubusercontent.com/tferr/Scripts/master/Analysis/Find_Peaks.bsh direct download]).
+* '''[[Find Peaks]]:''' Retrieves local maxima under several filtering options such as peak amplitude, peak height and peak width. Can be used to retrieve secondary sites of branch density ([https://raw.githubusercontent.com/tferr/Scripts/master/Analysis/Find_Peaks.bsh direct download]).
 * '''Fit Polynomial:''' Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions. Requires the [http://commons.apache.org/proper/commons-math/ apache commons math library], distributed with Fiji. The script provides [[#Non-Fiji_users|Non-Fiji users]] with direct download links that install all required dependencies ([https://raw.githubusercontent.com/tferr/Scripts/master/Analysis/Fit_Polynomial.bsh direct download]).
 * '''Plot Results:''' Whole-purpose routine that plots data from imported spreadsheets ([https://raw.githubusercontent.com/tferr/Scripts/master/Analysis/Plot_Results.bsh direct download]). 
 
@@ -477,10 +475,16 @@ Right now, these [[Beanshell_Scripting|Beanshell]] scripts are installed individ
 	<dl><dd>
 		Have a look at [[#Pre-processing| Pre-processing]].
 	</dd></dl>
+	<li>
+		<span id="faq:accuray"></span>'''My bitmap profiles are different from traced ones. Why?'''
+	</li>
+	<dl><dd>
+		As mentioned several times the quality of the analysis relies on how the arbor was segmented. If you are working with grayscale images you probably need to optimize your [[#Pre-processing|segmentation routines]]. If you already obtained binary images make sure you are [[#Cf._Segmentation|interpreting them properly]].
+	</dd></dl>
 </ol>
 
 '''Analysis'''
-<ol START="4">
+<ol START="5">
 	<li>
 		<span id="faq:image-types"></span>'''The plugin complains about a wrong image type. Why?'''
 	</li>
@@ -514,7 +518,7 @@ Right now, these [[Beanshell_Scripting|Beanshell]] scripts are installed individ
 </ol>
 
 '''Results'''
-<ol START="9">
+<ol START="10">
 	<li>
 		<span id="faq:Sholl-table"></span>'''How can I save/edit the ''Sholl Results'' table?'''
 	</li>
@@ -542,7 +546,7 @@ Right now, these [[Beanshell_Scripting|Beanshell]] scripts are installed individ
 </ol>
 
 '''Curve Fitting'''
-<ol START="13">
+<ol START="14">
 	<li>
 		<span id="faq:inflection-points"></span>'''The shape of the polynomial changes at the edges of the profile. Why?'''
 	</li>
@@ -558,7 +562,7 @@ Right now, these [[Beanshell_Scripting|Beanshell]] scripts are installed individ
 </ol>
 
 '''Updates and Improvements'''
-<ol START="15">
+<ol START="16">
 	<li>
 		<span id="faq:bug-report"></span>'''I found a bug. How do I report it?'''
 	</li>
