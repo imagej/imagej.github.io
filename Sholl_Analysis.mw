@@ -476,10 +476,10 @@ Right now, these [[Beanshell_Scripting|Beanshell]] scripts are installed individ
 		Have a look at [[#Pre-processing| Pre-processing]].
 	</dd></dl>
 	<li>
-		<span id="faq:accuray"></span>'''My bitmap profiles are different from traced ones. Why?'''
+		<span id="faq:accuray"></span>'''My bitmap profiles are different from traced ones of the same cells. Why?'''
 	</li>
 	<dl><dd>
-		As mentioned several times the quality of the analysis relies on how the arbor was segmented. If you are working with grayscale images you probably need to optimize your [[#Pre-processing|segmentation routines]]. If you already obtained binary images make sure you are [[#Cf._Segmentation|interpreting them properly]].
+		As mentioned several times, the quality of the analysis relies on how the arbor was segmented. If you are working with grayscale images you probably need to optimize your [[#Pre-processing|segmentation routines]]. If you already obtained binary images make sure you are [[#Cf._Segmentation|interpreting them properly]].
 	</dd></dl>
 </ol>
 
