@@ -553,7 +553,7 @@ Right now, these [[Beanshell_Scripting|Beanshell]] scripts are installed individ
 		<span id="faq:AUC"></span>'''Would it be possible to retrieve the Area Under the Curve  (linear Sholl plot)?'''
 	</li>
 	<dl><dd>
-		Sure. But it would hardly be relevant. The area under the curve (AUC, the area between the sampled curve and the horizontal axis, i.e., its definite integral) could be estimated using the [http://en.wikipedia.org/wiki/Trapezoidal_rule trapezoidal rule]. However, because data is always sampled at equally spaced intervals, doing so would be the same as multiplying [[#MeanInters|Mean inters.]] by the distance between [[#EndRadius|Ending radius]] and [[#StartRadius|Starting radius]]. Thus, effectively, a highly redundant metric with [[#MeanInters|Mean inters.]], that is already an integrated measurement of the sampled data. On the other hand,
+		Sure. But it would hardly be relevant. The area under the curve (AUC, the area between the sampled curve and the horizontal axis, i.e., its definite integral) could be estimated using, e.g., the [http://en.wikipedia.org/wiki/Trapezoidal_rule trapezoidal rule]. However, because data is always sampled at equally spaced intervals, doing so would be the same as multiplying [[#MeanInters|Mean inters.]] by the distance between [[#EndRadius|Ending radius]] and [[#StartRadius|Starting radius]]. Thus, effectively, AUC is  redundant with [[#MeanInters|Mean inters.]], that is already an integrated measurement of the sampled data. On the other hand,
 one could retrieve the AUC of the polynomial fit, but such property is already covered by [[#MeanValueOfFunction|Mean value]].
 	</dd></dl>
 </ol>
