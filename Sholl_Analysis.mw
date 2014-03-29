@@ -203,17 +203,12 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 ;Intersecting radii
 :The number of sampling radii intersecting the arbor at least once.
 
-;Area under the curve (''AUC'')<span id="AUC"></span>
-:The area under the curve is an integrated measurement of the sampled data. It corresponds to the area between the sampled curve and the horizontal axis, computed using the [http://en.wikipedia.org/wiki/Trapezoidal_rule trapezoidal rule], an extremely simple approach to retrieve an approximation of the definite integral of the sampled profile. The accuracy of this metric is largely affected by sampling distance: e.g., if you double [[#StepSize|Radius step size]] (i.e., reduce sample size by half), the accuracy of the numerical integration will go down by a factor of 4.
-: See also [[#Sum|''Sum inters.'']]
-
 ;Sum of intersections (''Sum inters.'')<span id="Sum"></span>
 :The sum of all intersections.
-: See also [[#AUC |''AUC'']]
 
-;Mean of intersections (''Mean inters.'')
+;Mean of intersections (''Mean inters.'')<span id="MeanInters"></span>
 :''Sum inters.'' divided by ''Intersecting radii''.
-: See also [[#MeanValueOfFunction|Mean value]]
+: See also [[#MeanValueOfFunction|Mean value]], [[#faq:AUC|FAQ]]
 
 ;Median of intersections (''Median Inters.'')
 :The median value of sampled intersections.
@@ -290,7 +285,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 
 ;<span id="MeanValueOfFunction"></span>Mean value
 :The mean value<ref name="Stulic"></ref> of the fitted polynomial function [[#eq1|(1)]], representing the average of intersections over the whole area occupied by the arbor. Sometimes abbreviated as MV or Nav.
-:On the Sholl plot, it is [[#ShollPlots|highlighted]] as the height of the rectangle that has the width of ''Enclosing radius'' − ''First intersecting radius'' and the same area of the area under the fitted curve on that discrete interval. It is analogous to '''''Mean inters.''''', the arithmetic mean of sampled intersections throughout the arbor (cf. [[#Metrics_based_on_sampled_data|Metrics based on sampled data]]).
+:On the Sholl plot, it is [[#ShollPlots|highlighted]] as the height of the rectangle that has the width of ''Enclosing radius'' − ''First intersecting radius'' and the same area of the area under the fitted curve on that discrete interval. It is analogous to [[#MeanInters|Mean inters.]], the arithmetic mean of sampled intersections throughout the arbor (cf. [[#Metrics_based_on_sampled_data|Metrics based on sampled data]]).
 
 ;<span id="SchoenenFitted"></span>Schoenen Ramification index (''Ramification index (CV)'')
 :Schoenen Ramification index retrieved from fitted profile:  The ration between [[#CriticalValue|Critical value]] and  [[#PrimaryBranches|Number of primary branches]].
@@ -350,6 +345,8 @@ Any macro or script must allow the Sholl Analysis plugin to access the ROI marki
 
 Now that all the images are marked, we just need to ask ImageJ to generate some lines of code. We will open the Macro Recorder (<span style="border-bottom:1px dotted #ccc;">Plugins▷ Macros▷ Record...</span>) and run ''Sholl Analysis'' on one of the images to find out how to call the plugin with suitable parameters. In this example, we will use the ImageJ macro language. The single line of code that appears in the recorder window will look something like this:
 <source lang="java">
+// Recording Sholl Analysis version 3.4.2
+// Tip: See http://fiji.sc/Sholl_Analysis#Batch_Processing for scripting examples
 run("Sholl Analysis...", "starting=10 ending=400 radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 </source>
 
@@ -550,8 +547,19 @@ Right now, these [[Beanshell_Scripting|Beanshell]] scripts are installed individ
 	</dd></dl>
 </ol>
 
-'''Curve Fitting'''
+'''Metrics'''
 <ol START="14">
+	<li>
+		<span id="faq:AUC"></span>'''Would it be possible to retrieve the Area Under the Curve  (linear Sholl plot)?'''
+	</li>
+	<dl><dd>
+		Sure. But it would hardly be relevant. The area under the curve (AUC, the area between the sampled curve and the horizontal axis, i.e., its definite integral) could be estimated using the [http://en.wikipedia.org/wiki/Trapezoidal_rule trapezoidal rule]. However, because data is always sampled at equally spaced intervals, doing so would be the same as multiplying [[#MeanInters|Mean inters.]] by the distance between [[#EndRadius|Ending radius]] and [[#StartRadius|Starting radius]]. Thus, effectively, a highly redundant metric with [[#MeanInters|Mean inters.]], that is already an integrated measurement of the sampled data. On the other hand,
+one could retrieve the AUC of the polynomial fit, but such property is already covered by [[#MeanValueOfFunction|Mean value]].
+	</dd></dl>
+</ol>
+
+'''Curve Fitting'''
+<ol START="15">
 	<li>
 		<span id="faq:inflection-points"></span>'''The shape of the polynomial changes at the edges of the profile. Why?'''
 	</li>
@@ -566,8 +574,8 @@ Right now, these [[Beanshell_Scripting|Beanshell]] scripts are installed individ
 	</dd></dl>
 </ol>
 
-'''Updates and Improvements'''
-<ol START="16">
+'''Development'''
+<ol START="17">
 	<li>
 		<span id="faq:bug-report"></span>'''I found a bug. How do I report it?'''
 	</li>
