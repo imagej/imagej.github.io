@@ -4,7 +4,7 @@ Actions were my crude solution to the problem of adding random features to [[Tra
 
 A TrackMate action takes the shape of an item in a drop-down list in the last panel of the GUI. It can do more or less anything, since we pass everything to the action, even a reference to the GUI itself. Thanks to the [[SciJava]] discovery mechanism, we do not have to worry about adding it on the GUI: it will automatically be listed in the action list. The drawback of this simplicity is that you cannot use it to provide elaborated user interaction mechanisms, such as the ones you can find in a view. 
 
-In this tutorial, we will use it to launch the event logger we created in the [[How to write your own viewer for TrackMate|previous tutorial] of this series. If you remember, we saw in the last paragraph how to use the <code>visible = false</code> parameter the [[SciJava]] annotation to hide it from the view menu. Hereby preventing the user to access it. No problem, we will now build an action that will launch it as a supplementary view. 
+In this tutorial, we will use it to launch the event logger we created in the [[How to write your own viewer for TrackMate|previous tutorial]] of this series. If you remember, we saw in the last paragraph how to use the <code>visible = false</code> parameter the [[SciJava]] annotation to hide it from the view menu. Hereby preventing the user to access it. No problem, we will now build an action that will launch it as a supplementary view. 
 
 
 == The [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/action/TrackMateActionFactory.java TrackMateActionFactory] interface. ==
@@ -25,9 +25,11 @@ All the SciJava annotation parameters apply, and they have the following meaning
   <li> The <code>priority = double</code> parameter is used here just to determine the order in which the action items appear in the list. High priorities are listed last.
 </ul>
 
+
+
 === Action factory methods. ===
 
-As of [[TrackMate]] version 2.2.0 (March 2014), actions are the only TrackMate modules that use the <code>getIcon()</code> method. The icon is then displayed in the action list, next to the action name. That's it for the <code>TrackMateModule part<code>.
+As of [[TrackMate]] version 2.2.0 (March 2014), actions are the only TrackMate modules that use the <code>getIcon()</code> method. The icon is then displayed in the action list, next to the action name. That's it for the <code>TrackMateModule</code> part.
 
 The method specific to actions is more interesting:
 <source lang="java">
@@ -35,11 +37,141 @@ The method specific to actions is more interesting:
 public TrackMateAction create( final TrackMateGUIController controller )
 </source>
 
+This means that when we create our specific action, we have access to the some of GUI context through the controller. We therefore have to check its [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/gui/TrackMateGUIController.java API] to know what we can get. It gives us access to:
+<ul>
+  <li> The GUI window itself (<code>public TrackMateWizard getGUI()</code>), that we can use as parent for dialogs, wild live GUI editing...
+  <li> The trackmate plugin (<code>public TrackMate getPlugin()</code>), hereby the model and settings objects.
+  <li> The selection model (<code>public SelectionModel getSelectionModel()</code>)
+  <li> Even the GUI model (<code>public TrackMateGUIModel getGuimodel()</code>)
+  <li> And all the providers that manage the modules of TrackMate.
+</ul>
+So you can pretty well mess stuff with the controller, but it gives us access to mainly everything. In our case, we do not need much. Here is the code for our simple event logger launcher: 
+
+<source lang="java">
+package plugin.trackmate.examples.action;
+
+import javax.swing.ImageIcon;
+
+import org.scijava.plugin.Plugin;
+
+import fiji.plugin.trackmate.action.TrackMateAction;
+import fiji.plugin.trackmate.action.TrackMateActionFactory;
+import fiji.plugin.trackmate.gui.TrackMateGUIController;
+
+@Plugin( type = TrackMateActionFactory.class )
+public class LaunchEventLoggerActionFactory implements TrackMateActionFactory
+{
+
+	private static final String INFO_TEXT = "<html>This action will launch a new event logger, that uses the ImageJ log window to append TrackMate events.</html>";
+
+	private static final String KEY = "LAUNCH_EVENT_LOGGER";
+
+	private static final String NAME = "Launch the event logger";
+
+	@Override
+	public String getInfoText()
+	{
+		return INFO_TEXT;
+	}
+
+	@Override
+	public ImageIcon getIcon()
+	{
+		return null; // No icon for this one.
+	}
+
+	@Override
+	public String getKey()
+	{
+		return KEY;
+	}
+
+	@Override
+	public String getName()
+	{
+		return NAME;
+	}
+
+	@Override
+	public TrackMateAction create( final TrackMateGUIController controller )
+	{
+		return new LaunchEventLoggerAction( controller.getPlugin().getModel(), controller.getSelectionModel() );
+	}
+
+}
+</source>
+
+Nothing complicated.
 
 
 == The [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/action/TrackMateAction.java TrackMateAction] interface. ==
 
+This interface is just made of two methods: 
 
+<source lang="java">
+public void execute(TrackMate trackmate);
+
+public void setLogger(Logger logger);
+</source>
+
+The <code>execute</code> method is the one triggered by the user when he clicks the ''Execute'' button. It receives a TrackMate instance that can be of use. In our case, as you saw in the factory class, we got the model and selection model through the controller.
+
+The other method is used to pass a logger instance that is specific to the action panel in the GUI. All messages and updates sent to this logger will be shown on the action panel.
+
+Here is how this translates simply in a simple launcher:
+
+<source lang="java">
+package plugin.trackmate.examples.action;
+
+import plugin.trackmate.examples.view.EventLoggerView;
+import fiji.plugin.trackmate.Logger;
+import fiji.plugin.trackmate.Model;
+import fiji.plugin.trackmate.SelectionModel;
+import fiji.plugin.trackmate.TrackMate;
+import fiji.plugin.trackmate.action.TrackMateAction;
+
+public class LaunchEventLoggerAction implements TrackMateAction
+{
+
+	private final SelectionModel selectionModel;
+
+	private final Model model;
+
+	private Logger logger;
+
+	public LaunchEventLoggerAction( final Model model, final SelectionModel selectionModel )
+	{
+		this.model = model;
+		this.selectionModel = selectionModel;
+	}
+
+	@Override
+	public void execute( final TrackMate trackmate )
+	{
+		logger.log( "Launching a new event logger..." );
+		final EventLoggerView view = new EventLoggerView( model, selectionModel );
+		view.render();
+		logger.log( " Done.\n" );
+	}
+
+	@Override
+	public void setLogger( final Logger logger )
+	{
+		this.logger = logger;
+	}
+}
+</source>
+
+
+== Wrapping up ==
+
+And here are the results:
+
+[[File:TrackMate CustomAction 1.png|400px]]
+
+You can imagine a lot of applications for Actions. Since they give you access to most of the plugin context, you can basically plug anything there. The one limitation is that it does not fit perfectly in the existing GUI: actions just appear as items in a drop-down list. But in most cases it does not matter much. Actions are very useful to quickly graft a piece of new functionality on TrackMate.
+
+This concludes this tutorial, which was pretty quick and simple. This is unfortunately the last time in this series that things are simple and short. The next tutorial will be about implementing a custom detector, which will turn to be quite complicated for apparently wrong reasons. See you there! 
 
 
 [[Category:Tutorials]]
