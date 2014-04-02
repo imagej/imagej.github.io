@@ -28,6 +28,16 @@ This is important: <u>an instance of your detector is supposed to work on a sing
 It is the work of the detector factory to provide each instance with the data required to segment a specific frame. But we will see how this is done below. 
 
 
+=== A SpotDetector ''can be'' [https://github.com/imglib/imglib/blob/master/algorithms/core/src/main/java/net/imglib2/algorithm/MultiThreaded.java multithreaded]. ===
+
+So TrackMate offers you a turnkey multithreaded solution: If you have a computer with 12 cores 
+and 50 frames to segment, TrackMate will fire 12 SpotDetectors at once and process them concurrently. 
+
+But let's say that you have 24 cores and only 6 frames to segment. You can exploit this situation by letting your concrete instance of SpotDetector implement the ImgLib2 [https://github.com/imglib/imglib/blob/master/algorithms/core/src/main/java/net/imglib2/algorithm/MultiThreaded.java MultiThreaded] interface. In that case, TrackMate will still fire 6 SpotDetector instances (one for each frame), but will allocate 4 threads to each instance, and get an extra kick in speed. 
+
+Of course, you have to devise a clever multithreading strategy to operate concurrently on a single frame. For instance, you could divide the image into several blocks and process them in parallel. Or delegate to sub-algorithms that are multithreaded; check for instance the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/detection/LogDetector.java LogDetector] code.
+
+
 === Detection results are represented by [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/Spot.java Spots]. ===
 
 [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/Spot.java Spots] are used to represent detection results: one detection = one spot. By convention, a detection algorithm must provide ''at least'' the following numerical feature to each spot:
@@ -38,10 +48,196 @@ It is the work of the detector factory to provide each instance with the data re
 Any omission will trigger errors at runtime. 
 
 
+
+
+
 === A dummy detector that returns spiraling spots. ===
 
+For this tutorial we will build a dummy detector, that actually fully ignores the image content and just create spots that seem to spiral out from the center of the image. A real detector would require you to hone your [[ImgLib2]] skills; check the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/detection/LogDetector.java LogDetector] code for an example. 
+
+Below is the source code for the dummy detector. You can also find it [https://github.com/fiji/TrackMate-examples/blob/master/src/main/java/plugin/trackmate/examples/detector/SpiralDummyDetector.java online]. Let's comment a bit on this:
+
+==== The constructor. ====
+
+Since the https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/detection/SpotDetector.java SpotDetector] interface gives little constraint on inputs, all of them must be provided at construction time in the constructor. Keep in mind that we have one instance per frame, so we must know what frame we are to process. 
+
+Normal detectors would be fed with a reference to the image data ''for this very single frame''. Here we do not care for image content, so it is not there. But we will speak of this more when discussing the factory. 
+
+Because TrackMate can also be tuned to operate only on a ROI, the instance receives an [https://github.com/imglib/imglib/blob/master/core/src/main/java/net/imglib2/Interval.java Interval] that represent the bounding box '''in pixel coordinates''' of the ROI the user selected. Here, we just use it to center the spirals. 
+
+Because we must store the ''physical coordinates''' in the spots we create, we need a calibration array to convert pixel coordinates to physical ones. That is the role of the <code>double[]calibration </code> array, and it contains the pixel sizes along X, Y and Z.
+
+==== The [https://github.com/imglib/imglib/blob/master/algorithms/core/src/main/java/net/imglib2/algorithm/Algorithm.java Algorithm] methods. ====
+
+<code>checkInput()</code> checks that the parameters passed are OK prior to processing, and returns <code>false</code> if they are not. <code>process()</code> does all the hard work, and return <code>false</code> if something goes wrong. 
+
+If any of these two methods returns <code>false</code>, you are expected to document what went wrong in an error message that can be retrieved through <code>getErrorMessage()</code>.
+
+==== The [https://github.com/imglib/imglib/blob/master/algorithms/core/src/main/java/net/imglib2/algorithm/OutputAlgorithm.java OutputAlgorithm] method. ====
+
+This one just asks us to return the results as a list of spots. It must be a field of your instance, that is ideally instantiated and built in the <code>precess()</code> method. The <code>getResult()</code> method exposes this list. 
+
+==== The [https://github.com/imglib/imglib/blob/master/algorithms/core/src/main/java/net/imglib2/algorithm/Benchmark.java Benchmark] method. ====
+
+Well, we just want to know how much time it took. Note that all of these are the usual suspects of an ImgLib2 generic algorithm, so they should not confuse you.
+
+==== The code itself. ====
+
+<source lang="java">
+package plugin.trackmate.examples.detector;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import net.imglib2.Interval;
+import net.imglib2.type.NativeType;
+import net.imglib2.type.numeric.RealType;
+import fiji.plugin.trackmate.Spot;
+import fiji.plugin.trackmate.detection.SpotDetector;
+
+public class SpiralDummyDetector< T extends RealType< T > & NativeType< T >> implements SpotDetector< T >
+{
+
+	private static final double RADIAL_SPEED = 3d; // pixels per frame
+
+	// radians per frame
+	private static final double ANGULAR_SPEED = Math.PI / 10;
+
+	// in image units
+	private static final double SPOT_RADIUS = 1d;
+
+	/** The width if the ROI. */
+	private final long width;
+
+	/** The height if the ROI. */
+	private final long height;
+
+	/** The X coordinates of the ROI. */
+	private final long xstart;
+
+	/** The Y coordinates of the ROI. */
+	private final long ystart;
+
+	/** The pixel sizes in the 3 dimensions. */
+	private final double[] calibration;
+
+	/** The frame we operate in. */
+	private final int frame;
+
+	/** Holder for the results of detection. */
+	private List< Spot > spots;
+
+	/** Error message holder. */
+	private String errorMessage;
+
+	/** Holder for the processing time. */
+	private long processingTime;
+
+	/*
+	 * CONSTRUCTOR
+	 */
+
+	public SpiralDummyDetector( final Interval interval, final double[] calibration, final int frame )
+	{
+		// Take the ROI box from the interval parameter.
+		this.width = interval.dimension( 0 );
+		this.height = interval.dimension( 1 );
+		this.xstart = interval.min( 0 );
+		this.ystart = interval.min( 1 );
+		// We will need the calibration to convert to physical units.
+		this.calibration = calibration;
+		// We need to know what frame we are in.
+		this.frame = frame;
+	}
+
+	/*
+	 * METHODS
+	 */
+
+	@Override
+	public List< Spot > getResult()
+	{
+		return spots;
+	}
+
+	@Override
+	public boolean checkInput()
+	{
+		// Nothing to test, it's all good.
+		return true;
+	}
+
+	@Override
+	public boolean process()
+	{
+		final long start = System.currentTimeMillis();
+		spots = new ArrayList< Spot >();
+
+		/*
+		 * This dummy detector creates spots that spiral out from the center of
+		 * the specified ROI. It spits a new spiral every 10 frames.
+		 */
+
+		final int x0 = ( int ) ( width / 2 + xstart );
+		final int y0 = ( int ) ( height / 2 + ystart );
+
+		int t = frame;
+		int nspiral = 0;
+		while ( t >= 0 )
+		{
+			final double r = t * RADIAL_SPEED;
+			final double phi0 = nspiral * Math.PI / 4;
+			final double phi = t * ANGULAR_SPEED + phi0;
+
+			// Spot in pixel coordinates.
+			final double x = x0 + r * Math.cos( phi );
+			final double y = y0 + r * Math.sin( phi );
+
+			// But we want to create spots in image coordinates:
+			final double xpos = x * calibration[ 0 ];
+			final double ypos = y * calibration[ 1 ];
+			final double zpos = 0d;
+
+			// Create the spot.
+			final Spot spot = new Spot( xpos, ypos, zpos, SPOT_RADIUS, 1d / ( nspiral + 1d ) );
+			spots.add( spot );
+
+			// Loop to another spiral.
+			t = t - 10;
+			nspiral++;
+		}
+
+		final long end = System.currentTimeMillis();
+		this.processingTime = end - start;
+		return true;
+	}
+
+	@Override
+	public String getErrorMessage()
+	{
+		/*
+		 * If something wrong happens while you #checkInput() or #process(),
+		 * state it in the errorMessage field.
+		 */
+		return errorMessage;
+	}
+
+	@Override
+	public long getProcessingTime()
+	{
+		return processingTime;
+	}
+
+}
+</source>
+
+And that's about it. 
+
+Now for something completely different, we move to the factory class that instantiates this detector.
 
 
+
+== The [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/detection/SpotDetectorFactory.java SpotDetectorFactory] interface. ==
 
 
 
