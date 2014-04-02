@@ -298,7 +298,7 @@ Danielle Bower, Albert Cardona, Nicolas Gompel, Wieland Huttner, Gregory Jefferi
 
 * [http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184 The Publication on the Stitching Plugin], S. Preibisch, S. Saalfeld, P. Tomancak (2009) Globally optimal stitching of tiled 3D microscopic image acquisitions", ''Bioinformatics'', '''25'''(11):1463-1465. [http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf PDF]
 * [[TrakEM2]] for non-destructive stitching with floating, adjustable images.
-* [http://www.xuvtools.org/doku.php XuvTools] similar stitching software from the University of Freiburg and the [http://dx.doi.org/10.1111/j.1365-2818.2008.03094.x abstract] of the accompying publication
+* [http://www.xuvtools.org/doku.php XuvTools] similar stitching software (but you cannot access XuvTools' source code freely) from the University of Freiburg and the [http://dx.doi.org/10.1111/j.1365-2818.2008.03094.x abstract] of the accompying publication
 
 [[Category:Plugins]]
 [[Category:Stitching]]
