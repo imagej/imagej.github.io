@@ -1582,7 +1582,7 @@ The new pipeline is centered around a configuration file, '''the master file''',
 
 The master file has two parts. The first part contains all the relevant processing parameters for each individual processing step. The second part contains some more advanced settings and the links for the job scripts and directories. 
 
-The new pipeline also comes with a new set of scripts that are specifically modified to be used with the master file. The general idea is to have these job scripts together with the master file independent from the dataset. The scripts will use the master file as a source for the processing parameters. The jobs will be created and executed within the job directories just as before, the success of the jobs can be assess with the output and the error files. The master file can be saved and can serve as a documentation for the processing.   
+The new pipeline also comes with a new set of scripts that are specifically modified to be used with the master file. The general idea is to have these job scripts together with the master file independent from the dataset. The scripts will use the master file as a source for the processing parameters. The jobs will be created and executed within the job directories just as before, the success of the jobs can be assessed with the output and the error files. The master file can be saved and can serve as a documentation for the processing.   
 
 Currently the master file is useable for the following steps.
 
