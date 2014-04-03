@@ -57,6 +57,12 @@ For this tutorial we will build a dummy detector, that actually fully ignores th
 
 Below is the source code for the dummy detector. You can also find it [https://github.com/fiji/TrackMate-examples/blob/master/src/main/java/plugin/trackmate/examples/detector/SpiralDummyDetector.java online]. Let's comment a bit on this:
 
+==== The type parameter <code>< T extends RealType< T > & NativeType< T >></code> ====
+
+Instances of SpotDetector are parametrized with a generic type <code>T</code> that must extends [https://github.com/imglib/imglib/blob/master/core/src/main/java/net/imglib2/type/numeric/RealType.java RealType] and [https://github.com/imglib/imglib/blob/master/core/src/main/java/net/imglib2/type/NativeType.java NativeType]. These are the bounds for all the scalar types based on native types, such us <code>float</code>, <code>int</code>, <code>byte</code>, etc... 
+
+This is the type of the image data we are to operate on.
+
 ==== The constructor. ====
 
 Since the https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/detection/SpotDetector.java SpotDetector] interface gives little constraint on inputs, all of them must be provided at construction time in the constructor. Keep in mind that we have one instance per frame, so we must know what frame we are to process. 
@@ -238,6 +244,46 @@ Now for something completely different, we move to the factory class that instan
 
 
 == The [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/detection/SpotDetectorFactory.java SpotDetectorFactory] interface. ==
+
+The SpotDetectorFactory concrete implementation is the class that needs to be annotated with the [[SciJava]] annotation. For instance:
+<source lang="java">
+@Plugin( type = SpotDetectorFactory.class )
+public class SpiralDummyDetectorFactory< T extends RealType< T > & NativeType< T >> implements SpotDetectorFactory< T >
+</source>
+
+Note that we have to deal with the same type parameter than for the SpotDetector instance. 
+
+I will skip all the TrackMateModule methods we have seen over and over in this tutorial series. There is nothing new here, they all have the same role. The difficult and interestings parts are linked to what we introduced above. Basically we need to provide a logic for passing the raw image data, for saving/loading to XML, for querying the user for parameters, and checking them.
+
+
+=== Getting the raw image data. ===
+
+Since the TrackMateModule concrete implementation must have a blank constructor, there must be another way to pass required arguments to factories. For SpotDetector factories, this role is played by the <code>setTarget</code> method:
+
+<source lang="java">
+	@Override
+	public boolean setTarget( final ImgPlus< T > img, final Map< String, Object > settings )
+</source>
+
+The raw image data is returned as an [https://github.com/imglib/imglib/blob/master/meta/src/main/java/net/imglib2/meta/ImgPlus.java ImgPlus], that can be seen as the [[ImgLib2]] equivalent of ImageJ1 [https://github.com/imagej/ImageJA/blob/master/src/main/java/ij/ImagePlus.java ImagePlus]. It contains the pixel data for all available dimensions (all X, Y, Z, C, T if any), plus the spatial calibration we need to operate in physical units. The concrete factory must be able to extract from this ImgPlus the data useful for the SpotDetectors it will instantiate, keeping in mind that each SpotDetector operates on one frame. 
+
+The second argument is the settings map for this specific detector. It takes the shape of a map with string keys and object values, that can be cast to whatever relevant class. The concrete factory must be able to check that all the required parameters are there, and have a valid class, and to feed to the SpotDetector instances. We will see below that the user provides them through a configuration panel. 
+
+
+=== Getting detection parameters through a configuration panel. ===
+
+For a proper TrackMate integration, we need to provide a means for users to tune the detector they chose. And since TrackMate was built first to be used through a GUI, we need to create a GUI element for this task: a configuration panel. The class that does that in TrackMate is [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/gui/ConfigurationPanel.java ConfigurationPanel]. It is an abstract class that extends JPanel, and that adds two methods to display a settings map and return it. 
+
+Each SpotDetectorFactory has its own configuration panel, which must be instantiated and returned through:
+<source lang="java">
+@Override
+public ConfigurationPanel getDetectorConfigurationPanel( final Settings settings, final Model model )
+</source>
+
+The GUI panel has access to the model and settings objects, and can therefore display some relevant information. Check the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/gui/panels/detector/LogDetectorConfigurationPanel.java configuration panel of the LOG detector] for an example.
+
+
+=== Checking the validity of parameters. ===
 
 
 
