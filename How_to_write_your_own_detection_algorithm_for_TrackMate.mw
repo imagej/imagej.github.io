@@ -243,6 +243,10 @@ Now for something completely different, we move to the factory class that instan
 
 
 
+
+
+
+
 == The [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/detection/SpotDetectorFactory.java SpotDetectorFactory] interface. ==
 
 The SpotDetectorFactory concrete implementation is the class that needs to be annotated with the [[SciJava]] annotation. For instance:
@@ -280,14 +284,279 @@ Each SpotDetectorFactory has its own configuration panel, which must be instanti
 public ConfigurationPanel getDetectorConfigurationPanel( final Settings settings, final Model model )
 </source>
 
-The GUI panel has access to the model and settings objects, and can therefore display some relevant information. Check the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/gui/panels/detector/LogDetectorConfigurationPanel.java configuration panel of the LOG detector] for an example.
+The GUI panel has access to the model and settings objects, and can therefore display some relevant information.
+
+This is a difficult part because you have to write a GUI element. GUIs are excruciating long and painfully hard to write, at least if you want to get them right. Check the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/gui/panels/detector/LogDetectorConfigurationPanel.java configuration panel of the LOG detector] for an example.
 
 
 === Checking the validity of parameters. ===
 
+There is a layer of methods that allows checking for the parameter validity. Normally you don't need to, since you write the configuration panel for the detector you also develop, but I have found this to be useful to find errors early. Parameter checking is done after user edition, loading and saving.
+
+Three methods are at play: 
+
+<source lang="java">
+public Map< String, Object > getDefaultSettings();
+
+public boolean checkSettings( final Map< String, Object > settings );
+
+public String getErrorMessage();
+</source>
+
+The <code>getDefaultSettings()</code> method return a new settings map initialized with default values. It must contain all the required parameter keys, and nothing more. The <code>checkSettings()</code> method does the actual parameter checking. It must check that all the required parameters are there, that they have the right class, and that there is no spurious mapping in the map. Should any of these defects be found, it returns <code>false</code>. Finally, <code>getErrorMessage()</code> should return a meaningful error message if the check failed. 
+
+
+=== Saving to and loading from XML. ===
+
+TrackMate tries to save as much information as possible when saving to XML. The save file should contain at the very least the tracking results, but it should also include the parameters that help creating these results. The detection algorithm parameters should therefore be included. 
+
+You have to provide the means to save and load this parameters, since they are specific to the detector you write. This is done through the two methods: 
+
+<source lang="java">
+public boolean marshall( final Map< String, Object > settings, final Element element );
+
+public boolean unmarshall( final Element element, final Map< String, Object > settings );
+</source>
+
+==== Marshalling. ====
+
+Marshalling is the action of serializing a java object to XML. TrackMate relies on the [http://www.jdom.org/ JDom library] to do so, and it greatly simplifies the task.
+
+The settings map that the <code>marshall</code> method receives is the settings map to save. You can safely assume it has been successfully checked. The element parameter is a [http://www.jdom.org/docs/apidocs/org/jdom2/Element.html JDom element], and it must contain eveything you want to save from the detector, as attribute or child elements. Here is what you must put in it:
+
+* You must at the very least set an attribute that has for key [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/detection/DetectorKeys.java#L14 <code>"DETECTOR_NAME"</code>] and value the SpotDetectorFactory key (the one you get with the <code>getKey()</code>) method<ref>Careful, this will not be mandatory in TrackMate v2.3.0</ref>. This will be used in turn when loading from XML, to retrieve the right detector you used. 
+
+* If something goes wrong when saving, then the <code>marshall</code> method must return <code>false</code>, and you must provide a meaningful error message for the <code>getErrorMessage()</code> method.
+
+* Everything else is pretty much up to you. There is a [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/io/IOUtils.java#L383 helper method in IOUtils] that you can use to serialize single parameters. Check the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/detection/LogDetectorFactory.java#L161 LogDetectorFactory marshall method] for an example. 
+
+==== Unmarshalling. ====
+
+Unmarshalling is just the other way around. You get a map that you must first clear, then build from the JDom element specified. You can safely assume that the XML element you get was built from the <code>marshall</code> method of the same SpotDetectorFactory. TrackMate makes sure the right <code>unmarshall</code> method is called. 
+
+There are a few help methods around to help you with reading from XML. For instance, check all the <code>read*Attribute</code> of the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/io/IOUtils.java IOUtils] class. It is also a good idea to call the <code>checkSettings</code> method with the map you just built.
+
+Check again the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/detection/LogDetectorFactory.java#L173 LogDetectorFactory unmarshall method] for an example.
+
+
+=== Instantiating spot detectors. ===
+
+And finally, the method that gives its name to this factory:
+
+<source lang="java">
+public SpotDetector< T > getDetector( final Interval interval, final int frame )
+</source>
+
+This will be called repeatedly by TrackMate to generate as many SpotDetector instances as there is frames in the raw data to segment. The two parameters specify the ROI the user wants to operate on as an [https://github.com/imglib/imglib/blob/master/core/src/main/java/net/imglib2/Interval.java Imglib2 interval], and the target frame. So you need to process and bundle:
+* this interval and this frame;
+* the raw image data and settings map  received from the <code>setTarget</code> method
+in the parameters required to instantiate a new SpotDetector. 
+
+Because the dummy example we use in this tutorial is not such an enlightenment, I copy here the code from the LogDetectorFactory. It shows how to extract parameters from a settings map, and how to access the relevant data frame in a possibly 5D image:
+
+<source lang="java">
+	@Override
+	public SpotDetector< T > getDetector( final Interval interval, final int frame )
+	{
+		final double radius = ( Double ) settings.get( KEY_RADIUS );
+		final double threshold = ( Double ) settings.get( KEY_THRESHOLD );
+		final boolean doMedian = ( Boolean ) settings.get( KEY_DO_MEDIAN_FILTERING );
+		final boolean doSubpixel = ( Boolean ) settings.get( KEY_DO_SUBPIXEL_LOCALIZATION );
+		final double[] calibration = TMUtils.getSpatialCalibration( img );
+
+		RandomAccessible< T > imFrame;
+		final int cDim = TMUtils.findCAxisIndex( img );
+		if ( cDim < 0 )
+		{
+			imFrame = img;
+		}
+		else
+		{
+			// In ImgLib2, dimensions are 0-based.
+			final int channel = ( Integer ) settings.get( KEY_TARGET_CHANNEL ) - 1;
+			imFrame = Views.hyperSlice( img, cDim, channel );
+		}
+
+		int timeDim = TMUtils.findTAxisIndex( img );
+		if ( timeDim >= 0 )
+		{
+			if ( cDim >= 0 && timeDim > cDim )
+			{
+				timeDim--;
+			}
+			imFrame = Views.hyperSlice( imFrame, timeDim, frame );
+		}
+		final LogDetector< T > detector = new LogDetector< T >( imFrame, interval, calibration, radius, threshold, doSubpixel, doMedian );
+		detector.setNumThreads( 1 ); // in TrackMate context, we use 1 thread
+		// per detector but multiple detectors
+		return detector;
+	}
+</source>
+
+
+=== The code for the dummy spiral generator factory. ===
+
+And here is the full code for this tutorial example. It is the ultimate simplification of a SpotDetectorFactory, and was careful to strip anything useful by first ignoring the image content, second by not using any parameter. You can also find it [https://github.com/fiji/TrackMate-examples/blob/master/src/main/java/plugin/trackmate/examples/detector/SpiralDummyDetectorFactory.java online].
+
+<source lang="java">
+package plugin.trackmate.examples.detector;
+
+import ij.ImageJ;
+import ij.ImagePlus;
+
+import java.util.Collections;
+import java.util.Map;
+
+import javax.swing.ImageIcon;
+
+import net.imglib2.Interval;
+import net.imglib2.meta.ImgPlus;
+import net.imglib2.type.NativeType;
+import net.imglib2.type.numeric.RealType;
+
+import org.jdom2.Element;
+import org.scijava.plugin.Plugin;
+
+import fiji.plugin.trackmate.Model;
+import fiji.plugin.trackmate.Settings;
+import fiji.plugin.trackmate.TrackMatePlugIn_;
+import fiji.plugin.trackmate.detection.SpotDetector;
+import fiji.plugin.trackmate.detection.SpotDetectorFactory;
+import fiji.plugin.trackmate.gui.ConfigurationPanel;
+import fiji.plugin.trackmate.util.TMUtils;
+
+@Plugin( type = SpotDetectorFactory.class )
+public class SpiralDummyDetectorFactory< T extends RealType< T > & NativeType< T >> implements SpotDetectorFactory< T >
+{
+
+	static final String INFO_TEXT = "<html>This is a dummy detector that creates spirals made of spots emerging from the center of the ROI. The actual image content is not used.</html>";
+
+	private static final String KEY = "DUMMY_DETECTOR_SPIRAL";
+
+	static final String NAME = "Dummy detector in spirals";
+
+	private double[] calibration;
+
+	private String errorMessage;
+
+	@Override
+	public String getInfoText()
+	{
+		return INFO_TEXT;
+	}
+
+	@Override
+	public ImageIcon getIcon()
+	{
+		return null;
+	}
+
+	@Override
+	public String getKey()
+	{
+		return KEY;
+	}
+
+	@Override
+	public String getName()
+	{
+		return NAME;
+	}
+
+	@Override
+	public SpotDetector< T > getDetector( final Interval interval, final int frame )
+	{
+		return new SpiralDummyDetector< T >( interval, calibration, frame );
+	}
+
+	@Override
+	public boolean setTarget( final ImgPlus< T > img, final Map< String, Object > settings )
+	{
+		/*
+		 * Well, we do not care for the image at all. We just need to get the
+		 * physical calibration and there is a helper method for that.
+		 */
+		this.calibration = TMUtils.getSpatialCalibration( img );
+		// True means that the settings map is OK.
+		return true;
+	}
+
+	@Override
+	public String getErrorMessage()
+	{
+		/*
+		 * If something is not right when calling #setTarget (i.e. the settings
+		 * maps is not right), this is how we get an error message.
+		 */
+		return errorMessage;
+	}
+
+	@Override
+	public boolean marshall( final Map< String, Object > settings, final Element element )
+	{
+		/*
+		 * This where you save the settings map to a JDom element. Since we do
+		 * not have parameters, we have nothing to do.
+		 */
+		return true;
+	}
+
+	@Override
+	public boolean unmarshall( final Element element, final Map< String, Object > settings )
+	{
+		/*
+		 * The same goes for loading: there is nothing to load.
+		 */
+		return true;
+	}
+
+	@Override
+	public ConfigurationPanel getDetectorConfigurationPanel( final Settings settings, final Model model )
+	{
+		// We return a simple configuration panel.
+		return new DummyDetectorSpiralConfigurationPanel();
+	}
+
+	@Override
+	public Map< String, Object > getDefaultSettings()
+	{
+		/*
+		 * We just have to return a new empty map.
+		 */
+		return Collections.emptyMap();
+	}
+
+	@Override
+	public boolean checkSettings( final Map< String, Object > settings )
+	{
+		/*
+		 * Since we have no settings, we just have to test that we received the
+		 * empty map. Otherwise we generate an error.
+		 */
+		if ( settings.isEmpty() ) { return true; }
+		errorMessage = "Expected the settings map to be empty, but it was not: " + settings + '\n';
+		return false;
+	}
+}
+</source>
 
 
 
+== Wrapping up ==
+
+Ouf! That was a lot of information and a lot of coding for a single piece of functionality. But all of these painful methods make your detector a first-class citizen of TrackMate. "Native" detectors use the exact same logic.
+
+Here is what our dummy example looks. To maximize your user experience, I let it run on a 512 x 512 x 200 frames image, and tracked them.
+
+[[File:TrackMateCustomDetector 01.gif|center]]
+
+[[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 08:28, 3 April 2014 (CDT)
+
+
+
+
+
+_____
 
 <references/>
 
