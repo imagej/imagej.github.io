@@ -124,6 +124,10 @@ or
 
 The default port is 4012.
 
+==== Configuration on a Proprietary Cluster ====
+
+Archipelago may be run on a proprietary cluster, for instance one running SLURM or qsub, by scripting the creation of an .arc configuration file and passing it as an argument to the Fiji or ImageJ executable. An [https://github.com/larrylindsey/Stampede-Fiji-Archipelago/blob/master/job.fiji#L126 example] showing how this is done on the vnc queue of the TACC stampede cluster is available.
+
 ==== Saving  ====
 
 Clicking the Save to Configuration File... button will save the current configuration to an xml file for later use. This will save the root node configuration, as well as any nodes that appear in the Configure Cluster Nodes... dialog. This excludes any nodes that have stopped or crashed.
