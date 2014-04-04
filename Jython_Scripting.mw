@@ -20,13 +20,17 @@ Within the interpreter, all ImageJ, java.lang.* and TrakEM2 classes are automati
 
 === Workflow for creating Jython scripts === 
 
-The recommended setup is the following:
+To create a script for the GUI, the recommended setup is the following:
 
-* Edit a file in your favorite text editor, and save it with an underscore in the name and a .py extension anywhere under ImageJ plugins folder.
+* Edit and save a file in your favorite text editor. If you want ImageJ1 to insert it into the Menu structure, the file must be saved somewhere under ImageJ plugins folder, have an underscore on the name, and a .py extension.
 * Run ''Plugins>Scripting>Refresh Jython scripts'' <b>only</b> the very first time after newly creating the file under any folder or subfolder of ImageJ's plugins folder. A menu item will appear with its name, from which it can be run.
 * Keep editing (and saving) the file from your editor. Just select the menu item to execute it over and over. Or use the ''Plugins>Utilities>Find Commands...'' window to launch it easily (keybinding 'l').
 
 The next time Fiji is run, it will setup all your scripts in the Plugins menu.
+
+If all you need is a script to run in headless mode, simply do:
+
+  fiji --headless filepath.py
 
 === Some limitations of jython === 
 
