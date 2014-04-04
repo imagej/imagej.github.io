@@ -419,6 +419,8 @@ The ''Shape'' option enables a basic pre-selection of pixels from the kernel nei
 
 ''Tolerance'' sets a threshold which will change intensity values after filtering only for those pixels where the difference to the original intensity is at least as high as the tolerance (0.2 = 20%). This enables to remove extreme outliers from the image while preserving the original pixel values in image areas without such outliers (at least for shot noise).
 
+[[File:AdaptiveFilter.png]]
+
 Output: The filter will be applied directly on the input image. It is undoable (by pressing [z]) and will be recorded by the macro recorder.
 
 Limitation: So far, the filter is only applicable on 8-bit and 16-bit single images. Recording still creates problems with the filter grid selections (will be addressed)
