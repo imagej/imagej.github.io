@@ -37,7 +37,7 @@ Once you get acquainted with [[Skeletonize3D]] and [[AnalyzeSkeleton]], the scri
 :AnalyzeSkeleton is able to resolve closed loops in the skeleton. The available methods in this drop-down menu are described in AnalyzeSkeleton's [[AnalyzeSkeleton#Loop_detection_and_pruning|documentation page]].
  
 ;Original grayscale image
-:The initial non-thinned image to be used for [[AnalyzeSkeleton#Loop_detection_and_pruning|intensity-based]] elimination of closed loops. This option is only available when at least two images are open.
+:The initial non-thinned image to be used for [[AnalyzeSkeleton#Loop_detection_and_pruning|intensity-based]] elimination of closed loops. This option is only available when at least two images are open and it is only used if either ''Lowest intensity voxel'' or ''Lowest intensity branch'' is chosen.
 
 ;Output Image(s)
 :The type of illustrations to be displayed: ''None'', ''Iteration Stack'', ''Color Map'' or ''Both'':
