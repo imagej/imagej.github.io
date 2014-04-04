@@ -7,41 +7,59 @@
 | filename        = [https://raw.github.com/tferr/Scripts/master/Morphometry/Strahler_Analysis.bsh Strahler_Analysis.bsh]
 | source         = [https://github.com/tferr/Scripts/tree/master/Morphometry#strahler-analysis on GitHub]
 | released        = March 2013
+| latest version = '''1.1.1, April 2014.04'''
 | status          = Experimental
 | category        = [[:Category:Skeleton|Skeleton]], [[:Category:Analysis|Analysis]], [[:Category:Scripting|Scripting]], [[:Category:Plugins|Plugins]]
-}}
-__NOTOC__ 
+}}__NOTOC__ 
 A [[Beanshell_Scripting|BeanShell]] script that performs Strahler analysis on topographic skeletons (2D/3D) through progressive pruning of terminal branches. 
 
-[http://en.wikipedia.org/wiki/Strahler_number Strahler numbering] is a numerical procedure that summarizes the branching complexity of a mathematical tree. In the life sciences, it is useful to study the complexity of radial arbors (i.e., structures that branch out evenly in multiple directions). In neurobiology, radial ramification is a hallmark of certain cell types such as Retinal Ganglion Cells, Chandelier neurons or Drosophila Class IV sensory neurons.
+[http://en.wikipedia.org/wiki/Strahler_number Strahler numbering] is a numerical procedure that summarizes the branching complexity of a mathematical tree.
 
 == Description == 
-[[Image:StrahlerAnimation.gif|350px|thumb|right|Strahler Analysis by iterative tree simplification]]
-
 There are different approaches to classify a tree-like structure by its Horton-Strahler numbers. One is iterative tree simplification, a method that requires detecting all terminal branches and all the degree-one paths leading to them.
 
-[[AnalyzeSkeleton]] is able to detect and prune terminal branches, which, in the case of radial arbors  is usually sufficient to provide satisfactory simplification of the structure. As explained in [https://raw.github.com/tferr/Scripts/master/Morphometry/Strahler_Analysis.bsh Strahler_Analysis.bsh], the script takes a grayscale image containing a single arbor, and calls [[AnalyzeSkeleton]] iteratively to retrieve Horton-Strahler counts from the [[Skeletonize3D|skeletonized centerlines]] of the image/stack.
+[[AnalyzeSkeleton]] is able to detect and prune terminal branches, which, in the case of radial arbors (i.e., tree-like structures that branch out evenly in multiple directions), is usually sufficient to provide satisfactory simplification of the structure. In neurobiology, radial-ramification is an anatomical hallmark of certain cell types such as Retinal Ganglion Cells, Chandelier neurons or Drosophila Class IV sensory neurons.
+
+''Strahler Analysis'' takes a binary or a grayscale image containing a single arbor, and calls [[AnalyzeSkeleton]] iteratively to retrieve Horton-Strahler counts from the [[Skeletonize3D|skeletonized centerlines]] of the image/stack.
 
 == Installation ==
+[[Image:StrahlerAnimation.gif|350px|thumb|right|Strahler Analysis by iterative tree simplification]]
 Download [https://raw.github.com/tferr/Scripts/master/Morphometry/Strahler_Analysis.bsh Strahler_Analysis.bsh] and place it in the plugins/ folder using the <span style="border-bottom:1px dotted #ccc;">Plugins▷ Install...</span> command. 
 If you are not using Fiji, the script should remind you to install [[AnalyzeSkeleton]] and [[Skeletonize3D]], if you have not done so. More details [https://github.com/tferr/Scripts/tree/master/Morphometry#strahler-analysis here].
 
-== Usage ==
-Once you get acquainted with [[Skeletonize3D]] and [[AnalyzeSkeleton]], the script parameters become self-explanatory. The following descriptions were taken from the script's built-in help:
+== Parameters ==
+Once you get acquainted with [[Skeletonize3D]] and [[AnalyzeSkeleton]], the script parameters become self-explanatory:
 
 ;Max. number of iterations
-:The maximum number of elimination steps to be used, i.e., the highest Strahler order (''root node'') to be considered. Note that the analysis will stop as soon as there is only one end-point/branch in the skeleton, which may happen before the specified cycle.
+:The maximum number of elimination steps to be used, i.e., the highest Strahler order (''root node'') to be considered. Note that the analysis will stop as soon as there are no more [[http://fiji.sc/AnalyzeSkeleton#General_Description|junction points]] in the skeleton, which may happen before the specified cycle.
 
 ;Elimination of skeleton loops
-:AnalyzeSkeleton is able to resolve closed loops in the skeleton. The available methods are described in AnalyzeSkeleton's [[AnalyzeSkeleton#Main_options|options]].
+:AnalyzeSkeleton is able to resolve closed loops in the skeleton. The available methods in this drop-down menu are described in AnalyzeSkeleton's [[AnalyzeSkeleton#Loop_detection_and_pruning|documentation page]].
  
 ;Original grayscale image
-:The initial non-thinned image to be used for intensity-based elimination of closed loops. Requires at least two open images.
+:The initial non-thinned image to be used for [[AnalyzeSkeleton#Loop_detection_and_pruning|intensity-based]] elimination of closed loops. This option is only available when at least two images are open.
+
+;Output Image(s)
+:The type of illustrations to be displayed: ''None'', ''Iteration Stack'', ''Color Map'' or ''Both'':
+
+::'''Iteration stack:''' An image stack that documents individual pruning cycles.
+::'''Color Map:''' A 16–bit illustration of the analyzed skeleton in which branches are color-coded by their Horton-Strahler numbers. By default, a calibration ramp (<span style="border-bottom:1px dotted #ccc;">Analyze▷ Tools▷ Calibration Bar...</span>) is added to the image overlay.
+
+== Results ==
+Horton-Strahler counts are listed on a dedicated table containing the following data:
+; # End-point Branches
+:The number of branches of each Horton-Strahler order.
+
+; Ramification ratios
+: Ramification or [http://en.wikipedia.org/wiki/Strahler_number#Bifurcation_ratio bifurcation ratios] are the quotients between branches of consecutive orders.
+
+; # Prevailing junctions
+: The number of junction points that remain in the skeleton upon the iterative pruning of end-point branches. 
 
 == Notes ==
-* Images are processed directly (work with a copy if you want to preserve original image). Only binary and 8-bit grayscale images can be processed.
-* Hold down ''Alt'' while confirming the dialog prompt (or activate ''Debug mode'' in <span style="border-bottom:1px dotted #ccc;"> Edit▷ Options▷ Misc...</span>) to document individual pruning cycles.
-* Horton-Strahler counts are listed on a dedicated table saved according to the extension and format specified in <span style="border-bottom:1px dotted #ccc;"> Edit▷ Options▷ Input/Output...</span> 
+* Only binary and 8-bit grayscale images can be processed.
+* WYSIWYG versions (RGB images) of the ''Strahler Color Map'' image  can be obtained by pressing {{key press|Shift|F}} (shortcut for <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Flatten</span>).
+* The extension and format of ''Strahler Table'' can be specified in <span style="border-bottom:1px dotted #ccc;"> Edit▷ Options▷ Input/Output...</span>
 
 == Related Links ==
 * [[AnalyzeSkeleton]] and [[Skeletonize3D]], analysis of topographic skeletons 
