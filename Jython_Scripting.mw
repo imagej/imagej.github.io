@@ -1571,6 +1571,25 @@ print "Processing:", imp.title
 
 IMPORTANT: notice that, when executing scripts from the command line, there is no auto-importing of common imports. So above we <b>must</b> declare "from ij import IJ" to import the namespace <i>IJ</i> with all the static utility functions such as <i>openImage</i>.
 
+=== Catching errors from a running macro ===
+
+ImageJ exits with zero even when it fails (see [https://github.com/imagej/imagej/issues/61 bug report]). A possible fix is to convert the macro into a plugin but a quicker fix, is to wrap the macro call into a script. For this purpose, it is enough to check the returned string of <code>runMacroCode</code>, which will return the string <code>[aborted]</code> in case of [http://jenkins.imagej.net/job/ImageJ1-javadoc/javadoc/ij/plugin/Macro_Runner.html#runMacro%28java.lang.String,%20java.lang.String%29 failure]:
+
+<source lang="python">
+from ij import IJ
+import sys
+ 
+if not len (sys.argv) > 1:
+  raise TypeError ("No macro file argument")
+ 
+status = IJ.runMacroFile(sys.argv[1])
+if status == '[aborted]':
+  raise StandardError ("Macro execution failed")
+
+sys.exit (0)
+</source>
+
+Of course, if your macro happens to return <code>[aborted]</code> for success, you're out of luck ;)
 
 [[Category:Scripting]]
 [[Category:Jython]]
