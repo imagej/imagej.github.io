@@ -38,9 +38,9 @@ To run a ''macro'' in headless mode, use the <code>-macro</code> command line ar
 
 === Running scripts in headless mode ===
 
-To run a ''script'' (JRuby, Jython, etc.) in headless mode, you must first run the appropriate "Refresh ... Scripts" plugin, then invoke the script command. For example, if you have a script called <code>test_ruby.rb</code>, which appears in the Plugins menu somewhere as "test ruby", then you can run it with:
+To run a ''script'' (JRuby, Jython, etc.) simply skip the <code>-batch</code> argument and pass the path to the script only.
 
-  ImageJ --headless -eval 'run("Refresh JRuby Scripts",""); run("test ruby","");'
+  ImageJ --headless path-to-script
 
 == Xvfb ==
 
