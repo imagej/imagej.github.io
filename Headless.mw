@@ -34,7 +34,9 @@ Fiji provides the capability to execute ImageJ plugins, macros and scripts in he
 
 To run a ''macro'' in headless mode, use the <code>-macro</code> command line argument along with the <code>--headless</code> option, as follows:
 
-  ImageJ --headless -macro myMacro.ijm
+  ImageJ --headless -macro path-to-Macro.ijm
+
+If the macro resides in ImageJ's macro directory, it is possible to specify the macro name instead of the actual file path. The file extension is always very recommended but for backwards compatibility, it is not strictly required ''only'' when specifying the macro name instead of a path.
 
 === Running scripts in headless mode ===
 
