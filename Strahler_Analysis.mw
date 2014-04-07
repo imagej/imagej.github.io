@@ -7,35 +7,31 @@
 | filename        = [https://raw.github.com/tferr/Scripts/master/Morphometry/Strahler_Analysis.bsh Strahler_Analysis.bsh]
 | source         = [https://github.com/tferr/Scripts/tree/master/Morphometry#strahler-analysis on GitHub]
 | released        = March 2013
-| latest version = '''1.1.1, April 2014'''
+| latest version = '''1.2.1, 07 April 2014'''
 | status          = Experimental
 | category        = [[:Category:Skeleton|Skeleton]], [[:Category:Analysis|Analysis]], [[:Category:Scripting|Scripting]], [[:Category:Plugins|Plugins]]
-}}__NOTOC__ 
+}}
 A [[Beanshell_Scripting|BeanShell]] script that performs Strahler analysis on topographic skeletons (2D/3D) through progressive pruning of terminal branches. 
 
 [http://en.wikipedia.org/wiki/Strahler_number Strahler numbering] is a numerical procedure that summarizes the branching complexity of a mathematical tree.
 
 == Description == 
-There are different approaches to classify a tree-like structure by its Horton-Strahler numbers. One is iterative tree simplification, a method that requires detecting all terminal branches and all the degree-one paths leading to them.
+[[Image:StrahlerAnimation.gif|300px|thumb|right|Strahler Analysis by iterative elimination of end-point branches]]
+There are different approaches to classify a tree-like structure by its Horton-Strahler numbers. One is iterative tree simplification, a method that requires detecting all terminal branches (i.e., branches that contain an end-point) and all the degree-one paths leading to them.
 
 [[AnalyzeSkeleton]] is able to detect and prune terminal branches, which, in the case of radial arbors (i.e., tree-like structures that branch out evenly in multiple directions), is usually sufficient to provide satisfactory simplification of the structure. In neurobiology, radial-ramification is an anatomical hallmark of certain cell types such as Retinal Ganglion Cells, Chandelier neurons or Drosophila Class IV sensory neurons.
 
 ''Strahler Analysis'' takes a binary or a grayscale image containing a single arbor, and calls [[AnalyzeSkeleton]] iteratively to retrieve Horton-Strahler counts from the [[Skeletonize3D|skeletonized centerlines]] of the image/stack.
 
-== Installation ==
-[[Image:StrahlerAnimation.gif|350px|thumb|right|Strahler Analysis by iterative tree simplification]]
-Download [https://raw.github.com/tferr/Scripts/master/Morphometry/Strahler_Analysis.bsh Strahler_Analysis.bsh] and place it in the plugins/ folder using the <span style="border-bottom:1px dotted #ccc;">Plugins▷ Install...</span> command. 
-If you are not using Fiji, the script should remind you to install [[AnalyzeSkeleton]] and [[Skeletonize3D]], if you have not done so. More details [https://github.com/tferr/Scripts/tree/master/Morphometry#strahler-analysis here].
-
 == Parameters ==
-Once you get acquainted with [[Skeletonize3D]] and [[AnalyzeSkeleton]], the script parameters become self-explanatory:
+Once you get acquainted with [[Skeletonize3D]] and [[AnalyzeSkeleton]], most parameters become self-explanatory:
 
 ;Max. number of iterations
-:The maximum number of elimination steps to be used, i.e., the highest Strahler order (''root node'') to be considered. Note that the analysis will stop as soon as there are no more [[http://fiji.sc/AnalyzeSkeleton#General_Description|junction points]] in the skeleton, which may happen before the specified cycle.
+:The maximum number of elimination steps to be used, i.e., the highest Strahler order (''root node'') to be considered. Note that the analysis will stop as soon as there are no more [[#PrevailingJunctions|junction points]] in the skeleton, which may happen before the specified cycle.
 
 ;Elimination of skeleton loops
-:AnalyzeSkeleton is able to resolve closed loops in the skeleton. The available methods in this drop-down menu are described in AnalyzeSkeleton's [[AnalyzeSkeleton#Loop_detection_and_pruning|documentation page]].
- 
+:AnalyzeSkeleton is able to resolve closed loops in the skeleton. The available methods in this drop-down menu are described in AnalyzeSkeleton's [[AnalyzeSkeleton#Loop_detection_and_pruning|documentation page]]. Note that ''Strahler Analysis'' requires loops to be resolved. If loops have been detected, the script will output a warning message to ImageJ's Log window.
+
 ;Original grayscale image
 :The initial non-thinned image to be used for [[AnalyzeSkeleton#Loop_detection_and_pruning|intensity-based]] elimination of closed loops. This option is only available when at least two images are open and it is only used if either ''Lowest intensity voxel'' or ''Lowest intensity branch'' is chosen.
 
@@ -45,16 +41,45 @@ Once you get acquainted with [[Skeletonize3D]] and [[AnalyzeSkeleton]], the scri
 ::'''Iteration stack:''' An image stack that documents individual pruning cycles.
 ::'''Color Map:''' A 16–bit illustration of the analyzed skeleton in which branches are color-coded by their Horton-Strahler numbers. By default, a calibration ramp (<span style="border-bottom:1px dotted #ccc;">Analyze▷ Tools▷ Calibration Bar...</span>) is added to the image overlay.
 
+;Protect branches inside ROI from iterative pruning
+:This option is only available when an area ROI is present. It is described in [[#Non-radial arbors|Non-radial arbors]].
+
+== Non-radial arbors ==
+The proper classification of non-radial arbors (i.e., arbors in which the root is a terminal branch) requires ''Strahler Analysis'' to be aware of root branches. As of version 1.2.0, this is implemented through the presence of an area ROI inscribing the root branch. Here is an example:
+<center>
+{|
+| align="center" width="185" | Arbor with area ROI containing root
+| align="center" width="185" | Analysis ignoring ROI: inaccurate result
+| align="center" width="185" | Analysis taking ROI into account: accurate result
+|-
+| align="center" colspan="3" width="555" | [[Image:Strahler_RootProtection.png|550px]]
+|-
+| align="left" colspan="3" width="555" | When an area ROI is present, the ''Protect branches inside ROI from iterative pruning'' checkbox can be used to spare root branches from the iterative elimination procedure (NB: colored images correspond to the ''Color Map illustrations'' output by the plugin).
+|}
+</center>
+
+
+Note the following when analyzing non-radial arbors:
+* Any area ROI (freehand, oval, polygon, etc.) can be used to inscribe the root branch. 
+* The algorithm expects that only the root branch (from junction point to end-point) is included in the ROI.
+* Artifacts may happen if the ROI intercepts the root branch halfway between the end-point and the junction point or if the ROI includes other branches. The best way to ensure the algorithm ran as expected is to visually inspect all the slices in the ''Iteration Stack''.
+* If you are batch processing multiple images you should work with .tif files: When saving as TIFF, ImageJ will store the active ROI in the image header, thus making it immediately available when the image is open.
+
+
 == Results ==
 Horton-Strahler counts are listed on a dedicated table containing the following data:
 ; # End-point Branches
-:The number of branches of each Horton-Strahler order.
+:The number of branches for each Horton-Strahler order.
 
 ; Ramification ratios
 : Ramification or [http://en.wikipedia.org/wiki/Strahler_number#Bifurcation_ratio bifurcation ratios] are the quotients between branches of consecutive orders.
-
+<span id="PrevailingJunctions"></span>
 ; # Prevailing junctions
-: The number of junction points that remain in the skeleton upon the iterative pruning of end-point branches. 
+: The number of junction points that remain in the skeleton upon the iterative pruning of end-point branches. It is logged for informational purposes, useful e.g., for the interpretation of the ''Iteration stack'' image.
+
+== Installation ==
+Download [https://raw.github.com/tferr/Scripts/master/Morphometry/Strahler_Analysis.bsh Strahler_Analysis.bsh] and place it in the plugins/ folder using the <span style="border-bottom:1px dotted #ccc;">Plugins▷ Install...</span> command. 
+If you are not using Fiji, the script should remind you to install [[AnalyzeSkeleton]] and [[Skeletonize3D]], if you have not done so. More details [https://github.com/tferr/Scripts/tree/master/Morphometry#strahler-analysis here].
 
 == Notes ==
 * Only binary and 8-bit grayscale images can be processed.
@@ -65,15 +90,21 @@ Horton-Strahler counts are listed on a dedicated table containing the following 
 * [[AnalyzeSkeleton]] and [[Skeletonize3D]], analysis of topographic skeletons 
 * [[Sholl Analysis]], bitmap morphometry based on the Sholl technique
 
+== Citations ==
+
 == References ==
+Original algorithm by Arthur N Strahler:
 *{{citation|last=Strahler|first=A. N.|year=1952|title=Hypsometric (area-altitude) analysis of erosional topology|journal=Geological Society of America Bulletin|volume=63|issue=11|pages=1117–1142|doi=10.1130/0016-7606(1952)63[1117:HAAOET]2.0.CO;2}}.
+
+[[Skeletonize3D|Skeletonization]] and [[AnalyzeSkeleton|Skeleton Analysis]]:
+* Ignacio Arganda-Carreras, Rodrigo Fernandez-Gonzalez, Arrate Munoz-Barrutia, Carlos Ortiz-De-Solorzano, [http://www3.interscience.wiley.com/journal/123322233/abstract "3D reconstruction of histological sections: Application to mammary gland tissue"], Microscopy Research and Technique, Volume 73, Issue 11, pages 1019–1029, October 2010.
+* Michael Doube, Michal M. Klosowski, Ignacio Arganda-Carreras, Fabrice P. Cordelieres, Robert P. Dougherty, Jonathan S. Jackson, Benjamin Schmid, John R. Hutchinson, Sandra J. Shefelbine, [http://dx.doi.org/10.1016/j.bone.2010.08.023 BoneJ: Free and extensible bone image analysis in ImageJ], Bone, Volume 47, Issue 6, December 2010, Pages 1076-1079.
 
 == Acknowledgments ==
 To [http://doube.org/ Michael Doube] and [[User:Iarganda|Ignacio Arganda-Carreras]], developers of [[AnalyzeSkeleton]].
 
 == License ==
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
 
 [[Category:Skeleton]]
 [[Category:Scripting]]
