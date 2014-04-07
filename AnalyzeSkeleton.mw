@@ -3,7 +3,7 @@
 | name                   = AnalyzeSkeleton
 | author                 = [[User:Iarganda | Ignacio Arganda-Carreras]]
 | maintainer             = [[User:Iarganda | Ignacio Arganda-Carreras]]
-| source                 = {{GitLink|jar=AnalyzeSkeleton_}}
+| source                 = [http://fiji.sc/AnalyzeSkeleton On GitHub]
 | released               = November 14<sup>th</sup>, 2008
 | latest version         = July 8<sup>th</sup>, 2013
 | status                 = stable, active
