@@ -16,7 +16,7 @@ Import data from many life sciences file formats, and export to several open for
 
 == Documentation ==
 
-What follows is a brief overview of the available plugins. You will find them all under the "LOCI" submenu of Plugins. See the [http://www.openmicroscopy.org/site/products/bio-formats Bio-Formats web site] for additional information about Bio-Formats in general.
+What follows is a brief overview of the available plugins. You will find them all under the "Bio-Formats" submenu of Plugins. See the [http://www.openmicroscopy.org/site/products/bio-formats Bio-Formats web site] for additional information about Bio-Formats in general.
 
 See especially the [http://www.openmicroscopy.org/site/support/bio-formats/users/user-info.html#using-bio-formats-with-imagej-and-fiji Using Bio-Formats] page for detailed instructions.
 
@@ -50,19 +50,19 @@ The Bio-Formats plugins come with a set of macro extensions to enable additional
 
 The '''Stack Slicer''' plugin is a helper plugin used by the '''Bio-Formats Importer'''. It can also be used standalone to split a stack across channels, focal planes or time points.
 
-=== LOCI Plugins Configuration ===
+=== Bio-Formats Plugins Configuration ===
 
-The '''LOCI Plugins Configuration''' dialog is a useful way to configure the behavior of each file format. You can see a list of supported file formats on the Formats tab, toggle each format on or off (which is useful, for example, if your file is being detected as the wrong format), and toggle whether each format bypasses the importer options dialog using the "Windowless" checkbox. You can also configure any specific options for each format—for example, for QuickTime, you can toggle between Apple's QTJava library or Bio-Formats's built-in support.
+The '''Bio-Formats Plugins Configuration''' dialog is a useful way to configure the behavior of each file format. You can see a list of supported file formats on the Formats tab, toggle each format on or off (which is useful, for example, if your file is being detected as the wrong format), and toggle whether each format bypasses the importer options dialog using the "Windowless" checkbox. You can also configure any specific options for each format—for example, for QuickTime, you can toggle between Apple's QTJava library or Bio-Formats's built-in support.
 
 In addition, you can see a list of available helper libraries used by Bio-Formats on the Libraries tab.
 
-=== LOCI Plugins Shortcut Window ===
+=== Bio-Formats Plugins Shortcut Window ===
 
-The '''LOCI Plugins Shortcut Window''' is a small window with a quick-launch button for each LOCI plugin. You can also drag and drop files onto the shortcut window to open them quickly using the '''Bio-Formats Importer''' plugin.
+The '''Bio-Formats Plugins Shortcut Window''' is a small window with a quick-launch button for each plugin. You can also drag and drop files onto the shortcut window to open them quickly using the '''Bio-Formats Importer''' plugin.
 
-=== Update LOCI Plugins ===
+=== Update Bio-Formats Plugins ===
 
-The '''Update LOCI Plugins''' command will check online for updates to the LOCI Plugins. In the case of Fiji, we recommend that you do not use this method of update, but instead use the [[Update_Fiji|Fiji Updater]].
+The '''Update Bio-Formats Plugins''' command will check online for updates to the Bio-Formats Plugins. In the case of Fiji, we recommend that you do not use this method of update, but instead use the [[Update_Fiji|Fiji Updater]].
 
 == Scripting ==
 
