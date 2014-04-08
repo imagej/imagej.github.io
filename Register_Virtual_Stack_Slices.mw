@@ -3,7 +3,7 @@
 | software               = Fiji
 | author                 = Albert Cardona ([mailto:acardona@ini.phys.ethz.ch acardona@ini.phys.ethz.ch]), [[User:Iarganda | Ignacio Arganda-Carreras]] and Stephan Saalfeld
 | maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
-| source                 = {{GitLink|jar=register_virtual_stack_slices|path=register_virtual_stack/Register_Virtual_Stack_MT.java}}
+| source                 = [https://github.com/fiji/register_virtual_stack_slices in GitHub]
 | released               = 2008
 | latest version         = February 17<sup>th</sup>, 2014
 | status                 = stable, active
