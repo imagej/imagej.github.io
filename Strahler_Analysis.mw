@@ -15,23 +15,21 @@ A [[Beanshell_Scripting|BeanShell]] script that performs Strahler analysis on to
 
 [http://en.wikipedia.org/wiki/Strahler_number Strahler numbering] is a numerical procedure that summarizes the branching complexity of a mathematical tree.
 
-== Description == 
+== Description ==
 [[Image:StrahlerAnimation.gif|300px|thumb|right|Strahler Analysis by iterative elimination of end-point branches]]
-''Strahler Analysis'' takes a binary or a grayscale image containing a single arbor, and calls [[AnalyzeSkeleton]] iteratively to retrieve Horton-Strahler counts from the [[Skeletonize3D|skeletonized centerlines]] of the image/stack.
+There are different approaches to classify a tree-like structure by its [[#References|Horton-Strahler numbers]]. One is iterative tree simplification, a method that requires detecting all terminal branches (i.e., branches that contain an end-point) and all the degree-one paths leading to them. Most of this procedure could be manually performed with [[AnalyzeSkeleton]]. 
 
-There are different approaches to classify a tree-like structure by its Horton-Strahler numbers. One is iterative tree simplification, a method that requires detecting all terminal branches (i.e., branches that contain an end-point) and all the degree-one paths leading to them. Such procedure can be performed with [[AnalyzeSkeleton]].
+''Strahler Analysis'' takes a binary or a grayscale image (2D or 3D) containing a single arbor, and calls [[AnalyzeSkeleton]] iteratively to retrieve Horton-Strahler counts from the [[Skeletonize3D|skeletonized centerlines]] of the image.
 
 == Parameters ==
-Once you get acquainted with [[Skeletonize3D]] and [[AnalyzeSkeleton]], most parameters become self-explanatory:
-
 ;Max. number of iterations
 :The maximum number of elimination steps to be used, i.e., the highest Strahler order (''root node'') to be considered. Note that the analysis will stop as soon as there are no more [[#PrevailingJunctions|junction points]] in the skeleton, which may happen before the specified cycle.
 
 ;Elimination of skeleton loops
-:AnalyzeSkeleton is able to resolve closed loops in the skeleton. The available methods in this drop-down menu are described in AnalyzeSkeleton's [[AnalyzeSkeleton#Loop_detection_and_pruning|documentation page]]. Note that ''Strahler Analysis'' requires loops to be resolved. If loops have been detected, the script will output a warning message to ImageJ's Log window.
+:''Strahler Analysis'' cannot process skeletons containing closed loops. The available methods in this drop-down menu define how closed loops should be resolved by [[AnalyzeSkeleton]] and are described in [[AnalyzeSkeleton#Loop_detection_and_pruning|Loop detection]]. Note that ''Strahler Analysis'' outputs a warning message to the Log window when closed loops have been detected. 
 
 ;Original grayscale image
-:The initial non-thinned image to be used for [[AnalyzeSkeleton#Loop_detection_and_pruning|intensity-based]] elimination of closed loops. This option is only available when at least two images are open and it is only used if either ''Lowest intensity voxel'' or ''Lowest intensity branch'' is chosen.
+:The initial non-thinned image to be used by [[AnalyzeSkeleton]] for [[AnalyzeSkeleton#Loop_detection_and_pruning|intensity-based]] elimination of closed loops. This option is only available when at least two images are open and it is only used if either ''Lowest intensity voxel'' or ''Lowest intensity branch'' is chosen.
 
 ;Output Image(s)
 :The type of illustrations to be displayed: ''None'', ''Iteration Stack'', ''Color Map'' or ''Both'':
@@ -71,7 +69,7 @@ Horton-Strahler counts are listed on a dedicated table containing the following 
 :The number of branches for each Horton-Strahler order.
 
 ; Ramification ratios
-: Ramification or [http://en.wikipedia.org/wiki/Strahler_number#Bifurcation_ratio bifurcation ratios] are the quotients between branches of consecutive orders. Note that an overall ratio may be obtained by averaging the ratios across orders.
+: Ramification or [http://en.wikipedia.org/wiki/Strahler_number#Bifurcation_ratio bifurcation ratios] are the quotients between branches of consecutive orders. Note that an overall ratio may be obtained by averaging ratios across orders.
 
 <span id="PrevailingJunctions"></span>
 ; # Prevailing junctions
@@ -93,8 +91,14 @@ If you are not using Fiji, the script should remind you to install [[AnalyzeSkel
 == Citations ==
 
 == References ==
-Original algorithm by Arthur N Strahler:
+Original publications by [http://en.wikipedia.org/wiki/Robert_E._Horton Robert E. Horton] and [http://en.wikipedia.org/wiki/Arthur_Newell_Strahler Arthur N. Strahler]:
+
+*{{citation|first=R. E.|last=Horton|title=Erosional development of streams and their drainage basins: hydro-physical approach to quantitative morphology|journal=Geological Society of America Bulletin|volume=56|issue=3|year=1945|pages=275–370|doi=10.1130/0016-7606(1945)56[275:EDOSAT]2.0.CO;2}}.
+
 *{{citation|last=Strahler|first=A. N.|year=1952|title=Hypsometric (area-altitude) analysis of erosional topology|journal=Geological Society of America Bulletin|volume=63|issue=11|pages=1117–1142|doi=10.1130/0016-7606(1952)63[1117:HAAOET]2.0.CO;2}}.
+
+*{{citation|last=Strahler|first=A. N.|year=1957|title=Quantitative analysis of watershed geomorphology|journal=Transactions of the American Geophysical Union|volume=38|issue=6|pages=913–920}}  ([http://www.uvm.edu/~pdodds/files/papers/others/1957/strahler1957a.pdf PDF]).
+
 
 [[Skeletonize3D|Skeletonization]] and [[AnalyzeSkeleton|Skeleton Analysis]]:
 * Ignacio Arganda-Carreras, Rodrigo Fernandez-Gonzalez, Arrate Munoz-Barrutia, Carlos Ortiz-De-Solorzano, [http://www3.interscience.wiley.com/journal/123322233/abstract "3D reconstruction of histological sections: Application to mammary gland tissue"], Microscopy Research and Technique, Volume 73, Issue 11, pages 1019–1029, October 2010.
