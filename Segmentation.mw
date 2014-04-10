@@ -20,22 +20,18 @@ Give it a try—you might like it!
 
 One good workflow for segmentation in ImageJ is as follows:
 
-# Preprocess the image using filters, to make later thresholding more effective. Which filter(s) to use is highly dependent on your data, but some commonly useful filters include:
-#* [[:Category:Deconvolution|Deconvolution]]
-#* [http://imagej.net/docs/guide/146-29.html#sub:Subtract-Background... Subtract Background]
-#* [http://imagej.net/docs/guide/146-29.html#sub:Gaussian-Blur... Gaussian Blur]
-#* [http://imagej.net/docs/guide/146-29.html#sub:Find-Edges Find Edges]
+#[[Segmentation#Preprocessing | Preprocess]] the given images
 # Apply a [[Segmentation#Adjusting Threshold | threshold]].
 #* Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
 # Create and manipulate a [[Segmentation#Creating Masks| mask]]
 # [[Segmentation#Selections#Creating Selections | Create and transfer]] a selection from a mask to your original image
-# Do some numerical analysis on the selected data; e.g.:
-#* [http://imagej.net/docs/guide/146-30.html#sub:Measure...%5Bm%5D Measure] the entire selection directly.
-#** Control which measurements are done using [http://imagej.net/docs/guide/146-30.html#sub:Set-Measurements... Set Measurements].
-#* Use [http://imagej.net/docs/guide/146-30.html#sub:Analyze-Particles... Analyze Particles] to extract desirable objects from your selection and report individual statistics on them.
-#* Use the [http://imagej.net/docs/guide/146-30.html#fig:The-ROI-Manager ROI Manager] to '''Add''' the selection and then '''Split''' it (under the '''More''' button), then use '''Multi Measure''' (also under '''More''') to report statistics on the objects.
-#* [[Macros_Intro|Write a macro]] to automate this sort of analysis, loop over objects in the ROI manager, measure and manipulate them, etc.
-
+#[[Segmentation#Analysis| Analyze]] the resulting data
+== Preprocessing==
+Preprocess the image using filters, to make later thresholding more effective. Which filter(s) to use is highly dependent on your data, but some commonly useful filters include:
+* [[:Category:Deconvolution|Deconvolution]]
+* [http://imagej.net/docs/guide/146-29.html#sub:Subtract-Background... Subtract Background]
+* [http://imagej.net/docs/guide/146-29.html#sub:Gaussian-Blur... Gaussian Blur]
+* [http://imagej.net/docs/guide/146-29.html#sub:Find-Edges Find Edges]
 ==Adjusting Threshold==
 *Open your image in the fiji window
 *Select Image>Adjust
@@ -59,6 +55,14 @@ One good workflow for segmentation in ImageJ is as follows:
 *Before transferring the mask's selections, revert the image to its original form by selecting Shift+E
 *Select first the mask, then the original image, and select Shift+E to transfer the mask's selections
 **[http://imagej.net/docs/guide/146-27.html#infobox:TransferSelections More information]
+
+==Analysis==
+Do some numerical analysis on the selected data:
+* [http://imagej.net/docs/guide/146-30.html#sub:Measure...%5Bm%5D Measure] the entire selection directly.
+** Control which measurements are done using [http://imagej.net/docs/guide/146-30.html#sub:Set-Measurements... Set Measurements].
+* Use [http://imagej.net/docs/guide/146-30.html#sub:Analyze-Particles... Analyze Particles] to extract desirable objects from your selection and report individual statistics on them.
+* Use the [http://imagej.net/docs/guide/146-30.html#fig:The-ROI-Manager ROI Manager] to '''Add''' the selection and then '''Split''' it (under the '''More''' button), then use '''Multi Measure''' (also under '''More''') to report statistics on the objects.
+* [[Macros_Intro|Write a macro]] to automate this sort of analysis, loop over objects in the ROI manager, measure and manipulate them, etc.
 
 = See also =
 
