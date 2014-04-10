@@ -52,12 +52,14 @@ Preprocess the image using filters, to make later thresholding more effective. W
 ***[[Segmentation#Flexible workflow | back]]
 
 ==Selections==
+[[Image: Selection_tree.png|300px|thumb|Selections on the mask]]
 ===Creating Selections===
 *Select Edit>Selection>Create Selection to select the objects within the mask
 *To deselect a portion of the image, select Shift+Click
 **[http://imagej.net/docs/guide/146-27.html#sub:Create-Selection More information]
 **[[Segmentation#Flexible workflow | back]]
 
+[[Image: Reverted_tree.png|300px|thumb|Selections on the reverted image]]
 ===Transferring Selections===
 *Before transferring the mask's selections, revert the image to its original form by selecting Shift+E
 *Select first the mask, then the original image, and select Shift+E to transfer the mask's selections
