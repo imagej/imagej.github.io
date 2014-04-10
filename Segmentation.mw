@@ -25,15 +25,10 @@ One good workflow for segmentation in ImageJ is as follows:
 #* [http://imagej.net/docs/guide/146-29.html#sub:Subtract-Background... Subtract Background]
 #* [http://imagej.net/docs/guide/146-29.html#sub:Gaussian-Blur... Gaussian Blur]
 #* [http://imagej.net/docs/guide/146-29.html#sub:Find-Edges Find Edges]
-# Apply a [http://imagej.net/docs/guide/146-28.html#sub:Threshold...%5BT%5D Threshold].
+# Apply a [[Segmentation#Adjusting Threshold | threshold]].
 #* Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
-# [http://imagej.net/docs/guide/146-29.html#infobox:InvertedLutMask Create a mask].
-# Manipulate the mask as needed; e.g.:
-#* [http://imagej.net/docs/guide/146-29.html#sub:Dilate Dilate] to grow the included pixels
-#* [http://imagej.net/docs/guide/146-29.html#sub:Erode Erode] to shrink the included pixels
-# [http://imagej.net/docs/guide/146-27.html#sub:Create-Selection Create a selection] from the mask.
-# [http://imagej.net/docs/guide/146-27.html#infobox:TransferSelections Transfer the selection] back to your original image with the original (non-processed) pixel data.
-#* If you ran filters on your data, you probably want to [http://imagej.net/docs/guide/146-26.html#sub:Revert%5Br%5D Revert] those changes first.
+# Create and manipulate a [[Segmentation#Creating Masks| mask]]
+# [[Segmentation#Selections#Creating Selections | Create]] and [[Segmentation#Selections#Transferring Selections | transfer] a selection from a mask to your original image
 # Do some numerical analysis on the selected data; e.g.:
 #* [http://imagej.net/docs/guide/146-30.html#sub:Measure...%5Bm%5D Measure] the entire selection directly.
 #** Control which measurements are done using [http://imagej.net/docs/guide/146-30.html#sub:Set-Measurements... Set Measurements].
