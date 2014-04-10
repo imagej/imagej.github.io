@@ -53,7 +53,7 @@ One good workflow for segmentation in ImageJ is as follows:
 **Select the portion of the image that needs to be adjusted
 **Select Dilate to further saturated this portion of the image or Erode to remove saturation
 
-=Selection=
+=Selections=
 ==Creating Selections==
 *Select Edit>Selection>Create Selection to select the objects within the mask
 *To deselect a portion of the image, select Shift+Click
@@ -61,7 +61,6 @@ One good workflow for segmentation in ImageJ is as follows:
 ==Transferring Selections==
 *Before transferring the mask's selections, revert the image to its original form by selecting Shift+E
 *Select first the mask, then the original image, and select Shift+E to transfer the mask's selections
-
 
 = See also =
 
