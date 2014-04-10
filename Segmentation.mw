@@ -28,7 +28,7 @@ One good workflow for segmentation in ImageJ is as follows:
 # Apply a [[Segmentation#Adjusting Threshold | threshold]].
 #* Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
 # Create and manipulate a [[Segmentation#Creating Masks| mask]]
-# [[Segmentation#Selections#Creating Selections | Create]] and [[Segmentation#Selections#Transferring Selections | transfer] a selection from a mask to your original image
+# [[Segmentation#Selections#Creating Selections | Create and transfer]] a selection from a mask to your original image
 # Do some numerical analysis on the selected data; e.g.:
 #* [http://imagej.net/docs/guide/146-30.html#sub:Measure...%5Bm%5D Measure] the entire selection directly.
 #** Control which measurements are done using [http://imagej.net/docs/guide/146-30.html#sub:Set-Measurements... Set Measurements].
@@ -41,21 +41,24 @@ One good workflow for segmentation in ImageJ is as follows:
 *Select Image>Adjust
 *Specify whether or not the background should be dark or light
 *Adjust the minimum and maximum sliders until you are satisfied with the saturation level of your image
-
+**[http://imagej.net/docs/guide/146-28.html#sub:Threshold...%5BT%5D More information]
 =Creating Masks=
 *Select Edit>Selection>Create Mask
 *Based on the image and set threshold, some portions of the image may be over/under saturated
 **Select the portion of the image that needs to be adjusted
-**Select Dilate to further saturated this portion of the image or Erode to remove saturation
+**Select [http://imagej.net/docs/guide/146-29.html#sub:Dilate Dilate] to grow the included pixels to further saturate this portion of the image or [http://imagej.net/docs/guide/146-29.html#sub:Erode Erode] to remove saturation
+***[http://imagej.net/docs/guide/146-29.html#infobox:InvertedLutMask More information].
 
 =Selections=
 ==Creating Selections==
 *Select Edit>Selection>Create Selection to select the objects within the mask
 *To deselect a portion of the image, select Shift+Click
+**[http://imagej.net/docs/guide/146-27.html#sub:Create-Selection More information]
 
 ==Transferring Selections==
 *Before transferring the mask's selections, revert the image to its original form by selecting Shift+E
 *Select first the mask, then the original image, and select Shift+E to transfer the mask's selections
+**[http://imagej.net/docs/guide/146-27.html#infobox:TransferSelections More information]
 
 = See also =
 
