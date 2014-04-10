@@ -36,26 +36,26 @@ One good workflow for segmentation in ImageJ is as follows:
 #* Use the [http://imagej.net/docs/guide/146-30.html#fig:The-ROI-Manager ROI Manager] to '''Add''' the selection and then '''Split''' it (under the '''More''' button), then use '''Multi Measure''' (also under '''More''') to report statistics on the objects.
 #* [[Macros_Intro|Write a macro]] to automate this sort of analysis, loop over objects in the ROI manager, measure and manipulate them, etc.
 
-=Adjusting Threshold=
+==Adjusting Threshold==
 *Open your image in the fiji window
 *Select Image>Adjust
 *Specify whether or not the background should be dark or light
 *Adjust the minimum and maximum sliders until you are satisfied with the saturation level of your image
 **[http://imagej.net/docs/guide/146-28.html#sub:Threshold...%5BT%5D More information]
-=Creating Masks=
+==Creating Masks==
 *Select Edit>Selection>Create Mask
 *Based on the image and set threshold, some portions of the image may be over/under saturated
 **Select the portion of the image that needs to be adjusted
 **Select [http://imagej.net/docs/guide/146-29.html#sub:Dilate Dilate] to grow the included pixels to further saturate this portion of the image or [http://imagej.net/docs/guide/146-29.html#sub:Erode Erode] to remove saturation
 ***[http://imagej.net/docs/guide/146-29.html#infobox:InvertedLutMask More information].
 
-=Selections=
-==Creating Selections==
+==Selections==
+===Creating Selections===
 *Select Edit>Selection>Create Selection to select the objects within the mask
 *To deselect a portion of the image, select Shift+Click
 **[http://imagej.net/docs/guide/146-27.html#sub:Create-Selection More information]
 
-==Transferring Selections==
+===Transferring Selections===
 *Before transferring the mask's selections, revert the image to its original form by selecting Shift+E
 *Select first the mask, then the original image, and select Shift+E to transfer the mask's selections
 **[http://imagej.net/docs/guide/146-27.html#infobox:TransferSelections More information]
