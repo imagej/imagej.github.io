@@ -41,8 +41,7 @@ One good workflow for segmentation in ImageJ is as follows:
 #* Use the [http://imagej.net/docs/guide/146-30.html#fig:The-ROI-Manager ROI Manager] to '''Add''' the selection and then '''Split''' it (under the '''More''' button), then use '''Multi Measure''' (also under '''More''') to report statistics on the objects.
 #* [[Macros_Intro|Write a macro]] to automate this sort of analysis, loop over objects in the ROI manager, measure and manipulate them, etc.
 
-=Threshold=
-==Adjusting Threshold==
+=Adjusting Threshold=
 *Open your image in the fiji window
 *Select Image>Adjust
 *Specify whether or not the background should be dark or light
