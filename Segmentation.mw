@@ -21,12 +21,13 @@ Give it a try—you might like it!
 One good workflow for segmentation in ImageJ is as follows:
 
 #[[Segmentation#Preprocessing | Preprocess]] the given images
-# Apply a [[Segmentation#Adjusting Threshold | threshold]].
-#* Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
+# Apply an [[Segmentation#Adjusting Threshold | Auto Threshold]].
 # Create and manipulate a [[Segmentation#Creating Masks| mask]]
 # [[Segmentation#Selections#Creating Selections | Create and transfer]] a selection from a mask to your original image
 #[[Segmentation#Analysis| Analyze]] the resulting data
+
 == Preprocessing==
+
 Preprocess the image using filters, to make later thresholding more effective. Which filter(s) to use is highly dependent on your data, but some commonly useful filters include:
 * [[:Category:Deconvolution|Deconvolution]]
 * [http://imagej.net/docs/guide/146-29.html#sub:Subtract-Background... Subtract Background]
@@ -34,7 +35,10 @@ Preprocess the image using filters, to make later thresholding more effective. W
 * [http://imagej.net/docs/guide/146-29.html#sub:Find-Edges Find Edges]
 **[[Segmentation#Flexible workflow | back]]
 [[Image: Threshold_tree.png|300px|thumb|Tree ring sample image with a threshold applied for a B&W image]]
+
 ==Adjusting Threshold==
+
+Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
 *Open your image in the fiji window
 *Select Image>Adjust
 *Specify whether or not the background should be dark or light
