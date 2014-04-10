@@ -21,7 +21,7 @@ Give it a try—you might like it!
 One good workflow for segmentation in ImageJ is as follows:
 
 #[[Segmentation#Preprocessing | Preprocess]] the given images
-# Apply an [[Segmentation#Adjusting Threshold | Auto Threshold]].
+# Apply an [[Segmentation#Adjusting Threshold | Auto Threshold]]
 # Create and manipulate a [[Segmentation#Creating Masks| mask]]
 # [[Segmentation#Selections#Creating Selections | Create and transfer]] a selection from a mask to your original image
 #[[Segmentation#Analysis| Analyze]] the resulting data
