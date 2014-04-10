@@ -34,9 +34,11 @@ Preprocess the image using filters, to make later thresholding more effective. W
 * [http://imagej.net/docs/guide/146-29.html#sub:Gaussian-Blur... Gaussian Blur]
 * [http://imagej.net/docs/guide/146-29.html#sub:Find-Edges Find Edges]
 **[[Segmentation#Flexible workflow | back]]
-[[Image: Threshold_tree.png|300px|thumb|Tree ring sample image with a threshold applied for a B&W image]]
+
 
 ==Adjusting Threshold==
+
+[[Image: Threshold_tree.png|300px|thumb|Tree ring sample image with a threshold applied for a B&W image]]
 
 Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
 *Open your image in the fiji window
@@ -46,8 +48,11 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 **[http://imagej.net/docs/guide/146-28.html#sub:Threshold...%5BT%5D More information]
 **[[Segmentation#Flexible workflow | back]]
 
-[[Image:Eroded_tree.png|300px|thumb|Over-saturated mask is eroded around the center tree ring]]
+
 ==Creating Masks==
+
+[[Image:Eroded_tree.png|300px|thumb|Over-saturated mask is eroded around the center tree ring]]
+
 *Select Edit>Selection>Create Mask
 *Based on the image and set threshold, some portions of the image may be over/under saturated
 **Select the portion of the image that needs to be adjusted
