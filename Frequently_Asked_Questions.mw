@@ -21,11 +21,6 @@ On OS X:
  /Applications/Fiji.app/Contents/MacOS/ImageJ-macosx --java-home \
    '/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home'
 
-<div style="background:#ffd; padding: 10px 10px 0 10px; border: 1px solid black;">
-Unfortunately, the <code>--java-home</code> feature is currently broken on OS X. But a [https://github.com/imagej/imagej-launcher/pull/1 fix is in the works]!
-</div>
-
-
 On Linux:
 
  $HOME/Fiji.app/ImageJ-linux64 --java-home \
