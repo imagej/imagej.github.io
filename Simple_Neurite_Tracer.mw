@@ -7,7 +7,7 @@ __NOTOC__
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = Simple Neurite Tracer
-| author                 = Mark Longair [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/#authors and others]
+| author                 = Mark Longair [[#Authors|and others]]
 | maintainer             = Mark Longair
 | filename               = Simple_Neurite_Tracer.jar
 | source                 = <del>{{GitLink|jar=Simple_Neurite_Tracer.java}}</del> [https://github.com/fiji/Simple_Neurite_Tracer on GitHub]
