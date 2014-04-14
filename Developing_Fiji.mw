@@ -157,6 +157,8 @@ If you have an account on this Wiki, you can easily create new tutorials with th
 *[[Overview of Fiji's source code]]
 *[[Description of ImageJ's plugin architecture]]
 *[[Tips for developers]]
+*[http://jenkins.imagej.net/job/ImageJ1-javadoc/lastStableBuild/artifact/target/site/apidocs/ ImageJ1 Javadoc ZIP] (for offline usage)
+*[http://jenkins.imagej.net/job/ImageJ-daily/lastStableBuild/artifact/target/site/apidocs/ ImageJ2 Javadoc ZIP] (for offline usage)
 *[[Developers HowTo]]
 *[http://www.imagingbook.com/index.php?id=102 ImageJ plugin writing tutorial]
 *[http://albert.rierol.net/imagej_programming_tutorials.html ImageJ programming tutorials]
