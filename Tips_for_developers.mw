@@ -299,4 +299,4 @@ else try {
 } catch (Exception e) { /* ignore */ }
 </source>
 
-Information extracted from the [http://java.sun.com/products/jfc/tsc/articles/threads/threads1.html Swing guide].
+Information extracted from the [http://web.archive.org/web/20120801194837/http://java.sun.com/products/jfc/tsc/articles/threads/threads1.html Swing guide] (now only available from via web.archive.org as Oracle removed the original docs), additional information can be found in the [http://docs.oracle.com/javase/tutorial/uiswing/concurrency/index.html Concurrency in Swing] lesson of ''The Java Tutorials''.
