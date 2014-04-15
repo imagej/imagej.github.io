@@ -2,7 +2,7 @@
 
 == Spring cleaning ==
 
-Recently Johannes Schindelin wrote an email about Spring celaning:
+Recently Johannes Schindelin wrote an email about Spring cleaning:
 
 Since the repository at https://github.com/fiji/fiji has grown to an unhealthy two hundred megabyte or so -- way too much to allow new contributors to clone and build and contribute -- it was time to split out all the individual projects we accumulated over the years. 
 
@@ -44,7 +44,7 @@ You can use the command-line above, or for even easier testing, fiji.Debug.run()
 http://fiji.sc/Debugging#Debugging_plugins_in_an_IDE_.28Netbeans.2C_IntelliJ.2C_Eclipse.2C_etc.29 
 
 Note that the fiji.Debug method gives you many advantages over all other 
-methods. 
+methods.
 
 == What are plugins (in terms of files)? ==
 
