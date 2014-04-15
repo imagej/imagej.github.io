@@ -16,7 +16,7 @@ The BigDataViewer is a re-slicing browser for terabyte-sized multi-view image se
 BigDataViewer was developed with multi-view light-sheet microscopy data in mind and integrates well with Fiji's SPIMage processing pipeline.
 
 Conceptually, the visualized data comprises multiple ''data sources''.
-Each source provides one 3D image (for each time-point in the case of a time-lapse sequence)
+Each source provides one 3D image (for each time-point in the case of a time-lapse sequence).
 For example, in a multi-angle SPIM sequence, each angle is a source.
 In a multi-angle, multi-channel SPIM sequence, each channel of each angle is a source.
 
@@ -169,10 +169,117 @@ At the top of the window, the name of the current source is shown (F).
 Note, that also in fused mode there is always a ''current source'', although this source may not even be visible.
 Commands such as {{key press|Shift|X}} (rotate to ZY-plane) refer to the local coordinate system of the current source.
 
-=== Setting Brightness and Color ===
-
 === Grouping Sources ===
+Often there are sets of sources for which visibility is logically related.
+For example, in a multi-angle, multi-channel SPIM sequence, you will frequently want to see all channels of a given angle, or all angles of a given channel.
+If your dataset contains deconvolved data, you may want to see either all raw angles overlaid, or the deconvolved view, respectively.
+You want to be able to quickly switch between those two views.
+Turning individual sources on and off becomes tedious in these situations.
+Therefore, sources can be organized into ''groups''.
+All sources of a ''group'' can be activated or deactivated at once.
 
-=== Opening BigDataViewer Datasets as Fiji Stacks ===
+Source grouping is handled in the visibility and grouping dialog, too
+(menu ''Settings > Visibility & Grouping'' or shortcut {{key press|F6}}).
+
+[[Image:bdv-grouping.png|500px]]
+
+The lower half of the dialog is dedicated to grouping.
+There are 10 groups available.
+They are named "group 1" through "group 10" initially, but the names can be edited (A).
+
+Sources can be assigned to groups using the checkboxes (B).
+In every line, there are as many checkboxes as there are sources.
+Sources corresponding to active checkboxes are assigned to the respective group.
+For example, in the above screenshot there are two sources and therefore two "assigned sources" checkboxes per line
+The first source is assigned to groups 1 and 2, the second source is assigned to groups 2 and 3.
+Group 2 has been renamed to "all sources".
+
+''Grouping'' can be turned on and off by the checkbox (C) or by using the shortcut {{key press|G}} in the main window.
+If grouping is enabled, groups take the role of individual sources:
+There is one ''current group'' which is visible in normal mode (all individual sources that are part of this group are overlaid).
+Groups can be activated or deactivated to determine visibility in fused mode (all individual sources that are part of at least one active group are overlaid).
+
+Groups can be made current and made active or inactive using the checkboxes (D).
+Also, if grouping is enabled the number key shortcuts in the main BigDataViewer window act on groups instead of individual sources.
+That is, groups 1 through 10 can be made current by keys {{key press|1}} through {{key press|0}}.
+Similarly, shortcuts {{key press|Shift|1}} through {{key press|Shift|0}} in the main window activate or deactivate groups 1 through 10 for visibility in fused mode.
+
+If grouping is enabled, the name of the current group is shown at the top of the main window.
+
+[[Image:bdv-overlays-2.png|500px]]
+
+=== Adjusting Brightness and Color ===
+To change the brightness, contrast, or color of particular sources select ''Setting > Brightness & Color'' or press the shortcut {{key press|S}}.
+This brings up the brightness and color settings dialog.
+
+[[Image:bdv-brightness-1.png|500px]]
+
+The ''min'' and ''max'' sliders (A) can be used to adjust the brightness and contrast.
+They represent minimum and maximum source values that are mapped to the display range.
+For the screenshot above, this means that source intensity 200 (and everything below) is mapped to black. Source intensity 862 (and everything above) is mapped to white.
+
+When a new dataset is opened, BigDataViewer tries to estimate good initial ''min'' and ''max'' settings by looking at the first image of the dataset.
+
+BigDataViewer datasets are currently always stored with 16 bits per pixel, however the data does not always exploit the full value range 0 ... 65535.
+The example drosophila dataset uses values in the range of perhaps 0 ... 1000, except for the much brighter fiducial beads around the specimen.
+The ''min'' and ''max'' sliders in this case are a bit fiddly to use, because they span the full 16 bit range with the interesting region squeezed into the first few pixels.
+This can be remedied by adjusting the range of the sliders.
+For this, click on the >> dialog button (B).
+This shows two additional input fields, where the range of the sliders can be adjusted.
+In the following screenshot, the leftmost value of the slider range has been set to 0 and the rightmost value to 2000, making the sliders much more useful.
+
+[[Image:bdv-brightness-2.png|500px]]
+
+So far, all sources share the same ''min'' and ''max'' settings.
+However, these can also be adjusted for each individual source or for groups of sources.
+The checkboxes (C) assign sources to ''min-max-groups''.
+There is one checkbox per source.
+In the example drosophila dataset there are two sources, therefore there are two checkboxes.
+The active checkboxes indicate for which sources the ''min'' and ''max'' values apply.
+
+If you uncheck one of the sources, it will move to its own new ''min-max-group''.
+Now you can adjust the values for each source individually.
+The sliders of new group are initialized as a copy of the old group.
+
+[[Image:bdv-brightness-3.png|500px]]
+
+Sources can be assigned to ''min-max-groups'' by checking/unchecking the checkboxes.
+The rule is that every source is always assigned to exactly one min-max-group.
+Thus, if you activate an unchecked source in a min-max-group, this will remove the source from its previous min-max-group and add it to the new one.
+Unchecking a source will remove it from its min-max-group and move it to a new one.
+Min-max-groups that become empty are removed.
+To go back to a single min-max-group in the example, you would simply move all sources to the same group.
+
+Finally, at the bottom of the dialog (D) colors can be assigned to sources.
+There is one color button per source (two in the example).
+Clicking a button brings up a color dialog, where you can choose a color for that particular source.
+In the following screenshot, the sources have been colored magenta and green.
+
+[[Image:bdv-brightness-4.png|500px]]
+
+=== Loading and Saving Settings ===
+Organizing sources into groups, assigning appropriate colors, and adjusting brightness correctly is work that you do not want to repeat over and over every time you re-open a dataset.
+Therefore, BigDataViewer allows to save and load these settings.
+
+Select ''File > Save settings'' from the menu to store settings to an XML file, and ''File > Load settings'' to load them from an XML file.
+
+When a dataset is opened, BigDataViewer automatically loads an appropriately named settings file if it is present.
+This settings file must be in the same directory as the dataset's XML file, and have the same filename with ''.settings'' appended.
+For example, if the dataset's XML file is named ''drosophila.xml'', the settings file must be named ''drosophila.settings.xml''.
+(If you select ''File > Save settings'', this filename is already suggested in the Save File dialog.)
+
+Settings files assume that a specific number of sources are present, therefore settings are usually not compatible across different datasets.
+
+=== Opening BigDataViewer Datasets as ImageJ Stacks ===
+BigDataViewer may be great for looking at your data, but what if you want to apply other ImageJ algorithms or plugins to the images?
+You can open individual images from a dataset as ImageJ stacks using ''File > Import > BigDataViewer...'' from the Fiji menu.
+
+[[Image:bdv-import.png|500px]]
+
+Select the XML file of a dataset, then choose the time-point and source (setup) index of the image you want to open.
+
+Note that this import function is macro-recordable.
+Thus, you can make use of it to batch-process images from BigDataViewer datasets.
+
 
 == Exporting Datasets for the BigDataViewer ==
