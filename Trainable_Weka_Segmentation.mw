@@ -57,7 +57,7 @@ This button activates and deactivates the overlay of the result image. The trans
 
 ==== Create result ====
 
-It creates and displays the resulting image. This image is equivalent to the current overlay but grayscale. By default, the result image will be binary (black and white).
+It creates and displays the resulting image. This image is equivalent to the current overlay (8-bit Color with same class colors). Each pixel is set to the index value of the most likely class (0, 1, 2...).
 
 ==== Get probability ====
 
