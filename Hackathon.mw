@@ -63,6 +63,11 @@ ImageJ has benefitted from many hackathons over the years:
 |[http://developer.imagej.net/hackathons/2011-dresden Many!]
 |Interoperability
 |- valign="top"
+|2012 Oct
+|[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
+|[https://github.com/hornm hornm], [https://github.com/dietzc dietzc], [https://github.com/tpietzsch tpietzsch], [https://github.com/dscho dscho]
+|KNIME+Fiji
+|- valign="top"
 |2013 Jan 22 -<br>2013 Jan 25
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
 |[https://github.com/thewtex thewtex], [https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/hinerm hinerm]
