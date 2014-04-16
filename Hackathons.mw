@@ -1,13 +1,64 @@
-The Fiji project has benefitted from many [https://en.wikipedia.org/wiki/Hackathon hackathons] over the years:
+ImageJ has benefitted from many [https://en.wikipedia.org/wiki/Hackathon hackathons] over the years:
 
-* 2010-03-heidelberg-fiji
-* 2011-02-madison-imagej2-fiji
-* 2011-12-dresden-fiji-imagej2
-* 2013-01-madison-itk-scifio
-* 2013-04-madison-tws
-* 2013-05-madison-imglib2
-* 2013-11-madison-knime-imagej2
-* 2014-03-konstanz-ops
-* 2014-10-madison-imglib2
+{| class="wikitable"
+!colspan="4" style="border-bottom: 1px solid gray"|ImageJ Hackathons
+|-
+|style="vertical-align: bottom;"|'''When'''
+|style="vertical-align: bottom;"|'''Where'''
+|style="vertical-align: bottom;"|'''Who'''
+|style="vertical-align: bottom;"|'''Topic'''
+|- valign="top"
+|2010 Mar 14 -<br>2010 Mar 27
+|[http://www.embl.de/ EMBL]<br>Heidelberg, Germany
+|Many
+|Fiji
+|- valign="top"
+|2011 Jan 27 -<br>2011 Feb 13
+|[http://discovery.wisc.edu/ WID]<br>Madison, WI, USA
+|Many
+|N-D viz
+|- valign="top"
+|2011 Dec 9 -<br>2011 Dec 19
+|[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
+|Many
+|Interoperability
+|- valign="top"
+|2013 Jan 22 -<br>2013 Jan 25
+|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/hinerm hinerm], [https://github.com/thewtex thewtex]
+|[https://github.com/scifio/scifio-imageio SCIFIO ImageIO plugin]
+|- valign="top"
+|2013 Apr 14 -<br>2013 Apr 18
+|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/iarganda iarganda]
+|[[Trainable Weka Segmentation]]
+|- valign="top"
+|2013 Apr 27 -<br>2013 May 3
+|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/tpietzsch tpietzsch]
+|ImgLib2
+|- valign="top"
+|2013 Nov 14 -<br>2013 Nov 27
+|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[https://github.com/dietzc dietzc], [https://github.com/dscho dscho], [https://github.com/ctrueden ctrueden]
+|[http://knime.org/ KNIME]+ImageJ
+|- valign="top"
+|2014 Mar 4-<br>2014 Mar 13
+|[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
+|[https://github.com/ctrueden ctrueden], [https://github.com/dietzc dietzc], [https://github.com/dscho dscho], [https://github.com/hornm hornm]
+|ImageJ OPS
+|- valign="top"
+|2014 Mar 11-<br>2014 Mar 13
+|[https://www.facebook.com/heimathafenWiesbaden Heimathafen]<br>Wiesbaden, Germany
+|[https://github.com/ctrueden ctrueden], [https://github.com/joshmoore joshmoore]
+|[https://github.com/imagej/imagej-omero ImageJ-OMERO]
+|- valign="top"
+|2014 Mar 20-<br>2014 Mar 21
+|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[https://github.com/ctrueden ctrueden], [https://github.com/jburel jburel], [https://github.com/pwalczysko pwalczysko]
+|[https://github.com/imagej/imagej-omero ImageJ-OMERO]
+|-
+|colspan="4" style="border-bottom: 1px solid gray"|
+|}
 
-{{#ev:youtube|ZDZvoJX3PDM|425|center|The "hackathon effect" in effect!}}
+{{#ev:youtube|ZDZvoJX3PDM|400|right|The "hackathon effect" in effect!}}
