@@ -1,12 +1,14 @@
 = What is a hackathon? =
 
-In the context of Fiji, a hackathon is a coding spree, or if you want, a one or two-week brainstorm session where scientists with programming skills sit together and work in a low-distraction, high-energy environment to advance the software side of their research. Typically, results get accomplished much faster (read: days instead of weeks or months) than without hackathons, because the setting is ideal to discuss advanced ideas with similar-thinking scientists and ideas can sprout much faster. Sometimes, results are achieved that would not have been possible without a hackathon at all.
+In the context of ImageJ, a [https://en.wikipedia.org/wiki/Hackathon hackathon] is a coding spree, or if you want, a one or two-week brainstorm session where scientists with programming skills sit together and work in a low-distraction, high-energy environment to advance the software side of their research. Typically, results get accomplished much faster (read: days instead of weeks or months) than without hackathons, because the setting is ideal to discuss advanced ideas with similar-thinking scientists and ideas can sprout much faster. Sometimes, results are achieved that would not have been possible without a hackathon at all.
+
+{{#ev:youtube|ZDZvoJX3PDM|400|right|The "hackathon effect" in effect!}}
 
 = Why? =
 
 First and foremost, hackathons are <u>fun</u>. The participants like what they are working on, and rarely have the same opportunities to talk to and inspire each other about their ongoing research.
 
-Also, hackathons are the perfect excuse to concentrate on a particular subject without distractions.
+Also, hackathons are the perfect excuse to concentrate on a particular subject without distractions. A ''lot'' gets done at a hackathon (see right!).
 
 = Origin of the term ''hackathon'' =
 
@@ -18,10 +20,83 @@ Ever since, OpenBSD held annual hackathons during which OpenBSD was improved in 
 
 In 2007, the first hackathon revolving around neuro-science was [http://www.hhmi.org/bulletin/nov2007/chronicle/hackathon.html taking place] at [http://www.hhmi.org/janelia/ Janelia Farm]. In a sense, it can be seen as the first Fiji hackathon, since Fiji was born in the wake of that hackathon, and probably would not have happened without it.
 
-Fiji hackathons were held
-* in 2008 in Dresden @MPI-CBG
-* in 2009 in Dresden @MPI-CBG (when the Fiji maintainer was employed there)
-* in 2009 in Zurich @INI
-* in 2010 in Heidelberg @EMBL
-* in 2011 in Madison @LOCI
-* in 2011 in Dresden @MPI-CBG
+= ImageJ hackathons =
+
+ImageJ has benefitted from many hackathons over the years:
+
+{| class="wikitable"
+!colspan="4" style="border-bottom: 1px solid gray"|ImageJ Hackathons
+|-
+|style="vertical-align: bottom;"|'''When'''
+|style="vertical-align: bottom;"|'''Where'''
+|style="vertical-align: bottom;"|'''Who'''
+|style="vertical-align: bottom;"|'''Topic'''
+
+|- valign="top"
+|2008
+|[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
+| -
+|Fiji
+|- valign="top"
+|2009
+|[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
+| -
+|Fiji
+|- valign="top"
+|2009
+|[https://www.ini.uzh.ch/ INI]<br>Zürich, Switzerland
+| -
+|Fiji
+|- valign="top"
+|2010 Mar 14 -<br>2010 Mar 27
+|[http://www.embl.de/ EMBL]<br>Heidelberg, Germany
+|Many!
+|Fiji
+|- valign="top"
+|2011 Jan 27 -<br>2011 Feb 13
+|[http://discovery.wisc.edu/ WID]<br>Madison, WI, USA
+|[http://developer.imagej.net/hackathons/2011-madison Many!]
+|Multidimensional visualization
+|- valign="top"
+|2011 Dec 9 -<br>2011 Dec 19
+|[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
+|[http://developer.imagej.net/hackathons/2011-dresden Many!]
+|Interoperability
+|- valign="top"
+|2013 Jan 22 -<br>2013 Jan 25
+|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/hinerm hinerm], [https://github.com/thewtex thewtex]
+|[https://github.com/scifio/scifio-imageio SCIFIO ImageIO plugin]
+|- valign="top"
+|2013 Apr 14 -<br>2013 Apr 18
+|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/iarganda iarganda]
+|[[Trainable Weka Segmentation]]
+|- valign="top"
+|2013 Apr 27 -<br>2013 May 3
+|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/tpietzsch tpietzsch]
+|ImgLib2
+|- valign="top"
+|2013 Nov 14 -<br>2013 Nov 27
+|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[https://github.com/dietzc dietzc], [https://github.com/dscho dscho], [https://github.com/ctrueden ctrueden]
+|[http://knime.org/ KNIME]+ImageJ
+|- valign="top"
+|2014 Mar 4 -<br>2014 Mar 13
+|[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
+|[https://github.com/ctrueden ctrueden], [https://github.com/dietzc dietzc], [https://github.com/dscho dscho], [https://github.com/hornm hornm]
+|ImageJ OPS
+|- valign="top"
+|2014 Mar 11 -<br>2014 Mar 13
+|[https://www.facebook.com/heimathafenWiesbaden Heimathafen]<br>Wiesbaden, Germany
+|[https://github.com/ctrueden ctrueden], [https://github.com/joshmoore joshmoore]
+|[https://github.com/imagej/imagej-omero ImageJ-OMERO]
+|- valign="top"
+|2014 Mar 20 -<br>2014 Mar 21
+|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[https://github.com/ctrueden ctrueden], [https://github.com/jburel jburel], [https://github.com/pwalczysko pwalczysko]
+|[https://github.com/imagej/imagej-omero ImageJ-OMERO]
+|-
+|colspan="4" style="border-bottom: 1px solid gray"|
+|}
