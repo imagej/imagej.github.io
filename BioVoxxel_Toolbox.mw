@@ -27,7 +27,7 @@ Example: If you want to extract/analyze only particles with a certain Feret's An
 
 How to: Key in minimal and maximal exclusion values connected with a hyphen. You can use integers as well as numbers containing decimal places. The option "Frame count correction" eliminates particles from 2 edges of choice to correct the count for edge touching particles.
 
-Shape descriptors which are not available under Analyze Particles IJ or Fiji so far are:
+Shape descriptors which are not available under "Analyze Particles..." in IJ or Fiji so far are:
 
 Extent = [net area of feature] / [bounding rectangle]
 
