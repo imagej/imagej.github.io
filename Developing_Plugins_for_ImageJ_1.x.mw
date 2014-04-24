@@ -10,7 +10,7 @@ If you are certain that you want to write a plugin in Java, keep on reading!
 
 == What are plugins (in terms of files)? ==
 
-* Plugins are the most convenient way to extend ImageJ/Fiji
+* Plugins are a dedicated mechanism for extending ImageJ/Fiji
 * A plugin consists of one or more Java classes living inside a ''.jar'' file in ''plugins/'' (exception: a single ''.class'' file)
 * All plugin ''.jar'' (or ''.class'') files must contain an underscore in their name
 * Plugins can use 3rd party libraries; in Fiji, store them in the ''jars/'' directory (in ImageJ you have to put them into the ''plugins/'' directory, and to avoid funny menu entries in the Plugins menu, you should rename them if their name contains an underscore)
