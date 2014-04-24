@@ -18,7 +18,7 @@ ImageJ's [[Script Editor]] supports the following languages:
 * [[Jython Scripting|Python (Jython)]]
 * [[JRuby Scripting|Ruby (JRuby)]]
 * [[Clojure Scripting|Lisp (Clojure)]]
-* [Beanshell Scripting|Beanshell]
+* [[Beanshell Scripting|Beanshell]]
 * [[Introduction into Macro Programming|ImageJ Macro]]
 
 = Using an interpreter =
