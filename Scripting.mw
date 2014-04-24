@@ -14,11 +14,11 @@ ImageJ allows you to write scripts in several different languages.
 ImageJ's [[Script Editor]] supports the following languages:
 
 * [[Introduction into Developing Plugins|Java]]
-* [[Javascript Scripting|Javascript]]
+* [[JavaScript Scripting|Javascript]]
 * [[Jython Scripting|Python (Jython)]]
 * [[JRuby Scripting|Ruby (JRuby)]]
 * [[Clojure Scripting|Lisp (Clojure)]]
-* [[Beanshell Scripting|Beanshell]]
+* [[BeanShell Scripting|Beanshell]]
 * [[Introduction into Macro Programming|ImageJ Macro]]
 
 = Using an interpreter =
