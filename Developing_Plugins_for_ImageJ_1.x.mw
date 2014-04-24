@@ -1,12 +1,12 @@
-= Plugins =
-
-== Plugin or script? ==
+= Plugin or script? =
 
 If you want to add a new feature to ImageJ, you can either [[Scripting Help|write a script or macro]], or do it as a plugin. Scripts and macros are often times easier to learn, and hence faster to develop. However, Java offers numerous advantages including better performance in many cases, as well as compile-time safety of the code.
 
 If you are not sure which to choose, take a look at the [[Scripting Help]] and try your hand at a script in a language that appeals to you. You can always convert it to a Java plugin later if the execution speed becomes an issue.
 
 If you are certain that you want to write a plugin in Java, keep on reading!
+
+= Plugins =
 
 == What are plugins (in terms of files)? ==
 
