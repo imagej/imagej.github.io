@@ -221,7 +221,7 @@ if (!gd.wasCanceled())
 
 ==In JRuby==
 
-For some tutorial material on using JRuby to script ImageJ, please see [[JRuby_Scripting]].
+For some tutorial material on using JRuby to script ImageJ, please see [[JRuby Scripting]].
 
 <source lang="ruby">
 include_class 'java.awt.Color'
