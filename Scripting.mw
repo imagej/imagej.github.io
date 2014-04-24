@@ -13,7 +13,7 @@ ImageJ allows you to write scripts in several different languages.
 
 ImageJ's [[Script Editor]] supports the following languages:
 
-* [http://docs.oracle.com/javase/tutorial/ Java]
+* [[Introduction into Developing Plugins|Java]]
 * [[Javascript Scripting|Javascript]]
 * [[Jython Scripting|Python (Jython)]]
 * [[JRuby Scripting|Ruby (JRuby)]]
