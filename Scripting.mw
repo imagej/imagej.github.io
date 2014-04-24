@@ -9,6 +9,18 @@ ImageJ allows you to write scripts in several different languages.
 * See [[Scripting comparisons]] for a side-by-side comparison of scripting languages.
 * See [[Category:Scripting]] for a list of all scripting-related pages on this wiki.
 
+= Supported languages =
+
+ImageJ's [[Script Editor]] supports the following languages:
+
+* [http://docs.oracle.com/javase/tutorial/ Java]
+* [[Javascript Scripting|Javascript]]
+* [[Jython Scripting|Python (Jython)]]
+* [[JRuby Scripting|Ruby (JRuby)]]
+* [[Clojure Scripting|Lisp (Clojure)]]
+* [http://www.beanshell.org/manual/quickstart.html#Java_Statements_and_Expressions Beanshell]
+* [[Introduction into Macro Programming|ImageJ Macro]]
+
 = Using an interpreter =
 
 All scripting languages use the same basic interpreter, with the following common features.
