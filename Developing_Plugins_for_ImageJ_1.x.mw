@@ -1,50 +1,12 @@
 = Plugins =
 
-== Spring cleaning ==
+== Plugin or script? ==
 
-Recently Johannes Schindelin wrote an email about Spring cleaning:
+If you want to add a new feature to ImageJ, you can either [[Scripting Help|write a script or macro]], or do it as a plugin. Scripts and macros are often times easier to learn, and hence faster to develop. However, Java offers numerous advantages including better performance in many cases, as well as compile-time safety of the code.
 
-Since the repository at https://github.com/fiji/fiji has grown to an unhealthy two hundred megabyte or so -- way too much to allow new contributors to clone and build and contribute -- it was time to split out all the individual projects we accumulated over the years. 
+If you are not sure which to choose, take a look at the [[Scripting Help]] and try your hand at a script in a language that appeals to you. You can always convert it to a Java plugin later if the execution speed becomes an issue.
 
-Now there are a hundred new repositories in https://github.com/fiji/, allowing for easy, independent development of the individual parts of which the base version of Fiji consists. 
-
-It is now really dirt-easy to follow http://try.github.io/ for about fifteen minutes and then dive right away into developing Fiji components. 
-
-The idea of splitting the repositories out was to make them projects in their own right, that do not require a full Fiji to work. Then we finally have consistent versions for both users *and* developers. 
-
-Each and every Fiji project has not only a GitHub repository, but also a Jenkins job. For example, bUnwarpJ lives in https://github.com/fiji/bUnwarpJ and is built by http://jenkins.imagej.net/view/Fiji/job/bUnwarpJ. 
-
-The purpose of the Jenkins job is not only to make sure that everything builds fine, but it also deploys the .jar file to http://maven.imagej.net/. 
-
-Once you are ready to upload a new version, just change the -SNAPSHOT version in the pom.xml to a non-SNAPSHOT version and push. Jenkins will then build and deploy it. If everything worked as expected, the pom.xml in fiji.git needs to be changed to reflect the new deployed version. 
-
-The long-term plan is to trigger that automatically, as well as an upload of the respective .jar file. 
-
-Remember, the deployed artifacts (i.e.  the .jar files "uploaded" to the Maven repository) can be used *very* easily with every major development environment such as Eclipse, Netbeans or IntelliJ. 
-
-The standardized Maven way -- while it did force a few changes onto the Fiji projects, especially in development style -- brings so many goodies with it, such as attached 
-Javadocs and sources. 
-
-Even better: those artifacts can be used as-are by KNIME and CellProfiler, and others! 
-
-After having Jenkins build and deploy a non-SNAPSHOT version, the version in the pom.xml should be bumped to the next SNAPSHOT version. 
-
-Curtis hinted at our very concrete plans to streamline that process by building better tools (in the "ImgLib split?" thread). This will help, for the benefit of making all of our projects much more accessible (and thereby reusable!) to other projects. 
-
-Time permitting, I will add a screencast that demonstrates how to contribute to an existing Fiji plugin using Eclipse which now is truly fun.  (Hope a Netbeans version is added also)
-
-You still can compile using the command line. If you want the .jar files to go into your fiji clone, just call 
-
-        mvn -Dimagej.app.directory=/path/to/fiji 
-
-(where /path/to/fiji is obviously to be replaced with the real path to 
-fiji/). 
-
-You can use the command-line above, or for even easier testing, fiji.Debug.run() of fiji-lib as described here: 
-http://fiji.sc/Debugging#Debugging_plugins_in_an_IDE_.28Netbeans.2C_IntelliJ.2C_Eclipse.2C_etc.29 
-
-Note that the fiji.Debug method gives you many advantages over all other 
-methods.
+If you are certain that you want to write a plugin in Java, keep on reading!
 
 == What are plugins (in terms of files)? ==
 
