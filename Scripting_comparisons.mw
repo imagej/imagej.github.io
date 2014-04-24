@@ -26,6 +26,8 @@ To remark here that [http://clojure.org Clojure] is '''not''' a scripting langua
 
 
 ==In Java==
+See also the [[Introduction into Developing Plugins]] documentation page.
+
 <source lang="java">
 import ij.IJ;
 import ij.plugin.PlugIn;
@@ -264,6 +266,8 @@ end
 </source>
 
 ==In BeanShell==
+
+See also the [[Beanshell Scripting]] documentation page.
 
 For some tutorial material on using BeanShell, see [http://www.beanshell.org/manual/quickstart.html#Java_Statements_and_Expressions BeanShell's Quickstart].
 
