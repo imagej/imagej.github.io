@@ -81,7 +81,8 @@ Note that you cannot use the [[Headless#Running_macros_in_headless_mode|--headle
 Here is an example macro created in such a fashion:
 
 <source lang="java">
-run("Bio-Formats", "open=/Users/jdoe/data.ome.tif autoscale color_mode=Default view=Hyperstack stack_order=XYCZT");
+run("Bio-Formats", "open=/Users/jdoe/data.ome.tif " +
+  "autoscale color_mode=Default view=Hyperstack stack_order=XYCZT");
 saveAs("Tiff", "/Users/jdoe/Desktop/result.tif");
 </source>
 
