@@ -64,6 +64,18 @@ The '''Bio-Formats Plugins Shortcut Window''' is a small window with a quick-lau
 
 The '''Update Bio-Formats Plugins''' command will check online for updates to the Bio-Formats Plugins. In the case of Fiji, we recommend that you do not use this method of update, but instead use the [[Update_Fiji|Fiji Updater]].
 
+== Calling Bio-Formats from the command line ==
+
+You can invoke Bio-Formats from the command line using the [[Launcher|ImageJ Launcher]]:
+
+# Use the [[Introduction_into_Macro_Programming#The_recorder|Macro Recorder]] to record the line of macro code that runs Bio-Formats that way you want.
+# Click "Create" to pop up the [[Script Editor]], edit as desired, then save the macro as a <code>.ijm</code> macro file.
+# Run the macro from the command line; e.g.:
+ ImageJ-win32.exe -macro myMacro.ijm -batch
+Leave off the <code>-batch</code> flag if you want Fiji to remain open afterward.
+
+Note that you cannot use the [[Headless#Running_macros_in_headless_mode|--headless option]] because Bio-Formats does not work in headless mode, even when running as a macro. (You will see <code>VerifyError</code> on the console if you try.)
+
 == Scripting ==
 
 Bio-Formats has a high-level scripting interface, accessible by Java and all scripting languages supported by Fiji (but not the ImageJ macro language). Java example:
