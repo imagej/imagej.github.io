@@ -71,7 +71,7 @@ You can invoke Bio-Formats from the command line using the [[Launcher|ImageJ Lau
 # Use the [[Introduction_into_Macro_Programming#The_recorder|Macro Recorder]] to record the line of macro code that runs Bio-Formats that way you want.
 # Click "Create" to pop up the [[Script Editor]], edit as desired, then save the macro as a <code>.ijm</code> macro file.
 # Run the macro from the command line; e.g.:
-<source>
+<source lang="plain">
 ImageJ-win32.exe -macro myMacro.ijm -batch
 </source>
 Leave off the <code>-batch</code> flag if you want Fiji to remain open afterward.
