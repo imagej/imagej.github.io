@@ -74,7 +74,7 @@ You can invoke Bio-Formats from the command line using the [[Launcher|ImageJ Lau
 <source lang="plain">
 ImageJ-win32.exe -macro myMacro.ijm -batch
 </source>
-Leave off the <code>-batch</code> flag if you want Fiji to remain open afterward.
+Leave off the <code>-batch</code> flag if you want ImageJ to remain open afterward.
 
 Note that you cannot use the [[Headless#Running_macros_in_headless_mode|--headless option]] because Bio-Formats does not work in headless mode, even when running as a macro. (You will see <code>VerifyError</code> on the console if you try.)
 
