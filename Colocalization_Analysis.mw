@@ -14,7 +14,7 @@ There are two colocalization coefficients to express the fraction of colocalizin
 
 These coefficients measure the significance of true colocalization. The significance test is derived to evaluate the probability that the measured value of r from the two colors is significantly greater than values of r that would be calculated if there was only random overlap. This test is performed by randomly scrambling the blocks of pixels (instead of individual pixels, because each pixel's intensity is correlated with its neighboring pixels) in one image, and then measuring the correlation of this image with the other (unscrambled) image. You can get more details in [[Media:Costes etalColoc.pdf|Costes et al.]]
 
-Other methods include ICCS (image cross correlation spectroscopy) and a derivative of that called PPI (protein proximity index. Maybe someone wants to add PPI to Coloc_2 plugin?
+Other methods include ICCS (image cross correlation spectroscopy) and a derivative of that called PPI (protein proximity index. Maybe someone wants to add PPI to Coloc_2 plugin?  [[Media:Wu2010-crosscorrelationPPI_Coloc.pdf|original article here]]
 
 ==== Object-based overlap analysis ====
 
