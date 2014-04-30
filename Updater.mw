@@ -96,6 +96,36 @@ If you configured upload sites, you can also use the command-line version of the
 ./fiji --update upload plugins/My_New_Cool_Plugin.jar
 </source>
 
+Full list of options available when running Fiji from command line looks like this:
+
+<source lang="bash">
+Commands:
+	diff [ --list-files | --javap | --class-file-diff | --hex-diff ] [<files>]
+	list [<files>]
+	list-uptodate [<files>]
+	list-not-uptodate [<files>]
+	list-updateable [<files>]
+	list-modified [<files>]
+	list-current [<files>]
+	list-local-only [<files>]
+	list-from-site <name>
+	show [<files>]
+	update [<files>]
+	update-force [<files>]
+	update-force-pristine [<files>]
+	upload [--simulate] [--[update-]site <name>] [--force-shadow] [--forget-missing-dependencies] [<files>]
+	upload-complete-site [--simulate] [--force] [--force-shadow] [--platforms <platform>[,<platform>...]] <name>
+	list-update-sites [<nick>...]
+	add-update-site <nick> <url> [<host> <upload-directory>]
+	edit-update-site <nick> <url> [<host> <upload-directory>]
+</source>
+
+In order to update from command line using  a specific update site (for example the BigDataViewer) use the following command:
+
+<source lang="bash">
+./fiji-linux64 --update add-update-site BigDataViewer http://sites.imagej.net/Pietzsch/
+</source>
+
 == Bootstrapping the updater ==
 
 If you do not have Fiji yet, you can download [http://update.imagej.net/bootstrap.js bootstrap.js] and run it like this:
