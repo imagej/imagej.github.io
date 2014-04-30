@@ -26,7 +26,7 @@ If there were updates since the Updater was run the last time, Fiji will ask whe
 
 [[Image:Up-to-date-check.png]]
 
-In case you do not want to run the Updater upon startup, you can choose ''Never''; this setting can be adjusted in [[#Configure the Updater|''Edit>Options>Configure Fiji Updater'']], too.
+In case you do not want to run the Updater upon startup, you can choose ''Never''.
 
 == Starting the Updater explicitly ==
 
