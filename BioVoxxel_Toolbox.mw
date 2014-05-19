@@ -4,7 +4,7 @@
 | author                 = Jan Brocher
 | website                = [http://www.biovoxxel.de/index.html www.biovoxxel.de]
 | maintainer             = Jan Brocher
-| latest version         = 04. April 2014
+| latest version         = 19. May 2014
 | source                 =[http://www.biovoxxel.de/BioVoxxel%20Macro%20Toolset/BioVoxxel_Toolbox.ijm BioVoxxel_Toolbox.ijm]
 | category               = [[:Category:Particle analysis|Particle analysis]], [[:Category:Binary|Binary]], [[:Category:Filtering|Filtering]]
 }}
@@ -201,7 +201,14 @@ Purpose: The macro enables to "subtract" background due to inequal lighting from
 
 How to: You need either choose the two images in the "Flat-field" version or specify a gaussian blurring radius for the "Pseudo flat-field correction" in a way to eliminate specific feature appearance but to keep the difference in shading/lighting. Therefore, rather big radii (sigma) are needed (potentially between 40-150, but this depends on image and feature size).
 
-Version: v0.2 (14-02-2014)
+Remark: The pseudo flat field correction menu command links to the plugin with the same name under >Plugins >Filters (necessary to additionally download from the BioVoxxel update site together with the Toolbox). 
+
+Advantage of the Pseudo flat field correction: This is now recordable and works with stacks. Thus, time-lapse movies e.g. from a brightfield microscope can be completely corrected for unequal lighting according to the individual differences in each frame. The blurring is visualized on the currently active frame to be able to sufficiently eliminate structural information.
+
+
+Version: Flat-field correction v0.2 (14-02-2014)
+
+Version: Pseudo Flat-field correction v0.1 (19-05-2014) as plugin.
 
 Status: maintenance active
 
@@ -434,6 +441,20 @@ Version: first release (0.1)
 Status: maintenance active
 
 Future: Will be adjusted für 32-bit float-type images as well as RGB images and stacks. Suggestions are welcome!
+
+----
+=Enhance True Color Contrast= 
+(separate plugin under >Plugins >Filters)
+
+Purpose: This image filter enhances the contrast of true color images similar to the method Enhance Contrast in Fiji. If the latter would be applied to true color images this leads to a change in color values and saturation. This unwanted effects are eliminated by the recordable "Enhance True Color Contrast" plugin. It preserves color tone and saturation while enhancing the contrast in the brightness channel of the HSB color space. This is done using high precision float value calculation and not by a simple conversion o fthe image to HSB color space as available in ImageJ/Fiji. The latter would lead to a loss in quality since due to conversion and back-conversion to RGB.
+
+How to: The user can key in a percentage of saturated pixels as in the "Enhance Contrast" function and has a preview option.
+
+Remarks: is recordable and works with stacks
+
+Version: first release (0.1)
+
+Status: maintenance active
 
 ----
 
