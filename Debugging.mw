@@ -90,7 +90,7 @@ Often, dynamic library issues are connected to a dependent .dll file missing. Do
 
 = Debugging JVM hangs =
 
-When the Java VM hangs, the reason might be a dead-lock. You can often find out what is happening by reading the thread dump which you can get via ''Ctrl+\'' in the console where you started Fiji. On Linux and MacOSX, you can also send the signal ''3'' via the ''kill'' command. On Windows, you may need to press Ctrl+Pause (i.e., "Break") instead of "Ctrl+\".
+When the Java VM hangs, the reason might be a dead-lock. You can often find out what is happening by reading the thread dump which you can get via ''Ctrl+\'' in the console where you started Fiji. On Linux and MacOSX, you can also send the signal ''3'' via the ''kill'' command. On Windows, you may need to press ''Ctrl+Pause'' (i.e., "Break") instead of ''Ctrl+\''.
 
 You can also attach to the JVM using the ''jvisualvm'' program that you can find in ''java/<platform>/<jdk>/bin/''.
 
