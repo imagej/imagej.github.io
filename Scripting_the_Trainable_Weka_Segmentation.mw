@@ -199,8 +199,11 @@ for (var slice = 1; slice <= image.getStackSize(); slice++) {
         // add new feature here (2/2) and do not forget to add it with a
         // unique slice label!
 
-        var featuresImage = new ImagePlus("slice " + slice, stack);
-        var features = new FeatureStack(featuresImage);
+        // create empty feature stack
+        var features = new FeatureStack( stack.getWidth(), stack.getHeight(), false );
+        // set my features to the feature stack
+        features.setStack( stack );
+        // put my feature stack into the array
         featuresArray.set(features, slice - 1);
         featuresArray.setEnabledFeatures(features.getEnabledFeatures());
 }
