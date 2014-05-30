@@ -1,4 +1,4 @@
-[[ImageJ2]] uses [SCIFIO](http://scif.io/) (SCientific Image Format Input and Output) by default for most image input tasks. You can change this behavior at any time by running ''Edit > Options > ImageJ2'' and modifying the ''Use SCIFIO for File > Open'' option.
+[[ImageJ2]] uses [http://scif.io/ SCIFIO] (SCientific Image Format Input and Output) by default for most image input tasks. You can change this behavior at any time by running ''Edit > Options > ImageJ2'' and modifying the ''Use SCIFIO for File > Open'' option.
 
 == Benefits of using SCIFIO ==
 
