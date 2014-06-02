@@ -1,11 +1,9 @@
 ImageJ2 is a new version of [http://imagej.net/ ImageJ] for the next generation 
-of multidimensional image data. It is focused on scientific imaging. For further details, see the [http://developer.imagej.net/ ImageJ2 web site].
+of multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
 
-[http://developer.imagej.net/about ImageJ2] is an effort to broaden the functionality of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
+To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
 
-To ensure backwards compatibility, we designed ImageJ2 to fully integrate into the existing ImageJ user interface. This allows you to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
-
-The [[Fiji]] distribution of ImageJ has shipped with beta versions of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features -- some of which, such as the [[Updater]] and
+The [[Fiji]] distribution of ImageJ has shipped with beta versions of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [[Updater]] and
 [[Launcher]], were originally developed as part of Fiji.
 
 == Features of ImageJ2 ==
