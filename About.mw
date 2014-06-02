@@ -38,43 +38,4 @@ The following software component libraries form the core of ImageJ2:
 
 ImageJ2 uses the [[SCIFIO]] library (SCientific Image Format Input and Output)  by default for most image input tasks. You can change this behavior at any time by running ''Edit > Options > ImageJ2'' and modifying the ''Use SCIFIO when opening files'' option.
 
-=== Benefits of using SCIFIO ===
-
-SCIFIO is focused on robust and extensible support for reading and writing image file formats. Using it with ImageJ provides many advantages:
-
-* There is no need to call a special SCIFIO plugin; it works with commands like ''File > Open'' automatically.
-* There are additional import options available via the ''File > Import > Image... '' command.
-* There is a [[Bio-Formats]] plugin for SCIFIO, included with the [[Fiji]] distribution of ImageJ, that adds automatic support for over a hundred life sciences file formats.
-* Additional SCIFIO file format plugins can be dropped into ImageJ and will also work automatically.
-* Unlike the ImageJ 1.x TIFF implementation, SCIFIO's support for TIFF adheres to the specification, allowing to successfully read many more sorts of TIFFs.
-* Similarly, SCIFIO supports more sorts of JPEG files since it uses its own JPEG decoder.
-* SCIFIO also ships with support for several QuickTime codecs, allowing ImageJ to read QuickTime MOV files even in 64-bit mode without QuickTime for Java.
-* SCIFIO supports many additional open file formats out of the box:
-** animated GIF
-** animated PNG
-** encapsulated postscript (EPS)
-** JPEG-2000
-** Micro-Manager datasets
-** Multi-image Network Graphics (MNG)
-** Nearly Raw Raster Data (NRRD)
-** Imspector OBF
-** OME-TIFF (multidimensional rich metadata TIFF)
-** OME-XML
-** PCX
-** PICT (even in 64-bit mode and/or without QuickTime for Java installed)
-* If SCIFIO cannot handle the image file, it falls back to ImageJ 1.x.
-* You can save to SCIFIO-supported file formats using the ''File > Export > Image...  '' command. Supported formats for export include:
-** APNG
-** AVI
-** EPS
-** ICS
-** JPEG
-** JPEG2000
-** QuickTime
-** TIFF
-
-=== Current limitations of SCIFIO ===
-
-* SCIFIO is still in beta, so there is likely to be a higher incidence of bugs. Issues can be reported on the [https://github.com/scifio/scifio/issues SCIFIO issue tracker].
-* Although we strive for full backwards compatibility, some files may appear slightly different when opened.
-* Opening files with SCIFIO is not fully macro recordable yet.
+For further details, see the [[SCIFIO]] page.
