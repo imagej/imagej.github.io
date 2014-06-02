@@ -26,6 +26,7 @@ We would like to express our thanks to [http://icy.bioimageanalysis.org/about Fa
 
 * The color scale used to display colored tracks, links and spots can now be manually adjusted. In the display panel of the GUI, double click on the label "color by" and a settings window will open allowing the user to select between manual or automatic scaling. This is great to generate views that are comparable between datasets. This feature is commissioned and offered by Fumio Hayashi, Kobe University.
 
+[[File:TrackMate ManualColorScale.png]]
 
 == Minor improvements ==
 
