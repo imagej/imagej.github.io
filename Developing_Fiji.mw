@@ -125,7 +125,7 @@ This script will open the appropriate link with xdg-open.  It can deal with file
 
 == Contributing ==
 
-Please make sure that you are a little familiar with [[Git mini howto|Git]].  Once you are, you can easily make a local ''contrib'' branch and [[Git mini howto#Contributing|push it]].
+Please make sure that you are a little familiar with [[Git mini howto|Git]], or you can learn basic git knowledge interactively with [http://try.github.io/ GitHub]. Once you are, you can easily make a local ''contrib'' branch and [[Git mini howto#Contributing|push it]].
 
 === Forking on GitHub ===
 Alternatively, you can make an account for yourself on GitHub and fork fiji.git:
@@ -141,6 +141,29 @@ If you already worked in an existing checkout of ''fiji.git'', no problem, you c
 # '''git config branch.<branch>.remote github''' (where "<branch>" is the branch you want to connect to GitHub, typically ''master'')
 # '''git config branch.<branch>.merge refs/heads/<branch>'''
 # '''git push github <branch>''' to push the current state
+
+=== Contributing to Fiji's existing plugins ===
+
+Sometime you want to contributing to Fiji's existing plugins, for example, you find a bug in one plugin and you want to fix it, or you want to improve one plugin by adding more functions.
+
+Every plugin has its own repository in [https://github.com/fiji/ Fiji], for example, the GraphCut plugin's repository is [https://github.com/fiji/Graph_Cut GraphCut]. This structure allows for easy, independent development of 
+the individual parts of which the base version of Fiji consists.
+
+Suppose that you want to contribute to Fiji's GraphCut plugin:
+# ''' Fork that repository by clicking the "Fork" button'''
+# ''' Clone it - git clone https://github.com/username/Graph_Cut.git'''
+# ''' Configure remotes'''
+## '''cd Graph_Cut'''
+## '''git remote add upstream https://github.com/fiji/Graph_Cut.git'''
+## '''git fetch upstream'''
+# '''Create a topic branch'''
+## '''git branch mybranch'''
+## '''git checkout mybranch'''
+# '''Make changes and commit them to your topic branch'''
+# '''Push the commits to your github repository'''
+# '''Send the pull request'''
+
+You can learn more about Git fork and branch model from [https://help.github.com/articles/fork-a-repo Fork A Repo], and learn how to send a pull request from [https://help.github.com/articles/using-pull-requests Pull Request]
 
 === Letting us know ===
 
