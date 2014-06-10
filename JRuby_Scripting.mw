@@ -232,7 +232,12 @@ There is a library called [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f
 
 == What next? ==
 
-[You may want to first have a quick look at the [[Scripting Help]] page for generic instructions in using the interpreter and script interfaces, and the [[Scripting comparisons]] page for an example written in several of the different scripting languages available.  The JRuby example shows how to implement a Java interface in JRuby.]
+You may want to first have a quick look at the [[Scripting Help]] page for generic instructions in using the interpreter and script interfaces, and the [[Scripting comparisons]] page for an example written in several of the different scripting languages available.  The JRuby example shows how to implement a Java interface in JRuby.
+
+JRuby offers some more nice features, have a look at them in the JRuby documentation: https://github.com/jruby/jruby/wiki/CallingJavaFromJRuby
+
+And of course, if you want to know how to use fiji's classes, visit:  http://fiji.sc/javadoc/
+
 
 
 [[Category:Scripting]]
