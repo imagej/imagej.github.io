@@ -84,7 +84,7 @@ Input values take into account the scale information of the image that can be se
 :Visually, this option can be imagined as the "thickness" of the sampling circumference: e.g., for a radius of 100 pixels and a value of 3 ''Samples per radius'', the final number of intersections would integrate the measurements sampled at distances 99, 100 and 101.
 :Note that it would not make sense to increase the number of samples beyond the length (in pixels) of ''Radius step size''. For this reason, this option is limited to a draconian (and arbitrary) maximum of 10 samples.
 
-* <span id="SamplesIntegration"></span>'''Samples integration ''(2D images only)''''' <sup>&nbsp;</sup>The statistical function used to combine intersection counts when multiple ''Samples per radius'' are used. Options are mean or median.
+* <span id="SamplesIntegration"></span>'''Samples integration ''(2D images only)''''' <sup>&nbsp;</sup>The measure of central tendency used to combine intersection counts when multiple ''Samples per radius'' are used. Options are ''Mean'' (the default), ''Median'' or ''Mode''.
 
 * '''Ignore isolated (6-connected) voxels ''(3D images only)''''' <sup>&nbsp;</sup>If checked, single isolated voxels intersecting the surface of sampling spheres are not taken into account, which may allow for smoother profiles on noisy image stacks. However, it should be noted that connectivity in the stack volume may not reflect connectivity on the surface of a digitized sphere. Indeed, in certain contexts, it is possible (though unlikely) to obtain higher intersection counts when this filtering option is active.
 :Please keep in mind that this is just a refinement feature, and you should not expect it to mitigate the effects derived from poorly-segmented arbors.
