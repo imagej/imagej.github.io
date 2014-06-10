@@ -14,7 +14,7 @@
 }}
 
 <!-- Create a short TOC next to main Contents -->
-&nbsp;<br /> <br /> <br /> <br /> <br /> <br />
+<div style="padding-top:20em;padding-left:1.5em;">
 <div style="font-size:175%;border-bottom:1px dotted #ccc;margin-bottom:0.55em;">Quick links</div>
 
 '''Analysis of traced arbors?'''
@@ -24,7 +24,7 @@
 '''Non-Fiji User?'''
 :Jump to [[#Non-Fiji_users|Installation notes]]
 </div>
-
+</div>
 Automated bitmap Sholl for direct analysis of fluorescent images of neuronal arbors, featuring powerful quantifications  based on curve fitting. Analysis of previously traced arbors is also possible.
 
 == Introduction ==
