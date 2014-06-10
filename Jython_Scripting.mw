@@ -1473,6 +1473,8 @@ The weaver removes all the pain. Here is an example, where the <i>float[]</i> pi
 
 <source lang="python">
 from fiji.scripting import Weaver
+from ij import IJ
+from java.lang import Double
 
 # The currently open image
 imp = IJ.getImage()
@@ -1539,7 +1541,6 @@ ImagePlus("XORed stack", stackXOR).show()
 Of course the Weaver is a java library, and may be used from any scripting language such as [[Javascript Scripting|Javascript]], [[JRuby Scripting|JRuby]], and [[:Category:Scripting|others]].
 
 All the above is inspired by the [http://www.scipy.org/Cookbook/Weave Scientific Python Weaver, or scipy Weaver], which inlines C code inside a python file.
-
 
 === Reading command line arguments given to a script ===
 
