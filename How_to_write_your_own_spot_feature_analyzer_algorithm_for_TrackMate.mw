@@ -1,6 +1,6 @@
 == Introduction == 
 
-This third article in the series dedicated to extending TrackMate deals with spot feature analyzer. This is the last of the three kind of feature analyzers you can create, and it focuses on spots, or detections. 
+This third article in the series dedicated to extending [[TrackMate]] deals with spot feature analyzer. This is the last of the three kind of feature analyzers you can create, and it focuses on spots, or detections. 
 
 Spot features are typically calculated from the spot location and the image data. For instance, there is a spot feature that reports the mean intensity within the spot radius. You need to have the spot location, its radius and the image data to compute it.
 
