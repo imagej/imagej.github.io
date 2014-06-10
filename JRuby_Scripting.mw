@@ -122,7 +122,13 @@ imp[Plasma Cloud 800x600x1]
 >>> i.updateAndDraw
 </source>
 
-Hopefully that worked OK.  The color value specified there is in ARGB format.  You may have noticed that this step was rather slow - there is quite a bit of magic involved in JRuby's transparent access between Ruby and Java, which has an inevitable performance cost.  But if your goal is not so much the speed with which the script is executed, but to get a working script as fast as possible, JRuby scripting may well be your optimal tool.
+Hopefully that worked OK.  The color value specified there is in ARGB format.  You may have noticed that this step was rather slow - there is quite a bit of magic involved in JRuby's transparent access between Ruby and Java, which has an inevitable performance cost.  But if your goal is not so much the speed with which the script is executed, but to get a working script as fast as possible, JRuby scripting may well be your optimal tool. 
+
+(By the way, sometimes it's even possible to use java's optimizations in ruby. Replace the <source lang="ruby">0.upto( w * (h / 2) - 1) { |j| pixels[j] = 0x0000FF00 }</source>
+with
+<source lang="ruby"> java.util.Arrays.fill(pixels, 0, w*h/2 - 1, 0x0000FF00)</source>
+and get a free 240 times speedup.)
+
 
 You would probably proceed at this stage by switching to a text editor and creating a script with the extension ".rb" and underscores in the name in the Fiji plugins directory.  You should find an example "Plasma_Cloud.rb" script in plugins/Examples which is based on the basics we worked out above.  The output of this script looks like this:
 
