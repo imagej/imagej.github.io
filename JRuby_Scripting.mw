@@ -74,7 +74,7 @@ Note that this is an example of creating an object in JRuby; you use the usual S
 
 If you need to use classes that aren't in the java.* or ij.* hierarchy, you will have to include them explicitly.  For example, in the classpath of Fiji there is a useful class called util.BatchOpener, that has static methods for opening files as arrays of ImagePlus objects (one per channel) without showing them.  To use these methods, you would have to do:
 
-  >>> include_class 'util.BatchOpener'
+  >>> java_import 'util.BatchOpener'
   util.BatchOpener
 
 Then you can, for example, do the following:
