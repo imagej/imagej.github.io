@@ -11,11 +11,19 @@ The [[Fiji Launcher]] is now called ''ImageJ launcher'' and lives [https://githu
 
 == The plugins ==
 
-We try to [[Why Closed-Source Is Wrong|avoid]] plugins without sources, but even those are not tracked in <Fiji-root>/plugins/, but rather in [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=staged-plugins;hb=HEAD <Fiji-root>/staged-plugins].  The reason is that we would want to provide our very own ''plugins.config'' files with them, i.e. we want to have custom locations/names of the plugins contained in the ''.jar'' file.
+The plugins served from Fiji's update site are all [[Why Closed-Source Is Wrong|Open Source]]. The source code lives [https://github.com/fiji/ on GitHub], in repositories reflecting the name of the ''.jar'' file generated from the source code. Example: the source code for ''Fiji_Plugins.jar'' lives in https://github.com/fiji/Fiji_Plugins.
 
-Such ''plugins.config'' files that are to be inserted in certain ''.jar'' also live in ''staged-plugins'', as ''<basename-of-jar>.config''.  Example: the plugins.config for ''loci_tools.jar'' is stored in [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=staged-plugins/loci_tools.config;hb=HEAD <Fiji-root>/staged-plugins/loci_tools.config].
+The only special rule applies for plugins whose file names end in an underscore: that underscore will be stripped. Example: the sources of ''Arrow_.jar'' are stored in https://github.com/fiji/Arrow.
 
-The sources for many plugins shipped with (and maintained in) Fiji live in [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins;hb=HEAD <Fiji-root>/src-plugins].  The subdirectories in ''src-plugins'' mostly correspond to the basename of the .jar file generated from it.  Example: the sources of ''plugins/Fiji_Updater.jar'' are stored in [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Fiji_Updater;hb=HEAD <Fiji-root>/src-plugins/Fiji_Updater/].
+All of our plugins are maintained as [[Maven]] projects; this allows developers to build the code with their integrated development environment of choice.
+
+Plugins maintained in Maven projects consist of
+
+# a pom.xml file in the top-level directory
+# the Java sources in the ''src/main/java/'' directory, and
+# the ''plugins.config'' file in ''src/main/resources/''
+
+If the plugin sources contain unit tests, their sources are in ''src/test/java/'' so that the generated test classes will not be included in the final ''.jar'' file.
 
 == Libraries ==
 
