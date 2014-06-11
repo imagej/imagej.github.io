@@ -31,15 +31,9 @@ Most libraries are available as regular [[Maven]] dependencies (you can [http://
 
 == Submodules ==
 
-Some components of Fiji are stored in ''submodules'', i.e. in [[Git]] repositories of their own right.  This is the case for [[ImageJA]], many third-party libraries, and some plugins collections that existed before Fiji, such as [[TrakEM2]] or [[Bio-Formats]].
+Fiji used to maintain relationships with projects developed outside the ''fiji.git'' repository via Git submodules. This proved too cumbersome and too unintuitive for the affected parties.
 
-These submodules are subdirectories in [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=modules;hb=HEAD <Fiji-root>/modules/], and they may, or may not, be checked out.
-
-Every submodule is "committed" at a certain revision, i.e. Git not only records where, say, ImageJA is to be cloned from, but also what revision is current for any given commit in ''fiji.git''.
-
-If submodules are checked out, you can cd into the respective directories and work with them as with other Git repositories.
-
-Our policy, however, is that you do not need to check out the submodules if you do not want to work <u>on</u> them: the result of the most recently committed revision needs to be committed as binary in [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=precompiled;hb=HEAD <Fiji-root>/precompiled/].  For example, the ''.jar'' file generated from the ''bio-formats'' submodule is committed as ''precompiled/loci_tools.jar''.
+All submodule couplings are now replaced by proper [[Maven]] dependency management.
 
 == The Fiji Build system ==
 
