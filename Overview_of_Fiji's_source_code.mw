@@ -37,9 +37,11 @@ All submodule couplings are now replaced by proper [[Maven]] dependency manageme
 
 == The Fiji Build system ==
 
-For historical reasons, the Fiji Build system's source code lives in ''<Fiji-root>/fake/Fake.java''.  It will be compiled into ''<Fiji-root>/fake.jar''.
+Fiji used to have its home-brewn build system. We switched to using [[Maven]] in 2012, though.
 
-To avoid a chicken-and-egg problem, a ''fake.jar'' that can compile the current Fiji Build system is committed to ''precompiled/'' (and for the same reason, precompiled versions of the Fiji launchers for all supported platforms live there, too).
+For convenience, there is a [https://github.com/scijava/minimaven ''Mini Maven''] project that allows building Fiji without a full-blown Maven; however, for serious development, real Maven, or even better, Eclipse or Netbeans is recommended.
+
+For backwards-compatibility, ''Mini Maven'' can be called via '''./Build.sh''' in the top-level directory of a ''fiji.git'' checkout. Despite the name, it does not really build anything, but only draws in all Fiji components as [[Maven]] dependencies.
 
 == The ''precompiled/'' directory ==
 
