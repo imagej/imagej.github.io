@@ -27,9 +27,7 @@ If the plugin sources contain unit tests, their sources are in ''src/test/java/'
 
 == Libraries ==
 
-Some plugins require third-party libraries such as ''Jama''.  Such libraries are not stored in ''plugins/'' (lest an underscore in their filenames would make ImageJ mistake them for plugins), but in ''jars/'' instead.
-
-Some of the libraries' sources are stored in ''src-plugins/'' (in subdirectories corresponding to the basename of the respective ''.jar'' file).
+Most libraries are available as regular [[Maven]] dependencies (you can [http://search.maven.org/ search for them on Maven Central].
 
 == Submodules ==
 
