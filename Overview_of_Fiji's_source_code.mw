@@ -43,10 +43,6 @@ For convenience, there is a [https://github.com/scijava/minimaven ''Mini Maven''
 
 For backwards-compatibility, ''Mini Maven'' can be called via '''./Build.sh''' in the top-level directory of a ''fiji.git'' checkout. Despite the name, it does not really build anything, but only draws in all Fiji components as [[Maven]] dependencies.
 
-== The ''precompiled/'' directory ==
-
-Precompiled versions of all ''.jar'' files generated from submodules, of ''fake.jar'' and of the Fiji launchers live in ''precompiled/''.
-
 == The ''bin/'' directory ==
 
 Quite a few tasks -- such as committing a new submodule or sources for a plugin, or releasing a new version of Fiji -- are performed by scripts.  These scripts live in the ''<Fiji-root>/bin/'' subdirectory.
