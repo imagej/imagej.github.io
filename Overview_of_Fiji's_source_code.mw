@@ -1,8 +1,3 @@
-<div style="background:#ffd; padding: 10px 10px 0 10px; border: 1px solid black;">
-<b>Please note!</b> This page is rather outdated now, and in need of update.
-</div>
-
-
 This page will give you an idea how Fiji's source code is organized.  Every directory referred to is relative to the Fiji root, i.e. the directory into which you [[Git mini howto#Cloning|cloned fiji.git]].
 
 == The Fiji launcher ==
