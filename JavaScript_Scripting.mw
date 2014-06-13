@@ -1,3 +1,13 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = JavaScript Scripting
+| author                 = Johannes Schindelin
+| maintainer             = Curtis Rueden<br/>Johannes Schindelin
+| filename               = scripting-javascript.jar
+| source                 = [https://github.com/scijava/scripting-javascript Git]
+| status                 = stable
+}}
+
 = Javascript tutorial for ImageJ =
 
 == Language basics ==
