@@ -1,3 +1,13 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = Clojure Scripting
+| author                 = Albert Cardona
+| maintainer             = Curtis Rueden<br/>Johannes Schindelin
+| filename               = scripting-clojure.jar
+| source                 = [https://github.com/scijava/scripting-clojure Git]
+| status                 = stable
+}}
+
 <h1>Clojure tutorial for ImageJ</h1>
 
 <p>Check out [http://clojure.org clojure web site] and particularly the chapter on [http://clojure.org/java_interop Java interoperability].</p>
