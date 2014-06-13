@@ -1,6 +1,6 @@
 {{Infobox Plugin
 | software               = ImageJ
-| name                   = JRuby Interpreter
+| name                   = JRuby Scripting
 | author                 = Mark Longair
 | maintainer             = Curtis Rueden<br/>Johannes Schindelin
 | filename               = scripting-jruby.jar
