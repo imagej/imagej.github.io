@@ -1,3 +1,5 @@
+__FORCETOC__ {{Scripting}}
+
 = Plugin, script or macro? =
 
 If you want to add a new feature to ImageJ, you can either [[Scripting Help|write a script or macro]], or do it as a plugin. Scripts and macros are easier to learn, and hence often faster to develop. However, Java offers numerous advantages including better performance in many cases, as well as compile-time safety of the code.
