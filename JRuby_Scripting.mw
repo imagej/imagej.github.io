@@ -2,9 +2,9 @@
 | software               = ImageJ
 | name                   = JRuby Interpreter
 | author                 = Mark Longair
-| maintainer             = Mark Longair
-| filename               = JRuby_Interpreter.jar
-| source                 = {{GitLink|jar=JRuby_Interpreter|path=JRuby/JRuby_Interpreter.java}}
+| maintainer             = Curtis Rueden<br/>Johannes Schindelin
+| filename               = scripting-jruby.jar
+| source                 = [https://github.com/scijava/scripting-jruby Git]
 | status                 = stable
 }}
 
