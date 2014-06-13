@@ -3,10 +3,11 @@
 | name                   = BeanShell Interpreter
 | author                 = Johannes Schindelin
 | maintainer             = Johannes Schindelin
-| filename               = BSH_Interpreter.jar
-| source                 = {{GitLink|jar=BeanShell_Interpreter|path=BSH/BSH_Interpreter.java}}
+| filename               = scripting-beanshell.jar
+| source                 = [https://github.com/scijava/scripting-beanshell Git]
 | status                 = stable
 }}
+{{Scripting}}
 
 [http://www.beanshell.org/ BeanShell] is the scripting language in Fiji which is similar both to the [[Introduction_into_Macro_Programming|ImageJ macro language]] and to Java. In fact, you can even execute almost verbatim Java code, but the common case is to write ''scripts'', i.e. leave out all the syntactic sugar to make your code part of a class.
 
