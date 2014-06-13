@@ -7,6 +7,7 @@
 | source                 = [https://github.com/scijava/scripting-jython Git]
 | status                 = stable
 }}
+{{Scripting}}
 
 == The Jython interpreter plugin ==
 
