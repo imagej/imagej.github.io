@@ -1,13 +1,12 @@
-{{Infobox Plugin
+[http://www.example.com link title]{{Infobox Plugin
 | name                   = Script Editor
 | software               = Fiji
 | author                 = Johannes Schindelin, Sumit Dubey (Google Summer of Code 2009)
 | maintainer             = Johannes Schindelin
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Script_Editor;hb=HEAD gitweb]
+| source                 = [https://github.com/imagej/imagej-ui-swing Git]
 | released               = 11 Sep 2008
-| latest version         = 14 Oct 2009
-| status                 = beta
-}}
+| status                 = active
+}}{{Scripting}}
 
 The script editor is an invaluable help when writing scripts in any of Fiji's supported [[Scripting comparisons|languages]].
 
