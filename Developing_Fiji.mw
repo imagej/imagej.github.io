@@ -113,11 +113,11 @@ At some point, you might want to debug whatever you wrote.  There's a small [[De
 
 == Discussing code ==
 
-When you want to discuss your changes to some Fiji component, the preferred way is to inline a patch and sending it to the [mailto:fiji@fiji.sc fiji-devel mailing list]. You can also send a link to your repository, e.g. a fork of [http://github.com/fiji/fiji the Fiji repository on github.com], but then commenting is not as easy (and the discussion will involve fewer developers).
+When you want to discuss your changes to some Fiji component, the preferred way is to inline a patch and send it to the [mailto:fiji@fiji.sc fiji-devel mailing list]. You can also send a link to your repository, e.g. a fork of [http://github.com/fiji/fiji the Fiji repository on github.com], but then commenting is not as easy (and the discussion will involve fewer developers).
 
-When discussing larger chunks of code (or a patch) on [irc://irc.freenode.net/fiji-devel IRC], you should not paste them directly, but you should use a [http://gist.github.com pastebin] instead.
+When discussing larger chunks of code (or a patch) on [irc://irc.freenode.net/fiji-devel IRC], please do not paste them directly, but use a [http://gist.github.com pastebin] instead.
 
-When you want to point at specific code on IRC or via mail, you can also do so by posting links to our [[Git|Gitweb]].  There is even a little shell script in fiji.git that helps you finding the link:
+To point at specific code on IRC or via mail, you can also do so by posting links to our [[Git|Gitweb]].  There is even a little shell script in fiji.git that helps you finding the link:
 <source lang="bash">
 bin/open-in-gitweb.sh fiji.cxx
 </source>
