@@ -144,12 +144,12 @@ If you already worked in an existing checkout of ''fiji.git'', no problem, you c
 
 === Contributing to Fiji's existing plugins ===
 
-Sometimes you want to contributing to Fiji's existing plugins, for example, you find a bug in one plugin and you want to fix it, or you want to improve one plugin by adding more functions.
+Sometimes you may want to contribute to Fiji's existing plugins, for example, a bug  is found in one plugin and you want to fix it, or you would like to improve one plugin by adding more functions.
 
 '''Every plugin has its own git repository in [https://github.com/fiji/ Fiji]'''. For example, the GraphCut plugin's repository is [https://github.com/fiji/Graph_Cut GraphCut]. This structure allows for easy, independent development of 
 the individual parts of which the base version of Fiji consists.
 
-Suppose that you want to contribute to Fiji's GraphCut plugin:
+To contribute to Fiji's GraphCut plugin:
 # ''' Fork that repository by clicking the "Fork" button'''
 # ''' Clone it - git clone https://github.com/username/Graph_Cut.git'''
 # ''' Configure remotes'''
@@ -163,7 +163,7 @@ Suppose that you want to contribute to Fiji's GraphCut plugin:
 # '''Push the commits to your github repository'''
 # '''Send the pull request'''
 
-You can learn more about Git fork and branch model from [https://help.github.com/articles/fork-a-repo Fork A Repo], and learn how to send a pull request from [https://help.github.com/articles/using-pull-requests Pull Request].
+You can learn more about Git fork and branch model from [https://help.github.com/articles/fork-a-repo Fork A Repo], including how to send a pull request from [https://help.github.com/articles/using-pull-requests Pull Request].
 
 === Letting us know ===
 
