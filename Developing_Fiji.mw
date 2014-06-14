@@ -144,7 +144,7 @@ If you already worked in an existing checkout of ''fiji.git'', no problem, you c
 
 === Contributing to Fiji's existing plugins ===
 
-Sometime you want to contributing to Fiji's existing plugins, for example, you find a bug in one plugin and you want to fix it, or you want to improve one plugin by adding more functions.
+Sometimes you want to contributing to Fiji's existing plugins, for example, you find a bug in one plugin and you want to fix it, or you want to improve one plugin by adding more functions.
 
 '''Every plugin has its own git repository in [https://github.com/fiji/ Fiji]'''. For example, the GraphCut plugin's repository is [https://github.com/fiji/Graph_Cut GraphCut]. This structure allows for easy, independent development of 
 the individual parts of which the base version of Fiji consists.
