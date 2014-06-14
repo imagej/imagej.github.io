@@ -107,7 +107,7 @@ So what does ''commit-submodule.py'' do? It
 
 == Testing ==
 
-When you're testing Fiji, you may want to measure the code coverage of your tests - one way is described in the page [[Code Coverage in Fiji]].
+When you are testing Fiji, you may want to measure the code coverage of your tests - one way is described in the page [[Code Coverage in Fiji]].
 
 At some point, you might want to debug whatever you wrote.  There's a small [[Debugging intro]] page.
 
