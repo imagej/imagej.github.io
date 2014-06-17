@@ -30,7 +30,7 @@ ImageJDev
 | 
 ImageJA is a project that provides a clean Git History of ImageJ1, with a proper 'pom.xml' file so that it can be used with Maven without hassles.
 
-It is what Fiji uses (see below) at its core.
+It is what ImageJ2's legacy support uses at its core.
 |Jul. 2005
 |Active
 |-
@@ -38,6 +38,8 @@ It is what Fiji uses (see below) at its core.
 |[[Contributors|Fiji contributors]]
 | 
 '''F'''iji '''i'''s '''J'''ust '''I'''mageJ, with extras. It is a distribution of ImageJ with many plugins useful for image analysis in the life sciences, an automatic updater, and improved scripting capabilities. It is actively maintained, with updates released often.
+
+As of June 2014, Fiji is based on ImageJ2, adding Fiji-specific customization and plugins.
 
 We recommend Fiji as the preferred version of ImageJ.
 
