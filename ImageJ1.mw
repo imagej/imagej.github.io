@@ -1,0 +1,3 @@
+ImageJ 1.x, often shortened to ImageJ1 or IJ1, is a stable version of ImageJ which has been under continuous development since 1997. It has always been, and continues to be, a one-developer project of Wayne Rasband.
+
+The current version of ImageJ is often referred to as [[ImageJ2]], to differentiate it from ImageJ 1.x. The ImageJ2 distribution actually includes the latest version of ImageJ1 as well, along with a [https://github.com/imagej/imagej-legacy legacy layer] for backwards compatibility, which transparently converts between IJ1 and IJ2 data structures as needed.
