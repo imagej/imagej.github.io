@@ -1,0 +1,94 @@
+ImageJ is a public domain Java image processing program inspired by NIH Image for the Macintosh. It runs on any computer with a Java 1.6 or later virtual machine. Downloadable distributions are available for Windows, Mac OS, Mac OS X and Linux. ImageJ has a strong, established user base, with thousands of plugins and macros for performing a wide variety of tasks.
+
+== Flavors ==
+
+There are a few different flavors of ImageJ with very similar names, and some confusion is inevitable. Below is a table which should help to clarify the purpose of each. For the historical context of these projects, see the [http://developer.imagej.net/history History of ImageJ].
+
+{| style="border: 1px solid gray"
+|-
+|'''Name'''
+|'''Author/Maintainer(s)'''
+|'''Description'''
+|'''Initiated'''
+|'''Status'''
+|-
+|[[ImageJ1]]
+|Wayne Rasband
+|The current, stable version is known simply as "ImageJ"—or sometimes "ImageJ1" or "IJ1" to differentiate it from ImageJ 2.x, which is still in beta.
+|1997
+|Active
+|-
+|[[ImageJ2]]<br>
+ImageJDev
+|[http://developer.imagej.net/collaborators ImageJ developers]
+|ImageJ 2.x, referred to as "ImageJ2" or "IJ2" for short, is currently in development. It is a complete rewrite of ImageJ, but includes ImageJ1 with a compatibility layer, so that old-style plugins and macros can run the same as in IJ1.
+|Dec. 2009
+|Active
+|-
+|[[ImageJA]]
+|Johannes Schindelin
+| 
+ImageJA is a project that provides a clean Git History of ImageJ1, with a proper 'pom.xml' file so that it can be used with Maven without hassles.
+
+It is what Fiji uses (see below) at its core.
+|Jul. 2005
+|Active
+|-
+|[[Fiji]]
+|[[Contributors|Fiji contributors]]
+| 
+'''F'''iji '''i'''s '''J'''ust '''I'''mageJ, with extras. It is a distribution of ImageJ with many plugins useful for image analysis in the life sciences, an automatic updater, and improved scripting capabilities. It is actively maintained, with updates released often.
+
+We recommend Fiji as the preferred version of ImageJ.
+
+|[[User:Schindelin|Dec. 2007]]
+|Active
+|-
+|[[MBF Plugin Collection|MBF ImageJ]]
+|Tony Collins
+|
+The MBF "ImageJ for Microscopy" bundle (formerly [http://www.uhnres.utoronto.ca/facilities/wcif/imagej/ WCIF ImageJ]) is a collection of plugins and macros, collated and organized by the [http://www.macbiophotonics.ca/ MacBiophotonics] facility.
+
+It went hand in hand with a comprehensive manual describing how to use the bundle with light microscopy image data. It was a great resource by microscopists, for microscopists. Unfortunately, the manual went offline in late 2012. Nonetheless, it is often possible to add specific plugins from MBF ImageJ to a Fiji installation, combining the best of both programs.
+
+|2005
+|Defunct<br>
+(Last update:<br>
+Dec. 2009)
+|-
+|[http://www.rawak.de/ij2x/imagej2x.html ImageJ2x]
+|[http://rawak.de/ Rawak Software]
+|ImageJ2x is a fork of ImageJ1, modified to use a Swing interface.
+|Unknown
+|Last update:<br>
+Sep. 2012
+|-
+|[http://www.euhou.net/index.php?option=com_content&task=view&id=7&Itemid=9 SalsaJ]
+|[http://www.euhou.net/ EU-HOU]
+|SalsaJ is a closed-source fork of ImageJ1 intended for use with professional astronomy images. It was designed to be used in classrooms, and has been localized into over 30 different languages.
+|Unknown
+|Last update:<br>
+Aug. 2012
+|-
+|[http://groups.google.com/group/imagejx ImageJX]
+|Grant Harris
+|
+ImageJX was created as a means to discuss and explore improvements to ImageJ. There was an ImageJX mailing list as well as an ImageJX software prototype.
+
+The ImageJX software prototype was a proof of concept—an attempt to reorganize ImageJ's internals to make it more flexible. The prototype demonstrated this flexibility by recasting the program in Swing. The ImageJX project formed the basis of an application to NIH for funding, which is what launched the ImageJDev project (see above).
+
+|Mar. 2009
+|Superceded by ImageJ2
+|-
+|[http://rsbweb.nih.gov/nih-image/ NIH Image]
+|Wayne Rasband
+|NIH Image is a public domain image processing and analysis program for the Macintosh. It is the direct predecessor of ImageJ, and is no longer under active development (though see ImageSXM below).
+|1993 or earlier
+|Superceded by ImageJ
+|-
+|[http://www.liv.ac.uk/~sdb/ImageSXM/ ImageSXM]
+|Steve Barrett
+|Image SXM is a version of NIH Image that has been extended to handle the loading, display and analysis of scanning microscope images.
+|May 1993
+|Active
+|}
