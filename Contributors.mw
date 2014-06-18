@@ -1,7 +1,7 @@
 __NOTOC__
 == Who we are ==
 
-<div style="float: left">
+<div style="float: left; width: 38%">
 === Principal investigators ===
 * [http://loci.wisc.edu/people/kevin-eliceiri Kevin Eliceiri]<sup>2</sup> (ImageJ/Fiji, OME)
 * [http://www.mpi-cbg.de/research/research-groups/pavel-tomancak.html Pavel Tomancak]<sup>5</sup> (ImageJ/Fiji)
@@ -24,7 +24,7 @@ __NOTOC__
 * [http://loci.wisc.edu/people/rick-lentz Rick Lentz]<sup>2</sup> (Nov 2009-Feb 2011)
 </div>
 
-<div style="float: left; padding-left: 10px; padding-right: 10px">
+<div style="float: left; width: 27%">
 === Fiji ===
 * [[User:Schindelin|Johannes Schindelin]]<sup>2</sup> (lead)
 * [http://albert.rierol.net Albert Cardona]<sup>6,12</sup>
@@ -48,7 +48,7 @@ __NOTOC__
 * [http://www.kaynig.de Verena Kaynig]
 </div>
 
-<div style="float: left">
+<div style="float: left; width: 34%">
 
 === ImgLib2 ===
 * Tobias Pietzsch<sup>5</sup> (lead)
