@@ -3,11 +3,11 @@ __NOTOC__
 
 <div style="float: left; width: 33%">
 === Principal investigators ===
-* Kevin Eliceiri<sup>2</sup> (ImageJ/Fiji, OME)
+* [http://loci.wisc.edu/people/kevin-eliceiri Kevin Eliceiri]<sup>2</sup> (ImageJ/Fiji, OME)
 * [http://www.mpi-cbg.de/research/research-groups/pavel-tomancak.html Pavel Tomancak]<sup>5</sup> (ImageJ/Fiji)
-* Anne Carpenter<sup>4</sup> (CellProfiler, ImageJ)
-* Michael Berthold<sup>9</sup> (KNIME)
-* Jason Swedlow<sup>10,11</sup> (OME)
+* [http://www.broadinstitute.org/~anne/ Anne Carpenter]<sup>4</sup> (CellProfiler, ImageJ)
+* [http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/ Michael Berthold]<sup>9</sup> (KNIME)
+* [http://www.lifesci.dundee.ac.uk/people/jason-swedlow Jason Swedlow]<sup>10,11</sup> (OME)
 
 === ImageJ1 team ===
 * Wayne Rasband<sup>1</sup> (lead)
@@ -46,20 +46,20 @@ __NOTOC__
 * [http://loci.wisc.edu/people/mark-hiner Mark Hiner]
 * [http://www.mpi-cbg.de/research/research-groups/pavel-tomancak.html Pavel Tomancak]<sup>5</sup>
 * [http://monash.edu/science/about/schools/biological-sciences/staff/bryson-richardson/ Rob Bryson-Richardson]
-* [http://fly.mpi-cbg.de/~preibisch/ Stephan Preibisch]
-* [http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld]
+* [http://fly.mpi-cbg.de/~preibisch/ Stephan Preibisch]<sup>5</sup>
+* [http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld]<sup>5</sup>
 * [http://www.kaynig.de Verena Kaynig]
 </div>
 
 <div style="float: left; width: 33%">
 === ImgLib2 team ===
 * Tobias Pietzsch<sup>5</sup> (lead)
-* Stephan Preibisch<sup>5</sup>
-* Stephan Saalfeld<sup>5</sup>
+* [http://fly.mpi-cbg.de/~preibisch/ Stephan Preibisch]<sup>5</sup>
+* http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld]<sup>5</sup>
 
 === SCIFIO team ===
-* Mark Hiner<sup>2</sup> (co-lead)
-* Curtis Rueden<sup>2</sup> (co-lead)
+* [http://loci.wisc.edu/people/mark-hiner Mark Hiner]<sup>2</sup> (co-lead)
+* [[User:Rueden|Curtis Rueden]]<sup>2</sup> (co-lead)
 
 === CellProfiler team ===
 * Lee Kamentsky<sup>4</sup> (lead)
@@ -79,9 +79,10 @@ __NOTOC__
 <div style="clear: both">&nbsp;</div>
 
 <div style="float: left; width: 40%">
-=== Plugins ===
+=== Plugin maintainers ===
 The specific plugin maintainers can be found at the [[Maintainer_page| maintainer page]].
 
+=== Special thanks ===
 Our deep thanks to Wayne Rasband, author of [[ImageJ1]], for all his support and patience!
 </div>
 
