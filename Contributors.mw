@@ -29,11 +29,11 @@ __NOTOC__
 <div style="float: left; width: 33%">
 === Fiji team ===
 * [[User:Schindelin|Johannes Schindelin]]<sup>2,5</sup> (lead)
-* [http://albert.rierol.net Albert Cardona]
-* [http://loci.wisc.edu/people/barry-dezonia Barry DeZonia]
+* [http://albert.rierol.net Albert Cardona]<sup>6,12</sup>
+* [http://loci.wisc.edu/people/barry-dezonia Barry DeZonia]<sup>2</sup>
 * [http://www.neurofly.de/ Benjamin Schmid]
 * Cornelius Sicker
-* [[User:Rueden|Curtis Rueden]]
+* [[User:Rueden|Curtis Rueden]]<sup>2</sup>
 * [[Dan White|Dan White]]
 * Erwin Frise
 * [http://www.mecourse.com/landinig/ Gabriel Landini]
@@ -43,7 +43,7 @@ __NOTOC__
 * [http://cmci.embl.de/ Kota Miura]
 * [http://synapses.clm.utexas.edu/lab/lindsey/lindsey.htm Larry Lindsey]
 * [http://homepages.inf.ed.ac.uk/s9808248/ Mark Longair]
-* [http://loci.wisc.edu/people/mark-hiner Mark Hiner]
+* [http://loci.wisc.edu/people/mark-hiner Mark Hiner]<sup>2</sup>
 * [http://www.mpi-cbg.de/research/research-groups/pavel-tomancak.html Pavel Tomancak]<sup>5</sup>
 * [http://monash.edu/science/about/schools/biological-sciences/staff/bryson-richardson/ Rob Bryson-Richardson]
 * [http://fly.mpi-cbg.de/~preibisch/ Stephan Preibisch]<sup>5</sup>
@@ -52,6 +52,7 @@ __NOTOC__
 </div>
 
 <div style="float: left; width: 33%">
+
 === ImgLib2 team ===
 * Tobias Pietzsch<sup>5</sup> (lead)
 * [http://fly.mpi-cbg.de/~preibisch/ Stephan Preibisch]<sup>5</sup>
