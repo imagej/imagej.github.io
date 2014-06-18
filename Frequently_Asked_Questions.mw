@@ -28,6 +28,10 @@ On Linux:
 
 One downside of doing this is that ImageJ will launch in a separate process, which has some unintuitive side effects. For example, Ubuntu's Unity user interface will not allow you to "Pin to Launcher" in this case...
 
+== What is this ''headless'' mode and what do I need it for? ==
+
+The term ''headless'' refers to running ImageJ without a graphical desktop, e.g. on a cluster. See the [[Headless]] page for more information.
+
 = Installing/Updating =
 
 == How can I verify that my ImageJ is really 100% up to date? ==
@@ -321,10 +325,6 @@ Yes. Java is one of the [http://langpop.com/ most popular programming languages]
 == Why does ImageJ still target Java 6? ==
 
 As of June 2014, around 19% of Mac OS X systems still run version 10.6 Snow Leopard or older [[http://www.netmarketshare.com/ 1]]. (In December 2013, it was around 25%.) Unfortunately, Apple and the OpenJDK developer community decided to target OS X 10.7 Lion and above for Java 7. For the time being, to avoid abandoning older machines which cannot be upgraded from Snow Leopard, ImageJ continues to target Java 6.
-
-== What is this ''headless'' mode and what do I need it for? ==
-
-The term ''headless'' refers to running ImageJ without a graphical desktop, e.g. on a cluster. See the [[Headless]] page for more information.
 
 == How about a version of ImageJ for the web browser, mobile devices, etc.? ==
 
