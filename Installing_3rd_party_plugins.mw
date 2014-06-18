@@ -1,6 +1,8 @@
 ==For users==
 
-* You can just drag 'n drop the plugin .jar file (from the Explorer, Finder or any file browser) into the plugins directory:
+* If the plugin is published on an [[Update Sites|ImageJ update site]], you can run ''Help > Update'' then click the ''Manage update sites'' button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
+
+* Otherwise, you can just drag 'n drop the plugin .jar file (from the Explorer, Finder or any file browser) into the plugins directory:
 
 : [[Image:Install-Plugin-DragNDrop.png|750px]]
 
