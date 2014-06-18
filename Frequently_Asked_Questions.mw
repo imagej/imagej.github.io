@@ -2,59 +2,49 @@
 
 == The image I loaded is displayed all black! But it is not black! ==
 
-This problem usually arises when 12-bit or 14-bit images are loaded into Fiji without autoscaling. In that case, they are treated as if they were 16-bit images, and therefore the dynamic range is all wrong. You can fix this by clicking on ''Image>Adjust>Brightness/Contrast...'' and hitting the ''Auto'' button.
+This problem usually arises when 12-bit or 14-bit images are loaded into ImageJ without autoscaling. In that case, they are treated as if they were 16-bit images, and therefore the dynamic range is all wrong. You can fix this by clicking on ''Image>Adjust>Brightness/Contrast...'' and hitting the ''Auto'' button.
 
 = MacOSX =
 
-== Why does Fiji crash frequently? ==
+== Why does ImageJ crash frequently? ==
 
 This is most likely an AWT issue with Apple's version of Java 6. There is even a [http://fiji.sc/bugzilla/show_bug.cgi?id=197 bug in our bug tracker about it]. The problem is that we did not manage to find a work-around because the bug appears to be in the MacOSX-specific part of the Java Virtual Machine that was provided by Apple. It seems to be related to opening new windows while mouse updates are processed, though. If you have this issue, or find out what causes it, please comment on [http://fiji.sc/bugzilla/show_bug.cgi?id=197 this bug report].
 
 = Running =
 
-== How do I launch Fiji with a different version of Java? ==
+== How do I launch ImageJ with a different version of Java? ==
 
 Use the <code>--java-home</code> command line option. Examples:
 
 On OS X:
 
- /Applications/Fiji.app/Contents/MacOS/ImageJ-macosx --java-home \
+ /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx --java-home \
    '/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home'
 
 On Linux:
 
- $HOME/Fiji.app/ImageJ-linux64 --java-home \
+ $HOME/ImageJ.app/ImageJ-linux64 --java-home \
    /usr/lib/jvm/java-7-openjdk-amd64
 
-One downside of doing this is that Fiji will launch in a separate process, which has some unintuitive side effects. For example, Ubuntu's Unity user interface will not allow you to "Pin to Launcher" in this case...
+One downside of doing this is that ImageJ will launch in a separate process, which has some unintuitive side effects. For example, Ubuntu's Unity user interface will not allow you to "Pin to Launcher" in this case...
 
 = Installing/Updating =
 
-== How do I install Fiji? ==
+== How can I verify that my ImageJ is really 100% up to date? ==
 
-The installation of Fiji is described on specific pages for [[Install_Fiji_on_MacOSX|MacOSX]], [[Install_Fiji_on_Windows|Windows]] and [[Install_Fiji_on_Linux|Linux]].
+ImageJ will report itself as "up to date" as long as all files installed in your ImageJ match the latest versions from the remote update sites. However, there are cases where your ImageJ may report itself as "up to date" but still be missing critical files, or have mismatching versions (e.g., the dreaded "NoSuchMethodError").
 
-== How do I turn my ImageJ installation into a Fiji one? ==
+To be certain, run Help > Update, and click the "Advanced mode" button. Then verify the following View Options:
 
-Fiji is just ImageJ. Hence it is very easy to bootstrap the updater and add the Fiji update site: Simply drag 'n drop [http://update.imagej.net/bootstrap.js this link] onto your running ImageJ and run the Javascript that was opened in a text window.
-
-After that, you can run Fiji/ImageJ using the ImageJ launcher that was installed into the ImageJ directory.
-
-== How can I verify that my Fiji is really 100% up to date? ==
-
-Fiji will report itself as "up to date" as long as all files installed in your Fiji match the latest versions from the remote update sites. However, there are cases where your Fiji may report itself as "up to date" but still be missing critical files, or have mismatching versions (e.g., the dreaded "NoSuchMethodError").
-
-To be certain, run Help > Update Fiji, and click the "Advanced mode" button. Then verify the following View Options:
-
-* '''View uninstalled files only:''' Shows files that are available from remote ImageJ update sites, but ''not'' installed in your Fiji. Consider changing the "Status/Action" to "Install" for these items, especially any .jar files that are flagged with "Not installed" status.
+* '''View uninstalled files only:''' Shows files that are available from remote ImageJ update sites, but ''not'' installed in your ImageJ. Consider changing the "Status/Action" to "Install" for these items, especially any .jar files that are flagged with "Not installed" status.
 * '''View locally modified files only:''' Shows files that have been edited locally (i.e., do not match any version from the remote update sites). Consider changing the "Status/Action" to "Update" for these items, especially any .jar files that you did not intentionally modify.
 * '''View local-only files:''' Shows files that are not known at all to the remote update sites. These files were likely added manually (e.g., if you installed additional plugins manually; see "How do I install additional plugins" below). Consider deleting these files if you do not need them, especially any .jar files of unknown origin or conflicting file names.
 
-If you flag any changes to be made, press the "Apply changes" to update your Fiji. And after restarting Fiji, you might want to run Help > Update Fiji again to make sure everything looks the way you expect!
+If you flag any changes to be made, press the "Apply changes" to update your ImageJ. And after restarting ImageJ, you might want to run Help > Update again to make sure everything looks the way you expect!
 
 == How do I install additional plugins? ==
 
-You can drag 'n drop the .jar files onto the Fiji window, or use ''Plugins>Install Plugin...'' with .jar, .class and .java files, or copy the plugins to ''Fiji.app/plugins/'' and call ''Help>Refresh Menus'' manually. A walk-through with screenshots is available [[Installing 3rd party plugins|here]].
+You can drag 'n drop the .jar files onto the ImageJ window, or use ''Plugins>Install Plugin...'' with .jar, .class and .java files, or copy the plugins to ''ImageJ.app/plugins/'' and call ''Help>Refresh Menus'' manually. A walk-through with screenshots is available [[Installing 3rd party plugins|here]].
 
 == My plugin runs fine in the [[Script Editor]], but it does not show up in the menus when I install it. What's wrong? ==
 
@@ -62,21 +52,21 @@ To be picked up as a plugin, the ''.jar'''s file name must contain an underscore
 
 The safest way to ensure these conventions is to use the ''File>Export as .jar file'' menu item.
 
-== I tried to update Fiji via ''Help>Update Fiji'', but it throws an exception instead? ==
+== I tried to update ImageJ via ''Help>Update'', but it throws an exception instead? ==
 
 The easiest way to get back a functional updater is to import [https://github.com/fiji/fiji/raw/master/plugins/Scripts/Plugins/Utilities/Fix_Updater.js this URL] via ''File>Import>URL...''.
 
-If that does not work, please delete the files ''ij-ui-swing-updater-2.0.0-SNAPSHOT.jar'', ''ij-updater-core-2.0.0-SNAPSHOT.jar'' and ''ij-core-2.0.0-SNAPSHOT.jar'' from the ''Fiji.app/jars/'' directory (MacOSX users, Ctrl-click on the Fiji icon and select ''Open Package Contents'' and open the ''jars/'' directory you see there). After that, the Updater should magically repair itself.
+If that does not work, please delete the files ''ij-ui-swing-updater-2.0.0-SNAPSHOT.jar'', ''ij-updater-core-2.0.0-SNAPSHOT.jar'' and ''ij-core-2.0.0-SNAPSHOT.jar'' from the ''ImageJ.app/jars/'' directory (MacOSX users, Ctrl-click on the ImageJ icon and select ''Open Package Contents'' and open the ''jars/'' directory you see there). After that, the Updater should magically repair itself.
 
 If that still fails, please download a fresh copy from [[Downloads|here]].
 
-== I updated Fiji via ''Help>Update Fiji'', and now it does not start anymore! ==
+== I updated ImageJ via ''Help>Update'', and now it does not start anymore! ==
 
 If you are on MacOSX, most likely you did not update in some time, and you were bitten by a bug in the updater that is already fixed (but you did not get the fix in time). Please follow [[Fix non-functional Fiji after Update on MacOSX|these instructions]].
 
 == The Updater always says ''Connection refused''. Maybe it does not use the proxy? ==
 
-Indeed, an earlier version of the Updater does not use your system-wide network proxy settings. This is fixed in the meantime, but you need to update the updater using [http://fiji.sc/downloads/Heidelberg/Update_Fiji_Using_Proxy.bsh this script] (just download it and open it in Fiji).
+Indeed, an earlier version of the Updater does not use your system-wide network proxy settings. This is fixed in the meantime, but you need to update the updater using [http://fiji.sc/downloads/Heidelberg/Update_Fiji_Using_Proxy.bsh this script] (just download it and open it in ImageJ).
 
 Alternatively, you can update the updater manually like this:
 
@@ -91,14 +81,14 @@ IJ.run("Update Fiji");
 </source>
 * run the script via the ''Run'' menu
 
-== I updated to Ubuntu 11.04 and now I no longer see the Title bar when I close Fiji ==
+== I updated to Ubuntu 11.04 and now I no longer see the Title bar when I close ImageJ ==
 
 I can no longer move any windows or use the X button on the title bar to close 
 them (the window decorations all disappear).
 
 If you are really on Ubuntu 11.04, an update should fix the problem. If you are not on Ubuntu 11.04, or if the update does not fix the problem, please read on for possible workarounds.
 
-This is not a Fiji problem but a bug in the NVIDIA driver.
+This is not a ImageJ problem but a bug in the NVIDIA driver.
 One solution is described in:
 http://www.pendrivelinux.com/ubuntu-desktop-effects-fixing-the-missing-titlebar/
 
@@ -113,6 +103,26 @@ in a terminal. This restores the window decorations but all windows from all vir
 
 Another solution is to install Unity-2D and choose it when you log in. This seems to work well. It also solves a number of general display problems.
 
+= [[Fiji]] =
+
+== How do I install Fiji? ==
+
+The installation of Fiji is described on specific pages for [[Install_Fiji_on_MacOSX|MacOSX]], [[Install_Fiji_on_Windows|Windows]] and [[Install_Fiji_on_Linux|Linux]].
+
+== How do I turn my ImageJ installation into a Fiji one? ==
+
+Fiji is just ImageJ. If you are running ImageJ2, simply run ''Help > Update'', click ''Manage update sites'', and enable the ''Fiji'' update site.
+
+Or if you are running ImageJ1, you can bootstrap the updater by drag 'n dropping [http://update.imagej.net/bootstrap.js this link] onto your running ImageJ1 and run the Javascript that was opened in a text window. After that, you can run Fiji/ImageJ using the ImageJ launcher that was installed into the ImageJ directory.
+
+== How do I develop Fiji in Eclipse? ==
+
+Please refer to the page ''[[Developing Fiji in Eclipse]]''.
+
+== How can I build Fiji from the command-line? ==
+
+[[Downloading and Building Fiji From Source|Download and build it]]. You need Git for that (if you are on Windows, please use [https://msysgit.github.io/ Git for Windows]).
+
 = [[3D Viewer]] =
 
 == The 3D Viewer opens a window saying ''An unexpected exception occurred.'' ==
@@ -121,13 +131,13 @@ If in the same window, it also says:
 
  java.lang.NullPointerException:Canvas3D: null GraphicsConfiguration
 
-the reason is most likely that your graphics setup does not have any hardware 3D acceleration. This can happen e.g. when you run Fiji via a remote X11 connection (3D acceleration works only when the graphics are displayed on the same machine as the program runs).
+the reason is most likely that your graphics setup does not have any hardware 3D acceleration. This can happen e.g. when you run ImageJ via a remote X11 connection (3D acceleration works only when the graphics are displayed on the same machine as the program runs).
 
-Unfortunately, there is not workaround/fix for this situation yet, except to use Fiji locally when you want to use the 3D Viewer.
+Unfortunately, there is not workaround/fix for this situation yet, except to use ImageJ locally when you want to use the 3D Viewer.
 
 == Problem with Intel graphics cards ==
 
-There is a known problem with older Windows drivers for some Intel graphics cards. Usually, this is fixed by installing new drivers. If you would like to help make Fiji nicer by detecting faulty driver versions, please [[Help:Contents#Getting_help_regarding_Fiji|contact us]].
+There is a known problem with older Windows drivers for some Intel graphics cards. Usually, this is fixed by installing new drivers. If you would like to help make ImageJ nicer by detecting faulty driver versions, please [[Help:Contents#Getting_help_regarding_Fiji|contact us]].
 
 == The 3D Viewer simply crashes ==
 
@@ -152,14 +162,6 @@ it means that you do not have ''Java3D'' installed. This happens typically when 
 
 = Development =
 
-== How do I develop Fiji in Eclipse? ==
-
-Please refer to the page ''[[Developing Fiji in Eclipse]]''.
-
-== How can I build Fiji from the command-line? ==
-
-[[Downloading and Building Fiji From Source|Download and build it]]. You need Git for that (if you are on Windows, please use [http://msysgit.googlecode.com Git for Windows]).
-
 == What is Maven, and why did you pick it? ==
 
 Maven is a system to build ''.jar'' files from source code, and to manage dependencies (i.e. it is easy to specify which minimal version of, say, ImageJ is required by the source code).
@@ -176,15 +178,15 @@ Please refer to the [[MiniMaven]] and [[Supported Compilers]] pages for an expla
 
 Please refer to our page on [[Maven]].
 
-== How do I upload a new release of a Fiji plugin? ==
+== How do I upload a new release of an ImageJ plugin? ==
 
 Please refer to our tutorial [[Uploading plugins|how to upload files]].
 
 == How do I upload a new release of a core ImageJ library such as ImgLib? ==
 
-The same way as a Fiji plugin. But it will upload to the ImageJ update site (you can only upload to one update site at a time, though, see also [http://trac.imagej.net/ticket/1468 this ticket]).
+The same way you do a plugin. But it will upload to the ImageJ update site (you can only upload to one update site at a time, though, see also [http://trac.imagej.net/ticket/1468 this ticket]).
 
-== What is the recommended way to develop in Fiji? ==
+== What is the recommended way to develop in ImageJ? ==
 
 Over the years we evolved a development style as follows:
 
@@ -193,7 +195,7 @@ Over the years we evolved a development style as follows:
 * merge
 * deal with any fall-out
 
-This development style has been adopted by the [http://developer.imagej.net/ ImageJDev team], with two additions (making the fall-out step much smaller):
+This development style has been adopted by the [http://developer.imagej.net/ ImageJ team], with two additions (making the fall-out step much smaller):
 
 * tests are added as automated regression tests (to be run by [http://jenkins.imagej.net/ the continuous integration] whenever new changes were pushed) whenever possible.
 * merges are usually done with ''--no-ff'', so that even fast-forwarding branches (i.e. rebased on top of ''master'') will get a merge commit in which the branch is described more broadly.
@@ -282,7 +284,7 @@ If you have an issue that is not mentioned here, you might want to [[Help:Conten
 
 == How to report issues? ==
 
-Use the ''Help > [[Report a Bug]]'' command, which adds a ticket report to the [http://fiji.sc/bugzilla/ Fiji bug tracker]. While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in Fiji. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
+Use the ''Help > [[Report a Bug]]'' command, which adds a ticket report to the [http://fiji.sc/bugzilla/ Fiji bug tracker]. While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
 
 = Miscellaneous =
 
@@ -300,4 +302,4 @@ So the true reason why we use Java is probably: it makes Fiji accessible.
 
 == What is this ''headless'' mode and what do I need it for? ==
 
-The term ''headless'' refers to running Fiji without a graphical desktop, e.g. on a cluster. See the [[Headless]] page for more information.
+The term ''headless'' refers to running ImageJ without a graphical desktop, e.g. on a cluster. See the [[Headless]] page for more information.
