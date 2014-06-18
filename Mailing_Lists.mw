@@ -1,4 +1,4 @@
-== ImageJ-affiliated mailing lists ==
+== ImageJ and SciJava ==
 
 {| class="wikitable"
 |-
@@ -40,7 +40,7 @@ For [http://scijava.org/ SciJava] discussion and [https://github.com/scijava/sci
 <span style="font-size: smaller">This list is for programmers contributing code to Fiji, or interested in technical discussions surrounding such development.</span>
 |}
 
-== Related and similar projects ==
+== ImageJ plugins ==
 
 {| class="wikitable"
 |-
@@ -55,11 +55,24 @@ For [[Bio-Formats]] issues.
 For [[Bio-Formats]] programming questions.
 |-
 | valign="top" |
-[http://lists.sourceforge.net/lists/listinfo/micro-manager-general μManager]
-|
-|-
-| valign="top" |
 [http://www.loci.wisc.edu/software/mailing-lists LOCI Software]
 |
 For [http://loci.wisc.edu/software LOCI software], ''excluding'' collaborations such as ImageJ, SCIFIO and Bio-Formats.
+|}
+
+== Related and similar projects ==
+
+{| class="wikitable"
+|-
+| style="width: 120px" valign="top" |
+[http://lists.sourceforge.net/lists/listinfo/micro-manager-general μManager]
+| Open source software package for control of automated microscopes.
+|-
+| valign="top" |
+[http://lists.sourceforge.net/lists/listinfo/bioimagexd-users BioImageXD]
+| Open source software package for analyzing, processing and visualizing multi-dimensional microscopy images.
+|-
+| valign="top" |
+[http://groups.google.com/group/icy-software Icy]
+| An open community platform for bioimage informatics.
 |}
