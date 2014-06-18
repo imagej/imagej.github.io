@@ -48,24 +48,5 @@ Please make sure that your .config file is designed such that the
 menus fit in snuggly with the common Fiji menu structure.
 
 Then just "make", and the plugin will be automatically installed.
-==Installing new readers/writers into io package==
-I recently added a couple of new IO plugins that were previously developed as standalone ImageJ plugins as follows:
-
-Add all source code (*.java) files to:
-
-  src-plugins/IO_/io/
-
-add the following to the top of each source code file
-
-  package io;
-
-Then edit staged-plugins/IO_.config to add menu items e.g.
-
-  File>Import, "Nrrd ...", io.Nrrd_Reader
-  File>Save As, "Nrrd ... ", io.Nrrd_Writer
-
-Finally add a new handle in 
-  src-plugins/Input-OutputHandleExtraFileTypes.java
-to recognise images of the relevant type and call the plugin.
 
 [[Category:Tutorials]]
