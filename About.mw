@@ -39,3 +39,7 @@ The following software component libraries form the core of ImageJ2:
 ImageJ2 uses the [[SCIFIO]] library (SCientific Image Format Input and Output)  by default for most image input tasks. You can change this behavior at any time by running ''Edit > Options > ImageJ2'' and modifying the ''Use SCIFIO when opening files'' option.
 
 For further details, see the [[SCIFIO]] page.
+
+== Funding ==
+
+ImageJ2 received funding in 2010 from the National Institute of General Medical Sciences (NIGMS) through the American Recovery and Reinvestment Act of 2009 NIH Research and Research Infrastructure "Grand Opportunities" Grant, '''"Hardening" of Biomedical Informatics/Computing Software for Robustness and Dissemination'''. For more information, see the listing on the NIGMS [http://www.nigms.nih.gov/Research/pages/GrandOpportunityAreas.aspx Grand Opportunity Areas] page.
