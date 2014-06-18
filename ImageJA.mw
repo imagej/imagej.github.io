@@ -10,11 +10,11 @@
 | website                = [http://sourceforge.net/projects/imageja SourceForge site]
 }}
 
-ImageJA is a project that provides a clean Git History of the ImageJ 1.* branch, with a proper 'pom.xml' file so that it can be used with Maven without hassles.
+ImageJA is a project that provides a clean Git History of the ImageJ 1.x branch, with a proper 'pom.xml' file so that it can be used with Maven without hassles.
 
 == Historical note ==
 
-ImageJA used to be a ''fork'' of [http://rsb.info.nih.gov/ij/ ImageJ], i.e. it was synchronized closely with ImageJ with a few changes on top:
+ImageJA was [https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;cd841de0.0510 launched in 2005] as a ''fork'' of [[ImageJ]]; i.e., it was synchronized closely with ImageJ with a few changes on top:
 
 * When run as an applet, ImageJA is embedded (slated to be _optionally_ embedded, once the maintainer finds some time to do it).
 * The internal structure of ImageJA's recorder allows command listeners to get much more fine-grained information.
