@@ -12,7 +12,7 @@ __NOTOC__
 === ImageJ1 ===
 * Wayne Rasband<sup>1</sup> (lead)
 
-=== ImageJ2 team ===
+=== ImageJ2 ===
 * [[User:Rueden|Curtis Rueden]]<sup>2</sup> (lead)
 * [[User:Schindelin|Johannes Schindelin]]<sup>2</sup>
 * [http://loci.wisc.edu/people/mark-hiner Mark Hiner]<sup>2</sup>
@@ -27,7 +27,7 @@ __NOTOC__
 </div>
 
 <div style="float: left; width: 33%">
-=== Fiji team ===
+=== Fiji ===
 * [[User:Schindelin|Johannes Schindelin]]<sup>2</sup> (lead)
 * [http://albert.rierol.net Albert Cardona]<sup>6,12</sup>
 * [http://loci.wisc.edu/people/barry-dezonia Barry DeZonia]<sup>2</sup>
@@ -53,24 +53,24 @@ __NOTOC__
 
 <div style="float: left; width: 33%">
 
-=== ImgLib2 team ===
+=== ImgLib2 ===
 * Tobias Pietzsch<sup>5</sup> (lead)
 * [http://fly.mpi-cbg.de/~preibisch/ Stephan Preibisch]<sup>5</sup>
 * [http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld]<sup>5</sup>
 
-=== SCIFIO team ===
+=== SCIFIO ===
 * [http://loci.wisc.edu/people/mark-hiner Mark Hiner]<sup>2</sup> (co-lead)
 * [[User:Rueden|Curtis Rueden]]<sup>2</sup> (co-lead)
 
-=== CellProfiler team ===
+=== CellProfiler ===
 * Lee Kamentsky<sup>4</sup> (lead)
 
-=== KNIME Image Processing team ===
+=== KNIME Image Processing ===
 * Christian Dietz<sup>9</sup> (co-lead)
 * Martin Horn<sup>9</sup> (co-lead)
 * Michael Zinsmaier<sup>9</sup>
 
-=== OME team ===
+=== OME ===
 * Josh Moore<sup>10,11</sup> (co-lead)
 * Jean-Marie Burel<sup>11</sup> (co-lead)
 * Chris Allan<sup>10</sup> (co-lead)
