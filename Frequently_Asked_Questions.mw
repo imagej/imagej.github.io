@@ -152,7 +152,7 @@ In ImageJ2, the goal is to provide one unified set of functions, which is fully 
 
 == Can I call ImageJ1 API from an ImageJ2 command? ==
 
-Yes, although it is not recommended. You will lose most of the advantages of ImageJ2 if you embed calls to ImageJ1 within your command. ImageJ1 is rather tightly coupled to AWT and hence does not work well headless. For details, see the [http://wiki.imagej.net/Headless Headless] wiki page for details.
+Yes, although it is not recommended. You will lose most of the advantages of ImageJ2 if you embed calls to ImageJ1 within your command. ImageJ1 is rather tightly coupled to AWT and hence does not work well headless. For details, see the [[Headless]] page.
 
 == Can I call ImageJ2 API from an ImageJ1 plugin? ==
 
