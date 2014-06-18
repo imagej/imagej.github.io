@@ -1,0 +1,65 @@
+== ImageJ-affiliated mailing lists ==
+
+{| class="wikitable"
+|-
+| style="width: 120px" valign="top" |
+[http://imagej.net/list.html ImageJ]
+| For general user and developer discussion about ImageJ.
+
+<span style="font-size: smaller">This list is the best place to go for help with your specific use case.</span>
+|-
+| valign="top" |
+[http://imagej.net/mailman/listinfo/imagej-devel ImageJ-devel]
+| For technical and developer discussion of the ImageJ core.
+
+<span style="font-size: smaller">This list is for programmers contributing code to ImageJ itself, or interested in technical discussions surrounding such development.</span>
+|-
+| valign="top" |
+[http://scif.io/mailman/listinfo/scifio SCIFIO]
+| For bug reports relating to image file input and output.
+
+<span style="font-size: smaller">ImageJ2's image I/O is driven by the SCIFIO library ("SCientific Image Format Input &amp; Output").</span>
+|-
+| valign="top" |
+[http://groups.google.com/group/scijava SciJava]
+|
+For [http://scijava.org/ SciJava] discussion and [https://github.com/scijava/scijava-common SciJava Common] bug reports.
+
+<span style="font-size: smaller">ImageJ and SCIFIO are both built on top of SciJava Common.</span>
+|-
+| valign="top" |
+[http://imagej.net/mailman/listinfo/imagej-builds ImageJ-builds]
+| For Jenkins build reports.
+
+<span style="font-size: smaller">This is an announcement list for the [http://jenkins.imagej.net/ ImageJ Jenkins], which reports build failures for ImageJ, Fiji, ImgLib and related projects. It is mainly intended for people directly involved in development, though anyone is welcome to subscribe if desired.</span>
+|-
+| valign="top" |
+[http://groups.google.com/group/fiji-devel Fiji-devel]
+| For developer discussion specific to Fiji (rather than core ImageJ).
+
+<span style="font-size: smaller">This list is for programmers contributing code to Fiji, or interested in technical discussions surrounding such development.</span>
+|}
+
+== Related and similar projects ==
+
+{| class="wikitable"
+|-
+| style="width: 120px" valign="top" |
+[http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-users/ OME-users]
+|
+For [[Bio-Formats]] issues.
+|-
+| valign="top" |
+[http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-devel/ OME-devel]
+|
+For [[Bio-Formats]] programming questions.
+|-
+| valign="top" |
+[http://lists.sourceforge.net/lists/listinfo/micro-manager-general μManager]
+|
+|-
+| valign="top" |
+[http://www.loci.wisc.edu/software/mailing-lists LOCI Software]
+|
+For [http://loci.wisc.edu/software LOCI software], ''excluding'' collaborations such as ImageJ, SCIFIO and Bio-Formats.
+|}
