@@ -4,13 +4,13 @@
 |-
 | style="width: 120px" valign="top" |
 [http://imagej.net/list.html ImageJ]
-| For general user and developer discussion about ImageJ.
+| For general user and developer discussion about [[ImageJ]].
 
 <span style="font-size: smaller">This list is the best place to go for help with your specific use case.</span>
 |-
 | valign="top" |
 [http://imagej.net/mailman/listinfo/imagej-devel ImageJ-devel]
-| For technical and developer discussion of the ImageJ core.
+| For technical and developer discussion of the ImageJ core software libraries.
 
 <span style="font-size: smaller">This list is for programmers contributing code to ImageJ itself, or interested in technical discussions surrounding such development.</span>
 |-
@@ -18,7 +18,7 @@
 [http://scif.io/mailman/listinfo/scifio SCIFIO]
 | For bug reports relating to image file input and output.
 
-<span style="font-size: smaller">ImageJ2's image I/O is driven by the SCIFIO library ("SCientific Image Format Input &amp; Output").</span>
+<span style="font-size: smaller">ImageJ2's image I/O is driven by the [[SCIFIO]] library ("SCientific Image Format Input &amp; Output").</span>
 |-
 | valign="top" |
 [http://groups.google.com/group/scijava SciJava]
@@ -35,7 +35,7 @@ For [http://scijava.org/ SciJava] discussion and [https://github.com/scijava/sci
 |-
 | valign="top" |
 [http://groups.google.com/group/fiji-devel Fiji-devel]
-| For developer discussion specific to Fiji (rather than core ImageJ).
+| For developer discussion specific to the [[Fiji]] distribution of ImageJ.
 
 <span style="font-size: smaller">This list is for programmers contributing code to Fiji, or interested in technical discussions surrounding such development.</span>
 |}
