@@ -312,6 +312,10 @@ The reason why we chose ImageJ as the core of Fiji is that it runs without troub
 
 So the true reason why we use Java is probably: it makes Fiji accessible.
 
+== With Oracle buying Sun and Apple deprecating Java, does Java have a future? ==
+
+Yes. Java is one of the [http://langpop.com/ most popular programming languages] and still one of the top choices for high-performance, cross-platform applications. Oracle is unlikely to attempt to "kill" Java, but even if they tried they probably couldn't&mdash;OpenJDK is open source and there is a massive community of Java developers behind it. Now that [http://www.apple.com/pr/library/2010/11/12openjdk.html Apple is partnering with Oracle and the OpenJDK community], we are likely to see Java on Mac OS X get better, not worse. Java's popularity will eventually wane, but not because of any company's actions now. Rather, as with any programming language, new technologies will emerge and gain popularity, over a course of many years.
+
 == Why does ImageJ still target Java 6? ==
 
 As of June 2014, around 19% of Mac OS X systems still run version 10.6 Snow Leopard or older [[http://www.netmarketshare.com/ 1]]. (In December 2013, it was around 25%.) Unfortunately, Apple and the OpenJDK developer community decided to target OS X 10.7 Lion and above for Java 7. For the time being, to avoid abandoning older machines which cannot be upgraded from Snow Leopard, ImageJ continues to target Java 6.
