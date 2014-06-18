@@ -320,6 +320,14 @@ As of June 2014, around 19% of Mac OS X systems still run version 10.6 Snow Leop
 
 The term ''headless'' refers to running ImageJ without a graphical desktop, e.g. on a cluster. See the [[Headless]] page for more information.
 
+== How about a version of ImageJ for the web browser, mobile devices, etc.? ==
+
+While a pure web version of ImageJ would be desirable for a number of reasons, there are several substantial challenges with current technology. In particular, it would be difficult for a Javascript-based ImageJ to maintain compatibility with existing plugins, macros and scripts. For now, our goal is to continue improving the Java version of ImageJ, while remaining cognizant of developments in the web applications domain, to reduce the difficulties of a web version at some future date.
+
+We are developing ImageJ with a careful eye toward modularity, avoiding gratuitous dependencies&mdash;particularly on AWT, which is not available on most mobile devices. We hope this approach makes it easier to port ImageJ to additional platforms in the future.
+
+A shorter term pragmatic solution would be an ImageJ web client that connects to a remote server running ImageJ in headless mode, which does the heavy lifting. See also the [openmicroscopy.org/info/omero OMERO project].
+
 == Why is open software vital to science? ==
 
 One core principle of the [http://en.wikipedia.org/wiki/Scientific_method scientific method] is repeatability: the ability to continually retest and refine hypotheses. As computer software plays an increasingly large role in science, it is vital that that software be fully transparent and available to researchers: software is simply too complex to be easily reproduced from scratch by every research group. In contrast, closed source software presents a barrier to [http://en.wikipedia.org/wiki/Open_research_computation#Reproducibility_and_open_research_computing open research], because the implementation details of algorithms cannot be freely modified or even necessarily verified.
