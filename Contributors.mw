@@ -1,7 +1,7 @@
 __NOTOC__
 == Who we are ==
 
-<div style="float: left; width: 33%">
+<div style="float: left">
 === Principal investigators ===
 * [http://loci.wisc.edu/people/kevin-eliceiri Kevin Eliceiri]<sup>2</sup> (ImageJ/Fiji, OME)
 * [http://www.mpi-cbg.de/research/research-groups/pavel-tomancak.html Pavel Tomancak]<sup>5</sup> (ImageJ/Fiji)
@@ -24,7 +24,7 @@ __NOTOC__
 * [http://loci.wisc.edu/people/rick-lentz Rick Lentz]<sup>2</sup> (Nov 2009-Feb 2011)
 </div>
 
-<div style="float: left; width: 33%">
+<div style="float: left; padding-left: 10px; padding-right: 10px">
 === Fiji ===
 * [[User:Schindelin|Johannes Schindelin]]<sup>2</sup> (lead)
 * [http://albert.rierol.net Albert Cardona]<sup>6,12</sup>
@@ -48,7 +48,7 @@ __NOTOC__
 * [http://www.kaynig.de Verena Kaynig]
 </div>
 
-<div style="float: left; width: 33%">
+<div style="float: left">
 
 === ImgLib2 ===
 * Tobias Pietzsch<sup>5</sup> (lead)
@@ -71,7 +71,7 @@ __NOTOC__
 * Josh Moore<sup>10,11</sup> (co-lead)
 * Jean-Marie Burel<sup>11</sup> (co-lead)
 * Chris Allan<sup>10</sup> (co-lead)
-* See [http://openmicroscopy.org/site/about/who-ome OME Teams] for a complete list
+* See also [http://openmicroscopy.org/site/about/who-ome OME Teams]
 </div>
 
 <div style="clear: both">&nbsp;</div>
