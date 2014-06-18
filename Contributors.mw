@@ -1,5 +1,34 @@
+__NOTOC__
 == Who we are ==
 
+<div style="float: left; width: 33%">
+=== Principal investigators ===
+* Kevin Eliceiri<sup>2</sup> (ImageJ/Fiji, OME)
+* [http://www.mpi-cbg.de/research/research-groups/pavel-tomancak.html Pavel Tomancak]<sup>5</sup> (ImageJ/Fiji)
+* Anne Carpenter<sup>4</sup> (CellProfiler, ImageJ)
+* Michael Berthold<sup>9</sup> (KNIME)
+* Jason Swedlow<sup>10,11</sup> (OME)
+
+=== ImageJ1 team ===
+* Wayne Rasband<sup>1</sup> (lead)
+
+=== ImageJ2 team ===
+* [[User:Rueden|Curtis Rueden]]<sup>2</sup> (lead)
+* [[User:Schindelin|Johannes Schindelin]]<sup>2,5</sup>
+* [http://loci.wisc.edu/people/mark-hiner Mark Hiner]<sup>2</sup>
+* Lee Kamentsky<sup>4</sup>
+
+=== Past ImageJ2 developers ===
+* [http://loci.wisc.edu/people/aivar-grislis Aivar Grislis]<sup>2</sup> (Jan 2010-Dec 2013)
+* [http://loci.wisc.edu/people/barry-dezonia Barry DeZonia]<sup>2</sup> (Jan 2010-Nov 2013)
+* [http://loci.wisc.edu/people/grant-harris Grant Harris]<sup>3</sup> (Nov 2009-Jan 2012)
+* Adam Fraser<sup>4</sup> (Nov 2009-Aug 2011)
+* [http://loci.wisc.edu/people/rick-lentz Rick Lentz]<sup>2</sup> (Nov 2009-Feb 2011)
+</div>
+
+<div style="float: left; width: 33%">
+=== Fiji team ===
+* [[User:Schindelin|Johannes Schindelin]]<sup>2,5</sup> (lead)
 * [http://albert.rierol.net Albert Cardona]
 * [http://loci.wisc.edu/people/barry-dezonia Barry DeZonia]
 * [http://www.neurofly.de/ Benjamin Schmid]
@@ -11,20 +40,68 @@
 * [http://www2.mrc-lmb.cam.ac.uk/group-leaders/h-to-m/g-jefferis Greg Jefferis]
 * [http://bioweb.cnb.csic.es/~iarganda/index_EN.html Ignacio Arganda-Carreras]
 * [[JeanYvesTinevez|Jean-Yves Tinevez]]
-* [[User:Schindelin|Johannes Schindelin]]
 * [http://cmci.embl.de/ Kota Miura]
 * [http://synapses.clm.utexas.edu/lab/lindsey/lindsey.htm Larry Lindsey]
 * [http://homepages.inf.ed.ac.uk/s9808248/ Mark Longair]
 * [http://loci.wisc.edu/people/mark-hiner Mark Hiner]
-* [http://www.mpi-cbg.de/research/research-groups/pavel-tomancak.html Pavel Tomancak]
+* [http://www.mpi-cbg.de/research/research-groups/pavel-tomancak.html Pavel Tomancak]<sup>5</sup>
 * [http://monash.edu/science/about/schools/biological-sciences/staff/bryson-richardson/ Rob Bryson-Richardson]
 * [http://fly.mpi-cbg.de/~preibisch/ Stephan Preibisch]
 * [http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld]
 * [http://www.kaynig.de Verena Kaynig]
+</div>
 
+<div style="float: left; width: 33%">
+=== ImgLib2 team ===
+* Tobias Pietzsch<sup>5</sup> (lead)
+* Stephan Preibisch<sup>5</sup>
+* Stephan Saalfeld<sup>5</sup>
+
+=== SCIFIO team ===
+* Mark Hiner<sup>2</sup> (co-lead)
+* Curtis Rueden<sup>2</sup> (co-lead)
+
+=== CellProfiler team ===
+* Lee Kamentsky<sup>4</sup> (lead)
+
+=== KNIME Image Processing team ===
+* Christian Dietz<sup>9</sup> (co-lead)
+* Martin Horn<sup>9</sup> (co-lead)
+* Michael Zinsmaier<sup>9</sup>
+
+=== OME team ===
+* Josh Moore<sup>10,11</sup> (co-lead)
+* Jean-Marie Burel<sup>11</sup> (co-lead)
+* Chris Allan<sup>10</sup> (co-lead)
+* See [http://openmicroscopy.org/site/about/who-ome OME Teams] for a complete list
+</div>
+
+<div style="clear: both">&nbsp;</div>
+
+<div style="float: left; width: 40%">
+=== Plugins ===
 The specific plugin maintainers can be found at the [[Maintainer_page| maintainer page]].
 
-Our deep thanks to Wayne Rasband, [http://rsb.info.nih.gov/ij ImageJ] author, for all his support and patience!
+Our deep thanks to Wayne Rasband, author of [[ImageJ1]], for all his support and patience!
+</div>
+
+<div style="float: left; width: 59%">
+=== Institutions ===
+# National Institutes of Health
+# Laboratory for Optical and Computation (LOCI) at UW-Madison
+# Marine Biological Laboratory (MBL) at Woods Hole
+# Broad Institute of MIT and Harvard
+# Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG) at Dresden
+# Institute of Neuroinformatics, Uni/ETH Zurich
+# University of Wuerzburg, Germany
+# Institut Pasteur, Paris, France
+# University of Konstanz, Germany
+# Glencoe Software, Inc.
+# University of Dundee, Scotland
+# HHMI Janelia Farm
+</div>
+
+<div style="clear: both">&nbsp;</div>
 
 == Where are we ==
 
