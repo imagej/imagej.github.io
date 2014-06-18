@@ -32,6 +32,19 @@ One downside of doing this is that ImageJ will launch in a separate process, whi
 
 The term ''headless'' refers to running ImageJ without a graphical desktop, e.g. on a cluster. See the [[Headless]] page for more information.
 
+== How do I avoid running out of memory (OutOfMemoryError)? ==
+
+The first thing to do is make sure that ImageJ has a large enough "maximum heap" size:
+
+* Edit &gt; Options &gt; Memory &amp; Threads
+* Change "Maximum Memory" to something larger (at most, 1000 MB less than your computer's total RAM).
+
+Note that if you downloaded ImageJ recently (or are using the [[Fiji]] distribution of ImageJ), the [[Launcher|ImageJ launcher]] will already have guessed at a reasonable value: ~75% of physical RAM.
+
+If you are already at the limits of your computer's physical memory, the next step would be to add more.
+
+'''About Java garbage collection:''' Java always automatically calls the garbage collector when the heap is getting full [http://stackoverflow.com/questions/8719071 [1]]. While it is possible to manually invoke the garbage collector by clicking ImageJ's status bar&mdash;or programmatically by calling <code>run("Collect Garbage")</code> in a macro or <code>System.gc()</code> in a plugin&mdash;it will not solve the fundamental problem of Java actually not having a sufficient amount of memory. (The only exception to this is a rare case where Java decides that garbage collection is happening too slowly, in which case you should see the message "GC overhead limit exceeded" [http://www.petefreitag.com/item/746.cfm [2]]).
+
 = Installing/Updating =
 
 == How can I verify that my ImageJ is really 100% up to date? ==
