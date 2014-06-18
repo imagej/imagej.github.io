@@ -39,7 +39,7 @@ The first thing to do is make sure that ImageJ has a large enough "maximum heap"
 * Edit &gt; Options &gt; Memory &amp; Threads
 * Change "Maximum Memory" to something larger (at most, 1000 MB less than your computer's total RAM).
 
-Note that if you downloaded ImageJ recently (or are using the [[Fiji]] distribution of ImageJ), the [[Launcher|ImageJ launcher]] will already have guessed at a reasonable value: ~75% of physical RAM.
+Note that if you are using [[ImageJ2]] and/or [[Fiji]], the [[Launcher|ImageJ launcher]] will already have guessed at a reasonable value: ~75% of physical RAM.
 
 If you are already at the limits of your computer's physical memory, the next step would be to add more.
 
