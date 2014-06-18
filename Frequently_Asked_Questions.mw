@@ -44,7 +44,9 @@ If you flag any changes to be made, press the "Apply changes" to update your Ima
 
 == How do I install additional plugins? ==
 
-You can drag 'n drop the .jar files onto the ImageJ window, or use ''Plugins>Install Plugin...'' with .jar, .class and .java files, or copy the plugins to ''ImageJ.app/plugins/'' and call ''Help>Refresh Menus'' manually. A walk-through with screenshots is available [[Installing 3rd party plugins|here]].
+If the plugin is published on an [[Update Sites|ImageJ update site]], you can run ''Help > Update'' then click the ''Manage update sites'' button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
+
+Otherwise, you can drag 'n drop the .jar files onto the ImageJ window, or use ''Plugins>Install Plugin...'' with .jar, .class and .java files, or copy the plugins to ''ImageJ.app/plugins/'' and restart ImageJ. See the [[Installing 3rd party plugins|walk-through with screenshots]].
 
 == My plugin runs fine in the [[Script Editor]], but it does not show up in the menus when I install it. What's wrong? ==
 
