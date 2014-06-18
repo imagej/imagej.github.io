@@ -6,22 +6,22 @@ To debug problems with ImageJ, it is often helpful to launch it in debug mode. T
 <li>'''Launch with the <code>--debug</code> flag.'''
 <ul>
 <li>On Linux 64-bit (from a console):
-<blockquote><code>$HOME/ImageJ.app/ImageJ-linux64 --debug</code></blockquote>
+<source lang="bash">$HOME/ImageJ.app/ImageJ-linux64 --debug</source>
 </li>
 <li>On OS X (from Terminal):
-<blockquote><code>/Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx --debug</code></blockquote>
+<source lang="bash">/Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx --debug</source>
 </li>
 <li>On Windows 64-bit (from Command Prompt):
-<blockquote><code>%HOMEPATH%\ImageJ.app\ImageJ-win64.exe --debug</code></blockquote>
+<source lang="bash">%HOMEPATH%\ImageJ.app\ImageJ-win64.exe --debug</source>
 </ul>
 </li>
 <li>'''Set the <code>DEBUG</code> environment variable.''' E.g., on Linux:
-<blockquote><code>DEBUG=1 $HOME/ImageJ.app/ImageJ-linux64</code></blockquote>
+<source lang="bash">DEBUG=1 $HOME/ImageJ.app/ImageJ-linux64</source>
 </li>
 <li>'''Rename the launcher.''' You can rename the executable from <code>ImageJ-xxx</code> to <code>debug</code> (<code>debug.exe</code> on Windows) before launching, and the launcher will be more verbose about what it is doing.
 </li>
 <li>'''Set <code>scijava.log.level</code>.''' You can control the log level more precisely by setting the <code>scijava.log.level</code> system property. E.g., on Linux:
-<blockquote><code>$HOME/ImageJ.app/ImageJ-linux64 -Dscijava.log.level=trace --</code></blockquote>
+<source lang="bash">$HOME/ImageJ.app/ImageJ-linux64 -Dscijava.log.level=trace --</source>
 Valid levels include: <code>none</code>, <code>error</code>, <code>warn</code>, <code>info</code>, <code>debug</code> and <code>trace</code>.
 </li>
 </ol>
