@@ -134,6 +134,30 @@ in a terminal. This restores the window decorations but all windows from all vir
 
 Another solution is to install Unity-2D and choose it when you log in. This seems to work well. It also solves a number of general display problems.
 
+= Compatibility =
+
+== Will ImageJ1 macros, plugins and scripts still work in ImageJ2? ==
+
+Yes. We are completely committed to 100% backwards compatibility with ImageJ1. ImageJ2 includes the latest version of ImageJ1 "under the hood" so that existing macros, plugins and scripts will still run the same as before.
+
+ImageJ2 user interfaces are just plugins; ImageJ2 runs with the "ImageJ1 legacy UI" by default. But we have also created a new ImageJ2 user interface modeled after ImageJ1 to a very large extent, with all the same shortcut keys and behaviors whenever possible. Either way, ImageJ2 looks and feels like ImageJ1, but with a powerful new infrastructure allowing it to process a wider variety of image data more quickly and easily.
+
+== Does ImageJ2 support the ImageJ macro language? Is it deprecated? ==
+
+Thanks to the [https://github.com/imagej/imagej-legacy ImageJ legacy layer], ImageJ1 macros will run unchanged in ImageJ2, while also allowing to harness ImageJ2's new parameterized scripting paradigm&mdash;something that was previously not possible with the macro language.
+
+The ImageJ1 macro language has been extremely useful to many users. However, it has a substantial limitation: its functions are separate from those available from Java and the other scripting languages.
+
+In ImageJ2, the goal is to provide one unified set of functions, which is fully accessible from Java and all scripting languages. Hence, ImageJ2 plugins and scripts are more flexible than ImageJ1 plugins and macros. They can run headless on a server, and are accessible from various applications such as CellProfiler, KNIME, OMERO, and headless from the command line. We would encourage newly developed scripts and plugins to use the ImageJ2 API since it offers these advantages, but the ImageJ1 API will remain accessible, too.
+
+== Can I call ImageJ1 API from an ImageJ2 command? ==
+
+Yes, although it is not recommended. You will lose most of the advantages of ImageJ2 if you embed calls to ImageJ1 within your command. ImageJ1 is rather tightly coupled to AWT and hence does not work well headless. For details, see the [http://wiki.imagej.net/Headless Headless] wiki page for details.
+
+== Can I call ImageJ2 API from an ImageJ1 plugin? ==
+
+Yes, see the [https://github.com/imagej/imagej-tutorials/tree/master/call-modern-from-legacy call-modern-from-legacy] tutorial example.
+
 = [[Fiji]] =
 
 == How do I install Fiji? ==
