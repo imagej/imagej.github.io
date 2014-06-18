@@ -4,11 +4,19 @@
 
 This problem usually arises when 12-bit or 14-bit images are loaded into ImageJ without autoscaling. In that case, they are treated as if they were 16-bit images, and therefore the dynamic range is all wrong. You can fix this by clicking on ''Image>Adjust>Brightness/Contrast...'' and hitting the ''Auto'' button.
 
-= MacOSX =
+= Mac OS X =
 
 == Why does ImageJ crash frequently? ==
 
 This is most likely an AWT issue with Apple's version of Java 6. There is even a [http://fiji.sc/bugzilla/show_bug.cgi?id=197 bug in our bug tracker about it]. The problem is that we did not manage to find a work-around because the bug appears to be in the MacOSX-specific part of the Java Virtual Machine that was provided by Apple. It seems to be related to opening new windows while mouse updates are processed, though. If you have this issue, or find out what causes it, please comment on [http://fiji.sc/bugzilla/show_bug.cgi?id=197 this bug report].
+
+== How do I set up Java 6 on OS X? ==
+
+Newer versions of OS X come without Java installed, and only Java 7 is available from [http://java.com/ java.com].
+
+However, you can reinstall Java 6 on OS X. You must log in to [http://developer.apple.com/ developer.apple.com] with your Apple ID, search for "java" and download the latest Java 6 SE.
+
+At any time, you can verify which Javas are installed on your system using [https://github.com/ctrueden/ctr-scripts/blob/master/java-info this script].
 
 = Running =
 
