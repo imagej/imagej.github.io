@@ -198,10 +198,6 @@ This development style has been adopted by the [http://developer.imagej.net/ Ima
 * tests are added as automated regression tests (to be run by [http://jenkins.imagej.net/ the continuous integration] whenever new changes were pushed) whenever possible.
 * merges are usually done with ''--no-ff'', so that even fast-forwarding branches (i.e. rebased on top of ''master'') will get a merge commit in which the branch is described more broadly.
 
-== How to report issues? ==
-
-Add a ticket report to [http://fiji.sc/bugzilla/ Fiji's] or to [http://trac.imagej.net/ ImageJDev's] ticket system; private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in Fiji. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
-
 == Class loading issue in 3-rd party libraries (e.g. JPPF) ==
 
 Libraries trying to load resources or classes with the current thread's class loader rather than with IJ's class loader may fail. The solution is to first set the current thread's class loader to the IJ-classloader. This must be done from <u>the same thread</u> that will later call the problematic code:
