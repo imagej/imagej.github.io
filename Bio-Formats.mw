@@ -14,6 +14,10 @@
 
 Import data from many life sciences file formats, and export to several open formats.
 
+== History ==
+
+See [http://loci.wisc.edu/software/bio-formats LOCI's Bio-Formats site] for a historical narrative of the project.
+
 == Documentation ==
 
 What follows is a brief overview of the available plugins. You will find them all under the "Bio-Formats" submenu of Plugins. See the [http://www.openmicroscopy.org/site/products/bio-formats Bio-Formats web site] for additional information about Bio-Formats in general.
