@@ -1,3 +1,7 @@
+There are several mailing lists for community discussion and troubleshooting.
+
+If you have a natural allergy toward subscribing to mailing lists, the developers' mailing lists moderate posts from non-members (make '''really''' sure that you '''reply-to-all''' for that reason!). You can use [http://nabble.com Nabble]'s forum interface to [http://imagej.1557.x6.nabble.com/ ImageJ], [http://imagej-devel.54429.x6.nabble.com ImageJ-devel] or [http://fiji-devel.54424.x6.nabble.com/ fiji-devel]. Or just browse the archives to find information regarding your problem.
+
 == ImageJ and SciJava ==
 
 {| class="wikitable"
@@ -6,7 +10,7 @@
 [http://imagej.net/list.html ImageJ]
 | For general user and developer discussion about [[ImageJ]].
 
-<span style="font-size: smaller">This list is the best place to go for help with your specific use case.</span>
+<span style="font-size: smaller">With over 2000 members, this list is the best place to go for help with your specific use case.</span>
 |-
 | valign="top" |
 [http://imagej.net/mailman/listinfo/imagej-devel ImageJ-devel]
