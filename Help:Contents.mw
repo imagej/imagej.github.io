@@ -8,18 +8,18 @@ For video tutorials, please see the [http://youtube.com/fijichannel Fiji YouTube
 
 If you encounter a bug, please consider taking some time to [[Report a Bug]] and test our fixes. Remember: ImageJ is a community effort, and it will be as good as you make it.
 
-= Getting help regarding the Fiji Wiki =
+= Getting help regarding the ImageJ Wiki =
 
 If you look for help editing this Wiki, please look [http://www.mediawiki.org/wiki/Help:Contents here].
 
 A few tips:
 
-* to be able to edit a page, you need to log in. If you do not have a Fiji Wiki account yet, [http://fiji.sc/wiki/index.php?title=Special:Userlogin&type=signup register via email].
-* to edit a new page, just enter the title in the search box; there will be a red link you can follow to edit the page.
-* there are keyboard shortcuts available for ''Preview'' (Alt+P), ''Cancel'' (Alt+C) and ''Save Page'' (Alt+S). You can also jump between the main text and the summary with Tab and Shift+Tab. '''Note:''' the shortcut for ''Show Changes'' is Alt+V (<u>not</u> C!).
+* To be able to edit a page, you need to log in. If you do not have a Fiji Wiki account yet, [{{SERVER}}/wiki/index.php?title=Special:Userlogin&type=signup register via email].
+* To edit a new page, just enter the title in the search box; there will be a red link you can follow to edit the page.
+* There are keyboard shortcuts available for ''Preview'' (Alt+P), ''Cancel'' (Alt+C) and ''Save Page'' (Alt+S). You can also jump between the main text and the summary with Tab and Shift+Tab. '''Note:''' the shortcut for ''Show Changes'' is Alt+V (<u>not</u> C!).
 * With Safari on MacOSX, the shortcuts are available through Ctrl+Alt+<key>
-* if you see a page having a layout you want to imitate, pretend to edit that page, copy the respective markup code (you can cancel editing after you copied it), and paste it into the page where you want to have it.
-* there are shortcuts for a few menu items, such as ''Recent Changes'' (Alt+R) or the ''Main Page'' (Alt-Z).
+* If you see a page having a layout you want to imitate, pretend to edit that page, copy the respective markup code (you can cancel editing after you copied it), and paste it into the page where you want to have it.
+* There are shortcuts for a few menu items, such as ''Recent Changes'' (Alt+R) or the ''Main Page'' (Alt-Z).
 
 = New accounts =
 
