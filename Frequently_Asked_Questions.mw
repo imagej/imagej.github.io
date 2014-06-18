@@ -282,7 +282,7 @@ If you have an issue that is not mentioned here, you might want to [[Help:Conten
 
 == How to report issues? ==
 
-Add a ticket report to [http://fiji.sc/bugzilla/ Fiji's] or to [http://trac.imagej.net/ ImageJDev's] ticket system; private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in Fiji. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
+Use the ''Help > [[Report a Bug]]'' command, which adds a ticket report to the [http://fiji.sc/bugzilla/ Fiji bug tracker]. While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in Fiji. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
 
 = Miscellaneous =
 
