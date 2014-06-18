@@ -270,6 +270,10 @@ The ImageJ, Fiji and ImageJ2 projects are very closely related. Here are three a
 
 In short: we all collaborate, but have slightly different focus, hence the different projects and names.
 
+== How can we be sure that ImageJ1, ImageJ2 and Fiji aren't going to diverge or fork over time? ==
+
+We are working to create an architecture where the programs work together and preserve compatibility. Fiji is just ImageJ with batteries included, and ImageJ2 includes ImageJ1 as-is for maximum compatibility. Fiji now uses ImageJ2 at its core. Most importantly, all involved developers are strongly dedicated to avoiding divergence&mdash;we are working closely together to ensure that ImageJ2 represents a continuation of ImageJ and Fiji, rather than a project fork.
+
 == This is a Wiki but I cannot edit it! Why? ==
 
 If you [{{SERVER}}/wiki/index.php?title=Special:Userlogin&type=signup create an account], you will be able to make edits while logged in.
