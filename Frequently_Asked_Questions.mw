@@ -137,6 +137,19 @@ Unfortunately, there are quite a large number of possible reasons. Please help u
 
 As with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by [[Debugging_intro#Debugging_Java3D_issues|debugging the issues]] and [[Help:Contents|contacting us]] (preferably via mailing list) with the information. You can also [[report a Bug]], which will provide a lot of addidtional, potentially useful information.
 
+== I have a compile error building the 3D Viewer regarding a class ''Appearance'' ==
+
+If you get an error similar to this:
+
+ Building plugins/3D_Viewer.jar <- src-plugins/3D_Viewer/ImageJ_3D_...
+ src-plugins/3D_Viewer/customnode/CustomLineMesh.java:6: cannot find symbol
+ symbol  : class Appearance
+ location: package javax.media.j3d
+ import javax.media.j3d.Appearance;
+                       ^
+
+it means that you do not have ''Java3D'' installed. This happens typically when you have an environment variable ''JAVA_HOME'' set to an existing JDK <u>without</u> ''Java3D''. Try setting JAVA_HOME to a JDK with Java3D available. If you have write permissions to the path ''JAVA_HOME'' points to, you could [https://java3d.java.net/binary-builds.html install ''Java3D''] manually.
+
 = Development =
 
 == How do I develop Fiji in Eclipse? ==
@@ -188,24 +201,6 @@ This development style has been adopted by the [http://developer.imagej.net/ Ima
 == How to report issues? ==
 
 Add a ticket report to [http://fiji.sc/bugzilla/ Fiji's] or to [http://trac.imagej.net/ ImageJDev's] ticket system; private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in Fiji. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
-
-== I cloned fiji.git, but have a compile error regarding a class ''Appearance''. ==
-
-If you get an error similar to this:
-
- Building plugins/VIB_.jar <- src-plugins/VIB_/Align_Image.java src...
- Building plugins/3D_Viewer.jar <- src-plugins/3D_Viewer/ImageJ_3D_...
- src-plugins/3D_Viewer/customnode/CustomLineMesh.java:6: cannot find symbol
- symbol  : class Appearance
- location: package javax.media.j3d
- import javax.media.j3d.Appearance;
-                       ^
-
-it means that you do not have ''Java3D'' installed. This happens typically when you have an environment variable ''JAVA_HOME'' set to an existing JDK <u>without</u> ''Java3D''. To force the Fiji Build system to clone Fiji's known-good JDK, call
-
- unset JAVA_HOME
-
-Alternatively, if you have write permissions to the path ''JAVA_HOME'' points to, you could install ''Java3D'' manually.
 
 == Class loading issue in 3-rd party libraries (e.g. JPPF) ==
 
