@@ -51,7 +51,7 @@ Listening to the ImageJ community, it is clear that:
 # Further, any next-generation version of ImageJ must maintain community unity, and '''not fork the project'''. All components of this project will be developed as upgrades to core ImageJ.
 # The ImageJ community as a whole would substantially benefit from a '''central effort to organize''' and serve program code (both the core application and its plugins), keep track of bugs and feature requests, and better leverage external developer contributions.
 
-For more details, see the [http://developer.imagej.net/2010/10/29/imagejdev-presentation-imagejconf presentation from the 2010 ImageJ Conference].
+For more details, see the [http://developer.imagej.net/2010/10/29/imagejdev-presentation-imagejconf-2010 presentation from the 2010 ImageJ Conference].
 
 == Funding ==
 
