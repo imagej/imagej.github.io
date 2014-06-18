@@ -1,3 +1,31 @@
+= Launching ImageJ in debug mode =
+
+To debug problems with ImageJ, it is often helpful to launch it in debug mode. There are several ways:
+
+<ol>
+<li>'''Launch with the <code>--debug</code> flag.'''
+<ul>
+<li>On Linux 64-bit (from a console):
+<blockquote><code>$HOME/ImageJ.app/ImageJ-linux64 --debug</code></blockquote>
+</li>
+<li>On OS X (from Terminal):
+<blockquote><code>/Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx --debug</code></blockquote>
+</li>
+<li>On Windows 64-bit (from Command Prompt):
+<blockquote><code>%HOMEPATH%\ImageJ.app\ImageJ-win64.exe --debug</code></blockquote>
+</ul>
+</li>
+<li>'''Set the <code>DEBUG</code> environment variable.''' E.g., on Linux:
+<blockquote><code>DEBUG=1 $HOME/ImageJ.app/ImageJ-linux64</code></blockquote>
+</li>
+<li>'''Rename the launcher.''' You can rename the executable from <code>ImageJ-xxx</code> to <code>debug</code> (<code>debug.exe</code> on Windows) before launching, and the launcher will be more verbose about what it is doing.
+</li>
+<li>'''Set <code>scijava.log.level</code>.''' You can control the log level more precisely by setting the <code>scijava.log.level</code> system property. E.g., on Linux:
+<blockquote><code>$HOME/ImageJ.app/ImageJ-linux64 -Dscijava.log.level=trace --</code></blockquote>
+Valid levels include: <code>none</code>, <code>error</code>, <code>warn</code>, <code>info</code>, <code>debug</code> and <code>trace</code>.
+</li>
+</ol>
+
 = Debugging plugins in an IDE (Netbeans, IntelliJ, Eclipse, etc) =
 
 To debug a plugin in an IDE, you most likely need to provide a ''main()'' method. To make things easier, we provide helper methods in ''fiji-lib'' in the class ''fiji.Debug'' to run plugins, and to load images and run filter plugins:
