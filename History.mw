@@ -59,6 +59,7 @@ PlotData =
   barset:flavors
   at:1987 text:"[[NIH Image]]"
   at:1997 text:"[[ImageJ1]]"
+  at:2000 text:"[[ImageSXM]]"
   at:2005 text:"[[WCIF ImageJ]]"
   at:2005 text:"[[ImageJA]]"
   at:2007 text:"[[MBF ImageJ]]"
