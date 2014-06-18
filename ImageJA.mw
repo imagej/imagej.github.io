@@ -10,7 +10,7 @@
 | website                = [http://sourceforge.net/projects/imageja SourceForge site]
 }}
 
-ImageJA is a project that provides a clean Git History of the ImageJ 1.x branch, with a proper 'pom.xml' file so that it can be used with Maven without hassles.
+ImageJA is a project that provides a clean Git History of the ImageJ 1.x branch, with a proper 'pom.xml' file so that it can be used with [[Maven]] without hassles.
 
 == Historical note ==
 
