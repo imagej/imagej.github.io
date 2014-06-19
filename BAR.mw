@@ -9,7 +9,7 @@
 }}
 '''BAR''': Collection of '''B'''roadly '''A'''pplicable '''R'''outines.
 
-The collection contains [[Macros]], scripts and plugins focused on [[#Data Analysis|Data Analysis]], Image Annotation, Image Segmentation and Bitmap Morphometry. It is curated using [https://github.com/tferr/Scripts GitHub] and distributed as an optional [[List_of_update_sites|update site]].
+The collection contains [[Macros]], scripts and plugins focused on Data Analysis, Image Annotation, Image Segmentation and Bitmap Morphometry. It is curated using [https://github.com/tferr/Scripts GitHub] and distributed as an optional [[List_of_update_sites|update site]].
 
 == Installation ==
 The easiest way is to install and maintain the collection is to subscribe to the BAR update site. By doing so you will not need to manually download and install anything: the [[Fiji Updater]] will take care of it for you:<br>
