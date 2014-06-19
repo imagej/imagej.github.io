@@ -34,7 +34,13 @@ ImageJ2 provides a wealth of new features and capabilities:
 ** Plugins appear in the menu automatically without plugins.config files.
 ** Reusable in many contexts: KNIME, CellProfiler, OMERO, headless...
 
-== ImageJ2 is more than just an application ==
+=== Improved image I/O with the SCIFIO library ===
+
+ImageJ2 uses the [[SCIFIO]] library (SCientific Image Format Input and Output)  by default for most image input tasks. You can change this behavior at any time by running ''Edit > Options > ImageJ2'' and modifying the ''Use SCIFIO when opening files'' option.
+
+For further details, see the [[SCIFIO]] page.
+
+=== ImageJ2 is more than just an application ===
 
 ImageJ2 is also a collection of reusable software libraries built on the [http://www.scijava.org/ SciJava] software stack, using a powerful plugin framework to facilitate rapid development and painless user customization.
 
@@ -44,12 +50,6 @@ The following software component libraries form the core of ImageJ2:
 * [https://github.com/imagej/imagej-updater ImageJ Updater] - A mechanism to update individual plugins and libraries within ImageJ.
 * [https://github.com/imagej/imagej-legacy ImageJ Legacy] - Provides complete backwards compatibility with ImageJ 1.x.
 * [https://github.com/scijava/scijava-common SciJava Common] - The core frameworks for plugins, modules and the application itself.
-
-== Improved image I/O with the SCIFIO library ==
-
-ImageJ2 uses the [[SCIFIO]] library (SCientific Image Format Input and Output)  by default for most image input tasks. You can change this behavior at any time by running ''Edit > Options > ImageJ2'' and modifying the ''Use SCIFIO when opening files'' option.
-
-For further details, see the [[SCIFIO]] page.
 
 == Rationale ==
 
