@@ -14,7 +14,7 @@ If you look for help editing this Wiki, please look [http://www.mediawiki.org/wi
 
 A few tips:
 
-* To be able to edit a page, you need to log in. If you do not have a Fiji Wiki account yet, [{{SERVER}}/wiki/index.php?title=Special:Userlogin&type=signup register via email].
+* To be able to edit a page, you need to log in. If you do not have an ImageJ Wiki account yet, [{{SERVER}}/wiki/index.php?title=Special:Userlogin&type=signup register via email].
 * To edit a new page, just enter the title in the search box; there will be a red link you can follow to edit the page.
 * There are keyboard shortcuts available for ''Preview'' (Alt+P), ''Cancel'' (Alt+C) and ''Save Page'' (Alt+S). You can also jump between the main text and the summary with Tab and Shift+Tab. '''Note:''' the shortcut for ''Show Changes'' is Alt+V (<u>not</u> C!).
 * With Safari on MacOSX, the shortcuts are available through Ctrl+Alt+<key>
