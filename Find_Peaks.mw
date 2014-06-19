@@ -2,16 +2,15 @@
 {{Infobox Plugin
 | software        = ImageJ/Fiji
 | name            = Find Peaks
-| author          = Tiago Ferreira
-| maintainer     = [mailto:tiago_dot_ferreira_at_mail_dot_mcgill_dot_ca Tiago Ferreira]
-| filename        = [https://raw.github.com/tferr/Scripts/master/Analysis/Find_Peaks.bsh Find_Peaks.bsh]
-| source         = [https://github.com/tferr/Scripts/tree/master/Analysis#find-peaks on GitHub]
+| maintainer     = [[BAR#Installation| BAR update site]]
+| author          = [mailto:tiago_dot_ferreira_at_mail_dot_mcgill_dot_ca Tiago Ferreira]
+| filename        = [https://raw.github.com/tferr/Scripts/master/Data_Analysis/Find_Peaks.bsh Find_Peaks.bsh]
+| source         = [https://github.com/tferr/Scripts/tree/master/Data_Analysis#find-peaks on GitHub]
 | released        = February 2014
-| status          = Experimental
 | category        = [[:Category:Analysis|Analysis]], [[:Category:Scripting|Scripting]], [[:Category:Plugins|Plugins]]
 }}
 
-A [[Beanshell_Scripting|BeanShell]] script that retrieves local maxima and minima from an ImageJ plot. It was though as a [[Sholl_Analysis#Complementary_Tools|complementary tool]] for the [[Sholl Analysis]] plugin, but it is a general purpose routine that can be applied to any dataset.
+A [[BAR]] script (written in [[Beanshell_Scripting|BeanShell]]) that retrieves local maxima and minima from an ImageJ plot. The easiest way to install ''Find Peaks'' is by [[BAR#Installation|subscribing]] to the BAR [[List_of_update_sites|update site]].
 
 == Options ==
 [[File:FindPeaksSnapshot.png|thumb|right|550px|Analysis of synthetic data plotted from a .csv file. CSV files can be imported into ImageJ by drag and drop, or by using <span style="border-bottom:1px dotted #ccc;">File▷ Import▷ Results</span>. Once [[#options|options]] are specified, coordinates of retrieved peaks are logged to the table of a new plot window]]
@@ -35,7 +34,7 @@ A [[Beanshell_Scripting|BeanShell]] script that retrieves local maxima and minim
 * Peaks with flat tops are retrieved at their centers
 * Peak coordinates are logged according to the following layout: [''X0,Y0'']: Original data; [''X1,Y1'']: Maxima; [''X2,Y2'']: Minima
 * ''Min. peak distance'' can be used for peak width filtering
-* Right now, ''Find Peaks'' needs to be [[#Installation|installed]] manually from its [https://github.com/tferr/Scripts/tree/master/Analysis#analysis GitHub repository], but soon it will be available through the [[Update Fiji|Fiji Updater]] by means of an [[List_of_update_sites|update site]].
+* Find Peaks was initially though as a [[Sholl_Analysis#Complementary_Tools|complementary tool]] for [[Sholl Analysis]] but it that can be applied to any dataset. For this reason, it is now part of [[BAR]]
 
 == Related Resources ==
 Analysis of 1D-signals was discussed in March 2014 on the [https://list.nih.gov/cgi-bin/wa.exe?A1=ind1403&L=IMAGEJ#32 ImageJ mailing list]. That discussion highlighted the following alternatives to ''Find Peaks'':
@@ -44,15 +43,27 @@ Analysis of 1D-signals was discussed in March 2014 on the [https://list.nih.gov/
 * [http://imagejdocu.tudor.lu/doku.php?id=plugin:filter:fast_filters:start Fast Filters plugin] by Michael Schmid, a collection of unidirectional filters that can be applied to to rows or columns in an image ([https://list.nih.gov/cgi-bin/wa.exe?A2=ind1403&L=IMAGEJ&F=&S=&P=136934 instructions]). 
 
 == Installation ==
-Drag this [https://raw.github.com/tferr/Scripts/master/Analysis/Find_Peaks.bsh direct download link] and drop it into the main Fiji window. Alternatively, open the [[Script Editor]], select ''Language>Beanshell'' and paste the following script (you can double-click the text to select it after which the usual ''Edit>Copy'', ''[focus on the editor window]'', ''Edit>Paste'' stanza works just fine):
+Drag this [https://raw.github.com/tferr/Scripts/master/Data_Analysis/Find_Peaks.bsh direct download link] and drop it into the main Fiji window. Alternatively, open the [[Script Editor]], select ''Language>Beanshell'' and paste the following script (you can double-click the text to select it after which the usual ''Edit>Copy'', ''[focus on the editor window]'', ''Edit>Paste'' stanza works just fine):
 
 <source lang="java">
 /* Find Peaks: Returns the local maxima and minima of an ImageJ plot.
  * https://github.com/tferr/Scripts#scripts
  *
  * Requires ImageJ 1.48d or newer. See http://fiji.sc/Find_Peaks for details.
- * Tiago Ferreira, v1.0.2 2014.03.07
+ * Tiago Ferreira, v1.0.3 2014.06.19
  */
+
+import ij.IJ;
+import ij.ImagePlus;
+import ij.WindowManager;
+import ij.gui.GenericDialog;
+import ij.gui.ImageWindow;
+import ij.gui.Plot;
+import ij.gui.PlotWindow;
+import ij.plugin.filter.MaximumFinder;
+import ij.util.ArrayUtil;
+import ij.util.Tools;
+
 
 double tolerance;
 double minPeakDistance;
