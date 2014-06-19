@@ -9,7 +9,7 @@
 }}
 '''BAR''': Collection of '''B'''roadly '''A'''pplicable '''R'''outines.
 
-The collection contains [[Macros]], scripts and plugins focused on Data Analysis, Image Annotation, Image Segmentation and Bitmap Morphometry. It is curated using [https://github.com/tferr/Scripts GitHub] and distributed as an optional [[List_of_update_sites|update site]].
+The collection contains [[Macros]], [[Scripts]] and [[Plugins]] focused on Data Analysis, Image Annotation, Image Segmentation and Bitmap Morphometry. It is curated using [https://github.com/tferr/Scripts GitHub] and distributed as an optional [[List_of_update_sites|update site]].
 
 == Installation ==
 The easiest way is to install and maintain the collection is to subscribe to the BAR update site. By doing so you will not need to manually download and install anything: the [[Fiji Updater]] will take care of it for you:<br>
@@ -30,7 +30,7 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
         {{border-radius|.75em}}{{box-shadow}}">
 '''Tip:''' You can open any BAR script by holding {{key press|Shift}} while selecting its name from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> drop-down menu.</div>
 
-== List of Routines ==
+== List of BARs ==
 ;[https://github.com/tferr/Scripts/blob/master/README.md#image-annotation Annotation]
 #[https://github.com/tferr/Scripts/blob/master/Annotation/README.md#roi-color-coder ROI Color Coder]
 
