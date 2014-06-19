@@ -393,11 +393,11 @@ While it used to be true that Java is always slower than the equivalent in C++, 
 
 Pragmatically, one should note that there is not really a big difference in performance when comparing Java to C++.
 
-The real reason why Fiji is written in Java is that ImageJ is written in Java.
+Java programs run without trouble and without recompiling on the major platforms: Windows, Mac OS X and Linux. And plugins compiled on one platform also execute on all other platforms without recompiling. And profiling and debugging is easier with Java than with C++. And all programs/plugins double as libraries.
 
-The reason why we chose ImageJ as the core of Fiji is that it runs without trouble and without recompiling on the major platforms: Windows, MacOSX and Linux. And plugins compiled on one platform also execute on all other platforms without recompiling. And profiling and debugging is easier with Java than with C++. And all programs/plugins double as libraries.
+So the true reason why we use Java is probably: it makes ImageJ accessible.
 
-So the true reason why we use Java is probably: it makes Fiji accessible.
+See also [http://loci.wisc.edu/faq/isnt-java-too-slow Isn't Java too slow?] and [http://loci.wisc.edu/faq/why-java Why is your software written in Java?] from the LOCI FAQ.
 
 == With Oracle buying Sun and Apple deprecating Java, does Java have a future? ==
 
