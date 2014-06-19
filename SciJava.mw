@@ -1,0 +1,10 @@
+SciJava is a collaboration of projects providing software for scientific computing&mdash;an effort to cooperate and reuse code when feasible.
+
+The following components are part of the '''SciJava software stack''':
+* [[SciJava Common]] - core shared library, with a powerful plugin framework and application container.
+* [[ImgLib2]] - core library for N-dimensional image processing.
+* [[SCIFIO]] - core library for N-dimensional image I/O.
+* [[ImageJ2]] - library and application for N-dimensional image processing.
+* [[Fiji]] - extension of [[ImageJ]] for life sciences research.
+
+See the [http://scijava.org/ SciJava web site] for further details.
