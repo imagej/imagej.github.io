@@ -31,15 +31,15 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
 '''Tip:''' You can open any BAR script by holding {{key press|Shift}} while selecting its name from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> drop-down menu.</div>
 
 == List of Routines ==
-;[https://github.com/tferr/Scripts/blob/master/README.md#data-analysis Analysis]
-#[http://imagejdocu.tudor.lu/doku.php?id=macro:distribution_plotter Distribution Plotter]
-#[[Find Peaks]]
-#Fit Polynomial
-#Plot Results
-
-
 ;[https://github.com/tferr/Scripts/blob/master/README.md#image-annotation Annotation]
-#[http://imagejdocu.tudor.lu/doku.php?id=macro:roi_color_coder ROI Color Coder]
+#[https://github.com/tferr/Scripts/blob/master/Annotation/README.md#roi-color-coder ROI Color Coder]
+
+
+;[https://github.com/tferr/Scripts/blob/master/README.md#data-analysis Data Analysis]
+#[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#distribution-plotter Distribution Plotter]
+#[[Find Peaks]]
+#[[Sholl_Analysis#Complementary_Tools|Fit Polynomial]]
+#[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#plot-results Plot Results]
 
 
 ;[https://github.com/tferr/Scripts/blob/master/README.md#neuronal-morphometry Morphometry]
@@ -47,21 +47,24 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
 
 
 ;[https://github.com/tferr/Scripts/blob/master/README.md#image-segmentation Segmentation]
-#Apply Threshold To ROI
-#Clear Thresholded Pixels
-#Threshold From Background
-#Wipe Background
+#[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#apply-threshold-to-roi Apply Threshold To ROI]
+#[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#clear-thresholded-pixels Clear Thresholded Pixels]
+#[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#threshold-from-background Threshold From Background]
+#[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#wipe-background Wipe Background]
 
 
 ;[https://github.com/tferr/Scripts/blob/master/README.md#tools-and-toolsets Tools and Toolsets]
-#Calibration Menu
-#[https://github.com/tferr/Scripts/blob/master/Tools/README.md#toolsets ROI Manager Tools]
-#Segment Profile
-#Shortcuts Menu
-#Toolset Creator
+#[https://github.com/tferr/Scripts/blob/master/Tools/README.md#calibration-menu Calibration Menu]
+#[https://github.com/tferr/Scripts/blob/master/Tools/README.md#roi-manager-tools ROI Manager Tools]
+#[https://github.com/tferr/Scripts/blob/master/Tools/README.md#segment-profile-tool Segment Profile]
+#[https://github.com/tferr/Scripts/blob/master/Tools/README.md#shortcuts-menu Shortcuts Menu]
+#[https://github.com/tferr/Scripts/blob/master/Tools/README.md#toolset-creator Toolset Creator]
 
 
 == FAQ ==
+;Can I contribute to BAR?
+: Yes, please do! If you have some suggestions on how to improve it, do [https://github.com/tferr/Scripts#help let us know].
+
 ;How do I uninstall BAR?
 :If you are using Fiji: run the [[Fiji Updater|Updater]]. Choose ''Advance Mode'' then ''Manage update sites''. Deactivate the ''BAR'' checkbox in the alphabetically-sorted list of update sites. Press ''OK'', then ''Apply changes''. All BAR files will be deleted. Note that you can install and uninstall BAR as you see fit. See [[How to follow a 3rd party update site]] for more details.
 :If you have a installed BAR manually and cannot remember where files were placed have a look at this [https://github.com/tferr/Scripts/tree/master/BAR#bar-specific-files installation list].
