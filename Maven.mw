@@ -122,6 +122,6 @@ For the <code>groupId</code>, it is typically best to use the reversed domain na
 
 * Our very own [[Maven - Frequently Asked Questions|Frequently Asked Questions]]
 * [http://maven.apache.org/guides/getting-started/ Maven's Getting Started]
-* [http://books.sonatype.com/mvnref-book/reference/public-book.html">Maven: The Complete Reference</a></li>
-* [http://books.sonatype.com/mvnex-book/reference/public-book.html">Maven by Example</a></li>
-* [http://books.sonatype.com/nexus-book/reference/">Nexus Book: Repository Management with Nexus</a></li>
+* [http://books.sonatype.com/mvnref-book/reference/public-book.html Maven: The Complete Reference]
+* [http://books.sonatype.com/mvnex-book/reference/public-book.html Maven by Example]
+* [http://books.sonatype.com/nexus-book/reference/ Nexus Book: Repository Management with Nexus]
