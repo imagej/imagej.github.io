@@ -30,6 +30,8 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
         {{border-radius|.75em}}{{box-shadow}}">
 '''Tip:''' You can open any BAR script by holding {{key press|Shift}} while selecting its name from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu.</div>
 
+
+[[ File:BARsnapshot.png|right|Overview of BAR (v1.0.0)]]
 == List of BARs ==
 ;[https://github.com/tferr/Scripts/blob/master/README.md#image-annotation Annotation]
 #[https://github.com/tferr/Scripts/blob/master/Annotation/README.md#roi-color-coder ROI Color Coder]
@@ -59,6 +61,7 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
 #[https://github.com/tferr/Scripts/blob/master/Tools/README.md#segment-profile-tool Segment Profile]
 #[https://github.com/tferr/Scripts/blob/master/Tools/README.md#shortcuts-menu Shortcuts Menu]
 #[https://github.com/tferr/Scripts/blob/master/Tools/README.md#toolset-creator Toolset Creator]
+
 
 == Calling BARs ==
 The scripts in BAR become more useful when incorporated into other routines. For example: the command <span style="border-bottom:1px dotted #ccc;">BAR▷ Segmentation▷ Clear Thresholded Pixels</span> sets to zero thresholded pixels inside the active area ROI and becomes handy when images have to be manually segmented. However shuttling between the image canvas and the <span style="border-bottom:1px dotted #ccc;">BAR▷ </span> menu can soon become cumbersome. So why not evoke the script in a more expedite way? Here are two alternatives:
