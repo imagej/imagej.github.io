@@ -9,13 +9,13 @@
 }}
 '''BAR''': Collection of '''B'''roadly '''A'''pplicable '''R'''outines.
 
-The collection contains [[Macros]], [[Scripts]] and [[Plugins]] focused on Data Analysis, Image Annotation, Image Segmentation and Bitmap Morphometry. It is curated using [https://github.com/tferr/Scripts GitHub] and distributed as an optional [[List_of_update_sites|update site]].
+The collection contains [[Macros]], [[Scripts]] and [[Plugins]] focused on Data Analysis, Image Annotation, Image Segmentation and Bitmap Morphometry. It is curated using [https://github.com/tferr/Scripts#ij-bar GitHub] and distributed as an optional [[List_of_update_sites|update site]].
 
 == Installation ==
 The easiest way is to install and maintain the collection is to subscribe to the BAR update site. By doing so you will not need to manually download and install anything: the [[Fiji Updater]] will take care of it for you:<br>
 Run <span style="border-bottom:1px dotted #ccc;">Help▷ Update...</span> Choose ''Advance Mode'' then ''Manage update sites''. Activate the ''BAR'' checkbox in the alphabetically-sorted list of update sites. Press ''OK'', then ''Apply changes''. Restart ImageJ. That's it. Enjoy BAR!
 
-Alternatively, if you prefer to manually install and update the collection, you can do so through [https://github.com/tferr/Scripts GitHub]: either by downloading individual files, or by downloading the entire repository as a [https://github.com/tferr/Scripts/archive/master.zip ZIP archive].
+Alternatively, if you prefer to manually install and update the collection, you can do so through [https://github.com/tferr/Scripts#ij-bar GitHub]: either by downloading individual files, or by downloading the entire repository as a [https://github.com/tferr/Scripts/archive/master.zip ZIP archive].
 
 == Description ==
 BAR files are accessible through a dedicated top-level menu subdivided in task-oriented categories. Some of the routines have a dedicated documentation page, others feature built-in help while a handful were deemed too simple to require dedicated instructions. Nevertheless, all files are described in the ''Details'' panel of the Fiji Updater and contain useful commentary at the top of the source code file.
@@ -28,7 +28,7 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
         margin-bottom: 2em;
         background-color: #ffefbe;
         {{border-radius|.75em}}{{box-shadow}}">
-'''Tip:''' You can open any BAR script by holding {{key press|Shift}} while selecting its name from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> drop-down menu.</div>
+'''Tip:''' You can open any BAR script by holding {{key press|Shift}} while selecting its name from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu.</div>
 
 == List of BARs ==
 ;[https://github.com/tferr/Scripts/blob/master/README.md#image-annotation Annotation]
@@ -60,10 +60,42 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
 #[https://github.com/tferr/Scripts/blob/master/Tools/README.md#shortcuts-menu Shortcuts Menu]
 #[https://github.com/tferr/Scripts/blob/master/Tools/README.md#toolset-creator Toolset Creator]
 
+== Calling BARs ==
+The scripts in BAR become more useful when incorporated into other routines. For example: the command <span style="border-bottom:1px dotted #ccc;">BAR▷ Segmentation▷ Clear Thresholded Pixels</span> sets to zero thresholded pixels inside the active area ROI and becomes handy when images have to be manually segmented. However shuttling between the image canvas and the <span style="border-bottom:1px dotted #ccc;">BAR▷ </span> menu can soon become cumbersome. So why not evoke the script in a more expedite way? Here are two alternatives:
+
+==== Using Keyboard Shortcut ====
+You can use <span style="border-bottom:1px dotted #ccc;">Plugins▷ Shortcuts▷ Create Shortcut...</span> to assign hotkeys (e.g., keyboard key that you do not use frequently such as {{key press|0}}  or {{key press|1}}) to any script registered in the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu. Alternatively, you could use <span style="border-bottom:1px dotted #ccc;">BAR▷ Tool Installers▷ Install Shortcuts Menu</span>, that uses a similar approach to register frequently used commands in the ImageJ main window.
+
+==== Using Other Scripts ====
+What about installing <span style="border-bottom:1px dotted #ccc;">Clear Thresholded Pixels</span> in the image's contextual (popup) menu, so that it is always accessible in the image canvas upon a right-click? As detailed in the [http://imagej.nih.gov/ij/docs/guide/146-21.html#sec:ContextualMenu ImageJ User Guide], the contextual menu is controlled by a macro called ''Popup Menu'' that gets loaded at startup. To modify it:
+# {{key press|Shift}}-click on the ">>" ''More Tools'' drop down menu, and choose ''Startup Macros''. This will open the respective file in the Editor.
+# Modify the ''Popup Menu'' macro accordingly (create it, if not present).
+<source lang="java">
+// Specify list of commands
+var myCmds = newArray("Duplicate...", "-", "Clear Thresholded Pixels");  
+
+// Build the contextual menu
+var myPopupMenu= newMenu("Popup Menu", myCmds);
+macro "Popup Menu" {
+  cmd = getArgument(); 
+  run(cmd);
+ }
+</source>
+'''N.B.:''' In Fiji, you may need to save the file in the macros folder as ''StartupMacros.fiji.ijm''
+
 
 == FAQ ==
+;What is the rationale behind BAR?
+:The motivation behind bar is quite simple: To collect snippets of code that can be incorporated into any workflow. So rather than performing fully fledged procedures, BARs tend to produce single tasks. The advantages are two-fold: 1) Scripts are easier to understand and maintain and 2) they can be used to complement any other ImageJ add-on, let it be the simplest macro or the most sophisticated plugin.
+
+;Will I find BAR useful?
+:[https://github.com/tferr/Scripts#citations Probably]. But it is likely that you will need to delve a bit into the [[#Calling_BARs|BAR philosophy]].
+
 ;Can I contribute to BAR?
 : Yes, please do! If you have some suggestions on how to improve it, do [https://github.com/tferr/Scripts#help let us know].
+
+;Nothing happens when I run a BAR. What's going on?
+:In a case of premature termination BARs tend to exit rather silently. The best way to have insights on an unexpected error is to run it directly from the [[Script Editor]]: Open the script by holding {{key press|Shift}} while selecting it from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu, press ''Run''  and have a look at the editors' s console, where all sort of useful messages will be printed to. Do [https://github.com/tferr/Scripts#help let us know] if you have found a bug.
 
 ;How do I uninstall BAR?
 :If you are using Fiji: run the [[Fiji Updater|Updater]]. Choose ''Advance Mode'' then ''Manage update sites''. Deactivate the ''BAR'' checkbox in the alphabetically-sorted list of update sites. Press ''OK'', then ''Apply changes''. All BAR files will be deleted. Note that you can install and uninstall BAR as you see fit. See [[How to follow a 3rd party update site]] for more details.
@@ -71,4 +103,4 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
 
 
 == License ==
-This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+These scripts are free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
