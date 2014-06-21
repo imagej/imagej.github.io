@@ -434,20 +434,20 @@ On the other hand, it is possible to adopt more sophisticated [[:Category:Segmen
 * [[RATS:_Robust_Automatic_Threshold_Selection|Robust Automatic Threshold Selection]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
 * [[Level_Sets|Level Sets]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
 
-Semi-automated segmentation can also be improved through the usage of simple [[:Category:Scripting|scripts]] that automate frequently used commands, including the ones in this [https://github.com/tferr/Scripts#scripts Github repository] tailored to Bitmap Sholl. Right now, these scripts are installed individually from their [https://github.com/tferr/Scripts#image-segmentation GitHub repository], but soon they will be available through the [[Update Fiji|Fiji Updater]] by means of an [[List_of_update_sites|update site]].
+Semi-automated segmentation can also be improved through the usage of simple routines that automate frequently used commands such as the ones provided by [[BAR]] and its [[BAR#Installation|update site]]. As of version 3.4.2, several BAR scripts are particularly suitable for processing workflows preceding bitmat Sholl. For more information have a look at the [[BAR#Segmentation|Segmentation]]  and  [[BAR#Calling_BARs|Calling BARs]]  sections of the [[BAR|BAR documentation page]].
 
-For more information about image processing have a look at the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide], the Fiji [[Cookbook]], Fiji [[:Category:Tutorials|tutorials]], the [http://imagejdocu.tudor.lu ImageJ Information and Documentation Portal], and remaining documentation resources (<span style="border-bottom:1px dotted #ccc;">Help▷ Documentation...</span>).
+For generalized information about image processing have a look at the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide], the Fiji [[Cookbook]], Fiji [[:Category:Tutorials|tutorials]], the [http://imagejdocu.tudor.lu ImageJ Information and Documentation Portal], and remaining documentation resources (<span style="border-bottom:1px dotted #ccc;">Help▷ Documentation...</span>).
 
 == Complementary Tools ==
-<span id="Extended_Fitting"></span>[[ File:AnimatedPolyFit.gif|frame|Sampled data from the ddaC cell (<span style="border-bottom:1px dotted #ccc;">File▷ Open Samples▷ ddaC Neuron</span>) being fitted to polynomials of varying degree using the Complementary Fitting Toolbox.]]
+<span id="Extended_Fitting"></span>[[ File:AnimatedPolyFit.gif|frame|Sampled data from the ddaC cell (<span style="border-bottom:1px dotted #ccc;">File▷ Open Samples▷ ddaC Neuron</span>) being fitted to polynomials of varying degree using a complementary [[BAR]] script.]]
 
-''Sholl Analysis'' tries to be as flexible as possible by providing several options for normalization and curve fitting. However, it cannot offer exhaustive curve fitting options for two main reasons: 1) Extensive options would clutter the plugin's interface and 2) Determining ''best fit models'' requires reasonable choices that are not amenable to full automation. For these reasons,  complementary tools for curve fitting can be installed as needed to complement the plugin. As of version 3.4.1, the ''Complementary Fitting Toolbox'' consists of the following tools:
+''Sholl Analysis'' tries to be as flexible as possible by providing several options for normalization and curve fitting. However, it cannot offer exhaustive curve fitting options for two main reasons: 1) Extensive options would clutter the plugin's interface and 2) Determining ''best fit models'' requires reasonable choices that are not amenable to full automation. For these reasons,  complementary tools for curve fitting can be installed as needed using [[BAR]] by subscribing to its [[BAR#Installation|update site]]. As of version 3.4.2, several BAR commands complement ''Sholl Analysis''. These include:
 
-* '''[[Find Peaks]]:''' Retrieves local maxima under several filtering options such as peak amplitude, peak height and peak width. Can be used to retrieve secondary sites of branch density ([https://raw.githubusercontent.com/tferr/Scripts/master/Analysis/Find_Peaks.bsh direct download]).
-* '''Fit Polynomial:''' Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions. Requires the [http://commons.apache.org/proper/commons-math/ apache commons math library], distributed with Fiji. The script provides [[#Non-Fiji_users|Non-Fiji users]] with direct download links that install all required dependencies ([https://raw.githubusercontent.com/tferr/Scripts/master/Analysis/Fit_Polynomial.bsh direct download]).
-* '''Plot Results:''' Whole-purpose routine that plots data from imported spreadsheets ([https://raw.githubusercontent.com/tferr/Scripts/master/Analysis/Plot_Results.bsh direct download]). 
+* '''[[Find Peaks]]:''' Retrieves local maxima under several filtering options such as peak amplitude, peak height and peak width. Can be used to retrieve secondary sites of branch density
+* '''[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#fit-polynomial Fit Polynomial]:''' Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions. Requires the [http://commons.apache.org/proper/commons-math/ apache commons math library], distributed with Fiji. The script provides [[#Non-Fiji_users|Non-Fiji users]] with direct download links that install all required dependencies
+* '''[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#plot-results Plot Results]:''' Whole-purpose routine that plots data from imported spreadsheets. 
 
-Right now, these [[Beanshell_Scripting|Beanshell]] scripts are installed individually from their [https://github.com/tferr/Scripts/blob/master/Analysis/README.md#analysis GitHub repository], but soon they will be available through the [[Update Fiji|Fiji Updater]] by means of an [[List_of_update_sites|update site]].
+To install BAR, run <span style="border-bottom:1px dotted #ccc;">Help▷ Update...</span> Choose ''Advance Mode'' then ''Manage update sites''. Activate the ''BAR'' checkbox in the list of update sites. See the [[BAR#Installation|BAR documentation page]] for more details.
 
 == Auxiliary Commands ==
 ;File▷ Open Samples▷ ddaC Neuron
@@ -606,6 +606,8 @@ Releases notes are available on [https://github.com/tferr/ASA/blob/master/Notes.
 
 == Related Resources ==
 * '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]]''' Mark Longair's plugin for semi-automated three-dimensional tracing, featuring [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl analysis]] for traced cells
+
+* '''[[BAR]]''', ''B''roadly ''A''pplicable ''R''outines that complement ''Sholl Analysis''
 
 * '''[[Strahler_Analysis|Strahler_Analysis]]''' Strahler Analysis on [[Skeletonize3D|skeletonized]] arbors.
 
