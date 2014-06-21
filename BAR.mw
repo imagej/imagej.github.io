@@ -33,11 +33,11 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
 
 [[ File:BARsnapshot.png|right|Overview of BAR (v1.0.0)]]
 == List of BARs ==
-;[https://github.com/tferr/Scripts/blob/master/README.md#image-annotation Annotation]
+;[https://github.com/tferr/Scripts/blob/master/README.md#image-annotation Annotation]<span id="Annotation"></span>'
 #[https://github.com/tferr/Scripts/blob/master/Annotation/README.md#roi-color-coder ROI Color Coder]
 
 
-;[https://github.com/tferr/Scripts/blob/master/README.md#data-analysis Data Analysis]
+;[https://github.com/tferr/Scripts/blob/master/README.md#data-analysis Data Analysis]<span id="Data_Analysis"></span>'
 #[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#distribution-plotter Distribution Plotter]
 #[[Find Peaks]]
 #[[Sholl_Analysis#Complementary_Tools|Fit Polynomial]]
@@ -45,17 +45,17 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
 
 
 ;[https://github.com/tferr/Scripts/blob/master/README.md#neuronal-morphometry Morphometry]
-#[[Strahler Analysis]]
+#[[Strahler Analysis]]<span id="Morphometry"></span>'
 
 
-;[https://github.com/tferr/Scripts/blob/master/README.md#image-segmentation Segmentation]
+;[https://github.com/tferr/Scripts/blob/master/README.md#image-segmentation Segmentation]<span id="Segmentation"></span>'
 #[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#apply-threshold-to-roi Apply Threshold To ROI]
 #[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#clear-thresholded-pixels Clear Thresholded Pixels]
 #[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#threshold-from-background Threshold From Background]
 #[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#wipe-background Wipe Background]
 
 
-;[https://github.com/tferr/Scripts/blob/master/README.md#tools-and-toolsets Tools and Toolsets]
+;[https://github.com/tferr/Scripts/blob/master/README.md#tools-and-toolsets Tools and Toolsets]<span id="Tools"></span>'
 #[https://github.com/tferr/Scripts/blob/master/Tools/README.md#calibration-menu Calibration Menu]
 #[https://github.com/tferr/Scripts/blob/master/Tools/README.md#roi-manager-tools ROI Manager Tools]
 #[https://github.com/tferr/Scripts/blob/master/Tools/README.md#segment-profile-tool Segment Profile]
@@ -71,7 +71,7 @@ You can use <span style="border-bottom:1px dotted #ccc;">Plugins▷ Shortcuts▷
 
 ==== Using Other Scripts ====
 What about installing <span style="border-bottom:1px dotted #ccc;">Clear Thresholded Pixels</span> in the image's contextual (popup) menu, so that it is always accessible in the image canvas upon a right-click? As detailed in the [http://imagej.nih.gov/ij/docs/guide/146-21.html#sec:ContextualMenu ImageJ User Guide], the contextual menu is controlled by a macro called ''Popup Menu'' that gets loaded at startup. To modify it:
-# {{key press|Shift}}-click on the ">>" ''More Tools'' drop down menu, and choose ''Startup Macros''. This will open the respective file in the Editor.
+# {{key press|Shift}}-click on the ">>" ''More Tools'' drop down menu, and choose ''Startup Macros''. This will open the respective file in the [[Script Editor]].
 # Modify the ''Popup Menu'' macro accordingly (create it, if not present).
 <source lang="java">
 // Specify list of commands
