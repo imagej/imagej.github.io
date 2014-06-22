@@ -1,6 +1,6 @@
 == Installation ==
 
-Go to "Help" => "Update..." => "Manage update site" => select "PET-CT" => apply change.
+After installing Fiji, go to "Help" => "Update..." => "Manage update site" => select "PET-CT" => apply change.
 
 === The software ===
 
@@ -12,5 +12,5 @@ Go to "Help" => "Update..." => "Manage update site" => select "PET-CT" => apply 
 **Save As Dicom [http://sourceforge.net/p/bifijiplugins/wiki/Save%20as%20myDicom/ Help]
 **Postage Stamps [http://sourceforge.net/p/bifijiplugins/wiki/Postage%20stamps/ Help]
 **Mask [http://sourceforge.net/p/bifijiplugins/wiki/Mask/ Help]
-*Read_BI_Studies.jar<p></p>
+*Read_BI_Studies.jar<p>This is for read-write to the Beth Israel miniPacs. [http://sourceforge.net/p/bifijiplugins/wiki/Reading%20studies/ Help] The program to set up the database [http://sourceforge.net/projects/bifijiplugins/files/ createBIdatabase.jar] is not part of Fiji and needs to be downloaded and run separately. [http://sourceforge.net/p/bifijiplugins/wiki/BI%20Database/ Help]</p>
 For questions please contact me at ilan.tal@gmail.com
