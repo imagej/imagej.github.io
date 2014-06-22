@@ -2,6 +2,8 @@
 
 After installing Fiji, go to "Help" => "Update..." => "Manage update site" => select "PET-CT" => apply change.
 
+This will bring up a list of all plugins, not all of which need be installed. For example you may not want Read_ClearCanvas_Studies.jar and/or Read_BI_Studies.jar. In such cases click on "Status/Action" and choose "Keep as-is"
+
 === The software ===
 
 *Pet_Ct_Viewer.jar<p>This is the basic package needed by all other plugins. [http://sourceforge.net/p/bifijiplugins/wiki/Pet-Ct%20Viewer/ Help]</p>
