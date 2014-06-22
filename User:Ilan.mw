@@ -1,1 +1,16 @@
+== Installation ==
 
+Go to "Help" => "Update..." => "Manage update site" => select "PET-CT" => apply change.
+
+=== The software ===
+
+*Pet_Ct_Viewer.jar<p>This is the basic package needed by all other plugins. [http://sourceforge.net/p/bifijiplugins/wiki/Pet-Ct%20Viewer/ Help]</p>
+*Read_CD.jar<p>This reads from multiple sources and automatically calls Pet Ct Viewer if appropriate. [http://sourceforge.net/p/bifijiplugins/wiki/CD%20Dialog/ Help]</p>
+*Gastric_Emptying.jar<p>This contains multiple Nuclear Medicine and general purpose programs:</p>
+**Gastric Emptying [http://sourceforge.net/p/bifijiplugins/wiki/Gastric%20Emptying/ Help]
+**Renal Clearance [http://sourceforge.net/p/bifijiplugins/wiki/Renal%20Clearance/ Help]
+**Save As Dicom [http://sourceforge.net/p/bifijiplugins/wiki/Save%20as%20myDicom/ Help]
+**Postage Stamps [http://sourceforge.net/p/bifijiplugins/wiki/Postage%20stamps/ Help]
+**Mask [http://sourceforge.net/p/bifijiplugins/wiki/Mask/ Help]
+*Read_BI_Studies.jar<p></p>
+For questions please contact me at ilan.tal@gmail.com
