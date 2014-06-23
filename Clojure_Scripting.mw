@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = Clojure Scripting
-| author                 = Johannes Schindelin<br />Albert Cardona<br />Curtis Rueden<br />Mark Longair
+| author                 = Curtis Rueden<br />Johannes Schindelin
 | maintainer             = Curtis Rueden<br/>Johannes Schindelin
 | filename               = scripting-clojure.jar
 | source                 = [https://github.com/scijava/scripting-clojure Git]
