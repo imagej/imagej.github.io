@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = JRuby Scripting
-| author                 = Mark Longair
+| author                 = Curtis Rueden<br/>Johannes Schindelin
 | maintainer             = Curtis Rueden<br/>Johannes Schindelin
 | filename               = scripting-jruby.jar
 | source                 = [https://github.com/scijava/scripting-jruby Git]
