@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = JavaScript Scripting
-| author                 = Johannes Schindelin<br />Curtis Rueden<br />Mark Longair<br />Albert Cardona
+| author                 = Johannes Schindelin<br />Curtis Rueden
 | maintainer             = Curtis Rueden<br/>Johannes Schindelin
 | filename               = scripting-javascript.jar
 | source                 = [https://github.com/scijava/scripting-javascript Git]
