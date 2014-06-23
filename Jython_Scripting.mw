@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = Jython Scripting
-| author                 = Albert Cardona
+| author                 = Johannes Schindelin<br />Curtis Rueden<br />Albert Cardona<br />Mark Longair
 | maintainer             = Curtis Rueden<br/>Johannes Schindelin
 | filename               = scripting-jython.jar
 | source                 = [https://github.com/scijava/scripting-jython Git]
