@@ -1,0 +1,10 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = ImageJ 1.x macro engine
+| author                 = Johannes Schindelin<br />Curtis Rueden
+| maintainer             = Curtis Rueden<br/>Johannes Schindelin
+| filename               = imagej-legacy.jar
+| source                 = [https://github.com/imagej/imagej-legacy Git]
+| status                 = stable
+}}
+{{Scripting}}
