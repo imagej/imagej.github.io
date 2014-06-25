@@ -3,7 +3,7 @@
 | name                   = Bug Submitter
 | maintainer             = Mark Longair
 | author                 = Mark Longair
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Bug_Submitter;hb=master gitweb]
+| source                 = on [https://github.com/fiji/Bug_Submitter github.com]
 | released               = 03/05/2009
 | latest version         = 30/09/2009
 | status                 = maintained
