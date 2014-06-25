@@ -139,6 +139,13 @@ The following tutorials show how to integrate a module of each kind in TrackMate
 * [[How to write your own detection algorithm for TrackMate]]
 * [[How to write your own particle-linking algorithm for TrackMate]]
 
+
+
+== Known problems ==
+
+TrackMate LoG detector will crash if you have the [[List_of_update_sites|Mosaic suite update site]] activated. Apparently they ship something that interferes with the FFT code used by the LoG detector. The bug report can be read [http://fiji.sc/bugzilla/show_bug.cgi?id=806 on BugZilla]. 
+
+
 == Who uses TrackMate ==
 
 We don't know in all honesty, since we did not write a paper specifically for TrackMate. People might use it and cite the Fiji paper, which is fine. A crude search on Google yields this:
