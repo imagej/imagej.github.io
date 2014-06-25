@@ -60,9 +60,12 @@ This is a characteristic of the Java runtime. In many cases, Java ''never'' rele
 * [http://stackoverflow.com/q/324499 Java still uses system memory after deallocation of objects and garbage collection]
 * [http://stackoverflow.com/q/16649601 java.exe process uses more memory and does not free it up]
 * [http://stackoverflow.com/q/12017437 JVM Memory : Why memory on task manager difference with JProbe (or JConsole tool)]
-* [http://stackoverflow.com/q/22912063 Automatically release unused memory in ImageJ / Fiji]
 
 To be clear, Java does reuse memory when you close and reopen images. The behavior described above is not a memory ''leak'' per se. In my lab we leave ImageJ running for days or weeks at a time doing batch processing and it works just fine.
+
+See also:
+
+* [http://stackoverflow.com/q/22912063 Automatically release unused memory in ImageJ / Fiji]
 
 == How do I run ImageJ in debug mode? ==
 
