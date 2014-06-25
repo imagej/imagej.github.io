@@ -55,7 +55,11 @@ If you are already at the limits of your computer's physical memory, the next st
 
 == Why does ImageJ not release any memory back to the system? ==
 
-This is a characteristic of the Java runtime. In many cases, Java ''never'' releases memory back to the system, so memory monitors such as Windows Task Manager will always report an ever-growing amount of RAM used by the Java process, until the JVM shuts down. That said, some articles suggest that you can cause Java to give back free memory to the OS under certain conditions; see:
+This is a characteristic of the Java runtime. In many cases, Java ''never'' releases memory back to the system, so memory monitors such as Windows Task Manager will always report an ever-growing amount of RAM used by the Java process, until the JVM shuts down.
+
+The best way to monitor ImageJ's actual memory usage is to run the [http://rsbweb.nih.gov/ij/docs/guide/146-31.html#toc-Subsubsection-31.3.5 Monitor Memory...] command.
+
+That said, some articles suggest that you can cause Java to give back free memory to the OS under certain conditions; see:
 
 * [http://stackoverflow.com/q/324499 Java still uses system memory after deallocation of objects and garbage collection]
 * [http://stackoverflow.com/q/16649601 java.exe process uses more memory and does not free it up]
