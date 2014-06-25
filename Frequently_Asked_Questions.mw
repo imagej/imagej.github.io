@@ -53,6 +53,17 @@ If you are already at the limits of your computer's physical memory, the next st
 
 '''About Java garbage collection:''' Java always automatically calls the garbage collector when the heap is getting full [http://stackoverflow.com/questions/8719071 [1]]. While it is possible to manually invoke the garbage collector by clicking ImageJ's status bar&mdash;or programmatically by calling <code>run("Collect Garbage")</code> in a macro or <code>System.gc()</code> in a plugin&mdash;it will not solve the fundamental problem of Java actually not having a sufficient amount of memory. (The only exception to this is a rare case where Java decides that garbage collection is happening too slowly, in which case you should see the message "GC overhead limit exceeded" [http://www.petefreitag.com/item/746.cfm [2]]).
 
+== Why does ImageJ not release any memory back to the system? ==
+
+This is a characteristic of the Java runtime. In many cases, Java ''never'' releases memory back to the system, so memory monitors such as Windows Task Manager will always report an ever-growing amount of RAM used by the Java process, until the JVM shuts down. That said, some articles suggest that you can cause Java to give back free memory to the OS under certain conditions; see:
+
+* [http://stackoverflow.com/q/324499 Java still uses system memory after deallocation of objects and garbage collection]
+* [http://stackoverflow.com/q/16649601 java.exe process uses more memory and does not free it up]
+* [http://stackoverflow.com/q/12017437 JVM Memory : Why memory on task manager difference with JProbe (or JConsole tool)]
+* [http://stackoverflow.com/q/22912063 Automatically release unused memory in ImageJ / Fiji]
+
+To be clear, Java does reuse memory when you close and reopen images. The behavior described above is not a memory ''leak'' per se. In my lab we leave ImageJ running for days or weeks at a time doing batch processing and it works just fine.
+
 == How do I run ImageJ in debug mode? ==
 
 See [[Debugging intro#Launching ImageJ in debug mode]].
