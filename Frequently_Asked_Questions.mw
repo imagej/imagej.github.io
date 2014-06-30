@@ -403,7 +403,7 @@ If you have an issue that is not mentioned here, you might want to [[Help:Conten
 
 Use the ''Help > [[Report a Bug]]'' command, which adds a ticket report to the [http://fiji.sc/bugzilla/ Fiji bug tracker]. While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
 
-== How do I contribute a bug fix, a patch, or propose an idea for a change to the community? ==
+== How do I contribute a bug fix or patch, or propose an idea for a change? ==
 
 The community encourages discussion about proposed changes on the [[Mailing Lists|ImageJ and imagej-devel mailing lists]]. Submit your ideas.
 
