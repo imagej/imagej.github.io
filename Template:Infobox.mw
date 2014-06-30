@@ -95,6 +95,7 @@
 | status                 = stable, not active
 | category               = fancy examples
 | website                = [http://example.org]
+| tutorials               = Mr Smith
 }}
 <pre style="overflow:auto">
 {{Infobox Plugin
@@ -109,6 +110,7 @@
 | status                 = stable, not active
 | category               = fancy examples
 | website                = [http://example.org]
+| tutorials               = Mr Smith
 }}
 </pre>
 
