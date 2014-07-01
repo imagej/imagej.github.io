@@ -111,6 +111,9 @@ Apart from this potential processing outline there are many '''tools''' availabl
 * '''[[MVR-SpecifyCalibration|Specify Calibration]]'''
 ** This enables the user to change the calibration of individual or all views after having defined them. Note that all registrations need to be recomputed if it should reflect the new calibration.
 
+* '''[[MVR-VisualizeDetections|Visualize Detections]]'''
+** Detections as identified by the
+
 == Downloading example dataset ==
 
 There is a 7-angle SPIM dataset of ''Drosophila'' available for download [http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip here]. Other datasets can be provided upon request.
