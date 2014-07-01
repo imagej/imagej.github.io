@@ -97,6 +97,14 @@ Using this software package consists of several steps. Please note that this sof
 
 Apart from this potential processing outline there are many '''tools''' available to help process multiview timelapse datasets.
 
+* '''[[MVR-ApplyTransformations|Apply Transformations]]'''
+** This tool can be used to apply any kind of transformations to individual views, or all views at once. This allows the user to specify a know rotation of different acquisition angles around an axis or to simply re-orient the entire dataset after the registration is complete.
+
+* '''[[MVR-DuplicateTransformations|Duplicate Transformations]]'''
+** It can be used to apply transformations that have been computed (or defined) for a certain subset of views/timepoints to other views/timepoints. Typical scenarios where this is required are:
+*** Fluorescent beads are only visible in one channel, but the user wants to do apply the same transformation for all other channels
+*** The user registered one timepoint and wants to apply the same transformation for all other timepoints
+
 == Downloading example dataset ==
 
 There is a 7-angle SPIM dataset of ''Drosophila'' available for download [http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip here]. Other datasets can be provided upon request.
