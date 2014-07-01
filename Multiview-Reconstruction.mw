@@ -105,6 +105,12 @@ Apart from this potential processing outline there are many '''tools''' availabl
 *** Fluorescent beads are only visible in one channel, but the user wants to do apply the same transformation for all other channels
 *** The user registered one timepoint and wants to apply the same transformation for all other timepoints
 
+* '''[[MVR-DisplayView|Display View]]'''
+** It allows to simply load and display one of the views as defined in the dataset
+
+* '''[[MVR-SpecifyCalibration|Specify Calibration]]'''
+** This enables the user to change the calibration of individual or all views after having defined them. Note that all registrations need to be recomputed if it should reflect the new calibration.
+
 == Downloading example dataset ==
 
 There is a 7-angle SPIM dataset of ''Drosophila'' available for download [http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip here]. Other datasets can be provided upon request.
