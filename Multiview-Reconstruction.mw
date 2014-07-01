@@ -73,6 +73,7 @@ Using this software package consists of several steps. Please note that this sof
 *** Apply calibration (difference in xy and z resolution per pixel)
 *** Affine bead-based registration
 *** ICP registration based on nuclei
+* '''[[MVR-FusionDeconvolution|Fusion/Deconvolution]]'''
 
 == Downloading example dataset ==
 
