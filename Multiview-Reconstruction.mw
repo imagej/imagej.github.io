@@ -24,7 +24,7 @@ This software package is the successor to the [[SPIM_Registration]] package. Whi
 
 Two examples of multiview datasets reconstructed with this software package are shown as YouTube videos below. Both datasets were registered using the bead-based registration ([http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html ''Nature Methods'', '''7'''(6):418-419]) and the Multiview Deconvolution ([http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html ''Nature Methods'', '''11'''(6):645-648]), which are part of this software package. Please check out the Citation section for information on how to cite this software package.
 
-The first video shows a developing ''Drosophila'' embryo expressing His-YFP in all cells. The entire embryogenesis was captured by lightsheet microscopy. The top row shows the multiview deconvolution of this seven-view dataset, the lower row the content-based fusion.
+The first video shows a developing ''Drosophila'' embryo expressing His-YFP in all cells. The entire embryogenesis was acquired using the Zeiss Demonstrator B. The top row shows the multiview deconvolution of this seven-view dataset, the lower row the content-based fusion.
 
 {| class="infobox" cellspacing="5" style="width: 25em; font-size: 90%; text-align: left; float: right; border: 1px dashed #a0a0a0;"
 ! colspan="2" style="font-size: 130%;" | Lightsheet microscopy
