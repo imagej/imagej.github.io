@@ -60,10 +60,11 @@ Using this software package consists of several steps. Please note that this sof
 ** Based on an existing dataset definition (XML file), the first step is typically to find interest points in the images that will be used for registration. In this step it is possible to look for multiple types of detections, e.g. fluorescent beads, nuclei or membrane markers. All of them can be stored in parallel.
 
 * '''[[MVR-InterestPointRegistration|Interest Point Registration]]'''
-** Once interest points are detected, they can be used to register/align multiple views over time. The registration module supports:
+** Once interest points are detected, they can be used to register/align multiple views over time. To find corresponding detection the registration module supports the following modules:
 *** ''Rotation-invariant matching'' using fluorescent beads (no prior transformation knowledge necessary)
 *** ''Translation-invariant matching'' using any kind of detections (an approximate knowledge of the rotation is required, e.g. 45 degrees around the x-axis). Check the Tools-section for how to provide approximate transformations.
 *** ''Precise matching'' using the Iterative-Closest Point (ICP) algorithm (the dataset needs to be aligned using for example any of the above methods).
+** The different views (or timepoints) can be aligned using ''Translation'', ''Rigid'' or ''Affine'' transformation models. We also support ''regularized transformation models'' developed by Stephan Saafeld.
 
 == Downloading example dataset ==
 
