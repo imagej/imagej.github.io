@@ -68,7 +68,11 @@ Using this software package consists of several steps. Please note that this sof
 ** Alignment over time can be performed in different ways
 *** If there is no drift, every timepoint can be simply registered individually. Please note that it is possible to register each timepoint and later on treat it as a ''rigid unit''. In this way it is possible to first register each timpoint using an ''affine'' transformation model and consecutively stabilize over time just using a ''translation'' model.
 *** A reference timepoint that is individually registered first can serve as basis for all other timepoints. This kind of alignment usually only works with external landmarks like fluorescent beads.
-*** Alternatively, it is possible to align timepoints using a sliding window of +-n timepoints, in which all views are matched against each other. This will work on any kind of detections
+*** Alternatively, it is possible to align timepoints using a sliding window of +-n timepoints, in which all views are matched against each other. This will work on any kind of detections.
+** In general, it is possible to stack up as many rounds of transformations as you want. They will be summarized in a list transformations that are concatenated to one single ''affine'' transformation before fusion/deconvolution/viewing. A typical list of transformations looks like:
+*** Apply calibration (difference in xy and z resolution per pixel)
+*** Affine bead-based registration
+*** ICP registration based on nuclei
 
 == Downloading example dataset ==
 
