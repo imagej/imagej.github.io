@@ -53,6 +53,9 @@ The second video shows a fixed ''C. elegans'' larvae in L1 stage expressing Lami
 
 Using this software package consists of several steps. Please note that this software is more flexible and that this order is just a suggestion of how to use it in a more-or-less standard case.
 
+* '''[[Dataset Definition|MVR-DefineDataset]]''' <br><br>
+** The first step in every reconstruction is to define the dataset and thereby create the XML file. This has to be done only once, all consecutive steps are based on this definition, i.e. the XML file.
+
 == Downloading example dataset ==
 
 There is a 7-angle SPIM dataset of ''Drosophila'' available for download [http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip here]. Other datasets can be provided upon request.
