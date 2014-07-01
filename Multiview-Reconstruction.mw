@@ -11,7 +11,22 @@
 }}
 
 == Introduction & Overview ==
-{| class="infobox" cellspacing="5" style="width: 31em; font-size: 90%; text-align: left; float: right; border: 1px dashed #a0a0a0;"
+
+The '''Multiview Reconstruction''' software package enables users to ''register, fuse, deconvolve and view'' multiview microscopy images. The software is designed for lightsheet fluorescence microscopy (LSFM, see box for an overview), but is applicable to any form of three or higher dimensional imaging modalities like confocal timeseries or multicolor stacks.
+
+Interactive viewing and annotation of the data is provided by integration with Tobias Pietzsch's [[BigDataViewer]]. Both projects share the same XML data model to describe the multiview datasets.
+
+=== History ===
+
+This software package is the successor to the [[SPIM_Registration]] package. While the SPIM Registration will continue to live within Fiji for the time being, we will mostly offer support only for this new software package. It has all the functionality the SPIM Registration offered, but is much more flexible and supports many more types of registration, fusion and data handling.
+
+=== Examples ===
+
+Two examples of multiview datasets reconstructed with this software package are shown as YouTube videos below. Both datasets were registered using the bead-based registration ([http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html ''Nature Methods'', '''7'''(6):418-419]) and the Multiview Deconvolution ([http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html ''Nature Methods'', '''11'''(6):645-648]), which are part of this software package. Please check out the Citation section for information on how to cite this software package.
+
+The first video shows a developing ''Drosophila'' embryo expressing His-YFP in all cells. The entire embryogenesis was captured by lightsheet microscopy. The top row shows the multiview deconvolution of this seven-view dataset, the lower row the content-based fusion.
+
+{| class="infobox" cellspacing="5" style="width: 25em; font-size: 90%; text-align: left; float: right; border: 1px dashed #a0a0a0;"
 ! colspan="2" style="font-size: 130%;" | Lightsheet microscopy
 |-
 |Lightsheet fluorescence microscopy entered the world of modern biology in 2004 when '''Selective Plane Illumination Microscopy''' ([http://www.sciencemag.org/content/305/5686/1007 '''SPIM''']) was published. It allows ''in toto'' imaging of large specimens by acquiring image stacks from multiple angles with high spatial and temporal resolution. Many impressive variations and extensions have been published, some of them using new variations or entirely new naming schemes:
@@ -27,19 +42,6 @@
 * ...
 During the 2012 Lightsheet fluorescence microscopy meeting in Dublin, organized by Emmanuel Reynaud, it was voted to summarize most of these developments under the name of '''Lightsheet fluorescence microscopy (LSFM)'''.
 |}
-The '''Multiview Reconstruction''' software package enables users to ''register, fuse, deconvolve and view'' multiview microscopy images. The software is designed for lightsheet microscopy (see box for an overview), but is applicable to any form of three or higher dimensional imaging modalities like confocal timeseries or multicolor stacks.
-
-Interactive viewing and annotation of the data is provided by integration with Tobias Pietzsch's [[BigDataViewer]]. Both projects share the same XML data model to describe the multiview datasets.
-
-=== History ===
-
-This software package is the successor to the [[SPIM_Registration]] package. While the SPIM Registration will continue to live within Fiji for quite some time, we will mostly offer support only for this new software package. It has all the functionality the SPIM Registration offered, but is much more flexible and supports many more types of registration, fusion and data handling.
-
-=== Examples ===
-
-Two examples of multiview datasets reconstructed with this software package are shown as YouTube videos below. Both datasets were registered using the bead-based registration ([http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html ''Nature Methods'', '''7'''(6):418-419]) and the Multiview Deconvolution ([http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html ''Nature Methods'', '''11'''(6):645-648]), which are part of this software package. Please check out the Citation section for information on how to cite this software package.
-
-The first video shows a developing ''Drosophila'' embryo expressing His-YFP in all cells. The entire embryogenesis was captured by lightsheet microscopy. The top row shows the multiview deconvolution of this seven-view dataset, the lower row the content-based fusion.
 
 <include iframe title="YouTube video player" width="420" height="315" src="http:////www.youtube.com/embed/NJHoP8RBIaw" frameborder="0" allowfullscreen></include>
 
