@@ -79,6 +79,7 @@ Using this software package consists of several steps. Please note that this sof
 
 * '''[[MVR-FusionDeconvolution|Fusion/Deconvolution]]'''
 ** Once the dataset is entirely aligned it can be fused or deconvolved into a single image per timepoint and channel. Deconvolution requires the knowledge of point spread functions (PSF's), which can be extracted from matched beads directly or can be provided by the user.
+** Alternatively, there is no need to fuse the data and you can interactively look at the data using the [[BigDataViewer]] if you resaved it as HDF5. You can still do that now after the registration is complete.
 
 == Downloading example dataset ==
 
