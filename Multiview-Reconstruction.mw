@@ -27,7 +27,7 @@ Two examples of multiview datasets reconstructed with this software package are 
 The first video shows a developing ''Drosophila'' embryo expressing His-YFP in all cells. The entire embryogenesis was acquired using the Zeiss Demonstrator B. The top row shows the multiview deconvolution of this seven-view dataset, the lower row the content-based fusion.
 
 {| class="infobox" cellspacing="5" style="width: 25em; font-size: 90%; text-align: left; float: right; border: 1px dashed #a0a0a0;"
-! colspan="2" style="font-size: 130%;" | Lightsheet microscopy
+! colspan="2" style="font-size: 130%;" | Lightsheet fluorescence microscopy
 |-
 |Lightsheet fluorescence microscopy entered the world of modern biology in 2004 when '''Selective Plane Illumination Microscopy''' ([http://www.sciencemag.org/content/305/5686/1007 '''SPIM''']) was published. It allows ''in toto'' imaging of large specimens by acquiring image stacks from multiple angles with high spatial and temporal resolution. Many impressive variations and extensions have been published, some of them using new variations or entirely new naming schemes:
 * OpenSPIM
