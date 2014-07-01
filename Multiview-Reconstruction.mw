@@ -67,7 +67,7 @@ Using this software package consists of several steps. Please note that this sof
 * '''[[MVR-InterestPointRegistration|Interest Point Registration]]'''
 ** Once interest points are detected, they can be used to register/align multiple views over time. To find corresponding detection the registration module supports the following modules:
 *** ''Rotation-invariant matching'' using fluorescent beads (no prior transformation knowledge necessary)
-*** ''Translation-invariant matching'' using any kind of detections (an approximate knowledge of the rotation is required, e.g. 45 degrees around the x-axis). Check the Tools-section for how to provide approximate transformations.
+*** ''Translation-invariant matching'' using any kind of detections (an approximate knowledge of the rotation is required, e.g. 45 degrees around the x-axis. Check the [[Multiview-Reconstruction#Tools|Tools-Section]] for how to provide approximate transformations.)
 *** ''Precise matching'' using the Iterative-Closest Point (ICP) algorithm (the dataset needs to be aligned using for example any of the above methods).
 ** The different views (or timepoints) can be aligned using ''Translation'', ''Rigid'' or ''Affine'' transformation models. We also support ''regularized transformation models'' developed by Stephan Saafeld.
 ** Alignment over time can be performed in different ways
@@ -82,6 +82,10 @@ Using this software package consists of several steps. Please note that this sof
 * '''[[MVR-FusionDeconvolution|Fusion/Deconvolution]]'''
 ** Once the dataset is entirely aligned it can be fused or deconvolved into a single image per timepoint and channel. Deconvolution requires the knowledge of point spread functions (PSF's), which can be extracted from matched beads directly or can be provided by the user.
 ** Alternatively, there is no need to fuse the data and you can interactively look at the data using the [[BigDataViewer]] if you resaved it as HDF5. You can still do that now after the registration is complete.
+
+=== Tools ===
+
+Apart from this potential processing outline there are many '''tools''' available to help process multiview timelapse datasets.
 
 == Downloading example dataset ==
 
