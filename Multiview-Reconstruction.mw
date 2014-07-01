@@ -3,7 +3,7 @@
 | software               = ImageJ
 | author                 = Stephan Preibisch
 | maintainer             = Stephan Preibisch
-| source                = [https://github.com/tpietzsch/spimreconstruction on GitHub]
+| source                = [https://github.com/fiji/spimreconstruction on GitHub]
 | filename               = SPIM_Registration.jar
 | category               = [[:Category:Registration|SPIM Registration]]
 | website                = [http://fly.mpi-cbg.de/preibisch Stephan Preibisch's homepage]
