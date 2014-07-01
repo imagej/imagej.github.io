@@ -18,12 +18,12 @@ Interactive viewing and annotation of the data is provided by integration with T
 
 === Examples ===
 
-Two examples of multiview datasets reconstructed with this software package are shown as YouTube videos below. Both datasets were registered using the Bead-based registration ([http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html ''Nature Methods'', '''7'''(6):418-9]) and the Multiview Deconvolution ([http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html ''Nature Methods'', '''11'''(6):645-8]), which are part of this software package.
+Two examples of multiview datasets reconstructed with this software package are shown as YouTube videos below. Both datasets were registered using the bead-based registration ([http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html ''Nature Methods'', '''7'''(6):418-419]) and the Multiview Deconvolution ([http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html ''Nature Methods'', '''11'''(6):645-648]), which are part of this software package. Please check out the Citation section for information on how to cite this software package.
 
-The first video shows a developing ''Drosophila'' embryo expressing a His-YFP marker. The complete embryogenesis was captured by lightsheet microscopy. The top row shows the multiview deconvolution of this seven-view dataset, the lower row the content-based fusion. 
+The first video shows a developing ''Drosophila'' embryo expressing His-YFP in all cells. The entire embryogenesis was captured by lightsheet microscopy. The top row shows the multiview deconvolution of this seven-view dataset, the lower row the content-based fusion.
 
 <include iframe title="YouTube video player" width="420" height="315" src="http:////www.youtube.com/embed/NJHoP8RBIaw" frameborder="0" allowfullscreen></include>
 
-The second video shows a fixed ''C. elegans'' larvae in L1 stage expressing Lamin-GFP and stained with Hoechst. The four-view dataset was acquired using the Zeiss Lightsheet Z.1 microscope. It illustrates the increase in resolution that can be achieved through multiview imaging combined with multiview deconvolution.
+The second video shows a fixed ''C. elegans'' larvae in L1 stage expressing Lamin-GFP and stained with Hoechst. The four-view dataset was acquired using the Zeiss Lightsheet Z.1 microscope. It illustrates the increase in resolution that can be achieved through multiview imaging combined with multiview deconvolution. The top row shows one of the four input views, the bottom row the result of the multiview deconvolution.
 
 <include iframe title="YouTube video player" width="420" height="315" src="http:////www.youtube.com/embed/16gq2WUm-50" frameborder="0" allowfullscreen></include>
