@@ -65,6 +65,10 @@ Using this software package consists of several steps. Please note that this sof
 *** ''Translation-invariant matching'' using any kind of detections (an approximate knowledge of the rotation is required, e.g. 45 degrees around the x-axis). Check the Tools-section for how to provide approximate transformations.
 *** ''Precise matching'' using the Iterative-Closest Point (ICP) algorithm (the dataset needs to be aligned using for example any of the above methods).
 ** The different views (or timepoints) can be aligned using ''Translation'', ''Rigid'' or ''Affine'' transformation models. We also support ''regularized transformation models'' developed by Stephan Saafeld.
+** Alignment over time can be performed in different ways
+*** If there is no drift, every timepoint can be simply registered individually. Please note that it is possible to register each timepoint and later on treat it as a ''rigid unit''. In this way it is possible to first register each timpoint using an ''affine'' transformation model and consecutively stabilize over time just using a ''translation'' model.
+*** A reference timepoint that is individually registered first can serve as basis for all other timepoints. This kind of alignment usually only works with external landmarks like fluorescent beads.
+*** Alternatively, it is possible to align timepoints using a sliding window of +-n timepoints, in which all views are matched against each other. This will work on any kind of detections
 
 == Downloading example dataset ==
 
