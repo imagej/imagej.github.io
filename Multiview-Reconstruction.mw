@@ -112,7 +112,7 @@ Apart from this potential processing outline there are many '''tools''' availabl
 ** This enables the user to change the calibration of individual or all views after having defined them. Note that all registrations need to be recomputed if it should reflect the new calibration.
 
 * '''[[MVR-VisualizeDetections|Visualize Detections]]'''
-** Detections as identified by the
+** Detections as identified by [[MVR-InterestPointDetection|Detect Interest Points]] can be visualized. It is possible to visualize all detections or only those that are found to be corresponding with other detections and were therefore used for registration. This helps to identify potential misalignments if corresponding detections are not equally distributed around the sample as they should be. One can also load the input view at the same time to overlay the detections with the image data
 
 == Downloading example dataset ==
 
