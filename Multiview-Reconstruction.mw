@@ -56,6 +56,15 @@ Using this software package consists of several steps. Please note that this sof
 * '''[[MVR-DefineDataset|Dataset Definition]]'''
 ** The first step in every reconstruction is to define the dataset and thereby create the XML file. This has to be done only once, all consecutive steps are based on this definition, i.e. the XML file.
 
+* '''[[MVR-InterestPointDetection|Detect Interest Points]]'''
+** Based on an existing dataset definition (XML file), the first step is typically to find interest points in the images that will be used for registration. In this step it is possible to look for multiple types of detections, e.g. fluorescent beads, nuclei or membrane markers. All of them can be stored in parallel.
+
+* '''[[MVR-InterestPointRegistration|Interest Point Registration]]'''
+** Once interest points are detected, they can be used to register/align multiple views over time. The registration module supports:
+*** ''Rotation-invariant matching'' using fluorescent beads (no prior transformation knowledge necessary)
+*** ''Translation-invariant matching'' using any kind of detections (an approximate knowledge of the rotation is required, e.g. 45 degrees around the x-axis). Check the Tools-section for how to provide approximate transformations.
+*** ''Precise matching'' using the Iterative-Closest Point (ICP) algorithm (the dataset needs to be aligned using for example any of the above methods).
+
 == Downloading example dataset ==
 
 There is a 7-angle SPIM dataset of ''Drosophila'' available for download [http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip here]. Other datasets can be provided upon request.
