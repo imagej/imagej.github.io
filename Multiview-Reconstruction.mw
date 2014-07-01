@@ -18,7 +18,7 @@ Interactive viewing and annotation of the data is provided by integration with T
 
 === History ===
 
-This software package is the successor to the [[SPIM_Registration]] package. While the SPIM Registration will continue to live within Fiji for the time being, we will mostly offer support only for this new software package. It has all the functionality the SPIM Registration offered, but is much more flexible and supports many more types of registration, fusion and data handling.
+This software package is the successor to the [[SPIM_Registration|SPIM Registration]] package. While the SPIM Registration will continue to live within Fiji for the time being, we will mostly offer support only for this new software package. It has all the functionality the SPIM Registration offered, but is much more flexible and supports many more types of registration, fusion and data handling.
 
 === Examples ===
 
