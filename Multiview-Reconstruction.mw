@@ -56,6 +56,9 @@ Using this software package consists of several steps. Please note that this sof
 * '''[[MVR-DefineDataset|Dataset Definition]]'''
 ** The first step in every reconstruction is to define the dataset and thereby create the XML file. This has to be done only once, all consecutive steps are based on this definition, i.e. the XML file.
 
+* '''[[MVR-ResaveDataset|Resave the dataset as HDF5/TIFF]]'''
+** Once the dataset is defined, you might want to resave all the image data as HDF5 (to be able to view it using the [[BigDataViewer]]) or simply as TIFF to enable fast loading of the image data. Also note that those two formats are the only ones that allow to extend the dataset/XML with newly fused data.
+
 * '''[[MVR-InterestPointDetection|Detect Interest Points]]'''
 ** Based on an existing dataset definition (XML file), the first step is typically to find interest points in the images that will be used for registration. In this step it is possible to look for multiple types of detections, e.g. fluorescent beads, nuclei or membrane markers. All of them can be stored in parallel.
 
@@ -73,7 +76,9 @@ Using this software package consists of several steps. Please note that this sof
 *** Apply calibration (difference in xy and z resolution per pixel)
 *** Affine bead-based registration
 *** ICP registration based on nuclei
+
 * '''[[MVR-FusionDeconvolution|Fusion/Deconvolution]]'''
+** Once the dataset is entirely aligned it can be fused or deconvolved into a single image per timepoint and channel. Deconvolution requires the knowledge of point spread functions (PSF's), which can be extracted from matched beads directly or can be provided by the user.
 
 == Downloading example dataset ==
 
