@@ -76,7 +76,7 @@
 
 * Interaction analysis as provided by the [[MosaicIA]] plugin extends the concept of colocalization analysis to spatial patterns and allows directly estimating interactions between imaged objects from the image, as described in Helmuth, Paul, and Sbalzarini (2010<ref>J. A. Helmuth, G. Paul, and I. F. Sbalzarini. [http://dx.doi.org/10.1186/1471-2105-14-349 Beyond co-localization: inferring spatial interactions between sub-cellular structures from microscopy images], BMC Bioinformatics., 11:372, 2010</ref>).
 
-* The [[MosaicIA]] plugin is part of the [[MOSAICsuite]] and has been described in Shivanandan, Radenovic, and Sbalzarini (2013<ref>A. Shivanandan, A. Radenovic, and I. F. Sbalzarini. [http://dx.doi.org/10.1186/1471-2105-11-372 MosaicIA: an ImageJ/Fiji plugin for spatial pattern and interaction analysis], BMC Bioinformatics., 14:349, 2013</ref>).
+* The [[Interaction Analysis]] or [[MosaicIA]] plugin is part of the [[MOSAICsuite]] and has been described in Shivanandan, Radenovic, and Sbalzarini (2013<ref>A. Shivanandan, A. Radenovic, and I. F. Sbalzarini. [http://dx.doi.org/10.1186/1471-2105-11-372 MosaicIA: an ImageJ/Fiji plugin for spatial pattern and interaction analysis], BMC Bioinformatics., 14:349, 2013</ref>).
 
 * The [[MOSAICsuite]] also contains a [[Background Subtractor]].
 
