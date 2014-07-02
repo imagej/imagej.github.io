@@ -12,26 +12,15 @@
 | website                = http://mosaic.mpi-cbg.de/?q=downloads/imageJ
 }}
 
-'''Particle Tracker''' is a 2D feature point-tracking tool for the automated detection and analysis of particle trajectories as recorded by video imaging in cell biology. It is part of the [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MOSAICsuite], which also offers 3D particle tracking, image segmentation, interaction analysis, and much more. The best way to install it is via the MOSAIC Fiji Update site, as described on the [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MOSAIC web page].
-The algorithm is decsribed in Sbalzarini and Koumoutsakos (2005<ref>I. F. Sbalzarini and P. Koumoutsakos. [http://dx.doi.org/10.1016/j.jsb.2005.06.002 Feature point tracking and trajectory analysis for video imaging in cell biology] J. Struct. Biol., 151(2): 182-195, 2005</ref>).
+'''Particle Tracker''' is a 2D and 3D feature point-tracking tool for the automated detection and tracking of particle trajectories as recorded by video imaging in cell biology. It is part of the [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MOSAICsuite], which also offers image segmentation, interaction analysis, and much more. The best way to install it is via the MOSAIC Fiji Update site, as described on the [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MOSAIC web page].
+The algorithm is described in Sbalzarini and Koumoutsakos (2005<ref>I. F. Sbalzarini and P. Koumoutsakos. [http://dx.doi.org/10.1016/j.jsb.2005.06.002 Feature point tracking and trajectory analysis for video imaging in cell biology], J. Struct. Biol., 151(2):182-195, 2005</ref>).
 
-Documentation is available as [http://mosaic.mpi-cbg.de/ParticleTracker/tutorial.html html] and [http://mosaic.mpi-cbg.de/ParticleTracker/doc/ParticleTrackerUserManual.pdf pdf] 
+Documentation is available as [http://mosaic.mpi-cbg.de/ParticleTracker/tutorial.html html] and [http://mosaic.mpi-cbg.de/ParticleTracker/doc/ParticleTrackerUserManual.pdf pdf].
 
 == References ==
 I. F. Sbalzarini and P. Koumoutsakos. Feature Point Tracking and Trajectory Analysis for Video Imaging in Cell Biology, Journal of Structural Biology 151(2):182-195, 2005.
 
-J. A. Helmuth, C. J. Burckhardt, U. F. Greber, and I. F. Sbalzarini. Shape reconstruction of subcellular structures from live cell fluorescence microscopy images. Journal of Structural Biology, 167:1–10, 2009. 
-
-J. A. Helmuth, G. Paul, and I. F. Sbalzarini. Beyond co-localization: inferring spatial interactions between sub-cellular structures from microscopy images. BMC Bioinformatics, 11:372, 2010. 
-
-J. Cardinale, G. Paul, and I. F. Sbalzarini. Discrete region competition for unknown numbers of connected regions. IEEE Trans. Image Process., 21(8):3531–3545, 2012. 
-
-G. Paul, J. Cardinale, and I. F. Sbalzarini. Coupling image restoration and segmentation: A generalized linear model/Bregman perspective. Int. J. Comput. Vis., 104(1):69–93, 2013. 
-
-A. Rizk, G. Paul, P. Incardona, M. Bugarski, M. Mansouri, A. Niemann, U. Ziegler, P. Berger, and I. F. Sbalzarini. Segmentation and quantification of subcellular structures in fluorescence microscopy images using Squassh. Nature Protocols, 9(3):586–596, 2014. 
-
 N. Chenouard, I. Smal, F. de Chaumont, M. Maska, I. F. Sbalzarini, Y. Gong, J. Cardinale, C. Carthel, S. Coraluppi, M. Winter, A. R. Cohen, W. J. Godinez, K. Rohr, Y. Kalaidzidis, L. Liang, J. Duncan, H. Shen, Y. Xu, K. E. G. Magnusson, J. Jalden, H. M. Blau, P. Paul-Gilloteaux, P. Roudot, C. Kervrann, F. Waharte, J.-Y. Tinevez, S. L. Shorte, J. Willemse, K. Celler, G. P. van Wezel, H.-W. Dan, Y.-S. Tsai, C. O. de Solorzano, J.-C. Olivo-Marin, and E. Meijering. Objective comparison of particle tracking methods. Nature Methods, 11(3):281–289, 2014. 
-
 <references />
 
 [[Category:Plugins]]
