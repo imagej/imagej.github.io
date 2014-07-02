@@ -39,12 +39,11 @@ These are the methods used to integrate you module within the GUI. According to 
 
 == Basic project structure ==
 
-Before we step into the edge analyzers specific, you want to setup a development environment that will ease TrackMate module development. Rather than listing the requirement, just check [https://github.com/fiji/TrackMate-examples this github repository], and clone it. It contains the files of this tutorial series and more importantly, is configured to depend on the latest TrackMate version, which will make it available to your code. 
+Before we step into the edge analyzers specific, you want to setup a development environment that will ease TrackMate module development. Rather than listing the requirement, just checkout [https://github.com/fiji/TrackMate-examples this github repository], and clone it. It contains the files of this tutorial series and more importantly, is configured to depend on the latest TrackMate version, which will make it available to your code. 
 
 Compiling this project with maven will generate a jar, that you will be able to drop in the fiji plugins folder. Your modules will then be automatically detected and integrated in TrackMate.
 
 But more on that later.
-
 
 == Let's get started ==
 
