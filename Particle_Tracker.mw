@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | software               = ImageJ
 | name                   = Particle Tracker
-| author                 = [http://mosaic.mpi-cbg.de/ MOSAIC Group], MPI-CBG, Dresden
+| author                 = [http://mosaic.mpi-cbg.de/ MOSAIC Group], [http://www.mpg-sysbio.de Center for Systems Biology Dresden (CSBD)], [http://www.mpi-cbg.de/research/research-groups/ivo-sbalzarini.html Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)], Dresden, Germany.
 | filename               = [http://mosaic.mpi-cbg.de/Downloads/Mosaic_ToolSuite.jar Mosaic_ToolSuite.jar] (70,897 Bytes)
 | source                 = [https://git.mpi-cbg.de/gitweb/?p=ImageJ.git;a=summary Anonymous git]
 | released               = 2006 
