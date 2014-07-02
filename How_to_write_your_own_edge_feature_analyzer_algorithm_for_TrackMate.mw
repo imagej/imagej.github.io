@@ -71,13 +71,13 @@ It is important to note that we provide a blank constructor. This is very import
 
 == Feature analyzers specific methods == 
 
-Eclipse will immediately complain (I suppose you are using Eclipse; but when it comes to complaining, everything tends to be general) that your class needs to implement some abstract method. A variety of methods popup. 
+Eclipse will immediately complain (I suppose you are using Eclipse; but when it comes to complaining, everything tends to be general) that your class needs to implement some abstract method. A variety of methods popup.
 
-We see the general module methods we discussed above, plus some specific to edge analyzers. Actually, most of the new methods are generic for <i>all</i> the feature analyzers (spot, track or edge). These methods belong to the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/FeatureAnalyzer.java FeatureAnalyzer] interface, which <code>EdgeAnalyzer</code> extends, of course. 
+We see the general module methods we discussed above, plus some specific to edge analyzers. Actually, most of the new methods are generic for <i>all</i> the feature analyzers (spot, track or edge). These methods belong to the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/FeatureAnalyzer.java FeatureAnalyzer] interface, which <code>EdgeAnalyzer</code> extends, of course.
 
-They exist because TrackMate needs to know what your feature analyzer does. Since it computes numerical features, it needs to know what features it computes, their name, their short name (when we want to show them in crowded part of the GUI) and their physical dimension. Indeed, TrackMate wants to know the dimension of the feature you generate, for it was coded in part by a conflicted physicist who does not want angles and velocities to be plotted on the same graph. 
+They exist because TrackMate needs to know what your feature analyzer does. Since it computes numerical features, it needs to know what features it computes, their name, their short name (when we want to show them in crowded part of the GUI) and their physical dimension. Indeed, TrackMate wants to know the dimension of the feature you generate, for it was coded in part by a conflicted physicist who does not want angles and velocities to be plotted on the same graph.
 
-These 4 methods are:
+These 6 methods are:
 * <code>getFeatures()</code> returns a list of string that identifies the features the analyzer generate. There can be more than one. This list must contain strings that can be used in a XML file. Historically, we use capitalized strings, in the shape of java constants, such as <code>DISPLACEMENT</code>. We call them feature keys.
 
 * <code>getFeatureNames()</code> returns a map that links the feature keys to the feature names. For instance in the GUI, we want to display "Displacement" rather than "DISPLACEMENT", so that is what this map is about. It is important that the keys of this map are the keys defined in the list above. 
@@ -86,6 +86,11 @@ These 4 methods are:
 
 * <code>getFeatureDimensions()</code> returns a last map, that gives a dimension to your features. Physical dimensions are listed in the  [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/Dimension.java Dimension enum].
 
+* <code>getIsIntFeature()</code> is just about sugar coating. It returns a map that tells what features are integer mapped. For instance, if you have a feature that count things, such as number of neighbors, you should map this feature to <code>true</code> here. This one is actually not ''really'' useful; there will be no problem, no loss of precision if you do not set it right. It's just about having numbers displayed correctly. I wanted that when there were 2 neighbors, the number of neighbors displayed was "2" and not "2.0000000000001". In our case, we measure an angle, so this feature should map to <code>false</false>.
+
+*<code>isManualFeature()</code> returns a single flag that affects '''all''' the features calculated by this analyzer. Manual features are special features that were introduced in TrackMate v2.3.0. Let's leave that aside for now. Our angle feature is calculated automatically by the code we are just about to write. So this method should return <code>false</code>.
+
+
 In this tutorial, our analyzer just returns one feature, which is an angle. So a concrete implementation could be:
 
 <source lang="java">
@@ -93,6 +98,7 @@ package plugin.trackmate.examples.edgeanalyzer;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -104,13 +110,16 @@ import fiji.plugin.trackmate.features.edges.EdgeAnalyzer;
 
 public class EdgeAngleAnalyzer implements EdgeAnalyzer
 {
-	// The key used to identify this analyzer
+
+	// The string key that identifies our analyzer.
 	private static final String KEY = "Edge angle";
 
-	// The feature key of the only feature this analyzer provide.
+	// The only feature we compute here.
 	private static final String EDGE_ANGLE = "EDGE_ANGLE";
 
 	private static final List< String > FEATURES = new ArrayList< String >( 1 );
+
+	private static final Map< String, Boolean > IS_INT = new HashMap< String, Boolean >( 1 );
 
 	public static final Map< String, String > FEATURE_NAMES = new HashMap< String, String >( 1 );
 
@@ -118,14 +127,21 @@ public class EdgeAngleAnalyzer implements EdgeAnalyzer
 
 	public static final Map< String, Dimension > FEATURE_DIMENSIONS = new HashMap< String, Dimension >( 1 );
 
-	// Let's fill the feature list, names, short names and dimensions.
+	// Let's set the feature list, names, short names and dimensions.
 	static
 	{
 		FEATURES.add( EDGE_ANGLE );
+		IS_INT.put( EDGE_ANGLE,  false );
 		FEATURE_NAMES.put( EDGE_ANGLE, "Link angle" );
 		FEATURE_SHORT_NAMES.put( EDGE_ANGLE, "Angle" );
 		FEATURE_DIMENSIONS.put( EDGE_ANGLE, Dimension.ANGLE );
 	}
+
+	private long processingTime;
+
+	/*
+	 * TRACKMATEMODULE METHODS
+	 */
 
 	@Override
 	public String getKey()
@@ -133,23 +149,24 @@ public class EdgeAngleAnalyzer implements EdgeAnalyzer
 		return KEY;
 	}
 
+	// Return a user-compliant name for this analyzer.
 	@Override
 	public String getName()
 	{
 		return "Edge angle";
 	}
 
+	// We do not use info texts for any feature actually.
 	@Override
 	public String getInfoText()
 	{
-		// We don't use info texts for edge analyzers. 
 		return "";
 	}
 
+	// The same: we don't use icons for features.
 	@Override
 	public ImageIcon getIcon()
 	{
-		// Same.
 		return null;
 	}
 
@@ -176,10 +193,20 @@ public class EdgeAngleAnalyzer implements EdgeAnalyzer
 	{
 		return FEATURE_DIMENSIONS;
 	}
-}
+
+	@Override
+	public Map<String, Boolean> getIsIntFeature()
+	{
+		return Collections.unmodifiableMap(IS_INT);
+	}
+
+	@Override
+	public boolean isManualFeature() 
+	{
+		// This feature is calculated automatically.
+		return false;
+	}
 </source>
-
-
 
 == Multithreading & Benchmarking methods ==
 
