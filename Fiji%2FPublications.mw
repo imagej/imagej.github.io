@@ -78,6 +78,8 @@
 
 * The [[MosaicIA]] plugin is part of the [[MOSAICsuite]] and has been described in Shivanandan, Radenovic, and Sbalzarini (2013<ref>A. Shivanandan, A. Radenovic, and I. F. Sbalzarini. [http://dx.doi.org/10.1186/1471-2105-11-372 MosaicIA: an ImageJ/Fiji plugin for spatial pattern and interaction analysis], BMC Bioinformatics., 14:349, 2013</ref>).
 
+* The [[MOSAICsuite]] also contains a [[Background Subtractor]].
+
 == References ==
 
 <references />
