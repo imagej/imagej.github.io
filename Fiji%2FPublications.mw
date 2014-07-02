@@ -53,17 +53,6 @@
 | url = http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2507.html
 }}</ref> relies heavily on Fiji for microscope operation and SPIMage processing.
 
-*  [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MosaicSuite]<ref name="Shivanadan2013">{{cite journal
-| author = Shivanandan A.; Radenovic A., Sbalzarini I. F.
-| title = MosaicIA: an ImageJ/Fiji plugin for spatial pattern and interaction analysis 
-| journal = BMC Bioinformatics
-| volume = 14
-| number = 
-| pages = 1-10
-| year = 2013
-| url = http://www.biomedcentral.com/1471-2105/14/349
-}}</ref> from Ivo Sbalzarini's lab published in BMC Bioinformatics.
-
 *  [[Low_Light_Tracking_Tool|Low Light Tracking Tool]]<ref name="Krull2014">{{cite journal
 | author = Krull, A., Steinborn A., Ananthanarayanan V., Ramunno-Johnson D., Petersohn U., Tolic-Norrelykke I. M. 
 | title = A divide and conquer strategy for the maximum likelihood localization of low intensity objects. 
@@ -74,6 +63,18 @@
 | year = 2014
 | url = http://www.opticsinfobase.org/oe/fulltext.cfm?uri=oe-22-1-210&id=276396
 }}</ref> by Alex Krull from Iva Tolic lab was published in Optics Express.
+
+* The 2D and 3D [[Particle Tracker]] algorithm available in Fiji though the [[MOSAICsuite]] plugin is described in Sbalzarini and Koumoutsakos (2005<ref>I. F. Sbalzarini and P. Koumoutsakos. [http://dx.doi.org/10.1016/j.jsb.2005.06.002 Feature point tracking and trajectory analysis for video imaging in cell biology], J. Struct. Biol., 151(2):182-195, 2005</ref>).
+
+* The 2D and 3D [[Particle Tracker]] algorithm available in Fiji though the [[MOSAICsuite]] plugin performed well in a recent comparative study of many particle tracking tools: Chenouard et al. (2014<ref>N. Chenouard et al. [http://dx.doi.org/doi:10.1038/nMeth.2808 Objective comparison of particle tracking methods], Nature Methods, 11(3):281-289, 2014</ref>).
+
+* The globally optimal [[Squassh]] segmentation algorithm available in the [[MOSAICsuite]] plugin includes cutting-edge developments from computer vision as described in Paul, Cardinale, and Sbalzarini (2013<ref>G. Paul, J. Cardinale, and I. F. Sbalzarini. [http://dx.doi.org/10.1007/s11263-013-0615-2 Coupling image restoration and segmentation: A generalized linear model/Bregman perspective], Int. J. Comput. Vis., 104(1): 69-93, 2013</ref>).
+
+* The [[Squassh]] workflow for segmentation and quantification of subcellular shapes in fluorescence microscopy images has been published in in Rizk et al. (2014<ref>A. Rizk, G. Paul, P. Incardona, M. Bugarski, M. Mansouri, A. Niemann, U. Ziegler, P. Berger, and I. F. Sbalzarini. [http://dx.doi.org/doi:10.1038/nprot.2014.037 Segmentation and quantification of subcellular structures in fluorescence microscopy images using Squassh] Nature Protocols., 9(3): 586-596, 2014</ref>).
+
+* Interaction analysis as provided by the [[MosaicIA]] plugin extends the concept of colocalization analysis to spatial patterns and allows directly estimating interactions between imaged objects from the image, as described in Helmuth, Paul, and Sbalzarini (2010<ref>J. A. Helmuth, G. Paul, and I. F. Sbalzarini. [http://dx.doi.org/10.1186/1471-2105-14-349 Beyond co-localization: inferring spatial interactions between sub-cellular structures from microscopy images], BMC Bioinformatics., 11:372, 2010</ref>).
+
+* The [[MosaicIA]] plugin is part of the [[MOSAICsuite]] and has been described in Shivanandan, Radenovic, and Sbalzarini (2013<ref>A. Shivanandan, A. Radenovic, and I. F. Sbalzarini. [http://dx.doi.org/10.1186/1471-2105-11-372 MosaicIA: an ImageJ/Fiji plugin for spatial pattern and interaction analysis], BMC Bioinformatics., 14:349, 2013</ref>).
 
 == References ==
 
