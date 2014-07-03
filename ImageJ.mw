@@ -2,7 +2,7 @@ ImageJ is an open source Java image processing program inspired by NIH Image for
 
 == Flavors ==
 
-There are a few different flavors of ImageJ with very similar names, and some confusion is inevitable. Below is a table which should help to clarify the purpose of each. For the historical context of these projects, see the [http://developer.imagej.net/history History of ImageJ].
+There are a few different flavors of ImageJ with very similar names, and some confusion is inevitable. Below is a table which should help to clarify the purpose of each. For the historical context of these projects, see the [[History]] of ImageJ.
 
 {| class="wikitable"
 |-
