@@ -14,11 +14,13 @@
 }}
 
 <!-- Create a short TOC next to main Contents -->
-<div style="padding-top:20em;padding-left:1.5em;">
+<div style="padding-top:17em;padding-left:1.5em;">
 <div style="font-size:175%;border-bottom:1px dotted #ccc;margin-bottom:0.55em;">Quick links</div>
 
 '''Analysis of traced arbors?'''
 :Jump to [[#Importing|Importing Profiles]]
+'''Segmentation issues?'''
+:Jump to [[#Cf. Segmentation|Cf. Segmentation]] or [[#Pre-processing|Pre-processing]]
 '''Having Problems?'''
 :Jump to [[#FAQ|FAQs]]
 '''Non-Fiji User?'''
@@ -76,7 +78,7 @@ Input values take into account the scale information of the image that can be se
             margin-bottom: 2em;
             background-color: #ffefbe;
             {{border-radius|.75em}}{{box-shadow}}">
-'''Tip:''' In the dialog prompts of ''Sholl Analysis'', bold headings are clickable URLs pointing to the respective sections of this manual.</div>
+'''Tip:''' In the dialog prompts of ''Sholl Analysis'', bold headings are clickable URLs pointing to the respective sections of this manual. In addition, relevant tooltips are displayed in the ImageJ status bar when specifying key options.</div>
 
 ==== Multiple Samples and Noise Reduction ====
 [[ File:BitmapSholl-Prompt_v3.png|320px|right |Main prompt (version 3.4.1)]]
@@ -122,7 +124,7 @@ Input values take into account the scale information of the image that can be se
 ** '''Do not display saved files''' If checked, saved files are directly saved to disk and are not displayed. Activate this option when [[#Batch_Processing|batch processing]] files.
 
 ==== Cf. Segmentation ====
-Press ''Cf. Segmentation'' to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the ''B&W'' lookup table in the Threshold Widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> ({{key press|Shift|T}}). ''Cf. Segmentation'' allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [http://diademchallenge.org DIADEM] dataset<ref name="DIADEM"/>:
+Press ''Cf. Segmentation'' to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the ''B&W'' lookup table in the Threshold Widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> {{key press|Shift|T}}). ''Cf. Segmentation'' allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [http://diademchallenge.org DIADEM] dataset<ref name="DIADEM"/>:
 
 
 {|
@@ -130,7 +132,8 @@ Press ''Cf. Segmentation'' to visually confirm which phase of the segmented imag
 |-
 |<center>[[File:CfSegmentation.png|700px|center|]]</center>
 |-
-|'''Top row:''' Image properly segmented: Arbor is sampled. '''Bottom row:'''  Aberrant segmentation (inverted image): Background is sampled. Note the reversal of [[#Cf._Segmentation|Cf. Segmentation]] output and how the [[#Output_Options|intersections mask]] no longer decorates the axonal processes but the interstitial spaces between them. As a consequence of the phase inversion, the program oversamples (cf. hue ramps on upper left of intersections mask). Also, note that the initial black and white image would look the same under an inverted lookup table  (<span style="border-bottom:1px dotted #ccc;">Image▷ Lookup Tables▷ Invert LUT</span>).
+|'''Top row:''' Image properly segmented: Arbor is sampled. '''Bottom row:'''  Aberrant segmentation (inverted image): Background is sampled.<br>
+Note the reversal of ''[[#Cf._Segmentation|Cf. Segmentation]] output'' and how the ''[[#Output_Options|intersections mask]]'' no longer decorates the axonal processes but the interstitial spaces between them. The consequences of the phase inversion are twofold:  1) the program oversamples (cf. hue ramps on upper left of ''Intersections mask'') and 2) the program detects artifacts induced by the edges of the image (cf. top-right and bottom-right corners of mask where intersections are sampled in the absence of real axons at those locations). Also, note that the initial black and white image would ''look the same'' under an inverted lookup table  (<span style="border-bottom:1px dotted #ccc;">Image▷ Lookup Tables▷ Invert LUT</span>).
 |}
 
 <div id="Binary_Artifacts" style="float:center;
@@ -303,9 +306,10 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 <span id="Importing"></span>
 
 == Importing Profiles Obtained Elsewhere ==
-[[ File:BitmapSholl-TabularPrompt.png|320px|right |Tabular prompt (version 3.4.1)]]As of version 3.1 it is possible to analyze profiles obtained from traced data. This feature is specifically targeted at users of [[Simple Neurite Tracer]], Fiji's framework for semi-automated reconstruction of neuronal arbors, but can be extended to tracings obtained with other software.
+[[ File:BitmapSholl-TabularPrompt.png|320px|right |Tabular prompt (version 3.4.2)]]As of version 3.1.0 it is possible to analyze profiles obtained from traced data. This feature is specifically targeted at users of [[Simple Neurite Tracer]], Fiji's remarkable framework for semi-automated reconstruction of neuronal arbors, but can be extended to tracings obtained with other software.
 
-This option is triggered by holding {{key press|Alt}} while running  <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span>, which prompts a simplified version of the [[#Multiple Samples and Noise Reduction|main dialog]].
+
+This option is triggered by holding {{key press|Alt}} while running  <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span>, which prompts a simplified version of the [[#Multiple Samples and Noise Reduction|main dialog]]. To use it:
 
 #Load tracings (typically a .swc or a .traces file) into [[Simple_Neurite_Tracer:_Basic_Instructions|Simple Neurite Tracer]]
 #Retrieve the linear Sholl profile by following these [[Simple_Neurite_Tracer:_Sholl_analysis|instructions]]
@@ -319,10 +323,21 @@ This option is triggered by holding {{key press|Alt}} while running  <span style
 
 Notes:
 *For ''Annulus/Spherical shell'' [[#Normalizer|normalization]], [[#StepSize|Radius step size]] is calculated from the difference between the first two rows in ''Distance column''.
-*In a [[#Batch_Analysis_of_Previously_Obtained_Profiles|macro]], the [http://imagej.nih.gov/ij/developer/macro/functions.html#setKeyDown setKeyDown("alt")] macro function can be used input tabular data.
+*Use ''Import Other Data'' to analyze a different dataset.
+
+<div style="float:center;
+            border: 1px solid #ccc;
+            padding: 5px !important;
+            text-align:center;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            background-color: #ffefbe;
+            {{border-radius|.75em}}{{box-shadow}}">
+'''Tip:''' You can shuttle between the ''[[#Multiple Samples and Noise Reduction|Bitmap]]'' and ''[[#Importing|Tabular]]'' prompts by {{key press|Alt}}-clicking their Cancel button. The shortcut is easy to remember: {{key press|Alt}} is always the trigger that changes the type of data to be analyzed.</div>
+
 
 == Batch Processing ==
-It is fairly simple to [[Scripting Help|automate]] the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji ([[Introduction into Macro Programming|ImageJ Macro Language]], [[Beanshell_Scripting|Beanshell]], [[Javascript_Scripting|Javascript]], [[JRuby_Scripting|JRuby]], [[Jython_Scripting|Jython]], [[Clojure_Scripting|Clojure]], ...).
+It is fairly simple to [[Scripting Help|automate]] the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji ([[Introduction into Macro Programming|ImageJ Macro Language]], [[Beanshell_Scripting|Beanshell]], [[Javascript_Scripting|Javascript]], [[JRuby_Scripting|JRuby]], [[Jython_Scripting|Jython]], [[Clojure_Scripting|Clojure]], ...). This section provides some examples.
 
 === Batch Analysis of Bitmap Images ===
 Any macro or script must allow the Sholl Analysis plugin to access the ROI marking the center of analysis. One could instruct ImageJ to read the coordinates of pre-existing ROIs from a text file, store a list of line selections in the ROI Manager, or write a morphology-based routine that detects the center of the arbor. However, marking the center of analysis is probably something that you will want to do manually. Here is a workflow:
@@ -346,7 +361,7 @@ Any macro or script must allow the Sholl Analysis plugin to access the ROI marki
 Now that all the images are marked, we just need to ask ImageJ to generate some lines of code. We will open the Macro Recorder (<span style="border-bottom:1px dotted #ccc;">Plugins▷ Macros▷ Record...</span>) and run ''Sholl Analysis'' on one of the images to find out how to call the plugin with suitable parameters. In this example, we will use the ImageJ macro language. The single line of code that appears in the recorder window will look something like this:
 <source lang="java">
 // Recording Sholl Analysis version 3.4.2
-// Tip: See http://fiji.sc/Sholl_Analysis#Batch_Processing for scripting examples
+// Visit http://fiji.sc/Sholl_Analysis#Batch_Processing for scripting examples
 run("Sholl Analysis...", "starting=10 ending=400 radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 </source>
 
@@ -447,7 +462,7 @@ For generalized information about image processing have a look at the [http://im
 * '''[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#fit-polynomial Fit Polynomial]:''' Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions. Requires the [http://commons.apache.org/proper/commons-math/ apache commons math library], distributed with Fiji. The script provides [[#Non-Fiji_users|Non-Fiji users]] with direct download links that install all required dependencies
 * '''[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#plot-results Plot Results]:''' Whole-purpose routine that plots data from imported spreadsheets. 
 
-To install BAR, run <span style="border-bottom:1px dotted #ccc;">Help▷ Update...</span> Choose ''Advance Mode'' then ''Manage update sites''. Activate the ''BAR'' checkbox in the list of update sites. See the [[BAR#Installation|BAR documentation page]] for more details.
+To install [[BAR]], run <span style="border-bottom:1px dotted #ccc;">Help▷ Update...</span> Choose ''Advance Mode'' then ''Manage update sites''. Activate the ''BAR'' checkbox in the list of update sites. See the [[BAR#Installation|BAR documentation page]] for more details.
 
 == Auxiliary Commands ==
 ;File▷ Open Samples▷ ddaC Neuron
@@ -545,10 +560,16 @@ To install BAR, run <span style="border-bottom:1px dotted #ccc;">Help▷ Update.
 	<dl><dd>
 		An anisotropic voxel size will have a strong impact on [[#StepSize|step size]]. On the other hand, 2D and 3D images can be sampled differently depending on the [[#Parameters|options chosen]]. If <span style="border-bottom:1px dotted #ccc;">Image▷ Properties…</span> ({{key press|Shift|P}}) reports the appropriate spatial calibration, make sure to read [[#Multiple_Samples_and_Noise_Reduction|Multiple Samples and Noise Reduction]] before deciding which type of images to use.
 	</dd></dl>
+	<li>
+		<span id="faq:no-output"></span>'''The program terminates without warnings. What am I doing wrong?'''
+	</li>
+	<dl><dd>
+		The program will not terminate without throwing an error message. However, do note that some exiting messages are displayed in the often overlooked status bar of the main ImageJ window. This is intentional, as it minimizes the frequency of modal windows popping up for each failed operation.
+	</dd></dl>
 </ol>
 
-'''Metrics'''
-<ol START="14">
+'''Metrics and Curve Fitting'''
+<ol START="15">
 	<li>
 		<span id="faq:AUC"></span>'''Would it be possible to retrieve the Area Under the Curve  (linear Sholl plot)?'''
 	</li>
@@ -556,10 +577,6 @@ To install BAR, run <span style="border-bottom:1px dotted #ccc;">Help▷ Update.
 		Sure. But it would hardly be relevant. The area under the curve (AUC, the area between the sampled curve and the horizontal axis, i.e., its definite integral) could be estimated using, e.g., the [http://en.wikipedia.org/wiki/Trapezoidal_rule trapezoidal rule]. However, because data is always sampled at equally spaced intervals, doing so would be the same as multiplying [[#MeanInters|Mean inters.]] by the distance between [[#EndRadius|Ending radius]] and [[#StartRadius|Starting radius]]. Thus, effectively, AUC is  redundant with [[#MeanInters|Mean inters.]], that is already an integrated measurement of the sampled data. On the other hand,
 one could retrieve the AUC of the polynomial fit, but such property is already covered by [[#MeanValueOfFunction|Mean value]].
 	</dd></dl>
-</ol>
-
-'''Curve Fitting'''
-<ol START="15">
 	<li>
 		<span id="faq:inflection-points"></span>'''The shape of the polynomial changes at the edges of the profile. Why?'''
 	</li>
@@ -574,8 +591,18 @@ one could retrieve the AUC of the polynomial fit, but such property is already c
 	</dd></dl>
 </ol>
 
+'''Batch Processing'''
+<ol START="18">
+	<li>
+		<span id="faq:recorder"></span>'''The code that the Macro Recorder gave me does not seem to work. What am I doing wrong?'''
+	</li>
+	<dl><dd>
+		It is likely that frequent interactions with the dialog prompt(s) (from which the Recorder retrieves user-specified parameters) have "confused" ImageJ. While this process is usually flawless, it may happen that repeated triggering of GUI-specific commands that are not recordable (e.g., ''[[#Cf. Segmentation|Cf. Segmentation]]'' or ''[[#Importing|Import Other Data]]'' buttons) may lead to an incomplete recording. The solution is to repeat the recording, while minimizing such interactions.
+	</dd></dl>
+</ol>
+
 '''Development'''
-<ol START="17">
+<ol START="19">
 	<li>
 		<span id="faq:bug-report"></span>'''I found a bug. How do I report it?'''
 	</li>
