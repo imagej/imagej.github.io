@@ -97,7 +97,7 @@ Input values take into account the scale information of the image that can be se
 * <span id="PrimaryBranches"></span>'''Number of primary branches''' The number of primary branches (i.e., those originating directly from cell soma when the center of analysis is the perikaryon) to be used in the calculation of [[#SchoenenSampled|Schoenen ramification indices]].
 ** '''Infer from starting radius''' If checked, the ''Number of Primary branches'' is inferred from the count of intersections at [[#StartRadius|Starting radius]].
 
-* '''Fit profile and compute descriptors''' <sup>&nbsp;</sup>If checked, data is fitted according to the chosen [[#Sholl_Methods|method]] and appropriate [[#Metrics|metrics]] calculated automatically. If unchecked, only sampled data is plotted.
+* '''Fit profile and compute descriptors''' <sup>&nbsp;</sup>If checked, data is fitted according to the chosen [[#Choice_of_Methods|method]] and appropriate [[#Metrics|metrics]] calculated automatically. If unchecked, only sampled data is plotted.
 ** '''Show fitting details''' <sup>&nbsp;</sup>Choose this option to have all of the parameters of the simplex fitting printed to the Log window. The [http://en.wikipedia.org/wiki/Coefficient_of_determination coefficient of determination] (''R<sup>2</sup>'', a measure of goodness of fit) is always stored in the ''Sholl Results'' table even when this option is not selected.
 
 <div style="float:center;
@@ -110,7 +110,7 @@ Input values take into account the scale information of the image that can be se
             {{border-radius|.75em}}{{box-shadow}}">
 '''Tip:''' [[#Complementary_Tools|Complementary Tools]] describes how to extend curve fitting beyond default options.</div>
 
-==== Choice of Method(s) ====
+==== Choice of Methods ====
 <span id="Sholl_Methods"></span>The [[#MethodsTable|type of profile(s)]] to be obtained. ''Linear'' (profile without normalization), or normalized profiles: ''Linear-norm'', ''Semi-log'', or ''Log-log''.
 * '''Polynomial''' <sup>&nbsp;</sup> Specifies the degree of the [[#MethodsTable|polynomial]] to be fitted to the ''Linear'' profile<ref name="Stulic"></ref>. While the polynomial of best approximation, or "best fit", should be empirically determined for each analyzed cell type, it is possible to ask the plugin to predict the order of the fitting polynomial (or at least try) using the choice ''Best fitting degree''. In this case, the plugin will loop through all the available choices of polynomials, perform each fit in the background and choose the one with the highest coefficient of determination.
 * '''Most informative''' <sup>&nbsp;</sup> Select this option when you cannot predict which type of normalized profile best describes the dataset. If chosen, the plugin will use the [[#Dratio|Determination ratio]] to determine which of ''Semi-log'' or ''Log-log'' methods is more appropriate.  ''Linear-norm'' is not performed.<br>The ''Best fitting degree'' and ''Most informative'' choices are obviously more computer-intensive and can be monitored by activating the ''Show fitting details'' checkbox.
@@ -193,7 +193,7 @@ Most of the retrieved [[#Metrics_based_on_fitted_data|metrics]] are automaticall
 
 <span style="display: inline-block; width: 25px">'''''log'''''</span>Natural logarithm, the logarithm to the base ''e''
 
-<span style="display: inline-block; width: 25px">'''''S'''''</span>The [[#Choice_of_Method(s)|chosen property ]] of the sampling shell to be used in the normalization of ''Linear-norm'', ''Semi-log'', and ''Log-log'' profiles.<br> <span style="display: inline-block; width: 25px">&nbsp;</span>For 2D images, the ''Perimeter'' of the sampling circumference (2πr) or the ''Area'' of the corresponding circle (πr<sup>2</sup>)<br> <span style="display: inline-block; width: 25px">&nbsp;</span>For 3D images, the ''Surface'' of the sampling sphere (4πr<sup>2</sup>) or its respective ''Volume'' (4/3πr<sup>3</sup>)<br>
+<span style="display: inline-block; width: 25px">'''''S'''''</span>The [[#Choice_of_Methods|chosen property ]] of the sampling shell to be used in the normalization of ''Linear-norm'', ''Semi-log'', and ''Log-log'' profiles.<br> <span style="display: inline-block; width: 25px">&nbsp;</span>For 2D images, the ''Perimeter'' of the sampling circumference (2πr) or the ''Area'' of the corresponding circle (πr<sup>2</sup>)<br> <span style="display: inline-block; width: 25px">&nbsp;</span>For 3D images, the ''Surface'' of the sampling sphere (4πr<sup>2</sup>) or its respective ''Volume'' (4/3πr<sup>3</sup>)<br>
 
 '''N.B.''' A third [[#Normalizer|normalization option]] is also available when performing [[#StepSize|non-continuous sampling]]: ''Annulus''/''Spherical shell''. In this case, the normalization is performed against the area of the annulus formed between the circumferences at ''r'' ± ''Radius step size''/2 (2D images), or against the volume between the two spheres at ''r'' ± ''Radius step size''/2 (3D images).<br>
 
@@ -257,7 +257,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 
 === Metrics based on fitted data ===
 ;<span id="Dratio"></span>Determination ratio
-:The ratio of the [[#RegR2|coefficient of determination]] for the semi-log method and that for the log–log method<ref name="Ristanovic"></ref>. If the semi-log method is better relatively to the log–log method, the ''Determination ratio'' becomes larger than 1. It is the parameter used by the plugin to silently predict the normalization method that is the [[#Choice_of_Method(s)|most informative]]. The prediction can be monitored by activating the [[#Descriptors and Curve Fitting|Show fitting details ]] checkbox.
+:The ratio of the [[#RegR2|coefficient of determination]] for the semi-log method and that for the log–log method<ref name="Ristanovic"></ref>. If the semi-log method is better relatively to the log–log method, the ''Determination ratio'' becomes larger than 1. It is the parameter used by the plugin to silently predict the normalization method that is the [[#Choice_of_Methods|most informative]]. The prediction can be monitored by activating the [[#Descriptors and Curve Fitting|Show fitting details ]] checkbox.
 
 ;<span id="ShollDecay"></span>Sholl regression coefficient (''Regression coefficient'')
 :The slope (multiplied by -1) of the linear regression described in [[#eq3|(3)]] and [[#eq4|(4)]], i.e., ''k'', a measure of the rate of decay of the number of branches with distance from the center of analysis. Higher ''k'' values reflect larger changes in the function log(N/S). To optimize the fit, the plugin retrieves a [[#ShollPlots|second linear regression]] centered around the median distance, excluding distances at the edges of the profile. Details of this second fit are also registered on the [[#Metrics|''Sholl table'']] under dedicated columns, e.g., ''Sholl regression coefficient [P10-P90]'', when data within the 10<sup>th</sup>–90<sup>th</sup> percentile is used.
@@ -594,7 +594,7 @@ one could retrieve the AUC of the polynomial fit, but such property is already c
 '''Batch Processing'''
 <ol START="18">
 	<li>
-		<span id="faq:recorder"></span>'''The code that the Macro Recorder gave me does not seem to work. What am I doing wrong?'''
+		<span id="faq:recorder"></span>'''The code that the Macro Recorder produced does not seem to work. What am I doing wrong?'''
 	</li>
 	<dl><dd>
 		It is likely that frequent interactions with the dialog prompt(s) (from which the Recorder retrieves user-specified parameters) have "confused" ImageJ. While this process is usually flawless, it may happen that repeated triggering of GUI-specific commands that are not recordable (e.g., ''[[#Cf. Segmentation|Cf. Segmentation]]'' or ''[[#Importing|Import Other Data]]'' buttons) may lead to an incomplete recording. The solution is to repeat the recording, while minimizing such interactions.
@@ -607,7 +607,7 @@ one could retrieve the AUC of the polynomial fit, but such property is already c
 		<span id="faq:bug-report"></span>'''I found a bug. How do I report it?'''
 	</li>
 	<dl><dd>
-		Use Fiji's built-in [[Report a Bug]] command. Alternatively, report it to the [http://imagej.nih.gov/ij/list.html ImageJ mailing list]. Don't forget to include the steps needed to reproduce the problem.
+		Use Fiji's built-in [[Report a Bug]] command. Alternatively, report it to the [http://imagej.nih.gov/ij/list.html ImageJ mailing list] or file an [https://github.com/tferr/ASA/issues issue] on GitHub. Don't forget to include the steps needed to reproduce the problem.
 	</dd></dl>
 	<li>
 		<span id="faq:updates"></span>'''My version is not the latest after running <span style="border-bottom:1px dotted #ccc;">Help▷ Update Fiji...</span> Why?'''
