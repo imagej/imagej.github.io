@@ -1,5 +1,4 @@
-ImageJ2 is a new version of [http://imagej.net/ ImageJ] for the next generation 
-of multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
+ImageJ2 is a new version of [[ImageJ]] for the next generation of multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
 
 To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
 
