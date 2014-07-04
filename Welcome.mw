@@ -1,0 +1,22 @@
+= Welcome to the ImageJ web site! =
+
+[[ImageJ]] is an open source image processing program designed for scientific multidimensional images. ImageJ is highly extensible, with thousands of plugins and macros for performing a wide variety of tasks, and a strong, established user base.
+
+This site is the central online resource documenting ImageJ and its plugins. It is a wiki, meaning that everyone is encouraged to make edits and improvements, benefiting the entire ImageJ community.
+
+There are three major "flavors" of ImageJ covered by this site:
+
+<center>
+{| style="background: none; padding-bottom: 10px; padding-top: 30px"
+| style="vertical-align: top" | [[File:Imagej2-128.png]]
+| style="vertical-align: top; width: 233px; padding-bottom: 20px; padding-right: 20px; padding-top: 10px" | <div style="font-family: 'Impact',serif; font-size: 36px; padding-bottom: 15px">ImageJ2</div> The current version of ImageJ focuses on analysis of scientific multidimensional image data. ImageJ2 includes ImageJ1 (see right) with a compatibility layer, so that old-style plugins and macros continue to work.<ul><li>For users: it is a supercharged version of ImageJ1 with many new features.</li><li>For developers: it is an entirely new and more powerful set of software libraries.</li></ul><br/>[[ImageJ2|Read more...]]
+| style="vertical-align: top; border-left: 1px solid black" | [[File:Imagej1-128.png]]
+| style="vertical-align: top; width: 233px" | [[File:Imagej1-logo.png]]<br/><br/>ImageJ 1.x, sometimes shortened to ImageJ1 or IJ1, is the stable version of ImageJ developed by Wayne Rasband at NIH since 1997.<br/><br/>ImageJ grew organically over time as Wayne Rasband continuously added features according to user requests. Now there are thousands of plugins written by members of a diverse community.<br/><br/>[[ImageJ1|Read more...]]
+|}
+{| style="background: none; width: 500px; border-top: 1px solid black; padding-bottom: 30px"
+| style="vertical-align: top; padding-right: 10px; padding-top: 10px" | [[File:Fiji-logo-1.0-128x128.png]]
+| style="vertical-align: top; padding-top: 30px" | <div style="font-family: 'Impact',serif; font-size: 36px; padding-bottom: 15px">Fiji</div>Fiji is a distribution of ImageJ for the life sciences. It provides a large number of additional plugins to facilitate analysis of life sciences images, particularly microscopy images.<br/><br/>[[Fiji|Read more...]]
+|}
+</center>
+
+For a more complete rundown of various ImageJ-related software, see the [[ImageJ]] and [[History]] pages.
