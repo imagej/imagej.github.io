@@ -4,7 +4,6 @@ If Javascript is enabled in your browser, you can connect right away, right here
 
 <include iframe src="http://webchat.freenode.net?randomnick=1&channels=fiji-devel&uio=d4" width="647" height="400" />
 
-If you are unlucky enough not to have an IRC client, or if you are blocked by a restrictive firewall, you can try one of these options instead:
-* The [http://webchat.freenode.net/?channels=fiji-devel freenode.net Javascript client] (that is the chat client you see embedded above)
-* Our [http://fiji.sc/cgi-bin/cgiirc/irc.cgi CGI::IRC based web-interface]
-* A prettier, but closed-source [http://fiji.sc/irc.html web interface using mibbit.com technology].
+The chat client above is the [http://webchat.freenode.net/?channels=fiji-devel freenode.net Javascript client].
+
+Or if you are lucky enough not to be blocked by a restrictive firewall, you can install and use [https://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_clients a dedicated IRC client] of your very own.
