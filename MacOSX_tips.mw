@@ -41,7 +41,7 @@ Execute '''sudo port install openjdk6''' on your Terminal. You can also install 
 Then you can proceed with the generic Fiji Installation
 
 Check more info at 
-[http://wikis.sun.com/display/OpenJDK/BSDPort wikis.sun.com/display/OpenJDK/BSDPort ], and [http://landonf.bikemonkey.org/static/soylatte/ landonf.bikemonkey.org/static/soylatte/]
+[http://landonf.bikemonkey.org/static/soylatte/ landonf.bikemonkey.org/static/soylatte/]
 
 ==Accessing the plugins and macros folders==
 
