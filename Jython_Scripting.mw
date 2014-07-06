@@ -6,6 +6,7 @@
 | filename               = scripting-jython.jar
 | source                 = [https://github.com/scijava/scripting-jython Git]
 | status                 = stable
+| tutorials             = Albert Cardona
 }}
 {{Scripting}}
 
