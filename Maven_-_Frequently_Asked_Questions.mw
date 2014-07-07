@@ -157,5 +157,4 @@ mvn -Dtest='TestCircle#mytest' test
 
 = Where can I find more information about Maven? =
 
-* [http://developer.imagej.net/learning-maven ImageJDev's Learning Maven]
-* [http://maven.apache.org/guides/getting-started/index.html Maven's Getting Started]
+See our [[Maven]] page!
