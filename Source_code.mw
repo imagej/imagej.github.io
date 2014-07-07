@@ -1,3 +1,4 @@
+{{Development}}
 == Source code ==
 
 Find the source for [[ImageJ]] and related [[SciJava]] projects on GitHub:
@@ -14,7 +15,7 @@ Find the source for [[ImageJ]] and related [[SciJava]] projects on GitHub:
 # Type <code>mvn</code> from the top-level directory.
 
 == Using an IDE ==
-You can [http://developer.imagej.net/ides import the code into your favorite IDE].
+You can [[IDEs|import the code into your favorite IDE]].
 
 == Javadocs ==
 You can browse the [http://javadoc.imagej.net/ Javadocs] online.
