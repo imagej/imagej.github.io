@@ -34,7 +34,7 @@ mvn
 mvn -Pexec
 </source>
 
-== Launching alternative user interfaces ==
+=== Launching alternative user interfaces ===
 <source lang="bash">
 mvn -Dimagej.ui=swing -Pexec
 mvn -Dimagej.ui=swing-mdi -Pexec
