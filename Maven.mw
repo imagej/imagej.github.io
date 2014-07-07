@@ -1,3 +1,8 @@
+[[ImageJ]], [[Fiji]] and other [[SciJava]] projects use [http://maven.apache.org/ Maven] for their project infrastructure.
+
+Maven artifacts are published to the [http://maven.imagej.net/ ImageJ Maven repository].
+
+
 = Introduction =
 
 Maven is a powerful tool to build Java projects and to manage their dependencies. It can build dependencies from sources, but if the sources are not available, it will look into Maven repositories to download the dependencies from.
