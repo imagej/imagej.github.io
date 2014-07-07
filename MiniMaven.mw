@@ -14,7 +14,7 @@ Therefore we needed a system to build [[ImageJ1]], [[ImageJ2]] and [[Fiji]] quic
 
 == Command-line options ==
 
-MiniMaven can be called via the main class ''imagej.build.Minimaven''. Just like real ''Maven'', you can start it directly in the directory:
+MiniMaven can be called via the main class ''org.scijava.minimaven.MiniMaven''. Just like real ''Maven'', you can start it directly in the directory:
 
 <source lang="bash">
 ImageJ-<platform> --mini-maven <command>
