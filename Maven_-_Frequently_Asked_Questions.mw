@@ -157,4 +157,4 @@ mvn -Dtest='TestCircle#mytest' test
 
 = Where can I find more information about Maven? =
 
-See our [[Maven]] page!
+See the [[Maven]] page!
