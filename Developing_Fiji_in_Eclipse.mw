@@ -49,6 +49,9 @@ This will create the folder ''~/fiji/'' where you have the core Fiji repository 
 Should you want to work on source code that is not part of the core Fiji repository, you can check out submodules you want to work with. Note: Not all repositories we reference in submodules are handled by Maven.
 
 ==Create the Eclipse Projects==
+
+{{Template:Outdated}}
+
 Import Fiji projects via ''File>Import>Maven>Existing Maven Project''. You can either:
 
 * '''Import all Fiji projects.''' You can use Fiji's ''src-plugins/'' directory as the base, and it will discover all the projects automatically. This is a simple way to import everything. However, you will need a reasonably large machine or else your Eclipse might choke a bit, as there are over 100 projects.
