@@ -45,7 +45,7 @@ Unpack the tarball to a location of your choice. To avoid
 permissions issues, we recommend using a folder in your home directory such as ~/eclipse.
 
 {{Warning
-| message = Note: For several reasons, we do not recommend installing Eclipse from a package manager. You may not get a new enough version of Eclipse (we recommend 3.7+), you will not get the Java Developers version that includes the m2e plugins, and you will likely have trouble installing additional plugins due to the permissions issues with the system-wide installation.
+| message = Note: For several reasons, we do not recommend installing Eclipse from a package manager. You may not get a new enough version of Eclipse (we recommend 4.3+), you will not get the Java Developers version that includes the m2e plugins, and you will likely have trouble installing additional plugins due to the permissions issues with the system-wide installation.
 }}
 
 == Clone the ImageJ source ==
