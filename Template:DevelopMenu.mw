@@ -2,10 +2,10 @@
 ! colspan="2" style="font-size: 130%;" | ImageJ and IDEs
 |-
 |
-* [[Developing ImageJ on the command line|Command line]]
 * [[Developing ImageJ in Eclipse|Eclipse]]
 * [[Developing ImageJ in NetBeans|NetBeans]]
 * [[Developing ImageJ in IntelliJ IDEA|IntelliJ IDEA]]
+* [[Developing ImageJ on the command line|Command line]]
 |}
 
 <noinclude>
