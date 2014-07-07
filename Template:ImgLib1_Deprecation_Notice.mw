@@ -1,4 +1,5 @@
 <div style="background:#fdd; padding: 10px 10px 0 10px; border: 1px solid black;">
-'''DEPRECATION NOTICE:''' 
+<div style="float: left">[[File:Warning.png]]</div> '''DEPRECATION NOTICE:''' 
 This page describes ImgLib1, the previous incarnation of the [[ImgLib2]] library. We encourage developers to use ImgLib2 instead, and [[How To Migrate Code From ImgLib To ImgLib2|migrate existing ImgLib1 programs to ImgLib2]] whenever possible.
+<br style="clear: left"/>
 </div>
