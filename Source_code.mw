@@ -1,0 +1,22 @@
+== Source code ==
+
+Find the source for [[ImageJ]] and related [[SciJava]] projects on GitHub:
+
+* [https://github.com/imagej ImageJ]
+* [https://github.com/fiji Fiji]
+* [https://github.com/imglib ImgLib2]
+* [https://github.com/scifio SCIFIO]
+* [https://github.com/scijava SciJava]
+
+== Building from source ==
+Install [[Maven]] and type <code>mvn</code> from the top-level directory.
+
+== Using an IDE ==
+You can [http://developer.imagej.net/ides import the code into your favorite IDE].
+
+== Javadocs ==
+You can browse the [http://javadoc.imagej.net/ Javadocs] online.
+
+== Running ImageJ1 unit tests ==
+
+We have written a substantial number of unit tests to exercise ImageJ 1.x functionality. See the [http://developer.imagej.net/ij1-tests ImageJ1 unit tests] page for more information.
