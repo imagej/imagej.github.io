@@ -1,0 +1,61 @@
+This article explains how to install and configure NetBeans for use with ImageJ development. Directions correspond to NetBeans 7.1.2, which added integrated Git support, and may need adjustment for other versions.
+
+== Install and configure NetBeans ==
+
+=== Setting up NetBeans on Windows ===
+
+==== Install Java Development Kit ====
+
+Download and install JDK 6 from the [http://www.oracle.com/technetwork/java/javase/downloads/ Java web site].
+
+==== Install NetBeans ====
+
+Download and install NetBeans from the [http://netbeans.org/downloads/ NetBeans web site]. Any bundle that includes Java SE should be fine.
+
+=== Setting up NetBeans on Mac OS X ===
+
+==== Install NetBeans ====
+
+Download and install NetBeans from the [http://netbeans.org/downloads/ NetBeans web site]. Any bundle that includes Java SE should be fine.
+
+=== Setting up NetBeans on Linux ===
+
+==== Install Java Development Kit ====
+
+Install Java using the package manager—e.g., for Ubuntu 10.04:
+
+<source lang="bash">
+sudo add-apt-repository "deb http://archive.canonical.com/ lucid partner"
+sudo aptitude update
+sudo aptitude install sun-java6-jdk sun-java6-plugin
+sudo update-java-alternatives -s sun-java6-sun
+</source>
+
+==== Install NetBeans ====
+
+Install NetBeans using the package manager—e.g., on Ubuntu:
+
+<source lang="bash">
+sudo aptitude install netbeans
+</source>
+
+== Import the ImageJ source ==
+ 
+# Choose Team &gt; Git &gt; Clone... from the NetBeans menu
+# For the Repository URL, enter: <code>git://github.com/imagej/imagej</code>
+# Click Next, check the "master*" branch, then Next again, then Finish
+# When prompted, click Open Project...
+# Select the "ImageJ Projects" project in the tree then click Open
+# Right-click the "ImageJ Projects" project and choose Build
+ 
+You may receive a warning about Maven when building the project. It is not required, but if you wish to eliminate it, you can install Maven from the [http://maven.apache.org/download.html Maven web site].
+
+== Launch the program ==
+
+# Expand the "ImageJ Projects" project, then "Modules"
+# Expand the "ImageJ POM: User Interface" module
+# Double-click the "ImageJ Application" project to open it
+# Right-click the "ImageJ Application" project and choose "Run"
+# On the Main Class dialog, choose "net.imagej.Main"
+
+To expand the projects you can also right click on the top-level "ImageJ Projects" and choose "Open Required Projects" (and "Close Required Projects" to close). During development you must select "Open Required Projects" before you can successfully do "Find Usages" in the "Open Projects" scope.
