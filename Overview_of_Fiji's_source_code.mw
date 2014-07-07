@@ -22,7 +22,7 @@ If the plugin sources contain unit tests, their sources are in ''src/test/java/'
 
 == Libraries ==
 
-Most libraries are available as regular [[Maven]] dependencies (you can [http://search.maven.org/ search for them on Maven Central].
+Most libraries are available as regular [[Maven]] dependencies (you can [http://search.maven.org/ search for them on Maven Central]).
 
 == Submodules ==
 
