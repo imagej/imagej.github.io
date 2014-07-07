@@ -20,6 +20,8 @@
 
 ==For developers==
 
+{{Template:Outdated}}
+
 Please try to avoid closed-source plugins.
 
 If you have the sources, copy them into src-plugins/.  (If you do not have the sources, copy the .jar into staged-plugins/.)
