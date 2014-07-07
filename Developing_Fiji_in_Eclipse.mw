@@ -37,7 +37,7 @@ Install Git using your preferred package manager or download from the [http://gi
 
 ==Checkout Fiji==
 
-Do <span style="color:#ff0000">not</span> clone Fiji into your Eclipse work space. We are using Maven to manage our projects and Eclipse tries very hard to interfere with this when it is allowed to.
+Do <span style="color:#ff0000">not</span> clone Fiji into your Eclipse workspace. We are using [[Maven]] to manage our projects and Eclipse tries very hard to interfere with this when it is allowed to.
 
 <source lang="bash">
 cd ~/
