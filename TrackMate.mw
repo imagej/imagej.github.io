@@ -1,3 +1,6 @@
+[[Image:TrackMate-Logo85x50-color-300p.png|600px|center]]
+
+
 {{Infobox Plugin
 | name                  = TrackMate_
 | software              = Fiji
@@ -8,7 +11,6 @@
 | status                = v2.3.0, active
 | category              = [[:Category:Segmentation|Segmentation]], [[:Category:Tracking|Tracking]]
 }}
-
 __TOC__
 
 
