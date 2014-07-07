@@ -12,17 +12,17 @@ There are a few different flavors of ImageJ with very similar names, and some co
 |'''Initiated'''
 |'''Status'''
 |-
-|[[ImageJ1]]
-|Wayne Rasband
-|The current, stable version is known simply as "ImageJ"—or sometimes "ImageJ1" or "IJ1" to differentiate it from ImageJ 2.x, which is still in beta.
-|1997
-|Active
-|-
 |[[ImageJ2]]<br>
 ImageJDev
 |[[Contributors|ImageJ developers]]
-|ImageJ 2.x, referred to as "ImageJ2" or "IJ2" for short, is currently in development. It is a complete rewrite of ImageJ, but includes ImageJ1 with a compatibility layer, so that old-style plugins and macros can run the same as in IJ1.
+|ImageJ 2.x, referred to as "ImageJ2" or "IJ2" for short, is an image processing program targeting scientific multidimensional image data. It is a complete rewrite of ImageJ, but includes ImageJ1 with a compatibility layer, so that old-style plugins and macros can run the same as in IJ1.
 |Dec. 2009
+|Active
+|-
+|[[ImageJ1]]
+|Wayne Rasband
+|A stable version of ImageJ which has been in development since 1997. It has a strong, established user base, with thousands of plugins and macros for performing a wide variety of tasks.
+|1997
 |Active
 |-
 |[[ImageJA]]
