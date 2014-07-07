@@ -10,6 +10,12 @@
 | website                = [http://fly.mpi-cbg.de/preibisch Stephan Preibisch's homepage]
 }}
 
+== Download ==
+
+For now, the integration of the '''Multiview Reconstruction''' and the [[BigDataViewer]] is only available for download here: [http://fly.mpi-cbg.de/preibisch/spim.zip http://fly.mpi-cbg.de/preibisch/spim.zip] 
+
+Simply unzip all files into the Fiji plugins folder and replace any existing files. Soon it will be distributed properly through the Fiji Updater.
+
 == Introduction & Overview ==
 
 The '''Multiview Reconstruction''' software package enables users to ''register, fuse, deconvolve and view'' multiview microscopy images (first box). The software is designed for lightsheet fluorescence microscopy (LSFM, second box), but is applicable to any form of three or higher dimensional imaging modalities like confocal timeseries or multicolor stacks.
