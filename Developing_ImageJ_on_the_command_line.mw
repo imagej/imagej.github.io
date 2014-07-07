@@ -1,0 +1,44 @@
+This article explains how to install and configure command line tools for use with [[ImageJ]] development.
+
+== Install and configure command line tools ==
+
+=== Setting up command line tools on Windows ===
+* Download and install the [http://www.oracle.com/technetwork/java/javase/downloads/index.html Java 6 JDK], [http://msysgit.github.com/ Git for Windows] and [http://maven.apache.org/download.html Maven].
+* Add the <code>bin</code> directory for each to your [http://op111.net/82/ PATH environment variable].
+
+=== Setting up command line tools on Mac OS X ===
+Using [http://brew.sh/ Homebrew]:
+<source lang="bash">
+brew install git maven bash-completion
+</source>
+
+=== Setting up command line tools on Ubuntu ===
+<source lang="bash">
+sudo apt-get install default-jdk git maven
+</source>
+
+== Download the source ==
+<source lang="bash">
+git clone git://github.com/imagej/imagej
+</source>
+See the [[Source Code]] page for further details.
+
+== Build the source ==
+<source lang="bash">
+cd imagej
+mvn
+</source>
+
+== Launch the program ==
+<source lang="bash">
+mvn -Pexec
+</source>
+
+== Launching alternative user interfaces ==
+<source lang="bash">
+mvn -Dimagej.ui=swing -Pexec
+mvn -Dimagej.ui=swing-mdi -Pexec
+mvn -Dimagej.ui=awt -Pexec
+mvn -Dimagej.ui=pivot -Pexec
+mvn -Dimagej.ui=swt -Pexec
+</source>
