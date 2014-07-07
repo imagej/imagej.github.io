@@ -1,0 +1,13 @@
+{| class="infobox" cellspacing="5" style="width: 18em; font-size: 90%; text-align: left; float: right; border: 1px dashed #a0a0a0;"
+! colspan="2" style="font-size: 130%;" | ImageJ and IDEs
+|-
+|
+* [[Developing ImageJ on the command line|Command line]]
+* [[Developing ImageJ in Eclipse|Eclipse]]
+* [[Developing ImageJ in NetBeans|NetBeans]]
+* [[Developing ImageJ in IntelliJ IDEA|IntelliJ IDEA]]
+|}
+
+<noinclude>
+This template is the floating menu for pages about configuring an Integrated Development Environment (IDE) for use with ImageJ.
+</noinclude>
