@@ -9,7 +9,9 @@ Find the source for [[ImageJ]] and related [[SciJava]] projects on GitHub:
 * [https://github.com/scijava SciJava]
 
 == Building from source ==
-Install [[Maven]] and type <code>mvn</code> from the top-level directory.
+# Install [[Maven]].
+# Clone the source repository of interest.
+# Type <code>mvn</code> from the top-level directory.
 
 == Using an IDE ==
 You can [http://developer.imagej.net/ides import the code into your favorite IDE].
