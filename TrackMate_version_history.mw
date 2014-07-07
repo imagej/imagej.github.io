@@ -150,3 +150,14 @@ Initial release
 * Fix crash when saving with a source image not loaded from disk.
 * Do not crash when saving unconfigured detector or tracker.
 * Many other bugfixes.
+
+
+== 07-07-2014 - v2.4.0 ==
+
+* TrackScheme now has an outline panel, useful to navigate in large models.
+* TrackScheme has a better layout for tracks that have merge and split events.
+* The 'Refresh' button on detector config panels is not present anymore. It's confusing and useless now that the quality value does not match pixel intensity at all.
+* TrackMate has new logos and icons, made by Agnieszka Kawska @ IlluScientia. http://www.illuscientia.com/
+* Fixed several problems with the 'Copy Overlay' action.
+* Fixed a severe TrackScheme bug, happening when creating links with invisible tracks.
+* Fixed a detector crash when running a preview detection with 0 spots found.
