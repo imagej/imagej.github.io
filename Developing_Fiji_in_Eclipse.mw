@@ -90,16 +90,14 @@ public static void main(String[] args) {
 
 ==Adding new plugins==
 
-The easiest method is to start with a [https://github.com/imagej/minimal-ij1-plugin/zipball/master minimal project]. Just copy it into a newly created sub-directory of ''src-plugins/''. By convention, that sub-directory should have the base name of the ''.jar'' file to be generated.
+The easiest method is to start with a [https://github.com/imagej/minimal-ij1-plugin/zipball/master minimal project], renamed to the desired name of your plugin. By convention, the project directory should match the base name of the <code>.jar</code> file to be generated.
 
-The format of such a ''pom.xml'' is described briefly on our [[Maven]] page.
+The format of such a <code>pom.xml</code> is described briefly on the [[Maven]] page.
 
-Most importantly, you will need to adjust the ''artifactId'' and the ''dependencies'' section. Should you require a dependency that is not used in Fiji yet, you might want to search for the appropriate ''groupId'' and ''version'' in [http://maven.imagej.net:8081/ ImageJ2's Maven repository] (note: if your firewall does not allow you to access port 8081, you can access a slightly "crippled" version [http://maven.imagej.net/ here].
+Most importantly, you will need to adjust the <code>artifactId</code> and the <code>dependencies</code> section. Should you require a dependency that is not used in Fiji yet, you might want to search for the appropriate <code>groupId</code> and <code>version</code> in the [http://maven.imagej.net/ ImageJ Maven repository].
 
-Next, you will put your Java sources into ''src/main/java/'' and adjust ''src/main/resources/plugins.config''.
+Next, you will put your Java sources into <code>src/main/java/</code> and adjust <code>src/main/resources/plugins.config</code>.
 
 After that, ask Eclipse to import it: ''File>Import>Maven>Import Existing Maven Project''.
-
-Once you want to make the new plugin part of the complete Fiji Build, add the sub-directory to the ''<modules>'' section of ''src-plugins/pom.xml''.
 
 [[Category:Development]]
