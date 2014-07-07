@@ -2,11 +2,12 @@
 ! colspan="2" style="font-size: 130%;" | Development
 |-
 |
-== Topics ==
+'''Topics'''
 * [[Source code]]
 * [[Project management]]
 * [[Coding style]]
-== IDEs ==
+
+'''IDEs'''
 * [[Developing ImageJ in Eclipse|Eclipse]]
 * [[Developing ImageJ in NetBeans|NetBeans]]
 * [[Developing ImageJ in IntelliJ IDEA|IntelliJ IDEA]]
