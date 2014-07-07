@@ -15,7 +15,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
 |[[ImageJ2]]<br>
 ImageJDev
 |[[Contributors|ImageJ developers]]
-|ImageJ 2.x, referred to as "ImageJ2" or "IJ2" for short, is an image processing program targeting scientific multidimensional image data. It is a complete rewrite of ImageJ, but includes ImageJ1 with a compatibility layer, so that old-style plugins and macros can run the same as in IJ1.
+|A new version of ImageJ targeting scientific multidimensional image data. It is a complete rewrite of ImageJ, but includes ImageJ1 with a compatibility layer, so that old-style plugins and macros can run the same as in IJ1.
 |Dec. 2009
 |Active
 |-
