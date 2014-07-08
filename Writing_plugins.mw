@@ -1,0 +1,39 @@
+== What is a "plugin"? ==
+
+Conceptually, a '''plugin''' is a piece of Java code that extends the capabilities of ImageJ. Technically, a plugin is a Java class annotated with the <code>@Plugin</code> annotation and implementing the <code>SciJavaPlugin</code> interface.
+
+There are many sorts of ImageJ2 plugins. The most common type is a ''Command'', which performs some operation, and is typically available in the menu structure. But there are other types too: e.g., ''Display'' and ''Tool''. It is even possible for developers to easily define new sorts of plugins. For example, the Image Calculator defines a new type of plugin called [https://github.com/imagej/imagej-common/blob/imagej-common-0.8.0/src/main/java/net/imagej/operator/CalculatorOp.java CalculatorOp], and displays all available such operations in the Image Calculator dialog.
+
+== Writing an ImageJ2 command ==
+
+ImageJ2 commands are UI-independent, and will work headless, as long as your command does not explicitly call any UI-specific code (such as <code>java.awt</code> or <code>javax.swing</code> classes). The ImageJ2 framework takes care of harvesting the command's input parameters from the user in the appropriate wayâ€”e.g., when running as an end-user Swing application, it will display a Swing dialog.
+
+See the [https://github.com/imagej/imagej-tutorials/tree/master/simple-commands simple-commands] examples from the [https://github.com/imagej/imagej-tutorials ImageJ Tutorials]<nowiki>: </nowiki>
+
+<blockquote>[https://github.com/imagej/imagej-tutorials/blob/master/simple-commands/src/main/java/HelloWorld.java HelloWorld.java]<br />[https://github.com/imagej/imagej-tutorials/blob/master/simple-commands/src/main/java/GradientImage.java GradientImage.java]</blockquote>
+
+== Calling ImageJ2 from ImageJ 1.x ==
+
+You can use ImageJ2-specific functionality from within an ImageJ 1.x plugin. For example, ImageJ2 provides a spreadsheet-like results table that supports string cells. You can write an ImageJ 1.x plugin that produces such a spreadsheet, displaying it onscreen.
+
+See the [https://github.com/imagej/imagej-tutorials/blob/master/call-modern-from-legacy call-modern-from-legacy] example of the ImageJ Tutorials:
+
+<blockquote>[https://github.com/imagej/imagej-tutorials/blob/master/call-modern-from-legacy/src/main/java/DisplayATable.java DisplayATable.java]</blockquote>
+
+== Executing commands ==
+
+There are several ways that your command's functionality can be reused by others. See the [https://github.com/imagej/imagej-tutorials/blob/master/execute-commands execute-commands] example of the ImageJ Tutorials:
+
+<blockquote>[https://github.com/imagej/imagej-tutorials/blob/master/execute-commands/src/main/java/ExecuteCommands.java ExecuteCommands.java]</blockquote>
+
+== Writing a service ==
+
+If you have multiple related operations you would like to provide, or wish to maintain persistent state between command executions, we strongly suggest exposing the functionality as a [/service-architecture service]. Many core ImageJ2 commands are structured this way. E.g., ImageJ2's animation features are patterned this way, as follows:
+
+* [https://github.com/imagej/imagej-plugins-commands/blob/imagej-plugins-commands-0.2.3/src/main/java/net/imagej/plugins/commands/animation/StartAnimation.java StartAnimation] - starts animating the active image.
+* [https://github.com/imagej/imagej-plugins-commands/blob/imagej-plugins-commands-0.2.3/src/main/java/net/imagej/plugins/commands/animation/StopAnimation.java StopAnimation] - stops animating the active image.
+* [https://github.com/imagej/imagej-plugins-commands/blob/imagej-plugins-commands-0.2.3/src/main/java/net/imagej/plugins/commands/animation/AnimationOptions.java AnimationOptions] - sets animation options for the active image.
+* [https://github.com/imagej/imagej-common/blob/imagej-common-0.8.0/src/main/java/net/imagej/animation/AnimationService.java AnimationService] - provides a reusable API for doing all of the above and more, relating to animation. The above Animation plugins all invoke this service to perform their actions.
+* [https://github.com/imagej/imagej-common/blob/imagej-common-0.8.0/src/main/java/net/imagej/animation/DefaultAnimationService.java DefaultAnimationService] - implementation of the <code>AnimationService</code> interface.
+
+By structuring the animation support as a service, ImageJ2 can remember whether each image is currently animating, as well as its animation settings, in a central location that can be easily queried and manipulated.
