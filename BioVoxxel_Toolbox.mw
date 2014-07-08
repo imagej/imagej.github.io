@@ -430,19 +430,20 @@ In the image below the upper pannels show the original photograph and a version 
 
 [[File:AdaptiveFilter.png]]
 
-Output: The filter will be applied directly on the input image. It is undoable (by pressing [z]) and will be recorded by the macro recorder.
+Output: The filter will be applied directly on the input image. It is undoable (by pressing [z]) and is recordable by the macro recorder.
 
-Limitation: So far, the filter is only applicable on 8-bit and 16-bit single images. Recording still creates problems with the filter grid selections (will be addressed)
+Limitation: So far, the filter is only applicable on 8-bit and 16-bit single images.
 
 Installation: Part of the BioVoxxel update site in Fiji and can be found under >Plugins >Filters
 
-Version: first release (0.1)
+Version: 0.2
 
 Status: maintenance active
 
 Future: Will be adjusted für 32-bit float-type images as well as RGB images and stacks. Suggestions are welcome!
 
 ----
+
 =Enhance True Color Contrast= 
 (separate plugin under >Plugins >Filters)
 
