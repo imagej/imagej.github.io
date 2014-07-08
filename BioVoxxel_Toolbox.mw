@@ -106,7 +106,7 @@ The macro gives different outputs. The optical output is an color-coded image, w
 
 New: now the "Speckle Inspector" comes as recordable plugin
 
-[[File:Example.jpg]|750px]
+[[File:Speckle_Inspector_plugin2.png]|750px]
 
 Version: v1.0 (now as plugin)
 
@@ -115,7 +115,7 @@ Status: maintenance active
 Future: suggestions are welcome!
 
 ----
- 
+
 =Watershed Irregular Structures=
 
 Purpose: The standard watershed algorithm in ImageJ is very usefull to separate connected, roughly circular structures. Nevertheless, it gets into trouble while separating irregular structures. The Irregular Watershed enables the user to separate also irregular shaped structures to a certain extend.
