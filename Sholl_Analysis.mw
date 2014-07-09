@@ -6,9 +6,9 @@
 | author         = Tiago Ferreira, Tom Maddock
 | maintainer     = [mailto:tiago_dot_ferreira_at_mail_dot_mcgill_dot_ca Tiago Ferreira]
 | source         = [https://github.com/tferr/ASA on GitHub]
-| filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.4.1.jar Sholl_Analysis.jar]
+| filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.4.2.jar Sholl_Analysis.jar]
 | released       = December 2012
-| latest version = '''3.4.1''' March 2014 ([https://github.com/tferr/ASA/blob/master/Notes.md#release-notes-for-sholl-analysis Release Notes])
+| latest version = '''3.4.2 July 2014''' ([https://github.com/tferr/ASA/blob/master/Notes.md#release-notes-for-sholl-analysis Release Notes])
 | status         = See [[#Release Notes and Pre-releases|Pre-releases]] and [https://github.com/tferr/ASA/blob/master/Notes.md#development-builds Development Notes]
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]]
 }}
