@@ -1,0 +1,48 @@
+= Why put effort into bug reports =
+
+For light reading, there are numerous guides and essays on [http://www.chiark.greenend.org.uk/~sgtatham/bugs.html how and why to write excellent bug reports]. In the scope of an open-source development community like Fiji's, key points include:
+
+* Open-source teams are typically smaller and lack dedicated testing teams. Development tends to be complaint-driven, relying on an active user base to provide feedback.
+* If you encounter a bug, you probably want it to be fixed quickly. The better the bug report, the faster a developer will be able to reproduce and address the issue. Poorly written bug reports are more likely to sit unanswered - not because developers see the issue as unimportant, but the time required to understand what went wrong presents a significant barrier when setting priorities within an overflowing schedule.
+
+= Components of a complete bug report =
+
+There are three critical components in a bug report for Fiji. If any of these are missing, the usefulness of that report may be limited.
+
+== Environment information ==
+
+Fiji is just ImageJ... but it's also a whole lot more. Reporting the ImageJ 1.x version (e.g. 1.49e) in which a bug appears is helpful, but understand that Fiji ships with layers upon layers of software to provide rich features and plugins. Furthermore, Fiji/ImageJ are extensible via the update sites and manually distributed plugins.
+
+Errors can appear in any component of the software, thus a complete view of a user's working environment is imperative. For your convenience, Fiji is capable of reporting its own environment. If you use the ''Help>Report a Bug'' command in Fiji, this information will automatically be populated and included in the [http://fiji.sc/bugzilla/ bugzilla report].
+
+Note that if you file a bug manually or are enquiring to the mailing list, you can still copy and paste the contents of the ''"Useful information about your your system"'' text box. It will be greatly appreciated.
+
+== Minimal and precise steps to reproduce ==
+
+When we're in a hurry, it's easy to provide a brief overview a bug without actually describing how to reproduce the error. We are also prone to providing too much information, which can confuse the issue and discourage thorough reading.
+
+The actual text of your bug report should simply describe the fewest steps possible to reproduce your issue. Additional information is typically unnecessary... if a developer can reproduce the problem, they will do their best to fix it.
+
+== Sample data ==
+
+Developers typically have a cache of sample data for testing their application. That said, we are still striving to reproduce the original environment of the error. Having the original image that caused the error is the best possible way to test.
+
+The easiest and safest way to provide sample data is via the ''Help>Upload Sample Image'' command in Fiji. This sends the image to a website restricted to Fiji wiki users with explicit authentication (reserved for trusted developers). This allows proprietary data to be tested without fear of public distribution.
+
+Note: if you do upload data, you should mention the name of the dataset in your bug report. This will help developers find your data quickly.
+
+For bugs working with excessively large datasets, you may need to communicate with a developer to determine the best way to test on your data.
+
+= While you're waiting... =
+
+If a showstopping bug comes up, you've reported it, but need to continue your work, you still have options available.
+
+== Disable SCIFIO ==
+
+[http://imagej.net/ImageJ2 ImageJ2] is a recent addition to Fiji. It represents the next steps in extensible image analysis, but due to its vast scope there are inevitably issues remaining. If you run into an issue of the style where a dataset that used to open correctly for you is broken after updating, you can try disabling SCIFIO via the ''Edit>Options>ImageJ2'' command. This will allow you to continue to work with Fiji/ImageJ while waiting for the fix in ImageJ2.
+
+Note: even if disabling SCIFIO fixes the issue for you, '''please''' still report the discovered bug. The long-term goal is to migrate completely to SCIFIO, so if there are problems we need to know about them.
+
+== Catastrophic failure ==
+
+Check out the lifeline versions on the [[Downloads|Downloads page]].
