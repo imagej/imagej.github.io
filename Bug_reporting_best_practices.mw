@@ -15,7 +15,7 @@ Fiji is just ImageJ... but it's also a whole lot more. Reporting the ImageJ 1.x 
 
 Errors can appear in any component of the software, thus a complete view of a user's working environment is imperative. For your convenience, Fiji is capable of reporting its own environment. If you use the ''Help>Report a Bug'' command in Fiji, this information will automatically be populated and included in the [http://fiji.sc/bugzilla/ bugzilla report].
 
-Note that if you file a bug manually or are enquiring to the mailing list, you can still copy and paste the contents of the ''"Useful information about your your system"'' text box. It will be greatly appreciated.
+Note that if you file a bug manually or are enquiring to the mailing list, you can still copy and paste the contents of the ''"Useful information about your system"'' text box. It will be greatly appreciated.
 
 == Minimal and precise steps to reproduce ==
 
