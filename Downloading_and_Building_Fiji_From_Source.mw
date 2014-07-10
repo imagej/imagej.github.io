@@ -1,7 +1,6 @@
-<div style="background:#ffd; padding: 10px 10px 0 10px; border: 1px solid black;">
-<b>Please note!</b> This page is rather outdated now, and in need of update.
-</div>
-
+{{Warning
+| message = <b>Please note!</b> This page is rather outdated now, and in need of update.
+}}
 == Downloading the Source Code with Git ==
 
 ''Warning: the source code for Fiji is rather large; make sure that you have two gigabytes of disk space free before beginning this.''
