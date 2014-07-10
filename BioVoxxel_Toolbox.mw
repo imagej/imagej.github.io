@@ -98,7 +98,7 @@ Future: Further suggestions are welcome!
 
 Purpose: The "Speckle Inspector" is able to identify bigger features by the number of containing smaller features/speckles.
 
-How to: In the setup dialog the user can enter the 2 images to be analyzed as well as lower and upper limits of speckle numbers, speckle sizes, feature size and feature circularity to determine characteristics which include/exclude speckles and features from the analysis according to the entered parameters.
+How to: In the setup dialog the user can enter the 2 images to be analyzed as well as lower and upper limits of speckle numbers, speckle sizes, object size and object circularity to determine characteristics which include/exclude speckles and features from the analysis according to the entered parameters.
 
 [[File:SpeckleInspector1.png|600px]]
 
@@ -203,7 +203,7 @@ Purpose: The macro enables to "subtract" background due to inequal lighting from
 
 How to: You need either choose the two images in the "Flat-field" version or specify a gaussian blurring radius for the "Pseudo flat-field correction" in a way to eliminate specific feature appearance but to keep the difference in shading/lighting. Therefore, rather big radii (sigma) are needed (potentially between 40-150, but this depends on image and feature size).
 
-Remark: The pseudo flat field correction menu command links to the plugin with the same name under >Plugins >Filters (necessary to additionally download from the BioVoxxel update site together with the Toolbox). 
+Remark: The pseudo flat field correction menu command links to the plugin with the same name under >Plugins >BioVoxxel (necessary to additionally download from the BioVoxxel update site together with the Toolbox). 
 
 Advantage of the Pseudo flat field correction: This is now recordable and works with stacks. Thus, time-lapse movies e.g. from a brightfield microscope can be completely corrected for unequal lighting according to the individual differences in each frame. The blurring is visualized on the currently active frame to be able to sufficiently eliminate structural information.
 
@@ -401,7 +401,7 @@ Future: Suggestions are welcome!
 ----
 
 =Gaussian weighted Median filter= 
-(separate plugin under >Plugins >Filters)
+(separate plugin under >Plugins >BioVoxxel)
 
 Purpose/How to: This filter is basically a normal median filter (as in ImageJ/Fiji) but with a weighted filter matrix. The radius is given in pixels. The weight is determined automatically by a 2D gaussian function (approximated to integer values) over the size of the filter grid. Thus, pixel closer to the filter center get a higher weight compared to more distant ones. This reduces the intensity homogenizing effect from a normal median filter but increases the edge-perservation of features.
 
@@ -409,7 +409,7 @@ Output: The filter will be applied directly on the input image. It is undoable (
 
 Limitation: So far, the filter is only applicable on 8-bit and 16-bit single images.
 
-Installation: Part of the BioVoxxel update site in Fiji and can be found under >Plugins >Filters
+Installation: Part of the BioVoxxel update site in Fiji and can be found under >Plugins >BioVoxxel
 
 Version: first release (0.1)
 
@@ -420,7 +420,7 @@ Future: Will be adjusted für 32-bit float-type images as well as RGB images and
 ----
 
 =Adaptive Filter= 
-(separate plugin under >Plugins >Filters)
+(separate plugin under >Plugins >BioVoxxel)
 
 Purpose/How to: This filter allows the choise between two basic filter modes (''median'' and ''mean''). The filter ''Radius'' defines the size of a square kernel (so actually not really a radius but to keep the entries intuitively similar to other filters in Fiji this label was chosen).
  
@@ -436,7 +436,7 @@ Output: The filter will be applied directly on the input image. It is undoable (
 
 Limitation: So far, the filter is only applicable on 8-bit and 16-bit single images.
 
-Installation: Part of the BioVoxxel update site in Fiji and can be found under >Plugins >Filters
+Installation: Part of the BioVoxxel update site in Fiji and can be found under >Plugins >BioVoxxel
 
 Version: 0.2
 
@@ -447,7 +447,7 @@ Future: Will be adjusted für 32-bit float-type images as well as RGB images and
 ----
 
 =Enhance True Color Contrast= 
-(separate plugin under >Plugins >Filters)
+(separate plugin under >Plugins >BioVoxxel)
 
 Purpose: This image filter enhances the contrast of true color images similar to the method Enhance Contrast in Fiji. If the latter would be applied to true color images this leads to a change in color values and saturation. This unwanted effects are eliminated by the recordable "Enhance True Color Contrast" plugin. It preserves color tone and saturation while enhancing the contrast in the brightness channel of the HSB color space. This is done using high precision float value calculation and not by a simple conversion o fthe image to HSB color space as available in ImageJ/Fiji. The latter would lead to a loss in quality since due to conversion and back-conversion to RGB.
 
@@ -462,7 +462,7 @@ Status: maintenance active
 ----
 
 =Mode and Differential Limited Mean Binarization=
-(separate plugin under >Plugins >Filters)
+(separate plugin under >Plugins >BioVoxxel)
 
 Purpose: The mode-limited mean (MoLiM) and the differential-limited mean (DiLiM) are two binarization algorithms which initially limit the image histogram according to its mode value (MoLiM) or its mode, an initial mean or the median (DiLiM). A more detailed description can be found under:
 
@@ -473,7 +473,7 @@ How To: the user can choose to use the differential threshold determination or t
 The algorithm assumes that the features occupy less than 50% of the images space independent if they are bright on a dark background or vice versa. For the opposite case one would need to invert the final output image. 
 The limitation step eliminates all intensity information in the histogram up to the limit (mode, mean or median) and calculates a new mean value which is taken as final threshold. "Force to smaller partition" anables to extract the pixels which occupy rather the smaller histogram partition besides the limit.
 
-Download: Part of the BioVoxxel update site in Fiji and can be found under >Plugins >Filters
+Download: Part of the BioVoxxel update site in Fiji and can be found under >Plugins >BioVoxxel
 
 Version: first release (0.1)
 
