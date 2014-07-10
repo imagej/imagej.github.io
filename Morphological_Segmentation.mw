@@ -31,7 +31,7 @@ When selecting “Object Image”, an additional set of options is enabled to ch
 
 === Watershed Segmentation panel ===
 
-This panel is reserved to the parameters involved in the segmentation pipeline. By default, only the tolerance can be changed. Clicking on “Advanced options” enables the rest of options.
+[[Image:Morphological-segmentation-watershed-segmentation-panel.png|right]]This panel is reserved to the parameters involved in the segmentation pipeline. By default, only the tolerance can be changed. Clicking on “Advanced options” enables the rest of options.
 
 * '''Tolerance''': dynamic of intensity for the search of regional minima (in the extended-minima transform, which is the regional minima of the H-minima transform, value of h). Increasing the tolerance value reduces the number of segments in the final result, while decreasing its value produces more object splits.
 * '''Calculate dams''': un-check this option to produce segmentations without watershed lines.
