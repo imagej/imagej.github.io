@@ -49,7 +49,7 @@ If you have encountered and reported a bug that is completely blocking your work
 
 == Disable SCIFIO ==
 
-In recent months we have begun to provide an alternative to the hard-coded case logic of ImageJ 1.x's image I/O to a new, highly extensible paradigm: [http://imagej.net/ImageJ2 ImageJ2]. It represents the next steps in scientific image analysis, but due to the vast scope of the overhaul there are inevitably issues remaining. For example, if you run into an issue of the style where a dataset that used to open correctly for you is broken after updating, you can check if you have a ''Edit>Options>ImageJ2'' command and '''un'''check the option to use SCIFIO. This will allow you to revert to the class image I/O until the new I/O is fixed or improved.
+In recent months we have begun to provide an alternative to the hard-coded case logic of ImageJ 1.x's image I/O to a new, highly extensible paradigm: [[ImageJ2]]. It represents the next steps in scientific image analysis, but due to the vast scope of the overhaul there are inevitably issues remaining. For example, if you run into an issue of the style where a dataset that used to open correctly for you is broken after updating, you can check if you have a ''Edit>Options>ImageJ2'' command and '''un'''check the option to use SCIFIO. This will allow you to revert to the class image I/O until the new I/O is fixed or improved.
 
 Note: even if disabling SCIFIO fixes the issue for you, '''please''' still report the discovered bug. The long-term vision for ImageJ is to migrate completely to the new image I/O paradigm, so if there are problems we need to know about them.
 
