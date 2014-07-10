@@ -21,7 +21,7 @@ The user can pan, zoom in and out, or scroll between slices (if the input image 
 '''Image pre-processing''': some pre-processing is included in the plugin to facilitate the segmentation task. However, other pre-preprocessing may be required depending on the input image. It is up to the user to decide what filtering may be most appropriate upstream.
 
 === Input Image panel ===
-First, you need to indicate the nature of the input image to process. This is a '''key parameter''' since the watershed algorithm is expecting an image where the boundaries of objects present high intensity values (usually as a result of a gradient or edge detection filtering).
+[[Image:Morphological-segmentation-input-image-panel.png|right]]First, you need to indicate the nature of the input image to process. This is a '''key parameter''' since the watershed algorithm is expecting an image where the boundaries of objects present high intensity values (usually as a result of a gradient or edge detection filtering).
 
 You should select:
 
