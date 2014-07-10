@@ -4,9 +4,9 @@ __NOTOC__
 <b>Please note!</b> The authoritative site for Fiji is <i>http://fiji.sc/</i>, so if you downloaded Fiji from some mirrors such as Softpedia and experience problems, please re-download from here and verify that the problem still exists.
 </div>
 
-
-<span style="color:red">'''Critical:'''</span> if you updated and Fiji does not work anymore, you need to follow [[Fix_non-functional_Fiji_after_Update|these instructions]].<br/>
-
+{{Warning
+| message = <span style="color:red">'''Critical:'''</span> if you updated and ImageJ does not work anymore, you need to follow [[Fix_non-functional_ImageJ_after_Update|these instructions]].
+}}
 If you encounter bugs, there are many ways to get help; please see the [[Help:Contents|Getting Help]] page.
 
 {{Downloads}}
