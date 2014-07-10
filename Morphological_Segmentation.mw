@@ -65,7 +65,7 @@ Morphological Segmentation is part of the IJPB-plugins library. To install it, y
 
 3) Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.
 
-$) Click ''Apply changes'' and restart Fiji.
+4) Click ''Apply changes'' and restart Fiji.
 
 You should now find the plugin under the sub-menu ''Plugins > Segmentation''.
 
