@@ -1,3 +1,5 @@
+<div style="background:#ffd; padding: 10px 10px 0 10px; border: 1px solid black;">For information on how to structure your bug report, see [[Bug_reporting_best_practices|bug reporting best practices]].</div>
+
 {{Infobox Plugin
 | software               = Fiji
 | name                   = Bug Submitter
