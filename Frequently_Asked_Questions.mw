@@ -184,9 +184,9 @@ The installation of Fiji is described on specific pages for [[Install_Fiji_on_Ma
 
 == How do I turn my ImageJ installation into a Fiji one? ==
 
-Fiji is just ImageJ. If you are running ImageJ2, simply run ''Help > Update'', click ''Manage update sites'', and enable the ''Fiji'' update site.
+Fiji is just ImageJ. If you are running [[ImageJ2]], simply run ''Help > Update'', click ''Manage update sites'', and enable the ''Fiji'' update site.
 
-Or if you are running ImageJ1, you can bootstrap the updater by drag 'n dropping [http://update.imagej.net/bootstrap.js this link] onto your running ImageJ1 and run the Javascript that was opened in a text window. After that, you can run Fiji/ImageJ using the ImageJ launcher that was installed into the ImageJ directory.
+Or if you are running [[ImageJ1]], you can bootstrap the updater by drag 'n dropping [http://update.imagej.net/bootstrap.js this link] onto your running ImageJ and run the Javascript that was opened in a text window. After that, you can run Fiji/ImageJ using the [[Launcher|ImageJ launcher]] that was installed into the ImageJ directory.
 
 == How do I develop Fiji in Eclipse? ==
 
