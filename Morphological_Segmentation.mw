@@ -43,14 +43,14 @@ If your segmentation is taking too long or you want '''to stop it''' for any rea
 
 === Results panel ===
 
-Only enabled after running the segmentation.
+[[Image:Morphological-segmentation-results-panel.png|right]]Only enabled after running the segmentation.
 
 * '''Display''': list of options to display the segmentation results.
 ** '''Overlaid basins''': colored objects overlaying the input image (with or without dams depending on the selected option in the Watershed Segmentation panel).
 ** '''Overlaid dams''': overlay the watershed dams in red on top of the input image (only works if “Calculate dams” is checked).
 ** '''Catchment basins''': colored objects.
 ** '''Watershed lines''': binary image showing the watershed lines in black and the objects in white (only works if “Calculate dams” is checked).
-Examples of the 4 different display options
+[[Image:Morphological-segmentation-result-examples.png|thumb|750px|Examples of the 4 different display options]]
 
 * '''Show result overlay''': toggle result overlay.
 * '''Create image button''': create a new image with the results displayed in the canvas.
