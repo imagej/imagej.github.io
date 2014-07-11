@@ -32,3 +32,5 @@ These two code paths need to behave very differently. In the case of (1), ImageJ
 == Conclusion ==
 
 We believe we have finally ironed out all these problems, but as the above explanation hopefully conveys, ImageJ1 is fraught with multiple code paths, and quitting the program is no exception. Searching the ImageJ1 codebase for <code>System.exit(0)</code> yields five separate places where it gets called, one of which, astonishingly, is a [https://github.com/imagej/ImageJA/blob/v1.49d/src/main/java/ij/IJ.java#L1464 potential code path of the <code>ij.IJ#getImage()</code> method]! Adding on the ImageJ legacy layer on top is an very complex endeavor, but we proud to say that instances of ImageJ2 can be cleanly disposed of ''without'' shutting down the entire JVM, which provides a substantial boost to ImageJ's usability as a software library.
+
+[[Category:News]]
