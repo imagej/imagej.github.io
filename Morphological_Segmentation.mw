@@ -97,6 +97,10 @@ call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Catchment 
 // Watershed lines 
 call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Watershed lines");
 </source>
+* Create new image with the current result:
+<source lang="java">
+call("inra.ijpb.plugins.MorphologicalSegmentation.createResultImage");
+</source>
 
 == Installation ==
 
