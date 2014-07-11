@@ -3,7 +3,7 @@
 
 ''Warning: the source code for Fiji is rather large; make sure that you have two gigabytes of disk space free before beginning this.''
 
-To fetch the Fiji source code you should use [http://git.or.cz/ git] (Windows users, please go [http://msysgit.googlecode.com here]).  If you are not familiar with Git, you might want to read [[Git mini howto|this page]] or [[:Category:Git|these pages]] instead.
+To fetch the Fiji source code you should use [[git]]. If you are not familiar with Git, you might want to read [[Git mini howto|this page]] or [[:Category:Git|these pages]] instead.
 
 ==== Cloning source as unknown contributor ====
 Your first step should be to "clone" the fiji repository with the following command:
