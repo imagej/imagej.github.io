@@ -117,7 +117,7 @@ call("inra.ijpb.plugins.MorphologicalSegmentation.setGradientRadius", "1");
 // run segmentation with tolerance 32, calculating the watershed dams, 
 // 4-connectivity and using a priority queue
 call("inra.ijpb.plugins.MorphologicalSegmentation.segment", "tolerance=32",
- "calculateDams=true", "connectivity=6", "usePriorityQueue=true");
+ "calculateDams=true", "connectivity=4", "usePriorityQueue=true");
 // display the overlaid dams
 call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Overlaid dams");
 </source>
