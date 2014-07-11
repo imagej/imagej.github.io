@@ -23,6 +23,6 @@ A few tips:
 
 = New accounts =
 
-You will need to register by email; just click on [{{SERVER}}/wiki/index.php?title=Special:Userlogin&type=signup this link] and submit the form. Note that you need to specify a valid email address because a link will be sent there.
+You will need to register by email; just click on [{{SERVER}}/index.php?title=Special:Userlogin&type=signup this link] and submit the form. Note that you need to specify a valid email address because a link will be sent there.
 
 [[Category:Help]]
