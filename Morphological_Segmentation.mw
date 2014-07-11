@@ -61,6 +61,42 @@ If your segmentation is taking too long or you want '''to stop it''' for any rea
 == Macro language compatibility ==
 Morphological Segmentation is completely compatible with the popular [http://rsb.info.nih.gov/ij/developer/macro/macros.html ImageJ macro language]. Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
 
+The complete list of commands is as follows:
+* Start the plugin:
+<source lang="java"> 
+run("Morphological Segmentation"); 
+</source>
+* Select input image:
+<source lang="java">
+// select as object image 
+call("inra.ijpb.plugins.MorphologicalSegmentation.setInputImageType", "object");
+// select as border image
+call("inra.ijpb.plugins.MorphologicalSegmentation.setInputImageType", "border"); 
+</source>
+* Run segmentation with specific options:
+<source lang="java"> 
+call("inra.ijpb.plugins.MorphologicalSegmentation.segment", "tolerance=10",
+ "calculateDams=true", "connectivity=6", "usePriorityQueue=true");
+</source>
+* Toggle result overlay:
+<source lang="java"> 
+call("inra.ijpb.plugins.MorphologicalSegmentation.toggleOverlay");
+</source>
+* Set option to display gradient image:
+<source lang="java">
+call("inra.ijpb.plugins.MorphologicalSegmentation.setShowGradient", "true");
+</source>
+* Select display format:
+<source lang="java">
+// Overlaid basins
+call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Overlaid basins");
+// Overlaid dams
+call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Overlaid dams");
+// Catchment basins
+call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Catchment basins");
+// Watershed lines 
+call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Watershed lines");
+</source>
 
 == Installation ==
 
