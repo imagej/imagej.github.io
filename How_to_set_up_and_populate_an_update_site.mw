@@ -25,11 +25,11 @@ If you already have a Fiji Wiki account, enter the name of that account and clic
 
 If the update site was never initialized, you will then be asked to provide the password and the initialisation will be performed.
 
-<div style="background:#fCC; padding: 10px 10px 0 10px; border: 1px solid black;">
+{{Warning | message =
 There is currently [https://github.com/fiji/fiji/issues/63 a bug] where if your wiki account is created but uninitialized, the GUI will not allow you to continue.
-
-Until this issue is fixed, please use [http://fiji.sc/Special:ChangeUploadPassword this page] to set your update site password.
-</div>
+<br/>
+Until this issue is fixed, please use [[Special:ChangeUploadPassword|this page]] to set your update site password.
+}}
 
 
 If you do not have a Fiji Wiki account, you will need to create one:
