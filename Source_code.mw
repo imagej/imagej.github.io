@@ -1,8 +1,8 @@
 {{Development}}
 == Source code ==
+The source code of [[ImageJ]] and related [[SciJava]] projects is managed using the [[Git]] version control system.
 
-Find the source for [[ImageJ]] and related [[SciJava]] projects on GitHub:
-
+All source code is on GitHub:
 * [https://github.com/imagej ImageJ]
 * [https://github.com/fiji Fiji]
 * [https://github.com/imglib ImgLib2]
