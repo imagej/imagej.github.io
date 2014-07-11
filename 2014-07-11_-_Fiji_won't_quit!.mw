@@ -1,3 +1,5 @@
+== Introduction ==
+
 Since [[2014-06-04 - ImageJ 2.0.0 release candidate|releasing ImageJ2 into the wild]], there has been a tremendous amount of user feedback. For those who have [[Report a Bug|reported bugs]]: thank you!
 
 Of all the issues reported, one has stood out as the most tenacious and difficult to solve: [http://fiji.sc/bugzilla/show_bug.cgi?id=805 Fiji bug #805, "Fiji not closing"], colloquially known as the "Fiji won't quit!" problem. (Actually, versions of this bug existed before bug #805 was reported, but that bug is where we have been tracking the issue most recently.)
