@@ -1,5 +1,5 @@
 <includeonly>{| class="infobox" cellspacing="5" style="width: 31em; font-size: 90%; text-align: left; float: right; border: 1px dashed #a0a0a0;"
-! colspan="2" style="text-align: center; vertical-align: middle; font-size: 130%;" | {{{logo|}}} {{{title|{{{name|{{PAGENAME}}}}}}}} ({{{software|}}})
+! colspan="2" style="text-align: center; font-size: 130%;" | <div style="float: left">{{{logo|}}}</div>{{{title|{{{name|{{PAGENAME}}}}}}}} ({{{software|}}})<div style="clear: left;"></div>
 |-
 {{#if:{{{author|}}}|
 ! Author
