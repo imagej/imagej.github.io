@@ -125,7 +125,7 @@ Future: suggestions are welcome!
 
 Purpose: The standard watershed algorithm in ImageJ is very usefull to separate connected, roughly circular structures. Nevertheless, it gets into trouble while separating irregular structures. The Irregular Watershed enables the user to separate also irregular shaped structures to a certain extend.
 
-[[File:WatershedIrregularFeatures.png|750px]]
+[[File:WatershedIrregularFeatures.png|550px]]
 
 How to: In one dialog the user needs to specify the number of erosion cycles to be used for the separation algorithm. "0" prevents watershedding. Since increasing numbers use a decreasing size of selector for the separations to be skipped, a too high number might result in unwanted separation in the peripheral regions of the features. The separation only works in the 2D space at the moment and has its limitations when the connecting "bridges" between the features are too broad (as true for the normal watershed algorithm).
 
@@ -136,7 +136,7 @@ Status: maintenance active
 Future: other erosion algorithms will potentially be included to improve the watershedding
 
 ----
- 
+
 =EDM Erosion and EDM Dilation=
 
 Purpose: The standard binary erosion and dilation suffers from the artefact that under higher iteration cycles the binary structures get irregularly deformed (see image below, second column). The EDM based methods for erosion and dilation prevent these artifacts. The method is using thresholding on a 8-bit euclidean distance map of the original image to facilitate the erosion or dilation.
