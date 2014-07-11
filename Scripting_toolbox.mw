@@ -1,4 +1,4 @@
-This page is meant to provide small code snippets as a starting point for writing scripts. See also the [[Scripting comparisons]] and the dedicated pages for the [[Introduction into Macro Programming|ImageJ Macro language]], [[Javascript Scripting|Javascript]], [[Jython Scripting|Jython]], [[JRuby Scripting|JRuby]], [[Clojure Scripting|Clojure]], and [[Beanshell Scripting|Beanshell]].
+{{Scripting}}This page is meant to provide small code snippets as a starting point for writing scripts. See also the [[Scripting comparisons]] and the dedicated pages for the [[Introduction into Macro Programming|ImageJ Macro language]], [[Javascript Scripting|Javascript]], [[Jython Scripting|Jython]], [[JRuby Scripting|JRuby]], [[Clojure Scripting|Clojure]], and [[Beanshell Scripting|Beanshell]].
 
 For scripting python/jython, see also Albert Cardona's comprehensive [http://www.ini.uzh.ch/~acardona/fiji-tutorial/ Fiji tutorial].
 
