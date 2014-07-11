@@ -15,7 +15,7 @@ Maven artifacts are published to the [http://maven.imagej.net/ ImageJ Maven repo
 
 ImageJ uses [https://github.com/organizations/imagej/dashboard/issues/repos GitHub Issues] for issue tracking.
 
-[[ImageJ2]] previously used [http://trac.imagej.net/ Trac] for issue tracking and roadmapping, but all Trac issues are now being migrated to GitHub.
+For a while, the project used [http://trac.imagej.net/ Trac] for issue tracking and roadmapping, but all Trac issues are now being migrated to GitHub.
 
 == Continuous integration ==
 
