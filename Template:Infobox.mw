@@ -77,7 +77,7 @@
 
 ==Example==
 {{Infobox Plugin
-| name                   = Some plugin name
+| name                   = My plugin
 | software               = Software name
 | author                 = John Smith ([mailto:john@smith.org john@smith.org])
 | logo                   = [[Image:Fiji-logo-1.0-128x128.png|96px]]
@@ -94,7 +94,7 @@
 }}
 <pre style="overflow:auto">
 {{Infobox Plugin
-| name                   = Some plugin name
+| name                   = My plugin
 | software               = Software name
 | author                 = John Smith ([mailto:john@smith.org john@smith.org])
 | logo                   = [[Image:Fiji-logo-1.0-128x128.png|96px]]
