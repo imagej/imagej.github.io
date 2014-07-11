@@ -1,14 +1,9 @@
 <includeonly>{| class="infobox" cellspacing="5" style="width: 31em; font-size: 90%; text-align: left; float: right; border: 1px dashed #a0a0a0;"
-! colspan="2" style="text-align: center; font-size: 130%;" | {{{title|{{{name|{{PAGENAME}}}}}}}} ({{{software|}}})
+! colspan="2" style="text-align: center; font-size: 130%;" | {{{logo|}}} {{{title|{{{name|{{PAGENAME}}}}}}}} ({{{software|}}})
 |-
 {{#if:{{{author|}}}|
 ! Author
 {{!}} {{{author|}}}
-{{!}}-
-}}
-{{#if:{{{logo|}}}|
-! Logo
-{{!}} {{{logo|}}}
 {{!}}-
 }}
 {{#if:{{{screenshot|}}}|
