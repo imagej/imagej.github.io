@@ -1,5 +1,9 @@
 {{Development}}
-The [[ImageJ]] project takes advantage of several project management tools.
+The [[ImageJ]] and related [[SciJava]] projects take advantage of several project management tools.
+
+== Git ==
+
+ImageJ uses the [[Git]] revision control system to manage its [[source code]].
 
 == Maven ==
 
