@@ -5,7 +5,7 @@
 | website                = [http://www.biovoxxel.de/index.html www.biovoxxel.de]
 | maintainer             = Jan Brocher
 | latest version         = 19. May 2014
-| source                 =[http://www.biovoxxel.de/BioVoxxel%20Macro%20Toolset/BioVoxxel_Toolbox.ijm BioVoxxel_Toolbox.ijm]
+| source                 =[http://www.biovoxxel.de/BioVoxxel%20Macro%20Toolset/BioVoxxel.zip BioVoxxel_Toolbox]
 | category               = [[:Category:Particle analysis|Particle analysis]], [[:Category:Binary|Binary]], [[:Category:Filtering|Filtering]]
 }}
 
@@ -53,7 +53,9 @@ with "ImgWidth" and "ImgHeight" as the size of the analyzed image and "BBWidth" 
 
 How to: only works on individual 8-bit binary images.
 
-Status: v0.1, maintenance active
+Form: macro
+
+Status: maintenance active
 
 Future: Suggestions are welcome!
 
@@ -72,7 +74,9 @@ How to: Select analysis modes and start.
 
 [[File:ShapeDescriptorMaps.png|750px]]
 
-Status: v0.6, Maintenance active
+Form: macro
+
+Status: Maintenance active
 
 Future: Suggestions are welcome!
 
@@ -84,11 +88,12 @@ Purpose: The "Feature Extractor" is aimed to select isolate specific features in
 
 Example: A specific nuclear fluorescent staining is thresholded as the selector while the complete cells are thresholded as the features to be extracted.
 
-How to: First, specify the images containing on the one hand the objects to extract and on the other hand the selectors (e.g. marker staining, cell masks) which defines the objects that should be extracted. The macro then extracts the features which overlap with the selector. The "% minimal overlap" option enables to define a minimal overlap fraction (in percent) of the object area with the selector area. The object is only extracted if the overlap is equal or bigger than the defined minimal overlap.
+How to: First, specify the images containing on the one hand the objects to extract and on the other hand the selectors (e.g. marker staining, cell masks) which defines the objects that should be extracted. The plugin then extracts the features which overlap with the selector. The "Overlap in percent" option enables to define a minimal overlap fraction (in percent) of the selector area with the object area (in exactly this sequence). The object is only extracted if the overlap is equal or bigger than the defined minimal overlap.
+Finally, you can define to show the count of objects, selectors and extracted features as well as display the individual results tables for the three different images (This is equal to run the "Analyze Particles..." on each of the images.
 
 [[File:FeatureExtractor1.png|750px]]
 
-Status: v1.3, maintenance active
+Status: plugin v1.0, can be run from the BioVoxxel Toolbox Menu, maintenance active
 
 Future: Further suggestions are welcome!
 
@@ -102,13 +107,15 @@ How to: In the setup dialog the user can enter the 2 images to be analyzed as we
 
 [[File:SpeckleInspector1.png|600px]]
 
-The macro gives different outputs. The optical output is an color-coded image, where positive features (lying inbetween the determined minimum and maximum parameters) are colord in magenta, features containing less than the specified minimum speckle numbers are colored in blue and features containing more than the specified maximum speckle numbers are colored in green. In the same image the features are numbered to identify them in the respective speckle list as well as the ROI manager. Furthermore, they contain the number of "speckles" per feature in brackets. The second output are all feature selection ROIs in the ImageJ/Fiji ROI manager. Moreover a list of all features and respective speckle numbers is given if "show speckle list" was ticked. The "Log" window depicts an analysis of the features showing overall numbers of features and speckles as well as the numbers for the features lying below, inbetween, and above the thresholds.
+The macro gives different outputs. The optical output is an color-coded image, where positive features (lying inbetween the determined minimum and maximum parameters) are colord in magenta, features containing less than the specified minimum speckle numbers are colored in blue and features containing more than the specified maximum speckle numbers are colored in green. In the same image the features are numbered to identify them in the respective speckle list as well as the ROI manager. Furthermore, they contain the number of "speckles" per feature in brackets. The second output are all feature selection ROIs in the ImageJ/Fiji ROI manager. Moreover a list of all features and respective speckle numbers is given if "show speckle list" was ticked. The "statistics log" window depicts an analysis of the features showing overall numbers of features and speckles as well as the numbers for the features lying below, inbetween, and above the thresholds.
+You can also choose if you want to see the RoiManager for the objects rois to further analyze the original image.
+"individual roi analysis" returns a results table which contains the analyzed particles inside each roi (the latter is indicated in the results "Label" column).
 
 New: now the "Speckle Inspector" comes as recordable plugin
 
 [[File:Speckle_Inspector_plugin2.png|750px]]
 
-Version: v1.0 (now as plugin)
+Form: plugin, recordable
 
 Status: maintenance active
 
@@ -124,6 +131,8 @@ Purpose: The standard watershed algorithm in ImageJ is very usefull to separate 
 
 How to: In one dialog the user needs to specify the number of erosion cycles to be used for the separation algorithm. "0" prevents watershedding. Since increasing numbers use a decreasing size of selector for the separations to be skipped, a too high number might result in unwanted separation in the peripheral regions of the features. The separation only works in the 2D space at the moment and has its limitations when the connecting "bridges" between the features are too broad (as true for the normal watershed algorithm).
 
+Form: plugin, recordable
+
 Status: maintenance active
 
 Future: other erosion algorithms will potentially be included to improve the watershedding
@@ -138,6 +147,8 @@ Purpose: The standard binary erosion and dilation suffers from the artefact that
 
 How to: The number of erosion/dilation cycled determines how many rows of pixels should be eliminated/added to the binary features.
 
+Form: macro
+
 Status: works only on 2D images, maintenance active
 
 Future: suggestions are welcome!
@@ -149,6 +160,8 @@ Future: suggestions are welcome!
 Purpose: The macro enables to mask images with their thresholded binary counterparts. Works with 2D images and 3D stacks.
 
 How to: Original and binary mask images need to be identified from the drop-down menu and the user needs to specify if black or white areas in the binary image should be transparent. The output image shows the masked features from the original image.
+
+Form: macro
 
 Status: maintenance active
 
@@ -191,6 +204,8 @@ Potential issues: If the user does not correctly define if he/she is looking for
 '''Publication:''' [http://www.cscjournals.org/csc/manuscriptinfo.php?ManuscriptCode=67.68.67.74.39.50.44.51.104&JCode=IJIP&EJCode=65.66.65.72.106&Volume=54.100&Issue=47.101 Qualitative and Quantitative Evaluation of Two New Histogram Limiting Binarization Algorithms].
 J. Brocher, Int. J. Image Process. 8(2), 2014 pp. 30-48
 
+Form: macro (plugin currently under development)
+
 Status: v2.2 (performance improved), maintenance active
 
 Future: Suggestions are welcome!
@@ -208,9 +223,9 @@ Remark: The pseudo flat field correction menu command links to the plugin with t
 Advantage of the Pseudo flat field correction: This is now recordable and works with stacks. Thus, time-lapse movies e.g. from a brightfield microscope can be completely corrected for unequal lighting according to the individual differences in each frame. The blurring is visualized on the currently active frame to be able to sufficiently eliminate structural information.
 
 
-Version: Flat-field correction v0.2 (14-02-2014)
+Form of Flat-field correction: macro
 
-Version: Pseudo Flat-field correction v0.1 (19-05-2014) as plugin.
+form of Pseudo Flat-field correction: plugin
 
 Status: maintenance active
 
@@ -231,7 +246,7 @@ If the subtraction plot checkbox is activated (recommended), the user will be ab
 
 [[File:MedianBackgroundSubtraction.png|750px]]
 
-Version: v0.1 (first release, 14-02-2014)
+Form: macro
 
 Status: maintenance active!
 
@@ -247,7 +262,7 @@ If a new plot line is added to an existing plot the choice "Draw grid lines" is 
 
 [[File:ScaledIntensityPlots.png|750px]]
 
-Version: v0.1 (first release, 14-02-2014)
+Form: macro
 
 Status: maintenance active!
 
@@ -263,7 +278,7 @@ How To: The line can be either straight, freehand or segmented and needs to be d
 
 [[File:StackLinePlots.png|750px]]
 
-Version: v0.1 (first release, 05-03-2014)
+Form: macro
 
 Status: maintenance active!
 
@@ -277,6 +292,8 @@ Purpose: Uses a basic difference of Gaussian method for feature detection and a 
 
 How to: Difference of Gaussian needs the specification of 2 different Gaussian blurring radii and Difference from Median needs the specification of a Median kernel radius.
 
+Form: macro
+
 Status: maintenance active
 
 Future: Suggestions are welcome!
@@ -289,7 +306,9 @@ Purpose: This macro enables the color coding of the time or volume dimension in 
 
 How to: Given that you start with a hyperstack, you can choose between time and volume to be color coded. You can choose to create a z-projection by choosing from different projection types (as available in the ImageJ "Z-Project" function). Furthermore, a separated calibration bar can be created which will be horizontal for coded time stacks and vertical for coded volume stacks.
 
-Status: v0.1, maintenance active
+Form: macro
+
+Status: maintenance active
 
 Future: Suggestions are welcome!
 
@@ -305,7 +324,7 @@ Methods: "Voronoi" analyzes the paticles according to the directly correlated vo
 
 [[File:NeighborAnalysis.png|750px]]
 
-Version: 0.5
+Form: macro
 
 Status: maintenance active
 
@@ -324,7 +343,7 @@ It is assumed that in the case of normally distributed particles, the mean equal
 
 [[File:DistributionAnalysis.png|750px]]
 
-Version: 0.1, new release
+Form: macro
 
 Status: maintenance active
 
@@ -354,7 +373,7 @@ Consider that the detector size as well as density settings influence if a clust
 
 Method: Circle ROIs of the specified size are initially distributed with sufficient overlap to cover the complete image. The cluster finding process is done according to the mean shift method towards the center of mass of clusters. The latter is influenced by particle number, size and neighbor distance.
 
-Version: v0.3 
+Form: macro
 
 Status: maintenance active
 
@@ -372,7 +391,7 @@ Method: The correction of the skeleton length is achieved by adding the intensit
 
 Limit: The obvious limit of the method is that a branched skeleton leads to the determination of the corrected length of all branches. This can be an advantage if this measure is desired but corrupt analyses where a sinlge length measurement is desired.
 
-Version: 0.1, new release
+Form: macro
 
 Status: maintenance active
 
@@ -392,7 +411,7 @@ Method: As measure for the distance between the particles the minimum separation
 
 Download source: [http://www.biovoxxel.de/BioVoxxel%20Macro%20Toolset/Nearest_Neighbor_Indicator.ijm Nearest_Neighbor_Indicator.ijm]
 
-Version: first release (0.1)
+Form: macro
 
 Status: maintenance active
 
@@ -411,7 +430,7 @@ Limitation: So far, the filter is only applicable on 8-bit and 16-bit single ima
 
 Installation: Part of the BioVoxxel update site in Fiji and can be found under >Plugins >BioVoxxel
 
-Version: first release (0.1)
+Form: plugin, recordable
 
 Status: maintenance active
 
@@ -432,13 +451,13 @@ In the image below the upper pannels show the original photograph and a version 
 
 [[File:AdaptiveFilter.png]]
 
-Output: The filter will be applied directly on the input image. It is undoable (by pressing [z]) and is recordable by the macro recorder.
+Output: The filter will be applied directly on the input image. It is undoable (by pressing [z]).
 
 Limitation: So far, the filter is only applicable on 8-bit and 16-bit single images.
 
 Installation: Part of the BioVoxxel update site in Fiji and can be found under >Plugins >BioVoxxel
 
-Version: 0.2
+Form: plugin, recording still not fully functional!!!
 
 Status: maintenance active
 
@@ -455,7 +474,7 @@ How to: The user can key in a percentage of saturated pixels as in the "Enhance 
 
 Remarks: is recordable and works with stacks
 
-Version: first release (0.1)
+Form: plugin, recordable
 
 Status: maintenance active
 
@@ -475,7 +494,7 @@ The limitation step eliminates all intensity information in the histogram up to 
 
 Download: Part of the BioVoxxel update site in Fiji and can be found under >Plugins >BioVoxxel
 
-Version: first release (0.1)
+Form: plugin, recordable
 
 Status: maintenance active
 
