@@ -72,6 +72,8 @@ Morphological Segmentation is part of the IJPB-plugins library. To install it, y
 
 You should now find the plugin under the sub-menu ''Plugins > Segmentation''.
 
+'''Note''': Morphological Segmentation is only one of the plugins included in the IJPB-plugins suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
+
 == References ==
 # Soille, P., Morphological Image Analysis: Principles and Applications, Springer-Verlag, 1999, pp. 170-171.
 
