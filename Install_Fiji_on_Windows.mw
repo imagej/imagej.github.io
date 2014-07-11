@@ -28,7 +28,6 @@ You can start [[Main_Page|Fiji]] by double-clicking on the ''fiji-win32'' execut
 
 Next time you want to start Fiji, just open the ''Fiji.app'' directory on your desktop and double-click on the executable.  To make things easier, you might want to create a shortcut to that executable and put it on the Desktop, into the Start menu, or into the QuickLaunch bar.
 
-==Caution: "Program Files" not recommended!==
-We strongly recommend that you store your Fiji.app directory somewhere in your user space (e.g., "C:\Users\[your name]\Fiji.app") rather than in "C:\Program Files" or other system-wide directory. If you move Fiji.app to such a directory, modern versions of Windows will deny Fiji write permission to its own directory structure, preventing it from being able to update.
+{{AvoidProgramFiles}}
 
 [[Category:Tutorials]]
