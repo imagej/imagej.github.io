@@ -1,6 +1,6 @@
 = Source Code Management =
 
-Fiji's development relies heavily on [http://git.or.cz Git].
+Fiji's development relies heavily on [http://git-scm.com/ Git].
 
 If you do not know what Git is, you really want to take [http://try.github.com/levels/1/challenges/1 GitHub's 15-minute interactive tutorial]. Or you may want to have a look at our [[Git for dummies|real concise introduction to Git]] predating GitHub's awesome tutorial.
 
