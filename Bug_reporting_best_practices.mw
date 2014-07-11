@@ -14,9 +14,9 @@ There are three critical components in an ImageJ bug report. If a report is miss
 
 ImageJ is a flexible and extensible platform, so the actual "ImageJ environment" can vary from user to user. A common misunderstanding in bug reports is to just report the version of the base ImageJ component (e.g. 1.49e). This is helpful, but says nothing about what plugins, update sites, etc... are in use.
 
-Errors can appear in any component of the software, and in some cases two plugins might work individually but have some negative interaction with each other. Thus a complete view of the ImageJ environment is imperative. Fiji currently ships with a ''Help>Report a Bug'' command; this will automatically populate the complete environment information and include it in the [http://fiji.sc/bugzilla/ bugzilla report]; this bug-reporting functionality will be migrated to core ImageJ soon.
+Errors can appear in any component of the software, and in some cases two plugins might work individually but have some negative interaction with each other. Thus a complete view of the ImageJ environment is imperative. Fiji currently ships with a [[Report a Bug]] command; this will automatically populate the complete environment information and include it in the [http://fiji.sc/bugzilla/ bugzilla report]; this bug-reporting functionality will be migrated to core ImageJ soon.
 
-Note that if you file a bug manually or are enquiring to a [[Mailing_Lists|mailing list]], you can still copy and paste the contents of the ''"Useful information about your system"'' text box from the ''Report a Bug'' dialog. It will be greatly appreciated.
+Note that if you file a bug manually or are enquiring to a [[Mailing_Lists|mailing list]], you can still copy and paste the contents of the ''"Useful information about your system"'' text box from the [[Report a Bug]] dialog. It will be greatly appreciated.
 
 == Minimal and precise steps to reproduce ==
 
