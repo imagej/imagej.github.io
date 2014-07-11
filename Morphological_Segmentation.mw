@@ -102,6 +102,26 @@ call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Watershed 
 call("inra.ijpb.plugins.MorphologicalSegmentation.createResultImage");
 </source>
 
+==== Complete macro example: ====
+<source lang="java">
+// load the Blobs sample image
+run("Blobs (25K)");
+// run the plugin
+run("Morphological Segmentation");
+// wait for the plugin to load
+wait(1000);
+// select input image as "object"
+call("inra.ijpb.plugins.MorphologicalSegmentation.setInputImageType", "object");
+// set gradient radius as 1
+call("inra.ijpb.plugins.MorphologicalSegmentation.setGradientRadius", "1");
+// run segmentation with tolerance 32, calculating the watershed dams, 
+// 4-connectivity and using a priority queue
+call("inra.ijpb.plugins.MorphologicalSegmentation.segment", "tolerance=32",
+ "calculateDams=true", "connectivity=6", "usePriorityQueue=true");
+// display the overlaid dams
+call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Overlaid dams");
+</source>
+
 == Installation ==
 
 Morphological Segmentation is part of the IJPB-plugins library. To install it, you just need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | add]] the IJPB-plugins update site:
