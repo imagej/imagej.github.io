@@ -1,5 +1,6 @@
-<div style="background:#ffd; padding: 10px 10px 0 10px; border: 1px solid black;">For information on how to structure your bug report, see [[Bug_reporting_best_practices|bug reporting best practices]].</div>
-
+{{Notice
+| message = For information on how to structure your bug report, see [[Bug_reporting_best_practices|bug reporting best practices]].
+}}
 {{Infobox Plugin
 | software               = Fiji
 | name                   = Bug Submitter
@@ -9,8 +10,7 @@
 | released               = 03/05/2009
 | latest version         = 30/09/2009
 | status                 = maintained
-}}
-== Report a Bug ==
+}}== Report a Bug ==
 
 To be able to track issues better, the Fiji project has a [http://fiji.sc/bugzilla BugZilla] instance. However, BugZilla's user interface can be quite intimidating to somebody who just wants to report a bug. Therefore, Fiji offers an easier way to report a bug:
 
