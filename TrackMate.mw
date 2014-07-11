@@ -1,8 +1,6 @@
-[[Image:TrackMate-Logo85x50-color-300p.png|600px|center]]
-
-
 {{Infobox Plugin
 | name                  = TrackMate_
+| logo                    = [[Image:TrackMate-Logo85x50-color-300p.png|192px]]
 | software              = Fiji
 | author                = [[User:NicholasPerry|Nick Perry]], [[JeanYvesTinevez|Jean-Yves Tinevez]], [[User:Schindelin|Johannes Schindelin]]
 | maintainer            = [mailto:jean-yves.tinevez@pasteur.fr Jean-Yves Tinevez]
