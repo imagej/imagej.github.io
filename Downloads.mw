@@ -15,9 +15,7 @@ For more detailed instructions, see the installation walkthroughs:
 * [[Install Fiji on MacOSX]]
 * [[Install Fiji on Linux]]
 
-{{Warning
-| message = <div style="font-size: large; color: red; padding-bottom: 10px">Caution: "<code>Program Files</code>" not recommended!</div>If you are installing Fiji on Windows, we strongly recommend that you store your Fiji.app directory somewhere in your user space (e.g., "<code>C:\Users\[your name]\Fiji.app</code>") rather than in "<code>C:\Program Files</code>" or other system-wide directory. If you move Fiji.app to such a directory, modern versions of Windows will deny Fiji write permission to its own directory structure, preventing it from being able to update.
-}}
+{{AvoidProgramFiles}}
 == Java WebStart ==
 
 {{Java_WebStart}}
