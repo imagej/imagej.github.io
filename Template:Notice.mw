@@ -1,0 +1,15 @@
+<includeonly>
+{| style="background: #ffd; padding: 10px; border: 1px solid black"
+|-
+| [[File:Notice.png]]
+| {{{message|}}}
+|}
+</includeonly>
+<noinclude>
+==Usage==
+<pre>
+{{Notice
+| message = There are many kinds of snakes.
+}}
+</pre>
+</noinclude>
