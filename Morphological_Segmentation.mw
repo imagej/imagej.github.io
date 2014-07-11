@@ -58,6 +58,10 @@ If your segmentation is taking too long or you want '''to stop it''' for any rea
 
 [[Image:Morphological-segmentation-result-examples.png|thumb|770px|Examples of the 4 different display options]]
 
+== Macro language compatibility ==
+Morphological Segmentation is completely compatible with the popular [http://rsb.info.nih.gov/ij/developer/macro/macros.html ImageJ macro language]. Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
+
+
 == Installation ==
 
 Morphological Segmentation is part of the IJPB-plugins library. To install it, you just need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | add]] the IJPB-plugins update site:
