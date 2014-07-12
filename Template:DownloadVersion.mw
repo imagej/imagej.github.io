@@ -1,14 +1,18 @@
-{| class="wikitable" style="border-spacing: 15px 5px; width: 100%"
-!colspan="6"|{{{title|}}}
+{| class="wikitable" style="width: 100%"
+!colspan="9"|{{{title|}}}
 |-
-|style="text-align: center; vertical-align: middle; width: 110px" rowspan="3"|{{{logo|}}}
-|colspan="5"|{{{description|}}}
+|colspan="9"|{{{description|}}}
+
 |-
-|[[Image:Win.png|link=|16px]] [{{{win32|}}} Windows (32-bit)]
-|rowspan="2"|[[Image:Osx.png|link=|16px]] [{{{osx|}}} OS X]
-|[[Image:Tux.png|link=|16px]] [{{{linux32|}}} Linux (32-bit)]
-|rowspan="2" style="white-space: nowrap"|[[Image:Fiji-logo-1.0-128x128.png|link=|16px]] [{{{all|}}} All platforms (no JREs)]
+|rowspan="2" style="text-align: center" width="40px"|[[Image:{{{logo|}}}|link=|32px]]
+|rowspan="2" style="white-space: nowrap"|[{{{all|}}} All platforms (no JREs)]
+|rowspan="2" style="text-align: center" width="40px"|[[Image:Win.png|link=|32px]]
+|[{{{win32|}}} Windows (32-bit)]
+|rowspan="2" style="text-align: center" width="40px"|[[Image:Osx.png|link=|32px]]
+|rowspan="2"|[{{{osx|}}} OS X]
+|rowspan="2" style="text-align: center" width="40px"|[[Image:Tux.png|link=|32px]]
+|[{{{linux32|}}} Linux (32-bit)]
 |-
-|[[Image:Win.png|link=|16px]] [{{{win64|}}} Windows (64-bit)]
-|[[Image:Tux.png|link=|16px]] [{{{linux64|}}} Linux (64-bit)]
+|[{{{win64|}}} Windows (64-bit)]
+|[{{{linux64|}}} Linux (64-bit)]
 |}
