@@ -19,12 +19,11 @@ On MacOSX, there is no problem: Aqua provides GUI-independent text rendering (ma
 == The <code>--headless</code> mode ==
 {{Notice
 | message = '''Historical note:''' Headless support was originally a branch in [[ImageJA]]; it worked by putting rewritten versions of three core ImageJ classes into a file called ''headless.jar'', which was put into the class path ''before'' <code>ij.jar</code> so they would override ImageJ's versions.
-}}
+
 Nowadays, we use [[Javassist]] for run-time patching, through the [https://github.com/imagej/ij1-patcher ImageJ 1.x patcher] project. <span style="color: red">You do not need to do anything special to take advantage of this feature, except pass the <code>--headless</code> flag when launching Fiji from the command line.</span>
 
 In the ''unlikely'' situation that you still require a <code>headless.jar</code> file (e.g., because your Java environment does not allow run-time modification of Java classes), you can [[Downloading_and_Building_Fiji_From_Source|check out fiji.git]] and run <code>./Build.sh </code>and then <code>./Build.sh misc/headless.jar</code>.
-</div>
-
+}}
 Fiji provides the capability to execute ImageJ plugins, macros and scripts in headless mode. This feature uses bytecode manipulation to patch ImageJ 1.x's behavior at runtime, making it possible to start ImageJ in batch mode without instantiating GUI components.
 
 '''Shortcoming:''' There are plugins which are even more bound to a GUI than ImageJ 1.x is. Naturally, these plugins will still try to instantiate GUI elements when being called in headless mode, failing.
