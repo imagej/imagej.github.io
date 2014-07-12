@@ -15,7 +15,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
 |[[ImageJ2]]<br>
 ImageJDev
 |[[Contributors|ImageJ developers]]
-|A new version of ImageJ targeting scientific multidimensional image data. It is a complete rewrite of ImageJ, but includes ImageJ1 with a compatibility layer, so that old-style plugins and macros can run the same as in IJ1.
+|A new version of ImageJ targeting scientific multidimensional image data. It is a complete rewrite of ImageJ, but includes [[ImageJ1]] with a compatibility layer, so that old-style plugins and macros can run the same as always.
 |Dec. 2009
 |Active
 |-
@@ -26,7 +26,7 @@ ImageJDev
 |Active
 |-
 |[[ImageJA]]
-|Johannes Schindelin
+|[[User:Schindelin|Johannes Schindelin]]
 | 
 ImageJA is a project that provides a clean Git History of ImageJ1, with a proper 'pom.xml' file so that it can be used with Maven without hassles.
 
