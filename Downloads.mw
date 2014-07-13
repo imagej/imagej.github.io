@@ -15,7 +15,7 @@ Please note that we currently test ImageJ mostly with Oracle Java 6. We have don
 
 == Installation ==
 
-Fiji comes as a [http://en.wikipedia.org/wiki/Portable_application portable application]. That means that you do not have to install it; just download, unpack and start it.
+ImageJ and Fiji are distributed as [http://en.wikipedia.org/wiki/Portable_application portable applications]. That means that you do not have to run an installer; just download, unpack and start it.
 
 For more detailed instructions, see the installation walkthroughs:
 * [[Install Fiji on Windows]]
@@ -23,6 +23,7 @@ For more detailed instructions, see the installation walkthroughs:
 * [[Install Fiji on Linux]]
 
 {{AvoidProgramFiles}}
+
 == Java WebStart ==
 
 {{Java_WebStart}}
