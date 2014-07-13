@@ -1,0 +1,20 @@
+In the past few months, we have carefully considered what the first stable release of ImageJ 2.0.0 should entail, as well as the timeline and plan for that release.
+
+The focus of the initial stable 2.0.0 release will be a unified application bundle that provides several key built-in components&mdash;in particular: the [[Updater]] and the [[Script Editor]]. While the [[Fiji]] distribution of ImageJ has been structured as this sort of unified bundle for years, Fiji also includes 300+ plugins focused on the life sciences, which are not necessarily relevant to every ImageJ user. The [[ImageJ2]] release will include a set of core components useful to the ImageJ community as a whole, on top of which projects like Fiji can build.
+
+We are targeting the following goals for a June 1 release of ImageJ 2.0.0:
+
+# Integrate [[ImageJ2]] into the [[ImageJ1]] user interface. In a nutshell, this means providing support for ImageJ2's parameter-based commands from the classic ImageJ 1.x interface. The stable release of ImageJ 2.0.0 will continue to use the classic interface, with the &quot;modern&quot; interface remaining available as well, but still in beta. Similarly, the ImageJ2 data model (based on [[ImgLib2]]) will continue to be available, but also still in beta.
+# Unified image file I/O driven by the [[SCIFIO]] library. ImageJ2 will overcome the extensibility limitations imposed by ImageJ 1.x's &quot;HandleExtraFileTypes&quot; mechanism.
+# Improved [http://imagej.net/ imagej.net] website encompassing all content from [http://mirror.imagej.net/ mirror.imagej.net] (ImageJ 1.x content), [http://developer.imagej.net/ developer.imagej.net] (ImageJ 2.x content) and [http://wiki.imagej.net/ wiki.imagej.net] (community content including Fiji). This will involve migration of some &quot;developer&quot; content to the wiki, as well as a better set of front pages that provide clear & easy access to ImageJ and Fiji downloads.
+# A well-vetted release of the burgeoning [[2014-04-04 - Announcing ImageJ OPS|ImageJ OPS]] project for easy development of reusable image processing algorithms.
+# Stable release of the [https://github.com/imagej/imagej-omero ImageJ-OMERO] interoperability library, including support for calling many ImageJ 1.x plugins from [http://openmicroscopy.org/info/omero OMERO].
+# A final logo for ImageJ 2.0.0, chosen by a community logo competition.
+# Manuscript drafts for several software components of the [[SciJava]] software stack.
+# Cleanup and reconciliation of the [http://trac.imagej.net/ Trac] and [https://github.com/imagej/imagej/issues GitHub] ImageJ issue trackers.
+
+If you have questions or ideas relating to any of these goals, we welcome your feedback on the [[Mailing Lists]]!
+
+P.S.: Not an April Fools joke. ;-)
+
+[[Category:News]]
