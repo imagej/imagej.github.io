@@ -1,0 +1,13 @@
+Last month [[2014-04-07 - Stitching in Fiji/IJ2|we announced]] that performance improvements were coming to [[Stitching]]. Last week, a new version (1.1) of the Stitching plugin was finally released and is now available in [[Fiji]].
+
+The speed improvements in this plugin come from taking a different approach to the amount of work that is done per pixel. When fusing data, especially microscopy data, you are typically working with very large datasets&mdash;potentially many gigabytes in size. In datasets where individual images overlap, the pixel values of multiple input images may need to be combined in a reasonable method to obtain a final output pixel value for a given position.
+
+In the old Stitching plugin, for every pixel position in the output (fused) image, every single input image was queried to see if it overlapped at that position. So if your dataset had 150 input images and 1M pixels in the fused image, there were 150M tests for overlap&mdash;even if only 100,000 positions (or 10!) actually had overlap.
+
+The new Fusion paradigm used in Stitching 1.1 is to pre-compute all the regions of overlap and to let these drive the fusion process. Intersection tests are done on the largest regions possible, instead of on individual pixels. Once the fusion process begins we know exactly which input images contribute to each output position, so there are no more overlap tests to perform and we do the minimum amount of work per pixel.
+
+The actual effects on performance will depend on the dataset being stitched. If there are only two tiles, for example, the time will be very similar to the old Stitching plugin. In general, the speed increase is proportionate to the number of tiles. In our benchmarks, a 150-image dataset that took about 20 minutes to fuse with the old Stitching plugin fuses in 80 seconds with the new plugin.
+
+In case you missed it, the [[Stitching]] page has tutorials on using the Stitching plugin. Questions or comments are welcome on the [[Mailing Lists|ImageJ mailing list]].
+
+So try the new Stitching plugin in Fiji today, and let us know what you think!
