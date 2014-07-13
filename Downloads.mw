@@ -1,4 +1,4 @@
-__NOTOC__
+<div style="float: right">__TOC__</div>
 {{Warning
 | message = <span style="color:red">'''Critical:'''</span> if you updated and ImageJ does not work anymore, you need to follow [[Fix_non-functional_ImageJ_after_Update|these instructions]].
 }}
