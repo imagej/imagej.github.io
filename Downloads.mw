@@ -13,6 +13,11 @@ Please note that we currently test ImageJ mostly with Oracle Java 6. We have don
 
 {{Downloads}}
 
+== Troubleshooting ==
+
+* If you updated and ImageJ does not work anymore, you need to follow [[Fix_non-functional_ImageJ_after_Update|these instructions]].
+* If you encounter bugs, there are many ways to get help; please see the [[Help:Contents|Getting Help]] page.
+
 == Installation ==
 
 ImageJ and Fiji are distributed as [http://en.wikipedia.org/wiki/Portable_application portable applications]. That means that you do not have to run an installer; just download, unpack and start it.
@@ -37,8 +42,3 @@ See the [[source code]] page for details on obtaining the ImageJ and Fiji source
 We used to offer Debian packages. Unfortunately, for a variety of reasons, we are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads above instead.
 
 If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us [http://fiji.sc/IRC in IRC] or contact the [http://groups.google.com/group/fiji-devel fiji-devel mailing list].
-
-== Troubleshooting ==
-
-* If you updated and ImageJ does not work anymore, you need to follow [[Fix_non-functional_ImageJ_after_Update|these instructions]].
-* If you encounter bugs, there are many ways to get help; please see the [[Help:Contents|Getting Help]] page.
