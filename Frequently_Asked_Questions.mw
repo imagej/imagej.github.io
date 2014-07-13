@@ -111,7 +111,7 @@ If that still fails, please download a fresh copy from [[Downloads|here]].
 
 == I updated ImageJ via ''Help>Update'', and now it does not start anymore! ==
 
-If you are on MacOSX, most likely you did not update in some time, and you were bitten by a bug in the updater that is already fixed (but you did not get the fix in time). Please follow [[Fix non-functional Fiji after Update on MacOSX|these instructions]].
+You may have been bitten by a bug in the updater that is already fixed (but you did not get the fix in time). Please follow [[Fix non-functional ImageJ after Update|these instructions]].
 
 == The Updater always says ''Connection refused''. Maybe it does not use the proxy? ==
 
