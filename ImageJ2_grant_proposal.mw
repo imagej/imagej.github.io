@@ -45,7 +45,7 @@ To overcome this problem, we will employ a popular and successful design pattern
 
 We will also use Java's event-driven approach to provide a means for other software to “listen in” when ImageJ's Model changes, enabling features like dynamic charts and real-time linked displays. With this design, changes to the underlying Model will automatically propagate to all active linked Views, and user interaction with a View (such as cropping an image) will be capable of altering the Model.
 
-Refactoring ImageJ to use an MVC design is a significant effort, but fortunately, preliminary work has already been done in this direction: Grant Harris has written a [[files/imagej/ImageJX_Mar09.pdf|whitepaper]] describing his efforts thus far to deploy an interface-driven architecture for extensible, modular GUI support. With further development, we will transform ImageJ into a flexible library usable by a wide variety of scientific image software.
+Refactoring ImageJ to use an MVC design is a significant effort, but fortunately, preliminary work has already been done in this direction: Grant Harris has written a whitepaper ([[File:ImageJX_Mar09.pdf]]) describing his efforts thus far to deploy an interface-driven architecture for extensible, modular GUI support. With further development, we will transform ImageJ into a flexible library usable by a wide variety of scientific image software.
 
 === Aim IB – Introduce an extensions framework for algorithms ===
 
@@ -240,3 +240,7 @@ Examples of new applications facilitated by this grant’s technical aims:
 # Provenzano, P.P., et al., ''Nonlinear optical imaging and spectral-lifetime computational analysis of endogenous and exogenous fluorophores in breast cancer''. J Biomed Opt, 2008. '''13'''(3): p. 031220.
 # Abramoff, M., P. Magalhaes, and S. Ram, ''Image processing with ImageJ''. Biophotonics International, 2004. '''LAURIN Publishing'''.
 # Yan, L., et al., ''Applications of combined spectral lifetime microscopy for biology''. Biotechniques, 2006. '''41'''(3): p. 249, 251, 253 passim.
+
+{{Notice
+| message = See also [[File:ImageJX_Mar09.pdf]], the ImageJX whitepaper from 2008
+}}
