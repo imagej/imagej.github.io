@@ -1,0 +1,17 @@
+== Development cycle ==
+
+ImageJ is currently migrating to [https://github.com/organizations/imagej/dashboard/issues/repos GitHub Issues] for issue tracking:
+
+* [https://github.com/imagej/imagej/issues/milestones ImageJ release milestones]
+* [https://github.com/scifio/scifio/issues/milestones SCIFIO release milestones]
+
+Previously, the project used [http://trac.imagej.net/ Trac] for issue tracking and roadmapping. See these links:
+
+* [http://trac.imagej.net/roadmap ImageJ Trac roadmap] - early milestones
+* [http://trac.imagej.net/report/1 ImageJ Features report] - a high-level list of features slated for each release
+* [http://trac.imagej.net/timeline ImageJ Trac timeline] - a fine-grained list of changes to ImageJ
+
+== Other roadmap links ==
+
+* [[News]] - ImageJ and Fiji developers occasionally post status updates, observations and comments about ImageJ programming, and similar topics.
+* [[Special:RecentChanges]] - A record of changes to this web site (''not'' the ImageJ code itself).
