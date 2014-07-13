@@ -1,4 +1,6 @@
-== Development cycle ==
+{{Development}}ImageJ manages tasks and priorities using an online issue tracking system.
+
+== Issue tracking ==
 
 ImageJ is currently migrating to [https://github.com/organizations/imagej/dashboard/issues/repos GitHub Issues] for issue tracking:
 
@@ -15,3 +17,4 @@ Previously, the project used [http://trac.imagej.net/ Trac] for issue tracking a
 
 * [[News]] - ImageJ and Fiji developers occasionally post status updates, observations and comments about ImageJ programming, and similar topics.
 * [[Special:RecentChanges]] - A record of changes to this web site (''not'' the ImageJ code itself).
+* [http://fiji.sc/bugzilla Fiji BugZilla] - A database of user-reported bugs from Fiji's [[Report a Bug]] plugin.
