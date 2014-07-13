@@ -11,12 +11,12 @@ ImageJ will run on any system that has a Java 6 (or later) runtime installed. Th
 
 Please note that we currently test ImageJ mostly with Oracle Java 6. We have done a limited amount of testing with OpenJDK 7 and with Oracle Java 8, and things superficially work, but there may be additional bugs in those cases. Feel free to report any such issues to the [[Mailing Lists]].
 
-{{Downloads}}
-
 == Troubleshooting ==
 
 * If you updated and ImageJ does not work anymore, you need to follow [[Fix_non-functional_ImageJ_after_Update|these instructions]].
 * If you encounter bugs, there are many ways to get help; please see the [[Help:Contents|Getting Help]] page.
+
+{{Downloads}}
 
 == Installation ==
 
