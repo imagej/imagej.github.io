@@ -15,6 +15,6 @@ Previously, the project used [http://trac.imagej.net/ Trac] for issue tracking a
 
 == Other roadmap links ==
 
-* [[News]] - ImageJ and Fiji developers occasionally post status updates, observations and comments about ImageJ programming, and similar topics.
-* [[Special:RecentChanges]] - A record of changes to this web site (''not'' the ImageJ code itself).
-* [http://fiji.sc/bugzilla Fiji BugZilla] - A database of user-reported bugs from Fiji's [[Report a Bug]] plugin.
+* [[News]] about ImageJ and Fiji developments, including status updates, observations and comments about ImageJ programming.
+* [[Special:RecentChanges|Recent changes]] to this web site (''not'' the ImageJ code itself).
+* [http://fiji.sc/bugzilla BugZilla] database of user-reported bugs from the [[Report a Bug]] plugin.
