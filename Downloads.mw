@@ -29,13 +29,13 @@ For more detailed instructions, see the installation walkthroughs:
 
 {{AvoidProgramFiles}}
 
-== Java WebStart ==
-
-{{Java_WebStart}}
-
 == Source code ==
 
 See the [[source code]] page for details on obtaining the ImageJ and Fiji source code.
+
+== Java WebStart ==
+
+{{Java_WebStart}}
 
 == Packages for Debian / Ubuntu ==
 
