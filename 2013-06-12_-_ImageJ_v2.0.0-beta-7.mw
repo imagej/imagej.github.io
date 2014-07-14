@@ -1,0 +1,167 @@
+Today the ImageJDev team is releasing the seventh beta of ImageJ2, version 2.0.0-beta-7. This release includes more than [http://trac.imagej.net/query?status=closed&type=defect&milestone=imagej2-b7-ndim-data 96 bugfixes] and [http://trac.imagej.net/query?type=feature&milestone=imagej2-b7-ndim-data 24 new high-level features]. The 2.0.0-beta-7 release achieves two key longstanding goals of the project: '''unifying image I/O''' and '''better support for very large image data'''.
+
+ImageJ 2.0.0-beta-7 is a "beta"-quality release, meaning the code is not finished. The design is still subject to change until the final 2.0.0 release. It is recommended that people continue to use [[ImageJ1|ImageJ v1.x]] for critical work.
+
+Download using the link below, or from the [[ImageJ2 development releases]] page, which also has a timetable for future releases.
+
+The ImageJ2 user interface is modeled after ImageJ v1.x as much as possible. However, under the hood, ImageJ2 is a complete redesign of ImageJ. It provides backward compatibility with older versions of ImageJ by bundling the latest v1.x code and translating between "legacy" and "modern" image structures.
+
+== What's new ==
+
+Development of this release of ImageJ focused on better support for N-dimensional data, particularly large datasets. This release adds support for "cell images" which are similar to, but more powerful than, the "virtual stacks" of ImageJ 1.x. There has also been a further strengthening and stabilization of the ImageJ2 architecture, with the new plugin system generalized into a SciJava Common library used by both ImageJ2 and SCIFIO.
+
+=== Unified Open &amp; Save commands ===
+
+[[File:Scifio-logo-800.png|250px|right|SCIFIO: an extensible image I/O library]]
+
+One common source of confusion in ImageJ 1.x is the plethora of ways that exist to import data. Using the "Open..." command in the File menu can result in different behavior than calling a specific command such as the [[Bio-Formats|Bio-Formats Importer]]. One of ImageJ2's major goals has been to [http://trac.imagej.net/ticket/9 improve and unify the behavior of I/O]. With ImageJ2, any image opened via the "Open..." command is now handled the same: an appropriate ImageJ I/O plugin is automatically selected to handle the file(s). Anyone can write a new I/O plugin to extend ImageJ2's file handling capabilities without needing to modify the ImageJ2 core. Similarly, the File &gt; Save command invokes the appropriate I/O plugin to save data in the appropriate and/or chosen format, and ImageJ2 can be easily extended with additional export routines by writing a new I/O plugin.
+
+[[File:Scifio-cell-img.png|302px|right|'''A SCIFIO cell image in action.''' Here we see a "cell image" which loads image planes on demand via the SCIFIO library. Like ImageJ 1.x, the title bar shows a (V) to indicate the image is a "virtual" one. The total dataset size is 215MB, but ImageJ is using only 30MB of memory in total.]]
+
+While we are still [http://trac.imagej.net/ticket/1920 polishing some details], the extensible I/O architecture is fundamentally in place, with image I/O driven by the [[SCIFIO]] library. SCIFIO is a refactoring of [[Bio-Formats]], providing the next generation of image I/O for scientific images (beyond just the life sciences). Along with ImageJ 2.0.0-beta-7 comes a beta release of SCIFIO, version 0.2.0. The API is still subject to change until the SCIFIO 1.0.0 release, but it is now in use by ImageJ2.
+
+SCIFIO format plugins extend ImageJ2's capability to read and write image data. Further, these SCIFIO plugins benefit not only ImageJ, but all other programs using SCIFIO, such as the [http://itk.org/ Insight Toolkit (ITK)], which recently [http://www.kitware.com/news/home/browse/467 released version 4.4.0] featuring integration with SCIFIO. The SCIFIO format plugin mechanism is based on the [[SciJava Common]] library which we generalized from ImageJ2 earlier this year. The SciJava Common framework provides a plugin mechanism and application container common to both ImageJ2 and SCIFIO, so the two projects are inherently compatible with one another.
+
+=== Virtual stacks ===
+
+In ImageJ 1.x, large datasets with very many image planes (more than can fit in available memory) are supported via the "virtual stack" feature. One of ImageJ2's major goals has been to [http://trac.imagej.net/ticket/20 provide better support for this kind of large data]. With the 2.0.0-beta-7 release, we have achieved a major milestone toward that goal: ImageJ2 now loads such large datasets in virtual data structures known as "cell images" thanks to its use of the SCIFIO library (see above).
+
+For the 2.0.0-beta-7 release, ImageJ automatically decides, based on the size of the input data and quantity of available memory, whether to use a cell image or not. In a future release, this will be more configurable, with an advanced option available when opening the dataset—i.e., you will be able to set an option like "Use virtual stack" to either Yes, No or Auto (the default).
+
+[[File:Ij2-beta-7-threshold.png|373px|left|'''ImageJ2 Threshold dialog.''' ImageJ2 treats thresholds like any other ROI. You can operate on pixels within the threshold, or perform processing using any ImgLib2-based code. Auto-thresholding methods are a type of ImageJ plugin, which makes them extensible without needing to modify the core ImageJ source code.]]
+
+For backwards compatibility, the legacy layer passes these cell images to ImageJ 1.x commands as virtual stacks, allowing the current plane to be modified. This behavior is consistent with ImageJ 1.x itself, which allows transient modification of virtual image planes, which are lost as soon as the active image plane changes. We are enhancing ImageJ2's cell images to support full read/write capabilities: when in read/write mode, image planes flushed from memory will be saved to a temporary cache on disk, so that modifications are preserved when those planes are read back in. This feature will make complex image processing of huge datasets much more feasible, since image processing pipelines will no longer need to be concerned with whether the input data is "virtual" or not.
+
+=== Thresholding ===
+
+Thresholding is now supported throughout ImageJ2 and across the legacy layer. A threshold is a new kind of region of interest (ROI), is accessible in the Overlay Manager like any other overlay, and can be operated upon like any other ROI.
+
+Thresholds are created by the Adjust Threshold command. This command It utilizes implementers of an autothreshold method template. Many such methods have been ported from Gabriel Landini's autothreshold plugin.
+
+=== Better update sites ===
+
+The ImageJ updater has been enhanced to support "personal" update sites, which are hosted at [http://sites.imagej.net/ http://sites.imagej.net/], in a subdirectory matching your account on the [http://imagej.net/ ImageJ wiki] (which is also the [http://fiji.sc/ Fiji wiki], at least for the time being). In this way, every ImageJ user can have their own update site to distribute their plugins via the ImageJ updater, without needing to create a web site or find hosting space on a web server.
+
+The "Manage update sites" dialog in the advanced mode also got a major overhaul: it now presents a list of pre-defined update sites (read from the [[List of update sites|list of update sites]]) for easy activation, and allows convenient initialization of a personal update site ([http://sites.imagej.net/ http://sites.imagej.net/]).
+
+See below for a complete list of updater improvements.
+
+=== Examples for developers ===
+
+We have continued to flesh out example code for developers. There are now [https://github.com/imagej/imagej-tutorials nine tutorials]. Most notably, we have an example of [https://github.com/imagej/imagej-tutorials/blob/af141b0cf4af9d0e0be8a42e76295d8744787f92/call-modern-from-legacy/src/main/java/DisplayATable.java how to call ImageJ2 classes from an ImageJ 1.x plugin]. This can be useful to take advantage of ImageJ2-only features such as its more powerful results tables.
+
+=== SLIM Plugin ===
+
+The SLIM Plugin is being refactored for ImageJ2 but is not yet available. Meanwhile, the version available from the [[List of update sites|LOCI update site]] can be used for lifetime fitting with Fiji. See the [[SLIM Curve]] page for details.
+
+=== Compatibility ===
+
+There have been numerous compatibility improvements and bugfixes. Since beta6 the team [http://trac.imagej.net/query?component=Legacy+Compatibility&resolution=fixed&milestone=imagej2-b7-ndim-data closed 18 compatibility-related issues] and made progress on many more. For instance, the Make Binary and Create Mask commands were fixed and the runtime performance of legacy commands was improved. See the [http://trac.imagej.net/query?status=closed&milestone=imagej2-b7-ndim-data full list of 2.0.0-beta-7 changes] for details.
+
+[[File:Better-update-sites.png|408px|right|'''Better update sites.''' The ImageJ updater now enables toggling of third-party update sites with the click of a button. The "Add my site" button automatically initializes your own personal update site based on your ImageJ wiki account.]]
+
+== Roadmap and future directions ==
+
+We make a substantial effort to document the work we are doing, and what needs to be done, to deliver a powerful and full-featured ImageJ2. All tasks are tracked by our Trac issue tracking system, which you can review in several ways:
+
+* [http://trac.imagej.net/roadmap Roadmap] - Top level overview of future releases, including progress toward each release
+* [http://trac.imagej.net/report/1 Open Features] - A high-level list of features slated for each future release
+* [http://trac.imagej.net/report/2 All Open Tickets] - A complete list of known bugs
+* You can also perform custom queries to further refine the results, if particular parts of the development interest you.
+
+See the [[ImageJ2 development releases]] page for a timeline of future releases.
+
+== Thanks ==
+
+Thanks for your interest in ImageJ2! Please [[ImageJ2 development releases|give it a try]], and feel free to [[Report a Bug|report any bugs you find]].
+
+<br/>
+-----
+
+== Comprehensive summary ==
+
+The following is a more detailed list of changes for this release:
+
+=== Core ===
+
+* ImageJ's core plugin framework has been generalized to a common library: [[SciJava Common]]. [https://github.com/imagej/imagej/commit/cd85c92bf4b96ddfe535265c1881768395ddc2d8 cd85c92b]
+* Image I/O is now based upon [[SCIFIO]]. [https://github.com/imagej/imagej/commit/f128f7373ad49717e905d2895052533264f2d820 scifio-cells]
+* Legacy plugins can now obtain the current application context via <code>IJ.runPlugIn("org.scijava.Context", null);</code> and the corresponding LegacyService via <code>IJ.runPlugIn("imagej.legacy.LegacyService", null);</code>
+* There is a class of commands that are derived from [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/core/core/src/main/java/imagej/command/InteractiveCommand.java InteractiveCommand]. An interactive command is modeless. It listens for changes to its inputs and updates its UI accordingly. [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/plugins/commands/src/main/java/imagej/core/commands/display/interactive/BrightnessContrast.java Brightness/Contrast] is one such command.
+* Commands now support push button widgets and radio button widgets. [[https://github.com/imagej/imagej/commit/bcbb77efdc4756ebf0b48e730cf770a5bede3427 radio-buttons]]
+* Color lookup tables (LUTs) are now populated automatically from .lut files in JARs on the classpath, and/or any lookup tables residing in the <code>luts</code> directory folder. Hierarchical organization of lookup table menu entries is now supported.
+* Event hierarchy and event dispatching was simplified. [[https://github.com/imagej/imagej/commit/9235bed11e997b871e95a9b703fc519a418ba0af event-cleanup]]
+* Drag and drop support has been improved, with drag and drop operations now extensible as a new type of ImageJ plugin. [[https://github.com/imagej/imagej/commit/9f20b3ec6c297a356ec5da44d5ce85ff04327290 drag-and-drop]]
+* The API for histograms was unified to a single package in ImgLib2. [[https://github.com/imagej/imglib/commit/79bbc2008eeec6f221c16b6f84782daca2b3f496 histogram-stuff]]
+* A new [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/core/data/src/main/java/imagej/data/table/TableLoader.java TableLoader] loads formatted textual data into [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/core/data/src/main/java/imagej/data/table/ResultsTable.java ResultsTable]s.
+* The unit tests are now [http://jenkins.imagej.net/job/ImageJ-windows/ run by Jenkins on a dedicated Windows computer], too, to ensure compatibility with that operating system.
+* There are many new services, including:
+** [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/core/data/src/main/java/imagej/data/lut/LUTService.java LUTService]: loads lookup tables from Files, URLs, etc.
+** [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/core/data/src/main/java/imagej/data/operator/CalculatorService.java CalculatorService]: discovers CalculatorOp plugins making ImageCalculator extensible.
+** [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/core/data/src/main/java/imagej/data/threshold/ThresholdService.java ThresholdService]: extensible support for autothresholding methods.
+** [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/core/data/src/main/java/imagej/data/autoscale/AutoscaleService.java AutoscaleService]: supports an extensible means of calculating a display range for a data source.
+** [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/core/data/src/main/java/imagej/data/display/InputService.java InputService]: tracks input from keyboard and mouse (a combination of the previous <code>KeyboardService</code> and <code>MouseService</code>).
+** [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/core/core/src/main/java/imagej/text/TextService.java TextService]: works with various text file formats.
+** [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/core/io/src/main/java/imagej/io/IOService.java IOService]: loads image data.
+* The common pattern of having a service that manages a particular type of plugin has been isolated into a new abstract services layer. For details, see: [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/core/core/src/main/java/imagej/plugin/PTService.java PTService], [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/core/core/src/main/java/imagej/plugin/SingletonService.java SingletonService], [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/core/core/src/main/java/imagej/plugin/TypedService.java TypedService], [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/core/core/src/main/java/imagej/plugin/HandlerService.java HandlerService], [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/core/core/src/main/java/imagej/plugin/WrapperService.java WrapperService].
+* The ImageJ build system has been substantially streamlined, in favor of repeatable builds. We no longer use any SNAPSHOT dependency couplings, which will greatly facilitate faster releases of ImageJ2 going forward. [[https://github.com/imagej/imagej/commit/d01fb8277f9566bdb1194c239e2a7fac1fb7baa8 d01fb827]]
+
+=== Commands ===
+
+[[File:1-bit-histogram.png|297px|right|'''A 1-bit histogram plot.''' ImageJ2 now supports histogram plots for any pixel type, including 1-bit, as well as floating point types.]]
+
+* The [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/plugins/commands/src/main/java/imagej/core/commands/io/NewImage.java New Image command] has been made more functional. Multidimensional images can now be easily created.
+* The Histogram Plot command now works for all data types (see right). It can also display a histogram for each channel individually.
+* The [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/plugins/commands/src/main/java/imagej/core/commands/app/ListShortcuts.java List Shortcuts command] has been ported to ImageJ2.
+* Fiji's Help &gt; Upload Sample Image command has been [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/plugins/commands/src/main/java/imagej/core/commands/upload/SampleImageUploader.java ported to ImageJ2].
+* The new and improved Command Finder was backported to ImageJ 1.x.
+
+=== Updater ===
+
+* The updater GUI can now sort rows (by selecting columns).
+* The updater now allows reinstating files that were previously marked as obsolete.
+* Since Windows Vista, Windows's security model for <code>C:\Program Files</code> is incompatible with the update mechanism of the updater, therefore strongly discourage that location, suggesting a folder on the Desktop instead.
+* The SSH uploader for the updater now uses the same JSch version as Fiji.
+* The updater plays together more nicely with Fiji's Bug Submitter.
+* Username and password fields receive the focus by default now.
+* Uploader now works with WebDAV.
+* Uploading with WebDAV, SSH and SFTP is now tested every night by the Jenkins server.
+* The command-line version of the updater knows more functions now: remove-update-site, upload-complete-site (allowing to maintain easily update sites built from a set of projects).
+* The command-line updater now can mark deleted files as obsolete via the <code>upload</code> subcommand.
+* Adding unit tests for the updater was simplified dramatically.
+* The updater learnt about the concept of shadowing update sites (i.e. update sites overriding files uploaded to other update sites).
+* All resource leaks (files that were opened but never closed) in the updater were fixed.
+* The updater can now auto-install uploaders for more than just the SSH protocol.
+* Lots of work-arounds allow the updater to work better on Windows.
+* The Swing UI of the updater adheres better to the Swing thread model now.
+* The message about new dependencies needing to be installed is nicer now.
+* A misleading dialog asking for a proxy password (when in fact the user entered an incorrect password) is now much clearer about what is required of the user.
+* A couple of other GUI mishaps in the updater were fixed, too.
+* The updater no longer asks whether it should be allowed to update itself but just does it instead.
+* The SSH uploader now works even with OS X servers.
+* The updater handles Micro-Manager's circular dependency between <code>MMJ_.jar</code> and <code>MMCore.jar</code> gracefully now.
+* The updater has special handling for DropBox-backed update sites.
+* The "Manage Update Sites" dialog in the advanced mode got a major overhaul: it now presents a list of pre-defined update sites (read from the [[List of update sites|list of update sites]]) for easy activation, and allows convenient initialization of a personal update site ([http://sites.imagej.net/ http://sites.imagej.net/]).
+
+=== MiniMaven ===
+
+* MiniMaven's output is much more helpful now.
+* MiniMaven has learnt the new subcommands: dependency-tree, jar and install.
+* MiniMaven now respects the <code>imagej.app.directory</code> property: it copies the artifact(s) and dependencies into that directory structure.
+* The manifests of JAR files produced by MiniMaven now include a <code>Class-Path</code> entry (meaning that you do not have to list the dependency JAR files in the class path explicitly, as long as they are in the same directory).
+* MiniMaven can pick up <code>javac</code> in more scenarios.
+* MiniMaven expands <code>${rootdir}</code> in the <code>imagej.app.directory</code> property correctly.
+
+=== Launcher ===
+
+* The [[Launcher|ImageJ launcher]] now is the default launcher for ImageJ 1.x, too.
+* A critical bug on OS X was fixed that prevented the launcher to start up in 32-bit mode when the checkbox "Force 32-bit mode" was checked in the Properties.
+* On Windows, the icon embedded in the launcher can be changed by the launcher itself.
+* The Windows version of the launcher has ImageJ2's icon embedded by default.
+* On Linux, the launcher can write a <code>.desktop</code> file (to attach the icon to the launcher).
+* The launcher allows Ubuntu's Unity window manager to keep the icon in the dock.
+* The launcher now looks specifically for Micro-Manager drivers in <code>ImageJ.app/mm/</code>.
+* When renaming the launcher to <code>debug</code> (or <code>debug.exe</code> on Windows), its output will get much more verbose, and it turns on ImageJ's debug mode (both 1.x and 2).
+* The ImageJ launcher can detect the location of the Java Runtime in more circumstances now.
+* Launcher can call MiniMaven now, using the <code>--mini-maven</code> option.
+* The launcher was split out into its [https://github.com/imagej/imagej-launcher/ own repository] to reflect the facts that it is out of beta for a long time now, and also that it is the ImageJ 1.x and Fiji launcher, too!
