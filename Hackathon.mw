@@ -53,7 +53,7 @@ ImageJ has benefitted from many hackathons over the years:
 | -
 |[[Fiji]]
 |- valign="top"
-| style="white-space: nowrap" | [[[[2010-03-14 - Hackathon at EMBL|2010 Mar 14 -<br>2010 Mar 27]]
+| style="white-space: nowrap" | [[2010-03-14 - Hackathon at EMBL|2010 Mar 14 -<br>2010 Mar 27]]
 |[http://www.embl.de/ EMBL]<br>Heidelberg, Germany
 |Many!
 |[[Fiji]]
@@ -70,12 +70,14 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 | style="white-space: nowrap" | 2012 Oct
 |[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
-|[https://github.com/hornm hornm], [https://github.com/dietzc dietzc], [https://github.com/tpietzsch tpietzsch], [https://github.com/dscho dscho]
+|[https://github.com/hornm hornm], [https://github.com/dietzc dietzc],
+[https://github.com/tpietzsch tpietzsch], [https://github.com/dscho dscho]
 |[http://knime.org/ KNIME]+[[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | 2013 Jan 22 -<br>2013 Jan 25
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|[https://github.com/thewtex thewtex], [https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/hinerm hinerm]
+|[https://github.com/thewtex thewtex], [https://github.com/ctrueden ctrueden],
+[https://github.com/dscho dscho], [https://github.com/hinerm hinerm]
 |[https://github.com/scifio/scifio-imageio SCIFIO ImageIO plugin]
 |- valign="top"
 | style="white-space: nowrap" | [[2013-04-22 - Trainable Segmentation Hackathon|2013 Apr 14 -<br>2013 Apr 18]]
@@ -85,7 +87,8 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 |2013 Apr 27 -<br>2013 May 3
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|[https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/tpietzsch tpietzsch], [https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho]
+|[https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/tpietzsch tpietzsch],
+[https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho]
 |[[ImgLib2]]
 |- valign="top"
 | style="white-space: nowrap" | 2013 Nov 14 -<br>2013 Nov 27
@@ -95,7 +98,8 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 | style="white-space: nowrap" | 2014 Mar 4 -<br>2014 Mar 13
 |[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
-|[https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/dietzc dietzc], [https://github.com/hornm hornm]
+|[https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho],
+[https://github.com/dietzc dietzc], [https://github.com/hornm hornm]
 |[https://github.com/imagej/imagej-ops ImageJ OPS]
 |- valign="top"
 | style="white-space: nowrap" | 2014 Mar 11 -<br>2014 Mar 13
@@ -110,7 +114,8 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 | style="white-space: nowrap" | 2014 Jul 7 -<br>2014 Jul 10
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|Mark Tsuchida, [https://github.com/derakon derakon], [https://github.com/dscho dscho], [https://github.com/stuyvenberg stuyvenberg], [https://github.com/ctrueden ctrueden], [https://github.com/hinerm hinerm]
+|Mark Tsuchida, [https://github.com/derakon derakon], [https://github.com/dscho dscho],
+[https://github.com/stuyvenberg stuyvenberg], [https://github.com/ctrueden ctrueden], [https://github.com/hinerm hinerm]
 |[https://micro-manager.org/ Micro-Manager] and [https://github.com/openspim OpenSPIM]
 |-
 |colspan="4" style="border-bottom: 1px solid gray"|
