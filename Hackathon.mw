@@ -38,47 +38,47 @@ ImageJ has benefitted from many hackathons over the years:
 | -
 |Neuroscience
 |- valign="top"
-|2008 Apr 21 -<br>2008 Apr 30
+| style="white-space: nowrap" | [[TaskList|2008 Apr 21 -<br>2008 Apr 30]]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|[[TaskList|A few!]]
+|A few!
 |[[Fiji]]
 |- valign="top"
-|2009 Mar 23 -<br>2010 Apr 03
+| style="white-space: nowrap" | [[2009-03-12 - Dresden Hackathon 2009|2009 Mar 23 -<br>2010 Apr 03]]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|[[2009-03-12 - Dresden Hackathon 2009|Some!]]
+|Some!
 |Segmentation
 |- valign="top"
-|2009
+| style="white-space: nowrap" | 2009
 |[https://www.ini.uzh.ch/ INI]<br>Zürich, Switzerland
 | -
 |[[Fiji]]
 |- valign="top"
-|2010 Mar 14 -<br>2010 Mar 27
+| style="white-space: nowrap" | [[[[2010-03-14 - Hackathon at EMBL|2010 Mar 14 -<br>2010 Mar 27]]
 |[http://www.embl.de/ EMBL]<br>Heidelberg, Germany
-|[[2010-03-14 - Hackathon at EMBL|Many!]]
+|Many!
 |[[Fiji]]
 |- valign="top"
-|2011 Jan 27 -<br>2011 Feb 13
+| style="white-space: nowrap" | [http://developer.imagej.net/hackathons/2011-madison 2011 Jan 27 -<br>2011 Feb 13]
 |[http://discovery.wisc.edu/ WID]<br>Madison, WI, USA
-|[http://developer.imagej.net/hackathons/2011-madison Many!]
+|Many!
 |Multidimensional visualization
 |- valign="top"
-|2011 Dec 9 -<br>2011 Dec 19
+| style="white-space: nowrap" | [http://developer.imagej.net/hackathons/2011-dresden 2011 Dec 9 -<br>2011 Dec 19]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|[http://developer.imagej.net/hackathons/2011-dresden Many!]
+|Many!
 |Interoperability
 |- valign="top"
-|2012 Oct
+| style="white-space: nowrap" | 2012 Oct
 |[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
 |[https://github.com/hornm hornm], [https://github.com/dietzc dietzc], [https://github.com/tpietzsch tpietzsch], [https://github.com/dscho dscho]
 |[http://knime.org/ KNIME]+[[Fiji]]
 |- valign="top"
-|2013 Jan 22 -<br>2013 Jan 25
+| style="white-space: nowrap" | 2013 Jan 22 -<br>2013 Jan 25
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
 |[https://github.com/thewtex thewtex], [https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/hinerm hinerm]
 |[https://github.com/scifio/scifio-imageio SCIFIO ImageIO plugin]
 |- valign="top"
-|2013 Apr 14 -<br>2013 Apr 18
+| style="white-space: nowrap" | [[2013-04-22 - Trainable Segmentation Hackathon|2013 Apr 14 -<br>2013 Apr 18]]
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
 |[https://github.com/iarganda iarganda], [https://github.com/dscho dscho], [https://github.com/ctrueden ctrueden]
 |[[Trainable Weka Segmentation]]
@@ -88,27 +88,27 @@ ImageJ has benefitted from many hackathons over the years:
 |[https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/tpietzsch tpietzsch], [https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho]
 |[[ImgLib2]]
 |- valign="top"
-|2013 Nov 14 -<br>2013 Nov 27
+| style="white-space: nowrap" | 2013 Nov 14 -<br>2013 Nov 27
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
 |[https://github.com/dietzc dietzc], [https://github.com/dscho dscho], [https://github.com/ctrueden ctrueden]
 |[http://knime.org/ KNIME]+[[ImageJ]]
 |- valign="top"
-|2014 Mar 4 -<br>2014 Mar 13
+| style="white-space: nowrap" | 2014 Mar 4 -<br>2014 Mar 13
 |[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
 |[https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/dietzc dietzc], [https://github.com/hornm hornm]
 |[https://github.com/imagej/imagej-ops ImageJ OPS]
 |- valign="top"
-|2014 Mar 11 -<br>2014 Mar 13
+| style="white-space: nowrap" | 2014 Mar 11 -<br>2014 Mar 13
 |[https://www.facebook.com/heimathafenWiesbaden Heimathafen]<br>Wiesbaden, Germany
 |[https://github.com/joshmoore joshmoore], [https://github.com/ctrueden ctrueden]
 |[https://github.com/imagej/imagej-omero ImageJ-OMERO]
 |- valign="top"
-|2014 Mar 20 -<br>2014 Mar 21
+| style="white-space: nowrap" | 2014 Mar 20 -<br>2014 Mar 21
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
 |[https://github.com/jburel jburel], [https://github.com/pwalczysko pwalczysko], [https://github.com/ctrueden ctrueden]
 |[https://github.com/imagej/imagej-omero ImageJ-OMERO]
 |- valign="top"
-|2014 Jul 7 -<br>2014 Jul 10
+| style="white-space: nowrap" | 2014 Jul 7 -<br>2014 Jul 10
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
 |Mark Tsuchida, [https://github.com/derakon derakon], [https://github.com/dscho dscho], [https://github.com/stuyvenberg stuyvenberg], [https://github.com/ctrueden ctrueden], [https://github.com/hinerm hinerm]
 |[https://micro-manager.org/ Micro-Manager] and [https://github.com/openspim OpenSPIM]
