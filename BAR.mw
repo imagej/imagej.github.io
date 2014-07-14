@@ -19,17 +19,10 @@ Alternatively, if you prefer to manually install and update the collection, you 
 
 == Description ==
 BAR files are accessible through a dedicated top-level menu subdivided in task-oriented categories. Some of the routines have a dedicated documentation page, others feature built-in help while a handful were deemed too simple to require dedicated instructions. Nevertheless, all files are described in the ''Details'' panel of the Fiji Updater and contain useful commentary at the top of the source code file.
-
-<div id="OpeningBAR" style="float:center;
-        border: 1px solid #ccc;
-        padding: 5px !important;
-        text-align:center;
-        margin-top: 1em;
-        margin-bottom: 2em;
-        background-color: #ffefbe;
-        {{border-radius|.75em}}{{box-shadow}}">
-'''Tip:''' You can open any BAR script by holding {{key press|Shift}} while selecting its name from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu. For pre-compiled java plugins, the source code is available through the <span style="border-bottom:1px dotted #ccc;">About BAR...</span> command.</div>
-
+{{Tip
+| id = OpeningBAR
+| tip = You can open any BAR script by holding {{key press|Shift}} while selecting its name from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu. For pre-compiled java plugins, the source code is available through the <span style="border-bottom:1px dotted #ccc;">About BAR...</span> command.
+}}
 == List of BARs ==
 [[ File:BARsnapshot.png|right|Overview of BAR (v1.0.0)]]
 ;[https://github.com/tferr/Scripts/blob/master/README.md#image-annotation Annotation]<span id="Annotation"></span>
