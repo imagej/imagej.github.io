@@ -165,3 +165,6 @@ The following is a more detailed list of changes for this release:
 * The ImageJ launcher can detect the location of the Java Runtime in more circumstances now.
 * Launcher can call MiniMaven now, using the <code>--mini-maven</code> option.
 * The launcher was split out into its [https://github.com/imagej/imagej-launcher/ own repository] to reflect the facts that it is out of beta for a long time now, and also that it is the ImageJ 1.x and Fiji launcher, too!
+
+[[Category:News]]
+[[Category:ImageJ2]]
