@@ -20,7 +20,6 @@ Alternatively, if you prefer to manually install and update the collection, you 
 == Description ==
 BAR files are accessible through a dedicated top-level menu subdivided in task-oriented categories. Some of the routines have a dedicated documentation page, others feature built-in help while a handful were deemed too simple to require dedicated instructions. Nevertheless, all files are described in the ''Details'' panel of the Fiji Updater and contain useful commentary at the top of the source code file.
 
-
 <div id="OpeningBAR" style="float:center;
         border: 1px solid #ccc;
         padding: 5px !important;
@@ -29,51 +28,49 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
         margin-bottom: 2em;
         background-color: #ffefbe;
         {{border-radius|.75em}}{{box-shadow}}">
-'''Tip:''' You can open any BAR script by holding {{key press|Shift}} while selecting its name from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu. For pre-compiled java plugins, the source code is available through the <span style="border-bottom:1px dotted #ccc;">About BAR...</span> command.</div> 
+'''Tip:''' You can open any BAR script by holding {{key press|Shift}} while selecting its name from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu. For pre-compiled java plugins, the source code is available through the <span style="border-bottom:1px dotted #ccc;">About BAR...</span> command.</div>
 
-
-[[ File:BARsnapshot.png|right|Overview of BAR (v1.0.0)]]
 == List of BARs ==
+[[ File:BARsnapshot.png|right|Overview of BAR (v1.0.0)]]
 ;[https://github.com/tferr/Scripts/blob/master/README.md#image-annotation Annotation]<span id="Annotation"></span>
-#[https://github.com/tferr/Scripts/blob/master/Annotation/README.md#roi-color-coder ROI Color Coder]
-
+:[https://github.com/tferr/Scripts/blob/master/Annotation/README.md#roi-color-coder ROI Color Coder]
 
 ;[https://github.com/tferr/Scripts/blob/master/README.md#data-analysis Data Analysis]<span id="Data_Analysis"></span>
-#[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#distribution-plotter Distribution Plotter]
-#[[Find Peaks]]
-#[[Sholl_Analysis#Complementary_Tools|Fit Polynomial]]
-#[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#plot-results Plot Results]
-
+:[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#distribution-plotter Distribution Plotter]
+:[[Find Peaks]]
+:[[Sholl_Analysis#Complementary_Tools|Fit Polynomial]]
+:[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#plot-results Plot Results]
 
 ;[https://github.com/tferr/Scripts/blob/master/README.md#neuronal-morphometry Morphometry]
-#[[Strahler Analysis]]<span id="Morphometry"></span>
-
+:[[Strahler Analysis]]<span id="Morphometry"></span>
 
 ;[https://github.com/tferr/Scripts/blob/master/README.md#image-segmentation Segmentation]<span id="Segmentation"></span>
-#[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#shen-castan-edge-detector Shen-Castan Edge Detector]
-#[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#apply-threshold-to-roi Apply Threshold To ROI]
-#[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#clear-thresholded-pixels Clear Thresholded Pixels]
-#[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#threshold-from-background Threshold From Background]
-#[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#wipe-background Wipe Background]
+:[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#shen-castan-edge-detector Shen-Castan Edge Detector]
+:[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#apply-threshold-to-roi Apply Threshold To ROI]
+:[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#clear-thresholded-pixels Clear Thresholded Pixels]
+:[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#threshold-from-background Threshold From Background]
+:[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#wipe-background Wipe Background]
 
+;[https://github.com/tferr/Scripts/blob/master/README.md#snippets Snippets]<span id="Snippets"></span>
+:This submenu lists [[#Snippets|generic and reusable]] scripts to be recycled at will in personalized workflows. Any script or macro file stored in the Snippets folder with an underscore "_" in the filename will be listed here. 
 
 ;[https://github.com/tferr/Scripts/blob/master/README.md#tools-and-toolsets Tools and Toolsets]<span id="Tools"></span>
-#[https://github.com/tferr/Scripts/blob/master/Tools/README.md#calibration-menu Calibration Menu]
-#[https://github.com/tferr/Scripts/blob/master/Tools/README.md#roi-manager-tools ROI Manager Tools]
-#[https://github.com/tferr/Scripts/blob/master/Tools/README.md#segment-profile-tool Segment Profile]
-#[https://github.com/tferr/Scripts/blob/master/Tools/README.md#shortcuts-menu Shortcuts Menu]
-#[https://github.com/tferr/Scripts/blob/master/Tools/README.md#toolset-creator Toolset Creator]
+:[https://github.com/tferr/Scripts/blob/master/Tools/README.md#calibration-menu Calibration Menu]
+:[https://github.com/tferr/Scripts/blob/master/Tools/README.md#roi-manager-tools ROI Manager Tools]
+:[https://github.com/tferr/Scripts/blob/master/Tools/README.md#segment-profile-tool Segment Profile]
+:[https://github.com/tferr/Scripts/blob/master/Tools/README.md#shortcuts-menu Shortcuts Menu]
+:[https://github.com/tferr/Scripts/blob/master/Tools/README.md#toolset-creator Toolset Creator]
 
-== Calling BARs ==
-The scripts an plugins in BAR become more useful when incorporated into other routines. For example: the command <span style="border-bottom:1px dotted #ccc;">BAR▷ Segmentation▷ Clear Thresholded Pixels</span> sets to zero thresholded pixels inside the active area ROI and becomes handy when images have to be manually segmented. However shuttling between the image canvas and the <span style="border-bottom:1px dotted #ccc;">BAR▷ </span> menu can soon become cumbersome. So why not evoke the script in a more expedite way? Here are two alternatives:
+== Scripting BARs ==
+Although BARs can be used as standalone commands (launched e.g., by pressing {{key press|L}}, the [[Using_the_Command_Launcher|Command Launcher]] shortcut), the scripts an plugins in BAR become more useful when incorporated into other routines. Indeed, they are designed to function as snippets.
 
-==== Using Keyboard Shortcuts ====
-You can use <span style="border-bottom:1px dotted #ccc;">Plugins▷ Shortcuts▷ Create Shortcut...</span> to assign hotkeys (e.g., keyboard key that you do not use frequently such as {{key press|0}}  or {{key press|1}}) to any script registered in the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu. Alternatively, you could use <span style="border-bottom:1px dotted #ccc;">BAR▷ Tool Installers▷ Install Shortcuts Menu</span>, that uses a similar approach to register frequently used commands in the ImageJ main window.
+=== Keyboard Shortcuts ===
+{{Scripting}}You can use <span style="border-bottom:1px dotted #ccc;">Plugins▷ Shortcuts▷ Create Shortcut...</span> to assign hotkeys (e.g., keyboard key that you do not use frequently such as {{key press|0}}  or {{key press|F7}}) to any script registered in the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu. Alternatively, you could use <span style="border-bottom:1px dotted #ccc;">BAR▷ Tool Installers▷ Install Shortcuts Menu</span>, that uses a similar approach to register frequently used commands in the ImageJ main window.
 
-==== Using Other Scripts ====
-What about installing <span style="border-bottom:1px dotted #ccc;">Clear Thresholded Pixels</span> in the image's contextual (popup) menu, so that it is always accessible in the image canvas upon a right-click? As detailed in the [http://imagej.nih.gov/ij/docs/guide/146-21.html#sec:ContextualMenu ImageJ User Guide], the contextual menu is controlled by a macro called ''Popup Menu'' that gets loaded at startup. To modify it:
-# {{key press|Shift}}-click on the ">>" ''More Tools'' drop down menu, and choose ''Startup Macros''. This will open the respective file in the [[Script Editor]].
-# Modify the ''Popup Menu'' macro accordingly (create it, if not present).
+=== StartUpMacros ===
+Take the command <span style="border-bottom:1px dotted #ccc;">BAR▷ Segmentation▷ Clear Thresholded Pixels</span> that sets to zero thresholded pixels inside the active area ROI. It is particularly handy when images have to be manually segmented. However shuttling between the image canvas and the <span style="border-bottom:1px dotted #ccc;">BAR▷ </span> menu can soon become cumbersome.
+
+What about installing <span style="border-bottom:1px dotted #ccc;">Clear Thresholded Pixels</span> in the image's contextual (popup) menu, so that it is always accessible in the image canvas upon a right-click? As detailed in the [http://imagej.nih.gov/ij/docs/guide/146-21.html#sec:ContextualMenu ImageJ User Guide], the contextual menu is controlled by a macro called ''Popup Menu'' that gets loaded at startup. To modify it: {{key press|Shift}}-click on the ">>" ''More Tools'' drop down menu, and choose ''Startup Macros''. This will open the respective file in the [[Script Editor]]. Modify the ''Popup Menu'' macro accordingly (create it, if not present):
 <source lang="java">
 // Specify list of commands
 var myCmds = newArray("Duplicate...", "-", "Clear Thresholded Pixels");  
@@ -85,15 +82,128 @@ macro "Popup Menu" {
   run(cmd);
  }
 </source>
-'''N.B.:''' In Fiji, you may need to save the file in the macros folder as ''StartupMacros.fiji.ijm''
+'''N.B.:''' In Fiji, you may need to save the file in the macros folder as ''StartupMacros.fiji.ijm''. Also, note that any toolset loaded via the ">>" ''More Tools'' drop down menu can define its own contextual menu.
+
+=== Snippets ===
+BAR contains a [https://github.com/tferr/Scripts/tree/master/Snippets growing depository] of reusable scripts to be used as scripting templates. Below is an example, taken from [https://github.com/tferr/Scripts/blob/master/Snippets/Process_Folder.ijm Process_Folder.ijm],  a more customizable and modular alternative to the <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span>  built-in command.
+This snippet, an ImageJ macro that applies a [[How_to_apply_a_common_operation_to_a_complete_directory|common operation to a directory]], is composed of four functions:
+#<code>expectedImage()</code>: Determines wich image types should be processed
+#<code>getOutputDirectory()</code>: Sets a destination folder to save processed images
+#<code>myRoutines()</code>: Container to hold the image processing routines
+#<code>processImage()</code>: Applies <code>myRoutines()</code> to each individual image
+ 
+
+Because all the tasks required to iterate through the files are handled by separated functions, only the <code>myRoutines()</code> function needs to be edited
+e.g., with code generated by the Macro Recorder. It can also call macros and scripts saved elsewhere. Example:
+<source lang="java">
+function myRoutines() {
+    runMacro("/Path/to/Coolest/Macro.ijm");
+    eval("python", "/Path/to/Coolest/Script.py");
+}
+</source>
+Here is how the assembled snippet [https://github.com/tferr/Scripts/blob/master/Snippets/Process_Folder.ijm?raw=true looks like]: 
+<source lang="java">
+// Define which images should be processed. Only file extensions listed in this
+// array will be accepted as valid by expectedImage(). Note that certain files
+// may not be handled by IJ directly but by other plugins, such as Bio-Formats
+var extensions = newArray(".tif", ".stk", ".oib");
+
+// Define input directory
+inputDir = getDirectory("Select a source directory");
+
+// Define output directory
+outputDir = getOutputDirectory(inputDir);
+
+// Iterate through inputDir, ignore files with non-specified extensions and save
+// a copy of processed images in outputDir
+processImage(inputDir, outputDir);
+
+showMessage("All done!");
 
 
+/* This function defines all the image manipulation routines. */
+function myRoutines() {
+	// <Your code here>
+}
+
+/*
+ * This function retrieves the full path to a "Processed" folder placed at the
+ * same location of <input_dir>. For safety, the macro is aborted if <input_dir>
+ * is not accessible or if the directory cannot be created, e.g., due to lack of
+ * appropriate credentials. It does nothing if such a directory already exists.
+ */
+function getOutputDirectory(input_dir) {
+	if (!File.isDirectory(input_dir)) {
+		exit("Macro aborted: The directory\n'"+ input_dir +"'\nwas not found.");
+	}
+	if (endsWith(input_dir, File.separator)) {
+		separatorPosition = lengthOf(input_dir);
+		input_dir = substring(input_dir, 0, separatorPosition-1);
+	}
+	new_dir = input_dir + "_Processed" + File.separator;
+	if (!File.isDirectory(new_dir)) {
+		File.makeDirectory(new_dir);
+		if (!File.isDirectory(new_dir))
+			exit("Macro aborted:\n" + new_dir + "\ncould not be created.");
+	}
+	return new_dir;
+}
+
+/*
+ * This function applies <myRoutines()> to individual files filtered by
+ * <expectedImage()>. It takes 2 arguments: <open_dir>, the full path of input
+ * directory and <save_dir>, the directory where a copy of the processed images
+ * will be saved. It does nothing if <open_dir> does not exist.
+ */
+function processImage(open_dir, save_dir) {
+
+	// Do not display images during macro execution
+	setBatchMode(true);
+
+	// Get the array containing the names of input files and loop through it.
+	// We will not perform safety checks to verify if open_dir and save_dir
+	// exist since that task was already performed by getOutputDirectory()
+	files = getFileList(open_dir);
+	for (i=0; i<files.length; i++) {
+		file_path = files[i];
+		if (expectedImage(file_path)) {
+			print(i+1, "Analyzing "+ file_path +"...");
+			open(file_path);
+
+			// Apply processing steps
+			myRoutines();
+
+			output_path = save_dir + "Treated_" + getTitle();
+			saveAs("tiff", output_path);
+			close();
+		} else {
+			print(i+1, "Skipping "+ file_path +"... not the right file type");
+		}
+	}
+
+}
+
+/*
+ * This function returns true if the file extension of the argument <filename>
+ * is present in the global variable <extensions> array. Returns false otherwise.
+ */
+function expectedImage(filename) {
+	expected = false;
+	for (i=0; i<extensions.length; i++) {
+		if (endsWith(toLowerCase(filename), extensions[i])) {
+			expected = true;
+			break;
+		}
+	}
+	return expected;
+}
+</source>
 == FAQ ==
 ;What is the rationale behind BAR?
 :The motivation behind bar is quite simple: To collect snippets of code that can be incorporated into any workflow. So rather than performing fully fledged procedures, BARs tend to produce single tasks. The advantages are two-fold: 1) Scripts are easier to understand and maintain and 2) they can be used to complement any other ImageJ add-on, let it be the simplest macro or the most sophisticated plugin.
 
 ;Will I find BAR useful?
-:[https://github.com/tferr/Scripts#citations Probably]. But it is likely that you will need to delve a bit into the [[#Calling_BARs|BAR philosophy]].
+:[https://github.com/tferr/Scripts#citations Probably]. But it is likely that you will need to delve a bit into the [[#Scripting_BARs|BAR philosophy]].
 
 ;Can I contribute to BAR?
 : Yes, please do! If you have some suggestions on how to improve it, do [https://github.com/tferr/Scripts#help let us know].
@@ -104,7 +214,6 @@ macro "Popup Menu" {
 ;How do I uninstall BAR?
 :If you are using Fiji: run the [[Fiji Updater|Updater]]. Choose ''Advance Mode'' then ''Manage update sites''. Deactivate the ''BAR'' checkbox in the alphabetically-sorted list of update sites. Press ''OK'', then ''Apply changes''. All BAR files will be deleted. Note that you can install and uninstall BAR as you see fit. See [[How to follow a 3rd party update site]] for more details.
 :If you have a installed BAR manually and cannot remember where files were placed have a look at this [https://github.com/tferr/Scripts/blob/master/BAR/README.md#bar-menu installation list].
-
 
 == License ==
 These scripts are free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
