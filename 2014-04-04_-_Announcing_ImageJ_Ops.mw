@@ -1,6 +1,6 @@
 Today, the ImageJ and KNIME teams are pleased to announce [https://github.com/imagej/imagej-ops ImageJ OPS]: a framework for reusable image processing operations. This library is the direct result of an extremely successful hackathon hosted by Michael Berthold's team at the University of Konstanz, Germany.
 
-[[Image:Konstanz-hackathon.jpg|320px|right|Happy hackers: 502 commits in five days!]]
+[[Image:Konstanz-hackathon.jpg|320px|thumb|right|Happy hackers: 502 commits in five days!]]
 == Motivation ==
 
 The ImageJ2 vision is to extend Java's mantra of &quot;write once, run anywhere&quot; to image processing algorithms. With that goal at its heart, ImageJ2 introduces extensible [https://github.com/scijava/scijava-common plugin] and [https://github.com/imagej/imagej-tutorials/blob/master/working-with-modules/src/main/java/WorkingWithModules.java module] frameworks which make ImageJ commands richer, more powerful and easier to share across applications. Already, these modules are accessible from [http://cellprofiler.org/ CellProfiler], [http://tech.knime.org/community/image-processing KNIME], [https://github.com/imagej/imagej-omero OMERO] and [http://www2.informatik.uni-halle.de/agprbio/alida Alida].
