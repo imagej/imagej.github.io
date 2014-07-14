@@ -334,10 +334,51 @@ Notes:
             background-color: #ffefbe;
             {{border-radius|.75em}}{{box-shadow}}">
 '''Tip:''' You can shuttle between the ''[[#Multiple Samples and Noise Reduction|Bitmap]]'' and ''[[#Importing|Tabular]]'' prompts by {{key press|Alt}}-clicking their Cancel button. The shortcut is easy to remember: {{key press|Alt}} is always the trigger that changes the type of data to be analyzed.</div>
+== Complementary Tools ==
+<span id="Extended_Fitting"></span>[[ File:AnimatedPolyFit.gif|frame|Sampled data from the ddaC cell (<span style="border-bottom:1px dotted #ccc;">File▷ Open Samples▷ ddaC Neuron</span>) being fitted to polynomials of varying degree using a complementary [[BAR]] script.]]
 
+''Sholl Analysis'' tries to be as flexible as possible by providing several options for normalization and curve fitting. However, it cannot offer exhaustive curve fitting options for two main reasons: 1) Extensive options would clutter the plugin's interface and 2) Determining ''best fit models'' requires reasonable choices that are not amenable to full automation. For these reasons,  complementary tools for curve fitting can be installed as needed using [[BAR]] by subscribing to its [[BAR#Installation|update site]]. As of version 3.4.2, several [[BAR]] commands complement ''Sholl Analysis''. These include:
 
+* '''[[Find Peaks]]:''' Retrieves local maxima under several filtering options such as peak amplitude, peak height and peak width. Can be used to retrieve secondary sites of branch density
+* '''[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#fit-polynomial Fit Polynomial]:''' Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions. Requires the [http://commons.apache.org/proper/commons-math/ apache commons math library], distributed with Fiji. The script provides [[#Non-Fiji_users|Non-Fiji users]] with direct download links that install all required dependencies
+* '''[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#plot-results Plot Results]:''' Whole-purpose routine that plots data from imported spreadsheets. 
+
+To install [[BAR]], run <span style="border-bottom:1px dotted #ccc;">Help▷ Update...</span> Choose ''Advance Mode'' then ''Manage update sites''. Activate the ''BAR'' checkbox in the list of update sites. See the [[BAR#Installation|BAR documentation page]] for more details.
+
+== Pre-processing ==
+This section discusses some aspects that should be taken into account when segmenting neuronal arbors to be processed by ''Sholl Analysis''. Since  ''image segmentation'' (i.e., the partitioning of images into analyzable parts) is vulnerable to noise and background fluorescence, it is not possible to generalize universal routines that efficiently binarize grayscale images. This means that any procedure  that tries to appropriately describe the original fluorescence image with a binary mask must be tailored to the characteristics of individual datasets. Several routines listed here as distributed through the [[BAR]] [[List_of_update_sites|update site]] (cf. [[#Complementary_Tools|Complementary Tools]]).
+<span id="Noise"></span>
+;Noise
+:Noise can be mitigated through the usage of processing filters, specially edge-preserving ones. Examples:
+:* [[Rolling_Ball_Background_Subtraction|Rolling Ball]] or "Top hat" filters, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Subtract Background...</span>
+:* Median Filtering (2D/3D), e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Filters▷</span>, <span style="border-bottom:1px dotted #ccc;">Plugins▷ 3D▷</span>
+:* [[Anisotropic_Diffusion_2D|Anisotropic Diffusion]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Process▷ Anisotropic Diffusion 2D</span>
+:* Sobel Edge Detection, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Find Edges</span>
+:* Shen-Castan Edge Detector ([[BAR]] [[List_of_update_sites|update site]]), <span style="border-bottom:1px dotted #ccc;">BAR▷ Segmentation▷</span>
+:* Frequency filters, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ FFT▷ Bandpass Filter...</span> 
+<span id="Uneven_Illumination"></span>
+;Uneven Illumination
+:Uneven illumination problems, typically associated with [http://imagejdocu.tudor.lu/doku.php?id=howto:working:how_to_correct_background_illumination_in_brightfield_microscopy wide field microscopy], do occur in confocal microscopy when deep layers of the tissue are not captured as bright as superficial ones. This signal attenuation along the Z-axis will generate a shaded gradient across the stack that [[#Automated_Segmentation|histogram-based segmentation]] will need to take into account. While these problems are better tackled during acquisition (e.g., using laser ramping), it is possible to mitigate this effect using histogram-normalization techniques. Examples:
+:*[[Bleach Correction]], <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷</span>
+:*[http://imagejdocu.tudor.lu/doku.php?id=plugin:stacks:attenuation_correction:start Attenuation correction]
+<span id="Automated_Segmentation"></span>
+;Automated Segmentation
+:It is possible to adopt more sophisticated [[:Category:Segmentation|segmentation algorithms]] when histogram-based [[Auto_Threshold|global thresholding methods]] do not yield satisfactory results. Examples:
+:* [[Auto Local Threshold|Local Threshold]], <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷</span>
+:* [[RATS:_Robust_Automatic_Threshold_Selection|Robust Automatic Threshold Selection]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
+:* [[Level_Sets|Level Sets]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
+:* [[Morphological Segmentation]] (IJPB-plugins [[List_of_update_sites|update site]]), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
+:* [[Squassh]], split-Bregman Image Segmentation (Segmentation and Quantification of Sub-cellular Shapes, MOSAIC ToolSuite [[List_of_update_sites|update site]]), , <span style="border-bottom:1px dotted #ccc;">Plugins▷ Mosaic▷ Segmentation▷</span>
+<span id="Semi-Automated_Segmentation"></span>
+;Semi-Automated Segmentation
+:Object detection and image segmentation in images with poor signal-to-noise will likely require decisions taken by a human operator. This is frequently done using hand-crafted workflows using either ImageJ's built-in tools or external add ons. Examples:
+:* [[Lasso selection|Blow/Lasso Tool]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
+:* Scripts from the [[BAR]] [[List_of_update_sites|update site]], <span style="border-bottom:1px dotted #ccc;">BAR▷ [[BAR#Segmentation|Segmentation]]▷</span>
+{{Tip
+|tip = For additional image processing tools have a look at the growing list of  [[List_of_update_sites|update sites]]. For more information on image processing have a look at the Fiji [[Cookbook]], [[:Category:Tutorials|tutorials]], the [http://imagejdocu.tudor.lu ImageJ Information and Documentation Portal] and the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide].
+}}
 == Batch Processing ==
-It is fairly simple to [[Scripting Help|automate]] the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji ([[Introduction into Macro Programming|ImageJ Macro Language]], [[Beanshell_Scripting|Beanshell]], [[Javascript_Scripting|Javascript]], [[JRuby_Scripting|JRuby]], [[Jython_Scripting|Jython]], [[Clojure_Scripting|Clojure]], ...). This section provides some examples.
+{{Scripting}}It is fairly simple to [[Scripting Help|automate]] the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji ([[Introduction into Macro Programming|ImageJ Macro Language]], [[Beanshell_Scripting|Beanshell]], [[Javascript_Scripting|Javascript]], [[JRuby_Scripting|JRuby]], [[Jython_Scripting|Jython]], [[Clojure_Scripting|Clojure]], ...). This section provides some examples.
 
 === Batch Analysis of Bitmap Images ===
 Any macro or script must allow the Sholl Analysis plugin to access the ROI marking the center of analysis. One could instruct ImageJ to read the coordinates of pre-existing ROIs from a text file, store a list of line selections in the ROI Manager, or write a morphology-based routine that detects the center of the arbor. However, marking the center of analysis is probably something that you will want to do manually. Here is a workflow:
@@ -435,35 +476,6 @@ function closeResults() {
 		{ selectWindow("Results"); run("Close"); }
 }
 </source>
-== Pre-processing ==
-As mentioned, the quality of the analysis relies on how the arbor was segmented. Unfortunately, it is not possible to generalize universal routines that efficiently binarise grayscale images and any procedure must be tailored to the characteristics of each individual dataset. However, noise in imagery from fluorescence microscopy can be mitigated through the usage of processing filters, specially edge-preserving ones:
-* Median Filtering (2D/3D), e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Filters▷</span>, <span style="border-bottom:1px dotted #ccc;">Plugins▷ 3D▷</span>
-* [[Anisotropic_Diffusion_2D|Anisotropic Diffusion]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Process▷ Anisotropic Diffusion 2D</span>
-* Sobel Edge Detection, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Find Edges</span>
-* Frequency filters, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ FFT▷ Bandpass Filter...</span> 
-* [[Rolling_Ball_Background_Subtraction|Rolling Ball]] or "Top hat" filters, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Subtract Background...</span>
-
-
-On the other hand, it is possible to adopt more sophisticated [[:Category:Segmentation|segmentation algorithms]] when [[Auto_Threshold|global thresholding methods]] do not yield satisfactory results:
-* [[Auto Local Threshold|Local Threshold]], <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷</span>
-* [[RATS:_Robust_Automatic_Threshold_Selection|Robust Automatic Threshold Selection]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
-* [[Level_Sets|Level Sets]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
-
-Semi-automated segmentation can also be improved through the usage of simple routines that automate frequently used commands such as the ones provided by [[BAR]] and its [[BAR#Installation|update site]]. As of version 3.4.2, several BAR scripts are particularly suitable for processing workflows preceding bitmat Sholl. For more information have a look at the [[BAR#Segmentation|Segmentation]]  and  [[BAR#Calling_BARs|Calling BARs]]  sections of the [[BAR|BAR documentation page]].
-
-For generalized information about image processing have a look at the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide], the Fiji [[Cookbook]], Fiji [[:Category:Tutorials|tutorials]], the [http://imagejdocu.tudor.lu ImageJ Information and Documentation Portal], and remaining documentation resources (<span style="border-bottom:1px dotted #ccc;">Help▷ Documentation...</span>).
-
-== Complementary Tools ==
-<span id="Extended_Fitting"></span>[[ File:AnimatedPolyFit.gif|frame|Sampled data from the ddaC cell (<span style="border-bottom:1px dotted #ccc;">File▷ Open Samples▷ ddaC Neuron</span>) being fitted to polynomials of varying degree using a complementary [[BAR]] script.]]
-
-''Sholl Analysis'' tries to be as flexible as possible by providing several options for normalization and curve fitting. However, it cannot offer exhaustive curve fitting options for two main reasons: 1) Extensive options would clutter the plugin's interface and 2) Determining ''best fit models'' requires reasonable choices that are not amenable to full automation. For these reasons,  complementary tools for curve fitting can be installed as needed using [[BAR]] by subscribing to its [[BAR#Installation|update site]]. As of version 3.4.2, several BAR commands complement ''Sholl Analysis''. These include:
-
-* '''[[Find Peaks]]:''' Retrieves local maxima under several filtering options such as peak amplitude, peak height and peak width. Can be used to retrieve secondary sites of branch density
-* '''[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#fit-polynomial Fit Polynomial]:''' Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions. Requires the [http://commons.apache.org/proper/commons-math/ apache commons math library], distributed with Fiji. The script provides [[#Non-Fiji_users|Non-Fiji users]] with direct download links that install all required dependencies
-* '''[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#plot-results Plot Results]:''' Whole-purpose routine that plots data from imported spreadsheets. 
-
-To install [[BAR]], run <span style="border-bottom:1px dotted #ccc;">Help▷ Update...</span> Choose ''Advance Mode'' then ''Manage update sites''. Activate the ''BAR'' checkbox in the list of update sites. See the [[BAR#Installation|BAR documentation page]] for more details.
-
 == Auxiliary Commands ==
 ;File▷ Open Samples▷ ddaC Neuron
 :Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run <span style="border-bottom:1px dotted #ccc;">Image▷ Show Info...</span> (shortcut: {{key press|I}} ) to know more about this cell type.
