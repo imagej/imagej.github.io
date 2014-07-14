@@ -37,7 +37,7 @@ If you look for help editing this Wiki, please look [http://www.mediawiki.org/wi
 | {{key|Alt}}+{{key|S}}
 |-
 | style="text-align: right" | '''Show changes'''
-| {{key|Alt}+{{key|V}} (<u>not</u> {{key|C}}!)
+| {{key|Alt}}+{{key|V}} (<u>not</u> {{key|C}}!)
 |-
 | style="text-align: right" | '''Move keyboard focus'''<br/>(e.g., main text to summary)
 | {{key|Tab}}<br/>{{key|Shift}}+{{key|Tab}}
