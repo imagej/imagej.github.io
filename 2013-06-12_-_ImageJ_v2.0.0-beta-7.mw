@@ -12,11 +12,11 @@ Development of this release of ImageJ focused on better support for N-dimensiona
 
 === Unified Open &amp; Save commands ===
 
-[[File:Scifio-logo-800.png|250px|right|SCIFIO: an extensible image I/O library]]
+[[Image:Scifio-logo-800.png|250px|right|thumb|SCIFIO: an extensible image I/O library]]
 
 One common source of confusion in ImageJ 1.x is the plethora of ways that exist to import data. Using the "Open..." command in the File menu can result in different behavior than calling a specific command such as the [[Bio-Formats|Bio-Formats Importer]]. One of ImageJ2's major goals has been to [http://trac.imagej.net/ticket/9 improve and unify the behavior of I/O]. With ImageJ2, any image opened via the "Open..." command is now handled the same: an appropriate ImageJ I/O plugin is automatically selected to handle the file(s). Anyone can write a new I/O plugin to extend ImageJ2's file handling capabilities without needing to modify the ImageJ2 core. Similarly, the File &gt; Save command invokes the appropriate I/O plugin to save data in the appropriate and/or chosen format, and ImageJ2 can be easily extended with additional export routines by writing a new I/O plugin.
 
-[[File:Scifio-cell-img.png|302px|right|'''A SCIFIO cell image in action.''' Here we see a "cell image" which loads image planes on demand via the SCIFIO library. Like ImageJ 1.x, the title bar shows a (V) to indicate the image is a "virtual" one. The total dataset size is 215MB, but ImageJ is using only 30MB of memory in total.]]
+[[Image:Scifio-cell-img.png|302px|right|thumb|'''A SCIFIO cell image in action.''' Here we see a "cell image" which loads image planes on demand via the SCIFIO library. Like ImageJ 1.x, the title bar shows a (V) to indicate the image is a "virtual" one. The total dataset size is 215MB, but ImageJ is using only 30MB of memory in total.]]
 
 While we are still [http://trac.imagej.net/ticket/1920 polishing some details], the extensible I/O architecture is fundamentally in place, with image I/O driven by the [[SCIFIO]] library. SCIFIO is a refactoring of [[Bio-Formats]], providing the next generation of image I/O for scientific images (beyond just the life sciences). Along with ImageJ 2.0.0-beta-7 comes a beta release of SCIFIO, version 0.2.0. The API is still subject to change until the SCIFIO 1.0.0 release, but it is now in use by ImageJ2.
 
@@ -28,7 +28,7 @@ In ImageJ 1.x, large datasets with very many image planes (more than can fit in 
 
 For the 2.0.0-beta-7 release, ImageJ automatically decides, based on the size of the input data and quantity of available memory, whether to use a cell image or not. In a future release, this will be more configurable, with an advanced option available when opening the dataset—i.e., you will be able to set an option like "Use virtual stack" to either Yes, No or Auto (the default).
 
-[[File:Ij2-beta-7-threshold.png|373px|left|'''ImageJ2 Threshold dialog.''' ImageJ2 treats thresholds like any other ROI. You can operate on pixels within the threshold, or perform processing using any ImgLib2-based code. Auto-thresholding methods are a type of ImageJ plugin, which makes them extensible without needing to modify the core ImageJ source code.]]
+[[Image:Ij2-beta-7-threshold.png|373px|left|thumb|'''ImageJ2 Threshold dialog.''' ImageJ2 treats thresholds like any other ROI. You can operate on pixels within the threshold, or perform processing using any ImgLib2-based code. Auto-thresholding methods are a type of ImageJ plugin, which makes them extensible without needing to modify the core ImageJ source code.]]
 
 For backwards compatibility, the legacy layer passes these cell images to ImageJ 1.x commands as virtual stacks, allowing the current plane to be modified. This behavior is consistent with ImageJ 1.x itself, which allows transient modification of virtual image planes, which are lost as soon as the active image plane changes. We are enhancing ImageJ2's cell images to support full read/write capabilities: when in read/write mode, image planes flushed from memory will be saved to a temporary cache on disk, so that modifications are preserved when those planes are read back in. This feature will make complex image processing of huge datasets much more feasible, since image processing pipelines will no longer need to be concerned with whether the input data is "virtual" or not.
 
@@ -58,7 +58,7 @@ The SLIM Plugin is being refactored for ImageJ2 but is not yet available. Meanwh
 
 There have been numerous compatibility improvements and bugfixes. Since beta6 the team [http://trac.imagej.net/query?component=Legacy+Compatibility&resolution=fixed&milestone=imagej2-b7-ndim-data closed 18 compatibility-related issues] and made progress on many more. For instance, the Make Binary and Create Mask commands were fixed and the runtime performance of legacy commands was improved. See the [http://trac.imagej.net/query?status=closed&milestone=imagej2-b7-ndim-data full list of 2.0.0-beta-7 changes] for details.
 
-[[File:Better-update-sites.png|408px|right|'''Better update sites.''' The ImageJ updater now enables toggling of third-party update sites with the click of a button. The "Add my site" button automatically initializes your own personal update site based on your ImageJ wiki account.]]
+[[Image:Better-update-sites.png|408px|right|thumb|'''Better update sites.''' The ImageJ updater now enables toggling of third-party update sites with the click of a button. The "Add my site" button automatically initializes your own personal update site based on your ImageJ wiki account.]]
 
 == Roadmap and future directions ==
 
@@ -108,7 +108,7 @@ The following is a more detailed list of changes for this release:
 
 === Commands ===
 
-[[File:1-bit-histogram.png|297px|right|'''A 1-bit histogram plot.''' ImageJ2 now supports histogram plots for any pixel type, including 1-bit, as well as floating point types.]]
+[[Image:1-bit-histogram.png|297px|right|thumb|'''A 1-bit histogram plot.''' ImageJ2 now supports histogram plots for any pixel type, including 1-bit, as well as floating point types.]]
 
 * The [https://github.com/imagej/imagej/blob/imagej-2.0.0-beta-7/plugins/commands/src/main/java/imagej/core/commands/io/NewImage.java New Image command] has been made more functional. Multidimensional images can now be easily created.
 * The Histogram Plot command now works for all data types (see right). It can also display a histogram for each channel individually.
