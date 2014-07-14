@@ -15,7 +15,7 @@
 ==Usage==
 <pre>
 {{Tip
-| tip = Press the L key to access ImageJ's most useful feature: the [[Command Finder]].
+| tip = Press the {{key|L}} key to access ImageJ's most useful feature: the [[Command Finder]].
 }}
 </pre>
 </noinclude>
