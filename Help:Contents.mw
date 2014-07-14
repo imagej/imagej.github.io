@@ -17,7 +17,7 @@ A few tips:
 * To be able to edit a page, you need to log in. If you do not have an ImageJ Wiki account yet, [{{SERVER}}/wiki/index.php?title=Special:Userlogin&type=signup register via email].
 * To edit a new page, just enter the title in the search box; there will be a red link you can follow to edit the page.
 * There are keyboard shortcuts available for ''Preview'' (Alt+P), ''Cancel'' (Alt+C) and ''Save Page'' (Alt+S). You can also jump between the main text and the summary with Tab and Shift+Tab. '''Note:''' the shortcut for ''Show Changes'' is Alt+V (<u>not</u> C!).
-* With Safari on MacOSX, the shortcuts are available through Ctrl+Alt+<key>
+* In MacOSX, the shortcuts are available through Ctrl+Alt+<key>
 * If you see a page having a layout you want to imitate, pretend to edit that page, copy the respective markup code (you can cancel editing after you copied it), and paste it into the page where you want to have it.
 * There are shortcuts for a few menu items, such as ''Recent Changes'' (Alt+R) or the ''Main Page'' (Alt-Z).
 
