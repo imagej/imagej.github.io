@@ -36,7 +36,7 @@ The first screenshot shows the user interface for the plugin:
 * 'Image window width' and 'Image window height' specify the size of the image window in the browser.
 * 'Launch browser' controls whether or not the plugin should pop up a browser to view the results.
 * 'URL (optional)' can be used if your output folder is on a web server.  Then the browser views the results from your web server.
-* On my Mac I have my output folder set to '/Users/aivar/Sites' and URL set to 'http://0.0.0.0/~aivar'.
+* On my Mac I have my output folder set to '/Users/aivar/Sites' and URL set to <code>http://0.0.0.0/~aivar</code>.
 * The dropdown list for 'Implementation' is for experimental purposes (and will be removed from the final version of the plugin).  For now the default 'CHAINED' option is best.  To read more about the different implementations see below.
 
 == See also ==
