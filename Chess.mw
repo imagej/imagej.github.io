@@ -1,4 +1,4 @@
-== Purpose ==
+{{Scripting}}== Purpose ==
 
 This [[Jython Scripting|Jython]] script illustrates how to make an image interactive.
 
@@ -6,6 +6,7 @@ Play chess within Fiji! Click on a starting square, then on another one to move 
 
 This script is developed slowly, and will be maintained, by [[User:Schindelin|Johannes Schindelin]].
 
+<div style="clear: right"></div>
 == Code ==
 
 Small compared to what it does:
