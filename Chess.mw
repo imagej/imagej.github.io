@@ -11,6 +11,9 @@ This script is developed slowly, and will be maintained, by [[User:Schindelin|Jo
 Small compared to what it does:
 
 <source lang="python">
+from ij import IJ
+from ij.gui import Toolbar
+from ij import WindowManager
 from time import sleep
 
 w = 40
