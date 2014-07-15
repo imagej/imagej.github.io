@@ -17,6 +17,10 @@ Image5D is distributed as part of [[Fiji]], so no installation is necessary beyo
 
 == Description ==
 
+[[Image:Image5D-color.jpg|374px|right]]
+[[Image:Image5D-gray.jpg|374px|right]]
+[[Image:Image5D-overlay.jpg|374px|right]]
+
 These plugins extend image stacks to 5 dimensions: x, y, channel (color), slice (z), frame (t). Unlike the [http://imagej.net/plugins/hypervolume-browser.html HyperVolume Browser], an Image5D has a "true" 5D format. That way plugins working on stacks should usually work as expected on the currently displayed stack of an Image5D (just try a z-projection to see what this means). Image5Ds are displayed in a window with two scrollbars for slice and time below the image and a panel with controls to change the current channel and its color to the right of the image. A dropdown menu allows to change the display of the channels. Options are one channel in gray, one channel in color and an overlay of selected channels.
 
 In the one channel color and overlay modes one can open a panel to select the display color of a channel or to edit a more refined LUT with the ImageJ LUT Editor.
