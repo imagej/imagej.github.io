@@ -2,7 +2,7 @@ There are several mailing lists for community discussion and troubleshooting.
 
 If you have a natural allergy toward subscribing to mailing lists, the developers' mailing lists moderate posts from non-members (make '''really''' sure that you '''reply-to-all''' for that reason!). You can use [http://nabble.com Nabble]'s forum interface to [http://imagej.1557.x6.nabble.com/ ImageJ], [http://imagej-devel.54429.x6.nabble.com ImageJ-devel] or [http://fiji-devel.54424.x6.nabble.com/ fiji-devel]. Or just browse the archives to find information regarding your problem.
 
-== ImageJ and SciJava ==
+== ImageJ ==
 
 {| class="wikitable"
 |-
@@ -19,29 +19,45 @@ If you have a natural allergy toward subscribing to mailing lists, the developer
 <span style="font-size: smaller">This list is for programmers contributing code to ImageJ itself, or interested in technical discussions surrounding such development.</span>
 |-
 | valign="top" |
-[http://scif.io/mailman/listinfo/scifio SCIFIO]
-| For bug reports relating to image file input and output.
+[http://imagej.net/mailman/listinfo/imagej-bugs ImageJ-bugs]
+| For [http://fiji.sc/bugzilla BugZilla] issue updates.
 
-<span style="font-size: smaller">ImageJ2's image I/O is driven by the [[SCIFIO]] library ("SCientific Image Format Input &amp; Output").</span>
-|-
-| valign="top" |
-[http://groups.google.com/group/scijava SciJava]
-|
-For [http://scijava.org/ SciJava] discussion and [https://github.com/scijava/scijava-common SciJava Common] bug reports.
-
-<span style="font-size: smaller">ImageJ and SCIFIO are both built on top of SciJava Common.</span>
+<span style="font-size: smaller">This list is the default assignee for all BugZilla bugs. It is mainly intended for people directly involved in development, though anyone is welcome to subscribe if desired.</span>
 |-
 | valign="top" |
 [http://imagej.net/mailman/listinfo/imagej-builds ImageJ-builds]
-| For Jenkins build reports.
+| For [http://jenkins.imagej.net/ ImageJ Jenkins] build reports.
 
-<span style="font-size: smaller">This is an announcement list for the [http://jenkins.imagej.net/ ImageJ Jenkins], which reports build failures for ImageJ, Fiji, ImgLib and related projects. It is mainly intended for people directly involved in development, though anyone is welcome to subscribe if desired.</span>
+<span style="font-size: smaller">This is an announcement list for the ImageJ Jenkins, which reports build failures for ImageJ, Fiji, ImgLib and related projects. It is mainly intended for people directly involved in development, though anyone is welcome to subscribe if desired.</span>
+|}
+
+== Fiji ==
+
+{| class="wikitable"
 |-
-| valign="top" |
+| style="width: 120px" valign="top" |
 [http://groups.google.com/group/fiji-devel Fiji-devel]
 | For developer discussion specific to the [[Fiji]] distribution of ImageJ.
 
 <span style="font-size: smaller">This list is for programmers contributing code to Fiji, or interested in technical discussions surrounding such development.</span>
+|}
+
+== SciJava (supporting libraries) ==
+
+{| class="wikitable"
+|-
+| style="width: 120px" valign="top" |
+[http://scif.io/mailman/listinfo/scifio SCIFIO]
+| For bug reports relating to image file input and output.
+
+<span style="font-size: smaller">ImageJ2's image I/O is driven by the [[SCIFIO]] library ("SCientific Image Format Input & Output").</span>
+|-
+| valign="top" |
+[http://groups.google.com/group/scijava SciJava]
+|
+For [[SciJava]] discussion and [[SciJava Common]] bug reports.
+
+<span style="font-size: smaller">ImageJ and SCIFIO are both built on top of SciJava Common.</span>
 |}
 
 == ImageJ plugins ==
