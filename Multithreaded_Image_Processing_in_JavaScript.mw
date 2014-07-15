@@ -1,5 +1,4 @@
-== Purpose ==
-
+{{Scripting}}== Purpose ==
 
 An example [[Javascript Scripting|Javascript]] ImageJ script illustrating how to create java Threads for concurrent execution.
 
@@ -172,7 +171,7 @@ imp.show();
 == See also ==
 
 * [[Javascript Scripting]]
-* [[Multithreaded Image Processing]] in Clojure scripting language.
+* [[Multithreaded Image Processing in Clojure]]
 
 [[Category:Plugins]]
 [[Category:Scripting]]
