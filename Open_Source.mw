@@ -1,0 +1,22 @@
+One core principle of the [http://en.wikipedia.org/wiki/Scientific_method scientific method] is repeatability: the ability to continually retest and refine hypotheses. As computer software plays an increasingly large role in science, it is vital that that software be fully transparent and available to researchers: software is simply too complex to be easily reproduced from scratch by every research group. In contrast, closed source software presents a barrier to [http://en.wikipedia.org/wiki/Open_research_computation#Reproducibility_and_open_research_computing open research], because the implementation details of algorithms cannot be freely modified or even necessarily verified.
+
+The [http://sciencecodemanifesto.org/discussion Science Code Manifesto] provides a clear and succinct list of five principles surrounding scientific software. There have also been a number of publications in recent years discussing these issues and ideas:
+
+* [http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1002802 Ten Simple Rules for the Open Development of Scientific Software] (PLOS Computational Biology, Dec 2012)
+* [http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2073.html A call for bioimaging software usability] (Nature Methods, Jun 2012)
+* [http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2082.html Current challenges in open-source bioimage informatics] (Nature Methods, Jun 2012)
+* [http://www.nature.com/news/2010/101013/full/467753a.html Publish your computer code: it is good enough] (Nature, Oct 2010)
+* [http://jcb.rupress.org/content/189/5/777.full Metadata matters: access to image data in the real world] (Journal of Cell Biology, May 2010)
+
+Further, we strive for ImageJ to be a community driven project. It is not merely an [http://en.wikipedia.org/wiki/Open_source open source] ''product'', but an open source ''process''. ImageJ follows open development practices, and provides open development tools online:
+
+* [https://github.com/imagej Public source code repositories] including complete development history.
+* [http://fiji.sc/bugzilla/ Public issue tracker].
+* [[Mailing Lists|Public mailing lists]] for open discussion.
+* [http://wiki.imagej.net/ Public wiki] for community contributed content.
+* [http://jenkins.imagej.net/ Jenkins], Public [http://en.wikipedia.org/wiki/Continuous_integration continuous integration] system.
+* [http://maven.imagej.net/ Public Maven repository] for ImageJ binaries.
+
+Using these resources, you can always observe the latest progress of the project, get an idea of where the project is heading, contribute code to the project yourself using GitHub, or write documentation, tutorials and other information on the wiki.
+
+See also LOCI's [http://loci.wisc.edu/software/oss Open Source in Science] article.
