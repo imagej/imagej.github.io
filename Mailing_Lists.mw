@@ -67,15 +67,20 @@ For [[SciJava]] discussion and [[SciJava Common]] bug reports.
 | style="width: 120px" valign="top" |
 [http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-users/ OME-users]
 |
-For [[Bio-Formats]] issues.
+For [[Bio-Formats]] and [https://github.com/imagej/imagej-omero OMERO] issues and discussion.
 |-
 | valign="top" |
 [http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-devel/ OME-devel]
 |
-For [[Bio-Formats]] programming questions.
+For [[Bio-Formats]] and [https://github.com/imagej/imagej-omero OMERO] programming questions.
 |-
 | valign="top" |
-[http://www.loci.wisc.edu/software/mailing-lists LOCI Software]
+[http://imagej.net/mailman/listinfo/slim-curve SLIM-Curve]
+|
+For [[SLIM Curve]] issues and discussion.
+|-
+| valign="top" |
+[http://loci.wisc.edu/software/mailing-lists LOCI Software]
 |
 For [http://loci.wisc.edu/software LOCI software], ''excluding'' collaborations such as ImageJ, SCIFIO and Bio-Formats.
 |}
