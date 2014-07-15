@@ -17,15 +17,15 @@ You will find all functions of the BioVoxxel Toolbox under the icon of the green
 
 ----
 
-=Advanced Particle Analyzer=
+=Extended Particle Analyzer=
 
-Purpose: The "Advanced Particle Analyzer" is based on the ImageJ "Analyze Particles..." command. It enables the user to further restrict the analysis on particles according to parameter spezifications of shape descriptors and angle orientations. Thus, setting minimal and maximal exclusion ranges, particles from a binary image can be also extracted from an image choosing "Masks" as an output type.
+Purpose: The "Extended Particle Analyzer" is based on the ImageJ "Analyze Particles..." command. It enables the user to further restrict the analysis on particles according to many more parameter spezifications of shape descriptors and angle orientations. Thus, setting minimal and maximal exclusion ranges of different parameters enables to extract particles from a binary image. The output types are the same as for the >Analyze >Analyze Particles.
 
 Example: If you want to extract/analyze only particles with a certain Feret's Angle or exclude elongated structures using the aspect ratio (AR) or circilarity you can specify so in the initial dialog box.
 
 [[File:AdvancedParticleAnalyzer.png|750px]]
 
-How to: Key in minimal and maximal exclusion values connected with a hyphen. You can use integers as well as numbers containing decimal places. The option "Frame count correction" eliminates particles from 2 edges of choice to correct the count for edge touching particles.
+How to: Key in minimal and maximal exclusion values connected with a hyphen. You can use integers as well as numbers containing decimal places. "Redirect" redirects the analysis to a grayscale image which enables to analyze skewness, kurtosis as well as the new measure coefficient of variance (cov). The option "Keep borders (correction)" eliminates particles from 2 edges and keeps particles touching the two borders of choice. This corrects the particle count for edge touching particles.
 
 Shape descriptors which are not available under "Analyze Particles..." in IJ or Fiji so far are:
 
@@ -37,9 +37,13 @@ Feret's AR = [maximum caliper diameter] / [minimum caliper diameter]
 
 Coefficient of variance (CoV) = [intensity standard deviation] / [intensity mean]
 
-Status: v1.4, Maintenance active
+Form: plugin (recordable, uses smart recording) 
 
-Future: Will be implemented as a recordable java plugin. Suggestions are welcome!
+Status: Maintenance active
+
+'''The Advanced Particle Analyzer is deprecated but still available as macro under the BioVoxxel Toolbox dropdown menu.''' 
+
+Suggestions are welcome!
 
 ----
 
