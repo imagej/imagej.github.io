@@ -2,13 +2,13 @@
 | name                   = Volume Viewer
 | software               = ImageJ
 | author                 = Kai Uwe Barthel
-| filename               = [http://rsb.info.nih.gov/ij/plugins/download/jars/Volume_Viewer.jar]
-| source                 = [http://rsb.info.nih.gov/ij/plugins/download/jars/Volume_Viewer.jar]
+| filename               = [http://imagej.net/plugins/download/jars/Volume_Viewer.jar]
+| source                 = [http://imagej.net/plugins/download/jars/Volume_Viewer.jar]
 | released               = February 2005
 | latest version         = December 2012
 | status                 = v2.01
-| category               = [[:Category:Plugins|Plugins]]
-| website                = http://rsb.info.nih.gov/ij/plugins/volume-viewer.html
+| category               = [[:Category:Visualization|Visualization]]
+| website                = http://imagej.net/plugins/volume-viewer.html
 }}
 
 3D reslicing and threshold-enabled 3D visualization.
@@ -22,4 +22,5 @@ Documentation: http://rsb.info.nih.gov/ij/plugins/volume-viewer.html
 [[3D Viewer]]: hardware-accelerated 3D visualization of image volumes, orthoslices, and 3D meshes.
 
 [[Category:Plugins]]
+[[Category:Visualization]]
 [[Category:Unmaintained]]
