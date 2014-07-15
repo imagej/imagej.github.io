@@ -13,7 +13,7 @@ Further, we strive for ImageJ to be a community driven project. It is not merely
 * [https://github.com/imagej Public source code repositories] including complete development history.
 * [http://fiji.sc/bugzilla/ Public issue tracker].
 * [[Mailing Lists|Public mailing lists]] for open discussion.
-* [http://wiki.imagej.net/ Public wiki] for community contributed content.
+* [http://imagej.net/ Public wiki] for community contributed content.
 * [http://jenkins.imagej.net/ Jenkins], Public [http://en.wikipedia.org/wiki/Continuous_integration continuous integration] system.
 * [http://maven.imagej.net/ Public Maven repository] for ImageJ binaries.
 
