@@ -4,8 +4,7 @@ An example [[Javascript Scripting|Javascript]] ImageJ script illustrating how to
 
 The example illustrates as well the use of functions with variable arguments.
 
-
-
+<div style="clear: right"></div>
 == Code ==
 
 <source lang="javascript">
