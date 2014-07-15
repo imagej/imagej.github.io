@@ -1,6 +1,6 @@
 {{Infobox Plugin
 | name                   = Script Editor
-| software               = Fiji
+| software               = ImageJ
 | author                 = Johannes Schindelin, Sumit Dubey (Google Summer of Code 2009)
 | maintainer             = Johannes Schindelin
 | source                 = [https://github.com/imagej/imagej-ui-swing Git]
@@ -8,7 +8,7 @@
 | status                 = active
 }}{{Scripting}}
 
-The script editor is an invaluable help when writing scripts in any of Fiji's supported [[Scripting comparisons|languages]].
+The script editor is an invaluable help when writing scripts in any of ImageJ's supported [[Scripting comparisons|languages]].
 
 === Starting the editor ===
 
