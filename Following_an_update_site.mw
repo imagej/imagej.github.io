@@ -1,7 +1,4 @@
-{{UpdateSites}}
-=How to add an update site to your ImageJ installation=
-
-This tutorial will explain how to '''add an update site to your install of ImageJ''' such that the plugins maintained there will be installed and updated just like normal ImageJ plugins.
+{{UpdateSites}}This tutorial will explain how to '''add an update site to your install of ImageJ''' such that the plugins maintained there will be installed and updated just like normal ImageJ plugins.
 
 In this tutorial we'll be adding plugins from the distribution site at genomics.lbl.gov/~gavin/FijiPlugins.
 
