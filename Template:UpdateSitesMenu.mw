@@ -6,6 +6,7 @@
 * [[How to follow a 3rd party update site|Following an update site]]
 * [[How to set up and populate an update site|Creating your own update site]]
 * [[How to upload to core update sites|Uploading to core update sites]]
+* [[List of update sites]]
 |}An '''update site''' is web space used by the [[Updater]] which enables users to share their macros, scripts and plugins with other researchers. With update sites, you do not need to manually download and install anything; [[ImageJ]] takes care of it for you.
 </includeonly>
 <noinclude>
