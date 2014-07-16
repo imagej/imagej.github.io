@@ -1,6 +1,4 @@
-{{UpdateSites}}An '''update site''' is web space used by the [[Updater]] which enables users to share their macros, scripts and plugins with other researchers. With update sites, you do not need to manually download and install anything; [[ImageJ]] takes care of it for you.
-
-This tutorial explains how to set up a website to distribute your plugins. It assumes that your plugins are correctly installed in your local ImageJ setup.
+{{UpdateSites}}This tutorial explains how to '''set up a website to distribute your plugins'''. It assumes that your plugins are correctly installed in your local ImageJ setup.
 
 = Initializing an update site =
 
