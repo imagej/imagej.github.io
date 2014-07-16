@@ -1,8 +1,8 @@
-{{UpdateSites}}This tutorial explains how to upload changes to core Fiji libraries.
+{{UpdateSites}}This tutorial explains how to upload changes to core [[ImageJ]] and [[Fiji]] libraries.
 
 == Getting started ==
 
-First of all, start the updater with ''Help>Update Fiji'' and click on the ''Manage update sites'' button:
+First of all, start the [[updater]] with ''Help>Update'' and click on the ''Manage update sites'' button:
 
 [[File:Mamed-3.jpg|770px]]
 
@@ -23,9 +23,9 @@ Note that your username will always start with an upper case letter. It should l
 
 You can now close the ''Manage update sites'' window and go on to [[#Uploading your resources | Uploading your resources]].
 
-== Configuring ImageJ2 update site ==
+== Configuring the ImageJ update site ==
 
-The ImageJ2 update site uses [http://en.wikipedia.org/wiki/Secure_Shell ssh] authentication. You will need a login with [http://update.imagej.net the imageJ update site] that some administrator will have to add to the ''ij-update'' group.
+The ImageJ update site uses [http://en.wikipedia.org/wiki/Secure_Shell ssh] authentication. You will need a login with [http://update.imagej.net the imageJ update site] that some administrator will have to add to the ''ij-update'' group.
 
 In the ''Manage update sites'' dialog, on the ImageJ update site line, add the following information:
 
