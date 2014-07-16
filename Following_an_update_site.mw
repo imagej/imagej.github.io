@@ -1,18 +1,18 @@
-{{UpdateSites}}An update site is web space used by the Updater which enables users to share their macros, scripts and plugins with other researchers. With update sites, you do not need to manually download and install anything; ImageJ takes care of it for you.
+{{UpdateSites}}An '''update site''' is web space used by the [[Updater]] which enables users to share their macros, scripts and plugins with other researchers. With update sites, you do not need to manually download and install anything; [[ImageJ]] takes care of it for you.
 
 {{Notice
 | message = To '''create your own update site''', see: [[How to set up and populate an update site]].<br/>To '''browse a list of existing update sites''', see: [[List of update sites]].
 }}
 
-=How to add an update site to your Fiji installation=
+=How to add an update site to your ImageJ installation=
 
-This tutorial will explain how to add an ''update site'' (also known as ''plugin distribution site'') to your install of Fiji such that the plugins maintained there will be installed and updated just like normal Fiji plugins.
+This tutorial will explain how to add an ''update site'' (also known as ''plugin distribution site'') to your install of ImageJ such that the plugins maintained there will be installed and updated just like normal ImageJ plugins.
 
 In this tutorial we'll be adding plugins from the distribution site at genomics.lbl.gov/~gavin/FijiPlugins.
 
-== Start the [[Fiji Updater]] ==
+== Start the [[Updater]] ==
 
-First, start the [[Fiji Updater|updater]]:
+First, start the [[updater]]:
 
 [[Image:How_to_setup_a_plugin_distribution_site-1.jpg]]
 
@@ -24,7 +24,7 @@ Click on the ''Manage update sites'' button to bring up the site management dial
 
 If the update site you want to follow is listed, just click the checkbox next to its name. If it is not listed, you can add Click the ''Add'' button and fill in the name of your choice for the site and the URL, which would be provided by the plugin's author or distributor.
 
-'''Note:''' the list of update sites shown by default is the one you can view and edit [[List of update sites|here]]. Feel free to encourage update site maintainers to [http://fiji.sc/List_of_update_sites?action=edit add] their update sites.
+'''Note:''' the list of update sites shown by default is the one you can view and edit [[List of update sites|here]]. Feel free to encourage update site maintainers to [http://imagej.net/List_of_update_sites?action=edit add] their update sites.
 
 Close the dialog and the list of plugins available on the site will show up:
 
@@ -38,7 +38,7 @@ You can select whether you want to install a particular plugin by changing the c
 
 == Verify install ==
 
-Restart Fiji as instructed to finish the install. Check to see that the plugin works:
+Restart ImageJ as instructed to finish the install. Check to see that the plugin works:
 
 [[Image:AddPluginSite-7.jpg]]
 
