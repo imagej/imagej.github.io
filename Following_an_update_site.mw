@@ -1,6 +1,9 @@
+{{UpdateSites}}An update site is web space used by the Updater which enables users to share their macros, scripts and plugins with other researchers. With update sites, you do not need to manually download and install anything; ImageJ takes care of it for you.
+
 {{Notice
 | message = To '''create your own update site''', see: [[How to set up and populate an update site]].<br/>To '''browse a list of existing update sites''', see: [[List of update sites]].
 }}
+
 =How to add an update site to your Fiji installation=
 
 This tutorial will explain how to add an ''update site'' (also known as ''plugin distribution site'') to your install of Fiji such that the plugins maintained there will be installed and updated just like normal Fiji plugins.
