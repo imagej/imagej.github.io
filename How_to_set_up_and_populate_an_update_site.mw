@@ -1,7 +1,9 @@
+{{UpdateSites}}An '''update site''' is web space used by the [[Updater]] which enables users to share their macros, scripts and plugins with other researchers. With update sites, you do not need to manually download and install anything; [[ImageJ]] takes care of it for you.
+
 {{Notice
 | message = To '''download from someone else's update site''', see: [[How to follow a 3rd party update site]].<br/>To '''browse a list of existing update sites''', see: [[List of update sites]].<br/>To '''upload to core update sites''', see: [[How to upload to core update sites]].
 }}
-This tutorial explains how to set up a website to distribute your plugins. It assumes that your plugins are correctly installed in your local Fiji setup.
+This tutorial explains how to set up a website to distribute your plugins. It assumes that your plugins are correctly installed in your local ImageJ setup.
 
 = Initializing an update site =
 
@@ -9,17 +11,17 @@ This tutorial explains how to set up a website to distribute your plugins. It as
 
 By far the easiest method to provide your macros, scripts and plugins to other users, letting them keep up-to-date in the most convenient manner, is to set up your ''personal update site''.
 
-A ''personal update site'' is hosted on <nowiki>http://sites.imagej.net/<fiji-wiki-account></nowiki>. If you do not have a Fiji Wiki account yet, no need to worry, you can register one while setting up your update site.
+A ''personal update site'' is hosted on <nowiki>http://sites.imagej.net/<imagej-wiki-account></nowiki>. If you do not have a ImageJ Wiki account yet, no need to worry, you can register one while setting up your update site.
 
-First of all, start the updater with ''Help>Update Fiji'' and click on the ''Manage update sites'' button:
+First of all, start the updater with ''Help>Update'' and click on the ''Manage update sites'' button:
 
 [[File:Mamed-3.jpg|770px]]
 
 Now, click ''Add my site''.
 
-=== Specifying an existing Fiji Wiki account ===
+=== Specifying an existing ImageJ Wiki account ===
 
-If you already have a Fiji Wiki account, enter the name of that account and click ''OK'':
+If you already have a ImageJ Wiki account, enter the name of that account and click ''OK'':
 
 [[Image:Personal-Update-Site-1.png|770px]]
 
@@ -32,9 +34,9 @@ Until this issue is fixed, please use [[Special:ChangeUploadPassword|this page]]
 }}
 
 
-If you do not have a Fiji Wiki account, you will need to create one:
+If you do not have an ImageJ Wiki account, you will need to create one:
 
-=== Creating a new Fiji Wiki account ===
+=== Creating a new ImageJ Wiki account ===
 
 Specify the desired account name. If it is taken already, you will be asked for the password (and need to cancel the dialog and start over). If the account is available, the updater will greet you with this message:
 
@@ -48,7 +50,7 @@ After you specified the information and click ''OK'', the updater will acknowled
 
 [[Image:Personal-Update-Site-4.png|770px]]
 
-You should soon receive a mail notifying you about the newly created account, and a temporary password. You need to [http://fiji.sc/Special:UserLogin log into the Fiji Wiki] to reset the password:
+You should soon receive a mail notifying you about the newly created account, and a temporary password. You need to [http://imagej.net/Special:UserLogin log into the ImageJ Wiki] to reset the password:
 
 [[Image:Personal-Update-Site-5.png|770px]]
 
@@ -60,11 +62,11 @@ This will initialize your update site and it will be added to your list of activ
 
 [[Image:Personal-Update-Site-7.png|770px]]
 
-Now you are ready to [[#Uploading files to your update site|upload files]]. After that, you might want to consider to add your site into the alphabetical list on [[List_of_update_sites|this page]] for the convenience of other Fiji users (your update site will then be shown in the ''Manage update sites'' dialog by default).
+Now you are ready to [[#Uploading files to your update site|upload files]]. After that, you might want to consider to add your site into the alphabetical list on [[List_of_update_sites|this page]] for the convenience of other ImageJ users (your update site will then be shown in the ''Manage update sites'' dialog by default).
 
 == Adding an update site on your own server ==
 
-If you have an own server or web space with WebDAV, SFTP or SSH access, you can create a directory in that web space and initialize it as an update site, too. Just call the updater with ''Help>Update Fiji'' and click the ''Manage update sites'' button:
+If you have an own server or web space with WebDAV, SFTP or SSH access, you can create a directory in that web space and initialize it as an update site, too. Just call the updater with ''Help>Update'' and click the ''Manage update sites'' button:
 
 [[File:Mamed-3.jpg|770px]]
 
@@ -92,7 +94,7 @@ The ''upload information'' depends on the protocol available for uploading:
 |-
 |}
 
-In case you want to use an SFTP/SSH server, it must have an empty, public web accessible folder where you intend to publish your updates. The Fiji updater will not create that empty folder.
+In case you want to use an SFTP/SSH server, it must have an empty, public web accessible folder where you intend to publish your updates. The ImageJ updater will not create that empty folder.
 
 ''Example:'' Let's assume you have SFTP access to a machine known as ''imagej.example.org'' to the internet, and let's assume that you have a user account ''myself'' that has write access to the path ''/var/www/my-update-site/'' on that machine that is served via http://imagej.example.org/my-update-site/. Then the line you need to add  might look like this:
 
@@ -122,9 +124,9 @@ It is also possible to create an [[Group_Update_Sites|update site for a group]] 
 
 Note: you cannot simply copy files to your web space; the updater would miss all kinds of important information, and consequently refuse to accept that update site. You '''need''' to let the updater handle the file uploading.
 
-== Start the [[Fiji Updater|updater]] and check your plugins ==
+== Start the [[updater]] and check your plugins ==
 
-First, start the [[Fiji Updater|updater]]:
+First, start the [[updater]]:
 
 [[Image:How_to_setup_a_plugin_distribution_site-1.jpg]]
 
@@ -134,19 +136,19 @@ Select the file to upload, right-click (on MacOSX, Ctrl+click) for the context m
 
 [[Image:Upload-to-update-site.png|770px]]
 
-Note that this plugin's dependencies, ''ij.jar'' and ''someJarOrOther.jar'', are automatically determined by the updater. Hence if you require 3rd party packages for your plugin you can place them into the jars folder of Fiji and the updater will automatically upload them to the site.
+Note that this plugin's dependencies, ''ij.jar'' and ''someJarOrOther.jar'', are automatically determined by the updater. Hence if you require 3rd party packages for your plugin you can place them into the jars folder of ImageJ and the updater will automatically upload them to the site.
 
 Enter any information you wish to provide about the plugin:
 
 [[Image:How_to_setup_a_plugin_distribution_site-15.jpg|770px]]
 
-Finally, click 'Upload to server' to upload your plugin to the server and allow others to access it. If you have dependencies that are not part of Fiji, the updater will ask you if you want to upload that jar as well. Finally, you will be asked for your login credentials again and the files will be uploaded to the server. 
+Finally, click 'Upload to server' to upload your plugin to the server and allow others to access it. If you have dependencies that are not part of ImageJ, the updater will ask you if you want to upload that jar as well. Finally, you will be asked for your login credentials again and the files will be uploaded to the server. 
 
-Check that your plugins are now registered as Fiji plugins by selecting 'View files of the '[your site name here]' site':
+Check that your plugins are now registered as ImageJ plugins by selecting 'View files of the '[your site name here]' site':
 
 [[Image:UpdaterFinalScreen.jpg|770px]]
 
-That's it - you're done. Now, anyone who wants a copy of your plugins merely needs to [[How to follow a 3rd party update site|add your update site]] to the Update manger via the URL you specified, and your plugins will be downloaded and updated in their Fiji installations just like the standard Fiji plugins.
+That's it - you're done. Now, anyone who wants a copy of your plugins merely needs to [[How to follow a 3rd party update site|add your update site]] to the Update manger via the URL you specified, and your plugins will be downloaded and updated in their ImageJ installations just like the standard ImageJ plugins.
 
 = Publishing your update site =
 
