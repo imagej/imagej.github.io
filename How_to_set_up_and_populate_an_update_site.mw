@@ -116,11 +116,11 @@ Just click ''OK'' and let the updater upload an empty file index (it is stored i
 
 It is also possible to create an [[Group_Update_Sites|update site for a group]] to which multiple users can upload.
 
-= Uploading files to your update site =
+== Uploading files to your update site ==
 
 Note: you cannot simply copy files to your web space; the updater would miss all kinds of important information, and consequently refuse to accept that update site. You '''need''' to let the updater handle the file uploading.
 
-== Start the [[updater]] and check your plugins ==
+=== Start the [[updater]] and check your plugins ===
 
 First, start the [[updater]]:
 
@@ -146,12 +146,8 @@ Check that your plugins are now registered as ImageJ plugins by selecting 'View 
 
 That's it - you're done. Now, anyone who wants a copy of your plugins merely needs to [[How to follow a 3rd party update site|add your update site]] to the Update manger via the URL you specified, and your plugins will be downloaded and updated in their ImageJ installations just like the standard ImageJ plugins.
 
-= Publishing your update site =
+== Publishing your update site ==
 
 If you want to let other people know about your update site, just add it to the  [[list of update sites]].
-
-= See Also =
-
-[[How to follow a 3rd party update site]]
 
 [[Category:Tutorials]]
