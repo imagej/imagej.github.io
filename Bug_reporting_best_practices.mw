@@ -1,3 +1,10 @@
+= TL;DR Summary =
+
+* Report the issue using the [[Report a Bug]] plugin (in the Help menu).
+* Provide a [http://stackoverflow.com/help/mcve minimal, complete, verifiable example].
+* [http://whathaveyoutried.com/ Tell us what you already tried.]
+* [http://stackoverflow.com/help/how-to-ask Put as much effort into your question] as you expect to be put into its response.
+
 = Why put effort into bug reports =
 
 For light reading, there are numerous guides and essays on [http://www.chiark.greenend.org.uk/~sgtatham/bugs.html how and why to write excellent bug reports]. ImageJ users should be aware that the development community is diverse: from publicly-funded individuals and teams to scientists and user contributors. For a largely open-source community like this, there are several key points to consider when submitting a bug:
