@@ -1,3 +1,4 @@
+<includeonly>
 {| class="wikitable" style="width: 100%"
 !colspan="9"|{{{title|}}}
 |-
@@ -18,3 +19,7 @@
 {{!}}[{{{linux64|}}} Linux (64-bit)]
 }}
 |}
+</includeonly>
+<noinclude>
+Template for a specific release's Download box. See the [[Downloads]] page for usage examples.
+</noinclude>
