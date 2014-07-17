@@ -2,7 +2,7 @@
 
 The use of generic types makes a lot of sense in SCIFIO: you have an interface-driven design, intended to be flexible and extensible, yet each [https://github.com/hinerm/bioformats/blob/blog-generics/components/scifio-devel/src/ome/scifio/Format.java Format] implementation is tightly linked with concrete implementations of the other SCIFIO components. Using generics ensures type safety of operations within these components, so that each interacts only with objects they know how to handle (e.g. it wouldn't make sense to provide an APNG [https://github.com/hinerm/bioformats/blob/blog-generics/components/scifio-devel/src/ome/scifio/Reader.java Reader] with an OME-TIFF [https://github.com/hinerm/bioformats/blob/blog-generics/components/scifio-devel/src/ome/scifio/Metadata.java Metadata] object).
 
-=== Two Scenarios ===
+=== Two scenarios ===
 
 There are essentially two use cases in SCIFIO.
 
@@ -11,13 +11,13 @@ There are essentially two use cases in SCIFIO.
 
 In the second case, there are no generics to worry about. In the first case, if generics were present in all levels of the SCIFIO interfaces, you would either have to use raw types or wildcards in any declarations, and may need to cast in many method calls. The generics are working against you, because you literally can't know what types to code against.
 
-=== Hiding Generics ===
+=== Hiding generics ===
 
 To shield developers from generic wildcards, raw types, and casting, we split the component interfaces in SCIFIO. Each component has a base interface (e.g. [https://github.com/hinerm/bioformats/blob/blog-generics/components/scifio-devel/src/ome/scifio/Reader.java Reader]) and a typed subclass ([https://github.com/hinerm/bioformats/blob/blog-generics/components/scifio-devel/src/ome/scifio/TypedReader.java TypedReader]). Base interfaces reference the base interfaces of other components, and typed interfaces referenced other typed interfaces (and propagate generic parameters up to the concrete implementations, where they disappear again).
 
 So if you want to use SCIFIO components in a general way, you can use the base interfaces and won't have to fight with generics to find the proper syntax. If you know what formats you're going to be using, you have the benefit of methods accepting and returning those known types. In either case, generics are providing compile-time safety.
 
-=== The Problem with Type Narrowing ===
+=== The problem with type narrowing ===
 
 The base/typed interface split is nice because return types can naturally be narrowed as you descend the class hierarchy and learn more about what types are present. However, method parameters cannot be narrowed this way: the general base interface implies methods will work with any implementation of their parameters (e.g. [https://github.com/hinerm/bioformats/blob/blog-generics/components/scifio-devel/src/ome/scifio/Writer.java#L92 Writer#setMetadata]). When you get to the <code>TypedWriter</code>, which has access to a generic Metadata parameter <code>M</code>, you can't just declare <code>setMetadata(M)</code> if <code>M extends Metadata</code>. That method would have the same type erasure as in the base interface.
 
