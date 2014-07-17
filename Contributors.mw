@@ -9,10 +9,10 @@ __NOTOC__
 * [http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/ Michael Berthold]<sup>9</sup> (KNIME)
 * [http://www.lifesci.dundee.ac.uk/people/jason-swedlow Jason Swedlow]<sup>10,11</sup> (OME)
 
-=== ImageJ1 ===
+=== [[ImageJ1]] ===
 * Wayne Rasband<sup>1</sup> (lead)
 
-=== ImageJ2 ===
+=== [[ImageJ2]] ===
 * [[User:Rueden|Curtis Rueden]]<sup>2</sup> (lead)
 * [[User:Schindelin|Johannes Schindelin]]<sup>2</sup>
 * [http://loci.wisc.edu/people/mark-hiner Mark Hiner]<sup>2</sup>
@@ -25,7 +25,7 @@ __NOTOC__
 </div>
 
 <div style="float: left; width: 27%">
-=== Fiji ===
+=== [[Fiji]] ===
 * [[User:Schindelin|Johannes Schindelin]]<sup>2</sup> (lead)
 * [[User:Rueden|Curtis Rueden]]<sup>2</sup>
 * [[JeanYvesTinevez|Jean-Yves Tinevez]]<sup>8</sup>
@@ -50,19 +50,19 @@ __NOTOC__
 
 <div style="float: left; width: 34%">
 
-=== ImgLib2 ===
+=== [[ImgLib2]] ===
 * Tobias Pietzsch<sup>5</sup> (lead)
 * [http://fly.mpi-cbg.de/~preibisch/ Stephan Preibisch]<sup>5</sup>
 * [http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld]<sup>5</sup>
 
-=== SCIFIO ===
+=== [[SCIFIO]] ===
 * [http://loci.wisc.edu/people/mark-hiner Mark Hiner]<sup>2</sup> (co-lead)
 * [[User:Rueden|Curtis Rueden]]<sup>2</sup> (co-lead)
 
 === CellProfiler ===
 * Lee Kamentsky<sup>4</sup> (lead)
 
-=== KNIME Image Processing ===
+=== [[KNIME Image Processing|KNIME]] ===
 * Christian Dietz<sup>9</sup> (co-lead)
 * Martin Horn<sup>9</sup> (co-lead)
 * Michael Zinsmaier<sup>9</sup>
