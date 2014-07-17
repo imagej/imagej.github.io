@@ -140,12 +140,10 @@ There are perhaps more convenient setups built into Eclipse, IntelliJ, NetBeans 
 Within the jdb prompt, type "help".
 
 == Language basics ==
-<p>A ';' defines the start of a comment, just like '//' does in Java.</p>
-<p>A function definition declares parameters within [].</p>
-<p>Local variables are declared with <i>let</i>, and global variables with <i>def</i>.</p>
-<p>Functions are defined with <i>defn</i>, and are visible globally. Hence a function declared within a <i>let</i> statement has access to variables declared in it. This method enables closures.</p>
-<p></p>
-
+* A ';' defines the start of a comment, just like '//' does in Java.
+* A function definition declares parameters within [].
+* Local variables are declared with <i>let</i>, and global variables with <i>def</i>.
+* Functions are defined with <i>defn</i>, and are visible globally. Hence a function declared within a <i>let</i> statement has access to variables declared in it. This method enables closures.
 
 == Calling methods and variables on a java object ==
 <p>There are two ways, the second syntactic sugar of the first. Below, <b>imp</b> is a pointer to an ImagePlus:</p>
