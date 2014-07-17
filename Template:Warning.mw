@@ -1,10 +1,8 @@
-<includeonly>
-{| style="background: #fdd; padding: 10px; border: 1px solid black"
+<includeonly>{| style="background: #fdd; padding: 10px; border: 1px solid black"
 |-
 | [[File:Warning.png]]
 | {{{message|}}}
-|}
-</includeonly>
+|}</includeonly>
 <noinclude>
 ==Usage==
 <pre>
