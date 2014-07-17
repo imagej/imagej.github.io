@@ -13,46 +13,14 @@
 
 == Language basics ==
 
-=== Importing packages and classes ===
+=== Importing classes ===
 
-When using javascript in Fiji or ImageJ, some classes are imported by default so you don't have to explicitly import them at the beginning of your script. However, there are some differences in the default imports between Fiji and ImageJ, that are summarized below. One important consequence is that some scripts written for ImageJ will not run in Fiji without adding the proper imports.
-
-in Fiji, theses classes are imported by default:
-* all ij.*
-* ini.trakEM2.*
-* script.imglib.*
-* java.lang.*
-
-Due to potential ambiguities on classes names, the following classes are not imported:
-* ij.plugin.frame.ContrastPlot (is in both ij.plugin.frame and ini.trakem2.imaging)
-* ij.gui.Overlay (is in both ij.gui and ini.trakem2.display)
-* ij.gui.ColorPanel (is in both ij.gui and ij.plugin)
-* ij.plugin.Selection (is in both ij.plugin and ini.trakem2.display)
-* ij.plugin.FFT (is in both script.imglib.algorithm and ij.plugin)
-* ij.plugin.Histogram (is in both script.imglib.analysis and ij.plugin)
-* java.lang.Compiler (is in both java.lang and ij.plugin)
-
-For reference, in ImageJ, these classes are imported by default:
-* ij.*
-* ij.gui.*
-* ij.process.*
-* ij.measure.*
-* ij.util.*;
-* ij.plugin.*
-* ij.plugin.filter.*
-* ij.plugin.frame.*
-* java.lang.*
-* java.awt.*
-
-
-You can specify further imports by:
+{{ImportingClasses|lang=JavaScript}}
+You can specify imports in JavaScript as follows:
 <source lang="javascript">
-// Import all classes under java.io.*
-importPackage(Packages.java.io)
-
-// Import a single class instead
 importClass(Packages.java.io.File)
 </source>
+Where <code>java.io.File</code> is the class to be imported.
 
 === Variables ===
 
