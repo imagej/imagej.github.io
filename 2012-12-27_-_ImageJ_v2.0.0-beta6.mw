@@ -1,0 +1,120 @@
+Today the ImageJDev team is releasing the sixth beta of ImageJ2, version 2.0.0-beta6.
+
+ImageJ 2.0.0-beta6 is a "beta"-quality release, meaning the code is not finished. The design is more stable than before but still subject to change until the final 2.0.0 release. It is recommended that people continue to use [[ImageJ1|ImageJ v1.x]] for critical work.
+
+Download using the link below, or from the [[ImageJ2 development releases]] page, which also has a timetable for future releases.
+
+{{Notice
+| message = Due to some pending work on the ImageJ Updater ([http://trac.imagej.net/ticket/1603 #1603]), the 2.0.0-beta6 release will not be available via the "Help > Update" command until after the new year. Sorry for the inconvenience.
+}}
+
+The ImageJ2 user interface is modeled after ImageJ v1.x as much as possible. However, under the hood, ImageJ2 is a complete redesign of ImageJ. It provides backward compatibility with older versions of ImageJ by bundling the latest v1.x code and translating between "legacy" and "modern" image structures.
+
+== What's new ==
+
+Development of this release of ImageJ focused on improved legacy support.
+
+=== Application level changes ===
+
+[[Image:Find-commands.jpg|477px|right|thumb|'''Improved Command Finder:''' The Command Finder now has more informational columns detailing the commands it finds.]]
+
+* Dedicated legacy mode, for maximum compatibility (see "Legacy mode" below).
+* Increased translation support in the legacy layer for:
+** ResultsTables
+** Overlay Manager contents to ROI Manager contents
+** ImageJ 1.x Overlays
+* Better support for multithreaded legacy plugins.
+* Pure IJ2 implementation of Close and Close All.
+* The Command Finder shows a sortable table with additional columns such as shortcut and menu path (see right).
+
+=== Architecture changes ===
+
+* You can now embed ImageJ2 into an ImageJ1 plugin (see "call-modern-from-legacy" below). To make this possible, ImageJ2's UI agnosticism has been further improved: it is now possible to create an invisible ImageJ2 context while still explicitly displaying certain things with your UI of choice (e.g., Swing). See [https://github.com/imagej/imagej/commit/eca16678d502270030c15540e4411ced6ca5a65c eca16678].
+* The LogService was improved. You can explicitly query or set the logging level (none, error, warn, info, debug or trace). The default log service also supports setting the logging level programmatically via the <code>ij.log.level</code> system property. See the [https://github.com/imagej/imagej/commits/v2.0.0-beta6/core/core/src/main/java/imagej/log/StderrLogService.java commit log].
+* The Table API has been greatly fleshed out, with many more API methods added to the base Table interface, as well as the addition of a GenericTable whose cells can hold any value (not just doubles). See [https://github.com/imagej/imagej/commit/7522bd3b7aa4ab6dbf57f9f57fbd8283d425091b 7522bd3b] for details, and "call-modern-from-legacy" below for an example of usage.
+* The DatasetView API boasts some minor improvements to making working with multichannel images easier; see [https://github.com/imagej/imagej/commit/e6e63c2a0040ff42b8eec4ddecd1eaaa2b340395 e6e63c2a].
+* The ImageJ2 infrastructure is now more careful to use Class objects in favor of class name strings wherever possible, in case multiple class loaders are in use (which for ImageJ, they most certainly are). See [https://github.com/imagej/imagej/commit/ebebf919b985ea9f2d2917b8050c8c3f0bb26f71 ebebf919].
+* The PluginInfo class design was improved to eliminate some inconsistencies, as well as simplifying the CommandInfo class to remove an unnecessary generic parameter; see [https://github.com/imagej/imagej/commit/25e9d14c01d42f4d3bbdff82cd6de3bf5d73131e 25e9d14c]. We also fixed some problems with CommandInfo not delegating sufficiently to its wrapped PluginInfo; see [https://github.com/imagej/imagej/commit/04896ad7d7a566297795fff81491b1e6e4355ad8 04896ad7].
+* There were numerous changes made to ImgLib2's OPS library. This library is used by ImageJ for mathematical computations. One result is that ImageJ now has expanded support for the calculation of statistical measures of regions of image data. See [https://github.com/imagej/imagej/commit/fc5e1434658b1ec562d0f816ff6244195de1c12a fc5e1434] and [https://github.com/imagej/imagej/commit/b6296ffe13c34d65061fcc5e331bface3ec2477f b6296ffe].
+* The ImageJ launcher now supports the <code>--debugger=PORT</code> command-line option which allows debuggers (e.g., Eclipse's) to attach to an existing ImageJ instance.
+
+=== Compatibility ===
+
+There have been numerous compatibility improvements and bugfixes. Since beta5 the team [http://trac.imagej.net/milestone/imagej2-b6-legacy closed 54 issues] and made progress on many more. For instance, there is improved support for legacy commands such as: Image Type, Apply LUT, Cut, and Fill. See the full list of beta 6 changes [http://trac.imagej.net/query?status=closed&milestone=imagej2-b6-legacy here].
+
+=== Legacy mode ===
+
+[[Image:Legacy-mode.gif|571px|right|thumb|'''Legacy mode:''' ImageJ2's legacy mode provides total compatibility with ImageJ1.]]
+
+Although we emphasize backwards-compatibility strongly, and tried to design the architecture with that emphasis in mind, some legacy plugins still do not work. However, since we bundle a complete ImageJ 1.x, it was not too difficult to include a fallback "legacy mode" for such case. In this legacy mode, all image displays are hidden and those that are compatible with ImageJ 1.x are shown in old-style windows. Likewise, the main window is hidden in favor of ImageJ 1.x's main window. To go back, the command ''Switch to Modern Mode'' is available in the ''Help'' menu.
+
+=== Updater changes ===
+
+* The updater can now upload to an OS X server (desired by Jerôme Mutterer).
+* More robust handling of cross-site dependencies.
+* More sensible handling of platform-dependent dependencies.
+* Updater components are now only instantiated when necessary.
+* The command-line interface of the updater allows inspecting more detailed information about individual components.
+* The updater no longer expects certain Fiji components to be available.
+* The updater can now run purely from remote .jar files; e.g., by [http://update.imagej.js/bootstrap.js a Javascript script].
+
+=== Sample Image uploader ===
+
+Often it is impractical to attach an example image demonstrating some problems, e.g., with I/O. Some images are too large, or the scientists might not be comfortable just yet to publish the image. The new ''Help>Upload Sample Image'' command allows users to upload images to the ImageJ development server, where only a small number of trusted developers can access the images. This command was inspired by Fiji's command of the same name, but it is both more robust and faster than the original.
+
+=== Examples for developers ===
+
+[[Image:Call-modern-from-legacy.jpg|425px|right|thumb|'''Use ImageJ2 in legacy plugins:''' You can now create and display ImageJ2 objects (such as the spreadsheet table shown here) from within a legacy ImageJ 1.x plugin.]]
+
+We have continued to flesh out example code for developers. Since beta5 there are two new tutorials available:
+
+* [https://github.com/imagej/imagej-tutorials/tree/a2802adb/simple-command simple-command]: Shows how to write a simple ImageJ2 command that [https://github.com/imagej/imagej-tutorials/blob/a2802adb/simple-command/src/main/java/GradientImage.java generates an 8-bit gradient image].
+* [https://github.com/imagej/imagej-tutorials/tree/a2802adb/call-modern-from-legacy call-modern-from-legacy]: Shows how to embed ImageJ2 into a legacy ImageJ1 plugin, so that you can start taking advantage of new functionality without completely switching to ImageJ2. The example [https://github.com/imagej/imagej-tutorials/blob/a2802adb/call-modern-from-legacy/src/main/java/DisplayATable.java creates and displays an ImageJ2 spreadsheet table] with string values in the cells, something which cannot be done using ImageJ1's ResultsTable class.
+
+=== SLIM Plugin ===
+
+Work continued on the beta SLIM Plugin to fix bugs and improve functionality. The focus was on adding missing functionality that would make LOCI scientists want to start using SLIM Plugin as their primary FLIM fitting tool. Improvements were made to the histogram to calculate the median and quartiles, to zoom in on the interesting range of values, and to export those values to text. A batch mode was added so that SLIM Plugin can be run from a macro file and process all of the files in a directory, exporting pixel values and/or histogram bin counts.
+
+See the [http://loci.wisc.edu/software/slim-plugin SLIM Plugin web site] for details.
+
+=== Features ===
+
+See [http://trac.imagej.net/query?type=feature&milestone=imagej2-b6-legacy this report] for a high-level list of features completed for the 2.0.0-beta6 release.
+
+== Bugs fixed ==
+
+[http://trac.imagej.net/query?status=closed&type=defect&milestone=imagej2-b6-legacy 38 bugs were fixed]. In particular, the following known bugs from previous betas were closed this cycle:
+
+* There is a spurious grayed-out polygon tool on the tool bar, next to the real polygon tool. [http://trac.imagej.net/ticket/1470 #1470]
+* Image windows don't always load at the optimal scale. [http://trac.imagej.net/ticket/1472 #1472]
+
+== Known bugs ==
+
+Many legacy ImageJ plugins and macros work; some others do not. In particular, the following bugs still remain from previous betas:
+
+* If you execute many legacy plugins very quickly, there may be bugs relating to timing issues. [http://trac.imagej.net/ticket/1471 #1471]
+* The data coordinate system is off by one pixel, which causes the pixel probe and drawing tool coordinates to be slightly misaligned. [http://trac.imagej.net/ticket/716 #716] and [http://trac.imagej.net/ticket/1190 #1190]
+* Image windows sometimes leave space for nonexistent sliders. [http://trac.imagej.net/ticket/1060 #1060]
+* A few other minor zoom issues. [http://trac.imagej.net/ticket/1326 #1326]
+* IJ1 commands that have preview capabilities are not fully functional. In general their final results are correct. Going forward the preview capabilities will be restored by porting them to IJ2's GUI model. [http://trac.imagej.net/ticket/981 #981]
+* Lastly, please note that it is still the case on Windows &amp; Linux that you must have Java already installed; ImageJ2 is not bundled with Java, nor will it download it for you.
+
+See the list of [http://trac.imagej.net/report/1 Open Features] for a high-level list of planned features and bugfixes.
+
+== Roadmap and future directions ==
+
+We make a substantial effort to document the work we are doing, and what needs to be done, to deliver a powerful and full-featured ImageJ2. All tasks are tracked by our Trac issue tracking system, which you can review in several ways:
+
+* [http://trac.imagej.net/roadmap Roadmap] - Top level overview of future releases, including progress toward each release
+* [http://trac.imagej.net/report/1 Open Features] - A high-level list of features slated for each future release
+* [http://trac.imagej.net/report/2 All Open Tickets] - A complete list of known bugs
+* You can also perform custom queries to further refine the results, if there are particular parts of the development that interest you.
+
+To more accurately reflect what is left to do, we have again reestimated ImageJ2's release dates, and scheduled additional betas before the final 2.0.0 release. See the [[ImageJ2 development releases]] page  for the updated release timeline.
+
+== Thanks ==
+
+Thanks for your interest in ImageJ2! Please [[ImageJ2 development releases|give it a try]], and feel free to [Report a Bug|report any bugs you find]]!
+
+[[Category:News]]
+[[Category:ImageJ2]]
