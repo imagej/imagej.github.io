@@ -162,11 +162,11 @@ ImageJ2 user interfaces are just plugins; ImageJ2 runs with the "ImageJ1 legacy 
 
 == Does ImageJ2 support the ImageJ macro language? Is it deprecated? ==
 
-Thanks to the [https://github.com/imagej/imagej-legacy ImageJ legacy layer], ImageJ1 macros will run unchanged in ImageJ2, while also allowing to harness ImageJ2's new parameterized scripting paradigm&mdash;something that was previously not possible with the macro language.
+Thanks to the [https://github.com/imagej/imagej-legacy ImageJ legacy layer], [[ImageJ1]] [[macros]] will run unchanged in [[ImageJ2]], while also allowing to harness ImageJ2's new parameterized [[scripting]] paradigm&mdash;something that was previously not possible with the macro language.
 
 The ImageJ1 macro language has been extremely useful to many users. However, it has a substantial limitation: its functions are separate from those available from Java and the other scripting languages.
 
-In ImageJ2, the goal is to provide one unified set of functions, which is fully accessible from Java and all scripting languages. Hence, ImageJ2 plugins and scripts are more flexible than ImageJ1 plugins and macros. They can run headless on a server, and are accessible from various applications such as CellProfiler, KNIME, OMERO, and headless from the command line. We would encourage newly developed scripts and plugins to use the ImageJ2 API since it offers these advantages, but the ImageJ1 API will remain accessible, too.
+In ImageJ2, the goal is to provide one unified set of functions, which is fully accessible from Java and all scripting languages. Hence, ImageJ2 plugins and scripts are more flexible than [[ImageJ1]] [[plugins]] and [[macros]]. They can run [[headless]] on a server, and are accessible from various applications such as CellProfiler, [[KNIME]], OMERO, and headless from the command line. We would encourage newly developed scripts and plugins to use the ImageJ2 API since it offers these advantages, but the ImageJ1 API will remain accessible, too.
 
 == Can I call ImageJ1 API from an ImageJ2 command? ==
 
