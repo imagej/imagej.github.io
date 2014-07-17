@@ -145,6 +145,30 @@ Within the jdb prompt, type "help".
 * Local variables are declared with <i>let</i>, and global variables with <i>def</i>.
 * Functions are defined with <i>defn</i>, and are visible globally. Hence a function declared within a <i>let</i> statement has access to variables declared in it. This method enables closures.
 
+=== Importing classes ===
+
+{{ImportingClasses|lang=Clojure}}
+You can specify imports in Clojure in a few ways:
+<source lang="clojure">
+user=> (import java.util.Date)
+java.util.Date
+user=> (def *now* (Date.))
+#'user/*now*
+user=> (str *now*)
+
+;; Multiple imports at once.
+(import '(java.util Date Calendar)
+        '(java.net URI ServerSocket)
+        java.sql.DriverManager)
+
+;; importing multiple classes in a namespace
+(ns foo.bar
+  (:import (java.util Date
+                      Calendar)
+           (java.util.logging Logger
+                              Level)))
+</source>
+
 == Calling methods and variables on a java object ==
 <p>There are two ways, the second syntactic sugar of the first. Below, <b>imp</b> is a pointer to an ImagePlus:</p>
 
