@@ -2,7 +2,7 @@ Today the ImageJDev team is releasing the seventh beta of ImageJ2, version 2.0.0
 
 ImageJ 2.0.0-beta-7 is a "beta"-quality release, meaning the code is not finished. The design is still subject to change until the final 2.0.0 release. It is recommended that people continue to use [[ImageJ1|ImageJ v1.x]] for critical work.
 
-Download using the link below, or from the [[ImageJ2 development releases]] page, which also has a timetable for future releases.
+Download from the [[ImageJ2 development releases]] page, which also has a timetable for future releases.
 
 The ImageJ2 user interface is modeled after ImageJ v1.x as much as possible. However, under the hood, ImageJ2 is a complete redesign of ImageJ. It provides backward compatibility with older versions of ImageJ by bundling the latest v1.x code and translating between "legacy" and "modern" image structures.
 
