@@ -1,9 +1,9 @@
-Today, the ImageJ and KNIME teams are pleased to announce [https://github.com/imagej/imagej-ops ImageJ OPS]: a framework for reusable image processing operations. This library is the direct result of an extremely successful hackathon hosted by Michael Berthold's team at the University of Konstanz, Germany.
+Today, the [[ImageJ]] and [[KNIME]] teams are pleased to announce [https://github.com/imagej/imagej-ops ImageJ OPS]: a framework for reusable image processing operations. This library is the direct result of an extremely successful hackathon hosted by Michael Berthold's team at the University of Konstanz, Germany.
 
 [[Image:Konstanz-hackathon.jpg|320px|thumb|right|Happy hackers: 502 commits in five days!]]
 == Motivation ==
 
-The ImageJ2 vision is to extend Java's mantra of &quot;write once, run anywhere&quot; to image processing algorithms. With that goal at its heart, ImageJ2 introduces extensible [https://github.com/scijava/scijava-common plugin] and [https://github.com/imagej/imagej-tutorials/blob/master/working-with-modules/src/main/java/WorkingWithModules.java module] frameworks which make ImageJ commands richer, more powerful and easier to share across applications. Already, these modules are accessible from [http://cellprofiler.org/ CellProfiler], [http://tech.knime.org/community/image-processing KNIME], [https://github.com/imagej/imagej-omero OMERO] and [http://www2.informatik.uni-halle.de/agprbio/alida Alida].
+The ImageJ2 vision is to extend Java's mantra of &quot;write once, run anywhere&quot; to image processing algorithms. With that goal at its heart, ImageJ2 introduces extensible [https://github.com/scijava/scijava-common plugin] and [https://github.com/imagej/imagej-tutorials/blob/master/working-with-modules/src/main/java/WorkingWithModules.java module] frameworks which make ImageJ commands richer, more powerful and easier to share across applications. Already, these modules are accessible from [http://cellprofiler.org/ CellProfiler], [[KNIME]], [https://github.com/imagej/imagej-omero OMERO] and [http://www2.informatik.uni-halle.de/agprbio/alida Alida].
 
 But still notably missing was the next crucial layer: a framework for ''image processing'' specifically. To address that, we set out to create a framework for reusable image processing algorithms, with the following characteristics:
 
@@ -29,7 +29,7 @@ Today marks the OPS project's very first beta release: [https://github.com/image
 
 == Conclusion ==
 
-We sincerely hope that the OPS project will make it much easier for various software tools (e.g.: KNIME, CellProfiler, OMERO, Alida, Icy, Vaa3D and of course ImageJ itself) to provide drop-in support for ImageJ's image processing operations, allowing scientists to truly &quot;write once, run anywhere&quot; and share with the world!
+We sincerely hope that the OPS project will make it much easier for various software tools (e.g.: [[KNIME]], CellProfiler, OMERO, Alida, Icy, Vaa3D and of course ImageJ itself) to provide drop-in support for ImageJ's image processing operations, allowing scientists to truly &quot;write once, run anywhere&quot; and share with the world!
 
 <br/>
 -----
@@ -43,7 +43,7 @@ P.S. Here is a detailed list of accomplishments during the hackathon:
 ** Extensible optimization framework
 ** Code is short, easy to read, fast & general!
 * Defined coding conventions and the process for imagej-ops development
-* Martin, Christian et al: Ported existing ops from ImgLib2 and KNIME to imagej-ops
+* Martin, Christian et al: Ported existing ops from [[ImgLib2]] and [[KNIME]] to imagej-ops
 ** Christian, Michael Z: base for multithreaded ops
 ** Martin: lots and lots of ops
 ** Christian: meta ops: map, join, loop
@@ -61,7 +61,7 @@ Hackathons are great opportunities to Get Things Done, so we also worked on rela
 * Christian: Started porting all descriptors
 * Christian, Martin & Johannes: Set-up Maven/Jenkins to automatically create OSGi bundles
 
-Thank you so much to the KNIME team for making all of this possible!!
+Thank you so much to the [[KNIME]] team for making all of this possible!!
 
 P.P.S. There is even an <code>ascii</code> op to dump an image to the console. This is surprisingly useful for unit testing, validating expectations and general debugging:
 
