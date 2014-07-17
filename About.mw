@@ -31,7 +31,7 @@ ImageJ2 provides a wealth of new features and capabilities:
 ** Typed inputs and outputs with no dependence on AWT user interface.
 ** Mix and match ImageJ 1.x and ImageJ2 data structures.
 ** Plugins appear in the menu automatically without plugins.config files.
-** Reusable in many contexts: KNIME, CellProfiler, OMERO, headless...
+** Reusable in many contexts: [[KNIME]], CellProfiler, OMERO, headless...
 
 === Improved image I/O with the SCIFIO library ===
 
