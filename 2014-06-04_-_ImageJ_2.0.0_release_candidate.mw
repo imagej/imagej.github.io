@@ -22,7 +22,7 @@ ImageJ2 provides a wealth of new features and capabilities:
 <ul>
 <li>Declare typed inputs and outputs with the <code>@Parameter</code> annotation and let ImageJ handle the user interaction, avoiding any dependence on the AWT user interface (see example below).</li>
 <li>Parameter support for scripts and macros (see section below)</li>
-<li>Reusable in many contexts: [http://www.knime.org/ KNIME], [http://www.cellprofiler.org/ CellProfiler], [http://www.openmicroscopy.org/site/products/omero OMERO], headless...</li>
+<li>Reusable in many contexts: [[KNIME]], [http://www.cellprofiler.org/ CellProfiler], [http://www.openmicroscopy.org/site/products/omero OMERO], headless...</li>
 <li>Plugins appear in the menu automatically without <code>plugins.config</code> files, and without having to set the <code>plugins.dir</code> property to a single directory containing all the .jar files with special naming requirements.</li>
 <li>Mix and match ImageJ 1.x and ImageJ2 data structures!</li></ul>
 
@@ -57,7 +57,7 @@ public class SetImageTitle implements Command {
 
 ImageJ2 comes with a versatile and elegant scripting framework: all languages can be accessed in the same, consistent way. New languages can be supported by implementing script language plugins; the script editor will automatically support such languages. By default, ImageJ supports Beanshell, Javascript, Jython, JRuby, Clojure, ImageJ 1.x macro and Java "as a script language". Experimental alpha versions are available for Scala and native Python.
 
-Similar to commands supporting <code>@Parameter</code> annotations asking ImageJ to auto-generate dialogs, scripts support a related concept: By declaring typed variables in commented lines on top of the script, ImageJ (or KNIME, CellProfiler, OMERO, etc) will be asked to auto-generate the appropriate dialogs when executing the scripts.
+Similar to commands supporting <code>@Parameter</code> annotations asking ImageJ to auto-generate dialogs, scripts support a related concept: By declaring typed variables in commented lines on top of the script, ImageJ (or [[KNIME]], CellProfiler, OMERO, etc) will be asked to auto-generate the appropriate dialogs when executing the scripts.
 
 Identical to thusly parameterized scripts, it is now also possible to declare in ImageJ 1.x macros what input parameters are required (see the ImageJ2 script editor screenshot on the right with a parameterized macro in action).
 
