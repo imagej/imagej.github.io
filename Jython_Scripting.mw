@@ -29,6 +29,14 @@ Within the interpreter, all ImageJ, java.lang.* and TrakEM2 classes are automati
 * Jython (and python in general) accepts a mixture of procedural and object-oriented code.
 * Jython currently implements the Python language at its 2.5 version. All [http://www.python.org/doc/2.5.2/ documentation for python 2.5] applies to Jython bundled with Fiji (with the remarks listed later).
 
+==== Importing classes ====
+
+{{ImportingClasses | lang = Jython}}
+You can specify imports in Jython as follows:
+<source lang="jython">
+from java.io import File
+</source>
+Where <code>java.io.File</code> is the class to be imported.
 
 === Workflow for creating Jython scripts === 
 
