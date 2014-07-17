@@ -73,7 +73,11 @@ You might find the use of "ij.IJ.getImage" above slightly suspicious if you're u
 
 Note that this is an example of creating an object in JRuby; you use the usual Something.new syntax of Ruby, but it creates an object of the standard Java class.  Hopefully you're thinking "Excellent!" or something similar at this stage...
 
-If you need to use classes that aren't in the java.* or ij.* hierarchy, you will have to include them explicitly.  For example, in the classpath of Fiji there is a useful class called util.BatchOpener, that has static methods for opening files as arrays of ImagePlus objects (one per channel) without showing them.  To use these methods, you would have to do:
+=== Importing classes ===
+
+If you need to use classes that aren't in the java.* or ij.* hierarchy&mdash;or if you are developing JRuby scripts in the [[Script Editor]]&mdash;you will have to include them explicitly.
+{{ImportingClasses|lang=JRuby}}
+For example, in the classpath of [[Fiji]] there is a useful class called util.BatchOpener, that has static methods for opening files as arrays of ImagePlus objects (one per channel) without showing them.  To use these methods, you would have to do:
 
   >>> java_import 'util.BatchOpener'
   util.BatchOpener
