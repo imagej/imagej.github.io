@@ -7,7 +7,7 @@ This tutorial explains how to '''set up a website to distribute your plugins'''.
 
 By far the easiest method to provide your macros, scripts and plugins to other users, letting them keep up-to-date in the most convenient manner, is to set up your ''personal update site''.
 
-A ''personal update site'' is hosted on <nowiki>http://sites.imagej.net/<imagej-wiki-account></nowiki>. If you do not have a ImageJ Wiki account yet, no need to worry, you can register one while setting up your update site.
+A ''personal update site'' is hosted on <nowiki>http://sites.imagej.net/<imagej-wiki-account></nowiki>. If you do not have an ImageJ Wiki account yet, no need to worry, you can register one while setting up your update site.
 
 First of all, start the updater with ''Help>Update'' and click on the ''Manage update sites'' button:
 
@@ -17,7 +17,7 @@ Now, click ''Add my site''.
 
 === Specifying an existing ImageJ Wiki account ===
 
-If you already have a ImageJ Wiki account, enter the name of that account and click ''OK'':
+If you already have an ImageJ Wiki account, enter the name of that account and click ''OK'':
 
 [[Image:Personal-Update-Site-1.png|770px]]
 
