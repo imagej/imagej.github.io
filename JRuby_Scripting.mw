@@ -19,7 +19,7 @@ JRuby scripting in ImageJ is a nice alternative to scripting using ImageJ's macr
 
 ''(These advantages, of course, are shared by the [[Jython Scripting]], [[Clojure Scripting]], Beanscript and [[Javascript Scripting]] bundled in Fiji.)''
 
-If you have any questions or suggestions about JRuby scripting in ImageJ, please contact [mailto:mark-jruby@longair.net Mark Longair].  Have fun!
+If you have any questions or suggestions about JRuby scripting in ImageJ, please [[Mailing Lists|contact the mailing list]].  Have fun!
 
 == Tutorial ==
 
