@@ -103,7 +103,7 @@ counter++;
 
 = Functions =
 
-Most of the time, you will call ''functions'' which implement the actions you want to execute. Functions have names, like variables, but they also have ''parameters'' that you can pass to the functions. ImageJ comes with many [http://rsbweb.nih.gov/ij/developer/macro/functions.html predefined functions] that you can call to perform specific calculations or other operations.
+Most of the time, you will call ''functions'' which implement the actions you want to execute. Functions have names, like variables, but they also have ''parameters'' that you can pass to the functions. ImageJ comes with many [http://imagej.net/developer/macro/functions.html predefined functions] that you can call to perform specific calculations or other operations.
 
 This example writes ''Hello, World!'' to the ''Log'' window:
 
@@ -261,7 +261,7 @@ run("Merge Channels...",
 
 = Installing macros =
 
-To install keyboard shortcuts or tool icons, you need to [http://rsb.info.nih.gov/ij/developer/macro/macros.html#tools wrap macro code in ''macro'' blocks]:
+To install keyboard shortcuts or tool icons, you need to [http://imagej.net/developer/macro/macros.html#tools wrap macro code in ''macro'' blocks]:
 
 <source lang="java">
 macro "Title of the macro" {
@@ -303,7 +303,7 @@ macro "Save As JPEG Action Tool - C000R11ee" {
 }
 </source>
 
-The icon is defined by a funny-looking string (in this case, ''C000R11ee''). To learn how to define your own icon, please have a look [http://rsb.info.nih.gov/ij/developer/macro/macros.html#icons here].
+The icon is defined by a funny-looking string (in this case, ''C000R11ee''). To learn how to define your own icon, please have a look [http://imagej.net/developer/macro/macros.html#icons here].
 
 Many tools open an option dialog upon double-click on the icon. You can do that, too, by choosing a name that ends in ''Action Tool Options'':
 
@@ -622,11 +622,10 @@ macro "Split and Merge" {
 
 == More example macros ==
 
-There are quite a lot of macros on the [http://imagej.nih.gov/ij/macros/ ImageJ website], and specifically [http://imagej.nih.gov/ij/macros/examples/ example macros] including a few from the Macro workshop at the [http://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2010 ImageJ conference 2010]. Since there is no categorized index, you might want to use the search facility on [http://imagej.nih.gov/ij/developer/index.html this page].
+There are quite a lot of macros on the [http://imagej.net/macros/ ImageJ website], and specifically [http://imagej.net/macros/examples/ example macros] including a few from the Macro workshop at the [http://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2010 ImageJ conference 2010]. Since there is no categorized index, you might want to use the search facility on [http://imagej.net/developer/index.html this page].
 
 = Further documentation =
 
-A complete description of the macro language, a reference of the built-in functions, and examples can be found [http://rsb.info.nih.gov/ij/developer/index.html here].
-
+A complete description of the macro language, a reference of the built-in functions, and examples can be found [http://imagej.net/developer/index.html here].
 
 [[Category:Scripting]][[Category:Tutorials]]
