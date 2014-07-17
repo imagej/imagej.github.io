@@ -4,9 +4,9 @@
 {{Infobox Plugin
 | software               = Fiji
 | name                   = Bug Submitter
-| maintainer             = Mark Longair
-| author                 = Mark Longair
-| source                 = on [https://github.com/fiji/Bug_Submitter github.com]
+| maintainer             = [[User:Schindelin|Johannes Schindelin]]<br/>[[User:Rueden|Curtis Rueden]]
+| author                 = [[User:Mark|Mark Longair]]
+| source                 = {{GitHubSource|org=fiji|repo=Bug_Submitter}}
 | released               = 03/05/2009
 | latest version         = 30/09/2009
 | status                 = maintained
