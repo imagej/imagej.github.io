@@ -150,8 +150,10 @@ Within the jdb prompt, type "help".
 {{ImportingClasses|lang=Clojure}}
 You can specify imports in Clojure in a few ways:
 <source lang="clojure">
+;; A single import.
 (import java.util.Date)
-java.util.Date
+
+;; Use it!
 (def *now* (Date.))
 (str *now*)
 
