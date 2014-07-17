@@ -40,11 +40,11 @@ Development of this release of ImageJ focused on improved legacy support.
 
 === Compatibility ===
 
+[[Image:Legacy-mode.gif|571px|right|thumb|'''Legacy mode:''' ImageJ2's legacy mode provides total compatibility with ImageJ1.]]
+
 There have been numerous compatibility improvements and bugfixes. Since beta5 the team [http://trac.imagej.net/milestone/imagej2-b6-legacy closed 54 issues] and made progress on many more. For instance, there is improved support for legacy commands such as: Image Type, Apply LUT, Cut, and Fill. See the full list of beta 6 changes [http://trac.imagej.net/query?status=closed&milestone=imagej2-b6-legacy here].
 
 === Legacy mode ===
-
-[[Image:Legacy-mode.gif|571px|right|thumb|'''Legacy mode:''' ImageJ2's legacy mode provides total compatibility with ImageJ1.]]
 
 Although we emphasize backwards-compatibility strongly, and tried to design the architecture with that emphasis in mind, some legacy plugins still do not work. However, since we bundle a complete ImageJ 1.x, it was not too difficult to include a fallback "legacy mode" for such case. In this legacy mode, all image displays are hidden and those that are compatible with ImageJ 1.x are shown in old-style windows. Likewise, the main window is hidden in favor of ImageJ 1.x's main window. To go back, the command ''Switch to Modern Mode'' is available in the ''Help'' menu.
 
