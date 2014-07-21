@@ -14,7 +14,7 @@
 | [http://code.imagej.net/chatlogs/fiji-devel fiji-devel logs]
 |}
 
-If Javascript is enabled in your browser, you can connect to ''#fiji-devel'' right away, right here, by entering the captcha and clicking ''Connect'':
+If Javascript is enabled in your browser, you can connect to '''#fiji-devel''' right away, right here, by entering the captcha and clicking ''Connect'':
 
 <include iframe src="http://webchat.freenode.net?randomnick=1&channels=fiji-devel&uio=d4" width="647" height="400" />
 
