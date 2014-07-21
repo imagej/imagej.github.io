@@ -1,6 +1,20 @@
-We have a chat room (also called channel) on irc.freenode.net: [irc://irc.freenode.net/fiji-devel #fiji-devel].
+[[ImageJ]] developers frequent IRC on [http://freenode.net/ irc.freenode.net], in chat rooms:
+{| class="wikitable"
+|-
+! Channel
+! Description
+! Chat logs
+|-
+| [irc://irc.freenode.net/imagejdev #imagejdev]
+| Core [[ImageJ2]] development discussion.
+| [http://code.imagej.net/chatlogs/imagejdev imagejdev logs]
+|-
+| [irc://irc.freenode.net/fiji-devel #fiji-devel]
+| [[Fiji]] user and developer discussion and questions.
+| [http://code.imagej.net/chatlogs/fiji-devel fiji-devel logs]
+|}
 
-If Javascript is enabled in your browser, you can connect right away, right here, by entering the captcha and clicking ''Connect'':
+If Javascript is enabled in your browser, you can connect to ''#fiji-devel'' right away, right here, by entering the captcha and clicking ''Connect'':
 
 <include iframe src="http://webchat.freenode.net?randomnick=1&channels=fiji-devel&uio=d4" width="647" height="400" />
 
