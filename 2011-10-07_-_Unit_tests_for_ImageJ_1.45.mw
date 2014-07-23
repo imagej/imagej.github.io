@@ -55,7 +55,7 @@ Once all the tests pass, [http://jenkins.imagej.net/ Jenkins] can run them autom
 # testGetProcessor(ij.VirtualStackTest): arrays first differed at element [2]; expected:&lt;0&gt; but was:&lt;120&gt;
 |-
 | 1.45r+
-| See the [http://developer.imagej.net/2012/03/20/unit-tests-imagej-146 ImageJ 1.46 unit tests blog post]
+| See the [[2012-03-20 - Unit tests for ImageJ 1.46|ImageJ 1.46 unit tests blog post]
 |}
 
 [[Category:News]]
