@@ -1,0 +1,62 @@
+When we launched the [[ImageJ2]] project, we began by writing many unit tests to protect [[ImageJ 1.x]] from regression bugs. At this writing, there are unit tests in place for 50 core IJ1 classes, intended to detect bugs introduced during ImageJ development. These tests are located in the [http://github.com/imagej/ij1-tests ij1-tests repository].
+
+Originally, the tests were designed to run against a modified version of IJ1 that we were developing to facilitate integration with IJ2. However, as development continued, we settled on a design that achieves [http://developer.imagej.net/compatibility maximum compatibility] by embedding IJ1 as-is within IJ2, enabling IJ1 to continue developing in parallel with IJ2. We eliminated the modified version of IJ1, with only the unit tests being retained. Unfortunately, we did not finish fully transitioning the tests, and they were not compiling against stock versions of IJ1.
+
+As of now, we have fixed up the tests to compile ([https://github.com/imagej/imagej/commit/9fc9ac6599c279bc83eb0a62d922f34517c47e37 r4092]) and run ([https://github.com/imagej/imagej/commit/b51494bb19c094b4430d3936a5e30383c722b35a r4096], [https://github.com/imagej/imagej/commit/d1d4ffd94096a0843e751533d909513faaccb7c3 r4098]) against stock versions of ImageJ v1.44 and later, and posted [[Unit tests for ImageJ1|instructions for running them]].
+
+We then ran the tests against all the 1.45 development versions. The results are below.
+
+Over time, a small but increasing number of tests are failing, which indicates changing behavior creeping into the code. Of course, sometimes changing behavior is good, such as when bugs are fixed. But sometimes these sorts of changes indicate regression bugs being introduced. The only way to know for sure is to examine each failure on an individual basis. For each one, either the test needs to be updated (in the case of a bugfix causing the test to fail when testing for the previous buggy behavior), or the code needs to be fixed to preserve the prior behavior (in the case of a regression bug having been introduced).
+
+Once all the tests pass, [http://jenkins.imagej.net/ Jenkins] can run them automatically whenever a new version of ImageJ 1.x is released, and report any failures via email, so that we become aware as early as possible when regression bugs have been introduced.
+
+{| class="wikitable"
+|-
+! Version(s)
+! Results
+|-
+| 1.43u
+| DOES NOT COMPILE (version too old)
+|-
+| 1.44o
+| ALL PASS
+|-
+| 1.45a
+| ALL PASS
+|-
+| 1.45b
+| 2 FAILURES:
+# '''testFitSplineForStraightening(ij.gui.PolygonRoiTest): array lengths differed, expected.length=4 actual.length=8'''
+# '''testGetUncalibratedLength(ij.gui.PolygonRoiTest): expected:&lt;1.0&gt; but was:&lt;6.324555320336759&gt;'''
+|- 
+| 1.45c - 1.45h
+| 4 FAILURES:
+# testFitSplineForStraightening(ij.gui.PolygonRoiTest): array lengths differed, expected.length=4 actual.length=8
+# testGetUncalibratedLength(ij.gui.PolygonRoiTest): expected:&lt;1.0&gt; but was:&lt;6.324555320336759&gt;
+# '''testGetPixels(ij.VirtualStackTest): arrays first differed at element [2]; expected:&lt;0&gt; but was:&lt;120&gt;'''
+# '''testGetProcessor(ij.VirtualStackTest): arrays first differed at element [2]; expected:&lt;0&gt; but was:&lt;120&gt;'''
+|- 
+| 1.45i - 1.45n
+| 5 FAILURES:
+# '''testDrawPixelsImageProcessor(ij.gui.ArrowTest): expected:&lt;0&gt; but was:&lt;73&gt;'''
+# testFitSplineForStraightening(ij.gui.PolygonRoiTest): array lengths differed, expected.length=4 actual.length=8
+# testGetUncalibratedLength(ij.gui.PolygonRoiTest): expected:&lt;1.0&gt; but was:&lt;6.324555320336759&gt;
+# testGetPixels(ij.VirtualStackTest): arrays first differed at element [2]; expected:&lt;0&gt; but was:&lt;120&gt;
+# testGetProcessor(ij.VirtualStackTest): arrays first differed at element [2]; expected:&lt;0&gt; but was:&lt;120&gt;
+|- 
+| 1.45o - 1.45q
+| 7 FAILURES:
+# testDrawPixelsImageProcessor(ij.gui.ArrowTest): expected:&lt;0&gt; but was:&lt;73&gt;
+# testFitSplineForStraightening(ij.gui.PolygonRoiTest): array lengths differed, expected.length=4 actual.length=8
+# testGetUncalibratedLength(ij.gui.PolygonRoiTest): expected:&lt;1.0&gt; but was:&lt;6.324555320336759&gt;
+# '''testGetConvexHull(ij.gui.ShapeRoiTest)'''
+# '''testGetFeretValues(ij.gui.ShapeRoiTest): arrays first differed at element [0]; expected:&lt;10.44016&gt; but was:&lt;10.44030650891055&gt;'''
+# testGetPixels(ij.VirtualStackTest): arrays first differed at element [2]; expected:&lt;0&gt; but was:&lt;120&gt;
+# testGetProcessor(ij.VirtualStackTest): arrays first differed at element [2]; expected:&lt;0&gt; but was:&lt;120&gt;
+|-
+| 1.45r+
+| See the [http://developer.imagej.net/2012/03/20/unit-tests-imagej-146 ImageJ 1.46 unit tests blog post]
+|}
+
+[[Category:News]]
+[[Category:ImageJ2]]
