@@ -122,7 +122,7 @@ When reporting a bug, the developers may ask you to test with the '''Bio-Formats
 
 To enable the Bio-Formats update site:
 
-# Launch the updater: '''Update Fiji''' from the '''Help''' menu.
+# Launch the updater: '''Update''' from the '''Help''' menu.
 # Click the '''Manage update sites''' button.
 # Tick the '''Bio-Formats''' box: [[File:Bf-manage-update-sites.png|700px|center]]
 # Click the '''Close''' button. The updater should want to update some files now: [[File:Bf-jars-to-update.png|700px|center]]
