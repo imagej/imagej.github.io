@@ -1,0 +1,25 @@
+We have [http://developer.imagej.net/2011/10/07/unit-tests-imagej-145 written a substantial number of unit tests] to exercise ImageJ 1.x functionality. You can find them in the [http://github.com/imagej/ij1-tests ij1-tests repository]:
+<source lang="bash">
+git clone git://github.com/imagej/ij1-tests
+</source>
+There is a [http://jenkins.imagej.net/job/ImageJ1-unit-tests/ Jenkins job] that automatically runs the tests with each new version of ImageJ 1.x.
+
+=== Running the tests ===
+
+If you wish to run the unit tests manually, you can do so from the command line:
+<source lang="bash">
+cd ij1-tests
+mvn clean test
+</source>
+Or from Eclipse:
+
+# Import the <code>ij1-tests</code> project using File &gt; Import Existing Maven Projects and choosing the <code>ij1-tests/pom.xml</code> file.
+# Right-click the <code>ij1-tests</code> project, Run As &gt; JUnit Test.
+
+=== Using a different version of ImageJ1 ===
+
+You can change which version of ImageJ1 is tested by overridding the <code>imagej1.version</code> property:
+<source lang="bash">
+mvn -Dimagej1.version=1.48a clean test
+</source>
+Or whichever version you wish to use (of [http://maven.imagej.net/content/repositories/releases/net/imagej/ij/ those listed here]). The unit tests were created circa 1.44, and do not compile correctly with earlier versions of ImageJ.
