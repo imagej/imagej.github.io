@@ -22,9 +22,10 @@ importClass(Packages.java.io.File)
 </source>
 Where <code>java.io.File</code> is the class to be imported.
 
-For the most common stuff like e.g. ''IJ'' or ''GenericDialog'' the following lines would be required:
+For the most common stuff like e.g. ''IJ'', the ''RoiManager'' or ''GenericDialog'' the following lines would be required:
 <source lang="javascript">
 importClass(Packages.ij.IJ);
+importClass(Packages.ij.plugin.frame.RoiManager);
 importClass(Packages.ij.gui.GenericDialog);
 </source>
 
