@@ -82,6 +82,9 @@ a is NaN!
 ::
 :: ... are already included in Fiji.
 
+* <u>Your Jython version may be matching a much older Python version than you expect.</u>
+:: The latest Jython stable release (as of July 2014) is 2.5.3 and that is not even being distributed with Fiji yet. Any recent Python syntax such as <tt>except ExceptionType as e:</tt> or <tt>with open(filepath, 'r') as f:</tt> will fail.
+
 == Jython tutorials for ImageJ ==
 
 === Defining variables: obtaining the current image ===
