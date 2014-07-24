@@ -73,14 +73,14 @@ a is NaN!
 </source>
 
 * <u>Some existing python modules can't be imported in jython.</u>
-This is for instance the case of the module ''numpy'', which would have been really convenient for analysing data and results.
+:: This is for instance the case of the module ''numpy'', which would have been really convenient for analysing data and results.
+::
+:: But see these java numerical libraries: http://math.nist.gov/javanumerics/#libraries , of which:
 
-But see these java numerical libraries: http://math.nist.gov/javanumerics/#libraries , of which:
-
-*JaMa (Java Matrix Package)
-*Java3D (particularly its [http://java.sun.com/products/java-media/3D/forDevelopers/j3dapi/javax/vecmath/package-summary.html vecmath] package provides general matrix and vector classes ([http://java.sun.com/products/java-media/3D/forDevelopers/j3dapi/javax/vecmath/GMatrix.html GMatrix], [http://java.sun.com/products/java-media/3D/forDevelopers/j3dapi/javax/vecmath/GVector.html GVector]).
-
-... are already included in Fiji.
+:* JaMa (Java Matrix Package)
+:* Java3D (particularly its [http://java.sun.com/products/java-media/3D/forDevelopers/j3dapi/javax/vecmath/package-summary.html vecmath] package provides general matrix and vector classes ([http://java.sun.com/products/java-media/3D/forDevelopers/j3dapi/javax/vecmath/GMatrix.html GMatrix], [http://java.sun.com/products/java-media/3D/forDevelopers/j3dapi/javax/vecmath/GVector.html GVector]).
+::
+:: ... are already included in Fiji.
 
 == Jython tutorials for ImageJ ==
 
