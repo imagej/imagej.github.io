@@ -1,6 +1,8 @@
 __NOTOC__
 There are several mailing lists for community discussion and troubleshooting.
 
+{{UseMailingLists}}
+
 If you have a natural allergy toward subscribing to mailing lists, the developers' mailing lists moderate posts from non-members (make '''really''' sure that you '''reply-to-all''' for that reason!). You can use [http://nabble.com Nabble]'s forum interface to [http://imagej.1557.x6.nabble.com/ ImageJ], [http://imagej-devel.54429.x6.nabble.com ImageJ-devel] or [http://fiji-devel.54424.x6.nabble.com/ fiji-devel]. Or just browse the archives to find information regarding your problem.
 
 == ImageJ ==
