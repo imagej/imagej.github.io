@@ -4,7 +4,7 @@
 | author                 = Johannes Schindelin, Francois Kusztos, Benjamin Schmid
 | maintainer             = Benjamin Schmid
 | filename               = VIB_.jar
-| source                 = {{GitLink|jar=VIB_|path=Segmentation_Editor.java}}
+| source                 = [https://github.com/fiji/VIB/blob/master/src/main/java/Segmentation_Editor.java github.com/fiji/VIB]
 | status                 = stable
 }}
 
