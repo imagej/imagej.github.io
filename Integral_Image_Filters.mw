@@ -3,7 +3,7 @@
 | software               = Fiji
 | author                  = [[User:Saalfeld|Stephan Saalfeld]] ([mailto:saalfeld@mpi-cbg.de])
 | maintainer             = [[User:Saalfeld|Stephan Saalfeld]]
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/integral gitweb]
+| source                 = [https://github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/integral GitHub]
 | released               = March 21<sup>st</sup>, 2011
 | latest version         = February 22<sup>nd</sup>, 2012
 | status                 = stable, active
