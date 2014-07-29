@@ -269,7 +269,7 @@ IJ.showStatus(“Hello, world!”);
 
 == Frequently used operators ==
 
-The [http://fiji.sc/javadoc/ij/process/ImageProcessor.html ''ImageProcessor''] class has a few methods such as ''smooth()'', ''sharpen()'', ''findEdges()'', etc
+The {{Javadoc_IJ1|package=ij/process|class=ImageProcessor}} class has a few methods such as ''smooth()'', ''sharpen()'', ''findEdges()'', etc
 
 '''Tip:''' use the Script Editor's functions in the ''Tools'' menu:
 * ''Open Help for Class...'' (opens the JavaDoc for a class in a browser),
