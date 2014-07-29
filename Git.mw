@@ -29,7 +29,7 @@ Some useful documentation, in particular for Fiji:
 * [[Git_submodule_tutorial|A tutorial on submodules]]
 * [[Git_bisection|How to find which commit introduced a regression]]
 * [[SSH_public_keys|Setting up password-less SSH login]]
-* [http://developer.imagej.net/coding-style#SCM_history Best practices established by the ImageJDev project]
+* [http://imagej.net/Coding_style#SCM_history Best practices established by the ImageJ2 project]
 * [[Git_Notes|Some notes on Git usage by Dr. Saalfeld]]
 * [[Git_for_dummies|Git recipes from Pavel so that he doesn't have to ask again]]
 
