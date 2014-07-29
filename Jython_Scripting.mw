@@ -204,7 +204,7 @@ imp.show()
 
 <source lang="python">
 # 1 - Obtain an image
-blobs = IJ.openImage("http://rsb.info.nih.gov/ij/images/blobs.gif")
+blobs = IJ.openImage("http://imagej.net/images/blobs.gif")
 # Make a copy with the same properties as blobs image:
 imp = blobs.createImagePlus()
 ip = blobs.getProcessor().duplicate()
@@ -252,7 +252,7 @@ table = ResultsTable()
 roim = RoiManager(True)
 # Create a ParticleAnalyzer, with arguments:
 # 1. options (could be SHOW_ROI_MASKS, SHOW_OUTLINES, SHOW_MASKS, SHOW_NONE, ADD_TO_MANAGER, and others; combined with bitwise-or)
-# 2. measurement options (see [http://rsb.info.nih.gov/ij/developer/api/ij/measure/Measurements.html Measurements])
+# 2. measurement options (see [http://imagej.net/developer/api/ij/measure/Measurements.html Measurements])
 # 3. a ResultsTable to store the measurements
 # 4. The minimum size of a particle to consider for measurement
 # 5. The maximum size (idem)
@@ -363,11 +363,11 @@ finally:
 The easiest way is to grab an image and call an ImageJ command to show its histogram:
 
 <source lang="python">
-imp = IJ.openImage("http://rsb.info.nih.gov/ij/images/blobs.gif")
+imp = IJ.openImage("http://imagej.net/images/blobs.gif")
 IJ.run(imp, "Histogram", "")
 </source>
 
-How ImageJ does it, internally, has to do with the [http://rsb.info.nih.gov/ij/developer/api/ij/process/ImageStatistics.html ImageStatisics] class:
+How ImageJ does it, internally, has to do with the [http://imagej.net/developer/api/ij/process/ImageStatistics.html ImageStatisics] class:
 
 <source lang="python">
 stats = imp.getStatistics()
@@ -393,7 +393,7 @@ print stats.histogram
 
 The histogram, area and mean are computed by default. Other values like the median need to be specified.
 
-To calculate other parameters, specify them by bitwise-or composition (see flags in [http://rsb.info.nih.gov/ij/developer/api/ij/measure/Measurements.html Measurements]):
+To calculate other parameters, specify them by bitwise-or composition (see flags in [http://imagej.net/developer/api/ij/measure/Measurements.html Measurements]):
 
 <source lang="python">
 stats = imp.getStatistics(Measurements.MEAN | Measurements.MEDIAN | Measurements.AREA)
@@ -416,7 +416,7 @@ print "mean:", stats.mean, "median:", stats.median, "area:", stats.area
 
 
 
-To display the histogram window ourselves, we may use the [http://rsb.info.nih.gov/ij/developer/api/ij/gui/HistogramWindow.html HistogramWindow] class:
+To display the histogram window ourselves, we may use the [http://imagej.net/developer/api/ij/gui/HistogramWindow.html HistogramWindow] class:
 
 <source lang="python">
 hwin = HistogramWindow(imp)
@@ -1094,7 +1094,7 @@ run()
 
 === Apply a binary mask to every slice in an image stack ===
 
-Will work with regular stacks and with any kind of complex stack like a composite image or a 4d volume. Keep in mind that all stack types in ImageJ consists of a sequence of 2d images, each editable with an [http://rsb.info.nih.gov/ij/developer/api/ij/process/ImageProcessor.html ImageProcessor] obtained from the [http://rsb.info.nih.gov/ij/developer/api/ij/ImageStack.html ImageStack] that one can get from the [http://rsb.info.nih.gov/ij/developer/api/ij/ImagePlus.html ImagePlus]. (The [http://rsb.info.nih.gov/ij/developer/api/ij/ImagePlus.html ImagePlus] being what the opener or the [http://rsb.info.nih.gov/ij/developer/api/ij/WindowManager.html WindowManager] provides.)
+Will work with regular stacks and with any kind of complex stack like a composite image or a 4d volume. Keep in mind that all stack types in ImageJ consists of a sequence of 2d images, each editable with an [http://imagej.net/developer/api/ij/process/ImageProcessor.html ImageProcessor] obtained from the [http://imagej.net/developer/api/ij/ImageStack.html ImageStack] that one can get from the [http://imagej.net/developer/api/ij/ImagePlus.html ImagePlus]. (The [http://imagej.net/developer/api/ij/ImagePlus.html ImagePlus] being what the opener or the [http://imagej.net/developer/api/ij/WindowManager.html WindowManager] provides.)
 
 <source lang="python">
 # Albert Cardona 2012-10-05 for Sara Abrahamsson
