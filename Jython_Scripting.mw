@@ -1529,7 +1529,7 @@ A better example that exploits the capabilities of the Weaver is the following: 
 from fiji.scripting import Weaver
 
 # The currently open image, an 8-bit stack
-imp = IJ.openImage("http://imagej.nih.gov/ij/images/bat-cochlea-volume.zip")
+imp = IJ.openImage("http://imagej.net/images/bat-cochlea-volume.zip")
 
 slices = [None, None]
 
