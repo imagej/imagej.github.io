@@ -3,7 +3,7 @@
 | name                   = Linear Kuwahara
 | maintainer             = Christian Tischer
 | author                 = Christian Tischer
-| source                 = [https://github.com/fiji/Linear_Kuwahara in gitweb]
+| source                 = {{GitLink|jar=Linear_Kuwahara}}
 | released               = 08/10/2010
 | latest version         = 08/10/2010
 | status                 = 
