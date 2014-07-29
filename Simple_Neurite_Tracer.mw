@@ -10,7 +10,7 @@ __NOTOC__
 | author                 = Mark Longair [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/#authors and others]
 | maintainer             = Mark Longair
 | filename               = Simple_Neurite_Tracer.jar
-| source                 = {{GitLink|jar=Simple_Neurite_Tracer.java}}
+| source                 = {{GitLink|jar=Simple_Neurite_Tracer}}
 | status                 = stable
 }}
 
