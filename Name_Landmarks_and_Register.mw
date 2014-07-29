@@ -4,7 +4,7 @@
 | author                 = Mark Longair and Greg Jefferis
 | maintainer             = Mark Longair
 | filename               = VIB_.jar
-| source                 = {{GitLink|jar=VIB_|path=landmarks/Name_Points.java}}
+| source                 = {{GitLink|jar=VIB|path=landmarks/Name_Points.java}}
 | status                 = stable
 }}
 
