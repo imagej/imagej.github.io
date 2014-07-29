@@ -144,7 +144,7 @@ Note the reversal of ''[[#Cf._Segmentation|Cf. Segmentation]] output'' and how t
             margin-bottom: 2em;
             background-color: #ffefbe;
             {{border-radius|.75em}}{{box-shadow}}">
-'''N.B.:''' With binary images, ''Sholl Analysis'' treats  zero intensities as the background, independently of the image lookup table or the state of the ''Black background option'' in <span style="border-bottom:1px dotted #ccc;">Process▷ Binary▷ Options...</span> As with any other [http://rsbweb.nih.gov/ij/docs/guide/146-29.html#infobox:blackBackground ImageJ routine], confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.</div>
+'''N.B.:''' With binary images, ''Sholl Analysis'' treats  zero intensities as the background, independently of the image lookup table or the state of the ''Black background option'' in <span style="border-bottom:1px dotted #ccc;">Process▷ Binary▷ Options...</span> As with any other [http://imagej.net/docs/guide/146-29.html#infobox:blackBackground ImageJ routine], confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.</div>
 
 == Sholl Plots ==
 <center>
@@ -378,7 +378,7 @@ This section discusses some aspects that should be taken into account when segme
 :* [[Lasso selection|Blow/Lasso Tool]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
 :* Scripts from the [[BAR]] [[List_of_update_sites|update site]], <span style="border-bottom:1px dotted #ccc;">BAR▷ [[BAR#Segmentation|Segmentation]]▷</span>
 {{Tip
-|tip = For additional image processing tools have a look at the growing list of  [[List_of_update_sites|update sites]]. For more information on image processing have a look at the Fiji [[Cookbook]], [[:Category:Tutorials|tutorials]], the [http://imagejdocu.tudor.lu ImageJ Information and Documentation Portal] and the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide].
+|tip = For additional image processing tools have a look at the growing list of  [[List_of_update_sites|update sites]]. For more information on image processing have a look at the Fiji [[Cookbook]], [[:Category:Tutorials|tutorials]], the [http://imagejdocu.tudor.lu ImageJ Information and Documentation Portal] and the [http://imagej.net/docs/guide/ ImageJ User Guide].
 }}
 == Batch Processing ==
 {{Scripting}}It is fairly simple to [[Scripting Help|automate]] the analysis of multiple images using any of the scripting languages supported by ImageJ and Fiji ([[Introduction into Macro Programming|ImageJ Macro Language]], [[Beanshell_Scripting|Beanshell]], [[Javascript_Scripting|Javascript]], [[JRuby_Scripting|JRuby]], [[Jython_Scripting|Jython]], [[Clojure_Scripting|Clojure]], ...). This section provides some examples.
@@ -451,7 +451,7 @@ step  = 2;   // variable that controls step size
 run("Sholl Analysis...", "starting="+ start +" ending="+ end +"radius_step="+ step +" infer linear save do");
 </source>
 === Batch Analysis of Previously Obtained Profiles ===
-If you already have obtained profiles from traced cells and would like to retrieve the same [[#Metrics|metrics]] calculated by the plugin when analyzing bitmap images, you can use the [http://imagej.nih.gov/ij/developer/macro/functions.html#setKeyDown setKeyDown("alt")] as when [[#Importing|triggering this option]] through the ImageJ menu. Here is an example macro that runs the plugin over a folder of .csv files containing Sholl profiles produced by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]]:
+If you already have obtained profiles from traced cells and would like to retrieve the same [[#Metrics|metrics]] calculated by the plugin when analyzing bitmap images, you can use the [http://imagej.net/developer/macro/functions.html#setKeyDown setKeyDown("alt")] as when [[#Importing|triggering this option]] through the ImageJ menu. Here is an example macro that runs the plugin over a folder of .csv files containing Sholl profiles produced by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]]:
 
 <source lang="java">
 distanceCol = "Radius";		// Column in .csv file listing distances
@@ -521,13 +521,13 @@ function closeResults() {
 		<span id="faq:image-types"></span>'''The plugin complains about a wrong image type. Why?'''
 	</li>
 	<dl><dd>
-		Although ImageJ can threshold RGB images, the plugin can only parse grayscale images (8-bit and 16-bit). Images of fluorescence-labeled cells are typically non-RGB images. Conversions between different image types is explained in the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide].
+		Although ImageJ can threshold RGB images, the plugin can only parse grayscale images (8-bit and 16-bit). Images of fluorescence-labeled cells are typically non-RGB images. Conversions between different image types is explained in the [http://imagej.net/docs/guide/ ImageJ User Guide].
 	</dd></dl>
 	<li>
 		<span id="faq:compartments"></span>'''I cannot see the hemicircle/hemisphere option. Why?'''
 	</li>
 	<dl><dd>
-		This option is only available if an orthogonal line has been created by holding {{key press|Shift}} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for the full list of key modifiers that can be used while creating straight line ROIs.
+		This option is only available if an orthogonal line has been created by holding {{key press|Shift}} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [http://imagej.net/docs/guide/ ImageJ User Guide] for the full list of key modifiers that can be used while creating straight line ROIs.
 	</dd></dl>
 	<li>
 		<span id="faq:z-position"></span>'''With 3D images, how do I set the Z-position of the center?'''
@@ -555,7 +555,7 @@ function closeResults() {
 		<span id="faq:Sholl-table"></span>'''How can I save/edit the ''Sholl Results'' table?'''
 	</li>
 	<dl><dd>
-		Select the table, then choose <span style="border-bottom:1px dotted #ccc;">File▷ Save As…</span>The filename extension can be specified using <span style="border-bottom:1px dotted #ccc;">Edit▷ Options▷ Input/Output…</span> (see the [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
+		Select the table, then choose <span style="border-bottom:1px dotted #ccc;">File▷ Save As…</span>The filename extension can be specified using <span style="border-bottom:1px dotted #ccc;">Edit▷ Options▷ Input/Output…</span> (see the [http://imagej.net/docs/guide/ ImageJ User Guide] for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
 	</dd></dl>
 	<li>
 		<span id="faq:precision"></span>'''Can I modify the number of decimal places used by the ''Sholl Results'' table?'''
@@ -622,7 +622,7 @@ one could retrieve the AUC of the polynomial fit, but such property is already c
 		<span id="faq:bug-report"></span>'''I found a bug. How do I report it?'''
 	</li>
 	<dl><dd>
-		Use Fiji's built-in [[Report a Bug]] command. Alternatively, report it to the [http://imagej.nih.gov/ij/list.html ImageJ mailing list] or file an [https://github.com/tferr/ASA/issues issue] on GitHub. Don't forget to include the [[Bug reporting best practices|steps needed to reproduce the problem]]. You may also want to check the [https://github.com/tferr/ASA/blob/master/Notes.md#development-builds release notes] for the latest [http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/ development version] to see if the issue has meanwhile been addressed.
+		Use Fiji's built-in [[Report a Bug]] command. Alternatively, report it to the [http://imagej.net/list.html ImageJ mailing list] or file an [https://github.com/tferr/ASA/issues issue] on GitHub. Don't forget to include the [[Bug reporting best practices|steps needed to reproduce the problem]]. You may also want to check the [https://github.com/tferr/ASA/blob/master/Notes.md#development-builds release notes] for the latest [http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/ development version] to see if the issue has meanwhile been addressed.
 	</dd></dl>
 	<li>
 		<span id="faq:updates"></span>'''My version is not the latest after running <span style="border-bottom:1px dotted #ccc;">Help▷ Update Fiji...</span> Why?'''
