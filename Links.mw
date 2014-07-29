@@ -30,7 +30,11 @@ Links to the contributors' personal pages can be found [[Contributors|here]].
 |-
 |[[File:OpenSPIM-logo.png|left|150px]]
 |valign=center|[http://openspim.org/ OpenSPIM] is an Open Access and Open Source project to make Single Plane Illumination Microscopy (SPIM) accessible to researchers working with, or on, SPIM technology.
+|-
+|[[File:SlideSet-logo.png|center|90px]]
+|valign=center|[http://cellbio.emory.edu/bnanes/slideset/ Slide Set] is a batch processing system for ImageJ, already leveraging the power of [[ImageJ2]].
 |}
+
 
 == Image Processing and Ethics ==
 
