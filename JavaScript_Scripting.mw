@@ -53,7 +53,7 @@ Mixing global and local variables in a sensible way:
 // global variables 'base_url' and 'names'
 // and local variable 'imp', the latter visible within the loop only:
 
-base_url = "http://rsb.info.nih.gov/ij/images/";
+base_url = "http://imagej.net/images/";
 
 names = ["blobs.gif", "boats.gif", "bridge.gif"];
 
@@ -489,7 +489,7 @@ imp.show();
 
 Also URLs (in this case, we call directly <i>show()</i>, not keeping the returned image pointer into any variable):
 <source lang="javascript">
-IJ.openImage("http://rsb.info.nih.gov/ij/images/blobs.gif").show();
+IJ.openImage("http://imagej.net/images/blobs.gif").show();
 </source>
 
 Create an image from scratch, including LUT:
