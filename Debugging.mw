@@ -335,10 +335,6 @@ cp fiji-macosx debug
 ./debug
 </source>
 
-=== ImageJ2 ===
-
-For information how to activate debug mode with ImageJ2, please have a look [[Frequently Asked Questions#How_do_I_run_ImageJ_in_debug_mode.3F|here]]. Of course, making a copy of the launcher and calling it after renaming it to ''debug'' will also work.
-
 == Show Java3D debug messages ==
 
 <source lang="bash">
