@@ -22,4 +22,4 @@ You can browse the [http://javadoc.imagej.net/ Javadocs] online.
 
 == Running ImageJ1 unit tests ==
 
-We have written a substantial number of unit tests to exercise ImageJ 1.x functionality. See the [http://developer.imagej.net/ij1-tests ImageJ1 unit tests] page for more information.
+We have written a substantial number of unit tests to exercise ImageJ 1.x functionality. See the [[Unit tests for ImageJ1]] page for more information.
