@@ -31,7 +31,7 @@ For more information, please visit the original [http://3dviewer.neurofly.de hom
 
 == For developers ==
 
-A lot of functions of the 3D Viewer are macro-recordable. However, if that is not enough (or if the function is not recorded properly), it is better to [[Introduction to Plugin Programming|write a plugin]]. In the latter case no macros should be called from Java, as that would limit the code to work with the currently active 3D Viewer (even if the user clicked somewhere else).
+A lot of functions of the 3D Viewer are macro-recordable. However, if that is not enough (or if the function is not recorded properly), it is better to [[Introduction into Developing Plugins|write a plugin]]. In the latter case no macros should be called from Java, as that would limit the code to work with the currently active 3D Viewer (even if the user clicked somewhere else).
 
 This code snippet should get you started:
 
