@@ -2,13 +2,13 @@
 | software               = ImageJ
 | name                   = Grid
 | author                 = Wayne Rasband
-| filename               = [http://rsb.info.nih.gov/ij/plugins/download/Grid_.class Grid_.class] (5,575 Bytes)
-| source                 = [http://rsb.info.nih.gov/ij/plugins/download/Grid_.java Grid_.java] (5,123 Bytes)
+| filename               = [http://imagej.net/plugins/download/Grid_.class Grid_.class] (5,575 Bytes)
+| source                 = [http://imagej.net/plugins/download/Grid_.java Grid_.java] (5,123 Bytes)
 | released               = 25 April 2001
 | latest version         = 02 July 2007
 | status                 = active
 | category               = [[:Category:Image annotation|Image annotation]]
-| website                = [http://rsb.info.nih.gov/ij/plugins/grid.html]
+| website                = [http://imagej.net/plugins/grid.html]
 }}
 
 This plugin creates a non-destructive grid of lines , crosses or points on the current image or stack. You can specify the the grid type (lines, crosses or points), the area per point (in pixels or physical units), and the color.
