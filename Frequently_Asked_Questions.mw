@@ -276,7 +276,7 @@ Over the years we evolved a development style as follows:
 * merge
 * deal with any fall-out
 
-This development style has been adopted by the [http://developer.imagej.net/ ImageJ team], with two additions (making the fall-out step much smaller):
+This development style has been adopted by the [[Contributors|ImageJ team]], with two additions (making the fall-out step much smaller):
 
 * tests are added as automated regression tests (to be run by [http://jenkins.imagej.net/ the continuous integration] whenever new changes were pushed) whenever possible.
 * merges are usually done with ''--no-ff'', so that even fast-forwarding branches (i.e. rebased on top of ''master'') will get a merge commit in which the branch is described more broadly.
@@ -345,7 +345,7 @@ If your software is written in Java, we recommend using [[Maven]] to structure y
 
 If your software is written in another language such as C or Python, there are [http://loci.wisc.edu/bio-formats/interfacing-non-java-code many ways to integrate Java functionality]. You must choose which one is best for your particular requirements.
 
-To facilitate some use cases, we provide a script for generating a combined bundle of all ImageJ-related JARs in a single "uber-JAR" library. To use, check out the [http://developer.imagej.net/source-code ImageJ source code] and execute:
+To facilitate some use cases, we provide a script for generating a combined bundle of all ImageJ-related JARs in a single "uber-JAR" library. To use, check out the ImageJ [[source code]] and execute:
 
 <blockquote><code>mvn -Pdeps package</code></blockquote>
 
