@@ -29,7 +29,7 @@ See [[Scripting Help]] for details on keybindings and how to use the interpreter
 A minimal, complete clojure example:
 <source lang="clojure">
 (import '(ij IJ))
-(def gold (IJ/openImage "http://rsb.info.nih.gov/ij/images/AuPbSn40.jpg"))
+(def gold (IJ/openImage "http://imagej.net/images/AuPbSn40.jpg"))
 (.show gold)
 </source>
 
@@ -330,13 +330,13 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
 === ImageJ Image internals: ImagePlus, ImageProcessor, ImageStack ===
 
 ImageJ has three basic objects:
-* The <b>[http://rsb.info.nih.gov/ij/developer/api/ij/ImagePlus.html ImagePlus]</b>, which wraps the ImageProcessor and contains properties and pointers to the ROI (region of interest) and the ImageWindow that may be displaying the image.
-* The <b>[http://rsb.info.nih.gov/ij/developer/api/ij/process/ImageProcessor.html ImageProcessor]</b>, which is an abstract class enabling the high-level manipulation of and access to pixels. Its subclasses each wraps a different kind of data type:
+* The <b>[http://imagej.net/developer/api/ij/ImagePlus.html ImagePlus]</b>, which wraps the ImageProcessor and contains properties and pointers to the ROI (region of interest) and the ImageWindow that may be displaying the image.
+* The <b>[http://imagej.net/developer/api/ij/process/ImageProcessor.html ImageProcessor]</b>, which is an abstract class enabling the high-level manipulation of and access to pixels. Its subclasses each wraps a different kind of data type:
 ** ByteProcessor - byte[]
 ** ShortProcessor - short[]
 ** FloatProcessor - float[]
 ** ColorProcessor - int[] (byte-packed ARGB, but Alpha channel is ignored)
-* The <b>[http://rsb.info.nih.gov/ij/developer/api/ij/ImageStack.html ImageStack]</b> which contains unfortunately not an array of ImageProcessor, but an Object[] containing an homogeneous list of equal length byte[], or float[], etc.
+* The <b>[http://imagej.net/developer/api/ij/ImageStack.html ImageStack]</b> which contains unfortunately not an array of ImageProcessor, but an Object[] containing an homogeneous list of equal length byte[], or float[], etc.
 
 For extensive documentation, see the [http://albert.rierol.net/imagej_programming_tutorials.html#ImageJ%20programming%20basics Anatomy of an ImageJ image] ImageJ programming basics tutorial.
 
@@ -403,7 +403,7 @@ An alternative way would be to simply duplicate the processor of imp-1, and then
 === Resizing an ImageStack ===
 
 This one is harder, because an ImageStack is just a wrapper for Object[] list of pixel arrays.
-ImageJ though provides a mid-level resizing method, via the [http://rsb.info.nih.gov/ij/developer/api/ij/plugin/CanvasResizer.html CanvasResizer] class:
+ImageJ though provides a mid-level resizing method, via the [http://imagej.net/developer/api/ij/plugin/CanvasResizer.html CanvasResizer] class:
 
 
 <source lang="clojure">
