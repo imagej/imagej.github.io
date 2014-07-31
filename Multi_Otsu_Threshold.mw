@@ -3,11 +3,11 @@
 | name                   = Multi Otsu Threshold
 | author                 = Yasunari Tosa
 | filename               = Multi_OtsuThreshold.class
-| source                 = [http://rsb.info.nih.gov/ij/plugins/download/Multi_OtsuThreshold.java Multi_OtsuThreshold.java]
+| source                 = [http://imagej.net/plugins/download/Multi_OtsuThreshold.java Multi_OtsuThreshold.java]
 | released               = 14 April 2006
 | status                 = stable
 | category               = [[:Category:Segmentation|Segmentation]]
-| website                = [http://rsb.info.nih.gov/ij/plugins/multi-otsu-threshold.html]
+| website                = [http://imagej.net/plugins/multi-otsu-threshold.html]
 }}
 
 == Purpose ==
