@@ -67,7 +67,7 @@ After you built Fiji successfully, you can add your own plugins.
 
 == Writing plugins ==
 
-Fiji accepts plugins written in [http://www.mcdb.ucla.edu/research/hartenstein/acardona/imagej_programming_tutorials.html Java], [[Javascript Scripting|Javascript]], [[Jython Scripting|Jython]], [[JRuby Scripting|JRuby]], [[Beanshell Scripting|Beanshell]], [[Clojure Scripting|Clojure]] and the [http://rsb.info.nih.gov/ij/developer/macro/macros.html ImageJ Macro language].
+Fiji accepts plugins written in [http://www.mcdb.ucla.edu/research/hartenstein/acardona/imagej_programming_tutorials.html Java], [[Javascript Scripting|Javascript]], [[Jython Scripting|Jython]], [[JRuby Scripting|JRuby]], [[Beanshell Scripting|Beanshell]], [[Clojure Scripting|Clojure]] and the [http://imagej.net/developer/macro/macros.html ImageJ Macro language].
 
 The plugins/Examples folder contains numerous plugins in all supported languages, heavily commented.
 
