@@ -136,9 +136,9 @@ Still Image Approach:
 * G. Friedland, K. Jantz, T. Lenz, F. Wiesel, R. Rojas: A Practical Approach to Boundary-Accurate Multi-Object Extraction from Still Images and Videos, to appear in Proceedings of the IEEE International Symposium on Multimedia (ISM2006), San Diego (California), December, 2006.
 
 ==ImageJ version==
-Thanks to Wayne Rasband, there is an [http://rsb.info.nih.gov/ij/plugins/siox/index.html ImageJ] version of this plugin without Fiji dependencies:
+Thanks to Wayne Rasband, there is an [http://imagej.net/plugins/siox/index.html ImageJ] version of this plugin without Fiji dependencies:
 
-[http://rsb.info.nih.gov/ij/plugins/siox/index.html http://rsb.info.nih.gov/ij/plugins/siox/index.html]
+[http://imagej.net/plugins/siox/index.html http://imagej.net/plugins/siox/index.html]
 
 ==Licenses==
 The [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Siox_Segmentation/org;h=902e7e0379b36f7f03b512552fb899861d866fa9;hb=d451306e290fb55a31052cbfc5426eaa70df17d6 SIOX Java library] developed by [http://www.gerald-friedland.org/ Gerald Friedland], [http://www.inf.fu-berlin.de/~jantz Kristian Jantz] and [http://www.inf.fu-berlin.de/~knipping Lars Knipping] is licensed under the '''Apache License''', Version 2.0 (the "License"): [http://www.apache.org/licenses/LICENSE-2.0 http://www.apache.org/licenses/LICENSE-2.0]. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
