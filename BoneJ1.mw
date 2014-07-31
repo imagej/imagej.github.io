@@ -1,0 +1,15 @@
+{{Infobox Plugin
+| name                   = BoneJ
+| software               = ImageJ
+| author                 = Michael Doube
+| maintainer             = Michael Doube
+| source                 = {{GitLink|repository=mdoube|jar=BoneJ}}
+| status                 = Active
+| website                = http://bonej.org/
+}}
+BoneJ is a plugin for bone image analysis in [[ImageJ]]. It provides free, open source tools for trabecular geometry and whole bone shape analysis.
+
+See also:
+* [http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3193171/ BoneJ: free and extensible bone image analysis in ImageJ]. ''Bone'' ''47.6'', 1076-1079 (2010).
+
+[[Category:Related Software]]
