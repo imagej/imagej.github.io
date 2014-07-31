@@ -7,13 +7,13 @@
 | software               = ImageJ
 | name                   = MultiThresholder
 | author                 = Kevin (Gali) Baler
-| filename               = [http://rsb.info.nih.gov/ij/plugins/download/jars/Multi_Thresholder.jar Multi_Thresholder.jar] (30,729 Bytes)
+| filename               = [http://imagej.net/plugins/download/jars/Multi_Thresholder.jar Multi_Thresholder.jar] (30,729 Bytes)
 | source                 = in .jar file
 | released               = 21 July 2005 
 | latest version         = 25 January 2007
 | status                 = unknown
 | category               = [[:Category:Segmentation|Segmentation]]
-| website                = [http://rsb.info.nih.gov/ij/plugins/multi-thresholder.html]
+| website                = [http://imagej.net/plugins/multi-thresholder.html]
 }}
 
 
