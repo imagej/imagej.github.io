@@ -2,9 +2,9 @@
 | name                   = VisBio
 | software               = VisBio
 | author                 = [[User:Rueden|Curtis Rueden]]
-| maintainer             = discontinued
+| maintainer             = None
 | source                 = {{GitLink|repository=uw-loci|jar=visbio}}
-| status                 = Active
+| status                 = Discontinued
 | website                = http://loci.wisc.edu/software/visbio
 }}
 VisBio is a biological visualization tool designed for easy visualization and analysis of multidimensional image data, developed by [[User:Rueden|Curtis Rueden]] at [http://loci.wisc.edu/ UW-Madison LOCI].
