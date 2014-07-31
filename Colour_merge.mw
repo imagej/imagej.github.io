@@ -16,7 +16,7 @@ This plugin allows you to merge two grayscale stacks into a single RGB stack. It
 
 == Documentation ==
 
-Adapted from the [http://www.macbiophotonics.ca/imagej/colour_image_processi.htm  Macbiophotonics] webpage:
+Adapted from the [[MBF ImageJ]] manual:
 
 The ''Plugins>Color functions>Color Merge'' function gives the user the option of using the '''Difference''' arithmetic processing on the image stacks you select. This is not strictly a merge (when cyan and magenta merge they produce white, not yellow) but facilitates visualization of the separate channels (See 
 {{Citation
