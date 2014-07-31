@@ -54,7 +54,7 @@ In addition, the PlugIn asks for:
 ==Tips==
 
 ;How can I process a series/stack of images?
-:Execute the following macro from [http://rsbweb.nih.gov/ij/developer/macro/macros.html ImageJ's macro editor] or [[Using the Script Editor|Fiji's scripting editor]]:
+:Execute the following macro from [http://imagej.net/developer/macro/macros.html ImageJ's macro editor] or [[Using the Script Editor|Fiji's scripting editor]]:
 <source lang="java">
 blocksize = 127;
 histogram_bins = 256;
