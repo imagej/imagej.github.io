@@ -56,7 +56,7 @@ The only relevant parts are the ''groupId'', which by convention is something li
 
 == Maven repositories ==
 
-Maven is not only a build tool but first and foremost a dependency management tool. It has so-called Maven repositories where it stores compiled artifacts. [http://developer.imagej.net/ ImageJ2] has a [http://maven.imagej.net/ Maven repository]. (For those familiar with Fiji's previous build system: it is like [[Fake|Fiji Build]]'s precompiled/ directory, but done right.)
+Maven is not only a build tool but first and foremost a dependency management tool. It has so-called Maven repositories where it stores compiled artifacts. [[ImageJ2]] has a [http://maven.imagej.net/ Maven repository]. (For those familiar with Fiji's previous build system: it is like [[Fake|Fiji Build]]'s precompiled/ directory, but done right.)
 
 For Maven to know what you are looking for, you typically have to add the dependencies into the ''pom.xml'' file. For example, every ImageJ 1.x plugin will depend on ImageJ 1.x. So let's add that (before the final ''</project>'' line):
 
@@ -123,7 +123,7 @@ If you need to depend on a library that is not present in either Maven Central o
 
 For the <code>groupId</code>, it is typically best to use the reversed domain name of the library's web site. For libraries that are not explicitly versioned, you may want to use a datestamp such as "20120920" for the <code>version</code>, rather than inventing your own versioning scheme.
 
-'''WARNING:''' If you use <code>install:install-file</code>, others will not be able to build your code unless they also use <code>install:install-file</code> to install the library on their systems. Before resorting to this technique, double check the project's web site for any documentation on using their library with Maven. They might provide their own public Maven repository which you could use instead (by adding a <code>&lt;repository&gt;</code> to the <code>&lt;repositories&gt;</code> section of your POM). Alternately, you could [http://developer.imagej.net/mailing-lists contact the ImageJ & Fiji maintainers] to get your needed dependency added to the ImageJ Maven repository, so that everyone can build your code more easily.
+'''WARNING:''' If you use <code>install:install-file</code>, others will not be able to build your code unless they also use <code>install:install-file</code> to install the library on their systems. Before resorting to this technique, double check the project's web site for any documentation on using their library with Maven. They might provide their own public Maven repository which you could use instead (by adding a <code>&lt;repository&gt;</code> to the <code>&lt;repositories&gt;</code> section of your POM). Alternately, you could [[Mailing Lists|contact the ImageJ & Fiji maintainers]] to get your needed dependency added to the ImageJ Maven repository, so that everyone can build your code more easily.
 
 = Further reading =
 
