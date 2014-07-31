@@ -1,4 +1,13 @@
-[http://icy.bioimageanalysis.org/ Icy] is an open community platform for bioimage informatics, providing software resources to visualize, annotate and quantify bioimaging data.
+{{Infobox Plugin
+| name                   = Icy
+| software               = Icy
+| author                 = [http://www.bioimageanalysis.org/ QuIA] at [http://www.pasteur.fr/en Institut Pasteur]
+| maintainer             = [http://www.bioimageanalysis.org/ QuIA] at [http://www.pasteur.fr/en Institut Pasteur]
+| source                 = [https://github.com/Icy-imaging on GitHub]
+| status                 = Active
+| website                = http://icy.bioimageanalysis.org/
+}}
+Icy is an open community platform for bioimage informatics, providing software resources to visualize, annotate and quantify bioimaging data.
 
 See also:
 * [http://www.nature.com/nmeth/journal/v9/n7/abs/nmeth.2075.html Icy: an open bioimage informatics platform for extended reproducible research]. ''Nature Methods'' '''9''', 690–696 (2012).
