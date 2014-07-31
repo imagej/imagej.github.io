@@ -2,16 +2,16 @@
 | name                   = Interactive 3D Surface Plot
 | software               = ImageJ
 | author                 = Kai Uwe Barthel
-| filename               = [http://rsb.info.nih.gov/ij/plugins/download/jars/Interactive_3D_Surface_Plot.jar]
-| source                 = [http://rsb.info.nih.gov/ij/plugins/download/jars/Interactive_3D_Surface_Plot.jar]
+| filename               = [http://imagej.net/plugins/download/jars/Interactive_3D_Surface_Plot.jar]
+| source                 = [http://imagej.net/plugins/download/jars/Interactive_3D_Surface_Plot.jar]
 | released               = November 2004
 | latest version         = October 2008
 | status                 = v2.32
 | category               = [[:Category:Plugins|Plugins]]
-| website                = http://rsb.info.nih.gov/ij/plugins/surface-plot-3d.html
+| website                = http://imagej.net/plugins/surface-plot-3d.html
 }}
 
-Documentation: http://rsb.info.nih.gov/ij/plugins/surface-plot-3d.html
+Documentation: http://imagej.net/plugins/surface-plot-3d.html
 
 Not hardware accelerated.
 
