@@ -9,7 +9,7 @@
 | latest version         = June 14, 2006
 | status                 = stable
 | category               = [[:Category:Segmentation|Segmentation]]
-| website                = [http://rsb.info.nih.gov/ij/plugins/gray-morphology.html Gray Morphology at the ImageJ website]
+| website                = [http://imagej.net/plugins/gray-morphology.html Gray Morphology at the ImageJ website]
 }}
 
 This plugin performs [http://en.wikipedia.org/wiki/Mathematical_morphology mathematical morphology] on grayscale images. It only works on [[8-bit]] grayscale images.
