@@ -3,11 +3,11 @@
 | name                   = Rolling Ball Background Subtraction
 | author                 = Michael Castle and Janice Keller (Mental Health Research Institute, University of Michigan)
 | filename               = Rolling_Ball_Background.class
-| source                 = [http://rsb.info.nih.gov/ij/plugins/download/Rolling_Ball_Background.java Rolling_Ball_Background.java]
+| source                 = [http://imagej.net/plugins/download/Rolling_Ball_Background.java Rolling_Ball_Background.java]
 | released               = 22 November 2007
 | status                 = first version
 | category               = [[:Category:Filtering|Filtering]]
-| website                = [http://rsb.info.nih.gov/ij/plugins/rolling-ball.html]
+| website                = [http://imagej.net/plugins/rolling-ball.html]
 }}
 
 == Documentation == 
