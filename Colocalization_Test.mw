@@ -4,9 +4,9 @@
 | author                 = Tony Collins (and others?)
 | maintainer             = [mailto:white_at_mpi-cbg_dot_de Dan White]
 | filename               = Colocalization.jar
-| source                 = {{GitLink|jar=Colocalisation_Analysis|path=Colocalisation_Test.java}}, modified from [http://www.macbiophotonics.ca/ MBF]
+| source                 = {{GitLink|jar=Colocalisation_Analysis|path=Colocalisation_Test.java}}, modified from [[MBF ImageJ]]
 | latest version         = june 2009
-| website                = [http://www.macbiophotonics.ca/imagej/colour_analysis.htm#6.2%20Colocalisation%20Test MBF ImageJ manual]
+| website                = [[Colocalization Analysis#Colocalization_Test]]
 | status                 = <span style="color:red">Deprecated, use [[Coloc 2]] instead.</span>
 }}
 
@@ -20,13 +20,13 @@ Performs one of a set of three statistical tests, comparing the Persons correlat
 
 <span style="color: red">Note: this plugin is now deprecated. You should use the newer [[Coloc 2]] plugin instead.</span>
 
-See the great documentation for this plugin at [http://www.macbiophotonics.ca/imagej/colour_analysis.htm#6.2%20Colocalisation%20Test MBF ImageJ manual page]
+See the great documentation for this plugin at [[Colocalization Analysis#Colocalization_Test]].
 
 This tells you if the colocalization that you measure with other plugins, such as [[Colocalization Threshold]] is better than random chance. For a busy image with lots of signal in both chanels and very little area with no signal, there will be lots of random overlap, and this is easy to confuse with real colocalization with some biological meaning. It gives a P vaule (not a p-value) where 1 means all the randomised images had worse correlation than the real images, as you would expect for a real colocalised signel. A P value less than 0.95 is lower than the usual 95% statistical confidence limit.
 
 The methods implemented are White Noise Image Approximation of Costes' image randomisation (most robust, use 100 iterations), van Steensel and Fay (image shift methods). These differ in how the randomised images are generated from the real image or from white noise. None of them implement the Costes image randomisation test as described in his paper. [[Coloc_2]] does though. 
 
-See also the [[Colocalization Analysis]] tutorial and the original documentation for this plugin on the [http://www.macbiophotonics.ca/imagej/colour_analysis.htm MacBioPhotonics site].
+See also the [[Colocalization Analysis]] tutorial.
 
 [[Category:Plugins]]
 [[Category:Colocalization]]
