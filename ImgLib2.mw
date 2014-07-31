@@ -42,6 +42,6 @@ See the [[How To Migrate Code From ImgLib To ImgLib2]] page for details on how t
 
 * [[ImgLib2_Discussion|ImgLib2 development discussion]]
 * [http://developer.imagej.net/imglib-benchmarks ImgLib2 performance benchmarks]
-* [http://developer.imagej.net/ ImageJ2] uses ImgLib2 as its core data model
+* [[ImageJ2]] uses ImgLib2 as its core data model
 
 [[Category:ImgLib]]
