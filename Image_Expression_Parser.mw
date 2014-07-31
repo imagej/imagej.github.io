@@ -4,6 +4,7 @@
 | author                  = [[User:JeanYvesTinevez |Jean-Yves Tinevez]], [http://albert.rierol.net Albert Cardona]
 | maintainer           = [mailto:jeanyves.tinevez@gmail.com Jean-Yves Tinevez]
 | filename              = Image_Expression_Parser.jar 
+| source                 = {{GitLink|jar=Image_Expression_Parser}}
 | released              = February  2010
 | latest version      = June 8<sup>th</sup>, 2010
 | status                  = v2.2 (first version released publicly)
