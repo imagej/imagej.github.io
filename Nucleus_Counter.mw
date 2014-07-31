@@ -2,7 +2,7 @@
 | software               = ImageJ
 | name                   = Nucleus Counter
 | author                 = unknown
-| filename               = part of [http://www.macbiophotonics.ca/downloads/MBF_ImageJ.zip MBF ImageJ bundle]
+| filename               = part of [[MBF ImageJ]] bundle
 | source                 = 
 | released               =  
 | latest version         = 
@@ -11,7 +11,7 @@
 | website                = 
 }}
 
-This plugin is part of the [http://www.macbiophotonics.ca McMaster Biophotonics Facility] [http://www.macbiophotonics.ca/imagej/index.htm ImageJ bundle]. Author, version history and status is unknown.
+This plugin is part of the [[MBF ImageJ]] bundle. Author, version history and status is unknown.
 
 [[Category:Plugins]]
 [[Category:Particle analysis]]
