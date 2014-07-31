@@ -17,7 +17,7 @@ This package regroups various "small" plugins dedicated to the manipulation of s
 As they are more of a utility package, they all can be found in the ''Image > Stacks > Tools_'' menu, next to the ones provided by bare ImageJ.
 
 
-What they do is pretty much summarized by the following diagram, taken from the MacBiophotonics<ref>http://www.macbiophotonics.ca/imagej/stack.htm</ref> webpage. 
+What they do is pretty much summarized by the following diagram, taken from the [[MBF ImageJ]] webpage.
 
 [[Image:Stack Manipulation.jpg]]
 
@@ -36,7 +36,7 @@ We list here the authors for each part of this package, with corresponding licen
 
 === DeInterleave  ===
 
-By [mailto:tcollins_at_macbiophotonics.ca Tony Collins].
+By Tony Collins.
 
 
 
@@ -70,7 +70,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 === Interleave ===
 
-By [mailto:tcollins_at_macbiophotonics.ca Tony Collins].
+By Tony Collins.
 
 
 
@@ -82,7 +82,7 @@ Original code by Wayne Rasband.
 
 === Slice Keeper ===
 
-By [mailto:tcollins_at_macbiophotonics.ca Tony Collins], initially part of his wonderful MacBiophotonics ImageJ plugins package. Tony mentioned credit should go to Wayne Rasband, for the initial code is his work.
+By Tony Collins, initially part of his wonderful [[MBF Plugins Collection]] package. Tony mentioned credit should go to Wayne Rasband, for the initial code is his work.
 
 
 <references/>
