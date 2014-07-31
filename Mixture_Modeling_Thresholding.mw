@@ -2,12 +2,12 @@
 | software               = ImageJ
 | name                   = Mixture Modeling 
 | author                 = Christopher Mei, Maxime Dauphin
-| filename               = [http://rsb.info.nih.gov/ij/plugins/download/jars/Mixture_Modeling.jar Mixture_Modeling.jar] (18,454 Bytes)
+| filename               = [http://imagej.net/plugins/download/jars/Mixture_Modeling.jar Mixture_Modeling.jar] (18,454 Bytes)
 | source                 = in .jar file
 | released               = 15 December 2003 
 | status                 = unknown
 | category               = [[:Category:Segmentation|Segmentation]]
-| website                = [http://rsb.info.nih.gov/ij/plugins/mixture-modeling.html]
+| website                = [http://imagej.net/plugins/mixture-modeling.html]
 }}
 
 == Purpose ==
