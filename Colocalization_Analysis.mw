@@ -18,7 +18,7 @@ Other methods include ICCS (image cross correlation spectroscopy) and a derivati
 
 ==== Object-based overlap analysis ====
 
-This cookbook does not cover object-based overlap analysis, since it requires segmenting the image into objects and background, and that is a whole branch of image processing in itself. See the [http://rsbweb.nih.gov/ij/plugins/track/jacop.html JACoP imageJ plugin] for object based methods.
+This cookbook does not cover object-based overlap analysis, since it requires segmenting the image into objects and background, and that is a whole branch of image processing in itself. See the [http://imagej.net/plugins/track/jacop.html JACoP imageJ plugin] for object based methods.
 
 The [https://en.wikipedia.org/wiki/Pauli_exclusion_principle Pauli exclusion principle] states that two particles can not have the same quantum numbers so they can not be in the same place. Actually, nothing is "really" colocalised. We must colocalise at some spatial scale. At the other extreme, a universe of one voxel (not cubic of course) is completely colocalised. So we are, in fact, between the two extremes. You can find more details about this issue in the following sections.
 
