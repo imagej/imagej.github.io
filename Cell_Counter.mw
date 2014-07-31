@@ -2,13 +2,13 @@
 | software               = ImageJ
 | name                   = Cell Counter
 | author                 = Kurt De Vos
-| filename               = [http://rsb.info.nih.gov/ij/plugins/download/jars/cell_counter.jar cell_counter.jar] (33,829 Bytes)
+| filename               = [http://imagej.net/plugins/download/jars/cell_counter.jar cell_counter.jar] (33,829 Bytes)
 | source                 = in .jar file
 | released               = 17 October 2001 
 | latest version         = 29 February 2008
 | status                 = active
 | category               = [[:Category:Particle analysis|Particle analysis]]
-| website                = [http://rsb.info.nih.gov/ij/plugins/cell-counter.html]
+| website                = [http://imagej.net/plugins/cell-counter.html]
 }}
 
 [[Category:Plugins]]
