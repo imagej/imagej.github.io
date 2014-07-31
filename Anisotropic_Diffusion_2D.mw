@@ -2,12 +2,12 @@
 | software               = ImageJ
 | name                   = Anisotropic diffusion 2D
 | author                 = Vladimir Pilny and Jiri Janacek
-| filename               = [http://rsb.info.nih.gov/ij/plugins/download/Anisotropic_Diffusion_2D.class Anisotropic_Diffusion_2D.class]
-| source                 = [http://rsb.info.nih.gov/ij/plugins/download/Anisotropic_Diffusion_2D.java Anisotropic_Diffusion_2D.java]
+| filename               = [http://imagej.net/plugins/download/Anisotropic_Diffusion_2D.class Anisotropic_Diffusion_2D.class]
+| source                 = [http://imagej.net/plugins/download/Anisotropic_Diffusion_2D.java Anisotropic_Diffusion_2D.java]
 | released               = 01 December 2005
 | latest version         = 14 February 2006
 | status                 = v0.3
-| website                = [http://rsb.info.nih.gov/ij/plugins/anisotropic-diffusion-2d.html]
+| website                = [http://imagej.net/plugins/anisotropic-diffusion-2d.html]
 | category               = [[:Category:Filtering|Filtering]]
 }}
 
