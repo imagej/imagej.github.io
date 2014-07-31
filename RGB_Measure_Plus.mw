@@ -3,12 +3,12 @@
 | name                   = RGB Measure Plus
 | author                 = Dimiter Prodanov
 | filename               = RGB_Measure_Plus.class 
-| source                 = [http://rsb.info.nih.gov/ij/plugins/download/RGB_Measure_Plus.java RGB_Measure_Plus.java] 
+| source                 = [http://imagej.net/plugins/download/RGB_Measure_Plus.java RGB_Measure_Plus.java] 
 | released               = 23 March 2005
 | latest version         = 23 March 2005
 | status                 = initial version
 | category               = [[:Category:Color processing|Color processing]]
-| website                = [http://rsb.info.nih.gov/ij/plugins/rgb-measure-plus.html]
+| website                = [http://imagej.net/plugins/rgb-measure-plus.html]
 }}
 
 
