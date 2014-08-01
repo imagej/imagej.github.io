@@ -1,0 +1,16 @@
+{{Infobox Plugin
+| software               = CellProfiler
+| name                   = CellProfiler
+| author                 = [https://www.broadinstitute.org/ Broad Institute of MIT and Harvard]
+| maintainer             = [https://www.broadinstitute.org/ Broad Institute of MIT and Harvard]
+| source                 = {{GitLink|repository=CellProfiler|jar=CellProfiler}}
+| status                 = active
+| website                = http://cellprofiler.org/
+}}
+CellProfiler is free open-source software designed to enable biologists without training in computer vision or programming to quantitatively measure phenotypes from thousands of images automatically.
+
+== Publications ==
+* Kamentsky, L., Jones, T. R., Fraser, A., Bray, M. A., Logan, D. J., Madden, K. L., ... & Carpenter, A. E. (2011). [http://bioinformatics.oxfordjournals.org/content/27/8/1179.short Improved structure, function and compatibility for CellProfiler: modular high-throughput image analysis software]. Bioinformatics, 27(8), 1179-1180.
+* Carpenter, A. E., Jones, T. R., Lamprecht, M. R., Clarke, C., Kang, I. H., Friman, O., ... & Sabatini, D. M. (2006). [http://www.biomedcentral.com/1465-6906/7/R100 CellProfiler: image analysis software for identifying and quantifying cell phenotypes]. Genome biology, 7(10), R100.
+
+[[Category:Related Software]]
