@@ -1,0 +1,16 @@
+{{Infobox Plugin
+| software               = OMERO
+| name                   = OMERO
+| logo                     = [[Image::Ome-logo.png|96px]]
+| author                 = [http://openmicroscopy.org/ Open Microscopy Environment]
+| maintainer             = [http://openmicroscopy.org/ Open Microscopy Environment]
+| source                 = {{GitLink|repository=openmicroscopy|jar=openmicroscopy}}
+| status                 = active
+| website                = http://www.openmicroscopy.org/info/omero
+}}
+OMERO is client-server software for visualization, management and analysis of biological microscope images.
+
+See also:
+* Allan, C., Burel, J. M., Moore, J., Blackburn, C., Linkert, M., Loynton, S., ... & Swedlow, J. R. (2012). [http://www.nature.com/nmeth/journal/v9/n3/abs/nmeth.1896.html OMERO: flexible, model-driven data management for experimental biology]. Nature methods, 9(3), 245-253.
+
+[[Category:Related Software]]
