@@ -1,6 +1,15 @@
-[https://micro-manager.org/ μManager] is a software package for control of automated microscopes.
+{{Infobox Plugin
+| name                   = μManager
+| software               = μManager
+| author                 = [http://valelab.ucsf.edu/ Vale Lab], [http://www.ucsf.edu/ UCSF]
+| maintainer             = [http://valelab.ucsf.edu/ Vale Lab], [http://www.ucsf.edu/ UCSF]
+| source                 = [https://valelab.ucsf.edu/svn/micromanager2/trunk/ in SVN]
+| status                 = Active
+| website                = https://micro-manager.org/
+}}
+μManager is a software package for control of automated microscopes.
 
 See also:
-* Arthur Edelstein, Nenad Amodaj, Karl Hoover, Ron Vale, and Nico Stuurman (2010), Computer Control of Microscopes Using μManager. '''Current Protocols in Molecular Biology''' 14.20.1-14.20.17
+* Edelstein, A., Amodaj, N., Hoover, K., Vale, R., & Stuurman, N. (2010). [http://onlinelibrary.wiley.com/doi/10.1002/0471142727.mb1420s92/full Computer control of microscopes using µManager]. Current protocols in molecular biology, 14-20.
 
 [[Category:Related Software]]
