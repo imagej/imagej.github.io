@@ -3,7 +3,7 @@
 | name                   = Bleach Correction
 | maintainer             = Kota Miura
 | author                 = Kota Miura, Jens Rietdorf
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/CorrectBleach_/ in GitWeb]
+| source                 = {{GitLink|jar=CorrectBleach}}
 | released               = 18/04/2012
 | latest version         = 18/04/2012
 | status                 = stable
