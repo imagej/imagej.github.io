@@ -411,7 +411,7 @@ There are only three professional developers ([[User:Rueden]], [[User:Hinerm]] a
 
 The organizations above total over 300 source code repositories, many of which have dozens of open issues in their issue trackers. There are also several hundred tickets in the [http://trac.imagej.net/ old ImageJ issue tracker] that are pending migration to GitHub Issues, as well as over a hundred [http://fiji.sc/bugzilla/buglist.cgi?resolution=--- open issues in the Fiji Bugzilla].
 
-So please understand that just because we have not responded to a bug report, does not mean we are uninterested in fixing it. It's just that we are are very busy, and can use all the help we can get!
+So please understand that just because we have not responded to a bug report, does not mean we are uninterested in fixing it. It's just that we are very busy, and can use all the help we can get!
 
 If you want to increase the chances of your issue being worked on, you can:
 
