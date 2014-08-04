@@ -1,0 +1,24 @@
+[[ImageJ2]] has a flexible &quot;extensibility framework&quot; for managing plugins and their cousins, modules. Lately we have been making big improvements that are too numerous to mention here. But we wanted to make note of some of the progress that we made within the past couple of days. Be warned: it is very technical and will likely only be of interest to other ImageJ2 developers.
+
+# We now have a fully working way to create plugins with dynamic numbers of input and output parameters, by extending the <code>DynamicPlugin</code> class. <code>DynamicPluginTest</code> shows an example. (Feedback on the code is welcome; use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> in Eclipse to Open Type and jump straight to it. To try it out in the GUI, open a couple of datasets first and then run Plugins &gt; Sandbox &gt; Dynamic Plugin Test. It will produce one output dataset per input, of the specified size squared.)
+# There is now a <code>ModuleService</code> that tracks all known modules (plugins or otherwise). It publishes <code>ModulesChangedEvent</code> (in the case of new modules added, <code>ModulesAddedEvent</code>, and in the case of modules removed, <code>ModulesRemovedEvent</code>) whenever the list of known modules changes. This is similar to the <code>ObjectService</code>'s <code>ObjectsUpdatedEvent</code>, so we expanded that to have the same hierarchy (<code>Changed</code> at base, <code>Added</code> and <code>Removed</code> as subtypes).
+# The <code>ObjectService</code>'s index was split out into its own class called <code>ObjectIndex</code>, which maintains the objects on every list that is part of its type hierarchy. For example, an object of type <code>Integer</code> would be registered onto the following lists: <code>Integer</code>, <code>Number</code>, <code>Object</code>, <code>Serializable</code>, <code>Comparable</code>.
+# We implemented a subclass of <code>ObjectIndex</code> called <code>SortedObjectIndex</code> which does the same thing, but keeps all the lists sorted. Then we subclassed that as <code>PluginIndex</code>, and used it with the <code>PluginService</code>. So the plugin service now keeps an index of all its plugins including supertype hierarchies, which it didn't before. So for example, you can now ask the plugin service for all <code>RunnablePlugins</code>, and get <code>ImageJPlugins</code> (a subtype) included in that.
+# <code>ModuleService</code> also uses a <code>SortedObjectIndex</code> subclass called <code>ModuleIndex</code> to maintain its list of modules.
+# <code>ModuleService</code> has run methods for executing any <code>Module</code> or <code>ModuleInfo</code>, with or without spawning a new thread, and with or without a specified set of pre- and postprocessors.
+# Similarly, <code>PluginService</code> has run methods for executing any <code>Module</code> or <code>ModuleInfo</code> with its known <code>PreprocessorPlugins</code> and <code>PostprocessorPlugins</code>. These methods are the central way to run a module programmatically.
+# The <code>ShadowMenu</code>, a UI-agnostic menu tree structure, now has each leaf linked to a <code>ModuleInfo</code>. This means that menu entries will now be capable of running scripts and other modules, not just plugins.
+
+What's next:
+
+# Dynamic plugin implementations:
+#* We are going to update various core plugins which need the dynamic plugin mechanism, to give it a test drive.
+# Dynamic menus:
+#* Update <code>ShadowMenu</code> to listen to <code>ModulesChangedEvent</code> and <code>ModuleUpdatedEvent</code> and change its internal structure accordingly. This will generally entail surgical changes to its structure rather than a full menu rebuild.
+#* Update the UI-toolkit-specific menu builders to keep the resultant menu structures (e.g., <code>JMenuBar</code>) linked to the <code>ShadowMenu</code>. When the <code>ShadowMenu</code> publishes events indicating menu items have changed, the actual UI menu needs to automatically update to reflect that as well.
+#* Maybe: update <code>ModuleService</code> to maintain a <code>ShadowMenu</code> data structure, which can be obtained for whatever purpose.
+# More module invocation routines:
+#* It would be nice to have run methods of <code>ModuleService</code> and <code>PluginService</code> that accept parameters programmatically, either as a list or as a map. Grant's <code>InvokePluginTest</code> shows what we are going for.
+
+[[Category:News]]
+[[Category:ImageJ2]]
