@@ -1,0 +1,12 @@
+{{Infobox Plugin
+| software               = ImageJ
+| name                   = MATLAB Scripting
+| author                 = Mark Hiner
+| maintainer             = Mark Hiner<br/>Curtis Rueden
+| filename               = scripting-matlab.jar
+| source                 = [https://github.com/scijava/scripting-matlab Git]
+| status                 = stable
+}}
+{{Scripting}}
+
+<h1>MATLAB tutorial for ImageJ</h1>
