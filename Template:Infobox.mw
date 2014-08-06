@@ -59,7 +59,7 @@
 ==Usage==
 
 <pre>
-{{Infobox Plugin
+{{Infobox
 | name                   =
 | software               =
 | author                 =
@@ -76,7 +76,7 @@
 </pre>
 
 ==Example==
-{{Infobox Plugin
+{{Infobox
 | name                   = My plugin
 | software               = Software name
 | author                 = John Smith ([mailto:john@smith.org john@smith.org])
@@ -93,7 +93,7 @@
 | tutorials               = Mr Smith
 }}
 <pre style="overflow:auto">
-{{Infobox Plugin
+{{Infobox
 | name                   = My plugin
 | software               = Software name
 | author                 = John Smith ([mailto:john@smith.org john@smith.org])
