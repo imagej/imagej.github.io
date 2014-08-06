@@ -1,6 +1,6 @@
 <seo metak="sholl,plugin,arbor,neuron,morphometry,dendrite" metad="sholl,plugin,arbor,neuron,morphometry,dendrite" />
 <div style="float:right;">
-{{Infobox Plugin
+{{Infobox
 | software       = ImageJ/Fiji
 | name           = Sholl Analysis
 | author         = Tiago Ferreira, Tom Maddock
