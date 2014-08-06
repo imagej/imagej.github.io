@@ -1,7 +1,7 @@
 {{Notice
 | message = For information on how to structure your bug report, see [[Bug reporting best practices|bug reporting best practices]].
 }}
-{{Infobox Plugin
+{{Infobox
 | software               = Fiji
 | name                   = Bug Submitter
 | maintainer             = [[User:Schindelin|Johannes Schindelin]]<br/>[[User:Rueden|Curtis Rueden]]
