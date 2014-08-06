@@ -3,7 +3,7 @@
 This page describes the Trainable Segmentation plugin, the previous incarnation of the [[Trainable Weka Segmentation]] plugin and library. We encourage users and developers to work with the more advanced and properly maintained [[Trainable Weka Segmentation]] instead.
 </div></p>
 
-{{Infobox Plugin
+{{Infobox
 | name                   = Trainable Segmentation
 | software               = Fiji
 | author                 = Verena Kaynig, [[User:Iarganda | Ignacio Arganda-Carreras]], Albert Cardona
