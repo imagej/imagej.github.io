@@ -1,7 +1,7 @@
 [[Image:K_listeria_animated.gif | 256px | Stack of Listeria Movement ]]
 [[Image:K_temporal_color_coded_listeria.png | 256px | Temporal-Color Coded]]
 {{-}}
-{{Infobox Plugin
+{{Infobox
 | name                   = Temporal-Color Code
 | software               = Fiji
 | author                 = [http://cmci.embl.de Kota Miura], [[User:Schindelin|Johannes Schindelin]]
