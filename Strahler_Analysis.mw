@@ -1,5 +1,5 @@
 <seo metak="strahler,plugin,arbor,neuron,morphometry,dendrite" metad="strahler,plugin,arbor,neuron,morphometry,dendrite" />
-{{Infobox Plugin
+{{Infobox
 | software        = ImageJ/Fiji
 | name            = Strahler Analysis
 | maintainer     = [[BAR#Installation| BAR update site]]
