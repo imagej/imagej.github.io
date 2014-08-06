@@ -1,4 +1,4 @@
-{{Infobox Plugin
+{{Infobox
 | name                   = Dynamic ROI Profiler
 | software               = Clojure
 | author                 = Albert Cardona
