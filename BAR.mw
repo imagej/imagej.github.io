@@ -1,5 +1,5 @@
 <seo metak="data analysis,annotation,segmentation,morphometry,scripts" metad="data analysis,annotation,segmentation,morphometry,scripts" />
-{{Infobox Plugin
+{{Infobox
 | software       = ImageJ/Fiji
 | name           = BAR
 | maintainer     = [mailto:tiago_dot_ferreira_at_mail_dot_mcgill_dot_ca Tiago Ferreira]
