@@ -1,7 +1,7 @@
 [[Image:Tem.jpg|thumb|left|361px|TEM original image]]
 [[Image:Tem-clahe-50-256-2.5.jpg|thumb|right|361px|TEM CLAHE processed, (block: 50; bins: 256; max slope: 2.5)]]
 {{-}}
-{{Infobox Plugin
+{{Infobox
 | name                   = Enhance Local Contrast (CLAHE)
 | software               = Fiji
 | author                  = [[User:Saalfeld|Stephan Saalfeld]] ([mailto:saalfeld@mpi-cbg.de])
