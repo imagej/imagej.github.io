@@ -1,7 +1,7 @@
 [[Image:Tem-42-33-f.png|thumb|left|361px|MOPS feature correspondences (example 1)]]
 [[Image:Lab-404-403-f.png|thumb|361px|MOPS feature correspondences (example 2)]]
 {{-}}
-{{Infobox Plugin
+{{Infobox
 | name                   = Feature Extraction SIFT/MOPS
 | software               = Fiji
 | author                  = Stephan Saalfeld ([mailto:saalfeld@mpi-cbg.de])
