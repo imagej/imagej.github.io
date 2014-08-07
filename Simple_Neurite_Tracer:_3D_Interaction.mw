@@ -4,17 +4,17 @@ It is now possible to select the points for traces in the [[3D Viewer]] rather t
 
 <include iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/Vt4m55V7AjI" frameborder="0" allowfullscreen></include>
 
-In order to select points for tracing in the 3D Viewer, you need to use the "Wand" tool.  In order to rotate the view, you need to use the "Hand" tool.  Once you have selected each of these once, you should be able to switch between them by pressing the Escape key.
+In order to select points for tracing in the 3D Viewer, you need to use the "Wand" tool.  In order to rotate the view, you need to use the "Hand" tool.  Once you have selected each of these once, you should be able to switch between them by pressing the {{key|Esc}} key.
 
 [[File:Fiji-toolbar-wand-and-hand.png]]
 
 The following key shortcuts also work in the 3D Viewer:
 
-* '''Y''' confirm the temporary path segment
-* '''N''' cancel the temporary path segment
-* '''F''' complete the current path
-* '''G''' select the current path under the mouse pointer
+* {{key|Y}} confirm the temporary path segment
+* {{key|N}} cancel the temporary path segment
+* {{key|F}} complete the current path
+* {{key|G}} select the current path under the mouse pointer
 
-You can still create branches and joins in the 3D Viewer as you would in the 2D viewer.  First select the path you want to branch off, or join to by pressing 'G' while the mouse pointer is over that path.  (It should turn green.)  Then create the join or branch by holding down the join modifier key ('Control' on Windows and Linux, 'Alt' on Mac OS) and clicking at the right point on the selected path.
+You can still create branches and joins in the 3D Viewer as you would in the 2D viewer.  First select the path you want to branch off, or join to by pressing {{key|G}} while the mouse pointer is over that path.  (It should turn green.)  Then create the join or branch by holding down the join modifier key ({{key|Ctrl}} on Windows and Linux, {{key|Alt}} on Mac OS) and clicking at the right point on the selected path.
 
 The dataset used in the screencast can be downloaded from [http://www.diademchallenge.org/olfactory_projection_fibers_readme.html the Diadem challenge website].
