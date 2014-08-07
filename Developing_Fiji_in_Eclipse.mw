@@ -13,8 +13,8 @@ See also [[Developing Fiji]] for a more general tutorial unspecific to the Eclip
 
 The advantages of using an IDE like Eclipse for developing:
 
-# it is easy to access documentation about classes (i.e. ''javadocs''): just point your cursor over the name of the class and hit ''Shift+F2''.
-# you can use code-completion: just type the start of the class name, variable, method, etc you want to use and hit ''Ctrl+Space''.
+# it is easy to access documentation about classes (i.e. ''javadocs''): just point your cursor over the name of the class and hit {{key|Shift}}+{{key|F2}}.
+# you can use code-completion: just type the start of the class name, variable, method, etc you want to use and hit {{key|Ctrl}}+{{key|Space}}.
 # compile errors are listed in a concise list; double-clicking on a line in that list will move the cursor to the problem.
 # you can debug your program interactively: just open the main class (i.e. a class having a ''public static void main(String[] args)'' method) and go to ''Run>Debug As>Java Application''. This will switch to a different window layout (the ''Debug perspective'') which offers you a range of views that are useful for debugging such as: local variables, thread stack traces, etc. You can interrupt the program at any time by clicking on the ''pause'' symbol and inspect the current state, single-step through the code and even to a limited amount replace code on-the-fly
 # the most important version control systems can be accessed easily
