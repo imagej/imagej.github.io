@@ -4,10 +4,10 @@ If you have the "three pane view" of Simple Neurite Tracer enabled, there is are
 
 === "Shift" in Three Pane View ===
 
-If you hold down the "Shift" key while moving the mouse in any of the three panes, the view in the other panes will be synchronized.
+If you hold down the {{key|Shift}} key while moving the mouse in any of the three panes, the view in the other panes will be synchronized.
 
 === Zooming in Three Pane View ===
 
-Pressing "+" or "-" in any of the three panes will zoom in or out all three of the panes.
+Pressing {{key|+}} or {{key|-}} in any of the three panes will zoom in or out all three of the panes.
 
-When zoomed in, you can pan around the image by holding down "Space" while clicking and dragging with the left mouse button in the image window.
+When zoomed in, you can pan around the image by holding down {{key|Space}} while clicking and dragging with the left mouse button in the image window.
