@@ -4,7 +4,7 @@ This tool may be used to adjust the brightness and contrast of an active image.
 
 ==Usage==
 
-The Brightness and Contrast tool may be accessed through ''Image>Adjust>Brightness/Contrast'' or Ctrl+Shift-C.
+The Brightness and Contrast tool may be accessed through ''Image>Adjust>Brightness/Contrast'' or {{key|Ctrl}}+{{key|Shift}}+{{key|C}}.
 
 [[File:Brightness_Contrast_Window.png|right|266x177px]]
 
@@ -12,7 +12,7 @@ The upper and lower limits of the display range can be adjusted by modifying the
 
 Selecting 'OK' will make the specified changes to the display and close the Brightness/Contrast window. All channels in an image will be simultaneously updated automatically.
 
-ImageJ may provide intelligent thresholding based on the image's histogram through ''Image>Adjust>Auto-Contrast'' or Ctrl+Alt+Shift-L. Repeated usage of this process will allow more pixel values to become saturated.
+ImageJ may provide intelligent thresholding based on the image's histogram through ''Image>Adjust>Auto-Contrast'' or {{key|Ctrl}}+{{key|Alt}}+{{key|Shift}}+{{key|L}}. Repeated usage of this process will allow more pixel values to become saturated.
 
 ==Example==
 
