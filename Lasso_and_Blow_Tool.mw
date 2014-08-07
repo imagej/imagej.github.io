@@ -15,3 +15,6 @@ The '''lasso''' mode, is experimental and not fully functional yet.
 
 The '''blow''' mode grows a region by adding contiguous points having the same "cost" from the clicked center to the current location under the cursor. 
 To use this, click inside the region to be segmented and drag the mouse within the region. The selection area will "grow" as the mouse cursor is moved away from the clicked point.
+
+[[Category:Plugins]]
+[[Category:Segmentation]]
