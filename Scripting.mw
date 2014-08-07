@@ -37,9 +37,9 @@ All scripting languages use the same basic interpreter, with the following commo
 
 You can enlarge the prompt by dragging the middle bar.
 
-* shift + enter: create a new line within the prompt.
-* shift + up arrow: move to the line above within the prompt.
-* shift + down arrow: id, down.
+* {{key|Shift}}+{{key|Enter}}: create a new line within the prompt.
+* {{key|Shift}}+{{key|Up}}: move to the line above within the prompt.
+* {{key|Shift}}+{{key|Down}}: id, down.
 
 == Selecting and executing text from the screen ==
 
