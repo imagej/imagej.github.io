@@ -2,13 +2,13 @@
 
 ====Key Shortcuts====
 
-* <b>Y</b> - confirm the current temporary path
-* <b>N</b> or <b>Escape</b> - discard the current temporary path
-* <b>F</b> - finish (complete) a path
-* <b>v</b> - view all traced paths as lines in a new image stack
-* <b>g</b> - select the path nearest to the mouse pointer
-* <b>+</b> - zoom in
-* <b>-</b> - zoom out
+* {{key|Y}} - confirm the current temporary path
+* {{key|N}} or <b>Escape</b> - discard the current temporary path
+* {{key|F}} - finish (complete) a path
+* {{key|V}} - view all traced paths as lines in a new image stack
+* {{key|G}} - select the path nearest to the mouse pointer
+* {{key|+}} - zoom in
+* {{key|-}} - zoom out
 
 There are more complex key + mouse combinations used in:
 
