@@ -8,13 +8,13 @@ You can select a path in the Path Window.  You can also use the up and down curs
 
 === In the 2D tracing view ===
 
-If you press the 'g' key with your mouse over a path in the 2D tracing view, that path should be selected.  Note that this is the nearest path to the point shown in the image, so if you're showing paths projected through all slices, this may not be the one you expect.   You can make this more obvious by switching the 'View paths (2D)' option to 'parts in nearby slices'.  Alternatively, just move through the stack to a nearby slice before pressing 'g'.
+If you press the {{key|G}} key with your mouse over a path in the 2D tracing view, that path should be selected.  Note that this is the nearest path to the point shown in the image, so if you're showing paths projected through all slices, this may not be the one you expect.   You can make this more obvious by switching the 'View paths (2D)' option to 'parts in nearby slices'.  Alternatively, just move through the stack to a nearby slice before pressing {{key|G}}.
 
 === In the 3D tracing view ===
 
 There are various ways to select a path in the 3D viewer, from easiest to most difficult:
 
-* If you press "g" when the mouse is over a path in the 3D Viewer, it will be selected.
+* If you press {{key|G}} when the mouse is over a path in the 3D Viewer, it will be selected.
 
 * If you select a path in the 3D viewer, it should now also be selected in the rest of the tracing interface.  One way of doing this is via the "Select" menu.
 
