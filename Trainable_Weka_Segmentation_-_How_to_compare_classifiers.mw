@@ -34,72 +34,72 @@ We click on "Experimenter" and the Weka Experiment Environment GUI will pop up:
 [[Image:Screenshot-AWS-Weka-Experiment-Environment.png|700px]]
 
 ==== New experiment ====
-In this tutorial we use the "Simple" configuration mode. After clicking ''New'', default parameters for an Experiment are deﬁned:
+In this tutorial we use the "Simple" configuration mode. After clicking ''New'', default parameters for an Experiment are defined:
 
 [[Image:Screenshot-Weka-Experiment-Environment-Simple-New.png|700px]]
 
 ==== Results destination ====
 
-By default, an ARFF ﬁle is the destination for the results output. But you can choose between
-* ARFF ﬁle
-* CSV ﬁle
+By default, an ARFF file is the destination for the results output. But you can choose between
+* ARFF file
+* CSV file
 * JDBC database
-CSV is similar to ARFF, but it can be used to be loaded in an external spreadsheet application. If the ﬁle name is left empty a temporary ﬁle will be created in the TEMP directory of the system. If one wants to specify an explicit results ﬁle, click on ''Browse'' and choose a ﬁlename. In our case, we set the filename to ''experiment-compare.arff'':
+CSV is similar to ARFF, but it can be used to be loaded in an external spreadsheet application. If the file name is left empty a temporary file will be created in the TEMP directory of the system. If one wants to specify an explicit results file, click on ''Browse'' and choose a filename. In our case, we set the filename to ''experiment-compare.arff'':
 
 [[Image:Screnshot-AWS-tutorial-save-destination-arff.png]]
 
-Click on ''Save'' and the name will appear in the edit ﬁeld next to ''ARFF ﬁle''.
+Click on ''Save'' and the name will appear in the edit field next to ''ARFF file''.
 
 ==== Experiment type ====
 The user can choose between the following three diﬀerent types
-* '''Cross-validation (default)''' performs stratiﬁed cross-validation with the given number of folds.
-* '''Train/Test Percentage Split (data randomized)''' splits a dataset according to the given percentage into a train and a test ﬁle (one cannot specify explicit training and test ﬁles in the Experimenter), after the order of the data has been randomized and stratiﬁed:
+* '''Cross-validation (default)''' performs stratified cross-validation with the given number of folds.
+* '''Train/Test Percentage Split (data randomized)''' splits a dataset according to the given percentage into a train and a test file (one cannot specify explicit training and test files in the Experimenter), after the order of the data has been randomized and stratified:
 
 [[Image:Screenshot-AWS-tutorial-select-experiment-type.png|700px]]
 
-* '''Train/Test Percentage Split (order preserved)''' because it is impossible to specify an explicit train/test ﬁles pair, one can ''abuse'' this type to ''un-merge'' previously merged train and test ﬁle into the two original ﬁles (one only needs to ﬁnd out the correct percentage).
+* '''Train/Test Percentage Split (order preserved)''' because it is impossible to specify an explicit train/test files pair, one can ''abuse'' this type to ''un-merge'' previously merged train and test file into the two original files (one only needs to find out the correct percentage).
 
-Additionally, one can choose between ''Classiﬁcation'' and ''Regression'', depending on the datasets and classiﬁers one uses. ''Classiﬁcation'' is selected by default.
+Additionally, one can choose between ''Classification'' and ''Regression'', depending on the datasets and classifiers one uses. ''Classification'' is selected by default.
 
 ''Note'': if the percentage splits are used, one has to make sure that the corrected paired ''T-Tester'' still produces sensible results with the given ratio.
 
 ====Datasets====
-One can add dataset ﬁles either with an absolute path or with a relative one. The latter makes it often easier to run experiments on diﬀerent machines, hence one should check ''Use relative paths'', before clicking on ''Add new...'':
+One can add dataset files either with an absolute path or with a relative one. The latter makes it often easier to run experiments on diﬀerent machines, hence one should check ''Use relative paths'', before clicking on ''Add new...'':
 
 [[Image:Screenshot-AWS-tutorial-add-dataset.png]]
 
 In this example, we open the ''albert'' directory and choose the ''data-compare.arﬀ'' dataset.
 
-After clicking ''Open'' the ﬁle will be displayed in the datasets list. If one selects a directory and hits ''Open'', then all ARFF ﬁles will be added recursively. Files can be deleted from the list by selecting them and then clicking on ''Delete selected''.
+After clicking ''Open'' the file will be displayed in the datasets list. If one selects a directory and hits ''Open'', then all ARFF files will be added recursively. Files can be deleted from the list by selecting them and then clicking on ''Delete selected''.
 
 ====Algorithms====
-New algorithms can be added via the ''Add new...'' button. Opening this dialog for the ﬁrst time, ''' ZeroR''' is presented, otherwise the one that was selected last:
+New algorithms can be added via the ''Add new...'' button. Opening this dialog for the first time, ''' ZeroR''' is presented, otherwise the one that was selected last:
 
 [[Image:Screenshot-AWS-tutorial-select-algorithm.png]]
 
-With the ''Choose'' button one can open the ''GenericObjectEditor'' and choose another classiﬁer:
+With the ''Choose'' button one can open the ''GenericObjectEditor'' and choose another classifier:
 
 [[Image:Screenshot-AWS-tutorial-select-NaivesBayes.png]]
 
-The ''Filter...'' button enables one to highlight classiﬁers that can handle certain attribute and class types. With the ''Remove ﬁlter'' button all the selected capabilities will get cleared and the highlighting removed again.
+The ''Filter...'' button enables one to highlight classifiers that can handle certain attribute and class types. With the ''Remove filter'' button all the selected capabilities will get cleared and the highlighting removed again.
 
-Additional algorithms can be added again with the ''Add new...'' button. After setting the classiﬁer parameters, one clicks on ''OK'' to add it to the list of algorithms. 
+Additional algorithms can be added again with the ''Add new...'' button. After setting the classifier parameters, one clicks on ''OK'' to add it to the list of algorithms. 
 In our example, we add '''NaiveBayes''', '''SMO''', '''VotedPerceptron''' and '''J48''':
 
 [[Image:Screenshot-AWS-tutorial-add-some-algorithms.png|700px]]
 
-With the ''Load options...'' and ''Save options...'' buttons one can load and save the setup of a selected classiﬁer from and to XML. This is especially useful for highly conﬁgured classiﬁers (e.g., nested meta-classiﬁers), where the manual setup takes quite some time, and which are used often.
+With the ''Load options...'' and ''Save options...'' buttons one can load and save the setup of a selected classifier from and to XML. This is especially useful for highly configured classifiers (e.g., nested meta-classifiers), where the manual setup takes quite some time, and which are used often.
 
-One can also paste classiﬁer settings here by right-clicking (or {{key|Alt}}+{{key|Shift}}+{{key|click}}) and selecting the appropriate menu point from the popup menu, to either add a new classiﬁer or replace the selected one with a new setup. This is rather useful for transferring a classiﬁer setup from the Weka Explorer over to
-the Experimenter without having to setup the classiﬁer from scratch.
+One can also paste classifier settings here by right-clicking (or {{key|Alt}}+{{key|Shift}}+{{key|click}}) and selecting the appropriate menu point from the popup menu, to either add a new classifier or replace the selected one with a new setup. This is rather useful for transferring a classifier setup from the Weka Explorer over to
+the Experimenter without having to setup the classifier from scratch.
 
 ====Saving the setup====
 
-For future re-use, one can save the current setup of the experiment to a ﬁle by clicking on ''Save...'' at the top of the window:
+For future re-use, one can save the current setup of the experiment to a file by clicking on ''Save...'' at the top of the window:
 
 [[Image:Screenshot-AWS-tutorial-save-setup.png]]
 
-By default, the format of the experiment ﬁles is the binary format that Java
+By default, the format of the experiment files is the binary format that Java
 serialization oﬀers. The drawback of this format is the possible incompatibility
 between diﬀerent versions of Weka. A more robust alternative to the binary
 format is the XML format.
@@ -116,7 +116,7 @@ Click ''Start'' to run the experiment:
 
 [[Image:Screenshot-AWS-tutorial-experiment-run.png|700px]]
 
-If the experiment was deﬁned correctly, the 3 messages shown above will
+If the experiment was defined correctly, the 3 messages shown above will
 be displayed in the ''Log'' panel. The results of the experiment are saved to the
 dataset ''experiment-compare.arff''.
 
@@ -131,10 +131,10 @@ Click on ''Experiment'' to analyse the results of the current experiment:
 
 The number of result lines available (''Got 40 results'') is shown in the ''Source''
 panel. This experiment consisted of 10 runs, for 4 schemes, for 1 dataset, for a
-total of 40 result lines. Results can also be loaded from an earlier experiment ﬁle
-by clicking ''File'' and loading the appropriate ''.arﬀ'' results ﬁle. 
+total of 40 result lines. Results can also be loaded from an earlier experiment file
+by clicking ''File'' and loading the appropriate ''.arﬀ'' results file. 
 
-Select the ''Percent correct'' attribute from the ''Comparison ﬁeld'' and click
+Select the ''Percent correct'' attribute from the ''Comparison field'' and click
 ''Perform test'' to generate a comparison of the 4 schemes:
 
 [[Image:Screenshot-AWS-tutorial-percentage-correct-test.png|700px]]
@@ -143,10 +143,10 @@ The schemes used in the experiment are shown in the columns and the
 datasets used are shown in the rows.
 
 The percentage correct for each of the 4 schemes is shown in each dataset
-row: '''88.70%''' for '''NaiveBayes''', '''94.76%''' for '''SMO''', '''57.64%''' for '''VotedPerceptron''' and '''95.88%''' for J48. The annotation v or * indicates that a speciﬁc result is statistically better (v) or worse (*)
-than the baseline scheme (in this case, '''NaiveBayes''') at the signiﬁcance level speciﬁed
+row: '''88.70%''' for '''NaiveBayes''', '''94.76%''' for '''SMO''', '''57.64%''' for '''VotedPerceptron''' and '''95.88%''' for J48. The annotation v or * indicates that a specific result is statistically better (v) or worse (*)
+than the baseline scheme (in this case, '''NaiveBayes''') at the significance level specified
 (currently 0.05). The results of both '''SMO''' and '''J48''' are statistically better than
-the baseline established by '''NaiveBayes'''. At the bottom of each column after the ﬁrst
+the baseline established by '''NaiveBayes'''. At the bottom of each column after the first
 column is a count (xx/ yy/ zz) of the number of times that the scheme was
 better than (xx), the same as (yy), or worse than (zz), the baseline scheme on
 the datasets used in the experiment. In this example, there was only one dataset
@@ -158,7 +158,7 @@ by selecting the ''Show std. deviations'' check box and hitting ''Perform test''
 The value ''(10)'' at the beginning of the ''segment'' row represents the number of estimates that are used to calculate the standard deviation (the number of runs in
 this case).
 
-Selecting ''Number correct'' as the ''comparison ﬁeld'' and clicking ''Perform test''
+Selecting ''Number correct'' as the ''comparison field'' and clicking ''Perform test''
 generates the average number correct (out of 975 test patterns - 33% of 2954
 patterns in the ''segment'' dataset).
 
@@ -167,16 +167,16 @@ patterns in the ''segment'' dataset).
 Clicking on the button for the ''Output format'' leads to a dialog that lets
 you choose the precision for the ''mean'' and the ''std. deviations'', as well as the
 format of the output. Checking the ''Show Average'' checkbox adds an additional
-line to the output listing the average of each column. With the ''Remove ﬁlter''
-''classnames'' checkbox one can remove the ﬁlter name and options from processed
-datasets (ﬁlter names in Weka can be quite lengthy).
+line to the output listing the average of each column. With the ''Remove filter''
+''classnames'' checkbox one can remove the filter name and options from processed
+datasets (filter names in Weka can be quite lengthy).
 The following formats are supported:
 * CSV
 * GNUPlot
 * HTML
 * LaTeX
 * Plain text (default)
-* Signiﬁcance only
+* Significance only
 
 [[Image:Screenshot-AWS-tutorial-analyse-precision-dialog.png]]
 
@@ -192,9 +192,9 @@ corresponding to that entry to be displayed.
 
 [[Image:Screenshot-AWS-tutorial-result-list-analyse.png]]
 
-The results shown in the ''Test output'' panel can be saved to a ﬁle by clicking
+The results shown in the ''Test output'' panel can be saved to a file by clicking
 ''Save output''. Only one set of results can be saved at a time but Weka permits
-the user to save all results to the same ﬁle by saving them one at a time and
+the user to save all results to the same file by saving them one at a time and
 using the ''Append'' option instead of the ''Overwrite'' option for the second and
 subsequent saves.
 
