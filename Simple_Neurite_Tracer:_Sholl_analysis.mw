@@ -14,11 +14,11 @@ Now you have to pick a centre point for the Sholl analysis.  (This might be the 
 
 [[Image:Simple Neurite Tracer- Sholl analysis-2.jpg|750px]]
 
-Now hold down control and shift (on Windows or Linux) or alt and shift (on Mac) and move the mouse along the path.  A red cross-hairs should track along the path:
+Now hold down {{key|Ctrl}}+{{key|Shift}} (on Windows or Linux) or {{key|Alt}}+{{key|Shift}} (on Mac) and move the mouse along the path.  A red cross-hairs should track along the path:
 
 [[Image:Simple Neurite Tracer- Sholl analysis-3.jpg|750px]]
 
-... when you've got the red cross-hairs at a suitable point, <i>still</i> holding down control / alt and shift, press the 'a' key.  Then you can release the other keys.  You should see the Sholl analysis interface appear like this:
+... when you've got the red cross-hairs at a suitable point, <i>still</i> holding down {{key|Ctrl}} / {{key|Alt}} and {{key|Shift}}, press the {{key|A}} key.  Then you can release the other keys.  You should see the Sholl analysis interface appear like this:
 
 [[Image:Simple Neurite Tracer- Sholl analysis-4.jpg|750px]]
 
