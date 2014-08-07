@@ -16,8 +16,8 @@ Fiji on Intel Macs runs on Java 1.6 in 64-bit mode. If you need to run it in 32-
 # Launch Fiji normally, and choose Edit > Options > Memory & Threads.
 # Reduce your Maximum Memory setting to ~1800 MB or less.
 # Quit Fiji.
-# Ctrl+click the Fiji dock icon and choose Options > Show in Finder.
-# Ctrl+click on the Fiji application icon that pops up, and choose Show Info (or press Cmd+I).
+# {{key|Ctrl}}+{{key|click}} the Fiji dock icon and choose Options > Show in Finder.
+# {{key|Ctrl}}+{{key|click}} on the Fiji application icon that pops up, and choose Show Info (or press {{key|Cmd}}+{{key|I}}).
 # Check the "Open in 32-bit mode" box in the Fiji info window.
 # Press the red X on the Fiji info window to close it.
 # Launch Fiji again, and the status bar should report "[32-bit]" in brackets.
@@ -47,7 +47,7 @@ Check more info at
 
 To access the plugins or macros folders, set the Finder window to either icons or lists mode, <b>not</b> in column mode, and double-click them.
 
-Alternatively, right-click (or control-click) the Fiji.app and select "Show package contents", to open the folder where the actual plugins and macros folders are.
+Alternatively, right-click (or {{key|Ctrl}}+{{key|click}}) the Fiji.app and select "Show package contents", to open the folder where the actual plugins and macros folders are.
 
 ==Adding new plugins and macros==
 
@@ -89,4 +89,4 @@ Now you can pass, say, [[Java Options]]:
 
 == MacOSX keyboard shortcuts ==
 
-It is often helpful to use keyboard shortcuts when using Fiji. There are also operating system specific shortcuts which can be quite helpful. For example, pressing Command+Tab and releasing first only the Tab key will allow you to cycle through the running applications, while Command+backtick will do the same for the windows opened by the current application. [http://davespicks.com/ Dave Polaschek] has [http://davespicks.com/writing/programming/mackeys.html a comprehensive list].
+It is often helpful to use keyboard shortcuts when using Fiji. There are also operating system specific shortcuts which can be quite helpful. For example, pressing {{key|Command}}+{{key|Tab}} and releasing first only the {{key|Tab}} key will allow you to cycle through the running applications, while {{key|Command}}+{{key|`}} will do the same for the windows opened by the current application. [http://davespicks.com/ Dave Polaschek] has [http://davespicks.com/writing/programming/mackeys.html a comprehensive list].
