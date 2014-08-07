@@ -18,7 +18,7 @@ This will launch the Weka GUI Chooser and, if it is the first time, a warning di
 [[Image:Weka-GUI-Chooser-package-warning-ubuntu.png]]
 
 
-We can just click OK, go the Weka GUI Chooser window and look for the package manager under the menu Tools > Package manager, or by pressing Ctrl + U:
+We can just click OK, go the Weka GUI Chooser window and look for the package manager under the menu Tools > Package manager, or by pressing {{key|Ctrl}}+{{key|U}}:
 
 [[Image:Weka-GUI-Chooser-package-manager.png]]
 
