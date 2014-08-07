@@ -26,7 +26,7 @@ If ''Edit>Options>Misc...>Require command key for shortcuts'' is ''un''checked, 
 
 ==Put the main window to the foreground==
 
-Pressing the Return key on any image will bring the main window to the foreground.
+Pressing the {{key|Return}} key on any image will bring the main window to the foreground.
 
 ==Close all images (without being asked whether to save them)==
 
