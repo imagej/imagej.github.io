@@ -16,7 +16,7 @@
 
 * You can also copy the ''.jar'', ''.class'' or ''.java'' files (or a script in any language Fiji supports) to ''Fiji.app/plugins/'', followed by calling ''Help>Refresh Menus''.
 
-: '''Note:''' On MacOSX, you need to Ctrl+click on the ''Fiji'' icon in the Finder and select ''Show package contents'' to see the ''plugins/'' folder.
+: '''Note:''' On MacOSX, you need to {{key|Ctrl}}+{{key|click}} on the ''Fiji'' icon in the Finder and select ''Show package contents'' to see the ''plugins/'' folder.
 
 ==For developers==
 
