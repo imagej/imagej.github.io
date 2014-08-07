@@ -6,14 +6,14 @@ For a verbose list of keyboard shortcuts, call ''Plugins>Shortcuts>List shortcut
 
 == The Command Launcher ==
 
-Use ''Control+L'' (on Mac, ''Command+L'') to open the [[Using the Command Launcher|Command Launcher]], to call menu entries by name.
+Use {{key|Ctrl}}+{{key|L}} (on Mac, {{key|Command}}+{{key|L}}) to open the [[Using the Command Launcher|Command Launcher]], to call menu entries by name.
 
 == Recent Commands ==
 
-To open a list of some recent commands, and a list of the most frequently called commands, hit ''Control+9'' (on Mac, ''Command+9'').
+To open a list of some recent commands, and a list of the most frequently called commands, hit {{key|Ctrl}}+{{key|9}} (on Mac, {{key|Command}}+{{key|9}}).
 
 == Open ==
 
-To open new images, type ''Control+O'' (on Mac, ''Command+O'').
+To open new images, type {{key|Ctrl}}+{{key|O}} (on Mac, {{key|Command}}+{{key|O}}).
 
 [[Category:User interface]]
