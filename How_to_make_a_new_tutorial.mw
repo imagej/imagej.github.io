@@ -27,7 +27,7 @@ In any of the two modes, the snapshot window will hide itself before taking the 
 
 [[Image:How_to_make_a_new_tutorial-MakeSnapshots.jpg|640px]]
 
-After taking some or all of the snapshots you want to include in your tutorial, you have to crop them.  Just select the appropriate rectangle, and then click on ImageJ's ''Edit>Crop'' or hit Ctrl+Shift+X:
+After taking some or all of the snapshots you want to include in your tutorial, you have to crop them.  Just select the appropriate rectangle, and then click on ImageJ's ''Edit>Crop'' or hit {{key|Ctrl}}+{{key|Shift}}+{{key|X}}:
 
 [[Image:How_to_make_a_new_tutorial-CropSnapshot.jpg]]
 
