@@ -105,7 +105,7 @@ The safest way to ensure these conventions is to use the ''File>Export as .jar f
 
 The easiest way to get back a functional updater is to import [http://update.imagej.net/bootstrap.js this URL] via ''File>Import>URL...''.
 
-If that does not work, please delete the files ''ij-ui-swing-updater-2.0.0-SNAPSHOT.jar'', ''ij-updater-core-2.0.0-SNAPSHOT.jar'' and ''ij-core-2.0.0-SNAPSHOT.jar'' from the ''ImageJ.app/jars/'' directory (MacOSX users, Ctrl-click on the ImageJ icon and select ''Open Package Contents'' and open the ''jars/'' directory you see there). After that, the Updater should magically repair itself.
+If that does not work, please delete the files ''ij-ui-swing-updater-2.0.0-SNAPSHOT.jar'', ''ij-updater-core-2.0.0-SNAPSHOT.jar'' and ''ij-core-2.0.0-SNAPSHOT.jar'' from the ''ImageJ.app/jars/'' directory (MacOSX users, {{key|Ctrl}}+{{key|click}} on the ImageJ icon and select ''Open Package Contents'' and open the ''jars/'' directory you see there). After that, the Updater should magically repair itself.
 
 If that still fails, please download a fresh copy from [[Downloads|here]].
 
@@ -296,9 +296,9 @@ Fiji is open source; as such, it is possible to inspect the source code for any 
 Here are several ways to do so:
 
 # '''Using the Command Finder:'''
-#* Press L for the Command Finder.
+#* Press {{key|L}} for the Command Finder.
 #* Type the name of the command.
-#* Press the down arrow to select it.
+#* Press {{key|Down}} to select it.
 #* Click the Source button.
 #* This will open the source from the [http://imagej.net/source/ ImageJ web site online source].
 #* Note: this method is very convenient, but only works for core ImageJ sources, not Fiji-specific code.
@@ -317,7 +317,7 @@ Here are several ways to do so:
 #* Open the relevant project in GitHub:
 #** For "ij." classes, go to: https://github.com/imagej/ImageJA
 #** For "fiji." and many other package prefixes, go to: https://github.com/fiji/fiji
-#* Press the T key, and type the name of the file you are looking for.
+#* Press the {{key|T}} key, and type the name of the file you are looking for.
 #** In the example above, this is Thresholder.java.
 #* You should end up with a hit like: https://github.com/imagej/ImageJA/blob/master/src/main/java/ij/plugin/Thresholder.java.
 #* This method requires that you know in which repository the code lives. However, you can combine it with the '''fiji.sc search''' method above to figure out which repository, then load the code on GitHub, if desired.
