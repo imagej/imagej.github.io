@@ -355,19 +355,19 @@ Future: Suggestions are welcome!
 
 =Cluster Indicator=
 
-Purpose: The "Cluster Indicator" is thought to detect local particle clusters in a binary image. Different particle sizes are taken into account.
+Purpose: The "Cluster Indicator" is thought to detect local particle clusters in a binary image. Different particle sizes can be taken into account.
 
 How To: Choose a cluster detector size as a circle radius in pixels. 
 The density (as a x-fold value) enables to adjust the sensitivity because found clusters are only accepted as a cluster when their density of neighbor distances is at least x-fold of the average neighbor distance in the complete image. 
 Two possible methods can be chosen: 
 
-1.) "average ND" uses the inverted 32-bit Voronoi image as measure of the between-particle (border-to-border) distances to all of their neighbors. This accounts for differences in particle size as well as shape. The average neighbor distance is taken to intensity code the centroid point in the evaluation image.
+1.) "average NND" uses the inverted 32-bit Voronoi image as measure of the between-particle (border-to-border) distances to all of their neighbors. This accounts for differences in particle size as well as shape. The average neighbor distance is taken to intensity code the centroid point in the evaluation image.
 
-2.) "UEP NND" uses the ultimate eroded point map and intensity codes the points according to their nearest neighbor distance. This method is faster especially for big images with many particles but neglects differences in particle size and shape. Therefore, might only be applicable if all particles are equal in size and shape.
+2.) "centroid NND" uses the ultimate eroded point map and intensity codes the points according to their nearest neighbor distance. This method is faster especially for big images with many particles but neglects differences in particle size and shape. Therefore, might only be applicable if all particles are equal in size and shape.
 
 Each individual cluster finding process is aborted if a local cluster was not found after the specified number of maximal iterations. Those aborted clusters can be shown as blue ROIs in the image if desired (see checkbox).
 
-Clusters overlapping more than 40% (minimal center-ROI overlap) can also be fused to one cluster if specified so.
+Clusters overlapping (at least 1 pixel) can also be fused to one cluster if specified so by the respective checkbox.
 
 Consider that the detector size as well as density settings influence if a cluster is found and finally accepted as a cluster. This on the one hand leads to a certain bias but should enable the user to search for clusters of different sizes and densities.
 
@@ -375,7 +375,7 @@ Consider that the detector size as well as density settings influence if a clust
 
 Method: Circle ROIs of the specified size are initially distributed with sufficient overlap to cover the complete image. The cluster finding process is done according to the mean shift method towards the center of mass of clusters. The latter is influenced by particle number, size and neighbor distance.
 
-Form: macro
+Form: plugin, recordable
 
 Status: maintenance active
 
