@@ -20,7 +20,7 @@ The top of the left hand dialog box should always give you an idea about the nex
 
 ''At this point, you may wish to switch to some shorter [[Simple Neurite Tracer: Step-By-Step Instructions|step-by-step]] instructions - some people have suggested that the description below is a bit verbose.  Alternatively, carry on below...''
 
-Now, as the instructions suggest, your next step should be to click on the point in the image stack where you want to start the path. To navigate in the stack you would adjust the slices scroll bar or used the '<' and '>' keys as usual. The red cross-hairs indicate the corresponding position in the three different views of the stack, but the slice positions will not be synchronized between the three windows unless you hold down "Shift" while moving the mouse. (This is particularly useful if you're creating a [#branching branch] at the beginning or end of a path.)
+Now, as the instructions suggest, your next step should be to click on the point in the image stack where you want to start the path. To navigate in the stack you would adjust the slices scroll bar or used the {{key|<}} and {{key|>}} keys as usual. The red cross-hairs indicate the corresponding position in the three different views of the stack, but the slice positions will not be synchronized between the three windows unless you hold down {{key|Shift}} while moving the mouse. (This is particularly useful if you're creating a [#branching branch] at the beginning or end of a path.)
 
 Select a point for the start of your first path. The instructions should change to prompt you to find another point further along the structure that you're tracing. It will take some trial and error to find out how far apart these points can be for each image - some will have very clearly defined neurons and so they can be very far apart, but with more difficult images (or ones where the path found is not the one you intend) you will need to make them closer together.
 
@@ -56,7 +56,7 @@ You've probably noticed that the default presentation of the paths in an image i
 
 ====Branching and Joining Paths.====
 
-In this plugin each path can only be a linear succession of points in the image. However, you can indicate more complex structure by creating a path that starts on another path (branches off it) or ends on another path (joins the other path). To do this you have to select the existing path you want to branch off or join to in the path list (check that the right path is green in the image) and then hold down "Control" (on Windows or Linux) or "alt" (on Mac OS) while you select the branch or join point. You almost always will want to hold down Shift as well as "Control" / "alt" while you're finding this image so that the crosshairs show you the exact point that you're joining to.
+In this plugin each path can only be a linear succession of points in the image. However, you can indicate more complex structure by creating a path that starts on another path (branches off it) or ends on another path (joins the other path). To do this you have to select the existing path you want to branch off or join to in the path list (check that the right path is green in the image) and then hold down {{key|Ctrl}} (on Windows or Linux) or {{key|Alt}} (on Mac OS) while you select the branch or join point. You almost always will want to hold down {{key|Shift}} as well as {{key|Ctrl}} / {{key|Alt}} while you're finding this image so that the crosshairs show you the exact point that you're joining to.
 
 ====Saving and Loading Files====
 
@@ -120,12 +120,12 @@ If you have a labels file for your image, you can load that file to help you mak
 
 The following key shortcuts may be useful to you:
 
-* '''Y''' confirms a temporary path segement
-* '''Escape''' cancels a temporary path segement
-* '''Control (on Windows or Linux)''' or '''Alt (on Mac OS)''', when held down while an existing path is selected, enables you to start a path on another path (branching) or end a path on another (joining). (See the [step-by-step instructions] for more details on joining and branching.)
-* '''Shift''' will synchronize the views of all three panes around the red crosshairs and can be held down as you move the mouse.
+* {{key|Y}} confirms a temporary path segement
+* {{key|Esc}} cancels a temporary path segement
+* {{key|Ctrl}} (on Windows or Linux) or {{key|Alt}} (on Mac OS), when held down while an existing path is selected, enables you to start a path on another path (branching) or end a path on another (joining). (See the [step-by-step instructions] for more details on joining and branching.)
+* {{key|Shift}} will synchronize the views of all three panes around the red crosshairs and can be held down as you move the mouse.
 
 ====Miscellaneous Tips====
 
-* The simplest way to follow a path through a stack is to select that path and hold down "Control" / "alt" and "Shift" while moving the mouse along it.
+* The simplest way to follow a path through a stack is to select that path and hold down {{key|Ctrl}} / {{key|Alt}} and {{key|Shift}} while moving the mouse along it.
 * If the search doesn't seem to be finding the route you expect through an image stack, try toggling the "Hessian analysis" option. Another alternative is that the start point of the search is in the wrong place (e.g. if you accidentally clicked in the image when you didn't want to start a new path - you should be able to tell this from the progress of the search, which starts at both the start and end point.)
