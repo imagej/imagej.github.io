@@ -667,7 +667,7 @@ Then we must set this thickness to every section. This consists of the following
 
  1. Right-click on the "Top Level [Layer Set]" node of the <i>Layer Tree</i>.
     Then choose "Reset layer Z and thickness".
- 2. Click on the first layer node, then shift+click on the last layer node.
+ 2. Click on the first layer node, then {{key|Shift}}+{{key|click}} on the last layer node.
     All nodes will be selected.
  3. Right-click on the selected nodes and choose "Scale...".
  4. In the dialog, type in "12.5"--the value we computed above.
