@@ -12,7 +12,7 @@ It is a good idea to be already familiar with the automated segmentation in Trac
 
 Download the target image here: [http://fiji.sc/tinevez/TrackMate/Celegans-5pc_17timepoints.zip Celegans-5pc_17timepoints.zip (34 MB)]. It is a rather large file, so it is zipped. Unzip it somewhere; you should end up having a single tiff file, ''Celegans-5pc_17timepoints.tif'' of about 100 MB.
 
-Open it in Fiji. You will get a stack, made of 41 Z-slices over 17 time-points, each image being 240 x 295. As you can see in ''Image > Properties'' (Ctrl+Shift+P), it has a spatial and temporal calibration. 
+Open it in Fiji. You will get a stack, made of 41 Z-slices over 17 time-points, each image being 240 x 295. As you can see in ''Image > Properties'' ({{key|Ctrl}}+{{key|Shift}}+{{key|P}}), it has a spatial and temporal calibration. 
 
 The context if the following: We used a ''C.elegans'' strain named [http://www.wormbase.org/db/gene/strain?name=AZ212;class=Strain AZ212] that has its histone H2B coupled to the eGFP. The nuclei can therefore be seen in the 488 nm excitation fluorescence channel. The movie started just after the first cell division, so you can see on the first frame two blob-like spots in the center of the egg. On the top-right part of the egg, there is also two smaller spots that are the polar bodies. One will remain at a fixed place, the other one will be pushed around as the cells divide. The movie has 17 time-points that span the first 34 minutes of the ''C.elegans'' embryo development. 
 
@@ -102,7 +102,7 @@ We will first start by removing all the bad spots and tracks. We decide not to k
 *# Draw a selection rectangle around the whole track representation. 
 *# Select one spot or link in the track. Right-click anywhere on TrackScheme: a menu appears, in which you will find '''Select whole track'''.
 * Notice in the displayer that the selected track appear with a green and thick line, so as to highlight it. 
-* To delete all of it, simply press the 'delete' key in TrackScheme, or use the right-click menu to do so. 
+* To delete all of it, simply press the {{key|Delete}} key in TrackScheme, or use the right-click menu to do so. 
 
 Do the same for Track_1, since we do not care for polar bodies.
 
@@ -134,13 +134,13 @@ The HyperStack displayer let you edit spots in two ways:
 ==== Deleting an existing spot ==== 
 
 * Select a spot by single-clicking inside it. It turns green.
-* Press the 'delete' key'
+* Press the {{key|Delete}} key
 
 ==== Changing the radius of a spot ====
 
 * Select a spot for editing by double-slinking inside it. 
-* By holding the 'Alt' key, rotates the wheel button. This will change the spot's radius. 
-* Holding 'Shift + Alt' changes its radius faster. 
+* By holding the {{key|Alt}} key, rotates the wheel button. This will change the spot's radius. 
+* Holding {{key|Shift}}+{{key|Alt}} changes its radius faster. 
 * Double-click anywhere when you are happy with the new radius. The spot thumbnail in TrackScheme gets updated. 
 
 
@@ -150,27 +150,27 @@ I have found using the mouse clicks sub-optimal and painful for the carpal bones
 
 ==== Moving an existing spot ====
 * Lay the mouse over the target spot (you do not need to select it).
-* Hold the 'Space' key.
+* Hold the {{key|Space}} key.
 * Move the mouse around. The target spot follows the mouse location until you release the mouse key. 
    
 ==== Creating a new spot ====
 
 * Lay the mouse anywhere on the image.
-* Press the 'A' key.
+* Press the {{key|A}} key.
 * A new spot is <u>a</u>dded at the mouse location.  
 By default, the new spot has the radius of the last spot edited with the mouse. So if you want to set the default radius, just double-click inside a spot that has the desired radius, then double-click again to leave editing mode. From now on, the radius of this spot will by used by default.
 
 ==== Deleting an existing spot ==== 
 
 * Lay the mouse over the target spot.
-* Press the 'D' key.
+* Press the {{key|D}} key.
 * The target spot is <u>d</u>eleted
 
 ==== Changing the radius of a spot ====
 
 * Lay the mouse over the target spot.
-* Press the 'E' key to increase its radius, 'Q' to diminish it. 
-* 'Shit + Q' and 'Shit + E' change the radius by a bigger amount.
+* Press the {{key|E}} key to increase its radius, {{key|Q}} to diminish it. 
+* {{key|Shift}}+{{key|Q}} and {{key|Shift}}+{{key|E}} change the radius by a bigger amount.
 
 == Adding missed spots ==
 
@@ -205,7 +205,7 @@ In TrackScheme, find the first spot of Track_4, in frame 9. When you click on th
 
 We want to link this cell to the mother cell in Track_0, frame 8, just before it divided. To do so, 
 * In the HyperStack displayer, move to the frame 8
-* Hold the 'Shift' key
+* Hold the {{key|Shift}} key
 * Click on the mother cell
 It gets highlighted in the displayer, and in TrackScheme as well. You now have two cells in the selection.
 
@@ -220,13 +220,13 @@ After doing so, you should now see a branching track, as picture below. Notice t
 
 === Creating several links at once ===
 
-Using the 'Shift + Left click', we can put several cells in the selection, and create the links between each pair. We don't have the need for it, but this is a good way to create a single track from several solitary spots: Just select them all (dragging a selection box or shift-clicking) and select the '''Link N spots''' menu item.
+Using {{key|Shift}}+{{key|click}}, we can put several cells in the selection, and create the links between each pair. We don't have the need for it, but this is a good way to create a single track from several solitary spots: Just select them all (dragging a selection box or {{key|Shift}}+{{key|click}}) and select the '''Link N spots''' menu item.
 
 == Editing tracks: deleting links ==
 
 We do not have much to say here. The tracks we generated had missing links, but no spurious ones. So we do not need to remove any. But here is how to do it:
 
-In TrackScheme, select the target link by clicking on it; it gets highlighted in the displayer as well. Press the 'Delete' key to remove it. 
+In TrackScheme, select the target link by clicking on it; it gets highlighted in the displayer as well. Press the {{key|Delete}} key to remove it. 
 
 Removing a link often splits a track in 2 new tracks. To have them properly re-arranged,  press the '''Redo layout''' button.
 
