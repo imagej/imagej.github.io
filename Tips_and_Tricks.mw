@@ -20,7 +20,7 @@ the return value will appear in your Log window when called.
 
 ==Find out in which menu (or .jar file) a certain command is==
 
-Hit '''Ctrl+L''' to start the command launcher.  Type (part of) the name of the entry, then click on ''Show full information''.
+Hit {{key|Ctrl}}+{{key|L}} to start the command launcher.  Type (part of) the name of the entry, then click on ''Show full information''.
 
 If ''Edit>Options>Misc...>Require command key for shortcuts'' is ''un''checked, typing '''L''' is sufficient.
 
@@ -34,7 +34,7 @@ Pressing the Return key on any image will bring the main window to the foregroun
 
 == Set the foreground color ==
 
-Double-click on the pipette, or hit Ctrl+Shift+K (on Macs, it is Cmd+Shift+K), or select the menu item ''Image>Color>Color Picker..."
+Double-click on the pipette, or hit {{key|Ctrl}}+{{key|Shift}}+{{key|K}} (on Macs, it is {{key|Cmd}}+{{key|Shift}}+{{key|K}}), or select the menu item ''Image>Color>Color Picker..."
 
 == Set the line width ==
 
@@ -42,4 +42,4 @@ Line selections can have a width larger than one, which also has an effect on li
 
 == Quickly copy a ROI from one image to another ==
 
-Simply activate the image with the desired ROI, then the image you want to put that ROI into, and hit ''Control+Shift+E''. This triggers the ''Edit>Selection>Restore Selection'' which "restores" the selection.
+Simply activate the image with the desired ROI, then the image you want to put that ROI into, and hit {{key|Ctrl}}+{{key|Shift}}+{{key|E}}. This triggers the ''Edit>Selection>Restore Selection'' which "restores" the selection.
