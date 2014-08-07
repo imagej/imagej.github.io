@@ -118,7 +118,7 @@ Often, dynamic library issues are connected to a dependent .dll file missing. Do
 
 = Debugging JVM hangs =
 
-When the Java VM hangs, the reason might be a dead-lock. You can often find out what is happening by reading the thread dump which you can get via ''Ctrl+\'' in the console where you started Fiji. On Linux and MacOSX, you can also send the signal ''3'' via the ''kill'' command. On Windows, you may need to press ''Ctrl+Pause'' (i.e., "Break") instead of ''Ctrl+\''.
+When the Java VM hangs, the reason might be a dead-lock. You can often find out what is happening by reading the thread dump which you can get via {{key|Ctrl}}+{{key|\}} in the console where you started Fiji. On Linux and MacOSX, you can also send the signal ''3'' via the ''kill'' command. On Windows, you may need to press {{key|Ctrl}}+{{key|Pause}} (i.e., {{key|Break}}) instead of {{key|Ctrl}}+{{key|\}}.
 
 You can also attach to the JVM using the ''jvisualvm'' program that you can find in ''java/<platform>/<jdk>/bin/''.
 
@@ -566,8 +566,8 @@ The developer should then execute this command:
 ssh -t $ACCOUNT@$SSHSERVER 'screen -x'
 </source>
 
-Since this provides a shared [http://savannah.gnu.org/projects/screen/ GNU screen] session, both the user and the developer can execute commands and see the output. It is even quite common to use the terminal window as sort of a private chat room by typing out what you have to say, ending the line with a ''Ctrl+C'' (lest it get executed as a command).
+Since this provides a shared [http://savannah.gnu.org/projects/screen/ GNU screen] session, both the user and the developer can execute commands and see the output. It is even quite common to use the terminal window as sort of a private chat room by typing out what you have to say, ending the line with a {{key|Ctrl}}+{{key|C}} (lest it get executed as a command).
 
-After the debugging party is over, the user can log out securely by hitting ''Ctrl+D'' to log out from the local machine (since the user typed in their password in the GNU screen session herself, there is no way for the developer to log back in without the user's explicit consent). Another ''Ctrl+D'' will terminate the GNU screen session, and yet another ''Ctrl+D'' will log out from the shared account on the SSH server.
+After the debugging party is over, the user can log out securely by hitting {{key|Ctrl}}+{{key|D}} to log out from the local machine (since the user typed in their password in the GNU screen session herself, there is no way for the developer to log back in without the user's explicit consent). Another {{key|Ctrl}}+{{key|D}} will terminate the GNU screen session, and yet another {{key|Ctrl}}+{{key|D}} will log out from the shared account on the SSH server.
 
 [[Category:Development]]
