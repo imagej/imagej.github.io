@@ -112,7 +112,7 @@ This project should be done in such a manner that it can be extended to allow de
 
 The student will have to research if there are existing Open Source components that already implement a substantial amount of the functionality, to avoid reinventing the wheel.
 
-'''Goal:''' Build a minimal text editor with a good font for coding, syntax highlighting for java and javascript (and optionally jruby, clojure and beanshell), and the ability to compile java code and parse stack traces to highlight lines that failed to compile. Building in [http://jvi.sourceforge.net jvi] a big bonus, but must enable <i>non-modal</i> editing capabilities with implicit minimal emacs keybindings (like in any default MacOSX text area: ctrl+a, ctrl+e, ctrl+w, etc.)<br />
+'''Goal:''' Build a minimal text editor with a good font for coding, syntax highlighting for java and javascript (and optionally jruby, clojure and beanshell), and the ability to compile java code and parse stack traces to highlight lines that failed to compile. Building in [http://jvi.sourceforge.net jvi] a big bonus, but must enable <i>non-modal</i> editing capabilities with implicit minimal emacs keybindings (like in any default MacOSX text area: {{key|Ctrl}}+{{key|A}}, {{key|Ctrl}}+{{key|E}}, {{key|Ctrl}}+{{key|W}}, etc.)<br />
 '''Language:''' Java or a JVM scripting language of your choice (preferrably Javascript, Jython, JRuby or Clojure).<br />
 '''Mentor:''' [http://www.ini.uzh.ch/people/acardona Albert Cardona] (acardona@ini.phys.ethz.ch)<br />
 
