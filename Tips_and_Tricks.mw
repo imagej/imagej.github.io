@@ -22,7 +22,7 @@ the return value will appear in your Log window when called.
 
 Hit {{key|Ctrl}}+{{key|L}} to start the command launcher.  Type (part of) the name of the entry, then click on ''Show full information''.
 
-If ''Edit>Options>Misc...>Require command key for shortcuts'' is ''un''checked, typing '''L''' is sufficient.
+If ''Edit>Options>Misc...>Require command key for shortcuts'' is ''un''checked, typing {{key|L}} is sufficient.
 
 ==Put the main window to the foreground==
 
