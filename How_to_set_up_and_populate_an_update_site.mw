@@ -128,7 +128,7 @@ First, start the [[updater]]:
 
 Click on the ''Advanced mode'' button and set the view options to ''View local-only files'' to see your plugins. In this case, the plugin we'll be uploading is contained in ''A_Jolly_Useful_Plugin.jar''.
 
-Select the file to upload, right-click (on MacOSX, Ctrl+click) for the context menu and select "Upload to <name>".
+Select the file to upload, right-click (on MacOSX, {{key|Ctrl}}+{{key|click}}) for the context menu and select "Upload to <name>".
 
 [[Image:Upload-to-update-site.png|770px]]
 
