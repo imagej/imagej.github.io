@@ -7,8 +7,8 @@ The update includes:
 *Fixes for AreaList mesh generation.
 *Fixes for blending overlapping images: images where width and height were different were failing to blend.
 *Fixes for creating new AreaList, new Pipe, etc: now correctly repainting the first area or point added.
-*Now control+a (command+a in macosx) selects all but sensitive to object visibility and the presence of a ROI.
-*Now one must shift+click the first point to get the Profile to close, or shift+c any time to toggle the closed state.
+*Now {{key|Ctrl}}+{{key|A}} ({{key|Command}}+{{key|A}} in macosx) selects all but sensitive to object visibility and the presence of a ROI.
+*Now one must {{key|Shift}}+{{key|click}} the first point to get the Profile to close, or {{key|Shift}}+{{key|C}} any time to toggle the closed state.
 
 Thanks to [http://www.ini.uzh.ch/people/german German Koestinger] and [http://fly.mpi-cbg.de/~saalfeld Stephan Saalfeld] for testing and bug reports.
 
