@@ -64,14 +64,14 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 [[Image: Selection_tree.png|300px|thumb|Selections on the mask]]
 ===Creating Selections===
 *Select Edit>Selection>Create Selection to select the objects within the mask
-*To deselect a portion of the image, select Shift+Click
+*To deselect a portion of the image, select {{key|Shift}}+{{key|click}}
 **[http://imagej.net/docs/guide/146-27.html#sub:Create-Selection More information]
 **[[Segmentation#Flexible workflow | back]]
 
 [[Image: Reverted_tree.png|300px|thumb|Selections on the reverted image]]
 ===Transferring Selections===
-*Before transferring the mask's selections, revert the image to its original form by selecting Shift+E
-*Select first the mask, then the original image, and select Shift+E to transfer the mask's selections
+*Before transferring the mask's selections, revert the image to its original form by selecting {{key|Shift}}+{{key|E}}
+*Select first the mask, then the original image, and select {{key|Shift}}+{{key|E}} to transfer the mask's selections
 **[http://imagej.net/docs/guide/146-27.html#infobox:TransferSelections More information]
 **[[Segmentation#Flexible workflow | back]]
 
