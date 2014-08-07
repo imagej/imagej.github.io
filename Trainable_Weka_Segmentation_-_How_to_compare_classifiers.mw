@@ -90,7 +90,7 @@ In our example, we add '''NaiveBayes''', '''SMO''', '''VotedPerceptron''' and ''
 
 With the ''Load options...'' and ''Save options...'' buttons one can load and save the setup of a selected classiﬁer from and to XML. This is especially useful for highly conﬁgured classiﬁers (e.g., nested meta-classiﬁers), where the manual setup takes quite some time, and which are used often.
 
-One can also paste classiﬁer settings here by right-clicking (or ''Alt-Shift-leftclicking'') and selecting the appropriate menu point from the popup menu, to either add a new classiﬁer or replace the selected one with a new setup. This is rather useful for transferring a classiﬁer setup from the Weka Explorer over to
+One can also paste classiﬁer settings here by right-clicking (or {{key|Alt}}+{{key|Shift}}+{{key|click}}) and selecting the appropriate menu point from the popup menu, to either add a new classiﬁer or replace the selected one with a new setup. This is rather useful for transferring a classiﬁer setup from the Weka Explorer over to
 the Experimenter without having to setup the classiﬁer from scratch.
 
 ====Saving the setup====
