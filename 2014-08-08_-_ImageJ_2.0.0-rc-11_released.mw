@@ -1,0 +1,21 @@
+Today, the [[Contributors|ImageJ team]] is pleased to announce a new public release of [[ImageJ2]]: version 2.0.0-rc-10.
+
+== New Features ==
+
+* Usage tracking! We can now track and upload (anonymously) use counts at the plugin level, along with information about the environment of use (location, operating system, etc...). Although we are taking care not to expose any user data with these statistics, this feature can be disabled via a new <code>Edit > Options > Privacy...</code> setting. Expect great things coming to the [[Usage | usage page]]! (note: "great things" = statistics graphs) 
+
+* All datasets, whether opened with ImageJ 1.x or ImageJ2, should now be automatically populated in <code>@Dataset</code> annotations in scripts and plugins. This will make parameterized scripting much more consistent and useful. See the [[Scripting_Help | scripting guide]] for more information and tutorials.
+
+* More plugin types! Continuing our dedication to making ImageJ 2 a flexible and extensible platform, we are starting to convert lower-level utilities to pluggable services, starting with [https://github.com/scijava/scijava-common/blob/scijava-common-2.29.0/src/main/java/org/scijava/convert/ConvertService.java type conversion] and [https://github.com/scijava/scijava-common/blob/master/src/main/java/org/scijava/prefs/PrefService.java preference storage]. This won't mean much to users right now, but it gives developers new ways to tap in to the functionality of ImageJ and will play a key role in extensions like our upcoming MATLAB scripting language!
+
+== Major Fixes ==
+
+* We resolved a significant [http://fiji.sc/bugzilla/show_bug.cgi?id=819 memory leak] due to images not being closed properly. This was also causing naming errors (e.g. the second time you opened "Data" it would display a title "Data-1", even after closing the first image) and other terrible "gotcha"s.
+
+== How to test the release candidate? ==
+
+You can just update your Fiji installation: ImageJ 2.0.0-rc-10 is already part of Fiji.
+
+Please send all bug reports to the [[Mailing Lists|ImageJ mailing list]]. And thank you very much for trying ImageJ2!
+
+[[Category:ImageJ2]]
