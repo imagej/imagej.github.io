@@ -7,7 +7,7 @@
 | source                 = {{GitHub|org=scijava|repo=scripting-groovy}}
 | status                 = stable
 }}
-{{Scripting}}[http://groovy.codehaus.org/ Groovy] is an agile and dynamic language for the Java Virtual Machine. It builds upon the strengths of Java but has additional power features inspired by languages like [[Python]], [[Ruby]] and Smalltalk.
+{{Scripting}}[http://groovy.codehaus.org/ Groovy] is an agile and dynamic language for the Java Virtual Machine. It builds upon the strengths of [[Java]] but has additional power features inspired by languages like [[Python]], [[Ruby]] and Smalltalk.
 
 = Quickstart =
 
