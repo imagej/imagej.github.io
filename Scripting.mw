@@ -4,7 +4,7 @@ ImageJ allows you to write scripts in several different languages.
 
 = Getting started =
 
-* Press the <code>[</code> key to open the [[Script Editor]].
+* Press the {{key|[}} key to open the [[Script Editor]].
 * Optionally, choose a template from the ''Templates'' menu to get you started.
 * Otherwise, choose your language from the ''Language'' menu.
 * Grab code snippets for common tasks from the [[Scripting toolbox]].
