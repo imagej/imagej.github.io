@@ -4,7 +4,7 @@
 | author                 = [mailto:walter@biz.uni-muenchen.de Joachim Walter]
 | maintainer             = [[User:Rueden|Curtis Rueden]]
 | filename                = [http://maven.imagej.net/content/repositories/releases/net/imagej/Image_5D/1.2.5/Image_5D-1.2.5.jar Image_5D-1.2.5.jar]
-| source                 = [https://github.com/imagej/image5d Git]
+| source                 = {{GitLink|jar=image5d|repository=imagej}}
 | latest version         = 1.2.5 (2011 November 4)
 | status                 = inactive
 | category               = [[:Category:Visualization|Visualization]]
