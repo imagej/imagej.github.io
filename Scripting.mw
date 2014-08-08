@@ -25,7 +25,7 @@ ImageJ's [[Script Editor]] supports the following languages:
 * [[JRuby Scripting|Ruby (JRuby)]]
 
 Additionally, these languages can be installed via [http://fiji.sc/Update_Sites update sites]:
-* [[MATLAB]]
+* [[MATLAB Scripting|MATLAB]]
 
 = Using an interpreter =
 
