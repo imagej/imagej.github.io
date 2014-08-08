@@ -23,6 +23,9 @@ ImageJ's [[Script Editor]] supports the following languages:
 * [[Beanshell Scripting|BeanShell]]
 * [[Introduction into Macro Programming|ImageJ Macro]]
 
+Additionally, these languages can be installed via [http://fiji.sc/Update_Sites update sites]:
+* [[MATLAB]]
+
 = Using an interpreter =
 
 All scripting languages use the same basic interpreter, with the following common features.
