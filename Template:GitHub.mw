@@ -36,6 +36,11 @@ You can give just a <code>repo</code> (or just an <code>org</code>), and it will
 {{GitHub|repo=fiji|path=plugins/Examples/Fiji_Cube.ijm}}
 </pre>
 {{GitHub|repo=fiji|path=plugins/Examples/Fiji_Cube.ijm}}
+If you give neither a <code>path</code> nor a <code>source</code> then it links to the repository as a whole:
+<pre>
+{{GitHub|repo=fiji}}
+</pre>
+{{GitHub|repo=fiji}}
 Use <code>tag</code> to specify a tag (rather than <code>master</code>):
 <pre>
 {{GitHub|tag=imagej-2.0.0-beta-7.9|path=app/src/test/java/imagej/debug/TypeHierarchy.java}}
