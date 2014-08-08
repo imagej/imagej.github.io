@@ -1,17 +1,49 @@
 <includeonly>
-[https://github.com/{{{org|{{{repo|imagej}}}}}}/{{{repo|{{{org|imagej}}}}}}/{{#if:{{{source|}}}|blob/master/src/main/java/{{{source|}}}|}}{{#if:{{{path|}}}|blob/master/{{{path|}}}|}} {{{label|on GitHub}}}]
+[https://github.com/{{{org|{{{repo|imagej}}}}}}/{{{repo|{{{org|imagej}}}}}}/{{#if:{{{source|}}}|blob/{{{tag|master}}}/src/main/java/{{{source|}}}|}}{{#if:{{{path|}}}|blob/{{{tag|master}}}/{{{path|}}}|}} {{{label|on GitHub}}}]
 </includeonly>
 
 <noinclude>
-==Usage Examples==
-
+==Usage==
 <pre>
-{{GitHub|org=fiji|path=plugins/Examples/blend_two_images.clj}}
+{{GitHub
+| org    =
+| repo   =
+| tag    =
+| path   =
+| source =
+| label  =
+}}
 </pre>
-{{GitHub|org=fiji|path=plugins/Examples/blend_two_images.clj}}
 
+==Examples==
+Use <code>path</code> to link to a file off the repository root:
 <pre>
-{{GitHub|repo=fiji|path=plugins/Examples/blend_two_images.clj}}
+{{GitHub|path=WELCOME.md}}
 </pre>
-{{GitHub|repo=fiji|path=plugins/Examples/blend_two_images.clj}}
+{{GitHub|path=WELCOME.md}}
+Use <code>source</code> to link to a source file within the repository's <code>src/main/java</code> subtree:
+<pre>
+{{GitHub|source=net/imagej/ImageJ.java}}
+</pre>
+{{GitHub|source=net/imagej/ImageJ.java}}
+Use <code>org</code> and <code>repo</code> to link to a different repository than <code>imagej/imagej</code>:
+<pre>
+{{GitHub|org=fiji|repo=TrackMate|path=README.md}}
+</pre>
+{{GitHub|org=fiji|repo=TrackMate|path=README.md}}
+You can give just a <code>repo</code> (or just an <code>org</code>), and it will be used for both <code>org</code> and <code>repo</code>:
+<pre>
+{{GitHub|repo=fiji|path=plugins/Examples/Fiji_Cube.ijm}}
+</pre>
+{{GitHub|repo=fiji|path=plugins/Examples/Fiji_Cube.ijm}}
+You can link to a tag (rather than <code>master</code>) by giving a <code>tag</code>:
+<pre>
+{{GitHub|repo=imagej|tag=imagej-2.0.0-beta-7.9|path=app/src/test/java/imagej/debug/TypeHierarchy.java}}
+</pre>
+{{GitHub|repo=imagej|tag=imagej-2.0.0-beta-7.9|path=app/src/test/java/imagej/debug/TypeHierarchy.java}}
+You can override the label with <code>label</code>:
+<pre>
+{{GitHub|repo=fiji|path=plugins/Examples/Fiji_Logo_3D.js|label=Fiji... in 3D!}}
+</pre>
+{{GitHub|repo=fiji|path=plugins/Examples/Fiji_Logo_3D.js|label=Fiji... in 3D!}}
 </noinclude>
