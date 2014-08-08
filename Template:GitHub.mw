@@ -38,9 +38,9 @@ You can give just a <code>repo</code> (or just an <code>org</code>), and it will
 {{GitHub|repo=fiji|path=plugins/Examples/Fiji_Cube.ijm}}
 Use <code>tag</code> to specify a tag (rather than <code>master</code>):
 <pre>
-{{GitHub|repo=imagej|tag=imagej-2.0.0-beta-7.9|path=app/src/test/java/imagej/debug/TypeHierarchy.java}}
+{{GitHub|tag=imagej-2.0.0-beta-7.9|path=app/src/test/java/imagej/debug/TypeHierarchy.java}}
 </pre>
-{{GitHub|repo=imagej|tag=imagej-2.0.0-beta-7.9|path=app/src/test/java/imagej/debug/TypeHierarchy.java}}
+{{GitHub|tag=imagej-2.0.0-beta-7.9|path=app/src/test/java/imagej/debug/TypeHierarchy.java}}
 Use <code>label</code> to override the label:
 <pre>
 {{GitHub|repo=fiji|path=plugins/Examples/Fiji_Logo_3D.js|label=Fiji... in 3D!}}
