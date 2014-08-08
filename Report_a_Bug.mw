@@ -1,6 +1,4 @@
-{{Notice
-| message = For information on how to structure your bug report, see [[Bug reporting best practices|bug reporting best practices]].
-}}
+{{BugReporting}}
 {{Infobox
 | software               = Fiji
 | name                   = Bug Submitter
