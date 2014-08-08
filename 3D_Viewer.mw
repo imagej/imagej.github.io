@@ -41,7 +41,11 @@ univ.addMesh(yourImagePlus, null, "somename", 50, new boolean[] {true, true, tru
 ...
 </source>
 
-Until the full 3D Viewer developer documentation is moved to this Wiki, you can find it [http://132.187.25.13/ij3d/?category=Documentation&page=Developer_HowTos here]; the JavaDocs can be found [http://fiji.sc/javadoc/ij3d/package-summary.html here].
+Until everything is migrated to this wiki, the original website provides the [http://132.187.25.13/ij3d/?category=Documentation&page=Developer_HowTos full 3D Viewer developer documentation].
+
+=== Javadocs === 
+
+The Fiji Javadocs povide detailed information about the [http://fiji.sc/javadoc/ij3d/package-summary.html 3D Viewer API]
 
 [[Category:Plugins]]
 [[Category:Visualization]]
