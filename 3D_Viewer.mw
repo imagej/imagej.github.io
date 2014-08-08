@@ -4,9 +4,9 @@
 | author                 = Benjamin Schmid, Albert Cardona, Mark Longair, Johannes Schindelin
 | maintainer             = Benjamin Schmid
 | filename               = [http://3dviewer.neurofly.de/download/ImageJ_3D_Viewer.jar]
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/3D_Viewer;hb=master Fiji's gitweb]
+| source                 = {{GitLink|jar=3D_Viewer}}
 | released               = April 2007
-| latest version         = August 2008
+| latest version         = January 2013
 | status                 = beta
 | category               = [[:Category:Visualization|Visualization]]
 | website                = http://3dviewer.neurofly.de
