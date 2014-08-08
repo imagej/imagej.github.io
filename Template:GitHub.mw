@@ -1,0 +1,17 @@
+<includeonly>
+[https://github.com/{{{org|{{{repo|imagej}}}}}}/{{{repo|{{{org|imagej}}}}}}/{{#if:{{{source|}}}|blob/master/src/main/java/{{{source|}}}|}}{{#if:{{{path|}}}|blob/master/{{{path|}}}|}} {{{label|on GitHub}}}]
+</includeonly>
+
+<noinclude>
+==Usage Examples==
+
+<pre>
+{{GitHub|org=fiji|path=plugins/Examples/blend_two_images.clj}}
+</pre>
+{{GitHub|org=fiji|path=plugins/Examples/blend_two_images.clj}}
+
+<pre>
+{{GitHub|repo=fiji|path=plugins/Examples/blend_two_images.clj}}
+</pre>
+{{GitHub|repo=fiji|path=plugins/Examples/blend_two_images.clj}}
+</noinclude>
