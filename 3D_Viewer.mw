@@ -24,10 +24,9 @@ surfaces or orthoslices.
 
 == Demo video ==
 
-The original website provides a [http://132.187.25.13/home/imagej/Viewer.avi  demo movie (60 MB, ~15 min, AVI format)] which
-shows many of the features of the 3D viewer.
+There is a [[:File:3D_Viewer_2pass_65k.flv|demo screencast (~15 min, 8 MB, FLV format)]] available, showing many of the features of the 3D viewer. It has been transcoded for this wiki to meet the size and codec constraints, the original file is available on the old 3D Viewer website as an [http://132.187.25.13/home/imagej/Viewer.avi AVI (60 MB)]
 
-For more information, please visit the original [http://3dviewer.neurofly.de homepage]
+For more information, please visit the [http://3dviewer.neurofly.de original homepage].
 
 == For developers ==
 
