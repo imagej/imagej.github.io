@@ -1,10 +1,10 @@
-Today, the [[Contributors|ImageJ team]] is pleased to announce a new public release candidate for [[ImageJ2]]: version 2.0.0-rc-10.
+Today, the [[Contributors|ImageJ team]] is pleased to announce a new public release candidate for [[ImageJ2]]: version 2.0.0-rc-11.
 
 == New features ==
 
 * Usage tracking! We can now track and upload (anonymously) use counts at the plugin level, along with information about the environment of use (location, operating system, etc...). Although we are taking care not to expose any user data with these statistics, this feature can be disabled via a new <code>Edit > Options > Privacy...</code> setting. Expect great things coming to the [[Usage | usage page]]! (note: "great things" = statistics graphs) 
 
-* [[Groovy]] scripting! The Groovy scripting language is [http://bloodredsun.com/2011/10/04/scala-groovy-clojure-jython-jruby-java-jobs/ one of the most popular available for the JVM]. Hence, as of version 2.0.0-rc-10, ImageJ now has built-in support for Groovy as a [[scripting]] option.
+* [[Groovy]] scripting! The Groovy scripting language is [http://bloodredsun.com/2011/10/04/scala-groovy-clojure-jython-jruby-java-jobs/ one of the most popular available for the JVM]. Hence, ImageJ now has built-in support for Groovy as a [[scripting]] option.
 
 * All images, whether opened with the [[SCIFIO]] option enabled or not, should now be automatically populated in <code>@Dataset</code> annotations in scripts and plugins. This will make parameterized scripting much more consistent and useful. See the [[Scripting_Help | scripting guide]] for more information and tutorials.
 
