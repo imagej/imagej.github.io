@@ -4,7 +4,7 @@
 | author                 = Johannes Schindelin
 | maintainer             = Johannes Schindelin
 | filename               = Make_Screencast.bsh
-| source                 = in [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Scripts/File/Make_Screencast.bsh gitweb]
+| source                 = {{GitHub|repo=fiji|path=plugins/Scripts/File/Make_Screencast.bsh}}
 | status                 = stable
 }}
 
