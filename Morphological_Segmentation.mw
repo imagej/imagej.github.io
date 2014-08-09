@@ -3,7 +3,7 @@
 | software               = ImageJ/Fiji
 | author                  = [[User:Iarganda | Ignacio Arganda-Carreras]], David Legland
 | maintainer             = [[User:Iarganda | Ignacio Arganda-Carreras]]
-| source                 = [https://github.com/ijpb/ijpb-plugins on GitHub]
+| source                 = {{GitHub|org=ijpb|repo=ijpb-plugins}}
 | released               = July 3<sup>rd</sup>, 2014
 | latest version         = July 7<sup>th</sup>, 2014
 | status                 = stable, active
