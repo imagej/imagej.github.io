@@ -4,7 +4,7 @@
 | author                 = Mark Longair
 | maintainer             = Mark Longair
 | filename               = VIB_.jar
-| source                 = {{GitLink|jar=VIB_|path=stacks/Three_Pane_Crop.java}}
+| source                 = {{GitHub|org=fiji|repo=VIB|source=stacks/Three_Pane_Crop.java}}
 | status                 = stable
 }}
 
