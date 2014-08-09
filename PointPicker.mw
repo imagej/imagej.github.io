@@ -3,7 +3,7 @@
 | name                   = PointPicker
 | maintainer             = Philippe Thévenaz
 | author                 = Philippe Thévenaz
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/PointPicker_/src/main/java/PointPicker_.java in gitweb]
+| source                 = {{GitHub|org=fiji|repo=PointPicker|source=PointPicker_.java}}
 | released               = 16/09/2010
 | latest version         = 16/09/2010
 | status                 = 
