@@ -1,6 +1,6 @@
 Thanks to Alexander Wende and Tim Cross, the Fiji Wiki has a new look and feel (named [http://en.wikipedia.org/wiki/Viti_Levu "Viti Levu"]). [http://bioweb.cnb.csic.es/~iarganda/index_EN.html Ignacio Arganda-Carreras] also had a big hand in debugging and enhancing it.
 
-In the same run, it must be mentioned that [http://www.neurofly.de/ Benjamin Schmid] put in a <u>lot</u> of work to make the nice new snapshots happen, by accomodating the new [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=bin/prepare-wiki-screenshot.py;hb=master generator script] with the 3D viewer's API.
+In the same run, it must be mentioned that [http://www.neurofly.de/ Benjamin Schmid] put in a <u>lot</u> of work to make the nice new snapshots happen, by accomodating the new {{GitHub|repo=fiji|path=bin/prepare-wiki-screenshot.py|label=generator script}} with the 3D viewer's API.
 
 Stephan Saalfeld made the menu work on the iPhone (click/tap on a menu button and the menu will stay open).
 
