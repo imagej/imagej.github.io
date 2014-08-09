@@ -224,7 +224,7 @@ and Verena Kaynig, and many other helpers.
 
 * You can use the '''analyze-dependencies.bsh''' script to check dependencies of .jar files, reusing the functionality of the [[Fiji Updater|Fiji Updater's]] upload functionality.
 
-* You can make your own "View on Fiji Development" movie, as seen on our [http://youtube.com/fijichannel YouTube channel], using the combined-gource-video.bsh script (requires [http://github.com/dscho/Gource Gource]).
+* You can make your own "View on Fiji Development" movie, as seen on our [http://youtube.com/fijichannel YouTube channel], using the combined-gource-video.bsh script (requires {{GitHub|org=dscho|repo=Gource|label=Gource}}).
 
 * The [[VIB Protocol|VIB]] sources were moved from a submodule directly into [http://fiji.sc/fiji.git fiji.git].
 
