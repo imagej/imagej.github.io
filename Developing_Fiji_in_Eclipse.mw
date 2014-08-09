@@ -1,7 +1,7 @@
 ==Purpose==
 
 The purpose of this tutorial is to get you started hacking on [https://github.com/fiji/fiji/ Fiji's source code] (i.e., the core Fiji plugins) inside the Eclipse IDE. If what you need is to develop a ''new plugin'' for ImageJ, you do not actually need Fiji's source. Rather, see these resources:
-* [https://github.com/imagej/minimal-ij1-plugin minimal-ij1-plugin] project template
+* {{GitHub|org=imagej|repo=minimal-ij1-plugin|label=minimal-ij1-plugin}} project template
 * [[Introduction into Developing Plugins]] tutorial
 * [https://www.youtube.com/watch?v=Ac-6gJ2eRb0 Developing ImageJ 1.x plugins with NetBeans] screencast
 
