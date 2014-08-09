@@ -2,7 +2,7 @@
 | name                   = VisBio- orthogonal projection plugin
 | software               = ImageJ - Fiji - ImgLib
 | author                 = Curtis Rueden, Melissa Linkert, Eric Kjellman
-| maintainer             = [mailto:ctrueden@wisc.edu Curtis Rueden]
+| maintainer             = [[User:Rueden|Curtis Rueden]]
 | filename               = visbio.jar
 | source                 = {{GitHub|org=uw-loci|repo=visbio-imagej}}
 | latest version         = Jan 2014
