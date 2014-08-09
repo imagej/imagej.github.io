@@ -4,7 +4,7 @@ This page is a tutorial that shows how to integrate your own edge feature analyz
 
 All these tutorials assume you are familiar with Java development. You should be at ease with java core concepts such as object oriented design, inheritance, interfaces, etc...  Ideally you would even know that maven exists and that it can help you to compile software. Beyond this, the tutorials will provide what you need to know. 
 
-Edge feature analyzers are algorithms that can associate one or more scalar numerical features  to an edge, or a link between two spots in TrackMate. For instance, the instantaneous velocity is an edge feature (you need two linked spots to compute a displacement and a time interval), which happens to be provided by the algorithm named [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/edges/EdgeVelocityAnalyzer.java EdgeVelocityAnalyzer.java].
+Edge feature analyzers are algorithms that can associate one or more scalar numerical features  to an edge, or a link between two spots in TrackMate. For instance, the instantaneous velocity is an edge feature (you need two linked spots to compute a displacement and a time interval), which happens to be provided by the algorithm named {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/edges/EdgeVelocityAnalyzer.java|label=EdgeVelocityAnalyzer.java}}.
 
 
 
@@ -20,8 +20,8 @@ TrackMate is extended by writing ''modules''. Modules are just the basic algorit
 * visualization tools
 * post-processing actions (exporting, data massaging, etc...)
 
-All of these modules implement an interface, specific to the module class. For instance, an edge analyzer algorithm will implement the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java EdgeAnalyzer] interface. 
-There is therefore 7 interfaces. They do have in common that they all extend the mother module interface called [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/TrackMateModule.java TrackMateModule].
+All of these modules implement an interface, specific to the module class. For instance, an edge analyzer algorithm will implement the {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java|label=EdgeAnalyzer}} interface. 
+There is therefore 7 interfaces. They do have in common that they all extend the mother module interface called {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/TrackMateModule.java|label=TrackMateModule}}.
 
 TrackMateModule is used for two basic purpose:
 * It itself extends the SciJavaPlugin interface, which will fuel the automatic discovery of new modules. We will discuss this point last.
@@ -54,7 +54,7 @@ in the XY plane. Nothing more.
 
 So create a package for your new analyzer in our project, for instance <code>fiji.plugin.trackmate.examples.edgeanalyzer</code>.
 
-In this package, create a class <code>EdgeAngleAnalyzer</code> and let it implement the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java EdgeAnalyzer] interface. You should be getting something like this:
+In this package, create a class <code>EdgeAngleAnalyzer</code> and let it implement the {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java|label=EdgeAnalyzer}} interface. You should be getting something like this:
 
 <source lang="java">
 package plugin.trackmate.examples.edgeanalyzer;
@@ -73,7 +73,7 @@ It is important to note that we provide a blank constructor. This is very import
 
 Eclipse will immediately complain (I suppose you are using Eclipse; but when it comes to complaining, everything tends to be general) that your class needs to implement some abstract method. A variety of methods popup.
 
-We see the general module methods we discussed above, plus some specific to edge analyzers. Actually, most of the new methods are generic for <i>all</i> the feature analyzers (spot, track or edge). These methods belong to the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/FeatureAnalyzer.java FeatureAnalyzer] interface, which <code>EdgeAnalyzer</code> extends, of course.
+We see the general module methods we discussed above, plus some specific to edge analyzers. Actually, most of the new methods are generic for <i>all</i> the feature analyzers (spot, track or edge). These methods belong to the {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/FeatureAnalyzer.java|label=FeatureAnalyzer}} interface, which <code>EdgeAnalyzer</code> extends, of course.
 
 They exist because TrackMate needs to know what your feature analyzer does. Since it computes numerical features, it needs to know what features it computes, their name, their short name (when we want to show them in crowded part of the GUI) and their physical dimension. Indeed, TrackMate wants to know the dimension of the feature you generate, for it was coded in part by a conflicted physicist who does not want angles and velocities to be plotted on the same graph.
 
@@ -84,7 +84,7 @@ These 6 methods are:
 
 * <code>getFeatureShortNames()</code> returns another map with the same rules. We just use its value to display short names of features when this is needed in the GUI. There are no general advice on how to shorten your feature names; just try until it fits.
 
-* <code>getFeatureDimensions()</code> returns a last map, that gives a dimension to your features. Physical dimensions are listed in the  [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/Dimension.java Dimension enum].
+* <code>getFeatureDimensions()</code> returns a last map, that gives a dimension to your features. Physical dimensions are listed in the  {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/Dimension.java|label=Dimension enum}}.
 
 * <code>getIsIntFeature()</code> is just about sugar coating. It returns a map that tells what features are integer mapped. For instance, if you have a feature that count things, such as number of neighbors, you should map this feature to <code>true</code> here. This one is actually not ''really'' useful; there will be no problem, no loss of precision if you do not set it right. It's just about having numbers displayed correctly. I wanted that when there were 2 neighbors, the number of neighbors displayed was "2" and not "2.0000000000001". In our case, we measure an angle, so this feature should map to <code>false</false>.
 
@@ -264,7 +264,7 @@ In our case, we are coding an analyzer that returns the angle of a single edge, 
 
 The method that actually performs the work is the less elaborated. The concrete implementation is provided with <code>edges</code>, the collection of the edge whose features are to be calculated, and <code>model</code>, the TrackMate model that holds all the information you need.
 
-There is just one thing to know: Once you computed the numerical value of your feature, you need to store it in the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/FeatureModel.java FeatureModel]. The feature model is a part of the main model.
+There is just one thing to know: Once you computed the numerical value of your feature, you need to store it in the {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/FeatureModel.java|label=FeatureModel}}. The feature model is a part of the main model.
 
 It works like a 2D Map:
 <source lang="java">
@@ -335,7 +335,7 @@ Right now, just compile your project, and drop the resulting jar in the Fiji plu
 
 Great, no?
 
-You can find the full source for this example [https://github.com/fiji/TrackMate-examples/blob/master/src/main/java/plugin/trackmate/examples/edgeanalyzer/EdgeAngleAnalyzer.java here]. It can also be used as a template for your analyzer.
+You can find the full source for this example {{GitHub|org=fiji|repo=TrackMate-examples|source=plugin/trackmate/examples/edgeanalyzer/EdgeAngleAnalyzer.java|label=here}}. It can also be used as a template for your analyzer.
 
 
 
