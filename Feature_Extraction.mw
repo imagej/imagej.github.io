@@ -6,7 +6,7 @@
 | software               = Fiji
 | author                  = Stephan Saalfeld ([mailto:saalfeld@mpi-cbg.de])
 | maintainer             = Stephan Saalfeld
-| source                 = [https://github.com/axtimwalde/mpicbg on GitHub]
+| source                 = {{GitHub|org=axtimwalde|repo=mpicbg|label=on GitHub}}
 | released               = 2008
 | latest version         = September 29<sup>th</sup>, 2009
 | status                 = stable, active
