@@ -3,7 +3,7 @@
 | name                   = Statistical Region Merging
 | maintainer             = [mailto:johannes.schindelin_at_gmx.de Johannes Schindelin]
 | author                 = Johannes Schindelin
-| source                 = {{GitLink|jar=Statistical_Region_Merging|path=SRM_.java}}
+| source                 = {{GitHub|org=fiji|repo=Statistical_Region_Merging|source=SRM_.java}}
 | released               = 2009-03-31
 | latest version         = 2009-06-03
 | status                 = stable
