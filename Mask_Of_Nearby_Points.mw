@@ -4,7 +4,7 @@
 | author                 = Mark Longair
 | maintainer             = Mark Longair
 | filename               = VIB_.jar
-| source                 = {{GitLink|jar=VIB_|path=util/util/Mask_Of_Nearby_Points.java}}
+| source                 = {{GitHub|org=fiji|repo=VIB|source=util/util/Mask_Of_Nearby_Points.java}}
 | status                 = stable
 }}
 
