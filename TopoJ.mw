@@ -3,7 +3,7 @@
 | name                   = TopoJ
 | maintainer             = David Hovis
 | author                 = David Hovis
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/TopoJ_/src/main/java/Compute_Topography.java in gitweb]
+| source                 = {{GitHub|org=fiji|repo=TopoJ}}
 | released               = 18/08/2010
 | latest version         = 18/08/2010
 | status                 = stable
