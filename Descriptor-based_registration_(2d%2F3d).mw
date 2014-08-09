@@ -3,7 +3,7 @@
 | name                   = Descriptor-based registration
 | maintainer             = [mailto:preibischs_at_janelia_dot_hhmi_dot_org Stephan Preibisch]
 | author                 = Stephan Preibisch
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Descriptor_based_registration;hb=refs/heads/master in gitweb]
+| source                 = {{GitHub|org=fiji|repo=Descriptor_based_registration}}
 | released               = 30/11/2011
 | latest version         = 30/11/2011
 | status                 = 
