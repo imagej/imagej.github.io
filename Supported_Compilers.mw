@@ -75,17 +75,17 @@ To detect build failures more reliably, we have a [http://jenkins.imagej.net/ Je
 
 The following jobs use MiniMaven, and will test compilation with OpenJDK6:
 
-# [http://jenkins.imagej.net/job/Fiji-minimal/ Fiji-minimal] - Verifies that Fiji builds successfully with *no* submodules initialized. Runs automatically after each push to [https://github.com/fiji/fiji Fiji's remote Git repository].
+# [http://jenkins.imagej.net/job/Fiji-minimal/ Fiji-minimal] - Verifies that Fiji builds successfully with *no* submodules initialized. Runs automatically after each push to {{GitHub|repo=fiji|label=Fiji's remote Git repository}}.
 # [http://jenkins.imagej.net/job/Fiji-daily/ Fiji-daily] - Verifies that Fiji builds successfully with *all* submodules initialized, once a day.
 
 === Jobs that use command-line Maven ===
 
 The following jobs use command-line Maven, and will test compilation with Oracle Java SE 6:
 
-# [http://jenkins.imagej.net/job/Fiji-Maven/ Fiji-Maven] - Verifies that Fiji builds successfully. Runs automatically after each push to [https://github.com/fiji/fiji Fiji's remote Git repository].
-# [http://jenkins.imagej.net/job/ImgLib/ ImgLib] - Verifies that ImgLib2 builds successfully. Runs automatically after each push to [https://github.com/imagej/imglib ImgLib2's remote Git repository].
+# [http://jenkins.imagej.net/job/Fiji-Maven/ Fiji-Maven] - Verifies that Fiji builds successfully. Runs automatically after each push to {{GitHub|repo=fiji|label=Fiji's remote Git repository}}.
+# [http://jenkins.imagej.net/job/ImgLib/ ImgLib] - Verifies that ImgLib2 builds successfully. Runs automatically after each push to {{GitHub|repo=imglib|label=ImgLib2's remote Git repository}}.
 # [http://jenkins.imagej.net/job/ImgLib-daily/ ImgLib-daily] - Verifies that ImgLib2 builds successfully, once a day.
-# [http://jenkins.imagej.net/job/ImageJ/ ImageJ] - Verifies that ImageJ2 builds successfully. Runs automatically after each push to [https://github.com/imagej/imagej ImageJ's remote Git repository].
+# [http://jenkins.imagej.net/job/ImageJ/ ImageJ] - Verifies that ImageJ2 builds successfully. Runs automatically after each push to {{GitHub|repo=imagej|label=ImageJ's remote Git repository}}.
 # [http://jenkins.imagej.net/job/ImageJ-daily/ ImageJ-daily] - Verifies that ImageJ2 builds successfully, once a day.
 
 == Fixing build problems ==
