@@ -11,7 +11,7 @@ We will use the [[SciJava]] discovery mechanism as before, but just for the sake
 
 == Track analyzers ==
 
-All the track feature analyzers must implement {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/track/TrackAnalyzer.java|label=TrackAnalyzer interface}}. Like for the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java EdgeAnalyzer] interface, it extends both
+All the track feature analyzers must implement {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/track/TrackAnalyzer.java|label=TrackAnalyzer interface}}. Like for the {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java|label=EdgeAnalyzer}} interface, it extends both
 * {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/FeatureAnalyzer.java|label=FeatureAnalyzer}} that helps you declaring what you compute, 
 * and {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/TrackMateModule.java|label=TrackMateModule}}, that is in charge of the integration in TrackMate.
 
