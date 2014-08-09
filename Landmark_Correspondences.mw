@@ -3,7 +3,7 @@
 | software               = Fiji
 | author                  = [[User:Saalfeld|Stephan Saalfeld]] ([mailto:saalfeld@mpi-cbg.de])
 | maintainer             = [[User:Saalfeld|Stephan Saalfeld]]
-| source                 = [https://github.com/axtimwalde/mpicbg/blob/master/mpicbg_/src/main/java/Transform_Roi.java on GitHub]
+| source                 = {{GitHub|org=axtimwalde|repo=mpicbg|path=mpicbg_/src/main/java/Transform_Roi.java|label=on GitHub}}
 | released               = August 7<sup>th</sup>, 2008
 | latest version         = October 19<sup>th</sup>, 2010
 | status                 = stable, active
