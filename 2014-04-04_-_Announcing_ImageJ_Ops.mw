@@ -3,7 +3,7 @@ Today, the [[ImageJ]] and [[KNIME]] teams are pleased to announce [https://githu
 [[Image:Konstanz-hackathon.jpg|320px|thumb|right|Happy hackers: 502 commits in five days!]]
 == Motivation ==
 
-The ImageJ2 vision is to extend Java's mantra of &quot;write once, run anywhere&quot; to image processing algorithms. With that goal at its heart, ImageJ2 introduces extensible [https://github.com/scijava/scijava-common plugin] and [https://github.com/imagej/imagej-tutorials/blob/master/working-with-modules/src/main/java/WorkingWithModules.java module] frameworks which make ImageJ commands richer, more powerful and easier to share across applications. Already, these modules are accessible from [http://cellprofiler.org/ CellProfiler], [[KNIME]], [https://github.com/imagej/imagej-omero OMERO] and [http://www2.informatik.uni-halle.de/agprbio/alida Alida].
+The ImageJ2 vision is to extend Java's mantra of &quot;write once, run anywhere&quot; to image processing algorithms. With that goal at its heart, ImageJ2 introduces extensible [https://github.com/scijava/scijava-common plugin] and {{GitHub|org=imagej|repo=imagej-tutorials|path=working-with-modules/src/main/java/WorkingWithModules.java|label=module}} frameworks which make ImageJ commands richer, more powerful and easier to share across applications. Already, these modules are accessible from [http://cellprofiler.org/ CellProfiler], [[KNIME]], [https://github.com/imagej/imagej-omero OMERO] and [http://www2.informatik.uni-halle.de/agprbio/alida Alida].
 
 But still notably missing was the next crucial layer: a framework for ''image processing'' specifically. To address that, we set out to create a framework for reusable image processing algorithms, with the following characteristics:
 
