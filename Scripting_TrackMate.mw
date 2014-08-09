@@ -402,7 +402,7 @@ There are some gotchas: some feature analyzers require other numerical features 
 
 Finally, depending on their type, numerical features are not stored at the same place:
 * Spot features are simply conveyed by the spot object, and you can access them through <code>spot.getFeature('FEATURE_NAME')</code>
-* Edge and track features are stored in a sub-component of the model object called the FeatureModel ([https://github.com/fiji/fiji/blob/master/src-plugins/TrackMate_/src/main/java/fiji/plugin/trackmate/FeatureModel.java FeatureModel.java]).
+* Edge and track features are stored in a sub-component of the model object called the FeatureModel ({{GitHub|repo=fiji|path=src-plugins/TrackMate_/src/main/java/fiji/plugin/trackmate/FeatureModel.java|label=FeatureModel.java}}).
 Check the script below to see a working example.
 
 <source lang="python">from ij import IJ, ImagePlus, ImageStack, measure
