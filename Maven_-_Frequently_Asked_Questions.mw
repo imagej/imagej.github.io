@@ -1,7 +1,7 @@
 = What does the pom version mean? =
 
-The [https://github.com/imagej/minimal-ij1-plugin/blob/master/pom.xml pom.xml] of [https://github.com/imagej/minimal-ij1-plugin/ minimal-ij1-plugin] inherits from a parent called
-[https://github.com/scijava/scijava-common/blob/master/pom-scijava/pom.xml pom-scijava]. This parent POM defines and configures many things so that the
+The {{GitHub|org=imagej|repo=minimal-ij1-plugin|path=pom.xml|label=pom.xml}} of [https://github.com/imagej/minimal-ij1-plugin/ minimal-ij1-plugin] inherits from a parent called
+{{GitHub|org=scijava|repo=scijava-common|path=pom-scijava/pom.xml|label=pom-scijava}}. This parent POM defines and configures many things so that the
 POMs of individual plugin projects are shorter (i.e., so they don't have to
 repeat things).
 
@@ -30,9 +30,9 @@ In many ''pom.xml'' files, you can see that the version of the ''ij'' dependency
 <version>${imagej1.version}</version>
 </source>
 
-The string ''${imagej1.version}'' is a property that gets replaced with the actual value. This value is [https://github.com/scijava/scijava-common/blob/5c1764b9/pom-scijava/pom.xml#L21 defined in the pom-scijava parent configuration]. Currently the value is ''[1.45s,)'' which means ''the latest release version you can find equal to or greater than 1.45s.''
+The string ''${imagej1.version}'' is a property that gets replaced with the actual value. This value is {{GitHub|org=scijava|repo=scijava-common|tag=5c1764b9|path=pom-scijava/pom.xml#L21|label=defined in the pom-scijava parent configuration}}. Currently the value is ''[1.45s,)'' which means ''the latest release version you can find equal to or greater than 1.45s.''
 
-Browse the latest pom-scijava [https://github.com/scijava/scijava-common/blob/master/pom-scijava/pom.xml here].
+Browse the latest pom-scijava {{GitHub|org=scijava|repo=scijava-common|path=pom-scijava/pom.xml|label=here}}.
 
 Browse the available versions of ImageJ 1.x [http://maven.imagej.net/content/repositories/releases/net/imagej/ij/ here].
 
@@ -111,7 +111,7 @@ The pom-scijava parent uses the buildnumber-maven-plugin to embed the SCM revisi
 </plugins>
 </source>
 
-Then, your About dialog box can access the information from the ''.jar'' file's manifest using the [http://jenkins.imagej.net/job/SciJava-common/javadoc/org/scijava/util/Manifest.html Manifest class] of [https://github.com/scijava/scijava-common/blob/master/src/main/java/org/scijava/util/Manifest.java scijava-common].
+Then, your About dialog box can access the information from the ''.jar'' file's manifest using the [http://jenkins.imagej.net/job/SciJava-common/javadoc/org/scijava/util/Manifest.html Manifest class] of {{GitHub|org=scijava|repo=scijava-common|source=org/scijava/util/Manifest.java|label=scijava-common}}.
 
 You would need to add a dependency on ''scijava-common'' like this:
 
