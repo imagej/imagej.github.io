@@ -1,4 +1,4 @@
-This page collects the plugins and packages maintained by each member of the Fiji team. The list is automatically generated from the Wiki data by a [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=bin/plugin-documentation-list.py;hb=HEAD python script]. It is stored in [[Template:Maintainers]] and fetched by this page on demand.
+This page collects the plugins and packages maintained by each member of the Fiji team. The list is automatically generated from the Wiki data by a {{GitHub|repo=fiji|path=bin/plugin-documentation-list.py|label=python script}}. It is stored in [[Template:Maintainers]] and fetched by this page on demand.
 
 
 == Ignacio Arganda-Carreras ==
