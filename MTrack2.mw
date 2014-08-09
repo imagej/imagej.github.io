@@ -4,7 +4,7 @@
 | author                 = Nico Stuurman (nico at cmp.ucsf.edu)
 | maintainer             = [[Dan White]]
 | filename               = 
-| source                 = {{GitLink|jar=MTrack2_|path=MTrack2_.java}} or externally [http://valelab.ucsf.edu/~nico/IJplugins/download/plugins/MTrack2_.java here]
+| source                 = {{GitHub|org=fiji|repo=MTrack2|source=MTrack2_.java}} or externally [http://valelab.ucsf.edu/~nico/IJplugins/download/plugins/MTrack2_.java here]
 | released               = 
 | latest version         = 2008/07/03 Macro aware
 | status                 = 
