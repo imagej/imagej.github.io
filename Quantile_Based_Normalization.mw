@@ -4,7 +4,7 @@
 | author                 = Mark Longair
 | maintainer             = Mark Longair
 | filename               = VIB_.jar
-| source                 = {{GitLink|jar=VIB_|path=util/Quantile_Based_Normalization.java}}
+| source                 = {{GitHub|org=fiji|repo=VIB|source=util/Quantile_Based_Normalization.java}}
 | status                 = stable
 }}
 
