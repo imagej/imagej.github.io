@@ -3,7 +3,7 @@
 | name                   = Snakuscule
 | maintainer             = Philippe Thévenaz
 | author                 = Philippe Thévenaz
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Snakuscule_ in gitweb]
+| source                 = {{GitHub|org=fiji|repo=Snakuscule}}
 | released               = 17/09/2010
 | latest version         = 17/09/2010
 | status                 = 
