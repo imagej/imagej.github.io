@@ -4,7 +4,7 @@
 | author                 = Stephan Preibisch
 | maintainer             = Stephan Preibisch<br/>Mark Hiner<br/>Curtis Rueden
 | filename               = Stitching_.jar
-| source                 = {{GitHub|org=fiji|repo=Stitching|source=plugin/Stitching_Grid.java|label=on GitHub}}
+| source                 = {{GitHub|org=fiji|repo=Stitching|source=plugin/Stitching_Grid.java}}
 | released               = October 2008
 | status                  = active
 | category               = [[:Category:Stitching|Stitching]]
