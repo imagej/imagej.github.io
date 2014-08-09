@@ -4,7 +4,7 @@
 | author                 = [[User:Iarganda | Ignacio Arganda-Carreras]]
 | maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
 | filename               = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Skeletonize3D_-1.0.1-SNAPSHOT.jar Skeletonize3D_.jar] 
-| source                 = Included in the jar or [http://github.com/fiji/Skeletonize3D in GitHub]
+| source                 = {{GitHub|org=fiji|repo=Skeletonize3D}}
 | released               = November 14<sup>th</sup>, 2008
 | latest version         = November 19<sup>th</sup>, 2008
 | status                 = stable
