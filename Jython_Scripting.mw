@@ -1147,7 +1147,7 @@ First note that the FFMPEG I/O plugin was a proof-of-concept that is completely 
 
 Then open the [[Fiji Updater]], push the "Manage update sites" at the bottom left of the dialog, and install the [http://fiji.sc/~schindelin/ffmpeg-plugins/ FFMPEG] plugin by [[User:Schindelin|Johannes Schindelin]] by ticking its checkbox, as [[How_to_follow_a_3rd_party_update_site|explained in more detail here]].
 
-See also the Java source code for the [https://github.com/fiji/fiji/blob/8164ae68/native/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/IO.java IO] class from the [https://github.com/fiji/fiji/tree/8164ae68/native/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/ FFMPEG plugin source code site].
+See also the Java source code for the {{GitHub|repo=fiji|tag=8164ae68|path=native/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/IO.java|label=IO}} class from the [https://github.com/fiji/fiji/tree/8164ae68/native/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/ FFMPEG plugin source code site].
 
 <source lang="python">
 """ Albert Cardona for Marta Zlatic, 2014-01-24. """
@@ -1701,17 +1701,17 @@ Notice, though, that <b>you don't need to do the .jar packaging at all</b>. Just
 
 = Jython examples in Fiji =
 
-*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Find_Dimension_of_Raw_Image.py;hb=HEAD Find Dimension of Raw Image]
-*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Edit_LUT_As_Text.py;hb=HEAD Edit LUT As Text]
-*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Delayed_Snapshot.py;hb=HEAD Delayed Snapshot]
-*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Command_Launchers/Command_Launcher_Python.py;hb=HEAD Command Launcher GUI]
-*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/list_all_threads.py;hb=HEAD List all threads]
-*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/chess_.py;hb=HEAD Chess]
+*{{GitHub|repo=fiji|path=plugins/Examples/Find_Dimension_of_Raw_Image.py|label=Find Dimension of Raw Image}}
+*{{GitHub|repo=fiji|path=plugins/Examples/Edit_LUT_As_Text.py|label=Edit LUT As Text}}
+*{{GitHub|repo=fiji|path=plugins/Examples/Delayed_Snapshot.py|label=Delayed Snapshot}}
+*{{GitHub|repo=fiji|path=plugins/Examples/Command_Launchers/Command_Launcher_Python.py|label=Command Launcher GUI}}
+*{{GitHub|repo=fiji|path=plugins/Examples/list_all_threads.py|label=List all threads}}
+*{{GitHub|repo=fiji|path=plugins/Examples/chess_.py|label=Chess}}
 
-*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/extract_stack_under_arealist.py;hb=HEAD Extract stack under AreaList] in TrakEM2.
-*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/T2_set_all_transforms_to_identity.py;hb=HEAD Set all transforms to identity] for TrakEM2 objects.
-*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/T2_Select_All.py;hb=HEAD Select All] objects in TrakEM2.
-*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/Measure_AreaLists.py;hb=HEAD Measure AreaList] in TrakEM2.
+*{{GitHub|repo=fiji|path=plugins/Examples/TrakEM2_Example_Scripts/extract_stack_under_arealist.py|label=Extract stack under AreaList}} in TrakEM2.
+*{{GitHub|repo=fiji|path=plugins/Examples/TrakEM2_Example_Scripts/T2_set_all_transforms_to_identity.py|label=Set all transforms to identity}} for TrakEM2 objects.
+*{{GitHub|repo=fiji|path=plugins/Examples/TrakEM2_Example_Scripts/T2_Select_All.py|label=Select All}} objects in TrakEM2.
+*{{GitHub|repo=fiji|path=plugins/Examples/TrakEM2_Example_Scripts/Measure_AreaLists.py|label=Measure AreaList}} in TrakEM2.
 
 = See also =
 *Albert Cardona's crash course in [http://www.ini.uzh.ch/~acardona/fiji-tutorial/index.html Jython scripting with Fiji]. 
