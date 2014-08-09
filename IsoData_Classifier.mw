@@ -3,7 +3,7 @@
 | software               = Fiji
 | author                 = [mailto:johannes.schindelin_at_gmx.de Johannes Schindelin]
 | maintainer             = Johannes Schindelin
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/IsoData_Classifier;hb=HEAD on gitweb]
+| source                 = {{GitHub|org=fiji|repo=IsoData_Classifier}}
 | released               = 2009/11/21
 }}
 
