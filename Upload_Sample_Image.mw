@@ -3,7 +3,7 @@
 | name                   = Upload Sample Image
 | maintainer             = [mailto:johannes.schindelin_at_gmx.de Johannes Schindelin]
 | author                 = Johannes Schindelin
-| source                 = {{GitLink|jar=Fiji_Plugins|path=fiji/util/Fiji_Uploader.java}}
+| source                 = {{GitHub|org=fiji|repo=Fiji_Plugins|source=fiji/util/Fiji_Uploader.java}}
 | released               = 2009-06-11
 | latest version         = 2010-03-11
 | status                 = stable
