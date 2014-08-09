@@ -4,7 +4,7 @@
 | author                 = Mark Longair
 | maintainer             = Mark Longair
 | filename               = VIB_.jar
-| source                 = {{GitLink|jar=VIB_|path=util/Histogram_2D.java}}
+| source                 = {{GitHub|org=fiji|repo=VIB|source=util/Histogram_2D.java}}
 | status                 = stable
 }}
 
