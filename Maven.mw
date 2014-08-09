@@ -72,7 +72,7 @@ For Maven to know what you are looking for, you typically have to add the depend
 
 As you can see, dependencies are referenced under the same ''groupId'', ''artifactId'' and ''version'' triplet (also known as ''GAV parameters'') that you had to declare for the current project.
 
-For Maven to find the dependencies, it has to know about the location of the repositories. As you know, we are strong proponents of collaboration within the scientific community, so we started the [http://scijava.org/ scijava effort] at the hackathon in December 2011. To this end, scijava has a [https://github.com/scijava/scijava-common/blob/master/pom-scijava/pom.xml super POM] which declares repositories we use (and other metadata as well, such as current artifact versions we provide). To benefit from this in your project, add this to your ''pom.xml'':
+For Maven to find the dependencies, it has to know about the location of the repositories. As you know, we are strong proponents of collaboration within the scientific community, so we started the [http://scijava.org/ scijava effort] at the hackathon in December 2011. To this end, scijava has a {{GitHub|org=scijava|repo=scijava-common|path=pom-scijava/pom.xml|label=super POM}} which declares repositories we use (and other metadata as well, such as current artifact versions we provide). To benefit from this in your project, add this to your ''pom.xml'':
 
 <source lang="xml">
 <parent>
@@ -96,7 +96,7 @@ There are two different sorts of Maven artifacts (i.e., JAR files): releases and
 
 == Producing multiple JAR files ==
 
-So what if you have multiple ''.jar'' files you want to build in the same project? Then these need to live in their own subdirectories and there needs to be a common parent POM, a so-called ''aggregator'' or ''multi-module'' POM (only this POM needs to have the scijava POM as parent, of course). [https://github.com/imagej/imagej-tutorials/blob/577286474be8399eb38d30d66cf0c35ee50bd929/pom.xml#L47-L62 Here is an example]. Basically, it is adding the ''<packaging>pom</packaging>'' entry at the top, as well as some subdirectory names to the ''<modules>'' section.
+So what if you have multiple ''.jar'' files you want to build in the same project? Then these need to live in their own subdirectories and there needs to be a common parent POM, a so-called ''aggregator'' or ''multi-module'' POM (only this POM needs to have the scijava POM as parent, of course). {{GitHub|org=imagej|repo=imagej-tutorials|tag=577286474be8399eb38d30d66cf0c35ee50bd929|path=pom.xml#L47-L62|label=Here is an example}}. Basically, it is adding the ''<packaging>pom</packaging>'' entry at the top, as well as some subdirectory names to the ''<modules>'' section.
 
 Note, however, that most of the [[SciJava]] software stack ([[SciJava Common]], [[ImgLib2]], [[SCIFIO]], [[ImageJ]] and [[Fiji]]) now structures each project as its own single-module project in its own Git repository, since using multi-module projects can complicate versioning.
 
