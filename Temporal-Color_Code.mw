@@ -6,7 +6,7 @@
 | software               = Fiji
 | author                 = [http://cmci.embl.de Kota Miura], [[User:Schindelin|Johannes Schindelin]]
 | maintainer             = [http://cmci.embl.de Kota Miura] ([mailto:miura@embl.de])
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Scripts/Image/Hyperstacks/Temporal-Color_Code.ijm;hb=master in fiji.git]
+| source                 = {{GitHub|repo=fiji|path=plugins/Scripts/Image/Hyperstacks/Temporal-Color_Code.ijm}}
 | released               = 29 Nov 2010
 | latest version         = 29 Nov 2010
 | status                 = beta
