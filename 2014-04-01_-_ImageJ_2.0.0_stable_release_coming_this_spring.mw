@@ -8,7 +8,7 @@ We are targeting the following goals for a June 1 release of ImageJ 2.0.0:
 # Unified image file I/O driven by the [[SCIFIO]] library. ImageJ2 will overcome the extensibility limitations imposed by ImageJ 1.x's &quot;HandleExtraFileTypes&quot; mechanism.
 # Improved [http://imagej.net/ imagej.net] website encompassing all content from [http://mirror.imagej.net/ mirror.imagej.net] (ImageJ 1.x content), [http://developer.imagej.net/ developer.imagej.net] (ImageJ 2.x content) and [http://wiki.imagej.net/ wiki.imagej.net] (community content including Fiji). This will involve migration of some &quot;developer&quot; content to the wiki, as well as a better set of front pages that provide clear & easy access to ImageJ and Fiji downloads.
 # A well-vetted release of the burgeoning [[2014-04-04 - Announcing ImageJ OPS|ImageJ OPS]] project for easy development of reusable image processing algorithms.
-# Stable release of the [https://github.com/imagej/imagej-omero ImageJ-OMERO] interoperability library, including support for calling many ImageJ 1.x plugins from [http://openmicroscopy.org/info/omero OMERO].
+# Stable release of the {{GitHub|org=imagej|repo=imagej-omero|label=ImageJ-OMERO}} interoperability library, including support for calling many ImageJ 1.x plugins from [http://openmicroscopy.org/info/omero OMERO].
 # A final logo for ImageJ 2.0.0, chosen by a community logo competition.
 # Manuscript drafts for several software components of the [[SciJava]] software stack.
 # Cleanup and reconciliation of the [http://trac.imagej.net/ Trac] and [https://github.com/imagej/imagej/issues GitHub] ImageJ issue trackers.
