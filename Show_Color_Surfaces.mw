@@ -4,7 +4,7 @@
 | author                 = Mark Longair
 | maintainer             = Mark Longair
 | filename               = VIB_.jar
-| source                 = {{GitLink|jar=3D_Viewer|path=isosurface/Show_Colour_Surfaces.java}}
+| source                 = {{GitHub|org=fiji|repo=3D_Viewer|source=isosurface/Show_Colour_Surfaces.java}}
 | status                 = stable
 }}
 
