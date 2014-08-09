@@ -1354,10 +1354,10 @@ else:
 
 All the following are included in Fiji's plugins/Examples/TrakEM2_Example_Scripts/ folder:
 
-*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/extract_stack_under_arealist.py;hb=HEAD Extract stack under AreaList] in TrakEM2.
-*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/T2_set_all_transforms_to_identity.py;hb=HEAD Set all transforms to identity] for TrakEM2 objects.
-*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/T2_Select_All.py;hb=HEAD Select All] objects in TrakEM2.
-*[http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/TrakEM2_Example_Scripts/Measure_AreaLists.py;hb=HEAD Measure AreaList] in TrakEM2.
+*{{GitHub|repo=fiji|path=plugins/Examples/TrakEM2_Example_Scripts/extract_stack_under_arealist.py|label=Extract stack under AreaList}} in TrakEM2.
+*{{GitHub|repo=fiji|path=plugins/Examples/TrakEM2_Example_Scripts/T2_set_all_transforms_to_identity.py|label=Set all transforms to identity}} for TrakEM2 objects.
+*{{GitHub|repo=fiji|path=plugins/Examples/TrakEM2_Example_Scripts/T2_Select_All.py|label=Select All}} objects in TrakEM2.
+*{{GitHub|repo=fiji|path=plugins/Examples/TrakEM2_Example_Scripts/Measure_AreaLists.py|label=Measure AreaList}} in TrakEM2.
 * A [https://github.com/acardona/Fiji-TrakEM2-scripts/tree/master/TrakEM2 collection of scripts for TrakEM2], hosted by github. Mostly related to inspecting and analyzing [http://fiji.sc/javadoc/ini/trakem2/display/Treeline.html Treeline], [http://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html AreaTree] and [http://fiji.sc/javadoc/ini/trakem2/display/Connector.html Connector] instances, when used for neural circuit reconstruction.
 
 [[Category:Scripting]]
