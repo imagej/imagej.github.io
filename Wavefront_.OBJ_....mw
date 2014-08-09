@@ -4,7 +4,7 @@
 | author                 = Benjamin Schmid, Mark Longair
 | maintainer             = Mark Longair
 | filename               = VIB_.jar
-| source                 = {{GitLink|jar=VIB_|path=marchingcubes/ExportMesh_.java}}
+| source                 = {{GitHub|org=fiji|repo=VIB|source=marchingcubes/ExportMesh_.java}}
 | status                 = stable
 }}
 
