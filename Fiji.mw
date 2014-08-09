@@ -93,4 +93,4 @@ See the [[Downloads]] page for debian packages and others.
 
 Fiji is released under the General Public License.
 
-Each component has [https://github.com/fiji/fiji/blob/master/LICENSES its own license].
+Each component has {{GitHub|repo=fiji|path=LICENSES|label=its own license}}.
