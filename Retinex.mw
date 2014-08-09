@@ -3,7 +3,7 @@
 | name                   = Retinex
 | maintainer             = [mailto:jimenezf_at_fi.uaemex.mx Francisco Jiménez Hernández]
 | author                 = Francisco Jiménez Hernández
-| source                 = {{GitLink|jar=Fiji_Plugins|path=Retinex_.java}}
+| source                 = {{GitHub|org=fiji|repo=Fiji_Plugins|source=Retinex_.java}}
 | released               = 02/08/2010
 | latest version         = 02/08/2010
 | status                 = 
