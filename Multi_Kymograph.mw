@@ -3,7 +3,7 @@
 | name                   = Multi Kymograph
 | maintainer             = [mailto:jens_dot_rietdorf_at_fmi_dot_ch Jens Rietdorf]
 | author                 = Jens Rietdorf and Arne Seitz
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Multi_Kymograph;hb=refs/heads/constrained-shapes in gitweb]
+| source                 = {{GitHub|org=fiji|repo=Multi_Kymograph}}
 | released               = 21/04/2004
 | latest version         = 31/10/2008
 | status                 = 
