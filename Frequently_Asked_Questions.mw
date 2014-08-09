@@ -162,7 +162,7 @@ ImageJ2 user interfaces are just plugins; ImageJ2 runs with the "ImageJ1 legacy 
 
 == Does ImageJ2 support the ImageJ macro language? Is it deprecated? ==
 
-Thanks to the [https://github.com/imagej/imagej-legacy ImageJ legacy layer], [[ImageJ1]] [[macros]] will run unchanged in [[ImageJ2]], while also allowing to harness ImageJ2's new parameterized [[scripting]] paradigm&mdash;something that was previously not possible with the macro language.
+Thanks to the {{GitHub|org=imagej|repo=imagej-legacy|label=ImageJ legacy layer}}, [[ImageJ1]] [[macros]] will run unchanged in [[ImageJ2]], while also allowing to harness ImageJ2's new parameterized [[scripting]] paradigm&mdash;something that was previously not possible with the macro language.
 
 The ImageJ1 macro language has been extremely useful to many users. However, it has a substantial limitation: its functions are separate from those available from Java and the other scripting languages.
 
@@ -341,7 +341,7 @@ If you develop a Fiji plugin, the result will be in the form of one or more jars
 
 == How can I call ImageJ from my software? ==
 
-If your software is written in Java, we recommend using [[Maven]] to structure your project. You can then add dependencies to portions of ImageJ that are of interest to you. See the [https://github.com/imagej/imagej-tutorials ImageJ tutorials] for examples.
+If your software is written in Java, we recommend using [[Maven]] to structure your project. You can then add dependencies to portions of ImageJ that are of interest to you. See the {{GitHub|org=imagej|repo=imagej-tutorials|label=ImageJ tutorials}} for examples.
 
 If your software is written in another language such as C or Python, there are [http://loci.wisc.edu/bio-formats/interfacing-non-java-code many ways to integrate Java functionality]. You must choose which one is best for your particular requirements.
 
@@ -349,7 +349,7 @@ To facilitate some use cases, we provide a script for generating a combined bund
 
 <blockquote><code>mvn -Pdeps package</code></blockquote>
 
-For convenience, we provide a [http://jenkins.imagej.net/job/ImageJ/lastSuccessfulBuild/artifact/target/ build of this combined JAR file] (with suffix <code>-all</code>) from the latest DEVELOPMENT, UNSTABLE version of ImageJ. This build includes the latest changes on the [https://github.com/imagej/imagej master branch of the source repository]. It has not been thoroughly tested and may contain new bugs.
+For convenience, we provide a [http://jenkins.imagej.net/job/ImageJ/lastSuccessfulBuild/artifact/target/ build of this combined JAR file] (with suffix <code>-all</code>) from the latest DEVELOPMENT, UNSTABLE version of ImageJ. This build includes the latest changes on the {{GitHub|repo=imagej|label=master branch of the source repository}}. It has not been thoroughly tested and may contain new bugs.
 
 In some cases, use of this JAR file is appropriate and convenient; for example, [http://cellprofiler.org/ CellProfiler] uses it to integrate with ImageJ. However, you should consider carefully what would be best for your project:
 
@@ -439,7 +439,7 @@ Changes to [[ImageJ1]] are made by Wayne Rasband, who is the sole [[ImageJ1]] de
 
 Methods of getting the patch to Wayne include:
 * Send a patch to imagej-devel to [mailto:imagej-devel@imagej.net]
-* Submit a pull request on GitHub against [https://github.com/imagej/imagej1 Wayne's ImageJ1 repository]
+* Submit a pull request on GitHub against {{GitHub|org=imagej|repo=imagej1|label=Wayne's ImageJ1 repository}}
 * Send a patch to Wayne via private mail
 
 The important part is that Wayne receive the patch, since he is the only one with the authority to merge it.
