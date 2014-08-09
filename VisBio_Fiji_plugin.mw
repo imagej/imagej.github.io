@@ -4,7 +4,7 @@
 | author                 = Curtis Rueden, Melissa Linkert, Eric Kjellman
 | maintainer             = [mailto:ctrueden@wisc.edu Curtis Rueden]
 | filename               = visbio.jar
-| source                 = [https://github.com/uw-loci/visbio-imagej Github].
+| source                 = {{GitHub|org=uw-loci|repo=visbio-imagej}}
 | latest version         = Jan 2014
 | website                = Fiji
 | status                 = Beta. Under development, but stable enough for real work. 
