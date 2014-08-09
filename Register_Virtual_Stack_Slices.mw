@@ -163,7 +163,7 @@ reference_name, p, use_shrinking_constraint)
 == See also ==
 * [[Transform Virtual Stack Slices]], to see how to load the saved transforms.
 * [http://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/imagefeatures/FloatArray2DSIFT.java;hb=HEAD FloatArray2DSIFT.java] which contains the subclass Param which is the 'sift' member of the Register_Virtual_Stack_Slices.Param subclass.
-* {{GitLink|jar=register_virtual_stack_slices|path=register_virtual_stack/Register_Virtual_Stack_MT.java|label=Register_Virtual_Stack_MT.java}}, including the Param subclass.
+* {{GitHub|org=fiji|repo=register_virtual_stack_slices|source=register_virtual_stack/Register_Virtual_Stack_MT.java|label=Register_Virtual_Stack_MT.java}}, including the Param subclass.
 
 == References ==
 The algorithm implemented for elastic registration ([[BUnwarpJ|bUnwarpJ]]) and its technical explanations are detailed on the paper: 
