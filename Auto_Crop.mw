@@ -3,7 +3,7 @@
 | name                   = Auto Crop
 | maintainer             = [mailto:johannes_dot_schindelin_at_gmx_dot_de Johannes Schindelin]
 | author                 = Johannes Schindelin
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Fiji_Plugins/src/main/java/fiji/selection/Select_Bounding_Box.java in gitweb]
+| source                 = {{GitHub|org=fiji|repo=Fiji_Plugins|source=fiji/selection/Select_Bounding_Box.java}}
 | released               = 40/02/2010
 | latest version         = 30/04/2011
 | status                 = stable
