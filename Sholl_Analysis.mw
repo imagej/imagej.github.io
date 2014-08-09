@@ -5,7 +5,7 @@
 | name           = Sholl Analysis
 | author         = Tiago Ferreira, Tom Maddock
 | maintainer     = [mailto:tiago_dot_ferreira_at_mail_dot_mcgill_dot_ca Tiago Ferreira]
-| source         = [https://github.com/tferr/ASA on GitHub]
+| source         = {{GitHub|org=tferr|repo=ASA}}
 | filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.4.2.jar Sholl_Analysis.jar]
 | released       = December 2012
 | latest version = '''3.4.2 July 2014''' ({{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}})
@@ -484,7 +484,7 @@ function closeResults() {
 :Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run <span style="border-bottom:1px dotted #ccc;">Image▷ Show Info...</span> (shortcut: {{key press|I}} ) to know more about this cell type.
 
 ;Help▷ About Plugins▷ About Sholl Analysis...
-:Retrieves information about the plugin version and a link to its Git source code [https://github.com/tferr/ASA repository].
+:Retrieves information about the plugin version and a link to its Git source code {{GitHub|org=tferr|repo=ASA|label=repository}}.
 
 == FAQ ==
 '''General'''
@@ -493,7 +493,7 @@ function closeResults() {
 		<span id="faq:plugin"></span>'''What is the difference between ''Sholl Analysis'' and an homonymous plugin released by the Ghosh laboratory in 2005'''?
 	</li>
 	<dl><dd>
-		The [http://labs.biology.ucsd.edu/ghosh/software/ original Sholl Analysis plugin] by Tom Maddock (version 1.0) was released for ImageJ 1.35 and is now deprecated, unmaintained software that behaves erratically in newer versions of ImageJ. The current implementation of  ''Sholl Analysis'' inherits Tom's initial 2D algorithm, but has numerous [[#Release_Notes|added features]] to enhance its utility. Note that throughout 2012 the plugin was temporarily called ''Advanced Sholl Analysis''. You can follow the entire history of the plugin on [https://github.com/tferr/ASA GitHub].
+		The [http://labs.biology.ucsd.edu/ghosh/software/ original Sholl Analysis plugin] by Tom Maddock (version 1.0) was released for ImageJ 1.35 and is now deprecated, unmaintained software that behaves erratically in newer versions of ImageJ. The current implementation of  ''Sholl Analysis'' inherits Tom's initial 2D algorithm, but has numerous [[#Release_Notes|added features]] to enhance its utility. Note that throughout 2012 the plugin was temporarily called ''Advanced Sholl Analysis''. You can follow the entire history of the plugin on {{GitHub|org=tferr|repo=ASA|label=GitHub}}.
 	</dd></dl>
 	<li>
 		<span id="faq:threshold"></span>'''Why do I need to threshold the cell?'''
@@ -644,7 +644,7 @@ If you are not using Fiji, download ''Sholl_Analysis.jar'' from the direct link 
 Please note that Fiji is the most convenient way of keeping your ImageJ distribution up-to-date. Without access to Fiji's [[Update_Fiji|built-in updater]], you are strongly advised to upgrade ImageJ to its latest version using <span style="border-bottom:1px dotted #ccc;">Help▷ Update ImageJ...</span> Without Fiji, you will also have to manually update the Sholl Analysis plugin by checking the {{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}}.
 
 == Release Notes and Pre-releases ==
-Releases notes are available on {{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Github}}. If you do not mind unstable software, [https://github.com/tferr/ASA/blob/master/Notes.md#development-builds development builds] may be found [http://jenkins.imagej.net/job/Sholl-Analysis here]. Once new features mature and no major issues are found these development versions will be made available, as usual, through [[Update_Fiji|Fiji's Updater]].
+Releases notes are available on {{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Github}}. If you do not mind unstable software, {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=development builds}} may be found [http://jenkins.imagej.net/job/Sholl-Analysis here]. Once new features mature and no major issues are found these development versions will be made available, as usual, through [[Update_Fiji|Fiji's Updater]].
 
 == Related Resources ==
 * '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]]''' Mark Longair's plugin for semi-automated three-dimensional tracing, featuring [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl analysis]] for traced cells
