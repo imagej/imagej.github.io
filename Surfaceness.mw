@@ -4,7 +4,7 @@
 | author                 = Mark Longair, Stephan Preibisch
 | maintainer             = Mark Longair
 | filename               = VIB_.jar
-| source                 = {{GitLink|jar=VIB_|path=features/Surfaceness_.java}}
+| source                 = {{GitHub|org=fiji|repo=VIB|source=features/Surfaceness_.java}}
 | status                 = stable
 }}
 
