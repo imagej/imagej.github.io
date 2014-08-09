@@ -3,7 +3,7 @@
 | name                   = Align Image by line ROI
 | maintainer             = [mailto:johannes_dot_schindelin_at_gmx_dot_de Johannes Schindelin]
 | author                 = Johannes Schindelin
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/VIB_/src/main/java/Align_Image.java in gitweb]
+| source                 = {{GitHub|org=fiji|repo=VIB|source=Align_Image.java}}
 | released               = 28/09/2006
 | latest version         = 28/09/2006
 | status                 = stable, handles only gray images
