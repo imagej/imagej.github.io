@@ -6,7 +6,7 @@ Fiji is a community effort.  So we are happy whenever we see new people developi
 == Purpose ==
 
 The purpose of this tutorial is to get you started hacking on [https://github.com/fiji/fiji/ Fiji's source code] (i.e., the core Fiji plugins). If you need to develop a ''new plugin'' for ImageJ, you do not actually need Fiji's source. Rather, see these resources:
-* [https://github.com/imagej/minimal-ij1-plugin minimal-ij1-plugin] project template
+* {{GitHub|org=imagej|repo=minimal-ij1-plugin|label=minimal-ij1-plugin}} project template
 * [[Introduction into Developing Plugins]] tutorial
 * [https://www.youtube.com/watch?v=Ac-6gJ2eRb0 Developing ImageJ 1.x plugins with NetBeans] screencast
 
@@ -116,7 +116,7 @@ At some point, you might want to debug whatever you wrote.  There's a small [[De
 
 == Discussing code ==
 
-When you want to discuss your changes to some Fiji component, the preferred way is to inline a patch and send it to the [mailto:fiji@fiji.sc fiji-devel mailing list]. You can also send a link to your repository, e.g. a fork of [http://github.com/fiji/fiji the Fiji repository on github.com], but then commenting is not as easy (and the discussion will involve fewer developers).
+When you want to discuss your changes to some Fiji component, the preferred way is to inline a patch and send it to the [mailto:fiji@fiji.sc fiji-devel mailing list]. You can also send a link to your repository, e.g. a fork of {{GitHub|repo=fiji|label=the Fiji repository on github.com}}, but then commenting is not as easy (and the discussion will involve fewer developers).
 
 When discussing larger chunks of code (or a patch) on [irc://irc.freenode.net/fiji-devel IRC], please do not paste them directly, but use a [http://gist.github.com pastebin] instead.
 
@@ -134,7 +134,7 @@ Please make sure that you are a little familiar with [[Git mini howto|Git]], or 
 Alternatively, you can make an account for yourself on GitHub and fork fiji.git:
 
 # create an account on [http://github.com/ GitHub]
-# Fork [http://github.com/fiji/fiji Fiji]:
+# Fork {{GitHub|repo=fiji|label=Fiji}}:
 : [[Image:GitHub-fork.png]]
 # clone it
 
@@ -149,7 +149,7 @@ If you already worked in an existing checkout of ''fiji.git'', no problem, you c
 
 Sometimes you may want to contribute to Fiji's existing plugins, for example, a bug  is found in one plugin and you want to fix it, or you would like to improve one plugin by adding more functions.
 
-'''Every plugin has its own git repository in [https://github.com/fiji/ Fiji]'''. For example, the GraphCut plugin's repository is [https://github.com/fiji/Graph_Cut GraphCut]. This structure allows for easy, independent development of 
+'''Every plugin has its own git repository in {{GitHub|org=fiji|repo=|label=Fiji}}'''. For example, the GraphCut plugin's repository is {{GitHub|org=fiji|repo=Graph_Cut|label=GraphCut}}. This structure allows for easy, independent development of 
 the individual parts of which the base version of Fiji consists.
 
 To contribute to Fiji's GraphCut plugin:
