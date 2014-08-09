@@ -39,7 +39,7 @@ If you are already an ImageJ programmer, you might find it the easiest way to si
 
 Internally, we use a compatibility '''Img''' to represent the data which is as fast as ImageJ but in the case of higher dimensionality (>2d) is slower than ImgLib2 can do with the '''ArrayImg'''. Furthermore you are limited in dimensionality (2d-5d), in the type of data ('''UnsignedByteType''', '''UnsignedShortType''', '''FloatType''' and '''ARGBType''') and maximal size of each 2d-plane (max. 46000x46000).
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example1a.java Example1a.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example1a.java|label=Example1a.java}}'''
 <source lang="java">
 import ij.ImageJ;
 import ij.ImagePlus;
@@ -104,7 +104,7 @@ The SCIFIO importer also requires '''Types''' that implement '''NativeType''', w
 
 '''Important''': it does not matter which type of '''Img''' you use to hold the data as we will use '''Iterators''' and '''RandomAccesses''' to access the image content. It might be, however, important if you work on two '''Img''' at the same time using '''Iterators''', see Example2.
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example1b.java Example1b.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example1b.java|label=Example1b.java}}'''
 <source lang="java">
 import ij.ImageJ;
 import io.scif.config.SCIFIOConfig;
@@ -178,7 +178,7 @@ Another important way to instantiate a new ImgLib2 '''Img''' is to create a new 
 
 Once you have one instance of an '''Img''', it is very easy to create another one using the same '''Type''' and '''ImgFactory''', even if it has a different size. Note that the call '''img.firstElement()''' returns the first pixel of any '''Iterable''', e.g. an '''Img'''.
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example1c.java Example1c.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example1c.java|label=Example1c.java}}'''
 <source lang="java">
 import ij.ImageJ;
 import net.imglib2.img.Img;
@@ -231,7 +231,7 @@ A '''View''' almost behaves similar to an '''Img''', and in fact they share impo
 [[Image:ImgLib2example1d.jpg|780px]]
 ''Shows the original image, the View of an interval, as well as the by 90 degree rotated version of the view. Note that only the original image in kept in memory, both Views are completely virtual.''
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example1d.java Example1d.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example1d.java|label=Example1d.java}}'''
 <source lang="java">
 import ij.ImageJ;
 import net.imglib2.RandomAccessibleInterval;
@@ -311,7 +311,7 @@ public < T extends Type< T > > Img< T > copyImage( ... )
 </source>
 '''< T extends Type< T > >''' basically means that '''T''' can be anything that extends '''Type'''. These can be final implementations such as '''FloatType''' or also intermediate interfaces such as '''RealType'''. This, however, also means that in the method body only operations supported by '''Type''' will be available. Note that the method returns a '''T''', which also means that in the constructor from which we call method it will also return an '''Img<FloatType>''' as we provide it with one. 
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example2a.java Example2a.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example2a.java|label=Example2a.java}}'''
 <source lang="java">
 import ij.ImageJ;
 import io.scif.img.ImgIOException;
@@ -396,7 +396,7 @@ public class Example2a
 
 <span style="color:#FF0000">The correct code for the copy-method (in '''copyImageCorrect''') requires the use of a '''RandomAccess'''.</span> We use a '''Cursor''' to iterate over all pixels of the input and a '''RandomAccess''' which we set to the same location the output. Note that the ''setPosition()'' call of the '''RandomAccess''' directly takes the '''Cursor''' as input, which is possible because '''Cursor''' implements '''Localizable'''. Please also note that we use a '''LocalizingCursor''' instead of a normal '''Cursor''' because we need the location of the '''Cursor''' at every pixel.
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example2b.java Example2b.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example2b.java|label=Example2b.java}}'''
 <source lang="java">
 import ij.ImageJ;
 import net.imglib2.Cursor;
@@ -520,7 +520,7 @@ As the ''source'' only needs to be '''RandomAccessible''', it can be basically a
 
 As the ''target'' needs to be an '''IterableInterval''', it is more confined. This, however does not necessarily mean that it can only be an '''Img''' or a '''View''' that is not infinite. It simply means it has to be something that is iterable and not infinite, which for example also applies to sparse data (e.g. a list of locations and their values).
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example2c.java Example2c.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example2c.java|label=Example2c.java}}'''
 <source lang="java">
 import ij.ImageJ;
 import io.scif.img.ImgIOException;
@@ -642,7 +642,7 @@ Below we show '''three''' small variations of the min/max search. [[ImgLib2 Exam
 
 ==== Example 3a - Variation 1 ====
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example3a1.java Example3a1.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example3a1.java|label=Example3a1.java}}'''
 <source lang="java">
 
 import java.util.Iterator;
@@ -730,7 +730,7 @@ public class Example3a1
 
 Note that this example works just the same way if the input is not an '''Img''', but for example just a standard Java '''ArrayList'''.
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example3a2.java Example3a2.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example3a2.java|label=Example3a2.java}}'''
 <source lang="java">
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -818,7 +818,7 @@ public class Example3a2
 
 If we want to compute the location of the minimal and maximal pixel value, an '''Iterator''' will not be sufficient as we need location information. Instead the location search will demand an '''IterableInterval''' as input data which can create '''Cursors'''. Apart from that, the algorithm looks quite similar. Note that we do not use a '''LocalizingCursor''' but only a '''Cursor''' the location happens only when a new maximal or minimal value has been found while iterating the data.
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example3a3.java Example3a3.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example3a3.java|label=Example3a3.java}}'''
 <source lang="java">
 import net.imglib2.Cursor;
 import net.imglib2.IterableInterval;
@@ -910,7 +910,7 @@ public class Example3a3
 
 In a very similar way one can compute the average intensity for image data. Note that we restrict the '''Type''' of data to '''RealType'''. In theory, we could use '''NumericType''' as it offers the possibility to ''add'' up values. However, we cannot ensure that '''NumericType''' provided is capable of adding up millions of pixels without overflow. And even if we would ask for a second '''NumericType''' that is capable of adding values up, it might still have numerical instabilities. ''Note that actually every Java native type has those instabilities''. Therefore we use the '''RealSum''' class that offers correct addition of even very large amounts of pixels. As this implementation is only available for double values, we restrict the method here to '''RealType'''.
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example3b.java Example3b.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example3b.java|label=Example3b.java}}'''
 <source lang="java">
 import io.scif.img.ImgIOException;
 import io.scif.img.ImgOpener;
@@ -985,7 +985,7 @@ Another interesting aspect of this example is the use of the '''ImagePlusImgFact
 [[Image:ManySpheres.jpg|780px]]
 ''Shows the result of example 4a for the (a) two-dimensional, (b) three-dimensional and (c) four-dimensional case. The image series in (c) represents a movie of a three-dimensional rendering. The images of (b) and (c) were rendered using the ImageJ 3d Viewer.''
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example4a.java Example4a.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example4a.java|label=Example4a.java}}'''
 <source lang="java">
 import ij.ImageJ;
 import ij.ImagePlus;
@@ -1143,7 +1143,7 @@ Please note as well that if one would increase the radius of the '''RectangleSha
 [[Image:AllMinima.jpg|780px]]
 ''Shows the result of the detection of local minima after the Gaussian blurring. (a) depicts the input image, (b) the blurred version (sigma=1) and (c) all local mimina drawn as circles with radius 1.''
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example4b.java Example4b.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example4b.java|label=Example4b.java}}'''
 <source lang="java">
 import ij.ImageJ;
 import io.scif.img.ImgIOException;
@@ -1282,7 +1282,7 @@ Which '''OutOfBoundsStrategies''' to use depends on task you want to perform. Fo
 [[File:OutOfBounds.jpg|780px]]
 ''Illustrates the effect of various OutOfBoundsStrategies. (a) shows out of bounds with a constant value, (b) shows a mirroring strategy, (c) shows the periodic strategy, and (d) shows a strategy that uses random values.''
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example5.java Example5.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example5.java|label=Example5.java}}'''
 <source lang="java">
 import ij.ImageJ;
 import io.scif.img.ImgIOException;
@@ -1396,7 +1396,7 @@ The Gaussian convolution has its own  [[Gauss_Package_ImgLib2 | wiki page]]. You
 
 Here, we simply apply a Gaussian convolution with a sigma of 8. Note that it could be applied in-place as well when calling ''Gauss.inFloatInPlace( ... )''. The Gaussian convolution uses by default the '''OutOfBoundsMirrorStrategy'''.
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example6a1.java Example6a1.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example6a1.java|label=Example6a1.java}}'''
 <source lang="java">
 import ij.ImageJ;
 import io.scif.img.ImgIOException;
@@ -1445,7 +1445,7 @@ public class Example6a1
 
 Here we use an '''OutOfBoundsStrategyConstantValue''' instead. It results in continuously darker borders as the zero-values from outside of the image are used in the convolution. Note that the computation is done in-place here. However, we still need to provide an '''ImgFactory''' as the Gaussian convolution needs to create temporary image(s) - except for the one-dimensional case.
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example6a2.java Example6a2.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example6a2.java|label=Example6a2.java}}'''
 <source lang="java">
 import ij.ImageJ;
 import io.scif.img.ImgIOException;
@@ -1511,7 +1511,7 @@ Here we only convolve part of an '''Interval''', or in this case part of the '''
 
 Note: if you wanted, you could force him to use an '''OutOfBoundsStrategy''' directly outside of the '''Interval'''. For that you would have to create an '''RandomAccessibleInterval''' on the '''Img''', extend it by an '''OutOfBoundsStrategy''' and give this as input to the Gaussian convolution.
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example6a3.java Example6a3.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example6a3.java|label=Example6a3.java}}'''
 <source lang="java">
 import ij.ImageJ;
 import io.scif.img.ImgIOException;
@@ -1580,7 +1580,7 @@ This example shows howto apply an algorithm to a lower dimensionality as the ima
 
 Specifically, we apply 1-dimensional Gaussian convolution in 30-pixel wide stripes using a sigma of 16. ''Note that whenever you request an ''HyperSlice'' for a certain dimension, you will get back a '''View''' that contains all dimensions  <span style="color:#FF0000">but</span> this one.''
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example6a4.java Example6a4.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example6a4.java|label=Example6a4.java}}'''
 <source lang="java">
 import ij.ImageJ;
 import io.scif.img.ImgIOException;
@@ -1655,7 +1655,7 @@ In image processing it is sometimes necessary to convolve images with non-separa
 
 <span style="color:#FF0000">''Important: This source code is only GPLv2!''</span>
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example6b.java Example6b.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example6b.java|label=Example6b.java}}'''
 <source lang="java">
 /**
 * This program is free software; you can redistribute it and/or
@@ -1771,7 +1771,7 @@ The final convolution of the inverse template with the image is performed using 
 
 <span style="color:#FF0000">''Important: This source code is only GPLv2!''</span>
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example6c.java Example6c.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example6c.java|label=Example6c.java}}'''
 <source lang="java">
 /**
  * This program is free software; you can redistribute it and/or
@@ -1927,7 +1927,7 @@ In the example we magnify a given real interval in the '''RealRandomAccessible''
 [[File:Interpolation.jpg|779px]]
 ''Shows the result for three different interpolators when magnifying a small part of the image by 10x. The nearest neighbor interpolation is computed fastest and is the most versatile as it requires no computation but just a lookout. The result is, however, very pixelated. The linear interpolation produces reasonable results and computes quite fast. The Lanczos interpolation shows visually most pleasing results but also introduces slight artifacts in the background.''
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example7.java Example7.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example7.java|label=Example7.java}}'''
 <source lang="java">
 import ij.ImageJ;
 import net.imglib2.Cursor;
@@ -2082,7 +2082,7 @@ In this example we create a certain number of random samples with random intensi
 [[File:SparseImage1.jpg|777px]]
 ''On the left hand side it shows nearest-neighbor rendered random sparse data as created in example 8a. The right hand side shows the result of a Gaussian convolution, run directly on the virtual RandomAccessibleInterval.''
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example8a.java Example8a.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example8a.java|label=Example8a.java}}'''
 <source lang="java">
 import ij.ImageJ;
 
@@ -2208,7 +2208,7 @@ In this example we sample an existing image at random locations and render the r
 [[File:SparseImage2.jpg|638px]]<br>
 ''Shows the result of sparse sampling of an existing image using a varying number of random samples. The upper panel shows the rendering using nearest neighbor interpolation, the lower panel uses an interpolated, distance-weighted value of the k nearest neighbors relative to each sampled location (i.e. each pixel).''
 
-'''[https://github.com/imglib/imglib-tutorials/blob/master/src/main/java/Example8b.java Example8b.java]'''
+'''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example8b.java|label=Example8b.java}}'''
 <source lang="java">
 import ij.ImageJ;
 import io.scif.img.ImgIOException;
