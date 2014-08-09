@@ -1,6 +1,6 @@
 Whether a Fiji plugin is called ''internal'' or ''external'' is a purely technical matter: ''external plugins''' source code is maintained in separate repositories.
 
-For example, [[TrackMate]] started out as an internal plugin, but for ease of development -- and in particular, to ease contributing to it -- the source code of TrackMate was moved into [https://github.com/fiji/TrackMate its own repository].
+For example, [[TrackMate]] started out as an internal plugin, but for ease of development -- and in particular, to ease contributing to it -- the source code of TrackMate was moved into {{GitHub|org=fiji|repo=TrackMate|label=its own repository}}.
 
 = How to add a new external plugin =
 
@@ -19,7 +19,7 @@ into the call:
 
 = How to make an internal plugin an external one =
 
-If you want to convert a plugin from an internal one (i.e., source code maintained in [https://github.com/fiji/fiji fiji.git]) to an external one (i.e., source code in its own Git repository), you will need to perform the following steps.
+If you want to convert a plugin from an internal one (i.e., source code maintained in {{GitHub|repo=fiji|label=fiji.git}}) to an external one (i.e., source code in its own Git repository), you will need to perform the following steps.
 
 == Extracting the plugin's revision history ==
 
