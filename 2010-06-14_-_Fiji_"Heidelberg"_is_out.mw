@@ -198,7 +198,7 @@ and Verena Kaynig, and many other helpers.
 
 * You can ask the [[Script Editor]] to open the [http://fiji.sc/javadoc/ JavaDoc] for a given class using ''Tools>Open Help on Class...''
 
-* The [[Using Weka|WEKA library]] is now part of Fiji; the [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Fiji/fiji/FijiClassLoader.java;hb=master FijiClassLoader] is now an instance of URLClassLoader just because of that (thanks for Verena Kaynig, Albert Cardona and Ignacio Arganda-Carreras for the prodding).
+* The [[Using Weka|WEKA library]] is now part of Fiji; the {{GitHub|org=fiji|repo=fiji-compat|source=fiji/FijiClassLoader.java|label=FijiClassLoader}} is now an instance of URLClassLoader just because of that (thanks for Verena Kaynig, Albert Cardona and Ignacio Arganda-Carreras for the prodding).
 
 * There is an easy way to add a screenshot to be shown on the front page of the Fiji Wiki: ''Plugins>Utilities>Fiji>New Fiji Wiki Screenshot''.
 
@@ -220,7 +220,7 @@ and Verena Kaynig, and many other helpers.
 
 * The sources for [http://math.nist.gov/javanumerics/jama/ Jama] are bundled now.
 
-* Both ''plugins/*.jar'' and ''jars/*.jar'' are loaded via the [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Fiji/fiji/FijiClassLoader.java;hb=master FijiClassLoader] now, which allows ''.jar'' files from ''jars/'' to call functions in ''.jar'' files from ''plugins/'' (notable exception: ''jars/ij.jar'' and ''jars/Fiji.jar'').
+* Both ''plugins/*.jar'' and ''jars/*.jar'' are loaded via the {{GitHub|org=fiji|repo=fiji-compat|source=fiji/FijiClassLoader.java|label=FijiClassLoader}} now, which allows ''.jar'' files from ''jars/'' to call functions in ''.jar'' files from ''plugins/'' (notable exception: ''jars/ij.jar'' and ''jars/Fiji.jar'').
 
 * You can use the '''analyze-dependencies.bsh''' script to check dependencies of .jar files, reusing the functionality of the [[Fiji Updater|Fiji Updater's]] upload functionality.
 
