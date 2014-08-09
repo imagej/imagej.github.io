@@ -3,7 +3,7 @@
 | software               = ImageJ
 | author                 = Stephan Preibisch
 | maintainer             = Stephan Preibisch
-| source                = [https://github.com/fiji/spimreconstruction on GitHub]
+| source                 = {{GitHub|org=fiji|repo=spimreconstruction}}
 | filename               = SPIM_Registration.jar
 | status                = beta
 | category               = [[:Category:Registration|SPIM Registration]]
