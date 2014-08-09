@@ -3,7 +3,7 @@
 | software               = ImageJ
 | author                 = Benjamin Schmid, Albert Cardona, Mark Longair, Johannes Schindelin
 | filename               = [http://3dviewer.neurofly.de/download/ImageJ_3D_Viewer.jar]
-| source                 = {{GitLink|jar=3D_Viewer}}
+| source                 = {{GitHub|org=fiji|repo=3D_Viewer}}
 | released               = April 2007
 | latest version         = January 2013
 | status                 = beta
