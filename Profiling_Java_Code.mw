@@ -78,7 +78,7 @@ Note: ''heap'' is Java speak for ''memory''.
 
 == Javassist-based ==
 
-A quite versatile method is to use (and possibly modify) the class [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/fiji-compat/src/main/java/fiji/MemoryProfiler.java;hb=master fiji.MemoryProfiler] in ''fiji-compat.jar''.
+A quite versatile method is to use (and possibly modify) the class {{GitHub|org=fiji|repo=fiji-compat|source=fiji/MemoryProfiler.java|label=fiji.MemoryProfiler}} in ''fiji-compat.jar''.
 
 This memory profiler instruments all method entries and exists using javassist. At each exit, it reports the relative memory usage, the total memory usage, and the exit point of the current method. Call it like this:
 
@@ -88,7 +88,7 @@ This memory profiler instruments all method entries and exists using javassist. 
 
 Since the memory profiling slows down execution dramatically due to the synchronous output to stderr, you may want to limit the classes to be instrumented by setting the environment variable ''MEMORY_PROFILE_ONLY'' to a space-delimited list of classes.
 
-If you want to instrument any class handled by [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/fiji-compat/src/main/java/fiji/IJHacker.java;hb=master fiji.IJHacker], you need to use the slightly more complicated command line:
+If you want to instrument any class handled by {{GitHub|org=imagej|repo=imagej-legacy|label=imagej-legacy}}, you need to use the slightly more complicated command line:
 
 <source lang="bash">
 ./fiji -Dpatch.ij1=false --cp jars/javassist.jar --cp jars/fiji-compat.jar \
