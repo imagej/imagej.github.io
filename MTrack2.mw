@@ -2,7 +2,7 @@
 | software               = ImageJ
 | name                   = MTrack2
 | author                 = Nico Stuurman (nico at cmp.ucsf.edu)
-| maintainer         = [[Dan White]]
+| maintainer             = [[Dan White]]
 | filename               = 
 | source                 = {{GitLink|jar=MTrack2_|path=MTrack2_.java}} or externally [http://valelab.ucsf.edu/~nico/IJplugins/download/plugins/MTrack2_.java here]
 | released               = 
