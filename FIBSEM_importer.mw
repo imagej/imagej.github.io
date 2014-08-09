@@ -3,7 +3,7 @@
 | name                   = FIBSEM importer
 | maintainer             = Stephan Preibisch
 | author                 = Stephan Preibisch
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/IO_/io/FIBSEM_Reader.java;hb=refs/heads/master in gitweb]
+| source                 = {{GitHub|org=fiji|repo=IO|source=io/FIBSEM_Reader.java}}
 | released               = 08/02/2012
 | latest version         = 08/02/2012
 | status                 = stable
