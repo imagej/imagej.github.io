@@ -4,7 +4,7 @@
 | software               = Fiji
 | author                  = [[User:Iarganda | Ignacio Arganda-Carreras]], Stephan Saalfeld, Johannes Schindelin
 | maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
-| source                 = [http://github.com/fiji/SIOX_segmentation on GitHub]
+| source                 = {{GitHub|org=fiji|repo=SIOX_segmentation}}
 | released               = November 6<sup>th</sup>, 2009
 | latest version         = March 3<sup>rd</sup>, 2010
 | status                 = stable, active
