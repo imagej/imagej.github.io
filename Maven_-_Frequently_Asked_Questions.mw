@@ -50,7 +50,7 @@ If you require an ImageJ 1.x version newer than 1.45s (e.g. due to the use of a 
 
 = What's this: ''Property 'imagej.app.directory' unset; Skipping copy-jars'' =
 
-This is part of the [https://github.com/imagej/imagej-maven-plugin imagej-maven-plugin] (enabled for you by pom-scijava). As you suspected, it copies your plugin's ''.jar'' file to your ImageJ plugins folder. But you have to specify where:
+This is part of the {{GitHub|org=imagej|repo=imagej-maven-plugin|label=imagej-maven-plugin}} (enabled for you by pom-scijava). As you suspected, it copies your plugin's ''.jar'' file to your ImageJ plugins folder. But you have to specify where:
 
 <source lang="bash">
 mvn -Dimagej.app.directory=/Applications/ImageJ.app
