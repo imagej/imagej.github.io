@@ -4,7 +4,7 @@
 | author                 = Curtis Rueden<br/>Johannes Schindelin
 | maintainer             = Curtis Rueden<br/>Johannes Schindelin
 | filename               = scripting-jruby.jar
-| source                 = [https://github.com/scijava/scripting-jruby Git]
+| source                 = {{GitHub|org=scijava|repo=scripting-jruby}}
 | status                 = stable
 }}
 {{Scripting}}
