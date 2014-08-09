@@ -4,7 +4,7 @@
 | author                 = Wayne Rasband, Johannes Schindelin, Albert Cardona, et al
 | maintainer            = [http://jenkins.imagej.net/job/Synchronize-and-deploy-IJ1/ ImageJ Jenkins]
 | filename               = [http://maven.imagej.net/content/repositories/releases/net/imagej/ij/ JAR files in ImageJ Maven repository] 
-| source                 = [https://github.com/imagej/ImageJA Git repository]
+| source                 = {{GitHub|org=imagej|repo=ImageJA|label=Git repository}}
 | released               = 17/03/2007
 | latest version         = auto-updated
 | status                 = auto-maintained
