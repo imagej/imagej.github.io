@@ -1,6 +1,6 @@
 == Purpose ==
 
-An example JRuby script, which needs to be customized to be useful to you - the source code is [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Same_Slice_in_Multiple_Images.rb;hb=HEAD here].
+An example JRuby script, which needs to be customized to be useful to you - the source code is {{GitHub|repo=fiji|path=plugins/Examples/Same_Slice_in_Multiple_Images.rb|label=here}}.
 
 == Code ==
 
