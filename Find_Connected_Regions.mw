@@ -4,7 +4,7 @@
 | author                 = Mark Longair
 | maintainer             = Mark Longair
 | filename               = VIB_.jar
-| source                 = {{GitLink|jar=VIB_|path=util/Find_Connected_Regions.java}}
+| source                 = {{GitHub|org=fiji|repo=VIB|source=util/Find_Connected_Regions.java}}
 | status                 = stable
 }}
 
