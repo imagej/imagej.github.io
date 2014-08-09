@@ -3,7 +3,7 @@
 | name                   = Differentials
 | maintainer             = Philippe Thévenaz
 | author                 = Philippe Thévenaz
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Differentials_/src/main/java/Differentials_.java/master in gitweb]
+| source                 = {{GitHub|org=fiji|repo=Differentials|source=Differentials_.java}}
 | released               = 16/09/2010
 | latest version         = 16/09/2010
 | status                 = 
