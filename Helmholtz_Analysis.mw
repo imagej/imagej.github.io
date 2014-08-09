@@ -3,7 +3,7 @@
 | name                   = Helmholtz Analysis
 | maintainer             = [mailto:rpd_at_optinav_dot_com Bob Dougherty]
 | author                 = Bob Dougherty
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Helmholtz_Analysis/Helmholtz_Analysis.java;hb=refs/heads/master in gitweb]
+| source                 = {{GitHub|org=fiji|repo=Helmholtz_Analysis|source=Helmholtz_Analysis.java}}
 | released               = 21/10/2011
 | latest version         = 21/10/2011
 | status                 = 
