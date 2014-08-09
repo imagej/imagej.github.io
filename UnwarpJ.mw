@@ -3,7 +3,7 @@
 | name                   = UnwarpJ
 | maintainer             = Philippe Thévenaz
 | author                 = Carlos Óscar Sánchez Sorzano, Philippe Thévenaz
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/UnwarpJ_/src/main/java/UnwarpJ_.java in gitweb]
+| source                 = {{GitHub|org=fiji|repo=UnwarpJ|source=UnwarpJ_.java}}
 | released               = 17/09/2010
 | latest version         = 17/09/2010
 | status                 = 
