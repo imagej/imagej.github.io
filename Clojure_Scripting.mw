@@ -4,7 +4,7 @@
 | author                 = Curtis Rueden<br />Johannes Schindelin
 | maintainer             = Curtis Rueden<br/>Johannes Schindelin
 | filename               = scripting-clojure.jar
-| source                 = [https://github.com/scijava/scripting-clojure Git]
+| source                 = {{GitHub|org=scijava|repo=scripting-clojure}}
 | status                 = stable
 }}
 {{Scripting}}
@@ -1433,7 +1433,7 @@ A third example, telling the music player XMMS2 to jump to a specific track in i
   (exec (str "xmms2 jump " track-number)
         (fn [lines] lines)))
 </source>
-The above is an extract from a clojure GUI for XMMS2, available at github [http://github.com/acardona/xmms2-clj/tree xmms2-gui].
+The above is an extract from a clojure GUI for XMMS2, available at github {{GitHub|org=acardona|repo=xmms2-clj|label=xmms2-gui}}.
 
 
 == Creating a derivative of a function ==
