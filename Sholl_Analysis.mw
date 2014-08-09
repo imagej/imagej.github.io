@@ -8,8 +8,8 @@
 | source         = [https://github.com/tferr/ASA on GitHub]
 | filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.4.2.jar Sholl_Analysis.jar]
 | released       = December 2012
-| latest version = '''3.4.2 July 2014''' ([https://github.com/tferr/ASA/blob/master/Notes.md#release-notes-for-sholl-analysis Release Notes])
-| status         = See [[#Release Notes and Pre-releases|Pre-releases]] and [https://github.com/tferr/ASA/blob/master/Notes.md#development-builds Development Notes]
+| latest version = '''3.4.2 July 2014''' ({{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}})
+| status         = See [[#Release Notes and Pre-releases|Pre-releases]] and {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=Development Notes}}
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]]
 }}
 
@@ -343,8 +343,8 @@ Notes:
 
 ;Data analysis tools:
 :'''[[Find Peaks]]:''' Retrieves local maxima under several filtering options such as peak amplitude, peak height and peak width. Can be used to retrieve secondary sites of branch density
-:'''[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#fit-polynomial Fit Polynomial]:''' Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions. Requires the [http://commons.apache.org/proper/commons-math/ apache commons math library], distributed with Fiji. The script provides [[#Non-Fiji_users|Non-Fiji users]] with direct download links that install all required dependencies
-:'''[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#plot-results Plot Results]:''' Whole-purpose routine that plots data from imported spreadsheets. 
+:'''{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#fit-polynomial|label=Fit Polynomial}}:''' Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions. Requires the [http://commons.apache.org/proper/commons-math/ apache commons math library], distributed with Fiji. The script provides [[#Non-Fiji_users|Non-Fiji users]] with direct download links that install all required dependencies
+:'''{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#plot-results|label=Plot Results}}:''' Whole-purpose routine that plots data from imported spreadsheets. 
 
 To install [[BAR]], run <span style="border-bottom:1px dotted #ccc;">Help▷ Update...</span> Choose ''Advance Mode'' then ''Manage update sites''. Activate the ''BAR'' checkbox in the list of update sites. See the [[BAR#Installation|BAR documentation page]] for more details.
 
@@ -622,7 +622,7 @@ one could retrieve the AUC of the polynomial fit, but such property is already c
 		<span id="faq:bug-report"></span>'''I found a bug. How do I report it?'''
 	</li>
 	<dl><dd>
-		Use Fiji's built-in [[Report a Bug]] command. Alternatively, report it to the [http://imagej.net/list.html ImageJ mailing list] or file an [https://github.com/tferr/ASA/issues issue] on GitHub. Don't forget to include the [[Bug reporting best practices|steps needed to reproduce the problem]]. You may also want to check the [https://github.com/tferr/ASA/blob/master/Notes.md#development-builds release notes] for the latest [http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/ development version] to see if the issue has meanwhile been addressed.
+		Use Fiji's built-in [[Report a Bug]] command. Alternatively, report it to the [http://imagej.net/list.html ImageJ mailing list] or file an [https://github.com/tferr/ASA/issues issue] on GitHub. Don't forget to include the [[Bug reporting best practices|steps needed to reproduce the problem]]. You may also want to check the {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=release notes}} for the latest [http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/ development version] to see if the issue has meanwhile been addressed.
 	</dd></dl>
 	<li>
 		<span id="faq:updates"></span>'''My version is not the latest after running <span style="border-bottom:1px dotted #ccc;">Help▷ Update Fiji...</span> Why?'''
@@ -641,10 +641,10 @@ one could retrieve the AUC of the polynomial fit, but such property is already c
 == Non-Fiji users ==
 If you are not using Fiji, download ''Sholl_Analysis.jar'' from the direct link listed on the [[#top|top of this page]] and place it in the ''ImageJ/plugins/'' directory. Alternatively, drag the downloaded jar and drop it on the main window. Restart ImageJ and run the new <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span> command.
 
-Please note that Fiji is the most convenient way of keeping your ImageJ distribution up-to-date. Without access to Fiji's [[Update_Fiji|built-in updater]], you are strongly advised to upgrade ImageJ to its latest version using <span style="border-bottom:1px dotted #ccc;">Help▷ Update ImageJ...</span> Without Fiji, you will also have to manually update the Sholl Analysis plugin by checking the [https://github.com/tferr/ASA/blob/master/Notes.md#release-notes-for-sholl-analysis Release Notes].
+Please note that Fiji is the most convenient way of keeping your ImageJ distribution up-to-date. Without access to Fiji's [[Update_Fiji|built-in updater]], you are strongly advised to upgrade ImageJ to its latest version using <span style="border-bottom:1px dotted #ccc;">Help▷ Update ImageJ...</span> Without Fiji, you will also have to manually update the Sholl Analysis plugin by checking the {{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}}.
 
 == Release Notes and Pre-releases ==
-Releases notes are available on [https://github.com/tferr/ASA/blob/master/Notes.md#release-notes-for-sholl-analysis Github]. If you do not mind unstable software, [https://github.com/tferr/ASA/blob/master/Notes.md#development-builds development builds] may be found [http://jenkins.imagej.net/job/Sholl-Analysis here]. Once new features mature and no major issues are found these development versions will be made available, as usual, through [[Update_Fiji|Fiji's Updater]].
+Releases notes are available on {{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Github}}. If you do not mind unstable software, [https://github.com/tferr/ASA/blob/master/Notes.md#development-builds development builds] may be found [http://jenkins.imagej.net/job/Sholl-Analysis here]. Once new features mature and no major issues are found these development versions will be made available, as usual, through [[Update_Fiji|Fiji's Updater]].
 
 == Related Resources ==
 * '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]]''' Mark Longair's plugin for semi-automated three-dimensional tracing, featuring [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl analysis]] for traced cells
