@@ -3,7 +3,7 @@
 | name                   = Temporal Median
 | author                 = Graeme Ball, [http://www.micron.ox.ac.uk Micron Oxford]
 | filename               = [http://www.micron.ox.ac.uk/microngroup/software/Temporal_plugins.jar Temporal_plugins.jar]
-| source                 = [https://github.com/graemeball/IJ_Temporal on github]
+| source                 = {{GitHub|org=graemeball|repo=IJ_Temporal}}
 | released               = 2013
 | latest version         = 
 | status                 = active
