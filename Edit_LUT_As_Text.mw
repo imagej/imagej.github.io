@@ -3,7 +3,7 @@
 | name                   = Edit LUT As Text
 | author                 = Johannes Schindelin
 | maintainer             = Johannes Schindelin
-| source               = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Edit_LUT_As_Text.py;hb=master gitweb]
+| source                 = {{GitHub|repo=fiji|path=plugins/Examples/Edit_LUT_As_Text.py}}
 | status                 = stable
 | category               = [[:Category:Color processing|Color processing]]
 }}
