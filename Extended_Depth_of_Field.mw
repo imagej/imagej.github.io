@@ -3,7 +3,7 @@
 | name                   = Extended Depth of Field
 | maintainer             = Daniel Sage
 | author                 = Alex Prudencio
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Extended_Depth_Field in gitweb]
+| source                 = {{GitHub|org=fiji|repo=Extended_Depth_Field}}
 | released               = 24/12/2010
 | latest version         = 24/12/2010
 | status                 = stable
