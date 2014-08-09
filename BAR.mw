@@ -25,34 +25,34 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
 }}
 == List of BARs ==
 [[ File:BARsnapshot.png|right|Overview of BAR (v1.0.0)]]
-;[https://github.com/tferr/Scripts/blob/master/README.md#image-annotation Annotation]<span id="Annotation"></span>
-:[https://github.com/tferr/Scripts/blob/master/Annotation/README.md#roi-color-coder ROI Color Coder]
+;{{GitHub|org=tferr|repo=Scripts|path=README.md#image-annotation|label=Annotation}}<span id="Annotation"></span>
+:{{GitHub|org=tferr|repo=Scripts|path=Annotation/README.md#roi-color-coder|label=ROI Color Coder}}
 
-;[https://github.com/tferr/Scripts/blob/master/README.md#data-analysis Data Analysis]<span id="Data_Analysis"></span>
-:[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#distribution-plotter Distribution Plotter]
+;{{GitHub|org=tferr|repo=Scripts|path=README.md#data-analysis|label=Data Analysis}}<span id="Data_Analysis"></span>
+:{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#distribution-plotter|label=Distribution Plotter}}
 :[[Find Peaks]]
 :[[Sholl_Analysis#Complementary_Tools|Fit Polynomial]]
-:[https://github.com/tferr/Scripts/blob/master/Data_Analysis/README.md#plot-results Plot Results]
+:{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#plot-results|label=Plot Results}}
 
-;[https://github.com/tferr/Scripts/blob/master/README.md#neuronal-morphometry Morphometry]
+;{{GitHub|org=tferr|repo=Scripts|path=README.md#neuronal-morphometry|label=Morphometry}}
 :[[Strahler Analysis]]<span id="Morphometry"></span>
 
-;[https://github.com/tferr/Scripts/blob/master/README.md#image-segmentation Segmentation]<span id="Segmentation"></span>
-:[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#shen-castan-edge-detector Shen-Castan Edge Detector]
-:[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#apply-threshold-to-roi Apply Threshold To ROI]
-:[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#clear-thresholded-pixels Clear Thresholded Pixels]
-:[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#threshold-from-background Threshold From Background]
-:[https://github.com/tferr/Scripts/blob/master/Segmentation/README.md#wipe-background Wipe Background]
+;{{GitHub|org=tferr|repo=Scripts|path=README.md#image-segmentation|label=Segmentation}}<span id="Segmentation"></span>
+:{{GitHub|org=tferr|repo=Scripts|path=Segmentation/README.md#shen-castan-edge-detector|label=Shen-Castan Edge Detector}}
+:{{GitHub|org=tferr|repo=Scripts|path=Segmentation/README.md#apply-threshold-to-roi|label=Apply Threshold To ROI}}
+:{{GitHub|org=tferr|repo=Scripts|path=Segmentation/README.md#clear-thresholded-pixels|label=Clear Thresholded Pixels}}
+:{{GitHub|org=tferr|repo=Scripts|path=Segmentation/README.md#threshold-from-background|label=Threshold From Background}}
+:{{GitHub|org=tferr|repo=Scripts|path=Segmentation/README.md#wipe-background|label=Wipe Background}}
 
-;[https://github.com/tferr/Scripts/blob/master/README.md#snippets Snippets]<span id="Snippets"></span>
+;{{GitHub|org=tferr|repo=Scripts|path=README.md#snippets|label=Snippets}}<span id="Snippets"></span>
 :This submenu lists [[#Snippets|generic and reusable]] scripts to be recycled at will in personalized workflows. Any script or macro file stored in the Snippets folder with an underscore "_" in the filename will be listed here. 
 
-;[https://github.com/tferr/Scripts/blob/master/README.md#tools-and-toolsets Tools and Toolsets]<span id="Tools"></span>
-:[https://github.com/tferr/Scripts/blob/master/Tools/README.md#calibration-menu Calibration Menu]
-:[https://github.com/tferr/Scripts/blob/master/Tools/README.md#roi-manager-tools ROI Manager Tools]
-:[https://github.com/tferr/Scripts/blob/master/Tools/README.md#segment-profile-tool Segment Profile]
-:[https://github.com/tferr/Scripts/blob/master/Tools/README.md#shortcuts-menu Shortcuts Menu]
-:[https://github.com/tferr/Scripts/blob/master/Tools/README.md#toolset-creator Toolset Creator]
+;{{GitHub|org=tferr|repo=Scripts|path=README.md#tools-and-toolsets|label=Tools and Toolsets}}<span id="Tools"></span>
+:{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#calibration-menu|label=Calibration Menu}}
+:{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#roi-manager-tools|label=ROI Manager Tools}}
+:{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#segment-profile-tool|label=Segment Profile}}
+:{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#shortcuts-menu|label=Shortcuts Menu}}
+:{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#toolset-creator|label=Toolset Creator}}
 
 == Scripting BARs ==
 Although BARs can be used as standalone commands (launched e.g., by pressing {{key press|L}}, the [[Using_the_Command_Launcher|Command Launcher]] shortcut), the scripts an plugins in BAR become more useful when incorporated into other routines. Indeed, they are designed to function as snippets.
@@ -78,7 +78,7 @@ macro "Popup Menu" {
 '''N.B.:''' In Fiji, you may need to save the file in the macros folder as ''StartupMacros.fiji.ijm''. Also, note that any toolset loaded via the ">>" ''More Tools'' drop down menu can define its own contextual menu.
 
 === Snippets ===
-BAR contains a [https://github.com/tferr/Scripts/tree/master/Snippets growing depository] of reusable scripts to be used as scripting templates. Below is an example, taken from [https://github.com/tferr/Scripts/blob/master/Snippets/Process_Folder.ijm Process_Folder.ijm],  a more customizable and modular alternative to the <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span>  built-in command.
+BAR contains a [https://github.com/tferr/Scripts/tree/master/Snippets growing depository] of reusable scripts to be used as scripting templates. Below is an example, taken from {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder.ijm|label=Process_Folder.ijm}},  a more customizable and modular alternative to the <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span>  built-in command.
 This snippet, an ImageJ macro that applies a [[How_to_apply_a_common_operation_to_a_complete_directory|common operation to a directory]], is composed of four functions:
 #<code>expectedImage()</code>: Determines wich image types should be processed
 #<code>getOutputDirectory()</code>: Sets a destination folder to save processed images
@@ -94,7 +94,7 @@ function myRoutines() {
     eval("python", "/Path/to/Coolest/Script.py");
 }
 </source>
-Here is how the assembled snippet [https://github.com/tferr/Scripts/blob/master/Snippets/Process_Folder.ijm?raw=true looks like]: 
+Here is how the assembled snippet {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder.ijm?raw=true|label=looks like}}: 
 <source lang="java">
 // Define which images should be processed. Only file extensions listed in this
 // array will be accepted as valid by expectedImage(). Note that certain files
@@ -206,7 +206,7 @@ function expectedImage(filename) {
 
 ;How do I uninstall BAR?
 :If you are using Fiji: run the [[Fiji Updater|Updater]]. Choose ''Advance Mode'' then ''Manage update sites''. Deactivate the ''BAR'' checkbox in the alphabetically-sorted list of update sites. Press ''OK'', then ''Apply changes''. All BAR files will be deleted. Note that you can install and uninstall BAR as you see fit. See [[How to follow a 3rd party update site]] for more details.
-:If you have a installed BAR manually and cannot remember where files were placed have a look at this [https://github.com/tferr/Scripts/blob/master/BAR/README.md#bar-menu installation list].
+:If you have a installed BAR manually and cannot remember where files were placed have a look at this {{GitHub|org=tferr|repo=Scripts|path=BAR/README.md#bar-menu|label=installation list}}.
 
 == License ==
 These scripts are free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
