@@ -5,7 +5,7 @@
 | author                 = Lionel Dupuy
 | maintainer             = Lionel Dupuy
 | filename               =  
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/BalloonSegmentation_;hb=refs/heads/master in GitWeb]
+| source                 = {{GitHub|org=fiji|repo=BalloonSegmentation}}
 | released               = April 1st, 2012
 | latest version         = April 1st, 2012
 | status                 = active
