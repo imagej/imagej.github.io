@@ -4,7 +4,7 @@
 | author                 = Jean-Yves Tinevez & Albert Cardona from an ImageJ class
 | maintainer             = Jean-Yves Tinevez ([mailto:tinevez_at_mpi-cbg_dot_de tinevez_at_mpi-cbg_dot_de])
 | filename               = [http://fiji.sc/tinevez/Dynamic_Reslice.jar Dynamic_Reslice.jar]
-| source                 = {{GitLink|jar=Fiji_Plugins|path=fiji/stacks/Dynamic_Reslice.java}}
+| source                 = {{GitHub|org=fiji|repo=Fiji_Plugins|source=fiji/stacks/Dynamic_Reslice.java}}
 | released               = 22 April 2009
 | latest version         = v1.2 (23 April 2009)
 | status                 = active 
