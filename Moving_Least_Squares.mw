@@ -3,7 +3,7 @@
 | software               = ImageJ
 | author                 = [mailto:johannes.schindelin_at_gmx.de Johannes Schindelin]
 | maintainer             = Johannes Schindelin
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Stitching_;hb=HEAD on gitweb]
+| source                 = {{GitHub|org=fiji|repo=VIB|source=Moving_Least_Squares.java}}
 | released               = 2006/10/05
 }}
 
