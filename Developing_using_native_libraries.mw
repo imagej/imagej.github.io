@@ -382,7 +382,7 @@ The ''Call<return-type>Method()'' family of functions take a variable number of 
 
 == JNI Example ==
 
-There is an example in Fiji's source code: [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/JNI_Example;hb=refs/heads/master JNI_Example].
+There is an example in Fiji's source code: {{GitHub|org=imagej|repo=minimal-ij1-plugin|tag=native|path=src/main/c/JNI_Example.c}}.
 
 To compile it, simply run
 
