@@ -8,7 +8,7 @@ Miji(false)
 
 == Creating a new ImgLib2 image in MATLAB ==
 
-In MATLAB, we are limited to native type images (float, uint8, uint16, ...) represented as native arrays. The matching ImgLib2 container for this is the [https://github.com/imagej/imglib/blob/master/imglib2/core/src/main/java/net/imglib2/img/array/ArrayImg.java ArrayImg]. 
+In MATLAB, we are limited to native type images (float, uint8, uint16, ...) represented as native arrays. The matching ImgLib2 container for this is the {{GitHub|org=imagej|repo=imglib|path=imglib2/core/src/main/java/net/imglib2/img/array/ArrayImg.java|label=ArrayImg}}. 
 
 Because ImgLib2 authors wrote nice static utilities, our work is relatively easy. The class <code>ArrayImgs</code> has all the methods you need, one per native type. 
 
@@ -28,7 +28,7 @@ Note also that the raw data was cast from 64-bit double data to 32-bit float for
 
 == MATLAB to ImgLib2 bridge functions ==
 
-The exacts method in <code>ArrayImgs</code> depend on the native type you want to use, so you would have to deal with all possible cases. But there is already some MATLAB functions in Fiji that does that in the <tt>scripts</tt> folder of your Fiji installation: [https://github.com/fiji/fiji/blob/master/scripts/copytoImg.m copytoImg] and [https://github.com/fiji/fiji/blob/master/scripts/copytoImgPlus.m copytoImgPlus]. You need therefore to add <tt>scripts</tt> to your MATLAB path, but this is most likely already done since it also contains <code>Miji</code> which you need to call already.
+The exacts method in <code>ArrayImgs</code> depend on the native type you want to use, so you would have to deal with all possible cases. But there is already some MATLAB functions in Fiji that does that in the <tt>scripts</tt> folder of your Fiji installation: {{GitHub|repo=fiji|path=scripts/copytoImg.m|label=copytoImg}} and [https://github.com/fiji/fiji/blob/master/scripts/copytoImgPlus.m copytoImgPlus]. You need therefore to add <tt>scripts</tt> to your MATLAB path, but this is most likely already done since it also contains <code>Miji</code> which you need to call already.
 
 The first function generates a plain <code>Img</code>. The second one generates and <code>ImgPlus</code> which allows you specifying the spatial calibration, image name and axis types. Check the help of these functions for details. 
 
@@ -105,7 +105,7 @@ But when we call the <code>getCurrentStorageArray</code> method, we retrieve thi
 >> imshow(K')
 </source>
 
-But of course, there is a MATLAB function that does all of this for you, and that you can also find in the scripts folder of your Fiji installation: [https://github.com/fiji/fiji/blob/master/scripts/copytoMatlab.m copytoMatlab]. 
+But of course, there is a MATLAB function that does all of this for you, and that you can also find in the scripts folder of your Fiji installation: {{GitHub|repo=fiji|path=scripts/copytoMatlab.m|label=copytoMatlab}}. 
 
 
 
