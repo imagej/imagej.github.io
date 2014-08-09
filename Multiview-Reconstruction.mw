@@ -5,7 +5,7 @@
 | maintainer             = Stephan Preibisch
 | source                 = {{GitHub|org=fiji|repo=spimreconstruction}}
 | filename               = SPIM_Registration.jar
-| status                = beta
+| status                 = beta
 | category               = [[:Category:Registration|SPIM Registration]]
 | website                = [http://fly.mpi-cbg.de/preibisch Stephan Preibisch's homepage]
 }}
