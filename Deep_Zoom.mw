@@ -17,7 +17,7 @@ It has also been useful as a testbed for developing ideas for a chained plugins 
 
 The current version uses [http://seadragon.com/developer/ajax/ Seadragon Ajax] to display the zoomable pannable image.  Deep Zoom ordinarily uses Microsoft's [http://www.microsoft.com/silverlight/ Silverlight] browser plugin for Windows and OS X; there is a [http://www.go-mono.com/moonlight/ Moonlight] implementation available for Linux.  It would be possible to have a checkbox to create a Silverlight version of the HTML, which might offer smoother zoom &amp; pan.
 
-This plugin uses [https://github.com/uw-loci/deep-zoom-plugin/blob/master/src/main/java/com/centerkey/utils/BareBonesBrowserLaunch.java BareBonesBrowserLaunch] to launch a new browser window.
+This plugin uses {{GitHub|org=uw-loci|repo=deep-zoom-plugin|source=com/centerkey/utils/BareBonesBrowserLaunch.java|label=BareBonesBrowserLaunch}} to launch a new browser window.
 
 == Limitations ==
 
