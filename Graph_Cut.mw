@@ -3,7 +3,7 @@
 | software               = Fiji
 | author                 = [[User:Funke| Jan Funke]]
 | maintainer             = Jan Funke
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Graph_Cut on git web]
+| source                 = {{GitHub|org=fiji|repo=Graph_Cut}}
 | released               = August 24<sup>th</sup>, 2010
 | status                 = experimental
 | category               = [[:Category:Segmentation|Segmentation]]
