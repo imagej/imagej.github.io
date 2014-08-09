@@ -3,7 +3,7 @@
 | name                   = CoverMaker
 | maintainer           = [mailto:tomancak@mpi-cbg.de Pavel Tomancak]
 | author                 = [[User:Tomancak|Pavel Tomancak]], [[User:Schindelin|Johannes Schindelin]]
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=plugins/Examples/CoverMaker;hb=master in gitweb]
+| source                 = {{GitHub|repo=fiji|path=plugins/Examples/CoverMaker/Cover_Maker.py}}
 | released               = 27/05/2012
 | latest version         = 29/06/2012
 | status                 = active
