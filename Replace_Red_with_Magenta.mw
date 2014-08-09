@@ -3,7 +3,7 @@
 | name                   = Replace Red with Magenta
 | maintainer             = [mailto:johannes_dot_schindelin_at_gmx_dot_de Johannes Schindelin]
 | author                 = Johannes Schindelin
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Fiji_Plugins/fiji/color/Convert_Red_To_Magenta.java;hb=refs/heads/master in gitweb]
+| source                 = {{GitHub|org=fiji|repo=Fiji_Plugins|source=fiji/color/Convert_Red_To_Magenta.java}}
 | released               = 27/06/2011
 | latest version         = 27/06/2011
 | status                 = 
