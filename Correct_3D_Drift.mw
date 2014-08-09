@@ -1,4 +1,4 @@
-This Fiji menu command is implemented by the script [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Scripts/Plugins/Registration/Correct_3D_drift.py;hb=HEAD "Correct 3D Drift"].
+This Fiji menu command is implemented by the script {{GitHub|repo=fiji|path=plugins/Scripts/Plugins/Registration/Correct_3D_drift.py|label="Correct 3D Drift"}}.
 
 1. The script expects the currently open and active image to be a hyperstack (or virtual hyperstack) consisting of 2D or 3D volumes over time. The script registers the time points to each other using the phase correlation implementation of [[Imglib|ImgLib 1]].
 
