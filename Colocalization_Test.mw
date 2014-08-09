@@ -4,7 +4,7 @@
 | author                 = Tony Collins (and others?)
 | maintainer             = [mailto:white_at_mpi-cbg_dot_de Dan White]
 | filename               = Colocalization.jar
-| source                 = {{GitLink|jar=Colocalisation_Analysis|path=Colocalisation_Test.java}}, modified from [[MBF ImageJ]]
+| source                 = {{GitHub|org=fiji|repo=Colocalisation_Analysis|source=Colocalisation_Test.java}}, modified from [[MBF ImageJ]]
 | latest version         = june 2009
 | website                = [[Colocalization Analysis#Colocalization_Test]]
 | status                 = <span style="color:red">Deprecated, use [[Coloc 2]] instead.</span>
