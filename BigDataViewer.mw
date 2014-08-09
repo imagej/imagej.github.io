@@ -3,7 +3,7 @@
 | software              = Fiji
 | author                = [[User:Pietzsch|TobiasPietzsch]]
 | maintainer            = [mailto:pietzsch@mpi-cbg.de Tobias Pietzsch]
-| source                = [https://github.com/tpietzsch/spimviewer on GitHub]
+| source                = {{GitHub|org=tpietzsch|repo=spimviewer}}
 <!-- | released              = January 5<sup>th</sup>, 2014 -->
 | status                = beta
 | category              = [[:Category:Visualization|Visualization]], [[:Category:Transform|Transform]]
