@@ -4,7 +4,7 @@
 | author                 = Albert Cardona
 | maintainer             = 
 | filename               = Dynamic_ROI_Profiler.clj 
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Analyze/Dynamic_ROI_Profiler.clj;hb=HEAD on gitweb] o
+| source                 = {{GitHub|repo=fiji|path=plugins/Analyze/Dynamic_ROI_Profiler.clj}}
 | latest version         = 16 November 2008
 | status                 = unknown
 }}
