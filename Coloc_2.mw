@@ -4,7 +4,7 @@
 | author                 = Daniel J White, Tom Kazimiers, Johannes Schindelin
 | maintainer             = [mailto:white_at_mpi-cbg_dot_de Daniel White]
 | filename               = Colocalisation_Analysis.jar
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Colocalisation_Analysis;hb=HEAD on gitweb].
+| source                 = {{GitHub|org=fiji|repo=Colocalisation_Analysis}}
 | latest version         = Dec 2011
 | website                = Fiji
 | status                 = Beta. Under development, but stable enough for real work. 
