@@ -202,7 +202,7 @@ or:
 
   image = get_image
 
-The "run" method may also be particularly useful for calling existing ImageJ plugins and commands.  The next section has an example of the use of this.  It may be instructive to compare the [http://imagej.net/macros/ConvexHull.txt "Blobs Demo" macro] from the ImageJ distribution with [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/Examples/Blobs_Demo_in_Ruby.rb;hb=HEAD a version ported to JRuby].  The use of the analagous function in JRuby is not always the same - for example, if you compare the invocation of getSelectionCoordinates, you'll find that whereas the ImageJ macro version passes in the output variables:
+The "run" method may also be particularly useful for calling existing ImageJ plugins and commands.  The next section has an example of the use of this.  It may be instructive to compare the [http://imagej.net/macros/ConvexHull.txt "Blobs Demo" macro] from the ImageJ distribution with {{GitHub|repo=fiji|path=plugins/Examples/Blobs_Demo_in_Ruby.rb|label=a version ported to JRuby}}.  The use of the analagous function in JRuby is not always the same - for example, if you compare the invocation of getSelectionCoordinates, you'll find that whereas the ImageJ macro version passes in the output variables:
 
   getSelectionCoordinates(xCoordinates, yCoordinates);
 
@@ -210,7 +210,7 @@ The "run" method may also be particularly useful for calling existing ImageJ plu
 
   x_coordinates, y_coordinates = get_selection_coordinates
 
-A note for the interested programmer: About 15% of the macro functions have be done so far, and if anyone wanted to help out with doing the rest, that would be excellent!  The source code [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/JRuby/imagej.rb;hb=HEAD can be found here].
+A note for the interested programmer: About 15% of the macro functions have be done so far, and if anyone wanted to help out with doing the rest, that would be excellent!  The source code {{GitHub|repo=fiji|path=plugins/JRuby/imagej.rb|label=can be found here}}.
 
 == Example: Generating Red/Cyan Anaglyphs ==
 
@@ -239,7 +239,7 @@ Some example output:
 
 == Library ==
 
-There is a library called [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=plugins/JRuby/imagej.rb;hb=master imagej.rb] for convenience. It contains a number of useful functions related to ImageJ.
+There is a library called {{GitHub|repo=fiji|path=plugins/JRuby/imagej.rb|label=imagej.rb}} for convenience. It contains a number of useful functions related to ImageJ.
 
 == What next? ==
 
