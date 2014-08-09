@@ -2,11 +2,11 @@ This page will give you an idea how Fiji's source code is organized.  Every dire
 
 == The Fiji launcher ==
 
-The [[Fiji Launcher]] is now called ''ImageJ launcher'' and lives [https://github.com/imagej/imagej-launcher in its own repository]. It is [http://jenkins.imagej.net/job/ImageJ-launcher built by Jenkins].
+The [[Fiji Launcher]] is now called ''ImageJ launcher'' and lives {{GitHub|org=imagej|repo=imagej-launcher|label=in its own repository}}. It is [http://jenkins.imagej.net/job/ImageJ-launcher built by Jenkins].
 
 == The plugins ==
 
-The plugins served from Fiji's update site are all [[Why Closed-Source Is Wrong|Open Source]]. The source code lives [https://github.com/fiji/ on GitHub], in repositories reflecting the name of the ''.jar'' file generated from the source code. Example: the source code for ''Fiji_Plugins.jar'' lives in https://github.com/fiji/Fiji_Plugins.
+The plugins served from Fiji's update site are all [[Why Closed-Source Is Wrong|Open Source]]. The source code lives {{GitHub|org=fiji|repo=|label=on GitHub}}, in repositories reflecting the name of the ''.jar'' file generated from the source code. Example: the source code for ''Fiji_Plugins.jar'' lives in https://github.com/fiji/Fiji_Plugins.
 
 The only special rule applies for plugins whose file names end in an underscore: that underscore will be stripped. Example: the sources of ''Arrow_.jar'' are stored in https://github.com/fiji/Arrow.
 
@@ -34,7 +34,7 @@ All submodule couplings are now replaced by proper [[Maven]] dependency manageme
 
 Fiji used to have its home-brewn build system. We switched to using [[Maven]] in 2012, though.
 
-For convenience, there is a [https://github.com/scijava/minimaven ''Mini Maven''] project that allows building Fiji without a full-blown Maven; however, for serious development, real Maven, or even better, Eclipse or Netbeans is recommended.
+For convenience, there is a {{GitHub|org=scijava|repo=minimaven|label=''Mini Maven''}} project that allows building Fiji without a full-blown Maven; however, for serious development, real Maven, or even better, Eclipse or Netbeans is recommended.
 
 For backwards-compatibility, ''Mini Maven'' can be called via '''./Build.sh''' in the top-level directory of a ''fiji.git'' checkout. Despite the name, it does not really build anything, but only draws in all Fiji components as [[Maven]] dependencies.
 
