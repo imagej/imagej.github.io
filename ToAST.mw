@@ -5,7 +5,7 @@
 | author                 = Misha Kudryashev
 | maintainer             = Misha Kudryashev
 | filename               =  
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/ToAST_;hb=refs/heads/master in GitWeb]
+| source                 = {{GitHub|org=fiji|repo=ToAST}}
 | released               = April 29th, 2009
 | latest version         = December 1st, 2010
 | status                 = stable
