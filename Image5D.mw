@@ -53,7 +53,7 @@ A sample [http://imagej.net/macros/images/MyoblastCells.zip 16-bit RGB data set]
 
 == History ==
 
-See the [https://github.com/imagej/image5d/blob/master/doc/Image5D-changes.txt release notes] for details on changes.
+See the {{GitHub|org=imagej|repo=image5d|path=doc/Image5D-changes.txt|label=release notes}} for details on changes.
 
 [[Category:Plugins]]
 [[Category:Visualization]]
