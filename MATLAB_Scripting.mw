@@ -4,7 +4,7 @@
 | author                 = Mark Hiner
 | maintainer             = Mark Hiner<br/>Curtis Rueden
 | filename               = scripting-matlab.jar
-| source                 = [https://github.com/scijava/scripting-matlab Git]
+| source                 = {{GitHub|org=scijava|repo=scripting-matlab}}
 | status                 = stable
 }}
 {{Scripting}}
@@ -46,7 +46,7 @@ This script will take the active Dataset, set it as an array variable named "dat
 
 <p>The [http://fiji.sc/Miji Miji] project provides a MATLAB .m script that will start up a Fiji instance inside a running MATLAB application. The startup process automatically injects the full Fiji classpath into the MATLAB classpath, merging the two. At this point, you'll have a working Fiji and can now [[#Creating MATLAB scripts inside Fiji | run MATLAB scripts as normal]] with access to the full unified classpath.</p>
 
-<p>Additionally, the [https://github.com/scijava/scripting-matlab Scripting-MATLAB] library also includes an extensible MATLAB command framework. This allows for the creation of utility classes that will be automatically populated into MATLAB variables for easy access. For example, you could use Fiji to open a dataset and perform thresholding (or any other processing steps), then in MATLAB use the <code>IJM.importDataset</code> command to set the active dataset as a MATLAB matrix variable, for further analysis.</p>
+<p>Additionally, the {{GitHub|org=scijava|repo=scripting-matlab|label=Scripting-MATLAB}} library also includes an extensible MATLAB command framework. This allows for the creation of utility classes that will be automatically populated into MATLAB variables for easy access. For example, you could use Fiji to open a dataset and perform thresholding (or any other processing steps), then in MATLAB use the <code>IJM.importDataset</code> command to set the active dataset as a MATLAB matrix variable, for further analysis.</p>
 
 == Importing classes ==
 
