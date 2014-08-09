@@ -27,7 +27,7 @@ and ''Fiji.app/plugins/'':
 
 * loci_tools.jar (OME [[Bio-Formats]])
 
-Alternately, you can access the examples from the [https://github.com/imglib/imglib-tutorials ImgLib Git repository]. After cloning the ImgLib source code, open the ''imglib2/examples'' project in your favorite IDE. See [[Developing_Imglib]] for further details.
+Alternately, you can access the examples from the {{GitHub|org=imglib|repo=imglib-tutorials|label=ImgLib Git repository}}. After cloning the ImgLib source code, open the ''imglib2/examples'' project in your favorite IDE. See [[Developing_Imglib]] for further details.
 
 == Example 1 - Opening, creating and displaying images ==
 
