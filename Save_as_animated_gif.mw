@@ -4,7 +4,7 @@
 | author                  = Ryan Raz
 | maintainer            = Johannes Schindelin
 | filename               = IO_.jar
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/IO_/io/Gif_Stack_Writer.java;hb=master gitweb]
+| source                 = {{GitHub|org=fiji|repo=IO|source=io/Gif_Stack_Writer.java}}
 | latest version         = March 2002
 | status                  = stable
 | category               = [[:Category:Import-Export|Import/Export]]
