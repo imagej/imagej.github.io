@@ -4,7 +4,7 @@
 | author                 = Tony Collins (and others?)
 | maintainer             = [mailto:white_at_mpi-cbg_dot_de Daniel White]
 | filename               = Colocalization.jar
-| source                 = {{GitLink|jar=Colocalisation_Analysis|path=Colocalisation_Threshold.java}}, modified from [[MBF ImageJ]]
+| source                 = {{GitHub|org=fiji|repo=Colocalisation_Analysis|source=Colocalisation_Threshold.java}}, modified from [[MBF ImageJ]]
 | latest version         = june 2009
 | website                = [[Colocalization Analysis#Colocalization_Threshold]]
 | status                 = no longer actively supported, unlikely to be stable enough for real use. Use [[Coloc_2]]
