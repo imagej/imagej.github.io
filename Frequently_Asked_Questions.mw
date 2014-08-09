@@ -16,7 +16,7 @@ Newer versions of OS X come without Java installed, and only Java 7 is available
 
 However, you can reinstall Java 6 on OS X. You must log in to [http://developer.apple.com/ developer.apple.com] with your Apple ID, search for "java" and download the latest Java 6 SE.
 
-At any time, you can verify which Javas are installed on your system using [https://github.com/ctrueden/ctr-scripts/blob/master/java-info this script].
+At any time, you can verify which Javas are installed on your system using {{GitHub|org=ctrueden|repo=ctr-scripts|path=java-info|label=this script}}.
 
 = Running =
 
