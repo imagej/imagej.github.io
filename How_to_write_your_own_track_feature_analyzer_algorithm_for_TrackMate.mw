@@ -11,9 +11,9 @@ We will use the [[SciJava]] discovery mechanism as before, but just for the sake
 
 == Track analyzers ==
 
-All the track feature analyzers must implement [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackAnalyzer.java TrackAnalyzer interface]. Like for the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java EdgeAnalyzer] interface, it extends both
-* [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/FeatureAnalyzer.java FeatureAnalyzer] that helps you declaring what you compute, 
-* and [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/TrackMateModule.java TrackMateModule], that is in charge of the integration in TrackMate.
+All the track feature analyzers must implement {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/track/TrackAnalyzer.java|label=TrackAnalyzer interface}}. Like for the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java EdgeAnalyzer] interface, it extends both
+* {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/FeatureAnalyzer.java|label=FeatureAnalyzer}} that helps you declaring what you compute, 
+* and {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/TrackMateModule.java|label=TrackMateModule}}, that is in charge of the integration in TrackMate.
 
 The only changes for us are two methods specific to tracks:
 
@@ -139,7 +139,7 @@ Let's compute them now.
 
 In the previous article, we went maybe a bit quickly on how to access data in TrackMate. This is not the goal of this series, but here is a quick recap:
 
-All the track structure is stored in a sub-component of the model called the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/TrackModel.java TrackModel]. It stores the collection of links between two spots that builds a graph, and has some rather complex logic to maintain a list of connected components: the tracks. 
+All the track structure is stored in a sub-component of the model called the {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/TrackModel.java|label=TrackModel}}. It stores the collection of links between two spots that builds a graph, and has some rather complex logic to maintain a list of connected components: the tracks. 
 
 The tracks themselves are indexed by their ID, stored as an <code>int</code>, that has no particular meaning. Once you have the ID of track, you can get the spots it contains with
 
@@ -195,7 +195,7 @@ Well, it is just about retrieving a track and identifying its starting and end p
 	}
 </source>
 
-The whole code for the analyzer can be found [https://github.com/fiji/TrackMate-examples/blob/master/src/main/java/plugin/trackmate/examples/trackanalyzer/TrackStartSpotAnalyzer.java here].
+The whole code for the analyzer can be found {{GitHub|org=fiji|repo=TrackMate-examples|source=plugin/trackmate/examples/trackanalyzer/TrackStartSpotAnalyzer.java|label=here}}.
 
 
 
