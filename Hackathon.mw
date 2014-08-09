@@ -78,7 +78,7 @@ ImageJ has benefitted from many hackathons over the years:
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
 |[https://github.com/thewtex thewtex], [https://github.com/ctrueden ctrueden],
 [https://github.com/dscho dscho], [https://github.com/hinerm hinerm]
-|[https://github.com/scifio/scifio-imageio SCIFIO ImageIO plugin]
+|{{GitHub|org=scifio|repo=scifio-imageio|label=SCIFIO ImageIO plugin}}
 |- valign="top"
 | style="white-space: nowrap" | [[2013-04-22 - Trainable Segmentation Hackathon|2013 Apr 14 -<br>2013 Apr 18]]
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
@@ -100,17 +100,17 @@ ImageJ has benefitted from many hackathons over the years:
 |[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
 |[https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho],
 [https://github.com/dietzc dietzc], [https://github.com/hornm hornm]
-|[https://github.com/imagej/imagej-ops ImageJ OPS]
+|{{GitHub|org=imagej|repo=imagej-ops|label=ImageJ OPS}}
 |- valign="top"
 | style="white-space: nowrap" | 2014 Mar 11 -<br>2014 Mar 13
 |[https://www.facebook.com/heimathafenWiesbaden Heimathafen]<br>Wiesbaden, Germany
 |[https://github.com/joshmoore joshmoore], [https://github.com/ctrueden ctrueden]
-|[https://github.com/imagej/imagej-omero ImageJ-OMERO]
+|{{GitHub|org=imagej|repo=imagej-omero|label=ImageJ-OMERO}}
 |- valign="top"
 | style="white-space: nowrap" | 2014 Mar 20 -<br>2014 Mar 21
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
 |[https://github.com/jburel jburel], [https://github.com/pwalczysko pwalczysko], [https://github.com/ctrueden ctrueden]
-|[https://github.com/imagej/imagej-omero ImageJ-OMERO]
+|{{GitHub|org=imagej|repo=imagej-omero|label=ImageJ-OMERO}}
 |- valign="top"
 | style="white-space: nowrap" | 2014 Jul 7 -<br>2014 Jul 10
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
