@@ -3,7 +3,7 @@
 | software               = ImageJ
 | author                 = Johannes Schindelin, Sumit Dubey (Google Summer of Code 2009)
 | maintainer             = Johannes Schindelin
-| source                 = [https://github.com/imagej/imagej-ui-swing Git]
+| source                 = {{GitHub|org=imagej|repo=imagej-ui-swing|source=net/imagej/ui/swing/script/ScriptEditor.java}}
 | released               = 11 Sep 2008
 | status                 = active
 }}{{Scripting}}
