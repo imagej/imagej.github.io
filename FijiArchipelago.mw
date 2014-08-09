@@ -171,6 +171,6 @@ To make this work, submissions to a Cluster are serialized and transmitted to a 
 
 While many Clusters may exist on a single root node, only one is "official." This instance is referenced by Cluster.getCluster(). Cluster.activeCluster() indicates whether there is existing active Cluster.
 
-An example may be found in {{GitHub|repo=fiji|path=src-plugins/Fiji_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Cluster_SIFT.java|label=Cluster_SIFT}}. An example that demonstrates the breakage of deep equality may be found in [https://github.com/fiji/fiji/blob/master/src-plugins/Fiji_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Equality_Example.java Equality_Example]
+An example may be found in {{GitHub|repo=fiji|path=src-plugins/Fiji_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Cluster_SIFT.java|label=Cluster_SIFT}}. An example that demonstrates the breakage of deep equality may be found in {{GitHub|repo=fiji|path=src-plugins/Fiji_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Equality_Example.java|label=Equality_Example}}
 
 [[Category:Plugins]]
