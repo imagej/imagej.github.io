@@ -7,9 +7,9 @@ A TrackMate action takes the shape of an item in a drop-down list in the last pa
 In this tutorial, we will use it to launch the event logger we created in the [[How to write your own viewer for TrackMate|previous tutorial]] of this series. If you remember, we saw in the last paragraph how to use the <code>visible = false</code> parameter the [[SciJava]] annotation to hide it from the view menu. Hereby preventing the user to access it. No problem, we will now build an action that will launch it as a supplementary view. 
 
 
-== The [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/action/TrackMateActionFactory.java TrackMateActionFactory] interface. ==
+== The {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/action/TrackMateActionFactory.java|label=TrackMateActionFactory}} interface. ==
 
-Again, the action behavior and its integration in TrackMate are split in two classes. The behavior is described by the  [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/action/TrackMateAction.java TrackMateAction] interface. The integration mechanism is controlled by the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/action/TrackMateActionFactory.java TrackMateActionFactory] interface, which extends the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/TrackMateModule.java TrackMateModule] interface. 
+Again, the action behavior and its integration in TrackMate are split in two classes. The behavior is described by the  {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/action/TrackMateAction.java|label=TrackMateAction}} interface. The integration mechanism is controlled by the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/action/TrackMateActionFactory.java TrackMateActionFactory] interface, which extends the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/TrackMateModule.java TrackMateModule] interface. 
 
 === [[SciJava]] parameters recap. ===
 
@@ -37,7 +37,7 @@ The method specific to actions is more interesting:
 public TrackMateAction create( final TrackMateGUIController controller )
 </source>
 
-This means that when we create our specific action, we have access to the some of GUI context through the controller. We therefore have to check its [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/gui/TrackMateGUIController.java API] to know what we can get. It gives us access to:
+This means that when we create our specific action, we have access to the some of GUI context through the controller. We therefore have to check its {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/gui/TrackMateGUIController.java|label=API}} to know what we can get. It gives us access to:
 <ul>
   <li> The GUI window itself (<code>public TrackMateWizard getGUI()</code>), that we can use as parent for dialogs, wild live GUI editing...
   <li> The trackmate plugin (<code>public TrackMate getPlugin()</code>), hereby the model and settings objects.
@@ -104,7 +104,7 @@ public class LaunchEventLoggerActionFactory implements TrackMateActionFactory
 Nothing complicated.
 
 
-== The [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/action/TrackMateAction.java TrackMateAction] interface. ==
+== The {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/action/TrackMateAction.java|label=TrackMateAction}} interface. ==
 
 This interface is just made of two methods: 
 
