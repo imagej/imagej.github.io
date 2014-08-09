@@ -3,7 +3,7 @@
 | name                   = Extract Images From PDF
 | author                 = Albert Cardona
 | maintainer             = Albert Cardona ([mailto:acardona@ini.phys.ethz.ch acardona@ini.phys.ethz.ch])
-| source                 = {{GitLink|jar=IO_|path=io/Extract_Images_From_PDF.java}}
+| source                 = {{GitHub|org=fiji|repo=IO|source=io/Extract_Images_From_PDF.java}}
 | released               = 2008
 | latest version         = ?
 | status                 = stable, not active
