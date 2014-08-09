@@ -6,7 +6,7 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
 
 :In addition to the raw image data, we provide for the first stack a dense labeling of neuron membranes (including orientation and junction), mitochondria, synapses and glia/extracellular space. The first stack serves as a training dataset, and a second stack of the same dimension can be used as a test dataset.
 
-:All the data and further information is available in the [http://github.com/unidesigner/groundtruth-drosophila-vnc GitHub repository].
+:All the data and further information is available in the {{GitHub|org=unidesigner|repo=groundtruth-drosophila-vnc|label=GitHub repository}}.
 
 * [http://www.ini.uzh.ch/~acardona/data.html Segmented ssTEM stack of neural tissue], thanks to Albert Cardona.
 [[File:TrakEM2-tree-datastructure.png|thumb]]
