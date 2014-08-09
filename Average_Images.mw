@@ -4,7 +4,7 @@
 | author                 = Mark Longair
 | maintainer             = Mark Longair
 | filename               = VIB_.jar
-| source                 = {{GitLink|jar=VIB_|path=vib/Average_Images.java}}
+| source                 = {{GitHub|org=fiji|repo=VIB|source=vib/Average_Images.java}}
 | status                 = stable
 }}
 
