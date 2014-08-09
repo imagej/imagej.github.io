@@ -28,12 +28,12 @@ This is important: <u>an instance of your detector is supposed to work on a sing
 It is the work of the detector factory to provide each instance with the data required to segment a specific frame. But we will see how this is done below. 
 
 
-=== A SpotDetector ''can be'' {{GitHub|org=imglib|repo=imglib|path=algorithms/core/src/main/java/net/imglib2/algorithm/MultiThreaded.java|label=multithreaded}}. ===
+=== A SpotDetector ''can be'' {{GitHub|repo=imglib|path=algorithms/core/src/main/java/net/imglib2/algorithm/MultiThreaded.java|label=multithreaded}}. ===
 
 So TrackMate offers you a turnkey multithreaded solution: If you have a computer with 12 cores 
 and 50 frames to segment, TrackMate will fire 12 SpotDetectors at once and process them concurrently. 
 
-But let's say that you have 24 cores and only 6 frames to segment. You can exploit this situation by letting your concrete instance of SpotDetector implement the ImgLib2 {{GitHub|org=imglib|repo=imglib|path=algorithms/core/src/main/java/net/imglib2/algorithm/MultiThreaded.java|label=MultiThreaded}} interface. In that case, TrackMate will still fire 6 SpotDetector instances (one for each frame), but will allocate 4 threads to each instance, and get an extra kick in speed. 
+But let's say that you have 24 cores and only 6 frames to segment. You can exploit this situation by letting your concrete instance of SpotDetector implement the ImgLib2 {{GitHub|repo=imglib|path=algorithms/core/src/main/java/net/imglib2/algorithm/MultiThreaded.java|label=MultiThreaded}} interface. In that case, TrackMate will still fire 6 SpotDetector instances (one for each frame), but will allocate 4 threads to each instance, and get an extra kick in speed. 
 
 Of course, you have to devise a clever multithreading strategy to operate concurrently on a single frame. For instance, you could divide the image into several blocks and process them in parallel. Or delegate to sub-algorithms that are multithreaded; check for instance the {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/detection/LogDetector.java|label=LogDetector}} code.
 
@@ -59,7 +59,7 @@ Below is the source code for the dummy detector. You can also find it {{GitHub|o
 
 ==== The type parameter <code>< T extends RealType< T > & NativeType< T >></code> ====
 
-Instances of SpotDetector are parametrized with a generic type <code>T</code> that must extends {{GitHub|org=imglib|repo=imglib|path=core/src/main/java/net/imglib2/type/numeric/RealType.java|label=RealType}} and [https://github.com/imglib/imglib/blob/master/core/src/main/java/net/imglib2/type/NativeType.java NativeType]. These are the bounds for all the scalar types based on native types, such us <code>float</code>, <code>int</code>, <code>byte</code>, etc... 
+Instances of SpotDetector are parametrized with a generic type <code>T</code> that must extends {{GitHub|repo=imglib|path=core/src/main/java/net/imglib2/type/numeric/RealType.java|label=RealType}} and {{GitHub|repo=imglib|path=core/src/main/java/net/imglib2/type/NativeType.java|label=NativeType}}. These are the bounds for all the scalar types based on native types, such us <code>float</code>, <code>int</code>, <code>byte</code>, etc... 
 
 This is the type of the image data we are to operate on.
 
@@ -69,21 +69,21 @@ Since the https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugi
 
 Normal detectors would be fed with a reference to the image data ''for this very single frame''. Here we do not care for image content, so it is not there. But we will speak of this more when discussing the factory. 
 
-Because TrackMate can also be tuned to operate only on a ROI, the instance receives an {{GitHub|org=imglib|repo=imglib|path=core/src/main/java/net/imglib2/Interval.java|label=Interval}} that represent the bounding box '''in pixel coordinates''' of the ROI the user selected. Here, we just use it to center the spirals. 
+Because TrackMate can also be tuned to operate only on a ROI, the instance receives an {{GitHub|repo=imglib|path=core/src/main/java/net/imglib2/Interval.java|label=Interval}} that represent the bounding box '''in pixel coordinates''' of the ROI the user selected. Here, we just use it to center the spirals. 
 
 Because we must store the ''physical coordinates''' in the spots we create, we need a calibration array to convert pixel coordinates to physical ones. That is the role of the <code>double[]calibration </code> array, and it contains the pixel sizes along X, Y and Z.
 
-==== The {{GitHub|org=imglib|repo=imglib|path=algorithms/core/src/main/java/net/imglib2/algorithm/Algorithm.java|label=Algorithm}} methods. ====
+==== The {{GitHub|repo=imglib|path=algorithms/core/src/main/java/net/imglib2/algorithm/Algorithm.java|label=Algorithm}} methods. ====
 
 <code>checkInput()</code> checks that the parameters passed are OK prior to processing, and returns <code>false</code> if they are not. <code>process()</code> does all the hard work, and return <code>false</code> if something goes wrong. 
 
 If any of these two methods returns <code>false</code>, you are expected to document what went wrong in an error message that can be retrieved through <code>getErrorMessage()</code>.
 
-==== The {{GitHub|org=imglib|repo=imglib|path=algorithms/core/src/main/java/net/imglib2/algorithm/OutputAlgorithm.java|label=OutputAlgorithm}} method. ====
+==== The {{GitHub|repo=imglib|path=algorithms/core/src/main/java/net/imglib2/algorithm/OutputAlgorithm.java|label=OutputAlgorithm}} method. ====
 
 This one just asks us to return the results as a list of spots. It must be a field of your instance, that is ideally instantiated and built in the <code>precess()</code> method. The <code>getResult()</code> method exposes this list. 
 
-==== The {{GitHub|org=imglib|repo=imglib|path=algorithms/core/src/main/java/net/imglib2/algorithm/Benchmark.java|label=Benchmark}} method. ====
+==== The {{GitHub|repo=imglib|path=algorithms/core/src/main/java/net/imglib2/algorithm/Benchmark.java|label=Benchmark}} method. ====
 
 Well, we just want to know how much time it took. Note that all of these are the usual suspects of an ImgLib2 generic algorithm, so they should not confuse you.
 
@@ -269,7 +269,7 @@ Since the TrackMateModule concrete implementation must have a blank constructor,
 	public boolean setTarget( final ImgPlus< T > img, final Map< String, Object > settings )
 </source>
 
-The raw image data is returned as an {{GitHub|org=imglib|repo=imglib|path=meta/src/main/java/net/imglib2/meta/ImgPlus.java|label=ImgPlus}}, that can be seen as the [[ImgLib2]] equivalent of ImageJ1 [https://github.com/imagej/ImageJA/blob/master/src/main/java/ij/ImagePlus.java ImagePlus]. It contains the pixel data for all available dimensions (all X, Y, Z, C, T if any), plus the spatial calibration we need to operate in physical units. The concrete factory must be able to extract from this ImgPlus the data useful for the SpotDetectors it will instantiate, keeping in mind that each SpotDetector operates on one frame. 
+The raw image data is returned as an {{GitHub|repo=imglib|path=meta/src/main/java/net/imglib2/meta/ImgPlus.java|label=ImgPlus}}, that can be seen as the [[ImgLib2]] equivalent of ImageJ1 {{GitHub|org=imagej|repo=ImageJA|source=ij/ImagePlus.java|label=ImagePlus}}. It contains the pixel data for all available dimensions (all X, Y, Z, C, T if any), plus the spatial calibration we need to operate in physical units. The concrete factory must be able to extract from this ImgPlus the data useful for the SpotDetectors it will instantiate, keeping in mind that each SpotDetector operates on one frame. 
 
 The second argument is the settings map for this specific detector. It takes the shape of a map with string keys and object values, that can be cast to whatever relevant class. The concrete factory must be able to check that all the required parameters are there, and have a valid class, and to feed to the SpotDetector instances. We will see below that the user provides them through a configuration panel. 
 
@@ -328,7 +328,7 @@ The settings map that the <code>marshall</code> method receives is the settings 
 
 * If something goes wrong when saving, then the <code>marshall</code> method must return <code>false</code>, and you must provide a meaningful error message for the <code>getErrorMessage()</code> method.
 
-* Everything else is pretty much up to you. There is a {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/io/IOUtils.java#L383|label=helper method in IOUtils}} that you can use to serialize single parameters. Check the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/detection/LogDetectorFactory.java#L161 LogDetectorFactory marshall method] for an example. 
+* Everything else is pretty much up to you. There is a {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/io/IOUtils.java#L383|label=helper method in IOUtils}} that you can use to serialize single parameters. Check the {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/detection/LogDetectorFactory.java#L161|label=LogDetectorFactory marshall method}} for an example. 
 
 ==== Unmarshalling. ====
 
@@ -347,7 +347,7 @@ And finally, the method that gives its name to this factory:
 public SpotDetector< T > getDetector( final Interval interval, final int frame )
 </source>
 
-This will be called repeatedly by TrackMate to generate as many SpotDetector instances as there is frames in the raw data to segment. The two parameters specify the ROI the user wants to operate on as an {{GitHub|org=imglib|repo=imglib|path=core/src/main/java/net/imglib2/Interval.java|label=Imglib2 interval}}, and the target frame. So you need to process and bundle:
+This will be called repeatedly by TrackMate to generate as many SpotDetector instances as there is frames in the raw data to segment. The two parameters specify the ROI the user wants to operate on as an {{GitHub|repo=imglib|path=core/src/main/java/net/imglib2/Interval.java|label=Imglib2 interval}}, and the target frame. So you need to process and bundle:
 * this interval and this frame;
 * the raw image data and settings map  received from the <code>setTarget</code> method
 in the parameters required to instantiate a new SpotDetector. 
