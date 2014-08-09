@@ -79,7 +79,7 @@ There are also a couple of older screencasts available - these refer to obselete
 
 The native file format of the plugin is documented at: [[Simple Neurite Tracer: .traces File Format]].  (The .traces files are just gzipped XML, so easy to parse.)  There's also an example script showing how to batch convert each .traces file to multiple SWC files [https://gist.github.com/888051 here].
 
-Simple Neurite Tracer is also easy to use programmatically.  For instance, the example in {{GitLink|jar=Simple_Neurite_Tracer|path=tracing/Albert_Test.java|label=Albert_Test.java}} shows how to use the code to find a path between two arbitrary points in an image stack.
+Simple Neurite Tracer is also easy to use programmatically.  For instance, the example in {{GitHub|org=fiji|repo=Simple_Neurite_Tracer|source=tracing/Albert_Test.java|label=Albert_Test.java}} shows how to use the code to find a path between two arbitrary points in an image stack.
 
 As another small example, if you just wanted to load a set of SWC files using the Simple Neurite Tracer API and display them in the 3D viewer, a Jython script like this will do: https://gist.github.com/838695
 
