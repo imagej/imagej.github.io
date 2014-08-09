@@ -4,7 +4,7 @@
 | author                 = Curtis Rueden<br/>Johannes Schindelin
 | maintainer             = Curtis Rueden<br/>Johannes Schindelin
 | filename               = scripting-jython.jar
-| source                 = [https://github.com/scijava/scripting-jython Git]
+| source                 = {{GitHub|org=scijava|repo=scripting-jython}}
 | status                 = stable
 | tutorials             = Albert Cardona
 }}
