@@ -12,7 +12,7 @@ We solved exactly those problems in the ImageJ project. There is a [http://jenki
 
 As for the git-svn mirror, we have a Jenkins job that too. It is driven by a&mdash;thankfully quite simple&mdash;[https://github.com/imagej/imagej/blob/9227a1048426dc2c1b312be4e8a80c1b726a04ce%5E/bin/jenkins-git-job.sh script]. This script makes sure that the remote information is set up such that all branches in <code>refs/remotes/</code> (i.e. the ones maintained by git-svn) are pushed into the <code>refs/heads/svn/</code> namespace. Jenkins polls the Subversion repository and only runs the job when new commits are available.
 
-Both jobs (and likewise the siblings of the ImageJ synchronizer used to synchronize the [https://github.com/imglib/imglib ImgLib2] and [https://github.com/fiji/fiji Fiji] repositories) proved quite useful and stable in our development.
+Both jobs (and likewise the siblings of the ImageJ synchronizer used to synchronize the {{GitHub|repo=imglib|label=ImgLib2}} and {{GitHub|repo=fiji|label=Fiji}} repositories) proved quite useful and stable in our development.
 
 The synchronizer for Git repositories was designed with flexibility in mind: the information which repositories should be synchronized is passed as command-line parameters. Should it be required, it will be easy to adjust the synchronizer for the Git-SVN mirror to be as flexible.
 
