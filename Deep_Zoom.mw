@@ -3,7 +3,7 @@
 | name                   = Deep Zoom
 | author                 = [http://loci.wisc.edu/people/aivar-grislis Aivar Grislis]
 | maintainer           = unmaintained
-| source                 = [https://github.com/uw-loci/deep-zoom-plugin Git]
+| source                 = {{GitHub|org=uw-loci|repo=deep-zoom-plugin}}
 | status                 = inactive
 | category               = [[:Category:Import-Export|Import-Export]]
 }}== Introduction ==
