@@ -37,7 +37,7 @@ Although both plugins make use of layered context-dependent Generic Dialogs, the
 The Pairwise Stitching first queries for two input images that you intend to stitch. They can contain rectangular ROIs which limit the search to those areas, however, the full images will be stitched together. Once you selected the input images it will show the actual dialog for the Pairwise Stitching. The dialog will depend on the dimensionality of the input images. Please note that RGB input images will be converted into 8-Bit composite images.
 
 * '''Linear blending''': In the overlapping area the intensity are smoothly adjusted between the two images. 
-* '''Average''': In the overlapping area the average intensity between all images is computed ([http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Stitching_/mpicbg/stitching/fusion/AveragePixelFusion.java example source code]).
+* '''Average''': In the overlapping area the average intensity between all images is computed ({{GitHub|org=fiji|repo=Stitching|source=mpicbg/stitching/fusion/AveragePixelFusion.java|label=example source code}}).
 * '''Median''': In the overlapping area the median intensity of all images is computed.
 * '''Max. Intensity''': In the overlapping area the maximum intensity between all images is used int the output image.
 * '''Min. Intensity''': In the overlapping area the minimum intensity between all images is used int the output image.
