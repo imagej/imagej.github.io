@@ -3,7 +3,7 @@
 | name                   = ROI Picker
 | author                 = Mark Hiner
 | maintainer             = Mark Hiner
-| source                 = [http://github.com/fiji/fiji/blob/master/src-plugins/Stitching_/src/main/java/tools/RoiPicker.java]
+| source                 = {{GitHub|org=fiji|repo=Stitching|source=tools/RoiPicker.java}}
 | released               = 30 August 2013
 | latest version         = 22 October 2013
 | status                 = second version
