@@ -44,5 +44,8 @@ This plugin implements the method described in the following paper:
 * 02/Nov/2005 changed field names so user-defined colours can be set within macros (DLC - dchao at fhcrc org)
 * 04/Feb/2007 1.3 disable popup menu when right clicking
 
+== Menu path ==
+Image > Color > Colour Deconvolution
+
 [[Category:Plugins]]
 [[Category:Color processing]]
