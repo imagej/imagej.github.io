@@ -46,3 +46,8 @@ It may be necessary to increase the delay time for clicking orders depending on 
 It may be also necessary to slow down the macro calls to this plugin between orders by using the macro command: wait(time_in_milliseconds). For instance if you are grabbing an image with an external programme, the grab function may not be available while the snapshot is being taken.
 
 The included demo, seems to work fine in various platforms. Make sure that there are no open images in IJ and that please do not move the mouse while running the macro.
+
+== Menu Path ==
+Plugins > Utilities (2nd on the list!) > IJ Robot
+
+[[Category:Plugins]]
