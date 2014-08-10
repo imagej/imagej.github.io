@@ -81,6 +81,8 @@ We perform block matching at a reasonably down-scaled version of the images.  Th
 ;ambiguity filter
 :if the second best ''r(x,y)'' is very similar to the best, the match is rejected for being ambiguous.  Similar means related by a factor larger than a given threshold.<ref name="Lowe2004" />
 
+See also [[Test Block Matching Parameters]] plugin
+
 ==Parameter Discussion==
 
 All parameters that specify a distance in pixels refer to the original scale of the image.
