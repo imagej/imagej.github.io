@@ -15,3 +15,8 @@ A ''label field'' is an 8-bit image stack where the numbers attached to each pix
 The ''Show Color Surfaces'' command calculates surfaces embedded into the [[3D Viewer]] from label fields:
 
 [[Image:Show-color-surfaces-reduced.png]]
+
+== Menu path ==
+Plugins > Process > Show Color Surfaces
+
+[[Category:Plugins]]
