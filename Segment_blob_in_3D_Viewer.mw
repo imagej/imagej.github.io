@@ -21,4 +21,5 @@ Push the {{key|Esc}} key. You may have to do so while having the Fiji toolbar wi
 
 Internally, the [[Level Sets]] plugin is used. To adjust its many parameters, do  a {{key|Shift}}+{{key|click}} with the magic wand. The dialog will open; it's the same dialog as shown in the [[Level Sets]] documentation page.
 
+[[Category:Plugins]]
 [[Category:Segmentation]]
