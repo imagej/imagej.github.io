@@ -2,7 +2,7 @@ Today, the [[Contributors|ImageJ team]] is pleased to announce a new public rele
 
 == New features ==
 
-* Usage tracking! We can now track and upload (anonymously) use counts at the plugin level, along with information about the environment of use (country, java version, language, operating system, time zone, update site). Although we are taking care not to expose any user data with these statistics, this feature can be disabled via a new <code>Edit > Options > Privacy...</code> setting. Expect great things coming to the [[Usage | usage page]]! (note: "great things" = statistics graphs) 
+* Usage tracking! We can now track and upload (anonymously) use counts at the plugin level, along with information about the environment of use (country, java version, language, operating system, time zone). Although we are taking care not to expose any user data with these statistics, this feature can be disabled via a new <code>Edit > Options > Privacy...</code> setting. Expect great things coming to the [[Usage | usage page]]! (note: "great things" = statistics graphs) 
 
 * [[Groovy]] scripting! The Groovy scripting language is [http://bloodredsun.com/2011/10/04/scala-groovy-clojure-jython-jruby-java-jobs/ one of the most popular available for the JVM]. Hence, ImageJ now has built-in support for Groovy as a [[scripting]] option.
 
