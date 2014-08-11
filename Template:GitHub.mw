@@ -1,6 +1,4 @@
-<includeonly>
-[https://github.com/{{{org|{{{repo|imagej}}}}}}/{{{repo|{{{org|imagej}}}}}}/{{#if:{{{source|}}}|blob/{{{tag|master}}}/src/main/java/{{{source|}}}|}}{{#if:{{{path|}}}|blob/{{{tag|master}}}/{{{path|}}}|}} {{{label|on GitHub}}}]
-</includeonly>
+<includeonly>[https://github.com/{{{org|{{{repo|imagej}}}}}}/{{{repo|{{{org|imagej}}}}}}/{{#if:{{{source|}}}|blob/{{{tag|master}}}/src/main/java/{{{source|}}}|}}{{#if:{{{path|}}}|blob/{{{tag|master}}}/{{{path|}}}|}} {{{label|on GitHub}}}]</includeonly>
 
 <noinclude>
 ==Usage==
