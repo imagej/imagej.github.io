@@ -1,107 +1,107 @@
-===[[TrakEM2 basics tutorial|Video tutorial on the basic recipe for TrakEM2]]===
-[[Image:Screenshot-TrakEM2_basics_tutorial.png|thumb|250px|TrakEM2 basic tutorial]]
+== Video tutorial on the basic recipe for TrakEM2 ==
+
+[[Image:Screenshot-TrakEM2_basics_tutorial.png|thumb|250px|link=TrakEM2 basics tutorial|TrakEM2 basic tutorial]]
 
 This is the basic tutorial for TrakEM2. '''If you are new to TrakEM2, please start by watching this tutorial'''. It includes:
-*Importing an image stack.
-*Registering stack slices manually, using color overlays and affine transforms.
-*Defining a template tree structure for your segmentations.
-*Segmenting cells across multiple sections.
-*3D visualization.
 
+* Importing an image stack.
+* Registering stack slices manually, using color overlays and affine transforms.
+* Defining a template tree structure for your segmentations.
+* Segmenting cells across multiple sections.
+* 3D visualization.
 
-See the [[TrakEM2 basics tutorial|basics video tutorial here]]. 
+{{Clear}}
 
-This video tutorial was made by Javier Cabrera-Chaves and edited by [[User:iarganda|Ignacio Arganda-Carreras]] using [http://www.debugmode.com/wink/ Wink 1.5 for linux]. To navigate, use the green arrows to go forward and backward in the slide-show.
+== Video tutorial on segmenting/outlining objects over multiple sections in 3D ==
 
-===[http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4 Video tutorial on segmenting/outlining objects over multiple sections in 3D]===
-[[Image:Arealists-brushing.jpg|thumb|250px|TrakEM2 brushing]]
-*How to use the PEN tool with "area lists" segmentation type (paint an area, flood-fill, erase, flood-erase).
-*How to use ROIs (selections like polygon and freeroi) to edit "area lists".
+[[Image:Arealists-brushing.jpg|thumb|250px|link=http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4|TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.)]]
 
+* How to use the PEN tool with "area lists" segmentation type (paint an area, flood-fill, erase, flood-erase).
+* How to use ROIs (selections like polygon and freeroi) to edit "area lists".
 
-See the [http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4 the "area list" video tutorial here].
+See also the list of [http://www.ini.uzh.ch/~acardona/trakem2_manual.html#edit_arealist key bindings for AreaList].
 
-See als the list of [http://www.ini.uzh.ch/~acardona/trakem2_manual.html#edit_arealist key bindings for AreaList]. 
+{{Clear}}
 
-This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.
+== Video tutorial on aligning sections ==
 
-===[[TrakEM2 align sections tutorial|Video tutorial on aligning sections]]===
-[[Image:Screenshot-TrakEM2 align sections tutorial.png|thumb|250px| TrakEM2 align sections tutorial]]
+[[Image:Screenshot-TrakEM2 align sections tutorial.png|thumb|250px|link=TrakEM2 align sections tutorial|TrakEM2 align sections tutorial]]
+
 This video tutorial is focused on:
 
-*Automatically registering sections.
-*Selecting feature extraction parameters.
-
-
-See the [[TrakEM2 align sections tutorial|aligning video tutorial here]].
+* Automatically registering sections.
+* Selecting feature extraction parameters.
 
 See also the feature extraction and alignment [http://www.ini.uzh.ch/~acardona/howto.html#sift_parameters parameters explained].
 
-This video tutorial was made by Javier Cabrera-Chaves and edited by [[User:iarganda|Ignacio Arganda-Carreras]] using [http://www.debugmode.com/wink/ Wink 1.5 for linux]. To navigate, use the green arrows to go forward and backward in the slide-show.
+{{Clear}}
 
-===[[TrakEM2_segmentation_modes_tutorial|Video tutorial on manual segmentation modes]]===
-[[Image:Screenshot-TrakEM2-Manual-Segmentation-Modes-Tutorial.png|thumb|250px|TrakEM2 manual segmentation modes]]
+== Video tutorial on manual segmentation modes ==
+
+[[Image:Screenshot-TrakEM2-Manual-Segmentation-Modes-Tutorial.png|thumb|250px|link=TrakEM2_segmentation_modes_tutorial|TrakEM2 manual segmentation modes]]
+
 How to manually segment cells using the 3 segmentation modes:
 
-* '''Overlap''': multiple arealists can coexist in space (the normal mode; arealists are independent).
-* '''Exclude''': when painting in an arealist, do not allow paint to ocurr over any other existing arealist.
-* '''Erode''': when painting in an arealist, paint in the current but erase any other arealist.
+; Overlap
+: multiple arealists can coexist in space (the normal mode; arealists are independent).
+; Exclude
+: when painting in an arealist, do not allow paint to ocurr over any other existing arealist.
+; Erode
+: when painting in an arealist, paint in the current but erase any other arealist.
 
+{{Clear}}
 
-See the [[TrakEM2_segmentation_modes_tutorial|segmentation modes video tutorial here]].
+== Video tutorial on semi-automatic segmentation ==
 
-This video tutorial was made by Javier Cabrera-Chaves and edited by [[User:iarganda|Ignacio Arganda-Carreras]] using [http://www.debugmode.com/wink/ Wink 1.5 for linux]. To navigate, use the green arrows to go forward and backward in the slide-show.
+[[Image:Screenshot-TrakEM2-tutorial-automatic-segmentation.png|thumb|250px|link=TrakEM2 semi-automatic segmentation tutorial|TrakEM2 semi-automatic segmentation]]
 
-===[[TrakEM2 semi-automatic segmentation tutorial|Video tutorial on semi-automatic segmentation]]===
-[[Image:Screenshot-TrakEM2-tutorial-automatic-segmentation.png|thumb|250px|TrakEM2 semi-automatic segmentation]]
 In this video tutorial you will learn:
-*How to segment cells by only one click.
-*Fast marching method tool in TrakEM2.
-*Selecting segmentation parameters.
 
+* How to segment cells by only one click.
+* Fast marching method tool in TrakEM2.
+* Selecting segmentation parameters.
 
-See the [[TrakEM2 semi-automatic segmentation tutorial|semi-automatic segmentation video tutorial here]].
+{{Clear}}
 
-This video tutorial was made by Javier Cabrera-Chaves and edited by [[User:iarganda|Ignacio Arganda-Carreras]] using [http://www.debugmode.com/wink/ Wink 1.5 for linux]. To navigate, use the green arrows to go forward and backward in the slide-show.
+== Video tutorial on measuring surfaces and volumes ==
 
-===[[TrakEM2 measurements tutorial|Video tutorial on measuring surfaces and volumes]]===
-[[Image:Screenshot-TrakEM2-tutorial-measure-surfaces.png|thumb|250px|TrakEM2 measuring surfaces and volumes]]
+[[Image:Screenshot-TrakEM2-tutorial-measure-surfaces.png|thumb|250px|link=TrakEM2 measurements tutorial|TrakEM2 measuring surfaces and volumes]]
+
 In this video tutorial you will learn how to:
-*Extract information from TrakEM2 project objects.
-*Save measurements into files.
 
-
-See the [[TrakEM2 measurements tutorial|measurements video tutorial here]].
+* Extract information from TrakEM2 project objects.
+* Save measurements into files.
 
 See also [http://www.ini.uzh.ch/~acardona/trakem2_manual.html#measure_arealist AreaList measurements] in the TrakEM2 manual, with figures.
 
-This video tutorial was made by Javier Cabrera-Chaves and edited by [[User:iarganda|Ignacio Arganda-Carreras]] using [http://www.debugmode.com/wink/ Wink 1.5 for linux]. To navigate, use the green arrows to go forward and backward in the slide-show.
+{{Clear}}
 
-===[[TrakEM2 add more sections/layers tutorial | Video tutorial on adding sections/layers to an existing project]]===
-[[Image:Screenshot-TrakEM2-tutorial-add-layers.png|thumb|250px|TrakEM2 adding layers to existing project]]
+== Video tutorial on adding sections/layers to an existing project ==
+
+[[Image:Screenshot-TrakEM2-tutorial-add-layers.png|thumb|250px|link=TrakEM2 add more sections/layers tutorial|TrakEM2 adding layers to existing project]]
+
 Here you will learn how to:
-*Open an image sequence as a virtual stack in Fiji.
-*Calibrate the virtual stack.
-*Import the virtual stack into TrakEM2 as a sequence of layers (sections), one image per layer.
+
+* Open an image sequence as a virtual stack in Fiji.
+* Calibrate the virtual stack.
+* Import the virtual stack into TrakEM2 as a sequence of layers (sections), one image per layer.
 
 In the tutorial, the layers are imported following an existing set of layers, i.e. concatenating to enlarge the collection of sections.
 
-See the [[TrakEM2 add more sections/layers tutorial|add more layers video tutorial here]].
+{{Clear}}
 
-This video tutorial was made by Javier Cabrera-Chaves and edited by [[User:iarganda|Ignacio Arganda-Carreras]] using [http://www.debugmode.com/wink/ Wink 1.5 for linux]. To navigate, use the green arrows to go forward and backward in the slide-show.
+== Video tutorial on saving a project ==
 
-===[[TrakEM2 saving project tutorial | Video tutorial on saving a project]]===
-[[Image:Screenshot-TrakEM2-save-project.png|thumb|250px|TrakEM2 saving a project]]
-*Saving a TrakEM2 project into an .XML file.
+[[Image:Screenshot-TrakEM2-save-project.png|thumb|250px|link=TrakEM2 saving project tutorial|TrakEM2 saving a project]]
 
-See the [[TrakEM2 saving project tutorial |saving project video tutorial here]].
+* Saving a TrakEM2 project into an .XML file.
 
-This video tutorial was made by Javier Cabrera-Chaves and edited by [[User:iarganda|Ignacio Arganda-Carreras]] using [http://www.debugmode.com/wink/ Wink 1.5 for linux]. To navigate, use the green arrows to go forward and backward in the slide-show.
+{{Clear}}
 
 === See Also ===
 
-*[[TrakEM2 Scripting]]
-*[[TrakEM2]] wiki page
-*[http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2 web page]
+* [[TrakEM2 Scripting]]
+* [[TrakEM2]] wiki page
+* [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2 web page]
 
 [[Category:Tutorials]]
