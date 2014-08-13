@@ -2,7 +2,7 @@ After receiving input from the ImageJ community on the collection of anonymous p
 
 The sole purpose of this release is to remove usage statistics collection from the core of ImageJ.
 
-Note that even without updating, the usage collection server has been set to reject any upload requests. The data that was collected has been purged.
+This update is available immediately in Fiji through "Help > Update Fiji". Note that even without updating, the usage collection server has been set to reject any upload events, and the data that was collected has been purged.
 
 Thank you again to all community members who provided feedback on this issue!
 
