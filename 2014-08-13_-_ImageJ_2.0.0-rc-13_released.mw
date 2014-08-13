@@ -4,4 +4,7 @@ The sole purpose of this release is to remove usage statistics collection from t
 
 Note that even without updating, the usage collection server has been set to reject any upload requests. The data that was collected has been purged.
 
-We say "thank you" again to all community members who provided feedback on this issue!
+Thank you again to all community members who provided feedback on this issue!
+
+[[Category:ImageJ2]]
+[[Category:News]]
