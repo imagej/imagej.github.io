@@ -44,6 +44,13 @@ ImageJ has a simple API, but it is also big, so here are a few pointers to some 
  ImagePlus image = IJ.openImage(path);
 </source>
 
+== How to get the current image ==
+
+<source lang="java">
+ImagePlus img = WindowManager.getCurrentImage();  // current image
+ImageProcessor ip = img.getProcessor();  // current slice
+</source>
+
 == Making a new image stack -- quickly! ==
 
 <source lang="java">
