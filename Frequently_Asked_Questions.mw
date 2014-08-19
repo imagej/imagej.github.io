@@ -22,14 +22,20 @@ At any time, you can verify which Javas are installed on your system using {{Git
 
 == How do I launch ImageJ with a different version of Java? ==
 
-Use the <code>--java-home</code> command line option. Examples:
+=== On Windows ===
 
-On OS X:
+Install Java 7, and delete the <code>Fiji.app\jre</code> folder.
+
+=== On OS X ===
+
+Use the <code>--java-home</code> command line option:
 
  /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx --java-home \
    '/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home'
 
-On Linux:
+=== On Linux ===
+
+Use the <code>--java-home</code> command line option:
 
  $HOME/ImageJ.app/ImageJ-linux64 --java-home \
    /usr/lib/jvm/java-7-openjdk-amd64
