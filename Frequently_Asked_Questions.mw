@@ -24,7 +24,7 @@ At any time, you can verify which Javas are installed on your system using {{Git
 
 === On Windows ===
 
-Install Java 7, and delete or rename the <code>Fiji.app\jre</code> folder.
+Install Java 7, and delete or rename the <code>ImageJ.app\java</code> folder.
 
 === On OS X ===
 
