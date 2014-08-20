@@ -18,6 +18,13 @@ To enable GPU hardware accelerated processing, you might want to download the ''
 * Separable Convolution: Used for the Difference-of-Gaussian segmentation, available on [https://github.com/StephanPreibisch/SeparableConvolutionCUDALib GitHub]
 * Non-Separable Convolution: Used for the MultiView Deconvolution, available on [https://github.com/StephanPreibisch/FourierConvolutionCUDALib GitHub]
 
+== Citation ==
+
+Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
+* S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", ''Nature Methods'', '''7'''(6):418-419. [http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html Webpage] [[Media:Nmeth0610-418.pdf|PDF]] [[Media:Nmeth0610-418-S1.pdf|Supplement]]
+* S. Preibisch, F. Amat, E. Stamataki, M. Sarov, R.H. Singer, E. Myers and P. Tomancak (2014) "Efficient Bayesian-based Multiview Deconvolution", ''Nature Methods'', '''11'''(6):645-648. [http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html Webpage]
+For technical details about the registration method and SPIM imaging see also [[SPIM Registration Method]].
+
 == Introduction & Overview ==
 
 The '''Multiview Reconstruction''' software package enables users to ''register, fuse, deconvolve and view'' multiview microscopy images (first box). The software is designed for lightsheet fluorescence microscopy (LSFM, second box), but is applicable to any form of three or higher dimensional imaging modalities like confocal timeseries or multicolor stacks.
