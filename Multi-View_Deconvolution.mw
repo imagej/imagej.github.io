@@ -11,6 +11,11 @@
 | website                = [http://fly.mpi-cbg.de/~preibisch Stephan Preibisch's homepage]
 }}
 
+== Citation ==
+
+Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
+* S. Preibisch, F. Amat, E. Stamataki, M. Sarov, R.H. Singer, E. Myers and P. Tomancak (2014) "Efficient Bayesian-based Multiview Deconvolution", ''Nature Methods'', '''11'''(6):645-648. [http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html Webpage]
+
 == Overview of the multi-view deconvolution plugin ==
 
 The multi-view deconvolution plugin is an image fusion plugin that computes one single image from several three-dimensional (3d) acquisitions (views) of the same specimen, taken in different orientations. The deconvolution tries to estimate the most probable image that best explains all views, given the individual point spread function (PSF) of each view. It can be computed for single timepoints or an entire timeseries.
