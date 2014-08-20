@@ -157,7 +157,7 @@ imp.show()
 First import necessary packages: Random, from standard java util library, and [http://www.jython.org/archive/21/docs/jarray.html jarray], the Jython module for native java arrays:
 
 <source lang="python">
-from java.awt import Random
+from java.util import Random
 from jarray import zeros
 </source>
 
@@ -185,7 +185,7 @@ cm = LUT(channel, channel, channel)
 ... and compose a ByteProcessor from the pixels, and assign it to an ImagePlus:
 
 <source lang="python">
-imp = ImagePlus("Random", ByteProcessor(width, height, pix, cm)
+imp = ImagePlus("Random", ByteProcessor(width, height, pix, cm))
 imp.show()
 </source>
 
