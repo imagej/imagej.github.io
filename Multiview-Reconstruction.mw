@@ -12,9 +12,11 @@
 
 == Download ==
 
-For now, the integration of the '''Multiview Reconstruction''' and the [[BigDataViewer]] is only available for download here: [http://fly.mpi-cbg.de/preibisch/spim.zip http://fly.mpi-cbg.de/preibisch/spim.zip] 
+The integration of the '''Multiview Reconstruction''' and the [[BigDataViewer]] is available through the Fiji Updater. Simply add the BigDataViewer Update Site and the Multiview-Reconstruction pipeline will be available.
 
-Simply unzip all files into the Fiji plugins folder of a freshly downloaded/updated Fiji and replace any existing files. Soon it will be distributed properly through the Fiji Updater.
+To enable GPU hardware accelerated processing, you might want to download the '''native CUDA code''' for:
+* Separable Convolution: Used for the Difference-of-Gaussian segmentation, available on [https://github.com/StephanPreibisch/SeparableConvolutionCUDALib GitHub]
+* Non-Separable Convolution used in the MultiView Deconvolution, available on [https://github.com/StephanPreibisch/FourierConvolutionCUDALib GitHub]
 
 == Introduction & Overview ==
 
