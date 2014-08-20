@@ -16,7 +16,7 @@ The integration of the '''Multiview Reconstruction''' and the [[BigDataViewer]] 
 
 To enable GPU hardware accelerated processing, you might want to download the '''native CUDA code''' for:
 * Separable Convolution: Used for the Difference-of-Gaussian segmentation, available on [https://github.com/StephanPreibisch/SeparableConvolutionCUDALib GitHub]
-* Non-Separable Convolution used in the MultiView Deconvolution, available on [https://github.com/StephanPreibisch/FourierConvolutionCUDALib GitHub]
+* Non-Separable Convolution: Used for the MultiView Deconvolution, available on [https://github.com/StephanPreibisch/FourierConvolutionCUDALib GitHub]
 
 == Introduction & Overview ==
 
