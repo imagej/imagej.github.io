@@ -57,3 +57,8 @@ writing level 3
 writing level 4
 (Thu Aug 21 13:38:15 CEST 2014): Saved xml '/Users/janosch/no_backup/HisYFP/dataset-hdf5.xml'.
 </pre>
+
+== View with BigDataViewer ==
+Finally you can use [[BigDataViewer]] to view your data set.
+
+[[File:MVR_resave3.png]]
