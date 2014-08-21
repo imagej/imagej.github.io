@@ -1,1 +1,13 @@
-Image 1
+
+== Select Type of Dataset ==
+[[File:MVR_define1.png]]
+
+There are three types of datasets:
+* Image Stacks (LOCI Bioformats)
+** to open non TIFF images
+* Image Stacks (ImageJ Opener)
+** use this to open TIFF and zipped TIFFS
+* Zeiss Lightsheet Z.1 Dataset
+** experimental way of opening Zeiss data
+
+== Define Dataset 1/3 ==
