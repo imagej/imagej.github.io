@@ -19,3 +19,20 @@ This dialog specifies of what your dataset consists of:
 * angles
 
 [[File:MVR_define2.png]]
+
+== Define Dataset 2/3 ==
+This dialog asks you several facts:
+* image directory
+* image file pattern
+** there are 3 different variables. They are used to identify the images. All of them can have leading zeros, e.g. {aaa} for a angle of 045 degrees or {tttt} for 0014 as a time point
+*** {t} - time points
+*** {c} - channel
+*** {a} - angles
+* time points, channels and angles can be given as a comma seperated list or in a more elegant way, {start}-{end}:{interval}
+* calibration can be either read from file or entered by hand
+* data container, smaller image stacks can use '''ArrayImg''', bigger one should use '''CellImg''' 
+
+[[File:MVR_define3.png]]
+
+In case you selected the option, a list of found files will be presented
+[[File:MVR_define4.png]]
