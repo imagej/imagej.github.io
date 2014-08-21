@@ -36,3 +36,6 @@ This dialog asks you several facts:
 
 In case you selected the option, a list of found files will be presented
 [[File:MVR_define4.png]]
+
+Finally the plugin shows you the calibration it read from the files or asks for it.
+[[File:MVR_define5.png]]
