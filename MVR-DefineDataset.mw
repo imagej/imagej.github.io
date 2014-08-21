@@ -11,3 +11,11 @@ There are three types of datasets:
 ** experimental way of opening Zeiss data
 
 == Define Dataset 1/3 ==
+
+This dialog specifies of what your dataset consists of:
+* timepoints
+* channels
+* illumination directions
+* angles
+
+[[File:MVR_define2.png]]
