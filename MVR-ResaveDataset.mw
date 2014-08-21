@@ -1,60 +1,21 @@
+Resaving a dataset is a simple two step process:
+
+* select existing dataset
+* define resaving parameters
+
 [[File:MVR_resave1.png]]
 
 [[File:MVR_resave2.png]]
 
-
-<pre>
+Some log output shows the resaving process.
+<pre style="font-size:0.75em">
 starting export...
 proccessing timepoint 1 / 1
 proccessing setup 1 / 7
 Thu Aug 21 13:36:24 CEST 2014: Opening '/Users/janosch/no_backup/HisYFP/././spim_TL18_Angle000.lsm' [1388x1040x81 ch=0 tp=0 type=uint8 image=ArrayImg<UnsignedShortType>]
-writing level 0
-writing level 1
-writing level 2
-writing level 3
-writing level 4
-proccessing setup 2 / 7
-Thu Aug 21 13:36:35 CEST 2014: Opening '/Users/janosch/no_backup/HisYFP/././spim_TL18_Angle045.lsm' [1388x1040x91 ch=0 tp=0 type=uint8 image=ArrayImg<UnsignedShortType>]
-writing level 0
-writing level 1
-writing level 2
-writing level 3
-writing level 4
-proccessing setup 3 / 7
-Thu Aug 21 13:37:03 CEST 2014: Opening '/Users/janosch/no_backup/HisYFP/././spim_TL18_Angle090.lsm' [1388x1040x102 ch=0 tp=0 type=uint8 image=ArrayImg<UnsignedShortType>]
-writing level 0
-writing level 1
-writing level 2
-writing level 3
-writing level 4
-proccessing setup 4 / 7
-Thu Aug 21 13:37:25 CEST 2014: Opening '/Users/janosch/no_backup/HisYFP/././spim_TL18_Angle135.lsm' [1388x1040x91 ch=0 tp=0 type=uint8 image=ArrayImg<UnsignedShortType>]
-writing level 0
-writing level 1
-writing level 2
-writing level 3
-writing level 4
-proccessing setup 5 / 7
-Thu Aug 21 13:37:37 CEST 2014: Opening '/Users/janosch/no_backup/HisYFP/././spim_TL18_Angle180.lsm' [1388x1040x101 ch=0 tp=0 type=uint8 image=ArrayImg<UnsignedShortType>]
-writing level 0
-writing level 1
-writing level 2
-writing level 3
-writing level 4
-proccessing setup 6 / 7
-Thu Aug 21 13:37:50 CEST 2014: Opening '/Users/janosch/no_backup/HisYFP/././spim_TL18_Angle225.lsm' [1388x1040x91 ch=0 tp=0 type=uint8 image=ArrayImg<UnsignedShortType>]
-writing level 0
-writing level 1
-writing level 2
-writing level 3
-writing level 4
-proccessing setup 7 / 7
-Thu Aug 21 13:38:02 CEST 2014: Opening '/Users/janosch/no_backup/HisYFP/././spim_TL18_Angle270.lsm' [1388x1040x111 ch=0 tp=0 type=uint8 image=ArrayImg<UnsignedShortType>]
-writing level 0
-writing level 1
-writing level 2
-writing level 3
-writing level 4
+.
+.
+.
 (Thu Aug 21 13:38:15 CEST 2014): Saved xml '/Users/janosch/no_backup/HisYFP/dataset-hdf5.xml'.
 </pre>
 
