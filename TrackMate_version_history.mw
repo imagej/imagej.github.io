@@ -161,3 +161,11 @@ Initial release
 * Fixed several problems with the 'Copy Overlay' action.
 * Fixed a severe TrackScheme bug, happening when creating links with invisible tracks.
 * Fixed a detector crash when running a preview detection with 0 spots found.
+
+
+== 27-08-2014 - v2.5.0 ==
+
+* A full rewrite of the LAP (simple and not simple) tracker, that takes advantage of the sparse structure of tracking problems. This has major consequences on the memory usage and on speed performance. Because the results are not strictly identical, the old version of the LAP tracker is still present.
+* TrackScheme has now a search box that will center the view on the spots with names that match.
+* TrackScheme main panel has proper row and column headers that stay visible even when scrolling away from the border.
+* A new action that exemplify a branch-based analysis.
