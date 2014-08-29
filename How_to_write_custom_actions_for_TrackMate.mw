@@ -1,3 +1,5 @@
+{{ExtendingTrackMateTutorials}}
+
 == Introduction. ==
 
 Actions were my crude solution to the problem of adding random features to [[TrackMate]] without having to change the GUI too much. Adding buttons or dialogs or extra panels is cumbersome and I thought it would complexify the GUI, which is meant to be simple. A TrackMate action is a lazy workaround for this problem. You must keep in mind that is a placeholder for random feature ideas, and provided a quick and dirty way to test them.
