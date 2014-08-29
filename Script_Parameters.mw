@@ -1,4 +1,4 @@
-There is a universal <code>@parameter</code> notation available across all scripts for declaring inputs and outputs. This approach is preferred to using ImageJ 1.x <code>GenericDialog</code> because it is totally agnostic to the user interface, allowing such scripts to run in a variety of contexts.
+{{Scripting}}There is a universal <code>@parameter</code> notation available across all scripts for declaring inputs and outputs. This approach is preferred to using ImageJ 1.x <code>GenericDialog</code> because it is totally agnostic to the user interface, allowing such scripts to run in a variety of contexts.
 
 The rules for <code>@parameter</code> use is as follows:
 
