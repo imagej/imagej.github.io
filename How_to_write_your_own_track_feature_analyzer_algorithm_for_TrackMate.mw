@@ -1,3 +1,5 @@
+{{ExtendingTrackMateTutorials}}
+
 == Introduction == 
 
 This article is the second in the series dedicated to extending TrackMate with your own modules. Here we focus on creating '''feature analyzers''': small algorithms that calculate one or several numerical values for the TrackMate results. The [[How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate|previous article]] focused on writing edge analyzers: algorithms that allocate a numerical value to the link between two spots.
