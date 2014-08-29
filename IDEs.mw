@@ -1,1 +1,14 @@
-#REDIRECT [[Developing ImageJ in Eclipse]]
+{{Development}}
+An [https://en.wikipedia.org/wiki/Integrated_development_environment integrated development environment] (IDE) is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of a source code editor, build automation tools and a debugger. Most modern IDEs offer intelligent code completion features.
+
+Instructions for working with [[ImageJ]] from various IDEs are below.
+
+<center>
+{|
+| style="padding: 10px; text-align: center" | [[Image:Eclipse-luna.png|link=Eclipse|110px]]
+| style="padding: 10px; text-align: center" | [[Image:Netbeans.png|link=NetBeans|136px]]
+|-
+| style="padding: 10px; text-align: center" | [[Image:Intellij-idea.png|link=IntelliJ IDEA|96px]]
+| style="padding: 10px; text-align: center" | [[Image:Command-line.png|link=Command Line|128px]]
+|}
+</center>
