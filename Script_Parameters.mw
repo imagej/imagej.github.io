@@ -43,3 +43,5 @@ greeting = "Hello, " + name + "!"
 </source>
 
 We would actually break the script, as the parameters would not be harvested or displayed due to violation of the second parameter rule.
+
+[[Category:Scripting]]
