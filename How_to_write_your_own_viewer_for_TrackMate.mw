@@ -1,3 +1,5 @@
+{{ExtendingTrackMateTutorials}}
+
 == Introduction. ==
 
 Developing a custom view for [[TrackMate]] is ''hard'' and painful. Of course it must be a graphical representation of the model: the tracking results with all intermediate steps. If you want to build something really useful, it has to be interactive and should allow modifying the model. And be aware that modifications might happen somewhere else. Performance is also critical: since it stands at the user interface, it must be responsive, and possibly deal with large models (millions of detections). 
