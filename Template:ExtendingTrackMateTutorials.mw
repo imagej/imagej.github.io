@@ -11,7 +11,7 @@
 * [[How to write your own detection algorithm for TrackMate]]
 * [[How to write your own particle-linking algorithm for TrackMate]]
 
-|}TrackMate can be extended with new modules covering about everything it does, thanks to several nice features of [[SciJava]]. These tutorials explain how to do so. They are best read in order.
+|}[[TrackMate]] can be extended with new modules covering about everything it does, thanks to several nice features of [[SciJava]]. These tutorials explain how to do so. They are best read in order.
 </includeonly>
 <noinclude>
 This template is the floating menu and one-paragraph introduction for pages about extending TrackMate.
