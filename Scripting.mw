@@ -104,52 +104,6 @@ On selecting text, a popup offers to:
 
 You can create, edit and run scripts using Fiji's script editor.  For details, please see [[Using the Script Editor|the Script Editor documentation]].
 
-= Script Parameters =
-
-There is a universal <code>@ parameter</code> notation available across all scripts for declaring inputs and outputs. The rules for their use is as follows:
-
-<ol>
-<li>All parameter declarations must appear in comments. Each comment line contains a single parameter declaration and nothing else.</li>
-<li>Any parameters after the first non-parameter line will not be recognized.</li>
-<li><code>@type variableName</code> will declare an input of the indicated type, assigned to the specified name.</li>
-<li><code>@OUTPUT type outputName</code> will declare the variable of the specified name as an output parameter with the given type.</li>
-</ol>
-
-For example, if we look at the Greeting.py template supplied with Fiji:
-
-<source lang="Python">
-# @String name
-# @OUTPUT String greeting
-
-# A Jython script with parameters.
-# It is the duty of the scripting framework to harvest
-# the 'name' parameter from the user, and then display
-# the 'greeting' output parameter, based on its type.
-
-greeting = "Hello, " + name + "!"
-</source>
-
-We see that an input parameter <code>name</code> of type <code>String</code> is declared. This will automatically be harvested via a pop-up dialog when the script is run.
-
-When the script is completed, we expect to have a <code>String</code> variable named <code>greeting</code> which will be displayed as appropriate, based on the variable type.
-
-Note that if we added an extra comment to the top of our script as such: 
-
-<source lang="Python">
-# A simple python script
-# @String name
-# @OUTPUT String greeting
-
-# A Jython script with parameters.
-# It is the duty of the scripting framework to harvest
-# the 'name' parameter from the user, and then display
-# the 'greeting' output parameter, based on its type.
-
-greeting = "Hello, " + name + "!"
-</source>
-
-We would actually break the script, as the parameters would not be harvested or displayed due to violation of the second parameter rule.
-
 = Creating scripts and using "refresh scripts" =
 
 On startup, ImageJ will run all "refresh scripts" plugins, one for each supported language. This will result in all scripts present within the plugins folders to be added to the menus.
