@@ -1,9 +1,10 @@
+{{ExtendingTrackMateTutorials}}
+
 == Introduction. ==
 
 This last part on particle-linking modules concludes the series of tutorials on extending TrackMate. The most difficult modules to create are spot detectors, which was the subject of the [[How to write your own detection algorithm for TrackMate|previous tutorial]]. Particle-linking modules, or trackers, are a little bit less complicated. 
 
-However, you still need to understand how we store and manipulate links in TrackMate, and this implies very briefly introducing mathematical graphs. 
-
+However, you still need to understand how we store and manipulate links in TrackMate, and this implies very briefly introducing mathematical graphs.
 
 == Simple, undirected graphs. ==
 
