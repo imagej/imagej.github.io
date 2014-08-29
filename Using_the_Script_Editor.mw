@@ -89,7 +89,9 @@ We would actually break the script, as the parameters would not be harvested or 
 
 === Further reading ===
 
-There are introductions into the following supported languages: [[Introduction into Macro Programming|ImageJ Macro Language]], [[Beanshell_Scripting|Beanshell]], [[Javascript_Scripting|Javascript]], [[JRuby_Scripting|JRuby]], [[Jython_Scripting|Jython]], and [[Clojure_Scripting|Clojure]] (see also [[Scripting Help]]).
+See the [[Scripting Help]] page for an introduction to scripting.
+
+For more information about each specific language, see the Languages section of top right sidebar.
 
 [[Category:Plugins]]
 [[Category:Tutorials]]
