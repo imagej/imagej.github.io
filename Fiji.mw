@@ -15,11 +15,11 @@ For [[Developing_Fiji|developers]], Fiji is an open source project hosted in a [
 
 <b>[[How to cite Fiji?|How to cite Fiji?]]</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[http://scholar.google.com/scholar?as_sdt=0,5&hl=en&scisbd=1&sciodt=0,5&cites=17249863664147333646&scipsc= Who is citing Fiji?]
 
-<div style="float: right; width: 50%; margin-top: 10px; background: #ffffff00;">
-<span style="font-size: x-large;">Collaboration</span>
+<div style="clear: right; float: right; width: 50%; margin-top: 10px; padding: 20px">
+== Collaboration ==
 
 The Fiji project is driven by a strong desire to improve the tools available for life sciences to process and analyze data. To this end, Fiji collaborates closely with the following projects:
-
+<center>
 {|
 |[[File:ij2-logo.jpg|55px]]
 |[[File:bio-formats.png|75px]]
@@ -33,6 +33,7 @@ The Fiji project is driven by a strong desire to improve the tools available for
 ![[Micro-Manager|µManager]]
 ![[KNIME]]
 |}
+</center>
 </div>
 == [[News]] ==
 <listnews/>
