@@ -11,7 +11,7 @@ The rules for <code>@parameter</code> use is as follows:
 
 For example, if we look at the Greeting.py template supplied with Fiji:
 
-<source lang="Python">
+<source lang="python">
 # @String name
 # @OUTPUT String greeting
 
@@ -29,7 +29,7 @@ When the script is completed, we expect to have a <code>String</code> variable n
 
 Note that if we added an extra comment to the top of our script as such: 
 
-<source lang="Python">
+<source lang="python">
 # A simple python script
 # @String name
 # @OUTPUT String greeting
