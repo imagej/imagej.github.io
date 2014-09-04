@@ -133,11 +133,11 @@ Apart from this potential processing outline there are many '''tools''' availabl
 
 During the [http://openspim.org/EMBO_practical_course_Light_sheet_microscopy EMBO Practical Course on Lightsheet Microscopy] two of my talks were recorded:
 
-<include iframe title="YouTube video player" width="560" height="315" src="http://www.youtube.com/embed/IupXS_On2rg" frameborder="0" allowfullscreen></include>
+<include iframe title="Talk: Registration of Multiview Lightsheet Fluorescence Microscopy (LSFM) Images" width="773" height="435" src="http://www.youtube.com/embed/IupXS_On2rg" frameborder="0" allowfullscreen=true></include>
 
 This 30-minute talk by [http://www.preibisch.net Stephan Preibisch] covers the theory behind registration of multiview lightsheet microscopy data and it also quickly addresses the problem of multiview fusion & deconvolution.
 
-<include iframe title="YouTube video player" width="560" height="315" src="http://www.youtube.com/embed/0IkaSwfPYw0" frameborder="0" allowfullscreen></include>
+<include iframe title="Tutorial: Fiji Multiview Lightsheet Reconstruction Software" width="773" height="435" src="http://www.youtube.com/embed/0IkaSwfPYw0" frameborder="0" allowfullscreen=true></include>
 
 This one hour tutorial by [http://www.preibisch.net Stephan Preibisch] covers the basic usage of this multiview reconstruction software for Fiji. Documentation, source code, bug reports and feature requests can be found [https://sourceforge.net/projects/multiviewreconstruction/ on SourceForge].
 
