@@ -129,6 +129,8 @@ Apart from this potential processing outline there are many '''tools''' availabl
 * '''[[MVR-VisualizeDetections|Visualize Detections]]'''
 ** Detections as identified by [[MVR-InterestPointDetection|Detect Interest Points]] can be visualized. It is possible to visualize all detections or only those that are found to be corresponding with other detections and were therefore used for registration. This helps to identify potential misalignments if corresponding detections are not equally distributed around the sample as they should be. One can also load the input view at the same time to overlay the detections with the image data
 
+== Video Tutorials & Scientific Talks ==
+
 == Comments, Bugs & Feature Requests ==
 
 There is a webpage on [https://sourceforge.net/projects/multiviewreconstruction/ SourceForge] dedicated to this projects. It contains links to this documentation, the source code and other related things. All comments, bugs & feature requests should be posted in the [https://sourceforge.net/p/multiviewreconstruction/discussion/?source=navbar discussion board] there.
