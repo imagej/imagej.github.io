@@ -23,7 +23,6 @@ Please note that the SPIM registration plugin available through Fiji, is based o
 * S. Preibisch, F. Amat, E. Stamataki, M. Sarov, R.H. Singer, E. Myers and P. Tomancak (2014) "Efficient Bayesian-based Multiview Deconvolution", ''Nature Methods'', '''11'''(6):645-648. [http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html Webpage]
 For technical details about the registration method and SPIM imaging see also [[SPIM Registration Method]].
 
-
 == Introduction & Overview ==
 
 Selective Plane Illumination Microscopy (SPIM, [http://www.sciencemag.org/content/305/5686/1007 ''Science'', '''305'''(5686):1007-9]) allows ''in toto'' imaging of large specimens by acquiring image stacks from multiple angles. However, to realize the full potential of these acquisitions the data needs to be reconstructed:
