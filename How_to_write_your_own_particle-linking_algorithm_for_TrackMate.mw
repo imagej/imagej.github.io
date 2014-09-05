@@ -259,6 +259,7 @@ TrackMate recognize there were two tracks. You did not have to worry about that.
 
 == Wrapping up ==
 
+The full code, as well as the code for another tracker example can be found on [https://github.com/fiji/TrackMate-examples/tree/master/src/main/java/plugin/trackmate/examples/tracker github].
 And this concludes flatly our series of tutorials on how to extend TrackMate. Go forth now, and bend it to your needs; it is ''your'' tool.
 
 [[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 09:26, 5 September 2014 (CDT)
