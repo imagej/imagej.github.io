@@ -2,20 +2,39 @@
 
 == Introduction. ==
 
-This last part on particle-linking modules concludes the series of tutorials on extending TrackMate. The most difficult modules to create are spot detectors, which was the subject of the [[How to write your own detection algorithm for TrackMate|previous tutorial]]. Particle-linking modules, or trackers, are a little bit less complicated. 
+This last part on particle-linking modules concludes the series of tutorials on extending [[TrackMate]]. The most difficult modules to create are spot detectors, which was the subject of the [[How to write your own detection algorithm for TrackMate|previous tutorial]]. Particle-linking modules, or trackers, are a little bit less complicated. 
 
 However, you still need to understand how we store and manipulate links in TrackMate, and this implies very briefly introducing mathematical graphs.
 
+
+
 == Simple, undirected graphs. ==
 
+TrackMate stores the results of the detection step as spots in a [http://fiji.sc/javadoc/fiji/plugin/trackmate/SpotCollection.html SpotCollection]. The tracking results are mainly links between these spots so we needed a structure to hold them. We went for the most general one, and picked a mathematical graph.
 
+[http://en.wikipedia.org/wiki/Graph_(mathematics) Mathematical graphs] are mathematical structures that hold objects ('''vertices''') and links between them ('''edges''', we will use the two terms interchangeably). TrackMate relies specifically on a specialization: it uses an undirected, simple weighted graph.
+* Undirected means that a link between A and B is the same as a link between B and A. There is no specific direction and it cannot be exploited. However, you will see that the API offers specific tools that can fake a direction. Indeed, since we deal mainly with time-lapse data, we would like to make it possible to say that we iterate a graph following the time direction.
+* Simple is not related to the efforts that must be made to grasp this mathematical field, but to the fact that there can be only 1 or no link between two spots, and that we do not authorize a link going from one spots to this same spot (no loop).
+* Weighted means that each link has a numerical value, called weight, associated to it. We use it just to store some of the results of the tracking algorithm, but it has no real impact on TrackMate.
 
+This restrictions do not harm the generality of what you can represent in Life Science with this. You can still have the classical links you find in typical time-lapse experiment:
+* Following a single object over time: 
+<pre>A0 - A1 - A2 - A3 - ... </pre>
+* A cell division:
+<pre>A0 - A1 -+- B2 - B3 - ...
+         |
+         +- C2 - C3 - ...</pre>
+* But also anything fusions, tripolar divisions, and a mix of everything in the same model.
 
+On a side note, this is important if you plan to build analysis tools for TrackMate results. TrackMate philosophy is to offer managing the most general case (when it comes to linking), but your analysis tools might require special use cases. 
+* For instance, when you are tracking vesicles that do not fuse nor split, you just have a linear data structure (an array of objects for each particle). 
+* When you follow a cell lineage, you have a  [http://en.wikipedia.org/wiki/Tree_(data_structure) rooted mathematical tree]. 
+* And if all cells divide in two daughters, then you have a [http://en.wikipedia.org/wiki/Binary_tree rooted binary tree]. 
+They all are specialization of the simple graph, and offer special tools that can be very useful. But ''TrackMate assumes none of these specializations''. It stores and manipulate a graph.
 
+Since we are Java coders, we use a Java library to manipulate these graphs, and for this we rely on the excellent [http://jgrapht.org/ JGraphT] library. 
 
-
-
-
+Why a graph? Why not storing a list of successors and a list of predecessors for each spot? Or directly have a track object that would 
 
 
 [[Category:Tutorials]]
