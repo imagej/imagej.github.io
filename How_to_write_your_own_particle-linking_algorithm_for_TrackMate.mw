@@ -144,5 +144,124 @@ public DrunkenCellDivisionTracker( final SpotCollection spots )
 
 then we exploit the SpotCollection in the <code>process()</code> method. Our strategy here is to loop over all the frames that have a content, and link each spot to two spots in the next frame - wherever they are - until there is either no source spots or no target spots left. The method looks like this:
 
+<source lang="java">
+@Override
+	public boolean process()
+	{
+		graph = new SimpleWeightedGraph< Spot, DefaultWeightedEdge >( DefaultWeightedEdge.class );
+
+		// Get the frames in order.
+		final NavigableSet< Integer > frames = spots.keySet();
+		final Iterator< Integer > frameIterator = frames.iterator();
+
+		// Get all the visible spots in the first frame, and put them in a new
+		// collection.
+		final Iterable< Spot > iterable = spots.iterable( frameIterator.next(), true );
+		final Collection< Spot > sourceSpots = new ArrayList< Spot >();
+		for ( final Spot spot : iterable )
+		{
+			sourceSpots.add( spot );
+		}
+
+		// Loop over frames, and link the source spots to spots in the next
+		// frame.
+		double progress = 0;
+		while ( frameIterator.hasNext() )
+		{
+			final Integer frame = frameIterator.next();
+			final Iterator< Spot > it = spots.iterator( frame, true );
+			SOURCE_LOOP: for ( final Spot source : sourceSpots )
+			{
+				/*
+				 * Add the source to the graph, if it is not already done (doing
+				 * it several time is not a problem: it's backed up by a Set).
+				 */
+				graph.addVertex( source );
+				// Finds 2 targets.
+				for ( int i = 0; i < 2; i++ )
+				{
+					if ( it.hasNext() )
+					{
+						final Spot target = it.next();
+						// You must add it as vertex before creating the link.
+						graph.addVertex( target );
+						// This is how we create a link.
+						final DefaultWeightedEdge edge = graph.addEdge( source, target );
+						// We get the edge back, and set its weight through:
+						if ( null != edge )
+						{
+							graph.setEdgeWeight( edge, 3.14 );
+							/*
+							 * Edge can be null if a link already exists between
+							 * the two spots.
+							 */
+						}
+					}
+					else
+					{
+						break SOURCE_LOOP;
+					}
+				}
+			}
+
+			// Regenerate source list for next frame.
+			sourceSpots.clear();
+			for ( final Spot spot : spots.iterable( frame, true ) )
+			{
+				sourceSpots.add( spot );
+			}
+
+			progress += 1;
+			logger.setProgress( progress / frames.size() );
+		}
+		return true;
+	}
+</source>
+
+So it's not really complicated. Which is good, because the complicated part, completely omitted here, is the one where you have to determine what links to create. This is where you Science should kick in. 
+
+
+== The factory class. ==
+
+Now that we have the clever part of the code (the one that does the actual linking), we need to deal with TrackMate integration. Like for the detection modules, this is done <i>via</i> a factory class, named [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/tracking/SpotTrackerFactory.java SpotTrackerFactory]. It is completely equivalent to the SpotDetectorFactory we saw in the [[How to write your own detection algorithm for TrackMate|previous tutorial]], so I won't detail the common methods again.
+
+
+The methods specific to the tracker are:
+
+* <code>public SpotTracker create( final SpotCollection spots, final Map< String, Object > settings );</code>
+
+This method instantiates the actual tracker class. You can see that it received the SpotCollection and a settings map. This method is expected to unpack this map and extract the actual parameters need to instantiate the tracker.
+
+Note that contrary to the detector factory, TrackMate calls this method only once for a tracking process. It does not generate a tracker per frame. So it is actually simpler than for detection: a tracker instance is expected to solve the tracking problem for the whole model at once. Therefore, there is no need for a <code>setTarget()</code> method, like previously.
+
+
+* <code>public ConfigurationPanel getTrackerConfigurationPanel( final Model model );</code>
+
+This method should generate a GUI panel to request tracking parameters from the user. Completely similar to the detection modules.
+
+
+* <code>marshall</code> and <code>unmarshall</code>
+
+Save to and retrieve from XML, like previously. 
+
+
+* <code>public String toString( final Map< String, Object > sm );</code>
+
+Used to pretty-print the settings map specific to this tracker.
+
+The rest is classic. Here is what it looks like for our tracker:
+
+[[File:TrackaMateExample RandomCellDivision.png]]
+
+TrackMate recognize there were two tracks. You did not have to worry about that. 
+
+
+
+== Wrapping up ==
+
+And this concludes flatly our series of tutorials on how to extend TrackMate. Go forth now, and bend it to your needs; it is ''your'' tool.
+
+[[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 09:26, 5 September 2014 (CDT)
+
 
 [[Category:Tutorials]]
