@@ -26,15 +26,123 @@ This restrictions do not harm the generality of what you can represent in Life S
          +- C2 - C3 - ...</pre>
 * But also anything fusions, tripolar divisions, and a mix of everything in the same model.
 
+
+== Graphs in TrackMate. ==
+
 On a side note, this is important if you plan to build analysis tools for TrackMate results. TrackMate philosophy is to offer managing the most general case (when it comes to linking), but your analysis tools might require special use cases. 
 * For instance, when you are tracking vesicles that do not fuse nor split, you just have a linear data structure (an array of objects for each particle). 
 * When you follow a cell lineage, you have a  [http://en.wikipedia.org/wiki/Tree_(data_structure) rooted mathematical tree]. 
 * And if all cells divide in two daughters, then you have a [http://en.wikipedia.org/wiki/Binary_tree rooted binary tree]. 
 They all are specialization of the simple graph, and offer special tools that can be very useful. But ''TrackMate assumes none of these specializations''. It stores and manipulate a graph.
 
-Since we are Java coders, we use a Java library to manipulate these graphs, and for this we rely on the excellent [http://jgrapht.org/ JGraphT] library. 
+Since we are Java coders, we use a Java library to manipulate these graphs, and for this we rely on the excellent [http://jgrapht.org/ JGraphT] library. Why a graph? Why not storing a list of successors and a list of predecessors for each spot? Or directly have a track object that would save some time on determining what are the tracks? Well, because a graph is very handy and simple to use when creating links. When you will write your own tracker, and found a link you want to add the model, the only thing you have to do is: <code>graph.addEdge(A, B)</code>. You don't have to care whether A belongs to a track and if yes to what track, you don't need to see the whole graph globally, you can just focus on the local link. Adding a link in the code is always very simple.
 
-Why a graph? Why not storing a list of successors and a list of predecessors for each spot? Or directly have a track object that would 
+Then of course, you still need a way to know how many tracks are there in the model, and what are they made of. But this is the job of TrackMate. It offers the API that hides the graph and deals in track. This is done via a component of the model, the [http://fiji.sc/javadoc/fiji/plugin/trackmate/TrackModel.html TrackModel]. But in the tracker we will not use this. We will be given a simple graph, and will have to flesh it out with spots and links between these spots. When the tracker completes, TrackMate will build and maintains a list of tracks from it. 
+
+The price to pay for this simplicity is that - when tracking - it is not trivial to get the global information. For instance, it is easy to query whether a link exists between two spots, but the graph does not see the tracks directly. If you need them, you either have to build them from the graph, either have to maintain them locally. But more on this below. 
+
+
+
+== Particle-linking algorithms in TrackMate. ==
+
+We used the term ''tracker'' since the beginning of this series, but the correct term for what we will build now is particle linking algorithm. Our particles are the visible spots resulting from the detection step, and the links will be the edges of the graph. A tracker could be defined as the full application that combines a particle detection algorithm with a particle linking algorithm.
+
+In TrackMate, particle linking algorithms implements the [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/tracking/SpotTracker.java SpotTracker] interface. It is very simple. As explained in the docs, a SpotTracker algorithm is simply expected to create a new [http://jgrapht.org/javadoc/index.html?org/jgrapht/graph/SimpleWeightedGraph.html SimpleWeightedGraph] from the SpotCollection given (using of course only the ''visible'' spots). We use a simple weighted graph:
+* Though the weights themselves are not used for subsequent steps, it is suggested to use edge weight to report the cost of a link.
+* The graph is undirected, however, some link direction can be retrieved later on using the Spot.FRAME feature. The SpotTracker implementation does not have to deal with this; only undirected edges are created.
+* Several links between two spots are not permitted.
+* A link with the same spot for source and target is not allowed.
+* A link with the source spot and the target spot in the same frame is not allowed. This must be enforced by implementations.
+
+There is also an extra method to pass a instance of [http://fiji.sc/javadoc/fiji/plugin/trackmate/Logger.html Logger] to log the tracking process progresses. That's all. 
+
+
+
+== A dummy example: drunken cell divisions. ==
+
+There is already an example online that does [https://github.com/fiji/TrackMate-examples/blob/master/src/main/java/plugin/trackmate/examples/tracker/RandomLinkingTracker.java random link creation]. Let's do something else, and build a tracker that links a spot to any two spots in the next frame (if they exist) as if it would go cell division as fast as it can.
+
+Creating the class yields the following skeleton:
+<source lang="java">
+package plugin.trackmate.examples.tracker;
+
+import org.jgrapht.graph.DefaultWeightedEdge;
+import org.jgrapht.graph.SimpleWeightedGraph;
+
+import fiji.plugin.trackmate.Logger;
+import fiji.plugin.trackmate.Spot;
+import fiji.plugin.trackmate.tracking.SpotTracker;
+
+public class DrunkenCellDivisionTracker implements SpotTracker
+{
+
+	private SimpleWeightedGraph< Spot, DefaultWeightedEdge > graph;
+
+	private String errorMessage;
+
+	private Logger logger = Logger.VOID_LOGGER;
+
+	@Override
+	public SimpleWeightedGraph< Spot, DefaultWeightedEdge > getResult()
+	{
+		return graph;
+	}
+
+	@Override
+	public boolean checkInput()
+	{
+		return true;
+	}
+
+	@Override
+	public boolean process()
+	{
+		graph = new SimpleWeightedGraph< Spot, DefaultWeightedEdge >( DefaultWeightedEdge.class );
+		return true;
+	}
+
+	@Override
+	public String getErrorMessage()
+	{
+		return errorMessage;
+	}
+
+	@Override
+	public void setNumThreads()
+	{
+		// Ignored. We do not multithreading here.
+	}
+
+	@Override
+	public void setNumThreads( final int numThreads )
+	{
+		// Ignored.
+	}
+
+	@Override
+	public int getNumThreads()
+	{
+		return 1;
+	}
+
+	@Override
+	public void setLogger( final Logger logger )
+	{
+// Just store the instance for later use.
+		this.logger = logger;
+	}
+}
+</source>
+
+Parameters need to be passed to the class via its constructor. As for detectors, the factory we will build later will be in charge of getting these parameters. Of course, the most important one is the SpotCollection to track. In our case it will be the only one, as our dummy tracker do not have any settings. So we can have a constructor like this:
+<source lang="java">
+public DrunkenCellDivisionTracker( final SpotCollection spots )
+	{
+		this.spots = spots;
+	}
+</source>
+
+then we exploit the SpotCollection in the <code>process()</code> method. Our strategy here is to loop over all the frames that have a content, and link each spot to two spots in the next frame - wherever they are - until there is either no source spots or no target spots left. The method looks like this:
 
 
 [[Category:Tutorials]]
