@@ -74,3 +74,4 @@ This has required work on all three projects:
 These changes don't immediately allow for opening large single planes in IJ2—just large numbers of planes—as each whole plane is always loaded in IJ2. However, I think cells will lay the foundation for supporting large single planes in future IJ2 betas.
 
 [[Category:News]]
+[[Category:ImageJ2]]
