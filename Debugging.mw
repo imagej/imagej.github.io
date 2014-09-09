@@ -59,7 +59,7 @@ In Eclipse (or whatever [https://en.wikipedia.org/wiki/JDWP JDWP]-enabled debugg
 If you require more control over the ImageJ side -- such as picking a semi-random port if port 8000 is already in use -- you can also use the ''-agentlib:jdwp=...'' Java option directly (''--debugger=<port>'' is just a shortcut for convenience):
 
 <source lang="bash">
-Fiji.app/ImageJ-linux64 -agentlib:jdwp=server=y,transport=dt_socket --
+Fiji.app/ImageJ-linux64 -agentlib:jdwp=server=y,suspend=y,transport=dt_socket,address=localhost:8000 --
 </source>
 
 (the ''--'' marker separates the Java options -- if any -- from the ImageJ options). Once started that way, Fiji will wait for the debugger to be attached, after printing a message such as:
