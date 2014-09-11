@@ -1,0 +1,23 @@
+= Overview =
+
+A fundamental benefit to creating scripts and macros in ImageJ is the ability to reuse their functionality on more than one image. Although this can be done manually, there are multiple ways to easily automate this batch processing.
+
+== Pre-requisites ==
+
+You should have a basic macro or function in mind that you want to apply to a group of images. These images do not need to be open in ImageJ already - they will be read in as part of the batch process.
+
+Both batch processing options currently provided involve IJ1 macro code. So, looking through the [[Introduction into Macro Programming]] will be a great help to familiarize yourself with the principles of macro writing. Take particular note of the [[Introduction into Macro Programming#The_recorder|recorder]] section, as this is an excellent way to generate the macro code for your desired functionality.
+
+= Easy option =
+
+The fastest way to start batch conversion is via the <code>Process > Batch > Macro...</code> command. This will open a dialog (below) that will allow you to specify an input and output directory. You can select an output file format, and then use the <code>Add Macro Code</code> drop-down to generate a macro with the desired functionality.
+
+[[Image:BatchProcess.png|center]]
+
+= Flexible option =
+
+Open the [[Using_the_Script_Editor|script editor]], select <code>Templates > IJ1 Macro > Process Folder</code>. This will generate the following boilerplate:
+
+[[Image:Process_folder_ij1.png|center]]
+
+Lines 26 and 27 can now be edited, replaced with the functional macro code you would like to apply to all images of a given type in a folder. Furthermore you can now modify the batch processing logic itself, for example if you need to customize what (if any) output information is saved.
