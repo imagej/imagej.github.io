@@ -4,6 +4,10 @@
 
 This problem usually arises when 12-bit or 14-bit images are loaded into ImageJ without autoscaling. In that case, they are treated as if they were 16-bit images, and therefore the dynamic range is all wrong. You can fix this by clicking on ''Image>Adjust>Brightness/Contrast...'' and hitting the ''Auto'' button.
 
+== How do I apply an operation or macro to multiple images? ==
+
+See the [[Batch Processing]] page.
+
 = Mac OS X =
 
 == Why does ImageJ crash frequently? ==
