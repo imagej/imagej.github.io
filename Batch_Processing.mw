@@ -2,7 +2,7 @@
 
 A fundamental benefit to creating scripts and macros in ImageJ is the ability to reuse their functionality on more than one image. Although this can be done manually, there are multiple ways to easily automate this batch processing.
 
-== Pre-requisites ==
+= Pre-requisites =
 
 You should have a basic macro or function in mind that you want to apply to a group of images. These images do not need to be open in ImageJ already - they will be read in as part of the batch process.
 
