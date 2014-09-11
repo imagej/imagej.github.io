@@ -2,11 +2,14 @@
 
 A fundamental benefit to creating scripts and macros in ImageJ is the ability to reuse their functionality on more than one image. Although this can be done manually, there are multiple ways to easily automate this batch processing.
 
-= Pre-requisites =
+= General workflow =
 
-You should have a basic macro or function in mind that you want to apply to a group of images. These images do not need to be open in ImageJ already - they will be read in as part of the batch process.
-
-Both batch processing options currently provided involve IJ1 macro code. So, looking through the [[Introduction into Macro Programming]] will be a great help to familiarize yourself with the principles of macro writing. Take particular note of the [[Introduction into Macro Programming#The_recorder|recorder]] section, as this is an excellent way to generate the macro code for your desired functionality.
+# Create a basic macro which operates on the active image.
+#* The [[Introduction into Macro Programming#The_recorder|macro recorder]] is an excellent way to generate macro code.
+#* The [[Introduction into Macro Programming]] explains the principles of macro writing.
+# Apply your macro to a group of images.
+#* These images do not need to be open in ImageJ already—they will be read in as part of the batch process.
+#* See below for details.
 
 = Easy option =
 
