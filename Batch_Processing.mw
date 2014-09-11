@@ -10,7 +10,7 @@ Both batch processing options currently provided involve IJ1 macro code. So, loo
 
 = Easy option =
 
-The fastest way to start batch conversion is via the <code>Process > Batch > Macro...</code> command. This will open a dialog (below) that will allow you to specify an input and output directory. You can select an output file format, and then use the <code>Add Macro Code</code> drop-down to generate a macro with the desired functionality.
+The fastest way to start batch conversion is via the [http://imagej.net/docs/guide/146-29.html#toc-Subsubsection-29.12.3 Process > Batch > Macro...] command. This will open a dialog (below) that will allow you to specify an input and output directory. You can select an output file format, and then use the <code>Add Macro Code</code> drop-down to generate a macro with the desired functionality.
 
 [[Image:BatchProcess.png|center]]
 
