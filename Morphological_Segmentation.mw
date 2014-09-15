@@ -75,7 +75,7 @@ call("inra.ijpb.plugins.MorphologicalSegmentation.setInputImageType", "border");
 * Run segmentation with specific options:
 <source lang="java"> 
 call("inra.ijpb.plugins.MorphologicalSegmentation.segment", "tolerance=10",
- "calculateDams=true", "connectivity=6", "usePriorityQueue=true");
+ "calculateDams=true", "connectivity=6");
 </source>
 * Toggle result overlay:
 <source lang="java"> 
@@ -114,9 +114,9 @@ call("inra.ijpb.plugins.MorphologicalSegmentation.setInputImageType", "object");
 // set gradient radius as 1
 call("inra.ijpb.plugins.MorphologicalSegmentation.setGradientRadius", "1");
 // run segmentation with tolerance 32, calculating the watershed dams, 
-// 4-connectivity and using a priority queue
+// 4-connectivity 
 call("inra.ijpb.plugins.MorphologicalSegmentation.segment", "tolerance=32",
- "calculateDams=true", "connectivity=4", "usePriorityQueue=true");
+ "calculateDams=true", "connectivity=4");
 // display the overlaid dams
 call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Overlaid dams");
 </source>
