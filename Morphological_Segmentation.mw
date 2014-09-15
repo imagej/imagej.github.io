@@ -39,7 +39,6 @@ When selecting “Object Image”, an additional set of options is enabled to ch
 * '''Tolerance''': dynamic of intensity for the search of regional minima (in the extended-minima transform, which is the regional minima of the H-minima transform, value of h). Increasing the tolerance value reduces the number of segments in the final result, while decreasing its value produces more object splits.
 * '''Calculate dams''': un-check this option to produce segmentations without watershed lines.
 * '''Connectivity''': voxel connectivity (4-8 in 2D, and 6-26 in 3D). Selecting non-diagonal connectivity (4 or 6) usually provides more rounded objects.
-* '''Use priority queue''': this option defines the watershed method to use, based on a priority queue or in a one-time-sorted list. In general, the priority queue method provides more accurate results when the objects in the image are touching or overlapping.
 Finally, '''click on “Run” to launch the segmentation'''.
 
 If your segmentation is taking too long or you want '''to stop it''' for any reason, you can do so by clicking on the same button (which should read “STOP” during that process).
