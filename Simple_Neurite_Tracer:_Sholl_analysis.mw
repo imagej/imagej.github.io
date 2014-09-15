@@ -1,11 +1,11 @@
-(Return to the main [[Simple Neurite Tracer]] page)
+{{ambox
+| text = This is a tutorial on how to perform Sholl on [[Simple Neurite Tracer]] paths. For an overview of the technique refer to the [[Sholl Analysis]] documentation page.
+}}
 
-== Simple Neurite Tracer: Sholl analysis ==
+= Introduction =
+In Fiji, the Sholl technique can be performed using [[Simple Neurite Tracer]] (SNT) or the [[Sholl Analysis]] plugin. This tutorial deals with the former and assumes that you've already traced an image with SNT and that you are familiar with the [[Sholl_Analysis#MethodsTable|variants of Sholl methods]]. This tutorial will use an olfactory projection fibre image, freely available from the [http://www.diademchallenge.org/olfactory_projection_fibers_readme.html Diadem challenge data set].
 
-This tutorial assumes that you've already traced an image with [[Simple Neurite Tracer]] and that you know about the [http://en.wikipedia.org/wiki/Sholl_analysis variants of Sholl analysis] that are possible.  I don't have access at the moment to images that have the classic structure that Sholl analysis is typically used for, but I'll illustrate the principle using an olfactory projection fibre image from the Diadem challenge data sets:
-
-http://www.diademchallenge.org/olfactory_projection_fibers_readme.html
-
+= Retrieving Profiles =
 When you've loaded the traces, that should look something like this:
 
 [[Image:Simple Neurite Tracer- Sholl analysis-1.jpg|750px]]
@@ -22,47 +22,54 @@ Now hold down {{key|Ctrl}}+{{key|Shift}} (on Windows or Linux) or {{key|Alt}}+{{
 
 [[Image:Simple Neurite Tracer- Sholl analysis-4.jpg|750px]]
 
-Consider the first two options: you should probably select the top option "Use all N paths in analysis?" unless you're only wanting to include a subset of the paths, for example if your image stack contains multiple separate neurons.
+Consider the first two options: you should probably select the top option ''Use all N paths in analysis?'' unless you're only wanting to include a subset of the paths, for example if your image stack contains multiple separate neurons.
 
-Next I'd recommend that you click on "Draw Graph" so that you can visualize how the intersections with concentric spheres vary with distance from your centre point:
+Next I'd recommend that you click on ''Draw Graph'' so that you can visualize how the intersections with concentric spheres vary with distance from your centre point:
 
 [[Image:Simple Neurite Tracer- Sholl analysis-6.jpg|750px]]
 
-This graph shows exactly how many times a sphere of a particular radius will intersect with paths.  However, this is not the classic way of doing Sholl analysis, which consists of only considering spheres of evenly spaced radii.  To switch to that, you have to enter a value into the "Circle / sphere separation" box.  e.g.
+This graph shows exactly how many times a sphere of a particular radius will intersect with paths (i.e., ''continuos sampling''). To consider spheres of evenly spaced radii (see definition of [[Sholl_Analysis#StepSize|Step size]]), you have to enter a value into the ''Circle / sphere separation'' box. E.g.,
 
 [[Image:Simple Neurite Tracer- Sholl analysis-7.jpg|750px]]
 
-Sometimes people want to normalize the number of intersections by the volume (or area) enclosed by the sphere (or circle) - you can do that by selecting the "Normalize for volume enclosed by circle" option:
 
+= Data Normalization =
+If you need to [[Sholl_Analysis#Normalizer|normalize]] the number of intersections by the volume (or area) enclosed by the sphere (or circle) - you can do that by selecting the ''Normalize for volume enclosed by circle'' option:
+{{Tip
+| tip = The goal of [[Simple Neurite Tracer|SNT]] is to expedite the retrieval of sampled data, not retrieval of derived metrics. For extensive retrieval of [[Sholl_ Analysis#Metrics|Sholl-based metrics]], you should consider normalizing your profiles using [[Sholl_ Analysis#Importing|Sholl Analysis]].
+}}
 [[Image:Simple Neurite Tracer- Sholl analysis-8.jpg|750px]]
 
-The "Use standard axes" / "Use semi-log axes" / "Use log-log axes" controls whether the analysis is based on the log of intersections and distance ("log-log"), just the log of intersections ("semi-log") or unmodified values.
+The ''Use standard axes'' / ''Use semi-log axes'' / ''Use log-log axes'' controls whether the analysis is based on the log of normalized intersections and distance (''log-log''), the log of normalized intersections (''semi-log'') or unmodified values (linear axes).
 
-The values listed above the buttons are various measures of the morphology of your neuron based on the options you've selected above.  You can add these results to the ImageJ results table by pressing "Add to results table":
+{{ambox
+| text = Note that the [[Sholl#ShollDecay|Regression coefficient]] is always calculated in real time even if no normalization options are chosen. For an explanation on this, please refer to this [https://list.nih.gov/cgi-bin/wa.exe?A2=ind1409&L=IMAGEJ&F=&S=&P=80824 post] on the ImageJ mailing list.
+}}
+
+= Exporting Profiles =
+The values listed above the buttons are various measures of the morphology of your neuron based on the options you've selected above.  You can add these results to the ImageJ Results table by pressing ''Add to Results Table'':
 
 [[Image:Simple Neurite Tracer- Sholl analysis-9.jpg|750px]]
 
-You can build up results in the Results Table by clicking "Quit tracer" loading a new image + traces and repeating this process.
+You can build up results in the Results Table by clicking ''Quit tracer'', loading a new image + traces and repeating this process.
 
-If instead you'd like to export those summary results to a file that can be opened in a spreadsheet, you can click on "Export summary results" which will prompt for a CSV filename to save to.  Or, to export all the data points used in the graph, you can click "Export detailed results as CSV".  These options, once loaded into a spreadsheet, are shown below:
+If instead you'd like to export those summary results to a file that can be opened in a spreadsheet, you can click on "Export summary results" which will prompt for a CSV filename to save to.  Or, to export all the data points used in the graph, you can click ''Export detailed results as CSV''.  These options, once loaded into a spreadsheet, are shown below:
 
 [[Image:Simple Neurite Tracer- Sholl analysis-10.jpg|750px]]
 
-If you want to export the graph, so that you can edit in some other software or include it in a presentation, you can select "Export graph as SVG" in the graph window.  You can then load the SVG file in inkscape, for example:
+If you want to export the graph, so that you can edit in some other software or include it in a presentation, you can select ''Export graph as SVG'' in the graph window.  You can then load the SVG file in inkscape, for example:
 
 [[Image:Simple Neurite Tracer- Sholl analysis-11.jpg|750px]]
 
-Another option that might be useful is "Make Sholl image".  This will produce a stack which shows the number of intersections at each distance from the centre point on a colour scale.  You can see the exact number of intersections corresponding to a colour by mousing over that region and looking in the status bar.  For example, this shows you that the orange colour corresponds to 2 intersections ("value=2"):
+Another option that might be useful is ''Make Sholl image'', equivalent to the [[Sholl#Output_Options|Intersections mask]] created by the [[Sholl Analysis]] plugin.  This will produce a stack which shows the number of intersections at each distance from the centre point on a colour scale.  You can see the exact number of intersections corresponding to a colour by mousing over that region and looking in the status bar.  For example, this shows you that the orange colour corresponds to 2 intersections ("value=2"):
 
 [[Image:Simple Neurite Tracer- Sholl analysis-12.jpg|750px]]
 
-If you go back to the main tracer interface, keeping that "Sholl image stack" open, you can visualize those colours on the traces by switching the "Use colors / labels from" option to "Sholl analysis of all paths":
+If you go back to the main tracer interface, keeping that ''Sholl image stack'' open, you can visualize those colours on the traces by switching the ''Use colors / labels from'' option to ''Sholl analysis of all paths'':
 
 [[Image:Simple Neurite Tracer- Sholl analysis-13.jpg|750px]]
 
 (I've made the original image volume transparent in that image for clarity.)
-
-
 
 
 [[Category:Tutorials]]
