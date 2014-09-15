@@ -8,10 +8,12 @@
 | latest version         = September 15<sup>th</sup>, 2014 (ijpb-plugins 1.0.4)
 | status                 = stable, active
 | category               = [[:Category:Segmentation|Segmentation]]
-}}
+}}{|
+|style="vertical-align:top" |[[Image:Watershed-flooding-markers-blobs-gradient.gif|thumb|300px|Marker-controlled flooding on the gradient image of the blobs sample.]]
+|}
 
 == Introduction ==
-Marker-controlled Watershed is an ImageJ/Fiji plugin to segment grayscale images of any type (8, 16 and 32-bit) in 2D and 3D based on the marker-controlled watershed algorithm.
+Marker-controlled Watershed is an ImageJ/Fiji plugin to segment grayscale images of any type (8, 16 and 32-bit) in 2D and 3D based on the marker-controlled watershed algorithm (Meyer and Beucher, 1990).
 
 == Installation ==
 
