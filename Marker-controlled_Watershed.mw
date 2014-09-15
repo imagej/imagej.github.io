@@ -30,7 +30,7 @@ You should now find the plugin under the sub-menu ''Plugins > Segmentation''.
 '''Note''': Marker-controlled Watershed is only one of the plugins included in the IJPB-plugins suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
 == References ==
-# Meyer, Fernand, and Serge Beucher. "Morphological segmentation." Journal of visual communication and image representation 1.1 (1990): 21-46.
+# Fernand Meyer and Serge Beucher. "Morphological segmentation." Journal of visual communication and image representation 1.1 (1990): 21-46.
 # Soille, P., "Morphological Image Analysis: Principles and Applications", Springer-Verlag, 1999, pp. 170-171.
 
 == License ==
