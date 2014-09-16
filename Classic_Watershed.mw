@@ -1,0 +1,47 @@
+{{Infobox
+| name                   = Classic Watershed
+| software               = ImageJ/Fiji
+| author                  = [[User:Iarganda | Ignacio Arganda-Carreras]], David Legland
+| maintainer             = [[User:Iarganda | Ignacio Arganda-Carreras]]
+| source                 = {{GitHub|org=ijpb|repo=ijpb-plugins}}
+| released               = July 3<sup>rd</sup>, 2014
+| latest version         = September 15<sup>th</sup>, 2014 (ijpb-plugins 1.0.4)
+| status                 = stable, active
+| category               = [[:Category:Segmentation|Segmentation]]
+}}
+
+== Introduction ==
+Classic Watershed is an ImageJ/Fiji plugin to perform watershed on a grayscale 2D/3D image using flooding simulations, as described by Pierre Soille and Luc M. Vincent (1990).
+
+== Usage == 
+
+
+== Installation ==
+
+The Classic Watershed plugin is part of the IJPB-plugins library. To install it, you just need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | add]] the IJPB-plugins update site:
+
+1) Select ''Help > Update...'' from the Fiji menu to start the updater.
+
+2) Click on ''Manage update sites''. This brings up a dialog where you can activate additional update sites.
+
+3) Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.
+
+4) Click ''Apply changes'' and restart Fiji.
+
+You should now find the plugin under the sub-menu ''Plugins > Segmentation''.
+
+'''Note''': Classic Watershed is only one of the plugins included in the IJPB-plugins suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
+
+== References ==
+# Pierre Soille and Luc M. Vincent. "Determining watersheds in digital pictures via flooding simulations." Lausanne-DL tentative. International Society for Optics and Photonics, 1990.
+== See also ==
+* [[Marker-controlled Watershed]]
+* [[Morphological Segmentation]]
+
+== License ==
+This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. 
+
+[[Category:Plugins]]
+[[Category:Segmentation]]
