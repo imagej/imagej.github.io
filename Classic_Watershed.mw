@@ -38,7 +38,7 @@ Morphological parameters:
 * '''Max h''': maximum grayscale value to reach with flooding (by default, set to the maximum value of the image type).
 
 Output:
-* Labeled image containing the resulting catchment basins (with integer values 1, 2, 3...) and watershed lines (with 0 value).
+* '''Labeled image''' containing the resulting catchment basins (with integer values 1, 2, 3...) and watershed lines (with 0 value).
 
 == Installation ==
 
