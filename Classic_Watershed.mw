@@ -8,7 +8,9 @@
 | latest version         = September 15<sup>th</sup>, 2014 (ijpb-plugins 1.0.4)
 | status                 = stable, active
 | category               = [[:Category:Segmentation|Segmentation]]
-}}
+}}{|
+|style="vertical-align:top" |[[Image:Classic-Watershed-lines-blur-blobs.png|thumb|300px|Overlay of watershed lines on blurred blobs.]]
+|}
 
 == Introduction ==
 Classic Watershed is an ImageJ/Fiji plugin to perform watershed on a grayscale 2D/3D image using flooding simulations, as described by Pierre Soille and Luc M. Vincent (1990).
