@@ -27,6 +27,7 @@ The Classic Watershed plugin runs on any '''grayscale image (8, 16 and 32-bit) i
 
 At least one image needs to be open in order to run the plugin. 
 
+[[Image:Classic-Watershed-dialog.png|thumb|Main dialog of the Classic Watershed plugin]]
 Image parameters:
 * '''Input''' image: grayscale image to flood, usually the gradient of an image.
 * '''Mask''' image (optional): binary image of the same dimensions as the input image which can be used to restrict the areas of application of the algorithm. Set to "None" to run the method on the whole input image.
