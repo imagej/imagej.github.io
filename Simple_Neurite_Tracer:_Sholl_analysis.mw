@@ -34,10 +34,11 @@ This graph shows exactly how many times a sphere of a particular radius will int
 
 
 = Data Normalization =
-If you need to [[Sholl_Analysis#Normalizer|normalize]] the number of intersections by the volume (or area) enclosed by the sphere (or circle) - you can do that by selecting the ''Normalize for volume enclosed by circle'' option:
 {{Tip
 | tip = The goal of [[Simple Neurite Tracer|SNT]] is to expedite the retrieval of sampled data, not retrieval of derived metrics. For extensive retrieval of [[Sholl_ Analysis#Metrics|Sholl-based metrics]], you should consider normalizing your profiles using [[Sholl_ Analysis#Importing|Sholl Analysis]].
 }}
+If you need to [[Sholl_Analysis#Normalizer|normalize]] the number of intersections by the volume (or area) enclosed by the sphere (or circle) - you can do that by selecting the ''Normalize for volume enclosed by circle'' option:
+
 [[Image:Simple Neurite Tracer- Sholl analysis-8.jpg|750px]]
 
 The ''Use standard axes'' / ''Use semi-log axes'' / ''Use log-log axes'' controls whether the analysis is based on the log of normalized intersections and distance (''log-log''), the log of normalized intersections (''semi-log'') or unmodified values (linear axes).
