@@ -144,7 +144,9 @@ You should now find the plugin under the sub-menu ''Plugins > Segmentation''.
 == References ==
 # Meyer, Fernand, and Serge Beucher. "Morphological segmentation." Journal of visual communication and image representation 1.1 (1990): 21-46.
 # Soille, P., "Morphological Image Analysis: Principles and Applications", Springer-Verlag, 1999, pp. 170-171.
-
+== See also ==
+* [[Marker-controlled Watershed]], a plugin to perform watershed by flooding from specific seed points or markers.
+* [[Classic Watershed]], plugin implementing the original watershed algorithm to segment 2D/3D grayscale images.
 
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
