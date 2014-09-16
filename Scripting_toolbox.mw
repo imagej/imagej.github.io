@@ -5,7 +5,7 @@
 * Language-specific scripting pages in the right-hand menu.
 * [[Scripting comparisons]] to compare and contrast the languages.
 * [[BAR|Broadly Applicable Routines]], a curated collection of snippets.
-* Albert Cardona's comprehensive [http://www.ini.uzh.ch/~acardona/fiji-tutorial/ Fiji Jython tutorial].
+* Albert Cardona's comprehensive [http://www.ini.uzh.ch/~acardona/fiji-tutorial/ Fiji Jython tutorial] (please note that it is better idea to contribute tutorials to the ImageJ/Fiji wiki directly).
 }}
 '''Note:''' To copy the snippets, just double-click somewhere into the code. If Javascript is enabled, this will automatically select the complete snippet.
 
