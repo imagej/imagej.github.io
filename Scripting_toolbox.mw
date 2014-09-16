@@ -353,6 +353,74 @@ outputStream.flush();
 outputStream.close();
 </source>
 
+=== Writing out movie files with JavaCV ===
 
+[https://github.com/bytedeco/javacv JavaCV] is a Java wrapper around OpenCV and FFMPEG. You will have to unpack the libraries into <tt>ImageJ.app/lib/<platform>/</tt> (or <tt>Fiji.app/lib/<platform>/</tt>) to let JavaCV find the native libraries (e.g. unpack ffmpeg-macosx-x86_64.jar's <tt>.dylib</tt> files directly into <tt>ImageJ.app/lib/macosx/</tt>) '''before''' starting ImageJ/Fiji.
+
+==== Beanshell ====
+
+<source lang="java">
+/*
+ * A simple example how to write out a movie from a possibly virtual
+ * image stack using JavaCV.
+ * 
+ * Licensed under CC-BY-SA 4.0 
+ * by Johannes Schindelin on September 16th, 2014
+ */
+
+path = "/tmp/change-this-name.flv";
+frameRate = 25.0;
+videoBitrate = 400 * 1000;
+
+// if you have not installed JavaCV into your jars/ directory:
+import java.io.File;
+binDir = new File(System.getProperty("user.home")
+	+ "/Downloads/javacv-bin/");
+if (binDir.isDirectory()) {
+	jars = binDir.list();
+	for (String jar : jars) {
+		if (jar.endsWith(".jar")) {
+			addClassPath(new File(binDir, jar).getPath());
+		}
+	}
+}
+
+// use JavaCV to write out the currently active 3D image
+import ij.IJ;
+import org.bytedeco.javacv.FFmpegFrameRecorder;
+import org.bytedeco.javacpp.opencv_core.IplImage;
+
+void saveImageAsMovie(image, path, frameRate, videoBitrate) {
+	if (image == null) {
+		IJ.error("No active image!");
+		return;
+	}
+
+	width = image.getWidth();
+	height = image.getHeight();
+	stack = image.getStack();
+
+	recorder = FFmpegFrameRecorder.createDefault(path,
+		(int) width, (int) height);
+	recorder.setFormat("flv");
+	recorder.setFrameRate(frameRate);
+	recorder.setVideoBitrate(videoBitrate);
+	recorder.start();
+
+	for (slice = 1; slice <= stack.getSize(); slice++) {
+		ip = stack.getProcessor(slice);
+		recorder.record(IplImage.createFrom(ip.getBufferedImage()));
+	}
+
+	recorder.stop();
+	recorder.release();
+}
+
+try {
+	saveImageAsMovie(IJ.getImage(), path, frameRate, videoBitrate);
+} catch (Throwable t) {
+	IJ.handleException(t);
+}
+</source>
 
 [[Category:Scripting]]
