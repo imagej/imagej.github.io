@@ -13,8 +13,14 @@
 |}
 
 == Introduction ==
-[[Image:Watershed-flooding-graph.png|thumb|250px|right|Schematic overview of watershed flooding in 1D]]Classic Watershed is an ImageJ/Fiji plugin to perform watershed on a grayscale 2D/3D image using flooding simulations, as described by Pierre Soille and Luc M. Vincent (1990).
+[[Image:Watershed-flooding-graph.png|thumb|250px|right|Schematic overview of watershed flooding in 1D]]Classic Watershed is an ImageJ/Fiji plugin to perform watershed segmentation of grayscale 2D/3D images using flooding simulations as described by Pierre Soille and Luc M. Vincent (1990).
+
+
 The basic idea consists of considering the input image as topographic surface and placing a water source in each regional minimum of its relief. Next the entire relief is flooded from the sources and dams are placed where the different water sources meet.
+
+All points in the surface at a given minimum constitute the '''catchment basin''' associated with that minimum. The '''watersheds''' are the zones dividing adjacent catchment basins.
+
+The first image points that are reached by water are the points at the lowest grayscale value <math>h_{min}</math>, then all image pixels are progressively reached up to the highest level <math>h_{max}</math>.
 
 == Usage == 
 
