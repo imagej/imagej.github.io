@@ -23,7 +23,7 @@ All points in the surface at a given minimum constitute the '''catchment basin''
 The first image points that are reached by water are the points at the lowest grayscale value <math>h_{min}</math>, then all image pixels are progressively reached up to the highest level <math>h_{max}</math>.
 
 == Usage ==
-The Classic Watershed plugin runs on any grayscale image (8, 16 and 32-bit) in 2D and 3D.
+The Classic Watershed plugin runs on any '''grayscale image (8, 16 and 32-bit) in 2D and 3D'''.
 
 == Installation ==
 
