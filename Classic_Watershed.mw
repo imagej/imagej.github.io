@@ -37,6 +37,9 @@ Morphological parameters:
 * '''Min h''': minimum grayscale value to start flooding from (by default, set to the minimum value of the image type).
 * '''Max h''': maximum grayscale value to reach with flooding (by default, set to the maximum value of the image type).
 
+Output:
+* Labeled image containing the resulting catchment basins (with integer values 1, 2, 3...) and watershed lines (with 0 value).
+
 == Installation ==
 
 The Classic Watershed plugin is part of the IJPB-plugins library. To install it, you just need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | add]] the IJPB-plugins update site:
