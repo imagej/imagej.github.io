@@ -58,10 +58,14 @@ If instead you'd like to export those summary results to a file that can be open
 
 [[Image:Simple Neurite Tracer- Sholl analysis-10.jpg|750px]]
 
+{{Tip
+| tip = The [[Sholl Analysis]] plugin [[Sholl_Analysis#Dratio|automatically calculates]] the normalization method that is the most informative. It also provides a [[Sholl_Analysis#Metrics|more detailed summary table]]. To [[Sholl_ Analysis#Importing|import]] SNT profiles into the plugin, simply choose ''Use standard axes'', then ''Export detailed results as CSV''. To load the file, press {{key press|Alt}} while choosing <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span> Note that these steps can also be [[Sholl_Analysis#Batch_Analysis_of_Previously_Obtained_Profiles|automated]].
+}}
 If you want to export the graph, so that you can edit in some other software or include it in a presentation, you can select ''Export graph as SVG'' in the graph window.  You can then load the SVG file in inkscape, for example:
 
 [[Image:Simple Neurite Tracer- Sholl analysis-11.jpg|750px]]
 
+= Sholl Image =
 Another option that might be useful is ''Make Sholl image'', equivalent to the [[Sholl#Output_Options|Intersections mask]] created by the [[Sholl Analysis]] plugin.  This will produce a stack which shows the number of intersections at each distance from the centre point on a colour scale.  You can see the exact number of intersections corresponding to a colour by mousing over that region and looking in the status bar.  For example, this shows you that the orange colour corresponds to 2 intersections ("value=2"):
 
 [[Image:Simple Neurite Tracer- Sholl analysis-12.jpg|750px]]
