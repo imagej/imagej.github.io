@@ -23,7 +23,18 @@ All points in the surface at a given minimum constitute the '''catchment basin''
 The first image points that are reached by water are the points at the lowest grayscale value <math>h_{min}</math>, then all image pixels are progressively reached up to the highest level <math>h_{max}</math>.
 
 == Usage ==
-The Classic Watershed plugin runs on any '''grayscale image (8, 16 and 32-bit) in 2D and 3D'''.
+The Classic Watershed plugin runs on any '''grayscale image (8, 16 and 32-bit) in 2D and 3D'''. 
+
+At least one image needs to be open in order to run the plugin. 
+
+Image parameters:
+* '''Input''' image: grayscale image to flood, usually the gradient of an image.
+* '''Mask''' image (optional): binary image of the same dimensions as the input image which can be used to restrict the areas of application of the algorithm. Set to "None" to run the method on the whole input image.
+
+Morphological parameters:
+* '''Use diagonal connectivity''': select to allow the flooding in diagonal directions (8-connectivity in 2D and 26-connectivity in 3D).
+* '''Min h''': minimum grayscale value to start flooding from.
+* '''Max h''': maximum grayscale value to reach with flooding.
 
 == Installation ==
 
