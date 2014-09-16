@@ -34,8 +34,8 @@ Image parameters:
 
 Morphological parameters:
 * '''Use diagonal connectivity''': select to allow the flooding in diagonal directions (8-connectivity in 2D and 26-connectivity in 3D).
-* '''Min h''': minimum grayscale value to start flooding from.
-* '''Max h''': maximum grayscale value to reach with flooding.
+* '''Min h''': minimum grayscale value to start flooding from (by default, set to the minimum value of the image type).
+* '''Max h''': maximum grayscale value to reach with flooding (by default, set to the maximum value of the image type).
 
 == Installation ==
 
