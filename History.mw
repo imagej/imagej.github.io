@@ -71,6 +71,7 @@ PlotData =
 
   barset:related
   at:2002 text:"[[VisBio]]" # 27-Aug-2002
+  at:2004 text:"[[KNIME]]" # Jan-2004
   at:2006 text:"[[Bio-Formats]]" # 10-Jan-2006
   at:2006 text:"[[BioImageXD]]" # Feb-2006
   at:2006 text:"[[CellProfiler]]"
