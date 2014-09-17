@@ -1,0 +1,7 @@
+Tiago Ferreira is the maintainer of:
+* [[Sholl Analysis]] plugin ({{GitHub|org=tferr|repo=ASA|label=GitHub}})
+* [[BAR]] update site ({{GitHub|org=tferr|repo=Scripts|label=GitHub}}), including among others:
+** [[Find Peaks]]
+** [http://imagej.nih.gov/ij/plugins/roi-manager-tools/ ROI Manager Tools] 
+** [[Strahler Analysis]]
+* [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] ({{GitHub|org=tferr|repo=IJ-guide|label=GitHub}})
