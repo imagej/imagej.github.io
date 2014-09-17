@@ -44,7 +44,7 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
 :{{GitHub|org=tferr|repo=Scripts|path=Segmentation/README.md#threshold-from-background|label=Threshold From Background}}
 :{{GitHub|org=tferr|repo=Scripts|path=Segmentation/README.md#wipe-background|label=Wipe Background}}
 
-;{{GitHub|org=tferr|repo=Scripts|path=README.md#snippets|label=Snippets}}<span id="Snippets"></span>
+;{{GitHub|org=tferr|repo=Scripts|path=README.md#snippets|label=Snippets}}<span id="SnippetsList"></span>
 :This submenu lists [[#Snippets|generic and reusable]] scripts to be recycled at will in personalized workflows. Any script or macro file stored in the Snippets folder with an underscore "_" in the filename will be listed here. 
 
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#tools-and-toolsets|label=Tools and Toolsets}}<span id="Tools"></span>
@@ -196,13 +196,13 @@ function expectedImage(filename) {
 :The motivation behind bar is quite simple: To collect snippets of code that can be incorporated into any workflow. So rather than performing fully fledged procedures, BARs tend to produce single tasks. The advantages are two-fold: 1) Scripts are easier to understand and maintain and 2) they can be used to complement any other ImageJ add-on, let it be the simplest macro or the most sophisticated plugin.
 
 ;Will I find BAR useful?
-:{{GitHub|org=tferr|repo=Scripts#citations|label=Probably}}. But it is likely that you will need to delve a bit into the [[#Scripting_BARs|BAR philosophy]].
+:{{GitHub|org=tferr|repo=Scripts|path=README.md#citations|label=Probably}}. But it is likely that you will need to delve a bit into the [[#Scripting_BARs|BAR philosophy]].
 
 ;Can I contribute to BAR?
-: Yes, please do! If you have some suggestions on how to improve it, do {{GitHub|org=tferr|repo=Scripts#help|label=let us know}}.
+: Yes, please do! If you have some suggestions on how to improve it, do {{GitHub|org=tferr|repo=Scripts|path=README.md#help|label=let us know}}.
 
 ;Nothing happens when I run a BAR. What's going on?
-:In a case of premature termination BARs tend to exit rather silently. The best way to have insights on an unexpected error is to run it directly from the [[Script Editor]]: Open the script by holding {{key press|Shift}} while selecting it from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu, press ''Run''  and have a look at the editors' s console, where all sort of useful messages will be printed to. Do {{GitHub|org=tferr|repo=Scripts#help|label=let us know}} if you have found a bug.
+:In a case of premature termination BARs tend to exit rather silently. The best way to have insights on an unexpected error is to run it directly from the [[Script Editor]]: Open the script by holding {{key press|Shift}} while selecting it from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu, press ''Run''  and have a look at the editors' s console, where all sort of useful messages will be printed to. Do {{GitHub|org=tferr|repo=Scripts|path=README.md#help|label=let us know}} if you have found a bug.
 
 ;How do I uninstall BAR?
 :If you are using Fiji: run the [[Fiji Updater|Updater]]. Choose ''Advance Mode'' then ''Manage update sites''. Deactivate the ''BAR'' checkbox in the alphabetically-sorted list of update sites. Press ''OK'', then ''Apply changes''. All BAR files will be deleted. Note that you can install and uninstall BAR as you see fit. See [[How to follow a 3rd party update site]] for more details.
