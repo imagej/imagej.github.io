@@ -65,6 +65,12 @@ run("Classic Watershed", "input=blobs-blur mask=None use min=0 max=150");
 run("3-3-2 RGB");
 </source>
 
+<gallery widths=200px heights=200 mode="nolines">
+Image:Blobs-blur.png|Gaussian-blurred blobs image used as input (radius = 3).
+Image:Blobs-watershed-no-preprocessing.png|Watershed segmentation on original image (Min h = 0, Max h = 150)
+Image:Blobs-blur-watershed.png|Watershed segmentation on Gaussian-blurred original image (radius = 3, Min h = 0, Max h = 150)
+</gallery>
+
 == Installation ==
 
 The Classic Watershed plugin is part of the IJPB-plugins library. To install it, you just need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | add]] the IJPB-plugins update site:
