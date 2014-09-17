@@ -39,6 +39,8 @@ Morphological parameters:
 
 Output:
 * '''Labeled image''' containing the resulting catchment basins (with integer values 1, 2, 3...) and watershed lines (with 0 value).
+== Over-segmentation ==
+Normally, Classic Watershed will lead to an over-segmentation of the input image, especially for noisy images. In that case, it is recommended to either pre-process the image before running the plugin, or merge regions based on a similarity criterion afterwards. Several denoising methods are available in Fiji/ImageJ, namely: median filtering, Gaussian blur, bilateral filtering, etc.
 
 == Installation ==
 
