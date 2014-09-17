@@ -17,6 +17,8 @@ Macros can be used to
 * add tools to the toolbar
 * add keyboard shortcuts
 
+{{Notice|message = Please be aware that there are several other available [[scripting]] languages that are more powerful than macros, too! See the sidebar on the right.}}
+
 = Variables =
 
 The most important concept when starting to program macros are ''variables''. A variable is a placeholder for a changing entity. It has a ''name'' and a ''value'', which can be ''numeric'' or ''text'' (so-called ''strings'').
