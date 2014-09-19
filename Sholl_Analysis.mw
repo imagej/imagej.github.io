@@ -55,31 +55,17 @@ Input values take into account the scale information of the image that can be se
 * <span id="StartRadius"></span>'''Starting radius''' <sup>&nbsp;</sup>The radius of the smallest sampling circle/sphere, i.e., the first distance to be sampled.
 
 * <span id="EndRadius"></span>'''Ending radius''' <sup>&nbsp;</sup>The radius of the largest sampling circle/sphere. Note that this distance may not be actually sampled, if ''Radius step size'' is not a divisor of ''Ending radius''-''Starting radius''.
-<div style="float:center;
-            border: 1px solid #ccc;
-            padding: 5px !important;
-            text-align:center;
-            margin-top: 1em;
-            margin-bottom: 1em;
-            background-color: #ffefbe;
-            {{border-radius|.75em}}{{box-shadow}}">
-'''Tip:''' You can clear ''Ending radius'' or set it to ''NaN'' ("Not a Number") to sample the entire image. This is particularly useful when running the plugin from a [[#Batch_Processing|macro]] that processes images with different dimensions.</div>
-
+{{Tip
+| tip = You can clear ''Ending radius'' or set it to ''NaN'' ("Not a Number") to sample the entire image. This is particularly useful when running the plugin from a [[#Batch_Processing|macro]] that processes images with different dimensions.
+}}
 * <span id="StepSize"></span>'''Radius step size''' <sup>&nbsp;</sup>The sampling interval between radii of consecutive sampling circles/spheres. This value may be set to zero for continuous (1-voxel increment) measurements.
 :For stacks with anisotropic voxel size, setting ''Radius step size'' to zero, sets the step length to the dimension of the matching isotropic voxel, i.e., the cube root of the product of the voxel dimensions (3D images) or the square root of the product of the pixel dimensions (2D images).
 
 * '''Restrict analysis to hemicircle/hemisphere''' <sup>&nbsp;</sup>This option is only available when an orthogonal radius has been created (by holding {{key|Shift}} while using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>). It can be used to limit the analysis to sub-compartments of the arbor (e.g., apical vs basal dendrites, in the case of pyramidal neurons, as in illustration [[#Introduction|above]]).
 :For horizontal lines, this option instructs the algorithm to measure intersections at sites equidistant from the center that have y-coordinates above/below the drawn line. For vertical lines, it instructs the plugin to measure intersections at sites equidistant from the center that have x-coordinates to the left/right of the drawn line.
-<div style="float:center;
-            border: 1px solid #ccc;
-            padding: 5px !important;
-            text-align:center;
-            margin-top: 1em;
-            margin-bottom: 2em;
-            background-color: #ffefbe;
-            {{border-radius|.75em}}{{box-shadow}}">
-'''Tip:''' In the dialog prompts of ''Sholl Analysis'', bold headings are clickable URLs pointing to the respective sections of this manual. In addition, relevant tooltips are displayed in the ImageJ status bar when specifying key options.</div>
-
+{{Tip
+| tip = In the dialog prompts of ''Sholl Analysis'', bold headings are clickable URLs pointing to the respective sections of this manual. In addition, relevant tooltips are displayed in the ImageJ status bar when specifying key options.
+}}
 ==== Multiple Samples and Noise Reduction ====
 [[ File:BitmapSholl-Prompt_v3.png|320px|right |Main prompt (version 3.4.1)]]
 * '''Samples per radius ''(2D images only)''''' <sup>&nbsp;</sup>Defines the number of measurements to be performed at each sampling circumference. These measurements are then combined into a single value according to the chosen [[#SamplesIntegration|integration method]]. This strategy, a break from previous approaches, increases the accuracy of non-continuos profiles by diluting out the effect of processes extending tangent to the sampling circumference.
@@ -99,17 +85,9 @@ Input values take into account the scale information of the image that can be se
 
 * '''Fit profile and compute descriptors''' <sup>&nbsp;</sup>If checked, data is fitted according to the chosen [[#Choice_of_Methods|method]] and appropriate [[#Metrics|metrics]] calculated automatically. If unchecked, only sampled data is plotted.
 ** '''Show fitting details''' <sup>&nbsp;</sup>Choose this option to have all of the parameters of the simplex fitting printed to the Log window. The [http://en.wikipedia.org/wiki/Coefficient_of_determination coefficient of determination] (''R<sup>2</sup>'', a measure of goodness of fit) is always stored in the ''Sholl Results'' table even when this option is not selected.
-
-<div style="float:center;
-            border: 1px solid #ccc;
-            padding: 5px !important;
-            text-align:center;
-            margin-top: 1em;
-            margin-bottom: 2em;
-            background-color: #ffefbe;
-            {{border-radius|.75em}}{{box-shadow}}">
-'''Tip:''' [[#Complementary_Tools|Complementary Tools]] describes how to extend curve fitting beyond default options.</div>
-
+{{Tip
+| tip = [[#Complementary_Tools|Complementary Tools]] describes how to extend curve fitting beyond default options.
+}}
 ==== Choice of Methods ====
 <span id="Sholl_Methods"></span>The [[#MethodsTable|type of profile(s)]] to be obtained. ''Linear'' (profile without normalization), or normalized profiles: ''Linear-norm'', ''Semi-log'', or ''Log-log''.
 * '''Polynomial''' <sup>&nbsp;</sup> Specifies the degree of the [[#MethodsTable|polynomial]] to be fitted to the ''Linear'' profile<ref name="Stulic"></ref>. While the polynomial of best approximation, or "best fit", should be empirically determined for each analyzed cell type, it is possible to ask the plugin to predict the order of the fitting polynomial (or at least try) using the choice ''Best fitting degree''. In this case, the plugin will loop through all the available choices of polynomials, perform each fit in the background and choose the one with the highest coefficient of determination.
@@ -135,17 +113,9 @@ Press ''Cf. Segmentation'' to visually confirm which phase of the segmented imag
 |'''Top row:''' Image properly segmented: Arbor is sampled. '''Bottom row:'''  Aberrant segmentation (inverted image): Background is sampled.<br>
 Note the reversal of ''[[#Cf._Segmentation|Cf. Segmentation]] output'' and how the ''[[#Output_Options|intersections mask]]'' no longer decorates the axonal processes but the interstitial spaces between them. The consequences of the phase inversion are twofold:  1) the program oversamples (cf. hue ramps on upper left of ''Intersections mask'') and 2) the program detects artifacts induced by the edges of the image (cf. top-right and bottom-right corners of mask where intersections are sampled in the absence of real axons at those locations). Also, note that the initial black and white image would ''look the same'' under an inverted lookup table  (<span style="border-bottom:1px dotted #ccc;">Image▷ Lookup Tables▷ Invert LUT</span>).
 |}
-
-<div id="Binary_Artifacts" style="float:center;
-            border: 1px solid #ccc;
-            padding: 5px !important;
-            text-align:center;
-            margin-top: 1em;
-            margin-bottom: 2em;
-            background-color: #ffefbe;
-            {{border-radius|.75em}}{{box-shadow}}">
-'''N.B.:''' With binary images, ''Sholl Analysis'' treats  zero intensities as the background, independently of the image lookup table or the state of the ''Black background option'' in <span style="border-bottom:1px dotted #ccc;">Process▷ Binary▷ Options...</span> As with any other [http://imagej.net/docs/guide/146-29.html#infobox:blackBackground ImageJ routine], confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.</div>
-
+{{Tip
+| tip = With binary images, ''Sholl Analysis'' treats  zero intensities as the background, independently of the image lookup table or the state of the ''Black background option'' in <span style="border-bottom:1px dotted #ccc;">Process▷ Binary▷ Options...</span> As with any other [http://imagej.net/docs/guide/146-29.html#infobox:blackBackground ImageJ routine], confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.
+}}
 == Sholl Plots ==
 <center>
 <span id="ShollPlots"></span>[[File:ShollPlots.png|center|]]
@@ -227,17 +197,9 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 ;<span id="MaxInters"></span>Highest count of intersections (''Max inters.'')
 :The maximum value of sampled intersections, i.e., the maximum in a linear [''N'' vs ''Distance''] profile, reflecting the highest number of processes/branches in the arbor.
 : See also [[#CriticalValue|Critical value]]
-
-<div id="LocalMaxima" style="float:center;
-            border: 1px solid #ccc;
-            padding: 5px !important;
-            text-align:center;
-            margin-top: 1em;
-            margin-bottom: 2em;
-            background-color: #ffefbe;
-            {{border-radius|.75em}}{{box-shadow}}">
-'''''Max inters.:''''' By default only the absolute maximum is noted. However, it is possible to apply peak detection techniques to the profile to retrieve other sites of high density branching. See [[#Complementary_Tools|Complementary Tools]] for more details.</div>
-
+{{Tip
+| tip = '''''Max inters.''''': By default only the absolute maximum is noted. However, it is possible to apply peak detection techniques to the profile to retrieve other sites of high density branching. See [[#Complementary_Tools|Complementary Tools]] for more details.
+}}
 ;<span id="MaxIntersRadius"></span>Radius of highest count of intersections (''Max inters. radius'')
 :The distance at which the ''Highest count of intersections'' occurred, reflecting sites of highest branch density. Note that if the same maximum occurs multiple times, only the first distance is considered.
 : See also [[#CriticalRadius|Critical radius]]
@@ -275,17 +237,10 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 ;<span id="CriticalRadius"></span>Critical radius
 :The distance at which ''Critical value'' occurs. Calculated with a precision of 1/1000 of ''Radius step size''. Sometimes abbreviated as ''r<sub>c</sub>''.
 : See also [[#MaxIntersRadius|Max inters. radius]]
-
-<div id="Nomenclature" style="float:center;
-            border: 1px solid #ccc;
-            padding: 5px !important;
-            text-align:center;
-            margin-top: 1em;
-            margin-bottom: 2em;
-            background-color: #ffefbe;
-            {{border-radius|.75em}}{{box-shadow}}">
-'''Nomenclature:''' [[#References|Previous authors]] have used different terms to describe the largest value taken by the Sholl profile. Since the Sholl technique is not restricted to dendritic arbors and can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels (cf. [[#Citations|List of citations]]), ''Sholl Analysis'' introduces the term [[#CriticalRadius|Critical radius]], renaming ''Dendrite maximum'' (''N<sub>m</sub>'') to [[#CriticalValue|Critical value]]. Thus, ''Sholl Analysis'' may not follow the conventions adopted by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].</div>
-
+{{Tip
+| id = Nomenclature
+| tip = '''Nomenclature''': [[#References|Previous authors]] have used different terms to describe the largest value taken by the Sholl profile. Since the Sholl technique is not restricted to dendritic arbors and can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels (cf. [[#Citations|List of citations]]), ''Sholl Analysis'' introduces the term [[#CriticalRadius|Critical radius]], renaming ''Dendrite maximum'' (''N<sub>m</sub>'') to [[#CriticalValue|Critical value]]. Thus, ''Sholl Analysis'' may not follow the conventions adopted by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].
+}}
 ;<span id="MeanValueOfFunction"></span>Mean value
 :The mean value<ref name="Stulic"></ref> of the fitted polynomial function [[#eq1|(1)]], representing the average of intersections over the whole area occupied by the arbor. Sometimes abbreviated as MV or Nav.
 :On the Sholl plot, it is [[#ShollPlots|highlighted]] as the height of the rectangle that has the width of ''Enclosing radius'' − ''First intersecting radius'' and the same area of the area under the fitted curve on that discrete interval. It is analogous to [[#MeanInters|Mean inters.]], the arithmetic mean of sampled intersections throughout the arbor (cf. [[#Metrics_based_on_sampled_data|Metrics based on sampled data]]).
@@ -324,16 +279,9 @@ This option is triggered by holding {{key press|Alt}} while running  <span style
 Notes:
 *For ''Annulus/Spherical shell'' [[#Normalizer|normalization]], [[#StepSize|Radius step size]] is calculated from the difference between the first two rows in ''Distance column''.
 *Use ''Import Other Data'' to analyze a different dataset.
-
-<div style="float:center;
-            border: 1px solid #ccc;
-            padding: 5px !important;
-            text-align:center;
-            margin-top: 1em;
-            margin-bottom: 1em;
-            background-color: #ffefbe;
-            {{border-radius|.75em}}{{box-shadow}}">
-'''Tip:''' You can shuttle between the ''[[#Multiple Samples and Noise Reduction|Bitmap]]'' and ''[[#Importing|Tabular]]'' prompts by {{key press|Alt}}-clicking their Cancel button. The shortcut is easy to remember: {{key press|Alt}} is always the trigger that changes the type of data to be analyzed.</div>
+{{Tip
+| tip = You can shuttle between the ''[[#Multiple Samples and Noise Reduction|Bitmap]]'' and ''[[#Importing|Tabular]]'' prompts by {{key press|Alt}}-clicking their Cancel button. The shortcut is easy to remember: {{key press|Alt}} is always the trigger that changes the type of data to be analyzed.
+}}
 == Complementary Tools ==
 <span id="Extended_Fitting"></span>[[ File:AnimatedPolyFit.gif|frame|Sampled data from the ddaC cell (<span style="border-bottom:1px dotted #ccc;">File▷ Open Samples▷ ddaC Neuron</span>) being fitted to polynomials of varying degree using a complementary [[BAR]] script.]]
 
@@ -387,21 +335,15 @@ This section discusses some aspects that should be taken into account when segme
 Any macro or script must allow the Sholl Analysis plugin to access the ROI marking the center of analysis. One could instruct ImageJ to read the coordinates of pre-existing ROIs from a text file, store a list of line selections in the ROI Manager, or write a morphology-based routine that detects the center of the arbor. However, marking the center of analysis is probably something that you will want to do manually. Here is a workflow:
 
 #Place all the .tif images to be processed in a single folder.
-#Select the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> in the main ImageJ window and press {{key press|Shift|T}} to activate the Threshold widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span>). Make sure ''Set stack positions'' is active in the <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Overlay Options...</span> prompt. Open the first image.
+#Select the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> in the main ImageJ window. Make sure ''Set stack positions'' is active in the <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Overlay Options...</span> prompt.
+#Open the first image and press {{key press|Shift|T}} to activate the Threshold widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span>).
 #Adjust threshold levels. Press the ''Apply'' button of the Threshold widget to create a binary image.
 #Select the z-slice containing the center of analysis. Click over the center with the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> and press {{key press|B}} (shortcut for <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Add Selection...</span>). This will add the point ROI to the image overlay. Save the image as .TIFF by pressing {{key press|S}} (<span style="border-bottom:1px dotted #ccc;">File▷ Save As...▷ Tiff...</span>).
 #Repeat the last 2 steps until all images are marked, using {{key press|Shift|O}} (shortcut for <span style="border-bottom:1px dotted #ccc;">File▷ Open Next</span>) to iterate through all the images.
-
-<div style="float:center;
-            border: 1px solid #ccc;
-            padding: 5px !important;
-            text-align:center;
-            margin-top: 1em;
-            margin-bottom: 2em;
-            background-color: #ffefbe;
-            {{border-radius|.75em}}{{box-shadow}}">
-'''File formats:''' When working with ROIs, it is critical that you work with .tif files because only this format keeps track of image overlays. The <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Convert...</span> command allows bulk conversion between image formats.</div>
-
+{{Tip
+| id = FileFormats
+| tip = When working with ROIs, it is critical that you work with .tif files because only this format keeps track of image overlays. The <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Convert...</span> command allows bulk conversion between image formats.
+}}
 Now that all the images are marked, we just need to ask ImageJ to generate some lines of code. We will open the Macro Recorder (<span style="border-bottom:1px dotted #ccc;">Plugins▷ Macros▷ Record...</span>) and run ''Sholl Analysis'' on one of the images to find out how to call the plugin with suitable parameters. In this example, we will use the ImageJ macro language. The single line of code that appears in the recorder window will look something like this:
 <source lang="java">
 // Recording Sholl Analysis version 3.4.2
