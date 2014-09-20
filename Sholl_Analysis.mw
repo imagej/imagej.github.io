@@ -30,7 +30,7 @@
 Automated bitmap Sholl for direct analysis of fluorescent images of neuronal arbors, featuring powerful quantifications  based on curve fitting. Analysis of previously traced arbors is also possible.
 
 == Introduction ==
-[[ File:BitmapSholl-CA1mask.png|frame|[[Skeletonize3D|Skeletonized]] Mouse hippocampal CA1 cell <ref name="Gross"></ref> in which apical and basal dendrites have been analyzed separately and color coded according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''rc'') and [[#MeanValueOfFunction|Mean value]] (''Nav'') are indicated.]]
+[[ File:BitmapSholl-CA1mask.png|frame|[[Skeletonize3D|Skeletonized]] mouse hippocampal CA1 cell <ref name="Gross"></ref> in which apical and basal dendrites have been analyzed [[#Restrict|separately]] and [[#Output_Options|color coded]] according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''r<sub>c</sub>'') and [[#MeanValueOfFunction|Mean value]] (''N<sub>av</sub>'') are indicated.]]
 
 The Sholl technique<ref name="Sholl"></ref> is used to describe neuronal arbors. This plugin performs  Sholl directly on 2D and 3D grayscale images of isolated neurons. Its internal algorithm to collect data is based upon how Sholl analysis is done by hand — it creates a series of concentric ''shells'' (circles or spheres) around the focus of a neuronal arbor, and counts how many times the arbor intersects the sampling shells.
 The major advantages of this plugin over other implementations are:
@@ -61,7 +61,7 @@ Input values take into account the scale information of the image that can be se
 * <span id="StepSize"></span>'''Radius step size''' <sup>&nbsp;</sup>The sampling interval between radii of consecutive sampling circles/spheres. This value may be set to zero for continuous (1-voxel increment) measurements.
 :For stacks with anisotropic voxel size, setting ''Radius step size'' to zero, sets the step length to the dimension of the matching isotropic voxel, i.e., the cube root of the product of the voxel dimensions (3D images) or the square root of the product of the pixel dimensions (2D images).
 
-* '''Restrict analysis to hemicircle/hemisphere''' <sup>&nbsp;</sup>This option is only available when an orthogonal radius has been created (by holding {{key|Shift}} while using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>). It can be used to limit the analysis to sub-compartments of the arbor (e.g., apical vs basal dendrites, in the case of pyramidal neurons, as in illustration [[#Introduction|above]]).
+* <span id="Restrict"></span>'''Restrict analysis to hemicircle/hemisphere''' <sup>&nbsp;</sup>This option is only available when an orthogonal radius has been created (by holding {{key|Shift}} while using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>). It can be used to limit the analysis to sub-compartments of the arbor (e.g., apical vs basal dendrites, in the case of pyramidal neurons, as in illustration [[#Usage|above]]).
 :For horizontal lines, this option instructs the algorithm to measure intersections at sites equidistant from the center that have y-coordinates above/below the drawn line. For vertical lines, it instructs the plugin to measure intersections at sites equidistant from the center that have x-coordinates to the left/right of the drawn line.
 {{Tip
 | tip = In the dialog prompts of ''Sholl Analysis'', bold headings are clickable URLs pointing to the respective sections of this manual. In addition, relevant tooltips are displayed in the ImageJ status bar when specifying key options.
@@ -206,7 +206,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 
 ;<span id="SchoenenSampled"></span>Schoenen Ramification index (''Ramification index (sampled)'')
 :A measure of ramification<ref name="Schoenen"></ref>: the ratio between ''Max inters.'' and the number of [[#PrimaryBranches|primary branches]].
-: See also [[#SchoenenFitted|Ramification index (CV)]]
+: See also [[#SchoenenFitted|Ramification index (fit)]]
 
 ;<span id="Centroid">Centroid radius
 :The abcissa of the [http://en.wikipedia.org/wiki/Centroid centroid] (i.e., the geometric center or barycenter) of the linear profile. It is [[#ShollPlots|highlighted]] on the ''N'' vs ''Distance'' plot.
@@ -231,28 +231,28 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 :The coefficient of determination of the linear regression described in [[#eq3|(3)]] and [[#eq4|(4)]].
 
 ;<span id="CriticalValue"></span>Critical value
-:The local maximum of the polynomial fit, i.e, ''N'' at ''Critical radius'' in [[#eq1|(1)]]. Sometimes abbreviated as ''N<sub>m</sub>''.
+:The local maximum of the polynomial fit, i.e, ''N'' at ''Critical radius'' in [[#eq1|(1)]]. Abbreviation: ''N<sub>m</sub>''.
 : See also [[#MaxInters|Max inters.]]
 
 ;<span id="CriticalRadius"></span>Critical radius
-:The distance at which ''Critical value'' occurs. Calculated with a precision of 1/1000 of ''Radius step size''. Sometimes abbreviated as ''r<sub>c</sub>''.
+:The distance at which ''Critical value'' occurs. Calculated with a precision of 1/1000 of ''Radius step size''. Abbreviation: ''r<sub>c</sub>''.
 : See also [[#MaxIntersRadius|Max inters. radius]]
 {{Tip
 | id = Nomenclature
 | tip = '''Nomenclature''': [[#References|Previous authors]] have used different terms to describe the largest value taken by the Sholl profile. Since the Sholl technique is not restricted to dendritic arbors and can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels (cf. [[#Citations|List of citations]]), ''Sholl Analysis'' introduces the term [[#CriticalRadius|Critical radius]], renaming ''Dendrite maximum'' (''N<sub>m</sub>'') to [[#CriticalValue|Critical value]]. Thus, ''Sholl Analysis'' may not follow the conventions adopted by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].
 }}
 ;<span id="MeanValueOfFunction"></span>Mean value
-:The mean value<ref name="Stulic"></ref> of the fitted polynomial function [[#eq1|(1)]], representing the average of intersections over the whole area occupied by the arbor. Sometimes abbreviated as MV or Nav.
+:The mean value<ref name="Stulic"></ref> of the fitted polynomial function [[#eq1|(1)]], representing the average of intersections over the whole area occupied by the arbor. Abbreviation ''N<sub>av</sub>''.
 :On the Sholl plot, it is [[#ShollPlots|highlighted]] as the height of the rectangle that has the width of ''Enclosing radius'' − ''First intersecting radius'' and the same area of the area under the fitted curve on that discrete interval. It is analogous to [[#MeanInters|Mean inters.]], the arithmetic mean of sampled intersections throughout the arbor (cf. [[#Metrics_based_on_sampled_data|Metrics based on sampled data]]).
 
-;<span id="SchoenenFitted"></span>Schoenen Ramification index (''Ramification index (CV)'')
+;<span id="SchoenenFitted"></span>Schoenen Ramification index (''Ramification index (fit)'')
 :Schoenen Ramification index retrieved from fitted profile:  The ration between [[#CriticalValue|Critical value]] and  [[#PrimaryBranches|Number of primary branches]].
 : See also [[#SchoenenSampled|Ramification index (sampled)]]
 
-;Skewness<span id="Skewness-fitted"></span>
+;<span id="Skewness-fitted"></span>Skewness (''Skewness (fit)'')
 :The [[#Skewness|skewness]] of the fitted polynomial distribution between [[#StartRadius|Starting radius]] and [[#EndRadius|Ending radius]].
 
-;Kurtosis<span id="Kurtosis-fitted"></span>
+;<span id="Kurtosis-fitted"></span>Kurtosis (''Kurtosis (fit)'')
 :The [[#Kurtosis|kurtosis]] of the fitted polynomial distribution between [[#StartRadius|Starting radius]] and [[#EndRadius|Ending radius]].
 
 ;Polynomial R<sup>2</sup> (''Polyn. R^2'')
