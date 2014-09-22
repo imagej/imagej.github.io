@@ -1220,6 +1220,47 @@ batch_process('.avi', source_dir, target_dir, convert, roi, time_zero, time_rang
 
 </source>
 
+=== Skeletonize an image and analyze the skeleton ===
+
+<source lang="python">
+from ij import IJ
+from skeleton_analysis import AnalyzeSkeleton_,Graph,Edge,Vertex
+
+# open image, blur, make b/w, skeletonize
+imp = IJ.openImage("/path/to/image.tif")
+IJ.run(imp,"Gaussian Blur...","sigma=5")
+IJ.run(imp,"Make Binary","")
+IJ.run(imp,"Skeletonize","")
+
+# run AnalyzeSkeleton
+# (see http://fiji.sc/AnalyzeSkeleton 
+# and http://fiji.sc/javadoc/skeleton_analysis/package-summary.html)
+skel = AnalyzeSkeleton_()
+skel.setup("",imp)
+skelResult = skel.run(skel.NONE, False, True, None, True, True)
+
+# get the separate skeletons
+graph = skelResult.getGraph()
+print len(graph)
+print skelResult.getNumOfTrees()
+
+def getGraphLength(graph):
+    length = 0
+    for g in graph.getEdges():
+    length = length + g.getLength()
+    return length
+
+# find the longest graph
+graph = sorted(graph, key=lambda g: getGraphLength(g), reverse=True)
+longestGraph = graph[0]
+
+# find the longest edge
+edges = longestGraph.getEdges()
+edges = sorted(edges, key=lambda edge: edge.getLength(), reverse=True)
+longestEdge = edges[0]
+
+</source>
+
 == Tips and Tricks ==
 
 === Getting a list of all members in one package ===
