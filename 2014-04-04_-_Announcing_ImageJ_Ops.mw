@@ -25,7 +25,7 @@ And for algorithm developers, there is another tutorial briefly demonstrating ho
 
 == Caveats ==
 
-Today marks the OPS project's very first beta release: [https://github.com/imagej/imagej-ops/tree/ij-ops-0.1.0 0.1.0]. As such, it is still under heavy development, with aspects of the design still subject to change. That said, we are quite confident in the core API, and do not expect it too change too much. What is more likely to change are the specific individual ops, how they work, which ones are available, and other finer details which will become apparent as the library continues to be developed and used.
+Today marks the OPS project's very first beta release: [https://github.com/imagej/imagej-ops/tree/ij-ops-0.1.0 0.1.0]. As such, it is still under heavy development, with aspects of the design still subject to change. That said, we are quite confident in the core API, and do not expect it to change too much. What is more likely to change are the specific individual ops, how they work, which ones are available, and other finer details which will become apparent as the library continues to be developed and used.
 
 == Conclusion ==
 
