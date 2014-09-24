@@ -1,0 +1,235 @@
+{{Development}}If you create a useful extension of ImageJ—e.g., a [[plugin]], [[script]] or [[macro]]—the next step is to ''distribute'' it to others, including:
+* '''Distribute''' the extension itself to users
+* Share the extension's '''source code'''
+* '''Document''' the extension somewhere
+
+The tables below discuss options for these three aspects of distribution. Green items are recommended. Other options are given but not recommended for various reasons.
+
+== Distributing your extension ==
+
+The first goal is to get your extension into the hands of users.
+{{Tip|tip = The best way to distribute your extension is to [[How to set up and populate an update site|create an update site]]!}}{| class="wikitable"
+| colspan="4" style="background: #afa" | '''Create your own update site'''
+|-
+| style="background: #dfd" | '''Steps'''
+| style="background: #dfd" | '''Installation'''
+| style="background: #dfd" | '''Advantages'''
+| style="background: #dfd" | '''Disadvantages'''
+|-
+| style="background: #dfd; vertical-align: top" |
+* [[How to set up and populate an update site| Create your update site]], then [[How to set up and populate an update site#Uploading_files_to_your_update_site|upload your extension to it]].
+* You may add your update site to the list of built-in sites by editing the [[list of update sites]] page.
+* To release a new version, [[How to set up and populate an update site#Uploading_files_to_your_update_site|upload it to the update site]].
+| style="background: #dfd; vertical-align: top" |
+* Users [[How to follow a 3rd party update site|enable the update site]] to receive your extension.
+* ImageJ's [[Updater]] automatically checks for updates from all enabled update sites.
+| style="background: #dfd; vertical-align: top" |
+* You do not need server space to host your extensions; you can use a [[How to set up and populate an update site#Add_your_personal_update_site|personal update site]] hosted on the ImageJ web site.
+* Alternately, you can retain full control by hosting your update site yourself.
+* Users are notified of updates without needing to check proactively.
+* The updater manages dependencies for you.
+* You can automate distribution using the [[Updater#Command-line_usage|command line updater]].
+| style="background: #dfd; vertical-align: top" |
+* [[ImageJ 1.x]] does not support update sites; users will need to use [[ImageJ2]]. (You can [[Updater#Bootstrapping_the_updater|convert an ImageJ 1.x installation to ImageJ2]].)
+|}
+{| class="wikitable"
+| colspan="4" style="background: lightgray" | '''Distribute it as part of Fiji'''
+|-
+|'''Steps'''
+|'''Installation'''
+|'''Advantages'''
+|'''Disadvantages'''
+|-
+| style="vertical-align: top" |
+* Write a mail to the [[Mailing Lists|fiji-devel mailing list]] to initiate a request.
+| style="vertical-align: top" |
+* Users [[Downloads|install Fiji]], or [[How to follow a 3rd party update site|enable the Fiji update site]].
+| style="vertical-align: top" |
+* Your extension is available with Fiji out of the box.
+* A Fiji administrator will help (force ;-) you to manage your project.
+| style="vertical-align: top" |
+* You must abide by the [[Fiji contribution requirements]].
+* You must rely on a Fiji administrator to upload new versions for you.
+|-
+| colspan="4" style="background: lightgray" | '''Serve it from a website as a download'''
+|-
+|'''Steps'''
+|'''Installation'''
+|'''Advantages'''
+|'''Disadvantages'''
+|-
+| style="vertical-align: top" |
+* Create an archive (TAR, ZIP, etc.).
+* Upload the archive to the relevant web space, and link it.
+| style="vertical-align: top" |
+* Users download the archive, unpacking it into ImageJ's <code>plugins</code> folder.
+| style="vertical-align: top" |
+* You avoid the activation barrier of learning to use the [[Updater]].
+| style="vertical-align: top" |
+* Users must find your plugin via a link or web search.
+* Users must perform a manual installation procedure.
+* Users must manually check for later updates.
+|}
+
+== Sharing your source code ==
+
+If you want to facilitate good science, please [[Open Source|share your source code]]. Otherwise, your extension is a black box and its results are not verifiable.
+{{Tip|tip=The recommended way to share your source is to host it on [https://github.com/ GitHub]!}}{| class="wikitable"
+| colspan="3" style="background: #afa" | '''Host on GitHub in your userspace or organization'''
+|-
+| style="background: #dfd" | '''Steps'''
+| style="background: #dfd" | '''Advantages'''
+| style="background: #dfd" | '''Disadvantages'''
+|-
+| style="background: #dfd; vertical-align: top" |
+* Create an account on [https://github.com GitHub].
+* [https://help.github.com/articles/create-a-repo Create a new repository] for your project.
+* [https://help.github.com/articles/pushing-to-a-remote Push your code] there.
+* [[Git|Learn Git]] to manage your code effectively.
+| style="background: #dfd; vertical-align: top" |
+* Git is an incredibly powerful way to keep track of your code.
+* GitHub greatly facilitates collaboration: sharing ideas and patches.
+* Seriously: Git and GitHub are amazing tools, and you will be orders of magnitude less effective without them.
+* "Doing it in public" is a great way to [http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/ stop sucking and be awesome instead].
+* All of [[ImageJ]], [[Fiji]] and related [[SciJava]] projects are [[Source code|hosted on GitHub]].
+| style="background: #dfd; vertical-align: top" |
+* Git has a steep learning curve—the [https://windows.github.com/ GitHub for Windows] and [https://mac.github.com/ GitHub for Mac] clients make things easier.
+|}
+{| class="wikitable"
+| colspan="3" style="background: lightgray" | '''Host on GitHub in the Fiji organization'''
+|-
+|'''Steps'''
+|'''Advantages'''
+|'''Disadvantages'''
+|-
+| style="vertical-align: top" |
+* Request a Fiji administrator create a repository for you and add you as a contributor.
+* Abide by [[Fiji contribution requirements]].
+| style="vertical-align: top" |
+* All the benefits of GitHub.
+* A Fiji maintainer helps (forces ;-) you to manage your project.
+| style="vertical-align: top" |
+* You must abide by the Fiji contribution requirements.
+|-
+| colspan="3" style="background: lightgray" | '''Host on BitBucket'''
+|-
+|'''Steps'''
+|'''Advantages'''
+|'''Disadvantages'''
+|-
+| style="vertical-align: top" |
+* Similar to GitHub, but using [https://bitbucket.org/ BitBucket] instead.
+| style="vertical-align: top" |
+* Similar to GitHub.
+| style="vertical-align: top" |
+* ImageJ and related projects are hosted on GitHub, not BitBucket.
+* BitBucket has a smaller user base than GitHub does.
+|-
+| colspan="3" style="background: lightgray" | '''Host on SourceForge'''
+|-
+|'''Steps'''
+|'''Advantages'''
+|'''Disadvantages'''
+|-
+| style="vertical-align: top" |
+* Similar to GitHub, but using [http://sourceforge.net/ SourceForge] instead.
+| style="vertical-align: top" |
+* SourceForge predates GitHub; some people prefer it.
+| style="vertical-align: top" |
+* The interface is not as good as GitHub and BitBucket.
+* The collaboration features are vastly inferior.
+* SourceForge has a lot of downtime. (The [http://jenkins.imagej.net/view/Mirrors/ ImageJ mirrors of SourceForge projects] hence have a lot of problems.)
+* Using SourceForge is highly discouraged compared to other code hosting sites.
+|-
+| colspan="3" style="background: lightgray" | '''Serve it from a website as a download'''
+|-
+|'''Steps'''
+|'''Advantages'''
+|'''Disadvantages'''
+|-
+* Create an archive (TAR, ZIP, etc.).
+* Upload the archive to the relevant web space, and link it.
+| style="vertical-align: top" |
+* Users download and unpack the archive.
+| style="vertical-align: top" |
+* You avoid the activation barrier of learning a revision control system.
+| style="vertical-align: top" |
+* No revision control system.
+* No easy browsing of source code online.
+* No easy submission of patches.
+* No finding the code in web searches.
+* No revision control system.
+* No revision control system!
+|}
+
+== Documenting your extension ==
+
+Useful extensions deserve corresponding documentation explaining how to use them.
+{{Tip|tip=The best place to document your extension is here on the [http://imagej.net/ ImageJ Wiki]!}}{| class="wikitable"
+| colspan="3" style="background: #afa" | '''Create an ImageJ wiki page'''
+|-
+| style="background: #dfd" | '''Steps'''
+| style="background: #dfd" | '''Advantages'''
+| style="background: #dfd" | '''Disadvantages'''
+|-
+| style="background: #dfd; vertical-align: top" |
+* [http://imagej.net/index.php?title=Special:UserLogin&returnto=Welcome&type=signup Create an account].
+* [https://www.mediawiki.org/wiki/Help:Starting_a_new_page Create a page] for your extension.
+| style="background: #dfd; vertical-align: top" |
+* The ImageJ wiki is part of imagej.net, the integrated ImageJ web site.
+* The ImageJ wiki uses MediaWiki, the most popular wiki engine which drives Wikipedia.
+* You can get started immediately; no human needs to approve your account or edits.
+| style="background: #dfd; vertical-align: top" |
+-
+|}
+{| class="wikitable"
+| colspan="3" style="background: lightgray" | '''Use the ImageJ Information and Documentation Portal (IIDP)'''
+|-
+|'''Steps'''
+|'''Advantages'''
+|'''Disadvantages'''
+|-
+| style="vertical-align: top" |
+* Request an account from an IIDP administrator.
+* [http://imagejdocu.tudor.lu/doku.php?id=create_new_content Create a page] for your extension.
+| style="vertical-align: top" |
+* The [http://imagejdocu.tudor.lu/ ImageJ Information and Documentation Portal] predates the ImageJ wiki, and many extensions are still primarily documented there.
+* The IIDP is a fairly [http://imagejdocu.tudor.lu/doku.php?id=start&do=recent active] wiki.
+* The ImageJ developers hope to unify these two wikis in the future.
+| style="vertical-align: top" |
+* The IIDP documents only [[ImageJ 1.x]], not [[ImageJ2]].
+* You must explicitly request an IIDP account from an administrator.
+* The wiki uses Plone, a lesser known CMS engine.
+|-
+| colspan="3" style="background: lightgray" | '''Add a page to the ImageJ 1.x website'''
+|-
+|'''Steps'''
+|'''Advantages'''
+|'''Disadvantages'''
+|-
+| style="vertical-align: top" |
+* Prepare an HTML page modeled after the [http://imagej.net/plugins/index.html list of ImageJ 1.x plugins].
+* Email it to Wayne Rasband, the developer of ImageJ 1.x, and sole maintainer of the [http://imagej.net/index.html ImageJ 1.x website].
+| style="vertical-align: top" |
+* Listed on the ImageJ 1.x website.
+| style="vertical-align: top" |
+* Not collaborative. No one else can edit the ImageJ 1.x website—not even you!
+* Hence, turnaround time on updates is longer.
+* The list of plugins there is extensive and difficult to sort through.
+|-
+| colspan="3" style="background: lightgray" | '''Create your own webpage elsewhere'''
+|-
+|'''Steps'''
+|'''Advantages'''
+|'''Disadvantages'''
+|-
+| style="vertical-align: top" | (Varies)
+| style="vertical-align: top" |
+* Total control of the content
+| style="vertical-align: top" |
+* Nonstandard location. Users may have trouble finding your documentation.
+* Not collaborative. No one else can improve the documentation.
+* If your site goes down, users lose access to the information. (This happened with the [[3D Viewer]] a while back. And the [[MBF Plugin Collection]] went permanently offline!)
+|}
+
+[[Category:Development]]
