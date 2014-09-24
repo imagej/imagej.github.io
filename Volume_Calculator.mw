@@ -1,8 +1,8 @@
 {{Infobox
 | name                   = Volume Calculator
 | software               = Fiji
-| author                 = Peter C Marks ([mailto:marksp@mmc.org marksp@mmc.org])
-| maintainer             = Peter C Marks ([mailto:marksp@mmc.org marksp@mmc.org])
+| author                 = Peter C Marks ([mailto:peter.c.marks@gmail.com peter.c.marks@gmail.com])
+| maintainer             = Peter C Marks ([mailto:peter.c.marks@gmail.com peter.c.marks@gmail.com])
 | source                 = {{GitHub|org=fiji|repo=Volume_Calculator|source=volumeCalculator/Volume_Calculator.java}}
 | released               = 2012
 | latest version         = December 5<sup>th</sup>, 2012
