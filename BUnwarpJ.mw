@@ -6,7 +6,7 @@
 | filename               = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/bUnwarpJ_-2.6.1-SNAPSHOT.jar bUnwarpJ_.jar] 
 | source                 = {{GitHub|org=fiji|repo=bUnwarpJ}}
 | released               = July 20<sup>th</sup>, 2006
-| latest version         = June 3<sup>rd</sup>, 2013
+| latest version         = 2.6.1, September 17<sup>th</sup>, 2014
 | status                 = stable, active
 | category               = [[:Category:Registration|Registration]]
 | website                = [http://biocomp.cnb.csic.es/~iarganda/bUnwarpJ/ bUnwarpJ]
