@@ -30,7 +30,7 @@ The first goal is to get your extension into the hands of users.
 * The updater manages dependencies for you.
 * You can automate distribution using the [[Updater#Command-line_usage|command line updater]].
 | style="background: #dfd; vertical-align: top" |
-* [[ImageJ 1.x]] does not support update sites; users will need to use [[ImageJ2]]. (You can [[Updater#Bootstrapping_the_updater|convert an ImageJ 1.x installation to ImageJ2]].)
+* [[ImageJ 1.x]] does not support update sites; users will need to use [[ImageJ2]] (or Fiji: "Fiji Is Just ImageJ2"). (You can [[Updater#Bootstrapping_the_updater|convert an ImageJ 1.x installation to ImageJ2]].)
 |}
 {| class="wikitable"
 | colspan="4" style="background: lightgray" | '''Distribute it as part of Fiji'''
