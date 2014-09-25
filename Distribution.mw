@@ -148,9 +148,9 @@ If you want to facilitate good science, please [[Open Source|share your source c
 |'''Advantages'''
 |'''Disadvantages'''
 |-
+| style="vertical-align: top" |
 * Create an archive (TAR, ZIP, etc.).
 * Upload the archive to the relevant web space, and link it.
-| style="vertical-align: top" |
 * Users download and unpack the archive.
 | style="vertical-align: top" |
 * You avoid the activation barrier of learning a revision control system.
