@@ -65,6 +65,7 @@ The first goal is to get your extension into the hands of users.
 * Users download the archive, unpacking it into ImageJ's <code>plugins</code> folder.
 | style="vertical-align: top" |
 * You avoid the activation barrier of learning to use the [[Updater]].
+* [[ImageJ2]] is not required to install the extension.
 | style="vertical-align: top" |
 * Users must find your plugin via a link or web search.
 * Users must perform a manual installation procedure.
