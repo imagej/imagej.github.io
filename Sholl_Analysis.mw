@@ -509,10 +509,10 @@ function closeResults() {
 		Select the table, then choose <span style="border-bottom:1px dotted #ccc;">File▷ Save As…</span>The filename extension can be specified using <span style="border-bottom:1px dotted #ccc;">Edit▷ Options▷ Input/Output…</span> (see the [http://imagej.net/docs/guide/ ImageJ User Guide] for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
 	</dd></dl>
 	<li>
-		<span id="faq:precision"></span>'''Can I modify the number of decimal places used by the ''Sholl Results'' table?'''
+		<span id="faq:precision"></span>'''Can I modify the way data is displayed?'''
 	</li>
 	<dl><dd>
-		Yes. Use the options ''Decimal places'' and ''Scientific notation'' in <span style="border-bottom:1px dotted #ccc;">Analyze▷ Set Measurements…</span>
+		Mostly. To modify the number of decimal places used by the ''Sholl Results'' table use the options ''Decimal places'' and ''Scientific notation'' in <span style="border-bottom:1px dotted #ccc;">Analyze▷ Set Measurements…</span>. The resize plots, use the options in <span style="border-bottom:1px dotted #ccc;">Edit▷ Options▷ Profile Plot Options...</span>
 	</dd></dl>	
 	<li>
 		<span id="faq:sholl-mask"></span>'''What is the ''Sholl mask''?'''
