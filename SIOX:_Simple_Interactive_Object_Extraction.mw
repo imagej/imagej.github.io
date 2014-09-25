@@ -6,7 +6,7 @@
 | maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
 | source                 = {{GitHub|org=fiji|repo=SIOX_segmentation}}
 | released               = November 6<sup>th</sup>, 2009
-| latest version         = March 3<sup>rd</sup>, 2010
+| latest version         = 1.0.2, September 25th<sup>th</sup>, 2014
 | status                 = stable, active
 | category               = [[:Category:Segmentation|Segmentation]]
 }}This is a Fiji plugin based on the [http://www.siox.org SIOX project] '''to segment color images'''.  [[SIOX]] stands for ''Simple Interactive Object Extraction'', a method for '''extracting foreground from still images''' with very little user interaction. [[SIOX]] is fast, noise robust and can therefore also be used for the segmentation of videos. It avoids many of the drawbacks of graph-based segmentation methods but performs about equally well on different benchmarks. [[SIOX]] is open and free (Apache License) and the authors have intentionally not patented any part of the technology. As a result, it has been integrated into several open-source image manipulation programs over the past years. [[SIOX]] is the underlying algorithm of the foreground extraction tool in the GNU Image Manipulation Program ([http://www.gimp.org/ GIMP]) and is part of the tracer tool in [http://www.inkscape.org/ Inkscape]. [[SIOX]] originates from [http://www.echalk.de/ E-Chalk] where an instructor standing in front of an electronic chalkboard is segmented. Variants of [[SIOX]] are being used for robotic vision and for improving 3D time-of-flight camera segmentation.
