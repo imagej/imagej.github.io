@@ -173,11 +173,8 @@ Initial release
 
 == 25-09-2014 - v2.5.1 ==
 
-* Fix several issues with the manual tracking plugin. Files were saved with
-    missing information, generating warnings upon reloading.
-* Fix a bug with the semi-automatic tracker, not putting the correct time
-    feature to found spot.
-* The GUI is resizable, so as to avoid bad suprise when using TrackMate
-    on several different OSes.
+* Fix several issues with the manual tracking plugin. Files were saved with missing information, generating warnings upon reloading.
+* Fix a bug with the semi-automatic tracker, not putting the correct time feature to found spot.
+* The GUI is resizable, so as to avoid bad surprise when using TrackMate on several different OSes.
 * Format the display of floating point numbers in a better way.
 * Tweak the toolbar of TrackScheme.
