@@ -400,7 +400,7 @@ step  = 2;   // variable that controls step size
 // Run the plugin
 run("Sholl Analysis...", "starting="+ start +" ending="+ end +"radius_step="+ step +" infer linear save do");
 </source>
-=== Batch Analysis of Previously Obtained Profiles ===
+=== Batch Analysis of Tabular Data ===
 If you already have obtained profiles from traced cells and would like to retrieve the same [[#Metrics|metrics]] calculated by the plugin when analyzing bitmap images, you can use the [http://imagej.net/developer/macro/functions.html#setKeyDown setKeyDown("alt")] as when [[#Importing|triggering this option]] through the ImageJ menu. Here is an example macro that runs the plugin over a folder of .csv files containing Sholl profiles produced by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]]:
 
 <source lang="java">
@@ -429,6 +429,7 @@ function closeResults() {
 		{ selectWindow("Results"); run("Close"); }
 }
 </source>
+
 == Auxiliary Commands ==
 ;File▷ Open Samples▷ ddaC Neuron
 :Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run <span style="border-bottom:1px dotted #ccc;">Image▷ Show Info...</span> (shortcut: {{key press|I}} ) to know more about this cell type.
