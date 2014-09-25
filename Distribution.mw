@@ -8,7 +8,7 @@ The tables below discuss options for these three aspects of distribution. Green 
 == Distributing your extension ==
 
 The first goal is to get your extension into the hands of users.
-{{Tip|tip = The best way to distribute your extension is to [[How to set up and populate an update site|create an update site]]!}}{| class="wikitable"
+{{Tip|tip = The best way to distribute your extension is to '''[[How to set up and populate an update site|create an update site]]'''!}}{| class="wikitable"
 | colspan="4" style="background: #afa" | '''Create your own update site'''
 |-
 | style="background: #dfd" | '''Steps'''
@@ -17,20 +17,20 @@ The first goal is to get your extension into the hands of users.
 | style="background: #dfd" | '''Disadvantages'''
 |-
 | style="background: #dfd; vertical-align: top" |
-* [[How to set up and populate an update site| Create your update site]], then [[How to set up and populate an update site#Uploading_files_to_your_update_site|upload your extension to it]].
-* You may add your update site to the list of built-in sites by editing the [[list of update sites]] page.
-* To release a new version, [[How to set up and populate an update site#Uploading_files_to_your_update_site|upload it to the update site]].
+* '''[[How to set up and populate an update site| Create your update site]]''', then '''[[How to set up and populate an update site#Uploading_files_to_your_update_site|upload your extension to it]]'''.
+* You may add your update site to the list of built-in sites by editing the '''[[list of update sites]]''' page.
+* To release a new version, '''[[How to set up and populate an update site#Uploading_files_to_your_update_site|upload it to the update site]]'''.
 | style="background: #dfd; vertical-align: top" |
-* Users [[How to follow a 3rd party update site|enable the update site]] to receive your extension.
-* ImageJ's [[Updater]] automatically checks for updates from all enabled update sites.
+* Users '''[[How to follow a 3rd party update site|enable the update site]]''' to receive your extension.
+* ImageJ's '''[[Updater]]''' automatically checks for updates from all enabled update sites.
 | style="background: #dfd; vertical-align: top" |
-* You do not need server space to host your extensions; you can use a [[How to set up and populate an update site#Add_your_personal_update_site|personal update site]] hosted on the ImageJ web site.
+* You do not need server space to host your extensions; you can use a '''[[How to set up and populate an update site#Add_your_personal_update_site|personal update site]]''' hosted on the ImageJ web site.
 * Alternately, you can retain full control by hosting your update site yourself.
 * Users are notified of updates without needing to check proactively.
 * The updater manages dependencies for you.
-* You can automate distribution using the [[Updater#Command-line_usage|command line updater]].
+* You can automate distribution using the '''[[Updater#Command-line_usage|command line updater]]'''.
 | style="background: #dfd; vertical-align: top" |
-* [[ImageJ 1.x]] does not support update sites; users will need to use [[ImageJ2]] (or Fiji: "Fiji Is Just ImageJ2"). (You can [[Updater#Bootstrapping_the_updater|convert an ImageJ 1.x installation to ImageJ2]].)
+* '''[[ImageJ 1.x]]''' does not support update sites; users will need to use '''[[ImageJ2]]''' (or '''[[Fiji]]''': "Fiji Is Just ImageJ2"). You can '''[[Updater#Bootstrapping_the_updater|convert an ImageJ 1.x installation to ImageJ2]]'''.
 |}
 {| class="wikitable"
 | colspan="4" style="background: lightgray" | '''Distribute it as part of Fiji'''
@@ -75,7 +75,7 @@ The first goal is to get your extension into the hands of users.
 == Sharing your source code ==
 
 If you want to facilitate good science, please [[Open Source|share your source code]]. Otherwise, your extension is a black box and its results are not verifiable.
-{{Tip|tip=The recommended way to share your source is to host it on [https://github.com/ GitHub]!}}{| class="wikitable"
+{{Tip|tip=The recommended way to share your source is to host it on '''[https://github.com/ GitHub]'''!}}{| class="wikitable"
 | colspan="3" style="background: #afa" | '''Host on GitHub in your userspace or organization'''
 |-
 | style="background: #dfd" | '''Steps'''
@@ -83,18 +83,18 @@ If you want to facilitate good science, please [[Open Source|share your source c
 | style="background: #dfd" | '''Disadvantages'''
 |-
 | style="background: #dfd; vertical-align: top" |
-* Create an account on [https://github.com GitHub].
-* [https://help.github.com/articles/create-a-repo Create a new repository] for your project.
-* [https://help.github.com/articles/pushing-to-a-remote Push your code] there.
-* [[Git|Learn Git]] to manage your code effectively.
+* Create an account on '''[https://github.com GitHub]'''.
+* '''[https://help.github.com/articles/create-a-repo Create a new repository]''' for your project.
+* '''[https://help.github.com/articles/pushing-to-a-remote Push your code]''' there.
+* '''[[Git|Learn Git]]''' to manage your code effectively.
 | style="background: #dfd; vertical-align: top" |
 * Git is an incredibly powerful way to keep track of your code.
 * GitHub greatly facilitates collaboration: sharing ideas and patches.
 * Seriously: Git and GitHub are amazing tools, and you will be orders of magnitude less effective without them.
-* "Doing it in public" is a great way to [http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/ stop sucking and be awesome instead].
-* All of [[ImageJ]], [[Fiji]] and related [[SciJava]] projects are [[Source code|hosted on GitHub]].
+* "Doing it in public" is a great way to '''[http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/ stop sucking and be awesome instead]'''.
+* All of '''[[ImageJ]]''', '''[[Fiji]]''' and related '''[[SciJava]]''' projects are '''[[Source code|hosted on GitHub]]'''.
 | style="background: #dfd; vertical-align: top" |
-* Git has a steep learning curve—the [https://windows.github.com/ GitHub for Windows] and [https://mac.github.com/ GitHub for Mac] clients make things easier.
+* Git has a steep learning curve—the '''[https://windows.github.com/ GitHub for Windows]''' and '''[https://mac.github.com/ GitHub for Mac]''' clients make things easier.
 |}
 {| class="wikitable"
 | colspan="3" style="background: lightgray" | '''Host on GitHub in the Fiji organization'''
@@ -166,7 +166,7 @@ If you want to facilitate good science, please [[Open Source|share your source c
 == Documenting your extension ==
 
 Useful extensions deserve corresponding documentation explaining how to use them.
-{{Tip|tip=The best place to document your extension is here on the [http://imagej.net/ ImageJ Wiki]!}}{| class="wikitable"
+{{Tip|tip=The best place to document your extension is here on the '''[http://imagej.net/ ImageJ Wiki]'''!}}{| class="wikitable"
 | colspan="3" style="background: #afa" | '''Create an ImageJ wiki page'''
 |-
 | style="background: #dfd" | '''Steps'''
@@ -174,8 +174,8 @@ Useful extensions deserve corresponding documentation explaining how to use them
 | style="background: #dfd" | '''Disadvantages'''
 |-
 | style="background: #dfd; vertical-align: top" |
-* [http://imagej.net/index.php?title=Special:UserLogin&returnto=Welcome&type=signup Create an account].
-* [https://www.mediawiki.org/wiki/Help:Starting_a_new_page Create a page] for your extension.
+* '''[http://imagej.net/index.php?title=Special:UserLogin&returnto=Welcome&type=signup Create an account]'''.
+* '''[https://www.mediawiki.org/wiki/Help:Starting_a_new_page Create a page]''' for your extension.
 | style="background: #dfd; vertical-align: top" |
 * The ImageJ wiki is part of imagej.net, the integrated ImageJ web site.
 * The ImageJ wiki uses MediaWiki, the most popular wiki engine which drives Wikipedia.
