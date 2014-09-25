@@ -281,7 +281,7 @@ Most options in the ''Tabular prompt'' are explained in the description of the d
 :#You will then be prompted to indicate the path of the saved  profile
 ;Manipulating data:Input data can be modified before running the plugin:
 :*Press {{key press|Backspace}} over selected rows to exclude them from the analysis
-:*To restrict measurements to a range of distances:
+:*To restrict measurements to a range of distances ([[#CA1CellPlot|related example]]) :
 ::# Select the range of rows you want to include in the analysis. You can click the first row in the range, and then drag the mouse to the last row, or by holding down {{key press|Shift}} while selecting the last row in the range.
 ::# In the prompt, activate the ''Restrict analysis to selected rows only'' checkbox
 ;Calculation of ''Radius step size'':[[#StepSize|Radius step size]] is calculated from the difference between the first two rows in ''Distance column''. This is mainly relevant when choosing ''Annulus/Spherical shell'' as [[#Normalizer|normalizer]]. 
@@ -289,6 +289,7 @@ Most options in the ''Tabular prompt'' are explained in the description of the d
 {{Tip
 | tip = You can shuttle between the ''[[#Multiple Samples and Noise Reduction|Bitmap]]'' and ''[[#Importing|Tabular]]'' prompts by {{key press|Alt}}-clicking their Cancel button. The shortcut is easy to remember: {{key press|Alt}} is always the trigger that changes the type of data to be analyzed.
 }}
+
 == Complementary Tools ==
 <span id="Extended_Fitting"></span>[[ File:AnimatedPolyFit.gif|frame|Sampled data from the ddaC cell (<span style="border-bottom:1px dotted #ccc;">File▷ Open Samples▷ ddaC Neuron</span>) being fitted to polynomials of varying degree using a complementary [[BAR]] script.]]
 
