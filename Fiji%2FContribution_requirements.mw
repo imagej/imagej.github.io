@@ -1,0 +1,28 @@
+The driving force behind the Fiji project is the following principle:
+
+:''If you want to go fast, go alone. If you want to go far, go together.''
+: - ''African proverb''
+
+There are many corollaries to this wisdom, the most prominent: if you write software in your endeavor to discover new insights, [[Open Source]] is the way that brings you farthest. Withholding the source code – like any other method to obstruct other researchers' work, e.g. refusing to share materials and methods  – will invariably have the opposite effect in the long run. 
+
+This principle leads to a couple of requirements imposed on the software components shipped with Fiji by default.
+
+= The source code must be freely accessible =
+
+TBD (public repository)
+
+= The development must be open =
+
+TBD (easy entry, e.g. pull requests, encouraging improvements, working together, enhancing upon each others' work, share insights)
+
+= Active bug management =
+
+TBD (bug reports need to be acknowledged, participation in resolving bugs should be encouraged whenever possible, bugs should not go uncommented/unresolved for years, explanations are due when bugs go unresolved for years, etc)
+
+= Reusability =
+
+TBD (Whenever possible, source code should be reused. If necessary, improve the existing source code. Only rewrite from scratch when absolutely necessary, e.g. due to uncollaborative development of the source code in question)
+
+= Separation of concerns =
+
+TBD (Features should be put into the best place, e.g. when adding a general-purpose service, scijava-common; avoid bundling UI improvements with plugin implementations and put them into reusable libraries instead, etc)
