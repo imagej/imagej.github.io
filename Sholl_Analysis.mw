@@ -30,7 +30,7 @@
 Automated bitmap Sholl for direct analysis of fluorescent images of neuronal arbors, featuring powerful quantifications  based on curve fitting. Analysis of previously traced arbors is also possible.
 
 == Introduction ==
-<span id="CA1Cell"></span>[[ File:BitmapSholl-CA1mask.png|frame|[[Skeletonize3D|Skeletonized]] mouse hippocampal CA1 cell <ref name="Gross"></ref> in which apical and basal dendrites have been analyzed [[#Restrict|separately]] and [[#Output_Options|color coded]] according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''r<sub>c</sub>'') and [[#MeanValueOfFunction|Mean value]] (''N<sub>av</sub>'') are indicated.]]
+<span id="CA1CellMask"></span>[[ File:BitmapSholl-CA1mask.png|frame|[[Skeletonize3D|Skeletonized]] mouse hippocampal CA1 cell <ref name="Gross"></ref> in which apical and basal dendrites have been analyzed [[#CA1CellPlot|separately]] and [[#Output_Options|color coded]] according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''r<sub>c</sub>'') and [[#MeanValueOfFunction|Mean value]] (''N<sub>av</sub>'') are indicated.]]
 
 The Sholl technique<ref name="Sholl"></ref> is used to describe neuronal arbors. This plugin performs  Sholl directly on 2D and 3D grayscale images of isolated neurons. Its internal algorithm to collect data is based upon how Sholl analysis is done by hand — it creates a series of concentric ''shells'' (circles or spheres) around the focus of a neuronal arbor, and counts how many times the arbor intersects the sampling shells.
 The major advantages of this plugin over other implementations are:
@@ -52,20 +52,16 @@ The plugin requires a binary image or a segmented grayscale image containing a s
 Input values take into account the scale information of the image that can be set using the <span style="border-bottom:1px dotted #ccc;">Analyze▷ Set Scale...</span> or <span style="border-bottom:1px dotted #ccc;">Image▷ Properties...</span> (<span style="display:inline-block;">{{key press|Shift|P}} </span>). The prompt is organized into 5 sections:
 
 ==== Definition of Shells ====
-* <span id="StartRadius"></span>'''Starting radius''' <sup>&nbsp;</sup>The radius of the smallest sampling circle/sphere, i.e., the first distance to be sampled.
-
+* <span id="StartRadius"></span>'''Starting radius''' <sup>&nbsp;</sup>The radius of the smallest sampling circle/sphere, i.e., the first distance to be sampled.<span id="CA1CellPlot"></span>
+[[File:BitmapSholl-CA1Compartment.png|frame|right|Linear plot for CA1 cell [[#CA1CellMask|described above]]. Using the soma as center, data was sampled twice using the ''Restrict analysis to hemicircle/hemisphere'' option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid over the plot canvas. Note that it is also possible to restrict curve fitting to a sub-range of distances once [[#Importing|data is collected]].]]
 * <span id="EndRadius"></span>'''Ending radius''' <sup>&nbsp;</sup>The radius of the largest sampling circle/sphere. Note that this distance may not be actually sampled, if ''Radius step size'' is not a divisor of ''Ending radius''-''Starting radius''.
-{{Tip
-| tip = You can clear ''Ending radius'' or set it to ''NaN'' ("Not a Number") to sample the entire image. This is particularly useful when running the plugin from a [[#Batch_Processing|macro]] that processes images with different dimensions.
-}}
+'''N.B.''' You can clear ''Ending radius'' or set it to ''NaN'' ("Not a Number") to sample the entire image. This is particularly useful when running the plugin from a [[#Batch_Processing|macro]] that processes images with different dimensions.
 * <span id="StepSize"></span>'''Radius step size''' <sup>&nbsp;</sup>The sampling interval between radii of consecutive sampling circles/spheres. This value may be set to zero for continuous (1-voxel increment) measurements.
-:For stacks with anisotropic voxel size, setting ''Radius step size'' to zero, sets the step length to the dimension of the matching isotropic voxel, i.e., the cube root of the product of the voxel dimensions (3D images) or the square root of the product of the pixel dimensions (2D images).
+'''N.B.''' For stacks with anisotropic voxel size, setting ''Radius step size'' to zero, sets the step length to the dimension of the matching isotropic voxel, i.e., the cube root of the product of the voxel dimensions (3D images) or the square root of the product of the pixel dimensions (2D images).
 
-* <span id="Restrict"></span>'''Restrict analysis to hemicircle/hemisphere''' <sup>&nbsp;</sup>This option is only available when an orthogonal radius has been created (by holding {{key|Shift}} while using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>). It can be used to limit the analysis to sub-compartments of the arbor (e.g., apical vs basal dendrites, in the case of pyramidal neurons, as in illustration [[#CA1Cell|above]]).
-:For horizontal lines, this option instructs the algorithm to measure intersections at sites equidistant from the center that have y-coordinates above/below the drawn line. For vertical lines, it instructs the plugin to measure intersections at sites equidistant from the center that have x-coordinates to the left/right of the drawn line.
-{{Tip
-| tip = In the dialog prompts of ''Sholl Analysis'', bold headings are clickable URLs pointing to the respective sections of this manual. In addition, relevant tooltips are displayed in the ImageJ status bar when specifying key options.
-}}
+* <span id="Restrict"></span>'''Restrict analysis to hemicircle/hemisphere''' <sup>&nbsp;</sup>This option is only available when an orthogonal radius has been created (by holding {{key|Shift}} while using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>). It can be used to limit the analysis to sub-compartments of the arbor.
+'''N.B.''' For horizontal lines, this option instructs the algorithm to measure intersections at sites equidistant from the center that have y-coordinates above/below the drawn line. For vertical lines, it instructs the plugin to measure intersections at sites equidistant from the center that have x-coordinates to the left/right of the drawn line.
+
 ==== Multiple Samples and Noise Reduction ====
 [[ File:BitmapSholl-Prompt_v3.png|320px|right |Main prompt (version 3.4.1)]]
 * '''Samples per radius ''(2D images only)''''' <sup>&nbsp;</sup>Defines the number of measurements to be performed at each sampling circumference. These measurements are then combined into a single value according to the chosen [[#SamplesIntegration|integration method]]. This strategy, a break from previous approaches, increases the accuracy of non-continuos profiles by diluting out the effect of processes extending tangent to the sampling circumference.
@@ -100,7 +96,9 @@ Input values take into account the scale information of the image that can be se
 
 * '''Save results in image directory ''(only available when image is saved locally)''''' <sup>&nbsp;</sup> If checked, all the results (with the exception of the ''[[#Metrics|Sholl Table]]'') are saved to the image directory. These include: 1) Sholl plots (saved as PNG images), 2) A table containing detailed data (saved according to the extension and format specified in <span style="border-bottom:1px dotted #ccc;">Edit▷ Options▷ Input/Output...</span>) and 3) The Sholl mask (saved as a 16-bit TIFF).<p>Files are named after the image filename and analysis method. When this option is not available, profiles can always be retrieved using the ''List'', ''Save...'' and ''Copy...'' commands of plot windows.</p>
 ** '''Do not display saved files''' If checked, saved files are directly saved to disk and are not displayed. Activate this option when [[#Batch_Processing|batch processing]] files.
-
+{{Tip
+| tip = In the dialog prompts of ''Sholl Analysis'', bold headings are clickable URLs pointing to the respective sections of this manual. In addition, relevant tooltips are displayed in the ImageJ status bar when specifying key options.
+}}
 ==== Cf. Segmentation ====
 Press ''Cf. Segmentation'' to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the ''B&W'' lookup table in the Threshold Widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> {{key press|Shift|T}}). ''Cf. Segmentation'' allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [http://diademchallenge.org DIADEM] dataset<ref name="DIADEM"/>:
 
@@ -518,7 +516,7 @@ function closeResults() {
 		<span id="faq:sholl-mask"></span>'''What is the ''Sholl mask''?'''
 	</li>
 	<dl><dd>
-		The Sholl mask ([[#CA1Cell|see example above]]) is simply an illustration: a maximum intensity projection of the analyzed cell in which intersection counts are used as pixel intensities. As explained in [[#Output_Options|Output Options]], its LUT can be modified, and intensities calibrated using ImageJ default commands. As mentioned, it can also be used to visually inspect for [[#Cf._Segmentation|segmentation artifacts]].
+		The Sholl mask ([[#CA1CellMask|see example above]]) is simply an illustration: a maximum intensity projection of the analyzed cell in which intersection counts are used as pixel intensities. As explained in [[#Output_Options|Output Options]], its LUT can be modified, and intensities calibrated using ImageJ default commands. As mentioned, it can also be used to visually inspect for [[#Cf._Segmentation|segmentation artifacts]].
 	</dd></dl>
 	<li>
 		<span id="faq:3Dvs2D"></span>'''The 3D profile looks ''worse'' than the 2D profile of the Maximum Intensity Projection of the same cell. Why?'''
