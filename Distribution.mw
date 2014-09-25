@@ -69,6 +69,7 @@ The first goal is to get your extension into the hands of users.
 * Users must find your plugin via a link or web search.
 * Users must perform a manual installation procedure.
 * Users must manually check for later updates.
+* Users <i>will</i> report bugs found in outdated versions of the extension.
 |}
 
 == Sharing your source code ==
