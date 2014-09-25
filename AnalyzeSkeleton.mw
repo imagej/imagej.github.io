@@ -5,7 +5,7 @@
 | maintainer             = [[User:Iarganda | Ignacio Arganda-Carreras]]
 | source                 = {{GitHub|org=fiji|repo=AnalyzeSkeleton}}
 | released               = November 14<sup>th</sup>, 2008
-| latest version         = April 15<sup>th</sup>, 2014
+| latest version         = 2.0.0, September 17<sup>th</sup>, 2014
 | status                 = stable, active
 | category               = [[:Category:Skeleton|Skeleton]], [[:Category:Analysis|Analysis]]
 }}Analysis of 2D and 3D skeleton images. For the ImageJ plugin, visit [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start AnalyzeSkeleton at ImageJ wiki].
