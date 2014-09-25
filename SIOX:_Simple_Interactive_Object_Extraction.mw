@@ -117,6 +117,8 @@ The segmentator will be applied to the selected image or stack and the result wi
 [[Image:Combined-SIOX-Stacks.gif | left | thumb | 700px | Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample]]
 {{-}}
 
+'''Note''': when applying a saved segmentator there is no information about the size of the expected foreground components so the largest component will be used as reference. The multiple component option will be consistent with what it was used during the segmentator calculation.
+
 ==API documentation==
 The latest documentation of the package can be found here:
 * For the SIOX plugin: [http://fiji.sc/javadoc/siox/package-summary.html http://fiji.sc/javadoc/siox/package-summary.html] 
