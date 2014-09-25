@@ -5,7 +5,7 @@
 | maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
 | source                 = {{GitHub|org=fiji|repo=register_virtual_stack_slices}}
 | released               = 2008
-| latest version         = February 17<sup>th</sup>, 2014
+| latest version         = 2.0.0, September 17<sup>th</sup>, 2014
 | status                 = stable, active
 | category               = [[:Category:Registration|Registration]]
 }}{|
