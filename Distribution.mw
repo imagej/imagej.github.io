@@ -138,8 +138,11 @@ If you want to facilitate good science, please [[Open Source|share your source c
 | style="vertical-align: top" |
 * SourceForge predates GitHub; some people prefer it.
 | style="vertical-align: top" |
-* The interface is not as powerful as GitHub and BitBucket: common workflows require many more mouse clicks, the user interfaces of GitHub and BitBucket provide a much better guidance, and SourceForge's servers tend to be very slow compared to GitHub and BitBucket.
-* The collaboration features are vastly inferior.
+* The interface is not as powerful as GitHub and BitBucket: 
+** Common workflows require many more mouse clicks.
+** The user interfaces of GitHub and BitBucket provide much better guidance.
+** SourceForge's servers tend to be very slow compared to GitHub and BitBucket.
+** The collaboration features are vastly inferior.
 * SourceForge has a lot of downtime. (The [http://jenkins.imagej.net/view/Mirrors/ ImageJ mirrors of SourceForge projects] hence have a lot of problems.)
 * Using SourceForge is highly discouraged compared to other code hosting sites.
 |-
