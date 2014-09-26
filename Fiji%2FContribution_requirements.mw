@@ -3,26 +3,57 @@ The driving force behind the Fiji project is the following principle:
 :''If you want to go fast, go alone. If you want to go far, go together.''
 : - ''African proverb''
 
-There are many corollaries to this wisdom, the most prominent: if you write software in your endeavor to discover new insights, [[Open Source]] is the way that brings you farthest. Withholding the source code – like any other method to obstruct other researchers' work, e.g. refusing to share materials and methods  – will invariably have the opposite effect in the long run. 
+There are many corollaries to this wisdom, the most prominent: if you write software in your endeavor to discover new insights, [[Open Source]] is the way that brings you farthest. Withholding the source code – like any other method to obstruct other researchers' work, e.g. refusing to share materials and methods – will invariably have the opposite effect in the long run. Likewise, working with interested parties to improve one's project will invariably lead to a much better and stronger result.
 
 This principle leads to a couple of requirements imposed on the software components shipped with Fiji by default.
 
 = The source code must be freely accessible =
 
-TBD (public repository)
+Components developed in the Fiji context must live in [https://github.com/fiji the ''fiji'' org on GitHub]. This ensures continuity and visibility.
 
 = The development must be open =
 
-TBD (easy entry, e.g. pull requests, encouraging improvements, working together, enhancing upon each others' work, share insights)
+Developers of Fiji components should invite others to contribute. That entails welcoming developers, acknowledging and working on pull requests, encouraging improvements, working together, enhancing upon each others' work, share insights, etc.
+
+To leverage the power of Open Source, the default for discussions should be the mailing lists or GitHub issues/pull requests. In other words, the question to ask should be "Is there any good reason why this conversation should be private?" instead of the opposite.
 
 = Active bug management =
 
-TBD (bug reports need to be acknowledged, participation in resolving bugs should be encouraged whenever possible, bugs should not go uncommented/unresolved for years, explanations are due when bugs go unresolved for years, etc)
+Bug reports need to be acknowledged, participation in resolving bugs should be encouraged whenever possible, bugs should not go uncommented for months (we all have times when we are busy e.g. writing a paper; a little message helps the involved people understand), explanations are due when bugs go unresolved for years, etc
 
-= Reusability =
+= Reusability and reliability =
 
-TBD (Whenever possible, source code should be reused. If necessary, improve the existing source code. Only rewrite from scratch when absolutely necessary, e.g. due to uncollaborative development of the source code in question)
+Whenever possible, source code should be reused. If necessary, improve the existing source code. Only rewrite from scratch when absolutely necessary.
+
+Make code reusable, i.e. define APIs to use the functionality. This requires a little bit of discipline so that third parties can rely on the interfaces.
+
+== Semantic versioning ==
+
+''The'' standard to allow API consistency without obstructing API improvements that require breaking changes is called [http://semver.org/ ''semantic versioning''] (nick name: ''SemVer''). The short version is:
+
+* version numbers consist of the major, the minor and the micro version number (example: version 1.3.7 has major version 1, minor version 3 and micro version 7)
+* new releases containing only bug fixes increase the micro version
+* new releases containing only bug fixes and backwards-compatible API improvements increase the minor version
+* new releases breaking the API increase the major version
+
+In Fiji, we try to use SemVer as much as possible, with one twist: during the major version 0, API breakages only increase the minor version because major version 0 indicates: "the API is still very much in flux".
+
+== Regression tests ==
+
+Writing regression tests is [https://github.com/junit-team/junit/wiki/Getting-started easy]: create a class in the ''src/test/java/'' directory structure and annotate methods with ''@Test'', testing for various [https://github.com/junit-team/junit/wiki/Assertions assertions] (the most common ones are ''assertEquals()'', ''assertTrue()'' and ''assertNotNull()'').
+
+== Continuous integration: Jenkins ==
+
+To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a job of [http://jenkins.imagej.net/view/Fiji ImageJ's Jenkins server] that builds and tests the source code whenever a new revision is made available.
+
+== Maven ==
+
+[[Maven]] provides an industry standard to declare metadata about a project, to build projects using said metadata, and to ''deploy'' the resulting artifacts to a Maven repository (these repositories are essentially for developers what [[Update Sites]] are for users).
+
+All of Fiji's components are deployed by the Jenkins jobs to [http://maven.imagej.net/ the ImageJ Maven repository] or to [http://oss.sonatype.org/ OSS Sonatype]. That way, all Fiji components can be added easily as dependencies to third-party projects.
+
+The Fiji projects inherit a common Maven configuration from a the ''pom-fiji'' parent project. This configuration ensures that not only the compiled ''.jar'' files are deployed, but also the Javadocs and the sources.
 
 = Separation of concerns =
 
-TBD (Features should be put into the best place, e.g. when adding a general-purpose service, scijava-common; avoid bundling UI improvements with plugin implementations and put them into reusable libraries instead, etc)
+New features should be put into the appropriate component, e.g. when adding a general-purpose utility, scijava-common; user interface improvements such as generic support for hyperlinks in ImageJ 1.x' dialogs should not be bundled with individual plugin implementations, but put into reusable libraries instead, etc
