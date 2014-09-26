@@ -17,14 +17,10 @@
 <div style="padding-top:17em;padding-left:1.5em;">
 <div style="font-size:175%;border-bottom:1px dotted #ccc;margin-bottom:0.55em;">Quick links</div>
 
-'''Analysis of traced arbors?'''
-:Jump to [[#Importing|Importing Profiles]]
-'''Segmentation issues?'''
-:Jump to [[#Cf. Segmentation|Cf. Segmentation]] or [[#Pre-processing|Pre-processing]]
-'''Having Problems?'''
-:Jump to [[#FAQ|FAQs]]
-'''Non-Fiji User?'''
-:Jump to [[#Non-Fiji_users|Installation notes]]
+;Analysis of traced arbors?:Jump to [[#Importing|Importing Profiles]]
+;Segmentation issues?:Jump to [[#Cf. Segmentation|Cf. Segmentation]] or [[#Pre-processing|Pre-processing]]
+;Having Problems?:Jump to [[#FAQ|FAQs]]
+;Non-Fiji User?:Jump to [[#Non-Fiji_users|Installation notes]]
 </div>
 </div>
 Automated bitmap Sholl for direct analysis of fluorescent images of neuronal arbors, featuring powerful quantifications  based on curve fitting. Analysis of previously traced arbors is also possible.
