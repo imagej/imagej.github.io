@@ -3,7 +3,7 @@
 {{Infobox
 | software       = ImageJ/Fiji
 | name           = Sholl Analysis
-| author         = Tiago Ferreira, Tom Maddock
+| author         = Tiago Ferreira, Tom Maddock (v1.0.0)
 | maintainer     = [mailto:tiago_dot_ferreira_at_mail_dot_mcgill_dot_ca Tiago Ferreira]
 | source         = {{GitHub|org=tferr|repo=ASA}}
 | filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.4.2.jar Sholl_Analysis.jar]
@@ -30,7 +30,7 @@
 Automated bitmap Sholl for direct analysis of fluorescent images of neuronal arbors, featuring powerful quantifications  based on curve fitting. Analysis of previously traced arbors is also possible.
 
 == Introduction ==
-<span id="CA1CellMask"></span>[[ File:BitmapSholl-CA1mask.png|frame|[[Skeletonize3D|Skeletonized]] mouse hippocampal CA1 cell <ref name="Gross"></ref> in which apical and basal dendrites have been analyzed [[#CA1CellPlot|separately]] and [[#Output_Options|color coded]] according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''r<sub>c</sub>'') and [[#MeanValueOfFunction|Mean value]] (''N<sub>av</sub>'') are indicated.]]
+<span id="CA1CellMask"></span>[[ File:BitmapSholl-CA1mask.png|frame|[[Skeletonize3D|Skeletonized]] hippocampal CA1 cell<ref name="Gross"></ref> (juvenile mouse) in which apical and basal dendrites have been analyzed [[#CA1CellPlot|separately]] and [[#Output_Options|color coded]] according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''r<sub>c</sub>'') and [[#MeanValueOfFunction|Mean value]] (''N<sub>av</sub>'') are indicated.]]
 
 The Sholl technique<ref name="Sholl"></ref> is used to describe neuronal arbors. This plugin performs  Sholl directly on 2D and 3D grayscale images of isolated neurons. Its internal algorithm to collect data is based upon how Sholl analysis is done by hand — it creates a series of concentric ''shells'' (circles or spheres) around the focus of a neuronal arbor, and counts how many times the arbor intersects the sampling shells.
 The major advantages of this plugin over other implementations are:
@@ -52,10 +52,9 @@ The plugin requires a binary image or a segmented grayscale image containing a s
 Input values take into account the scale information of the image that can be set using the <span style="border-bottom:1px dotted #ccc;">Analyze▷ Set Scale...</span> or <span style="border-bottom:1px dotted #ccc;">Image▷ Properties...</span> (<span style="display:inline-block;">{{key press|Shift|P}} </span>). The prompt is organized into 5 sections:
 
 ==== Definition of Shells ====
-* <span id="StartRadius"></span>'''Starting radius''' <sup>&nbsp;</sup>The radius of the smallest sampling circle/sphere, i.e., the first distance to be sampled.<span id="CA1CellPlot"></span>
-[[File:BitmapSholl-CA1Compartment.png|frame|right|Linear plot for CA1 cell [[#CA1CellMask|described above]]. Using the soma as center, data was sampled twice using the ''Restrict analysis to hemicircle/hemisphere'' option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid over the plot canvas. Note that it is also possible to restrict curve fitting to a sub-range of distances once [[#Importing|data is collected]].]]
-* <span id="EndRadius"></span>'''Ending radius''' <sup>&nbsp;</sup>The radius of the largest sampling circle/sphere. Note that this distance may not be actually sampled, if ''Radius step size'' is not a divisor of ''Ending radius''-''Starting radius''.
-'''N.B.''' You can clear ''Ending radius'' or set it to ''NaN'' ("Not a Number") to sample the entire image. This is particularly useful when running the plugin from a [[#Batch_Processing|macro]] that processes images with different dimensions.
+* <span id="StartRadius"></span>'''Starting radius''' <sup>&nbsp;</sup>The radius of the smallest sampling circle/sphere, i.e., the first distance to be sampled.
+* <span id="EndRadius"></span>'''Ending radius''' <sup>&nbsp;</sup>The radius of the largest (last) sampling circle/sphere. It is automatically calculated if a [[#Usage|line ROI is used]]. Note that the specified distance may not be actually sampled, if ''Radius step size'' is not a divisor of ''Ending radius''-''Starting radius''. In this case, the program will choose the largest possible distance smaller than the specified value.<span id="CA1CellPlot"></span>
+'''N.B.''' You can clear ''Ending radius'' or set it to ''NaN'' ("Not a Number") to sample the entire image. This is particularly useful when [[#Batch_Processing|batch processing]] images with different dimensions.[[File:BitmapSholl-CA1Compartment.png|frame|right|Linear plot for CA1 cell [[#CA1CellMask|described above]]. Using the soma as center, image was sampled twice using the [[#Restrict|Restrict analysis to hemicircle/hemisphere]] option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict [[#MethodsTable|curve fitting]] to a sub-range of distances once [[#Importing|data is collected]].]]
 * <span id="StepSize"></span>'''Radius step size''' <sup>&nbsp;</sup>The sampling interval between radii of consecutive sampling circles/spheres. This value may be set to zero for continuous (1-voxel increment) measurements.
 '''N.B.''' For stacks with anisotropic voxel size, setting ''Radius step size'' to zero, sets the step length to the dimension of the matching isotropic voxel, i.e., the cube root of the product of the voxel dimensions (3D images) or the square root of the product of the pixel dimensions (2D images).
 
@@ -63,11 +62,10 @@ Input values take into account the scale information of the image that can be se
 '''N.B.''' For horizontal lines, this option instructs the algorithm to measure intersections at sites equidistant from the center that have y-coordinates above/below the drawn line. For vertical lines, it instructs the plugin to measure intersections at sites equidistant from the center that have x-coordinates to the left/right of the drawn line.
 
 ==== Multiple Samples and Noise Reduction ====
-[[ File:BitmapSholl-Prompt_v3.png|320px|right |Main prompt (version 3.4.1)]]
 * '''Samples per radius ''(2D images only)''''' <sup>&nbsp;</sup>Defines the number of measurements to be performed at each sampling circumference. These measurements are then combined into a single value according to the chosen [[#SamplesIntegration|integration method]]. This strategy, a break from previous approaches, increases the accuracy of non-continuos profiles by diluting out the effect of processes extending tangent to the sampling circumference.
-:Visually, this option can be imagined as the "thickness" of the sampling circumference: e.g., for a radius of 100 pixels and a value of 3 ''Samples per radius'', the final number of intersections would integrate the measurements sampled at distances 99, 100 and 101.
-:Note that it would not make sense to increase the number of samples beyond the length (in pixels) of ''Radius step size''. For this reason, this option is limited to a draconian (and arbitrary) maximum of 10 samples.
+:Visually, this option can be imagined as the "thickness" of the sampling circumference: e.g., for a radius of 100 pixels and a value of 3 ''Samples per radius'', the final number of intersections would integrate the measurements sampled at distances 99, 100 and 101. [[ File:BitmapSholl-Prompt_v3.png|320px|right |Main prompt (version 3.4.1)]]
 
+:Note that it would not make sense to increase the number of samples beyond the length (in pixels) of ''Radius step size''. For this reason, this option is limited to a draconian (and arbitrary) maximum of 10 samples.
 * <span id="SamplesIntegration"></span>'''Samples integration ''(2D images only)''''' <sup>&nbsp;</sup>The measure of central tendency used to combine intersection counts when multiple ''Samples per radius'' are used. Options are ''Mean'' (the default), ''Median'' or ''Mode''.
 
 * '''Ignore isolated (6-connected) voxels ''(3D images only)''''' <sup>&nbsp;</sup>If checked, single isolated voxels intersecting the surface of sampling spheres are not taken into account, which may allow for smoother profiles on noisy image stacks. However, it should be noted that connectivity in the stack volume may not reflect connectivity on the surface of a digitized sphere. Indeed, in certain contexts, it is possible (though unlikely) to obtain higher intersection counts when this filtering option is active.
@@ -266,10 +264,10 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 To use it:
 #Locate the profile generated by a previous run of the plugin or by SNT. Note that any tab or comma delimited text file (.csv or .txt) can be used.
 #Run the plugin while holding {{key press|Alt}}
-'''N.B.''' You can drag & drop .csv and .txt files into the main ImageJ window or use <span style="border-bottom:1px dotted #ccc;">File▷ Import▷ Results...</span> If the table to be analyzed already exists in a separated window, right-click on it, choose ''Rename'' and rename it to ''Results''. This will automatically transfer its data into the ImageJ Results table
+'''N.B.''' [[#Batch Processing|Batch processing]] of tabular data is also [[#Batch Analysis of Tabular Data|possible]]. Alternatively, you can drag & drop .csv and .txt files into the main ImageJ window or use <span style="border-bottom:1px dotted #ccc;">File▷ Import▷ Results...</span> If the table to be analyzed already exists in a separated window, right-click on it, choose ''Rename'' and rename it to ''Results''. This will automatically transfer its data into the ImageJ Results table.
 
 === Obtaining Profiles from Tracings ===
-#Load tracings (typically a .swc or a .traces file) into [[Simple_Neurite_Tracer:_Basic_Instructions|Simple Neurite Tracer]]. Note that '''.swc files created by any other software''' (such as [[#Related Resources|Neuromantic]]) '''can also be used'''. If needed, [[#Related Resources|L-measure]] can be used to convert proprietary file formats such as the ones generated by Neurolucida® (MicroBrightField, Inc.).
+#Load tracings (typically a .swc or a .traces file) into [[Simple_Neurite_Tracer:_Basic_Instructions|Simple Neurite Tracer]]. Note that .swc files created by any other software (such as [[#Related Resources|Neuromantic]]) can also be used. If needed, [[#Related Resources|L-measure]] can be used to convert proprietary file formats such as the ones generated by Neurolucida® (MicroBrightField, Inc.).
 #Retrieve the linear Sholl profile by following these [[Simple_Neurite_Tracer:_Sholl_analysis|instructions]]
 #Export ''detailed data''  (.csv file).
 
@@ -390,18 +388,22 @@ Of course you can also automate any preceding steps. However, do not forget to e
 run("Sholl Analysis...", "starting=10 ending=NaN radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 </source>
 That's it. Use the Macro Recorder to generate the customizations you will need before parsing the entire folder of images with <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span>
-
-'''Tip:''' As you may have noticed, ImageJ plugins are controlled by a single sentence  in which arguments are separated by a space. Input fields and choice lists appear as ''keyword=value'' pairs, active checkboxes by a single keyword. Options that are not needed can be omitted. This makes it easier to generate customizable macros:
+{{Tip
+| tip = As you may have noticed, ImageJ plugins are controlled by a single lowercase sentence  in which arguments are separated by a space. Input fields and choice lists appear as ''keyword=value'' pairs, active checkboxes by a single keyword. Options that are not needed can be omitted. This makes it easier to generate customizable macros:
+<div style="width:98%;">
 <source lang="java">
 start = 10;  // variable that controls starting radius
 end   = 200; // variable that controls ending radius
 step  = 2;   // variable that controls step size
 
 // Run the plugin
-run("Sholl Analysis...", "starting="+ start +" ending="+ end +"radius_step="+ step +" infer linear save do");
+run("Sholl Analysis...", "starting="+ start +" ending="+ end
+        +"radius_step="+ step +" infer linear save do");
 </source>
+</DIV>
+}}
 === Batch Analysis of Tabular Data ===
-If you already have obtained profiles from traced cells and would like to retrieve the same [[#Metrics|metrics]] calculated by the plugin when analyzing bitmap images, you can use the [http://imagej.net/developer/macro/functions.html#setKeyDown setKeyDown("alt")] as when [[#Importing|triggering this option]] through the ImageJ menu. Here is an example macro that runs the plugin over a folder of .csv files containing Sholl profiles produced by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]]:
+If you already have [[#Importing|obtained profiles]] (either from previous runs or from [[#Obtaining Profiles from Tracings|traced cells]]) and would like to extract new [[#Metrics|metrics]] from such data, you can use the [http://imagej.net/developer/macro/functions.html#setKeyDown setKeyDown("alt")] as when [[#Importing|triggering this option]] through the ImageJ menu. Here is an example macro that runs the plugin over a folder of .csv files containing Sholl profiles produced by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]]:
 
 <source lang="java">
 distanceCol = "Radius";		// Column in .csv file listing distances
@@ -459,10 +461,10 @@ function closeResults() {
 		Have a look at [[#Pre-processing| Pre-processing]].
 	</dd></dl>
 	<li>
-		<span id="faq:accuray"></span>'''My bitmap profiles are different from traced ones of the same cells. Why?'''
+		<span id="faq:accuracy"></span>'''My bitmap profiles are different from the ones obtained from tracings of the same cells. Why?'''
 	</li>
 	<dl><dd>
-		As mentioned several times, the quality of the analysis relies on how the arbor was segmented. If you are working with grayscale images you probably need to optimize your [[#Pre-processing|segmentation routines]]. If you already obtained binary images make sure you are [[#Cf._Segmentation|interpreting them properly]].
+		As mentioned several times, the quality of the analysis relies on how the arbor was segmented. If you are working with grayscale images you probably need to optimize your [[#Pre-processing|segmentation routines]]. On the other hand, if you already obtained binary images make sure you are [[#Cf._Segmentation|interpreting them properly]]. You should also confirm that [[#EndRadius |Ending radius]] does not intersect objects in the image canvas that extend beyond the analyzed arbor. As a rule of thumb, always refer to the [[#faq:sholl-mask|Sholl mask]] to visually inspect which regions of the image have been measured.
 	</dd></dl>
 </ol>
 
@@ -512,13 +514,13 @@ function closeResults() {
 		<span id="faq:precision"></span>'''Can I modify the way data is displayed?'''
 	</li>
 	<dl><dd>
-		Mostly. To modify the number of decimal places used by the ''Sholl Results'' table use the options ''Decimal places'' and ''Scientific notation'' in <span style="border-bottom:1px dotted #ccc;">Analyze▷ Set Measurements…</span>. The resize plots, use the options in <span style="border-bottom:1px dotted #ccc;">Edit▷ Options▷ Profile Plot Options...</span>
+		Mostly. To modify the number of decimal places used by the ''Sholl Results'' table use the options ''Decimal places'' and ''Scientific notation'' in <span style="border-bottom:1px dotted #ccc;">Analyze▷ Set Measurements…</span>. To resize plots, use the options in <span style="border-bottom:1px dotted #ccc;">Edit▷ Options▷ Profile Plot Options...</span>
 	</dd></dl>	
 	<li>
 		<span id="faq:sholl-mask"></span>'''What is the ''Sholl mask''?'''
 	</li>
 	<dl><dd>
-		The Sholl mask ([[#CA1CellMask|see example above]]) is simply an illustration: a maximum intensity projection of the analyzed cell in which intersection counts are used as pixel intensities. As explained in [[#Output_Options|Output Options]], its LUT can be modified, and intensities calibrated using ImageJ default commands. As mentioned, it can also be used to visually inspect for [[#Cf._Segmentation|segmentation artifacts]].
+		The Sholl mask ([[#CA1CellMask|see example of CA1 cell]]) is simply an illustration: a maximum intensity projection of the analyzed cell in which [[##Output_Options|intersection counts]] are used as pixel intensities. As explained in [[#Output_Options|Output Options]], its LUT can be modified, and intensities calibrated using ImageJ default commands. As mentioned, it can also be used to visually inspect for [[#Cf._Segmentation|segmentation artifacts]].
 	</dd></dl>
 	<li>
 		<span id="faq:3Dvs2D"></span>'''The 3D profile looks ''worse'' than the 2D profile of the Maximum Intensity Projection of the same cell. Why?'''
@@ -598,7 +600,7 @@ Please note that Fiji is the most convenient way of keeping your ImageJ distribu
 Releases notes are available on {{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Github}}. If you do not mind unstable software, {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=development builds}} may be found [http://jenkins.imagej.net/job/Sholl-Analysis here]. Once new features mature and no major issues are found these development versions will be made available, as usual, through [[Update_Fiji|Fiji's Updater]].
 
 == Related Resources ==
-* '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]]''' Mark Longair's plugin for semi-automated three-dimensional tracing, featuring [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl analysis]] for traced cells
+* '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]] (SNT)''' Mark Longair's plugin for semi-automated three-dimensional tracing, featuring [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl analysis]] for traced cells
 
 * '''[[BAR]]''', ''B''roadly ''A''pplicable ''R''outines that complement ''Sholl Analysis''
 
@@ -608,7 +610,7 @@ Releases notes are available on {{GitHub|org=tferr|repo=ASA|path=Notes.md#releas
 
 * '''[http://cng.gmu.edu:8080/Lm/ L-Measure (LM)]''' LM computes a large number of neuroanatomical parameters from reconstructions and is capable of [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC] conversion. [http://www.reading.ac.uk/neuromantic/ Neuromantic] and [http://www.neuron.yale.edu/neuron/ Neuron] can also be used to convert several file formats (Eutectic, Neurolucida, MorphML, ...) into .swc.
 
-* '''[http://www.imagescience.org/meijering/software/neuronj/ NeuronJ]''' ImageJ plugin for semi-automated tracing and quantification of two-dimensional arbors
+* '''[http://www.imagescience.org/meijering/software/neuronj/ NeuronJ]''' ImageJ plugin for semi-automated tracing and quantification of two-dimensional arbors. Note that '[[Simple_Neurite_Tracer|SNT]] can also be used to trace 2D images.
 
 == Citations ==
 
