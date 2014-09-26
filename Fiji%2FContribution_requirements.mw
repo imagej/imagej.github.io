@@ -42,6 +42,8 @@ In Fiji, we try to use SemVer as much as possible, with one twist: during the ma
 
 Writing regression tests is [https://github.com/junit-team/junit/wiki/Getting-started easy]: create a class in the ''src/test/java/'' directory structure and annotate methods with ''@Test'', testing for various [https://github.com/junit-team/junit/wiki/Assertions assertions] (the most common ones are ''assertEquals()'', ''assertTrue()'' and ''assertNotNull()'').
 
+In particular when fixing a bug, it is a good idea to write a regression test ''first'', making sure that it actually fails. After that, one should develop the fix, getting a cozy and warm feeling once the regression test passes.
+
 == Continuous integration: Jenkins ==
 
 To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a job of [http://jenkins.imagej.net/view/Fiji ImageJ's Jenkins server] that builds and tests the source code whenever a new revision is made available.
