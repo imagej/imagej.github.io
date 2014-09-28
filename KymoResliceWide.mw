@@ -42,7 +42,9 @@ Where following options are available (in order):
 * (unchecked) time as y-axis, distance as x-axis, (checked) time as x-axis, distance as y-axis; 
 * (checked) curve will be added and displayed in the overlay of original movie/stack to mark already analyzed region.
 
+== Other kymograph plugins == 
 
+As alternative, there is very well documented [[Multi Kymograph]] plugin and its updated version [http://biop.epfl.ch/TOOL_KYMOGRAPH.html Kymograph tool].
 
 [[Category:Stacks]]
 [[Category:Plugins]]
