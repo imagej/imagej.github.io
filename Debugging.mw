@@ -118,17 +118,23 @@ Often, dynamic library issues are connected to a dependent .dll file missing. Do
 
 = Debugging JVM hangs =
 
-When the Java VM hangs, the reason might be a dead-lock. You can often find out what is happening by reading the thread dump (aka "stack trace" - a snapshot of what is being executed in the JVM). You can acquire a thread dump in either of the following ways:
-
-* If you [[#Command line debugging|launch Fiji from the console]], you can press {{key|Ctrl}}+{{key|\}} in the same console to print the stack trace. On Windows, you may need to press {{key|Ctrl}}+{{key|Pause}} (i.e., {{key|Break}}) instead of {{key|Ctrl}}+{{key|\}}.
-* Alternately, you can use the ''jstack'' command (you don't need to run Fiji from the command line in this case). This requires that you first find the PID (process ID) of Fiji. You can do so by running:
+When the Java VM hangs, the reason might be a dead-lock. You can often find out what is happening by reading the thread dump (aka "stack trace" - a snapshot of what is being executed in the JVM). You can acquire a thread dump in one of the following ways:
+<ol>
+<li style="padding-bottom: 15px">
+If you [[#Command line debugging|launch Fiji from the console]], you can press {{key|Ctrl}}+{{key|\}} in the same console to print the stack trace. On Windows, you may need to press {{key|Ctrl}}+{{key|Pause}} (i.e., {{key|Break}}) instead of {{key|Ctrl}}+{{key|\}}.
+</li>
+<li style="padding-bottom: 5px">
+You can use the ''jstack'' command (you don't need to run Fiji from the command line in this case). This requires that you first find the PID (process ID) of Fiji. You can do so by running:
 <source lang="bash">jps</source>
 ::from the command line to print a list of running Java processes. If you're not sure which PID is Fiji's, you can close Fiji, run ''jps'', open Fiji and run ''jps'' again. Whichever PID is present in the second run but not the first is Fiji's. Then, to acquire a stack trace, just run:
 <source lang="bash">jstack <Fiji's PID></source>
-
+</li>
+<li>
 For GUI-based debugging, can also attach to the Fiji PID using the ''jvisualvm'' program that you can find in ''java/<platform>/<jdk>/bin/''. Here you can simply press a big ''Thread Dump'' button to view the stack trace.
 
 MacOSX users, please note that Apple decided that the VisualVM tool should no longer be shipped with the Java Development Kit; you will have to download it [http://visualvm.java.net/download.html from here].
+</li>
+</ol>
 
 Regardless of which method you use to acquire the stack trace, to debug you will want to acquire multiple stack traces over time and compare. If all the stack traces are in the same method execution, then that's the source of the deadlock (or slowdown).
 
