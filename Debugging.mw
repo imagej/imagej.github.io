@@ -126,7 +126,7 @@ If you [[#Command line debugging|launch Fiji from the console]], you can press {
 <li style="padding-bottom: 5px">
 You can use the ''jstack'' command (you don't need to run Fiji from the command line in this case). This requires that you first find the PID (process ID) of Fiji. You can do so by running:
 <source lang="bash">jps</source>
-::from the command line to print a list of running Java processes. If you're not sure which PID is Fiji's, you can close Fiji, run ''jps'', open Fiji and run ''jps'' again. Whichever PID is present in the second run but not the first is Fiji's. Then, to acquire a stack trace, just run:
+from the command line to print a list of running Java processes. If you're not sure which PID is Fiji's, you can close Fiji, run ''jps'', open Fiji and run ''jps'' again. Whichever PID is present in the second run but not the first is Fiji's. Then, to acquire a stack trace, just run:
 <source lang="bash">jstack <Fiji's PID></source>
 </li>
 <li>
