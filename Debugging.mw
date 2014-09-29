@@ -124,13 +124,13 @@ When the Java VM hangs, the reason might be a dead-lock. You can often find out 
 If you [[#Command line debugging|launch Fiji from the console]], you can press {{key|Ctrl}}+{{key|\}} in the same console to print the stack trace. On Windows, you may need to press {{key|Ctrl}}+{{key|Pause}} (i.e., {{key|Break}}) instead of {{key|Ctrl}}+{{key|\}}.
 </li>
 <li style="padding-bottom: 5px">
-You can use the ''jstack'' command (you don't need to run Fiji from the command line in this case). This requires that you first find the PID (process ID) of Fiji. You can do so by running:
+You can use the <code>jstack</code> command (you don't need to run Fiji from the command line in this case). This requires that you first find the PID (process ID) of Fiji. You can do so by running:
 <source lang="bash">jps</source>
-from the command line to print a list of running Java processes. If you're not sure which PID is Fiji's, you can close Fiji, run ''jps'', open Fiji and run ''jps'' again. Whichever PID is present in the second run but not the first is Fiji's. Then, to acquire a stack trace, just run:
+from the command line to print a list of running Java processes. If you're not sure which PID is Fiji's, you can close Fiji, run <code>jps</code>, open Fiji and run <code>jps</code> again. Whichever PID is present in the second run but not the first is Fiji's. Then, to acquire a stack trace, just run:
 <source lang="bash">jstack <Fiji's PID></source>
 </li>
 <li>
-For GUI-based debugging, can also attach to the Fiji PID using the ''jvisualvm'' program that you can find in ''java/<platform>/<jdk>/bin/''. Here you can simply press a big ''Thread Dump'' button to view the stack trace.
+For GUI-based debugging, can also attach to the Fiji PID using the <code>jvisualvm</code> program that you can find in <code>java/<platform>/<jdk>/bin/</code>. Here you can simply press a big ''Thread Dump'' button to view the stack trace.
 
 MacOSX users, please note that Apple decided that the VisualVM tool should no longer be shipped with the Java Development Kit; you will have to download it [http://visualvm.java.net/download.html from here].
 </li>
