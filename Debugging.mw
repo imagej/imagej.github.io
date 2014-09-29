@@ -339,7 +339,7 @@ On MacOSX, you need to remember that any application is just a directory with a 
 
 <source lang="bash">
 cd /Applications/Fiji.app/Contents/MacOS/
-cp fiji-macosx debug
+cp ImageJ-macosx debug
 ./debug
 </source>
 
