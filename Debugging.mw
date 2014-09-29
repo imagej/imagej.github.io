@@ -142,7 +142,7 @@ Regardless of which method you use to acquire the stack trace, to debug you will
 
 Sometimes, memory is not released properly, leading to OutOfMemoryExceptions.
 
-One way to find out what is happening is to use ''jvisualvm'' (see [[#Debugging JVM hangs]]) to connect to the Fiji process, click on ''Heap Dump'' in the ''Monitor'' tab, in said tab select the sub-tab ''Classes'' and sort by size. Double-clicking on the top user should get you to a detailed list of ''Instances'' where you can expand the tree of references to find out what is holding a reference still.
+One way to find out what is happening is to use <code>jvisualvm</code> (see [[#Debugging JVM hangs]]) to connect to the Fiji process, click on ''Heap Dump'' in the ''Monitor'' tab, in said tab select the sub-tab ''Classes'' and sort by size. Double-clicking on the top user should get you to a detailed list of ''Instances'' where you can expand the tree of references to find out what is holding a reference still.
 
 = Debugging hard JVM crashes =
 
