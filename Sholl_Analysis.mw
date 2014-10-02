@@ -6,13 +6,12 @@
 | author         = Tiago Ferreira, Tom Maddock (v1.0.0)
 | maintainer     = [mailto:tiago_dot_ferreira_at_mail_dot_mcgill_dot_ca Tiago Ferreira]
 | source         = {{GitHub|org=tferr|repo=ASA}}
-| filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.4.2.jar Sholl_Analysis.jar]
+| filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.4.3.jar Sholl_Analysis.jar]
 | released       = December 2012
-| latest version = '''3.4.2 July 2014''' ({{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}})
+| latest version = '''3.4.3 October 2014''' ({{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}})
 | status         = See [[#Release Notes and Pre-releases|Pre-releases]] and {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=Development Notes}}
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]]
 }}
-
 <!-- Create a short TOC next to main Contents -->
 <div style="padding-top:17em;padding-left:1.5em;">
 <div style="font-size:175%;border-bottom:1px dotted #ccc;margin-bottom:0.55em;">Quick links</div>
@@ -43,7 +42,10 @@ The plugin requires a binary image or a segmented grayscale image containing a s
 # Run <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span>, adjusting the default [[#Parameters|Parameters]] in the dialog prompt.
 # Press [[#Cf._Segmentation|Cf. Segmentation]] to visually inspect the two thresholded phases: ''arbor'' and ''background''.
 # Problems? Read the  [[#FAQ|FAQs]].
-
+{{Tip
+| id = Paper
+| tip = This program is described in [http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html Nature methods]. The manuscript uses ''Sholl Analysis'' to describe and classify morphologically challenging cells and is accompanied by a [http://www.nature.com/nmeth/journal/v11/n10/extref/nmeth.3125-S1.pdf Supplementary Note] that presents the software in greater detail. Please [[#faq:citing|cite it]] when acknowledging the plugin in your published research. 
+}}
 == Parameters ==
 Input values take into account the scale information of the image that can be set using the <span style="border-bottom:1px dotted #ccc;">Analyze▷ Set Scale...</span> or <span style="border-bottom:1px dotted #ccc;">Image▷ Properties...</span> (<span style="display:inline-block;">{{key press|Shift|P}} </span>). The prompt is organized into 5 sections:
 
@@ -95,8 +97,6 @@ Input values take into account the scale information of the image that can be se
 }}
 ==== Cf. Segmentation ====
 Press ''Cf. Segmentation'' to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the ''B&W'' lookup table in the Threshold Widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> {{key press|Shift|T}}). ''Cf. Segmentation'' allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [http://diademchallenge.org DIADEM] dataset<ref name="DIADEM"/>:
-
-
 {|
 |<span style="display:inline-block;text-align:center;width:310px">Segmented image</span> <span style="display:inline-block;text-align:center;width:160px">''Cf. Segmentation output''</span> <span style="display:inline-block;text-align:center;width:270px">''Intersections mask''</span>
 |-
@@ -251,7 +251,6 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 :The coefficient of determination of the polynomial fit described in [[#eq1|(1)]].
 
 <span id="Importing"></span>
-
 == Importing Tabular Data ==
 [[ File:BitmapSholl-TabularPrompt.png|320px|right |Tabular prompt (version 3.4.3)]]'''This feature is triggered by holding {{key press|Alt}} while running  <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span>''', which basically instructs the program to read data from the ImageJ Results table rather than the active image. This change in input data offers two main advantages:
 *It can be used to analyze profiles obtained from traced cells in [[Simple Neurite Tracer]] (SNT), Fiji's remarkable framework for semi-automated reconstruction of neuronal arbors. This is particularly relevant for stainings that do not allow single-cell resolution.
@@ -283,7 +282,6 @@ Most options in the ''Tabular prompt'' are explained in the description of the d
 {{Tip
 | tip = You can shuttle between the ''[[#Multiple Samples and Noise Reduction|Bitmap]]'' and ''[[#Importing|Tabular]]'' prompts by {{key press|Alt}}-clicking their Cancel button. The shortcut is easy to remember: {{key press|Alt}} is always the trigger that changes the type of data to be analyzed.
 }}
-
 == Complementary Tools ==
 <span id="Extended_Fitting"></span>[[ File:AnimatedPolyFit.gif|frame|Sampled data from the ddaC cell (<span style="border-bottom:1px dotted #ccc;">File▷ Open Samples▷ ddaC Neuron</span>) being fitted to polynomials of varying degree using a complementary [[BAR]] script.]]
 
@@ -337,7 +335,7 @@ This section discusses some aspects that should be taken into account when segme
 Any macro or script must allow the Sholl Analysis plugin to access the ROI marking the center of analysis. One could instruct ImageJ to read the coordinates of pre-existing ROIs from a text file, store a list of line selections in the ROI Manager, or write a morphology-based routine that detects the center of the arbor. However, marking the center of analysis is probably something that you will want to do manually. Here is a workflow:
 
 #Place all the .tif images to be processed in a single folder.
-#Select the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> in the main ImageJ window. Make sure ''Set stack positions'' is active in the <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Overlay Options...</span> prompt.
+#Select the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> in the main ImageJ window. With 3D images, make sure ''Set stack positions'' is active in the <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Overlay Options...</span> prompt.
 #Open the first image and press {{key press|Shift|T}} to activate the Threshold widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span>).
 #Adjust threshold levels. Press the ''Apply'' button of the Threshold widget to create a binary image.
 #Select the z-slice containing the center of analysis. Click over the center with the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span> and press {{key press|B}} (shortcut for <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Add Selection...</span>). This will add the point ROI to the image overlay. Save the image as .TIFF by pressing {{key press|S}} (<span style="border-bottom:1px dotted #ccc;">File▷ Save As...▷ Tiff...</span>).
@@ -348,8 +346,8 @@ Any macro or script must allow the Sholl Analysis plugin to access the ROI marki
 }}
 Now that all the images are marked, we just need to ask ImageJ to generate some lines of code. We will open the Macro Recorder (<span style="border-bottom:1px dotted #ccc;">Plugins▷ Macros▷ Record...</span>) and run ''Sholl Analysis'' on one of the images to find out how to call the plugin with suitable parameters. In this example, we will use the ImageJ macro language. The single line of code that appears in the recorder window will look something like this:
 <source lang="java">
-// Recording Sholl Analysis version 3.4.2
-// Visit http://fiji.sc/Sholl_Analysis#Batch_Processing for scripting examples
+// Recording Sholl Analysis version 3.4.3
+// Visit http://fiji.sc/Sholl#Batch_Processing for scripting examples
 run("Sholl Analysis...", "starting=10 ending=400 radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 </source>
 
@@ -396,9 +394,8 @@ step  = 2;   // variable that controls step size
 run("Sholl Analysis...", "starting="+ start +" ending="+ end
         +" radius_step="+ step +" infer linear save do");
 </source>
-</DIV>
+</div>
 }}
-
 === Batch Analysis of Tabular Data ===
 If you already have [[#Importing|obtained profiles]] (either from previous runs or from [[#Obtaining Profiles from Tracings|traced cells]]) and would like to extract new [[#Metrics|metrics]] from such data, you can use the [http://imagej.net/developer/macro/functions.html#setKeyDown setKeyDown("alt")] as when [[#Importing|triggering this option]] through the ImageJ menu. Here is an example macro that runs the plugin over a folder of .csv files containing Sholl profiles produced by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]]:
 
@@ -440,6 +437,15 @@ function closeResults() {
 '''General'''
 <ol>
 	<li>
+		<span id="faq:citing"></span>'''How do I cite ''Sholl Analysis'''''?
+	</li>
+	<dl><dd>
+		The authoritative reference for ''Sholl Analysis'' is:
+* Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. ('''2014'''), [http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html Neuronal morphometry directly from bitmap images], ''Nature Methods'' 11(10): 982–984.
+The [[How to cite Fiji?|authoritative reference]] for Fiji:
+* Schindelin J, Arganda-Carreras I, Frise E, Kaynig V, Longair M, Pietzsch T, Preibisch S, Rueden C, Saalfeld S, Schmid B, Tinevez JY, White DJ, Hartenstein V, Eliceiri K, Tomancak P, Cardona A. ('''2012''') [http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html Fiji: an open-source platform for biological-image analysis], ''Nature Methods'' 9(7): 676-682.
+	</dd></dl>
+	<li>
 		<span id="faq:plugin"></span>'''What is the difference between ''Sholl Analysis'' and an homonymous plugin released by the Ghosh laboratory in 2005'''?
 	</li>
 	<dl><dd>
@@ -466,7 +472,7 @@ function closeResults() {
 </ol>
 
 '''Analysis'''
-<ol START="5">
+<ol START="6">
 	<li>
 		<span id="faq:image-types"></span>'''The plugin complains about a wrong image type. Why?'''
 	</li>
@@ -500,7 +506,7 @@ function closeResults() {
 </ol>
 
 '''Results'''
-<ol START="10">
+<ol START="11">
 	<li>
 		<span id="faq:Sholl-table"></span>'''How can I save/edit the ''Sholl Results'' table?'''
 	</li>
@@ -534,7 +540,7 @@ function closeResults() {
 </ol>
 
 '''Metrics and Curve Fitting'''
-<ol START="15">
+<ol START="16">
 	<li>
 		<span id="faq:AUC"></span>'''Would it be possible to retrieve the Area Under the Curve  (linear Sholl plot)?'''
 	</li>
@@ -557,7 +563,7 @@ one could retrieve the AUC of the polynomial fit, but such property is already c
 </ol>
 
 '''Batch Processing'''
-<ol START="18">
+<ol START="19">
 	<li>
 		<span id="faq:recorder"></span>'''The code that the Macro Recorder produced does not seem to work. What am I doing wrong?'''
 	</li>
@@ -567,12 +573,12 @@ one could retrieve the AUC of the polynomial fit, but such property is already c
 </ol>
 
 '''Development'''
-<ol START="19">
+<ol START="20">
 	<li>
 		<span id="faq:bug-report"></span>'''I found a bug. How do I report it?'''
 	</li>
 	<dl><dd>
-		Use Fiji's built-in [[Report a Bug]] command. Alternatively, report it to the [http://imagej.net/list.html ImageJ mailing list] or file an [https://github.com/tferr/ASA/issues issue] on GitHub. Don't forget to include the [[Bug reporting best practices|steps needed to reproduce the problem]]. You may also want to check the {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=release notes}} for the latest [http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/ development version] to see if the issue has meanwhile been addressed.
+		Use Fiji's built-in [[Report a Bug]] command, report it to the [http://imagej.net/list.html ImageJ mailing list] or file an [https://github.com/tferr/ASA/issues issue] on GitHub. Don't forget to include the [[Bug reporting best practices|steps needed to reproduce the problem]]. You may also want to check the {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=release notes}} for the latest [http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/ development version] to see if the issue has meanwhile been addressed.
 	</dd></dl>
 	<li>
 		<span id="faq:updates"></span>'''My version is not the latest after running <span style="border-bottom:1px dotted #ccc;">Help▷ Update Fiji...</span> Why?'''
@@ -597,7 +603,7 @@ Please note that Fiji is the most convenient way of keeping your ImageJ distribu
 Releases notes are available on {{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Github}}. If you do not mind unstable software, {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=development builds}} may be found [http://jenkins.imagej.net/job/Sholl-Analysis here]. Once new features mature and no major issues are found these development versions will be made available, as usual, through [[Update_Fiji|Fiji's Updater]].
 
 == Related Resources ==
-* '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]] (SNT)''' Mark Longair's plugin for semi-automated three-dimensional tracing, featuring [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl analysis]] for traced cells
+* '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]] (SNT)''' Mark Longair's plugin for semi-automated three-dimensional tracing. Data from [[Simple_Neurite_Tracer:_Sholl_analysis|SNT]] can be [[#Importing|analyzed]] by the Sholl Analysis plugin.
 
 * '''[[BAR]]''', ''B''roadly ''A''pplicable ''R''outines that complement ''Sholl Analysis''
 
