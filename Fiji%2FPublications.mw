@@ -80,6 +80,8 @@
 
 * The [[MOSAICsuite]] also contains a [[Background Subtractor]].
 
+* [[Sholl Analysis]] was published in Nature Methods<ref> Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. [http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html Neuronal morphometry directly from bitmap images], ''Nature Methods'' 11(10): 982–984, 2014</ref>
+
 == References ==
 
 <references />
