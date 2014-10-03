@@ -4,7 +4,7 @@
 | logo                     = [[Image:Knime-icon-156.png|78px]]
 | author                 = [http://www.knime.org/team KNIME team]
 | maintainer             = [http://www.knime.org/team KNIME team]
-| source                 = {{GitHub|org=knime|repo=knip}}
+| source                 = {{GitHub|org=knime-ip|repo=knip}}
 | status                 = active
 | website                = http://tech.knime.org/community/image-processing
 }}[http://knime.org/ KNIME], the '''K'''o'''n'''stanz '''I'''nformation '''M'''in'''e'''r, is an open source data analytics, reporting and integration platform. KNIME integrates various components for machine learning and data mining through its modular data pipelining concept. A graphical user interface allows assembly of nodes for data preprocessing (ETL: Extraction, Transformation, Loading), for modeling and data analysis and visualization.
