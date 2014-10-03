@@ -49,7 +49,7 @@ We also made great progress on several new lines of development:
 * Type conversion ([https://github.com/imagej/imagej-ops/pull/47 #47])
 * Kernels ([https://github.com/imagej/imagej-ops/pull/48 #48])
 * Projection ([https://github.com/imagej/imagej-ops/pull/51 #51])
-* Conditions ([https://github.com/imagej/imagej-ops/compare/conditions conditions branch])
+* Conditions ([https://github.com/imagej/imagej-ops/pull/73 #73])
 * Features and descriptors ([https://github.com/imagej/imagej-ops/compare/feature-service feature-service branch])
 
 == Future directions ==
