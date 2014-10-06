@@ -1,10 +1,10 @@
 = What are reproducible builds? =
 
-I software ''version'' (or ''build'') is called '''reproducible''' if it is easy to re-generate the exact same software application from the source code.
+A software ''version'' (or ''build'') is called '''reproducible''' if it is easy to regenerate the exact same software application from the source code.
 
 For example, you can refer to "ImageJ 1.49g" as a ''reproducible build'', or to ''Sholl Analysis 3.4.3'', while referring to "ImageJ" is irreproducible.
 
-It gets more subtle when making heavy use of software libraries (sometimes called ''dependencies''). It is known, for example, that many plugins in the now-defunct [[MBF|MacBiophotonics distribution of ImageJ]] worked fine with ImageJ 1.42l, but stopped working somewhere between that version and ImageJ 1.44e. That is, referring to, say, ''the Colocalisation Analysis plugin'' does '''not''' refer to a reproducible build because it is very hard to re-generate a working Colocalisation Analysis and ImageJ 1.x version that could be used to verify previously published results.
+It gets more subtle when making heavy use of software libraries (sometimes called ''dependencies''). It is known, for example, that many plugins in the now-defunct [[MBF|MacBiophotonics distribution of ImageJ]] worked fine with ImageJ 1.42l, but stopped working somewhere between that version and ImageJ 1.44e. That is: referring to, say, ''the Colocalisation Analysis plugin'' does '''not''' refer to a reproducible build because it is very hard to regenerate a working Colocalisation Analysis and ImageJ 1.x version that could be used to verify previously published results.
 
 = Why are reproducible builds so essential for science? =
 
