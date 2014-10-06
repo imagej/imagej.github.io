@@ -8,7 +8,7 @@ It gets more subtle when making heavy use of software libraries (sometimes calle
 
 = Why are reproducible builds so essential for science? =
 
-Arguably '''the most important thing''' in science is to gain insights about nature '''that can be verified by other researchers'''. It is this mission for which Fiji/ImageJ stand, and it is the sole reason why Fiji and ImageJ are [[Open Source]].
+Arguably '''the most important thing''' in science is to gain insights about nature '''that can be verified by other researchers'''. It is this mission for which Fiji/ImageJ stand, and it is the central reason why Fiji and ImageJ are [[Open Source]].
 
 To verify results, it is absolutely necessary to be able to reproduce results claimed in scientific articles, and in the interest of efficiency, it should be '''easy''' to reproduce the results, and it should '''also''' be easy to scrutinize the used methods – incorrect results can be artifacts of flawed algorithms, after all.
 
