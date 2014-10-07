@@ -1,25 +1,27 @@
-* navigation
-** mainpage|mainpage
+* Navigation
+** Welcome|Welcome
+** Downloads|Downloads
 ** News|News
 ** Fiji Usage|Users
 ** Contributors|Contributors
+** Screenshots|Screenshots
+** Publications|Publications
 ** About|About Fiji
 
-* content
-** Documentation|Documentation
-** Downloads|Downloads
+* Documentation
+** Documentation|Overview
 ** Frequently Asked Questions|Frequently Asked Questions
 ** Fiji's Menu|Fiji's Menu
-** Category:Plugins|Plugins
 ** helppage|Contact and Help
 
-* highlights
-** Screenshots|Screenshots
+* Development
+** Development|Overview
+** Scripting Help|Scripting
+
+* Index
+** Category:Plugins|Plugins
 ** Category:Registration|Registration
 ** Category:Stitching|Stitching
 ** Category:Segmentation|Segmentation
-** Scripting Help|Scripting
-** Category:Tutorials|Tutorials 
-** Source code|Development
-** Publications|Publications
+** Category:Tutorials|Tutorials
 ** Special:Categories|All categories
