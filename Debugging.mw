@@ -1,3 +1,4 @@
+{{Development}}
 = Launching ImageJ in debug mode =
 
 To debug problems with ImageJ, it is often helpful to launch it in debug mode. There are several ways:
