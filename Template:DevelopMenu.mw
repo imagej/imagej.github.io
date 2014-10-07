@@ -7,15 +7,23 @@
 * [[Project management]]
 * [[Coding style]]
 * [[Distribution]]
+* [[Debugging intro|Debugging]]
+* [[IDEs]]
 
 '''Tutorials'''
 * [[Writing ImageJ2 plugins]]
 
-[[IDEs]]
-* [[Developing ImageJ in Eclipse|Eclipse]]
-* [[Developing ImageJ in NetBeans|NetBeans]]
-* [[Developing ImageJ in IntelliJ IDEA|IntelliJ IDEA]]
-* [[Developing ImageJ on the command line|Command line]]
+'''Projects'''
+* ImageJ
+** [[Developing ImageJ in Eclipse|Eclipse]]
+** [[Developing ImageJ in NetBeans|NetBeans]]
+** [[Developing ImageJ in IntelliJ IDEA|IntelliJ IDEA]]
+** [[Developing ImageJ on the command line|Command line]]
+* Fiji
+** [[Developing Fiji|Introduction]]
+** [[Developing Fiji in Eclipse|Eclipse]]
+* ImgLib2
+** [[Developing ImgLib2]]
 |}
 
 <noinclude>
