@@ -11,7 +11,7 @@
 }}
 
 This software is a tool for the tracking of low-light sub-resolution objects in fluorescent microscopy. It can be applied in other fields as well. The plugin implements the localization algorithm described in the following paper:
-"A Divide and Conquer Strategy for the Maximum Likelihood localization of Low Intensity Objects" by Alexander Krull et al, 2013 (under preparation).
+"A Divide and Conquer Strategy for the Maximum Likelihood localization of Low Intensity Objects" by Alexander Krull et al, 2013 Optics Express, Vol. 22, Issue 1, pp. 210-228 (2014).
 
 =Installation of the plugin= 
 The plugin can be quickly installed via the projects update site. This is unfortunately may not possible if you are using a Fiji version installed via package management system. If you encounter this problem, please use the Fiji version obtainable [[Downloads | here]].
