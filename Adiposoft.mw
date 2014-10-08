@@ -9,12 +9,12 @@
 | category               = [[:Category:Segmentation|Segmentation]]
 }}
 
-[[Image:datasetim.png|center|500px]]
+[[File:screenshot1.jpg|500px]]
 
 Adiposoft is an automated Open Source software for the analysis of adipose tissue cellularity in histological sections. Adiposoft has been developed as a plug-in for FIJI (advanced distribution of ImageJ) that can be run under Windows, Linux or MacOS X. The software –that can be downloaded and used with no license restrictions- was developed at the Imaging Unit of the Center for Applied Medical Research (CIMA) of the University of Navarra.
-
-[[File:screenshot1.jpg|500px]]
 
 == Motivation ==
 
 The accurate estimation of the number and size of adipocytes provides relevant information about the growth kinetics and the physiological status of a given tissue or organ. Adiposoft is an automated, open source software for the analysis of white adipose tissue cellularity on histological, hematoxylin and eosin (H&E) stained sections.
+
+[[Image:datasetim.png|center|500px]]
