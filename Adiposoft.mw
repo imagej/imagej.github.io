@@ -1,5 +1,19 @@
 '''ADIPOSOFT'''
 
+{{Infobox
+| software               = ImageJ
+| name                   = Adiposoft
+| author                 = Miguel Galarraga
+| maintainer             = [mailto:mgalarraga@unav.es Miguel Galarraga]
+| source                 = {{GitLink|jar=Adiposoft}}
+| released               = September 2012
+| latest version         = September 2012
+| status                 = stable, active
+| category               = [[:Category:Image annotation|Image annotation]]
+}}
+
+
+[[Image:screenshot1.jpg|center]]
 Introduction
 Adiposoft is an automated Open Source software for the analysis of adipose tissue cellularity in histological sections.
 
