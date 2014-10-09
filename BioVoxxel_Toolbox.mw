@@ -220,7 +220,7 @@ Purpose: This plugin enables you to test a certain range of radii of a specified
 How to: Choose a filter method from the drop down menu, key in a starting and an end radius. The image will be filtered in individual integer steps between the start and stop radius and presented in an image stack containing all the filtered images. The filter can also be applied to only a ROI. This is recommended for filters which are cost intensive, like the "Gaussian Weighted Median". 
 The parameter setting is only needed for the "Bilateral Filter" (range radius) , "Mean Shift Filter" (Color Distance) and the "Linear Kuwahara" (line length).
 
-[[File:Example.png]]
+[[File:Filter Check.png]]
 
 Form: plugin
 
