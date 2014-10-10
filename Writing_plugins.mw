@@ -40,7 +40,15 @@ If you have multiple related operations you would like to provide, or wish to ma
 By structuring the animation support as a service, ImageJ2 can remember whether each image is currently animating, as well as its animation settings, in a central location that can be easily queried and manipulated.
 
 === Minimal Service Example ===
+Three files to show a skeleton service. TestService.java is the service interface, DefaultTestService.java implements the interface, Test.java uses the service. 
+Copy the code to three files. 
+Compile and run it in the Script Editor, or command line:
 
+    fiji --javac -d . Test.java TestService.java DefaultTestService.java
+    
+    fiji -cp . Test.class
+
+====TestService.java====
 <source lang="java">
 //TestService.java
 import net.imagej.ImageJService;
@@ -52,6 +60,7 @@ public interface TestService extends ImageJService {
 }
 </source>
 
+====DefaultTestService.java====
 <source lang=java>
 // DefaultTestService.java
 import org.scijava.service.AbstractService;
@@ -73,6 +82,7 @@ public class DefaultTestService extends AbstractService implements TestService {
 }
 </source>
 
+====Test.java====
 <source lang=java>
 //Test.java
 import net.imagej.ImageJ;
