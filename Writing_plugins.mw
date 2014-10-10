@@ -39,5 +39,7 @@ If you have multiple related operations you would like to provide, or wish to ma
 
 By structuring the animation support as a service, ImageJ2 can remember whether each image is currently animating, as well as its animation settings, in a central location that can be easily queried and manipulated.
 
+=== Minimal Service Example ===
+
 [[Category:Tutorials]]
 [[Category:ImageJ2]]
