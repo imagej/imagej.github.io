@@ -81,7 +81,7 @@ public class My_Plugin implements PlugIn {
 
 == Compile and run on the command-line ==
 
-* A plugin can also be compiled and run from the command line. The following will compile class files and generate a META-INF directory in the current working directory.
+* A plugin can also be compiled and run from the command line. The following will compile class files and handle ImageJ2 plugins correctly (i.e. generate the annnotation index and write it into the META-INF/ directory in the current working directory).
 
     fiji --javac -d . MyPlugin.java
 
