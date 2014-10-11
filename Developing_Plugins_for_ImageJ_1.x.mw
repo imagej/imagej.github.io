@@ -78,6 +78,9 @@ public class My_Plugin implements PlugIn {
 
 * Fiji has a menu entry ''Plugins>Compile & Run...'' which you can use to compile & run a plugin without restarting Fiji
 * In Fiji, you can put ''.java'' files into the ''plugins/'' directory, and they will be compiled & run transparently (i.e. the user will hardly notice a difference between such plugins and precompiled ones)
+
+== Compile and run on the command-line ==
+
 * A plugin can also be compiled and run from the command line. The following will compile class files and generate a META-INF directory in the current working directory.
 
     fiji --javac -d . MyPlugin.java
