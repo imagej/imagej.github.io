@@ -5,7 +5,7 @@
 | maintainer             = [[User:Iarganda | Ignacio Arganda-Carreras]]
 | source                 = {{GitHub|org=fiji|repo=AnalyzeSkeleton}}
 | released               = November 14<sup>th</sup>, 2008
-| latest version         = 2.0.0, September 17<sup>th</sup>, 2014
+| latest version         = 2.0.1, October 13<sup>th</sup>, 2014
 | status                 = stable, active
 | category               = [[:Category:Skeleton|Skeleton]], [[:Category:Analysis|Analysis]]
 }}Analysis of 2D and 3D skeleton images. For the ImageJ plugin, visit [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start AnalyzeSkeleton at ImageJ wiki].
@@ -56,7 +56,7 @@ After classification, a “Results” window is displayed showing for each skele
 * The number of triple points (junctions with exactly 3 branches) and quadruple points (4 branches).
 * The average and maximum length of branches, in the corresponding units. 
 
-AnalyzeSkeleton is able to process up to '''2¹⁵-1 skeletons in one single image''' (only limited by [http://java.sun.com/javase/6/docs/api/ java Short.MAX_VALUE]). 
+AnalyzeSkeleton is able to process up to '''2^31-1 skeletons in one single image''' (only limited by [http://java.sun.com/javase/6/docs/api/ java Integer.MAX_VALUE]). 
 
 ==== Detailed information ====
 [[Image:AnalyzeSkeleton_Branch_information.png|thumb|350px|Example of AnalyzeSkeleton Branch information window]]
