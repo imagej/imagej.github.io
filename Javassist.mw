@@ -22,6 +22,30 @@ Other useful actions include inspecting the parameters passed to the method whic
 
 Further reading: Javassist's [http://www.csg.is.titech.ac.jp/~chiba/javassist/tutorial/tutorial.html online tutorial].
 
+= Code editing =
+
+While Javassist allows to edit bytecode directly, its most powerful feature is that it allows you to modify methods using snippets of Java code. There are two slightly different methods to do so: the [http://www.csg.ci.i.u-tokyo.ac.jp/~chiba/javassist/html/index.html CodeConverter] and the [http://www.csg.ci.i.u-tokyo.ac.jp/~chiba/javassist/html/javassist/expr/ExprEditor.html ExprEditor] (it depends which one to use, ''CodeConverter'' is easier to use but ''ExprEditor'' is more powerful.
+
+== Wrapping existing code blocks ==
+
+A common reason for Javassist'ing code is to handle previously unhandled exceptions, or to make certain parts of the code conditional. As an example, we demonstrate here how, say, a hypothetical ''OpenAccess''' ''toString()'' method could be protected against a ''NullPointerException'':
+
+<source lang="java">
+// get the class pool
+ClassPool pool = ClassPool.getDefault();
+// access the class without loading it just yet
+CtClass clazz = pool.get("OpenAccess");
+CtMethod method = clazz.getMethod("toString", "()Ljava/lang/String;");
+// now let's handle NullPointerExceptions
+method.setBody("try {"
+  + "  $_ = $proceed($$);"
+  + "} catch (java.lang.NullPointerException e) {"
+  + "  return \"(null)\";"
+  + "}");
+</source>
+
+Note that the special <tt>$_ = $proceed($$)</tt> is a Javassist-specific syntax referring to the original code. See [http://www.csg.ci.i.u-tokyo.ac.jp/~chiba/javassist/tutorial/tutorial2.html#before the Javassist tutorial] for details.
+
 = Debugging =
 
 Javassist has very useful tools for disassembly and introspection. For example, you could inspect the contents of a class using some code like this:
