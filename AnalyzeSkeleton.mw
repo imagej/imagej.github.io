@@ -97,6 +97,7 @@ You can use AnalyzeSkeleton from scripts without displaying any of the results. 
 Here's an example in Javascript:
 
 <source lang="javascript">
+importPackage(Packages.ij);
 importPackage(Packages.skeleton_analysis);
 
 // Takes a binary image as input
