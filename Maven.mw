@@ -1,3 +1,5 @@
+{{Development}}
+
 [[ImageJ]], [[Fiji]] and other [[SciJava]] projects use [http://maven.apache.org/ Maven] for their project infrastructure.
 
 Maven artifacts are published to the [http://maven.imagej.net/ ImageJ Maven repository].
