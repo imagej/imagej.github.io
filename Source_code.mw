@@ -1,4 +1,9 @@
 {{Development}}
+
+Developing for Fiji/ImageJ2 is organized on three different levels. While it seems complicated at first, it offers many advantages for efficient software development and will be well worth investing some time to understand the Fiji/ImageJ2 eco system.
+
+The actual source code development is managed using the [[Git]] version control system. 
+
 == Source code ==
 The source code of [[ImageJ]] and related [[SciJava]] projects is managed using the [[Git]] version control system.
 
