@@ -8,7 +8,10 @@
 * [[Coding style]]
 * [[Distribution]]
 * [[Debugging intro|Debugging]]
+
+'''Tools'''
 * [[IDEs]]
+* [[Maven]]
 
 '''Tutorials'''
 * [[Writing ImageJ2 plugins]]
