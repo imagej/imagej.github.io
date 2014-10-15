@@ -65,3 +65,5 @@ Note: even if disabling SCIFIO fixes the issue for you, '''please''' still repor
 == Catastrophic failure ==
 
 We maintain lifeline ImageJ distributions on the [[Downloads|Downloads page]]. You can use these until any outstanding issues are resolved.
+
+[[Category:Bug Reporting]]
