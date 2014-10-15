@@ -405,6 +405,26 @@ If you [{{SERVER}}/wiki/index.php?title=Special:Userlogin&type=signup create an 
 
 Please feel free to enhance the Wiki! We are thankful for all contributions!
 
+== How do I find more information about Command X? ==
+
+The first place to check is this wiki. The [[Fiji's Menu]] page is especially helpful as it includes links to all the menu commands that ship as part of Fiji.
+
+If documentation is missing for the command you're interested in, you can always view the source directly:
+
+<ol>
+<li>Open the `Command Finder` (Shortcut: L)</li>
+<li>Filter to the command you're interested in.</li>
+<li>The `File` column will tell you the plugin where the desired command is contained.</li>
+<li>You can then use this information to find the source code on GitHub - for core [https://github.com/imagej ImageJ] or [https://github.com/fiji Fiji] plugins.</li>
+<li>From the appropriate project on GitHub, you can find the repository corresponding to the desired plugin.</li>
+<li>Finally, you can search for the actual file for the command of interest (Shortcut: t).</li>
+</ol>
+
+As a complete example, if you were interested in the `2D Histogram` command:
+* The `Command Finder` indicates it's located in VIB.jar
+* VIB is a Fiji plugin, so we go to [https://github.com/fiji/VIB the VIB repository].
+* On GitHub, I press t, search for "Histogram", and find [https://github.com/fiji/VIB/blob/master/src/main/java/util/Histogram_2D.java the Histogram 2D] source.
+
 == I have a problem that is not covered on this page! ==
 
 If you have an issue that is not mentioned here, you might want to [[Help:Contents|ask on one of the mailing lists, or via IRC]], or [http://fiji.sc/bugzilla/ enter a bug report].
