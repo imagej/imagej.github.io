@@ -1,25 +1,24 @@
 {{Git}}
 ==Source Code Management==
 
-Fiji's development relies heavily on [http://git-scm.com/ Git].
+Development of ImageJ and related software relies heavily on [http://git-scm.com/ Git].
 
 If you do not know what Git is, you really want to take [http://try.github.com/levels/1/challenges/1 GitHub's 15-minute interactive tutorial]. Or follow [http://pcottle.github.io/learnGitBranching/ Peter Cottle's excellent introduction into Git branching]. Or you may want to have a look at our [[Git for dummies|real concise introduction to Git]] predating GitHub's awesome tutorial.
 
-The principal Fiji project is a Git ''superproject'', which includes ''submodules'' -- projects in their own right.  These submodules do not have to be checked out, but can be left empty, if you are not interested in the development of that particular project.
-
-Some of Fiji's submodules are imported from third parties; most of them have their source code in [http://subversion.tigris.org/ Subversion] repositories, which are mirrored via '''git-svn'''. The mirrors are updated by a cron job on [[fiji.sc]].
-
 === Fiji's repository ===
 
-The Git repositories on [[fiji.sc]] can be accessed anonymously, via URLs such as '''git://fiji.sc/fiji.git/''', and they can be viewed via [http://fiji.sc/cgi-bin/gitweb.cgi gitweb].
+The Git repositories for ImageJ and related software can be found on GitHub, in the following organizations:
+* [https://github.com/imagej imagej]
+* [https://github.com/fiji fiji]
+* [https://github.com/imglib imglib]
+* [https://github.com/scifio scifio]
+* [https://github.com/scijava scijava]
 
-=== Contrib ===
-
-If you want to contribute to Git, you can do that with the ''contrib'' user:  Just use the URL contrib@fiji.sc:fiji.git/ instead, and work on the ''contrib'' branch (the ''contrib'' user does not need a password, but can only push to the ''contrib'' branch).
+The Git repositories can be accessed anonymously, via URLs such as '''git://github.com/imagej/imagej'''.
 
 === Further documentation ===
 
-Some useful documentation, in particular for Fiji:
+Some useful documentation:
 
 * [[Git_mini_howto|A really quick 'n dirty HOWTO]]
 * [http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html How to write good commit messages]
