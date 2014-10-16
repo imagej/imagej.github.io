@@ -1,5 +1,4 @@
-{{Development}}
-= What are reproducible builds? =
+{{Development}}= What are reproducible builds? =
 
 A software ''version'' (or ''build'') is called '''reproducible''' if it is easy to regenerate the exact same software application from the source code.
 
