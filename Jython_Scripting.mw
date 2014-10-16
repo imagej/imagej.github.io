@@ -31,10 +31,10 @@ Within the interpreter, all ImageJ, java.lang.* and TrakEM2 classes are automati
 
 {{ImportingClasses | lang = Jython}}
 You can specify imports in Jython as follows:
-<source lang="jython">
+<source lang="python">
 from java.io import File
 </source>
-Where <code>java.io.File</code> is the class to be imported. See also section '''Importing other ''.py'' scripts (modules)''' for importing user python modules.
+Where <code>java.io.File</code> is the class to be imported. See also section [[#Importing_other_.py_scripts_.28modules.29|Importing other ''.py'' scripts (modules)]] for importing user python modules.
 
 === Workflow for creating Jython scripts === 
 
