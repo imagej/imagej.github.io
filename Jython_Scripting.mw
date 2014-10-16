@@ -1342,9 +1342,9 @@ To ensure that you see the stack trace, print it to the ImageJ log window instea
     IJ.log(str(sys.exc_info()))
 </source>
 
-=== Importing other ''.py'' scripts ===
+=== Importing other ''.py'' scripts (modules) ===
 
-If you want to import other files, you need to ''import'' them. This requires that the files are found in the so-called ''search path'', a list of directories in which Jython looks for the modules (''.py'' files) to import. You can easily extend the search path:
+If you want to import other python files, you need to ''import'' them. This requires that the files are found in the so-called ''search path'', a list of directories in which Jython looks for the modules (''.py'' files) to import. You can easily extend the search path:
 
 <source lang="python">
 from sys import path
