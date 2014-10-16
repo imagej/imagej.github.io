@@ -34,7 +34,7 @@ You can specify imports in Jython as follows:
 <source lang="jython">
 from java.io import File
 </source>
-Where <code>java.io.File</code> is the class to be imported.
+Where <code>java.io.File</code> is the class to be imported. See also section '''Importing other ''.py'' scripts (modules)''' for importing user python modules.
 
 === Workflow for creating Jython scripts === 
 
