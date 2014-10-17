@@ -34,3 +34,15 @@ If you installed Adiposoft from one of the full version installers, you will fin
 
 === Starting Adiposoft ===
 To run Adiposoft, double-click on Adiposoft’s icon. This will start FIJI and open the main Adiposoft dialogue window. If at any time you close Adiposoft, you can always restart it by clicking on the “red A button” in the FIJI toolbar.
+
+=== Selection of Parameters ===
+On Adiposoft’s main dialogue window you can choose several parameters of the analysis. Namely:
+
+* Auto mode: By checking on the “Auto mode” box, you choose to run Adiposoft in completely automated mode, without any user intervention, as it will described in the following section “Automated analysis”.
+* Manual mode: If you uncheck the “Auto mode” box, you choose to have the opportunity to manually edit the results of the initial automated segmentation. This includes manually adding, deleting, splitting or merging adipocytes. The editing tools can be accessed through a toolbar attached to the image that is being edited. The editor gets activated after the initial automated analysis is done. This option is only available when the images are analyzed one by one (“One Image), and not in batch mode (“A Directory” or “A list of nested Directories – Batch Mode” ). The editing actions will be explained in the section “Manual analysis”
+* Output units. By default, the areas and diameters of the adipocytes are calculated and reported in “Pixels”. If the calibration of the images is known, you can select “Microns”, but be ready to introduce the number of microns that correspond to one pixel of your images in the dialogue window that will appear when you press OK.
+* How many images do you wan to analyze. You can choose to run Adiposoft to analyze one image at a time (“One Image”), a directory that contains all the images that you want to analyze (“A Directory”) or a directory and all directories below (“A list of nested Directories – Batch Mode”).
+
+After pressing OK, you will be prompted to select the image that you want to analyze, the directory that contains the images -if you choose to analyze a “A Directory”- or the parent directory -if you choose to analyze “A list of nested Directories”-.
+
+Next you will be prompted to choose –or create- the output directory where you want to store the results of the analysis.
