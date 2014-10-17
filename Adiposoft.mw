@@ -32,5 +32,5 @@ The latest version of Adiposoft is 1.0. (Updated April 20th, 2012)
 == Running Adiposoft == 
 If you installed Adiposoft from one of the full version installers, you will find Adiposoft’s icon in the Applications folder (Windows, MacOS X) or in the folder selected during the installation (Linux). Depending on your operating System, you may also have a link to Adiposoft on your computer desktop.
 
-= Starting Adiposoft =
+=== Starting Adiposoft ===
 To run Adiposoft, double-click on Adiposoft’s icon. This will start FIJI and open the main Adiposoft dialogue window. If at any time you close Adiposoft, you can always restart it by clicking on the “red A button” in the FIJI toolbar.
