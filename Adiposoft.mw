@@ -80,9 +80,9 @@ Metamorph Macro (Molecular Devices, USA) that automated the automated acquisitio
 == Installing Adiposoft as a FiJi plugin (for users familiar with FIJI) ==
 If you are familiar with Fiji, and you have it already installed in your computer, you can download only the plugin for Fiji from the Download section.
 
-1) If you do not have Fiji installed in your computer, you can download it here
+# 1) If you do not have Fiji installed in your computer, you can download it here
 Note: There is only limited support for PowerPC (G4/G5) Macs. See MacOSX tips for a special download link.
-2) Once Fiji is installed you should extract the Adiposoft_Fiji.zip file into the plugins folder inside Fiji ("/YourPath/Fiji/plugins/") Adiposoft tool will appear in the plugins menu the next time you start Fiji.
+# 2) Once Fiji is installed you should extract the Adiposoft_Fiji.zip file into the plugins folder inside Fiji ("/YourPath/Fiji/plugins/") Adiposoft tool will appear in the plugins menu the next time you start Fiji.
 
 == Adiposoft under MATLAB (advanced users) ==
 A version of Adiposoft was entirely developed using MATLAB v.7.11 and the DIPlib v2.2 C Image Processing libraries [11] under Linux OS Fedora 14. To run Adiposoft, the same or newer version of this software is required, but the OS can be different. Matlab requires a non-free license.
