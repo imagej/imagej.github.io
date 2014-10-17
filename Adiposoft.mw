@@ -62,5 +62,5 @@ Results: Displays the Results window, that contains a list of all the adipocytes
 * Del: Deletes an object, possibly corresponding to an incorrectly segmented adipocyte, or a tissue part incorrectly classified as being an adipocyte. When prompted, click on the object that you want to delete and press OK.
 * Merge: Merges two objects, possibly two parts of an incorrectly divided adipocyte. To this end, you can draw a closed contour. The final –merged- cell will contain –as a single object- the new area defined by the closed contour plus the areas of all cells touched by the contour. 
 * Separate: Divides an object in two parts, based on a line drawn by the user.
-Undo: Reverts the last action done.
+* Undo: Reverts the last action done.
 * Help: Displays the help guide for the plugin.
