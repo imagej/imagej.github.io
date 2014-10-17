@@ -24,10 +24,10 @@ Download the installation package specific for your Operating System in the next
 
 == Adiposoft versions. Download == 
 The latest version of Adiposoft is 1.0. (Updated April 20th, 2012)
-* Windows. Adiposoft+FIJI full version installer (Download)
-* Linux. Adiposoft+FIJI full version installer (Download)
-* MacOS X. Adiposoft+FIJI full version installer (Download)
-* Adiposoft Plugin (Download). To install the Plugin only if you already have FIJI installed in your computer, download and uncompress the Plugin in the folder that contains FIJI
+* Windows. Adiposoft+FIJI full version installer (https://dl.dropboxusercontent.com/u/4235078/SW/Setup.exe Download)
+* Linux. Adiposoft+FIJI full version installer (https://dl.dropboxusercontent.com/u/4235078/SW/AdipsoftLinux.zip Download)
+* MacOS X. Adiposoft+FIJI full version installer (https://dl.dropboxusercontent.com/u/4235078/SW/Adiposoft.pkg.zip Download)
+* Adiposoft Plugin (https://dl.dropboxusercontent.com/u/4235078/SW/AdiposoftPlugin.zip Download). To install the Plugin only if you already have FIJI installed in your computer, download and uncompress the Plugin in the folder that contains FIJI
 
 == Running Adiposoft == 
 If you installed Adiposoft from one of the full version installers, you will find Adiposoft’s icon in the Applications folder (Windows, MacOS X) or in the folder selected during the installation (Linux). Depending on your operating System, you may also have a link to Adiposoft on your computer desktop.
