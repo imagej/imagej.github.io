@@ -18,3 +18,13 @@ Adiposoft is an automated Open Source software for the analysis of adipose tissu
 The accurate estimation of the number and size of adipocytes provides relevant information about the growth kinetics and the physiological status of a given tissue or organ. Adiposoft is an automated, open source software for the analysis of white adipose tissue cellularity on histological, hematoxylin and eosin (H&E) stained sections.
 
 [[Image:datasetim.png|center|500px]]
+
+== Installation == 
+Download the installation package specific for your Operating System in the next section. To install Adiposoft, execute the installer file and follow the instructions. The full version installers install both Adipsoft and FIJI at the same time. 
+
+== Adiposoft versions. Download == 
+The latest version of Adiposoft is 1.0. (Updated April 20th, 2012)
+Windows. Adiposoft+FIJI full version installer (Download)
+Linux. Adiposoft+FIJI full version installer (Download)
+MacOS X. Adiposoft+FIJI full version installer (Download)
+Adiposoft Plugin (Download). To install the Plugin only if you already have FIJI installed in your computer, download and uncompress the Plugin in the folder that contains FIJI
