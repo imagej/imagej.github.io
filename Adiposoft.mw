@@ -80,7 +80,7 @@ Metamorph Macro (Molecular Devices, USA) that automated the automated acquisitio
 == Installing Adiposoft as a FiJi plugin (for users familiar with FIJI) ==
 If you are familiar with Fiji, and you have it already installed in your computer, you can download only the plugin for Fiji from the Download section.
 
-# If you do not have Fiji installed in your computer, you can download it here
+# If you do not have Fiji installed in your computer, you can download it [http://fiji.sc/Downloads here]
 # Once Fiji is installed you should extract the Adiposoft_Fiji.zip file into the plugins folder inside Fiji ("/YourPath/Fiji/plugins/") Adiposoft tool will appear in the plugins menu the next time you start Fiji.
 
 Note: There is only limited support for PowerPC (G4/G5) Macs. See MacOSX tips for a special download link.
