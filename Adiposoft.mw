@@ -46,3 +46,21 @@ On Adiposoft’s main dialogue window you can choose several parameters of the a
 After pressing OK, you will be prompted to select the image that you want to analyze, the directory that contains the images -if you choose to analyze a “A Directory”- or the parent directory -if you choose to analyze “A list of nested Directories”-.
 
 Next you will be prompted to choose –or create- the output directory where you want to store the results of the analysis.
+
+=== Automated analysis ===
+If you choose to run Adiposoft in Automated mode, the program analyzes the selected images, and stores the results in the output directory, namely:
+
+If you chose to analyze “One Image”, the output directory will contain an image with the results of the segmentation overlaid on the original image and an excel file containing the complete list of adipocytes with their area and equivalent diameter.
+If you chose to analyze “A Directory”, the output directory will contain an excel file with the list of adipocytes of all the images, with their area and parameters, and a directory named as the original input directory containing all the segmented images and one excel file per image, containing the results of that particular image.
+If you chose to analyze “A list of Directories”, the output folder will contain a tree of directories replicating the input tree, but containing the results of the analysis.
+
+=== Manual analysis ===
+If you chose to run Adiposoft in Manual mode, the program analyzes the selected image automatically and then offers the option to edit the results, using one of the editing options from a toolbar that appears attached to the segmented image. This toolbar contains the following buttons:
+Close: Closes the window and stores the results in the selected output directory
+Results: Displays the Results window, that contains a list of all the adipocytes with their corresponding morphological information. The running numbers in the first column correspond to the label displayed on the segmentation results window. The list contains, for each adipocyte, the area and diameter.
+* Add (Draw). Allows drawing a closed contour that may correspond to the boundary of a cell that was not initially detected.
+* Del: Deletes an object, possibly corresponding to an incorrectly segmented adipocyte, or a tissue part incorrectly classified as being an adipocyte. When prompted, click on the object that you want to delete and press OK.
+* Merge: Merges two objects, possibly two parts of an incorrectly divided adipocyte. To this end, you can draw a closed contour. The final –merged- cell will contain –as a single object- the new area defined by the closed contour plus the areas of all cells touched by the contour. 
+* Separate: Divides an object in two parts, based on a line drawn by the user.
+Undo: Reverts the last action done.
+* Help: Displays the help guide for the plugin.
