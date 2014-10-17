@@ -64,3 +64,33 @@ Results: Displays the Results window, that contains a list of all the adipocytes
 * Separate: Divides an object in two parts, based on a line drawn by the user.
 * Undo: Reverts the last action done.
 * Help: Displays the help guide for the plugin.
+
+== Image DataSet ==
+A set of images of histological sections obtained from three different rat tissue depots –retroperitoneal (RP), mesenteric (MES) and subcutaneous (SC)- can be downloaded and used to test Adiposoft. (Download)
+
+== Other ImageJ plugins ==
+Other related ImageJ plugins are available for download:
+Manual Segmentation with ImageJ – (Download)
+Cells in Suspension ImageJ – (Download)
+
+== Tools ==
+Metamorph Macro (Molecular Devices, USA) that automated the automated acquisition of the images of the histological samples with the microscope.
+
+
+== Installing Adiposoft as a FiJi plugin (for users familiar with FIJI) ==
+If you are familiar with Fiji, and you have it already installed in your computer, you can download only the plugin for Fiji.
+* ADIPOSOFT - FIJI (ImageJ) Plugin (Download)
+
+1) If you do not have Fiji installed in your computer, you can download it here
+Note: There is only limited support for PowerPC (G4/G5) Macs. See MacOSX tips for a special download link.
+2) Once Fiji is installed you should extract the Adiposoft_Fiji.zip file into the plugins folder inside Fiji ("/YourPath/Fiji/plugins/") Adiposoft tool will appear in the plugins menu the next time you start Fiji.
+
+== Adiposoft under MATLAB (advanced users) ==
+A version of Adiposoft was entirely developed using MATLAB v.7.11 and the DIPlib v2.2 C Image Processing libraries [11] under Linux OS Fedora 14. To run Adiposoft, the same or newer version of this software is required, but the OS can be different. Matlab requires a non-free license.
+ADIPOSOFT - MATLAB Version (Download)
+
+Before installing Adiposoft under Matlab you must download and install the DIP Image libraries DIPlib v2.2 C, which can be downloaded here. 
+After installing DIPlib you must to extract the AdiposoftMatlab.zip file.
+To run Adiposoft, execute the .m file inside Matlab 
+
+Note: Installing Adiposoft can be a bit tricky under Matlab, due to compatibility problems between the versions of DIPlib and Matlab. We will be pleased to help you with the installation. To that end, please contact mgalarraga@unav.es for help.
