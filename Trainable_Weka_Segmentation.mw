@@ -338,6 +338,9 @@ For examples on how to use the plugin methods from scripts, have a look at the [
 
 The '''API of the WekaSegmentation''' library is available [http://fiji.sc/javadoc/trainableSegmentation/WekaSegmentation.html here].
 
+== Usage with existing installation of Weka ==
+Weka will automatically load plugins installed in ~/wekafiles. If you already have an existing installation of weka using Java 1.7 and are seeing an error about "java.lang.UnsupportedClassVersionError: weka/filters/unsupervised/attribute/IndependentComponents: Unsupported major.minor version 51.0", then you should remove/rename the ~/wekafiles folder before running Fiji.
+
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
