@@ -8,9 +8,9 @@ Available templates are sorted by language under the <code>Templates</code> menu
 
 The [[Script Editor]] will automatically search the <code>script-templates</code> directory and register any discovered scripts as templates. For example, a [[Maven|Mavenized]] project could add a sample script in <code>src/main/resources/script-templates</code> and it would be packaged into the appropriate location of the resultant <code>.jar</code>.
 
-Script language determination is based simply off file extension. So a <code>FFT.rb</code> script would be indexed under the <code>Templates > Ruby</code> menu.
+The templates need to be put into a subdirectory corresponding with the correct  script language name. So a <code>FFT.rb</code> script would need to be but into the `script-templates/Ruby/` directory to be available under the <code>Templates > Ruby</code> menu. This is required so that templates are made available only when the corresponding script language is available. 
 
-For examples of how the existing templates are structured and distributed, take a look at the core [https://github.com/scijava?query=scripting SciJava scripting projects].
+For examples of how the existing templates are structured and distributed, take a look at the [https://github.com/imagej/imagej-legacy/tree/master/src/main/resources/script-templates <code>imagej-legacy</code> project] (which maintains the script templates that were previously shipped with Fiji's script editor).
 
 = Template Best Practices =
 
