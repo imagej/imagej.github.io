@@ -7,7 +7,7 @@ There are many sorts of ImageJ2 plugins. The most common type is a ''Command'', 
 
 == Writing an ImageJ2 command ==
 
-ImageJ2 commands are UI-independent, and will work headless, as long as your command does not explicitly call any UI-specific code (such as <code>java.awt</code> or <code>javax.swing</code> classes). The ImageJ2 framework takes care of harvesting the command's input parameters from the user in the appropriate wayâ€”e.g., when running as an end-user Swing application, it will display a Swing dialog.
+ImageJ2 commands are UI-independent, and will work headless, as long as your command does not explicitly call any UI-specific code (such as <code>java.awt</code> or <code>javax.swing</code> classes). The ImageJ2 framework takes care of harvesting the command's input parameters from the user in the appropriate ways, e.g., when running as an end-user Swing application, it will display a Swing dialog.
 
 See the [https://github.com/imagej/imagej-tutorials/tree/master/simple-commands simple-commands] examples from the {{GitHub|org=imagej|repo=imagej-tutorials|label=ImageJ Tutorials}}<nowiki>: </nowiki>
 
