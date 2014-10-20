@@ -1,0 +1,23 @@
+{{Scripting}}
+
+Templates are pre-written scripts in a particular scripting language. They can be distributed as any other plugin, and automatically discovered by the [[Script Editor]]. Templates thus present an excellent way to demonstrate a particular operation to a wide audience of users.
+
+Available templates are sorted by language under the <code>Templates</code> menu of the [[Script Editor]]. The contents of a template will be loaded into the editor window when selected. The script can then be inspected, executed and modified as normal.
+
+= Adding A New Template =
+
+The [[Script Editor]] will automatically search the <code>script-templates</code> directory and register any discovered scripts as templates. For example, a [[Maven|Mavenized]] project could add a sample script in <code>src/main/resources/script-templates</code> and it would be packaged into the appropriate location of the resultant <code>.jar</code>.
+
+Script language determination is based simply off file extension. So a <code>FFT.rb</code> script would be indexed under the <code>Templates > Ruby</code> menu.
+
+For examples of how the existing templates are structured and distributed, take a look at the core [https://github.com/scijava?query=scripting Sci-Java scripting projects].
+
+= Template Best Practices =
+
+Above all else, templates should be '''well documented'''. Templates are intended to explain specific functionality in a given language, to users who may have limited experience with the language or programming/scripting in general.
+
+Ideally, a template will be focused on an a single objective (e.g. opening an image, calculating a threshold, operating on a directory, etc...).
+
+It is especially helpful to document how the template can be adapted to meet the user's needs.
+
+[[Category:Scripting]]
