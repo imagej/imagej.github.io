@@ -10,7 +10,7 @@ The [[Script Editor]] will automatically search the <code>script-templates</code
 
 Script language determination is based simply off file extension. So a <code>FFT.rb</code> script would be indexed under the <code>Templates > Ruby</code> menu.
 
-For examples of how the existing templates are structured and distributed, take a look at the core [https://github.com/scijava?query=scripting Sci-Java scripting projects].
+For examples of how the existing templates are structured and distributed, take a look at the core [https://github.com/scijava?query=scripting SciJava scripting projects].
 
 = Template Best Practices =
 
