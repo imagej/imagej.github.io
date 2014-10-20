@@ -16,6 +16,8 @@ Just copy/paste it in the [[Script Editor]] or save it into a .bsh file and run 
  * @author Ignacio Arganda-Carreras (iarganda@mit.edu)
  */
  
+import ij.*;
+import ij.gui.GenericDialog;
 import trainableSegmentation.metrics.*;
 
  
