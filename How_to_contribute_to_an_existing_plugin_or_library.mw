@@ -37,7 +37,7 @@ $ git checkout -b amira-io
 == Development ==
 Now we develop our code to include our changes in the library. Remember to:
 <ol>
-<li><a href="https://help.github.com/articles/making-changes/">Make changes and commit them</a> to your topic branch</li>
+<li>[https://help.github.com/articles/making-changes Make changes and commit them] to your topic branch</li>
 <li>Push the commits to your GitHub repository; e.g.:
 <source lang="bash">
 git push -u origin amira-io
