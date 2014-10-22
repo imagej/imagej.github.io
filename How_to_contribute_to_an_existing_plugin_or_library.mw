@@ -60,5 +60,96 @@ Once the pull request is created, it is automatically sent to the person in char
 
 [[Image:GitHub-discussion-view-tutorial.png|700px]]
 
+== Modifying your commits ==
+From the discussion, you might realize you need to modify a part of the changes you made on your branch. Some of the changes introduced by your commits can be fixed with new commits (that will appear in the discussion view of the pull request). But some commits may need to be modified so the history of your repository stays reasonably clean. In that case, you need to use the [https://help.github.com/articles/about-git-rebase/ git rebase command]:
+
+You can rebase since a specific commit, for example:
+
+<source lang=bash>
+$ git rebase -i 6272a7bf
+</source>
+
+or since the starting point of your branch:
+
+<source lang=bash>
+$ git rebase -i origin/master
+</source>
+
+In our example, we run the first command and immediately Git launches our default text editor and open a file that details the commits in the range we've chosen:
+<source>
+pick 36fc3d2 Use java.util.zip tools to decode (inflate) AmiraMesh files instead of zjlib methods.
+pick 25b44e1 Encode (deflate) using java.util.zip methods instead of the zjlib ones.
+pick 913d6e3 Remove unused imports.
+pick 45adf88 Add progress bar updates.
+pick 1d6e8d9 Make call to static method correctly.
+pick 1c1f88f Correct typos
+pick 478c271 Fix bug when reading AmiraMesh files.
+pick ffeaab8 Allow Avizo files to be read as well.
+pick a3e4aec Remove jzlib dependency, now unnecessary.
+pick 7d18362 Allow Avizo files to be read as well.
+pick e768fd1 Add method to write AmiraMesh file faster using more memory.
+pick 88dbc1c Add method to read AmiraMesh file fast using a more memory.
+pick 4e4c7a4 Make sure the files and output streams are closed after writing.
+pick 86a79cf Make the output stream a class field so it can be properly closed as well after writing the file.
+pick def586d Correct indention.
+pick c536d3d Make sure the file and input stream are closed after reading.
+
+# Rebase 6272a7b..054d243 onto 6272a7b
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
+</source>
+
+Breaking this information, from top to bottom, we see that:
+
+* Sixteen commits are listed, which indicates that there were sixteen changes between our starting point and our current branch state.
+* The commits you chose to rebase are sorted in the order of the oldest changes (at the top) to the newest changes (at the bottom).
+* Each line lists a command (by default, pick), the commit SHA, and the commit message. The entire git rebase procedure centers around your manipulation of these three columns. The changes you make are rebased onto your repository.
+* After the commits, Git tells you the range of commits we're working with (6272a7b..054d243).
+* Finally, Git gives some help by telling you the commands that are available to you when rebasing commits.
+
+We can now change the first word of any of the sixteen lines to apply any of the six available rebasing commands: pick, reword, edit, squash, fixup and exec. You can also remove any of the lines (so that commit will be lost) or reorder to change the order of the commits.
+
+Once we're done editing this file, we save it and close it. Then Git will go throw our instructions to apply the changes and allow us editing whenever it finds edition commands. In that case, we will introduce our changes in the code and commit them as usual. After that, to continue rebasing we need to call the command:
+
+<source lang=bash>
+$ git rebase --continue
+</source>
+
+If we make a mistake, we can always abort the whole process using
+
+<source lang=bash>
+$ git rebase --abort
+</source>
+
+When we are done rebasing, we should see the following message in the command line:
+
+<source lang=bash>
+$ Successfully rebased and updated refs/heads/master.
+</source>
+
+Finally we should just push the changes into our branch:
+<source lang=bash>
+$ git push origin amira-io
+</source>
+
+== Closing pull request ==
+Once all the developers involved in the conversation are satisfied with the state of the branch, the person in charge of the repository will merge and close the pull the request:
+
+[[Image:GitHub-merge-and-close-pull-request.png|780px]]
+
 == See also ==
 You can learn more about Git fork and branch model from [https://help.github.com/articles/fork-a-repo Fork A Repo], including how to send a pull request from [https://help.github.com/articles/using-pull-requests Pull Request].
