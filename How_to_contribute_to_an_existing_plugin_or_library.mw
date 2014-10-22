@@ -143,7 +143,7 @@ $ Successfully rebased and updated refs/heads/master.
 
 Finally we should just push the changes into our branch:
 <source lang=bash>
-$ git push origin amira-io
+$ git push origin +HEAD
 </source>
 
 == Closing pull request ==
