@@ -41,11 +41,11 @@ Now we develop our code to include our changes in the library. Remember to:
 == Pull request ==
 Finally, once you have tested your new code and are satisfied with the results, you have to propose to add your contributions to the original project. In GitHub, you do so by using '''pull requests''':
 
-First, switch to your branch:
+First, '''switch to your branch''':
 
 [[Image:GitHub-change-branch-tutorial.png|780px]]
 
-Then click on the Compare & Review button:
+Then click on the '''Compare & Review button''':
 
 [[Image:GitHub-compare-and-review-tutorial.png]]
 
