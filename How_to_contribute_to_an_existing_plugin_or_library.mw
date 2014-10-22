@@ -55,5 +55,10 @@ Finally, when you're ready to submit your pull request, click '''Create pull req
 
 [[Image:GitHub-pull-request-review-create-tutorial.png|780px]]
 
+== Pull request discussion ==
+Once the pull request is created, it is automatically sent to the person in charge of the original repository. After reviewing the basic description, commits, and cumulative diff, the person tasked with applying the changes may have questions or comments. The '''discussion view''' is designed to encourage and capture this type of discussion:
+
+[[Image:GitHub-discussion-view-tutorial.png|700px]]
+
 == See also ==
 You can learn more about Git fork and branch model from [https://help.github.com/articles/fork-a-repo Fork A Repo], including how to send a pull request from [https://help.github.com/articles/using-pull-requests Pull Request].
