@@ -36,8 +36,15 @@ $ git checkout -b amira-io
 </source>
 == Development ==
 Now we develop our code to include our changes in the library. Remember to:
-# Make changes and commit them to your topic branch
-# Push the commits to your GitHub repository
+<ol>
+<li><a href="https://help.github.com/articles/making-changes/">Make changes and commit them</a> to your topic branch</li>
+<li>Push the commits to your GitHub repository; e.g.:
+<source lang="bash">
+git push -u origin amira-io
+</source>
+</li>
+</ol>
+
 == Pull request ==
 Finally, once you have tested your new code and are satisfied with the results, you have to propose to add your contributions to the original project. In GitHub, you do so by using '''pull requests''':
 
