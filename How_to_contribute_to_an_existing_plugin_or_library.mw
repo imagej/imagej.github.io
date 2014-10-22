@@ -1,0 +1,59 @@
+== Introduction ==
+Sometimes you may want to contribute to an already existing Fiji plugin or library. For example, a bug is found in one plugin and you want to fix it, or you would like to improve one library by adding more functions. This tutorial describes step by step how to do it with a practical case.
+
+Remember that '''every plugin and every library have their own git repository in [https://github.com/fiji Fiji's GitHub site]'''. For example, the VIB-lib's repository is {{GitHub|org=fiji|repo=VIB-lib|label=VIB-lib}}. This structure allows for easy, independent development of 
+the individual parts of which the base version of Fiji consists.
+
+This tutorial assumes you are familiar with [[Git]]. If this is not the case, please go ahead and read the existing [[Git|documentation]].
+
+In this example, we want to fix some bugs and add some functionality to the VIB-lib library. Let's see step by step how to do it:
+
+== GitHub ==
+In your favorite browser, log into your GitHub account. If you don't have an account yet, go ahead and [https://github.com/join create one].
+
+== Fork ==
+Go to the library's repository (in this case https://github.com/fiji/VIB-lib) and "fork" the repository (click on the upper-right "Fork" button):
+
+[[Image:Fork-GitHub-tutorial.png]]
+
+By doing this, you will be duplicating the whole repository into your own GitHub account. This way you can freely work on the library with an identical version of the existing repository's master branch.
+== Clone ==
+Next, go to your command line, move to your workspace folder and clone the repository:
+<source lang="bash">$ git clone https://github.com/username/VIB-lib.git</source>
+(change "username" for your GitHub account name)
+== Configure remotes ==
+To sync changes you make in a fork with the original repository, you must configure a remote that points to the upstream repository in Git.
+In our case:
+<source lang="bash">
+$ cd VIB-lib
+$ git remote add upstream https://github.com/fiji/VIB-lib.git
+$ git fetch upstream
+</source>
+== Create a topic branch ==
+Create a new branch with a descriptive name. Since we want to work on AmiraMesh files, we call it "amira-io":
+<source lang="bash">
+$ git checkout -b amira-io
+</source>
+== Development ==
+Now we develop our code to include our changes in the library. Remember to:
+# Make changes and commit them to your topic branch
+# Push the commits to your GitHub repository
+== Pull request ==
+Finally, once you have tested your new code and are satisfied with the results, you have to propose to add your contributions to the original project. In GitHub, you do so by using '''pull requests''':
+
+First, switch to your branch:
+
+[[Image:GitHub-change-branch-tutorial.png|780px]]
+
+Then click on the Compare & Review button:
+
+[[Image:GitHub-compare-and-review-tutorial.png]]
+
+After starting the review, you're presented with a review page where you can get a high-level overview of what exactly has changed between your branch and the repository's master branch. You can review all comments made on commits, identify which files changed, and get a list of contributors to your branch.
+
+Finally, when you're ready to submit your pull request, click '''Create pull request''':
+
+[[Image:GitHub-pull-request-review-create-tutorial.png|780px]]
+
+== See also ==
+You can learn more about Git fork and branch model from [https://help.github.com/articles/fork-a-repo Fork A Repo], including how to send a pull request from [https://help.github.com/articles/using-pull-requests Pull Request].
