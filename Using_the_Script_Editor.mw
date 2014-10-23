@@ -10,8 +10,7 @@
 The script editor is an invaluable help when writing scripts in any of ImageJ's supported [[Scripting comparisons|languages]].
 
 {{Notice
-| message = The Fiji script editor has become the [[ImageJ2]] script editor.
-As [[2014-06-10_-_Switching_to_ImageJ2_script_editor|announced]] in June 2014, it now forms the basis of all of ImageJ2's scripting capabilities.
+| message = As [[2014-06-10_-_Switching_to_ImageJ2_script_editor|announced]] in June 2014, the [[Fiji]] script editor became the [[ImageJ2]] script editor. It now forms the basis of all of ImageJ2's scripting capabilities.
 }}
 {{Scripting}}
 == Features ==
