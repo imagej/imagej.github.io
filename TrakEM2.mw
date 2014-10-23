@@ -100,23 +100,29 @@ The preprocessor script gives you maximum power: do whatever you want with the i
 
 === For regenerating mipmaps the fastest possible ===
 
-In TrakEM2 0.9a and later, the mipmaps machinery uses a multi-threaded Gaussian implementation now present in the latest ImageJ. This means that now there are two sets of threads:
+The default generation of mipmaps is done with are averaging, and is pretty fast. Still, you may want to consider parallelizing it: go to "Project - Properties...", and set the mipmap threads to the number of cores in your machine, for example 12.
+
+Stop reading if you are satisfied with the default quality of scaled images in TrakEM2.
+
+If you choose to generate mipmaps using Gaussians, go to "Project - Properties...", and set the mipmaps mode to "Gaussian". Then, you must take care of the following:
+
+In TrakEM2 0.9a and later, the mipmaps machinery can use a multi-threaded Gaussian implementation now present in the latest ImageJ. This means that now there are two sets of threads:
 
 <ol>
  <li>The set of threads, where each thread regenerates the mipmap pyramid of a single image.</li>
  <li>The set of threads that performs Gaussian blurring for downsampling, for each scaling iteration in the generation of the mipmap pyramid.</li>
 </ol>
 
-If your machine has 12 cores, the default settings will use 12 threads for mipmaps and 12 threads for gaussian blurring. This means that, if you are regenerating 12 or more images, there will be 12 + 12 * 12 = 156  concurrent threads. That's too many threads.
+If your machine has 12 cores, the default settings will use 1 thread for mipmaps and 12 threads for gaussian blurring. This may not fit your data properties: you may end up waiting long times for mipmap generation if your images are small.
 
-You must decide between two strategies:
+Two strategies are possible for accelerating Gaussian-based generation of mipmaps:
 
 <ul>
- <li><b>Strategy A</b>: your data consists of large images (over 4000x4000). Right-click on the TrakEM2 display and choose "Project - Properties...", and set the mipmap threads to 1. Now, mipmaps will be regenerated for one single image at a time, using 12 threads (given 12 cores) for computing the Gaussians.</li>
- <li><b>Strategy B</b>: your data consists of small images (smaller than 4000x4000). Go to the Fiji window and select "Edit - Options - Memory & Threads...", and set the number of threads to 1. Now, mipmaps will be regenerated for 12 images at a time (given 12 cores), using a single thread for each to compute the Gaussians.</li>
+ <li><b>Strategy A</b>: your data consists of large images (over 4000x4000). Right-click on the TrakEM2 display and choose "Project - Properties...", and set the mipmap threads to 1 (the default). Now, mipmaps will be regenerated for one single image at a time, using 12 threads (given 12 cores) for computing the Gaussians.</li>
+ <li><b>Strategy B</b>: your data consists of small images (smaller than 4000x4000). Go to the Fiji window and select "Edit - Options - Memory & Threads...", and set the number of threads to 1. Then, go to "Project - Properties...", and set the mipmap threads to 12. Now, mipmaps will be regenerated for 12 images at a time (given 12 cores), using a single thread for each to compute the Gaussians.</li>
 </ul>
 
-Use <b>strategy A</b> as well if your computer has little RAM, or if access to the images is slow and contentious (such as if the data lives in a USB hard drive).
+Use <b>strategy A</b> as well if your computer has little RAM, or if access to the images is slow and contentious (such as if the data lives in a USB hard drive). That's why the default is one single thread for generating mipmaps.
 
 If you change the method for generating mipmaps to a non-Gaussian method, the above situation does not occur. Set the number of threads for regenerating mipmaps to the number of cores, or less if your computer doesn't have much RAM.
 
