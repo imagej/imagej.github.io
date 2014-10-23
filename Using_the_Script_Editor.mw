@@ -6,10 +6,41 @@
 | source                 = {{GitHub|org=imagej|repo=imagej-ui-swing|source=net/imagej/ui/swing/script/ScriptEditor.java}}
 | released               = 11 Sep 2008
 | status                 = active
-}}{{Scripting}}
-
+}}
 The script editor is an invaluable help when writing scripts in any of ImageJ's supported [[Scripting comparisons|languages]].
 
+{{Notice
+| message = The Fiji script editor has become the [[ImageJ2]] script editor.
+As [[2014-06-10_-_Switching_to_ImageJ2_script_editor|announced]] in June 2014, it now forms the basis of all of ImageJ2's scripting capabilities.
+}}
+{{Scripting}}
+== Features ==
+;Text Editing
+* Full undo support
+* Auto-indent
+* Configurable white-space options
+
+;Programming
+* Syntax highlighting
+* Output console
+* Git integration (file being edited must be part of a [[Git]] repository)
+* Language specific [[Script Templates|templates]]
+* Find and replace using regex patterns
+* Automatic brace highlighting
+* Line numbers
+
+;Language specific tools
+* Organization of <tt>import</tt> declarations
+* Access to online documentation ([http://javadoc.imagej.net Javadocs], [http://imagej.nih.gov/ij/developer/macro/functions.html Built-in Macro Functions])
+* Access to source code in <tt>.jar</tt> files
+
+;Interface
+* Bookmarks
+* Tabs for easy switching between open files
+* Navigation shortcuts
+
+
+== Usage ==
 === Starting the editor ===
 
 To get started, start up the script editor:
@@ -41,11 +72,8 @@ For details how to  write dialogs in the different scripting languages, see [[Sc
 
 [[Image:Script-Editor-dialog.jpg]]
 
-=== Further reading ===
-
-See the [[Scripting Help]] page for an introduction to scripting.
-
-For more information about each specific language, see the Languages section of top right sidebar.
+== Further reading ==
+See the [[Scripting Help]] page for an introduction to scripting. For more information about each specific language, see the Languages section of top right sidebar.
 
 [[Category:Plugins]]
 [[Category:Tutorials]]
