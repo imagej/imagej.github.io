@@ -178,3 +178,15 @@ Initial release
 * The GUI is resizable, so as to avoid bad surprise when using TrackMate on several different OSes.
 * Format the display of floating point numbers in a better way.
 * Tweak the toolbar of TrackScheme.
+
+
+== 23-10-2014 - v2.5.2 ==
+
+* Fix a bug in the sparse LAP trackers.
+* Fix the track spot quality feature analyzer.
+
+
+== 23-10-2014 - v2.5.3 ==
+
+* Fix another bug in the sparse LAP trackers.
+* Fix a bug when loading at the tracker config state.
