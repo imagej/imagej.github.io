@@ -1,0 +1,23 @@
+{{Git}}In the ImageJ/Fiji projects, we make extensive use of [https://github.com/ GitHub], a free site hosting Open Source projects for free.
+
+Here are a few tips how to interact via GitHub more effectively:
+
+= Referring to source code =
+
+GitHub offers really powerful ways to refer to specific lines of code. And not only that, it also offers powerful ways to find those specific lines of code to begin with.
+
+== Finding a file – quickly ==
+
+After pointing the web browser to a specific repository, typing the 't' key will let you type out parts of the file name and hit <Enter> when the file in question is at the top of the list (you can also navigate the list using the cursor keys).
+
+== Linking to specific lines ==
+
+Hitting the 'l' key lets you jump to a specific line (and modifies the URL which you can then send around to refer to that line).
+
+After one line is selected already, you can select a line ''range'' by Shift-clicking on the line number of the other end of the line range.
+
+== Permalinks ==
+
+After you found the link for the file in question, it most likely refers to the current version of the file.
+
+However, once development advances, the file's contents might change in the meantime, or file might even go away! To provide a link to a specific revision of the file, just hit the 'y' key to modify the URL to a permanent link (it will then reference the exact commit, instead of a branch).
