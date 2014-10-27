@@ -5,6 +5,7 @@ The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosyst
 <graphviz border alignment="right" caption="SciJava organization hierarchy">
 digraph orgs {
     label="SciJava organization hierarchy"
+    graph [ranksep="0.1"]
     node [shape=box, style=filled]
     "SciJava" [color=green, URL="[https://github.com/scijava]"]
     "ImgLib2" [color=pink, URL="[https://github.com/imglib]"]
