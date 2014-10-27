@@ -423,7 +423,7 @@ If documentation is missing for the command you're interested in, you can always
 As a complete example, if you were interested in the [[2D Histogram]] command:
 * The [[Command Finder]] indicates it's located in VIB.jar
 * VIB is a Fiji plugin, so we go to [https://github.com/fiji/VIB the VIB repository].
-* On GitHub, I press {{Key|T}}, search for "Histogram", and find [https://github.com/fiji/VIB/blob/master/src/main/java/util/Histogram_2D.java the Histogram 2D] source.
+* On GitHub, press {{Key|T}}, search for "Histogram", and find [https://github.com/fiji/VIB/blob/master/src/main/java/util/Histogram_2D.java the Histogram 2D] source.
 
 == I have a problem that is not covered on this page! ==
 
