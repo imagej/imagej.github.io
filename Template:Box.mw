@@ -9,7 +9,7 @@
         margin-bottom: 2em;
         background-color: #ffefbe;
         {{border-radius|.75em}}{{box-shadow}}">
-{{#if:{{{title|}}}|<p style="font-size: large; font-weight: bold; padding-top: 0">{{{title}}}</p></p>}} {{{body|}}}</div>
+{{#if:{{{title|}}}|<p style="font-size: large; font-weight: bold; margin-top: 0; padding-top: 0">{{{title}}}</p>}} {{{body|}}}</div>
 </includeonly>
 <noinclude>
 ==Usage==
