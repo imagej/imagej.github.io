@@ -150,13 +150,15 @@ Each project depends on release [http://books.sonatype.com/mvnref-book/reference
 
 = Managing releases =
 
+The SciJava [[philosophy]] is to "release early, release often." To make doing so as painless as possible, we employ several resources.
+
 == Jenkins ==
 
-TODO - Jenkins does our deploys and releases for us
+TODO - The [http://jenkins.imagej.net/ ImageJ Jenkins server] tests builds and performs releases.
 
 == Maven repositories ==
 
-TODO - ImageJ Maven repository vs. Maven Central
+TODO - [http://maven.imagej.net/ ImageJ Maven repository] vs. Maven Central
 
 == ImageJ update sites ==
 
