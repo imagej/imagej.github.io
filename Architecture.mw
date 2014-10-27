@@ -19,7 +19,7 @@ digraph orgs {
 }
 </graphviz>
 
-There are four organizations which form the backbone of the [[SciJava]] ecosystem:
+There are four organizations on [https://github.com/ GitHub] which form the backbone of the [[SciJava]] ecosystem:
 
 * [https://github.com/scijava scijava] - for [[SciJava]] projects
 * [https://github.com/imglib imglib] - for [[ImgLib2]] projects
