@@ -134,6 +134,14 @@ For example, you can refer to "ImageJ 1.49g" as a ''reproducible build'', or to 
 
 It gets more subtle when making heavy use of software libraries (sometimes called ''dependencies''). It is known, for example, that many plugins in the now-defunct [[MBF|MacBiophotonics distribution of ImageJ]] worked fine with ImageJ 1.42l, but stopped working somewhere between that version and ImageJ 1.44e. That is: referring to, say, ''the Colocalisation Analysis plugin'' does '''not''' refer to a reproducible build because it is very hard to regenerate a working Colocalisation Analysis and ImageJ 1.x version that could be used to verify previously published results.
 
+=== Advantages of reproducible builds ===
+
+Some cardinal reasons to strive for reproducible builds are:
+
+* It becomes possible to use [https://en.wikipedia.org/wiki/Continuous_delivery continuous delivery], or a [https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow feature branch workflow] development style where the <code>master</code> branch is always release ready.
+* Debugging with [http://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search git-bisect] becomes feasible.
+* As a consequence, it avoids [https://en.wikipedia.org/wiki/Technical_debt technical debt] in favor of a robust development style.
+
 === How SciJava achieves reproducible builds ===
 
 For the reasons stated above, the SciJava software components strive for reproducible builds. The goal is to ensure that code which builds and run today will continue to do so in exactly the same way for many years to come.
