@@ -1,0 +1,90 @@
+The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosystem, are carefully structured to foster [[extensibility]].
+
+== Organizational hierarchy ==
+
+There are four organizations which form the backbone of the [[SciJava]] ecosystem:
+
+* [https://github.com/scijava scijava] - for [[SciJava]] projects
+* [https://github.com/imagej imagej] - for [[ImageJ]] projects
+* [https://github.com/imglib imglib] - for [[ImgLib2]] projects
+* [https://github.com/scifio scifio] - for [[SCIFIO]] projects
+
+Each organization contains several related projects under its respective umbrella: a core library (see below) and several extensions. In social terms, each organization represents a collection of conceptually related projects developed by a distinct [[Contributors|team of developers]].
+
+Additional organizations further extend this structure:
+
+* [https://github.com/fiji fiji] - for [[Fiji]] projects
+* [https://github.com/uw-loci uw-loci] - for [[User:LOCI|LOCI]] projects
+* [https://github.com/slim-curve slim-curve] - for [[SLIM Curve]] projects
+* <your organization here!>
+
+== Core libraries ==
+
+<graphviz border alignment="right" caption="Core library hierarchy">
+digraph libs {
+    label="Core library hierarchy"
+    
+    "scijava-common" [color=green, style=filled, URL="[https://github.com/scijava/scijava-common]"]
+    "imagej-common" [color=yellow, style=filled, URL="[https://github.com/imagej/imagej-common]"]
+    "imagej-ops" [color=yellow, style=filled, URL="[https://github.com/imagej/imagej-ops]"]
+    "imglib2" [color=pink, style=filled, URL="[https://github.com/imglib/imglib2]"]
+    "scifio" [color=lightblue, style=filled, URL="[https://github.com/scifio/scifio]"]
+    "scijava-common" -> "imagej-common"
+    "imglib2" -> "imagej-common"
+    "imagej-common" -> "scifio"
+    "imagej-common" -> "imagej-ops"
+}
+</graphviz>
+
+The [[SciJava]] software stack is composed of the following core libraries:
+
+* [[SciJava Common]] - The SciJava application container and plugin framework.
+* [[ImgLib2]] - The N-dimensional image data model.
+* [[ImageJ Common]] - Metadata-rich image data structures and SciJava extensions.
+* [[ImageJ OPS]] - The framework for reusable image processing operations.
+* [[SCIFIO]] - The framework for N-dimensional image I/O.
+
+The dependency hierarchy of library artifacts is shown in the diagram to the right.
+
+== Maven groupIds ==
+
+All projects in these organizations use [[Maven]] for [[Project Management|project management]]. Each organization has its own Maven [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates groupId]:
+
+* scijava = [http://maven.imagej.net/index.html#nexus-search;gav~org.scijava org.scijava]
+* imagej = [http://maven.imagej.net/index.html#nexus-search;gav~net.imagej net.imagej]
+* imglib = [http://maven.imagej.net/index.html#nexus-search;gav~net.imglib2 net.imglib2]
+* scifio = [http://maven.imagej.net/index.html#nexus-search;gav~io.scif io.scif]
+* fiji = [http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji sc.fiji]
+* uw-loci = [http://maven.imagej.net/index.html#nexus-search;gav~loci loci]
+* slim-curve = [http://maven.imagej.net/index.html#nexus-search;gav~slim-curve slim-curve]
+
+== Parent POMs ==
+
+<graphviz border alignment="right" size="400px" caption="Parent POM hierarchy">
+digraph poms {
+    label="Parent POM hierarchy"
+    "pom-scijava" [color=green, style=filled, URL="[https://github.com/scijava/pom-scijava]"]
+    "pom-imglib2" [color=pink, style=filled, URL="[https://github.com/imglib/pom-imglib2]"]
+    "pom-imagej" [color=yellow, style=filled, URL="[https://github.com/imagej/pom-imagej]"]
+    "pom-scifio" [color=lightblue, style=filled, URL="[https://github.com/scifio/pom-scifio]"]
+    "pom-fiji" [color=lavender, style=filled, URL="[https://github.com/fiji/pom-fiji]"]
+    "pom-scijava" -> "pom-imglib2"
+    "pom-scijava" -> "pom-imagej"
+    "pom-scijava" -> "pom-scifio"
+    "pom-imagej" -> "pom-fiji"
+}
+</graphviz>
+
+Each organization has a [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance parent POM] that all other projects in that organization extend:
+
+* {{GitHub|org=scijava|repo=pom-scijava|label=pom-scijava}}
+* {{GitHub|org=imglib|repo=pom-imglib2|label=pom-imglib2}}
+* {{GitHub|org=imagej|repo=pom-imagej|label=pom-imagej}}
+* {{GitHub|org=scifio|repo=pom-scifio|label=pom-scifio}}
+* {{GitHub|org=scifio|repo=pom-fiji|label=pom-fiji}}
+
+The hierarchy of organizational parent POMs is shown in the diagram to the right. The <code>pom-scijava</code> parent forms the foundation of all other Maven projects in the ecosystem.
+
+== Bill of Materials ==
+
+The pom-scijava parent includes a [http://howtodoinjava.com/2014/02/18/maven-bom-bill-of-materials-dependency/ Bill of Materials] (BOM) which declares compatible versions of all core SciJava software. These versions are intended to be used together in downstream projects, preventing version skew (symptoms of which include <code>ClassNotFoundException</code> and <code>NoSuchMethodError</code>, as well as erroneous behavior in general). This BOM is especially important while some components are still in beta, since they may sometimes break backwards compatibility.
