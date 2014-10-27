@@ -81,7 +81,8 @@ Each organization has a [http://books.sonatype.com/mvnref-book/reference/pom-rel
 * {{GitHub|org=imglib|repo=pom-imglib2|label=pom-imglib2}}
 * {{GitHub|org=imagej|repo=pom-imagej|label=pom-imagej}}
 * {{GitHub|org=scifio|repo=pom-scifio|label=pom-scifio}}
-* {{GitHub|org=scifio|repo=pom-fiji|label=pom-fiji}}
+* {{GitHub|org=fiji|repo=pom-fiji|label=pom-fiji}}
+* {{GitHub|org=uw-loci|repo=pom-loci|label=pom-loci}}
 
 The hierarchy of organizational parent POMs is shown in the diagram to the right. The <code>pom-scijava</code> parent forms the foundation of all other Maven projects in the ecosystem.
 
