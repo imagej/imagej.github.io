@@ -22,8 +22,8 @@ digraph orgs {
 There are four organizations which form the backbone of the [[SciJava]] ecosystem:
 
 * [https://github.com/scijava scijava] - for [[SciJava]] projects
-* [https://github.com/imagej imagej] - for [[ImageJ]] projects
 * [https://github.com/imglib imglib] - for [[ImgLib2]] projects
+* [https://github.com/imagej imagej] - for [[ImageJ]] projects
 * [https://github.com/scifio scifio] - for [[SCIFIO]] projects
 
 Each organization contains several related projects under its respective umbrella: a core library (see below) and several extensions. In social terms, each organization represents a collection of conceptually related projects developed by a distinct [[Contributors|team of developers]].
