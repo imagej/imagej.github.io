@@ -34,6 +34,7 @@ Additional organizations further extend this structure:
 * <your organization here!>
 
 The diagram on the right shows the SciJava software stack at the organizational level.
+{{Notice | message=Please note that this picture is necessarily oversimplified: it is certainly not the case that e.g. ''all'' SCIFIO projects depend on ''all'' ImageJ projects. (Actually, the core <code>scifio</code> library depends only on the core <code>imagej-common</code> library; see below.) For various reasons, there are projects in each of the <code>imagej</code>, <code>imglib</code> and <code>scifio</code> organizations which depend on projects in both of the other organizations. However, while these ''organizations'' are interdependent as a whole, we strive to avoid dependency cycles at the level of individual artifacts.}}
 
 == Core libraries ==
 
