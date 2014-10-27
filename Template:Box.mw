@@ -4,7 +4,7 @@
         style="float:right;
         width: 250px;
         border: 1px solid #ccc;
-        padding: 5px !important;
+        padding: 15px !important;
         margin-top: 1em;
         margin-bottom: 2em;
         background-color: #ffefbe;
