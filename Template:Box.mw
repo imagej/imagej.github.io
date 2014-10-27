@@ -2,7 +2,7 @@
 <div
 {{#if:{{{id|}}}|id="{{{id|}}}"}}
         style="float:right;
-        width: 250px;
+        width: {{#if:{{{width|}}}|{{{width|}}}|300px}};
         border: 1px solid #ccc;
         padding: 15px !important;
         margin-top: 1em;
@@ -13,22 +13,24 @@
 </includeonly>
 <noinclude>
 ==Usage==
+{{Sidebox
+| body = The quick brown fox jumped over the lazy dog.
+}}
 <pre>
 {{Sidebox
 | body = The quick brown fox jumped over the lazy dog.
 }}
 </pre>
 {{Sidebox
-| body = The quick brown fox jumped over the lazy dog.
+| title = Announcing new Shimmer!
+| body = New Shimmer is both a floor wax and a dessert topping! Here, I'll spray some on your mop.
+| width = 40%
 }}
 <pre>
 {{Sidebox
 | title = Announcing new Shimmer!
 | body = New Shimmer is both a floor wax and a dessert topping! Here, I'll spray some on your mop.
+| width = 40%
 }}
 </pre>
-{{Sidebox
-| title = Announcing new Shimmer!
-| body = New Shimmer is both a floor wax and a dessert topping! Here, I'll spray some on your mop.
-}}
 </noinclude>
