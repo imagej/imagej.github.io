@@ -1,14 +1,13 @@
 <includeonly>
 <div
 {{#if:{{{id|}}}|id="{{{id|}}}"}}
-        style="float:center;
+        style="float:right;
+        width: 250px;
         border: 1px solid #ccc;
         padding: 5px !important;
-        text-align:center;
         margin-top: 1em;
         margin-bottom: 2em;
         background-color: #ffefbe;
-        width: 250px;
         {{border-radius|.75em}}{{box-shadow}}">
 {{#if:{{{title|}}}|<strong>{{{title}}}</strong><br>}} {{{body|}}}</div>
 </includeonly>
@@ -17,6 +16,15 @@
 <pre>
 {{Sidebox
 | body = The quick brown fox jumped over the lazy dog.
+}}
+</pre>
+{{Sidebox
+| body = The quick brown fox jumped over the lazy dog.
+}}
+<pre>
+{{Sidebox
+| title = Announcing new Shimmer!
+| body = New Shimmer is both a floor wax and a dessert topping! Here, I'll spray some on your mop.
 }}
 </pre>
 {{Sidebox
