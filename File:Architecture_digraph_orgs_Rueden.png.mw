@@ -1,0 +1,11 @@
+= ImageMap =
+When including this image in a wiki page, use the following mark-up to enable links:
+ <nowiki>
+<imagemap>
+File:Architecture_digraph_orgs_Rueden.png
+poly 218 31 215 23 206 16 193 11 176 7 157 6 138 7 121 11 107 16 98 23 95 31 98 38 107 45 121 50 138 54 157 55 176 54 193 50 206 45 215 38 [https://github.com/scijava]
+poly 224 129 220 122 211 115 196 110 177 106 157 105 136 106 117 110 103 115 93 122 90 129 93 137 103 144 117 149 136 153 157 154 177 153 196 149 211 144 220 137 [https://github.com/imglib]
+poly 216 228 213 220 205 214 192 208 175 205 157 203 138 205 122 208 109 214 100 220 97 228 100 236 109 242 122 248 138 251 157 253 175 251 192 248 205 242 213 236 [https://github.com/imagej]
+poly 217 327 214 319 205 312 192 307 175 303 157 302 138 303 121 307 108 312 99 319 96 327 99 334 108 341 121 346 138 350 157 351 175 350 192 346 205 341 214 334 [https://github.com/scifio]</imagemap>
+</nowiki>
+See [https://www.mediawiki.org/wiki/Extension:ImageMap ImageMap] for more information.
