@@ -2,6 +2,20 @@ The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosyst
 
 == Organizational hierarchy ==
 
+<graphviz border alignment="right" caption="SciJava organization hierarchy">
+digraph orgs {
+    label="SciJava organization hierarchy"
+    node [shape=box, style=filled]
+    "SciJava" [color=green, URL="[https://github.com/scijava]"]
+    "ImgLib2" [color=pink, URL="[https://github.com/imglib]"]
+    "ImageJ" [color=yellow, URL="[https://github.com/imagej]"]
+    "SCIFIO" [color=lightblue, URL="[https://github.com/scifio]"]
+    "SciJava" -> "ImgLib2"
+    "ImgLib2" -> "ImageJ"
+    "ImageJ" -> "SCIFIO"
+}
+</graphviz>
+
 There are four organizations which form the backbone of the [[SciJava]] ecosystem:
 
 * [https://github.com/scijava scijava] - for [[SciJava]] projects
@@ -17,6 +31,8 @@ Additional organizations further extend this structure:
 * [https://github.com/uw-loci uw-loci] - for [[User:LOCI|LOCI]] projects
 * [https://github.com/slim-curve slim-curve] - for [[SLIM Curve]] projects
 * <your organization here!>
+
+The diagram on the right shows the SciJava software stack at the organizational level.
 
 == Core libraries ==
 
