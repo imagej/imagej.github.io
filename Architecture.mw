@@ -38,6 +38,10 @@ Additional organizations further extend this structure:
 The diagram on the right shows the SciJava software stack at the organizational level.
 {{Notice | message=Please note that this picture is necessarily oversimplified: it is certainly not the case that e.g. ''all'' SCIFIO projects depend on ''all'' ImageJ projects. (Actually, the core <code>scifio</code> library depends only on the core <code>imagej-common</code> library; see below.) For various reasons, there are projects in each of the <code>imagej</code>, <code>imglib</code> and <code>scifio</code> organizations which depend on projects in both of the other organizations. However, while these three ''organizations'' are interdependent as a whole, we strive to avoid dependency cycles at the level of individual artifacts.}}
 
+== Git repositories ==
+
+Each project is contained in its own [[Git]] repository, so that interested developers can cherry-pick only those parts of interest. Version control is an indispensable tool to ensure ''scientific reproducibility'' (see below) by tracking known-working states of the source code, and maintain a written recorded of how and why the code has changed over time. For technical details, see the [[Git]] section.
+
 == Core libraries ==
 
 <graphviz border alignment="right" caption="Core library hierarchy">
