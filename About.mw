@@ -50,6 +50,8 @@ The following software component libraries form the core of ImageJ2:
 * {{GitHub|org=imagej|repo=imagej-legacy|label=ImageJ Legacy}} - Provides complete backwards compatibility with ImageJ 1.x.
 * {{GitHub|org=scijava|repo=scijava-common|label=SciJava Common}} - The core frameworks for plugins, modules and the application itself.
 
+See the [[Architecture]] page for further details.
+
 == Rationale ==
 
 In recent years a segment of the ImageJ developer community has repeatedly inquired as to ImageJ's future. The program has been successful enough that it would greatly benefit from modern open source software best practices: a publicly accessible source code repository, a suite of unit tests with a continuous build integration system, a central repository of extensions, clear guidelines on how external developers can contribute to both those extensions and to the core program when warranted, and a development roadmap addressing feature requests and tasks from the community.
