@@ -13,7 +13,7 @@ The collection contains [[Macros]], [[Scripts]] and [[Plugins]] focused on Data 
 
 == Installation ==
 The easiest way is to install and maintain the collection is to subscribe to the BAR update site. By doing so you will not need to manually download and install anything: the [[Fiji Updater]] will take care of it for you:<br>
-Run <span style="border-bottom:1px dotted #ccc;">Help▷ Update...</span> Choose ''Advance Mode'' then ''Manage update sites''. Activate the ''BAR'' checkbox in the alphabetically-sorted list of update sites. Press ''OK'', then ''Apply changes''. Restart ImageJ. That's it. Enjoy BAR!
+Run <span style="border-bottom:1px dotted #ccc;">Help▷ Update...</span> and choose ''Manage update sites''. Activate the ''BAR'' checkbox in the alphabetically-sorted list of update sites. Press ''OK'', then ''Apply changes''. Restart ImageJ. That's it. Enjoy BAR!
 
 Alternatively, if you prefer to manually install and update the collection, you can do so through {{GitHub|org=tferr|repo=Scripts#ij-bar|label=GitHub}}: either by downloading individual files, or by downloading the entire repository as a [https://github.com/tferr/Scripts/archive/master.zip ZIP archive].
 
@@ -89,7 +89,7 @@ macro "Remove Round Structures [0]" {
 As [[#Context_Menu|mentioned]], such macros can then be pasted into the text area of <span style="border-bottom:1px dotted #ccc;">Edit▷ Options▷ Startup...</span> so that they can be executed when ImageJ starts up.
 
 == Scripting BARs ==
-{{Scripting}}Although BARs can be used as standalone commands (launched e.g., by pressing {{key press|L}}, the [[Using_the_Command_Launcher|Command Launcher]] shortcut), the scripts an plugins in BAR become more useful when incorporated into other routines. Indeed, they are designed to function as snippets.
+{{Scripting}}Although BARs can be used as standalone commands (launched e.g., by pressing {{key press|L}}, the [[Using_the_Command_Launcher|Command Launcher]] shortcut), the scripts and plugins in BAR become more useful when incorporated into other routines. Indeed, they are designed to function as snippets.
 
 === Snippets ===
 BAR contains a [https://github.com/tferr/Scripts/tree/master/Snippets growing depository] of reusable scripts to be used as scripting templates. Below is an example, taken from {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder.ijm|label=Process_Folder.ijm}},  a more customizable and modular alternative to the <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span>  built-in command.
