@@ -1,5 +1,7 @@
 The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosystem, are carefully structured to foster [[extensibility]].
 
+= SciJava project structure =
+
 == Organizational hierarchy ==
 
 <graphviz border alignment="right" caption="SciJava organization hierarchy">
@@ -107,3 +109,21 @@ The hierarchy of organizational parent POMs is shown in the diagram to the right
 == Bill of Materials ==
 
 The <code>pom-scijava</code> parent includes a [http://howtodoinjava.com/2014/02/18/maven-bom-bill-of-materials-dependency/ Bill of Materials] (BOM) which declares compatible versions of all core SciJava software in its [http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management dependencyManagement section]. These versions are intended to be used together in downstream projects, preventing version skew (symptoms of which include <code>ClassNotFoundException</code> and <code>NoSuchMethodError</code>, as well as erroneous behavior in general). This BOM is especially important while some components are still in beta, since they may sometimes break backwards compatibility.
+
+== Reproducible builds ==
+
+TODO - release couplings. Maybe merge the [[Reproducible builds]] page here?
+
+= Managing releases =
+
+== Jenkins ==
+
+TODO - Jenkins does our deploys and releases for us
+
+== Maven repositories ==
+
+TODO - ImageJ Maven repository vs. Maven Central
+
+== ImageJ update sites ==
+
+TODO
