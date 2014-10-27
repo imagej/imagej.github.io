@@ -7,4 +7,4 @@ The following components are part of the '''SciJava software stack''':
 * [[ImageJ2]] - library and application for N-dimensional image processing.
 * [[Fiji]] - extension of [[ImageJ]] for life sciences research.
 
-See the [http://scijava.org/ SciJava web site] for further details.
+See the [[Architecture]] page and the [http://scijava.org/ SciJava web site] for further details.
