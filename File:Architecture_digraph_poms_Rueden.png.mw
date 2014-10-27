@@ -1,1 +1,12 @@
-
+= ImageMap =
+When including this image in a wiki page, use the following mark-up to enable links:
+ <nowiki>
+<imagemap>
+File:Architecture_digraph_poms_Rueden.png
+poly 401 31 396 23 383 16 363 11 338 7 309 6 281 7 256 11 235 16 222 23 218 31 222 38 235 45 256 50 281 54 309 55 338 54 363 50 383 45 396 38 [https://github.com/scijava/pom-scijava]
+poly 195 129 191 122 177 115 156 110 129 106 100 105 71 106 44 110 23 115 9 122 5 129 9 137 23 144 44 149 71 153 100 154 129 153 156 149 177 144 191 137 [https://github.com/imglib/pom-imglib2]
+poly 400 129 395 122 383 115 363 110 337 106 309 105 281 106 256 110 236 115 223 122 219 129 223 137 236 144 256 149 281 153 309 154 337 153 363 149 383 144 395 137 [https://github.com/imagej/pom-imagej]
+poly 584 129 580 122 569 115 551 110 529 106 504 105 479 106 457 110 439 115 428 122 424 129 428 137 439 144 457 149 479 153 504 154 529 153 551 149 569 144 580 137 [https://github.com/scifio/pom-scifio]
+poly 373 228 369 220 360 214 346 208 329 205 309 203 290 205 272 208 258 214 249 220 246 228 249 236 258 242 272 248 290 251 309 253 329 251 346 248 360 242 369 236 [https://github.com/fiji/pom-fiji]</imagemap>
+</nowiki>
+See [https://www.mediawiki.org/wiki/Extension:ImageMap ImageMap] for more information.
