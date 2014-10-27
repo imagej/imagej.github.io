@@ -122,11 +122,19 @@ To verify results, it is absolutely necessary to be able to reproduce results cl
 
 To that end, it should be obvious that researchers '''need''' to have the ability to inspect the exact source code corresponding to the software used to generate the results to be verified. In other words, reproducible builds are required for sound scientific research.
 }}
+=== What is a reproducible build? ===
+
 A software ''version'' (or ''build'') is called '''reproducible''' if it is easy to regenerate the exact same software application from the source code.
 
 For example, you can refer to "ImageJ 1.49g" as a ''reproducible build'', or to ''Sholl Analysis 3.4.3'', while referring to "ImageJ" is irreproducible.
 
 It gets more subtle when making heavy use of software libraries (sometimes called ''dependencies''). It is known, for example, that many plugins in the now-defunct [[MBF|MacBiophotonics distribution of ImageJ]] worked fine with ImageJ 1.42l, but stopped working somewhere between that version and ImageJ 1.44e. That is: referring to, say, ''the Colocalisation Analysis plugin'' does '''not''' refer to a reproducible build because it is very hard to regenerate a working Colocalisation Analysis and ImageJ 1.x version that could be used to verify previously published results.
+
+=== How SciJava achieves reproducible builds ===
+
+For the reasons stated above, the SciJava software components strive for reproducible builds. The goal is to ensure that code which builds and run today will continue to do so in exactly the same way for many years to come.
+
+Each project depends on release [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-syntax.html#pom-reationships-sect-versions versions] of ''all'' its dependencies—never on [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-syntax.html#pom-relationships-sect-snapshot-versions snapshots] or [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-dependencies.html#pom-relationships-sect-version-ranges version ranges]. A Maven snapshot is a moving target, and depending on one results in an irreproducible build. Similarly, all Maven plugins used, as well as the parent POM, are also declared at release versions. In short: all <code>&lt;version&gt;</code> tags specify release versions, never <code>SNAPSHOT</code> or <code>LATEST</code> versions. We use the [http://maven.apache.org/enforcer/maven-enforcer-plugin/ Maven Enforcer Plugin] to enforce this requirement (though it can be disabled by setting the <code>scijava.enforce.skip</code> system property).
 
 = Managing releases =
 
