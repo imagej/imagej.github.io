@@ -13,19 +13,15 @@
 </includeonly>
 <noinclude>
 ==Usage==
-{{Sidebox
-| body = The quick brown fox jumped over the lazy dog.
-}}
 <pre>
 {{Sidebox
 | body = The quick brown fox jumped over the lazy dog.
 }}
 </pre>
 {{Sidebox
-| title = Announcing new Shimmer!
-| body = New Shimmer is both a floor wax and a dessert topping! Here, I'll spray some on your mop.
-| width = 40%
+| body = The quick brown fox jumped over the lazy dog.
 }}
+<div style="clear: right;"></div>
 <pre>
 {{Sidebox
 | title = Announcing new Shimmer!
@@ -33,4 +29,9 @@
 | width = 40%
 }}
 </pre>
+{{Sidebox
+| title = Announcing new Shimmer!
+| body = New Shimmer is both a floor wax and a dessert topping! Here, I'll spray some on your mop.
+| width = 40%
+}}
 </noinclude>
