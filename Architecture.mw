@@ -1,4 +1,4 @@
-= SciJava project structure =
+{{Development}}= SciJava project structure =
 
 The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosystem, are carefully structured to foster [[extensibility]].
 
