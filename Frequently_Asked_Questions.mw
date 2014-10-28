@@ -501,6 +501,9 @@ As of June 2014, around 19% of Mac OS X systems still run version 10.6 Snow Leop
 == How are you addressing the fact that with increased modularity comes increased complexity? ==
 
 The key idea is to provide sensible defaults (e.g., the [http://athinkingperson.com/2010/06/02/where-the-big-green-copier-button-came-from/ big green Xerox button]) as a way of dealing with complex software programs. We also embrace the philosophy of [http://en.wikipedia.org/wiki/Convention_over_configuration convention over configuration] utilized by many large software projects in recent years.
+
+See the [[Philosophy]] page for further details.
+
 == How about a version of ImageJ for the web browser, mobile devices, etc.? ==
 
 While a pure web version of ImageJ would be desirable for a number of reasons, there are several substantial challenges with current technology. In particular, it would be difficult for a Javascript-based ImageJ to maintain compatibility with existing plugins, macros and scripts. For now, our goal is to continue improving the Java version of ImageJ, while remaining cognizant of developments in the web applications domain, to reduce the difficulties of a web version at some future date.
