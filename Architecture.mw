@@ -148,6 +148,10 @@ For the reasons stated above, the SciJava software components strive for reprodu
 
 Each project depends on release [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-syntax.html#pom-reationships-sect-versions versions] of ''all'' its dependencies—never on [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-syntax.html#pom-relationships-sect-snapshot-versions snapshots] or [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-dependencies.html#pom-relationships-sect-version-ranges version ranges]. A Maven snapshot is a moving target, and depending on one results in an irreproducible build. Similarly, all Maven plugins used, as well as the parent POM, are also declared at release versions. In short: all <code>&lt;version&gt;</code> tags specify release versions, never <code>SNAPSHOT</code> or <code>LATEST</code> versions. We use the [http://maven.apache.org/enforcer/maven-enforcer-plugin/ Maven Enforcer Plugin] to enforce this requirement (though it can be disabled by setting the <code>scijava.enforce.skip</code> system property).
 
+== Versioning ==
+
+The SciJava software stack uses the [http://semver.org/ SemVer] versioning system. This scheme communicates information about the backwards compatibility (or lack thereof) between versions of each individual software component.
+
 = Managing releases =
 
 The SciJava [[philosophy]] is to "release early, release often." To make doing so as painless as possible, we employ several resources.
