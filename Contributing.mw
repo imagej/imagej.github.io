@@ -2,12 +2,12 @@ The community encourages discussion about proposed changes on the [[Mailing List
 
 Start on the mailing lists, searching for discussions related to your contribution to get some context & background. It can also be helpful to search for applicable issues and plans in ImageJ's [http://trac.imagej.net/query?status=accepted&status=assigned&status=new&status=reopened&status=reviewing&type=feature&group=milestone&report=1&order=priority Trac issue tracker] or on the GitHub issue list for [https://github.com/imagej/imagej/issues ImageJ2], [https://github.com/imglib/imglib/issues ImgLib2], and [https://github.com/scifio/scifio/issues SCIFIO]. The ImageJ community believes that public discussion is important so that ideas are not lost and exposed to healthy alternate points of view.
 
-==== ImageJ2 ====
+== ImageJ2 ==
 Submit patches to [[ImageJ2]] via pull requests against [https://github.com/imagej ImageJ2's source on GitHub].
 
 Note that since ImageJ2 has a modular architecture, it is possible that your change would be more applicable to one of the supporting technologies such as the [https://github.com/imglib ImgLib2] or [https://github.com/scifio SCIFIO] projects.
 
-==== ImageJ1 ====
+== ImageJ1 ==
 Changes to [[ImageJ1]] are made by Wayne Rasband, who is the sole [[ImageJ1]] developer. He takes patch submissions and then reworks them to fit within the project's development model and style before merging them. Attribution for the changes is noted in the release notes (see [http://imagej.net/notes.html ImageJ1's Release Notes/News]). 
 
 Methods of getting the patch to Wayne include:
