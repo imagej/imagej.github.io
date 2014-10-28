@@ -9,7 +9,7 @@ For example, the [[OME]] project (which includes [[OMERO]] and [[Bio-Formats]]) 
 <tr>
 <th colspan="3">Versioning strategies</th>
 <tr>
-<td>&nbsp;</td>
+<td>''Strategy''</td>
 <td>'''BOM'''</td>
 <td>'''Monoversioned'''</td>
 </tr>
