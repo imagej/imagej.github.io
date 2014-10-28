@@ -1,8 +1,39 @@
-{{Development}}[[ImageJ]], and the [[SciJava]] software stack in general, is developed according to certain biases, which we describe here.
+{{Development}}[[ImageJ]], and the [[SciJava]] software stack in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.{{Sidebox
+| title = What's the alternative?
+| width = 30%
+| body = Some projects opt to release their entire software stack with a single monolithic version number. This has one extremely nice ramification: it clearly communicates which versions of which software components are intended to be compatible with one another.
+<p>
+For example, the [[OME]] project (which includes [[OMERO]] and [[Bio-Formats]]) employs this approach to versioning and release management. Before each release, the entire OME team performs careful and thorough integration testing of all components.
+</p>
+<table class="wikitable" style="width: 100%">
+<tr>
+<th colspan="3">Versioning strategies</th>
+<tr>
+<td>&nbsp;</td>
+<td>'''BOM'''</td>
+<td>'''Monoversioned'''</td>
+</tr>
+<tr>
+<td style="vertical-align: top">''Version compatibility''</td>
+<td>Compatible components are declared in a [[Bill of Materials]] (BOM)</td>
+<td>Compatible components have the same version number</td>
+</tr>
+<tr>
+<td style="vertical-align: top">''Frequency of releases''</td>
+<td>Faster</td>
+<td>Slower</td>
+</tr>
+<tr>
+<td style="vertical-align: top">''Stability''</td>
+<td>Less</td>
+<td>More</td>
+</tr>
+</table>
+}}== Release early, release often ==
 
-== Release early, release often ==
+ImageJ subscribes to the [https://en.wikipedia.org/wiki/Release_early,_release_often release early, release often] mantra often cited in software engineering circles. In particular—and especially because there is a small core development team—the project is driven by [http://blog.codinghorror.com/boyds-law-of-iteration/ Boyd's Law of Iteration]: '''speed of iteration beats quality of iteration'''. That is not to say that we do not strive for quality—we do. But we have found through experience that more releases, together with guiding user feedback, push a project forward more efficiently than a slower release cycle does.
 
-ImageJ subscribes to the [https://en.wikipedia.org/wiki/Release_early,_release_often release early, release often] mantra often cited in software engineering circles. In particular—and especially because there is a small core development team—the project is driven by [http://blog.codinghorror.com/boyds-law-of-iteration/ Boyd's Law of Iteration]: '''speed of iteration beats quality of iteration'''. That is not to say that we do not strive for quality—we do. But we have found through experience that more releases, together with guiding user feedback, push a project forward more efficiently than very slow but carefully considered and tested releases with little user feedback during each testing phase.
+To ensure releases can happen quickly, the SciJava components strive for [[reproducible builds]] with a "release ready" <code>master</code> branch. This allows individual SciJava components to be released with the [[Architecture#Jenkins|push of a button]], in a ''timespan less than a five minutes''. This puts bug-fixes into the hands of users as quickly as possible. 
 
 == Do it in public ==
 
