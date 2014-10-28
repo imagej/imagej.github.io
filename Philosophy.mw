@@ -53,4 +53,4 @@ See also [http://loci.wisc.edu/faq/isnt-java-too-slow Isn't Java too slow?] and 
 
 == Convention over configuration ==
 
-With increased modularity often comes increased complexity. One key way of addressing this issue is to provide sensible defaults (e.g., the [http://athinkingperson.com/2010/06/02/where-the-big-green-copier-button-came-from/ big green Xerox button]) as a way of dealing with complex software programs. We embrace the philosophy of [http://en.wikipedia.org/wiki/Convention_over_configuration convention over configuration] utilized by many large software projects in recent years.
+With increased modularity often comes increased complexity. One key way of addressing this issue is to provide sensible defaults (e.g., the [http://athinkingperson.com/2010/06/02/where-the-big-green-copier-button-came-from/ big green Xerox button]) as a way of dealing with complex software programs. We embrace the philosophy of [http://en.wikipedia.org/wiki/Convention_over_configuration convention over configuration] utilized by many large software projects in recent years. For this reason, SciJava projects use the [[Maven]] build tool for [[project management]].
