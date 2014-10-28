@@ -480,15 +480,7 @@ The important part is that Wayne receive the patch, since he is the only one wit
 
 == Why do you program in Java? Is C++ not much faster? ==
 
-While it used to be true that Java is always slower than the equivalent in C++, this is no longer true. [http://paulbuchheit.blogspot.com/2007/06/java-is-faster-than-c.html There] have [http://www.azulsystems.com/blog/cliff/2009-09-06-java-vs-c-performanceagain been] quite [http://vanillajava.blogspot.com/2011/08/java-can-be-significantly-faster-than-c.html a few benchmarks] comparing Java vs C++ performance, [http://keithlea.com/javabench/ this one] probably being the grandfather of all.
-
-Pragmatically, one should note that there is not really a big difference in performance when comparing Java to C++.
-
-Java programs run without trouble and without recompiling on the major platforms: Windows, Mac OS X and Linux. And plugins compiled on one platform also execute on all other platforms without recompiling. And profiling and debugging is easier with Java than with C++. And all programs/plugins double as libraries.
-
-So the true reason why we use Java is probably: it makes ImageJ accessible.
-
-See also [http://loci.wisc.edu/faq/isnt-java-too-slow Isn't Java too slow?] and [http://loci.wisc.edu/faq/why-java Why is your software written in Java?] from the LOCI FAQ.
+See the [[Philosophy#Why_Java.3F Philosophy]] page!
 
 == With Oracle buying Sun and Apple deprecating Java, does Java have a future? ==
 
@@ -500,9 +492,7 @@ As of June 2014, around 19% of Mac OS X systems still run version 10.6 Snow Leop
 
 == How are you addressing the fact that with increased modularity comes increased complexity? ==
 
-The key idea is to provide sensible defaults (e.g., the [http://athinkingperson.com/2010/06/02/where-the-big-green-copier-button-came-from/ big green Xerox button]) as a way of dealing with complex software programs. We also embrace the philosophy of [http://en.wikipedia.org/wiki/Convention_over_configuration convention over configuration] utilized by many large software projects in recent years.
-
-See the [[Philosophy]] page for further details.
+See the [[Philosophy#Convention_over_configuration Philosophy]] page!
 
 == How about a version of ImageJ for the web browser, mobile devices, etc.? ==
 
