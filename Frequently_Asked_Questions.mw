@@ -480,7 +480,7 @@ The important part is that Wayne receive the patch, since he is the only one wit
 
 == Why do you program in Java? Is C++ not much faster? ==
 
-See the [[Philosophy#Why_Java.3F Philosophy]] page!
+See the [[Philosophy#Why_Java.3F|Philosophy]] page!
 
 == With Oracle buying Sun and Apple deprecating Java, does Java have a future? ==
 
@@ -492,7 +492,7 @@ As of June 2014, around 19% of Mac OS X systems still run version 10.6 Snow Leop
 
 == How are you addressing the fact that with increased modularity comes increased complexity? ==
 
-See the [[Philosophy#Convention_over_configuration Philosophy]] page!
+See the [[Philosophy#Convention_over_configuration|Philosophy]] page!
 
 == How about a version of ImageJ for the web browser, mobile devices, etc.? ==
 
