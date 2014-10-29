@@ -29,7 +29,7 @@ There are several ways that your command's functionality can be reused by others
 
 == Writing a service ==
 
-If you have multiple related operations you would like to provide, or wish to maintain persistent state between command executions, we strongly suggest exposing the functionality as a [/service-architecture service]. Many core ImageJ2 commands are structured this way. E.g., ImageJ2's animation features are patterned this way, as follows:
+If you have multiple related operations you would like to provide, or wish to maintain persistent state between command executions, we strongly suggest exposing the functionality as a ''service''. Many core ImageJ2 commands are structured this way. E.g., ImageJ2's animation features are patterned this way, as follows:
 
 * {{GitHub|org=imagej|repo=imagej-plugins-commands|tag=imagej-plugins-commands-0.2.3|source=net/imagej/plugins/commands/animation/StartAnimation.java|label=StartAnimation}} - starts animating the active image.
 * {{GitHub|org=imagej|repo=imagej-plugins-commands|tag=imagej-plugins-commands-0.2.3|source=net/imagej/plugins/commands/animation/StopAnimation.java|label=StopAnimation}} - stops animating the active image.
