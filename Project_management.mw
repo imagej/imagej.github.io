@@ -26,6 +26,10 @@ Previously, the project used [http://trac.imagej.net/ Trac] for issue tracking a
 * [http://trac.imagej.net/report/1 ImageJ Features report] - a high-level list of features slated for each release
 * [http://trac.imagej.net/timeline ImageJ Trac timeline] - a fine-grained list of changes to ImageJ
 
+== Patch submissions ==
+
+The preferred mechanism to contribute improvements to [[ImageJ]] and other [[SciJava]] components is using [https://help.github.com/articles/using-pull-requests/ GitHub pull requests]! See the [[Contributing]] page for details.
+ 
 == Continuous integration ==
 
 ImageJ has a [http://jenkins.imagej.net/ Jenkins server], which automatically checks the code for build and test errors.
