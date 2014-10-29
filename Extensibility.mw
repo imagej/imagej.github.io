@@ -2,9 +2,9 @@
 
 ImageJ2 provides several different types of plugins. It is even possible to extend the system with your own new types of plugins.
 
-The most familiar sort of plugin is the ''command'', which is a runnable operation. Most commands can be written in a manner completely independent of the user interface. You define the command's ''inputs'' and ''outputs'' by labeling them with the <code>@Parameter</code> annotation. ImageJ automatically takes care of filling in the inputs (typically by prompting the user for input using a dialog box), as well as displaying the outputs after the command has run.
+== Commands ==
 
-== Example commands ==
+The most familiar sort of plugin is the ''command'', which is a runnable operation. Most commands can be written in a manner completely independent of the user interface. You define the command's ''inputs'' and ''outputs'' by labeling them with the <code>@Parameter</code> annotation. ImageJ automatically takes care of filling in the inputs (typically by prompting the user for input using a dialog box), as well as displaying the outputs after the command has run.
 
 You can find some [https://github.com/imagej/imagej-tutorials/tree/master/simple-commands/src/main/java example commands] in the [https://github.com/imagej/imagej-tutorials ImageJ tutorials].
 
