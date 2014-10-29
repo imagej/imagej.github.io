@@ -11,10 +11,11 @@ Note that since ImageJ2 has a modular [[architecture]], it is possible that your
 Changes to [[ImageJ1]] are made by Wayne Rasband, who is the sole [[ImageJ1]] developer. He takes patch submissions and then reworks them to fit within the project's development model and style before merging them. Attribution for the changes is noted in the release notes (see [http://imagej.net/notes.html ImageJ1's Release Notes/News]). 
 
 Methods of getting the patch to Wayne include:
-* Send a patch to the [mailto:imagej-devel@imagej.net imagej-devel mailing list]
-* Submit a pull request on GitHub against {{GitHub|org=imagej|repo=imagej1|label=Wayne's ImageJ1 repository}}
-* Send a patch to Wayne via private mail
+* Send the modified code in a private mail to Wayne (he does not like to discuss code on the mailing list)
+* Send a patch to Wayne via private mail (it should apply to [https://github.com/imagej/imagej1/commit/master the latest revision] and must not use any Git extension because Wayne uses <code>patch(1)</code> to apply the patch)
+* Send a patch to the [mailto:imagej-devel@imagej.net imagej-devel mailing list] (but note that traditionally, Wayne does not discuss code there)
+* Submit a pull request on GitHub against {{GitHub|org=imagej|repo=imagej1|label=Wayne's ImageJ1 repository}} (please note, though, that none of [https://github.com/imagej/imagej1/pulls?q=is%3Apr+is%3Aclosed the past Pull Requests] were merged using the standard Git workflow)
 
-The important part is that Wayne receive the patch, since he is the only one with the authority to merge it.
+The important part is that Wayne receive the code/patch, since he is the only one with the authority to merge it.
 
-(Note this answer was written to document a [http://imagej.1557.x6.nabble.com/Non-Uniform-X-Y-Z-Units-Patch-tp5008492p5008496.html nice response] from Curtis Rueden on the ImageJ mailing list.)
+(See also this [http://imagej.1557.x6.nabble.com/Non-Uniform-X-Y-Z-Units-Patch-tp5008492p5008496.html nice response] from Curtis Rueden on the ImageJ mailing list.)
