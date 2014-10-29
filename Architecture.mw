@@ -59,34 +59,6 @@ Of course, there are downsides, too:
 
 As a rule of thumb, we find that multi-module [[Maven]] projects stored within a single Git repository are a natural fit for "big bang" software which is versioned in lockstep and carefully tested before each release, whereas single-module projects stored in separate Git repositories work well for the [[Philosophy#Release_early.2C_release_often|RERO]]-style release paradigm.
 
-== Core libraries ==
-
-<graphviz border alignment="right" caption="Core library hierarchy">
-digraph libs {
-    label="Core library hierarchy"
-    
-    "scijava-common" [color=green, style=filled, URL="[https://github.com/scijava/scijava-common]"]
-    "imagej-common" [color=yellow, style=filled, URL="[https://github.com/imagej/imagej-common]"]
-    "imagej-ops" [color=yellow, style=filled, URL="[https://github.com/imagej/imagej-ops]"]
-    "imglib2" [color=pink, style=filled, URL="[https://github.com/imglib/imglib2]"]
-    "scifio" [color=lightblue, style=filled, URL="[https://github.com/scifio/scifio]"]
-    "scijava-common" -> "imagej-common"
-    "imglib2" -> "imagej-common"
-    "imagej-common" -> "scifio"
-    "imagej-common" -> "imagej-ops"
-}
-</graphviz>
-
-The [[SciJava]] software stack is composed of the following core libraries:
-
-* [[SciJava Common]] - The SciJava application container and plugin framework.
-* [[ImgLib2]] - The N-dimensional image data model.
-* [[ImageJ Common]] - Metadata-rich image data structures and SciJava extensions.
-* [[ImageJ OPS]] - The framework for reusable image processing operations.
-* [[SCIFIO]] - The framework for N-dimensional image I/O.
-
-The dependency hierarchy of library artifacts is shown in the diagram to the right.
-
 == Maven component structure ==
 
 <graphviz border alignment="right" size="400px" caption="Parent POM hierarchy">
@@ -153,6 +125,34 @@ The hierarchy of organizational parent POMs is shown in the diagram to the right
 == Bill of Materials ==
 
 The <code>pom-scijava</code> parent includes a [http://howtodoinjava.com/2014/02/18/maven-bom-bill-of-materials-dependency/ Bill of Materials] (BOM) which declares compatible versions of all core SciJava software in its [http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management dependencyManagement section]. These versions are intended to be used together in downstream projects, preventing version skew (symptoms of which include <code>ClassNotFoundException</code> and <code>NoSuchMethodError</code>, as well as erroneous behavior in general). This BOM is especially important while some components are still in beta, since they may sometimes break backwards compatibility.
+
+== Core libraries ==
+
+<graphviz border alignment="right" caption="Core library hierarchy">
+digraph libs {
+    label="Core library hierarchy"
+    
+    "scijava-common" [color=green, style=filled, URL="[https://github.com/scijava/scijava-common]"]
+    "imagej-common" [color=yellow, style=filled, URL="[https://github.com/imagej/imagej-common]"]
+    "imagej-ops" [color=yellow, style=filled, URL="[https://github.com/imagej/imagej-ops]"]
+    "imglib2" [color=pink, style=filled, URL="[https://github.com/imglib/imglib2]"]
+    "scifio" [color=lightblue, style=filled, URL="[https://github.com/scifio/scifio]"]
+    "scijava-common" -> "imagej-common"
+    "imglib2" -> "imagej-common"
+    "imagej-common" -> "scifio"
+    "imagej-common" -> "imagej-ops"
+}
+</graphviz>
+
+The [[SciJava]] software stack is composed of the following core libraries:
+
+* [[SciJava Common]] - The SciJava application container and plugin framework.
+* [[ImgLib2]] - The N-dimensional image data model.
+* [[ImageJ Common]] - Metadata-rich image data structures and SciJava extensions.
+* [[ImageJ OPS]] - The framework for reusable image processing operations.
+* [[SCIFIO]] - The framework for N-dimensional image I/O.
+
+The dependency hierarchy of library artifacts is shown in the diagram to the right.
 
 == Reproducible builds ==
 
