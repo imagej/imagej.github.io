@@ -1,0 +1,26 @@
+<includeonly>[http://jenkins.imagej.net/job/{{#if|{{{project|}}}|{{{project|}}}|ImageJ}}-javadoc/javadoc/{{{package|}}}/{{{class|}}}.html {{{class|}}}]</includeonly>
+<noinclude>
+==Usage==
+<pre>
+{{Javadoc
+| project = ImageJ1
+| package = ij/process
+| class = ImageProcessor
+}}
+</pre>
+{{Javadoc
+| project = ImageJ1
+| package = ij/process
+| class = ImageProcessor
+}}
+<pre>
+{{Javadoc
+| package = org/scijava
+| class = Context
+}}
+</pre>
+{{Javadoc
+| package = org/scijava
+| class = Context
+}}
+</noinclude>
