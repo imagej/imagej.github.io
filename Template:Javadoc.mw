@@ -1,4 +1,4 @@
-<includeonly>[http://jenkins.imagej.net/job/{{{project|ImageJ}}}-javadoc/javadoc/{{{package|}}}/{{{class|}}}.html{{#if:{{{method|}}}|&#35;{{{method|}}}|}} {{#if:{{{method|}}}|{{{method|}}}|{{{class|}}}}}]</includeonly>
+<includeonly>[http://jenkins.imagej.net/job/{{{project|ImageJ}}}-javadoc/javadoc/{{{package|}}}/{{{class|}}}.html{{#if:{{{anchor|}}}|&#35;{{{anchor|}}}|}} {{#if:{{{anchor|}}}|{{{anchor|}}}|{{{class|}}}}}]</includeonly>
 <noinclude>
 ==Usage==
 <pre>
@@ -27,12 +27,12 @@
 {{Javadoc
 | package = org/scijava/module
 | class = ModuleService
-| method = getModules()
+| anchor = getModules()
 }}
 </pre>
 {{Javadoc
 | package = org/scijava/module
 | class = ModuleService
-| method = getModules()
+| anchor = getModules()
 }}
 </noinclude>
