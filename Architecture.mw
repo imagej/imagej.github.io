@@ -150,7 +150,39 @@ Each project depends on release [http://books.sonatype.com/mvnref-book/reference
 
 == Versioning ==
 
-The SciJava software stack uses the [http://semver.org/ SemVer] versioning system. This scheme communicates information about the backwards compatibility (or lack thereof) between versions of each individual software component.
+The SciJava software stack uses the [http://semver.org/ Semantic Versioning] system. This scheme communicates information about the backwards compatibility (or lack thereof) between versions of each individual software component.
+
+SemVer is very useful for indicating how software has changed from one version to another in a programmatic way, but it can be unintuitive for humans, especially for non-developers. It is important to understand that a "major" version increase does not necessarily indicate a shiny new version of the software with lots of new features—but rather more likely to have removed deprecated classes and methods, and/or moved functionality from one place to another in a backwards-incompatible manner. Conversely, a "minor" version increase might indicate the addition of a single new method somewhere, or many significant new features—and SemVer does not specify a mechanism for quantifying which scenario it is in each case.
+
+=== API vs. SPI backwards compatibility ===
+
+SciJava uses SemVer for '''API''' compatibility, but not necessarily '''SPI''' compatibility:
+
+* '''API''' ([https://en.wikipedia.org/wiki/Application_programming_interface '''A'''pplication '''P'''rogramming '''I'''nterface]) refers to downstream ''consumers'' which ''invoke'' methods of classes. For example, if your code uses a {{Javadoc | package=org/scijava/module | class=ModuleService}} and calls the {{Javadoc | package=org/scijava/module | class=ModuleService | anchor=getModules()}} method, SemVer guarantees that that method will continue to exist with a compatible return type as long as the version number's major digit does not increase.
+* '''SPI''' ([https://en.wikipedia.org/wiki/Service_provider_interface '''S'''ervice '''P'''rovider '''I'''nterface]) refers to downstream ''implementors'' which ''extend'' classes. For example, if your code provides its own implementation of the {{Javadoc | package=org/scijava/module | class=ModuleService}} interface, updating to a new version of <code>scijava-common</code> may break your code due to the addition of new method signatures which your class does not implement.
+
+That said, the projects do make a best effort to limit such SPI breakages. In addition, each interface is accompanied by a corresponding abstract class and/or default implementation, intended as a future-resistant extension point for new implementations. So e.g. in the case of {{Javadoc | package=org/scijava/module | class=ModuleService}}, making your class extend {{Javadoc | package=org/scijava/module | class=DefaultModuleService}} instead of only implementing the interface would be an effective way of largely shielding yourself from future SPI breakages during dependency version upgrades. Some other examples:
+
+{| class="wikitable"
+|-
+| '''Interface of interest'''
+| '''Base class to extend'''
+|-
+| {{Javadoc | package=org/scijava/plugin | class=RichPlugin}}
+| {{Javadoc | package=org/scijava/plugin | class=AbstractRichPlugin}}
+|-
+| {{Javadoc | package=org/scijava/command | class=Command}}
+| {{Javadoc | package=org/scijava/command | class=ContextCommand}}
+|-
+| {{Javadoc | package=org/scijava/tool | class=Tool}}
+| {{Javadoc | package=org/scijava/tool | class=AbstractTool}}
+|-
+| {{Javadoc | package=org/scijava/service | class=Service}}
+| {{Javadoc | package=org/scijava/service | class=AbstractService}}
+|-
+| {{Javadoc | project=SCIFIO | package=io/scif | class=Format}}
+| {{Javadoc | project=SCIFIO | package=io/scif | class=AbstractFormat}}
+|}
 
 = Managing releases =
 
