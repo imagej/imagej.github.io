@@ -23,7 +23,6 @@
 | package = org/scijava
 | class = Context
 }}
-</noinclude>
 <pre>
 {{Javadoc
 | package = org/scijava/module
