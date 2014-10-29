@@ -4,7 +4,7 @@
 
 The SciJava ecosystem is strongly committed to [[open source]] software development. But this software is not an [[open source]] software ''product''—it is an [[open source]] software ''project'' following an [[open source]] development ''process''.
 
-ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible. There are public [[Source Code|source repositories]], public issue trackers (e.g., [https://github.com/imagej/imagej/issues this one] and [http://fiji.sc/bugzilla/ this one]), community editable websites (e.g., [http://imagej.net/ this one]), a public [http://jenkins.imagej.net/ continuous integration server], a public [http://maven.imagej.net/ binary artifact repository], public [[mailing lists]], public [[IRC|chat rooms]], and a public patch submission process (e.g., [https://github.com/imagej/imagej-ops/pulls?q=is%3Apr this one]). As you can see, we love [http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/ doing it in public]!
+ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible. There are public [[Source Code|source code repositories]], public [[mailing lists]], public [[IRC|chat rooms]], public [[project management]] resources, and of course, this [[Help:Contents#Getting_help_regarding_the_ImageJ_Wiki|community editable website]]. As you can see, we love [http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/ doing it in public]!
 
 == Extensibility ==
 
