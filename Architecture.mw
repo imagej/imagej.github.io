@@ -42,6 +42,23 @@ The diagram on the right shows the SciJava software stack at the organizational 
 
 Each project is contained in its own [[Git]] repository, so that interested developers can cherry-pick only those parts of interest. Version control is an indispensable tool to ensure ''scientific reproducibility'' (see below) by tracking known-working states of the source code, and maintain a written recorded of how and why the code has changed over time. For technical details, see the [[Git]] section.
 
+=== Why separate Git repositories? ===
+
+With [[Maven]] it is possible to create a [http://maven.apache.org/guides/mini/guide-multiple-modules.html multi-module reactor] that unifies several project artifacts into a single build, typically within a single Git repository.
+
+While many components of the SciJava software stack used to be structured this way, we found that lumping multiple components into a single Git repository with a multi-module build has disadvantages compared to separate Git repositories with single-module builds:
+* Typically, components of a multi-module project are all versioned together, but we have opted for individual [[versioning]] of components, for [[Philosophy#Release_early.2C_release_often|reasons of rapid iteration]].
+* Individual repositories make it easier for developers to cherry-pick only those components of interest, without building the rest of the code, since dependencies are fetched on demand from remote [[Maven]] repositories.
+* Concerns are better separated, with each component encapsulating its own codebase, issues, pull requests and technical documentation.
+* Since every component follows a consistent structure, the supporting tools (e.g., [https://github.com/scijava/scijava-scripts these scripts]) are simpler to develop and maintain.
+
+Of course, there are downsides, too:
+* Changes affecting multiple components must be done as separate patch sets (i.e., commits or pull requests).
+* Issues relevant to multiple components must be filed separately in each issue tracker and cross-referenced.
+* It can be more difficult to locate code of interest, since the codebase is spread across so many repositories.
+
+As a rule of thumb, we find that multi-module [[Maven]] projects stored within a single Git repository are a natural fit for "big bang" software which is versioned in lockstep and carefully tested before each release, whereas single-module projects stored in separate Git repositories work well for the [[Philosophy#Release_early.2C_release_often|RERO]]-style release paradigm.
+
 == Core libraries ==
 
 <graphviz border alignment="right" caption="Core library hierarchy">
