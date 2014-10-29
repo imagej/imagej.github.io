@@ -2,37 +2,15 @@
 <noinclude>
 ==Usage==
 <pre>
-{{Javadoc
-| project = ImageJ1
-| package = ij/process
-| class = ImageProcessor
-}}
+See also the {{Javadoc | project = ImageJ1 | package = ij/process | class = ImageProcessor}} class.
 </pre>
-{{Javadoc
-| project = ImageJ1
-| package = ij/process
-| class = ImageProcessor
-}}
+See also the {{Javadoc | project = ImageJ1 | package = ij/process | class = ImageProcessor}} class.
 <pre>
-{{Javadoc
-| package = org/scijava
-| class = Context
-}}
+See also the {{Javadoc | project = ImageJ1 | package = ij/process | class = ImageProcessor}} class.
 </pre>
-{{Javadoc
-| package = org/scijava
-| class = Context
-}}
+See also the {{Javadoc | package = org/scijava | class = Context}} class.
 <pre>
-{{Javadoc
-| package = org/scijava/module
-| class = ModuleService
-| anchor = getModules()
-}}
+See also the {{Javadoc | package = org/scijava/module | class = ModuleService | anchor = getModules()}} method.
 </pre>
-{{Javadoc
-| package = org/scijava/module
-| class = ModuleService
-| anchor = getModules()
-}}
+See also the {{Javadoc | package = org/scijava/module | class = ModuleService | anchor = getModules()}} method.
 </noinclude>
