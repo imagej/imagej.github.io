@@ -6,7 +6,7 @@ The most familiar sort of plugin is the ''command'', which is a runnable operati
 
 == Example commands ==
 
-You can find some [https://github.com/imagej/imagej-tutorials/tree/master/simple-command/src/main/java example commands] in the [https://github.com/imagej/imagej-tutorials ImageJ tutorials].
+You can find some [https://github.com/imagej/imagej-tutorials/tree/master/simple-commands/src/main/java example commands] in the [https://github.com/imagej/imagej-tutorials ImageJ tutorials].
 
 == See also ==
 
