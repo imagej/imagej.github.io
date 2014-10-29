@@ -154,11 +154,11 @@ The SciJava software stack uses the [http://semver.org/ SemVer] versioning syste
 
 = Managing releases =
 
-The SciJava [[philosophy]] is to "release early, release often." To make doing so as painless as possible, we employ several resources.
+The SciJava [[philosophy]] is to [[Philosophy#Release_early.2C_release_often|release early, release often]]. To make doing so as painless as possible, we employ several [[project management]] resources.
 
 == Jenkins ==
 
-TODO - The [http://jenkins.imagej.net/ ImageJ Jenkins server] tests builds and performs releases.
+The [http://jenkins.imagej.net/ ImageJ Jenkins server] tests builds and performs releases. It deploys <code>SNAPSHOT</code> builds to the [http://maven.imagej.net/ ImageJ Maven repository] in response to pushes to each code repository's <code>master</code> branch. So any downstream projects depending on a version of <code>LATEST</code> for a given component will match the last successful Jenkins build—i.e., the latest code on <code>master</code>.
 
 == Maven repositories ==
 
@@ -166,4 +166,4 @@ TODO - [http://maven.imagej.net/ ImageJ Maven repository] vs. Maven Central
 
 == ImageJ update sites ==
 
-TODO
+TODO - [http://sites.imagej.net/ sites.imagej.net]
