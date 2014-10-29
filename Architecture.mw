@@ -150,7 +150,12 @@ Each project depends on release [http://books.sonatype.com/mvnref-book/reference
 
 == Versioning ==
 
-The SciJava software stack uses the [http://semver.org/ Semantic Versioning] system. This scheme communicates information about the backwards compatibility (or lack thereof) between versions of each individual software component.
+The SciJava software stack uses the [http://semver.org/ Semantic Versioning] system. This scheme communicates information about the backwards compatibility (or lack thereof) between versions of each individual software component. In a nutshell:
+
+<blockquote>Given a version number MAJOR.MINOR.PATCH, increment the:
+* MAJOR version when you make incompatible API changes,
+* MINOR version when you add functionality in a backwards-compatible manner, and
+* PATCH version when you make backwards-compatible bug fixes.</blockquote>
 
 SemVer is very useful for indicating how software has changed from one version to another in a programmatic way, but it can be unintuitive for humans, especially for non-developers. It is important to understand that a "major" version increase does not necessarily indicate a shiny new version of the software with lots of new features—but rather more likely to have removed deprecated classes and methods, and/or moved functionality from one place to another in a backwards-incompatible manner. Conversely, a "minor" version increase might indicate the addition of a single new method somewhere, or many significant new features—and SemVer does not specify a mechanism for quantifying which scenario it is in each case.
 
