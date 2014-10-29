@@ -69,10 +69,12 @@ digraph poms {
     "pom-imagej" [color=yellow, style=filled, URL="[https://github.com/imagej/pom-imagej]"]
     "pom-scifio" [color=lightblue, style=filled, URL="[https://github.com/scifio/pom-scifio]"]
     "pom-fiji" [color=orange, style=filled, URL="[https://github.com/fiji/pom-fiji]"]
-    "pom-scijava" -> "pom-imglib2"
+    "pom-loci" [color=gray, style=filled, URL="[https://github.com/uw-loci/pom-loci]"]
     "pom-scijava" -> "pom-imagej"
-    "pom-scijava" -> "pom-scifio"
+    "pom-imagej" -> "pom-imglib2"
+    "pom-imagej" -> "pom-scifio"
     "pom-imagej" -> "pom-fiji"
+    "pom-scijava" -> "pom-loci"
 }
 </graphviz>
 
