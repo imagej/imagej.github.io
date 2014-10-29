@@ -87,45 +87,7 @@ The [[SciJava]] software stack is composed of the following core libraries:
 
 The dependency hierarchy of library artifacts is shown in the diagram to the right.
 
-== Maven groupIds ==
-
-All projects in these organizations use [[Maven]] for [[Project Management|project management]]. Each organization has its own Maven [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates groupId]:
-
-{| class="wikitable"
-| '''Project'''
-| '''Organization'''
-| '''groupId'''
-|-
-| [[SciJava]]
-| [https://github.com/scijava scijava]
-| [http://maven.imagej.net/index.html#nexus-search;gav~org.scijava org.scijava]
-|-
-| [[ImageJ]]
-| [https://github.com/imagej imagej]
-| [http://maven.imagej.net/index.html#nexus-search;gav~net.imagej net.imagej]
-|-
-| [[ImgLib2]]
-| [https://github.com/imglib imglib]
-| [http://maven.imagej.net/index.html#nexus-search;gav~net.imglib2 net.imglib2]
-|-
-| [[SCIFIO]]
-| [https://github.com/scifio scifio]
-| [http://maven.imagej.net/index.html#nexus-search;gav~io.scif io.scif]
-|-
-| [[Fiji]]
-| [https://github.com/fiji fiji]
-| [http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji sc.fiji]
-|-
-| [[SLIM Curve]]
-| [https://github.com/slim-curve slim-curve]
-| [http://maven.imagej.net/index.html#nexus-search;gav~slim-curve slim-curve]
-|-
-| [[LOCI]]
-| [https://github.com/uw-loci uw-loci]
-| [http://maven.imagej.net/index.html#nexus-search;gav~loci loci]
-|}
-
-== Parent POMs ==
+== Maven component structure ==
 
 <graphviz border alignment="right" size="400px" caption="Parent POM hierarchy">
 digraph poms {
@@ -142,14 +104,49 @@ digraph poms {
 }
 </graphviz>
 
-Each organization has a [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance parent POM] that all other projects in that organization extend:
+All projects in these organizations use [[Maven]] for [[Project Management|project management]]. Each organization has its own Maven [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates groupId], as well as a [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance parent POM] that all other projects in that organization extend:
 
-* {{GitHub|org=scijava|repo=pom-scijava|label=pom-scijava}}
-* {{GitHub|org=imglib|repo=pom-imglib2|label=pom-imglib2}}
-* {{GitHub|org=imagej|repo=pom-imagej|label=pom-imagej}}
-* {{GitHub|org=scifio|repo=pom-scifio|label=pom-scifio}}
-* {{GitHub|org=fiji|repo=pom-fiji|label=pom-fiji}}
-* {{GitHub|org=uw-loci|repo=pom-loci|label=pom-loci}}
+{| class="wikitable"
+| '''Project'''
+| '''Organization'''
+| '''groupId'''
+| '''Parent POM'''
+|-
+| [[SciJava]]
+| [https://github.com/scijava scijava]
+| [http://maven.imagej.net/index.html#nexus-search;gav~org.scijava org.scijava]
+| {{GitHub|org=scijava|repo=pom-scijava|label=pom-scijava}}
+|-
+| [[ImageJ]]
+| [https://github.com/imagej imagej]
+| [http://maven.imagej.net/index.html#nexus-search;gav~net.imagej net.imagej]
+| {{GitHub|org=imagej|repo=pom-imagej|label=pom-imagej}}
+|-
+| [[ImgLib2]]
+| [https://github.com/imglib imglib]
+| [http://maven.imagej.net/index.html#nexus-search;gav~net.imglib2 net.imglib2]
+| {{GitHub|org=imglib|repo=pom-imglib2|label=pom-imglib2}}
+|-
+| [[SCIFIO]]
+| [https://github.com/scifio scifio]
+| [http://maven.imagej.net/index.html#nexus-search;gav~io.scif io.scif]
+| {{GitHub|org=scifio|repo=pom-scifio|label=pom-scifio}}
+|-
+| [[Fiji]]
+| [https://github.com/fiji fiji]
+| [http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji sc.fiji]
+| {{GitHub|org=fiji|repo=pom-fiji|label=pom-fiji}}
+|-
+| [[SLIM Curve]]
+| [https://github.com/slim-curve slim-curve]
+| [http://maven.imagej.net/index.html#nexus-search;gav~slim-curve slim-curve]
+| -
+|-
+| [[LOCI]]
+| [https://github.com/uw-loci uw-loci]
+| [http://maven.imagej.net/index.html#nexus-search;gav~loci loci]
+| {{GitHub|org=uw-loci|repo=pom-loci|label=pom-loci}}
+|}
 
 The hierarchy of organizational parent POMs is shown in the diagram to the right. The <code>pom-scijava</code> parent forms the foundation of all other Maven projects in the ecosystem.
 
