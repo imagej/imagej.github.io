@@ -1,4 +1,4 @@
-<includeonly>[http://jenkins.imagej.net/job/{{{project|ImageJ}}}-javadoc/javadoc/{{{package|}}}/{{{class|}}}.html{{#if:{{{anchor|}}}|&#35;{{{anchor|}}}|}} {{#if:{{{anchor|}}}|{{{anchor|}}}|{{{class|}}}}}]</includeonly>
+<includeonly>[http://jenkins.imagej.net/job/{{{project|ImageJ}}}-javadoc/javadoc/{{{package|}}}/{{{class|}}}.html{{#if:{{{anchor|}}}|&#35;{{{anchor|}}}|}} {{{class|}}}{{#if:{{{anchor|}}}|&#35;{{{anchor|}}}|}}]</includeonly>
 <noinclude>
 ==Usage==
 <pre>
