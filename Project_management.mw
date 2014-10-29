@@ -11,7 +11,7 @@ ImageJ uses [[Maven]] for its project infrastructure.
 
 Maven artifacts are published to the [http://maven.imagej.net/ ImageJ Maven repository].
 
-Releases are versioned with [http://semver.org/ Semantic Versioning].
+Releases are [[Architecture#Versioning|versioned with Semantic Versioning]].
 
 == Issue tracking ==
 
