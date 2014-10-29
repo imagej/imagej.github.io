@@ -1,4 +1,34 @@
-{{Development}}[[ImageJ]], and the [[SciJava]] software stack in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.{{Sidebox
+{{Development}}[[ImageJ]], and the [[SciJava]] software stack in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.
+
+== Open source ==
+
+The SciJava ecosystem is strongly committed to [[open source]] software development. But this software is not an [[open source]] software ''product''—it is an [[open source]] software ''project'' following an [[open source]] development ''process''. ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible, by [http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/ doing it in public]!
+
+== Extensibility ==
+
+[[Extensibility]] is [[ImageJ]]'s greatest strength. ImageJ is not just a software application—it is an extensible ''platform'' for the development of image [[:Category:Visualization|visualization]], [[segmentation]], [[:Category:Registration|registration]], and [[:Category:Analysis|analysis]] routines.
+
+Isaac Newton attributed his success to [https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants standing on the shoulders of giants]. The SciJava software stack's powerful [[plugin]] mechanism and [[open source]] software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [[Extensibility]] page for details.
+
+== Interoperability ==
+
+One of the central goals of the [[SciJava]] software stack is to extend Java's mantra of "write once, run anywhere" in new directions: [[ImageJ OPS]] for image processing algorithms, and [[SCIFIO]] for scientific image I/O.
+
+[[ImageJ2]] commands work not only in the [[ImageJ]] user interface, but also from many other applications in the [[History|SciJava ecosystem]], including [[CellProfiler]], [[OMERO]], [[KNIME]] and others.
+
+== Why Java? ==
+
+While it was once true that Java is always slower than the equivalent in C++, this is no longer the case. [http://paulbuchheit.blogspot.com/2007/06/java-is-faster-than-c.html There] have [http://www.azulsystems.com/blog/cliff/2009-09-06-java-vs-c-performanceagain been] quite [http://vanillajava.blogspot.com/2011/08/java-can-be-significantly-faster-than-c.html a few benchmarks] comparing Java vs C++ performance, [http://keithlea.com/javabench/ this one] probably being the grandfather of all.
+
+Pragmatically, one should note that there is not really a big difference in performance when comparing Java to C++.
+
+Java programs run without trouble and without recompiling on the major platforms: Windows, Mac OS X and Linux. And plugins compiled on one platform also execute on all other platforms without recompiling. And profiling and debugging is easier with Java than with C++. And all programs/plugins double as libraries.
+
+So the true reason why we use Java is probably: it makes [[ImageJ]] accessible.
+
+See also [http://loci.wisc.edu/faq/isnt-java-too-slow Isn't Java too slow?] and [http://loci.wisc.edu/faq/why-java Why is your software written in Java?] from the LOCI FAQ.
+
+{{Sidebox
 | title = What's the alternative?
 | width = 30%
 | body = Some projects opt to release their entire software stack with a single monolithic version number. This has one extremely nice ramification: it clearly communicates which versions of which software components are intended to be compatible with one another.
@@ -29,39 +59,12 @@ For example, the [[OME]] project (which includes [[OMERO]] and [[Bio-Formats]]) 
 <td>More</td>
 </tr>
 </table>
-}}== Release early, release often ==
+}}
+== Release early, release often ==
 
 ImageJ subscribes to the [https://en.wikipedia.org/wiki/Release_early,_release_often release early, release often] mantra often cited in software engineering circles. In particular—and especially because there is a small core development team—the project is driven by [http://blog.codinghorror.com/boyds-law-of-iteration/ Boyd's Law of Iteration]: '''speed of iteration beats quality of iteration'''. That is not to say that we do not strive for quality—we do. But we have found through experience that more releases, together with guiding user feedback, push a project forward more efficiently than a slower release cycle does.
 
 To ensure releases can happen quickly, each SciJava component is independently released and versioned, using [[reproducible builds]] with a "release ready" <code>master</code> branch. This allows individual SciJava components to be released with the [[Architecture#Jenkins|push of a button]], in a ''timespan less than five minutes''. This puts bug-fixes into the hands of users as quickly as possible. 
-
-== Open source ==
-
-The SciJava ecosystem is strongly committed to [[open source]] software development. But this software is not an [[open source]] software ''product''—it is an [[open source]] software ''project'' following an [[open source]] development ''process''. ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible, by [http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/ doing it in public]!
-
-== Extensibility ==
-
-[[Extensibility]] is [[ImageJ]]'s greatest strength. ImageJ is not just a software application—it is an extensible ''platform'' for the development of image [[:Category:Visualization|visualization]], [[segmentation]], [[:Category:Registration|registration]], and [[:Category:Analysis|analysis]] routines.
-
-Isaac Newton attributed his success to [https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants standing on the shoulders of giants]. The SciJava software stack's powerful [[plugin]] mechanism and [[open source]] software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [[Extensibility]] page for details.
-
-== Interoperability ==
-
-One of the central goals of the [[SciJava]] software stack is to extend Java's mantra of "write once, run anywhere" in new directions: [[ImageJ OPS]] for image processing algorithms, and [[SCIFIO]] for scientific image I/O.
-
-[[ImageJ2]] commands work not only in the [[ImageJ]] user interface, but also from many other applications in the [[History|SciJava ecosystem]], including [[CellProfiler]], [[OMERO]], [[KNIME]] and others.
-
-== Why Java? ==
-
-While it was once true that Java is always slower than the equivalent in C++, this is no longer the case. [http://paulbuchheit.blogspot.com/2007/06/java-is-faster-than-c.html There] have [http://www.azulsystems.com/blog/cliff/2009-09-06-java-vs-c-performanceagain been] quite [http://vanillajava.blogspot.com/2011/08/java-can-be-significantly-faster-than-c.html a few benchmarks] comparing Java vs C++ performance, [http://keithlea.com/javabench/ this one] probably being the grandfather of all.
-
-Pragmatically, one should note that there is not really a big difference in performance when comparing Java to C++.
-
-Java programs run without trouble and without recompiling on the major platforms: Windows, Mac OS X and Linux. And plugins compiled on one platform also execute on all other platforms without recompiling. And profiling and debugging is easier with Java than with C++. And all programs/plugins double as libraries.
-
-So the true reason why we use Java is probably: it makes [[ImageJ]] accessible.
-
-See also [http://loci.wisc.edu/faq/isnt-java-too-slow Isn't Java too slow?] and [http://loci.wisc.edu/faq/why-java Why is your software written in Java?] from the LOCI FAQ.
 
 == Convention over configuration ==
 
