@@ -1,4 +1,5 @@
-{{Development}}[[ImageJ]], and the [[SciJava]] software stack in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.
+{{Development}}
+[[ImageJ]], and the [[SciJava]] software stack in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.
 
 == Open source ==
 
