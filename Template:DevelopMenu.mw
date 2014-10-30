@@ -22,17 +22,18 @@
 * [[External Plugins|Adding an external plugin]]
 * [[How_to_contribute_to_an_existing_Fiji_plugin_or_library|Contributing to a plugin]]
 
-'''Projects'''
-* ImageJ
-** [[Developing ImageJ in Eclipse|Eclipse]]
-** [[Developing ImageJ in NetBeans|NetBeans]]
-** [[Developing ImageJ in IntelliJ IDEA|IntelliJ IDEA]]
-** [[Developing ImageJ on the command line|Command line]]
-* Fiji
-** [[Developing Fiji|Introduction]]
-** [[Developing Fiji in Eclipse|Eclipse]]
-* ImgLib2
-** [[Developing ImgLib2]]
+'''Developing ImageJ'''
+* [[Developing ImageJ in Eclipse|Eclipse]]
+* [[Developing ImageJ in NetBeans|NetBeans]]
+* [[Developing ImageJ in IntelliJ IDEA|IntelliJ IDEA]]
+* [[Developing ImageJ on the command line|Command line]]
+
+'''Developing Fiji'''
+* [[Developing Fiji|Introduction]]
+* [[Developing Fiji in Eclipse|Eclipse]]
+
+'''Developing ImgLib2'''
+* [[Developing ImgLib2]]
 |}</includeonly><noinclude>
 This template is the floating menu for ImageJ development topics.
 </noinclude>
