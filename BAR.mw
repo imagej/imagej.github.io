@@ -27,6 +27,7 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
 == List of BARs ==
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#image-annotation|label=Annotation}}<span id="Annotation"></span>
 :{{GitHub|org=tferr|repo=Scripts|path=Annotation/README.md#roi-color-coder|label=ROI Color Coder}}
+:{{GitHub|org=tferr|repo=Scripts|path=Annotation/README.md#combine-orthogonal-views|label=Combine Orthogonal Views}}
 
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#data-analysis|label=Data Analysis}}<span id="Data_Analysis"></span>
 :{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#distribution-plotter|label=Distribution Plotter}}
