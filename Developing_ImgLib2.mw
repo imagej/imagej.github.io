@@ -8,10 +8,7 @@ Because people tend to have differing IDE configurations, we do not put project 
 
 == Getting the code ==
 
-You can clone the ImgLib2 code using Git with the URL: '''git://github.com/imagej/imglib'''
-
-Alternately, you can [[Downloading and Building Fiji From Source#Submodules|use ImgLib2 as a submodule of Fiji]].
-
+You can clone the ImgLib2 code using Git with the URL: '''git://github.com/imglib/imglib2'''
 
 == Developing ImgLib2 with Eclipse ==
 
