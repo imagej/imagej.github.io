@@ -1,4 +1,4 @@
-{| class="infobox" cellspacing="5" style="width: 18em; font-size: 90%; text-align: left; float: right; border: 1px dashed #a0a0a0;"
+<includeonly>{| class="infobox" cellspacing="5" style="width: 18em; font-size: 90%; text-align: left; float: right; border: 1px dashed #a0a0a0;"
 ! colspan="2" style="font-size: 130%;" | Development
 |-
 |
@@ -33,8 +33,6 @@
 ** [[Developing Fiji in Eclipse|Eclipse]]
 * ImgLib2
 ** [[Developing ImgLib2]]
-|}
-
-<noinclude>
+|}</includeonly><noinclude>
 This template is the floating menu for ImageJ development topics.
 </noinclude>
