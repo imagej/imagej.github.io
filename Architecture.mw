@@ -217,7 +217,7 @@ There are two easy ways of going about this:
 </source></li>
 <li>Switch on a "dev profile" (defined in the <code>pom-scijava</code> parent POM) by creating one or more "dev token" files:
 * <code>~/.scijava/dev.imagej</code>
-* <code>~/.scijava/dev.imgilb2</code>
+* <code>~/.scijava/dev.imglib2</code>
 * <code>~/.scijava/dev.scifio</code>
 * <code>~/.scijava/dev.scijava</code>
 These files need not have any content; their mere existence will trigger the dev profile associated with the named organization, causing all artifacts of that organization to become coupled as <code>SNAPSHOT</code>s.</li>
