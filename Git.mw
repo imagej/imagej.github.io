@@ -5,7 +5,7 @@ Development of ImageJ and related software relies heavily on [http://git-scm.com
 
 If you do not know what Git is, you really want to take [http://try.github.com/levels/1/challenges/1 GitHub's 15-minute interactive tutorial]. Or follow [http://pcottle.github.io/learnGitBranching/ Peter Cottle's excellent introduction into Git branching]. Or you may want to have a look at our [[Git for dummies|real concise introduction to Git]] predating GitHub's awesome tutorial.
 
-=== Fiji's repository ===
+=== Git repositories ===
 
 The Git repositories for ImageJ and related software can be found on GitHub, in the following organizations:
 * [https://github.com/imagej imagej]
