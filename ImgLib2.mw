@@ -25,9 +25,9 @@ It provides an interface-driven design that supports numeric and non-numeric dat
 
 == Source code ==
 
-You can find the source {{GitHub|repo=imglib|label=on GitHub}}. (Or [http://fiji.sc/imglib.git Fiji's server]; the repositories are [http://jenkins.imagej.net/view/Synchronizers/job/ImgLib-synchronizer/ synchronized].)
+You can find the source {{GitHub|org=imglib|repo=imglib2}}.
 
-There is also a Jenkins continuous integration system that builds ImgLib [http://jenkins.imagej.net/job/ImgLib/ every time the code changes] as well as [http://jenkins.imagej.net/job/ImgLib-daily/ daily including Javadocs].
+There is also a Jenkins continuous integration system that builds ImgLib2 [http://jenkins.imagej.net/job/ImgLib2/ every time the code changes] as well as [http://jenkins.imagej.net/job/ImgLib2-daily/ daily including Javadocs].
 
 == ImgLib2 vs. ImgLib1 ==
 
