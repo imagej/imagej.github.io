@@ -1,4 +1,5 @@
-{{Development}}The source code of Fiji/ImageJ2 is very modular, i.e. it is organized into well-separated subprojects. That separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand.
+{{Development}}
+The source code of ImageJ is very modular; i.e., it is organized into [[Architecture#Modularity|well-separated]] subprojects. This separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand.
 
 The actual source code development is managed using the [[Git]] version control system. 
 
