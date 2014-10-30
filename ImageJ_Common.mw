@@ -1,0 +1,14 @@
+The ImageJ Common library contains ImageJ's core image data model, based on the [[ImgLib2]] library for multidimensional image data processing, as well as the corresponding core image display logic for user interfaces, based on the [[SciJava Common]] application framework.
+
+Using [[ImgLib2]] offers several benefits:
+
+* Support for many different data types (different combinations of bit depths, signedness, and integer/real representations).
+* Support for large datasets (many planes/cubes/etc., large planes/cubes/etc.).
+* Abstraction of the underlying image storage mechanism (file on disk, data in memory, remote URL, remote database, etc.).
+
+ImageJ Common is still in beta, with significant changes still planned for its central class hierarchies.
+
+At the time of this writing, the central image data structures are:
+
+* {{Javadoc | package = net/imglib2/meta | class = ImgPlus}}
+* {{Javadoc | package = net/imagej | class = Dataset}} and {{Javadoc | package = net/imagej | class = DefaultDataset}}
