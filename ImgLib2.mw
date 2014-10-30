@@ -27,7 +27,7 @@ It provides an interface-driven design that supports numeric and non-numeric dat
 
 You can find the source {{GitHub|org=imglib|repo=imglib2}}.
 
-There is also a Jenkins continuous integration system that builds ImgLib2 [http://jenkins.imagej.net/job/ImgLib2/ every time the code changes] as well as [http://jenkins.imagej.net/job/ImgLib2-daily/ daily including Javadocs].
+There is also a Jenkins continuous integration system that builds ImgLib2 [http://jenkins.imagej.net/job/ImgLib2/ every time the code changes].
 
 == ImgLib2 vs. ImgLib1 ==
 
