@@ -45,8 +45,6 @@ You can use the mvn command line tool to build ImgLib2. Just type "mvn" from any
 
 For more on using the Maven command line tool, see [http://maven.apache.org/run-maven/index.html Building a Project with Maven] on the Maven web site.
 
-Alternately, if you have ImgLib2 checked out as a Fiji submodule, you can build it using the [[Fiji Build System]].
-
 [[Category:ImgLib]]
 [[Category:Tutorials]]
 [[Category:Development]]
