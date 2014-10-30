@@ -209,21 +209,19 @@ For developing several projects in parallel in e.g. Eclipse, it is very useful t
 
 There are two easy ways of going about this:
 <ol type="A">
-<li>Override the version property of the dependency for which you wish to use a snapshot:
+<li>When a small number of snapshot couplings are needed, you can override the version property of the dependency for which you wish to use a snapshot:
 <source lang="xml">
 <properties>
   <scijava-common.version>LATEST</scijava-common.version>
 </properties>
 </source></li>
-<li>Switch on a "dev profile" (defined in the <code>pom-scijava</code> parent POM) by creating one or more "dev token" files:
+<li>Alternately, if you wish to temporarily apply snapshot couplings en masse, you can switch on a "dev profile" (defined in the <code>pom-scijava</code> parent POM) by creating one or more "dev token" files:
 * <code>~/.scijava/dev.imagej</code>
 * <code>~/.scijava/dev.imglib2</code>
 * <code>~/.scijava/dev.scifio</code>
 * <code>~/.scijava/dev.scijava</code>
 These files need not have any content; their mere existence will trigger the dev profile associated with the named organization, causing all artifacts of that organization to become coupled as <code>SNAPSHOT</code>s.</li>
 </ol>
-The former is more useful when a small number of snapshot couplings are needed, whereas the latter is convenient if you wish to temporarily couple projects en masse.
-
 In the case of Eclipse, you may need to "Update Maven project" in order to see the snapshot couplings go into effect; the shortcut {{Key | Alt}}+{{Key | F5}} while selecting the affected project(s) accomplishes this quickly.
 
 Either way, '''''be sure to work on a topic branch while developing code in this fashion.''''' You will need to clean up your Git history afterwards before merging things to the <code>master</code> branch, in order to achieve [[reproducible builds]].
