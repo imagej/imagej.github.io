@@ -25,6 +25,7 @@ Thank you.
 /* BOÎTES DÉROULANTES */
  
 /* Styles des boîtes déroulantes, voir [[Modèle:Boîte déroulante/Documentation]]. */
+/*
 div.NavFrame {
  margin:0;
  padding:2px;
@@ -32,41 +33,56 @@ div.NavFrame {
  text-align:center;
  border-collapse:collapse;
  font-size:95%;
-} /* monobookocentré début */
- 
+}
+*/
+/* monobookocentré début */
+
+/* 
 div.NavFrame + div.NavFrame {
  border-top-style:hidden;
 }
- 
+*/
+
+/*
 div.NavPic {
  background:#FFF;
  margin:0;
  padding:2px;
  float:left;
 }
- 
+*/
+
+/*
 div.NavFrame div.NavHead {
  height:1.6em;
  font-weight:bold;
  font-size:100%;
  background:#EFEFEF;
 }
- 
+*/
+
+/*
 div.NavFrame p,
 div.NavFrame div.NavContent,
 div.NavFrame div.NavContent p { font-size:100% }
- 
+*/ 
+
+/*
 div.NavEnd {
  margin:0;
  padding:0;
  line-height:1px;
  clear:both;
 }
- 
+*/
+
+/*
 .NavToggle {
  font-size:x-small;
  float:right;
-} /* monobookocentré fin */
+}
+*/
+/* monobookocentré fin */
 
 
 
