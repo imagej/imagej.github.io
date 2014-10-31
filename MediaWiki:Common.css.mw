@@ -745,7 +745,7 @@ table.ambox.ambox-mini {                 /* Small floating box variant */
 #EnWpMpBook2 { background-image: url(http://upload.wikimedia.org/wikipedia/commons/8/8e/MP-open-book2.png); }
  
 /* Standard Navigationsleisten, aka box hiding thingy from .de.  Documentation at [[Wikipedia:NavFrame]]. */
- 
+/*
 div.Boxmerge,
 div.NavFrame {
     margin: 0px;
@@ -797,6 +797,7 @@ a.NavToggle {
     font-weight:normal;
     font-size:smaller;
 }
+*/
  
 /* Coloured watchlist numbers */
 .mw-plusminus-pos {
