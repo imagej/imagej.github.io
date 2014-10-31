@@ -1,24 +1,18 @@
 {{Development}}
 = SciJava project structure =
 
+
 The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosystem, are carefully structured to foster [[extensibility]].
 
-== Organizational hierarchy ==
+== Organizational structure ==
 
-<graphviz border alignment="right" caption="SciJava organization hierarchy">
-digraph orgs {
-    label="SciJava organization hierarchy"
-    graph [ranksep="0.1"]
-    node [shape=box, style=filled]
-    "SciJava" [color=green, URL="[https://github.com/scijava]"]
-    "ImgLib2" [color=pink, URL="[https://github.com/imglib]"]
-    "ImageJ" [color=yellow, URL="[https://github.com/imagej]"]
-    "SCIFIO" [color=lightblue, URL="[https://github.com/scifio]"]
-    "SciJava" -> "ImgLib2"
-    "ImgLib2" -> "ImageJ"
-    "ImageJ" -> "SCIFIO"
-}
-</graphviz>
+<imagemap>
+Image:SciJava_Organization_Hierarchy.svg|right|frame|SciJava organizations
+rect 43 178 277 307 [[https://github.com/imglib]]
+rect 43 83 216 147 [[https://github.com/scifio]]
+rect 30 50 230 260 [[https://github.com/imagej]]
+rect 1 1 261 291 [[https://github.com/scijava]]
+</imagemap>
 
 There are four organizations on [https://github.com/ GitHub] which form the backbone of the [[SciJava]] ecosystem:
 
@@ -36,8 +30,7 @@ Additional organizations further extend this structure:
 * [https://github.com/slim-curve slim-curve] - for [[SLIM Curve]] projects
 * <your organization here!>
 
-The diagram on the right shows the SciJava software stack at the organizational level.
-{{Notice | message=Please note that this picture is necessarily oversimplified: it is certainly not the case that e.g. ''all'' SCIFIO projects depend on ''all'' ImageJ projects. (Actually, the core <code>scifio</code> library depends only on the core <code>imagej-common</code> library; see below.) For various reasons, there are projects in each of the <code>imagej</code>, <code>imglib</code> and <code>scifio</code> organizations which depend on projects in both of the other organizations. However, while these three ''organizations'' are interdependent as a whole, we strive to avoid dependency cycles at the level of individual artifacts.}}
+The diagram on the right shows organizational relationships between SciJava software components.
 
 == Git repositories ==
 
