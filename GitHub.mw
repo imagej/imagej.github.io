@@ -21,3 +21,32 @@ After one line is selected already, you can select a line ''range'' by Shift-cli
 After you found the link for the file in question, it most likely refers to the current version of the file.
 
 However, once development advances, the file's contents might change in the meantime, or file might even go away! To provide a link to a specific revision of the file, just hit the 'y' key to modify the URL to a permanent link (it will then reference the exact commit, instead of a branch).
+
+= Working with Pull Requests =
+
+Pull Requests are a really neat way to work together. The idea is that Git makes it very easy and efficient to clone a project's entire revision history, develop a bit, and then offer the improvements in a manner that is easy for the original project's developers to merge.
+
+== Common workflow ==
+
+Let's assume that you want to provide a fix for a vexing bug in one of your favorite Fiji plugins. The first thing is to ''fork'' it – meaning to copy the entire revision history into your personal GitHub space – unless you have done so already. Then you clone that onto your computer (again, unless you have done so already). Make your changes, commit them, push them and then make a Pull Request. See the excellent page [[How to contribute to an existing Fiji plugin or library]] for a detailed walk-through.
+
+== Testing Pull Requests before merging them ==
+
+GitHub makes it very, very easy to merge Pull Requests simply by hitting a button. Of course you should review the changes before you do so: remember that the quality of Open Source is high only because many developers throw their cumulative expertise together to make something that is better than each individual developer could have developed on their own.
+
+You might even want to test the code locally before merging. This is really easy because GitHub provides not only the test whether a Pull Request can be merged cleanly, but it also offers the revision in the form of the <code>refs/pull/<ID>/merge</code> pseudo branches.
+
+Please note that those pseudo branches (which are called ''refs'' in Git Speak) are not fetched or cloned automatically, they have to be fetch ''explicitly''.
+
+Example: let's assume for a moment that you want to test the [https://github.com/fiji/SPIM_Registration/pull/6 Pull Request number #6 of the SPIM Registration plugin]. You can fetch and check out the pseudo-branch with the tentative merge result thusly:
+
+<code lang="bash">
+git fetch origin refs/pull/6/merge
+git checkout FETCH_HEAD
+</code>
+
+Please note that
+* <code>FETCH_HEAD</code> is overwritten with every call to <code>git fetch</code>
+* <code>FETCH_HEAD</code> does not really refer to a branch, hence you will end up on an unnamed branch that is ''not'' updated when fetching
+* after testing, you should switch back to, say, ''master'' using <code>git checkout master</code>
+* once the Pull Request is merged, the pseudo-branch will reflect the final merge result, not a tentative one.
