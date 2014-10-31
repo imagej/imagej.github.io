@@ -50,3 +50,6 @@ Please note that
 * <code>FETCH_HEAD</code> does not really refer to a branch, hence you will end up on an unnamed branch that is ''not'' updated when fetching
 * after testing, you should switch back to, say, ''master'' using <code>git checkout master</code>
 * once the Pull Request is merged, the pseudo-branch will reflect the final merge result, not a tentative one.
+
+[[Category:Development]]
+[[Category:Git]]
