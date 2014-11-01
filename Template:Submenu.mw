@@ -1,4 +1,4 @@
-<includeonly>{| class="infobox mw-collapsible {{#if:{{{collapsed|}}}|mw-collapsed|}}" cellspacing="5" style="{{#if:{{{width|}}}|width: {{{width|}}};|}} text-align: left; float: right; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;"
+<includeonly>{| class="infobox mw-collapsible {{#if:{{{collapsed|}}}|mw-collapsed|}}" cellspacing="5" style="width: {{{width|100%}}}; text-align: left; float: right; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;"
 ! {{{title|Topics}}}
 |-
 {{{content|}}}
