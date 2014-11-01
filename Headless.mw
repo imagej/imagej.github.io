@@ -1,8 +1,8 @@
 [[ImageJ1|ImageJ 1.x]] was never meant as anything else than a desktop application with one user in front of one screen attached to one computer.
 
-However, it acquired macro capabilities, a batch mode for such macros, and even [[:Category:Scripting|scripting support through Fiji]].
+However, it acquired [[macro]] capabilities, a [[batch mode]] for such macros, and even [[scripting]] support.
 
-Naturally, users want to execute such macros or scripts in environments such as clusters where there is no graphical user interface available.
+Naturally, users want to execute such [[macros]] or [[scripts]] in environments such as clusters where there is no graphical user interface available.
 
 = The problem =
 
