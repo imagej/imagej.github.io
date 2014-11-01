@@ -23,12 +23,7 @@ If you already have an ImageJ Wiki account, enter the name of that account and c
 
 If the update site was never initialized, you will then be asked to provide the password and the initialisation will be performed.
 
-{{Warning | message =
-There is currently [https://github.com/fiji/fiji/issues/63 a bug] where if your wiki account is created but uninitialized, the GUI will not allow you to continue.
-<br/>
-Until this issue is fixed, please use [[Special:ChangeUploadPassword|this page]] to set your update site password.
-}}
-
+{{Warning | <p>There is currently [https://github.com/fiji/fiji/issues/63 a bug] where if your wiki account is created but uninitialized, the GUI will not allow you to continue.</p><p>Until this issue is fixed, please use [[Special:ChangeUploadPassword|this page]] to set your update site password.</p>}}
 
 If you do not have an ImageJ Wiki account, you will need to create one:
 
