@@ -7,8 +7,8 @@ ImageJ use an interface-driven design where possible. Public interfaces, enumera
 
 == Versioning ==
  
-ImageJ uses [http://semver.org/ Semantic Versioning]. As of this writing, the project is still in beta, so the API is not finalized yet. But once we make the final 2.0.0 release, future versions will be fully compliant.
- 
+ImageJ uses [http://semver.org/ Semantic Versioning]. As of this writing, the project is still in beta, so the API is not finalized yet. But once we make the final 2.0.0 release, future versions will be fully compliant. See the [[Architecture#Versioning|Architecture]] page for further details.
+
 == Naming ==
  
 We have tried to name classes with similar logic to how the Java standard library does. We eschew the "I" prefix for interfaces, as well as the "Impl" suffix for implementations. Instead, like the Java standard library, we prefix abstract superclasses with "Abstract" and canonical implementations with "Default"&mdash;for example, the <code>Display</code> interface is implemented by an abstract superclass named <code>AbstractDisplay</code> and extended by a concrete implementation named <code>DefaultDisplay</code>.
