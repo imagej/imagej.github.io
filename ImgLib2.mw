@@ -4,7 +4,7 @@
 | logo                   = [[File:imglib2-logo.png]]
 | author                 = [[User:Saalfeld|Stephan Saalfeld]] ([mailto:saalfeld@mpi-cbg.de]), [[User:Pietzsch|Tobias Pietzsch]], [[User:StephanP|Stephan Preibisch]], [[User:Rueden|Curtis Rueden]], [http://www.broadinstitute.org/~leek/ Lee Kamentsky], [http://loci.wisc.edu/people/barry-dezonia Barry DeZonia], [[User:Schindelin|Johannes Schindelin]], Christian Dietz, [http://cms.uni-konstanz.de/informatik/berthold/mitglieder/martin-horn/ Martin Horn], [http://rierol.net/ Albert Cardona], Grant Harris, [http://synapses.clm.utexas.edu/lab/lindsey/lindsey.htm Larry Lindsey]
 | maintainer             = see authors
-| source                 = [http://fiji.sc/imglib.git]
+| source                 = {{GitHub | org = imglib | repo = imglib2}}
 | status                 = stable, active
 | category               = [[:Category:ImgLib]]
 }}
