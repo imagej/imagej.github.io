@@ -1,8 +1,4 @@
-<includeonly>{| style="background: #fdd; padding: 10px; border: 1px solid black"
-|-
-| [[File:Warning.png]]
-| {{{message|}}}
-|}</includeonly>
+<includeonly>{{Ambox | type = content | text = {{{message|{{{1}}}}}}}}</includeonly>
 <noinclude>
 ==Usage==
 <pre>
