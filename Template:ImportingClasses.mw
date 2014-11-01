@@ -11,5 +11,6 @@ The rationale is that the auto-import feature is not safe. What if two classes o
 </pre>
 {{ImportingClasses | lang = JavaScript}}
 
+{{Clear}}
 [[Category:Boxes]]
 </noinclude>
