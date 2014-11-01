@@ -1,18 +1,7 @@
-<includeonly>
-{| style="background: #ffd; padding: 3px 10px 3px 10px; border: 1px solid black"
-|-
-| [[File:Notice.png]]
-| {{{message|}}}
-|}
-</includeonly>
-<noinclude>
+<includeonly>{{Ambox | {{{1}}}}}</includeonly><noinclude>
 ==Usage==
 <pre>
-{{Notice
-| message = There are many kinds of snakes.
-}}
+{{Notice | There are many kinds of snakes.}}
 </pre>
-{{Notice
-| message = There are many kinds of snakes.
-}}
+{{Notice | There are many kinds of snakes.}}
 </noinclude>
