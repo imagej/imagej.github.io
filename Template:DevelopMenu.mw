@@ -30,9 +30,38 @@
 | [[Git]]
 |}
 
+{| class="infobox mw-collapsible mw-collapsed" cellspacing="5" style="width: 18em; text-align: left; float: right; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;"
+! About Git
+|-
+| [[Git|Overview]]
+|-
+| [[Git for dummies]]
+|-
+| [[Git Conflicts]]
+|-
+| [[Git Notes]]
+|-
+| [[Git reflogs]]
+|-
+| [[Git topic branches]]
+|}
 
 {| class="infobox mw-collapsible mw-collapsed" cellspacing="5" style="width: 18em; text-align: left; float: right; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;"
-! Tutorials
+! Git Tutorials
+|-
+| [[Git mini howto]]
+|-
+| [[Git submodule tutorial]]
+|-
+| [[How to publish a Git repository]]
+|-
+| [[Git workshop]]
+|-
+| [[Pinpoint regressions with Git]]
+|}
+
+{| class="infobox mw-collapsible mw-collapsed" cellspacing="5" style="width: 18em; text-align: left; float: right; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;"
+! ImageJ Tutorials
 |-
 | [[Distribution|Distributing your code]]
 |-
@@ -54,7 +83,6 @@
 |-
 | [[Developing ImageJ on the command line|Command line]]
 |}
-
 
 {| class="infobox mw-collapsible mw-collapsed" cellspacing="5" style="width: 18em; text-align: left; float: right; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;"
 ! Developing Fiji
