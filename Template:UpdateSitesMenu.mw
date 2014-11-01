@@ -1,4 +1,3 @@
-<includeonly>
 {{Menu | Update Sites
 |
 * [[Update Sites|Introduction]]
@@ -8,6 +7,3 @@
 * [[List of update sites]]
 }}
 An '''update site''' is web space used by the [[Updater]] which enables users to share their macros, scripts and plugins with other researchers. With update sites, you do not need to manually download and install anything; [[ImageJ]] takes care of it for you.
-</includeonly><noinclude>
-This template is the floating menu and one-paragraph introduction for pages about ImageJ update sites. See [[Update Sites]].
-</noinclude>
