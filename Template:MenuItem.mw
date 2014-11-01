@@ -1,3 +1,5 @@
 <includeonly>{{!}}-
 {{!}} {{{1}}}</includeonly><noinclude>
-A menu item in a [[Template:Submenu]] submenu.</noinclude>
+A menu item in a [[Template:Submenu]] submenu.
+
+See [[Template:Development]] for an example of use.</noinclude>
