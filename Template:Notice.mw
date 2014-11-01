@@ -1,4 +1,4 @@
-<includeonly>{{Ambox | {{{1}}}}}</includeonly><noinclude>
+<includeonly>{{Ambox | text={{{1}}}}}</includeonly><noinclude>
 ==Usage==
 <pre>
 {{Notice | There are many kinds of snakes.}}
