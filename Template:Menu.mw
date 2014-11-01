@@ -1,4 +1,4 @@
 <includeonly>{| class="infobox" cellspacing="5" style="{{#if:{{{width|}}}|width: {{{width|}}};|}} text-align: left; float: right; border: 1px solid #a0a0a0;"
 ! colspan="2" style="font-size: 130%;" | {{{title|Menu}}}
 {{{content|}}}
-|}</includeonly>
+|}</includeonly><noinclude>Template for floating menus on the right-hand side. See also [[Template:Submenu]].</noinclude>
