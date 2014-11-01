@@ -1,4 +1,4 @@
-This page recenses experiments with creating Imglib2 images from MATLAB, and then calling Imglib2 algorithm from MATLAB. We aim first at showing how to build Imglib2 types from MATLAB types, then to do that efficiently. By this we mean having to <b>share</b> a single, massive low level data piece between Imglib2 and MATLAB, which is not doable simply due to MATLAB memory model.
+This page recenses experiments with creating ImgLib2 images from MATLAB, and then calling ImgLib2 algorithm from MATLAB. We aim first at showing how to build ImgLib2 types from MATLAB types, then to do that efficiently. By this we mean having to <b>share</b> a single, massive low level data piece between ImgLib2 and MATLAB, which is not doable simply due to MATLAB memory model.
 
 All snippets listed here are to be run from MATLAB. We rely on [[Miji]] to set up class path, so you have to start every MATLAB session with the command
 
@@ -124,7 +124,6 @@ It did not work: the ImgLib2 image did not see the change. This means that it do
 
 This is by construction, and there is no workaround, at least for Java<ref>For C++, you can write a Mex wrapper that will force MATLAB to operate on the reference of an array.</ref>. MATLAB passes all the data ''per-value'', not ''per-reference'' and this is what happened here.
 
-
 == Using Java arrays in MATLAB ==
 
 A first attempt to solve this would be to try and use Java arrays in MATLAB, which is made possible by the function <code>javaArray</code>. As explained in the [http://www.mathworks.fr/fr/help/matlab/matlab_external/working-with-java-arrays.html MATLAB docs], you can use this function to instantiate proper Java arrays, which we could then use to create an ImgLib2 image, and play with the same data both on the MATLAB side and on the ImgLib2 side. 
@@ -150,11 +149,7 @@ Therefore, a solution implies a change of approach. We will not use MATLAB matri
 
 With this strategy, MATLAB steps aside a bit, since we use ImgLib2 for basically all data manipulation. It takes the role of a scripting language like [[Jython Scripting|Jython]], from which you make plain call to Java classes. Duplicating the native array wrapped in an <code>ArrayImg</code> allows you still make the best our of MATLAB easily, but you must design a good tactic in your script to avoid these local copies to exist for too long.  
 
-
-
 <references/>
-
-
 
 [[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 06:54, 12 April 2013 (CDT)
 
