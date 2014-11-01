@@ -9,7 +9,7 @@ ImgLib2 is also the foundation of the [[ImageJ2]] data model.
 
 There is some [[How To Migrate Code From ImgLib To ImgLib2|rudimentary documentation]], but you will most likely need to ask more detailed questions on the [mailto:fiji@fiji.sc Fiji developers mailing list].
 
-== How to create a new Image from scratch? ==
+== How to create a new image from scratch? ==
 
 <source lang="java">
 int w = 768, h = 512, timepoints = 20;
