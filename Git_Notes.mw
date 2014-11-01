@@ -1,7 +1,5 @@
-{{Git}}
-
+{{Development}}
 ==Some things that I wouldn't remember otherwise==
-
 
 <dl>
 <dt><source lang="bash">git init --shared=group</source>
