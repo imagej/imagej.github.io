@@ -167,7 +167,7 @@ Along those lines, the libraries take great pains to be '''UI agnostic''', with 
 {{Sidebox
 | title = Why are reproducible builds so essential for science?
 | width = 40%
-| body =
+| text =
 Arguably '''the most important thing''' in science is to gain insights about nature '''that can be verified by other researchers'''. It is this mission for which [[ImageJ]] and [[Fiji]] stand, and it is the central reason why they are [[Open Source]].
 
 To verify results, it is absolutely necessary to be able to reproduce results claimed in scientific articles, and in the interest of efficiency, it should be '''easy''' to reproduce the results, and it should '''also''' be easy to scrutinize the used methods—incorrect results can be artifacts of flawed algorithms, after all.
