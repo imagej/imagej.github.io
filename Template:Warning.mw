@@ -1,11 +1,10 @@
-<includeonly>{{Ambox | type = content | text = {{{message|{{{1}}}}}}}}</includeonly>
+<includeonly>{{Ambox | type = content | text = {{{message|{{{1}}}}}} }}</includeonly>
 <noinclude>
 ==Usage==
 <pre>
-{{Warning
-| message = Watch out for snakes!
-}}
+{{Warning | Watch out for snakes!}}
 </pre>
+{{Warning | Watch out for snakes!}}
 
 {{Clear}}
 [[Category:Boxes]]
