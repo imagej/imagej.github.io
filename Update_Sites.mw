@@ -2,7 +2,7 @@
 
 == Following an update site ==
 
-{{Fiji | body=The [[Fiji]] distribution of ImageJ ships with both the ''ImageJ'' and ''Fiji'' sites enabled. You can transform your ImageJ installation into a Fiji one simply by enabling the ''Fiji'' update site.}}
+{{Fiji | The [[Fiji]] distribution of ImageJ ships with both the ''ImageJ'' and ''Fiji'' sites enabled. You can transform your ImageJ installation into a Fiji one simply by enabling the ''Fiji'' update site.}}
 Out of the box, ImageJ has only the core '''ImageJ''' update site enabled.
 * To enable additional features, choose ''Update'' from the ''Help'' menu, then click the "Manage update sites" button.
 
