@@ -1,3 +1,4 @@
+{{ImgLib}}
 Please download the following material for the Workshop "Advanced Programming with ImgLib2" (at the ImageJ User and Developer Conference 2012).
 
 [http://fly.mpi-cbg.de/~pietzsch/advanced-imglib2.zip advanced-imglib2.zip]
@@ -12,3 +13,5 @@ Browse to the location of the unzipped directory.
 [[Image:workshop-2012-import-2.png]]
 
 Click "Finish". You're done.
+
+[[Category:ImgLib]]
