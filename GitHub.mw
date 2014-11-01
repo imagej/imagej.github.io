@@ -9,7 +9,7 @@ GitHub offers really powerful ways to refer to specific lines of code. And not o
 
 == Finding a file – quickly ==
 
-After pointing the web browser to a specific repository, typing the {{Key|T}} key will let you type out parts of the file name and hit <Enter> when the file in question is at the top of the list (you can also navigate the list using the cursor keys).
+After pointing the web browser to a specific repository, typing the {{Key|T}} key will let you type out parts of the file name and hit {{Key|Enter}} when the file in question is at the top of the list (you can also navigate the list using the cursor keys).
 
 == Linking to specific lines ==
 
