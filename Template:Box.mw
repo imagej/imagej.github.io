@@ -8,28 +8,28 @@
         margin-bottom: 2em;
         background-color: #ffefbe;
         {{border-radius|.75em}}{{box-shadow}}">
-{{#if:{{{title|}}}|<p style="font-size: large; font-weight: bold; margin-top: 0; padding-top: 0">{{{title}}}</p>}} {{{body|}}}</div></includeonly>
+{{#if:{{{title|}}}|<p style="font-size: large; font-weight: bold; margin-top: 0; padding-top: 0">{{{title}}}</p>}} {{{text|{{{1}}}|}}}</div></includeonly>
 <noinclude>
 ==Usage==
 <pre>
 {{Sidebox
-| body = The quick brown fox jumped over the lazy dog.
+| text = The quick brown fox jumped over the lazy dog.
 }}
 </pre>
 {{Sidebox
-| body = The quick brown fox jumped over the lazy dog.
+| text = The quick brown fox jumped over the lazy dog.
 }}
 <div style="clear: right;"></div>
 <pre>
 {{Sidebox
 | title = Announcing new Shimmer!
-| body = New Shimmer is both a floor wax and a dessert topping! Here, I'll spray some on your mop.
+| text = New Shimmer is both a floor wax and a dessert topping! Here, I'll spray some on your mop.
 | width = 40%
 }}
 </pre>
 {{Sidebox
 | title = Announcing new Shimmer!
-| body = New Shimmer is both a floor wax and a dessert topping! Here, I'll spray some on your mop.
+| text = New Shimmer is both a floor wax and a dessert topping! Here, I'll spray some on your mop.
 | width = 40%
 }}
 </noinclude>
