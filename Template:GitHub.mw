@@ -12,36 +12,43 @@
 </pre>
 
 ==Examples==
+
 Use <code>path</code> to link to a file off the repository root:
 <pre>
 {{GitHub|path=WELCOME.md}}
 </pre>
 {{GitHub|path=WELCOME.md}}
+
 Use <code>source</code> to link to a source file within the repository's <code>src/main/java</code> subtree:
 <pre>
 {{GitHub|source=net/imagej/ImageJ.java}}
 </pre>
 {{GitHub|source=net/imagej/ImageJ.java}}
+
 Use <code>org</code> and <code>repo</code> to link to a different repository than <code>imagej/imagej</code>:
 <pre>
 {{GitHub|org=fiji|repo=TrackMate|path=README.md}}
 </pre>
 {{GitHub|org=fiji|repo=TrackMate|path=README.md}}
+
 You can give just a <code>repo</code> (or just an <code>org</code>), and it will be used for both <code>org</code> and <code>repo</code>:
 <pre>
 {{GitHub|repo=fiji|path=plugins/Examples/Fiji_Cube.ijm}}
 </pre>
 {{GitHub|repo=fiji|path=plugins/Examples/Fiji_Cube.ijm}}
+
 If you give neither a <code>path</code> nor a <code>source</code> then it links to the repository as a whole:
 <pre>
 {{GitHub|repo=fiji}}
 </pre>
 {{GitHub|repo=fiji}}
+
 Use <code>tag</code> to specify a tag (rather than <code>master</code>):
 <pre>
 {{GitHub|tag=imagej-2.0.0-beta-7.9|path=app/src/test/java/imagej/debug/TypeHierarchy.java}}
 </pre>
 {{GitHub|tag=imagej-2.0.0-beta-7.9|path=app/src/test/java/imagej/debug/TypeHierarchy.java}}
+
 Use <code>label</code> to override the label:
 <pre>
 {{GitHub|repo=fiji|path=plugins/Examples/Fiji_Logo_3D.js|label=Fiji... in 3D!}}
