@@ -1,105 +1,67 @@
-<includeonly>{| class="infobox" cellspacing="5" style="width: 18em; text-align: left; float: right; border: 1px solid #a0a0a0;"
-! colspan="2" style="font-size: 130%;" | Development
-|-
+{{Menu | Development
 |
-{| class="infobox mw-collapsible" cellspacing="5" style="width: 18em; text-align: left; float: right; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;"
-! Topics
-|-
-| [[Philosophy]]
-|-
-| [[Architecture]]
-|-
-| [[Extensibility]]
-|-
-| [[Source code]]
-|-
-| [[Project management]]
-|-
-| [[Coding style]]
-|-
-| [[Debugging intro|Debugging]]
-|}
+{{Submenu | Topics |
+{{MenuItem | [[Philosophy]] }}
+{{MenuItem | [[Architecture]] }}
+{{MenuItem | [[Extensibility]] }}
+{{MenuItem | [[Source code]] }}
+{{MenuItem | [[Project management]] }}
+{{MenuItem | [[Coding style]] }}
+{{MenuItem | [[Debugging intro|Debugging]] }}
+}}
 
-{| class="infobox mw-collapsible mw-collapsed" cellspacing="5" style="width: 18em; text-align: left; float: right; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;"
-! Tools
-|-
-| [[IDEs]]
-|-
-| [[Maven]]
-|-
-| [[Git]]
-|}
+{{Submenu | Tools |
+{{MenuItem | [[IDEs]] }}
+{{MenuItem | [[Maven]] }}
+{{MenuItem | [[Git]] }}
+| collapsed
+}}
 
-{| class="infobox mw-collapsible mw-collapsed" cellspacing="5" style="width: 18em; text-align: left; float: right; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;"
-! About Git
-|-
-| [[Git|Overview]]
-|-
-| [[Git for dummies]]
-|-
-| [[Git Conflicts]]
-|-
-| [[Git Notes]]
-|-
-| [[Git reflogs]]
-|-
-| [[Git topic branches]]
-|}
+{{Submenu | About Git |
+{{MenuItem | [[Git|Overview]] }}
+{{MenuItem | [[Git for dummies]] }}
+{{MenuItem | [[Git Conflicts]] }}
+{{MenuItem | [[Git Notes]] }}
+{{MenuItem | [[Git reflogs]] }}
+{{MenuItem | [[Git topic branches]] }}
+| collapsed
+}}
 
-{| class="infobox mw-collapsible mw-collapsed" cellspacing="5" style="width: 18em; text-align: left; float: right; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;"
-! Git Tutorials
-|-
-| [[Git mini howto]]
-|-
-| [[Git submodule tutorial]]
-|-
-| [[How to publish a Git repository]]
-|-
-| [[Git workshop]]
-|-
-| [[Pinpoint regressions with Git]]
-|-
-| [[GitHub Tricks]]
-|}
+{{Submenu | Git Tutorials |
+{{MenuItem | [[Git mini howto]] }}
+{{MenuItem | [[Git submodule tutorial]] }}
+{{MenuItem | [[How to publish a Git repository]] }}
+{{MenuItem | [[Git workshop]] }}
+{{MenuItem | [[Pinpoint regressions with Git]] }}
+{{MenuItem | [[GitHub Tricks]] }}
+| collapsed
+}}
 
-{| class="infobox mw-collapsible mw-collapsed" cellspacing="5" style="width: 18em; text-align: left; float: right; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;"
-! ImageJ Tutorials
-|-
-| [[Distribution|Distributing your code]]
-|-
-| [[Writing ImageJ2 plugins]]
-|-
-| [[External Plugins|Adding an external plugin]]
-|-
-| [[How_to_contribute_to_an_existing_Fiji_plugin_or_library|Contributing to a plugin]]
-|}
+{{Submenu | ImageJ Tutorials |
+{{MenuItem | [[Distribution|Distributing your code]] }}
+{{MenuItem | [[Writing ImageJ2 plugins]] }}
+{{MenuItem | [[External Plugins|Adding an external plugin]] }}
+{{MenuItem | [[How_to_contribute_to_an_existing_Fiji_plugin_or_library|Contributing to a plugin]] }}
+| collapsed
+}}
 
-{| class="infobox mw-collapsible mw-collapsed" cellspacing="5" style="width: 18em; text-align: left; float: right; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;"
-! Developing ImageJ
-|-
-| [[Developing ImageJ in Eclipse|Eclipse]]
-|-
-| [[Developing ImageJ in NetBeans|NetBeans]]
-|-
-| [[Developing ImageJ in IntelliJ IDEA|IntelliJ IDEA]]
-|-
-| [[Developing ImageJ on the command line|Command line]]
-|}
+{{Submenu | Developing ImageJ |
+{{MenuItem | [[Developing ImageJ in Eclipse|Eclipse]] }}
+{{MenuItem | [[Developing ImageJ in NetBeans|NetBeans]] }}
+{{MenuItem | [[Developing ImageJ in IntelliJ IDEA|IntelliJ IDEA]] }}
+{{MenuItem | [[Developing ImageJ on the command line|Command line]] }}
+| collapsed
+}}
 
-{| class="infobox mw-collapsible mw-collapsed" cellspacing="5" style="width: 18em; text-align: left; float: right; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;"
-! Developing Fiji
-|-
-| [[Developing Fiji|Introduction]]
-|-
-| [[Developing Fiji in Eclipse|Eclipse]]
-|}
+{{Submenu | Developing Fiji |
+{{MenuItem | [[Developing Fiji|Introduction]] }}
+{{MenuItem | [[Developing Fiji in Eclipse|Eclipse]] }}
+| collapsed
+}}
 
-{| class="infobox mw-collapsible mw-collapsed" cellspacing="5" style="width: 18em; text-align: left; float: right; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;"
-! Developing ImgLib2
-|-
-| [[Developing ImgLib2]]
-|}
+{{Submenu | Developing ImgLib2 |
+{{MenuItem | [[Developing ImgLib2]] }}
+| collapsed
+}}
 
-|}</includeonly><noinclude>
-This template is the floating menu for ImageJ development topics.
-</noinclude>
+}}
