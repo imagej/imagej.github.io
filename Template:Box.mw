@@ -12,11 +12,9 @@
 <noinclude>
 ==Usage==
 <pre>
-{{Sidebox | The quick brown fox jumped over the lazy dog. }}
+{{Sidebox | The quick brown fox jumped over the lazy dog.}}
 </pre>
-{{Sidebox
-| text = The quick brown fox jumped over the lazy dog.
-}}
+{{Sidebox | The quick brown fox jumped over the lazy dog.}}
 <div style="clear: right;"></div>
 <pre>
 {{Sidebox
