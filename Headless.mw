@@ -17,7 +17,7 @@ On MacOSX, there is no problem: Aqua provides GUI-independent text rendering (ma
 = Possible solutions =
 
 == The <code>--headless</code> mode ==
-{{Notice | '''Historical note:''' Headless support was originally a branch in [[ImageJA]]; it worked by putting rewritten versions of three core ImageJ classes into a file called ''headless.jar'', which was put into the class path ''before'' <code>ij.jar</code> so they would override ImageJ's versions.
+{{Notice | message = '''Historical note:''' Headless support was originally a branch in [[ImageJA]]; it worked by putting rewritten versions of three core ImageJ classes into a file called ''headless.jar'', which was put into the class path ''before'' <code>ij.jar</code> so they would override ImageJ's versions.
 
 Nowadays, we use [[Javassist]] for run-time patching, through the {{GitHub|org=imagej|repo=ij1-patcher|label=ImageJ 1.x patcher}} project. <span style="color: red">You do not need to do anything special to take advantage of this feature, except pass the <code>--headless</code> flag when launching Fiji from the command line.</span>
 
