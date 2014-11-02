@@ -23,18 +23,6 @@ One of the central goals of the [[SciJava]] software stack is to extend Java's m
 
 Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing [[plugins]] and [[macros]] with new versions of ImageJ. See the [[Compatibility]] page for details.
 
-== Why Java? ==
-
-While it was once true that Java is always slower than the equivalent in C++, this is no longer the case. [http://paulbuchheit.blogspot.com/2007/06/java-is-faster-than-c.html There] have [http://www.azulsystems.com/blog/cliff/2009-09-06-java-vs-c-performanceagain been] quite [http://vanillajava.blogspot.com/2011/08/java-can-be-significantly-faster-than-c.html a few benchmarks] comparing Java vs C++ performance, [http://keithlea.com/javabench/ this one] probably being the grandfather of all.
-
-Pragmatically, one should note that there is not really a big difference in performance when comparing Java to C++.
-
-Java programs run without trouble and without recompiling on the major platforms: Windows, Mac OS X and Linux. And plugins compiled on one platform also execute on all other platforms without recompiling. And profiling and debugging is easier with Java than with C++. And all programs/plugins double as libraries.
-
-So the true reason why we use Java is probably: it makes [[ImageJ]] accessible.
-
-See also [http://loci.wisc.edu/faq/isnt-java-too-slow Isn't Java too slow?] and [http://loci.wisc.edu/faq/why-java Why is your software written in Java?] from the LOCI FAQ.
-
 == Release early, release often ==
 {{Sidebox
 | title = What's the alternative?
@@ -80,3 +68,15 @@ To ensure releases can happen quickly, each SciJava component is independently r
 == Convention over configuration ==
 
 With increased [[modularity]] often comes increased complexity. One key way of addressing this issue is to provide sensible defaults (e.g., the [http://athinkingperson.com/2010/06/02/where-the-big-green-copier-button-came-from/ big green Xerox button]) as a way of dealing with complex software programs. We embrace the philosophy of [http://en.wikipedia.org/wiki/Convention_over_configuration convention over configuration] utilized by many large software projects in recent years. For this reason, SciJava projects use the [[Maven]] build tool for [[project management]].
+
+== Why Java? ==
+
+While it was once true that Java is always slower than the equivalent in C++, this is no longer the case. [http://paulbuchheit.blogspot.com/2007/06/java-is-faster-than-c.html There] have [http://www.azulsystems.com/blog/cliff/2009-09-06-java-vs-c-performanceagain been] quite [http://vanillajava.blogspot.com/2011/08/java-can-be-significantly-faster-than-c.html a few benchmarks] comparing Java vs C++ performance, [http://keithlea.com/javabench/ this one] probably being the grandfather of all.
+
+Pragmatically, one should note that there is not really a big difference in performance when comparing Java to C++.
+
+Java programs run without trouble and without recompiling on the major platforms: Windows, Mac OS X and Linux. And plugins compiled on one platform also execute on all other platforms without recompiling. And profiling and debugging is easier with Java than with C++. And all programs/plugins double as libraries.
+
+So the true reason why we use Java is probably: it makes [[ImageJ]] accessible.
+
+See also [http://loci.wisc.edu/faq/isnt-java-too-slow Isn't Java too slow?] and [http://loci.wisc.edu/faq/why-java Why is your software written in Java?] from the LOCI FAQ.
