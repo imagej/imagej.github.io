@@ -1,0 +1,15 @@
+<includeonly>{{ambox
+| type  = maintenance
+| image = [[Image:Fiji-logo-1.0-256x256.png|38px]]
+| text  = {{{text|{{{1}}}}}}
+}}</includeonly>
+<noinclude>
+==Usage==
+<pre>
+{{Tech | This box is chock full of juicy technical details.}}
+</pre>
+{{Notice | This box is chock full of juicy technical details.}}
+
+{{Clear}}
+[[Category:Boxes]]
+</noinclude>
