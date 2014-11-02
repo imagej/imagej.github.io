@@ -53,14 +53,12 @@ Complex example:
 
 <pre>
 {{ambox
-| type  = maintenance
 | image = [[Image:Fiji-logo-1.0-256x256.png|38px]]
 | text  = The message body text.
 }}
 </pre>
 
 {{ambox
-| type  = style
 | image = [[Image:Fiji-logo-1.0-256x256.png|38px]]
 | text  = The message body text.
 }}
