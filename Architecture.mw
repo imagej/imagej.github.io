@@ -120,7 +120,7 @@ The hierarchy of organizational parent POMs is shown in the diagram to the right
 
 == Bill of Materials ==
 
-The <code>pom-scijava</code> parent includes a [http://howtodoinjava.com/2014/02/18/maven-bom-bill-of-materials-dependency/ Bill of Materials] (BOM) which declares compatible versions of all core SciJava software in its [http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management dependencyManagement section]. These versions are intended to be used together in downstream projects, preventing version skew (symptoms of which include <code>ClassNotFoundException</code> and <code>NoSuchMethodError</code>, as well as erroneous behavior in general). This BOM is especially important while some components are still in beta, since they may sometimes break backwards compatibility.
+The <code>pom-scijava</code> parent includes a [http://howtodoinjava.com/2014/02/18/maven-bom-bill-of-materials-dependency/ Bill of Materials] (BOM) which declares compatible versions of all core SciJava software in its [http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management dependencyManagement section]. These versions are intended to be used together in downstream projects, preventing version skew (symptoms of which include <code>ClassNotFoundException</code> and <code>NoSuchMethodError</code>, as well as erroneous behavior in general). This BOM is especially important while some components are still in beta, since they may sometimes break [[backwards compatibility]].
 
 Similarly, the <code>pom-imagej</code> parent includes a consolidated Bill of Materials for projects in the ImageJ, ImgLib2 and SCIFIO organizations, as well as for downstream projects which extend the <code>pom-imagej</code> parent. The rationale for this consolidation is that each of these three organizations has projects which depend on components within the other two organizations. So broadly speaking, these three organizations form an interdependent "triumvarate." However, there are no circular dependencies at the level of individual components. See [http://imagej.net/pipermail/imagej-devel/2014-October/002280.html this thread on the imagej-devel mailing list] for further details.
 
@@ -221,7 +221,7 @@ Either way, '''''be sure to work on a topic branch while developing code in this
 
 == Versioning ==
 
-The SciJava software stack uses the [http://semver.org/ Semantic Versioning] system. This scheme communicates information about the backwards compatibility (or lack thereof) between versions of each individual software component. In a nutshell:
+The SciJava software stack uses the [http://semver.org/ Semantic Versioning] system. This scheme communicates information about the [[backwards compatibility]] (or lack thereof) between versions of each individual software component. In a nutshell:
 
 <blockquote>Given a version number MAJOR.MINOR.PATCH, increment the:
 * MAJOR version when you make incompatible API changes,
@@ -232,7 +232,7 @@ SemVer is very useful for indicating how software has changed from one version t
 
 === API vs. SPI backwards compatibility ===
 
-SciJava uses SemVer for '''API''' compatibility, but not necessarily '''SPI''' compatibility:
+SciJava uses SemVer for '''API''' [[compatibility]], but not necessarily '''SPI''' [[compatibility]]:
 
 * '''API''' ([https://en.wikipedia.org/wiki/Application_programming_interface '''A'''pplication '''P'''rogramming '''I'''nterface]) refers to downstream ''consumers'' which ''invoke'' methods of classes. For example, if your code uses a {{Javadoc | package=org/scijava/module | class=ModuleService}} and calls the {{Javadoc | package=org/scijava/module | class=ModuleService | anchor=getModules()}} method, SemVer guarantees that that method will continue to exist with a compatible return type as long as the version number's major digit does not increase.
 * '''SPI''' ([https://en.wikipedia.org/wiki/Service_provider_interface '''S'''ervice '''P'''rovider '''I'''nterface]) refers to downstream ''implementors'' which ''extend'' classes. For example, if your code provides its own implementation of the {{Javadoc | package=org/scijava/module | class=ModuleService}} interface, updating to a new version of <code>scijava-common</code> may break your code due to the addition of new method signatures which your class does not implement.
