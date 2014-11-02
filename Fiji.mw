@@ -98,4 +98,16 @@ Fiji is released under the General Public License.
 
 Each component has {{GitHub|repo=fiji|path=LICENSES|label=its own license}}.
 
+Fiji is an [[Open Source]] project, so everybody is welcome to contribute with plugins, patches, bug reports, tutorials, documentation, and artwork.
+If you'd like to share any idea or project with us, please contact us via the [[Mailing Lists|mailing list]] or via [[IRC]].
+
+== Support ==
+
+Fiji is supported by several institutions, directly and indirectly:
+
+* [http://www.mpi-cbg.de Max Planck Institute of Molecular Cell Biology and Genetics] in Dresden, Germany.
+* [http://www.ini.uzh.ch Institute of Neuroinformatics], [http://www.uzh.ch University of Zurich] and [http://www.ethz.ch ETH Zurich].
+* [http://www.embl.de/research/units/dev_biology/peri/index.html Francesca Peri] at the European Molecular Biology Laboratory (EMBL) in Heidelberg, Germany.
+* [http://www.loci.wisc.edu/ LOCI] in Madison, Wisconsin, USA, home of [[ImageJ2]] and [[Bio-Formats]].
+
 [[Category:Software]]
