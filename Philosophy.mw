@@ -19,6 +19,10 @@ One of the central goals of the [[SciJava]] software stack is to extend Java's m
 
 [[ImageJ2]] commands work not only in the [[ImageJ]] user interface, but also from many [[:Category:Related Software|other applications]] in the [[History|SciJava ecosystem]], including [[CellProfiler]], [[OMERO]], [[KNIME]] and others.
 
+== Compatibility ==
+
+Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing [[plugins]] and [[macros]] with new versions of ImageJ. See the [[Compatibility]] page for details.
+
 == Why Java? ==
 
 While it was once true that Java is always slower than the equivalent in C++, this is no longer the case. [http://paulbuchheit.blogspot.com/2007/06/java-is-faster-than-c.html There] have [http://www.azulsystems.com/blog/cliff/2009-09-06-java-vs-c-performanceagain been] quite [http://vanillajava.blogspot.com/2011/08/java-can-be-significantly-faster-than-c.html a few benchmarks] comparing Java vs C++ performance, [http://keithlea.com/javabench/ this one] probably being the grandfather of all.
