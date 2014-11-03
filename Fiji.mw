@@ -82,10 +82,6 @@ Browse the [[:Category:News|news archive]].
 ;The core of Fiji.
 *[[ImageJA]]
 
-== [[Downloads]] ==
-
-<span style="color:red">'''Critical:'''</span> if your updater does not work any longer, please drag & drop [http://update.imagej.net/fix.js this link] to your Fiji main window and follow the instructions in the text window. If that does not work, pleasefollow [[Fix_non-functional_Fiji_after_Update|these instructions]].
-
 {{Downloads}}
 
 See the [[Downloads]] page for debian packages and others.
