@@ -44,10 +44,8 @@ The Fiji project is driven by a strong desire to improve the tools available for
 
 Browse the [[:Category:News|news archive]].
 
-== Documentation ==
 {{Documentation}}
-
-== [[Fiji:Gallery of Featured Projects|Projects]] ==
+== Featured Projects ==
 
 ;[[3D Viewer]]
 * Hardware-accelerated 3D volume and mesh visualization, and 3D registration of image stacks.
