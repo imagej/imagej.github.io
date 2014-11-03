@@ -1,5 +1,5 @@
 <div style="float: right">__TOC__</div>
-== System requirements ==
+= System requirements =
 
 ImageJ will run on any system that has a Java 6 (or later) runtime installed. This includes, but is not limited to:
 
@@ -11,15 +11,62 @@ ImageJ will run on any system that has a Java 6 (or later) runtime installed. Th
 
 Please note that we currently test ImageJ mostly with Oracle Java 6. We have done a limited amount of testing with OpenJDK 7 and with Oracle Java 8, and things superficially work, but there may be additional bugs in those cases. Feel free to report any such issues to the [[Mailing Lists]].
 
-== Troubleshooting ==
+= Troubleshooting =
 
 * If you updated and ImageJ does not work anymore, you need to follow [[Fix_non-functional_ImageJ_after_Update|these instructions]].
 * If you encounter bugs, there are many ways to get help; please see the [[Help:Contents|Getting Help]] page.
 
-{{Downloads}}
+= Downloads =
 
-== Installation ==
+== ImageJ ==
+{{DownloadVersion
+| title = ImageJ development snapshot
+| description = You can download the latest DEVELOPMENT, UNSTABLE application bundle of ImageJ. This build includes the latest changes on the [https://github.com/imagej/imagej master branch of the source repository]. It has not been thoroughly tested and may contain new bugs.
+| logo = Imagej2-128.png
+| all = http://jenkins.imagej.net/job/ImageJ/lastSuccessfulBuild/artifact/target/imagej-latest.zip
+}}
+=== See also ===
+* [[ImageJ2 development releases]] for early versions of [[ImageJ2]].
+* [http://imagej.net/download/ ImageJ1 download archive] for old versions of [[ImageJ1|ImageJ 1.x]].
 
+== Fiji ==
+The [[Fiji]] distribution of ImageJ is focused on the life sciences. '''F'''iji '''I'''s '''J'''ust '''I'''mageJ, batteries included (some assembly required).
+<!--
+Mirrors (OUT OF DATE):
+* [http://valelab.ucsf.edu/~schindelin/ University of California, San Francisco, thanks to Nico Stuurman!]
+* [http://code.google.com/p/fiji-bi/downloads/list Fiji on GoogleCode] (only files smaller than 100MB due to upload restrictions)
+* [http://sourceforge.net/projects/fiji-bi/files/ Fiji on SourceForge]
+ -->
+{{DownloadLatestFiji}}
+{{DownloadVersion
+| title = Fiji Life-Line version, 2014 June 2
+| description = As announced in [http://developer.imagej.net/2014/06/04/imagej-200-release-candidate this blog post], we updated ImageJ2 with some rather dramatic changes under the hood. The packages below reflect Fiji as of June 2nd, 2014 and are offered here just in case the continuous build (or an updated version) above broke a formerly working operation that is desperately needed, like, right now.
+| logo = Fiji-logo-1.0-128x128.png
+| win32 = http://fiji.sc/downloads/Life-Line/fiji-win32-20140602.zip
+| win64 = http://fiji.sc/downloads/Life-Line/fiji-win64-20140602.zip
+| osx = http://fiji.sc/downloads/Life-Line/fiji-macosx-20140602.dmg
+| linux32 = http://fiji.sc/downloads/Life-Line/fiji-linux32-20140602.tar.gz
+| linux64 = http://fiji.sc/downloads/Life-Line/fiji-linux64-20140602.tar.gz
+| all = http://fiji.sc/downloads/Life-Line/fiji-nojre-20140602.zip
+}}
+{{DownloadVersion
+| title = Fiji Life-Line version, 2013 July 15
+| description = As announced in [http://fiji-devel.54424.x6.nabble.com/Upcoming-exciting-changes-in-Fiji-td248.html this mail], we join the legions of construction workers digging up the streets during the second half of July 2013 (i.e. we also use the slow summer month to break things in order to make them better), incorporating extensive changes to reconcile Fiji with ImageJ2. The packages below reflect Fiji as of July 15th, 2013 and are offered here just in case the continuous build (or an updated version) above broke a formerly working operation that is desperately needed, like, right now.
+| logo = Fiji-logo-1.0-128x128.png
+| win32 = http://fiji.sc/downloads/Life-Line/fiji-win32-20130715.zip
+| win64 = http://fiji.sc/downloads/Life-Line/fiji-win64-20130715.zip
+| osx = http://fiji.sc/downloads/Life-Line/fiji-macosx-20130715.dmg
+| linux32 = http://fiji.sc/downloads/Life-Line/fiji-linux32-20130715.tar.gz
+| linux64 = http://fiji.sc/downloads/Life-Line/fiji-linux64-20130715.tar.gz
+| all = http://fiji.sc/downloads/Life-Line/fiji-nojre-20130715.zip
+}}
+=== See also ===
+* [http://fiji.sc/downloads/ Fiji downloads archive] for old versions of [[Fiji]].
+
+= Installation =
+{{AvoidProgramFiles}}
+{{Sidebox | title = Packages for Debian / Ubuntu
+| text = <p>We used to offer Debian packages of Fiji. Unfortunately, for a variety of reasons, we are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads above instead.</p><p>If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us [[IRC|in IRC]] or contact the [http://groups.google.com/group/fiji-devel fiji-devel mailing list].</p>}}
 ImageJ and Fiji are distributed as [http://en.wikipedia.org/wiki/Portable_application portable applications]. That means that you do not have to run an installer; just download, unpack and start it.
 
 For more detailed instructions, see the installation walkthroughs:
@@ -27,18 +74,6 @@ For more detailed instructions, see the installation walkthroughs:
 * [[Install Fiji on MacOSX]]
 * [[Install Fiji on Linux]]
 
-{{AvoidProgramFiles}}
-
-== Source code ==
+= Source code =
 
 See the [[source code]] page for details on obtaining the ImageJ and Fiji source code.
-
-== Java WebStart ==
-
-{{Java_WebStart}}
-
-== Packages for Debian / Ubuntu ==
-
-We used to offer Debian packages. Unfortunately, for a variety of reasons, we are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads above instead.
-
-If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us [http://fiji.sc/IRC in IRC] or contact the [http://groups.google.com/group/fiji-devel fiji-devel mailing list].
