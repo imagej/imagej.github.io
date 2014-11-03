@@ -26,10 +26,10 @@ The accurate estimation of the number and size of adipocytes provides relevant i
 Download the installation package specific for your Operating System in the next section. To install Adiposoft, execute the installer file and follow the instructions. The full version installers install both Adipsoft and FIJI at the same time. 
 
 == Download - Adiposoft versions  == 
-The latest version of Adiposoft is 1.0. (Updated April 20th, 2012)
-* '''Windows'''. Adiposoft+FIJI full version installer ([https://dl.dropboxusercontent.com/u/4235078/SW/Setup.exe Download])
-* '''Linux'''. Adiposoft+FIJI full version installer ([https://dl.dropboxusercontent.com/u/4235078/SW/AdipsoftLinux.zip Download])
-* '''MacOS''' X. Adiposoft+FIJI full version installer ([https://dl.dropboxusercontent.com/u/4235078/SW/Adiposoft.pkg.zip Download])
+The latest version of Adiposoft is 1.12. (Updated November, 2014)
+* '''Windows'''. Adiposoft+FIJI full version installer ([-- Download])
+* '''Linux'''. Adiposoft+FIJI full version installer ([-- Download])
+* '''MacOS''' X. Adiposoft+FIJI full version installer ([-- Download])
 * Adiposoft '''Plugin''' ([https://dl.dropboxusercontent.com/u/4235078/SW/Adiposoft_.jar Download]). To install the Plugin only if you already have FIJI installed in your computer, download and uncompress the Plugin in the folder that contains FIJI
 
 == Running Adiposoft == 
