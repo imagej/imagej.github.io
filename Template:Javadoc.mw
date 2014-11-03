@@ -1,4 +1,4 @@
-<includeonly>[http://jenkins.imagej.net/job/{{{project|ImageJ}}}-javadoc/javadoc/{{{package|}}}/{{{class|}}}.html{{#if:{{{anchor|}}}|&#35;{{{anchor|}}}|}} {{{class|}}}{{#if:{{{anchor|}}}|&#35;{{{anchor|}}}|}}]</includeonly><noinclude>
+<includeonly>[http://javadoc.imagej.net/{{{project|ImageJ}}}/{{{package|}}}/{{{class}}}.html{{#if:{{{anchor|}}}|&#35;{{{anchor|}}}|}} {{{class|}}}{{#if:{{{anchor|}}}|&#35;{{{anchor|}}}|}}]</includeonly><noinclude>
 ==Usage==
 <pre>
 See also the {{Javadoc | project = ImageJ1 | package = ij/process | class = ImageProcessor}} class.
