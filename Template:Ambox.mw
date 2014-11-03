@@ -1,4 +1,4 @@
-<table class="metadata plainlinks ambox {{#switch:{{{type|}}}
+<includeonly><table class="metadata plainlinks ambox {{#switch:{{{type|}}}
 | serious        = ambox-serious
 | content        = ambox-content
 | maintenance    = ambox-style
@@ -25,7 +25,7 @@
 }}
 
 </tr>
-</table>
+</table></includeonly>
 <noinclude>
 
 
