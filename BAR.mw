@@ -26,8 +26,8 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
 [[ File:BARsnapshot.png|right|Overview of BAR (v1.0.0)]]
 == List of BARs ==
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#image-annotation|label=Annotation}}<span id="Annotation"></span>
-:{{GitHub|org=tferr|repo=Scripts|path=Annotation/README.md#roi-color-coder|label=ROI Color Coder}}
 :{{GitHub|org=tferr|repo=Scripts|path=Annotation/README.md#combine-orthogonal-views|label=Combine Orthogonal Views}}
+:{{GitHub|org=tferr|repo=Scripts|path=Annotation/README.md#roi-color-coder|label=ROI Color Coder}}
 
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#data-analysis|label=Data Analysis}}<span id="Data_Analysis"></span>
 :{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#distribution-plotter|label=Distribution Plotter}}
@@ -51,9 +51,10 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
 
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#tools-and-toolsets|label=Tools and Toolsets}}<span id="Tools"></span>
 :{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#calibration-menu|label=Calibration Menu}}
-:{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#roi-manager-tools|label=ROI Manager Tools}}
+:{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#list-folder-menu|label=List Folder Menu}}
 :{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#segment-profile-tool|label=Segment Profile}}
 :{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#shortcuts-menu|label=Shortcuts Menu}}
+:{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#roi-manager-tools|label=ROI Manager Tools}}
 :{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#toolset-creator|label=Toolset Creator}}
 
 == Accessing BARs ==
