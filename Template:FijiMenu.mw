@@ -1,25 +1,33 @@
-=== Using Fiji ===
-* [[IP Principles|What you need to know about scientific image processing]]
-* [[Installation|Installing Fiji]]
-* [[Getting started|Getting started with Fiji]]
-* [[Cookbook|Fiji Cookbook]]
-* [[:Category:Tutorials|Tutorials]] (also [[External tutorials|external ones]])
-* [[Help|Find contact information (also how to get an account on this Wiki), mailing list, IRC (chat) and help]]
-* [[Frequently Asked Questions]]
-* [[Using Fiji|more...]]
+{{Menu | Fiji Documentation
+|
+{{Submenu | Using Fiji |
+{{MenuItem | [[IP Principles|What you need to know about<br>scientific image processing!]] }}
+{{MenuItem | [[Installation|Installing Fiji]] }}
+{{MenuItem | [[Getting started|Getting started with Fiji]] }}
+{{MenuItem | [[Cookbook|Fiji Cookbook]] }}
+{{MenuItem | [[:Category:Tutorials|Tutorials]] }}
+{{MenuItem | [[Help]] }}
+{{MenuItem | [[Frequently Asked Questions]] }}
+{{MenuItem | [[Using Fiji|more...]] }}
+}}
 
-=== Advanced Fiji usage ===
-* [[:Category:Registration|Registering 3D images]]
-* [[Segmentation|Segmenting images]]
-* [[Useful keyboard shortcuts]]
-* [[:Category:Scripting|Scripting]]: with [[Introduction into Macro Programming|Macros]], in [[Beanshell_Scripting|Beanshell]], in [[Javascript_Scripting|Javascript]], in [[JRuby_Scripting|JRuby]], in [[Jython_Scripting|Jython]], in [[Clojure_Scripting|Clojure]] (see also [[Scripting Help]]).
-* Some [[ImageJ tricks]]
-* [[Links]]
-* [[Advanced Usage|more...]]
+{{Submenu | Advanced Fiji usage |
+{{MenuItem | [[:Category:Registration|Registering 3D images]] }}
+{{MenuItem | [[Segmentation|Segmenting images]] }}
+{{MenuItem | [[Useful keyboard shortcuts]] }}
+{{MenuItem | [[Scripting]] }}
+{{MenuItem | Some [[ImageJ tricks]] }}
+{{MenuItem | [[Links]] }}
+{{MenuItem | [[Advanced Usage|more...]] }}
+}}
 
-=== Developing for Fiji ===
-* [[Introduction into Developing Plugins]]
-* [https://www.youtube.com/watch?v=Ac-6gJ2eRb0 Developing ImageJ 1.x plugins with NetBeans]
-* [[Developing Fiji]] (i.e., the Fiji source code itself)
-* [[Developing Fiji in Eclipse]] (i.e., the Fiji source code itself)
-* [[:Category:Development|more...]]
+{{Submenu | Developing for Fiji
+|
+{{MenuItem | [[Introduction into Developing Plugins|Plugin development intro]] }}
+{{MenuItem | [http://youtu.be/Ac-6gJ2eRb0 Developing plugins in NetBeans] }}
+{{MenuItem | [[Developing Fiji]] itself }}
+{{MenuItem | [[Developing Fiji in Eclipse]] }}
+{{MenuItem | [[:Category:Development|more...]] }}
+}}
+
+}}
