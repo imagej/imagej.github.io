@@ -44,6 +44,9 @@ The Fiji project is driven by a strong desire to improve the tools available for
 
 Browse the [[:Category:News|news archive]].
 
+== Downloads ==
+{{DownloadLatestFiji}}
+See the [[Downloads]] page for Life-Line versions, etc.
 {{FijiDocsMenu}}
 == Featured Projects ==
 
@@ -81,10 +84,6 @@ Browse the [[:Category:News|news archive]].
 * Register/edit/analyze/segment/annotate/3D model terabytes of confocal and electron microscopy images.
 ;The core of Fiji.
 *[[ImageJA]]
-
-{{Downloads}}
-
-See the [[Downloads]] page for debian packages and others.
 
 == License ==
 
