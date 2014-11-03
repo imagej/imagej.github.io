@@ -13,19 +13,17 @@ First of all, start the updater with ''Help>Update'' and click on the ''Manage u
 
 [[File:Mamed-3.jpg|770px]]
 
-Now, click ''Add my site''.
+Now, click ''Add my site'', and follow the instructions for either [[#Specifying an existing ImageJ Wiki account|using an existing wiki account]] or [[#Creating a new ImageJ Wiki account|creating a new wiki account]].
 
 === Specifying an existing ImageJ Wiki account ===
 
-If you already have an ImageJ Wiki account, enter the name of that account and click ''OK'':
+If you already have an active ImageJ Wiki account (i.e. you changed your password from the initial temporary token) enter the name of that account and click ''OK'':
 
 [[Image:Personal-Update-Site-1.png|770px]]
 
-If the update site was never initialized, you will then be asked to provide the password and the initialisation will be performed.
+If your upload password (separate from your wiki password) was not initialized, you will then be asked to provide your wiki password, which will be used to initialize your upload password.
 
-{{Warning | <p>There is currently [https://github.com/fiji/fiji/issues/63 a bug] where if your wiki account is created but uninitialized, the GUI will not allow you to continue.</p><p>Until this issue is fixed, please use [[Special:ChangeUploadPassword|this page]] to set your update site password.</p>}}
-
-If you do not have an ImageJ Wiki account, you will need to create one:
+You can also manually [[Special:ChangeUploadPassword|change or initialize your upload password]].
 
 === Creating a new ImageJ Wiki account ===
 
