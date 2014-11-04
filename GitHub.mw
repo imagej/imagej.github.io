@@ -21,11 +21,11 @@ After one line is selected already, you can select a line ''range'' by {{Key|Shi
 
 After you found the link for the file in question, it most likely refers to the current version of the file.
 
-However, once development advances, the file's contents might change in the meantime, or file might even go away! To provide a link to a specific revision of the file, just hit the {{Key|Y}} key to modify the URL to a permanent link (it will then reference the exact commit, instead of a branch).
+However, once development advances, the file's contents might change in the meantime, or the file might even go away! To provide a link to a specific revision of the file, just hit the {{Key|Y}} key to modify the URL to a permanent link (it will then reference the exact commit, instead of a branch).
 
 = Editing files =
 
-If you want to modify some file's contents and you are certain that the changes do not need to be tested locally, you can hit the <code>Edit</code> button on the upper right corner after navigating to the file in question (the button will only appear if you have ''Push'' permission on the repository in question). This will let you edit the file online and commit the changes after providing a commit message (you should still try to write a [[Coding_style#SCM_history|meaningful commit message]], of course).
+If you want to modify some file's contents and you are certain that the changes do not need to be tested locally, you can hit the <code>Edit</code> button on the upper right corner after navigating to the file in question (in case you don't have ''Push'' permission on the repository in question, this will ''fork'' the project at the same time). This will let you edit the file online and commit the changes after providing a commit message (you should still try to write a [[Coding_style#SCM_history|meaningful commit message]], of course).
 
 = Working with Pull Requests =
 
