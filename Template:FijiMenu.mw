@@ -21,7 +21,7 @@
 {{MenuItem | [[Advanced Fiji Usage|more...]] }}
 }}
 
-{{Submenu | Developing for Fiji
+{{Submenu | Development
 |
 {{MenuItem | [[Introduction into Developing Plugins|Plugin development intro]] }}
 {{MenuItem | [http://youtu.be/Ac-6gJ2eRb0 Developing plugins in NetBeans] }}
