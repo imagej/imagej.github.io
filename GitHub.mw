@@ -23,6 +23,10 @@ After you found the link for the file in question, it most likely refers to the 
 
 However, once development advances, the file's contents might change in the meantime, or file might even go away! To provide a link to a specific revision of the file, just hit the {{Key|Y}} key to modify the URL to a permanent link (it will then reference the exact commit, instead of a branch).
 
+= Editing files =
+
+If you want to modify some file's contents and you are certain that the changes do not need to be tested locally, you can hit the <code>Edit</code> button on the upper right corner after navigating to the file in question. This will let you edit the file online and commit the changes after providing a commit message (you should still try to write a [[Coding_style#SCM_history|meaningful commit message]], of course).
+
 = Working with Pull Requests =
 
 Pull Requests are a really neat way to work together. The idea is that Git makes it very easy and efficient to clone a project's entire revision history, develop a bit, and then offer the improvements in a manner that is easy for the original project's developers to merge.
