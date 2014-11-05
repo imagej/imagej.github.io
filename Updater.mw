@@ -1,28 +1,28 @@
 {{Infobox
-| name                   = Update Fiji
-| software               = Fiji
+| name                   = Updater
+| software               = ImageJ
 | author                 = Johannes Schindelin, Yap Chin Kiet (Google Summer of Code 2009)
 | maintainer             = Johannes Schindelin
-| source                 = {{GitLink|jar=Fiji_Updater}}
+| source                 = {{GitLink|org=imagej|jar=imagej-updater}} (UI-agnostic part), {{GitLink|org=imagej|jar=imagej-ui-swing}} (Swing UI)
 | released               = 10 Oct 2008
-| latest version         = 14 Jun 2010
+| latest version         = 4 Nov 2014
 | status                 = beta
 }}
 
-The purpose of Fiji's Updater is to keep you up-to-date with all components of Fiji, i.e. ImageJ, the plugins and the core components (libraries) needed by the plugins.
+The purpose of the ImageJ Updater is to keep you up-to-date with all components of ImageJ (or Fiji), i.e. the macros, scripts, plugins and the core components (libraries) needed by the plugins.
 
-As of Fiji Madison, the Fiji Updater can handle [[#Adding update sites|3rd-party update sites]], i.e. anybody with write access to a web server can set up their own update site which users can decide to follow.
+As of 2011, the Fiji Updater can handle [[#Adding update sites|3rd-party update sites]], i.e. anybody can set up their own update site which users can follow. 
 
 == Automatic Update ==
 
-The Fiji Updater is a mechanism to update individual packages in Fiji.  It is automatically run when all the following conditions are met:
+The Updater is a mechanism to update individual packages. It is automatically run when all the following conditions are met:
 
-* Fiji was just started
-* Fiji was started without parameters (i.e. no Drag 'n Drop onto the Fiji icon)
-* Fiji's files can be updated by the current user
+* ImageJ was just started
+* ImageJ was started without parameters (i.e. no Drag 'n Drop onto the Fiji icon)
+* ImageJ's files can be updated by the current user
 * There is a network connection
 
-If there were updates since the Updater was run the last time, Fiji will ask whether you want to run the Updater now or later:
+If there were updates since the Updater was run the last time, the user will be asked whether you want to run the Updater now or later:
 
 [[Image:Up-to-date-check.png]]
 
@@ -30,29 +30,29 @@ In case you do not want to run the Updater upon startup, you can choose ''Never'
 
 == Starting the Updater explicitly ==
 
-The Updater can be run via ''Help>Update Fiji''.
+The Updater can be run via ''Help>Update...''.
 
 == Easy mode ==
 
-The Updater has two modes, the ''Easy Mode'' and the ''Advanced Mode''.  In the former mode, you will only see the files that can be updated.  The easy mode looks like this:
+The Updater has two modes, the ''Easy Mode'' and the ''Advanced Mode''.  In the easy mode, you will only see the files that can be updated.  The easy mode looks like this:
 
 [[Image:Updater-easy-mode.png]]
 
-For technical reasons, a restart of Fiji is required before the changes take effect. You can read about technical details [[Uploading plugins|here]].
+For technical reasons, a restart of ImageJ is required before the changes take effect. You can read about technical details [[Uploading plugins|here]].
 
 === Resolve dependencies ===
 
-Some plugins require other components to be updated. For example, the [[Simple Neurite Tracer]] needs the [[3D Viewer]]. If you have a locally modified version of the dependency (i.e. the Fiji Updater does not know that particular version), Fiji will ask you what to do:
+Some plugins require other components to be updated. For example, the [[Simple Neurite Tracer]] needs the [[3D Viewer]]. If you have a locally modified version of the dependency (i.e. the Updater does not know that particular version), the Updater will ask you what to do:
 
 [[Image:Updater-Resolve_dependencies.png]]
 
-A typical scenario when you can have a locally modified version of a component is when you asked the respective plugin author for a change in a Fiji component and got a test version that you [[Installing 3rd party plugins|installed manually]].
+A typical scenario when you can have a locally modified version of a component is when you asked the respective plugin author for a change in a certain component and got a test version that you [[Installing 3rd party plugins|installed manually]].
 
 You can keep the local version if you are certain that the version you have is new enough to work with the plugin noted under the text ''A newer version might be required by'', otherwise you should consider to choose ''Update <component>'' instead.
 
 == Advanced mode ==
 
-In the advanced mode, you can see details about the Fiji components, choose not to update selected components, and search by filename.
+In the advanced mode, you can see details about the files, choose to skip updating selected components, and search by filename.
 
 Note: in the advanced mode you can also upload plugins to your [[Update Sites|update site]]. The details for each component can be edited by writing below the respective entry. To save the changes, you have to upload the plugin to the server.
 
@@ -60,7 +60,7 @@ Note: in the advanced mode you can also upload plugins to your [[Update Sites|up
 
 == Starting the Updater manually ==
 
-Just click on the ''Help>Update Fiji'' menu item:
+Just click on the ''Help>Update...'' menu item:
 
 [[Image:Fiji_Updater-screenshot.png]]
 
@@ -72,31 +72,31 @@ You can also [[How to set up and populate an update site|set up and populate you
 
 == Command-line usage ==
 
-It is possible to drive the Updater through Fiji's command-line option ''--update''. If you call that without arguments, it will show you what subcommands are available:
+It is possible to drive the Updater through the command-line option ''--update''. If you call that without arguments, it will show you what subcommands are available:
 
 <source lang="bash">
-./fiji --update
+./ImageJ-<platform> --update
 </source>
 
 The simplest usage is to update either single files:
 
 <source lang="bash">
-./fiji --update update jars/ij.jar jars/Fiji.jar plugins/Fiji_Updater.jar
+./ImageJ-<platform> --update update jars/ij.jar plugins/Simple_Neurite_Tracer.jar
 </source>
 
 or all files that would be marked for update in the interactive Updater by default:
 
 <source lang="bash">
-./fiji --update update
+./ImageJ-<platform> --update update
 </source>
 
 If you configured upload sites, you can also use the command-line version of the Updater to upload files:
 
 <source lang="bash">
-./fiji --update upload plugins/My_New_Cool_Plugin.jar
+./ImageJ-<platform> --update upload plugins/My_New_Cool_Plugin.jar
 </source>
 
-Full list of options available when running Fiji from command line looks like this:
+The full list of options available when running ImageJ from command line looks like this:
 
 <source lang="bash">
 Commands:
@@ -123,21 +123,30 @@ Commands:
 In order to update from command line using  a specific update site (for example the BigDataViewer) use the following command:
 
 <source lang="bash">
-./fiji-linux64 --update add-update-site BigDataViewer http://sites.imagej.net/Pietzsch/
+./ImageJ-<platform> --update add-update-site BigDataViewer http://sites.imagej.net/Pietzsch/
 </source>
 
 == Bootstrapping the updater ==
 
-If you do not have Fiji yet, you can download [http://update.imagej.net/bootstrap.js bootstrap.js] and run it like this:
+If you do not have ImageJ/Fiji yet, you can download [http://update.imagej.net/bootstrap.js bootstrap.js] and run it like this:
 
 <source lang="bash">
 jrunscript bootstrap.js help
 </source>
 
-This uses the '''jrunscript''' executable of your Java installation to run the Javascript file tracked in Fiji's {{GitHub|repo=fiji|path=plugins/Scripts/Plugins/Utilities/Fix_Updater.js|label=source code repository}} that was originally intended to fix existing installations, but enhanced to initialize the updater in an ImageJ 1.x-only directory -- or even from a complete fresh state.
+This uses the '''jrunscript''' executable of your Java installation to run the Javascript file tracked in ImageJ's {{GitHub|org=imagej|repo=imagej-updater|path=bin/bootstrap.js|label=source code repository}}.
 
-== Development ==
+The <code>bootstrap.js</code> script was originally intended to fix broken Fiji installations, and was subsequently enhanced to initialize the updater in an ImageJ 1.x-only directory -- or even from a complete fresh state.
+
+== History ==
+
+The original updater was written in a frantic week in October 2008 in preparation for the first public Fiji release, to be able to keep Fiji up-to-date.
+
+In the course of one of two successful Google Summer of Code projects, the updater was rewritten from scratch (but in a [[Backwards_Compatibility|backwards-compatible manner]]) by Yap Chin Kiet under the mentorship of Mark Longair and Johannes Schindelin in 2009.
+
+Johannes Schindelin got stuck with the maintainership and introduced third-party update sites (a feature that many claimed to desire, though no pinky was harmed by contributing any code) in the course of a very successful [[Hackathon#ImageJ_hackathons|hackathon]] at the Lawrence Berkeley National Laboratory in October 2010 and another one in February 2011 hosted by [[LOCI]].
 
 As of September 2012, the Fiji Updater has moved to ImageJ2. Details can be found in the announcement: [[2012-09-14 - The Updater moved]].
 
 [[Category:Plugins]]
+[[Category:ImageJ2]]
