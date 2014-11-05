@@ -2,15 +2,15 @@
 
 {{UseMailingLists}}
 
-== Reporting bugs ==
-
-If you encounter a bug, please consider taking some time to [[Report a Bug]] and test our fixes. Remember: ImageJ is a community effort, and it will be as good as you make it.
-
 == Other ways to get help ==
 
 * For real-time chat, you can often find the ImageJ and Fiji developers on [[IRC]].
 * For video tutorials, please see the [http://youtube.com/fijichannel Fiji YouTube channel].
 * Some people like to [http://stackoverflow.com/questions/tagged/imagej post about ImageJ on Stack Overflow], a programming Q&A site.
+
+= Reporting bugs =
+
+If you encounter a bug, please consider taking some time to [[Report a Bug]] and test our fixes. Remember: ImageJ is a community effort, and it will be as good as you make it.
 
 = Getting help regarding the ImageJ Wiki =
 
