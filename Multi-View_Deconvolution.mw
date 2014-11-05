@@ -3,7 +3,7 @@
 | software               = ImageJ
 | author                 = Stephan Preibisch, Fernando Amat, Eugene Myers, Pavel Tomancak
 | maintainer             = Stephan Preibisch
-| source                 = {{GitLink|jar=SPIM_Registration}}
+| source                 = {{GitHub|org=fiji|repo=SPIM_Registration}}
 | filename               = SPIM_Registration.jar
 | released               = February 2013
 | latest version         = June 2013
