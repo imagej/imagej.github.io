@@ -5,7 +5,7 @@
 | author                 = Erwin Frise
 | maintainer             = Erwin Frise
 | filename               =  
-| source                 = {{GitLink|jar=level_sets}}
+| source                 = {{GitHub|org=fiji|repo=level_sets}}
 | released               = August 2008
 | latest version         = April 2009
 | status                 = active
