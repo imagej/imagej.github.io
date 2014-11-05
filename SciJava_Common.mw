@@ -52,7 +52,27 @@ SCIFIO provides several additional services—in particular:
 
 * '''{{Javadoc | project = SCIFIO | package = io/scif/services | class = FormatService}}''' - Service for managing available image formats.
 
-= See also =
+= Menuing system =
+
+The SciJava menuing system is divided into several layers, to make it easier to override its behavior or customize its appearance in a user interface.
+
+== Modules ==
+
+Each module known to the system (via the {{Javadoc | package = org/scijava/module | class = ModuleService}} can have a <code>menuPath</code> that says where it should live (by default) in the menu. It is also has a <code>menuRoot</code> that says in ''which'' menu it should live, with the default being the <code>APPLICATION_MENU_ROOT</code>, indicating the main application menu structure.
+
+== MenuService ==
+
+The {{Javadoc | package = org/scijava/menu | class = MenuService}} takes care of constructing {{Javadoc | package = org/scijava/menu | class = ShadowMenu}} tree structures for all available modules in the system, using their <code>menuPath</code> and <code>menuRoot</code> values. These tree structures are UI-agnostic. There is one <code>ShadowMenu</code> per <code>menuRoot</code>, which can be requested at will from the <code>MenuService</code>.
+
+== User interfaces ==
+
+The {{Javadoc | package = org/scijava/ui | class = UIService}} then takes care of constructing an actual UI-specific menu bar (or whatever UI components and/or widgets it wants) from the available <code>ShadowMenu</code>s. There is a type hierarchy beneath the {{Javadoc | package = org/scijava/menu | class = MenuCreator}} interface intended for this purpose; for example, the {{Javadoc | package = org/scijava/ui/swing/menu | class = SwingJMenuBarCreator}} implements <code>MenuCreator</code> to create and maintain a Swing {{Javadoc | project = Java | package = javax/swing | class = JMenuBar}} that reflects the state of a particular <code>ShadowMenu</code>.
+
+== How changes propagate ==
+
+When modules are added, removed or changed (via {{Javadoc | package = org/scijava/module/event | class = ModulesAddedEvent}}, {{Javadoc | package = org/scijava/module/event | class = ModulesRemovedEvent}}, {{Javadoc | package = org/scijava/module/event | class = ModulesUpdatedEvent}}), the <code>MenuService</code> listens and updates the associated <code>ShadowMenu</code>(s) accordingly. It notifies interested parties that it has done so by firing a corresponding event: {{Javadoc | package = org/scijava/menu/event | class = MenusAddedEvent}}, {{Javadoc | package = org/scijava/menu/event | class = MenusRemovedEvent}}, or {{Javadoc | package = org/scijava/menu/event | class = MenusUpdatedEvent}}.
+
+= Further reading =
 
 * [http://www.scijava.org/ SciJava web site]
 * [http://www.scijava.org/scijava-common/scijava-common.html SciJava Common presentation]
