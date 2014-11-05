@@ -1,7 +1,60 @@
 SciJava Common is a common library for [[SciJava]] software. It provides a plugin framework, with an extensible mechanism for service discovery, backed by its own annotation processor, so that plugins can be loaded dynamically. It is used by both [[ImageJ]] and [[SCIFIO]].
 
-== See also ==
+= Plugin framework =
 
-* [http://www.scijava.org/ scijava.org web site]
+First and foremost, SciJava Common is a plugin framework—a base for developing highly modular and extensible Java applications.
+
+== Plugin discovery ==
+
+All plugins available on Java's classpath are automatically discovered and made available. This is accomplished by scanning classpath resources for the file path <code>META-INF/json/org.scijava.plugin.Plugin</code>. Such files are generated at compile time by a Java annotation processor that writes them in response to <code>@Plugin</code> annotations on Java classes, an idea inspired by the [https://sezpoz.java.net/ SezPoz] project.
+
+= Application container =
+
+All program state, such as available plugins, is accessible from a root object known as the ''application context''.
+
+== Services ==
+
+{{Sidebox | title = Comparison with ImageJ 1.x
+| text = Whereas [[ImageJ1]] is a [https://en.wikipedia.org/wiki/Singleton_pattern singleton], with static methods to access much of its functionality, [[ImageJ2]] encapsulates its program state in the application context, allowing multiple simultaneous such contexts in the same JVM.
+}}
+ImageJ encapsulates its various parts as separate "services" that provide related state functionality and track related program state. An instance of the {{Javadoc | package = net/imagej | class = ImageJ}} class is nothing more than a collection of these services; this instance is referred to as the "application gateway." Services are defined as interfaces, with concrete implementations as plugins. This design provides [http://c2.com/cgi/wiki?SoftwareSeam seams] in the right places so that behavior at every level can be customized and overridden.
+
+=== SciJava services ===
+
+Here are a few of SciJava Common's major core services:
+
+* '''{{Javadoc | package = org/scijava/app | class = AppService}}''' - Tracks software applications (SCIFIO, ImageJ, etc.) present in the context.
+* '''{{Javadoc | package = org/scijava/display | class = DisplayService}}''' - Tracks available displays, as well as the active display, and provides the means to create new displays to visualize data.
+* '''{{Javadoc | package = org/scijava/event | class = EventService}}''' - Publishes events to the [http://eventbus.org/ event bus], and allows interested parties to subscribe to them. The service provides the central means of communication between various parts of the codebase.
+* '''{{Javadoc | package = org/scijava/io | class = IOService}}''' - General tools for opening and saving data within the context.
+* '''{{Javadoc | package = org/scijava/menu | class = MenuService}}''' - Builds the application menu structure.
+* '''{{Javadoc | package = org/scijava/module | class = ModuleService}}''' - Tracks available modules, and provides the infrastructure for executing them.
+* '''{{Javadoc | package = org/scijava/object | class = ObjectService}}''' - Tracks available objects of various types, including {{Javadoc | package = net/imagej | class = Dataset}}s and {{Javadoc | package = org/scijava/display | class = Display}}s.
+* '''{{Javadoc | package = org/scijava/options | class = OptionsService}}''' - Tools for managing program settings.
+* '''{{Javadoc | package = org/scijava/platform | class = PlatformService}}''' - Provides hooks for extending the application's behavior depending on the deployment platform (operating system, version of Java, etc.).
+* '''{{Javadoc | package = org/scijava/plugin | class = PluginService}}''' - Tracks available plugins, and provides the infrastructure for executing them (using the {{Javadoc | package = org/scijava/module | class = ModuleService}}).
+* '''{{Javadoc | package = org/scijava/app | class = StatusService}}''' - Publishes status updates for ongoing operations.
+* '''{{Javadoc | package = org/scijava/thread | class = ThreadService}}''' - Manages multithreading.
+* '''{{Javadoc | package = org/scijava/tool | class = ToolService}}''' - Tracks available tools—logic binding user input to behavior—as well as the active tool (selected on the toolbar).
+* '''{{Javadoc | package = org/scijava/ui | class = UIService}}''' - Discovers and launches a user interface for interacting with ImageJ.
+
+=== ImageJ services ===
+
+Some of the services which ImageJ adds:
+
+* '''{{Javadoc | package = net/imagej | class = DatasetService}}''' - Tools for creating and managing image data.
+* '''{{Javadoc | package = net/imagej/display | class = ImageDisplayService}}''' - Similar to {{Javadoc | package = org/scijava/display | class = DisplayService}}, but specifically for {{Javadoc | package = net/imagej/display | class = ImageDisplay}}s.
+* '''{{Javadoc | package = net/imagej/overlay | class = OverlayService}}''' - Tools for creating and managing image overlays and regions of interest (ROIs).
+
+=== SCIFIO services ===
+
+SCIFIO provides several additional services—in particular:
+
+* '''{{Javadoc | project = SCIFIO | package = io/scif/services | class = FormatService}}''' - Service for managing available image formats.
+
+= See also =
+
+* [http://www.scijava.org/ SciJava web site]
 * [http://www.scijava.org/scijava-common/scijava-common.html SciJava Common presentation]
-* {{GitHub|org=scijava|repo=scijava-common|label=source repository}}
+* {{GitHub|org=imagej|repo=imagej-tutorials|label=ImageJ tutorials}}
+* {{GitHub|org=scijava|repo=scijava-common|label=SciJava Common source code}}
