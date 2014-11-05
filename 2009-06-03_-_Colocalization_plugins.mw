@@ -1,4 +1,4 @@
-By request of Daniel James White, we now have Colocalization plugins in [[Fiji]].  We took two plugins from the [[MBF Plugin Collection]], fixed them to work with newer [[ImageJ]] versions, and put them into the Fiji [[Updater]].  Oh, and of course, they are {{GitLink|jar=Colocalisation_Analysis}}, too.
+By request of Daniel James White, we now have Colocalization plugins in [[Fiji]].  We took two plugins from the [[MBF Plugin Collection]], fixed them to work with newer [[ImageJ]] versions, and put them into the Fiji [[Updater]].  Oh, and of course, they are {{GitHub|org=fiji|repo=Colocalisation_Analysis}}, too.
 
 [[Category:News]]
 [[Category:Colocalization]]
