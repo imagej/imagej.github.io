@@ -1,0 +1,36 @@
+Fiji is home to quite a few nice ImageJ plugins! Here is a non-exhaustive list:
+
+;[[3D Viewer]]
+* Hardware-accelerated 3D volume and mesh visualization, and 3D registration of image stacks.
+;[[:Category:Transform|Transform]]
+* Interactive image transformation ([[Interactive_Rigid|rigid]], [[Interactive_Similarity|similarity]], [[Interactive_Affine|affine]], [[Interactive_Perspective|perspective]], [[Interactive_Moving_Least_Squares|deform]])
+* [[Interactive Stack Rotation]]
+* [[Landmark Correspondences|Landmark based transformation and deformation]]
+* [http://fly.mpi-cbg.de/saalfeld/Projects/panorama.html Panorama Viewer]
+* [[Distortion correction]]: correct lens deformation induced by the microscope (optical and electron microscopy). See the [http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf Distortion Correction plugin manual].
+;[[Plugins_Menu#Plugins_.3E_Registration|Image registration]]
+* [[Elastic Alignment and Montage]]
+* [[SPIM Registration]] Registration and fusion of Selective Plane Illumination Microscopy data.
+*[[Image Stitching]] Stitch multiple image stacks across X,Y,Z,T and C.
+*[[Feature Extraction]] SIFT and MOPS.
+* Consistent and elastic 2D registration ([http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/ bUnwarpJ])
+* [[Register_Virtual_Stack_Slices|Stack slice registration]]
+* Image montage (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2]) with global optimization (in 2D and across sections)
+*[[VIB Protocol]] Label-based 3D alignment of image stacks.
+;[[Plugins_Menu#Plugins_.3E_Segmentation|Segmentation]]
+* [[Simple Neurite Tracer]] (project [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/ page])
+* [http://132.187.25.13/home/?category=Download&page=SegmentationEditor Segmentation Editor]
+* Manual (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2])
+* [[Level Sets]]
+* [[Trainable Weka Segmentation|Trainable Segmentation]]
+* [[SIOX:_Simple_Interactive_Object_Extraction|SIOX: Simple Interactive Object Extraction]]
+;[[:Category:Tracking|Tracking]]
+* [[TrackMate]]
+;Analysis
+*[[:Category:Skeleton|Skeletons and tree analysis]]
+;[[ImgLib2]]
+* Generic and extensible ''n''-dimensional image processing library for Java.
+;[[TrakEM2]]
+* Register/edit/analyze/segment/annotate/3D model terabytes of confocal and electron microscopy images.
+;The core of Fiji.
+*[[ImageJA]]
