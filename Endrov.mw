@@ -3,7 +3,7 @@
 | software               = Endrov
 | author                 = Johan Henriksson
 | maintainer             = Johan Henriksson
-| source                 = {{GitLink|repository=mahogny|jar=Endrov}}
+| source                 = {{GitHub|org=mahogny|repo=Endrov}}
 | status                 = Active
 | website                = http://www.endrov.net/
 }}
