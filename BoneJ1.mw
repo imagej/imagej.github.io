@@ -3,7 +3,7 @@
 | software               = ImageJ
 | author                 = Michael Doube
 | maintainer             = Michael Doube
-| source                 = {{GitLink|repository=mdoube|jar=BoneJ}}
+| source                 = {{GitHub|org=mdoube|repo=BoneJ}}
 | status                 = Active
 | website                = http://bonej.org/
 }}
