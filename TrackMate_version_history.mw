@@ -190,3 +190,8 @@ Initial release
 
 * Fix another bug in the sparse LAP trackers.
 * Fix a bug when loading at the tracker config state.
+
+== 05-11-2014 - v2.5.4 ==
+
+* When graphing spot features, only include spots from visible tracks.
+* Fix a bug that prevented the XML file to be saved.
