@@ -4,7 +4,7 @@
 | author                 = various (see below)
 | maintainer             = Jean-Yves Tinevez ([mailto:tinevez@mpi-cbg.de tinevez@mpi-cbg.de])
 | filename               = Stack_Manipulation.jar
-| source                 = {{GitLink|jar=Stack_Manipulation}}
+| source                 = {{GitHub|org=fiji|repo=Stack_Manipulation}}
 | latest version         =  27 December 2011
 | status                 = stable, not active 
 }}
