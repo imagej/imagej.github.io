@@ -4,7 +4,7 @@
 | author                 = Gabriel Landini, plus others (see below)
 | maintainer             = Gabriel Landini (G.Landini at bham. ac. uk)
 | filename               = Auto_Threshold.jar
-| source                 = {{GitLink|jar=Auto_Threshold}}
+| source                 = {{GitHub|org=fiji|repo=Auto_Threshold}}
 | latest version         = v1.15 (19 Feb 2013)
 | status                 = active 
 }}
