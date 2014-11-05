@@ -6,7 +6,7 @@
 | maintainer            = [mailto:jean-yves.tinevez@pasteur.fr Jean-Yves Tinevez]
 | source                = {{GitHub|org=fiji|repo=TrackMate}}
 | released              = 10/05/2012
-| status                = v2.5.3, active
+| status                = v2.5.4, active
 | category              = [[:Category:Segmentation|Segmentation]], [[:Category:Tracking|Tracking]]
 }}
 __TOC__
