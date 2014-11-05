@@ -4,7 +4,7 @@
 | author                 = [http://webeye.ophth.uiowa.edu/dept/BIOGRAPH/Abramoff.htm Michael Abramoff]
 | maintainer             = [mailto:tinevez_at_mpi-cbg_dot_de Jean-Yves Tinevez]
 | filename               = FlowJ_.jar
-| source                 = {{GitLink|jar=FlowJ_}} or [http://webscreen.ophth.uiowa.edu/bij/downloads/bij_source.zip on BIJ webpage]
+| source                 = {{GitHub|org=fiji|repo=FlowJ_}} or [http://webscreen.ophth.uiowa.edu/bij/downloads/bij_source.zip on BIJ webpage]
 | latest version         = 1.29 (December 2003)
 | website                = [http://webscreen.ophth.uiowa.edu/bij/flowj.htm FlowJ]
 | status                 = stable
