@@ -3,7 +3,7 @@
 | name                   = Multiple Image Processor
 | maintainer             = [mailto:ngonzalez at rcm.upr.edu]
 | author                 = Nathaniel Gonzalez Santiago
-| source                 = {{GitLink|jar=M_I_P}}
+| source                 = {{GitHub|org=fiji|repo=M_I_P}}
 | released               = 10/10/2005
 | latest version         = 10/10/2005
 | status                 = stable
