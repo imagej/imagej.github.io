@@ -37,7 +37,7 @@ There is clearly is a division between ROIs as a data structure, and ROIs for di
 
 = Shortcomings =
 
-Johannes Schindelin summarizes the shortcomings of ROIs in the current version of ImageJ:
+Johannes Schindelin summarizes the shortcomings of ROIs in [[ImageJ 1.x]]:
 
 * only 2D (extends identically to n dimensions)—in Fiji, we only have several 3D extensions to ImageJ's ROIs, but they are in effect stacks of 2D ROIs, while it would be pretty interesting to have a proper surface model for 3D ROIs, at least as an option
 * no distinction between region of interest and lines/points of interest
