@@ -3,7 +3,7 @@
 | name                   = Local Thickness
 | author                 = Bob Dougherty (rpd@optinav.com)
 | filename               = LocalThickness_.jar
-| source                 = on {{GitLink|jar=LocalThickness_}}
+| source                 = on {{GitHub|org=fiji|repo=LocalThickness_}}
 | released               = 2006 
 | latest version         = 
 | status                 = 
