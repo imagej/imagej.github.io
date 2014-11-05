@@ -3,7 +3,7 @@
 | software               = VisBio
 | author                 = [[User:Rueden|Curtis Rueden]]
 | maintainer             = None
-| source                 = {{GitLink|repository=uw-loci|jar=visbio}}
+| source                 = {{GitHub|org=uw-loci|repo=visbio}}
 | status                 = Discontinued
 | website                = http://loci.wisc.edu/software/visbio
 }}
