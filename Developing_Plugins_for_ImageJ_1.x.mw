@@ -120,7 +120,7 @@ The source of the various Fiji-related projects is spread over several source co
 
 == The class ''IJ'' ==
 
-The class {{GitLink|repository=ImageJA|path=ij/IJ.java|label=ij.IJ}} is a convenience class with many static functions. Two of them are particularly useful for debugging:
+The class {{GitHub|org=imagej|repo=ImageJA|path=src/main/java/ij/IJ.java|label=ij.IJ}} is a convenience class with many static functions. Two of them are particularly useful for debugging:
 <source lang="java">
 // output into the Log window
 IJ.log(“Hello, World!”);
@@ -131,7 +131,7 @@ IJ.showMessage(“Hello, World!”);
 
 == The class ''ImageJ'' ==
 
-The class {{GitLink|repository=ImageJA|path=ij/ImageJ.java|label=ij.ImageJ}} implements the main window of ImageJ / Fiji, and you can access it via ''ij.IJ'''s static method ''getInstance()'':
+The class {{GitHub|org=imagej|repo=ImageJA|path=src/main/java/ij/ImageJ.java|label=ij.ImageJ}} implements the main window of ImageJ / Fiji, and you can access it via ''ij.IJ'''s static method ''getInstance()'':
 <source lang="java">
 // check if ImageJ is used interactively
 if (IJ.getInstance() != null)
@@ -142,7 +142,7 @@ Typically, all you do with that instance is to test whether ImageJ is used as a 
 
 == The class ''WindowManager'' ==
 
-Use the class {{GitLink|repository=ImageJA|path=ij/WindowManager.java|label=ij.WindowManager}} to access the ImageJ windows / images:
+Use the class {{GitHub|org=imagej|repo=ImageJA|path=src/main/java/ij/WindowManager.java|label=ij.WindowManager}} to access the ImageJ windows / images:
 <source lang="java">
 // how many windows / images are active?
 IJ.log(“There are “
@@ -156,7 +156,7 @@ When implementing a filter plugin, you usually do not need to access ''WindowMan
 
 == The hierarchy of the classes representing an image ==
 
-All images are represented as instances of {{GitLink|repository=ImageJA|path=ij/ImagePlus.java|label=ij.ImagePlus}}. This class wraps an {{GitLink|repository=ImageJA|path=ij/ImageStack.java|label=ij.ImageStack}} of slices. Slices are data-type dependent instances of {{GitLink|repository=ImageJA|path=ij/process/ImageProcessor.java|label=ij.process.ImageProcessor}}: {{GitLink|repository=ImageJA|path=ij/process/ByteProcessor.java|label=ij.process.ByteProcessor}}, {{GitLink|repository=ImageJA|path=ij/process/ShortProcessor.java|label=ij.process.ShortProcessor}}, {{GitLink|repository=ImageJA|path=ij/process/FloatProcessor.java|label=ij.process.FloatProcessor}}, and {{GitLink|repository=ImageJA|path=ij/process/ColorProcessor.java|label=ij.process.ColorProcessor}}. Or graphically:
+All images are represented as instances of {{GitHub|org=imagej|repo=ImageJA|path=src/main/java/ij/ImagePlus.java|label=ij.ImagePlus}}. This class wraps an {{GitHub|org=imagej|repo=ImageJA|path=src/main/java/ij/ImageStack.java|label=ij.ImageStack}} of slices. Slices are data-type dependent instances of {{GitHub|org=imagej|repo=ImageJA|path=src/main/java/ij/process/ImageProcessor.java|label=ij.process.ImageProcessor}}: {{GitHub|org=imagej|repo=ImageJA|path=src/main/java/ij/process/ByteProcessor.java|label=ij.process.ByteProcessor}}, {{GitHub|org=imagej|repo=ImageJA|path=src/main/java/ij/process/ShortProcessor.java|label=ij.process.ShortProcessor}}, {{GitHub|org=imagej|repo=ImageJA|path=src/main/java/ij/process/FloatProcessor.java|label=ij.process.FloatProcessor}}, and {{GitHub|org=imagej|repo=ImageJA|path=src/main/java/ij/process/ColorProcessor.java|label=ij.process.ColorProcessor}}. Or graphically:
 
 [[Image:Image_Class_Hierarchy.png|600px|center]]
 
