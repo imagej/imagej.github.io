@@ -4,7 +4,7 @@
 | author                 = Joachim Walter (walter at biz.uni-muenchen.de)
 | maintainer             = [mailto:fiji-devel@googlegroups.com Fiji Development Team]
 | filename               = Sync_Win.jar
-| source                 = {{GitLink|jar=Sync_Win}}, or contained in [http://imagej.net/plugins/download/jars/Sync_Win.jar Sync_Win.jar]
+| source                 = {{GitHub|org=fiji|repo=Sync_Win}}, or contained in [http://imagej.net/plugins/download/jars/Sync_Win.jar Sync_Win.jar]
 | latest version         = v1.7-fiji1 (3 Feb 2012)
 | status                 = inactive 
 }}
