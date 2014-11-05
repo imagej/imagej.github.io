@@ -3,7 +3,7 @@
 | software               = ImageJ
 | author                 = Johannes Schindelin, Yap Chin Kiet (Google Summer of Code 2009)
 | maintainer             = Johannes Schindelin
-| source                 = {{GitLink|org=imagej|jar=imagej-updater}} (UI-agnostic part), {{GitLink|org=imagej|jar=imagej-ui-swing}} (Swing UI)
+| source                 = {{GitHub|org=imagej|repo=imagej-updater}} (UI-agnostic part), {{GitHub|org=imagej|repo=imagej-ui-swing}} (Swing UI)
 | released               = 10 Oct 2008
 | latest version         = 4 Nov 2014
 | status                 = beta
