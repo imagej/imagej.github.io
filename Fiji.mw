@@ -50,7 +50,7 @@ See the [[Downloads]] page for Life-Line versions, etc.
 {{FijiDocsMenu}}
 == License ==
 
-Fiji is released as [[open source]] under the General Public License.
+Fiji is released as [[open source]] under the [http://www.gnu.org/licenses/gpl.html GNU General Public License].
 
 Plugins and other components have their own {{GitHub|repo=fiji|path=LICENSES|label=licenses}}.
 
