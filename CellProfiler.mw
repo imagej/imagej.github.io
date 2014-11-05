@@ -3,7 +3,7 @@
 | name                   = CellProfiler
 | author                 = [https://www.broadinstitute.org/ Broad Institute of MIT and Harvard]
 | maintainer             = [https://www.broadinstitute.org/ Broad Institute of MIT and Harvard]
-| source                 = {{GitLink|repository=CellProfiler|jar=CellProfiler}}
+| source                 = {{GitHub|org=CellProfiler|repo=CellProfiler}}
 | status                 = active
 | website                = http://cellprofiler.org/
 }}CellProfiler is free open-source software designed to enable biologists without training in computer vision or programming to quantitatively measure phenotypes from thousands of images automatically.
