@@ -12,10 +12,9 @@ Initial release
 
 == 22/05/2012 - v1.1 ==
 
-* [[TrachScheme]] can change of display style.
+* [[TrackScheme]] can change of display style.
 * De-activated folding branches in TrackScheme, as it was non-functional.
 * Fix bugs when loading invisible tracks.
-
 
 == 13/06/2012 - v1.2 ==
 
