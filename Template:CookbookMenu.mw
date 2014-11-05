@@ -1,4 +1,4 @@
-<includeonly>{{ Menu | Fiji Cookbook Topics
+{{ Menu | Fiji Cookbook Topics
 |
 * [[Cookbook|Introduction and Installation]]
 * [[Annotating Images]]
@@ -13,6 +13,4 @@
 * [[Stack-slice Manipulations]]
 * [[T-functions]]
 * [[Z-functions]]
-}}</includeonly><noinclude>
-This template is the floating menu for pages of the Fiji [[Cookbook]].
-</noinclude>
+}}
