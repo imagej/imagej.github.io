@@ -5,6 +5,8 @@ The [[ImageJ]] and related [[SciJava]] projects take advantage of several projec
 
 ImageJ uses the [[Git]] revision control system to manage its [[source code]].
 
+See the [[Git]] pages for more information, tutorials, etc.
+
 == Maven ==
 
 ImageJ uses [[Maven]] for its project infrastructure.
