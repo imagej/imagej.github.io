@@ -4,7 +4,7 @@
 | author                 = Verena Kaynig (verena.kaynig [at] inf.ethz.ch)
 | maintainer             = Verena Kaynig
 | filename               = included in [[TrakEM2]]
-| source                 = on [http://repo.or.cz/w/trakem2.git?a=tree;f=lenscorrection;hb=HEAD repo.or.cz]
+| source                 = {{GitHub | org=trakem2 | repo=TrakEM2 | path=TrakEM2_/src/main/java/lenscorrection}}
 | latest version         = 18/05/2010
 | status                 = active
 }}
