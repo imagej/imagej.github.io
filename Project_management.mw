@@ -15,7 +15,7 @@ Maven artifacts are published to the [http://maven.imagej.net/ ImageJ Maven repo
 
 Releases are [[Architecture#Versioning|versioned with Semantic Versioning]].
 
-For more information, see the [[Architecture#Maven_repositories Maven repositories technical details]].
+For more information, see the [[Architecture#Maven_repositories|Maven repository technical details]].
 
 == Issue tracking ==
 
