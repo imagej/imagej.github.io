@@ -278,7 +278,7 @@ The [http://jenkins.imagej.net/ ImageJ Jenkins server] tests builds and performs
 
 == Maven repositories ==
 
-SciJava projects use a [http://maven.imagej.net/ Maven binary repository] (using [http://www.sonatype.com/nexus Sonatype Nexus]) for managing SciJava libraries. Such a repository serves two main purposes:
+SciJava projects use the [http://maven.imagej.net/ ImageJ Maven repository] (using [http://www.sonatype.com/nexus Sonatype Nexus]) for managing SciJava libraries. Such a repository serves two main purposes:
 
 # '''Deployment.''' It provides a place to store our JAR artifacts, including snapshot versions, without the [http://maven.apache.org/guides/mini/guide-central-repository-upload.html red tape] of submitting to the central Maven repository.
 # '''Proxying.''' It acts as an on-demand mirror for the public Maven repositories, reducing load on the central Maven server and potentially reducing local build times.
