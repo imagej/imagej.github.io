@@ -278,7 +278,100 @@ The [http://jenkins.imagej.net/ ImageJ Jenkins server] tests builds and performs
 
 == Maven repositories ==
 
-TODO - [http://maven.imagej.net/ ImageJ Maven repository] vs. Maven Central
+SciJava projects use a [http://maven.imagej.net/ Maven binary repository] (using [http://www.sonatype.com/nexus Sonatype Nexus]) for managing SciJava libraries. Such a repository serves two main purposes:
+
+# '''Deployment.''' It provides a place to store our JAR artifacts, including snapshot versions, without the [http://maven.apache.org/guides/mini/guide-central-repository-upload.html red tape] of submitting to the central Maven repository.
+# '''Proxying.''' It acts as an on-demand mirror for the public Maven repositories, reducing load on the central Maven server and potentially reducing local build times.
+
+The first purpose is especially important for agile development across multiple components. For more details, see [http://books.sonatype.com/nexus-book/reference/repoman-sect-reasons.html Reasons to Use a Repository Manager].
+
+=== Deploying artifacts ===
+
+To deploy JARs, POMs and other artifacts to the ImageJ Maven repository, you will first need a user account. Assuming you have one, follow these steps:
+
+<ol>
+<li>Verify that you can log in to the [http://maven.imagej.net/ Nexus web UI] using your credentials.</li>
+<li>Install the following <code>settings.xml</code> and <code>settings-security.xml</code> into your Maven configuration directory (typically <code>~/.m2</code>):
+<p>
+<code>settings-security.xml</code>
+<source lang="xml">
+<settingsSecurity>
+  <master>[YOUR MASTER HASH]</master>
+</settingsSecurity>
+</source>
+</p>
+<p>
+<code>settings.xml</code>
+<source lang="xml">
+<settings>
+
+  <!--
+  Credentials for artifact deployment to ImageJ Nexus; see:
+  http://maven.apache.org/guides/mini/guide-encryption.html
+  -->
+  <servers>
+    <server>
+      <id>imagej.releases</id>
+      <username>[YOUR USERNAME]</username>
+      <password>[YOUR PASSWORD HASH]</password>
+    </server>
+    <server>
+      <id>imagej.snapshots</id>
+      <username>[YOUR USERNAME]</username>
+      <password>[YOUR PASSWORD HASH]</password>
+    </server>
+  </servers>
+
+  <!--
+  ImageJ Nexus central mirror configuration; see:
+  http://books.sonatype.com/nexus-book/reference/maven-sect-single-group.html
+  -->
+
+  <mirrors>
+    <mirror>
+      <!--This sends everything else to /public -->
+      <id>nexus</id>
+      <mirrorOf>*</mirrorOf>
+      <url>http://maven.imagej.net/content/groups/public</url>
+    </mirror>
+  </mirrors>
+  <profiles>
+    <profile>
+      <id>nexus</id>
+      <!--Enable snapshots for the built in central repo to direct -->
+      <!--all requests to nexus via the mirror -->
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>http://central</url>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+      </repositories>
+     <pluginRepositories>
+        <pluginRepository>
+          <id>central</id>
+          <url>http://central</url>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <!--make the profile active all the time -->
+    <activeProfile>nexus</activeProfile>
+  </activeProfiles>
+</settings>
+</source>
+</p>
+</li>
+<li>Replace instances of <code>[YOUR USERNAME]</code> in <code>settings.xml</code> with your Nexus username.</li>
+<li>Follow the [http://maven.apache.org/guides/mini/guide-encryption.html directions for encrypting your password] to generate a master hash and a password hash.</li>
+<li>Replace <code>[YOUR MASTER HASH]</code> in <code>settings-security.xml</code> with your master hash.</li>
+<li>Replace <code>[YOUR PASSWORD HASH]</code> in <code>settings.xml</code> with your password hash.</li>
+</ol>
+Once you have followed these steps, it should be possible to deploy snapshot JARs to the Nexus using the <code>mvn deploy</code> command. Note that if you deploy an umbrella project, it is normal to receive an eventual build failure when attempting to deploy the umbrella project itself—all component modules should deploy successfully before that, though.
 
 == ImageJ update sites ==
 
