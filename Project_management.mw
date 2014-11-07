@@ -11,11 +11,9 @@ See the [[Git]] pages for more information, tutorials, etc.
 
 ImageJ uses [[Maven]] for its project infrastructure.
 
-Maven artifacts are published to the [http://maven.imagej.net/ ImageJ Maven repository].
+Maven artifacts are published to the [Architecture#Maven_repositories|ImageJ Maven repository].
 
 Releases are [[Architecture#Versioning|versioned with Semantic Versioning]].
-
-For more information, see the [[Architecture#Maven_repositories|Maven repository technical details]].
 
 == Issue tracking ==
 
