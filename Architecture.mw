@@ -132,7 +132,7 @@ The <code>pom-scijava</code> parent includes a [http://howtodoinjava.com/2014/02
 
 Similarly, the <code>pom-imagej</code> parent includes a consolidated Bill of Materials for projects in the ImageJ, ImgLib2 and SCIFIO organizations, as well as for downstream projects which extend the <code>pom-imagej</code> parent. The rationale for this consolidation is that each of these three organizations has projects which depend on components within the other two organizations. So broadly speaking, these three organizations form an interdependent "triumvarate." However, there are no circular dependencies at the level of individual components. See [http://imagej.net/pipermail/imagej-devel/2014-October/002280.html this thread on the imagej-devel mailing list] for further details.
 
-Other SciJava projects may extend the Bill of Materials further by providing their own <code>dependencyManagement</code> section. For example, Fiji's <code>pom-fiji</code> parent [https://github.com/fiji/pom-fiji/blob/pom-fiji-5.0.2/pom.xml#L23-L956 does this].
+Other SciJava projects may extend the Bill of Materials further by providing their own <code>dependencyManagement</code> section. For example, Fiji's <code>pom-fiji</code> parent [https://github.com/fiji/pom-fiji/blob/pom-fiji-5.0.2/pom.xml#L21-L748 does this].
 
 == Core libraries ==
 
