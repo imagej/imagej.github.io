@@ -10,9 +10,7 @@
 | status                 = active
 | category               = [[:Category:Registration|Registration]], [[:Category:Segmentation|Segmentation]], [[:Category:Image annotation|Image annotation]], [[:Category:Plugins|Plugins]]
 | website                = [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2 news and documentation]
-}}
-
-TrakEM2 is an ImageJ plugin for morphological data mining, three-dimensional modeling and image stitching, registration, editing and annotation.
+}}TrakEM2 is an ImageJ plugin for morphological data mining, three-dimensional modeling and image stitching, registration, editing and annotation.
 
 See [http://www.ini.uzh.ch/~acardona/snapshots.html TrakEM2 snapshots] for an overview.
 
