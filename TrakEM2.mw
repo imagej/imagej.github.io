@@ -4,7 +4,7 @@
 | author                 = Albert Cardona
 | maintainer             = Albert Cardona ([mailto:acardona@ini.phys.ethz.ch acardona@ini.phys.ethz.ch])
 | filename               = TrakEM2_.jar (Included in Fiji) 
-| source                 = [http://repo.or.cz/w/trakem2.git trakem2 git repository]
+| source                 = {{GitHub | org=trakem2 | repo=TrakEM2}}
 | released               = May 2006
 | latest version         = 0.8n (April 12, 2011)
 | status                 = active
