@@ -3,7 +3,7 @@ __NOTOC__
 
 <fijirandomsnapshot/>
 
-[[About|Fiji]] is an image processing package. It can be described as a distribution of [[ImageJ]] (and [[ImageJ2]]) together with Java, Java3D and a lot of [[plugins]] organized into a [[Plugins Menu|coherent menu structure]]. Fiji compares to ImageJ as Ubuntu compares to Linux.
+[[About|Fiji]] is an image processing package. It can be described as a distribution of [[ImageJ]] (and [[ImageJ2]]) together with Java, Java3D and a lot of [[plugins]] organized into a [[Plugins Menu|coherent menu structure]]. Fiji compares to ImageJ as [[http://www.ubuntu.com/about/|Ubuntu]] compares to Linux.
 
 The main focus of Fiji is to assist research in life sciences.
 
