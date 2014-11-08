@@ -1027,6 +1027,8 @@ for imp in map(WindowManager.getImage, WindowManager.getIDList()):
 # and have the same dimensions.
 
 import os
+from ij.io import DirectoryChooser
+from ij import IJ, ImagePlus, VirtualStack
 
 def run():
   srcDir = DirectoryChooser("Choose!").getDirectory()
@@ -1052,7 +1054,6 @@ def run():
 
 run()
 </source>
-
 
 === Open the slices of a very large multi-image stack file one by one, and save each as a new image file ===
 <source lang="python">
