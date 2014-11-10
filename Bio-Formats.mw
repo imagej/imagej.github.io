@@ -1,7 +1,7 @@
 {{Infobox
 | software               = ImageJ
 | name                   = OME Bio-Formats plugins
-| logo                     = [[Image:Bio-formats.png|96px]]
+| logo                     = [[File:Bio-formats-icon.png|96px]]
 | author                 = [http://openmicroscopy.org/ Open Microscopy Environment]:<br/>- [http://loci.wisc.edu/ UW-Madison LOCI]<br/>- [http://www.glencoesoftware.com/ Glencoe Software]<br/>- [http://www.dundee.ac.uk/ University of Dundee]
 | maintainer             = Melissa Linkert<br>[[User:Rueden|Curtis Rueden]]
 | filename               = [http://downloads.openmicroscopy.org/bio-formats/ See Bio-Formats Downloads page]
