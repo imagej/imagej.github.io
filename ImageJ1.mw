@@ -1,4 +1,13 @@
-ImageJ 1.x, often shortened to ImageJ1 or IJ1, is a stable version of [[ImageJ]] which has been under continuous development since 1997. It has always been, and continues to be, a one-developer project of Wayne Rasband.
+{{Infobox
+| name                   = ImageJ1
+| software               = ImageJ
+| logo                   = [[File:imagej1-icon.png|96px]]
+| author                 = Wayne Rasband
+| maintainer             = Wayne Rasband<br>[[User:Schindelin|Johannes Schindelin]]<br>[[User:Rueden|Curtis Rueden]]
+| source                 = {{GitHub | org = imagej | repo = imagej1}}
+| status                 = stable, active
+| category               = 
+}}ImageJ 1.x, often shortened to ImageJ1 or IJ1, is a stable version of [[ImageJ]] which has been under continuous development since 1997. It has always been, and continues to be, a one-developer project of Wayne Rasband.
 
 ImageJ was originally developed in 1997 as a cross-platform version of [[NIH Image]]. ImageJ grew organically over time as Wayne Rasband continued to add features according to user requests. Now there are many hundreds, probably thousands, of plugins written by members of a diverse community.
 
