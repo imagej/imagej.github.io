@@ -1,0 +1,13 @@
+{{Infobox
+| name                   = ITK
+| software               = ITK
+| logo                     = [[File:Itk-logo.png|96px]]
+| author                 = [http://itk.org/ Insight Software Consortium]
+| maintainer             = [http://itk.org/ Insight Software Consortium]
+| source                 = {{GitHub | org=InsightSoftwareConsortium | repo=ITK}}
+| status                 = Active
+| website                = http://itk.org/
+}}
+The Insight Toolkit (ITK) is a cross-platform, [[open-source]] application development framework widely used for the development of image [[segmentation]] and image registration programs.
+
+[[Category:Related Software]]
