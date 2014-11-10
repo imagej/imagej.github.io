@@ -80,7 +80,7 @@
 | name                   = My plugin
 | software               = Software name
 | author                 = John Smith ([mailto:john@smith.org john@smith.org])
-| logo                   = [[Image:Fiji-logo-1.0-128x128.png|96px]]
+| logo                   = [[Image:fiji-icon.png|96px]]
 | screenshot             = A screenshot of typical usage
 | maintainer             = Bob Doe ([mailto:bob@doe.org bob@dod.org])
 | filename               = [http://example.org/some.class some.class] (xx,xxx Bytes)
@@ -97,7 +97,7 @@
 | name                   = My plugin
 | software               = Software name
 | author                 = John Smith ([mailto:john@smith.org john@smith.org])
-| logo                   = [[Image:Fiji-logo-1.0-128x128.png|96px]]
+| logo                   = [[Image:fiji-icon.png|96px]]
 | maintainer             = Bob Doe ([mailto:bob@doe.org bob@dod.org])
 | filename               = [http://example.org/some.class some.class] (xx,xxx Bytes)
 | source                 = [http://example.org/some.java some.java] (xx,xxx Bytes)
