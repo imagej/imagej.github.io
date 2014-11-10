@@ -1,7 +1,7 @@
 {{Infobox
 | name                   = SCIFIO
 | software               = ImageJ
-| logo                   = [[File:Scifio-logo-800.png|150px]]
+| logo                   = [[File:Scifio-logo.png|150px]]
 | author                 = [[User:Hinerm|Mark Hiner]], [[User:Rueden|Curtis Rueden]]
 | maintainer             = [[User:Hinerm|Mark Hiner]], [[User:Rueden|Curtis Rueden]]
 | source                 = {{GitHub | org = scifio | repo = scifio}}
