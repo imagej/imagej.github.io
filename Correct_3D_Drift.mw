@@ -12,9 +12,9 @@ This Fiji menu command is implemented by the script {{GitHub|repo=fiji|path=plug
 
 The script was originally written by [[User:Albertcardona|Albert Cardona]] and [http://monash.edu/science/about/schools/biological-sciences/staff/bryson-richardson/ Robert Bryson-Richardson] while attending the [http://cwp.embo.org/pc10-37/ Developmental Imaging EMBO course] organized by [http://www.igc.gulbenkian.pt/research/photo/556/ Gabriel] [http://www.igc.gulbenkian.pt/research/unit/51 G. Martins].
 
-'''Publication''':
+'''Reference''':
 
-Parslow A, Cardona A and Bryson-Richardson RJ (2014) Sample drift correction following 4D confocal time-lapse imaging. J Vis Exp. 2014 Apr 12;(86). doi: 10.3791/51086.
+[http://http://www.jove.com/video/51086/sample-drift-correction-following-4d-confocal-time-lapse-imaging Parslow A, Cardona A and Bryson-Richardson RJ (2014) Sample drift correction following 4D confocal time-lapse imaging. J Vis Exp. 2014 Apr 12;(86). doi: 10.3791/51086].
 
 [[Category:Plugins]]
 [[Category:Registration]]
