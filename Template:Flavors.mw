@@ -1,6 +1,6 @@
 <center>
 {| style="background: none; padding-bottom: 10px; padding-top: 30px"
-| style="vertical-align: top" | [[File:Imagej2-128.png|link=ImageJ2]]
+| style="vertical-align: top" | [[File:Imagej2-icon.png|link=ImageJ2]]
 | style="vertical-align: top; width: 233px; padding-bottom: 20px; padding-right: 20px" | <div style="color: #35A; font-size: 36px; font-weight: bold; padding-bottom: 15px">[[ImageJ2|<span style="color:#35A;">ImageJ2</span>]]</div> The current version of ImageJ focuses on analysis of scientific multidimensional image data. ImageJ2 includes ImageJ1 (see right) with a compatibility layer, so that old-style plugins and macros continue to work.
 
 <b>For users:</b> ImageJ2 is a supercharged version of ImageJ1 with new features.
