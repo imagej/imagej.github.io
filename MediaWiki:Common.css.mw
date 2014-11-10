@@ -864,5 +864,12 @@ div.user-block {
 sup, sub {
     line-height: 1em;
 }
+
+.nicetable td {
+    font-size: small;
+    padding: 3px 8px 3px 8px;
+    vertical-align: top;
+    white-space: nowrap;
+}
  
 /* </nowiki></pre> */
