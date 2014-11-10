@@ -41,7 +41,7 @@ Mirrors (OUT OF DATE):
 {{DownloadVersion
 | title = Fiji Life-Line version, 2014 June 2
 | description = As announced in [http://developer.imagej.net/2014/06/04/imagej-200-release-candidate this blog post], we updated ImageJ2 with some rather dramatic changes under the hood. The packages below reflect Fiji as of June 2nd, 2014 and are offered here just in case the continuous build (or an updated version) above broke a formerly working operation that is desperately needed, like, right now.
-| logo = Fiji-logo-1.0-128x128.png
+| logo = fiji-icon.png
 | win32 = http://fiji.sc/downloads/Life-Line/fiji-win32-20140602.zip
 | win64 = http://fiji.sc/downloads/Life-Line/fiji-win64-20140602.zip
 | osx = http://fiji.sc/downloads/Life-Line/fiji-macosx-20140602.dmg
@@ -52,7 +52,7 @@ Mirrors (OUT OF DATE):
 {{DownloadVersion
 | title = Fiji Life-Line version, 2013 July 15
 | description = As announced in [http://fiji-devel.54424.x6.nabble.com/Upcoming-exciting-changes-in-Fiji-td248.html this mail], we join the legions of construction workers digging up the streets during the second half of July 2013 (i.e. we also use the slow summer month to break things in order to make them better), incorporating extensive changes to reconcile Fiji with ImageJ2. The packages below reflect Fiji as of July 15th, 2013 and are offered here just in case the continuous build (or an updated version) above broke a formerly working operation that is desperately needed, like, right now.
-| logo = Fiji-logo-1.0-128x128.png
+| logo = fiji-icon.png
 | win32 = http://fiji.sc/downloads/Life-Line/fiji-win32-20130715.zip
 | win64 = http://fiji.sc/downloads/Life-Line/fiji-win64-20130715.zip
 | osx = http://fiji.sc/downloads/Life-Line/fiji-macosx-20130715.dmg
