@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | software               = OMERO
 | name                   = OMERO
-| logo                     = [[Image:Ome-logo.png|96px]]
+| logo                     = [[Image:Omero-logo.png|128px]]
 | author                 = [http://openmicroscopy.org/ Open Microscopy Environment]
 | maintainer             = [http://openmicroscopy.org/ Open Microscopy Environment]
 | source                 = {{GitHub|org=openmicroscopy|repo=openmicroscopy}}
