@@ -1,6 +1,7 @@
 {{Infobox Plugin
 | software               = CellProfiler
 | name                   = CellProfiler
+| logo                     = [[File:Cellprofiler-icon.png]]
 | author                 = [https://www.broadinstitute.org/ Broad Institute of MIT and Harvard]
 | maintainer             = [https://www.broadinstitute.org/ Broad Institute of MIT and Harvard]
 | source                 = {{GitHub|org=CellProfiler|repo=CellProfiler}}
