@@ -4,7 +4,7 @@ The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosyst
 
 That said, every project needs leaders: the ones who participate in ''governance'' of the project, [https://en.wikipedia.org/wiki/Software_maintenance maintaining] the software and making key decisions.
 
-= Project roles =
+== Project roles ==
 
 Because [[open source]] software is highly collaborative, it is extremely important to understand the difference between various roles on the project, to avoid misconceptions about '''authority''' (who makes decisions) and '''responsibility''' (who must do the work) concerning each project.
 
@@ -16,7 +16,7 @@ The most common roles are:
 * '''Developers''' are people who work on the project significantly or often. Typically they have direct push access to the source code. In some cases they make day to day decisions, depending on their experience and comfort level with the project.
 * '''Contributors''' are people who help with the project either currently or in the past. They may participate occasionally or sporadically, and are typically not involved in project decision making.
 
-= SciJava projects =
+== SciJava projects ==
 
 Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 
@@ -113,7 +113,7 @@ Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 <br><sup>2</sup> Rueden maintains the Bio-Formats [[update site]] for ImageJ, but is not otherwise a Bio-Formats maintainer.
 <br><sup>3</sup> For the purposes of this table, "KNIME" means the [[KNIME|KNIME Image Processing]] extensions, not the KNIME project as a whole.
 
-= Further reading =
+== Further reading ==
 
 * [http://oss-watch.ac.uk/resources/governancemodels OSS Watch's article on Governance Models]
 * Eric S. Raymond's [http://catb.org/~esr/writings/homesteading/homesteading/ Homesteading the Noosphere]
