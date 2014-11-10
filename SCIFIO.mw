@@ -1,3 +1,13 @@
+{{Infobox
+| name                   = SCIFIO
+| software               = ImageJ
+| logo                   = [[File:Scifio-logo-800.png|150px]]
+| author                 = [[User:Hinerm|Mark Hiner]], [[User:Rueden|Curtis Rueden]]
+| maintainer             = [[User:Hinerm|Mark Hiner]], [[User:Rueden|Curtis Rueden]]
+| source                 = {{GitHub | org = scifio | repo = scifio}}
+| status                 = active
+| category               = 
+}}
 [[ImageJ2]] uses [http://scif.io/ SCIFIO] (SCientific Image Format Input and Output) by default for most image input tasks. You can change this behavior at any time by running ''Edit > Options > ImageJ2'' and modifying the ''Use SCIFIO when opening files'' option.
 
 == Benefits of using SCIFIO ==
