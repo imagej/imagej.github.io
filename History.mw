@@ -70,6 +70,7 @@ PlotData =
 # Related software
 
   barset:related
+  at:1999 text:"[[ITK]]"
   at:2002 text:"[[VisBio]]" # 27-Aug-2002
   at:2004 text:"[[KNIME]]" # Jan-2004
   at:2006 text:"[[Bio-Formats]]" # 10-Jan-2006
