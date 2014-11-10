@@ -11,3 +11,6 @@ This Fiji menu command is implemented by the script {{GitHub|repo=fiji|path=plug
 5. After some processing (there are progress bars), the resulting, registered volumes are opened. If a virtualstack was selected the registered volume will already be saved in the chosen target folder.
 
 The script was originally written by [[User:Albertcardona|Albert Cardona]] and [http://monash.edu/science/about/schools/biological-sciences/staff/bryson-richardson/ Robert Bryson-Richardson] while attending the [http://cwp.embo.org/pc10-37/ Developmental Imaging EMBO course] organized by [http://www.igc.gulbenkian.pt/research/photo/556/ Gabriel] [http://www.igc.gulbenkian.pt/research/unit/51 G. Martins].
+
+[[Category:Plugins]]
+[[Category:Registration]]
