@@ -1,3 +1,13 @@
+{{Infobox
+| name                   = SciJava
+| software               = SciJava
+| logo                     = [[File:Scijava-logo.png|128px]]
+| author                 = [http://scijava.org/ SciJava consortium]
+| maintainer             = [[User:Rueden|Curtis Rueden]]<br>[[User:Hinerm|Mark Hiner]]
+| source                 = [https://github.com/scijava on GitHub]
+| status                 = Active
+| website                = http://scijava.org/
+}}
 SciJava is a collaboration of projects providing software for scientific computing&mdash;an effort to cooperate and reuse code when feasible.
 
 The following components are part of the '''SciJava software stack''':
