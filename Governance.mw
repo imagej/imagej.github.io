@@ -21,6 +21,7 @@ The most common roles are:
 Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 
 {| class="wikitable nicetable" style="width: 100%"
+| '''Logo'''
 | '''Project'''
 | '''Founders'''
 | '''Leads'''
@@ -28,6 +29,7 @@ Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 | '''Developers'''
 | '''Contributors'''
 |-
+| [[File:scijava-icon.png|48px]]
 | '''[[SciJava]]'''
 | Josh Moore<br>[[User:Rueden|Curtis Rueden]]
 | [[User:Rueden|Curtis Rueden]]
@@ -35,6 +37,7 @@ Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 | See the [https://github.com/orgs/scijava/people list on GitHub]
 | See [[Contributors]]
 |-
+| [[File:imglib2-icon.png|48px]]
 | '''[[ImgLib2]]'''
 | [[User:Saalfeld|Stephan Saalfeld]]<br>[[User:StephanP|Stephan Preibisch]]
 | [[User:Pietzsch|Tobias Pietzsch]]<sup>1</sup><br>[[User:StephanP|Stephan Preibisch]]<br>[[User:Saalfeld|Stephan Saalfeld]]
@@ -42,6 +45,7 @@ Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 | See the [https://github.com/orgs/imglib/people list on GitHub]
 | See [[Contributors]]
 |-
+| [[File:imagej1-icon.png|48px]]
 | '''[[ImageJ1]]'''
 | Wayne Rasband
 | Wayne Rasband
@@ -49,6 +53,7 @@ Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 | Wayne Rasband
 | See [http://imagej.net/notes.html release notes]
 |-
+| [[File:imagej2-icon.png|48px]]
 | '''[[ImageJ2]]'''
 | [[User:Rueden|Curtis Rueden]]<br>Kevin Eliceiri
 | [[User:Rueden|Curtis Rueden]]
@@ -56,6 +61,7 @@ Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 | See the [https://github.com/orgs/imagej/people list on GitHub]
 | See [[Contributors]]
 |-
+| [[File:scifio-icon.png|48px]]
 | '''[[SCIFIO]]'''
 | [[User:Rueden|Curtis Rueden]]<br>Kevin Eliceiri
 | [[User:Hinerm|Mark Hiner]]<br>[[User:Rueden|Curtis Rueden]]
@@ -63,6 +69,7 @@ Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 | See the [https://github.com/orgs/scijava/people list on GitHub]
 | See [[Contributors]]
 |-
+| [[File:fiji-icon.png|48px]]
 | '''[[Fiji]]'''
 | [[User:Schindelin|Johannes Schindelin]]<br>[[User:Albertcardona|Albert Cardona]]
 | [[User:Schindelin|Johannes Schindelin]]
@@ -70,6 +77,7 @@ Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 | See the [https://github.com/orgs/fiji/people list on GitHub]
 | See [[Contributors]]
 |-
+| style="height: 48px" |
 | '''[[TrakEM2]]'''
 | [[User:Albertcardona|Albert Cardona]]
 | [[User:Albertcardona|Albert Cardona]]
@@ -77,6 +85,7 @@ Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 | See the [https://github.com/orgs/trakem2/people list on GitHub]
 | See [[Contributors]]
 |-
+| [[File:bio-formats-icon.png|48px]]
 | '''[[Bio-Formats]]'''
 | [[User:Rueden|Curtis Rueden]]<br>Kevin Eliceiri
 | [[User:Linkert|Melissa Linkert]]
@@ -84,6 +93,7 @@ Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 | See the [https://github.com/openmicroscopy/bioformats/graphs/contributors list on GitHub]
 | See [http://www.openmicroscopy.org/site/about/ome-contributors OME Contributors]
 |-
+| [[File:knime-icon.png|48px]]
 | '''[[KNIME]]'''<sup>3</sup>
 | [[User:Dietz|Christian Dietz]]
 | [[User:Dietz|Christian Dietz]]
@@ -91,6 +101,7 @@ Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 | See the [https://github.com/orgs/knime-ip/people list on GitHub]
 | See [[Contributors]]
 |-
+| [[File:cellprofiler-icon.png|48px]]
 | '''[[CellProfiler]]'''
 | [[User:Leek|Lee Kamentsky]]<br>Anne Carpenter
 | [[User:Leek|Lee Kamentsky]]
