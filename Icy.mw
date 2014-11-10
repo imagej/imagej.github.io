@@ -1,6 +1,7 @@
 {{Infobox
 | name                   = Icy
 | software               = Icy
+| logo                     = [[File:Icy-icon.png|96px]]
 | author                 = [http://www.bioimageanalysis.org/ QuIA] at [http://www.pasteur.fr/en Institut Pasteur]
 | maintainer             = [http://www.bioimageanalysis.org/ QuIA] at [http://www.pasteur.fr/en Institut Pasteur]
 | source                 = [https://github.com/Icy-imaging on GitHub]
