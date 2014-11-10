@@ -12,7 +12,7 @@ ImageJ grew organically over time as Wayne Rasband continuously added features a
 | style="vertical-align: top" | [[File:Imagej1-icon.png|link=ImageJ1]]
 |}
 {| style="background: none; width: 500px; border-top: 1px solid black; padding-bottom: 30px"
-| style="vertical-align: top; padding-right: 10px; padding-top: 10px" | [[File:Fiji-logo-1.0-128x128.png|link=Fiji]]
+| style="vertical-align: top; padding-right: 10px; padding-top: 10px" | [[File:fiji-icon.png|link=Fiji]]
 | style="vertical-align: top; padding-top: 30px" | <div style="color: #35A; font-size: 36px; font-weight: bold; padding-bottom: 15px">[[Fiji|<span style="color:#35A;">Fiji</span>]]</div>Fiji is a distribution of ImageJ for the life sciences. It provides a large number of additional plugins to facilitate analysis of life sciences images, particularly microscopy images.
 
 The Fiji distribution is built on the ImageJ2 platform.
