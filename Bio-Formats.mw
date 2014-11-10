@@ -131,10 +131,10 @@ To enable the Bio-Formats update site:
 # To verify the upgrade, choose '''Bio-Formats Plugins...''' from '''About Plugins''' beneath the '''Help''' menu: [[File:Bf-about-plugins.png|700px|center]]
 
 == Source code ==
+The Bio-Formats source code is {{GitHub | org = openmicroscopy | repo = bioformats}}.
 
-The Bio-Formats source code is at:
-
-    https://github.com/openmicroscopy/bioformats/tree/dev_5_0
+== Reporting bugs ==
+To report a bug in Bio-Formats, please see [http://www.openmicroscopy.org/site/support/bio-formats/about/bug-reporting.html reporting a bug in Bio-Formats].
 
 == Publication ==
 * Linkert, M., Rueden, C. T., Allan, C., Burel, J. M., Moore, W., Patterson, A., ... & Swedlow, J. R. (2010). [http://jcb.rupress.org/content/189/5/777.short Metadata matters: access to image data in the real world]. The Journal of cell biology, 189(5), 777-782.
