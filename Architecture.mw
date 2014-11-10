@@ -114,7 +114,7 @@ All projects in these organizations use [[Maven]] for [[Project Management|proje
 | [http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji sc.fiji]
 | {{GitHub|org=fiji|repo=pom-fiji|label=pom-fiji}}
 |-
-| style="height: 60px" |
+| style="height: 48px" |
 | [[TrakEM2]]
 | [https://github.com/trakem2 trakem2]
 | [http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji sc.fiji]
