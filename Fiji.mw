@@ -25,11 +25,11 @@ The main focus of Fiji is to assist research in life sciences.
 The Fiji project is driven by a strong desire to improve the tools available for life sciences to process and analyze data. To this end, Fiji collaborates closely with the following projects:
 <center>
 {|
-| style="padding-left: 5px; padding-right: 5px" | [[File:ij2-logo.jpg|55px]]
-| style="padding-left: 5px; padding-right: 5px" | [[File:bio-formats-icon.png|75px]]
-| style="padding-left: 5px; padding-right: 5px" | [[File:ome-logo.png|75px]]
-| style="padding-left: 5px; padding-right: 5px" | [[File:mm-icon.jpg|75px]]
-| style="padding-left: 5px; padding-right: 5px" | [[File:knime-logo.jpg|75px]]
+| style="padding-left: 5px; padding-right: 5px" | [[File:imagej2-icon.png|64px]]
+| style="padding-left: 5px; padding-right: 5px" | [[File:bio-formats-icon.png|64px]]
+| style="padding-left: 5px; padding-right: 5px" | [[File:ome-icon.png|64px]]
+| style="padding-left: 5px; padding-right: 5px" | [[File:mm-icon.jpg|64px]]
+| style="padding-left: 5px; padding-right: 5px" | [[File:knime-icon.png|64px]]
 |-
 ![[ImageJ2]]
 ![[Bio-Formats]]
@@ -39,6 +39,7 @@ The Fiji project is driven by a strong desire to improve the tools available for
 |}
 </center>
 </div>
+
 == [[News]] ==
 <listnews/>
 
