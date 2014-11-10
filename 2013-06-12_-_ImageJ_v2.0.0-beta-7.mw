@@ -12,7 +12,7 @@ Development of this release of ImageJ focused on better support for N-dimensiona
 
 === Unified Open &amp; Save commands ===
 
-[[Image:Scifio-logo-800.png|250px|right|thumb|SCIFIO: an extensible image I/O library]]
+[[Image:Scifio-logo.png|250px|right|thumb|SCIFIO: an extensible image I/O library]]
 
 One common source of confusion in ImageJ 1.x is the plethora of ways that exist to import data. Using the "Open..." command in the File menu can result in different behavior than calling a specific command such as the [[Bio-Formats|Bio-Formats Importer]]. One of ImageJ2's major goals has been to [http://trac.imagej.net/ticket/9 improve and unify the behavior of I/O]. With ImageJ2, any image opened via the "Open..." command is now handled the same: an appropriate ImageJ I/O plugin is automatically selected to handle the file(s). Anyone can write a new I/O plugin to extend ImageJ2's file handling capabilities without needing to modify the ImageJ2 core. Similarly, the File &gt; Save command invokes the appropriate I/O plugin to save data in the appropriate and/or chosen format, and ImageJ2 can be easily extended with additional export routines by writing a new I/O plugin.
 
