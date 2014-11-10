@@ -867,7 +867,7 @@ sup, sub {
 
 .nicetable td {
     font-size: small;
-    padding: 3px 8px 3px 8px;
+    padding: 3px 8px 3px 8px !important;
     vertical-align: top;
     white-space: nowrap;
 }
