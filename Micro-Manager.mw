@@ -1,6 +1,7 @@
 {{Infobox Plugin
 | name                   = μManager
 | software               = μManager
+| logo                     = [[File:Mm-icon.jpg|96px]]
 | author                 = [http://valelab.ucsf.edu/ Vale Lab], [http://www.ucsf.edu/ UCSF]
 | maintainer             = [http://valelab.ucsf.edu/ Vale Lab], [http://www.ucsf.edu/ UCSF]
 | source                 = [https://valelab.ucsf.edu/svn/micromanager2/trunk/ in SVN]
