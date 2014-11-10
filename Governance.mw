@@ -1,0 +1,109 @@
+{{Warning | This page is a '''DRAFT VERSION''' so the information here should be treated with caution.}}{{Notice | This page describes the ''social'' structure of [[SciJava]] projects.<br>For information on their ''technical'' structure, see the [[Architecture]] page.}}
+{{Development}}
+The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosystem, are governed as [[Open Source]] software projects.  Everybody is welcome to [[contribute]] with [[plugins]], patches, [[Bugs|bug reports]], [[tutorials]], [[documentation]], and artwork.
+
+That said, every project needs leaders: the ones who participate in ''governance'' of the project, [https://en.wikipedia.org/wiki/Software_maintenance maintaining] the software and making key decisions.
+
+= Project roles =
+
+Because [[open source]] software is highly collaborative, it is extremely important to understand the difference between various roles on the project, to avoid misconceptions about '''authority''' (who makes decisions) and '''responsibility''' (who must do the work) concerning each project.
+
+The most common roles are:
+
+* '''Founders''' are the people who originally launched the project. 
+* '''Leads''' are the people responsible for making final decisions. In the [[open source]] world these people are often referred to as [http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html benevolent dictators]. Changes with a serious impact on the community are typically [[Mailing Lists|discussed on open channels]] first.
+* '''Maintainers''' are the people who keep the project functional, fix bugs and make releases. They often make day to day decisions, and are typically involved in discussion with the project lead(s) regarding major decisions, although the lead has final decision-making authority.
+* '''Developers''' are people who work on the project significantly or often. Typically they have direct push access to the source code. In some cases they make day to day decisions, depending on their experience and comfort level with the project.
+* '''Contributors''' are people help with the project either currently or in the past. They may participate occasionally or sporadically, and are typically not involved in project decision making.
+
+= SciJava projects =
+
+Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
+
+{| class="wikitable nicetable" style="width: 100%"
+| '''Project'''
+| '''Founders'''
+| '''Leads'''
+| '''Maintainers'''
+| '''Developers'''
+| '''Contributors'''
+|-
+| '''[[SciJava]]'''
+| Josh Moore<br>[[User:Rueden|Curtis Rueden]]
+| [[User:Rueden|Curtis Rueden]]
+| [[User:Rueden|Curtis Rueden]]<br>[[User:Schindelin|Johannes Schindelin]]
+| See the [https://github.com/orgs/scijava/people list on GitHub]
+| See [[Contributors]]
+|-
+| '''[[ImgLib2]]'''
+| [[User:Saalfeld|Stephan Saalfeld]]<br>[[User:StephanP|Stephan Preibisch]]
+| [[User:Pietzsch|Tobias Pietzsch]]<sup>1</sup><br>[[User:StephanP|Stephan Preibisch]]<br>[[User:Saalfeld|Stephan Saalfeld]]
+| [[User:Pietzsch|Tobias Pietzsch]]<br>[[User:Rueden|Curtis Rueden]]<br>[[User:Hinerm|Mark Hiner]]<br>[[User:StephanP|Stephan Preibisch]]<br>[[User:Saalfeld|Stephan Saalfeld]]
+| See the [https://github.com/orgs/imglib/people list on GitHub]
+| See [[Contributors]]
+|-
+| '''[[ImageJ1]]'''
+| Wayne Rasband
+| Wayne Rasband
+| Wayne Rasband<br>[[User:Schindelin|Johannes Schindelin]]<br>[[User:Rueden|Curtis Rueden]]
+| Wayne Rasband
+| See [http://imagej.net/notes.html release notes]
+|-
+| '''[[ImageJ2]]'''
+| [[User:Rueden|Curtis Rueden]]<br>Kevin Eliceiri
+| [[User:Rueden|Curtis Rueden]]
+| [[User:Rueden|Curtis Rueden]]<br>[[User:Hinerm|Mark Hiner]]
+| See the [https://github.com/orgs/imagej/people list on GitHub]
+| See [[Contributors]]
+|-
+| '''[[SCIFIO]]'''
+| [[User:Rueden|Curtis Rueden]]<br>Kevin Eliceiri
+| [[User:Hinerm|Mark Hiner]]<br>[[User:Rueden|Curtis Rueden]]
+| [[User:Hinerm|Mark Hiner]]<br>[[User:Rueden|Curtis Rueden]]
+| See the [https://github.com/orgs/scijava/people list on GitHub]
+| See [[Contributors]]
+|-
+| '''[[Fiji]]'''
+| [[User:Schindelin|Johannes Schindelin]]<br>[[User:Albertcardona|Albert Cardona]]
+| [[User:Schindelin|Johannes Schindelin]]
+| [[User:Schindelin|Johannes Schindelin]]<br>[[User:Rueden|Curtis Rueden]]<br>[[User:Hinerm|Mark Hiner]]
+| See the [https://github.com/orgs/fiji/people list on GitHub]
+| See [[Contributors]]
+|-
+| '''[[TrakEM2]]'''
+| [[User:Albertcardona|Albert Cardona]]
+| [[User:Albertcardona|Albert Cardona]]
+| [[User:Albertcardona|Albert Cardona]]<br>[[User:Saalfeld|Stephan Saalfeld]]<br>[[User:Rueden|Curtis Rueden]]
+| See the [https://github.com/orgs/trakem2/people list on GitHub]
+| See [[Contributors]]
+|-
+| '''[[Bio-Formats]]'''
+| [[User:Rueden|Curtis Rueden]]<br>Kevin Eliceiri
+| [[User:Linkert|Melissa Linkert]]
+| [[User:Linkert|Melissa Linkert]]<br>[[User:Rueden|Curtis Rueden]]<sup>2</sup>
+| See the [https://github.com/openmicroscopy/bioformats/graphs/contributors list on GitHub]
+| See [http://www.openmicroscopy.org/site/about/ome-contributors OME Contributors]
+|-
+| '''[[KNIME]]'''<sup>3</sup>
+| [[User:Dietz|Christian Dietz]]
+| [[User:Dietz|Christian Dietz]]
+| [[User:Dietz|Christian Dietz]]
+| See the [https://github.com/orgs/knime-ip/people list on GitHub]
+| See [[Contributors]]
+|-
+| '''[[CellProfiler]]'''
+| [[User:Leek|Lee Kamentsky]]<br>Anne Carpenter
+| [[User:Leek|Lee Kamentsky]]
+| [[User:Leek|Lee Kamentsky]]
+| See the [https://github.com/orgs/CellProfiler/people list on GitHub]
+| See [[Contributors]]
+|}
+<sup>1</sup> Pietzsch leads on day to day issues. Pietzsch, Preibisch and Saalfeld vote on primary decisions, with Pietzsch's vote breaking ties.
+<br><sup>2</sup> Rueden maintains the Bio-Formats [[update site]] for ImageJ, but is not otherwise a Bio-Formats maintainer.
+<br><sup>3</sup> For the purposes of this table, "KNIME" means the [[KNIME|KNIME Image Processing]] extensions, not the KNIME project as a whole.
+
+= Further reading =
+
+* [http://oss-watch.ac.uk/resources/governancemodels OSS Watch's article on Governance Models]
+* Eric S. Raymond's [http://catb.org/~esr/writings/homesteading/homesteading/ Homesteading the Noosphere]
+* Eric S. Raymond's [http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/ The Cathedral and the Bazaar]
