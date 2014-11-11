@@ -11,8 +11,8 @@ Because [[open source]] software is highly collaborative, it is extremely import
 The most common roles are:
 
 * '''Founders''' are the people who originally launched the project. 
-* '''Leads''' are the people responsible for making final decisions. In the [[open source]] world these people are often referred to as [http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html benevolent dictators]. Changes with a serious impact on the community are typically [[Mailing Lists|discussed on open channels]] first.
-* '''Maintainers''' are the people who keep the project functional, fix bugs and make releases. They often make day to day decisions, and are typically involved in discussion with the project lead(s) regarding major decisions, although the lead has final decision-making authority.
+* '''Leads''' are responsible for making final decisions. In the [[open source]] world these people are often referred to as [http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html benevolent dictators]. Changes with a serious impact on the community are typically [[Mailing Lists|discussed on open channels]] first.
+* '''Maintainers''' keep the project functional, fix bugs and make releases. They often make day to day decisions, and are typically involved in discussion with the project lead(s) regarding major decisions, although the lead has final decision-making authority.
 * '''Developers''' are people who work on the project significantly or often. Typically they have direct push access to the source code. In some cases they make day to day decisions, depending on their experience and comfort level with the project.
 * '''Contributors''' are people who help with the project either currently or in the past. They may participate occasionally or sporadically, and are typically not involved in project decision making.
 
