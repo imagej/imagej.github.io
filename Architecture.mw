@@ -295,6 +295,12 @@ The following sections describe how each [[project management]] resource facilit
 
 The [http://jenkins.imagej.net/ ImageJ Jenkins server] tests builds and performs releases. It deploys <code>SNAPSHOT</code> builds to the [http://maven.imagej.net/ ImageJ Maven repository] in response to pushes to each code repository's <code>master</code> branch. So any downstream projects depending on a version of <code>LATEST</code> for a given component will match the last successful Jenkins build—i.e., the latest code on <code>master</code>.
 
+Because every build also runs the associated unit tests, Jenkins is instrumental in early detection of new bugs introduced to the codebase.
+
+Jenkins also performs releases, including [automatically deploying ImageJ 1.x](http://jenkins.imagej.net/job/Synchronize-and-deploy-IJ1/) and [building installers for ImageJ 1.x](http://jenkins.imagej.net/job/ImageJ1-releases/).
+
+Jenkins performs many other services too, such as keeping Git repository mirrors in sync, building javadocs and updating other web resources.
+
 == Maven repositories ==
 
 SciJava projects use the [http://maven.imagej.net/ ImageJ Maven repository] (using [http://www.sonatype.com/nexus Sonatype Nexus]) for managing SciJava libraries. Such a repository serves two main purposes:
