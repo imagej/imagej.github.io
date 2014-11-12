@@ -202,6 +202,7 @@ It gets more subtle when making heavy use of software libraries (sometimes calle
 
 Some cardinal reasons to strive for reproducible builds are:
 
+* Reproducible builds are essential for the scientific method (see sidebar right).
 * It becomes possible to use a [https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow feature branch workflow] development style where the <code>master</code> branch is always release ready—or even a [https://en.wikipedia.org/wiki/Continuous_delivery continuous delivery] approach.
 * Debugging with [http://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search git-bisect] becomes feasible.
 * As a consequence, it avoids [https://en.wikipedia.org/wiki/Technical_debt technical debt] in favor of a robust development style.
