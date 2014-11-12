@@ -80,3 +80,5 @@ Java programs run without trouble and without recompiling on the major platforms
 So the true reason why we use Java is probably: it makes [[ImageJ]] accessible.
 
 See also [http://loci.wisc.edu/faq/isnt-java-too-slow Isn't Java too slow?] and [http://loci.wisc.edu/faq/why-java Why is your software written in Java?] from the LOCI FAQ.
+
+[[Category:Development]]
