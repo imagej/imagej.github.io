@@ -8,7 +8,7 @@ The launcher supports the following flavors of ImageJ:
 * [[ImageJ2]]
 * [[Fiji]]
 
-The launcher is a native executable whose purpose is to start up a Java Virtual Machine and run ImageJ 1.x, Fiji or ImageJ2 in it. It is used in the [http://jenkins.imagej.net/job/ImageJ1-releases/ ImageJ 1.x releases], the [[Fiji]] distribution as well as in [[ImageJ2]]. It is built by ImageJ2's [http://jenkins.imagej.net/job/ImageJ-launcher/ Jenkins server] (i.e. the server that builds and tests all ImageJ and Fiji source code continuously).
+The launcher is a native executable whose purpose is to start up a Java Virtual Machine and run ImageJ 1.x, Fiji or ImageJ2 in it. It is used in the [http://jenkins.imagej.net/job/ImageJ1-releases/ ImageJ 1.x releases], the [[Fiji]] distribution as well as in [[ImageJ2]]. It is [http://jenkins.imagej.net/job/ImageJ-launcher/ built by the ImageJ Jenkins server] (i.e. the server that builds and tests all ImageJ and Fiji source code continuously).
 
 == Source ==
 
