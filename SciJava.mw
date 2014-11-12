@@ -20,6 +20,7 @@ The following components are part of the '''SciJava software stack''':
 The following projects are part of the '''SciJava pledge''' to work together, reuse code and synergize wherever possible:
 * [[CellProfiler]]
 * [[KNIME]]
-* [[OME]]
+* [[Bio-Formats]]
+* [[OMERO]]
 
 See the [[Architecture]] and [[Governance]] pages, as well as the [http://scijava.org/ SciJava web site], for further details.
