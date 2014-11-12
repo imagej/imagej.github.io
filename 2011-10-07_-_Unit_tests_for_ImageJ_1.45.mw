@@ -8,7 +8,7 @@ We then ran the tests against all the 1.45 development versions. The results are
 
 Over time, a small but increasing number of tests are failing, which indicates changing behavior creeping into the code. Of course, sometimes changing behavior is good, such as when bugs are fixed. But sometimes these sorts of changes indicate regression bugs being introduced. The only way to know for sure is to examine each failure on an individual basis. For each one, either the test needs to be updated (in the case of a bugfix causing the test to fail when testing for the previous buggy behavior), or the code needs to be fixed to preserve the prior behavior (in the case of a regression bug having been introduced).
 
-Once all the tests pass, [http://jenkins.imagej.net/ Jenkins] can run them automatically whenever a new version of ImageJ 1.x is released, and report any failures via email, so that we become aware as early as possible when regression bugs have been introduced.
+Once all the tests pass, [[Jenkins]] can run them automatically whenever a new version of ImageJ 1.x is released, and report any failures via email, so that we become aware as early as possible when regression bugs have been introduced.
 
 {| class="wikitable"
 |-
