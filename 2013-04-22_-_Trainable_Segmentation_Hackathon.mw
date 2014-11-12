@@ -2,7 +2,7 @@ For three days last week, [http://loci.wisc.edu/ LOCI] in Madison hosted Dr Igna
 
 During this hackathon, Ignacio held a well-received workshop introducing the underlying technique and teaching how to use it in advanced ways by using one of Fiji's scripting languages.
 
-As a lot of scientists rely on the Trainable Segmentation (I was impressed that it is apparently used already in dozens of published papers, even before the Trainable Segmentation paper is out, point in favor of making your research available openly, to as many people as possible!), we added a few unit tests. These tests are implemented as Java code that generates test images and compares the results to known-good ones, and they get executed by the [http://jenkins.imagej.net/ ImageJ Jenkins server] whenever Fiji's source code changes. That way, we can be reasonably sure that the plugin still does what it is expected to, even if we make a ton of changes.
+As a lot of scientists rely on the Trainable Segmentation (I was impressed that it is apparently used already in dozens of published papers, even before the Trainable Segmentation paper is out, point in favor of making your research available openly, to as many people as possible!), we added a few unit tests. These tests are implemented as Java code that generates test images and compares the results to known-good ones, and they get executed by the [[Jenkins|ImageJ Jenkins server]] whenever Fiji's source code changes. That way, we can be reasonably sure that the plugin still does what it is expected to, even if we make a ton of changes.
 
 We also made progress on a completely new idea: making the Trainable Segmentation extensible. What does this mean, exactly?
 
