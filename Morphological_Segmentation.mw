@@ -123,7 +123,7 @@ call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Overlaid d
 
 == Installation ==
 
-Morphological Segmentation is part of the IJPB-plugins library. To install it, you just need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | add]] the IJPB-plugins update site:
+Morphological Segmentation is part of the MorphoLibJ library. To install it, you just need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | add]] the IJPB-plugins update site:
 
 1) Select ''Help > Update...'' from the Fiji menu to start the updater.
 
