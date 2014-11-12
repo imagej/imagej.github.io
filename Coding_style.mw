@@ -85,3 +85,5 @@ We prefer use of private fields and methods over protected ones, where possible.
 More observations on this issue can be found at [http://stackoverflow.com/a/3631338 this post on StackOverflow].
  
 All of that said, there are times when use of the <code>protected</code> modifier is appropriate, so you will certainly see it in a few places in the ImageJ codebase. In particular, we use <code>protected</code> for event handler methods, both to avoid unused method warnings in Eclipse, as well as to make it easier for subclasses to override the event handling behavior.
+
+[[Category:Development]]
