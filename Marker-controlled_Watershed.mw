@@ -31,7 +31,7 @@ Output:
 
 == Installation ==
 
-The Marker-controlled Watershed plugin is part of the IJPB-plugins library. To install it, you just need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | add]] the IJPB-plugins update site:
+The Marker-controlled Watershed plugin is part of the MorphoLibJ library. To install it, you just need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | add]] the IJPB-plugins update site:
 
 1) Select ''Help > Update...'' from the Fiji menu to start the updater.
 
@@ -43,7 +43,7 @@ The Marker-controlled Watershed plugin is part of the IJPB-plugins library. To i
 
 You should now find the plugin under the sub-menu ''Plugins > Segmentation''.
 
-'''Note''': Marker-controlled Watershed is only one of the plugins included in the IJPB-plugins suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
+'''Note''': Marker-controlled Watershed is only one of the plugins included in the MorphoLibJ suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
 == References ==
 # Fernand Meyer and Serge Beucher. "Morphological segmentation." Journal of visual communication and image representation 1.1 (1990): 21-46.
