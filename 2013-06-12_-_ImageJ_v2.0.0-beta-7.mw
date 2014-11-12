@@ -94,7 +94,7 @@ The following is a more detailed list of changes for this release:
 * Drag and drop support has been improved, with drag and drop operations now extensible as a new type of ImageJ plugin. [[https://github.com/imagej/imagej/commit/9f20b3ec6c297a356ec5da44d5ce85ff04327290 drag-and-drop]]
 * The API for histograms was unified to a single package in ImgLib2. [[https://github.com/imagej/imglib/commit/79bbc2008eeec6f221c16b6f84782daca2b3f496 histogram-stuff]]
 * A new {{GitHub|org=imagej|repo=imagej|tag=imagej-2.0.0-beta-7|path=core/data/src/main/java/imagej/data/table/TableLoader.java|label=TableLoader}} loads formatted textual data into {{GitHub|org=imagej|repo=imagej|tag=imagej-2.0.0-beta-7|path=core/data/src/main/java/imagej/data/table/ResultsTable.java|label=ResultsTable}}s.
-* The unit tests are now [http://jenkins.imagej.net/job/ImageJ-windows/ run by Jenkins on a dedicated Windows computer], too, to ensure compatibility with that operating system.
+* The unit tests are now [http://jenkins.imagej.net/job/ImageJ-windows/ run by [[Jenkins]] on a dedicated Windows computer], too, to ensure compatibility with that operating system.
 * There are many new services, including:
 ** {{GitHub|org=imagej|repo=imagej|tag=imagej-2.0.0-beta-7|path=core/data/src/main/java/imagej/data/lut/LUTService.java|label=LUTService}}: loads lookup tables from Files, URLs, etc.
 ** {{GitHub|org=imagej|repo=imagej|tag=imagej-2.0.0-beta-7|path=core/data/src/main/java/imagej/data/operator/CalculatorService.java|label=CalculatorService}}: discovers CalculatorOp plugins making ImageCalculator extensible.
