@@ -35,7 +35,7 @@ The diagram on the right shows organizational relationships between SciJava soft
 
 == Git repositories ==
 
-Each project is contained in its own [[Git]] repository, so that interested developers can cherry-pick only those parts of interest. Version control is an indispensable tool to ensure ''scientific reproducibility'' (see below) by tracking known-working states of the source code, and maintain a written recorded of how and why the code has changed over time. For technical details, see the [[Git]] section.
+Each project is contained in its own [[Git]] repository, so that interested developers can cherry-pick only those parts of interest. Version control is an indispensable tool to ensure ''scientific reproducibility'' (see below) by tracking known-working states of the source code, and maintain a written record of how and why the code has changed over time. For technical details, see the [[Git]] section.
 
 === Why separate Git repositories? ===
 
