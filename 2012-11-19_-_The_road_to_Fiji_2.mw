@@ -34,7 +34,7 @@ This modular architecture allows us to integrate many third-party components wit
 
 == Automated testing ==
 
-Another very important step on the road to Fiji2 is that the components which migrated to ImageJ2 are equipped with automatic regression testing. That is, ImageJ2's trusty server ("[http://jenkins.imagej.net/ Jenkins]") runs a series of functions testing certain functionality everytime a developer makes some changes. Whenever these tests break, the developers are notified and can fix the breakage before the respective component is uploaded to the update site.
+Another very important step on the road to Fiji2 is that the components which migrated to ImageJ2 are equipped with automatic regression testing. That is, ImageJ2's trusty server ([[Jenkins]]) runs a series of functions testing certain functionality everytime a developer makes some changes. Whenever these tests break, the developers are notified and can fix the breakage before the respective component is uploaded to the update site.
 
 This procedure helps us ensure that bugs, once fixed, do not rear their ugly heads again. It will make using Fiji much friendlier to users, too, because they will not need to report as many bugs since they will not even see them. The developers can run those tests, too, to test before the changes hit the server. In the ideal case everything will be green:
 
