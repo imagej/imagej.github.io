@@ -69,7 +69,7 @@ The main take-home message regarding Eclipse is: ''just because it compiles in E
 
 == Jenkins continuous integration system ==
 
-To detect build failures more reliably, we have a [http://jenkins.imagej.net/ Jenkins server] (installed on an Ubuntu Linux 64-bit server) that automatically builds various projects in different ways. These automated builds help to detect problems with both the OpenJDK6 compiler as well as the Oracle Java SE 6 one.
+To detect build failures more reliably, we have a [[Jenkins]] server (installed on an Ubuntu Linux 64-bit server) that automatically builds various projects in different ways. These automated builds help to detect problems with both the OpenJDK6 compiler as well as the Oracle Java SE 6 one.
 
 === Jobs that use MiniMaven ===
 
