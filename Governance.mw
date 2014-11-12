@@ -1,4 +1,4 @@
-{{Warning | This page is a '''DRAFT VERSION''' so the information here should be treated with caution.}}{{Notice | This page describes the ''social'' structure of [[SciJava]] projects.<br>For information on their ''technical'' structure, see the [[Architecture]] page.}}
+{{Notice | This page describes the ''social'' structure of [[SciJava]] projects.<br>For information on their ''technical'' structure, see the [[Architecture]] page.}}
 {{Development}}
 The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosystem, are governed as [[Open Source]] software projects.  Everybody is welcome to [[contribute]] with [[plugins]], patches, [[Bugs|bug reports]], [[tutorials]], [[documentation]], and artwork.
 
