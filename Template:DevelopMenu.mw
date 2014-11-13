@@ -10,7 +10,7 @@
 {{MenuItem | [[Project management]] }}
 {{MenuItem | [[Coding style]] }}
 {{MenuItem | [[Debugging intro|Debugging]] }}
-| {{#ifeq:{{{1}}}|topics||collapsed}}
+| {{#if:{{{1|}}}|collapsed|}}
 }}
 
 {{Submenu | Tools |
