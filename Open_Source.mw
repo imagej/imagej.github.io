@@ -14,8 +14,8 @@ Further, we strive for ImageJ to be a community driven project. It is not merely
 * [http://fiji.sc/bugzilla/ Public issue tracker].
 * [[Mailing Lists|Public mailing lists]] for open discussion.
 * [http://imagej.net/ Public wiki] for community contributed content.
-* [http://jenkins.imagej.net/ Jenkins], Public [http://en.wikipedia.org/wiki/Continuous_integration continuous integration] system.
-* [http://maven.imagej.net/ Public Maven repository] for ImageJ binaries.
+* [[Jenkins]], ImageJ's public [http://en.wikipedia.org/wiki/Continuous_integration continuous integration] system.
+* [[Architecture#Maven_repositories|Public Maven repository]] for ImageJ binaries.
 
 Using these resources, you can always observe the latest progress of the project, get an idea of where the project is heading, contribute code to the project yourself using GitHub, or write documentation, tutorials and other information on the wiki.
 
