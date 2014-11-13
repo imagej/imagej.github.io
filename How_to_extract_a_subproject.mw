@@ -1,4 +1,4 @@
-{{Development | tutorials}}
+{{Development | plugins}}
 
 Whether a Fiji plugin is called ''internal'' or ''external'' is a purely technical matter: ''external plugins''' source code is maintained in separate repositories.
 
