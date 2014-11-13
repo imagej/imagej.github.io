@@ -81,4 +81,8 @@ After that, you can get rid of the now-obsolete tag:
 
 Note: instead of using a temporary tag, you can use the [[Git_reflogs|reflog]] of the HEAD ref ("git cherry-pick HEAD@{1}"), but if you are not familiar with the concept, tags are probably easier to handle.
 
+= See also =
+
+* [http://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search Binary search tutorial] in the Git book
+
 [[Category:Git]]
