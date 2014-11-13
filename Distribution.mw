@@ -116,11 +116,11 @@ If you want to facilitate good science, please [[Open Source|share your source c
 |-
 | colspan="3" style="background: white; border: none; height: 1em" |
 |-
-| colspan="3" style="background: #afa" | '''Host on GitHub in the Fiji organization'''
+| colspan="3" style="background: #afa" | '''Host on GitHub in the Fiji organization (for extensions distributed with Fiji; see above)'''
 |-
-|'''Steps'''
-|'''Advantages'''
-|'''Disadvantages'''
+| style="background: #dfd" |'''Steps'''
+| style="background: #dfd" |'''Advantages'''
+| style="background: #dfd" |'''Disadvantages'''
 |-
 | style="background: #dfd; vertical-align: top" |
 * Request a '''[[Governance|Fiji maintainer]]''' create a repository for you and add you as a contributor.
@@ -128,7 +128,7 @@ If you want to facilitate good science, please [[Open Source|share your source c
 | style="background: #dfd; vertical-align: top" |
 * All the benefits of GitHub.
 * A '''[[Governance|Fiji maintainer]]''' helps you to manage your project.
-| style="vertical-align: top" |
+| style="background: #dfd; vertical-align: top" |
 * You must abide by the '''[[Fiji contribution requirements]]'''.
 |-
 | colspan="3" style="background: white; border: none; height: 1em" |
