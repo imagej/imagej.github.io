@@ -116,20 +116,20 @@ If you want to facilitate good science, please [[Open Source|share your source c
 |-
 | colspan="3" style="background: white; border: none; height: 1em" |
 |-
-| colspan="3" style="background: lightgray" | '''Host on GitHub in the Fiji organization'''
+| colspan="3" style="background: #afa" | '''Host on GitHub in the Fiji organization'''
 |-
 |'''Steps'''
 |'''Advantages'''
 |'''Disadvantages'''
 |-
-| style="vertical-align: top" |
-* Request a [[Governance|Fiji maintainer]] create a repository for you and add you as a contributor.
-* Abide by [[Fiji contribution requirements]].
-| style="vertical-align: top" |
+| style="background: #dfd; vertical-align: top" |
+* Request a '''[[Governance|Fiji maintainer]]''' create a repository for you and add you as a contributor.
+* Meet the '''[[Fiji contribution requirements]]'''.
+| style="background: #dfd; vertical-align: top" |
 * All the benefits of GitHub.
-* A [[Governance|Fiji maintainer]] helps you to manage your project.
+* A '''[[Governance|Fiji maintainer]]''' helps you to manage your project.
 | style="vertical-align: top" |
-* You must abide by the [[Fiji contribution requirements]].
+* You must abide by the '''[[Fiji contribution requirements]]'''.
 |-
 | colspan="3" style="background: white; border: none; height: 1em" |
 |-
