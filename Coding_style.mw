@@ -27,7 +27,7 @@ We try to follow best practices for maintaining a clean and organized Git histor
 * We use topic branches for large feature additions and complex code changes, and purge them promptly once merged to master. We prefer to make explicit merges (i.e. with <code>--no-ff</code>) to document the purpose of each merged branch.
 * To refine commits on topic branches, we use <code>git commit --fixup &lt;commit&gt;</code> extensively. Subsequent <code>git rebase --autosquash</code> will squash the fixup into the other commit.
 * In the case of unfinished work at the conclusion of a coding session, we commit it with the subject ''WIP'' and push to the topic branch. (Calling <code>git reset HEAD^</code> next time makes it easy to pick up the work from there.) Doing this reduces the chance of lost work, and makes it easier for other programmers to collaborate during development.
-* We avoid monster commits (with commit messages like "Many changes to several subsystems") in favor of well-separated, modular commits with one conceptual change at a time. Git's staging area feature makes this much easier (e.g., <code>git add -p</code>). Granular commits have many advantages; e.g., <code>git bisect</code> becomes much more useful for understanding mysterious bugs.
+* We avoid monster commits (with commit messages like "Many changes to several subsystems") in favor of well-separated, modular commits with one conceptual change at a time. Git's staging area feature makes this much easier (e.g., <code>git add -p</code>). Granular commits have many advantages; e.g., <code>[[Pinpoint regressions with Git|git bisect]]</code> becomes much more useful for understanding mysterious bugs.
 
 == Javadoc and comments ==
  
