@@ -6,6 +6,7 @@
 {{MenuItem | [[Architecture]] }}
 {{MenuItem | [[Extensibility]] }}
 {{MenuItem | [[Source code]] }}
+{{MenuItem | [[Distribution]] }}
 {{MenuItem | [[Project management]] }}
 {{MenuItem | [[Coding style]] }}
 {{MenuItem | [[Debugging intro|Debugging]] }}
@@ -39,7 +40,6 @@
 }}
 
 {{Submenu | ImageJ Tutorials |
-{{MenuItem | [[Distribution|Distributing your code]] }}
 {{MenuItem | [[Writing ImageJ2 plugins]] }}
 {{MenuItem | [[External Plugins|Adding an external plugin]] }}
 {{MenuItem | [[How_to_contribute_to_an_existing_Fiji_plugin_or_library|Contributing to a plugin]] }}
