@@ -13,6 +13,13 @@ Download the XML and HDF5 files [http://fly.mpi-cbg.de/~pietzsch/bdv-examples/Hi
 Open the XML file with ''Plugins > BigDataViewer > Open XML/HDF5'' from the Fiji menu.
 (Additionally you may download this settings file [http://fly.mpi-cbg.de/~pietzsch/bdv-examples/HisYFP-SPIM.settings.xml HisYFP-SPIM.settings.xml] which adjusts the brightness of the fused and deconvolved data. Just place it next to the HisYFP-SPIM.xml file.)
 
+=== Remote HDF5 ===
+This dataset is served by our [https://github.com/tpietzsch/spimviewer/tree/master/server/src/main/java/bdv/server BigDataServer] (still in beta).
+It comprises 250 timepoints of a large 6-angle time-lapse ‘’Drosophila’’ embryogenesis acquired on Zeiss Lightsheet Z.1.
+The dataset is stored as a 500GB XML/HDF5 file on the server.
+For remote viewing, only an XML file is required.
+Download [http://fly.mpi-cbg.de/~pietzsch/bdv-examples/remote.xml remote.xml] and open it with ''Plugins > BigDataViewer > Open XML/HDF5'' from the Fiji menu.
+
 === CATMAID ===
 Electron microscopy dataset of 1.5 segments of the ventral nerve cord of a first-instar Drosophila larva (458 sections, each section consisting of ∼ 70 overlapping image tiles, imaged at 4nm/px with 50nm section thickness) is available online through the web-browser based [[http://fly.mpi-dcb.de/ CATMAID viewer]].
 To view it in BigDataViewer, download [http://fly.mpi-cbg.de/~pietzsch/bdv-examples/catmaid-abd1.5.xml catmaid-abd1.5.xml]
