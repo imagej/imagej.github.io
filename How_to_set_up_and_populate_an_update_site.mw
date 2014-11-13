@@ -9,6 +9,8 @@ By far the easiest method to provide your macros, scripts and plugins to other u
 
 A ''personal update site'' is hosted on <nowiki>http://sites.imagej.net/<imagej-wiki-account></nowiki>. If you do not have an ImageJ Wiki account yet, no need to worry, you can register one while setting up your update site.
 
+{{Notice | There are some minimal ''Terms of Service'' for personal update sites. See the [[Update Sites#Frequently_asked_questions|Update Sites FAQ]] for details.}}
+
 First of all, start the updater with ''Help>Update'' and click on the ''Manage update sites'' button:
 
 [[File:Mamed-3.jpg|770px]]
