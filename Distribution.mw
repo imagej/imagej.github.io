@@ -55,15 +55,15 @@ The first goal is to get your extension into the hands of users.
 | style="background: #dfd" |'''Disadvantages'''
 |-
 | style="background: #dfd; vertical-align: top" |
-* Write a mail to the [[Mailing Lists|fiji-devel mailing list]] to initiate a request.
+* Write a mail to the '''[[Mailing Lists|fiji-devel mailing list]]''' to initiate a request.
 | style="background: #dfd; vertical-align: top" |
-* Users [[Downloads|install Fiji]], or [[How to follow a 3rd party update site|enable the Fiji update site]].
+* Users '''[[Downloads|install Fiji]]''', or '''[[How to follow a 3rd party update site|enable the Fiji update site]]'''.
 | style="background: #dfd; vertical-align: top" |
 * Your extension is available with Fiji out of the box.
-* A [[Governance|Fiji maintainer]] will help you to manage your project.
-* The ImageJ [[Jenkins]] server automatically tests your project for errors.
+* A '''[[Governance|Fiji maintainer]]''' will help you to manage your project.
+* The ImageJ '''[[Jenkins]]''' server automatically tests your project for errors.
 | style="background: #dfd; vertical-align: top" |
-* You must abide by the [[Fiji contribution requirements]].
+* You must abide by the '''[[Fiji contribution requirements]]'''.
 * You must rely on a Fiji maintainer (for now) to upload new versions for you.
 |-
 | colspan="4" style="background: white; border: none; height: 1em" |
