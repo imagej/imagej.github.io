@@ -10,13 +10,29 @@
 {{MenuItem | [[Project management]] }}
 {{MenuItem | [[Coding style]] }}
 {{MenuItem | [[Debugging intro|Debugging]] }}
+| {{#ifeq:{{{1}}}|topics||collapsed}}
 }}
 
 {{Submenu | Tools |
 {{MenuItem | [[IDEs]] }}
 {{MenuItem | [[Maven]] }}
 {{MenuItem | [[Git]] }}
-| collapsed
+| {{#ifeq:{{{1}}}|tools||collapsed}}
+}}
+
+{{Submenu | Tutorials |
+{{MenuItem | [[Writing ImageJ2 plugins]] }}
+{{MenuItem | [[External Plugins|Adding an external plugin]] }}
+{{MenuItem | [[How_to_contribute_to_an_existing_Fiji_plugin_or_library|Contributing to a plugin]] }}
+| {{#ifeq:{{{1}}}|tutorials||collapsed}}
+}}
+
+{{Submenu | IDEs |
+{{MenuItem | [[Developing ImageJ in Eclipse|Eclipse]] }}
+{{MenuItem | [[Developing ImageJ in NetBeans|NetBeans]] }}
+{{MenuItem | [[Developing ImageJ in IntelliJ IDEA|IntelliJ IDEA]] }}
+{{MenuItem | [[Developing ImageJ on the command line|Command line]] }}
+| {{#ifeq:{{{1}}}|ides||collapsed}}
 }}
 
 {{Submenu | About Git |
@@ -26,7 +42,7 @@
 {{MenuItem | [[Git Notes]] }}
 {{MenuItem | [[Git reflogs]] }}
 {{MenuItem | [[Git topic branches]] }}
-| collapsed
+| {{#ifeq:{{{1}}}|git||collapsed}}
 }}
 
 {{Submenu | Git Tutorials |
@@ -36,28 +52,13 @@
 {{MenuItem | [[Git workshop]] }}
 {{MenuItem | [[Pinpoint regressions with Git]] }}
 {{MenuItem | [[GitHub Tricks]] }}
-| collapsed
+| {{#ifeq:{{{1}}}|git_tutorials||collapsed}}
 }}
 
-{{Submenu | ImageJ Tutorials |
-{{MenuItem | [[Writing ImageJ2 plugins]] }}
-{{MenuItem | [[External Plugins|Adding an external plugin]] }}
-{{MenuItem | [[How_to_contribute_to_an_existing_Fiji_plugin_or_library|Contributing to a plugin]] }}
-| collapsed
-}}
-
-{{Submenu | Developing ImageJ |
-{{MenuItem | [[Developing ImageJ in Eclipse|Eclipse]] }}
-{{MenuItem | [[Developing ImageJ in NetBeans|NetBeans]] }}
-{{MenuItem | [[Developing ImageJ in IntelliJ IDEA|IntelliJ IDEA]] }}
-{{MenuItem | [[Developing ImageJ on the command line|Command line]] }}
-| collapsed
-}}
-
-{{Submenu | Developing Fiji |
+{{Submenu | Fiji |
 {{MenuItem | [[Developing Fiji|Introduction]] }}
 {{MenuItem | [[Developing Fiji in Eclipse|Eclipse]] }}
-| collapsed
+| {{#ifeq:{{{1}}}|fiji||collapsed}}
 }}
 
 }}
