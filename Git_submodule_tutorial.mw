@@ -1,4 +1,4 @@
-{{Development}}
+{{Development | git_tutorials}}
 == Submodules in Fiji ==
 
 <p>Fiji is hosted on a main git repository which contains several declared submodules such as TrakEM2.</p>
