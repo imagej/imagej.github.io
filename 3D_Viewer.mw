@@ -9,10 +9,7 @@
 | status                 = beta
 | category               = [[:Category:Visualization|Visualization]]
 | website                = http://3dviewer.neurofly.de
-}}
-
-
-== Purpose ==
+}}== Purpose ==
 
 This plugin offers hardware-accelerated visualization possibilities for
 image stacks. Stacks can be displayed as texture-based volume renderings, 
