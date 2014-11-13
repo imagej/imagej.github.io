@@ -1,4 +1,4 @@
-{{Development | tutorials}}
+{{Development | plugins}}
 == What is a "plugin"? ==
 
 Conceptually, a '''plugin''' is a piece of Java code that extends the capabilities of ImageJ. Technically, a plugin is a Java class annotated with the <code>@Plugin</code> annotation and implementing the <code>SciJavaPlugin</code> interface.
