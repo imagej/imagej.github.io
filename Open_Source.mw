@@ -10,7 +10,7 @@ The [http://sciencecodemanifesto.org/discussion Science Code Manifesto] provides
 
 Further, we strive for ImageJ to be a community driven project. It is not merely an [http://en.wikipedia.org/wiki/Open_source open source] ''product'', but an open source ''process''. ImageJ follows open development practices, and provides open development tools online:
 
-* [https://github.com/imagej Public source code repositories] including complete development history.
+* Public [[source code]] repositories including complete development history.
 * [http://fiji.sc/bugzilla/ Public issue tracker].
 * [[Mailing Lists|Public mailing lists]] for open discussion.
 * [http://imagej.net/ Public wiki] for community contributed content.
