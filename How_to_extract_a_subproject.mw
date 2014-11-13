@@ -2,22 +2,22 @@
 
 Sometimes, a piece of functionality is developed as part of one project, but grows so much as to warrant becoming its own, separate project.
 
-This tutorial describes how to split part of a Git repository into its own dedicated Git repository, preserving only the history relevant to the subcomponent being extracted.
+This tutorial describes how to split part of a Git repository into its own dedicated Git repository, preserving only the history relevant to the subproject being extracted.
 
 == Extract the revision history ==
 
 <ol>
-<li>Use Git's ''filter-branch'' feature to extract the Git history of only the subcomponent:
+<li>Use Git's ''filter-branch'' feature to extract the Git history of only the subproject:
 <source lang="bash">
 git filter-branch -f --prune-empty --subdirectory-filter <subdir>
 </source>
-Where <code><subdir></code> is the folder containing the subcomponent's source code.</li>
+Where <code><subdir></code> is the folder containing the subproject's source code.</li>
 </li>
 </ol>
 
 == Update the Maven build ==
 
-Assuming you are using [[Maven]] to build the subcomponent:
+Assuming you are using [[Maven]] to build the subproject:
 <ol>
 <li>Add an ''<scm>'' section to the ''pom.xml'' to reflect the new remote repository's URL (see [https://github.com/scijava/jep/commit/b76f4a1df830c090fc96ab99bb145dd67e8e69ce example]):
 <source lang="bash">vi pom.xml
