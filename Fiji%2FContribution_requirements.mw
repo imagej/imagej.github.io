@@ -1,42 +1,91 @@
-The driving force behind the Fiji project is the following principle:
+Distributing your software component as part of [[Fiji]] is an effective way to immediately and easily put it into the hands of many users, as well as to actively participate in the community of ImageJ software development. However, doing so comes with a few corresponding rules.
+
+The following document describes these requirements, as well as associated best practices, for shipping your component as part of the [[Fiji]] update site.
+
+{{Notice | There is another good way to distribute your extension: your own [[update site]]. See the [[Distribution]] page for details.}}
+
+= Requirements =
+
+== The source code must be freely accessible ==
+
+A key principle of the Fiji project is:
 
 :''If you want to go fast, go alone. If you want to go far, go together.''
 : - ''African proverb''
 
-There are many corollaries to this wisdom, the most prominent: if you write software in your endeavor to discover new insights, [[Open Source]] is the way that brings you farthest. Withholding the source code – like any other method to obstruct other researchers' work, e.g. refusing to share materials and methods – will invariably have the opposite effect in the long run. Likewise, working with interested parties to improve one's project will invariably lead to a much better and stronger result.
+There are many corollaries to this wisdom, the most prominent: if you write software in your endeavor to discover new insights, [[Open Source]] is the way that brings you farthest. Withholding the source code—like any other method to obstruct other researchers' work, e.g. refusing to share materials and methods—will invariably have the opposite effect in the long run. Likewise, working with interested parties to improve one's project will invariably lead to a much better and stronger result.
 
-This principle leads to a couple of requirements imposed on the software components shipped with Fiji by default.
+As such, components distributed with Fiji must be licensed in a way [https://www.gnu.org/licenses/license-list.html compatible with the GNU General Public License].
 
-= The source code must be freely accessible =
+== Use GitHub ==
 
-Components developed in the Fiji context must live in [https://github.com/fiji the ''fiji'' org on GitHub]. This ensures continuity and visibility.
+Core Fiji development takes place on [[GitHub]]. This ensures continuity and visibility, and facilitates collaboration.
 
-= The development must be open =
+You have two choices:
+
+{| class="wikitable"
+|
+| '''Fiji org'''
+| '''Other org'''
+|-
+| '''Details'''
+| Repository is hosted in the [https://github.com/fiji fiji org], or a sub-org (e.g., [https://github.com/trakem2 trakem2]).
+| Repository is hosted in a GitHub organization you control.
+|-
+| '''<code>groupId</code>'''
+| <code>sc.fiji</code>
+| Something else (e.g., <code>com.github.yourOrg</code>)
+|-
+| '''Maintainership'''
+| [[Governance|Fiji maintainers]] help maintain the project.
+| You alone maintain the project (though Fiji maintainer may submit PRs).
+|}
+
+== Continuous integration: Jenkins ==
+
+To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a job of [http://jenkins.imagej.net/view/Fiji ImageJ's Jenkins server] that builds and tests the source code whenever a new revision is made available.
+
+== Versioning and dependency convergence ==
+
+Most Fiji projects use the [[Versioning|SemVer versioning scheme]]: a standard to encourage API consistency without obstructing API improvements.
+
+The minimum requirement for core Fiji projects is to abide by the '''MAJOR''' digit portion of [http://semver.org/ SemVer]—i.e., if the first digit of the version string increases, it means that the new version is ''not'' backwards compatible with the old version. Conversely, if any later digit of the version string increases, it means that the new version ''is'' backwards compatible.
+
+This requirement exists to facilitate automated tooling for dependency convergence: the use of compatible dependency versions across all of Fiji. When two (or more) components of Fiji depend on different versions of the same component, it must be possible to verify which version is newer, and whether the newer version is backwards compatible with the old one. As long as the newest required dependencies are indeed backwards compatible, those dependencies are said to ''converge''.
+
+From example, Apache Commons Math v3.x breaks backwards compatibility with Apache Commons Math v2.x. Since both versions share the same package and class names, only one of these versions can be shipped with Fiji. Therefore, all components of Fiji must rely on the same major version: either v2 or v3.
+
+In general, if the rest of the Fiji distribution upgrades to a new major version of library on which your component depends, your component must also be upgraded to use the new version. Such decisions are typically reached after [[Mailing Lists|public discussion on the fiji-devel list]].
+
+== Maven artifacts ==
+
+Most of [[Fiji]] and related [[SciJava]] software uses [[Maven]], an industry standard to declare metadata about a project, to build projects using said metadata, and to ''deploy'' the resulting artifacts to a [[Architecture#Maven_repositories|Maven repository]]. Such repositories are essentially for developers what [[update sites]] are for users.
+
+The minimum requirement for core Fiji projects is to use a build system (e.g., [[Maven]] or Gradle) that automatically deploys required artifacts to the [http://maven.imagej.net/ ImageJ Maven repository], such that they can be consumed by downstream code, including other Fiji projects, using Maven and similar systems. Required artifacts include the main JAR and POM files, <code>-tests</code> JAR, <code>-sources</code> JAR and <code>-javadoc</code> JAR.
+
+To facilitate this, most Fiji projects inherit a common Maven configuration from the [https://github.com/fiji/pom-fiji pom-fiji] parent project. This configuration ensures that not only the compiled ''.jar'' files are deployed, but also the Javadocs and the sources. Therefore, it is strongly encouraged to extend this parent; see the [[Architecture#Maven_component_structure|Maven component structure]] section for details.
+
+All of Fiji's components are deployed by Jenkins to the [http://maven.imagej.net/ ImageJ Maven repository] or to [http://oss.sonatype.org/ OSS Sonatype]. That way, all Fiji components can be added easily as dependencies to downstream projects.
+
+= Guidelines =
+
+The following guidelines are less technical and more philosophical, but represent best practice for core Fiji components.
+
+== Development should be an open process ==
 
 Developers of Fiji components should invite others to contribute. That entails welcoming developers, acknowledging and working on pull requests, encouraging improvements, working together, enhancing upon each others' work, share insights, etc.
 
 To leverage the power of Open Source, the default for discussions should be the mailing lists or GitHub issues/pull requests. In other words, the question to ask should be "Is there any good reason why this conversation should be private?" instead of the opposite.
 
-= Active bug management =
+== Active bug management ==
 
 Bug reports need to be acknowledged, participation in resolving bugs should be encouraged whenever possible, bugs should not go uncommented for months (we all have times when we are busy e.g. writing a paper; a little message helps the involved people understand), explanations are due when bugs go unresolved for years, etc
 
-= Reusability and reliability =
+== Reusability and reliability ==
 
 Whenever possible, source code should be reused. If necessary, improve the existing source code. Only rewrite from scratch when absolutely necessary.
 
 Make code reusable, i.e. define APIs to use the functionality. This requires a little bit of discipline so that third parties can rely on the interfaces.
-
-== Semantic versioning ==
-
-''The'' standard to allow API consistency without obstructing API improvements that require breaking changes is called [http://semver.org/ ''semantic versioning''] (nick name: ''SemVer''). The short version is:
-
-* version numbers consist of the major, the minor and the micro version number (example: version 1.3.7 has major version 1, minor version 3 and micro version 7)
-* new releases containing only bug fixes increase the micro version
-* new releases containing only bug fixes and backwards-compatible API improvements increase the minor version
-* new releases breaking the API increase the major version
-
-In Fiji, we try to use SemVer as much as possible, with one twist: during the major version 0, API breakages only increase the minor version because major version 0 indicates: "the API is still very much in flux".
 
 == Regression tests ==
 
@@ -44,18 +93,6 @@ Writing regression tests is [https://github.com/junit-team/junit/wiki/Getting-st
 
 In particular when fixing a bug, it is a good idea to write a regression test ''first'', making sure that it actually fails. After that, one should develop the fix, getting a cozy and warm feeling once the regression test passes.
 
-== Continuous integration: Jenkins ==
+== Separation of concerns ==
 
-To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a job of [http://jenkins.imagej.net/view/Fiji ImageJ's Jenkins server] that builds and tests the source code whenever a new revision is made available.
-
-== Maven ==
-
-[[Maven]] provides an industry standard to declare metadata about a project, to build projects using said metadata, and to ''deploy'' the resulting artifacts to a Maven repository (these repositories are essentially for developers what [[Update Sites]] are for users).
-
-All of Fiji's components are deployed by the Jenkins jobs to [http://maven.imagej.net/ the ImageJ Maven repository] or to [http://oss.sonatype.org/ OSS Sonatype]. That way, all Fiji components can be added easily as dependencies to third-party projects.
-
-The Fiji projects inherit a common Maven configuration from a the ''pom-fiji'' parent project. This configuration ensures that not only the compiled ''.jar'' files are deployed, but also the Javadocs and the sources.
-
-= Separation of concerns =
-
-New features should be put into the appropriate component, e.g. when adding a general-purpose utility, scijava-common; user interface improvements such as generic support for hyperlinks in ImageJ 1.x' dialogs should not be bundled with individual plugin implementations, but put into reusable libraries instead, etc
+New features should be put into the appropriate component. E.g., when adding a general purpose utility, consider contributing to [[SciJava Common]] or [[ImageJ Common]] instead of bundling it with your specific extension.
