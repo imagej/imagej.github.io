@@ -1,4 +1,4 @@
-{{Development | git}}
+{{Development | tools}}
 ==Source Code Management==
 
 Development of ImageJ and related software relies heavily on [http://git-scm.com/ Git].
