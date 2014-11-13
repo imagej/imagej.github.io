@@ -249,7 +249,7 @@ Useful extensions deserve corresponding documentation explaining how to use them
 | style="vertical-align: top" |
 * Nonstandard location. Users may have trouble finding your documentation.
 * Not collaborative. No one else can improve the documentation.
-* If your site goes down, users lose access to the information. (This happened with the [[3D Viewer]] a while back. And the [[MBF Plugin Collection]] went permanently offline!)
+* If your site goes down, users lose access to the information. (This happened with the [[3D Viewer]] on multiple occasions. And the [[MBF Plugin Collection]] went permanently offline!)
 |}
 
 [[Category:Development]]
