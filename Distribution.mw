@@ -1,4 +1,4 @@
-{{Development}}If you create a useful extension of ImageJ—e.g., a [[plugin]], [[script]] or [[macro]]—the next step is to ''distribute'' it to others, including:
+{{Development | plugins}}If you create a useful extension of ImageJ—e.g., a [[plugin]], [[script]] or [[macro]]—the next step is to ''distribute'' it to others, including:
 * '''Distribute''' the extension itself to users
 * Share the extension's '''source code'''
 * '''Document''' the extension somewhere
