@@ -41,7 +41,6 @@
 {{MenuItem | [[Git Notes]] }}
 {{MenuItem | [[Git reflogs]] }}
 {{MenuItem | [[Git topic branches]] }}
-{{MenuItem | [[How to extract a subproject]] }}
 | {{#ifeq:{{{1}}}|git||collapsed}}
 }}
 
@@ -49,6 +48,7 @@
 {{MenuItem | [[Git mini howto]] }}
 {{MenuItem | [[Git submodule tutorial]] }}
 {{MenuItem | [[How to publish a Git repository]] }}
+{{MenuItem | [[How to extract a subproject]] }}
 {{MenuItem | [[Git workshop]] }}
 {{MenuItem | [[Pinpoint regressions with Git]] }}
 {{MenuItem | [[GitHub Tricks]] }}
