@@ -449,7 +449,7 @@ If you want to increase the chances of your issue being worked on, you can:
 * Provide a [http://stackoverflow.com/help/mcve minimal, complete, verifiable example].
 * [http://whathaveyoutried.com/ Describe what you already tried].
 * [http://stackoverflow.com/help/how-to-ask Put as much effort into your question] as you expect to be put into its response.
-* Consider [[debugging]] the issue yourself and submitting a fix as a [https://help.github.com/articles/using-pull-requests pull request].
+* Consider [[debugging]] the issue yourself and [[Contributing|submitting a fix]] as a [https://help.github.com/articles/using-pull-requests pull request].
 
 See the [[bug reporting best practices]] article for details.
 
