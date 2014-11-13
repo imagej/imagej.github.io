@@ -21,7 +21,6 @@
 
 {{Submenu | Plugins |
 {{MenuItem | [[Writing ImageJ2 plugins]] }}
-{{MenuItem | [[External Plugins|Adding an external plugin]] }}
 {{MenuItem | [[How_to_contribute_to_an_existing_plugin_or_library|Contributing to a plugin]] }}
 {{MenuItem | [[Distribution|Distributing your plugins]] }}
 | {{#ifeq:{{{1}}}|plugins||collapsed}}
@@ -42,6 +41,7 @@
 {{MenuItem | [[Git Notes]] }}
 {{MenuItem | [[Git reflogs]] }}
 {{MenuItem | [[Git topic branches]] }}
+{{MenuItem | [[How to extract a subproject]] }}
 | {{#ifeq:{{{1}}}|git||collapsed}}
 }}
 
