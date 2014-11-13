@@ -1,14 +1,27 @@
-{{Development | plugins}}If you create a useful extension of ImageJ—e.g., a [[plugin]], [[script]] or [[macro]]—the next step is to ''distribute'' it to others, including:
+__NOTOC__{{Development | plugins}}If you create a useful extension of ImageJ—e.g., a [[plugin]], [[script]] or [[macro]]—the next step is to ''distribute'' it to others, including:
 * '''Distribute''' the extension itself to users
 * Share the extension's '''source code'''
 * '''Document''' the extension somewhere
 
-The tables below discuss options for these three aspects of distribution. Green items are recommended. Other options are given but not recommended for various reasons.
+== Best practices ==
+
+Here is a quick summary of the options we recommend most:
+* '''Distribution.'''
+** A) '''[[How to set up and populate an update site|create your own update site]]'''; or
+** B) '''[[Fiji contribution requirements|bundle your plugin with Fiji]]'''.
+* '''Source code.'''
+** Make your project '''[[open source]]'''.
+** Host it on '''[[GitHub]]'''.
+** Use '''[[Maven]]''' to build and SemVer for '''[[versioning]]'''.
+* '''Documentation.'''
+** Create a page here on the '''[http://imagej.net/ ImageJ Wiki]'''.
+
+The tables below discuss additional options for these three aspects of distribution. Green items are recommended. Other options are given but not recommended for various reasons.
 
 == Distributing your extension ==
 
 The first goal is to get your extension into the hands of users.
-{{Tip|tip = The best way to distribute your extension is to '''[[How to set up and populate an update site|create an update site]]'''!}}{| class="wikitable" style="border: none"
+{| class="wikitable" style="border: none"
 | colspan="4" style="background: #afa" | '''Create your own update site'''
 |-
 | style="background: #dfd" | '''Steps'''
@@ -80,7 +93,7 @@ The first goal is to get your extension into the hands of users.
 == Sharing your source code ==
 
 If you want to facilitate good science, please [[Open Source|share your source code]]. Otherwise, your extension is a black box and its results are not verifiable.
-{{Tip|tip=The recommended way to share your source is to host it on '''[https://github.com/ GitHub]'''!}}{| class="wikitable" style="border: none"
+{| class="wikitable" style="border: none"
 | colspan="3" style="background: #afa" | '''Host on GitHub in your userspace or organization'''
 |-
 | style="background: #dfd" | '''Steps'''
@@ -181,7 +194,7 @@ If you want to facilitate good science, please [[Open Source|share your source c
 == Documenting your extension ==
 
 Useful extensions deserve corresponding documentation explaining how to use them.
-{{Tip|tip=The best place to document your extension is here on the '''[http://imagej.net/ ImageJ Wiki]'''!}}{| class="wikitable" style="border: none"
+{| class="wikitable" style="border: none"
 | colspan="3" style="background: #afa" | '''Create an ImageJ wiki page'''
 |-
 | style="background: #dfd" | '''Steps'''
