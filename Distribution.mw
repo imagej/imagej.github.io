@@ -34,23 +34,24 @@ The first goal is to get your extension into the hands of users.
 |-
 | colspan="4" style="background: white; border: none; height: 1em" |
 |-
-| colspan="4" style="background: lightgray" | '''Distribute it as part of Fiji'''
+| colspan="4" style="background: #afa" | '''Distribute it as part of Fiji'''
 |-
-|'''Steps'''
-|'''Installation'''
-|'''Advantages'''
-|'''Disadvantages'''
+| style="background: #dfd" |'''Steps'''
+| style="background: #dfd" |'''Installation'''
+| style="background: #dfd" |'''Advantages'''
+| style="background: #dfd" |'''Disadvantages'''
 |-
-| style="vertical-align: top" |
+| style="background: #dfd; vertical-align: top" |
 * Write a mail to the [[Mailing Lists|fiji-devel mailing list]] to initiate a request.
-| style="vertical-align: top" |
+| style="background: #dfd; vertical-align: top" |
 * Users [[Downloads|install Fiji]], or [[How to follow a 3rd party update site|enable the Fiji update site]].
-| style="vertical-align: top" |
+| style="background: #dfd; vertical-align: top" |
 * Your extension is available with Fiji out of the box.
-* A Fiji administrator will help (force ;-) you to manage your project.
-| style="vertical-align: top" |
+* A [[Governance|Fiji maintainer]] will help you to manage your project.
+* The ImageJ [[Jenkins]] server automatically tests your project for errors.
+| style="background: #dfd; vertical-align: top" |
 * You must abide by the [[Fiji contribution requirements]].
-* You must rely on a Fiji administrator to upload new versions for you.
+* You must rely on a Fiji maintainer (for now) to upload new versions for you.
 |-
 | colspan="4" style="background: white; border: none; height: 1em" |
 |-
@@ -109,13 +110,13 @@ If you want to facilitate good science, please [[Open Source|share your source c
 |'''Disadvantages'''
 |-
 | style="vertical-align: top" |
-* Request a Fiji administrator create a repository for you and add you as a contributor.
+* Request a [[Governance|Fiji maintainer]] create a repository for you and add you as a contributor.
 * Abide by [[Fiji contribution requirements]].
 | style="vertical-align: top" |
 * All the benefits of GitHub.
-* A Fiji maintainer helps (forces ;-) you to manage your project.
+* A [[Governance|Fiji maintainer]] helps you to manage your project.
 | style="vertical-align: top" |
-* You must abide by the Fiji contribution requirements.
+* You must abide by the [[Fiji contribution requirements]].
 |-
 | colspan="3" style="background: white; border: none; height: 1em" |
 |-
