@@ -6,7 +6,7 @@ The source code of [[ImageJ]] and related [[SciJava]] projects is managed using 
 
 All source code is on GitHub. The user-facing parts are:
 
-* [https://github.com/imagej ImageJ] – a generic image processing application
+* [https://github.com/imagej ImageJ] – a general-purpose image processing application
 * [https://github.com/fiji Fiji] – a distribution of ImageJ and plugins supporting life sciences in particular
 
 Both ImageJ and Fiji consist of multiple sub-projects; All projects address their individual "concern" and leave all other concerns to the respective other projects. 
