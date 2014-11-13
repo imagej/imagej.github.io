@@ -30,6 +30,13 @@ Hence, there are two levels of removal: marking a file '''obsolete''', and '''de
 ** If you using a [[Personal Update Sites|personal update site]], then [[Help:Contents|contact an ImageJ administrator]] to have the offending file(s) removed.
 ** If you are hosting your own update site, then you must delete all versions of the file from the file system, ''and'' edit the ''db.xml.gz'' file to remove the ''<plugin>'' entry as well as any ''<dependency>'' elements in other entries which reference it.
 
+=== What are the Terms of Service for personal update sites? ===
+
+# You agree to use your personal update site only for ImageJ extensions, and not hosting content for any other purpose.
+# You grant permission for anyone enabling your update site to use the functionality it provides for any legal purpose whatsoever.
+# You agree that you are making your functionality available free of charge, without any DRM, license codes or similar restrictions.
+# It is strongly encouraged, but not required, for your functionality to use an [[open source]] license.
+
 === How do I set a password for my personal update site? ===
 
 Use [[Special:ChangeUploadPassword|this page]] to set a password for ''uploading'' content.
