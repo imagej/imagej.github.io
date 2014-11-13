@@ -1,8 +1,7 @@
 {{Development | tutorials}}== Introduction ==
-Sometimes you may want to contribute to an already existing Fiji plugin or library. For example, a bug is found in one plugin and you want to fix it, or you would like to improve one library by adding more functions. This tutorial describes step by step how to do it with a practical case.
+Sometimes you may want to contribute to an already existing ImageJ plugin or library. For example, a bug is found in one plugin and you want to fix it, or you would like to improve one library by adding more functions. This tutorial describes step by step how to do it with a practical case.
 
-Remember that '''every plugin and every library have their own git repository in [https://github.com/fiji Fiji's GitHub site]'''. For example, the VIB-lib's repository is {{GitHub|org=fiji|repo=VIB-lib|label=VIB-lib}}. This structure allows for easy, independent development of 
-the individual parts of which the base version of Fiji consists.
+In the case of [[Fiji]], '''every plugin and every library has its own git repository in [https://github.com/fiji Fiji's GitHub site]'''. For example, the VIB-lib's repository is {{GitHub|org=fiji|repo=VIB-lib|label=VIB-lib}}. This structure allows for easy, independent development of each individual component.
 
 This tutorial assumes you are familiar with [[Git]]. If this is not the case, please go ahead and read the existing [[Git|documentation]].
 
@@ -19,14 +18,14 @@ Go to the library's repository (in this case https://github.com/fiji/VIB-lib) an
 By doing this, you will be duplicating the whole repository into your own GitHub account. This way you can freely work on the library with an identical version of the existing repository's master branch.
 == Clone ==
 Next, go to your command line, move to your workspace folder and clone the repository:
-<source lang="bash">$ git clone https://github.com/username/VIB-lib.git</source>
+<source lang="bash">$ git clone https://github.com/username/VIB-lib</source>
 (change "username" for your GitHub account name)
 == Configure remotes ==
 To sync changes you make in a fork with the original repository, you must configure a remote that points to the upstream repository in Git.
 In our case:
 <source lang="bash">
 $ cd VIB-lib
-$ git remote add upstream https://github.com/fiji/VIB-lib.git
+$ git remote add upstream https://github.com/fiji/VIB-lib
 $ git fetch upstream
 </source>
 == Create a topic branch ==
