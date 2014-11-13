@@ -6,12 +6,14 @@ There are a few different flavors of ImageJ with very similar names, and some co
 
 {| class="wikitable"
 |-
+|
 |'''Name'''
 |'''Author/Maintainer(s)'''
 |'''Description'''
 |'''Initiated'''
 |'''Status'''
 |-
+|[[File:imagej2-icon.png|64px]]
 |[[ImageJ2]]<br>
 ImageJDev
 |[[Contributors|ImageJ developers]]
@@ -19,12 +21,14 @@ ImageJDev
 |Dec. 2009
 |Active
 |-
+|[[File:imagej1-icon.png|64px]]
 |[[ImageJ1]]
 |Wayne Rasband
 |A stable version of ImageJ which has been in development since 1997. It has a strong, established user base, with thousands of plugins and macros for performing a wide variety of tasks.
 |1997
 |Active
 |-
+|[[File:imagej1-icon.png|64px]]
 |[[ImageJA]]
 |[[User:Schindelin|Johannes Schindelin]]
 | 
@@ -34,6 +38,7 @@ It is what ImageJ2's legacy support uses at its core.
 |Jul. 2005
 |Active
 |-
+|[[File:Fiji-icon.png|64px]]
 |[[Fiji]]
 |[[Contributors|Fiji contributors]]
 | 
@@ -46,6 +51,7 @@ We recommend Fiji as the preferred version of ImageJ.
 |[[User:Schindelin|Dec. 2007]]
 |Active
 |-
+|
 |[[MBF ImageJ]]
 |Tony Collins
 |
@@ -58,6 +64,7 @@ It went hand in hand with a comprehensive manual describing how to use the bundl
 (Last update:<br>
 Dec. 2009)
 |-
+|
 |[http://www.rawak.de/ij2x/imagej2x.html ImageJ2x]
 |[http://rawak.de/ Rawak Software]
 |ImageJ2x is a fork of ImageJ1, modified to use a Swing interface.
@@ -65,6 +72,7 @@ Dec. 2009)
 |Last update:<br>
 Sep. 2012
 |-
+|[[File:eu-hou-logo.png|64px]]
 |[http://www.euhou.net/index.php?option=com_content&task=view&id=7&Itemid=9 SalsaJ]
 |[http://www.euhou.net/ EU-HOU]
 |SalsaJ is a closed-source fork of ImageJ1 intended for use with professional astronomy images. It was designed to be used in classrooms, and has been localized into over 30 different languages.
@@ -72,6 +80,7 @@ Sep. 2012
 |Last update:<br>
 Oct. 2012
 |-
+|
 |[[ImageJX]]
 |Grant Harris
 |
@@ -82,12 +91,14 @@ The ImageJX software prototype was a proof of concept—an attempt to reorganize
 |Mar. 2009
 |Superceded by ImageJ2
 |-
+|
 |[[NIH Image]]
 |Wayne Rasband
 |NIH Image is a public domain image processing and analysis program for the Macintosh. It is the direct predecessor of ImageJ, and is no longer under active development (though see ImageSXM below).
 |1993 or earlier
 |Superceded by ImageJ
 |-
+|[[File:imagesxm-icon.png|64px]]
 |[[ImageSXM]]
 |Steve Barrett
 |Image SXM is a version of NIH Image that has been extended to handle the loading, display and analysis of scanning microscope images.
