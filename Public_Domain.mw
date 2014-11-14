@@ -1,0 +1,19 @@
+__NOTOC__{{Notice | For a summary of [[SciJava]] licensing, see the [[Licensing]] page.}}
+
+{{License
+| name = Public Domain
+| shortname = Unlicense
+| description = The unlicense is a template for dedicating your software to the public domain.
+| url = http://unlicense.org/
+| choosealicense = unlicense
+}}
+
+{{License
+| name = Creative Commons 0
+| shortname = CC0
+| description = CC0 enables scientists, educators, artists and other creators and owners of copyright- or database-protected content to waive those interests.
+| url = http://creativecommons.org/publicdomain/zero/1.0/legalcode
+| choosealicense = cc0
+| wikipedia = Creative_Commons_license#Zero_.2F_Public_domain
+| osswatch = cclicensing
+}}
