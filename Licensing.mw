@@ -1,0 +1,77 @@
+{{Notice | This page describes the ''legal'' structure of [[SciJava]] projects.
+* For information on their ''technical'' structure, see [[Architecture]].
+* For information on their ''social'' structure, see [[Governance]].}}
+{{Development | topics}}
+The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosystem, are licensed as [[Open Source]] software (OSS) projects. 
+
+For an introduction to OSS licensing, see [http://choosealicense.com/ http://choosealicense.com/].
+
+The table below summarizes the dominant license of each project's components.
+
+== Exceptions ==
+
+Since each project consists of many components, some may be licensed differently. You can always find the license of each project in a <code>LICENSE.txt</code> or similar file of the relevant repository on [[GitHub]]. That said, in general, the table below is accurate with very few exceptions. When there ''is'' an exception, it is typically licensed more permissively than the rest of the project—for example, the core of [[Bio-Formats]] is licensed under [[BSD-2]] ([https://github.com/openmicroscopy/bioformats/blob/develop/components/formats-bsd/LICENSE.txt 1]), and the [[ImageJ]] and [[SCIFIO]] tutorials are licensed under [[CC0]] ([https://github.com/imagej/imagej-tutorials/blob/master/README.md 1], [https://github.com/scifio/scifio-tutorials/blob/master/README.md 2]), waiving all copyright interest as allowed by law.
+
+== Project summary ==
+
+{| class="wikitable nicetable"
+| '''Logo'''
+| '''Project'''
+| '''License'''
+| '''Source'''
+|-
+| [[File:scijava-icon.png|48px]]
+| '''[[SciJava]]'''
+| [[BSD-2]]
+| [https://github.com/scijava/scijava-common/blob/master/LICENSE.txt 1]
+|-
+| [[File:imglib2-icon.png|48px]]
+| '''[[ImgLib2]]'''
+| [[BSD-2]]
+| [https://github.com/imglib/imglib2/blob/master/LICENSE.txt 1]
+|-
+| [[File:imagej1-icon.png|48px]]
+| '''[[ImageJ1]]'''
+| [[Public Domain]]<sup>†</sup>
+| [http://imagej.net/disclaimer.html 1]
+|-
+| [[File:imagej2-icon.png|48px]]
+| '''[[ImageJ2]]'''
+| [[BSD-2]]
+| [https://github.com/imagej/imagej/blob/master/LICENSE.txt 1]
+|-
+| [[File:scifio-icon.png|48px]]
+| '''[[SCIFIO]]'''
+| [[BSD-2]]
+| [https://github.com/scifio/scifio/blob/master/LICENSE.txt 1]
+|-
+| [[File:fiji-icon.png|48px]]
+| '''[[Fiji]]'''
+| [[GPLv3]]
+| [https://github.com/fiji/fiji/blob/master/LICENSES 1]
+|-
+| style="height: 48px" |
+| '''[[TrakEM2]]'''
+| [[GPLv3]]
+| [https://github.com/trakem2/TrakEM2/blob/master/README 1]
+|-
+| [[File:bio-formats-icon.png|48px]]
+| '''[[Bio-Formats]]'''
+| [[GPLv2]]
+| [https://github.com/openmicroscopy/bioformats/blob/develop/LICENSE.txt 1], [http://openmicroscopy.org/site/about/licensing-attribution 2]
+|-
+| [[File:knime-icon.png|48px]]
+| '''[[KNIME]]'''
+| [[GPLv3]]
+| [http://www.knime.org/downloads/full-license 1]
+|-
+| [[File:cellprofiler-icon.png|48px]]
+| '''[[CellProfiler]]'''
+| [[GPLv2]]
+| [https://github.com/CellProfiler/CellProfiler/blob/master/COPYING 1], [https://github.com/CellProfiler/CellProfiler/blob/master/LICENSE 2]
+|}
+<sup>†</sup> See note below for details.
+
+== A note about ImageJ1 ==
+
+The [[ImageJ 1.x]] project is developed at the National Institutes of Health, a United States government organization. Hence, pursuant to [http://www.copyright.gov/title17/92chap1.html#105 U.S. copyright law Title 17, Section 105], no copyright applies. However, that waiver of copyright applies only to U.S. law, and does not apply other countries. Furthermore, the ImageJ1 project includes substantial effort and code from individuals who are not U.S. government employees, making the legal status of ImageJ1 as a whole decidedly unclear. For further reading, see the [https://en.wikipedia.org/wiki/Copyright_status_of_work_by_the_U.S._government Wikipedia article "Copyright status of work by the U.S. government"].
