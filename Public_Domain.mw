@@ -1,15 +1,18 @@
 __NOTOC__{{Notice | For a summary of [[SciJava]] licensing, see the [[Licensing]] page.}}
 
+Software in the '''public domain''' disclaims all copyright interest, being freely available to everyone for any purpose. There are several ways (summarized below) to dedicate software to the public domain—although be warned that some jurisdictions do not recognize the legal concept of "public domain" at all.
+
+See the [http://en.wikipedia.org/wiki/Public_domain_software Wikipedia article on public domain software] for more information.
+
 {{License
-| name = Public Domain
+| name = Unlicense
 | shortname = Unlicense
-| description = The unlicense is a template for dedicating your software to the public domain.
+| description = The Unlicense is a template for dedicating your software to the public domain.
 | url = http://unlicense.org/
 | choosealicense = unlicense
 }}
-
 {{License
-| name = Creative Commons 0
+| name = Creative Commons 0 1.0 Universal
 | shortname = CC0
 | description = CC0 enables scientists, educators, artists and other creators and owners of copyright- or database-protected content to waive those interests.
 | url = http://creativecommons.org/publicdomain/zero/1.0/legalcode
