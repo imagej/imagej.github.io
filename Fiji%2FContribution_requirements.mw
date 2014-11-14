@@ -71,7 +71,7 @@ All of Fiji's components are deployed by Jenkins to the [http://maven.imagej.net
 
 The following guidelines are less technical and more philosophical, but represent best practice for core Fiji components.
 
-== Development should be an open process ==
+== Open development process ==
 
 Developers of Fiji components should invite others to contribute. That entails welcoming developers, acknowledging and working on pull requests, encouraging improvements, working together, enhancing upon each others' work, share insights, etc.
 
