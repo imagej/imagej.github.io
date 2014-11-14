@@ -6,8 +6,8 @@ The license text can be found at:
 
 == See also ==
 
-{{#if:{{{osswatch|}}}|* [http://oss-watch.ac.uk/resources/{{{osswatch}}} {{{name}}} on OSS Watch]|}}
 {{#if:{{{wikipedia|}}}|* [https://en.wikipedia.org/wiki/{{{wikipedia}}} {{{name}}} on Wikipedia]|}}
+{{#if:{{{osswatch|}}}|* [http://oss-watch.ac.uk/resources/{{{osswatch}}} {{{name}}} on OSS Watch]|}}
 {{{links|}}}
 
 [[Category:License]]</includeonly>
