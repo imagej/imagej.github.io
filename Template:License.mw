@@ -1,5 +1,9 @@
 <includeonly>{{{description|}}}
 
+The license text can be found at:
+
+  [{{{url}}} {{{url}}}]
+
 == See also ==
 
 {{#if:{{{osswatch|}}}|* [http://oss-watch.ac.uk/resources/{{{osswatch}}} {{{name}}} on OSS Watch]|}}
