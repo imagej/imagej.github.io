@@ -871,5 +871,9 @@ sup, sub {
     vertical-align: top;
     white-space: nowrap;
 }
- 
+
+#catlinks {
+    padding-top: 10px;
+}
+
 /* </nowiki></pre> */
