@@ -46,13 +46,10 @@ In general, if the rest of the Fiji distribution upgrades to a new major version
 
 [[Fiji]] and related [[SciJava]] software uses [[Maven]], an industry standard to declare metadata about a project, to build projects using said metadata, and to ''deploy'' the resulting artifacts to a [[Architecture#Maven_repositories|Maven repository]]. Such repositories are essentially for developers what [[update sites]] are for users.
 
-The minimum requirement for core Fiji projects is to use a build system (e.g., [[Maven]] or Gradle) that automatically deploys required artifacts to the [http://maven.imagej.net/ ImageJ Maven repository], such that they can be consumed by downstream code, including other Fiji projects. Required artifacts to deploy include the main JAR and POM files, <code>-tests</code> JAR, <code>-sources</code> JAR and <code>-javadoc</code> JAR.
-
-To facilitate this, most Fiji projects inherit a common Maven configuration from the [https://github.com/fiji/pom-fiji pom-fiji] parent project. This configuration ensures that not only the compiled ''.jar'' files are deployed, but also the Javadocs and the sources. Therefore, it is strongly encouraged to extend this parent; see the [[Architecture#Maven_component_structure|Maven component structure]] section for details.
-
-All of Fiji's components are deployed by Jenkins to the [http://maven.imagej.net/ ImageJ Maven repository] or to [http://oss.sonatype.org/ OSS Sonatype]. That way, all Fiji components can be added easily as dependencies to downstream projects.
-
-All Fiji components are declared in the toplevel [https://github.com/fiji/fiji fiji] project's POM as dependencies, and declared in the [https://github.com/fiji/pom-fiji pom-fiji] parent as ''managed dependencies'', as part of Fiji's [[Architecture#Bill_of_Materials|Bill of Materials]].
+* The minimum requirement for core Fiji projects is to use a build system (e.g., [[Maven]] or Gradle) that automatically deploys required artifacts to the [http://maven.imagej.net/ ImageJ Maven repository], such that they can be consumed by downstream code, including other Fiji projects. Required artifacts to deploy include the main JAR and POM files, <code>-tests</code> JAR, <code>-sources</code> JAR and <code>-javadoc</code> JAR.
+* To facilitate this, most Fiji projects inherit a common Maven configuration from the [https://github.com/fiji/pom-fiji pom-fiji] parent project. This configuration ensures that not only the compiled ''.jar'' files are deployed, but also the Javadocs and the sources. Therefore, it is strongly encouraged to extend this parent; see the [[Architecture#Maven_component_structure|Maven component structure]] section for details.
+* All of Fiji's components are deployed by Jenkins to the [http://maven.imagej.net/ ImageJ Maven repository] or to [http://oss.sonatype.org/ OSS Sonatype]. That way, all Fiji components can be added easily as dependencies to downstream projects.
+* All Fiji components are declared in the toplevel [https://github.com/fiji/fiji fiji] project's POM as dependencies, and declared in the [https://github.com/fiji/pom-fiji pom-fiji] parent as ''managed dependencies'', as part of Fiji's [[Architecture#Bill_of_Materials|Bill of Materials]].
 
 = Guidelines =
 
