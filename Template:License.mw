@@ -6,7 +6,7 @@ The {{{shortname}}} license text can be found at:
 
   [{{{url}}} {{{url}}}]
 
-== See also ==
+=== See also ===
 
 {{#if:{{{choosealicense|}}}|* [http://choosealicense.com/licenses/{{{choosealicense}}}/ {{{shortname}}} on choosealicense.com]|}}
 {{#if:{{{wikipedia|}}}|* [https://en.wikipedia.org/wiki/{{{wikipedia}}} {{{shortname}}} on Wikipedia]|}}
