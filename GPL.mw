@@ -3,6 +3,7 @@
 | shortname = GPLv3
 | description = The GNU General Public License is a free, copyleft license for software and other kinds of works.
 | url = http://www.gnu.org/licenses/gpl.html
+| choosealicense = gpl-3.0
 | wikipedia = GNU_General_Public_License
 | osswatch = gplv3
 | osi = gpl-license
