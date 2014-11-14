@@ -58,6 +58,7 @@
 {{Submenu | Fiji |
 {{MenuItem | [[Developing Fiji|Introduction]] }}
 {{MenuItem | [[Developing Fiji in Eclipse|Eclipse]] }}
+{{MenuItem | [[Fiji contribution requirements|Contribution requirements]] }}
 | {{#ifeq:{{{1}}}|fiji||collapsed}}
 }}
 
