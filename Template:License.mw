@@ -1,13 +1,15 @@
-<includeonly>{{{description|}}}
+<includeonly>== {{{name}}} ==
 
-The license text can be found at:
+{{{description|}}}
+
+The {{{shortname}}} license text can be found at:
 
   [{{{url}}} {{{url}}}]
 
 == See also ==
 
-{{#if:{{{wikipedia|}}}|* [https://en.wikipedia.org/wiki/{{{wikipedia}}} {{{name}}} on Wikipedia]|}}
-{{#if:{{{osswatch|}}}|* [http://oss-watch.ac.uk/resources/{{{osswatch}}} {{{name}}} on OSS Watch]|}}
+{{#if:{{{wikipedia|}}}|* [https://en.wikipedia.org/wiki/{{{wikipedia}}} {{{shortname}}} on Wikipedia]|}}
+{{#if:{{{osswatch|}}}|* [http://oss-watch.ac.uk/resources/{{{osswatch}}} {{{shortname}}} on OSS Watch]|}}
 {{{links|}}}
 
 [[Category:License]]</includeonly>
