@@ -1,7 +1,7 @@
 {{Notice | This page describes the ''legal'' structure of [[SciJava]] projects.
 * For information on their ''technical'' structure, see [[Architecture]].
 * For information on their ''social'' structure, see [[Governance]].}}
-{{Development | topics}}
+{{Development}}
 The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosystem, are licensed as [[Open Source]] software (OSS) projects. 
 
 For an introduction to OSS licensing, see [http://choosealicense.com/ http://choosealicense.com/].
