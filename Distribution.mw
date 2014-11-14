@@ -5,7 +5,7 @@ __NOTOC__{{Development | plugins}}If you create a useful extension of ImageJ—e
 
 == Best practices ==
 
-Here is a quick summary of the options we recommend most:
+Here is a quick summary of the most recommended options:
 * '''Distribution.'''
 ** A) '''[[How to set up and populate an update site|create your own update site]]'''; or
 ** B) '''[[Fiji contribution requirements|bundle your plugin with Fiji]]'''.
