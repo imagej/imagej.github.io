@@ -21,7 +21,7 @@ As such, components distributed with Fiji must be licensed in a way [https://www
 
 Core Fiji development takes place on [[GitHub]]. This ensures continuity and visibility, and facilitates collaboration.
 
-You have two choices:
+There are two possibilities for where to host your project:
 
 {| class="wikitable"
 |
@@ -34,7 +34,7 @@ You have two choices:
 |-
 | '''<code>groupId</code>'''
 | <code>sc.fiji</code>
-| Something else (e.g., <code>com.github.yourOrg</code>)
+| Something else (e.g., <code>com.github.yourorg</code>)
 |-
 | '''Maintainership'''
 | [[Governance|Fiji maintainers]] help maintain the project.
