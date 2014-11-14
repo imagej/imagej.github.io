@@ -72,8 +72,8 @@ Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 | [[File:fiji-icon.png|48px]]
 | '''[[Fiji]]'''
 | [[User:Schindelin|Johannes Schindelin]]<br>[[User:Albertcardona|Albert Cardona]]
-| [[User:Schindelin|Johannes Schindelin]]
-| [[User:Schindelin|Johannes Schindelin]]<br>[[User:Rueden|Curtis Rueden]]<br>[[User:Hinerm|Mark Hiner]]
+| [[User:Schindelin|Johannes Schindelin]]<sup>2</sup><br>[[User:Rueden|Curtis Rueden]]
+| [[User:Schindelin|Johannes Schindelin]]<sup>2</sup><br>[[User:Rueden|Curtis Rueden]]<br>[[User:Hinerm|Mark Hiner]]
 | See the [https://github.com/orgs/fiji/people list on GitHub]
 | See [[Contributors]]
 |-
@@ -89,12 +89,12 @@ Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 | '''[[Bio-Formats]]'''
 | [[User:Rueden|Curtis Rueden]]<br>Kevin Eliceiri
 | [[User:Linkert|Melissa Linkert]]
-| [[User:Linkert|Melissa Linkert]]<br>[[User:Rueden|Curtis Rueden]]<sup>2</sup>
+| [[User:Linkert|Melissa Linkert]]<br>[[User:Rueden|Curtis Rueden]]<sup>3</sup>
 | See the [https://github.com/openmicroscopy/bioformats/graphs/contributors list on GitHub]
 | See [http://www.openmicroscopy.org/site/about/ome-contributors OME Contributors]
 |-
 | [[File:knime-icon.png|48px]]
-| '''[[KNIME]]'''<sup>3</sup>
+| '''[[KNIME]]'''<sup>4</sup>
 | [[User:Dietz|Christian Dietz]]
 | [[User:Dietz|Christian Dietz]]
 | [[User:Dietz|Christian Dietz]]
@@ -110,8 +110,9 @@ Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 | See [[Contributors]]
 |}
 <sup>1</sup> Pietzsch leads on day to day issues. Pietzsch, Preibisch and Saalfeld vote on primary decisions, with Pietzsch's vote breaking ties.
-<br><sup>2</sup> Rueden maintains the Bio-Formats [[update site]] for ImageJ, but is not otherwise a Bio-Formats maintainer.
-<br><sup>3</sup> For the purposes of this table, "KNIME" means the [[KNIME|KNIME Image Processing]] extensions, not the KNIME project as a whole.
+<br><sup>2</sup> Schindelin is currently on sabbatical from Fiji; see [https://groups.google.com/d/msg/fiji-devel/coIgXLws0eI/TZlwjXLyks0J this thread on fiji-devel].
+<br><sup>3</sup> Rueden maintains the Bio-Formats [[update site]] for ImageJ, but is not otherwise a Bio-Formats maintainer.
+<br><sup>4</sup> For the purposes of this table, "KNIME" means the [[KNIME|KNIME Image Processing]] extensions, not the KNIME project as a whole.
 
 == Further reading ==
 
