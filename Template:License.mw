@@ -1,0 +1,28 @@
+<includeonly>{{{description|}}}
+
+== See also ==
+
+{{#if:{{{osswatch|}}}|* [http://oss-watch.ac.uk/resources/{{{osswatch}}} {{{name}}} on OSS Watch]|}}
+{{#if:{{{wikipedia|}}}|* [https://en.wikipedia.org/wiki/{{{wikipedia}}} {{{name}}} on Wikipedia]|}}
+{{{links|}}}
+
+[[Category:License]]</includeonly>
+<noinclude>
+==Usage==
+<pre>
+{{License
+| name = Do What the Fuck You Want to Public License
+| shortname = WTFPL
+| url = http://www.wtfpl.net/
+| description = The WTFPL is a very permissive license for software and other scientific or artistic works that offers a great degree of freedom. In fact, it is probably the best license out there.
+| wikipedia = WTFPL
+}}
+</pre>
+{{License
+| name = Do What the Fuck You Want to Public License
+| shortname = WTFPL
+| url = http://www.wtfpl.net/
+| description = The WTFPL is a very permissive license for software and other scientific or artistic works that offers a great degree of freedom. In fact, it is probably the best license out there.
+| wikipedia = WTFPL
+}}
+</noinclude>
