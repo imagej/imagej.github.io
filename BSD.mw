@@ -1,3 +1,5 @@
+__NOTOC__{{Notice | For a summary of [[SciJava]] licensing, see the [[Licensing]] page.}}
+
 {{License
 | name = Simplified BSD License
 | shortname = BSD-2
@@ -7,6 +9,14 @@
 | url = http://choosealicense.com/licenses/bsd-2-clause/
 | choosealicense = bsd-2-clause
 | wikipedia = BSD_licenses
-| osswatch = bsd2
 | osi = BSD-2-Clause
+}}
+{{License
+| name = Modified BSD License
+| shortname = BSD-3
+| description = The '''Modified''' or '''New BSD''' (or '''BSD 3-clause''') license is the same as BSD-2, but with an additional clause prohibiting the names of the authors from being used to endorse or promote products relating to the software.
+| url = http://choosealicense.com/licenses/bsd-2-clause/
+| choosealicense = bsd-3-clause
+| osswatch = modbsd
+| osi = BSD-3-Clause
 }}
