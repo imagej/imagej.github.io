@@ -7,11 +7,11 @@ The {{{shortname}}} license text can be found at:
   [{{{url}}} {{{url}}}]
 
 === See also ===
-
-{{#if:{{{choosealicense|}}}|* [http://choosealicense.com/licenses/{{{choosealicense}}}/ {{{shortname}}} on choosealicense.com]|}}
-{{#if:{{{wikipedia|}}}|* [https://en.wikipedia.org/wiki/{{{wikipedia}}} {{{shortname}}} on Wikipedia]|}}
-{{#if:{{{osswatch|}}}|* [http://oss-watch.ac.uk/resources/{{{osswatch}}} {{{shortname}}} on OSS Watch]|}}
-{{#if:{{{osi|}}}|* [http://opensource.org/licenses/{{{osi}}} {{{shortname}}} on Open Source Initiative]|}}
+{{#if:{{{choosealicense|}}}|
+* [http://choosealicense.com/licenses/{{{choosealicense}}}/ {{{shortname}}} on choosealicense.com]|}}{{#if:{{{wikipedia|}}}|
+* [https://en.wikipedia.org/wiki/{{{wikipedia}}} {{{shortname}}} on Wikipedia]|}}{{#if:{{{osswatch|}}}|
+* [http://oss-watch.ac.uk/resources/{{{osswatch}}} {{{shortname}}} on OSS Watch]|}}{{#if:{{{osi|}}}|
+* [http://opensource.org/licenses/{{{osi}}} {{{shortname}}} on Open Source Initiative]|}}
 {{{links|}}}
 
 [[Category:License]]</includeonly>
