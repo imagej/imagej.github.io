@@ -1,0 +1,12 @@
+{{License
+| name = Simplified BSD License
+| shortname = BSD-2
+| description = The '''Simplified BSD''' (or '''BSD 2-clause''') license is a '''permissive''' software license. A licensee of BSD-licensed software can:
+* Use, copy and distribute the unmodified source or binary forms of the licensed program
+* Use, copy and distribute modified source or binary forms of the licensed program, provided that all distributed copies are accompanied by the license
+| url = http://choosealicense.com/licenses/bsd-2-clause/
+| choosealicense = bsd-2-clause
+| wikipedia = BSD_licenses
+| osswatch = bsd2
+| osi = BSD-2-Clause
+}}
