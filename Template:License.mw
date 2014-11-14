@@ -12,6 +12,7 @@ The {{{shortname}}} license text can be found at:
 
 {{#if:{{{wikipedia|}}}|* [https://en.wikipedia.org/wiki/{{{wikipedia}}} {{{shortname}}} on Wikipedia]|}}
 {{#if:{{{osswatch|}}}|* [http://oss-watch.ac.uk/resources/{{{osswatch}}} {{{shortname}}} on OSS Watch]|}}
+{{#if:{{{osi|}}}|* [http://opensource.org/licenses/{{{osi}}} {{{shortname}}} on Open Source Initiative]|}}
 {{{links|}}}
 
 [[Category:License]]</includeonly>
