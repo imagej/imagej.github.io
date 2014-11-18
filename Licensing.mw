@@ -17,8 +17,8 @@ Since each project consists of many components, some may be licensed differently
 {| class="wikitable nicetable"
 | '''Logo'''
 | '''Project'''
-| '''License'''
-| '''Source'''
+| '''Type'''
+| '''License text'''
 |-
 | [[File:scijava-icon.png|48px]]
 | '''[[SciJava]]'''
@@ -75,3 +75,15 @@ Since each project consists of many components, some may be licensed differently
 == A note about ImageJ1 ==
 
 The [[ImageJ 1.x]] project is developed at the National Institutes of Health, a United States government organization. Hence, pursuant to [http://www.copyright.gov/title17/92chap1.html#105 U.S. copyright law Title 17, Section 105], no copyright applies. However, that waiver of copyright applies only to U.S. law, and does not apply to other countries. Furthermore, the ImageJ1 project includes substantial effort and code from individuals who are not U.S. government employees, making the legal status of ImageJ1 as a whole decidedly unclear. For further reading, see the [https://en.wikipedia.org/wiki/Copyright_status_of_work_by_the_U.S._government Wikipedia article "Copyright status of work by the U.S. government"].
+
+== Developers: How to use this page ==
+
+If you will be creating and/or consuming open source code, you should familiarize yourself with the options for [http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html managing copyright information]. There are numerous tools for assisting in license management; in ImageJ projects, for example, the [http://mojo.codehaus.org/license-maven-plugin/ license-maven-plugin] is used to maintain file-scope copyright notices.
+
+=== Linking to these libraries ===
+
+If you are writing code (open source or not) that will use one or more of these libraries, you should first familiarize yourself with the type of license(s) used by your library(ies) of interest to determine the compatibility with the licensing of your own project. Then follow the corresponding ''License text'' column entry links to the actual document (if any) that needs to be distributed with your code.
+
+=== Applying these licenses ===
+
+If you are writing open source code and aren't sure how to license it, you can use this page to get a feel for how other ImageJ software layers are licensed, and thus what might be appropriate for your project. You can follow [http://opensource.org/faq#apply-license general tutorials] on applying open source licenses, or use the fantastic [http://choosealicense.com/licenses/ choosealicense.com] to guide your choice (which also includes ''How to apply this license'' instructions for each license).
