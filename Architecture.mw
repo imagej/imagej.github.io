@@ -112,19 +112,17 @@ All projects in these organizations use [[Maven]] for [[Project Management|proje
 | [http://maven.imagej.net/index.html#nexus-search;gav~io.scif io.scif]
 | {{GitHub|org=scifio|repo=pom-scifio|label=pom-scifio}}
 |-
-| [[File:Fiji-icon.png|48px]]
+| rowspan=3 style="vertical-align: middle" | [[File:Fiji-icon.png|48px]]
 | [[Fiji]]
 | [https://github.com/fiji fiji]
 | [http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji sc.fiji]
 | {{GitHub|org=fiji|repo=pom-fiji|label=pom-fiji}}
 |-
-| style="height: 48px" |
 | [[BigDataViewer]]
 | [https://github.com/bigdataviewer bigdataviewer]
 | [http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji sc.fiji]
 | {{GitHub|org=bigdataviewer|repo=pom-bigdataviewer|label=pom-bigdataviewer}}
 |-
-| style="height: 48px" |
 | [[TrakEM2]]
 | [https://github.com/trakem2 trakem2]
 | [http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji sc.fiji]
