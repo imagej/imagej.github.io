@@ -66,12 +66,14 @@ digraph poms {
     "pom-imagej" [color=yellow, style=filled, URL="[https://github.com/imagej/pom-imagej]"]
     "pom-scifio" [color=lightblue, style=filled, URL="[https://github.com/scifio/pom-scifio]"]
     "pom-fiji" [color=orange, style=filled, URL="[https://github.com/fiji/pom-fiji]"]
+    "pom-bigdataviewer" [color=lavender, style=filled, URL="[https://github.com/bigdataviewer/pom-bigdataviewer]"]
     "pom-trakem2" [color=lavender, style=filled, URL="[https://github.com/trakem2/TrakEM2]"]
     "pom-loci" [color=gray, style=filled, URL="[https://github.com/uw-loci/pom-loci]"]
     "pom-scijava" -> "pom-imagej"
     "pom-imagej" -> "pom-imglib2"
     "pom-imagej" -> "pom-scifio"
     "pom-imagej" -> "pom-fiji"
+    "pom-fiji" -> "pom-bigdataviewer"
     "pom-fiji" -> "pom-trakem2"
     "pom-scijava" -> "pom-loci"
 }
@@ -115,6 +117,12 @@ All projects in these organizations use [[Maven]] for [[Project Management|proje
 | [https://github.com/fiji fiji]
 | [http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji sc.fiji]
 | {{GitHub|org=fiji|repo=pom-fiji|label=pom-fiji}}
+|-
+| style="height: 48px" |
+| [[BigDataViewer]]
+| [https://github.com/bigdataviewer bigdataviewer]
+| [http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji sc.fiji]
+| {{GitHub|org=bigdataviewer|repo=pom-bigdataviewer|label=pom-bigdataviewer}}
 |-
 | style="height: 48px" |
 | [[TrakEM2]]
