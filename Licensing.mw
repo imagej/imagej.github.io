@@ -45,12 +45,15 @@ Since each project consists of many components, some may be licensed differently
 | [[BSD-2]]
 | [https://github.com/scifio/scifio/blob/master/LICENSE.txt 1]
 |-
-| [[File:fiji-icon.png|48px]]
+| rowspan=3 style="vertical-align: middle" | [[File:fiji-icon.png|48px]]
 | '''[[Fiji]]'''
 | [[GPLv3]]
 | [https://github.com/fiji/fiji/blob/master/LICENSES 1]
 |-
-| style="height: 48px" |
+| '''[[BigDataViewer]]'''
+| [[GPLv3]]
+| [https://github.com/bigdataviewer/bigdataviewer-core/blob/master/LICENSE 1]
+|-
 | '''[[TrakEM2]]'''
 | [[GPLv3]]
 | [https://github.com/trakem2/TrakEM2/blob/master/README 1]
