@@ -24,8 +24,8 @@ Core Fiji development takes place on [[GitHub]]. This ensures continuity and vis
 
 There are two possibilities for where to host your project:
 
-# Repository is hosted in the [https://github.com/fiji fiji organization], or a descendant organization (e.g., [https://github.com/trakem2 trakem2]). [[Governance|Fiji maintainers]] help maintain the project.
-# Repository is hosted in a GitHub organization you control. You alone maintain the project (though Fiji maintainers may submit PRs to help).
+# '''Standard.''' Repository is hosted in the [https://github.com/fiji fiji organization], or a descendant organization (e.g., [https://github.com/trakem2 trakem2]). [[Governance|Fiji maintainers]] help maintain the project.
+# '''External.''' Repository is hosted in a GitHub organization you control. You alone maintain the project (though Fiji maintainers may submit PRs to help).
 
 == Continuous integration: Jenkins ==
 
