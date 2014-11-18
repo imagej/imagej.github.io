@@ -121,7 +121,7 @@ The following table provides a few examples of how various Fiji components are s
 | [[Coloc 2]]
 | style="text-align: center" | {{Yes}}
 | [http://fiji.sc/update/ Fiji]
-| ?
+| [[GPLv3]]
 | [https://github.com/fiji fiji]
 | {{GitHub | org = fiji | repo = Colocalisation_Analysis | label = Colocalisation_Analysis}}
 | <code>sc.fiji</code>
@@ -133,7 +133,7 @@ The following table provides a few examples of how various Fiji components are s
 | [[Simple Neurite Tracer]]
 | style="text-align: center" | {{Yes}}
 | [http://fiji.sc/update/ Fiji]
-| ?
+| [[GPLv3]]
 | [https://github.com/fiji fiji]
 | {{GitHub | org = fiji | repo = Simple_Neurite_Tracer | label = Simple_Neurite_Tracer}}
 | <code>sc.fiji</code>
