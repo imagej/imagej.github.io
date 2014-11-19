@@ -1,0 +1,45 @@
+__NOTOC__{{Notice | For a summary of [[SciJava]] licensing, see the [[Licensing]] page.}}
+{{Licenses}}
+Some components distributed with [[Fiji]] were developed by [http://www.imagescience.org/meijering/ Erik Meijering] as part of the [http://www.imagescience.org/ ImageScience] project.
+
+These components are licensed under proprietary terms, incompatible with the [[GPL]] and similar licenses.
+
+However, the [[Fiji]] project has obtained permission to distribute them as part of its distribution:
+<blockquote><pre>
+Date: Fri, 17 Sep 2010 13:47:28 +0200
+From: Erik Meijering <meijering@imagescience.org>
+
+[...] Nice to hear from you. Yes, you have my permission to redistribute
+TransformJ (and also FeatureJ and RandomJ if you're interested) as part of
+Fiji. That would be great!
+
+Best wishes,
+
+Erik
+</pre></blockquote>
+
+See the {{GitHub | repo = fiji | path = LICENSES | label = Fiji LICENSES file}} for details.
+
+== List of ImageScience components ==
+
+The following components are expressly or implicitly licensed this way:
+
+{| class="wikitable"
+| '''Project'''
+| '''License text'''
+|-
+| '''[[FeatureJ]]'''
+| http://www.imagescience.org/meijering/software/featurej/
+|-
+| '''[[MTrackJ]]'''
+| http://www.imagescience.org/meijering/software/mtrackj/
+|-
+| '''[[RandomJ]]'''
+| http://www.imagescience.org/meijering/software/randomj/
+|-
+| '''[[TransformJ]]'''
+| http://www.imagescience.org/meijering/software/transformj/
+|-
+| '''[[imagescience]]'''
+| Implicit
+|}
