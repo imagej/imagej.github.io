@@ -1,6 +1,16 @@
-{{ Menu | Licenses
+{{Menu | Licenses
 |
-* [[GPL]]
-* [[BSD]]
-* [[Public Domain|Public domain]]
+{{Submenu | Open Source |
+{{MenuItem | [[GPL]] }}
+{{MenuItem | [[BSD]] }}
+{{MenuItem | [[Public Domain|Public domain]] }}
+|
+}}
+
+{{Submenu | Proprietary |
+{{MenuItem | [[ImageScience_License | ImageScience]] }}
+{{MenuItem | [[BIG_License | BIG]] }}
+|
+}}
+
 }}
