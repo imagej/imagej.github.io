@@ -1,5 +1,15 @@
+{{Infobox
+| software               = ImageJ
+| name                   = FeatureJ
+| maintainer             = Erik Meijering
+| author                 = Erik Meijering
+| source                 = {{GitHub|org=fiji|repo=FeatureJ}}
+| status                 = 
+| category               = [[:Category:Plugins]]
+| website                = http://imagescience.org/meijering/software/featurej/
+}}
 The [http://imagescience.org/meijering/software/featurej/ FeatureJ] suite of plugins offers extraction of differential features of images.
 
-Thanks to Erik Meijering, Fiji is allowed to redistribute this plugin suite along with its source code!
+Thanks to Erik Meijering, Fiji is [[ImageScience License|allowed to redistribute this plugin suite]] along with its source code!
 
 [[Category:Plugins]]
