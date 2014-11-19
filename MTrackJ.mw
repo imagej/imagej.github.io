@@ -1,6 +1,18 @@
+{{Infobox
+| software               = ImageJ
+| name                   = MTrackJ
+| maintainer             = Erik Meijering
+| author                 = Erik Meijering
+| source                 = {{GitHub|org=fiji|repo=MTrackJ}}
+| status                 = 
+| category               = [[:Category:Plugins]]
+| website                = http://imagescience.org/meijering/software/mtrackj/
+}}
 [http://www.imagescience.org/meijering/software/mtrackj/ MTrackJ] is an ImageJ plugin developed by Erik Meijering to facilitate manual tracking of moving objects in image sequences and the measurement of basic track statistics.
 
 The plugin can handle up to five-dimensional (5D) images of any type supported by ImageJ/Fiji.
+
+Thanks to Erik Meijering, Fiji is [[ImageScience License|allowed to redistribute this plugin suite]] along with its source code!
 
 [[Category:Plugins]]
 [[Category:Tracking]]
