@@ -72,6 +72,11 @@ Since each project consists of many components, some may be licensed differently
 | '''[[CellProfiler]]'''
 | [[GPLv2]]
 | [https://github.com/CellProfiler/CellProfiler/blob/master/COPYING 1], [https://github.com/CellProfiler/CellProfiler/blob/master/LICENSE 2]
+|-
+| [[File:omero-icon.png|48px]]
+| '''[[OMERO]]'''
+| [[GPLv2]]
+| [https://github.com/openmicroscopy/openmicroscopy/blob/develop/LICENSE.txt 1], [http://openmicroscopy.org/site/about/licensing-attribution 2]
 |}
 <sup>†</sup> See note below for details.
 
