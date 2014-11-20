@@ -1,4 +1,4 @@
-{{Infobox
+{{Warning | This page documents a plugin that is '''not yet released!'''}}{{Infobox
 | software               = ImageJ
 | name                   = MaMuT
 | maintainer             = [[User:JeanYvesTinevez|Jean-Yves Tinevez]]
@@ -6,9 +6,8 @@
 | source                 = {{GitHub | org=fiji | repo=MaMuT}}
 | status                 = not yet released
 | category               = [[:Category:Plugins]]
-}}
-A Fiji plugin for Massive Annotation.
+}}A Fiji plugin for Massive Annotation.
 
-Enable the '''MaMuT''' [[update site]] for development versions.
+Enable the [http://sites.imagej.net/MaMuT/ MaMuT update site] for development versions.
 
 [[Category:Plugins]]
