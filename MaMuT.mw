@@ -1,0 +1,14 @@
+{{Infobox
+| software               = ImageJ
+| name                   = MaMuT
+| maintainer             = Jean-Yves Tinevez
+| author                 = Jean-Yves Tinevez
+| source                 = {{GitHub | org=fiji | repo=MaMuT}}
+| status                 = not yet released
+| category               = [[:Category:Plugins]]
+}}
+A Fiji plugin for Massive Annotation.
+
+Enable the '''MaMuT''' [[update site]] for development versions.
+
+[[Category:Plugins]]
