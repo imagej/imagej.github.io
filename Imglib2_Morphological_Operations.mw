@@ -151,11 +151,9 @@ File:DiskDecompPerformanceComparison.png|Processing time ratio.
 </gallery>
 
 
-=== Decomposition for other dimensionalities. ==
+=== Decomposition for other dimensionalities. ===
 
 I am unable to derive an efficient decomposition of the disk STREL for the 3D case. Also, I was unable so far to find an implementation example or clear literature about such a decomposition. The closest I reach was this [http://ismm.dpi.inpe.br/col/dpi.inpe.br/ismm@80/2007/03.20.04.48/doc/ISMM2007fullpaper/fullpaper.pdf publication] that describes a possible method (proposed in [http://dsp.stackexchange.com/questions/12675/decomposition-of-3d-structuring-elements-for-morphological-operations this DSP thread]) but it missed the implementation details that could make it practical.
-
-
 
 = References and links. =
 
