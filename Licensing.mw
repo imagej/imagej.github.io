@@ -34,183 +34,84 @@ Since each project consists of many components, some may be licensed differently
 | class="yesno" style="font-size: 9px" | Hold<br>Liable
 | class="yesno" style="font-size: 9px" | Sublicensing
 |-
+| [[File:imagej1-icon.png|48px]]
+| '''[[ImageJ1]]'''
+| [http://imagej.net/disclaimer.html Disclaimer]
+| style="vertical-align: middle" | [[Public Domain]]<sup>†</sup>
+| class="yesno" | {{No}}
+| class="yesno" | {{No}}
+| class="yesno" | {{No}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | -
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | {{Yes}}
+|-
 | [[File:scijava-icon.png|48px]]
 | '''[[SciJava]]'''
 | [https://github.com/scijava/scijava-common/blob/master/LICENSE.txt License]
-| [[BSD-2]]
-| class="yesno" | {{No}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{No}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | -
-| class="yesno" | {{Yes}}
-| class="yesno" | {{No}}
-| class="yesno" | -
+| rowspan=4 style="vertical-align: middle" | [[BSD-2]]
+| rowspan=4 class="yesno" | {{No}}
+| rowspan=4 class="yesno" | {{Yes}}
+| rowspan=4 class="yesno" | {{No}}
+| rowspan=4 class="yesno" | {{Yes}}
+| rowspan=4 class="yesno" | {{Yes}}
+| rowspan=4 class="yesno" | {{Yes}}
+| rowspan=4 class="yesno" | -
+| rowspan=4 class="yesno" | {{Yes}}
+| rowspan=4 class="yesno" | {{No}}
+| rowspan=4 class="yesno" | -
 |-
 | [[File:imglib2-icon.png|48px]]
 | '''[[ImgLib2]]'''
 | [https://github.com/imglib/imglib2/blob/master/LICENSE.txt License]
-| [[BSD-2]]
-| class="yesno" | {{No}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{No}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | -
-| class="yesno" | {{Yes}}
-| class="yesno" | {{No}}
-| class="yesno" | -
-|-
-| [[File:imagej1-icon.png|48px]]
-| '''[[ImageJ1]]'''
-| [http://imagej.net/disclaimer.html Disclaimer]
-| [[Public Domain]]<sup>†</sup>
-| class="yesno" | {{No}}
-| class="yesno" | {{No}}
-| class="yesno" | {{No}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | -
-| class="yesno" | {{Yes}}
-| class="yesno" | {{No}}
-| class="yesno" | {{Yes}}
 |-
 | [[File:imagej2-icon.png|48px]]
 | '''[[ImageJ2]]'''
 | [https://github.com/imagej/imagej/blob/master/LICENSE.txt License]
-| [[BSD-2]]
-| class="yesno" | {{No}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{No}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | -
-| class="yesno" | {{Yes}}
-| class="yesno" | {{No}}
-| class="yesno" | -
 |-
 | [[File:scifio-icon.png|48px]]
 | '''[[SCIFIO]]'''
 | [https://github.com/scifio/scifio/blob/master/LICENSE.txt License]
-| [[BSD-2]]
-| class="yesno" | {{No}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{No}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | -
-| class="yesno" | {{Yes}}
-| class="yesno" | {{No}}
-| class="yesno" | -
-|-
-| rowspan=3 style="vertical-align: middle" | [[File:fiji-icon.png|48px]]
-| '''[[Fiji]]'''
-| [https://github.com/fiji/fiji/blob/master/LICENSES Licenses]
-| [[GPLv3]]
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{No}}
-| class="yesno" | {{No}}
-|-
-| '''[[BigDataViewer]]'''
-| [https://github.com/bigdataviewer/bigdataviewer-core/blob/master/LICENSE License]
-| [[GPLv3]]
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{No}}
-| class="yesno" | {{No}}
-|-
-| '''[[TrakEM2]]'''
-| [https://github.com/trakem2/TrakEM2/blob/master/README Readme]
-| [[GPLv3]]
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{No}}
-| class="yesno" | {{No}}
 |-
 | [[File:bio-formats-icon.png|48px]]
 | '''[[Bio-Formats]]'''
 | [https://github.com/openmicroscopy/bioformats/blob/develop/LICENSE.txt License], [http://openmicroscopy.org/site/about/licensing-attribution Info]
-| [[GPLv2]]
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{No}}
-| class="yesno" | {{No}}
+| rowspan=7 style="vertical-align: middle" | [[GPL]]
+| rowspan=7 class="yesno" | {{Yes}}
+| rowspan=7 class="yesno" | {{Yes}}
+| rowspan=7 class="yesno" | {{Yes}}
+| rowspan=7 class="yesno" | {{Yes}}
+| rowspan=7 class="yesno" | {{Yes}}
+| rowspan=7 class="yesno" | {{Yes}}
+| rowspan=7 class="yesno" | {{Yes}}
+| rowspan=7 class="yesno" | {{Yes}}
+| rowspan=7 class="yesno" | {{No}}
+| rowspan=7 class="yesno" | {{No}}
 |-
-| [[File:knime-icon.png|48px]]
-| '''[[KNIME]]'''
-| [http://www.knime.org/downloads/full-license License]
-| [[GPLv3]]
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{No}}
-| class="yesno" | {{No}}
+| rowspan=3 style="vertical-align: middle" | [[File:fiji-icon.png|48px]]
+| '''[[Fiji]]'''
+| [https://github.com/fiji/fiji/blob/master/LICENSES Licenses]
+|-
+| '''[[BigDataViewer]]'''
+| [https://github.com/bigdataviewer/bigdataviewer-core/blob/master/LICENSE License]
+|-
+| '''[[TrakEM2]]'''
+| [https://github.com/trakem2/TrakEM2/blob/master/README Readme]
 |-
 | [[File:cellprofiler-icon.png|48px]]
 | '''[[CellProfiler]]'''
 | [https://github.com/CellProfiler/CellProfiler/blob/master/LICENSE License], [https://github.com/CellProfiler/CellProfiler/blob/master/COPYING Info]
-| [[GPLv2]]
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{No}}
-| class="yesno" | {{No}}
 |-
 | [[File:omero-icon.png|48px]]
 | '''[[OMERO]]'''
 | [https://github.com/openmicroscopy/openmicroscopy/blob/develop/LICENSE.txt License], [http://openmicroscopy.org/site/about/licensing-attribution Info]
-| [[GPLv2]]
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{Yes}}
-| class="yesno" | {{No}}
-| class="yesno" | {{No}}
+|-
+| [[File:knime-icon.png|48px]]
+| '''[[KNIME]]'''
+| [http://www.knime.org/downloads/full-license License]
 |}
 <span>*</span> See [http://choosealicense.com/ choosealicense.com] for details.
 <br><sup>†</sup> See note below for details.
