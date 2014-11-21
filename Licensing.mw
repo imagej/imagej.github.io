@@ -15,70 +15,205 @@ Since each project consists of many components, some may be licensed differently
 == Project summary ==
 
 {| class="wikitable nicetable"
+| colspan=4 style="text-align: center" | '''Basics'''
+| colspan=3 style="text-align: center" | '''Required*'''
+| colspan=7 style="text-align: center" | '''Permitted*'''
+|-
 | '''Logo'''
 | '''Project'''
-| '''Type'''
 | '''License'''
+| '''Type'''
+| class="yesno" style="font-size: 9px" | Disclose<br>Source
+| class="yesno" style="font-size: 9px" | License<br>and<br>copyright<br>notice
+| class="yesno" style="font-size: 9px" | State<br>Changes
+| class="yesno" style="font-size: 9px" | Commercial<br>Use
+| class="yesno" style="font-size: 9px" | Distribution
+| class="yesno" style="font-size: 9px" | Modification
+| class="yesno" style="font-size: 9px" | Patent<br>Grant
+| class="yesno" style="font-size: 9px" | Private<br>Use
+| class="yesno" style="font-size: 9px" | Hold<br>Liable
+| class="yesno" style="font-size: 9px" | Sublicensing
 |-
 | [[File:scijava-icon.png|48px]]
 | '''[[SciJava]]'''
-| [[BSD-2]]
 | [https://github.com/scijava/scijava-common/blob/master/LICENSE.txt License]
+| [[BSD-2]]
+| class="yesno" | {{No}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | -
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | -
 |-
 | [[File:imglib2-icon.png|48px]]
 | '''[[ImgLib2]]'''
-| [[BSD-2]]
 | [https://github.com/imglib/imglib2/blob/master/LICENSE.txt License]
+| [[BSD-2]]
+| class="yesno" | {{No}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | -
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | -
 |-
 | [[File:imagej1-icon.png|48px]]
 | '''[[ImageJ1]]'''
-| [[Public Domain]]<sup>†</sup>
 | [http://imagej.net/disclaimer.html Disclaimer]
+| [[Public Domain]]<sup>†</sup>
+| class="yesno" | {{No}}
+| class="yesno" | {{No}}
+| class="yesno" | {{No}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | -
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | {{Yes}}
 |-
 | [[File:imagej2-icon.png|48px]]
 | '''[[ImageJ2]]'''
-| [[BSD-2]]
 | [https://github.com/imagej/imagej/blob/master/LICENSE.txt License]
+| [[BSD-2]]
+| class="yesno" | {{No}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | -
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | -
 |-
 | [[File:scifio-icon.png|48px]]
 | '''[[SCIFIO]]'''
-| [[BSD-2]]
 | [https://github.com/scifio/scifio/blob/master/LICENSE.txt License]
+| [[BSD-2]]
+| class="yesno" | {{No}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | -
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | -
 |-
 | rowspan=3 style="vertical-align: middle" | [[File:fiji-icon.png|48px]]
 | '''[[Fiji]]'''
-| [[GPLv3]]
 | [https://github.com/fiji/fiji/blob/master/LICENSES Licenses]
+| [[GPLv3]]
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | {{No}}
 |-
 | '''[[BigDataViewer]]'''
-| [[GPLv3]]
 | [https://github.com/bigdataviewer/bigdataviewer-core/blob/master/LICENSE License]
+| [[GPLv3]]
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | {{No}}
 |-
 | '''[[TrakEM2]]'''
-| [[GPLv3]]
 | [https://github.com/trakem2/TrakEM2/blob/master/README Readme]
+| [[GPLv3]]
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | {{No}}
 |-
 | [[File:bio-formats-icon.png|48px]]
 | '''[[Bio-Formats]]'''
-| [[GPLv2]]
 | [https://github.com/openmicroscopy/bioformats/blob/develop/LICENSE.txt License], [http://openmicroscopy.org/site/about/licensing-attribution Info]
+| [[GPLv2]]
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | {{No}}
 |-
 | [[File:knime-icon.png|48px]]
 | '''[[KNIME]]'''
-| [[GPLv3]]
 | [http://www.knime.org/downloads/full-license License]
+| [[GPLv3]]
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | {{No}}
 |-
 | [[File:cellprofiler-icon.png|48px]]
 | '''[[CellProfiler]]'''
-| [[GPLv2]]
 | [https://github.com/CellProfiler/CellProfiler/blob/master/LICENSE License], [https://github.com/CellProfiler/CellProfiler/blob/master/COPYING Info]
+| [[GPLv2]]
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | {{No}}
 |-
 | [[File:omero-icon.png|48px]]
 | '''[[OMERO]]'''
-| [[GPLv2]]
 | [https://github.com/openmicroscopy/openmicroscopy/blob/develop/LICENSE.txt License], [http://openmicroscopy.org/site/about/licensing-attribution Info]
+| [[GPLv2]]
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{Yes}}
+| class="yesno" | {{No}}
+| class="yesno" | {{No}}
 |}
-<sup>†</sup> See note below for details.
+<span>*</span> See [http://choosealicense.com/ choosealicense.com] for details.
+<br><sup>†</sup> See note below for details.
 
 == A note about ImageJ1 ==
 
