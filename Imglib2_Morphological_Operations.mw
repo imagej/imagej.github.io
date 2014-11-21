@@ -131,16 +131,21 @@ In 3D, MATLAB does not offer a structuring element decomposition (yet). So the p
 
 === 2D Decomposition in periodic lines. ===
 
-In the 2D case, a disk structuring element can be decomposed in a succession of 4, 6 or 8 periodic lines<ref name="RolfAdams">Rolf Adams, [http://www.sciencedirect.com/science/article/pii/S1049965283710242 Radial Decomposition of Discs and Spheres], CVGIP: Graphical Models and Image Processing, vol. 55, no. 5, September 1993, pp. 325-332.</ref>. Doing so, the disk is only an approximate one.
-
-The first plot below indicates the percentage of pixels that are a mismatch compared to the "true" disk (by "true" I mean as best as digitizing a disk on a square matrix can be). In practice, this plot is rather uninformative. The plot below gives the effective aspect of the decomposed disks.
-
-
+In the 2D case, a disk structuring element can be decomposed in a succession of 4, 6 or 8 periodic lines<ref name="RolfAdams">Rolf Adams, [http://www.sciencedirect.com/science/article/pii/S1049965283710242 Radial Decomposition of Discs and Spheres], CVGIP: Graphical Models and Image Processing, vol. 55, no. 5, September 1993, pp. 325-332.</ref>. Doing so, the shape of the disk is only an approximate one. The first plot below indicates the percentage of pixels that are a mismatch compared to the "true" disk (by "true" I mean as best as digitizing a disk on a square matrix can be). In practice, this plot is rather uninformative. The second plot gives the effective aspect of the decomposed disks:
 
 <gallery heights="300" widths="300" mode="packed-hover">
 File:DiskDecompError.png|Error percentage when approximating a disk STREL with a PL decomposition.
 File:DiskDecompErrorLook.png|Aspect of the disk STREL decomposition in periodic lines, with varying radius.
 </gallery>
+
+As for performance, you can see below that it is always best to use any decomposition as soon as the radius is larger than 3. This is a lucky limit, because the periodic line decomposition gives very approximated shapes for small radii.
+
+<gallery heights="300" widths="300" mode="packed-hover">
+File:DiskDecompPerformance.png|Processing time for the dilation of a 100x100 image.
+File:DiskDecompPerformanceComparison.png|Processing time ratio.
+</gallery>
+
+
 
 
 
