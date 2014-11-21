@@ -4,7 +4,6 @@
 | software               = Fiji
 | author                 = Mark Longair
 | maintainer             = [[User:Mark|Mark Longair]]
-| filename               = link to the jar here
 | source                 = {{GitHub|org=fiji|repo=Feature_Detection|source=fiji/features/Frangi_.java}}
 | released               = February 2011
 | latest version         = 0.0
