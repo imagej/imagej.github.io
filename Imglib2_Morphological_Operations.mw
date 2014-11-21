@@ -3,13 +3,18 @@
 This page centralizes documentation and current performance of the morphological operation package in imglib2. As the package is under development, the information here might be irrelevant or useless</tt>
 
 
-== Rectangular structuring element ==
 
-=== Decomposition ===
+
+= Structuring elements. =
+
+
+== Rectangular structuring element. ==
+
+=== Decomposition. ===
 
 A rectangle can be decomposed in a series of orthogonal lines, in any dimensions, considerably diminishing the number of pixels to iterate. 
 
-==== 2D case ====
+==== 2D case. ====
 
 If the image has <code>M</code> pixels, and that the rectangle is a square of side 
 <code>R</code>, then the non-optimized case should have a processing time proportional to <code>M × R²</code>. The optimized case replace iterating over the square by iterating twice over a line of length <code>R</code>. Therefore its processing time should be proportional to <code> 2 × M × R</code>. 
@@ -21,7 +26,7 @@ File:RectangleStrel2DPerformance.png|Processing time for the dilation of a 100x1
 File:RectangleStrel2DPerformanceComparison.png|Processing time ratio.
 </gallery>
 
-==== 3D case ====
+==== 3D case. ====
 
 Here the standard case takes a time proportional to <code>M × R³</code>, and the optimized case a time proportional to <code> 3 × M × R</code>. Therefore the performance ratio should be  <code>R² / 3</code>. A fit shows that this ratio follows <code>0.63 × R² + 0.57 × R + 0.48</code>.
 
@@ -35,13 +40,13 @@ File:RectangleStrel3DPerformanceComparison.png|Processing time ratio.
 == Square structuring element ==
 
 
-=== Decomposition ===
+=== Decomposition. ===
 
 
 The square is just a special case of the rectangle, implemented for convenience. It has the same decomposition principle. And similar conclusions can be reached: 
 
 
-==== 2D case ====
+==== 2D case. ====
 
 <gallery heights="300" widths="300" mode="packed-hover">
 File:SquareStrel2DPerformance.png|Processing time for the dilation of a 100x100 image.
@@ -49,7 +54,7 @@ File:SquareStrel2DPerformanceComparison.png|Processing time ratio.
 File:SquareStrel2DPerformanceWMATLAB.png|First image zoomed to highlight MATLAB performance.
 </gallery>
 
-==== 3D case ====
+==== 3D case. ====
 
 
 <gallery heights="300" widths="300" mode="packed-hover">
@@ -88,7 +93,7 @@ And in 3D:
 
 It is the crudest approximation of a sphere.
 
-=== Decomposition ===
+=== Decomposition. ===
 
 The diamond strel can be effectively decomposed in 2D (and 1D) using the logarithmic decomposition in extreme sets, as explained in <ref name="BoomgardVanBalen">Rein van den Boomgard and Richard van Balen, [http://www.sciencedirect.com/science/article/pii/1049965292900553.htm Methods for Fast Morphological Image Transforms Using Bitmapped Binary Images], CVGIP: Models and Image Processing, vol. 54, no. 3, May 1992, pp. 252-254.</ref>. The shape is then decomposed in a minimal series of smaller diamond and diamond tips. The decomposition is exact, giving the same result that of the non-decomposed version. 
 
@@ -103,7 +108,7 @@ File:DiamondStrel2DPerformanceComparison.png|Processing time ratio.
 
 It is worth using a decomposition above a radius of 4.
 
-==== 3D performance ====
+==== 3D performance. ====
 
 
 <gallery heights="300" widths="300" mode="packed-hover">
@@ -113,7 +118,7 @@ File:DiamondStrel3DPerformanceComparison.png|Processing time ratio.
 
 It is worth using a decomposition in almost any cases.
 
-==== Comparison with MATLAB ====
+==== Comparison with MATLAB. ====
 
 MATLAB comes with a very nice morphology package. I actually took inspiration from to it to write the Imglib2 code. It is tempting to compare the performance of MATLAB vs Imglib2, even if this kind of comparison is always tricky and clumsy. Anyway, here it is. I just timed the duration required to perform the dilation of a provided source image, including the time required to generate the structuring element. Imglib2 tests above time the same process. But of course, the time required to generate the source image and to start MATLAB or to launch the Java tests are not included. I took care to include a 'warm-up' run to allow the JIT compiler to kick-in in all cases.
 
@@ -146,8 +151,13 @@ File:DiskDecompPerformanceComparison.png|Processing time ratio.
 </gallery>
 
 
+=== Decomposition for other dimensionalities. ==
+
+I am unable to derive an efficient decomposition of the disk STREL for the 3D case. Also, I was unable so far to find an implementation example or clear literature about such a decomposition. The closest I reach was this [http://ismm.dpi.inpe.br/col/dpi.inpe.br/ismm@80/2007/03.20.04.48/doc/ISMM2007fullpaper/fullpaper.pdf publication] that describes a possible method (proposed in [http://dsp.stackexchange.com/questions/12675/decomposition-of-3d-structuring-elements-for-morphological-operations this DSP thread]) but it missed the implementation details that could make it practical.
 
 
+
+= References and links. =
 
 <references/>
 
