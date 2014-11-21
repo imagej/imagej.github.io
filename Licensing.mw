@@ -37,7 +37,7 @@ Since each project consists of many components, some may be licensed differently
 | [[File:imagej1-icon.png|48px]]
 | '''[[ImageJ1]]'''
 | [http://imagej.net/disclaimer.html Disclaimer]
-| style="vertical-align: middle" | [[Public Domain]]<sup>†</sup>
+| style="vertical-align: middle" | [[Public Domain|Public]]<br>[[Public Domain|Domain]]<sup>†</sup>
 | class="yesno" | {{No}}
 | class="yesno" | {{No}}
 | class="yesno" | {{No}}
@@ -78,7 +78,7 @@ Since each project consists of many components, some may be licensed differently
 |-
 | [[File:bio-formats-icon.png|48px]]
 | '''[[Bio-Formats]]'''
-| [https://github.com/openmicroscopy/bioformats/blob/develop/LICENSE.txt License], [http://openmicroscopy.org/site/about/licensing-attribution Info]
+| [https://github.com/openmicroscopy/bioformats/blob/develop/LICENSE.txt License]<br>[http://openmicroscopy.org/site/about/licensing-attribution Info]
 | rowspan=7 style="vertical-align: middle" | [[GPL]]
 | rowspan=7 class="yesno" | {{Yes}}
 | rowspan=7 class="yesno" | {{Yes}}
@@ -103,11 +103,11 @@ Since each project consists of many components, some may be licensed differently
 |-
 | [[File:cellprofiler-icon.png|48px]]
 | '''[[CellProfiler]]'''
-| [https://github.com/CellProfiler/CellProfiler/blob/master/LICENSE License], [https://github.com/CellProfiler/CellProfiler/blob/master/COPYING Info]
+| [https://github.com/CellProfiler/CellProfiler/blob/master/LICENSE License]<br>[https://github.com/CellProfiler/CellProfiler/blob/master/COPYING Info]
 |-
 | [[File:omero-icon.png|48px]]
 | '''[[OMERO]]'''
-| [https://github.com/openmicroscopy/openmicroscopy/blob/develop/LICENSE.txt License], [http://openmicroscopy.org/site/about/licensing-attribution Info]
+| [https://github.com/openmicroscopy/openmicroscopy/blob/develop/LICENSE.txt License]<br>[http://openmicroscopy.org/site/about/licensing-attribution Info]
 |-
 | [[File:knime-icon.png|48px]]
 | '''[[KNIME]]'''
