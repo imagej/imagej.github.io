@@ -5,6 +5,46 @@ This page centralizes documentation and current performance of the morphological
 
 
 
+= Morphological operations. =
+
+
+== Morphological operations on <code>Comparable</code> type. ==
+
+Morphological operations are defined on types that have very little requirement. The data does not have to be made of numerical pixels at all. Mathematically, they are defined on partially ordered sets (complete lattices, see for instance [http://en.wikipedia.org/wiki/Dilation_(morphology)#Dilation_on_complete_lattices ''Dilation on complete lattices'']).
+
+In Imglib2, we require a little bit more than that. The data type you can use with morphological operations needs to be comparable. In practice, it must extends <code>Type</code> and <code>Comparable</code>: <code>T extends Type< T > & Comparable< T ></code>. With this, it is perfectly possible to dilate an image of strings by a 3x3 square strel:
+
+Before:
+<pre>Upcycle       Sexting       Unfriend      Droolworthy   Noob          Muggle        
+Woot          Po-po         Purple State  Guyliner      Screenager    Crunk         
+Obvs          Mankini       Locavore      Bling         Textspeak     Muffin Top    
+Infomania     Grrrl         Truthiness    Bromance      D'oh          Twitterati    
+La-la Land    Whatevs       Illiterati    OMG           Hater         Jeggings      
+Jean-Yves     Mini-Me       Chillax       Frankenfood   Totes         Whovian       </pre>
+
+
+After full dilation:
+<pre>Upcycle       Upcycle       Upcycle       Unfriend      Unfriend      Noob          Noob          Muggle        
+Woot          Woot          Woot          Unfriend      Unfriend      Screenager    Screenager    Muggle        
+Woot          Woot          Woot          Unfriend      Unfriend      Textspeak     Textspeak     Muggle        
+Woot          Woot          Woot          Truthiness    Truthiness    Twitterati    Twitterati    Twitterati    
+Obvs          Whatevs       Whatevs       Whatevs       Truthiness    Twitterati    Twitterati    Twitterati    
+La-la Land    Whatevs       Whatevs       Whatevs       Truthiness    Whovian       Whovian       Whovian       
+La-la Land    Whatevs       Whatevs       Whatevs       Totes         Whovian       Whovian       Whovian       
+Jean-Yves     Mini-Me       Mini-Me       Mini-Me       Totes         Whovian       Whovian       Whovian       </pre>
+
+
+After standard dilation:<ref>These are the 35 words added by the Oxford Online Dictionary during summer 2012. And another one.</ref>
+<pre>Woot          Woot          Unfriend      Unfriend      Screenager    Screenager    
+Woot          Woot          Unfriend      Unfriend      Textspeak     Textspeak     
+Woot          Woot          Truthiness    Truthiness    Twitterati    Twitterati    
+Whatevs       Whatevs       Whatevs       Truthiness    Twitterati    Twitterati    
+Whatevs       Whatevs       Whatevs       Truthiness    Whovian       Whovian       
+Whatevs       Whatevs       Whatevs       Totes         Whovian       Whovian       </pre>
+
+
+
+
 = Structuring elements. =
 
 
