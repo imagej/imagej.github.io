@@ -872,6 +872,12 @@ sup, sub {
     white-space: nowrap;
 }
 
+td.yesno {
+    padding: 2px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
 #catlinks {
     margin-top: 25px;
 }
