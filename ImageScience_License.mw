@@ -22,7 +22,7 @@ See the {{GitHub | repo = fiji | path = LICENSES | label = Fiji LICENSES file}} 
 
 == List of ImageScience components ==
 
-The following components are expressly or implicitly licensed this way:
+The following components are licensed this way:
 
 {| class="wikitable"
 | '''Project'''
@@ -41,5 +41,5 @@ The following components are expressly or implicitly licensed this way:
 | http://www.imagescience.org/meijering/software/transformj/
 |-
 | '''[[imagescience]]'''
-| Implicit
+| '''https://github.com/fiji/imagescience/blob/master/src/main/resources/copyright.txt'''
 |}
