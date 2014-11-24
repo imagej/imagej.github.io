@@ -33,6 +33,7 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
 :{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#distribution-plotter|label=Distribution Plotter}}
 :[[Find Peaks]]
 :[[Sholl_Analysis#Complementary_Tools|Fit Polynomial]]
+:{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#multichannel-plot-profile|label=Multichannel Plot Profile}}
 :{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#plot-results|label=Plot Results}}
 
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#neuronal-morphometry|label=Morphometry}}
