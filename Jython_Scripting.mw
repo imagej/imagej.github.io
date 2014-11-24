@@ -1141,6 +1141,52 @@ mask = mask.duplicate()
 mask.invert()
 </source>
 
+=== Open all series in a LIF file with Bio-Formats ===
+
+<source lang="python">
+
+# 2014-11-24 Harri Jäälinoja
+
+from loci.plugins.in import ImagePlusReader,ImporterOptions,ImportProcess
+import sys
+
+filename = sys.argv[1]
+opts = ImporterOptions()
+opts.setId(filename)
+opts.setUngroupFiles(True)
+
+# set up import process
+process = ImportProcess(opts)
+process.execute()
+nseries = process.getSeriesCount()
+
+# reader belonging to the import process
+reader = process.getReader()
+
+# reader external to the import process
+impReader = ImagePlusReader(process)
+for i in range(0, nseries):
+    print "%d/%d %s" % (i+1, nseries, process.getSeriesLabel(i))
+    
+    # activate series (same as checkbox in GUI)
+    opts.setSeriesOn(i,True)
+
+    # point import process reader to this series
+    reader.setSeries(i)
+
+    # read and process all images in series
+    imps = impReader.openImagePlus()
+    for imp in imps:
+        imp.show()
+        wait = Wait(str(i) + imp.getTitle())
+        wait.show()
+        imp.close()
+
+    # deactivate series (otherwise next iteration will have +1 active series)
+    opts.setSeriesOn(i, False)
+</source>
+
+
 
 === Open and save movies with the FFMPEG I/O plugin ===
 
