@@ -7,6 +7,18 @@
 * [http://whathaveyoutried.com/ Describe what you already tried].
 * [http://stackoverflow.com/help/how-to-ask Put as much effort into your question] as you expect to be put into its response.
 
+= Tips for Conciseness =
+
+Here are some quick tips for [http://en.wikiquote.org/wiki/Blaise_Pascal writing a shorter letter]:
+* Use bullet points to summarize.
+* Do not inline lengthy logs; use [https://gist.github.com/ Gist] or [http://pastebin.com/ Pastebin] instead.
+* Use formatting such as '''emphasis''' and <code>code snippets</code> to make text easier to read.
+* Use [https://help.github.com/articles/github-flavored-markdown link syntax] instead of relying on URL autolinking.
+* Use footnotes [1] for lengthy asides.
+* Most importantly, provide a [http://stackoverflow.com/help/mcve Minimal, Complete and Verifiable example] (MCVE), ideally as a standalone project.
+
+[1] For technical matters, "too much" information is certainly much preferred to "too little" information. But long paragraphs also break up the flow of information, and bog down an otherwise concise and clear bug report or question. So there is certainly a balance to be struck.
+
 = Why put effort into bug reports =
 
 For light reading, there are numerous guides and essays on [http://www.chiark.greenend.org.uk/~sgtatham/bugs.html how and why to write excellent bug reports]. ImageJ users should be aware that the development community is diverse: from publicly-funded individuals and teams to scientists and user contributors. For a largely open-source community like this, there are several key points to consider when submitting a bug:
