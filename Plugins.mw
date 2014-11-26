@@ -10,7 +10,7 @@ There are four tiers of plugins:
 
 == Using an ImageJ update site ==
 
-The Fiji distribution of ImageJ includes the [[Update Fiji|ImageJ Updater]]: a painless way to install and update plugins. Simply [[Update Sites|add the update site]] containing your plugins of interest, and they will be installed automatically for you.
+The ImageJ [[Updater]] is a painless way to install and update plugins. Simply [[Update Sites|add the update site]] containing your plugins of interest, and they will be installed automatically for you.
 
 == Installing plugins manually ==
 
@@ -22,7 +22,7 @@ In the meantime, to install a plugin manually, follow the plugin's installation 
 
 == User-specific plugins ==
 
-The Fiji distribution of ImageJ, in addition to looking in the <tt>plugins</tt> folder of Fiji itself, also looks in the <tt>.plugins</tt> folder in the current user's home folder. This is useful if you want to install some of your own plugins without affecting the system-wide ImageJ installation.
+In addition to looking in the <tt>plugins</tt> folder of ImageJ itself, ImageJ also looks in the <tt>.plugins</tt> folder in the current user's home folder. This is useful if you want to install some of your own plugins without affecting the system-wide ImageJ installation.
 
 == Configuring where ImageJ looks for plugins ==
 
@@ -30,18 +30,18 @@ Power users may wish to configure exactly which folder(s) ImageJ scans for plugi
 
 == Multiple plugin directories ==
 
-For ultimate control, Fiji also provides support for manually configuring the list of plugin paths, similar to Java's classpath, using the <tt>ij1.plugin.dirs</tt> system property.
+For ultimate control, ImageJ also provides support for manually configuring the list of plugin paths, similar to Java's classpath, using the <tt>ij1.plugin.dirs</tt> system property.
 
 E.g., on 64-bit Linux:
 
- $FIJI/ImageJ-linux64 -Dij1.plugin.dirs=$FIJI/jars:$FIJI/plugins:$HOME/.plugins
+ $IJ_DIR/ImageJ-linux64 -Dij1.plugin.dirs=$IJ_DIR/jars:$IJ_DIR/plugins:$HOME/.plugins
 
 On OS X:
 
- $FIJI/Contents/MacOS/ImageJ-macosx -Dij1.plugin.dirs=$FIJI/jars:$FIJI/plugins:$HOME/.plugins
+ $IJ_DIR/Contents/MacOS/ImageJ-macosx -Dij1.plugin.dirs=$IJ_DIR/jars:$IJ_DIR/plugins:$HOME/.plugins
 
 On 64-bit Windows:
 
- %FIJI%\ImageJ-win64 -Dij1.plugin.dirs=%FIJI%\jars;%FIJI%\plugins;%HOMEDRIVE%%HOMEPATH%\.plugins
+ %IJ_DIR%\ImageJ-win64 -Dij1.plugin.dirs=%IJ_DIR%\jars;%IJ_DIR%\plugins;%HOMEDRIVE%%HOMEPATH%\.plugins
 
-Where <tt>$FIJI</tt> (or <tt>%FIJI%</tt> on Windows) is the path to your Fiji installation.
+Where <tt>$IJ_DIR</tt> (or <tt>%IJ_DIR%</tt> on Windows) is the path to your ImageJ installation.
