@@ -25,9 +25,9 @@ However, once development advances, the file's contents might change in the mean
 
 == Ignore whitespace changes in diffs ==
 
-Unfortunately it is quite common in the Fiji project that developers mix whitespace changes with other changes (and consequently, the latter changes are really, really hard to spot), as if reviewing code was not hard enough yet.
-
-On the command-line, Git [https://github.com/git/git/blob/v2.1.3/Documentation/diff-options.txt#L466-L470 understands the <code>-w</code> flag] to ignore whitespace changes, and GitHub provides the same functionality, too: just append <code>?w=1</code> to the URL (or <code>&w=1</code> if there are already GET parameters).
+Sometimes, a commit will mix whitespace changes with other changes, making the functional changes more difficult to isolate. Fortunately, there is an easy workaround:
+* On the command-line, Git [https://github.com/git/git/blob/v2.1.3/Documentation/diff-options.txt#L466-L470 understands the <code>-w</code> flag] to ignore whitespace changes.
+* GitHub provides the same functionality, too: just append <code>?w=1</code> to the URL (or <code>&w=1</code> if there are already GET parameters).
 
 = Editing files =
 
