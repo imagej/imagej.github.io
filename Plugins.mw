@@ -5,7 +5,7 @@ ImageJ has been extended with thousands of [http://en.wikipedia.org/wiki/Plug-in
 There are four tiers of plugins:
 # [http://imagej.net/docs/guide/146-Part-V.html#toc-Part-V Core ImageJ plugins], bundled with the base ImageJ distribution. (449 as of this writing)
 # [[:Category:Plugins|Core Fiji plugins]], bundled with the Fiji distribution of ImageJ. (811 as of this writing)
-# Plugins installable from an [[List_of_update_sites|ImageJ update site]].
+# Plugins installable from an ImageJ [[update site]].
 # [http://imagej.net/plugins/ Additional plugins] available for manual installation only.
 
 == Using an ImageJ update site ==
