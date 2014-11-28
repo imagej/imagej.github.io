@@ -7,7 +7,7 @@
 | source                 = as a {{GitHub|org=fiji|repo=Directionality|label=github repository}}
 | released              = March 12<sup>th</sup>, 2010
 | latest version      = June 8<sup>th</sup>, 2010
-| status                  = v2.0
+| status                  = v2.0 - stable
 | category               =[[:Category:Analysis|Analysis]]
 }}
 
@@ -251,6 +251,8 @@ rt.show('Fit param for y = a + (b-a)*exp(-(x-c)*(x-c)/(2*d*d)')
 This plugin has been used at least in the following publication: 
 
 * [http://www.sciencedirect.com/science/article/pii/S0165027011004171 '''Woolley et al.''' In situ characterization of the brain-microdevice interface using Device Capture Histology. ''Journal of Neuroscience Methods (2011) vol. 201 (1) pp. 67-77'']
+
+* [http://www.sciencedirect.com/science/article/pii/S026635381400342X '''Fliegener S, Luke M, Gumbsch P.''' 3D microstructure modeling of long fiber reinforced thermoplastics. ''Composites Science and Technology 104(2014), pp. 136-145'']
 
 If you use it, please tell me so that I can add to this list.
 
