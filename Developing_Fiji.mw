@@ -57,11 +57,7 @@ When you want to discuss your changes to some Fiji component, the preferred way 
 
 When discussing larger chunks of code (or a patch) on [irc://irc.freenode.net/fiji-devel IRC], please do not paste them directly, but use a [http://gist.github.com pastebin] instead.
 
-To point at specific code on IRC or via mail, you can also do so by posting links to our [[Git|Gitweb]].  There is even a little shell script in fiji.git that helps you finding the link:
-<source lang="bash">
-bin/open-in-gitweb.sh fiji.cxx
-</source>
-This script will open the appropriate link with xdg-open.  It can deal with files, even in submodules, and commits (for commits, your current directory must be inside the appropriate Git checkout).  For files, you can append ":<linenumber>" to the file name to get a link to a specific line.
+To point at specific code on IRC or via mail, you can also do so by posting links to our [[Git|Gitweb]]. See also [[GitHub Tricks]].
 
 == Contributing ==
 
