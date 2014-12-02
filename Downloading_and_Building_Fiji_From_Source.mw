@@ -1,98 +1,77 @@
-{{Outdated}}
-== Downloading the Source Code with Git ==
+The complete Fiji distribution of ImageJ consists of over a hundred individual components. Most of these components are ImageJ plugins, the rest are core libraries, scripts, the ImageJ launcher and several other resources (such as the Fiji logo and the README).
 
-To fetch the Fiji source code you should use [[git]]. If you are not familiar with Git, you might want to read [[Git mini howto|this page]] or [[:Category:Git|these pages]] instead.
+In the past, Fiji used to be built from one monolithic source code repository, which became unmanageable over the time. These days, therefore, developers start from a fully-populated ''Fiji.app/'' directory and build only the parts they would like to change.
 
-==== Cloning source as unknown contributor ====
-Your first step should be to "clone" the fiji repository with the following command:
+= Download Fiji =
 
- git clone contrib@fiji.sc:/srv/git/fiji.git
+The first step is the same for developers as it is for users: [[Download]] Fiji, and unpack it (the Desktop is the recommended location).
 
-This should start downloading the base fiji repository and unpack it into a directory called "fiji" in your current directory.  Once this has successfully completed, change into the newly created "fiji" directory.
+= Check out and build individual plugins/libraries =
 
-'''If this clone is slow''', you might want to try to clone from github.com, and after that switch back to the official repository:
+To develop a plugin, the developer first needs to find out in which file it is contained. To do that, simply call the ''Command Finder'' (shortcut {{key press|Ctrl|L}}), type (part of) the label of the menu entry in whose function you are interested, and look at the ''File'' column.
 
- git clone git://github.com/fiji/fiji
- cd fiji
- git config remote.origin.url git://fiji.sc/fiji.git
- git pull
+Each individual component is maintained in its own repository in the [https://github.com/fiji/ ''fiji'' org on GitHub]. The name of the repository corresponding to a given ''.jar'' file is essentially identical with the file name, except that trailing underscores are stripped. Example: ''Stitching_.jar'' is maintained in the repository at https://github.com/fiji/Stitching, ''Time_Lapse.jar'' in the repository at https://github.com/fiji/Time_Lapse.
 
-If you are getting errors like this:
+If in doubt about the location of the repository, just call ''Plugins>Debug>System Information'' and find the section corresponding to the file in question.
 
- github.com[0: 207.97.227.239]: errno=Connection timed out fatal: 
- unable to connect a socket (Connection timed out)
+Once the developer has identified which plugin or library she wants to modify or develop further, it is very easy to build and contribute by following [[How to contribute to an existing plugin or library|this tutorial]].
 
-then you probably are behind a firewall that does not let you connect to port 9418. [http://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker's_Guide_to_the_Galaxy Do not panic], though, you might be able to clone the repository with
+== Example ==
 
- git clone contrib@fiji.sc:/srv/git/fiji.git
+Let's assume that we want to develop the Skeletonize3D plugin. Its source code is maintained at https://github.com/fiji/Skeletonize3D. The first step is to clone the source code:
 
-or
+<source lang="bash">
+$ git clone https://github.com/fiji/Skeletonize3D
+Cloning into 'Skeletonize3D'...
+remote: Counting objects: 115, done.
+remote: Compressing objects: 100% (58/58), done.
+remote: Total 115 (delta 46), reused 115 (delta 46)
+Receiving objects: 100% (115/115), 22.81 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (46/46), done.
+Checking connectivity... done.
+</source>
 
- git clone https://yourusername@github.com/fiji/fiji.git
+You only need to type the part after the ''$'' prompt, i.e you would type <code>git clone https://github.com/fiji/Skeletonize3D</code>. The rest is shown only for reference, so that you know what to expect.
 
-... where you should replace <tt>yourusername</tt> with your GitHub username.
+Then let's use the command-line Maven to build the project:
 
-==== Cloning source as known contributor ====
-The above command creates a unknown contributor copy of Fiji in your computer. If you have your own user account in fiji.sc, then you should clone fiji with the following command:
- 
- git clone ''username''@fiji.sc:/srv/git/fiji.git
+<source lang="bash">
+$ cd Skeletonize3D/
+$ mvn
+[INFO] Scanning for projects...
+[... lots and lots of interesting and useful information ...]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 52.574s
+[INFO] Finished at: Tue Dec 02 10:27:00 CET 2014
+[INFO] Final Memory: 20M/81M
+[INFO] ------------------------------------------------------------------------
+</source>
 
-Just substitute ''username'' with your corresponding user name on that machine.
+And finally, let's build the project and install it into the ''Fiji.app/'' directory:
 
-=== Submodules ===
+<source lang="bash">
+$ mvn -Dimagej.app.directory=$HOME/Desktop/Fiji.app/
+[INFO] Scanning for projects...
+[... lots and lots of interesting and useful information ...]
+[INFO]
+[INFO] --- imagej-maven-plugin:0.5.4:copy-jars (copy-jars) @ Skeletonize3D_ ---
+[INFO] Copying Skeletonize3D_-1.0.2-SNAPSHOT.jar to $HOME/Desktop/Fiji.app/plugins
+[INFO] Deleted overridden Skeletonize3D_-1.0.1.jar
+[INFO] Copying ij-1.49j.jar to $HOME/Desktop/Fiji.app/jars
+[INFO] Deleted overridden ij-1.49m.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 21.331s
+[INFO] Finished at: Tue Dec 02 10:30:02 CET 2014
+[INFO] Final Memory: 14M/81M
+[INFO] ------------------------------------------------------------------------
+</source>
 
-Some plugins are managed as submodules.  If you want to work on them, you will have to initialize and update them.  (For more on submodules, see the [[Git submodule tutorial]].)  For example, if you know that you're going to need to work on the <tt>ImageJA</tt>, <tt>TrakEM2</tt> and <tt>mpicbg</tt> submodules, you should initialize and update them with the following commands:
+Of course, this assumes that you followed the suggestion and unpacked your Fiji onto the Desktop. If you unpacked it somewhere else, you ''have'' to adjust the command-line accordingly.
 
- git submodule init modules/ImageJA modules/TrakEM2 modules/mpicbg modules/imglib
- git submodule update
-
-'''Note:''' in the common case, you do not need <u>any</u> submodule to be checked out (except the Java submodule, which will be checked out automatically once you run the [[Fiji Build System|Fiji Build]] with:
-
- ./Build.sh
-
-Note: using <b>git submodule update</b> without specifying which submodule, will update <b>all</b> submodules. What <i>update</i> means: "put all submodules, if checked out, to the last commit that was committed in the fiji repos". Which is most likely not what you want--will put any submodule that you have been working on into a <b>(no branch)</b> situation. To fix it, just cd to that submodule <i>git checkout master</i> or whatever branch you were working on.
-
-Alternately, if you want to automatically clone, configure and/or update a submodule with all its dependent submodules, you can run (e.g., for TrakEM2):
-
- cd bin
- ./configure-submodule.py TrakEM2
-
-=== Getting a snapshot without Git ===
-
-If you insist on not using Git, you can download a snapshot of Fiji [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=snapshot;h=master;sf=tgz here], but you need to make sure that you have a new enough Java version installed.
-
-== Building Fiji from Source==
-
-You should now be able to build Fiji with:
-
- sh Build.sh run
-
-... which will invoke Fiji's multi-platform build system.  If all goes well, after some time you should see the main Fiji window:
-
-[[Image:Fiji-main-window.png|Fiji's main window]]
-
-
-
-=== Multi-platform build confirmed successes ===
-
-Typically, multi-platform is plain hell. As of June 2012, [[User:Schindelin|Johannes Schindelin]] put enough effort to ensure that Fiji builds '''at the very least''' on the following systems:
-
-* Linux 32-bit with [http://www.ubuntu.com/ Ubuntu]
-* Linux 64-bit with [http://www.ubuntu.com/ Ubuntu]
-
-* Windows 64-bit with [http://msysgit.github.com/ MSysGit]
-* Windows 64-bit using [http://www.cygwin.com/ Cygwin] (you will need at least the <tt>curl</tt> & <tt>unzip</tt> functions to be installed)
-
-* MacOSX 10.5 (Leopard)
-* MacOSX 10.6 (Snow Leopard)
-* MacOSX 10.7 (Lion)
-
-=== Missing Java3D ===
-
-During the build process there might be complaints about missing Java3D features if you already have a Java SDK installed. To force the build system to clone a JDK with everything needed by Fiji (including Java3D support) you need to clear the environment variable ''JAVA_HOME'' before building:
-
-<code lang="bash">
-unset JAVA_HOME
-</code>
+Note that the exact dependency versions, as specified by the project in the ''pom.xml'' file, are copied into the ''Fiji.app/'' directory, possibly replacing other versions. You will want to make sure to use not-too-different versions from the current versions.
 
 [[Category:Development]]
