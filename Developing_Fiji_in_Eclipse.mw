@@ -37,18 +37,9 @@ Install Eclipse using your preferred package manager or download the appropriate
 
 Install Git using your preferred package manager or download from the [http://git-scm.com/ Git website].
 
-==Checkout Fiji==
+==Checkout the source code you want to build==
 
-Do <span style="color:#ff0000">not</span> clone Fiji into your Eclipse workspace. We are using [[Maven]] to manage our projects and Eclipse tries very hard to interfere with this when it is allowed to.
-
-<source lang="bash">
-cd ~/
-git clone git://github.com/fiji/fiji
-</source>
-
-This will create the folder ''~/fiji/'' where you have the core Fiji repository (you will initialize your Eclipse workspace in ''~/workspace/'' later).
-
-Should you want to work on source code that is not part of the core Fiji repository, you can check out submodules you want to work with. Note: Not all repositories we reference in submodules are handled by Maven.
+Please look at [[Downloading_and_Building_Fiji_From_Source#Check_out_and_build_individual_plugins.2Flibraries|this tutorial]] to find out how to check out and build individual parts of Fiji.
 
 ==Create the Eclipse Projects==
 
