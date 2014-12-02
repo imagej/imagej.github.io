@@ -333,6 +333,7 @@ The format is explained in detail in our paper [http://arxiv.org/abs/1412.0488 B
 === About the BigDataViewer data format ===
 TODO
 
+The format is explained in detail in our paper [http://arxiv.org/abs/1412.0488 BigDataViewer: Interactive Visualization and Image Processing for Terabyte Data Sets].
 
 === Exporting from ImageJ Stacks ===
 You can export any dataset to BigDataViewer format by opening it as a stack in Fiji and then selecting ''Plugins > BigDataViewer > Export Current Image as XML/HDF5'' from the Fiji menu.
