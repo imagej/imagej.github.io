@@ -1,11 +1,11 @@
 {{Infobox
-| name                  = spim_viewer
+| name                  = BigDataViewer
 | software              = Fiji
-| author                = [[User:Pietzsch|TobiasPietzsch]]
+| author                = [[User:Pietzsch|Tobias Pietzsch]]
 | maintainer            = [mailto:pietzsch@mpi-cbg.de Tobias Pietzsch]
-| source                = {{GitHub|org=tpietzsch|repo=spimviewer}}
-<!-- | released              = January 5<sup>th</sup>, 2014 -->
-| status                = beta
+| source                = {{GitHub|org=bigdataviewer|repo=bigdataviewer_fiji}}
+| latest version        = 1.0.0
+| status                = stable
 | category              = [[:Category:Visualization|Visualization]], [[:Category:Transform|Transform]]
 }}
 
@@ -128,6 +128,10 @@ For example, {{key press|Left}} rotates by
 1° clockwise, while {{key press|Shift|Left}} rotates by
 10°, and {{key press|Ctrl|Left}} rotates by
 0.1°.
+
+The axis-rotation commands (e.g., {{key press|Shift|X}}) rotate around the current mouse location.
+That is, if you press {{key press|Shift|X}}, the view will pivot such that you see a ZY-slice through the dataset (you look along the X-axis).
+The point under the mouse will stay fixed, i.e., the view will be a ZY-slice through that point.
 
 === Interpolation Mode ===
 Using {{key press|I}} you can switch between nearest-neighbor and trilinear interpolation schemes.
@@ -257,8 +261,38 @@ In the following screenshot, the sources have been colored magenta and green.
 
 [[Image:bdv-brightness-4.png|500px]]
 
+=== Bookmarking Locations and Orientations ===
+BigDataViewer allows to bookmark the current view.
+You can set bookmarks for interesting views or particular details of your dataset to easily navigate back to those views later.
+
+Each bookmark has an assigned shortcut key, i.e., you can have bookmarks "a", ''A'', ''b'', ..., "1", "2", \etc.
+To set a bookmark for the current view, press {{key press|Shift|B}} and then the shortcut you want to use for the bookmark.
+To recall bookmark, press {{key press|B}} and then the shortcut of the bookmark.
+
+BigDataViewer provides visual feedback for setting and recalling bookmarks.
+When you press {{key press|Shift|B}}, the message "\textbf{set bookmark:}" appears in the lower right corner of the main window, prompting to press the bookmark shortcut next.
+
+[[Image:bdv-set-bookmark.png|500px]]
+
+Now press the key you want to use as a shortcut, for example {{key press|A}}.
+The promt message will change to "\textbf{set bookmark: a}" indicating that you have set a bookmark with shortcut {{key press|A}}.
+Instead of pressing a shortcut key you can abort using {{key press|esc}}.
+
+Similarly, when you press {{key press|B}} to recall a bookmark, the prompt message "\textbf{go to bookmark:}" appears.
+Now press the shortcut of the bookmark you want to recall, for example {{key press|A}}.
+The promt message will change to "\textbf{go to bookmark: a}" and the view will move to the bookmarked location.
+Instead of pressing a shortcut key you can abort using {{key press|esc}}.
+
+Note, that bookmark shortcuts are case-sensitive, i.e., {{key press|A}} and {{key press|Shift|A}} refer to distinct bookmarks "a" and "A" respectively.
+
+The bookmarking mechanism can also be used to bookmark and recall orientations.
+Press {{key press|O}} and then a bookmark shortcut to recall only the orientation of that bookmark.
+This rotates the view into the rotation of the bookmarked view (but does not zoom or translate to the bookmarked location).
+The rotation is around the current mouse location (i.e., the point under the mouse stays fixed).
+
+
 === Loading and Saving Settings ===
-Organizing sources into groups, assigning appropriate colors, and adjusting brightness correctly is work that you do not want to repeat over and over every time you re-open a dataset.
+Organizing sources into groups, assigning appropriate colors, adjusting brightness correctly, and bookmarking interesting locations is work that you do not want to repeat over and over every time you re-open a dataset.
 Therefore, BigDataViewer allows to save and load these settings.
 
 Select ''File > Save settings'' from the menu to store settings to an XML file, and ''File > Load settings'' to load them from an XML file.
@@ -277,8 +311,12 @@ You can open individual images from a dataset as ImageJ stacks using ''File > Im
 [[Image:bdv-import.png|500px]]
 
 Select the XML file of a dataset, then choose the time-point and source (setup) index of the image you want to open.
+If you enable the ''"open as virtual stack"'' checkbox the image will open as an ImageJ ''virtual stack''.
+This means that the opened image is backed by BigDataViewer's cache and slices are loaded on demand.
+Without ''"open as virtual stack"'', the full image will be loaded into memory.
+Virtual stacks will open a bit faster but switching between slices may be less instantaneous.
 
-Note that this import function is macro-recordable.
+Note that the import function is macro-recordable.
 Thus, you can make use of it to batch-process images from BigDataViewer datasets.
 
 
