@@ -43,7 +43,11 @@ See also the [[Supported Compilers]] page for more information.
 
 == Testing ==
 
-When you are testing Fiji, you may want to measure the code coverage of your tests - one way is described in the page [[Code Coverage in Fiji]].
+It is strongly recommended to write regression tests (also known as ''unit tests''). It is [[Fiji_contribution_requirements#Regression_tests|easy]].
+
+Furthermore, it is highly recommended to write and run unit tests in an [[IDEs|Integrated Development Environment]] for efficient debugging.
+
+You may also want to measure the code coverage of your tests - one way is described in the page [[Code Coverage in Fiji]].
 
 At some point, you might want to debug whatever you wrote.  There's a small [[Debugging intro]] page.
 
