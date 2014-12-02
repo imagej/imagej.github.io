@@ -41,67 +41,6 @@ Fiji is organized into a set of [[Maven]] projects. For convenience and speed, t
 For details, please see [[Downloading and Building Fiji From Source]].
 See also the [[Supported Compilers]] page for more information.
 
-== Adding plugins ==
-
-After you built Fiji successfully, you can add your own plugins.
-
-* If you haven't done so, pick a name for your .jar file, say ''My_Plugin''.  Make sure that it has at least one underscore in it, otherwise ImageJ will not pick it up.  If you cannot think of a name with an underscore, just append one.  Then create a subdirectory ''src-plugins/My_Plugin''.
-* Now put your sources into that subdirectory.  Please no .class files.  Readme or license files are okay, however.
-* Create a ''staged-plugins/My_Plugin.config'' file.  This will be included in the .jar file as ''plugins.config''.
-* In Fiji's root folder, call '''./fiji bin/commit-plugin.py src-plugins/My_Plugin/'''.  Please make sure that it ends with a slash.  This command will make the necessary edits to the ''pom.xml'' and ''.gitignore'' files, and ''staged-plugins/My_Plugin.config'', and commit everything needed for your plugin.  If you want to do this manually, look in the Git log for an example (e.g. TurboReg) and imitate it.
-* Now build the plugin with '''./fiji --build'''.
-* Now Fiji Build will most likely complain that some libraries are missing, most importantly the central library ij.jar, you will need to specify which jars are required for the build:
-** open the file ''pom.xml'' in the ''src-plugins/'' directory with a text editor of your choice
-** find the section "From source"
-** you will find a lot of entries which look like CLASSPATH(plugins/Whatever_plugin.jar)=jars/ij.jar
-** Add an entry for your plugin and add the required jars, e.g. CLASSPATH(plugins/My_plugin.jar)=jars/ij.jar:jars/imglib.jar - if you want to write a plugin using imglib
-** save the file and build again
-* After testing, you might realize that you need changes.  In this case, decide if you want to amend the commit (if there was a silly typo, you might want to hide that fact from the world), or if you want to make a new commit.
-* When everything is done and fine, publish (which is called "push" in Git)!
-
-== Writing plugins ==
-
-Fiji accepts plugins written in [http://www.mcdb.ucla.edu/research/hartenstein/acardona/imagej_programming_tutorials.html Java], [[Javascript Scripting|Javascript]], [[Jython Scripting|Jython]], [[JRuby Scripting|JRuby]], [[Beanshell Scripting|Beanshell]], [[Clojure Scripting|Clojure]] and the [http://imagej.net/developer/macro/macros.html ImageJ Macro language].
-
-The plugins/Examples folder contains numerous plugins in all supported languages, heavily commented.
-
-See the [[Introduction into Developing Plugins]], Albert Cardona's [http://albert.rierol.net/imagej_programming_tutorials.html tutorial], or Werner Bailer's [http://imagingbook.com/index.php?id=102 Writing ImageJ PlugIns] for introductions to the ImageJ API (Application Programming Interface).
-
-See [[Scripting Help]] for details on how to develop, test and run ImageJ plugins written in the supported scripting languages.
-
-There are also [[Scripting comparisons]].
-
-See also the [[PlugIn Design Guidelines]].
-
-=== Plugins in the Fiji Source Tree ===
-
-The sources for many useful plugins are maintained in src-plugins/ in the Fiji source tree. In order to be built by the Fiji Build System, they must be properly [[Maven_-_Frequently_Asked_Questions|Mavenized]]. In other words, there should be a pom.xml file that describes the plugin, and its artifactId should be added as a module in the modules section of {{GitHub|repo=fiji|path=src-plugins/pom.xml|label=the pom file for src-plugins}} (alphabetically, please).
-
-See also [[Maven_-_Frequently_Asked_Questions]]
-
-== Adding submodules ==
-
-Some projects have their own source code repositories.  In this case, we do not copy the files into ''src-plugins/'', but use [[Git_submodule_tutorial|submodules]].
-
-If the project uses a different source code management tool than Git, no problem, just mirror it.
-
-Then add the submodule. Example:
-<source lang="bash">
-# clone the VIB repository
-git clone ssh://contrib@fiji.sc/srv/git/VIB.git
-# first time, commit-submodule need to know the target, too ("jars/jgit.jar" in this case)
-./fiji bin/commit-submodule.py VIB plugins/VIB_.jar
-</source>
-
-Submodules '''must''' be Maven projects themselves.
-
-So what does ''commit-submodule.py'' do? It
-* verifies that the submodule is pushed,
-* makes sure that the submodule is recorded in ''.gitmodules'',
-* adds the target to the ''modules/pom.xml'' file,
-* adds the target to ''.gitignore'' so it is not committed by accident, and
-* finally commits the result
-
 == Testing ==
 
 When you are testing Fiji, you may want to measure the code coverage of your tests - one way is described in the page [[Code Coverage in Fiji]].
