@@ -1,8 +1,6 @@
 {{Outdated}}
 == Downloading the Source Code with Git ==
 
-''Warning: the source code for Fiji is rather large; make sure that you have two gigabytes of disk space free before beginning this.''
-
 To fetch the Fiji source code you should use [[git]]. If you are not familiar with Git, you might want to read [[Git mini howto|this page]] or [[:Category:Git|these pages]] instead.
 
 ==== Cloning source as unknown contributor ====
