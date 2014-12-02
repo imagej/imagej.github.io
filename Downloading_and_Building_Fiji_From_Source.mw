@@ -4,7 +4,7 @@ In the past, Fiji used to be built from one monolithic source code repository, w
 
 = Download Fiji =
 
-The first step is the same for developers as it is for users: [[Download]] Fiji, and unpack it (the Desktop is the recommended location).
+The first step is the same for developers as it is for users: [[Downloads|Download]] Fiji, and unpack it (the Desktop is the recommended location).
 
 = Check out and build individual plugins/libraries =
 
