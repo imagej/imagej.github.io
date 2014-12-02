@@ -34,7 +34,18 @@ Create a new branch with a descriptive name. Since we want to work on AmiraMesh 
 $ git checkout -b amira-io
 </source>
 == Development ==
-Now we develop our code to include our changes in the library. Remember to:
+
+Now we develop our code to include our changes in the library.
+
+=== Building ===
+
+Most of the ImageJ plugins and support libraries are developed as [[Maven]] projects. Developers typically prefer one of the supported [[IDEs|Integrated Development Environments]] to build and run the code.
+
+The most popular IDE is undoubtedly Eclipse, and you can follow [[Eclipse|this tutorial]] to build the plugin or library (you only need to change the URL from the ImageJ repository to the appropriate plugin or library repository URL).
+
+=== Commit early, commit often! ===
+
+Remember to:
 <ol>
 <li>[https://help.github.com/articles/making-changes Make changes and commit them] to your topic branch</li>
 <li>Push the commits to your GitHub repository; e.g.:
