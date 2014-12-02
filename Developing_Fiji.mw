@@ -36,13 +36,10 @@ The ImageJ launcher can do more, just call '''./ImageJ-<platform> --help''' for 
 
 == Building Fiji ==
 
-Fiji is organized into a set of [[Maven]] projects. For convenience and speed, we use [[ImageJ2]]' minimal Maven-lookalike [[MiniMaven]] to build Fiji, and to make things even more convenient, there is a single shell script you need to call that builds it all:
+Fiji is organized into a set of [[Maven]] projects. For convenience and speed, there is [[SciJava]]'s minimal Maven-lookalike [[MiniMaven]] to build Fiji, but it is recommended to use an [[IDEs|Integrated Development Environment]], or at least real Maven.
 
-<source lang="bash">
-./Build.sh
-</source>
-
-See the [[Supported Compilers]] page for more details on the Fiji build system.
+For details, please see [[Downloading and Building Fiji From Source]].
+See also the [[Supported Compilers]] page for more information.
 
 == Adding plugins ==
 
