@@ -14,26 +14,6 @@ See also [[Developing Fiji in Eclipse]] for a tutorial specific to the Eclipse I
 
 First, you have to [[Downloading_and_Building_Fiji_From_Source|download and build Fiji]]. If you do not know Git yet, we have a [[Git for dummies|concise introduction]] for you.
 
-== The ImageJ launcher ==
-
-There is a program called "ImageJ-win32.exe", "ImageJ-linux64" or similar in Fiji's root directory.  Its main purpose is to load a Java virtual machine with known-good options, and then launch ImageJ.
-
-However, it is much more powerful than that.  Amongst other things, you can
-
-* Open images: '''./ImageJ-<platform> example.jpg'''
-* Call Jython scripts: '''./ImageJ-<platform> example.py''' (also works for JRuby scripts when they have an '''.rb''' extension, for Beanshell scripts with '''.bsh''' extension, '''.clj''' for Clojure and '''.js''' for Javascript)
-* Call the Jython interpreter: '''./ImageJ-<platform> --jython''' (the classpath will be the same as when calling ImageJA), and likewise '''--jruby''', '''--bsh''' and '''--js''' for the respective language's command-line interpreters
-* Run Fiji with the system Java instead of its own one: '''./ImageJ-<platform> --system'''.  But beware: this might fail since some plugins need at least Java 1.5, and the 3D viewer needs Java3D.
-* Show the java command line instead of running Fiji: '''./ImageJ-<platform> --dry-run'''
-* Compile a Java class: '''./ImageJ-<platform> --javac example.java'''
-* Run a Java class' main() method: '''./ImageJ-<platform> --main-class=example'''
-* Pass some [[JavaOptions|Java options]]: '''./ImageJ-<platform> -server --''' (everything that comes before a '''--''' is interpreted as Java option)
-* Add '''.''' to the classpath and execute the given class' '''main()''' method: '''./ImageJ-<platform> Example.class'''
-* Link Fiji into the PATH: '''ln -s $(pwd)/ImageJ-<platform> $HOME/bin/fiji && fiji'''
-* Start Fiji and run a menu entry directly: '''./ImageJ-<platform> --run System_Clipboard''' (the underscore was used in place of a space to avoid having to quote the argument)
-
-The ImageJ launcher can do more, just call '''./ImageJ-<platform> --help''' for a short description.
-
 == Building Fiji ==
 
 Fiji is organized into a set of [[Maven]] projects. For convenience and speed, there is [[SciJava]]'s minimal Maven-lookalike [[MiniMaven]] to build Fiji, but it is recommended to use an [[IDEs|Integrated Development Environment]], or at least real Maven.
