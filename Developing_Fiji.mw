@@ -61,49 +61,7 @@ To point at specific code on IRC or via mail, you can also do so by posting link
 
 == Contributing ==
 
-Please make sure that you are a little familiar with [[Git mini howto|Git]], or you can learn basic git knowledge interactively with [http://try.github.io/ GitHub]. Once you are, you can easily make a local ''contrib'' branch and [[Git mini howto#Contributing|push it]].
-
-=== Forking on GitHub ===
-Alternatively, you can make an account for yourself on GitHub and fork fiji.git:
-
-# create an account on [http://github.com/ GitHub]
-# Fork {{GitHub|repo=fiji|label=Fiji}}:
-: [[Image:GitHub-fork.png]]
-# clone it
-
-If you already worked in an existing checkout of ''fiji.git'', no problem, you can connect that to the new remote:
-
-# '''git remote add github github.com:<user>/fiji''' (where ''<user>'' is your account on GitHub)
-# '''git config branch.<branch>.remote github''' (where "<branch>" is the branch you want to connect to GitHub, typically ''master'')
-# '''git config branch.<branch>.merge refs/heads/<branch>'''
-# '''git push github <branch>''' to push the current state
-
-=== Contributing to Fiji's existing plugins ===
-
-Sometimes you may want to contribute to Fiji's existing plugins, for example, a bug  is found in one plugin and you want to fix it, or you would like to improve one plugin by adding more functions.
-
-'''Every plugin has its own git repository in {{GitHub|org=fiji|repo=|label=Fiji}}'''. For example, the GraphCut plugin's repository is {{GitHub|org=fiji|repo=Graph_Cut|label=GraphCut}}. This structure allows for easy, independent development of 
-the individual parts of which the base version of Fiji consists.
-
-To contribute to Fiji's GraphCut plugin:
-# ''' Fork that repository by clicking the "Fork" button'''
-# ''' Clone it - git clone https://github.com/username/Graph_Cut.git'''
-# ''' Configure remotes'''
-## '''cd Graph_Cut'''
-## '''git remote add upstream https://github.com/fiji/Graph_Cut.git'''
-## '''git fetch upstream'''
-# '''Create a topic branch'''
-## '''git branch mybranch'''
-## '''git checkout mybranch'''
-# '''Make changes and commit them to your topic branch'''
-# '''Push the commits to your github repository'''
-# '''Send the pull request'''
-
-You can learn more about Git fork and branch model from [https://help.github.com/articles/fork-a-repo Fork A Repo], including how to send a pull request from [https://help.github.com/articles/using-pull-requests Pull Request].
-
-=== Letting us know ===
-
-After you published your contributions, you probably also want to let us know what you did, so just send a mail to [mailto:fiji@fiji.sc the Fiji devel mailing list].
+Please have a look at the excellent ''[[How to contribute to an existing plugin or library]]'' tutorial.
 
 == Providing documentation ==
 
