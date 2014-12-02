@@ -321,3 +321,138 @@ Thus, you can make use of it to batch-process images from BigDataViewer datasets
 
 
 == Exporting Datasets for the BigDataViewer ==
+
+BigDataViewer uses a custom file-format that is optimized for fast arbitrary re-slicing at various scales.
+This file format is build on open standards [http://www.w3.org/XML/ XML] and [http://www.hdfgroup.org/HDF5/ HDF5].
+XML is used to store meta-data and HDF5 is used to store image volumes.
+(Actually, we support several ways to store the image volumes besides HDF5. For example, the volume data can be provided by a web service for remote access.)
+
+Before we discuss how to export your data to this XML/HDF5 format, we provide a rough overview for some background, rationale, and terminology.
+The format is explained in detail in our paper [http://arxiv.org/abs/1412.0488 BigDataViewer: Interactive Visualization and Image Processing for Terabyte Data Sets].
+
+=== About the BigDataViewer data format ===
+TODO
+
+
+=== Exporting from ImageJ Stacks ===
+You can export any dataset to BigDataViewer format by opening it as a stack in Fiji and then selecting ''Plugins > BigDataViewer > Export Current Image as XML/HDF5'' from the Fiji menu.
+If the image has multiple channels, each channel will become one ''setup'' in the exported dataset.
+If the image has multiple frames, each frame will become one ''timepoint'' in the exported dataset.
+Of course, you may export from virtual stacks if your data is too big to fit into memory.
+
+To get started, let's open one of the ImageJ sample images by ''File > Open Samples > T1 Head (2.4M, 16-bits)''.
+Selecting ''Plugins > BigDataViewer > Export Current Image as XML/HDF5'' brings up the following dialog.
+
+[[Image:bdv-export-stack.png|500px]]
+
+Parts (A) and (C) of the dialog are optional, so we will explain (B) and (D) first.
+
+At the bottom of the dialog (D), the export path is defined.
+Specify the path of the XML file to which you want to export the dataset.
+The HDF5 file for the dataset will be placed into the same directory under the same name with extension ".h5".
+If the ''"use deflate compression"'' checkbox is enabled, the image data will be compressed using HDF5 built-in DEFLATE compression.
+We recommend to use this option.
+It will usually reduce the file size to about 50% with respect to uncompressed image size.
+The performance impact of decompression when browsing the dataset is negligible.
+
+In part (B) of the dialog the ''value range'' of the image must be specified.
+BigDataViewer always stores images with 16-bit precision currently, while the image you want to export is not necessarily 16-bit.
+The value range defines the minimum and maximum of the image you want to export.
+This is mapped to the 16-bit range for export.
+I.e., the minimum of the value range will be mapped to the minimum of the unsigned 16-bit range (0).
+The maximum of the value range will be mapped to the maximum of the unsigned 16-bit range (65535).
+In the drop-down menu you can select one the following options to specify how the value range should be determined:
+* ''"Use ImageJ's current min/max setting"''. The minimum and maximum set in ImageJ's Brightness&Contrast are used. Note, that image intensities outside that range will be clipped to the minimum or maximum, respectively.
+* ''"Compute min/max of the (hyper-)stack"''. Compute the minimum and maximum of the stack and use these. Note, that this may take some time to compute because it requires to look at all pixels of the stack you want to export.
+* ''"Use values specified below"''. Use the values specified in the ''Min'' and ''Max'' fields (B) of the export dialog. Note, that image intensities outside that range will be clipped to the minimum or maximum, respectively.
+
+
+After you have specified the value range and selected and export path, press ''OK'' to export the dataset.
+Messages about the progress of the operation are displayed in the ImageJ Log window.
+
+[[Image:bdv-export-stack-log.png|500px]]
+
+When the export is done you can browse the dataset in the BigDataViewer by opening the exported XML file.
+
+The optional parts (A) and (C) of the export dialog provide further options to customize the export.
+If the checkbox ''"manual mipmap setup"'' is enabled, you can customize the multi-resolution mipmap pyramid which stores your image stacks.
+You can specify the number of resolution levels used, and their respective down-scaling factors, as well as the chunk sizes into which each resolution level is subdivided.
+
+The ''"Subsampling factors"'' field specifies a comma-separated list of resolution levels, formatted as <tt>{level, ..., level}</tt>.
+Each <tt>level</tt> is a list of subsampling factors in ''X, Y, Z'', formatted as <tt>{x-scale, y-scale, z-scale}</tt>.
+For example consider the specification <tt>{{1,1,1}, {2,2,2}, {4,4,2}}</tt>.
+This will create a resolution pyramid with three levels.
+The first level is the full resolution -- it is scaled by factors ''1'' in all axes.
+The second level is down-scaled by factors ''2, 2, 1'' in ''X, Y, Z'' respectively.
+So it has half the resolution in ''X'' and ''Y'', but full resolution in ''Z''.
+The third level has half the resolution of the second in all axes, i.e., it is down-scaled by factors ''4, 4, 2'' in ''X, Y, Z'' respectively.
+Note, that you should always order levels by decreasing resolution like this.
+Also note, that in the above example we down-scale by different factors in different axes.
+One may want to do this if the resolution of the dataset is anisotropic.
+Then it is advisable to first downscale only in the higher-resolved axes until approximately isotropic resolution is reached.
+
+The ''"Hdf5 chunk sizes"'' specifies the chunk sizes into which data on each resolution level is sub-divided.
+This is again formatted as <tt>{level, ..., level}</tt>, with the same number of levels as supplied for the ''Subsampling factors''.
+Each <tt>level</tt> is a list of sizes in ''X, Y, Z'', formatted as <tt>{x-size, y-size, z-size}</tt>.
+For example consider the specification <tt>{{16,16,16}, {16,16,16}, {16,16,16}}</tt>.
+This will sub-divide each resolution level into chunks of ''16&times;16&times;16'' pixels.
+
+It is usually not recommended to specify subsampling factors and chunk sizes manually.
+When browsing a dataset, the mipmap setup determines the loading speed and therefore the perceived speed of browsing to data that is not cached.
+With ''"manual mipmap setup"'' turned off, reasonable values will be determined automatically depending on the resolution and anisotropy of your dataset.
+
+Finally, in part (C) of the export dialog, you may choose to split your dataset into multiple HDF5 files.
+This is useful in particular for very large datasets.
+For example when moving the data to a different computer, it may be cumbersome to have it sitting in a single 10TB file.
+If the checkbox ''"split hdf5"'' is enabled the dataset will be split into multiple HDF5 ''partition'' files.
+The dataset can be split along the ''timepoint'' and ''setup'' dimensions.
+Specify the number of ''timepoints per partition'' and ''setups per partition'' in the respective input fields.
+
+For example, assume your dataset has 4 setups and 10 timepoints.
+Setting ''timepoints per partition = 5'' and ''setups per partition = 2'' will result in 4 HDF5 partitions:
+* setups 1 and 2 of timepoints 1 through 5,
+* setups 3 and 4 of timepoints 1 through 5,
+* setups 1 and 2 of timepoints 6 through 10, and
+* setups 3 and 4 of timepoints 6 through 10.
+
+Setting ''timepoints per partition = 0'' or ''setups per partition = 0'' means that the dataset is not split in the respective dimension.
+
+Note, that splitting into multiple HDF5 files is transparent from the viewer side.
+There is still only one XML file that gathers all the partitions files into one dataset.
+
+=== Integration with Fiji's SPIMage Processing Tools ===
+
+BigDataViewer seamlessly integrates with the "Multiview Reconstruction" plugins that Fiji offers for registration and reconstruction of lightsheet microscopy data.
+Recent versions of these tools build on the same XML format as BigDataViewer itself.
+In addition to HDF5, "Multiview reconstruction" supports a backend for datasets that store individual views as TIFF files,
+because unprocessed data from lightsheet microscopes is often available in this format.
+
+In principle, BigDataViewer is able to display a TIFF dataset as is.
+However, for quick navigation this is not the ideal format:
+When navigating to a new timepoint, BigDataViewer needs to load all TIFF files of that timepoint into memory, suffering a delay of tens of seconcds.
+Therefore, it is beneficial to convert the TIFF dataset to HDF5.
+Note, that this can be one at any point of the processing pipeline (i.e., before registration, after registration, after multiview fusion or deconvolution, etc.)
+because the "Multiview reconstruction" plugins can operate on HDF5 datasets as well.
+
+We assume that the user has already created an XML/TIFF dataset, as explained in [[Multiview-Reconstruction]].
+
+To convert the dataset to HDF5, select ''Plugins > Multiview Reconstruction > Resave > As HDF5'' form the Fiji menu.
+This brings up the following dialog.
+
+[[Image:bdv-mvr-export1b.png|500px]]
+
+At the top of the dialog, select the XML file of the dataset you want to convert to HDF5.
+In the lower part of the dialog, you can select which parts of the dataset you want to resave.
+For example, assume that the source dataset contains the raw image stacks from the microscope, as well as deconvolved versions.
+You might decide that you do not need the raw data as HDF5, so you can select only the deconvolved channels.
+Once you have determined what you want to convert press ''OK''.
+
+This brings up the next dialog, in which you need to specify the export path and options.
+
+[[Image:bdv-mvr-export2.png|500px]]
+
+These parameters are the same as discussed in the previous section:
+If you want to specify custom mipmap settings, you can do so in the top part of the dialog.
+Below that, choose whether you want to compress the image data.
+For the export path, specify the XML file to which you want to export the dataset.
+Press ''OK'' to start the export.
