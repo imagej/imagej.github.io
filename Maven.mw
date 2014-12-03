@@ -1,4 +1,4 @@
-{{Development | tools}}
+{{Development | source}}
 
 [[ImageJ]], [[Fiji]] and other [[SciJava]] projects use [http://maven.apache.org/ Maven] for their project infrastructure.
 
