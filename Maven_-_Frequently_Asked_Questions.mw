@@ -32,6 +32,21 @@ Browse the latest <code>pom-imagej</code> {{GitHub|org=imagej|repo=pom-imagej|pa
 
 Browse the available versions of ImageJ 1.x [http://maven.imagej.net/content/repositories/releases/net/imagej/ij/ here].
 
+= How do I determine which Maven projects (i.e., dependencies) I actually need? =
+
+One way to check is using the dependency plugin like so:
+
+<source lang="bash">
+mvn dependency:analyze
+</source>
+
+This will tell you:
+
+# Dependencies you declared but do not actually use; and
+# Dependencies you did not declare directly, but actually need.
+
+Note that this will only work if your project compiles successfully. In other words, it is easier to start with "too many" dependencies and pare down, rather than trying to "build up" from zero.
+
 = What's this: ''Property 'imagej.app.directory' unset; Skipping copy-jars'' =
 
 This is part of the {{GitHub|org=imagej|repo=imagej-maven-plugin|label=imagej-maven-plugin}} (enabled for you by pom-scijava). As you suspected, it copies your plugin's ''.jar'' file to your ImageJ plugins folder. But you have to specify where:
