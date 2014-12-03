@@ -46,7 +46,7 @@ div.NavEnd {
 
 /* Reduced size message box, allowing space for side-bars */
 table.rambox {
-  width: 60%; !important;
+  width: 60% !important;
 }
 
 /* Article message box template styles */
