@@ -1,5 +1,6 @@
 {{Menu | Development
 |
+{{MenuItem | '''[[Development|Overview]]''' }}
 {{Submenu | Topics |
 {{MenuItem | [[Philosophy]] }}
 {{MenuItem | [[Governance]] }}
@@ -13,47 +14,37 @@
 | {{#if:{{{1|}}}|collapsed|}}
 }}
 
-{{Submenu | Tools |
-{{MenuItem | [[IDEs]] }}
+{{Submenu | Hacking the source |
+{{MenuItem | [[Developing ImageJ in Eclipse|Using Eclipse]] }}
+{{MenuItem | [[Developing ImageJ in NetBeans|Using NetBeans]] }}
+{{MenuItem | [[Developing ImageJ in IntelliJ IDEA|Using IntelliJ IDEA]] }}
+{{MenuItem | [[Developing ImageJ on the command line|On the command line]] }}
 {{MenuItem | [[Maven]] }}
-{{MenuItem | [[Git]] }}
-| {{#ifeq:{{{1}}}|tools||collapsed}}
+| {{#ifeq:{{{1}}}|ides||collapsed}}
 }}
 
-{{Submenu | Plugins |
+{{Submenu | Developing plugins |
 {{MenuItem | [[Writing ImageJ2 plugins]] }}
 {{MenuItem | [[How_to_contribute_to_an_existing_plugin_or_library|Contributing to a plugin]] }}
 {{MenuItem | [[Distribution|Distributing your plugins]] }}
 | {{#ifeq:{{{1}}}|plugins||collapsed}}
 }}
 
-{{Submenu | IDEs |
-{{MenuItem | [[Developing ImageJ in Eclipse|Eclipse]] }}
-{{MenuItem | [[Developing ImageJ in NetBeans|NetBeans]] }}
-{{MenuItem | [[Developing ImageJ in IntelliJ IDEA|IntelliJ IDEA]] }}
-{{MenuItem | [[Developing ImageJ on the command line|Command line]] }}
-| {{#ifeq:{{{1}}}|ides||collapsed}}
-}}
-
-{{Submenu | About Git |
+{{Submenu | Using Git |
 {{MenuItem | [[Git|Overview]] }}
 {{MenuItem | [[Git for dummies]] }}
+{{MenuItem | [[Git mini howto]] }}
+{{MenuItem | [[Git workshop]] }}
 {{MenuItem | [[Git Conflicts]] }}
+{{MenuItem | [[Git topic branches]] }}
 {{MenuItem | [[Git Notes]] }}
 {{MenuItem | [[Git reflogs]] }}
-{{MenuItem | [[Git topic branches]] }}
-| {{#ifeq:{{{1}}}|git||collapsed}}
-}}
-
-{{Submenu | Git Tutorials |
-{{MenuItem | [[Git mini howto]] }}
 {{MenuItem | [[Git submodule tutorial]] }}
+{{MenuItem | [[Pinpoint regressions with Git]] }}
 {{MenuItem | [[How to publish a Git repository]] }}
 {{MenuItem | [[How to extract a subproject]] }}
-{{MenuItem | [[Git workshop]] }}
-{{MenuItem | [[Pinpoint regressions with Git]] }}
 {{MenuItem | [[GitHub Tricks]] }}
-| {{#ifeq:{{{1}}}|git_tutorials||collapsed}}
+| {{#ifeq:{{{1}}}|git||collapsed}}
 }}
 
 {{Submenu | Fiji |
