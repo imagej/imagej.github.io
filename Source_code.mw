@@ -1,29 +1,42 @@
 {{Development}}
-The source code of ImageJ is very modular; i.e., it is organized into [[Architecture#Modularity|well-separated]] subprojects. This separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand.
+The source code of ImageJ is very modular; i.e., it is organized into [[Architecture#Modularity|well-separated]] projects. This separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand.
 
 == Source code ==
-The source code of [[ImageJ]] and related [[SciJava]] projects is managed using the [[Git]] version control system.
 
-All source code is on GitHub. The user-facing parts are:
+* All source code is on [[GitHub]]. 
+* Each project exists in its own GitHub organization. 
+* Each organization contains multiple source code repositories.
+* Each repository corresponds to one Java library (.jar file).
 
-* [https://github.com/imagej ImageJ] – a general-purpose image processing application
-* [https://github.com/fiji Fiji] – a distribution of ImageJ and plugins supporting life sciences in particular
+The organizations are:
 
-Both ImageJ and Fiji consist of multiple sub-projects; All projects address their individual "concern" and leave all other concerns to the respective other projects. 
+{| class="wikitable nicetable"
+| '''Logo'''
+| '''Project'''
+| '''Organization'''
+|-
+| [[File:Scijava-icon.png|48px]]
+| [[SciJava]]
+| [https://github.com/scijava scijava]
+|-
+| [[File:Imagej2-icon.png|48px]]
+| [[ImageJ]]
+| [https://github.com/imagej imagej]
+|-
+| [[File:Imglib2-icon.png|48px]]
+| [[ImgLib2]]
+| [https://github.com/imglib imglib]
+|-
+| [[File:Scifio-icon.png|48px]]
+| [[SCIFIO]]
+| [https://github.com/scifio scifio]
+|-
+| [[File:Fiji-icon.png|48px]]
+| [[Fiji]]
+| [https://github.com/fiji fiji]
+|}
 
-The developer-facing parts are:
-
-* [https://github.com/imglib ImgLib2] – generic multi-dimensional data processing in Java
-* [https://github.com/scifio SCIFIO] – file I/O
-* [https://github.com/scijava SciJava] – common utilities, plugin infrastructure, scripting, the context
-
-== Building from source ==
-# Install [[Maven]].
-# Clone the source repository of interest.
-# Type <code>mvn</code> from the top-level directory.
-
-== Using an IDE ==
-You can [[IDEs|import the code into your favorite IDE]].
+See the [[Architecture]] page for more information about the relationship between these projects.
 
 == Javadocs ==
 You can browse the [http://javadoc.imagej.net/ Javadocs] online.
