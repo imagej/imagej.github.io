@@ -15,11 +15,11 @@
 }}
 
 {{Submenu | Hacking the source |
+{{MenuItem | [[Maven|Intro to Maven]] }}
 {{MenuItem | [[Developing ImageJ in Eclipse|Using Eclipse]] }}
 {{MenuItem | [[Developing ImageJ in NetBeans|Using NetBeans]] }}
 {{MenuItem | [[Developing ImageJ in IntelliJ IDEA|Using IntelliJ IDEA]] }}
 {{MenuItem | [[Developing ImageJ on the command line|On the command line]] }}
-{{MenuItem | [[Maven]] }}
 | {{#ifeq:{{{1}}}|source||collapsed}}
 }}
 
