@@ -1,4 +1,5 @@
 {{Development | source}}
+{{Notice | If Maven is completely new to you, start with the [http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html five-minute overview].}}
 
 [[ImageJ]], [[Fiji]] and other [[SciJava]] projects use [http://maven.apache.org/ Maven] for their project infrastructure.
 
@@ -31,6 +32,7 @@ src/
                 <other-files>
                 ...
 </pre>
+
 
 Technically, you can override the default directory layout in the ''pom.xml'', but why do so? It only breaks expectations and is more hassle than it is worth, really.
 
