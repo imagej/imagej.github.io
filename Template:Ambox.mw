@@ -1,10 +1,10 @@
-<includeonly><table class="metadata plainlinks ambox {{#switch:{{{type|}}}
+<includeonly><table class="metadata plainlinks {{#ifeq:{{{small}}}|true|rambox|}} ambox {{#switch:{{{type|}}}
 | serious        = ambox-serious
 | content        = ambox-content
 | maintenance    = ambox-style
 | notice         = ambox-notice
 | #default       = ambox-notice
-}} {{#ifeq:{{{small}}}|true|rambox|}}">
+}}">
 <tr>
 <td class="ambox-image">
 {{#ifeq:{{{image}}}|none
@@ -63,6 +63,20 @@ Complex example:
 | text  = The message body text.
 }}
 
+Small box:
+
+<pre>
+{{ambox
+| small = true
+| text  = The message body text.
+}}
+</pre>
+
+{{ambox
+| small = true
+| text  = The message body text.
+}}
+
 ==== Default images ====
 
 The following examples use different '''type''' parameters but use no image parameters thus they use the default images for each type.
@@ -90,12 +104,17 @@ List of all parameters:
 
 <pre>
 {{ambox
+| small = true
 | type  = serious / content / maintenance / notice
 | image = none / blank / [[Image:Some image.svg|40px]]
 | imageright = [[Image:Some image.svg|40px]]
 | text  = The message body text. 
 }}
 </pre>
+
+'''small'''
+:'''No parameter''' = if no '''small''' parameter is given, defaults to normal box width of 80%.
+:'''true''' = Sets width to 60%, e.g. to allow interaction with menu bars.
 
 '''type'''
 :If no '''type''' parameter is given the template defaults to type '''notice''' which is used for "article notices". That means it gets a blue side bar like in the simple usage example above.
