@@ -16,6 +16,7 @@
 
 {{Submenu | Hacking the source |
 {{MenuItem | [[Maven|Intro to Maven]] }}
+{{MenuItem | [[Maven_-_Frequently_Asked_Questions|Maven FAQ]] }}
 {{MenuItem | [[Developing ImageJ in Eclipse|Using Eclipse]] }}
 {{MenuItem | [[Developing ImageJ in NetBeans|Using NetBeans]] }}
 {{MenuItem | [[Developing ImageJ in IntelliJ IDEA|Using IntelliJ IDEA]] }}
