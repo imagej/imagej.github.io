@@ -2,13 +2,11 @@
 The source code of ImageJ is very modular; i.e., it is organized into [[Architecture#Modularity|well-separated]] projects. This separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand.
 
 == Source code ==
-
-* All source code is on [[GitHub]]. 
+{{ ImageJ1 | For ImageJ 1.x source, use the [https://github.com/imagej/ImageJA ImageJA] repository in the ImageJ organization. }}* All source code is on [[GitHub]]. 
 * Each project exists in its own GitHub organization. 
 * Each organization contains multiple source code repositories.
 * Each repository corresponds to one Java library (.jar file).
 
-{{ ImageJ1 | For ImageJ 1.x source, use the [https://github.com/imagej/ImageJA ImageJA] repository in the ImageJ organization. }}
 {| class="wikitable nicetable"
 | '''Logo'''
 | '''Organization'''
@@ -39,7 +37,7 @@ See the [[Architecture]] page for more information about the relationship betwee
 
 == Building from source ==
 
-Virtually all of these repositories have a top-level pom.xml, identifying them as [[Maven]] projects.
+Virtually all of these repositories have a top-level <code>pom.xml</code> file, identifying them as [[Maven]] projects.
 
 To build a Maven project:
 
