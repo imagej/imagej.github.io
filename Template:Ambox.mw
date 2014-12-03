@@ -4,7 +4,7 @@
 | maintenance    = ambox-style
 | notice         = ambox-notice
 | #default       = ambox-notice
-}}">
+}} {{#ifeq:{{{small}}}|true|rambox|}}">
 <tr>
 <td class="ambox-image">
 {{#ifeq:{{{image}}}|none
