@@ -1,1 +1,47 @@
-#REDIRECT [[Source code]]
+{{Development}}The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosystem, are [[open source]] software projects.  Everybody is welcome to [[contribute]] with [[plugins]], patches, [[Bugs|bug reports]], [[tutorials]], [[documentation]], and artwork.
+
+== Philosophy ==
+
+The [[SciJava]] ecosystem is strongly committed to [[open source]] software development. But this software is not an [[open source]] software ''product''—it is an [[open source]] software ''project'' following an [[open source]] development ''process''. There are public [[Source Code|source code repositories]], public [[mailing lists]], public [[IRC|chat rooms]], public [[project management]] resources, and of course, this [[Help:Contents#Getting_help_regarding_the_ImageJ_Wiki|community editable website]]. See the [[Philosophy]] page for more information.
+
+== Project structure ==
+
+The structure of [[ImageJ]], and related projects in the [[SciJava]] software ecosystem, can be conceptualized in several different ways, with each perspective having its own dedicated wiki page:
+{| class="wikitable"
+| '''Page'''
+| '''Perspective'''
+| '''Description'''
+|-
+| [[Architecture]]
+| Technical
+| [[ImageJ]] and related [[SciJava]] projects are carefully structured to foster [[extensibility]]. The [[source code]] is on [[GitHub]] across several organizations, structured as [[Maven]] projects.
+|-
+| [[Licensing]]
+| Legal
+| [[ImageJ]] and related [[SciJava]] projects are licensed as [[open source]] software (OSS) projects. Most projects use a [[BSD]] style license, though some are [[GPL]].
+|-
+| [[Governance]]
+| Social
+| Like any OSS project, [[ImageJ]] and [[SciJava]] need leaders: the ones who participate in ''governance'' of the project, [https://en.wikipedia.org/wiki/Software_maintenance maintaining] the software and making key decisions.
+|}
+
+== Source code ==
+
+The source code of [[ImageJ]] and [[SciJava]] is organized into [[Architecture#Modularity|well-separated]] projects. This separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand. See the [[Source code]] page for further details.
+
+== Project management ==
+
+The [[ImageJ]] and related [[SciJava]] projects take advantage of several project management tools, including [[Git]], [[Maven]], [[GitHub]] and [[Jenkins]]. See the [[Project management]] page for details.
+
+== ImageJ plugins ==
+
+* [[Introduction into Developing Plugins|Writing ImageJ 1.x plugins]]
+* [[Writing ImageJ2 plugins]]
+* [[How to contribute to an existing plugin or library|Contributing to an existing plugin]]
+* [[Distribution|Distributing your plugin]]
+
+== Fiji topics ==
+
+* [[Developing Fiji]]
+* [[Fiji contribution requirements]]
+* [[Supported Compilers]]
