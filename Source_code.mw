@@ -8,33 +8,33 @@ The source code of ImageJ is very modular; i.e., it is organized into [[Architec
 * Each organization contains multiple source code repositories.
 * Each repository corresponds to one Java library (.jar file).
 
-The organizations are:
-
+{{ ImageJ1 | For ImageJ 1.x source, use the [https://github.com/imagej/ImageJA ImageJA] repository in the ImageJ organization. }}
 {| class="wikitable nicetable"
 | '''Logo'''
-| '''Project'''
 | '''Organization'''
+| '''Purpose'''
 |-
-| [[File:Scijava-icon.png|48px]]
-| [[SciJava]]
-| [https://github.com/scijava scijava]
+| [[File:Scijava-icon.png|56px]]
+| [https://github.com/scijava SciJava]
+| Common utilities, plugin infrastructure, scripting, the context 
 |-
-| [[File:Imagej2-icon.png|48px]]
-| [[ImageJ]]
-| [https://github.com/imagej imagej]
+| [[File:Imagej2-icon.png|56px]]
+| [https://github.com/imagej ImageJ]
+| A general-purpose image processing application
 |-
-| [[File:Imglib2-icon.png|48px]]
-| [[ImgLib2]]
-| [https://github.com/imglib imglib]
+| [[File:Imglib2-icon.png|56px]]
+| [https://github.com/imglib ImgLib]
+| Generic multi-dimensional data processing
 |-
-| [[File:Scifio-icon.png|48px]]
-| [[SCIFIO]]
-| [https://github.com/scifio scifio]
+| [[File:Scifio-icon.png|56px]]
+| [https://github.com/scifio SCIFIO]
+| Extensible file I/O
 |-
-| [[File:Fiji-icon.png|48px]]
-| [[Fiji]]
-| [https://github.com/fiji fiji]
+| [[File:Fiji-icon.png|56px]]
+| [https://github.com/fiji Fiji]
+| A distribution of ImageJ and plugins supporting life sciences in particular 
 |}
+
 
 See the [[Architecture]] page for more information about the relationship between these projects.
 
