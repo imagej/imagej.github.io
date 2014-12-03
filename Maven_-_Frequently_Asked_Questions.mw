@@ -22,31 +22,15 @@ However, once you become more comfortable with Maven, I suggest using [http://st
 
 For example, while you develop your plugin, you might use the version ''1.0.0-SNAPSHOT'' to indicate that this is not the final ''1.0.0'' version but leads up to it. Once you are happy with the plugin in its current form, switch to ''1.0.0''. Note, however, that Maven will not like it too much if you change the sources of the final ''1.0.0'' version without advancing the version in the ''pom.xml'' file.
 
-= How is the imagej version determined? =
+= How is the ImageJ version determined? =
 
-In many ''pom.xml'' files, you can see that the version of the ''ij'' dependency is declared like this:
+In many ''pom.xml'' files, you can see that the version of the ''ij'' dependency is omitted.
+https://github.com/imagej/pom-imagej/blob/pom-imagej-5.2.0/pom.xml#L216-L217
+The version is specified (or "managed") by the {{GitHub|org=imagej|repo=pom-imagej|tag=pom-imagej-5.2.0|path=pom.xml#L216-L217|label=pom-imagej parent configuration}}.
 
-<source lang="xml">
-<version>${imagej1.version}</version>
-</source>
-
-The string ''${imagej1.version}'' is a property that gets replaced with the actual value. This value is {{GitHub|org=scijava|repo=scijava-common|tag=5c1764b9|path=pom-scijava/pom.xml#L21|label=defined in the pom-scijava parent configuration}}. Currently the value is ''[1.45s,)'' which means ''the latest release version you can find equal to or greater than 1.45s.''
-
-Browse the latest pom-scijava {{GitHub|org=scijava|repo=scijava-common|path=pom-scijava/pom.xml|label=here}}.
+Browse the latest <code>pom-imagej</code> {{GitHub|org=imagej|repo=pom-imagej|path=pom.xml|label=here}}.
 
 Browse the available versions of ImageJ 1.x [http://maven.imagej.net/content/repositories/releases/net/imagej/ij/ here].
-
-As of this writing, 1.47n is the latest available version, so that's the one Maven will use with your plugin.
-
-If you require an ImageJ 1.x version newer than 1.45s (e.g. due to the use of a method or class that was only introduced in a later version) you probably want to override the setting in your ''pom.xml'' file's ''<properties>'' section:
-
-<source lang="xml">
-<properties>
-  ...
-  <imagej1.version>[1.47b,)</imagej1.version>
-  ...
-</properties>
-</source>
 
 = What's this: ''Property 'imagej.app.directory' unset; Skipping copy-jars'' =
 
