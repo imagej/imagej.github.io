@@ -44,11 +44,6 @@ div.NavEnd {
 */
 /* monobookocentré fin */
 
-/* Reduced size message box, allowing space for side-bars */
-table.rambox {
-  width: 60% !important;
-}
-
 /* Article message box template styles */
 table.ambox {
   width: 80%; 
