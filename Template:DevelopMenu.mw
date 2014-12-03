@@ -20,7 +20,7 @@
 {{MenuItem | [[Developing ImageJ in IntelliJ IDEA|Using IntelliJ IDEA]] }}
 {{MenuItem | [[Developing ImageJ on the command line|On the command line]] }}
 {{MenuItem | [[Maven]] }}
-| {{#ifeq:{{{1}}}|ides||collapsed}}
+| {{#ifeq:{{{1}}}|source||collapsed}}
 }}
 
 {{Submenu | Developing plugins |
