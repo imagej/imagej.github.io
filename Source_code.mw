@@ -12,23 +12,23 @@ The source code of ImageJ is very modular; i.e., it is organized into [[Architec
 | '''Organization'''
 | '''Purpose'''
 |-
-| [[File:Scijava-icon.png|56px]]
+| [[File:Scijava-icon.png|28px]]
 | [https://github.com/scijava SciJava]
 | Common utilities, plugin infrastructure, scripting, the context 
 |-
-| [[File:Imagej2-icon.png|56px]]
+| [[File:Imagej2-icon.png|28px]]
 | [https://github.com/imagej ImageJ]
 | A general-purpose image processing application
 |-
-| [[File:Imglib2-icon.png|56px]]
+| [[File:Imglib2-icon.png|28px]]
 | [https://github.com/imglib ImgLib]
 | Generic multi-dimensional data processing
 |-
-| [[File:Scifio-icon.png|56px]]
+| [[File:Scifio-icon.png|28px]]
 | [https://github.com/scifio SCIFIO]
 | Extensible file I/O
 |-
-| [[File:Fiji-icon.png|56px]]
+| [[File:Fiji-icon.png|28px]]
 | [https://github.com/fiji Fiji]
 | A distribution of ImageJ and plugins supporting life sciences in particular 
 |}
