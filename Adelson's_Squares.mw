@@ -1,1 +1,3 @@
 Simlar to the [[Spirals_(Macro)|spirals]] sample, {{GitHub|repo=fiji|path=plugins/Scripts/File/Open_Samples/Adelsons_Squares.ijm|label=Adelson's squares}} demonstrate that human vision is suboptimal for quantitative measurements. In the natural context in which humans developed, it makes sense to compensate for shadows. However, this makes us believe that the two squares with the diamonds have a different background color, yet they are identical!
+
+[[File:Adelsons-squares.png]]
