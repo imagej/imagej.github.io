@@ -69,10 +69,39 @@ Whatevs       Whatevs       Whatevs       Totes         Whovian       Whovian   
 
 = Usage. =
 
+The 4 basic operations are accessed through 4 classes:
+* [https://github.com/tinevez/imglib2-algorithm/blob/morphology/src/main/java/net/imglib2/algorithm/morphology/Dilation.java net.imglib2.algorithm.morphology.Dilation]
+* [https://github.com/tinevez/imglib2-algorithm/blob/morphology/src/main/java/net/imglib2/algorithm/morphology/Erosion.java net.imglib2.algorithm.morphology.Erosion]
+* [https://github.com/tinevez/imglib2-algorithm/blob/morphology/src/main/java/net/imglib2/algorithm/morphology/Opening.java net.imglib2.algorithm.morphology.Opening]
+* [https://github.com/tinevez/imglib2-algorithm/blob/morphology/src/main/java/net/imglib2/algorithm/morphology/Closing.java net.imglib2.algorithm.morphology.Closing]
+
+Each of these classes contains only static methods that performs the desired operation. There can be up to 16 flavors of the same operation. They exist to cover all cases, which fall in 4 categories:
+
+* You want to operate on an [https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/img/Img.java Img] and return a '''new Img''' with the results. Then you need to call for instance:
+<source lang="java">
+Img< FloatType > result = Dilation.dilate( img, strel, 1 );
+</source>
+[[File:DilatedToNewImgExample.png|600px]]
+
+* You want to perform to '''full''' dilation or erosion on a source Img. Full version of these operations means the new image will have a size increased or shrunk as if the structuring element would actually dilate or erode the source border:
+<source lang="java">
+Img< FloatType > result = Dilation.dilateFull( img, strel, 1 );
+</source>
+[[File:DilatedToNewFullImgExample.png|600px]]
 
 
+* You want to operate on a source [https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/RandomAccessibleInterval.java RandomAccessibleInterval], in place (write the results in the source):
+<source lang="java">
+Dilation.dilateInPlace( rai, interval, strel, 1 );
+</source>
+[[File:DilatedInPlaceExample.png|600px]]
 
 
+* You want to operate on a source [https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/RandomAccessible.java RandomAccessible], and write the results in a provided [https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/IterableInterval.java IterableInterval]:
+<source lang="java">
+Dilation.dilate( source, target, strel, 1 )
+</source>
+[[File:DilatedToTargetExample.png|600px]]
 = Structuring elements. =
 
 This chapter documents and details implemented structuring elements, their decomposition and how do they perform in time.
