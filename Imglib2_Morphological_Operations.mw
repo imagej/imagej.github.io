@@ -16,9 +16,9 @@ Apart from this, it is strongly inspired by the morphological operation methods 
 
 It also ships facilities to generate structuring elements, and allows the use of decomposed structuring elements for performance optimization. This part is documented below.
 
-Classes can be found in the <code>[https://github.com/imglib/imglib2-algorithm/tree/master/src/main/java/net/imglib2/algorithm/morphology net.imglib2.algorithm.morphology]</code> package of the [https://github.com/imglib/imglib2-algorithm imglib2-algorithm library].
+Classes can be found in the <code>[https://github.com/tinevez/imglib2-algorithm/tree/morphology/src/main/java/net/imglib2/algorithm/morphology net.imglib2.algorithm.morphology]</code> package of the [https://github.com/imglib/imglib2-algorithm imglib2-algorithm library].
 
-
+Examples can be found in the <code>https://github.com/tinevez/imglib2-tests/tree/morphology/src/test/java/net/imglib2/algorithm/morphology</code> package of the [https://github.com/imglib/imglib2-tests imglib2-tests library].
 
 == Gray morphology and flat structuring elements. ==
 
