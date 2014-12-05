@@ -123,13 +123,29 @@ and
 public static < T extends RealType< T > > Img< T > dilate( final Img< T > source, final List< Shape > strels, final int numThreads )
 </source>
 
-= Structuring elements. =
+= Structuring elements and their decomposition. =
 
-This chapter documents and details implemented structuring elements, their decomposition and how do they perform in time.
+Morphological operations are basically neighborhood operations: you iterate in a neighborhood around each location of the source, and the target value at this location depends on the maximal or minimal value you meet then. So typically, the complexity of the algorithm can be written as <code>N × n</code> where <code>N</code> is the number of pixels in the source and <code>n</code> is the number of pixels in the neighborhood. For instance, for a square neighborhood of side <code>l</code> it will be <code>N × l²</code>.
+
+It turns out some structuring elements can be decomposed to achieve greater performance. For instance, looking for the maximum in a square of side <code>l</code> can be achieved by first looking for the maximum in an horizontal line of length <code>l</code>, writing the results somewhere, then looking for the maximum of the intermediate image in a vertical line of length <code>l</code>. The square structuring element can be decomposed in two  orthogonal lines. The benefits in complexity are immediate; with the decomposition, it is now of  <code>N × 2 × l</code>. Benefits are greater as the size of the neighborhood increases.
+
+Several structuring elements can be decomposed, sometimes depending on the dimensionality of the problem. 
+
+In the Imglib2 morphology package, these decompositions are achieved through the [https://github.com/tinevez/imglib2-algorithm/blob/morphology/src/main/java/net/imglib2/algorithm/morphology/StructuringElements.java  StructuringElements] class. For instance:
+
+<source lang="java">
+public static final List< Shape > diamond( final int radius, final int dimensionality, final boolean decompose )
+</source>
+
+This method returns a structuring element as a list of shapes, and a boolean flag determines if the returned list correspond to an optimization or not. As seen above, all operations are built to support a list of shapes as structuring element.
+
+The following paragraphs document what decompositions are currently implemented for common structuring elements.
+
 
 
 
 == Rectangular structuring element. ==
+
 
 
 === Decomposition. ===
