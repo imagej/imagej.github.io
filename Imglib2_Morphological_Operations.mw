@@ -69,11 +69,13 @@ Whatevs       Whatevs       Whatevs       Totes         Whovian       Whovian   
 
 = Usage. =
 
+
 The 4 basic operations are accessed through 4 classes:
 * [https://github.com/tinevez/imglib2-algorithm/blob/morphology/src/main/java/net/imglib2/algorithm/morphology/Dilation.java net.imglib2.algorithm.morphology.Dilation]
 * [https://github.com/tinevez/imglib2-algorithm/blob/morphology/src/main/java/net/imglib2/algorithm/morphology/Erosion.java net.imglib2.algorithm.morphology.Erosion]
 * [https://github.com/tinevez/imglib2-algorithm/blob/morphology/src/main/java/net/imglib2/algorithm/morphology/Opening.java net.imglib2.algorithm.morphology.Opening]
 * [https://github.com/tinevez/imglib2-algorithm/blob/morphology/src/main/java/net/imglib2/algorithm/morphology/Closing.java net.imglib2.algorithm.morphology.Closing]
+
 
 Each of these classes contains only static methods that performs the desired operation. There can be up to 16 flavors of the same operation. They exist to cover all cases, which fall in 4 categories:
 
@@ -102,6 +104,25 @@ Dilation.dilateInPlace( rai, interval, strel, 1 );
 Dilation.dilate( source, target, strel, 1 )
 </source>
 [[File:DilatedToTargetExample.png|600px]]
+
+
+Now, each of these category are declined in 4 specifics methods:
+
+* Depending on the source type: 
+
+** If the source type inherits from [https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/type/numeric/RealType.java RealType] - which is the case for most numeric types and all the native types - then you can use directly the above methods without any extras.
+
+** But you may have a source which might be <code>T extends Comparable & Type</code>. Then you have to provided the maximal value or the minimal value or both for this type. Then you have to call the methods whose signature are like:
+<source lang="java">
+public static < T extends Type< T > & Comparable< T > > Img< T > dilate( final Img< T > source, final Shape strel, final T minVal, final int numThreads )
+</source>
+
+* Depending on whether you have the structuring element as a single Shape or decomposed in a list of Shape, there is a version of all those methods for this case or the other. 
+
+
+
+
+
 = Structuring elements. =
 
 This chapter documents and details implemented structuring elements, their decomposition and how do they perform in time.
