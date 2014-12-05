@@ -109,19 +109,19 @@ Dilation.dilate( source, target, strel, 1 )
 Now, each of these category are declined in 4 specifics methods:
 
 * Depending on the source type: 
-
 ** If the source type inherits from [https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/type/numeric/RealType.java RealType] - which is the case for most numeric types and all the native types - then you can use directly the above methods without any extras.
-
 ** But you may have a source which might be <code>T extends Comparable & Type</code>. Then you have to provided the maximal value or the minimal value or both for this type. Then you have to call the methods whose signature are like:
 <source lang="java">
 public static < T extends Type< T > & Comparable< T > > Img< T > dilate( final Img< T > source, final Shape strel, final T minVal, final int numThreads )
 </source>
-
-* Depending on whether you have the structuring element as a single Shape or decomposed in a list of Shape, there is a version of all those methods for this case or the other. 
-
-
-
-
+* Depending on whether you have the structuring element as a single Shape or decomposed in a list of Shape, there is a version of all those methods for this case or the other.
+<source lang="java">
+public static < T extends RealType< T > > Img< T > dilate( final Img< T > source, final Shape strel, final int numThreads )
+</source>
+and
+<source lang="java">
+public static < T extends RealType< T > > Img< T > dilate( final Img< T > source, final List< Shape > strels, final int numThreads )
+</source>
 
 = Structuring elements. =
 
