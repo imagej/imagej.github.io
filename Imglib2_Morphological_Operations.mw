@@ -1,11 +1,33 @@
-<tt>!!Work in Progress!! 
+= Morphological operations in Imglib2. =
 
-This page centralizes documentation and current performance of the morphological operation package in imglib2. As the package is under development, the information here might be irrelevant or useless</tt>
-
-
+The presentation of what are morphological operations is left to [http://en.wikipedia.org/wiki/Mathematical_morphology Wikipedia].
 
 
-= Morphological operations. =
+
+== Package content and location. ==
+
+This Imglib2 package ships only (yet) the basic morphological operations:
+* erosion
+* dilation
+* opening 
+* closing
+These 4 operations are implemented for arbitrary dimensionalities (2D, 3D, 4D, etc...). The package reuses standard Imglib2 interfaces and classes. It also conforms to the public static methods accessors for low level algorithms, as the [https://github.com/imglib/imglib2-algorithm/tree/master/src/main/java/net/imglib2/algorithm/gauss3 gauss3] package does.
+Apart from this, it is strongly inspired by the morphological operation methods in the Image Processing Toolbox of the [http://fr.mathworks.com/help/images/morphological-filtering.html MATLAB] software.
+
+It also ships facilities to generate structuring elements, and allows the use of decomposed structuring elements for performance optimization. This part is documented below.
+
+Classes can be found in the <code>[https://github.com/imglib/imglib2-algorithm/tree/master/src/main/java/net/imglib2/algorithm/morphology net.imglib2.algorithm.morphology]</code> package of the [https://github.com/imglib/imglib2-algorithm imglib2-algorithm library].
+
+
+
+== Gray morphology and flat structuring elements. ==
+
+This set of methods does ''gray morphology''. It applies to source images that can be of any scalar numerical type (8-bit, 12-bit, 16-bit, booleans, floats, signed or unsigned, ...), not only black and white images. 
+
+It actually applies to more than this: The type of the source image only needs to extend <code>Type</code> (the Imglib2 mother interface for values) and <code>Comparable</code>  (the java interface for objects than can be compared to others). This is detailed later. 
+
+However, we use the Imglib2 [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/region/localneighborhood/Shape.java Shape interface] for structuring elements. This restricts structuring elements to ''flat'' structuring elements, which do not have a weight, or value, associated to each location. This prevents us from developing a ''stricto sensu'' rolling-ball background subtraction algorithm based on this package (but a rolling-disk version is possible).
+
 
 
 == Morphological operations on <code>Comparable</code> type. ==
@@ -45,14 +67,25 @@ Whatevs       Whatevs       Whatevs       Totes         Whovian       Whovian   
 
 
 
+= Usage. =
+
+
+
+
+
 = Structuring elements. =
+
+This chapter documents and details implemented structuring elements, their decomposition and how do they perform in time.
+
 
 
 == Rectangular structuring element. ==
 
+
 === Decomposition. ===
 
 A rectangle can be decomposed in a series of orthogonal lines, in any dimensions, considerably diminishing the number of pixels to iterate. 
+
 
 ==== 2D case. ====
 
@@ -65,6 +98,7 @@ The performance improvement should therefore be equal to <code>R / 2</code>. A l
 File:RectangleStrel2DPerformance.png|Processing time for the dilation of a 100x100 image.
 File:RectangleStrel2DPerformanceComparison.png|Processing time ratio.
 </gallery>
+
 
 ==== 3D case. ====
 
@@ -82,7 +116,6 @@ File:RectangleStrel3DPerformanceComparison.png|Processing time ratio.
 
 === Decomposition. ===
 
-
 The square is just a special case of the rectangle, implemented for convenience. It has the same decomposition principle. And similar conclusions can be reached: 
 
 
@@ -94,14 +127,15 @@ File:SquareStrel2DPerformanceComparison.png|Processing time ratio.
 File:SquareStrel2DPerformanceWMATLAB.png|First image zoomed to highlight MATLAB performance.
 </gallery>
 
-==== 3D case. ====
 
+==== 3D case. ====
 
 <gallery heights="300" widths="300" mode="packed-hover">
 File:SquareStrel3DPerformance.png|Processing time for the dilation of a 49x49x49 image.
 File:SquareStrel3DPerformanceComparison.png|Processing time ratio.
 File:SquareStrel3DPerformanceWMATLAB.png|First image zoomed to highlight MATLAB performance.
 </gallery>
+
 
 
 == Diamond structuring element ==
@@ -133,11 +167,13 @@ And in 3D:
 
 It is the crudest approximation of a sphere.
 
+
 === Decomposition. ===
 
 The diamond strel can be effectively decomposed in 2D (and 1D) using the logarithmic decomposition in extreme sets, as explained in <ref name="BoomgardVanBalen">Rein van den Boomgard and Richard van Balen, [http://www.sciencedirect.com/science/article/pii/1049965292900553.htm Methods for Fast Morphological Image Transforms Using Bitmapped Binary Images], CVGIP: Models and Image Processing, vol. 54, no. 3, May 1992, pp. 252-254.</ref>. The shape is then decomposed in a minimal series of smaller diamond and diamond tips. The decomposition is exact, giving the same result that of the non-decomposed version. 
 
 In 3D and higher dimensionalities, the logarithmic decomposition cannot be done, and we rely on a more classical linear decomposition (also well explained in <ref name="BoomgardVanBalen"/>). Here is a comparison on how the decomposed version performs versus the non-decomposed one.
+
 
 ==== 2D performance ====
 
@@ -148,6 +184,7 @@ File:DiamondStrel2DPerformanceComparison.png|Processing time ratio.
 
 It is worth using a decomposition above a radius of 4.
 
+
 ==== 3D performance. ====
 
 
@@ -157,6 +194,7 @@ File:DiamondStrel3DPerformanceComparison.png|Processing time ratio.
 </gallery>
 
 It is worth using a decomposition in almost any cases.
+
 
 ==== Comparison with MATLAB. ====
 
@@ -170,6 +208,7 @@ File:DiamondStrel3DPerformanceWMATLAB.png|Processing time for the dilation of a 
 For the 2D case (only), MATLAB offers to generate optimized structuring elements, like for this Imglib2 code. This is why there is two MATLAB curves on the 2D graph. We can see that in all cases, the MATLAB code is faster than the Imglib2 code (respective to optimized vs optimized and the converse).  This may be explained by the fact that MATLAB benefitiates on my computer (a 2012 MacPro) from the Intel Integrated Performance Primitives ([http://software.intel.com/en-us/intel-ipp IPP]), that strongly improves block processing algorithms. Fortunately, the difference is not too taxing in the optimized case.
 
 In 3D, MATLAB does not offer a structuring element decomposition (yet). So the performance curve as the expected cubic shape, though it outperforms Imglib2 in the non-optimized case. For large radius, the Imglib2 optimization manages to beat it.
+
 
 
 == Disk structuring element. ==
