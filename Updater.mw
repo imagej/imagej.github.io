@@ -11,14 +11,14 @@
 
 The purpose of the ImageJ Updater is to keep you up-to-date with all components of ImageJ (or Fiji), i.e. the macros, scripts, plugins and the core components (libraries) needed by the plugins.
 
-As of 2011, the Fiji Updater can handle [[#Adding update sites|3rd-party update sites]], i.e. anybody can set up their own update site which users can follow. 
+As of 2011, the ImageJ Updater can handle [[#Adding update sites|3rd-party update sites]], i.e. anybody can set up their own update site which users can follow. 
 
 == Automatic Update ==
 
 The Updater is a mechanism to update individual packages. It is automatically run when all the following conditions are met:
 
 * ImageJ was just started
-* ImageJ was started without parameters (i.e. no Drag 'n Drop onto the Fiji icon)
+* ImageJ was started without parameters (i.e. no Drag 'n Drop onto the ImageJ icon)
 * ImageJ's files can be updated by the current user
 * There is a network connection
 
@@ -128,7 +128,7 @@ In order to update from command line using  a specific update site (for example 
 
 == Bootstrapping the updater ==
 
-If you do not have ImageJ/Fiji yet, you can download [http://update.imagej.net/bootstrap.js bootstrap.js] and run it like this:
+If you do not have ImageJ yet, you can download [http://update.imagej.net/bootstrap.js bootstrap.js] and run it like this:
 
 <source lang="bash">
 jrunscript bootstrap.js help
@@ -136,17 +136,17 @@ jrunscript bootstrap.js help
 
 This uses the '''jrunscript''' executable of your Java installation to run the Javascript file tracked in ImageJ's {{GitHub|org=imagej|repo=imagej-updater|path=bin/bootstrap.js|label=source code repository}}.
 
-The <code>bootstrap.js</code> script was originally intended to fix broken Fiji installations, and was subsequently enhanced to initialize the updater in an ImageJ 1.x-only directory -- or even from a complete fresh state.
+The <code>bootstrap.js</code> script was originally intended to fix broken [[Fiji]] installations, and was subsequently enhanced to initialize the updater in an ImageJ 1.x-only directory -- or even from a complete fresh state.
 
 == History ==
 
-The original updater was written in a frantic week in October 2008 in preparation for the first public Fiji release, to be able to keep Fiji up-to-date.
+The original updater was written in a frantic week in October 2008 in preparation for the first public [[Fiji]] release, to be able to keep Fiji up-to-date.
 
 In the course of one of two successful Google Summer of Code projects, the updater was rewritten from scratch (but in a [[Backwards_Compatibility|backwards-compatible manner]]) by Yap Chin Kiet under the mentorship of Mark Longair and Johannes Schindelin in 2009.
 
 Johannes Schindelin got stuck with the maintainership and introduced third-party update sites (a feature that many claimed to desire, though no pinky was harmed by contributing any code) in the course of a very successful [[Hackathon#ImageJ_hackathons|hackathon]] at the Lawrence Berkeley National Laboratory in October 2010 and another one in February 2011 hosted by [[LOCI]].
 
-As of September 2012, the Fiji Updater has moved to ImageJ2. Details can be found in the announcement: [[2012-09-14 - The Updater moved]].
+As of September 2012, the Fiji Updater has moved to [[ImageJ2]]. Details can be found in the announcement: [[2012-09-14 - The Updater moved]].
 
 [[Category:Plugins]]
 [[Category:ImageJ2]]
