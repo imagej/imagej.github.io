@@ -12,8 +12,7 @@ For example, when you recorded an image using a confocal microscope, the values 
 
 == Pixels are not little squares ==
 
-And voxels are not cubes!
-
+And voxels are not cubes! See the [http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf whitepaper by Alvy Ray Smith].
 
 == Why (lossy) JPEGs should not be used in imaging ==
 JPEG stands for Joint Photographic Experts Group who were the creators of a commonly used method of lossy compression for photographic images. This format is commonly used in web pages and supported by the vast majority of digital photographic cameras and image scanners because it can store images in relatively small files at the expense of image quality. There are also loss-less JPEG modes, but these in general are not widely implemented and chances are that most of the images are of the lossy type.
