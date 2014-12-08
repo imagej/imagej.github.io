@@ -21,9 +21,16 @@ To collaborate with others, there are also ''remote repositories'' from where yo
 
 Git makes it not only to record what you did, it makes it easy to follow the development of other developers, and integrate those changes (''merge'' in Git speak).
 
-Even if we are all brilliant developers, from time to time the program appears to be completely broken by our work. Git can tell you which changes you made relative to the current commit -- quickly!
+Even if we are all brilliant developers, from time to time the program appears to be completely broken by our work. Git can tell you which changes you made relative to the current commit—quickly!
 
-Among further benefits, you can easily [[Pinpoint regressions with Git|find commits introducing a regression]].
+Further benefits:
+* Study the history of a project to understand not only ''what'' the developers did ''when'', but also ''why'' by reading their commit messages (i.e., the log of changes).
+* Recover any past revision, such as when the latest version suffers from a bug (i.e., a ''regression'') not present in an older version.
+* Easily [[Pinpoint regressions with Git|find the commit which introduced such a regression]].
+* Ensure the code and history is never lost, even if your machine fails—anyone with a ''clone'' of the repository has a copy of the entire history.
+* Work on multiple new features or bug-fixes simultaneously, easily organizing and switching between them using ''branches''.
+
+The only negative to Git is the activation barrier of learning it. Once you become proficient, Git is a huge asset to any development project.
 
 = Essential Git commands =
 
