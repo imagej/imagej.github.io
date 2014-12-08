@@ -25,7 +25,7 @@ Download and install IDEA from the [http://www.jetbrains.com/idea/download/ IDEA
 
 Install Java using the package manager—e.g., for Ubuntu 10.04:
 
-<source style="bash">
+<source lang="bash">
 sudo add-apt-repository "deb http://archive.canonical.com/ lucid partner"
 sudo aptitude update
 sudo aptitude install sun-java6-jdk sun-java6-plugin
