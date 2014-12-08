@@ -29,7 +29,7 @@ Some useful documentation:
 * [[Git_bisection|How to find which commit introduced a regression]]
 * [[SSH_public_keys|Setting up password-less SSH login]]
 * [[Coding style#SCM_history|Best practices established by the ImageJ2 project]]
-* [[Git_Notes|Some notes on Git usage by Dr. Saalfeld]]
+* [[Git_Notes|A cheat sheet on Git usage]]
 * [[Git_for_dummies|Git recipes from Pavel so that he doesn't have to ask again]]
 
 [[Category:Git]]
