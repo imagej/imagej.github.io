@@ -409,6 +409,10 @@ Once you have followed these steps, it should be possible to deploy snapshot JAR
 
 == ImageJ update sites ==
 
-TODO - [http://sites.imagej.net/ sites.imagej.net]
+ImageJ [[update sites]] are what ImageJ actually queries to check for and download updates. These update sites are versioned, but do not rely on other tools (e.g., [[Git]] or [[Maven]]) in order to function. Rather, component developers upload new versions of their component(s) using the [[ImageJ Updater]], which makes them available to end users. Typically, update sites are available as web sites via HTTP, with uploads functioning via [https://github.com/imagej/imagej-plugins-uploader-webdav WebDAV] or [https://github.com/imagej/imagej-plugins-uploader-ssh SSH/SFTP/SCP].
+
+An update site can be hosted anywhere, though the ImageJ web server at http://sites.imagej.net/ offers a [[personal update site]] service.
+
+See the [[Update Sites|documentation on update sites]] for further details.
 
 [[Category:Development]]
