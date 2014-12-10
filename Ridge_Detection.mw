@@ -28,10 +28,27 @@ There are three parameters which '''have to ''' be specified. These are the mand
 
 =Mandatory Parameters=
 
-'''Sigma:'''
+'''Sigma:''' Determined the sigma for the derivatives. It depends on the line width.
 
-'''Lower Threshold:'''
+'''Lower Threshold:''' Line points smaller as this threshold are rejected
 
-'''Upper Threshold:'''
+'''Upper Threshold:''' Line points larger as this threshold are accepted.
 
-'''Darkline:'''
+'''Darkline:''' (true/false) This parameter determines whether dark or bright lines are extracted.
+
+=Optional parameters=
+
+'''Line width:'''
+
+'''High contrast:'''
+
+'''Low contrast:'''
+
+=Further options=
+'''Correct position:'''
+
+'''Estimate width:'''
+
+'''Show junction points:'''
+
+'''Display results:'''
