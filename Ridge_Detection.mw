@@ -38,7 +38,7 @@ There are three parameters which '''have to ''' be specified. These are the mand
 
 =Optional parameters=
 
-'''Line width:''' The ridge diameter in pixels.
+'''Line width:''' The line diameter in pixels.
 
 '''High contrast:''' Highest grayscale value of the line.
 
