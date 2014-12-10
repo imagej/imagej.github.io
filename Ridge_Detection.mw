@@ -30,7 +30,7 @@ There are three parameters which '''have to ''' be specified. These are the mand
 
 =Mandatory Parameters=
 
-'''Sigma:''' Determined the sigma for the derivatives. It depends on the line width.
+'''Sigma:''' Determines the sigma for the derivatives. It depends on the line width.
 
 '''Lower Threshold:''' Line points smaller as this threshold are rejected
 
