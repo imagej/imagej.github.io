@@ -36,11 +36,13 @@ There are three parameters which '''have to ''' be specified. These are the mand
 
 =Optional parameters=
 
-'''Line width:'''
+'''Line width:''' The ridge diameter in pixels.
 
-'''High contrast:'''
+'''High contrast:''' Highest grayscale value of the ridge.
 
-'''Low contrast:'''
+'''Low contrast:'''  Lowest grayscale value of the ridge.
+
+These optional parameters are used to estimate the mandatory parameters.
 
 =Further options=
 '''Correct position:'''
