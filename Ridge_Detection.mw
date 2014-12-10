@@ -32,9 +32,9 @@ There are three parameters which '''have to ''' be specified. These are the mand
 
 '''Sigma:''' Determines the sigma for the derivatives. It depends on the line width.
 
-'''Lower Threshold:''' Line points smaller as this threshold are rejected
+'''Lower Threshold:''' Line points with a response smaller as this threshold are rejected
 
-'''Upper Threshold:''' Line points larger as this threshold are accepted.
+'''Upper Threshold:''' Line points with a response larger as this threshold are accepted.
 
 '''Darkline:''' (true/false) This parameter determines whether dark or bright lines are extracted.
 
