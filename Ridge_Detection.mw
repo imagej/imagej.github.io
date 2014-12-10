@@ -21,3 +21,17 @@ This plugin implements the ridge detection algorithm described in:
 This example shows the application of the plugin on images of carbon nanotubes (Sigma = 1.5, Lower Threshold = 1.3, Higher Threshold = 7).
 
 == Parameter Selection ==
+
+There are three parameters which '''have to ''' be specified. These are the mandatory parameters. The optional parameters can be used to estimate the mandatory parameters
+
+[[File:Ridge Detection Parameters.png]]
+
+=Mandatory Parameters=
+
+'''Sigma:'''
+
+'''Lower Threshold:'''
+
+'''Upper Threshold:'''
+
+'''Darkline:'''
