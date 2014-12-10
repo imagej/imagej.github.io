@@ -18,4 +18,6 @@ This plugin implements the ridge detection algorithm described in:
 == Examples ==
 [[File:CNT_Ridge_Detection_Original.png]]      [[File:CNT_Ridge_Detection_Example.png]]
 
+This example shows the application of the plugin on images of carbon nanotubes (Sigma = 1.5, Lower Threshold = 1.3, Higher Threshold = 7).
+
 == Parameter Selection ==
