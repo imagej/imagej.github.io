@@ -46,9 +46,9 @@ These optional parameters are used to estimate the mandatory parameters.
 
 =Further options (true/false)=
 [[File:RidgeDetectionWidth.png|140px|thumb|Output if "Estimated width" is selected]]
-'''Correct position:'''
+'''Correct position:''' Correct the line position if it has different contrast on each side of it.
 
-'''Estimate width:''' If this option is selected the width of the ridges is also estimated.
+'''Estimate width:''' If this option is selected the width of the line is estimated.
 
 
 '''Show junction points:''' If this option is selected the junctions points will be displayed.
