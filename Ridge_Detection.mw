@@ -3,8 +3,8 @@
 | name                   = Ridge Detection Plugin
 | author                 = Thorsten Wagner
 | maintainer             = Thorsten Wagner (wagner@biomedical-imaging.de)
-| filename               = Ridge_Detect.jar
-| source                 = follows...
+| filename               = Ridge_Detect.jar [https://dl.dropboxusercontent.com/u/560426/imagej/ridgedetection/Ridge_Detect.jar [1]]
+| source                 = [https://dl.dropboxusercontent.com/u/560426/imagej/ridgedetection/ridge_detecton_src.zip [2]]
 | latest version         = v1.0 (10 December 2014)
 | status                 = active 
 }}
