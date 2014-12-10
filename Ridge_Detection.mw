@@ -1,0 +1,21 @@
+{{Infobox
+| software               = Fiji
+| name                   = Ridge Detection Plugin
+| author                 = Thorsten Wagner
+| maintainer             = Thorsten Wagner (wagner@biomedical-imaging.de)
+| filename               = Ridge_Detect.jar
+| source                 = follows...
+| latest version         = v1.0 (10 December 2014)
+| status                 = active 
+}}
+
+
+== Purpose ==
+This plugin implements the ridge detection algorithm described in:
+
+''Steger, C., 1998. An unbiased detector of curvilinear structures. IEEE Transactions on Pattern Analysis and Machine Intelligence, 20(2), pp.113–125.''
+
+== Examples ==
+
+
+== Parameter Selection ==
