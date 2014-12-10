@@ -45,10 +45,11 @@ There are three parameters which '''have to ''' be specified. These are the mand
 These optional parameters are used to estimate the mandatory parameters.
 
 =Further options (true/false)=
+[[File:RidgeDetectionWidth.png|140px|thumb|Output if "Estimated width" is selected]]
 '''Correct position:'''
 
 '''Estimate width:''' If this option is selected the width of the ridges is also estimated.
-[[File:RidgeDetectionWidth.png|140px|thumb|Output if "Estimated width" is selected]]
+
 
 '''Show junction points:''' If this option is selected the junctions points will be displayed.
 
