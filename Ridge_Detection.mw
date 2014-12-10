@@ -44,11 +44,12 @@ There are three parameters which '''have to ''' be specified. These are the mand
 
 These optional parameters are used to estimate the mandatory parameters.
 
-=Further options=
+=Further options (true/false)=
 '''Correct position:'''
 
-'''Estimate width:'''
+'''Estimate width:''' If this option is selected the width of the ridges is also estimated.
+[[File:RidgeDetectionWidth.png|100px|thumb]]
 
-'''Show junction points:'''
+'''Show junction points:''' If this option is selected the junctions points will be displayed.
 
-'''Display results:'''
+'''Display results:''' If this option is selected, all contours and junctions are filled into a results table.
