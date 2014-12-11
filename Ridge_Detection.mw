@@ -17,7 +17,7 @@ This plugin implements the ridge detection algorithm described in:
 ''Steger, C., 1998. An unbiased detector of curvilinear structures. IEEE Transactions on Pattern Analysis and Machine Intelligence, 20(2), pp.113–125.''
 
 It works with stacks, is parallelized and has a preview mode.
-It depends on the [http://commons.apache.org/proper/commons-lang/ apache-commons-lang 3] library. If you use imagej, please copy it into plugins/jars.
+It depends on the [http://commons.apache.org/proper/commons-lang/ apache-commons-lang 3] library. For ImageJ, please copy it into plugins/jars.
 
 == Examples ==
 [[File:CNT_Ridge_Detection_Original.png]]      [[File:CNT_Ridge_Detection_Example.png]]
