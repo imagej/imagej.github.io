@@ -12,7 +12,7 @@
 
 
 == Purpose ==
-This plugin implements the ridge detection algorithm described in:
+This plugin implements the ridge / line detection algorithm described in:
 
 ''Steger, C., 1998. An unbiased detector of curvilinear structures. IEEE Transactions on Pattern Analysis and Machine Intelligence, 20(2), pp.113–125.''
 
