@@ -70,6 +70,27 @@ $ mvn -Dimagej.app.directory=$HOME/Desktop/Fiji.app/
 [INFO] ------------------------------------------------------------------------
 </source>
 
+In case that you are using a Java compiler version higher than 6 (i.e. Java 7 or 8), you will have to switch off the enforcer rule:
+
+<source lang="bash">
+$ mvn -Denforcer.skip -Dimagej.app.directory=$HOME/Desktop/Fiji.app/
+[INFO] Scanning for projects...
+[... lots and lots of interesting and useful information ...]
+[INFO]
+[INFO] --- imagej-maven-plugin:0.5.4:copy-jars (copy-jars) @ Skeletonize3D_ ---
+[INFO] Copying Skeletonize3D_-1.0.2-SNAPSHOT.jar to $HOME/Desktop/Fiji.app/plugins
+[INFO] Deleted overridden Skeletonize3D_-1.0.1.jar
+[INFO] Copying ij-1.49j.jar to $HOME/Desktop/Fiji.app/jars
+[INFO] Deleted overridden ij-1.49m.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 21.331s
+[INFO] Finished at: Tue Dec 02 10:30:02 CET 2014
+[INFO] Final Memory: 14M/81M
+[INFO] ------------------------------------------------------------------------
+</source>
+
 Of course, this assumes that you followed the suggestion and unpacked your Fiji onto the Desktop. If you unpacked it somewhere else, you ''have'' to adjust the command-line accordingly.
 
 Note that the exact dependency versions, as specified by the project in the ''pom.xml'' file, are copied into the ''Fiji.app/'' directory, possibly replacing other versions. You will want to make sure to use not-too-different versions from the current versions.
