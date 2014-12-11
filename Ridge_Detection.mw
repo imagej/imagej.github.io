@@ -24,11 +24,11 @@ It depends on the [http://commons.apache.org/proper/commons-lang/ apache-commons
 
 This example shows the application of the plugin on images of carbon nanotubes (Sigma = 1.5, Lower Threshold = 1.3, Higher Threshold = 7).
 
-== Parameter Selection ==
+= Parameter Selection =
 
 There are three parameters which '''have to ''' be specified. These are the mandatory parameters. The optional parameters can be used to estimate the mandatory parameters [[File:Ridge Detection Parameters.png|150px|thumb]]
 
-=Mandatory Parameters=
+==Mandatory Parameters==
 
 '''Sigma:''' Determines the sigma for the derivatives. It depends on the line width.
 
@@ -38,7 +38,7 @@ There are three parameters which '''have to ''' be specified. These are the mand
 
 '''Darkline:''' (true/false) This parameter determines whether dark or bright lines are extracted.
 
-=Optional parameters=
+==Optional parameters==
 
 '''Line width:''' The line diameter in pixels.
 
@@ -48,7 +48,7 @@ There are three parameters which '''have to ''' be specified. These are the mand
 
 These optional parameters are used to estimate the mandatory parameters.
 
-=Further options (true/false)=
+==Further options (true/false)==
 [[File:RidgeDetectionWidth.png|140px|thumb|Output if "Estimated width" is selected]]
 '''Correct position:''' Correct the line position if it has different contrast on each side of it.
 
@@ -58,3 +58,9 @@ These optional parameters are used to estimate the mandatory parameters.
 '''Show junction points:''' If this option is selected the junctions points will be displayed.
 
 '''Display results:''' If this option is selected, all contours and junctions are filled into a results table.
+
+=Installation=
+
+You could simply use our update site "[http://fiji.sc/List_of_update_sites biomedgroup]" to install the ridge detection plugin.
+
+If you use ImageJ just copy the RidgeDetection.jar file in your plugins folder and copy the  [http://commons.apache.org/proper/commons-lang/ apache-commons-lang 3] jar file into the plugins/jars folder.
