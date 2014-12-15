@@ -110,6 +110,52 @@ In contrast to the prior image processing steps the following macros are conduct
 
 Fiji macro converting fused spim data to 8-bit files required for further analysis. The macro imports image sequences out of each “convert” folder and stores 8-bit files into a new output directory. Before using this script you have to adopt the scale parameters to the needs of the respective experiment.
 
+<source lang="java">
+input = "path\\to\\data\\";
+output = "path\\to\\results\\";
+// Thresholds for segmentation:
+// spheroidThreshold = ;
+// mscThreshold = ;
+
+function distances(input, output, filename) {
+// segmentation
+	open (input + filename);
+	run("3D Objects Counter", "threshold=spheroidThreshold slice=100 min.=80000 max.=45925560 surfaces");
+	selectWindow(filename);
+	run("3D Objects Counter", "threshold=mscThreshold slice=100 min.=400 max.=45925560 objects"); 
+
+
+// distances
+	Objects = "Objects map of " + filename ;
+	Sphero = "Surface map of " + filename ;
+	run("3D Manager");
+	selectWindow(Sphero);
+	Ext.Manager3D_AddImage();
+	selectWindow(Objects);
+	Ext.Manager3D_AddImage();
+	Ext.Manager3D_Count(nb_obj);
+	for (i = 2; i < nb_obj-1; i++) {
+        	Ext.Manager3D_Dist2(0,i,"c2b1",dist); 
+        	index = lastIndexOf(filename, ".tif");
+  		if (index!=-1) filename = substring(filename, 0, index);
+		setResult(filename,i-2,dist);
+	}
+
+// save results
+	run("Set Measurements...", "  mean limit redirect=None decimal=0");
+	saveAs ("Results", output + filename + ".txt");
+	Ext.Manager3D_Close();
+	close(filename);
+	close(Sphero);
+	close(Objects);
+}
+
+list = getFileList(input);
+for (i = 0; i < list.length; i++)
+        distances(input, output, list[i]);
+
+</source>
+
 ===InvasionAnalysis_macro===
 
 Fiji macro doing analysis of cell invasion depths. Both spheroids and invaded cells are segmented and the shortest distance of each invaded cell to the surface of the spheroid is displayed. Analysis is based on the 3D object counter and 3D manager fiji plugins. Before using this script you have to adopt the threshold parameters for segmentation to the needs of the respective experiment.
