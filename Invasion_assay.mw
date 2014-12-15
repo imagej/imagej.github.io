@@ -18,7 +18,7 @@ ls
 mkdir converter fuse register
 /* delete all data within current directory: */
 rm *
-<source>
+</source>
 
 
 ==Data organisation==
@@ -41,7 +41,7 @@ lang="bash">
 ./1generate_convert_dir /path/to/data	
 
 ./2convert_TIFFF_TIF_js /path/to/data 1
-<source>	
+</source>	
 
 generates:
  --- macros
