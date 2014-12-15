@@ -69,7 +69,7 @@ lang="bash">
 </source>	
 
 
-==Detailed description of the shell scripts==
+==Detailed description and source code of the shell scripts==
 
 The scripts build on one another meaning that the output of one script is the input or a prerequisite for the next one. Therefore the scripts are marked with ascending numbers to simplify usage.
 
