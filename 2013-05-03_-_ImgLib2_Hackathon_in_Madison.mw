@@ -61,7 +61,7 @@ Now that the hackathon is complete there are additional related tasks to follow 
 
 == Mark Hiner ==
 
-Over the hackathon and this past week I've been working on extending Tobias's CellImg structures with a SCIFIO backing. The goal here is to get ImageJ2 using SCIFIO for it's image IO operations, with the Cell's facilitating caching for huge datasets as needed. This will replace the need for specifying a virtual stack, as the SCIFIO cells will automatically determine optimal tile sizes and load the tiles when requested.
+Over the hackathon and this past week I've been working on extending Tobias's CellImg structures with a SCIFIO backing. The goal here is to get ImageJ2 using SCIFIO for its image IO operations, with the Cell's facilitating caching for huge datasets as needed. This will replace the need for specifying a virtual stack, as the SCIFIO cells will automatically determine optimal tile sizes and load the tiles when requested.
 
 This has required work on all three projects:
 * ImgLib2
