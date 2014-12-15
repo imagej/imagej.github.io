@@ -1,8 +1,10 @@
-Idea
-Using light sheet microscopy for screening results in a significant number of data sets with each data set requiring image processing that consists of a sequence of computational steps. Each of these steps is time consuming making the analysis of many data sets by hand ineffective.
-Inspired by the tutorial from Pavel Tomancak (http://fiji.sc/SPIM_Registration_on_cluster) we developed a collection of linux shell scripts for (semi)automation of the analysis. These scripts are not meant to analyse time lapse data. Please keep in mind that these scripts are written in a quick and dirty fashion and do therefore not contain any protection against incorrect entries or a data organisation that differs from the following description. Feel free to adapt these scripts to your needs. Please keep in mind that there is no guarantee for error free function of these scripts and macros generated thereby.
+==Idea==
 
-Preparation
+Using light sheet microscopy for screening results in a significant number of data sets with each data set requiring image processing that consists of a sequence of computational steps. Each of these steps is time consuming making the analysis of many data sets by hand ineffective.
+Inspired by the tutorial from Pavel Tomancak ([http://fiji.sc/SPIM_Registration_on_cluster Registration on cluster]) we developed a collection of linux shell scripts for (semi)automation of the analysis. These scripts are not meant to analyse time lapse data. Please keep in mind that these scripts are written in a quick and dirty fashion and do therefore not contain any protection against incorrect entries or a data organisation that differs from the following description. Feel free to adapt these scripts to your needs. Please keep in mind that there is no guarantee for error free function of these scripts and macros generated thereby.
+
+==Preparation==
+
 The shell scripts were tested on a linux server (not a cluster) with a fiji installation containing the spim registration plugin. It is assumed that analysis of open spim data by hand works fine. The linux shell scripts must be stored on your linux server in a folder containing a subfolder called macros. In this macro folder the subfolders „converter“, „fuse“ and „register“ have to be present. Later you can find the respective generated fiji macros in these sub folders. Take care to delete macros that are no longer useful in order not to mix them up with newly generated macros. Generation and naming of the macros is done automatically. Therefore names may be identical and macros overwrite one another.
 
 	
