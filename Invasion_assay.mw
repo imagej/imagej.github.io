@@ -110,6 +110,42 @@ In contrast to the prior image processing steps the following macros are conduct
 
 Fiji macro converting fused spim data to 8-bit files required for further analysis. The macro imports image sequences out of each “convert” folder and stores 8-bit files into a new output directory. Before using this script you have to adopt the scale parameters to the needs of the respective experiment.
 
+
+<source lang="java">
+input = "path\\to\\data\\"
+output = "path\\to\\converted\\data\\"
+
+function convert(input, output, filename) {
+	run("Image Sequence...", 
+	"open=" + input + filename + "\\convert\\output\\img_tl1_ch0_z000.tif sort");
+// set properties	
+        run("Properties...", 
+	"channels=1 frames=1 unit=um pixel_width=2.632 pixel_height=2.632 voxel_depth=2.632");
+
+// set conversion scale
+	run("Brightness/Contrast...");
+	setMinAndMax(0, 30000);
+	call("ij.ImagePlus.setDefault16bitRange", 8);
+	run("8-bit");
+
+// save .tif
+  	index = lastIndexOf(filename, "/");
+  	if (index!=-1) filename = substring(filename, 0, index);
+	saveAs("Tiff", output + filename );
+	close();
+}
+
+list = getFileList(input);
+for (i = 0; i < list.length; i++)
+        convert(input, output, list[i]);
+
+</source>
+
+===InvasionAnalysis_macro===
+
+Fiji macro doing analysis of cell invasion depths. Both spheroids and invaded cells are segmented and the shortest distance of each invaded cell to the surface of the spheroid is displayed. Analysis is based on the 3D object counter and 3D manager fiji plugins. Before using this script you have to adopt the threshold parameters for segmentation to the needs of the respective experiment.
+
+
 <source lang="java">
 input = "path\\to\\data\\";
 output = "path\\to\\results\\";
@@ -155,7 +191,3 @@ for (i = 0; i < list.length; i++)
         distances(input, output, list[i]);
 
 </source>
-
-===InvasionAnalysis_macro===
-
-Fiji macro doing analysis of cell invasion depths. Both spheroids and invaded cells are segmented and the shortest distance of each invaded cell to the surface of the spheroid is displayed. Analysis is based on the 3D object counter and 3D manager fiji plugins. Before using this script you have to adopt the threshold parameters for segmentation to the needs of the respective experiment.
