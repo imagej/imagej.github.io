@@ -11,7 +11,7 @@ The shell scripts were tested on a linux server (not a cluster) with a fiji inst
 
 <source
 lang="bash"> 
-/* Commands to:
+# Commands to:
 /* change directory: */
 cd /path/to/folder
 /* show content of current directory: */
