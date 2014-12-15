@@ -9,7 +9,7 @@ From Saturday, April 27, 2013 through Friday, May 3, 2013, LOCI in Madison hoste
 ** See the [http://thread.gmane.org/gmane.comp.java.imagej.devel/1477 deprecation announcement thread] for details
 * Explored dual (read/write) type hierarchy; decided it is too complex
 
-And here is a rough summary of what most people worked on:
+And here is a rough summary of what we worked on:
 
 == Stephan Preibisch ==
 
