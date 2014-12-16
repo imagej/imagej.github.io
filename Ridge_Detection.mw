@@ -47,8 +47,8 @@ The following optional parameters are used to estimate the mandatory parameters:
 '''High contrast:''' Highest grayscale value of the line.
 
 '''Low contrast:'''  Lowest grayscale value of the line. It estimates the mandatory parameter 'Lower Threshold' by:
- [[File:TLOW.gif]]
-The b_low is the 'Low contrast' value and w the line width
+<math>T_{L}=\left\lfloor 0.17\cdot|\frac{-2\cdot b_{low}\cdot\frac{w}{2}}{\sqrt{2\pi}\sigma^{3}}e^{-\frac{\left(\frac{w}{2}\right)^{2}}{2\sigma^{2}}}|\right\rfloor </math>
+The <math>b_{low}</math> is the 'Low contrast' value and w the line width
 
 ==Further options (true/false)==
 [[File:RidgeDetectionWidth.png|140px|thumb|Output if "Estimated width" is selected]]
