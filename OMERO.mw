@@ -12,4 +12,7 @@
 == Publication ==
 * Allan, C., Burel, J. M., Moore, J., Blackburn, C., Linkert, M., Loynton, S., ... & Swedlow, J. R. (2012). [http://www.nature.com/nmeth/journal/v9/n3/abs/nmeth.1896.html OMERO: flexible, model-driven data management for experimental biology]. Nature methods, 9(3), 245-253.
 
+== See also ==
+* The [https://github.com/imagej/imagej-omero ImageJ-OMERO] project for bidirectional interoperability between ImageJ and OMERO.
+
 [[Category:Related Software]]
