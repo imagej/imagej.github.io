@@ -103,13 +103,14 @@ For [[SciJava]] discussion and [[SciJava Common]] bug reports.
 |
 For [[Bio-Formats]] and {{GitHub|org=imagej|repo=imagej-omero|label=OMERO}} issues and discussion.
 | [http://lists.openmicroscopy.org.uk/pipermail/ome-users/ Archives]
+| -
 |-
 | valign="top" |
 [http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-devel/ OME-devel]
 |
 For [[Bio-Formats]] and {{GitHub|org=imagej|repo=imagej-omero|label=OMERO}} programming questions.
 | [http://lists.openmicroscopy.org.uk/pipermail/ome-devel/ Archives]
-|-
+| -
 |-
 | valign="top" |
 [http://imagej.net/mailman/listinfo/slim-curve SLIM-Curve]
