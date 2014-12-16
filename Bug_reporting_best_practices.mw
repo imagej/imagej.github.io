@@ -58,9 +58,9 @@ Developers typically have a cache of sample data for testing their application. 
 
 If your test data is small and public, you can typically attach it to the bug report.
 
-If you are using a Fiji distribution, the easiest and safest way to provide sample data is via the ''Help>Upload Sample Image'' command. This sends the image to a website restricted to ImageJ wiki users with explicit authentication (reserved for trusted developers). This allows proprietary data to be tested without fear of public distribution.
+The easiest and safest way to provide sample data is via the ''Help>[[Upload Sample Image]]'' command. This sends the image to a private space accessible only by trusted developers. This allows proprietary data to be tested without fear of public distribution.
 
-Note: if you do upload sample data via Fiji, you should mention the name of the dataset in your bug report. This will help developers find your image(s) quickly.
+Note: if you do upload sample data via ImageJ, you should mention the name of the dataset in your bug report. This will help developers find your image(s) quickly.
 
 For bugs working with excessively large datasets, you may need to communicate with a developer to determine the best way to test on your data.
 
