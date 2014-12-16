@@ -40,13 +40,13 @@ There are three parameters which '''have to ''' be specified. These are the mand
 
 ==Optional parameters==
 
+The following optional parameters are used to estimate the mandatory parameters:
+
 '''Line width:''' The line diameter in pixels.
 
 '''High contrast:''' Highest grayscale value of the line.
 
 '''Low contrast:'''  Lowest grayscale value of the line.
-
-These optional parameters are used to estimate the mandatory parameters.
 
 ==Further options (true/false)==
 [[File:RidgeDetectionWidth.png|140px|thumb|Output if "Estimated width" is selected]]
