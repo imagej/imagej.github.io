@@ -1,56 +1,83 @@
 __NOTOC__
 There are several mailing lists for community discussion and troubleshooting.
-{{UseMailingLists}}If you have a natural allergy toward subscribing to mailing lists, the developers' mailing lists moderate posts from non-members (make '''really''' sure that you '''reply-to-all''' for that reason!). You can use [http://nabble.com Nabble]'s forum interface to [http://imagej.1557.x6.nabble.com/ ImageJ], [http://imagej-devel.54429.x6.nabble.com ImageJ-devel] or [http://fiji-devel.54424.x6.nabble.com/ fiji-devel]. Or just browse the archives to find information regarding your problem.
+{{UseMailingLists}}If you have a natural allergy toward subscribing to mailing lists, the developers' mailing lists moderate posts from non-members (make '''really''' sure that you '''reply-to-all''' for that reason!). Please search the list archives first to find any previous discussions regarding your problem.
 
 == ImageJ ==
 
-{| class="wikitable"
+{| class="wikitable" style="width: 100%"
+|-
+! List
+! Description
+! Archives
+! Nabble
 |-
 | style="width: 120px" valign="top" |
 [http://imagej.net/list.html ImageJ]
 | For general user and developer discussion about [[ImageJ]].
 
 <span style="font-size: smaller">With over 2000 members, this list is the '''best place to go for help''' with your specific use case.</span>
+| [http://list.nih.gov/archives/imagej.html Archives]
+| [http://imagej.1557.x6.nabble.com/ Nabble]
 |-
 | valign="top" |
 [http://imagej.net/mailman/listinfo/imagej-devel ImageJ-devel]
 | For technical and developer discussion of the ImageJ [https://github.com/imagej core software libraries].
 
 <span style="font-size: smaller">This list is for programmers contributing code to ImageJ itself, or interested in technical discussions surrounding such development.</span>
+| [http://imagej.net/pipermail/imagej-devel/ Archives]
+| [http://imagej-devel.54429.x6.nabble.com Nabble]
 |-
 | valign="top" |
 [http://imagej.net/mailman/listinfo/imagej-bugs ImageJ-bugs]
 | For [http://fiji.sc/bugzilla BugZilla] issue updates.
 
 <span style="font-size: smaller">This list is the default assignee for all BugZilla bugs. It is mainly intended for people directly involved in development, though anyone is welcome to subscribe if desired.</span>
+| [http://imagej.net/pipermail/imagej-bugs/ Archives]
+| -
 |-
 | valign="top" |
 [http://imagej.net/mailman/listinfo/imagej-builds ImageJ-builds]
 | For [http://jenkins.imagej.net/ ImageJ Jenkins] build reports.
 
 <span style="font-size: smaller">This is an announcement list for the ImageJ Jenkins, which reports build failures for ImageJ, Fiji, ImgLib and related projects. It is mainly intended for people directly involved in development, though anyone is welcome to subscribe if desired.</span>
+| [http://imagej.net/pipermail/imagej-builds/ Archives]
+| -
 |}
 
 == Fiji ==
 
-{| class="wikitable"
+{| class="wikitable" style="width: 100%"
+|-
+! List
+! Description
+! Archives
+! Nabble
 |-
 | style="width: 120px" valign="top" |
 [http://groups.google.com/group/fiji-devel Fiji-devel]
 | For developer discussion specific to the [[Fiji]] distribution of ImageJ.
 
 <span style="font-size: smaller">This list is for programmers contributing code to Fiji, or interested in technical discussions surrounding such development.</span>
+| [http://groups.google.com/group/fiji-devel Archives]
+| [http://fiji-devel.54424.x6.nabble.com/ Nabble]
 |}
 
 == SciJava (supporting libraries) ==
 
-{| class="wikitable"
+{| class="wikitable" style="width: 100%"
+|-
+! List
+! Description
+! Archives
+! Nabble
 |-
 | style="width: 120px" valign="top" |
 [http://scif.io/mailman/listinfo/scifio SCIFIO]
 | For bug reports relating to image file input and output.
 
 <span style="font-size: smaller">ImageJ2's image I/O is driven by the [[SCIFIO]] library ("SCientific Image Format Input & Output").</span>
+| [http://scif.io/pipermail/scifio/ Archives]
+| -
 |-
 | valign="top" |
 [http://groups.google.com/group/scijava SciJava]
@@ -58,46 +85,71 @@ There are several mailing lists for community discussion and troubleshooting.
 For [[SciJava]] discussion and [[SciJava Common]] bug reports.
 
 <span style="font-size: smaller">ImageJ and SCIFIO are both built on top of SciJava Common.</span>
+| [http://groups.google.com/group/scijava Archives]
+| -
 |}
 
 == ImageJ plugins ==
 
-{| class="wikitable"
+{| class="wikitable" style="width: 100%"
+|-
+! List
+! Description
+! Archives
+! Nabble
 |-
 | style="width: 120px" valign="top" |
 [http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-users/ OME-users]
 |
 For [[Bio-Formats]] and {{GitHub|org=imagej|repo=imagej-omero|label=OMERO}} issues and discussion.
+| [http://lists.openmicroscopy.org.uk/pipermail/ome-users/ Archives]
 |-
 | valign="top" |
 [http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-devel/ OME-devel]
 |
 For [[Bio-Formats]] and {{GitHub|org=imagej|repo=imagej-omero|label=OMERO}} programming questions.
+| [http://lists.openmicroscopy.org.uk/pipermail/ome-devel/ Archives]
+|-
 |-
 | valign="top" |
 [http://imagej.net/mailman/listinfo/slim-curve SLIM-Curve]
 |
 For [[SLIM Curve]] issues and discussion.
+| [http://loci.wisc.edu/pipermail/slim-curve/ Archives]
+| -
 |-
 | valign="top" |
-[http://loci.wisc.edu/software/mailing-lists LOCI Software]
+[http://loci.wisc.edu/mailman/listinfo/loci-software LOCI Software]
 |
 For [http://loci.wisc.edu/software LOCI software], ''excluding'' collaborations such as ImageJ, SCIFIO and Bio-Formats.
+| [http://loci.wisc.edu/pipermail/loci-software/ Archives]
+| -
 |}
 
 == Related and similar projects ==
 
-{| class="wikitable"
+{| class="wikitable" style="width: 100%"
+|-
+! List
+! Description
+! Archives
+! Nabble
 |-
 | style="width: 120px" valign="top" |
 [http://lists.sourceforge.net/lists/listinfo/micro-manager-general μManager]
 | Open source software package for control of automated microscopes.
+| [http://sourceforge.net/p/micro-manager/mailman/micro-manager-general/ Archives]
+| -
 |-
 | valign="top" |
 [http://lists.sourceforge.net/lists/listinfo/bioimagexd-users BioImageXD]
 | Open source software package for analyzing, processing and visualizing multi-dimensional microscopy images.
+| [http://sourceforge.net/p/bioimagexd/mailman/bioimagexd-users/ Archives]
+| -
 |-
 | valign="top" |
 [http://groups.google.com/group/icy-software Icy]
 | An open community platform for bioimage informatics.
+| [http://groups.google.com/group/icy-software Archives]
+| -
 |}
