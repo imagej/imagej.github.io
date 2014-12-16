@@ -13,6 +13,7 @@ The [http://tech.knime.org/community/image-processing '''KN'''IME '''I'''mage ''
 
 As part of the KNIP extension, there is a [http://tech.knime.org/community/imagej KNIME ImageJ plugin] consisting of two basic parts: the support for [[ImageJ1]] macro execution and the integration of [[ImageJ2]] plugins as KNIME nodes. Both approaches are available as KNIME plugin (currently beta status).
 
-See also the [[ImageJ OPS]] framework for image-processing algorithms, which is developed as a collaboration between the [[ImageJ]] and KNIME teams.
+== See also ==
+* The [[ImageJ OPS]] framework for image-processing algorithms, which is developed as a collaboration between the [[ImageJ]] and KNIME teams.
 
 [[Category:Related Software]]
