@@ -46,7 +46,7 @@ The following optional parameters are used to estimate the mandatory parameters:
 
 <math>\sigma=\frac{w}{2\sqrt{3}}+0.5</math>
 
-'''High contrast''' (<math>b_{high}</math>): Highest grayscale value of the line. It estimates the mandatory parameter 'Higher Threshold' by:
+'''High contrast''' (<math>b_{upper}</math>): Highest grayscale value of the line. It estimates the mandatory parameter 'Upper threshold' by:
 
 <math>T_{H}=\left\lfloor 0.17\cdot|\frac{-2\cdot b_{high}\cdot\frac{w}{2}}{\sqrt{2\pi}\sigma^{3}}e^{-\frac{\left(\frac{w}{2}\right)^{2}}{2\sigma^{2}}}|\right\rfloor </math>
 
