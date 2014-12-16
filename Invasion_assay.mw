@@ -125,7 +125,7 @@ echo "End Macro"
 
 ===2convert_TIFFF_TIF_js===
 
-Shell script generates fiji macros doing the [http://openspim.org/Pre-processing pre-processing] of spim data. Specify complete path to data and an integer for each data directory as second parameter (cf. Usage). These macros are stored in the folder „../macros/converter“.
+Shell script generates fiji macros doing the [http://openspim.org/Pre-processing pre-processing] of spim data. Specify complete path to data and an integer for each data directory as second parameter (cf. Usage). These macros are stored in the folder „./macros/converter“.
 
 <source
 lang="bash"> 
@@ -134,7 +134,7 @@ echo "Start Macro"
 Path="${1}"
 resultmacro_number="${2}"
 echo ${Path}
-resultmacro=/home/hh/programs/macros/converter/
+resultmacro=./macros/converter/
 ls -d ${Path}/*  > dirlist
 
 while read line
@@ -172,7 +172,7 @@ lang="bash">
 #!/bin/bash
 clear
 echo "Start Macro"
-ls -d /home/hh/programs/macros/converter/*  > macrolist
+ls -d ./macros/converter/*  > macrolist
 
 while read line
 do
@@ -210,7 +210,7 @@ echo "Start Macro"
 Path="${1}"
 resultmacro_number="${2}"
 echo ${Path}
-resultmacro=/home/hh/programs/macros/register/
+resultmacro=./macros/register/
 ls -d ${Path}/*  > dirlist
 
 
@@ -257,7 +257,7 @@ lang="bash">
 #!/bin/bash
 clear
 echo "Start Macro"
-ls -d /home/hh/programs/macros/register/*  > macrolist
+ls -d ./macros/register/*  > macrolist
 
 
 while read line
@@ -280,7 +280,7 @@ echo "End Macro"
 
 ===6generate_fusion_macros===
 
-Shell script that generates fiji macros doing [http://openspim.org/Fusion fusion] of spim data. Before using this script you have to adopt the fusion parameters to the needs of the respective experiment. Specify complete path to data and an integer for each data directory as second parameter (cf. Usage). These macros are stored in the folder „../macros/fuse“.
+Shell script that generates fiji macros doing [http://openspim.org/Fusion fusion] of spim data. Before using this script you have to adopt the fusion parameters to the needs of the respective experiment. Specify complete path to data and an integer for each data directory as second parameter (cf. Usage). These macros are stored in the folder „./macros/fuse“.
 
 <source
 lang="bash"> 
