@@ -46,7 +46,9 @@ The following optional parameters are used to estimate the mandatory parameters:
 
 '''High contrast:''' Highest grayscale value of the line.
 
-'''Low contrast:'''  Lowest grayscale value of the line. It estimates the mandatory parameter 'Lower Threshold' by [[File:TLOW.gif]]
+'''Low contrast:'''  Lowest grayscale value of the line. It estimates the mandatory parameter 'Lower Threshold' by:
+ [[File:TLOW.gif]]
+The b_low is the 'Low contrast' value and w the line width
 
 ==Further options (true/false)==
 [[File:RidgeDetectionWidth.png|140px|thumb|Output if "Estimated width" is selected]]
