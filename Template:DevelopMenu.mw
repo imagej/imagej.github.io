@@ -10,7 +10,6 @@
 {{MenuItem | [[Extensibility]] }}
 {{MenuItem | [[Source code]] }}
 {{MenuItem | [[Project management]] }}
-{{MenuItem | [[Coding style]] }}
 {{MenuItem | [[Debugging intro|Debugging]] }}
 | {{#if:{{{1|}}}|collapsed|}}
 }}
@@ -22,6 +21,8 @@
 {{MenuItem | [[Developing ImageJ in NetBeans|Using NetBeans]] }}
 {{MenuItem | [[Developing ImageJ in IntelliJ IDEA|Using IntelliJ IDEA]] }}
 {{MenuItem | [[Developing ImageJ on the command line|On the command line]] }}
+{{MenuItem | [[Coding style]] }}
+{{MenuItem | [[Logging]] }}
 | {{#ifeq:{{{1}}}|source||collapsed}}
 }}
 
