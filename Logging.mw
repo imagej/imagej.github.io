@@ -2,7 +2,7 @@
 
 == What is logging? ==
 
-Logging is a technique for reporting messages and/or events during program execution. It can be useful for many purposes: debugging, informing the user of things, keeping a record of what transpired, etc.
+Logging is a technique for reporting messages and/or events during program execution. It can be useful for many purposes: debugging, informing the user of things, keeping a permanent record of what transpired, etc.
 
 See [https://en.wikipedia.org/wiki/Java_logging_framework Wikipedia's article on Java logging frameworks] for further reading.
 
