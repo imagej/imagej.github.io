@@ -48,12 +48,12 @@ The following optional parameters are used to estimate the mandatory parameters:
 
 '''High contrast''' (<math>b_{upper}</math>): Highest grayscale value of the line. It estimates the mandatory parameter 'Upper threshold' by:
 
-<math>T_{U}=\left\lfloor 0.17\cdot|\frac{-2\cdot b_{upper}\cdot\frac{w}{2}}{\sqrt{2\pi}\sigma^{3}}e^{-\frac{\left(\frac{w}{2}\right)^{2}}{2\sigma^{2}}}|\right\rfloor </math>
+<math>T_{U}=\left\lfloor 0.17\cdot\frac{2\cdot b_{upper}\cdot\frac{w}{2}}{\sqrt{2\pi}\sigma^{3}}e^{-\frac{\left(\frac{w}{2}\right)^{2}}{2\sigma^{2}}}\right\rfloor </math>
 
 
 '''Low contrast''' (<math>b_{low}</math>):  Lowest grayscale value of the line. It estimates the mandatory parameter 'Lower Threshold' by:
 
-<math>T_{L}=\left\lfloor 0.17\cdot|\frac{-2\cdot b_{low}\cdot\frac{w}{2}}{\sqrt{2\pi}\sigma^{3}}e^{-\frac{\left(\frac{w}{2}\right)^{2}}{2\sigma^{2}}}|\right\rfloor </math>
+<math>T_{L}=\left\lfloor 0.17\cdot\frac{2\cdot b_{low}\cdot\frac{w}{2}}{\sqrt{2\pi}\sigma^{3}}e^{-\frac{\left(\frac{w}{2}\right)^{2}}{2\sigma^{2}}}\right\rfloor </math>
 
 ==Further options (true/false)==
 [[File:RidgeDetectionWidth.png|140px|thumb|Output if "Estimated width" is selected]]
