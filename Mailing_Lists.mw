@@ -21,7 +21,7 @@ There are several mailing lists for community discussion and troubleshooting.
 |-
 | valign="top" |
 [http://imagej.net/mailman/listinfo/imagej-devel ImageJ-devel]
-| For technical and developer discussion of the ImageJ [https://github.com/imagej core software libraries].
+| For technical and developer discussion of the ImageJ [https://github.com/imagej core software libraries], such as [[ImgLib2]].
 
 <span style="font-size: smaller">This list is for programmers contributing code to ImageJ itself, or interested in technical discussions surrounding such development.</span>
 | [http://imagej.net/pipermail/imagej-devel/ Archives]
