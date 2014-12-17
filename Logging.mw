@@ -1,0 +1,50 @@
+{{Development | source}}If you are are a Java developer, then it is very likely you ''love'' logging. At least, that's the conclusion new Java developers inevitably must draw, based on the fact that 97.3% of all Java libraries in the wild are logging frameworks. Given the jungle of logging complexity out there, it's easy to get confused about how logging works for any given project, and in fact how logging works in general across the Java software ecosystem. Fortunately, this friendly wiki page is here to help you understand logging once and for all.
+
+== What is logging? ==
+
+Logging is a technique for reporting messages and/or events during program execution. It can be useful for many purposes: debugging, informing the user of things, keeping a record of what transpired, etc.
+
+See [https://en.wikipedia.org/wiki/Java_logging_framework Wikipedia's article on Java logging frameworks] for further reading.
+
+== Why use a logging framework? What's wrong with <code>System.out.println</code>? ==
+
+First of all, <code>System.out.println</code> is rather verbose. But more importantly, it is a bit inflexible: you cannot explicitly specify metadata such as the "severity" or "level" of the message, an associated exception stack trace, the source of the message, or other details. And you cannot customize the logging behavior based on context (e.g., log certain kinds of messages to a file, while others go to stdout).
+
+For these reasons, nearly everyone and their dog either uses a logging framework, or invents their own. The [[SciJava Common]] project has opted to do both: the SciJava application framework provides a {{GitHub | org=scijava | repo=scijava-common | path=src/main/java/org/scijava/log/LogService.java | label=LogService}} to abstract and encapsulate all logging. The default core implementation of this service is called {{GitHub | org=scijava | repo=scijava-common | path=src/main/java/org/scijava/log/StderrLogService.java | label=StderrLogService}}, and simply emits all log messages to the standard error stream. This is done to avoid dependencies on any external logging frameworks or facades, as well as to offer a sufficiently rich logging API.
+
+== What about SLF4J? ==
+
+{{Sidebox | To be precise, the [http://commons.apache.org/proper/commons-logging/ Jakarta/Apache Commons Logging] project did the whole "facade" thing before SLF4J did.  But the community seems to have largely standardized on SLF4J.}}The [http://slf4j.org/ SLF4J] project is a great idea: rather than yet another logging framework, it is a facade for logging frameworks. That is: it is an interface-driven API which can be backed by any logging framework you wish, via a dedicated ''binding'' library. In theory, if everyone just used SLF4J, they'd simply add a compile-time dependency on org.slf4j:slf4j-api, and ship the binding of their choice at runtime so that their application would then log using, say, [http://logging.apache.org/log4j/2.x/ Apache Log4j] or [http://docs.oracle.com/javase/7/docs/api/java/util/logging/package-summary.html java.util logging] or [http://logback.qos.ch/ Logback]. Because every developer wants to decide that for themselves, right?
+
+Unfortunately, SLF4J suffers from a couple of downsides:
+* The API is very minimal. In particular, there is no way to set the log level at runtime in a framework-agnostic way.
+* It complicates application deployment by requiring the inclusion of a logging adapter library [http://slf4j.org/faq.html#maven2 not explicitly declared in the project's dependency tree].
+* By inventing a new standard for logging, there is [http://xkcd.com/927/ now one more competing standard].
+
+Still, SLF4J is a nice thing, so the SciJava project does provide a {{GitHub | org=scijava | repo=scijava-log-slf4j | path=src/main/java/org/scijava/log/slf4j/SLF4JLogService.java | label=LogService implementation backed by SLF4J}}, which zealous developers can use to redirect all SciJava logging to the SLF4J framework, which they can then [https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering further redirect] using an SLF4J binding of their choosing!
+
+== How does logging work in ImageJ? ==
+
+{{Sidebox |
+The six standard near-universal log levels are:
+* '''<code>NONE</code>''' - Do not log any messages.
+* '''<code>ERROR</code>''' - Log only execution errors.
+* '''<code>WARN</code>''' - Log errors and warnings.
+* '''<code>INFO</code>''' - Log informational messages.
+* '''<code>DEBUG</code>''' - Log detailed debugging messages.
+* '''<code>TRACE</code>''' - Log everything possible, including debugging stack traces.}}
+[[ImageJ2]] uses the SciJava logging framework for all core logging. And the vanilla ImageJ2 distribution uses the <code>StderrLogService</code> which emits those messages to the standard error stream. The default log level is '''<code>WARN</code>''' (although we are considering changing it to '''<code>INFO</code>''').
+
+That said, there is a problem with using the standard output and/or error streams in a GUI-driven application: such messages are not visible by default. To work around this fact, many GUI-driven applications implement their own UI component for log messages, typically a "Log window" of some sort. This solution is how [[ImageJ 1.x]] addresses the logging problem on the GUI side: plugins are expected to call the static <code>IJ.log</code> and <code>IJ.handleException</code> methods to emit log messages and report exceptions to the user, respectively.
+
+ImageJ2 runs using the [[ImageJ1]] legacy user interface by default, meaning it inherits this Log window. But it goes further, completely redirecting the standard output and error streams to that log window so that no potentially valuable console output is hidden from the user. This behavior can be toggled in the Edit > Options > ImageJ2 dialog box.
+
+Therefore, as long as logging messages end up on stdout or stderr somehow (which they do by default), all is well, and the user will see them. But if you configure your own logging implementation which suppresses the stderr behavior in favor of, e.g., logging to a file somewhere, then you are on your own!
+
+== How does logging work in Fiji? ==
+
+The [[Fiji]] distribution of ImageJ is a more complicated beast, because it ships many plugins, each of which may do its own thing with respect to logging. Rather than [https://en.wikipedia.org/wiki/Herding_cats herd cats], Fiji simply ships each plugin's required logging framework so that it can function unimpeded.
+
+However, ultimately, the Fiji distribution needs to ship one, and ''only'' one, SLF4J binding; otherwise, SLF4J-based logging does not function properly. As of this writing, Fiji ships the [http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22logback-classic%22 logback-classic] binding, meaning that SLF4J-based logging can be [http://logback.qos.ch/manual/configuration.html configured in all the usual Logback ways]. Fiji ships its default Logback configuration in the [http://maven.imagej.net/index.html#nexus-search;gav~org.scijava~scijava-config scijava-config] library. If you want to override the configuration, you will need to delete or modify that JAR file, replacing the <code>logback.xml</code> with your one of your own design. The reason <code>logback-classic</code> was chosen is because the [[Bio-Formats]] project explicitly depends on it; rather than work around that, Fiji goes with the flow and converges on the same dependency.
+
+[[Category:Development]]
