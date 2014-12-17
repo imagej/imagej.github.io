@@ -32,6 +32,7 @@ Notice here that, following this notation, the number of junction voxels can be 
 In the main dialog of the plugin the user can select some options to
 * '''Prune the possible loops''' in the skeleton (by choosing one of the pruning cycle methods).
 * '''Prune any branch that ends in an end-point''' (by checking "Prune ends"), as implemented by [http://doube.org/ Michael Doube] in [http://bonej.org/ BoneJ].
+**In this case, if a ROI was selected in the input image, another option is enabled to constraint the pruning to the region specified by the ROI.
 * '''Calculate the largest shortest path''' of each skeleton using the [http://en.wikipedia.org/wiki/Floyd-Warshall_algorithm APSP (all pairs shortest path)]. In this case, the shortest path will be displayed in a new window containing the skeleton in white and the shortest path in '''magenta'''. Implemented by Huub Hovens.
 * '''Show detailed info''' about the branches of each skeleton in the image.
 
