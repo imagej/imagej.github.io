@@ -47,4 +47,27 @@ The [[Fiji]] distribution of ImageJ is a more complicated beast, because it ship
 
 However, ultimately, the Fiji distribution needs to ship one, and ''only'' one, SLF4J binding; otherwise, SLF4J-based logging does not function properly. As of this writing, Fiji ships the [http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22logback-classic%22 logback-classic] binding, meaning that SLF4J-based logging can be [http://logback.qos.ch/manual/configuration.html configured in all the usual Logback ways]. Fiji ships its default Logback configuration in the [http://maven.imagej.net/index.html#nexus-search;gav~org.scijava~scijava-config scijava-config] library. If you want to override the configuration, you will need to delete or modify that JAR file, replacing the <code>logback.xml</code> with your one of your own design. The reason <code>logback-classic</code> was chosen is because the [[Bio-Formats]] project explicitly depends on it; rather than work around that, Fiji goes with the flow and converges on the same dependency.
 
+== Tell me more about SciJava logging! ==
+
+I know right! Fascinating stuff.
+
+If you are using the standard SciJava <code>LogService</code> implementation, you can control the logging level via the <code>scijava.log.level</code> system property.
+
+E.g., in Java code:
+<source lang="java">
+System.setProperty("scijava.log.level", "debug");
+</source>
+
+Or via the command line:
+<source lang="bash">
+java -Dscijava.log.level=debug ... myorg.MyMainClass
+</source>
+
+You can even customize the logging behavior per package/class hierarchy. For example, to switch on debug level logging for classes in the <code>org.scijava.plugin.*</code> packages only:
+<source lang="java">
+System.setProperty("scijava.log.level:org.scijava.plugin", "debug");
+</source>
+
+If you prefer environment variables, setting the <code>DEBUG</code> environment variable will cause SciJava logging to default to '''<code>DEBUG</code>''' level instead of the usual '''<code>WARN</code>'''.
+
 [[Category:Development]]
