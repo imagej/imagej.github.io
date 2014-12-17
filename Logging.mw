@@ -18,7 +18,7 @@ For these reasons, nearly everyone and their dog either uses a logging framework
 
 Unfortunately, SLF4J suffers from a couple of downsides:
 * The API is very minimal. In particular, there is no way to set the log level at runtime in a framework-agnostic way.
-* It complicates application deployment by requiring the inclusion of a logging adapter library [http://slf4j.org/faq.html#maven2 not explicitly declared in the project's dependency tree].
+* It complicates application deployment by requiring the inclusion of a logging binding [http://slf4j.org/faq.html#maven2 not explicitly declared in the project's dependency tree].
 * By inventing a new standard for logging, there is [http://xkcd.com/927/ now one more competing standard].
 
 Still, SLF4J is a nice thing, so the SciJava project does provide a {{GitHub | org=scijava | repo=scijava-log-slf4j | path=src/main/java/org/scijava/log/slf4j/SLF4JLogService.java | label=LogService implementation backed by SLF4J}}, which zealous developers can use to redirect all SciJava logging to the SLF4J framework, which they can then [https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering further redirect] using an SLF4J binding of their choosing!
