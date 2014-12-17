@@ -63,7 +63,7 @@ Or via the command line:
 java -Dscijava.log.level=debug ... myorg.MyMainClass
 </source>
 
-You can even customize the logging behavior per package/class hierarchy. For example, to switch on debug level logging for classes in the <code>org.scijava.plugin.*</code> packages only:
+You can even customize the logging behavior per package/class hierarchy. For example, to switch on debug level logging for classes in the <code>org.scijava.plugin</code> package and subpackages only:
 <source lang="java">
 System.setProperty("scijava.log.level:org.scijava.plugin", "debug");
 </source>
