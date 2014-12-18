@@ -1,0 +1,104 @@
+Today the ImageJDev team is releasing the fourth beta of [[ImageJ2]], version 2.0.0-beta4.
+
+ImageJ 2.0.0-beta4 is a &quot;beta&quot;-quality release, meaning the code is not finished. The design is more stable than before but still subject to change until the final 2.0.0 release. It is recommended that people continue to use [[ImageJ 1.x]] for critical work.
+
+Download from the [[ImageJ2 development releases]] page.
+
+The ImageJ2 user interface is modeled after ImageJ v1.x as much as possible. However, under the hood, ImageJ2 is a complete redesign of ImageJ. It provides backward compatibility with older versions of ImageJ by bundling the latest v1.x code and translating between &quot;legacy&quot; and &quot;modern&quot; image structures.
+
+== What's new ==
+
+[[Image:better-duplicate.jpg | 281px | thumb | The improved Duplicate command]]
+
+Development of this release of ImageJ focused heavily on the plugin architecture and various plugin implementations. There were also numerous architecture changes to make ImageJ more flexible, powerful, and backwards compatible. To accommodate this, changes were made to the plugin class hierarchy, the user interface classes, the legacy layer, the updater, the launcher, and in many other areas.
+
+=== Application level changes ===
+
+* The Select View, Select Overlays, and Deselect Overlays commands have been added to replace the Select All and Select None commands from ImageJ 1.x.
+* The Capture Screen and Capture Image commands have been implemented.
+* The Duplicate command can subsample an image along any axis.
+* The type changing plugin (Image &gt; Type &gt; ...) respects the color mode of the current display (grayscale, color, composite) which is configurable via the Image &gt; Color &gt; Channels Tool command.
+* The Salt and Pepper plugin now works better with data other than 8-bit. Salt value and pepper value can each be specified.
+* The Process &gt; Math &gt; Equation language has been enhanced to be more powerful. The full capabilities are documented on the [[ImageJ2/Documentation/Process/Math/Equation]] page.
+* There is now support for composite overlays (i.e. this works now: Edit &gt; Selection &gt; Make Inverse).
+
+=== Architecture changes ===
+
+* We made many changes and improvements to the plugin hierarchy. It is now much more complete and consistent. We have renamed several parts of the plugin hierarchy to improve and clarify the codebase. In particular, runnable plugins are now called commands. The term &quot;command&quot; is familiar to users of ImageJ 1.x, the only difference being that in ImageJ 1.x, a &quot;plugin&quot; can implement multiple &quot;commands&quot;; however, in ImageJ2 each command was already expressed as a separate class, so the distinction has been dropped.
+* The term &quot;plugin&quot; is now a more general one referring to any new piece of functionality added on to ImageJ: every extension point in the codebase is now a subtype of ImageJPlugin. This means that every type of feature you might want to add on top of ImageJ is done as a particular sort of plugin. ImageJ plugins take many forms, but all of them are automatically discovered at runtime in the same way, and accessible via the plugin service.
+* Several tools utilize the JHotDraw library for rendering and user interaction. However, they were coded as non-plugin extension points. We have remedied that, so adding additional JHotDraw-specific functionality is now a matter of writing a JHotDrawAdapter plugin. There is also now a JHotDraw service for managing these adapters, rather than ad hoc embedded logic.
+* In previous releases, there were a fixed number of supported input widgets for harvesting user input with respect to command input values. We have eliminated this restriction, such that it is now possible to create a widget plugin for any input type of a command, beyond those that the core provides (numbers, strings &amp; chars, booleans, files, colors and multiple-choice object selectors). For example, you could create an input widget with a two-headed slider for min/max range of values, a trinary toggle box, a color lookup table editor, or a CAPTCHA challenge to combat spam submissions.
+* Support for multiple UIs has been improved. The UI service now has a better API for managing UIs, launching multiple UIs, etc. And the widget and display frameworks have been improved such that even if multiple UIs are available, input dialogs, widgets and displays will appear in the correct UI's paradigm.
+* There is now a direct API in place for calling commands programmatically in a type-safe fashion.
+* The uploader mechanism is now much better encapsulated and makes it very easy to add components that handle protocols other than ssh and sftp.
+* ImageJ2 exposes functionality in reusable services. New services were added this cycle including the ConsoleService, the RenderingService, the SamplerService, and the ScreenCaptureService.
+* Support for images with 16-bit palettes has been added. These include microscopy images in the Olympus .oif and Leica .lif formats, which may have 16-bit gray or color ramp palettes. When displayed, the 16-bit colors are truncated down to 8 bits per channel.
+
+[[Image:multiple-uis.jpg | 273px | left | thumb | Multiple simultaneous UIs]]
+
+=== Launcher and Updater changes ===
+
+* The Fiji Updater was fully moved to ImageJ. The Fiji Updater is now only a small component which relies on ImageJ's Updater to modify the current installation.
+* Many bug fixes were made with regards to the handling of versioned file names. The Updater now understands that ij.jar and ij-1.47b.jar are really just two different versions of the same component.
+* Many bugs have been fixed with regards to multiple update sites. Of note a rather serious bug was fixed which prevented the moving of files from one update site to another.
+* Many internal changes were made that make ongoing maintenance and automatic regression testing easier.
+* The process by which the Updater updates itself now includes all related files (including the front-end, and not just the core).
+
+=== SLIM Plugin ===
+
+The SLIM Plugin is still available for ImageJ 1.x only but is now of usable beta quality. It will migrate to ImageJ2 for the final ImageJ 2.0.0 release. See the [http://loci.wisc.edu/software/slim-plugin SLIM Plugin web site] for details.
+
+=== Tutorials for developers ===
+
+We have begun work on some programming examples for developers. The tutorials are available in the [https://github.com/imagej/imagej-tutorials imagej-tutorials project] on GitHub.
+
+[[Image:16-bit-palette.jpg | 267px | thumb | A dataset with a 16-bit LUT]]
+
+=== Compatibility ===
+
+There have been numerous compatibility improvements and bug fixes. Since beta3 the team has [http://trac.imagej.net/query?status=closed&milestone=imagej2-b4-plugins closed over 115 issues] and made progress on many more. Some of them include:
+
+* Improved support for many commands: 3D Project, Clear, Clear Outside, Image Bin, Image Properties, Image Rotate, Selection Cut, Selection Enlarge, Stack Combine, Stack Insert, and Stack To Images.
+* Data translation accuracy improved in the legacy compatibility layer.
+* Image display creation/destruction more closely mirrors ImageJ 1.x behavior.
+* Color support improved when invoking legacy plugins.
+* There is now a set of compatibility options (set in the Edit &gt; Options &gt; Compatibility dialog). Some commands have an ImageJ 1.x compatibility mode setting. Information about this setting can be found on the [[ImageJ2/Documentation/Edit/Options/Compatibility]] page.
+* Legacy plugins which produced composite ROIs are supported now.
+
+See [http://trac.imagej.net/query?type=feature&milestone=imagej2-b4-plugins this report] for a high-level list of features completed for the 2.0.0-beta4 release.
+
+== Known bugs ==
+
+Many legacy ImageJ plugins and macros work; many others do not. There are still many bugs. In particular, there are a few issues specifically regarding 2.0.0-beta4:
+
+* There is a spurious grayed-out polygon tool on the tool bar, next to the real polygon tool [see [http://trac.imagej.net/ticket/1470 #1470]].
+* If you execute many legacy plugins very quickly, there may be bugs relating to timing issues [see [http://trac.imagej.net/ticket/1471 #1471]].
+* Due to bugs in the Updater (which have since been fixed), it is not possible to update from a beta3 installation. Please download the 2.0.0-beta4 distribution bundle instead.
+
+And the following bugs still remain from previous betas:
+
+* The data coordinate system is off by one pixel, which causes the pixel probe and drawing tool coordinates to be slightly misaligned [see [http://trac.imagej.net/ticket/716 #716] and [http://trac.imagej.net/ticket/1190 #1190]].
+* Image windows sometimes leave space for nonexistent sliders [see [http://trac.imagej.net/ticket/1060 #1060]].
+* Image windows don't always load at the optimal scale [see [http://trac.imagej.net/ticket/1472 #1472]].
+* A few other minor zoom issues [see [http://trac.imagej.net/ticket/1326 #1326]].
+* IJ1 commands that have preview capabilities are not fully functional. In general their final results are correct. Going forward the preview capabilities will be restored by porting them to IJ2's GUI model [see [http://trac.imagej.net/ticket/981 #981]].
+* Lastly, please note that it is still the case on Windows &amp; Linux that you must have Java already installed; ImageJ2 is not bundled with Java, nor will it download it for you.
+
+See the list of [http://trac.imagej.net/report/1 Open Features] for a high-level list of planned features and bugfixes.
+
+== Roadmap and future directions ==
+
+We make a substantial effort to document the work we are doing, and what needs to be done, to deliver a powerful and full-featured ImageJ2. All tasks are tracked by our Trac issue tracking system, which you can review in several ways:
+
+* [http://trac.imagej.net/roadmap Roadmap] - Top level overview of future releases, including progress toward each release
+* [http://trac.imagej.net/report/1 Open Features] - A high-level list of features slated for each future release
+* [http://trac.imagej.net/report/2 All Open Tickets] - A complete list of known bugs
+
+You can also perform custom queries to further refine the results, if there are particular parts of the development that interest you.
+
+== Thanks ==
+
+Thanks for your interest in ImageJ2! Please [[ImageJ2 development releases|give it a try]], and feel free to [[Bugs|report any bugs you find]]!
+
+[[Category:News]]
+[[Category:ImageJ2]]
