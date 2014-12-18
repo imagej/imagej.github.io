@@ -1,68 +1,63 @@
+<div style="float: right">
 {{Development | source}}
-This article explains how to install and configure Eclipse for use with [[ImageJ]] development. Directions correspond to Eclipse 4.3 Kepler, and may need adjustment for other versions.
+<div style="clear: right"></div>
+{{Windows | '''Avoid permissions issues.''' We recommend installing Eclipse ''outside'' of the <code>Program Files</code> directory. E.g.: '''<code>C:\Users\frood\Programs\eclipse</code>''', where '''<code>C:\Users\frood</code>''' is your user directory.
 
-== Install and configure Eclipse ==
+'''Configuring Eclipse.''' After installing Eclipse, you will need to configure it to know about your JDK.
 
-=== Setting up Eclipse on Windows ===
-
-==== Install Java Development Kit ====
- 
-Download and install JDK 6 from the [http://www.oracle.com/technetwork/java/javase/downloads/ Java web site].
-
-Take note of where the Java installation ended up; for the remainder of this guide we will use "'''C:\Program Files\Java\jdk1.6.0_20'''" though your path is likely to be different.
-
-==== Install Eclipse ====
- 
-Download "Eclipse IDE for Java Developers" from the [http://www.eclipse.org/downloads/ Eclipse web site]. It is important to choose "Eclipse IDE for Java Developers" because it contains Maven support built-in.
- 
-Unpack the ZIP file to a location of your choice. On Windows 7, to avoid permissions issues, we recommend using your personal Programs folder. Take note of this path; for the remainder of this guide we will use "'''C:\Users\you\Programs\eclipse'''" though your path is likely to be different.
-  
-==== Configure Eclipse ====
-
-Next, use Wordpad to edit the <code>eclipse.ini</code> file in '''C:\Users\you\Programs\eclipse'''. (Do not use Notepad, because it will not handle the Unix-style line breaks properly.) Carefully follow [http://wiki.eclipse.org/Eclipse.ini#Specifying_the_JVM these instructions] to specify the proper JDK. Then save the file and quit Wordpad.
+Use Wordpad to edit the <code>eclipse.ini</code> file in your Eclipse installation (e.g., '''<code>C:\Users\frood\Programs\eclipse</code>'''). (Do not use Notepad, because it will not handle the Unix-style line breaks properly.) Carefully follow [http://wiki.eclipse.org/Eclipse.ini#Specifying_the_JVM these instructions] to specify the proper JDK. Then save the file and quit Wordpad.
 
 Now update Eclipse's JRE to be JDK-aware:
 
 * Launch Eclipse
 * From the menu choose Window &gt; Preferences
 * Select Java &gt; Installed JREs
-* Click Search..., navigate to "'''C:\Program Files\Java\jdk1.6.0_20'''" and click OK
+* Click Search..., navigate to your JDK installation folder (e.g., '''<code>C:\Program Files\Java\jdk1.8.0_11</code>''') and click OK
 * Check the box next to the JRE that appears and click OK
-
-=== Setting up Eclipse on Mac OS X ===
-
-==== Install Eclipse ====
-
-Download and install "Eclipse IDE for Java Developers" from the [http://www.eclipse.org/downloads/ Eclipse web site]. It is important to choose "Eclipse IDE for Java Developers" because it contains Maven support built-in.
-
-=== Setting up Eclipse on Linux ===
-
-==== Install Eclipse ==== 
-
-Download "Eclipse IDE for Java Developers" from the [http://www.eclipse.org/downloads/ Eclipse web site]. It is important to choose "Eclipse IDE for Java Developers" because it contains Maven support built-in.
-
-Unpack the tarball to a location of your choice. To avoid
-permissions issues, we recommend using a folder in your home directory such as ~/eclipse.
-
-{{Warning
-| message = Note: For several reasons, we do not recommend installing Eclipse from a package manager. You may not get a new enough version of Eclipse (we recommend 4.3+), you will not get the Java Developers version that includes the m2e plugins, and you will likely have trouble installing additional plugins due to the permissions issues with the system-wide installation.
 }}
+<div style="clear: right"></div>
+{{Linux | '''Avoid permissions issues.''' We recommend installing to <code>$HOME/eclipse</code>.
 
-== Clone the ImageJ source ==
+'''Do not use a package manager.''' For several reasons, we do not recommend installing Eclipse from a package manager. You may not get a new enough version of Eclipse (we recommend 4.3+), you will not get the Java Developers version that includes the M2E plugins, and you will likely have trouble installing additional plugins due to the permissions issues with the system-wide installation.
+}}
+</div>
+This article explains how to install and configure Eclipse for use with [[ImageJ]] development. Directions correspond to Eclipse 4.4 Luna, and may need adjustment for other versions.
+__TOC__
 
-Using your [http://git-scm.com/downloads/guis Git client of choice], clone the [[Source Code|ImageJ source code]].
+== Install and configure Eclipse ==
 
-== Import the ImageJ source ==
+=== Install the Java Development Kit ===
+
+* Download and install the Java Development Kit (JDK) from the [http://www.oracle.com/technetwork/java/javase/downloads/ Java web site].
+
+=== Install Eclipse ===
+
+* Download "Eclipse IDE for Java Developers" from the [http://www.eclipse.org/downloads/ Eclipse web site].
+{{Warning |  It is '''important''' to choose "Eclipse IDE for Java Developers" because it contains Maven support built-in. Otherwise, you will have to [http://eclipse.org/m2e/ install the M2E plugin manually].}}
+
+* Unpack the archive to a location of your choice.
+
+* See the right-hand sidebars for platform-specific notes.
+
+== Clone the source code ==
+
+* Using your [http://git-scm.com/downloads/guis Git client of choice], clone the [[source code]] which interests you.
+
+== Import the source code ==
 
 # Choose File &gt; Import from the Eclipse menu
 # Select "Existing Maven Projects" and click Next
-# Browse to the folder where you cloned the ImageJ source code
+# Browse to the folder where you cloned the project source code
 # Click Finish
 
-== Launch the program ==
+== Launching ImageJ ==
 
-# In the Package Explorer, expand the project called "imagej"
-# Navigate into src/main/java
-# Navigate into net.imagej
-# Right-click on Main.java
+If you cloned the [https://github.com/imagej/imagej imagej project], you can launch the program as follows:
+
+# In the Package Explorer, expand the <code>imagej</code> project
+# Navigate into <code>src/main/java</code>
+# Navigate into <code>net.imagej</code>
+# Right-click on <code>Main.java</code>
 # Choose "Run As" and then "Java Application"
+
+Other projects will have different main classes.
