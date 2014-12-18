@@ -1,0 +1,95 @@
+Today the ImageJDev team is releasing the fifth beta of ImageJ2, version 2.0.0-beta5.
+
+ImageJ 2.0.0-beta5 is a &quot;beta&quot;-quality release, meaning the code is not finished. The design is more stable than before but still subject to change until the final 2.0.0 release. It is recommended that people continue to use [http://imagej.net/ ImageJ v1.x] for critical work.
+
+Download using the link below, or from the [[ImageJ2 development releases] page.
+
+The ImageJ2 user interface is modeled after ImageJ v1.x as much as possible. However, under the hood, ImageJ2 is a complete redesign of ImageJ. It provides backward compatibility with older versions of ImageJ by bundling the latest v1.x code and translating between &quot;legacy&quot; and &quot;modern&quot; image structures.
+
+== What's new ==
+
+Development of this release of ImageJ focused on the addition of scripting support. The release was timed to coincide with the ImageJ conference in Luxembourg, to ensure participants have access to a recent, stable codebase. Since the development cycle for this beta was shorter than many of our previous cycles, there are fewer new major features. But we have made substantial progress on some big ticket items (such as [http://trac.imagej.net/ticket/13 multi-step undo and redo]) that will be part of the next beta release.
+
+=== Application level changes ===
+
+[[Image:Hello-world-script.png | 362px | thumb | Written and executed from the Script Editor!]]
+
+* New script editor! This is the artist formerly known as the [http://fiji.sc/Script_Editor Fiji Script Editor], much refurbished and with a shiny new rewrite of the scripting infrastructure. It even comes with basic support for Maven projects. [https://github.com/imagej/imagej/commit/7e0cea20311f86cacce8afa2a6bcea612e180b47 commit]
+* There is now a Noise Reduction menu that supports a few noise reduction methods. [https://github.com/imagej/imagej/tree/v2.0.0-beta5/core/commands/data/src/main/java/imagej/core/commands/assign/noisereduce code]
+* The Command Finder now has a full set of sortable columns. [http://trac.imagej.net/ticket/1483 #1483]
+* There is now a &quot;Show LUT As Table&quot; command. [https://github.com/imagej/imagej/commit/838b00cc3e1291145c8782a1c6343d861b079f89 commit]
+* The current foreground and background colors are displayed on the toolbar.
+* Creating grayscale images from multichannel data is now easier.
+
+=== Architecture changes ===
+
+* '''Redesigned scripting framework.''' A scripting language is now a type of plugin, meaning anyone can create and register their own scripting language within ImageJ. [http://trac.imagej.net/ticket/12 #12]
+* '''Results tables'''. They can be declared as outputs of commands, and will be automatically displayed in a new table window. [http://trac.imagej.net/ticket/1250 [#1250]]
+* '''Statistics service.''' The statistics service simplifies the measurement of statistics from a set of data. There is an example (see below) which shows how it can be used. [https://github.com/imagej/imagej/commit/fc5e1434658b1ec562d0f816ff6244195de1c12a commit]
+* '''Improvements to Imglib2 OPS.''' [http://trac.imagej.net/ticket/1511 #1511]
+* '''Efficient Collections-based primitive array lists.''' The Java standard library does not have a performant way to wrap primitive types—such as <code>int</code> and <code>double</code>—in <code>ArrayList</code>s. We now have performant implementations of growable primitive-type arrays in ''imagej.util.IntArray'' and friends. These classes were added to support results tables, but their utility goes beyond just results tables. [https://github.com/imagej/imagej/commit/0789b57d8d3622ea09e4b677b1b0153367eed5b4 commit]
+* '''Better detection of the ImageJ base directory.''' This fixes a bug when using ImageJ2 from within KNIME. [https://github.com/imagej/imagej/commit/66b4e29ede811ad14ebd911ee9f3b0d26935c195 commit]
+* '''Better naming of displays.''' [https://github.com/imagej/imagej/commit/6f8576e8082ab6b4c8a778e6c3e927265d34295b commit]
+* '''More consistent display viewer package hierarchies.''' [https://github.com/imagej/imagej/commit/687f6035842d7e9af512f90c8fddc1af99eb30a5 commit]
+* '''Plugin index bugfixes.''' [https://github.com/imagej/imagej/commit/6253b9a537a4598f3aca1d5e098aadec10bb4ba1 commit]
+
+=== Improved help ===
+
+Some command dialogs now have Help buttons that load a wiki page describing the command. Such commands include the Overlay Manager, the ImageJ 1.x Compatibilty Mode options, the Process &gt; Math &gt; Equation command, and the PointSet Demo command. This kind of immediate help via the wiki will be utilized more going forward.
+
+=== Examples for developers ===
+
+We have continued to flesh out example code for developers. In this release there is an example of [https://github.com/imagej/imagej/blob/v2.0.0-beta5/core/commands/debug/src/main/java/imagej/core/commands/debug/StatisticsDemo.java how to use the new StatisticsService], an example showing [https://github.com/imagej/imagej/blob/v2.0.0-beta5/core/commands/debug/src/main/java/imagej/core/commands/debug/ParamAssignOrder.java how plugin parameters are assigned], and an example in Imglib2 on [https://github.com/imagej/imglib/blob/v2.0.0-beta5/imglib2/ops/src/main/java/net/imglib2/ops/img/ImageCombiner.java how to use OPS to combine images]. We have also added a new [https://github.com/imagej/imagej-tutorials/tree/8e63ef56384505612cd2b1abb231b12509117d7c/custom-preprocessor-plugin tutorial on creating a custom preprocessor plugin].
+
+=== Compatibility ===
+
+There have been numerous compatibility improvements and bug fixes. Since beta4 the team has closed over 50 issues and made progress on many more. For instance there is improved support for legacy commands such as: Surface Plot, Zoom In, Rename, and To RGB Stack. See the full list of beta 5 changes [http://trac.imagej.net/query?status=closed&milestone=imagej2-b5-scripting here].
+
+=== Updater changes ===
+
+* There were some Fiji-specific changes; Fiji uses the ImageJ updater now, but does not provide an ImageJ context, hence a few improvements were necessary.
+* robustness improvements (mainly for uploading).
+* when uploading via SSH via a specified proxy fails, the updater tries SSH without a proxy.
+
+=== SLIM Plugin ===
+
+The SLIM Plugin is usable beta quality but still available for ImageJ 1.x only. It will migrate to ImageJ2 by the final ImageJ 2.0.0 release. For this last cycle the emphasis for SLIM Plugin was on [http://dev.loci.wisc.edu/trac/software/query?status=closed&milestone=slimplugin1.1A fixing bugs and adding features] to improve functionality and ease-of-use.
+
+See the [http://loci.wisc.edu/software/slim-plugin SLIM Plugin web site] for details.
+
+=== Features ===
+
+See [http://trac.imagej.net/query?type=feature&milestone=imagej2-b5-scripting this report] for a high-level list of features completed for the 2.0.0-beta5 release.
+
+== Known bugs ==
+
+Many legacy ImageJ plugins and macros work; many others do not. There are still many bugs. In particular, the following bugs still remain from previous betas:
+
+* There is a spurious grayed-out polygon tool on the tool bar, next to the real polygon tool. [http://trac.imagej.net/ticket/1470 #1470]
+* If you execute many legacy plugins very quickly, there may be bugs relating to timing issues. [http://trac.imagej.net/ticket/1471 #1471]
+* The data coordinate system is off by one pixel, which causes the pixel probe and drawing tool coordinates to be slightly misaligned. [http://trac.imagej.net/ticket/716 #716] and [http://trac.imagej.net/ticket/1190 #1190]
+* Image windows sometimes leave space for nonexistent sliders. [http://trac.imagej.net/ticket/1060 #1060]
+* Image windows don't always load at the optimal scale. [http://trac.imagej.net/ticket/1472 #1472]
+* A few other minor zoom issues. [http://trac.imagej.net/ticket/1326 #1326]
+* IJ1 commands that have preview capabilities are not fully functional. In general their final results are correct. Going forward the preview capabilities will be restored by porting them to IJ2's GUI model. [http://trac.imagej.net/ticket/981 #981]
+* Lastly, please note that it is still the case on Windows &amp; Linux that you must have Java already installed; ImageJ2 is not bundled with Java, nor will it download it for you.
+
+See the list of [http://trac.imagej.net/report/1 Open Features] for a high-level list of planned features and bugfixes.
+
+== Roadmap and future directions ==
+
+We make a substantial effort to document the work we are doing, and what needs to be done, to deliver a powerful and full-featured ImageJ2. All tasks are tracked by our Trac issue tracking system, which you can review in several ways:
+
+* [http://trac.imagej.net/roadmap Roadmap] - Top level overview of future releases, including progress toward each release
+* [http://trac.imagej.net/report/1 Open Features] - A high-level list of features slated for each future release
+* [http://trac.imagej.net/report/2 All Open Tickets] - A complete list of known bugs
+* You can also perform custom queries to further refine the results, if there are particular parts of the development that interest you.
+
+To more accurately reflect what is left to do, we have recently reestimated ImageJ2's release dates, and scheduled additional betas before the final 2.0.0 release. See the [[downloads|Downloads page]] for the updated release timeline.
+
+== Thanks ==
+
+Thanks for your interest in ImageJ2! Please [[ImageJ2 development releases|give it a try]], and feel free to [[Bugs|report any bugs you find]]!
+
+[[Category:News]]
+[[Category:ImageJ2]]
