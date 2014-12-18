@@ -14,24 +14,24 @@ Development of this release of ImageJ focused on the addition of [[scripting]] s
 
 [[Image:Hello-world-script.png | 362px | thumb | Written and executed from the Script Editor!]]
 
-* New script editor! This is the artist formerly known as the [[Script Editor|Fiji Script Editor]], much refurbished and with a shiny new rewrite of the scripting infrastructure. It even comes with basic support for Maven projects. [https://github.com/imagej/imagej/commit/7e0cea20311f86cacce8afa2a6bcea612e180b47 commit]
-* There is now a Noise Reduction menu that supports a few noise reduction methods. [https://github.com/imagej/imagej/tree/v2.0.0-beta5/core/commands/data/src/main/java/imagej/core/commands/assign/noisereduce code]
-* The Command Finder now has a full set of sortable columns. [http://trac.imagej.net/ticket/1483 #1483]
-* There is now a &quot;Show LUT As Table&quot; command. [https://github.com/imagej/imagej/commit/838b00cc3e1291145c8782a1c6343d861b079f89 commit]
+* New script editor! This is the artist formerly known as the [[Script Editor|Fiji Script Editor]], much refurbished and with a shiny new rewrite of the scripting infrastructure. It even comes with basic support for Maven projects. [[https://github.com/imagej/imagej/commit/7e0cea20311f86cacce8afa2a6bcea612e180b47 commit]]
+* There is now a Noise Reduction menu that supports a few noise reduction methods. [[https://github.com/imagej/imagej/tree/v2.0.0-beta5/core/commands/data/src/main/java/imagej/core/commands/assign/noisereduce code]]
+* The Command Finder now has a full set of sortable columns. [[http://trac.imagej.net/ticket/1483 #1483]]
+* There is now a &quot;Show LUT As Table&quot; command. [[https://github.com/imagej/imagej/commit/838b00cc3e1291145c8782a1c6343d861b079f89 commit]]
 * The current foreground and background colors are displayed on the toolbar.
 * Creating grayscale images from multichannel data is now easier.
 
 === Architecture changes ===
 
-* '''Redesigned scripting framework.''' A scripting language is now a type of plugin, meaning anyone can create and register their own scripting language within ImageJ. [http://trac.imagej.net/ticket/12 #12]
+* '''Redesigned scripting framework.''' A scripting language is now a type of plugin, meaning anyone can create and register their own scripting language within ImageJ. [[http://trac.imagej.net/ticket/12 #12]]
 * '''Results tables'''. They can be declared as outputs of commands, and will be automatically displayed in a new table window. [http://trac.imagej.net/ticket/1250 [#1250]]
-* '''Statistics service.''' The statistics service simplifies the measurement of statistics from a set of data. There is an example (see below) which shows how it can be used. [https://github.com/imagej/imagej/commit/fc5e1434658b1ec562d0f816ff6244195de1c12a commit]
-* '''Improvements to Imglib2 OPS.''' [http://trac.imagej.net/ticket/1511 #1511]
-* '''Efficient Collections-based primitive array lists.''' The Java standard library does not have a performant way to wrap primitive types—such as <code>int</code> and <code>double</code>—in <code>ArrayList</code>s. We now have performant implementations of growable primitive-type arrays in ''imagej.util.IntArray'' and friends. These classes were added to support results tables, but their utility goes beyond just results tables. [https://github.com/imagej/imagej/commit/0789b57d8d3622ea09e4b677b1b0153367eed5b4 commit]
-* '''Better detection of the ImageJ base directory.''' This fixes a bug when using ImageJ2 from within KNIME. [https://github.com/imagej/imagej/commit/66b4e29ede811ad14ebd911ee9f3b0d26935c195 commit]
-* '''Better naming of displays.''' [https://github.com/imagej/imagej/commit/6f8576e8082ab6b4c8a778e6c3e927265d34295b commit]
-* '''More consistent display viewer package hierarchies.''' [https://github.com/imagej/imagej/commit/687f6035842d7e9af512f90c8fddc1af99eb30a5 commit]
-* '''Plugin index bugfixes.''' [https://github.com/imagej/imagej/commit/6253b9a537a4598f3aca1d5e098aadec10bb4ba1 commit]
+* '''Statistics service.''' The statistics service simplifies the measurement of statistics from a set of data. There is an example (see below) which shows how it can be used. [[https://github.com/imagej/imagej/commit/fc5e1434658b1ec562d0f816ff6244195de1c12a commit]]
+* '''Improvements to Imglib2 OPS.''' [[http://trac.imagej.net/ticket/1511 #1511]]
+* '''Efficient Collections-based primitive array lists.''' The Java standard library does not have a performant way to wrap primitive types—such as <code>int</code> and <code>double</code>—in <code>ArrayList</code>s. We now have performant implementations of growable primitive-type arrays in ''imagej.util.IntArray'' and friends. These classes were added to support results tables, but their utility goes beyond just results tables. [[https://github.com/imagej/imagej/commit/0789b57d8d3622ea09e4b677b1b0153367eed5b4 commit]]
+* '''Better detection of the ImageJ base directory.''' This fixes a bug when using ImageJ2 from within KNIME. [[https://github.com/imagej/imagej/commit/66b4e29ede811ad14ebd911ee9f3b0d26935c195 commit]]
+* '''Better naming of displays.''' [[https://github.com/imagej/imagej/commit/6f8576e8082ab6b4c8a778e6c3e927265d34295b commit]]
+* '''More consistent display viewer package hierarchies.''' [[https://github.com/imagej/imagej/commit/687f6035842d7e9af512f90c8fddc1af99eb30a5 commit]]
+* '''Plugin index bugfixes.''' [[https://github.com/imagej/imagej/commit/6253b9a537a4598f3aca1d5e098aadec10bb4ba1 commit]]
 
 === Improved help ===
 
