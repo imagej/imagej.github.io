@@ -2,19 +2,19 @@ Today the ImageJDev team is releasing the fifth beta of ImageJ2, version 2.0.0-b
 
 ImageJ 2.0.0-beta5 is a &quot;beta&quot;-quality release, meaning the code is not finished. The design is more stable than before but still subject to change until the final 2.0.0 release. It is recommended that people continue to use [[ImageJ 1.x]] for critical work.
 
-Download using the link below, or from the [[ImageJ2 development releases] page.
+Download from the [[ImageJ2 development releases]] page.
 
 The ImageJ2 user interface is modeled after ImageJ v1.x as much as possible. However, under the hood, ImageJ2 is a complete redesign of ImageJ. It provides backward compatibility with older versions of ImageJ by bundling the latest v1.x code and translating between &quot;legacy&quot; and &quot;modern&quot; image structures.
 
 == What's new ==
 
-Development of this release of ImageJ focused on the addition of scripting support. The release was timed to coincide with the ImageJ conference in Luxembourg, to ensure participants have access to a recent, stable codebase. Since the development cycle for this beta was shorter than many of our previous cycles, there are fewer new major features. But we have made substantial progress on some big ticket items (such as [http://trac.imagej.net/ticket/13 multi-step undo and redo]) that will be part of the next beta release.
+Development of this release of ImageJ focused on the addition of [[scripting]] support. The release was timed to coincide with the ImageJ conference in Luxembourg, to ensure participants have access to a recent, stable codebase. Since the development cycle for this beta was shorter than many of our previous cycles, there are fewer new major features. But we have made substantial progress on some big ticket items (such as [http://trac.imagej.net/ticket/13 multi-step undo and redo]) that will be part of the next beta release.
 
 === Application level changes ===
 
 [[Image:Hello-world-script.png | 362px | thumb | Written and executed from the Script Editor!]]
 
-* New script editor! This is the artist formerly known as the [http://fiji.sc/Script_Editor Fiji Script Editor], much refurbished and with a shiny new rewrite of the scripting infrastructure. It even comes with basic support for Maven projects. [https://github.com/imagej/imagej/commit/7e0cea20311f86cacce8afa2a6bcea612e180b47 commit]
+* New script editor! This is the artist formerly known as the [[Script Editor|Fiji Script Editor]], much refurbished and with a shiny new rewrite of the scripting infrastructure. It even comes with basic support for Maven projects. [https://github.com/imagej/imagej/commit/7e0cea20311f86cacce8afa2a6bcea612e180b47 commit]
 * There is now a Noise Reduction menu that supports a few noise reduction methods. [https://github.com/imagej/imagej/tree/v2.0.0-beta5/core/commands/data/src/main/java/imagej/core/commands/assign/noisereduce code]
 * The Command Finder now has a full set of sortable columns. [http://trac.imagej.net/ticket/1483 #1483]
 * There is now a &quot;Show LUT As Table&quot; command. [https://github.com/imagej/imagej/commit/838b00cc3e1291145c8782a1c6343d861b079f89 commit]
