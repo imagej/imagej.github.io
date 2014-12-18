@@ -1,0 +1,13 @@
+<includeonly>{{Sidebox | [[Image:win.png|left|64px|link=]] {{{1|}}}}}</includeonly>
+<noinclude>This template is a sidebar for Windows-specific commentary or notes.
+
+== Usage ==
+
+<pre>
+{{Windows | Everyone agrees: Windows is the ''best'' operating system!}}
+</pre>
+{{Windows | Everyone agrees: Windows is the ''best'' operating system!}}
+
+{{Clear}}
+[[Category:Boxes]]
+</noinclude>
