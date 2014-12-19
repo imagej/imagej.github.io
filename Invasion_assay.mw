@@ -11,7 +11,7 @@
 SPIM allows for three-dimensional imaging of thick specimens. Among other approaches this can be exploited to analyse invasion of different cell types deep into tissues. Due to their potential role in cancer treatment the invasion of mesenchymal stem cells (MSC) into tumors is a medically relevant issue.
 
 We developed an ''in-vitro'' screening tool to analyse the invasion potential of MSC under different conditions. Therefore, tumor model spheroids with invaded MSC are imaged and their invasion depths are quantified. 
-We present here the computational approach to cope with the amount of data our high-throughput invasion assay produces.
+We present here the computational approach to cope with the amount of data our screening invasion assay produces.
 
 =Image processing=
 
