@@ -13,7 +13,6 @@ Please note that we currently test ImageJ mostly with Oracle Java 6. We have don
 
 = Troubleshooting =
 
-* If you updated and ImageJ does not work anymore, you need to follow [[Fix_non-functional_ImageJ_after_Update|these instructions]].
 * If you encounter bugs, there are many ways to get help; please see the [[Help:Contents|Getting Help]] page.
 
 = Downloads =
