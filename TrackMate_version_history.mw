@@ -194,3 +194,13 @@ Initial release
 
 * When graphing spot features, only include spots from visible tracks.
 * Fix a bug that prevented the XML file to be saved.
+
+== 22-12-2014 - v2.6.3 ==
+
+TrackMate version bumped by several increments, prompted by the [[2014-12-10 - ImgLib2 released|big update]] that happened to Fiji between this and the previous release. Some minor bugfixes and improvements are shipped nonetheless. 
+* In the table exports, spots and links are sorted by track then by frame.
+* TrackMate now works with 1D images: image sequences made of single line or single column frames.
+* Fix a bug that caused off behavior when the manual tracking plugin was launched twice in the same Fiji session.
+* The semi auto tracker has a new parameter that limits the number of frames it processes.
+* TrackScheme: A tooltip displays the track name and the frame when lingering over the row or column headers. This is made to improve orientation when unzoomed.
+* TrackScheme: Change the order of components in the side toolbar.
