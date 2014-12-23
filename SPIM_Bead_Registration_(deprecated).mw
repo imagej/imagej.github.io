@@ -10,6 +10,12 @@
 | website                = [http://fly.mpi-cbg.de/~preibisch Stephan Preibisch's homepage]
 }}
 
+== Important Note ==
+
+<span style="color:#A52A2A">
+'''''Please Note: This version of the software is outdated. It will be part of Fiji for the time being, but I highly recommend using the new [[Multiview-Reconstruction|Multiview Reconstruction Plugin]]. It is much more powerful, flexible and completely integrated with the [[BigDataViewer]].'''''
+</span>
+
 == Citation ==
 Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 * S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", ''Nature Methods'', '''7'''(6):418-419. [http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html Webpage] [[Media:Nmeth0610-418.pdf|PDF]] [[Media:Nmeth0610-418-S1.pdf|Supplement]]
