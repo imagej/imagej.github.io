@@ -1,11 +1,11 @@
 {{Infobox
 | name                   = Reconstruction of Multiview Microscopy Data
-| software               = ImageJ
+| software               = Fiji
 | author                 = Stephan Preibisch
 | maintainer             = Stephan Preibisch
 | source                 = {{GitHub|org=fiji|repo=spimreconstruction}}
 | filename               = SPIM_Registration.jar
-| status                 = beta
+| status                 = stable, active
 | category               = [[:Category:Plugins|Plugins]], [[:Category:Transform|Transform]],[[:Category:Registration|Registration]],[[:Category:Registration|SPIM Registration]], [[:Category:Deconvolution|Multi-View Deconvolution]]
 | website                = [https://sourceforge.net/projects/multiviewreconstruction/ SourceForge page]
 }}
