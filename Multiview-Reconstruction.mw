@@ -1,8 +1,8 @@
 {{Infobox
 | name                   = Reconstruction of Multiview Microscopy Data
 | software               = Fiji
-| author                 = Stephan Preibisch
-| maintainer             = Stephan Preibisch
+| author                 = [http://www.preibisch.net Stephan Preibisch]
+| maintainer             = [http://www.preibisch.net Stephan Preibisch]
 | source                 = {{GitHub|org=fiji|repo=spimreconstruction}}
 | filename               = SPIM_Registration.jar
 | status                 = stable, active
