@@ -6,7 +6,7 @@
 | source                 = {{GitHub|org=fiji|repo=spimreconstruction}}
 | filename               = SPIM_Registration.jar
 | status                 = beta
-| category               = [[:Category:Registration|SPIM Registration]]
+| category               = [[:Category:Plugins|Plugins]], [[:Category:Transform|Transform]],[[:Category:Registration|Registration]],[[:Category:Registration|SPIM Registration]], [[:Category:Deconvolution|Multi-View Deconvolution]]
 | website                = [https://sourceforge.net/projects/multiviewreconstruction/ SourceForge page]
 }}
 
