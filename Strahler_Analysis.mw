@@ -8,16 +8,18 @@
 | source         = [https://github.com/tferr/Scripts/tree/master/Morphometry#strahler-analysis on GitHub]
 | released        = March 2013
 | latest version = '''1.4.0 2015.01.01'''
-| status          = Experimental
+| status          = Active, Stable
 | category        = [[:Category:Skeleton|Skeleton]], [[:Category:Analysis|Analysis]], [[:Category:Scripting|Scripting]], [[:Category:Plugins|Plugins]]
 }}
 A [[BAR]] script (written in [[Beanshell_Scripting|BeanShell]]) that performs Strahler analysis on topographic skeletons (2D/3D) through progressive pruning of terminal branches. [http://en.wikipedia.org/wiki/Strahler_number Strahler numbering] is a numerical procedure that summarizes the branching complexity of a mathematical tree.
 
 == Description ==
-[[Image:StrahlerAnimation.gif|300px|thumb|right|Strahler Analysis by iterative elimination of end-point branches]]
-There are different approaches to classify a tree-like structure by its [[#References|Horton-Strahler numbers]]. One is iterative tree simplification, a method that requires detecting all terminal branches (i.e., branches that contain an end-point) and all the degree-one paths leading to them. Most of this procedure could be manually performed with [[AnalyzeSkeleton]]. 
+<span id="StrahlerAnimation"></span>[[Image:StrahlerAnimation.gif|300px|thumb|right|Strahler Analysis by iterative elimination of end-point branches]]
+There are different approaches to classify a tree-like structure by its [[#References|Horton-Strahler numbers]]. One is iterative tree simplification, a method that requires detecting all terminal branches (i.e., branches that contain an end-point) and all the degree-one paths leading to them.
 
-''Strahler Analysis'' takes a binary or a grayscale image (2D or 3D) containing a single arbor, and calls [[AnalyzeSkeleton]] iteratively to retrieve Horton-Strahler counts from the [[Skeletonize3D|skeletonized centerlines]] of the image.
+''Strahler Analysis'' takes a <u>binary</u> or <u>8-bit grayscale</u> image (2D or 3D) containing a <u>single arbor</u>, and calls [[AnalyzeSkeleton]] iteratively to retrieve Horton-Strahler counts from the [[Skeletonize3D|skeletonized centerlines]] of the image.
+
+Each iteration includes three operations: 1) a (re)-skeletonization step to ensure that arbor remains represented by its centerlines, 2) an elimination step in which terminal-branches are pruned from the image and 3) an analysis step in which pruned branches are counted and measured. The iteration ceases as soon as all branches have been eliminated or a unresolved [[#Elimination_of_Skeleton_Loops|closed loop]] has been detected in the pruned arbor.
 
 == Parameters ==
 === Strahler Numbering ===
@@ -30,59 +32,55 @@ There are different approaches to classify a tree-like structure by its [[#Refer
 
 === Elimination of Skeleton Loops ===
 ;Method
-:''Strahler Analysis'' cannot process skeletons containing closed loops and will outputs a warning message when such structures have been detected. The available methods in this drop-down menu define how closed loops should be resolved by [[AnalyzeSkeleton]] and are described in [[AnalyzeSkeleton#Loop_detection_and_pruning|Loop detection]].
+:''Strahler Analysis'' cannot process skeletons containing closed loops and will output a warning message when such structures have been detected. The available methods in this drop-down menu define how closed loops should be resolved by [[AnalyzeSkeleton]] and are described in [[AnalyzeSkeleton#Loop_detection_and_pruning|Loop detection]].
 ;Unsegmented image
 :The initial non-thinned image to be used by [[AnalyzeSkeleton]] for [[AnalyzeSkeleton#Loop_detection_and_pruning|intensity-based]] elimination of closed loops. This option is only used if either ''Lowest intensity voxel'' or ''Lowest intensity branch'' is chosen as ''Method''. Note that if an intensity-based method is selected but the chosen image is a binary one, closed loops will not be resolved.
 
 === Output Options ===
 ;Iteration stack (Document individual iterations)
-:If checked, an image stack that documents individual pruning cycles will be displayed.
+:If checked, an image stack that documents individual pruning cycles will be displayed. End-points and Junction-points positions are appended to the stack.
 ;Heat-map image (Summarize analysis)
-:If checked, a 32–bit illustration of the analyzed skeleton, in which branches are color-coded by their Horton-Strahler numbers, will be displayed. By default, a calibration ramp (<span style="border-bottom:1px dotted #ccc;">Analyze▷ Tools▷ Calibration Bar...</span>) is added as an overlay.
+:If checked, a 32–bit illustration of the analyzed skeleton will be displayed, in which branches are color-coded by their Horton-Strahler numbers. By default, a calibration ramp (<span style="border-bottom:1px dotted #ccc;">Analyze▷ Tools▷ Calibration Bar...</span>) is added as an overlay. WYSIWYG versions (RGB images) of the ''Strahler Color Map'' image  can be obtained by pressing {{key press|Shift|F}} (shortcut for <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Flatten</span>).
 ;Show detailed information (Verbose mode)
-:If checked, analysis will run in "verbose" mode by outputting detailed measurements and logging debug messages.
+:If checked, analysis will run in ''verbose'' mode by outputting detailed measurements and by logging debug messages.
 
-== Non-radial arbors ==
-In the case of radial arbors (i.e., tree-like structures that branch out evenly in multiple directions), detection and elimination of terminal branches is usually sufficient to provide satisfactory simplification of the ramified structure. In neurobiology, radial-ramification is an anatomical hallmark of certain cell types such as Retinal Ganglion Cells, Chandelier neurons or Drosophila Class IV sensory neurons. However, the proper classification of non-radial arbors (i.e., arbors in which the root is a terminal branch) requires ''Strahler Analysis'' to be aware of root branches.
+== Root Detection ==
+The problem with undiscriminated elimination of terminal branches is that a root-branch containing an end-point is always eliminated on the first iteration step. In order to protect root branches from elimination, ''Strahler Analysis'' needs to know where root branches are located. As of version 1.4.0, root-detection is implemented by means of a rectangular ROI containing the root branch and by activating the ''Infer root end-points from rectangular ROI'' option. Here is an example:
 
-As of version 1.4.0, analysis of non-radial arbors is implemented by means of a rectangular ROI containing the root branch. Here is an example:
+
 <center>
 {|
 | align="center" width="185" | Arbor with rectangular ROI containing root
-| align="center" width="185" | Analysis ignoring ROI: inaccurate result
-| align="center" width="185" | Analysis taking ROI into account: accurate result
+| align="center" width="185" | Analysis ignoring ROI: Inaccurate result
+| align="center" width="185" | Analysis taking ROI into account: Accurate result
 |-
 | align="center" colspan="3" width="555" | [[Image:Strahler_RootProtection.png|550px]]
 |-
-| align="left" colspan="3" width="555" | When a rectangular ROI is present, the ''Infer root end-points from rectangular ROI'' checkbox can be used to spare root branches from the iterative elimination procedure (NB: colored images correspond to the ''Color Map illustrations'' output by the plugin).
+| align="left" colspan="3" width="555" |
+Root branches are spared from the iterative elimination procedure if marked by a rectangular ROI. Middle image: ROI is ignored. As a consequence, root-branch is interpreted as any other terminal-branch. Right image: Analysis infers that end-point contained by ROI belongs to a root-branch and marked branch is excluded from the iteration. (NB: colored images correspond to the ''Heat-map image'' output by the plugin).
 |}
 </center>
-
-
-Note the following when analyzing non-radial arbors:
-* Only a rectangular ROI can be used to mark the root branch.
-* The best way to ensure the algorithm ran as expected is to visually inspect all the slices in the ''Iteration Stack''. 
+=== Notes on Root Detection ===
+* Only a rectangular ROI can be used to mark the root branch. This is intentional: The way the root-detection algorithm works is by ''protecting'' all end-points that are contained by the ROI from end-point elimination. Using complex ROIs (e.g., discontinuous or containing internal holes) would make this task much more cumbersome.
+* The ROI only needs to contain root end-point(s) and it should not matter if its boundaries intercept other branches. However, measurements on root-branches may be inaccurate if the ROI contains junction(s) points. The best way to ensure the algorithm ran as expected is to visually inspect all the slices in the ''Iteration stack''. 
+* Root detection may not be required in the case of radial arbors (i.e., tree-like structures that branch out evenly in multiple directions), if root(s) remain connected in the center of the arbor (as in [[#StrahlerAnimation|animation above]]). In neurobiology, radial-ramification is an anatomical hallmark of certain cell types such as Retinal Ganglion Cells, Chandelier neurons or Drosophila Class IV sensory neurons.
 * If you are batch processing multiple images you should work with .tif files: When saving as TIFF, ImageJ will store the active ROI in the image header, making it immediately available when the image is open.
 
 == Results ==
-Horton-Strahler counts are listed on a dedicated table containing the following data:
+Horton-Strahler counts are listed on a dedicated table. The extension and format of this ''Strahler Table'' can be specified in <span style="border-bottom:1px dotted #ccc;"> Edit▷ Options▷ Input/Output...</span>. It contains the following data:
 ; # End-point Branches
 :The number of branches for each Horton-Strahler order.
 
 ; Ramification ratios
-: Ramification or [http://en.wikipedia.org/wiki/Strahler_number#Bifurcation_ratio bifurcation ratios] are the quotients between branches of consecutive orders. Note that an overall ratio may be obtained by averaging ratios across orders.
+: Ramification or [http://en.wikipedia.org/wiki/Strahler_number#Bifurcation_ratio bifurcation ratios] are the quotients between branches of consecutive orders. An overall ratio may be obtained by averaging ratios across orders. Note that versions prior to 1.4.0 used to output reciprocal ratios.
 
 In addition if ''Show detailed information'' is checked, ''Average branch length'', ''N. of trees'', ''N. of branches'', ''N. of junctions'', ''N. of triple points'', ''N. of quadruple points'' are also retrieved for each iteration. These are described in the AnalyzeSkeleton's [[AnalyzeSkeleton#Table_of_results|documentation page]].
 
 == Installation ==
-The easiest way to install ''Strahler Analysis'' is by [[BAR#Installation|subscribing]] to the BAR [[List_of_update_sites|update site]]. Alternatively, download [https://raw.github.com/tferr/Scripts/master/Morphometry/Strahler_Analysis.bsh Strahler_Analysis.bsh] and place it in the plugins/ folder using the <span style="border-bottom:1px dotted #ccc;">Plugins▷ Install...</span> command. 
+The easiest way to install ''Strahler Analysis'' is by [[BAR#Installation|subscribing]] to the BAR [[List_of_update_sites|update site]]. This will ensure immediate access to automatic updates. However, if you prefer a manual installation, download [https://raw.github.com/tferr/Scripts/master/Morphometry/Strahler_Analysis.bsh Strahler_Analysis.bsh] and place it in the plugins/ folder using the <span style="border-bottom:1px dotted #ccc;">Plugins▷ Install...</span> command. 
 If you are not using Fiji, the script should remind you to install [[AnalyzeSkeleton]] and [[Skeletonize3D]], if you have not done so. More details [https://github.com/tferr/Scripts/tree/master/Morphometry#strahler-analysis here].
 
-== Notes ==
-* Only binary and 8-bit grayscale images can be processed.
-* End-points and Junction-points positions are appended to the ''Iteration stack'' if the latter is chosen as an output image
-* WYSIWYG versions (RGB images) of the ''Strahler Color Map'' image  can be obtained by pressing {{key press|Shift|F}} (shortcut for <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Flatten</span>).
-* The extension and format of ''Strahler Table'' can be specified in <span style="border-bottom:1px dotted #ccc;"> Edit▷ Options▷ Input/Output...</span>
+Note that without access to [[BAR]] and Fiji's [[Update_Fiji|built-in updater]] you will have to 1) upgrade ImageJ to its latest version using <span style="border-bottom:1px dotted #ccc;">Help▷ Update ImageJ...</span>, 2) manually upgrade ''Strahler Analysis'' by monitoring its {{GitHub|org=tferr|repo=Scripts|path= Morphometry|label= repository}} and 3) manually upgrade [[AnalyzeSkeleton]] and [[Skeletonize3D]] to their latest versions.
 
 == Related Links ==
 * [[AnalyzeSkeleton]] and [[Skeletonize3D]], analysis of topographic skeletons 
