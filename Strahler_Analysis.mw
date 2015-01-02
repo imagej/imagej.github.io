@@ -72,6 +72,8 @@ Horton-Strahler counts are listed on a dedicated table containing the following 
 ; Ramification ratios
 : Ramification or [http://en.wikipedia.org/wiki/Strahler_number#Bifurcation_ratio bifurcation ratios] are the quotients between branches of consecutive orders. Note that an overall ratio may be obtained by averaging ratios across orders.
 
+In addition if ''Show detailed information'' is checked, ''Average branch length'', ''N. of trees'', ''N. of branches'', ''N. of junctions'', ''N. of triple points'', ''N. of quadruple points'' are also retrieved for each iteration. These are described in the AnalyzeSkeleton's [[AnalyzeSkeleton#Table_of_results|documentation page]].
+
 == Installation ==
 The easiest way to install ''Strahler Analysis'' is by [[BAR#Installation|subscribing]] to the BAR [[List_of_update_sites|update site]]. Alternatively, download [https://raw.github.com/tferr/Scripts/master/Morphometry/Strahler_Analysis.bsh Strahler_Analysis.bsh] and place it in the plugins/ folder using the <span style="border-bottom:1px dotted #ccc;">Plugins▷ Install...</span> command. 
 If you are not using Fiji, the script should remind you to install [[AnalyzeSkeleton]] and [[Skeletonize3D]], if you have not done so. More details [https://github.com/tferr/Scripts/tree/master/Morphometry#strahler-analysis here].
