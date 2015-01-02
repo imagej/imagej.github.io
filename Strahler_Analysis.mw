@@ -45,24 +45,24 @@ There are different approaches to classify a tree-like structure by its [[#Refer
 == Non-radial arbors ==
 In the case of radial arbors (i.e., tree-like structures that branch out evenly in multiple directions), detection and elimination of terminal branches is usually sufficient to provide satisfactory simplification of the ramified structure. In neurobiology, radial-ramification is an anatomical hallmark of certain cell types such as Retinal Ganglion Cells, Chandelier neurons or Drosophila Class IV sensory neurons. However, the proper classification of non-radial arbors (i.e., arbors in which the root is a terminal branch) requires ''Strahler Analysis'' to be aware of root branches.
 
-As of version 1.2.0, this is implemented through the presence of an area ROI inscribing the root branch. Here is an example:
+As of version 1.4.0, analysis of non-radial arbors is implemented by means of a rectangular ROI containing the root branch. Here is an example:
 <center>
 {|
-| align="center" width="185" | Arbor with area ROI containing root
+| align="center" width="185" | Arbor with rectangular ROI containing root
 | align="center" width="185" | Analysis ignoring ROI: inaccurate result
 | align="center" width="185" | Analysis taking ROI into account: accurate result
 |-
 | align="center" colspan="3" width="555" | [[Image:Strahler_RootProtection.png|550px]]
 |-
-| align="left" colspan="3" width="555" | When an area ROI is present, the ''Protect branches inside ROI from iterative pruning'' checkbox can be used to spare root branches from the iterative elimination procedure (NB: colored images correspond to the ''Color Map illustrations'' output by the plugin).
+| align="left" colspan="3" width="555" | When a rectangular ROI is present, the ''Infer root end-points from rectangular ROI'' checkbox can be used to spare root branches from the iterative elimination procedure (NB: colored images correspond to the ''Color Map illustrations'' output by the plugin).
 |}
 </center>
 
-Note the following when analyzing non-radial arbors:
-* Any area ROI (freehand, oval, polygon, etc.) can be used to inscribe the root branch.  However, the algorithm expects that only the root branch (from junction point to end-point) is included in the ROI.
-* Artifacts may happen if the ROI intercepts the root branch halfway between the end-point and the junction point or if the ROI includes other branches. The best way to ensure the algorithm ran as expected is to visually inspect all the slices in the ''Iteration Stack''. 
-* If you are batch processing multiple images you should work with .tif files: When saving as TIFF, ImageJ will store the active ROI in the image header, making it immediately available when the image is open.
 
+Note the following when analyzing non-radial arbors:
+* Only a rectangular ROI can be used to mark the root branch.
+* The best way to ensure the algorithm ran as expected is to visually inspect all the slices in the ''Iteration Stack''. 
+* If you are batch processing multiple images you should work with .tif files: When saving as TIFF, ImageJ will store the active ROI in the image header, making it immediately available when the image is open.
 
 == Results ==
 Horton-Strahler counts are listed on a dedicated table containing the following data:
