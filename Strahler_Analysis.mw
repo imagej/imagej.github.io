@@ -80,8 +80,7 @@ If you are not using Fiji, the script should remind you to install [[AnalyzeSkel
 
 == Notes ==
 * Only binary and 8-bit grayscale images can be processed.
-* Branch points positions are placed in the last slice of the ''Iteration stack'' if the latter is chosen as an output image
-* Branch points are subtracted from the skeleton during the iteration. This may lead to permanent elimination of extremely small segments (1-4 pixels in length)
+* End-points and Junction-points positions are appended to the ''Iteration stack'' if the latter is chosen as an output image
 * WYSIWYG versions (RGB images) of the ''Strahler Color Map'' image  can be obtained by pressing {{key press|Shift|F}} (shortcut for <span style="border-bottom:1px dotted #ccc;">Image▷ Overlay▷ Flatten</span>).
 * The extension and format of ''Strahler Table'' can be specified in <span style="border-bottom:1px dotted #ccc;"> Edit▷ Options▷ Input/Output...</span>
 
