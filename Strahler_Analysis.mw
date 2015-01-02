@@ -20,26 +20,27 @@ There are different approaches to classify a tree-like structure by its [[#Refer
 ''Strahler Analysis'' takes a binary or a grayscale image (2D or 3D) containing a single arbor, and calls [[AnalyzeSkeleton]] iteratively to retrieve Horton-Strahler counts from the [[Skeletonize3D|skeletonized centerlines]] of the image.
 
 == Parameters ==
-;I. Strahler Numbering:
+=== Strahler Numbering ===
 ;Max. number of iterations
 :The maximum number of elimination steps to be used, i.e., the highest Strahler order (''root node'') to be considered. Note that the analysis will stop as soon as there are no more junction points in the skeleton, which may happen before the specified cycle.
+;Infer root end-points from rectangular ROI
+:This option is only available when a rectangular ROI is present. It is described in [[#Non-radial arbors|Non-radial arbors]].
+;Ignore single-point arbors (Isolated pixels)
+:Elimination of end-point branches may give rise to single point arbors. Such 'debris' have 1 end-point but no slab branches or junctions. When this option is selected, single-point arbors will be discarded on each iteration. If deselected, the total number of end-points may be overestimated.
 
-;Output Image(s)
-:The type of illustrations to be displayed: ''None'', ''Iteration Stack'', ''Color Map'' or ''Both'':
-
-::'''Iteration stack:''' An image stack that documents individual pruning cycles.
-::'''Color Map:''' A 16–bit illustration of the analyzed skeleton in which branches are color-coded by their Horton-Strahler numbers. By default, a calibration ramp (<span style="border-bottom:1px dotted #ccc;">Analyze▷ Tools▷ Calibration Bar...</span>) is added to the image overlay.
-;:
-;II. Non-radial Arbors:
-;Protect branches inside ROI from iterative pruning
-:This option is only available when an area ROI is present. It is described in [[#Non-radial arbors|Non-radial arbors]].
-;:
-;III. Elimination of Skeleton Loops:
+=== Elimination of Skeleton Loops ===
 ;Method
-:''Strahler Analysis'' cannot process skeletons containing closed loops. The available methods in this drop-down menu define how closed loops should be resolved by [[AnalyzeSkeleton]] and are described in [[AnalyzeSkeleton#Loop_detection_and_pruning|Loop detection]]. Note that ''Strahler Analysis'' outputs a warning message to the Log window when closed loops have been detected. 
+:''Strahler Analysis'' cannot process skeletons containing closed loops and will outputs a warning message when such structures have been detected. The available methods in this drop-down menu define how closed loops should be resolved by [[AnalyzeSkeleton]] and are described in [[AnalyzeSkeleton#Loop_detection_and_pruning|Loop detection]].
+;Unsegmented image
+:The initial non-thinned image to be used by [[AnalyzeSkeleton]] for [[AnalyzeSkeleton#Loop_detection_and_pruning|intensity-based]] elimination of closed loops. This option is only used if either ''Lowest intensity voxel'' or ''Lowest intensity branch'' is chosen as ''Method''. Note that if an intensity-based method is selected but the chosen image is a binary one, closed loops will not be resolved.
 
-;Original grayscale image
-:The initial non-thinned image to be used by [[AnalyzeSkeleton]] for [[AnalyzeSkeleton#Loop_detection_and_pruning|intensity-based]] elimination of closed loops. This option is only available when at least two images are open and it is only used if either ''Lowest intensity voxel'' or ''Lowest intensity branch'' is chosen.
+=== Output Options ===
+;Iteration stack (Document individual iterations)
+:If checked, an image stack that documents individual pruning cycles will be displayed.
+;Heat-map image (Summarize analysis)
+:If checked, a 32–bit illustration of the analyzed skeleton, in which branches are color-coded by their Horton-Strahler numbers, will be displayed. By default, a calibration ramp (<span style="border-bottom:1px dotted #ccc;">Analyze▷ Tools▷ Calibration Bar...</span>) is added as an overlay.
+;Show detailed information (Verbose mode)
+:If checked, analysis will run in "verbose" mode by outputting detailed measurements and logging debug messages.
 
 == Non-radial arbors ==
 In the case of radial arbors (i.e., tree-like structures that branch out evenly in multiple directions), detection and elimination of terminal branches is usually sufficient to provide satisfactory simplification of the ramified structure. In neurobiology, radial-ramification is an anatomical hallmark of certain cell types such as Retinal Ganglion Cells, Chandelier neurons or Drosophila Class IV sensory neurons. However, the proper classification of non-radial arbors (i.e., arbors in which the root is a terminal branch) requires ''Strahler Analysis'' to be aware of root branches.
