@@ -1,13 +1,17 @@
-{{Warning | This page documents a plugin that is '''not yet released!'''}}{{Infobox
+{{Infobox
 | software               = ImageJ
 | name                   = MaMuT
+| logo                   = [[Image:MaMuT logo-256x256.png|160px]]
 | maintainer             = [[User:JeanYvesTinevez|Jean-Yves Tinevez]]
-| author                 = [[User:JeanYvesTinevez|Jean-Yves Tinevez]]
+| author                 = [[User:JeanYvesTinevez|Jean-Yves Tinevez]], [[User:Pietzsch|Tobias Pietzsch]]
 | source                 = {{GitHub | org=fiji | repo=MaMuT}}
-| status                 = not yet released
-| category               = [[:Category:Plugins]]
-}}A Fiji plugin for Massive Annotation.
+| status                 = v0.0.14, active
+| released               = 06/01/2015
+| category               = [[:Category:Segmentation|Segmentation]], [[:Category:Tracking|Tracking]], [[:Category:Plugins]]
+}}
 
-Enable the [http://sites.imagej.net/MaMuT/ MaMuT update site] for development versions.
+A Fiji plugin for the annotation of massive, multi-view data. 
+
+Enable the [http://sites.imagej.net/MaMuT/ MaMuT update site] to get it.
 
 [[Category:Plugins]]
