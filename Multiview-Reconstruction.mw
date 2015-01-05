@@ -143,7 +143,7 @@ This one hour tutorial by [http://www.preibisch.net Stephan Preibisch] covers th
 
 == Comments, Bugs & Feature Requests ==
 
-There is a webpage on [https://sourceforge.net/projects/multiviewreconstruction/ SourceForge] dedicated to this projects. It contains links to this documentation, the source code and other related things. All comments, bugs & feature requests should be posted in the [https://sourceforge.net/p/multiviewreconstruction/discussion/?source=navbar discussion board] there.
+There is a webpage on [https://github.com/bigdataviewer/SPIM_Registration GitHub] and [https://sourceforge.net/projects/multiviewreconstruction/ SourceForge] dedicated to this project. It contains links to this documentation, the source code and other related things. All comments, bugs & feature requests should be posted in the [https://github.com/bigdataviewer/SPIM_Registration/issues GitHub issues] or the [https://sourceforge.net/p/multiviewreconstruction/discussion/?source=navbar SourceForge discussion board].
 
 == Downloading example dataset ==
 
