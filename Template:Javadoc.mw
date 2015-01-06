@@ -1,4 +1,4 @@
-<includeonly>[http://javadoc.imagej.net/{{{project|ImageJ}}}{{#if:{{{package|}}}|/{{{package|}}}|}}{{#if:{{{class|}}}|/{{{class}}}.html|}}{{#if:{{{anchor|}}}|&#35;{{{anchor|}}}|}} {{{class|{{{project|}}}}}}{{#if:{{{anchor|}}}|&#35;{{{anchor|}}}|}}]</includeonly><noinclude>
+<includeonly>[http://javadoc.imagej.net/{{{project|ImageJ}}}{{#if:{{{package|}}}|/{{{package|}}}|}}{{#if:{{{class|}}}|/{{{class}}}.html|/}}{{#if:{{{anchor|}}}|&#35;{{{anchor|}}}|}} {{{class|{{{project|}}}}}}{{#if:{{{anchor|}}}|&#35;{{{anchor|}}}|}}]</includeonly><noinclude>
 ==Usage==
 <pre>
 See also the {{Javadoc | project = SciJava}} javadocs.
