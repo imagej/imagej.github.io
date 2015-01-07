@@ -120,14 +120,26 @@ Most popular open source libraries upon which you might want to depend are store
 
 For example, let's suppose you want to depend on the [http://snakeyaml.org snakeyaml] library. Typing "snakeyaml" into the search box at [http://maven.imagej.net maven.imagej.net] tells us to use a <code>groupId</code> of <code>org.yaml</code>, <code>artifactId</code> of <code>snakeyaml</code>, with available versions ranging from <code>1.4</code> to <code>1.10</code>. In the case of many results, you can click the "Drill down" link to view more details of that specific GAV combination. You can also click an entry to get a formatted <code>dependency</code> block for direct copy-pasting into your POM.
 
-If you need to depend on a library that is not present in either Maven Central or the ImageJ Maven repository, you will need to [http://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html install it into your local Maven repository cache yourself]. The command is <code>mvn install:install-file</code>. For example, if you have a library <code>foo.jar</code> to install, you could run:
+= Depending on libraries outside the core repositories =
+
+If you need to depend on a library that is not present in either Maven Central or the ImageJ Maven repository, first double check the project's web site for any documentation on using their library with Maven. They might provide their own public Maven repository which you could use instead (by [http://maven.apache.org/guides/mini/guide-multiple-repositories.html adding a <code>&lt;repository&gt;</code> to the <code>&lt;repositories&gt;</code> section of your POM]).
+
+If there are no public repositories containing your dependency, you have two options:
+
+* If the dependency is itself a Fiji plugin, consider [[Fiji_contribution_requirements|contributing it]]. A contributed plugin will implicitly be [[Fiji_contribution_requirements#Maven_artifacts|uploaded to Maven]], and thus will benefit both users and developers.
+
+* If the dependency is narrower in scope, you could [[Mailing Lists|contact the ImageJ & Fiji maintainers]] to get your needed dependency added to the ImageJ Maven repository. Note that you will then be responsible for distributing the dependency with your code - so ensure it is [[Licensing|licensed appropriately]].
+
+Finally, for local testing you can [http://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html install the dependency into your local Maven repository cache yourself]. The command is <code>mvn install:install-file</code>. For example, if you have a library <code>foo.jar</code> to install, you could run:
 
   mvn install:install-file -Dfile=/path/to/foo.jar -DgroupId=org.foo \
     -DartifactId=foo -Dversion=1.0.0 -Dpackaging=jar
 
 For the <code>groupId</code>, it is typically best to use the reversed domain name of the library's web site. For libraries that are not explicitly versioned, you may want to use a datestamp such as "20120920" for the <code>version</code>, rather than inventing your own versioning scheme.
 
-'''WARNING:''' If you use <code>install:install-file</code>, others will not be able to build your code unless they also use <code>install:install-file</code> to install the library on their systems. Before resorting to this technique, double check the project's web site for any documentation on using their library with Maven. They might provide their own public Maven repository which you could use instead (by adding a <code>&lt;repository&gt;</code> to the <code>&lt;repositories&gt;</code> section of your POM). Alternately, you could [[Mailing Lists|contact the ImageJ & Fiji maintainers]] to get your needed dependency added to the ImageJ Maven repository, so that everyone can build your code more easily.
+'''WARNING:''' If you use <code>install:install-file</code>, others will not be able to build your code unless they also use <code>install:install-file</code> to install the library on their systems. 
+
+When in doubt, e-mail the [[Mailing Lists|ImageJ & Fiji lists]] with your questions.
 
 = Further reading =
 
