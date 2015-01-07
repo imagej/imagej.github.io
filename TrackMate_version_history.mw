@@ -205,6 +205,6 @@ TrackMate version bumped by several increments, prompted by the [[2014-12-10 - I
 * TrackScheme: A tooltip displays the track name and the frame when lingering over the row or column headers. This is made to improve orientation when unzoomed.
 * TrackScheme: Change the order of components in the side toolbar.
 
-== 22-12-2014 - v2.6.4 ==
+== 07-01-2015 - v2.6.4 ==
 
 * Fix a bug in TrackScheme when deselecting spots.
