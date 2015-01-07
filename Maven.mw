@@ -60,7 +60,7 @@ The only relevant parts are the ''groupId'', which by convention is something li
 
 == Maven repositories ==
 
-Maven is not only a build tool but first and foremost a dependency management tool. It has so-called Maven repositories where it stores compiled artifacts. [[ImageJ]] has a [[Architecture#Maven_repositories|Maven repository] used by projects in the [[SciJava]] software stack.
+Maven is not only a build tool but first and foremost a dependency management tool. It has so-called Maven repositories where it stores compiled artifacts. [[ImageJ]] has a [[Architecture#Maven_repositories|Maven repository]] used by projects in the [[SciJava]] software stack.
 
 For Maven to know what you are looking for, you typically have to add the dependencies into the ''pom.xml'' file. For example, every ImageJ 1.x plugin will depend on ImageJ 1.x. So let's add that (before the final ''</project>'' line):
 
