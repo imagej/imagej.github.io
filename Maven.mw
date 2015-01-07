@@ -48,7 +48,7 @@ So what does a ''pom.xml'' look like? This is a very simple example:
     http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>sc.fiji</groupId>
+  <groupId>org.mywebsite</groupId>
   <artifactId>my-uber-library</artifactId>
   <version>2.0.0-SNAPSHOT</version>
 </project>
@@ -60,7 +60,7 @@ The only relevant parts are the ''groupId'', which by convention is something li
 
 == Maven repositories ==
 
-Maven is not only a build tool but first and foremost a dependency management tool. It has so-called Maven repositories where it stores compiled artifacts. [[ImageJ2]] has a [http://maven.imagej.net/ Maven repository]. (For those familiar with Fiji's previous build system: it is like [[Fake|Fiji Build]]'s precompiled/ directory, but done right.)
+Maven is not only a build tool but first and foremost a dependency management tool. It has so-called Maven repositories where it stores compiled artifacts. [[ImageJ2]] has a [http://maven.imagej.net/ Maven repository].
 
 For Maven to know what you are looking for, you typically have to add the dependencies into the ''pom.xml'' file. For example, every ImageJ 1.x plugin will depend on ImageJ 1.x. So let's add that (before the final ''</project>'' line):
 
@@ -108,15 +108,15 @@ Note, however, that most of the [[SciJava]] software stack ([[SciJava Common]], 
 
 There are many more things you can do with Maven, but chances are you will not need them.
 
-The simplicity of the ''pom.xml'' you need comes from the fact that Maven defines implicit defaults. It calls that ''convention over configuration''.  But since we are not converting projects (or at least since we are flexible enough to adapt), it is strongly recommended to stay with the defaults as much as possible. It also makes your project more accessible, something that Fiji and the other projects in scijava excel at.
+The simplicity of the ''pom.xml'' you need comes from the fact that Maven defines implicit defaults. It calls that ''convention over configuration''.  For many reasons, it is strongly recommended to stay with the defaults as much as possible.
 
-Now, in the context of scijava, you will most likely never write a ''pom.xml'' from scratch. You will rather more likely edit an existing one, possibly after having copied it. We recommend using the [https://github.com/imagej/imagej-tutorials/tree/master/load-and-display-dataset ImageJ "Load and Display a Dataset" tutorial] as a starting point!
+In the context of [[SciJava]], you will most likely never write a ''pom.xml'' from scratch. You will rather more likely edit an existing one, possibly after having copied it. We recommend using the [https://github.com/imagej/imagej-tutorials/tree/master/load-and-display-dataset ImageJ "Load and Display a Dataset" tutorial] as a starting point.
 
 = How to find a dependency's groupId/artifactId/version (GAV)? =
 
-Most popular open source libraries upon which you might want to depend are stored in the [http://search.maven.org/ Maven Central repository]. However, the ImageJ and Fiji JARs are not yet stored there, but in our own Maven repository. Fortunately, you can search both at once, by visiting:
+Most popular open source libraries upon which you might want to depend are stored in the [http://search.maven.org/ Maven Central repository]. However, the ImageJ and Fiji JARs are not yet stored there, but in the [[Architecture#Maven_repositories|ImageJ Maven repository]]. Fortunately, you can search both at once, by visiting:
 
-  http://maven.imagej.net:8081/
+  http://maven.imagej.net/
 
 For example, let's suppose you want to depend on the [http://snakeyaml.org snakeyaml] library. Typing "snakeyaml" into the search box at [http://maven.imagej.net maven.imagej.net] tells us to use a <code>groupId</code> of <code>org.yaml</code>, <code>artifactId</code> of <code>snakeyaml</code>, with available versions ranging from <code>1.4</code> to <code>1.10</code>. In the case of many results, you can click the "Drill down" link to view more details of that specific GAV combination. You can also click an entry to get a formatted <code>dependency</code> block for direct copy-pasting into your POM.
 
@@ -126,9 +126,9 @@ If you need to depend on a library that is not present in either Maven Central o
 
 If there are no public repositories containing your dependency, you have two options:
 
-* If the dependency is itself a Fiji plugin, consider [[Fiji_contribution_requirements|contributing it]]. A contributed plugin will implicitly be [[Fiji_contribution_requirements#Maven_artifacts|uploaded to Maven]], and thus will benefit both users and developers.
+* If the dependency is itself an ImageJ plugin, consider [[Fiji_contribution_requirements|contributing it to Fiji]]. Plugins distributed with Fiji are [[Fiji_contribution_requirements#Maven_artifacts|made available as Maven artifacts]], and thus will benefit both users and developers.
 
-* If the dependency is narrower in scope, you could [[Mailing Lists|contact the ImageJ & Fiji maintainers]] to get your needed dependency added to the ImageJ Maven repository. Note that you will then be responsible for distributing the dependency with your code - so ensure it is [[Licensing|licensed appropriately]].
+* If the dependency is narrower in scope, you could [[Mailing Lists|contact the ImageJ & Fiji maintainers]] to get your needed dependency added to the ImageJ Maven repository. Note that you will then be responsible for distributing the dependency with your code—so ensure it is [[Licensing|licensed appropriately]].
 
 Finally, for local testing you can [http://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html install the dependency into your local Maven repository cache yourself]. The command is <code>mvn install:install-file</code>. For example, if you have a library <code>foo.jar</code> to install, you could run:
 
