@@ -257,6 +257,15 @@ The SciJava software stack uses the [http://semver.org/ Semantic Versioning] sys
 
 SemVer is very useful for indicating how software has changed from one version to another in a programmatic way, but it can be unintuitive for humans, especially for non-developers. It is important to understand that a "major" version increase does not necessarily indicate a shiny new version of the software with lots of new features—but rather more likely to have removed deprecated classes and methods, and/or moved functionality from one place to another in a backwards-incompatible manner. Conversely, a "minor" version increase might indicate the addition of a single new method somewhere, or many significant new features—and SemVer does not specify a mechanism for quantifying which scenario it is in each case.
 
+=== Development status of SciJava components ===
+
+Each SciJava component falls into one of these categories:
+
+# '''0.y.z''' - A version number starting with 0 indicates that the component is still in initial incubation. The API is still under development, and subject to change. We do try to maintain backwards compatibility, deprecating old classes for at least one release before removing them, but it is not always possible. So code depending on these components may break in the future.
+# '''x.y.z-beta-a''' - Similar to ''0.y.z'' in that the API is still under development. In some circles, the term "beta" can mean "feature complete" but we do not use the term that way. These "beta" releases can be considered less unstable than a ''0.y.z'', but still subject to future changes and additions as needed.
+# '''x.y.z-rc-a''' - A "release candidate" similar to beta, although considered very close to a mature release.
+# '''x.y.z''' - Where ''x'' is at least 1. This indicates a mature release, committed to maintaining backwards compatibility for as long as possible. Even if the component later bumps the major version, we still try to make the minimal breaking changes necessary to introduce any new needed functionality.
+
 === API vs. SPI backwards compatibility ===
 
 SciJava uses SemVer for '''API''' [[compatibility]], but not necessarily '''SPI''' [[compatibility]]:
