@@ -622,7 +622,7 @@ public class Example2c
 }
 </source>
 
-== Example 3 -  Writing generic algorihms ==
+== Example 3 -  Writing generic algorithms ==
 
 Examples 1 and 2 tried to introduce important tools you need in order to implement algorithms with ImgLib2. This example will show three generic implementations of algorithms computing the 
 [[ImgLib2 Examples#Example 3a - Min/Max search | min/max]], average as well as the center of mass.
@@ -2202,7 +2202,7 @@ public class Example8a
 }
 </source>
 
-=== Example 8b - Randomly sample an exisiting image and display it ===
+=== Example 8b - Randomly sample an existing image and display it ===
 
 In this example we sample an existing image at random locations and render the result using a nearest neighbor interpolation as well as a distance-weighted average of the k nearest neighbors. 
 
