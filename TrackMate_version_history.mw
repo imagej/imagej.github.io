@@ -208,3 +208,7 @@ TrackMate version bumped by several increments, prompted by the [[2014-12-10 - I
 == 07-01-2015 - v2.6.4 ==
 
 * Fix a bug in TrackScheme when deselecting spots.
+
+== 07-01-2015 - v2.6.5 ==
+
+* Put some sensible defaults when presented an image with no metadata.
