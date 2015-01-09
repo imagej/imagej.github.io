@@ -15,7 +15,7 @@
 
 ImageJA was [https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;cd841de0.0510 launched in 2005] as a ''fork'' of [[ImageJ1]]; i.e., it was synchronized closely with ImageJ with a few changes on top:
 
-* When run as an applet, ImageJA is embedded (slated to be _optionally_ embedded, once the maintainer finds some time to do it).
+* When run as an applet, ImageJA is embedded.
 * The internal structure of ImageJA's recorder allows command listeners to get much more fine-grained information.
 * When launching a text editor, in many cases ImageJA will now choose Fiji's Script Editor, if available, instead of the old AWT based ImageJ editor.
 * ImageJA has an easy Plugin installer via Plugins>Install PlugIn... (ImageJ only has that drag-n-drop thingie).
