@@ -32,7 +32,7 @@ ImageJDev
 |[[ImageJA]]
 |[[User:Schindelin|Johannes Schindelin]]
 | 
-ImageJA is a project that provides a clean Git History of ImageJ1, with a proper 'pom.xml' file so that it can be used with Maven without hassles.
+ImageJA is a project that provides a clean [[Git]] history of ImageJ1, with a proper 'pom.xml' file so that it can be used with Maven without hassles.
 
 It is what ImageJ2's legacy support uses at its core.
 |Jul. 2005
