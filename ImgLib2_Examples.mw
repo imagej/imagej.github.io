@@ -14,20 +14,20 @@ This page shows ten increasingly complex examples of how to program with ImgLib2
 
 All examples presented on this page are always entire classes including a main method to run them. Simply copying them into your favorite editor (e.g. the [[Script Editor]]) and compile & run them. The required Java libraries (jar files) are part of Fiji and can be found in ''Fiji.app/jars/'':
 
-* imglib2.jar (the core)
-* imglib2-algorithms.jar (algorithms implemented in ImgLib2)
-* imglib2-algorithms-gpl.jar (GPL-licensed algorithms implemented in ImgLib2)
-* imglib2-io.jar (input/output using Bio-Formats)
-* imglib2-ij.jar (the ImageJ interaction)
-* imglib2-realtransforms.jar (for example 8)
-* ij.jar (ImageJ core, used for display)
-* mpicbg.jar (for RealSum in example 3b)
+* imglib2 (the core)
+* imglib2-algorithm (algorithms implemented in ImgLib2)
+* imglib2-algorithm-gpl (GPL-licensed algorithms implemented in ImgLib2)
+* scifio (input/output using Bio-Formats)
+* imglib2-ij (the ImageJ interaction)
+* imglib2-realtransform (for example 8)
+* ij (ImageJ 1.x core, used for display)
+* mpicbg (for RealSum in example 3b)
 
 and ''Fiji.app/plugins/'':
 
-* loci_tools.jar (OME [[Bio-Formats]])
+* bioformats_plugins (OME [[Bio-Formats]])
 
-Alternately, you can access the examples from the {{GitHub|org=imglib|repo=imglib-tutorials|label=ImgLib Git repository}}. After cloning the ImgLib source code, open the ''imglib2/examples'' project in your favorite IDE. See [[Developing_Imglib]] for further details.
+Alternately, you can access the examples from the {{GitHub|org=imglib|repo=imglib-tutorials|label=ImgLib Git repository}}. After cloning the source code, open the project in your favorite IDE. See [[Developing_Imglib]] for further details.
 
 == Example 1 - Opening, creating and displaying images ==
 
@@ -234,11 +234,11 @@ A '''View''' almost behaves similar to an '''Img''', and in fact they share impo
 '''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example1d.java|label=Example1d.java}}'''
 <source lang="java">
 import ij.ImageJ;
+import io.scif.img.ImgIOException;
+import io.scif.img.ImgOpener;
 import net.imglib2.RandomAccessibleInterval;
 import net.imglib2.img.Img;
 import net.imglib2.img.display.imagej.ImageJFunctions;
-import io.scif.img.ImgIOException;
-import io.scif.img.ImgOpener;
 import net.imglib2.type.numeric.real.FloatType;
 import net.imglib2.view.Views;
 
@@ -399,6 +399,8 @@ public class Example2a
 '''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example2b.java|label=Example2b.java}}'''
 <source lang="java">
 import ij.ImageJ;
+import io.scif.img.ImgIOException;
+import io.scif.img.ImgOpener;
 import net.imglib2.Cursor;
 import net.imglib2.RandomAccess;
 import net.imglib2.img.Img;
@@ -406,8 +408,6 @@ import net.imglib2.img.ImgFactory;
 import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.cell.CellImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
-import io.scif.img.ImgIOException;
-import io.scif.img.ImgOpener;
 import net.imglib2.type.Type;
 import net.imglib2.type.numeric.real.FloatType;
 
@@ -645,13 +645,14 @@ Below we show '''three''' small variations of the min/max search. [[ImgLib2 Exam
 '''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example3a1.java|label=Example3a1.java}}'''
 <source lang="java">
 
+import io.scif.img.ImgIOException;
+import io.scif.img.ImgOpener;
+
 import java.util.Iterator;
 
 import net.imglib2.Cursor;
 import net.imglib2.RandomAccess;
 import net.imglib2.img.Img;
-import io.scif.img.ImgIOException;
-import io.scif.img.ImgOpener;
 import net.imglib2.type.NativeType;
 import net.imglib2.type.Type;
 import net.imglib2.type.numeric.RealType;
@@ -820,12 +821,12 @@ If we want to compute the location of the minimal and maximal pixel value, an ''
 
 '''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example3a3.java|label=Example3a3.java}}'''
 <source lang="java">
+import io.scif.img.ImgIOException;
+import io.scif.img.ImgOpener;
 import net.imglib2.Cursor;
 import net.imglib2.IterableInterval;
 import net.imglib2.Point;
 import net.imglib2.img.Img;
-import io.scif.img.ImgIOException;
-import io.scif.img.ImgOpener;
 import net.imglib2.type.NativeType;
 import net.imglib2.type.Type;
 import net.imglib2.type.numeric.RealType;
@@ -1287,13 +1288,13 @@ Which '''OutOfBoundsStrategies''' to use depends on task you want to perform. Fo
 import ij.ImageJ;
 import io.scif.img.ImgIOException;
 import io.scif.img.ImgOpener;
-import net.imglib2.ExtendedRandomAccessibleInterval;
 import net.imglib2.FinalInterval;
 import net.imglib2.RandomAccessible;
 import net.imglib2.img.Img;
 import net.imglib2.img.display.imagej.ImageJFunctions;
 import net.imglib2.outofbounds.OutOfBoundsConstantValueFactory;
 import net.imglib2.type.numeric.real.FloatType;
+import net.imglib2.view.ExtendedRandomAccessibleInterval;
 import net.imglib2.view.Views;
 
 /**
@@ -1930,6 +1931,8 @@ In the example we magnify a given real interval in the '''RealRandomAccessible''
 '''{{GitHub|org=imglib|repo=imglib-tutorials|source=Example7.java|label=Example7.java}}'''
 <source lang="java">
 import ij.ImageJ;
+import io.scif.img.ImgIOException;
+import io.scif.img.ImgOpener;
 import net.imglib2.Cursor;
 import net.imglib2.FinalRealInterval;
 import net.imglib2.RealInterval;
@@ -1942,8 +1945,6 @@ import net.imglib2.img.display.imagej.ImageJFunctions;
 import net.imglib2.interpolation.randomaccess.LanczosInterpolatorFactory;
 import net.imglib2.interpolation.randomaccess.NLinearInterpolatorFactory;
 import net.imglib2.interpolation.randomaccess.NearestNeighborInterpolatorFactory;
-import io.scif.img.ImgIOException;
-import io.scif.img.ImgOpener;
 import net.imglib2.type.Type;
 import net.imglib2.type.numeric.real.FloatType;
 import net.imglib2.util.Util;
@@ -2025,7 +2026,7 @@ public class Example7
 		}
 
 		// create the output image
-		Img< T > output = factory.create( pixelSize, Util.getTypeFromRealRandomAccess( source ) );
+		Img< T > output = factory.create( pixelSize, source.realRandomAccess().get() );
 
 		// cursor to iterate over all pixels
 		Cursor< T > cursor = output.localizingCursor();
@@ -2090,19 +2091,19 @@ import java.util.Random;
 
 import net.imglib2.FinalInterval;
 import net.imglib2.IterableRealInterval;
+import net.imglib2.KDTree;
 import net.imglib2.Point;
 import net.imglib2.RandomAccessible;
 import net.imglib2.RandomAccessibleInterval;
 import net.imglib2.RealInterval;
 import net.imglib2.RealPoint;
+import net.imglib2.RealPointSampleList;
 import net.imglib2.RealRandomAccessible;
 import net.imglib2.algorithm.gauss.Gauss;
-import net.imglib2.collection.KDTree;
-import net.imglib2.collection.RealPointSampleList;
 import net.imglib2.img.Img;
 import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
-import net.imglib2.interpolation.neighborsearch.NearestNeighborInterpolatorFactory;
+import net.imglib2.interpolation.neighborsearch.NearestNeighborSearchInterpolatorFactory;
 import net.imglib2.neighborsearch.NearestNeighborSearch;
 import net.imglib2.neighborsearch.NearestNeighborSearchOnKDTree;
 import net.imglib2.type.numeric.real.FloatType;
@@ -2131,7 +2132,7 @@ public class Example8a
 
 		// make it into RealRandomAccessible using nearest neighbor search
 		RealRandomAccessible< FloatType > realRandomAccessible =
-			Views.interpolate( search, new NearestNeighborInterpolatorFactory< FloatType >() );
+			Views.interpolate( search, new NearestNeighborSearchInterpolatorFactory< FloatType >() );
 
 		// convert it into a RandomAccessible which can be displayed
 		RandomAccessible< FloatType > randomAccessible = Views.raster( realRandomAccessible );
@@ -2218,18 +2219,18 @@ import java.util.Random;
 
 import net.imglib2.Interval;
 import net.imglib2.IterableRealInterval;
+import net.imglib2.KDTree;
 import net.imglib2.RandomAccessible;
 import net.imglib2.RandomAccessibleInterval;
 import net.imglib2.RealInterval;
 import net.imglib2.RealPoint;
+import net.imglib2.RealPointSampleList;
 import net.imglib2.RealRandomAccess;
 import net.imglib2.RealRandomAccessible;
-import net.imglib2.collection.KDTree;
-import net.imglib2.collection.RealPointSampleList;
 import net.imglib2.img.Img;
 import net.imglib2.img.display.imagej.ImageJFunctions;
 import net.imglib2.interpolation.neighborsearch.InverseDistanceWeightingInterpolatorFactory;
-import net.imglib2.interpolation.neighborsearch.NearestNeighborInterpolatorFactory;
+import net.imglib2.interpolation.neighborsearch.NearestNeighborSearchInterpolatorFactory;
 import net.imglib2.interpolation.randomaccess.NLinearInterpolatorFactory;
 import net.imglib2.neighborsearch.KNearestNeighborSearch;
 import net.imglib2.neighborsearch.KNearestNeighborSearchOnKDTree;
@@ -2296,7 +2297,7 @@ public class Example8b
 
 		// make it into RealRandomAccessible using nearest neighbor search
 		RealRandomAccessible< T > realRandomAccessible = Views.interpolate( search,
-			new NearestNeighborInterpolatorFactory< T >() );
+			new NearestNeighborSearchInterpolatorFactory< T >() );
 
 		// convert it into a RandomAccessible which can be displayed
 		RandomAccessible< T > randomAccessible = Views.raster( realRandomAccessible );
@@ -2388,7 +2389,6 @@ public class Example8b
 	}
 }
 </source>
-
 
 [[Category:ImgLib]]
 [[Category:Tutorials]]
