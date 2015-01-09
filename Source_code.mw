@@ -97,6 +97,8 @@ Each organization has its own [[Git]] repository and [[Jenkins]] job responsible
 | {{Jenkins | job = Fiji-javadoc}}
 |}
 
+All SciJava projects use a [https://github.com/scijava/pom-scijava/blob/815541dbb5bdab402f223deeeea4504c94797c9c/pom.xml#L1393-1419 build-javadoc] profile to standardize configuration for the [http://maven.apache.org/plugins/maven-javadoc-plugin/ Maven Javadoc plugin]. This allows the Jenkins jobs to aggregate javadoc for their project with its direct Maven dependencies.
+
 == Running ImageJ1 unit tests ==
 
 We have written a substantial number of unit tests to exercise ImageJ 1.x functionality. See the [[Unit tests for ImageJ1]] page for more information.
