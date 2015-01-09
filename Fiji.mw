@@ -8,7 +8,7 @@ __NOTOC__
 The main focus of Fiji is to assist research in life sciences.
 
 * '''[[Fiji Usage|For users]]''' - Fiji is [[Downloads|easy to install]] and has an automatic update function, bundles a [[:Category:Plugins|lot of plugins]] and offers comprehensive [[documentation]].
-* '''[[Developing_Fiji|Developing Fiji]]''' - Fiji is an open source project hosted in a [[Git for dummies|Git version control]] {{GitHub|repo=fiji|label=repository}}, with access to the source code of all internals, libraries and plugins, and eases the [[Development|development]] and [[Scripting Help|scripting]] of plugins.
+* '''[[Developing_Fiji|Developing Fiji]]''' - Fiji is an open source project hosted in a [[Git]] version control {{GitHub|repo=fiji|label=repository}}, with access to the source code of all internals, libraries and plugins, and eases the [[Development|development]] and [[Scripting Help|scripting]] of plugins.
 
 <b>[[Downloads|Download Fiji now]]</b>&nbsp;&nbsp;[[Image:Yada.png|middle|link=Downloads]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[[List_of_update_sites|List of Update sites]]</b>
 
