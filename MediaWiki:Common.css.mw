@@ -880,4 +880,9 @@ td.yesno {
     margin-top: 25px;
 }
 
+/* NB: Make all links bright enough to see clearly. */
+#mw_main a {
+    color: #26d !important;
+}
+
 /* </nowiki></pre> */
