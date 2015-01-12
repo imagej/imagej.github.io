@@ -13,6 +13,10 @@ You can cite various ImageJ-related projects as follows:
 | Schindelin, J., Arganda-Carreras, I., Frise, E., Kaynig, V., Longair, M., Pietzsch, T., ... & Cardona, A. (2012). [http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html Fiji: an open-source platform for biological-image analysis]. Nature methods, 9(7), 676-682.
 | {{Scholar | cluster=17249863664147333646}}
 |-
+| [[ImgLib2]]
+| Pietzsch, T., Preibisch, S., Tomančák, P., & Saalfeld, S. (2012). [http://bioinformatics.oxfordjournals.org/content/28/22/3009.full ImgLib2—generic image processing in Java]. Bioinformatics, 28(22), 3009-3011.
+| {{Scholar | cluster=17114668151840635304}}
+|-
 | colspan=3 style="background: #777" |
 |-
 | [[ImageJ2]]
