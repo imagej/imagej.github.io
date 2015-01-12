@@ -42,4 +42,9 @@ See the [[How To Migrate Code From ImgLib To ImgLib2]] page for details on how t
 * [http://developer.imagej.net/imglib-benchmarks ImgLib2 performance benchmarks]
 * [[ImageJ2]] uses ImgLib2 as its core data model
 
+== Publication ==
+
+Pietzsch, T., Preibisch, S., Tomančák, P., & Saalfeld, S. (2012). [http://bioinformatics.oxfordjournals.org/content/28/22/3009.full ImgLib2—generic image processing in Java]. Bioinformatics, 28(22), 3009-3011.
+
 [[Category:ImgLib]]
+[[Category:Citable]]
