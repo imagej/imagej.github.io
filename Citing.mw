@@ -6,15 +6,56 @@ You can cite various ImageJ-related projects as follows:
 | '''Google Scholar'''
 |-
 | [[ImageJ]]
-| Schneider, C. A., Rasband, W. S. & Eliceiri, K. W. (2012). [http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2089.html NIH Image to ImageJ: 25 years of image analysis]. Nature methods, 9(7), 671-675.
+| {{Citation | last = Schneider | first = C. A.
+| last2 = Rasband | first2 = W. S.
+| last3 = Eliceiri | first3 = K. W.
+| year = 2012
+| journal = Nature methods
+| url = http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2089.html
+| title = NIH Image to ImageJ: 25 years of image analysis
+| volume = 9(7)
+| pages = 671-675
+| pmid = 22930834}}.
 | {{Scholar | cluster=1774858333144211891}}
 |-
 | [[Fiji]]
-| Schindelin, J., Arganda-Carreras, I., Frise, E., Kaynig, V., Longair, M., Pietzsch, T., ... & Cardona, A. (2012). [http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html Fiji: an open-source platform for biological-image analysis]. Nature methods, 9(7), 676-682.
+| {{Citation | last = Schindelin | first = J.
+| last2 = Arganda-Carreras | first2 = I.
+| last3 = Frise | first3 = E.
+| last4 = Kaynig | first4 = V.
+| last5 = Longair | first5 = M.
+| last6 = Pietzsch | first6 = T.
+| last7 = Preibisch | first7 = S.
+| last8 = Rueden | first8 = C.
+| last9 = Saalfeld | first9 = S.
+| last10 = Schmid | first10 = B.
+| last11 = Tinevez | first11 = J.-Y.
+| last12 = White | first12 = D. J.
+| last13 = Hartenstein | first13 = V.
+| last14 = Eliceiri | first14 = K.
+| last15 = Tomancak | first15 = P.
+| last16 = Cardona | first16 = A.
+| year = 2012
+| journal = Nature methods
+| url = http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html
+| title = Fiji: an open-source platform for biological-image analysis
+| volume = 9(7)
+| pages = 676-682
+| pmid = 22743772}}.
 | {{Scholar | cluster=17249863664147333646}}
 |-
 | [[ImgLib2]]
-| Pietzsch, T., Preibisch, S., Tomančák, P., & Saalfeld, S. (2012). [http://bioinformatics.oxfordjournals.org/content/28/22/3009.full ImgLib2—generic image processing in Java]. Bioinformatics, 28(22), 3009-3011.
+| {{Citation | last = Pietzsch | first = T.
+| last2 = Preibisch | first2 = S.
+| last3 = Tomancak | first3 = P.
+| last4 = Saalfeld | first4 = S.
+| year = 2012
+| journal = Bioinformatics
+| url = http://bioinformatics.oxfordjournals.org/content/28/22/3009.full
+| title = ImgLib2—generic image processing in Java
+| volume = 28(22)
+| pages = 3009-3011
+| pmid = 22962343}}.
 | {{Scholar | cluster=17114668151840635304}}
 |-
 | colspan=3 style="background: #777" |
