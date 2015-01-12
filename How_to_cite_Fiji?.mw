@@ -1,6 +1,28 @@
 The primary publication for the Fiji project is the following paper from Nature Methods [http://www.nature.com/nmeth/focus/bioimageinformatics/index.html Focus on Bioimage Informatics]:
 
-* Johannes Schindelin, Ignacio Arganda-Carreras, Erwin Frise, Verena Kaynig, Mark Longair, Tobias Pietzsch, Stephan Preibisch, Curtis Rueden, Stephan Saalfeld, Benjamin Schmid, Jean-Yves Tinevez, Daniel James White, Volker Hartenstein, Kevin Eliceiri, Pavel Tomancak and Albert Cardona ('''2012''') [http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html Fiji: an open-source platform for biological-image analysis], ''Nature Methods'' 9(7): 676-682 [[Media:NM2012_perspective_nmeth.2019.pdf‎|PDF]] [[Media:Fiji_perspective_nmeth.2019-S1.pdf|Supplement]]
+{{Citation | last = Schindelin | first = J.
+| last2 = Arganda-Carreras | first2 = I.
+| last3 = Frise | first3 = E.
+| last4 = Kaynig | first4 = V.
+| last5 = Longair | first5 = M.
+| last6 = Pietzsch | first6 = T.
+| last7 = Preibisch | first7 = S.
+| last8 = Rueden | first8 = C.
+| last9 = Saalfeld | first9 = S.
+| last10 = Schmid | first10 = B.
+| last11 = Tinevez | first11 = J.-Y.
+| last12 = White | first12 = D. J.
+| last13 = Hartenstein | first13 = V.
+| last14 = Eliceiri | first14 = K.
+| last15 = Tomancak | first15 = P.
+| last16 = Cardona | first16 = A.
+| year = 2012
+| journal = Nature methods
+| url = http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html
+| title = Fiji: an open-source platform for biological-image analysis
+| volume = 9(7)
+| pages = 676-682
+| pmid = 22743772}}. ([[Media:NM2012_perspective_nmeth.2019.pdf‎|PDF]], [[Media:Fiji_perspective_nmeth.2019-S1.pdf|Supplement]])
 
 Many plugins have been published separately as summarized on our [[Publications|publications]] page. If possible, we would like to ask Fiji users to cite both the general publication above as well as the plugin specific paper. However, if journal reference limits interfere, the plugin specific publication should take precedence.
 
