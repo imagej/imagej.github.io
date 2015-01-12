@@ -13,8 +13,14 @@ You can cite various ImageJ-related projects as follows:
 | Schindelin, J., Arganda-Carreras, I., Frise, E., Kaynig, V., Longair, M., Pietzsch, T., ... & Cardona, A. (2012). [http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html Fiji: an open-source platform for biological-image analysis]. Nature methods, 9(7), 676-682.
 | {{Scholar | cluster=17249863664147333646}}
 |-
+| colspan=3 style="background: #777" |
+|-
+| [[ImageJ2]]
+| Rueden, C., Schindelin, J., Hiner, M., DeZonia, B., Kamentsky, L. & Eliceiri, K. (2015). ImageJ2 [Software]. http://imagej.net/.
+| -
+|-
 | [[SciJava Common]]
-| Rueden, C., Schindelin, J. & Eliceiri, K. (2015). SciJava Common [Software]. http://scijava.org/.
+| Rueden, C., Schindelin, J., Hiner, M. & Eliceiri, K. (2015). SciJava Common [Software]. http://scijava.org/.
 | -
 |-
 | [[SCIFIO]]
@@ -25,9 +31,7 @@ You can cite various ImageJ-related projects as follows:
 | Rueden, C., Dietz, C., Horn, M., Schindelin, J., Northan, B., Berthold, M. & Eliceiri, K. (2015). ImageJ OPS [Software]. http://imagej.net/OPS.
 | -
 |-
-| [[ImageJ2]]
-| Rueden, C., Schindelin, J., Hiner, M., DeZonia, B., Kamentsky, L. & Eliceiri, K. (2015). ImageJ2 [Software]. http://imagej.net/.
-| -
+| colspan=3 style="background: #777" |
 |-
 | Other
 | Browse the [[:Category:Citable|list of citable software]] for citation information.
