@@ -4,9 +4,7 @@
 | maintainer             = [mailto:funke@ini.phys.ethz.ch Jan Funke]
 | author                 = Jan Funke
 | source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=shortlog;h=refs/heads/stochastic-denoise on git web]
-| released               = 11/10/2010
-| latest version         = 11/10/2010
-| status                 = experimental
+| status                 = unreleased
 | category               = [[:Category:Plugins]]
 }}
 == General ==
