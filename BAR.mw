@@ -48,7 +48,7 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
 :{{GitHub|org=tferr|repo=Scripts|path=Segmentation/README.md#wipe-background|label=Wipe Background}}
 
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#snippets|label=Snippets}}<span id="SnippetsList"></span>
-:This submenu lists [[#Snippets|generic and reusable]] scripts to be recycled at will in personalized workflows. Any script or macro file stored in the Snippets folder with an underscore "_" in the filename will be listed here. 
+:This submenu lists [[#Snippets|generic and reusable]] scripts to be recycled at will in personalized workflows. Any script or macro file stored in the Snippets folder with an underscore "_" in the filename will be listed here.
 
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#tools-and-toolsets|label=Tools and Toolsets}}<span id="Tools"></span>
 :{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#calibration-menu|label=Calibration Menu}}
@@ -81,12 +81,12 @@ It may be wise to allow ImageJ enough time to register all scripts before trigge
 * Any toolset loaded via the ">>" ''More Tools'' drop down menu can define its own contextual menu (as detailed in the [http://imagej.net/docs/guide/146-21.html#sec:ContextualMenu ImageJ User Guide], the contextual menu is controlled by a macro called ''Popup Menu'' that gets loaded at startup). To have BARs immediately available when such toolsets are loaded, just append the same <tt>run("Move Menu (Context<>Main)");</tt> call described above for StartupMacros.
 
 === Keyboard Shortcuts ===
-You can use <span style="border-bottom:1px dotted #ccc;">Plugins▷ Shortcuts▷ Create Shortcut...</span> to assign hotkeys (e.g., keyboard key that you do not use frequently such as {{key press|0}}  or {{key press|F7}}) to any script registered in the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu. These shortcuts will be listed in <span style="border-bottom:1px dotted #ccc;">Plugins▷ Shortcuts▷</span> and are remembered across restarts. 
+You can use <span style="border-bottom:1px dotted #ccc;">Plugins▷ Shortcuts▷ Create Shortcut...</span> to assign hotkeys (e.g., keyboard key that you do not use frequently such as {{key press|0}}  or {{key press|F7}}) to any script registered in the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu. These shortcuts will be listed in <span style="border-bottom:1px dotted #ccc;">Plugins▷ Shortcuts▷</span> and are remembered across restarts.
 
 Alternatively, keyboard shortcuts can be defined in macros that call BAR commands by placing the [[Introduction_into_Macro_Programming#Keyboard_shortcuts|shortcut key within square brackets]] at the end of the macro name. Such macros can pass specific options to BAR commands, allowing scripts to run without prompt. Example:
 <source lang="java">
 macro "Remove Round Structures [0]" {
-    run("Wipe Background", "size=100 circ.=0.75-1.00"); // Runs Wipe_Background.ijm with the specified parameters 
+    run("Wipe Background", "size=100 circ.=0.75-1.00"); // Runs Wipe_Background.ijm with the specified parameters
 }
 </source>
 As [[#Context_Menu|mentioned]], such macros can then be pasted into the text area of <span style="border-bottom:1px dotted #ccc;">Edit▷ Options▷ Startup...</span> so that they can be executed when ImageJ starts up.
@@ -94,126 +94,143 @@ As [[#Context_Menu|mentioned]], such macros can then be pasted into the text are
 | tip = Two other expedite ways of retrieving commands include: 1) Pressing {{key press|L}}, the shortcut for the [[Using_the_Command_Launcher|Command Launcher]] and 2) Pressing {{key press|9}}, the default shortcut for the ''Recent Commands'' list.
 }}
 == Scripting BARs ==
-{{Scripting}}Although BARs can be used as standalone commands, the scripts and plugins in BAR become more useful when incorporated into other routines. Some BARs are designed to function as snippets and are installed under <span style="border-bottom:1px dotted #ccc;">BAR▷ Snippets▷</span>, a menu containing two other commands:
-;Reveal Snippets:Opens ''plugins/Scripts/BAR/Snippets/'' in the file browser of the operating system
-;List Snippets:Prints the contents of ''plugins/Scripts/BAR/Snippets/'' to a dedicated window. Files can then be open in the Script Editor by double-click.
+Although BARs can be used as standalone commands, the scripts and plugins in BAR become more useful when incorporated into other routines.
 
 === Snippets ===
-BAR contains [https://github.com/tferr/Scripts/tree/master/Snippets reusable scripts] to be used as scripting templates. You should use these files as a starting point to your own routines to be saved in  ''plugins/Scripts/BAR/Snippets/''. Below is an example, taken from {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder.ijm|label=Process_Folder.ijm}},  a more customizable and modular alternative to the <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span>  built-in command.
-This snippet, an ImageJ macro that applies a [[How_to_apply_a_common_operation_to_a_complete_directory|common operation to a directory]], is composed of four functions:
-#<code>expectedImage()</code>: Determines wich image types should be processed
-#<code>getOutputDirectory()</code>: Sets a destination folder to save processed images
-#<code>myRoutines()</code>: Container to hold the image processing routines
-#<code>processImage()</code>: Applies <code>myRoutines()</code> to each individual image
- 
+{{Scripting}}You can use BARs as a starting point for your own workflows. Whether you are just looking to automate a simple task or you are an advanced developer, you can use BAR to achieve your analysis goals more easily.
 
-Because all the tasks required to iterate through the files are handled by separated functions, only the <code>myRoutines()</code> function needs to be edited
-e.g., with code generated by the Macro Recorder (<span style="border-bottom:1px dotted #ccc;">Plugins▷ Macros▷ Record...</span>). It can also call macros and scripts saved elsewhere. Example:
+BAR contains a directory ''plugins/Scripts/BAR/Snippets/'' containing  [https://github.com/tferr/Scripts/tree/master/Snippets examples] (BeanShell, IJM and Python) that you can customize and recycle in your own scripts. You can, of course, retrieve code and inspiration from the more complete BARs in the remaining ''plugins/Scripts/BAR/" subdirectories.
+
+<span style="border-bottom:1px dotted #ccc;">BAR▷ Snippets▷</span>, contains some utilities to help you manage your scripts:
+;Reveal Snippets:Opens ''plugins/Scripts/BAR/Snippets/'' in the file browser of the operating system.  Note that any file you save in ''plugins/Scripts/BAR/Snippets/'' with an underscore in the filename will be listed in the menu.
+;List Snippets:Prints the contents of ''plugins/Scripts/BAR/Snippets/'' to a dedicated window. Files can then be opened in the [[Script Editor]] by double-click.
+;Search Snippets: Searches the contents of files in ''plugins/Scripts/BAR/'' and any of its subfolders.
+
+=== Batch Processors ===
+Some of the scripts included in ''/BAR/Snippets/'' are scripts that apply a [[How_to_apply_a_common_operation_to_a_complete_directory|common operation to a directory]]. These
+''batch processors'' are implemented in different languages and perform the following operations:
+# Take an input folder specified by the user
+# Apply a series of operations to individual files of matched extension(s)
+# Save processed files as TIFF to a dedicated directory, so that no files are overwritten
+
+Typically each of these tasks is handled by separated functions so only the function processing single files needs to be edited. In the {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_PY.py|label=Python}} and {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_IJM.ijm|label=IJM}} implementation, this processing function is called <code>myRoutines()</code>. Note that we do not need to
+When editing <code>myRoutines()</code> we do not need to worry about opening, closing or saving a  .tif without overriding the original file because those tasks are already performed by other functions.
+
+==== Example: Randomize Filenames ====
+The default task of both the Python and IJM implementation of the ''Process Folder'' scripts is
+filename randomization: 1) They copy images from one folder to another, 2) Rename their filenames using a random string and 3) Log changes to a CSV table (so that id of randomized filename can be traced back to the original file).
+This approach allows for blind analyses of datasets that are sensitive to user interpretation. Below are the descriptions of {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_PY.py|label=Process_Folder_PY.py}} and {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_IJM.ijm|label=Process_Folder_IJM.ijm}}.
+
+==== Python ====
+In Python we can use the [http://docs.python.org/library/uuid.html uuid module] to generate a random filename (rational [http://stackoverflow.com/a/10501355 here]). The result is an impressively succinct function:
+<source lang="python">
+def myRoutines(image):
+    import uuid
+    image.setTitle( str(uuid.uuid4()) )
+</source>
+In more detail: Pass the active image - an
+[http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.htm ImagePlus] object - to <tt>myRoutines()</tt>. Retrieve a random [http://en.wikipedia.org/wiki/Universally_unique_identifier UUID] (e.g., <code>f7dfd6a9-f745-42c2-8874-0af67380c3f5</code>), convert it to a string, then use that string to rename the image using the [http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html#setTitle(java.lang.String) setTitle()] method in <tt>ij.ImagePlus</tt>.
+
+To log filename changes, we could use the same strategy used for the [[#IJ_Macro_Language|IJM implementation]]. The simplest way to generate a CSV list would be use ImageJ's Log window:
+<source lang="python">
+def myRoutines(image):
+    import uuid
+    from ij import IJ
+
+    # Remember original filename before changing it
+    log_row = image.getTitle()
+    # Rename image
+    image.setTitle( str(uuid.uuid4()) )
+    # Append modified filename to CSV row
+    log_row += ", " + image.getTitle()
+    # Print row
+    IJ.log(log_row)
+</source>
+However,  we can use the [http://docs.python.org/library/csv.html csv module] to achieve a more robust  implementation:
+<source lang="python">
+import csv, os
+
+# Create a CSV table documenting processed files
+csvPath = out_dir + "_ProcessedFileList.csv"
+csvExists = os.path.exists(csvPath)
+csvFile = open(csvPath, 'a')
+csvWriter = csv.writer(csvFile)
+
+# Specify column headings
+if not csvExists:
+    headers = ['Original path','Processed path']
+    csvWriter.writerow(headers)
+</source>
+As such, we only need to add the following, every time a file is processed:
+<source lang="python">
+csvWriter.writerow([old_filename, new_filename])
+</source>
+Visit the {{GitHub|org=tferr|repo=Scripts|label=BAR repository}} to check how the assembled script ({{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_PY.py?raw=true|label=Process_Folder_PY.py}}) {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_PY.py|label=looks like}}.
+
+==== IJ Macro Language ====
+In an ImageJ macro we will need to define first a function that produces a random filename. The approach used in {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_IJM.ijm|label=Process_Folder_IJM.ijm}} is the following: 1) Take a template string containing the characters A-Z and digits 0-9; 2) Pick a random position between the first and last character of the string template. Extract the character at that position; 3) Repeat the last step several times, assembling extracted characters into a concatenated string:
 <source lang="java">
-function myRoutines() {
-    snippetsPath = getDirectory("plugins") + "Scripts" + File.separator + "BAR" + File.separator + "Snippets" + File.separator;
-    runMacro(snippetsPath + "MyCoolestMacro.ijm");
-    eval("python", snippetsPath + "MyCoolestScript.py");
+function randomString() {
+	// We define the template and measure the number of positions
+	template = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	nChars = lengthOf(template);
+	// We define an empty string that will hold the result
+	string = "";
+	// We will want a final string to be 10-characters long
+	for (i=0; i<10; i++) {
+		// Define a random position between 0 and the penultime character in template
+		idx = maxOf(0, round(random()*nChars-1));
+		// Extract and concatenate characters
+		string += substring(template, idx, idx+1);
+	}
+	// return result
+	return string;
 }
 </source>
-Here is how the assembled snippet {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder.ijm?raw=true|label=looks like}}: 
+This would create e.g., <code>NHH6KG30C9</code>. However, it is likely that certain directories would require a lengthier filename. Larger filenames would be harder to read, so we can insert hyphens at fixed positions. We will improve the function by passing two arguments to it: the length of the desired filename and a boolean flag to instruct on the usage of hyphens:
 <source lang="java">
-// Define which images should be processed. Only file extensions listed in this
-// array will be accepted as valid by expectedImage(). Note that certain files
-// may not be handled by IJ directly but by other plugins, such as Bio-Formats
-var extensions = newArray(".tif", ".stk", ".oib");
-
-// Define input directory
-inputDir = getDirectory("Select a source directory");
-
-// Define output directory
-outputDir = getOutputDirectory(inputDir);
-
-// Iterate through inputDir, ignore files with non-specified extensions and save
-// a copy of processed images in outputDir
-processImage(inputDir, outputDir);
-
-showMessage("All done!");
-
-
-/* This function defines all the image manipulation routines. */
-function myRoutines() {
-	run("Median Filter", "x=2 y=2 z=2"); // runs plugins/Scripts/BAR/Snippets/Median_Filter.py
-	// <Your code here>
-}
-
-/*
- * This function retrieves the full path to a "Processed" folder placed at the
- * same location of <input_dir>. For safety, the macro is aborted if <input_dir>
- * is not accessible or if the directory cannot be created, e.g., due to lack of
- * appropriate credentials. It does nothing if such a directory already exists.
- */
-function getOutputDirectory(input_dir) {
-	if (!File.isDirectory(input_dir)) {
-		exit("Macro aborted: The directory\n'"+ input_dir +"'\nwas not found.");
+function randomString(length, spacers) {
+	template = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	nChars = lengthOf(template);
+	string = "";
+	for (i=0; i<length; i++) {
+		idx = maxOf(0, round(random()*nChars-1));
+		string += substring(template, idx, idx+1);
+		if (spacers && i%5==0) string += "_";
 	}
-	if (endsWith(input_dir, File.separator)) {
-		separatorPosition = lengthOf(input_dir);
-		input_dir = substring(input_dir, 0, separatorPosition-1);
-	}
-	new_dir = input_dir + "_Processed" + File.separator;
-	if (!File.isDirectory(new_dir)) {
-		File.makeDirectory(new_dir);
-		if (!File.isDirectory(new_dir))
-			exit("Macro aborted:\n" + new_dir + "\ncould not be created.");
-	}
-	return new_dir;
-}
-
-/*
- * This function applies <myRoutines()> to individual files filtered by
- * <expectedImage()>. It takes 2 arguments: <open_dir>, the full path of input
- * directory and <save_dir>, the directory where a copy of the processed images
- * will be saved. It does nothing if <open_dir> does not exist.
- */
-function processImage(open_dir, save_dir) {
-
-	// Do not display images during macro execution
-	setBatchMode(true);
-
-	// Get the array containing the names of input files and loop through it.
-	// We will not perform safety checks to verify if open_dir and save_dir
-	// exist since that task was already performed by getOutputDirectory()
-	files = getFileList(open_dir);
-	for (i=0; i<files.length; i++) {
-		file_path = files[i];
-		if (expectedImage(file_path)) {
-			print(i+1, "Analyzing "+ file_path +"...");
-			open(file_path);
-
-			// Apply processing steps
-			myRoutines();
-
-			output_path = save_dir + "Treated_" + getTitle();
-			saveAs("tiff", output_path);
-			close();
-		} else {
-			print(i+1, "Skipping "+ file_path +"... not the right file type");
-		}
-	}
-
-}
-
-/*
- * This function returns true if the file extension of the argument <filename>
- * is present in the global variable <extensions> array. Returns false otherwise.
- */
-function expectedImage(filename) {
-	expected = false;
-	for (i=0; i<extensions.length; i++) {
-		if (endsWith(toLowerCase(filename), extensions[i])) {
-			expected = true;
-			break;
-		}
-	}
-	return expected;
+	return string;
 }
 </source>
+As such, calling <code>randomString(50, true)</code> would produce e.g., <code>E_ZXTQO_8E9XM_45WG7_8S39</code>.
+
+Now that we are capable of generating a random filename, we just need to monitor filename changes. We could use print changes to Log window, or create a two-column table describing the changes. Here is how the final ({{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_IJM.ijm?raw=true|label=Process_Folder_IJM.ijm}}) {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_IJM.ijm|label=looks like}}
+<source lang="java">
+function myRoutines() {
+
+	// Note that functions can contain other functions
+	function randomString(length, spacers) {...}
+
+	// Since we'll be logging filename changes to the Results table, we
+	// need to keep track of the table's measurement counter. We'll assume
+	// that the Results table was closed when myroutines() was first called
+	availableRow = maxOf(0, nResults);
+	// Log original filename before changing it
+	setResult("Original filename", availableRow, getTitle());
+	// Rename image and log changes
+	rename(randomString(20, true));
+	setResult("Randomized filename", availableRow, getTitle());
+}
+</source>
+{{Tip
+| tip =
+The file-processing function can include not only code generated by the Macro Recorder (<span style="border-bottom:1px dotted #ccc;">Plugins▷ Macros▷ Record...</span>), but it can also call pre-existing snippets. Example (IJM):
+<source lang="java">
+function myRoutines() {
+	snippetsPath = call("bar.Utils.getSnippetsDir");
+	runMacro(snippetsPath + "MyCoolestMacro.ijm");
+	eval("python", snippetsPath + "MyCoolestScript.py");
+}</source>}}
+
 == FAQ ==
 ;What is the rationale behind BAR?
 :The motivation behind bar is quite simple: To collect snippets of code that can be incorporated into any workflow. So rather than performing fully fledged procedures, BARs tend to produce single tasks. The advantages are two-fold: 1) Scripts are easier to understand and maintain and 2) they can be used to complement any other ImageJ add-on, let it be the simplest macro or the most sophisticated plugin.
