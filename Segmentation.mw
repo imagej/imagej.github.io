@@ -42,7 +42,7 @@ Preprocess the image using filters, to make later thresholding more effective. W
 
 Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
 *Open your image in the fiji window
-*Select Image>Adjust
+*Select Image>Adjust>Threshold...
 *Specify whether or not the background should be dark or light
 *Adjust the minimum and maximum sliders until you are satisfied with the saturation level of your image
 **[http://imagej.net/docs/guide/146-28.html#sub:Threshold...%5BT%5D More information]
