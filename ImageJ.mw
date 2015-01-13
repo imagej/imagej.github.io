@@ -17,7 +17,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
 |[[ImageJ2]]<br>
 ImageJDev
 |[[Contributors|ImageJ developers]]
-|A new version of ImageJ targeting scientific multidimensional image data. It is a complete rewrite of ImageJ, but includes [[ImageJ1]] with a compatibility layer, so that old-style plugins and macros can run the same as always.
+|A new version of ImageJ targeting scientific multidimensional image data. It is a complete rewrite of ImageJ, but includes [[ImageJ1]] with a compatibility layer, so that old-style plugins and macros can run the same as always. ImageJ2 provides several significant new features, such as an automatic [[updater]], and improved [[scripting]] capabilities.
 |Dec. 2009
 |Active
 |-
@@ -42,7 +42,7 @@ It is what ImageJ2's legacy support uses at its core.
 |[[Fiji]]
 |[[Contributors|Fiji contributors]]
 | 
-'''F'''iji '''i'''s '''J'''ust '''I'''mageJ, with extras. It is a distribution of ImageJ with many plugins useful for image analysis in the life sciences, an automatic updater, and improved scripting capabilities. It is actively maintained, with updates released often.
+'''F'''iji '''i'''s '''J'''ust '''I'''mageJ, with extras. It is a distribution of ImageJ with many plugins useful for image analysis in the life sciences. It is actively maintained, with updates released often.
 
 As of June 2014, Fiji is based on ImageJ2, adding Fiji-specific customization and plugins.
 
