@@ -615,7 +615,14 @@ Releases notes are available on {{GitHub|org=tferr|repo=ASA|path=Notes.md#releas
 
 * '''[http://www.imagescience.org/meijering/software/neuronj/ NeuronJ]''' ImageJ plugin for semi-automated tracing and quantification of two-dimensional arbors. Note that '[[Simple_Neurite_Tracer|SNT]] can also be used to trace 2D images.
 
+== Publication ==
+* Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. ('''2014'''), [http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html Neuronal morphometry directly from bitmap images], ''Nature Methods'' 11(10): 982–984
+
 == Citations ==
+While in development, ''Sholl Analysis'' has been cited by [https://scholar.google.ca/scholar?hl=en&as_sdt=1,5&as_vis=1&q=plugin+imagej+OR+fiji+%22Sholl+Analysis%22 several papers]. Its [[#Publication|publication]] has been cited by the following manuscripts:
+
+* Jason P. Stankoa, Michael R. Easterlingb, Suzanne E. Fentona. ('''2014'''), [http://dx.doi.org/10.1016/j.reprotox.2014.11.004 Application of Sholl analysis to quantify changes in growth and development in rat mammary gland whole mounts], Reproductive Toxicology, doi:10.1016/j.reprotox.2014.11.004
+
 
 == References ==
 <references >
@@ -642,5 +649,6 @@ Brown KM, Barrionuevo G, Canty AJ, De Paola V, Hirsch JA, Jefferis GS, Lu J, Sni
 == License ==
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
+[[Category:Citable]]
 [[Category:Plugins]]
 [[Category:Analysis]]
