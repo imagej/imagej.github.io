@@ -99,7 +99,7 @@ Although BARs can be used as standalone commands, the scripts and plugins in BAR
 === Snippets ===
 {{Scripting}}You can use BARs as a starting point for your own workflows. Whether you are just looking to automate a simple task or you are an advanced developer, you can use BAR to achieve your analysis goals more easily.
 
-BAR contains a directory ''plugins/Scripts/BAR/Snippets/'' containing  [https://github.com/tferr/Scripts/tree/master/Snippets examples] (BeanShell, IJM and Python) that you can customize and recycle in your own scripts. You can, of course, retrieve code and inspiration from the more complete BARs in the remaining ''plugins/Scripts/BAR/" subdirectories.
+BAR contains a directory, ''plugins/Scripts/BAR/Snippets/'', containing  [https://github.com/tferr/Scripts/tree/master/Snippets examples] ([[BeanShell_Scripting|BeanShell]], [[Introduction_into_Macro_Programming|IJM]] and [[Jython_Scripting|Python]]) that you can customize and recycle in your own scripts. You can, of course, also retrieve code and inspiration from the more complete BARs in the remaining ''plugins/Scripts/BAR/'' subdirectories.
 
 <span style="border-bottom:1px dotted #ccc;">BAR▷ Snippets▷</span>, contains some utilities to help you manage your scripts:
 ;Reveal Snippets:Opens ''plugins/Scripts/BAR/Snippets/'' in the file browser of the operating system.  Note that any file you save in ''plugins/Scripts/BAR/Snippets/'' with an underscore in the filename will be listed in the menu.
@@ -108,16 +108,15 @@ BAR contains a directory ''plugins/Scripts/BAR/Snippets/'' containing  [https://
 
 === Batch Processors ===
 Some of the scripts included in ''/BAR/Snippets/'' are scripts that apply a [[How_to_apply_a_common_operation_to_a_complete_directory|common operation to a directory]]. These
-''batch processors'' are implemented in different languages and perform the following operations:
+[[Batch_Processing|batch processors]] are implemented in different languages and perform the following operations:
 # Take an input folder specified by the user
 # Apply a series of operations to individual files of matched extension(s)
 # Save processed files as TIFF to a dedicated directory, so that no files are overwritten
 
-Typically each of these tasks is handled by separated functions so only the function processing single files needs to be edited. In the {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_PY.py|label=Python}} and {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_IJM.ijm|label=IJM}} implementation, this processing function is called <code>myRoutines()</code>. Note that we do not need to
-When editing <code>myRoutines()</code> we do not need to worry about opening, closing or saving a  .tif without overriding the original file because those tasks are already performed by other functions.
+Typically each of these tasks is handled by separated functions so only the function processing single files needs to be edited. In the {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_PY.py|label=Python}} and {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_IJM.ijm|label=IJM}} implementation, this processing function is called <code>myRoutines()</code>. Note that when editing <code>myRoutines()</code> we do not need to worry about opening, closing or saving the image without overriding the original file, because those tasks are already performed by other functions.
 
 ==== Example: Randomize Filenames ====
-The default task of both the Python and IJM implementation of the ''Process Folder'' scripts is
+The default task of both the Python and IJM implementation of {{GitHub|org=tferr|repo=Scripts|path=Snippets/README.md#batch-processors|label=BAR}} ''Process Folder'' scripts is
 filename randomization: 1) They copy images from one folder to another, 2) Rename their filenames using a random string and 3) Log changes to a CSV table (so that id of randomized filename can be traced back to the original file).
 This approach allows for blind analyses of datasets that are sensitive to user interpretation. Below are the descriptions of {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_PY.py|label=Process_Folder_PY.py}} and {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_IJM.ijm|label=Process_Folder_IJM.ijm}}.
 
@@ -187,7 +186,7 @@ function randomString() {
 	return string;
 }
 </source>
-This would create e.g., <code>NHH6KG30C9</code>. However, it is likely that certain directories would require a lengthier filename. Larger filenames would be harder to read, so we can insert hyphens at fixed positions. We will improve the function by passing two arguments to it: the length of the desired filename and a boolean flag to instruct on the usage of hyphens:
+This would create e.g., <code>NHH6KG30C9</code>. However, a lengthier filename may be required. Larger filenames would be harder to read, so we can insert hyphens at fixed positions. We will improve the function by passing two arguments to it: the length of the desired filename and a boolean flag to instruct on the usage of hyphens:
 <source lang="java">
 function randomString(length, spacers) {
 	template = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -203,7 +202,7 @@ function randomString(length, spacers) {
 </source>
 As such, calling <code>randomString(50, true)</code> would produce e.g., <code>E_ZXTQO_8E9XM_45WG7_8S39</code>.
 
-Now that we are capable of generating a random filename, we just need to monitor filename changes. We could use print changes to Log window, or create a two-column table describing the changes. Here is how the final ({{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_IJM.ijm?raw=true|label=Process_Folder_IJM.ijm}}) {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_IJM.ijm|label=looks like}}
+Now that we are capable of generating a random filename, we just need to monitor filename changes. We could use the [http://imagej.nih.gov/ij/developer/macro/functions.html#print print()] function (that outputs to the Log window), or create a two-column table describing the changes. Here is how the final ({{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_IJM.ijm?raw=true|label=Process_Folder_IJM.ijm}}) {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_IJM.ijm|label=looks like}}
 <source lang="java">
 function myRoutines() {
 
@@ -222,14 +221,20 @@ function myRoutines() {
 }
 </source>
 {{Tip
+| id = ProcessingFunction
 | tip =
-The file-processing function can include not only code generated by the Macro Recorder (<span style="border-bottom:1px dotted #ccc;">Plugins▷ Macros▷ Record...</span>), but it can also call pre-existing snippets. Example (IJM):
+The file-processing function can include your own code, code generated by the Macro Recorder (<span style="border-bottom:1px dotted #ccc;">Plugins▷ Macros▷ Record...</span>) and it can also call pre-existing snippets. Example (IJM):
 <source lang="java">
 function myRoutines() {
 	snippetsPath = call("bar.Utils.getSnippetsDir");
 	runMacro(snippetsPath + "MyCoolestMacro.ijm");
-	eval("python", snippetsPath + "MyCoolestScript.py");
-}</source>}}
+	eval("python", File.openAsString(snippetsPath + "MyCoolestScript.py"));
+}</source>
+Note also that there is an [[Batch_Processing#Easy_option|easier]] (but less flexible) way to [[Batch_Processing|batch process]] a folder: The <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span> [[Batch_Processing#Easy_option|command]], the built-in batch processor.
+In this case, you only need to paste the contents of your <code>myRoutines()</code> function into the text area of the command. However, by default, <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span> assumes you want to process ''all'' the files in a directory. If that is not the case, i.e., you want to restrict the processing to certain file types, you will have to use [http://en.wikipedia.org/wiki/Regular_expression regex] to instruct the built-in command on the file extensions to be considered. E.g., Typing
+<source lang=java> (.*(\.(?i)(tif|stk|oib))$)</source> 
+in the ''File name contains'' field of <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷ Macro...</span>, would restrict processing to <code>.tif</code>, <code>.stk</code> and <code>.oib</code> files (the default extensions specified in the <code>validExtension()</code> function of  {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_IJM.ijm|label=Process_Folder_IJM.ijm}}).
+}}
 
 == FAQ ==
 ;What is the rationale behind BAR?
