@@ -8,7 +8,7 @@ This article explains how to install and configure command line tools for use wi
 * Add the <code>bin</code> directory for each to your [http://op111.net/82/ PATH environment variable].
 
 === Setting up command line tools on Mac OS X ===
-Using [http://brew.sh/ Homebrew]:
+Install the tools using [http://brew.sh/ Homebrew]:
 <source lang="bash">
 brew install git maven bash-completion
 </source>
