@@ -1,4 +1,4 @@
-= Introduction =
+{{Development}}= Introduction =
 
 Sometimes, you may want to use 3rd party libraries that are not available as Java components, but only as native libraries.
 
@@ -82,7 +82,7 @@ If the C header defines constants using the ''#define'' statement, the constant 
 
 For example, this C header:
 
-<source lang="C">
+<source lang="cpp">
 #ifndef MY_HEADER_H
 #define MY_HEADER_H
 
