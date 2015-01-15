@@ -26,7 +26,7 @@ The source code of ImageJ is very modular; i.e., it is organized into [[Architec
 |-
 | [[File:Scifio-icon.png|28px]]
 | [https://github.com/scifio SCIFIO]
-| Extensible file I/O
+| Extensible image file I/O
 |-
 | [[File:Fiji-icon.png|28px]]
 | [https://github.com/fiji Fiji]
