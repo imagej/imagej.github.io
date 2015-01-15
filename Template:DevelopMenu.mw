@@ -21,6 +21,7 @@
 {{MenuItem | [[Developing ImageJ in NetBeans|Using NetBeans]] }}
 {{MenuItem | [[Developing ImageJ in IntelliJ IDEA|Using IntelliJ IDEA]] }}
 {{MenuItem | [[Developing ImageJ on the command line|On the command line]] }}
+{{MenuItem | [[Developing using native libraries|Using native libraries]] }}
 {{MenuItem | [[Coding style]] }}
 {{MenuItem | [[Logging]] }}
 | {{#ifeq:{{{1}}}|source||collapsed}}
