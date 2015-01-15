@@ -31,43 +31,45 @@ __NOTOC__
 * [[User:Schindelin|Johannes Schindelin]]<sup>2</sup> (lead)
 * [[User:Rueden|Curtis Rueden]]<sup>2</sup>
 * [[User:JeanYvesTinevez|Jean-Yves Tinevez]]<sup>8</sup>
-* [http://bioweb.cnb.csic.es/~iarganda/index_EN.html Ignacio Arganda-Carreras]
+* [[User:Iarganda|Ignacio Arganda-Carreras]]
+* [[User:StephanP|Stephan Preibisch]]<sup>5</sup>
+* [[User:Saalfeld|Stephan Saalfeld]]<sup>5,12</sup>
+* [[User:Pietzsch|Tobias Pietzsch]]<sup>5</sup>
 * [[User:Hinerm|Mark Hiner]]<sup>2</sup>
-* [http://fly.mpi-cbg.de/~preibisch/ Stephan Preibisch]<sup>5</sup>
-* [http://synapses.clm.utexas.edu/lab/lindsey/lindsey.htm Larry Lindsey]
-* Tiago Ferreira
-* [http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld]<sup>5</sup>
+* [[User:Eglinger|Jan Eglinger]]
+* [[User:Lindsey|Larry Lindsey]]
+* [[User:Tiago|Tiago Ferreira]]
 * [[Dan White|Dan White]]
-* Samuel Inverso
-* Tobias Pietzsch
-* Jan Eglinger
-* Peter Steinbach
-* Barry DeZonia
-* Aparna Pal
-* Christopher M. Bruns
-* [http://www.mecourse.com/landinig/ Gabriel Landini]
-* Nathan Clack
-* [http://albert.rierol.net Albert Cardona]<sup>6,12</sup>
+* [[User:Landini|Gabriel Landini]]
+* [[User:Albertcardona|Albert Cardona]]<sup>6,12</sup>
+* See also [https://github.com/fiji/fiji/graphs/contributors graph of Fiji contributors]
+
+=== [[BigDataViewer]] ===
+* [[User:Pietzsch|Tobias Pietzsch]]<sup>5</sup> (lead)
+* [[User:StephanP|Stephan Preibisch]]<sup>5</sup>
+
+=== [[TrakEM2]] ===
+* [[User:Albertcardona|Albert Cardona]]<sup>6,12</sup> (lead)
+* [[User:Saalfeld|Stephan Saalfeld]]<sup>5,12</sup>
 </div>
 
 <div style="float: left; width: 34%">
 
 === [[ImgLib2]] ===
-* Tobias Pietzsch<sup>5</sup> (lead)
-* [http://fly.mpi-cbg.de/~preibisch/ Stephan Preibisch]<sup>5</sup>
-* [http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld]<sup>5</sup>
+* [[User:Pietzsch|Tobias Pietzsch]]<sup>5</sup> (lead)
+* [[User:StephanP|Stephan Preibisch]]<sup>5</sup>
+* [[User:Saalfeld|Stephan Saalfeld]]<sup>5,12</sup>
 
 === [[SCIFIO]] ===
 * [[User:Hinerm|Mark Hiner]]<sup>2</sup> (co-lead)
 * [[User:Rueden|Curtis Rueden]]<sup>2</sup> (co-lead)
 
 === [[CellProfiler]] ===
-* Lee Kamentsky<sup>4</sup> (lead)
+* [[User:Leek|Lee Kamentsky]]<sup>4</sup> (lead)
 
 === [[KNIME|KNIME Image Processing]] ===
-* Christian Dietz<sup>9</sup> (lead)
+* [[User:Dietz|Christian Dietz]]<sup>9</sup> (lead)
 * Martin Horn<sup>9</sup>
-* Michael Zinsmaier<sup>9</sup>
 
 === [[OME]] ===
 * Josh Moore<sup>10,11</sup> (co-lead)
