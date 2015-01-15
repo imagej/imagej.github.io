@@ -1,11 +1,4 @@
-!! THIS IS DRAT !!
 
-The documentation on this page is very incomplete !!
-
-
-
-
-____
 
 This page documents the current components of [[TrackMate]]. TrackMate has a modular design, meaning that it is made of different modules that each have a specific role. Developers can build their own module and re-used the other ones and the GUI to achieve a quick development. The module types are (in the order you meet them when executing the plugin):
 
@@ -85,6 +78,13 @@ The estimated diameter is then defined as the radius that maximizes this contras
 
 The Linear Assignment Problem (LAP) trackers implemented here follow a stripped down version of 
 the renowned  method contributed by Jaqaman and colleagues<ref name="Jaqaman">[http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.]</ref>. We repeat here the ideas found in the reference paper, then stresses the differences with the nominal implementation. 
+
+In TrackMate, the LAP framework backs up two instances of a tracker (four if you count the old ones, prior to v2.5.z):
+* the Simple LAP tracker;
+* the LAP tracker.
+The first one is simply a simplified version of the second: it has less settings and only deal with particle that do not divide nor merge, and ignores any feature penalty (see below). 
+
+All the linking costs for these two trackers are based on the particle-to-particle square distance. If this tracker had to be summarized in one sentence, it would be the following: <b>The SImple LAP tracker and the LAP tracker are well suited for particle undergoing Brownian motion.</b> Of course, they will be fine for a non-Brownian motion as long as the particles are not too dense. 
 
 Particle-linking happens in two step: track segments creation from frame-to-frame particle linking, then track segments linking to achieve gap closing. The mathematical formulation used for both steps is linear assignment problem (LAP): a cost matrix is assembled contained all possible assignment costs. Actual assignments are retrieved by solving this matrix for minimal total cost. We describe first how cost matrices are arranged, then how individual costs are calculated.
 
@@ -176,6 +176,10 @@ The notable differences are:
 # The LAP framework is generic: Jaqaman and colleagues proposed a framework to approximate  multiple-hypothesis tracking solutions using linear assignment problems. One just need to provide the link cost matrix. <b>TrackMate</b> properly implements the LAP framework, but the cost matrix calculation - which is specific to each problem - is much more simpler than in <b>u-track</b>. <br/> For instance, in TrackMate all link costs are based on the square distance between two spots (weighted or not by feature differences, see above), which make it tailored for Brownian motion. In <b>u-track</b>, the user is proposed with different motion types, including a linear motion whose parameters are determined on the fly. See for instance CD36 tracking, in the supplementary note 7 of the paper<ref name="Jaqaman"/>.
 # In <b>u-track</b>, merging and splitting of tracks are used to describe two particles that temporally overlap spatially. These events' costs are weighted by the two particle intensities to properly catch the apparent increase in intensity due to the overlap. In <b>TrackMate</b>, we use splitting events to describe cell divisions, as we developed it initially to deal with <i>C.elegans</i> lineages. However is seems than Jaqaman and colleagues used it the same way to investigate CD36 dissociation and re-association. 
 # In <b>TrackMate</b>, distance and time cutoffs are specified manually by the user. In <b>u-track</b> they are derived for each particle automatically, providing self adaptation.
+
+
+
+=== Linear motion tracker ===
 
 
 
