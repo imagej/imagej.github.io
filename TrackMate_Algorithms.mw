@@ -179,8 +179,19 @@ The notable differences are:
 
 
 
+
 === Linear motion tracker ===
 
+Starting from TrackMate v2.7.z, we shipped a new tracker that can deal specifically with linear motion, or particle moving with a roughly constant velocity. This velocity does not need to be the same for all particles. You can find it in TrackMate tracker selection under the name <b>Linear motion LAP tracker</b>.
 
+Though it deals with a completely different motion model compared to the LAP trackers in TrackMate, it reuses the Jaqaman LAP framework, and it is similar to a tracker proposed in the Jaqaman paper as well: See the CD36 tracking, in the supplementary note 7 of the paper<ref name="Jaqaman"/>. But again, the version in TrackMate is simplified compared to what you can find in <b>u-track</b>.
+
+
+
+
+
+
+
+== References ==
 
 <references/>
