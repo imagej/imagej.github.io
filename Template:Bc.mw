@@ -1,15 +1,14 @@
-<includeonly>
-<span style="font-size: 95%; font-weight: bold">{{#if: {{{1|}}} |<span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{1}}}</span>}}{{#if: {{{2|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{2}}}</span>}}{{#if: {{{3|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{3}}}</span>}}{{#if: {{{4|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{4}}}</span>}}{{#if: {{{5|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{5}}}</span>}}{{#if: {{{6|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{6}}}</span>}}{{#if: {{{7|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{7}}}</span>}}{{#if: {{{8|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{8}}}</span>}}{{#if: {{{9|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{9}}}</span>}}{{#if: {{{10|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{10}}}</span>}}
-</includeonly>
-<noinclude>
+<includeonly><span style="font-size: 95%; font-weight: bold">{{#if: {{{1|}}} |<span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{1}}}</span>}}{{#if: {{{2|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{2}}}</span>}}{{#if: {{{3|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{3}}}</span>}}{{#if: {{{4|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{4}}}</span>}}{{#if: {{{5|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{5}}}</span>}}{{#if: {{{6|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{6}}}</span>}}{{#if: {{{7|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{7}}}</span>}}{{#if: {{{8|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{8}}}</span>}}{{#if: {{{9|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{9}}}</span>}}{{#if: {{{10|}}} |&nbsp;▸ <span style="border: 1px solid #70C0E7; border-radius: 2px; background:#E5F3FB; padding-right:3px; padding-left:3px;">{{{10}}}</span>}}</span></includeonly><noinclude>
 ==Usage==
 For example, typing:
-<pre>
-The {{key|L}} key is the shortcut for {{bc|Plugins|Utilities|Find Commands}}
-</pre>
+<pre>The {{key|L}} key is the shortcut for {{bc|Plugins|Utilities|Find Commands}}</pre>
 will be rendered as:
-
 The {{key|L}}  key is the shortcut for {{bc|Plugins|Utilities|Find Commands}}
+
+Up to 10 menu elements can be used:
+<pre>{{bc|Menu1|Menu2|Menu3|(...)|Menu9|Command}}</pre>
+will be rendered as:
+{{bc|Menu1|Menu2|Menu3|(...)|Menu9|Command}}
 
 ==Attribution==
 This template was copied from [https://wiki.documentfoundation.org/Template:Breadcrumb https://wiki.documentfoundation.org], released under the [http://creativecommons.org/licenses/by-sa/3.0/ Creative Commons Attribution-ShareAlike 3.0 Unported License].
