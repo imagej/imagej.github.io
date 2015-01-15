@@ -33,7 +33,7 @@ The six standard near-universal log levels are:
 * '''<code>INFO</code>''' - Log informational messages.
 * '''<code>DEBUG</code>''' - Log detailed debugging messages.
 * '''<code>TRACE</code>''' - Log everything possible, including debugging stack traces.}}
-[[ImageJ2]] uses the SciJava logging framework for all core logging. And the vanilla ImageJ2 distribution uses the <code>StderrLogService</code> which emits those messages to the standard error stream. The default log level is '''<code>WARN</code>''' (although we are considering changing it to '''<code>INFO</code>''').
+[[ImageJ2]] uses the SciJava logging framework for all core logging. And the vanilla ImageJ2 distribution uses the <code>StderrLogService</code> which emits those messages to the standard error stream. The default log level is '''<code>INFO</code>'''.
 
 That said, there is a problem with using the standard output and/or error streams in a GUI-driven application: such messages are not visible by default. To work around this fact, many GUI-driven applications implement their own UI component for log messages, typically a "Log window" of some sort. This solution is how [[ImageJ 1.x]] addresses the logging problem on the GUI side: plugins are expected to call the static <code>IJ.log</code> and <code>IJ.handleException</code> methods to emit log messages and report exceptions to the user, respectively.
 
