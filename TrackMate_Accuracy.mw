@@ -30,18 +30,18 @@ It's best to directly read the paper<ref name="ISBIpaper"/> to know what is behi
 ! Particle shape
 ! Motion type
 |-
-| MICROTUBULE
+| [[#Microtubule_scenario.|MICROTUBULE]]
 | Slightly elongated shape to mimic MT tip staining.
 | Roughly constant velocity motion.
 |-
-| RECEPTOR
+| [[#Receptor_scenario.|RECEPTOR]]
 | rowspan=3 | Spherical.
 | [http://en.wikipedia.org/wiki/Tethered_particle_motion Tethered motion]: switch between Brownian and directed motion with random orientation for the later.
 |-
-| VESICLE
+| [[#Vesicle_scenario.|VESICLE]]
 | [http://en.wikipedia.org/wiki/Brownian_motion Brownian motion].
 |-
-| VIRUS
+| [[#Virus_scenario.|VIRUS]]
 | Switch between Brownian and directed motion with fixed orientation for the later.
 |}
 
@@ -52,8 +52,7 @@ For each scenario, images covers several particle density:
 * high: 700-1000 / frame
 to check how a tracking algorithm behaves when particles get very dense.
 
-Also, particles SNR spans several values: 1, 2, 4, 7 (plus 3 for the RECEPTOR scenario). As said on the [http://bioimageanalysis.org/track/ challenge page]: "SNR=4 is a critical level at which methods may start to break down". 
-
+Also, particles SNR spans several values: 1, 2, 4, 7 (plus 3 for the RECEPTOR scenario). As said on the [http://bioimageanalysis.org/track/ challenge page]: "SNR=4 is a critical level at which methods may start to break down".
 
 === Accuracy measurements. ===
 
