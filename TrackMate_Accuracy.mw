@@ -5,9 +5,9 @@ This answer can be completely irrelevant, even non-physical, and there is no bui
 
 == The ISBI 2012 single particle challenge. ==
 
-In 2011-2012, an ISBI Grand Challenge was organized for the [http://bioimageanalysis.org/track/ Single-Particle Tracking algorithms]. Though TrackMate does not offer a completely new algorithm, product of an original Research work, we took the chance and participated in the challenge. The results and the methodology to compute the accuracy of a tracking algorithms were published<ref name="ISBIpaper"> [http://www.nature.com/nmeth/journal/v11/n3/full/nmeth.2808.html Chenouard ''et al.'', Objective comparison of particle tracking methods. '''Nature Methods, 2014 ''']</ref> thereafter.
+In 2011-2012, an ISBI Grand Challenge was organized for the [http://bioimageanalysis.org/track/ Single-Particle Tracking algorithms]. Though TrackMate does not offer a completely new algorithm, product of an original Research work, we took the chance and participated in the challenge. The results and the methodology to compute the accuracy of a tracking algorithms were published<ref name="ISBIpaper"> [http://www.nature.com/nmeth/journal/v11/n3/full/nmeth.2808.html Chenouard ''et al.'', "Objective comparison of particle tracking methods", '''Nature Methods, 2014 ''']</ref> thereafter.
 
-Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in version 1.1, and ship a stripped down version of the better performing Jaqaman ''et al.'' LAP framework<ref name="Jaqaman">[http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", '''Nature Methods, 2008''']</ref>. See the [[TrackMate algorithms#LAP_trackers|LAP trackers section]] for algorithm details. Plus, TrackMate was was young at the time, and some bugs did not help. 
+Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in version 1.1, and ship a stripped down version of the better performing Jaqaman ''et al.'' LAP framework<ref name="Jaqaman">[http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html Jaqaman ''et al.'', "Robust single-particle tracking in live-cell time-lapse sequences", '''Nature Methods, 2008''']</ref>. See the [[TrackMate algorithms#LAP_trackers|LAP trackers section]] for algorithm details. Plus, TrackMate was was young at the time, and some bugs did not help. 
 
 
 == TrackMate v2.7.x series accuracy against the ISBI dataset. ==
@@ -19,11 +19,94 @@ The figures below shows the comparison of accuracy for the 3 classes of tracking
 * The linear motion tracker based on Kalman filter.
 * The plain Nearest neighbor tracker for reference.
 
+
+=== Scenarios. ===
+
 It's best to directly read the paper<ref name="ISBIpaper"/> to know what is behind these measures, but here is a brief survey of how they are done. The ISBI dataset covers four scenarios: 
-* MICROTUBULE: Particles have a slightly elongated shape to mimic MT tip staining. They undergo a roughly constant velocity motion.
-* RECEPTOR: Particles are spherical and undergo a [http://en.wikipedia.org/wiki/Tethered_particle_motion tethered motion].
+
+{| class="wikitable"
+|-
+! Scenario name
+! Particle shape
+! Motion type
+|-
+| MICROTUBULE
+| Slightly elongated shape to mimic MT tip staining.
+| Roughly constant velocity motion.
+|-
+| RECEPTOR
+| rowspan=3 | Spherical.
+| [http://en.wikipedia.org/wiki/Tethered_particle_motion Tethered motion]: switch between Brownian and directed motion with random orientation for the later.
+|-
+| VESICLE
+| [http://en.wikipedia.org/wiki/Brownian_motion Brownian motion].
+|-
+| VIRUS
+| Switch between Brownian and directed motion with fixed orientation for the later.
+|}
 
 
+For each scenario, images covers several particle density:
+* low: 60-100 / frame
+* mid: 400-500 / frame
+* high: 700-1000 / frame
+to check how a tracking algorithm behaves when particles get very dense.
+
+Also, particles SNR spans several values: 1, 2, 4, 7 (plus 3 for the RECEPTOR scenario). As said on the [http://bioimageanalysis.org/track/ challenge page]: "SNR=4 is a critical level at which methods may start to break down". 
+
+
+=== Accuracy measurements. ===
+
+For each scenario and condition, the method returns numerous values that characterizes the accuracy of a tracking algorithm. They are detailed on [http://bioimageanalysis.org/track/PerformanceMeasures.pdf this technical paper]. We plot below only three of them:
+
+* The <b>Jaccard similarity between tracks</b>, that quantifies how well the tracks returned by the algorithm match the ground truth. This value assesses the accuracy of the [[TrackMate_algorithms#Spot_trackers|spot tracker]] you pick in TrackMate. It ranges from 0 (terrible) to 1 (found tracks = ground truth).
+
+* The <b>Jaccard similarity between detections</b>, that quantifies how well the particle detected by the detection algorithm match the ground truth. It depends strongly on the [[TrackMate_algorithms#Spot_detectors|spot detector]] you pick in TrackMate, and ranges from 0 to 1 like the above quantity.
+
+* The <b>RMSE of detection positions</b> that quantifies how precise is the location of the detected particles. 
+
+
+=== Parameter used. ===
+
+Unless otherwise specified below, I always used the LoG detector as a spot detector, with an estimated particle diameter of 4, and used sub-pixel accuracy. For SNR below 4, this detector was completely confused and the detection results are dominated by noise. I did not make anything special to improve its sensitivity below this limit.
+
+When the histogram of detection quality returned by the detector as not bimodal, I pick a quality threshold that yielded approximately the expected number of particles in the sequence.
+
+The three spot trackers were configured as indicated in the table below. It's not very sensible to keep always the same parameter across different scenario, but with what you can tune in TrackMate, there is little room for fine-tuning.
+
+
+{| class="wikitable"
+|-
+! Spot tracker
+! Parameter
+! Value
+|-
+| rowspan =3 | [[TrackMate_algorithms#Linear_motion_tracker.|Linear motion tracker]]
+| Initial search radius
+| 10
+|-
+| Search radius
+| 7
+|-
+| Max frame gap
+| 3
+|-
+| rowspan = 3 | [[TrackMate_algorithms#LAP_trackers LAP|Brownian motion]]
+| Max linking distance
+| 7
+|-
+| Max gap-closing distance
+| 10
+|-
+| Max frame gap
+| 3
+|-
+| Nearest neighbor
+| Max search distance
+| 10
+|}
+
+Finally, for SNR<4, I filtered out tracks that had less than 4 detections.
 
 
 == References ==
