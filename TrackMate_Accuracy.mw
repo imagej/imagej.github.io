@@ -121,8 +121,7 @@ Finally, for SNR<4, I filtered out tracks that had less than 4 detections.
 
 ==== Vesicle scenario. ====
 
-[[File:TrackMate VESICLE LAP Brownian motion, Linear motion tracker &amp; Nearest neighbor.png|600px]
-
+[[File:TrackMate VESICLE LAP Brownian motion, Linear motion tracker &amp; Nearest neighbor.png|600px]]
 
 ==== Virus scenario. ====
 
