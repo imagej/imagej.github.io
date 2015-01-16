@@ -63,8 +63,7 @@ For each scenario and condition, the method returns numerous values that charact
 
 * The <b>Jaccard similarity between detections</b>, that quantifies how well the particle detected by the detection algorithm match the ground truth. It depends strongly on the [[TrackMate_algorithms#Spot_detectors|spot detector]] you pick in TrackMate, and ranges from 0 to 1 like the above quantity.
 
-* The <b>RMSE of detection positions</b> that quantifies how precise is the location of the detected particles. 
-
+* The <b>RMSE of detection positions</b> that quantifies how precise is the location of the detected particles. The smaller the better.
 
 === Parameter used. ===
 
