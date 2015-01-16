@@ -74,7 +74,6 @@ When the histogram of detection quality returned by the detector as not bimodal,
 
 The three spot trackers were configured as indicated in the table below. It's not very sensible to keep always the same parameter across different scenario, but with what you can tune in TrackMate, there is little room for fine-tuning.
 
-
 {| class="wikitable"
 |-
 ! Spot tracker
@@ -109,6 +108,26 @@ The three spot trackers were configured as indicated in the table below. It's no
 Finally, for SNR<4, I filtered out tracks that had less than 4 detections.
 
 
-== References ==
+=== Results. ===
+
+
+==== Microtubule scenario. ====
+
+
+==== Receptor scenario. ====
+
+[[File:TrackMate RECEPTOR LAP Brownian motion, Linear motion tracker &amp; Nearest neighbor.png|800px]]
+
+
+==== Vesicle scenario. ====
+
+
+==== Virus scenario. ====
+
+
+
+
+
+== References. ==
 
 <references/>
