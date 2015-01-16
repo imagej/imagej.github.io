@@ -7,7 +7,14 @@ This answer can be completely irrelevant, even non-physical, and there is no bui
 
 In 2011-2012, an ISBI Grand Challenge was organized for the [http://bioimageanalysis.org/track/ Single-Particle Tracking algorithms]. Though TrackMate does not offer a completely new algorithm, product of an original Research work, we took the chance and participated in the challenge. The results and the methodology to compute the accuracy of a tracking algorithms were published<ref> [http://www.nature.com/nmeth/journal/v11/n3/full/nmeth.2808.html Chenouard ''et al.'', Objective comparison of particle tracking methods. '''Nature Methods, 2014 ''']</ref> thereafter.
 
-Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in version 1.1, and ship a stripped down version of the better performing Jaqaman ''et al.'' LAP framework<ref name="Jaqaman">[http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", Nat Methods. 2008 Aug;5(8):695-702.]</ref>. See the [[TrackMate algorithms#LAP_trackers|LAP trackers section]] for algorithm details.
+Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in version 1.1, and ship a stripped down version of the better performing Jaqaman ''et al.'' LAP framework<ref name="Jaqaman">[http://www.nature.com/nmeth/journal/v5/n8/full/nmeth.1237.html Jaqaman et al., "Robust single-particle tracking in live-cell time-lapse sequences", '''Nature Methods. 2008''' Aug;5(8):695-702.]</ref>. See the [[TrackMate algorithms#LAP_trackers|LAP trackers section]] for algorithm details. Plus, TrackMate was was young at the time, and some bugs did not help. 
+
+
+== TrackMate v2.7.x series accuracy against the ISBI dataset. ==
+
+From v2.7.x, TrackMate ships a new tracker that can deal specifically with linear motion. We though it was the right time to re-run the accuracy assessment with the ISBI challenge data. The people behind [[Icy]] offered the website to host the challenge data, and it is still available today<ref>January 2015</ref> for download.
+
+The figures below shows the 
 
 
 
