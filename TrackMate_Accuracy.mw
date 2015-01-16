@@ -90,7 +90,7 @@ The three spot trackers were configured as indicated in the table below. It's no
 | Max frame gap
 | 3
 |-
-| rowspan = 3 | [[TrackMate_algorithms#LAP_trackers LAP|Brownian motion]]
+| rowspan = 3 | [[TrackMate_algorithms#LAP_trackers|LAP Brownian motion]]
 | Max linking distance
 | 7
 |-
@@ -106,7 +106,6 @@ The three spot trackers were configured as indicated in the table below. It's no
 |}
 
 Finally, for SNR<4, I filtered out tracks that had less than 4 detections.
-
 
 === Results. ===
 
