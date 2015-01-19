@@ -110,6 +110,7 @@ Finally, for SNR<4, I filtered out tracks that had less than 4 detections.
 
 ==== Microtubule scenario. ====
 
+[[File:TrackMate MICROTUBULE LAP Brownian motion, Linear motion tracker &amp; Nearest neighbor.png|600px]]
 
 ==== Receptor scenario. ====
 
@@ -123,9 +124,6 @@ Finally, for SNR<4, I filtered out tracks that had less than 4 detections.
 ==== Virus scenario. ====
 
 [[File:TrackMate VIRUS LAP Brownian motion, Linear motion tracker &amp; Nearest neighbor.png|600px]]
-
-
-
 
 == References. ==
 
