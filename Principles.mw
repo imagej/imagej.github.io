@@ -50,7 +50,8 @@ Many users are aware of a method which allows them to manually define such a thr
 
 "I usually define a manual threshold to extract my objects..., is this ok?"
 As a recommendation... Whenever possible, try to avoid manual thresholding!!!
-Because manual methods have several limitations:
+
+'''Manual methods have several limitations:'''
 
 a) no/low reproducibility 
 
@@ -64,11 +65,11 @@ e) high intra- and inter-user variability
 
 You might think of determining a fixed manual threshold and then applying the determined cut-off values to all your images. This would at least fulfill the premise to treat all the images which you need to compare equally but will not make you happy in the end. Since there is a certain variability in the images of one single experiment and mostly an even higher variability in between the images of replicate experiments, one fixed value will not achieve to extract similar features from different images. 
 
-So what is the alternative?
+'''So what is the alternative?'''
 
 Since many decades scientist try to develop automatic segmentation algorithms. Those algorithms might be based on different properties of the images (see below) but they all have in common that the determination of the threshold is based on image-intrinsic properties and not on user decisions. Obviously, if the user has a choice of algorithms the final decision on which algorithm to apply under specific conditions or a specific experiment is left to the user. Nevertheless, this already reduces the bias from e.g. 256 possible cut-off values down to the number of available algorithms. We furthermore need to distinguish between global and local thresholds. During global thresholding the image as whole is taken to determine the cut-off value and this value is applied to each pixel in the image. Local thresholds, as the name suggests, are determined in a local environment (often defined by the radius of a circular neighborhood). Thereafter, this local cut-off values are also locally applied to the individual pixels of the image. Thus, darker areas in an image might be extractable comparably well as very bright areas. This would not be possible with a global threshold, where specifically very dark areas shift into the background or might be under-extracted.
 
-Thus, the advantage of the automatic binarization methods are:
+Thus, the '''advantage of the automatic binarization methods''' are:
 
 a) they are fully reproducible (on the same image they will also lead to the same binarization result)
 
@@ -82,7 +83,8 @@ e) it's rapid (no fiddling) and perfectly serves automation e.g. in macros
 
 In ImageJ and Fiji, there are so far 16 [[Auto_Threshold|Global Auto Thresholds]] and 9 [[Auto_Local_Threshold|Auto Local Thresholds]] implemented (by Gabriel Landini). Those do an excellent job for many intensity based images.
 
-Is there one of those automatic algorithms performing best?
+'''Is there one of those automatic algorithms performing best?'''
+
 NO. Most algorithms were developed serving a specific purpose or solving a case-specific extraction problem. Thus, performance is relative and depends on the image content and quality. It needs to be tested if any of the implemented methods does a good job for every single new question to be answered.
 Addtionally, there are many more algorithms published out there and you might want to think about implementing one in an ImageJ plugin yourself and provide it to the community :-)
 
