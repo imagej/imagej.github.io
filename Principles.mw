@@ -82,6 +82,10 @@ e) it's rapid (no fiddling) and perfectly serves automation e.g. in macros
 
 In ImageJ and Fiji, there are so far 16 [[Auto_Threshold|Global Auto Thresholds]] and 9 [[Auto_Local_Threshold|Auto Local Thresholds]] implemented (by Gabriel Landini). Those do an excellent job for many intensity based images.
 
+Is there one of those automatic algorithms performing best?
+NO. Most algorithms were developed serving a specific purpose or solving a case-specific extraction problem. Thus, performance is relative and depends on the image content and quality. It needs to be tested if any of the implemented methods does a good job for every single new question to be answered.
+Addtionally, there are many more algorithms published out there and you might want to think about implementing one in an ImageJ plugin yourself and provide it to the community :-)
+
 == Which automatic methods do exist for binarization? ==
 Generally, there are different groups of algorithms for image binarization.
 (The following classification of methods is taken from Sezgin and Sankur, Survey over image thresholding techniques and quantitative performance evaluation, Journal of Electronic Imaging 13(1), 146–165 (January 2004).)
