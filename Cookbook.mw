@@ -2,25 +2,26 @@ __FORCETOC__ {{Cookbook}}
 
 == Introduction ==
 
-This book is an analysis-oriented introduction and user guide to Fiji. It is inspired by the defunct [[MBF Plugin Collection|MBF "ImageJ for microscopy" manual]] which went offline in November 2012, and it describes many of the same plugins from that distribution.
+This book is an analysis-oriented introduction and user guide to ImageJ. It is inspired by the defunct [[MBF Plugin Collection|MBF "ImageJ for microscopy" manual]] which went offline in November 2012, and it describes many of the same plugins from that distribution.
 
 Cooks call them ''recipes'', biologists ''protocols'', and programmers call them ''HOWTOs''.  No matter how you refer to them, you'll find the book topics in the sidebar to the right!
 
-Like the rest of the Fiji wiki, this Cookbook is a community project. Please feel welcome to edit and expand the material here!
+Like the rest of this wiki, this Cookbook is a community project. Please feel welcome to edit and expand the material here!
 
 == Installing Fiji ==
 
+The Cookbook is based on the [[Fiji]] distribution of ImageJ.
 {{:Installation}}
 
 == Installing the Cookbook plugins ==
 
-This Cookbook makes use of several plugins beyond those available in Fiji out of the box. You can easily install them as follows:
-* Help > Update Fiji
+The Cookbook makes use of several plugins beyond those available in Fiji out of the box. You can easily install them as follows:
+* Help > Update...
 * Manage update sites
 * Tick the "Cookbook" update site
 * Close
 * Apply changes
-* Restart Fiji
+* Restart ImageJ
 
 == Source ==
 
