@@ -53,15 +53,13 @@ As a recommendation... Whenever possible, try to avoid manual thresholding!!!
 
 '''Manual methods have several limitations:'''
 
-a) no/low reproducibility 
-
-b) high user bias
-
-c) tedious and time-consuming fiddling-around finding an "appropriate" cut-off value
-
-d) incompatibility with automatic processing
-
-e) high intra- and inter-user variability
+<ol type="a">
+<li>no/low reproducibility </li>
+<li>high user bias</li>
+<li>tedious and time-consuming fiddling-around finding an "appropriate" cut-off value</li>
+<li>incompatibility with automatic processing</li>
+<li>high intra- and inter-user variability</li>
+</ol>
 
 You might think of determining a fixed manual threshold and then applying the determined cut-off values to all your images. This would at least fulfill the premise to treat all the images which you need to compare equally but will not make you happy in the end. Since there is a certain variability in the images of one single experiment and mostly an even higher variability in between the images of replicate experiments, one fixed value will not achieve to extract similar features from different images. 
 
@@ -70,16 +68,13 @@ You might think of determining a fixed manual threshold and then applying the de
 Since many decades scientist try to develop automatic segmentation algorithms. Those algorithms might be based on different properties of the images (see below) but they all have in common that the determination of the threshold is based on image-intrinsic properties and not on user decisions. Obviously, if the user has a choice of algorithms the final decision on which algorithm to apply under specific conditions or a specific experiment is left to the user. Nevertheless, this already reduces the bias from e.g. 256 possible cut-off values down to the number of available algorithms. We furthermore need to distinguish between global and local thresholds. During global thresholding the image as whole is taken to determine the cut-off value and this value is applied to each pixel in the image. Local thresholds, as the name suggests, are determined in a local environment (often defined by the radius of a circular neighborhood). Thereafter, this local cut-off values are also locally applied to the individual pixels of the image. Thus, darker areas in an image might be extractable comparably well as very bright areas. This would not be possible with a global threshold, where specifically very dark areas shift into the background or might be under-extracted.
 
 Thus, the '''advantage of the automatic binarization methods''' are:
-
-a) they are fully reproducible (on the same image they will also lead to the same binarization result)
-
-b) no bias during thresholding only during decision for a specific automatic algorithm
-
-c) the automatic cut-off value determination accounts for differences e.g. in the image histogram and "react" to this which mostly leads to a preferable feature extraction in comparison to fixed values.
-
-d) easy applicable to image stacks with differentiation between individual image histograms or the complete stack histogram.
-
-e) it's rapid (no fiddling) and perfectly serves automation e.g. in macros
+<ol type="a">
+<li>they are fully reproducible (on the same image they will also lead to the same binarization result)</li>
+<li>no bias during thresholding only during decision for a specific automatic algorithm</li>
+<li>the automatic cut-off value determination accounts for differences e.g. in the image histogram and "react" to this which mostly leads to a preferable feature extraction in comparison to fixed values.</li>
+<li>easy applicable to image stacks with differentiation between individual image histograms or the complete stack histogram.</li>
+<li>it's rapid (no fiddling) and perfectly serves automation e.g. in macros</li>
+</ol>
 
 In ImageJ and Fiji, there are so far 16 [[Auto_Threshold|Global Auto Thresholds]] and 9 [[Auto_Local_Threshold|Auto Local Thresholds]] implemented (by Gabriel Landini). Those do an excellent job for many intensity based images.
 
