@@ -92,17 +92,12 @@ Addtionally, there are many more algorithms published out there and you might wa
 Generally, there are different groups of algorithms for image binarization.
 (The following classification of methods is taken from Sezgin and Sankur, Survey over image thresholding techniques and quantitative performance evaluation, Journal of Electronic Imaging 13(1), 146–165 (January 2004).)
 
-1. histogram shape-based methods, where, for example, the peaks, valleys and curvatures of the smoothed histogram are analyzed.
-
-2. clustering-based methods, where the gray-level samples are clustered in two parts as background and foreground (object), or alternately are modelled as a mixture of two Gaussians.
-
-3. entropy-based methods result in algorithms that use the entropy of the foreground and background regions, the cross-entropy between the original and binarized image, etc.
-
-4. object attribute-based methods search a measure of similarity between the gray-level and the binarized images, such as fuzzy shape similarity, edge coincidence, etc.
-
-5. the spatial methods use higher-order probability distribution and/or correlation between pixels 
-
-6. local methods adapt the threshold value on each pixel to the local image characteristics.
+# Histogram shape-based methods, where, for example, the peaks, valleys and curvatures of the smoothed histogram are analyzed.
+# Clustering-based methods, where the gray-level samples are clustered in two parts as background and foreground (object), or alternately are modelled as a mixture of two Gaussians.
+# Entropy-based methods result in algorithms that use the entropy of the foreground and background regions, the cross-entropy between the original and binarized image, etc.
+# Object attribute-based methods search a measure of similarity between the gray-level and the binarized images, such as fuzzy shape similarity, edge coincidence, etc.
+# The spatial methods use higher-order probability distribution and/or correlation between pixels 
+# Local methods adapt the threshold value on each pixel to the local image characteristics.
 
 This list might not be comprehensive but gives a good idea about the extensive possibilities available.
 
