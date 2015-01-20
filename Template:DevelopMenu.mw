@@ -28,7 +28,7 @@
 }}
 
 {{Submenu | Developing plugins |
-{{MenuItem | [[Writing ImageJ2 plugins]] }}
+{{MenuItem | [[Writing plugins]] }}
 {{MenuItem | [[How_to_contribute_to_an_existing_plugin_or_library|Contributing to a plugin]] }}
 {{MenuItem | [[Distribution|Distributing your plugins]] }}
 | {{#ifeq:{{{1}}}|plugins||collapsed}}
