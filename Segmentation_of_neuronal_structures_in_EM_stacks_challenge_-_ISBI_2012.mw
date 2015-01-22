@@ -50,7 +50,7 @@ In order to evaluate and rank the performances of the participant methods, we wi
 The metrics are:
 
 * [[Minimum Splits and Mergers Warping error]], a segmentation metric that penalizes topological disagreements, in this case, the object splits and mergers.
-* '''Adapted Rand error''': defined as 1 - the maximal [http://en.wikipedia.org/wiki/F1_score F-score] of [http://en.wikipedia.org/wiki/Rand_index Rand index], a measure of similarity between two clusters or segmentations. On this version of Rand error we exclude the zero component of the original labels.
+* '''Foreground-restricted Rand error''': defined as 1 - the maximal [http://en.wikipedia.org/wiki/F1_score F-score] of the foreground-restricted [http://en.wikipedia.org/wiki/Rand_index Rand index], a measure of similarity between two clusters or segmentations. On this version of the Rand index we exclude the zero component of the original labels (background pixels of the ground truth).
 * '''Pixel error''': defined as 1 - the maximal [http://en.wikipedia.org/wiki/F1_score F-score] of pixel similarity, or squared Euclidean distance between the original and the result labels.
 
 If you want to apply these metrics yourself to your own results, you can do it within Fiji using this [[Segmentation evaluation metrics - Script|script]].
