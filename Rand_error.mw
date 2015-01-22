@@ -34,7 +34,7 @@ Here we instead define the closely related [[Rand error]], which is a measure of
 :<math> RE = 1 - RI</math>
 
 ==Implementation in Fiji==
-The [[Rand error]] metric is implemented in the [[Trainable Weka Segmentation]] library. Here is an example of how to use it in [[Beanshell_Scripting|Beanshell script]]:
+The [[Rand error]] metric is implemented in the [[Trainable Weka Segmentation]] library. Here is an example of how to use it in a [[Beanshell_Scripting|Beanshell script]]:
 
 <source lang=java>
 import trainableSegmentation.metrics.RandError;
