@@ -89,10 +89,11 @@ The [[Rand error]] can be used to compare segmentations in which regions are non
 The '''warping error''' can be distinguished from the [[Rand error]] in other respects. The '''warping error''' can penalize all kinds of topological errors, including the presence of holes and handles, but the [[Rand error]] penalizes only connectivity errors. In certain medical imaging situations, control of such aspects of topology is especially important. The [[Rand error]] mildly penalizes shifts in boundary location, while the '''warping error''' ignores them altogether. The '''warping error''' weights a topological error by the number of pixels involved in the error itself, while the [[Rand error]] weights a split or merger by the number of pixels in the objects associated with the errors.
 
 ==2D implementation in Fiji==
-The warping error metric is implemented for 2D images in the [[Trainable Weka Segmentation]] library. Here is an example of how to use it in [[Beanshell_Scripting|Beanshell script]]:
+The warping error metric is implemented for 2D images in the [[Trainable Weka Segmentation]] library. Here is an example of how to use it in a [[Beanshell_Scripting|Beanshell script]]:
 
 <source lang=java>
 import trainableSegmentation.metrics.WarpingError;
+import ij.IJ;
 
 // original labels
 originalLabels = IJ.openImage("/path/original-labels.tif");
