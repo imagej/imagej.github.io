@@ -56,6 +56,8 @@ IJ.log("Rand error between source image " + originalLabels.getTitle() + " and ta
 
 </source>
 
+==See also==
+* [[Topology preserving warping error]].
 ==References==
 
 <references/>
