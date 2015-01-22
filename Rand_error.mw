@@ -38,6 +38,7 @@ The [[Rand error]] metric is implemented in the [[Trainable Weka Segmentation]] 
 
 <source lang=java>
 import trainableSegmentation.metrics.RandError;
+import ij.IJ;
 
 // original labels
 originalLabels = IJ.openImage("/path/original-labels.tif");
