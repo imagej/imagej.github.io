@@ -52,7 +52,7 @@ $ mvn
 And finally, let's build the project and install it into the ''Fiji.app/'' directory:
 
 <source lang="bash">
-$ mvn -Dimagej.app.directory=$HOME/Desktop/Fiji.app/
+$ mvn -Dimagej.app.directory=$HOME/Desktop/Fiji.app/ -Ddelete.other.versions=true
 [INFO] Scanning for projects...
 [... lots and lots of interesting and useful information ...]
 [INFO]
