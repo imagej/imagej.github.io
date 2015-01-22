@@ -5,20 +5,22 @@ Just copy/paste it in the [[Script Editor]] or save it into a .bsh file and run 
 <source lang=java>
 /**
  * Script to calculate the segmentation error between some 2D 
- * original labels and their corresponding proposed labels as 
- * they were used in the ISBI-2012 challenge. 
+ * original labels and their corresponding proposed labels. 
  * 
  * The evaluation metrics are:
  *  - Pixel error: 1 - maximal F-score of pixel similarity
  *  - Minimum Splits & Mergers Warping error
- *  - Adapted Rand error: 1 - maximal F-score of Rand index
+ *  - Foreground-restricted Rand error: 1 - maximal F-score of 
+ *    foreground-restricted Rand index
  * 
  * @author Ignacio Arganda-Carreras (iarganda@mit.edu)
+ * @version January 22, 2015
  */
  
-import ij.*;
-import ij.gui.GenericDialog;
 import trainableSegmentation.metrics.*;
+import ij.WindowManager;
+import ij.gui.GenericDialog;
+import ij.IJ;
 
  
 // Get the list of images that are open
@@ -48,7 +50,7 @@ gd.addChoice( "Proposal", titles, current.equals( titles[ 0 ] ) ? titles[ 1 ] : 
 gd.addMessage( "Segmentation error metrics:" );
 gd.addCheckbox( "Maximal F-score pixel_error", true );
 gd.addCheckbox( "Minimum split-mergers ratio", true );
-gd.addCheckbox( "Maximal F-Score Rand index", true );
+gd.addCheckbox( "Maximal F-Score foreground-restricted Rand index", true );
 
 gd.showDialog();
          
@@ -90,16 +92,11 @@ if( calculateWarpingError )
  
 if( calculateRandError )
 {   
-    IJ.log("\nCalculating maximal F-score of Rand index...");
+    IJ.log("\nCalculating maximal F-score of the foreground-restricted Rand index...");
     metric = new RandError( originalLabels, proposedLabels );
-    maxFScore = metric.getRandIndexMaximalFScore( 0.0, 1.0, 0.1 );	
-    IJ.log("  Minimum Adapted Rand error: " + (1.0 - maxFScore) );     
-}
-
-
-
-
-		
+    maxFScore = metric.getForegroundRestrictedRandIndexMaximalFScore( 0.0, 1.0, 0.1 );  
+    IJ.log("  Minimum foreground-restricted Rand error: " + (1.0 - maxFScore) );     
+}		
 </source>
 
 If you run it, the following dialog will pop up:
