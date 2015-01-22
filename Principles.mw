@@ -6,9 +6,9 @@ In the context of science, digital images are samples of information, sampled at
 
 == What are pixel values? ==
 
-Human visual perception is very good at certain tasks, such as contrast correction, detecting subtle differences in bright colors, but notoriously bad with other things, such as discerning dark colors, or classifying colors without appropriate reference.  It is therefore very important to keep in mind that the pixel values are numbers, not colors.
+Human visual perception is very good at certain tasks, such as contrast correction and detecting subtle differences in bright colors, but notoriously bad with other things, such as discerning dark colors, or classifying colors without appropriate reference.  Our brains process and filter information, so that we perceive visually only after we 1) "see" light information that enters our eyes and interacts with the environment of the eye and eventually individual cells in our retinas, and 2) process the signal in the context of our brains. It is therefore very important to keep in mind that the pixel values in digital images are numbers, not subjective experiences of color. These numbers represent how light or some other type of signal entered the instrument we are using and interacted with its environment and eventually triggered sensors in the instrument that further processed the information into a digital output.
 
-For example, when you recorded an image using a confocal microscope, the values you get at a certain coordinate are not color values, but relate to photon counts.
+For example, when you record an image using a light gathering device such as a confocal microscope, the values you get at a certain coordinate or pixel are not color values, but relate to photon counts. This is an essential point to start with for understanding this topic.
 
 == Pixels are not little squares ==
 
