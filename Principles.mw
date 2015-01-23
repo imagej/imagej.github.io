@@ -108,7 +108,7 @@ This list might not be comprehensive but gives a good idea about the extensive p
 == What else is critical during binarization and further object analysis? ==
 
 <ol type="a">
-<li>'''Image acquisition:''' It is indispensable that during imaging the field of view be equally lit, and that this is checked and adjusted if necessary. Besides other disadvantages (e.g., no reliable intensity measurements), unequal lighting profoundly influences the outcome of thresholding, especially the global ones. Furthermore, a higher signal-to-noise ratio, in e.g., fluorescence based images, will positively influence extraction by thresholding. </li>
+<li>'''Image acquisition:''' It is indispensable that during imaging the field of view be equally lit, and that this is checked and adjusted if necessary. Besides other disadvantages (e.g., no reliable intensity measurements), unequal lighting profoundly influences the outcome of thresholding methods, especially global ones. Furthermore, a higher signal-to-noise ratio, in e.g., fluorescence based images, will positively influence extraction by thresholding. </li>
 
 <li>'''Pre-processing:''' Since the basis of any cut-off value during thresholding is pixel values, any change in those after image acquisition will also influence the final binarization result. Thus, the user needs to apply wisely methods that adjust brightness and contrast or any image filters, to not degrade but instead enhance the features of interest, fostering the binarization process. It may not be feasible to apply the same process to all images. In general, all pre-processing should be quantitated and recorded to ensure work is reproducible. </li>
 
