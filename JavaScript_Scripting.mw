@@ -746,7 +746,7 @@ See the complete file here: {{GitHub|repo=fiji|path=plugins/Examples/Multithread
 
 = Links =
 * [http://www.mozilla.org/rhino/tutorial.html Tutorial] at Mozilla Rhino webpages.
-* [http://www.mozilla.org/rhino/ScriptingJava.html Scripting java with Javascript].
+* [https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Scripting_Java Scripting Java with JavaScript].
 * [http://www.mozilla.org/rhino/perf.html Performance tips].
 
 See also the [[Scripting comparisons]].
