@@ -349,7 +349,7 @@ Future: Suggestions are welcome!
 
 ----
 
-=2D Particle Analysis=
+=2D Particle Distribution=
 ('''formerly: Distribution Analysis''', name changed due to redundency with BoneJ function naming)
 
 Purpose: This macro statistically determines if particles (according to their ultimate eroded point, UEP) in a 2D image are likely to be randomly distributed, self-avoiding or build clusters.
