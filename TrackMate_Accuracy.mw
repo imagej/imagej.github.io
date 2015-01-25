@@ -108,7 +108,16 @@ Finally, for SNR<4, I filtered out tracks that had less than 4 detections.
 === Results. ===
 
 
+
+
 ==== Microtubule scenario. ====
+
+This scenario probes how well the TrackMate algorithms fare against a roughly constant velocity motion model. Unsurprisingly, the linear motion tracker performs the best and resits well against high density of particles. 
+
+The LAP tracker does not perform well, even in the ideal case, as it expects the average particle position to be constant at least on short timescales, when it does not. Therefore, it performance approaches the worst-case scenario given by the nearest-neighbor search algorithm. 
+
+The RMSE on particle position is the worst here over the 4 scenarios. This is the obvious consequence of the particle shape, which is asymmetric and elongated, when the LoG detector expects bright blobs. Still, this does not affect tracking results.
+
 
 [[File:TrackMate MICROTUBULE LAP Brownian motion, Linear motion tracker &amp; Nearest neighbor.png|600px]]
 
