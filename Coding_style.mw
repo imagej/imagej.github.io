@@ -68,11 +68,13 @@ For consistency, we prefer the following order for code blocks within a class:
 # Protected event handler methods (labeled "-- Event handlers --").
 # Any other protected methods (labeled "-- Internal methods --").
 # Private methods (labeled "-- Helper methods --").
- 
+# Deprecated methods (labeled " -- Deprecated methods --").
+# Inner types (labeled "-- Helper classes --"). 
+
 We also try to label each section of code separately; i.e., each class's and interface's methods are labeled and grouped separately.
 
 Even though modern IDEs provide a lot of functionality for understanding where methods and variables come from, we still believe this ordering makes it easier to find what you are looking for in code.
- 
+
 == Private over protected fields and methods ==
  
 We prefer use of private fields and methods over protected ones, where possible. While non-private fields can be a convenient construct for classes intended to be subclassed, there are several disadvantages to using them:
