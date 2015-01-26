@@ -114,7 +114,7 @@ Finally, for SNR<4, I filtered out tracks that had less than 4 detections.
 
 The results for each scenario is presented and commented below. Since we used the same detector for all scenarios, all the measures have s common shape for their dependence on SNR.
 
-Basically, accuracy is the same for SNR ≥ 4. Below SNR = 3 included, the detector is unable to reliably finds all the particles. For a SNR of 2 and 3, it still finds a subset of correct particles, amongst the brightest. At a SNR of 1, detection results are dominated by spurious detections, and the particle linking algorithm performance does not matter anymore. All are equally bad, since they track the wrong particles. 
+Basically, accuracy is the same for SNR ≥ 3. Below SNR = 2 included, the detector is unable to reliably finds all the particles. For a SNR of 2, it still finds a subset of correct particles, amongst the brightest. At a SNR of 1, detection results are dominated by spurious detections, and the particle linking algorithm performance does not matter anymore. All are equally bad, since they track the wrong particles. 
 
 
 
@@ -162,9 +162,6 @@ As for the receptor scenario, TrackMate does not have a specific tracker for thi
 Also, this scenario was the only one to ship 3D data over time. Thanks to ImgLib2 dimensional genericity, TrackMate does not mind.
 
 [[File:TrackMate VIRUS LAP Brownian motion, Linear motion tracker &amp; Nearest neighbor.png|600px]]
-
-
-
 
 == References. ==
 
