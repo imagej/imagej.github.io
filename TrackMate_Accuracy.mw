@@ -54,6 +54,39 @@ to check how a tracking algorithm behaves when particles get very dense.
 
 Also, particles SNR spans several values: 1, 2, 4, 7 (plus 3 for the RECEPTOR scenario). As said on the [http://bioimageanalysis.org/track/ challenge page]: "SNR=4 is a critical level at which methods may start to break down".
 
+
+=== Example images from the challenge dataset. ===
+
+Below are shown typical images taken from the challenge.
+
+==== Varying particle density. ====
+
+<gallery caption="From the VESICLE scenario.">
+File:VESICLE snr 7 density low-1.png|Low density
+File:VESICLE snr 7 density mid-1.png|Medium density
+File:VESICLE snr 7 density high-1.png|High density 
+</gallery>
+
+Contrast stretched to the 0-150 8-bit range.
+
+==== Varying particle SNR. ====
+
+<gallery caption="From the RECEPTOR scenario.">
+File:RECEPTOR snr 7 density low-1.png|SNR = 7
+File:RECEPTOR snr 4 density low-1.png|SNR = 4
+File:RECEPTOR snr 3 density low-1.png|SNR = 3
+File:RECEPTOR snr 2 density low-1.png|SNR = 2
+File:RECEPTOR snr 1 density low-1.png|SNR = 1
+</gallery>
+
+Contrast stretched to the 0-50 8-bit range.
+
+==== The MICROTUBULE scenario particle shape. ====
+
+<gallery >
+File:MICROTUBULE snr 4 density mid-1.png|MICROTUBULE, SNR = 4, density = mid
+</gallery>
+
 === Accuracy measurements. ===
 
 For each scenario and condition, the method returns numerous values that characterizes the accuracy of a tracking algorithm. They are detailed on [http://bioimageanalysis.org/track/PerformanceMeasures.pdf this technical paper]. We plot below only three of them:
