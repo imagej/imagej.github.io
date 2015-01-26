@@ -8,6 +8,28 @@ If your Java code seems to have bottlenecks that make it run slow, you need to '
 
 Use [http://java.sun.com/developer/technicalArticles/Programming/HPROF.html HPROF], a profiler included in Sun's Java since version 1.5.
 
+== Java Mission Control ==
+
+Starting with Java 1.7 update 40, Oracle bundles [http://www.oracle.com/technetwork/java/javaseproducts/mission-control/index.html Java Mission Control] with their JREs/JDKs. This provides incredibly powerful monitoring/profiling capabilities, but it is notably lacking from OpenJDK.
+
+The most important part of Java Mission Control to enable efficient profiling is the ''Flight Recorder''. The flight recorder has to be enabled explicitly at startup:
+
+<source lang="bash">
+java -XX:+UnlockCommercialFeatures -XX:+FlightRecorder [...]
+</source>
+
+The easiest way to use the flight recorder to profile a certain code path, say, from Eclipse, is to write a JUnit test (make sure that the time it runs is dominated by the code paths you want to profile!) and then add a run configuration for it whose JVM arguments include:
+
+<source lang="bash">
+-Dscijava.log.level=error \
+-XX:+UnlockCommercialFeatures -XX:+FlightRecorder \
+-XX:StartFlightRecording=name=MyRecording,duration=999s,filename=/tmp/a1.jfr,settings=profile
+</source>
+
+(Of course you want to avoid copying this blindly and adjust in particular the '''duration''' and the '''filename''' parameters.)
+
+After the JUnit test finishes, call ''Java Mission Control'' via the <code>jmc</code> executable (it lives in the JDK's ''bin/'' directory), ''File>Open File'' the ''.jfr'' file, click on the ''Code'' button in the center of the Mission Control window, select the ''Hot Methods'' tab of the big panel (confusingly, the tabs are at the bottom) and inspect the stack traces.
+
 == VisualVM ==
 
 Use [http://download.oracle.com/docs/cd/E17409_01/javase/6/docs/technotes/guides/visualvm/index.html VisualVM] (a tutorial can be found [http://java.dzone.com/articles/profile-your-applications-java here]), which is a graphical alternative to HPROF, available in Sun's Java since version 6 update 7.
