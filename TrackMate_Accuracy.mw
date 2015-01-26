@@ -66,7 +66,7 @@ For each scenario and condition, the method returns numerous values that charact
 
 === Parameter used. ===
 
-Unless otherwise specified below, I always used the LoG detector as a spot detector, with an estimated particle diameter of 4, and used sub-pixel accuracy. For SNR below 4, this detector was completely confused and the detection results are dominated by noise. I did not make anything special to improve its sensitivity below this limit.
+Unless otherwise specified below, I always used the LoG detector as a spot detector, with an estimated particle diameter of 2, and used sub-pixel accuracy. For SNR below 4, this detector was completely confused and the detection results are dominated by noise. I did not make anything special to improve its sensitivity below this limit.
 
 When the histogram of detection quality returned by the detector as not bimodal, I pick a quality threshold that yielded approximately the expected number of particles in the sequence.
 
@@ -104,11 +104,6 @@ The three spot trackers were configured as indicated in the table below. It's no
 |}
 
 Finally, for SNR<4, I filtered out tracks that had less than 4 detections.
-
-
-
-
-
 
 === Results. ===
 
