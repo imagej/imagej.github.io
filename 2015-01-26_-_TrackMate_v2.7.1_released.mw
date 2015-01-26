@@ -5,11 +5,19 @@ This version ships a new tracker algorithm for TrackMate, that can deal specific
 
 The LAP trackers previously available in TrackMate had a cost calculation based on the square distance between two particles. This kind of costs dealt specifically with Brownian motion. TrackMate allowed to tune these costs with numerical features differences to better deal with motion model that were not brownian or dense particles. 
 
-But a tracker that deals specifically with a new motion model is welcome, in particular when it is as common as linear motion.
+But a tracker that deals specifically with a new motion model is welcome, in particular when it is as common as linear motion. Its principles is detailed  [[TrackMate_algorithms#Linear_motion_tracker|here]].
+
+[[File:TrackMate KalmanTrackerPrinciple.png|600px]]
+
+
+
 
 To assess the performance of the new and old trackers, we re-run the ISBI tracking challenge from 2012<ref name="ISBIpaper"> [http://www.nature.com/nmeth/journal/v11/n3/full/nmeth.2808.html Chenouard ''et al.'', "Objective comparison of particle tracking methods", '''Nature Methods, 2014 ''']</ref>. We put all the results on a single page: [[TrackMate Accuracy]] that should help you decide what is the algorithm that suits your problem best. For instance:
 
-[[File:TrackMate RECEPTOR LAP Brownian motion, Linear motion tracker &amp; Nearest neighbor.png|600px]]
+
+
+
+[[File:TrackMate RECEPTOR LAP Brownian motion, Linear motion tracker &amp; Nearest neighbor.png|300px]]
 
 
 
