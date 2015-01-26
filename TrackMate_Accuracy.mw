@@ -64,6 +64,9 @@ For each scenario and condition, the method returns numerous values that charact
 
 * The <b>RMSE of detection positions</b> that quantifies how precise is the location of the detected particles. The smaller the better.
 
+
+I fully relied on [[Icy]] to compute these values. TrackMate ships an action that exports tracking results to the XML format imposed by the ISBI challenge, and that can be found [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/action/ISBIChallengeExporter.java here]. I generated these files for all the conditions of a scenario, and used the [http://icy.bioimageanalysis.org/plugin/ISBI_Tracking_Challenge_Batch_Scoring Icy ISBI challenge scoring plugin] to yield metrics. I then used MATLAB to plot them.
+
 === Parameter used. ===
 
 Unless otherwise specified below, I always used the LoG detector as a spot detector, with an estimated particle diameter of 2, and used sub-pixel accuracy. For SNR below 4, this detector was completely confused and the detection results are dominated by noise. I did not make anything special to improve its sensitivity below this limit.
