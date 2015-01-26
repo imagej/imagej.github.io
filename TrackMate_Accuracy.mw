@@ -161,6 +161,20 @@ Also, this scenario was the only one to ship 3D data over time. Thanks to ImgLib
 
 [[File:TrackMate VIRUS LAP Brownian motion, Linear motion tracker &amp; Nearest neighbor.png|600px]]
 
+
+
+=== Comments. ===
+
+These results should help you pick the right algorithm for your problems, and maybe encourage you to implement your own. As said before, a deeper interpretation of these metrics in the general case is found in the original paper<ref name="ISBIpaper"/>. Here are a few things specific to the current version of TrackMate.
+
+
+==== What was in the challenge that TrackMate did not exploit. ====
+
+We saw that at low SNR, the detection step dominates and its inability to robustly detect faint particles is the cause for low scores. Here I did not try to improve the detection results via pre-processing. One could have denoised the image, or averaged succeeding frames to improve the SNR. Or a better detector could have dealt with low SNR in a better way (the [[Low Light Tracking Tool]] maybe).
+
+
+
+
 == References. ==
 
 <references/>
