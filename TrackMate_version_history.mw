@@ -212,3 +212,7 @@ TrackMate version bumped by several increments, prompted by the [[2014-12-10 - I
 == 09-01-2015 - v2.6.5 ==
 
 * Put some sensible defaults when presented an image with no metadata.
+
+== 26-01-2015 - v2.7.1 ==
+
+* Add a new tracking algorithm: [[TrackMate_algorithms#Linear_motion_tracker|the linear motion LAP tracker]].
