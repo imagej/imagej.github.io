@@ -121,7 +121,7 @@ c & d\end{array}\right)</math> are calculated thus:
 ** Determinant: <math>ad-cb</math>.
 ** First eigenvalue: <math>\frac{a+d}{2}+\sqrt{\tfrac{4b^{2}+(a-d)^{2}}{2}}</math>.
 ** Second eigenvalue: <math>\frac{a+d}{2}-\sqrt{\tfrac{4b^{2}+(a-d)^{2}}{2}}</math>.
-** Orientation: <math>\frac{1}{2}\arccos\left(4b^{2}+(a-d)^{2}\right)</math> This operation returns th/* Training features */ e orientation for which the second derivative is maximal. It is an angle returned in radians in the range <math>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</math> and corresponds to an orientation without direction. The orientation for the minimal second derivative can be obtained by adding (or subtracting) <math>\frac{\pi}{2}</math>.
+** Orientation: <math>\frac{1}{2}\arccos\left(4b^{2}+(a-d)^{2}\right)</math> This operation returns the orientation for which the second derivative is maximal. It is an angle returned in radians in the range <math>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</math> and corresponds to an orientation without direction. The orientation for the minimal second derivative can be obtained by adding (or subtracting) <math>\frac{\pi}{2}</math>.
 ** Gamma-normalized square eigenvalue difference: <math>t^{4}(a-d)^{2}\left((a-d)^{2}+4b^{2}\right)</math>, where <math>t=1^{3/4}</math>.
 ** Square of Gamma-normalized eigenvalue difference: <math>t^{2}\left((a-d)^{2}+4b^{2}\right)</math>, where <math>t=1^{3/4}</math>.
 * '''Difference of gaussians''': calculates two [http://en.wikipedia.org/wiki/Gaussian_blur Gaussian blur] images from the original image and subtracts one from the other. <math>\sigma</math> values are again set to <math>1, 2, 4... 2^{n}</math> , so <math>(n-1)!</math> feature images are added to the stack.
