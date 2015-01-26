@@ -168,12 +168,17 @@ Also, this scenario was the only one to ship 3D data over time. Thanks to ImgLib
 These results should help you pick the right algorithm for your problems, and maybe encourage you to implement your own. As said before, a deeper interpretation of these metrics in the general case is found in the original paper<ref name="ISBIpaper"/>. Here are a few things specific to the current version of TrackMate.
 
 
+The parameters and strategy used for this accuracy assessment are pretty basic and unelaborated. This way, results give the 'raw' accuracy, before a user exploits the deeper specificity of their problem. The two sections below quickly list what we could have done and could not have done even if we wanted to improve results.
+
 ==== What was in the challenge that TrackMate did not exploit. ====
 
 We saw that at low SNR, the detection step dominates and its inability to robustly detect faint particles is the cause for low scores. Here I did not try to improve the detection results via pre-processing. One could have denoised the image, or averaged succeeding frames to improve the SNR. Or a better detector could have dealt with low SNR in a better way (the [[Low Light Tracking Tool]] maybe).
 
+==== What is in TrackMate that we could not exploit for the challenge. ====
 
+The LAP trackers were the first trackers to be shipped with TrackMate. They are a stripped down version of. They are based solely on square distance costs (Brownian motion), but they can be modulated by a penalty factor based on numerical features. For instance, the cost to link two particles can be penalized if their mean intensity is too different. 
 
+The challenge data does offer that possibility: all particles have roughly the same shape and intensity (modulo some minor variations in SNR). An exception is the MICROTUBULE scenario, where particles have an elongated shape. Therefore, we could have computed an orientation for them, and penalize two particles with different orientation (assuming - correctly - that orientation remains roughly the same between two frames).
 
 == References. ==
 
