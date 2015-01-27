@@ -1,9 +1,24 @@
-<html>
-<head>
-  <title>DiameterJ: A Validated Open Source Nanofiber Diameter Measurement Tool</title>
-</head>
-<body>
-  DiameterJ is an ImageJ plugin that allows for the measurement
-of nano- or microfibers in SEM micrographs.  DiameterJ 
-</body>
-</html>
+== DiameterJ: A Validated Open Source Nanofiber Characterization Tool ==
+
+
+'''DiameterJ''' is a free, open source plugin created for ImageJ, ImageJ 2.X, and FIJI.  DiameterJ is able to analyze an image and find the diameter of nano- or microfibers at every pixel along a fiber and produces a histogram of these diameters.  Included with this histogram are summary statistics such as mean fiber diameter and most occurring fiber diameter (mode).   DiameterJ also bundles [http://bigwww.epfl.ch/demo/orientation/ OrientationJ] for a complete analysis of fiber orientation within an image.  
+
+=== Installation ===
+
+
+=== How to Use DiameterJ ===
+
+
+=== Output ===
+
+
+=== How it Works ===
+
+
+=== Complementary Tools ===
+
+
+=== References ===
+
+
+=== External Links ===
