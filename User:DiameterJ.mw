@@ -8,90 +8,16 @@ Click the download link below for each version of DiameterJ (See [[#Installation
 ImageJ 1.49a or older
 [http://imagej.net/File:DiameterJ_1.003.zip download] 
 
+ImageJ 1.49b or Newer (Including ImageJ 2.XXX)
+[http://imagej.net/File:DiameterJ_2.003.zip download] 
+
+FIJI any version
+[http://imagej.net/User:DiameterJ Coming Soon]
+
 __TOC__
 
 === Overview ===
 DiameterJ has been validated with over 130 digital images created ''in silico'' and with scanning electron microscope images of reference wires with known diameters.  To see the full publication that details how DiameterJ was validated and how it works please go to [Coming Soon]. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 === Installation ===
@@ -100,7 +26,7 @@ DiameterJ has been validated with over 130 digital images created ''in silico'' 
 === How to Use DiameterJ ===
 
 
-=== Output ===
+=== DiameterJ Output ===
 
 
 === How it Works ===
