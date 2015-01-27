@@ -3,6 +3,8 @@
 
 '''DiameterJ''' is a free, open source plugin created for ImageJ, ImageJ 2.X, and FIJI.  DiameterJ is able to analyze an image and find the diameter of nano- or microfibers at every pixel along a fiber and produces a histogram of these diameters.  Included with this histogram are summary statistics such as mean fiber diameter and most occurring fiber diameter (mode).   DiameterJ also bundles [http://bigwww.epfl.ch/demo/orientation/ OrientationJ] for a complete analysis of fiber orientation within an image.  
 
+__TOC__
+
 === Installation ===
 
 
