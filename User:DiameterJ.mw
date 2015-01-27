@@ -16,11 +16,12 @@ FIJI any version [http://imagej.net/User:DiameterJ - Coming Soon]
 
 __TOC__
 
-=== Overview ===
+=== <big>Overview</big> ===
+----
 DiameterJ is a two step process of image analysis:
 
 # Image Segmentation into a binary image (black and white pixels only)
-#*Fourteen default segmentation algorithms have been included with DiameterJ in the "Segment SRM" and "Segment Mixed" plugins.  However, these algorithms may not work for all SEM images.  
+#*Sixteen default segmentation algorithms have been included with DiameterJ in the "Segment SRM" and "Segment Mixed" plugins.  However, these algorithms may not work for all SEM images.  
 #*If the user is not happy with the results of the segmentation algorithms (i.e. the black and white images do not produce an accurate representation of the original image) then DiameterJ will still work with any binary image that has been segmented through some other means.
 # Analysis of Segmented image
 #*DiameterJ has been validated with over 130 digital images created ''in silico'' and with scanning electron microscope images of reference wires with known diameters.  
@@ -31,29 +32,75 @@ If you would like to cite DiameterJ in your work citation information can be fou
 ; Citation
 : Hotaling NA, Bharti K, Kriel H, Simon CG.  Validated Open Source Nanofiber Diameter Measurement Tool.  ''PLOS One'', ''Submitted.''
 
-=== Installation ===
-Download and install [http://rsb.info.nih.gov/ij/download.html ImageJ 1.48] or newer or [http://fiji.sc/Downloads Fiji] (any version).  
-
-: If you installed imageJ before the end of 2013 you should uninstall your current version of ImageJ ('''DO NOT UPDATE''') and reinstall ImageJ 1.48 or newer. 
+=== <big>Installatio</big>n ===
+----
+If you installed imageJ before the end of 2013 you should uninstall your current version of ImageJ ('''DO NOT UPDATE''') and reinstall ImageJ 1.48 or newer. 
 :*Before uninstall be sure to copy all of your old plugins into a separate folder as these will be removed when you uninstall your old version of ImageJ.  
-:*We recommend ImageJ over Fiji if you have no experience with either software because it is simpler to use and the plugin is buggy in Fiji.  Soon a version will be released that will work for both but for now I recommend ImageJ.    
+:*We recommend ImageJ over Fiji if you have no experience with either software because it is simpler to use and the plugin is buggy in Fiji.  
+:::Soon a version will be released that will work for both but for now I recommend ImageJ.    
 ==== Windows ====
-#Download and unzip the DiameterJ files (Find in "Source" above) and move or copy the three folders into the plugins folder of ImageJ.  
-#That should be in directory:
-#:"C:\Program Files\ImageJ\plugins"
-#:::Or 
-#:"C:\Program Files (x86)\ImageJ\plugins"
-#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
-#Restart ImageJ 
+:Download and install [http://rsb.info.nih.gov/ij/download.html ImageJ 1.48] or newer or [http://fiji.sc/Downloads Fiji] (any version).  
+:#Download and unzip the DiameterJ files (Find in "Source" above) and move or copy the three folders into the plugins folder of ImageJ.  
+:#That should be in directory:
+:#:"C:\Program Files\ImageJ\plugins"
+:#:::Or 
+:#:"C:\Program Files (x86)\ImageJ\plugins"
+:#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
+:#Restart ImageJ 
 ==== OSX ====
-
+:Follow instructions [http://rsb.info.nih.gov/ij/docs/install/osx.html#dandd Here] or [http://fiji.sc/MacOSX_tips Here] for installation of ImageJ/FIJI on OSX 
 ==== Linux ====
-#Download and unzip the DiameterJ files (Find in "Source" above) 
-#Move or copy the three folders into the plugins folder of the directory where you have placed ImageJ.  
-#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
-#Restart ImageJ 
+:#Download and unzip the DiameterJ files (Find in "Source" above) 
+:#Move or copy the three folders into the plugins folder of the directory where you have placed ImageJ.  
+:#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
+:#Restart ImageJ 
 
-=== How to Use DiameterJ ===
+=== <big>How to Use DiameterJ</big> ===
+----
+====<big>Image Segmentation</big>====
+#Go to:  “Plugins-->DiameterJ-->Segment Mixed” or “Plugins-->DiameterJ-->Segment SRM” to segment images
+#*Each uses a different set of 8 algorithms to analyze and segment your images
+#Choose the directory of the file you want to segment
+#*If you only want DiameterJ to segment a single image you will need to create a folder in which only that image is present
+#Segment XXX will then ask if you want to crop your image.  If you do then it will ask what the height and width in pixels you want to crop your images to.  
+#*The crop box begins at the top left of your image
+#**''If your image is 1280x960 and you want to crop out the scale bar at the bottom which takes up 100 of the bottom pixels of the image then you would say the width is 1280 while the height is 860''
+#The code will then produce three folders in the folder where the image that you selected for analysis is located.  One folder called “Best Segmentation” another called “Montage Images” and the third called “Segmented Images"
+#*The “Best Segmentation” folder contains no images
+#*“Montage Images” have a comparison of the original image to the 8 different segmentation methodologies.  Look at the montage images and find the image with the most accurate representation of your fibers
+#**''Remember, not all fibers need to be included in the segmentation for it to be a “good” segmentation.  The fibers just need to be without significant holes, edge defects, or too densely packed for the program to analyze them. (the program does not analyze intersections of fibers)''
+#**''File names are on the bottom of the images in Red''
+#*The “Segmented Images" folder has all of the segmented images from the montage images 
+#Copy and paste the best segmentation into the “Best Segmentation” folder
+#Visually inspect these images to make sure that the segmentation worked well and that the segmentation represents the image you want to analyze
+#*If it does not try the other segmentation algorithm
+#*If none of the 16 algorithms segment your image well you can take the best segmentation and manually fix the errors to accurately reproduce the fibers.  This process is slow and so not recommended if it can be avoided.
+#After copying the best image into the “Best Segmentation” folder delete all unused images/montage images
+#*Approximately 2% of the time none of the algorithms included will provide a good segmentation.  (Based on our experience)
+#*If that is the case you will need to either repeat your imaging with better contrast/brightness between the background and what you are trying to measure or you can find/implement a different algorithm that works better
+#*We recommend one of the following if default segmentation did not work: 
+#**''[http://imagej.net/Trainable_Weka_Segmentation_-_How_to_install_new_classifiers| Trainable Weka Segmentation] machine learning segmentation implementation''
+#**''[http://rsbweb.nih.gov/ij/plugins/canny/index.html| Canny Edge Detection] and then fill the resulting image outline in with black''
+#**''Auto local threshold (in ImageJ/FIJI at Image-->Adjust-->Auto Local Threshold)''
+#**''Auto threshold (in ImageJ/FIJI at Image-->Adjust-->Local Threshold)''
+#**''Manually outline the foreground and background with the free hand selection tool and fill the selections with black (background) and white (fibers)'' 
+#**''Develop your own algorithm!''
+====<big>DiameterJ Analysis</big>====
+'''''Analyzed images MUST be white fibers on a black background.  If you have black fibers on a white background invert the image to analyze it with DiameterJ.'''''
+
+; In ImageJ go to:
+: “Plugins-->DiameterJ-->DiameterJ 0.XXX” to analyze the segmented image.  
+ 
+Choose the directory of the file you want to analyze (right now it’s in batch form so if you only want to analyze one file move it into a folder by itself and select that folder.  I intend to post both a batch and non-batch form of the segmentation and DiameterJ code but haven’t made the non-batch form yet.)
+ 
+DiameterJ will then analyze all images in the directory and will separate its analysis into three folders “Diameter Analysis Images”, “Histograms”, and “Summaries.”  They are pretty self-explanatory. 
+ 
+The “xxx_Total Summary.xls” file in the “Summaries” folder will give you all of the metrics summarized.  Generally, the histogram average is most accurate when multiple fiber diameters are not present and the super pixel average is the most accurate when multiple fiber diameters are present.  However, these metrics are global averages of diameter and can be easily biased if the diameter histogram analyzed has a non-normal distribution (i.e. multiple peaks, significant noise leading or trailing from the peak, etc.).  It is strongly recommend that you perform a peak fit of the diameter histogram to obtain a more accurate measure if the radius histogram image (shown in the "Histograms" folder) shows a non-normal distribution or multiple peaks.  
+ 
+Peak fitting is also recommended if you would like to analyze replicate images of a single sample.  To do this we recommend that you copy and paste all histograms from replicate images into one file, sum the frequency at each radius value and then save the resulting file as a .csv.  (Make sure all combined images have been taken at the same magnification or their radius values are scaled appropriately).
+ 
+If you want a more accurate analysis, want to combine histograms from multiple images OR you want to determine multiple diameter peaks from a single image or set of images then do the below:  
+
 
 
 === DiameterJ Output ===
