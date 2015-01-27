@@ -24,6 +24,7 @@ DiameterJ is a two step process of image analysis:
 #*Sixteen default segmentation algorithms have been included with DiameterJ in the "Segment SRM" and "Segment Mixed" plugins.  However, these algorithms may not work for all SEM images.  
 #*If the user is not happy with the results of the segmentation algorithms (i.e. the black and white images do not produce an accurate representation of the original image) then DiameterJ will still work with any binary image that has been segmented through some other means.
 # Analysis of Segmented image
+#*All measures given by DiameterJ are in pixels by default
 #*DiameterJ has been validated with over 130 digital images created ''in silico'' and with scanning electron microscope images of reference wires with known diameters.  
 #*To see the full publication that details how DiameterJ was validated and how it works please go to [Coming Soon]. 
 
@@ -55,6 +56,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 :#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
 :#Restart ImageJ 
 
+
 === <big>How to Use DiameterJ</big> ===
 ----
 ====<big>Image Segmentation</big>====
@@ -85,6 +87,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 #**''Auto threshold (in ImageJ/FIJI at Image-->Adjust-->Local Threshold)''
 #**''Manually outline the foreground and background with the free hand selection tool and fill the selections with black (background) and white (fibers)'' 
 #**''Develop your own algorithm!''
+
 ====<big>DiameterJ Analysis</big>====
 '''''Analyzed images MUST be white fibers on a black background.  If you have black fibers on a white background invert the image to analyze it with DiameterJ.'''''
 
@@ -100,8 +103,51 @@ The “xxx_Total Summary.xls” file in the “Summaries” folder will give you
 Peak fitting is also recommended if you would like to analyze replicate images of a single sample.  To do this we recommend that you copy and paste all histograms from replicate images into one file, sum the frequency at each radius value and then save the resulting file as a .csv.  (Make sure all combined images have been taken at the same magnification or their radius values are scaled appropriately).
  
 If you want a more accurate analysis, want to combine histograms from multiple images OR you want to determine multiple diameter peaks from a single image or set of images then do the below:  
+#Open the file with “xxx_histogram.csv” in the histograms folder, using Fityk (free - windows only) or Igor Pro (not free)
+#For Fityk go to Data-->Load File
+#Select the file labeled xxxx_Histogram.csv in the “Histograms” directory
+#Select the column with the radius values (column 10) as x and the column with the frequency/summed frequency (column 11) as y and then peak fit the histogram as per the tutorial here or for more complex fitting here  
+#*Generally we use Gaussian curves but occasionally the curves are clearly Lorentzian or LogNormal 
+#*To change the fit to a peak other than Gaussian go to Functions-->Function Type and select the appropriate fit function
+#After peak fitting save the peak information by going to (Functions-->Export Peak Parameters)
+#For Gaussian peaks (most common) the “Center” of each peak is the average 
+#*The FWHM can be transformed into the standard deviation of the radius by dividing the FWHM by 2.355
+#**''Approximate conversion but 99% accurate''
+#**''For the exact answer go here and apply this conversion to the FWHM''
+#For other fits read literature to ascertain describing statistics.
+====<big>Pixel to Unit Distance Transformation</big>==== 
+'''''All measures given by DiameterJ are in pixels by default'''''
+#To determine the pixel to unit distance (nanometer/micrometer/millimeter) conversion there are two options depending on how much metadata your SEM stores with your image.  It is possible that it stores the pixel to distance conversions in the metadata and thus getting that number is easy.  Simply go to:
+#*Analyze-->Set Scale 
+#Look at what the unit of length is… if its inches then your SEM doesn’t store that information with the micrograph and you’ll have to do the conversion by hand.
+#In that case open any micrograph at the magnification that you have taken your SEM images in ImageJ.   
+#In ImageJ/FIJI go to menu:
+#*Analyze-->Set Scale
+#Click “Click to Remove Scale”
+#Close the scale window 
+#Place your mouse over the scale bar and hit the “+” key to zoom-in. 
+#Continue to zoom-in on the scale bar until it fills the screen 
+#*After zooming in you can widen the default width of the window that ImageJ chooses just like any normal window).  
+#Next, select the “Rectangular” tool from the menu bar.  
+#*If the rectanglular tool isn't available go to the tile that has “>>” and click “Restore startup tools” from the drop down menu. 
+#Next, draw a square or a line that spans the scale bar.  
+#To get the length or width of this rectangle simply look under the tool bar of ImageJ as you are drawing the rectangle 
+#*As soon as you stop drawing the measurements disappear so don’t let go of the cursor until you’ve seen the rectangle width.  
+#Record the number that 'w" equals.  
+#Then it’s simply a matter of dividing the length represented by the scale bar by the number of pixels you just recorded.  
+#Take that conversion factor and multiply all pixel measurements output by DiameterJ and you’ll have the distance in your desired units. (Percent measures do not need to be multiplied)
+#For the DiameterJ outputs of pore area, percent porosity, and intersection density you will do a different conversion then simply multiplying the length conversion.  
+#*The pore area is an area and thus you should square the conversion factor calculated above and multiply by the pixel value given in the pore area.  
+#*The percent porosity is already a percent and thus does not need to be multiplied by anything.  
+#*The intersection density is reported as number of intersections per 100px x 100px area.  This is an arbitrary unit and thus to convert it to intersections per unit area divide the "Intersection Density" by 10,000.  Next, multiply it by 1 over the square of the conversion factor above.  That will give you intersections per unit squared. 
+====<big>DiameterJ Diameter Locations</big>==== 
+If you are curious about where particular radii occur in your image a tool called “DiameterJ Loc” can be used.  
 
+In ImageJ go to:
+ 
+“Plugins-->DiameterJ-->DiameterJ Loc” to analyze the segmented image.
 
+Select the lower and upper pixel diameter you wish to visualize in your image.  A folder will be created called “Diameter Location” with an image of red lines over all diameters where DiameterJ measured a particular diameter or range of diameters that you specified.  We recommend using a range of at least 3 pixels to determine a peak as DiameterJ has up to one pixel of error (+/-) in measurements
 
 === DiameterJ Output ===
 
