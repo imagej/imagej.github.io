@@ -20,21 +20,38 @@ __TOC__
 DiameterJ is a two step process of image analysis:
 
 # Image Segmentation into a binary image (black and white pixels only)
+#*Fourteen default segmentation algorithms have been included with DiameterJ in the "Segment SRM" and "Segment Mixed" plugins.  However, these algorithms may not work for all SEM images.  
+#*If the user is not happy with the results of the segmentation algorithms (i.e. the black and white images do not produce an accurate representation of the original image) then DiameterJ will still work with any binary image that has been segmented through some other means.
 # Analysis of Segmented image
+#*DiameterJ has been validated with over 130 digital images created ''in silico'' and with scanning electron microscope images of reference wires with known diameters.  
+#*To see the full publication that details how DiameterJ was validated and how it works please go to [Coming Soon]. 
 
-14 default segmentation algorithms have been included with '''DiameterJ''' in the "Segment SRM" and "Segment Mixed" plugins.  However, these algorithms may not work for all SEM images.  If the user is not happy with the results of the segmentation algorithms (i.e. the black and white images do not produce an accurate representation of original image) then DiameterJ will still work with any binary image that has been segmented through some other means.  
+If you would like to cite DiameterJ in your work citation information can be found [http://www. here] or use the below: 
 
-DiameterJ has been validated with over 130 digital images created ''in silico'' and with scanning electron microscope images of reference wires with known diameters.  To see the full publication that details how DiameterJ was validated and how it works please go to [Coming Soon]. 
-
+; Citation
+: Hotaling NA, Bharti K, Kriel H, Simon CG.  Validated Open Source Nanofiber Diameter Measurement Tool.  ''PLOS One'', ''Submitted.''
 
 === Installation ===
+Download and install [http://rsb.info.nih.gov/ij/download.html ImageJ 1.48] or newer or [http://fiji.sc/Downloads Fiji] (any version).  
 
+: If you installed imageJ before the end of 2013 you should uninstall your current version of ImageJ ('''DO NOT UPDATE''') and reinstall ImageJ 1.48 or newer. 
+:*Before uninstall be sure to copy all of your old plugins into a separate folder as these will be removed when you uninstall your old version of ImageJ.  
+:*We recommend ImageJ over Fiji if you have no experience with either software because it is simpler to use and the plugin is buggy in Fiji.  Soon a version will be released that will work for both but for now I recommend ImageJ.    
 ==== Windows ====
-
-
+#Download and unzip the DiameterJ files (Find in "Source" above) and move or copy the three folders into the plugins folder of ImageJ.  
+#That should be in directory:
+#:"C:\Program Files\ImageJ\plugins"
+#:::Or 
+#:"C:\Program Files (x86)\ImageJ\plugins"
+#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
+#Restart ImageJ 
 ==== OSX ====
 
 ==== Linux ====
+#Download and unzip the DiameterJ files (Find in "Source" above) 
+#Move or copy the three folders into the plugins folder of the directory where you have placed ImageJ.  
+#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
+#Restart ImageJ 
 
 === How to Use DiameterJ ===
 
