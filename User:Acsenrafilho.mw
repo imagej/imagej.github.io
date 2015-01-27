@@ -1,3 +1,8 @@
+== Source code ==
+The ImageJ plugins source code is avaliable on two different GitHub repositories:
+#ImageJ-Perfusion plugins {{GitHub | org = acsenrafilho | repo = ImageJ-Perfusion}}.
+#ImageJ-AnomalousDiffusionFilters {{GitHub| org = acsenrafilho | repo = ImageJ-AnomalousDiffusionFilters}}
+
 == Publication ==
 *Filho, A. C. da S. S., Barbosa, J. H. O., Salmon, C. E. G. S., & Junior, L. O. M. (2014). Anisotropic Anomalous Diffusion Filtering Applied to Relaxation Time Estimation in Magnetic Resonance Imaging. In Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC. doi:10.1109/EMBC.2014.6944474
 *Filho, A. C. da S. S., Barizon, G. C., & Junior, L. O. M. (2014). Myocardium Segmentation Improvement with Anisotropic Anomalous Diffusion Filter Applied to Cardiac Magnetic Resonance Imaging. In Annual Meeting of Computing in Cardiology.
