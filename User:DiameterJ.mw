@@ -91,17 +91,18 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 ====<big>DiameterJ Analysis</big>====
 :'''''Analyzed images MUST be white fibers on a black background.  If you have black fibers on a white background invert the image to analyze it with DiameterJ.'''''
 
-:; In ImageJ go to:
-:: “Plugins-->DiameterJ-->DiameterJ 0.XXX” to analyze the segmented image.  
+::; In ImageJ go to:
+::: “Plugins-->DiameterJ-->DiameterJ 0.XXX” to analyze the segmented image.  
  
-:Choose the directory of the file you want to analyze (right now it’s in batch form so if you only want to analyze one file move it into a folder by itself and select that folder.  I intend to post both a batch and non-batch form of the segmentation and DiameterJ code but haven’t made the non-batch form yet.)
+::Choose the directory of the file you want to analyze (right now it’s in batch form so if you only want to analyze one file move it into a folder by itself and select that folder.  I intend to post both a batch and non-batch form of the segmentation and DiameterJ code but haven’t made the non-batch form yet.)
  
-:DiameterJ will then analyze all images in the directory and will separate its analysis into three folders “Diameter Analysis Images”, “Histograms”, and “Summaries.”  They are pretty self-explanatory. 
+::DiameterJ will then analyze all images in the directory and will separate its analysis into three folders “Diameter Analysis Images”, “Histograms”, and “Summaries.”  They are pretty self-explanatory. 
  
-:The “XXXX_Total Summary.xls” file in the “Summaries” folder will give you all of the metrics summarized.  Generally, the histogram average is most accurate when multiple fiber diameters are not present and the super pixel average is the most accurate when multiple fiber diameters are present.  However, these metrics are global averages of diameter and can be easily biased if the diameter histogram analyzed has a non-normal distribution (i.e. multiple peaks, significant noise leading or trailing from the peak, etc.).  It is strongly recommend that you perform a peak fit of the diameter histogram to obtain a more accurate measure if the radius histogram image (shown in the "Histograms" folder) shows a non-normal distribution or multiple peaks.  
+::The “XXXX_Total Summary.xls” file in the “Summaries” folder will give you all of the metrics summarized.  Generally, the histogram average is most accurate when multiple fiber diameters are not present and the super pixel average is the most accurate when multiple fiber diameters are present.  However, these metrics are global averages of diameter and can be easily biased if the diameter histogram analyzed has a non-normal distribution (i.e. multiple peaks, significant noise leading or trailing from the peak, etc.).  It is strongly recommend that you perform a peak fit of the diameter histogram to obtain a more accurate measure if the radius histogram image (shown in the "Histograms" folder) shows a non-normal distribution or multiple peaks.  
  
-:Peak fitting is also recommended if you would like to analyze replicate images of a single sample.  To do this we recommend that you copy and paste all histograms from replicate images into one file, sum the frequency at each radius value and then save the resulting file as a .csv.  (Make sure all combined images have been taken at the same magnification or their radius values are scaled appropriately).
+::Peak fitting is also recommended if you would like to analyze replicate images of a single sample.  To do this we recommend that you copy and paste all histograms from replicate images into one file, sum the frequency at each radius value and then save the resulting file as a .csv.  (Make sure all combined images have been taken at the same magnification or their radius values are scaled appropriately).
  
+
 :If you want a more accurate analysis, want to combine histograms from multiple images OR you want to determine multiple diameter peaks from a single image or set of images then do the below:  
 :#Open the file with “XXXX_histogram.csv” in the histograms folder, using [http://fityk.nieto.pl/ Fityk 0.9.8] [https://github.com/wojdyr/fityk/downloads (free - windows only)] or [http://www.wavemetrics.com/products/igorpro/igorpro.htm Igor Pro] (not free)
 :#For Fityk go to Data-->Load File
@@ -143,9 +144,9 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 ====<big>DiameterJ Diameter Locations</big>==== 
 :If you are curious about where particular radii occur in your image a tool called “DiameterJ Loc” can be used.  
 
-:In ImageJ go to:
+::In ImageJ go to:
  
-::“Plugins-->DiameterJ-->DiameterJ Loc” to analyze the segmented image.
+:::“Plugins-->DiameterJ-->DiameterJ Loc” to analyze the segmented image.
 
 :Select the lower and upper pixel diameter you wish to visualize in your image.  A folder will be created called “Diameter Location” with an image of red lines over all diameters where DiameterJ measured a particular diameter or range of diameters that you specified.  We recommend using a range of at least 3 pixels to determine a peak as DiameterJ has up to one pixel of error (+/-) in measurements
 
