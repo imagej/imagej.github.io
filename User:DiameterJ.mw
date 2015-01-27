@@ -1,5 +1,4 @@
-== DiameterJ ==
-{{Infobox
+== DiameterJ == {{Infobox
 | software               = ImageJ 1.48 or newer (including ImageJ 2.XX) and FIJI
 | name                   = DiameterJ
 | author                  = [[User:DiameterJ |Nathan Hotaling]], [http://www.nist.gov/mml/bbd/biomaterials/nathan-hotaling.cfm Nathan Hotaling]
@@ -10,9 +9,7 @@
 | latest version      = Febuary 1<sup>st</sup>, 2015
 | status                  = v X.003 (first version released publicly)
 | category               =[[:Category:Plugins|Plugins]]
-}}
-
-'''DiameterJ''' is a free, open source plugin created for ImageJ, ImageJ 2.X, and FIJI.   DiameterJ is a validated nano- or microfiber characterization tool.  DiameterJ is able to analyze an image and find the diameter of nano- or microfibers at every pixel along a fiber and produces a histogram of these diameters.  Included with this histogram are summary statistics such as mean fiber diameter and most occurring fiber diameter (mode).   DiameterJ also bundles [http://bigwww.epfl.ch/demo/orientation/ OrientationJ] for a complete analysis of fiber orientation within an image as well as the "Analyze Particles" function built into ImageJ/FIJI to analyze pore space within scaffolds and produce summary statistics for pores.  
+}}'''DiameterJ''' is a free, open source plugin created for ImageJ, ImageJ 2.X, and FIJI.   DiameterJ is a validated nano- or microfiber characterization tool.  DiameterJ is able to analyze an image and find the diameter of nano- or microfibers at every pixel along a fiber and produces a histogram of these diameters.  Included with this histogram are summary statistics such as mean fiber diameter and most occurring fiber diameter (mode).   DiameterJ also bundles [http://bigwww.epfl.ch/demo/orientation/ OrientationJ] for a complete analysis of fiber orientation within an image as well as the "Analyze Particles" function built into ImageJ/FIJI to analyze pore space within scaffolds and produce summary statistics for pores.  
 
 Click the download link below for each version of DiameterJ (See [[#Installation| Installation ]] for detailed installation instructions):
 
@@ -32,6 +29,7 @@ DiameterJ has been validated with over 130 digital images created ''in silico'' 
 
 
 === Installation ===
+
 
 
 === How to Use DiameterJ ===
