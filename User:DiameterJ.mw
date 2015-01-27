@@ -98,22 +98,22 @@ Choose the directory of the file you want to analyze (right now it’s in batch 
  
 DiameterJ will then analyze all images in the directory and will separate its analysis into three folders “Diameter Analysis Images”, “Histograms”, and “Summaries.”  They are pretty self-explanatory. 
  
-The “xxx_Total Summary.xls” file in the “Summaries” folder will give you all of the metrics summarized.  Generally, the histogram average is most accurate when multiple fiber diameters are not present and the super pixel average is the most accurate when multiple fiber diameters are present.  However, these metrics are global averages of diameter and can be easily biased if the diameter histogram analyzed has a non-normal distribution (i.e. multiple peaks, significant noise leading or trailing from the peak, etc.).  It is strongly recommend that you perform a peak fit of the diameter histogram to obtain a more accurate measure if the radius histogram image (shown in the "Histograms" folder) shows a non-normal distribution or multiple peaks.  
+The “XXXX_Total Summary.xls” file in the “Summaries” folder will give you all of the metrics summarized.  Generally, the histogram average is most accurate when multiple fiber diameters are not present and the super pixel average is the most accurate when multiple fiber diameters are present.  However, these metrics are global averages of diameter and can be easily biased if the diameter histogram analyzed has a non-normal distribution (i.e. multiple peaks, significant noise leading or trailing from the peak, etc.).  It is strongly recommend that you perform a peak fit of the diameter histogram to obtain a more accurate measure if the radius histogram image (shown in the "Histograms" folder) shows a non-normal distribution or multiple peaks.  
  
 Peak fitting is also recommended if you would like to analyze replicate images of a single sample.  To do this we recommend that you copy and paste all histograms from replicate images into one file, sum the frequency at each radius value and then save the resulting file as a .csv.  (Make sure all combined images have been taken at the same magnification or their radius values are scaled appropriately).
  
 If you want a more accurate analysis, want to combine histograms from multiple images OR you want to determine multiple diameter peaks from a single image or set of images then do the below:  
-#Open the file with “xxx_histogram.csv” in the histograms folder, using Fityk (free - windows only) or Igor Pro (not free)
+#Open the file with “XXXX_histogram.csv” in the histograms folder, using [http://fityk.nieto.pl/ Fityk 0.9.8] [https://github.com/wojdyr/fityk/downloads (free - windows only)] or [http://www.wavemetrics.com/products/igorpro/igorpro.htm Igor Pro] (not free)
 #For Fityk go to Data-->Load File
-#Select the file labeled xxxx_Histogram.csv in the “Histograms” directory
-#Select the column with the radius values (column 10) as x and the column with the frequency/summed frequency (column 11) as y and then peak fit the histogram as per the tutorial here or for more complex fitting here  
+#Select the file labeled XXXX_Histogram.csv in the “Histograms” directory
+#Select the column with the radius values (column 10) as x and the column with the frequency/summed frequency (column 11) as y and then peak fit the histogram as per the tutorial [https://www.youtube.com/watch?v=GNszECQUX3g here] or for more complex fitting [https://www.youtube.com/watch?v=CaiqMvXwzF8 here]
 #*Generally we use Gaussian curves but occasionally the curves are clearly Lorentzian or LogNormal 
 #*To change the fit to a peak other than Gaussian go to Functions-->Function Type and select the appropriate fit function
 #After peak fitting save the peak information by going to (Functions-->Export Peak Parameters)
 #For Gaussian peaks (most common) the “Center” of each peak is the average 
 #*The FWHM can be transformed into the standard deviation of the radius by dividing the FWHM by 2.355
 #**''Approximate conversion but 99% accurate''
-#**''For the exact answer go here and apply this conversion to the FWHM''
+#**''For the exact answer go [http://en.wikipedia.org/wiki/Full_width_at_half_maximum here] and apply this conversion to the FWHM''
 #For other fits read literature to ascertain describing statistics.
 ====<big>Pixel to Unit Distance Transformation</big>==== 
 '''''All measures given by DiameterJ are in pixels by default'''''
