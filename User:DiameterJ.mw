@@ -144,7 +144,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 ====<big>DiameterJ Diameter Locations</big>==== 
 :If you are curious about where particular radii occur in your image a tool called “DiameterJ Loc” can be used.  
 
-::In ImageJ go to:
+::'''In ImageJ go to''':
  
 :::“Plugins-->DiameterJ-->DiameterJ Loc” to analyze the segmented image.
 
@@ -159,19 +159,19 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 :::#Total Area: Total number of black pixels in an image not in groups touching the sides
 :::#Average Size: (Total number of black pixels counted in pores) / (Total number of pores in image)
 :::#% Area: (Total number of black pixels) / (Total pixels in an image)
-:::#Major: The mean length of the primary axis of the best fitting ellipse for each pore. 
-:::#Minor: The mean length of the secondary axis of the best fitting ellipse for each pore. 
-:::#Angle: The average angle between the primary axis and a line parallel to the X-axis of the image.
+:::#Major: The mean length of the primary axis of the best fitting ellipse for each pore 
+:::#Minor: The mean length of the secondary axis of the best fitting ellipse for each pore 
+:::#Angle: The average angle between the primary axis and a line parallel to the X-axis of the image
 :::#Circ.: 4π × [Area] / [Perimeter^2] with a value of 1.0 indicating a perfect circle. As the value approaches 0.0, it indicates an increasingly elongated shape. Values may not be valid for very small particles. Uses the heading Circ.
 :::#Solidity: [Area]/[Convex area]
 :::#Skew: The third order moment about the mean
-:::#Kurt: The fourth order moment about the mean.
+:::#Kurt: The fourth order moment about the mean
 
 ::'''XXXX_Total Summary.csv'''
 :::#Super Pixel:  The mean fiber diameter as calculated using a super pixel determination 
 :::#More accurate for samples with extremely diverse fiber diameters
-:::#Hitogram_Mean: The mean fiber diameter as calculated using the average of all diameters measured in the histogram.  
-:::#Histogram_SD:  The standard dev. Of the fiber diameter as calculated using all diameters measured in the histogram.  
+:::#Hitogram_Mean: The mean fiber diameter as calculated using the average of all diameters measured in the histogram 
+:::#Histogram_SD:  The standard dev. Of the fiber diameter as calculated using all diameters measured in the histogram  
 :::#Histogram_Mode: Most occurring fiber diameter in the histogram
 :::#Histogram Median:  Middle fiber diameter in the histogram
 :::#Mean Pore Size:  (Total number of black pixels counted in pores) / (Total number of pores in image)
@@ -191,7 +191,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 :::#Kurt:  	The fourth order moment about the average radius
 :::#RawIntDen:  The sum of the radii at all pixels in the image or selection
 :::#Radius Value:  Radius length (in pixels)
-:::#Radius Count: Number of times the radius value occurred in the image. Also known as the frequency of occurrence and can also be interpreted as the length of fiber in an image that has a given radius.
+:::#Radius Count: Number of times the radius value occurred in the image. Also known as the frequency of occurrence and can also be interpreted as the length of fiber in an image that has a given radius
 :::#The radius or diameter histogram is constructed from the radius value (x-axis) and radius count (frequency of occurrence on y-axis)
 
 ::'''XXXX_Intersection Coordinates.txt'''
@@ -202,19 +202,39 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 :::#*Upper left hand corner is 0,0
 
 ::'''XXXX_Pore Data.csv'''
-:::#
+:::#Slice: Image name
+:::#Count: Total number of pores found in image that are not touching the side
+:::#Area: Total number of black pixels in an image not in groups touching the sides
+:::#StdDev: 0 (individual pore measurements so no SD
+:::#% Area: (Total number of black pixels) / (Total pixels in an image)
+:::#Major: The length of the primary axis of the best fitting ellipse for each pore. 
+:::#Minor: The length of the secondary axis of the best fitting ellipse for each pore
+:::#Angle: The angle between the primary axis and a line parallel to the X-axis of the image
+:::#Circ.: 4π × [Area] / [Perimeter^2] with a value of 1.0 indicating a perfect circle. As the value approaches 0.0, it indicates an increasingly elongated shape :::#Values may not be valid for very small particles. Uses the heading Circ.
+:::#Skew: The third order moment about the mean – NaN because only one pore
+:::#Kurt: The fourth order moment about the mean – NaN because only one pore
+:::#AR:  The aspect ratio of the particle’s fitted ellipse, i.e., [Major Axis] / [Minor Axis]
+:::#Round:  4 × [Area] / (π × [Major axis]2) or the inverse of Aspect Ratio. 
+:::#Solidity: [Area] / [Convex area]
+
 ::'''XXXX_Radius Histogram.tif'''
-:::#
+:::#Image of the histogram of all fiber radii in the image
 
 ==== Diameter Analysis Images Folder ====
 ::'''XXXX_Axial Thinning.tif'''
-:::#
+:::#Image of the centerline as determined by the axial thinning algorithm
+
 ::'''XXXX_Dilate.tif'''
-:::#
+:::#Image of all centerlines counted in the histogram overlaid on the Euclidean distance transformed of the fibers fibers.
+:::#*Yellow lines are the locations where radii were counted
+:::#*Fibers are in greyscale as transformed by the Euclidean distance transform
+
 ::'''XXXX_Orientation.tif'''
-:::#
+:::#An image with the frequency of orientation of the centerline of all fibers.  This is an output of OrientationJ and was not coded by me
+
 ::'''XXXX_Voronoi.tif'''
-:::#
+:::#Image of the centerline as determined by the Voronoi tessellation algorithm
+
 
 === <big>How it Works</big> ===
 ----
