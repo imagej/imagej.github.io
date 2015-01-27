@@ -149,13 +149,77 @@ In ImageJ go to:
 
 Select the lower and upper pixel diameter you wish to visualize in your image.  A folder will be created called “Diameter Location” with an image of red lines over all diameters where DiameterJ measured a particular diameter or range of diameters that you specified.  We recommend using a range of at least 3 pixels to determine a peak as DiameterJ has up to one pixel of error (+/-) in measurements
 
-=== DiameterJ Output ===
+=== <big>DiameterJ Output</big> ===
+----
+==== Summaries Folder ====
+::'''XXXX_Pore Summary.xls'''
+:::#Slice: Image name
+:::#Count: Total number of pores found in image that are not touching the side.
+:::#Total Area: Total number of black pixels in an image not in groups touching the sides
+:::#Average Size: (Total number of black pixels counted in pores) / (Total number of pores in image)
+:::#% Area: (Total number of black pixels) / (Total pixels in an image)
+:::#Major: The mean length of the primary axis of the best fitting ellipse for each pore. 
+:::#Minor: The mean length of the secondary axis of the best fitting ellipse for each pore. 
+:::#Angle: The average angle between the primary axis and a line parallel to the X-axis of the image.
+:::#Circ.: 4π × [Area] / [Perimeter^2] with a value of 1.0 indicating a perfect circle. As the value approaches 0.0, it indicates an increasingly elongated shape. Values may not be valid for very small particles. Uses the heading Circ.
+:::#Solidity: [Area]/[Convex area]
+:::#Skew: The third order moment about the mean
+:::#Kurt: The fourth order moment about the mean.
+
+::'''XXXX_Total Summary.csv'''
+:::#Super Pixel:  The mean fiber diameter as calculated using a super pixel determination 
+:::#More accurate for samples with extremely diverse fiber diameters
+:::#Hitogram_Mean: The mean fiber diameter as calculated using the average of all diameters measured in the histogram.  
+:::#Histogram_SD:  The standard dev. Of the fiber diameter as calculated using all diameters measured in the histogram.  
+:::#Histogram_Mode: Most occurring fiber diameter in the histogram
+:::#Histogram Median:  Middle fiber diameter in the histogram
+:::#Mean Pore Size:  (Total number of black pixels counted in pores) / (Total number of pores in image)
+:::#Percent Porosity: (Total number of black pixels) / (Total pixels in an image)
+:::#Intersection Density (100x100px):  (Number of fiber overlaps)*10000 / (Total pixels in image)
+:::#Characteristic Length: (Total length of all fiber centerlines) / (# of fiber overlaps)
 
 
-=== How it Works ===
+==== Histograms Folder ====
+::'''XXXX_Histogram.csv'''
+:::#Mean:  Average Diameter from all measures found in the histogram	
+:::#StdDev:  Standard deviation from all measures found in the histogram	
+:::#Mode:  Most occurring diameter	found in the histogram
+:::#IntDen: 	The product of Area and average radius 
+:::#Median:  Middle value in the histogram	
+:::#Skew:  	The third order moment about the average radius
+:::#Kurt:  	The fourth order moment about the average radius
+:::#RawIntDen:  The sum of the radii at all pixels in the image or selection
+:::#Radius Value:  Radius length (in pixels)
+:::#Radius Count: Number of times the radius value occurred in the image. Also known as the frequency of occurrence and can also be interpreted as the length of fiber in an image that has a given radius.
+:::#The radius or diameter histogram is constructed from the radius value (x-axis) and radius count (frequency of occurrence on y-axis)
 
+::'''XXXX_Intersection Coordinates.txt'''
+:::#Column 1 – Grey scale value at intersection 
+:::#Column 2 – x coordinate of intersection 
+:::#*Upper left hand corner is 0,0
+:::#Column 3 – y coordinate of intersection 
+:::#*Upper left hand corner is 0,0
 
-=== Limitations ===
+::'''XXXX_Pore Data.csv'''
+:::#
+::'''XXXX_Radius Histogram.tif'''
+:::#
+
+==== Diameter Analysis Images Folder ====
+::'''XXXX_Axial Thinning.tif'''
+:::#
+::'''XXXX_Dilate.tif'''
+:::#
+::'''XXXX_Orientation.tif'''
+:::#
+::'''XXXX_Voronoi.tif'''
+:::#
+
+=== <big>How it Works</big> ===
+----
+
+=== <big>Limitations</big> ===
+----
 
 == FAQs ==
 
