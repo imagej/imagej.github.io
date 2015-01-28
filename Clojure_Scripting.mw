@@ -1,8 +1,8 @@
 {{Infobox
 | software               = ImageJ
 | name                   = Clojure Scripting
-| author                 = Curtis Rueden<br />Johannes Schindelin
-| maintainer             = Curtis Rueden<br/>Johannes Schindelin
+| author                 = Albert Cardona
+| maintainer             = Albert Cardona
 | filename               = scripting-clojure.jar
 | source                 = {{GitHub|org=scijava|repo=scripting-clojure}}
 | status                 = stable
