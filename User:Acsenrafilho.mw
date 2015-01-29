@@ -4,7 +4,7 @@ Promote plugins, macros and scripts created by the Computing in Signal and Image
 Please, be free to install your plugins, macros and scripts form the ImageJ Updater or even contribut with our codes in GitHub repository ().
 
 == Source code ==
-The ImageJ plugins source code is avaliable on two different GitHub repositories:
+The ImageJ sources codes are avaliable on GitHub repository:
 #ImageJ-Perfusion plugins {{GitHub | org = acsenrafilho | repo = ImageJ-Perfusion}}.
 #ImageJ-AnomalousDiffusionFilters {{GitHub| org = acsenrafilho | repo = ImageJ-AnomalousDiffusionFilters}}
 
