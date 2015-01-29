@@ -1,7 +1,7 @@
 == Purpose ==
 
-Promote the plugins created for many applications, such as image filtering, analysis and others.
-
+Promote plugins, macros and scripts created by the Computing in Signal and Image in Medicine research group (CSIM). All the code implemented here have a specific applications, where are related with the basic image analysis such as image filtering, registration, feature extraction  and others.
+Please, be free to install your plugins, macros and scripts form the ImageJ Updater or even contribut with our codes in GitHub repository ().
 
 == Source code ==
 The ImageJ plugins source code is avaliable on two different GitHub repositories:
