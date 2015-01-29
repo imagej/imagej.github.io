@@ -3,7 +3,7 @@
 | software        = ImageJ/Fiji
 | name            = Find Peaks
 | maintainer     = [[BAR | BAR update site]]
-| author          = [mailto:tiago_dot_ferreira_at_mail_dot_mcgill_dot_ca Tiago Ferreira]
+| author          = [[User:Tiago|Tiago Ferreira]]
 | filename        = [https://raw.github.com/tferr/Scripts/master/Data_Analysis/Find_Peaks.bsh Find_Peaks.bsh]
 | source         = [https://github.com/tferr/Scripts/tree/master/Data_Analysis#find-peaks on GitHub]
 | released        = February 2014
