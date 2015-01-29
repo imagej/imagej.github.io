@@ -3,7 +3,7 @@
 | software        = ImageJ/Fiji
 | name            = Strahler Analysis
 | maintainer     = [[BAR#Installation| BAR update site]]
-| author     = [mailto:tiago_dot_ferreira_at_mail_dot_mcgill_dot_ca Tiago Ferreira]
+| author     =  [[User:Tiago|Tiago Ferreira]]
 | filename        = [https://raw.github.com/tferr/Scripts/master/Morphometry/Strahler_Analysis.bsh Strahler_Analysis.bsh]
 | source         = [https://github.com/tferr/Scripts/tree/master/Morphometry#strahler-analysis on GitHub]
 | released        = March 2013
