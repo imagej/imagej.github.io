@@ -4,9 +4,7 @@ Promote plugins, macros and scripts created by the Computing in Signal and Image
 Please, be free to install your plugins, macros and scripts form the ImageJ Updater or even contribut with our codes in GitHub repository ({{GitHub | org = CSIM-Toolkits | repo = ImageJ}}).
 
 == Source code ==
-The ImageJ sources codes are avaliable on GitHub repository:
-#ImageJ-Perfusion plugins {{GitHub | org = acsenrafilho | repo = ImageJ-Perfusion}}.
-#ImageJ-AnomalousDiffusionFilters {{GitHub| org = acsenrafilho | repo = ImageJ-AnomalousDiffusionFilters}}
+The ImageJ sources codes are available on GitHub repository: {{GitHub | org = CSIM-Toolkits | repo = ImageJ}}.
 
 == Publication ==
 *Filho, A. C. da S. S., Barbosa, J. H. O., Salmon, C. E. G. S., & Junior, L. O. M. (2014). Anisotropic Anomalous Diffusion Filtering Applied to Relaxation Time Estimation in Magnetic Resonance Imaging. In Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC. doi:10.1109/EMBC.2014.6944474
