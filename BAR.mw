@@ -2,11 +2,12 @@
 {{Infobox
 | software       = ImageJ/Fiji
 | name           = BAR
-| maintainer     = [mailto:tiago_dot_ferreira_at_mail_dot_mcgill_dot_ca Tiago Ferreira]
+| maintainer     = [[User:Tiago|Tiago Ferreira]]
 | source         = {{GitHub|org=tferr|repo=Scripts}}
-| released       = June 2014, ({{GitHub|org=tferr|repo=Scripts/releases|label=released versions}})
+| released       = June 2014
+| latest version = '''1.1.0 January 2015''' ({{GitHub|org=tferr|repo=Scripts/releases|label=released versions}})
 | category       = [[:Category:Analysis|Analysis]], [[:Category:Image annotation|Annotation]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Scripting|Scripting]]
-}}
+}}{{TOC right}} 
 '''BAR''': A collection of '''B'''roadly '''A'''pplicable '''R'''outines.
 
 The collection contains [[Macros]], [[Scripts]] and [[Plugins]] focused on Data Analysis, Image Annotation, Image Segmentation and Bitmap Morphometry. It is curated using {{GitHub|org=tferr|repo=Scripts#ij-bar|label=GitHub}} and distributed as an optional [[List_of_update_sites|update site]].
@@ -15,16 +16,15 @@ The collection contains [[Macros]], [[Scripts]] and [[Plugins]] focused on Data 
 The easiest way is to install and maintain the collection is to subscribe to the BAR update site. By doing so you will not need to manually download and install anything: the [[Fiji Updater]] will take care of it for you:<br>
 Run <span style="border-bottom:1px dotted #ccc;">Help▷ Update...</span> and choose ''Manage update sites''. Activate the ''BAR'' checkbox in the alphabetically-sorted list of update sites. Press ''OK'', then ''Apply changes''. Restart ImageJ. That's it. Enjoy BAR!
 
-Alternatively, if you prefer to manually install and update the collection, you can do so through {{GitHub|org=tferr|repo=Scripts#ij-bar|label=GitHub}}: either by downloading individual files, or by downloading the entire repository as a [https://github.com/tferr/Scripts/archive/master.zip ZIP archive].
+Alternatively, if you prefer to manually install and update the collection, you can do so through {{GitHub|org=tferr|repo=Scripts#ij-bar|label=GitHub}}: either by downloading individual files, or by downloading the entire repository as a {{GitHub|org=tferr|repo=Scripts/releases|label=ZIP archive}}.
 
 == Description ==
-BAR files are accessible through a dedicated top-level menu subdivided in task-oriented categories. Some of the routines have a dedicated documentation page, others feature built-in help while a handful were deemed too simple to require dedicated instructions. Nevertheless, all files are described in the ''Details'' panel of the Fiji Updater and contain useful commentary at the top of the source code file.
-{{Tip
-| id = OpeningBAR
-| tip = You can open any BAR script by holding {{key press|Shift}} while selecting its name from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu. For pre-compiled java plugins, the source code is available through the <span style="border-bottom:1px dotted #ccc;">About BAR...</span> command.
-}}
+BAR files are accessible through a dedicated top-level menu subdivided in task-oriented categories. All routines should be documented on {{GitHub|org=tferr|repo=Scripts|path=README.md#ij-bar|label= GitHub}}. 
+
+Some of the scripts have a dedicated documentation page, others feature built-in help, while a handful were deemed too simple to require dedicated instructions. Nevertheless, all files are described in the ''Details'' panel of the Fiji Updater and contain useful commentary at the top of the source code file. '''Remember:''' You can open all the scripts using the [[#OpeningBAR|Shift key]].
+
+=== List of BARs ===
 [[ File:BARsnapshot.png|right|Overview of BAR (v1.0.0)]]
-== List of BARs ==
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#analysis|label= Analysis}}<span id="Analysis"></span>
 :{{GitHub|org=tferr|repo=Scripts|path=Analysis/README.md#multichannel-plot-profile|label=Multichannel Plot Profile}}
 :{{GitHub|org=tferr|repo=Scripts|path=Analysis/README.md#smoothed-plot-profile|label=Smoothed Plot Profile}}
@@ -51,7 +51,7 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
 :{{GitHub|org=tferr|repo=Scripts|path=Segmentation/README.md#threshold-from-background|label=Threshold From Background}}
 :{{GitHub|org=tferr|repo=Scripts|path=Segmentation/README.md#wipe-background|label=Wipe Background}}
 
-;{{GitHub|org=tferr|repo=Scripts|path=README.md#snippets|label=Snippets}} and {{GitHub|org=tferr|repo=Scripts|path=README.md#lib|label=lib}}<span id="SnippetsList"></span>
+;{{GitHub|org=tferr|repo=Scripts|path=README.md#snippets|label=Snippets}} and  {{GitHub|org=tferr|repo=Scripts|path=/lib#lib|label=BAR lib}}<span id="SnippetsList"></span>
 :Described in [[#Scripting_BARs|Scripting BARs]]
 
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#tools-and-toolsets|label=Tools and Toolsets}}<span id="Tools"></span>
@@ -63,8 +63,11 @@ BAR files are accessible through a dedicated top-level menu subdivided in task-o
 :{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#toolset-creator|label=Toolset Creator}}
 
 == Accessing BARs ==
-BAR commands can be accessed in multiple ways: 1) through the <span style="border-bottom:1px dotted #ccc;">BAR▷ </span> menu, 2) the [[#Context_Menu|Context Menu]], 3) [[#Keyboard_Shortcuts|Keyboard Shortcuts]], 3) the ''Shortcuts Menu Tool'' (<span style="border-bottom:1px dotted #ccc;">BAR▷ Tool Installers▷ Install Shortcuts Menu</span>), that registers frequently used commands in the ImageJ toolbar or, as most ImageJ commands, 4) from other [[#Scripting_BARs|scripts, macros and plugins]].
-
+As with all ImageJ commands, BAR scripts can be accessed in multiple ways: 1) through the <span style="border-bottom:1px dotted #ccc;">BAR▷ </span> menu, 2) the [[#Context_Menu|Context Menu]], 3) [[#Keyboard_Shortcuts|Keyboard Shortcuts]], 3) the ''Shortcuts Menu Tool'' (<span style="border-bottom:1px dotted #ccc;">BAR▷ Tool Installers▷ Install Shortcuts Menu</span>), that registers frequently used commands in the ImageJ toolbar, 4) by [[#ExpediteAccess|pressing]] {{key press|[[#ExpediteAccess|L]]}}, or 5) from other [[#Scripting_BARs|scripts, macros and plugins]].
+{{Tip
+| id = OpeningBAR
+| tip = You can open any BAR script by holding {{key press|Shift}} while selecting its name from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu. For pre-compiled java plugins, the source code is available through the <span style="border-bottom:1px dotted #ccc;">About BAR...</span> command.
+}}
 === Context Menu ===
 [[File:TransposableBarMenu.png|350px|thumb|BAR features a neat mechanism that allows <span style="border-bottom:1px dotted #ccc;">BAR▷</span> commands to shuttle between the main menu bar and the image's context menu.]]
 <span style="border-bottom:1px dotted #ccc;">BAR▷ </span> submenus can be appended to the image's context menu (the menu that pops up when right-clicking on the image canvas) by running <span style="border-bottom:1px dotted #ccc;">BAR▷ <i>Submenu</i>▷Move Menu (Context<>Main)</span>. The transfer is bidirectional: once in the context menu, running the same command will place the submenu back in the main menu bar.
@@ -95,6 +98,7 @@ macro "Remove Round Structures [0]" {
 </source>
 As [[#Context_Menu|mentioned]], such macros can then be pasted into the text area of <span style="border-bottom:1px dotted #ccc;">Edit▷ Options▷ Startup...</span> so that they can be executed when ImageJ starts up.
 {{Tip
+| id = ExpediteAccess
 | tip = Two other expedite ways of retrieving commands include: 1) Pressing {{key press|L}}, the shortcut for the [[Using_the_Command_Launcher|Command Launcher]] and 2) Pressing {{key press|9}}, the default shortcut for the ''Recent Commands'' list.
 }}== Scripting BARs  ==
 Although BARs can be used as standalone commands, the scripts and plugins in BAR become more useful when incorporated into other routines.
@@ -102,16 +106,31 @@ Although BARs can be used as standalone commands, the scripts and plugins in BAR
 You can use BARs as a starting point for your own workflows. Whether you are just looking to automate a simple task or you are an advanced developer, you can use BAR to achieve your analysis goals more easily, by means of Snippets - source code templates - and libs - scripting additions to be shared across routines.
 
 === Snippets ===
-BAR contains a directory, ''plugins/Scripts/BAR/Snippets/'', containing  [https://github.com/tferr/Scripts/tree/master/Snippets examples] ([[BeanShell_Scripting|BeanShell]], [[Introduction_into_Macro_Programming|IJM]] and [[Jython_Scripting|Python]]) that you can customize and recycle in your own scripts. You can, of course, also retrieve code and inspiration from the more complete BARs in the remaining ''plugins/Scripts/BAR/'' subdirectories. Any script or macro file stored in the ''Snippets/'', folder with an underscore "_" in the filename will be listed in <span style="border-bottom:1px dotted #ccc;">BAR▷ Snippets▷</span>. The <span style="border-bottom:1px dotted #ccc;">Snippets▷</span> menu contains some utilities to help you manage your scripts:
+BAR contains a directory, ''plugins/Scripts/BAR/Snippets/'', containing  multi-language [https://github.com/tferr/Scripts/tree/master/Snippets examples] that you can customize and recycle in your own scripts. You can, of course, also retrieve code and inspiration from the more complete BARs in the remaining ''plugins/Scripts/BAR/'' subdirectories. Any script or macro file stored in the ''Snippets/'', folder with an underscore "_" in the filename will be listed in <span style="border-bottom:1px dotted #ccc;">BAR▷ Snippets▷</span>. The <span style="border-bottom:1px dotted #ccc;">Snippets▷</span> menu contains some utilities to help you manage your scripts:
 
-;List Snippets:Prints a table listing all scripts in ''plugins/Scripts/BAR/Snippets/''. Files can then be opened in the [[Script Editor]] by double-clicking on their filename
-;New Snippet: A java plugin that speeds up the creation of new scripts, pre-configured to use [[#lib|BAR lib]]
+;List Snippets:Prints a table listing all scripts in ''plugins/Scripts/BAR/Snippets/''. Files can then be opened in the [[Script Editor]] by double-clicking on their filename.
+;New Snippet: A java plugin that speeds up the creation of new scripts, pre-configured to use [[#lib|BAR lib]].
 ;Reveal Snippets:Opens ''plugins/Scripts/BAR/Snippets/'' in the file browser of the operating system.
-;Search BAR: Searches the contents of BAR files
+;Search BAR: Searches the contents of BAR files.
 
 <span id="lib"></span>
 === BAR lib === 
+{{Scripting}}{{GitHub|org=tferr|repo=Scripts|path=/lib/README.md#lib|label=BAR libs}} are centralized libraries ([[BeanShell_Scripting|BeanShell]], [[Introduction_into_Macro_Programming|IJM]] and [[Jython_Scripting|Python]], etc.) that can be shared across files. These libraries serve as scripting additions to [[#Snippets|Snippets]] and other routines.
 
+Do you find yourself copy and pasting functions from one file to the other? Do you keep on writing the same lines of code? Do you have some key code written across different languages? Would you like to make side-by-side comparisons of scripting languages? Then, BAR lib is for you.
+
+The idea is quite simple: Reusable functions and methods are written to a lib file that gets loaded at execution time so that it can be called by the running script. <span style="border-bottom:1px dotted #ccc;">BAR▷ Snippets▷ New Snippet...</span> exemplifies how to use these scripting add-ons. Here is a BeanShell example:
+<source lang="java">
+// Add BAR/lib to classpath
+addClassPath(bar.Utils.getBARDir());
+importCommands("lib/");
+// Load BARlib.bsh
+BARlib();
+// Confirm availability of BARlib
+lib = new BARlib();
+lib.confirmLoading();
+</source>
+And you should be greeted by a ''"BAR lib successfully loaded"'' message. Further details are provided on the {{GitHub|org=tferr|repo=Scripts|path=/lib#lib|label=GitHub lib page}}.
 
 === Batch Processors ===
 Some of the scripts included in ''/BAR/Snippets/'' are scripts that apply a [[How_to_apply_a_common_operation_to_a_complete_directory|common operation to a directory]]. These
@@ -125,27 +144,27 @@ Typically each of these tasks is handled by separated functions so only the func
 ==== Processing Functions ====
 The file-processing function can include your own code, code generated by the Macro Recorder (<span style="border-bottom:1px dotted #ccc;">Plugins▷ Macros▷ Record...</span>), pre-existing snippets or methods/functions defined in a common [[#lib|BAR lib]] file.
 
-IJM example, running a macro and a python script in the ''Snippets/'' (the [[#IJMlib|example below]] exemplifies how to call a macro function from {{GitHub|org=tferr|repo=Scripts|path=lib/BARlib.ijm|label=BARlib.ijm}}):
+IJM example, running a macro and a python script in the ''Snippets/'' (another [[#IJMlib|example below]] exemplifies how to call a macro function from {{GitHub|org=tferr|repo=Scripts|path=lib/BARlib.ijm|label=BARlib.ijm}}):
 <source lang="java">
 function myRoutines() {
 	snippetsPath = call("bar.Utils.getSnippetsDir");
 	runMacro(snippetsPath + "MyCoolestMacro.ijm");
 	eval("python", File.openAsString(snippetsPath + "Median_Filter.py"));
 }</source>
-Jython example,
+Jython example, demonstrating how to 1) load [[#lib|BAR lib]] (in this case {{GitHub|org=tferr|repo=Scripts|path=lib/BARlib.py|label=BARlib.py}}, using code generated by <span style="border-bottom:1px dotted #ccc;">Bar▷ Snippets▷ New Snippet...</span>) and 2) how to run a Snippet (in this case {{GitHub|org=tferr|repo=Scripts|path=Snippets/Median_Filter.py|label=Median_Filter.py}}):
 <source lang="python">
-def myRoutines(image):
+def myRoutines():
     import sys, ij, bar
 
-    # Extend the search path to /BAR/Snippets/
-    sys.path.append(bar.Utils.getSnippetsDir())
-    # Import all functions in /BAR/Snippets/Python_functions.py
-    import Python_functions as fx
-    # Call a specific function
-    result = fx.function1(image)
-    IJ.log(result)
+    # 1) Call a lib function:
+    # 1.1) Extend the search path to /BAR/lib/
+    sys.path.append(bar.Utils.getLibDir())
+    # 1.2) Import all functions in /BAR/lib/BARlib.py
+    import BARlib as lib
+    # 1.3) Call a function from the file
+    lib.confirmLoading()
 
-    # Or we can run a script directly
+    # 2) Run a script directly:
     from org.python.util import PythonInterpreter
     script = bar.Utils.getSnippetsDir() + "Median_Filter.py"
     PythonInterpreter().execfile(script)
@@ -162,7 +181,7 @@ The default task of both the Python and IJM implementation of {{GitHub|org=tferr
 filename randomization: 1) They copy images from one folder to another, 2) Rename their filenames using a random string and 3) Log changes to a CSV table (so that id of randomized filename can be traced back to the original file). This approach allows for blind analyses of datasets that are sensitive to user interpretation. Below are the descriptions of {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_PY.py|label=Process_Folder_PY.py}} and {{GitHub|org=tferr|repo=Scripts|path=Snippets/Process_Folder_IJM.ijm|label=Process_Folder_IJM.ijm}}.
 
 ===== Python =====
-{{Scripting}}In Python we can use the [http://docs.python.org/library/uuid.html uuid module] to generate a random filename (rational [http://stackoverflow.com/a/10501355 here]). The result is an impressively succinct function:
+In Python we can use the [http://docs.python.org/library/uuid.html uuid module] to generate a random filename (rational [http://stackoverflow.com/a/10501355 here]). The result is an impressively succinct function:
 <source lang="python">
 def myRoutines(image):
     import uuid
@@ -296,6 +315,16 @@ function myRoutines() {
 ;How do I uninstall BAR?
 :If you are using Fiji: run the [[Fiji Updater|Updater]]. Choose ''Advance Mode'' then ''Manage update sites''. Deactivate the ''BAR'' checkbox in the alphabetically-sorted list of update sites. Press ''OK'', then ''Apply changes''. All BAR files will be deleted. Note that you can install and uninstall BAR as you see fit. See [[How to follow a 3rd party update site]] for more details.
 :If you have a installed BAR manually and cannot remember where files were placed have a look at this {{GitHub|org=tferr|repo=Scripts|path=BAR/README.md#bar-menu|label=installation list}}.
+
+;I get an error when I try to load BAR lib (IJM). Why?
+:Macro functions from a IJ macro [[#lib|lib]] may only be available once a new instance of the macro interpreter is initiated (this is not the case for other scripting languages). This means you have to call <code>ij.macro.Interpreter.setAdditionalFunctions</code> <u>before</u> running your macro. You can test this by running the default macro generated by <span style="border-bottom:1px dotted #ccc;">BAR▷ Snippets▷New Snippet...</span>:
+<source lang=java>
+// Load BARlib.ijm
+libPath = call('bar.Utils.getLibDir') + 'BARlib.ijm';
+libContents = File.openAsString(libPath);
+call('ij.macro.Interpreter.setAdditionalFunctions', libContents);
+</source>
+:The first time you run <code>confirmLoading(); </code> ImageJ will complain about <code>confirmLoading</code> being an undefined identifier, but it will successfully recognize the call the second time you run the code above.
 
 == License ==
 These scripts are free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
