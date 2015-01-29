@@ -106,6 +106,7 @@ Although BARs can be used as standalone commands, the scripts and plugins in BAR
 You can use BARs as a starting point for your own workflows. Whether you are just looking to automate a simple task or you are an advanced developer, you can use BAR to achieve your analysis goals more easily, by means of Snippets - source code templates - and libs - scripting additions to be shared across routines.
 
 === Snippets ===
+[[File:SnippetCreator.png|350px|thumb|{{Bc|BAR|Snippets|NewSnippet...}} (BAR 1.1.0)]]
 BAR contains a directory, ''plugins/Scripts/BAR/Snippets/'', containing  multi-language [https://github.com/tferr/Scripts/tree/master/Snippets examples] that you can customize and recycle in your own scripts. You can, of course, also retrieve code and inspiration from the more complete BARs in the remaining ''plugins/Scripts/BAR/'' subdirectories. Any script or macro file stored in the ''Snippets/'', folder with an underscore "_" in the filename will be listed in <span style="border-bottom:1px dotted #ccc;">BAR▷ Snippets▷</span>. The <span style="border-bottom:1px dotted #ccc;">Snippets▷</span> menu contains some utilities to help you manage your scripts:
 
 ;List Snippets:Prints a table listing all scripts in ''plugins/Scripts/BAR/Snippets/''. Files can then be opened in the [[Script Editor]] by double-clicking on their filename.
@@ -114,6 +115,7 @@ BAR contains a directory, ''plugins/Scripts/BAR/Snippets/'', containing  multi-l
 ;Search BAR: Searches the contents of BAR files.
 
 <span id="lib"></span>
+
 === BAR lib === 
 {{Scripting}}{{GitHub|org=tferr|repo=Scripts|path=/lib/README.md#lib|label=BAR libs}} are centralized libraries ([[BeanShell_Scripting|BeanShell]], [[Introduction_into_Macro_Programming|IJM]] and [[Jython_Scripting|Python]], etc.) that can be shared across files. These libraries serve as scripting additions to [[#Snippets|Snippets]] and other routines.
 
