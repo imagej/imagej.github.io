@@ -1,4 +1,4 @@
-<includeonly><div {{#if:{{{limit|}}}|class="toclimit-{{{limit}}}"}} style="clear:right;float:right;margin:2px .5em;margin-right:0;{{#if:{{{width|}}} | width:{{{width|}}}; }}max-width:50%">
+<includeonly><div {{#if:{{{limit|}}}|class="toclimit-{{{limit}}}"}} style="background:white;clear:right;float:right;margin:2px .5em;margin-right:0;{{#if:{{{width|}}} | width:{{{width|}}}; }}max-width:50%">
 {{{1|__TOC__}}}
 </div></includeonly>
 <noinclude>
