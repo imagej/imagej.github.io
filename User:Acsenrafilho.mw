@@ -3,6 +3,12 @@
 Promote plugins, macros and scripts created by the Computing in Signal and Image in Medicine research group (CSIM). All the code implemented here have a specific applications, where are related with the basic image analysis such as image filtering, registration, feature extraction  and others.
 Please, be free to install your plugins, macros and scripts form the ImageJ Updater or even contribut with our codes in GitHub repository ({{GitHub | org = CSIM-Toolkits | repo = ImageJ}}).
 
+== Avaiable Methods ==
+
+Here is a list with the available methods for ImageJ.
+
+*'''Anomalous Filters''': A PlugIn for the two different methods for image filtering: Anisotropic Anomalous Diffusion and Isotropic Anomalous Diffusion. Both methods can be found in the Physics in Medicine and Biology article [http://], which is also referenced in this page. In summary, the anomalous filters are generalized methods that are proposed using the new anomalous distribution probability function (PDF) paradigm, also called ''q-Gaussian'' PDF. 
+
 == Source code ==
 The ImageJ sources codes are available on GitHub repository: {{GitHub | org = CSIM-Toolkits | repo = ImageJ}}.
 
