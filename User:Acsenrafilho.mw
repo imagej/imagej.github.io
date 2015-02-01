@@ -1,26 +1,31 @@
 == Purpose ==
 
 Promote plugins, macros and scripts created by the Computing in Signal and Image in Medicine research group (CSIM). All the code implemented here have a specific applications, where are related with the basic image analysis such as image filtering, registration, feature extraction  and others.
-Please, be free to install your plugins, macros and scripts form the ImageJ Updater or even contribut with our codes in GitHub repository ({{GitHub | org = CSIM-Toolkits | repo = ImageJ}}).
+Please, be free to install our plugins, macros and scripts from the ImageJ Updater or even contribute with our codes in the GitHub repository ({{GitHub | org = CSIM-Toolkits | repo = ImageJ | label = GitHub CSIM-ImageJ repository}}).
 
 == Avaiable Methods ==
 
 Here is a list with the available methods for ImageJ. If you want use any of these methods, please see the Update manager in Fiji (ImageJ) menu.
 
 === Anomalous Filters ===
-A PlugInFilter for the two different methods for image filtering: Anisotropic Anomalous Diffusion and Isotropic Anomalous Diffusion. Both methods can be found in the Physics in Medicine and Biology article [http://], which is also referenced in this page. In summary, the anomalous diffusion filters are generalized methods that are proposed using the new anomalous distribution probability function (PDF) paradigm, also called ''q-Gaussian'' PDF. These new filters are capable to build both classic and anomalous diffusion process, which is related to the anomalous parameter, called q value. When q=1 it returns the classic diffusion methods, both anisotropic diffusion (Perona and Malik method) and Gaussian filter (usual Gaussian filter widely knows in several filtering applications).
+A PlugInFilter for the two different methods for image filtering: Anisotropic Anomalous Diffusion and Isotropic Anomalous Diffusion. Both methods description can be found in the Physics in Medicine and Biology article [http://], which is also referenced in this page. In summary, the anomalous diffusion filters are generalized methods that are proposed using the new anomalous distribution probability function (PDF) paradigm, also called ''q-Gaussian'' PDF. These new filters are capable to build both classic and anomalous diffusion process, which is related to the anomalous parameter, called q value. When q=1 it returns the classic diffusion methods, both anisotropic diffusion (Perona and Malik method) and Gaussian filter (usual Gaussian filter widely knows in several filtering applications). On the contrary, when q ≠ 1 the anomalous diffusion filters uses the q-Gaussian probability distribution to attenuate the local noise present in each neighborhood around each pixel of the image. Please, see our reference articles to find out more details about the parameters necessary to run properly the anomalous diffusion filters.
 
 == Source code ==
-The ImageJ sources codes are available on GitHub repository: {{GitHub | org = CSIM-Toolkits | repo = ImageJ}}.
+The ImageJ source codes are available on GitHub repository: {{GitHub | org = CSIM-Toolkits | repo = ImageJ | label = GitHub-ImageJ source codes}}.
 
 == Who we are ==
 
-We are a computational laboratory dedicated with image and signal processing and analysis. Our group is ...
+We are a computational laboratory dedicated with image and signal processing and analysis. Our group is held in the Ribeirão Preto city, São Paulo state, Brazil. Our research group works directly with several applications related to image and signal issues. Registration, tissue segmentation, filtering, analysis and feature extraction are some examples of our range studies. Also, our goal is to improve and create suitable tools for image and signal applied in medical and biological research. Please, see the reference articles cited here in this Wiki to see some of our publications. If you want to know more about our group and research opportunities, be free to enter in contact with us in our [http://dcm.ffclrp.usp.br/csim website]
 
 == Publication ==
 
 Here it will be found some publications of our research group with respect the image and signal processing methods developed in our laboratory. If any future research will be made using our methods, please cite one of the bottom published articles.
 
+=== Journal Articles ===
+
+=== Procedings ===
+
+==== Anomalous Diffusion Filters ====
 *Filho, A. C. da S. S., Barbosa, J. H. O., Salmon, C. E. G. S., & Junior, L. O. M. (2014). Anisotropic Anomalous Diffusion Filtering Applied to Relaxation Time Estimation in Magnetic Resonance Imaging. In Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC. doi:10.1109/EMBC.2014.6944474
 *Filho, A. C. da S. S., Barizon, G. C., & Junior, L. O. M. (2014). Myocardium Segmentation Improvement with Anisotropic Anomalous Diffusion Filter Applied to Cardiac Magnetic Resonance Imaging. In Annual Meeting of Computing in Cardiology.
 *Senra Filho, A. C. da S., Rondinoni, C., Santos, A. C. dos, & Murta, L. O. (2014). Brain activation inhomogeneity highlighted by the Isotropic Anomalous Diffusion filter. In 2014 36th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (pp. 3313–3316). Chicago: IEEE. doi:10.1109/EMBC.2014.6944331
