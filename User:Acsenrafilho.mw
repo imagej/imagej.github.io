@@ -1,4 +1,14 @@
-== Purpose ==
+{{Infobox
+| name                   = CSIM Laboratory ImageJ
+| software               = Fiji
+| author                  = [[User:Acsenrafilho|Antonio Carlos da S. Senra Filho]] ([mailto:acsenrafilho@gmail.com])
+| maintainer             = [[User:Acsenrafilho|Antonio Carlos da S. Senra Filho]]
+| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/plugin]
+| released               = Febuary 01<sup>st</sup>, 2015
+| latest version         = Febuary 01<sup>st</sup>, 2015
+| status                 = experimental, active
+| category               = [[:Category:Plugins|Plugins]], [[:Category:Filtering|Filtering]], [[:Category:Noise Generator|Feature]]
+}}== Purpose ==
 
 Promote plugins, macros and scripts created by the Computing in Signal and Image in Medicine research group (CSIM). All the code implemented here have a specific applications, where are related with the basic image analysis such as image filtering, registration, feature extraction  and others.
 Please, be free to install our plugins, macros and scripts from the ImageJ Updater or even contribute with our codes in the GitHub repository ({{GitHub | org = CSIM-Toolkits | repo = ImageJ | label = GitHub CSIM-ImageJ repository}}).
