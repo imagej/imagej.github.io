@@ -20,7 +20,9 @@ Please, see our reference articles to find out more details about the parameters
 
 === Noise Generator ===
 
-In this specific PlugIn we offer a tool to create different noise image with several probability distributions, where could be useful in some biological and medical studies. Some noise examples are the Gaussian, Raylegh and 1/f noises.
+In this specific PlugIn we offer a tool to create different noise image with several probability distributions, where could be useful in some biological and medical studies. Some noise probability examples are the Gaussian, Rayleigh and Colored noises (Brown, pink and other 1/f noises).
+
+'''Update notes:'''
 
 == Source code ==
 The ImageJ source codes are available on GitHub repository: {{GitHub | org = CSIM-Toolkits | repo = ImageJ | label = GitHub-ImageJ source codes}}.
