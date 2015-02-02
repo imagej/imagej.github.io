@@ -3,7 +3,7 @@
 | software               = Fiji
 | author                  = [[User:Acsenrafilho|Antonio Carlos da S. Senra Filho]] ([mailto:acsenrafilho@gmail.com])
 | maintainer             = [[User:Acsenrafilho|Antonio Carlos da S. Senra Filho]]
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/plugin]
+| source                 = {{GitHub repository | org = CSIM-Toolkits | repo = ImageJ | label = GitHub CSIM-ImageJ repository}}
 | released               = Febuary 01<sup>st</sup>, 2015
 | latest version         = Febuary 01<sup>st</sup>, 2015
 | status                 = experimental, active
