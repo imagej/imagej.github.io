@@ -11,6 +11,18 @@ In summary, the anomalous diffusion filters are generalized methods that are pro
 
 == Anomalous Diffusion Analytic Description ==
 
+Anomalous diffusion processes (ADP) are mathematically denoted by a power law in the Fokker-Planck equation, leading to the generalized form. There are several generalizations of the Fokker-Plank equation, which should give many different partial differential equations (PDEs). Here we adopt only the so called porous media form, allowing the super-diffusive and the sub-diffusive processes. In porous media, channels are created promoting or blocking the flow of the density function. Equation (\ref{Eq:FokkerPlanckGeneralized}) shows the generalized heat flow equation that is the main PDE equation for the anomalous diffusion paradigm.    
+
+<math>
+\frac{\partial\rho}{\partial t} =   \overrightarrow{\nabla}[D_q .\overrightarrow{\nabla} \rho]^{2-q}
+</math>
+
+Where <math>\rho</math> represents diffusing element concentration, <math>D_q</math> denotes the generalized diffusion coefficient and $q$ is the power law parameter conveniently written. When <math>q=1</math>, the porous media equation recovers the classical diffusion, for <math>q<1</math> it represents sub-diffusive process, and when <math>q>1</math> it means super-diffusive phenomena are present. The <math>D_q</math> is the diffusion coefficient function that regulates diffusibility. We can distinguish <math>D_q</math> function in isotropic: when the diffusion coefficient is the same for all direction, i.e. <math>D_q</math> is direction invariant; and anisotropic behavior: when diffusion is driven to specific directions. The definition of isotropy or anisotropy is directly related to <math>D_{q}</math> function, which is the spatial function that regulates the filter blurring effect at each point.
+
+=== Generalized diffusion coefficient function ===
+
+The generalized diffusion coefficient value, <math>D_q</math>, must be consistent with ADP so that it can be used in IAD and AAD filters. The analytical form for <math>D_q</math> must be consistent with the ADP time evolution of variance, which follows <math>\sigma^{2} = 2.D_q.t</math>, i.e. linear relationship for classical diffusion, and <math>\sigma^{2} \propto t^{2/(3-q)}</math>, i.e nonlinear relationship for ADP.
+
 == Filters parameters ==
 
 === Anisotropic Anomalous Diffusion Filter ===
