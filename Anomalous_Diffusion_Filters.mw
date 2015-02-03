@@ -9,9 +9,7 @@ In summary, the anomalous diffusion filters are generalized methods that are pro
 
 *''Feb-01-2015'': The methods are capable to process image stacks, however, all the filtering method still is performed in bidimensional images.
 
-== Anomalous Diffusion Analystic Description ==
-
-
+== Anomalous Diffusion Analytic Description ==
 
 == Filters parameters ==
 
