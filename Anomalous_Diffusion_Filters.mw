@@ -8,3 +8,11 @@ In summary, the anomalous diffusion filters are generalized methods that are pro
 '''Update notes:'''
 
 *''Feb-01-2015'': The methods are capable to process image stacks, however, all the filtering method still is performed in bidimensional images.
+
+== Filters parameters ==
+
+=== Anisotropic Anomalous Diffusion Filter ===
+
+
+=== Isotropic Anomalous Diffusion Filter ===
+[[Image:Filters-parameters.png|thumb|300px|Filter's parameters for both isotropic and anisotropic approaches.]]
