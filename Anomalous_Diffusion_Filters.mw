@@ -23,6 +23,18 @@ Where <math>\rho</math> represents diffusing element concentration, <math>D_q</m
 
 The generalized diffusion coefficient value, <math>D_q</math>, must be consistent with ADP so that it can be used in IAD and AAD filters. The analytical form for <math>D_q</math> must be consistent with the ADP time evolution of variance, which follows <math>\sigma^{2} = 2.D_q.t</math>, i.e. linear relationship for classical diffusion, and <math>\sigma^{2} \propto t^{2/(3-q)}</math>, i.e nonlinear relationship for ADP.
 
+=== Filter's Description ===
+
+Proposed IAD and AAD filters are based on iterative numerical algorithms for ADP. The method used to solve partial differential anomalous equations uses finite differences, of first and second order, when time and space becomes discrete, i.e. digital images. Both isotropic and anisotropic approaches were implemented through numerical differential operators using explicit numeric formulation, similar to classic anisotropic diffusion filter (purposed by Perona and Malik).
+
+Numerical approaches were implemented using differential operators in one dimension, and then rotated in eight angle directions with respect to the central reference pixel. We can express this rotation in follow equation. 
+
+<math>
+ I_{\phi,t+1} = I_{\phi,t} + \lambda.\overrightarrow{\nabla} \Big[ D_q. \overrightarrow{\nabla} I_{\phi,t}^{2 - q} \Big]
+</math>
+
+Where <math>I_{\phi,t}</math> and <math>I_{\phi,t+1}</math> are the evaluated images in <math>t_i</math> iterations, and <math>I_{\phi,0}</math> is the original image. <math>D_{q}</math> is the diffusion coefficient regulated by a power law with <math>\textit{q}</math>, and <math>\phi</math> are the possible orientations with respect to the central pixel. The equation above assumes the time step is a constant (<math>\lambda \propto \Delta t/\Delta x^2</math>) and it depends on the numerical discretization. A careful time step determination plays an important role for numerical stability. The time step determination have a direct influence on the numeric discretization of the diffusion equation and here it follows the same assumptions made for the classical anisotropic diffusion algorithm. More details about the time step parameters and numerical stability can be found in [http://imagej.net/Acsenrafilho references section] of the CSIM main wiki site.
+
 == Filters parameters ==
 
 === Anisotropic Anomalous Diffusion Filter ===
