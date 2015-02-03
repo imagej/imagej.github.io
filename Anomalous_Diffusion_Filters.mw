@@ -1,1 +1,4 @@
+
+== Anomalous Diffusion Filters ==
+
 In summary, the anomalous diffusion filters are generalized methods that are proposed using the new anomalous distribution probability function (PDF) paradigm, also called ''q-Gaussian'' PDF. These new filters are capable to build both classic and anomalous diffusion process, which is related to the anomalous parameter, called q value. When q=1 it returns the classic diffusion methods, both anisotropic diffusion (Perona and Malik method) and Gaussian filter (usual Gaussian filter widely knows in several filtering applications). On the contrary, when q ≠ 1 the anomalous diffusion filters uses the q-Gaussian probability distribution to attenuate the local noise present in each neighborhood around each pixel of the image.
