@@ -1,4 +1,14 @@
-
+{{Infobox
+| name                   = Anomalous Diffusion Filters PlugIn
+| software               = Fiji
+| author                  = [[User:Acsenrafilho|Antonio Carlos da S. Senra Filho]] ([mailto:acsenrafilho@gmail.com])
+| maintainer             = [[User:Acsenrafilho|Antonio Carlos da S. Senra Filho]]
+| source                 = {{GitHub | org = CSIM-Toolkits | repo = ImageJ/plugins/AnisotropicDiffusionFilters | label = GitHub CSIM-ImageJ AnomalousDiffusionFilters repository}}
+| released               = February 03<sup>rd</sup>, 2015
+| latest version         = February 03<sup>rd</sup>, 2015
+| status                 = experimental, active
+| category               = [[:Category:Plugins|Plugins]], [[:Category:Filtering|Filtering]]
+}}
 == Anomalous Diffusion Filters ==
 
 [[Image:Filters-examples.png|thumb|500px|Filtering examples with the T1w MRI stack available in Fiji examples images.]]
