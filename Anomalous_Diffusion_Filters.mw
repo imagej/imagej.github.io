@@ -42,3 +42,7 @@ Where <math>I_{\phi,t}</math> and <math>I_{\phi,t+1}</math> are the evaluated im
 
 === Isotropic Anomalous Diffusion Filter ===
 [[Image:Filters-parameters.png|thumb|300px|Filter's parameters for both isotropic and anisotropic approaches.]]
+
+== Indicated Usage ==
+
+Some studies were already made with different MRI imaging techniques and the both isotropic and anisotropic filters shown a good performance with some specific imaging modalities. Diffusion tensor imaging (DTI) and structural MRI images such as T1 and T2 weighted images show a better filtering efficiency with the AAD filter. For the IAD method, we indicate the use of higher SNR images such as T1 weighted images, where you do not need to decrease so much noise presented in the original image. A short analysis with functional MRI with the IAD methods was made and publish in international conference ([http://www.ncbi.nlm.nih.gov/pubmed/25570699 fMRI], [http://www.ncbi.nlm.nih.gov/pubmed/24110614 DWI] and [http://www.ncbi.nlm.nih.gov/pubmed/25570842 T1 Relaxometry]).
