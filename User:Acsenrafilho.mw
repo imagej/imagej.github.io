@@ -35,7 +35,7 @@ Please see the [http://imagej.net/PerfusionMRI wiki page] for this specific meth
 
 In this specific PlugIn we offer a tool to create different noise image with several probability distributions, where could be useful in some biological and medical studies. Some noise probability examples are the Gaussian, Rayleigh and Colored noises (Brown, pink and other 1/f noises).
 
-A wiki page has been created to explain more about its PlugIn application, but it still in construction.
+A [http://imagej.net/NoiseGenerator wiki page] has been created to explain more about its PlugIn application, but it still in construction.
 
 '''Update notes:'''
 
