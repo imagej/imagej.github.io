@@ -1,7 +1,41 @@
+{{Infobox
+| name                   = MRI Perfusion PlugIn
+| software               = Fiji
+| author                  = [[User:Acsenrafilho|Antonio Carlos da S. Senra Filho]] ([mailto:acsenrafilho@gmail.com])
+| maintainer             = [[User:Acsenrafilho|Antonio Carlos da S. Senra Filho]]
+| source                 = {{GitHub | org = CSIM-Toolkits | repo = ImageJ/tree/master/plugins/MRI-Perfusion | label = GitHub CSIM-ImageJ MRI Perfusion repository}}
+| released               = February 04<sup>th</sup>, 2015
+| latest version         = February 04<sup>th</sup>, 2015
+| status                 = experimental, active
+| category               = [[:Category:Plugins|Plugins]], [[:Category:Perfusion|MRI]]
+}}
 == Perfusion in MRI ==
 
-[[Image:Perfusion.png|thumb|500px|Example of the perfusion curve obtained in the peritumoral region on brain cancer.]]
+[[Image:Perfusion.png|thumb|300px|Example of the perfusion curve obtained in the peritumoral region on brain cancer.]]
+
+Perfusion is defined as the passage of fluid through the lymphatic system or blood vessels to an organ or a tissue.[1] The practice of perfusion scanning, is the process by which this perfusion can be observed, recorded and quantified. The term perfusion scanning encompasses a wide range of [http://en.wikipedia.org/wiki/Medical_imaging medical imaging] modalities.
+
+There are different techniques of detecting perfusion parameters with the use of MRI, the most common being dynamic susceptibility contrast imaging (DSC-MRI) and arterial spin labelling (ASL). In DSC-MRI, Gadolinium contrast agent is injected and a time series of fast T2*-weighted images is acquired. As Gadolinium passes through the tissues, it produces a reduction of T2* intensity depending on the local concentration. The acquired data are then postprocessed to obtain perfusion maps with different parameters, such as CBV (cerebral blood volume), CBF (cerebral blood flow), MTT (mean transit time) and TTP (time to peak).
+
+'''Update notes:'''
+
+*''Feb-04-2015'': The method is capable to process a image stack with the perfusion gadolinium contrast agent. 
 
 == Perfusion Metrics ==
 
+The quantitative values that our plugin can calculate are:
+
+=== CBV === 
+=== MTT === 
+=== CBF===
+===Peak value===
+===Time to peak===
+
 == How to use ==
+
+First of all, the perfusion gadolinium contrast agent image sequence has to be transformed into a HyperStack (use the plugin MRI Perfusion/Create HyperStack). It is important here that the image sequence loaded must to have a DICOM header, otherwise the method will fail to transform the image stack into a HyperStack.
+
+After the HyperStack transformation step, you can choose what brain region you want to measure the perfusion metrics values<ref>The size of the region of interesting influence directly the time consuming of our plugin. Large regions could use several minutes to process all the perfusion metrics</ref>. Use the ROI tool provided by ImageJ to do the brain area selection. Before ROI selection, you can choose the two plugin metrics methods: Maps<ref>It is still an experimental method. The maps generated are create in a separeted window. Further updates will merge these maps into the original perfusion image.</ref> and Metrics. 
+
+
+{{reflist}}
