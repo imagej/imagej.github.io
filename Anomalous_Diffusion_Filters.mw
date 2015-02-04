@@ -49,12 +49,13 @@ Where <math>I_{\phi,t}</math> and <math>I_{\phi,t+1}</math> are the evaluated im
 
 == Filters parameters ==
 
-Basicaly, the common parameters that are used for both anomalous filtering methods are the number of iterations and the anomalous parameter (q value). For the anisotropic approach we have to set the Condutance and the 
+Basically, the common parameters that are used for both anomalous filtering methods are the number of iterations and the anomalous parameter (q value). The number of iterations is directly related to the time parameter and it must be a positive and integer number, because of the forward and discrete filter implementation. The anomalous parameter, or q value, is the general parameters to define what anomalous probability distribution that will be used for all filtering process in the image. 
 
-=== Anisotropic Anomalous Diffusion Filter ===
+Now, the only different parameters that have to be set for each filter method are: Condutance and Generalized diffusion coefficient. In summary, both parameters have an intrinsic relationship with the diffusion intensity. 
+
+In the case of isotropic filtering, the diffusion intensity is set as a fixed parameter for all filtering process, given by the Generalized diffusion coefficient value (<math>D_q</math>). This approach is similar with the [http://en.wikipedia.org/wiki/Gaussian_blur Gaussian blur] and have the physical process, where all the image space have the same diffusion intensity applied. A further idea, the anisotropic filtering set a local diffusion intensity based on the neighborhood characteristic. The local gradient magnitude is the general parameter to set what will be the filter behavior in that specific region of the image, given by its pixel neighbors. This kind of solution for the local diffusion intensity (gradient magnitude) is similar with the Perona and Malik anisotropic filter and for this case the Condutance parameters plays the edge detection role. See the [http://en.wikipedia.org/wiki/Anisotropic_diffusion Classic Anisotropic Filter] to get more information about the condutance parameter. 
 
 
-=== Isotropic Anomalous Diffusion Filter ===
 [[Image:Filters-parameters.png|thumb|300px|Filter's parameters for both isotropic and anisotropic approaches.]]
 
 == Indicated Usage ==
