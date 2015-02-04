@@ -28,23 +28,9 @@ Images are represented as tiled multi-resolution pyramids, and stored in HDF5 ch
 The XML file contains metadata, for example the registration of sources to the global coordinate system.
 
 == Installation ==
-To get BigDataViewer you need to enable its update site in the Fiji Updater.
-Select ''Help > Update Fiji'' from the Fiji menu to start the updater.
+The BigDataViewer comes with Fiji.
 
-[[Image:bdv-imagej-updater-1.png|500px]]
-
-Click on ''Manage update sites''. This brings up a dialog where you can activate additional update sites.
-
-[[Image:bdv-manage-update-sites-1.png|500px]]
-
-Activate the BigDataViewer update site and ''Close'' the dialog.
-Now you should see additional files appearing for download.
-
-[[Image:bdv-imagej-updater-2.png|500px]]
-
-Click ''Apply changes'' and restart Fiji.
-
-You should now have a sub-menu ''Plugins > BigDataViewer''.
+You should have a sub-menu ''Plugins > BigDataViewer''.
 
 == Usage ==
 To use the BigDataViewer we need some example dataset to browse.
