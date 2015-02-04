@@ -49,6 +49,8 @@ Where <math>I_{\phi,t}</math> and <math>I_{\phi,t+1}</math> are the evaluated im
 
 == Filters parameters ==
 
+Basicaly, the common parameters that are used for both anomalous filtering methods are the number of iterations and the anomalous parameter (q value). For the anisotropic approach we have to set the Condutance and the 
+
 === Anisotropic Anomalous Diffusion Filter ===
 
 
