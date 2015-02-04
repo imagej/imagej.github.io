@@ -37,5 +37,7 @@ First of all, the perfusion gadolinium contrast agent image sequence has to be t
 
 After the HyperStack transformation step, you can choose what brain region you want to measure the perfusion metrics values<ref>The size of the region of interesting influence directly the time consuming of our plugin. Large regions could use several minutes to process all the perfusion metrics</ref>. Use the ROI tool provided by ImageJ to do the brain area selection. Before ROI selection, you can choose the two plugin metrics methods: Maps<ref>It is still an experimental method. The maps generated are create in a separeted window. Further updates will merge these maps into the original perfusion image.</ref> and Metrics. 
 
+It will be displayed several tables with the measures calculated in each pixel into the ROI. At the last column of all tables its show the mean values for all pixels into the ROI. 
+
 
 {{reflist}}
