@@ -1,0 +1,31 @@
+{{Notice | This page describes ''how'' ImageJ projects are funded.
+* For information on who ''contributes'' to these projects, see [[Contributors]].
+* For information on who ''maintains'' these projects, see [[Governance]].}}
+
+== ImageJ 1.x ==
+
+Historically, [[ImageJ 1.x]] was funded internally by the [http://rsbweb.nih.gov/ Research Services] branch of the [http://nih.gov/ National Institutes of Health]. It is developed by [https://github.com/rasband Wayne Rasband], who is now retired, and continues his work on ImageJ1 as an NIH special volunteer.
+
+== ImageJ2 ==
+
+[[ImageJ2]] was initially funded from 2010 through 2012 by the National Institute of General Medical Sciences (NIGMS) through the American Recovery and Reinvestment Act of 2009 NIH Research and Research Infrastructure "Grand Opportunities" Grant, '''"Hardening" of Biomedical Informatics/Computing Software for Robustness and Dissemination'''. For more information on the grant call, see the listing on the NIGMS [http://www.nigms.nih.gov/Research/pages/GrandOpportunityAreas.aspx Grand Opportunity Areas] page. See also the original [[ImageJ2 grant proposal]] from 2009.
+
+In recent years, ImageJ2 development has been funded by several sources, including a [http://www.wellcome.ac.uk/ Wellcome Trust] Strategic Award (Ref: 095931). It is developed by [[User:Rueden|Curtis Rueden]] and [[User:Hinerm|Mark Hiner]] of UW-Madison [[LOCI]].
+
+== SCIFIO ==
+
+[[SCIFIO]] is funded by the [http://nsf.gov/ National Science Foundation], award number [http://www.nsf.gov/awardsearch/showAward?AWD_ID=1148362 1148362]. It is developed by [[User:Hinerm|Mark Hiner]] and [[User:Rueden|Curtis Rueden]] of UW-Madison [[LOCI]].
+
+== ImgLib2 ==
+
+The [[ImgLib2]] project was developed by [[User:Saalfeld|Stephan Saalfeld]] and [[User:Preibisch|Stephan Preibisch]] of the [http://mpi-cbg.de/research/research-groups/pavel-tomancak.html Tomancak lab] at [http://mpi-cbg.de/ MPI-CBG]. In recent years, [[ImgLib2]] is funded indirectly by the various involved software efforts, including the Tomancak lab as well as the [[ImageJ2]] project. The ImgLib2 project as a whole is organized and maintained by [[User:Pietzsch|Tobias Pietzsch]] of MPI-CBG, and [[User:Rueden|Curtis Rueden]] and [[User:Hinerm|Mark Hiner]] of UW-Madison [[LOCI]].
+
+== SciJava ==
+
+[[SciJava]] is funded indirectly by the various involved software efforts, including [[ImageJ2]], [[KNIME]], [[OMERO]] and [[CellProfiler]]. The SciJava project as a whole is organized and maintained by [[User:Rueden|Curtis Rueden]] and [[User:Hinerm|Mark Hiner]] of UW-Madison [[LOCI]].
+
+== Fiji ==
+
+The [[Fiji]] distribution of [[ImageJ]] for the life sciences is a broad collection of plugins by many authors across the worldwide community.
+
+Fiji development is funded indirectly by various institutions as part of their respective research and development goals. Fiji as a whole is organized and maintained as part of the ImageJ2 effort by [[User:Rueden|Curtis Rueden]] and [[User:Hinerm|Mark Hiner]] of UW-Madison [[LOCI]].
