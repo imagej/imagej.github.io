@@ -23,7 +23,8 @@ The ultimate goal of perfusion MRI is to measure or assess the blood flow irriga
 
 == Perfusion Metrics ==
 
-The quantitative values that our plugin can calculate are:
+The quantitative values that our plugin can calculate are listed bellow. 
+<span style="color:#ff0000"> NOTE: </span> This plugin still in experimental development and the CBV and CBF measurements are not set with the correct units (ml/g/min). All data related with these measurements are shown in arbitrary units, given by the pixel gray intensity).
 
 === CBV === 
 === MTT === 
