@@ -24,7 +24,7 @@ The [[ImgLib2]] project was developed by [[User:Saalfeld|Stephan Saalfeld]], [[U
 
 == SciJava ==
 
-[[SciJava]] is funded indirectly by the various involved software efforts, including [[ImageJ2]], [[KNIME]], [[OMERO]] and [[CellProfiler]]. The SciJava project as a whole is organized and maintained by [[User:Rueden|Curtis Rueden]] and [[User:Hinerm|Mark Hiner]] of UW-Madison [[LOCI]].
+Core [[SciJava]] libraries are funded indirectly by the various involved software efforts, including [[ImageJ2]], [[KNIME]], [[OMERO]] and [[CellProfiler]]. The SciJava project as a whole is organized and maintained by [[User:Rueden|Curtis Rueden]] and [[User:Hinerm|Mark Hiner]] of UW-Madison [[LOCI]].
 
 == Fiji ==
 
