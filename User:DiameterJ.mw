@@ -81,8 +81,8 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 #*Approximately 2% of the time none of the algorithms included will provide a good segmentation.  (Based on our experience)
 #*If that is the case you will need to either repeat your imaging with better contrast/brightness between the background and what you are trying to measure or you can find/implement a different algorithm that works better
 #*We recommend one of the following if default segmentation did not work: 
-#**''[http://imagej.net/Trainable_Weka_Segmentation_-_How_to_install_new_classifiers| Trainable Weka Segmentation] machine learning segmentation implementation''
-#**''[http://rsbweb.nih.gov/ij/plugins/canny/index.html| Canny Edge Detection] and then fill the resulting image outline in with black''
+#**''[http://fiji.sc/Trainable_Weka_Segmentation Trainable Weka Segmentation] machine learning segmentation implementation''
+#**''[http://rsbweb.nih.gov/ij/plugins/canny/index.html Canny Edge Detection] and then fill the resulting image outline in with black''
 #**''Auto local threshold (in ImageJ/FIJI at Image-->Adjust-->Auto Local Threshold)''
 #**''Auto threshold (in ImageJ/FIJI at Image-->Adjust-->Local Threshold)''
 #**''Manually outline the foreground and background with the free hand selection tool and fill the selections with black (background) and white (fibers)'' 
