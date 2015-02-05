@@ -153,7 +153,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 === <big>DiameterJ Output</big> ===
 ----
 ==== Summaries Folder ====
-::'''XXXX_Pore Summary.xls'''
+::'''"File Source Name"_Pore Summary.xls'''
 :::#Slice: Image name
 :::#Count: Total number of pores found in image that are not touching the side.
 :::#Total Area: Total number of black pixels in an image not in groups touching the sides
@@ -167,7 +167,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 :::#Skew: The third order moment about the mean
 :::#Kurt: The fourth order moment about the mean
 
-::'''XXXX_Total Summary.csv'''
+::'''"File Source Name"_Total Summary.csv'''
 :::#Super Pixel:  The mean fiber diameter as calculated using a super pixel determination 
 :::#More accurate for samples with extremely diverse fiber diameters
 :::#Hitogram_Mean: The mean fiber diameter as calculated using the average of all diameters measured in the histogram 
@@ -181,7 +181,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 
 
 ==== Histograms Folder ====
-::'''XXXX_Histogram.csv'''
+::'''"File Source Name"_Histogram.csv'''
 :::#Mean:  Average Diameter from all measures found in the histogram	
 :::#StdDev:  Standard deviation from all measures found in the histogram	
 :::#Mode:  Most occurring diameter	found in the histogram
@@ -194,14 +194,14 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 :::#Radius Count: Number of times the radius value occurred in the image. Also known as the frequency of occurrence and can also be interpreted as the length of fiber in an image that has a given radius
 :::#The radius or diameter histogram is constructed from the radius value (x-axis) and radius count (frequency of occurrence on y-axis)
 
-::'''XXXX_Intersection Coordinates.txt'''
+::'''"File Source Name"_Intersection Coordinates.txt'''
 :::#Column 1 – Grey scale value at intersection 
 :::#Column 2 – x coordinate of intersection 
 :::#*Upper left hand corner is 0,0
 :::#Column 3 – y coordinate of intersection 
 :::#*Upper left hand corner is 0,0
 
-::'''XXXX_Pore Data.csv'''
+::'''"File Source Name"_Pore Data.csv'''
 :::#Slice: Image name
 :::#Count: Total number of pores found in image that are not touching the side
 :::#Area: Total number of black pixels in an image not in groups touching the sides
@@ -217,24 +217,23 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 :::#Round:  4 × [Area] / (π × [Major axis]2) or the inverse of Aspect Ratio. 
 :::#Solidity: [Area] / [Convex area]
 
-::'''XXXX_Radius Histogram.tif'''
+::'''"File Source Name"_Radius Histogram.tif'''
 :::#Image of the histogram of all fiber radii in the image
 
 ==== Diameter Analysis Images Folder ====
-::'''XXXX_Axial Thinning.tif'''
+::'''"File Source Name"_Axial Thinning.tif'''
 :::#Image of the centerline as determined by the axial thinning algorithm
 
-::'''XXXX_Dilate.tif'''
+::'''"File Source Name"_Dilate.tif'''
 :::#Image of all centerlines counted in the histogram overlaid on the Euclidean distance transformed of the fibers fibers.
 :::#*Yellow lines are the locations where radii were counted
 :::#*Fibers are in greyscale as transformed by the Euclidean distance transform
 
-::'''XXXX_Orientation.tif'''
+::'''"File Source Name"_Orientation.tif'''
 :::#An image with the frequency of orientation of the centerline of all fibers.  This is an output of OrientationJ and was not coded by me
 
-::'''XXXX_Voronoi.tif'''
+::'''"File Source Name"_Voronoi.tif'''
 :::#Image of the centerline as determined by the Voronoi tessellation algorithm
-
 
 === <big>How DiameterJ Works</big> ===
 ----
