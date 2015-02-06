@@ -250,6 +250,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 #An image with the frequency of orientation of the centerline of all fibers.  This is an output of OrientationJ and was not coded by me
 |
 #Image of the centerline as determined by the Voronoi tessellation algorithm
+|}
 
 === <big>How DiameterJ Works</big> ===
 ----
