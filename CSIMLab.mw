@@ -29,7 +29,7 @@ Please, see our reference articles to find out more details about the parameters
 
 In this specific PlugInFilter we offer a tool to measure the main parameters involved in Perfusion MRI images such as: Time to peak, Peak, CBV and CBF values. It could be useful in medical studies where are used perfusion images. Here we only create a simple implementation for these metrics and more detailed approach should be implemented in a near future. 
 
-Please see the [http://imagej.net/PerfusionMRI wiki page] for this specific method.
+Please see the [http://imagej.net/MRIPerfusion wiki page] for this specific method.
 
 === Noise Generator ===
 
