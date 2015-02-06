@@ -1,0 +1,59 @@
+{{Infobox
+| name                   = CSIM Laboratory ImageJ
+| software               = Fiji
+| author                  = [[User:Acsenrafilho|Antonio Carlos da S. Senra Filho]] ([mailto:acsenrafilho@gmail.com])
+| maintainer             = [[User:Acsenrafilho|Antonio Carlos da S. Senra Filho]]
+| source                 = {{GitHub | org = CSIM-Toolkits | repo = ImageJ | label = GitHub CSIM-ImageJ repository}}
+| released               = February 01<sup>st</sup>, 2015
+| latest version         = February 01<sup>st</sup>, 2015
+| status                 = experimental, active
+| category               = [[:Category:Plugins|Plugins]], [[:Category:Filtering|Filtering]], [[:Category:Noise Generator|Feature]]
+}}== Purpose ==
+
+Promote plugins, macros and scripts created by the Computing in Signal and Image in Medicine research group (CSIM). All the code implemented here have a specific applications, where are related with the basic image analysis such as image filtering, registration, feature extraction  and others.
+Please, be free to install our plugins, macros and scripts from the ImageJ Updater or even contribute with our codes in the GitHub repository ({{GitHub | org = CSIM-Toolkits | repo = ImageJ | label = GitHub CSIM-ImageJ repository}}).
+
+[[Image:CSIM-logo.png|thumb|300px|CSIM Laboratory. See more details about our research group in the web site: http://dcm.ffclrp.usp.br/csim]]
+
+== Avaiable Methods ==
+
+Here is a list with the available methods for ImageJ. If you want use any of these methods, please see the Update manager in Fiji (ImageJ) menu.
+
+=== Anomalous Filters === 
+
+A PlugInFilter for the two different methods for image filtering: Anisotropic Anomalous Diffusion and Isotropic Anomalous Diffusion. Both methods description can be found in the Physics in Medicine and Biology article [http://], which is also referenced in [http://imagej.net/AnomalousDiffusionFilters wiki page], and have a discrete solution of generalized diffusion heat equation (also know as a porous media equation). 
+
+Please, see our reference articles to find out more details about the parameters necessary to run properly the anomalous diffusion filters.
+
+=== Perfusion Metrics in MRI ===
+
+In this specific PlugInFilter we offer a tool to measure the main parameters involved in Perfusion MRI images such as: Time to peak, Peak, CBV and CBF values. It could be useful in medical studies where are used perfusion images. Here we only create a simple implementation for these metrics and more detailed approach should be implemented in a near future. 
+
+Please see the [http://imagej.net/PerfusionMRI wiki page] for this specific method.
+
+=== Noise Generator ===
+
+In this specific PlugIn we offer a tool to create different noise image with several probability distributions, where could be useful in some biological and medical studies. Some noise probability examples are the Gaussian, Rayleigh and Colored noises (Brown, pink and other 1/f noises).
+
+A [http://imagej.net/NoiseGenerator wiki page] has been created to explain more about its PlugIn application, but it still in construction.
+
+== Source code ==
+The ImageJ source codes are available on GitHub repository: {{GitHub | org = CSIM-Toolkits | repo = ImageJ | label = GitHub-ImageJ source codes}}. If you want contribute with our applications, please enter in contact! It would be great to share our method implementations with you.
+
+== Who we are ==
+
+We are a computational laboratory dedicated with image and signal processing and analysis. Our group is held in the Ribeirão Preto city, São Paulo state, Brazil. Our research group works directly with several applications related to image and signal issues. Registration, tissue segmentation, filtering, analysis and feature extraction are some examples of our range studies. Also, our goal is to improve and create suitable tools for image and signal applied in medical and biological research. Please, see the reference articles cited here in this Wiki to see some of our publications. If you want to know more about our group and research opportunities, be free to enter in contact with us in our [http://dcm.ffclrp.usp.br/csim website]
+
+== Publication ==
+
+Here it will be found some publications of our research group with respect the image processing methods developed in our laboratory. If any future research will be made using our methods, please cite one of the bellow published articles.
+
+=== Journal Articles ===
+
+=== Procedings ===
+
+==== Anomalous Diffusion Filters ====
+*Filho, A. C. da S. S., Barbosa, J. H. O., Salmon, C. E. G. S., & Junior, L. O. M. (2014). Anisotropic Anomalous Diffusion Filtering Applied to Relaxation Time Estimation in Magnetic Resonance Imaging. In Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC. Available at: http://www.ncbi.nlm.nih.gov/pubmed/25570842
+*Filho, A. C. da S. S., Barizon, G. C., & Junior, L. O. M. (2014). Myocardium Segmentation Improvement with Anisotropic Anomalous Diffusion Filter Applied to Cardiac Magnetic Resonance Imaging. In Annual Meeting of Computing in Cardiology. Available at: http://www.cinc.org/archives/2014/pdf/0929.pdf
+*Senra Filho, A. C. da S., Rondinoni, C., Santos, A. C. dos, & Murta, L. O. (2014). Brain activation inhomogeneity highlighted by the Isotropic Anomalous Diffusion filter. In 2014 36th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (pp. 3313–3316). Chicago: IEEE. Available at: http://www.ncbi.nlm.nih.gov/pubmed/25570699 
+*Senra Filho, A.C. da S., Duque, J.J. & Murta, L.O., 2013. Isotropic anomalous filtering in Diffusion-Weighted Magnetic Resonance Imaging. I. E. in M. and B. Society, ed. Conference proceedings : ... Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Conference, 2013, pp.4022–5. Available at: http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6610427 [Accessed April 24, 2014].
