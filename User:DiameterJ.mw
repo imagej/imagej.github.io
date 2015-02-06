@@ -155,7 +155,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 ----
 {| class="wikitable collapsible collapsed"
 |- style="text-align:center"
-|+ colspan=2 | <big>'''Summaries Folder'''</big> 
+| colspan=2 | <big>'''Summaries Folder'''</big> 
 |-
 ! scope="col" width="50%" | '''"File Source Name"_Pore Summary.xls'''
 ! scope="col" width="50%" | '''"File Source Name"_Total Summary.csv'''
@@ -185,7 +185,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 #Intersection Density (100x100px):  (Number of fiber overlaps)*10000 / (Total pixels in image)
 #Characteristic Length: (Total length of all fiber centerlines) / (# of fiber overlaps)
 |- style="text-align:center"
-|+ colspan=2 | <big>'''Histograms Folder'''</big> 
+| colspan=2 | <big>'''Histograms Folder'''</big> 
 |-
 !'''"File Source Name"_Histogram.csv'''
 !'''"File Source Name"_Pore Data.csv'''
@@ -230,7 +230,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 |
 #Image of the histogram of all fiber radii in the image
 |- style="text-align:center"
-|+ colspan=2 | <big>'''Diameter Analysis Images Folder'''</big> 
+| colspan=2 | <big>'''Diameter Analysis Images Folder'''</big> 
 |-
 !'''"File Source Name"_Axial Thinning.tif'''
 !'''"File Source Name"_Dilate.tif'''
