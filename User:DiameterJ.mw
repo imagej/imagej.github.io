@@ -158,8 +158,8 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 |- style="text-align:center"
 | colspan=2 | <big>'''Summaries Folder'''</big> 
 |-
-!'''"File Source Name"_Pore Summary.xls'''
-!'''"File Source Name"_Total Summary.csv'''
+! scope="col" width="50%" | '''"File Source Name"_Pore Summary.xls'''
+! scope="col" width="50%" | '''"File Source Name"_Total Summary.csv'''
 |-
 |
 #Slice: Image name
