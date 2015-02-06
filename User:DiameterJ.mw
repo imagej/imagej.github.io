@@ -42,7 +42,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 
 {| class="wikitable collapsible collapsed" style="vertical-align:top; width:90%; margin: 1em auto 1em auto;"
 |- id="section link anchor name" style="text-align:center" valign="top"
-| colspan=3 | <h4> <big> Download and install [http://rsb.info.nih.gov/ij/download.html ImageJ 1.48] or newer or [http://fiji.sc/Downloads Fiji] (any version) </big> </h4>
+| colspan=3 | <big> '''Download and install [http://rsb.info.nih.gov/ij/download.html ImageJ 1.48] or newer or [http://fiji.sc/Downloads Fiji] (any version)''' </big>
 |- valign="top"
 ! scope="col" width="33%" | '''Windows'''
 ! scope="col" width="33%" | '''OSX'''
