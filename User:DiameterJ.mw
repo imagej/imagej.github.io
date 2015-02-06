@@ -154,7 +154,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 === <big>DiameterJ Output</big> ===
 ----
 {| class="wikitable collapsible collapsed"
-|- style="text-align:center"
+|- id="section link anchor name" style="text-align:center"
 | colspan=2 | <big>'''Summaries Folder'''</big> 
 |-
 ! scope="col" width="50%" | '''"File Source Name"_Pore Summary.xls'''
