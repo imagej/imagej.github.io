@@ -153,7 +153,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 
 === <big>DiameterJ Output</big> ===
 ----
-{| class="wikitable collapsible collapsed"
+{| class="wikitable collapsible collapsed" style="width:90%; margin: 1em auto 1em auto;"
 |- id="section link anchor name" style="text-align:center"
 | colspan=2 | <h4> <big> Summaries Folder </big> </h4>
 |-
