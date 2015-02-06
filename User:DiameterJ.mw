@@ -154,7 +154,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 === <big>DiameterJ Output</big> ===
 ----
 ====  ====
-{| class="wikitable"
+{| class="wikitable collapsible collapsed"
 |- style="text-align:center"
 | colspan=2 | <big>'''Summaries Folder'''</big> 
 |-
@@ -189,7 +189,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 | colspan=2 | <big>'''Histograms Folder'''</big> 
 |-
 !'''"File Source Name"_Histogram.csv'''
-!'''"File Source Name"_Intersection Coordinates.txt'''
+!'''"File Source Name"_Pore Data.csv'''
 |-
 |
 #Mean:  Average Diameter from all measures found in the histogram	
@@ -203,16 +203,6 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 #Radius Value:  Radius length (in pixels)
 #Radius Count: Number of times the radius value occurred in the image. Also known as the frequency of occurrence and can also be interpreted as the length of fiber in an image that has a given radius
 #The radius or diameter histogram is constructed from the radius value (x-axis) and radius count (frequency of occurrence on y-axis)
-|
-#Column 1 – Grey scale value at intersection 
-#Column 2 – x coordinate of intersection 
-#*Upper left hand corner is 0,0
-#Column 3 – y coordinate of intersection 
-#*Upper left hand corner is 0,0
-|-
-!'''"File Source Name"_Pore Data.csv'''
-!'''"File Source Name"_Radius Histogram.tif'''
-|-
 |
 #Slice: Image name
 #Count: Total number of pores found in image that are not touching the side
@@ -228,6 +218,16 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 #AR:  The aspect ratio of the particle’s fitted ellipse, i.e., [Major Axis] / [Minor Axis]
 #Round:  4 × [Area] / (π × [Major axis]2) or the inverse of Aspect Ratio. 
 #Solidity: [Area] / [Convex area]
+|-
+!'''"File Source Name"_Intersection Coordinates.txt'''
+!'''"File Source Name"_Radius Histogram.tif'''
+|-
+|
+#Column 1 – Grey scale value at intersection 
+#Column 2 – x coordinate of intersection 
+#*Upper left hand corner is 0,0
+#Column 3 – y coordinate of intersection 
+#*Upper left hand corner is 0,0
 |
 #Image of the histogram of all fiber radii in the image
 |- style="text-align:center"
