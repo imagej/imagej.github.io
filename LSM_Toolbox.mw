@@ -4,7 +4,7 @@
 | author                 = Patrick Pirrotte, Jérome Mütterrer
 | maintainer          = Mark Longair or Jean-Yves Tinevez
 | filename               = LSM_Toolbox.jar
-| source                 = [http://image-archive.org/index.php?id=165 on image-archive.org]
+| source                 = {{GitHub | org=fiji | repo=LSM_Toolbox}}
 | released               = v4.0 - 10 October 2010
 | latest version         =v4.0g - 29 March 2010
 | status                 = stable
