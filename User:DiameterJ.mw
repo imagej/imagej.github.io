@@ -155,7 +155,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 ----
 {| class="wikitable collapsible collapsed"
 |- id="section link anchor name" style="text-align:center"
-| colspan=2 | <h4> <big>'''Summaries Folder'''</big> </h4>
+| colspan=2 | <h4> '''Summaries Folder'''</h4>
 |-
 ! scope="col" width="50%" | '''"File Source Name"_Pore Summary.xls'''
 ! scope="col" width="50%" | '''"File Source Name"_Total Summary.csv'''
