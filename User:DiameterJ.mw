@@ -38,25 +38,32 @@ If you would like to cite DiameterJ in your work citation information can be fou
 ----
 If you installed imageJ before the end of 2013 you should uninstall your current version of ImageJ ('''DO NOT UPDATE''') and reinstall ImageJ 1.48 or newer. 
 :*Before uninstall be sure to copy all of your old plugins into a separate folder as these will be removed when you uninstall your old version of ImageJ.  
-:*We recommend ImageJ over Fiji if you have no experience with either software because it is simpler to use and the plugin is buggy in Fiji.  
-:::Soon a version will be released that will work for both but for now I recommend ImageJ.    
-==== Windows ====
-:Download and install [http://rsb.info.nih.gov/ij/download.html ImageJ 1.48] or newer or [http://fiji.sc/Downloads Fiji] (any version).  
-:#Download and unzip the DiameterJ files (Find in "Source" above) and move or copy the three folders into the plugins folder of ImageJ.  
-:#That should be in directory:
-:#:"C:\Program Files\ImageJ\plugins"
-:#:::Or 
-:#:"C:\Program Files (x86)\ImageJ\plugins"
-:#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
-:#Restart ImageJ 
-==== OSX ====
-:Follow instructions [http://rsb.info.nih.gov/ij/docs/install/osx.html#dandd Here] or [http://fiji.sc/MacOSX_tips Here] for installation of ImageJ/FIJI on OSX 
-==== Linux ====
-:#Download and unzip the DiameterJ files (Find in "File" in the Info box above) 
-:#Move or copy the three folders into the plugins folder of the directory where you have placed ImageJ.  
-:#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
-:#Restart ImageJ 
+:*We recommend ImageJ over Fiji if you have no experience with either software because it is simpler to use.  
 
+{| class="wikitable collapsible collapsed" style="vertical-align:top; width:90%; margin: 1em auto 1em auto;"
+|- id="section link anchor name" style="text-align:center" valign="top"
+| colspan=3 | <h4> <big> Download and install [http://rsb.info.nih.gov/ij/download.html ImageJ 1.48] or newer or [http://fiji.sc/Downloads Fiji] (any version) </big> </h4>
+|- valign="top"
+! scope="col" width="33%" | '''Windows'''
+! scope="col" width="33%" | '''OSX'''
+! scope="col" width="33%" | '''Linux'''
+|- valign="top"
+|
+#Download and unzip the DiameterJ files (Find in "Source" above) and move or copy the three folders into the plugins folder of ImageJ.  
+#That should be in directory:
+#:"C:\Program Files\ImageJ\plugins"
+#::Or 
+#:"C:\Program Files (x86)\ImageJ\plugins"
+#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
+#Restart ImageJ 
+|
+#Follow instructions [http://rsb.info.nih.gov/ij/docs/install/osx.html#dandd Here] or [http://fiji.sc/MacOSX_tips Here] for installation of ImageJ/FIJI on OSX 
+|
+#Download and unzip the DiameterJ files (Find in "File" in the Info box above) 
+#Move or copy the three folders into the plugins folder of the directory where you have placed ImageJ.  
+#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
+#Restart ImageJ
+|}
 
 === <big>How to Use DiameterJ</big> ===
 ----
