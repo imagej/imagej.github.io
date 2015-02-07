@@ -216,3 +216,8 @@ TrackMate version bumped by several increments, prompted by the [[2014-12-10 - I
 == 26-01-2015 - v2.7.1 ==
 
 * Add a new tracking algorithm: [[TrackMate_algorithms#Linear_motion_tracker|the linear motion LAP tracker]].
+
+
+== 26-01-2015 - v2.7.2 ==
+
+* Fix a buf in the Linear motion LAP tracker, noticed by Ronny Sczech. The bug caused the linear tracker to crash on some cases.
