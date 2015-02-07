@@ -220,4 +220,4 @@ TrackMate version bumped by several increments, prompted by the [[2014-12-10 - I
 
 == 26-01-2015 - v2.7.2 ==
 
-* Fix a buf in the Linear motion LAP tracker, noticed by Ronny Sczech. The bug caused the linear tracker to crash on some cases.
+* Fix a bug in the Linear motion LAP tracker, noticed by Ronny Sczech. The bug caused the linear tracker to crash on some cases.
