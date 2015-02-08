@@ -43,8 +43,18 @@ Change to a directory where you have sufficient privileges to install software.
 <source lang="bash">
 cd /sw/users/tomancak/packages
 </source>
+Download Fiji nightly build from [http://fiji.sc/Downloads Fiji's download page]. 
+<source lang="bash">
+wget http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-linux64.tar.gz
+</source>
 
-Download Fiji nightly build from [http://fiji.sc/Downloads Fiji's download page]. In all likelihood you will need the Linux (64 bit) version (unless you are of course using some sort of Windows/Mac cluster). Unzip and unpack the tarball
+or
+
+<source lang="bash">
+curl -O http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-linux64.tar.gz
+</source>
+
+In all likelihood you will need the Linux (64 bit) version (unless you are of course using some sort of Windows/Mac cluster). Unzip and unpack the tarball
 
 <source lang="bash">
 gunzip fiji-linux64.tar.gz
