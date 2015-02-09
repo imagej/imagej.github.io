@@ -13,11 +13,14 @@
 
 It is well know that in every image acquisition process exist a noise level always present by different sources. Each noise has its particular characteristics and the behavior on image acquisition plays an importanto role to quantify the reliability on further image manipulations such as registration and tissue segmentation.
 
-
-
-
 '''Update notes:'''
 
 *''Feb-08-2015'': Available to produce additive noise on 2D images with some specific noise probability distributions. It is produced in the majority the MRI and complex noise distributions.
 
 == Noise Distributions ==
+
+== How to use ==
+
+We try to implement a simple PlugIn in order to produce additive noise on a set of different noise probability distributions. In this case, only click on the PlugIn ImageJ menu and hit the Noise Generator PlugIn. 
+
+A window will pop up where you can choose what noise you want to add and the its intensity. The intensity is relative to an percentage (0-100%), which 0% does noting in the image. For any other value between 0-100%, our PlugIn calculate the maximum contrast noise for each pixel depth (8-bits and 32-bits gray images) selected in the same Noise Generator window.
