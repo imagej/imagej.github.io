@@ -66,11 +66,11 @@ If you would like to cite DiameterJ in your work citation information can be fou
 #**''Develop your own algorithm!''
 
 ====<big>DiameterJ Analysis</big>====
-:'''''Analyzed images MUST be white fibers on a black background.  If you have black fibers on a white background invert the image to analyze it with DiameterJ.'''''
+:'''''Analyzed images MUST be white fibers on a black background.  If you have black fibers on a white background invert the image to analyze it with DiameterJ.''''' 
 
 ::; In ImageJ go to:
 ::: “Plugins-->DiameterJ-->DiameterJ 0.XXX” to analyze the segmented image.  
- 
+[[File:Statistic summary.PNG|350px|thumb|right|alt=Alt|Caption]]
 ::Choose the directory of the file you want to analyze (right now it’s in batch form so if you only want to analyze one file move it into a folder by itself and select that folder.  I intend to post both a batch and non-batch form of the segmentation and DiameterJ code but haven’t made the non-batch form yet.)
  
 ::DiameterJ will then analyze all images in the directory and will separate its analysis into three folders “Diameter Analysis Images”, “Histograms”, and “Summaries.”  They are pretty self-explanatory. 
