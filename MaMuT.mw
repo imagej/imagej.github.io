@@ -1,5 +1,5 @@
 {{Infobox
-| software               = ImageJ
+| software               = Fiji
 | name                   = MaMuT
 | logo                   = [[Image:MaMuT logo-256x256.png|160px]]
 | maintainer             = [[User:JeanYvesTinevez|Jean-Yves Tinevez]]
@@ -26,6 +26,16 @@ MaMuT is an end user plugin that combines the [[BigDataViewer]] and [[TrackMate]
 [[File:MaMuT presentation.png|600px]]
 
 
+The main window resembles the display panel of [[TrackMate]]. It controls how the annotations are displayed. Using the ''MaMuT Viewer'' button, several views of the data can be launched. They will all be in sync. Each of them is an instance of the [[BigDataViewer]].
+
+[[File:MaMuT WindowsInSync.png]]
 
 
+We privileged annotations that are like lineages, or object followed over time (which is what [TrackMate]] does). MaMuT ships [[TrackScheme]], the lineage browser taken from TrackMate.
+
+[[File:MaMuT WithTrackScheme.png]]
+
+However, MaMuT itself does not ship any fully-automated or tracking algorithm. It is meant for manual or semi-automatic annotation. Still, we made the GUI comfortable enough so that you can quickly generate rather large annotations.
+
+[[File:MaMuT LargeAnnotationsQuickly.png]]
 [[Category:Plugins]]
