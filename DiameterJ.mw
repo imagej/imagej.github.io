@@ -18,8 +18,7 @@ __TOC__
 
 === <big>Overview</big> ===
 ----
-DiameterJ<ref>Hotaling NA, Bharti K, Kriel H, Simon CG.  DiameterJ: Validated Open Source Nanofiber Diameter Measurement Tool.  ''Biomaterials'', ''Submitted.'' 2015.
-</ref> is a two step process of image analysis:
+[[File:02b_Hotaling_Visual_Abstract.png|500px|thumb|right|alt=Alt|Caption]] DiameterJ<ref>Hotaling NA, Bharti K, Kriel H, Simon CG.  DiameterJ: Validated Open Source Nanofiber Diameter Measurement Tool.  ''Biomaterials'', ''Submitted.'' 2015.</ref> is a two step process of image analysis:
 
 # Image Segmentation into a binary image (black and white pixels only)
 #*Sixteen default segmentation algorithms have been included with DiameterJ in the "Segment SRM" and "Segment Mixed" plugins.  However, these algorithms may not work for all SEM images.  
