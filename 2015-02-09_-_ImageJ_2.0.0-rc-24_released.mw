@@ -1,0 +1,34 @@
+Today, the [[Contributors|ImageJ team]] is pleased to announce a new public release candidate for [[ImageJ2]]: version 2.0.0-rc-24.
+
+[[File:Scifio-rc23-rc24.png | 450px | right | rc-23 / rc-24]]
+[[File:Imagej-scifio-rc24.png | 450px | right | ImageJ1 SCIFIO]]
+
+== What's new ==
+
+First pass to reduce [[SCIFIO]] overhead:
+* Fixed a bug resulting in 2s timeouts when calling SCIFIO from a macro.
+* Improved caching of common data (boosts performance throughout ImageJ2).
+* SCIFIO configurations use more sensible defaults, favoring performance.
+* For some highly unscientific benchmarks of performance, see right.
+
+First wave of improvements from 2015-01 Konstanz [[ImageJ-OPS]] [[hackathon]]
+* Better op code generation layer via Groovy parser.
+* Better error messages when ops don't match.
+* Support for unary & binary arithmetic with primitives.
+* New kernel implementations + FFT Ops.
+
+Updated messages for Refresh Menus & related commands to be more user-friendly (hopefully).
+
+== What's next ==
+
+Looking ahead at short-term goals:
+* Fixes/improvements for command-line functionality.
+* More SCIFIO performance improvements.
+* An automated troubleshooter to improve the average user experience.
+
+== How to update ==
+
+Use the <code>Help > Update</code> command to update your [[ImageJ]] installation. Please send any comments to the [[Mailing Lists|ImageJ mailing list]]. Thanks for the continued feedback and support!
+
+[[Category:ImageJ2]]
+[[Category:News]]
