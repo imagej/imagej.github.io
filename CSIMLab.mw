@@ -37,6 +37,8 @@ In this specific PlugIn we offer a tool to add different noise on a image with s
 
 See the [http://imagej.net/NoiseGenerator Noise Generator wiki page] to find out more information about this PlugIn.
 
+=== Sample Entropy 2D (SampEn2D) ===
+
 == Source code ==
 The ImageJ source codes are available on GitHub repository: {{GitHub | org = CSIM-Toolkits | repo = ImageJ | label = GitHub-ImageJ source codes}}. If you want contribute with our applications, please enter in contact! It would be great to share our method implementations with you.
 
