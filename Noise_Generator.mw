@@ -1,0 +1,19 @@
+{{Infobox
+| name                   = Noise Generator PlugIn
+| software               = Fiji
+| author                  = [[User:Acsenrafilho|Antonio Carlos da S. Senra Filho]] ([mailto:acsenrafilho@gmail.com])
+| maintainer             = [[User:Acsenrafilho|Antonio Carlos da S. Senra Filho]]
+| source                 = {{GitHub | org = CSIM-Toolkits | repo = ImageJ/tree/master/plugins/NoiseGenerator | label = GitHub CSIM-ImageJ Noise Generator repository}}
+| released               = February 08<sup>th</sup>, 2015
+| latest version         = February 08<sup>th</sup>, 2015
+| status                 = experimental, active
+| category               = [[:Category:Plugins|Plugins]], [[:Category:Noise|Image]]
+}}
+== Noise Generator ==
+
+
+'''Update notes:'''
+
+*''Feb-04-2015'': The method is capable to process a image stack with the perfusion gadolinium contrast agent.
+
+== Noise Distributions ==
