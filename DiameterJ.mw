@@ -149,7 +149,8 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 :#*The pore area is an area and thus you should square the conversion factor calculated above and multiply by the pixel value given in the pore area.  
 :#*The percent porosity is already a percent and thus does not need to be multiplied by anything.  
 :#*The intersection density is reported as number of intersections per 100px x 100px area.  This is an arbitrary unit and thus to convert it to intersections per unit area divide the "Intersection Density" by 10,000.  Next, multiply it by 1 over the square of the conversion factor above.  That will give you intersections per unit squared. 
-====<big>DiameterJ Diameter Locations</big>==== 
+====<big>DiameterJ Diameter Locations</big>====  
+[[File:EDM_w_CL.png|thumb|right|250px|alt=Alt|Caption]]
 :If you are curious about where particular radii occur in your image a tool called “DiameterJ Loc” can be used.  
 
 ::'''In ImageJ go to''':
