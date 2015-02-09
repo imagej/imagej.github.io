@@ -5,13 +5,27 @@
 | maintainer             = [[User:JeanYvesTinevez|Jean-Yves Tinevez]]
 | author                 = [[User:JeanYvesTinevez|Jean-Yves Tinevez]], [[User:Pietzsch|Tobias Pietzsch]]
 | source                 = {{GitHub | org=fiji | repo=MaMuT}}
-| status                 = v0.0.14, active
+| status                 = v0.15.0, active
 | released               = 06/01/2015
 | category               = [[:Category:Segmentation|Segmentation]], [[:Category:Tracking|Tracking]], [[:Category:Plugins]]
 }}
 
-A Fiji plugin for the annotation of massive, multi-view data. 
+'''A Fiji plugin for the annotation of massive, multi-view data. '''
 
 Enable the [http://sites.imagej.net/MaMuT/ MaMuT update site] to get it.
+
+
+__TOC__
+
+
+
+== Presentation. ==
+
+MaMuT is an end user plugin that combines the [[BigDataViewer]] and [[TrackMate]] to provide an application that allow browsing, annotating and curating annotations for large image data.
+
+[[File:MaMuT presentation.png|600px]]
+
+
+
 
 [[Category:Plugins]]
