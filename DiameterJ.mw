@@ -94,10 +94,10 @@ If you would like to cite DiameterJ in your work citation information can be fou
 :#For other fits read literature to ascertain describing statistics.
 
 ====<big>Pixel to Unit Distance Transformation</big>==== 
-:'''''All measures given by DiameterJ are in pixels by default'''''
+[[File:Set_Scale.png|250px|thumb|right|alt=Alt|Caption]]'''''All measures given by DiameterJ are in pixels by default'''''
 :#To determine the pixel to unit distance (nanometer/micrometer/millimeter) conversion there are two options depending on how much metadata your SEM stores with your image.  It is possible that it stores the pixel to distance conversions in the metadata and thus getting that number is easy.  Simply go to:
 :#*Analyze-->Set Scale 
-:#Look at what the unit of length is… if its inches then your SEM doesn’t store that information with the micrograph and you’ll have to do the conversion by hand.
+:#Look at what the unit of length is… if its inches then your SEM doesn’t store that information with the micrograph and you’ll have to do the conversion by hand. [[File:Set_Scale_Menu.png|200px|thumb|right|alt=Alt|Caption]]
 :#In that case open any micrograph at the magnification that you have taken your SEM images in ImageJ.   
 :#In ImageJ/FIJI go to menu:
 :#*Analyze-->Set Scale
@@ -111,13 +111,14 @@ If you would like to cite DiameterJ in your work citation information can be fou
 :#Next, draw a square or a line that spans the scale bar.  
 :#To get the length or width of this rectangle simply look under the tool bar of ImageJ as you are drawing the rectangle 
 :#*As soon as you stop drawing the measurements disappear so don’t let go of the cursor until you’ve seen the rectangle width.  
-:#Record the number that 'w" equals.  
+:#Record the number that 'w" equals.  [[File:Pixel_to_Distance_transform_zoom.png|750px|center|alt=Alt|Caption]]
 :#Then it’s simply a matter of dividing the length represented by the scale bar by the number of pixels you just recorded.  
 :#Take that conversion factor and multiply all pixel measurements output by DiameterJ and you’ll have the distance in your desired units. (Percent measures do not need :to be multiplied)
 :#For the DiameterJ outputs of pore area, percent porosity, and intersection density you will do a different conversion then simply multiplying the length conversion.  
 :#*The pore area is an area and thus you should square the conversion factor calculated above and multiply by the pixel value given in the pore area.  
 :#*The percent porosity is already a percent and thus does not need to be multiplied by anything.  
-:#*The intersection density is reported as number of intersections per 100px x 100px area.  This is an arbitrary unit and thus to convert it to intersections per unit area divide the "Intersection Density" by 10,000.  Next, multiply it by 1 over the square of the conversion factor above.  That will give you intersections per unit squared. 
+:#*The intersection density is reported as number of intersections per 100px x 100px area.  This is an arbitrary unit and thus to convert it to intersections per unit area divide the "Intersection Density" by 10,000.  Next, multiply it by 1 over the square of the conversion factor above.  That will give you intersections per unit squared.
+
 ====<big>DiameterJ Diameter Locations</big>====  
 [[File:EDM_w_CL.png|thumb|right|200px|alt=Alt|Caption]]
 :If you are curious about where particular radii occur in your image a tool called “DiameterJ Loc” can be used.  
