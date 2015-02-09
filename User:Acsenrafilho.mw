@@ -4,6 +4,13 @@ I am a PhD student at the University of Sao Paulo, Brazil. My research knowledge
 
 Please, visit our research group [http://dcm.ffclrp.usp.br/csim website] to find out some of my publications and personal information.
 
+I created some PlugIn or PlugInFilters for ImageJ, based on some of my research methods or even only create simple tools for image research. See the list below and be free to enter in contact with me to do suggestions or participate for PlugIn implementations in GitHub respository.
+
+*[imagej.net/AnomalousDiffusionFilter Anomalous Diffusion Filter]
+*[imagej.net/MRIPerfusion Perfusion in MRI technique]
+*[imagej.net/NoiseGenerator Noise Generator tool]
+*[imagej.net/SampEn2D Sample Entropy for images]
+
 == Contact ==
 
 Antonio Carlos da Silva Senra Filho
