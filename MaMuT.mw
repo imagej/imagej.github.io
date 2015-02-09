@@ -31,11 +31,18 @@ The main window resembles the display panel of [[TrackMate]]. It controls how th
 [[File:MaMuT WindowsInSync.png]]
 
 
-We privileged annotations that are like lineages, or object followed over time (which is what [TrackMate]] does). MaMuT ships [[TrackScheme]], the lineage browser taken from TrackMate.
+We privileged annotations that are like lineages, or object followed over time (which is what [[TrackMate]] does). MaMuT ships [[TrackScheme]], the lineage browser taken from TrackMate.
 
 [[File:MaMuT WithTrackScheme.png]]
 
 However, MaMuT itself does not ship any fully-automated or tracking algorithm. It is meant for manual or semi-automatic annotation. Still, we made the GUI comfortable enough so that you can quickly generate rather large annotations.
 
 [[File:MaMuT LargeAnnotationsQuickly.png]]
+
+
+
+
+
+
+
 [[Category:Plugins]]
