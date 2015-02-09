@@ -50,7 +50,7 @@ If you would like to cite DiameterJ in your work citation information can be fou
 #**''Remember, not all fibers need to be included in the segmentation for it to be a “good” segmentation.  The fibers just need to be without significant holes, edge defects, or too densely packed for the program to analyze them. (the program does not analyze intersections of fibers)''
 #**''File names are on the bottom of the images in Red'' [[File:Hotaling_Segmenatation.png|250px|thumb|right|alt=Alt|Caption]]
 #*The “Segmented Images" folder has all of the segmented images from the montage images 
-#Copy and paste the best segmentation into the “Best Segmentation” folder Good or ideal (as shown by the images on the right) segmentation quality will provide the most accurate results. 
+#Copy and paste the best segmentation into the “Best Segmentation” folder. Good or ideal (as shown by the images on the right) segmentation quality will provide the most accurate results. 
 #Visually inspect these images to make sure that the segmentation worked well and that the segmentation represents the image you want to analyze
 #*If it does not try the other segmentation algorithm
 #*If none of the 16 algorithms segment your image well you can take the best segmentation and manually fix the errors to accurately reproduce the fibers.  This process is slow and so not recommended if it can be avoided.
