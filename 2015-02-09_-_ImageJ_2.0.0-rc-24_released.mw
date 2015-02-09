@@ -6,7 +6,7 @@ Today, the [[Contributors|ImageJ team]] is pleased to announce a new public rele
 == What's new ==
 
 First pass to reduce [[SCIFIO]] overhead:
-* Fixed a bug resulting in 2s timeouts when calling SCIFIO from a macro.
+* Fixed a bug resulting in 2-second timeouts when calling SCIFIO from a macro.
 * Improved caching of common data (boosts performance throughout ImageJ2).
 * SCIFIO configurations use more sensible defaults, favoring performance.
 * For some highly unscientific benchmarks of performance, see right.
