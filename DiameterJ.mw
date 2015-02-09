@@ -1,0 +1,328 @@
+== DiameterJ == {{Infobox
+| software               = ImageJ 1.48 or newer (including ImageJ 2.XX) and FIJI
+| name                   = DiameterJ
+| author                  = [[User:DiameterJ |Nathan Hotaling]], [http://www.nist.gov/mml/bbd/biomaterials/nathan-hotaling.cfm Nathan Hotaling]
+| maintainer           = [mailto:Nathan.Hotaling@gmail.com Nathan Hotaling]
+| filename              = ImageJ 1.49a or older [http://imagej.net/File:DiameterJ_1.003.zip - Download] 
+ImageJ 1.49b or Newer (Including ImageJ 2.XXX) [http://imagej.net/File:DiameterJ_2.003.zip - Download] 
+
+FIJI any version [http://imagej.net/File:DiameterJ_Fiji.zip - Download]
+| source                 = Coming Soon!
+| released              = February  2015
+| latest version      = Febuary 5<sup>th</sup>, 2015
+| status                  = v X.003 (first version released publicly)
+| category               = [[:Category:Plugins|Plugins]]
+}}'''DiameterJ''' is a free, open source plugin created for ImageJ, ImageJ 2.X, and FIJI.   DiameterJ is a validated nano- or microfiber characterization tool.  DiameterJ is able to analyze an image and find the diameter of nano- or microfibers at every pixel along a fiber and produces a histogram of these diameters.  Included with this histogram are summary statistics such as mean fiber diameter and most occurring fiber diameter (mode).   DiameterJ also bundles [http://bigwww.epfl.ch/demo/orientation/ OrientationJ]<ref>R. Rezakhaniha, A. Agianniotis, J. T. C. Schrauwen, A. Griffa, D. Sage, C. V. C. Bouten, F. N. van de Vosse, M. Unser and N. Stergiopulos, Experimental investigation of collagen waviness and orientation in the arterial adventitia using confocal laser scanning microscopy, Biomechanics and modeling in mechanobiology, SpringerLink (DOI: 10.1007/s10237-011-0325-z)</ref> for a complete analysis of fiber orientation within an image as well as the "Analyze Particles" function built into ImageJ/FIJI to analyze pore space within scaffolds and produce summary statistics for pores.  
+
+__TOC__
+
+=== <big>Overview</big> ===
+----
+DiameterJ<ref>Hotaling NA, Bharti K, Kriel H, Simon CG.  DiameterJ: Validated Open Source Nanofiber Diameter Measurement Tool.  ''Biomaterials'', ''Submitted.'' 2015.
+</ref> is a two step process of image analysis:
+
+# Image Segmentation into a binary image (black and white pixels only)
+#*Sixteen default segmentation algorithms have been included with DiameterJ in the "Segment SRM" and "Segment Mixed" plugins.  However, these algorithms may not work for all SEM images.  
+#*If the user is not happy with the results of the segmentation algorithms (i.e. the black and white images do not produce an accurate representation of the original image) then DiameterJ will still work with any binary image that has been segmented through some other means.
+# Analysis of Segmented image
+#*All measures given by DiameterJ are in pixels by default
+#*DiameterJ has been validated with over 130 digital images created ''in silico'' and with scanning electron microscope images of reference wires with known diameters.  
+#*To see the full publication that details how DiameterJ was validated and how it works please go to [Coming Soon]. 
+
+If you would like to cite DiameterJ in your work citation information can be found [http://www. here] or use the below: 
+
+==== Citation/Reference Information ====
+: Hotaling NA, Bharti K, Kriel H, Simon CG.  DiameterJ: Validated Open Source Nanofiber Diameter Measurement Tool.  ''Biomaterials'', ''Submitted.'' 2015.
+
+=== <big>Installatio</big>n ===
+----
+If you installed imageJ before the end of 2013 you should uninstall your current version of ImageJ ('''DO NOT UPDATE''') and reinstall ImageJ 1.48 or newer. 
+:*Before uninstall be sure to copy all of your old plugins into a separate folder as these will be removed when you uninstall your old version of ImageJ.  
+:*We recommend ImageJ over Fiji if you have no experience with either software because it is simpler to use.  
+
+{| class="wikitable collapsible collapsed" style="vertical-align:top; width:90%; margin: 1em auto 1em auto;"
+|- id="section link anchor name" style="text-align:center" valign="top"
+| colspan=3 | <big> '''Download and install [http://rsb.info.nih.gov/ij/download.html ImageJ 1.48] or newer or [http://fiji.sc/Downloads Fiji] (any version)''' </big>
+|- valign="top"
+! scope="col" width="33%" | '''Windows'''
+! scope="col" width="33%" | '''OSX'''
+! scope="col" width="33%" | '''Linux'''
+|- valign="top"
+|
+#Download and unzip the DiameterJ files (Find in "Source" above) and move or copy the three folders into the plugins folder of ImageJ.  
+#That should be in directory:
+#:"C:\Program Files\ImageJ\plugins"
+#::Or 
+#:"C:\Program Files (x86)\ImageJ\plugins"
+#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
+#Restart ImageJ 
+|
+#Follow instructions [http://rsb.info.nih.gov/ij/docs/install/osx.html#dandd Here] or [http://fiji.sc/MacOSX_tips Here] for installation of ImageJ/FIJI on OSX 
+|
+#Download and unzip the DiameterJ files (Find in "File" in the Info box above) 
+#Move or copy the three folders into the plugins folder of the directory where you have placed ImageJ.  
+#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
+#Restart ImageJ
+|}
+
+=== <big>How to Use DiameterJ</big> ===
+----
+====<big>Image Segmentation</big>====
+#Go to:  “Plugins-->DiameterJ-->Segment Mixed” or “Plugins-->DiameterJ-->Segment SRM” to segment images
+#*Each uses a different set of 8 algorithms to analyze and segment your images
+#Choose the directory of the file you want to segment
+#*If you only want DiameterJ to segment a single image you will need to create a folder in which only that image is present
+#Segment XXX will then ask if you want to crop your image.  If you do then it will ask what the height and width in pixels you want to crop your images to.  
+#*The crop box begins at the top left of your image
+#**''If your image is 1280x960 and you want to crop out the scale bar at the bottom which takes up 100 of the bottom pixels of the image then you would say the width is 1280 while the height is 860''
+#The code will then produce three folders in the folder where the image that you selected for analysis is located.  One folder called “Best Segmentation” another called “Montage Images” and the third called “Segmented Images"
+#*The “Best Segmentation” folder contains no images
+#*“Montage Images” have a comparison of the original image to the 8 different segmentation methodologies.  Look at the montage images and find the image with the most accurate representation of your fibers
+#**''Remember, not all fibers need to be included in the segmentation for it to be a “good” segmentation.  The fibers just need to be without significant holes, edge defects, or too densely packed for the program to analyze them. (the program does not analyze intersections of fibers)''
+#**''File names are on the bottom of the images in Red''
+#*The “Segmented Images" folder has all of the segmented images from the montage images 
+#Copy and paste the best segmentation into the “Best Segmentation” folder
+#Visually inspect these images to make sure that the segmentation worked well and that the segmentation represents the image you want to analyze
+#*If it does not try the other segmentation algorithm
+#*If none of the 16 algorithms segment your image well you can take the best segmentation and manually fix the errors to accurately reproduce the fibers.  This process is slow and so not recommended if it can be avoided.
+#After copying the best image into the “Best Segmentation” folder delete all unused images/montage images
+#*Approximately 2% of the time none of the algorithms included will provide a good segmentation.  (Based on our experience)
+#*If that is the case you will need to either repeat your imaging with better contrast/brightness between the background and what you are trying to measure or you can find/implement a different algorithm that works better
+#*We recommend one of the following if default segmentation did not work: 
+#**''[http://fiji.sc/Trainable_Weka_Segmentation Trainable Weka Segmentation] machine learning segmentation implementation''
+#**''[http://rsbweb.nih.gov/ij/plugins/canny/index.html Canny Edge Detection] and then fill the resulting image outline in with black''
+#**''Auto local threshold (in ImageJ/FIJI at Image-->Adjust-->Auto Local Threshold)''
+#**''Auto threshold (in ImageJ/FIJI at Image-->Adjust-->Local Threshold)''
+#**''Manually outline the foreground and background with the free hand selection tool and fill the selections with black (background) and white (fibers)'' 
+#**''Develop your own algorithm!''
+
+====<big>DiameterJ Analysis</big>====
+:'''''Analyzed images MUST be white fibers on a black background.  If you have black fibers on a white background invert the image to analyze it with DiameterJ.'''''
+
+::; In ImageJ go to:
+::: “Plugins-->DiameterJ-->DiameterJ 0.XXX” to analyze the segmented image.  
+ 
+::Choose the directory of the file you want to analyze (right now it’s in batch form so if you only want to analyze one file move it into a folder by itself and select that folder.  I intend to post both a batch and non-batch form of the segmentation and DiameterJ code but haven’t made the non-batch form yet.)
+ 
+::DiameterJ will then analyze all images in the directory and will separate its analysis into three folders “Diameter Analysis Images”, “Histograms”, and “Summaries.”  They are pretty self-explanatory. 
+ 
+::The “XXXX_Total Summary.xls” file in the “Summaries” folder will give you all of the metrics summarized.  Generally, the histogram average is most accurate when multiple fiber diameters are not present and the super pixel average is the most accurate when multiple fiber diameters are present.  However, these metrics are global averages of diameter and can be easily biased if the diameter histogram analyzed has a non-normal distribution (i.e. multiple peaks, significant noise leading or trailing from the peak, etc.).  It is strongly recommend that you perform a peak fit of the diameter histogram to obtain a more accurate measure if the radius histogram image (shown in the "Histograms" folder) shows a non-normal distribution or multiple peaks.  
+ 
+::Peak fitting is also recommended if you would like to analyze replicate images of a single sample.  To do this we recommend that you copy and paste all histograms from replicate images into one file, sum the frequency at each radius value and then save the resulting file as a .csv.  (Make sure all combined images have been taken at the same magnification or their radius values are scaled appropriately).
+
+:If you want a more accurate analysis, want to combine histograms from multiple images OR you want to determine multiple diameter peaks from a single image or set of images then do the below:  
+:#Open the file with “XXXX_histogram.csv” in the histograms folder, using [http://fityk.nieto.pl/ Fityk 0.9.8] [https://github.com/wojdyr/fityk/downloads (free - windows only)] or [http://www.wavemetrics.com/products/igorpro/igorpro.htm Igor Pro] (not free)
+:#For Fityk go to Data-->Load File
+:#Select the file labeled XXXX_Histogram.csv in the “Histograms” directory
+:#Select the column with the radius values (column 10) as x and the column with the frequency/summed frequency (column 11) as y and then peak fit the histogram as per the tutorial [https://www.youtube.com/watch?v=GNszECQUX3g here] or for more complex fitting [https://www.youtube.com/watch?v=CaiqMvXwzF8 here]
+:#*Generally we use Gaussian curves but occasionally the curves are clearly Lorentzian or LogNormal 
+:#*To change the fit to a peak other than Gaussian go to Functions-->Function Type and select the appropriate fit function
+:#After peak fitting save the peak information by going to (Functions-->Export Peak Parameters)
+:#For Gaussian peaks (most common) the “Center” of each peak is the average 
+:#*The FWHM can be transformed into the standard deviation of the radius by dividing the FWHM by 2.355
+:#**''Approximate conversion but 99% accurate''
+:#**''For the exact answer go [http://en.wikipedia.org/wiki/Full_width_at_half_maximum here] and apply this conversion to the FWHM''
+:#For other fits read literature to ascertain describing statistics.
+
+====<big>Pixel to Unit Distance Transformation</big>==== 
+:'''''All measures given by DiameterJ are in pixels by default'''''
+:#To determine the pixel to unit distance (nanometer/micrometer/millimeter) conversion there are two options depending on how much metadata your SEM stores with your image.  It is possible that it stores the pixel to distance conversions in the metadata and thus getting that number is easy.  Simply go to:
+:#*Analyze-->Set Scale 
+:#Look at what the unit of length is… if its inches then your SEM doesn’t store that information with the micrograph and you’ll have to do the conversion by hand.
+:#In that case open any micrograph at the magnification that you have taken your SEM images in ImageJ.   
+:#In ImageJ/FIJI go to menu:
+:#*Analyze-->Set Scale
+:#Click “Click to Remove Scale”
+:#Close the scale window 
+:#Place your mouse over the scale bar and hit the “+” key to zoom-in. 
+:#Continue to zoom-in on the scale bar until it fills the screen 
+:#*After zooming in you can widen the default width of the window that ImageJ chooses just like any normal window).  
+:#Next, select the “Rectangular” tool from the menu bar.  
+:#*If the rectanglular tool isn't available go to the tile that has “>>” and click “Restore startup tools” from the drop down menu. 
+:#Next, draw a square or a line that spans the scale bar.  
+:#To get the length or width of this rectangle simply look under the tool bar of ImageJ as you are drawing the rectangle 
+:#*As soon as you stop drawing the measurements disappear so don’t let go of the cursor until you’ve seen the rectangle width.  
+:#Record the number that 'w" equals.  
+:#Then it’s simply a matter of dividing the length represented by the scale bar by the number of pixels you just recorded.  
+:#Take that conversion factor and multiply all pixel measurements output by DiameterJ and you’ll have the distance in your desired units. (Percent measures do not need :to be multiplied)
+:#For the DiameterJ outputs of pore area, percent porosity, and intersection density you will do a different conversion then simply multiplying the length conversion.  
+:#*The pore area is an area and thus you should square the conversion factor calculated above and multiply by the pixel value given in the pore area.  
+:#*The percent porosity is already a percent and thus does not need to be multiplied by anything.  
+:#*The intersection density is reported as number of intersections per 100px x 100px area.  This is an arbitrary unit and thus to convert it to intersections per unit area divide the "Intersection Density" by 10,000.  Next, multiply it by 1 over the square of the conversion factor above.  That will give you intersections per unit squared. 
+====<big>DiameterJ Diameter Locations</big>==== 
+:If you are curious about where particular radii occur in your image a tool called “DiameterJ Loc” can be used.  
+
+::'''In ImageJ go to''':
+ 
+:::“Plugins-->DiameterJ-->DiameterJ Loc” to analyze the segmented image.
+
+:Select the lower and upper pixel diameter you wish to visualize in your image.  A folder will be created called “Diameter Location” with an image of red lines over all diameters where DiameterJ measured a particular diameter or range of diameters that you specified.  We recommend using a range of at least 3 pixels to determine a peak as DiameterJ has up to one pixel of error (+/-) in measurements
+
+=== <big>DiameterJ Output</big> ===
+----
+{| class="wikitable collapsible collapsed" style="vertical-align:top; width:90%; margin: 1em auto 1em auto;"
+|- id="section link anchor name" style="text-align:center" valign="top"
+| colspan=2 | <h4> <big> Summaries Folder </big> </h4>
+|- valign="top"
+! scope="col" width="50%" | '''"File Source Name"_Pore Summary.xls'''
+! scope="col" width="50%" | '''"File Source Name"_Total Summary.csv'''
+|- valign="top"
+|
+#Slice: Image name
+#Count: Total number of pores found in image that are not touching the side.
+#Total Area: Total number of black pixels in an image not in groups touching the sides
+#Average Size: (Total number of black pixels counted in pores) / (Total number of pores in image)
+#% Area: (Total number of black pixels) / (Total pixels in an image)
+#Major: The mean length of the primary axis of the best fitting ellipse for each pore 
+#Minor: The mean length of the secondary axis of the best fitting ellipse for each pore 
+#Angle: The average angle between the primary axis and a line parallel to the X-axis of the image
+#Circ.: 4π × [Area] / [Perimeter^2] with a value of 1.0 indicating a perfect circle. As the value approaches 0.0, it indicates an increasingly elongated shape. Values may not be valid for very small particles. Uses the heading Circ.
+#Solidity: [Area]/[Convex area]
+#Skew: The third order moment about the mean
+#Kurt: The fourth order moment about the mean
+|
+#Super Pixel:  The mean fiber diameter as calculated using a super pixel determination 
+#More accurate for samples with extremely diverse fiber diameters
+#Hitogram_Mean: The mean fiber diameter as calculated using the average of all diameters measured in the histogram 
+#Histogram_SD:  The standard dev. Of the fiber diameter as calculated using all diameters measured in the histogram  
+#Histogram_Mode: Most occurring fiber diameter in the histogram
+#Histogram Median:  Middle fiber diameter in the histogram
+#Mean Pore Size:  (Total number of black pixels counted in pores) / (Total number of pores in image)
+#Percent Porosity: (Total number of black pixels) / (Total pixels in an image)
+#Intersection Density (100x100px):  (Number of fiber overlaps)*10000 / (Total pixels in image)
+#Characteristic Length: (Total length of all fiber centerlines) / (# of fiber overlaps)
+|- style="text-align:center" valign="top"
+| colspan=2 | <h4> <big>Histograms Folder</big> </h4>
+|- valign="top"
+!'''"File Source Name"_Pore Data.csv'''
+!'''"File Source Name"_Histogram.csv'''
+|- valign="top"
+|
+#Slice: Image name
+#Count: Total number of pores found in image that are not touching the side
+#Area: Total number of black pixels in an image not in groups touching the sides
+#StdDev: 0 (individual pore measurements so no SD
+#% Area: (Total number of black pixels) / (Total pixels in an image)
+#Major: The length of the primary axis of the best fitting ellipse for each pore. 
+#Minor: The length of the secondary axis of the best fitting ellipse for each pore
+#Angle: The angle between the primary axis and a line parallel to the X-axis of the image
+#Circ.: 4π × [Area] / [Perimeter^2] with a value of 1.0 indicating a perfect circle. As the value approaches 0.0, it indicates an increasingly elongated shape :::#Values may not be valid for very small particles. Uses the heading Circ.
+#Skew: The third order moment about the mean – NaN because only one pore
+#Kurt: The fourth order moment about the mean – NaN because only one pore
+#AR:  The aspect ratio of the particle’s fitted ellipse, i.e., [Major Axis] / [Minor Axis]
+#Round:  4 × [Area] / (π × [Major axis]2) or the inverse of Aspect Ratio. 
+#Solidity: [Area] / [Convex area]
+|
+#Mean:  Average Diameter from all measures found in the histogram	
+#StdDev:  Standard deviation from all measures found in the histogram	
+#Mode:  Most occurring diameter	found in the histogram
+#IntDen: 	The product of Area and average radius 
+#Median:  Middle value in the histogram	
+#Skew:  	The third order moment about the average radius
+#Kurt:  	The fourth order moment about the average radius
+#RawIntDen:  The sum of the radii at all pixels in the image or selection
+#Radius Value:  Radius length (in pixels)
+#Radius Count: Number of times the radius value occurred in the image. Also known as the frequency of occurrence and can also be interpreted as the length of fiber in an image that has a given radius
+#The radius or diameter histogram is constructed from the radius value (x-axis) and radius count (frequency of occurrence on y-axis)
+|- valign="top"
+!'''"File Source Name"_Intersection Coordinates.txt'''
+!'''"File Source Name"_Radius Histogram.tif'''
+|- valign="top"
+|
+#Column 1 – Grey scale value at intersection 
+#Column 2 – x coordinate of intersection 
+#*Upper left hand corner is 0,0
+#Column 3 – y coordinate of intersection 
+#*Upper left hand corner is 0,0
+|
+#Image of the histogram of all fiber radii in the image
+|- style="text-align:center" valign="top"
+| colspan=2 | <h4> <big>Diameter Analysis Images Folder</big> </h4>
+|- valign="top"
+!'''"File Source Name"_Dilate.tif'''
+!'''"File Source Name"_Axial Thinning.tif'''
+|- valign="top"
+|
+#Image of all centerlines counted in the histogram overlaid on the Euclidean distance transformed of the fibers fibers.
+#*Yellow lines are the locations where radii were counted
+#*Fibers are in greyscale as transformed by the Euclidean distance transform
+|
+#Image of the centerline as determined by the axial thinning algorithm
+|- valign="top"
+!'''"File Source Name"_Orientation.tif'''
+!'''"File Source Name"_Voronoi.tif'''
+|- valign="top"
+|
+#An image with the frequency of orientation of the centerline of all fibers.  This is an output of OrientationJ and was not coded by me
+|
+#Image of the centerline as determined by the Voronoi tessellation algorithm
+|}
+
+=== <big>How DiameterJ Works</big> ===
+----
+[[File:Figure_1.png|right|thumb|400px|alt=Alt|Caption]] The overall goal of the DiameterJ algorithm was to be able to analyze an 8-bit SEM image of any resolution using a desktop computer in less than 60 seconds.  For a block diagram and overview of how the DiameterJ algorithm analyzes fiber diameter and other scaffold properties see below.
+==== Segmentation ====
+
+SEM micrographs were first segmented using a variety of thresholding techniques available in ImageJ/FIJI. Both the Segment SRM and Segment Mixed plugins are automated inclusions of others segmentation algorithm work.  Specifically, we have found that for SEM images of nanofibers the [http://fiji.sc/Statistical_Region_Merging Statistical Region Merging] algorithm<ref>R. Nock, F. Nielsen (2004), "Statistical Region Merging", IEEE Trans. Pattern Anal. Mach. Intell. 26 (11): 1452-1458</ref> developed by Johannes Schindelin does a great job of blending fibers across their diameter and by depth to create great representations of the fibers when they are segmented.  Additionally, we use more conventional segmentation algorithms developed by Otsu<ref>Otsu N. A threshold selection method from gray-level histograms. Automatica 1975;11:23–7.</ref> , Huang<ref>Huang L-K, Wang M-JJ. Image thresholding by minimizing the measures of fuzziness. Pattern Recognit 1995;28:41–51. doi:10.1016/0031-3203(94)E0043-K.</ref>, Kittler (min error)<ref>Kittler J, Illingworth J. Minimum error thresholding. Pattern Recognit 1986;19:41–7. doi:10.1016/0031-3203(86)90030-0.</ref>, Doyle (percentile) <ref>Doyle, W (1962), "Operation useful for similarity-invariant pattern recognition", Journal of the Association for Computing Machinery 9: 259-267, doi:10.1145/321119.321123</ref>, or Zack (triangle)<ref>Zack GW, Rogers WE, Latt SA (1977), "Automatic measurement of sister chromatid exchange frequency", J. Histochem. Cytochem. 25 (7): 741–53, PMID 70454</ref>
+
+After segmentation all images had remaining noise and morphological features that were smoothed according to the protocols outlined by D'Amore<ref>D’Amore A, Stella JA, Wagner WR, Sacks MS. Characterization of the complete fiber network topology of planar fibrous tissues and scaffolds. Biomaterials 2010;31:5345–54. doi:10.1016/j.biomaterials.2010.03.052.</ref> and by Gonzalez<ref>Gonzalez RC, Eddins SL. Digital Image Processing Using MATLAB, 2nd ed. 2nd edition. S.I.: Gatesmark Publishing; 2001.</ref>.  Briefly, successive rounds of noise removal (via ImageJ’s despeckle command) were performed until no change in the image was found. Erosion (through ImageJs erode command, and dilation (through ImageJs dilate command), and a final erosion (through ImageJs erode command), operations served to refine the image, highlighting fiber edges and eliminating isolated pixel areas.  The described morphological procedures were performed to improve the precision of the centerline determinations as per the method developed by Lam et. al.<ref>Lam L, Lee S-W, Suen CY. Thinning Methodologies-A Comprehensive Survey. IEEE Trans Pattern Anal Mach Intell 1992;14:869–85. doi:10.1109/34.161346.</ref>.
+
+[[File:Segmentation.png|500px|alt=Alt|Caption]]
+
+==== Super Pixel Diameter ==== 
+After image segmentation white pixels were summed for total fiber area in each image. Two different center-lines were then calculated for the image, one using an axial thinning algorithm developed by Zhang and Suen<ref>Zhang TY, Suen CY. A Fast Parallel Algorithm for Thinning Digital Patterns. Commun ACM 1984;27:236–9. doi:10.1145/357994.358023.</ref>(Skeletonize command in ImageJ) and the other using a Voronoi tessellation<ref>Okabe A. Spatial Tessellations: Concepts and Applications of Voronoi Diagrams. 2 edition. Chichester ; New York: Wiley; 2000.</ref> (Voronoi command in ImageJ).  The axial thinning algorithm is very sensitive to changes in the fiber surface resulting in branches to areas that were not necessarily new fibers. The Voronoi algorithm essentially maximizes the distance between discrete black pixel clusters and thus is completely insensitive to fiber morphology.  The length of each center-line was then averaged and the total area of fibers was divided by the average of the axially thinned and Voronoi center-line lengths.  The two centerline lengths were averaged based on results from analyzing digital synthetic images and the finding that one method consistently overestimated fiber length while the other consistently underestimated fiber length.
+
+The Super Pixel name was chosen because the fiber area, in pixels, was divided by the center-line lengths, in pixels; thus producing a unitless value that is equivalent to mean fiber diameter (fiber length x diameter = fiber area). This value is therefore a transformed pixel unit and is equivalent to the mean fiber diameter under the assumption that the fibers are just long rectangles when segmented into 2D shapes.   
+
+After its initial calculation the diameter calculation was then further refined via intersection correction.  Intersection correction was done by taking the average length of the centerline and subtracting a radius value (obtained from first approximation of the diameter as determined without intersection correction) for each three-point intersection and a diameter value (obtained from first approximation) for each four-point intersection of the fibers. Intersections of each centerline were found using the algorithm developed by Argana-Carreras et al.<ref>Arganda-Carreras I, Fernández-González R, Muñoz-Barrutia A, Ortiz-De-Solorzano C. 3D reconstruction of histological sections: Application to mammary gland tissue. Microsc Res Tech 2010;73:1019–29. doi:10.1002/jemt.20829</ref>.  
+
+A new diameter was then calculated using the new corrected length and the total fiber area and this processes was looped until the diameter converged to 1/1000th of a pixel.  Additionally, the number of intersections was also saved and the intersection density (ID) was calculated for a 100px x 100px (10<sup>4</sup>) pixel area by dividing the total number of intersections by the total area (in pixels) of the image and multiplying by 10<sup>4</sup>:  <math>ID = {intersections_{Total} \over pixels_{total}}*10^4</math> .  The characteristic length (CL) of fibers was defined as mean length of fiber between intersections and was calculated by dividing the total centerline length by the number of intersections: <math>CL = {Fiber_{Length} \over Intersections_{Total}}</math>.  The center-line length was calculated as the average of the axial thinning and Voronoi tessellation center-lines.
+
+==== Fiber Diameter Histogram ==== 
+[[File:Radius_Histogram.png|thumb|right|alt=Alt|Caption]]To obtain the distribution of fiber diameters the segmented image was transformed with a Euclidian distance transformation algorithm <ref>F. Leymarie, M. D. Levine, in: CVGIP Image Understanding, vol. 55 (1992), pp 84-94 http://dx.doi.org/10.1016/1049-9660(92)90008-Q</ref> (Distance Map command in ImageJ).  This algorithm takes a fiber pixel and finds the distance to the nearest orthogonal mesh hole using the square root of the sum of the square of the vertical and horizontal distances to the hole and then transforms the fiber pixel to a grey scale value equal to that distance.  The resulting image is a grey scale image rather than black and white.  The center-line calculated by the axial thinning algorithm above is then overlaid on top of the distance transformed image.  At each intersection of the centerline the greyscale value is found and radii values within that range are subtracted out from the center-line.  The greyscale values under the remaining centerline are then obtained and multiplied by 2 to get the value of all diameters not in an intersection area.  The subsequent histogram of greyscale values is then found and placed in a csv file along with the overall average, standard deviation, median and mode of all diameter values.  The sensitive centerline was chosen because it was the more discriminating option and thus, had a higher likelihood of eliminating pixels that had a higher value than the real radius value.   
+
+==== Mesh Hole Analysis ==== 
+Segmented pictures contain only black and white pixels; with black pixels representing background and white pixels representing fibers.  Black pixels were analyzed using the Analyze Particles command in ImageJ.  This algorithm essentially finds discrete clusters of black pixels, counts the number of pixels in each cluster and then reports their area.  Pixel units were selected for particle analysis as well as a circularity from 0.00-1.00, the option to exclude clusters that touch the edge was also chosen.  The subsequent particle analysis was then saved to later produce a mesh hole histogram, mean mesh hole area (produced by averaging all cluster areas), and percent mesh hole (produced by taking the total number of black pixels and dividing it by the total image resolution).
+
+==== Fiber Orientation ====
+Fiber orientation was determined using a well-established, and fantastic, plug-in for ImageJ called [http://bigwww.epfl.ch/demo/orientation/ OrientationJ]<ref>R. Rezakhaniha, A. Agianniotis, J. T. C. Schrauwen, A. Griffa, D. Sage, C. V. C. Bouten, F. N. van de Vosse, M. Unser and N. Stergiopulos, Experimental investigation of collagen waviness and orientation in the arterial adventitia using confocal laser scanning microscopy, Biomechanics and modeling in mechanobiology, SpringerLink (DOI: 10.1007/s10237-011-0325-z)</ref>.  To determine fiber orientation an axial thinning algorithm was used and then the centerline was enlarged by 2 pixels (using the Enlarge command in ImageJ) to ensure accurate measure of the line.  Within OrientationJ a Fourier gradient was used with a gaussian window of 7 pixels.  The subsequent frequency histogram of fiber orientation was then saved as an image.  OrientationJ limits access to the raw data for this histogram; thus, if the user desires the raw data they must use the "OrientationJ Distribution" plugin.
+
+=== <big>Limitations</big> ===
+----
+==== Segmentation Algorithm Limitations ====
+An integral part of analysis for DiameterJ is image segmentation.  However, how an image is segmented into foreground or background can drastically alter many of the outputs produced by DiameterJ.  For example, many of the segmentation algorithms
+
+
+Large differences in image Dependent Metrics:
+:# Normalized Orientation Index
+:# Mean Mesh Hole Size
+:# Percent Porocity
+:# Intersection Density
+:# Characteristic Fiber Length 
+
+The more fibers that were segmented out of an image the larger the pore size, the lower the intersection density and the higher the characteristic fiber length between intersections became.  Thus, while the algorithms analyzing these metrics were able to produce highly accurate results on calibration images; on real segmented images the analysis was entirely dependent on segmentation algorithm used.  While, these algorithms were incorporated into DiameterJ to provide a reference way to calculate these values the Authors caution that unless identical segmentation algorithms and image capture settings are used, results from these algorithms are not comparable between images.  Fiber diameter is relatively invariant to segmentation because good image segmentation leads to having no partial fibers, only less fibers being included in the segmentation.  Thus, while different segmentation algorithms may produce increased or decreased fiber sampling the measure of fiber diameters within each segmentation is accurate.  Developing a segmentation algorithm that does not have this problem across any image is currently a topic of heavy research in the image analysis field[63] and thus was seen as outside the scope of this paper.  
+
+From the images in Figure 6A it is apparent that two of the algorithms did a poor job of image segmentation (Global – Otsu and Local Otsu) and two did a relatively good job (Global – Min Error and Machine Learning).  The images in Figure 6A illustrate the ease of selection of “good” versus “bad” segmentation of images.  For the analysis of fibers included in this paper the machine learning segmentation of this image would have been used because it clearly provides the most accurate representation of the original micrograph (Supplemental Figure S6).  Thus, by choosing well segmented images the problem of errant peak formation in diameter histograms, as shown in Figure 6B, can be minimized in all but the most extreme cases (discussed in more detail below).
+
+DiameterJ has several limitations.  The first is that it does not automate image segmentation.  As discussed above this can be seen as both an advantage and limitation of the code. Lacking automated segmentation means that users must segment each image themselves which is slow and can be technically challenging for novices in the image analysis field.  However, this can also be seen as an advantage as discussed above.  Secondly, when analyzing the histograms of the multi-diameter calibration images in Figure 3 it was found that DiameterJ under represented the prevalence of larger diameter fibers as compared to smaller fibers.  This bias, as discussed above, leads to weighted averages being inaccurate and for global averages of fiber diameters to be biased toward smaller fiber diameters.  Thirdly, on one or two of the calibration images it was found that hybrid peaks (peaks that were not from one of the known diameters in the image) were formed.  These were found to be due to multiple fibers aligning and overlapping to produce a net larger fiber peak than was present in the image or fibers running along the edge of the image and thus producing smaller fiber diameters than were actually present.  Fourthly, distinguishing between fiber diameters that were closer in diameter than 3 pixels would often create resolution difficulties for the Gaussian peak fit.  Finally, as stated above, fibers that had a diameter that was less than 10px or greater than 10% of the smallest dimension of the image produced errors that were above 10% and thus deemed as too high for accurate measurement.  The last two limitations are easily solved by adjusting the magnification of the image so that fibers to be analyzed are in an appropriate size range and so that the difference between fiber diameters can be easily resolved.  The first three limitations are intrinsic parts of the code and cannot be easily resolved or are outside of the scope of this work.
+
+== FAQs ==
+
+
+== Complementary Tools ==
+
+
+== Future Development ==
+:# Reducing bias of the Histogram intersection correction by directionally subtracting fiber intersections rather than blanket subtraction within a given intersection radius
+:# incorporation of Gaussian peak fitting algorithms within DiameterJ itself.  
+:#Currently we are working on a native JAVA application on DiameterJ.  This will not fundamentally change the function of DiameterJ however, it will make it faster, look cleaner, and should solve continuity issues
+
+Help is welcome in any/all of these improvements!
+
+== References ==
+{{reflist}} 
+
+
+
+
+== External Links ==
