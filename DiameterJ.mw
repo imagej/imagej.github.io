@@ -11,7 +11,7 @@ FIJI any version [http://imagej.net/File:DiameterJ_Fiji.zip - Download]
 | released              = February  2015
 | latest version      = Febuary 5<sup>th</sup>, 2015
 | status                  = v X.003 (first version released publicly)
-| category               = [[:Category:Plugins]] [[:Category:Analysis]]
+| category               = [[:Category:Plugins|Plugins]] [[:Category:Analysis|Analysis]]
 }}'''DiameterJ''' is a free, open source plugin created for ImageJ, ImageJ 2.X, and FIJI.   DiameterJ is a validated nano- or microfiber characterization tool.  [http://imagej.net/plugins/Diameterj DiameterJ] is able to analyze an image and find the diameter of nano- or microfibers at every pixel along a fiber and produces a histogram of these diameters.  Included with this histogram are summary statistics such as mean fiber diameter and most occurring fiber diameter (mode).   DiameterJ also bundles [http://bigwww.epfl.ch/demo/orientation/ OrientationJ]<ref>R. Rezakhaniha, A. Agianniotis, J. T. C. Schrauwen, A. Griffa, D. Sage, C. V. C. Bouten, F. N. van de Vosse, M. Unser and N. Stergiopulos, Experimental investigation of collagen waviness and orientation in the arterial adventitia using confocal laser scanning microscopy, Biomechanics and modeling in mechanobiology, SpringerLink (DOI: 10.1007/s10237-011-0325-z)</ref> for a complete analysis of fiber orientation within an image as well as the "Analyze Particles" function built into ImageJ/FIJI to analyze pore space within scaffolds and produce summary statistics for pores.  
 
 __TOC__
