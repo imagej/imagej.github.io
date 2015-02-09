@@ -1,6 +1,6 @@
 We are happy to announce the first stable release version of the [[ImgLib2]] core library!
 
-This release was a central goal of the recent [[hackathon]] at LOCI in Madison, during the week of October 13 - 17.
+This release was a central goal of the recent [[hackathon]] at [[LOCI]] in Madison, during the week of October 13 - 17.
 
 The ImgLib2 core library is now [http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22net.imglib2%22 available on Maven Central], and the [[source code]] for all ImgLib2 projects is [https://github.com/imglib accessible on GitHub].
 
