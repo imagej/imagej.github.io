@@ -36,7 +36,8 @@ If you would like to cite DiameterJ in your work citation information can be fou
 === <big>How to Use DiameterJ</big> ===
 ----
 ====<big>Image Segmentation</big>====
-[[File:ImageJ old website.png|500px|thumb|right|alt=Alt|Caption]]#Go to:  “Plugins-->DiameterJ-->Segment Mixed” or “Plugins-->DiameterJ-->Segment SRM” to segment images
+[[File:ImageJ old website.png|500px|thumb|right|alt=Alt|Caption]]
+#Go to:  “Plugins-->DiameterJ-->Segment Mixed” or “Plugins-->DiameterJ-->Segment SRM” to segment images
 #*Each uses a different set of 8 algorithms to analyze and segment your images
 #Choose the directory of the file you want to segment
 #*If you only want DiameterJ to segment a single image you will need to create a folder in which only that image is present
