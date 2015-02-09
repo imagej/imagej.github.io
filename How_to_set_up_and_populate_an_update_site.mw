@@ -3,6 +3,10 @@
 
 This tutorial explains how to '''set up a website to distribute your plugins'''. It assumes that your plugins are correctly installed in your local ImageJ setup.
 
+== Rationale ==
+
+See the [[Distribution]] page for a discussion of the benefits of update sites and how they fit in to plugin development.
+
 == Add your personal update site ==
 
 By far the easiest method to provide your macros, scripts and plugins to other users, letting them keep up-to-date in the most convenient manner, is to set up your ''personal update site''.
