@@ -18,6 +18,6 @@ It is well know that in every image acquisition process exist a noise level alwa
 
 '''Update notes:'''
 
-*''Feb-04-2015'': Available to produce additive noise on 2D images with some specific noise probability distributions. It is produced in the majority the MRI and complex noise distributions.
+*''Feb-08-2015'': Available to produce additive noise on 2D images with some specific noise probability distributions. It is produced in the majority the MRI and complex noise distributions.
 
 == Noise Distributions ==
