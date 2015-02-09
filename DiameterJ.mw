@@ -79,14 +79,16 @@ If you would like to cite DiameterJ in your work citation information can be fou
  
 ::Peak fitting is also recommended if you would like to analyze replicate images of a single sample.  To do this we recommend that you copy and paste all histograms from replicate images into one file, sum the frequency at each radius value and then save the resulting file as a .csv.  (Make sure all combined images have been taken at the same magnification or their radius values are scaled appropriately).
 
-:If you want a more accurate analysis, want to combine histograms from multiple images OR you want to determine multiple diameter peaks from a single image or set of images then do the below:  
+:If you want a more accurate analysis, want to combine histograms from multiple images OR you want to determine multiple diameter peaks from a single image or set of images then do the below: [[File:Histogram_Fits.png|500px|thumb|right|alt=Alt|Caption]] 
 :#Open the file with “XXXX_histogram.csv” in the histograms folder, using [http://fityk.nieto.pl/ Fityk 0.9.8] [https://github.com/wojdyr/fityk/downloads (free - windows only)] or [http://www.wavemetrics.com/products/igorpro/igorpro.htm Igor Pro] (not free)
 :#For Fityk go to Data-->Load File
 :#Select the file labeled XXXX_Histogram.csv in the “Histograms” directory
 :#Select the column with the radius values (column 10) as x and the column with the frequency/summed frequency (column 11) as y and then peak fit the histogram as per the tutorial [https://www.youtube.com/watch?v=GNszECQUX3g here] or for more complex fitting [https://www.youtube.com/watch?v=CaiqMvXwzF8 here]
 :#*Generally we use Gaussian curves but occasionally the curves are clearly Lorentzian or LogNormal 
 :#*To change the fit to a peak other than Gaussian go to Functions-->Function Type and select the appropriate fit function
-:#After peak fitting save the peak information by going to (Functions-->Export Peak Parameters)
+:#After peak fitting save the peak information by going to (Functions-->Export Peak Parameters) and (Functions-->Export Points)
+:#* When exporting points be sure to check the "all component functions" box
+:#* The export points document is a .dat not .csv. You can either open this file in excel and define spaces as a delimiters or copy and paste all points in the .dat into word, find/replace all spaces with commas and then save the file as a .csv to open in excel.
 :#For Gaussian peaks (most common) the “Center” of each peak is the average 
 :#*The FWHM can be transformed into the standard deviation of the radius by dividing the FWHM by 2.355
 :#**''Approximate conversion but 99% accurate''
