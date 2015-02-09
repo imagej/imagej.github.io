@@ -67,7 +67,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 === <big>How to Use DiameterJ</big> ===
 ----
 ====<big>Image Segmentation</big>====
-#Go to:  “Plugins-->DiameterJ-->Segment Mixed” or “Plugins-->DiameterJ-->Segment SRM” to segment images
+[[File:ImageJ old website.png|500px|thumb|right|alt=Alt|Caption]]#Go to:  “Plugins-->DiameterJ-->Segment Mixed” or “Plugins-->DiameterJ-->Segment SRM” to segment images
 #*Each uses a different set of 8 algorithms to analyze and segment your images
 #Choose the directory of the file you want to segment
 #*If you only want DiameterJ to segment a single image you will need to create a folder in which only that image is present
@@ -78,9 +78,9 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 #*The “Best Segmentation” folder contains no images
 #*“Montage Images” have a comparison of the original image to the 8 different segmentation methodologies.  Look at the montage images and find the image with the most accurate representation of your fibers
 #**''Remember, not all fibers need to be included in the segmentation for it to be a “good” segmentation.  The fibers just need to be without significant holes, edge defects, or too densely packed for the program to analyze them. (the program does not analyze intersections of fibers)''
-#**''File names are on the bottom of the images in Red''
+#**''File names are on the bottom of the images in Red'' [[File:Hotaling_Segmenatation.png|250px|thumb|right|alt=Alt|Caption]]
 #*The “Segmented Images" folder has all of the segmented images from the montage images 
-#Copy and paste the best segmentation into the “Best Segmentation” folder
+#Copy and paste the best segmentation into the “Best Segmentation” folder Good or ideal (as shown by the images on the right) segmentation quality will provide the most accurate results. 
 #Visually inspect these images to make sure that the segmentation worked well and that the segmentation represents the image you want to analyze
 #*If it does not try the other segmentation algorithm
 #*If none of the 16 algorithms segment your image well you can take the best segmentation and manually fix the errors to accurately reproduce the fibers.  This process is slow and so not recommended if it can be avoided.
