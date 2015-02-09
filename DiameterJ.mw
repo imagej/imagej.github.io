@@ -33,37 +33,6 @@ If you would like to cite DiameterJ in your work citation information can be fou
 ==== Citation/Reference Information ====
 : Hotaling NA, Bharti K, Kriel H, Simon CG.  DiameterJ: Validated Open Source Nanofiber Diameter Measurement Tool.  ''Biomaterials'', ''Submitted.'' 2015.
 
-=== <big>Installatio</big>n ===
-----
-If you installed imageJ before the end of 2013 you should uninstall your current version of ImageJ ('''DO NOT UPDATE''') and reinstall ImageJ 1.48 or newer. 
-:*Before uninstall be sure to copy all of your old plugins into a separate folder as these will be removed when you uninstall your old version of ImageJ.  
-:*We recommend ImageJ over Fiji if you have no experience with either software because it is simpler to use.  
-
-{| class="wikitable collapsible collapsed" style="vertical-align:top; width:90%; margin: 1em auto 1em auto;"
-|- id="section link anchor name" style="text-align:center" valign="top"
-| colspan=3 | <big> '''Download and install [http://rsb.info.nih.gov/ij/download.html ImageJ 1.48] or newer or [http://fiji.sc/Downloads Fiji] (any version)''' </big>
-|- valign="top"
-! scope="col" width="33%" | '''Windows'''
-! scope="col" width="33%" | '''OSX'''
-! scope="col" width="33%" | '''Linux'''
-|- valign="top"
-|
-#Download and unzip the DiameterJ files (Find in "Source" above) and move or copy the three folders into the plugins folder of ImageJ.  
-#That should be in directory:
-#:"C:\Program Files\ImageJ\plugins"
-#::Or 
-#:"C:\Program Files (x86)\ImageJ\plugins"
-#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
-#Restart ImageJ 
-|
-#Follow instructions [http://rsb.info.nih.gov/ij/docs/install/osx.html#dandd Here] or [http://fiji.sc/MacOSX_tips Here] for installation of ImageJ/FIJI on OSX 
-|
-#Download and unzip the DiameterJ files (Find in "File" in the Info box above) 
-#Move or copy the three folders into the plugins folder of the directory where you have placed ImageJ.  
-#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
-#Restart ImageJ
-|}
-
 === <big>How to Use DiameterJ</big> ===
 ----
 ====<big>Image Segmentation</big>====
@@ -305,6 +274,37 @@ The more fibers that were segmented out of an image the larger the pore size, th
 From the images in Figure 6A it is apparent that two of the algorithms did a poor job of image segmentation (Global – Otsu and Local Otsu) and two did a relatively good job (Global – Min Error and Machine Learning).  The images in Figure 6A illustrate the ease of selection of “good” versus “bad” segmentation of images.  For the analysis of fibers included in this paper the machine learning segmentation of this image would have been used because it clearly provides the most accurate representation of the original micrograph (Supplemental Figure S6).  Thus, by choosing well segmented images the problem of errant peak formation in diameter histograms, as shown in Figure 6B, can be minimized in all but the most extreme cases (discussed in more detail below).
 
 DiameterJ has several limitations.  The first is that it does not automate image segmentation.  As discussed above this can be seen as both an advantage and limitation of the code. Lacking automated segmentation means that users must segment each image themselves which is slow and can be technically challenging for novices in the image analysis field.  However, this can also be seen as an advantage as discussed above.  Secondly, when analyzing the histograms of the multi-diameter calibration images in Figure 3 it was found that DiameterJ under represented the prevalence of larger diameter fibers as compared to smaller fibers.  This bias, as discussed above, leads to weighted averages being inaccurate and for global averages of fiber diameters to be biased toward smaller fiber diameters.  Thirdly, on one or two of the calibration images it was found that hybrid peaks (peaks that were not from one of the known diameters in the image) were formed.  These were found to be due to multiple fibers aligning and overlapping to produce a net larger fiber peak than was present in the image or fibers running along the edge of the image and thus producing smaller fiber diameters than were actually present.  Fourthly, distinguishing between fiber diameters that were closer in diameter than 3 pixels would often create resolution difficulties for the Gaussian peak fit.  Finally, as stated above, fibers that had a diameter that was less than 10px or greater than 10% of the smallest dimension of the image produced errors that were above 10% and thus deemed as too high for accurate measurement.  The last two limitations are easily solved by adjusting the magnification of the image so that fibers to be analyzed are in an appropriate size range and so that the difference between fiber diameters can be easily resolved.  The first three limitations are intrinsic parts of the code and cannot be easily resolved or are outside of the scope of this work.
+
+=== <big>Installatio</big>n ===
+----
+If you installed imageJ before the end of 2013 you should uninstall your current version of ImageJ ('''DO NOT UPDATE''') and reinstall ImageJ 1.48 or newer. 
+:*Before uninstall be sure to copy all of your old plugins into a separate folder as these will be removed when you uninstall your old version of ImageJ.  
+:*We recommend ImageJ over Fiji if you have no experience with either software because it is simpler to use.  
+
+{| class="wikitable collapsible collapsed" style="vertical-align:top; width:90%; margin: 1em auto 1em auto;"
+|- id="section link anchor name" style="text-align:center" valign="top"
+| colspan=3 | <big> '''Download and install [http://rsb.info.nih.gov/ij/download.html ImageJ 1.48] or newer or [http://fiji.sc/Downloads Fiji] (any version)''' </big>
+|- valign="top"
+! scope="col" width="33%" | '''Windows'''
+! scope="col" width="33%" | '''OSX'''
+! scope="col" width="33%" | '''Linux'''
+|- valign="top"
+|
+#Download and unzip the DiameterJ files (Find in "Source" above) and move or copy the three folders into the plugins folder of ImageJ.  
+#That should be in directory:
+#:"C:\Program Files\ImageJ\plugins"
+#::Or 
+#:"C:\Program Files (x86)\ImageJ\plugins"
+#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
+#Restart ImageJ 
+|
+#Follow instructions [http://rsb.info.nih.gov/ij/docs/install/osx.html#dandd Here] or [http://fiji.sc/MacOSX_tips Here] for installation of ImageJ/FIJI on OSX 
+|
+#Download and unzip the DiameterJ files (Find in "File" in the Info box above) 
+#Move or copy the three folders into the plugins folder of the directory where you have placed ImageJ.  
+#:*DiameterJ will work with x86 (32-bit) or x64 (64-bit) versions of Java/ImageJ
+#Restart ImageJ
+|}
 
 == FAQs ==
 
