@@ -4697,9 +4697,9 @@ Modify the '''master file''' accordingly. Create the jobs using the '''create_ex
 
 = New Multiview Reconstruction pipeline =
 
-The key change in the '''Multiview Reconstruction''' (MVR) pipeline is that all results are written into an XML. This poses new problems on cluster processing, because several concurrently running jobs need to update the same file. 
+The key change in the '''Multiview Reconstruction''' (MVR) pipeline is that all results are written into an XML. This poses new problems for cluster processing, because several concurrently running jobs need to update the same file. 
 
-Stephan Preibisch solved that problem by allowing to write one xml file per job (usually a timepoint) and then merging the job specific xmls into one xml for the entire dataset. 
+Stephan Preibisch solved that problem by allowing to write one XML file per job (usually a timepoint) and then merging the job specific XMLs into one XML for the entire dataset. 
 
 In practice it means the following steps need to be executed:
 
