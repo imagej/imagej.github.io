@@ -4709,4 +4709,156 @@ In practice it means the following steps need to be executed:
 
 Some new parameters are introduced and some old parameters change names. Therefore, use the master file described in this chapter to process with the MVR pipeline.
 
+== Define XML ==
+
+First step in '''Multiview Reconstruction''' is to define an XML file that describes the imaged dataset. This is very flexible and can be adapted to datasets with several angles, channels, illumination sides and timepoints. The relevant portion of the ''master'' file looks like this:
+
+<source lang="bash">
+####---------------------------------Define XML------------------------------------------------
+### Definition of xml for multiview dataset
+##Working directory
+jobs_xml="/projects/tomancak_lightsheet/Valia/Valia/new_pipeline/jobs_master_beta_2.0/define_xml/"
+
+##Working script
+define_xml="/projects/tomancak_lightsheet/Valia/Valia/new_pipeline/jobs_master_beta_2.0/define_xml/define_xml.bsh"
+merge_xml="/projects/tomancak_lightsheet/Valia/Valia/new_pipeline/jobs_master_beta_2.0/define_xml/merge_xml.bsh"
+
+## dataset parameters
+type_of_dataset="\"Image Stacks (ImageJ Opener)\""
+xml_filename="\"dataset.xml\""
+multiple_timepoints="\"YES (one file per time-point)\""
+multiple_channels="\"NO (one channel)\""
+multiple_illumination_directions="\"NO (one illumination direction)\""
+multiple_angles="\"YES (one file per angle)\""
+</source>
+
+and describes a multi timepoint time-lapse with single channel, one illumination direction and multiple angles. (''Note that the timepoints and angles are defined elsewhere in the general part of the master file).
+
+The parameters in the ''master'' file are sourced by a ''create-dataset-jobs'' bash script
+
+<source lang="bash">
+#!/bin/bash
+source /projects/tomancak_lightsheet/Valia/Valia/new_pipeline/master
+
+mkdir -p $jobs_xml
+
+job="$jobs_xml/create-dataset.job"
+echo $job
+echo "#!/bin/bash" > "$job"
+echo "$XVFB_RUN -a $Fiji \
+	-Ddir=$dir \
+	-Dpattern=$channel_pattern_beads \
+	-Dtimepoint=$timelapse_timepoint \
+	-Dangles=$angles \
+	-Dxy_resolution=$xy_resolution \
+	-Dz_scaling=$z_scaling \
+	-Dimglib_container=$imglib_container \
+	-Dtype_of_dataset=$type_of_dataset \
+	-Dxml_filename=$xml_filename \
+	-Dmultiple_timepoints=$multiple_timepoints \
+	-Dmultiple_channels=$multiple_channels \
+	-Dmultiple_illumination_directions=$multiple_illumination_directions \
+	-Dmultiple_angles=$multiple_angles \
+		-- --no-splash $define_xml" >> "$job"
+chmod a+x "$job"
+</source>
+
+which creates a ''create-dataset.job'' bash script passes the parameters to Fiji by executing ''define_xml.bsh'' beanshell script
+
+<source lang="java">
+import ij.IJ;
+import ij.ImagePlus;
+import java.lang.Runtime;
+import java.io.File;
+import java.io.FilenameFilter;
+ 
+runtime = Runtime.getRuntime();
+System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
+
+type_of_dataset = System.getProperty( "type_of_dataset" );
+xml_filename = System.getProperty( "xml_filename" );
+multiple_timepoints = System.getProperty( "multiple_timepoints" );
+multiple_channels = System.getProperty( "multiple_channels" );
+multiple_illumination_directions = System.getProperty( "multiple_illumination_directions" );
+multiple_angles = System.getProperty( "multiple_angles" );
+
+dir = System.getProperty( "dir" );
+pattern = System.getProperty( "pattern" );
+timepoint = System.getProperty( "timepoint" );
+angles = System.getProperty( "angles" );
+ 
+int xy_resolution = Integer.parseInt(System.getProperty( "xy_resolution" ));
+float z_scaling = Float.parseFloat( System.getProperty( "z_scaling" ) );
+imglib_container = System.getProperty( "imglib_container" );
+ 
+System.out.println( "type of dataset=" + type_of_dataset );
+System.out.println( "xml filename=" + xml_filename );
+System.out.println( "multiple_timepoints=" + multiple_timepoints );
+System.out.println( "multiple_channels=" + multiple_channels );
+System.out.println( "multiple_illumination_directions=" + multiple_illumination_directions );
+System.out.println( "multiple_angles=" + multiple_angles );
+System.out.println( "dir=" + dir );
+System.out.println( "pattern_of_spim=" + pattern );
+System.out.println( "timepoint=" + timepoint );
+System.out.println( "angles=" + angles );
+System.out.println( "xy_resolution=" + xy_resolution );
+System.out.println( "z_resolution=" + z_scaling );
+System.out.println( "imglib_container=" + imglib_container );
+
+IJ.run("Define Multi-View Dataset", 
+	"type_of_dataset=[" + type_of_dataset + "] " +
+	"xml_filename=[" + xml_filename + "] " +
+	"multiple_timepoints=[" + multiple_timepoints + "] " +
+	"multiple_channels=[" + multiple_channels + "] " +
+	"_____multiple_illumination_directions=[" + multiple_illumination_directions + "] " + 
+	"multiple_angles=[" + multiple_angles + "] " +
+	"image_file_directory=" + dir + " " +
+	"image_file_pattern=" + pattern + " " + 
+	"timepoints_=" + timepoint + " " +
+	"acquisition_angles_=" + angles + " " +  
+	"calibration_type=[Same voxel-size for all views] calibration_definition=[User define voxel-size(s)]" + " " + 
+	"imglib2_data_container=[" + imglib_container + "] " + 
+	"pixel_distance_x=" + xy_resolution + " " + 
+	"pixel_distance_y=" + xy_resolution + " " + 
+	"pixel_distance_z=" + z_scaling + " " +
+	"pixel_unit=um"
+	);
+ 
+/* shutdown */
+runtime.exit(0);
+</source>
+
+Since in this case it makes no sense to parallelise, it is best to launch the ''create-dataset.job'' in interactive mode on one of the nodes of the cluster (ideally not the headnode). On our cluster this will look like this:
+
+<source>
+[tomancak@madmax define_xml]$ ./create-dataset-jobs 
+/projects/tomancak_lightsheet/Valia/Valia/new_pipeline/jobs_master_beta_2.0/define_xml//create-dataset.job
+[tomancak@madmax define_xml]$ bsub -q interactive -Is bash
+Job <484001> is submitted to queue <interactive>.
+<<Waiting for dispatch ...>>
+<<Starting on n42>>
+[tomancak@n42 define_xml]$ ./create-dataset.job 
+12 cores available for multi-threading
+type of dataset=Image Stacks (ImageJ Opener)
+xml filename=dataset.xml
+multiple_timepoints=YES (one file per time-point)
+multiple_channels=NO (one channel)
+multiple_illumination_directions=NO (one illumination direction)
+multiple_angles=YES (one file per angle)
+dir=/projects/tomancak_lightsheet/Valia/Valia/raw/
+pattern_of_spim=spim_TL{t}_Angle{a}.tif
+timepoint=1-715
+angles=1,2,3,4,5,6
+xy_resolution=1
+z_resolution=3.497273
+imglib_container=ArrayImg (faster)
+1
+Minimal resolution in all dimensions over all views is: 1.0
+(The smallest resolution in any dimension; the distance between two pixels in the output image will be that wide)
+Saved xml '/projects/tomancak_lightsheet/Valia/Valia/raw/dataset.xml'.
+</source>
+
+End result should be a ''dataset.xml'' created in the directory where the raw data reside.
+
+
 [[Invasion_assay]]
