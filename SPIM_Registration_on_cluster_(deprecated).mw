@@ -4705,7 +4705,7 @@ In practice it means the following steps need to be executed:
 
 * Define XML dataset - creates one XML for the entire timelapse 
 * Run per time-point registrations - creates as many XMLs as there are timepoints
-* Merge XMLs - consolidates the xmls back into a single XML.
+* Merge XMLs - consolidates the per-timepoint XMLs back into a single XML.
 
 Some new parameters are introduced and some old parameters change names. Therefore, use the master file described in this chapter to process with the MVR pipeline.
 
