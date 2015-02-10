@@ -4732,7 +4732,7 @@ multiple_illumination_directions="\"NO (one illumination direction)\""
 multiple_angles="\"YES (one file per angle)\""
 </source>
 
-and describes a multi timepoint time-lapse with single channel, one illumination direction and multiple angles. (''Note that the timepoints and angles are defined elsewhere in the general part of the master file).
+and describes a multi timepoint time-lapse with single channel, one illumination direction and multiple angles. (''Note that the timepoints and angles are defined elsewhere in the general part of the master file). 
 
 The parameters in the ''master'' file are sourced by a ''create-dataset-jobs'' bash script
 
@@ -4763,7 +4763,7 @@ echo "$XVFB_RUN -a $Fiji \
 chmod a+x "$job"
 </source>
 
-which creates a ''create-dataset.job'' bash script passes the parameters to Fiji by executing ''define_xml.bsh'' beanshell script
+which creates a ''create-dataset.job'' bash script that passes the parameters to Fiji by executing ''define_xml.bsh'' beanshell script
 
 <source lang="java">
 import ij.IJ;
@@ -4830,35 +4830,38 @@ runtime.exit(0);
 
 Since in this case it makes no sense to parallelise, it is best to launch the ''create-dataset.job'' in interactive mode on one of the nodes of the cluster (ideally not the headnode). On our cluster this will look like this:
 
-<source>
-[tomancak@madmax define_xml]$ ./create-dataset-jobs 
-/projects/tomancak_lightsheet/Valia/Valia/new_pipeline/jobs_master_beta_2.0/define_xml//create-dataset.job
-[tomancak@madmax define_xml]$ bsub -q interactive -Is bash
-Job <484001> is submitted to queue <interactive>.
-<<Waiting for dispatch ...>>
-<<Starting on n42>>
-[tomancak@n42 define_xml]$ ./create-dataset.job 
-12 cores available for multi-threading
-type of dataset=Image Stacks (ImageJ Opener)
-xml filename=dataset.xml
-multiple_timepoints=YES (one file per time-point)
-multiple_channels=NO (one channel)
-multiple_illumination_directions=NO (one illumination direction)
-multiple_angles=YES (one file per angle)
-dir=/projects/tomancak_lightsheet/Valia/Valia/raw/
-pattern_of_spim=spim_TL{t}_Angle{a}.tif
-timepoint=1-715
-angles=1,2,3,4,5,6
-xy_resolution=1
-z_resolution=3.497273
-imglib_container=ArrayImg (faster)
-1
-Minimal resolution in all dimensions over all views is: 1.0
-(The smallest resolution in any dimension; the distance between two pixels in the output image will be that wide)
-Saved xml '/projects/tomancak_lightsheet/Valia/Valia/raw/dataset.xml'.
-</source>
+ [tomancak@madmax define_xml]$ <font color=red>./create-dataset-jobs</font> 
+ /projects/tomancak_lightsheet/Valia/Valia/new_pipeline/jobs_master_beta_2.0/define_xml//create- dataset.job
+ [tomancak@madmax define_xml]$ <font color=red>bsub -q interactive -Is bash</font>
+ Job <484001> is submitted to queue <interactive>.
+ <<Waiting for dispatch ...>>
+ <<Starting on n42>>
+ [tomancak@n42 define_xml]$ <font color=red>./create-dataset.job</font>  
+ 12 cores available for multi-threading
+ type of dataset=Image Stacks (ImageJ Opener)
+ xml filename=dataset.xml
+ multiple_timepoints=YES (one file per time-point)
+ multiple_channels=NO (one channel)
+ multiple_illumination_directions=NO (one illumination direction)
+ multiple_angles=YES (one file per angle)
+ dir=/projects/tomancak_lightsheet/Valia/Valia/raw/
+ pattern_of_spim=spim_TL{t}_Angle{a}.tif
+ timepoint=1-715
+ angles=1,2,3,4,5,6
+ xy_resolution=1
+ z_resolution=3.497273
+ imglib_container=ArrayImg (faster)
+ 1
+ Minimal resolution in all dimensions over all views is: 1.0
+ (The smallest resolution in any dimension; the distance between two pixels in the output image will be  that wide)
+ <font color=red>Saved xml '/projects/tomancak_lightsheet/Valia/Valia/raw/dataset.xml'.</font>
 
 End result should be a ''dataset.xml'' created in the directory where the raw data reside.
 
+Tips and tricks:
+
+* In order to change the definition of the dataset define it locally with gui and macro recorder turned on and copy/paste the relevant macro parameters to the master file.
+
+* Macro commands that consist of strings are usually surrounded by square brackets "[]". Do NOT put the brackets into the master file, they are provided by the Beanshell script. 
 
 [[Invasion_assay]]
