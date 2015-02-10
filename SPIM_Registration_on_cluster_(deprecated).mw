@@ -4714,22 +4714,23 @@ Some new parameters are introduced and some old parameters change names. Therefo
 First step in '''Multiview Reconstruction''' is to define an XML file that describes the imaged dataset. This is very flexible and can be adapted to datasets with several angles, channels, illumination sides and timepoints. The relevant portion of the ''master'' file looks like this:
 
 <source lang="bash">
-####---------------------------------Define XML------------------------------------------------
-### Definition of xml for multiview dataset
-##Working directory
-jobs_xml="/projects/tomancak_lightsheet/Valia/Valia/new_pipeline/jobs_master_beta_2.0/define_xml/"
-
-##Working script
-define_xml="/projects/tomancak_lightsheet/Valia/Valia/new_pipeline/jobs_master_beta_2.0/define_xml/define_xml.bsh"
-merge_xml="/projects/tomancak_lightsheet/Valia/Valia/new_pipeline/jobs_master_beta_2.0/define_xml/merge_xml.bsh"
-
-## dataset parameters
-type_of_dataset="\"Image Stacks (ImageJ Opener)\""
-xml_filename="\"dataset.xml\""
-multiple_timepoints="\"YES (one file per time-point)\""
-multiple_channels="\"NO (one channel)\""
-multiple_illumination_directions="\"NO (one illumination direction)\""
-multiple_angles="\"YES (one file per angle)\""
+type_of_dataset="\"Image Stacks (ImageJ Opener)\""                      # raw fileformat
+xml_filename="\"dataset.xml\""                                          # filename
+multiple_timepoints="\"YES (one file per time-point)\""                 # or NO (one time-point)
+timepoints="1-715"                                                      # range of timepoint
+multiple_channels="\"NO (one channel)\""                                # or YES (one file per channel)
+multiple_illumination_directions="\"NO (one illumination direction)\""  # or YES (one file per illumination direction)
+multiple_angles="\"YES (one file per angle)\""                          # or NO (one angle)"
+</source>
+.
+.
+<source lang="bash">
+#--------------------------------------------------------------------------------
+# XML definition and manipulation
+#--------------------------------------------------------------------------------
+jobs_xml=${job_directory}"/define_xml/"                         # directory
+define_xml=${job_directory}"define_xml/define_xml.bsh"          # script
+merge_xml=${job_directory}"merge_xml.bsh"                       # script
 </source>
 
 and describes a multi timepoint time-lapse with single channel, one illumination direction and multiple angles. (''Note that the timepoints and angles are defined elsewhere in the general part of the master file). 
