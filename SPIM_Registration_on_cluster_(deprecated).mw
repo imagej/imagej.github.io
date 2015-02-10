@@ -18,6 +18,20 @@ Every cluster is different both in terms of the used hardware and the software r
 
 Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system running on the MPI-CBG cluster is '''LSF''' - [http://en.wikipedia.org/wiki/Platform_LSF Load Sharing Facility]. The basic principles of job submission are the same across queuing systems, but the exact syntax will of course differ.
 
+'''Note on versions'''
+
+The SPIM registration is a piece of software that undergoes ongoing development. The original version gathered under plugins ''SPIM registration'' has been replaced in 2014 by new set of plugins gathered under ''Multiview reconstruction''. Moreover, the cluster pipeline has been changed to use a centralised Linux style master file. Therefore, there are three versions of the pipeline descritption
+
+* '''Original SPIM registration pipeline''' - contains the most detailed description of the cluster pipeline using ''SPIM registration'' plugins. If you do not have much HPC/Linux experience start here.
+
+* '''NEW PIPELINE''' - also uses ''SPIM registration'' plugins and introduces the master file, its more up-to-date compared to the original pipeline, but less verbose requiring some experience with command line and HPC.
+
+* '''New Multiview Reconstruction pipeline''' - builds on ''Multiview Reconstruction'' plugins, uses master file, written for experts
+
+So, if you are new read a bit of the chapter 1 (original pipeline) to get familiar and then skip to chapter 3 (Multiview reconstruction pipeline) which is more up-to-date. To understand how the master file works refer to chapter 2 (NEW PIPELINE).
+
+= Original SPIM registration pipeline =
+
 == Pre-requisites ==
 
 === Saving data on Lighsheet Z.1 ===
@@ -4680,6 +4694,8 @@ PS: The stderr output (if any) follows:
 </source>
 
 Modify the '''master file''' accordingly. Create the jobs using the '''create_export_jobs''' script and submit them to the cluster.
+
+= New Multiview Reconstruction pipeline =
 
 
 [[Invasion_assay]]
