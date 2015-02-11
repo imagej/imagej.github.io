@@ -4718,7 +4718,6 @@ First step in '''Multiview Reconstruction''' is to define an XML file that descr
 type_of_dataset="\"Image Stacks (ImageJ Opener)\""                      # raw fileformat
 xml_filename="\"dataset.xml\""                                          # filename
 multiple_timepoints="\"YES (one file per time-point)\""                 # or NO (one time-point)
-timepoints="1-715"                                                      # range of timepoint
 multiple_channels="\"NO (one channel)\""                                # or YES (one file per channel)
 multiple_illumination_directions="\"NO (one illumination direction)\""  # or YES (one file per illumination direction)
 multiple_angles="\"YES (one file per angle)\""                          # or NO (one angle)"
