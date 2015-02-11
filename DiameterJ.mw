@@ -322,6 +322,7 @@ Finally, we'd like to encourage everyone to do peak fitting of the diameter hist
 :# Reducing bias of the Histogram intersection correction by directionally subtracting fiber intersections rather than blanket subtraction within a given intersection radius
 :# incorporation of Gaussian peak fitting algorithms within DiameterJ itself.  
 :#Currently we are working on a native JAVA application on DiameterJ.  This will not fundamentally change the function of DiameterJ however, it will make it faster, look cleaner, and should solve continuity issues
+:# 16-bit Euclidean distance transform calculator
 
 Help is welcome in any/all of these improvements!
 
