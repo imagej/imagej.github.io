@@ -5006,7 +5006,7 @@ do
 done
 </source>
 
-and generate in the raw data directory a series of ''.h5'' files 
+and generate in the raw data directory a series of ''.h5'' files. Each file contains the raw data for one time-point. At this point without any registration.
 
  dataset.h5
  dataset-00-00.h5
