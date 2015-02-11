@@ -26,7 +26,8 @@ __TOC__
 # Analysis of Segmented image
 #*All measures given by DiameterJ are in pixels by default
 #*DiameterJ has been validated with over 130 digital images created ''in silico'' and with scanning electron microscope images of reference wires with known diameters.  
-#*To see the full publication that details how DiameterJ was validated and how it works please go to [Coming Soon]. 
+#*:- Fibers that are smaller than 10px or greater than 10% of the smallest dimension of the image produce 10% or greater error in measurement
+#*:- Fibers must be less than 512px in diameter to be imaged
 
 If you would like to cite DiameterJ in your work citation information can be found [http://www. here] or use the below: 
 
