@@ -4697,14 +4697,14 @@ Modify the '''master file''' accordingly. Create the jobs using the '''create_ex
 
 = New Multiview Reconstruction pipeline =
 
-The key change in the '''Multiview Reconstruction''' (MVR) pipeline is that all results are written into an XML. This poses new problems for cluster processing, because several concurrently running jobs need to update the same file. 
+The key change in the '''[[Multiview-Reconstruction|Multiview Reconstruction]]''' (MVR) pipeline is that all results are written into an XML. This poses new problems for cluster processing, because several concurrently running jobs need to update the same file. 
 
 Stephan Preibisch solved that problem by allowing to write one XML file per job (usually a timepoint) and then merging the job specific XMLs into one XML for the entire dataset. 
 
 In practice it means the following steps need to be executed:
 
 * Define XML dataset - creates one XML for the entire timelapse
-* Re-save data as HDF5 - converts data into HDF5 container optimised for fast access in BigDataViewer 
+* Re-save data as HDF5 - converts data into HDF5 container optimised for fast access in [[BigDataViewer]] 
 * Run per time-point registrations - creates as many XMLs as there are timepoints
 * Merge XMLs - consolidates the per-timepoint XMLs back into a single XML
 
@@ -4712,7 +4712,7 @@ Some new parameters are introduced and some old parameters change names. Therefo
 
 == Define XML ==
 
-First step in '''Multiview Reconstruction''' is to define an XML file that describes the imaged dataset. This is very flexible and can be adapted to datasets with several angles, channels, illumination sides and timepoints. The relevant portion of the ''master'' file looks like this:
+First step in [[Multiview-Reconstruction|'''Multiview Reconstruction''']] is to define an XML file that describes the imaged dataset. This is very flexible and can be adapted to datasets with several angles, channels, illumination sides and timepoints. The relevant portion of the ''master'' file looks like this:
 
 <source lang="bash">
 type_of_dataset="\"Image Stacks (ImageJ Opener)\""                      # raw fileformat
@@ -5022,7 +5022,7 @@ and generate in the raw data directory a series of ''.h5'' files. Each file cont
 
 and new ''hdf5_dataset.xml''. 
 
-From now on, the data are in the HDF5 container (unregistered) and can be viewed in BigDataViewer. In the next step we register the data by running the registration pipeline and updating the XML. 
+From now on, the data are in the HDF5 container (unregistered) and can be viewed in [[BigDataViewer]]. In the next step we register the data by running the registration pipeline and updating the XML. 
 
 == Multiview registration ==
 
