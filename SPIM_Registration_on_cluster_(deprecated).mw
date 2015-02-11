@@ -5024,4 +5024,21 @@ and new ''hdf5_dataset.xml''.
 
 From now on, the data are in the HDF5 container (unregistered) and can be viewed in BigDataViewer. In the next step we register the data by running the registration pipeline and updating the XML. 
 
+== Multiview registration ==
+
+We now have to .xml files. ''dataset.xml'' created during the define xml step and ''hdf5_dataset.xml'' created after re-saving to HDF5. Lets first make a copy of the ''dataset.xml'' 
+
+<source lang=bash>
+cp dataset.xml original_dataset.xml
+</source>
+
+and copy the  ''hdf5_dataset.xml'' into ''dataset.xml''
+
+<source lang=bash>
+cp hdf5_dataset.xml dataset.xml
+</source>
+
+Like this we have a back-up of the two intermediate state XMLs and a ''dataset.xml'' to use as input for registration.
+
+
 [[Invasion_assay]]
