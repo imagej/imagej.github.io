@@ -4989,7 +4989,7 @@ IJ.run("As HDF5",
 	"setups_per_partition=" + setups_per_partition + " " +
 	"run_only_job_number=" + run_only_job_number + " " +
 	"use_deflate_compression " + 
-	"export_path=" + dir + xml_filename);
+	"export_path=" + dir + "hdf5_" + xml_filename);
 
 /* shutdown */
 System.exit(0);
@@ -5019,5 +5019,9 @@ and generate in the raw data directory a series of ''.h5'' files. Each file cont
  dataset-07-00.h5
  dataset-08-00.h5
  dataset-09-00.h5
+
+and new ''hdf5_dataset.xml''. 
+
+From now on, the data are in the HDF5 container (unregistered) and can be viewed in BigDataViewer. In the next step we register the data by running the registration pipeline and updating the XML. 
 
 [[Invasion_assay]]
