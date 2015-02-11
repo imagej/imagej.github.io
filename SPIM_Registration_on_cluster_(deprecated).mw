@@ -4873,6 +4873,21 @@ The purpose of this step is to convert the raw light sheet data (either ''.czi''
 
 Relevant portion of the master file looks like this:
 
+<source lang=bash>
+#-------------------------------------------------------------------------------
+# hdf5 export
+#-------------------------------------------------------------------------------
+Fiji_export="/sw/users/tomancak/packages/fiji_tobi_for_testing/Fiji.app/ImageJ-linux64" # Fiji_tobias
+jobs_export=${job_directory}"/hdf5/"                            # directory
+resave_angle="\"All angles\""
+resave_channel="\"All channels\""
+resave_illumination="\"All illuminations\""
+resave_timepoint="\"All Timepoints\""
+subsampling_factors="\"{ {1,1,1}, {2,2,1}, {4,4,1}, {8,8,1} }\""
+hdf5_chunk_sizes="\"{ {32,32,4}, {32,32,4}, {16,16,16}, {16,16,16} }\""
+timepoints_per_partition="1"
+setups_per_partition="0"
+</source>
 
 As usual, we create cluster jobs per timepoint by sourcing the master file parameters with ''create_export_jobs''
 
@@ -4924,18 +4939,6 @@ done
 ''Note that we first run a job with parameter '''run_only_job_number''' set to '''0'''. This creates the master dataset.h5 file.''
 
 The rest of the ''hdf5-<number>.job'' bash scripts execute ''export.bsh'' Beanshell using Fiji
-
-<source lang=bash>
-#!/bin/bash
-/sw/bin/xvfb-run -a /sw/users/tomancak/packages/fiji_tobi_for_testing/Fiji.app/ImageJ-linux64 -Xmx10g 		-Ddir=/projects/tomancak_lightsheet/Valia/V
-alia/test_tl/ 		-Dxml_filename="dataset.xml" 		-Dresave_angle="All angles" 		-Dresave_channel="All channels" 		-Dr
-esave_illumination="All illuminations" 		-Dresave_timepoint="All Timepoints" 		-Dsubsampling_factors="{ {1,1,1}, {2,2,1}, {4,4,1}, {8,8,1}
- }" 		-Dhdf5_chunk_sizes="{ {32,32,4}, {32,32,4}, {16,16,16}, {16,16,16} }" 		-Dtimepoints_per_partition=1 		-Dsetups_per_partit
-ion=0 		-Drun_only_job_number=1 			-- --no-splash /projects/tomancak_lightsheet/Valia/Valia/new_pipeline/jobs_master_beta_2.0/
-/hdf5//export.bsh
-</source>
-
-Export beanshell
 
 <source lang=java>
 import ij.IJ;
@@ -4992,7 +4995,7 @@ IJ.run("As HDF5",
 System.exit(0);
 </source>
 
-These will be submitted to the cluster with the following ''submit-jobs'' bash script
+The ''hdf5-<number>.job'' bash scripts will be submitted to the cluster with the following ''submit-jobs'' script
 
 <source lang=bash>
 #!/bin/bash
@@ -5002,5 +5005,19 @@ do
 	bsub -q short -n 8 -R rusage[mem=50000] -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
 done
 </source>
+
+and generate in the raw data directory a series of ''.h5'' files 
+
+ dataset.h5
+ dataset-00-00.h5
+ dataset-01-00.h5
+ dataset-02-00.h5
+ dataset-03-00.h5
+ dataset-04-00.h5
+ dataset-05-00.h5
+ dataset-06-00.h5
+ dataset-07-00.h5
+ dataset-08-00.h5
+ dataset-09-00.h5
 
 [[Invasion_assay]]
