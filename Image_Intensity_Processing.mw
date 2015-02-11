@@ -15,7 +15,7 @@ The ''Reset'' button makes the "maximum" 0 and the "minimum" 255 in 8-bit images
 
 If the ''Auto'' button does not produce a desirable result, use the region-of-interest (ROI) tool to select part of the cell and some background, then hit the ''Auto'' button again. The stretch will then be based on the intensities of the ROI.
 
-'''Pressing the ''Apply'' button permanently changes the ''actual' 'grey values of the image. If just analyzing image intensity do not press this button.
+Pressing the ''Apply'' button permanently changes the ''actual'' grey values of the image. If just analyzing image intensity do not press this button.
 
 If you prefer the image to be displayed as "black on white" rather than "white on black", then use the "inverted" command: ''Image>Lookup Tables>Invert LUT''. The command ''Edit>Invert'' inverts the pixel ''values themselves'' permanently.
 
