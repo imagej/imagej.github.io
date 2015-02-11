@@ -4863,6 +4863,88 @@ Tips and tricks:
 
 * In order to change the definition of the dataset define it locally with gui and macro recorder turned on and copy/paste the relevant macro parameters to the master file.
 
-* Macro commands that consist of strings are usually surrounded by square brackets "[]". Do NOT put the brackets into the master file, they are provided by the Beanshell script. 
+* Macro commands that consist of strings are usually surrounded by square brackets "[]". Do NOT put the brackets into the master file, they are provided by the Beanshell script.
+
+== Re-save as HDF5 ==
+
+''Note: this step is optional at this point. Re-saving to HDF5 can be done also after registration or not at all''.
+
+The purpose of this step is to convert the raw light sheet data (either ''.czi'' or ''.tif'') into the HDF5 container that is optimised for fast viewing through the BigDataViewer Fiji plugin.
+
+Relevant portion of the master file looks like this:
+
+
+As usual, we create cluster jobs per timepoint by sourcing the master file parameters with ''create_export_jobs''
+
+<source lang=bash>
+ #!/bin/bash
+
+source /projects/tomancak_lightsheet/Valia/Valia/new_pipeline/master
+
+job="$jobs_export/hdf5-0.job"
+echo $job
+echo "#!/bin/bash" > "$job"
+echo "$XVFB_RUN -a $Fiji_export -Xmx10g \
+      	-Ddir=$dir \
+        -Dxml_filename=$xml_filename \
+        -Dresave_angle=$resave_angle \
+        -Dresave_channel=$resave_channel \
+        -Dresave_illumination=$resave_illumination \
+        -Dresave_timepoint=$resave_timepoint \
+        -Dsubsampling_factors=$subsampling_factors \
+        -Dhdf5_chunk_sizes=$hdf5_chunk_sizes \
+        -Dtimepoints_per_partition=$timepoints_per_partition \
+        -Dsetups_per_partition=$setups_per_partition \
+        -Drun_only_job_number=0 \
+                 -- --no-splash $export" >> "$job"
+chmod a+x "$job"
+
+for i in $timepoint
+do
+	job="$jobs_export/hdf5-$i.job"
+	echo $job
+	echo "#!/bin/bash" > "$job"
+	echo "$XVFB_RUN -a $Fiji_export -Xmx10g \
+		-Ddir=$dir \
+		-Dxml_filename=$xml_filename \
+		-Dresave_angle=$resave_angle \
+		-Dresave_channel=$resave_channel \
+		-Dresave_illumination=$resave_illumination \
+		-Dresave_timepoint=$resave_timepoint \
+		-Dsubsampling_factors=$subsampling_factors \
+		-Dhdf5_chunk_sizes=$hdf5_chunk_sizes \
+		-Dtimepoints_per_partition=$timepoints_per_partition \
+		-Dsetups_per_partition=$setups_per_partition \
+		-Drun_only_job_number=$i \
+			-- --no-splash $export" >> "$job"
+	chmod a+x "$job"
+done
+</source>
+
+''Note that we first run a job with parameter '''run_only_job_number''' set to '''0'''. This creates the master dataset.h5 file.''
+
+The rest of the ''hdf5-<number>.job'' bash scripts execute ''export.bsh'' Beanshell using Fiji
+
+
+/projects/tomancak_lightsheet/Valia/Valia/new_pipeline/jobs_master_beta_2.0/define_xml
+[tomancak@madmax define_xml]$ cd ../hdf5/
+[tomancak@madmax hdf5]$ ls
+create_export_jobs  hdf5-0.job  hdf5-10.job  hdf5-3.job  hdf5-5.job  hdf5-7.job  hdf5-9.job
+export.bsh          hdf5-1.job  hdf5-2.job   hdf5-4.job  hdf5-6.job  hdf5-8.job  submit-jobs
+[tomancak@madmax hdf5]$ more hdf5-1.job 
+#!/bin/bash
+/sw/bin/xvfb-run -a /sw/users/tomancak/packages/fiji_tobi_for_testing/Fiji.app/ImageJ-linux64 -Xmx10g 		-Ddir=/projects/tomancak_lightsheet/Valia/V
+alia/test_tl/ 		-Dxml_filename="dataset.xml" 		-Dresave_angle="All angles" 		-Dresave_channel="All channels" 		-Dr
+esave_illumination="All illuminations" 		-Dresave_timepoint="All Timepoints" 		-Dsubsampling_factors="{ {1,1,1}, {2,2,1}, {4,4,1}, {8,8,1}
+ }" 		-Dhdf5_chunk_sizes="{ {32,32,4}, {32,32,4}, {16,16,16}, {16,16,16} }" 		-Dtimepoints_per_partition=1 		-Dsetups_per_partit
+ion=0 		-Drun_only_job_number=1 			-- --no-splash /projects/tomancak_lightsheet/Valia/Valia/new_pipeline/jobs_master_beta_2.0/
+/hdf5//export.bsh
+[tomancak@madmax hdf5]$ more submit-jobs 
+#!/bin/bash
+
+for file in `ls ${1} | grep ".job$"`
+do
+	bsub -q short -n 8 -R rusage[mem=50000] -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+done
 
 [[Invasion_assay]]
