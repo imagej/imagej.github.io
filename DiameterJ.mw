@@ -101,7 +101,7 @@ Fiber orientation was determined using a well-established, and fantastic, plug-i
 
 ::; In ImageJ go to:
 ::: “Plugins-->DiameterJ-->DiameterJ 0.XXX” to analyze the segmented image.  
-[[File:Statistic summary.PNG|350px|thumb|right|alt=Alt|Caption]]
+[[File:Statistic summary.PNG|350px|thumb|right|alt=Alt|Summarized Output of DiameterJ]]
 ::Choose the directory of the file you want to analyze (right now it’s in batch form so if you only want to analyze one file move it into a folder by itself and select that folder.  I intend to post both a batch and non-batch form of the segmentation and DiameterJ code but haven’t made the non-batch form yet.)
  
 ::DiameterJ will then analyze all images in the directory and will separate its analysis into three folders “Diameter Analysis Images”, “Histograms”, and “Summaries.”  They are pretty self-explanatory. 
@@ -110,7 +110,7 @@ Fiber orientation was determined using a well-established, and fantastic, plug-i
  
 ::Peak fitting is also recommended if you would like to analyze replicate images of a single sample.  To do this we recommend that you copy and paste all histograms from replicate images into one file, sum the frequency at each radius value and then save the resulting file as a .csv.  (Make sure all combined images have been taken at the same magnification or their radius values are scaled appropriately).
 
-:If you want a more accurate analysis, want to combine histograms from multiple images OR you want to determine multiple diameter peaks from a single image or set of images then do the below: [[File:Histogram_Fits.png|500px|thumb|right|alt=Alt|Caption]] 
+:If you want a more accurate analysis, want to combine histograms from multiple images OR you want to determine multiple diameter peaks from a single image or set of images then do the below: [[File:Histogram_Fits.png|500px|thumb|right|alt=Alt|Diameter Histogram fitted with Gaussian curves in Fityk and then exported to Excel]] 
 :#Open the file with “XXXX_histogram.csv” in the histograms folder, using [http://fityk.nieto.pl/ Fityk 0.9.8] [https://github.com/wojdyr/fityk/downloads (free - windows only)] or [http://www.wavemetrics.com/products/igorpro/igorpro.htm Igor Pro] (not free)
 :#For Fityk go to Data-->Load File
 :#Select the file labeled XXXX_Histogram.csv in the “Histograms” directory
