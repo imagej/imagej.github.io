@@ -67,7 +67,7 @@ Fiber orientation was determined using a well-established, and fantastic, plug-i
 === <big>How to Use DiameterJ</big> ===
 ----
 ====<big>Image Segmentation</big>====
-[[File:ImageJ old website.png|500px|thumb|right|alt=Alt|Caption]]
+[[File:ImageJ old website.png|500px|thumb|right|alt=Alt|Montage image produced by Segment SRM or Segment Mix]]
 #Go to:  “Plugins-->DiameterJ-->Segment Mixed” or “Plugins-->DiameterJ-->Segment SRM” to segment images
 #*Each uses a different set of 8 algorithms to analyze and segment your images
 #Choose the directory of the file you want to segment
@@ -79,7 +79,7 @@ Fiber orientation was determined using a well-established, and fantastic, plug-i
 #*The “Best Segmentation” folder contains no images
 #*“Montage Images” have a comparison of the original image to the 8 different segmentation methodologies.  Look at the montage images and find the image with the most accurate representation of your fibers
 #**''Remember, not all fibers need to be included in the segmentation for it to be a “good” segmentation.  The fibers just need to be without significant holes, edge defects, or too densely packed for the program to analyze them. (the program does not analyze intersections of fibers)''
-#**''File names are on the bottom of the images in Red'' [[File:Hotaling_Segmenatation.png|250px|thumb|right|alt=Alt|Caption]]
+#**''File names are on the bottom of the images in Red'' [[File:Hotaling_Segmenatation.png|250px|thumb|right|alt=Alt|Example of segmented images from ideal segmentation to terrible]]
 #*The “Segmented Images" folder has all of the segmented images from the montage images 
 #Copy and paste the best segmentation into the “Best Segmentation” folder. Good or ideal (as shown by the images on the right) segmentation quality will provide the most accurate results. 
 #Visually inspect these images to make sure that the segmentation worked well and that the segmentation represents the image you want to analyze
