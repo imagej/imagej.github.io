@@ -322,7 +322,9 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 :# Q:  When I run an error appears in the log that says "Error there are no fibers in  "BBBB".tif  to analyze".
 :#:*  A: ''The images that are in the folder that you have selected are not binary (black and white) images or the image is completely black.  Please segment your image before trying to analyze it with DiameterJ and then move the segmented image into a separate folder with only black and white images in it.''
 :# Q: No error occurs but when I ask the Segment XXX or DiameterJ to analyze a folder that I have images in, no output is produced by Segment XXX/DiameterJ.
-:#:*  A: ''The images are probably not .tif files.  For now ImageJ only analyzes .tif images.   ''
+:#:*  A: ''The images are probably not .tif files.  For now DiameterJ only analyzes .tif images. Please save your images as .tif files and then analyze with DiameterJ''
+:# Q: 
+:#:*  A: '' ''
 
 == Complementary Tools ==
 DiameterJ works with several plugins of ImageJ/FIJI.  First and foremost [http://bigwww.epfl.ch/demo/orientation/ OrientationJ]. Also, other great tools that we have incorporated are [http://fiji.sc/wiki/index.php/AnalyzeSkeleton AnalyzeSkeleton] function from Ignacio Arganda-Carreras, as well as [http://jvsmicroscope.uta.fi/?q=skeleton_intersections Skeleton Intersections] from Gabriel Landini's morphology plugin.   We'd also like to give a big thank you to the [http://fiji.sc/Statistical_Region_Merging Statistical Region Merging] algorithm which makes our segmentations work a lot better.  Speaking of which, we include a lot of segmentation algorithms that we aren't nearly talented enough to of developed ourselves. In particular those techniques outlined above in the [[DiameterJ#Segmentation |Segmentation]] section of this article and can be found in the links below.
