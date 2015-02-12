@@ -93,7 +93,11 @@ ImageJ has benefitted from many hackathons over the years:
 |[https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/tpietzsch tpietzsch], [https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/bdezonia bdezonia], [https://github.com/hinerm hinerm], [https://github.com/grislis grislis]
 |[[ImgLib2]]
 |- valign="top"
-| style="white-space: nowrap" | 2013 Nov 14 -<br>2013 Nov 27
+| style="white-space: nowrap" | 2013 Sep 9 -<br>2013 Sep 9
+|[http://www.pasteur.fr/en Institut Pasteur]<br>Paris France
+|[https://github.com/tpietzsch Tobias Pietzsch], [https://github.com/tinevez Jean-Yves Tinevez]
+|[[MaMuT]], [[BigDataViewer]]
+|- valign="top"| style="white-space: nowrap" | 2013 Nov 14 -<br>2013 Nov 27
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
 |[https://github.com/dietzc dietzc], [https://github.com/dscho dscho], [https://github.com/ctrueden ctrueden]
 |[[KNIME]]+[[ImageJ]]
