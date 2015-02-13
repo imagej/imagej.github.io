@@ -1,4 +1,4 @@
-One of the most useful functions of ImageJ (and therefore Fiji) is the ''Command Launcher'' (also known as ''Command Finder''). The keyboard shortcut is {{key|Ctrl}}+{{key|L}} (or {{key|Command}}+{{key|L}} on Macs).
+One of the most useful functions of ImageJ is the ''Command Launcher'' (also known as ''Command Finder''). The keyboard shortcut is {{key|Ctrl}}+{{key|L}} (or {{key|Command}}+{{key|L}} on Macs).
 
 Once the window opens, just type part of the menu item you want to launch, and it will show you a list of commands that match that substring:
 
