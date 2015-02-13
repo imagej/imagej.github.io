@@ -330,7 +330,7 @@ DiameterJ<ref name="Hotaling" /> works with several plugins of ImageJ/FIJI.  Fir
 
 We'd also like to say that DiameterJ plays nicely with the output from any other segmentation algorithm that produces a binary image.  FIJI has a ton of [http://fiji.sc/Category:Segmentation Segmentation] algorithms that are great for different types of images.  Additionally, many plugins have been created for use in ImageJ or FIJI: [http://ij-plugins.sourceforge.net/plugins/segmentation/ IJ Plugins] [http://fiji.sc/wiki/index.php/Auto_Threshold Auto-Threshold] and [http://fiji.sc/wiki/index.php/Auto_Local_Threshold Auto Local Threshold].  If our defaults don't work then try any/all of these.  
 
-DiameterJ can be classified as a piece of nanofiber diameter software and/or microfiber diameter software.  DiameterJ is used as an ImageJ nanofiber diameter or ImageJ microfiber diameter plugin.  DiameterJ is also a nanofiber analysis tool or a microfiber analysis tool.  
+DiameterJ can be classified as a piece of free nanofiber diameter software and/or microfiber diameter software.  DiameterJ is used as an ImageJ nanofiber diameter plugin or ImageJ microfiber diameter plugin.  DiameterJ is also a nanofiber analysis tool or a microfiber analysis tool.  DiameterJ is an automated nanofiber diameter calculator.  
 
 Finally, we'd like to encourage everyone to do peak fitting of the diameter histograms that DiameterJ produces.  To do this any peak fitting tool can be used. A free resource for Windows is [http://fityk.nieto.pl/ Fityk] however, we don't recommend any software in particular.
 
