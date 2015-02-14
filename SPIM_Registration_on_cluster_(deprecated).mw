@@ -5002,7 +5002,7 @@ The ''hdf5-<number>.job'' bash scripts will be submitted to the cluster with the
 
 for file in `ls ${1} | grep ".job$"`
 do
-	bsub -q short -n 8 -R rusage[mem=50000] -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+	bsub -q short -n 1 -R rusage[mem=10000] -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
 done
 </source>
 
