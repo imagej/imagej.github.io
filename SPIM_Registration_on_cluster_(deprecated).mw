@@ -5302,4 +5302,68 @@ The result of the registration are 10 XML files, one for each timepoint, in the 
  dataset.job_8.xml
  dataset.job_9.xml
 
+== Merge XMLs ==
+
+The per timepoint XMLs need to be merged into a single output XML. This can be done at any point of the cluster run, i.e. not all XMLs need to exist to perform the merge and the merge can be performed multiple times. It however makes sense to wait until all per-timepoint XMLs are created. 
+
+The merge step has a single specific parameter in the ''master'''
+
+<source lang=bash>
+merge_xml=${job_directory}"define_xml/merge_xml.bsh"                    # script
+</source>
+
+''create-merge-jobs'' bash script 
+
+<source lang=bash>
+#!/bin/bash
+source /projects/tomancak_lightsheet/Valia/Valia/new_pipeline/master
+ 
+job="$jobs_xml/merge.job"
+echo $job
+echo "#!/bin/bash" > "$job"
+echo "$XVFB_RUN -a $Fiji \
+	-Dxml_path=$dir \
+	-Dxml_filename=$xml_filename \
+		-- --no-splash $merge_xml" >> "$job"
+chmod a+x "$job"
+</source>
+
+creates ''merge.job'' that will execute ''merge_xml.bsh'' on the cluster node using Fiji
+
+<source lang=java>
+import ij.IJ;
+import ij.ImagePlus;
+import java.lang.Runtime;
+import java.io.File;
+import java.io.FilenameFilter;
+ 
+runtime = Runtime.getRuntime();
+System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
+
+xml_path = System.getProperty( "xml_path" );
+xml_filename = System.getProperty( "xml_filename" );
+
+System.out.println( "directory=" + xml_path );
+
+IJ.run("Merge Cluster Jobs", 
+	"directory=" + xml_path + " " + 	
+	"filename_contains=job_ " + 
+	"filename_also_contains=.xml " +
+	"display " +
+//	"delete_xml's " + 
+	"merged_xml=registered_" + xml_filename);
+ 
+/* shutdown */
+runtime.exit(0);
+</source>
+
+''merge.job'' should be executed on the cluster in interactive mode (see [[SPIM_Registration_on_cluster#Define_XML]]).
+
+The result of the merge is ''registration_dataset,xml''. This is the final product of the registration pipeline. The results of registration can be viewed using [[BigDataViewer]] 
+
+Tips and tricks
+
+* the per-timepoint XML files can be deleted after the merge.
+* regardless of whether or not the per-timepoint files are deleted, new per-timepoint XMLs can be added by re-running the merge.job
+
 [[Invasion_assay]]
