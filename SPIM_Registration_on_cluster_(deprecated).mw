@@ -5040,5 +5040,266 @@ cp hdf5_dataset.xml dataset.xml
 
 Like this we have a back-up of the two intermediate state XMLs and a ''dataset.xml'' to use as input for registration.
 
+The parts of ''master'' file relevant for multiview registration look as follow:
+
+<source lang=bash>
+#-------------------------------------------------------------------------------
+#                          Multi-view registration
+#
+# Specify the method for Detection of beads:
+#     Difference of mean: Comment out Difference of Gaussian in registration.bsh
+#     Difference of Gaussian: Comment out Differnce of Mean in registration.bsh
+#-------------------------------------------------------------------------------
+
+process_timepoint="\"Single Timepoint (Select from List)\""             # or
+process_channel="\"All channels\""                                      # or
+process_illumination="\"All illuminations\""            # or
+process_angle="\"All angles\""                                          # or
+
+type_of_detection="\"Difference-of-Mean (Integral image based)\"" # Difference
+radius1="2"                                                       # of Mean
+radius2="3"
+threshold="0.005"
+
+# type_of_detection="\"Difference-of-Gaussian\""                  # Difference
+# initial_sigma="1.8000"                                          # of Gaussian
+# threshold_gaussian="0.0080"
+</source>
+
+and
+
+<source lang=bash>
+#-------------------------------------------------------------------------------
+# Multi-view Registration
+#-------------------------------------------------------------------------------
+
+jobs_registration=${job_directory}"/registration/"              # directory
+registration=${jobs_registration}"/registration.bsh"            # script
+channel_pattern_beads=${pattern_switch}                         # Pattern
+type_of_registration="Single-channel"                   # registration parameters
+label_interest_points="beads"
+subpixel_localization="\"3-dimensional quadratic fit\""
+transformation_model="Affine"
+imglib_container="\"Array container (images smaller ~2048x2048x450 px)\""
+registration_algorithm="\"Fast 3d geometric hashing (rotation invariant)\""
+type_of_registration="\"Register timepoints individually\""
+interest_points_channel_0="beads"
+fix_tiles="\"Do not fix tiles\""
+map_back_tiles="\"Map back to first tile using rigid model\""
+transformation="Affine"
+model_to_regularize_with="Rigid"
+lambda="0.10"
+allowed_error_for_ransac="5"
+</source>
+
+The parameters are read from ''master'' through the ''create-registration-jobs''
+
+<source lang=bash>
+#!/bin/bash
+source /projects/tomancak_lightsheet/Valia/Valia/new_pipeline/master
+ 
+mkdir -p $jobs_registration
+ 
+for i in $timepoint
+ 
+do
+    job="$jobs_registration/register-$i.job"
+    echo $job
+    echo "#!/bin/bash" > "$job"
+    echo "$XVFB_RUN -a $Fiji -Dxml_path=$dir \
+	-Dxml_filename=$xml_filename \
+	-Dprocess_timepoint=$process_timepoint \
+	-Dprocess_illumination=$process_illumination \
+	-Dprocess_angle=$process_angle \
+	-Dlabel_interest_points=$label_interest_points \
+	-Dtype_of_registration=$type_of_registration \
+        -Dtype_of_detection=$type_of_detection \
+	-Ddir=$dir \
+	-Dpattern=$channel_pattern_beads \
+        -Dtimepoint=$i \
+	-Dangles=$angles \
+        -Dsubpixel_localization=$subpixel_localization \
+	-Dxy_resolution=$xy_resolution \
+        -Dz_scaling=$z_scaling \
+	-Dtransformation=$transformation \
+        -Dimglib_container=$imglib_container \
+	-Dradius1=$radius1 -Dradius2=$radius2 \
+        -Dthreshold=$threshold \
+	-Dinitial_sigma=$initial_sigma \
+        -Dthreshold_gaussian=$threshold_gaussian \
+	-Dregistration_algorithm=$registration_algorithm \
+	-Dtype_of_registration=$type_of_registration \
+	-Dinterest_points_channel_0=$interest_points_channel_0 \
+	-Dfix_tiles=$fix_tiles \
+	-Dmap_back_tiles=$map_back_tiles \
+	-Dmodel_to_regularize_with=$model_to_regularize_with \
+	-Dlambda=$lambda \
+	-Dallowed_error_for_ransac=$allowed_error_for_ransac \
+        	-- --no-splash $registration" >> "$job"
+    chmod a+x "$job"
+done
+</source>
+
+which generates ''registration_<number>.job" bash scripts that launches ''registration.bsh'' in Fiji on the cluster
+
+<source lang=java>
+import ij.IJ;
+import ij.ImagePlus;
+import java.lang.Runtime;
+import java.io.File;
+import java.io.FilenameFilter;
+ 
+runtime = Runtime.getRuntime();
+System.out.println(runtime.availableProcessors() + " cores available for multi-threading");
+
+//select xml
+xml_path = System.getProperty( "xml_path" );
+xml_filename = System.getProperty( "xml_filename" );
+timepoint = System.getProperty( "timepoint" );
+
+//parameters concerning what to process
+process_timepoint = System.getProperty( "process_timepoint" );
+//process_channel = System.getProperty( "process_channel" );
+process_illumination = System.getProperty( "process_illumination" );
+process_angle = System.getProperty( "process_angle" ); 
+ 
+type_of_registration = System.getProperty( "type_of_registration" );
+type_of_detection = System.getProperty( "type_of_detection" );
+label_interest_points= System.getProperty( "label_interest_points" );
+ 
+dir = System.getProperty( "dir" );
+pattern = System.getProperty( "pattern" );
+angles = System.getProperty( "angles" );
+ 
+bead_brightness = System.getProperty( "bead_brightness" );
+subpixel_localization = System.getProperty( "subpixel_localization" );
+ 
+int xy_resolution = Integer.parseInt(System.getProperty( "xy_resolution" ));
+float z_scaling = Float.parseFloat( System.getProperty( "z_scaling" ) );
+transformation_model = System.getProperty( "transformation_model" );
+imglib_container = System.getProperty( "imglib_container" );
+ 
+//Parameters for difference of mean !!Comment out for Difference of Gaussian!!
+int radius1 = Integer.parseInt( System.getProperty( "radius1" ) );
+int radius2 = Integer.parseInt( System.getProperty( "radius2" ) );
+float threshold = Float.parseFloat( System.getProperty( "threshold" ) );
+ 
+//Parameters for difference of gaussian !!Comment out for Differnence of Mean!!
+//float initial_sigma = Float.parseFloat( System.getProperty( "initial_sigma" ) );
+//float threshold_gaussian = Float.parseFloat( System.getProperty( "threshold_gaussian" ) );
+//registration parameters
+registration_algorithm = System.getProperty( "registration_algorithm" );
+type_of_registration = System.getProperty( "type_of_registration" );
+interest_points_channel_0 = System.getProperty( "interest_points_channel_0" );
+fix_tiles = System.getProperty( "fix_tiles" );
+map_back_tiles = System.getProperty( "map_back_tiles" );
+transformation = System.getProperty( "transformation" );
+model_to_regularize_with = System.getProperty( "model_to_regularize_with" );
+float lambda = Float.parseFloat( System.getProperty( "lambda" ) );
+int allowed_error_for_ransac = Integer.parseInt( System.getProperty( "allowed_error_for_ransac" ) );
+ 
+System.out.println( "xml=" + current_xml );
+System.out.println( "label=" + label_interest_points );
+System.out.println( "timepoints=" + process_timepoint ); 
+System.out.println( "illuminations=" + process_illumination );
+System.out.println( "angles=" + process_angle );
+System.out.println( "type_of_registration=" + type_of_registration );
+System.out.println( "type_of_detection=" + type_of_detection );
+System.out.println( "dir=" + dir );
+System.out.println( "pattern_of_spim=" + pattern );
+System.out.println( "timepoint=" + timepoint );
+System.out.println( "angles=" + angles );
+System.out.println( "bead_brightness=" + bead_brightness );
+System.out.println( "subpixel_localization=" + subpixel_localization );
+System.out.println( "xy_resolution=" + xy_resolution );
+System.out.println( "z_resolution=" + z_scaling );
+System.out.println( "imglib_container=" + imglib_container );
+System.out.println( "radius1=" + radius1 );
+System.out.println( "radius2=" + radius2 );
+System.out.println( "threshold=" + threshold );
+System.out.println( "initial_sigma=" + initial_sigma );
+System.out.println( "threshold_gaussian=" + threshold_gaussian );
+System.out.println( "registration_algorithm=" + registration_algorithm );
+System.out.println( "type_of_registration=" + type_of_registration );
+System.out.println( "interest_points_channel_0=" + interest_points_channel_0 );
+System.out.println( "fix_tiles=" + fix_tiles );
+System.out.println( "map_back_tiles=" + map_back_tiles );
+System.out.println( "transformation=" + transformation );
+System.out.println( "model_to_regularize_with=" + model_to_regularize_with );
+System.out.println( "lambda=" + lambda );
+System.out.println( "allowed_error_for_ransac=" + allowed_error_for_ransac );
+
+//activate cluster processing
+IJ.run("Toggle Cluster Processing", "display_cluster");
+ 
+//interest point detection
+IJ.run("Detect Interest Points for Registration", 
+	"select_xml=" + xml_path + xml_filename + " " +  
+	"unique_id=" + timepoint + " " +
+	"process_angle=[" + process_angle + "] " + 
+	"process_illumination=[" + process_illumination + "] " + 
+	"process_timepoint=[" + process_timepoint + "] " + 
+	"xml_output=[Save every XML with user-provided unique id]" + " " + 
+	"processing_timepoint=[Timepoint " + timepoint + "] " + 
+	"type_of_interest_point_detection=[" + type_of_detection + "] " + 
+	"label_interest_points=" + label_interest_points + " " + 
+	"subpixel_localization=[" + subpixel_localization + "] " + 
+	"interest_point_specification_(channel_0)=[Advanced ...] " +
+	"radius_1=" + radius1 + " " + 
+	"radius_2=" + radius2 + " " + 
+	"threshold=" + threshold + " " +
+	"find_maxima");
+
+//registration based on interest point detection
+IJ.run("Register Dataset based on Interest Points",
+	"select_xml=" + xml_path + "dataset.job_" + timepoint + ".xml " +
+        "process_angle=[" + process_angle + "] " +
+        "process_illumination=[" + process_illumination + "] " +
+        "process_timepoint=[" + process_timepoint + "] " +
+	"xml_output=[Do not process on cluster] " + 
+	"processing_timepoint=[Timepoint " + timepoint + "] " +
+        "registration_algorithm=[" + registration_algorithm + "] " +
+        "type_of_registration=[" + type_of_registration + "] " +
+        "interest_points_channel_0=" + interest_points_channel_0 + "  " +
+        "fix_tiles=[" + fix_tiles + "] " +
+        "map_back_tiles=[" + map_back_tiles + "] " +
+        "transformation=" + transformation + " " +
+        "regularize_model " +
+        "model_to_regularize_with=" + model_to_regularize_with + " " +
+        "lamba=" + lambda + " " +
+        "allowed_error_for_ransac=" + allowed_error_for_ransac);
+ 
+/* shutdown */
+runtime.exit(0);
+</source>
+
+''Note that the registration bash executes 3 macro commands.''
+* Toggle Cluster Processing - activates cluster  processing which makes cluster specific parameters of registration available
+* Detect Interest Points for Registration - detects beads or sample features used for registration
+* Register Dataset based on Interest Points - does the actual registration using the detected interest points
+
+The ''registration_<number>.job'' scripts are submitted to the cluster with ''submit_jobs'' bash
+
+<source lang=bash>
+#!/bin/bash
+ 
+for file in `ls ${1} | grep ".job$"`
+do
+    bsub -q short -n 1 -W 00:15 -R rusage[mem=50000] -R span[hosts=1] -o "out.%J" -e "err.%J" ${1}/$file
+done
+</source>
+
+The result of the registration are 10 XML files, one for each timepoint, in the raw data directory:
+
+ dataset.job_1.xml
+ dataset.job_10.xml
+ dataset.job_2.xml
+ dataset.job_3.xml
+ dataset.job_4.xml
+ dataset.job_5.xml
+ dataset.job_6.xml
+ dataset.job_7.xml
+ dataset.job_8.xml
+ dataset.job_9.xml
 
 [[Invasion_assay]]
