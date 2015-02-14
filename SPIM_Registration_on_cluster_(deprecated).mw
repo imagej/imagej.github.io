@@ -5008,21 +5008,21 @@ done
 
 and generate in the raw data directory a series of ''.h5'' files. Each file contains the raw data for one time-point. At this point without any registration.
 
- dataset.h5
- dataset-00-00.h5
- dataset-01-00.h5
- dataset-02-00.h5
- dataset-03-00.h5
- dataset-04-00.h5
- dataset-05-00.h5
- dataset-06-00.h5
- dataset-07-00.h5
- dataset-08-00.h5
- dataset-09-00.h5
+ hdf5_dataset.h5
+ hdf5_dataset-00-00.h5
+ hdf5_dataset-01-00.h5
+ hdf5_dataset-02-00.h5
+ hdf5_dataset-03-00.h5
+ hdf5_dataset-04-00.h5
+ hdf5_dataset-05-00.h5
+ hdf5_dataset-06-00.h5
+ hdf5_dataset-07-00.h5
+ hdf5_dataset-08-00.h5
+ hdf5_dataset-09-00.h5
 
 and new ''hdf5_dataset.xml''. 
 
-From now on, the data are in the HDF5 container (unregistered) and can be viewed in [[BigDataViewer]]. In the next step we register the data by running the registration pipeline and updating the XML. 
+From now on, the data are in the HDF5 container (unregistered) and can be viewed in [[BigDataViewer]]. In the next step we register the data by running the registration pipeline and updating the XML.
 
 == Multiview registration ==
 
