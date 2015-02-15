@@ -27,6 +27,8 @@ Example: If you want to extract/analyze only particles with a certain Feret's An
 
 How to: Key in minimal and maximal exclusion values connected with a hyphen. You can use integers as well as numbers containing decimal places. "Redirect" redirects the analysis to a grayscale image which enables to analyze skewness, kurtosis as well as the new measure coefficient of variance (cov). The option "Keep borders (correction)" eliminates particles from 2 edges and keeps particles touching the two borders of choice. This corrects the particle count for edge touching particles.
 
+Tipp: use the "Shape Descriptor Maps" macro to figure out possible cut-off value combinations for your analysis which you can then use in the Extended Particle Analyzer.
+
 Shape descriptors which are not available under "Analyze Particles..." in IJ or Fiji so far are:
 
 Extent = [net area of feature] / [bounding rectangle]
@@ -39,9 +41,7 @@ Coefficient of variance (CoV) = [intensity standard deviation] / [intensity mean
 
 Form: plugin (recordable, uses smart recording) 
 
-Status: Maintenance active
-
-'''The Advanced Particle Analyzer is deprecated but still available as macro under the BioVoxxel Toolbox dropdown menu.''' 
+Status: Maintenance active (current version: 2.5.0)
 
 Suggestions are welcome!
 
