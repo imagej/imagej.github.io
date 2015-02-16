@@ -111,7 +111,7 @@ TrackMate was developed to serve as a tool for Life-Science image analysis commu
 * [[Manual tracking with TrackMate]]
 * [[Manual editing of tracks using TrackMate]] shows how to manually curate and edit tracking results.
 * [[Track analysis using TrackMate]]
-* [[TrackMate algorithms|TrackMate algorithms]] details and documents the automated segmentation algorithms, particle-linking algorithms, etc.. currently implemented in TrackMate. 
+* [[TrackMate Algorithms|TrackMate algorithms]] details and documents the automated segmentation algorithms, particle-linking algorithms, etc.. currently implemented in TrackMate. 
 * [[Using TrackMate with MATLAB]] documents the MATLAB functions shipped with Fiji that allows importing data generated with TrackMate into MATLAB.
 * [[TrackMate Performance]] reports various measures of the performance of its components. Performance reports include execution time and memory usage.
 * [[TrackMate Accuracy]] reports various measures of the accuracy of its components. Accuracy reports how well TrackMate can generate scientifically correct results, and compare its output to known ground truth.
