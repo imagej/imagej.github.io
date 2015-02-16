@@ -44,6 +44,14 @@ However, you can reinstall Java 6 on OS X. You must log in to [http://developer.
 
 At any time, you can verify which Javas are installed on your system using {{GitHub|org=ctrueden|repo=ctr-scripts|path=java-info|label=this script}}.
 
+== How do I run ImageJ on Yosemite? ==
+
+There is a known issue where [https://github.com/imagej/imagej-launcher/issues/16 Java 6 is required] on OSX. As Java 6 is no longer shipped with Yosemite this creates problems.
+
+There is a fix currently in testing. You can download [http://jenkins.imagej.net/job/ImageJ-launcher/label=MacOSX/1205/artifact/target/imagej-launcher-3.3.0.jar an updated imagej-launcher], place it in your Fiji.app/jars directory, and delete any other imagej-launcher.jar version in that folder. If this fixes the problem for you, please [https://github.com/imagej/imagej-launcher/issues/16 comment on GitHub] or [[Mailing_lists|send us a mail]] to let us know that it worked.
+
+If the updated imagej-launcher does not work for you, as a temporary workaround you can [http://support.apple.com/kb/DL1572 install Java 6].
+
 = Running =
 
 == How do I launch ImageJ with a different version of Java? ==
