@@ -228,6 +228,27 @@ Please refer to the page ''[[Developing Fiji in Eclipse]]''.
 
 [[Downloading and Building Fiji From Source|Download and build it]]. You need Git for that (if you are on Windows, please use [https://msysgit.github.io/ Git for Windows]).
 
+== How do I install a Fiji plugin into vanilla [[ImageJ 1.x]]? ==
+
+Doing this is not recommended:
+* Fiji plugin authors test their plugins in Fiji, not vanilla [[ImageJ 1.x]].
+* An increasing number of plugins use features of [[ImageJ2]], which are not available in [[ImageJ 1.x]].
+* If you install multiple plugins with complex dependency chains in this manner, you may have dependency [[version]] conflicts. For things to work, you will need to ensure that all the library versions are compatible. The [[Governance | Fiji maintainers]] have already solved this problem for the [[Fiji]] distribution.
+
+So you could save yourself a lot of pain by using Fiji instead.
+
+That said, you can install a Fiji plugin in a vanilla ImageJ 1.x installation, as long as you copy all its dependencies with it. You can do this as follows:
+
+<source lang="bash">
+git clone git://github.com/fiji/Stitching
+cd Stitching
+mvn dependency:copy-dependencies
+</source>
+
+Then copy <code>target/dependency/*.jar</code> into your ImageJ installation.
+
+You will need [[Git]] and [[Maven]] installed for this to work.
+
 = [[3D Viewer]] =
 
 == The 3D Viewer opens a window saying ''An unexpected exception occurred.'' ==
