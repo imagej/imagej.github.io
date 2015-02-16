@@ -5,7 +5,7 @@
 | maintainer             = [[User:JeanYvesTinevez|Jean-Yves Tinevez]]
 | author                 = [[User:JeanYvesTinevez|Jean-Yves Tinevez]], [[User:Pietzsch|Tobias Pietzsch]]
 | source                 = {{GitHub | org=fiji | repo=MaMuT}}
-| status                 = v0.15.0, active
+| status                 = v0.16.0, active
 | released               = 06/01/2015
 | category               = [[:Category:Segmentation|Segmentation]], [[:Category:Tracking|Tracking]], [[:Category:Plugins]]
 }}
