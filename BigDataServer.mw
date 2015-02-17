@@ -79,3 +79,10 @@ Note that the server port needs to be open. The Drosophila timelapse dataset des
  http://tomancak-srv1.mpi-cbg.de:8081
 
 == Connecting to running BigDataServer from Fiji ==
+
+In order to connect to the BigDataServer from Fiji and view the data go to ''Plugins > BigDataViewer > Browse BigDataServer''. You will be presented with the following dialog box
+
+
+into which one should paste the URL including opened port of a BigDataServer (for example http://tomancak-srv1.mpi-cbg.de:8081) and click OK. The following window will pop up:
+
+This server offers a single dataset called Drosophila. By double clicking on it we will launch the BigDataViewer presenting the Drosophila time lapse data.
