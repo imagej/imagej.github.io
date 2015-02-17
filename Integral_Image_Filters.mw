@@ -95,16 +95,35 @@ Let <math>X</math> be the set of pixel values in a rectangular block with all pi
 which expands to
 
 <math>
-\begin{align}
-\text{Var}(x) &= \frac{1}{n}\sum_{i=1}^n\left(x_i^2-2x_i\mu+\mu^2\right) \\
-        &= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \mu^2 \\
-        &= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2 \\
-       &= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{2\mu}{n}\sum_{i=1}^nx_i + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2 \\
-       &= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{2}{n^2}\left(\sum_{i=1}^nx_i\right)^2 + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2 \\
-       &= \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2 \\
-       &= \frac{1}{n}\sum_{i=1}^nx_i^2 - \left(\frac{1}{n}\sum_{i=1}^nx_i\right)^2 \\
-       &= \frac{1}{n}\left(\sum_{i=1}^nx_i^2 - \frac{1}{n}\left(\sum_{i=1}^nx_i\right)^2\right)
-\end{align}
+\text{Var}(x) = \frac{1}{n}\sum_{i=1}^n\left(x_i^2-2x_i\mu+\mu^2\right)
+</math>
+
+<math>
+        = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \mu^2 </math>
+
+<math>
+        = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2
+</math>
+
+<math>
+        = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{2\mu}{n}\sum_{i=1}^nx_i + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2
+</math>
+
+<math>
+        = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{2}{n^2}\left(\sum_{i=1}^nx_i\right)^2 + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2
+</math>
+
+<math>
+
+        = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2
+</math>
+
+<math>
+        = \frac{1}{n}\sum_{i=1}^nx_i^2 - \left(\frac{1}{n}\sum_{i=1}^nx_i\right)^2
+</math>
+
+<math>
+        = \frac{1}{n}\left(\sum_{i=1}^nx_i^2 - \frac{1}{n}\left(\sum_{i=1}^nx_i\right)^2\right)
 </math>
 
 Both sums can be generated from two Integral Images over <math>I(\vec{x})</math> and <math>I(\vec{x})^2</math> respectively.  For a two-dimensional image, both tables can be generated in a single loop with, on average, 1 product and 6 sums for calculation and 5 sums for data access per pixel.  Using those, the variance of an arbitrary rectangular block of pixels can be generated in constant time with 3 products and 9 sums for calculation and 2 products and 6 sums for data access.
