@@ -33,6 +33,16 @@ You should have a sub-menu ''Plugins > BigDataViewer''.
 
 == Usage ==
 To use the BigDataViewer we need some example dataset to browse.
+
+==== Standard microscopy data ====
+
+The BigDataViewer can be used to visualise and navigate any image that can be opened in Fiji. Since Fiji relies of LOCI Bioformats library that means essentially all know microscopy file formats.
+
+We can for example select the ''confocal-series.tif'' sample image from ''File > Open Samples'' and subsequently select ''Plugins > BigDataViewer > OpenCurrentImage'' which will launch the BigDataViewer and make the opened sample image available for navigation by arbitrary re-slicing. 
+
+==== Multi-view SPIM data converted to XML/HDF5 ====
+
+A special purpose of BigDataViewer is to visualise multi-view light sheet microscopy datasets saved as XML/HDF5 format. 
 You can download a small dataset from
 [http://fly.mpi-cbg.de/~pietzsch/bdv-example/ here], comprising two views and three time-points.
 This is an excerpt of a 6 angle 715 time-point sequence of ''drosophila melanogaster'' embryonal development, imaged with a Zeiss Lightsheet Z.1.
@@ -41,6 +51,7 @@ Download both the XML and the HDF5 file and place them somewhere next to each ot
 Alternatively, you can create a dataset by exporting your own data as described below.
 
 === Opening Dataset ===
+ 
 To start BigDataViewer, select ''Plugins > BigDataViewer > Open XML/HDF5'' from the Fiji menu.
 This brings up a file open dialog. Open the XML file of your test dataset.
 
@@ -303,7 +314,6 @@ Virtual stacks will open a bit faster but switching between slices may be less i
 
 Note that the import function is macro-recordable.
 Thus, you can make use of it to batch-process images from BigDataViewer datasets.
-
 
 == Exporting Datasets for the BigDataViewer ==
 
