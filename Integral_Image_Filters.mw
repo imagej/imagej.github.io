@@ -148,32 +148,47 @@ r_{XY} = \frac{\sum_{i=1}^n(x_i-\mu_X)(y_i-\mu_Y)}{\sqrt{\sum_{i=1}^n(x_i-\mu_X)
 that can be transformed yielding a set of independent sums.  For the numerator, that is
 
 <math>
-\begin{align}
-\sum_{i=1}^n(x_i-\mu_X)(y_i-\mu_Y) &= \sum_{i=1}^nx_iy_i-\sum_{i=1}^nx_i\mu_Y-\sum_{i=1}^ny_i\mu_X+\sum_{i=1}^n\mu_X\mu_Y \\
- &= \sum_{i=1}^nx_iy_i-\mu_Y\sum_{i=1}^nx_i-\mu_X\sum_{i=1}^ny_i+n\mu_X\mu_Y \\
- &= \sum_{i=1}^nx_iy_i-\frac{1}{n}\sum_{i=1}^ny_i\sum_{i=1}^nx_i
-\end{align}
+\sum_{i=1}^n(x_i-\mu_X)(y_i-\mu_Y) = \sum_{i=1}^nx_iy_i-\sum_{i=1}^nx_i\mu_Y-\sum_{i=1}^ny_i\mu_X+\sum_{i=1}^n\mu_X\mu_Y
+</math>
+
+<math>
+ = \sum_{i=1}^nx_iy_i-\mu_Y\sum_{i=1}^nx_i-\mu_X\sum_{i=1}^ny_i+n\mu_X\mu_Y
+</math>
+
+<math>
+ = \sum_{i=1}^nx_iy_i-\frac{1}{n}\sum_{i=1}^ny_i\sum_{i=1}^nx_i
 </math>
 
 For the denominator, it is handy to multiply with <math>\frac{n}{n}</math> first
 
 <math>
-\begin{align}
-r_{XY} &= \frac{\sum_{i=1}^nx_iy_i-\frac{1}{n}\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{\sqrt{\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{\sum_{i=1}^n(y_i-\mu_Y)^2}} \\
- &= \frac{n\sum_{i=1}^nx_iy_i-\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{n\sqrt{\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{\sum_{i=1}^n(y_i-\mu_Y)^2}} \\
- &= \frac{n\sum_{i=1}^nx_iy_i-\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{\sqrt{n\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{n\sum_{i=1}^n(y_i-\mu_Y)^2}}
-\end{align}
+r_{XY} = \frac{\sum_{i=1}^nx_iy_i-\frac{1}{n}\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{\sqrt{\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{\sum_{i=1}^n(y_i-\mu_Y)^2}}
+</math>
+
+<math>
+ = \frac{n\sum_{i=1}^nx_iy_i-\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{n\sqrt{\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{\sum_{i=1}^n(y_i-\mu_Y)^2}}
+</math>
+
+<math>
+ = \frac{n\sum_{i=1}^nx_iy_i-\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{\sqrt{n\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{n\sum_{i=1}^n(y_i-\mu_Y)^2}}
 </math>
 
 because
 
 <math>
-\begin{align}
-n\sum_{i=1}^n(x_i-\mu_X)^2 &= n\sum_{i=1}^n(x_i^2-2x_i\mu_X+\mu_X^2) \\
- &= n\sum_{i=1}^nx_i^2 - 2n\mu_X\sum_{i=1}^nx_i + \left(\sum_{i=1}^nx_i\right)^2 \\
- &= n\sum_{i=1}^nx_i^2 - 2\left(\sum_{i=1}^nx_i\right)^2 + \left(\sum_{i=1}^nx_i\right)^2 \\
- &= n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)^2
-\end{align}
+n\sum_{i=1}^n(x_i-\mu_X)^2 = n\sum_{i=1}^n(x_i^2-2x_i\mu_X+\mu_X^2)
+</math>
+
+<math>
+ = n\sum_{i=1}^nx_i^2 - 2n\mu_X\sum_{i=1}^nx_i + \left(\sum_{i=1}^nx_i\right)^2
+</math>
+
+<math>
+ = n\sum_{i=1}^nx_i^2 - 2\left(\sum_{i=1}^nx_i\right)^2 + \left(\sum_{i=1}^nx_i\right)^2
+</math>
+
+<math>
+ = n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)^2
 </math>
 
 yielding
