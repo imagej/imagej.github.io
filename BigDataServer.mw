@@ -1,0 +1,81 @@
+{{Infobox
+| name                  = BigDataServer
+| software              = Fiji
+| author                = [[User:Pietzsch|Tobias Pietzsch]], HongKee Moon, [[User:Tomancak|Pavel Tomancak]]
+| maintainer            = [mailto:pietzsch@mpi-cbg.de Tobias Pietzsch]
+| source                = 
+| latest version        = 1.0.0
+| status                = experimental
+| category              = [[:Category:Visualization|Visualization]], [[:Category:Transform|Transform]]
+}}
+
+__TOC__
+
+== Description ==
+
+The BigDataServer serves XML/HDF5 datasets over HTTP to [[BigDataViewer]] Fiji plugin for visualisation.
+
+The BigDataServer is running on a remote machine which hosts the XML/HDF5 datasets. A client running Fiji connects to the server, chooses the dataset that the server offers and then the data are efficiently delivered to the BigDataViewer.  In this way, it is possible to seamlessly navigate very large datasets that reside in a remote location,
+
+== Installing and running the BigDataServer ==
+
+On a webserver (probably running Linux) create a directory called BigDataServer and copy the [http://tomancak-srv1.mpi-cbg.de/~pietzsch/bigdataserver.jar bigdataserver.jar] to it.
+
+Run the BigDataServer using this command.
+
+ java -Xmx4G -jar bigdataserver.jar PARAMETERS
+
+The -Xmx4G gives the server 4GB of RAM.
+Running it without PARAMETERS will print this help:
+
+ usage: BigDataServer [OPTIONS] [NAME XML] ...
+ 
+ Serves one or more XML/HDF5 datasets for remote access over HTTP.
+ Provide (NAME XML) pairs on the command line or in a dataset file, where
+ NAME is the name under which the dataset should be made accessible and XML
+ is the path to the XML file of the dataset.
+ -d <FILE>        Dataset file: A plain text file specifying one dataset
+                  per line. Each line is formatted as "NAME <TAB> XML".
+ -p <PORT>        Listening port.
+                  (default: 8080)
+ -s <HOSTNAME>    Hostname of the server.
+                  (default: localhost)
+ -t <DIRECTORY>   Directory to store thumbnails. (new temporary directory
+                  by default.)
+
+A typical command to start the server will look like this:
+
+  java -Xmx4G -jar bigdataserver.jar -d datasets.txt
+
+where ''dataset.txt'' lists the arbitrary names and XML paths to the locally accessible XML files and the accompanying HDF5 files.
+
+ drosophila_original_test	/mnt/export/Valia/Valia/test_tl/hdf5_dataset.xml
+ drosophila_registered_test	/mnt/export/Valia/Valia/test_tl/registered_dataset.xml
+
+To start the server in the background run
+
+ ~/bigdataserver$ screen
+ ~/bigdataserver$ java -Xmx4G -jar bigdataserver.jar -d datasets.txt
+ 2015-02-14 14:02:52.696:INFO::main: Logging initialized @421ms
+ 2015-02-14 14:02:52.767:INFO:bs.BigDataServer:main: Dataset added: {drosophila_original_test,  /mnt/export/Valia/Valia/test_tl/hdf5_dataset.xml}
+ 2015-02-14 14:02:52.768:INFO:bs.BigDataServer:main: Dataset added: {drosophila_registered_test,  /mnt/export/Valia/Valia/test_tl/registered_dataset.xml}
+ 2015-02-14 14:02:52.924:INFO:bs.BigDataServer:main: Set connectors: ServerConnector@55cb5fea{HTTP/1.1}{tomancak-srv1:8080}
+ 2015-02-14 14:03:12.245:INFO:bs.BigDataServer:main: Set handler: org.eclipse.jetty.server.handler.HandlerCollection@5af3ad6a
+ 2015-02-14 14:03:12.245:INFO:bs.BigDataServer:main: Server Base URL: http://tomancak-srv1:8080
+ 2015-02-14 14:03:12.245:INFO:bs.BigDataServer:main: BigDataServer starting
+ 2015-02-14 14:03:12.249:INFO:oejs.Server:main: jetty-9.1.z-SNAPSHOT
+ 2015-02-14 14:03:12.294:INFO:oejsh.ContextHandler:main: Started b.s.CellHandler@157061e8{/drosophila_registered_test,null,AVAILABLE}
+ 2015-02-14 14:03:12.295:INFO:oejsh.ContextHandler:main: Started b.s.CellHandler@7fbca967{/drosophila_original_test,null,AVAILABLE}
+ 2015-02-14 14:03:12.295:INFO:oejsh.ContextHandler:main: Started b.s.JsonDatasetListHandler@3b15eab5{/json,null,AVAILABLE}
+ 2015-02-14 14:03:12.315:INFO:oejs.ServerConnector:main: Started ServerConnector@55cb5fea{HTTP/1.1}{tomancak-srv1:8080}
+ 2015-02-14 14:03:12.316:INFO:oejs.Server:main: Started @20046ms
+
+and detach the screen with CONTROL AD.
+
+To add new datasets edit the ''dataset.txt'' and add new XML paths. After that you have to currently restart the server. (reattach the with screen -r, control C and repeat the above).
+
+Note that the server port needs to be open. The datasets described in [[http://fiji.sc/BigDataViewer_Example_Datasets]] are available through this address:
+
+ http://tomancak-srv1:XXXX
+
+== Connecting to running BigDataServer from Fiji ==
