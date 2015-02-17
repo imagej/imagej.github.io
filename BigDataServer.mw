@@ -47,7 +47,7 @@ A typical command to start the server will look like this:
 
   java -Xmx4G -jar bigdataserver.jar -d datasets.txt
 
-where ''dataset.txt'' lists the arbitrary names and XML paths to the locally accessible XML files and the accompanying HDF5 files.
+where ''dataset.txt'' is a TAB delimited list  of names and XML paths to the locally accessible XML files and the accompanying HDF5 files.
 
  drosophila_original_test	/mnt/export/Valia/Valia/test_tl/hdf5_dataset.xml
  drosophila_registered_test	/mnt/export/Valia/Valia/test_tl/registered_dataset.xml
