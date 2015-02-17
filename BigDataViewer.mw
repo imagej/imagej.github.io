@@ -4,7 +4,7 @@
 | author                = [[User:Pietzsch|Tobias Pietzsch]]
 | maintainer            = [mailto:pietzsch@mpi-cbg.de Tobias Pietzsch]
 | source                = {{GitHub|org=bigdataviewer|repo=bigdataviewer_fiji}}
-| latest version        = 1.0.0
+| latest version        = 1.0.9
 | status                = stable
 | category              = [[:Category:Visualization|Visualization]], [[:Category:Transform|Transform]]
 }}
@@ -29,7 +29,6 @@ The XML file contains metadata, for example the registration of sources to the g
 
 == Installation ==
 The BigDataViewer comes with Fiji.
-
 You should have a sub-menu ''Plugins > BigDataViewer''.
 
 == Usage ==
@@ -251,7 +250,7 @@ In the following screenshot, the sources have been colored magenta and green.
 BigDataViewer allows to bookmark the current view.
 You can set bookmarks for interesting views or particular details of your dataset to easily navigate back to those views later.
 
-Each bookmark has an assigned shortcut key, i.e., you can have bookmarks "a", ''A'', ''b'', ..., "1", "2", \etc.
+Each bookmark has an assigned shortcut key, i.e., you can have bookmarks "a", ''A'', ''b'', ..., "1", "2", etc.
 To set a bookmark for the current view, press {{key press|Shift|B}} and then the shortcut you want to use for the bookmark.
 To recall bookmark, press {{key press|B}} and then the shortcut of the bookmark.
 
@@ -317,9 +316,76 @@ Before we discuss how to export your data to this XML/HDF5 format, we provide a 
 The format is explained in detail in our paper [http://arxiv.org/abs/1412.0488 BigDataViewer: Interactive Visualization and Image Processing for Terabyte Data Sets].
 
 === About the BigDataViewer data format ===
-TODO
+Each BigDataViewer dataset contains a set of 3D grayscale image volumes organized by ''timepoints'' and ''setups''.
+In the context of lightsheet microscopy, each channel or acquisition angle or combination of both is a ''setup''.
+E.g., for a multi-view recording with 3 angles and 2 channels there are 6 ''setups''.
+Each ''setup'' represents a visualisation data source in the viewer that provides one image volume per ''timepoint''.
+We refer to each combination of ''setup'' and ''timepoint'' as a ''view''.
+Each ''view'' has one corresponding grayscale image volume.
 
-The format is explained in detail in our paper [http://arxiv.org/abs/1412.0488 BigDataViewer: Interactive Visualization and Image Processing for Terabyte Data Sets].
+A dataset comprises an XML file to store meta-data and one or more HDF5 files to store the raw images.
+Among other things, the XML file contains
+* the path of the HDF5 file(s),
+* a number of ''setups'',
+* a number of ''timepoints'',
+* the registration of each ''view'' into the global coordinate system.
+
+
+Each ''view'' has one corresponding image volume which is stored in the HDF5 file.
+Raw image volumes are stored as multi-resolution pyramids:
+In addition to the original resolution, several progressively down-scaled resolutions (mipmaps) are stored.
+This serves two purposes.
+First, using mipmaps minimizes aliasing effects when rendering a zoomed-out view of the dataset~\cite{Williams:1983it}.
+Second, and more importantly, using mipmaps reduces data access time and thus increases the perceived responsiveness for navigation.
+Low-resolution mipmaps take up less memory and therefore load faster from disk.
+New chunks of data must be loaded when the user browses to a part of the dataset that is not currently cached in memory.
+In this situation, BigDataViewer can rapidly load and render low-resolution data, filling in high resolution detail later as it becomes available.
+This multi-resolution pyramid scheme is illustrated in the following figure.
+
+[[Image:bdvTikz-pyramidblocks.png]]
+
+Each raw image volume is stored in multiple resolutions, the original resolution (left) and successively smaller, downsampled versions (right).
+Each resolution is stored in a chunked representation, split into small 3D blocks.
+
+
+Each level of the multi-resolution pyramid is stored as a ''chunked multi-dimensional array''.
+Multi-dimensional arrays are the standard way of storing image data in HDF5.
+The layout of multi-dimensional arrays on disk can be configured.  We use a ''chunked'' layout which means that the 3D image volume is split into several chunks (smaller 3D blocks).
+These chunks are stored individually in the HDF5 file, which optimizes performance for our use-case where fast random access to individual chunks is required.
+
+Rendering a virtual slice requires data contained within a small subset of chunks.
+Only chunks that touch the slice need to be loaded, as illustrated in the following Figure.
+
+[[Image:bdvTikz-sliceblocks.png]]
+
+When rendering a slice (schematically illustrated by the blue line) the data of only a small subset of blocks is required.
+In the original resolution 5 blocks are required, while only 2, respectively 1 block is required for lower resolutions.
+Therefore, less data needs to be loaded to render a low-resolution slice.
+This allows low-resolution versions to be loaded and rendered rapidly.
+High-resolution detail is filled in when the user stops browsing to view a certain slice for an extended period of time.
+
+Each of these chunks, however, is loaded in full, although only a subset of voxels in each chunk is required to render the actual slice.
+Loading the data in this way, aligned at chunk boundaries, gurantees optimal I/O performance.
+
+All loaded chunks are cached in RAM.
+During interactive navigation, subsequent slices typically intersect with a similar set of chunks because their pose has changed only moderately, i.e.. cached data are re-used.
+Only chunks that are not currently in the cache need to be loaded from disk, as illustrated in the following Figure.
+
+[[Image:bdvTikz-cacheblocks.png]]
+
+For rendering the slice indicated by the red line, only the red blocks need to be loaded.
+The blue blocks are already cached from rendering the blue slice before.
+Combined with the multi-resolution mipmap representation, this chunking and caching scheme allows for fluid interactive browsing of very large datasets.
+
+The parameters of the mipmap and chunking scheme are specific to each dataset and they are fully configurable by the user.
+In particular, when exporting images to the BigDataViewer format, the following parameters are adjustable:
+* the number of mipmap levels,
+* the subsampling factors in each dimension for each mipmap level,
+* the chunk sizes in each dimension for each mipmap level.
+
+BigDataViewer suggests sensible parameter settings, however, for particular applications and data properties a user may tweak these parameters for optimal performance.
+
+
 
 === Exporting from ImageJ Stacks ===
 You can export any dataset to BigDataViewer format by opening it as a stack in Fiji and then selecting ''Plugins > BigDataViewer > Export Current Image as XML/HDF5'' from the Fiji menu.
@@ -418,7 +484,7 @@ In principle, BigDataViewer is able to display a TIFF dataset as is.
 However, for quick navigation this is not the ideal format:
 When navigating to a new timepoint, BigDataViewer needs to load all TIFF files of that timepoint into memory, suffering a delay of tens of seconcds.
 Therefore, it is beneficial to convert the TIFF dataset to HDF5.
-Note, that this can be one at any point of the processing pipeline (i.e., before registration, after registration, after multiview fusion or deconvolution, etc.)
+Note, that this can be one at any point of the processing pipeline (i.e., before registration, after registration, after multiview fusion or deconvolution, etc)
 because the "Multiview reconstruction" plugins can operate on HDF5 datasets as well.
 
 We assume that the user has already created an XML/TIFF dataset, as explained in [[Multiview-Reconstruction]].
