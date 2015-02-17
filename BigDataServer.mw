@@ -74,8 +74,8 @@ and detach the screen with CONTROL AD.
 
 To add new datasets edit the ''dataset.txt'' and add new XML paths. After that you have to currently restart the server. (reattach the with screen -r, control C and repeat the above).
 
-Note that the server port needs to be open. The datasets described in [http://fiji.sc/BigDataViewer_Example_Datasets] are available through this address:
+Note that the server port needs to be open. The Drosophila timelapse dataset described in [http://fiji.sc/BigDataViewer_Example_Datasets#Remote_HDF5] is available through this address:
 
- http://tomancak-srv1:XXXX
+ http://tomancak-srv1.mpi-cbg.de:8081
 
 == Connecting to running BigDataServer from Fiji ==
