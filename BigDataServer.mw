@@ -61,7 +61,7 @@ To start the server in the background run
  2015-02-14 14:02:52.768:INFO:bs.BigDataServer:main: Dataset added: {drosophila_registered_test,  /mnt/export/Valia/Valia/test_tl/registered_dataset.xml}
  2015-02-14 14:02:52.924:INFO:bs.BigDataServer:main: Set connectors: ServerConnector@55cb5fea{HTTP/1.1}{tomancak-srv1:8080}
  2015-02-14 14:03:12.245:INFO:bs.BigDataServer:main: Set handler: org.eclipse.jetty.server.handler.HandlerCollection@5af3ad6a
- 2015-02-14 14:03:12.245:INFO:bs.BigDataServer:main: Server Base URL: http://tomancak-srv1:8080
+ 2015-02-14 14:03:12.245:INFO:bs.BigDataServer:main: Server Base URL: http://tomancak-srv1:XXXX
  2015-02-14 14:03:12.245:INFO:bs.BigDataServer:main: BigDataServer starting
  2015-02-14 14:03:12.249:INFO:oejs.Server:main: jetty-9.1.z-SNAPSHOT
  2015-02-14 14:03:12.294:INFO:oejsh.ContextHandler:main: Started b.s.CellHandler@157061e8{/drosophila_registered_test,null,AVAILABLE}
