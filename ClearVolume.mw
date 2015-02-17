@@ -21,6 +21,13 @@ Depending on your operating system you will now have to ensure to run Fiji/Image
 * A typical launch command would then look similar to this: 
 *: <code>/Applications/Fiji.app/Contents/MacOS/ImageJ-macosx --java-home /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/</code>
 
-: ''MacOS Nerd tip:'' edit the file '''.bash_profile''' located in your home folder and add the following line:
-:: <code>alias fiji='/Applications/Fiji.app/Contents/MacOS/ImageJ-macosx --java-home /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/'</code> 
-:: After restarting the terminal you can start Fiji simply by typing '''<code>fiji</code>'''.
+; Linux
+* If you do not have installed Java, do so by following [https://www.java.com/en/download/help/download_options.xml these instructions]. We recommend you to install the latest version (unless you know what you are doing).
+* Currently Fiji/ImageJ2 has to be run from a terminal window in order to use launch using a user installed Java version. Detailed instructions can be found [http://fiji.sc/Frequently_Asked_Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F in this FAQ].
+* A typical launch command would then look similar to this: 
+*: <code>$HOME/ImageJ.app/ImageJ-linux64 --java-home /usr/lib/jvm/java-7-openjdk-amd64</code>
+
+'''''MacOS/Linux Nerd Tip:''''' Edit the file '''.bash_profile''' (Mac) or '''.bashrc''' (Linux) located in your home folder and add an adequately modified line like:
+: <code>alias fiji='/Applications/Fiji.app/Contents/MacOS/ImageJ-macosx --java-home /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/'</code> (Mac)
+: <code>alias fiji='$HOME/ImageJ.app/ImageJ-linux64 --java-home /usr/lib/jvm/java-7-openjdk-amd64'</code> (Linux)
+: After restarting the terminal you can start Fiji simply by typing '''<code>fiji</code>'''.
