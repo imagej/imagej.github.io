@@ -1,6 +1,13 @@
 <center>[[File:ClearVolumeLogo.png]]</center>
 
-== Installing in Fiji or ImageJ2 ==
+== What is ClearVolume? ==
+ClearVolume is a volume renderer developed at MPI-CBG. Its sources are open and can be cloned from [https://github.com/ClearVolume on GitHub]. We hope to provide our users soon with an adequate publication that can be cited in case you used ClearVolume for your research.
+
+== Screenshots ==
+<center>[[File:ClearVolumeInFiji.png|border|750px|thumb|The main ClearVolume plugin can render volumetric multi-channel data. Channel LUTs, transparency, rendering quality, etc. can easily be set in the plugins user interface.]]</center>
+<center>[[File:ClearVolumeNetworkClientInFiji.png|750px|thumb|The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute.]]</center>
+
+== Installing ClearVolume in Fiji or ImageJ2 ==
 
 ''Note:'' ClearVolume requires Fiji/ImageJ2 to run with a Java Runtime Environment >1.6. This adds additional steps to the installations instructions that will be obsolete as soon as Fiji/ImageJ2 will ship with newer versions of Java.
 
@@ -31,3 +38,17 @@ Depending on your operating system you will now have to ensure to run Fiji/Image
 : <code>alias fiji='/Applications/Fiji.app/Contents/MacOS/ImageJ-macosx --java-home /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/'</code> (Mac)
 : <code>alias fiji='$HOME/ImageJ.app/ImageJ-linux64 --java-home /usr/lib/jvm/java-7-openjdk-amd64'</code> (Linux)
 : After restarting the terminal you can start Fiji simply by typing '''<code>fiji</code>'''.
+
+== Other ways to use ClearVolume ==
+; KNIME
+: The ClearVolume team provides a plugin for KNIME Image Processing. See [http://tech.knime.org/book/clearvolume this page] for details.
+; Stand-alone
+: The original purpose of ClearVolume is to bring live volumetric rendering to modern microscopy. Please check the [https://github.com/clearvolume wiki on GibHub] for detailed informations.
+
+== Contact ==
+Feature requests and bug reports can be posted on GitHub.
+For any further questions please contact any of us
+* Florian Jug (jug@mpi-cbg.de)
+* Loic Royer (royer@mpi-cbg.de)
+* Martin Weigert (weigert@mpi-cbg.de)
+* Ulrik Günther (guenther@mpi-cbg.de)
