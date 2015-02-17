@@ -38,7 +38,7 @@ This is most likely an AWT issue with Apple's version of Java 6. There is even a
 
 == How do I set up Java 6 on OS X? ==
 
-Newer versions of OS X come without Java installed, and only Java 7 is available from [http://java.com/ java.com].
+Newer versions of OS X come without Java installed, and only Java 8 is available from [http://java.com/ java.com].
 
 However, users can reinstall Java 6 on OS X by [http://support.apple.com/kb/DL1572 following these instructions].
 
