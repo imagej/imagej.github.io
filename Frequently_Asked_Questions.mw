@@ -526,6 +526,10 @@ Yes. Java is one of the [http://langpop.com/ most popular programming languages]
 
 As of June 2014, around 19% of Mac OS X systems still run version 10.6 Snow Leopard or older [[http://www.netmarketshare.com/ 1]]. (In December 2013, it was around 25%.) Unfortunately, Apple and the OpenJDK developer community decided to target OS X 10.7 Lion and above for Java 7. For the time being, to avoid abandoning older machines which cannot be upgraded from Snow Leopard, ImageJ continues to target Java 6.
 
+Furthermore, updating the required version to a newer version of Java would necessitate improvements to the ImageJ [[Updater]] such that it could also update the bundled version of Java, which would be a substantial undertaking. Otherwise, most existing installations of ImageJ would stop working, and those users would need to download ImageJ from scratch again.
+
+See [https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;29652c34.1412 this mailing list thread] for further details.
+
 == How are you addressing the fact that with increased modularity comes increased complexity? ==
 
 See the [[Philosophy#Convention_over_configuration|Philosophy]] page!
