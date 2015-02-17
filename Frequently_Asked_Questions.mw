@@ -366,7 +366,7 @@ Here are several ways to do so:
 #* Press {{key|Down}} to select it.
 #* Click the Source button.
 #* This will open the source from the [http://imagej.net/source/ ImageJ web site online source].
-#* Note: this method is very convenient, but only works for core ImageJ sources, not Fiji-specific code.
+#* Note: this method is very convenient, but only works for core [[ImageJ 1.x]] sources (e.g., not [[ImageJ2]] code, not [[Fiji]] code, etc.).
 # '''Using fiji.sc's search:'''
 #* Using the Command Finder, locate your command, taking note of the Class column's value. 
 #** E.g., if we type "make binary" we see that the class is <code>ij.plugin.Thresholder</code>.
