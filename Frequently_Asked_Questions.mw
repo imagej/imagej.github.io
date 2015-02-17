@@ -40,7 +40,9 @@ This is most likely an AWT issue with Apple's version of Java 6. There is even a
 
 Newer versions of OS X come without Java installed, and only Java 7 is available from [http://java.com/ java.com].
 
-However, you can reinstall Java 6 on OS X. You must log in to [http://developer.apple.com/ developer.apple.com] with your Apple ID, search for "java" and download the latest Java 6 SE.
+However, users can reinstall Java 6 on OS X by [http://support.apple.com/kb/DL1572 following these instructions].
+
+Alternately, if you are a developer looking to install the Java 6 Development Kit, you must log in to [https://developer.apple.com/downloads/ Apple Developer downloads] with your Apple ID, search for "java for os x" and download the latest package ("Java for OS X 2013-005 Developer Package" at the time of this writing).
 
 At any time, you can verify which Javas are installed on your system using {{GitHub|org=ctrueden|repo=ctr-scripts|path=java-info|label=this script}}.
 
