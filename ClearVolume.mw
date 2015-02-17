@@ -1,1 +1,26 @@
-Installing ClearVolume in Fiji/ImageJ
+<center>[[File:ClearVolumeLogo.png]]</center>
+
+== Installing in Fiji or ImageJ2 ==
+
+''Note:'' ClearVolume requires Fiji/ImageJ2 to run with a Java Runtime Environment >1.6. This adds additional steps to the installations instructions that will be obsolete as soon as Fiji/ImageJ2 will ship with newer versions of Java.
+
+# Download Fiji or ImageJ2 from [http://imagej.net/Downloads here].
+# Start Fiji/ImageJ2 and launch the updater ('''Help - Update...''')
+# Click on '''Manage update sites''', tick the box next to '''ClearVolume''', and hit '''Close'''.
+# Confirm the update/installation by clicking '''Apply changes''' and restart Fiji/ImageJ as suggested by the updater.
+
+Depending on your operating system you will now have to ensure to run Fiji/ImageJ with a Java Runtime Environment >1.6.
+
+; Windows
+* If you do not have installed Java, do so by following [https://www.java.com/en/download/help/download_options.xml these instructions]. We recommend you to install the latest version (unless you know what you are doing).
+* Open '''Fiji.app''' and delete the containing folder '''java''' from it if it exists. This will prevent that Fiji/ImageJ2 launches the outdated Java version it currently ships with.
+
+; MacOS
+* If you do not have installed Java, do so by following [https://www.java.com/en/download/help/download_options.xml these instructions]. We recommend you to install the latest version (unless you know what you are doing).
+* Currently Fiji/ImageJ2 has to be run from a terminal window in order to use launch using a user installed Java version. Detailed instructions can be found [http://fiji.sc/Frequently_Asked_Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F in this FAQ].
+* A typical launch command would then look similar to this: 
+*: <code>/Applications/Fiji.app/Contents/MacOS/ImageJ-macosx --java-home /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/</code>
+
+: ''MacOS Nerd tip:'' edit the file '''.bash_profile''' located in your home folder and add the following line:
+:: <code>alias fiji='/Applications/Fiji.app/Contents/MacOS/ImageJ-macosx --java-home /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/'</code> 
+:: After restarting the terminal you can start Fiji simply by typing '''<code>fiji</code>'''.
