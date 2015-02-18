@@ -38,7 +38,7 @@ To use the BigDataViewer we need some example dataset to browse.
 
 The BigDataViewer can be used to visualise and navigate any image that can be opened in Fiji. Since Fiji relies of LOCI Bioformats library that means essentially all know microscopy file formats.
 
-We can for example select the ''confocal-series.tif'' sample image from ''File > Open Samples'' and subsequently select ''Plugins > BigDataViewer > OpenCurrentImage'' which will launch the BigDataViewer and make the opened sample image available for navigation by arbitrary re-slicing. 
+We can for example select the ''confocal-series.tif'' sample image from ''File > Open Samples'' and subsequently select ''Plugins > BigDataViewer > Open Current Image'' which will launch the BigDataViewer and make the opened sample image available for navigation by arbitrary re-slicing.
 
 ==== Multi-view SPIM data converted to XML/HDF5 ====
 
