@@ -458,6 +458,12 @@ The [[How to cite Fiji?|authoritative reference]] for Fiji:
 		Counting intersections is really a binary procedure: a shell either intercepts a branch or it doesn't. For this reason the image must be split in two phases: ''arbor'' and ''background''.
 	</dd></dl>
 	<li>
+		<span id="faq:threshold2"></span>'''In version 1, it was not mandatory to adjust threshold values prior to analysis. Why is it now?'''
+	</li>
+	<dl><dd>
+		Image segmentation has always been [[#faq:threshold|required]]. In its early implementations, the program dealt solely with binary images and used the intensity at the center of the analysis to decide how to segregate objects from background. This approach was very restringent: It assumed that the pixels representing the neuron would have the same (constant!) intensity that was not to be found in the remaining background.  As the program became aware of grayscale images, this "feature" had to be removed because a single intensity can no longer be used to infer which parts of the image should be analyzed.
+	</dd></dl>
+	<li>
 		<span id="faq:pre-processing"></span>'''My images do not look that ''great''. How can I treat them prior to analysis?'''
 	</li>
 	<dl><dd>
