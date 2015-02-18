@@ -147,7 +147,7 @@ Fiber orientation was determined using a well-established plug-in for ImageJ cal
 :#*As soon as you stop drawing the measurements disappear so don’t let go of the cursor until you’ve seen the rectangle width.  
 :#Record the number that 'w" equals.  [[File:Pixel_to_Distance_transform_zoom.png|750px|center|alt=Alt|Drawing of box to find width of scale bar in an image]]
 :#Then it’s simply a matter of dividing the length represented by the scale bar by the number of pixels you just recorded.  
-:#Take that conversion factor and multiply all pixel measurements output by DiameterJ and you’ll have the distance in your desired units. (Percent measures do not need :to be multiplied)
+:#Take that conversion factor and multiply all pixel measurements output by DiameterJ and you’ll have the distance in your desired units. (Percent measures do not need to be multiplied)
 :#For the DiameterJ outputs of pore area, percent porosity, and intersection density you will do a different conversion then simply multiplying the length conversion.  
 :#*The pore area is an area and thus you should square the conversion factor calculated above and multiply by the pixel value given in the pore area.  
 :#*The percent porosity is already a percent and thus does not need to be multiplied by anything.  
