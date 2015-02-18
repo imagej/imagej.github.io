@@ -522,6 +522,8 @@ Below that, choose whether you want to compress the image data.
 For the export path, specify the XML file to which you want to export the dataset.
 Press ''OK'' to start the export.
 
+=== Cluster processing of XML/HDF5 SPIM data ===
+
 Converting very large datasets into the HDF5 file format adds a significant overhead. In order to speed up this conversion, we have developed a image processing pipeline that enables parallelisation of the process on a HPC cluster. 
 
 We have documented the steps and software needed to execute the above mentioned Fiji plugin on a cluster computer on this [[SPIM_Registration_on_cluster|'''wiki page''']]. Specifically, the sections [[SPIM_Registration_on_cluster#Define_XML|'''Define XML''']] and [[SPIM_Registration_on_cluster#Re-save_as_HDF5|'''Re-save as HDF5''']] deal with the conversion process.
