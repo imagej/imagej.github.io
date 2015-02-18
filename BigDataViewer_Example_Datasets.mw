@@ -1,6 +1,5 @@
 This page links to example datasets for the [[BigDataViewer]] Fiji plugin.
-Note, that BigDataViewer currently is provided via its own update site which you need to enable in order to use the plugin.
-See the [[BigDataViewer#Installation|installation instructions in the user guide]].
+See the [[BigDataViewer]] user guide.
 
 === Minimal SPIM example ===
 This is an excerpt from a large multi-view time-lapse of ''Drosophila'' embryogenesis acquired on Zeiss Lightsheet Z.1.
@@ -14,11 +13,13 @@ Open the XML file with ''Plugins > BigDataViewer > Open XML/HDF5'' from the Fiji
 (Additionally you may download this settings file [http://fly.mpi-cbg.de/~pietzsch/bdv-examples/HisYFP-SPIM.settings.xml HisYFP-SPIM.settings.xml] which adjusts the brightness of the fused and deconvolved data. Just place it next to the HisYFP-SPIM.xml file.)
 
 === Remote HDF5 ===
-This dataset is served by our [https://github.com/tpietzsch/spimviewer/tree/master/server/src/main/java/bdv/server BigDataServer] (still in beta).
-It comprises 250 timepoints of a large 6-angle time-lapse ‘’Drosophila’’ embryogenesis acquired on Zeiss Lightsheet Z.1.
+This dataset is served by our [[BigDataServer]] (still in beta).
+It comprises 250 timepoints of a large 6-angle time-lapse ''Drosophila'' embryogenesis acquired on Zeiss Lightsheet Z.1.
 The dataset is stored as a 500GB XML/HDF5 file on the server.
 For remote viewing, only an XML file is required.
 Download [http://fly.mpi-cbg.de/~pietzsch/bdv-examples/remote.xml remote.xml] and open it with ''Plugins > BigDataViewer > Open XML/HDF5'' from the Fiji menu.
+
+Alternatively, choose ''Plugins > BigDataViewer > Browse BigDataServer'' from the Fiji menu, browse the server http://tomancak-srv1.mpi-cbg.de:8081 and open the ''Drosophila'' dataset.
 
 === CATMAID ===
 Electron microscopy dataset of 1.5 segments of the ventral nerve cord of a first-instar Drosophila larva (458 sections, each section consisting of ∼ 70 overlapping image tiles, imaged at 4nm/px with 50nm section thickness) is available online through the web-browser based [http://fly.mpi-dcb.de/ CATMAID viewer].
