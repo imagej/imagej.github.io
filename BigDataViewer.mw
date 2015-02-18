@@ -521,3 +521,12 @@ If you want to specify custom mipmap settings, you can do so in the top part of 
 Below that, choose whether you want to compress the image data.
 For the export path, specify the XML file to which you want to export the dataset.
 Press ''OK'' to start the export.
+
+Converting very large datasets into the HDF5 file format adds a significant overhead. In order to speed up this conversion, we have developed a image processing pipeline that enables parallelisation of the process on a HPC cluster. 
+
+We have documented the steps and software needed to execute the above mentioned Fiji plugin on a cluster computer on this [[SPIM_Registration_on_cluster|'''wiki page''']]. Specifically, the sections [[SPIM_Registration_on_cluster#Define_XML|'''Define XML''']] and [[SPIM_Registration_on_cluster#Re-save_as_HDF5|'''Re-save as HDF5''']] deal with the conversion process.
+ 
+First it is necessary to define an XML file that describes the parameters of the dataset (i.e. number of time points, angles, illuminations and channels). Subsequently, we launch one HDF5 re-save job per time point which generates as many .h5 files as there are time points. An additional master .h5 file and the updated XML allow seamless navigation of such dataset with BigDataViewer. 
+Since the dataset will typically reside on a cluster filesystem without a graphical user interface, it is advisable to register it with the [[BigDataServer|'''BigDataServer''']] and examine it remotely. All subsequent processing steps of SPIM registration only modify the XML and thus it is necessary to perform the re-saving only once, usually as the first step of the SPIMage processing pipeline. 
+
+A multi-view dataset consisting of 715 six angle time points (altogether 2.1 Terabytes) converts to HDF5 with compression in 65 minutes using about 200 processors working in parallel.
