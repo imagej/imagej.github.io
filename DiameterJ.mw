@@ -84,7 +84,7 @@ Fiber orientation was determined using a well-established plug-in for ImageJ cal
 #*The “Segmented Images" folder has all of the segmented images from the montage images 
 #Copy and paste the best segmentation into the “Best Segmentation” folder. Good or ideal (as shown by the images on the right) segmentation quality will provide the most accurate results. 
 #Visually inspect these images to make sure that the segmentation worked well and that the segmentation represents the image you want to analyze
-#*If it does not try the other segmentation algorithm
+#*If it does not try the other segmentation algorithms
 #*If none of the 16 algorithms segment your image well you can take the best segmentation and manually fix the errors to accurately reproduce the fibers.  This process is slow and so not recommended if it can be avoided.
 #After copying the best image into the “Best Segmentation” folder delete all unused images/montage images
 #*Approximately 2% of the time none of the algorithms included will provide a good segmentation.  (Based on our experience)
