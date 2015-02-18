@@ -50,6 +50,8 @@ Download both the XML and the HDF5 file and place them somewhere next to each ot
 
 Alternatively, you can create a dataset by exporting your own data as described below.
 
+The XML/HDF5  is a special purpose hierarchical data format that optimises access to any part of large multi view dataset using ImgLib2. Similar hierarchical formats are used for instance by [http://www.bitplane.com/imaris/imaris Imaris] (Bitplane). In order to open Imaris ''.ims'' files select ''Plugins > BigDataViewer > Open Imaris (experimental)''.
+
 === Opening Dataset ===
  
 To start BigDataViewer, select ''Plugins > BigDataViewer > Open XML/HDF5'' from the Fiji menu.
