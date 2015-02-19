@@ -4,7 +4,7 @@
 ClearVolume is a volume renderer developed at MPI-CBG. Its sources are open and can be cloned from [https://github.com/ClearVolume on GitHub]. We hope to provide our users soon with an adequate publication that can be cited in case you used ClearVolume for your research.
 
 == Screenshots ==
-<center>[[File:ClearVolumeInFiji.png|border|750px|thumb|The main ClearVolume plugin can render volumetric multi-channel data. Channel LUTs, transparency, rendering quality, etc. can easily be set in the plugins user interface.]]</center>
+<center>[[File:ClearVolumeInFiji.png|border|750px|thumb|The main ClearVolume plugin can render volumetric multi-channel data. Channel LUTs, transparency, rendering quality, etc. can easily be set in the plugins user interface. We thank Tzumin Lee's group at Janelia for being allowed to use their twin-spot MARCM (Yu et al., Nature Neuroscience, 2009) labeled neurons.]]</center>
 <center>[[File:ClearVolumeNetworkClientInFiji.png|750px|thumb|The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute.]]</center>
 
 == Installing ClearVolume in Fiji or ImageJ2 ==
