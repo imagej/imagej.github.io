@@ -32,17 +32,14 @@ The BigDataViewer comes with Fiji.
 You should have a sub-menu ''Plugins > BigDataViewer''.
 
 == Usage ==
+
+=== Opening a Dataset ===
 To use the BigDataViewer we need some example dataset to browse.
+There are various options:
 
-==== Standard microscopy data ====
-
-The BigDataViewer can be used to visualise and navigate any image that can be opened in Fiji. Since Fiji relies of LOCI Bioformats library that means essentially all know microscopy file formats.
-
-We can for example select the ''confocal-series.tif'' sample image from ''File > Open Samples'' and subsequently select ''Plugins > BigDataViewer > Open Current Image'' which will launch the BigDataViewer and make the opened sample image available for navigation by arbitrary re-slicing.
-
-==== Multi-view SPIM data converted to XML/HDF5 ====
-
-A special purpose of BigDataViewer is to visualise multi-view light sheet microscopy datasets saved as XML/HDF5 format. 
+==== Multi-view data converted to XML/HDF5 ====
+A special purpose of BigDataViewer is to visualise multi-view light sheet microscopy datasets.
+Our custom XML/HDF5  is a special purpose hierarchical data format that optimises access to any part of large-multi view datasets using ImgLib2.
 You can download a small dataset from
 [http://fly.mpi-cbg.de/~pietzsch/bdv-example/ here], comprising two views and three time-points.
 This is an excerpt of a 6 angle 715 time-point sequence of ''drosophila melanogaster'' embryonal development, imaged with a Zeiss Lightsheet Z.1.
@@ -50,15 +47,23 @@ Download both the XML and the HDF5 file and place them somewhere next to each ot
 
 Alternatively, you can create a dataset by exporting your own data as described below.
 
-The XML/HDF5  is a special purpose hierarchical data format that optimises access to any part of large multi view dataset using ImgLib2. Similar hierarchical formats are used for instance by [http://www.bitplane.com/imaris/imaris Imaris] (Bitplane). In order to open Imaris ''.ims'' files select ''Plugins > BigDataViewer > Open Imaris (experimental)''.
-
-=== Opening Dataset ===
- 
 To start BigDataViewer, select ''Plugins > BigDataViewer > Open XML/HDF5'' from the Fiji menu.
 This brings up a file open dialog. Open the XML file of your test dataset.
 
+==== Standard microscopy data ====
+The BigDataViewer can be used to visualise and navigate any image that can be opened in Fiji.
+Since Fiji relies of LOCI Bioformats library that means essentially all know microscopy file formats.
+
+For example, open the sample image ''File > Open Samples > Mitosis (26MB, 5D stack)'' from the Fiji menu.
+Subsequently select ''Plugins > BigDataViewer > Open Current Image'' which will launch the BigDataViewer with the sample image, for navigation by arbitrary re-slicing.
+
+==== Imaris files ====
+[http://www.bitplane.com/imaris/imaris Imaris (Bitplane)] uses a hierarchical data format (similar to BigDataViewer's XML/HDF5 format).
+In order to open Imaris <tt style="font-size: 1.25em;">.ims</tt> files select ''Plugins > BigDataViewer > Open Imaris (experimental)'' from the Fiji menu.
+Please note, that support for the Imaris format is still experimental.
+
 === Basic Navigation ===
-You should see something like this:
+Assuming you downloaded the ''drosophila melanogaster'' example dataset, you should see something like this:
 
 [[Image:bdv-bdv-start.png]]
 
