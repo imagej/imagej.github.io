@@ -7,6 +7,8 @@ ClearVolume is a volume renderer developed at MPI-CBG. Its sources are open and 
 <center>[[File:ClearVolumeInFiji.png|border|750px|thumb|The main ClearVolume plugin can render volumetric multi-channel data. Channel LUTs, transparency, rendering quality, etc. can easily be set in the plugins user interface. We thank Tzumin Lee's group at Janelia for being allowed to use their twin-spot MARCM (Yu et al., Nature Neuroscience, 2009) labeled neurons.]]</center>
 <center>[[File:ClearVolumeNetworkClientInFiji.png|750px|thumb|The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute.]]</center>
 
+See ClearVolume in action: [https://www.youtube.com/watch?v=AjF-35vvwXY https://www.youtube.com/watch?v=AjF-35vvwXY]
+
 == Installing ClearVolume in Fiji or ImageJ2 ==
 
 ''Note:'' ClearVolume requires Fiji/ImageJ2 to run with a Java Runtime Environment >1.6. This adds additional steps to the installations instructions that will be obsolete as soon as Fiji/ImageJ2 will ship with newer versions of Java.
