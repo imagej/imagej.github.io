@@ -78,6 +78,21 @@ Use the <code>--java-home</code> command line option:
 
 One downside of doing this is that ImageJ will launch in a separate process, which has some unintuitive side effects. For example, Ubuntu's Unity user interface will not allow you to "Pin to Launcher" in this case...
 
+==How do I setup a launcher app for OS X for running with a different JVM version?==
+
+Start Automator and select to create an ''Application''. Double-click ''Run Shell Script'' in the Library/Utilities folder and replace the text content — cat — with the following:
+
+ open -a "Fiji.app" --args --java-home \
+  '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/'
+
+Save anywhere you like.
+
+To replace this application's icon, Get Info on your real Fiji, click on the icon on the top left, press Cmd-C, Get Info on your Fiji Automator app, click the icon, and press Cmd-V.
+
+You will then see two icons in the dock, the one of the launcher app and the one of Fiji when it's running.
+
+(based on [http://superuser.com/a/271697 this] guide)
+
 == What is this ''headless'' mode and what do I need it for? ==
 
 The term ''headless'' refers to running ImageJ without a graphical desktop, e.g. on a cluster. See the [[Headless]] page for more information.
