@@ -322,6 +322,7 @@ Virtual stacks will open a bit faster but switching between slices may be less i
 Note that the import function is macro-recordable.
 Thus, you can make use of it to batch-process images from BigDataViewer datasets.
 
+
 == Exporting Datasets for the BigDataViewer ==
 
 BigDataViewer uses a custom file-format that is optimized for fast arbitrary re-slicing at various scales.
@@ -403,7 +404,6 @@ In particular, when exporting images to the BigDataViewer format, the following 
 BigDataViewer suggests sensible parameter settings, however, for particular applications and data properties a user may tweak these parameters for optimal performance.
 
 
-
 === Exporting from ImageJ Stacks ===
 You can export any dataset to BigDataViewer format by opening it as a stack in Fiji and then selecting ''Plugins > BigDataViewer > Export Current Image as XML/HDF5'' from the Fiji menu.
 If the image has multiple channels, each channel will become one ''setup'' in the exported dataset.
@@ -449,7 +449,7 @@ If the checkbox ''"manual mipmap setup"'' is enabled, you can customize the mult
 You can specify the number of resolution levels used, and their respective down-scaling factors, as well as the chunk sizes into which each resolution level is subdivided.
 
 The ''"Subsampling factors"'' field specifies a comma-separated list of resolution levels, formatted as <tt>{level, ..., level}</tt>.
-Each <tt>level</tt> is a list of subsampling factors in ''X, Y, Z'', formatted as <tt>{x-scale, y-scale, z-scale}</tt>.
+Each <tt style="font-size: 1.25em;">level</tt> is a list of subsampling factors in ''X, Y, Z'', formatted as <tt>{x-scale, y-scale, z-scale}</tt>.
 For example consider the specification <tt>{{1,1,1}, {2,2,2}, {4,4,2}}</tt>.
 This will create a resolution pyramid with three levels.
 The first level is the full resolution -- it is scaled by factors ''1'' in all axes.
@@ -463,7 +463,7 @@ Then it is advisable to first downscale only in the higher-resolved axes until a
 
 The ''"Hdf5 chunk sizes"'' specifies the chunk sizes into which data on each resolution level is sub-divided.
 This is again formatted as <tt>{level, ..., level}</tt>, with the same number of levels as supplied for the ''Subsampling factors''.
-Each <tt>level</tt> is a list of sizes in ''X, Y, Z'', formatted as <tt>{x-size, y-size, z-size}</tt>.
+Each <tt style="font-size: 1.25em;">level</tt> is a list of sizes in ''X, Y, Z'', formatted as <tt>{x-size, y-size, z-size}</tt>.
 For example consider the specification <tt>{{16,16,16}, {16,16,16}, {16,16,16}}</tt>.
 This will sub-divide each resolution level into chunks of ''16&times;16&times;16'' pixels.
 
@@ -529,11 +529,19 @@ Press ''OK'' to start the export.
 
 === Cluster processing of XML/HDF5 SPIM data ===
 
-Converting very large datasets into the HDF5 file format adds a significant overhead. In order to speed up this conversion, we have developed a image processing pipeline that enables parallelisation of the process on a HPC cluster. 
+Converting very large datasets into the HDF5 file format adds a significant overhead.
+In order to speed up this conversion, we have developed a image processing pipeline that enables parallelisation of the process on a HPC cluster.
 
-We have documented the steps and software needed to execute the above mentioned Fiji plugin on a cluster computer on this [[SPIM_Registration_on_cluster|'''wiki page''']]. Specifically, the sections [[SPIM_Registration_on_cluster#Define_XML|'''Define XML''']] and [[SPIM_Registration_on_cluster#Re-save_as_HDF5|'''Re-save as HDF5''']] deal with the conversion process.
- 
-First it is necessary to define an XML file that describes the parameters of the dataset (i.e. number of time points, angles, illuminations and channels). Subsequently, we launch one HDF5 re-save job per time point which generates as many .h5 files as there are time points. An additional master .h5 file and the updated XML allow seamless navigation of such dataset with BigDataViewer. 
-Since the dataset will typically reside on a cluster filesystem without a graphical user interface, it is advisable to register it with the [[BigDataServer|'''BigDataServer''']] and examine it remotely. All subsequent processing steps of SPIM registration only modify the XML and thus it is necessary to perform the re-saving only once, usually as the first step of the SPIMage processing pipeline. 
+We have documented the steps and software needed to execute the above mentioned Fiji plugin on a cluster computer on
+this [[SPIM_Registration_on_cluster|'''wiki page''']]. Specifically, the sections
+[[SPIM_Registration_on_cluster#Define_XML|'''Define XML''']] and
+[[SPIM_Registration_on_cluster#Re-save_as_HDF5|'''Re-save as HDF5''']] deal with the conversion process.
+
+First it is necessary to define an XML file that describes the parameters of the dataset (i.e. number of time points, angles, illuminations and channels).
+Subsequently, we launch one HDF5 re-save job per time point which generates as many <tt style="font-size: 1.25em;">.h5</tt> files as there are time points.
+An additional master <tt style="font-size: 1.25em;">.h5</tt> file and the updated XML allow seamless navigation of such dataset with BigDataViewer.
+Since the dataset will typically reside on a cluster filesystem without a graphical user interface, it is advisable to register it with the
+[[BigDataServer|'''BigDataServer''']] and examine it remotely.
+All subsequent processing steps of SPIM registration only modify the XML and thus it is necessary to perform the re-saving only once, usually as the first step of the SPIMage processing pipeline.
 
 A multi-view dataset consisting of 715 six angle time points (altogether 2.1 Terabytes) converts to HDF5 with compression in 65 minutes using about 200 processors working in parallel.
