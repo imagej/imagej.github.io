@@ -2,7 +2,7 @@
 | software               = ImageJ
 | name                   = Copy Pixel Size
 | author                 = J. Anthony Parker
-| source                 = {{GitHub | org=fiji | repo=cookbook | src=Copy_PixelSize.java}}
+| source                 = {{GitHub | org=fiji | repo=cookbook | source=Copy_Pixel_Size.java}}
 | released               = 22 November 2001 
 | status                 = stable
 | category               = [[:Category:Image annotation|Image annotation]]
