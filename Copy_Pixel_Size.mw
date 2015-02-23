@@ -2,8 +2,7 @@
 | software               = ImageJ
 | name                   = Copy Pixel Size
 | author                 = J. Anthony Parker
-| filename               = [http://www.med.harvard.edu/JPNM/ij/plugins/download/Copy_Pixel_Size.class Copy_Pixel_Size.class] 
-| source                 = [http://www.med.harvard.edu/JPNM/ij/plugins/download/Copy_Pixel_Size.java Copy_Pixel_Size.java]
+| source                 = {{GitHub | org=fiji | repo=cookbook | src=Copy_PixelSize.java}}
 | released               = 22 November 2001 
 | status                 = stable
 | category               = [[:Category:Image annotation|Image annotation]]
@@ -15,6 +14,10 @@
 This plugin copies the pixel size from the calibration of one image or stack to a second image or stack.  This allows one to copy the spatial calibration from one stack to another. 
 
 A second dialog allows to enter the scale factors.
+
+== Installation ==
+
+Available as part of the [[Cookbook]] suite of plugins.
 
 [[Category:Plugins]]
 [[Category:Image annotation]]
