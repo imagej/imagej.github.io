@@ -118,6 +118,10 @@ By default the histogram tool comes up in automatic mode, the start and end of t
 Outlier pixels will display as black pixels. If you put the cursor over them in the fitted image the fitted value will show up in the ImageJ toolbar. The ''Hide pixels outside range'' checkbox discards these outliers, they are excluded from all fitted images and histograms, they display as black, and the fitted value becomes Double.NaN. This special value is excluded from any subsequent statistical measurements on the fitted image. They also show up on the grayscale image in blue.
 
 For images that have more than one channel, there will also be a checkbox to ''Display all channels''. When you display all channels the histogram displays values for all channels combined. Lastly the ''Logarithmic'' checkbox shows the histogram graph as logarithmic values. Note that this histogram tool is enhanced to always show at least a one pixel bar graph in non-logarithmic mode if the value is non-zero so that outliers can be seen. Similarly in logarithmic mode it shows a proportionate bar graph if the histogram bin count is one so that bin counts of 1 and 0 can be distinguished.
+=== Macro language support ===
+{{Notice | This section is still under development. The information in this section to refers to a future version of SLIM Plugin.}}
+
+All the operations in SLIM Plugin operation are completely compatible with the popular [http://imagej.net/developer/macro/macros.html ImageJ macro language]. Each of the button, selection, choice of algorithm, binning, noise model, default excitation selection with custom start-end time is completely macro record-able. 
 
 === Batch mode ===
 
