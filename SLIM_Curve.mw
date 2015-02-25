@@ -121,7 +121,130 @@ For images that have more than one channel, there will also be a checkbox to ''D
 === Macro language support ===
 {{Notice | This section is still under development. The information in this section to refers to a future version of SLIM Plugin.}}
 
-All the operations in SLIM Plugin operation are completely compatible with the popular [http://imagej.net/developer/macro/macros.html ImageJ macro language]. Each of the button, selection, choice of algorithm, binning, noise model, default excitation selection with custom start-end time is completely macro record-able. 
+All the operations in SLIM Plugin operation are completely compatible with the popular [http://imagej.net/developer/macro/macros.html ImageJ macro language]. Each of the button, selection, choice of algorithm, binning, noise model, default excitation selection with custom start-end time is completely macro record-able. Below is a typical macro recording for a typical usage where the user sets the algorithm, noise model, changes transient time, loads default excitation, sets the chi2 target, fixes A value for fitting and then starts fitting. 
+[[Image:Screenshot slim final.png|thumb|760px|Example of macro recording SLIM Curve]]
+
+The list of command are as follows
+
+* Start the plugin with a lifetime(*.sdt or *.ics) file:
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.startSLIMCurve", "true", "/Users/msagar/Downloads/", "/4t1_740_60xW_zoom4_256_1mg_1_140218_copy.sdt");
+run("SLIM Curve");
+</source>
+
+* Change the algorithm:
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.setAlgorithmType", "SLIMCurve RLD");
+</source>
+
+* Set number of components of exponents:
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.setFunctionType", "Double Exponential");
+</source>
+
+* Change noise model:
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.setNoiseModel", "Poisson Data");
+</source>
+
+* change which parameters for fitting:
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.setFittedImagesType", "3");
+</source>
+
+* Set transient start time:
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.setTransientStart", "2.0");
+</source>
+
+* Set the binning
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.setBinnning", "3 x 3");
+</source>
+
+* Load default excitation:
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.loadDefaultExcitation", "true");
+</source>
+
+* Load default excitation:
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.loadDefaultExcitation", "true");
+</source>
+
+* Set the chi2 target value:
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.setChi2Target", "1.75");
+</source>
+
+* Fix the A value(All "fix" are recordable):
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.fixA1", "true");
+</source>
+
+
+* Start fitting
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.startFitting", "");
+</source>
+
+
+* Loading an existing excitation file
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.setExcitation", "/Users/msagar/Documents/qwe.irf");
+</source>
+
+
+
+* Set to double exponential(no of component =2)
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.setFunctionType", "Double Exponential");
+</source>
+
+* Fix Z for double exponential fitting 
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.fixZ", "true");
+</source>
+
+
+
+For batch processing, the whole operation can be recorded. Macro record the name of the files needed for exporting the values. A typical batch processing macro code looks like following
+
+* Start fitting
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.batchModeSet", "true");
+call("loci.slim.SLIMProcessor.exportFileSet", "pixel.tsv", "histograms.tsv", "summary.tsv");
+call("loci.slim.SLIMProcessor.startBatchMacro", ""); 
+</source>
+
+When "Export Histogram to Text" or/and "Export Pixels to Text" is selected for exporting the output to a CSV or TSV file that is also recorded in macro. A typical code looks like this 
+
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.exportHistoFileName", "histoGram.csv", ",");
+call("loci.slim.SLIMProcessor.exportPixelFileName", "pixel.csv", ",");
+call("loci.slim.SLIMProcessor.setAnalysisList", "true", "2"); 
+</source>
+
+==== Complete Macro Example ====
+
+Complete macro example with exporting histograms and pixel information to CSV file
+<source lang="java"> 
+call("loci.slim.SLIMProcessor.startSLIMCurve", "true", "/Users/msagar/Downloads/", "/4t1_740_60xW_zoom4_256_1mg_1_140218_copy.sdt");
+run("SLIM Curve");
+call("loci.slim.SLIMProcessor.setFunctionType", "Double Exponential");
+call("loci.slim.SLIMProcessor.loadDefaultExcitation", "true");
+wait(1000);
+call("loci.slim.SLIMProcessor.setWidthPrompt", "1.8359");
+call("loci.slim.SLIMProcessor.setWidthPrompt", "4.8533");
+call("loci.slim.SLIMProcessor.setDelayPrompt", "-0.3791");
+call("loci.slim.SLIMProcessor.setBinnning", "3 x 3");
+call("loci.slim.SLIMProcessor.fixZ", "true");
+wait(1000);
+call("loci.slim.SLIMProcessor.startFitting", "");
+call("loci.slim.SLIMProcessor.exportHistoFileName", "histogram1.csv", ",");
+call("loci.slim.SLIMProcessor.exportPixelFileName", "pixel1.csv", ",");
+call("loci.slim.SLIMProcessor.setAnalysisList", "true", "2");
+</source>
 
 === Batch mode ===
 
