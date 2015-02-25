@@ -3,8 +3,8 @@
 | name                   = Simulate Color Blindness
 | author                 = Johannes Schindelin
 | maintainer             = Johannes Schindelin
-| filename               = Daltonize_.jar
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob;f=src-plugins/Daltonize_/Simulate_Color_Blindness.java;h=e48893544d18442d6e55934af0104ac72ea75ea6;hb=HEAD Git repository]
+| filename               = Dichromacy_.jar
+| source                 = [https://github.com/fiji/Dichromacy/blob/8f1cd16a74b89f4761840e9df9e47209afc8dc7c/src/main/java/Daltonize_.java GitHub]
 | released               = 2009
 | latest version         = 2009
 | status                 = active
