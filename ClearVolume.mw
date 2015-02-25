@@ -45,7 +45,7 @@ Depending on your operating system you will now have to ensure to run Fiji/Image
 ; KNIME
 : The ClearVolume team provides a plugin for KNIME Image Processing. See [http://tech.knime.org/book/clearvolume this page] for details.
 ; Stand-alone
-: The original purpose of ClearVolume is to bring live volumetric rendering to modern microscopy. Please check the [https://github.com/clearvolume wiki on GibHub] for detailed informations.
+: The original purpose of ClearVolume is to bring live volumetric rendering to modern microscopy. Please check the [https://clearvolume.github.io/ClearVolume/ wiki on GibHub] for detailed informations.
 
 == Contact ==
 Feature requests and bug reports can be posted on GitHub.
