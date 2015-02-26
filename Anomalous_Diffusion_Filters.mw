@@ -13,7 +13,7 @@
 
 [[Image:Filters-examples.png|thumb|500px|Filtering examples with the T1w MRI stack available in Fiji examples images.]]
 
-A PlugInFilter for the two different methods for image filtering: Anisotropic Anomalous Diffusion and Isotropic Anomalous Diffusion. Both methods description can be found in the Physics in Medicine and Biology article [http://] and have a discrete solution of generalized diffusion heat equation (also know as a porous media equation). 
+A PlugInFilter for the two different methods for image filtering: Anisotropic Anomalous Diffusion and Isotropic Anomalous Diffusion. Both methods description can be found in the Physics in Medicine and Biology article [http://dx.doi.org/10.1088/0031-9155/60/6/2355 weblink] and have a discrete solution of generalized diffusion heat equation (also know as a porous media equation). 
 
 In summary, the anomalous diffusion filters are generalized methods that are proposed using the new anomalous distribution probability function (PDF) paradigm, also called ''q-Gaussian'' PDF. These new filters are capable to build both classic and anomalous diffusion process, which is related to the anomalous parameter, called q value. When q=1 it returns the classic diffusion methods, both anisotropic diffusion (Perona and Malik method) and Gaussian filter (usual Gaussian filter widely knows in several filtering applications). On the contrary, when q ≠ 1 the anomalous diffusion filters uses the q-Gaussian probability distribution to attenuate the local noise present in each neighborhood around each pixel of the image.
 
