@@ -183,7 +183,7 @@ For a complete step-by-step description on how to compare classifiers for image 
 
 === Macro language compatibility ===
 [[Trainable Weka Segmentation]] is completely compatible with the popular [http://imagej.net/developer/macro/macros.html ImageJ macro language]. Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
-[[Image:AWS-macro-recording.png|thumb|760px|Example of macro recording of the Trainable Weka Segmentation tools.]]
+[[Image:AWS-macro-recording.png|thumb|500px|Example of macro recording of the Trainable Weka Segmentation tools.]]
 
 The complete list of commands is as follows:
 * Start the plugin:
