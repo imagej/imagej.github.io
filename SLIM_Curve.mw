@@ -125,7 +125,6 @@ As loading/saving  excitation file is something user need to do every time, the 
 
 
 === Macro language support ===
-{{Notice | This section is still under development. The information in this section to refers to a future version of SLIM Plugin.}}
 
 All the operations in SLIM Plugin operation are completely compatible with the popular [http://imagej.net/developer/macro/macros.html ImageJ macro language]. Each of the button, selection, choice of algorithm, binning, noise model, default excitation selection with custom start-end time is completely macro record-able. Below is a typical macro recording for a typical usage where the user sets the algorithm, noise model, changes transient time, loads default excitation, sets the chi2 target, fixes A value for fitting and then starts fitting. 
 [[Image:Screenshot slim final.png|thumb|760px|Example of macro recording SLIM Curve]]
