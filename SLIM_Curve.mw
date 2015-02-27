@@ -120,9 +120,8 @@ Outlier pixels will display as black pixels. If you put the cursor over them in 
 For images that have more than one channel, there will also be a checkbox to ''Display all channels''. When you display all channels the histogram displays values for all channels combined. Lastly the ''Logarithmic'' checkbox shows the histogram graph as logarithmic values. Note that this histogram tool is enhanced to always show at least a one pixel bar graph in non-logarithmic mode if the value is non-zero so that outliers can be seen. Similarly in logarithmic mode it shows a proportionate bar graph if the histogram bin count is one so that bin counts of 1 and 0 can be distinguished.
 === Save/Load default excitation ===
 
-As loading/saving  excitation file is something user need to do every time, the process has been simplified. Whatever macro user wants to set as default excitation, user should load the sdt file normally, set transient start/end time and save the file as *irf file. Then from the drop down user should select "Set as default". This way, the excitation with the transient start/end  time is saved as default excitation. Later, when needed to load the default excitation, selecting "Use default excitation" will load the default one.   
-[[Image:Excitation.png|thumb|760px|Example of macro recording SLIM Curve]]
-
+[[Image:Excitation.png|thumb|760px|Controlling the default excitation]]
+As loading/saving  excitation file is something user need to do every time, the process has been simplified. Whatever macro user wants to set as default excitation, user should load the sdt file normally, set transient start/end time and save the file as *irf file. Then from the drop down user should select "Set as default". This way, the excitation with the transient start/end  time is saved as default excitation. Later, when needed to load the default excitation, selecting "Use default excitation" will load the default one.
 
 === Macro language support ===
 
