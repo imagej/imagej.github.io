@@ -1,5 +1,5 @@
 {{Infobox
-| software               = ImageJ
+| software               = Fiji
 | name                   = Simulate Color Blindness
 | author                 = Johannes Schindelin
 | maintainer             = Johannes Schindelin
@@ -27,5 +27,6 @@ Here's how the results look like when applied to the ''Clown'' sample image:
 |style="vertical-align:top" |[[Image:Simulate Color Blindness Results.png|thumb|500px|Simulate Color Blindness: overview of the nine different modes.]]
 |}
 
+[[Category:Fiji]]
 [[Category:Plugins]]
 [[Category:Color processing]]
