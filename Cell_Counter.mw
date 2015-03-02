@@ -41,20 +41,20 @@ Add the following macros to ''ImageJ/macros/StartupMacros.txt'', restart ImageJ,
   macro "Type 8 [8]" {call("CellCounter.setType", "8");}
 
 == History ==
-<u>2001/10/17</u>: first version
-<u>2002/02/01</u>: bug fixes
-<u>2004/06/26</u>: upgraded to work with ImageJ 1.32
-<u>2005/12/27</u>: version 2
-<u>2006/02/02</u>: No longer requires Java 5.0
-<u>2006/02/14</u>: Added "Save Markers" and "Load Markers" buttons
-<u>2006/03/06</u>: Added "Export Image" and "Measure" buttons
-<u>2006/03/12</u>: Add "Show Numbers" checkbox
-<u>2008/02/29</u>: Updated to work with [http://imagej.net/plugins/grid.html Grid] plugin
-<u>2008/08/27</u>: Added "Show All" checkbox; works with hyperstacks and composite color images
-<u>2008/09/02</u>: Added setType() method to support macros
-<u>2008/09/22</u>: Out of focus markers displayed as outlines
-<u>2009/07/01</u>: Fixed "Load Markers" bug
-<u>2010/12/07</u>: Uses less memory
+* <u>2001/10/17</u>: first version
+* <u>2002/02/01</u>: bug fixes
+* <u>2004/06/26</u>: upgraded to work with ImageJ 1.32
+* <u>2005/12/27</u>: version 2
+* <u>2006/02/02</u>: No longer requires Java 5.0
+* <u>2006/02/14</u>: Added "Save Markers" and "Load Markers" buttons
+* <u>2006/03/06</u>: Added "Export Image" and "Measure" buttons
+* <u>2006/03/12</u>: Add "Show Numbers" checkbox
+* <u>2008/02/29</u>: Updated to work with [http://imagej.net/plugins/grid.html Grid] plugin
+* <u>2008/08/27</u>: Added "Show All" checkbox; works with hyperstacks and composite color images
+* <u>2008/09/02</u>: Added setType() method to support macros
+* <u>2008/09/22</u>: Out of focus markers displayed as outlines
+* <u>2009/07/01</u>: Fixed "Load Markers" bug
+* <u>2010/12/07</u>: Uses less memory
 
 [[Category:Plugins]]
 [[Category:Particle analysis]]
