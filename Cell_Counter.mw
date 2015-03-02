@@ -29,6 +29,7 @@ May not work correctly after using '''Load Markers''' to load more than 8 counte
 == Usage ==
 Open the Cell Counter plugin and the image/stack you want to count (if the Cell Counter plugin is already open you don't need to open a new instance). Click initialize, now you are ready to count features. 
 Note that at any time you can add types or remove them. Select the type you want to count, and count by clicking on the feature in the image. A colored number corresponding to the type you are counting will be displayed on the image every time you click, and the corresponding counter is updated.
+
 Add the following macros to ''ImageJ/macros/StartupMacros.txt'', restart ImageJ, and you will be able to change the counter type by pressing "1", "2", "3", etc.
 
   macro "Type 1 [1]" {call("CellCounter.setType", "1");}
