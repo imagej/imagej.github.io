@@ -121,6 +121,9 @@ Often, dynamic library issues are connected to a dependent .dll file missing. Do
 
 When the Java VM hangs, the reason might be a dead-lock. You can often find out what is happening by reading the thread dump (aka "stack trace" - a snapshot of what is being executed in the JVM). You can acquire a thread dump in one of the following ways:
 <ol>
+<li>
+In many cases, pressing {{key|Shift}}+{{key|\}} in ImageJ itself will open a window with a complete stack trace. (If this does not work: try the command line stack trace method below.)
+</li>
 <li style="padding-bottom: 15px">
 If you [[#Command line debugging|launch Fiji from the console]], you can press {{key|Ctrl}}+{{key|\}} in the same console to print the stack trace. On Windows, you may need to press {{key|Ctrl}}+{{key|Pause}} (i.e., {{key|Break}}) instead of {{key|Ctrl}}+{{key|\}}.
 </li>
