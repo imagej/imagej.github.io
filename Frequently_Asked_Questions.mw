@@ -50,7 +50,7 @@ At any time, you can verify which Javas are installed on your system using {{Git
 
 There is a known issue where [https://github.com/imagej/imagej-launcher/issues/16 Java 6 is required] on OSX. As Java 6 is no longer shipped with Yosemite this creates problems.
 
-There is a fix currently in testing. You can replace the <code>Fiji.app/Contents/MacOS/ImageJ-macosx</code> file with [http://jenkins.imagej.net/job/ImageJ-launcher/label=MacOSX/lastSuccessfulBuild/artifact/target/nar/imagej-launcher-3.3.1-SNAPSHOT-x86_64-MacOSX-gcc-executable/bin/x86_64-MacOSX-gcc/imagej-launcher an updated version]. '''Please make sure the updated version is still marked as executable.''' If this fixes the problem for you, please [https://github.com/imagej/imagej-launcher/issues/16 comment on GitHub] or [[Mailing_lists|send us a mail]] to let us know that it worked.
+There is a fix currently in testing. You can replace the <code>Fiji.app/Contents/MacOS/ImageJ-tiger</code> file with [http://jenkins.imagej.net/job/ImageJ-launcher/label=MacOSX/lastSuccessfulBuild/artifact/target/nar/imagej-launcher-3.3.1-SNAPSHOT-x86_64-MacOSX-gcc-executable/bin/x86_64-MacOSX-gcc/imagej-launcher an updated version]. '''Please make sure the updated version is still marked as executable.''' If this fixes the problem for you, please [https://github.com/imagej/imagej-launcher/issues/16 comment on GitHub] or [[Mailing_lists|send us a mail]] to let us know that it worked.
 
 If the updated [[launcher]] does not work for you, as a temporary workaround you can [[Frequently Asked Questions#How_do_I_set_up_Java_6_on_OS_X.3F|install Java 6]].
 
