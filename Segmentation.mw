@@ -33,8 +33,6 @@ Preprocess the image using filters, to make later thresholding more effective. W
 * [http://imagej.net/docs/guide/146-29.html#sub:Subtract-Background... Subtract Background]
 * [http://imagej.net/docs/guide/146-29.html#sub:Gaussian-Blur... Gaussian Blur]
 * [http://imagej.net/docs/guide/146-29.html#sub:Find-Edges Find Edges]
-**[[Segmentation#Flexible workflow | back]]
-
 
 ==Adjusting Threshold==
 
@@ -46,8 +44,6 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 *Specify whether or not the background should be dark or light
 *Adjust the minimum and maximum sliders until you are satisfied with the saturation level of your image
 **[http://imagej.net/docs/guide/146-28.html#sub:Threshold...%5BT%5D More information]
-**[[Segmentation#Flexible workflow | back]]
-
 
 ==Creating Masks==
 
@@ -58,7 +54,6 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 **Select the portion of the image that needs to be adjusted
 **Select [http://imagej.net/docs/guide/146-29.html#sub:Dilate Dilate] to grow the included pixels to further saturate this portion of the image or [http://imagej.net/docs/guide/146-29.html#sub:Erode Erode] to remove saturation
 ***[http://imagej.net/docs/guide/146-29.html#infobox:InvertedLutMask More information].
-***[[Segmentation#Flexible workflow | back]]
 
 ==Selections==
 [[Image: Selection_tree.png|300px|thumb|Selections on the mask]]
@@ -66,14 +61,12 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 *Select Edit>Selection>Create Selection to select the objects within the mask
 *To deselect a portion of the image, select {{key|Shift}}+{{key|click}}
 **[http://imagej.net/docs/guide/146-27.html#sub:Create-Selection More information]
-**[[Segmentation#Flexible workflow | back]]
 
 [[Image: Reverted_tree.png|300px|thumb|Selections on the reverted image]]
 ===Transferring Selections===
 *Before transferring the mask's selections, revert the image to its original form by selecting {{key|Shift}}+{{key|E}}
 *Select first the mask, then the original image, and select {{key|Shift}}+{{key|E}} to transfer the mask's selections
 **[http://imagej.net/docs/guide/146-27.html#infobox:TransferSelections More information]
-**[[Segmentation#Flexible workflow | back]]
 
 ==Analysis==
 Do some numerical analysis on the selected data:
@@ -82,7 +75,6 @@ Do some numerical analysis on the selected data:
 * Use [http://imagej.net/docs/guide/146-30.html#sub:Analyze-Particles... Analyze Particles] to extract desirable objects from your selection and report individual statistics on them.
 * Use the [http://imagej.net/docs/guide/146-30.html#fig:The-ROI-Manager ROI Manager] to '''Add''' the selection and then '''Split''' it (under the '''More''' button), then use '''Multi Measure''' (also under '''More''') to report statistics on the objects.
 * [[Macros_Intro|Write a macro]] to automate this sort of analysis, loop over objects in the ROI manager, measure and manipulate them, etc.
-**[[Segmentation#Flexible workflow | back]]
 
 = See also =
 
