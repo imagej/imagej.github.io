@@ -28,6 +28,45 @@ Previously, the project used [http://trac.imagej.net/ Trac] for issue tracking a
 * [http://trac.imagej.net/report/1 ImageJ Features report] - a high-level list of features slated for each release
 * [http://trac.imagej.net/timeline ImageJ Trac timeline] - a fine-grained list of changes to ImageJ
 
+=== Issue and Milestone philosophy ===
+
+Issues and milestones are public-facing entities, yet their content can be highly technical to serve as a roadmap and implementation guide for developers. As we see it, the various audiences for issues and milestones, and their needs, are as follows:
+
+'''Developers want...'''
+* to know what they can work on
+* a place to discuss implementation details, etc.
+
+'''Users want...'''
+* to know what's already been reported
+* to easily keep track of issues of interest without being overwhelmed
+* to know which bugs were fixed with each release
+
+'''Maintainers...'''
+* to easily see what needs attention
+* to plan development timelines
+* to report completed features
+
+To meet these needs, we use the following conventions with GitHub issues:
+
+'''Milestones'''
+* For short-term active development, use names m1, m2, etc...
+** As these milestones are closed, they can be renamed to something descriptive
+* Future planned breaking changes should go in [http://semver.org/ semver]-named milestones
+* All projects should have an "unscheduled" milestone
+** Any issue in "unscheduled" is something the core developers (if any) can not make time to implement
+
+'''Issues'''
+* Should use the standard GitHub labels for simplicity
+* For repositories with multiple components (e.g. [https://github.com/imagej/imagej-ui-swing imagej-ui-swing], which also contains the updater) add "component:XXXX" labels, in orange, as needed
+* Should have an assignee and milestone ASAP
+** Unless in the "unscheduled" milestone, in which there should be no assignee!
+
+Using these conventions gives rise to a workflow where new issues come in with no assignee and no milestone, and the project maintainers either assign them to a developer who will carry out the work, or put the issue in "unscheduled" with no assignee.
+
+The high-level topics of interest ("bugs" and "features") can easily be filtered by label, while milestones establish the timeline and functional development.
+
+Note that the relationship between milestones and software releases can be one-to-many; e.g. bug fix releases, or even the addition of new method signatures may not necessitate their own milestones. Good milestone structure should read similar to a good [http://chris.beams.io/posts/git-commit/ git] [https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message history]: informative without being overly verbose.
+
 == Patch submissions ==
 
 The preferred mechanism to contribute improvements to [[ImageJ]] and other [[SciJava]] components is using [https://help.github.com/articles/using-pull-requests/ GitHub pull requests]! See the [[Contributing]] page for details.
