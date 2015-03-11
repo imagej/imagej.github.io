@@ -17,14 +17,88 @@ Releases are [[Architecture#Versioning|versioned with Semantic Versioning]].
 
 == Issue tracking ==
 
-ImageJ manages tasks and priorities using [https://github.com/organizations/imagej/dashboard/issues/repos GitHub Issues]:
+SciJava software projects manage tasks and priorities using [https://github.com/organizations/imagej/dashboard/issues/repos GitHub Issues]:
 
-* [https://github.com/imagej/imagej/milestones ImageJ release milestones]
-* [https://github.com/scifio/scifio/milestones SCIFIO release milestones]
+{| class="wikitable nicetable"
+| '''Logo'''
+| '''Project'''
+| '''Issues'''
+| '''Milestones'''
+|-
+| [[File:Scijava-icon.png|48px]]
+| [[SciJava]]
+|
+* [https://github.com/issues?q=is%3Aopen+user%3Ascijava open]
+* [https://github.com/issues?q=is%3Aclosed+user%3Ascijava closed]
+|
+* [https://github.com/scijava/scijava-common/milestones scijava-common]
+|-
+| [[File:Imagej2-icon.png|48px]]
+| [[ImageJ]]
+|
+* [https://github.com/issues?q=is%3Aopen+user%3Aimagej open]
+* [https://github.com/issues?q=is%3Aclosed+user%3Aimagej closed]
+|
+* [https://github.com/imagej/imagej/milestones imagej]
+* [https://github.com/imagej/imagej-omero/milestones imagej-omero]
+* [https://github.com/imagej/imagej-ops/milestones imagej-ops]
+|-
+| [[File:Imglib2-icon.png|48px]]
+| [[ImgLib2]]
+|
+* [https://github.com/issues?q=is%3Aopen+user%3Aimglib open]
+* [https://github.com/issues?q=is%3Aclosed+user%3Aimglib closed]
+|
+* [https://github.com/imglib/imglib2/milestones imglib2]
+|-
+| [[File:Scifio-icon.png|48px]]
+| [[SCIFIO]]
+|
+* [https://github.com/issues?q=is%3Aopen+user%3Ascifio open]
+* [https://github.com/issues?q=is%3Aclosed+user%3Ascifio closed]
+|
+* [https://github.com/scifio/scifio/milestones scifio]
+|-
+| rowspan=3 style="vertical-align: middle" | [[File:Fiji-icon.png|48px]]
+| [[Fiji]]
+|
+* [https://github.com/issues?q=is%3Aopen+user%3Afiji open]
+* [https://github.com/issues?q=is%3Aclosed+user%3Afiji closed]
+|
+* [https://github.com/fiji/fiji/milestones fiji]
+|-
+| [[BigDataViewer]]
+|
+* [https://github.com/issues?q=is%3Aopen+user%3Abigdataviewer open]
+* [https://github.com/issues?q=is%3Aclosed+user%3Abigdataviewer closed]
+| -
+|-
+| [[TrakEM2]]
+|
+* [https://github.com/issues?q=is%3Aopen+user%3Atrakem2 open]
+* [https://github.com/issues?q=is%3Aclosed+user%3Atrakem2 closed]
+| -
+|-
+| [[File:Slim-curve-icon.png|48px]]
+| [[SLIM Curve]]
+|
+* [https://github.com/issues?q=is%3Aopen+user%3Aslim-curve open]
+* [https://github.com/issues?q=is%3Aclosed+user%3Aslim-curve closed]
+|
+* [https://github.com/slim-curve/slim-curve/milestones slim-curve]
+* [https://github.com/slim-curve/slim-plugin/milestones slim-plugin]
+|-
+| [[File:loci-logo.png|48px]]
+| [[LOCI]]
+|
+* [https://github.com/issues?q=is%3Aopen+user%3Auw-loci open]
+* [https://github.com/issues?q=is%3Aclosed+user%3Auw-loci closed]
+| -
+|}
 
-Previously, the project used [http://trac.imagej.net/ Trac] for issue tracking and roadmapping, but all Trac issues are now being migrated to GitHub. See these links:
+Previously, some projects used [http://trac.imagej.net/ Trac] for issue tracking and roadmapping, but all Trac issues are now being migrated to GitHub. See these links:
 
-* [http://trac.imagej.net/roadmap ImageJ Trac roadmap] - early milestones
+* [http://trac.imagej.net/roadmap ImageJ Trac roadmap] - early [[ImageJ2]] milestones
 * [http://trac.imagej.net/report/1 ImageJ Features report] - a high-level list of features slated for each release
 * [http://trac.imagej.net/timeline ImageJ Trac timeline] - a fine-grained list of changes to ImageJ
 
