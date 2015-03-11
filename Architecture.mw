@@ -414,7 +414,7 @@ To deploy JARs, POMs and other artifacts to the ImageJ Maven repository, you wil
 <li>Replace <code>[YOUR MASTER HASH]</code> in <code>settings-security.xml</code> with your master hash.</li>
 <li>Replace <code>[YOUR PASSWORD HASH]</code> in <code>settings.xml</code> with your password hash.</li>
 </ol>
-Once you have followed these steps, it should be possible to deploy snapshot JARs to the Nexus using the <code>mvn deploy</code> command. Note that if you deploy an umbrella project, it is normal to receive an eventual build failure when attempting to deploy the umbrella project itself—all component modules should deploy successfully before that, though.
+Once you have followed these steps, it should be possible to deploy snapshot JARs to the Nexus using the <code>mvn deploy</code> command.
 
 == ImageJ update sites ==
 
