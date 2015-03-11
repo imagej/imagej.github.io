@@ -19,8 +19,8 @@ Releases are [[Architecture#Versioning|versioned with Semantic Versioning]].
 
 ImageJ manages tasks and priorities using [https://github.com/organizations/imagej/dashboard/issues/repos GitHub Issues]:
 
-* [https://github.com/imagej/imagej/issues/milestones ImageJ release milestones]
-* [https://github.com/scifio/scifio/issues/milestones SCIFIO release milestones]
+* [https://github.com/imagej/imagej/milestones ImageJ release milestones]
+* [https://github.com/scifio/scifio/milestones SCIFIO release milestones]
 
 Previously, the project used [http://trac.imagej.net/ Trac] for issue tracking and roadmapping, but all Trac issues are now being migrated to GitHub. See these links:
 
