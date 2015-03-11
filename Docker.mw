@@ -130,6 +130,20 @@ Where the IP address was what we found earlier with <code>ifconfig</code>.
 
 Congratulations! You should now be running Fiji in a Docker image.
 
+= Exposing your data =
+
+Once you have Fiji up and running, you will probably want to open some images.
+
+The best way to share data with Docker is to use volumes, as described in [http://haven.nightlyart.com/fiji-is-now-available-on-docker-hub/ this blog post].
+
+For example, if your data is in <code>/Users/foo/data</code>, launching the Fiji image with:
+
+  docker run -v /Users/foo/data:/fiji/data -e DISPLAY=192.168.15.2:0 fiji/fiji
+
+will create a <code>data</code> subdirectory in the Fiji installation, which you can then open images from as normal.
+
+For more information on using volumes, see the [https://docs.docker.com/userguide/dockervolumes/ Docker user guide].
+
 = Dockerfiles =
 
 Dockerfiles for Fiji can be [https://github.com/fiji/dockerfiles found on GitHub]. See the [https://docs.docker.com/reference/builder/ official documentation] for directions on building images from Dockerfiles.
