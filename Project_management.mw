@@ -153,7 +153,7 @@ To meet these needs, we use the following conventions with GitHub issues:
 '''Milestones'''
 * For short-term active development, use names m1, m2, etc.
 ** As these milestones are closed, they are renamed to match the corresponding release.
-* Future planned breaking changes should go in [http://semver.org/ semver]-named milestones.
+* Future planned breaking changes should go in [[Versioning|SemVer]]-named milestones.
 * All projects should have an "unscheduled" milestone.
 ** Issues in "unscheduled" are things that core developers and maintainers cannot make time to address.
 
