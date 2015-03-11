@@ -32,40 +32,67 @@ Previously, the project used [http://trac.imagej.net/ Trac] for issue tracking a
 
 Issues and milestones are public-facing entities, yet their content can be highly technical to serve as a roadmap and implementation guide for developers. As we see it, the various audiences for issues and milestones, and their needs, are as follows:
 
-'''Developers want...'''
-* to know what they can work on
-* a place to discuss implementation details, etc.
-
-'''Users want...'''
-* to know what's already been reported
-* to easily keep track of issues of interest without being overwhelmed
-* to know which bugs were fixed with each release
-
-'''Maintainers...'''
-* to easily see what needs attention
-* to plan development timelines
-* to report completed features
+{| class="wikitable nicetable"
+| '''Who'''
+| '''Want...'''
+| '''How?'''
+|-
+| rowspan=3 | '''Users'''
+| to know what's already been reported
+| Browse and search [https://github.com/issues?q=is%3Aopen+no%3Amilestone+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci all open SciJava software stack issues].
+|-
+| to keep track of issues of interest without being overwhelmed
+| Subscribe to desired issues using [https://guides.github.com/features/issues/#notifications notifications].
+|-
+| to know which issues were fixed with each release
+| Browse issues at a particular [https://guides.github.com/features/issues/#filtering milestone]<br>(e.g., [https://github.com/issues?q=milestone%3A1.0.0+is%3Aclosed+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci 1.0.0 issues], [https://github.com/issues?q=milestone%3A1.0.0+is%3Aclosed+label%3Abug+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci 1.0.0 bugs], [https://github.com/issues?q=milestone%3A1.0.0+is%3Aclosed+label%3Aenhancement+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci+ 1.0.0 enhancements]).
+|-
+| rowspan=3 | '''Developers'''
+| to track their current tasks
+| Browse issues assigned to a particular developer<br>(e.g., [https://github.com/issues?q=is%3Aopen+assignee%3Actrueden+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci ctrueden], [https://github.com/issues?q=is%3Aopen+assignee%3Ahinerm+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci hinerm]).
+|-
+| to find new tasks to work on
+| Browse the [https://github.com/issues?q=is%3Aopen+label%3A%22help+wanted%22+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci "help wanted" label] or [https://github.com/issues?q=is%3Aopen+no%3Aassignee+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci unassigned issues].
+|-
+| a place to discuss implementation details, etc.
+| Use [https://help.github.com/articles/using-pull-requests/ pull requests].
+|-
+| rowspan=4 | '''Maintainers'''
+| to easily see what needs attention
+| Browse [https://github.com/issues?q=is%3Aopen+no%3Amilestone+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci issues without a milestone].
+|-
+| to ignore inactive issues without closing them
+| Use the [https://github.com/issues?q=is%3Aopen+milestone%3Aunscheduled+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci "unscheduled" milestone].
+|-
+| to plan development timelines
+| Use future [https://guides.github.com/features/issues/#filtering milestones] (e.g., [https://github.com/imagej/imagej/milestones imagej], [https://github.com/scifio/scifio/milestones scifio]).
+|-
+| to report completed features
+| Use completed [https://guides.github.com/features/issues/#filtering milestones] (e.g., [https://github.com/imagej/imagej/milestones?state=closed imagej], [https://github.com/scifio/scifio/milestones?state=closed scifio]).
+|}
 
 To meet these needs, we use the following conventions with GitHub issues:
 
 '''Milestones'''
-* For short-term active development, use names m1, m2, etc...
-** As these milestones are closed, they can be renamed to something descriptive
-* Future planned breaking changes should go in [http://semver.org/ semver]-named milestones
-* All projects should have an "unscheduled" milestone
-** Any issue in "unscheduled" is something the core developers (if any) can not make time to implement
+* For short-term active development, use names m1, m2, etc.
+** As these milestones are closed, they are renamed to match the corresponding release.
+* Future planned breaking changes should go in [http://semver.org/ semver]-named milestones.
+* All projects should have an "unscheduled" milestone.
+** Issues in "unscheduled" are things that core developers and maintainers cannot make time to address.
 
 '''Issues'''
-* Should use the standard GitHub labels for simplicity
-* For repositories with multiple components (e.g. [https://github.com/imagej/imagej-ui-swing imagej-ui-swing], which also contains the updater) add "component:XXXX" labels, in orange, as needed
-* Should have an assignee and milestone ASAP
-** Unless in the "unscheduled" milestone, in which there should be no assignee!
+* Use the standard GitHub labels.
+* For repositories with multiple components (e.g., [https://github.com/imagej/imagej-ui-swing imagej-ui-swing]) add "component:XXXX" labels, in orange, as needed.
+* Every issue must belong to a milestone.
+** Use the "unscheduled" milestone for inactive issues.
+* If you are currently working on an issue, assign it to yourself.
+* All issues in near-term milestones should have an assignee.
 
 Using these conventions gives rise to a workflow where new issues come in with no assignee and no milestone, and the project maintainers either assign them to a developer who will carry out the work, or put the issue in "unscheduled" with no assignee.
 
-The high-level topics of interest ("bugs" and "features") can easily be filtered by label, while milestones establish the timeline and functional development.
+The high-level topics of interest (i.e., [https://github.com/issues?q=is%3Aopen+label%3Abug+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci bugs] and [https://github.com/issues?q=is%3Aopen+label%3Aenhancement+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci enhancements]) can easily be filtered by label, while milestones establish the timeline and functional development.
 
-Note that the relationship between milestones and software releases can be one-to-many; e.g. bug fix releases, or even the addition of new method signatures may not necessitate their own milestones. Good milestone structure should read similar to a good [http://chris.beams.io/posts/git-commit/ git] [https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message history]: informative without being overly verbose.
+Note that the relationship between milestones and software releases can be one-to-many: e.g., bug-fix releases, or even the addition of new features, may not necessitate their own milestones. Good milestone structure should read similarly to a good [http://chris.beams.io/posts/git-commit/ git] [https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message history]: informative without being overly verbose.
 
 == Patch submissions ==
 
