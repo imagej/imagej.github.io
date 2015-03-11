@@ -364,14 +364,11 @@ settings.trackerSettings['MAX_FRAME_GAP']= 3
 # an estimate of each spot's SNR. 
 # The trick here is that the second one requires the first one to be in
 # place. Be aware of this kind of gotchas, and read the docs. 
-img = TMUtils.rawWraps(settings.imp)
 settings.addSpotAnalyzerFactory(SpotIntensityAnalyzerFactory())
 settings.addSpotAnalyzerFactory(SpotContrastAndSNRAnalyzerFactory())
   
 # Add an analyzer for some track features, such as the track mean speed.
 settings.addTrackAnalyzer(TrackSpeedStatisticsAnalyzer())
-  
-  
   
 settings.initialSpotFilterValue = 1
   
@@ -387,7 +384,15 @@ trackmate = TrackMate(model, settings)
 # Execute all
 #------------
   
-trackmate.process()
+    
+ok = trackmate.checkInput()
+if not ok:
+    sys.exit(str(trackmate.getErrorMessage()))
+    
+ok = trackmate.process()
+if not ok:
+    sys.exit(str(trackmate.getErrorMessage()))
+    
      
      
 #----------------
