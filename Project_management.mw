@@ -102,7 +102,7 @@ Previously, some projects used [http://trac.imagej.net/ Trac] for issue tracking
 * [http://trac.imagej.net/report/1 ImageJ Features report] - a high-level list of features slated for each release
 * [http://trac.imagej.net/timeline ImageJ Trac timeline] - a fine-grained list of changes to ImageJ
 
-=== Issue and Milestone philosophy ===
+=== What are issues for? ===
 
 Issues and milestones are public-facing entities, yet their content can be highly technical to serve as a roadmap and implementation guide for developers. As we see it, the various audiences for issues and milestones, and their needs, are as follows:
 
