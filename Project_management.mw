@@ -40,8 +40,10 @@ SciJava software projects manage tasks and priorities using [https://github.com/
 * [https://github.com/issues?q=is%3Aclosed+user%3Aimagej closed]
 |
 * [https://github.com/imagej/imagej/milestones imagej]
+* [https://github.com/imagej/imagej-legacy/milestones imagej-legacy]
 * [https://github.com/imagej/imagej-omero/milestones imagej-omero]
 * [https://github.com/imagej/imagej-ops/milestones imagej-ops]
+* [https://github.com/imagej/imagej-ui-swing/milestones imagej-ui-swing]
 |-
 | [[File:Imglib2-icon.png|48px]]
 | [[ImgLib2]]
