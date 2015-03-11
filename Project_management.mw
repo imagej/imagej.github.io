@@ -95,7 +95,8 @@ SciJava software projects manage tasks and priorities using [https://github.com/
 |
 * [https://github.com/issues?q=is%3Aopen+user%3Auw-loci open]
 * [https://github.com/issues?q=is%3Aclosed+user%3Auw-loci closed]
-| -
+|
+* [https://github.com/uw-loci/visbio/milestones visbio]
 |}
 
 Previously, some projects used [http://trac.imagej.net/ Trac] for issue tracking and roadmapping, but all Trac issues are now being migrated to GitHub. See these links:
