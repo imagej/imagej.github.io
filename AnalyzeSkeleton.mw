@@ -35,6 +35,7 @@ In the main dialog of the plugin the user can select some options to
 **In this case, if a ROI was selected in the input image, another option is enabled: ''Exclude ROI from pruning''. If selected, pruning will not be applied to end-points contained by the ROI. An application of this feature is described in [[Strahler#Root_Detection|Strahler Analysis]].
 * '''Calculate the largest shortest path''' of each skeleton using the [http://en.wikipedia.org/wiki/Floyd-Warshall_algorithm APSP (all pairs shortest path)]. In this case, the shortest path will be displayed in a new window containing the skeleton in white and the shortest path in '''magenta'''. Implemented by Huub Hovens.
 * '''Show detailed info''' about the branches of each skeleton in the image.
+* '''Display labeled skeletons'''. An extra output image will be displayed containing each skeleton labeled with its corresponding skeleton ID.
 
 == Loop detection and pruning ==
 [[Image:Cycle_detection.png|thumb|294px|Example of cycle detection and pruning]]
