@@ -77,6 +77,8 @@ Which should pop up a window with Fiji running.
 
 == On OSX ==
 
+=== boot2docker ===
+
 To get a GUI application running on OSX, we can adapt the techniques discussed in [https://github.com/docker/docker/issues/8710 this docker issue] to run an X11 session, and share it with Docker.
 
 First, you will need to install the following:
@@ -129,6 +131,10 @@ to start listening for X11 forwarding. In the second terminal, you can now use D
 Where the IP address was what we found earlier with <code>ifconfig</code>.
 
 Congratulations! You should now be running Fiji in a Docker image.
+
+=== Kitematic ===
+
+[https://kitematic.com/ Kitematic] is a UI-oriented way to start Docker containers on Macs. It makes it very easy to download and run new images. However we have not yet investigated how to run the Fiji UI with Kitematic.
 
 = Exposing your data =
 
