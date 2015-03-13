@@ -264,7 +264,7 @@ Each SciJava component falls into one of these categories:
 # '''0.M.n''' - A version number starting with 0 indicates that the component is still in initial incubation. The API is still under development, and subject to change. We do try to maintain backwards compatibility, deprecating old classes for at least one release before removing them, but it is not always possible. So code depending on these components may break in the future.
 # '''M.n.p-beta-a''' - Similar to ''0.M.n'' in that the API is still under development. In some circles, the term "beta" can mean "feature complete" but we do not use the term that way. These "beta" releases can be considered less unstable than a ''0.M.n'', but still subject to future changes and additions as needed.
 # '''M.n.p-rc-a''' - A "release candidate" similar to beta, although considered very close to a mature release.
-# '''M.n.p''' - Where ''x'' is at least 1. This indicates a mature release, committed to maintaining backwards compatibility for as long as possible. Even if the component later bumps the major version, we still try to make the minimal breaking changes necessary to introduce any new needed functionality.
+# '''M.n.p''' - Where ''M'' is at least 1. This indicates a mature release, committed to maintaining backwards compatibility for as long as possible. Even if the component later bumps the major version, we still try to make the minimal breaking changes necessary to introduce any new needed functionality.
 
 === API vs. SPI backwards compatibility ===
 
