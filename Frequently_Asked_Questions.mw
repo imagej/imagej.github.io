@@ -321,6 +321,16 @@ Conversely, if you are looking to evaluate MATLAB code from within an ImageJ plu
 
 = Development =
 
+== Why do I get a NoSuchMethodError/NoSuchClassDefFoundError when running a rebuilt plugin? ==
+
+This is most likely caused by version skew, i.e. when an incompatible version of a build dependency is installed. Example: if you build against ''mpicbg-1.0.0.jar'' and run that plugin in a Fiji which has only installed ''mpicbg-0.6.1.jar'', the latter might miss some methods or classes, or even contain incompatible class definitions.
+
+To investigate, you can use <code>mvn dependency:copy-dependencies</code> on the command-line (to copy all build dependencies into ''target/dependency/'') and then use your favorite Zip tool to look for the class name mentioned in the exception. In Eclipse, you can simply use Ctrl+Shift+T (or Command+Shift+T on MacOSX) to look open the respective class; If a recent enough Eclipse is used, and the default settings have not been tampered with, this will start downloading and show the source attached to the dependency.
+
+Once you know which dependency is supposed to contain the class/method, compare the version number of the file(s) in ''ImageJ.app/plugins/'' and ''ImageJ.app/jars/''.
+
+Sometimes, classes are contained in multiple ''.jar'' files. This is a frequent source of problems e.g. when some developers try to be helpful and include dependencies' classes into their plugin ''.jar'' files. This is a problem because those class files are naturally not updated when the dependency is installed as a proper, separate ''.jar'' file and updated. To investigate such issues, use the ''Find Jar For Class'' command in Fiji, to determine which ''.jar'' file serves the class you are looking for.
+
 == What is Maven, and why did you pick it? ==
 
 Maven is a system to build ''.jar'' files from source code, and to manage dependencies (i.e. it is easy to specify which minimal version of, say, ImageJ is required by the source code).
