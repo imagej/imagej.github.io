@@ -298,7 +298,7 @@ That said, the projects do make a best effort to limit such SPI breakages. In ad
 
 === Is SemVer Transitive? ===
 
-The rules of SemVer are easy to follow within the scope of a single project, but what to do with version numbers as dependencies are upgraded, added or removed is not explicitly defined. Thus the SciJava developers have agreed on a standard convention.
+The rules of SemVer are easy to follow within the scope of a single project, but what to do with version numbers as dependencies are upgraded, added or removed is not explicitly defined. Thus the SciJava developers have agreed on a standard convention, based on the type of project.
 
 ==== Standard projects ====
 
