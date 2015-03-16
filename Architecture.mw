@@ -312,7 +312,7 @@ Essentially, dependency convergence is a separate issue to versioning, and is no
 
 ==== Bill of materials projects ====
 
-[[#Bill_of_Materials|Bill of materials]] projects are the exception to the transitive SemVer rule. BOMs provide a list of compatible versions of software. If one or more components managed in a BOM are updated to an increased major or minor version, the BOM itself must take the most significant change in its next release.
+For [[#Bill_of_Materials|bill of materials]] projects, their "public API" is the union of all the managed dependencies. Therefore if one or more components managed in a BOM are updated to an increased major or minor version, the BOM itself must take the most significant change in its next release.
 
 For example, if a BOM is at version 5.4.3, and updates its managed dependencies X from 1.0.3 > 1.1.0 and Y from 2.4.1 > 3.0.0, the next release of the BOM will be 6.0.0.
 
