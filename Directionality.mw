@@ -199,31 +199,33 @@ The parameters are returned by the method <code>public ArrayList<double[]> getFi
 You can retrieve them and display them with the following script:
 
 <source lang="python">
-import fiji.analyze.directionality.Directionality_
- 
+from fiji.analyze.directionality import Directionality_
+from ij import WindowManager
+from ij.measure import ResultsTable
+
 # Instantiate plugin
-dnlty = fiji.analyze.directionality.Directionality_()
- 
+dnlty = Directionality_()
+
 # Set fields and settings
 imp = WindowManager.getCurrentImage()
 dnlty.setImagePlus(imp)
-dnlty.setMethod(fiji.analyze.directionality.Directionality_.AnalysisMethod.FOURIER_COMPONENTS)
+dnlty.setMethod(Directionality_.AnalysisMethod.FOURIER_COMPONENTS)
 dnlty.setBinNumber(30)
 dnlty.setBinStart(30)
 dnlty.setBuildOrientationMapFlag(False) # No orientation map
- 
+
 # Do calculation
 dnlty.computeHistograms()
 dnlty.fitHistograms()
- 
+
 # Display plot frame
 plot_frame = dnlty.plotResults()
 plot_frame.setVisible(True)
- 
+
 # Display fit analysis
 # data_frame = dir.displayFitAnalysis()
-# data_frame.setVisible(True) 
- 
+# data_frame.setVisible(True)
+
 # Display results table
 # table = dir.displayResultsTable()
 # table.show("Directionality histograms")
@@ -233,18 +235,16 @@ fitParams = dnlty. getFitParameters()
 rt = ResultsTable()
 index = 1;
 for param in fitParams:
-	rt.incrementCounter()
-	rt.addLabel(imp.getStack().getShortSliceLabel(index))
-	rt.addValue('a', param[0])
-	rt.addValue('b', param[1])
-	rt.addValue('c', param[2])
-	rt.addValue('d', param[3])
-	index = index + 1;
+    rt.incrementCounter()
+    rt.addLabel(imp.getStack().getShortSliceLabel(index))
+    rt.addValue('a', param[0])
+    rt.addValue('b', param[1])
+    rt.addValue('c', param[2])
+    rt.addValue('d', param[3])
+    index = index + 1;
 
-rt.show('Fit param for y = a + (b-a)*exp(-(x-c)*(x-c)/(2*d*d)')
+rt.show('Fit param for y = a + (b-a)*exp(-(x-c)*(x-c)/(2*d*d)') 
 </source>
-
-
 
 == Uses of this plugin ==
 
