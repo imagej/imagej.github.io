@@ -38,6 +38,8 @@ If the macro resides in ImageJ's macro directory, it is possible to specify the 
 
 === Running scripts in headless mode ===
 
+{{Warning | '''Beware:''' There is currently [https://github.com/imagej/imagej/issues/114 a serious bug] preventing headless [[Jython]] scripts from working on '''Windows''' systems.}}
+
 To run a ''script'' (JRuby, Jython, etc.) simply skip the <code>-batch</code> argument and pass the path to the script only.
 
   ImageJ --headless path-to-script
