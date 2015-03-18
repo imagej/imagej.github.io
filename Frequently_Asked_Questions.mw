@@ -122,7 +122,7 @@ That said, some articles suggest that you can cause Java to give back free memor
 * [http://stackoverflow.com/q/16649601 java.exe process uses more memory and does not free it up]
 * [http://stackoverflow.com/q/12017437 JVM Memory : Why memory on task manager difference with JProbe (or JConsole tool)]
 
-To be clear, Java does reuse memory when you close and reopen images. The behavior described above is not a memory ''leak'' per se. In my lab we leave ImageJ running for days or weeks at a time doing batch processing and it works just fine.
+To be clear, Java does reuse memory when you close and reopen images. The behavior described above is not a memory ''leak'' per se. It should be possible to leave ImageJ running for days or weeks at a time doing batch processing and it have it work just fine.
 
 See also:
 
