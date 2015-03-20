@@ -381,7 +381,7 @@ Thread.currentThread().setContextClassLoader(IJ.getClassLoader());
 
 == How do I see the source code for a command? ==
 
-Fiji is open source; as such, it is possible to inspect the source code for any command, in the interest of transparency and reproducibility.
+Fiji is open source; as such, it is possible to inspect the source code for any command, in the interest of transparency and [[reproducibility]].
 
 Here are several ways to do so:
 
