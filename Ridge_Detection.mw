@@ -3,7 +3,7 @@
 | name                   = Ridge (Line) Detection Plugin
 | author                 = Thorsten Wagner
 | maintainer             = Thorsten Wagner (wagner@biomedical-imaging.de)
-| filename               = Ridge_Detect.jar [https://github.com/jumpfunky/ij-ridgedetection/releases/tag/v1.0.5 [1]]
+| filename               = Ridge_Detect.jar [https://github.com/jumpfunky/ij-ridgedetection/releases/tag/1.0.5 [1]]
 | source                 = Github [https://github.com/jumpfunky/ij-ridgedetection/tree/master/ij-ridge-detection/src/de/biomedical_imaging/ij/steger [2]]
 | latest version         = v1.0.5 (20 March 2015)
 | status                 = active 
