@@ -154,7 +154,7 @@ Fiber orientation was determined using a well-established plug-in for ImageJ cal
 :#*The intersection density is reported as number of intersections per 100px x 100px area.  This is an arbitrary unit and thus to convert it to intersections per unit area divide the "Intersection Density" by 10,000.  Next, multiply it by 1 over the square of the conversion factor above.  That will give you intersections per unit squared.
 
 ====<big>DiameterJ Diameter Locations</big>====  
-[[File:Best_Segmentation2_Overlay.png|thumb|right|200px|alt=Alt|DiameterJ locations output if all the range was defined as all diameters in image]]
+[[File:Best_Segmentation2_Overlay.png|thumb|right|200px|alt=Alt|DiameterJ locations output if the range of fiber diameter was set from 33 to 38 pixels]]
 :If you are curious about where particular radii occur in your image a tool called “DiameterJ Loc” can be used.  
 
 ::'''In ImageJ go to''':
