@@ -36,7 +36,7 @@ While ImageJ strives for [[reproducible]] analysis, there are many reasons resul
 ** Click the status bar and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
 ** If these two values differ between your machines, the versions are not the same.
 ** See also [[Frequently Asked Questions#How can I verify that my ImageJ is really 100% up to date?|How can I verify that my ImageJ is really 100% up to date?]].
-** If the two versions of ImageJ differ and produce different numerical results, it is a bug—please [[Report a Bug|report it]!
+** If the two versions of ImageJ differ and produce different numerical results, it is a bug—please [[Report a Bug|report it]]!
 * Ensure that the ''options'' of ImageJ match between the machines.
 ** A fast way to ensure this is the Edit > Options > Reset... command, which resets everything to its default state.
 ** Alternately, you can check the settings in the following dialog boxes:
@@ -49,7 +49,7 @@ While ImageJ strives for [[reproducible]] analysis, there are many reasons resul
 * If you are running your analysis [[headless]], there might be a bug in the headless support.
 ** Try the analysis ''headless'' on both machines and see if the results match.
 ** Try the analysis ''headless'' vs. through the GUI on a single machine, and see if the results match.
-** If the results differ due to headlessness, it is a bug—please [[Report a Bug|report it]!
+** If the results differ due to headlessness, it is a bug—please [[Report a Bug|report it]]!
 
 == How do I apply an operation or macro to multiple images? ==
 
