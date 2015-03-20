@@ -4,7 +4,7 @@ Today, the [[Contributors|ImageJ team]] is pleased to announce the first officia
 
 If you aren't already familiar with [https://www.docker.com/ Docker], it provides a flexible mechanism for distributing operating system + application state.
 
-For ImageJ, this means a way to guarantee [[Reproducible builds|scientific reproducibility]] across all the variables of software use: not just installed plugins and update sites, but Java versions, system tools, environment variables, and even OS version.
+For ImageJ, this means a way to guarantee scientific [[reproducibility]] across all the variables of software use: not just installed plugins and update sites, but Java versions, system tools, environment variables, and even OS version.
 
 It also should help provide new paradigms for lifeline distributions and minimization of dependencies/prerequisites.
 
