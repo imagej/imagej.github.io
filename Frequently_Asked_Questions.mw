@@ -26,6 +26,27 @@ Further reading:
 * [[Image Intensity Processing]]
 * [[IP Principles]]
 
+= Analysis =
+
+== The same plugin gives different results on different machines! ==
+
+While ImageJ strives for [[reproducible]] analysis, there are many reasons results can differ. Check the following:
+
+* Ensure that the version of [[ImageJ]] is exactly the same on both machines.
+** Click the status bar and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
+** If these two values differ between your machines, the versions are not the same.
+** See also [[Frequently Asked Questions#How can I verify that my ImageJ is really 100% up to date?|How can I verify that my ImageJ is really 100% up to date?]].
+** If the two versions of ImageJ differ and produce different numerical results, it is a bug—please [[Report a Bug|report it]!
+* Ensure that the ''options'' of ImageJ match between the machines.
+** A fast way to ensure this is the Edit > Options > Reset... command, which resets everything to its default state.
+** Alternately, you can check the settings in the following dialog boxes:
+*** All Edit > Options dialog boxes
+** Process > Binary > Options... – a very common culprit of black-vs.-white issues is the "Black background" option.
+** Process > FFT > FFT Options...
+** Image > Overlay > Overlay Options...
+** Analyze > Gels > Gel Analyzer Options...
+** Press L for the [[Command Finder]] and type "options" and double check any other options you think might be relevant.
+
 == How do I apply an operation or macro to multiple images? ==
 
 See the [[Batch Processing]] page.
@@ -381,7 +402,7 @@ Thread.currentThread().setContextClassLoader(IJ.getClassLoader());
 
 == How do I see the source code for a command? ==
 
-Fiji is open source; as such, it is possible to inspect the source code for any command, in the interest of transparency and [[reproducibility]].
+Fiji is open source; as such, it is possible to inspect the source code for any command, in the interest of transparency and reproducibility.
 
 Here are several ways to do so:
 
