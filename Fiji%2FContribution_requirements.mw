@@ -47,6 +47,21 @@ From example, Apache Commons Math v3.x breaks backwards compatibility with Apach
 
 In general, if the rest of the Fiji distribution upgrades to a new major version of a library on which your component depends, your component must also be upgraded to use the new version. Such decisions are typically reached after [[Mailing Lists|public discussion on the fiji-devel list]].
 
+=== Best practice: version constants ===
+
+Many plugins in Fiji contain explicit version constants. Without [[Maven]], in-code constants may make sense as a way to track compatibility. But by Mavenizing for contribution to Fiji, the pom.xml provides a standard mechanism for versioning, allowing migration away from constants in the source code.
+
+Versioning through the pom.xml has several advantages to facilitate [[Reproducibility|reproducible builds]], including:
+
+* Standardized scripts to increment versions appropriately.
+* No risk of accidentally double-releasing a given version.
+* Users and developers see the same version information.
+
+Furthermore, for backwards-compatibility a version can be automatically deduced by:
+
+* A dependency on [https://github.com/scijava/scijava-common scijava-common] and call to [https://github.com/scijava/scijava-common/blob/scijava-common-2.39.0/src/main/java/org/scijava/util/VersionUtils.java#L51 VersionUtils].
+* [https://github.com/fiji/LSM_Reader/commit/a6b26290ad71667efd75d77f3eef95d445d6eaff Manually from the manifest].
+
 == Maven artifacts ==
 
 [[Fiji]] and related [[SciJava]] software uses [[Maven]], an industry standard to declare metadata about a project, to build projects using said metadata, and to ''deploy'' the resulting artifacts to a [[Architecture#Maven_repositories|Maven repository]]. Such repositories are essentially for developers what [[update sites]] are for users.
