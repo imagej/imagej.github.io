@@ -374,7 +374,7 @@ Please refer to our page on [[Maven]].
 
 == How do I upload a new release of an ImageJ plugin? ==
 
-Please refer to our tutorial [[Uploading plugins|how to upload files]].
+Please refer to the [[Uploading plugins]] tutorial.
 
 == How do I upload a new release of a core ImageJ library such as ImgLib? ==
 
