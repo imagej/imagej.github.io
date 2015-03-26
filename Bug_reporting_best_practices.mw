@@ -97,6 +97,8 @@ In cases where it is clear which class or classes are causing problems, you can 
 # Select <code>Manage Update Sites</code> and disable the update site identified in 4.
 # Repeat 1-5 until your problem is resolved.
 
+'''NOTICE:''' During this process it is critical to keep in mind that update sites take precedence in the [[List_of_update_sites|order they are declared]] - update sites lower on the list will overwrite components in sites higher on the list.
+
 === Binary search through your external plugins ===
 
 If it is not clear which update sites or external plugins are causing problems in your installation, a simple technique to help identify the cause of your problem is a [http://en.wikipedia.org/wiki/Binary_search_algorithm binary search]. The general procedure is such:
