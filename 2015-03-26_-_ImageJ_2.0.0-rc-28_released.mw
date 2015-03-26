@@ -6,7 +6,7 @@ Today, the [[Contributors|ImageJ team]] is pleased to announce a new public rele
 
 === Console window ===
 
-The main new feature of this release is a Console window that tracks all output to the [https://en.wikipedia.org/wiki/Standard_streams standard output and error streams]. Previously, all messages to these streams was silently discarded unless the Debug option in Edit > Options > Misc was enabled prior to any issues.
+The main new feature of this release is a Console window that tracks all output to the [https://en.wikipedia.org/wiki/Standard_streams standard output and error streams]. Previously, all messages to these streams were silently discarded unless the Debug option in Edit > Options > Misc was enabled prior to any issues.
 
 Now, all that has changed: the [[SciJava Common]] library gained a new feature to track the standard streams ([https://github.com/scijava/scijava-common/commit/28f717b9684047f9df5e3deee10cbcee81334b97 scijava-common/28f717b9]), and the relevant ImageJ user interfaces added a dedicated Console window which pops up whenever output is sent to the error stream ([https://github.com/scijava/scijava-ui-swing/commit/361bc585d9ae833bb0d4b47c0a6cda7485d40357 scijava-ui-swing/361bc585], [https://github.com/imagej/imagej-legacy/commit/0956b34185c16c9f5ca82504d24e27371e3249ed imagej-legacy/0956b341]).
 
