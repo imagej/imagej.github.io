@@ -12,7 +12,7 @@ Now, all that has changed: the [[SciJava Common]] library gained a new feature t
 
 This change has important consequences for users. Previously, if a script or plugin issued an error message, it would often be silently discarded with the user never seeing it. For example, see script right: that buggy [[Python]] script tries to open a non-existent file. Prior to the Console window, the script would appear to "hang" with no feedback to indicate it crashed. Now, an error appears in red to make it clear to that something went wrong.
 
-Note that messages on the standard ''output'' stream do not cause the Console to appear, because there are many ImageJ plugins in the wild (e.g., [[Bio-Formats]]) that emit information output to that stream. The Console will only appear automatically when messages to the standard ''error'' stream occur. However, you can bring it up any time by choosing Console from the bottom of the Window menu.
+Note that messages on the standard ''output'' stream do not cause the Console to appear, because there are many ImageJ plugins in the wild (e.g., [[Bio-Formats]]) that emit information on that stream. The Console will only appear automatically when messages to the standard ''error'' stream occur. However, you can bring it up any time by choosing Console from the bottom of the Window menu.
 
 The Console feature still has some rough edges—as always, [[Report a Bug|bug reports]] are welcome. But we believe this change is an important step forward to avoid confusion and improve the [Bug reporting best practices|quality of bug reports] overall.
 
