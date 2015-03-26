@@ -482,7 +482,9 @@ As you can see, it is important to understand how use of the uber-JAR will affec
 
 Not yet as an end-user application. But since Android is a Java-based platform, there is hope. One of the [[ImageJ2]] project's central design goals was a better [https://en.wikipedia.org/wiki/Separation_of_concerns separation of concerns], which could make things like an Android version of ImageJ possible. In particular, the [[ImageJ2#ImageJ2_is_more_than_just_an_application|core components of ImageJ2]] are militant in their avoidance of certain Java SE packages not present in the Android version of Java (which is based on Java ME), such as [https://en.wikipedia.org/wiki/Abstract_Window_Toolkit Java AWT].
 
-That said, ImageJ2 has not even been compile-tested yet using an Android SDK, so there are surely many problems which would need to be resolved. In the future, the ImageJ development team hopes to set up some continuous integration surrounding Android using the ImageJ [[Jenkins]] server. If you are interested in helping drive this effort forward, please write to the [[Mailing Lists|imagej-devel mailing list]!
+That said, ImageJ2 has not even been compile-tested yet using an Android SDK, so there are surely many problems which would need to be resolved. In the future, the ImageJ development team hopes to set up some continuous integration surrounding Android using the ImageJ [[Jenkins]] server. If you are interested in helping drive this effort forward, please write to the [Mailing Lists|imagej-devel mailing list]!
+
+Another possibility for the future is a client-server version of ImageJ that runs in a web browser using HTML5 and JavaScript, which could include cross-platform support for mobile devices (Android, iPhone, tablets, etc.). Again, much groundwork has been done to make the [[ImageJ2]] core design compatible with such an application, but no one has written the server- or client-side yet.
 
 = Community =
 
