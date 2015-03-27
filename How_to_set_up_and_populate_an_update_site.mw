@@ -137,6 +137,8 @@ Enter any information you wish to provide about the plugin:
 
 [[Image:How_to_setup_a_plugin_distribution_site-15.jpg|770px]]
 
+{{Warning | Sometimes the updater will mis-detect your dependencies. This may prevent you from uploading to your update site! If something is wrong, you can manually add or delete dependencies from the Details tab to correct the problem. Please [[Mailing_Lists|let us know]] when this happens so we can try to improve the updater}}
+
 Finally, click 'Upload to server' to upload your plugin to the server and allow others to access it. If you have dependencies that are not part of ImageJ, the updater will ask you if you want to upload that jar as well. Finally, you will be asked for your login credentials again and the files will be uploaded to the server. 
 
 Check that your plugins are now registered as ImageJ plugins by selecting 'View files of the '[your site name here]' site':
