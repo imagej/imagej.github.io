@@ -1,0 +1,51 @@
+{{Development}}
+
+== Before you release ==
+
+Releasing a new version of your software is fantastic, because it often means you get to share exciting new features (or critical bug fixes) with the community. However, it can be daunting to know the correct procedures to make your new version available via GitHub and Maven.
+
+Putting these concerns aside for a moment, the absolute first thing you should do is familiarize yourself with our [[Architecture#Versioning|versioning guidelines]] to help you choose an appropriate version number for your software. Once that is decided, there are two options for actually [[#Cutting_a_new_release|releasing your software]].
+
+== Cutting a new release ==
+
+=== The easy process ===
+
+The easiest way to release a component is to use the [https://github.com/scijava/scijava-scripts/blob/aab7cfe805638efc25615fdd7c78cedaae3c7197/release-version.sh release-version.sh] script.
+
+==== Prerequisites ====
+
+# Download the release-version script. The best way to do this is to clone the complete [https://github.com/scijava/scijava-scripts SciJava-scripts] repository. That will give you access to other useful scripts and help keep them all up to date.
+# ('''optional''') If you want to easily use these scripts from any directory, you can [http://askubuntu.com/questions/97897/add-bash-script-folder-to-path add the scijava-scripts folder to your PATH].
+# You will need an account for [http://maven.imagej.net maven.imagej.net] and the local Maven configuration to deploy to this repository. If you haven't set this up yet, contact the [[Mailing_Lists|ImageJ-devel]] and ask for an account. A maintainer will send you instructions.
+
+==== Steps to release ====
+
+# From your project's directory, simply run:
+
+  release-version.sh <NEW_VERSION>
+
+=== The manual process ===
+
+This is also called the "two commit" process. Historically, this was the recommended way to release - but has now been replaced by the release-version script.
+
+==== Prerequisites ====
+
+* Your project needs to be tracked by a [http://jenkins.imagej.net/ Jenkins job] that will build and deploy Maven artifacts in response to changes on GitHub. If you aren't sure if such a job exists or not for your project, send a mail to the [[Mailing_Lists|ImageJ-devel]] list.
+
+==== Steps to release ====
+
+# Make a commit that changes the version of your project to a non-SNAPSHOT.
+# Push your commit to GitHub to trigger the deployment of a Maven release.
+# [http://git-scm.com/book/en/v2/Git-Basics-Tagging Create a tag] of the release commit, named appropriately. Core projects use a standard "component name"-"version" naming scheme, e.g. <code>mysoftware-1.2.3</code>.
+# Make a second commit changing the version to the next SNAPSHOT version.
+# Push again to GitHub - both the SNAPSHOT-version master branch '''and the release tag'''.
+
+The disadvantage to this method is that, since the steps are not automated, there is room for error and inconsistency - not pushing the tag, not making a commit to go back to a SNAPSHOT version, etc.
+
+== After a release ==
+
+If your project is a [[Fiji_contribution_requirements|core Fiji project]], it is likely tracked on [http://status.imagej.net/ status.imagej.net] and the Fiji maintainers will pick it up shortly.
+
+To help move things along, or if your project is not tracked, you can [https://help.github.com/articles/using-pull-requests/ submit a pull request] to update the version of your project - e.g., in [https://github.com/fiji/pom-fiji pom-fiji].
+
+[[Category:Development]]
