@@ -87,6 +87,19 @@ It may be wise to allow ImageJ enough time to register all scripts before trigge
 * The several <span style="border-bottom:1px dotted #ccc;">Move Menu (Context<>Main)</span> commands across <span style="border-bottom:1px dotted #ccc;"> BAR▷ </span> submenus do not use the same label and are distinguishable by extra trailing spaces. This is intentional because all ImageJ commands must have unique names.
 * Any toolset loaded via the ">>" ''More Tools'' drop down menu can define its own contextual menu (as detailed in the [http://imagej.net/docs/guide/146-21.html#sec:ContextualMenu ImageJ User Guide], the contextual menu is controlled by a macro called ''Popup Menu'' that gets loaded at startup). To have BARs immediately available when such toolsets are loaded, just append the same <tt>run("Move Menu (Context<>Main)");</tt> call described above for StartupMacros.
 
+=== Commander ===
+[[File:CommanderOverview.png|400px|thumb|Commander overview (BAR 1.1.2).]]
+Since the majority of BARs are scripts stored in individual files, BAR features Commander ({{bc|BAR|BAR Commander...}}), a keyboard-based file browser that produces filtered lists of directory contents.
+
+It is a productivity tool that applies the principles of [[Using_the_Command_Launcher|Command Launcher]] to file browsing, providing instant access to files just by typing abbreviations of filenames. It serves two purposes: 1) to expedite the opening of files and 2) to produce filtered lists of directory contents. Features include: drag-and-drop support, interaction with native file manager, regex filtering, and a built-in console for common operations. 
+
+<i>Console mode</i> is triggered by typing {{key|!}}, which evokes a list of searchable commands so that all file navigation can be done exclusively with the keyboard. Some of these (<tt>cd</tt>, <tt>ls</tt>, <tt>pwd</tt>, etc.) are reminiscent of commands found in most command-line interfaces. Here are some examples:
+;To access ImageJ's LUT folder:Type {{key|!|L|U|T|Enter}}
+;To access all JavaScript [[#lib|lib files]]:Type {{key|!|L|I|B|Enter}}, then {{key|.|J|S}}
+;To reveal the directory of active image:Type {{key|!|I|M|P|Enter}}, then choose {{bc|Reveal Path}}.
+;To access Commander's built-in help:Type {{key|!|H|E|L|P|Enter}}
+;To extract the paths of all TIFF images in a directory:Drag and drop the desired folder into the Commander list<br>Type {{key|.|T|I|F|Enter}}<br>Choose {{bc|Print Current List}} in the Options Menu or press {{key|Control|P}} ({{key|Command|P}} in Mac OS).
+
 === Keyboard Shortcuts ===
 You can use <span style="border-bottom:1px dotted #ccc;">Plugins▷ Shortcuts▷ Create Shortcut...</span> to assign hotkeys (e.g., keyboard key that you do not use frequently such as {{key press|0}}  or {{key press|F7}}) to any script registered in the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu. These shortcuts will be listed in <span style="border-bottom:1px dotted #ccc;">Plugins▷ Shortcuts▷</span> and are remembered across restarts.
 
@@ -117,7 +130,7 @@ BAR contains a directory, ''plugins/Scripts/BAR/Snippets/'', containing  multi-l
 <span id="lib"></span>
 
 === BAR lib === 
-{{Scripting}}{{GitHub|org=tferr|repo=Scripts|path=/lib/README.md#lib|label=BAR libs}} are centralized libraries ([[BeanShell_Scripting|BeanShell]], [[Introduction_into_Macro_Programming|IJM]] and [[Jython_Scripting|Python]], etc.) that can be shared across files. These libraries serve as scripting additions to [[#Snippets|Snippets]] and other routines.
+{{Scripting}}{{GitHub|org=tferr|repo=Scripts|path=/lib/README.md#lib|label=BAR libs}} (stored in the ''/BAR/lib/'' directory) are centralized libraries ([[BeanShell_Scripting|BeanShell]], [[Introduction_into_Macro_Programming|IJM]] and [[Jython_Scripting|Python]], etc.) that can be shared across files. These libraries serve as scripting additions to [[#Snippets|Snippets]] and other routines.
 
 Do you find yourself copy and pasting functions from one file to the other? Do you keep on writing the same lines of code? Do you have some key code written across different languages? Would you like to make side-by-side comparisons of scripting languages? Then, BAR lib is for you.
 
