@@ -149,6 +149,8 @@ Select the file to upload, click under the ''Stats/Action'' column, or right-cli
 
 [[Image:Upload-to-update-site.png|770px]]
 
+{{Notice | The ''Upload to <update site name>'' option is only available if you entered your [[#Start the updater and check your update site|wiki credentials]] and no other changes are pending. This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the ''View changes'' view and resolve any pending changes - e.g. by updating or reverting to '''Keep as-is'''.}}
+
 When a plugin is selected, a ''Details'' panel becomes available. The plugin's dependencies, e.g. ''ij.jar'' and ''someJarOrOther.jar'', are automatically determined by the updater. Hence if you require 3rd party packages for your plugin you can place them into the jars folder of ImageJ and the updater will automatically upload them to the site.
 
 You can also manually enter or edit any information you wish to provide about the plugin:
@@ -159,15 +161,13 @@ You can also manually enter or edit any information you wish to provide about th
 
 === Upload your files ===
 
-Finally, click ''Upload to server'' to upload your plugin to the server and allow others to access it. If you have dependencies that are not part of ImageJ, the updater will ask you if you want to upload that jar as well. Finally, you will be asked for your login credentials again and the files will be uploaded to the server. 
+Finally, click ''Apply changes (upload)'' to upload your plugin to the server and allow others to access it. If you have dependencies that are not part of ImageJ, the updater will ask you if you want to upload that jar as well. Finally, you will be asked for your login credentials again and the files will be uploaded to the server. 
 
 Check that your plugins are now registered as ImageJ plugins by selecting the ''View files of the '[your site name here]' site'' view option:
 
 [[Image:UpdaterFinalScreen.jpg|770px]]
 
 That's it - you're done. Now, anyone who wants a copy of your plugins merely needs to [[How to follow a 3rd party update site|add your update site]] to the Update manger via the URL you specified, and your plugins will be downloaded and updated in their ImageJ installations just like the standard ImageJ plugins.
-
-{{Notice | The ''Upload to server'' button appears automatically when a file is selected to be uploaded. If it does not appear, you may have additional changes set - to avoid potentially corrupting ImageJ, the updater will only perform one action at a time (i.e. download new updates or upload to a server). From ''View Options'', select ''View changes''. If you have both '''Upload''' and '''Update''' changes set, revert one to '''Keep as-is''' until you complete the other operation.}}
 
 == Publishing your update site ==
 
