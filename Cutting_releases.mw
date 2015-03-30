@@ -32,7 +32,7 @@ This is also called the "two commit" process. Historically, this was the recomme
 
 * Your project needs to be tracked by a [http://jenkins.imagej.net/ Jenkins job] that will build and deploy Maven artifacts in response to changes on GitHub. If you aren't sure if such a job exists or not for your project, send a mail to the [[Mailing_Lists|ImageJ-devel]] list.
 * Familiarize yourself with the concept of Maven [http://stackoverflow.com/questions/5901378/what-exactly-is-a-maven-snapshot-and-why-do-we-need-it SNAPSHOT and release artifacts]. When Jenkins deploys to Maven, it is actually uploading to a separate release or SNAPSHOT repository based on the version defined in the project's pom.xml. SNAPSHOTs can be changed; releases can not.
-* Familiarize yourself with the [[http://git-scm.com/book/en/v2/Git-Basics-Tagging Git tagging process]. You will need to tag a commit and push the tag to a remote repository for the release process. Although Git tags can be changed or deleted over time, the convention of creating a tag to match each release creates a nice "bookmark" system for developers when they check out the code.
+* Familiarize yourself with the [http://git-scm.com/book/en/v2/Git-Basics-Tagging Git tagging process]. You will need to tag a commit and push the tag to a remote repository for the release process. Although Git tags can be changed or deleted over time, the convention of creating a tag to match each release creates a nice "bookmark" system for developers when they check out the code.
 
 ==== Steps to release ====
 
