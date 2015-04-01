@@ -15,7 +15,7 @@ Hence, there are two levels of removal: marking a file '''obsolete''', and '''de
 # If the file is not hosted by any other active update site, delete it from your local installation. Note: if the file '''is''' hosted on another update site, this is called '''shadowing''' - you do not need to delete the file as marking it obsolete will revert it to the other update site's version.
 # Start the [[Updater|updater]] and click the ''Advanced mode'' button.
 # Select the ''View files of the '[your site name here]''' option.
-# If you deleted the file locally, it will be marked "'''Install it'''" automatically by the updater - right click the file and change it to "Keep as-is". See [[#My context menu doesn't have that option|this FAQ entry]] for an explanation.
+# If you deleted the file locally, it will be marked "'''Install it'''" automatically by the updater - right click the file and change it to "Keep as-is". See [[#Why don't I have an upload option?|this FAQ entry]] for an explanation.
 # Right click and choose "Mark obsolete" for the deleted file.
 # Upload the changes.
 * Deleting a file from the history is strongly not recommended, but if you ''must'' do so (e.g., for legal or privacy reasons):
