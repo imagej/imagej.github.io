@@ -29,7 +29,9 @@ Please note that we currently test ImageJ mostly with Oracle Java 6. We have don
 * [http://imagej.net/download/ ImageJ1 download archive] for old versions of [[ImageJ1|ImageJ 1.x]].
 
 == Fiji ==
-The [[Fiji]] distribution of ImageJ is focused on the life sciences. '''F'''iji '''I'''s '''J'''ust '''I'''mageJ, with many useful plugins included. The platform-specific downloads below come bundled with a Java 6 JRE.
+The [[Fiji]] distribution of ImageJ is focused on the life sciences. '''F'''iji '''I'''s '''J'''ust '''I'''mageJ, with many useful plugins included.
+
+The platform-specific downloads below come bundled with a Java 6 JRE.
 <!--
 Mirrors (OUT OF DATE):
 * [http://valelab.ucsf.edu/~schindelin/ University of California, San Francisco, thanks to Nico Stuurman!]
