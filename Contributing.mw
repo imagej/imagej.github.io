@@ -7,7 +7,7 @@ This site, imagej.net, is a wiki (similar to the [http://wikipedia.org/ Wikipedi
 
 If you are an ImageJ user, contributing documentation is an easy way to give back to the community without needing to learn software development skills.
 
-If you are a plugin author, please consider documenting your plugin on this site; for details, see [[Distribution#Documenting_your_extension|this guide]].
+If you are a plugin author, please consider [[Distribution#Documenting_your_extension|documenting your plugin on this site]].
 
 When in doubt, discuss your ideas publicly on the ImageJ mailing list!
 
