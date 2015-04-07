@@ -39,7 +39,7 @@ Preprocess the image using filters, to make later thresholding more effective. W
 [[Image: Threshold_tree.png|300px|thumb|Tree ring sample image with a threshold applied for a B&W image]]
 
 Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
-*Open your image in the fiji window
+*Open your image
 *Select Image>Adjust>Threshold...
 *Specify whether or not the background should be dark or light
 *Adjust the minimum and maximum sliders until you are satisfied with the saturation level of your image
@@ -78,7 +78,7 @@ Do some numerical analysis on the selected data:
 
 = See also =
 
-For a list of Fiji plugins which perform image segmentation, see: [[:Category:Segmentation]].
+For a list of [[plugins]] which perform image segmentation, see: [[:Category:Segmentation]].
 
 [[Category:Tutorials]]
 [[Category:Segmentation]]
