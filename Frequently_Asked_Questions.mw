@@ -465,23 +465,13 @@ If your software is written in Java, we recommend using [[Maven]] to structure y
 
 If your software is written in another language such as C or Python, there are [http://loci.wisc.edu/bio-formats/interfacing-non-java-code many ways to integrate Java functionality]. You must choose which one is best for your particular requirements.
 
-To facilitate some use cases, we provide a script for generating a combined bundle of all ImageJ-related JARs in a single "uber-JAR" library. To use, check out the ImageJ [[source code]] and execute:
+To facilitate some use cases, we provide a script for generating a combined bundle of all ImageJ-related JARs in a single [[uber-JAR]] library. To use, check out the ImageJ [[source code]] and execute:
 
 <blockquote><code>mvn -Pdeps package</code></blockquote>
 
 For convenience, we provide a [http://jenkins.imagej.net/job/ImageJ/lastSuccessfulBuild/artifact/target/ build of this combined JAR file] (with suffix <code>-all</code>) from the latest DEVELOPMENT, UNSTABLE version of ImageJ. This build includes the latest changes on the {{GitHub|repo=imagej|label=master branch of the source repository}}. It has not been thoroughly tested and may contain new bugs.
 
-In some cases, use of this JAR file is appropriate and convenient; for example, [http://cellprofiler.org/ CellProfiler] uses it to integrate with ImageJ. However, you should consider carefully what would be best for your project:
-
-'''Advantages:''' A single JAR file is simpler to deploy. There is no chance of mismatched versions of multiple JAR files. It is easier to construct a Java classpath, since only a single JAR needs to be included.
-
-'''Disadvantages:'''
-
-* Every time you need to update the version of ImageJ, you must redeploy the entire uber-JAR (~57 MB as of June 2014). If you bundle individual JAR components, you need only update those that changed. This issue is of particular relevant to Java applications deployed via Java Web Start, since it automatically downloads the latest available version of each JAR dependency; in that case, your application startup time will suffer if you use the uber-JAR.
-* You cannot cherry-pick only the JARs containing the functionality you need, so your application's footprint may suffer from bloat.
-* If you rely on any of the same dependencies that ImageJ does, you may run into trouble (e.g., <code>NoSuchMethodError</code>) with multiple copies of those dependencies on your classpath, especially if you need to use a different version of that dependency than is bundled with the uber-JAR.
-
-As you can see, it is important to understand how use of the uber-JAR will affect your application. In particular, Java applications will likely be better served using the individual component JARs, ideally managed using a dependency management platform such as [http://maven.apache.org/ Maven] or [http://ant.apache.org/ivy/ Ivy]. But for non-Java applications, the uber-JAR may be sufficient to your needs.
+In some cases, use of this JAR file is appropriate and convenient; for example, [http://cellprofiler.org/ CellProfiler] uses it to integrate with ImageJ. However, you should consider carefully what would be best for your project; see the [[Uber-JAR]] page for further information.
 
 == Does ImageJ work on mobile devices such as Android? ==
 
