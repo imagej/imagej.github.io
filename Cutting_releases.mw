@@ -36,7 +36,7 @@ This is also called the "two commit" process. Historically, this was the recomme
 
 ==== Steps to release ====
 
-# Make a commit that changes the version of your project to a non-SNAPSHOT.
+# Make a commit '''on master''' that changes the version of your project to a non-SNAPSHOT.
 # Push your commit to GitHub to trigger the deployment of a Maven release.
 # Tag the release commit with an appropriate named. Core projects use a standard "component name"-"version" naming scheme, e.g. <code>mysoftware-1.2.3</code>.
 # Make a second commit incrementing the version to the next SNAPSHOT version.
