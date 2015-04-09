@@ -137,10 +137,14 @@ ImageJ has benefitted from many hackathons over the years:
 |[http://www.freiraeume-kn.de/standort.htm FREIRÄUME]<br>Konstanz, Germany
 |[https://github.com/dietzc dietzc], [https://github.com/ctrueden ctrueden], [https://github.com/hinerm hinerm], [https://github.com/LeeKamentsky LeeKamentsky], [https://github.com/tpietzsch tpietzsch], [https://github.com/fjug fjug], [https://github.com/dscho dscho], [https://github.com/iarganda iarganda], [https://github.com/gab1one gab1one], [https://github.com/DanielSeebacher DanielSeebacher], [https://github.com/kmader kmader], [https://github.com/angrauma angrauma], [https://github.com/Squareys Squareys], Patrick Winter, Tim-Oliver Buchholz, Andreas Burger, Tobias Kötter
 |[[ImageJ OPS]] + [[KNIME]] + [[CellProfiler]] + more
+|- valign="top"
+| style="white-space: nowrap" | [[TaskList|2015 Apr 12 -<br>2015 Apr 17]]
+|[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
+|[https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/tpietzsch Tobias Pietzsch], Pavel Tomancak
+|[[Multiview-Reconstruction]] and [[BigDataViewer]]
 |-
 |colspan="4" style="border-bottom: 1px solid gray"|
 |}
-
 As you can see, in recent years ImageJ has trended toward smaller, more targeted hackathons, as we find them very focused!
 
 [[Category:Hackathons]]
