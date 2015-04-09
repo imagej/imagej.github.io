@@ -1,4 +1,19 @@
 {{UpdateSites}}
+= NOTICE =
+
+To present a unified application to both users and developers, uploaders should strive to keep each core update site synchronized with its corresponding source code.
+
+{| class="wikitable nicetable"
+|'''Update Site'''
+|'''Source'''
+|-
+|ImageJ
+|''master'' branch of [https://github.com/imagej/imagej ImageJ.git]
+|-
+|Fiji
+|''master'' branch of [https://github.com/fiji/fiji Fiji.git]
+|}
+
 == Introduction ==
 
 This tutorial explains how to upload changes to core [[ImageJ]] and [[Fiji]] libraries.
