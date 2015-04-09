@@ -1,7 +1,12 @@
 {{UpdateSites}}
-= NOTICE =
 
-To present a unified application to both users and developers, uploaders should strive to keep each core update site synchronized with its corresponding source code.
+== Introduction ==
+
+This tutorial explains how to upload changes to core [[ImageJ]] and [[Fiji]] libraries.
+
+== Responsibility of uploaders ==
+
+To facilitate [[Architecture#Reproducible_builds|reproducibility]] and present a unified application to both users and developers, uploaders should strive to keep each core update site synchronized with its corresponding source code.
 
 {| class="wikitable nicetable"
 |'''Update Site'''
@@ -13,10 +18,6 @@ To present a unified application to both users and developers, uploaders should 
 |Fiji
 |''master'' branch of [https://github.com/fiji/fiji Fiji.git]
 |}
-
-== Introduction ==
-
-This tutorial explains how to upload changes to core [[ImageJ]] and [[Fiji]] libraries.
 
 == Getting started ==
 
