@@ -4,6 +4,16 @@
 
 This tutorial explains how to upload changes to core [[ImageJ]] and [[Fiji]] libraries.
 
+The typical workflow is:
+
+# Update [https://github.com/fiji/fiji Fiji.git] with desired changes
+# Use <code>mvn -Dimagej.app.directory=$HOME/Desktop/Fiji.app/ -Ddelete.other.versions=true</code> to install into an existing (up-to-date) Fiji installation
+# NOTE: if there are any version downgrades at this point, this indicates dependency skew. Fiji.git should be updated appropriately, restarting from step 1
+# Upload changes to ImageJ update site
+# Upload changes to Fiji update site
+
+{{Warning | There is a known issue where '''bio-formats_plugins.jar''' is placed in <code>/jars/bio-formats</code> by this maven job. It should be manually moved to <code>/plugins/</code>}}
+
 == Responsibility of uploaders ==
 
 To facilitate [[Architecture#Reproducible_builds|reproducibility]] and present a unified application to both users and developers, uploaders should strive to keep each core update site synchronized with its corresponding source code.
