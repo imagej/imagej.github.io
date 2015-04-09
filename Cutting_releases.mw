@@ -24,6 +24,8 @@ The easiest way to release a component is to use the [https://github.com/scijava
 
   release-version.sh <NEW_VERSION>
 
+{{Notice | If your project is a [https://maven.apache.org/guides/mini/guide-multiple-modules.html multi-module build], first make a commit commenting out any modules that should not be released. Then run the script from the aggregator pom directory.}}
+
 === The manual process ===
 
 This is also called the "two commit" process. Historically, this was the recommended way to release - but has now been replaced by the release-version script.
