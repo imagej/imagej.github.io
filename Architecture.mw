@@ -273,23 +273,23 @@ The SciJava software stack uses the [http://semver.org/ Semantic Versioning] sys
 
 SemVer is very useful for indicating how software has changed from one version to another in a programmatic way, but it can be unintuitive for humans, especially for non-developers. It is important to understand that a "major" version increase does not necessarily indicate a shiny new version of the software with lots of new features—but rather more likely to have removed deprecated classes and methods, and/or moved functionality from one place to another in a backwards-incompatible manner. Conversely, a "minor" version increase might indicate the addition of a single new method somewhere, or many significant new features—and SemVer does not specify a mechanism for quantifying which scenario it is in each case.
 
-=== Development status of SciJava components ===
+=== Scope of SemVer ===
 
-Each SciJava component falls into one of these categories:
+SciJava projects use SemVer for '''API''' [[compatibility]]:
 
-# '''0.M.n''' - A version number starting with 0 indicates that the component is still in initial incubation. The API is still under development, and subject to change. We do try to maintain backwards compatibility, deprecating old classes for at least one release before removing them, but it is not always possible. So code depending on these components may break in the future.
-# '''M.n.p-beta-a''' - Similar to ''0.M.n'' in that the API is still under development. In some circles, the term "beta" can mean "feature complete" but we do not use the term that way. These "beta" releases can be considered less unstable than a ''0.M.n'', but still subject to future changes and additions as needed.
-# '''M.n.p-rc-a''' - A "release candidate" similar to beta, although considered very close to a mature release.
-# '''M.n.p''' - Where ''M'' is at least 1. This indicates a mature release, committed to maintaining backwards compatibility for as long as possible. Even if the component later bumps the major version, we still try to make the minimal breaking changes necessary to introduce any new needed functionality.
+* '''API''' ([https://en.wikipedia.org/wiki/Application_programming_interface '''A'''pplication '''P'''rogramming '''I'''nterface]) is defined by the set of [http://en.wikipedia.org/wiki/Class_(computer_programming) classes], [http://en.wikipedia.org/wiki/Method_%28computer_programming%29 methods] and [http://en.wikipedia.org/wiki/Interface_%28computing%29 interfaces] available for downstream ''consumers''. For example, if your code depends on [https://github.com/scijava/scijava-common scijava-common] to provide a {{Javadoc | package=org/scijava/module | class=ModuleService}} and calls the {{Javadoc | package=org/scijava/module | class=ModuleService | anchor=getModules()}} method, you can upgrade to newer <code>scijava-common</code> versions with the guarantee that this method will continue to exist with a compatible return type as long as the major version number does not increase.
 
-=== API vs. SPI backwards compatibility ===
+The following are examples of what is '''not''' guaranteed by SemVer in SciJava projects:
 
-SciJava uses SemVer for '''API''' [[compatibility]], but not necessarily '''SPI''' [[compatibility]]:
+* ''Behavior'' of a method. For example, suppose there was a bug in the [https://github.com/scifio/scifio/blob/scifio-0.22.0/src/main/java/io/scif/util/FormatTools.java#L233-237 FormatTools.calibrate] method where it always subtracts <code>1</code> from the <code>imageIndex</code> value. Knowing about this bug, you always add <code>1</code> to the index used in your <code>calibrate</code> method calls. Howeer, when this bug is fixed, your code is suddenly trying to calibrate images at non-existent indices. Intuitively, this may feel like a breaking change - but the behavior of the method wasn't guaranteed by the above definition of API.
 
-* '''API''' ([https://en.wikipedia.org/wiki/Application_programming_interface '''A'''pplication '''P'''rogramming '''I'''nterface]) refers to downstream ''consumers'' which ''invoke'' methods of classes. For example, if your code uses a {{Javadoc | package=org/scijava/module | class=ModuleService}} and calls the {{Javadoc | package=org/scijava/module | class=ModuleService | anchor=getModules()}} method, SemVer guarantees that that method will continue to exist with a compatible return type as long as the version number's major digit does not increase.
-* '''SPI''' ([https://en.wikipedia.org/wiki/Service_provider_interface '''S'''ervice '''P'''rovider '''I'''nterface]) refers to downstream ''implementors'' which ''extend'' classes. For example, if your code provides its own implementation of the {{Javadoc | package=org/scijava/module | class=ModuleService}} interface, updating to a new version of <code>scijava-common</code> may break your code due to the addition of new method signatures which your class does not implement.
+* External dependencies. See the '''Is SemVer transitive?''' sidebar.
 
-That said, the projects do make a best effort to limit such SPI breakages. In addition, each interface is accompanied by a corresponding abstract class and/or default implementation, intended as a future-resistant extension point for new implementations. So e.g. in the case of {{Javadoc | package=org/scijava/module | class=ModuleService}}, making your class extend {{Javadoc | package=org/scijava/module | class=DefaultModuleService}} instead of only implementing the interface would be an effective way of largely shielding yourself from future SPI breakages during dependency version upgrades. Some other examples:
+*  '''SPI''' ([https://en.wikipedia.org/wiki/Service_provider_interface '''S'''ervice '''P'''rovider '''I'''nterface]) [[compatibility]] - the set of classes and interfaces that are ''extended'' and ''implemented'' by downstream ''implementors''. For example, if your code provides its own implementation of the {{Javadoc | package=org/scijava/module | class=ModuleService}} interface, updating to a new version of <code>scijava-common</code> may break your code due to the addition of new method signatures which your class does not implement.
+
+Note that these many of these limitations can be mitigated in practice. For example, developers can make a best effort to limit SPI breakages, submit upstream patches instead of working around software, and consume a BOM to ensure cross-library compatibility.
+
+Furthermore, SciJava projects typically accompany interfaces with a corresponding abstract class and/or default implementation, providing ''implementors'' a future-resistant extension point. So e.g. in the case of {{Javadoc | package=org/scijava/module | class=ModuleService}}, making your class extend {{Javadoc | package=org/scijava/module | class=DefaultModuleService}} instead of only implementing the interface would be an effective way of largely shielding yourself from future SPI breakages during dependency version upgrades. Some other examples:
 
 {| class="wikitable"
 |-
@@ -311,6 +311,15 @@ That said, the projects do make a best effort to limit such SPI breakages. In ad
 | {{Javadoc | project=SCIFIO | package=io/scif | class=Format}}
 | {{Javadoc | project=SCIFIO | package=io/scif | class=AbstractFormat}}
 |}
+
+=== Development status of SciJava components ===
+
+Each SciJava component falls into one of these categories:
+
+# '''0.M.n''' - A version number starting with 0 indicates that the component is still in initial incubation. The API is still under development, and subject to change. We do try to maintain backwards compatibility, deprecating old classes for at least one release before removing them, but it is not always possible. So code depending on these components may break in the future.
+# '''M.n.p-beta-a''' - Similar to ''0.M.n'' in that the API is still under development. In some circles, the term "beta" can mean "feature complete" but we do not use the term that way. These "beta" releases can be considered less unstable than a ''0.M.n'', but still subject to future changes and additions as needed.
+# '''M.n.p-rc-a''' - A "release candidate" similar to beta, although considered very close to a mature release.
+# '''M.n.p''' - Where ''M'' is at least 1. This indicates a mature release, committed to maintaining backwards compatibility for as long as possible. Even if the component later bumps the major version, we still try to make the minimal breaking changes necessary to introduce any new needed functionality.
 
 = Managing releases =
 
