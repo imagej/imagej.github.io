@@ -273,6 +273,8 @@ The SciJava software stack uses the [http://semver.org/ Semantic Versioning] sys
 
 SemVer is very useful for indicating how software has changed from one version to another in a programmatic way, but it can be unintuitive for humans, especially for non-developers. It is important to understand that a "major" version increase does not necessarily indicate a shiny new version of the software with lots of new features—but rather more likely to have removed deprecated classes and methods, and/or moved functionality from one place to another in a backwards-incompatible manner. Conversely, a "minor" version increase might indicate the addition of a single new method somewhere, or many significant new features—and SemVer does not specify a mechanism for quantifying which scenario it is in each case.
 
+Because there are limitations in what SemVer can be used to reason about, applications may also wish to provide a [[#Melting pot|melting pot]] - for a qualitative, [http://sentimentalversioning.org/ sentimental], high-level assessment of compatibility.
+
 === Scope of SemVer ===
 
 SemVer provides a means for reasoning about changes in public API. However, it is up to developers to define exactly what is covered by "public API" in their software. For SciJava, this definition is as follows:
@@ -452,5 +454,17 @@ ImageJ [[update sites]] are what ImageJ actually queries to check for and downlo
 An update site can be hosted anywhere, though the ImageJ web server at http://sites.imagej.net/ offers a [[personal update site]] service.
 
 See the [[Update Sites|documentation on update sites]] for further details.
+
+== Melting pot ==
+
+A '''melting pot''' is an application-level construct. Its goal is to provide confidence that a collection of dependencies can actually function correctly together. Ideally, a melting pot test can precede and facilitate automation of software release cascades (e.g. where many SciJava, ImageJ and Fiji components are released in order). Releases of this sort have to progress in "bottom-up", so we need confidence that things will actually work as intended when we get to the "top."
+
+A melting pot should be:
+
+* Automated - e.g. via [[#Jenkins|Jenkins]]
+* BOM-driven - to ensure dependency convergence is respected
+* Test-based - to warn of failures, be it in behavior or dependency incompatibilities
+
+For the start of a sample melting pot script designed for ImageJ, see [https://github.com/scijava/scijava-scripts/blob/aab7cfe805638efc25615fdd7c78cedaae3c7197/melting-pot.sh melting-pot.sh].
 
 [[Category:Development]]
