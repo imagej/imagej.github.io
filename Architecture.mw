@@ -251,9 +251,9 @@ Either way, '''''be sure to work on a topic branch while developing code in this
 The SciJava software stack uses the [[Semantic Versioning]] system. This scheme communicates information about the [[backwards compatibility]] (or lack thereof) between versions of each individual software component. In a nutshell:
 
 <blockquote>Given a version number MAJOR.MINOR.PATCH, increment the:
-* MAJOR ('''M''') version when you make incompatible API changes,
-* MINOR ('''n''') version when you add functionality in a backwards-compatible manner, and
-* PATCH ('''p''') version when you make backwards-compatible bug fixes.</blockquote>
+* MAJOR version when you make incompatible API changes,
+* MINOR version when you add functionality in a backwards-compatible manner, and
+* PATCH version when you make backwards-compatible bug fixes.</blockquote>
 
 See the [[Versioning]] page for a detailed discussion of SciJava versioning.
 
