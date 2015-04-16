@@ -7,6 +7,7 @@
 | tag    =
 | path   =
 | source =
+| commit =
 | issue  =
 | pr     =
 | label  =
@@ -50,6 +51,12 @@ Use <code>tag</code> to specify a tag (rather than <code>master</code>):
 {{GitHub|tag=imagej-2.0.0-beta-7.9|path=app/src/test/java/imagej/debug/TypeHierarchy.java}}
 </pre>
 {{GitHub|tag=imagej-2.0.0-beta-7.9|path=app/src/test/java/imagej/debug/TypeHierarchy.java}}
+
+Use <code>commit</code> to specify a commit hash:
+<pre>
+{{GitHub|commit=7a10880d485a13fc449d84c7e2eca3e1481064ee|label=imagej@7a10880d}}
+</pre>
+{{GitHub|commit=7a10880d485a13fc449d84c7e2eca3e1481064ee|label=imagej@7a10880d}}
 
 Use <code>issue</code> or <code>pr</code> to specify an issue or PR number:
 <pre>
