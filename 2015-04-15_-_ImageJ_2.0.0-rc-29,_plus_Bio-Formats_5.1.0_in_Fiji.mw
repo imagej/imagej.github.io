@@ -1,13 +1,20 @@
 Today, the [[Contributors|ImageJ team]] has released a new public release candidate for [[ImageJ2]]: version 2.0.0-rc-29.
 
+In addition, the [[Contributors|Fiji team]] has updated several components of the [[Fiji]] distribution. Notably, Fiji was updated to the [[Bio-Formats]] 5.1.0 release, which includes many bug-fixes and improvements to several file formats.
+
 == What's new ==
 
-This release includes new versions of several components:
+These releases include new versions of several components:
 
 {| class="wikitable"
-! [https://github.com/imagej ImageJ]
 ! [https://github.com/scijava SciJava]
+! [https://github.com/imagej ImageJ]
+! [https://github.com/fiji Fiji]
 |-
+| style="vertical-align: top" |
+* [https://github.com/scijava/scijava-plugins-commands/compare/scijava-plugins-commands-0.1.8...scijava-plugins-commands-0.2.0 scijava-plugins-commands-0.2.0]
+* [https://github.com/scijava/scijava-ui-swing/compare/scijava-ui-swing-0.5.0...scijava-ui-swing-0.6.0 scijava-ui-swing-0.6.0]
+* [https://github.com/scijava/scripting-java/compare/scripting-java-0.3.0...scripting-java-0.3.1 scripting-java-0.3.1]
 | style="vertical-align: top" |
 * [https://github.com/imagej/ij1-patcher/compare/ij1-patcher-0.12.0...ij1-patcher-0.12.1 ij1-patcher-0.12.1]
 * [https://github.com/imagej/imagej/compare/imagej-2.0.0-rc-28...imagej-2.0.0-rc-29 imagej-2.0.0-rc-29]
@@ -16,13 +23,17 @@ This release includes new versions of several components:
 * [https://github.com/imagej/imagej-plugins-commands/compare/imagej-plugins-commands-0.4.1...imagej-plugins-commands-0.5.0 imagej-plugins-commands-0.5.0]
 * [https://github.com/imagej/imagej-ui-swing/compare/imagej-ui-swing-0.11.0...imagej-ui-swing-0.11.1 imagej-ui-swing-0.11.1]
 * [https://github.com/imagej/imagej-updater/compare/imagej-updater-0.7.2...imagej-updater-0.7.3 imagej-updater-0.7.3]
-| style="vertical-align: top" |
-* [https://github.com/scijava/scijava-plugins-commands/compare/scijava-plugins-commands-0.1.8...scijava-plugins-commands-0.2.0 scijava-plugins-commands-0.2.0]
-* [https://github.com/scijava/scijava-ui-swing/compare/scijava-ui-swing-0.5.0...scijava-ui-swing-0.6.0 scijava-ui-swing-0.6.0]
-* [https://github.com/scijava/scripting-java/compare/scripting-java-0.3.0...scripting-java-0.3.1 scripting-java-0.3.1]
+| style=vertical-align: top" |
+* [https://github.com/scifio/scifio-bf-compat/compare/scifio-bf-compat-1.11.0...scifio-bf-compat-2.0.0 scifio-bf-compat-2.0.0]
+* [https://github.com/scifio/scifio-cli/compare/scifio-cli-0.3.1...scifio-cli-0.3.2 scifio-cli-0.3.2]
+* [https://github.com/scifio/scifio-hdf5/compare/scifio-hdf5-0.1.0...scifio-hdf5-0.1.1 scifio-hdf5-0.1.1]
+* [https://github.com/scifio/scifio-ome-xml/compare/scifio-ome-xml-0.12.0...scifio-ome-xml-0.13.0 scifio-ome-xml-0.13.0]
+* [https://github.com/fiji/legacy-imglib1/compare/c475242394a7f59a4d857fe71d29068c611e3211...legacy-imglib1-1.1.4-DEPRECATED legacy-imglib1-1.1.4-DEPRECATED]
+* [https://github.com/fiji/Stitching/compare/64bab29dfdc4d0bdcd014df7384f18077730400d...Stitching_-3.0.2 Stitching_-3.0.2]
+* [https://github.com/bigdataviewer/SPIM_Registration/compare/SPIM_Registration-2.1.9...SPIM_Registration-2.1.10 SPIM_Registration-2.1.10]
 |}
 
-Significant changes include:
+=== What's new in ImageJ ===
 
 * Joe Hsiao fixed a bug with boolean parameters in headless mode ({{GitHub | org=imagej | repo=ij1-patcher | pr=36 | label=ij1-patcher#36}}).
 * Brian Northan improved deconvolution and FFT code in ImageJ OPS ({{GitHub | org=imagej | repo=imagej-ops | pr=114 | label=imagej-ops#114}}).
@@ -33,9 +44,15 @@ Significant changes include:
 * Mark Hiner added an option to toggle min/max computation to the File > Import > Image... command ({{GitHub | org=imagej | repo=imagej-plugins-commands | issue=23 | label=imagej-plugins-commands#23}}).
 * Curtis Rueden fixed a critical bug when running Java code in the Script Editor ({{GitHub | org=scripting | repo=scripting-java | commit=1e9c9fd2906c54def1adeb59c2197954db698d69 | label=scripting-java@1e9c9fd2}}).
 
+=== What's new in Fiji ===
+
+* Curtis Rueden updated Fiji to the Bio-Formats 5.1.0 release. Relevant components ({{GitHub | org=bigdataviewer | repo=SPIM_Registration | commit=e272ba84733b8ac0e1fcb7bea89a84ec568c0a35 | label=SPIM_Registration}}, {{GitHub | org=fiji | repo=legacy-imglib1 | commit=27a1c3c5ac9e63660b68012ee3057e8790f07975 | label=legacy-imglib1}}, {{GitHub | org=fiji | repo=Stitching | commit=171cc57b10bdd89ee8e0236e29281b090b9498b1 | label=Stitching}}, {{GitHub | org=scifio | repo=scifio-bf-compat | commit=c74fcce71569c2090be65bf0fdae47d2196fc8c3 | label=scifio-bf-compat}} and {{GitHub | org=scifio | repo=scifio-ome-xml | commit=aed9fd332dd7281793ded91d9c4960af13a4017b | label=scifio-ome-xml}}) now use the Bio-Formats 5.1 API.
+* Stephan Preibisch, Tobias Pietzsch and Peter Steinbach improved and fixed bugs in SPIM_Registration.
+
 == How to update ==
 
 Use the <code>Help > Update</code> command to update your [[ImageJ]] installation. Please send any comments to the [[Mailing Lists|ImageJ mailing list]]. Thanks for the continued feedback and support!
 
 [[Category:ImageJ2]]
+[[Category:Fiji]]
 [[Category:News]]
