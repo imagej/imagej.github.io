@@ -54,7 +54,9 @@ Use <code>tag</code> to specify a tag (rather than <code>master</code>):
 Use <code>issue</code> or <code>pr</code> to specify an issue or PR number:
 <pre>
 {{GitHub|issue=83|label=imagej#83}}
+{{GitHub|pr=88|label=imagej#88}}
 </pre>
+{{GitHub|issue=83|label=imagej#83}}
 {{GitHub|pr=88|label=imagej#88}}
 
 Use <code>label</code> to override the label:
