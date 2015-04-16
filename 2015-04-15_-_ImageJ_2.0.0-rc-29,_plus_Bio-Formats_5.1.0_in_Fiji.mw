@@ -36,18 +36,18 @@ These releases include new versions of several components:
 === What's new in ImageJ ===
 
 * Joe Hsiao fixed a bug with boolean parameters in headless mode ({{GitHub | org=imagej | repo=ij1-patcher | pr=36 | label=ij1-patcher#36}}).
-* Brian Northan improved deconvolution and FFT code in ImageJ OPS ({{GitHub | org=imagej | repo=imagej-ops | pr=114 | label=imagej-ops#114}}).
+* Brian Northan improved deconvolution and FFT code in [[ImageJ OPS]] ({{GitHub | org=imagej | repo=imagej-ops | pr=114 | label=imagej-ops#114}}).
 * Jan Eglinger added a small enhancement to the Manage Update Sites dialog UI ({{GitHub | org=imagej | repo=imagej-ui-swing | pr=38 | label=imagej-ui-swing#38}}).
 * Jan Eglinger improved the Console to scroll to the bottom to follow any new output ({{GitHub | org=scijava | repo=scijava-ui-swing | pr=8 | label=scijava-ui-swing#8}}).
 * Stephan Saalfeld fixed a problem with the Console where it stole the focus ({{GitHub | org=scijava | repo=scijava-ui-swing | pr=9 | label=scijava-ui-swing#9}}, {{GitHub | repo=fiji | issue=118 | label=fiji#118}}).
 * Curtis Rueden fixed bugs in [[ImageJ2]]'s About dialog box ([{{GitHub | org=imagej | repo=imagej-common | commit=d0ec5d8b4659670ee51c0127ccfe8dc7d4a70b08 | label=1}}], [{{GitHub | org=imagej | repo=imagej-common | commit=738b165cfb41bf473ab3e1233149b8a07731993c | label=2}}], [{{GitHub | org=imagej | repo=imagej-common | commit=286e0771291a9faaf51b7c08c758d302e5e2124f | label=3}}]), thanks to Vaughn Miller's {{GitHub | repo=fiji | issue=115 | label=bug report}}.
-* Mark Hiner added an option to toggle min/max computation to the File > Import > Image... command ({{GitHub | org=imagej | repo=imagej-plugins-commands | issue=23 | label=imagej-plugins-commands#23}}).
-* Curtis Rueden fixed a critical bug when running Java code in the Script Editor ({{GitHub | org=scripting | repo=scripting-java | commit=1e9c9fd2906c54def1adeb59c2197954db698d69 | label=scripting-java@1e9c9fd2}}).
+* Mark Hiner added an option to toggle min/max computation in [[SCIFIO]]'s File > Import > Image... command ({{GitHub | org=imagej | repo=imagej-plugins-commands | issue=23 | label=imagej-plugins-commands#23}}).
+* Curtis Rueden fixed a critical bug when running Java code in the [[Script Editor]] ({{GitHub | org=scripting | repo=scripting-java | commit=1e9c9fd2906c54def1adeb59c2197954db698d69 | label=scripting-java@1e9c9fd2}}).
 
 === What's new in Fiji ===
 
-* Curtis Rueden updated Fiji to the Bio-Formats 5.1.0 release. Relevant components ({{GitHub | org=bigdataviewer | repo=SPIM_Registration | commit=e272ba84733b8ac0e1fcb7bea89a84ec568c0a35 | label=SPIM_Registration}}, {{GitHub | org=fiji | repo=legacy-imglib1 | commit=27a1c3c5ac9e63660b68012ee3057e8790f07975 | label=legacy-imglib1}}, {{GitHub | org=fiji | repo=Stitching | commit=171cc57b10bdd89ee8e0236e29281b090b9498b1 | label=Stitching}}, {{GitHub | org=scifio | repo=scifio-bf-compat | commit=c74fcce71569c2090be65bf0fdae47d2196fc8c3 | label=scifio-bf-compat}} and {{GitHub | org=scifio | repo=scifio-ome-xml | commit=aed9fd332dd7281793ded91d9c4960af13a4017b | label=scifio-ome-xml}}) now use the Bio-Formats 5.1 API.
-* Stephan Preibisch, Tobias Pietzsch and Peter Steinbach improved and fixed bugs in SPIM_Registration.
+* Curtis Rueden updated Fiji to the [[Bio-Formats]] 5.1.0 release. Relevant components ({{GitHub | org=bigdataviewer | repo=SPIM_Registration | commit=e272ba84733b8ac0e1fcb7bea89a84ec568c0a35 | label=SPIM_Registration}}, {{GitHub | org=fiji | repo=legacy-imglib1 | commit=27a1c3c5ac9e63660b68012ee3057e8790f07975 | label=legacy-imglib1}}, {{GitHub | org=fiji | repo=Stitching | commit=171cc57b10bdd89ee8e0236e29281b090b9498b1 | label=Stitching}}, {{GitHub | org=scifio | repo=scifio-bf-compat | commit=c74fcce71569c2090be65bf0fdae47d2196fc8c3 | label=scifio-bf-compat}} and {{GitHub | org=scifio | repo=scifio-ome-xml | commit=aed9fd332dd7281793ded91d9c4960af13a4017b | label=scifio-ome-xml}}) now use the Bio-Formats 5.1 API.
+* Stephan Preibisch, Tobias Pietzsch and Peter Steinbach improved and fixed bugs in [[SPIM Registration]].
 
 == How to update ==
 
