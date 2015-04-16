@@ -38,7 +38,7 @@ These releases include new versions of several components:
 * Joe Hsiao fixed a bug with boolean parameters in headless mode ({{GitHub | org=imagej | repo=ij1-patcher | pr=36 | label=ij1-patcher#36}}).
 * Brian Northan improved deconvolution and FFT code in [[ImageJ OPS]] ({{GitHub | org=imagej | repo=imagej-ops | pr=114 | label=imagej-ops#114}}).
 * Jan Eglinger added a small enhancement to the Manage Update Sites dialog UI ({{GitHub | org=imagej | repo=imagej-ui-swing | pr=38 | label=imagej-ui-swing#38}}).
-* Jan Eglinger improved the Console to scroll to the bottom to follow any new output ({{GitHub | org=scijava | repo=scijava-ui-swing | pr=8 | label=scijava-ui-swing#8}}).
+* Jan Eglinger and Curtis Rueden improved the Console to scroll to the bottom to follow any new output ({{GitHub | org=scijava | repo=scijava-ui-swing | pr=8 | label=scijava-ui-swing#8}}).
 * Stephan Saalfeld fixed a problem with the Console where it stole the focus ({{GitHub | org=scijava | repo=scijava-ui-swing | pr=9 | label=scijava-ui-swing#9}}, {{GitHub | repo=fiji | issue=118 | label=fiji#118}}).
 * Curtis Rueden fixed bugs in [[ImageJ2]]'s About dialog box ([{{GitHub | org=imagej | repo=imagej-common | commit=d0ec5d8b4659670ee51c0127ccfe8dc7d4a70b08 | label=1}}], [{{GitHub | org=imagej | repo=imagej-common | commit=738b165cfb41bf473ab3e1233149b8a07731993c | label=2}}], [{{GitHub | org=imagej | repo=imagej-common | commit=286e0771291a9faaf51b7c08c758d302e5e2124f | label=3}}]), thanks to Vaughn Miller's {{GitHub | repo=fiji | issue=115 | label=bug report}}.
 * Mark Hiner added an option to toggle min/max computation in [[SCIFIO]]'s File > Import > Image... command ({{GitHub | org=imagej | repo=imagej-plugins-commands | issue=23 | label=imagej-plugins-commands#23}}).
