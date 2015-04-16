@@ -1653,7 +1653,7 @@ All the above is inspired by the [http://www.scipy.org/Cookbook/Weave Scientific
 
 === Reading command line arguments given to a script ===
 
-The Fiji launcher can execute scripts. When running scripts from the command line with the launcher, it is convenient to read out the arguments given to the script. For example, suppose you create a script to open an image file and do some processing with it, and you want to read the name of the file to open from the command line argument. Here's how:
+The Fiji launcher can execute scripts. When running scripts from the command line with the launcher, it is convenient to read out the arguments given to the script. For example, suppose you create a script to open an image file and do some processing with it, and you want to read the name of the file to open from the command line argument. Here is how:
 
 <source lang="python">
 import os, sys
