@@ -29,6 +29,20 @@ A [[BAR]] script (written in [[Beanshell_Scripting|BeanShell]]) that retrieves l
 ;Exclude peaks on edges of plot
 :If active, a peak is only accepted if it is separated by two qualified valleys. If disabled (the default), peaks at the limits of the data range (i.e., flanked only by one valley) are also considered.
 
+;List values
+:If active, the Plot's table will be displayed (as frontmost window), allowing values to be saved programmatically when calling ''Find Peaks'' from other macros or scripts. Examples:
+<source lang="java">
+// From an ImageJ macro
+run("Find Peaks", "min._peak_amplitude=35 min._peak_distance=0 min._value=NaN max._value=NaN list");
+saveAs("Results", "/Path/to/Output/Directory/Plot Values.csv");
+run("Close");
+
+// From a script
+IJ.run("Find Peaks", "min._peak_amplitude=35 min._peak_distance=0 min._value=NaN max._value=NaN list");
+IJ.saveAs("Results", "/Path/to/Output/Directory/Plot Values.csv");
+WindowManager.getActiveWindow().close()
+</source>
+
 == Notes ==
 * Both maxima and minima are listed in descending order, from the largest to smallest amplitude
 * Peaks with flat tops are retrieved at their centers
