@@ -1,11 +1,10 @@
 {{UpdateSites}}
 
-
-=== How do I make my update site appear in ImageJ's ''Manage update sites'' dialog? ===
+== How do I make my update site appear in ImageJ's ''Manage update sites'' dialog? ==
 
 The dialog is based on the [[List of update sites]] wiki page. You can edit that page to add your own update site.
 
-=== How do I remove a file from my update site? ===
+== How do I remove a file from my update site? ==
 
 An update site is a [https://en.wikipedia.org/wiki/Revision_control revision control] system where nothing is ever really deleted from the history.
 
@@ -22,28 +21,28 @@ Hence, there are two levels of removal: marking a file '''obsolete''', and '''de
 ** If you using a [[Personal Update Sites|personal update site]], then [[Help:Contents|contact an ImageJ administrator]] to have the offending file(s) removed.
 ** If you are hosting your own update site, then you must delete all versions of the file from the file system, ''and'' edit the ''db.xml.gz'' file to remove the ''<plugin>'' entry as well as any ''<dependency>'' elements in other entries which reference it.
 
-=== What are the Terms of Service for personal update sites? ===
+== What are the Terms of Service for personal update sites? ==
 
 # You agree to use your personal update site only for ImageJ extensions, and not hosting content for any other purpose.
 # You grant permission for anyone enabling your update site to use the functionality it provides for any legal purpose whatsoever.
 # You agree that you are making your functionality available free of charge, without any DRM, license codes or similar restrictions.
 # It is strongly encouraged, but not required, for your functionality to use an [[open source]] license.
 
-=== How do I set a password for my personal update site? ===
+== How do I set a password for my personal update site? ==
 
 Use [[Special:ChangeUploadPassword|this page]] to set a password for ''uploading'' content.
 
 If you want to restrict which users can ''access'' your update site, please note that the [[Personal Update Sites]] service is only intended for freely available plugins. To restrict user access, you will need to host the update site yourself, sharing the URL only with your customers. Implementing an authentication scheme on top of an ImageJ update site is outside the scope of ImageJ—consider using something like [http://oauth.net/ OAuth].
 
-=== How do I delete my personal update site? ===
+== How do I delete my personal update site? ==
 
 If you want to completely remove your update site, [[Help:Contents|contact an ImageJ administrator via the mailing list]] to have the site removed.
 
-=== Can I manipulate the files on my update site directly? (E.g., via WebDAV?) ===
+== Can I manipulate the files on my update site directly? (E.g., via WebDAV?) ==
 
 Please don't! Update sites are intended to be accessed ''only'' via ImageJ's [[Updater]]. There is important metadata in the ''db.xml.gz'' file which ''must'' be kept in sync with the files in the directory structure. Otherwise, your update site will stop working properly.
 
-=== Why don't I have an upload option? ===
+== Why don't I have an upload option? ==
 
 When working with the updater, it's important to understand that there are two types of operations: upload and download. To avoid corrupting local or remote plugin databases, the two classes of operation are mutually exclusive - if actions of one type are scheduled, actions of the other type will not be available. For most users, the updater only performs download operations and this is not an issue. However, when managing an update site the we frequently run into scenarios of conflict between these operations.
 
