@@ -5,7 +5,7 @@
 | maintainer     = [[User:Tiago|Tiago Ferreira]]
 | source         = {{GitHub|org=tferr|repo=Scripts}}
 | released       = June 2014
-| latest version = '''1.1.2 March 2015''' ({{GitHub|org=tferr|repo=Scripts/releases|label=released versions}})
+| latest version = '''1.1.3 April 2015''' ({{GitHub|org=tferr|repo=Scripts/releases|label=released versions}})
 | category       = [[:Category:Analysis|Analysis]], [[:Category:Image annotation|Annotation]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Scripting|Scripting]]
 }}{{TOC right}}
 '''BAR''': A collection of '''B'''roadly '''A'''pplicable '''R'''outines.
