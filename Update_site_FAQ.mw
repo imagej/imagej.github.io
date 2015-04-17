@@ -60,7 +60,7 @@ A typical sequence of events:
 
 To continue with your upload, you have to resolve the pending downloads in one of two ways:
 
-* If there are legitimate pending updates, perform the download/installation and restart Fiji.
+* If there are legitimate pending updates, perform the download/installation and restart ImageJ.
 * If you deleted files locally to make them obsolete, mark the files "Keep as-is".
 
 The ''View changes'' option is helpful to identify what downloads are pending. Once all of these are at a neutral state—with everything up-to-date or keep as-is—you can start flagging your files for upload as intended.
