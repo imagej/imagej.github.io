@@ -58,7 +58,7 @@ A typical sequence of events:
 * Or, the updater sees you deleted a file (i.e. one you are about to mark obsolete) and flags it for installation—since it's still tracked by the remote update site.
 * You try to mark your file to upload it, but the Upload to server/Obsolete options are not available.
 
-The continue with your upload, you have to resolve the pending downloads in one of two ways:
+To continue with your upload, you have to resolve the pending downloads in one of two ways:
 
 * If there are legitimate pending updates, perform the download/installation and restart Fiji.
 * If you deleted files locally to make them obsolete, mark the files "Keep as-is".
