@@ -23,8 +23,8 @@ You can mark any file previously uploaded as obsolete.  This will not delete old
 === Deleting a file completely from the history ===
 
 Deleting a file from the history is strongly not recommended, but if you ''must'' do so (e.g., for legal or privacy reasons):
-** If you using a [[Personal Update Sites|personal update site]], then [[Help:Contents|contact an ImageJ administrator]] to have the offending file(s) removed.
-** If you are hosting your own update site, then you must delete all versions of the file from the file system, ''and'' edit the ''db.xml.gz'' file to remove the ''<plugin>'' entry as well as any ''<dependency>'' elements in other entries which reference it.
+* If you using a [[Personal Update Sites|personal update site]], then [[Help:Contents|contact an ImageJ administrator]] to have the offending file(s) removed.
+* If you are hosting your own update site, then you must delete all versions of the file from the file system, ''and'' edit the ''db.xml.gz'' file to remove the ''<plugin>'' entry as well as any ''<dependency>'' elements in other entries which reference it.
 
 == What are the Terms of Service for personal update sites? ==
 
