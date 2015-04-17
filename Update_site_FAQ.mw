@@ -49,7 +49,7 @@ Please don't! Update sites are intended to be accessed ''only'' via ImageJ's [[U
 
 == Why don't I have an upload option? ==
 
-When working with the updater, it's important to understand that there are two types of operations: upload and download. To avoid corrupting local or remote plugin databases, the two classes of operation are mutually exclusive—if actions of one type are scheduled, actions of the other type will not be available. For most users, the updater only performs download operations and this is not an issue. However, when managing an update site the we frequently run into scenarios of conflict between these operations.
+When working with the updater, it's important to understand that there are two types of operations: upload and download. To avoid corrupting local or remote plugin databases, the two classes of operation are mutually exclusive—if actions of one type are scheduled, actions of the other type will not be available. For most users, the updater only performs download operations and this is not an issue. However, when managing an update site, there can be scenarios of conflict between these operations.
 
 A typical sequence of events:
 
