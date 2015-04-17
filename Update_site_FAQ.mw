@@ -16,7 +16,7 @@ You can mark any file previously uploaded as obsolete.  This will not delete old
 # If the file is not hosted by any other active update site, delete it from your local installation. Note: if the file '''is''' hosted on another update site, this is called '''shadowing'''—you do not need to delete the file as marking it obsolete will revert it to the other update site's version.
 # Start the [[Updater|updater]] and click the ''Advanced mode'' button.
 # Select the ''View files of the '[your site name here]''' option.
-# '''NB:''' If you deleted the file in step 1, it will be marked "'''Install it'''" automatically by the updater - right click the file and change it to "Keep as-is". See [[#Why don't I have an upload option?|this FAQ entry]] for an explanation.
+# '''NB:''' If you deleted the file in step 1, it will be marked "'''Install it'''" automatically by the updater—right click the file and change it to "Keep as-is". See [[#Why don't I have an upload option?|this FAQ entry]] for an explanation.
 # Right click and choose "Mark obsolete" for the deleted file.
 # Upload the changes.
 
@@ -49,13 +49,13 @@ Please don't! Update sites are intended to be accessed ''only'' via ImageJ's [[U
 
 == Why don't I have an upload option? ==
 
-When working with the updater, it's important to understand that there are two types of operations: upload and download. To avoid corrupting local or remote plugin databases, the two classes of operation are mutually exclusive - if actions of one type are scheduled, actions of the other type will not be available. For most users, the updater only performs download operations and this is not an issue. However, when managing an update site the we frequently run into scenarios of conflict between these operations.
+When working with the updater, it's important to understand that there are two types of operations: upload and download. To avoid corrupting local or remote plugin databases, the two classes of operation are mutually exclusive—if actions of one type are scheduled, actions of the other type will not be available. For most users, the updater only performs download operations and this is not an issue. However, when managing an update site the we frequently run into scenarios of conflict between these operations.
 
 A typical sequence of events:
 
 * You start the updater
 * The updater sees new remote updates and marks them for installation/update.
-* Or, the updater sees you deleted a file (i.e. one you are about to mark obsolete) and flags it for installation - since it's still tracked by the remote update site.
+* Or, the updater sees you deleted a file (i.e. one you are about to mark obsolete) and flags it for installation—since it's still tracked by the remote update site.
 * You try to mark your file to upload it, but the Upload to server/Obsolete options are not available.
 
 The continue with your upload, you have to resolve the pending downloads in one of two ways:
@@ -63,4 +63,4 @@ The continue with your upload, you have to resolve the pending downloads in one 
 * If there are legitimate pending updates, perform the download/installation and restart Fiji.
 * If you deleted files locally to make them obsolete, mark the files "Keep as-is".
 
-The ''View changes'' option is helpful to identify what downloads are pending. Once all of these are at a neutral state - with everything up-to-date or keep as-is - you can start flagging your files for upload as intended.
+The ''View changes'' option is helpful to identify what downloads are pending. Once all of these are at a neutral state—with everything up-to-date or keep as-is—you can start flagging your files for upload as intended.
