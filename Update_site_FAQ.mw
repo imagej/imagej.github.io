@@ -13,7 +13,7 @@ Hence, there are two levels of removal: marking a file '''obsolete''', and '''de
 === Marking a file obsolete ===
 
 You can mark any file previously uploaded as obsolete.  This will not delete old versions of the file, but will ensure anyone updating to the latest version of your update site will no longer download that file:
-# If the file is not hosted by any other active update site, delete it from your local installation. Note: if the file '''is''' hosted on another update site, this is called '''shadowing''' - you do not need to delete the file as marking it obsolete will revert it to the other update site's version.
+# If the file is not hosted by any other active update site, delete it from your local installation. Note: if the file '''is''' hosted on another update site, this is called '''shadowing'''—you do not need to delete the file as marking it obsolete will revert it to the other update site's version.
 # Start the [[Updater|updater]] and click the ''Advanced mode'' button.
 # Select the ''View files of the '[your site name here]''' option.
 # '''NB:''' If you deleted the file in step 1, it will be marked "'''Install it'''" automatically by the updater - right click the file and change it to "Keep as-is". See [[#Why don't I have an upload option?|this FAQ entry]] for an explanation.
