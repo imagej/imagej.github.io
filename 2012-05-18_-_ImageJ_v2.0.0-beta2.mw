@@ -1,0 +1,41 @@
+In keeping with the fine tradition of making a release on Friday afternoon, and immediately going on vacation, the ImageJDev team is pleased to release the second beta of ImageJ2, version 2.0.0-beta2!
+
+ImageJ 2.0.0-beta2 is a &quot;beta&quot;-quality release, meaning the code is not finished. The design is more stable than before but still subject to change until the final 2.0.0 release. It is recommended that people continue to use [[ImageJ 1.x]] for critical work.
+
+Download using the link below, or from the [[downloads|Downloads page]], which also has a timetable for future releases.
+
+The ImageJ2 user interface is modeled after ImageJ v1.x as much as possible. However, under the hood, ImageJ2 is a complete redesign of ImageJ. It provides backward compatibility with older versions of ImageJ by bundling the latest v1.x code and translating between &quot;legacy&quot; and &quot;modern&quot; image structures.
+
+== What's new ==
+
+The beta still has many bugs and limitations, but we have made some progress: ImageJ2 now has better support for headless image displays, and some critical bugs were also fixed. In particular, ImageJ2 should now work on Mac OS X 10.5 Leopard.
+
+== Known bugs ==
+
+Many legacy ImageJ plugins and macros work; many others do not. There are still many bugs. In particular, there are a few issues specifically regarding 2.0.0-beta2:
+
+* On Windows &amp; Linux, you must have Java already installed; ImageJ2 is not bundled with Java, nor will it download it for you.
+* Image windows do not always pack correctly, resulting in scroll bars.
+* [[http://trac.imagej.net/ticket/1188 #1188]] Also on Windows &amp; Linux, the menu bar is sometimes unresponsive.
+* [[http://trac.imagej.net/ticket/1190 #1190]] Using a drawing tool on a panned or zoomed image does not draw in the right place.
+* [[http://trac.imagej.net/ticket/1186 #1186]] Zooming does not follow the mouse cursor properly.
+
+We are hoping to fix most of the above issues for the next beta.
+
+== Roadmap and future directions ==
+
+We make a substantial effort to document the work we are doing, and what needs to be done, to deliver a powerful and full-featured ImageJ2. All tasks are tracked by our Trac issue tracking system, which you can review in several ways:
+
+* [http://trac.imagej.net/roadmap Roadmap] - Top level overview of future releases, including progress toward each release
+* [http://trac.imagej.net/report/14 Active Features by Milestone] - A high-level list of features slated for each future release
+* [http://trac.imagej.net/report/16 Active Bugs] - A complete list of known bugs
+* [http://trac.imagej.net/report/3 Active Tickets by Milestone] - A complete list of everything left to do for each future release
+
+You can also perform custom queries to further refine the results, if there are particular parts of the development that interest you.
+
+== Thanks ==
+
+Thanks for your interest in ImageJ2! Please [[downloads|give it a try]], and feel free to [[Report a Bug|report any bugs you find]]!
+
+[[Category:News]]
+[[Category:ImageJ2]]
