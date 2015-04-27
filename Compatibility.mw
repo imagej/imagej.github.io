@@ -20,7 +20,7 @@ However, things are complicated by the fact that ImageJ1 was not designed with s
 
 Each {{Javadoc | package = net/imagej/display | class = ImageDisplay}} has a linked {{Javadoc | project = ImageJ1 | package = ij | class =ImagePlus}}, kept in sync by the {{Javadoc | package = net/imagej/legacy | class = LegacyImageMap}}. Whenever the need arises, the legacy layer syncs the linked data objects. In order to maintain reasonable performance, every opportunity is taken to avoid data translation by making data changes in place, and only on demand (lazily, with caching). The legacy layer reuses data by reference when feasible—in particular, when image planes are stored in primitive arrays—but in some cases the data must be copied (e.g., for ROIs).
 
-Currently, automatic synchornization is disabled as it has negative performance implications. The planned solution to the performance problems is to [https://github.com/imagej/imagej-legacy/issues/86 implement a wrapping layer], instead of relying on up-front pixel-wise translation.
+Currently, automatic synchronization is disabled as it has negative performance implications. The planned solution to the performance problems is to {{GitHub | org=imagej | repo=imagej-legacy | issue=86 | label=implement a wrapping layer}}, instead of relying on up-front pixel-wise translation.
 
 In the mean time, full synchronization can be forced by setting a <code>imagej.legacy.sync</code> [https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html system property]. This can be done in a running ImageJ instance, for example by running the following as a [[BeanShell_Scripting|Beanshell script]]:
 
