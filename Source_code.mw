@@ -56,7 +56,7 @@ Note that these tutorials are targeted towards [[ImageJ2|ImageJ]], but would app
 
 == Javadocs ==
 
-You can browse the [http://javadoc.imagej.net/ Javadocs] online.
+{{Tip | tip=You can search the javadocs at http://search.imagej.net/ using the Javadoc button!}}You can browse the [http://javadoc.imagej.net/ Javadocs] online.
 
 Each organization has its own [[Git]] repository and [[Jenkins]] job responsible for generating its javadocs:
 {| class="wikitable nicetable"
