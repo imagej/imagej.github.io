@@ -1,4 +1,34 @@
-[[ImageJ]] developers frequent IRC on [http://freenode.net/ irc.freenode.net], in chat rooms:
+[[ImageJ]] developers are often available via a couple of different chat services.
+
+== Gitter ==
+
+The [https://en.wikipedia.org/wiki/Gitter Gitter] chat service, while relatively new, is a great way to discuss programming issues with developers of the SciJava software stack. All you need is a [https://github.com/ GitHub] account. Advantages of Gitter include a nice "21st century" web interface, email notification when participants miss messages, and a full searchable history.
+
+{| class="wikitable nicetable"
+| '''Logo'''
+| '''Organization'''
+| '''Chat room'''
+|-
+| [[File:Imagej2-icon.png|48px]]
+| [[ImageJ]]
+| [https://gitter.im/imagej/imagej imagej/imagej]
+|-
+| [[File:Imglib2-icon.png|48px]]
+| [[ImgLib2]]
+| [https://gitter.im/imglib/imglib2 imglib/imglib2]
+|-
+| [[File:Scifio-icon.png|48px]]
+| [[SCIFIO]]
+| [https://gitter.im/scifio/scifio scifio/scifio]
+|-
+| [[File:Fiji-icon.png|48px]]
+| [[Fiji]]
+| [https://gitter.im/fiji/fiji fiji/fiji]
+|}
+
+== IRC ==
+
+Developers frequent [https://en.wikipedia.org/wiki/Internet_Relay_Chat IRC] on [http://freenode.net/ irc.freenode.net], in chat rooms:
 {| class="wikitable"
 |-
 ! Channel
@@ -13,6 +43,7 @@
 | [[Fiji]] user and developer discussion and questions.
 | [http://code.imagej.net/chatlogs/fiji-devel fiji-devel logs]
 |}
+Advantages of IRC include anonymity, and maximum compatibility with a huge variety of existing chat clients.
 
 If Javascript is enabled in your browser, you can connect to '''#fiji-devel''' right away, right here, by entering the captcha and clicking ''Connect'' (you can set your nickname using <tt>/nick <REPLACE-WITH-YOUR-NICKNAME></tt>):
 
