@@ -17,7 +17,7 @@ Releases are [[Architecture#Versioning|versioned with Semantic Versioning]].
 
 == Issue tracking ==
 
-SciJava software projects manage tasks and priorities using [https://github.com/organizations/imagej/dashboard/issues/repos GitHub Issues]:
+{{Tip | tip=You can search for existing issues at http://search.imagej.net/ using the GitHub button!}}SciJava software projects manage tasks and priorities using [https://github.com/organizations/imagej/dashboard/issues/repos GitHub Issues]:
 
 {| class="wikitable nicetable"
 | '''Logo'''
