@@ -52,11 +52,11 @@ For further details, see the [[SCIFIO]] page.
 ImageJ2 is also a collection of reusable software libraries built on the [http://www.scijava.org/ SciJava] software stack, using a powerful plugin framework to facilitate rapid development and painless user customization.
 
 The following software component libraries form the core of ImageJ2:
-* {{GitHub|org=imagej|repo=imagej-common|label=ImageJ Common}} - The core image data model, using ImgLib2.
-* {{GitHub|org=imagej|repo=imagej-ops|label=ImageJ OPS}} - An extensible framework for reusable image processing algorithms.
-* {{GitHub|org=imagej|repo=imagej-updater|label=ImageJ Updater}} - A mechanism to update individual plugins and libraries within ImageJ.
-* {{GitHub|org=imagej|repo=imagej-legacy|label=ImageJ Legacy}} - Provides complete backwards compatibility with ImageJ 1.x.
-* {{GitHub|org=scijava|repo=scijava-common|label=SciJava Common}} - The core frameworks for plugins, modules and the application itself.
+* [[ImageJ Common]] - The core image data model, using ImgLib2.
+* [[ImageJ OPS]] - An extensible framework for reusable image processing algorithms.
+* ImageJ [[Updater]] - A mechanism to update individual plugins and libraries within ImageJ.
+* [[ImageJ Legacy]] - Provides complete backwards compatibility with ImageJ 1.x.
+* [[SciJava Common]] - The core frameworks for plugins, modules and the application itself.
 
 See the [[Architecture]] page for further details.
 
