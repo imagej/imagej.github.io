@@ -56,7 +56,7 @@ For example, instead of just displaying "Name", we can add a custom label and de
 
 <source lang="python">
 # A simple python script
-# @String name (label=Please enter your name,description=Name field)
+# @String name (label="Please enter your name",description="Name field")
 # @OUTPUT String greeting
 
 # A Jython script with parameters.
