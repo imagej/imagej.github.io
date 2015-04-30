@@ -34,7 +34,6 @@ When the script is completed, we expect to have a <code>String</code> variable n
 Note that if we added an extra comment to the top of our script we would break the script, as the parameters would not be harvested or displayed due to violation of the second parameter rule: 
 
 <source lang="python">
-# A simple python script
 # @String name
 # @OUTPUT String greeting
 
