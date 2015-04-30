@@ -55,8 +55,7 @@ If you look at the [https://github.com/scijava/scijava-common/blob/scijava-commo
 For example, instead of just displaying "Name", we can add a custom label and description to the name field of our Greeting.py script as follows:
 
 <source lang="python">
-# A simple python script
-# @String name (label="Please enter your name",description="Name field")
+# @String(label="Please enter your name",description="Name field") name
 # @OUTPUT String greeting
 
 # A Jython script with parameters.
