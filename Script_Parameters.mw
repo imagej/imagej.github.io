@@ -1,6 +1,10 @@
-{{Scripting}}There is a universal <code>@parameter</code> notation available across all scripts for declaring inputs and outputs. This approach is preferred to using ImageJ 1.x <code>GenericDialog</code> because it is totally agnostic to the user interface, allowing such scripts to run in a variety of contexts.
+{{Scripting}}
 
-The rules for <code>@parameter</code> use is as follows:
+All scripting languages have access to a universal <code>@parameter</code> notation for declaring inputs and outputs. This approach is preferred to using ImageJ 1.x <code>GenericDialog</code> because it is totally agnostic of the user interface, allowing such scripts to run in a variety of contexts. As with [[Writing_ImageJ2_plugins|ImageJ2 plugins]], script parameterization is based on the [[SciJava]] [https://github.com/scijava/scijava-common/blob/scijava-common-2.40.0/src/main/java/org/scijava/plugin/Parameter.java @Parameter annotation] - so experience with plugin writing directly translates to scripting, and vice versa. 
+
+== Basic syntax ==
+
+The rules for <code>@parameter</code> use are as follows:
 
 <ol>
 <li>All parameter declarations must appear in comments. Each comment line contains a single parameter declaration and nothing else.</li>
@@ -9,7 +13,7 @@ The rules for <code>@parameter</code> use is as follows:
 <li><code>@OUTPUT type outputName</code> will declare the variable of the specified name as an output parameter with the given type.</li>
 </ol>
 
-For example, if we look at the Greeting.py template supplied with Fiji:
+For example, if we look at the [https://github.com/scijava/scripting-jython/blob/scripting-jython-0.2.0/src/main/resources/script_templates/Python/Greeting.py Greeting.py] [[Script_Templates|template]] supplied with Fiji:
 
 <source lang="python">
 # @String name
@@ -27,7 +31,7 @@ We see that an input parameter <code>name</code> of type <code>String</code> is 
 
 When the script is completed, we expect to have a <code>String</code> variable named <code>greeting</code> which will be displayed as appropriate, based on the variable type.
 
-Note that if we added an extra comment to the top of our script as such: 
+Note that if we added an extra comment to the top of our script we would break the script, as the parameters would not be harvested or displayed due to violation of the second parameter rule: 
 
 <source lang="python">
 # A simple python script
@@ -42,6 +46,27 @@ Note that if we added an extra comment to the top of our script as such:
 greeting = "Hello, " + name + "!"
 </source>
 
-We would actually break the script, as the parameters would not be harvested or displayed due to violation of the second parameter rule.
+Keep this in mind when adding documentation to your scripts.
+
+== Parameter properties ==
+
+If you look at the [https://github.com/scijava/scijava-common/blob/scijava-common-2.40.0/src/main/java/org/scijava/plugin/Parameter.java @Parameter annotation], you will notice it has many properties - for example, <code>name</code> and <code>description</code>. In Java, annotations can accept [https://docs.oracle.com/javase/tutorial/java/annotations/basics.html comma-separated key=value properties]. Script parameters preserve this property syntax, with the additional requirement that all parameters are enclosed in a '''single parenthetical expression'''.
+
+For example, instead of just displaying "Name", we can add a custom label and description to the name field of our Greeting.py script as follows:
+
+<source lang="python">
+# A simple python script
+# @String name (label=Please enter your name,description=Name field)
+# @OUTPUT String greeting
+
+# A Jython script with parameters.
+# It is the duty of the scripting framework to harvest
+# the 'name' parameter from the user, and then display
+# the 'greeting' output parameter, based on its type.
+
+greeting = "Hello, " + name + "!"
+</source>
+
+It is up to the current UI framework how to deal with these properties. By default, the <code>label</code> will change the input field label, while <code>description</code> will change the mouse-over text.
 
 [[Category:Scripting]]
