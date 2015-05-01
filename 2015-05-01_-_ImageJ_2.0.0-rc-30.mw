@@ -29,8 +29,8 @@ These releases include new versions of several components:
 
 === Highlights ===
 
-* ImageJ2 commands and scripts are now macro-recordable ({{GitHub | org=imagej | repo=imagej-legacy | commit=02e9e46296a9fd44962b3cd7ccda12d53183e704 | label=imagej-legacy-02e9}}).
-* Script parameters now have reasonable default values ({{GitHub | org=scijava | repo=scijava-ui-swing | commit=7dc0af5e65ee3238f0d5116bba25dd7f35c438e8 | label=scijava-ui-swing-7dc0}}) which can be explicitly set ({{GitHub | org=scijava | repo=scijava-common | commit=3fdc5df4e93577be70d20d994bfc830e5dcb1676 | label=scijava-common-3fdc}}).
+* ImageJ2 commands and scripts are now macro-recordable ({{GitHub | org=imagej | repo=imagej-legacy | commit=02e9e46296a9fd44962b3cd7ccda12d53183e704 | label=imagej-legacy@02e9e462}}).
+* Script parameters now have reasonable default values ({{GitHub | org=scijava | repo=scijava-ui-swing | commit=7dc0af5e65ee3238f0d5116bba25dd7f35c438e8 | label=scijava-ui-swing@7dc0af5e}}) which can be explicitly set ({{GitHub | org=scijava | repo=scijava-common | commit=3fdc5df4e93577be70d20d994bfc830e5dcb1676 | label=scijava-common@3fdc5df4}}).
 
 == How to update ==
 
