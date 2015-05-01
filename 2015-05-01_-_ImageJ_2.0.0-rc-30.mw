@@ -12,9 +12,9 @@ These releases include new versions of several components:
 ! [https://github.com/fiji Fiji]
 |-
 | style="vertical-align: top" |
-* [https://github.com/scijava/scijava-ui-swing/compare/scijava-ui-swing-0.6.0...scijava-ui-swing-0.6.1 scijava-ui-swing-0.6.1]
-* [https://github.com/scijava/scripting-jython/compare/scripting-jython-0.2.0...scripting-jython-0.2.1 scripting-jython-0.2.1]
-* [https://github.com/scijava/scijava-common/compare/scijava-common-2.40.0...scijava-common-2.41.0 scijava-common-2.41.0]
+* [https://github.com/scijava/scijava-ui-swing/compare/scijava-ui-swing-0.6.0...scijava-ui-swing-0.6.1 scijava-ui-swing 0.6.1]
+* [https://github.com/scijava/scripting-jython/compare/scripting-jython-0.2.0...scripting-jython-0.2.1 scripting-jython 0.2.1]
+* [https://github.com/scijava/scijava-common/compare/scijava-common-2.40.0...scijava-common-2.41.0 scijava-common 2.41.0]
 | style="vertical-align: top" |
 * [https://github.com/imagej/imagej-legacy/compare/imagej-legacy-0.14.0...imagej-legacy-0.15.0 imagej-legacy 0.15.0]
 * [https://github.com/imagej/imagej-ops/compare/imagej-ops-0.11.0...imagej-ops-0.12.0 imagej-ops 0.12.0]
