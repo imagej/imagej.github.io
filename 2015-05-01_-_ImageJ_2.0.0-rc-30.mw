@@ -1,5 +1,7 @@
 Today, the [[Contributors|ImageJ team]] has made a new release of [[ImageJ2]]: version 2.0.0-rc-30. This release includes bug fixes and usability improvements, especially for [[Scripting|scripting]].
 
+In addition, the [[Contributors|Fiji team]] has updated several components of the [[Fiji]] distribution.
+
 == What's new ==
 
 These releases include new versions of several components:
