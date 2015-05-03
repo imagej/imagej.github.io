@@ -1,0 +1,9 @@
+{{Infobox
+| software               = ImageJ/Fiji
+| name                   = Non Local Means Denoise
+| maintainer             = [mailto:wagner@biomedical-imaging.de Thorsten Wagner]
+| author                 = Pascal  Behnel, Thorsten Wagner
+| source                 = GitHub [https://github.com/jumpfunky/ij-nl-means [2]]
+| status                 = maintaining
+| category               = [[:Category:Plugins]]
+}}
