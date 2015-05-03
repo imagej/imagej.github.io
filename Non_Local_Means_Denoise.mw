@@ -3,7 +3,7 @@
 | name                   = Non Local Means Denoise
 | maintainer             = [mailto:wagner@biomedical-imaging.de Thorsten Wagner]
 | author                 = Pascal  Behnel, Thorsten Wagner
-| jar-file               = GitHub [https://github.com/jumpfunky/ij-nl-means/releases/tag/v.1.4.0 [1]]
+| filename               = ij_nl_means-1.4.0.jar GitHub [https://github.com/jumpfunky/ij-nl-means/releases/tag/v.1.4.0 [1]]
 | source                 = GitHub [https://github.com/jumpfunky/ij-nl-means [2]]
 | status                 = maintaining
 | category               = [[:Category:Plugins]]
