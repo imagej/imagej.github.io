@@ -9,7 +9,7 @@
 | category               = [[:Category:Plugins]]
 }}
 = Purpose =
-This is an ImageJ Plugin for denosing images via the non-local-means algorithm descriped in
+This is an ImageJ plugin for denosing images via the non-local-means algorithm descriped in
 
 ''Antoni Buades, Bartomeu Coll, and Jean-Michel Morel, Non-Local Means Denoising, Image Processing On Line, vol. 2011.'' 
 
@@ -22,6 +22,9 @@ It is numerically optimized and multithreaded. It works with all image types (RG
 This plugin was developed within the scope of a study work of Pascal Behnel and is maintained by Thorsten Wagner (Both are members of the Biomedical Imaging Group).
 
 =Settings=
+
+=Example=
+[[File:Lena-noise-25.png]]
 
 =Installation=
 
