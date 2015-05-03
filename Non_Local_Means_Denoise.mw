@@ -8,12 +8,13 @@
 | status                 = maintaining
 | category               = [[:Category:Plugins]]
 }}
-== Description ==
-This is an ImageJ Plugin for denosing images via the non-local-means algorithm descriped by Buades et al.: Antoni Buades, Bartomeu Coll, and Jean-Michel Morel, Non-Local Means Denoising, Image Processing On Line, vol. 2011. including the changes proposed by "FAST NONLOCAL FILTERING APPLIED TO ELECTRON CRYOMICROSCOPY" by Darbon et al.
+== Purpose ==
+This is an ImageJ Plugin for denosing images via the non-local-means algorithm descriped in
+''Antoni Buades, Bartomeu Coll, and Jean-Michel Morel, Non-Local Means Denoising, Image Processing On Line, vol. 2011.'' 
+including the changes proposed by 
+''Darbon, J. et al., 2008. Fast nonlocal filtering applied to electron cryomicroscopy. In 2008 5th IEEE International Symposium on Biomedical Imaging: From Nano to Macro, Proceedings, ISBI. IEEE, pp. 1331–1334.''
 
-It is numerically optimized and multithreaded.
-
-It works with all image types (RGB, 32 Bit, 16 Bit, 8 Bit).
+It is numerically optimized and multithreaded. It works with all image types (RGB, 32 Bit, 16 Bit, 8 Bit).
 
 This plugin was developed within the scope of a study work of Pascal Behnel and is maintained by Thorsten Wagner (Both are members of the Biomedical Imaging Group).
 
