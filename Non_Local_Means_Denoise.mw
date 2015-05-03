@@ -28,6 +28,8 @@ This plugin was developed within the scope of a study work of Pascal Behnel and 
 
 '''Auto estimate sigma:''' If this option is selected, the sigma is automatically estimated by the method descriped in Implements the gaussian noise level estimation algorithm of  ''Immerkaer, J., 1996. Fast noise variance estimation. Computer Vision and Image Understanding.'' 
 
+Both, the value for the (estimated) sigma and the smoothing factor are saved in the imagej preferences and are accessible with the keys "nlmean.sigma" / "nlmeans.smoothingfactor". 
+
 =Example=
 [[File:Lena-noise-25.png|250px]] [[File:Lena-denoised.png|250px]]
 
