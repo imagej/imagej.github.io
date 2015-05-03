@@ -22,9 +22,11 @@ It is numerically optimized and multithreaded. It works with all image types (RG
 This plugin was developed within the scope of a study work of Pascal Behnel and is maintained by Thorsten Wagner (Both are members of the Biomedical Imaging Group).
 
 =Settings=
-'''Sigma:''' 
-'''Smoothing factor:'''
-'''Auto estimate sigma:'''
+'''Sigma:''' The sigma of the noise. 
+
+'''Smoothing factor:''' In most cases, the default value (1) should not be changed. However, sometimes a more smoothed image is desired which can be archived by selecting values > 1.
+
+'''Auto estimate sigma:''' If this option is selected, the sigma is automatically estimated by the method descriped in Implements the gaussian noise level estimation algorithm of  ''Immerkaer, J., 1996. Fast noise variance estimation. Computer Vision and Image Understanding.'' 
 
 =Example=
 [[File:Lena-noise-25.png|250px]] [[File:Lena-denoised.png|250px]]
