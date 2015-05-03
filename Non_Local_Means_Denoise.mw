@@ -8,3 +8,7 @@
 | status                 = maintaining
 | category               = [[:Category:Plugins]]
 }}
+
+=Installation=
+
+You could simply use our update site "[http://fiji.sc/List_of_update_sites biomedgroup]" to install non local means plugin or copy the jar file into your plugins folder.
