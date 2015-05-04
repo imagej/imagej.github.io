@@ -224,7 +224,7 @@ Implements Sauvola's thresholding method, which is a variation of Niblack's meth
 | title = Adaptive Document Image Binarization
 | volume = 33(2)
 | pages = 225-236
-|url = http://www.ee.oulu.fi/mvg/publications/show_pdf.php?ID=24
+|url = http://www.ee.oulu.fi/research/mvmp/mvg/files/pdf/pdf_24.pdf
 }}
 
 Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
