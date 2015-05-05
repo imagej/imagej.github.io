@@ -83,7 +83,7 @@ If the ''local contrast'' is below the ''contrast threshold'' the neighbourhood 
 | title = Survey over Image Thresholding Techniques and Quantitative Performance Evaluation
 | volume = 13(1)
 | pages = 146-165
-| url = http://citeseer.ist.psu.edu/sezgin04survey.html
+| url = http://webdocs.cs.ualberta.ca/~nray1/CMPUT605/track3_papers/Threshold_survey.pdf
 }}
 
 Based on ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fourier-ipal] and [http://www.lsus.edu/faculty/~ecelebi/fourier.htm].
