@@ -67,4 +67,14 @@ greeting = "Hello, " + name + "!"
 
 It is up to the current UI framework how to deal with these properties. By default, the <code>label</code> will change the input field label, while <code>description</code> will change the mouse-over text.
 
+=== Default values ===
+
+Currently, default values are supported as parameter properties:
+
+<source lang="python">
+# @Integer(label="An integer!",value=15) someInt
+</source>
+
+Eventually, we would like to add support for standard variable assignment syntax (e.g. <code>someInt = 15</code>).
+
 [[Category:Scripting]]
