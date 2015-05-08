@@ -189,7 +189,7 @@ Note that the relationship between milestones and software releases can be one-t
 
 The preferred mechanism to contribute improvements to [[ImageJ]] and other [[SciJava]] components is using [https://help.github.com/articles/using-pull-requests/ GitHub pull requests]! See the [[Contributing]] page for details.
  
-== Other roadmap links ==
+== Roadmap links ==
 
 * [[News]] about ImageJ and Fiji developments, including status updates, observations and comments about ImageJ programming.
 * [[Special:RecentChanges|Recent changes]] to this web site (''not'' the ImageJ code itself).
