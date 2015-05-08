@@ -177,9 +177,17 @@ The preferred mechanism to contribute improvements to [[ImageJ]] and other [[Sci
  
 == Continuous integration ==
 
-ImageJ has a [[Jenkins]] server, which automatically checks the code for build and test errors.
+ImageJ has a [http://jenkins.imagej.net/ Jenkins server], which automatically checks the code for build and test errors.
+
+Jenkins tests builds and performs releases for [[SciJava]] projects. It deploys <code>SNAPSHOT</code> builds to the [http://maven.imagej.net/ ImageJ Maven repository] in response to pushes to each code repository's <code>master</code> branch. So any downstream projects depending on a version of <code>LATEST</code> for a given component will match the last successful Jenkins build—i.e., the latest code on <code>master</code>.
+
+Because every build also runs the associated [https://en.wikipedia.org/wiki/Unit_testing unit tests], Jenkins is instrumental in early detection of new bugs introduced to the codebase.
 
 You can access Jenkins's last successful build artifacts from the [[Downloads]] page.
+
+Jenkins also performs releases, including [http://jenkins.imagej.net/job/Synchronize-and-deploy-IJ1/ automatically deploying ImageJ 1.x] and [http://jenkins.imagej.net/job/ImageJ1-releases/ building installers for ImageJ 1.x].
+
+Jenkins performs many other services too, such as keeping Git repository mirrors in sync, building javadocs and updating other web resources.
 
 == Other roadmap links ==
 
