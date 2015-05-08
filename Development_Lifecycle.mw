@@ -41,9 +41,9 @@ As a rule of thumb, SciJava developers currently use:
 * The release-version.sh script to release most [[Fiji]] components.
 * The "double push to master" approach to release other [[Fiji]] components.
 
-=== Phase 4: ImageJ update sites ===
+=== Phase 4: Upload to ImageJ ===
 
-Deploying to the Maven repository creates a stable release version of a software component. But for ImageJ-related components, it does not put it into the hands of users. To do that, the component must then be ''uploaded'' to an ImageJ [[update site]].
+Deploying to the Maven repository creates a stable release version of a software component. But for ImageJ-related components, that alone does not put it into the hands of users. To do that, the component must then be ''uploaded'' to an ImageJ [[update site]].
 
 ImageJ [[update sites]] are what ImageJ actually queries to check for and download updates. These update sites are versioned, but do not rely on other tools (e.g., [[Git]] or [[Maven]]) in order to function. Rather, component developers upload new versions of their component(s) using the [[ImageJ Updater]], which makes them available to end users. Typically, update sites are available as web sites via HTTP, with uploads functioning via [https://github.com/imagej/imagej-plugins-uploader-webdav WebDAV] or [https://github.com/imagej/imagej-plugins-uploader-ssh SSH/SFTP/SCP].
 
