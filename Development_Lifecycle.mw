@@ -53,7 +53,7 @@ See the [[Update Sites|documentation on update sites]] for further details.
 
 == Cutting a new release ==
 
-As summarized above, there are three different releases workflows we use, depending on the scenario.
+As summarized above, there are three different release workflows we use, depending on the scenario.
 
 === Release-Version Jenkins job ===
 
