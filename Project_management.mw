@@ -11,7 +11,12 @@ See the [[Git]] pages for more information, tutorials, etc.
 
 ImageJ uses [[Maven]] for its project infrastructure.
 
-Maven artifacts are published to the [[Architecture#Maven_repositories|ImageJ Maven repository]].
+SciJava projects use the [http://maven.imagej.net/ ImageJ Maven repository] (using [http://www.sonatype.com/nexus Sonatype Nexus]) for managing SciJava libraries. Such a repository serves two main purposes:
+
+# '''Deployment.''' It provides a place to store our JAR artifacts, including snapshot versions, without the [http://maven.apache.org/guides/mini/guide-central-repository-upload.html red tape] of submitting to the central Maven repository.
+# '''Proxying.''' It acts as an on-demand mirror for the public Maven repositories, reducing load on the central Maven server and potentially reducing local build times.
+
+The first purpose is especially important for agile development across multiple components. For more details, see [http://books.sonatype.com/nexus-book/reference/repoman-sect-reasons.html Reasons to Use a Repository Manager].
 
 Releases are [[Architecture#Versioning|versioned with Semantic Versioning]].
 
