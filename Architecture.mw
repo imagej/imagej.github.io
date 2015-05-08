@@ -55,7 +55,7 @@ Of course, there are downsides, too:
 * Issues relevant to multiple components must be filed separately in each issue tracker and cross-referenced.
 * It can be more difficult to locate code of interest, since the codebase is spread across so many repositories.
 
-As a rule of thumb, we find that multi-module [[Maven]] projects stored within a single Git repository are a natural fit for "big bang" software which is versioned in lockstep and carefully tested before each release, whereas single-module projects stored in separate Git repositories work well for the [[Philosophy#Release_early.2C_release_often|RERO]]-style release paradigm.
+As a rule of thumb, we find that multi-module [[Maven]] projects stored within a single Git repository are a natural fit for "big bang" software which is versioned in lockstep and carefully tested before each [[release]], whereas single-module projects stored in separate Git repositories work well for the [[Philosophy#Release_early.2C_release_often|RERO]]-style [[release]] paradigm.
 
 == Maven component structure ==
 
