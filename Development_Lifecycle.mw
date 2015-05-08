@@ -81,8 +81,8 @@ You can release a component using the [https://github.com/scijava/scijava-script
 
 ==== Prerequisites ====
 
-# Download the release-version script. The best way to do this is to clone the complete [https://github.com/scijava/scijava-scripts SciJava-scripts] repository. That will give you access to other useful scripts and help keep them all up to date.
-# ('''optional''') If you want to easily use these scripts from any directory, you can [http://askubuntu.com/questions/97897/add-bash-script-folder-to-path add the scijava-scripts folder to your PATH].
+# Install the release-version.sh script. The best way to do this is to clone the complete [https://github.com/scijava/scijava-scripts SciJava-scripts] repository. That will give you access to other useful scripts and help keep them all up to date.
+# ('''optional''') If you want to easily use these scripts from any directory, you can [http://askubuntu.com/q/97897 add the scijava-scripts folder to your PATH].
 # You will need an account for [http://maven.imagej.net maven.imagej.net] and the local Maven configuration to deploy to this repository. If you haven't set this up yet, contact the [[Mailing_Lists|ImageJ-devel list]] and ask for an account. A maintainer will send you instructions.
 
 ==== Steps to release ====
