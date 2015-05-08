@@ -53,6 +53,8 @@ See the [[Update Sites|documentation on update sites]] for further details.
 
 == Cutting a new release ==
 
+As summarized above, there are three different releases workflows we use, depending on the scenario.
+
 === Release-Version Jenkins job ===
 
 You can release a component using the Release-Version Jenkins job, but you must first log in with your ImageJ Jenkins account in order to see it.
