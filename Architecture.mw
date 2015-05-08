@@ -291,91 +291,13 @@ The first purpose is especially important for agile development across multiple 
 
 === Deploying artifacts ===
 
-To deploy JARs, POMs and other artifacts to the ImageJ Maven repository, you will first need a user account. Assuming you have one, follow these steps:
+Jenkins can be told to deploy release artifacts to the ImageJ Maven repository. It can be done in one of two ways:
 
-<ol>
-<li>Verify that you can log in to the [http://maven.imagej.net/ Nexus web UI] using your credentials.</li>
-<li>Install the following <code>settings.xml</code> and <code>settings-security.xml</code> into your Maven configuration directory (typically <code>~/.m2</code>):
-<p>
-<code>settings-security.xml</code>
-<source lang="xml">
-<settingsSecurity>
-  <master>[YOUR MASTER HASH]</master>
-</settingsSecurity>
-</source>
-</p>
-<p>
-<code>settings.xml</code>
-<source lang="xml">
-<settings>
+# '''Double push to master.''' A push to master happens with the POM version set to a non-SNAPSHOT—e.g., {{GitHub | org=fiji | repo=Trainable_Segmentation | commit=fd92658524dd90da8d505dad295c6f6ce3e3a188 | label=this Trainable_Segmentation commit releasing version 2.2.1}}. A second push to master is then typically done to "bump to next release cycle" after Jenkins starts building the release—e.g., {{GitHub | org=fiji | repo=Trainable_Segmentation | commit= | label=this Trainable_Segmentation commit bumps to 2.2.2-SNAPSHOT}}. This second push avoids accidentally having two different commits that purport to be the same non-SNAPSHOT version (since release versions must be unique and immutable).
 
-  <!--
-  Credentials for artifact deployment to ImageJ Nexus; see:
-  http://maven.apache.org/guides/mini/guide-encryption.html
-  -->
-  <servers>
-    <server>
-      <id>imagej.releases</id>
-      <username>[YOUR USERNAME]</username>
-      <password>[YOUR PASSWORD HASH]</password>
-    </server>
-    <server>
-      <id>imagej.snapshots</id>
-      <username>[YOUR USERNAME]</username>
-      <password>[YOUR PASSWORD HASH]</password>
-    </server>
-  </servers>
+# '''Release-Version Jenkins job.''' The special <code>Release-Version</code> job of Jenkins (which is visible only to logged in Jenkins users) is triggered to release a particular artifact. There are several advantages to this approach: 1) it creates a tag on GitHub with an "orphaned" release commit; 2) it does the "bump to next release cycle" commit automatically; 3) the Maven POM references the correct tag rather than <code>HEAD</code>; 4) it is capable of releasing certain artifacts to OSS Sonatype as appropriate (and hence to Maven Central).
 
-  <!--
-  ImageJ Nexus central mirror configuration; see:
-  http://books.sonatype.com/nexus-book/reference/maven-sect-single-group.html
-  -->
-
-  <mirrors>
-    <mirror>
-      <!--This sends everything else to /public -->
-      <id>nexus</id>
-      <mirrorOf>*</mirrorOf>
-      <url>http://maven.imagej.net/content/groups/public</url>
-    </mirror>
-  </mirrors>
-  <profiles>
-    <profile>
-      <id>nexus</id>
-      <!--Enable snapshots for the built in central repo to direct -->
-      <!--all requests to nexus via the mirror -->
-      <repositories>
-        <repository>
-          <id>central</id>
-          <url>http://central</url>
-          <releases><enabled>true</enabled></releases>
-          <snapshots><enabled>true</enabled></snapshots>
-        </repository>
-      </repositories>
-     <pluginRepositories>
-        <pluginRepository>
-          <id>central</id>
-          <url>http://central</url>
-          <releases><enabled>true</enabled></releases>
-          <snapshots><enabled>true</enabled></snapshots>
-        </pluginRepository>
-      </pluginRepositories>
-    </profile>
-  </profiles>
-  <activeProfiles>
-    <!--make the profile active all the time -->
-    <activeProfile>nexus</activeProfile>
-  </activeProfiles>
-</settings>
-</source>
-</p>
-</li>
-<li>Replace instances of <code>[YOUR USERNAME]</code> in <code>settings.xml</code> with your Nexus username.</li>
-<li>Follow the [http://maven.apache.org/guides/mini/guide-encryption.html directions for encrypting your password] to generate a master hash and a password hash.</li>
-<li>Replace <code>[YOUR MASTER HASH]</code> in <code>settings-security.xml</code> with your master hash.</li>
-<li>Replace <code>[YOUR PASSWORD HASH]</code> in <code>settings.xml</code> with your password hash.</li>
-</ol>
-Once you have followed these steps, it should be possible to deploy snapshot JARs to the Nexus using the <code>mvn deploy</code> command.
+As a rule of thumb, we currently use the "double push to master" approach to release many Fiji components, and the Release-Version Jenkins job to release core SciJava software stack components (including SciJava, ImgLib2, SCIFIO and ImageJ).
 
 == ImageJ update sites ==
 
