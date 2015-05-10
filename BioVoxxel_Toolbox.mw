@@ -137,6 +137,8 @@ Form: plugin, recordable
 
 Status: maintenance active
 
+15-0510: thanks to Jan Eglinger and Wayne Rasband works with stacks, bugfix regarding results table handling, no invalid number dialog when number field is empty
+
 Future: other erosion algorithms will potentially be included to improve the watershedding
 
 ----
