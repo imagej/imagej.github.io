@@ -16,7 +16,7 @@ Intuitively, a feature has four "phases" of development:
 
 == Phase 1: topic branch ==
 
-Use [[Git]] and [[GitHub]] to create a branch, where the new feature will be developed and tested.
+Use [[Git]] and [[GitHub]] to [[Git_topic_branches|create a topic branch]]. The new feature is then developed and tested on this branch.
 
 == Phase 2: merge to master ==
 
