@@ -1,8 +1,6 @@
 {{Notice | This page describes the [[SciJava]] software release process.
 * To download software releases, see [[Downloads]].}}
 {{Development}}
-= Managing releases =
-
 The SciJava [[philosophy]] is to [[Philosophy#Release_early.2C_release_often|release early, release often]]. To make doing so as painless as possible, we employ several [[project management]] resources, according to a specific software release process, as described below.
 
 = Phases of development =
