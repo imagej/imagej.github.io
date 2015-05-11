@@ -24,17 +24,17 @@ Once ready, file a [https://help.github.com/articles/using-pull-requests/ pull r
 
 Alternately, if you have push access to the repository and are confident in your changes, then you can merge the topic branch yourself without a PR.
 
-== Phase 3: deploy to Maven ==
+== Phase 3: release to Maven ==
 
 This phase happens automatically after the '''merge to master''' phase: the ImageJ [[Jenkins]] server will pick up the change, build it, test it, and deploy it to the [[ImageJ Maven repository]].
 
-Normally, the version on master is a ''snapshot'' version, meaning it is unstable and not yet released. However, Jenkins can also be used to deploy ''release'' artifacts to the ImageJ Maven repository, in one of three ways:
+Normally, the version on master is a ''SNAPSHOT'' version, meaning it is unstable and not yet released. However, Jenkins can also be used to deploy ''release'' artifacts to the ImageJ Maven repository, in one of three ways:
 
 # '''Double push to master.''' A push to master happens with the POM version set to a non-SNAPSHOT—e.g., {{GitHub | org=fiji | repo=Trainable_Segmentation | commit=fd92658524dd90da8d505dad295c6f6ce3e3a188 | label=this Trainable_Segmentation commit releasing version 2.2.1}}. A second push to master is then typically done to "bump to next release cycle" after Jenkins starts building the release—e.g., {{GitHub | org=fiji | repo=Trainable_Segmentation | commit= | label=this Trainable_Segmentation commit bumps to 2.2.2-SNAPSHOT}}. This second push avoids accidentally having two different commits that purport to be the same non-SNAPSHOT version (since release versions must be unique and immutable).
 # '''Release-Version Jenkins job.''' The special <code>Release-Version</code> job of Jenkins (which is visible only to logged in Jenkins users) is triggered to release a particular artifact. There are several advantages to this approach: 1) it creates a tag on GitHub with an "orphaned" release commit; 2) it does the "bump to next release cycle" commit automatically; 3) the Maven POM references the correct tag rather than <code>HEAD</code>; 4) it is capable of releasing certain artifacts to OSS Sonatype as appropriate (and hence to Maven Central).
 # '''release-version.sh script.''' The [https://github.com/scijava/scijava-scripts/blob/aab7cfe805638efc25615fdd7c78cedaae3c7197/release-version.sh release-version.sh] script is what the Release-Version Jenkins job uses under the hood to perform releases. It relies on the [http://maven.apache.org/maven-release/maven-release-plugin/ Maven Release plugin] to do most of the heavy lifting, but also does some extra work (e.g., to ensure releases are deployed to the correct repository).
 
-See "Cutting a new release" below for more details on using these three approaches.
+See [[#Cutting_a_new_release|Cutting a new release]] below for more details on using these three approaches.
 
 As a rule of thumb, SciJava developers currently use:
 * The Release-Version Jenkins job to release core SciJava software stack components—including SciJava, ImgLib2, SCIFIO and ImageJ.
