@@ -3,9 +3,10 @@
 | software               = Fiji
 | author                 = Stephan Saalfeld
 | maintainer             = Stephan Saalfeld
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg_/src/main/java/Transform_Perspective.java in gitweb]
+| source                 = {{GitHub|org=axtimwalde|repo=mpicbg|path=mpicbg_/src/main/java/Transform_Perspective.java
+}}
 | released               = November 9<sup>th</sup>, 2008
-| latest version         = May 29<sup>th</sup>, 2008
+| latest version         = February 13<sup>th</sup>, 2015
 | status                 = stable
 | category               = [[:Category:Transform|Transform]], [[:Category:Plugins|Plugins]]
 }}
