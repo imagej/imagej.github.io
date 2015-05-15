@@ -24,9 +24,9 @@ Serial section Microscopy, using either optical or physical sectioning, is an es
 ;Neighborhood range
 :Specifies the neighborhood around each section for which pairwise similarities are calculated. 
 ;Outer iterations
-Specifies the number of iterations in the outer loop of the optimizer.
+:Specifies the number of iterations in the outer loop of the optimizer.
 ;Outer regularization
-Specifies the amount of regularization in the outer loop of the optimizer. 0 means no regularization, 1 means full regularization (no change).  The regularizer in the outer loop damps the updates during each iteration by the specified fraction.
+:Specifies the amount of regularization in the outer loop of the optimizer. 0 means no regularization, 1 means full regularization (no change).  The regularizer in the outer loop damps the updates during each iteration by the specified fraction.
 ;Inner Iterations
 :Specifies the number of iterations in inner loops of the optimizer.
 ;Inner Regularization
