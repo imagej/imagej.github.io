@@ -30,7 +30,7 @@ Link to a specific version by also specifying <code>v</code> (i.e., <code>versio
 
 You can also specify <code>p</code> for packaging, and <code>c</code> for classifier, if you need those options:
 <pre>
-{{Maven | g=net.imagej | a=imagej-launcher | p=nar | c=amd64-Linux-gcc}}
+{{Maven | g=net.imagej | a=imagej-launcher | p=nar | c=amd64-Linux-gcc-executable}}
 </pre>
-{{Maven | g=net.imagej | a=imagej-launcher | p=nar | c=amd64-Linux-gcc}}
+{{Maven | g=net.imagej | a=imagej-launcher | p=nar | c=amd64-Linux-gcc-executable}}
 </noinclude>
