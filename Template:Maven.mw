@@ -1,4 +1,4 @@
-<includeonly>[http://maven.imagej.net/index.html#nexus-search;gav~{{{g|}}}~{{{a|}}}~{{{v|}}}~{{{p|}}}~{{{c|}}}~kw,versionexpand {{{label|{{#if:{{{g|}}}|{{{g|}}}|}}{{#if:{{{a|}}}|:{{{a|}}}|}}{{#if:{{{v|}}}|:{{{v|}}}|}}{{#if:{{{p|}}}|:{{{p|}}}|}}{{#if:{{{c|}}}|:{{{c|}}}|}}}}}]<nowiki />
+<includeonly>[http://maven.imagej.net/index.html#nexus-search;gav~{{{g|}}}~{{{a|}}}~{{{v|}}}~{{{p|}}}~{{{c|}}}~kw,versionexpand {{{label|{{#if:{{{g|}}}|{{{g|}}}|}}{{#if:{{{a|}}}|&#58;{{{a|}}}|}}{{#if:{{{v|}}}|&#58;{{{v|}}}|}}{{#if:{{{p|}}}|&#58;{{{p|}}}|}}{{#if:{{{c|}}}|&#58;{{{c|}}}|}}}}}]<nowiki />
 </includeonly><noinclude>
 
 ==Usage==
