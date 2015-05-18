@@ -1,4 +1,4 @@
-<includeonly>[http://maven.imagej.net/index.html#nexus-search;gav~{{{g|}}}~{{{a|}}}~{{{v|}}}~{{{p|}}}~{{{c|}}} {{{label|{{#if:{{{g|}}}|{{{g|}}}|}}{{#if:{{{a|}}}|:{{{a|}}}|}}{{#if:{{{v|}}}|:{{{v|}}}|}}{{#if:{{{p|}}}|:{{{p|}}}|}}{{#if:{{{c|}}}|:{{{c|}}}|}}}}}]<nowiki />
+<includeonly>[http://maven.imagej.net/index.html#nexus-search;gav~{{{g|}}}~{{{a|}}}~{{{v|}}}~{{{p|}}}~{{{c|}}}~kw,versionexpand {{{label|{{#if:{{{g|}}}|{{{g|}}}|}}{{#if:{{{a|}}}|:{{{a|}}}|}}{{#if:{{{v|}}}|:{{{v|}}}|}}{{#if:{{{p|}}}|:{{{p|}}}|}}{{#if:{{{c|}}}|:{{{c|}}}|}}}}}]<nowiki />
 </includeonly><noinclude>
 
 ==Usage==
@@ -15,13 +15,13 @@
 
 ==Examples==
 
-Link to all versions of a particular artifact by specifying the <code>g</code> (i.e., <code>groupId</code>) and <code>a</code> (i.e., <code>artifactId</code>):
+Link to all versions of a particular artifact by specifying <code>g</code> (i.e., <code>groupId</code>) and <code>a</code> (i.e., <code>artifactId</code>):
 <pre>
 {{Maven | g=net.imagej | a=imagej}}
 </pre>
 {{Maven | g=net.imagej | a=imagej}}
 
-Link to a specific version by also specifying the <code>v</code> (i.e., <code>version</code>):
+Link to a specific version by also specifying <code>v</code> (i.e., <code>version</code>):
 <pre>
 {{Maven | g=net.imagej | a=imagej | v=2.0.0-rc-30}}
 </pre>
