@@ -26,7 +26,6 @@ Link to a specific version by also specifying <code>v</code> (i.e., <code>versio
 {{Maven | g=net.imagej | a=imagej | v=2.0.0-rc-30}}
 </pre>
 {{Maven | g=net.imagej | a=imagej | v=2.0.0-rc-30}}
-</noinclude>
 
 You can also specify <code>p</code> for packaging, and <code>c</code> for classifier, if you need those options:
 <pre>
