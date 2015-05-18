@@ -3,6 +3,7 @@
 | software               = Fiji
 | author                 = [[User:Iarganda | Ignacio Arganda-Carreras]], Albert Cardona and Stephan Saalfeld
 | maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
+| filename               = {{Maven | g=sc.fiji | a=register_virtual_stack_slices}}
 | source                 = {{GitHub|org=fiji|repo=register_virtual_stack_slices}}
 | released               = September 24<sup>th</sup>, 2009
 | latest version         = 2.0.0, September 17<sup>th</sup>, 2014
