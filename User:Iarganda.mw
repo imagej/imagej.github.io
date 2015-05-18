@@ -4,12 +4,10 @@ My name is '''Ignacio Arganda-Carreras'''. I am currently working at [http://www
 
 You can find more information about me in my website: [http://sites.google.com/site/iargandacarreras/ http://sites.google.com/site/iargandacarreras/]
 
-== Maintained plugins ==
+== Maintained plugins (Fiji) ==
 
 * [[AnalyzeSkeleton]]
 * [[BUnwarpJ]]
-* [[Classic Watershed]]
-* [[Marker-controlled Watershed]]
 * [[Morphological Segmentation]]
 * [[Register Virtual Stack Slices]]
 * [[SIOX: Simple Interactive Object Extraction]]
@@ -17,3 +15,8 @@ You can find more information about me in my website: [http://sites.google.com/s
 * [[Spline Deformation Generator]]
 * [[Transform Virtual Stack Slices]]
 * [[Trainable Weka Segmentation]]
+
+== Maintained plugins (IJPB-plugins update site) ==
+
+* [[Classic Watershed]]
+* [[Marker-controlled Watershed]]
