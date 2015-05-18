@@ -1,4 +1,4 @@
-<includeonly>[http://maven.imagej.net/index.html#nexus-search;gav~{{{g|}}}~{{{a|}}}~{{{v|}}}~{{{p|}}}~{{{c|}}}]<nowiki />
+<includeonly>[http://maven.imagej.net/index.html#nexus-search;gav~{{{g|}}}~{{{a|}}}~{{{v|}}}~{{{p|}}}~{{{c|}}} {{{label|}}}]<nowiki />
 </includeonly><noinclude>
 ==Usage==
 <pre>
