@@ -18,13 +18,11 @@ Use this template to show a file box with some content.
 
 The following:
 
-<pre>
-{{File|filename||<pre>
+ <nowiki>{{File|filename||<pre>
 file content
   this
     that
-</pre>}}
-</pre>
+</pre>}}</nowiki>
 
 generates:
 
