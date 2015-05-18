@@ -1,0 +1,34 @@
+<includeonly>[http://maven.imagej.net/index.html#nexus-search;gav~{{{g|}}}~{{{a|}}}~{{{v|}}}~{{{p|}}}~{{{c|}}}]<nowiki />
+</includeonly><noinclude>
+==Usage==
+<pre>
+{{Maven
+| g =
+| a =
+| v =
+| p =
+| c =
+}}
+</pre>
+
+==Examples==
+
+Link to all versions of a particular artifact by specifying the <code>g</code> (i.e., <code>groupId</code>) and <code>a</code> (i.e., <code>artifactId</code>):
+<pre>
+{{Maven | g=net.imagej | a=imagej}}
+</pre>
+{{Maven | g=net.imagej | a=imagej}}
+
+Link to a specific version by also specifying the <code>v</code> (i.e., <code>version</code>):
+<pre>
+{{Maven | g=net.imagej | a=imagej | v=2.0.0-rc-30}}
+</pre>
+{{Maven | g=net.imagej | a=imagej | v=2.0.0-rc-30}}
+</noinclude>
+
+You can also specify <code>p</code> for packaging, and <code>c</code> for classifier, if you need those options:
+<pre>
+{{Maven | a=imagej-launcher | p=nar | c=amd64-Linux-gcc}}
+</pre>
+{{Maven | a=imagej-launcher | p=nar | c=amd64-Linux-gcc}}
+</noinclude>
