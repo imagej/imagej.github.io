@@ -1,13 +1,15 @@
-<includeonly>[http://maven.imagej.net/index.html#nexus-search;gav~{{{g|}}}~{{{a|}}}~{{{v|}}}~{{{p|}}}~{{{c|}}} {{{label|}}}]<nowiki />
+<includeonly>[http://maven.imagej.net/index.html#nexus-search;gav~{{{g|}}}~{{{a|}}}~{{{v|}}}~{{{p|}}}~{{{c|}}} {{{label|{{#if:{{{g|}}}|{{{g|}}}|}}{{#if:{{{a|}}}|:{{{a|}}}|}}{{#if:{{{v|}}}|:{{{v|}}}|}}{{#if:{{{p|}}}|:{{{p|}}}|}}{{#if:{{{c|}}}|:{{{c|}}}|}}}}}]<nowiki />
 </includeonly><noinclude>
+
 ==Usage==
 <pre>
 {{Maven
-| g =
-| a =
-| v =
-| p =
-| c =
+| g     =
+| a     =
+| v     =
+| p     =
+| c     =
+| label =
 }}
 </pre>
 
