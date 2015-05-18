@@ -1,6 +1,6 @@
 {{Infobox
 | name                   = Morphological Segmentation
-| software               = ImageJ/Fiji
+| software               = IJPB-plugins
 | author                  = [[User:Iarganda | Ignacio Arganda-Carreras]], David Legland
 | maintainer             = [[User:Iarganda | Ignacio Arganda-Carreras]]
 | source                 = {{GitHub|org=ijpb|repo=ijpb-plugins}}
