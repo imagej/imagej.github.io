@@ -455,7 +455,7 @@ In the future, we plan to make this easier by having one single easy command for
 
 As far as users are concerned, external Fiji plugins are exactly the same as internal Fiji plugins. For developers, [[External plugins|"external plugin"]] simply implies that the plugin's source code is maintained in its own source code repository. For example, [[TrakEM2]] has been an external Fiji plugin since Fiji's inception.
 
-== Where to put the jars of my plugin? ==
+== Where should I put the jars of my plugin? ==
 
 If you develop a Fiji plugin, the result will be in the form of one or more jars containing your plugin and possibly third-party libraries that you rely on. To deploy your plugin you put the jars in the plugins/ or jars/ Fiji subdirectories. The general idea is that only the jars directly containing plugin classes go into plugins/. Auxiliary and third-party jars go into jars/. (see [https://groups.google.com/d/msg/fiji-devel/pMe86pY_Kmc/vI-hUJyyrUwJ this mail] for more background on this.)
 
