@@ -12,7 +12,7 @@
 
 == Download ==
 
-The integration of the '''Multiview Reconstruction''' and the [[BigDataViewer]] is available through the Fiji Updater. Simply update Fiji and the Multiview-Reconstruction pipeline will be available under '''Plugins>Multiview Reconstruction>Multiview Reconstruction Application'''.
+The integration of the '''Multiview Reconstruction''' and the [[BigDataViewer]] is available through the Fiji Updater. Simply update Fiji and the Multiview-Reconstruction pipeline will be available under '''Plugins>Multiview Reconstruction>Multiview Reconstruction Application'''. The source code is available {{GitHub|org=bigdataviewer|repo=SPIM_Registration}}, please also report feature requests & bugs there.
 
 To enable GPU hardware accelerated processing, you might want to download the '''native CUDA code''' for:
 * Separable Convolution: Used for the Difference-of-Gaussian segmentation, available on [https://github.com/StephanPreibisch/SeparableConvolutionCUDALib GitHub]
