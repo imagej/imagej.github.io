@@ -100,6 +100,8 @@ The plugin can also be run from the command line:
 
 = Rapid prototyping with the [[Script Editor]] =
 
+{{Template:Outdated}}
+
 There a few good reasons why you should try the [[Script Editor]] for rapid prototyping of your plugins or scripts:
 
 * Supports Jython, JRuby, Javascript, Clojure, Java, BeanShell, and ImageJ's Macro Language
