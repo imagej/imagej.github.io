@@ -185,17 +185,15 @@ Finally set up the cronjob with {{inline|sudo crontab -u fiji_mirror_sync -e}}
 
 Once the mirrors get populated, you can start using them on your ImageJ
 installations.  Editing the URL of the existing ImageJ and Fiji update sites
-is not a good idea.  Any changes to them will be undone once the system gets
-internet access (it reads the original URLs from the Fiji wiki).  The
-following will simply remove them.  A better solution is to start Fiji
-as root and manually disable them but that is not yet implemented in the
-command-line updater options.
+is not a good idea because any changes to them will be undone once the system
+gets internet access (it reads the original URLs from the Fiji wiki).  There
+is a command line option to remove update-sites but it will not work for the
+ImageJ update site.  Since there is no command-line option to disable an
+update site, ImageJ must be started with root permissions to do that.  URLs
+for the new mirrors can be added with:
 
- $ ImageJ-linux64 --update remove-update-site fiji
- $ ImageJ-linux64 --update remove-update-site imagej
- $ ImageJ-linux64 --update add-update-site fiji_mirror url_for_your_fiji_mirror
- $ ImageJ-linux64 --update add-update-site imagej_mirror url_for_your_imagej_mirror
-
+ $ ImageJ-linux64 --update add-update-site Fiji_mirror url_for_your_fiji_mirror
+ $ ImageJ-linux64 --update add-update-site ImageJ_mirror url_for_your_imagej_mirror
 
 == History ==
 
