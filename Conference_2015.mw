@@ -1,3 +1,4 @@
+{{Warning | This page is a work in progress. Official conference announcement will come later this week. Please be patient.}}
 {{Conference
 | no=5th
 | year=2015
@@ -5,3 +6,54 @@
 | image=Imagej-conference-logo.png
 | location=[http://discovery.wisc.edu/ Wisconsin Institutes for Discovery] in Madison, Wisconsin, USA
 }}
+The 2015 ImageJ User and Developer Conference complements the EU meetings in Luxembourg and will offer workshops to improve software knowledge and usage covering both beginner/user and advanced/developer topics. The conference will provide a community forum for ImageJ development over the past three years and will also feature shorter presentations highlighting case studies, plugins, and solutions to common problems.
+
+== Location ==
+[http://discovery.wisc.edu/ Wisconsin Institutes for Discovery], 330 N. Orchard St., Madison, WI 53715
+* [http://discovery.wisc.edu/home/discovery/plan-your-visit/location/ Location and Directions]
+* [https://www.google.com/maps/place/Wisconsin+Institutes+for+Discovery,+University+of+Wisconsin-Madison,+330+N+Orchard+St,+Madison,+WI+53715 Google map]
+
+== Call for presentations and posters ==
+Submissions from the ImageJ community for 1 hour workshops, 10 minute presentations, and/or posters are encouraged and should include a title, abstract, and author details with contact information. Submissions should be completed by July 1st, 2015.
+* '''Presentations.''' Presentations will be done in "lightning talk" style, with 10 minutes per speaker including Q&A session.
+* '''Workshops.''' Workshops will cover all ImageJ related image processing topics and can target the end user as well as developers. They can focus on the novice ImageJ user as well as on special, dedicated topics for the advanced user. Advanced topics should specify required knowledge in submission. Workshops can be 60 min or 120 min including time for questions and discussion, and registrant should indicate the required time in the application.
+* '''Posters.''' The conference will offer a scientific poster session in parallel with workshops and invited talks. Posters can cover all ImageJ related image processing topics.
+
+== Accommodation ==
+TBA
+
+== Program ==
+'''DRAFT'''
+{| class="wikitable nicetable"
+|-
+| rowspan=4 style="vertical-align: middle" | '''Thursday<br>3 September'''
+| 8:30am - 9:00am
+| Registration and welcome
+|-
+| 9:00am - noon
+| Invited presentations
+|-
+| noon - 1:30pm
+| Lunch
+|-
+| 1:30pm - 5:30pm
+| Workshops
+|-
+| rowspan=4 style="vertical-align: middle" | '''Friday<br>4 September'''
+|-
+| 9:00am - noon
+| Lightning talks
+|-
+| noon - 1:30pm
+| Lunch
+|-
+| 1:30pm - 5:30pm
+| Workshops and close
+|}
+Further details TBA.
+
+== Sponsors ==
+<table><tr>
+<td style="padding-top: 10px">[[File:Loci-logo.png | x100px | top | link=LOCI]]</td>
+<td style="padding-left: 30px">[[File:Morgridge-logo.jpg | x80px | top | link=http://morgridge.wisc.edu/]]</td>
+</tr></table>
