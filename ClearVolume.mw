@@ -11,7 +11,19 @@ See ClearVolume in action: [https://www.youtube.com/watch?v=IyUpkgTJJvc https://
 
 == Installing ClearVolume in Fiji or ImageJ2 ==
 
-''Note:'' ClearVolume requires Fiji/ImageJ2 to run with a Java Runtime Environment >1.6. This adds additional steps to the installations instructions that will be obsolete as soon as Fiji/ImageJ2 will ship with newer versions of Java.
+''BIG Disclaimer:'' ClearVolume can run in Fiji and does so on many machines. Unfortunately this integration comes with two caveats that we are working on removing in the future. Please go on reading the following lines carefully and you will have no problem getting a Fiji instance run ClearVolume also on your machine.
+
+''Caveat 1:'' ClearVolume only runs in Fiji installations that never started up the Fiji 3D Viewer Plugin using a Java Virtual Machine that never executed the before mentioned Fiji installation.
+Ok, that is one hell of a sentence and if it does not speak to you you might want to ask your favorite geek in the room.
+The reason for this is, that the 3D Viewer, upon first startup, downloads a very old version of some 3D libraries (jogl and Java3d) and puts them in a folder 'inside' your Java Virtual Machine ('ext'). From that moment on ClearVolume cannot find his own jogl version any longer since Fiji is not capable of separating (isolating) the class path per plugin.
+How to circumvent the problem:
+  1) Download a JRE or JDK that you will use as described below.
+  2) Download a new Fiji and put it next to the existing one. Never open the 3D Viewer plugin in that Fiji installation.
+
+''Caveat 2:'' ClearVolume requires Fiji/ImageJ2 to run with a Java Runtime Environment >1.6. This adds additional steps to the installations instructions that will be obsolete as soon as Fiji/ImageJ2 will ship with newer versions of Java.
+
+So how can this mess be avoided? We are currently trying to implement a way to isolate the ClearVolume class loader from the one of Fiji. Unfortunately this is a lot of dirty work, but we are at it.
+Caveat 2 will solve itself soon. It was announced earlier this year that Fiji will eventually by default run with Java 1.7 or 1.8.
 
 # Download Fiji or ImageJ2 from [http://imagej.net/Downloads here].
 # Start Fiji/ImageJ2 and launch the updater ('''Help - Update...''')
