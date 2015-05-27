@@ -21,7 +21,12 @@ Submissions from the ImageJ community for 1 hour workshops, 10 minute presentati
 * '''Workshops.''' Workshops will cover all ImageJ related image processing topics and can target the end user as well as developers. They can focus on the novice ImageJ user as well as on special, dedicated topics for the advanced user. Advanced topics should specify required knowledge in submission. Workshops can be 60 min or 120 min including time for questions and discussion, and registrant should indicate the required time in the application.
 * '''Posters.''' The conference will offer a scientific poster session in parallel with workshops and invited talks. Posters can cover all ImageJ related image processing topics.
 
+== Registration ==
+Due to generous support from the University of Wisconsin-Madison and LOCI, there is no registration fee for this conference. However, please register so that we can have an accurate headcount for the purposes of meeting room logistics, etc.
+
 == Accommodation ==
+
+All attendees are expected to cover their own travel and lodging. Below are recommendations for local lodging.
 
 * [https://www.union.wisc.edu/wuhotel.htm Wisconsin Union Hotel]
 
@@ -32,7 +37,7 @@ Submissions from the ImageJ community for 1 hour workshops, 10 minute presentati
 {| class="wikitable nicetable"
 |-
 | rowspan=4 style="vertical-align: middle" | '''Thursday<br>3 September'''
-| 8:30am - 9:00am
+| 8:00am - 9:00am
 | Registration and welcome
 |-
 | 9:00am - noon
@@ -41,7 +46,7 @@ Submissions from the ImageJ community for 1 hour workshops, 10 minute presentati
 | noon - 1:30pm
 | Lunch
 |-
-| 1:30pm - 5:30pm
+| 1:30pm - 5:00pm
 | Workshops
 |-
 | rowspan=4 style="vertical-align: middle" | '''Friday<br>4 September'''
@@ -52,12 +57,22 @@ Submissions from the ImageJ community for 1 hour workshops, 10 minute presentati
 | noon - 1:30pm
 | Lunch
 |-
-| 1:30pm - 5:30pm
+| 1:30pm - 5:00pm
 | Workshops and close
 |}
 Further details TBA.
 
-== Sponsors ==
+== Organizing committee ==
+* Kevin Eliceiri
+* Kristy Wendt
+* Curtis Rueden
+* Mark Hiner
+* Andreas Jahnen
+
+== Advisory committee ==
+TBA
+
+== Sponsors and partners ==
 <table><tr>
 <td style="padding-top: 10px">[[File:Loci-logo.png | x100px | top | link=LOCI]]</td>
 <td style="padding-left: 30px">[[File:Morgridge-logo.jpg | x80px | top | link=http://morgridge.wisc.edu/]]</td>
