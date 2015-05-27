@@ -18,7 +18,8 @@ Ok, that is one hell of a sentence and if it does not speak to you you might wan
 The reason for this is, that the 3D Viewer, upon first startup, downloads a very old version of some 3D libraries (jogl and Java3d) and puts them in a folder 'inside' your Java Virtual Machine ('ext'). From that moment on ClearVolume cannot find his own jogl version any longer since Fiji is not capable of separating (isolating) the class path per plugin.
 How to circumvent the problem:
   1) Download a JRE or JDK that you will use as described below.
-  2) Download a new Fiji and put it next to the existing one. Never open the 3D Viewer plugin in that Fiji installation.
+  2) Download a new Fiji and put it next to the existing one. 
+     Never open the 3D Viewer plugin in that Fiji installation.
 
 ''Caveat 2:'' ClearVolume requires Fiji/ImageJ2 to run with a Java Runtime Environment >1.6. This adds additional steps to the installations instructions that will be obsolete as soon as Fiji/ImageJ2 will ship with newer versions of Java.
 
