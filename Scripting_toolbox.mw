@@ -9,7 +9,7 @@
 }}
 '''Note:''' To copy the snippets, just double-click somewhere into the code. If Javascript is enabled, this will automatically select the complete snippet.
 
-=== Opening an image using ImageJ ===
+== Opening an image using ImageJ ==
 
 ==== Macro ====
 
@@ -68,7 +68,7 @@ imp = IJ.openImage(path);
 imp.show();
 </source>
 
-=== Opening an image using Bio-Formats ===
+== Opening an image using Bio-Formats ==
 ==== Macro ====
 
 <source lang="java">
@@ -115,7 +115,7 @@ imps[0].show();
 
 * Beanshell
 
-=== Opening, processing, and saving a sequence of files in a folder ===
+== Opening, processing, and saving a sequence of files in a folder ==
 
 ==== Macro ====
 
@@ -145,7 +145,7 @@ See also the tutorial ''[[How to apply a common operation to a complete director
 
 * Beanshell
 
-=== Wait a given amount of time, or until user presses OK ===
+== Wait a given amount of time, or until user presses OK ==
 
 ==== Macro ====
 
@@ -179,7 +179,7 @@ new WaitForUserDialog("Action required", "Please press OK when done.").show();
 
 * Beanshell
 
-=== Select multiple ROIs from ROI manager and combine them ===
+== Select multiple ROIs from ROI manager and combine them ==
 
 ==== Macro ====
 <source lang="java">
@@ -218,7 +218,7 @@ rm.runCommand("AND");
 
 * Clojure
 
-=== Unlocking an image ===
+== Unlocking an image ==
 
 Sometimes things go wrong and all you see is "blabla.jpg is locked" when you try to process the image in some way. Then all you can do is to force-unlock the image, like so:
 
@@ -227,7 +227,7 @@ Sometimes things go wrong and all you see is "blabla.jpg is locked" when you try
 IJ.getImage().unlock();
 </source>
 
-=== Scripting [[Feature Extraction|SIFT]] ===
+== Scripting [[Feature Extraction|SIFT]] ==
 
 The ''Scale-Invariant Feature Transform'' poses a relatively powerful way to reduce the complexity when trying to find matching parts of large images. Fiji has an implementation of this algorithm which you can use like so:
 
@@ -250,9 +250,9 @@ for (Feature feature : features)
     print("x: " + feature.location[0] + ", y: " + feature.location[1]);
 </source>
 
-For more information, please browse the [http://jenkins.imagej.net/job/Saalfeld-MPICBG-Maven/javadoc/mpicbg/imagefeatures/Feature.html Javadoc of the Feature class].
+For more information, please browse the [http://javadoc.imagej.net/MPI-CBG/index.html?mpicbg/imagefeatures/Feature.html Javadoc of the Feature class].
 
-=== Plotting charts with JFreeChart ===
+== Plotting charts with JFreeChart ==
 
 [http://www.jfree.org/jfreechart/ JFreeChart] is a Java library for creating various charts. You can create charts as interactive JFrames, display them as an ImagePlus, or write them to SVG format.
 
@@ -353,7 +353,7 @@ outputStream.flush();
 outputStream.close();
 </source>
 
-=== Writing out movie files with JavaCV ===
+== Writing out movie files with JavaCV ==
 
 [https://github.com/bytedeco/javacv JavaCV] is a Java wrapper around OpenCV and FFMPEG. You will have to unpack the libraries into <tt>ImageJ.app/lib/<platform>/</tt> (or <tt>Fiji.app/lib/<platform>/</tt>) to let JavaCV find the native libraries (e.g. unpack ffmpeg-macosx-x86_64.jar's <tt>.dylib</tt> files directly into <tt>ImageJ.app/lib/macosx/</tt>) '''before''' starting ImageJ/Fiji.
 
