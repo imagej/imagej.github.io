@@ -23,10 +23,10 @@ The 2015 [[Conference|ImageJ User and Developer Conference]] complements the EU 
 * [https://www.google.com/maps/place/Wisconsin+Institutes+for+Discovery,+University+of+Wisconsin-Madison,+330+N+Orchard+St,+Madison,+WI+53715 Google map]
 <div style="clear: left"></div>
 
-'''Parking'''
-<br>[http://www.map.wisc.edu/s/gtdclo2r Engineering Drive Ramp Lot 17]
-<br>[http://www.map.wisc.edu/s/rl4uc9mf Lot 20]
-<br>[http://www.map.wisc.edu/s/2f9gywd7 Lot 80]
+=== Parking ===
+* [http://www.map.wisc.edu/s/gtdclo2r Engineering Drive Ramp Lot 17]
+* [http://www.map.wisc.edu/s/rl4uc9mf Lot 20]
+* [http://www.map.wisc.edu/s/2f9gywd7 Lot 80]
 
 == Call for abstracts ==
 [https://warf.wufoo.com/forms/x28h3or1xv2l8c/ Submissions] from the ImageJ community are warmly encouraged:
@@ -43,6 +43,33 @@ Please [https://warf.wufoo.com/forms/x28h3or1xv2l8c/ submit your abstract] by ''
 
 == Registration ==
 Due to generous support from the University of Wisconsin-Madison and [[LOCI]], there is no registration fee for this conference. However, [https://warf.wufoo.com/forms/x28h3or1xv2l8c/ please register] so that we can have an accurate headcount for the purposes of meeting room logistics, etc.
+
+== Accommodation ==
+All attendees are expected to cover their own travel and lodging.
+
+For travel, you can fly to [http://www.msnairport.com/ MSN, Madison's airport], or you can fly to [http://www.flychicago.com/ohare/en/home/ Chicago O'Hare] and take the [http://www.coachusa.com/vangalder/ Van Galder bus] from O'Hare to Madison.
+
+Here are some recommendations for local lodging:
+* [https://www.union.wisc.edu/wuhotel.htm Wisconsin Union Hotel at Union South]
+* [http://fluno.com/ The Fluno Center]
+* [http://www.inntowner.com/ Best Western InnTowner and the Highland Club]
+* [http://conferencing.uwex.edu/lodging.cfm Lowell Inn and Conference Center]
+* [http://www.wisconsinlodging.org/index.php?path= Wisconsin Innkeepers Association]
+* [http://www.wbba.org/index.php Wisconsin Bed and Breakfast Association]
+
+== Things to do ==
+*[http://www.isthmus.com/search/event/calendar-of-events/# Isthmus Daily Page]
+*[http://www.isthmus.com/food-drink Isthmus Dining Guide]
+
+== Nearby restaurants ==
+*[http://www.steenbocksonorchard.com/ Steenbock's on Orchard]
+*[http://www.aldoscafemadison.com/ Aldo's Cafe]
+*[http://www.brasseriev.com/ BrasserieV]
+*[http://www.brocach.com/ Brocach]
+*[https://ianspizza.com/ Ian's Pizza on Frances St.]
+
+== Travel support ==
+With this year's conference, there are no registration fees, and there will be a free reception. As such, attendees must cover their own travel expenses. However, there may be the opportunity for limited travel support for some select presentations. If this is needed, please email your travel support request to conference@imagej.net in addition to your registration.
 
 = Program =
 Full program details will be posted by '''August 1st'''. A draft program follows.
@@ -106,45 +133,20 @@ Full program details will be posted by '''August 1st'''. A draft program follows
 
 = Organization =
 
-== Accommodation ==
-All attendees are expected to cover their own travel and lodging.
-
-For travel, you can fly to [http://www.msnairport.com/ MSN, Madison's airport], or you can fly to [http://www.flychicago.com/ohare/en/home/ Chicago O'Hare] and take the [http://www.coachusa.com/vangalder/ Van Galder bus] from O'Hare to Madison.
-
-Here are some recommendations for local lodging:
-* [https://www.union.wisc.edu/wuhotel.htm Wisconsin Union Hotel at Union South]
-* [http://fluno.com/ The Fluno Center]
-* [http://www.inntowner.com/ Best Western InnTowner and the Highland Club]
-* [http://conferencing.uwex.edu/lodging.cfm Lowell Inn and Conference Center]
-* [http://www.wisconsinlodging.org/index.php?path= Wisconsin Innkeepers Association]
-* [http://www.wbba.org/index.php Wisconsin Bed and Breakfast Association]
-
-== Things to Do ==
-*[http://www.isthmus.com/search/event/calendar-of-events/# Isthmus Daily Page]
-*[http://www.isthmus.com/food-drink Isthmus Dining Guide]
-
-== Nearby restaurants ==
-*[http://www.steenbocksonorchard.com/ Steenbock's on Orchard]
-*[http://www.aldoscafemadison.com/ Aldo's Cafe]
-*[http://www.brasseriev.com/ BrasserieV]
-*[http://www.brocach.com/ Brocach]
-*[https://ianspizza.com/ Ian's Pizza on Frances St.]
-
-== Travel support ==
-With this year's conference, there are no registration fees, and there will be a free reception. As such, attendees must cover their own travel expenses. However, there may be the opportunity for limited travel support for some select presentations. If this is needed, please email your travel support request to conference@imagej.net in addition to your registration.
 == Organizers ==
-* Kevin Eliceiri, UW-Madison [[LOCI]]
-* Kristy Wendt, UW-Madison [[LOCI]]
-* [[User:Rueden|Curtis Rueden]], UW-Madison [[LOCI]]
-* [[User:Hinerm|Mark Hiner]], UW-Madison [[LOCI]]
+* Kevin Eliceiri, [[LOCI|Laboratory for Optical and Computation]] (LOCI) at [http://wisc.edu/ UW-Madison]
+* Kristy Wendt, [[LOCI|Laboratory for Optical and Computation]] (LOCI) at [http://wisc.edu/ UW-Madison]
+* [[User:Rueden|Curtis Rueden]], [[LOCI|Laboratory for Optical and Computation]] (LOCI) at [http://wisc.edu/ UW-Madison]
+* [[User:Hinerm|Mark Hiner]], [[LOCI|Laboratory for Optical and Computation]] (LOCI) at [http://wisc.edu/ UW-Madison]
 * Andreas Jahnen, [http://www.list.lu/ Luxembourg Institute of Science and Technology]
 
 == Advisory committee ==
 Abstract submissions will be reviewed by the conference advisory committee:
-* Christian Dietz
-* Lee Kamentsky
-* Gabriel Landini
-* Brian Northan
+* Christian Dietz, [http://www.uni-konstanz.de/en/welcome/ University of Konstanz], Germany
+* Lee Kamentsky, [http://www.broadinstitute.org/ Broad Institute] of MIT and Harvard
+* Gabriel Landini, [http://www.birmingham.ac.uk/ University of Birmingham]
+* Brian Northan, [http://www.truenorth-ia.com/ True North Intelligent Algorithms LLC]
+* Tobias Pietzsch, [http://mpi-cbg.de/ Max Planck Institute of Molecular Cell Biology and Genetics] (MPI-CBG) at Dresden
 * (additional members TBA)
 
 == Sponsors and partners ==
