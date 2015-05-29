@@ -873,10 +873,10 @@ sup, sub {
 .program td {
     border: none !important;
 }
-.program td:nth-child(even) {
+.program tr:nth-child(even) td {
     background-color: aliceblue;
 }
-.program td:nth-child(odd) {
+.program tr:nth-child(odd) td {
     background-color: beige;
 }
 
