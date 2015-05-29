@@ -870,6 +870,16 @@ sup, sub {
     white-space: nowrap;
 }
 
+.program td {
+    border: none !important;
+}
+.program td:nth-child(even) {
+    background-color: aliceblue;
+}
+.program td:nth-child(odd) {
+    background-color: beige;
+}
+
 td.yesno {
     padding: 2px !important;
     text-align: center;
