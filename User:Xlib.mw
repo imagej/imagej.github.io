@@ -4,10 +4,8 @@ Various powerful utilities for basic image analysis, filtering, segmentation, po
 The plugins includes
 
 ----
-<s>
 - Engine for finding the closest candidate to a list of chemical substances
 - Import elementary image data from .dmp files (e.g. from Matlab)
-<\s>
 ----
 - Anisotropic diffusion
 
