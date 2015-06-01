@@ -5,7 +5,7 @@ The plugins includes
 
 ----
 - Engine for finding the closest candidate to a list of chemical substances
-&nbsp; - Import elementary image data from .dmp files (e.g. from Matlab)
+- Import elementary image data from .dmp files (e.g. from Matlab)
 ----
 - Anisotropic diffusion
 - Canny edge detection
@@ -34,3 +34,4 @@ The plugins includes
 - Engine for basic interactive segmentation of images and volumes
 - Rendering of 3D image masks
 ----
+--[[User:Xlib|Xlib]] ([[User talk:Xlib|talk]]) 06:26, 1 June 2015 (CDT)
