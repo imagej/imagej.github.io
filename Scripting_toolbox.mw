@@ -120,24 +120,93 @@ imps[0].show();
 ==== Macro ====
 
 <source lang="java">
-dir1 = getDirectory("Choose Source Directory ");
-dir2 = getDirectory("Choose Destination Directory ");
-list = getFileList(dir1);
+input = getDirectory("Input directory");
+output = getDirectory("Output directory");
 
-for (i=0; i<list.length; i++) {
-  if (endsWith(list[i], ".tif")) {
-    open(dir1 + list[i]);
-    // process the image
-    saveAs("TIFF", dir2+list[i]);
-    close();
-  }
+Dialog.create("File type");
+Dialog.addString("File suffix: ", ".tif", 5);
+Dialog.show();
+suffix = Dialog.getString();
+
+processFolder(input);
+
+function processFolder(input) {
+	list = getFileList(input);
+	for (i = 0; i < list.length; i++) {
+		if(File.isDirectory(list[i]))
+			processFolder("" + input + list[i]);
+		if(endsWith(list[i], suffix))
+			processFile(input, output, list[i]);
+	}
+}
+
+function processFile(input, output, file) {
+	// do the processing here by replacing
+	// the following two lines by your own code
+	print("Processing: " + input + file);
+	open(input + file);
+	print("Saving to: " + output);
+	saveAs("TIFF", output+file);
+	close();
 }</source>
 
 See also the tutorial ''[[How to apply a common operation to a complete directory]]''.
 
-* Javascript
+==== Python ====
 
-* Python
+<source lang="python">
+import os
+from ij import IJ, ImagePlus
+from ij.gui import GenericDialog
+ 
+def run():
+  srcDir = IJ.getDirectory("Input_directory")
+  if not srcDir:
+    return
+  dstDir = IJ.getDirectory("Output_directory")
+  if not dstDir:
+    return
+  gd = GenericDialog("Process Folder")
+  gd.addStringField("File_extension", ".tif")
+  gd.addStringField("File_name_contains", "")
+  gd.addCheckbox("Keep directory structure when saving", True)
+  gd.showDialog()
+  if gd.wasCanceled():
+    return
+  ext = gd.getNextString()
+  containString = gd.getNextString()
+  keepDirectories = gd.getNextBoolean()
+  for root, directories, filenames in os.walk(srcDir):
+    for filename in filenames:
+      # Check for file extension
+      if not filename.endswith(ext):
+        continue
+      # Check for file name pattern
+      if containString not in filename:
+        continue
+      process(srcDir, dstDir, root, filename, keepDirectories)
+
+def process(srcDir, dstDir, currentDir, fileName, keepDirectories):
+  print "Processing:"
+  
+  # Opening the image
+  print "Open image file", fileName
+  imp = IJ.openImage(os.path.join(currentDir, fileName))
+  
+  # Put your processing commands here!
+  
+  # Saving the image
+  saveDir = currentDir.replace(srcDir, dstDir) if keepDirectories else dstDir
+  if not os.path.exists(saveDir):
+    os.makedirs(saveDir)
+  print "Saving to", saveDir
+  IJ.saveAs(imp, "Tiff", os.path.join(saveDir, fileName));
+  imp.close()
+
+run()
+</source>
+
+* Javascript
 
 * Ruby
 
