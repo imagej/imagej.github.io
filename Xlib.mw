@@ -601,7 +601,7 @@ The phase image evaluation calculates some parameters of all phases, including t
 Furthermore, the plugin supports a peeling evaluation.  Peeling starts from a specifically defined phase to its surroundings and requires a set of peeling radii defining toroidal regions around the starting phase.  The peeling evaluation yields a data line at each peeling radius, including the peeling distance, number of pixels, mean value, and the percental phase contents for each phase.  For image stacks, true 3D evaluations can be performed.
 
 {|
-|style="vertical-align:top" |[[Image:xFig8_2.jpg|thumb|right|600px|Phase image (top, left) and the parameters provided for the phase image evaluation (top, right).  The resulting plots and the list of parameters are displayed below.]]
+|style="vertical-align:top" |[[Image:xFig8_2.jpg|thumb|right|800px|Phase image (top, left) and the parameters provided for the phase image evaluation (top, right).  The resulting plots and the list of parameters are displayed below.]]
 |}
 
 An image defining some phases is given in the above figure (top, left).  The cyan colored center particle is supposed to act as the location from where peeling is initiated.  The percental areas of the phases "Pores", "Matter", "Artificial" and "Unspecified" are plotted below.  As it is evident from the calling parameters (see above figure, top, right) two gray level data images associated to the pore mask are provided (center field).  Their mean values depending on the peeling radius are displayed in the graph at the bottom.  The parameters are provided in a text file as well (bottom).
@@ -670,7 +670,7 @@ This section contains plugins that are designed for user-interactive visualizati
 This plugin provides an orthogonal slicer for image volumes.  The top view (xy), front view (xz) and side view (yz) of the volume are displayed at a specific point, the center point at startup.  The point then can be moved by mouse interaction in one of the views while the remaining views keep track of the changes.  Thereby, any x,y,z-location in the 3D volume can easily be focused and displayed.  The image value at the current position is always plotted to the ImageJ window.
 
 {|
-|style="vertical-align:top" |[[Image:xFig9_1.jpg|thumb|right|600px|Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the "Pore Size Distribution" plugin (top).]]
+|style="vertical-align:top" |[[Image:xFig9_1.jpg|thumb|right|700px|Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the "Pore Size Distribution" plugin (top).]]
 |}
 
 As an example, the above figure displays the view of the orthogonal slicer applied to the 3D volume displayed in the "pore size distribution" section (top).  The red cross-lines of the slicer show the current 3D cursor position which allows interactively focusing any point in the 3D space.  The position vector and the associated image value are plotted to the ImageJ window (top).
@@ -679,7 +679,7 @@ As an example, the above figure displays the view of the orthogonal slicer appli
 This plugin provides an engine for interactive editing of label images or label volumes (i.e. stacks of images).  Label images are images holding a set of regions at one specific gray level or color per region (example see Fig.6.4, right).  Operations such as deleting, joining, eroding, dilating, opening, or closing of manually selected 3D objects are supported.  There is also an operation for deleting objects smaller than a certain size.  For stacks of images, all operations can be performed either in slice-wise 2D, or truly volumetrically in 3D.  The interface of the engine is visualized in the figure below.
 
 {|
-|style="vertical-align:top" |[[Image:xFig9_2.jpg|thumb|right|200px|Visualization of the interface for editing of labeled 3D regions.]]
+|style="vertical-align:top" |[[Image:xFig9_2.jpg|thumb|right|180px|Visualization of the interface for editing of labeled 3D regions.]]
 |}
 
 === Segment Phases 3D ===
@@ -694,7 +694,7 @@ A phase name and an ID are assessed to each phase for later processing.  The ID 
 The resulting phase image or image stack is a 32-bit color TIFF image.  All phase names and ID's are stored to the TIFF file header.  Hence, a thereby created TIFF phase image can be re-loaded for further processing if required.
 
 {|
-|style="vertical-align:top" |[[Image:xFig9_3.jpg|thumb|right|600px|Engine for 3D segmentation "Segment Phases 3D" which is currently operating on two gray level images (left).  The image at the bottom right is the interactively segmented phase image which is currently containing four different phases (see top left figure for the plugin "Phase Image Evaluation").]]
+|style="vertical-align:top" |[[Image:xFig9_3.jpg|thumb|right|800px|Engine for 3D segmentation "Segment Phases 3D" which is currently operating on two gray level images (left).  The image at the bottom right is the interactively segmented phase image which is currently containing four different phases (see top left figure for the plugin "Phase Image Evaluation").]]
 |}
 
 The segmentation engine is visualized in the figure above while operating on two SEM images of cement paste (OPC CEM 1) acquired at the same location but at different microscope settings.  The color image to the bottom right shows the currently constructed phase image consisting of 4 different overlapping phases.  The same image in non-overlapping mode is displayed in Fig.8.2, top left.  Currently, the phase named "Grain" is active and overlayed to the top left gray level image in transparent blue.  Like this, any current operation would now be achieved to the "Grain" phase.  The rectangle and heart shapes were drawn manually with the selection tools.
