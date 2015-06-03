@@ -335,23 +335,37 @@ For instance,
 <source lang="java"> 
 (i0 + i1 + i2) / 3
 </source>
+will return an image providing the mean value of the images i0, i1 and i2.  The operation 
+<source lang="java"> 
+(i0 > 170)? 
+    java.awt.Color.red.getRGB() : java.awt.Color.black.getRGB()
+</source>
+displays a mask where regions higher than 170 are red.  The operation 
 
-will return an image providing the mean value of the images i0, i1 and i2.
+<source lang="java"> 
+(i0==255)? -16711936 : 
+    ((i1==255)? -16776961 : ((i2==255)? -16777216 : -65536))    
+</source>
+takes three binary images i0, i1, i2 and creates a colored mask out of it.  The operation 
 
-The line 
+<source lang="java"> 
+Math.pow(i0, 2.)
+</source>
+yields the power of two of the image i0.  Or the operation 
 
 <source lang="java"> 
 i0 + x
 </source>
-
-will calculate a copy of the image i0 overlayed by a horizontal ramp.
-
-The line 
+will calculate a copy of the image i0 overlayed by a horizontal ramp.  And 
+    
+<source lang="java"> 
+x // i0
+</source>
+creates the ramp only.  In this case, instead of a simple command "x" (which would create no image), a comment "i0" is attached to the command ("//" means a comment in java).  The reason for why this is necessary is to provide a clue about the size of the resulting image which now turns out to be equal to the size of image i0.  The coding 
 
 <source lang="java"> 
 Math.sqrt(Math.pow(100 - x, 2) + Math.pow(200 - y, 2)) // i0
 </source>
-
 calculates an image of the same size as image i0, but only containing a halo with the center of (100, 200).
 
 The line 
@@ -359,12 +373,60 @@ The line
 <source lang="java"> 
 (i0 >= 128)? 255 : 0
 </source>
-
 creates a binary image mask by thresholding the image i0 with the value 128.
+
+<source lang="java"> 
+(Math.sqrt(Math.pow(150 - x, 2) + 
+ Math.pow(200 - y, 2)) < 100)? 255 : 0 // i0
+</source>
+creates an image of the same size as i0 containing a circular mask around point (100, 200).  The comment "// i0" is necessary for the definition of the image size to the size of i0.
+
+<source lang="java"> 
+(Math.sqrt(Math.pow(mx / 2 - x, 2) + 
+ Math.pow(my / 2 - y, 2)) < mx / 2)? i3 : 0
+</source>
+takes the content of the image and uses the variables mx and my holding the image size.  Finally, 
+
+<source lang="java"> 
+(((int)i0 ^ (int)i1) > 0)? 255 : 0
+</source>
+performs an exclusive OR operation of image i0 and image i1. 
 
 The above examples show that any pixel- or voxel-wise operation can be provided in a single command line as soon as it follows the Java notation.
 
-The plugin is however able to do much more.  Instead of pixelwise operation mode, image-wide Java code fragments can be provided. For example, the code fragment 
+The plugin is however able to do much more.  Instead of pixelwise operation mode, image-wide Java code fragments can be provided. For example, 
+
+<source lang="java"> 
+float[] out = new float[i0.length];
+for (int ii = 0; ii < out.length; ii++) 
+    out[ii] = (i0[ii] + i1[ii] + i2[ii]) / 3f;
+return new Object[] { m0, out };
+</source>
+performs the same operation as the pixelwise operation "(i0 + i1 + i2) / 3" above.
+
+<source lang="java"> 
+float value = 10f;
+int[] mm = m0;
+int anz = 0;
+for (int ii = 0; ii < i0.length; ii++) 
+    if (i0[ii] >= value) anz++;
+IJ.showMessage(" ", "Number of pixels: " + anz);
+return new Object[] { mm, null };
+</source>
+Counts all pixels (or voxels) in the image (or volume) with a value larger or equal 10.  Or 
+
+<source lang="java"> 
+int offx = (m3[0] - m5[0]) / 2;
+int offy = (m3[1] - m5[1]) / 2;
+float[] out = (float[])i3.clone();
+for (int jj = 0; jj < m5[1]; jj++) 
+    for (int ii = 0; ii < m5[0]; ii++) 
+	out[ii + offx + (jj + offy) * m3[0]] = 
+	    (i3[ii+offx + (jj+offy) * m3[0]] + 
+	     i5[ii + jj * m5[0]]) / 2f;
+return new Object[] { m3, out };
+</source>
+takes the smaller image i5 and puts it into the center of the larger image i3.  The code fragment 
 
 <source lang="java"> 
 double mean = 0;
@@ -373,8 +435,33 @@ mean /= m0[0] * m0[1];
 IJ.showMessage("mean value: " + mean);
 return null;
 </source>
+just calculates the overall mean value of image i0 and displays it in a check box.
+   
+Or it is even possible to create your own images without any input image:
 
-just calculates the overall mean value of image i0 and displays it in a check box.  For more information about the syntax, please consult the help function of the plugin itself.  As a final example, we show that it is also possible to create images with that tool:
+<source lang="java"> 
+int mx = 256;
+int my = 200;
+float[] out = new float[mx * my];
+for (int jj = 0; jj < my; jj++) 
+    for (int ii = 0; ii < mx; ii++) out[ii + jj * mx] = ii;
+return new Object[] { new int[] { mx, my }, out };
+</source>
+creates an image containing a ramp, or
+
+<source lang="java"> 
+int mx = 256;
+int my = 200;
+float[] out = new float[mx * my];
+for (int jj = 0; jj < my; jj++) 
+    for (int ii = 0; ii < mx; ii++) {
+        if (Math.sqrt(Math.pow(ii - mx / 2, 2) + 
+                      Math.pow(jj - my / 2, 2)) < 80) 
+            out[ii + jj * mx] = 255;
+    }
+return new Object[] { new int[] { mx, my }, out };
+</source>
+creates an image containing a circle mask in the center.  For more information about the syntax, please consult the help function of the plugin itself.  As a final example, we show that it is also possible to create images with that tool:
 
 <source lang="java"> 
 int max = 255;
@@ -400,7 +487,6 @@ for (int jj = 0; jj < my; jj++)
     }
 return new Object[] { new int[] { mx, my }, out };
 </source>
-
 This code fragment creates the image displayed in Fig.6.7 showing a well-known Mandelbrot fractal (see below)!
 
 {|
