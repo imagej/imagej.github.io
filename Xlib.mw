@@ -465,8 +465,10 @@ for (int jj = 0; jj < my; jj++)
     }
 return new Object[] { new int[] { mx, my }, out };
 </source>
+creates an image containing a circle mask in the center (see image to the right).  For more information about the syntax, please consult the help function of the plugin itself.
+
 [[Image:xFig6_7_5.jpg|right|350px]]
-creates an image containing a circle mask in the center (see image to the right).  For more information about the syntax, please consult the help function of the plugin itself.  As a final example, we show that it is also possible to create images with that tool:
+As a final example, we show that it is also possible to create images with that tool:
 
 <source lang="java"> 
 int max = 255;
