@@ -18,40 +18,40 @@ Since the research focus of our group is on 3D imaging, all of our plugins are a
 
 Each one of the new plugins includes a help button where basic remarks about the functionality and a description of the parameters is provided.  This feature does not correspond with the ImageJ philosophy assuming the help documentation to be available on the internet only.  However, we consider the help button as a handy feature.
 
-The user might be surprised to realize that some of the tools are apparently already existing in other plugins of ImageJ or Fiji.  Those tools are for instance "FFT", "Image Calculator", "Distance Transform", "Transform 2D 3D" and others.  The reason for this apparent redundancy is that the original tools incorporate major restrictions which are elimintated in the new plugins.  Each one of the available tools and its advantage is shortly being presented below.
+The user might be surprised to realize that some of the tools are apparently already existing in other plugins of ImageJ or Fiji.  Those tools are for instance [[#FFT 2D 3D|"FFT 2D 3D"]], [[#Image Calculator|"Image Calculator"]], [[#Distance Transform|"Distance Transform"]], [[#Transform 2D 3D|"Transform 2D 3D"]] and others.  The reason for this apparent redundancy is that the original tools incorporate major restrictions which are elimintated in the new plugins.  Each one of the available tools and its advantage is shortly being presented below.
 
 The following plugins are included:
 
 '''Data Import:'''
-*  Engine for finding the closest candidate to a list of chemical substances
-*  Import elementary image data from ".dmp" files (e.g. originating from Matlab)
+*  [[#Closest Cluster|"Closest Cluster"]]: Engine for finding the closest candidate to a list of chemical substances
+*  [[#Import DMP|"Import DMP"]]: Import elementary image data from ".dmp" files (e.g. originating from Matlab)
 '''Filtering:'''
-*  Anisotropic diffusion
-*  Canny edge detection
-*  Clustering of images
-*  Particle disconnection
-*  Distance transform
-*  Fast Fourier transform of arbitrary sized images
-*  Utterly generalized image calculator
-*  Labeling of disconnected binary mask objects
-*  Remove background from image by polynomial approximation
-*  Roundness filter
-*  Skeletonization of binary masks
-*  Removal of horizontal and vertical stripes
-*  Generalized image transforms
+*  [[#Anisotropic Diffusion|"Anisotropic Diffusion"]]: Anisotropic diffusion
+*  [[#Canny Edge|"Canny Edge"]]: Canny edge detection
+*  [[#Cluster Image|"Cluster Image"]]: Clustering of images
+*  [[#Disconnect Particles|"Disconnect Particles"]]: Particle disconnection
+*  [[#Distance Transform|"Distance Transform"]]: Distance transform
+*  [[#FFT 2D 3D|"FFT 2D 3D"]]: Fast Fourier transform of arbitrary sized images
+*  [[#Image Calculator|"Image Calculator"]]: Utterly generalized image calculator
+*  [[#Labelling 2D 3D|"Labelling 2D 3D"]]: Labeling of disconnected binary mask objects
+*  [[#Remove Background|"Remove Background"]]: Remove background from image by polynomial approximation
+*  [[#Roundness 2D 3D|"Roundness 2D 3D"]]: Roundness filter
+*  [[#Skeletonization 2D 3D|"Skeletonization 2D 3D"]]: Skeletonization of binary masks
+*  [[#Stripe Filter|"Stripe Filter"]]: Removal of horizontal and vertical stripes
+*  [[#Transform 2D 3D|"Transform 2D 3D"]]: Generalized image transforms
 '''Reconstruction:'''
-*  Filtered backprojection of projections
-*  Conversion of sets of projections into sinograms and vice versa
-*  Reconstruct virtual 3D structures from given 2D structures
+*  [[#Filtered Backprojection|"Filtered Backprojection"]]: Filtered backprojection of projections
+*  [[#Projections Sinograms|"Projections Sinograms"]]: Conversion of sets of projections into sinograms and vice versa
+*  [[#Reconstruct 3D from 2D|"Reconstruct 3D from 2D"]]: Reconstruct virtual 3D structures from given 2D structures
 '''Evaluation:'''
-*  Calculate particle size distribution of binary particle structures
-*  Evaluate images consisting of a number of homogeneous phases
-*  Calculate pore size distribution of binary pore structures
+*  [[#Particle Size Distribution|"Particle Size Distribution"]]: Calculate particle size distribution of binary particle structures
+*  [[#Phase Image Evaluation|"Phase Image Evaluation"]]: Evaluate images consisting of a number of homogeneous phases
+*  [[#Pore Size Distribution|"Pore Size Distribution"]]: Calculate pore size distribution of binary pore structures
 '''Editors and viewers:'''
-*  Interactively visualize 3D volume by an orthogonal slicer
-*  Engine for interactive editing of labeled binary 2D or 3D particle structures
-*  Engine for basic interactive segmentation of images and volumes
-*  Rendering of 3D image masks
+*  [[#Display Volume|"Display Volume"]]: Interactively visualize 3D volume by an orthogonal slicer
+*  [[#Edit Label Region|"Edit Label Region"]]: Engine for interactive editing of labeled binary 2D or 3D particle structures
+*  [[#Segment Phases 3D|"Segment Phases 3D"]]: Engine for basic interactive segmentation of images and volumes
+*  [[#View 3D Mask|"View 3D Mask"]]: Rendering of 3D image masks
 
 == Data Analysis ==
 Plugins of this section offer importing, handling or analysis of special data formats that are unknown to ImageJ, but interesting for special purposes.
@@ -60,7 +60,7 @@ Plugins of this section offer importing, handling or analysis of special data fo
 
 This plugin provides an engine for finding the most probable chemical compositions of some given energy dispersive spectroscopy (EDS) data. From a set of proposed chemical formula, a ranking of the probability of matching with the candidate EDS data is calculated.
 
-The program can be used in combination with the clustering plugin (see below).  Thereby for a resulting set of cluster centers, the program provides the most probable cluster membership.
+The program can be used in combination with the [[#Cluster Image|"Cluster Image"]] plugin.  Thereby for a resulting set of cluster centers, the program provides the most probable cluster membership.
 
 === Import DMP ===
 DMP is a simple data format for the storage of 2D images.  It is used at IBT from the ETH and University of Zürich.  The first two short integer entries of the data file are reserved for providing the width and the heigth of the image.  The next short integer is reserved.  Thereafter (i.e. after the first 6 bytes) follows the image data itself, each pixel given by a 32-bit floating number.
@@ -439,6 +439,8 @@ just calculates the overall mean value of image i0 and displays it in a check bo
    
 Or it is even possible to create your own images without any input image:
 
+[[Image:xFig6_7_3.jpg|thumb|right|100px]]
+
 <source lang="java"> 
 int mx = 256;
 int my = 200;
@@ -448,6 +450,8 @@ for (int jj = 0; jj < my; jj++)
 return new Object[] { new int[] { mx, my }, out };
 </source>
 creates an image containing a ramp, or
+
+[[Image:xFig6_7_4.jpg|thumb|right|100px]]
 
 <source lang="java"> 
 int mx = 256;
@@ -462,6 +466,8 @@ for (int jj = 0; jj < my; jj++)
 return new Object[] { new int[] { mx, my }, out };
 </source>
 creates an image containing a circle mask in the center.  For more information about the syntax, please consult the help function of the plugin itself.  As a final example, we show that it is also possible to create images with that tool:
+
+[[Image:xFig6_7_5.jpg|thumb|right|300px]]
 
 <source lang="java"> 
 int max = 255;
@@ -487,16 +493,12 @@ for (int jj = 0; jj < my; jj++)
     }
 return new Object[] { new int[] { mx, my }, out };
 </source>
-This code fragment creates the image displayed in Fig.6.7 showing a well-known Mandelbrot fractal (see below)!
-
-{|
-|style="vertical-align:top" |[[Image:xFig6_7.jpg|thumb|right|500px|Mandelbrot fractal provided by the code above entered into the "Image Calculator" plugin.]]
-|}
+This code fragment creates the image to the right showing a well-known Mandelbrot fractal!
 
 === Labelling 2D 3D ===
 Particle analysis requires labelling of the previously determined particle mask which has been obtained by some type of image segmentation technique, e.g. by thresholding to mention the most simple one.  The binary particle mask allows evaluation of the particles only globally.  By labelling the particles, each particle is assigned a unique ID.  Labelling is the prerequisite for evaluations considering local values such as particle size, diameter or other shape parameters on the single objects.  This plugin implements the labelling of disconnected objects in both, 2D or 3D binary masks.  The binarization from gray level images occurs via providing a lower and an upper threshold.
 
-An example of labelling is given in the center and right images of Fig.6.4, where the center image shows the particle mask before the disconnection procedure and before labelling.  The disconnection procedure separates the single particles.  After this step, the object mask is still binary and labelling is applied to colorize the particles in order to be able to distinguish them by their object values.
+An example of labelling is given in the center and right images in the [[#Disconnect Particles|"Disconnect Particles"]] section, where the center image shows the particle mask before the disconnection procedure and before labelling.  The disconnection procedure separates the single particles.  After this step, the object mask is still binary and labelling is applied to colorize the particles in order to be able to distinguish them by their object values.
 
 === Remove Background ===
 If an image is subject to consistent global shifts of the image values depending on the location, this might be due to inconsistencies in the data acquisition rather than to real changes in the material properties.  In that case, background removal techniques might be appropriate.
@@ -628,7 +630,7 @@ The algorithm assumes that the 2-point autocorrelation function of similar struc
 Examples of the 2D-to-3D reconstruction are given in the figure above for a structure from cement paste (top left) and for a structure from a solid oxide fuel cell (bottom left).  The original gray level images have been acquired by SEM (scanning electron microscopy) at a pixel resolution of 20nm.  Segmentation has been achieved by thresholding.  After reconstruction of the 3D stack, a single slice of the reconstructed volume is displayed (right), revealing a "similar" structural appearance as the original one.  The shaded surface of the reconstructed 3D mask is presented in the figure below for the cement (left) and the fuel cell (right).
 
 {|
-|style="vertical-align:top" |[[Image:xFig7_3_2.jpg|thumb|right|600px|Shaded 3D representation of the reconstructed 3D stacks from Fig.7.3.1 of the cement paste (left) and the anode membrane (right).]]
+|style="vertical-align:top" |[[Image:xFig7_3_2.jpg|thumb|right|600px|Shaded 3D representation of the reconstructed 3D stacks from the reconstructed volume of the cement paste (left) and the anode membrane (right).]]
 |}
 
 == Evaluation ==
@@ -680,7 +682,7 @@ An example of a 2D particle image, of its mask and some particle evaluations is 
 }}
 
 === Phase Image Evaluation ===
-This plugins provides an evaluation of phase images [Leemann2006, Leemann2010] containing labeled phases.  For instance, labeled images might be created interactively with the help of the plugin "Segment Phases 3D", or even automatically with the plugin "Cluster Image".
+This plugins provides an evaluation of phase images [Leemann2006, Leemann2010] containing labeled phases.  For instance, labeled images might be created interactively with the help of the plugin [[#Segment Phases 3D|"Segment Phases 3D"]], or even automatically with the plugin [[#Cluster Image|"Cluster Image"]].
 
 The phase image evaluation calculates some parameters of all phases, including the percental phase contents and the phase areas.  Additionally, mean image values for each phase can be provided, if one or more gray value images associated to the current phase image are provided.
 
@@ -756,13 +758,13 @@ This section contains plugins that are designed for user-interactive visualizati
 This plugin provides an orthogonal slicer for image volumes.  The top view (xy), front view (xz) and side view (yz) of the volume are displayed at a specific point, the center point at startup.  The point then can be moved by mouse interaction in one of the views while the remaining views keep track of the changes.  Thereby, any x,y,z-location in the 3D volume can easily be focused and displayed.  The image value at the current position is always plotted to the ImageJ window.
 
 {|
-|style="vertical-align:top" |[[Image:xFig9_1.jpg|thumb|right|700px|Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the "Pore Size Distribution" plugin (top).]]
+|style="vertical-align:top" |[[Image:xFig9_1.jpg|thumb|right|700px|Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the [[#Pore Size Distribution|"Pore Size Distribution"]] plugin (top).]]
 |}
 
-As an example, the above figure displays the view of the orthogonal slicer applied to the 3D volume displayed in the "pore size distribution" section (top).  The red cross-lines of the slicer show the current 3D cursor position which allows interactively focusing any point in the 3D space.  The position vector and the associated image value are plotted to the ImageJ window (top).
+As an example, the above figure displays the view of the orthogonal slicer applied to the 3D volume displayed in the [[#Pore Size Distribution|"Pore Size Distribution"]] section (top).  The red cross-lines of the slicer show the current 3D cursor position which allows interactively focusing any point in the 3D space.  The position vector and the associated image value are plotted to the ImageJ window (top).
 
 === Edit Label Region ===
-This plugin provides an engine for interactive editing of label images or label volumes (i.e. stacks of images).  Label images are images holding a set of regions at one specific gray level or color per region (example see Fig.6.4, right).  Operations such as deleting, joining, eroding, dilating, opening, or closing of manually selected 3D objects are supported.  There is also an operation for deleting objects smaller than a certain size.  For stacks of images, all operations can be performed either in slice-wise 2D, or truly volumetrically in 3D.  The interface of the engine is visualized in the figure below.
+This plugin provides an engine for interactive editing of label images or label volumes (i.e. stacks of images).  Label images are images holding a set of regions at one specific gray level or color per region (example see figure in [[#Disconnect Particles|"Disconnect Particles"]], right).  Operations such as deleting, joining, eroding, dilating, opening, or closing of manually selected 3D objects are supported.  There is also an operation for deleting objects smaller than a certain size.  For stacks of images, all operations can be performed either in slice-wise 2D, or truly volumetrically in 3D.  The interface of the engine is visualized in the figure below.
 
 {|
 |style="vertical-align:top" |[[Image:xFig9_2.jpg|thumb|right|180px|Visualization of the interface for editing of labeled 3D regions.]]
@@ -780,13 +782,13 @@ A phase name and an ID are assessed to each phase for later processing.  The ID 
 The resulting phase image or image stack is a 32-bit color TIFF image.  All phase names and ID's are stored to the TIFF file header.  Hence, a thereby created TIFF phase image can be re-loaded for further processing if required.
 
 {|
-|style="vertical-align:top" |[[Image:xFig9_3.jpg|thumb|right|800px|Engine for 3D segmentation "Segment Phases 3D" which is currently operating on two gray level images (left).  The image at the bottom right is the interactively segmented phase image which is currently containing four different phases (see top left figure for the plugin "Phase Image Evaluation").]]
+|style="vertical-align:top" |[[Image:xFig9_3.jpg|thumb|right|800px|Engine for 3D segmentation which is currently operating on two gray level images (left).  The image at the bottom right is the interactively segmented phase image which is currently containing four different phases (see top left figure for the plugin [[#Phase Image Evaluation|"Phase Image Evaluation"]]).]]
 |}
 
-The segmentation engine is visualized in the figure above while operating on two SEM images of cement paste (OPC CEM 1) acquired at the same location but at different microscope settings.  The color image to the bottom right shows the currently constructed phase image consisting of 4 different overlapping phases.  The same image in non-overlapping mode is displayed in Fig.8.2, top left.  Currently, the phase named "Grain" is active and overlayed to the top left gray level image in transparent blue.  Like this, any current operation would now be achieved to the "Grain" phase.  The rectangle and heart shapes were drawn manually with the selection tools.
+The segmentation engine is visualized in the figure above while operating on two SEM images of cement paste (OPC CEM 1) acquired at the same location but at different microscope settings.  The color image to the bottom right shows the currently constructed phase image consisting of 4 different overlapping phases.  The same image in non-overlapping mode is displayed in the section for the [[#Phase Image Evaluation|"Phase Image Evaluation"]] plugin, top left.  Currently, the phase named "Grain" is active and overlayed to the top left gray level image in transparent blue.  Like this, any current operation would now be achieved to the "Grain" phase.  The rectangle and heart shapes were drawn manually with the selection tools.
 
 === View 3D Mask ===
-This plugin provides a 3D viewer of image and skeleton masks.  The original data base should be a stack of images.  An image mask may contain the mask of arbitrary objects, while skeleton masks should contain objects which are previously skeletonized in 3D.  3D skeletonization can be performed by previously calling the "Skeletonization 2D 3D" plugin.
+This plugin provides a 3D viewer of image and skeleton masks.  The original data base should be a stack of images.  An image mask may contain the mask of arbitrary objects, while skeleton masks should contain objects which are previously skeletonized in 3D.  3D skeletonization can be performed by previously calling the [[#Skeletonization 2D 3D|"Skeletonization 2D 3D"]] plugin.
 
 For 3D shading, the image masks can be either triangulated or voxelized.  The triangulation is performed by using the well-known marching cubes algorithm [Lorensen1987], while voxelization is performed by a technique of Artzy et al (see reference below).
 
@@ -797,10 +799,10 @@ The current transform matrix is always stored to a text file located in the fold
 The 3D viewer also contains a button to the bottom called "save canvas as JPEG".  By pressing it, the current view can be stored to JPG image.  The resolution of this image corresponds to the current resolution of the 3D window, i.e. to its window size.
 
 {|
-|style="vertical-align:top" |[[Image:xFig9_4.jpg|thumb|right|600px|Triangulated and shaded visualization of the 3D volume in Fig.8.3 and Fig.9.1.]]
+|style="vertical-align:top" |[[Image:xFig9_4.jpg|thumb|right|600px|Triangulated and shaded visualization of the 3D volume in the plugin for [[#Pore Size Distribution|"Pore Size Distribution"]] and [[#Display Volume|"Display Volume"]].]]
 |}
 
-As an example, a triangulated view of the segmented 3D volume is presented in the above image(see nanotomographic 3D sample from cement paste, image of plugins "Pore Size Distribution" (top image) and of "Display Volume").  Other examples were given in the plugin description for "Reconstruct 3D from 2D" and for "Skeletonization 2D 3D" showing the original 3D scene, its skeleton and its skeleton after resizing its elements to their size determined by the distance transform values (see "Distance Transform" plugin).
+As an example, a triangulated view of the segmented 3D volume is presented in the above image(see nanotomographic 3D sample from cement paste, image of plugins [[#Pore Size Distribution|"Pore Size Distribution"]] (top image) and of [[#Display Volume|"Display Volume"]]).  Other examples were given in the plugin description for [[#Reconstruct 3D from 2D|"Reconstruct 3D from 2D"]] and for [[#Skeletonization 2D 3D|"Skeletonization 2D 3D"]] showing the original 3D scene, its skeleton and its skeleton after resizing its elements to their size determined by the distance transform values (see [[#Distance Transform|"Distance Transform"]] plugin).
 
 * {{Citation
 | last = Lorensen
