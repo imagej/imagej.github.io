@@ -1,3 +1,5 @@
+== 'Xlib' plugins ==
+
 {{Infobox
 | software               = ImageJ / Fiji plugins
 | name                   = Xlib
@@ -10,6 +12,8 @@
 | category               = [[:Category:Plugins|Plugins]]
 | website                = http://wiki.imagej.net/Xlib
 }}
+
+__TOC__
 
 == Overview of 'Xlib' ==
 A set of prospective ImageJ plugins is maintained by the group for 3D-Microscopy, Analysis and Modeling of the Laboratory for Concrete and Construction Chemistry at Empa Dübendorf, Switzerland.  The plugins include automated imaging tools for filtering, data reconstruction, quantitative data evaluation and data import, as well tools for interactive segmentation, visualization and management of image data.
