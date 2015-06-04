@@ -12,7 +12,7 @@
 }}
 
 == Overview of 'Xlib' ==
-A set of prospective ImageJ plugins is maintained by the group for 3D-Microscopy, Analysis and Modelling of the Laboratory for Concrete and Construction Chemistry at Empa Dübendorf, Switzerland.  The plugins include automated imaging tools for filtering, data reconstruction, quantitative data evaluation and data import, as well tools for interactive segmentation, visualization and management of image data.
+A set of prospective ImageJ plugins is maintained by the group for 3D-Microscopy, Analysis and Modeling of the Laboratory for Concrete and Construction Chemistry at Empa Dübendorf, Switzerland.  The plugins include automated imaging tools for filtering, data reconstruction, quantitative data evaluation and data import, as well tools for interactive segmentation, visualization and management of image data.
 
 Since the research focus of our group is on 3D imaging, all of our plugins are able to deal with either 2D or 3D image data.  3D image data is always represented by image stacks.  3D processing may include slice-wise 2D processing of all images in the stack or, sometimes more important, true 3D processing.
 
@@ -33,7 +33,7 @@ The following plugins are included:
 *  [[#Distance Transform|"Distance Transform"]]: Distance transform
 *  [[#FFT 2D 3D|"FFT 2D 3D"]]: Fast Fourier transform of arbitrary sized images
 *  [[#Image Calculator|"Image Calculator"]]: Utterly generalized image calculator
-*  [[#Labelling 2D 3D|"Labelling 2D 3D"]]: Labeling of disconnected binary mask objects
+*  [[#Labeling 2D 3D|"Labeling 2D 3D"]]: Labeling of disconnected binary mask objects
 *  [[#Remove Background|"Remove Background"]]: Remove background from image by polynomial approximation
 *  [[#Roundness 2D 3D|"Roundness 2D 3D"]]: Roundness filter
 *  [[#Skeletonization 2D 3D|"Skeletonization 2D 3D"]]: Skeletonization of binary masks
@@ -150,6 +150,7 @@ The results of a Canny filtered image of a valve image is shown in the upper fig
 }}
 
 === Cluster Image ===
+[[Image:xFig6_3_1.jpg|thumb|right|600px|Image acquired by BSE and EDX maps at the same local position showing the amounts of Ca, C (1st row),  Al, Cl, Fe, K (2nd row), Mg, Mn, Na, O (3rd row), P, Si, S, Ti (4th row).]]
 Cluster analysis is a technique of statistical data analysis for grouping sets of objects.  It is used in machine learning, data mining, pattern recognition, information retrieval, bio-informatics and can also be applied to image analysis.  Different clustering definitions and algorithms have been proposed using connectivity, distance to the cluster center, statistical distribution, or density rates as optimization parameters for building clusters.
 
 In image analysis, mainly two algorithms are prominent: the k-means algorithm and the mean shift algorithm.  They have been implemented together with a third one, fuzzy c-means clustering.
@@ -162,11 +163,7 @@ Fuzzy c-means clustering [Bezdek1984] allows a data point to be assigned to more
 
 Expectation-maximization (EM) clustering [Dempster1977] iteratively finds the maximum likelyhood estimation of a Gaussian distribution fit of the original N-dimensional distribution of pixel values.  The EM iteration alternates between performing an expectation (E) step, which creates a function for the expectation of the log-likelihood evaluated using the current estimate for the parameters, and a maximization (M) step, which computes parameters maximizing the expected log-likelihood found on the E step.
 
-{|
-|style="vertical-align:top" |[[Image:xFig6_3_1.jpg|thumb|right|600px|Image acquired by BSE and EDX maps at the same local position showing the amounts of Ca, C (1st row),  Al, Cl, Fe, K (2nd row), Mg, Mn, Na, O (3rd row), P, Si, S, Ti (4th row).]]
-|}
-
-As an example, ESEM images of a natural cement analogue (Maqarin, Jordania) is provided in the figure above.  A backscatter electron microscope (BSE) image (top left) and image maps acquired from energy-dispersive X-ray spectroscopy (EDX) at the same location forked into 14 different elements (see figure above) are used as the basis for clustering.  Thus together with the BSE image, the clustering is achieved from a 15-dimensional vector space.  In the figure below, some results from different clustering algorithms and parameter settings are displayed.  The first row shows results from the k-means, the second one from the mean shift, and the third one from fuzzy c-means clustering.  K-means clustering (1st row) requires the number of clusters as an input parameter.  The results for 2 (left), 3, 5 and 16 (right) clusters are provided.  Slightly different results provides mean shift clustering (2nd row) which requires the size of the seeking perimeter as input parameter.  It is determined at 100 (left), 70, 60 and at 50 (right).  Fuzzy c-means clustering (3rd row) requires the number of clusters and the fuzziness as input parameters.  The results are displayed for 5 clusters at fuzziness 1.1 (left) and 4.0, for 16 clusters at fuzziness 2.0, as well as an image showing its fuzziness membership to the cluster with the highest respective ranking at each location (right).
+As an example, ESEM images of a natural cement analogue (Maqarin, Jordania) is provided in the figure to the upper right.  A backscatter electron microscope (BSE) image (top left) and image maps acquired from energy-dispersive X-ray spectroscopy (EDX) at the same location forked into 14 different elements (see figure above) are used as the basis for clustering.  Thus together with the BSE image, the clustering is achieved from a 15-dimensional vector space.  In the figure below, some results from different clustering algorithms and parameter settings are displayed.  The first row shows results from the k-means, the second one from the mean shift, and the third one from fuzzy c-means clustering.  K-means clustering (1st row) requires the number of clusters as an input parameter.  The results for 2 (left), 3, 5 and 16 (right) clusters are provided.  Slightly different results provides mean shift clustering (2nd row) which requires the size of the seeking perimeter as input parameter.  It is determined at 100 (left), 70, 60 and at 50 (right).  Fuzzy c-means clustering (3rd row) requires the number of clusters and the fuzziness as input parameters.  The results are displayed for 5 clusters at fuzziness 1.1 (left) and 4.0, for 16 clusters at fuzziness 2.0, as well as an image showing its fuzziness membership to the cluster with the highest respective ranking at each location (right).
 
 {|
 |style="vertical-align:top" |[[Image:xFig6_3_2.jpg|thumb|right|800px|Image acquired by BSE and EDX maps at the same local position showing the amounts of Ca, C (1st row),  Al, Cl, Fe, K (2nd row), Mg, Mn, Na, O (3rd row), P, Si, S, Ti (4th row).]]
@@ -227,18 +224,18 @@ Clustering can also be applied to one dimensional spaces (i.e. from a single gra
 | title = Maximum Likelihood from Incomplete Data via the EM Algorithm
 | journal = Journal of the Royal Statistical Society, Series B
 | volume = 39 (1)
-| pages = 1�$(H38
-�(B| year = 1977
+| pages = 1-38
+| year = 1977
 }}
 
 === Disconnect Particles ===
 In particle analysis from imaging due to the resolution limits, the particles might be wrongly connected at various locations if they are located too close to each other.  To remedy such connections, an algorithm for disconnecting them at their bottle necks has been implemented [Münch2006].  If requires a parameter k ranking from [0...1] controlling the disconnection.  At k=1, particle separation occurs at any bottle necks while at k=0, no separation at all is being performed.  The optimum depends on the data and is usually somewhere around k=0.7 inducing marked bottle necks to be carved and small bottle necks to be left unchanged.
 
 {|
-|style="vertical-align:top" |[[Image:xFig6_4.jpg|thumb|right|800px|3D FIB-nanotomography of cement grains (left), subsequent thresholding (center), disconnected (k=0.7) and labelled particles (right).]]
+|style="vertical-align:top" |[[Image:xFig6_4.jpg|thumb|right|800px|3D FIB-nanotomography of cement grains (left), subsequent thresholding (center), disconnected (k=0.7) and labeled particles (right).]]
 |}
 
-Results from cement grains acquired by 3D FIB-nanotomography are displayed in the figure above.  To the left, the original data volume is visualized.  The center image shows the mask after image thresholding.  Particles close to each other are erroneously interconnected at various locations.  The image to the right shows the volume disconnected at k=0.7 and labelled subsequently.
+Results from cement grains acquired by 3D FIB-nanotomography are displayed in the figure above.  To the left, the original data volume is visualized.  The center image shows the mask after image thresholding.  Particles close to each other are erroneously interconnected at various locations.  The image to the right shows the volume disconnected at k=0.7 and labeled subsequently.
 
 * {{Citation
 | last = Münch
@@ -294,14 +291,11 @@ In the upper figure, a binary mask from cement particles (left) is processed by 
 | year = 2000
 }}
 
+[[Image:xFig6_6.jpg|thumb|right|600px|FIB-nt image (427x768 pixels) from cement paste (left) and the magnitudes (center) and angles (right) of its Fourier transform.]]
 === FFT 2D 3D ===
 The fast, well known and widely used Cooley-Tukey radix-2 algorithm for the calculation of the discrete fast Fourier transform (FFT) only works on data whose size is equal to a power of two.  In order to provide FFT on data of different size, the data is usually extended to the next higher power of two.  In many cases, this approach is sufficient, in particular if the periodical nature of the transformed data function is not relevant.  However, if the period length is important and must be left unchanged, FFT on the original data size is required.  This can be achieved by using the Bluestein algorithm [Bluestein1968,Rabiner1969].  Since to our best knowledge, there is no ImageJ plugin available that permits FFT for non-radix-2 sized periods, this plugin has been built.  It correctly calculates the complex FFT on 2D and 3D images of arbitrary size.  It optionally provides the real and the imaginary part, or the magnitude and the angle images.  Moreover, it allows a logarithmic or square-root based scaling to be introduced in order to lower the contrast among the FFT coefficients.  This feature is useful if the FFT function is used for display purpose.  The reversibility of the FFT transform is supported for all these options.
 
-{|
-|style="vertical-align:top" |[[Image:xFig6_6.jpg|thumb|right|600px|FIB-nt image (427x768 pixels) from cement paste (left) and the magnitudes (center) and angles (right) of its Fourier transform.]]
-|}
-
-The figure above shows a sample FIB-nt image from cement paste (left) with a width of 427 and a height of 768 pixels.  The magnitudes and angles of its Fourier transform is scaled by a logarithmic funcion for improving the visibility of the small coefficients.  The inverse FFT transform of the center and right images yields the original function (left) again without any loss of precision.
+The figure to the right shows a sample FIB-nt image from cement paste (left) with a width of 427 and a height of 768 pixels.  The magnitudes and angles of its Fourier transform is scaled by a logarithmic funcion for improving the visibility of the small coefficients.  The inverse FFT transform of the center and right images reconstructs the original function (left) again without any loss of precision.
 
 * {{Citation
 | last = Bluestein
@@ -426,20 +420,26 @@ for (int jj = 0; jj < m5[1]; jj++)
 	     i5[ii + jj * m5[0]]) / 2f;
 return new Object[] { m3, out };
 </source>
+[[Image:xFig6_7_2.jpg|right|500px|thumb|left: image i0, center: image mask i1, right: message box with mean value of i0 within mask i1]]
 takes the smaller image i5 and puts it into the center of the larger image i3.  The code fragment 
 
 <source lang="java"> 
 double mean = 0;
-for (int ii = 0; ii < m0[0] * m0[1]; ii++) mean += i0[ii];
-mean /= m0[0] * m0[1];
+int anz = 0;
+for (int ii = 0; ii < m0[0] * m0[1]; ii++) 
+    if (i1[ii] > 127) {
+        mean += i0[ii];
+        anz++;
+    }
+mean /= anz;
 IJ.showMessage("mean value: " + mean);
 return null;
 </source>
-just calculates the overall mean value of image i0 and displays it in a check box.
+just calculates the overall mean value of image i0 within the ROI defined by i1 and displays it in a check box.
    
-Or it is even possible to create your own images without any input image:
+Moreover, it is even possible to create your own images without any input image:
 
-[[Image:xFig6_7_3.jpg|thumb|right|100px]]
+[[Image:xFig6_7_3.jpg|right|200px]]
 
 <source lang="java"> 
 int mx = 256;
@@ -449,9 +449,9 @@ for (int jj = 0; jj < my; jj++)
     for (int ii = 0; ii < mx; ii++) out[ii + jj * mx] = ii;
 return new Object[] { new int[] { mx, my }, out };
 </source>
-creates an image containing a ramp, or
+creates an image containing a ramp (see image to the right), or
 
-[[Image:xFig6_7_4.jpg|thumb|right|100px]]
+[[Image:xFig6_7_4.jpg|right|200px]]
 
 <source lang="java"> 
 int mx = 256;
@@ -465,9 +465,9 @@ for (int jj = 0; jj < my; jj++)
     }
 return new Object[] { new int[] { mx, my }, out };
 </source>
-creates an image containing a circle mask in the center.  For more information about the syntax, please consult the help function of the plugin itself.  As a final example, we show that it is also possible to create images with that tool:
+creates an image containing a circle mask in the center (see image to the right).  For more information about the syntax, please consult the help function of the plugin itself.  As a final example, we show that it is also possible to create images with that tool:
 
-[[Image:xFig6_7_5.jpg|thumb|right|300px]]
+[[Image:xFig6_7_5.jpg|right|350px]]
 
 <source lang="java"> 
 int max = 255;
@@ -495,10 +495,11 @@ return new Object[] { new int[] { mx, my }, out };
 </source>
 This code fragment creates the image to the right showing a well-known Mandelbrot fractal!
 
-=== Labelling 2D 3D ===
-Particle analysis requires labelling of the previously determined particle mask which has been obtained by some type of image segmentation technique, e.g. by thresholding to mention the most simple one.  The binary particle mask allows evaluation of the particles only globally.  By labelling the particles, each particle is assigned a unique ID.  Labelling is the prerequisite for evaluations considering local values such as particle size, diameter or other shape parameters on the single objects.  This plugin implements the labelling of disconnected objects in both, 2D or 3D binary masks.  The binarization from gray level images occurs via providing a lower and an upper threshold.
+[[Image:xFig6_8.jpg|right|400px|thumb|Particle image (left) and its labeling (right)]]
+=== Labeling 2D 3D ===
+Particle analysis requires labeling of the previously determined particle mask which has been obtained by some type of image segmentation technique, e.g. by thresholding to mention the most simple one.  The binary particle mask allows evaluation of the particles only globally.  By labeling the particles, each particle is assigned a unique ID.  Labeling is the prerequisite for evaluations considering local values such as particle size, diameter or other shape parameters on the single objects.  This plugin implements the labeling of disconnected objects in both, 2D or 3D binary masks.  The binarization from gray level images occurs via providing a lower and an upper threshold.
 
-An example of labelling is given in the center and right images in the [[#Disconnect Particles|"Disconnect Particles"]] section, where the center image shows the particle mask before the disconnection procedure and before labelling.  The disconnection procedure separates the single particles.  After this step, the object mask is still binary and labelling is applied to colorize the particles in order to be able to distinguish them by their object values.
+An example of labeling is given in the center and right images in the [[#Disconnect Particles|"Disconnect Particles"]] section, where the center image shows the particle mask before the disconnection procedure and before labeling.  The disconnection procedure separates the single particles.  After this step, the object mask is still binary and labeling is applied to colorize the particles in order to be able to distinguish them by their object values.
 
 === Remove Background ===
 If an image is subject to consistent global shifts of the image values depending on the location, this might be due to inconsistencies in the data acquisition rather than to real changes in the material properties.  In that case, background removal techniques might be appropriate.
@@ -588,6 +589,7 @@ In the next figure, the stripes in CT projections (top) and the resulting ring a
 | year = 2009
 }}
 
+[[Image:xFig6_13.jpg|thumb|right|550px|Flowers image (top left), its transform into polar coordinates (top right), its scaling followed by a rotation (bottom left), its rotation followed by a scaling (bottom right).]]
 === Transform 2D 3D ===
 This plugin provides image transforms for 2D images and for 3D image volumes by using polynomial fits of arbitrary degree.  Various transforms can be chosen, including translation, rotation, scaling in arbitrary order and by choosing variable centrum coordinates.
 
@@ -602,10 +604,6 @@ defines a translation by (10, -20) followed by a rotation by 30 in degrees in 2D
 defines a scaling by (0.5, 0.8, 1.5) followed by a rotation by (-10, 20, 30) in degrees around (0, 0, 0), followd by a translation by (11, -22, 33) in 3D.
 
 The corresponding homogeneous 4x4 (for 3D, or 3x3 for 2D) matrix operation is always indicated on the fly.  Of course, the specification of the 4x4 (or 3x3) homogeneous matrix itself is possible as well.  Moreover, the transformation of cartesian to cylindrical or spherical coordinates or vice versa is supported.  Also, resampling into another pixel size is feasible.
-
-{|
-|style="vertical-align:top" |[[Image:xFig6_13.jpg|thumb|right|600px|Flowers image (top left), its transform into polar coordinates (top right), its scaling followed by a rotation (bottom left), its rotation followed by a scaling (bottom right).]]
-|}
 
 == Reconstruction ==
 Plugins of this section support preprocessing and reconstruction of images from projection data for CT imaging.
@@ -763,13 +761,11 @@ This plugin provides an orthogonal slicer for image volumes.  The top view (xy),
 
 As an example, the above figure displays the view of the orthogonal slicer applied to the 3D volume displayed in the [[#Pore Size Distribution|"Pore Size Distribution"]] section (top).  The red cross-lines of the slicer show the current 3D cursor position which allows interactively focusing any point in the 3D space.  The position vector and the associated image value are plotted to the ImageJ window (top).
 
+[[Image:xFig9_2.jpg|right|180px|]]
 === Edit Label Region ===
-This plugin provides an engine for interactive editing of label images or label volumes (i.e. stacks of images).  Label images are images holding a set of regions at one specific gray level or color per region (example see figure in [[#Disconnect Particles|"Disconnect Particles"]], right).  Operations such as deleting, joining, eroding, dilating, opening, or closing of manually selected 3D objects are supported.  There is also an operation for deleting objects smaller than a certain size.  For stacks of images, all operations can be performed either in slice-wise 2D, or truly volumetrically in 3D.  The interface of the engine is visualized in the figure below.
+This plugin provides an engine for interactive editing of label images or label volumes (i.e. stacks of images).  Label images are images holding a set of regions at one specific gray level or color per region (example see figure in [[#Disconnect Particles|"Disconnect Particles"]], right).  Operations such as deleting, joining, eroding, dilating, opening, or closing of manually selected 3D objects are supported.  There is also an operation for deleting objects smaller than a certain size.  For stacks of images, all operations can be performed either in slice-wise 2D, or truly volumetrically in 3D.  The interface of the engine is visualized in the figure to the right.
 
-{|
-|style="vertical-align:top" |[[Image:xFig9_2.jpg|thumb|right|180px|Visualization of the interface for editing of labeled 3D regions.]]
-|}
-
+[[Image:xFig9_3.jpg|thumb|right|800px|Engine for 3D segmentation which is currently operating on two gray level images (left).  The image at the bottom right is the interactively segmented phase image which is currently containing four different phases (see top left figure for the plugin [[#Phase Image Evaluation|"Phase Image Evaluation"]]).]]
 === Segment Phases 3D ===
 This plugin provides an engine for interactive segmentation of multiple phases.  The program works on both, single images as well as image stacks.  For image stacks, the operations can be performed in either slice-wise 2D or in 3D.  All images or image stacks that are open in the current ImageJ session may serve as input images or image volumes.  This benefit of being able to use multiple input images enables creating phase masks from multiple coincident or from multiple filtered versions of the same 2D or 3D scene.
 
@@ -781,12 +777,9 @@ A phase name and an ID are assessed to each phase for later processing.  The ID 
 
 The resulting phase image or image stack is a 32-bit color TIFF image.  All phase names and ID's are stored to the TIFF file header.  Hence, a thereby created TIFF phase image can be re-loaded for further processing if required.
 
-{|
-|style="vertical-align:top" |[[Image:xFig9_3.jpg|thumb|right|800px|Engine for 3D segmentation which is currently operating on two gray level images (left).  The image at the bottom right is the interactively segmented phase image which is currently containing four different phases (see top left figure for the plugin [[#Phase Image Evaluation|"Phase Image Evaluation"]]).]]
-|}
+The segmentation engine is visualized in the figure to the right while operating on two SEM images of cement paste (OPC CEM 1) acquired at the same location but at different microscope settings.  The color image to the bottom right shows the currently constructed phase image consisting of 4 different overlapping phases.  The same image in non-overlapping mode is displayed in the section for the [[#Phase Image Evaluation|"Phase Image Evaluation"]] plugin, top left.  Currently, the phase named "Grain" is active and overlayed to the top left gray level image in transparent blue.  Like this, any current operation would now be achieved to the "Grain" phase.  The rectangle and heart shapes were drawn manually with the selection tools.
 
-The segmentation engine is visualized in the figure above while operating on two SEM images of cement paste (OPC CEM 1) acquired at the same location but at different microscope settings.  The color image to the bottom right shows the currently constructed phase image consisting of 4 different overlapping phases.  The same image in non-overlapping mode is displayed in the section for the [[#Phase Image Evaluation|"Phase Image Evaluation"]] plugin, top left.  Currently, the phase named "Grain" is active and overlayed to the top left gray level image in transparent blue.  Like this, any current operation would now be achieved to the "Grain" phase.  The rectangle and heart shapes were drawn manually with the selection tools.
-
+[[Image:xFig9_4.jpg|thumb|right|600px|Triangulated and shaded visualization of the 3D volume in the plugin for [[#Pore Size Distribution|"Pore Size Distribution"]] and [[#Display Volume|"Display Volume"]].]]
 === View 3D Mask ===
 This plugin provides a 3D viewer of image and skeleton masks.  The original data base should be a stack of images.  An image mask may contain the mask of arbitrary objects, while skeleton masks should contain objects which are previously skeletonized in 3D.  3D skeletonization can be performed by previously calling the [[#Skeletonization 2D 3D|"Skeletonization 2D 3D"]] plugin.
 
@@ -798,11 +791,7 @@ The current transform matrix is always stored to a text file located in the fold
 
 The 3D viewer also contains a button to the bottom called "save canvas as JPEG".  By pressing it, the current view can be stored to JPG image.  The resolution of this image corresponds to the current resolution of the 3D window, i.e. to its window size.
 
-{|
-|style="vertical-align:top" |[[Image:xFig9_4.jpg|thumb|right|600px|Triangulated and shaded visualization of the 3D volume in the plugin for [[#Pore Size Distribution|"Pore Size Distribution"]] and [[#Display Volume|"Display Volume"]].]]
-|}
-
-As an example, a triangulated view of the segmented 3D volume is presented in the above image(see nanotomographic 3D sample from cement paste, image of plugins [[#Pore Size Distribution|"Pore Size Distribution"]] (top image) and of [[#Display Volume|"Display Volume"]]).  Other examples were given in the plugin description for [[#Reconstruct 3D from 2D|"Reconstruct 3D from 2D"]] and for [[#Skeletonization 2D 3D|"Skeletonization 2D 3D"]] showing the original 3D scene, its skeleton and its skeleton after resizing its elements to their size determined by the distance transform values (see [[#Distance Transform|"Distance Transform"]] plugin).
+As an example, a triangulated view of the segmented 3D volume is presented in the image to the right (see nanotomographic 3D sample from cement paste, image of plugins [[#Pore Size Distribution|"Pore Size Distribution"]] (top image) and of [[#Display Volume|"Display Volume"]]).  Other examples were given in the plugin description for [[#Reconstruct 3D from 2D|"Reconstruct 3D from 2D"]] and for [[#Skeletonization 2D 3D|"Skeletonization 2D 3D"]] showing the original 3D scene, its skeleton and its skeleton after resizing its elements to their size determined by the distance transform values (see [[#Distance Transform|"Distance Transform"]] plugin).
 
 * {{Citation
 | last = Lorensen
