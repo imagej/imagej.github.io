@@ -1,0 +1,66 @@
+{{Infobox
+| software               = Fiji
+| name                   = Microscope Measurement Tools
+| author                 = [[User:Demis | Demis D. John]]
+| maintainer             = Demis D. John ([mailto:demis.john@gmail.com demis.john@gmail.com])
+| filename               = [https://github.com/demisjohn/Microscope-Measurement-Tools/archive/v1.1.zip Microscope Measurement Tools v1.1.zip]
+| source                 = {{GitHub|org=demisjohn|repo=Microscope-Measurement-Tools}}
+| released               = June 11<sup>th</sup>, 2015
+| latest version         = 1.1
+| status                 = beta
+| website                = [https://github.com/demisjohn/Microscope-Measurement-Tools Microscope Measurement Tools at GitHub]
+}}Calibrate your microscope and create measurement annotations.
+
+[[Category:Plugins]]
+[[Category:Registration]]
+
+== Description ==
+This set of plugins provides a quick way to save measurement calibrations for various microscopes/objective in a simple text file.  
+You can then choose any of your calibrations to be applied to an open image (or all open images).  
+An included plugin then allows you to annotate a line with the calibrated measurement length.
+
+== Installation & Usage Manual ==
+Please see the installation & usage instructions here: 
+[https://github.com/demisjohn/Microscope-Measurement-Tools/blob/master/Microscope%20Meas.%20-%20Calibration%20instructions.pdf Microscope Meas. - Calibration instructions.pdf]
+
+1. Extract the .zip file linked in GitHub/Releases, and place the resulting *Analysis* folder inside
+*Fiji.app/Plugins/Scripts*
+
+(If an *Analysis* folder already exists, do Not overwrite it - you must have another Analysis plugin installed!  Instead, merge the two folders.
+
+2. Open an image with a feature of some known length, taken with some microscope/objective that you desire to save a calibration for.
+
+3. Draw a line along the feature of known length.
+
+4. Select the *Analyze > Set Scale* menu item.
+
+5. Type in the known length in "*Known Distance*", record the "*Scale*" value for this calibration.  Perform more calibrations if needed, recording the Scale values for each.
+
+6. Edit the File 
+
+*Fiji.app / plugins / Scripts / Analyze / Microscope Measurement Tools /
+Microscope_Calibrations_user_settings.py*
+
+7. Type in the Calibrations names & Scales for each, making sure to match up the lists with their corresponding calibrations.
+
+Unfortunately, the changes to the settings file may not be automatically picked up by Fiji.
+The workaround is to do the following:
+
+8. Quit Fiji.
+
+9. Delete the 'py.class' file in the plugin’s folder (and edit your user-settings file as needed)
+
+*Fiji.app / plugins / Scripts / Analyze / Microscope Measurement Tools /
+Microscope_Calibrations_user_settings$py.class*
+
+10. Open Fiji. It should have picked up the new settings now.
+
+11. Run *Analyze > Microscope Measurement Tools > Choose Microscope Calibration* - the pop-up window shows the new names and calibration values you set in your user-settings file.
+
+You should only have to do this calibration once, when you do your initial calibration/setup.
+
+
+
+== Author(s) ==
+This simple python (jython) plugin was created by [demis.john@gmail.com Demis D. John], 2015.
+Please feel free to add other measurement annotation plugins!
