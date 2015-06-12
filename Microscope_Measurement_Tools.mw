@@ -15,9 +15,23 @@
 [[Category:Registration]]
 
 == Description ==
-This set of plugins provides a quick way to save measurement calibrations for various microscopes/objective in a simple text file.  
-You can then choose any of your calibrations to be applied to an open image (or all open images).  
-An included plugin then allows you to annotate a line with the calibrated measurement length.
+This set of plugins provides a quick way to save measurement calibrations for various microscopes/objectives in a simple text file.
+
+You can then choose any of your prior calibrations to be applied to an open image (or all open images), as so:
+[[File:Microscope_Meas_Tools_-_Choose_Calibration_01.png]]
+  
+The "Draw Measurement" plugin then allows you to annotate a line ROI with the calibrated measurement length, as so:
+[[File:Microscope_Meas_Tools_-_Draw_Meas_Line.png]]
+
+
+Three files are included:
+
+* ''Choose_Microscope_Calibration.py''
+** Opens the "Choose Calibration" window, for setting the measurement scale to a reconfigured value.
+* ''Draw_Measurement_-_Line.py''
+** Converts a Line ROI into a drawn annotation with the measurement length indicated.
+* ''Microscope_Calibrations_user_settings.py''
+** Settings file that contains your pre-configured scale calibrations, along with settings for drawing annotations (background/text color etc.)
 
 == Installation & Usage Manual ==
 Please see the installation & usage instructions here: 
