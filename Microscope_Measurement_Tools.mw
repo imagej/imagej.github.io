@@ -77,6 +77,6 @@ You should only have to do this calibration once, when you do your initial calib
 == Author(s) ==
 This simple python (jython) plugin was created by [mailto:demis.john@gmail.com Demis D. John], 2015.
 
-The plugin used the following plugins as inspiration: [Correct_3D_drift Correct_3D_drift] and [http://rsb.info.nih.gov/ij/plugins/microscope-scale.html Microscope Scale] (which sadly doesn't work as easily anymore).
+I used the following plugins as inspiration: [Correct_3D_drift Correct_3D_drift] and [http://rsb.info.nih.gov/ij/plugins/microscope-scale.html Microscope Scale] (which sadly doesn't work as easily anymore).
 
 Please feel free to add other measurement annotation plugins!
