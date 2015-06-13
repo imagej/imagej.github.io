@@ -106,6 +106,6 @@ This simple python (jython) plugin was created by [mailto:demis.john@gmail.com D
 
 I used the following plugins as inspiration: [[Correct_3D_drift]] and [http://rsb.info.nih.gov/ij/plugins/microscope-scale.html Microscope Scale] (which sadly is no longer easily customizable).
 
-The Line Annotation is pretty crude still - I would love it if someone would make that more flexible and user-friendly (eg. erase an annotation or undo an annotation) - possibly using the "overlay" option?
+The Line Annotation is pretty crude - I would love it if someone made that more flexible and user-friendly (eg. erase an annotation or undo an annotation) - possibly using the "overlay" option?
 
 Please feel free to add other measurement annotation plugins!
