@@ -37,14 +37,14 @@ Three files are included:
 == Installation & Usage Manual ==
 Please see the installation & usage instructions here: 
 
-* [https://github.com/demisjohn/Microscope-Measurement-Tools/blob/master/Microscope%20Meas.%20-%20Calibration%20instructions.pdf '''Microscope Meas. - Calibration instructions.pdf''']
+: [https://github.com/demisjohn/Microscope-Measurement-Tools/blob/master/Microscope%20Meas.%20-%20Calibration%20instructions.pdf '''Microscope Meas. - Calibration instructions.pdf''']
 
 
 
 1. Extract the .zip file linked in GitHub/Releases, and place the resulting ''Analysis'' folder inside
 ''Fiji.app/Plugins/Scripts''
 
-(If an ''Analysis'' folder already exists, do Not overwrite it - you must have another Analysis plugin installed!  Instead, merge the two folders.
+: (If an ''Analysis'' folder already exists, do Not overwrite it - you must have another Analysis plugin installed!  Instead, merge the two folders.
 
 2. Open an image with a feature of some known length, taken with some microscope/objective that you desire to save a calibration for.
 
@@ -56,10 +56,11 @@ Please see the installation & usage instructions here:
 
 6. Edit the File 
 
-''Fiji.app / plugins / Scripts / Analyze / Microscope Measurement Tools /
+: ''Fiji.app / plugins / Scripts / Analyze / Microscope Measurement Tools /
 Microscope_Calibrations_user_settings.py''
 
 7. Type in the Calibrations names & Scales for each, making sure to match up the lists with their corresponding calibrations.
+
 
 Unfortunately, the changes to the settings file may not be automatically picked up by Fiji.
 The workaround is to do the following:
@@ -68,7 +69,7 @@ The workaround is to do the following:
 
 9. Delete the "''py.class''" file in the plugin’s folder (and edit your user-settings file as needed):
 
-''Fiji.app / plugins / Scripts / Analyze / Microscope Measurement Tools /
+: ''Fiji.app / plugins / Scripts / Analyze / Microscope Measurement Tools /
 Microscope_Calibrations_user_settings$py.class''
 
 10. Open Fiji. It should have picked up the new settings now.
