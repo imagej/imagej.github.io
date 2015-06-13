@@ -35,16 +35,20 @@ Three files are included:
 ** Settings file that contains your pre-configured scale calibrations, along with some settings for drawing annotations (background/text color etc.)
 
 == Installation & Usage Manual ==
-Please see the installation & usage instructions here: 
+Please see the complete installation & usage instructions here: 
 
 : [https://github.com/demisjohn/Microscope-Measurement-Tools/blob/master/Microscope%20Meas.%20-%20Calibration%20instructions.pdf '''Microscope Meas. - Calibration instructions.pdf''']
 
+Basic instructions are as follows.
 
+1. Extract the .zip file linked at [https://github.com/demisjohn/Microscope-Measurement-Tools/releases GitHub/Releases], and place the resulting ''Analysis'' folder inside
 
-1. Extract the .zip file linked in GitHub/Releases, and place the resulting ''Analysis'' folder inside
-''Fiji.app/Plugins/Scripts''
+: ''Fiji.app / Plugins / Scripts''
 
 : (If an ''Analysis'' folder already exists, do Not overwrite it - you must have another Analysis plugin installed!  Instead, merge the two folders.
+
+
+=== Setting up your calibrations ===
 
 2. Open an image with a feature of some known length, taken with some microscope/objective that you desire to save a calibration for.
 
@@ -52,34 +56,50 @@ Please see the installation & usage instructions here:
 
 4. Select the ''Analyze > Set Scale'' menu item.
 
-5. Type in the known length in "''Known Distance''", record the "*Scale*" value for this calibration.  Perform more calibrations if needed, recording the Scale values for each.
+5. Type in the known length in "''Known Distance''", record the "''Scale''" value for this calibration. 
+
+: Perform more calibrations (on other images) if desired, recording the Scale values for each.
 
 6. Edit the File 
 
 : ''Fiji.app / plugins / Scripts / Analyze / Microscope Measurement Tools /
-Microscope_Calibrations_user_settings.py''
+'''Microscope_Calibrations_user_settings.py'''''
 
-7. Type in the Calibrations names & Scales for each, making sure to match up the lists with their corresponding calibrations.
+7. Type in the Calibrations names & Scales for each, making sure to match up the list of names with their corresponding calibrations.
+
+: This settings file is an actual python script, so the lists you edit there can use normal Python syntax. eg. functions like `myList.append( [ ] )` or `myList = ['cm'] * 5` etc. will work.
 
 
-Unfortunately, the changes to the settings file may not be automatically picked up by Fiji.
+Unfortunately, changes to the settings file may not be automatically picked up by Fiji.
 The workaround is to do the following:
 
 8. Quit Fiji.
 
-9. Delete the "''py.class''" file in the plugin’s folder (and edit your user-settings file as needed):
+9. Delete the "''py.class''" file in the plugin’s folder:
 
 : ''Fiji.app / plugins / Scripts / Analyze / Microscope Measurement Tools /
 Microscope_Calibrations_user_settings$py.class''
 
 10. Open Fiji. It should have picked up the new settings now.
 
-11. Run ''Analyze > Microscope Measurement Tools > Choose Microscope Calibration'' - the pop-up window shows the new names and calibration values you set in your user-settings file.
-
 You should only have to do this calibration once, when you do your initial calibration/setup.
 
 
-To draw a measurement annotation, Draw a "Straight Line" along the feature to measure (the length is displayed in the FIJI status bar), and then select ''Analyze > Microscope Measurement Tools > Draw Annotation - Line''.  The annotation will be drawn directly onto the image.
+=== Applying a pre-configured scale to your image ===
+
+11. Run ''Analyze > Microscope Measurement Tools > Choose Microscope Calibration'' - the pop-up window shows the new names and calibration values you set in your user-settings file.
+
+
+=== Annotating your image with a length measurement ===
+
+To draw a measurement annotation, 
+
+1. Draw a "Straight Line" along the feature you want to measure (the length is displayed in the FIJI status bar)
+
+2. Select ''Analyze > Microscope Measurement Tools > Draw Annotation - Line''.
+
+: The annotation will be drawn directly onto the image.
+: It is recommended that you work on a copy of your file.  Unfortunately there is currently no Undo feature.  I may try to figure out ho to use the "Overlay" feature to make something like that possible.
 
 == Author(s) ==
 This simple python (jython) plugin was created by [mailto:demis.john@gmail.com Demis D. John], 2015.
