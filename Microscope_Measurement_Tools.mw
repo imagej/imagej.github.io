@@ -68,7 +68,7 @@ Basic instructions are as follows.
 
 7. Type in the Calibration's Names & Scale values, making sure to match up the list of names with their corresponding calibrations.
 
-: This settings file is an actual python script, so you can edit the lists there can use normal Python syntax. eg. functions like `myList.append( [ ] )` or `myList = ['cm'] * 5` etc. will work.
+: This settings file is an actual python script, so you can edit the lists there using normal Python syntax. eg. functions like `myList.append( [ ] )` or `myList = ['cm'] * 5` etc. will work.
 
 
 Unfortunately, changes to the settings file may not be automatically picked up by Fiji.
