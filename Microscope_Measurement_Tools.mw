@@ -78,6 +78,9 @@ Microscope_Calibrations_user_settings$py.class''
 
 You should only have to do this calibration once, when you do your initial calibration/setup.
 
+
+To draw a measurement annotation, Draw a "Straight Line" along the feature to measure (the length is displayed in the FIJI status bar), and then select ''Analyze > Microscope Measurement Tools > Draw Annotation - Line''.  The annotation will be drawn directly onto the image.
+
 == Author(s) ==
 This simple python (jython) plugin was created by [mailto:demis.john@gmail.com Demis D. John], 2015.
 
