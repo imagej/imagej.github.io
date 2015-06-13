@@ -56,18 +56,19 @@ Basic instructions are as follows.
 
 4. Select the ''Analyze > Set Scale'' menu item.
 
-5. Type in the known length in "''Known Distance''", record the "''Scale''" value for this calibration. 
+5. Type in the known length in "''Known Distance''" and record the "'''Scale'''" value for this calibration. 
 
 : Perform more calibrations (on other images) if desired, recording the Scale values for each.
 
 6. Edit the File 
 
 : ''Fiji.app / plugins / Scripts / Analyze / Microscope Measurement Tools /
-'''Microscope_Calibrations_user_settings.py'''''
 
-7. Type in the Calibrations names & Scales for each, making sure to match up the list of names with their corresponding calibrations.
+:: '''Microscope_Calibrations_user_settings.py'''''
 
-: This settings file is an actual python script, so the lists you edit there can use normal Python syntax. eg. functions like `myList.append( [ ] )` or `myList = ['cm'] * 5` etc. will work.
+7. Type in the Calibration's Names & Scale values, making sure to match up the list of names with their corresponding calibrations.
+
+: This settings file is an actual python script, so you can edit the lists there can use normal Python syntax. eg. functions like `myList.append( [ ] )` or `myList = ['cm'] * 5` etc. will work.
 
 
 Unfortunately, changes to the settings file may not be automatically picked up by Fiji.
@@ -83,7 +84,6 @@ Microscope_Calibrations_user_settings$py.class''
 10. Open Fiji. It should have picked up the new settings now.
 
 You should only have to do this calibration once, when you do your initial calibration/setup.
-
 
 === Applying a pre-configured scale to your image ===
 
