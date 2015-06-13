@@ -36,7 +36,10 @@ Three files are included:
 
 == Installation & Usage Manual ==
 Please see the installation & usage instructions here: 
-[https://github.com/demisjohn/Microscope-Measurement-Tools/blob/master/Microscope%20Meas.%20-%20Calibration%20instructions.pdf Microscope Meas. - Calibration instructions.pdf]
+
+* [https://github.com/demisjohn/Microscope-Measurement-Tools/blob/master/Microscope%20Meas.%20-%20Calibration%20instructions.pdf '''Microscope Meas. - Calibration instructions.pdf''']
+
+
 
 1. Extract the .zip file linked in GitHub/Releases, and place the resulting ''Analysis'' folder inside
 ''Fiji.app/Plugins/Scripts''
