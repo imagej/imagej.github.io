@@ -16,7 +16,9 @@ It seems inevitable that ImageJ will need to switch to Java 8 very soon. At mini
 
 == Java on OS X ==
 
-The way Java works on OS X has undergone a radical shift. Apple no longer ships their own version of Java, but rather relies on users to install Java themselves, the same as on Windows and Linux. The last version of Apple Java is Java 6, which has been unsupported for over two years now (see above). Furthermore, there are substantial technical challenges with packaging a Java application that works properly on both Apple Java and OpenJDK (see next section).
+The way Java works on OS X has undergone a radical shift. Apple no longer ships their own version of Java, but rather relies on users to install Java themselves, the same as on Windows and Linux. The last version of Apple Java is Java 6, which has been unsupported for over two years now (see above). OS X 10.9 "Mavericks" and OS X 10.10 "Yosemite" do not come with Apple Java 6 preinstalled, and in fact ''uninstall' it when upgrading, if it is present.
+
+Furthermore, there are substantial technical challenges with packaging a Java application that works properly on both Apple Java and OpenJDK (see next section).
 
 == The ImageJ launcher ==
 
