@@ -31,7 +31,7 @@ There are currently no stable downloads for the ImageJ2 project itself—only fo
 * Application installers and bundles ''without'' the Java runtime—for Windows, OS X and Linux.
 * Platform-agnostic "portable application" bundle (without the Java runtime), for use on thumb drives, and with other platforms such as Raspberry Pi.
 
-== Deploy ImageJ with industry standard tools ==
+== Deploying ImageJ with industry standard tools ==
 
 We are having good success packaging ImageJ via [https://docs.oracle.com/javase/8/docs/technotes/guides/deploy/toc.html Oracle's Java packaging mechanism] as a self-contained application. This relatively new packaging mechanism (part of the JavaFX software suite) lets you deploy Java applications in four different ways:
 
