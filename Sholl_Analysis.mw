@@ -425,6 +425,26 @@ function closeResults() {
 		{ selectWindow("Results"); run("Close"); }
 }
 </source>
+== Advanced Options ==
+Advanced options can be set by calling public methods of <tt>Sholl_Analysis</tt>, the main class of the plugin. Options include the ability to perform analyses without displaying plots or without displaying detailed tables, and plots without annotations. There is also an option to specify the precision to be used in the calculations of [[#MeanValueOfFunction|Mean value]], and [[#CriticalValue|Critical value]], [[#CriticalRadius|Critical radius]].
+Changes made to these settings need to be set before running the plugin and remain in effect while ImageJ is running. For a full description of all the available options, have a look at the plugin's API documentation.
+;Python example: Display only the ''[[#Metrics|Sholl Table]]'', ignoring remaining outputs
+<source lang="python">
+import Sholl_Analysis as sa
+sa.setNoPlots(True) # Exclude plots from output
+sa.setNoTable(True) # Exclude detailed table from output
+</source>
+;Java/BeanShell example: Display plots without annotations
+<source lang="java">
+import Sholl_Analysis
+Sholl_Analysis.setPlotLabels(true) // Exclude plot labels
+</source>
+;IJ macro language example: Exclude plots and reduce the number of discretization steps involved in the calculation of [[#MeanValueOfFunction|Nav]], and [[#CriticalValue|Cv]], [[#CriticalRadius|Cr]]:
+<source lang="java">
+call("Sholl_Analysis.setNoPlots", "true"); // Exclude plots from output
+call("Sholl_Analysis.setPrecision", "100"); // Default is 1000, ie, 1/1000 of radius step size
+</source>
+Note that the IJM built-in [http://imagej.nih.gov/ij/developer/macro/functions.html#call call("class.method")] function can only pass strings to Java methods. For this reason, you have to quote the passed argument. <tt>Sholl_Analysis</tt> will then parse the string argument and interpreter its value.
 
 == Auxiliary Commands ==
 ;File▷ Open Samples▷ ddaC Neuron
