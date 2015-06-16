@@ -29,6 +29,8 @@ importClass(Packages.ij.plugin.frame.RoiManager);
 importClass(Packages.ij.gui.GenericDialog);
 </source>
 
+{{Warning|When [[FAQ#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F|using Java 1.8]], the ''importClass'' and ''importPackage'' statements will result in errors due to the Nashorn Javascript engine. To access the ''ij.IJ'' class, use the following syntax instead: <source lang="javascript">var IJ = Java.type("ij.IJ");</source> (see also this [https://github.com/imagej/imagej/issues/116 related github issue])}}
+
 === Variables ===
 
 There are two ways:
