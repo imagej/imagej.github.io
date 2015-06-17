@@ -198,7 +198,11 @@ If that still fails, please download a fresh copy from [[Downloads|here]].
 
 == I updated ImageJ via ''Help>Update'', and now it does not start anymore! ==
 
-You may have been bitten by a bug in the updater that is already fixed (but you did not get the fix in time). Please follow [[Fix non-functional ImageJ after Update|these instructions]].
+Occasionally such problems occur due to bugs in the [[Updater]].
+
+The easiest workaround is to [[download]] a fresh copy of the software.
+
+Or if you are feeling investigative, you can try [[Debugging#Launching_ImageJ_in_debug_mode|launching ImageJ in debug mode]] to get more information about why it is failing to start up. After doing that, you will probably see some information printed to the console, which you can paste online to somewhere like [http://pastebin.com/ Pastebin.com], and write to the [[Mailing List]] to ask for help deciphering it.
 
 == The Updater always says ''Connection refused''. Maybe it does not use the proxy? ==
 
