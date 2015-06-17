@@ -427,7 +427,7 @@ function closeResults() {
 </source>
 == Advanced Options ==
 Advanced options can be set by calling public methods of <tt>Sholl_Analysis</tt>, the main class of the plugin. Options include the ability to perform analyses without displaying plots or without displaying detailed tables, and plots without annotations. There is also an option to specify the precision to be used in the calculations of [[#MeanValueOfFunction|Mean value]], and [[#CriticalValue|Critical value]], [[#CriticalRadius|Critical radius]].
-Changes made to these settings need to be set before running the plugin and remain in effect while ImageJ is running. For a full description of all the available options, have a look at the plugin's API documentation.
+Changes made to these settings need to be set before running the plugin and remain in effect while ImageJ is running. For a full description of all the available options, have a look at the plugin's API documentation ([http://jenkins.imagej.net/job/Sholl-Analysis/lastStableBuild/artifact/target/ latest version]).
 ;Python example: Display only the ''[[#Metrics|Sholl Table]]'', ignoring remaining outputs
 <source lang="python">
 import Sholl_Analysis as sa
