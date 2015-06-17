@@ -227,7 +227,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 : See also [[#MaxInters|Max inters.]]
 
 ;<span id="CriticalRadius"></span>Critical radius
-:The distance at which ''Critical value'' occurs. Calculated with a precision of 1/1000 of ''Radius step size''. Abbreviation: ''r<sub>c</sub>''.
+:The distance at which ''Critical value'' occurs. By default (see [[#Advanced Options|Advance Options]]), it is calculated with a precision of 1/1000 of ''Radius step size''. Abbreviation: ''r<sub>c</sub>''.
 : See also [[#MaxIntersRadius|Max inters. radius]]
 {{Tip
 | id = Nomenclature
@@ -235,7 +235,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 }}
 ;<span id="MeanValueOfFunction"></span>Mean value
 :The mean value<ref name="Stulic"></ref> of the fitted polynomial function [[#eq1|(1)]], representing the average of intersections over the whole area occupied by the arbor. Abbreviation ''N<sub>av</sub>''.
-:On the Sholl plot, it is [[#ShollPlots|highlighted]] as the height of the rectangle that has the width of ''Enclosing radius'' − ''First intersecting radius'' and the same area of the area under the fitted curve on that discrete interval. It is analogous to [[#MeanInters|Mean inters.]], the arithmetic mean of sampled intersections throughout the arbor (cf. [[#Metrics_based_on_sampled_data|Metrics based on sampled data]]).
+:On the Sholl plot, it is [[#ShollPlots|highlighted]] as the height of the rectangle that has the width of ''Enclosing radius'' − ''First intersecting radius'' and the same area of the area under the fitted curve on that discrete interval. It is analogous to [[#MeanInters|Mean inters.]], the arithmetic mean of sampled intersections throughout the arbor (cf. [[#Metrics_based_on_sampled_data|Metrics based on sampled data]]). By default (see [[#Advanced Options|Advance Options]]), it is calculated with a precision of 1/1000 of ''Radius step size''.
 
 ;<span id="SchoenenFitted"></span>Schoenen Ramification index (''Ramification index (fit)'')
 :Schoenen Ramification index retrieved from fitted profile:  The ration between [[#CriticalValue|Critical value]] and  [[#PrimaryBranches|Number of primary branches]].
