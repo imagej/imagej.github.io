@@ -6,9 +6,9 @@
 | author         = Tiago Ferreira, Tom Maddock (v1.0.0)
 | maintainer     = [[User:Tiago|Tiago Ferreira]]
 | source         = {{GitHub|org=tferr|repo=ASA}}
-| filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.4.4.jar Sholl_Analysis.jar]
+| filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.4.5.jar Sholl_Analysis.jar]
 | released       = December 2012
-| latest version = '''3.4.4 March 2015''' ({{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}})
+| latest version = '''3.4.5 June 2015''' ({{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}})
 | status         = See [[#Release Notes and Pre-releases|Pre-releases]] and {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=Development Notes}}
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]]
 }}
@@ -621,7 +621,7 @@ one could retrieve the AUC of the polynomial fit, but such property is already c
 </ol>
 
 == Non-Fiji users ==
-If you are not using Fiji, download ''Sholl_Analysis.jar'' from the direct link listed on the [[#top|top of this page]] and place it in the ''ImageJ/plugins/'' directory. Alternatively, drag the downloaded jar and drop it on the main window. Restart ImageJ and run the new <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span> command.
+If you are not using Fiji, download ''Sholl_Analysis.jar'' from the direct link listed on the [[#top|top of this page]] and place it in the ''ImageJ/plugins/'' directory. Alternatively, drag the downloaded <tt>.jar</tt> file and drop it on the main ImageJ window. Restart ImageJ and run the new <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span> command.
 
 Please note that Fiji is the most convenient way of keeping your ImageJ distribution up-to-date. Without access to Fiji's [[Update_Fiji|built-in updater]], you are strongly advised to upgrade ImageJ to its latest version using <span style="border-bottom:1px dotted #ccc;">Help▷ Update ImageJ...</span> Without Fiji, you will also have to manually update the Sholl Analysis plugin by checking the {{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}}.
 
