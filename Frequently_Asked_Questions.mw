@@ -92,6 +92,8 @@ Use the <code>--java-home</code> command line option:
 
 Note: the <code>--java-home</code> flag does not support Apple Java installations. However, Fiji will fall back to Apple Java if no other Java installations are available.
 
+Specifying Apple Javas with this flag will give an error message about being unable to find <code>lib/server/libjvm.dylib</code>.
+
 === On Linux ===
 
 Use the <code>--java-home</code> command line option:
