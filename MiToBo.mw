@@ -1,6 +1,7 @@
 {{Infobox
 | software               = MiToBo
 | name                   = MiToBo
+| logo                     = [[File:MiToBo-logo.png|96px]]
 | maintainer             = Stefan Posch, Birgit Möller
 | author                 = Stefan Posch, Birgit Möller
 | source                 = {{GitHub|org=alida-hub|repo=alida}}
