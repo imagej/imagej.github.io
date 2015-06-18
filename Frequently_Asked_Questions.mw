@@ -65,9 +65,7 @@ This is most likely an AWT issue with Apple's version of Java 6. There is even a
 
 ''Note: It should no longer be necessary to reinstall Java 6 on OS X. ImageJ should work fine with Java 8.''
 
-Newer versions of OS X come without Java installed, and only Java 8 is available from [http://java.com/ java.com].
-
-However, users can reinstall Java 6 on OS X by [http://support.apple.com/kb/DL1572 following these instructions].
+Newer versions of OS X come without Java installed. However, users can reinstall Java 6 on OS X by [http://support.apple.com/kb/DL1572 following these instructions].
 
 Alternately, if you are a developer looking to install the Java 6 Development Kit, you must log in to [https://developer.apple.com/downloads/ Apple Developer downloads] with your Apple ID, search for "java for os x" and download the latest package ("Java for OS X 2013-005 Developer Package" at the time of this writing).
 
@@ -75,7 +73,7 @@ At any time, you can verify which Javas are installed on your system using {{Git
 
 == How do I run ImageJ on Yosemite? ==
 
-Install Java 8 from [http://java.com java.com].
+Install [http://www.oracle.com/technetwork/java/javase/downloads/ Java SE 8].
 
 = Running =
 
