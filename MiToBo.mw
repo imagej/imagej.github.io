@@ -1,0 +1,16 @@
+{{Infobox
+| software               = MiToBo
+| name                   = MiToBo
+| maintainer             = Stefan Posch, Birgit Möller
+| author                 = Stefan Posch, Birgit Möller
+| source                 = {{GitHub|org=alida-hub|repo=alida}}
+| status                 = 
+| category               = [[:Category:Plugins]]
+| website                = http://www.informatik.uni-halle.de/mitobo/
+}}The Microscope Image Analysis Toolbox MiToBo is an extension of [[ImageJ]], which ships with a set of operators ready to be used as plugins in ImageJ. They focus on the analysis of biomedical images acquired by various types of microscopes.
+
+It can be enabled by [[Update Sites|toggling the MiToBo update site]].
+
+For further details, see the [http://www.informatik.uni-halle.de/mitobo/ MiToBo website].
+
+[[Category:Plugins]]
