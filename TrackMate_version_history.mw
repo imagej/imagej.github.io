@@ -225,3 +225,8 @@ TrackMate version bumped by several increments, prompted by the [[2014-12-10 - I
 == 19-03-2015 - v2.7.3 ==
 
 * Fix a bug introduced by recent changes in the imglib2-algorithm, noticed by several people, and that prevented any spot feature to be computed.
+
+
+== 23-06-2015 - v2.7.4 ==
+
+* Fix a bug, incorrectly fixed in imglib, that caused dead threads to accumulate upon running the detection step. Noticed and fixed by @hadim, @dietzc and @tpietzsch.
