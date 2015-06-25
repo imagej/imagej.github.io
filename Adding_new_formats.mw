@@ -1,0 +1,10 @@
+{{Development | plugins}}
+
+Before an image can be analyzed, it needs to be opened properly. The way scientific image data can be stored varies wildly - with custom formats as numerous as the different brands and models of instruments used in their acquisition. Therefore, supporting a wide variety of formats is critical to the success of an image analysis platform like ImageJ.
+
+In the past, a special [http://imagej.net/plugins/file-handler.html Handle extra file types] plugin was developed that could be used to add format support - but it was limited in extensibility.
+
+Today, ImageJ uses [[SCIFIO]] as a flexible framework for image format support. To get started writing SCIFIO formats:
+
+* Check out the [https://github.com/scifio/scifio-tutorials/tree/master/core/src/main/java/io/scif/tutorials/core SCIFIO tutorials]
+* Look at simple [https://github.com/scifio/scifio/blob/scifio-0.24.0/src/main/java/io/scif/formats/BMPFormat.java existing formats] for a starting point
