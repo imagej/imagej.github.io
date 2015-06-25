@@ -1,11 +1,12 @@
 {{Development | git}}
-This page is a '''really''' quick 'n dirty tutorial on how to work with Git.  It is strongly biased to the work on Fiji; you should refer to [[Git workshop]], [[Git for dummies]] or to [http://git.or.cz Git's homepage] for much more information.
+{{Outdated}}
+This page is a '''really''' quick 'n dirty tutorial on how to work with Git.  It is strongly biased to the work on Fiji; you should refer to [[Git workshop]], [[Git for dummies]] or to [https://git-scm.com/ Git's homepage] for much more information.
 
 Most of these explanations are meant for the command line users.
 
 == Nomenclature ==
 
-A quick note on the nomenclature: ''fiji.git'' refers to the "official" repository on [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git].  After cloning it, you will have a local repository with a working directory, which will be referred to as "fiji/" in this document (and "cd fiji/" just tells you to make sure you are in that directory).
+A quick note on the nomenclature: ''fiji.git'' refers to the "official" repository on [https://github.com/fiji/fiji.git].  After cloning it, you will have a local repository with a working directory, which will be referred to as "fiji/" in this document (and "cd fiji/" just tells you to make sure you are in that directory).
 
 If you are unsure about the meaning of any Git term, just consult the [http://git.or.cz/gitwiki/GitGlossary Git glossary].
 
@@ -15,27 +16,13 @@ You need to clone ''fiji.git'':
 
  $ git clone git://fiji.sc/fiji.git/
 
-If you want to contribute to Fiji, or if that clone times out (e.g. because you have a restrictive firewall), you might want to try this command '''instead''' (although you do not need to reclone if you cloned using the ''git://'' protocol; see "Contributing"):
-
- $ git clone ssh://contrib@fiji.sc/srv/git/fiji.git/
-
-Both commands will create the directory ''fiji/'' and check out an initial version.
-
 = Contributing =
 
-As mentioned in "Cloning", you should clone from ssh://contrib@fiji.sc/srv/git/fiji.git/.  However, you can easily add that as a so-called ''remote'' to an existing clone:
+All contributions should go through GitHub [https://help.github.com/articles/using-pull-requests/ pull request]
 
- $ cd fiji/
- $ git remote add contrib ssh://contrib@fiji.sc/srv/git/fiji.git/
+= Local configuration =
 
-Before doing anything else, you should create a local "contrib" branch:
-
- $ cd fiji/
- $ git checkout -b contrib origin/contrib
-
-You should name the local branch ''contrib'', because the server's ''contrib'' user -- in exchange for not needing a password -- can only write to the ''contrib'' branch.  In other words, if you use a different branch, all will work well locally, but when you try to push your changes upstream, it will fail.
-
-Now you only need to make sure that Git knows about you (substitute your name/email here...):
+You need to make sure that Git knows who you are (substitute your name/email here...):
 
  $ git config --global user.name "General Failure"
  $ git config --global user.email "general@failure.harddrive.org"
@@ -43,8 +30,6 @@ Now you only need to make sure that Git knows about you (substitute your name/em
 Likewise, if your preferred editor is not ''vi'', you might want to do something about that (substitute your pet editor here...):
 
  $ git config --global core.editor xemacs
-
-After initializing the ''contrib'' branch, you can work as described in "Making changes" and "Pushing changes upstream".
 
 = Updating =
 
@@ -101,7 +86,7 @@ For more advanced Git usage, see "Making changes (advanced)".
 
 = Pushing changes upstream =
 
-All commits are purely local before you decide to publish them.  You might want to check first what you are going to publish before actually doing that:
+All commits are purely local before you decide to publish them.  You might want to check first what you are going to publish before actually doing that (assuming a branch name "contrib"):
 
  $ cd fiji/
  $ git fetch contrib
