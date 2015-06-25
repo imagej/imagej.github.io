@@ -60,10 +60,21 @@ import fiji.Debug; // requires fiji-lib as a dependency
 [...]
 
 public static void main(String[] args) {
-    // requires a plugins.config in src/main/resources/ that has a line like:
+    // requires a plugins.config in src/main/resources/ that defines the command name:
     // Plugins, "My shiny new plugin", the.current.PluginClass
-    Debug.run("My shiny new plugin");
+    Debug.run("My shiny new plugin", "plugin parameters");
 }
+</source>
+
+The format of <code>plugin parameters</code> can be determined by using the [[Introduction_into_Macro_Programming#The_recorder|macro recorder]], or just pass <code>null</code> if your plugin opens a dialog. For more complex plugins that are not macro recordable, you can pass empty strings to the <code>run</code> method - it will still launch an ImageJ instance with your plugin on the classpath.
+
+If your plugin does not depend on <code>fiji-lib</code> by default, you can add it using [https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html maven]. Just paste the following block into your <code>pom.xml</code> dependencies:
+
+<source lang="xml">
+<dependency>
+    <groupId>sc.fiji</groupId>
+    <artifactId>fiji-lib</artifactId>
+</dependency>
 </source>
 
 To debug classes of type ''PlugInFilter'', use the ''Debug.runFilter(imagePath, plugin, parameters)'' method instead.
