@@ -219,14 +219,6 @@ Fiber orientation was determined using a well-established plug-in for ImageJ cal
 #Round:  4 × [Area] / (π × [Major axis]2) or the inverse of Aspect Ratio. 
 #Solidity: [Area] / [Convex area]
 |
-#Mean:  Average Diameter from all measures found in the histogram	
-#StdDev:  Standard deviation from all measures found in the histogram	
-#Mode:  Most occurring diameter	found in the histogram
-#IntDen: 	The product of Area and average radius 
-#Median:  Middle value in the histogram	
-#Skew:  	The third order moment about the average radius
-#Kurt:  	The fourth order moment about the average radius
-#RawIntDen:  The sum of the radii at all pixels in the image or selection
 #Radius Value:  Radius length (in pixels)
 #Radius Count: Number of times the radius value occurred in the image. Also known as the frequency of occurrence and can also be interpreted as the length of fiber in an image that has a given radius
 #The radius or diameter histogram is constructed from the radius value (x-axis) and radius count (frequency of occurrence on y-axis)
