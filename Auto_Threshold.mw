@@ -16,8 +16,7 @@ For '''local''' thresholding rather than global, see  the [[Auto Local Threshold
 
 == Installation ==
 '''ImageJ''': requires v1.42m or newer. Copy the Auto_Threshold.jar file from 
-http://www.mecourse.com/landinig/software/auto_threshold.jar
- into the ImageJ/Plugins folder and either restart ImageJ or run the '''Help>Update Menus''' command. After this a new command should appear in '''Image>Adjust>Auto Threshold'''.
+http://www.mecourse.com/landinig/software/auto_threshold.jar into the ImageJ/Plugins folder and either restart ImageJ or run the '''Help>Update Menus''' command. After this a new command should appear in '''Image>Adjust>Auto Threshold'''.
 
 '''Fiji''': this plugin is part of the Fiji distribution, there is no need to download it.
 
