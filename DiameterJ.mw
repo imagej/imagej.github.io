@@ -173,30 +173,27 @@ Fiber orientation was determined using a well-established plug-in for ImageJ cal
 |- id="section link anchor name" style="text-align:center" valign="top"
 | colspan=2 | <h4> <big> Summaries Folder </big> </h4>
 |- valign="top"
-! scope="col" width="50%" | '''"File Source Name"_Pore Summary.xls'''
 ! scope="col" width="50%" | '''"File Source Name"_Total Summary.csv'''
+! scope="col" width="50%" | '''"File Source Name"_Total Summary.csv Continued'''
 |- valign="top"
 |
-#Slice: Image name
-#Count: Total number of pores found in image that are not touching the side.
-#Total Area: Total number of black pixels in an image not in groups touching the sides
-#Average Size: (Total number of black pixels counted in pores) / (Total number of pores in image)
-#% Area: (Total number of black pixels) / (Total pixels in an image)
-#Major: The mean length of the primary axis of the best fitting ellipse for each pore 
-#Minor: The mean length of the secondary axis of the best fitting ellipse for each pore 
-#Angle: The average angle between the primary axis and a line parallel to the X-axis of the image
-#Circ.: 4π × [Area] / [Perimeter^2] with a value of 1.0 indicating a perfect circle. As the value approaches 0.0, it indicates an increasingly elongated shape. Values may not be valid for very small particles. Uses the heading Circ.
-#Solidity: [Area]/[Convex area]
-#Skew: The third order moment about the mean
-#Kurt: The fourth order moment about the mean
+#Super Pixel: The mean fiber diameter as calculated using a super pixel determination.  A detailed explanation of how this algorithm  works can be found above. 
+#Histogram Mean: The mean fiber diameter as calculated by fitting a Gaussian Curve to the radius data and finding the curves mean value.  
+#Histogram SD: The standard dev. of the Gaussian fit of the radius histogram
+#Histogram Mode: Most occurring fiber diameter in the histogram
+#Histogram Median: Middle fiber diameter in the histogram
+#Histogram Min. Diam.: The smallest diameter measured
+#Histogram Max. Diam.: The largest diameter measured
+#Histogram Integrated Density: The product of length of the fibers and the average radius
+#Histogram Raw Integrated Density: The sum of the radii at all pixels in the image or selection
+#Diameter Skewness: The third order moment about the mean
+#Diameter Kurtosis: The fourth order moment about the mean.
 |
-#Super Pixel:  The mean fiber diameter as calculated using a super pixel determination 
-#*More accurate for samples with extremely diverse fiber diameters
-#Hitogram_Mean: The mean fiber diameter as calculated using the average of all diameters measured in the histogram 
-#Histogram_SD:  The standard dev. Of the fiber diameter as calculated using all diameters measured in the histogram  
-#Histogram_Mode: Most occurring fiber diameter in the histogram
-#Histogram Median:  Middle fiber diameter in the histogram
-#Mean Pore Size:  (Total number of black pixels counted in pores) / (Total number of pores in image)
+#Fiber Length: The total length of the Fiber centerlines in the segmented image.
+#Mean Pore Area:  (Total number of black pixels counted in pores) / (Total number of pores in image)
+#Pore Area SD: The standard deviation of all pore areas measured
+#Min. Pore Area: The minimum pore area measured
+#Max Pore Area: The maximum pore area measured
 #Percent Porosity: (Total number of black pixels) / (Total pixels in an image)
 #Intersection Density (100x100px):  (Number of fiber overlaps)*10000 / (Total pixels in image)
 #Characteristic Length: (Total length of all fiber centerlines) / (# of fiber overlaps)
