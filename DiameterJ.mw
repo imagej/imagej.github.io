@@ -237,23 +237,19 @@ Fiber orientation was determined using a well-established plug-in for ImageJ cal
 |- style="text-align:center" valign="top"
 | colspan=2 | <h4> <big>Diameter Analysis Images Folder</big> </h4>
 |- valign="top"
-!'''"File Source Name"_Dilate.tif'''
-!'''"File Source Name"_Axial Thinning.tif'''
+!'''"File Source Name"_Compare.png'''
+!'''"File Source Name"_Orientation.tif'''
 |- valign="top"
 |
-#Image of all centerlines counted in the histogram overlaid on the Euclidean distance transformed of the fibers fibers.
+A montage image with four images in it
+# Top Left Image - Original segmented image
+# Top right Image- Image of the centerline as determined by the Voronoi tessellation algorithm
+# Bottom Left Image - Image of all centerlines counted in the histogram overlaid on the Euclidean distance transformed of the fibers fibers.
 #*Yellow lines are the locations where radii were counted
 #*Fibers are in greyscale as transformed by the Euclidean distance transform
+# Bottom Right Image - Pores found and analyzed by Diameterj
 |
-#Image of the centerline as determined by the axial thinning algorithm
-|- valign="top"
-!'''"File Source Name"_Orientation.tif'''
-!'''"File Source Name"_Voronoi.tif'''
-|- valign="top"
-|
-#An image with the frequency of orientation of the centerline of all fibers.  This is an output of OrientationJ and was not coded by me
-|
-#Image of the centerline as determined by the Voronoi tessellation algorithm
+#An image with the frequency of orientation of the centerline of all fibers. This is an output of OrientationJ and was not coded by any developers from DiameterJ
 |}
 
 === <big>Limitations</big> ===
