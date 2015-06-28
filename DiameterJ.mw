@@ -221,7 +221,7 @@ Fiber orientation was determined using a well-established plug-in for ImageJ cal
 |
 #Radius Value:  Radius length (in pixels)
 #Radius Count: Number of times the radius value occurred in the image. Also known as the frequency of occurrence and can also be interpreted as the length of fiber in an image that has a given radius
-#The radius or diameter histogram is constructed from the radius value (x-axis) and radius count (frequency of occurrence on y-axis)
+#*The radius or diameter histogram is constructed from the radius value (x-axis) and radius count (frequency of occurrence on y-axis)
 |- valign="top"
 !'''"File Source Name"_Intersection Coordinates.txt'''
 !'''"File Source Name"_Radius Histogram.tif'''
