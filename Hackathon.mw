@@ -142,6 +142,11 @@ ImageJ has benefitted from many hackathons over the years:
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
 |[https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/tpietzsch tpietzsch], [https://github.com/axtimwalde axtimwalde], [https://github.com/tomancak tomancak]
 |[[Multiview-Reconstruction]] and [[BigDataViewer]]
+|- valign="top"
+| style="white-space: nowrap" | 2015 June 29 -<br>2015 July 3
+|[https://www.mdc-berlin.de/13800178/en/bimsb BIMSB/MDC]<br>Berlin, Germany
+|[https://github.com/StephanPreibisch Stephan Preibisch], [https://github.com/dietzc Christian Dietz], [https://github.com/emmenlau Mario Emmenlauer], [https://github.com/StephanJanosch Stephan Janosch]
+|Parallelization of [[Multiview-Reconstruction]] and integration with ImageJOPS & KNIME
 |-
 |colspan="4" style="border-bottom: 1px solid gray"|
 |}
