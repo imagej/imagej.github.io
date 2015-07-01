@@ -3,10 +3,10 @@
 | name                   = Microscope Measurement Tools
 | author                 = [[User:Demis | Demis D. John]]
 | maintainer             = Demis D. John ([mailto:demis.john@gmail.com demis.john@gmail.com])
-| filename               = [https://github.com/demisjohn/Microscope-Measurement-Tools/archive/v1.1.zip Microscope Measurement Tools v1.1.zip]
+| filename               = [https://github.com/demisjohn/Microscope-Measurement-Tools/archive/v1.3.zip Microscope Measurement Tools v1.3.zip]
 | source                 = {{GitHub|org=demisjohn|repo=Microscope-Measurement-Tools}}
-| released               = June 11<sup>th</sup>, 2015
-| latest version         = 1.1
+| released               = June 30<sup>th</sup>, 2015
+| latest version         = 1.3
 | status                 = beta
 | website                = [https://github.com/demisjohn/Microscope-Measurement-Tools Microscope Measurement Tools at GitHub]
 }}
