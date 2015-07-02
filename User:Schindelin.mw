@@ -1,4 +1,11 @@
-= [http://loci.wisc.edu/people/johannes-schindelin Johannes Schindelin] =
+{{Userbox
+| name = Johannes Schindelin
+| gravatar = c2938f05cefad961fec000e7734c73ac
+| affiliation = MPI-CBG Dresden
+| github = dscho
+| openhub = gitte
+| osrc = dscho
+}}= [http://loci.wisc.edu/people/johannes-schindelin Johannes Schindelin] =
 
 ... is involved in the [[Fiji]] and [[ImageJ2]] projects helping with programming, algorithms, educating scientists about the fine points of scientific image analysis, planning experiments, and generally cheering up people.
 
