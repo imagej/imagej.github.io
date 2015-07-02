@@ -4,7 +4,7 @@
 | author                 = Jan Brocher
 | website                = [http://www.biovoxxel.de/index.html www.biovoxxel.de]
 | maintainer             = Jan Brocher
-| latest version         = 07. March 2015
+| latest version         = 02. July 2015
 | source                 =[http://www.biovoxxel.de/BioVoxxel%20Macro%20Toolset/BioVoxxel_Plugins.jar BioVoxxel Plugins], [http://www.biovoxxel.de/BioVoxxel%20Macro%20Toolset/BioVoxxel_Toolsets.zip BioVoxxel Toolset]
 | category               = [[:Category:Particle analysis|Particle analysis]], [[:Category:Binary|Binary]], [[:Category:Filtering|Filtering]]
 }}
@@ -143,17 +143,17 @@ Future: other erosion algorithms will potentially be included to improve the wat
 
 ----
 
-=EDM Erosion and EDM Dilation=
+=EDM Binary Operations=
 
-Purpose: The standard binary erosion and dilation suffers from the artefact that under higher iteration cycles the binary structures get irregularly deformed (see image below, second column). The EDM based methods for erosion and dilation prevent these artifacts. The method is using thresholding on a 8-bit euclidean distance map of the original image to facilitate the erosion or dilation.
+Purpose: The standard binary erosion and dilation suffers from the artefact that under higher iteration cycles the binary structures get irregularly deformed (see image below, second column). The EDM based methods for erosion and dilation prevent these artifacts. The method is using thresholding on a 8-bit euclidean distance map of the original image to facilitate binary erosion, dilation, opening and closing.
 
 [[File:EDMErosionDilation.png|600px]]
 
-How to: The number of erosion/dilation cycled determines how many rows of pixels should be eliminated/added to the binary features.
+How to: The number of iterations determines how often the chosen function will be applied to the image.
 
-Form: macro
+Form: plugin (with preview, recordable)
 
-Status: works only on 2D images, maintenance active
+Status: works on stacks now, maintenance active
 
 Future: suggestions are welcome!
 
