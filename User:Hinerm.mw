@@ -1,7 +1,9 @@
-[http://loci.wisc.edu/people/mark-hiner Mark Hiner] is a member of the core [[ImageJ2]] development team at [[LOCI]]. Mark's main research project is [[SCIFIO]], a robust and extensible library for reading and writing scientific image file formats, and accessible foundation for image format processing.
-
-For more about Mark, see:
-* [https://github.com/hinerm GitHub profile]
-* [http://stackoverflow.com/users/1027800/hinerm StackOverflow profile]
-* [http://osrc.dfm.io/hinerm/ Open Source Report Card]
-* [https://www.ohloh.net/accounts/hinerm Open HUB profile]
+{{Userbox
+| name = Mark Hiner
+| gravatar = 2ecfd073dad1f864cb1224281afc9f00
+| affiliation = UW-Madison [[LOCI]]
+| github = hinerm
+| stackoverflow = 1027800/hinerm
+| openhub = hinerm
+| osrc = hinerm
+}}[http://loci.wisc.edu/people/mark-hiner Mark Hiner] is a member of the core [[ImageJ2]] development team at [[LOCI]]. Mark's main research project is [[SCIFIO]], a robust and extensible library for reading and writing scientific image file formats, and accessible foundation for image format processing.
