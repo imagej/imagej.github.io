@@ -1,9 +1,10 @@
-Curtis Rueden directs the [http://loci.wisc.edu/software/home software development efforts] of [[LOCI]]. He is the principal architect of [[ImageJ2]], and the current maintainer of the [[Fiji]] distribution of ImageJ. He also maintains the [[Bio-Formats]] plugins within [[Fiji]].
-
-For more about Curtis, see:
-* [http://restlesscoder.net/ Curtis's web site]
-* [http://loci.wisc.edu/people/curtis-rueden LOCI career profile]
-* [http://stackoverflow.com/users/1207769/ctrueden StackOverflow profile]
-* [https://github.com/ctrueden GitHub profile]
-* [https://www.openhub.net/accounts/ctrueden Open HUB profile]
-* [http://osrc.dfm.io/ctrueden Open Source Report Card]
+{{Userbox
+| name=Curtis Rueden
+| gravatar=63df759e2779af56fd050a968ff98d09
+| affiliation = UW-Madison [[LOCI]]
+| github = ctrueden
+| stackoverflow = 1207769/ctrueden
+| openhub = ctrueden
+| osrc = ctrueden
+| website = http://restlesscoder.net/
+}}Curtis Rueden directs the [http://loci.wisc.edu/software/home software development efforts] of [[LOCI]]. He is the principal architect of [[ImageJ2]], and the current maintainer of the [[Fiji]] distribution of ImageJ. He also maintains the [[Bio-Formats]] plugins within [[Fiji]].
