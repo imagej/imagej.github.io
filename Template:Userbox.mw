@@ -1,0 +1,47 @@
+<includeonly>{| class="infobox" cellspacing="5" style="width: 31em; font-size: 90%; text-align: left; float: right; border: 1px solid #a0a0a0;"
+! colspan="2" style="text-align: center; font-size: 130%;" | {{#if:{{{gravatar|}}}|<div style="float: left"><img src="http://gravatar.com/avatar/{{{gravatar}}}"></div>|}}{{{name|{{PAGENAME}}}}}<div style="clear: left;"></div>
+|-
+{{#if:{{{affiliation|}}}|
+! Affiliation
+{{!}} {{{affiliation|}}}
+{{!}}-
+}}
+{{#if:{{{website|}}}|
+! Website
+{{!}} {{{website|}}}
+{{!}}-
+}}
+|}</includeonly>
+
+<noinclude>This template is a sidebar for displaying key statistics about a person.
+
+==Usage==
+
+<pre>
+{{Userbox
+| name                   =
+| gravatar               =
+| affiliation            =
+| website                =
+}}
+</pre>
+
+==Example==
+{{Userbox
+| name                   = John Smith
+| gravatar               = 7194e8d48fa1d2b689f99443b767316c
+| affiliation            = The Institute of Awesome
+| website                = [http://example.org]
+}}
+<pre style="overflow:auto">
+{{Userbox
+| name                   = John Smith
+| gravatar               = 7194e8d48fa1d2b689f99443b767316c
+| affiliation            = The Institute of Awesome
+| website                = [http://example.org]
+}}
+</pre>
+
+{{Clear}}
+[[Category:Boxes]]
+</noinclude>
