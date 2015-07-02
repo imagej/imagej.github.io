@@ -60,8 +60,7 @@
 | openhub                = kohsuke
 | osrc                   = octocat
 | website                = [http://example.org]
-}}
-<pre style="overflow:auto">
+}}<pre style="overflow:auto">
 {{Userbox
 | name                   = John Smith
 | gravatar               = 7194e8d48fa1d2b689f99443b767316c
