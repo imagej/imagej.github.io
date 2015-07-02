@@ -3,12 +3,32 @@
 |-
 {{#if:{{{affiliation|}}}|
 ! Affiliation
-{{!}} {{{affiliation|}}}
+{{!}} {{{affiliation}}}
+{{!}}-
+}}
+{{#if:{{{github|}}}|
+! GitHub
+{{!}} [http://github.com/{{{github}}} GitHub profile]
+{{!}}-
+}}
+{{#if:{{{stackoverflow|}}}|
+! StackOverflow
+{{!}} [http://stackoverflow.com/users/{{{stackoverflow}}} StackOverflow profile]
+{{!}}-
+}}
+{{#if:{{{openhub|}}}|
+! Open HUB
+{{!}} [https://www.openhub.net/accounts/{{{openhub}}} Open HUB profile]
+{{!}}-
+}}
+{{#if:{{{osrc|}}}|
+! Open Source Report Card
+{{!}} [http://osrc.dfm.io/{{{osrc}}} Open Source Report Card]
 {{!}}-
 }}
 {{#if:{{{website|}}}|
 ! Website
-{{!}} {{{website|}}}
+{{!}} {{{website}}}
 {{!}}-
 }}
 |}</includeonly>
@@ -22,6 +42,10 @@
 | name                   =
 | gravatar               =
 | affiliation            =
+| github                 =
+| stackoverflow          =
+| openhub                =
+| osrc                   =
 | website                =
 }}
 </pre>
@@ -31,6 +55,10 @@
 | name                   = John Smith
 | gravatar               = 7194e8d48fa1d2b689f99443b767316c
 | affiliation            = The Institute of Awesome
+| github                 = octocat
+| stackoverflow          = 22656/jon-skeet
+| openhub                = kohsuke
+| osrc                   = octocat
 | website                = [http://example.org]
 }}
 <pre style="overflow:auto">
@@ -38,6 +66,10 @@
 | name                   = John Smith
 | gravatar               = 7194e8d48fa1d2b689f99443b767316c
 | affiliation            = The Institute of Awesome
+| github                 = octocat
+| stackoverflow          = 22656/jon-skeet
+| openhub                = kohsuke
+| osrc                   = octocat
 | website                = [http://example.org]
 }}
 </pre>
