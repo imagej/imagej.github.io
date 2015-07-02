@@ -1141,6 +1141,41 @@ for ballOb in layerset.getZDisplayables(Ball):
 ##############
 </source>
 
+== Export all Ball objects as a CSV file ==
+
+<source lang="python">
+# Open a text window containing all Ball objects as a CSV file,
+# in calibrated coordinates.
+# The text window has a "File - Save" menu for saving to a file.
+
+# Albert Cardona 2015-07-02 for Jemima Burden at UCL.
+
+# See also the API of the Ball class:
+# https://github.com/trakem2/TrakEM2/blob/master/TrakEM2_/src/main/java/ini/trakem2/display/Ball.java#L716
+
+
+from ini.trakem2.display import Display, Ball
+from ij.text import TextWindow
+
+ball_obs = Display.getFront().getLayerSet().getZDisplayables(Ball)
+
+# One entry for each id,x,y,z,r 
+rows = []
+
+# Iterate every Ball instance, which contains one or more x,y,z,r balls
+for ball_ob in ball_obs:
+  id = ball_ob.getId()
+  # Iterate every x,y,z,r ball of a Ball instance, calibrated
+  wbs = ball_ob.getWorldBalls()
+  for ball_coords in wbs:
+    # Store every ball as a row with id, x, y, z, r
+    rows.append(str(id) + "," + ",".join(str(c) for c in ball_coords))
+
+csv = "\n".join(rows)
+
+t = TextWindow("Balls CSV", csv, 400, 400)
+</source>
+
 = Generate 3D meshes =
 
 In TrakEM2, 3D meshes are generated as a list of [http://download.java.net/media/java3d/javadoc/1.5.2-latest/javax/vecmath/Point3f.html Point3f] for each object. Then the list is wrapped into any of the subclasses of [http://fiji.sc/javadoc/customnode/CustomMesh.html CustomMesh] of the 3D Viewer library, such as a [http://fiji.sc/javadoc/customnode/CustomTriangleMesh.html CustomTriangleMesh] or a [http://fiji.sc/javadoc/customnode/CustomLineMesh.html CustomLineMesh]. Then these mesh objects are encapsulated into a [http://fiji.sc/javadoc/ij3d/Content.html Content] object and added to an instance of the [http://fiji.sc/javadoc/ij3d/Image3DUniverse.html Image3DUniverse], which is the main window of the 3D Viewer.
