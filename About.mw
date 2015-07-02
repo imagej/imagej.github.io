@@ -2,7 +2,7 @@
 | name                   = ImageJ2
 | software               = ImageJ
 | logo                   = [[File:imagej2-icon.png|64px]]
-| maintainer             = [[User:Rueden|Curtis Rueden]]<br>[[User:Schindelin|Johannes Schindelin]]<br>[[User:Hinerm|Mark Hiner]]
+| maintainer             = [[User:Rueden|Curtis Rueden]]<br>[[User:Hinerm|Mark Hiner]]
 | source                 = {{GitHub | org = imagej | repo = imagej}}
 | status                 = active
 | category               = 
