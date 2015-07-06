@@ -33,7 +33,7 @@ This release includes significant updates to several components:
 === Highlights ===
 
 * Return of the single-instance listener! ({{GitHub | org=imagej | repo=imagej-legacy | pr=116 | label=imagej-legacy#116}}).
-* ImageJ OPS now has convenient "built-in" methods ({{GitHub | org=scijava | repo=scijava-ui-swing | commit=f5cf38eaaaca1d9d1639d83d31a1686b38dca989 | label=imagej-ops@f5cf38ea}}). These built-ins allow type-safe access to all the core ops, backed by a robust test framework.
+* ImageJ OPS now has convenient "built-in" methods ({{GitHub | org=imagej | repo=imagej-ops | commit=f5cf38eaaaca1d9d1639d83d31a1686b38dca989 | label=imagej-ops@f5cf38ea}}). These built-ins allow type-safe access to all the core ops, backed by a robust test framework.
 
 == How to update ==
 
