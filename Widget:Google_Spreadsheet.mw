@@ -1,0 +1,11 @@
+<noinclude>__NOTOC__
+This widget allows you to add '''[http://documents.google.com/support/spreadsheets/ Google Spreadsheets]''' to your wiki page.
+* Created by [http://www.mediawikiwidgets.org/User:Sergey_Chernyshev Sergey Chernyshev]
+* Since Google Docs migrated to Google Drive, the reference for the template code has change. The latest is available [http://wiki.glitchdata.com/index.php?title=Widget:Google_Spreadsheet here].
+
+== Using this widget ==
+For information on how to use this widget, see [http://www.mediawikiwidgets.org/Google_Spreadsheet widget description page on MediaWikiWidgets.org].
+
+== Copy to your site ==
+To use this widget on your site, just install [http://www.mediawiki.org/wiki/Extension:Widgets MediaWiki Widgets extension] and copy [{{fullurl:{{FULLPAGENAME}}|action=edit}} full source code] of this page to your wiki as '''{{FULLPAGENAME}}''' article.
+</noinclude><includeonly><iframe width="<!--{$width|escape:'html'|default:500}-->" height="<!--{$height|escape:'html'|default:300}-->" frameborder="0" src="http://spreadsheets.google.com/pub?key=<!--{$key|escape:'urlpathinfo'}--><!--{if not $page}-->&output=html&widget=true<!--{/if}-->"></iframe></includeonly>
