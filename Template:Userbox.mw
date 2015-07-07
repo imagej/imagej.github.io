@@ -6,6 +6,11 @@
 {{!}} {{{affiliation}}}
 {{!}}-
 }}
+{{#if:{{{loci|}}}|
+! LOCI
+{{!}} [http://loci.wisc.edu/people/{{{loci}}} LOCI profile]
+{{!}}-
+}}
 {{#if:{{{github|}}}|
 ! GitHub
 {{!}} [http://github.com/{{{github}}} GitHub profile]
@@ -42,6 +47,7 @@
 | name                   =
 | gravatar               =
 | affiliation            =
+| loci                   =
 | github                 =
 | stackoverflow          =
 | openhub                =
