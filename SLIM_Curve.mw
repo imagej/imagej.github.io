@@ -3,7 +3,7 @@
 | name                   = SLIM Curve plugin
 | logo                     = [[File:Slim-curve-icon.png|64px]]
 | author                 = [http://www.rob.ox.ac.uk/ CRUK/MRC at University of Oxford]<br/>[http://loci.wisc.edu/ UW-Madison LOCI]
-| maintainer             = [[User:Rueden|Curtis Rueden]]
+| maintainer             = [[User:Msagar|Md Abdul Kader Sagar]]<br>[[User:Rueden|Curtis Rueden]]
 | filename               = slim_plugin-2.0.0-SNAPSHOT.jar
 | source                 = {{GitHub|org=slim-curve|repo=slim-plugin}}
 | latest version         = 2.0.0-SNAPSHOT
