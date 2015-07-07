@@ -307,15 +307,16 @@ if (batchHisto) {
 
 [[Category:Plugins]]
 === Segmentation using classification ===
-For some specific application user might want to analyze specific segment in the lifetime image. Fiji has a implementation of Weka segmentation in its [[Trainable_Weka_Segmentation|Trainable Weka Segmentation]], which is a very useful tool for machine learning based segmentation. We can train the classifier with one image with certain training instances and use that classifier to segment new image. With segmented data, we can create a mask and using the ROI manager we can overlay the ROI to analyze different part of the image. The steps for segmentation using classification is as following.
+For some specific applications, you might want to analyze a specific segment in the lifetime image. In particular, Fiji's [[Trainable Weka Segmentation]] plugin is very useful for machine learning based segmentation. We can train the classifier with one image with certain training instances, then use that classifier to segment additional images. With segmented data, we can create a mask and using the ROI manager we can overlay the ROI to analyze different part of the image. The steps for segmentation using classification are:
 
-#Train the classifier using Trainable Weka Segmentation[http://fiji.sc/Trainable_Weka_Segmentation#Train_classifier](after opening lifetime image using SLIM plugin) 
-#Create instances to train your classifier with the number of classes required
-#Train classifier by selecting “Train Classifier”
-#Select “Create result” to create the segmented image(You can save the classifier to use it later)
-#Use the Thresholding tool to threshold the image to remove the region not needed.
-#Select Create mask(L-> Create Mask) and Create Selection(L-> Create Selection) to make the ROI
-#Add the ROI to ROI manager. Use it on overlay with lifetime image and start analyzing
+# Open a lifetime image using the SLIM Curve plugin.
+# [[Trainable Weka Segmentation#Train_classifier|Train the classifier]] using Trainable Weka Segmentation.
+# Create instances to train your classifier with the number of classes required.
+# Train classifier by clicking the "Train classifier" button.
+# Select “Create result” to create the segmented image (you can save the classifier to use it later).
+# Use the Thresholding tool to threshold the image to remove the region not needed.
+# Run the Create Mask and Create Selection commands to make the ROI. You can execute commands easily using the [[Command Finder]] (press {{Key | L}}).
+# Add the ROI to ROI manager by pressing {{Key | T}}. Use it on overlay with lifetime image and start analyzing.
 
 [[File:Weka_module.JPG]]
 [[File:Overlay.JPG]]
