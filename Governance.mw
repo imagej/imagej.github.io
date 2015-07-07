@@ -20,7 +20,7 @@ The most common roles are:
 
 == SciJava projects ==
 
-Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
+Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 
 {| class="wikitable nicetable" style="width: 100%"
 | '''Logo'''
@@ -93,16 +93,24 @@ Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 | [https://github.com/orgs/trakem2/people List on GitHub]
 | [https://github.com/trakem2/TrakEM2/graphs/contributors Info on GitHub]
 |-
+| [[File:slim-curve-icon.png|48px]]
+| '''[[SLIM Curve]]'''
+| Paul Barber<br>[[User:Rueden|Curtis Rueden]]
+| Paul Barber<sup>3</sup><br>[[User:Rueden|Curtis Rueden]]<sup>3</sup>
+| [[User:Msagar|Md Abdul Kader Sagar]]<br>[[User:Rueden|Curtis Rueden]]
+| [https://github.com/orgs/slim-curve/people List on GitHub]
+| [https://github.com/slim-curve/slim-plugin/graphs/contributors Info on GitHub]
+|-
 | [[File:bio-formats-icon.png|48px]]
 | '''[[Bio-Formats]]'''
 | [[User:Rueden|Curtis Rueden]]<br>Kevin Eliceiri
 | [[User:Linkert|Melissa Linkert]]
-| [[User:Linkert|Melissa Linkert]]<br>[[User:Rueden|Curtis Rueden]]<sup>3</sup>
+| [[User:Linkert|Melissa Linkert]]<br>[[User:Rueden|Curtis Rueden]]<sup>4</sup>
 | [https://github.com/openmicroscopy/bioformats/graphs/contributors List on GitHub]
 | See [http://www.openmicroscopy.org/site/about/ome-contributors OME Contributors]
 |-
 | [[File:knime-icon.png|48px]]
-| '''[[KNIME]]'''<sup>4</sup>
+| '''[[KNIME]]'''<sup>5</sup>
 | [[User:Dietz|Christian Dietz]]
 | [[User:Dietz|Christian Dietz]]
 | [[User:Dietz|Christian Dietz]]
@@ -151,8 +159,9 @@ Here is a summary of roles for some projects in the [[SciJava]] ecosystem.
 |}
 <sup>1</sup> Pietzsch leads on day to day issues. Pietzsch, Preibisch and Saalfeld vote on primary decisions, with Pietzsch's vote breaking ties.
 <br><sup>2</sup> Schindelin is currently on sabbatical from Fiji; see [https://groups.google.com/d/msg/fiji-devel/coIgXLws0eI/TZlwjXLyks0J this thread on fiji-devel].
-<br><sup>3</sup> Rueden maintains the Bio-Formats [[update site]] for ImageJ, but is not otherwise a Bio-Formats maintainer.
-<br><sup>4</sup> For the purposes of this table, "KNIME" means the [[KNIME|KNIME Image Processing]] extensions, not the KNIME project as a whole.
+<br><sup>3</sup> Barber leads development of the {{GitHub | org=slim-curve | repo=slim-curve | label=SLIM Curve C library}}; Rueden leads development of the {{GitHub | org=slim-curve | repo=slim-plugin | label=SLIM Curve plugin for ImageJ}}.
+<br><sup>4</sup> Rueden maintains the Bio-Formats [[update site]] for ImageJ, but is not otherwise a Bio-Formats maintainer.
+<br><sup>5</sup> For the purposes of this table, "KNIME" means the [[KNIME|KNIME Image Processing]] extensions, not the KNIME project as a whole.
 
 == Further reading ==
 
