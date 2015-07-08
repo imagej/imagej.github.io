@@ -9,7 +9,7 @@ __NOTOC__
 <div style="float: left; width: 38%">
 === Principal investigators ===
 * [[User:Scopeuw|Kevin Eliceiri]]<sup>2</sup> (ImageJ/Fiji, OME)
-* [[User:Tomancak|Pavel Tomancak]]<sup>5</sup> (ImageJ/Fiji)
+* [[User:Tomancak|Pavel Tomancak]]<sup>3</sup> (ImageJ/Fiji)
 * [http://www.broadinstitute.org/~anne/ Anne Carpenter]<sup>4</sup> (CellProfiler, ImageJ)
 * [http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/ Michael Berthold]<sup>9</sup> (KNIME)
 * [http://www.lifesci.dundee.ac.uk/people/jason-swedlow Jason Swedlow]<sup>10,11</sup> (OME)
@@ -26,7 +26,7 @@ __NOTOC__
 * Brian Northan<sup>13</sup>
 * [http://loci.wisc.edu/people/aivar-grislis Aivar Grislis]<sup>2</sup> (Jan 2010-Dec 2013)
 * [http://loci.wisc.edu/people/barry-dezonia Barry DeZonia]<sup>2</sup> (Jan 2010-Nov 2013)
-* [http://loci.wisc.edu/people/grant-harris Grant Harris]<sup>3</sup> (Nov 2009-Jan 2012)
+* [http://loci.wisc.edu/people/grant-harris Grant Harris]<sup>5</sup> (Nov 2009-Jan 2012)
 * Adam Fraser<sup>4</sup> (Nov 2009-Aug 2011)
 * [http://loci.wisc.edu/people/rick-lentz Rick Lentz]<sup>2</sup> (Nov 2009-Feb 2011)
 </div>
@@ -38,9 +38,9 @@ __NOTOC__
 * [[User:Rueden|Curtis Rueden]]<sup>2</sup>
 * [[User:JeanYvesTinevez|Jean-Yves Tinevez]]<sup>8</sup>
 * [[User:Iarganda|Ignacio Arganda-Carreras]]
-* [[User:StephanP|Stephan Preibisch]]<sup>5</sup>
-* [[User:Saalfeld|Stephan Saalfeld]]<sup>5,12</sup>
-* [[User:Pietzsch|Tobias Pietzsch]]<sup>5</sup>
+* [[User:StephanP|Stephan Preibisch]]<sup>3</sup>
+* [[User:Saalfeld|Stephan Saalfeld]]<sup>3,12</sup>
+* [[User:Pietzsch|Tobias Pietzsch]]<sup>3</sup>
 * [[User:Hinerm|Mark Hiner]]<sup>2</sup>
 * [[User:Eglinger|Jan Eglinger]]
 * [[User:Lindsey|Larry Lindsey]]
@@ -51,20 +51,20 @@ __NOTOC__
 * See also [https://github.com/fiji/fiji/graphs/contributors graph of Fiji contributors]
 
 === [[BigDataViewer]] ===
-* [[User:Pietzsch|Tobias Pietzsch]]<sup>5</sup> (lead)
-* [[User:StephanP|Stephan Preibisch]]<sup>5</sup>
+* [[User:Pietzsch|Tobias Pietzsch]]<sup>3</sup> (lead)
+* [[User:StephanP|Stephan Preibisch]]<sup>3</sup>
 
 === [[TrakEM2]] ===
 * [[User:Albertcardona|Albert Cardona]]<sup>6,12</sup> (lead)
-* [[User:Saalfeld|Stephan Saalfeld]]<sup>5,12</sup>
+* [[User:Saalfeld|Stephan Saalfeld]]<sup>3,12</sup>
 </div>
 
 <div style="float: left; width: 34%">
 
 === [[ImgLib2]] ===
-* [[User:Pietzsch|Tobias Pietzsch]]<sup>5</sup> (lead)
-* [[User:StephanP|Stephan Preibisch]]<sup>5</sup>
-* [[User:Saalfeld|Stephan Saalfeld]]<sup>5,12</sup>
+* [[User:Pietzsch|Tobias Pietzsch]]<sup>3</sup> (lead)
+* [[User:StephanP|Stephan Preibisch]]<sup>3</sup>
+* [[User:Saalfeld|Stephan Saalfeld]]<sup>3,12</sup>
 
 === [[SCIFIO]] ===
 * [[User:Hinerm|Mark Hiner]]<sup>2</sup> (co-lead)
@@ -101,9 +101,9 @@ Our deep thanks to Wayne Rasband, author of [[ImageJ1]], for all his support and
 === Institutions ===
 # [http://www.nih.gov/ National Institutes of Health]
 # [[LOCI|Laboratory for Optical and Computation]] (LOCI) at [http://wisc.edu/ UW-Madison]
-# [http://www.mbl.edu/ Marine Biological Laboratory] (MBL) at Woods Hole
-# [http://www.broadinstitute.org/ Broad Institute] of MIT and Harvard
 # [http://mpi-cbg.de/ Max Planck Institute of Molecular Cell Biology and Genetics] (MPI-CBG) at Dresden
+# [http://www.broadinstitute.org/ Broad Institute] of MIT and Harvard
+# [http://www.mbl.edu/ Marine Biological Laboratory] (MBL) at Woods Hole
 # [https://www.ini.uzh.ch/ Institute of Neuroinformatics], [https://www.ethz.ch/en.html Uni/ETH Zurich]
 # [http://www.uni-wuerzburg.de/en/ueber/university/ University of Wuerzburg], Germany
 # [http://www.pasteur.fr/en Institut Pasteur], Paris, France
