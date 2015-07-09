@@ -147,7 +147,7 @@ Linear regression solution: If the image data are close to ideal, with comparabl
            </li>
 
            <li>
-The % volume and intensity colocalised values are pretty useless as they are very dependent on how much stuff and how much background there is in a certain image, and you will get totally different values for different images of the same sample, that happen to have different areas of background.
+The % volume and intensity colocalised values are pretty useless, unless you use a biologically relevant region of interest, as they are very dependent on how much stuff and how much background there is in a certain image, and you will get totally different values for different images of the same sample, that happen to have different areas of background.
 In images that have no empty regions, like tissue samples, it might then be a useful number. Maybe % intensity above threshold colocalised might be a useful value in some cases?
            </li>
          
