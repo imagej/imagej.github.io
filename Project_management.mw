@@ -171,7 +171,8 @@ To meet these needs, we use the following conventions with GitHub issues:
 
 '''Milestones'''
 * For short-term active development, use names m1, m2, etc.
-** As these milestones are closed, they are renamed to match the corresponding release.
+** These milestones themselves have no due date and never close, and contain only open issues
+** When an issue is closed, it is moved to match its corresponding release milestone.
 * Future planned breaking changes should go in [[Versioning|SemVer]]-named milestones.
 * All projects should have an "unscheduled" milestone.
 ** Issues in "unscheduled" are things that core developers and maintainers cannot make time to address.
@@ -185,6 +186,8 @@ To meet these needs, we use the following conventions with GitHub issues:
 * All issues in near-term milestones should have an assignee.
 
 Using these conventions gives rise to a workflow where new issues come in with no assignee and no milestone, and the project maintainers either assign them to a developer who will carry out the work, or put the issue in "unscheduled" with no assignee.
+
+As issues are closed, they are sorted into milestones which match each project's release tags, making it easy to browse which issues were addressed as part of each release.
 
 The high-level topics of interest (i.e., [https://github.com/issues?q=is%3Aopen+label%3Abug+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci bugs] and [https://github.com/issues?q=is%3Aopen+label%3Aenhancement+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci enhancements]) can easily be filtered by label, while milestones establish the timeline and functional development.
 
