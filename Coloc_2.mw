@@ -69,6 +69,7 @@ Whether or not to consider zero - zero pixels as part of the interesting data fo
 Please see the [[Colocalization Analysis]] page for further discussion of precautions.
 
 == To Do List ==
+0. Old to do list and design notes are found here: http://fiji.sc/Coloc_2_designNotes
 
 1. Add Tests and implementation for %Colocalization by intensity and pixels(or voxels) wrt each channel, as per the depreciated Colocalization Threshold plugin - force use of a ROI or mask, as only then do these measures make sense. Add docs for this. 
 
