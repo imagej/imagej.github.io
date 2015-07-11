@@ -75,11 +75,13 @@ Please see the [[Colocalization Analysis]] page for further discussion of precau
 
 2. numerical results and image stats are currently spewed into the IJ.log window. This is done separately from the way results are put into the simple results display window or the PDF output. So there three differently formatted results outputs with different stuff in them. This is over complicated, so it should be made into one thing, that outputs the same numerical results and stats values, in the same order in the GUI display, the IJ.log and the PDF output. Can reuse the PDF or simple results display results text for all three. 
 
-3. On the 2D histogram in the PDF, the regression line is missing
+3. Missing Feature: On the 2D histogram in the PDF, the regression line is absent
 
-4. auto threshold results lines are missing from the 2D histogram in the simple display results GUI and the PDF.
+4. Missing Feature: auto threshold results lines are missing from the 2D histogram in the simple display results GUI and the PDF.
 
 5. implement flags in GUI to turn on and off desired output values??? Or does this break the idea of having a standardized output? Perhaps instead just make sure the IJ.log output is easily parse-able by humans and machines.
+
+6. Bug: Large images don't fit in results display gui, and there are no scroll bars.
 
 == DONE ==
 1. implement test  and implement code to make sure autothreshold results are the same regardless of image channel order - CommutativityTest.java  in Coloc_2 plugin version 2.0.2? 
