@@ -16,21 +16,21 @@ The ImageJ Shape Filter Plugin uses the [https://github.com/thorstenwagner/ij-bl
 
 = Shape Features =
 
-* Area (<math>A</math>): The area enclosed by the outer contour of an object.
-* Area Convex Hull (<math>C</math>): The area enclosed by the convex hull of the outer contour of an object.
-* Perimeter (<math>P</math>): The perimeter of the outer contour of an object.
-* Perimeter Convex Hull (<math>H</math>): The perimeter of the convex hull of the particle.
-* Feret Diameter: The maximum distance between the two parallel tangents touching the particle outline in all directions.
-* Min. Feret Diameter: the minimum distance between the two parallel tangents touching the particle outline in all directions.
-* Long Side Minimum Bounding Rectangle: The larger side of the minimum bounding rectangle.
-* Short Side Minimum Bounding Rectangle: The smaller side of the minimum bounding rectangle.
-* Aspect Ratio: Defined as <math>L/S</math>
-* Area to Perimeter Ratio: Defined as <math>A/P</math>
-* Circularity: Defined as <math>P^{2}/A</math>
-* Elongation: Defined as <math>1 - S/L</math>
-* Convexity: Defined as <math>H/P</math>
-* Solidity: Defined as <math>A/C</math>
-* Number of Holes: The number of holes inside an object.
-* Thinnes Ratio: Inverse proportional to the circularity. Furthermore it normed. It is defined as <math>4\pi A/P^{2}</math>
-* Contour Temperatur: It has a strong relationship to the fractal dimension, defined as <math>\left(log_{2}\left(\frac{2P}{P-H}\right)\right)^{-1}</math>
-* Fractal Box Dimension: Estimated fractal dimension by the box count algorithm. The default box-sizes are “2,3,4,6,8,12,16,32,64”.
+* '''Area''' (<math>A</math>): The area enclosed by the outer contour of an object.
+* '''Area Convex Hull''' (<math>C</math>): The area enclosed by the convex hull of the outer contour of an object.
+* '''Perimeter''' (<math>P</math>): The perimeter of the outer contour of an object.
+* '''Perimeter Convex Hull''' (<math>H</math>): The perimeter of the convex hull of the particle.
+* '''Feret Diameter''': The maximum distance between the two parallel tangents touching the particle outline in all directions.
+* '''Min. Feret Diameter''': the minimum distance between the two parallel tangents touching the particle outline in all directions.
+* '''Long Side Minimum Bounding Rectangle''': The larger side of the minimum bounding rectangle.
+* '''Short Side Minimum Bounding Rectangle''': The smaller side of the minimum bounding rectangle.
+* '''Aspect Ratio''': Defined as <math>L/S</math>
+* '''Area to Perimeter Ratio''': Defined as <math>A/P</math>
+* '''Circularity''': Defined as <math>P^{2}/A</math>
+* '''Elongation''': Defined as <math>1 - S/L</math>
+* '''Convexity''': Defined as <math>H/P</math>
+* '''Solidity''': Defined as <math>A/C</math>
+* '''Number of Holes''': The number of holes inside an object.
+* '''Thinnes Ratio''': Inverse proportional to the circularity. Furthermore it normed. It is defined as <math>4\pi A/P^{2}</math>
+* '''Contour Temperatur''': It has a strong relationship to the fractal dimension, defined as <math>\left(log_{2}\left(\frac{2P}{P-H}\right)\right)^{-1}</math>
+* F'''ractal Box Dimension''': Estimated fractal dimension by the box count algorithm. The default box-sizes are “2,3,4,6,8,12,16,32,64”.
