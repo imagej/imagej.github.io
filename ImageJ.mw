@@ -108,7 +108,7 @@ The ImageJX software prototype was a proof of concept—an attempt to reorganize
 
 See also the [[History|ImageJ timeline]].
 
-== Publication ==
+== Publications ==
 * {{Citation | last = Schneider | first = C. A.
 | last2 = Rasband | first2 = W. S.
 | last3 = Eliceiri | first3 = K. W.
@@ -119,5 +119,16 @@ See also the [[History|ImageJ timeline]].
 | volume = 9(7)
 | pages = 671-675
 | pmid = 22930834}}.
+* {{Citation | last = Schindelin | first = J.
+| last2 = Rueden | first2 = C. T.
+| last3 = Hiner | first3 = M. C.
+| last4 = Eliceiri | first4 = K. W.
+| year = 2015
+| journal = Molecular Reproduction and Development
+| url = http://onlinelibrary.wiley.com/doi/10.1002/mrd.22489/full
+| title = The ImageJ ecosystem: An open platform for biomedical image analysis
+| volume = 
+| pages = 
+| pmid = 26153368}}.
 
 [[Category:Citable]]
