@@ -30,7 +30,7 @@ ImageJDev
 |-
 |[[File:imagej1-icon.png|64px]]
 |[[ImageJA]]
-|[[User:Schindelin|Johannes Schindelin]]
+|[[Contributors|ImageJ developers]]
 | 
 ImageJA is a project that provides a clean [[Git]] history of ImageJ1, with a proper 'pom.xml' file so that it can be used with Maven without hassles.
 
