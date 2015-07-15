@@ -16,21 +16,21 @@ The ImageJ Shape Filter Plugin uses the [https://github.com/thorstenwagner/ij-bl
 
 = Shape Features =
 
-- Area
-- Area Convex Hull
-- Perimeter
-- Perimeter Convex Hull
-- Feret Diameter
-- Min. Feret Diameter
-- Long Side Minimum Bounding Rectangle.
-- Short Side Minimum Bounding Rectangle.
-- Aspect Ratio
-- Area to Perimeter Ratio
-- Circularity
-- Elongation
-- Convexity
-- Solidity
-- Number of Holes
-- Thinnes Ratio
-- Contour Temperatur
-- Fractal Box Dimension
+* Area
+* Area Convex Hull
+* Perimeter
+* Perimeter Convex Hull
+* Feret Diameter
+* Min. Feret Diameter
+* Long Side Minimum Bounding Rectangle.
+* Short Side Minimum Bounding Rectangle.
+* Aspect Ratio
+* Area to Perimeter Ratio
+* Circularity
+* Elongation
+* Convexity
+* Solidity
+* Number of Holes
+* Thinnes Ratio
+* Contour Temperatur
+* Fractal Box Dimension
