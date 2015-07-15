@@ -13,7 +13,7 @@
 == General Description ==
 
 The ImageJ Shape Filter Plugin uses the [https://github.com/thorstenwagner/ij-blob [ij-blob]] library to filter objects in binary scenes by its shape.
-[[File:Ridge Detection Parameters.png|150px|thumb]]
+[[File:Shape Filter GUI.png|150px|thumb]]
 = Shape Features =
 
 * '''Area''' (<math>A</math>): The area enclosed by the outer contour of an object.
