@@ -34,3 +34,7 @@ The ImageJ Shape Filter Plugin uses the [https://github.com/thorstenwagner/ij-bl
 * '''Thinnes Ratio''': Inverse proportional to the circularity. Furthermore it normed. It is defined as <math>4\pi A/P^{2}</math>
 * '''Contour Temperatur''': It has a strong relationship to the fractal dimension, defined as <math>\left(log_{2}\left(\frac{2P}{P-H}\right)\right)^{-1}</math>
 * '''Fractal Box Dimension''': Estimated fractal dimension by the box count algorithm. The default box-sizes are “2,3,4,6,8,12,16,32,64”.
+
+=Examples=
+
+=Installation=
