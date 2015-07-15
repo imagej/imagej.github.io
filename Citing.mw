@@ -66,8 +66,18 @@ You can cite various ImageJ-related projects as follows:
 | colspan=3 style="background: #777" |
 |-
 | [[ImageJ2]]
-| Rueden, C., Schindelin, J., Hiner, M., DeZonia, B., Kamentsky, L. & Eliceiri, K. (2015). ImageJ2 [Software]. http://imagej.net/.
-| -
+| {{Citation | last = Schindelin | first = J.
+| last2 = Rueden | first2 = C. T.
+| last3 = Hiner | first3 = M. C.
+| last4 = Eliceiri | first4 = K. W.
+| year = 2015
+| journal = Molecular Reproduction and Development
+| url = http://onlinelibrary.wiley.com/doi/10.1002/mrd.22489/full
+| title = The ImageJ ecosystem: An open platform for biomedical image analysis
+| volume = 
+| pages = 
+| pmid = 26153368}}.
+| {{Scholar | cluster=2492786182850473580}}
 |-
 | [[SciJava Common]]
 | Rueden, C., Schindelin, J., Hiner, M. & Eliceiri, K. (2015). SciJava Common [Software]. http://scijava.org/.
