@@ -3,7 +3,7 @@
 | name                   = Shape Filter Plugin
 | author                 = Thorsten Wagner
 | maintainer             = Thorsten Wagner (wagner@biomedical-imaging.de)
-| filename               = Shape_Smoothing.jar [https://github.com/thorstenwagner/ij-shape-filter/releases/latest [1]]
+| filename               = shape_filter_x.y.z.jar [https://github.com/thorstenwagner/ij-shape-filter/releases/latest [1]]
 | source                 = Github [https://github.com/thorstenwagner/ij-shape-filter [2]]
 | latest version         = v1.2.1 (16 Jul 2015)
 | status                 = active 
