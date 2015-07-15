@@ -13,7 +13,7 @@
 == General Description ==
 
 The ImageJ Shape Filter Plugin uses the [https://github.com/thorstenwagner/ij-blob [ij-blob]] library to filter objects in binary scenes by its shape.
-[[File:Shape Filter GUI.png|150px|thumb]]
+[[File:Shape Filter GUI.png|180px|thumb]]
 = Shape Features =
 
 * '''Area''' (<math>A</math>): The area enclosed by the outer contour of an object.
@@ -34,5 +34,3 @@ The ImageJ Shape Filter Plugin uses the [https://github.com/thorstenwagner/ij-bl
 * '''Thinnes Ratio''': Inverse proportional to the circularity. Furthermore it normed. It is defined as <math>4\pi A/P^{2}</math>
 * '''Contour Temperatur''': It has a strong relationship to the fractal dimension, defined as <math>\left(log_{2}\left(\frac{2P}{P-H}\right)\right)^{-1}</math>
 * F'''ractal Box Dimension''': Estimated fractal dimension by the box count algorithm. The default box-sizes are “2,3,4,6,8,12,16,32,64”.
-
-== Other test===
