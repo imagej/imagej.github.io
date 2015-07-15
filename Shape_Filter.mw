@@ -12,7 +12,7 @@
 
 == General Description ==
 
-The ImageJ Shape Filter Plugin uses the [https://github.com/thorstenwagner/ij-blob [ij-blob]] library to filter objects in binary scenes by its shape.
+The ImageJ Shape Filter Plugin uses the [https://github.com/thorstenwagner/ij-blob [ij-blob]] library to characterize and filter objects in binary scenes by its shape. Therefore, several features are calculated as shown below.
 [[File:Shape Filter GUI.png|200px|thumb]]
 = Shape Features =
 
