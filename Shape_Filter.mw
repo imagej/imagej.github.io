@@ -1,6 +1,6 @@
 {{Infobox
 | software               = ImageJ/Fiji
-| name                   = Shape Smoothing Plugin
+| name                   = Shape Filter Plugin
 | author                 = Thorsten Wagner
 | maintainer             = Thorsten Wagner (wagner@biomedical-imaging.de)
 | filename               = Shape_Smoothing.jar [https://github.com/thorstenwagner/ij-shape-filter/releases/latest [1]]
@@ -26,11 +26,11 @@ The ImageJ Shape Filter Plugin uses the [https://github.com/thorstenwagner/ij-bl
 * Short Side Minimum Bounding Rectangle: The smaller side of the minimum bounding rectangle.
 * Aspect Ratio: Defined as <math>L/S</math>
 * Area to Perimeter Ratio: Defined as <math>A/P</math>
-* Circularity:
-* Elongation:
-* Convexity:
-* Solidity:
-* Number of Holes:
-* Thinnes Ratio:
-* Contour Temperatur:
-* Fractal Box Dimension:
+* Circularity: Defined as <math>P^{2}/A</math>
+* Elongation: Defined as <math>1 - S/L</math>
+* Convexity: Defined as <math>H/P</math>
+* Solidity: Defined as <math>A/C</math>
+* Number of Holes: The number of holes inside an object.
+* Thinnes Ratio: Inverse proportional to the circularity. Furthermore it normed. It is defined as <math>4\pi A/P^{2}</math>
+* Contour Temperatur: It has a strong relationship to the fractal dimension, defined as <math>\left(log_{2}\left(\frac{2P}{P-H}\right)\right)^{-1}</math>
+* Fractal Box Dimension: Estimated fractal dimension by the box count algorithm. The default box-sizes are “2,3,4,6,8,12,16,32,64”.
