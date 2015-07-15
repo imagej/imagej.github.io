@@ -36,4 +36,4 @@ The ImageJ Shape Filter Plugin uses the [https://github.com/thorstenwagner/ij-bl
 * F'''ractal Box Dimension''': Estimated fractal dimension by the box count algorithm. The default box-sizes are “2,3,4,6,8,12,16,32,64”.
 
 ==Test==
-<code>import ij.blob.*;</code>
+<syntaxhighlight lang="java">import ij.blob.*;</syntaxhighlight>
