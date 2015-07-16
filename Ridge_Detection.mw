@@ -64,7 +64,11 @@ The following optional parameters are used to estimate the mandatory parameters:
 
 '''Show junction points:''' If this option is selected the junctions points will be displayed.
 
+'''Show IDs:'''
+
 '''Display results:''' If this option is selected, all contours and junctions are filled into a results table.
+
+'''Add to Manager:'''
 
 =Installation=
 
