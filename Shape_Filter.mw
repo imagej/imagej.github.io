@@ -35,6 +35,5 @@ The ImageJ Shape Filter Plugin uses the [https://github.com/thorstenwagner/ij-bl
 * '''Contour Temperatur''': It has a strong relationship to the fractal dimension, defined as <math>\left(log_{2}\left(\frac{2P}{P-H}\right)\right)^{-1}</math>
 * '''Fractal Box Dimension''': Estimated fractal dimension by the box count algorithm. The default box-sizes are “2,3,4,6,8,12,16,32,64”.
 
-==Examples==
-
 =Installation=
+You could simply use our update site "[http://fiji.sc/List_of_update_sites biomedgroup]" to install the shape filter plugin.
