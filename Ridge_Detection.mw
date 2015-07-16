@@ -61,14 +61,13 @@ The following optional parameters are used to estimate the mandatory parameters:
 
 '''Estimate width:''' If this option is selected the width of the line is estimated.
 
-
 '''Show junction points:''' If this option is selected the junctions points will be displayed.
 
-'''Show IDs:'''
+'''Show IDs:''' The ID of each line will be shown.
 
 '''Display results:''' If this option is selected, all contours and junctions are filled into a results table.
 
-'''Add to Manager:'''
+'''Add to Manager:''' All lines and junctions points will be added to the roi manager.
 
 =Installation=
 
