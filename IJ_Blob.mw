@@ -6,7 +6,8 @@
 | filename               = ij-blob.jar [https://github.com/thorstenwagner/ij-blob/releases/latest [1]]
 | source                 = Github [https://github.com/thorstenwagner/ij-blob [2]]
 | latest version         = v1.4.0 (16 July 2015)
-| status                 = active 
+| status                 = active
+| API                    = [https://dl.dropboxusercontent.com/u/560426/imagej/ijdoc/index.html API]
 
 }}
 == Purpose ==
