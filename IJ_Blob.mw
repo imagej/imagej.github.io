@@ -55,6 +55,8 @@ IJBlob 1.1 introduces a filter and extension framework! Please see the wiki page
 </code>
 
 ==Example 2: Example 2: Filter blobs by blob features==
+In IJBlob 1.1 a filter framework was introduced. Each build-in blob feature has a static identifier (in this example "GETENCLOSEDAREA") which contains the method name.
+
 <code>
     import ij.blob.*;
     ...
