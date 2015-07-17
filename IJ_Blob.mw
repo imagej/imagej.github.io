@@ -56,7 +56,7 @@ IJBlob 1.1 introduces a filter and extension framework! Please see the wiki page
 
 ==Example 2: Example 2: Filter blobs by blob features==
 <code>
-import ij.blob.*;
+    import ij.blob.*;
     ...
     private ManyBlobs allBlobs;
     ...
@@ -68,6 +68,7 @@ import ij.blob.*;
         allBlobs.findConnectedComponents(); 
 
         /* Return all blobs with an area between 20 and 100 pixel² */
-        ManyBlobs filteredBlobs = allBlobs.filterBlobs(20,100, Blob.GETENCLOSEDAREA); 
+        ManyBlobs filteredBlobs = allBlobs.filterBlobs(20,100,        
+        Blob.GETENCLOSEDAREA); 
     }
 </code>
