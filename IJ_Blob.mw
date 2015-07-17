@@ -39,3 +39,6 @@ IJBlob 1.1 introduces a filter and extension framework! Please see the wiki page
 * Extracts also all inner contours of each blob (holes).
 * Detects nested objects (blob in blob).
 * Calculates basic features of the blob for shape characterization.
+
+=Examples=
+==Example 1: Extract the Blobs of an Image and Read the Perimeter of a Blob==
