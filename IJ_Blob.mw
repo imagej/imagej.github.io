@@ -1,3 +1,14 @@
+{{Infobox
+| software               = ImageJ/Fiji
+| name                   = IJBlob
+| author                 = Thorsten Wagner
+| maintainer             = Thorsten Wagner (wagner@biomedical-imaging.de)
+| filename               = ij-blob.jar [https://github.com/thorstenwagner/ij-blob/releases/latest [1]]
+| source                 = Github [https://github.com/thorstenwagner/ij-blob [2]]
+| latest version         = v1.4.0 (16 July 2015)
+| status                 = active 
+
+}}
 == Purpose ==
 The IJBlob library indentifying connected components in binary images. The algorithm used for connected component labeling is:
 
