@@ -37,7 +37,7 @@ If you are using IJBlob in a scientific publication, please cite:
 * Extract the outer contour of each blob.
 * Extracts also all inner contours of each blob (holes).
 * Detects nested objects (blob in blob).
-* Calculates basic features of a blob for shape characterization.
+* Many shape features
 
 ==Shape Features==
 * '''Area''' (<math>A</math>): The area enclosed by the outer contour of an object.
