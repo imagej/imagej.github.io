@@ -1,0 +1,21 @@
+== Purpose ==
+The IJBlob library indentifying connected components in binary images. The algorithm used for connected component labeling is:
+
+''Chang, F. (2004). A linear-time component-labeling algorithm using contour tracing technique. Computer Vision and Image Understanding, 93(2), 206–220. doi:10.1016/j.cviu.2003.09.002''
+
+A connected component is a set of pixels which are connected by its 8-neigherhood and is often called a "blob". An Example:
+
+IMAGE
+
+The image above contains 8 marked blobs. Also the holes (and the contours of the holes) of the two Bs and the O are identified. It is also possible to get a color labeled image:
+
+IMAGE
+
+In addition ijblob identifies nested objects:
+
+IMAGE
+
+If you are using IJBlob in a scientific publication, please cite:
+
+
+''Wagner, T and Lipinski, H 2013. IJBlob: An ImageJ Library for Connected Component Analysis and Shape Analysis. Journal of Open Research Software 1(1):e6, DOI: http://dx.doi.org/10.5334/jors.ae''
