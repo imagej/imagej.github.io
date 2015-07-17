@@ -68,6 +68,7 @@ In IJBlob 1.1 a filter framework was introduced. Each build-in blob feature has 
   
         /* Start the Connected Component Algorithm */
         allBlobs.findConnectedComponents(); 
+
         /* Return all blobs with an area between 20 and 100 pixel² */
         ManyBlobs filteredBlobs = allBlobs.filterBlobs(20,100,        
         Blob.GETENCLOSEDAREA); 
