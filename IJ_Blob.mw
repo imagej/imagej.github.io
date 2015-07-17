@@ -79,13 +79,13 @@ In IJBlob 1.1 a filter framework was introduced. Each build-in blob feature has 
 IJBlob 1.1 is easily expandable by your own features. First you have to derive a feature class from the "CustomBlobFeature" class. The feature class can also contain multiple features. With the "getBlob()" method you get the reference to the Blob and have full access to the contour data and the other features.
 '''Please note: If your feature method have primitive data types (int/float/double) as parameters you have to use the wrapper classes (Integer/Float/Double).'''
 
-<code> import ij.blob.*;
+<code> 
+import ij.blob.*;
 public class ExampleBlobFeature extends CustomBlobFeature {
   public double myFancyFeature(Integer a, Float b){
     double feature = b*getBlob().getEnclosedArea()*a;
     return feature;
   }
-	
   public int mySecondFancyFeature(Integer a, Double b){
     int feature = (int)(b*getBlob().getAreaToPerimeterRatio() *a);
     return feature;
