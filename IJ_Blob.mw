@@ -75,7 +75,7 @@ In IJBlob 1.1 a filter framework was introduced. Each build-in blob feature has 
     }
 </code>
 
-==Example 3: ==
+==Example 3: Add your own features==
 IJBlob 1.1 is easily expandable by your own features. First you have to derive a feature class from the "CustomBlobFeature" class. The feature class can also contain multiple features. With the "getBlob()" method you get the reference to the Blob and have full access to the contour data and the other features.
 '''Please note: If your feature method have primitive data types (int/float/double) as parameters you have to use the wrapper classes (Integer/Float/Double).'''
 
