@@ -40,7 +40,7 @@ If you are using IJBlob in a scientific publication, please cite:
 * Calculates basic features of a blob for shape characterization.
 
 =Examples=
-==Example 1: Extract the Blobs of an Image and Read the Perimeter of a Blob==
+==Example 1: Extract the connected components of an image and read the perimeter of a blob==
 <code>
     import ij.blob.*;
     ...
