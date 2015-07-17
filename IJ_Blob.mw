@@ -42,3 +42,14 @@ IJBlob 1.1 introduces a filter and extension framework! Please see the wiki page
 
 =Examples=
 ==Example 1: Extract the Blobs of an Image and Read the Perimeter of a Blob==
+<code>
+    import ij.blob.*;
+    ...
+    private ManyBlobs allBlobs;
+    ...
+    public void someMethod(ImagePlus imp) {
+        ManyBlobs allBlobs = new ManyBlobs(imp); // Extended ArrayList
+        allBlobs.findConnectedComponents(); // Start the Connected Component Algorithm
+        allBlobs.get(0).getPerimeter(); // Read the perimeter of a Blob
+    }
+</code>
