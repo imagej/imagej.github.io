@@ -53,3 +53,21 @@ IJBlob 1.1 introduces a filter and extension framework! Please see the wiki page
         allBlobs.get(0).getPerimeter(); // Read the perimeter of a Blob
     }
 </code>
+
+==Example 2: Example 2: Filter blobs by blob features==
+<code>
+import ij.blob.*;
+    ...
+    private ManyBlobs allBlobs;
+    ...
+    public void someMethod(ImagePlus imp) {
+        /* Extended ArrayList */
+        ManyBlobs allBlobs = new ManyBlobs(imp); 
+  
+        /* Start the Connected Component Algorithm */
+        allBlobs.findConnectedComponents(); 
+
+        /* Return all blobs with an area between 20 and 100 pixel² */
+        ManyBlobs filteredBlobs = allBlobs.filterBlobs(20,100, Blob.GETENCLOSEDAREA); 
+    }
+</code>
