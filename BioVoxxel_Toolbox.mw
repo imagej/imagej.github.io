@@ -39,7 +39,7 @@ Feret's AR = [maximum caliper diameter] / [minimum caliper diameter]
 
 Coefficient of variance (CoV) = [intensity standard deviation] / [intensity mean]
 
-Form: plugin (recordable, uses smart recording) 
+Form: plugin (recordable, ''uses smart recording --> records only fields which have been changed by the user while recording. Default entries will not be recorded. It is already sufficient to cut a zero after the comma without changing the actual parameter value to make the recorder recognize that the entry should be recorded!'') 
 
 Status: Maintenance active (current version: 2.5.0)
 
