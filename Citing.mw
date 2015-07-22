@@ -63,8 +63,6 @@ You can cite various ImageJ-related projects as follows:
 | pmid = 22962343}}.
 | {{Scholar | cluster=17114668151840635304}}
 |-
-| colspan=3 style="background: #777" |
-|-
 | [[ImageJ2]]
 | {{Citation | last = Schindelin | first = J.
 | last2 = Rueden | first2 = C. T.
@@ -78,6 +76,8 @@ You can cite various ImageJ-related projects as follows:
 | pages = 
 | pmid = 26153368}}.
 | {{Scholar | cluster=2492786182850473580}}
+|-
+| colspan=3 style="background: #777" |
 |-
 | [[SciJava Common]]
 | Rueden, C., Schindelin, J., Hiner, M. & Eliceiri, K. (2015). SciJava Common [Software]. http://scijava.org/.
