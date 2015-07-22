@@ -100,7 +100,7 @@ In particular, this means that to run Java 6 on the latest OS X versions, you mu
 <pre>
 export J6="$(/usr/libexec/java_home -v 1.6)"
 export IJ_HOME=/Applications/Fiji.app
-$J6/bin/$($IJ_HOME/Contents/MacOS/ImageJ-macosx --dry-run | sed 's/ -Djava.ext.dirs=[^ ]*//')
+$J6/bin/$($IJ_HOME/Contents/MacOS/ImageJ-macosx --dry-run | perl -pe 's/ -Djava.ext.dirs=.*? -D/ -D/')
 </pre>
 See "How do I setup a launcher app" below for instructions on turning this invocation into a Dock icon.
 
