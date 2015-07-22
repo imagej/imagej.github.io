@@ -23,6 +23,20 @@ You can cite various ImageJ-related projects as follows:
 | pmid = 22930834}}.
 | {{Scholar | cluster=1774858333144211891}}
 |-
+| [[ImageJ2]]
+| {{Citation | last = Schindelin | first = J.
+| last2 = Rueden | first2 = C. T.
+| last3 = Hiner | first3 = M. C.
+| last4 = Eliceiri | first4 = K. W.
+| year = 2015
+| journal = Molecular Reproduction and Development
+| url = http://onlinelibrary.wiley.com/doi/10.1002/mrd.22489/full
+| title = The ImageJ ecosystem: An open platform for biomedical image analysis
+| volume = 
+| pages = 
+| pmid = 26153368}}.
+| {{Scholar | cluster=2492786182850473580}}
+|-
 | [[Fiji]]
 | {{Citation | last = Schindelin | first = J.
 | last2 = Arganda-Carreras | first2 = I.
@@ -62,20 +76,6 @@ You can cite various ImageJ-related projects as follows:
 | pages = 3009-3011
 | pmid = 22962343}}.
 | {{Scholar | cluster=17114668151840635304}}
-|-
-| [[ImageJ2]]
-| {{Citation | last = Schindelin | first = J.
-| last2 = Rueden | first2 = C. T.
-| last3 = Hiner | first3 = M. C.
-| last4 = Eliceiri | first4 = K. W.
-| year = 2015
-| journal = Molecular Reproduction and Development
-| url = http://onlinelibrary.wiley.com/doi/10.1002/mrd.22489/full
-| title = The ImageJ ecosystem: An open platform for biomedical image analysis
-| volume = 
-| pages = 
-| pmid = 26153368}}.
-| {{Scholar | cluster=2492786182850473580}}
 |-
 | colspan=3 style="background: #777" |
 |-
