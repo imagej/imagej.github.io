@@ -71,6 +71,8 @@ Alternately, if you are a developer looking to install the Java 6 Development Ki
 
 At any time, you can verify which Javas are installed on your system using {{GitHub|org=ctrueden|repo=ctr-scripts|path=java-info|label=this script}}.
 
+Note however that, per [[#On OS X|the limitations]] of <code>--java-home</code>, to launch Fiji with Java 6 you must ensure no other versions of Java are installed.
+
 == How do I run ImageJ on Yosemite? ==
 
 Install [http://www.oracle.com/technetwork/java/javase/downloads/ Java SE 8].
@@ -90,7 +92,7 @@ Use the <code>--java-home</code> command line option:
  /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx --java-home \
    '/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home'
 
-Note: the <code>--java-home</code> flag does not support Apple Java installations. However, Fiji will fall back to Apple Java if no other Java installations are available.
+Note: the <code>--java-home</code> flag does not support Apple Java installations. However, Fiji will fall back to Apple Java if no other Java installations are available. In particular this means that to run Java 6 on the latest OS X versions you must remove all non-Java 6 installations (since the only Java 6 available is an Apple Java).
 
 Specifying Apple Javas with this flag will give an error message about being unable to find <code>lib/server/libjvm.dylib</code>.
 
