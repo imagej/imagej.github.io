@@ -75,7 +75,7 @@ Note however that, per [[#On OS X|the limitations]] of <code>--java-home</code>,
 
 == How do I run ImageJ on Yosemite? ==
 
-Install [http://www.oracle.com/technetwork/java/javase/downloads/ Java SE 8].
+Install the [http://java.com/ Java 8 JRE] or [http://www.oracle.com/technetwork/java/javase/downloads/ Java SE 8].
 
 = Running =
 
