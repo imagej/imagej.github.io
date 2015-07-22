@@ -71,7 +71,7 @@ Alternately, if you are a developer looking to install the Java 6 Development Ki
 
 At any time, you can verify which Javas are installed on your system using {{GitHub|org=ctrueden|repo=ctr-scripts|path=java-info|label=this script}}.
 
-Note however that, per [[#On OS X|the limitations]] of <code>--java-home</code>, to launch Fiji with Java 6 you must ensure no other versions of Java are installed.
+Note however that, per [[#On OS X|the limitations]] of <code>--java-home</code>, you will have to jump through some hoops in order to run ImageJ with Java 6 if you also have Java 7 and/or 8 installed.
 
 == How do I run ImageJ on Yosemite? ==
 
