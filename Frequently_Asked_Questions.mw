@@ -95,8 +95,8 @@ Use the <code>--java-home</code> command line option:
 Note: the <code>--java-home</code> flag does not support Apple Java installations. Specifying Apple Javas with this flag will give an error message about being unable to find <code>lib/server/libjvm.dylib</code>. However, Fiji will fall back to Apple Java if no other Java installations are available.
 
 In particular, this means that to run Java 6 on the latest OS X versions, you must do '''''ONE''''' of the following:
-* Remove all installations of Java 7 and Java 8 ([https://www.java.com/en/download/help/mac_uninstall_java.xml remove the JRE] and [http://docs.oracle.com/javase/7/docs/webnotes/install/mac/mac-jdk.html#uninstall remove all JDKs]).
-* Launch ImageJ explicitly using <code>java</code>. Here is a sample invocation (copy and paste into Terminal):
+* '''''EITHER:''''' Remove all installations of Java 7 and Java 8 ([https://www.java.com/en/download/help/mac_uninstall_java.xml remove the JRE] and [http://docs.oracle.com/javase/7/docs/webnotes/install/mac/mac-jdk.html#uninstall remove all JDKs]).
+* '''''OR:''''' Launch ImageJ explicitly using <code>java</code>. Here is a sample invocation (copy and paste into Terminal):
 <pre>
 export J6="$(/usr/libexec/java_home -v 1.6)"
 export IJ_HOME=/Applications/Fiji.app
