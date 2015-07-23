@@ -175,7 +175,7 @@ The [[SciJava]] software stack is composed of the following core libraries:
 * [[SciJava Common]] - The SciJava application container and plugin framework.
 * [[ImgLib2]] - The N-dimensional image data model.
 * [[ImageJ Common]] - Metadata-rich image data structures and SciJava extensions.
-* [[ImageJ OPS]] - The framework for reusable image processing operations.
+* [[ImageJ Ops]] - The framework for reusable image processing operations.
 * [[SCIFIO]] - The framework for N-dimensional image I/O.
 
 These libraries form the basis of SciJava-based software.
