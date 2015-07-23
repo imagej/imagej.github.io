@@ -68,7 +68,7 @@ ImageJ2 breaks the "one developer, one machine, one task" paradigm: it is also a
 The following software component libraries form the core of ImageJ2:
 
 * {{GitHub|org=imagej|repo=imagej-common|label=ImageJ Common}} - The core image data model, using ImgLib2.
-* {{GitHub|org=imagej|repo=imagej-ops|label=ImageJ OPS}} - An extensible framework for reusable image processing algorithms.
+* {{GitHub|org=imagej|repo=imagej-ops|label=ImageJ Ops}} - An extensible framework for reusable image processing algorithms.
 * {{GitHub|org=imagej|repo=imagej-updater|label=ImageJ Updater}} - A mechanism to update individual plugins and libraries within ImageJ.
 * {{GitHub|org=imagej|repo=imagej-legacy|label=ImageJ Legacy}} - Provides complete backwards compatibility with ImageJ 1.x.
 * {{GitHub|org=scijava|repo=scijava-common|label=SciJava Common}} - The core frameworks for plugins, modules, scripting and the application itself.
