@@ -28,7 +28,7 @@ The [[Fiji]] distribution of ImageJ has shipped with beta versions of ImageJ2 fo
 
 ImageJ2 provides a wealth of new features and capabilities:
 
-* The ImageJ [[Updater]] makes it simple to keep your ImageJ up to date, and to add new plugins by enabling additional [[Update Sites]].
+* The [[ImageJ Updater]] makes it simple to keep your ImageJ up to date, and to add new plugins by enabling additional [[Update Sites]].
 * New and enhanced file format support via the [[SCIFIO]] library ([[#Improved_image_I.2FO_with_the_SCIFIO_library|see below]]).
 * More powerful [[Script Editor]] with support for several scripting languages.
 * New commands:
