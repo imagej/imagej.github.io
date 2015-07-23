@@ -4,7 +4,7 @@ From Sunday, September 14, 2014 through Friday, September 19, 2014, LOCI in Madi
 
 == Overview ==
 
-ImageJ Ops is an extensible Java framework for algorithms, particularly image processing algorithms. OPS seeks to be a unifying library for scientific image processing. See the [https://github.com/imagej/imagej-ops/wiki/Motivation Motivation] page on the Ops wiki for details.
+ImageJ Ops is an extensible Java framework for algorithms, particularly image processing algorithms. Ops seeks to be a unifying library for scientific image processing. See the [https://github.com/imagej/imagej-ops/wiki/Motivation Motivation] page on the Ops wiki for details.
 
 [[KNIME]] is an open source data analytics, reporting and integration platform, which integrates various components for machine learning and data mining through its modular data pipelining concept. The [http://knime.imagej.net/ '''KN'''IME '''I'''mage '''P'''rocessing] extension, KNIP, provides nodes for working with images, and is built on the ImageJ Ops library. Ops makes it possible to execute the image processing algorithm in many contexts, including from within [[ImageJ]] itself, from [[OMERO]], [[KNIME]], [[CellProfiler]] and beyond.
 
