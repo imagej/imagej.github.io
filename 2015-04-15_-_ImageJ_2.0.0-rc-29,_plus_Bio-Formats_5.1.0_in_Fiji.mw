@@ -36,7 +36,7 @@ These releases include new versions of several components:
 === What's new in ImageJ ===
 
 * Joe Hsiao fixed a bug with boolean parameters in headless mode ({{GitHub | org=imagej | repo=ij1-patcher | pr=36 | label=ij1-patcher#36}}).
-* Brian Northan improved deconvolution and FFT code in [[ImageJ OPS]] ({{GitHub | org=imagej | repo=imagej-ops | pr=114 | label=imagej-ops#114}}).
+* Brian Northan improved deconvolution and FFT code in [[ImageJ Ops]] ({{GitHub | org=imagej | repo=imagej-ops | pr=114 | label=imagej-ops#114}}).
 * Jan Eglinger added a small enhancement to the Manage Update Sites dialog UI ({{GitHub | org=imagej | repo=imagej-ui-swing | pr=38 | label=imagej-ui-swing#38}}).
 * Jan Eglinger and Curtis Rueden improved the Console to scroll to the bottom to follow any new output ({{GitHub | org=scijava | repo=scijava-ui-swing | pr=8 | label=scijava-ui-swing#8}}).
 * Stephan Saalfeld fixed a problem with the Console where it stole the focus ({{GitHub | org=scijava | repo=scijava-ui-swing | pr=9 | label=scijava-ui-swing#9}}, {{GitHub | repo=fiji | issue=118 | label=fiji#118}}).
