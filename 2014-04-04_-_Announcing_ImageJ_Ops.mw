@@ -21,7 +21,7 @@ An op is just an ImageJ module, but with some additional structure and requireme
 
 And for algorithm developers, there is another tutorial briefly demonstrating how it works to create a new one:
 
-[https://github.com/imagej/imagej-tutorials/tree/master/create-a-new-op/src/main/java/CreateANewOp.java Create a new OP]
+[https://github.com/imagej/imagej-tutorials/tree/master/create-a-new-op/src/main/java/CreateANewOp.java Create a new op]
 
 == Caveats ==
 
