@@ -15,7 +15,7 @@ Isaac Newton attributed his success to [https://en.wikipedia.org/wiki/Standing_o
 
 == Interoperability ==
 
-One of the central goals of the [[SciJava]] software stack is to extend Java's mantra of "write once, run anywhere" in new directions: [[ImageJ OPS]] for image processing algorithms, and [[SCIFIO]] for scientific image I/O.
+One of the central goals of the [[SciJava]] software stack is to extend Java's mantra of "write once, run anywhere" in new directions: [[ImageJ Ops]] for image processing algorithms, and [[SCIFIO]] for scientific image I/O.
 
 [[ImageJ2]] commands work not only in the [[ImageJ]] user interface, but also from many [[:Category:Related Software|other applications]] in the [[History|SciJava ecosystem]], including [[CellProfiler]], [[OMERO]], [[KNIME]] and [[Alida]].
 
