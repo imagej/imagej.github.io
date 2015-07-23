@@ -23,11 +23,13 @@ All thresholding algorithms from [[ImageJ 1.x]] have been ported to Ops. Availab
 {|
 |
 * huang
+* ij1
 * intermodes
+|
 * isodata
 * li
-|
 * maxEntropy
+|
 * maxlikelihood
 * mean
 * minerror
@@ -35,12 +37,14 @@ All thresholding algorithms from [[ImageJ 1.x]] have been ported to Ops. Availab
 * minimum
 * moments
 * otsu
-* percentile
 |
+* percentile
 * renyientropy
 * shanbhag
+| style="vertical-align: top" |
 * triangle
 * yen
+
 |}
 
 == Progress and future directions ==
