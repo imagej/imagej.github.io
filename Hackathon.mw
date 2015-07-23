@@ -106,7 +106,7 @@ ImageJ has benefitted from many hackathons over the years:
 | style="white-space: nowrap" | 2014 Mar 4 -<br>2014 Mar 13
 |[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
 |[https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/dietzc dietzc], [https://github.com/hornm hornm]
-|[[ImageJ OPS]]
+|[[ImageJ Ops]]
 |- valign="top" |
 | style="white-space: nowrap" | 2014 Mar 11 -<br>2014 Mar 13
 |[https://www.facebook.com/heimathafenWiesbaden Heimathafen]<br>Wiesbaden, Germany
@@ -123,10 +123,10 @@ ImageJ has benefitted from many hackathons over the years:
 |[https://github.com/marktsuchida marktsuchida], [https://github.com/ChrisWeisiger ChrisWeisiger], [https://github.com/dscho dscho], [https://github.com/stuyvenberg stuyvenberg], [https://github.com/ctrueden ctrueden], [https://github.com/hinerm hinerm]
 |[https://micro-manager.org/ Micro-Manager] and [https://github.com/openspim OpenSPIM]
 |- valign="top"
-| style="white-space: nowrap" | [[2014-10-01 - ImageJ OPS Hackathon|2014 Sep 14 -<br>2014 Sep 18]]
+| style="white-space: nowrap" | [[2014-10-01 - ImageJ Ops Hackathon|2014 Sep 14 -<br>2014 Sep 18]]
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
 |[https://github.com/dietzc dietzc], [https://github.com/bnorthan bnorthan], [https://github.com/hinerm hinerm], [https://github.com/ctrueden ctrueden], [https://github.com/apal4 apal4], [https://github.com/yuminguw yuminguw], [https://github.com/awalter17 awalter17], Ginger Pocock
-|[[ImageJ OPS]] + [[KNIME]]
+|[[ImageJ Ops]] + [[KNIME]]
 |- valign="top"
 |2014 Oct 13 -<br>2014 Oct 17
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
@@ -136,7 +136,7 @@ ImageJ has benefitted from many hackathons over the years:
 |2015 Jan 19 -<br>2015 Jan 27
 |[http://www.freiraeume-kn.de/standort.htm FREIRÄUME]<br>Konstanz, Germany
 |[https://github.com/dietzc dietzc], [https://github.com/ctrueden ctrueden], [https://github.com/hinerm hinerm], [https://github.com/LeeKamentsky LeeKamentsky], [https://github.com/tpietzsch tpietzsch], [https://github.com/fjug fjug], [https://github.com/dscho dscho], [https://github.com/iarganda iarganda], [https://github.com/gab1one gab1one], [https://github.com/DanielSeebacher DanielSeebacher], [https://github.com/kmader kmader], [https://github.com/angrauma angrauma], [https://github.com/Squareys Squareys], [https://github.com/tibuch tibuch], Patrick Winter, Andreas Burger, Tobias Kötter
-|[[ImageJ OPS]] + [[KNIME]] + [[CellProfiler]] + more
+|[[ImageJ Ops]] + [[KNIME]] + [[CellProfiler]] + more
 |- valign="top"
 | style="white-space: nowrap" | 2015 Apr 12 -<br>2015 Apr 17
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
@@ -146,7 +146,7 @@ ImageJ has benefitted from many hackathons over the years:
 | style="white-space: nowrap" | 2015 June 29 -<br>2015 July 3
 |[https://www.mdc-berlin.de/13800178/en/bimsb BIMSB/MDC]<br>Berlin, Germany
 |[https://github.com/StephanPreibisch Stephan Preibisch], [https://github.com/dietzc Christian Dietz], [https://github.com/emmenlau Mario Emmenlauer], [https://github.com/StephanJanosch Stephan Janosch]
-|Parallelization of [[Multiview-Reconstruction]] and integration with ImageJOPS & KNIME
+|Parallelization of [[Multiview-Reconstruction]] and integration with ImageJ Ops & KNIME
 |- valign="top"
 | style="white-space: nowrap" | 2015 Jul 27 -<br>2015 Jul 31
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
