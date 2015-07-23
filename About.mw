@@ -54,7 +54,7 @@ ImageJ2 is also a collection of reusable software libraries built on the [http:/
 The following software component libraries form the core of ImageJ2:
 * [[ImageJ Common]] - The core image data model, using ImgLib2.
 * [[ImageJ OPS]] - An extensible framework for reusable image processing algorithms.
-* ImageJ [[Updater]] - A mechanism to update individual plugins and libraries within ImageJ.
+* [[ImageJ Updater]] - A mechanism to update individual plugins and libraries within ImageJ.
 * [[ImageJ Legacy]] - Provides complete backwards compatibility with ImageJ 1.x.
 * [[SciJava Common]] - The core frameworks for plugins, modules and the application itself.
 
