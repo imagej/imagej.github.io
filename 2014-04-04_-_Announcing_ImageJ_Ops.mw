@@ -15,7 +15,7 @@ When it comes to ease of use, generality and performance in computer programs, t
 
 == Getting started ==
 
-An OP is just an ImageJ module, but with some additional structure and requirements: you can think of an op as a function which takes a list of typed inputs, produces a list of typed outputs, and has no side effects. There are over 80 ops implemented so far, with {{GitHub|org=imagej|repo=imagej-ops|tag=ij-ops-0.1.0|path=operations.txt|label=many more to come}}; see this ImageJ tutorial to learn about some of them:
+An op is just an ImageJ module, but with some additional structure and requirements: you can think of an op as a function which takes a list of typed inputs, produces a list of typed outputs, and has no side effects. There are over 80 ops implemented so far, with {{GitHub|org=imagej|repo=imagej-ops|tag=ij-ops-0.1.0|path=operations.txt|label=many more to come}}; see this ImageJ tutorial to learn about some of them:
 
 [https://github.com/imagej/imagej-tutorials/tree/master/using-ops/src/main/java/UsingOps.java Using Ops]
 
