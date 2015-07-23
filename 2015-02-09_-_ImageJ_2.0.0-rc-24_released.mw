@@ -11,7 +11,7 @@ First pass to reduce [[SCIFIO]] overhead:
 * SCIFIO configurations use more sensible defaults, favoring performance.
 * For some highly unscientific benchmarks of performance, see right.
 
-First wave of improvements from 2015-01 Konstanz [[ImageJ-OPS]] [[hackathon]]
+First wave of improvements from 2015-01 Konstanz [[ImageJ Ops]] [[hackathon]]
 * Better op code generation layer via Groovy parser ([https://github.com/imagej/imagej-ops/commit/c51ce639261c78922ff461267fd6e0e4522e85eb c51ce639]).
 * Divide built-in op implementations into namespaces ([https://github.com/imagej/imagej-ops/commit/4e4a9e2fc55736dfa96316f77c575bd46afda59f 4e4a9e2f]).
 * Improve the project's build time ([https://github.com/imagej/imagej-ops/commit/1c9d1d05f418c1019a7e8e0674bfa6ee53365752 1c9d1d05]).
