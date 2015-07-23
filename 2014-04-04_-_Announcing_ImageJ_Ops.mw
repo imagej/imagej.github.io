@@ -1,4 +1,4 @@
-Today, the [[ImageJ]] and [[KNIME]] teams are pleased to announce {{GitHub|org=imagej|repo=imagej-ops|label=ImageJ OPS}}: a framework for reusable image processing operations. This library is the direct result of an extremely successful hackathon hosted by Michael Berthold's team at the University of Konstanz, Germany.
+Today, the [[ImageJ]] and [[KNIME]] teams are pleased to announce {{GitHub|org=imagej|repo=imagej-ops|label=ImageJ Ops}}: a framework for reusable image processing operations. This library is the direct result of an extremely successful hackathon hosted by Michael Berthold's team at the University of Konstanz, Germany.
 
 [[Image:Konstanz-hackathon.jpg|320px|thumb|right|Happy hackers: 502 commits in five days!]]
 == Motivation ==
@@ -9,15 +9,15 @@ But still notably missing was the next crucial layer: a framework for ''image pr
 
 # '''Easy to use and extend.''' It is of paramount importance that there be a wealth of easy-to-use image processing operations (&quot;ops&quot;), as well as an easy framework for extending those ops in new directions. One of our observations from the workshops at the [http://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2012/start ImageJ Conference 2012] was that ImageJ2 still needs to do much more to realize such ease of use, both for users writing scripts, as well as for developers creating robust and reusable image processing algorithms.
 # '''Powerful and general.''' An op should be able to consist of any number of typed input and output parameters, operating on arbitrary data structures, including images of N dimensions stored in a myriad of different ways: as files on disk, programmatically generated in memory, or in remote databases. Using the powerful [[ImgLib2]] library achieves this ambitious goal.
-# '''Very fast.''' Even though ImgLib2 is vastly more general than ImageJ 1.x's data model, that generality should not come at the expense of performance. Otherwise, users must pay a time tax to do the same things they could already do in ImageJ 1.x. The ImageJ OPS framework needs to provide a means to override ''any'' general-but-slow op with a faster-but-more-specific alternative, fully transparently to the user.
+# '''Very fast.''' Even though ImgLib2 is vastly more general than ImageJ 1.x's data model, that generality should not come at the expense of performance. Otherwise, users must pay a time tax to do the same things they could already do in ImageJ 1.x. The ImageJ Ops framework needs to provide a means to override ''any'' general-but-slow op with a faster-but-more-specific alternative, fully transparently to the user.
 
-When it comes to ease of use, generality and performance in computer programs, the usual rule of thumb is “pick two.” Yet we are happy to say that we believe OPS strikes a favorable balance between all three criteria.
+When it comes to ease of use, generality and performance in computer programs, the usual rule of thumb is “pick two.” Yet we are happy to say that we believe Ops strikes a favorable balance between all three criteria.
 
 == Getting started ==
 
 An OP is just an ImageJ module, but with some additional structure and requirements: you can think of an op as a function which takes a list of typed inputs, produces a list of typed outputs, and has no side effects. There are over 80 ops implemented so far, with {{GitHub|org=imagej|repo=imagej-ops|tag=ij-ops-0.1.0|path=operations.txt|label=many more to come}}; see this ImageJ tutorial to learn about some of them:
 
-[https://github.com/imagej/imagej-tutorials/tree/master/using-ops/src/main/java/UsingOps.java Using OPS]
+[https://github.com/imagej/imagej-tutorials/tree/master/using-ops/src/main/java/UsingOps.java Using Ops]
 
 And for algorithm developers, there is another tutorial briefly demonstrating how it works to create a new one:
 
@@ -25,11 +25,11 @@ And for algorithm developers, there is another tutorial briefly demonstrating ho
 
 == Caveats ==
 
-Today marks the OPS project's very first beta release: [https://github.com/imagej/imagej-ops/tree/ij-ops-0.1.0 0.1.0]. As such, it is still under heavy development, with aspects of the design still subject to change. That said, we are quite confident in the core API, and do not expect it to change too much. What is more likely to change are the specific individual ops, how they work, which ones are available, and other finer details which will become apparent as the library continues to be developed and used.
+Today marks the Ops project's very first beta release: [https://github.com/imagej/imagej-ops/tree/ij-ops-0.1.0 0.1.0]. As such, it is still under heavy development, with aspects of the design still subject to change. That said, we are quite confident in the core API, and do not expect it to change too much. What is more likely to change are the specific individual ops, how they work, which ones are available, and other finer details which will become apparent as the library continues to be developed and used.
 
 == Conclusion ==
 
-We sincerely hope that the OPS project will make it much easier for various software tools (e.g.: [[KNIME]], CellProfiler, OMERO, Alida, Icy, Vaa3D and of course ImageJ itself) to provide drop-in support for ImageJ's image processing operations, allowing scientists to truly &quot;write once, run anywhere&quot; and share with the world!
+We sincerely hope that the Ops project will make it much easier for various software tools (e.g.: [[KNIME]], CellProfiler, OMERO, Alida, Icy, Vaa3D and of course ImageJ itself) to provide drop-in support for ImageJ's image processing operations, allowing scientists to truly &quot;write once, run anywhere&quot; and share with the world!
 
 <br/>
 -----
