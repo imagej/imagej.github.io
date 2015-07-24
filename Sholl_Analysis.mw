@@ -645,10 +645,13 @@ Releases notes are available on {{GitHub|org=tferr|repo=ASA|path=Notes.md#releas
 * Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. ('''2014'''), [http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html Neuronal morphometry directly from bitmap images], ''Nature Methods'' 11(10): 982–984
 
 == Citations ==
-While in development, ''Sholl Analysis'' has been cited by [https://scholar.google.ca/scholar?hl=en&as_sdt=1,5&as_vis=1&q=plugin+imagej+OR+fiji+%22Sholl+Analysis%22 several papers]. Its [[#Publication|publication]] has been cited by the following manuscripts:
+While in development (2005-2014), and prior to its [[#Publication|publication]], ''Sholl Analysis'' has been cited by [https://scholar.google.ca/scholar?as_q=&as_epq=Sholl+Analysis&as_oq=imagej+fiji&as_eq=%22Simple+Neurite+Tracer%22&as_occt=any&as_sauthors=&as_publication=&as_ylo=2005&as_yhi=2014&btnG=&hl=en&as_sdt=1%2C5&as_vis=1 several manuscripts]. The manuscripts citing its 2014 [[#Publication|publication]] can be retrieved using [https://scholar.google.ca/scholar?cites=15441574333602897335&as_sdt=2005&sciodt=1,5&hl=en Scholar] or [http://www.ncbi.nlm.nih.gov/pmc/articles/pmid/25264773/citedby/?tool=pubmed PubMed]. Below is a list of publications from authors that have made the developer aware how the program contributed to their research.
 
-* Jason P. Stankoa, Michael R. Easterlingb, Suzanne E. Fentona. ('''2014'''), [http://dx.doi.org/10.1016/j.reprotox.2014.11.004 Application of Sholl analysis to quantify changes in growth and development in rat mammary gland whole mounts], Reproductive Toxicology, doi:10.1016/j.reprotox.2014.11.004
+* Stanko JP, Easterling MR, Fenton SE. Application of Sholl analysis to quantify changes in growth and development in rat mammary gland whole mounts. Reprod Toxicol. 2015 Jul;54:129-35 [http://www.ncbi.nlm.nih.gov/pubmed/25463529 PMID 25463529]
 
+* Kroner A, Greenhalgh AD, Zarruk JG, Passos Dos Santos R, Gaestel M, David S. TNF and increased intracellular iron alter macrophage polarization to a detrimental M1 phenotype in the injured spinal cord. Neuron. 2014 Sep 3;83(5):1098-116 [http://www.ncbi.nlm.nih.gov/pubmed/25132469 PMID 25132469]
+
+{{ambox | text = Please append your work here, if the plugin has been useful to your work.}}
 
 == References ==
 <references >
