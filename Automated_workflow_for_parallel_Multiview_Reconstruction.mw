@@ -10,6 +10,28 @@
 | website                = 
 }}
 
+== Cluster ==
+
+Every cluster is different both in terms of the used hardware and the software running on it, particularly the scheduling system. Here we use a cluster computer at the MPI-CBG that consists of '''44''' nodes each with '''12''' Intel Xeon E5-2640 cores running @ 2.50 GHz and enjoying '''128GB''' of memory. The cluster nodes have access to 200TB of data storage provided by a dedicated Lustre Server architecture, suffice to say that it is optimised for high performance input/output (read/write) operations which is crucial for the SPIM data volumes.
+
+Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system running on the MPI-CBG cluster is LSF. The basic principles of job submission are the same across queuing systems, but the exact syntax will of course differ.
+
+== Multiview reconstruction ==
+
+The key change in the '''[[Multiview-Reconstruction|Multiview Reconstruction]]''' (MVR) pipeline is that all results are written into an XML. This poses new problems for cluster processing, because several concurrently running jobs need to update the same file. 
+
+Stephan Preibisch solved that problem by allowing to write one XML file per job (usually a timepoint) and then merging the job specific XMLs into one XML for the entire dataset. 
+
+In practice it means the following steps need to be executed:
+
+* Define XML dataset - creates one XML for the entire timelapse
+* Re-save data as HDF5 - converts data into HDF5 container optimised for fast access in [[BigDataViewer]] 
+* Run per time-point registrations - creates as many XMLs as there are timepoints
+* Merge XMLs - consolidates the per-timepoint XMLs back into a single XML
+
+Some new parameters are introduced and some old parameters change names. Therefore, use the master file described in this chapter to process with the MVR pipeline.
+
+
 == Pre-requisites ==
 
 === Supported datasets ===
@@ -42,6 +64,45 @@ Using ImageJ Opener (.tif):
     Multiple channels: YES (one file per channel)
     Multiple illumination directions: YES (one file per illumination direction) => not tested yet
     Multiple angles: YES (one file per angle)
+
+=== Command line ===
+
+It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate [[Linux_command_line_tutorial]] page that explains the bare essentials.
+
+=== Fiji on the cluster ===
+
+Change to a directory where you have sufficient privileges to install software.
+
+<source lang="bash">
+cd /sw/users/tomancak/packages
+</source>
+Download Fiji nightly build from [http://fiji.sc/Downloads Fiji's download page]. 
+<source lang="bash">
+wget http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-linux64.tar.gz
+</source>
+
+or
+
+<source lang="bash">
+curl -O http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-linux64.tar.gz
+</source>
+
+In all likelihood you will need the Linux (64 bit) version (unless you are of course using some sort of Windows/Mac cluster). Unzip and unpack the tarball
+
+<source lang="bash">
+gunzip fiji-linux64.tar.gz
+tar -xvf fiji-linux64.tar
+</source>
+
+Change to the newly created Fiji-app directory and [http://fiji.sc/Update_Fiji#Command-line_usage update] Fiji from the command line  
+
+<source lang="bash">
+./ImageJ-linux64 --update update
+</source>
+
+''Note: The output that follows may have some warnings and errors, but as long as it says somewhere Done: Checksummer and Done: Downloading... everything should be fine.''
+
+Done, you are ready to use Fiji on the cluster.
 
 === Setup of workflow ===
 
