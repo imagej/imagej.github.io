@@ -385,6 +385,40 @@ common: {
 
 === Submitting Jobs === 
 
+We recommend to execute snakemake within screen. 
+To execute snakemake you need to call snakemake, specify the number of jobs, the location of the data and to dispatch jobs to a cluster the information for the queuing system. Here is a list of commands and flags that are used for the snakemake workflow:
+
+Local back end:
+/path/to/snakemake/snakemake -j 1 -d /path/to/data/
+
+Flag for number of jobs run in parallel:
+-j <number of jobs>
+
+Flag for specifying data location:
+-d /path/to/data/
+
+Flag for dry run of snakemake:
+-n
+
+Force the execution of a rule:
+-R <name of rule>
+
+For DRMAA back end add: 
+--drmaa " -q {cluster.lsf_q} {cluster.lsf_extra}"
+
+For Lsf backend add:
+--cluster "bsub -q {cluster.lsf_q} {cluster.lsf_extra}”
+
+To specify the configuration script for the queuing system:
+--cluster-config ./cluster.json
+
+To save error and output files of cluster add:
+--drmaa " -q {cluster.lsf_q} {cluster.lsf_extra} -o test.out -e test.err"
+--cluster "bsub -q {cluster.lsf_q} {cluster.lsf_extra} -o test.out -e test.err“
+
+
+
+The commands to execute snakemake would then look like this:
 
 If DRMAA is supported on your cluster:
 
@@ -410,8 +444,7 @@ LSF
 /path/to/snakemake/snakemake -j2 -d /path/to/data/ --cluster-config ./cluster.json --cluster "bsub -q {cluster.lsf_q} {cluster.lsf_extra} -o test.out -e test.err"
 </source>
 
-Note:  the error and output of the cluster of all jobs are written into these files. 
-
+Note:  the error and output of the cluster of all jobs are written into these files.
 
 === Log files and supervision of the pipeline ===
 
