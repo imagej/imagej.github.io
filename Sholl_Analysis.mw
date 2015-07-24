@@ -3,7 +3,7 @@
 {{Infobox
 | software       = ImageJ/Fiji
 | name           = Sholl Analysis
-| author         = Tiago Ferreira, Tom Maddock (v1.0.0)
+| author         = [[User:Tiago|Tiago Ferreira]], Tom Maddock (v1.0.0)
 | maintainer     = [[User:Tiago|Tiago Ferreira]]
 | source         = {{GitHub|org=tferr|repo=ASA}}
 | filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.4.5.jar Sholl_Analysis.jar]
@@ -35,7 +35,7 @@ The major advantages of this plugin over other implementations are:
 * It allows [[#Batch Processing|batch processing]]
 
 == Usage ==
-The plugin requires a binary image or a segmented grayscale image containing a single neuron.
+The plugin requires a binary image or a segmented grayscale image (2D or 3D) containing a single neuron.
 
 # Segment the neuronal arbor using <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> (shortcut: <span style="display:inline-block;">{{key press|Shift|T}} </span>).
 # Select the center of analysis with the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span>. Alternatively, make a straight line (<span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>) from the focus of the arbor to its most distal point. This will automatically set both the center and [[#EndRadius|Ending radius]].
