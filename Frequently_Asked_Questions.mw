@@ -83,7 +83,7 @@ Install the [http://java.com/ Java 8 JRE] or [http://www.oracle.com/technetwork/
 
 === On Windows ===
 
-Install Java 7, and delete or rename the <code>ImageJ.app\java</code> and/or <code>ImageJ.app\jre</code> folders, if they exist.
+Install Java 7, and delete or rename the <code>ImageJ.app\java</code> and/or <code>ImageJ.app\jre</code> folders, if they exist. If this does not result in Fiji using the expected Java version, check the Environment Variables (Control Panel > System and Security > System > Advanced Settings > Advanced > Environment Variables) for the variable "JAVA_HOME".  If it exists, change its value to the desired jdk or jre (for instance: "C:\Program Files\Java\jdk1.8.0_51").
 
 === On OS X ===
 
