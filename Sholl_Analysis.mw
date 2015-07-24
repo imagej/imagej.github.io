@@ -451,7 +451,7 @@ Note that the IJM built-in [http://imagej.nih.gov/ij/developer/macro/functions.h
 :Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run <span style="border-bottom:1px dotted #ccc;">Image▷ Show Info...</span> (shortcut: {{key press|I}} ) to know more about this cell type.
 
 ;Help▷ About Plugins▷ About Sholl Analysis...
-:Retrieves information about the plugin version and a link to its Git source code {{GitHub|org=tferr|repo=ASA|label=repository}}.
+:Retrieves information about the plugin version and a link to its Git source code {{GitHub|org=tferr|repo=ASA|label=repository}}  and its  [http://tferr.github.io/ASA/apidocs/ API documentation] (since v3.4.6).
 
 == FAQ ==
 '''General'''
