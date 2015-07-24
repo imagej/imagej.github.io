@@ -5,7 +5,7 @@
 | maintainer     = [[User:Tiago|Tiago Ferreira]]
 | source         = {{GitHub|org=tferr|repo=Scripts}}
 | released       = June 2014
-| latest version = '''1.1.3 April 2015''' ({{GitHub|org=tferr|repo=Scripts/releases|label=released versions}})
+| latest version = '''1.1.5 July 2015''' ({{GitHub|org=tferr|repo=Scripts/releases|label=released versions}})
 | category       = [[:Category:Analysis|Analysis]], [[:Category:Image annotation|Annotation]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Scripting|Scripting]]
 }}{{TOC right}}
 '''BAR''': A collection of '''B'''roadly '''A'''pplicable '''R'''outines.
@@ -128,7 +128,10 @@ BAR contains a directory, ''plugins/Scripts/BAR/Snippets/'', containing  multi-l
 ;New Snippet: A java plugin that speeds up the creation of new scripts, pre-configured to use [[#lib|BAR lib]].
 ;Reveal Snippets:Opens ''plugins/Scripts/BAR/Snippets/'' in the file browser of the operating system.
 ;Search BAR: Searches the contents of BAR files.
-
+{{Tip
+| id = API
+| tip = BAR provides several utility methods that simplify the creation of [[#Snippets|Snippets]] and [[#BAR_lib|BAR lib]] usage. These are documented in the [http://tferr.github.io/Scripts/apidocs/ BAR API], that can be accessed using {{bc|BAR|About BAR...}}. {{bc|About BAR...}} also provides links to several online resources including the [http://search.imagej.net ImageJ Search Portal], [http://javadoc.imagej.net ImageJ Javadocs], and the [https://github.com/tferr/Scripts#ij-bar GitHub documentation] of BAR.
+}}
 <span id="lib"></span>
 
 === BAR lib ===
@@ -139,7 +142,7 @@ Do you find yourself copy and pasting functions from one file to the other? Do y
 The idea is quite simple: Reusable functions and methods are written to a lib file that gets loaded at execution time so that it can be called by the running script. <span style="border-bottom:1px dotted #ccc;">BAR▷ Snippets▷ New Snippet...</span> exemplifies how to use these scripting add-ons. Here is a BeanShell example:
 <source lang="java">
 // Add BAR/lib to classpath
-addClassPath(bar.Utils.getBARDir());
+addClassPath(bar.Utils.getBARDir()); // See http://tferr.github.io/Scripts/apidocs/index.html?bar/Utils.html for details
 importCommands("lib/");
 // Load BARlib.bsh
 BARlib();
@@ -147,7 +150,7 @@ BARlib();
 lib = new BARlib();
 lib.confirmLoading();
 </source>
-And you should be greeted by a ''"BAR lib successfully loaded"'' message. Further details are provided on the {{GitHub|org=tferr|repo=Scripts|path=/lib#lib|label=GitHub lib page}}.
+Run it in the [[Script Editor]] ({{bc|File|New|Script...}}), and you should be greeted by a ''"BAR lib successfully loaded"'' message. Further details are provided on the {{GitHub|org=tferr|repo=Scripts|path=/lib#lib|label=GitHub lib page}} and on the documentation of the [http://tferr.github.io/Scripts/apidocs/index.html?bar/Utils.html bar.Utils] class.
 
 === Batch Processors ===
 Some of the scripts included in ''/BAR/Snippets/'' are scripts that apply a [[How_to_apply_a_common_operation_to_a_complete_directory|common operation to a directory]]. These
