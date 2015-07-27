@@ -85,6 +85,8 @@ Please see the [[Colocalization Analysis]] page for further discussion of precau
 
 7. Enable use multi-channel images as well as the current 2 images (one channel each) plus 1 mask image selection. Need to choose which images in the multi-channel images if there are more than 2.... or even which 2 channels and which mask images, if the multi-channel image contains 3 or more channels.  This avoids the user having to run split channels. Ease of use.
 
+8. Change channel naming convention in output  using (red) and  (green)  to use (Ch1) and (Ch2), since the images might not be red or green and anyway the actual colour is irrelevant. Where are the (red) and (green) strings added to the image channel names?
+
 == DONE ==
 1. implement test  and implement code to make sure autothreshold results are the same regardless of image channel order - CommutativityTest.java  in Coloc_2 plugin version 2.0.2? 
 
