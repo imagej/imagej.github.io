@@ -99,7 +99,7 @@ We need to think carefully about the correct or adequate spatial resolution in x
 
 === Colocalization Threshold ===
 
-<span style="color: red">Note: this plugin is no longer under active development and support. Use [[Coloc 2]] instead.</span>
+<span style="color: red">Note: this plugin is no longer under active development and support. Use [[Coloc 2]] instead, which does the same thing, only better.</span>
 
 <p>
 The [[Colocalization Threshold]] plugin performs several functions for you in one go. With the "green" and "red" stacks of the [http://fiji.sc/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif] dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [[#Why_scatter_plots.3F|Why scatter plots?]]), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do. 
