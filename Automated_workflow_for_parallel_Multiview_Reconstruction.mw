@@ -191,57 +191,61 @@ In the first part (common) of the yaml file the key parameters for the processin
 These parameters are usually dataset and user dependent.
 The second part contains the advanced and manual overrides for each processing step. These steps correspond to the rules in the snakefile.
 
-1. Software directories
 
-2. Processing switches
 
-    2.1. Switch between all channels contain beads and one channel of two contains beads
-    
-    2.2. Switch between fusion and deconvolution 
-    
-3. Define dataset
-    
-    3.1. General Settings
+1. Processing switches
 
-    3.2. Settings for .czi files
+    1.1. Switch between all channels contain beads and one channel of two contains beads
+     
+    1.2. Switch between fusion and deconvolution 
     
-    3.3 Settings for .tif datasets
+2. Define dataset
     
-4. Detection and registration
+    2.1. General Settings
+
+    2.2. Settings for .czi files
+    
+    2.3 Settings for .tif datasets
+    
+3. Detection and registration
 
 5. Timelapse registration
 
-6. Weighted-average fusion
+5. Weighted-average fusion
 
-7. Multiview deconvolution
+6. Multiview deconvolution
 
-    7.1. External transformation
+    6.1. External transformation
     
-    7.2. Deconvolution settings 
+    6.2. Deconvolution settings 
 
-8. Advanced settings 
+7. Software directories
 
-    8.1. define_xml_czi
+8. Fiji Resource settings
+
+9. Advanced settings 
+
+    9.1. define_xml_czi
     
-    8.2. define_xml_tif
+    9.2. define_xml_tif
     
-    8.3. resave_hdf5
+    9.3. resave_hdf5
     
-    8.4. registration
+    9.4. registration
     
-    8.5. xml_merge
+    9.5. xml_merge
     
-    8.6. timelapse
+    9.6. timelapse
     
-    8.7. dublicate_transformations
+    9.7. dublicate_transformations
     
-    8.8. fusion
+    9.8. fusion
     
-    8.9. external_transform
+    9.9. external_transform
     
-    8.10. deconvolution
+    9.10. deconvolution
     
-    8.11. hdf5_output
+    9.11. hdf5_output
     
 
 <source lang="bash">
@@ -442,7 +446,6 @@ common: {
   detections_to_extract_psf_for_channel: '"beads"'
   }
 </source>
-
 
 === Submitting Jobs === 
 
