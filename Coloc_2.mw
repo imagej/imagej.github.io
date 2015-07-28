@@ -74,6 +74,8 @@ Please see the [[Colocalization Analysis]] page for further discussion of precau
 1. Add Tests and implementation for %Colocalization by intensity and pixels(or voxels) wrt each channel, as per the depreciated Colocalization Threshold plugin - force use of a ROI or mask, as only then do these measures make sense. Add docs for this. 
 
 2. numerical results and image stats are currently spewed into the IJ.log window. This is done separately from the way results are put into the simple results display window or the PDF output. So there three differently formatted results outputs with different stuff in them. Different ResultsHandler implementations like PDF or Simple can and do show a different selection of results. This is over complicated, so it should be made into one thing, that outputs the same numerical results and stats values, in the same order in all ResultsHander implementations ( GUI display and PDF output, and also the IJ.log. Can reuse the ValueResults class for all three by doing the same thing in each ". 
+2.1 Make IJ.log writing only happen in SimpleWindowDisplay - the default ResultHandler that's always used. 
+2.2 get the Coloc job name from the DataContainer image names, and also add the mark/ROI OD to the job name in case there are multiple ROIs.  
 
 3. Missing Feature: On the 2D histogram in the PDF, the regression line is absent
 
