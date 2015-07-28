@@ -1,13 +1,13 @@
 {{Infobox
 | name                   = Coloc 2 - Standardized, modular, Pixel Intensity Correlation over Space Based Colocalization analysis. 
 | software               = ImageJ - Fiji - ImgLib
-| author                 = Daniel J White, Tom Kazimiers, Johannes Schindelin
-| maintainer             = [mailto:white_at_mpi-cbg_dot_de Daniel White]
+| author                 = Daniel J. White, Tom Kazimiers, Johannes Schindelin
+| maintainer             = [mailto:dan_at_chalkie_dot_org_dot_uk Daniel J. White]
 | filename               = Colocalisation_Analysis.jar
 | source                 = {{GitHub|org=fiji|repo=Colocalisation_Analysis}}
-| latest version         = Dec 2011
+| latest version         = 2014
 | website                = Fiji
-| status                 = Beta. Under development, but stable enough for real work. 
+| status                 = Beta. Under development, but stable enough for real work. Refinements to GUI and output under development.
 }}
 
 = What is Coloc 2 =
