@@ -93,6 +93,10 @@ Please see the [[Colocalization Analysis]] page for further discussion of precau
 
 11. Running as macro command in a loop, need to use macro commands to save the IJ.log window results, then clear the log window before the next set of results are sent there. Add words to documentation to explain that.
 
+12. trivial bug: if 2D histogram regression finds a y intercept that is below zero it gives the too high warning "Warning! y-intercept high - The absolute y-intercept of the auto threshold regression line is high.
+Maybe you should use a ROI, maybe do a background subtraction in both channels"
+So should change warning text to too high or too low depending on if its positive or negative.
+
 == DONE ==
 1. implement test  and implement code to make sure autothreshold results are the same regardless of image channel order - CommutativityTest.java  in Coloc_2 plugin version 2.0.2? 
 
