@@ -76,6 +76,7 @@ Please see the [[Colocalization Analysis]] page for further discussion of precau
 ## Make IJ.log writing only happen once and only in SimpleWindowDisplay - the default ResultHandler that's always used. 
 ## get the Coloc job name from the DataContainer image names, and also add the mark/ROI OD to the job name in case there are multiple ROIs.  
 # Missing Feature: On the 2D histogram in the PDF, the regression line is absent
+# Missing Feature: On the 2D histograms, label each channel, so we know which is x and which y just by looking. 
 # Missing Feature: auto threshold results lines are missing from the 2D histogram in the simple display results GUI and the PDF.
 # implement flags in GUI to turn on and off desired output values??? Or does this break the idea of having a standardized output? Perhaps instead just make sure the IJ.log output is easily parse-able by humans and machines.
 # Bug: Large images don't fit in results display gui, and there are no scroll bars.
