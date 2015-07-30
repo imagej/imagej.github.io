@@ -153,7 +153,7 @@ In images that have no empty regions, like tissue samples, it might then be a us
          
            </ol>
 
-==== Colocalization Test ====
+=== Colocalization Test ===
 
 <span style="color: red">Note: This plugin is no longer actively developed or supported. Use [[Coloc 2]] instead, which does the same thing, only more correctly, and as described in the original publication by Costes, instead of making a nasty assumption and shortcut.</span>
 
