@@ -28,9 +28,9 @@ Far too often, composite/merge images of red and green channels are considered s
 
 [[Image:SpiralsRGY.png|512px|center]]
 
-Most people might think that the image contains 4 distinct colours prominent spirals are in shades of red and green, with yellow-green and yellow spirals in between, but the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling File>Open Samples>[[Spirals (Macro)]] in Fiji.
+Most people might think that the image contains 4 distinct colours: 2 sets of thin spirals are in dark red and dark green, and 2 thick prominent spirals of yellow-green and yellow. However, the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling File>Open Samples>[[Spirals (Macro)]] in Fiji.
 
-So... now, how do you feel about determining colocalization by looking for yellow blobs? Doesn't make much sense does it? You need to measure something, not simply subjectively "look at" a red/green colour merge image. 
+So... now, how do you feel about determining colocalization by looking for yellow blobs? Doesn't make much sense does it? We notice that the shades and hues of colours look different according to what other colours they are next to! So, you need to measure something from the pixel values, not simply subjectively "look at" a red/green colour merge image. 
 
 An even better reason to always look at scatterplots / 2D histograms / cytofluorograms is that they actually show the thing you are looking for and talking about - the correlation (or not) between the intensities of the 2 colour channels of the pixels over space.
 
