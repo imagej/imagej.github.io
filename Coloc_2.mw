@@ -22,7 +22,7 @@ Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs
 ** Don't treat this tool as a black box - try to understand what the strengths and limitations are and what the results could mean. 
 ***[[Media:Manders.pdf|Manders paper]]
 ***[[Media:Costes_etalColoc.pdf|Costes paper]]
-***[[Media:Li.pdf|Li paper]]
+***[[Media:LietAlColoc.pdf|Li paper]]
 * Open images to analyze. 
 ** You need a 2 color channel image. If the image has more than 2 channels, identify the two you want to analyze with each other, then split the channels into separate images (Image- Color - Split Channels)
 * You probably want to only analyze only some region of interest (ROI), there are 2 ways to do that:
