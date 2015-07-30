@@ -1,0 +1,1 @@
+from tony colling site , a nice graphice showing how thresholds split the scatter plot into 4 areas, which are used to calculate different measurement. from http://www.uhnresearch.ca/facilities/wcif/imagej/colour27.jpg
