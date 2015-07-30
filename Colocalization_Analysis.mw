@@ -34,7 +34,10 @@ So... now, how do you feel about determining colocalization by looking for yello
 
 An even better reason to always look at scatterplots / 2D histograms / cytofluorograms is that they actually show the thing you are looking for and talking about - the correlation (or not) between the intensities of the 2 colour channels of the pixels over space.
 
-[[Image:ColocQuadrants.jpg|center]]
+[[Ch1coloc.gif]]
+[[Ch2coloc.jpg]]
+[[Scatterplotcoloc.jpg]]
+[[Image:ColocQuadrants.jpg]] 
 
 In the scatterplot or 2D Histogram (Thanks Tony Collins for this nice figure) the two intensity values for each pixel or voxel are plotted against each other, and the brighter the colour, the more pixels or voxel have those two intensity values for their two colour channels. Here we see if there is correlation immediately by eye, in the presence of a cloud of information in the middle of the 2D histogram. We can fit that cloud with a linear regression and measure correlation coefficients.
 
