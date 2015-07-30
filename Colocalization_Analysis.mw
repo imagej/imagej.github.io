@@ -26,7 +26,7 @@ The [https://en.wikipedia.org/wiki/Pauli_exclusion_principle Pauli exclusion pri
 
 Far too often, composite/merge images of red and green channels are considered sufficient to demonstrate colocalisation. This is plain wrong. The problems with red/green merge images for colour-blind people aside, there is another very good reason to require scatter plots: the perception of human eyes and brain can be fooled very easily.  Just have a look at this image:
 
-[[Image:SpiralsRGY.png|256px|center]]
+[[Image:SpiralsRGY.png|512px|center]]
 
 Most people might think that the image contains 4 distinct colours prominent spirals are in shades of red and green, with yellow-green and yellow spirals in between, but the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling File>Open Samples>[[Spirals (Macro)]] in Fiji.
 
