@@ -18,9 +18,14 @@ Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs
 
 = How to use Coloc 2 =
 
+* Read the original papers describing the analysis you are about to perform.
+** Don't treat this tool as a black box - try to understand what the strengths and limitations are and what the results could mean. 
+***[[Media:Manders.pdf|Manders paper]]
+***[[Media:Costes_etalColoc.pdf|Costes paper]]
+***[[Media:Li.pdf|Li paper]]
 * Open images to analyze. 
 ** You need a 2 color channel image. If the image has more than 2 channels, identify the two you want to analyze with each other, then split the channels into separate images (Image- Color - Split Channels)
-* If you want to analyze only some region of interest (ROI), there are 2 ways to do that:
+* You probably want to only analyze only some region of interest (ROI), there are 2 ways to do that:
 ** Select a region of interest with one of the ImageJ selection tools, in one of the images. 
 *** If the image is a z stack, then the ROI applies in all "slices" of the stack. 
 **You can have a third "binary mask" image, with the same x,y,z dimensions as the 2 images to be analyzed:
@@ -30,18 +35,18 @@ Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs
 ** or use the command finder: press L then start typing Coloc, then choose the plugin with the arrow keys and hit enter, or double mouse click it to launch the plugin. 
 * In the plugin's graphical user interface (GUI) choose the 2 images you want to analyze in the first 2 drop down lists.
 ** Select the images according to which you want to be channel 1 and which to be channel 2. 
-** In the third drop down list selection, select the image/channel you want to use that has the correct ROI
-*** or you can choose a mask image - it must have the same xyz dimensions (number of pixels and slices) as the other 2 images. 
+** In the third drop down list selection, select the image/channel you want to use that has the correct ROI or mask image
+*** remember: the mask image - it must have the same xyz dimensions (number of pixels and slices) as the other 2 images. 
 * Choose which "Algorithms" are run and which statistics you wish to calculate, and if you want to save the "standardized" PDF result file, when the OK button is pressed.
 ** Numerical results and image names are dumped into the ImageJ Log window as comma separated values, so you can copy paste, or save the log window contents, to then import them into whatever statistical package or spreadsheet you will need to analyse the results in. 
 ** Turn the options on and off by clicking the selection button at the left of the Algorithm description
 ** Also choose the approximate size of the point spread function (PSF) in your images, and the number of iterations to run the Costes statistical significance test (We suggest a large number... the larger the number the longer the analysis will take. Do, at the very very least, 10 iterations (100 would be better).
 *** You should know approximately how big the PSF is (in pixels) in your images. 
-**** If you dont, go back and read about what it is and why it's important in colocalization analysis (for instance read the [[Media:Costes_etalColoc.pdf|Costes paper]] )
-**** This size determines what size of image chunks are shuffled in the randomization process. PSF sized image pieces make physical sense, as that's the size of the smallest objects in the image. 
+**** If you don't, go back and read about: What is the PSF and why it's important in colocalization analysis (for instance read the [[Media:Costes_etalColoc.pdf|Costes paper]] )
+**** This size determines what size of image chunks are shuffled in the randomization process. PSF sized image pieces make physical sense, as that's the size of the smallest features visible in the image. 
 * Click OK to run the analysis. 
-** You will be asked if you want to save the results as a PDF file (if the Show "save PDF" dialog button was checked. So tell it where to save the PDF. This is standard output format, so you can compare with your friend,  same vs. same.
-*** Feel free to tell us what things you think should be included in this standardized PDF output file.
+** You will be asked if you want to save the results as a PDF file (if the "Show Save PDF dialog" button was checked. So tell it where to save the PDF. This is standard output format, so you can compare with your friends,  same vs. same.
+*** Feel free to tell us what things you think should be included in this standardized PDF output file and how it should be formatted.
 
 = Pitfalls of the Manders and Costes methods =
 
