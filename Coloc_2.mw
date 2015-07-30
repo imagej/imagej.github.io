@@ -20,6 +20,7 @@ Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs
 
 * Read the original papers describing the analysis you are about to perform.
 ** Don't treat this tool as a black box - try to understand what the strengths and limitations are and what the results could mean. 
+***[http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient Pearson]
 ***[[Media:Manders.pdf|Manders paper]]
 ***[[Media:Costes_etalColoc.pdf|Costes paper]]
 ***[[Media:LietAlColoc.pdf|Li paper]]
