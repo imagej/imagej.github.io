@@ -36,6 +36,10 @@ An even better reason to always look at scatterplots / 2D histograms / cytofluor
 
 [[Image:ColocQuadrants.jpg|center]]
 
+In the scatterplot or 2D Histogram (Thanks Tony Collins for this nice figure) the two intensity values for each pixel or voxel are plotted against each other, and the brighter the colour, the more pixels or voxel have those two intensity values for their two colour channels. Here we see if there is correlation immediately by eye, in the presence of a cloud of information in the middle of the 2D histogram. We can fit that cloud with a linear regression and measure correlation coefficients.
+
+After setting thresholds in both colour channels, we see the scatterplot or 2D Histogram is split into 4 areas, quadrants. The contents of each can be used to calculate different colcoalization results.
+
 == A sample dataset ==
 
 Let's open a sample data set that we know should have very good colocalization because the 2 subunits of a dimeric protein are stained with green and red dyes respectively. The methods of Pearson, Manders, Costes and Li should work very well for this sample, but maybe we can see some problems with the data? Maybe we can decide if the data is suitable for this analysis or not? 
