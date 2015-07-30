@@ -5,7 +5,7 @@
 | maintainer             = [mailto:dan_at_chalkie_dot_org_dot_uk Daniel J. White]
 | filename               = Colocalisation_Analysis.jar
 | source                 = {{GitHub|org=fiji|repo=Colocalisation_Analysis}}
-| latest version         = 2014
+| latest version         = 26 Feb 2015
 | website                = Fiji
 | status                 = Beta. Under development, but stable enough for real work. Refinements to GUI and output under development.
 }}
