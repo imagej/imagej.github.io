@@ -18,5 +18,7 @@ intensity of all identified spots in a frame, and an estimate of the background 
 be automatically copied to the System Clipboard.  This really is a simple plugin meant to facilitate the work-flow
 of certain experiments in the lab.
 
+[[File:SpotCounter.jpg]]   [[File:SpotCounterDialog.jpg]]  [[File:SpotCounterResults.gif]]
+
 [[Category:Particle_analysis]]
 [[Category:Plugins]]
