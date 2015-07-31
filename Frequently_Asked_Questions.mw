@@ -196,6 +196,8 @@ Otherwise, you can drag 'n drop the .jar files onto the ImageJ window, or use ''
 
 Downgrading is generally not recommended as a longterm solution, but can be handy to avoid new bugs that crop up.
 
+''If you need to downgrade to avoid a critical bug, please [[Bugs|report that bug]] to the developers so that it can be fixed in a future version!''
+
 * You can change the version of [[ImageJ 1.x]] used via the Help > Update ImageJ... menu item. This ''only'' changes the version of ImageJ 1.x—not all ImageJ components, [[plugins]], etc.
 * You can [[#How do I launch ImageJ with a different version of Java?|switch to a different version of Java]].
 * You can [[Downloads#Fiji|download a Fiji Life-Line version]].
