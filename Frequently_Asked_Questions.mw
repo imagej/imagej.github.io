@@ -202,6 +202,8 @@ Downgrading is generally not recommended as a longterm solution, but can be hand
 * You can [[#How do I launch ImageJ with a different version of Java?|switch to a different version of Java]].
 * You can [[Downloads#Fiji|download a Fiji Life-Line version]].
 
+Lastly, if you have not yet upgraded, and have a currently working configuration, you can make a backup copy of your ImageJ folder before upgrading. Then if the upgrade has undesirable consequences, switch back to the old copy.
+
 == My plugin runs fine in the [[Script Editor]], but it does not show up in the menus when I install it. What's wrong? ==
 
 To be picked up as a plugin, the ''.jar'''s file name must contain an underscore, and it either needs to contain an appropriate ''plugins.config'' file or the class name needs to contain an underscore, too.
