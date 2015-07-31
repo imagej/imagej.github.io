@@ -23,7 +23,10 @@ Other methods include ICCS (image cross correlation spectroscopy) and a derivati
 
 This cookbook does not cover object-based overlap analysis, since it requires segmenting the image into objects and background, and that is a whole branch of image processing in itself. See the [http://imagej.net/plugins/track/jacop.html JACoP imageJ plugin] for object based methods.
 
-The [https://en.wikipedia.org/wiki/Pauli_exclusion_principle Pauli exclusion principle] states that two particles can not have the same quantum numbers so they can not be in the same place. Actually, nothing is "really" colocalised. We must colocalise at some spatial scale. At the other extreme, a universe of one voxel (not cubic of course) is completely colocalised. So we are, in fact, between the two extremes. You can find more details about this issue in the following sections.
+
+==== Do state the spatial resolution explicitly! ====
+
+The [https://en.wikipedia.org/wiki/Pauli_exclusion_principle Pauli exclusion principle] states that two particles can not have the same quantum numbers so they can not be in the same place. So, actually nothing is "really" colocalised. At the other extreme, a universe of one voxel (not cubic of course) is completely colocalised - everything is inside it. Practically, our situation lies between the two extremes. We must colocalise at some defined and explicit spatial scale: In our case the optical resolution or image pixel spacing, whichever is the larger value in nm, micrometers, mm, meters, km,  etc. The colocalization measurement we make only means anything in relation to the spatial scale we are working at, so it needs to be explicitly stated. You can find more details about optical resolution and image pixel spacing in the following sections.
 
 == Why scatter plots instead of colour merge images? ==
 
