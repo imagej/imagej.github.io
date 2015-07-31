@@ -192,6 +192,14 @@ If the plugin is published on an [[Update Sites|ImageJ update site]], you can ru
 
 Otherwise, you can drag 'n drop the .jar files onto the ImageJ window, or use ''Plugins>Install Plugin...'' with .jar, .class and .java files, or copy the plugins to ''ImageJ.app/plugins/'' and restart ImageJ. See the [[Installing 3rd party plugins|walk-through with screenshots]].
 
+== How do I downgrade ImageJ? ==
+
+Downgrading is generally not recommended as a longterm solution, but can be handy to avoid new bugs that crop up.
+
+* You can change the version of [[ImageJ 1.x]] used via the Help > Update ImageJ... menu item. This ''only'' changes the version of ImageJ 1.x—not all ImageJ components, [[plugins]], etc.
+* You can [[#How do I launch ImageJ with a different version of Java?|switch to a different version of Java]].
+* You can [[Downloads#Fiji|download a Fiji Life-Line version]].
+
 == My plugin runs fine in the [[Script Editor]], but it does not show up in the menus when I install it. What's wrong? ==
 
 To be picked up as a plugin, the ''.jar'''s file name must contain an underscore, and it either needs to contain an appropriate ''plugins.config'' file or the class name needs to contain an underscore, too.
