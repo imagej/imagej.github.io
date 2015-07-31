@@ -8,7 +8,7 @@
 | released               = 2015/07/30
 | latest version         = 2015/07/30
 | status                 = 
-| category               = [[:Category:Particle Analysis]]
+| category               = [[:Category:Particle_Analysis]]
 }}
 
 Simple ImageJ/Fiji plugin to count spots in image stacks.  The plugin detects local maxima by scanning the image
@@ -18,5 +18,5 @@ intensity of all identified spots in a frame, and an estimate of the background 
 be automatically copied to the System Clipboard.  This really is a simple plugin meant to facilitate the work-flow
 of certain experiments in the lab.
 
-[[Category:Particle Analysis]]
+[[Category:Particle_Analysis]]
 [[Category:Plugins]]
