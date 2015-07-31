@@ -8,13 +8,16 @@ Suppose you are given some images by a colleague, or have some images of your ow
 
 ==== Pixel intensity spatial correlation analysis ====
 
-There are two colocalization coefficients to express the fraction of colocalizing objects in each component of a dual-color image:
-# '''Pearson's correlation coefficient.''' Not sensitive to differences in signal intensities between the two components, but it is not unambiguous because of the strong influence of the ratio of the number of objects in the two components.
-# '''Manders coefficients.''' Proportional to the amount of fluorescence of the colocalizing objects in each component, which is dependent on the intensities of the signals. You can get more details in [[Media:Manders.pdf|Manders et al.]]
+Here just are two of many colocalization coefficients to express the intensity correlation of colocalizing objects in each component of a dual-color image:
+# '''Pearson's correlation coefficient.''' It is not sensitive to differences in mean signal intensities or range, or a zero offset between the two components. The result is +1 for perfect correlation, 0 for no correlation, and -1 for perfect anti-correlation. Noise makes the value closer to 0 than it should be. 
+# '''Manders split coefficients.''' Proportional to the amount of fluorescence of the colocalizing pixels or voxels in each colour channel. You can get more details in [[Media:Manders.pdf|Manders et al.]] Values range from 0 to 1, expressing the fraction of intensity in a channel that is located in pixels where there is above zero (or threshold) intensity in the other colour channel.
 
-These coefficients measure the significance of true colocalization. The significance test is derived to evaluate the probability that the measured value of r from the two colors is significantly greater than values of r that would be calculated if there was only random overlap. This test is performed by randomly scrambling the blocks of pixels (instead of individual pixels, because each pixel's intensity is correlated with its neighboring pixels) in one image, and then measuring the correlation of this image with the other (unscrambled) image. You can get more details in [[Media:Costes etalColoc.pdf|Costes et al.]]
+These coefficients measure the amount or degree of colocalization, or rather correlation and co-occurrence respectively (but should not be expressed as % values, because that is not how they are defined). But if there is nothing to compare them to, what do they mean? A statistical significance test was derived by Costses to evaluate the probability that the measured value of Pearson's correlation, r between the two colour channels is significantly greater than values of r that would be calculated if there was only random overlap of the same information. This test is performed by randomly scrambling the blocks of pixels (instead of individual pixels, because each pixel's intensity is correlated with its neighboring pixels) in one image, and then measuring the correlation of this image with the other (unscrambled) image. You can get more details in [[Media:Costes etalColoc.pdf|Costes et al.]] The result of this tests tell us if the Pearsons r and Manders' coefficient we measure are better than pure chance or not. 
 
-Other methods include ICCS (image cross correlation spectroscopy) and a derivative of that called PPI (protein proximity index. Maybe someone wants to add PPI to Coloc_2 plugin?  [[Media:Wu2010-crosscorrelationPPI_Coloc.pdf|original article here]]
+Other coefficients include ranked correlations such as Spearman and Kendal's Tau, %overlap of intensities or area (volume).
+Some others are described in the literature that have been used in publications, but that have been refuted as insensetive, such as the overalp coefficient from the Manders paper, which [[Media:Adler_et_al-2010-Cytometry_Part_A.pdf|J. Adler et al.]] showed to be not very useful compare to Pearson's r and Mander split coefficients. 
+
+Other methods include ICCS (image cross correlation spectroscopy) and a derivative of that called PPI (protein proximity index. Maybe someone wants to add PPI to the Coloc_2 plugin?  [[Media:Wu2010-crosscorrelationPPI_Coloc.pdf|original article here]]
 
 ==== Object-based overlap analysis ====
 
