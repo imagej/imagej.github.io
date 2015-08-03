@@ -57,3 +57,17 @@ Plugins > Macros > Install
 [[File:]]
 [[File:]]
 [[File:]]
+== Dataset Samples = 
+ONL
+INL
+
+== Version History ==
+
+v2.0: After a lot of mistakes and problems, each method now propose to generate an orientation map, which colors the image according to the local directionality.
+v1.2: Added a new analysis method based on local gradient orientation.
+v1.1: Added an option to export the histogram as a table.
+v1.0: First working commit with the Fourier method.
+
+== References ==
+
+[1] Liu. Scale space approach to directional analysis of images. Appl. Opt. (1991) vol. 30 (11) pp. 1369-1373
