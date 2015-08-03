@@ -18,21 +18,31 @@ __TOC__
 == Overview ==
 TUNEL Cell Counter is a custom-built and validated ImageJ macro that processes digital images from retinal TUNEL assay.<br> It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates TUNEL+ cells in these layers.
 
+== Download ==
+== TUNEL Cell Counter ==
+=== Segmentation ===
+=== Total Cells Quantitation ===
+=== TUNEL Cells Quantitation ===
 
-== Macro Features ==
-=== Output Variables ===
+== Macro Output ==
+=== Qualitative ===
+[File:]
+
+=== Quantitative ===
 When executed as a macro, the output variables are:
-*ONL Area (mm2)
-*ONL Total Cells (count)
-*ONL TUNEL+ Cells (count)
-*Ratio TUNEL+ Cells/ONL Area (count/mm2)
-*Percentage TUNEL+ Cells/ONL Total Cells (%)
+:'''Outer Nuclear Layer'''
+:*ONL Area (mm<sup>2</sup>)
+:*ONL Total Cells (count)
+:*ONL TUNEL+ Cells (count)
+:*Ratio TUNEL+ Cells/ONL Area (count/mm<sup>2</sup>)
+:*Percentage TUNEL+ Cells/ONL Total Cells (%)
 
-*INL Area (mm2)
-*INL Total Cells (count)
-*INL TUNEL+ Cells (count)
-*Ratio TUNEL+ Cells/INL Area (count/mm2)
-*Percentage TUNEL+ Cells/INL Total Cells (%)
+:'''Inner Nuclear Layer'''
+:*INL Area (mm<sup>2</sup>)
+:*INL Total Cells (count)
+:*INL TUNEL+ Cells (count)
+:*Ratio TUNEL+ Cells/INL Area (count/mm<sup>2</sup>)
+:*Percentage TUNEL+ Cells/INL Total Cells (%)
 
 
 == Before You Start ==
