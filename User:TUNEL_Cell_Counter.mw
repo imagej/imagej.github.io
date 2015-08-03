@@ -12,3 +12,30 @@
 | category               =[[:Category:Plugins|Plugins]]
 | website                = [https://github.com/DanielMaidana/TUNEL_Cell_Counter TUNEL Cell Counter at GitHub]
 }}
+
+== Description ==
+The TUNEL Cell Counter is a custom-built and validated ImageJ macro that processes digital images from retinal TUNEL assay.
+It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates TUNEL+ cells in these layers.
+
+== Before You Start ==
+=== Microscope Calibration ===
+=== Dataset Selection ===
+1. 
+
+
+== Macro Installation & Usage Manual ==
+
+== & Usage Manual ==
+
+== Installation & Manual ==
+Basic instructions are as follows:
+
+1. Install the downloaded .ijm file to ImageJ plugins.
+Plugins > Macros > Install
+
+
+[[File:]]
+[[File:]]
+[[File:]]
+[[File:]]
+[[File:]]
