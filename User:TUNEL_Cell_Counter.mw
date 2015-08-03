@@ -2,8 +2,8 @@
 | logo                   = [[Image:fiji-icon.png|96px]]
 | software               = Fiji
 | name                   = TUNEL Cell Counter
-| author                  = [[User:Daniel | Daniel E. Maidana, MD]]
-| maintainer           = Daniel E. Maidana ([mailto:Daniel_Maidana@meei.harvard.edu Daniel_Maidana@meei.harvard.edu])
+| author                  = [[User:Daniel E. Maidana| '''Daniel E. Maidana, M.D.''']] <br> [[https://connects.catalyst.harvard.edu/Profiles/display/Person/39774| '''Demetrios G. Vavvas, M.D., Ph.D.''']]
+| maintainer           = '''Daniel E. Maidana, M.D.''' <br> Angiogenesis Laboratory <br>Massachusetts Eye and Ear Infirmary <br> Harvard Medical School ([mailto:Daniel_Maidana@MEEI.HARVARD.EDU Daniel_Maidana@meei.harvard.edu])
 | filename              = [https://github.com/demisjohn/Microscope-Measurement-Tools TUNEL Cell Counter at GitHub]
 | source                 = {{GitHub|org=fiji|repo=Image_Expression_Parser}}
 | released              = August 8<sup>th</sup>, 2015
@@ -12,7 +12,7 @@
 | category               =[[:Category:Plugins|Plugins]]
 | website                = [https://github.com/DanielMaidana/TUNEL_Cell_Counter TUNEL Cell Counter at GitHub]
 }}<span style="color:#ffffff; font-size:9%">nanofiber diameter measurement, nanofiber diameter analysis, nanofiber diameter characterization, nanofiber diameter software, nanofiber diameter plugin, nanofiber diameter program, ImageJ nanofiber diameter, FIJI nanofiber diameter, automated nanofiber diameter, free, open source, radius</span><br>
-'''TUNEL Cell Counter''' is a free, open source plugin created for ImageJ 2 and FIJI, developed by Daniel E. Maidana, M.D. and Demetrios G. Vavvas, M.D., Ph.D. at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. TUNEL Cell Counter has been validated for retinal TUNEL assay quantitation in cryo-sections. TUNEL Cell Counter is able to analyze digital images obtained from fluorescent microscopes, segment the outer nuclear (ONL) and inner nuclear layer (INL), and count TUNEL+ cell in each layer. After analysis, TUNEL Cell Counter generates an array of outcome variables and a merged image with the segmented layers and quantitated cells, to control for macro performance. 
+'''TUNEL Cell Counter''' is a free, open source plugin created for ImageJ 2 and FIJI, developed by Daniel E. Maidana, M.D. and Demetrios G. Vavvas, M.D., Ph.D. at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. TUNEL Cell Counter has been validated for retinal TUNEL assay quantitation in cryo-sections. TUNEL Cell Counter is able to analyze digital images obtained from fluorescent microscopes, segment the outer nuclear (ONL) and inner nuclear layer (INL), and count TUNEL<sup>+</sup> cell in each layer. After analysis, TUNEL Cell Counter generates an array of outcome variables and a merged image with the segmented layers and quantitated cells, to control for macro performance. 
 __TOC__
 
 == Description ==
