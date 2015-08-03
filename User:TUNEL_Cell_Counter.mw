@@ -16,9 +16,17 @@
 __TOC__
 
 == Overview ==
-TUNEL Cell Counter is a custom-built and validated ImageJ macro that processes digital images from retinal TUNEL assay.<br> It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates TUNEL+ cells in these layers.
+TUNEL Cell Counter is a custom-built and validated ImageJ macro that processes digital images from retinal TUNEL assay. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates TUNEL+ cells in these layers.
 
-== Download ==
+== Download & Install ==
+=== TUNEL Cell Counter Macro ===
+Download and install the macro:<br>
+:Go to ''Plugins > Macros > Install'' and select the downloaded '''.ijm''' file.
+
+=== Dataset Samples === 
+The original ONL and INL image datasets used for validation purposes are available to download. We '''strongly''' recommend to download and revise these images in order to have an idea about acquisition and post-processing parameters.
+:*ONL: [http://www.example.com link title] 
+:*INL: [http://www.example.com link title]
 == TUNEL Cell Counter ==
 === Segmentation ===
 === Total Cells Quantitation ===
@@ -44,33 +52,19 @@ When executed as a macro, the output variables are:
 :*Ratio TUNEL+ Cells/INL Area (count/mm<sup>2</sup>)
 :*Percentage TUNEL+ Cells/INL Total Cells (%)
 
-
 == Before You Start ==
 === Microscope Calibration ===
 For purposes of
 === Dataset Selection ===
-1. 
 
 
-== Macro Installation & Usage Manual ==
-
-== & Usage Manual ==
-
-== Installation & Manual ==
-Basic instructions are as follows:
-
-1. Install the downloaded .ijm file to ImageJ plugins.
-Plugins > Macros > Install
+=== Limitations === 
+=== FAQs === 
+=== Future Development ===
+=== References ===
+=== External Links ===
 
 
-[[File:]]
-[[File:]]
-[[File:]]
-[[File:]]
-[[File:]]
-== Dataset Samples = 
-ONL
-INL
 
 == Version History ==
 
