@@ -1,0 +1,14 @@
+{{Infobox
+| logo                   = [[Image:fiji-icon.png|96px]]
+| software               = Fiji
+| name                   = TUNEL Cell Counter
+| author                  = [[User:Daniel | Daniel E. Maidana, MD]]
+| maintainer           = Daniel E. Maidana ([mailto:daniel.maidana@gmail.com daniel.maidana@gmail.com])
+| filename              = [https://github.com/demisjohn/Microscope-Measurement-Tools TUNEL Cell Counter at GitHub]
+| source                 = {{GitHub|org=fiji|repo=Image_Expression_Parser}}
+| released              = August 8<sup>th</sup>, 2015
+| latest version      = August 8<sup>th</sup>, 2015
+| status                  = v1.1
+| category               =[[:Category:Plugins|Plugins]]
+| website                = [https://github.com/DanielMaidana/TUNEL_Cell_Counter TUNEL Cell Counter at GitHub]
+}}
