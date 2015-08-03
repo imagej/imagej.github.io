@@ -69,41 +69,6 @@ Using ImageJ Opener (.tif):
 
 It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate [[Linux_command_line_tutorial]] page that explains the bare essentials.
 
-=== Fiji on the cluster ===
-
-Change to a directory where you have sufficient privileges to install software.
-
-<source lang="bash">
-cd /sw/users/tomancak/packages
-</source>
-Download Fiji nightly build from [http://fiji.sc/Downloads Fiji's download page]. 
-<source lang="bash">
-wget http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-linux64.tar.gz
-</source>
-
-or
-
-<source lang="bash">
-curl -O http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-linux64.tar.gz
-</source>
-
-In all likelihood you will need the Linux (64 bit) version (unless you are of course using some sort of Windows/Mac cluster). Unzip and unpack the tarball
-
-<source lang="bash">
-gunzip fiji-linux64.tar.gz
-tar -xvf fiji-linux64.tar
-</source>
-
-Change to the newly created Fiji-app directory and [http://fiji.sc/Update_Fiji#Command-line_usage update] Fiji from the command line  
-
-<source lang="bash">
-./ImageJ-linux64 --update update
-</source>
-
-''Note: The output that follows may have some warnings and errors, but as long as it says somewhere Done: Checksummer and Done: Downloading... everything should be fine.''
-
-Done, you are ready to use Fiji on the cluster.
-
 === Setup of workflow ===
 
 Clone the repository:
