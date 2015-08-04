@@ -1,4 +1,4 @@
-From Sunday, July 27, 2015 through Friday, July 31, 2015, [[User:Saalfeld|Stephan Saalfeld]] at HHMI Janelia in Ashburn, Virginia hosted [[LOCI]]'s [[User:Rueden|Curtis Rueden]] and [[User:Hinerm|Mark Hiner]] for a hackathon to unify [[SCIFIO]]/[[ImgLib2]] development efforts (with MPI-CBG's [[User:Pietzsch|Tobias Pietzsch]]), improve support for the Janelia KLB format (with Janelia's Burkhard Hoeckendorf), and improve the development tools available for [[Fiji]] developers.
+From Sunday, July 27, 2015 through Friday, July 31, 2015, [[User:Saalfeld|Stephan Saalfeld]] at HHMI Janelia in Ashburn, Virginia hosted [[LOCI]]'s [[User:Rueden|Curtis Rueden]] and [[User:Hinerm|Mark Hiner]] for a hackathon to unify [[SCIFIO]]/[[ImgLib2]] development efforts (with MPI-CBG's [[User:Pietzsch|Tobias Pietzsch]]), improve support for the [https://bitbucket.org/fernandoamat/keller-lab-block-filetype Janelia KLB format] (with Janelia's Burkhard Hoeckendorf), and improve the development tools available for [[Fiji]] developers.
 
 == Executive summary ==
  
