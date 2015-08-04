@@ -44,3 +44,8 @@ At first users have to choose on how they want to define the smoothing: via rela
 <li style="display: inline-block;">[[File:shape-smoothing-smoothed-object.png|thumb|none|300px|Smoothed object (4% of FDs retained)]]</li>
 <li style="display: inline-block;">[[File:shape-smoothing-smoothed-contour.png|thumb|none|300px|Smoothed contour (2% of FDs retained)]]</li>
 </ul></div>
+
+==Installation==
+You could simply use our update site "[http://fiji.sc/List_of_update_sites biomedgroup]" to install the ridge detection plugin.
+
+If you use ImageJ just copy the Shape_Smoothing.jar file in your plugins folder.
