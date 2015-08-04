@@ -40,3 +40,4 @@ At first users have to choose on how they want to define the smoothing: via rela
 
 ==Examples==
 [[File:shape-smoothing-original-image.png|300px|Original Image]]
+[[File:Shape-smoothing-smoothed-object.png|300px|Smoothed Object (4% of FDs retained)]]
