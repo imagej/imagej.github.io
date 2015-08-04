@@ -1,14 +1,16 @@
-<includeonly>[https://github.com/{{{1}}} {{#switch: {{{1}}}
+<includeonly>[https://github.com/{{{id}}} {{#switch: {{{id}}}
 | ctrueden = Curtis Rueden
 | hinerm = Mark Hiner
-| {{{1}}}
+| {{{id}}}
 }}]</includeonly>
 <noinclude>
 == Usage ==
-<pre>{{Dev | ctrueden}}</pre>
-{{Dev | ctrueden}}
-<pre>{{Dev | hinerm}}</pre>
-{{Dev | hinerm}}
-<pre>{{Dev | octocat}}</pre>
-{{Dev | octocat}}
+<pre>{{Dev | id=ctrueden}}</pre>
+{{Dev | id=ctrueden}}
+
+<pre>{{Dev | id=hinerm}}</pre>
+{{Dev | id=hinerm}}
+
+<pre>{{Dev | id=octocat}}</pre>
+{{Dev | id=octocat}}
 </noinclude>
