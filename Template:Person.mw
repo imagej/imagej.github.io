@@ -1,10 +1,14 @@
-<includeonly>{{#switch: {{{1}}}
-| a = one
-| b = two
-| c = three
-| other
+<includeonly>[https://github.com/{{{id}}} {{#switch: {{{id}}}
+| ctrueden | Curtis Rueden
+| hinerm | Mark Hiner
+| {{{id}}}
 }}</includeonly>
-* {{Dev | a}}
-* {{Dev | b}}
-* {{Dev | c}}
-* {{Dev | d}}
+
+<pre>{{Dev | id=ctrueden}}</pre>
+{{Dev | id=ctrueden}}
+
+<pre>{{Dev | id=hinerm}}</pre>
+{{Dev | id=hinerm}}
+
+<pre>{{Dev | id=octocat}}</pre>
+{{Dev | id=octocat}}
