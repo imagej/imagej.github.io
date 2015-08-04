@@ -33,3 +33,8 @@ From Sunday, July 27, 2015 through Friday, July 31, 2015, Stephan Saalfeld at HH
 * Wiki documentation on how to use the melting-pot for testing your components.
 * Completion of development on the SCIFIO "blockization" and unification of ImgLib2 data structures and caching.
 * Convert KLB native code to a pure Java SCIFIO format implementation.
+
+[[Category:News]]
+[[Category:ImageJ2]]
+[[Category:SCIFIO]]
+[[Category:Hackathons]]
