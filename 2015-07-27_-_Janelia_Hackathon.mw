@@ -1,12 +1,12 @@
-From Sunday, July 27, 2015 through Friday, July 31, 2015, Stephan Saalfeld at HHMI Janelia in Ashburn, Virginia hosted LOCI's Curtis Rueden and Mark Hiner for a hackathon to unify SCIFIO/ImgLib2 development efforts (with MPI-CBG's Tobias Pietzsch), improve support for the Janelia KLB format (with Janelia's Burkhard Hoeckendorf), and improve the development tools available for Fiji developers.
+From Sunday, July 27, 2015 through Friday, July 31, 2015, [[User:Saalfeld|Stephan Saalfeld]] at HHMI Janelia in Ashburn, Virginia hosted [[LOCI]]'s [[User:Rueden|Curtis Rueden]] and [[User:Hinerm|Mark Hiner]] for a hackathon to unify [[SCIFIO]]/[[ImgLib2]] development efforts (with MPI-CBG's [[User:Pietzsch|Tobias Pietzsch]]), improve support for the Janelia KLB format (with Janelia's Burkhard Hoeckendorf), and improve the development tools available for [[Fiji]] developers.
 
 == Executive summary ==
  
 * SCIFIO is headed in a great direction:
-** Will integrate it better into modern, powerful software tools including ImgLib2 and BigDataViewer.
-** Big step toward breaking the limitations of ImageJ1, in particular the 2GPix plane barrier and limited image types.
+** Will integrate it better into modern, powerful software tools including ImgLib2 and [[BigDataViewer]].
+** Big step toward breaking the limitations of [[ImageJ1]], in particular the 2GPix plane barrier and limited image types.
 ** Will make possible things like more transparent and rapid ability to work with multi-position and multi-angle datasets (mosaics, light sheet, etc.).
-* Stability of ImageJ and Fiji—and other applications built on SciJava components—is now easier to validate.
+* Stability of [[ImageJ]] and Fiji—and other applications built on [[SciJava]] components—is now easier to validate.
 
 == Technical discussions ==
 
