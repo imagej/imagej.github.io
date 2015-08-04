@@ -4,6 +4,7 @@
 | {{{id}}}
 }}]</includeonly>
 <noinclude>
+== Examples ==
 <pre>{{Dev | id=ctrueden}}</pre>
 {{Dev | id=ctrueden}}
 
