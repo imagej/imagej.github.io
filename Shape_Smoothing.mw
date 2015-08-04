@@ -1,0 +1,14 @@
+{{Infobox
+| software               = Fiji
+| name                   = Shape Smoothing Plugin
+| author                 = Undral Erdenetsogt, Thorsten Wagner
+| maintainer             = Undral Erdenetsogt (erdenetsogt@biomedical-imaging.de), Thorsten Wagner (wagner@biomedical-imaging.de)
+| filename               = Ridge_Detect.jar [https://github.com/thorstenwagner/ij-shape-smoothing/releases/latest [1]]
+| source                 = Github [https://github.com/thorstenwagner/ij-shape-smoothing [2]]
+| latest version         = v1.0.1 (16 July 2015)
+| status                 = active 
+
+}}
+
+== General Purpose ==
+The plugin smoothens contours of objects in binary images. The Fourier transformation combined with filtering of Fourier descriptors (FDs) are applied to conduct the smoothing.  The user can define the measure of contour smoothing by setting the amount of FDs – either relative or absolute.
