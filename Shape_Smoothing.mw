@@ -15,8 +15,8 @@ The plugin smoothens contours of objects in binary images. The Fourier transform
 
 ==Background==
 The plugin at first extracts the contours of all objects found in the input image. Object recognition and contour extraction are both performed by using IJBlob (link!). Then the contours are processed one at a time in the following way:
-1.	Discrete Fourier transformation is applied to contour data (coordinates of contour points) to gain FDs
-2.	FDs are filtered according to user input – only the ones, which are close to the zero frequency (from both sides), are retained. The other ones are cut off, meaning they are set to 0+0i.
-3.	Filtered (or “kept”) FDs are inverse Fourier transformed to obtain the points of the smoothed contour.
+# Discrete Fourier transformation is applied to contour data (coordinates of contour points) to gain FDs
+## FDs are filtered according to user input – only the ones, which are close to the zero frequency (from both sides), are retained. The other ones are cut off, meaning they are set to 0+0i.
+### Filtered (or “kept”) FDs are inverse Fourier transformed to obtain the points of the smoothed contour.
 For implementing the Fourier transformations JTransforms (link!) was used.
 Some theoretical background of FD-filtering: the result of step 1 is a series of FDs with the zero frequency (ZF) in its middle. ZF is essential for reconstruction spatial information of the contour. A frequency or a FD contains the more information the nearer it is to ZF (regardless of the side). Therefore in step 2 the FDs on the ends of the obtained series are set to 0+0i to achieve the smoothing.
