@@ -35,12 +35,12 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 |[http://www.hhmi.org/sites/default/files/Bulletin/2007/November/nov2007_fulltext.pdf 2007 Summer]
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
-| [https://github.com/acardona acardona], [https://github.com/bene51 bene51], [https://github.com/jefferis jefferis], [https://github.com/hanchuan hanchuan], [https://github.com/dscho dscho], [https://github.com/mhl mhl], [https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/axtimwalde axtimwalde], [https://github.com/rasband rasband], Arnim Jenett, Julie Simpson, Torsten Rohlfing, Yuriy Mishchenko
+| {{Dev | id=acardona}}, {{Dev | id=bene51}}, {{Dev | id=jefferis}}, {{Dev | id=hanchuan}}, {{Dev | id=dscho}}, {{Dev | id=mhl}}, {{Dev | id=StephanPreibisch}}, {{Dev | id=axtimwalde}}, {{Dev | id=rasband}}, Arnim Jenett, Julie Simpson, Torsten Rohlfing, Yuriy Mishchenko
 |Neuroscience
 |- valign="top"
 | style="white-space: nowrap" | [[TaskList|2008 Apr 21 -<br>2008 Apr 30]]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|[https://github.com/acardona acardona], [https://github.com/bene51 bene51], [https://github.com/ysis ysis], [https://github.com/chalkie666 chalkie666], [https://github.com/frederikfly frederikfly], [https://github.com/tinevez Jean-Yves Tinevez], [https://github.com/dscho dscho], [https://github.com/mhl mhl], [https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/axtimwalde axtimwalde], [https://github.com/tomancak tomancak]
+|{{Dev | id=acardona}}, {{Dev | id=bene51}}, {{Dev | id=ysis}}, {{Dev | id=chalkie666}}, {{Dev | id=frederikfly}}, {{Dev | id=tinevez}}, {{Dev | id=dscho}}, {{Dev | id=mhl}}, {{Dev | id=StephanPreibisch}}, {{Dev | id=axtimwalde}}, {{Dev | id=tomancak}}
 |[[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | 2008 Dec 8 -<br>2008 Dec 13
@@ -50,107 +50,107 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 | style="white-space: nowrap" | [[2009-03-12 - Dresden Hackathon 2009|2009 Mar 23 -<br>2009 Apr 03]]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|[https://github.com/dscho dscho], [https://github.com/acardona acardona], [https://github.com/tinevez Jean-Yves Tinevez], [https://github.com/bene51 bene51], [https://github.com/iarganda iarganda], [https://github.com/chalkie666 chalkie666], [https://github.com/mhl mhl], [https://github.com/tomancak tomancak],[https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/axtimwalde axtimwalde], Raju Tomer, Misha Kudryashev
+|{{Dev | id=dscho}}, {{Dev | id=acardona}}, {{Dev | id=tinevez}}, {{Dev | id=bene51}}, {{Dev | id=iarganda}}, {{Dev | id=chalkie666}}, {{Dev | id=mhl}}, {{Dev | id=tomancak}}, {{Dev | id=StephanPreibisch}}, {{Dev | id=axtimwalde}}, Raju Tomer, Misha Kudryashev
 |Segmentation
 |- valign="top"
 | style="white-space: nowrap" | [[2010-03-14 - Hackathon at EMBL|2010 Mar 14 -<br>2010 Mar 27]]
 |[http://www.embl.de/ EMBL]<br>Heidelberg, Germany
-|[https://github.com/acardona acardona], [https://github.com/axtimwalde axtimwalde], [https://github.com/bene51 bene51], [https://github.com/cmci cmci], [https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/iarganda iarganda], [https://github.com/larrylindsey larrylindsey], [https://github.com/mhl mhl], [https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/tnargsirrah tnargsirrah], [https://github.com/vkaynig vkaynig]
+|{{Dev | id=acardona}}, {{Dev | id=axtimwalde}}, {{Dev | id=bene51}}, {{Dev | id=cmci}}, {{Dev | id=ctrueden}}, {{Dev | id=dscho}}, {{Dev | id=iarganda}}, {{Dev | id=larrylindsey}}, {{Dev | id=mhl}}, {{Dev | id=StephanPreibisch}}, {{Dev | id=tnargsirrah}}, {{Dev | id=vkaynig}}
 |[[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | 2010 Oct 12 -<br>2010 Oct 23
 |[http://www.lbnl.gov/ Lawrence Berkeley National Laboratory]<br>Berkeley CA, USA
-|[https://github.com/frederikfly frederikfly], [https://github.com/dscho dscho]
+|{{Dev | id=frederikfly}}, {{Dev | id=dscho}}
 |Running [[Micro-Manager]] inside [[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | [http://developer.imagej.net/hackathons/2011-madison 2011 Jan 27 -<br>2011 Feb 13]
 |[http://discovery.wisc.edu/ WID]<br>Madison, WI, USA
-|[https://github.com/iarganda iarganda], [https://github.com/paulbarber paulbarber], [https://github.com/acardona acardona], [https://github.com/bdezonia bdezonia], [https://github.com/arthuredelstein arthuredelstein], [https://github.com/afraser afraser], [https://github.com/frederikfly frederikfly], [https://github.com/grislis grislis], [https://github.com/tnargsirrah tnargsirrah], [https://github.com/hinerm hinerm], [https://github.com/luisibanez luisibanez], [https://github.com/LeeKamentsky LeeKamentsky], [https://github.com/larrylindsey larrylindsey], [https://github.com/melissalinkert melissalinkert], [https://github.com/mhl mhl], [https://github.com/tpietzsch tpietzsch], [https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/ctrueden ctrueden], [https://github.com/axtimwalde axtimwalde], [https://github.com/dscho dscho], [https://github.com/bene51 bene51], [https://github.com/tomancak tomancak], Kevin Eliceiri, Rick Lentz, Mark Rowley
+|{{Dev | id=iarganda}}, {{Dev | id=paulbarber}}, {{Dev | id=acardona}}, {{Dev | id=bdezonia}}, {{Dev | id=arthuredelstein}}, {{Dev | id=afraser}}, {{Dev | id=frederikfly}}, {{Dev | id=grislis}}, {{Dev | id=tnargsirrah}}, {{Dev | id=hinerm}}, {{Dev | id=luisibanez}}, {{Dev | id=LeeKamentsky}}, {{Dev | id=larrylindsey}}, {{Dev | id=melissalinkert}}, {{Dev | id=mhl}}, {{Dev | id=tpietzsch}}, {{Dev | id=StephanPreibisch}}, {{Dev | id=ctrueden}}, {{Dev | id=axtimwalde}}, {{Dev | id=dscho}}, {{Dev | id=bene51}}, {{Dev | id=tomancak}}, Kevin Eliceiri, Rick Lentz, Mark Rowley
 |Multidimensional visualization
 |- valign="top"
 | style="white-space: nowrap" | [http://developer.imagej.net/hackathons/2011-dresden 2011 Dec 9 -<br>2011 Dec 19]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|[https://github.com/jburel jburel], [https://github.com/Stephane-D Stephane-D], [https://github.com/bdezonia bdezonia], [https://github.com/dietzc dietzc], [https://github.com/mdoube mdoube], [https://github.com/Fab14 Fab14], [https://github.com/frederikfly frederikfly], [https://github.com/hornm hornm], [https://github.com/chalkie666 chalkie666], [https://github.com/tomka tomka], [https://github.com/alex-krull alex-krull], [https://github.com/melissalinkert melissalinkert], [https://github.com/mhl mhl], [https://github.com/joshmoore joshmoore], [https://github.com/tpietzsch tpietzsch], [https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/bene51 bene51], [https://github.com/tomancak tomancak], [https://github.com/Peter-Gabriel-Pitrone Peter-Gabriel-Pitrone], Fernando Carrilo, Kevin Eliceiri, Jiri Matas, Jurgen Mayer
+|{{Dev | id=jburel}}, {{Dev | id=Stephane-D}}, {{Dev | id=bdezonia}}, {{Dev | id=dietzc}}, {{Dev | id=mdoube}}, {{Dev | id=Fab14}}, {{Dev | id=frederikfly}}, {{Dev | id=hornm}}, {{Dev | id=chalkie666}}, {{Dev | id=tomka}}, {{Dev | id=alex-krull}}, {{Dev | id=melissalinkert}}, {{Dev | id=mhl}}, {{Dev | id=joshmoore}}, {{Dev | id=tpietzsch}}, {{Dev | id=StephanPreibisch}}, {{Dev | id=ctrueden}}, {{Dev | id=dscho}}, {{Dev | id=bene51}}, {{Dev | id=tomancak}}, {{Dev | id=Peter-Gabriel-Pitrone}}, Fernando Carrilo, Kevin Eliceiri, Jiri Matas, Jurgen Mayer
 |Interoperability
 |- valign="top"
 | style="white-space: nowrap" | 2012 Oct
 |[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
-|[https://github.com/hornm hornm], [https://github.com/dietzc dietzc], [https://github.com/tpietzsch tpietzsch], [https://github.com/dscho dscho]
+|{{Dev | id=hornm}}, {{Dev | id=dietzc}}, {{Dev | id=tpietzsch}}, {{Dev | id=dscho}}
 |[[KNIME]]+[[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | 2013 Jan 22 -<br>2013 Jan 25
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|[https://github.com/thewtex thewtex], [https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/hinerm hinerm]
+|{{Dev | id=thewtex}}, {{Dev | id=ctrueden}}, {{Dev | id=dscho}}, {{Dev | id=hinerm}}
 |{{GitHub|org=scifio|repo=scifio-imageio|label=SCIFIO ImageIO plugin}}
 |- valign="top"
 | style="white-space: nowrap" | [[2013-04-22 - Trainable Segmentation Hackathon|2013 Apr 14 -<br>2013 Apr 18]]
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|[https://github.com/iarganda iarganda], [https://github.com/dscho dscho], [https://github.com/ctrueden ctrueden]
+|{{Dev | id=iarganda}}, {{Dev | id=dscho}}, {{Dev | id=ctrueden}}
 |[[Trainable Weka Segmentation]]
 |- valign="top"
 |[[2013-05-03 - ImgLib2 Hackathon in Madison|2013 Apr 27 -<br>2013 May 3]]
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|[https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/tpietzsch tpietzsch], [https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/bdezonia bdezonia], [https://github.com/hinerm hinerm], [https://github.com/grislis grislis]
+|{{Dev | id=StephanPreibisch}}, {{Dev | id=tpietzsch}}, {{Dev | id=ctrueden}}, {{Dev | id=dscho}}, {{Dev | id=bdezonia}}, {{Dev | id=hinerm}}, {{Dev | id=grislis}}
 |[[ImgLib2]]
 |- valign="top"
 | style="white-space: nowrap" | 2013 Sep 9 -<br>2013 Sep 13
 |[http://www.pasteur.fr/en Institut Pasteur]<br>Paris France
-|[https://github.com/tpietzsch Tobias Pietzsch], [https://github.com/tinevez Jean-Yves Tinevez]
+|{{Dev | id=tpietzsch}}, {{Dev | id=tinevez}}
 |[[MaMuT]], [[BigDataViewer]]
 |- valign="top"
 | style="white-space: nowrap" | 2013 Nov 14 -<br>2013 Nov 27
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|[https://github.com/dietzc dietzc], [https://github.com/dscho dscho], [https://github.com/ctrueden ctrueden]
+|{{Dev | id=dietzc}}, {{Dev | id=dscho}}, {{Dev | id=ctrueden}}
 |[[KNIME]]+[[ImageJ]]
 |- valign="top"
 | style="white-space: nowrap" | 2014 Mar 4 -<br>2014 Mar 13
 |[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
-|[https://github.com/ctrueden ctrueden], [https://github.com/dscho dscho], [https://github.com/dietzc dietzc], [https://github.com/hornm hornm]
+|{{Dev | id=ctrueden}}, {{Dev | id=dscho}}, {{Dev | id=dietzc}}, {{Dev | id=hornm}}
 |[[ImageJ Ops]]
 |- valign="top" |
 | style="white-space: nowrap" | 2014 Mar 11 -<br>2014 Mar 13
 |[https://www.facebook.com/heimathafenWiesbaden Heimathafen]<br>Wiesbaden, Germany
-|[https://github.com/joshmoore joshmoore], [https://github.com/ctrueden ctrueden]
+|{{Dev | id=joshmoore}}, {{Dev | id=ctrueden}}
 |{{GitHub|org=imagej|repo=imagej-omero|label=ImageJ-OMERO}}
 |- valign="top"
 | style="white-space: nowrap" | 2014 Mar 20 -<br>2014 Mar 21
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|[https://github.com/jburel jburel], [https://github.com/pwalczysko pwalczysko], [https://github.com/ctrueden ctrueden]
+|{{Dev | id=jburel}}, {{Dev | id=pwalczysko}}, {{Dev | id=ctrueden}}
 |{{GitHub|org=imagej|repo=imagej-omero|label=ImageJ-OMERO}}
 |- valign="top"
 | style="white-space: nowrap" | 2014 Jul 7 -<br>2014 Jul 10
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|[https://github.com/marktsuchida marktsuchida], [https://github.com/ChrisWeisiger ChrisWeisiger], [https://github.com/dscho dscho], [https://github.com/stuyvenberg stuyvenberg], [https://github.com/ctrueden ctrueden], [https://github.com/hinerm hinerm]
-|[https://micro-manager.org/ Micro-Manager] and [https://github.com/openspim OpenSPIM]
+|{{Dev | id=marktsuchida}}, {{Dev | id=ChrisWeisiger}}, {{Dev | id=dscho}}, {{Dev | id=stuyvenberg}}, {{Dev | id=ctrueden}}, {{Dev | id=hinerm}}
+|[https://micro-manager.org/ Micro-Manager] and {{Dev | id=openspim}}
 |- valign="top"
 | style="white-space: nowrap" | [[2014-10-01 - ImageJ Ops Hackathon|2014 Sep 14 -<br>2014 Sep 18]]
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|[https://github.com/dietzc dietzc], [https://github.com/bnorthan bnorthan], [https://github.com/hinerm hinerm], [https://github.com/ctrueden ctrueden], [https://github.com/apal4 apal4], [https://github.com/yuminguw yuminguw], [https://github.com/awalter17 awalter17], Ginger Pocock
+|{{Dev | id=dietzc}}, {{Dev | id=bnorthan}}, {{Dev | id=hinerm}}, {{Dev | id=ctrueden}}, {{Dev | id=apal4}}, {{Dev | id=yuminguw}}, {{Dev | id=awalter17}}, Ginger Pocock
 |[[ImageJ Ops]] + [[KNIME]]
 |- valign="top"
 |2014 Oct 13 -<br>2014 Oct 17
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|[https://github.com/tpietzsch tpietzsch], [https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/axtimwalde axtimwalde], [https://github.com/dscho dscho], [https://github.com/ctrueden ctrueden], [https://github.com/hinerm hinerm]
+|{{Dev | id=tpietzsch}}, {{Dev | id=StephanPreibisch}}, {{Dev | id=axtimwalde}}, {{Dev | id=dscho}}, {{Dev | id=ctrueden}}, {{Dev | id=hinerm}}
 |[[ImgLib2]]
 |- valign="top"
 |2015 Jan 19 -<br>2015 Jan 27
 |[http://www.freiraeume-kn.de/standort.htm FREIRÄUME]<br>Konstanz, Germany
-|[https://github.com/dietzc dietzc], [https://github.com/ctrueden ctrueden], [https://github.com/hinerm hinerm], [https://github.com/LeeKamentsky LeeKamentsky], [https://github.com/tpietzsch tpietzsch], [https://github.com/fjug fjug], [https://github.com/dscho dscho], [https://github.com/iarganda iarganda], [https://github.com/gab1one gab1one], [https://github.com/DanielSeebacher DanielSeebacher], [https://github.com/kmader kmader], [https://github.com/angrauma angrauma], [https://github.com/Squareys Squareys], [https://github.com/tibuch tibuch], Patrick Winter, Andreas Burger, Tobias Kötter
+|{{Dev | id=dietzc}}, {{Dev | id=ctrueden}}, {{Dev | id=hinerm}}, {{Dev | id=LeeKamentsky}}, {{Dev | id=tpietzsch}}, {{Dev | id=fjug}}, {{Dev | id=dscho}}, {{Dev | id=iarganda}}, {{Dev | id=gab1one}}, {{Dev | id=DanielSeebacher}}, {{Dev | id=kmader}}, {{Dev | id=angrauma}}, {{Dev | id=Squareys}}, {{Dev | id=tibuch}}, Patrick Winter, Andreas Burger, Tobias Kötter
 |[[ImageJ Ops]] + [[KNIME]] + [[CellProfiler]] + more
 |- valign="top"
 | style="white-space: nowrap" | 2015 Apr 12 -<br>2015 Apr 17
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
-|[https://github.com/StephanPreibisch StephanPreibisch], [https://github.com/tpietzsch tpietzsch], [https://github.com/axtimwalde axtimwalde], [https://github.com/tomancak tomancak]
+|{{Dev | id=StephanPreibisch}}, {{Dev | id=tpietzsch}}, {{Dev | id=axtimwalde}}, {{Dev | id=tomancak}}
 |[[Multiview-Reconstruction]] and [[BigDataViewer]]
 |- valign="top"
 | style="white-space: nowrap" | 2015 June 29 -<br>2015 July 3
 |[https://www.mdc-berlin.de/13800178/en/bimsb BIMSB/MDC]<br>Berlin, Germany
-|[https://github.com/StephanPreibisch Stephan Preibisch], [https://github.com/dietzc Christian Dietz], [https://github.com/emmenlau Mario Emmenlauer], [https://github.com/StephanJanosch Stephan Janosch]
+|{{Dev | id=StephanPreibisch}}, {{Dev | id=dietzc}}, {{Dev | id=emmenlau}}, {{Dev | id=StephanJanosch}}
 |Parallelization of [[Multiview-Reconstruction]] and integration with ImageJ Ops & KNIME
 |- valign="top"
 | style="white-space: nowrap" | [[2015-07-27-Janelia_Hackathon|2015 Jul 27 -<br>2015 Jul 31]]
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
-|[https://github.com/axtimwalde axtimwalde], [https://github.com/ctrueden ctrueden], [https://github.com/hinerm hinerm], [https://github.com/tpietzsch tpietzsch],  [https://github.com/tomka tomka], [https://www.janelia.org/people/burkhard-hoeckendorf Burkhard Hoeckendorf], Phillip Keller
+|{{Dev | id=axtimwalde}}, {{Dev | id=ctrueden}}, {{Dev | id=hinerm}}, {{Dev | id=tpietzsch}},  {{Dev | id=tomka}}, [https://www.janelia.org/people/burkhard-hoeckendorf Burkhard Hoeckendorf], Phillip Keller
 |[[SCIFIO]] performance and generality
 |-
 |colspan="4" style="border-bottom: 1px solid gray"|
