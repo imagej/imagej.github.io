@@ -14,7 +14,7 @@
 The plugin smoothens contours of objects in binary images. The Fourier transformation combined with filtering of Fourier descriptors (FDs) are applied to conduct the smoothing.  The user can define the measure of contour smoothing by setting the amount of FDs – either relative or absolute.
 
 ==Background==
-The plugin at first extracts the contours of all objects found in the input image. Object recognition and contour extraction are both performed by using IJBlob (link!). Then the contours are processed one at a time in the following way:
+The plugin at first extracts the contours of all objects found in the input image. Object recognition and contour extraction are both performed by using IJBlob [https://github.com/thorstenwagner/ij-blob]. Then the contours are processed one at a time in the following way:
 # Discrete Fourier transformation is applied to contour data (coordinates of contour points) to gain FDs
 # FDs are filtered according to user input – only the ones, which are close to the zero frequency (from both sides), are retained. The other ones are cut off, meaning they are set to 0+0i.
 # Filtered (or “kept”) FDs are inverse Fourier transformed to obtain the points of the smoothed contour.
