@@ -37,3 +37,5 @@ At first users have to choose on how they want to define the smoothing: via rela
 '''Output Descriptors:'''		If selected, a table, containing all FDs, will be shown after processing. (Filtered FDs will all have the value 0+0i.)
 
 '''Black Background:'''		Select this option, if the background in the input image is black and the objects are white. (The plugin prefills this parameter according to a rudimentary background detection)
+
+==Examples==
