@@ -1,6 +1,6 @@
 <includeonly>[https://github.com/{{{id}}} {{#switch: {{{id}}}
-| ctrueden | Curtis Rueden
-| hinerm | Mark Hiner
+| ctrueden = Curtis Rueden
+| hinerm = Mark Hiner
 | {{{id}}}
 }}]</includeonly>
 
