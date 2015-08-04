@@ -2,7 +2,8 @@
 | software               = Fiji
 | name                   = Shape Smoothing Plugin
 | author                 = Undral Erdenetsogt, Thorsten Wagner
-| maintainer             = Undral Erdenetsogt (erdenetsogt@biomedical-imaging.de), Thorsten Wagner (wagner@biomedical-imaging.de)
+| maintainer             = Undral Erdenetsogt (erdenetsogt@biomedical-imaging.de)
+                           Thorsten Wagner (wagner@biomedical-imaging.de)
 | filename               = Ridge_Detect.jar [https://github.com/thorstenwagner/ij-shape-smoothing/releases/latest [1]]
 | source                 = Github [https://github.com/thorstenwagner/ij-shape-smoothing [2]]
 | latest version         = v1.0.1 (16 July 2015)
