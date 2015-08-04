@@ -1,6 +1,10 @@
-{{#switch: {{{x}}}
+<includeonly>{{#switch: {{{1}}}
 | 1 = one
 | 2 = two
 | 3 = three
 | other
-}}
+}}</includeonly>
+* {{Dev | 1}}
+* {{Dev | 2}}
+* {{Dev | 3}}
+* {{Dev | 4}}
