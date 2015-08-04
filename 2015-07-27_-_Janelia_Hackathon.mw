@@ -20,12 +20,11 @@ From Sunday, July 27, 2015 through Friday, July 31, 2015, Stephan Saalfeld at HH
 
 == Progress this week ==
 
-* Curtis wrote a "melting pot" script for testing component changes in the context of a larger application (e.g.: "Would this change to TrakEM2 break Fiji?") [1].
+* Curtis wrote a "melting pot" script for testing component changes in the context of a larger application (e.g.: "Would this change to TrakEM2 break Fiji?") [[https://github.com/scijava/scijava-scripts/commit/d611704204d607dc94654a6810d00a1ab0e9280e 1]].
 * Curtis made some ImageJ improvements in response to feedback from Burkhard [[https://github.com/imagej/imagej-plugins-commands/commit/6fafbc9c3444e3fe70420244699d02acfb72abfd 2], [https://github.com/imagej/imagej-plugins-commands/commit/ea9596b2d905eff9f7a9b2177dca5fe44b65ae6e 3]].
 * Mark fixed bugs in SCIFIO cell caching in preparation for unification [[https://github.com/imglib/imglib2-ij/pull/5 4]].
 * Mark and Curtis planned out the new SCIFIO API for "blockization".
 * Mark began work on ImageJ data model changes for SCIFIO "blockization" [[https://github.com/imagej/imagej-common/compare/calibrated-interval 5], [https://github.com/scifio/scifio/compare/blocks-are-so-plane 6]].
-
 
 == Future directions ==
 
