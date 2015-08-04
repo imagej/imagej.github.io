@@ -1,0 +1,93 @@
+{{Infobox
+| logo                   = [[Image:fiji-icon.png|96px]]
+| software               = Fiji
+| name                   = TUNEL Cell Counter
+| author                  = [[User:Daniel E. Maidana| '''Daniel E. Maidana, M.D.''']] <br> [https://connects.catalyst.harvard.edu/Profiles/display/Person/39774 '''Demetrios G. Vavvas, M.D., Ph.D.''']
+| maintainer           = '''Daniel E. Maidana, M.D.''' <br> Angiogenesis Laboratory <br>Massachusetts Eye and Ear Infirmary <br> Harvard Medical School ([mailto:Daniel_Maidana@MEEI.HARVARD.EDU Daniel_Maidana@meei.harvard.edu])
+| filename              = [https://github.com/demisjohn/Microscope-Measurement-Tools TUNEL Cell Counter at GitHub]
+| source                 = {{GitHub|org=fiji|repo=Image_Expression_Parser}}
+| released              = August 8<sup>th</sup>, 2015
+| latest version      = August 8<sup>th</sup>, 2015
+| status                  = v1.1 beta
+| category               =[[:Category:Plugins|Plugins]]
+| website                = [https://github.com/DanielMaidana/TUNEL_Cell_Counter TUNEL Cell Counter at GitHub]
+}}<br>
+'''TUNEL Cell Counter''' is a free, open source plugin created for ImageJ 2 and FIJI, developed by Daniel E. Maidana, M.D. and Demetrios G. Vavvas, M.D., Ph.D. at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. TUNEL Cell Counter has been validated for retinal TUNEL assay quantitation in cryo-sections. TUNEL Cell Counter is able to analyze digital images obtained from fluorescent microscopes, segment the outer nuclear (ONL) and inner nuclear layer (INL), and count TUNEL<sup>+</sup> cell in each layer. After analysis, TUNEL Cell Counter generates an array with several output variables. Additionally, the macro generates a merged image with segmented layers and quantitated cells, for visual assessment of macro performance. 
+__TOC__
+
+== Overview ==
+TUNEL Cell Counter is a custom-built and validated ImageJ macro that processes digital images from retinal TUNEL assay. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates TUNEL+ cells in these layers.
+
+== Download & Install ==
+=== TUNEL Cell Counter Macro ===
+Download and install the macro:<br>
+:Go to ''Plugins > Macros > Install'' and select the downloaded '''.ijm''' file.
+
+=== Dataset Samples === 
+
+The original ONL and INL image datasets used for validation purposes are available to download. These images were acquired with Axio Imager M2 fluorescence microscope (Carl Zeiss Inc., NY) using a 20x/0.8 air objective. We considered this magnification was the most suitable to assess a reasonably large area without missing out cell morphology details.
+{{Notice | We '''strongly''' recommend to download and revise these images beforehand, to have a rough estimate on acquisition and post-processing parameters.}}
+[[Category:Boxes]]
+'''Datasets'''
+:*[http://www.example.com ONL Dataset] 
+:*[http://www.example.com INL Dataset]
+== TUNEL Cell Counter ==
+=== Segmentation ===
+=== Total Cells Quantitation ===
+=== TUNEL Cells Quantitation ===
+
+== Macro Output ==
+=== Qualitative ===
+[File:]
+
+=== Quantitative ===
+When executed as a macro, the output variables are:
+:'''Outer Nuclear Layer'''
+:*ONL Area (mm<sup>2</sup>)
+:*ONL Total Cells (count)
+:*ONL TUNEL+ Cells (count)
+:*Ratio TUNEL+ Cells/ONL Area (count/mm<sup>2</sup>)
+:*Percentage TUNEL+ Cells/ONL Total Cells (%)
+
+:'''Inner Nuclear Layer'''
+:*INL Area (mm<sup>2</sup>)
+:*INL Total Cells (count)
+:*INL TUNEL+ Cells (count)
+:*Ratio TUNEL+ Cells/INL Area (count/mm<sup>2</sup>)
+:*Percentage TUNEL+ Cells/INL Total Cells (%)
+
+== Before You Start ==
+=== Microscope Calibration ===
+For purposes of
+=== Dataset Selection ===
+
+== Limitations == 
+#Acquisition: The macro was designed for images acquired with a 20x/0.8 air objective. Images with higher or lower magnification will not be successfully segmented.
+#TUNEL staining quality
+#Image Focus:  uneven image focus, 
+# Indistinguishable Retinal Layers:
+#Uncentered Image:
+# Significant Shadowing:
+
+== FAQs ==
+# Q: Can I modify the source code?
+#*A: ''Yes. You can modify the code to develop new macros or plugins. Please acknowledge previous work that helped or inspired you, and share your contribution with the scientific community!''<br>
+# Q: I used this tool for my research. How can I acknowledge it?
+#*A: ''Please cite or reference this work as follows: Maidana DE, etc. IOVS.'' <br>
+# Q: I cannot get accurate segmentation or counting. How can I acknowledge it?
+#*A: ''Check your acquisition and post-processing parameters. Try to keep background at minimum, and avoid saturating pixels especially in the green channel. This will balance any noise signal to a real cell.''<br> 
+
+Best performances are obtained with low saturation.'' <br>
+== Future Development ==
+
+== Version History ==
+
+:v1.1: In progress.
+:v1.0: First and validated working version.
+
+== External Links ==
+http://www.masseyeandear.org
+
+== References ==
+
+[1]
