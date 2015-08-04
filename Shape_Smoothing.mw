@@ -39,3 +39,4 @@ At first users have to choose on how they want to define the smoothing: via rela
 '''Black Background:'''		Select this option, if the background in the input image is black and the objects are white. (The plugin prefills this parameter according to a rudimentary background detection)
 
 ==Examples==
+[[File:Input cell.png|300px|thumb|Original Image]]
