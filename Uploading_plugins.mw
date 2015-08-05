@@ -105,6 +105,8 @@ The updater will only pick up files stored at the appropriate location according
     win32/
     win64/
 
+Further information is in this [https://groups.google.com/forum/#!topic/fiji-devel/QbY4XnLC-wE thread on fiji-devel]
+
 == The actual files ==
 
 The files corresponding to the database entries are also stored as flat files of the form
