@@ -44,6 +44,8 @@ The original ONL and INL image datasets used for validation purposes are availab
 #Go to ''Plugins > Macros > Install'' and select the downloaded '''.ijm''' file.
 
 == TUNEL Cell Counter ==
+[[File:Stack - Macro.gif|450px|thumb|Representative animation of Macro Mode. Processing time is ~14 seconds/image. (Click image to view animation)]]
+[[File:Stack - Batch.gif|450px|thumb|Representative animation of Batch Mode. Processing time is ~2.5 seconds/image.(Click image to view animation)]]
 === Segmentation ===
 The following precesses are executed by the macro:
 *'''ONL Segmentation'''
@@ -83,10 +85,10 @@ To execute in Batch Mode:
 #Select the ''Output" Folder were you want to save the processed images
 #Choose JPEG as the "Output Format" (recommended)
 #Click on "Process" 
-[[File:X.png|200px|thumb|right|Replace the value 3095.975 in the source code with your microscope spatial scale.]][[File:X.png|200px|thumb|right|Replace the value 3095.975 in the source code with your microscope spatial scale.]]
+
 == Macro Output ==
 === Qualitative ===
-[[File:X.png|200px|thumb|right|Replace the value 3095.975 in the source code with your microscope spatial scale.]]
+:A JPEG image ins created to visualize ONL and INL segmentation and TUNEL<sup>+</sup> cell count, as an overlay.
 === Quantitative ===
 When executed as a macro, the output variables are:
 :'''Outer Nuclear Layer'''
