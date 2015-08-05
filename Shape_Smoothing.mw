@@ -11,7 +11,7 @@
 }}
 
 = General Purpose =
-The plugin smoothens contours of objects in binary images. The Fourier transformation combined with filtering of Fourier descriptors (FDs) are applied to conduct the smoothing.  The user can define the measure of contour smoothing by setting the amount of FDs – either relative or absolute.
+The plugin smoothens contours of objects in binary images. The Fourier transformation combined with filtering of Fourier descriptors (FDs) are applied to conduct the smoothing.  The user can define the measure of contour smoothing by setting the amount of FDs – either relative or absolute. All FDs up to the selected threshold are scale-, rotation- and translation-invariant.
 
 = Background =
 The plugin at first extracts the contours of all objects found in the input image. Object recognition and contour extraction are both performed by using  [https://github.com/thorstenwagner/ij-blob IJBlob]. Then the contours are processed one at a time in the following way:
