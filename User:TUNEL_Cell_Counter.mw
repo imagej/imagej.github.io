@@ -65,7 +65,7 @@ The following precesses are executed by the macro:
 #Analyze particles function to measure the ONL area.
 
 === Total Cells Quantitation ===
-#Find Maxima function to detect nuclei located in the ONL and INL ROIs
+:Find Maxima function to detect nuclei located in the ONL and INL ROIs
 
 === TUNEL Cells Quantitation ===
 #Green channel extraction from the RGB native image
@@ -73,7 +73,7 @@ The following precesses are executed by the macro:
 #Watershed function to separate contiguous cells
 #Analyze particles function to count
 === Macro Mode vs. Batch Mode ===
-TUNEL Cell Counter can be executed as an installed macro. However, we believe that 
+TUNEL Cell Counter can be executed either as a macro or as batch process, with the same results. We suggest batch processing for faster results.
 To execute in Batch Mode:
 #View the macro code from the GitHub link.<br>
 #Copy the whole code to the clipboard
@@ -86,11 +86,8 @@ To execute in Batch Mode:
 == Macro Output ==
 === Qualitative ===
 [[File:X.png|200px|thumb|right|Replace the value 3095.975 in the source code with your microscope spatial scale.]]
-
-
 === Quantitative ===
-When executed either as a macro or as batch process, with the same results. We suggest batch processing for faster results.
-
+When executed as a macro, the output variables are:
 :'''Outer Nuclear Layer'''
 :*ONL Area (mm<sup>2</sup>)
 :*ONL Total Cells (count)
