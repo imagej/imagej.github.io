@@ -44,8 +44,8 @@ The original ONL and INL image datasets used for validation purposes are availab
 #Go to ''Plugins > Macros > Install'' and select the downloaded '''.ijm''' file.
 
 == TUNEL Cell Counter ==
-[[File:Stack - Macro.gif|450px|thumb|Representative animation of Macro Mode. Processing time is ~14 seconds/image. '''(Click image to view animation)''']]
-[[File:Stack - Batch.gif|450px|thumb|Representative animation of Batch Mode. Processing time is ~2.5 seconds/image.'''(Click image to view animation)''']]
+[[File:Stack - Macro.gif|450px|thumb|Representative animation of Macro Mode. Processing time is ~14 seconds/image.]]
+[[File:Stack - Batch.gif|450px|thumb|Representative animation of Batch Mode. Processing time is ~2.5 seconds/image.]]
 === Segmentation ===
 The following precesses are executed by the macro:
 *'''ONL Segmentation'''
