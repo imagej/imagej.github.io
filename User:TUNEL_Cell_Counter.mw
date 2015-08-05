@@ -31,7 +31,7 @@ To convert pixels-mm<sup>2</sup>, the image spatial scale is required. This can 
 :Replace the value 3095.975 on code line 32 with your microscope spatial scale.
 === Image Acquisition ===
 This macro was designed for images acquired with fluorescence microscopes using a 20x/0.8 air objective. 
-We considered this magnification was the most suitable to assess a reasonably large area without missing out on details in cell morphology. 
+We considered this magnification the most suitable to assess a reasonably large area without missing out on details in cell morphology. 
 === Dataset Selection ===
 The original ONL and INL image datasets used for validation purposes are available to download. These images have been accurately segmented and quantitated, and their values were validated by observers. 
 {{Notice | We '''strongly''' recommend to download and revise these images beforehand, to have a rough estimate on acquisition and post-processing parameters.}}
@@ -47,7 +47,7 @@ The original ONL and INL image datasets used for validation purposes are availab
 [[File:Stack - Macro.gif|450px|thumb|Representative animation of Macro Mode. Processing time is ~14 seconds/image.]]
 [[File:Stack - Batch.gif|450px|thumb|Representative animation of Batch Mode. Processing time is ~2.5 seconds/image.]]
 === Segmentation ===
-The following precesses are executed by the macro:
+The following processes are executed by the macro:
 *'''ONL Segmentation'''
 #Blue channel extraction from the RGB native image
 #Gaussian blur filter to reduce noise and detail.
