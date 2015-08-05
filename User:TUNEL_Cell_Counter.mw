@@ -28,7 +28,7 @@ To convert pixels-mm<sup>2</sup>, the image spatial scale is required. This can 
 <source lang="java">
   run("Set Scale...", "distance=3095.975 known=1 pixel=1 unit=mm global");
 </source>
-:Replace the value 3095.975 in the code for your microscope spatial scale.
+:Replace the value 3095.975 on code line 32 with your microscope spatial scale.
 === Image Acquisition ===
 This macro was designed for images acquired with fluorescence microscopes using a 20x/0.8 air objective. 
 We considered this magnification was the most suitable to assess a reasonably large area without missing out on details in cell morphology. 
@@ -76,7 +76,8 @@ The following precesses are executed by the macro:
 TUNEL Cell Counter can be executed either as a macro or as batch process, with the same results. We suggest batch processing for faster results.
 To execute in Batch Mode:
 #View the macro code from the GitHub link.<br>
-#Copy the whole code to the clipboard
+#Copy the whole code to the clipboard.
+#Correct microscope spatial scale in line 32 of the code, if necessary.
 #Go to ''Process > Batch > Macro'' and copy the content in the macro box.
 #Select the ''Input" Folder were your images are located
 #Select the ''Output" Folder were you want to save the processed images
