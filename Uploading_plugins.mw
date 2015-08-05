@@ -69,6 +69,42 @@ The new database is stored in the file ''db.xml.gz'', which again is a static fi
 
 This database not only stores the same information as ''current.txt'', it can contain arbitrary file names (even including spaces, which is not possible with the former database), store descriptions of the files, have information about the platform, categories and most importantly, it has the checksums of all known previous versions so that we can finally decide whether it is safe to update files or whether they are locally modified and the user should state '''explicitely''' that it is safe to update.
 
+== File organization ==
+
+Different file types are stored at different locations in an ImageJ/Fiji installation:
+
+  plugins/ (and subfolders)
+    .jar
+    .class
+    .ijm
+    .py
+    .js
+    .bsh
+    .rb
+    .groovy
+
+  script/
+  macros/
+    (all script files, see above)
+
+  jars/
+    .jar
+
+  luts/
+    .lut
+
+  lib/
+    (all files)
+
+The updater will only pick up files stored at the appropriate location according to their function. In addition, the <code>./lib/</code> folder contains platform-specific sub-directories to allow loading of native libraries dependent on the platform:
+
+  lib/
+    linux32/
+    linux64/
+    macosx/
+    win32/
+    win64/
+
 == The actual files ==
 
 The files corresponding to the database entries are also stored as flat files of the form
