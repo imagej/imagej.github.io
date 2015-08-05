@@ -16,7 +16,7 @@
 __TOC__
 
 == Overview ==
-TUNEL Cell Counter is a custom-built and validated ImageJ macro that processes digital images from retinal TUNEL assay. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates TUNEL+ cells in these layers. The detailed validation of this macro has been submitted and currently under review for publishing.
+TUNEL Cell Countehttp://imagej.net/User:TUNEL_Cell_Counterr is a custom-built and validated ImageJ macro that processes digital images from retinal TUNEL assay. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates TUNEL+ cells in these layers. The detailed validation of this macro has been submitted and currently under review for publishing.
 
 == Before You Start ==
 Please read carefully before using this macro.
@@ -124,7 +124,7 @@ Ratio of TUNEL<sup>+</sup> Cells can be calculated by any spreadsheet or statist
 == FAQs ==
 # Q: Can I modify the source code?
 #*A: ''Yes. You can modify the code to develop new macros or plugins. Please acknowledge previous work that helped or inspired you, and share your contribution with the scientific community!''<br>
-# Q: I used this tool for my research. How can I acknowledge it?
+# Q: I used this tool for my research. How should I acknowledge it?
 #*A: ''Please cite or reference this work as follows: Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG. (2015) A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Currently under revision'' <br>
 # Q: I cannot get accurate segmentation or counting. Any advice?
 #*A: ''Check your acquisition and post-processing parameters. Try to keep background at minimum, and avoid saturating pixels especially in the green channel. This will balance any noise signal to a real cell. Finally, as a rule of thumb, best performances are obtained with less saturated images.'' <br>
