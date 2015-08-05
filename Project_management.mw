@@ -133,7 +133,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
 | '''What'''
 | '''How?'''
 |-
-| rowspan=3 | '''Users<br>want...'''
+| rowspan=4 | '''Users<br>want...'''
 | to know what's already been reported
 | Browse and search [https://github.com/issues?q=is%3Aopen+no%3Amilestone+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci all open SciJava software stack issues].
 |-
@@ -142,6 +142,9 @@ Issues and milestones are public-facing entities, yet their content can be highl
 |-
 | to know which issues were fixed in a release
 | Browse issues at a particular [https://guides.github.com/features/issues/#filtering milestone]<br>(e.g., [https://github.com/issues?q=milestone%3A1.0.0+is%3Aclosed+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci 1.0.0 issues], [https://github.com/issues?q=milestone%3A1.0.0+is%3Aclosed+label%3Abug+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci 1.0.0 bugs], [https://github.com/issues?q=milestone%3A1.0.0+is%3Aclosed+label%3Aenhancement+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci+ 1.0.0 enhancements]).
+|-
+| to ask questions and report new issues
+| Report new issues using the big green "New issue" button,<br>or via ImageJ's [[Report a Bug]] plugin.
 |-
 | rowspan=3 | '''Developers<br>want...'''
 | to track their current tasks
