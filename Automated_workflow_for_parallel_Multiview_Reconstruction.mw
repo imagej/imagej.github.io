@@ -47,14 +47,14 @@ Supported datasets are in the following format:
 Using Zeiss Lightsheet Z.1 Dataset (LOCI)
 
     Multiple timepoints:  YES (one file per timepoint) or (all time-points in one file)
-    Multiple channels:  YES (one file per timepoint) or (all time-points in one file)
+    Multiple channels:  YES (one file per channel) or (all channels in one file)
     Multiple illumination directions: YES (one file per illumination direction)
     Multiple angles: YES (one file per angle)
     
 Using LOCI Bioformats opener (.tif)
 
     Multiple timepoints: YES (one file per timepoint) or (all time-points in one file)
-    Multiple channels: YES (one file per timepoint) or (all time-points in one file)
+    Multiple channels: YES (one file per channel) or (all channels in one file)
     Multiple illumination directions: YES (one file per illumination direction) => not tested yet
     Multiple angles: YES (one file per angle)
     
