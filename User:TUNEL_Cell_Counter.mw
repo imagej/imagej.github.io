@@ -23,7 +23,7 @@ Please read carefully before using this macro.
 You will need the following information before you start quantitating images.
 === Microscope Calibration ===
 [[File:Scale.png|200px|thumb|right|Replace the value 3095.975 in the source code with your microscope spatial scale.]]
-To convert pixels-mm<sup>2</sup>, the image spatial scale is required. This can be found in the image metadata or in the microscope's bundled software.
+To convert pixels to mm<sup>2</sup>, the image spatial scale is required. This can be found in the image metadata or in the microscope's bundled software.
 :For example, we acquired images with Axio Imager M2 fluorescence microscope (Carl Zeiss Inc., NY) using a 20x/0.8 air objective. The spatial scale was: 3095.975 pixels/mm
 <source lang="java">
   run("Set Scale...", "distance=3095.975 known=1 pixel=1 unit=mm global");
