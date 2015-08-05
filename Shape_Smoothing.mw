@@ -24,7 +24,7 @@ For implementing the Fourier transformations [https://github.com/wendykierp/JTra
 Some theoretical background of FD-filtering: the result of step 1 is a series of FDs with the zero frequency (ZF) in its middle. ZF is essential for reconstruction spatial information of the contour. A frequency or a FD contains the more information the nearer it is to ZF (regardless of the side). Therefore in step 2 the FDs on the ends of the obtained series are set to 0+0i to achieve the smoothing.
 
 = Parameters =
-[[File:Shape_smoothing_GUI.png|260px|thumb|Shape-Smoothing parameters]]
+[[File:Shape_smoothing_GUI.png|320px|thumb|Shape-Smoothing parameters]]
 
 At first users have to choose on how they want to define the smoothing: via relative or absolute number of FDs to be “kept”.
 
