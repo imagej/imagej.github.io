@@ -88,7 +88,7 @@ To execute in Batch Mode:
 
 == Macro Output ==
 === Qualitative ===
-:A JPEG image ins created to visualize ONL and INL segmentation and TUNEL<sup>+</sup> cell count, as an overlay.
+:A JPEG image is created to visualize ONL and INL segmentation and TUNEL<sup>+</sup> cell count, as an overlay.
 === Quantitative ===
 When executed as a macro, the output variables are:
 :'''Outer Nuclear Layer'''
@@ -104,6 +104,7 @@ When executed as a macro, the output variables are:
 :*INL TUNEL<sup>+</sup> Cells (count)
 :*Ratio TUNEL<sup>+</sup> Cells/INL Area (count/mm<sup>2</sup>)
 :*Percentage TUNEL<sup>+</sup> Cells/INL Total Cells (%)
+[[File:Bar.png|1200px]]
 
 When executed as Batch Mode, ONL and INL Area, and ONL and INL TUNEL<sup>+</sup> cells are reported.
 Ratio of TUNEL<sup>+</sup> Cells can be calculated by any spreadsheet or statistics package. 
