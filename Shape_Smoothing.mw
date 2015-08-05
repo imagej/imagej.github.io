@@ -28,9 +28,9 @@ Some theoretical background of FD-filtering: the result of step 1 is a series of
 
 At first users have to choose on how they want to define the smoothing: via relative or absolute number of FDs to be “kept”.
 
-'''Relative proportion FDs (%):'''	The percentage of FDs which will be used for drawing the smoothed contours.
+'''Relative proportion FDs (%):'''	The relativ number of FDs (relativ to the number of available FDs) will be used for smoothing the contours.
 
-'''Absolute number FDs:'''		This number of FDs will be used for drawing the smoothed contours.
+'''Absolute number FDs:'''		The absolute number of FDs will be used for smoothing the contours.
 
 '''Draw only contours:'''		If selected, only the smoothed contours of objects will be draw (without filling them).
 
