@@ -92,7 +92,7 @@ To execute in Batch Mode:
 
 == Macro Output ==
 === Qualitative ===
-[[File:Montage.jpg|right|250px|thumb|Example of an original TUNEL assay image (top) after macro processing (bottom).]]
+[[File:Montage.jpg|right|265px|thumb|Example of an original TUNEL assay image (top) after macro processing (bottom).]]
 :A JPEG image is created to visualize ONL and INL segmentation and TUNEL<sup>+</sup> cell count, as an overlay.
 === Quantitative ===
 When executed as a macro, the output variables are:
