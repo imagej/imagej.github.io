@@ -26,11 +26,11 @@ Thanks to the generous license by Erik Meijering to distribute the source code f
 
 The Linear Kuwahara plugin was contributed by Christian Tischer.
 
-Daniel Sage's MIJ library to use Fiji/ImageJ from within Matlab is included with Fiji now. Just add Fiji.app/scripts/ to the search path and call ''Miji''.
+Daniel Sage's MIJ library to use Fiji/ImageJ from within [[MATLAB]] is included with Fiji now. Just add Fiji.app/scripts/ to the search path and call ''Miji''.
 
 Kota Miura contributed the Temporal Color Coder which makes a t-projection color-coding the original time points.
 
-Bio-Format's bfopen.m was added to use Fiji's Bio-Formats from Matlab. Thanks to Curtis Rueden.
+Bio-Format's bfopen.m was added to use Fiji's Bio-Formats from [[MATLAB]]. Thanks to Curtis Rueden.
 
 The new 3D Blob Segmentation plugin allows interactive 3D segmentation in the 3D Viewer backed by Fiji's level sets framework. Thanks to Erwin Frise, Albert Cardona and Benjamin Schmid.
 
