@@ -4,7 +4,7 @@
 | logo                   = [[Image:fiji-icon.png|96px]]
 | software               = Fiji
 | name                   = TUNEL Cell Counter
-| author                  = [[User:Daniel E. Maidana| '''Daniel E. Maidana, M.D.''']] <br> [https://connects.catalyst.harvard.edu/Profiles/display/Person/39774 '''Demetrios G. Vavvas, M.D., Ph.D.''']
+| authors                  = [[User:Daniel E. Maidana| '''Daniel E. Maidana, M.D.''']] <br> [https://connects.catalyst.harvard.edu/Profiles/display/Person/39774 '''Demetrios G. Vavvas, M.D., Ph.D.''']
 | maintainer           = '''Daniel E. Maidana, M.D.''' <br> Angiogenesis Laboratory <br>Massachusetts Eye and Ear Infirmary <br> Harvard Medical School ([mailto:Daniel_Maidana@MEEI.HARVARD.EDU Daniel_Maidana@meei.harvard.edu])
 | filename              = [https://github.com/DanielMaidana/TUNEL TUNEL Cell Counter at GitHub]
 | source                 = {{GitHub|org=fiji|repo=TUNEL}}
