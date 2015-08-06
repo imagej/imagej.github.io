@@ -63,7 +63,7 @@ Version 2.2.0 focuses mainly on extendability, tracking performance and detectio
 
 * Minor improvement for the track display on the main view, for large models.
 
-* Ship a MATLAB function to import in MATLAB the tracks exported by TrackMate. Check [[Using_TrackMate_with_MATLAB|this]].
+* Ship a [[MATLAB]] function to import in [[MATLAB]] the tracks exported by TrackMate. Check [[Using_TrackMate_with_MATLAB|this]].
 
 * Warn the user if they feed TrackMate with a stack that has no time-points by plenty of Z-slices. This is one of the main reason we get irrelevant bug reports: By default, ImageJ considers that a multi-image file is always made of 1 time-points and many Z-slices. Whereas users mean to feed TrackMate with a movie made of several 2D planes filmed over time. We now warn the user that the dimensionality stored in the image might not be the one they expect.
 
