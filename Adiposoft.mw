@@ -89,11 +89,11 @@ If you are familiar with Fiji, and you have it already installed in your compute
 Note: There is only limited support for PowerPC (G4/G5) Macs. See MacOSX tips for a special download link.
 
 == Adiposoft under MATLAB (advanced users) ==
-A version of Adiposoft was entirely developed using MATLAB v.7.11 and the DIPlib v2.2 C Image Processing libraries [11] under Linux OS Fedora 14. To run Adiposoft, the same or newer version of this software is required, but the OS can be different. Matlab requires a non-free license.
-ADIPOSOFT - MATLAB Version (Download)
+A version of Adiposoft was entirely developed using [[MATLAB]] v.7.11 and the DIPlib v2.2 C Image Processing libraries [11] under Linux OS Fedora 14. To run Adiposoft, the same or newer version of this software is required, but the OS can be different. [[MATLAB]] requires a non-free license.
+ADIPOSOFT - [[MATLAB]] Version (Download)
 
-Before installing Adiposoft under Matlab you must download and install the DIP Image libraries DIPlib v2.2 C, which can be downloaded here. 
+Before installing Adiposoft under [[MATLAB]] you must download and install the DIP Image libraries DIPlib v2.2 C, which can be downloaded here. 
 After installing DIPlib you must to extract the AdiposoftMatlab.zip file.
-To run Adiposoft, execute the .m file inside Matlab 
+To run Adiposoft, execute the .m file inside [[MATLAB]] 
 
-Note: Installing Adiposoft can be a bit tricky under Matlab, due to compatibility problems between the versions of DIPlib and Matlab. We will be pleased to help you with the installation. To that end, please contact mgalarraga@unav.es for help.
+Note: Installing Adiposoft can be a bit tricky under [[MATLAB]], due to compatibility problems between the versions of DIPlib and [[MATLAB]]. We will be pleased to help you with the installation. To that end, please contact mgalarraga@unav.es for help.
