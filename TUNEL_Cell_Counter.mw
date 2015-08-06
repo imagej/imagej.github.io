@@ -113,7 +113,7 @@ When executed as a macro, the output variables are:
 :*INL TUNEL<sup>+</sup> Cells (count)
 :*Ratio TUNEL<sup>+</sup> Cells/INL Area (count/mm<sup>2</sup>)
 :*Percentage TUNEL<sup>+</sup> Cells/INL Total Cells (%)
-[[File:Bar.png|1200px]]
+[[File:Bar.png|1050px]]
 
 When executed as Batch Mode, ONL and INL Area, and ONL and INL TUNEL<sup>+</sup> cells are reported.
 Ratio of TUNEL<sup>+</sup> Cells can be calculated by any spreadsheet or statistics package. 
@@ -130,7 +130,7 @@ Ratio of TUNEL<sup>+</sup> Cells can be calculated by any spreadsheet or statist
 # Q: Can I modify the source code?
 #*A: ''Yes. You can modify the code to develop new macros or plugins. Please acknowledge previous work that helped or inspired you, and share your contribution with the scientific community!''<br>
 # Q: I used this tool for my research. How should I acknowledge it?
-#*A: ''Please cite or reference this work as follows: Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG. (2015) A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Currently under revision'' <br>
+#*A: ''Please cite or reference this work as follows: Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG (2015) A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Currently under revision.'' <br>
 # Q: I cannot get accurate segmentation or counting. Any advice?
 #*A: ''Check your acquisition and post-processing parameters. Try to keep background at minimum, and avoid saturating pixels especially in the green channel. This will balance any noise signal to a real cell. Finally, as a rule of thumb, best performances are obtained with less saturated images.'' <br>
 
