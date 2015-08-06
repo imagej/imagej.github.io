@@ -110,11 +110,11 @@ Implement a simple inpainting method (i.e. restore missing/unwanted parts of the
 
 = Scripting =
 
-== Add JMathLib (Matlab clone) support ==
+== Add JMathLib (MATLAB clone) support ==
 
-Quite a few algorithms are available as proof-of-concept Matlab scripts.  While it is [ftp://ftp.alvyray.com/Acrobat/6_Pixel.pdf wrong to think of pixels as little squares], and literally all Matlab scripts to perform image processing are suffering from that assumption, it would be very nice nevertheless to be able to run the scripts without having to buy Matlab licenses just for that purpose.
+Quite a few algorithms are available as proof-of-concept [[MATLAB]] scripts.  While it is [ftp://ftp.alvyray.com/Acrobat/6_Pixel.pdf wrong to think of pixels as little squares], and literally all [[MATLAB]] scripts to perform image processing are suffering from that assumption, it would be very nice nevertheless to be able to run the scripts without having to buy [[MATLAB]] licenses just for that purpose.
 
-Matlab bundles a Java runtime (and in fact, all of Matlab's GUI is implemented in Java!) and allows the user to instantiate Java classes and call methods on them:
+MATLAB bundles a Java runtime (and in fact, all of [[MATLAB]]'s GUI is implemented in Java!) and allows the user to instantiate Java classes and call methods on them:
 
 <source lang="matlab">
 import java.io.File;
@@ -122,7 +122,7 @@ f = File('/usr/local/Fiji.app/');
 f.exists()
 </source>
 
-Happily, there is a Matlab clone written in Java: [http://www.jmathlib.de/ JMathLib].  While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that Matlab scripts can be executed just like all other ImageJ scripts, too.
+Happily, there is a [[MATLAB]] clone written in Java: [http://www.jmathlib.de/ JMathLib].  While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [[MATLAB]] scripts can be executed just like all other ImageJ scripts, too.
 
 So far, we have [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=shortlog;h=refs/heads/jmathlib a branch which adds rudimentary JMathLib bindings to Fiji's scripting interface] and [http://fiji.sc/JMathLib/.git a Git-SVN mirror of the JMathLib source code repository] with a special ''fiji'' branch. The idea is to work on this branch to adjust JMathLib in certain ways to support this project, and once that is done, contribute the changes back to the JMathLib project.
 
@@ -136,11 +136,11 @@ The following issues need to be tackled in the JMathLib source code:
 
 * [http://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/FunctionManager.java;hb=refs/heads/fiji#l45 Only in standalone mode] are the available functions discovered at runtime rather than [http://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/WebFunctionLoader.java;hb=refs/heads/fiji#l40 read from an embedded file]. This file should not be necessary. JMathLib should detect whether it is bundled in a .jar or not, and use [http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/util/jar/JarInputStream.html a JarInputStream] or traverse the directory hierarchy otherwise. Probably the best place to do this is to teach the [http://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/core/functions/FileFunctionLoader.java;hb=refs/heads/fiji FileFunctionLoader] to accept a [http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/net/URL.html URL] instead of a [http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/io/File.html File], too.
 
-* JMathLib supports Java via a [http://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/plugins/dynjava/JavaPlugin.java;hb=refs/heads/fiji non-standard mechanism] based on [http://old.koalateam.com/djava/ DynamicJava]. This is incompatible with Matlab, so there needs to be native support using [http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/package-summary.html reflection] to support the method to instantiate Java objects mentioned above.
+* JMathLib supports Java via a [http://fiji.sc/cgi-bin/gitweb.cgi?p=JMathLib/.git;a=blob;f=src/jmathlib/plugins/dynjava/JavaPlugin.java;hb=refs/heads/fiji non-standard mechanism] based on [http://old.koalateam.com/djava/ DynamicJava]. This is incompatible with [[MATLAB]], so there needs to be native support using [http://download-llnw.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/package-summary.html reflection] to support the method to instantiate Java objects mentioned above.
 
 This issue needs to be tackled in Fiji's source code:
 
-* JMathLib's image toolbox does not contain much. Even the most basic functions are missing. And even if there were functions, we would have to override them, because the functions need to be done in a way so that they can use and interact with ImageJ. The best approach may be to start by implementing the functions mentioned in [http://www.mathworks.com/help/toolbox/images/index.html Matlab's image processing toolbox'] ''Getting Started'' section, by implementing ''.m'' files that call directly into ImagePlus (using the above-mentioned technique).
+* JMathLib's image toolbox does not contain much. Even the most basic functions are missing. And even if there were functions, we would have to override them, because the functions need to be done in a way so that they can use and interact with ImageJ. The best approach may be to start by implementing the functions mentioned in [http://www.mathworks.com/help/toolbox/images/index.html [[MATLAB]]'s image processing toolbox'] ''Getting Started'' section, by implementing ''.m'' files that call directly into ImagePlus (using the above-mentioned technique).
 
 '''Goal:''' Integrate JMathLib as a new scripting language.<br />
 '''Language:''' Java.<br />
