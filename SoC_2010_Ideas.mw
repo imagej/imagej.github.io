@@ -66,11 +66,11 @@ You are welcome to use any scientifically-relevant dataset of your choice, but w
 '''Language:''' Java.<br />
 '''Mentor:''' Johannes Schindelin (johannes.schindelin AT gmx.de) or Albert Cardona (acardona AT ini phys ethz ch)<br />
 
-== Add JMathLib (Matlab clone) support ==
+== Add JMathLib (MATLAB clone) support ==
 
-Quite a few algorithms are available as proof-of-concept Matlab scripts.  While it is [ftp://ftp.alvyray.com/Acrobat/6_Pixel.pdf wrong to think of pixels as little squares], and literally all Matlab scripts to perform image processing are suffering from that shortcoming, it would be very nice nevertheless to be able to run the scripts without having to buy Matlab licenses just for that purpose.
+Quite a few algorithms are available as proof-of-concept [[MATLAB]] scripts.  While it is [ftp://ftp.alvyray.com/Acrobat/6_Pixel.pdf wrong to think of pixels as little squares], and literally all [[MATLAB]] scripts to perform image processing are suffering from that shortcoming, it would be very nice nevertheless to be able to run the scripts without having to buy [[MATLAB]] licenses just for that purpose.
 
-Happily, there is a Matlab clone written in Java: [http://www.jmathlib.de/ JMathLib].  While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that Matlab scripts can be executed just like all other ImageJ scripts, too.
+Happily, there is a [[MATLAB]] clone written in Java: [http://www.jmathlib.de/ JMathLib].  While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [[MATLAB]] scripts can be executed just like all other ImageJ scripts, too.
 
 The project would consist of
 
