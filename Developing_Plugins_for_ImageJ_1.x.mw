@@ -191,7 +191,7 @@ int index = image.getStackIndex(channel, slice, frame);
 ImageProcessor ip = stack.getProcessor(index);
 </source>
 
-'''Note:''' for historical reasons, slice indices (and channel and frame indices as well) start at <u>1</u>. This is in contrast, e.g. to the x, y coordinates, which start at <u>0</u> (as one might be used to from other computer languages except BASIC, Pascal and Matlab).
+'''Note:''' for historical reasons, slice indices (and channel and frame indices as well) start at <u>1</u>. This is in contrast, e.g. to the x, y coordinates, which start at <u>0</u> (as one might be used to from other computer languages except BASIC, Pascal and [[MATLAB]]).
 
 == Working with the pixels' values ==
 
