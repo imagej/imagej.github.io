@@ -120,10 +120,10 @@ Ratio of TUNEL<sup>+</sup> Cells can be calculated by any spreadsheet or statist
 
 == Limitations == 
 #Acquisition: The macro was designed for images acquired with a 20x/0.8 air objective. Images with higher or lower magnification will not be successfully segmented. We considered this magnification was the most suitable to assess a reasonably large area without missing out cell morphology details.
-#TUNEL staining quality: Images need to have a intense cell staining and low background noise.
+#TUNEL staining quality: Images need to have an intense cell staining and low background noise.
 #Image Focus: Uneven image focus will render incomplete layer segmentation.
 # Indistinguishable Retinal Layers: The macro cannot distinguish between the ONL and INL if you can't!
-#Uncentered Image: For best results, try to acquire images centered in the frame.
+#Uncentered Image: For best results, try to acquire images centered in frame.
 # Significant Shadowing: Shadowing will render incomplete layer segmentation.
 
 == FAQs ==
