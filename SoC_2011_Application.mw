@@ -22,7 +22,7 @@ The Google Summer of Code program captures the attention of students worldwide, 
 
 == Did your organization participate in past GSoCs? If so, please summarize your involvement and the successes and challenges of your participation ==
 
-In 2009, we crafted and submitted an application for Fiji as a hosting institution, which was awarded 3 student positions. Two of these students went on to develop two key components of Fiji: the Fiji Updater and the Script Editor. The third student abandoned soon after starting, but his project was partially completed by the mentor (support for Matlab scripts). The two successful projects greatly improved Fiji.
+In 2009, we crafted and submitted an application for Fiji as a hosting institution, which was awarded 3 student positions. Two of these students went on to develop two key components of Fiji: the Fiji Updater and the Script Editor. The third student abandoned soon after starting, but his project was partially completed by the mentor (support for [[MATLAB]] scripts). The two successful projects greatly improved Fiji.
 
 The Fiji Updater enabled one-click package updates and completely changed the way in which image processing software developers and the end-user scientists interact. The feedback loops became faster and far less error prone, having removed the hassle of ensuring consistency in the versions of the necessary software libraries for the execution of the plugins and applications of interest.
 
