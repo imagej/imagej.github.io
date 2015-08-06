@@ -109,7 +109,7 @@ method
 | pages = 1035-1053
 }}
 
-Ported from Antti Niemist&ouml;'s Matlab code. See [http://www.cs.tut.fi/~ant/histthresh/ here] for an excellent slide presentation and his original Matlab code.
+Ported from Antti Niemist&ouml;'s [[MATLAB]] code. See [http://www.cs.tut.fi/~ant/histthresh/ here] for an excellent slide presentation and his original [[MATLAB]] code.
 
 
 === IsoData ===
@@ -228,7 +228,7 @@ The '''Ignore black''' or '''Ignore white''' options might help to avoid this pr
 | volume = 19
 | pages = 41-47
 }}
-Ported from Antti Niemist&ouml;'s Matlab code. See [http://www.cs.tut.fi/~ant/histthresh/ here] for an excellent slide presentation and the original Matlab code.
+Ported from Antti Niemist&ouml;'s [[MATLAB]] code. See [http://www.cs.tut.fi/~ant/histthresh/ here] for an excellent slide presentation and the original [[MATLAB]] code.
 
 === Minimum ===
 Similarly to the Intermodes method, this assumes a bimodal histogram. The histogram is iteratively smoothed using a running average of size 3, until there are only two local maxima. The threshold t is such that yt−1 &gt; yt &lt;&#061; yt+1.
@@ -248,7 +248,7 @@ Images with histograms having extremely unequal peaks or a broad and ﬂat valle
 | pages = 1035-1053
 }}
 
-Ported from Antti Niemist&ouml;'s Matlab code. See [http://www.cs.tut.fi/~ant/histthresh/ here] for an excellent slide presentation and the original Matlab code.
+Ported from Antti Niemist&ouml;'s [[MATLAB]] code. See [http://www.cs.tut.fi/~ant/histthresh/ here] for an excellent slide presentation and the original [[MATLAB]] code.
 
 
 === Moments ===
@@ -303,7 +303,7 @@ Assumes the fraction of foreground pixels to be 0.5.
 | doi = 10.1145/321119.321123
 }}
 
-Ported from Antti Niemist&ouml;'s Matlab code. See [http://www.cs.tut.fi/~ant/histthresh/ here] for an excellent slide presentation and the original Matlab code.
+Ported from Antti Niemist&ouml;'s [[MATLAB]] code. See [http://www.cs.tut.fi/~ant/histthresh/ here] for an excellent slide presentation and the original [[MATLAB]] code.
 
 
 === RenyiEntropy ===
