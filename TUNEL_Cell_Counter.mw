@@ -36,7 +36,8 @@ To convert pixels to mm<sup>2</sup>, the image spatial scale is required. This c
 This macro was designed for images acquired with fluorescence microscopes using a 20x/0.8 air objective. 
 We considered this magnification the most suitable to assess a reasonably large area without missing out on details in cell morphology. 
 === Image Processing ===
-We suggest to perform consistent post-processing for all images. Regarding the blue channel, avoid saturating pixels, as this will interfere with nuclei identification. As for the green channel, reduce background as much as possible and increase saturation without saturating fragments.
+We suggest to perform consistent post-processing for all images. Regarding the blue channel, avoid saturating pixels, as this will interfere with nuclei identification. As for the green channel, reduce background as much as possible and increase exposure without saturating fragments.
+
 === Validated Dataset ===
 The original ONL and INL image datasets used for validation purposes are available to download. These images have been accurately segmented and quantitated, and their values were validated by observers. {{Notice |''' We strongly recommend to download and revise these images beforehand, to have a rough estimate on acquisition and post-processing parameters.'''}}
 
