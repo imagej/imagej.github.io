@@ -80,7 +80,7 @@ The following processes are executed by the macro:
 TUNEL Cell Counter can be executed either as a macro or as batch process, with the same results. We suggest Batch Mode processing for faster results. <br>
 
 To execute in Macro Mode:
-#Open an image or drag-and-drop to the application applet. 
+#Open an image or ''drag-and-drop'' to the application applet. 
 #Go to ''Process > Macro > TUNEL Cell Counter. 
 #After processing, select the "Results" window and go to ''File > Save as'' and save as ".csv" file.
 
