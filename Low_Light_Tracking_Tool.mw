@@ -203,7 +203,7 @@ The tracking results are stored in text files with the ending '.trcT'. Each file
 
 '''<name of image file>_<name of session>_<label of trace>_<id of trace>.trcT'''
 
-The files are created in the working directory. Each file begins with some lines starting with '#'. These lines store information for the tracking program they will be ignored by most programs like matlab or gnuplot potentially used to further analyze the data.
+The files are created in the working directory. Each file begins with some lines starting with '#'. These lines store information for the tracking program they will be ignored by most programs like [[MATLAB]] or gnuplot potentially used to further analyze the data.
 This meta information is followed by columns of data holding the actual tracking results. 
 The columns have the following meaning:
 * column 1 frame number
