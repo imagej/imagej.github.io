@@ -87,8 +87,8 @@ To execute in Macro Mode:
 To execute in Batch Mode:
 #Inspect the macro code from the GitHub link.<br>
 #Copy the whole code to the clipboard.
+#Go to ''Process > Batch > Macro'' and paste the content in the macro box.
 #Correct microscope spatial scale in line 32 of the code, if necessary.
-#Go to ''Process > Batch > Macro'' and copy the content in the macro box.
 #Select the ''Input" Folder were your images are located.
 #Select the ''Output" Folder were you want to save the processed images.
 #Choose JPEG as the "Output Format" (recommended).
