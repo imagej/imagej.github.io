@@ -89,9 +89,9 @@ To execute in Batch Mode:
 #Copy the whole code to the clipboard.
 #Go to ''Process > Batch > Macro'' and paste the content in the macro box.
 #Correct microscope spatial scale in line 32 of the code, if necessary.
-#Select the ''Input" Folder were your images are located.
-#Select the ''Output" Folder were you want to save the processed images.
-#Choose JPEG as the "Output Format" (recommended).
+#Select ''Input'' Folder were your images are located.
+#Select ''Output'' Folder were you want to save the processed images.
+#Choose JPEG as "Output Format" (recommended).
 #Click on "Process".
 #After processing, select the "Summary" window and go to ''File > Save as',' and save summary as ".csv" file.
 
