@@ -1,6 +1,6 @@
-This page shows how to use and control TrackMate directly from ''within MATLAB''. This is great and made possible thanks to the great [[Miji]] tool, that make the Fiji classes visible from MATLAB. Check this page first if you have not already. 
+This page shows how to use and control TrackMate directly from ''within [[MATLAB]]''. This is great and made possible thanks to the great [[Miji]] tool, that make the Fiji classes visible from [[MATLAB]]. Check this page first if you have not already. 
 
-All the following examples assume you have launched MATLAB, and properly initiated Miji, using for instance
+All the following examples assume you have launched [[MATLAB]], and properly initiated Miji, using for instance
 
 <source lang="matlab">
 Miji(false)
@@ -11,14 +11,14 @@ Miji(true)
 </source>
 if you want the Fiji window to be visible.
 
-Apart from that, the collections of examples that follow just look like several scripts. Which is actually the case: We use the MATLAB interpreter as a scripting interface for TrackMate, as we did in the [[Scripting TrackMate]] page. We separated this page to highlight MATLAB specificities and to exploit its capabilities better.
+Apart from that, the collections of examples that follow just look like several scripts. Which is actually the case: We use the [[MATLAB]] interpreter as a scripting interface for TrackMate, as we did in the [[Scripting TrackMate]] page. We separated this page to highlight [[MATLAB]] specificities and to exploit its capabilities better.
 
 
 == A simple tracking example ==
 
-Here we open an image though Fiji (not though MATLAB) and track its content. The results are displayed in a Fiji window as well. MATLAB is used here only to control TrackMate and does not really plays a role in the process. This example is actually the same that in the first [[Scripting TrackMate]] example.
+Here we open an image though Fiji (not though [[MATLAB]]) and track its content. The results are displayed in a Fiji window as well. [[MATLAB]] is used here only to control TrackMate and does not really plays a role in the process. This example is actually the same that in the first [[Scripting TrackMate]] example.
 
-Note that we used the fully qualified name for TrackMate classes, ''e.g.'' <code>fiji.plugin.trackmate.TrackMate</code> instead of <code>TrackMate</code>. This is the first way to import classes in a MATLAB script. We will see another way later.
+Note that we used the fully qualified name for TrackMate classes, ''e.g.'' <code>fiji.plugin.trackmate.TrackMate</code> instead of <code>TrackMate</code>. This is the first way to import classes in a [[MATLAB]] script. We will see another way later.
 
 <source lang="matlab">
 % Get currently selected image
@@ -233,7 +233,7 @@ display(model.toString())
 
 == Why is this greater than it seems? ==
 
-Because your just ran a MATLAB script that uses and benefits from multithreading without relying on any toolbox! Here is how to tune the number of threads used by TrackMate:
+Because your just ran a [[MATLAB]] script that uses and benefits from multithreading without relying on any toolbox! Here is how to tune the number of threads used by TrackMate:
 
 TODO
 
