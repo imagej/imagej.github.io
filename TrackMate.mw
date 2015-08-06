@@ -72,7 +72,7 @@ The segmentation / filtering / particle-linking processes and results are visual
 
 Several automated segmentation and linking algorithms are provided. But you are also offered to edit the results manually, or even to completely skip the automatic steps, and perform fully manual segmentation and/or linking.
 
-Some tools for track and spot analysis are included. Various plots can be made directly from the plugin and for instance used to derive numerical results from the tracks. If they are not enough, functions are provided to export the whole results to other analysis software such as MATLAB.
+Some tools for track and spot analysis are included. Various plots can be made directly from the plugin and for instance used to derive numerical results from the tracks. If they are not enough, functions are provided to export the whole results to other analysis software such as [[MATLAB]].
 
 TrackMate relies on several different libraries and plugins for data manipulation, analysis and visualization. This can be a pitfall when distributing a complex plugin, but this is where the Fiji magic comes into play. All dependencies are dealt with by through the Fiji updater. Installing TrackMate is easy as calling the [[Fiji Updater]], and the plugin must work out of the box. If this does not work for you, then it is a bug and we commit to fix it.
 
@@ -112,14 +112,14 @@ TrackMate was developed to serve as a tool for Life-Science image analysis commu
 * [[Manual editing of tracks using TrackMate]] shows how to manually curate and edit tracking results.
 * [[Track analysis using TrackMate]]
 * [[TrackMate Algorithms|TrackMate Algorithms]] details and documents the automated segmentation algorithms, particle-linking algorithms, etc.. currently implemented in TrackMate. 
-* [[Using TrackMate with MATLAB]] documents the MATLAB functions shipped with Fiji that allows importing data generated with TrackMate into MATLAB.
+* [[Using TrackMate with MATLAB]] documents the [[MATLAB]] functions shipped with Fiji that allows importing data generated with TrackMate into [[MATLAB]].
 * [[TrackMate Performance]] reports various measures of the performance of its components. Performance reports include execution time and memory usage.
 * [[TrackMate Accuracy]] reports various measures of the accuracy of its components. Accuracy reports how well TrackMate can generate scientifically correct results, and compare its output to known ground truth.
 
 === For developers ===
 
 * [[Scripting TrackMate]] shows how to do tracking using a scripting language, ''e.g.'' from the Fiji [[Script Editor]]. These example scripts will show you how to use TrackMate as a library and familiarize yourself with the API.
-* [[Using TrackMate from MATLAB]] shows how to use MATLAB as a scripting language for TrackMate, and benefit from MATLAB facilities.
+* [[Using TrackMate from MATLAB]] shows how to use [[MATLAB]] as a scripting language for TrackMate, and benefit from [[MATLAB]] facilities.
 
 But the really interesting part for developers is the ability to extend TrackMate. 
 
