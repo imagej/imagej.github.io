@@ -82,7 +82,7 @@ TUNEL Cell Counter can be executed either as a macro or as batch process, with t
 To execute in Macro Mode:
 #Open an image or ''drag-and-drop'' to the application window. 
 #Go to ''Process > Macro > TUNEL Cell Counter. 
-#After processing, select "Results" window and go to ''File > Save as'', and save results as ".csv" file.
+#After processing, select "Results" window and go to ''File > Save as'', and save results as '''.csv''' file.
 
 To execute in Batch Mode:
 #Inspect the macro code from the GitHub link.<br>
@@ -93,7 +93,7 @@ To execute in Batch Mode:
 #Select ''Output'' as the folder were processed images will be saved.
 #Choose JPEG as "Output Format" (recommended).
 #Click on "Process".
-#After processing, select "Summary" window and go to ''File > Save as',' and save summary as ".csv" file.
+#After processing, select "Summary" window and go to ''File > Save as'', and save summary as '''.csv''' file.
 
 == Macro Output ==
 === Qualitative ===
