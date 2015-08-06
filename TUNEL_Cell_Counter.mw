@@ -51,31 +51,31 @@ The original ONL and INL image datasets used for validation purposes are availab
 === Segmentation ===
 The following processes are executed by the macro:
 *'''ONL Segmentation'''
-#Blue channel extraction from the RGB native image.
+#Blue channel extracted from the RGB native image.
 #Gaussian blur filter to reduce noise and detail.
 #Contrast enhancement.
 #Tsai moment-preserving thresholding. 
-#Erosion iterations to achieve a fitted segmentation.
-#Outlier pixels were removed to a specific radius.
-#Fill holes function was used to consolidate a solid area.
+#Erosion iteration to achieve a fitted segmentation.
+#Outlier pixels removed to a specific radius.
+#Fill holes function to consolidate a solid area.
 #Analyze particles function to measure the ONL area.
 
 *'''INL Segmentation'''
-#ONL ROI was subtracted from the Gaussian filtered blue channel.
+#ONL ROI subtracted from the Gaussian filtered blue channel.
 #Tsai moment-preserving thresholding. 
 #Erosion iterations to achieve a fitted segmentation.
-#Outlier pixels were removed to a specific radius.
-#Fill holes function was used to consolidate a solid area.
+#Outlier pixels removed to a specific radius.
+#Fill holes function used to consolidate a solid area.
 #Analyze particles function to measure the ONL area.
 
 === Total Cells Quantitation ===
 :Find Maxima function to detect nuclei located in the ONL and INL ROIs.
 
 === TUNEL Cells Quantitation ===
-#Green channel extraction from the RGB native image.
+#Green channel extracted from the RGB native image.
 #Tsai moment-preserving thresholding.
 #Watershed function to separate contiguous cells.
-#Analyze particles function to count.
+#Analyze particles function to count cells.
 === Macro Mode vs. Batch Mode ===
 TUNEL Cell Counter can be executed either as a macro or as batch process, with the same results.<br> We suggest Batch Mode processing for faster results. <br>
 To execute in Macro Mode:
