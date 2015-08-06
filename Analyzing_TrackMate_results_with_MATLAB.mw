@@ -1,15 +1,15 @@
-This page documents the various ways to exchange data between [[TrackMate]] and MATLAB. 
+This page documents the various ways to exchange data between [[TrackMate]] and [[MATLAB]]. 
 
 == Introduction ==
 
 [[TrackMate]] was originally designed solely as a tracking tool. Its goal was just to generate the tracks then another tool was supposed to analyze these tracks. Nonetheless, we built some crude analysis facilities in TrackMate for rapid inspection. But in no way they can compete with a proper dedicated, custom analysis tool. 
 
-I favor MATLAB as a tool for data analysis. Therefore the interoperability facilities first deal with this software. 
+I favor [[MATLAB]] as a tool for data analysis. Therefore the interoperability facilities first deal with this software. 
 
 
 == Location and installation of import functions ==
 
-These tools take the form of several, hopefully well documented MATLAB functions that are shipped with in your Fiji installation. All of them are located in the ''scripts'' folder of your Fiji package
+These tools take the form of several, hopefully well documented [[MATLAB]] functions that are shipped with in your Fiji installation. All of them are located in the ''scripts'' folder of your Fiji package
 
 <source lang="bash">
 tinevez@primevere:~/Development/fiji> cd ~/Applications/Fiji/Fiji.app/scripts/
@@ -22,14 +22,14 @@ Matlab3DViewerDemo_3.m       importTrackMateTracks.m
 tinevez@primevere:~/Applications/Fiji/Fiji.app/scripts> 
 </source>
 
-If you did not do it already, there is a configuration step to take in MATLAB, so as to make MATLAB aware of these files. You need to add the ''scripts'' folder to the MATLAB path: 
+If you did not do it already, there is a configuration step to take in [[MATLAB]], so as to make [[MATLAB]] aware of these files. You need to add the ''scripts'' folder to the [[MATLAB]] path: 
 
-In MATLAB, select in the menu ''File>Set Path...'' and add the ''scripts'' folder there  (on Mac, the file chooser doesn't let you choose directories within .app packages, so you have to use the Matlab command <code>addpath('/Applications/Fiji.app/scripts')</code> or whatever folder works for you) .
+In [[MATLAB]], select in the menu ''File>Set Path...'' and add the ''scripts'' folder there  (on Mac, the file chooser doesn't let you choose directories within .app packages, so you have to use the [[MATLAB]] command <code>addpath('/Applications/Fiji.app/scripts')</code> or whatever folder works for you) .
 
 
 == Importing track files ==
 
-TrackMate has an action to export a simplified XML file containing only the tracks as spot positions. It is only suitable for linear tracks: tracks that are non-branching, non-merging. In that case, there is a MATLAB function that can use this XML file to import the tracks and retrieve the relevant metadata:
+TrackMate has an action to export a simplified XML file containing only the tracks as spot positions. It is only suitable for linear tracks: tracks that are non-branching, non-merging. In that case, there is a [[MATLAB]] function that can use this XML file to import the tracks and retrieve the relevant metadata:
 
 <source lang="matlab">
 >> [tracks, md] = importTrackMateTracks('RealPhotobac20min_Tracks.xml');
@@ -63,9 +63,9 @@ There exists one flag that can remove the Z dimension in 2D case. And another th
 
 == Application examples and links ==
 
-There are some specialized tools in MATLAB that can exploit TrackMate results. 
-For instance, here is a MATLAB class that performs [http://www.mathworks.com/matlabcentral/fileexchange/40692-mean-square-displacement-analysis-of-particles-trajectories mean-square displacement analysis].
-It is hopefully well documented in this [http://www.mathworks.com/matlabcentral/fileexchange/40692-mean-square-displacement-analysis-of-particles-trajectories/content/msdanalyzer/MSDTuto.html MATLAB tutorial].
+There are some specialized tools in [[MATLAB]] that can exploit TrackMate results. 
+For instance, here is a [[MATLAB]] class that performs [http://www.mathworks.com/matlabcentral/fileexchange/40692-mean-square-displacement-analysis-of-particles-trajectories mean-square displacement analysis].
+It is hopefully well documented in this [http://www.mathworks.com/matlabcentral/fileexchange/40692-mean-square-displacement-analysis-of-particles-trajectories/content/msdanalyzer/MSDTuto.html [[MATLAB]] tutorial].
 
 
 
