@@ -14,7 +14,7 @@
 | category               =[[:Category:Plugins|Plugins]]
 | website                = [https://github.com/DanielMaidana/TUNEL TUNEL Cell Counter at GitHub]
 }}<br>[[Category:Development]]
-'''TUNEL Cell Counter''' is a free, open source plugin created for ImageJ 2 and FIJI, developed by Daniel E. Maidana, M.D. and Demetrios G. Vavvas, M.D., Ph.D. at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. TUNEL Cell Counter has been validated for retinal TUNEL assay quantitation in cryo-sections. TUNEL Cell Counter is able to analyze digital images obtained from fluorescent microscopes, segment the outer nuclear (ONL) and inner nuclear layer (INL), and count TUNEL<sup>+</sup> cell in each layer. After analysis, TUNEL Cell Counter generates an array with several output variables. Additionally, the macro generates a merged image with segmented layers and quantitated cells, for visual assessment of macro performance. 
+'''TUNEL Cell Counter'''' is a free, open source plugin created for ImageJ 2 and FIJI, developed by Daniel E. Maidana, M.D. and Demetrios G. Vavvas, M.D., Ph.D. at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. TUNEL Cell Counter has been validated for retinal TUNEL assay quantitation in cryo-sections. TUNEL Cell Counter is able to analyze digital images obtained from fluorescent microscopes, segment the outer nuclear (ONL) and inner nuclear layer (INL), and count TUNEL<sup>+</sup> cell in each layer. After analysis, TUNEL Cell Counter generates an array with several output variables. Additionally, the macro generates a merged image with segmented layers and quantitated cells, for visual assessment of macro performance. 
 __TOC__
 
 == Overview ==
@@ -24,7 +24,7 @@ TUNEL Cell Counter is a custom-built and validated ImageJ macro that processes d
 Please read carefully before using this macro.
 You will need the following information before you start quantitating images.
 === Microscope Calibration ===
-[[File:Scale.png|200px|thumb|right|Replace the value 3095.975 in the source code with your microscope spatial scale.]]
+[[File:Scale.png|250px|thumb|right|Replace the value 3095.975 in the source code with your microscope spatial scale.]]
 To convert pixels to mm<sup>2</sup>, the image spatial scale is required. This can be found in the image metadata or in the microscope's bundled software.
 :For validation purposes, we acquired images with Axio Imager M2 fluorescence microscope (Carl Zeiss Inc., NY) using a 20x/0.8 air objective. The spatial scale was: 3095.975 pixels/mm.
 <source lang="java">
@@ -46,8 +46,8 @@ The original ONL and INL image datasets used for validation purposes are availab
 #Go to ''Plugins > Macros > Install'' and select the downloaded '''.ijm''' file.
 
 == TUNEL Cell Counter ==
-[[File:Stack - Macro.gif|450px|thumb|Representative animation of Macro Mode. Processing time is ~14 seconds/image.]]
-[[File:Stack - Batch.gif|450px|thumb|Representative animation of Batch Mode. Processing time is ~2.7 seconds/image.]]
+[[File:Stack - Macro.gif|250px|thumb|Representative animation of Macro Mode. Processing time is ~14 seconds/image.]]
+[[File:Stack - Batch.gif|250px|thumb|Representative animation of Batch Mode. Processing time is ~2.7 seconds/image.]]
 === Segmentation ===
 The following processes are executed by the macro:
 *'''ONL Segmentation'''
@@ -96,7 +96,7 @@ To execute in Batch Mode:
 
 == Macro Output ==
 === Qualitative ===
-[[File:Montage.jpg|right|265px|thumb|Example of an original TUNEL assay image (top) after macro processing (bottom).]]
+[[File:Montage.jpg|right|250px|thumb|Example of an original TUNEL assay image (top) after macro processing (bottom).]]
 :A JPEG image is created to visualize ONL and INL segmentation and TUNEL<sup>+</sup> cell count, as an overlay.
 === Quantitative ===
 When executed as a macro, the output variables are:
@@ -112,9 +112,8 @@ When executed as a macro, the output variables are:
 :*INL Total Cells (count)
 :*INL TUNEL<sup>+</sup> Cells (count)
 :*Ratio TUNEL<sup>+</sup> Cells/INL Area (count/mm<sup>2</sup>)
-:*Percentage TUNEL<sup>+</sup> Cells/INL Total Cells (%)
-[[File:Bar.png|1050px]]
-
+:*Percentage TUNEL<sup>+</sup> Cells/INL Total Cells (%)<br>
+[[File:Bar.png|right|250px|thumb|A new window is generated with the output variables.]]
 When executed as Batch Mode, ONL and INL Area, and ONL and INL TUNEL<sup>+</sup> cells are reported.
 Ratio of TUNEL<sup>+</sup> Cells can be calculated by any spreadsheet or statistics package. 
 
@@ -147,7 +146,5 @@ We are currently working on the following issues:
 
 == External Links ==
 http://www.masseyeandear.org
-
 == References ==
-
-[1]
+#Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG (2015) A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Currently under revision.''
