@@ -119,7 +119,7 @@ When executed as a macro, the output variables are:
 :*INL TUNEL<sup>+</sup> Cells (count)
 :*Ratio TUNEL<sup>+</sup> Cells/INL Area (count/mm<sup>2</sup>)
 :*Percentage TUNEL<sup>+</sup> Cells/INL Total Cells (%)<br>
-[[File:Bar.png|right|250px|A new window is generated with the output variables.]]
+[[File:Bar.png|right|250px|thumb|A new window is generated with the output variables.]]
 When executed as Batch Mode, ONL and INL Area, and ONL and INL TUNEL<sup>+</sup> cells are reported.
 Ratio of TUNEL<sup>+</sup> Cells can be calculated by any spreadsheet or statistics package.
 
