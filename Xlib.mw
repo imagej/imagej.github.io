@@ -28,7 +28,7 @@ The following plugins are included:
 
 '''Data Import:'''
 *  [[#Closest Cluster|"Closest Cluster"]]: Engine for finding the closest candidate to a list of chemical substances
-*  [[#Import DMP|"Import DMP"]]: Import elementary image data from ".dmp" files (e.g. originating from Matlab)
+*  [[#Import DMP|"Import DMP"]]: Import elementary image data from ".dmp" files (e.g. originating from [[MATLAB]])
 '''Filtering:'''
 *  [[#Anisotropic Diffusion|"Anisotropic Diffusion"]]: Anisotropic diffusion
 *  [[#Canny Edge|"Canny Edge"]]: Canny edge detection
@@ -69,7 +69,7 @@ The program can be used in combination with the [[#Cluster Image|"Cluster Image"
 === Import DMP ===
 DMP is a simple data format for the storage of 2D images.  It is used at IBT from the ETH and University of Zürich.  The first two short integer entries of the data file are reserved for providing the width and the heigth of the image.  The next short integer is reserved.  Thereafter (i.e. after the first 6 bytes) follows the image data itself, each pixel given by a 32-bit floating number.
 
-A short Matlab code for writing such an image variable "image" with the size "width" and "heigth" is given below:
+A short [[MATLAB]] code for writing such an image variable "image" with the size "width" and "heigth" is given below:
 
 <source lang="matlab"> 
 fid=fopen(file,'w');
@@ -80,7 +80,7 @@ fwrite(fid,image','float32');
 fclose(fid);
 </source>
 
-Reading the a DMP image with Matlab can be achieved like this:
+Reading the a DMP image with [[MATLAB]] can be achieved like this:
 
 <source lang="matlab"> 
 fid=fopen(filename);
@@ -740,7 +740,7 @@ PDS's can be defined in different ways and must be chosen according to the speci
 |style="vertical-align:top" |[[Image:xFig8_3.jpg|thumb|right|800px|3D volume of cement paste (OPC CEM 1, 42.5, w/c 0.35, 28 days hydration) acquired by FIB-nanotomography (top) and its pore size distributions of varying definition (bottom, see referenced paper).]]
 |}
 
-The above figure (top) shows a picture of a 3D volume of cement paste measured by FIB-nanotomography at a pixel size of 14.84 x 18.84 x 30.0 nm^3.  The pores have been segmented by thresholding and different definitions of PSD's have been calculated in slice-wise 2D as well as in real 3D (bottom graph, containing the results of the PSD calculations visualized by Matlab).
+The above figure (top) shows a picture of a 3D volume of cement paste measured by FIB-nanotomography at a pixel size of 14.84 x 18.84 x 30.0 nm^3.  The pores have been segmented by thresholding and different definitions of PSD's have been calculated in slice-wise 2D as well as in real 3D (bottom graph, containing the results of the PSD calculations visualized by [[MATLAB]]).
 
 * {{Citation
 | last = Münch
