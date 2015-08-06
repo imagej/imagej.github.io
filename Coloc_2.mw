@@ -80,11 +80,19 @@ Please see the [[Colocalization Analysis]] page for further discussion of precau
 
 == To Do List ==
 
-Coloc_2 issue tracker is found on GITHUB with the source code
+Coloc_2 issue tracker is found on GITHUB.com along with the source code
 https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aopen+is%3Aissue
-bugs can be reported there. This list is for more general ideas, yet to be fully defined as issues in the tracker. 
+bugs can be reported there:
 
-Old to do list and design notes are found here: https://github.com/fiji/Colocalisation_Analysis/wiki/DesignNotes
+Open Bug reports and other open issues can be seen here: https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aopen+is%3Aissue
+
+Fixed bugs and resolved issues can be seen here: https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aissue+is%3Aclosed
+
+This list is for more general ideas, yet to be fully defined as issues in the tracker. 
+
+The contents of the old to do list and design notes are found here: https://github.com/fiji/Colocalisation_Analysis/wiki/DesignNotes
+
+The items below will be moved to the issue tracker or design document as appropriate. 
 
 # Bug tracker issue no.17  Add Tests and implementation for %Colocalization by intensity and pixels(or voxels) wrt each channel, as per the depreciated Colocalization Threshold plugin - force use of a ROI or mask, as only then do these measures make sense. Add docs for this. 
 # Missing Feature?: implement flags in GUI to turn on and off desired output values??? Or does this break the idea of having a standardized output? Perhaps instead just make sure the IJ.log output is easily parse-able by humans and machines.
