@@ -69,6 +69,10 @@ Using ImageJ Opener (.tif):
 
 It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate [[Linux_command_line_tutorial]] page that explains the bare essentials.
 
+=== Snakemake for workflow ===
+
+[https://bitbucket.org/johanneskoester/snakemake/wiki/Home Snakemake] (command-line workflow engine) is used to automatically execute individual steps in the workflow. The workflow documented on this page was tested with snakemake 3.3 (interfaced with [www.pyyaml.org PyYAML](version 3.11) and [https://github.com/pygridtools/drmaa-python python drmaa](version 0.7.6) support.
+
 === Fiji for workflow ===
 
 We provide a Fiji version that we test for compatibility with the automated cluster processing and will from time to time upgrade. 
@@ -133,7 +137,6 @@ The master_preprocesing.sh file is the configuration script that contains the in
     ├── resaving.bsh
     └── submit-jobs
 </source>
-
 
 == workflow ==
 
