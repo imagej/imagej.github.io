@@ -6,13 +6,13 @@
 | name                   = TUNEL Cell Counter
 | author                  = [[User:Daniel E. Maidana| '''Daniel E. Maidana, M.D.''']] <br> [https://connects.catalyst.harvard.edu/Profiles/display/Person/39774 '''Demetrios G. Vavvas, M.D., Ph.D.''']
 | maintainer           = '''Daniel E. Maidana, M.D.''' <br> Angiogenesis Laboratory <br>Massachusetts Eye and Ear Infirmary <br> Harvard Medical School ([mailto:Daniel_Maidana@MEEI.HARVARD.EDU Daniel_Maidana@meei.harvard.edu])
-| filename              = [https://github.com/DanielMaidana/TUNEL TUNEL Cell Counter at GitHub]
-| source                 = {{GitHub|org=fiji|repo=TUNEL}}
+| filename              = [https://github.com/DanielMaidana/TUNEL_Cell_Counter/archive/master.zip TUNEL Cell Counter.ijm at GitHub]
+| source                 = {{GitHub|org=fiji|repo=TUNEL_Cell_Counter}}
 | released              = August 8<sup>th</sup>, 2015
 | latest version      = August 8<sup>th</sup>, 2015
 | status                  = Stable, active, and validated
 | category               =[[:Category:Plugins|Plugins]]
-| website                = [https://github.com/DanielMaidana/TUNEL TUNEL Cell Counter at GitHub]
+| website                = [https://github.com/DanielMaidana/TUNEL_Cell_Counter TUNEL Cell Counter at GitHub]
 }}<br>
 '''TUNEL Cell Counter'''' is a free, open source plugin created for ImageJ 2 and FIJI, developed by Daniel E. Maidana, M.D. and Demetrios G. Vavvas, M.D., Ph.D. at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. TUNEL Cell Counter has been validated for TUNEL assay quantitation in retinal cryo-sections. TUNEL Cell Counter is able to analyze digital images obtained from fluorescent microscopes, segment the outer nuclear (ONL) and inner nuclear layer (INL), and count TUNEL-positive (TUNEL<sup>+</sup>) cells in each retinal layer. After analysis, TUNEL Cell Counter generates an array with several output variables. Additionally, the macro generates a merged image with segmented layers and quantitated cells, for visual assessment of macro performance. 
 __TOC__
