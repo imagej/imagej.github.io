@@ -104,7 +104,7 @@ To execute in Batch Mode:
 [[File:Montage.jpg|right|250px|thumb|Example of an original TUNEL assay image (top) after macro processing (bottom).]]
 :A JPEG image is created to visualize ONL and INL segmentation and TUNEL<sup>+</sup> cell count, as an overlay.
 === Quantitative ===
-When executed as a macro, the output variables are:
+When executed in Macro Mode, the output variables are:
 :'''Outer Nuclear Layer'''
 :*ONL Area (mm<sup>2</sup>)
 :*ONL Total Cells (count)
@@ -119,8 +119,8 @@ When executed as a macro, the output variables are:
 :*Ratio TUNEL<sup>+</sup> Cells/INL Area (count/mm<sup>2</sup>)
 :*Percentage TUNEL<sup>+</sup> Cells/INL Total Cells (%)<br>
 [[File:Bar.png|right|250px|thumb|A new window is generated with the output variables.]]
-When executed as Batch Mode, ONL and INL Area, and ONL and INL TUNEL<sup>+</sup> cells are reported.
-Ratio of TUNEL<sup>+</sup> Cells can be calculated by any spreadsheet or statistics package.
+When executed in Batch Mode, ONL and INL Area, and ONL and INL TUNEL<sup>+</sup> cells are reported. These values were used for macro validation.
+<br>Ratio of TUNEL<sup>+</sup> Cells can be calculated by any spreadsheet or statistics package.
 
 == Limitations == 
 #Acquisition: The macro was designed for images acquired with a 20x/0.8 air objective. Images with higher or lower magnification will not be successfully segmented. We considered this magnification was the most suitable to assess a reasonably large area without missing out cell morphology details.
