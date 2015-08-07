@@ -8,7 +8,7 @@
 | maintainer           = '''Daniel E. Maidana, M.D.''' <br> Angiogenesis Laboratory <br>Massachusetts Eye and Ear Infirmary <br> Harvard Medical School ([mailto:Daniel_Maidana@MEEI.HARVARD.EDU Daniel_Maidana@meei.harvard.edu])
 | filename              = [https://github.com/DanielMaidana/TUNEL_Cell_Counter/archive/master.zip TUNEL Cell Counter]
 | source                 = [https://github.com/DanielMaidana/TUNEL_Cell_Counter/blob/master/TUNEL%20Cell%20Counter.ijm TUNEL Cell Counter Code]
-| released              = August 8<sup>th</sup>, 2015
+| released              = February 15<sup>th</sup>, 2015
 | latest version      = August 8<sup>th</sup>, 2015
 | status                  = Stable, active, and validated
 | category               =[[:Category:Plugins|Plugins]]
@@ -90,7 +90,7 @@ To execute in Macro Mode:
 #After processing, select "Results" window and go to ''File > Save as'', and save results as '''.csv''' file.
 
 To execute in Batch Mode:
-#Inspect the macro code from the GitHub link.<br>
+#Inspect the macro source code from the GitHub link.<br>
 #Copy the whole code to the clipboard.
 #Go to ''Process > Batch > Macro'' and paste the content in the macro box.
 #Correct microscope spatial scale in line 32 of the code, if necessary.
