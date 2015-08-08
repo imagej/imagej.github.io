@@ -91,7 +91,7 @@ New after version 2.0.2, hopefully going into version 2.0.3:
 ## Numerical results and image stats are currently spewed into the IJ.log window. This is done separately from the way results are put into the simple results display window or the PDF output. So there three differently formatted results outputs with different stuff in them. Different ResultsHandler implementations like PDF or Simple can and do show a different selection of results. This is over complicated, so it should be made into one thing, that outputs the same numerical results and stats values, in the same order in all ResultsHander implementations: GUI display and PDF output, and also the IJ.log. Can reuse the ValueResults class for all three by doing the same thing in each. 
 ### commit https://github.com/fiji/Colocalisation_Analysis/commit/a493b2c88a14f4f6403451aeee6989bf7a2becfb Make IJ.log writing only happen once and only in the default ResultHandler that's always used. 
 ### commits https://github.com/fiji/Colocalisation_Analysis/commit/e833597d7d8a7b4d3db747512f6048d67d61d120 and https://github.com/fiji/Colocalisation_Analysis/commit/75184e88cd6c1e0914ec87caebe97494002bcd4e Get the Coloc job name from the DataContainer image names, and also add the mark/ROI ID to the job name in case there are multiple ROIs. 
-# 08-2015 Fixed in fiji master github repo:
+# 08-2015 Fixed in fiji master github repo commit https://github.com/fiji/Colocalisation_Analysis/commit/6318f0f29ba6fd938674225a43cdba4c0909acc6:
 ## Running as imageJ macro command fails because of the parameter: show_"save_pdf"_dialog. Probably the "" are messing up the run(Coloc_2, "params"); text string parameters. So need to get rid of the "" around save_pdf.
 
 == Ideas List ==
