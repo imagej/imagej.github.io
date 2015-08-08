@@ -82,7 +82,7 @@ Please see the [[Colocalization Analysis]] page for further discussion of precau
 == Newly added features and squashed bugs ==
 The definitive list of new features and fixes is the source code history as shown by the GIT history here: https://github.com/fiji/Colocalisation_Analysis/commits/master
 This is just an easy to check, casual list for users, and might not be up to date. 
-These might not yet all be in the version of the Coloc_2 plugin released into the imageJ/Fiji updater; you can see that version listed in the updater. 
+These might not yet all be in the version of the Coloc_2 plugin released into the imageJ/Fiji updater; you can see that version listed in the command finder in the file column. 
 
 New after version 2.0.2, hopefully going into version 2.0.3:
 # 08-2015 Fixed in fiji master github repo by commit https://github.com/fiji/Colocalisation_Analysis/commit/492b846c032bd85651ffce7b52c96b3520eff6bb:
