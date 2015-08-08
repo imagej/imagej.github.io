@@ -79,7 +79,7 @@ Whether or not to consider zero - zero pixels as part of the interesting data fo
 
 Please see the [[Colocalization Analysis]] page for further discussion of precautions.
 
-== To Do List ==
+== Ideas List ==
 
 Coloc_2 issue tracker is found on GITHUB.com along with the source code
 https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aopen+is%3Aissue
@@ -89,7 +89,7 @@ Open Bug reports and other open issues can be seen here: https://github.com/fiji
 
 Fixed bugs and resolved issues can be seen here: https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aissue+is%3Aclosed
 
-This list is for more general ideas, yet to be fully defined as issues in the tracker. 
+This list is for more random, vague or uncertain ideas, which are not yet well enough thought through to be adequately defined as solvable  issues in the tracker on GITHUB.com. 
 
 The contents of the old to do list and design notes are found here: https://github.com/fiji/Colocalisation_Analysis/wiki/DesignNotes
 
