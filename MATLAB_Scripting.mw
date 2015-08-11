@@ -39,7 +39,7 @@ matrixSum = sum(ans)
 </source>
 
 <p>
-This script will take the active Dataset, set it as an array variable named "data" in [[MATLAB]], and set the matrixSum output value to the sum of the first three dimensions of the dataset. Scripts requiring Fiji/ImageJ classes without auto-conversion support should [[#Running Fiji within [[MATLAB]] | launch Fiji from within MATLAB]].
+This script will take the active Dataset, set it as an array variable named "data" in [[MATLAB]], and set the matrixSum output value to the sum of the first three dimensions of the dataset. Scripts requiring Fiji/ImageJ classes without auto-conversion support should [[#Running Fiji within MATLAB | launch Fiji from within MATLAB]].
 </p>
 
 == Running Fiji within MATLAB ==
