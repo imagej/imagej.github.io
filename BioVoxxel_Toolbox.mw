@@ -125,7 +125,7 @@ Future: suggestions are welcome!
 
 ----
 
-=Watershed Irregular Structures=
+=Watershed Irregular Features=
 
 Purpose: The standard watershed algorithm in ImageJ is very usefull to separate connected, roughly circular structures. Nevertheless, it gets into trouble while separating irregular structures. The Irregular Watershed enables the user to separate also irregular shaped structures to a certain extend.
 
