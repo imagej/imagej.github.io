@@ -1,10 +1,10 @@
 {{Infobox
 | software               = ImageJ / Fiji
 | name                   = BioVoxxel Toolbox
-| author                 = Jan Brocher
+| author                 = Jan Brocher, Thorsten Wagner
 | website                = [http://www.biovoxxel.de/index.html www.biovoxxel.de]
 | maintainer             = Jan Brocher
-| latest version         = 02. July 2015
+| latest version         = 11. August 2015
 | source                 =[http://www.biovoxxel.de/BioVoxxel%20Macro%20Toolset/BioVoxxel_Plugins.jar BioVoxxel Plugins], [http://www.biovoxxel.de/BioVoxxel%20Macro%20Toolset/BioVoxxel_Toolsets.zip BioVoxxel Toolset]
 | category               = [[:Category:Particle analysis|Particle analysis]], [[:Category:Binary|Binary]], [[:Category:Filtering|Filtering]]
 }}
@@ -137,7 +137,7 @@ Form: plugin, recordable
 
 Status: maintenance active
 
-15-0510: thanks to Jan Eglinger and Wayne Rasband works with stacks, bugfix regarding results table handling, no invalid number dialog when number field is empty
+Thanks to Thorsten Wagner which provided the ij-blobs library as basis and the idea to integrate convexity as a second parameter to make the function scale invariant and more flexible. 
 
 Future: other erosion algorithms will potentially be included to improve the watershedding
 
