@@ -130,7 +130,7 @@ The workshop will give a short introduction on the influence of contrast adjustm
 === Jean-Marie Burel and Petr Walczysko - The OMERO platform for management of microscopy data and beyond ===
 In this workshop, we will outline and demonstrate the [[OMERO]] platform, and show how you can use it to work with your microscopy and/or HCS data. In addition we will demonstrate some of the applications that have been released by OME and some of the integration with 3rd party tools, including:
 * OMERO.figure - fast figures from your OMERO images
-* ImageJ - improved interaction with OMERO
+* [[ImageJ]] - improved interaction with OMERO
 * [[Micro-Manager]] - how to import directly images to OMERO
 We've designed OMERO to be as flexible as possible, and this has enabled its use in a range of imaging domains, including light and electron microscopy, high content screening. Come along to the workshop and bring your favourite data.
 
