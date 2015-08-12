@@ -9,26 +9,25 @@
 }}
 {{Scripting}}
 
-<h1>MATLAB tutorial for ImageJ</h1>
+
+=MATLAB tutorial for ImageJ=
 
 == Prerequisites ==
 
-<ul>
-<li>[[How_to_follow_a_3rd_party_update_site|Add the update site]]:  <code><nowiki>http://sites.imagej.net/MATLAB/</nowiki></code></li>
-<li>You will need to install your own licensed copy of [http://www.mathworks.com/products/matlab/ MATLAB]. All that is provided with ImageJ are adapters for evaluating scripts written in ImageJ to [[MATLAB]], and converters between ImageJ and [[MATLAB]] data structures.</li>
-<li>If you've new to [[MATLAB]], first check out Mathworks' [http://www.mathworks.com/help/matlab/getting-started-with-matlab.html getting started guide].</li>
-<li>If you're familiar with the [[MATLAB]] language but haven't written .m scripts before, look through the [http://www.mathworks.com/help/matlab/scripts.html script examples].</li>
-</ul>
+* [[How_to_follow_a_3rd_party_update_site|Add the update site]]:  <code><nowiki>http://sites.imagej.net/MATLAB/</nowiki></code>
+* You will need to install your own licensed copy of [http://www.mathworks.com/products/matlab/ MATLAB]. All that is provided with ImageJ are adapters for evaluating scripts written in ImageJ to [[MATLAB]], and converters between ImageJ and [[MATLAB]] data structures.
+* If you've new to [[MATLAB]], first check out Mathworks' [http://www.mathworks.com/help/matlab/getting-started-with-matlab.html getting started guide].
+* If you're familiar with the [[MATLAB]] language but haven't written .m scripts before, look through the [http://www.mathworks.com/help/matlab/scripts.html script examples].
 
 == Creating MATLAB scripts inside ImageJ ==
 
-<p>Using the [[Script Editor]] you will be able to select [[MATLAB]] from the [[Script_Editor#Choosing_a_language | language menu]]. You can also install and run .m scripts via the [[Scripting_Help#Creating_scripts_and_using_.22refresh_scripts.22 | standard script plugin infrastructure]].</p>
+Using the [[Script Editor]] you will be able to select [[MATLAB]] from the [[Script_Editor#Choosing_a_language | language menu]]. You can also install and run .m scripts via the [[Scripting_Help#Creating_scripts_and_using_.22refresh_scripts.22 | standard script plugin infrastructure]].
 
-<p>Actually running a [[MATLAB]] script from ImageJ is effectively like calling [http://www.mathworks.com/help/matlab/ref/eval.html eval] on the script's contents. The script will be evaluated as such in a remote [[MATLAB]] instance (which will be launched automatically, if needed). Options for controlling the startup of [[MATLAB]], or killing existing [[MATLAB]] processes (e.g. if hidden) can be accessed via <code>Edit > Options > [[MATLAB]]...</code></p>
+Actually running a [[MATLAB]] script from ImageJ is effectively like calling [http://www.mathworks.com/help/matlab/ref/eval.html eval] on the script's contents. The script will be evaluated as such in a remote [[MATLAB]] instance (which will be launched automatically, if needed). Options for controlling the startup of [[MATLAB]], or killing existing [[MATLAB]] processes (e.g. if hidden) can be accessed via <code>Edit > Options > [[MATLAB]]...</code>
 
-<p>NB: because the script is being passed from ImageJ to a remote [[MATLAB]], [[MATLAB]] will not have access to ImageJ's classpath. Objects can be passed as variables to [[MATLAB]] (e.g. by using @ annotation) but only if they are valid [[MATLAB]] classes or specially handled classes.</p>
+NB: because the script is being passed from ImageJ to a remote [[MATLAB]], [[MATLAB]] will not have access to ImageJ's classpath. Objects can be passed as variables to [[MATLAB]] (e.g. by using @ annotation) but only if they are valid [[MATLAB]] classes or specially handled classes.
 
-<p>For example, by default all [http://matlabcontrol.googlecode.com/svn/javadocs/doc/matlabcontrol/extensions/MatlabNumericArray.html MatlabNumericArrays] will be converted to matrices within [[MATLAB]]. We also support auto-conversion of ImageJ Datasets out of the box, which can be read in by scripts using "@matrix" parameters:</p>
+For example, by default all [http://matlabcontrol.googlecode.com/svn/javadocs/doc/matlabcontrol/extensions/MatlabNumericArray.html MatlabNumericArrays] will be converted to matrices within [[MATLAB]]. We also support auto-conversion of ImageJ Datasets out of the box, which can be read in by scripts using "@matrix" parameters:
 
 <source lang="matlab">
 % @matrix data
@@ -38,26 +37,24 @@ sum(ans)
 matrixSum = sum(ans)
 </source>
 
-<p>
 This script will take the active Dataset, set it as an array variable named "data" in [[MATLAB]], and set the matrixSum output value to the sum of the first three dimensions of the dataset. Scripts requiring ImageJ classes without auto-conversion support should [[#Running ImageJ within MATLAB | launch ImageJ from within MATLAB]].
-</p>
 
 == Running ImageJ within MATLAB ==
 
-<p>The ImageJ update site provides an <code>ImageJ.m</code> script that will start up an ImageJ instance inside a running [[MATLAB]] application. Launching the script is the same as for [[Miji]]:
+The ImageJ update site provides an <code>ImageJ.m</code> script that will start up an ImageJ instance inside a running [[MATLAB]] application. Launching the script is the same as for [[Miji]]:
 
 <source lang="matlab">
 addpath('/Applications/Fiji.app/scripts') % Update for your ImageJ installation as appropriate
 ImageJ;
 </source>
 
-The startup process automatically injects the ImageJ classpath into the [[MATLAB]] classpath, merging the two. At this point, you'll have a working ImageJ and can now [[#Creating MATLAB scripts inside ImageJ|run MATLAB scripts as normal]] with access to the full unified classpath.</p>
+The startup process automatically injects the ImageJ classpath into the [[MATLAB]] classpath, merging the two. At this point, you'll have a working ImageJ and can now [[#Creating MATLAB scripts inside ImageJ|run MATLAB scripts as normal]] with access to the full unified classpath.
 
-<p>Additionally, the {{GitHub|org=scijava|repo=scripting-matlab|label=Scripting-MATLAB}} library also includes an extensible [[MATLAB]] command framework. This allows for the creation of utility classes that will be automatically populated into [[MATLAB]] variables for easy access. For example, you could use ImageJ to open a dataset and perform thresholding (or any other processing steps), then in [[MATLAB]] use the <code>IJM.importDataset</code> command to set the active dataset as a [[MATLAB]] matrix variable, for further analysis.</p>
+Additionally, the {{GitHub|org=scijava|repo=scripting-matlab|label=Scripting-MATLAB}} library also includes an extensible [[MATLAB]] command framework. This allows for the creation of utility classes that will be automatically populated into [[MATLAB]] variables for easy access. For example, you could use ImageJ to open a dataset and perform thresholding (or any other processing steps), then in [[MATLAB]] use the <code>IJM.importDataset</code> command to set the active dataset as a [[MATLAB]] matrix variable, for further analysis.
 
 == Importing classes ==
 
 {{ImportingClasses|lang=MATLAB}}
-<p>When running ImageJ externally, [[MATLAB]] will not have ImageJ classes in its classpath - so they can not simply be imported. Although [[MATLAB]] does support [http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html editing its classpath] this is NOT recommended, as the classes loaded by [[MATLAB]] will not be the same as those loaded in ImageJ.</p>
+When running ImageJ externally, [[MATLAB]] will not have ImageJ classes in its classpath - so they can not simply be imported. Although [[MATLAB]] does support [http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html editing its classpath] this is NOT recommended, as the classes loaded by [[MATLAB]] will not be the same as those loaded in ImageJ.
 
-<p>Instead, you can [[#Running ImageJ within MATLAB|launch ImageJ inside MATLAB]] and have it take care of managing the class loading for you. [[MATLAB]] then supports the use of import statements to [http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html#f46341 simplify class names].</p>
+Instead, you can [[#Running ImageJ within MATLAB|launch ImageJ inside MATLAB]] and have it take care of managing the class loading for you. [[MATLAB]] then supports the use of import statements to [http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html#f46341 simplify class names].
