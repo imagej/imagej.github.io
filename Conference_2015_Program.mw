@@ -11,6 +11,14 @@ This page describes the full program for the [[Conference 2015|2015 ImageJ User 
 
 = Abstracts =
 
+== Keynotes ==
+
+There will be four keynote presentations:
+* Wayne Rasband - Introduction to ImageJ
+* Curtis Rueden - The ImageJ2 platform, and Fiji distribution of ImageJ
+* Mark Tsuchida - Microscope Control and Image Acquisition with Micro-Manager
+* Florian Jug - Getting stuff done – Software synergy with ImageJ + KNIME
+
 == Lightning talks ==
 
 === Anne Alerding - Quantifying soybean stem tissues using common tools in ImageJ & Fiji ===
