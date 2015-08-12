@@ -57,12 +57,7 @@ The Software Assurance Marketplace (SWAMP) is a no-cost, open, high-performance 
 
 === Melissa Linkert - OME Bio-Formats: 10 years of proprietary image data ===
 
-Despite significant advances in biological imaging and analysis, major informatics challenges remain unsolved: file formats are proprietary, storage and analysis facilities are lacking, as are standards for sharing image data and results. The Open Microscopy Environment (OME) [2] is an open-source software framework developed to address these challenges. OME has three components—an open data model for biological imaging: OME data model; standardised file formats (OME-TIFF) and software libraries for file conversion (Bio-Formats [3]); and a software platform for image data management and analysis (OMERO [4]). OME has now been developing the Bio-Formats library for 10 years, during which time it has seen rapid advances in the number of file formats and imaging modalities that are supported. In recognition of this milestone, we will discuss the history of Bio-Formats, notable improvements in the recent 5.1.x releases, and plans for supporting the next generation of imaging technology.
-
-* [1] http://glencoesoftware.com
-* [2] http://openmicroscopy.org
-* [3] http://openmicroscopy.org/site/products/bio-formats
-* [4] http://openmicroscopy.org/site/products/omero
+Despite significant advances in biological imaging and analysis, major informatics challenges remain unsolved: file formats are proprietary, storage and analysis facilities are lacking, as are standards for sharing image data and results. The [[Open Microscopy Environment]] (OME) is an [[open-source]] software framework developed to address these challenges. OME has three components: 1) an open data model for biological imaging, the OME data model; 2) standardized file formats (OME-TIFF) and software libraries for file conversion ([[Bio-Formats]]); and 3) a software platform for image data management and analysis ([[OMERO]]). OME has now been developing the Bio-Formats library for 10 years, during which time it has seen rapid advances in the number of file formats and imaging modalities that are supported. In recognition of this milestone, we will discuss the history of Bio-Formats, notable improvements in the recent 5.1.x releases, and plans for supporting the next generation of imaging technology.
 
 === Michael Majurski - Accurate and scalable Microscopy Image Stitching Tool (MIST) ===
 
