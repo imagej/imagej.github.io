@@ -45,7 +45,7 @@ Plant organs such as stems are composed of tissues containing thick and thin-wal
 
 Despite significant advances in biological imaging and analysis, major informatics challenges remain unsolved: file formats are proprietary, storage and analysis facilities are lacking, as are standards for sharing image data and results. The [[Open Microscopy Environment]] (OME) is an open-source software framework developed to address these challenges. OME has three components—an open data model for biological imaging: OME data model; standardized file formats (OME-TIFF) and software libraries for file conversion ([[Bio-Formats]]); and a software platform for image data management and analysis ([[OMERO]]). The Java-based OMERO client-server platform comprises an image metadata store, an image repository, visualization and analysis by remote access, enabling sharing and publishing of image data. OMERO’s model-based architecture has enabled its extension into a range of imaging domains, including light and electron microscopy, high content screening and recently into applications using non-image data from clinical and genomic studies [[http://www.openmicroscopy.org/site/products/partner 1]]. Our current version, OMERO-5, improves support for large datasets and reads images directly from their original file format, allowing access by third party software. OMERO and Bio-Formats run the [http://jcb-dataviewer.rupress.org/ JCB DataViewer], the world’s first on-line scientific image publishing system and several other institutional image data repositories (e.g. [[http://odr.stowers.org 2], [http://emdatabank.org/ 3]]).
 
-== Fabrice du Chaumont - Yet another ImageJ friend: Icy ==
+== Fabrice de Chaumont - Yet another ImageJ friend: Icy ==
 
 [[Icy]] is a free open-source bio-image analysis software. During its 3 years of life it has been continuously improved and continuously brings new features to users and developers. Today Icy is used by more than one thousands of regular users which appreciate its intuitive GUI, its ray-traced 3D visualization and its cutting-edge analysis methods. Users can also adapt and create new algorithms with script and the graphical programming protocol designer and store them on the Icy website which centralize all resources (http://icy.bioimageanalysis.org). Thus it makes available plug-ins, protocols and scripts to everybody. Centralization also allows searching directly from within the application for specific features and enables it in a one-click install. During the last months, Icy has received news exciting features: revisited 3D rendering based on latest VTK version and a new powerful Undo framework. Finally, Icy is always evolving, thanks to the feedback of all its users on http://icy.bioimageanalysis.org/support !
 
@@ -135,7 +135,7 @@ In this workshop, we will outline and demonstrate the [[OMERO]] platform, and sh
 * [[Micro-Manager]] - how to import directly images to OMERO
 We've designed OMERO to be as flexible as possible, and this has enabled its use in a range of imaging domains, including light and electron microscopy, high content screening. Come along to the workshop and bring your favourite data.
 
-== Fabrice du Chaumont and Stephane Dallongeville - Hands on Icy ! ==
+== Fabrice de Chaumont and Stephane Dallongeville - Hands on Icy ! ==
 In this practical workshop, discover how to use [[Icy]] to watch and analyse your images ! During this session, we will see the different functionalities of Icy in action, from visualization (2D/3D) to analysis based on a real biologic case with a lot of analysis traps ! Let's investigate !
 
 == Tiago Ferreira - Scripting with BAR ==
@@ -162,7 +162,7 @@ We have developed a standardized method for morphological staining of liver sect
 == Jan Brocher - The BioVoxxel Toolbox ==
 The "BioVoxxel Toolbox" is a collection of plugins and macros for Fiji and ImageJ which is designed to assist in various image processing and analysis tasks such as lighting and background correction, image filtering, high quality feature extraction as well as binary object analysis. An adaptive filter enables noise removal and flexibility during image filtering due to access to the filter kernel usage. The "Threshold Check" facilitates semi-quantitative assessment of 25 automatic binarization methods to achieve a high quality feature extraction. The "Speckle Inspector" allows an object-wise comparison of small features contained in bigger objects such as biomarker spots in cells or nuclei. Object extraction by secondary features is facilitated by the "Binary Feature Extractor". Analysis and classification of objects by size and shape descriptors is achieved by the "Extended Particle Analyzer" and the color-coded "Shape Descriptor Maps".
 
-== Fabrice du Chaumont - Icy: an open source software for image analysis ==
+== Fabrice de Chaumont - Icy: an open source software for image analysis ==
 In this poster we present a panel of Icy's features. Live demo based on your images, and we will try to process them thanks to one of the 300 image analysis plugins available in Icy !
 
 {{Cite Icy}}
