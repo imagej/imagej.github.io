@@ -154,6 +154,12 @@ The [[ImageJ2]] project updates ImageJ with powerful new features. Two especiall
 
 Posters will be available to browse at any time throughout the conference. There will also be a dedicated poster session on Thursday evening during the reception.
 
+== Ignacio Arganda-Carreras - Trainable Weka Segmentation ==
+TBD
+
+== Ignacio Arganda-Carreras - MorphoLibJ ==
+TBD
+
 == Desiree Benefield and Sherry Clendenon - Image Acquisition and Processing for Cell Based Model Instantiation and Validation ==
 Sherry G. Clendenon, Maciek Swat, Xiao Fu, Jeffrey L. Clendenon, James Sluka, James Glazier
 
@@ -174,6 +180,9 @@ The Morris Water Maze is a standard behavioral test used for assessing spatial m
 Vera Brockmeyer, Christian Moll, Eva Fiorinelli, Damien Bresson, Cécile Legallais, Charbel Mounayer and Andreas Jahnen
 
 Some complex intracranial aneurysms are treated using flow diverter stents. Evaluation of blood flow modification inside the aneurysm before and after treatment is mandatory to assess treatment efficiency. We compare 2D DSA pre- and post-stent sequences. The present work describes the interactive aneurysm segmentation algorithm. A combination of several algorithms and ImageJ plugins are used to segment the aneurysm. First the time series is Z projected. The actual segmentation is done using a graph cut algorithm. The Lazy Snapping variant of Yuri Boykov was implemented. An automatic segmentation is implemented with the Statistical Region Merging plugin. Results have been evaluated using the Hausdorff Distance and the Jaccard Coefficient. The combination of the selected Z-projection and application of the graph cut algorithm provides excellent segmentation results. If the user is not satisfied by the result, he can may interactively improve the segmentation. Limitations are on overlapping hyperdense structures (bones, implants, arteries or veins) and artery.
+
+== Larry Lindsey - TBD ==
+TBD
 
 == David Logan - The ImageJ-CellProfiler Interface ==
 CellProfiler is open-source cell image analysis software designed for biologists without training in computer vision or programming to quantitatively measure phenotypes from thousands of images automatically. Via its RunImageJ module, CellProfiler can load images, run an ImageJ macro or plugin on them, and retrieve the resulting images for downstream analysis. We have now created the converse: an ImageJ plugin that allows CellProfiler pipelines to be called from within ImageJ. This would allow established CellProfiler analysis pipelines to be utilized within an ImageJ workflow. This new functionality will be in our upcoming fall release, is available for preview in our trunk build, and will eventually be deployed with FIJI.
@@ -199,6 +208,12 @@ Neurogenesis plays a significant role in learning and memory, and its deficienci
 
 == John Parrish - Untitled ==
 The evaluation of sperm morphology has proven problematic due to variation in what observers term normal or abnormal. We developed methodology within ImageJ to threshold sperm nuclei labeled with a fluorescent DNA stain, output the perimeter coordinates and convert these to a Fourier Series from which harmonic amplitudes quantified components of sperm shape. The harmonic amplitudes were found related to bull fertility and environmental impacts of heat on males. It was also possible to create an average sperm nuclear shape for a male. We have further created a point-spread function from fluorescent microspheres. This was then used to deconvolve the fluorescent image of sperm nuclei to remove out-of-focus light. The resulting images were then subjected to nuclear texture analysis with the ImageJ Texture Analyzer (J. Cabrera). Sperm nuclear texture was related to bull fertility. ImageJ proved beneficial in the evaluation of sperm nuclear morphometry.
+
+== Tobias Pietzsch - BigDataViewer ==
+TBD
+
+== Stephan Saalfeld - ImgLib2 ==
+TBD
 
 == Md Abdul Kader Sagar - The SLIM Curve plugin for lifetime image analysis ==
 The SLIM Curve plugin for ImageJ is an ImageJ plugin for lifetime image analysis which uses the SLIM Curve library. SLIM Curve is an exponential curve fitting library used for Fluorescent Lifetime Imaging (FLIM) and Spectral Lifetime Imaging (SLIM). This time in excited state is affected by its chemical microenvironment such as proximity to other fluorophores, pH and hydrophobic regions. This ability has made FLIM a popular and unique tool for studies ranging from metabolic measurement to measuring distances between proteins. FLIM allows us to calculate how long a fluorophore stays in excited state. The need for analyzing different type of FLIM images from different system either independently or as part of an overall image analysis workflow was the motivation for development of open source SLIM Curve library.SLIM Curve Plugin uses rapid lifetime determination (RLD), Levenberg-Marquardt (LM) or hybrid (RLD+LM) fitting algorithms and can perform Single, double and triple exponential fits, as well as stretched exponential fits.
