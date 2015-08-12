@@ -46,9 +46,13 @@ Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs
 *** You should know approximately how big the PSF is (in pixels) in your images. 
 **** If you don't, go back and read about: What is the PSF and why it's important in colocalization analysis (for instance read the [[Media:Costes_etalColoc.pdf|Costes paper]] )
 **** This size determines what size of image chunks are shuffled in the randomization process. PSF sized image pieces make physical sense, as that's the size of the smallest features visible in the image. 
-* Click OK to run the analysis. 
-** You will be asked if you want to save the results as a PDF file (if the "Show Save PDF dialog" button was checked. So tell it where to save the PDF. This is standard output format, so you can compare with your friends,  same vs. same.
-*** Feel free to tell us what things you think should be included in this standardized PDF output file and how it should be formatted.
+* Click OK to run the analysis.
+* the results gui will open showing a table of numbers and one of several images
+** the images can be chosen on the Dropdown list. 
+** You can see the 2 Li plots, a scatterplot or 2D histogram with regression line, and input images and Roi.
+** the log checkbox allows display of images with or without log scaling, useful for eg. the scatterplot
+* You will be asked if you want to save the results as a PDF file (if the "Show Save PDF dialog" button was checked. So tell it where to save the PDF. This is standard output format, so you can compare with your friends,  same vs. same.
+** Feel free to tell us what things you think should be included in this standardized PDF output file and how it should be formatted. HTML? XML? Plain text?
 
 = Pitfalls of the Manders and Costes methods =
 
