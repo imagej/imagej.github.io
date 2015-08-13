@@ -54,7 +54,7 @@ ImageProcessor ip = img.getProcessor();  // current slice
 == Making a new image stack -- quickly! ==
 
 <source lang="java">
- ImagePlus image = IJ.createInstance("my image", "RGB", 640, 480, 20);
+ ImagePlus image = IJ.createImage("my image", "RGB", 640, 480, 20);
 </source>
 
 == How to display an exception in a window ==
