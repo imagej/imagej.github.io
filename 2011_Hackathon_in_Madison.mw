@@ -7,11 +7,11 @@ There were 25 people participating at various times, though only a few stayed fo
 The following chart illustrates who attended, and when everyone was present:
 
 <timeline>
-Preset = TimeHorizontal_AutoPlaceBars_UnitYear
+ImageSize  = width:550 height:auto barincrement:20
+PlotArea   = left:25 right:25 top:15 bottom:30
+TimeAxis   = orientation:horizontal format:dd/mm/yyyy
 
-ImageSize = width:500
-
-Colors =
+Colors = 
   id:c01 value:blue
   id:c02 value:red
   id:c03 value:green
@@ -32,66 +32,74 @@ Colors =
   id:c18 value:tan2
   id:c19 value:gray(0.3)
   id:gridLine value:gray(0.5)
-  id:gridCanvas value:gray(0.8)
+  id:canvas value:gray(0.7)
+  id:grid1  value:gray(0.4)
+  id:grid2  value:gray(0.2)
 
-BackgroundColors = canvas:gridCanvas
+BackgroundColors = canvas:canvas
+AlignBars  = justify
 
-Period = from:-4 till:13
+DateFormat = dd/mm/yyyy
+Period = from:27/01/2011 till:13/02/2011
 
-ScaleMajor = unit:year increment:1 start:-4 gridcolor:white
+ScaleMajor = increment:1 start:28/01/2011 unit:day grid:grid1 gridcolor:white
+ScaleMinor = increment:1 start:28/01/2011 unit:day grid:grid2 gridcolor:white
+#Legend = orientation:vertical left:35 top:130 
+PlotData =
+   align:left anchor:from fontsize:M width:15 shift:(4,-6) textcolor:black
 
 LineData =
-  at:-4 color:gridLine layer:back width:0.5
-  at:-3 color:gridLine layer:back width:0.5
-  at:-2 color:gridLine layer:back width:0.5
-  at:-1 color:gridLine layer:back width:0.5
-  at:0 color:gridLine layer:back width:0.5
-  at:1 color:gridLine layer:back width:0.5
-  at:2 color:gridLine layer:back width:0.5
-  at:3 color:gridLine layer:back width:0.5
-  at:4 color:gridLine layer:back width:0.5
-  at:5 color:gridLine layer:back width:0.5
-  at:6 color:gridLine layer:back width:0.5
-  at:7 color:gridLine layer:back width:0.5
-  at:8 color:gridLine layer:back width:0.5
-  at:9 color:gridLine layer:back width:0.5
-  at:10 color:gridLine layer:back width:0.5
-  at:11 color:gridLine layer:back width:0.5
-  at:12 color:gridLine layer:back width:0.5
-  at:13 color:gridLine layer:back width:0.5
+  at:27/01/2011 color:gridLine layer:back width:0.5
+  at:28/01/2011 color:gridLine layer:back width:0.5
+  at:29/01/2011 color:gridLine layer:back width:0.5
+  at:30/01/2011 color:gridLine layer:back width:0.5
+  at:31/01/2011 color:gridLine layer:back width:0.5
+  at:01/02/2011 color:gridLine layer:back width:0.5
+  at:02/02/2011 color:gridLine layer:back width:0.5
+  at:03/02/2011 color:gridLine layer:back width:0.5
+  at:04/02/2011 color:gridLine layer:back width:0.5
+  at:05/02/2011 color:gridLine layer:back width:0.5
+  at:06/02/2011 color:gridLine layer:back width:0.5
+  at:07/02/2011 color:gridLine layer:back width:0.5
+  at:08/02/2011 color:gridLine layer:back width:0.5
+  at:09/02/2011 color:gridLine layer:back width:0.5
+  at:10/02/2011 color:gridLine layer:back width:0.5
+  at:11/02/2011 color:gridLine layer:back width:0.5
+  at:12/02/2011 color:gridLine layer:back width:0.5
+  at:13/02/2011 color:gridLine layer:back width:0.5
 
 BarData=
   barset:Hackers
 
 PlotData=
-  width:15 
+  width:15
   fontsize:M
   textcolor:white
-  align:left 
-  anchor:from 
-  shift:(4,-4) 
+  align:left
+  anchor:from
+  shift:(4,-4)
   color:black
 
   barSet:Hackers
-  color:c01 from:6 till:12 text:"Larry Lindsey"
-  color:c02 from:6 till:12 text:"Luis Ibanez"
-  color:c03 from:4 till:12 text:"Ignacio Arganda-Carreras"
-  color:c04 from:1 till:10 text:"Benjamin Schmid"
-  color:c05 from:0 till:7 text:"Tobias Pietzsch"
-  color:c06 from:-1 till:6 text:"Mark Longair"
-  color:c07 from:-1 till:5 text:"Erwin Frise"
-  color:c08 from:-1 till:4 text:"Lee Kamentsky"
-  color:c09 from:-1 till:4 text:"Adam Fraser"
-  color:c10 from:-1 till:4 text:"Arthur Edelstein"
-  color:c11 from:-2 till:5 text:"Pavel Tomancak"
-  color:c12 from:-3 till:13 text:"Johannes Schindelin"
-  color:c13 from:-3 till:12 text:"Grant Harris"
-  color:c14 from:-3 till:7 text:"Stephan Saalfeld"
-  color:c15 from:-3 till:3 text:"Albert Cardona"
-  color:c16 from:-4 till:13 text:"Madison Locals*"
-  color:c17 from:-4 till:9 text:"Stephan Preibisch"
-  color:c18 from:-4 till:-2 text:"Mark Rowley"
-  color:c19 from:-4 till:-2 text:"Paul Barber"
+  color:c01 from:06/02/2011 till:12/02/2011 text:"Larry Lindsey"
+  color:c02 from:06/02/2011 till:12/02/2011 text:"Luis Ibanez"
+  color:c03 from:04/02/2011 till:12/02/2011 text:"Ignacio Arganda-Carreras"
+  color:c04 from:01/02/2011 till:10/02/2011 text:"Benjamin Schmid"
+  color:c05 from:31/01/2011 till:07/02/2011 text:"Tobias Pietzsch"
+  color:c06 from:30/01/2011 till:06/02/2011 text:"Mark Longair"
+  color:c07 from:30/01/2011 till:05/02/2011 text:"Erwin Frise"
+  color:c08 from:30/01/2011 till:04/02/2011 text:"Lee Kamentsky"
+  color:c09 from:30/01/2011 till:04/02/2011 text:"Adam Fraser"
+  color:c10 from:30/01/2011 till:04/02/2011 text:"Arthur Edelstein"
+  color:c11 from:29/01/2011 till:05/02/2011 text:"Pavel Tomancak"
+  color:c12 from:28/01/2011 till:13/02/2011 text:"Johannes Schindelin"
+  color:c13 from:28/01/2011 till:12/02/2011 text:"Grant Harris"
+  color:c14 from:28/01/2011 till:07/02/2011 text:"Stephan Saalfeld"
+  color:c15 from:28/01/2011 till:03/02/2011 text:"Albert Cardona"
+  color:c16 from:27/01/2011 till:13/02/2011 text:"Madison Locals*"
+  color:c17 from:27/01/2011 till:09/02/2011 text:"Stephan Preibisch"
+  color:c18 from:27/01/2011 till:29/01/2011 text:"Mark Rowley"
+  color:c19 from:27/01/2011 till:29/01/2011 text:"Paul Barber"
 
 </timeline>
 
