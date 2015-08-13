@@ -895,4 +895,9 @@ td.yesno {
     color: #26d !important;
 }
 
+/* Avoid clipping h1 blocks */
+h1 {
+    line-height: 1.0em;
+}
+
 /* </nowiki></pre> */
