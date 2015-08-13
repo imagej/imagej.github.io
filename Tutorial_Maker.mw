@@ -3,7 +3,7 @@
 | software               = ImageJ
 | author                 = Johannes Schindelin
 | maintainer             = Johannes Schindelin
-| filename               = [http://fiji.sc/update/plugins/Tutorial_Maker.jar-20090721160531 Tutorial_Maker.jar]
+| filename               = [http://update.fiji.sc/plugins/Tutorial_Maker.jar-20090721160531 Tutorial_Maker.jar]
 | source                 = {{GitHub|org=fiji|repo=Tutorial_Maker}}
 | released               = July 2009
 | latest version         = July 2009
