@@ -81,7 +81,7 @@ The build-command script, which will actually be used to build Fiji, needs to be
 
 ==== Build the source tree (to generate the control file from) ====
 
-Unfortunately, in order to accurately generate the Debian package-based dependencies from the file-based dependencies in [http://fiji.sc/update/db.xml.gz] we need to build the complete tree in order to find all the generated files which need to be assigned to packages.  So, build Fiji with the command that debian/rules will use with:
+Unfortunately, in order to accurately generate the Debian package-based dependencies from the file-based dependencies in [http://update.fiji.sc/db.xml.gz] we need to build the complete tree in order to find all the generated files which need to be assigned to packages.  So, build Fiji with the command that debian/rules will use with:
 
   debian/build-command
 
