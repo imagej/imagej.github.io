@@ -7,7 +7,7 @@ The following document describes these requirements, as well as associated best 
 
 = Definition =
 
-A "core" [[Fiji]] project is one distributed on the [http://fiji.sc/update Fiji update site]. Such projects are subject to the requirements discussed below. Conversely, if you distribute your [[ImageJ]] extension on a separate update site, this page does not apply.
+A "core" [[Fiji]] project is one distributed on the [http://update.fiji.sc Fiji update site]. Such projects are subject to the requirements discussed below. Conversely, if you distribute your [[ImageJ]] extension on a separate update site, this page does not apply.
 
 = Requirements =
 
@@ -127,7 +127,7 @@ The following table provides a few examples of how various Fiji components are s
 | rowspan=4 | '''Standard'''
 | [[3D Viewer]]
 | style="text-align: center" | {{Yes}}
-| [http://fiji.sc/update/ Fiji]
+| [http://update.fiji.sc/ Fiji]
 | ?
 | [https://github.com/fiji fiji]
 | {{GitHub | org = fiji | repo = 3D_Viewer | label = 3D_Viewer}}
@@ -139,7 +139,7 @@ The following table provides a few examples of how various Fiji components are s
 |-
 | [[Coloc 2]]
 | style="text-align: center" | {{Yes}}
-| [http://fiji.sc/update/ Fiji]
+| [http://update.fiji.sc/ Fiji]
 | [[GPLv3]]
 | [https://github.com/fiji fiji]
 | {{GitHub | org = fiji | repo = Colocalisation_Analysis | label = Colocalisation_Analysis}}
@@ -151,7 +151,7 @@ The following table provides a few examples of how various Fiji components are s
 |-
 | [[Simple Neurite Tracer]]
 | style="text-align: center" | {{Yes}}
-| [http://fiji.sc/update/ Fiji]
+| [http://update.fiji.sc/ Fiji]
 | [[GPLv3]]
 | [https://github.com/fiji fiji]
 | {{GitHub | org = fiji | repo = Simple_Neurite_Tracer | label = Simple_Neurite_Tracer}}
@@ -163,7 +163,7 @@ The following table provides a few examples of how various Fiji components are s
 |-
 | [[TrackMate]]
 | style="text-align: center" | {{Yes}}
-| [http://fiji.sc/update/ Fiji]
+| [http://update.fiji.sc/ Fiji]
 | ?
 | [https://github.com/fiji fiji]
 | {{GitHub | org = fiji | repo = TrackMate | label = TrackMate}}
@@ -176,7 +176,7 @@ The following table provides a few examples of how various Fiji components are s
 | rowspan=2 | '''External'''
 | [[Sholl Analysis]]
 | style="text-align: center" | {{Yes}}
-| [http://fiji.sc/update/ Fiji]
+| [http://update.fiji.sc/ Fiji]
 | [[GPLv3]]
 | [https://github.com/tferr tferr]
 | {{GitHub | org = tferr | repo = ASA | label = ASA}}
@@ -188,7 +188,7 @@ The following table provides a few examples of how various Fiji components are s
 |-
 | [[Bio-Formats]]
 | style="text-align: center" | {{Yes}}
-| [http://fiji.sc/update/ Fiji]
+| [http://update.fiji.sc/ Fiji]
 | [[GPLv2]]
 | [https://github.com/openmicroscopy openmicroscopy]
 | {{GitHub | org = openmicroscopy | repo = bioformats | label = bioformats}}
@@ -201,7 +201,7 @@ The following table provides a few examples of how various Fiji components are s
 | rowspan=2 | '''Subproject'''
 | [[BigDataViewer]]
 | style="text-align: center" | {{Yes}}
-| [http://fiji.sc/update/ Fiji]
+| [http://update.fiji.sc/ Fiji]
 | [[GPLv3]]
 | [https://github.com/bigdataviewer bigdataviewer]
 | {{GitHub | org = bigdataviewer | repo = bigdataviewer_fiji | label = bigdataviewer_fiji}}
@@ -213,7 +213,7 @@ The following table provides a few examples of how various Fiji components are s
 |-
 | [[TrakEM2]]
 | style="text-align: center" | {{Yes}}
-| [http://fiji.sc/update/ Fiji]
+| [http://update.fiji.sc/ Fiji]
 | [[GPLv3]]
 | [https://github.com/trakem2 trakem2]
 | {{GitHub | org = trakem2 | repo = TrakEM2 | label = TrakEM2}}
