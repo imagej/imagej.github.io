@@ -1,3 +1,99 @@
 There will be a [[hackathon]] in Madison following the ImageJ [[Conference 2015]]. Stay tuned for more details!
 
+== Topic ==
+
+There are two topics for this hackathon:
+
+# '''Learnathon.''' For the first half, we will cover the current ImageJ2 and SciJava APIs with informal presentations and workshops. We will spend time beefing up and updating the tutorials.
+
+# '''Ops.''' The second half will focus on development of the [[ImageJ Ops]] component for "write once, run anywhere" image processing. We will add more algorithms and routines to the core library, and also continue polishing the Ops framework itself, as well as the [[ImageJ Common|ImageJ2 data model]].
+
+== Participants ==
+
+<timeline>
+Preset = TimeHorizontal_AutoPlaceBars_UnitYear
+
+ImageSize = width:500
+
+Colors =
+  id:c01 value:blue
+  id:c02 value:red
+  id:c03 value:green
+  id:c04 value:black
+  id:c05 value:magenta
+  id:c06 value:teal
+  id:c07 value:yelloworange
+  id:c08 value:skyblue
+  id:c09 value:claret
+  id:c10 value:oceanblue
+  id:c11 value:purple
+  id:c12 value:powderblue
+  id:c13 value:coral
+  id:c14 value:redorange
+  id:c15 value:kelleygreen
+  id:c16 value:orange
+  id:c17 value:lightpurple
+  id:c18 value:tan2
+  id:gridLine value:gray(0.5)
+  id:gridCanvas value:gray(0.8)
+
+BackgroundColors = canvas:gridCanvas
+
+Period = from:1 till:16
+
+ScaleMajor = unit:year increment:1 start:1 gridcolor:white
+
+LineData =
+  at:1 color:gridLine layer:back width:0.5
+  at:2 color:gridLine layer:back width:0.5
+  at:3 color:gridLine layer:back width:0.5
+  at:4 color:gridLine layer:back width:0.5
+  at:5 color:gridLine layer:back width:0.5
+  at:6 color:gridLine layer:back width:0.5
+  at:7 color:gridLine layer:back width:0.5
+  at:8 color:gridLine layer:back width:0.5
+  at:9 color:gridLine layer:back width:0.5
+  at:10 color:gridLine layer:back width:0.5
+  at:11 color:gridLine layer:back width:0.5
+  at:12 color:gridLine layer:back width:0.5
+  at:13 color:gridLine layer:back width:0.5
+  at:14 color:gridLine layer:back width:0.5
+  at:15 color:gridLine layer:back width:0.5
+  at:16 color:gridLine layer:back width:0.5
+
+BarData=
+  barset:Hackers
+
+PlotData=
+  width:15 
+  fontsize:M
+  textcolor:white
+  align:left 
+  anchor:from 
+  shift:(4,-4) 
+  color:black
+
+  barSet:Hackers
+  color:c01 from:7 till:15 text:"Tobias Pietzsch"
+  color:c02 from:5 till:15 text:"Christian Dietz"
+  color:c03 from:2 till:16 text:"Madison Locals*"
+  color:c04 from:2 till:16 text:"Matt McCormick"
+  color:c05 from:2 till:11 text:"Stephan Saalfeld"
+  color:c06 from:2 till:11 text:"Florian Jug"
+  color:c07 from:2 till:8 text:"Jan Brocher"
+  color:c08 from:2 till:7 text:"Tiago Ferreira"
+  color:c09 from:1 till:11 text:"Brian Northan"
+  color:c10 from:1 till:4 text:"Amitabh Verma"
+
+</timeline>
+
+<nowiki>*</nowiki> Madison locals include:
+* Ellen Arena
+* Kevin Eliceiri
+* Mark Hiner
+* Curtis Rueden
+* Alison Walter
+* Jay Warrick
+Some locals were not present at the hackathon on weekends.
+
 [[Category:Hackathons]]
