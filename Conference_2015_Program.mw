@@ -186,6 +186,8 @@ In this poster we present a panel of Icy's features. Live demo based on your ima
 === Olaya Fernandez-Gayol - Using the wrMTrck plugin to analyze the Morris Water maze in mice ===
 The Morris Water Maze is a standard behavioral test used for assessing spatial memory in mice and rats. The animal must learn the location of a hidden platform in a round pool using external cues. Removing the platform allows for assessment of learning by measuring the time the animal spends in the vicinity of where the platform used to be. A manual quantification can be very time consuming (many trials per animal), less accurate and more time consuming than an automated one. However, imaging software can be very expensive and not readily available to researchers. Here I present a macro that profits from the wrMTrck plugin (developed for C. elegans by JS Pedersen), but which is more focused on the parameters relevant to the analysis of the Morris Water Maze.
 
+'''Resources:''' [https://dl.dropboxusercontent.com/u/21343536/Fernandez%20Gayol%20O.pptx Poster], [https://dl.dropboxusercontent.com/u/21343536/MWM_wrMTrck%20v1.ijm Macro]
+
 === Andreas Jahnen - Segmentation of intracranial aneurysms in 2D Digital Subtraction Angiography (DSA) images using ImageJ Tools and Plugins ===
 Vera Brockmeyer, Christian Moll, Eva Fiorinelli, Damien Bresson, Cécile Legallais, Charbel Mounayer and Andreas Jahnen
 
