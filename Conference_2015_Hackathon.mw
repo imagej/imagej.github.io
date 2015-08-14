@@ -76,12 +76,12 @@ PlotData=
   barSet:Hackers
   color:c01 from:7 till:15 text:"Tobias Pietzsch"
   color:c02 from:5 till:15 text:"Christian Dietz"
-  color:c03 from:2 till:16 text:"Madison Locals*"
-  color:c04 from:2 till:16 text:"Matt McCormick"
-  color:c05 from:2 till:11 text:"Stephan Saalfeld"
-  color:c06 from:2 till:11 text:"Florian Jug"
-  color:c07 from:2 till:8 text:"Jan Brocher"
-  color:c08 from:2 till:7 text:"Tiago Ferreira"
+  color:c03 from:2 till:16 text:"Matt McCormick"
+  color:c04 from:2 till:11 text:"Stephan Saalfeld"
+  color:c05 from:2 till:11 text:"Florian Jug"
+  color:c06 from:2 till:8 text:"Jan Brocher"
+  color:c07 from:2 till:7 text:"Tiago Ferreira"
+  color:c08 from:1 till:16 text:"Madison Locals*"
   color:c09 from:1 till:11 text:"Brian Northan"
   color:c10 from:1 till:4 text:"Amitabh Verma"
 
