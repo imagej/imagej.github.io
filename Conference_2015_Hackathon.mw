@@ -81,9 +81,10 @@ PlotData=
   color:c05 from:2 till:11 text:"Florian Jug"
   color:c06 from:2 till:8 text:"Jan Brocher"
   color:c07 from:2 till:7 text:"Tiago Ferreira"
-  color:c08 from:1 till:16 text:"Madison Locals*"
-  color:c09 from:1 till:11 text:"Brian Northan"
-  color:c10 from:1 till:4 text:"Amitabh Verma"
+  color:c08 from:2 till:6 text:"Marcel Austenfeld"
+  color:c09 from:1 till:16 text:"Madison Locals*"
+  color:c10 from:1 till:11 text:"Brian Northan"
+  color:c11 from:1 till:4 text:"Amitabh Verma"
 
 </timeline>
 
