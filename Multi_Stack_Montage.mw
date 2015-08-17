@@ -22,6 +22,10 @@ This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
 == Use ==
 Call up the plugin using ''Plugins->BIOP->Multi Stack Montage...'' and select the stacks that you wish to use. 
 
+
+[[File:Hyperstacks_Montage_menu.jpg|400px|thumb|left|Interface of the plugin]]
+
+
 {{Warning |If you are going to make a montage, you need each stack to be as follows:
 * Same number of Channels, Slices and Timepoints
 * Same Data Type (8-bit, 16-bit, 32-bit or RGB)
@@ -30,7 +34,7 @@ Call up the plugin using ''Plugins->BIOP->Multi Stack Montage...'' and select th
 
 In the case that there would be many images open, the plugin does not pre-select any images.
 
-[[File:Hyperstacks_Montage_example.jpg|400px|thumb|center|Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination]]
+[[File:Hyperstacks_Montage_example.jpg|400px|thumb|left|Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination]]
 
 == Macro Recordable ==
 
