@@ -221,6 +221,8 @@ Neurogenesis plays a significant role in learning and memory, and its deficienci
 === John Parrish - Sperm nuclear shape and texture analysis ===
 The evaluation of sperm morphology has proven problematic due to variation in what observers term normal or abnormal. We developed methodology within ImageJ to threshold sperm nuclei labeled with a fluorescent DNA stain, output the perimeter coordinates and convert these to a Fourier Series from which harmonic amplitudes quantified components of sperm shape. The harmonic amplitudes were found related to bull fertility and environmental impacts of heat on males. It was also possible to create an average sperm nuclear shape for a male. We have further created a point-spread function from fluorescent microspheres. This was then used to deconvolve the fluorescent image of sperm nuclei to remove out-of-focus light. The resulting images were then subjected to nuclear texture analysis with the ImageJ Texture Analyzer (J. Cabrera). Sperm nuclear texture was related to bull fertility. ImageJ proved beneficial in the evaluation of sperm nuclear morphometry.
 
+[ [http://www.ansci.wisc.edu/jjp1/imageJ/index.html software] ]
+
 === Tobias Pietzsch - BigDataViewer ===
 TBD
 
