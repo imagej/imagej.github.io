@@ -66,6 +66,20 @@ This plugin provides an engine for finding the most probable chemical compositio
 
 The program can be used in combination with the [[#Cluster Image|"Cluster Image"]] plugin.  Thereby for a resulting set of cluster centers, the program provides the most probable cluster membership.
 
+* {{Citation
+| last = Münch
+| first = B
+| last2 = Martin
+| first2 = L
+| last2 = Leemann
+| first2 = A
+| title = Segmentation of Elemental EDS Maps by Means of Multiple Clustering Combined with Phase Identification
+| journal = Journal of Microscopy
+| volume = 
+| pages = 
+| year = Accepted paper
+}}
+
 === Import DMP ===
 DMP is a simple data format for the storage of 2D images.  It is used at IBT from the ETH and University of Zürich.  The first two short integer entries of the data file are reserved for providing the width and the heigth of the image.  The next short integer is reserved.  Thereafter (i.e. after the first 6 bytes) follows the image data itself, each pixel given by a 32-bit floating number.
 
