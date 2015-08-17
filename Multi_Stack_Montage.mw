@@ -27,8 +27,10 @@ Call up the plugin using ''Plugins->BIOP->Multi Stack Montage...'' and select th
 * Same Data Type (8-bit, 16-bit, 32-bit or RGB)
 }}
 
-In the case that there would be many images open, the plugin does not pre-select any images. 
 
+In the case that there would be many images open, the plugin does not pre-select any images.
+
+[[File:Hyperstacks_Montage_example.jpg|400px|thumb|center|Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination]]
 
 == Macro Recordable ==
 
