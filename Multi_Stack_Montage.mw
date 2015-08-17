@@ -94,8 +94,8 @@ public class My_Plugin implements PlugIn {
 
 
 		// Montage Options
-		nrows = 2;
-		ncols = 2;
+		int nrows = 2;
+		int ncols = 2;
 		
 		// Prepare container for images
 		ArrayList<ImagePlus> images = new ArrayList<ImagePlus>();
