@@ -68,7 +68,7 @@ import ch.epfl.biop.StackMontage;
 
 /**
  * Short example on making hyperstack montages
- * @author Olivier Burri
+ * @author Romain Guiet, Olivier Burri
  * @version 1.0
  */
 public class My_Plugin implements PlugIn {
