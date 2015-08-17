@@ -170,7 +170,7 @@ TBD
 === Ignacio Arganda-Carreras - MorphoLibJ ===
 TBD
 
-=== Desiree Benefield and Sherry Clendenon - Image Acquisition and Processing for Cell Based Model Instantiation and Validation ===
+=== Sherry Clendenon - Image Acquisition and Processing for Cell Based Model Instantiation and Validation ===
 Sherry G. Clendenon, Maciek Swat, Xiao Fu, Jeffrey L. Clendenon, James Sluka, James Glazier
 
 We have developed a standardized method for morphological staining of liver sections that enables identification and segmentation of hepatocytes, leukocytes, endothelial cells, blood vessels and zonation within a lobule. Using this morphological staining, we performed proof of concept segmentation and analysis using ImageJ. Segmented morphological images are 1) the starting point for all subsequent image analysis, 2) essential for direct instantiation of cell based computational models, and then 3) validation of simulation output using the same image analysis tools as used for the biological data. To this end, we are now focused on automation of these proof of concept analyses and development of a workflow pipeline incorporating image storage in OMERO, image analysis in ImageJ, and cell based computational modeling of virtual tissues in Compucell-3D.
