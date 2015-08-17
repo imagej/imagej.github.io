@@ -23,7 +23,7 @@ This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
 Call up the plugin using ''Plugins->BIOP->Multi Stack Montage...'' and select the stacks that you wish to use. 
 
 
-[[File:Hyperstacks_Montage_menu.jpg|400px|thumb|center|Interface of the plugin]]
+[[File:Hyperstacks_Montage_menu.jpg|400px|thumb|right|Interface of the plugin]]
 
 
 {{Warning |If you are going to make a montage, you need each stack to be as follows:
@@ -34,7 +34,7 @@ Call up the plugin using ''Plugins->BIOP->Multi Stack Montage...'' and select th
 
 In the case that there would be many images open, the plugin does not pre-select any images.
 
-[[File:Hyperstacks_Montage_example.jpg|400px|thumb|center|Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination]]
+[[File:Hyperstacks_Montage_example.jpg|400px|thumb|right|Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination]]
 
 This plugin is useful when montaging multiple views or when montaging RGB datasets all in one go.
 
