@@ -10,8 +10,8 @@ Use Wordpad to edit the <code>eclipse.ini</code> file in your Eclipse installati
 Now update Eclipse's JRE to be JDK-aware:
 
 * Launch Eclipse
-* From the menu choose Window &gt; Preferences
-* Select Java &gt; Installed JREs
+* From the menu choose Window {{arrow}} Preferences
+* Select Java {{arrow}} Installed JREs
 * Click Search..., navigate to your JDK installation folder (e.g., '''<code>C:\Program Files\Java\jdk1.8.0_11</code>''') and click OK
 * Check the box next to the JRE that appears and click OK
 }}
@@ -45,7 +45,7 @@ __TOC__
 
 == Import the source code ==
 
-# Choose File &gt; Import from the Eclipse menu
+# Choose File {{arrow}} Import from the Eclipse menu
 # Select "Existing Maven Projects" and click Next
 # Browse to the folder where you cloned the project source code
 # Click Finish
