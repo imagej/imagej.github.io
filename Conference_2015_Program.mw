@@ -178,6 +178,13 @@ We have developed a standardized method for morphological staining of liver sect
 === Jan Brocher - The BioVoxxel Toolbox ===
 The "BioVoxxel Toolbox" is a collection of plugins and macros for Fiji and ImageJ which is designed to assist in various image processing and analysis tasks such as lighting and background correction, image filtering, high quality feature extraction as well as binary object analysis. An adaptive filter enables noise removal and flexibility during image filtering due to access to the filter kernel usage. The "Threshold Check" facilitates semi-quantitative assessment of 25 automatic binarization methods to achieve a high quality feature extraction. The "Speckle Inspector" allows an object-wise comparison of small features contained in bigger objects such as biomarker spots in cells or nuclei. Object extraction by secondary features is facilitated by the "Binary Feature Extractor". Analysis and classification of objects by size and shape descriptors is achieved by the "Extended Particle Analyzer" and the color-coded "Shape Descriptor Maps".
 
+=== Matthew Caputo - Size distribution of metal particles for additive manufacturing using image analysis techniques by ImageJ ===
+Matthew Caputo<sup>1</sup> and C. Virgil Solomon<sup>1,2</sup>
+<br><sup>1</sup> Materials Science & Engineering Program
+<br><sup>2</sup> Department of Mechanical & Industrial Engineering, Youngstown State University, Youngstown OH 44555
+
+Additive manufacturing that employs the binder jet method is a process that utilizes micro-meter sized particles to construct parts, layer by layer, until a completed near net shape component is obtained. Three dimensional printed (3DP) parts show better mechanical strength when the material exploits uniform morphology, such as spherical particles. These conditions improve density through packing factors and also reduced binder consumption. Ni-Mn-Ga metal powders produced by the spark erosion process show both dual morphological (spherical and irregular shaped particles) and wide size distribution.  In order to improve spherical particle gain, spark eroded powders were mechanically separated and classified by size (sieving). Spherical particle gain and size distribution was quantified by image analysis of scanning electron micro-graphs of classified spark eroded powders. This poster elaborates on the methods used in the Image J software to complete this procedure. 
+
 === Fabrice de Chaumont - Icy: an open source software for image analysis ===
 In this poster we present a panel of Icy's features. Live demo based on your images, and we will try to process them thanks to one of the 300 image analysis plugins available in Icy !
 
