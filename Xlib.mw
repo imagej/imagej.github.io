@@ -438,7 +438,7 @@ for (int jj = 0; jj < m5[1]; jj++)
 	     i5[ii + jj * m5[0]]) / 2f;
 return new Object[] { m3, out };
 </source>
-[[Image:xFig6_7_2.jpg|right|500px|thumb|left: image i0, center: image mask i1, right: message box with mean value of i0 within mask i1]]
+[[Image:xFig6_7_15.jpg|right|500px|thumb|left: image i0, center: image mask i1, right: message box with mean value of i0 within mask i1]]
 takes the smaller image i5 and puts it into the center of the larger image i3.  The code fragment 
 
 <source lang="java"> 
@@ -457,7 +457,7 @@ just calculates the overall mean value of image i0 within the ROI defined by i1 
    
 Moreover, it is even possible to create your own images without any input image:
 
-[[Image:xFig6_7_3.jpg|right|200px]]
+[[Image:xFig6_7_16.jpg|right|200px]]
 
 <source lang="java"> 
 int mx = 256;
@@ -469,7 +469,7 @@ return new Object[] { new int[] { mx, my }, out };
 </source>
 creates an image containing a ramp (see image to the right), or
 
-[[Image:xFig6_7_4.jpg|right|200px]]
+[[Image:xFig6_7_17.jpg|right|200px]]
 
 <source lang="java"> 
 int mx = 256;
@@ -485,7 +485,7 @@ return new Object[] { new int[] { mx, my }, out };
 </source>
 creates an image containing a circle mask in the center (see image to the right).  For more information about the syntax, please consult the help function of the plugin itself.
 
-[[Image:xFig6_7_5.jpg|right|350px]]
+[[Image:xFig6_7_18.jpg|right|350px]]
 As a final example, we show that it is also possible to create even more 'cute' images with that tool:
 
 <source lang="java"> 
