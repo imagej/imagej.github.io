@@ -342,78 +342,148 @@ The figure to the right shows a sample FIB-nt image from cement paste (left) wit
 === Image Calculator ===
 Many image calculators allowing various arithmetic operations are already implemented in ImageJ, including the "Image Calculator", the "Calculator Plus" as well as the entire list of functions in "math", all of them under "Process".  So why "yet another image calculator", you might ask.  The reason is that our image calculator is easily able to perform the possible tasks of all of the above listed plugins and much more.  The conceptual idea is to provide a list of all the images and image stacks that are currently opened in ImageJ and assign them to symbolic names (i0, i1, i2,...).  In a text field, the user can then provide his own code he wants to be applied to the images.
 
-<!-- [[Image:xFig6_7_01.jpg|right|300px|thumb|left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2]] -->
+[[Image:xFig6_7_01.jpg|right|440px|thumb|left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2]]
 For instance, 
 
 <source lang="java"> 
 (i0 + i1 + i2) / 3
 </source>
-<!-- [[Image:xFig6_7_02.jpg|right|150px|thumb|left: image i0, right: mask where regions higher than 170 are colored in red]] -->
-will return an image providing the mean value of the images i0, i1 and i2.  The operation 
+will return an image providing the mean value of the images i0, i1 and i2 (see rightmost image to the right).
+<br />
+<br />
+<br />
+<br />
+[[Image:xFig6_7_02.jpg|right|300px|thumb|left: image i0, right: mask where regions higher than 170 are colored in red]]
+The operation 
+
 <source lang="java"> 
 (i0 > 170)? 
     java.awt.Color.red.getRGB() : java.awt.Color.black.getRGB()
 </source>
-<!-- [[Image:xFig6_7_03.jpg|right|300px|thumb|left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2]] -->
-displays a mask where regions higher than 170 are red.  The operation 
+displays a mask where regions higher than 170 are red.
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+[[Image:xFig6_7_03.jpg|right|440px|thumb|left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2]]
+The operation 
 
 <source lang="java"> 
 (i0==255)? -16711936 : 
     ((i1==255)? -16776961 : ((i2==255)? -16777216 : -65536))    
 </source>
-<!-- [[Image:xFig6_7_04.jpg|right|150px|thumb|left: image i0, right: power of two of image i0]] -->
-takes three binary images i0, i1, i2 and creates a colored mask out of it.  The operation 
+takes three binary images i0, i1, i2 and creates a colored mask out of it (see rightmost image to the right).
+<br />
+<br />
+<br />
+<br />
+[[Image:xFig6_7_04.jpg|right|300px|thumb|left: image i0, right: power of two of image i0]]
+The operation 
 
 <source lang="java"> 
 Math.pow(i0, 2.)
 </source>
-<!-- [[Image:xFig6_7_05.jpg|right|150px|thumb|left: image i0, right: copy of the image i0 overlayed by a horizontal ramp]] -->
-yields the power of two of the image i0.  Or the operation 
+yields the power of two of the image i0.
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+[[Image:xFig6_7_05.jpg|right|300px|thumb|left: image i0, right: copy of the image i0 overlayed by a horizontal ramp]]
+Or the operation 
 
 <source lang="java"> 
 i0 + x
 </source>
-<!-- [[Image:xFig6_7_06.jpg|right|150px|thumb|left: image i0, right: ramp with the same size as image i0]] -->
-will calculate a copy of the image i0 overlayed by a horizontal ramp.  And 
-    
+will calculate a copy of the image i0 overlayed by a horizontal ramp.
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+[[Image:xFig6_7_06.jpg|right|300px|thumb|left: image i0, right: ramp with the same size as image i0]]
+And the code line 
+  
 <source lang="java"> 
 x // i0
 </source>
-<!-- [[Image:xFig6_7_07.jpg|right|150px|thumb|left: image i0, right: image with the same size as image i0 containing a halo with the center of (100, 200)]] -->
 creates the ramp only.  In this case, instead of a simple command "x" (which would create no image), a comment "i0" is attached to the command ("//" means a comment in java).  The reason for why this is necessary is to provide a clue about the size of the resulting image which now turns out to be equal to the size of image i0.  The coding 
+<br />
+<br />
+<br />
+<br />
+<br />
+[[Image:xFig6_7_07.jpg|right|350px|thumb|left: image i0 defining image size, right: halo centered at (100, 200)]]
+The code 
 
 <source lang="java"> 
 Math.sqrt(Math.pow(100 - x, 2) + Math.pow(200 - y, 2)) // i0
 </source>
-<!-- [[Image:xFig6_7_08.jpg|right|150px|thumb|left: image i0, right: binary image mask by thresholding the image i0 with a value of 128]] -->
-calculates an image of the same size as image i0, but only containing a halo with the center of (100, 200).
-
+calculates an image of the same size as image i0, but containing only a halo centered at (100, 200).
+<br />
+<br />
+<br />
+<br />
+<br />
+[[Image:xFig6_7_08.jpg|right|300px|thumb|left: image i0, right: binary thresholding of i0 by value 128]]
 The line 
 
 <source lang="java"> 
 (i0 >= 128)? 255 : 0
 </source>
-<!-- [[Image:xFig6_7_09.jpg|right|150px|thumb|left: image i0, right: image of the same size as i0 containing a circular mask around point (100, 200)]] -->
 creates a binary image mask by thresholding the image i0 with the value 128.
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+[[Image:xFig6_7_09.jpg|right|300px|thumb|left: image i0, right: circular mask around (100, 200)]]
+The command
 
 <source lang="java"> 
 (Math.sqrt(Math.pow(150 - x, 2) + 
  Math.pow(200 - y, 2)) < 100)? 255 : 0 // i0
 </source>
-<!-- [[Image:xFig6_7_10.jpg|right|150px|thumb|left: image i3, right: content of image i3 inside of a circle only]] -->
 creates an image of the same size as i0 containing a circular mask around point (100, 200).  The comment "// i0" is necessary for the definition of the image size to the size of i0.
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+[[Image:xFig6_7_10.jpg|right|320px|thumb|left: image i3, right: content of image i3 inside of a circle only]]
 
+The code
 <source lang="java"> 
 (Math.sqrt(Math.pow(mx / 2 - x, 2) + 
  Math.pow(my / 2 - y, 2)) < mx / 2)? i3 : 0
 </source>
-<!-- [[Image:xFig6_7_11.jpg|right|150px|thumb|left: image i0, center: image i1, right: exclusive OR operation of image i0 and image i1]] -->
-takes the content of the image and uses the variables mx and my holding the image size.  Finally, 
+takes the content of the image inside of a circle only and removes the regions outside (please note: this code fragment makes use the variables mx and my which are holding the image size).
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+[[Image:xFig6_7_11.jpg|right|360px|thumb|left: image i0, center: image i1, right: exclusive OR of images i0 and i1]]
+
+Finally, 
 
 <source lang="java"> 
 (((int)i0 ^ (int)i1) > 0)? 255 : 0
 </source>
 performs an exclusive OR operation of image i0 and image i1. 
+<br />
+<br />
+<br />
 
 The above examples show that any pixel- or voxel-wise operation can be provided in a single command line as soon as it follows the Java notation.
 
