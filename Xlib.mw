@@ -474,13 +474,13 @@ takes the content of the image inside of a circle only and removes the regions o
 <br />
 <br />
 [[Image:xFig6_7_11.jpg|right|360px|thumb|left: image i0, center: image i1, right: exclusive OR of images i0 and i1]]
-
 Finally, 
 
 <source lang="java"> 
 (((int)i0 ^ (int)i1) > 0)? 255 : 0
 </source>
 performs an exclusive OR operation of image i0 and image i1. 
+<br />
 <br />
 <br />
 <br />
