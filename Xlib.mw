@@ -577,7 +577,7 @@ return new Object[] { new int[] { mx, my }, out };
 </source>
 creates an image containing a circle mask in the center (see image to the right).  For more information about the syntax, please consult the help function of the plugin itself.
 
-[[Image:xFig6_7_18.jpg|right|350px]]
+[[Image:xFig6_7_18.jpg|right|380px]]
 As a final example, we show that it is also possible to create even more 'cute' images with that tool:
 
 <source lang="java"> 
@@ -607,6 +607,7 @@ return new Object[] { new int[] { mx, my }, out };
 This code fragment creates the image to the right showing a well-known Mandelbrot fractal!
 
 [[Image:xFig6_8.jpg|right|400px|thumb|Particle image (left) and its labeling (right)]]
+
 === Labeling 2D 3D ===
 Particle analysis requires labeling of the previously determined particle mask which has been obtained by some type of image segmentation technique, e.g. by thresholding to mention the most simple one.  The binary particle mask allows evaluation of the particles only globally.  By labeling the particles, each particle is assigned a unique ID.  Labeling is the prerequisite for evaluations considering local values such as particle size, diameter or other shape parameters on the single objects.  This plugin implements the labeling of disconnected objects in both, 2D or 3D binary masks.  The binarization from gray level images occurs via providing a lower and an upper threshold.
 
