@@ -29,7 +29,7 @@ If you have found a bug, and you are using the [[Fiji]] distribution of ImageJ, 
 [http://imagej.net/mailman/listinfo/imagej-devel ImageJ-devel]
 | For technical and developer discussion of the ImageJ [https://github.com/imagej core software libraries], such as [[ImgLib2]].
 
-<span style="font-size: smaller">This list is for programmers contributing code to ImageJ itself, or interested in technical discussions surrounding such development.</span>
+<span style="font-size: smaller">This list is very technical programming questions about ImageJ, such as programmers contributing code to ImageJ itself, or interested in technical discussions surrounding such development.</span>
 | [http://imagej.net/pipermail/imagej-devel/ Archives]
 | [http://imagej-devel.54429.x6.nabble.com Nabble]
 |-
