@@ -432,6 +432,7 @@ calculates an image of the same size as image i0, but containing only a halo cen
 <br />
 <br />
 <br />
+<br />
 [[Image:xFig6_7_08.jpg|right|300px|thumb|left: image i0, right: binary thresholding of i0 by value 128]]
 The line 
 
@@ -439,6 +440,7 @@ The line
 (i0 >= 128)? 255 : 0
 </source>
 creates a binary image mask by thresholding the image i0 with the value 128.
+<br />
 <br />
 <br />
 <br />
@@ -458,7 +460,6 @@ creates an image of the same size as i0 containing a circular mask around point 
 <br />
 <br />
 <br />
-<br />
 [[Image:xFig6_7_10.jpg|right|320px|thumb|left: image i3, right: content of image i3 inside of a circle only]]
 
 The code
@@ -467,7 +468,6 @@ The code
  Math.pow(my / 2 - y, 2)) < mx / 2)? i3 : 0
 </source>
 takes the content of the image inside of a circle only and removes the regions outside (please note: this code fragment makes use the variables mx and my which are holding the image size).
-<br />
 <br />
 <br />
 <br />
