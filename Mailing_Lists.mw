@@ -107,14 +107,14 @@ For [[SciJava]] discussion and [[SciJava Common]] bug reports.
 | style="width: 120px" valign="top" |
 [http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-users/ OME-users]
 |
-For [[Bio-Formats]] and {{GitHub|org=imagej|repo=imagej-omero|label=OMERO}} issues and discussion.
+For [[Bio-Formats]] and [[OMERO]] issues and discussion.
 | [http://lists.openmicroscopy.org.uk/pipermail/ome-users/ Archives]
 | -
 |-
 | valign="top" |
 [http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-devel/ OME-devel]
 |
-For [[Bio-Formats]] and {{GitHub|org=imagej|repo=imagej-omero|label=OMERO}} programming questions.
+For [[Bio-Formats]] and [[OMERO]] programming questions.
 | [http://lists.openmicroscopy.org.uk/pipermail/ome-devel/ Archives]
 | -
 |-
