@@ -129,3 +129,5 @@ public class My_Plugin implements PlugIn {
 The Dialog is limited to 10 elements so as not to make a window potentially larger than the monitor's vertical resolution. However, it is unlimited if calling it from the macro recorder.
 
 You do not need to enter "*None*" as the last stack.
+
+[[Category:Plugins]]
