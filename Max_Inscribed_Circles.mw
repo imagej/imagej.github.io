@@ -1,0 +1,56 @@
+{{Infobox
+| name                   = Max Inscribed Circles
+| software               = Fiji
+| author                 = Olivier Burri, Romain Guiet
+| maintainer             = Olivier Burri
+| filename               = Max_Inscribed_Circle.jar
+| released               = August 2015
+| latest version         = August 2015
+| source                 = {{GitHub|org=lacan|repo=max-inscribed-circle}}
+| status                 = stable
+| website                = [http://biop.epfl.ch/INFO_Facility.html#staff BIOP Staff Page]
+}}
+
+== Purpose ==
+This is an implementation of the Largest Inscribed Circle algorithm using an euclidean distance map. The algorithm is looped until a circle diameter smaller than the defined minimum diameter is found. 
+The code for this plugin was inspired by this [http://www.mathworks.ch/matlabcentral/fileexchange/30805-maximum-inscribed-circle-using-distance-transform Matlab Central function]
+
+== Installation == 
+This plugin is available from the [[List of update sites|BIOP Update Site]]
+This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
+
+== Use ==
+Call up the plugin using ''Plugins->BIOP->Max Inscribed Circles...'' and select the stacks that you wish to use. 
+
+It will add all the found circles to the ROI Manager.
+
+Setting the Minimum Disk Diameter to 0 will return a single ROI with the largest inscribed circle.
+
+== Macro Recordable ==
+
+Making use of the GenericDialog class, the plugin is macro-recordable.
+<source lang="java">
+run("Max Inscribed Circles...", "minimum=20");
+</source>
+
+== Running from a Plugin == 
+What you need to run this in a plugin is 
+<source lang="java">
+import ch.epfl.biop.MaxInscribedCircles;
+</source>
+
+And then call the static method
+<source lang="java">
+//imp must be an 8-bit binary image
+ArrayList<Roi> circles = MaxInscribedCircles.findCircles(ImagePlus imp, double minD);
+</source>
+
+
+
+== Notes ==
+
+The plugin does not work with selections, only masks.
+
+The accuracy is not perfect as we are using the distance map which has finite values. But for most practical purposes (Circles larger than 2 pixels in diameter), it should be sufficient.
+
+[[Category:Plugins]]
