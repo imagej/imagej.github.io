@@ -342,42 +342,50 @@ The figure to the right shows a sample FIB-nt image from cement paste (left) wit
 === Image Calculator ===
 Many image calculators allowing various arithmetic operations are already implemented in ImageJ, including the "Image Calculator", the "Calculator Plus" as well as the entire list of functions in "math", all of them under "Process".  So why "yet another image calculator", you might ask.  The reason is that our image calculator is easily able to perform the possible tasks of all of the above listed plugins and much more.  The conceptual idea is to provide a list of all the images and image stacks that are currently opened in ImageJ and assign them to symbolic names (i0, i1, i2,...).  In a text field, the user can then provide his own code he wants to be applied to the images.
 
+<!-- [[Image:xFig6_7_01.jpg|right|300px|thumb|left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2]] -->
 For instance, 
 
 <source lang="java"> 
 (i0 + i1 + i2) / 3
 </source>
+<!-- [[Image:xFig6_7_02.jpg|right|150px|thumb|left: image i0, right: mask where regions higher than 170 are colored in red]] -->
 will return an image providing the mean value of the images i0, i1 and i2.  The operation 
 <source lang="java"> 
 (i0 > 170)? 
     java.awt.Color.red.getRGB() : java.awt.Color.black.getRGB()
 </source>
+<!-- [[Image:xFig6_7_03.jpg|right|300px|thumb|left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2]] -->
 displays a mask where regions higher than 170 are red.  The operation 
 
 <source lang="java"> 
 (i0==255)? -16711936 : 
     ((i1==255)? -16776961 : ((i2==255)? -16777216 : -65536))    
 </source>
+<!-- [[Image:xFig6_7_04.jpg|right|150px|thumb|left: image i0, right: power of two of image i0]] -->
 takes three binary images i0, i1, i2 and creates a colored mask out of it.  The operation 
 
 <source lang="java"> 
 Math.pow(i0, 2.)
 </source>
+<!-- [[Image:xFig6_7_05.jpg|right|150px|thumb|left: image i0, right: copy of the image i0 overlayed by a horizontal ramp]] -->
 yields the power of two of the image i0.  Or the operation 
 
 <source lang="java"> 
 i0 + x
 </source>
+<!-- [[Image:xFig6_7_06.jpg|right|150px|thumb|left: image i0, right: ramp with the same size as image i0]] -->
 will calculate a copy of the image i0 overlayed by a horizontal ramp.  And 
     
 <source lang="java"> 
 x // i0
 </source>
+<!-- [[Image:xFig6_7_07.jpg|right|150px|thumb|left: image i0, right: image with the same size as image i0 containing a halo with the center of (100, 200)]] -->
 creates the ramp only.  In this case, instead of a simple command "x" (which would create no image), a comment "i0" is attached to the command ("//" means a comment in java).  The reason for why this is necessary is to provide a clue about the size of the resulting image which now turns out to be equal to the size of image i0.  The coding 
 
 <source lang="java"> 
 Math.sqrt(Math.pow(100 - x, 2) + Math.pow(200 - y, 2)) // i0
 </source>
+<!-- [[Image:xFig6_7_08.jpg|right|150px|thumb|left: image i0, right: binary image mask by thresholding the image i0 with a value of 128]] -->
 calculates an image of the same size as image i0, but only containing a halo with the center of (100, 200).
 
 The line 
@@ -385,18 +393,21 @@ The line
 <source lang="java"> 
 (i0 >= 128)? 255 : 0
 </source>
+<!-- [[Image:xFig6_7_09.jpg|right|150px|thumb|left: image i0, right: image of the same size as i0 containing a circular mask around point (100, 200)]] -->
 creates a binary image mask by thresholding the image i0 with the value 128.
 
 <source lang="java"> 
 (Math.sqrt(Math.pow(150 - x, 2) + 
  Math.pow(200 - y, 2)) < 100)? 255 : 0 // i0
 </source>
+<!-- [[Image:xFig6_7_10.jpg|right|150px|thumb|left: image i3, right: content of image i3 inside of a circle only]] -->
 creates an image of the same size as i0 containing a circular mask around point (100, 200).  The comment "// i0" is necessary for the definition of the image size to the size of i0.
 
 <source lang="java"> 
 (Math.sqrt(Math.pow(mx / 2 - x, 2) + 
  Math.pow(my / 2 - y, 2)) < mx / 2)? i3 : 0
 </source>
+<!-- [[Image:xFig6_7_11.jpg|right|150px|thumb|left: image i0, center: image i1, right: exclusive OR operation of image i0 and image i1]] -->
 takes the content of the image and uses the variables mx and my holding the image size.  Finally, 
 
 <source lang="java"> 
@@ -415,6 +426,8 @@ for (int ii = 0; ii < out.length; ii++)
 return new Object[] { m0, out };
 </source>
 performs the same operation as the pixelwise operation "(i0 + i1 + i2) / 3" above.
+[[Image:xFig6_7_13.jpg|right|350px|thumb|left: image i0, right: message box with number of pixel values >= 10]]
+The code fragment 
 
 <source lang="java"> 
 float value = 10f;
@@ -425,7 +438,14 @@ for (int ii = 0; ii < i0.length; ii++)
 IJ.showMessage(" ", "Number of pixels: " + anz);
 return new Object[] { mm, null };
 </source>
-Counts all pixels (or voxels) in the image (or volume) with a value larger or equal 10.  Or 
+[[Image:xFig6_7_14.jpg|right|500px|thumb|left: image i3, center: image i5, right: image i5 embedded at the center area of image i3]]
+Counts all pixels (or voxels) in the image (or volume) with a value larger or equal 10.
+<br />
+<br />
+<br />
+<br />
+<br />
+Or the code 
 
 <source lang="java"> 
 int offx = (m3[0] - m5[0]) / 2;
@@ -438,8 +458,11 @@ for (int jj = 0; jj < m5[1]; jj++)
 	     i5[ii + jj * m5[0]]) / 2f;
 return new Object[] { m3, out };
 </source>
+takes the smaller image i5 and adds it to the center of the larger image i3.
+<br />
+<br />
 [[Image:xFig6_7_15.jpg|right|500px|thumb|left: image i0, center: image mask i1, right: message box with mean value of i0 within mask i1]]
-takes the smaller image i5 and puts it into the center of the larger image i3.  The code fragment 
+The code fragment 
 
 <source lang="java"> 
 double mean = 0;
@@ -455,9 +478,8 @@ return null;
 </source>
 just calculates the overall mean value of image i0 within the ROI defined by i1 and displays it in a check box.
    
-Moreover, it is even possible to create your own images without any input image:
-
 [[Image:xFig6_7_16.jpg|right|200px]]
+Moreover, it is even possible to create your own images without any input image:
 
 <source lang="java"> 
 int mx = 256;
