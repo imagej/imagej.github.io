@@ -414,9 +414,9 @@ And the code line
 <source lang="java"> 
 x // i0
 </source>
-creates the ramp only.  In this case, instead of a simple command "x" (which would create no image), a comment "i0" is attached to the command ("//" means a comment in java).  The reason for why this is necessary is to provide a clue about the size of the resulting image which now turns out to be equal to the size of image i0.  The coding 
-<br />
-<br />
+creates the ramp only.
+
+In this case, instead of a simple command "x" (which would create no image), a comment "i0" is attached to the command ("//" means a comment in java).  The reason for why this is necessary is to provide a clue about the size of the resulting image which now turns out to be equal to the size of image i0.
 <br />
 <br />
 <br />
