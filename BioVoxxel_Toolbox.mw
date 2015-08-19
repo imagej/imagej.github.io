@@ -251,7 +251,25 @@ Status: maintenance active
 Future: suggestions are welcome!
 
 ----
-=Median Background Subtraction=
+= Convoluted Background Subtraction =
+
+Purpose: This tool enables to subtract the background from an image by creating a convoluted copy of the original image and subtracting the filtered image from it. 
+
+How to: The user can choose between Gaussian, Median and Mean convolution filters and key in the respective filter radius (or sigma for the Gaussian Blur). The preview option directly gives a possiblity to compare the results of the background subtraction.
+The radius for the Gaussian method can be chosen around the biggest feature diameter (as for the rolling ball method). The median and mean methos might need bigger values to avoid elimination of bigger features!
+
+Method: The convoluted images are directly subtracted from the original with exception of the median filtered one. The latter additionally receives a grayscale dilation by application of a maximum filter with the factor (1.5*(radius/10)). This should reduce artifacts around object borders.
+
+[[File:Convoluted Background Subtraction.png|750px]]
+
+Distribution: plugin, recordable
+
+Status: maintenance active!
+
+Future: suggestions are welcome!
+
+----
+=Median Background Subtraction (deprecated)=
 
 Purpose: This tool enables to subtract the background from an image by contruction of a background image by applying a median filter to a copy of the original image and subtracting this from the original.
 
@@ -267,9 +285,7 @@ If the subtraction plot checkbox is activated (recommended), the user will be ab
 
 Form: macro
 
-Status: maintenance active!
-
-Future: suggestions are welcome!
+Status: deprecated, no active maintenance
 
 ----
 
