@@ -15,7 +15,7 @@
 This is an implementation of the Largest Inscribed Circle algorithm using an euclidean distance map. The algorithm is looped until a circle diameter smaller than the defined minimum diameter is found. 
 The code for this plugin was inspired by this [http://www.mathworks.ch/matlabcentral/fileexchange/30805-maximum-inscribed-circle-using-distance-transform Matlab Central function]
 
-[[File:Max_largest_circ_dialog.png |400px|thumb|right|Example]]
+[[File:Max_largest_circ_dialog2.png |400px|thumb|right|Example]]
 
 
 == Installation == 
@@ -23,7 +23,9 @@ This plugin is available from the [[List of update sites|BIOP Update Site]]
 This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
 
 == Use ==
-Call up the plugin using ''Plugins->BIOP->Max Inscribed Circles...'' and select the stacks that you wish to use. 
+Call up the plugin using ''Plugins->BIOP->Max Inscribed Circles...''.
+
+You can select the smallest circle diameter after which it will stop looking, and whether you want the plugin to run on the current selection or the current image mask. 
 
 It will add all the found circles to the ROI Manager.
 
@@ -54,8 +56,6 @@ ArrayList<Roi> circles = MaxInscribedCircles.findCircles(ImagePlus imp, double m
 
 
 == Notes ==
-
-The plugin does not work with selections, only masks.
 
 The accuracy is not perfect as we are using the distance map which has finite values. But for most practical purposes (Circles larger than 2 pixels in diameter), it should be sufficient.
 
