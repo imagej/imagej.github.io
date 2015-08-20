@@ -3,8 +3,8 @@
 | name                   = [[MATLAB]] Scripting
 | author                 = Mark Hiner
 | maintainer             = Mark Hiner<br/>Curtis Rueden
-| filename               = scripting-matlab.jar
-| source                 = {{GitHub|org=scijava|repo=scripting-matlab}}
+| filename               = scripting-matlab.jar, imagej-matlab.jar
+| source                 = {{GitHub|org=scijava|repo=scripting-matlab}}, {{GitHub|org=imagej|repo=imagej-matlab}}
 | status                 = stable
 }}
 {{Scripting}}
@@ -98,3 +98,7 @@ Most of the ImageJ scripting languages have implicit return values. As mentioned
 When running ImageJ externally, [[MATLAB]] will not have ImageJ classes in its classpath - so they can not simply be imported. Although [[MATLAB]] does support [http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html editing its classpath] this is NOT recommended, as the classes loaded by [[MATLAB]] will not be the same as those loaded in ImageJ.
 
 Instead, you can [[#Running ImageJ within MATLAB|launch ImageJ inside MATLAB]] and have it take care of managing the class loading for you. [[MATLAB]] then supports the use of import statements to [http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html#f46341 simplify class names].
+
+
+[[Category:Scripting]]
+[[Category:MATLAB]]
