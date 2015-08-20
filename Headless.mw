@@ -20,11 +20,9 @@ On MacOSX, there is no problem: Aqua provides GUI-independent text rendering (ma
 {{Sidebox | title = Historical note
 | text = Headless support was originally a branch in [[ImageJA]]; it worked by putting rewritten versions of three core ImageJ classes into a file called ''headless.jar'', which was put into the class path ''before'' <code>ij.jar</code> so they would override ImageJ's versions.
 
-Nowadays, we use [[Javassist]] for run-time patching, through the {{GitHub|org=imagej|repo=ij1-patcher|label=ImageJ 1.x patcher}} project. <span style="color: red">You do not need to do anything special to take advantage of this feature, except pass the <code>--headless</code> flag when launching Fiji from the command line.</span>
-
-In the ''unlikely'' situation that you still require a <code>headless.jar</code> file (e.g., because your Java environment does not allow run-time modification of Java classes), you can [[Downloading_and_Building_Fiji_From_Source|check out fiji.git]] and run <code>./Build.sh </code>and then <code>./Build.sh misc/headless.jar</code>.
+Nowadays, we use [[Javassist]] for run-time patching, through the {{GitHub|org=imagej|repo=ij1-patcher|label=ImageJ 1.x patcher}} project. <span style="color: red">You do not need to do anything special to take advantage of this feature, except pass the <code>--headless</code> flag when launching ImageJ from the command line.</span>
 }}
-Fiji provides the capability to execute ImageJ plugins, macros and scripts in headless mode. This feature uses bytecode manipulation to patch ImageJ 1.x's behavior at runtime, making it possible to start ImageJ in batch mode without instantiating GUI components.
+[[ImageJ2]] provides the capability to execute ImageJ plugins, macros and scripts in headless mode. This feature uses bytecode manipulation to patch ImageJ 1.x's behavior at runtime, making it possible to start ImageJ in batch mode without instantiating GUI components.
 
 '''Shortcoming:''' There are plugins which are even more bound to a GUI than ImageJ 1.x is. Naturally, these plugins will still try to instantiate GUI elements when being called in headless mode, failing.
 
@@ -46,7 +44,7 @@ To run a ''script'' (JRuby, Jython, etc.) simply skip the <code>-batch</code> ar
 
 == Xvfb ==
 
-Another method is to have a virtual desktop, e.g. [https://en.wikipedia.org/wiki/Xvfb Xvfb]. This will allow Fiji to start with a virtualised graphical desktop.
+Another method is to have a virtual desktop, e.g. [https://en.wikipedia.org/wiki/Xvfb Xvfb]. This will allow ImageJ to start with a virtualised graphical desktop.
 
 '''Advantage:''' No run-time patching is required.
 
@@ -62,7 +60,7 @@ Xvfb $DISPLAY -auth /dev/null &
 
 script=$scriptDir"lsmrotate2nrrd.ijm \"dir="$1"&angle-x=$2&angle-y=
 $3&angle-z=$4&reverse=$5\" -batch"
-$fijiBin -macro $script # running the actual ijm script
+$imagejBin -macro $script # running the actual ijm script
 
 wait # waits until all 'program' processes are finished
 # this wait sees only the 'program' processes, not the Xvfb process
