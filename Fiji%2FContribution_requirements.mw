@@ -31,6 +31,24 @@ There are two possibilities for where to host your project:
 # '''Standard.''' Repository is hosted in the [https://github.com/fiji fiji organization], or a descendant organization (e.g., [https://github.com/trakem2 trakem2]). [[Governance|Fiji maintainers]] help maintain the project.
 # '''External.''' Repository is hosted in a GitHub organization you control. You alone maintain the project (though Fiji maintainers may submit PRs to help).
 
+=== Standard projects ===
+
+The following criteria apply to projects hosted in the [https://github.com/fiji fiji organization]:
+* Each component (i.e., JAR file) lives in its own repository.
+* Components use [[Maven]] to build:
+** As single-module projects
+** With the standard Maven directory layout
+** Extending the [[Architecture#Maven_component_structure|pom-fiji parent POM]]
+* Components use the groupId <code>sc.fiji</code>.
+* Components are [[Versioning|versioned according to SemVer]].
+* The project uses [[Issues|GitHub Issues]] for issue tracking.
+* The project has a dedicated page here on the ImageJ wiki.
+* The [[Governance|Fiji maintainers]] may make commits and [[Releases|release new versions]] of the component as needed, so that Fiji as a whole continues to work as intended.
+
+=== External projects ===
+
+Projects that reside outside the [https://github.com/fiji fiji organization] are not subject to the requirements above. But it is then the project maintainer's responsibility to ensure the project continues to function properly in up-to-date installations of Fiji. This might entail code changes as ImageJ and Fiji evolve.
+
 == Continuous integration: Jenkins ==
 
 To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a job of ImageJ's [[Jenkins]] server that builds and tests the source code whenever a new revision is made available. Typically, this job also deploys the [[#Maven artifacts|Maven artifacts]].
