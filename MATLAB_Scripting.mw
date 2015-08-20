@@ -65,6 +65,33 @@ The startup process automatically injects the ImageJ classpath into the [[MATLAB
 
 Additionally, the {{GitHub|org=scijava|repo=scripting-matlab|label=Scripting-MATLAB}} library also includes an extensible [[MATLAB]] command framework. This allows for the creation of utility classes that will be automatically populated into [[MATLAB]] variables for easy access. For example, you could use ImageJ to open a dataset and perform thresholding (or any other processing steps), then in [[MATLAB]] use the <code>IJM.importDataset</code> command to set the active dataset as a [[MATLAB]] matrix variable, for further analysis.
 
+== Global state ==
+
+MATLAB retains state (e.g. declared variables) as commands are executed, and ImageJ makes no special effort to clean up after a script. So whether running internally or communicating externally with MATLAB, state will be available to and persist after script execution. Thus one can, for example, write scripts in ImageJ referencing variables declared in MATLAB, without actually initializing them in the script.
+
+=== Passing Objects ===
+
+The caveat to global state is that, when running ImageJ externally, ImageJ and MATLAB run in separate [http://docs.oracle.com/javase/7/docs/technotes/guides/vm/ JVMs]. As a result, most objects can not be passed between the two. This makes Datasets (and arrays) the currency that is passed between these applications.
+
+== Return values ==
+
+Most of the ImageJ scripting languages have implicit return values. As mentioned above, ImageJ will only execute true scripts, which do not have return values (in the MATLAB functional sense). There is a similar concept in the <code>ans</code> variable, which automatically gets the return value of executed statements if they are not explicitly assigned. However, due to the [[#Global_state|global nature]] of the ImageJ-MATLAB script language, it is not necessarily clear if <code>ans</code> was set by the script or a pre-existing command. Thus the decision was made that ImageJ-MATLAB scripts will '''never''' implicitly return a value. Instead, [[Script_parameters|the @OUTPUT annotation]] should always be used - even for <code>ans</code>, as shown here:
+
+<source lang="matlab">
+% @OUTPUT double[] ans
+
+% This trivial script demonstrates the use of
+% the "ans" variable in the SciJava-MATLAB
+% script language.
+
+% Unassigned statements in MATLAB are automatically
+% assigned to "ans". However, these scripts will not
+% return "ans" unless it is explicitly requested as
+% an output parameter.
+
+0
+</source>
+
 == Importing classes ==
 
 {{ImportingClasses|lang=MATLAB}}
