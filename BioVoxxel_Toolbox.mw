@@ -127,11 +127,15 @@ Future: suggestions are welcome!
 
 =Watershed Irregular Features=
 
-Purpose: The standard watershed algorithm in ImageJ is very usefull to separate connected, roughly circular structures. Nevertheless, it gets into trouble while separating irregular structures. The Irregular Watershed enables the user to separate also irregular shaped structures to a certain extend.
+Purpose: The standard watershed algorithm in ImageJ is very usefull to separate connected, roughly circular structures. Nevertheless, it gets into trouble while separating irregular (non-ellipsoid like) structures. The Irregular Watershed enables the user to separate also irregular shaped structures to a certain extend.
 
 [[File:Watershed_Irregular_Features.png|550px]]
 
-How to: In one dialog the user needs to specify the number of erosion cycles to be used for the separation algorithm. "0" prevents watershedding. Since increasing numbers use a decreasing size of selector for the separations to be skipped, a too high number might result in unwanted separation in the peripheral regions of the features. The separation only works in the 2D space at the moment and has its limitations when the connecting "bridges" between the features are too broad (as true for the normal watershed algorithm).
+How to: The user needs to specify one of two parameters:
+
+1.) Erosion cycle number: The erosion cycles to be used for the separation algorithm. "0" prevents watershedding. Since increasing numbers use a decreasing size of selector for the separations to be skipped, a too high number might result in unwanted separation in the peripheral regions of the features. Increasing numbers lead to results closer to the standard IJ watershed. The separation only works in the 2D space at the moment and has its limitations when the connecting "bridges" between the features are too broad (as true for the normal watershed algorithm).
+
+2.) Convexity threshold: if this value is above "0" the erosion cycle number is ignored. All objects which have a convexity bigger than the threshold are kept in the image and eroded. If eroded objects coincide with separation lines of the original watershed, those remain in the image and are not used to separate the objects. The sequence of convexity thresholding and consecutive erosion is repeated until there is no object remaining with a convexity above the threshold or the image cannot be eroded any further.
 
 Form: plugin, recordable
 
@@ -139,7 +143,7 @@ Status: maintenance active
 
 Thanks to Thorsten Wagner which provided the ij-blobs library as basis and the idea to integrate convexity as a second parameter to make the function scale invariant and more flexible. 
 
-Future: other erosion algorithms will potentially be included to improve the watershedding
+Future: Suggestions are welcome!
 
 ----
 
