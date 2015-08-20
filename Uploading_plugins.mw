@@ -73,27 +73,51 @@ This database not only stores the same information as ''current.txt'', it can co
 
 Different file types are stored at different locations in an ImageJ/Fiji installation, where they are picked up by the updater (see the [https://github.com/imagej/imagej-updater/blob/imagej-updater-0.7.5/src/main/java/net/imagej/updater/Checksummer.java#L436-L448 source code] for technical details):
 
+  jars/
+  retro/
+  misc/
+    .jar
+    .class
+
   plugins/ (and subfolders)
     .jar
     .class
+    .txt
     .ijm
     .py
+    .rb
+    .clj
     .js
     .bsh
+
+  scripts/
+    .py
     .rb
-    .groovy
+    .clj
+    .js
+    .bsh
+    .m
 
-  script/
   macros/
-    (all script files, see above)
-
-  jars/
-    .jar
+    .txt
+    .ijm
 
   luts/
     .lut
 
+  images/
+    .png
+    .tif
+    .txt
+
+  Contents/
+    .icns
+    .plist
+
   lib/
+  mm/
+  mmautofocus/
+  mmplugins/
     (all files)
 
 The updater will only pick up files stored at the appropriate location according to their function. In addition, the <code>./lib/</code> folder contains platform-specific sub-directories to allow loading of native libraries dependent on the platform:
