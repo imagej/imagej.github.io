@@ -92,6 +92,8 @@ Our algorithm is implemented in Java as an [[ImageJ]] plugin which runs on both 
 * [1] C. Kuglin and D. Hines, "The Phase Correlation Image Alignement Method," in Proceedings of the 1975 IEEE International Conference on Cybernetics and Society, 1975, pp. 163–165.
 * [2] M. Frigo and S. Johnson, "The Design and Implementation of {FFTW3}," Proc. IEEE, vol. 93, no. 2, pp. 216–231, 2005.
 
+[ [https://github.com/NIST-ISG/MIST MIST source code], [https://isg.nist.gov/deepzoomweb/resources/csmet/pages/image_stitching/image_stitching.html MIST project page] ]
+
 === Benjamin Nanes - Slide Set: Simplified batch processing with ImageJ2 ===
 
 Most imaging studies in the biological sciences rely on analyses that are relatively simple. However, manual repetition of analysis tasks across even a modestly sized data set can be tedious, error prone, and difficult to reproduce. While fully automated image analysis solutions are useful for very large data sets, they are sometimes impractical for the small- and medium-sized data sets common in biology. A significant gap exists between fully interactive image analysis workflows, which are easy to establish, but difficult to reproduce, and fully automated analysis workflows, which are easy to reproduce, but difficult to establish. [http://cellbio.emory.edu/bnanes/slideset/ Slide Set], a framework for reproducible image analysis and batch processing with ImageJ, bridges this gap by organizing images and related metadata, recording region of interest selections and analysis parameters, and automating analysis tasks across multiple images. Slide Set includes many built-in analysis tasks and is easily extended to automate other ImageJ plugins.
