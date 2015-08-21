@@ -16,7 +16,7 @@ For '''local''' thresholding rather than global, see  the [[Auto Local Threshold
 
 == Installation ==
 '''ImageJ''': requires v1.42m or newer. Copy the Auto_Threshold.jar file from 
-http://www.mecourse.com/landinig/software/auto_threshold.jar into the ImageJ/Plugins folder and either restart ImageJ or run the '''Help>Update Menus''' command. After this a new command should appear in '''Image>Adjust>Auto Threshold'''.
+http://www.mecourse.com/landinig/software/auto_threshold.jar into the ImageJ/Plugins folder and either restart ImageJ or run the '''Help {{arrow}} Update Menus''' command. After this a new command should appear in '''Image {{arrow}} Adjust {{arrow}} Auto Threshold'''.
 
 '''Fiji''': this plugin is part of the Fiji distribution, there is no need to download it.
 
@@ -33,7 +33,7 @@ It you are processing a stack, two additional options are available: '''Stack'''
 
 '''Important notes:''' 
 
-'''1.''' This  plugin is accessed through the ''Image>Auto Threshold'' menu entry, however the thresholding methods were also partially implemented in ImageJ's thresholder applet accessible through the ''Image>Adjust>Threshold...'' menu entry.
+'''1.''' This  plugin is accessed through the ''Image {{arrow}} Auto Threshold'' menu entry, however the thresholding methods were also partially implemented in ImageJ's thresholder applet accessible through the ''Image {{arrow}} Adjust {{arrow}} Threshold...'' menu entry.
 While the Auto Threshold plugin can use or ignore the extremes of the image histogram (Ignore black, Ignore white) the applet cannot: the 'default' method ignores the histogram extremes but the others methods do not. This means that applying the two commands to the same image can produce apparently different results. In essence, the Auto Threshold plugin, with the correct settings, can reproduce the results of the applet, but not the way round.
 
 '''2.''' From version 1.12 the plugin supports thresholding of 16-bit images. Since the Auto Threshold plugin processes the full greyscale space, it can be slow when dealing with 16-bit images. 
@@ -70,7 +70,7 @@ When processing stacks with many slices, the montages can become very large (~16
 
 
 === Default ===
-This is the original method of auto thresholding available in ImageJ, which is a variation of the IsoData algorithm (described below). The '''Default''' option should return the same values as the '''Image>Adjust>Threshold>Auto''', when selecting '''Ignore black''' and '''Ignore white'''.
+This is the original method of auto thresholding available in ImageJ, which is a variation of the IsoData algorithm (described below). The '''Default''' option should return the same values as the '''Image {{arrow}} Adjust {{arrow}} Threshold {{arrow}} Auto''', when selecting '''Ignore black''' and '''Ignore white'''.
 To indicate segmentation of the desired phase, use the '''White objects on black background''' option.
 The IsoData method is also known as ''iterative intermeans''.
 
