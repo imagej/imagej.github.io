@@ -19,8 +19,8 @@ We are grateful to Jan Brocher and Masanari Takamiya for comments and bug report
 * Semi-automatic tracking: Select one (or more) spot, TrackMate will find its most likely successors:
 <include iframe width="640" height="360" src="http://www.youtube.com/embed/fAOpKTenSaU?feature=player_detailpage" frameborder="0" allowfullscreen />
 * Re-design of TrackScheme. TrackScheme is now about 40 times faster to launch, even on large dataset. By default it uses the 'simple' style, and the update of the small thumbnails can be switched on/off.
-* The 'Load' button was removed from the GUI. TrackMate files can be loaded from the ''Plugins > Tracking > Load a TrackMate file'' menu item.
-* There is a new ''Plugins > Tracking > Manual tracking with TrackMate'' menu item, that launched another GUI stripped down for manual editing. 
+* The 'Load' button was removed from the GUI. TrackMate files can be loaded from the ''Plugins {{arrow}} Tracking {{arrow}} Load a TrackMate file'' menu item.
+* There is a new ''Plugins {{arrow}} Tracking {{arrow}} Manual tracking with TrackMate'' menu item, that launched another GUI stripped down for manual editing. 
 
 ==== Backward incompatible changes ====
 
