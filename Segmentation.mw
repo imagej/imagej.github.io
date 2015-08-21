@@ -40,7 +40,7 @@ Preprocess the image using filters, to make later thresholding more effective. W
 
 Ideally you want to use one of the auto-threshold methods, rather than manually tweaking, so that your result is reproducible later on the same data, and on multiple other datasets.
 *Open your image
-*Select Image>Adjust>Threshold...
+*Select Image {{arrow}} Adjust {{arrow}} Threshold...
 *Specify whether or not the background should be dark or light
 *Adjust the minimum and maximum sliders until you are satisfied with the saturation level of your image
 **[http://imagej.net/docs/guide/146-28.html#sub:Threshold...%5BT%5D More information]
@@ -49,7 +49,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 
 [[Image:Eroded_tree.png|300px|thumb|Over-saturated mask is eroded around the center tree ring]]
 
-*Select Edit>Selection>Create Mask
+*Select Edit {{arrow}} Selection {{arrow}} Create Mask
 *Based on the image and set threshold, some portions of the image may be over/under saturated
 **Select the portion of the image that needs to be adjusted
 **Select [http://imagej.net/docs/guide/146-29.html#sub:Dilate Dilate] to grow the included pixels to further saturate this portion of the image or [http://imagej.net/docs/guide/146-29.html#sub:Erode Erode] to remove saturation
@@ -58,7 +58,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 ==Selections==
 [[Image: Selection_tree.png|300px|thumb|Selections on the mask]]
 ===Creating Selections===
-*Select Edit>Selection>Create Selection to select the objects within the mask
+*Select Edit {{arrow}} Selection {{arrow}} Create Selection to select the objects within the mask
 *To deselect a portion of the image, select {{key|Shift}}+{{key|click}}
 **[http://imagej.net/docs/guide/146-27.html#sub:Create-Selection More information]
 
