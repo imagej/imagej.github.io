@@ -2,7 +2,7 @@
 
 == The image I loaded is displayed all black! But it is not black! ==
 
-This problem usually arises when 12-bit or 14-bit images are loaded into ImageJ without autoscaling. In that case, they are treated as if they were 16-bit images, and therefore the dynamic range is all wrong. You can fix this by clicking on ''Image>Adjust>Brightness/Contrast...'' and hitting the ''Auto'' button.
+This problem usually arises when 12-bit or 14-bit images are loaded into ImageJ without autoscaling. In that case, they are treated as if they were 16-bit images, and therefore the dynamic range is all wrong. You can fix this by clicking on ''Image {{arrow}} Adjust {{arrow}} Brightness/Contrast...'' and hitting the ''Auto'' button.
 
 == The image colors do not match what I see in other programs! ImageJ is wrong! ==
 
@@ -12,11 +12,11 @@ You can override the autoscaling using the [http://imagej.net/docs/guide/146-28.
 
 It is important to understand that your image is a collection of samples, each of which has a numerical intensity value. The unit of these values is rather arbitrary and unspecified, depending on the type and calibration of your detector. Your file is stored with a certain [http://imagej.net/docs/guide/146-7.html#toc-Section-7 bit depth], meaning these intensities can range from 0 (no light detected) to a particular maximum value (the most light the detector is capable of detecting). For example, 8-bit images have a maximum value of 255, whereas 16-bit images have a maximum of 65535. In practice though, especially with higher bit depths, your detector will not typically record sample intensities across that entire range of values (and if it does record a significant number of values at the maximum, you probably oversaturated your detector, which will skew your analysis!).
 
-Because the full range of values is typically much less than the maximum—e.g., in the case of a 12-bit detector the actual maximum range is 0-4095, and often even smaller in practice—ImageJ performs '''autoscaling''' to show you a meaningful or "pretty good" image by default, which is not just a black square (see previous question). That is: it maps the darkest actual intensity in your data to black, and the brightest actual intensity in your data to white. You can override this mapping using the [http://imagej.net/docs/guide/146-28.html#sub:Adjust Brightness/Contrast] dialog under the ''Image>Adjust'' menu (shortcut: {{Key | shift}}+{{Key | C}}).
+Because the full range of values is typically much less than the maximum—e.g., in the case of a 12-bit detector the actual maximum range is 0-4095, and often even smaller in practice—ImageJ performs '''autoscaling''' to show you a meaningful or "pretty good" image by default, which is not just a black square (see previous question). That is: it maps the darkest actual intensity in your data to black, and the brightest actual intensity in your data to white. You can override this mapping using the [http://imagej.net/docs/guide/146-28.html#sub:Adjust Brightness/Contrast] dialog under the ''Image {{arrow}} Adjust'' menu (shortcut: {{Key | shift}}+{{Key | C}}).
 
 Alternately, to disable autoscaling during initial import, you can use the [[Bio-Formats]] plugin to import your data with the "Autoscale" option turned off:
 
-* File > Import > Bio-Formats
+* File {{arrow}} Import {{arrow}} Bio-Formats
 * Choose your file
 * Uncheck the "Autoscale" box
 * Click OK
@@ -38,13 +38,13 @@ While ImageJ strives for [[reproducible]] analysis, there are many reasons resul
 ** See also [[Frequently Asked Questions#How can I verify that my ImageJ is really 100% up to date?|How can I verify that my ImageJ is really 100% up to date?]].
 ** If the two versions of ImageJ differ and produce different numerical results, it is a bug—please [[Report a Bug|report it]]!
 * Ensure that the ''options'' of ImageJ match between the machines.
-** A fast way to ensure this is the Edit > Options > Reset... command, which resets everything to its default state.
+** A fast way to ensure this is the Edit {{arrow}} Options {{arrow}} Reset... command, which resets everything to its default state.
 ** Alternately, you can check the settings in the following dialog boxes:
-*** All Edit > Options dialog boxes
-** Process > Binary > Options... – a very common culprit of black-vs.-white issues is the "Black background" option.
-** Process > FFT > FFT Options...
-** Image > Overlay > Overlay Options...
-** Analyze > Gels > Gel Analyzer Options...
+*** All Edit {{arrow}} Options dialog boxes
+** Process {{arrow}} Binary {{arrow}} Options... – a very common culprit of black-vs.-white issues is the "Black background" option.
+** Process {{arrow}} FFT {{arrow}} FFT Options...
+** Image {{arrow}} Overlay {{arrow}} Overlay Options...
+** Analyze {{arrow}} Gels {{arrow}} Gel Analyzer Options...
 ** Press L for the [[Command Finder]] and type "options" and double check any other options you think might be relevant.
 * If you are running your analysis [[headless]], there might be a bug in the headless support.
 ** Try the analysis ''headless'' on both machines and see if the results match.
@@ -87,7 +87,7 @@ Install the [http://java.com/ Java 8 JRE] or [http://www.oracle.com/technetwork/
 
 === On Windows ===
 
-Install Java 7, and delete or rename the <code>ImageJ.app\java</code> and/or <code>ImageJ.app\jre</code> folders, if they exist. If this does not result in Fiji using the expected Java version, check the Environment Variables (Control Panel > System and Security > System > Advanced Settings > Advanced > Environment Variables) for the variable "JAVA_HOME".  If it exists, change its value to the desired jdk or jre (for instance: "C:\Program Files\Java\jdk1.8.0_51").
+Install Java 7, and delete or rename the <code>ImageJ.app\java</code> and/or <code>ImageJ.app\jre</code> folders, if they exist. If this does not result in Fiji using the expected Java version, check the Environment Variables (Control Panel {{arrow}} System and Security {{arrow}} System {{arrow}} Advanced Settings {{arrow}} Advanced {{arrow}} Environment Variables) for the variable "JAVA_HOME".  If it exists, change its value to the desired jdk or jre (for instance: "C:\Program Files\Java\jdk1.8.0_51").
 
 === On OS X ===
 
@@ -182,19 +182,19 @@ See [[Debugging intro#Launching ImageJ in debug mode]].
 
 ImageJ will report itself as "up to date" as long as all files installed in your ImageJ match the latest versions from the remote update sites. However, there are cases where your ImageJ may report itself as "up to date" but still be missing critical files, or have mismatching versions (e.g., the dreaded "NoSuchMethodError").
 
-To be certain, run Help > Update, and click the "Advanced mode" button. Then verify the following View Options:
+To be certain, run Help {{arrow}} Update, and click the "Advanced mode" button. Then verify the following View Options:
 
 * '''View uninstalled files only:''' Shows files that are available from remote ImageJ update sites, but ''not'' installed in your ImageJ. Consider changing the "Status/Action" to "Install" for these items, especially any .jar files that are flagged with "Not installed" status.
 * '''View locally modified files only:''' Shows files that have been edited locally (i.e., do not match any version from the remote update sites). Consider changing the "Status/Action" to "Update" for these items, especially any .jar files that you did not intentionally modify.
 * '''View local-only files:''' Shows files that are not known at all to the remote update sites. These files were likely added manually (e.g., if you installed additional plugins manually; see "How do I install additional plugins" below). Consider deleting these files if you do not need them, especially any .jar files of unknown origin or conflicting file names.
 
-If you flag any changes to be made, press the "Apply changes" to update your ImageJ. And after restarting ImageJ, you might want to run Help > Update again to make sure everything looks the way you expect!
+If you flag any changes to be made, press the "Apply changes" to update your ImageJ. And after restarting ImageJ, you might want to run Help {{arrow}} Update again to make sure everything looks the way you expect!
 
 == How do I install additional plugins? ==
 
-If the plugin is published on an [[Update Sites|ImageJ update site]], you can run ''Help > Update'' then click the ''Manage update sites'' button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
+If the plugin is published on an [[Update Sites|ImageJ update site]], you can run ''Help {{arrow}} Update'' then click the ''Manage update sites'' button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
 
-Otherwise, you can drag 'n drop the .jar files onto the ImageJ window, or use ''Plugins>Install Plugin...'' with .jar, .class and .java files, or copy the plugins to ''ImageJ.app/plugins/'' and restart ImageJ. See the [[Installing 3rd party plugins|walk-through with screenshots]].
+Otherwise, you can drag 'n drop the .jar files onto the ImageJ window, or use ''Plugins {{arrow}} Install Plugin...'' with .jar, .class and .java files, or copy the plugins to ''ImageJ.app/plugins/'' and restart ImageJ. See the [[Installing 3rd party plugins|walk-through with screenshots]].
 
 == How do I downgrade ImageJ? ==
 
@@ -202,7 +202,7 @@ Downgrading is generally not recommended as a longterm solution, but can be hand
 
 ''If you need to downgrade to avoid a critical bug, please [[Bugs|report that bug]] to the developers so that it can be fixed in a future version!''
 
-* You can change the version of [[ImageJ 1.x]] used via the Help > Update ImageJ... menu item. This ''only'' changes the version of ImageJ 1.x—not all ImageJ components, [[plugins]], etc.
+* You can change the version of [[ImageJ 1.x]] used via the Help {{arrow}} Update ImageJ... menu item. This ''only'' changes the version of ImageJ 1.x—not all ImageJ components, [[plugins]], etc.
 * You can [[#How do I launch ImageJ with a different version of Java?|switch to a different version of Java]].
 * You can [[Downloads#Fiji|download a Fiji Life-Line version]].
 
@@ -212,17 +212,17 @@ Lastly, if you have not yet upgraded, and have a currently working configuration
 
 To be picked up as a plugin, the ''.jar'''s file name must contain an underscore, and it either needs to contain an appropriate ''plugins.config'' file or the class name needs to contain an underscore, too.
 
-The safest way to ensure these conventions is to use the ''File>Export as .jar file'' menu item.
+The safest way to ensure these conventions is to use the ''File {{arrow}} Export as .jar file'' menu item.
 
-== I tried to update ImageJ via ''Help>Update'', but it throws an exception instead? ==
+== I tried to update ImageJ via ''Help {{arrow}} Update'', but it throws an exception instead? ==
 
-The easiest way to get back a functional updater is to import [http://update.imagej.net/bootstrap.js this URL] via ''File>Import>URL...''.
+The easiest way to get back a functional updater is to import [http://update.imagej.net/bootstrap.js this URL] via ''File {{arrow}} Import {{arrow}} URL...''.
 
 If that does not work, please delete the files ''ij-ui-swing-updater-2.0.0-SNAPSHOT.jar'', ''ij-updater-core-2.0.0-SNAPSHOT.jar'' and ''ij-core-2.0.0-SNAPSHOT.jar'' from the ''ImageJ.app/jars/'' directory (MacOSX users, {{key|Ctrl}}+{{key|click}} on the ImageJ icon and select ''Open Package Contents'' and open the ''jars/'' directory you see there). After that, the Updater should magically repair itself.
 
 If that still fails, please download a fresh copy from [[Downloads|here]].
 
-== I updated ImageJ via ''Help>Update'', and now it does not start anymore! ==
+== I updated ImageJ via ''Help {{arrow}} Update'', and now it does not start anymore! ==
 
 Occasionally such problems occur due to bugs in the [[Updater]].
 
@@ -236,7 +236,7 @@ Indeed, an earlier version of the Updater does not use your system-wide network 
 
 Alternatively, you can update the updater manually like this:
 
-* open the [[Script Editor]] with ''File>New>Script''
+* open the [[Script Editor]] with ''File {{arrow}} New {{arrow}} Script''
 * set the language to ''Beanshell'' in the ''Language'' menu of the editor
 * paste the following code (and adjust it to match your settings):
 <source lang="java">
@@ -301,7 +301,7 @@ The installation of Fiji is described on specific pages for [[Install_Fiji_on_Ma
 
 == How do I turn my ImageJ installation into a Fiji one? ==
 
-Fiji is just ImageJ. If you are running [[ImageJ2]], simply run ''Help > Update'', click ''Manage update sites'', and enable the ''Fiji'' update site.
+Fiji is just ImageJ. If you are running [[ImageJ2]], simply run ''Help {{arrow}} Update'', click ''Manage update sites'', and enable the ''Fiji'' update site.
 
 Or if you are running [[ImageJ1]], you can bootstrap the updater by drag 'n dropping [http://update.imagej.net/bootstrap.js this link] onto your running ImageJ and run the Javascript that was opened in a text window. After that, you can run Fiji/ImageJ using the [[Launcher|ImageJ launcher]] that was installed into the ImageJ directory.
 
@@ -472,10 +472,10 @@ Here are several ways to do so:
 #* You should end up with a hit like: https://github.com/imagej/ImageJA/blob/master/src/main/java/ij/plugin/Thresholder.java.
 #* This method requires that you know in which repository the code lives. However, you can combine it with the '''fiji.sc search''' method above to figure out which repository, then load the code on GitHub, if desired.
 # '''Using the "Open Source for Menu Item" command:'''
-#* Run Plugins > Scripting > Open Source for Menu Item.
+#* Run Plugins {{arrow}} Scripting {{arrow}} Open Source for Menu Item.
 #** Unfortunately, you must select this from the menu, not using the Command Finder.
 #* Run the command whose source you want to see.
-#** E.g., Process > Binary > Make Binary.
+#** E.g., Process {{arrow}} Binary {{arrow}} Make Binary.
 #** Again, select it from the menu directly, not using the Command Finder.
 #* This will open the source using the [http://fiji.sc/git fiji.sc gitweb interface].
 
@@ -569,7 +569,7 @@ If you have an issue that is not mentioned here, you might want to [[Help:Conten
 
 == How to report issues? ==
 
-Use the ''Help > [[Report a Bug]]'' command, which adds a ticket report to the [http://fiji.sc/bugzilla/ Fiji bug tracker]. While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
+Use the ''Help {{arrow}} [[Report a Bug]]'' command, which adds a ticket report to the [http://fiji.sc/bugzilla/ Fiji bug tracker]. While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
 
 == I reported an issue, but it is still not fixed! Why not? ==
 
