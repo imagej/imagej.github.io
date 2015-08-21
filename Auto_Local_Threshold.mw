@@ -15,7 +15,7 @@ This plugin binarises 8-bit images using various '''local'''  thresholding metho
 For '''global''' thresholding rather than local, see  the [[Auto Threshold]] plugin.
 == Installation ==
 '''ImageJ''': requires v1.42m or newer. Copy the Auto_Threshold.jar file from 
-http://www.mecourse.com/landinig/software/auto_threshold.jar  into the ImageJ/Plugins folder and either restart ImageJ or run the '''Help>Update Menus''' command. After this a new command should appear in '''Image>Adjust>Auto Local Threshold'''.
+http://www.mecourse.com/landinig/software/auto_threshold.jar  into the ImageJ/Plugins folder and either restart ImageJ or run the '''Help {{arrow}} Update Menus''' command. After this a new command should appear in '''Image {{arrow}} Adjust {{arrow}} Auto Local Threshold'''.
 
 '''Fiji''': this plugin is part of the Fiji distribution, there is no need to download it.
 
