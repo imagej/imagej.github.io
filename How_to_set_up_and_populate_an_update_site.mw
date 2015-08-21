@@ -15,7 +15,7 @@ A ''personal update site'' is hosted on <nowiki>http://sites.imagej.net/<imagej-
 
 {{Notice | There are some minimal ''Terms of Service'' for personal update sites. See the [[Update Sites#What_are_the_Terms_of_Service_for_personal_update_sites.3F|Update Sites FAQ]] for details.}}
 
-First of all, start the updater with ''Help>Update'' and click on the ''Manage update sites'' button:
+First of all, start the updater with ''Help {{arrow}} Update'' and click on the ''Manage update sites'' button:
 
 [[File:Mamed-3.jpg|770px]]
 
@@ -61,7 +61,7 @@ Now you are ready to [[#Uploading files to your update site|upload files]]. Afte
 
 == Adding an update site on your own server ==
 
-If you have an own server or web space with WebDAV, SFTP or SSH access, you can create a directory in that web space and initialize it as an update site, too. Just call the updater with ''Help>Update'' and click the ''Manage update sites'' button:
+If you have an own server or web space with WebDAV, SFTP or SSH access, you can create a directory in that web space and initialize it as an update site, too. Just call the updater with ''Help {{arrow}} Update'' and click the ''Manage update sites'' button:
 
 [[File:Mamed-3.jpg|770px]]
 
