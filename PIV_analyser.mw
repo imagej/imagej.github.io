@@ -185,11 +185,11 @@ Image:Internal wave-fd.png|Result from analysis
 === ImageJ ===
 
 Download the jar file [http://fiji.sc/tinevez/PIV_analyser.jar PIV_analyser.jar] 
-and drop it into the ''plugins'' menu. The plugin will appear in the ''Plugins > Optic Flow > PIV analyser'' menu.
+and drop it into the ''plugins'' menu. The plugin will appear in the ''Plugins {{arrow}} Optic Flow {{arrow}} PIV analyser'' menu.
 
 === Fiji ===
 
-The plugin is part of the Fiji distribution. You can find it in the ''Plugins > Optic Flow'' menu.
+The plugin is part of the Fiji distribution. You can find it in the ''Plugins {{arrow}} Optic Flow'' menu.
 
 == Usage ==
 
