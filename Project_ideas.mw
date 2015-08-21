@@ -32,7 +32,7 @@ The project would consist of
 
 == Interactively adjustable intensity/LUT curves ==
 
-In Fiji, you can adjust the dynamic range of an image by calling ''Image>Adjust>Brightness & Contrast''.  However, this only lets you choose a linear mapping between pixel intensity and lookup table.  This project aims to provide non-linear controls, such as piecewise linear functions, gamma curves, splines, etc
+In Fiji, you can adjust the dynamic range of an image by calling ''Image {{arrow}} Adjust {{arrow}} Brightness & Contrast''.  However, this only lets you choose a linear mapping between pixel intensity and lookup table.  This project aims to provide non-linear controls, such as piecewise linear functions, gamma curves, splines, etc
 
 = Image processing plugins =
 
@@ -172,7 +172,7 @@ We already have Jacl in Fiji, as it is a dependency of Batik. There is also a pu
 
 For Tcl, the Script Editor would need minimal adjustments, as RSyntaxTextArea already has support for Tcl, but for Haskell, a new TokenMaker would have to be implemented.
 
-== Add ''Edit>Find in files...'' ==
+== Add ''Edit {{arrow}} Find in files...'' ==
 
 We already have a mechanism to jump between compile errors and locations of a stack trace. The same mechanism could be used to present results from a search through multiple files.
 
@@ -303,7 +303,7 @@ And finally, the Fiji Wiki needs some love to reflect the exact titles of the me
 
 == Add a clever ''Save As'' plugin ==
 
-For now, ''File>Save As'' always saves the result as a ''.tiff'' file, even if the user specified a file name ending in, say, ''.png''.
+For now, ''File {{arrow}} Save As'' always saves the result as a ''.tiff'' file, even if the user specified a file name ending in, say, ''.png''.
 
 Stephan Preibisch suggests: Add a plugin that determines from a set of extensions which plugin to call to the respective writer plugin.
 
