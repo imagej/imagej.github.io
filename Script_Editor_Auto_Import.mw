@@ -68,7 +68,7 @@ public class MyScriptHeader extends AbstractScriptHeader {
   // -- AbstractScriptHeader methods --
 
   @Override
-  protected Class<? extends ScriptLanguage> handledType() {
+  protected Class<? extends ScriptLanguage {{arrow}} handledType() {
     // TODO return the ScriptLanguage class you would like to
     // receive this header string.
     return null;
