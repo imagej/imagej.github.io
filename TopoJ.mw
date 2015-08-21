@@ -10,13 +10,13 @@
 | category               = [[:Category:Plugins]]
 }}
 
-The TopoJ plugins help you analyze surfaces of bright objects in image stacks. You can load an example via ''File>Open Samples>SinteredAlumina (2.6MB)'':
+The TopoJ plugins help you analyze surfaces of bright objects in image stacks. You can load an example via ''File {{arrow}} Open Samples {{arrow}} SinteredAlumina (2.6MB)'':
 
 [[Image:TopoJ-Sintered_Alumina.jpg]]
 
 == Compute Topography ==
 
-To compute the Topography, call ''Analyze>TopoJ>Compute Topography'':
+To compute the Topography, call ''Analyze {{arrow}} TopoJ {{arrow}} Compute Topography'':
 
 [[Image:TopoJ-Dialog.jpg]]
 
@@ -26,7 +26,7 @@ The result looks like this:
 
 == Remove Slope ==
 
-To remove the overall slope of the surface, click on the ''Analyze>TopoJ>Remove Slope'' menu item:
+To remove the overall slope of the surface, click on the ''Analyze {{arrow}} TopoJ {{arrow}} Remove Slope'' menu item:
 
 [[Image:TopoJ-Remove_Slope.jpg]]
 
