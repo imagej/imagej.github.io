@@ -103,7 +103,7 @@ medium, wavelength, etc.
 
 == 2D Spatially Invariant Example ==
 
-After opening the image to deconvolve and the image of the PSF, start Plugins>Deconvolution>2D Iterative Deconvolution...
+After opening the image to deconvolve and the image of the PSF, start Plugins {{arrow}} Deconvolution {{arrow}} 2D Iterative Deconvolution...
 
 [[Image:ParallelIterativeDeconvolution2DSpatiallyInvariantExample.jpg|800px|center]]
 
@@ -114,7 +114,7 @@ Clicking on the Deconvolve button results in this:
 
 == 2D Spatially Variant Example ==
 
-After opening the image to deconvolve, start Plugins>Deconvolution>2D Iterative Deconvolution..., select Spatially variant PSF check-box and click on the Define button 
+After opening the image to deconvolve, start Plugins {{arrow}} Deconvolution {{arrow}} 2D Iterative Deconvolution..., select Spatially variant PSF check-box and click on the Define button 
 
 [[Image:ParallelIterativeDeconvolution2DSpatiallyVariantExample1.jpg|800px|center]]
 
@@ -122,14 +122,14 @@ Enter 5 x 5 and click OK button in the Create Spatially Variant PSF panel, then 
 
 [[Image:ParallelIterativeDeconvolution2DSpatiallyVariantExample2.jpg|800px|center]]
 
-Enter 40 in the Max number of iterations text field and click on the Deconvolve button. You have to adjust the color balance of both images (Image>Adjust>Color Balance...>Auto from Fiji menu).  
+Enter 40 in the Max number of iterations text field and click on the Deconvolve button. You have to adjust the color balance of both images (Image {{arrow}} Adjust {{arrow}} Color Balance...>Auto from Fiji menu).  
 
 [[Image:ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg|800px|center]]
 
 
 == 3D Spatially Invariant Example ==
 
-After opening the image to deconvolve and the image of the PSF, start Plugins>Deconvolution>3D Iterative Deconvolution...
+After opening the image to deconvolve and the image of the PSF, start Plugins {{arrow}} Deconvolution {{arrow}} 3D Iterative Deconvolution...
 
 [[Image:ParallelIterativeDeconvolution3DSpatiallyInvariantExample1.jpg|800px|center]]
 
