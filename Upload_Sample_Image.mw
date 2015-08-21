@@ -11,7 +11,7 @@
 | website                = 
 }}== Upload Sample Image ==
 
-Use the ''Help>Upload Sample Image'' command to upload an image meant for the ImageJ developers. You might need to do this e.g. when the file is too large for email attachments, or when you want to accompany a [[Report a Bug|bug report]] with a large image.
+Use the ''Help {{arrow}} Upload Sample Image'' command to upload an image meant for the ImageJ developers. You might need to do this e.g. when the file is too large for email attachments, or when you want to accompany a [[Report a Bug|bug report]] with a large image.
 
 To prevent abuse of this facility, access to the uploaded images is only permitted via [[Special:Incoming|this Wiki]].
 
