@@ -186,6 +186,8 @@ We have developed a standardized method for morphological staining of liver sect
 === Jan Brocher - The BioVoxxel Toolbox ===
 The "BioVoxxel Toolbox" is a collection of plugins and macros for Fiji and ImageJ which is designed to assist in various image processing and analysis tasks such as lighting and background correction, image filtering, high quality feature extraction as well as binary object analysis. An adaptive filter enables noise removal and flexibility during image filtering due to access to the filter kernel usage. The "Threshold Check" facilitates semi-quantitative assessment of 25 automatic binarization methods to achieve a high quality feature extraction. The "Speckle Inspector" allows an object-wise comparison of small features contained in bigger objects such as biomarker spots in cells or nuclei. Object extraction by secondary features is facilitated by the "Binary Feature Extractor". Analysis and classification of objects by size and shape descriptors is achieved by the "Extended Particle Analyzer" and the color-coded "Shape Descriptor Maps".
 
+[ [https://www.dropbox.com/s/7e6bjh3iqnxv014/IJcon2015-Poster%20Brocher%20%28150dpi%29.png?dl=0 Poster] ]
+
 === Matthew Caputo - Size distribution of metal particles for additive manufacturing using image analysis techniques by ImageJ ===
 Matthew Caputo<sup>1</sup> and C. Virgil Solomon<sup>1,2</sup>
 <br><sup>1</sup> Materials Science & Engineering Program
