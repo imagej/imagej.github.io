@@ -18,7 +18,7 @@ This will create an alias (labeled by a small arrow in the lower left corner of 
 Do the same drag and drop with option and cmd to make aliases of all folders inside Fiji.app you want easy access to:
 [[Image:Shortcuts_to_folders_inside_Fiji.app-18.png|750px]]
 
-When you will need access to those folders, for exemple the "luts" folder in the Dialog opened by "Color > Edit LUT > Open...", you will be able to get into the folder easily using the alias:
+When you will need access to those folders, for exemple the "luts" folder in the Dialog opened by "Color {{arrow}} Edit LUT {{arrow}} Open...", you will be able to get into the folder easily using the alias:
 [[Image:Shortcuts_to_folders_inside_Fiji.app-11.png|750px]]
 
 [[Category:Tutorials]]
