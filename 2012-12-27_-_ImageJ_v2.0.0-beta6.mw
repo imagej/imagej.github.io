@@ -56,7 +56,7 @@ Although we emphasize backwards-compatibility strongly, and tried to design the 
 
 === Sample Image uploader ===
 
-Often it is impractical to attach an example image demonstrating some problems, e.g., with I/O. Some images are too large, or the scientists might not be comfortable just yet to publish the image. The new ''Help>Upload Sample Image'' command allows users to upload images to the ImageJ development server, where only a small number of trusted developers can access the images. This command was inspired by Fiji's command of the same name, but it is both more robust and faster than the original.
+Often it is impractical to attach an example image demonstrating some problems, e.g., with I/O. Some images are too large, or the scientists might not be comfortable just yet to publish the image. The new ''Help {{arrow}} Upload Sample Image'' command allows users to upload images to the ImageJ development server, where only a small number of trusted developers can access the images. This command was inspired by Fiji's command of the same name, but it is both more robust and faster than the original.
 
 === Examples for developers ===
 
