@@ -12,7 +12,7 @@
 = Quickstart =
 
 * Press {{key|[}} to bring up the [[Script Editor]].
-* Select an example Groovy script from the <code>Templates > Groovy</code> menu.
+* Select an example Groovy script from the <code>Templates {{arrow}} Groovy</code> menu.
 * Press {{key|Ctrl}}+{{key|R}} to run the script!
 
 = See also =
