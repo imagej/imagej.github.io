@@ -29,7 +29,7 @@ If there is no space for a spare tool in the toolbar, an error message is displa
 
 Select the arrow tool and start drawing it in an image. To burn in its outline, select "Draw" (shortcut: d); to fill it, select "Fill" (shortcut "f") as for any other roi tool.
 
-You can change the color and line width via ''Edit > Options > Line Width'' and ''Edit > Options > Colors''. The ''Foreground'' option in the latter will change the color of the arrow.
+You can change the color and line width via ''Edit {{arrow}} Options {{arrow}} Line Width'' and ''Edit {{arrow}} Options {{arrow}} Colors''. The ''Foreground'' option in the latter will change the color of the arrow.
 
 The user can drag the arrow head, base or he whole arrow by clicking and dragging near respectively its head, base or body. 
 
