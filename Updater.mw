@@ -28,7 +28,7 @@ In case you do not want to run the Updater upon startup, you can choose ''Never'
 
 == Starting the Updater explicitly ==
 
-The Updater can be run via ''Help>Update...''.
+The Updater can be run via ''Help {{arrow}} Update...''.
 
 == Easy mode ==
 
@@ -58,7 +58,7 @@ Note: in the advanced mode you can also upload plugins to your [[Update Sites|up
 
 == Starting the Updater manually ==
 
-Just click on the ''Help>Update...'' menu item:
+Just click on the ''Help {{arrow}} Update...'' menu item:
 
 [[Image:Fiji_Updater-screenshot.png]]
 
