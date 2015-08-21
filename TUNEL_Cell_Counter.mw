@@ -48,7 +48,7 @@ The original ONL and INL image datasets used for validation purposes are availab
 == Download & Install ==
 === TUNEL Cell Counter Setup ===
 #Download the macro from the GitHub link.<br>
-#Go to ''Plugins > Macros > Install'' and select the downloaded '''.ijm''' file.
+#Go to ''Plugins {{arrow}} Macros {{arrow}} Install'' and select the downloaded '''.ijm''' file.
 
 == TUNEL Cell Counter ==
 [[File:Stack - Macro.gif|250px|thumb|Representative animation of Macro Mode. Processing time is ~5 seconds/image.]]
@@ -86,19 +86,19 @@ TUNEL Cell Counter can be executed either as a macro or as batch process, with t
 
 To execute in Macro Mode:
 #Open an image or ''drag-and-drop'' to the application window. 
-#Go to ''Process > Macro > TUNEL Cell Counter. 
-#After processing, select "Results" window and go to ''File > Save as'', and save results as '''.csv''' file.
+#Go to ''Process {{arrow}} Macro {{arrow}} TUNEL Cell Counter. 
+#After processing, select "Results" window and go to ''File {{arrow}} Save as'', and save results as '''.csv''' file.
 
 To execute in Batch Mode:
 #Inspect the macro source code from the GitHub link.<br>
 #Copy the whole code to the clipboard.
-#Go to ''Process > Batch > Macro'' and paste the content in the macro box.
+#Go to ''Process {{arrow}} Batch {{arrow}} Macro'' and paste the content in the macro box.
 #Correct microscope spatial scale in line 32 of the code, if necessary.
 #Select ''Input'' as the folder were original images are located.
 #Select ''Output'' as the folder were processed images will be saved.
 #Choose JPEG as "Output Format" (recommended).
 #Click on "Process".
-#After processing, select "Summary" window and go to ''File > Save as'', and save summary as '''.csv''' file.
+#After processing, select "Summary" window and go to ''File {{arrow}} Save as'', and save summary as '''.csv''' file.
 
 == Macro Output ==
 === Qualitative ===
