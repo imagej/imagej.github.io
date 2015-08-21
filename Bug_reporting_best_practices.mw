@@ -58,7 +58,7 @@ Developers typically have a cache of sample data for testing their application. 
 
 If your test data is small and public, you can typically attach it to the bug report.
 
-The easiest and safest way to provide sample data is via the ''Help>[[Upload Sample Image]]'' command. This sends the image to a private space accessible only by trusted developers. This allows proprietary data to be tested without fear of public distribution.
+The easiest and safest way to provide sample data is via the ''Help {{arrow}} [[Upload Sample Image]]'' command. This sends the image to a private space accessible only by trusted developers. This allows proprietary data to be tested without fear of public distribution.
 
 Note: if you do upload sample data via ImageJ, you should mention the name of the dataset in your bug report. This will help developers find your image(s) quickly.
 
@@ -70,7 +70,7 @@ If you have encountered and reported a bug that is completely blocking your work
 
 == Disable SCIFIO ==
 
-[[ImageJ2]] provides an alternative to the hard-coded case logic of [[ImageJ 1.x]]'s image I/O: [[SCIFIO]], plugin-based image I/O. While SCIFIO is more powerful, due to the vast scope of the overhaul, there are inevitably issues remaining. If your dataset used to open correctly for you, but is broken after updating, please ''disable'' the "Use SCIFIO when opening files (BETA!)" option in the ''Edit>Options>ImageJ2'' dialog. This will revert to ImageJ 1.x's classic image I/O until the SCIFIO-driven I/O is fixed or improved.
+[[ImageJ2]] provides an alternative to the hard-coded case logic of [[ImageJ 1.x]]'s image I/O: [[SCIFIO]], plugin-based image I/O. While SCIFIO is more powerful, due to the vast scope of the overhaul, there are inevitably issues remaining. If your dataset used to open correctly for you, but is broken after updating, please ''disable'' the "Use SCIFIO when opening files (BETA!)" option in the ''Edit {{arrow}} Options {{arrow}} ImageJ2'' dialog. This will revert to ImageJ 1.x's classic image I/O until the SCIFIO-driven I/O is fixed or improved.
 
 Note: even if disabling SCIFIO fixes the issue for you, '''please''' still report the discovered bug. The long-term vision for ImageJ is to migrate completely to the new image I/O paradigm, so if there are problems we need to know about them.
 
@@ -90,8 +90,8 @@ In cases where it is clear which class or classes are causing problems, you can 
 * If the problem is in an external plugin, simply delete the file(s).
 
 * If the problem is with an update site:
-# If necessary, identify the jar containing the problematic class(es), e.g. by using <code>Plugins > Utilities > Find Jar for Class</code> in Fiji.
-# Start the updater with <code>Help > Update...</code>
+# If necessary, identify the jar containing the problematic class(es), e.g. by using <code>Plugins {{arrow}} Utilities {{arrow}} Find Jar for Class</code> in Fiji.
+# Start the updater with <code>Help {{arrow}} Update...</code>
 # Switch to Advanced Mode
 # Search for the problematic components. Their associated update site will be listed here.
 # Select <code>Manage Update Sites</code> and disable the update site identified in 4.
