@@ -14,7 +14,7 @@
 
 == Usage ==
 
-The plugin is located in ''Process > Image Expression Parser''.
+The plugin is located in ''Process {{arrow}} Image Expression Parser''.
 
 This plugin parses arbitrary mathematical expressions and compute results using images as variables. For instance:
 
