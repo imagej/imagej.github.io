@@ -4,7 +4,7 @@
 | author                 = Mark Hiner
 | maintainer             = Mark Hiner<br/>Curtis Rueden
 | filename               = scripting-matlab.jar, imagej-matlab.jar
-| source                 = {{GitHub|org=scijava|repo=scripting-matlab}}, {{GitHub|org=imagej|repo=imagej-matlab}}
+| source                 = {{GitHub|org=scijava|repo=scripting-matlab|label=scripting-matlab}}, {{GitHub|org=imagej|repo=imagej-matlab|label=imagej-matlab}}
 | status                 = stable
 }}
 {{Scripting}}
