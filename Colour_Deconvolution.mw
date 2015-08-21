@@ -13,7 +13,7 @@
 
 == Purpose ==
 
-Similarly to the command ''Image>Color>RGB split'', this plugin unmixes an RGB image produced by subtractive mixing (inks, histological dyes) into separate channels correspondig to up to 3 determined colors. This is useful e.g. to do pigment separation. 
+Similarly to the command ''Image {{arrow}} Color {{arrow}} RGB split'', this plugin unmixes an RGB image produced by subtractive mixing (inks, histological dyes) into separate channels correspondig to up to 3 determined colors. This is useful e.g. to do pigment separation. 
 
 == Documentation ==
 
@@ -45,7 +45,7 @@ This plugin implements the method described in the following paper:
 * 04/Feb/2007 1.3 disable popup menu when right clicking
 
 == Menu path ==
-Image > Color > Colour Deconvolution
+Image {{arrow}} Color {{arrow}} Colour Deconvolution
 
 [[Category:Plugins]]
 [[Category:Color processing]]
