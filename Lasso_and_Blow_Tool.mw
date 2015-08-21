@@ -2,7 +2,7 @@
 
 [this is under construction]
 
-This selection tool is run from Plugins>Segmentation>Lasso.
+This selection tool is run from Plugins {{arrow}} Segmentation {{arrow}} Lasso.
 Running the plugin adds a new button to the toolbar.
 
 There are 2 modes of operation: '''lasso''' and '''blow''' which can be selected by double clicking on the lasso button. 
