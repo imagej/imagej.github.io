@@ -71,7 +71,7 @@ Fiji.app/ImageJ-linux64 -agentlib:jdwp=server=y,suspend=y,transport=dt_socket,ad
 
 = Switching on ImageJ's debug mode =
 
-ImageJ itself outputs a lot of debug messages, when asked for them: Simply check ''Debug mode'' in the dialog popping up when clicking on the ''Edit>Options>Misc...'' menu item.
+ImageJ itself outputs a lot of debug messages, when asked for them: Simply check ''Debug mode'' in the dialog popping up when clicking on the ''Edit {{arrow}} Options {{arrow}} Misc...'' menu item.
 
 = Monitoring system calls =
 
@@ -326,7 +326,7 @@ There are a couple of ways to test for such EDT violations, see [http://weblogs.
 
 = Debugging Java3D issues =
 
-When Java3D does not work, the first order of business is to use ''Plugins>Utilities>Debugging>Test Java3D''. If this shows a rotating cube, but the [[3D Viewer]] does not work, please click on ''Help>Java3D
+When Java3D does not work, the first order of business is to use ''Plugins {{arrow}} Utilities {{arrow}} Debugging {{arrow}} Test Java3D''. If this shows a rotating cube, but the [[3D Viewer]] does not work, please click on ''Help {{arrow}} Java3D
 Properties...'' in the [[3D Viewer]]'s menu bar.
 
 == Command line debugging ==
@@ -368,7 +368,7 @@ cp ImageJ-macosx debug
 
 On Windows, you can choose between OpenGL and Direct3D by passing ''-Dj3d.rend=ogl'' or ''-Dj3d.rend=d3d'', respectively.
 
-Further, some setups require enough RAM to be reserved, so you might need to pass an option like ''--mem=1200m'' (make sure that you have enough RAM free before starting Fiji that way, though!). If it turns out that memory was the issue, you can make the setting permanent by clicking Fiji's ''Edit>Options>Memory & Threads...'' menu entry.
+Further, some setups require enough RAM to be reserved, so you might need to pass an option like ''--mem=1200m'' (make sure that you have enough RAM free before starting Fiji that way, though!). If it turns out that memory was the issue, you can make the setting permanent by clicking Fiji's ''Edit {{arrow}} Options {{arrow}} Memory & Threads...'' menu entry.
 
 == More Java 3D properties ==
 
