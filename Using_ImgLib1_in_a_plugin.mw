@@ -24,7 +24,7 @@ public class Pixel_Summation implements PlugIn {
 </source>
 If you work from within the [[Script Editor]], you can save it anywhere and Compile & Run it with ''Run>Compile & Run''.
 
-Otherwise you have to save this in a file named <tt>Pixel_Summation.java</tt> in the Fiji plugins folder. You can either ''Help>Update Menus'' and find the new plugin in the ''Plugins'' menu, or compile it from the command line with:
+Otherwise you have to save this in a file named <tt>Pixel_Summation.java</tt> in the Fiji plugins folder. You can either ''Help {{arrow}} Update Menus'' and find the new plugin in the ''Plugins'' menu, or compile it from the command line with:
 
 <source lang="bash">
 ./fiji --javac plugins/Pixel_Summation.java
