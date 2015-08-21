@@ -11,9 +11,9 @@
 }}
 
 <ol>
-<li>Go to menu ''Images>Stacks>Tools>Animation options...</li>
+<li>Go to menu ''Images {{arrow}} Stacks {{arrow}} Tools {{arrow}} Animation options...</li>
 <li>In the dialog, set the desired frames per second, or "Speed".</li>
-<li>Select the stack to save, and go to menu ''File>Save As>Animated Gif ..."</li>
+<li>Select the stack to save, and go to menu ''File {{arrow}} Save As {{arrow}} Animated Gif ..."</li>
 </ol>
 <p>Done!</p>
 
