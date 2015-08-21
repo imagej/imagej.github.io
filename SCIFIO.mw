@@ -8,14 +8,14 @@
 | status                 = active
 | category               = 
 }}
-[[ImageJ2]] uses [http://scif.io/ SCIFIO] (SCientific Image Format Input and Output) by default for most image input tasks. You can change this behavior at any time by running ''Edit > Options > ImageJ2'' and modifying the ''Use SCIFIO when opening files'' option.
+[[ImageJ2]] uses [http://scif.io/ SCIFIO] (SCientific Image Format Input and Output) by default for most image input tasks. You can change this behavior at any time by running ''Edit {{arrow}} Options {{arrow}} ImageJ2'' and modifying the ''Use SCIFIO when opening files'' option.
 
 == Benefits of using SCIFIO ==
 
 SCIFIO is focused on robust and extensible support for reading and writing image file formats. Using it with ImageJ provides many advantages:
 
-* There is no need to call a special SCIFIO plugin; it works with commands like ''File > Open'' automatically.
-* There are additional import options available via the ''File > Import > Image...'' command.
+* There is no need to call a special SCIFIO plugin; it works with commands like ''File {{arrow}} Open'' automatically.
+* There are additional import options available via the ''File {{arrow}} Import {{arrow}} Image...'' command.
 * There is a [[Bio-Formats]] plugin for SCIFIO, included with the [[Fiji]] distribution of ImageJ, that adds automatic support for over a hundred life sciences file formats.
 * Additional SCIFIO file format plugins can be dropped into ImageJ and will also work automatically.
 * Unlike the ImageJ 1.x TIFF implementation, SCIFIO's support for TIFF adheres to the specification, allowing to successfully read many more sorts of TIFFs.
@@ -35,7 +35,7 @@ SCIFIO is focused on robust and extensible support for reading and writing image
 ** PCX
 ** PICT (even in 64-bit mode and/or without QuickTime for Java installed)
 * If SCIFIO cannot handle the image file, it falls back to ImageJ 1.x.
-* You can save to SCIFIO-supported file formats using the ''File > Export > Image...'' command. Supported formats for export include:
+* You can save to SCIFIO-supported file formats using the ''File {{arrow}} Export {{arrow}} Image...'' command. Supported formats for export include:
 ** APNG
 ** AVI
 ** EPS
