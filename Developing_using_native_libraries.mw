@@ -390,7 +390,7 @@ To compile it, simply run
 sh Build.sh plugins/JNI_Example.jar
 </source>
 
-That will result in the two files ''plugins/JNI_Example.jar'' and ''lib/<platform>/JNI_Example.<extension>'' and a new menu item ''Plugins>JNI>JNI Example''.
+That will result in the two files ''plugins/JNI_Example.jar'' and ''lib/<platform>/JNI_Example.<extension>'' and a new menu item ''Plugins {{arrow}} JNI {{arrow}} JNI Example''.
 
 It does not do terribly useful things as its primary purpose is to show how things are done in a straight-forward manner.
 
