@@ -17,6 +17,6 @@ The ''Show Color Surfaces'' command calculates surfaces embedded into the [[3D V
 [[Image:Show-color-surfaces-reduced.png]]
 
 == Menu path ==
-Plugins > Process > Show Color Surfaces
+Plugins {{arrow}} Process {{arrow}} Show Color Surfaces
 
 [[Category:Plugins]]
