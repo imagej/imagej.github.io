@@ -33,7 +33,7 @@ and Verena Kaynig, and many other helpers.
 
 * many, many improvements in [[bUnwarpJ]] (thanks Ignacio Arganda-Carreras).
 
-* Context Help: If you click on Help>Help on Menu Item, the next click on a menu item will open the corresponding page (if there is one) on the Fiji Wiki.
+* Context Help: If you click on Help {{arrow}} Help on Menu Item, the next click on a menu item will open the corresponding page (if there is one) on the Fiji Wiki.
 
 * Statistical Region Merging can work in 3D now (this uses lots of memory).
 
@@ -84,7 +84,7 @@ and Verena Kaynig, and many other helpers.
 
 * The code of the [[VIB Protocol]] was improved (thanks to Mark Longair, Benjamin Schmid and Nick Weiler).
 
-* Plugins>Macros>About Startup Macros works again (thanks Gabriel Landini).
+* Plugins {{arrow}} Macros {{arrow}} About Startup Macros works again (thanks Gabriel Landini).
 
 * The Fiji launcher was modified to work around a Java 1.5 bug on Linux.
 
@@ -94,11 +94,11 @@ and Verena Kaynig, and many other helpers.
 
 * The Find/Replace function in the [[Script Editor]] now defaults to the selected text (thanks Tom Kazimiers).
 
-* The [[Tutorial Maker]] was renamed to Plugins>Utilities>Fiji>New Fiji Tutorial, and you can choose to upload to another Wiki than the Fiji Wiki (provided that it is powered by MediaWiki). It also uses the [[Script Editor]] for better usability now.
+* The [[Tutorial Maker]] was renamed to Plugins {{arrow}} Utilities {{arrow}} Fiji {{arrow}} New Fiji Tutorial, and you can choose to upload to another Wiki than the Fiji Wiki (provided that it is powered by MediaWiki). It also uses the [[Script Editor]] for better usability now.
 
 * The [[Image Expression Parser]] plugin was added, providing much more powerful operations on Images than the simple Image Calculator or Image Calculator Plus plugins (thanks to Jean-Yves Tinevez).
 
-* There is an Image>Adjust>Auto Crop plugin (cropping the maximal border that matches the background color), and an Image>Adjust>Auto Crop (guess background color) plugin (estimating the most likely background color from the border).
+* There is an Image {{arrow}} Adjust {{arrow}} Auto Crop plugin (cropping the maximal border that matches the background color), and an Image {{arrow}} Adjust {{arrow}} Auto Crop (guess background color) plugin (estimating the most likely background color from the border).
 
 * We have a Linear Gradient and Radial Gradient plugin now, to generate gradients in existing images.
 
@@ -130,7 +130,7 @@ and Verena Kaynig, and many other helpers.
 
 * There is an Imglib Algorithm Launcher now, which makes it easy to use the full power of imglib for users, and which is easily extensible to future algorithms in imglib (thanks to Curtis Rueden).
 
-* In Fiji, the menu entry is called Help>Refresh Menus instead of Help>Update Menus, to clarify what the function is about.
+* In Fiji, the menu entry is called Help {{arrow}} Refresh Menus instead of Help {{arrow}} Update Menus, to clarify what the function is about.
 
 * When Fiji detects that the user attempted to launch a plugin that was compiled for Java 1.6, but run on Java 1.5, it tries very hard to convert the classes to be usable on Java 1.5 nevertheless.
 
@@ -196,11 +196,11 @@ and Verena Kaynig, and many other helpers.
 
 * The [[Script Editor]] recognizes exceptions thrown during the execution of a script and offers to jump to the next/previous location in the stacktrace.
 
-* You can ask the [[Script Editor]] to open the [http://fiji.sc/javadoc/ JavaDoc] for a given class using ''Tools>Open Help on Class...''
+* You can ask the [[Script Editor]] to open the [http://fiji.sc/javadoc/ JavaDoc] for a given class using ''Tools {{arrow}} Open Help on Class...''
 
 * The [[Using Weka|WEKA library]] is now part of Fiji; the {{GitHub|org=fiji|repo=fiji-compat|source=fiji/FijiClassLoader.java|label=FijiClassLoader}} is now an instance of URLClassLoader just because of that (thanks for Verena Kaynig, Albert Cardona and Ignacio Arganda-Carreras for the prodding).
 
-* There is an easy way to add a screenshot to be shown on the front page of the Fiji Wiki: ''Plugins>Utilities>Fiji>New Fiji Wiki Screenshot''.
+* There is an easy way to add a screenshot to be shown on the front page of the Fiji Wiki: ''Plugins {{arrow}} Utilities {{arrow}} Fiji {{arrow}} New Fiji Wiki Screenshot''.
 
 * The new [[Imglib|versatile and most generic image processing library]] -- fully Open Source! -- was added (thanks Stephan Saalfeld and Stephan Preibisch).
 
@@ -208,9 +208,9 @@ and Verena Kaynig, and many other helpers.
 
 * To use the [[Imglib|imglib]], just select the Imglib Plugin item of [[Script Editor|Script Editor's]] ''Templates'' menu.
 
-* The [[Script Editor]] learnt quite a number of functions that are useful when developing plugins written in Java (e.g. opening the sources for a menu item, or opening the directory of the current file upon ''File>Open''/, or offering to search for the sources of a class).
+* The [[Script Editor]] learnt quite a number of functions that are useful when developing plugins written in Java (e.g. opening the sources for a menu item, or opening the directory of the current file upon ''File {{arrow}} Open''/, or offering to search for the sources of a class).
 
-* If you have an account on the Fiji Wiki, you can easily add News entries using the ''Plugins>Utilities>Fiji>New Fiji News'' menu item.
+* If you have an account on the Fiji Wiki, you can easily add News entries using the ''Plugins {{arrow}} Utilities {{arrow}} Fiji {{arrow}} New Fiji News'' menu item.
 
 * There is a simple ''Object Inspector'' for Java objects now, accessible via '''fiji.debugging.Object_Inspector.openFrame(label, object)'''.
 
