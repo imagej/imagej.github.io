@@ -19,7 +19,7 @@ This is the after-hackathon release, and so far we have these changes
 # updated bUnwarpJ (thanks Ignacio Arganda Carreras)
 # the bundled ImageJA now uses a method to discover a running instance  that is safe in a multi-user environment
 # updated Bio#Formats (thanks Melissa Linkert and Curtis Rueden)
-# added the Help>Report a Bug plugin (thanks Mark Longair)
+# added the Help {{arrow}} Report a Bug plugin (thanks Mark Longair)
 # added the MTrack2 plugin (thanks Nico Stuurman)
 # added the ToAST plugin (thanks Misha Kudryashev)
 # Java 1.6 is used on 64-bit MacOSX, when possible
@@ -28,7 +28,7 @@ This is the after-hackathon release, and so far we have these changes
 # updated the AnalyzeSkeleton plugin (thanks Ignacio Arganda Carreras)
 # added the Time Stamper plugin (thanks Daniel James White)
 # added the Auto Threshold plugin (thanks Gabriel Landini)
-# if you drop a .java file into the plugins/ directory and call  Plugins>Scripting>Refresh Javas, it will be added to the Plugins  menu and be compiled transparently upon being called.
+# if you drop a .java file into the plugins/ directory and call  Plugins {{arrow}} Scripting {{arrow}} Refresh Javas, it will be added to the Plugins  menu and be compiled transparently upon being called.
 # added scripting examples showing how to interact with the mouse and add  Java listeners written in the scripting language
 # added the Arrow plugin
 # added the Stack Manipulation plugin (thanks Jean-Yves Tinevez)
