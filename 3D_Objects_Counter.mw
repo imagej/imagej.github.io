@@ -41,7 +41,7 @@ As ImageJ's “Analyze Particles” function, 3D-OC also has a “redirect to”
 The plugin's manual might be downloaded from [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=plugin:analysis:3d_object_counter:3d-oc.pdf ImageJ's wiki.]
 
 == Install/Update ==
-v2.0 plugin is now contained in Fiji; just use [[Update_Fiji|Help>Update Fiji]] to get it.
+v2.0 plugin is now contained in Fiji; just use [[Update_Fiji|Help {{arrow}} Update Fiji]] to get it.
 
 == Reference ==
 The original  plugin was published here:
