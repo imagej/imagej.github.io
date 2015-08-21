@@ -6,7 +6,7 @@ Today, the [[Contributors|ImageJ team]] is pleased to announce a new public rele
 
 === Console window ===
 
-The main new feature of this release is a Console window that tracks all output to the [https://en.wikipedia.org/wiki/Standard_streams standard output and error streams]. Previously, all messages to these streams were silently discarded unless the Debug option in Edit > Options > Misc was enabled prior to any issues.
+The main new feature of this release is a Console window that tracks all output to the [https://en.wikipedia.org/wiki/Standard_streams standard output and error streams]. Previously, all messages to these streams were silently discarded unless the Debug option in Edit {{arrow}} Options {{arrow}} Misc was enabled prior to any issues.
 
 Now, all that has changed: the [[SciJava Common]] library gained a new feature to track the standard streams ([https://github.com/scijava/scijava-common/commit/28f717b9684047f9df5e3deee10cbcee81334b97 scijava-common/28f717b9]), and the relevant ImageJ user interfaces added a dedicated Console window which pops up whenever output is sent to the error stream ([https://github.com/scijava/scijava-ui-swing/commit/361bc585d9ae833bb0d4b47c0a6cda7485d40357 scijava-ui-swing/361bc585], [https://github.com/imagej/imagej-legacy/commit/0956b34185c16c9f5ca82504d24e27371e3249ed imagej-legacy/0956b341]).
 
@@ -18,7 +18,7 @@ The Console feature still has some rough edges ([https://github.com/scijava/scij
 
 === Better ImageJ2 data structure syncing ===
 
-The "Enable ImageJ2 data structures" option in Edit > Options > ImageJ2 has been removed, and is now off by default ([https://github.com/imagej/imagej-legacy/commit/231b76517f45993b5dfc4b1ddcaf8a14ff04491d imagej-legacy/231b7651]). We have not had time to complete this feature, and it currently causes substantial performance issues enabled, so we want to be absolutely certain that no one enables it naively or by accident. It is still possible for interested developers to toggle the feature on by setting the <code>imagej.legacy.sync</code> environment variable.
+The "Enable ImageJ2 data structures" option in Edit {{arrow}} Options {{arrow}} ImageJ2 has been removed, and is now off by default ([https://github.com/imagej/imagej-legacy/commit/231b76517f45993b5dfc4b1ddcaf8a14ff04491d imagej-legacy/231b7651]). We have not had time to complete this feature, and it currently causes substantial performance issues enabled, so we want to be absolutely certain that no one enables it naively or by accident. It is still possible for interested developers to toggle the feature on by setting the <code>imagej.legacy.sync</code> environment variable.
 
 Regardless, that feature is also less important now that we do on-demand syncing when encountering an ImageJ2 command or script parameter, such as a <code>net.imagej.Dataset</code>. This release also fixes a bug surrounding that on-demand syncing, which caused it to be triggered unnecessarily ([https://github.com/imagej/imagej-common/commit/92e59826bde0642f217e07b38c161087b15538d0 imagej-common/92e59826]).
 
@@ -30,7 +30,7 @@ Lastly, as usual, this release includes various small enhancements and fixes (e.
 
 == How to update ==
 
-Use the <code>Help > Update</code> command to update your [[ImageJ]] installation. Please send any comments to the [[Mailing Lists|ImageJ mailing list]]. Thanks for the continued feedback and support!
+Use the <code>Help {{arrow}} Update</code> command to update your [[ImageJ]] installation. Please send any comments to the [[Mailing Lists|ImageJ mailing list]]. Thanks for the continued feedback and support!
 
 [[Category:ImageJ2]]
 [[Category:News]]
