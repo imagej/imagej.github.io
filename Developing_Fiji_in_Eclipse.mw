@@ -47,7 +47,7 @@ Please look at [[Downloading_and_Building_Fiji_From_Source#Check_out_and_build_i
 
 First, clone your project(s) of interest from https://github.com/fiji. (If you want to clone them en masse, one way is using the [http://myrepos.branchable.com/ myrepos] command line tool.)
 
-Once you have the projects cloned, you can import them into Eclipse via the ''File>Import>Maven>Existing Maven Project'' command.
+Once you have the projects cloned, you can import them into Eclipse via the ''File {{arrow}} Import {{arrow}} Maven {{arrow}} Existing Maven Project'' command.
 
 After finishing this, Eclipse builds the Fiji projects. There should not be any build errors, but it is normal to see a large number of warnings. These mostly come from Java1.4-style code or unnecessary imports, variables or methods in the sources of authors who do not use an IDE such as Eclipse and thus have no automatic assistance at cleaning up.  All these warnings can be ignored, having no effect on the functionality of the code.
 
@@ -101,6 +101,6 @@ Most importantly, you will need to adjust the <code>artifactId</code> and the <c
 
 Next, you will put your Java sources into <code>src/main/java/</code> and adjust <code>src/main/resources/plugins.config</code>.
 
-After that, ask Eclipse to import it: ''File>Import>Maven>Import Existing Maven Project''.
+After that, ask Eclipse to import it: ''File {{arrow}} Import {{arrow}} Maven {{arrow}} Import Existing Maven Project''.
 
 [[Category:Development]]
