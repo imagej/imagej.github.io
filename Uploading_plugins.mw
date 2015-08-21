@@ -6,7 +6,7 @@
 
 == The graphical way (recommended) ==
 
-You can use the [[Update Fiji|Fiji Updater]] to upload new plugins (or new versions thereof). First start ''Help>Update Fiji''. It will tell you that there are ''locally modified files'':
+You can use the [[Update Fiji|Fiji Updater]] to upload new plugins (or new versions thereof). First start ''Help {{arrow}} Update Fiji''. It will tell you that there are ''locally modified files'':
 
 [[Image:Updater-locally-modified.png|600px|center]]
 
