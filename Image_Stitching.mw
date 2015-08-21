@@ -183,8 +183,8 @@ If you still have a known arrangement of tiles that is not covered by any of the
 === I want to define a different overlap for X and Y using a Grid-Layout ===
 
 This option exists, but is disabled by default as it is likely only required in non-standard scenarios. You can enable it as follows using the '''script editor''':
-* File > New > Script
-* Language > Beanshell
+* File {{arrow}} New {{arrow}} Script
+* Language {{arrow}} Beanshell
 * type the following line (without the 001)
 <source lang="java">
 plugin.Stitching_Grid.seperateOverlapY = true;
@@ -196,8 +196,8 @@ From now on, there will be a second slider for the overlap in Y on the '''curren
 === I want to change the blending parameter for the fusion ===
 
 You can change the fraction of the area that is blended using the scripting language. By default it is set to 0.2 (20%), but you can change it to anything between 0 and 1. You can do so using the '''script editor''':
-* File > New > Script
-* Language > Beanshell
+* File {{arrow}} New {{arrow}} Script
+* Language {{arrow}} Beanshell
 * type the following line (without the 001) to change it to e.g. 10%
 <source lang="java">
 mpicbg.stitching.fusion.BlendingPixelFusion.fractionBlended = 0.1;
@@ -211,8 +211,8 @@ From now on, the blending will work only on the outer 10% of each tile. This cha
 Sometimes people only want to stitch in x and y, but not in z. There is an ad-hoc way of achieving this which will only ignore the translation in z at the time of the global optimization and fusion. If this turns out to be more useful, I will integrate more properly.
 
 You can activate the option using the '''script editor''':
-* File > New > Script
-* Language > Beanshell
+* File {{arrow}} New {{arrow}} Script
+* Language {{arrow}} Beanshell
 * type the following line (without the 001):
 <source lang="java">
 mpicbg.stitching.GlobalOptimization.ignoreZ = true;
