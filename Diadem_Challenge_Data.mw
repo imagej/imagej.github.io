@@ -6,7 +6,7 @@ __TOC__
 
 == Olfactory Project Neurons ==
 
-This data set [http://www.diademchallenge.org/olfactory_projection_fibers_readme.html is described here].  I will go through loading the example "OP_1".  Each image stack in this data set is distributed as a directory of TIFF files, one per slice.  To load such a stack, go to "File > Import > Image Sequence" and select the file "1.tif".  You should be shown a dialog like this:
+This data set [http://www.diademchallenge.org/olfactory_projection_fibers_readme.html is described here].  I will go through loading the example "OP_1".  Each image stack in this data set is distributed as a directory of TIFF files, one per slice.  To load such a stack, go to "File {{arrow}} Import {{arrow}} Image Sequence" and select the file "1.tif".  You should be shown a dialog like this:
 
 [[Image:Diadem_Challenge_Data-1.png]]
 
@@ -14,13 +14,13 @@ These default options should be fine - as you can see from the dialog it will ha
 
 [[Image:Diadem_Challenge_Data-2.png]]
 
-Unfortunately these TIFF files do not have the separation of these slices encoded correctly, so you should correct this manually.  If you go to "Image > Properties" you will see that the pixel width, pixel height and voxel depth are all set to the same value (0.3296485).  The [http://www.diademchallenge.org/olfactory_projection_fibers_readme.html page with information about the data set] tells us that the z-separation should be three times the x and y separation, so correct the voxel depth to 3 times 0.3296485, like this:
+Unfortunately these TIFF files do not have the separation of these slices encoded correctly, so you should correct this manually.  If you go to "Image {{arrow}} Properties" you will see that the pixel width, pixel height and voxel depth are all set to the same value (0.3296485).  The [http://www.diademchallenge.org/olfactory_projection_fibers_readme.html page with information about the data set] tells us that the z-separation should be three times the x and y separation, so correct the voxel depth to 3 times 0.3296485, like this:
 
 [[Image:Diadem_Challenge_Data-4.png]]
 
-... and then press "OK".  To save yourself from having to re-enter this calibration information, and to be able to open the stack from the "Recent Files" menu, etc. I think it's helpful to now save this stack as a single TIFF.  So, I would go to "File > Save As > Tiff ..." and save this as OP_1.tif in the directory above the one with individual slices.
+... and then press "OK".  To save yourself from having to re-enter this calibration information, and to be able to open the stack from the "Recent Files" menu, etc. I think it's helpful to now save this stack as a single TIFF.  So, I would go to "File {{arrow}} Save As {{arrow}} Tiff ..." and save this as OP_1.tif in the directory above the one with individual slices.
 
-Now start the tracing plugin by going to "Plugins > Segmentation > Simple Neurite Tracer".  If you keep the default options, you should see a display like this:
+Now start the tracing plugin by going to "Plugins {{arrow}} Segmentation {{arrow}} Simple Neurite Tracer".  If you keep the default options, you should see a display like this:
 
 [[Image:Diadem_Challenge_Data-6.png|750px]]
 
@@ -40,7 +40,7 @@ You may wish at this point to adjust the viewing options in the tracer's dialog 
 
 [http://www.diademchallenge.org/neocortical_layer_6_axons_readme.html The Neocortical Layer 6 Axons] data set is based on a set of image stacks that need to be stitched together.  The key point here is that you must use the offsets supplied by the Diadem challenge rather than allowing Fiji to stitch the automatically - the stitching will be subtly different.
 
-Firstly, however, it will help to load each image sequence and save out the stack to a single TIFF image stack file.  For each of the 6 directories, do the following: go to "File > Import > Image sequence" and select the first file in the directory (01.tif).  After opening with the default options, save this out into the parent directory with the following names:
+Firstly, however, it will help to load each image sequence and save out the stack to a single TIFF image stack file.  For each of the 6 directories, do the following: go to "File {{arrow}} Import {{arrow}} Image sequence" and select the first file in the directory (01.tif).  After opening with the default options, save this out into the parent directory with the following names:
 
    directory 01 -> Tile_01_02.tif
    directory 02 -> Tile_02_02.tif
@@ -64,7 +64,7 @@ Now create a text file in the same directory called TileConfiguration.txt with t
 
 These offset values are taken from [http://www.diademchallenge.org/neocortical_layer_6_axons_readme.html the official page describing the data set].
 
-Now you can stitch together the images using these offsets by going to "Plugins > Stitching > Stitch Collection of Images", browsing to the TileConfiguration.txt file you've just created and making sure you uncheck the box "compute overlap".  It should look something like this:
+Now you can stitch together the images using these offsets by going to "Plugins {{arrow}} Stitching {{arrow}} Stitch Collection of Images", browsing to the TileConfiguration.txt file you've just created and making sure you uncheck the box "compute overlap".  It should look something like this:
 
 [[Image:Diadem_Neocortical_Layer_6_Axons-1.png]]
 
@@ -72,13 +72,13 @@ After clicking OK, this should stitch together all those stacks into one huge st
 
 [[Image:Diadem_Neocortical_Layer_6_Axons-2.png|750px]]
 
-Next, you should correct the Z-calibration of the stitched stack.  The data set page tells us that the z separation is 3.03 pixels, so open up "Image > Properties" and set the Voxel Depth to 3.03 times the Pixel Width:
+Next, you should correct the Z-calibration of the stitched stack.  The data set page tells us that the z separation is 3.03 pixels, so open up "Image {{arrow}} Properties" and set the Voxel Depth to 3.03 times the Pixel Width:
 
 [[Image:Diadem_Neocortical_Layer_6_Axons-3.png]]
 
-Now you should save the stitched stack, and work from that from now on.  (Since the stitched stack isn't very large (156MB) one wonders why this wasn't distributed already stitched.)  Save the stack with "File > Save As > Tiff...".
+Now you should save the stitched stack, and work from that from now on.  (Since the stitched stack isn't very large (156MB) one wonders why this wasn't distributed already stitched.)  Save the stack with "File {{arrow}} Save As {{arrow}} Tiff...".
 
-To load the SWC files, start up the tracer with "Plugins > Segmentation > Simple Neurite Tracer".  You should see something like this after it has started, with the stack rendered in the 3D Viewer:
+To load the SWC files, start up the tracer with "Plugins {{arrow}} Segmentation {{arrow}} Simple Neurite Tracer".  You should see something like this after it has started, with the stack rendered in the 3D Viewer:
 
 [[Image:Diadem_Neocortical_Layer_6_Axons-4.png|750px]]
 
@@ -94,7 +94,7 @@ Then the traces should load in the correct position with those offsets:
 
 We will go through loading in the CF_1 image stack from the [http://www.diademchallenge.org/cerebellar_climbing_fibers_readme.html Cerebellar Climbing Fibers] data set.  The raw data for this image is stored in RGB and about 3.4GB in size, so for convenience you may wish to load this as a virtual stack (i.e. one where the slices are loaded from disk as required), convert it to 8-bit and resave the file first.  In any case, I would recommend using a machine with 2GB of RAM (at the very least) to deal with these files.
 
-To load the files as a virtual stack, go to "File > Import > Image Sequence ..." and select the first file in the sequence, "01.tif".  You will be presented with the import dialog, in which you should make sure that "Use virtual stack" is selected.
+To load the files as a virtual stack, go to "File {{arrow}} Import {{arrow}} Image Sequence ..." and select the first file in the sequence, "01.tif".  You will be presented with the import dialog, in which you should make sure that "Use virtual stack" is selected.
 
 [[Image:Diadem_Cerebellar-1.png]]
 
@@ -102,27 +102,27 @@ To load the files as a virtual stack, go to "File > Import > Image Sequence ..."
 
 [[Image:Diadem_Cerebellar-2.png|750px]]
 
-After loading this you need to convert this to 8-bit.  You can do this in any number of ways, and if you're actively working on a tracing task with this data you will probably want to do this in such a way that picks out the brown coloured neuronal processes.  However, a simple way just for viewing purposes is to use the "Image > Color > RGB to Luminance" option.  (Another option is to use "Image > Type > 8-bit".)  This will produce results like this:
+After loading this you need to convert this to 8-bit.  You can do this in any number of ways, and if you're actively working on a tracing task with this data you will probably want to do this in such a way that picks out the brown coloured neuronal processes.  However, a simple way just for viewing purposes is to use the "Image {{arrow}} Color {{arrow}} RGB to Luminance" option.  (Another option is to use "Image {{arrow}} Type {{arrow}} 8-bit".)  This will produce results like this:
 
 [[Image:Diadem_Cerebellar-3.png|750px]]
 
 You can close the original virtual stack now.
 
-It is a good idea to invert this image, since the 3D Viewer will make the low values of the image more transparent, and Simple Neurite Tracer assumes that neurons are brighter than their background.  So, go to "Edit > Invert" and select "Yes" in response to the question about whether to process all 34 images.  The results should look like this:
+It is a good idea to invert this image, since the 3D Viewer will make the low values of the image more transparent, and Simple Neurite Tracer assumes that neurons are brighter than their background.  So, go to "Edit {{arrow}} Invert" and select "Yes" in response to the question about whether to process all 34 images.  The results should look like this:
 
 [[Image:Diadem_Cerebellar-4.png|750px]]
 
-Before saving this out as a single 862MB stack, it is a good idea to correct the calibration of the image.  The [http://www.diademchallenge.org/cerebellar_climbing_fibers_readme.html data set web page] tells us that the separation between slices is 8.08 pixels.  So, if you bring up the "Image > Properties" dialog, then you can correct the voxel depth to be 8.08 times the pixel width:
+Before saving this out as a single 862MB stack, it is a good idea to correct the calibration of the image.  The [http://www.diademchallenge.org/cerebellar_climbing_fibers_readme.html data set web page] tells us that the separation between slices is 8.08 pixels.  So, if you bring up the "Image {{arrow}} Properties" dialog, then you can correct the voxel depth to be 8.08 times the pixel width:
 
 [[Image:Diadem_Cerebellar-5.png]]
 
-Now save this as a single TIFF stack called CF_1.tif by going to "File > Save As > Tiff ...", saving it in the directory above the one with the slices, to avoid confusion.
+Now save this as a single TIFF stack called CF_1.tif by going to "File {{arrow}} Save As {{arrow}} Tiff ...", saving it in the directory above the one with the slices, to avoid confusion.
 
-You can now start the tracer with Plugins > Segmentation > Simple Neurite Tracer.  This may take some time, since there is a lot of data to load in to the 3D viewer.  The result should look like this:
+You can now start the tracer with Plugins {{arrow}} Segmentation {{arrow}} Simple Neurite Tracer.  This may take some time, since there is a lot of data to load in to the 3D viewer.  The result should look like this:
 
 [[Image:Diadem_Cerebellar-6.png|750px]]
 
-You may wish to adjust the transparency in the 3D viewer by selecting the image volume (left click on the image in the 3D viewer) and then going to "Edit > Attributes > Change Transparency...":
+You may wish to adjust the transparency in the 3D viewer by selecting the image volume (left click on the image in the 3D viewer) and then going to "Edit {{arrow}} Attributes {{arrow}} Change Transparency...":
 
 [[Image:Diadem_Cerebellar-7.png]]
 
@@ -138,7 +138,7 @@ Make sure that "Ignore calibration" is selected (as in that screenshot) and that
 
 The [http://www.diademchallenge.org/hippocampal_ca3_Interneuron_readme.html Hippocampal CA3 Interneuron] data set is difficult to deal with, since even after converting the stack to 8-bit values, it is still nearly 2GB in size.
 
-As with the other stacks, you should load the image stack using "Import > Image Sequence" and selecting the "Use virtual stack" option:
+As with the other stacks, you should load the image stack using "Import {{arrow}} Image Sequence" and selecting the "Use virtual stack" option:
 
 [[Image:Diadem_Hippocampal_CA3_Interneuron-2.png]]
 
@@ -146,11 +146,11 @@ That should load in the image data:
 
 [[Image:Diadem_Hippocampal_CA3_Interneuron-3.png|750px]]
 
-Now convert it to 8-bit with "Image > Type > 8-bit".  (The same comments as above regarding converting to 8-bit apply here as well.)
+Now convert it to 8-bit with "Image {{arrow}} Type {{arrow}} 8-bit".  (The same comments as above regarding converting to 8-bit apply here as well.)
 
 [[Image:Diadem_Hippocampal_CA3_Interneuron-4.png|750px]]
 
-... and invert the image with "Edit > Invert", saying "Yes" to the question about whether to process all 110 slices:
+... and invert the image with "Edit {{arrow}} Invert", saying "Yes" to the question about whether to process all 110 slices:
 
 [[Image:Diadem_Hippocampal_CA3_Interneuron-5.png|750px]]
 
@@ -158,9 +158,9 @@ Now set the voxel depth to 1.52 times the voxel width, as specified on the [http
 
 [[Image:Diadem_Hippocampal_CA3_Interneuron-6.png]]
 
-And then I would save this file as a TIFF stack (with "Save As > Tiff...") so that you don't have to go through these steps again.  That will need about 2GB of disk space, and will only work if your filesystem supports single files of that size.
+And then I would save this file as a TIFF stack (with "Save As {{arrow}} Tiff...") so that you don't have to go through these steps again.  That will need about 2GB of disk space, and will only work if your filesystem supports single files of that size.
 
-If you now start "Plugins > Segmentation > Simple Neurite Tracer" with its default options you should (eventually!) see something like the following:
+If you now start "Plugins {{arrow}} Segmentation {{arrow}} Simple Neurite Tracer" with its default options you should (eventually!) see something like the following:
 
 [[Image:Diadem_Hippocampal_CA3_Interneuron-7.png|750px]]
 
@@ -180,7 +180,7 @@ These 152 image stacks are in total so large that stitching them together and de
 * Import the sequence of slices
 * Correct the calibration so that the voxel depth is 3.04 times the pixel width
 * Write out each stack as a single TIFF stack (e.g. as well as the directory "000" you will also have "000.tif"
-Finally, the script will output a TileConfiguration.txt file in the same directory.  Supposing one had vast amounts of RAM, this file could be used unaltered with "Plugins > Stitching > Stitch Collection of Images", as above.  However, the file is still useful even with modest amounts of RAM, since you can copy this file to a new name and edit out all but a few of the images that are listed there.  For example, here are image stacks 000 to 007 stitched together:
+Finally, the script will output a TileConfiguration.txt file in the same directory.  Supposing one had vast amounts of RAM, this file could be used unaltered with "Plugins {{arrow}} Stitching {{arrow}} Stitch Collection of Images", as above.  However, the file is still useful even with modest amounts of RAM, since you can copy this file to a new name and edit out all but a few of the images that are listed there.  For example, here are image stacks 000 to 007 stitched together:
 
 [[Image:Neuromuscular-0-7-stitched.png|750px]]
 
