@@ -5,7 +5,7 @@
 | maintainer     = [[User:Tiago|Tiago Ferreira]]
 | source         = {{GitHub|org=tferr|repo=Scripts}}
 | released       = June 2014
-| latest version = '''1.1.5 July 2015''' ({{GitHub|org=tferr|repo=Scripts/releases|label=released versions}})
+| latest version = '''1.1.6 August 2015''' ({{GitHub|org=tferr|repo=Scripts/releases|label=released versions}})
 | category       = [[:Category:Analysis|Analysis]], [[:Category:Image annotation|Annotation]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Scripting|Scripting]]
 }}{{TOC right}}
 '''BAR''': A collection of '''B'''roadly '''A'''pplicable '''R'''outines.
@@ -37,6 +37,7 @@ Some of the scripts have a dedicated documentation page, others feature built-in
 
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#data-analysis|label=Data Analysis}}<span id="Data_Analysis"></span>
 :{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#clipboard-to-results|label=Clipboard to Results}}
+:{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#create-boxplot|label=Create Boxplot}}
 :{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#distribution-plotter|label=Distribution Plotter}}
 :[[Find Peaks]]
 :[[Sholl_Analysis#Complementary_Tools|Fit Polynomial]]
@@ -63,6 +64,9 @@ Some of the scripts have a dedicated documentation page, others feature built-in
 :{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#shortcuts-menu|label=Shortcuts Menu}}
 :{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#roi-manager-tools|label=ROI Manager Tools}}
 :{{GitHub|org=tferr|repo=Scripts|path=Tools/README.md#toolset-creator|label=Toolset Creator}}
+
+;{{GitHub|org=tferr|repo=Scripts|path=README.md#utilities|label=Utilities}}<span id="Utilities"></span>
+:[[#Commander|Commander]]
 
 == Accessing BARs ==
 As with all ImageJ commands, BAR scripts can be accessed in multiple ways: 1) through the <span style="border-bottom:1px dotted #ccc;">BAR▷ </span> menu, 2) the [[#Context_Menu|Context Menu]], 3) [[#Keyboard_Shortcuts|Keyboard Shortcuts]], 3) the ''Shortcuts Menu Tool'' (<span style="border-bottom:1px dotted #ccc;">BAR▷ Tool Installers▷ Install Shortcuts Menu</span>), that registers frequently used commands in the ImageJ toolbar, 4) by [[#ExpediteAccess|pressing]] {{key press|[[#ExpediteAccess|L]]}}, or 5) from other [[#Scripting_BARs|scripts, macros and plugins]].
@@ -348,7 +352,7 @@ function myRoutines() {
 :In a case of premature termination BARs tend to exit rather silently. The best way to have insights on an unexpected error is to run it directly from the [[Script Editor]]: Open the script by holding {{key press|Shift}} while selecting it from the <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu, press ''Run''  and have a look at the editors' s console, where all sort of useful messages will be printed to. Do {{GitHub|org=tferr|repo=Scripts|path=README.md#help|label=let us know}} if you have found a bug.
 
 ;<span id="faq:ImageJ1"></span>Does BAR work outside Fiji/ImageJ2?
-:Yes, but with some limitations. ImageJ1 (see [[ImageJ#Flavors|ImageJ Flavors]] if you have doubts about existing ImageJ distributions) will only register scripts saved in the ''plugins/'' folder or on one of its immediate subfolders. For this reason, some of the {{bc|BAR|}} submenus will appear as empty, and it may not be possible to navigate the ''BAR/'' directory using menu commands ([[#Commander|Commander]] could still be used, nevertheless). Another important aspect is that, without access to the [[Update_Fiji|built-in updater]], you will have to manually update BAR (by monitoring its {{GitHub|org=tferr|repo=Scripts/releases|label=rpository}}), and to manually update all the dependencies used by BAR.
+:Yes, but with limitations. ImageJ1 (see [[ImageJ#Flavors|ImageJ Flavors]] if you have doubts about existing ImageJ distributions) will only register scripts saved in the ''plugins/'' folder or on one of its immediate subfolders. For this reason, some of the {{bc|BAR|}} submenus will appear as empty, and it may not be possible to navigate the ''BAR/'' directory using menu commands ([[#Commander|Commander]] could still be used, nevertheless). Another important aspect is that, without access to the [[Update_Fiji|built-in updater]], you will have to manually update BAR (by monitoring its {{GitHub|org=tferr|repo=Scripts/releases|label=rpository}}), and to manually install (and update) the dependencies (i.e., third-party plugins and third-party libraries) used by BAR).
 
 ;How do I uninstall BAR?
 :Run the [[Fiji Updater|Updater]] ({{bc|Help|Update...}}). Choose ''Advance Mode'' then ''Manage update sites''. Deactivate the ''BAR'' checkbox in the alphabetically-sorted list of update sites. Press ''OK'', then ''Apply changes''. All BAR files will be deleted. Note that you can install and uninstall BAR as you see fit. See [[How to follow a 3rd party update site]] for more details.
