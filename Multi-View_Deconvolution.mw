@@ -113,8 +113,8 @@ The difference between these coordinates of the different channels can for examp
 == How do I ... Problems, known issues and solutions ==
 
 Some tipps and tricks in the next few paragraphs require to change a static variable in the source code that changes the behavior of the plugin. This is done using the '''script editor''' and works as follows:
-* File > New > Script
-* Language > Beanshell
+* File {{arrow}} New {{arrow}} Script
+* Language {{arrow}} Beanshell
 * type the command, e.g.
 <source lang="java">
 System.gc();
