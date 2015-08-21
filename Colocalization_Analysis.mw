@@ -34,7 +34,7 @@ Far too often, composite/merge images of red and green channels are considered s
 
 [[Image:SpiralsRGY.png|512px|center]]
 
-Most people might think that the image contains 4 distinct colours: 2 sets of thin spirals are in dark red and dark green, and 2 thick prominent spirals of yellow-green and yellow. However, the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling File>Open Samples>[[Spirals (Macro)]] in Fiji.
+Most people might think that the image contains 4 distinct colours: 2 sets of thin spirals are in dark red and dark green, and 2 thick prominent spirals of yellow-green and yellow. However, the yellow and yellow-green actually have <b>exactly the same color!</b> You can verify this yourself by calling File {{arrow}} Open Samples {{arrow}} [[Spirals (Macro)]] in Fiji.
 
 So... now, how do you feel about determining colocalization by looking for yellow blobs? Doesn't make much sense does it? We notice that the shades and hues of colours look different according to what other colours they are next to! So, you need to measure something from the pixel values, not simply subjectively "look at" a red/green colour merge image. 
 
@@ -172,7 +172,7 @@ In images that have no empty regions, like tissue samples, it might then be a us
 
 <span style="color: red">Note: This plugin is no longer actively developed or supported. Use [[Coloc 2]] instead, which does the same thing, only more correctly, and as described in the original publication by Costes, instead of making a nasty assumption and shortcut.</span>
 
-The [[Colocalization Test]] plugin performs the Costes test for statistical significance (which you should ALWAYS do after calculating the thresholded Manders coefficients and the scatterplot). It is in the menus at "Analyse-Colocalization-Colocalization Test"
+The [[Colocalization Test]] plugin performs the Costes test for statistical significance (which you should ALWAYS do after calculating the thresholded Manders coefficients and the scatterplot). It is in the menus at "Analyze {{arrow}} Colocalization {{arrow}} Colocalization Test"
 
 [[Image:ColocTestGUI1.png|400px]]
 
