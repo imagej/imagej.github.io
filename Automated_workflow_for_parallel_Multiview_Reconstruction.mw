@@ -65,6 +65,12 @@ Using ImageJ Opener (.tif):
     Multiple illumination directions: YES (one file per illumination direction) => not tested yet
     Multiple angles: YES (one file per angle)
 
+== Example data ==
+
+You can download a 5 view, single channel .czi example dataset here:
+
+http://tomancak-srv1.mpi-cbg.de/~schmied/
+
 === Command line ===
 
 It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate [[Linux_command_line_tutorial]] page that explains the bare essentials.
@@ -80,12 +86,6 @@ You can a download Fiji version that we have tested for compatibility with the a
 http://tomancak-srv1.mpi-cbg.de/~schmied/
 
 We will from time to time upgrade.
-
-=== Example data ===
-
-You can download a 5 view, single channel .czi example dataset here:
-
-http://tomancak-srv1.mpi-cbg.de/~schmied/
 
 === sysconfcpus ===
 
