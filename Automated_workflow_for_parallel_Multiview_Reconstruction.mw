@@ -208,9 +208,12 @@ The second part contains the advanced and manual overrides for each processing s
     
 3. Detection and registration
 
-5. Timelapse registration
+
+4. Timelapse registration
+
 
 5. Weighted-average fusion
+
 
 6. Multiview deconvolution
 
@@ -218,9 +221,12 @@ The second part contains the advanced and manual overrides for each processing s
     
 6.2. Deconvolution settings 
 
+
 7. Software directories
 
+
 8. Fiji Resource settings
+
 
 9. Advanced settings 
 
