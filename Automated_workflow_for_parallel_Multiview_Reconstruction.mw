@@ -75,7 +75,32 @@ It is very likely that the cluster computer does not run ANY Graphical User Inte
 
 === Fiji for workflow ===
 
-We provide a Fiji version that we test for compatibility with the automated cluster processing and will from time to time upgrade. 
+You can download Fiji version that we test for compatibility with the automated cluster processing here:
+
+http://tomancak-srv1.mpi-cbg.de/~schmied/
+
+We will from time to time upgrade. 
+
+=== Example data ===
+
+You can download a 5 view, single channel .czi example dataset here:
+
+http://tomancak-srv1.mpi-cbg.de/~schmied/
+
+=== sysconfcpus ===
+
+We use Libsysconfcpus (http://www.kev.pulo.com.au/libsysconfcpus/) to restrict how many cores Fiji is using on the cluster.
+
+Compile with:
+<source lang="bash">
+ CFLAGS=-ansi ./configure --prefix=$PREFIX
+ make
+ make install
+</source>
+
+where PREFIX is the installation directory.
+ANSI mode is necessary when compiling with our default GCC version, 4.9.2.
+It may or may not be necessary with older versions.
 
 === Setup of workflow ===
 
