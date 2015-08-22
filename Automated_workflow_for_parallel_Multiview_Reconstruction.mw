@@ -192,17 +192,17 @@ The second part contains the advanced and manual overrides for each processing s
 
 1. Processing switches
 
-    1.1. Switch between all channels contain beads and one channel of two contains beads
+1.1. Switch between all channels contain beads and one channel of two contains beads
      
-    1.2. Switch between fusion and deconvolution 
+1.2. Switch between fusion and deconvolution 
     
 2. Define dataset
     
-    2.1. General Settings
+2.1. General Settings
 
-    2.2. Settings for .czi files
+2.2. Settings for .czi files
     
-    2.3 Settings for .tif datasets
+2.3 Settings for .tif datasets
     
 3. Detection and registration
 
@@ -212,9 +212,9 @@ The second part contains the advanced and manual overrides for each processing s
 
 6. Multiview deconvolution
 
-    6.1. External transformation
+6.1. External transformation
     
-    6.2. Deconvolution settings 
+6.2. Deconvolution settings 
 
 7. Software directories
 
@@ -222,27 +222,27 @@ The second part contains the advanced and manual overrides for each processing s
 
 9. Advanced settings 
 
-    9.1. define_xml_czi
+9.1. define_xml_czi
     
-    9.2. define_xml_tif
+9.2. define_xml_tif
     
-    9.3. resave_hdf5
+9.3. resave_hdf5
     
-    9.4. registration
+9.4. registration
     
-    9.5. xml_merge
+9.5. xml_merge
     
-    9.6. timelapse
+9.6. timelapse
     
-    9.7. dublicate_transformations
+9.7. dublicate_transformations
     
-    9.8. fusion
+9.8. fusion
     
-    9.9. external_transform
+9.9. external_transform
     
-    9.10. deconvolution
+9.10. deconvolution
     
-    9.11. hdf5_output
+9.11. hdf5_output
     
 
 <source lang="bash">
