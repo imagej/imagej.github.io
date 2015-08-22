@@ -75,11 +75,11 @@ It is very likely that the cluster computer does not run ANY Graphical User Inte
 
 === Fiji for workflow ===
 
-You can download Fiji version that we test for compatibility with the automated cluster processing here:
+You can a download Fiji version that we have tested for compatibility with the automated cluster processing here:
 
 http://tomancak-srv1.mpi-cbg.de/~schmied/
 
-We will from time to time upgrade. 
+We will from time to time upgrade.
 
 === Example data ===
 
