@@ -195,6 +195,7 @@ The second part contains the advanced and manual overrides for each processing s
 1.1. Switch between all channels contain beads and one channel of two contains beads
      
 1.2. Switch between fusion and deconvolution 
+
     
 2. Define dataset
     
@@ -203,6 +204,7 @@ The second part contains the advanced and manual overrides for each processing s
 2.2. Settings for .czi files
     
 2.3 Settings for .tif datasets
+
     
 3. Detection and registration
 
