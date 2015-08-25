@@ -14,7 +14,7 @@
 | category               =[[:Category:Plugins|Plugins]]
 | website                = [https://github.com/DanielMaidana/TUNEL_Cell_Counter TUNEL Cell Counter at GitHub]
 }}<br>
-'''TUNEL Cell Counter''' is a free, open source macro created for ImageJ2 and FIJI, developed by Daniel E. Maidana, M.D. and Demetrios G. Vavvas, M.D., Ph.D. at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. TUNEL Cell Counter has been validated for TUNEL assay quantitation in retinal cryo-sections. TUNEL Cell Counter is able to analyze digital images obtained from fluorescent microscopes, segment the outer nuclear (ONL) and inner nuclear layer (INL), and count TUNEL-positive (TUNEL<sup>+</sup>) cells in each retinal layer. After analysis, TUNEL Cell Counter generates an array with several output variables. Additionally, the macro generates a merged image with segmented layers and quantitated cells, for qualitative performance assessment. 
+'''TUNEL Cell Counter''' is a free, open source macro created for ImageJ2 and FIJI, developed by Daniel E. Maidana, M.D. and Demetrios G. Vavvas, M.D., Ph.D. at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. TUNEL Cell Counter has been validated for TUNEL assay quantitation in retinal cryo-sections. TUNEL Cell Counter is able to analyze digital images obtained from fluorescent microscopes, segment the outer nuclear (ONL) and inner nuclear layer (INL), and count TUNEL-positive (TUNEL<sup>+</sup>) cells in each retinal layer. After analysis, TUNEL Cell Counter generates an array with several output variables. Additionally, the macro generates a merged image with segmented layers and quantitated cells for qualitative performance assessment. 
 __TOC__
 
 == Overview ==
@@ -36,7 +36,7 @@ To convert pixels to mm<sup>2</sup>, the image spatial scale is required. This c
 This macro was designed for images acquired with fluorescence microscopes using a 20x/0.8 air objective. 
 We considered this magnification the most suitable to assess a reasonably large area without missing out on details in cell morphology. 
 === Image Processing ===
-We suggest to perform consistent post-processing for all images. Regarding the blue channel, avoid saturating pixels, as this will interfere with nuclei identification. As for the green channel, reduce background as much as possible and increase exposure without saturating fragments.
+We suggest using consistent post-processing for all images. Regarding the blue channel, avoid saturating pixels, as this will interfere with nuclei identification. As for the green channel, reduce background as much as possible and increase exposure without saturating fragments.
 
 === Validated Dataset ===
 The original ONL and INL image datasets used for validation purposes are available to download. These images have been accurately segmented and quantitated, and their values were validated by observers. {{Notice |''' We strongly recommend to download and revise these images beforehand, to have a rough estimate on acquisition and post-processing parameters.'''}}
@@ -120,11 +120,11 @@ When executed in Macro Mode, the output variables are:
 :*Ratio TUNEL<sup>+</sup> Cells/INL Area (count/mm<sup>2</sup>)
 :*Percentage TUNEL<sup>+</sup> Cells/INL Total Cells (%)<br>
 [[File:Bar.png|right|250px|thumb|A new window is generated with the output variables.]]
-When executed in Batch Mode, ONL and INL Area, and ONL and INL TUNEL<sup>+</sup> cells are reported. These values were used for macro validation.
+When executed in Batch Mode, ONL Area, INL Area, ONL TUNEL<sup>+</sup> cells, and INL TUNEL<sup>+</sup> cells are reported. These values were used for macro validation.
 <br>Ratio of TUNEL<sup>+</sup> Cells can be calculated by any spreadsheet or statistics package.
 
 == Limitations == 
-#Acquisition: The macro was designed for images acquired with a 20x/0.8 air objective. Images with higher or lower magnification will not be successfully segmented. We considered this magnification was the most suitable to assess a reasonably large area without missing out cell morphology details.
+#Acquisition: The macro was designed for images acquired with a 20x/0.8 air objective. Images with higher or lower magnification will not be successfully segmented. We considered this magnification the most suitable to assess a reasonably large area without missing out cell morphology details.
 #TUNEL staining quality: Images need to have an intense cell staining and low background noise.
 #Image Focus: Uneven image focus will render incomplete layer segmentation.
 # Indistinguishable Retinal Layers: The macro cannot distinguish between the ONL and INL if you can't!
