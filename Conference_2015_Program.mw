@@ -158,17 +158,6 @@ The workshop will give a short introduction on the influence of contrast adjustm
 
 [ [http://www.biovoxxel.de/development/ How to prepare for the workshop] ]
 
-=== Dominik Lindner and Petr Walczysko - The OMERO platform for management of microscopy data and beyond ===
-In this workshop, we will outline and demonstrate the [[OMERO]] platform, and show how you can use it to work with your microscopy and/or HCS data. In addition we will demonstrate some of the applications that have been released by OME and some of the integration with 3rd party tools, including:
-* OMERO.figure - fast figures from your OMERO images
-* [[ImageJ]] - improved interaction with OMERO
-* [[Micro-Manager]] - how to import directly images to OMERO
-We've designed OMERO to be as flexible as possible, and this has enabled its use in a range of imaging domains, including light and electron microscopy, high content screening. Come along to the workshop and bring your favourite data.
-
-'''Workshop requirements:'''
-# [http://downloads.openmicroscopy.org/omero/5.1.3/#clients OMERO.insight 5.1.3] standalone client.
-# [http://downloads.openmicroscopy.org/omero/5.1.3/#plugins OMERO.insight-ij 5.1.3] plugin for ImageJ.
-
 === Fabrice de Chaumont and Stephane Dallongeville - Hands on Icy ! ===
 In this practical workshop, discover how to use [[Icy]] to watch and analyse your images ! During this session, we will see the different functionalities of Icy in action, from visualization (2D/3D) to analysis based on a real biologic case with a lot of analysis traps ! Let's investigate !
 
@@ -185,6 +174,17 @@ Thirdly, we will explore the advantages of personalized scripting libraries that
 '''Workshop requirements:'''
 # An updated installation of Fiji
 # An internet connection, required for download of sample images and browsing of http://javadoc.imagej.net
+
+=== Dominik Lindner and Petr Walczysko - The OMERO platform for management of microscopy data and beyond ===
+In this workshop, we will outline and demonstrate the [[OMERO]] platform, and show how you can use it to work with your microscopy and/or HCS data. In addition we will demonstrate some of the applications that have been released by OME and some of the integration with 3rd party tools, including:
+* OMERO.figure - fast figures from your OMERO images
+* [[ImageJ]] - improved interaction with OMERO
+* [[Micro-Manager]] - how to import directly images to OMERO
+We've designed OMERO to be as flexible as possible, and this has enabled its use in a range of imaging domains, including light and electron microscopy, high content screening. Come along to the workshop and bring your favourite data.
+
+'''Workshop requirements:'''
+# [http://downloads.openmicroscopy.org/omero/5.1.3/#clients OMERO.insight 5.1.3] standalone client.
+# [http://downloads.openmicroscopy.org/omero/5.1.3/#plugins OMERO.insight-ij 5.1.3] plugin for ImageJ.
 
 === Matt McCormick - SimpleITK ===
 To quantitatively compare the contents of two images, they must be spatially aligned. Image registration finds the spatial transformation that aligns two images. This workshop presents SimpleITK, the simplified interface to the [[Insight Toolkit]], to perform 2D and 3D image registration. With this programming library, which interoperates with [[ImageJ]]/[[Fiji]], a spatial transformation between two images can be estimated. This spatial transformation can be quantified to learn about movement or deformation in the images, or it can be used to resample one of the images so that pixel-to-pixel content can be compared. Through interactive examples in IPython notebooks, we will explore and learn about the components of the registration framework and how they work together: transforms, interpolators, similarity metrics, and optimizers.
