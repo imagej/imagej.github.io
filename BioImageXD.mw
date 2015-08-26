@@ -1,10 +1,10 @@
 {{Infobox
 | name                   = BioImageXD
 | software               = BioImageXD
-| author                 = Pasi Kankaanpää<br>Lassi Paavolainen<br>Varpu Marjomäki<br>Jyrki Heino
+| author                 = Pasi Kankaanpää<br>Lassi Paavolainen<br>Varpu Marjomäki<br>Jyrki Heino<br>Daniel J. White
 | maintainer             = Lassi Paavolainen
 | source                 = [http://svn.code.sf.net/p/bioimagexd/code/bioimagexd/ on SourceForge]
-| status                   = Inactive
+| status                   = Last Update: 2014-02-24
 | website                = http://bioimagexd.net/
 }}
 BioImageXD is a free open source software package for analyzing, processing and visualizing multi-dimensional microscopy images.
