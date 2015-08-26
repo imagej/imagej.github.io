@@ -140,6 +140,8 @@ Nanoparticle tracking analysis is a widely known method to determine the hydrody
 
 Telomeres are regions of repetitive nucleotide sequences located at the ends of chromosomes, which protect them from fusion and degradation. In every cell division, the telomeres are shortened until they reach a critical length that signals the cell to go into senescence. Abnormally short or long telomeres are common phenomenon in cancer cells, as compared to healthy controls. Manual characterization of telomere length distribution is at best difficult. Here we present an image processing workflow which was developed in ImageJ and R to enable automated processing of telomere count and length distribution in thousands of cells. Over 3000 cells were imaged, each containing 30-150 visible telomeres. This could not have been done manually. The ImageJ environment provided us with the ability to acquire and analyze large quantities of data in a reproducible manner, and demonstrated the spread in data that resulted from the fundamental biology and physiology that were being studied.
 
+[ [http://conference.imagej.net/2015/aryeh-weiss/ij2015telomere-A.ppt presentation slides] ]
+
 == Workshops ==
 
 The workshops are one-to-two hour blocks which help users to explore topics interactively and in depth.
@@ -182,6 +184,8 @@ The [[ImageJ2]] project updates ImageJ with powerful new features. Two especiall
 
 === Aryeh Weiss - Introduction to image processing with ImageJ ===
 (Forthcoming.)
+
+[ [http://conference.imagej.net/2015/aryeh-weiss/IntroImageProcessingB.ppt workshop slides], [http://conference.imagej.net/2015/aryeh-weiss/stk_0001_Result%20of%20cftr-wt1.avi.zip sample data] ]
 
 == Posters ==
 
