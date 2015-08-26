@@ -73,7 +73,9 @@ For further details and code links, see [[MATLAB Scripting]].
 
 === Irene Landrum - SWAMP – a no-cost, open, high-performance computing platform for continuous software assurance ===
 
-The Software Assurance Marketplace (SWAMP) is a no-cost, open, high-performance computing platform for continuous software assurance. It includes an array of open-source and commercial software security testing tools, a library of applications with known vulnerabilities, and a comprehensive results viewer (CodeDx) for vulnerability remediation throughout the software development lifecycle.
+The [https://www.mir-swamp.org/ Software Assurance Marketplace] (SWAMP) is a no-cost, open, high-performance computing platform for [https://continuousassurance.org/ continuous software assurance]. It includes an array of open-source and commercial software security testing tools, a library of applications with known vulnerabilities, and a comprehensive results viewer (CodeDx) for vulnerability remediation throughout the software development lifecycle.
+
+[ [http://conference.imagej.net/2015/irene-landrum/SWAMP%20%20Presentation%202015Aug25.pptx presentation slides] ]
 
 === Melissa Linkert - OME Bio-Formats: 10 years of proprietary image data ===
 
