@@ -31,6 +31,11 @@
 {{!}} [http://osrc.dfm.io/{{{osrc}}} Open Source Report Card]
 {{!}}-
 }}
+{{#if:{{{linkedin|}}}|
+! LinkedIn
+{{!}} [https://www.linkedin.com/pub/{{{linkedin}}} LinkedIn profile]
+{{!}}-
+}}
 {{#if:{{{website|}}}|
 ! Website
 {{!}} {{{website}}}
