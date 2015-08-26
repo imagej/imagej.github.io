@@ -111,6 +111,8 @@ Historically, the "double push to master" approach was the recommended way to re
 
 The disadvantage to this method is that, since the steps are not automated, there is room for error and inconsistency—not pushing the tag, not making a commit to go back to a SNAPSHOT version, etc.
 
+'''Note:''' this process works because Jenkins automatically builds the project in response to commits on master. Whether they are deployed as [[Maven]] releases or SNAPSHOTS is determined entirely by the version number in the pom.xml for the project. This is why it is especially important to change the version back to a SNAPSHOT after the release: only one release for a given version can exist, and once it exists it can not be overwritten. If you create multiple git commits at the same release version, you will have lost [[Reproducibility#Reproducible_builds|reproducability]].
+
 = After a release =
 
 Once the release has been made, in the case of ImageJ and Fiji components it is likely that you want it uploaded to an ImageJ [[update site]]:
