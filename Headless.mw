@@ -65,6 +65,9 @@ $imagejBin -macro $script # running the actual ijm script
 wait # waits until all 'program' processes are finished
 # this wait sees only the 'program' processes, not the Xvfb process
 )
+
+See also [https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;5ace1ed0.1508 this post on the ImageJ mailing list].
+
 </source>
 
 == Rewriting as scripts or plugins ==
