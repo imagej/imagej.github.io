@@ -178,6 +178,10 @@ First, we will explore the advantages of multi-language scripting and skim throu
 Secondly, we will explore how BAR can be used to streamline ImageJ workflows. 
 Thirdly, we will explore the advantages of personalized scripting libraries that are shared across routines.
 
+'''Workshop requirements:'''
+# An updated installation of Fiji
+# An internet connection, required for download of sample images and browsing of http://javadoc.imagej.net
+
 === Matt McCormick - SimpleITK ===
 To quantitatively compare the contents of two images, they must be spatially aligned. Image registration finds the spatial transformation that aligns two images. This workshop presents SimpleITK, the simplified interface to the [[Insight Toolkit]], to perform 2D and 3D image registration. With this programming library, which interoperates with [[ImageJ]]/[[Fiji]], a spatial transformation between two images can be estimated. This spatial transformation can be quantified to learn about movement or deformation in the images, or it can be used to resample one of the images so that pixel-to-pixel content can be compared. Through interactive examples in IPython notebooks, we will explore and learn about the components of the registration framework and how they work together: transforms, interpolators, similarity metrics, and optimizers.
 
