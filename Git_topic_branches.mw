@@ -21,9 +21,6 @@ The argument ''branch-point'' can be any commit, or tag.  If you want to branch 
 
 will pull the branch ''fake2'' from ''origin'' into the current (''fake2'') branch.
 
-::(I would always do "git checkout --track -b fake2 origin/fake2" instead for this - what is the difference, in practice? --[[User:Mark|Mark]] 23:53, 18 June 2008 (CEST))
-:::To reply to my own question, after Johannes explained it to me, if the existing branch is a remote branch (as in this case) "--track" is assumed by default (in git versions >= 1.5.5) --[[User:Mark|Mark]] 13:23, 19 June 2008 (CEST)
-
 = Switching between branches =
 
 To switch from the current branch to another, first make sure that you have committed (or stashed) everything, and then call
