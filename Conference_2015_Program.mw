@@ -15,7 +15,9 @@ There will be four keynote presentations.
 
 === Wayne Rasband - Introduction to ImageJ ===
 
-=== Curtis Rueden - The ImageJ2 platform, and Fiji distribution of ImageJ ===
+=== Curtis Rueden - ImageJ2 and Fiji: the ImageJ2 platform, and the Fiji distribution of ImageJ ===
+
+[ [http://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/#/ Presentation slides] ]
 
 === Mark Tsuchida - Microscope Control and Image Acquisition with Micro-Manager ===
 
@@ -61,11 +63,13 @@ This abstract summarizes the progress on the development of tools for astronomic
 
 Flow-induced banding patterns in extrusion-based foams can lead to aesthetic issues, or, in severe cases, to compromised product performance. Image collection and analysis procedures are described that allow the pattern to be captured with good contrast and quantitatively analyzed in a manner that is consistent with human perception. The procedure for pattern characterization and classification will be discussed. The key component is isolating the bright/dark banding in the context of the cellular structure where the size of the individual cells can be on the order of the width of the bands. Cell-by-cell contrast is often greater than the humanly-perceived contrast from bands of correlated cell size within an area. Removing this ambiguity in the assignment of bright/dark patterns to cells versus bands allows the foam pattern to be analyzed directly. Image analysis results are shown to be consistent with human panel ratings for a series of several foam samples.
 
-=== Mark Hiner - MATLAB and ImageJ: Reunited (and it feels so good) ===
+=== Mark Hiner - ImageJ+MATLAB: Reunited ===
 
 ImageJ and MATLAB both provide powerful scientific development paradigms. To lower the barrier between these tools, ImageJ now offers a MATLAB script language plugin, making it possible to execute parameterized MATLAB scripts from within ImageJ's script editor. In the other direction, the ability to call ImageJ from MATLAB has been improved with an enhanced MIJ.m script, which supports the full range of installed plugins, and supports the use of both ImageJ1 and ImageJ2 data structures from the MATLAB command prompt. This bidirectional support facilitates the sharing and reuse of efforts from both communities.
 
 For further details and code links, see [[MATLAB Scripting]].
+
+[ [http://imagej.github.io/presentations/2015-09-03-imagej-matlab/ Presentation slides] ]
 
 === Irene Landrum - SWAMP – a no-cost, open, high-performance computing platform for continuous software assurance ===
 
@@ -189,8 +193,10 @@ We've designed OMERO to be as flexible as possible, and this has enabled its use
 === Matt McCormick - SimpleITK ===
 To quantitatively compare the contents of two images, they must be spatially aligned. Image registration finds the spatial transformation that aligns two images. This workshop presents SimpleITK, the simplified interface to the [[Insight Toolkit]], to perform 2D and 3D image registration. With this programming library, which interoperates with [[ImageJ]]/[[Fiji]], a spatial transformation between two images can be estimated. This spatial transformation can be quantified to learn about movement or deformation in the images, or it can be used to resample one of the images so that pixel-to-pixel content can be compared. Through interactive examples in IPython notebooks, we will explore and learn about the components of the registration framework and how they work together: transforms, interpolators, similarity metrics, and optimizers.
 
-=== Curtis Rueden and Brian Northan - Parameterized scripting with ImageJ Ops ===
+=== Curtis Rueden and Brian Northan - ImageJ2 scripts: parameters + ImageJ Ops ===
 The [[ImageJ2]] project updates ImageJ with powerful new features. Two especially useful improvements are: 1) the [[ImageJ Ops]] library, which provides a powerful, unified, extensible and performant collection of image processing routines; and 2) [[Scripting parameters|parameterized scripts]] and macros, which may now declare typed input and output parameters. This mechanism allows scripts to be prototyped more quickly and succinctly, and makes them compatible with other tools beyond ImageJ, including the [[KNIME]] data mining platform, [[CellProfiler]] image analysis tool, and [[OMERO]] image database. This workshop will walk users through how to write parameterized macros and scripts using ImageJ's [[Script Editor]], which leverage image processing routines from ImageJ Ops. It will demonstrate how to execute them [[Headless|headlessly]] from the command line, and briefly illustrate how these scripts can be used from other tools in the [[SciJava]] software ecosystem.
+
+[ [http://imagej.github.io/presentations/2015-09-04-imagej2-scripting/ Workshop slides] ]
 
 === Aryeh Weiss<sup>1,2</sup> - An introduction to digital image processing ===
 
