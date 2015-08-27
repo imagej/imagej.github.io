@@ -201,8 +201,21 @@ The [[ImageJ2]] project updates ImageJ with powerful new features. Two especiall
 
 Posters will be available to browse at any time throughout the conference. There will also be a dedicated poster session on Thursday evening during the reception.
 
-=== Ignacio Arganda-Carreras - Trainable Weka Segmentation ===
-TBD
+=== Ignacio Arganda-Carreras - Trainable Weka Segmentation: a tool for machine-learning-based image segmentation ===
+The problem of image segmentation, i.e. partitioning an image into multiple segments, remains
+unsolved. In recent years, methods incorporating machine learning techniques into the process have
+emerged as powerful tools, improving the accuracy of detected boundaries or labeled areas. Many
+different approaches have been proposed based on predefined image features, filters and training
+sets with "gold standard" provided by humans. However, very often those tools and methods do
+not have their code open, need to be separately compiled and combined or are not freely available.
+In this paper we propose a bridge between the machine learning and the image processing worlds.
+We benefit from combining two of the most popular and powerful platforms of each respective
+field: the Fiji toolkit, frequently used for biomedical image processing but with a wider spectrum;
+and the Waikato Environment for Knowledge Analysis (WEKA) suite, which supports several
+standard data mining tasks, more specifically, data preprocessing, clustering, classification, regression, visualization, and feature selection. Integrated in the same library and graphical interface,
+they provide a novel and completely open-source framework to combine, evaluate and compare
+any available learning algorithm to perform general-purpose image segmentation. The source and
+binary code is completely available and runs on any modern computing platform.
 
 === Ignacio Arganda-Carreras - MorphoLibJ ===
 TBD
