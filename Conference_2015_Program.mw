@@ -192,8 +192,21 @@ To quantitatively compare the contents of two images, they must be spatially ali
 === Curtis Rueden and Brian Northan - Parameterized scripting with ImageJ Ops ===
 The [[ImageJ2]] project updates ImageJ with powerful new features. Two especially useful improvements are: 1) the [[ImageJ Ops]] library, which provides a powerful, unified, extensible and performant collection of image processing routines; and 2) [[Scripting parameters|parameterized scripts]] and macros, which may now declare typed input and output parameters. This mechanism allows scripts to be prototyped more quickly and succinctly, and makes them compatible with other tools beyond ImageJ, including the [[KNIME]] data mining platform, [[CellProfiler]] image analysis tool, and [[OMERO]] image database. This workshop will walk users through how to write parameterized macros and scripts using ImageJ's [[Script Editor]], which leverage image processing routines from ImageJ Ops. It will demonstrate how to execute them [[Headless|headlessly]] from the command line, and briefly illustrate how these scripts can be used from other tools in the [[SciJava]] software ecosystem.
 
-=== Aryeh Weiss - Introduction to image processing with ImageJ ===
-(Forthcoming.)
+=== Aryeh Weiss<sup>1,2</sup> - An introduction to digital image processing ===
+
+<sup>1</sup>Faculty of Engineering, Bar Ilan University, Ramat Gan 52900 Israel
+<br><sup>2</sup>Bio-imaging Unit, Institute for Life Sciences, Hebrew University, Israel
+
+Digital image processing is the tool that allows quantitative and reproducible data to be extracted from the images such as those that are produced in microscopy, forensics, and astronomy. A proper understanding of image processing is required in order to avoid introduction of bias or other artifacts, and also to process the very large datasets that are often produced.
+
+In this workshop, the basics of digital images and the stages of the image processing workflow that follow acquisition will be presented and explained. The workshop will cover the following topics:
+# Digital image formats and representations
+# Basic tools for digital image characterization (for example, histogram and intensity line profile).
+# Image enhancement and noise reduction.
+# Identification of objects of interest (segmentation).
+# Analysis and data reduction.
+
+This workshop assumes no prior knowledge of image processing, and is designed to enable the participants to understand the subsequent presentations and talks.
 
 [ [http://conference.imagej.net/2015/aryeh-weiss/IntroImageProcessingB.ppt workshop slides], [http://conference.imagej.net/2015/aryeh-weiss/stk_0001_Result%20of%20cftr-wt1.avi.zip sample data] ]
 
