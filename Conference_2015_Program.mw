@@ -236,8 +236,12 @@ binary code is completely available and runs on any modern computing platform.
 
 [ [http://conference.imagej.net/2015/ignacio-arganda-carreras/poster-TWS-ImageJ-Conf-2015.pdf Poster] ]
 
-=== Ignacio Arganda-Carreras - MorphoLibJ ===
-TBD
+=== David Legland - MorphoLibJ: an integrated library for morphological filtering, segmentation and analysis of plant tissues ===
+David Legland, Ignacio Arganda-Carreras, Philippe Andrey
+
+Understanding the cellular bases of complex phenomena such as plant development and morphogenesis requires the precise determination and quantification of cellular morphology and of tissular organization. Imaging techniques such as 3D confocal microscopy constantly gain in spatial resolution, signal quality and throughput, thus allowing 3D imaging of several dozens or hundreds of cells and of their spatial organization. However, the automated analysis of plant tissues still remains challenging. 
+
+The MorphoLibJ library therefore proposes a collection of tools that facilitate the exploitation of 3D images of plant cells. These tools are mostly based on mathematical morphology, including powerful algorithms such as 3D watershed and 3D geodesic reconstruction. Moreover, these algorithms were integrated into user-friendly interfaces to facilitate their appropriation by biologists.
 
 === Sherry Clendenon - Image Acquisition and Processing for Cell Based Model Instantiation and Validation ===
 Sherry G. Clendenon, Maciek Swat, Xiao Fu, Jeffrey L. Clendenon, James Sluka, James Glazier
