@@ -243,6 +243,8 @@ Understanding the cellular bases of complex phenomena such as plant development 
 
 The MorphoLibJ library therefore proposes a collection of tools that facilitate the exploitation of 3D images of plant cells. These tools are mostly based on mathematical morphology, including powerful algorithms such as 3D watershed and 3D geodesic reconstruction. Moreover, these algorithms were integrated into user-friendly interfaces to facilitate their appropriation by biologists.
 
+[ [http://conference.imagej.net/2015/ignacio-arganda-carreras/poster_MorphoLibJ.pdf Poster] ]
+
 === Sherry Clendenon - Image Acquisition and Processing for Cell Based Model Instantiation and Validation ===
 Sherry G. Clendenon, Maciek Swat, Xiao Fu, Jeffrey L. Clendenon, James Sluka, James Glazier
 
