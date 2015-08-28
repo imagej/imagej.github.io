@@ -223,7 +223,7 @@ The problem of image segmentation, i.e. partitioning an image into multiple segm
 
 [ [http://conference.imagej.net/2015/ignacio-arganda-carreras/poster-TWS-ImageJ-Conf-2015.pdf Poster] ]
 
-=== Karl Bellve - Design and Implementation of 3D Focus Stabilization for Fluorescence Microscopy ===
+=== Karl Bellve - Design and implementation of 3D focus stabilization for fluorescence microscopy ===
 Focus stabilization is critical for many imaging modalities like TIRF, PALM and STORM. The focus stabilization device presented here, named pgFocus, is an open source and open hardware solution that can be integrated into microscopes with an existing objective positioner. pgFocus is a programmable and inexpensive circuit board consisting of a micro-controller, linear sensor array, DAC and an ADC. While pgFocus can stabilize on a single focal plane within ±3nM at 30Hz, it can also follow and correct 3D focus changes when imaging multiple Z positions. pgFocus works by monitoring the reflection of an 808nm laser beam that is internally reflected at a glass/water interface. The translation of the reflected laser beam is converted into Δ distance change between the objective and the glass/water interface. The relationship between movement of the objective and the translation of the return laser beam is determined through an calibration procedure. This Δ distance change measurement is used to modify and adjust a pass-through voltage signal that is directed to a piezo objective positioner. The pass-through voltage is continually adjusted to move the reflected laser beam back to the original focus position.
 
 === Jan Brocher - The BioVoxxel Toolbox ===
