@@ -11,7 +11,7 @@
 {{ImgLib}}
 == Introduction & required files ==
 
-This page shows ten increasingly complex examples of how to program with ImgLib2. The intention of these examples are not to explain ImgLib2 concepts, but rather to give some practical hints how to work with the library and to grasp the principles in a learning-by-doing way.
+This page shows eight increasingly complex examples of how to program with ImgLib2. The intention of these examples are not to explain ImgLib2 concepts, but rather to give some practical hints how to work with the library and to grasp the principles in a learning-by-doing way.
 
 All examples presented on this page are always entire classes including a main method to run them. Simply copying them into your favorite editor (e.g. the [[Script Editor]]) and compile & run them. The required Java libraries (jar files) are part of ImageJ and can be found in ''ImageJ.app/jars/'':
 
