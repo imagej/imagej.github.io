@@ -17,7 +17,7 @@ All examples presented on this page are always entire classes including a main m
 
 * imglib2 (the core)
 * imglib2-algorithm (algorithms implemented in ImgLib2)
-* imglib2-algorithm-gpl (GPL-licensed algorithms implemented in ImgLib2—ships with [[Fiji]] only, not plain [[ImageJ2]], for licensing reasons)
+* imglib2-algorithm-gpl (GPL-licensed algorithms implemented in ImgLib2—ships with [[Fiji]] only, not plain [[ImageJ2]], for [[licensing]] reasons)
 * imglib2-ij (the ImageJ interaction)
 * imglib2-realtransform (for example 8)
 * scifio (for reading and writing files)
