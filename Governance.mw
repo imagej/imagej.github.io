@@ -94,7 +94,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | '''[[ImageJ1]]'''
 | Wayne Rasband
 | Wayne Rasband
-| Wayne Rasband<br>[[User:Schindelin|Johannes Schindelin]]<br>[[User:Rueden|Curtis Rueden]]
+| Wayne Rasband<br>[[User:Rueden|Curtis Rueden]]
 | Wayne Rasband
 | See [http://imagej.net/notes.html release notes]
 |-
@@ -117,8 +117,8 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | rowspan=3 style="vertical-align: middle" | [[File:fiji-icon.png|48px]]
 | '''[[Fiji]]'''
 | [[User:Schindelin|Johannes Schindelin]]<br>[[User:Albertcardona|Albert Cardona]]
-| [[User:Schindelin|Johannes Schindelin]]<sup>2</sup><br>[[User:Rueden|Curtis Rueden]]
-| [[User:Schindelin|Johannes Schindelin]]<sup>2</sup><br>[[User:Rueden|Curtis Rueden]]<br>[[User:Hinerm|Mark Hiner]]
+| [[User:Rueden|Curtis Rueden]]<br>[[User:Schindelin|Johannes Schindelin]]<sup>2</sup>
+| [[User:Rueden|Curtis Rueden]]<br>[[User:Hinerm|Mark Hiner]]<br>[[User:Schindelin|Johannes Schindelin]]<sup>2</sup>
 | [https://github.com/orgs/fiji/people List on GitHub]
 | See [[Contributors]]
 |-
