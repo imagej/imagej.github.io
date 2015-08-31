@@ -20,10 +20,10 @@ __NOTOC__
 === [[ImageJ2]] ===
 * [[User:Rueden|Curtis Rueden]]<sup>2</sup> (lead)
 * [[User:Hinerm|Mark Hiner]]<sup>2</sup>
-* [[User:Schindelin|Johannes Schindelin]]<sup>2</sup>
 * [[User:Leek|Lee Kamentsky]]<sup>4</sup>
 * [[User:Dietz|Christian Dietz]]<sup>9</sup>
 * Brian Northan<sup>13</sup>
+* [[User:Schindelin|Johannes Schindelin]]<sup>2</sup> (Sep 2011-Nov 2014)
 * [[User:Grislis|Aivar Grislis]]<sup>2</sup> (Jan 2010-Dec 2013)
 * [[User:Bdezonia|Barry DeZonia]]<sup>2</sup> (Jan 2010-Nov 2013)
 * [[User:Harris|Grant Harris]]<sup>5</sup> (Nov 2009-Jan 2012)
@@ -34,8 +34,7 @@ __NOTOC__
 <div style="float: left; width: 27%">
 
 === [[Fiji]] ===
-* [[User:Schindelin|Johannes Schindelin]]<sup>2</sup> (lead)
-* [[User:Rueden|Curtis Rueden]]<sup>2</sup>
+* [[User:Rueden|Curtis Rueden]]<sup>2</sup> (lead)
 * [[User:Hinerm|Mark Hiner]]<sup>2</sup>
 * [[User:JeanYvesTinevez|Jean-Yves Tinevez]]<sup>8</sup>
 * [[User:Iarganda|Ignacio Arganda-Carreras]]
@@ -48,6 +47,7 @@ __NOTOC__
 * [[Dan White|Dan White]]
 * [[User:Landini|Gabriel Landini]]
 * [[User:Albertcardona|Albert Cardona]]<sup>6,12</sup>
+* [[User:Schindelin|Johannes Schindelin]]<sup>2</sup>
 * See also [https://github.com/fiji/fiji/graphs/contributors graph of Fiji contributors]
 
 === [[BigDataViewer]] ===
