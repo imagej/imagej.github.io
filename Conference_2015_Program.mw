@@ -303,8 +303,12 @@ The evaluation of sperm morphology has proven problematic due to variation in wh
 === Tobias Pietzsch - BigDataViewer ===
 TBD
 
-=== Stephan Saalfeld - ImgLib2 ===
-TBD
+=== Stephan Saalfeld - ImgLib2 for visualization and generic image processing ===
+[[ImgLib2]] is an open-source Java library for ''n''-dimensional data representation and manipulation with focus on image processing.  It aims at minimizing code duplication by cleanly separating pixel-algebra, data access and data representation in memory.  Algorithms can be implemented for classes of pixel types and generic access patterns by which they become independent of the specific dimensionality, pixel type and data representation.  [[ImgLib2]] illustrates that an elegant high-level programming interface can be achieved without sacrificing performance.
+
+It provides efficient implementations of common data types, storage layouts, and algorithms.  [[ImgLib2]] is the data model underlying [[ImageJ2]], the [https://tech.knime.org/community/image-processing KNIME Image Processing toolbox], the [[BigDataViewer]], and an increasing number of Fiji-Plugins.
+
+[[ImgLib2]] is licensed under [https://github.com/imglib/imglib2/blob/master/LICENSE.txt BSD].  Documentation and source code are available at [http://imglib2.net http://imglib2.net] and in a public source code repository at [https://github.com/imglib/imglib2 GitHub].
 
 === Md Abdul Kader Sagar - The SLIM Curve plugin for lifetime image analysis ===
 The [[SLIM Curve]] plugin for ImageJ is an ImageJ plugin for lifetime image analysis which uses the SLIM Curve library. SLIM Curve is an exponential curve fitting library used for Fluorescent Lifetime Imaging (FLIM) and Spectral Lifetime Imaging (SLIM). This time in excited state is affected by its chemical microenvironment such as proximity to other fluorophores, pH and hydrophobic regions. This ability has made FLIM a popular and unique tool for studies ranging from metabolic measurement to measuring distances between proteins. FLIM allows us to calculate how long a fluorophore stays in excited state. The need for analyzing different type of FLIM images from different system either independently or as part of an overall image analysis workflow was the motivation for development of open source SLIM Curve library.SLIM Curve Plugin uses rapid lifetime determination (RLD), Levenberg-Marquardt (LM) or hybrid (RLD+LM) fitting algorithms and can perform Single, double and triple exponential fits, as well as stretched exponential fits.
