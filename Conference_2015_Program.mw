@@ -165,6 +165,8 @@ In this practical workshop, discover how to use [[Icy]] to watch and analyse you
 
 {{Cite Icy}}
 
+'''Workshop requirements:''' An installation of [http://icy.bioimageanalysis.org/download Icy]
+
 === Tiago Ferreira - Scripting with BAR ===
 The [[scripting]] capabilities of [[ImageJ]] play a pivotal role in its success because they empower users with the ability to perform efficient and reproducible scientific image processing. 
 For this reason, we created Broadly Applicable Routines ([[BAR]]): a curated collection of plugins and multi-language scripts that streamline ImageJ usage by 1) providing tools that help users create, access and organize their own macros and scripts; 2) by offering source code templates and customizable scripting libraries; and 3) by bridging the gap between IJ1 and IJ2 through the modernization of IJ1 built-in commands. BAR is [[open source]], encourages community contributions and is available through an [[update site]].
