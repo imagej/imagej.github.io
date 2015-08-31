@@ -375,7 +375,7 @@ it means that you do not have ''Java3D'' installed. This happens typically when 
 
 == How can I call ImageJ from MATLAB, or vice versa? ==
 
-If you are looking to call ImageJ code from your [[MATLAB]] script, it is actually quite simple. Just embed the calls to fully qualified Java class methods directly in your scripts. [[MATLAB]] takes care of transparently converting between Java primitive types and arrays and its own matrices and cell structures. The [[Fiji]] distribution of ImageJ provides a helper program called Miji to simplify this approach even further. See the [[Miji]] page for further details.
+If you are looking to call ImageJ code from your [[MATLAB]] script, it is actually quite simple. Just embed the calls to fully qualified Java class methods directly in your scripts. [[MATLAB]] takes care of transparently converting between Java primitive types and arrays and its own matrices and cell structures. The ImageJ-MATLAB [[update site]] provides a helper program called IJM to simplify this approach even further. See the [[MATLAB]] page for further details.
 
 Conversely, if you are looking to evaluate [[MATLAB]] code from within an ImageJ plugin or other Java code, [[MATLAB]] provides an [http://undocumentedmatlab.com/blog/jmi-java-to-matlab-interface/ interface called JMI] for doing it. However, for it to work, you must launch your program from inside the [[MATLAB]] environment, so that it runs with [[MATLAB]]'s JVM.
 
