@@ -169,13 +169,14 @@ In this practical workshop, discover how to use [[Icy]] to watch and analyse you
 The [[scripting]] capabilities of [[ImageJ]] play a pivotal role in its success because they empower users with the ability to perform efficient and reproducible scientific image processing. 
 For this reason, we created Broadly Applicable Routines ([[BAR]]): a curated collection of plugins and multi-language scripts that streamline ImageJ usage by 1) providing tools that help users create, access and organize their own macros and scripts; 2) by offering source code templates and customizable scripting libraries; and 3) by bridging the gap between IJ1 and IJ2 through the modernization of IJ1 built-in commands. BAR is [[open source]], encourages community contributions and is available through an [[update site]].
 The workshop will be divided in three parts:
-First, we will explore the advantages of multi-language scripting and skim through the basics of popular [[Scripting|scripting]] languages such as [[BeanShell]], [[Python]], and the [[Introduction_into_Macro_Programming|ImageJ macro language]].
+First, we will explore the advantages of multi-language scripting and skim through the basics of popular [[Scripting|scripting]] languages such as [[BeanShell]], [[Python]], and (time allowing) the [[Introduction_into_Macro_Programming|ImageJ macro language]].
 Secondly, we will explore how BAR can be used to streamline ImageJ workflows. 
 Thirdly, we will explore the advantages of personalized scripting libraries that are shared across routines.
 
 '''Workshop requirements:'''
 # An updated installation of Fiji
 # An internet connection, required for download of sample images and browsing of http://javadoc.imagej.net
+;NB: If you subscribe to the ImageJ-dev update site, ensure that your Image1 version is at least 1.45a (the  ImageJ-dev update site may bundle an outdated version of ImageJ1). To do so, use the ImageJ1 command {{bc| Help |Update ImageJ...}}
 
 === Dominik Lindner and Petr Walczysko - The OMERO platform for management of microscopy data and beyond ===
 In this workshop, we will outline and demonstrate the [[OMERO]] platform, and show how you can use it to work with your microscopy and/or HCS data. In addition we will demonstrate some of the applications that have been released by OME and some of the integration with 3rd party tools, including:
