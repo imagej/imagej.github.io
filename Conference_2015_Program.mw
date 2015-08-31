@@ -268,9 +268,6 @@ The MorphoLibJ library therefore proposes a collection of tools that facilitate 
 
 [ [http://conference.imagej.net/2015/ignacio-arganda-carreras/poster_MorphoLibJ.pdf Poster] ]
 
-=== Larry Lindsey - TBD ===
-TBD
-
 === David Logan - The ImageJ-CellProfiler Interface ===
 CellProfiler is open-source cell image analysis software designed for biologists without training in computer vision or programming to quantitatively measure phenotypes from thousands of images automatically. Via its RunImageJ module, CellProfiler can load images, run an ImageJ macro or plugin on them, and retrieve the resulting images for downstream analysis. We have now created the converse: an ImageJ plugin that allows CellProfiler pipelines to be called from within ImageJ. This would allow established CellProfiler analysis pipelines to be utilized within an ImageJ workflow. This new functionality will be in our upcoming fall release, is available for preview in our trunk build, and will eventually be deployed with FIJI.
 
