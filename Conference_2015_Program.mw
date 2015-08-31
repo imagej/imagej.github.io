@@ -300,8 +300,10 @@ The evaluation of sperm morphology has proven problematic due to variation in wh
 
 [ [http://www.ansci.wisc.edu/jjp1/imageJ/index.html software] ]
 
-=== Tobias Pietzsch - BigDataViewer ===
-TBD
+=== Tobias Pietzsch - BigDataViewer&mdash;Visualization and Image Processing for Terabyte Data Sets ===
+The necessity to make large volumetric datasets available for interactive visualization and analysis has been widely recognized.  However, existing solutions build upon proprietary file formats requiring that data are copy-converted before visualization, or use dedicated servers to generate virtual slices that are transferred to client applications, practically leading to insufficient frame rates for truly interactive experience. With [[BigDataViewer]] we provide an easily accessible and extensible open source solution for interactive arbitrary virtual re-slicing of very large volumes and time series of volumes.
+
+[[BigDataViewer]] is a Java library and [[Fiji]] plugin to interactively navigate and visualize large image sequences from both local and remote data sources.  The client software renders an arbitrarily oriented virtual slice through global 3D coordinate space.  Individual image stacks are arbitrarily arranged in the global space, and can be displayed independently or as a color-coded composite.  Brightness and color can be adjusted for each view separately.  The viewer allows free translation, rotation, and zoom for image stacks and moving between timepoints. Thus, multi-terabyte image datasets can be navigated smoothly.
 
 === Stephan Saalfeld - ImgLib2 for visualization and generic image processing ===
 [[ImgLib2]] is an open-source Java library for ''n''-dimensional data representation and manipulation with focus on image processing.  It aims at minimizing code duplication by cleanly separating pixel-algebra, data access and data representation in memory.  Algorithms can be implemented for classes of pixel types and generic access patterns by which they become independent of the specific dimensionality, pixel type and data representation.  [[ImgLib2]] illustrates that an elegant high-level programming interface can be achieved without sacrificing performance.
