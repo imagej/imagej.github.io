@@ -312,6 +312,8 @@ The necessity to make large volumetric datasets available for interactive visual
 
 [[BigDataViewer]] is a Java library and [[Fiji]] plugin to interactively navigate and visualize large image sequences from both local and remote data sources.  The client software renders an arbitrarily oriented virtual slice through global 3D coordinate space.  Individual image stacks are arbitrarily arranged in the global space, and can be displayed independently or as a color-coded composite.  Brightness and color can be adjusted for each view separately.  The viewer allows free translation, rotation, and zoom for image stacks and moving between timepoints. Thus, multi-terabyte image datasets can be navigated smoothly.
 
+[ [https://www.dropbox.com/s/3st8ezbj9jmjzd8/bdv-poster-imagej2015.pdf?dl=0 Poster] ]
+
 === Stephan Saalfeld - ImgLib2 for visualization and generic image processing ===
 [[ImgLib2]] is an open-source Java library for ''n''-dimensional data representation and manipulation with focus on image processing.  It aims at minimizing code duplication by cleanly separating pixel-algebra, data access and data representation in memory.  Algorithms can be implemented for classes of pixel types and generic access patterns by which they become independent of the specific dimensionality, pixel type and data representation.  [[ImgLib2]] illustrates that an elegant high-level programming interface can be achieved without sacrificing performance.
 
