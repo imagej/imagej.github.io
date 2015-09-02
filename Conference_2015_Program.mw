@@ -73,7 +73,7 @@ For further details and code links, see [[MATLAB Scripting]].
 
 The [https://www.mir-swamp.org/ Software Assurance Marketplace] (SWAMP) is a no-cost, open, high-performance computing platform for [https://continuousassurance.org/ continuous software assurance]. It includes an array of open-source and commercial software security testing tools, a library of applications with known vulnerabilities, and a comprehensive results viewer (CodeDx) for vulnerability remediation throughout the software development lifecycle.
 
-[ [http://conference.imagej.net/2015/irene-landrum/SWAMP%20%20Presentation%202015Aug25.pptx presentation slides] ]
+[ [http://conference.imagej.net/2015/irene-landrum/SWAMP%20%20Presentation%202015Aug25.pptx Presentation slides] ]
 
 === Melissa Linkert - OME Bio-Formats: 10 years of proprietary image data ===
 
@@ -130,7 +130,7 @@ State-of-the-art multi-view (MV) fusion algorithms simultaneously fuse and decon
 
 Nanoparticle tracking analysis is a widely known method to determine the hydrodynamic diameter of nanoparticles (NP) in liquids. Commercial systems have been built for convenient measurements and ease of use. However, they rely on a multitude of analysis algorithms and statistical calculations which are not disclosed to the user. To give a better understanding of what is calculated, making the method applicable for other experimental setups and additionally extending the method for exploiting color information we developed a free plugin for [[ImageJ]] called [http://sourceforge.net/projects/nanotrackj/ NanoTrackJ]. It is an [[open-source]] software where all algorithms are documented and freely accessible. The talk will give an overview of the functionalities of NanoTrackJ by presenting analysis of different video sequences from various devices.
 
-[ [http://sourceforge.net/projects/nanotrackj/ NanoTrackJ], [https://github.com/thorstenwagner/TrackMate source code], [https://dl.dropboxusercontent.com/u/560426/imagej/conference2015/slides.pdf presentation slides] ]
+[ [http://sourceforge.net/projects/nanotrackj/ NanoTrackJ], [https://github.com/thorstenwagner/TrackMate source code], [https://dl.dropboxusercontent.com/u/560426/imagej/conference2015/slides.pdf Presentation slides] ]
 
 === Petr Walczysko - The Open Microscopy Environment (OME) ===
 
@@ -144,7 +144,7 @@ Despite significant advances in biological imaging and analysis, major informati
 
 Telomeres are regions of repetitive nucleotide sequences located at the ends of chromosomes, which protect them from fusion and degradation. In every cell division, the telomeres are shortened until they reach a critical length that signals the cell to go into senescence. Abnormally short or long telomeres are common phenomenon in cancer cells, as compared to healthy controls. Manual characterization of telomere length distribution is at best difficult. Here we present an image processing workflow which was developed in ImageJ and R to enable automated processing of telomere count and length distribution in thousands of cells. Over 3000 cells were imaged, each containing 30-150 visible telomeres. This could not have been done manually. The ImageJ environment provided us with the ability to acquire and analyze large quantities of data in a reproducible manner, and demonstrated the spread in data that resulted from the fundamental biology and physiology that were being studied.
 
-[ [http://conference.imagej.net/2015/aryeh-weiss/ij2015telomere-A.ppt presentation slides] ]
+[ [http://conference.imagej.net/2015/aryeh-weiss/ij2015telomere-A.ppt Presentation slides] ]
 
 == Workshops ==
 
@@ -219,7 +219,7 @@ In this workshop, the basics of digital images and the stages of the image proce
 
 This workshop assumes no prior knowledge of image processing, and is designed to enable the participants to understand the subsequent presentations and talks.
 
-[ [http://conference.imagej.net/2015/aryeh-weiss/IntroImageProcessingB.ppt workshop slides] ]
+[ [http://conference.imagej.net/2015/aryeh-weiss/IntroImageProcessingB.ppt Workshop slides] ]
 
 '''Workshop requirements:'''
 * An installation of [[ImageJ]] or [[Fiji]]
@@ -281,7 +281,7 @@ The MorphoLibJ library therefore proposes a collection of tools that facilitate 
 === David Logan - The ImageJ-CellProfiler Interface ===
 CellProfiler is open-source cell image analysis software designed for biologists without training in computer vision or programming to quantitatively measure phenotypes from thousands of images automatically. Via its RunImageJ module, CellProfiler can load images, run an ImageJ macro or plugin on them, and retrieve the resulting images for downstream analysis. We have now created the converse: an ImageJ plugin that allows CellProfiler pipelines to be called from within ImageJ. This would allow established CellProfiler analysis pipelines to be utilized within an ImageJ workflow. This new functionality will be in our upcoming fall release, is available for preview in our trunk build, and will eventually be deployed with FIJI.
 
-[ [http://www.broadinstitute.org/~dlogan/posters/2015_09_03_ImageJ_Conf_DLogan_FINAL.pptx poster slides] ]
+[ [http://www.broadinstitute.org/~dlogan/posters/2015_09_03_ImageJ_Conf_DLogan_FINAL.pptx Poster slides] ]
 
 === Michael Majurski - Accurate and scalable Microscopy Image Stitching Tool (MIST) ===
 
@@ -305,7 +305,7 @@ Neurogenesis plays a significant role in learning and memory, and its deficienci
 === John Parrish - Sperm nuclear shape and texture analysis ===
 The evaluation of sperm morphology has proven problematic due to variation in what observers term normal or abnormal. We developed methodology within ImageJ to threshold sperm nuclei labeled with a fluorescent DNA stain, output the perimeter coordinates and convert these to a Fourier Series from which harmonic amplitudes quantified components of sperm shape. The harmonic amplitudes were found related to bull fertility and environmental impacts of heat on males. It was also possible to create an average sperm nuclear shape for a male. We have further created a point-spread function from fluorescent microspheres. This was then used to deconvolve the fluorescent image of sperm nuclei to remove out-of-focus light. The resulting images were then subjected to nuclear texture analysis with the ImageJ Texture Analyzer (J. Cabrera). Sperm nuclear texture was related to bull fertility. ImageJ proved beneficial in the evaluation of sperm nuclear morphometry.
 
-[ [http://www.ansci.wisc.edu/jjp1/imageJ/index.html software] ]
+[ [http://www.ansci.wisc.edu/jjp1/imageJ/index.html Software] ]
 
 === Tobias Pietzsch - BigDataViewer&mdash;Visualization and Image Processing for Terabyte Data Sets ===
 The necessity to make large volumetric datasets available for interactive visualization and analysis has been widely recognized.  However, existing solutions build upon proprietary file formats requiring that data are copy-converted before visualization, or use dedicated servers to generate virtual slices that are transferred to client applications, practically leading to insufficient frame rates for truly interactive experience. With [[BigDataViewer]] we provide an easily accessible and extensible open source solution for interactive arbitrary virtual re-slicing of very large volumes and time series of volumes.
@@ -333,7 +333,7 @@ Raghavender Sahdev 1, Tomasz Konopczynski 2, Dimiter Prodanov 2,3 and Daniel Sag
 
 The main functionality of the Turboreg plugin allows for aligning or matching two images. The plugin is widely used in Neuroscience for pre-processing of both static and time-lapse imaging data. In this project we develop an ImageJ's plugin to be used by an end-user to correct for the drift in very long sequences of noisy multi-channel fluorescence images. TimeLapseReg uses the well-known TurboReg/StackReg engine method to register frames to a reference image. It computes and applies rigid transformations of the user-selected channel and stores them for subsequent use. The geometrical transformations are further applied to all channels. We present the user with a drift trajectory over the entire image sequence. The user has the option of choosing the reference image and discarding corrupted images. We have applied our software to calcium imaging data for helping neuro-scientists to better infer neuronal network spiking activity.
 
-[ [http://www.raghavendersahdev.com/uploads/3/9/6/2/39623741/timelapsereg.pdf poster slides], [http://neuroinformatics.be/projects/stackreg-plus-improved-multiple-image-alignment-with-imagej/ TimeLapseReg web page], [https://github.com/incfbelgiannode/StackReg-Plus_Multiple-Image-Alignment TimeLapseReg source code] ]
+[ [http://www.raghavendersahdev.com/uploads/3/9/6/2/39623741/timelapsereg.pdf Poster slides], [http://neuroinformatics.be/projects/stackreg-plus-improved-multiple-image-alignment-with-imagej/ TimeLapseReg web page], [https://github.com/incfbelgiannode/StackReg-Plus_Multiple-Image-Alignment TimeLapseReg source code] ]
 
 === Joey Tidei - Untitled ===
 The mammalian ELAV-like protein HuD is a neuronal RNA-binding protein implicated in neuronal development, plasticity, and diseases. Although HuD has long been associated with neuronal development, the function of HuD in neural stem cell differentiation and the underlying mechanisms have gone largely unexplored. Here we show that HuD promotes neuronal differentiation of neural stem/progenitor cells (NSCs) in the adult subventricular zone by stabilizing the mRNA of special AT-rich DNA-binding protein 1 (SATB1), a critical transcriptional regulator in neurodevelopment. We find that SATB1 deficiency impairs the neuronal differentiation of NSCs, whereas SATB1 overexpression rescues the neuronal differentiation phenotypes resulting from HuD deficiency. Interestingly, we also discover that SATB1 is a transcriptional activator of HuD during NSC neuronal differentiation. In addition, we demonstrate that NeuroD1, a neuronal master regulator, is a direct downstream target of SATB1. Therefore, HuD and SATB1 form a positive regulatory loop that enhances NeuroD1 transcription and subsequent neuronal differentiation. Our results here reveal a novel positive feedback network between an RNA-binding protein and a transcription factor, which plays critical regulatory roles in neurogenesis.
