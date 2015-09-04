@@ -9,8 +9,8 @@ There are two primary topics for this hackathon:
 
 === Side projects ===
 As always, there are lots of other exciting collaborations going on, too!
-* Troubleshoot the [SCIFIO-ITK-bridge](https://github.com/scifio/scifio-itk-bridge) in SimpleITK (Mark + Matt)
-* Generalize MATLABCommands to a [general framework](https://github.com/tferr/Scripts/issues/14) that could be used in BAR (Mark + Tiago)
+* Troubleshoot the [https://github.com/scifio/scifio-itk-bridge SCIFIO-ITK-bridge] in SimpleITK (Mark + Matt)
+* Generalize MATLABCommands to a [https://github.com/tferr/Scripts/issues/14 general framework] that could be used in BAR (Mark + Tiago)
 * Curtis's [https://github.com/imagej/imagej-omero ImageJ-OMERO] plugin (???)
 
 == Participants ==
