@@ -13,6 +13,7 @@ As always, there are lots of other exciting collaborations going on, too!
 * Generalize MATLABCommands to a [https://github.com/tferr/Scripts/issues/14 general framework] that could be used in BAR (Mark + Tiago)
 * Curtis's {{GitHub | org=imagej | repo=imagej-omero | label=ImageJ-OMERO}} plugin (???)
 * SciJava {{GitHub | org=scijava | repo=scijava-common | pr=167 | label=robust-io redesign}} (Curtis)
+* SCIFIO {{GitHub | org=scifio | repo=scifio | issue=283 | label=blockization}} (Mark)
 
 == Participants ==
 
