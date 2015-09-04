@@ -7,10 +7,11 @@ There are two primary topics for this hackathon:
 # '''Learnathon.''' For the first half, we will cover the current ImageJ2 and SciJava APIs with informal presentations and workshops. We will spend time beefing up and updating the tutorials.
 # '''Ops.''' The second half will focus on development of the [[ImageJ Ops]] component for "write once, run anywhere" image processing. We will add more algorithms and routines to the core library, and also continue polishing the Ops framework itself, as well as the [[ImageJ Common|ImageJ2 data model]].
 
-Side projects:
+=== Side projects ===
+As always, there are lots of other exciting collaborations going on, too!
 * Troubleshoot the [SCIFIO-ITK-bridge](https://github.com/scifio/scifio-itk-bridge) in SimpleITK (Mark + Matt)
-* Generalize MATLABCommands to a [general framework](https://github.com/tferr/Scripts/issues/14) that could be used in BAR
-* Curtis's ImageJ-OMERO plugin
+* Generalize MATLABCommands to a [general framework](https://github.com/tferr/Scripts/issues/14) that could be used in BAR (Mark + Tiago)
+* Curtis's [https://github.com/imagej/imagej-omero ImageJ-OMERO] plugin (???)
 
 == Participants ==
 
