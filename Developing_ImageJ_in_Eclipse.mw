@@ -71,3 +71,5 @@ For Mac, replace {{Key|Ctrl}} with  {{Key|Cmd}}
 * {{Key|F3}}: jump to class (to edit the code, see [[Architecture#Using_snapshot_couplings_during_development|snapshot coupling]])
 * {{Key|Ctrl}}+{{Key|O}}: show outline
 * {{Key|Ctrl}}+{{Key|Space}}: auto-complete
+* {{Key|Ctrl}}+{{Key|T}}: shows all implementations of interface or class
+* {{Key|Alt}}+{{Key|Up}} or {{Key|Alt}}+{{Key|Down}}: move lines up or down
