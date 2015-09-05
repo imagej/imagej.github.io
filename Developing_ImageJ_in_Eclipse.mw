@@ -66,10 +66,16 @@ Other projects will have different main classes.
 
 For Mac, replace {{Key|Ctrl}} with  {{Key|Cmd}}
 
-* {{Key|Shift}}+{{Key|Ctrl}}+{{Key|T}}: find objects
+* {{Key|Ctrl}}+{{Key|Shift}}+{{Key|T}}: find objects
 * {{Key|Ctrl}}+{{Key|1}}: quick fix
 * {{Key|F3}}: jump to class (to edit the code, see [[Architecture#Using_snapshot_couplings_during_development|snapshot coupling]])
 * {{Key|Ctrl}}+{{Key|O}}: show outline
 * {{Key|Ctrl}}+{{Key|Space}}: auto-complete
 * {{Key|Ctrl}}+{{Key|T}}: shows all implementations of interface or class
 * {{Key|Alt}}+{{Key|Up}} or {{Key|Alt}}+{{Key|Down}}: move lines up or down
+
+Cleaning up
+* {{Key|Ctrl}}+{{Key|Shift}}+{{Key|O}}: organize imports
+* {{Key|Ctrl}}+{{Key|Shift}}+{{Key|F}}: format code (BUT make sure you set the [[Coding_style#Eclipse_code_style_profiles|coding style]])
+* {{Key|Alt}}+{{Key|Shift}}+{{Key|S}} {{Key|U}}: clean up (does format and much more)
+* {{Key|Alt}}+{{Key|Shift}}+{{Key|R}}: refactor rename
