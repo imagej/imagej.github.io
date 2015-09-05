@@ -11,7 +11,7 @@ There are two primary topics for this hackathon:
 As always, there are lots of other exciting collaborations going on, too!
 * Troubleshoot the [https://github.com/scifio/scifio-itk-bridge SCIFIO-ITK-bridge] in SimpleITK (Mark + Matt)
 * Generalize MATLABCommands to a [https://github.com/tferr/Scripts/issues/14 general framework] that could be used in BAR (Mark + Tiago)
-* The {{GitHub | org=imagej | repo=imagej-omero | label=ImageJ-OMERO}} plugin (???)
+* The {{GitHub | org=imagej | repo=imagej-omero | label=ImageJ-OMERO}} plugin (Alex + Curtis)
 * SciJava {{GitHub | org=scijava | repo=scijava-common | pr=167 | label=robust-io redesign}} (Curtis)
 * SCIFIO {{GitHub | org=scifio | repo=scifio | issue=283 | label=blockization}} (Mark)
 * {{GitHub | org=fiji | repo=colocalisation_analysis | label=Coloc2}} bugs? (Ellen)
