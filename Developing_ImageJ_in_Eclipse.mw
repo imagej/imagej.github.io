@@ -69,5 +69,5 @@ For Mac, replace {{Key|Ctrl}} with  {{Key|Cmd}}
 * {{Key|Shift}}+{{Key|Ctrl}}+{{Key|T}}: find objects
 * {{Key|Ctrl}}+{{Key|1}}: quick fix
 * {{Key|F3}}: jump to class (to edit the code, see [[Architecture#Using_snapshot_couplings_during_development|snapshot coupling]])
-* {{Key|Ctrl}}+{{Key|o}}: show outline
+* {{Key|Ctrl}}+{{Key|O}}: show outline
 * {{Key|Ctrl}}+{{Key|Space}}: auto-complete
