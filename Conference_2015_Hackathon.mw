@@ -90,13 +90,14 @@ PlotData=
   color:c04 from:2 till:11 text:"Stephan Saalfeld"
   color:c06 from:2 till:8 text:"Jan Brocher"
   color:c07 from:2 till:7 text:"Tiago Ferreira"
-  color:c12 from:2 till:7 text:"Karl Bellve"
-  color:c12 from:2 till:7 text:"Alex Rigano"
-  color:c08 from:2 till:5 text:"Marcel Austenfeld"
-  color:c09 from:2 till:5 text:"Pariksheet Nanda"
-  color:c10 from:1 till:16 text:"Madison Locals*"
-  color:c11 from:1 till:11 text:"Brian Northan"
-  color:c12 from:1 till:4 text:"Amitabh Verma"
+  color:c08 from:2 till:7 text:"Karl Bellve"
+  color:c09 from:2 till:7 text:"Alex Rigano"
+  color:c10 from:2 till:5 text:"Marcel Austenfeld"
+  color:c11 from:2 till:5 text:"Pariksheet Nanda"
+  color:c12 from:2 till:5 text:"Mark Tsuchida"
+  color:c13 from:2 till:5 text:"Chris Weisiger"
+  color:c14 from:1 till:16 text:"Madison Locals*"
+  color:c15 from:1 till:11 text:"Brian Northan"
 
 </timeline>
 
