@@ -83,8 +83,8 @@ PlotData=
   color:black
 
   barSet:Hackers
-  color:c01 from:7 till:15 text:"Tobias Pietzsch"
-  color:c02 from:5 till:15 text:"Christian Dietz"
+  color:c01 from:7 till:14 text:"Tobias Pietzsch"
+  color:c02 from:5 till:14 text:"Christian Dietz"
   color:c03 from:2 till:12 text:"Florian Jug"
   color:c04 from:2 till:11 text:"Stephan Saalfeld"
   color:c05 from:2 till:9 text:"Matt McCormick"
