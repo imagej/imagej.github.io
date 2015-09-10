@@ -10,4 +10,20 @@
 }}
 The Insight Toolkit (ITK) is a cross-platform, [[open-source]] application development framework widely used for the development of image [[segmentation]] and image registration programs.
 
+=ITK integration with ImageJ=
+
+Although ITK is C++ application, many ITK functions are available in ImageJ through the [http://www.simpleitk.org/ SimpleITK] Java compatibility layer.
+
+Enabling this functionality in ImageJ is simply a matter of turning on the [[List_of_update_sites|ImageJ-ITK update site]]. Note that this will trigger a large download, as it requires the SimpleITK native library (up to a few hundred MB).
+
+==What's on the update site?==
+
+===User-focused===
+* Templates in the [[Scripting|script editor]] demonstrating ITK use
+* <code>@itkImage</code> [[Script_paramters|parameters]] in scripts, automatically converting the active ImageJ <code>Dataset(s)</code> to ITK <code>Image(s)</code>
+
+===Developer-focused===
+* All SimpleITK Java classes
+* Automatic ITK <code>Image</code> to ImageJ <code>Dataset</code> conversion with the [https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/convert/ConvertService.java ConvertService]
+
 [[Category:Related Software]]
