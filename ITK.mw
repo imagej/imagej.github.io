@@ -35,7 +35,6 @@ output = otsu.execute(image, 2, 0, 255, True)
 </source>
 
 ==Developer-resources==
-* All SimpleITK Java classes
-* Automatic ITK <code>Image</code> to ImageJ <code>Dataset</code> conversion with the [https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/convert/ConvertService.java ConvertService]
-
+* GitHub (we welcome pull requests) https://github.com/imagej/imagej-itk/
+* An ImageJ2 Op that uses SimpleITK
 [[Category:Related Software]]
