@@ -1,0 +1,41 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase {
+  width: 850px;
+}
+
+/*
+.page-header {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid gray;
+}
+*/
+
+.img-thumbnail {
+  float: right;
+  margin-left: 10px;
+  width: 400px;
+}
+
+.logo {
+  float: left;
+  margin-top: 34px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  max-height: 100%;
+  max-width: 100%;
+}
