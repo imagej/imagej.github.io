@@ -1,4 +1,33 @@
 <div style="float: right">__TOC__</div>
+
+== Fiji is Just ImageJ ==
+
+[[Fiji]] is not an island: it is a distribution of ImageJ, including many useful plugins [[Fiji_contribution_requirements|contributed by the community]].
+
+{| class="wikitable" style="width: 45%; font-size:150%;"
+!colspan="9"|[[File:fiji-icon.png|256px|link=]]
+|-
+|rowspan="2" style="text-align: center" width="40px"|[[Image:Win.png|link=|32px]]
+|[http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-win32.zip Windows (32-bit)]
+|-
+|[http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-win64.zip Windows (64-bit)]
+|-
+|rowspan="1" style="text-align: center" width="40px"|[[Image:Osx.png|link=|32px]]
+|[http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-macosx.dmg OS X]
+|-
+|rowspan="2" style="text-align: center" width="40px"|[[Image:Tux.png|link=|32px]]
+|[http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-linux32.tar.gz Linux (32-bit)]
+|-
+|[http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-linux64.tar.gz Linux (64-bit)]
+|}
+
+<!--
+Mirrors (OUT OF DATE):
+* [http://valelab.ucsf.edu/~schindelin/ University of California, San Francisco, thanks to Nico Stuurman!]
+* [http://code.google.com/p/fiji-bi/downloads/list Fiji on GoogleCode] (only files smaller than 100MB due to upload restrictions)
+* [http://sourceforge.net/projects/fiji-bi/files/ Fiji on SourceForge]
+ -->
+
 = System requirements =
 
 ImageJ will run on any system that has a Java 6 (or later) runtime installed. This includes, but is not limited to:
@@ -11,34 +40,44 @@ ImageJ will run on any system that has a Java 6 (or later) runtime installed. Th
 
 Please note that we currently test ImageJ mostly with Oracle Java 6. We have done a limited amount of testing with OpenJDK 7 and with Oracle Java 8, and things superficially work, but there may be additional bugs in those cases. Feel free to report any such issues to the [[Mailing Lists]].
 
+= Installation =
+{{AvoidProgramFiles}}
+{{Sidebox | title = Packages for Debian / Ubuntu
+| text = <p>We used to offer Debian packages of Fiji. Unfortunately, for a variety of reasons, we are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads above instead.</p><p>If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us [[IRC|in IRC]] or contact the [http://groups.google.com/group/fiji-devel fiji-devel mailing list].</p>}}
+ImageJ and Fiji are distributed as [http://en.wikipedia.org/wiki/Portable_application portable applications]. That means that you do not have to run an installer; just download, unpack and start it.
+
+For more detailed instructions, see the installation walkthroughs:
+* [[Install Fiji on Windows]]
+* [[Install Fiji on MacOSX]]
+* [[Install Fiji on Linux]]
+
 = Troubleshooting =
 
-* If you encounter bugs, there are many ways to get help; please see the [[Help:Contents|Getting Help]] page.
+* Many common questsions are answered on the [[FAQ]].
+* If you encounter bugs, please see the [[Help:Contents|Getting Help]] page.
+* The platform-specific downloads come bundled with Java 6. You can also [http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-nojre.zip download a platform-independent version] with no bundled Java.
 
-= Downloads =
+= Source code =
+
+See the [[source code]] page for details on obtaining the ImageJ and Fiji source code.
+
+= Other downloads =
 
 == ImageJ ==
+
 {{DownloadVersion
 | title = ImageJ development snapshot
 | description = You can download the latest DEVELOPMENT, UNSTABLE application bundle of ImageJ. This build includes the latest changes on the [https://github.com/imagej/imagej master branch of the source repository]. It has not been thoroughly tested and may contain new bugs.
 | logo = Imagej2-icon.png
 | all = http://jenkins.imagej.net/job/ImageJ/lastSuccessfulBuild/artifact/target/imagej-latest.zip
 }}
+
 === See also ===
 * [[ImageJ2 development releases]] for early versions of [[ImageJ2]].
 * [http://imagej.net/download/ ImageJ1 download archive] for old versions of [[ImageJ1|ImageJ 1.x]].
 
-== Fiji ==
-The [[Fiji]] distribution of ImageJ is focused on the life sciences. '''F'''iji '''I'''s '''J'''ust '''I'''mageJ, with many useful plugins included.
+== Lifeline Fiji versions ==
 
-The platform-specific downloads below come bundled with a Java 6 JRE.
-<!--
-Mirrors (OUT OF DATE):
-* [http://valelab.ucsf.edu/~schindelin/ University of California, San Francisco, thanks to Nico Stuurman!]
-* [http://code.google.com/p/fiji-bi/downloads/list Fiji on GoogleCode] (only files smaller than 100MB due to upload restrictions)
-* [http://sourceforge.net/projects/fiji-bi/files/ Fiji on SourceForge]
- -->
-{{DownloadLatestFiji}}
 {{DownloadVersion
 | title = Fiji Life-Line version, 2014 November 25
 | description = [https://groups.google.com/d/msg/fiji-devel/49a7q7e9g44/xuhp0nQRVnAJ Many Fiji plugins have been updated] to facilitate [[reproducible builds]]. The packages below reflect Fiji from just prior to these updates.
@@ -73,19 +112,4 @@ Mirrors (OUT OF DATE):
 | all = http://fiji.sc/downloads/Life-Line/fiji-nojre-20130715.zip
 }}
 === See also ===
-* [http://fiji.sc/downloads/ Fiji downloads archive] for old versions of [[Fiji]].
-
-= Installation =
-{{AvoidProgramFiles}}
-{{Sidebox | title = Packages for Debian / Ubuntu
-| text = <p>We used to offer Debian packages of Fiji. Unfortunately, for a variety of reasons, we are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads above instead.</p><p>If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us [[IRC|in IRC]] or contact the [http://groups.google.com/group/fiji-devel fiji-devel mailing list].</p>}}
-ImageJ and Fiji are distributed as [http://en.wikipedia.org/wiki/Portable_application portable applications]. That means that you do not have to run an installer; just download, unpack and start it.
-
-For more detailed instructions, see the installation walkthroughs:
-* [[Install Fiji on Windows]]
-* [[Install Fiji on MacOSX]]
-* [[Install Fiji on Linux]]
-
-= Source code =
-
-See the [[source code]] page for details on obtaining the ImageJ and Fiji source code.
+* [http://fiji.sc/downloads/ Fiji downloads archive] for older versions of [[Fiji]].
