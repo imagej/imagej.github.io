@@ -295,9 +295,13 @@ Then users will be able to select <code>Templates > BAR > GCD</code> from the sc
 
 This is an easy way to provide a starting point for development using your Ops.
 
-== Create additional implementations for your Ops interfaces ===
-=== Specialize for varied input types ===
+= Advanced Topics =
 
-== Auto-generate your Op implementations using templates ==
+There are many conveniences in Op development that have not been covered in this tutorial, including:
 
-== Write unit-tests to ensure coverage of built-in methods for your Ops ==
+* Create additional implementations for a given Ops interfaces
+** Specializing Ops for a variety of input types
+* Auto-generate your Op implementations using templates
+* Write unit-tests to ensure coverage of built-in methods for your Ops
+
+However, all of this is done in the core {{GitHub|org=imagej|repo=imagej-ops|label=imagej-ops}} project and could be deduced by careful study. If you do take the time to independently attempt any of these topics, consider documenting your experience and sharing it as a tutorial on this wiki.
