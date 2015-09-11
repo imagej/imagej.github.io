@@ -1,0 +1,1 @@
+HI. I have a stack from which I need to apply the clear function (delete a area) however I want to limit this action to a range of slices within the stack. Let's say I have a stack with 100 slices, I want to delete a area of the slices 40 to 60, but not the others. How can I do it?
