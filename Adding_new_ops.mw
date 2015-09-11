@@ -25,9 +25,9 @@ public interface GCD extends Op {
   // For example - the GCD is also called greatest common factor (GCF).
   String ALIASES = "gcf";
 }
-<source>
+</source>
 
-== Implement your Op =
+== Implement your Op ==
 
 <source lang="java">
 package bar;
