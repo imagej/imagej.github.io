@@ -4,8 +4,10 @@
 
 [[Fiji]] is not an island: it is a distribution of ImageJ, including many useful plugins [[Fiji_contribution_requirements|contributed by the community]].
 
+<div style="width: 45%; text-align: center;">[[File:fiji-icon.png|256px|link=]]</div>
+
 {| class="wikitable" style="width: 45%; font-size:150%;"
-!colspan="9"|[[File:fiji-icon.png|256px|link=]]
+!colspan="9"|Select your OS
 |-
 |rowspan="2" style="text-align: center" width="40px"|[[Image:Win.png|link=|32px]]
 |[http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-win32.zip Windows (32-bit)]
