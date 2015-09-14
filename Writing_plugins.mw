@@ -1,10 +1,4 @@
 {{Development | plugins}}
-== What is a "plugin"? ==
-
-Conceptually, a '''plugin''' is a piece of Java code that extends the capabilities of ImageJ. Technically, a plugin is a Java class annotated with the <code>@Plugin</code> annotation and implementing the <code>SciJavaPlugin</code> interface.
-
-There are many sorts of ImageJ2 plugins. The most common type is a ''Command'', which performs some operation, and is typically available in the menu structure. But there are other types too: e.g., ''Display'' and ''Tool''. It is even possible for developers to easily define new sorts of plugins. For example, the Image Calculator defines a new type of plugin called {{GitHub|org=imagej|repo=imagej-common|tag=imagej-common-0.8.0|source=net/imagej/operator/CalculatorOp.java|label=CalculatorOp}}, and displays all available such operations in the Image Calculator dialog.
-
 == Writing an ImageJ2 command ==
 
 The {{GitHub|org=imagej|repo=imagej-tutorials|label=ImageJ Tutorials}} project is designed to get you started writing ImageJ2 components.
@@ -14,6 +8,12 @@ ImageJ2 commands are UI-independent, and will work headless, as long as your com
 See the [https://github.com/imagej/imagej-tutorials/tree/master/simple-commands simple-commands] examples<nowiki>: </nowiki>
 
 <blockquote>{{GitHub|org=imagej|repo=imagej-tutorials|path=simple-commands/src/main/java/HelloWorld.java|label=HelloWorld.java}}<br />{{GitHub|org=imagej|repo=imagej-tutorials|path=simple-commands/src/main/java/GradientImage.java|label=GradientImage.java}}</blockquote>
+
+== What is a "plugin"? ==
+
+Conceptually, a '''plugin''' is a piece of Java code that extends the capabilities of ImageJ. Technically, a plugin is a Java class annotated with the <code>@Plugin</code> annotation and implementing the <code>SciJavaPlugin</code> interface.
+
+There are many sorts of ImageJ2 plugins. The most common type is a ''Command'', which performs some operation, and is typically available in the menu structure. But there are other types too: e.g., ''Display'' and ''Tool''. It is even possible for developers to easily define new sorts of plugins. For example, the Image Calculator defines a new type of plugin called {{GitHub|org=imagej|repo=imagej-common|tag=imagej-common-0.8.0|source=net/imagej/operator/CalculatorOp.java|label=CalculatorOp}}, and displays all available such operations in the Image Calculator dialog.
 
 == Calling ImageJ2 from ImageJ 1.x ==
 
