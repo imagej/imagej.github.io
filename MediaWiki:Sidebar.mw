@@ -1,24 +1,19 @@
 * Navigation
 ** Welcome|Welcome
 ** Downloads|Downloads
-** News|News
-** Fiji Usage|Users
-** Contributors|Contributors
-** Screenshots|Screenshots
-** Publications|Publications
 
-* Documentation
-** Documentation|Overview
-** IP Principles|IP Principles
+* Using ImageJ
+** Introduction|Introduction
+*** IP Principles|Image Processing Principles
+*** Cookbook|Cookbook
+** User Guide|User Guide
+** Tutorials|Tutorials
 ** Frequently Asked Questions|FAQ
-** helppage|Contact and Help
-
-* Development
-** Development|Overview
-** Scripting Help|Scripting
-
-* Index
 ** Category:Plugins|Plugins
 ** Category:Techniques|Techniques
-** Category:Tutorials|Tutorials
-** Special:Categories|All categories
+** Help|Contact and Help
+
+* Extending ImageJ
+** Development|Development Overview
+** Scripting Help|Scripting
+** Source code|Source code
