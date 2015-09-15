@@ -1,0 +1,27 @@
+{{Infobox
+| software               = ImageJ
+| name                   = Spot Intensity Analysis
+| author                 = Nico Stuurman (nico.stuurman at ucsf.edu)
+| maintainer             = [[Nico Stuurman]]
+| filename               = 
+| source                 = {{GitHub|org=nicost|repo=spotIntenistyAnalysis|}}
+| released               = 2015/09/15
+| latest version         = 2015/09/15
+| status                 = 
+| category               = [[:Category:Particle_analysis]]
+}}
+
+Simple ImageJ/Fiji plugin to plot intensity of a spot over time.  
+
+This plugin has two phases, in the first phase it detects spots. It does so by scanning for local maxima in the image with a box of user-defined size ("Spot radius (pixels)"). Local maxima are accepted when the maximum is higher than a user-defined number ("Noise tolerance") over the average of the 4 corners of the box. An image constructed by averaging the first n images ("Check First n Frames") is used for the spot finding.  This same image is used to calculate the background (which is currently done using the ImageJ Background tool using a ball radius of 100 and "Sliding paraboloid" checked).
+
+In the second phase the intensities of each spot at each time point is calculated.  The Background image is first subtracted from each frame, and then the intensities of all pixels in a circle with given radius around the center (maximum) pixel is calculated.  When selecting a row in the resulting table, a plot is generated with the intensities plotted as a function of time.  Clicking in the image itself will select the nearest by spot, select the corresponding row in the table and draw the intensity plot. Data can be exported by selecting the table, followed by "File > Save As" in the menu.  The first two columns in the output table are the x and y position of the spot (in pixels).  
+
+If there is significant movement during the time-lapse image, you will first need to "de-jitter" using another ImageJ plugin.
+
+
+
+[[File:SpotCounter.jpg]]   [[File:SpotCounterDialog.jpg]]  [[File:SpotCounterResults.gif]]
+
+[[Category:Particle_analysis]]
+[[Category:Plugins]]
