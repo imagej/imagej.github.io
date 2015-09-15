@@ -16,7 +16,7 @@ There are four tiers of plugins:
 
 === Using an ImageJ update site ===
 
-The ImageJ [[Updater]] is a painless way to install and update plugins. Simply [[Update Sites|add the update site]] containing your plugins of interest, and they will be installed automatically for you.
+The ImageJ [[Updater]] is the best way to install and update plugins. Simply [[Update Sites|add the update site]] containing your plugins of interest, and they will be installed automatically for you.
 
 === Installing plugins manually ===
 
