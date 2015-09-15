@@ -18,11 +18,16 @@ The following components are part of the '''[[Architecture|SciJava software stac
 * [[Fiji]] - extension of [[ImageJ]] for life sciences research.
 
 The following projects are part of the '''[[:Category:SciJava|SciJava pledge]]''' to work together, reuse code and synergize wherever possible:
-* [[CellProfiler]]
-* [[KNIME]]
-* [[Bio-Formats]]
-* [[OMERO]]
-* [[Icy]]
-* [[Alida]] and [[MiToBo]]
+{| class="nicetable"
+| [[File:Cellprofiler-logo.png | x64px | link=CellProfiler]]
+| [[File:Knime-logo.jpg | x54px | link=KNIME]]
+| [[File:Omero-logo.png | x32px | link=OMERO]]
+| [[File:Alida-logo.jpg | x48px | link=Alida]]
+|-
+| [[File:Icy-logo.png | x48px | link=Icy]]
+| [[File:Mm-icon.jpg | x48px | link=Micro-Manager]]
+| [[File:Bio-formats-logo.png | x28px | link=Bio-Formats]]
+| [[File:MiToBo-logo.png | x48px | link=MiToBo]]
+|}
 
 See the [[Architecture]] and [[Governance]] pages, as well as the [http://scijava.org/ SciJava web site], for further details.
