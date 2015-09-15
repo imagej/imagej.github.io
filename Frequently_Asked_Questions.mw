@@ -358,11 +358,11 @@ There is a known problem with older Windows drivers for some Intel graphics card
 
 == The 3D Viewer simply crashes ==
 
-Unfortunately, there are quite a large number of possible reasons. Please help us by [[Debugging_intro#Debugging_Java3D_issues|debugging the issues]] and [[Help:Contents|contacting us]] (mailing list or IRC) with the information. You can also [[Report a Bug|report a bug]], which will provide a lot of additional, potentially useful information.
+Unfortunately, there are quite a large number of possible reasons. Please help us by [[Debugging_intro#Debugging_Java3D_issues|debugging the issues]] and [[Contact|contacting us]] (mailing list or IRC) with the information. You can also [[Report a Bug|report a bug]], which will provide a lot of additional, potentially useful information.
 
 == Only a gray rectangle is shown by the 3D Viewer ==
 
-As with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by [[Debugging_intro#Debugging_Java3D_issues|debugging the issues]] and [[Help:Contents|contacting us]] (preferably via mailing list) with the information. You can also [[Report a Bug|report a bug]], which will provide a lot of addidtional, potentially useful information.
+As with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by [[Debugging_intro#Debugging_Java3D_issues|debugging the issues]] and [[Contact|contacting us]] (preferably via mailing list) with the information. You can also [[Report a Bug|report a bug]], which will provide a lot of addidtional, potentially useful information.
 
 == I have a compile error building the 3D Viewer regarding a class ''Appearance'' ==
 
@@ -569,7 +569,7 @@ As a complete example, if you were interested in the [[2D Histogram]] command:
 
 == I have a problem that is not covered on this page! ==
 
-If you have an issue that is not mentioned here, you might want to [[Help:Contents|ask on one of the mailing lists, or via IRC]], or [http://fiji.sc/bugzilla/ enter a bug report].
+If you have an issue that is not mentioned here, you might want to [[Help|ask on one of the mailing lists, or via IRC]], or [http://fiji.sc/bugzilla/ enter a bug report].
 
 == How to report issues? ==
 
