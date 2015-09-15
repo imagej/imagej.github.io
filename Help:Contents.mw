@@ -1,23 +1,10 @@
-= Getting help with ImageJ =
+{{Notice | If you are looking for help with ''ImageJ itself'', see [[Help]].}}
 
-{{UseMailingLists}}
+= How to edit pages =
 
-== Other ways to get help ==
+See the [http://www.mediawiki.org/wiki/Help:Contents MediaWiki help pages] for an overview of how to edit this wiki.
 
-* '''[[Chat]]'''. You can often find the ImageJ and Fiji developers on real-time [[chat]] services including Gitter and IRC.
-* '''Video tutorials.''' Please see the [http://youtube.com/fijichannel Fiji YouTube channel].
-* '''Stack Overflow.''' Some people like to [http://stackoverflow.com/questions/tagged/imagej post about ImageJ on Stack Overflow], a programming Q&A site.
-* '''Reddit.''' Some people like to [https://www.reddit.com/r/ImageJ/ post about ImageJ on Reddit], a community bulletin board.
-
-= Reporting bugs =
-
-If you encounter a bug, please consider taking some time to [[Report a Bug]] and test our fixes. Remember: ImageJ is a community effort, and it will be as good as you make it.
-
-= Getting help regarding the ImageJ Wiki =
-
-If you are looking for help editing this Wiki, please look [http://www.mediawiki.org/wiki/Help:Contents here].
-
-== Tips ==
+== Editing tips ==
 
 * To be able to edit a page, you need to log in. If you do not have an ImageJ Wiki account yet, [{{SERVER}}/wiki/index.php?title=Special:Userlogin&type=signup register via email].
 * To edit a new page, enter the title in the search box; there will be a red link you can follow to edit the page.
