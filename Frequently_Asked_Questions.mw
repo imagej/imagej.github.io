@@ -354,7 +354,7 @@ Unfortunately, there is not workaround/fix for this situation yet, except to use
 
 == Problem with Intel graphics cards ==
 
-There is a known problem with older Windows drivers for some Intel graphics cards. Usually, this is fixed by installing new drivers. If you would like to help make ImageJ nicer by detecting faulty driver versions, please [[Help:Contents#Getting_help_regarding_Fiji|contact us]].
+There is a known problem with older Windows drivers for some Intel graphics cards. Usually, this is fixed by installing new drivers. If you would like to help make ImageJ nicer by detecting faulty driver versions, please [[Contact|contact us]].
 
 == The 3D Viewer simply crashes ==
 
