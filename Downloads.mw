@@ -15,7 +15,7 @@
 |[http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-win64.zip Windows (64-bit)]
 |-
 |rowspan="1" style="text-align: center" width="40px"|[[Image:Osx.png|link=|32px]]
-|[http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-macosx.dmg OS X]
+|[http://jenkins.imagej.net/job/Stable-Fiji-MacOSX/lastSuccessfulBuild/artifact/fiji-macosx.dmg OS X]
 |-
 |rowspan="2" style="text-align: center" width="40px"|[[Image:Tux.png|link=|32px]]
 |[http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-linux32.tar.gz Linux (32-bit)]
