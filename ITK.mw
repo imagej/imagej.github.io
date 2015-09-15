@@ -23,14 +23,14 @@ Enabling this functionality in ImageJ is simply a matter of turning on the [[Lis
 * There are several templates in the [[Scripting|script editor]] demonstrating ITK use.  The following example shows how to perform Otsu multilevel threshold using SimpleITK
 
 <source lang="python">
-# @org.itk.simple.Image image
+# @itkImage
 # @OUTPUT Dataset output
 
 from org.itk.simple import OtsuMultipleThresholdsImageFilter
 
 otsu = OtsuMultipleThresholdsImageFilter()
 
-# call itk rl using simple itk wrapper
+# call otsu using simple itk wrapper
 output = otsu.execute(image, 2, 0, 255, True)
 </source>
 
