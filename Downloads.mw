@@ -56,7 +56,7 @@ For more detailed instructions, see the installation walkthroughs:
 = Troubleshooting =
 
 * Many common questsions are answered on the [[FAQ]].
-* If you encounter bugs, please see the [[Help:Contents|Getting Help]] page.
+* If you encounter bugs, please see the [[Help|Getting Help]] page.
 * The platform-specific downloads come bundled with Java 6. You can also [http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-nojre.zip download a platform-independent version] with no bundled Java.
 
 = Source code =
