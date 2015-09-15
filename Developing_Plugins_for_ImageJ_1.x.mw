@@ -35,7 +35,7 @@ A ''plugins.config'' file looks like this:
  #  Menu, “Menu Item”, ClassName
  # Example:
  
- Plugins {{arrow}} Analyze, “Plot”, fiji.Plot
+ Plugins > Analyze, “Plot”, fiji.Plot
 
 A class can be reused for multiple menu entries, by passing an optional argument in the ''plugins.config'' file:
 
