@@ -37,5 +37,5 @@ output = otsu.execute(image, 2, 0, 255, True)
 ==Developer-resources==
 * [https://github.com/imagej/imagej-itk/ GitHub (we welcome pull requests)]
 * [https://github.com/imagej/imagej-itk/tree/master/src/main/java/net/imagej/itk/ops An ImageJ2 Op that uses SimpleITK]
-* [https://github.com/imagej/imagej-itk/tree/master/src/main/java/net/imagej/itk/commands Ad ImageJ2 command (plugin that adds a menu item) for the Op.]
+* [https://github.com/imagej/imagej-itk/tree/master/src/main/java/net/imagej/itk/commands An ImageJ2 command (plugin that adds a menu item) for the Op.]
 [[Category:Related Software]]
