@@ -1,5 +1,5 @@
 {{Development | source}}
-{{Notice | If Maven is completely new to you, start with the [http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html five-minute overview].}}
+{{Notice | If Maven is completely new to you, see [http://maven.apache.org/what-is-maven.html What is Maven?], then peruse the [http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html five-minute overview].}}
 
 [[ImageJ]], [[Fiji]] and other [[SciJava]] projects use [http://maven.apache.org/ Maven] for their project infrastructure.
 
