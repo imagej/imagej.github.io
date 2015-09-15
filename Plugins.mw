@@ -12,11 +12,13 @@ There are four tiers of plugins:
 # Plugins installable from an ImageJ [[update site]].
 # Additional plugins available from various online sources, which must be manually installed.
 
-== Using an ImageJ update site ==
+== Installing plugins ==
+
+=== Using an ImageJ update site ===
 
 The ImageJ [[Updater]] is a painless way to install and update plugins. Simply [[Update Sites|add the update site]] containing your plugins of interest, and they will be installed automatically for you.
 
-== Installing plugins manually ==
+=== Installing plugins manually ===
 
 If the plugin you want is not distributed via an ImageJ update site, please encourage the plugin's maintainer to do so! Anyone can create their own [[personal update site]] hosted on [http://sites.imagej.net/ sites.imagej.net], freeing plugin authors from the burden of distribution and server maintenance.
 
@@ -24,15 +26,15 @@ In the meantime, to install a plugin manually, follow the plugin's installation 
 * If the file suffix is <tt>.jar</tt> or <tt>.class</tt> then it is usually enough to simply restart ImageJ after dropping the file into <tt>plugins</tt>.
 * If the file suffix is <tt>.java</tt> then you typically must execute the [http://imagej.net/docs/guide/146-31.html#toc-Subsection-31.5 Compile and Run] command on the file to first compile it to a <tt>.class</tt>. After running this command once and restarting ImageJ, the plugin will become available in ImageJ's <tt>Plugins</tt> menu.
 
-== User-specific plugins ==
+=== User-specific plugins ===
 
 In addition to looking in the <tt>plugins</tt> folder of ImageJ itself, ImageJ also looks in the <tt>.plugins</tt> folder in the current user's home folder. This is useful if you want to install some of your own plugins without affecting the system-wide ImageJ installation.
 
-== Configuring where ImageJ looks for plugins ==
+=== Configuring where ImageJ looks for plugins ===
 
 Power users may wish to configure exactly which folder(s) ImageJ scans for plugins. The default folder is the <tt>plugins</tt> folder of the ImageJ installation. However, this can be overridden using the <tt>plugins.dir</tt> system property. See the ImageJ web site's article [http://imagej.net/docs/menus/plugins.html#dir Changing Location of Plugins Directory].
 
-== Multiple plugin directories ==
+=== Multiple plugin directories ===
 
 For ultimate control, ImageJ also provides support for manually configuring the list of plugin paths, similar to Java's classpath, using the <tt>ij1.plugin.dirs</tt> system property.
 
