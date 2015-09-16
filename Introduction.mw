@@ -2,6 +2,7 @@
 
 ImageJ is an [[open source]] image processing program for multidimensional image data with a focus on scientific imaging.
 
+
 == What can ImageJ do? ==
 
 
@@ -14,6 +15,7 @@ ImageJ provides:
 
 
 ImageJ's [http://imagej.net/Development extensibility] is truly the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather made available as third-party [[plugins]] via [[update sites]] written by specialists in the corresponding fields.
+
 
 == How do I get started? ==
 
