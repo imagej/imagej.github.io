@@ -7,12 +7,15 @@ ImageJ is an [[open source]] image processing program for multidimensional image
 
 ImageJ provides:
 
-* A [http://imagej.net/Getting_started#Fiji.27s_main_window user interface] with functions to load, display, and save images.
+[http://google.com/] - an external link
+[[Google]] - a wiki link
+
+* A [Getting started#Fiji.27s_main_window|user interface]] with functions to load, display, and save images.
 * Basic [http://imagej.net/docs/guide/146-29.html#toc-Section-29 image processing functionality].
 * A wealth of advanced image processing [[techniques]], including [[colocalization]], [[deconvolution]], [[registration]], [[segmentation]], [[tracking]], [[visualization]] and much more.
 * An extension mechanism including support for [[plugins]] and [[macros]].
 
-ImageJ's [http://imagej.net/Development extensibility] is truly the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather made available as third-party [[plugins]] via [[update sites]] written by specialists in the corresponding fields.
+ImageJ's [[extensibility]] is truly the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather made available as third-party [[plugins]] via [[update sites]] written by specialists in the corresponding fields.
 
 == How do I get started? ==
 
