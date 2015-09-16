@@ -1,15 +1,17 @@
 = ImageJ Tutorials =
 
-
-
-=== The following tutorials are highly recommended for ''new users'': ===
+== Tutorials for new users ==
+<div style="background: #ffd; padding: 0.5em">
+'''The following tutorials are highly recommended for ''new users'':'''
 
 * [[Getting started]]
 * [[Image Processing Principles]] - Must-read guidelines for ethical analysis of images
 * [[Cookbook]] - "Recipes" for image processing
 * [[Using the Script Editor]]
+</div>
 
-
-See also [[external tutorials]].
+== See also ==
+* [http://youtube.com/fijichannel Fiji YouTube channel].
+* List of [[external tutorials]].
 
 [[Category:Fundamental]]
