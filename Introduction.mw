@@ -2,6 +2,9 @@
 
 ImageJ is an [[open source]] image processing program for multidimensional image data with a focus on scientific imaging.
 
+
+ImageJ has grown significantly due largely to being [[open source|freely available]] and its vibrant and helpful user community.  Uses of ImageJ range from data visualization and teaching to advanced image processing and statistical analysis. The software’s [[extensibility]] continues to attract biologists at all career stages as well as computer scientists who wish to effectively implement specific image-processing algorithms.  Open-source software, such as the [[ImageJ2|ImageJ project]], fosters its suites of software tools, making multitudes of image-analysis technology easily accessible to the scientific community.
+
 == What can ImageJ do? ==
 
 ImageJ provides:
