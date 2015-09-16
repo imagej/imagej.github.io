@@ -906,4 +906,9 @@ h1 {
     font-size: large;
 }
 
+/* Hide the useless privacy policy, about and imprint links. */
+#footer-places {
+    display: none;
+}
+
 /* </nowiki></pre> */
