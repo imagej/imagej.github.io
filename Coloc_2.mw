@@ -14,7 +14,7 @@
 
 Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs the pixel intensity correlation over space methods of [http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient Pearson], [[Media:Manders.pdf|Manders]], [[Media:Costes etalColoc.pdf|Costes]], [[Media:LietAlColoc.pdf|Li]] and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
 
-<span style="color:red">There are many nuances and pitfalls to colocalization analysis. As such, we strongly recommend you read the [[Colocalization Analysis]] section of Fiji's [[Cookbook]] before attempting to use Coloc 2!</span>
+<span style="color:red">There are many nuances and pitfalls to colocalization analysis. As such, we strongly recommend you read the [[Colocalization Analysis]] section of the [[Cookbook]] before attempting to use Coloc 2!</span>
 
 = How to use Coloc 2 =
 
