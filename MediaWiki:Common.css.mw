@@ -900,4 +900,10 @@ h1 {
     line-height: 1.0em;
 }
 
+#mw-writh-topbar {
+    position: fixed;
+    top: 0;
+    font-size: large;
+}
+
 /* </nowiki></pre> */
