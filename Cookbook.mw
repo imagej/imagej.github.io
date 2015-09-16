@@ -8,7 +8,7 @@ Cooks call them ''recipes'', biologists ''protocols'', and programmers call them
 
 Like the rest of this wiki, this Cookbook is a community project. Please feel welcome to edit and expand the material here!
 
-== Installing Fiji ==
+== Installing ImageJ ==
 
 The Cookbook is based on the [[Fiji]] distribution of ImageJ.
 {{:Installation}}
