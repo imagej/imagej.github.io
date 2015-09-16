@@ -901,7 +901,7 @@ h1 {
 }
 
 #mw-writh-topbar {
-    position: fixed;
+    position: absolute;
     top: 0;
     font-size: large;
 }
