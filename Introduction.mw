@@ -11,7 +11,6 @@ ImageJ provides:
 * A wealth of advanced image processing [[techniques]], including [[colocalization]], [[deconvolution]], [[registration]], [[segmentation]], [[tracking]], [[visualization]] and much more.
 * An extension mechanism including support for [[plugins]] and [[macros]].
 
-
 ImageJ's [[extensibility]] is truly the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather made available as third-party [[plugins]] via [[update sites]] written by specialists in the corresponding fields.
 
 == How do I get started? ==
