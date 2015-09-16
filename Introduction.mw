@@ -13,7 +13,7 @@ ImageJ provides:
 * an extension mechanism including support for [[plugins]] and [[macros]]
 
 
-ImageJ's [http://imagej.net/Development extensibility] is truly the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather made available as third-party [[plugins]] via [[update sites]] by specialists in the corresponding fields.
+ImageJ's [http://imagej.net/Development extensibility] is truly the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather made available as third-party [[plugins]] via [[update sites]] written by specialists in the corresponding fields.
 
 == How do I get started? ==
 
