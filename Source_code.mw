@@ -101,6 +101,6 @@ All SciJava projects use a [https://github.com/scijava/pom-scijava/blob/pom-scij
 
 == Running ImageJ1 unit tests ==
 
-We have written a substantial number of unit tests to exercise ImageJ 1.x functionality. See the [[Unit tests for ImageJ1]] page for more information.
+We have written a substantial number of unit tests to exercise [[ImageJ 1.x]] functionality. See the [[Unit tests for ImageJ1]] page for more information.
 
 [[Category:Development]]
