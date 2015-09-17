@@ -33,6 +33,17 @@ Valid levels include: <code>none</code>, <code>error</code>, <code>warn</code>, 
 
 There is another debug mode, which can be enabled in the ''Edit {{arrow}} Options {{arrow}} Misc...'' menu, by checking ''Debug mode''. This might reveal different information than using the techniques described above. For maximum debugitude, turn on both!
 
+== When ImageJ hangs ==
+
+If ImageJ appears to [https://en.wikipedia.org/wiki/Hang_(computing) hang]—i.e., it stops responding to inputs—it is often helpful to take a "snapshot" of where the program is at after the hang occurs. This information can give the developers valuable hints about how to fix the problem.
+
+There are two ways to create such a snapshot, known as a "thread dump" or "stack trace":
+
+# First, try pressing {{key|Shift}}+{{key|\}} in ImageJ itself. If successful, it will open a new window with the stack trace.
+# If the first method does not work, and you can reproduce the hang: launch ImageJ again, this time in [[#Launching ImageJ in debug mode|from the console]] as described above. Then press {{key|Ctrl}}+{{key|\}} in the same console to print the stack trace. On Windows, you may need to press {{key|Ctrl}}+{{key|Pause}} (i.e., {{key|Break}}) instead of {{key|Ctrl}}+{{key|\}}.
+
+Either way, once you have the stack trace. you can copy and paste it into a [[Bugs|bug report]]!
+
 == Advanced debugging techniques ==
 
 If you are technically savvy, check out the [[Debugging]] page for additional—but more complicated—debugging techniques.
