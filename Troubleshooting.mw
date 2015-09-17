@@ -59,7 +59,30 @@ Alternately, to disable autoscaling during initial import, you can use the [[Bio
 
 Further reading:
 * [[Image Intensity Processing]]
-* [[IP Principles]]
+* [[Image Processing Principles]]
+
+== The same plugin gives different results on different machines! ==
+
+While ImageJ strives for [[reproducible]] analysis, there are many reasons results can differ. Check the following:
+
+* Ensure that the version of [[ImageJ]] is exactly the same on both machines.
+** Click the status bar and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
+** If these two values differ between your machines, the versions are not the same.
+** See also [[Frequently Asked Questions#How can I verify that my ImageJ is really 100% up to date?|How can I verify that my ImageJ is really 100% up to date?]].
+** If the two versions of ImageJ differ and produce different numerical results, it is a bug—please [[Report a Bug|report it]]!
+* Ensure that the ''options'' of ImageJ match between the machines.
+** A fast way to ensure this is the Edit {{arrow}} Options {{arrow}} Reset... command, which resets everything to its default state.
+** Alternately, you can check the settings in the following dialog boxes:
+*** All Edit {{arrow}} Options dialog boxes
+** Process {{arrow}} Binary {{arrow}} Options... – a very common culprit of black-vs.-white issues is the "Black background" option.
+** Process {{arrow}} FFT {{arrow}} FFT Options...
+** Image {{arrow}} Overlay {{arrow}} Overlay Options...
+** Analyze {{arrow}} Gels {{arrow}} Gel Analyzer Options...
+** Press L for the [[Command Finder]] and type "options" and double check any other options you think might be relevant.
+* If you are running your analysis [[headless]], there might be a bug in the headless support.
+** Try the analysis ''headless'' on both machines and see if the results match.
+** Try the analysis ''headless'' vs. through the GUI on a single machine, and see if the results match.
+** If the results differ due to headlessness, it is a bug—please [[Report a Bug|report it]]!
 
 = [[3D Viewer]] issues =
 
