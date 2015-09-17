@@ -40,14 +40,14 @@ If ImageJ appears to [https://en.wikipedia.org/wiki/Hang_(computing) hang]—i.e
 There are two ways to create such a snapshot, known as a "thread dump" or "stack trace":
 
 # First, try pressing {{key|Shift}}+{{key|\}} in ImageJ itself. If successful, it will open a new window with the stack trace.
-# If the first method does not work, and you can reproduce the hang: launch ImageJ again, this time [[#Launching ImageJ in debug mode|from the console]] as described above. Then press {{key|Ctrl}}+{{key|\}} in the same console to print the stack trace. On Windows, you may need to press {{key|Ctrl}}+{{key|Pause}} (i.e., {{key|Break}}) instead of {{key|Ctrl}}+{{key|\}}.
+# If the first method does not work, and you can reproduce the hang: launch ImageJ again, this time [[#Launching ImageJ from the console|from the console]] as described above. Then press {{key|Ctrl}}+{{key|\}} in the same console to print the stack trace. On Windows, you may need to press {{key|Ctrl}}+{{key|Pause}} (i.e., {{key|Break}}) instead of {{key|Ctrl}}+{{key|\}}.
 
 Either way, once you have the stack trace. you can copy and paste it into a [[Bugs|bug report]]!
 
 == If ImageJ crashes ==
 
 If ImageJ [https://en.wikipedia.org/wiki/Crash_(computing) crashes]—i.e., the program suddenly terminates, with or without an error message—it is very helpful to identify the steps which can reliably reproduce the crash:
-* Launch ImageJ [[#Launching ImageJ in debug mode|from the console]] as described above.
+* Launch ImageJ [[#Launching ImageJ from the console|from the console]] as described above.
 * Perform the same actions which previously resulted in the crash.
 * Take note of any error messages in the console window, which you can copy and paste it into a [[Bugs|bug report]].
 
