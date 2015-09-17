@@ -33,7 +33,7 @@ Valid levels include: <code>none</code>, <code>error</code>, <code>warn</code>, 
 
 There is another debug mode, which can be enabled in the ''Edit {{arrow}} Options {{arrow}} Misc...'' menu, by checking ''Debug mode''. This might reveal different information than using the techniques described above. For maximum debugitude, turn on both!
 
-== If ImageJ hangs ==
+== If ImageJ freezes or hangs ==
 
 If ImageJ appears to [https://en.wikipedia.org/wiki/Hang_(computing) hang]—i.e., it stops responding to inputs—it is often helpful to take a "snapshot" of where the program is at after the hang occurs. This information can give the developers valuable hints about how to fix the problem.
 
