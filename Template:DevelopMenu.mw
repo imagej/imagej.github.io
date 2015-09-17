@@ -30,7 +30,7 @@
 }}
 
 {{Submenu | Developing plugins |
-{{MenuItem | [[Writing_ImageJ2_plugins|Writing plugins]] }}
+{{MenuItem | [[Writing plugins]] }}
 {{MenuItem | [[How_to_contribute_to_an_existing_plugin_or_library|Contributing to a plugin]] }}
 {{MenuItem | [[Adding_new_ops|Adding new Ops]] }}
 {{MenuItem | [[Adding_new_file_formats|Adding new formats]] }}
