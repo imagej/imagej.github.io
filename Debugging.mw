@@ -3,31 +3,7 @@
 
 = Launching ImageJ in debug mode =
 
-To debug problems with ImageJ, it is often helpful to launch it in debug mode. There are several ways:
-
-<ol>
-<li>'''Launch with the <code>--debug</code> flag.'''
-<ul>
-<li>On Linux 64-bit (from a console):
-<source lang="bash">$HOME/ImageJ.app/ImageJ-linux64 --debug</source>
-</li>
-<li>On OS X (from Terminal):
-<source lang="bash">/Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx --debug</source>
-</li>
-<li>On Windows 64-bit (from Command Prompt):
-<source lang="bash">%HOMEPATH%\ImageJ.app\ImageJ-win64.exe --debug</source>
-</ul>
-</li>
-<li>'''Set the <code>DEBUG</code> environment variable.''' E.g., on Linux:
-<source lang="bash">DEBUG=1 $HOME/ImageJ.app/ImageJ-linux64</source>
-</li>
-<li>'''Rename the launcher.''' You can rename the executable from <code>ImageJ-xxx</code> to <code>debug</code> (<code>debug.exe</code> on Windows) before launching, and the launcher will be more verbose about what it is doing.
-</li>
-<li>'''Set <code>scijava.log.level</code>.''' You can control the log level more precisely by setting the <code>scijava.log.level</code> system property. E.g., on Linux:
-<source lang="bash">$HOME/ImageJ.app/ImageJ-linux64 -Dscijava.log.level=trace --</source>
-Valid levels include: <code>none</code>, <code>error</code>, <code>warn</code>, <code>info</code>, <code>debug</code> and <code>trace</code>.
-</li>
-</ol>
+To debug problems with ImageJ, it is often helpful to launch it in debug mode. See the [[Troubleshooting#Launching_ImageJ_in_debug_mode|Troubleshooting]] page for instructions.
 
 = Debugging plugins in an IDE (Netbeans, IntelliJ, Eclipse, etc) =
 
@@ -70,10 +46,6 @@ Fiji.app/ImageJ-linux64 -agentlib:jdwp=server=y,suspend=y,transport=dt_socket,ad
 <blockquote>Listening for transport dt_socket at address: 46317</blockquote>
 
 '''Note''': calling ''fiji -agentlib:jdwp=help --'' will print nice usage information with documentation of other JDWP options.
-
-= Switching on ImageJ's debug mode =
-
-ImageJ itself outputs a lot of debug messages, when asked for them: Simply check ''Debug mode'' in the dialog popping up when clicking on the ''Edit {{arrow}} Options {{arrow}} Misc...'' menu item.
 
 = Monitoring system calls =
 
@@ -130,13 +102,13 @@ In many cases, pressing {{key|Shift}}+{{key|\}} in ImageJ itself will open a win
 If you [[#Command line debugging|launch Fiji from the console]], you can press {{key|Ctrl}}+{{key|\}} in the same console to print the stack trace. On Windows, you may need to press {{key|Ctrl}}+{{key|Pause}} (i.e., {{key|Break}}) instead of {{key|Ctrl}}+{{key|\}}.
 </li>
 <li style="padding-bottom: 5px">
-You can use the <code>jstack</code> command (you don't need to run Fiji from the command line in this case). This requires that you first find the PID (process ID) of Fiji. You can do so by running:
+You can use the <code>jstack</code> command (you don't need to run ImageJ from the command line in this case). This requires that you first find the PID (process ID) of ImageJ. You can do so by running:
 <source lang="bash">jps</source>
-from the command line to print a list of running Java processes. If you're not sure which PID is Fiji's, you can close Fiji, run <code>jps</code>, open Fiji and run <code>jps</code> again. Whichever PID is present in the second run but not the first is Fiji's. Then, to acquire a stack trace, just run:
-<source lang="bash">jstack <Fiji's PID></source>
+from the command line to print a list of running Java processes. If you're not sure which PID is ImageJ's, you can close ImageJ, run <code>jps</code>, open ImageJ and run <code>jps</code> again. Whichever PID is present in the second run but not the first is ImageJ's. Then, to acquire a stack trace, just run:
+<source lang="bash">jstack <ImageJ's PID></source>
 </li>
 <li>
-For GUI-based debugging, can also attach to the Fiji PID using the <code>jvisualvm</code> program that you can find in <code>java/<platform>/<jdk>/bin/</code>. Here you can simply press a big ''Thread Dump'' button to view the stack trace.
+For GUI-based debugging, can also attach to the ImageJ PID using the <code>jvisualvm</code> program that you can find in <code>java/<platform>/<jdk>/bin/</code>. Here you can simply press a big ''Thread Dump'' button to view the stack trace.
 
 MacOSX users, please note that Apple decided that the VisualVM tool should no longer be shipped with the Java Development Kit; you will have to download it [http://visualvm.java.net/download.html from here].
 </li>
@@ -148,7 +120,7 @@ Regardless of which method you use to acquire the stack trace, to debug you will
 
 Sometimes, memory is not released properly, leading to OutOfMemoryExceptions.
 
-One way to find out what is happening is to use <code>jvisualvm</code> (see [[#Debugging JVM hangs]]) to connect to the Fiji process, click on ''Heap Dump'' in the ''Monitor'' tab, in said tab select the sub-tab ''Classes'' and sort by size. Double-clicking on the top user should get you to a detailed list of ''Instances'' where you can expand the tree of references to find out what is holding a reference still.
+One way to find out what is happening is to use <code>jvisualvm</code> (see [[#Debugging JVM hangs]]) to connect to the ImageJ process, click on ''Heap Dump'' in the ''Monitor'' tab, in said tab select the sub-tab ''Classes'' and sort by size. Double-clicking on the top user should get you to a detailed list of ''Instances'' where you can expand the tree of references to find out what is holding a reference still.
 
 = Debugging hard JVM crashes =
 
@@ -161,7 +133,7 @@ Typically when you debug a program that crashes, you start it in a debugger, to 
 But there is a very easy method to use gdb to inspect serious errors such as segmentation faults or trap signals nevertheless:
 
 <source lang="bash">
-./fiji -XX:OnError="gdb - %p" --
+./imagej -XX:OnError="gdb - %p" --
 </source>
 == Using lldb ==
 
@@ -195,10 +167,10 @@ The most important part is the line after the line ''# Problematic frame:'' beca
 
 == Out of memory error ==
 
-If the specific exception you're receiving (or you suspect) is an OutOfMemoryError, there are JVM flags that can be enabled when running Fiji to help pinpoint the problem:
+If the specific exception you're receiving (or you suspect) is an OutOfMemoryError, there are JVM flags that can be enabled when running ImageJ to help pinpoint the problem:
 
 <source lang="bash">
-./fiji -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/desired/path/
+./imagej -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/desired/path/
 </source>
 
 The first option: 
@@ -217,16 +189,16 @@ The second option:
 
 is not required, but convenient for controlling where the resulting .hprof file is written. Note that these heap dumps are named by PID, and thus are not easily human distinguishable.
 
-After acquiring a heap dump, you can analyze it yourself, e.g. with a [http://www.eclipse.org/mat/ memory analyzer], or post on [https://groups.google.com/forum/#!forum/fiji-devel fiji-devel] with a brief explanation of your problem.
+After acquiring a heap dump, you can analyze it yourself, e.g. with a [http://www.eclipse.org/mat/ memory analyzer], or post on [Mailing Lists|imagej-devel] with a brief explanation of your problem.
 
 = Debugging Java code with jdb =
-== How to attach the Java debugger jdb to a running fiji process ==
-This requires two separate processes, fiji itself and the debugger.  You can do this either in one shell, backgrounding the first process or in two shells, this is recommended.  In the two shells do the following:
+== How to attach the Java debugger jdb to a running ImageJ process ==
+This requires two separate processes, ImageJ itself and the debugger.  You can do this either in one shell, backgrounding the first process or in two shells, this is recommended.  In the two shells do the following:
 
 ;Shell 1
-:In the first shell, start fiji with special parameters to open a port (8000 in this case) to which jdb can connect afterwards:
+:In the first shell, start ImageJ with special parameters to open a port (8000 in this case) to which jdb can connect afterwards:
 <source lang="bash">
-./fiji -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=y --</source>
+./imagej -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=y --</source>
 :(Tested with Java 1.5.0, ymmv)
 ;Shell 2
 :In the second shell, tell jdb to attach to that port:
@@ -249,7 +221,7 @@ Notable differences:
 
 Okay, so here you go, a little demonstration:
 
-(If you attach jdb to a running fiji process, you have to use the line from the previous section instead.)
+(If you attach jdb to a running ImageJ process, you have to use the line from the previous section instead.)
 
  $ jdb -classpath ij.jar ij.ImageJ
  > stop in ij.ImageJ.main
@@ -333,13 +305,13 @@ Properties...'' in the [[3D Viewer]]'s menu bar.
 
 == Command line debugging ==
 
-If this information is not enough to solve the trouble, or if ''Test Java3D'' did not work, then you need to call Fiji from the command line to find out more.
+If this information is not enough to solve the trouble, or if ''Test Java3D'' did not work, then you need to call ImageJ from the command line to find out more.
 
 From the command line, you have several options to show more or less information about Java3D.
 
 === Windows & Linux ===
 
-Please find the ''ImageJ-<platform>'' executable in the Fiji.app/ directory (on 32-bit Windows, that would be ''ImageJ-win32.exe''. Make a copy in the same directory and rename that to ''debug'' (on Windows: ''debug.exe''). Simply double-click that.
+Please find the ''ImageJ-<platform>'' executable in the ImageJ.app/ directory (on 32-bit Windows, that would be ''ImageJ-win32.exe''. Make a copy in the same directory and rename that to ''debug'' (on Windows: ''debug.exe''). Simply double-click that.
 
 On Windows, you will see a console window popping up; to copy information for pasting somewhere else, please right-click the upper-left window icon, select ''Properties...'', activate the ''Quick Edit'' mode. Then mark the text in question by dragging the mouse with the left mouse button pressed, and copy it to the clipboard by right-clicking.
 
@@ -347,10 +319,10 @@ On Linux, the output will be written to the file ''.xsession-errors'' in the hom
 
 === MacOSX ===
 
-On MacOSX, you need to remember that any application is just a directory with a special layout. So you can call Fiji like this from the ''Terminal'' (which you will find in the Finder by clicking on ''Go>Utilities''. Example command line:
+On MacOSX, you need to remember that any application is just a directory with a special layout. So you can call ImageJ like this from the ''Terminal'' (which you will find in the Finder by clicking on ''Go>Utilities''. Example command line:
 
 <source lang="bash">
-cd /Applications/Fiji.app/Contents/MacOS/
+cd /Applications/ImageJ.app/Contents/MacOS/
 cp ImageJ-macosx debug
 ./debug
 </source>
@@ -358,29 +330,29 @@ cp ImageJ-macosx debug
 == Show Java3D debug messages ==
 
 <source lang="bash">
-./fiji -Dj3d.debug=true --
+./imagej -Dj3d.debug=true --
 </source>
 
-(Of course, you need to substitute the ''./fiji'' executable name with the appropriate name for your platform.)
+(Of course, you need to substitute the ''./imagej'' executable name with the appropriate name for your platform.)
 
-'''Note:''' do not forget the trailing ''--''; without them, Fiji mistakes the first option for an ImageJ option rather than a Java one.
+'''Note:''' do not forget the trailing ''--''; without them, ImageJ mistakes the first option for an ImageJ option rather than a Java one.
 '''Note, too:''' on Windows, you <u>must not</u> forget to pass the ''--console'' option (this can be anywhere on the command line).
 
 == Windows-specific stuff ==
 
 On Windows, you can choose between OpenGL and Direct3D by passing ''-Dj3d.rend=ogl'' or ''-Dj3d.rend=d3d'', respectively.
 
-Further, some setups require enough RAM to be reserved, so you might need to pass an option like ''--mem=1200m'' (make sure that you have enough RAM free before starting Fiji that way, though!). If it turns out that memory was the issue, you can make the setting permanent by clicking Fiji's ''Edit {{arrow}} Options {{arrow}} Memory & Threads...'' menu entry.
+Further, some setups require enough RAM to be reserved, so you might need to pass an option like ''--mem=1200m'' (make sure that you have enough RAM free before starting ImageJ that way, though!). If it turns out that memory was the issue, you can make the setting permanent by clicking ImageJ's ''Edit {{arrow}} Options {{arrow}} Memory & Threads...'' menu entry.
 
 == More Java 3D properties ==
 
 You can control quite a few things in Java 3D through setting Java properties. Remember, you can set properties using a command line like this:
 
 <source lang="bash">
-./fiji -D<property-name>=<property-value> --
+./imagej -D<property-name>=<property-value> --
 </source>
 
-where you substitute ''<property-name>'' and ''<property-values>'' appropriately. You can have more than one such option, but make sure that they are appearing before the ''--'' on the command line, otherwise Fiji will mistake them for ImageJ options.
+where you substitute ''<property-name>'' and ''<property-values>'' appropriately. You can have more than one such option, but make sure that they are appearing before the ''--'' on the command line, otherwise ImageJ will mistake them for ImageJ options.
 
 This list of Java 3D properties was salvaged from the now-defunct j3d.org website:
 
@@ -564,7 +536,7 @@ j3d.configURL	Unknown	1.3.1	Found in the ConfiguredUniverse class. Functionality
 
 = Interactive debugging using a shared Terminal session =
 
-For users running Linux and MacOSX computers (or on Windows, [http://www.cygwin.com/ Cygwin] with an openssh server), one can use an SSH tunnel for a debugging session shared between a user and a developer. All that is needed is a shared account on a public SSH server, e.g. ''vib'' on Fiji's own server.
+For users running Linux and MacOSX computers (or on Windows, [http://www.cygwin.com/ Cygwin] with an openssh server), one can use an SSH tunnel for a debugging session shared between a user and a developer. All that is needed is a shared account on a public SSH server.
 
 The user should execute this command:
 
