@@ -12,7 +12,7 @@
 {{MenuItem | [[Source code]] }}
 {{MenuItem | [[Project management]] }}
 {{MenuItem | [[Releases]] }}
-{{MenuItem | [[Debugging intro|Debugging]] }}
+{{MenuItem | [[Debugging]] }}
 | {{#if:{{{1|}}}|collapsed|}}
 }}
 
