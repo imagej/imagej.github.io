@@ -1,7 +1,7 @@
 {{Help}}
 = How to troubleshoot problems =
 
-== Launching ImageJ in debug mode ==
+== Launching ImageJ from the console ==
 
 To diagnose problems with ImageJ, it is often helpful to launch it in debug mode. There are several ways:
 
