@@ -29,9 +29,9 @@ Valid levels include: <code>none</code>, <code>error</code>, <code>warn</code>, 
 </li>
 </ol>
 
-== ImageJ 1.x's debug mode ==
+== The other debug mode ==
 
-ImageJ 1.x has its own debug mode, which can be enabled in the ''Edit {{arrow}} Options {{arrow}} Misc...'' menu, by checking ''Debug mode''.
+There is another debug mode, which can be enabled in the ''Edit {{arrow}} Options {{arrow}} Misc...'' menu, by checking ''Debug mode''. This might reveal different information than using the techniques described above. For maximum debugitude, turn on both!
 
 = Common issues =
 
