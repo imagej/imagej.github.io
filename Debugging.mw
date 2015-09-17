@@ -93,14 +93,8 @@ Often, dynamic library issues are connected to a dependent .dll file missing. Do
 
 = Debugging JVM hangs =
 
-When the Java VM hangs, the reason might be a dead-lock. You can often find out what is happening by reading the thread dump (aka "stack trace" - a snapshot of what is being executed in the JVM). You can acquire a thread dump in one of the following ways:
+When the Java VM hangs, the reason might be a dead-lock. Try taking a [[Troubleshooting#If_ImageJ_freezes_or_hangs|stack trace]]. If you have trouble, you can try one of the following advanced techniques:
 <ol>
-<li>
-In many cases, pressing {{key|Shift}}+{{key|\}} in ImageJ itself will open a window with a complete stack trace. (If this does not work: try the command line stack trace method below.)
-</li>
-<li style="padding-bottom: 15px">
-If you [[#Command line debugging|launch ImageJ from the console]], you can press {{key|Ctrl}}+{{key|\}} in the same console to print the stack trace. On Windows, you may need to press {{key|Ctrl}}+{{key|Pause}} (i.e., {{key|Break}}) instead of {{key|Ctrl}}+{{key|\}}.
-</li>
 <li style="padding-bottom: 5px">
 You can use the <code>jstack</code> command (you don't need to run ImageJ from the command line in this case). This requires that you first find the PID (process ID) of ImageJ. You can do so by running:
 <source lang="bash">jps</source>
