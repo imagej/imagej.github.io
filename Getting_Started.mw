@@ -1,18 +1,18 @@
 = Installation =
 
-First, you should to install Fiji on [[Install_Fiji_on_Linux|Linux]], [[Install_Fiji_on_MacOSX|MacOSX]] or [[Install_Fiji_on_Windows|Windows]].
+First, you should to [[install]] ImageJ!
 
-= Fiji's main window =
+= The main window =
 
-After starting Fiji, you will see the main window:
+After starting ImageJ, you will see the main window:
 
 [[Image:Fiji-main-window.jpg|center]]
 
-On MacOSX, the menu bar will appear on the top of the screen (as with all MacOS applications).
+On Mac OS X, the menu bar will appear on the top of the screen (as with all OS X applications).
 
 == The menu bar ==
 
-In the menubar, you will find most of the functionality, such as loading/saving files, processing them, and plugins will be installed into the menus, too.
+In the menu bar, you will find most of the functionality, such as loading/saving files, processing them, and plugins will be installed into the menus, too.
 
 The menus have different purposes:
 
@@ -57,13 +57,13 @@ A single mouse click on the status bar will show the information about ImageJ an
 
 == Drag & Drop ==
 
-You can drag files from your favorite file manager and drop them on the main window; Fiji will load the corresponding files.
+You can drag files from your favorite file manager and drop them on the main window; ImageJ will load the corresponding files.
 
-Drag 'n Drop will also work for images displayed in your web browser, unless they are links to other web pages.  You can try with this page: clicking on an image will open a page whose image you can Drag 'n Drop into Fiji's main window.
+Drag 'n Drop will also work for images displayed in your web browser, unless they are links to other web pages.  You can try with this page: clicking on an image will open a page whose image you can Drag 'n Drop into ImageJ's main window.
 
 = Image windows =
 
-Whenever you open an image, be it via ''File {{arrow}} Open'', Drag 'n Drop or ''File {{arrow}} Open Samples'', Fiji will open an image window.
+Whenever you open an image, be it via ''File {{arrow}} Open'', Drag 'n Drop or ''File {{arrow}} Open Samples'', ImageJ will open an image window.
 
 [[Image:Clown-snapshot.jpg|center]]
 
