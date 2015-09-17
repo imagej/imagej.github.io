@@ -27,10 +27,10 @@ If your plugin is not a filter plugin, i.e. if it does not require an image to r
 
 Sometimes, we need to debug things directly in ImageJ, for example because there might be issues with the plugin discovery (ImageJ wants to find the plugins in ''<ImageJ>/plugins/'', and often we want to bundle them as ''.jar'' files, both of which are incompatible with Eclipse debugging). JDWP (''Java Debug Wire Protocol'') to the rescue!
 
-After starting the Java Virtual Machine in a special mode, debuggers (such as Eclipse's built-in one) can attach to it. To start Fiji in said mode, you need to pass the ''--debugger=<port>'' option:
+After starting the Java Virtual Machine in a special mode, debuggers (such as Eclipse's built-in one) can attach to it. To start ImageJ in said mode, you need to pass the ''--debugger=<port>'' option:
 
 <source lang="bash">
-Fiji.app/ImageJ-linux64 --debugger=8000
+ImageJ.app/ImageJ-linux64 --debugger=8000
 </source>
 
 In Eclipse (or whatever [https://en.wikipedia.org/wiki/JDWP JDWP]-enabled debugger) select the correct project so that the source code can be found, mark the break-points where you want execution to halt (e.g. to inspect variables' values), and after clicking on ''Run>Debug Configurations...'' right-click on the ''Remote Java Application'' item in the left-hand side list and select ''New''. Now you only need to make sure that the port matches the value that you specified (in the example above, ''8000'', Eclipse's default port number).
@@ -38,23 +38,23 @@ In Eclipse (or whatever [https://en.wikipedia.org/wiki/JDWP JDWP]-enabled debugg
 If you require more control over the ImageJ side -- such as picking a semi-random port if port 8000 is already in use -- you can also use the ''-agentlib:jdwp=...'' Java option directly (''--debugger=<port>'' is just a shortcut for convenience):
 
 <source lang="bash">
-Fiji.app/ImageJ-linux64 -agentlib:jdwp=server=y,suspend=y,transport=dt_socket,address=localhost:8000 --
+ImageJ.app/ImageJ-linux64 -agentlib:jdwp=server=y,suspend=y,transport=dt_socket,address=localhost:8000 --
 </source>
 
-(the ''--'' marker separates the Java options -- if any -- from the ImageJ options). Once started that way, Fiji will wait for the debugger to be attached, after printing a message such as:
+(the ''--'' marker separates the Java options -- if any -- from the ImageJ options). Once started that way, ImageJ will wait for the debugger to be attached, after printing a message such as:
 
 <blockquote>Listening for transport dt_socket at address: 46317</blockquote>
 
-'''Note''': calling ''fiji -agentlib:jdwp=help --'' will print nice usage information with documentation of other JDWP options.
+'''Note''': calling ''imagej -agentlib:jdwp=help --'' will print nice usage information with documentation of other JDWP options.
 
 = Monitoring system calls =
 
 == Linux ==
 
-On Linux, you should call Fiji using the [http://www.linuxmanpages.com/man1/strace.1.php strace command]:
+On Linux, you should call ImageJ using the [http://www.linuxmanpages.com/man1/strace.1.php strace command]:
 
 <source lang="bash">
-strace -Ffo syscall.log ./fiji <args>
+strace -Ffo syscall.log ./imagej <args>
 </source>
 
 == MacOSX ==
@@ -62,7 +62,7 @@ strace -Ffo syscall.log ./fiji <args>
 Use the ''dtruss'' wrapper around [http://developer.apple.com/documentation/Darwin/Reference/ManPages/man1/dtrace.1.html dtrace] to monitor system calls:
 
 <source lang="bash">
-dtruss ./fiji <args>
+dtruss ./imagej <args>
 </source>
 
 == Windows ==
@@ -73,18 +73,18 @@ To monitor all kinds of aspects of processes on Windows, use [http://technet.mic
 
 == Linux ==
 
-Set the ''LD_DEBUG'' environment variable before launching Fiji:
+Set the ''LD_DEBUG'' environment variable before launching ImageJ:
 
 <source lang="bash">
-LD_DEBUG=1 ./fiji <args>
+LD_DEBUG=1 ./imagej <args>
 </source>
 
 == MacOSX ==
 
-Set the ''DYLD_PRINT_APIS'' environment variable before launching Fiji:
+Set the ''DYLD_PRINT_APIS'' environment variable before launching ImageJ:
 
 <source lang="bash">
-DYLD_PRINT_APIS=1 ./fiji <args>
+DYLD_PRINT_APIS=1 ./imagej <args>
 </source>
 
 == Windows ==
@@ -99,7 +99,7 @@ When the Java VM hangs, the reason might be a dead-lock. You can often find out 
 In many cases, pressing {{key|Shift}}+{{key|\}} in ImageJ itself will open a window with a complete stack trace. (If this does not work: try the command line stack trace method below.)
 </li>
 <li style="padding-bottom: 15px">
-If you [[#Command line debugging|launch Fiji from the console]], you can press {{key|Ctrl}}+{{key|\}} in the same console to print the stack trace. On Windows, you may need to press {{key|Ctrl}}+{{key|Pause}} (i.e., {{key|Break}}) instead of {{key|Ctrl}}+{{key|\}}.
+If you [[#Command line debugging|launch ImageJ from the console]], you can press {{key|Ctrl}}+{{key|\}} in the same console to print the stack trace. On Windows, you may need to press {{key|Ctrl}}+{{key|Pause}} (i.e., {{key|Break}}) instead of {{key|Ctrl}}+{{key|\}}.
 </li>
 <li style="padding-bottom: 5px">
 You can use the <code>jstack</code> command (you don't need to run ImageJ from the command line in this case). This requires that you first find the PID (process ID) of ImageJ. You can do so by running:
