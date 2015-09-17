@@ -106,6 +106,53 @@ While ImageJ strives for [[reproducible]] analysis, there are many reasons resul
 ** Try the analysis ''headless'' vs. through the GUI on a single machine, and see if the results match.
 ** If the results differ due to headlessness, it is a bug—please [[Report a Bug|report it]]!
 
+= Common error messages =
+
+== OutOfMemoryError ==
+
+{{Sidebox |
+'''Why does ImageJ not release any memory back to the system?'''
+
+This is a characteristic of the Java runtime. In many cases, Java ''never'' releases memory back to the system, so memory monitors such as Windows Task Manager will always report an ever-growing amount of RAM used by the Java process, until the JVM shuts down.
+
+The best way to monitor ImageJ's actual memory usage is to run the [http://imagej.net/docs/guide/146-31.html#toc-Subsubsection-31.3.5 Monitor Memory...] command. You can also click on the ImageJ status bar to trigger a garbage collection operation, which will typically decrease the memory use.
+
+That said, some articles suggest that you can cause Java to give back free memory to the OS under certain conditions; see:
+
+* [http://stackoverflow.com/q/324499 Java still uses system memory after deallocation of objects and garbage collection]
+* [http://stackoverflow.com/q/16649601 java.exe process uses more memory and does not free it up]
+* [http://stackoverflow.com/q/12017437 JVM Memory : Why memory on task manager difference with JProbe (or JConsole tool)]
+
+To be clear, Java does reuse memory when you close and reopen images. The behavior described above is not a memory ''leak'' per se. It should be possible to leave ImageJ running for days or weeks at a time doing batch processing and it have it work just fine.
+
+See also:
+
+* [http://stackoverflow.com/q/22912063 Automatically release unused memory in ImageJ / Fiji]
+}}
+The error means ImageJ ran out of available [https://en.wikipedia.org/wiki/Random-access_memory computer memory] (''not'' hard drive space).
+
+The first thing to do is make sure that ImageJ has a large enough "maximum heap" size:
+
+* Edit {{arrow}} Options {{arrow}} Memory &amp; Threads
+* Change "Maximum Memory" to something larger (at most, 1000 MB less than your computer's total RAM).
+* Restart ImageJ for the new memory settings to take effect.
+
+Note that in most cases, the [[Launcher|ImageJ launcher]] will make an initial guess at a reasonable value: ~75% of physical RAM.
+
+You can confirm how much memory is actually available by clicking on the status bar. You will see a "[used] of [max]" memory message, as pictured here:
+
+[[File:MemoryStatus.png]]
+
+If you are already at the limits of your computer's physical memory, the next step would be to add more.
+
+'''About Java garbage collection:''' Java always automatically calls the garbage collector when the heap is getting full [http://stackoverflow.com/questions/8719071 [1]]. While it is possible to manually invoke the garbage collector by clicking ImageJ's status bar&mdash;or programmatically by calling <code>run("Collect Garbage")</code> in a macro or <code>System.gc()</code> in a plugin&mdash;it will not solve the fundamental problem of Java actually not having a sufficient amount of memory. (The only exception to this is a rare case where Java decides that garbage collection is happening too slowly, in which case you should see the message "GC overhead limit exceeded" [http://www.petefreitag.com/item/746.cfm [2]]).
+
+== NegativeArraySizeException ==
+
+[[ImageJ1]] only supports image planes with 2 gigapixels or less. If your data has extremely large image planes—e.g., 50000 x 50000 pixels—you may need to analyze region by region. One way to do this is using the "Crop on import" feature of the [[Bio-Formats]] plugin.
+
+[[ImageJ2]] supports larger image planes internally, but uses the [[ImageJ1]] user interface by default, which once again limits visualization to 2 gigapixels. The [[Contributors|ImageJ2 team]] is working to lift these size restrictions; see {{GitHub | org=imagej | repo=imagej | issue=87 | label=imagej/imagej#87}}.
+
 = OS X issues =
 
 == Why does ImageJ crash frequently? ==
