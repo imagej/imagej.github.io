@@ -1,32 +1,10 @@
-{{Help}}= Input/Output =
-
-== The image I loaded is displayed all black! But it is not black! ==
-
-See the [[Troubleshooting#The_image_I_loaded_is_displayed_all_black.21_But_it_is_not_black.21|Troubleshooting]] page.
-
-== The image colors do not match what I see in other programs! ImageJ is wrong! ==
-
-See the [[Troubleshooting#The_image_colors_do_not_match_what_I_see_in_other_programs.21_ImageJ_is_wrong.21|Troubleshooting]] page.
-
-= Analysis =
-
-== The same plugin gives different results on different machines! ==
-
-See the [[Troubleshooting#The_same_plugin_gives_different_results_on_different_machines.21|Troubleshooting]] page.
+{{Help}}= Analysis =
 
 == How do I apply an operation or macro to multiple images? ==
 
 See the [[Batch Processing]] page.
 
 = Mac OS X =
-
-== Why does ImageJ crash frequently? ==
-
-This is most likely an AWT issue with Apple's version of Java 6. There is even a [http://fiji.sc/bugzilla/show_bug.cgi?id=197 bug in our bug tracker about it]. The problem is that we did not manage to find a work-around because the bug appears to be in the MacOSX-specific part of the Java Virtual Machine that was provided by Apple. It seems to be related to opening new windows while mouse updates are processed, though. If you have this issue, or find out what causes it, please comment on [http://fiji.sc/bugzilla/show_bug.cgi?id=197 this bug report].
-
-== Why does ImageJ run so slowly? ==
-
-On OS X, older versions of Java 7 and Java 8 (prior to 1.8.0_45) are extremely slow at displaying images. You should either upgrade to the latest version of Java 8, or revert to Java 6.
 
 == How do I set up Java 6 on OS X? ==
 
