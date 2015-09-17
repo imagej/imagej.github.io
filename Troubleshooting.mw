@@ -33,6 +33,10 @@ Valid levels include: <code>none</code>, <code>error</code>, <code>warn</code>, 
 
 There is another debug mode, which can be enabled in the ''Edit {{arrow}} Options {{arrow}} Misc...'' menu, by checking ''Debug mode''. This might reveal different information than using the techniques described above. For maximum debugitude, turn on both!
 
+== Advanced debugging techniques ==
+
+If you are technically savvy, check out the [[Debugging]] page for additional—but more complicated—debugging techniques.
+
 = Common issues =
 
 == The image I loaded is displayed all black! But it is not black! ==
