@@ -2,54 +2,17 @@
 
 == The image I loaded is displayed all black! But it is not black! ==
 
-This problem usually arises when 12-bit or 14-bit images are loaded into ImageJ without autoscaling. In that case, they are treated as if they were 16-bit images, and therefore the dynamic range is all wrong. You can fix this by clicking on ''Image {{arrow}} Adjust {{arrow}} Brightness/Contrast...'' and hitting the ''Auto'' button.
+See the [[Troubleshooting#The_image_I_loaded_is_displayed_all_black.21_But_it_is_not_black.21|Troubleshooting]] page.
 
 == The image colors do not match what I see in other programs! ImageJ is wrong! ==
 
-In many cases, ImageJ performs autoscaling by default, to improve the contrast of your image. Otherwise, in many cases with scientific images you might see only a black square (see previous question).
-
-You can override the autoscaling using the [http://imagej.net/docs/guide/146-28.html#sub:Adjust Brightness/Contrast] dialog.
-
-It is important to understand that your image is a collection of samples, each of which has a numerical intensity value. The unit of these values is rather arbitrary and unspecified, depending on the type and calibration of your detector. Your file is stored with a certain [http://imagej.net/docs/guide/146-7.html#toc-Section-7 bit depth], meaning these intensities can range from 0 (no light detected) to a particular maximum value (the most light the detector is capable of detecting). For example, 8-bit images have a maximum value of 255, whereas 16-bit images have a maximum of 65535. In practice though, especially with higher bit depths, your detector will not typically record sample intensities across that entire range of values (and if it does record a significant number of values at the maximum, you probably oversaturated your detector, which will skew your analysis!).
-
-Because the full range of values is typically much less than the maximum—e.g., in the case of a 12-bit detector the actual maximum range is 0-4095, and often even smaller in practice—ImageJ performs '''autoscaling''' to show you a meaningful or "pretty good" image by default, which is not just a black square (see previous question). That is: it maps the darkest actual intensity in your data to black, and the brightest actual intensity in your data to white. You can override this mapping using the [http://imagej.net/docs/guide/146-28.html#sub:Adjust Brightness/Contrast] dialog under the ''Image {{arrow}} Adjust'' menu (shortcut: {{Key | shift}}+{{Key | C}}).
-
-Alternately, to disable autoscaling during initial import, you can use the [[Bio-Formats]] plugin to import your data with the "Autoscale" option turned off:
-
-* File {{arrow}} Import {{arrow}} Bio-Formats
-* Choose your file
-* Uncheck the "Autoscale" box
-* Click OK
-* The data will be scaled to match the maximum of the bit depth, rather than autoscaled.
-
-Further reading:
-* [[Image Intensity Processing]]
-* [[IP Principles]]
+See the [[Troubleshooting#The_image_colors_do_not_match_what_I_see_in_other_programs.21_ImageJ_is_wrong.21|Troubleshooting]] page.
 
 = Analysis =
 
 == The same plugin gives different results on different machines! ==
 
-While ImageJ strives for [[reproducible]] analysis, there are many reasons results can differ. Check the following:
-
-* Ensure that the version of [[ImageJ]] is exactly the same on both machines.
-** Click the status bar and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
-** If these two values differ between your machines, the versions are not the same.
-** See also [[Frequently Asked Questions#How can I verify that my ImageJ is really 100% up to date?|How can I verify that my ImageJ is really 100% up to date?]].
-** If the two versions of ImageJ differ and produce different numerical results, it is a bug—please [[Report a Bug|report it]]!
-* Ensure that the ''options'' of ImageJ match between the machines.
-** A fast way to ensure this is the Edit {{arrow}} Options {{arrow}} Reset... command, which resets everything to its default state.
-** Alternately, you can check the settings in the following dialog boxes:
-*** All Edit {{arrow}} Options dialog boxes
-** Process {{arrow}} Binary {{arrow}} Options... – a very common culprit of black-vs.-white issues is the "Black background" option.
-** Process {{arrow}} FFT {{arrow}} FFT Options...
-** Image {{arrow}} Overlay {{arrow}} Overlay Options...
-** Analyze {{arrow}} Gels {{arrow}} Gel Analyzer Options...
-** Press L for the [[Command Finder]] and type "options" and double check any other options you think might be relevant.
-* If you are running your analysis [[headless]], there might be a bug in the headless support.
-** Try the analysis ''headless'' on both machines and see if the results match.
-** Try the analysis ''headless'' vs. through the GUI on a single machine, and see if the results match.
-** If the results differ due to headlessness, it is a bug—please [[Report a Bug|report it]]!
+See the [[Troubleshooting#The_same_plugin_gives_different_results_on_different_machines.21|Troubleshooting]] page.
 
 == How do I apply an operation or macro to multiple images? ==
 
