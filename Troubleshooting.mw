@@ -25,7 +25,7 @@ To diagnose problems with ImageJ, it is often helpful to launch it in debug mode
 </li>
 <li>'''Set <code>scijava.log.level</code>.''' You can control the log level more precisely by setting the <code>scijava.log.level</code> system property. E.g., on Linux:
 <source lang="bash">$HOME/ImageJ.app/ImageJ-linux64 -Dscijava.log.level=trace --</source>
-Valid levels include: <code>none</code>, <code>error</code>, <code>warn</code>, <code>info</code>, <code>debug</code> and <code>trace</code>.
+Valid levels include: <code>none</code>, <code>error</code>, <code>warn</code>, <code>info</code>, <code>debug</code> and <code>trace</code>. See the [[Logging]] page for more about SciJava logging.
 </li>
 </ol>
 
