@@ -161,7 +161,7 @@ This is most likely an AWT issue with Apple's version of Java 6. There is even a
 
 == Why does ImageJ run so slowly? ==
 
-On OS X, older versions of Java 7 and Java 8 (prior to 1.8.0_45) are extremely slow at displaying images. You should either upgrade to the latest version of Java 8, or revert to Java 6.
+On OS X, older versions of Java 7 and Java 8 (prior to 1.8.0_45) are extremely slow at displaying images. You should either [[FAQ#How_do_I_run_ImageJ_on_Yosemite.3F|upgrade to the latest version of Java 8]], or [[FAQ#How_do_I_set_up_Java_6_on_OS_X.3F|revert to Java 6]].
 
 = [[3D Viewer]] issues =
 
