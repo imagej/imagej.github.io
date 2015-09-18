@@ -30,7 +30,7 @@ The source code of ImageJ is very modular; i.e., it is organized into [[Architec
 |-
 | [[File:Fiji-icon.png|28px]]
 | [https://github.com/fiji Fiji]
-| A distribution of ImageJ and plugins supporting life sciences in particular 
+| A "batteries-included" distribution of ImageJ
 |}
 
 See the [[Architecture]] page for more information about the relationship between these projects.
