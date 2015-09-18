@@ -1,39 +1,83 @@
-{{Development}}
+{{Development}}This page provides an introduction to ImageJ as a software developer: how to use it from your programs, as well as how to modify or extend its capabilities via [[plugins]].
 
-== Open source ==
+== What is ImageJ? ==
 
-The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosystem, are [[open source]] software projects.  Everybody is welcome to [[contribute]] with [[plugins]], patches, [[Bugs|bug reports]], [[tutorials]], [[documentation]], and artwork.
-
-The [[SciJava]] ecosystem is strongly committed to [[open source]] software development. But this software is not an [[open source]] software ''product''—it is an [[open source]] software ''project'' following an [[open source]] development ''process''. There are public [[Source Code|source code repositories]], public [[mailing lists]], public [[IRC|chat rooms]], public [[project management]] resources, and of course, this [[Help:Contents|community editable website]]. See the [[Philosophy]] page for more information.
+ImageJ is:
+* An end-user [https://en.wikipedia.org/wiki/Application_software software application]
+* Reusable [https://en.wikipedia.org/wiki/Library_(computing) software libraries]
+* An extensible collection of [[plugins]] and [[services]]
+* "Write once, run anywhere" [[Ops|image processing routines]]
 
 == Project structure ==
 
-The structure of [[ImageJ]], and related projects in the [[SciJava]] software ecosystem, can be conceptualized in several different ways, with each perspective having its own dedicated wiki page:
-{| class="wikitable"
-| '''Page'''
-| '''Perspective'''
-| '''Description'''
+ImageJ is divided into three parts:
+
+{| class="wikitable nicetable"
+! colspan=2 style="font-size: 56px" | [[File:Imagej2-icon.png | x72px | link=ImageJ]] [[ImageJ]]
 |-
-| [[Architecture]]
-| Technical
-| [[ImageJ]] and related [[SciJava]] projects are carefully structured to foster [[extensibility]]. The [[source code]] is on [[GitHub]] across several organizations, structured as [[Maven]] projects.
+| colspan=2 style="text-align: center" | <span style="font-size: large">'''Image-specific components'''</span>
+<ul style="list-style-type: none; padding-top: 0.5em; padding-bottom: 1em">
+<li style="display: inline; background-color: peachpuff; border-radius: 0.5em; margin: 0.5em; padding: 0.5em">[[ImageJ Common]]</li>
+<li style="display: inline; background-color: peachpuff; border-radius: 0.5em; margin: 0.5em; padding: 0.5em">[[ImageJ Ops]]</li>
+<li style="display: inline; background-color: peachpuff; border-radius: 0.5em; margin: 0.5em; padding: 0.5em">[[ImageJ Updater]]</li>
+<li style="display: inline; background-color: peachpuff; border-radius: 0.5em; margin: 0.5em; padding: 0.5em">[[ImageJ Legacy]]</li>
+<li style="display: inline; background-color: peachpuff; border-radius: 0.5em; margin: 0.5em; padding: 0.5em">[[SCIFIO]]</li>
+</ul>
 |-
-| [[Licensing]]
-| Legal
-| [[ImageJ]] and related [[SciJava]] projects are licensed as [[open source]] software (OSS) projects. Most projects use a [[BSD]] style license, though some are [[GPL]].
+! style="font-size: 56px; width: 320px" | [[File:Imglib2-icon.png | x72px | link=ImgLib2]] [[ImgLib2]]
+! style="width: 320px" | [[File:Scijava-logo.png | x72px | link=SciJava]]
 |-
-| [[Governance]]
-| Social
-| Like any OSS project, [[ImageJ]] and [[SciJava]] need leaders: the ones who participate in ''governance'' of the project, [https://en.wikipedia.org/wiki/Software_maintenance maintaining] the software and making key decisions.
+| style="text-align: center; vertical-align: top" | '''Core image data model'''<br>
+<ul style="display: inline-block; text-align: left; padding-top: 0.5em; padding-bottom: 1em">
+<li>Extensible pixel types &ndash; not just uint8, uint16, float32</li>
+<li>Extensible data sources &ndash; not just files on disk</li>
+<li>Extensible sample organizations &ndash; not just arrays</li>
+<li>Extensible dimensionality &ndash; not just X, Y, Z and time</li>
+<li>Interface-driven design</li>
+</ul>
+| style="text-align: center; vertical-align: top" | '''More general than images'''<br>
+<ul style="display: inline-block; text-align: left; padding-top: 0.5em; padding-bottom: 1em">
+<li>Application container</li>
+<li>Plugin framework</li>
+<li>Module framework</li>
+<li>Display and UI frameworks</li>
+<li>Scripting framework and plugins</li>
+</ul>
 |}
+
+For full details on the technical structure of ImageJ, see the [[Architecture]] page.
+
+== Key developer tools ==
+
+There are four key software tools on which ImageJ relies:
+
+{| class="wikitable nicetable"
+| [[File:Git-icon.png | 64px | link=Git]]
+| [[Git]]
+| A [https://en.wikipedia.org/wiki/Distributed_version_control distributed] [https://en.wikipedia.org/wiki/Version_control version control] system.
+|-
+| [[File:Octocat.png | 64px | link=GitHub]]
+| [[GitHub]]
+| A website which hosts all of ImageJ's [[source code]] and [[issues|issue trackers]].
+GitHub is a truly awesome tool for collaboration (i.e., "social coding").
+|-
+| style="vertical-align: middle" | [[File:Maven-icon.png | 64px | link=Maven]]
+| [[Maven]]
+| A [https://en.wikipedia.org/wiki/Build_automation build automation] tool which emphasizes [[Philosophy#Convention_over_configuration|convention over configuration]].
+Maven provides a powerful way of managing dependencies.
+|-
+| [[File:Eclipse-luna-icon.png | 64px | link=Eclipse]]
+| [[Eclipse]]
+| An [[IDE|integrated development environment]] (IDE) used by many ImageJ developers.
+However, ImageJ code can be developed using any IDE which supports [[Maven]].
+|}
+See the [[Project management]] page for further details.
 
 == Source code ==
 
-The source code of [[ImageJ]] and [[SciJava]] is organized into [[Architecture#Modularity|well-separated]] projects. This separation offers many advantages for efficient software development and it is well worth investing a little bit of time to understand. See the [[Source code]] page for further details.
+[[ImageJ]] and related [[SciJava]] software projects are [[open source]]. The code is organized into [[Architecture#Modularity|well-separated]] projects.
 
-== Project management ==
-
-The [[ImageJ]] and related [[SciJava]] projects take advantage of several project management tools, including [[Git]], [[Maven]], [[GitHub]] and [[Jenkins]]. See the [[Project management]] page for details.
+See the [[source code]] page for further details.
 
 == Tutorials ==
 
