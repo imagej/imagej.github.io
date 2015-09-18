@@ -55,6 +55,7 @@ There are four key software tools on which ImageJ relies:
 | [[File:Git-icon.png | 64px | link=Git]]
 | [[Git]]
 | A [https://en.wikipedia.org/wiki/Distributed_version_control distributed] [https://en.wikipedia.org/wiki/Version_control version control] system.
+Git is an indispensable tool, well worth your time to learn.
 |-
 | [[File:Octocat.png | 64px | link=GitHub]]
 | [[GitHub]]
