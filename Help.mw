@@ -11,7 +11,9 @@ There are several popular communication channels:
 
 There is a convenient online search interface:
 
-<div style="font-size: large; font-family: monospace; padding: 0 0 1em 3em">[http://search.imagej.net/ http://search.imagej.net/]</div>
+<div style="font-size: large; font-family: monospace; padding: 0 0 0.5em 3em">[http://search.imagej.net/ http://search.imagej.net/]</div>
+
+See also [[Search Tips]] for some advanced tricks.
 
 = Troubleshooting =
 
