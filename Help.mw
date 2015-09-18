@@ -4,19 +4,8 @@
 
 == Ways to get help ==
 
-{| class="wikitable nicetable"
-| '''[[Mailing Lists]]'''
-| The best way to get help. Thousands of subscribers. Public, archived discussion.
-|-
-| '''[[Chat]]'''
-| You can often find the ImageJ and Fiji developers on real-time [[chat]] services including Gitter and IRC.
-|-
-| '''Stack Overflow'''
-| Some people like to [http://stackoverflow.com/questions/tagged/imagej post about ImageJ on Stack Overflow], a programming Q&A site.
-|-
-| '''Reddit'''
-| Some people like to [https://www.reddit.com/r/ImageJ/ post about ImageJ on Reddit], a community bulletin board.
-|}
+There are several popular communication channels:
+{{Communication}}
 
 = Troubleshooting =
 
