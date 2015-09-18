@@ -7,6 +7,12 @@
 There are several popular communication channels:
 {{Communication}}
 
+== Searching online resources ==
+
+There is a convenient online search interface:
+
+<div style="font-size: large; font-family: monospace; padding-left: 3em">[http://search.imagej.net/ http://search.imagej.net/]</div>
+
 = Troubleshooting =
 
 If you encounter problems, check the [[Troubleshooting]] page. If you have found a bug, you can help the project by [[Report a Bug|reporting it]].
