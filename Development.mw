@@ -37,7 +37,7 @@ The [[ImageJ]] and related [[SciJava]] projects take advantage of several projec
 
 == Tutorials ==
 
-{|
+{| class="wikitable nicetable"
 | '''Learning the ImageJ API'''
 | '''ImageJ plugins'''
 | '''The Fiji distribution of ImageJ'''
