@@ -2,11 +2,25 @@
 
 == What is ImageJ? ==
 
-ImageJ is:
-* An end-user [https://en.wikipedia.org/wiki/Application_software software application]
-* Reusable [https://en.wikipedia.org/wiki/Library_(computing) software libraries]
-* An extensible collection of [[plugins]] and [[services]]
-* "Write once, run anywhere" [[Ops|image processing routines]]
+{| style="text-align: center"
+| style="padding-top: 2.5em; vertical-align: top" | An end-user<br>[https://en.wikipedia.org/wiki/Application_software software application]
+| [[File:Imagej-app.png | 500px | link=Getting started]]
+|-
+| style="vertical-align: middle" | Reusable<br>[https://en.wikipedia.org/wiki/Library_(computing) software libraries]
+| <source lang="java">
+public void loadAndDisplay(File file) {
+	ImageJ ij = new ImageJ();
+	Object data = ij.io().open(file);
+	ij.ui().show(data);
+}
+</source>
+|-
+| style="vertical-align: middle" | An extensible collection<br>of [[plugins]] and [[services]]
+| [[File:Scijava-logo.png | x72px | link=SciJava]]
+|-
+| style="vertical-align: middle" | "Write once, run anywhere"<br>[[Ops|image processing routines]]
+| [[File:Write-once-run-anywhere.png | 500px | link=Ops]]
+|}
 
 == Project structure ==
 
