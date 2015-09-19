@@ -3,7 +3,7 @@
 
 == How to find which commit introduced a regression ==
 
-So you found a regression?  I.e. you know that the version worked perfectly that you had yesterday of, say, the [[ImageJ Launcher]], but today it crashes?
+So you found a regression?  I.e. you know that the version worked perfectly that you had yesterday of, say, the [[ImageJ Ops]] library, but today it crashes?
 
 Git-bisect to the rescue!
 
@@ -15,13 +15,13 @@ git bisect good HEAD@{yesterday}
 
 This will start the bisection process, i.e. it will try to find a revision that is as much "in the middle" between the bad commit(s) and the good commit(s) (you will mark more and more commits as good or bad in the process, and by inference, the ancestors of good commits will be considered good, and the offspring of bad commits will be considered bad, too), and let you test that.
 
-In our case, let's just test the Fiji launcher:
+In our case, let's just run the unit tests:
 
 <source lang="bash">
-./Build.sh fiji && ./fiji
+mvn clean test
 </source>
 
-If the test is undecided (for example, it does not compile at all), mark it with
+If the test is undecided (e.g.: it does not compile, so you do not know if the unit test in question passes), mark it with
 
 <source lang="bash">
 git bisect skip
