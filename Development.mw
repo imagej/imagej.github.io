@@ -27,7 +27,7 @@ ImageJ is divided into three parts:
 ! style="font-size: 56px; width: 320px" | [[File:Imglib2-icon.png | x72px | link=ImgLib2]] [[ImgLib2]]
 ! style="width: 320px" | [[File:Scijava-logo.png | x72px | link=SciJava]]
 |-
-| style="text-align: center; vertical-align: top" | '''Core image data model'''<br>
+| style="text-align: center; vertical-align: top" | <span style="font-size: large">'''Core image data model'''</span><br>
 <ul style="display: inline-block; text-align: left; padding-top: 0.5em; padding-bottom: 1em">
 <li>Extensible pixel types &ndash; not just uint8, uint16, float32</li>
 <li>Extensible data sources &ndash; not just files on disk</li>
@@ -35,7 +35,7 @@ ImageJ is divided into three parts:
 <li>Extensible dimensionality &ndash; not just X, Y, Z and time</li>
 <li>Interface-driven design</li>
 </ul>
-| style="text-align: center; vertical-align: top" | '''More general than images'''<br>
+| style="text-align: center; vertical-align: top" | <span style="font-size: large">'''More general than images'''</span><br>
 <ul style="display: inline-block; text-align: left; padding-top: 0.5em; padding-bottom: 1em">
 <li>Application container</li>
 <li>Plugin framework</li>
