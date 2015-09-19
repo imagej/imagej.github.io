@@ -15,7 +15,7 @@ ImageJ provides:
 * An extension mechanism including support for [[plugins]] and [[macros]].
 * A vibrant, diverse, and helpful user [[community]] that gives rise to insightful scientific exchanges.
 
-ImageJ's [[extensibility]] is the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather are [[plugins]] written by specialists in the corresponding fields, made available via [[update sites]].
+ImageJ's [[extensibility]] is the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather are [[plugins]] written by specialists in specific fields, made available via [[update sites]].
 
 == How do I get started? ==
 
