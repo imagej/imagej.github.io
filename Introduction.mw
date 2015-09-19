@@ -1,6 +1,10 @@
 == What is ImageJ? ==
 
-ImageJ is an [[open source]] image processing program for multidimensional image data with a focus on scientific imaging.
+ImageJ is an [[open source]] [[techniques|image processing]] program for multidimensional image data with a focus on scientific imaging.
+
+== What is Fiji? ==
+
+[[Fiji|<span style="color: darkcyan; font-size: large; font-weight: bold">F</span>iji <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>s <span style="color: darkcyan; font-size: large; font-weight: bold">J</span>ust <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>mageJ]]—a "batteries-included" distribution of ImageJ which includes many useful [[plugins]] [[Fiji_contribution_requirements|contributed by the community]].
 
 == What can ImageJ do? ==
 
