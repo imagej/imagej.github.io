@@ -49,7 +49,7 @@ For full details on the technical structure of ImageJ, see the [[Architecture]] 
 
 == Key developer tools ==
 
-There are four key software tools on which ImageJ relies:
+There are four key software development tools on which ImageJ relies:
 
 {| class="wikitable nicetable"
 | [[File:Git-icon.png | 64px | link=Git]]
