@@ -49,28 +49,29 @@ For full details on the technical structure of ImageJ, see the [[Architecture]] 
 
 == Key developer tools ==
 
-There are four key software development tools on which ImageJ relies:
+There are four indispensable software development tools on which ImageJ relies:
 
 {| class="wikitable nicetable"
 | [[File:Git-icon.png | 64px | link=Git]]
 | [[Git]]
-| A [https://en.wikipedia.org/wiki/Distributed_version_control distributed] [https://en.wikipedia.org/wiki/Version_control version control] system.
-Git is an indispensable tool, well worth your time to learn.
+| A first-class [https://en.wikipedia.org/wiki/Distributed_version_control distributed] [https://en.wikipedia.org/wiki/Version_control version control] system.
+Git saves "snapshots" of the source code, keeping a history of changes.
 |-
 | [[File:Octocat.png | 64px | link=GitHub]]
 | [[GitHub]]
 | A website which hosts all of ImageJ's [[source code]] and [[issues|issue trackers]].
-GitHub is a truly awesome tool for collaboration (i.e., "social coding").
+GitHub is ImageJ's nexus of online collaboration (i.e., "social coding").
 |-
 | style="vertical-align: middle" | [[File:Maven-icon.png | 64px | link=Maven]]
 | [[Maven]]
 | A [https://en.wikipedia.org/wiki/Build_automation build automation] tool which emphasizes [[Philosophy#Convention_over_configuration|convention over configuration]].
-Maven provides a powerful way of managing dependencies.
+Maven builds the code and manages its dependencies.
 |-
 | [[File:Eclipse-luna-icon.png | 64px | link=Eclipse]]
 | [[Eclipse]]
 | An [[IDE|integrated development environment]] (IDE) used by many ImageJ developers.
-However, ImageJ code can be developed using any IDE which supports [[Maven]].
+Eclipse makes it much easier to explore and edit the source code.<br>
+Although: ImageJ can be developed using ''any'' IDE which supports [[Maven]].
 |}
 See the [[Project management]] page for further details.
 
