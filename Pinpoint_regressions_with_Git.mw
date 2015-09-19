@@ -3,7 +3,7 @@
 
 == How to find which commit introduced a regression ==
 
-So you found a regression?  I.e. you know that the version worked perfectly that you had yesterday of, say, the [[Fiji Launcher]], but today it crashes?
+So you found a regression?  I.e. you know that the version worked perfectly that you had yesterday of, say, the [[ImageJ Launcher]], but today it crashes?
 
 Git-bisect to the rescue!
 
@@ -79,7 +79,7 @@ After that, you can get rid of the now-obsolete tag:
 git tag -d my-fix
 </source>
 
-Note: instead of using a temporary tag, you can use the [[Git_reflogs|reflog]] of the HEAD ref ("git cherry-pick HEAD@{1}"), but if you are not familiar with the concept, tags are probably easier to handle.
+Note: instead of using a temporary tag, you can use the [[Git_reflogs|reflog]] of the HEAD ref (<code>git cherry-pick HEAD@{1}</code>), but if you are not familiar with the concept, tags are probably easier to handle.
 
 = See also =
 
