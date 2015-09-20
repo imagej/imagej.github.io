@@ -18,7 +18,7 @@ public void loadAndDisplay(File file) {
 </source>
 |-
 | style="vertical-align: middle" | An extensible collection<br>of [[plugins]] and [[services]]
-| [[File:Scijava-logo.png | x72px | link=SciJava]]
+| style="padding-bottom: 1em; padding-top; 1em" | [[File:Scijava-logo.png | x72px | link=SciJava]]
 |-
 | style="vertical-align: middle" | "Write once, run anywhere"<br>[[Ops|image processing routines]]
 | [[File:Write-once-run-anywhere.png | 500px | link=Ops]]
