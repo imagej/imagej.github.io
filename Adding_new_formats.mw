@@ -1,4 +1,4 @@
-{{Development | plugins}}
+{{Development | tutorials}}
 
 Before an image can be analyzed, it needs to be opened properly. The way scientific image data can be stored varies wildly - with custom formats as numerous as the different brands and models of instruments used in their acquisition. Therefore, supporting a wide variety of formats is critical to the success of an image analysis platform like ImageJ.{{ImageJ1 | With [[ImageJ 1.x]], a special [http://imagej.net/plugins/file-handler.html HandleExtraFileTypes] plugin exists that can be modified to support for new data formats—but it has some significant disadvantages:
 
