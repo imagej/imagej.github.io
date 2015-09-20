@@ -1,35 +1,18 @@
-{{Development | git}}
-==Source Code Management==
+{{Development | tools}}
+{{Notice | If Git is completely new to you, read:
+* [http://try.github.com/ TryGit 15-minute interactive tutorial]
+* [http://pcottle.github.io/learnGitBranching/ Learn Git Branching interactive tutorial]
+* [[Git for dummies]] tutorial on this wiki
+}}
 
-Development of ImageJ and related software relies heavily on [http://git-scm.com/ Git].
+Development of ImageJ and related software relies heavily on [http://git-scm.com/ Git], a first-class [https://en.wikipedia.org/wiki/Distributed_version_control distributed] [https://en.wikipedia.org/wiki/Version_control version control] system. Git saves "snapshots" of the source code, keeping a history of changes.
 
-If you do not know what Git is, you really want to take [http://try.github.com/levels/1/challenges/1 GitHub's 15-minute interactive tutorial]. Or follow [http://pcottle.github.io/learnGitBranching/ Peter Cottle's excellent introduction into Git branching]. Or you may want to have a look at our [[Git for dummies|real concise introduction to Git]] predating GitHub's awesome tutorial.
+See the [[source code]] page for information on where the Git repositories reside.
 
-=== Git repositories ===
+== Git tutorials ==
 
-The Git repositories for ImageJ and related software can be found on GitHub, in the following organizations:
-* [https://github.com/imagej imagej]
-* [https://github.com/fiji fiji]
-* [https://github.com/imglib imglib]
-* [https://github.com/scifio scifio]
-* [https://github.com/scijava scijava]
+<div style="float: left; padding-right: 20px">{{Git}}</div>
+This wiki has lots of tutorials on Git; see the left sidebar.
 
-The Git repositories can be accessed anonymously, via URLs such as '''git://github.com/imagej/imagej'''.
-
-=== Further documentation ===
-
-Some useful documentation:
-
-* [[Git_mini_howto|A really quick 'n dirty HOWTO]]
-* [http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html How to write good commit messages]
-* [[Git_topic_branches|Working with topic branches]]
-* [[Git_Conflicts|Description of merge conflicts and how to resolve them]]
-* [[Git_reflogs|A quick introduction into "Git refs"]]
-* [[Git_submodule_tutorial|A tutorial on submodules]]
-* [[Git_bisection|How to find which commit introduced a regression]]
-* [[SSH_public_keys|Setting up password-less SSH login]]
-* [[Coding style#SCM_history|Best practices established by the ImageJ2 project]]
-* [[Git_Notes|A cheat sheet on Git usage]]
-* [[Git_for_dummies|Git recipes from Pavel so that he doesn't have to ask again]]
-
+[[Category:Development]]
 [[Category:Git]]
