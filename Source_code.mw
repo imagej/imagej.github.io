@@ -35,6 +35,10 @@ The source code of ImageJ is very modular; i.e., it is organized into [[Architec
 
 See the [[Architecture]] page for more information about the relationship between these projects.
 
+== What is the license? ==
+
+Most is [[BSD-2]] (permissive); some is [[GPL]] (copyleft). See the [[Licensing]] page.
+
 == Building from source ==
 
 Virtually all of these repositories have a top-level <code>pom.xml</code> file, identifying them as [[Maven]] projects.
