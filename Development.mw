@@ -87,7 +87,7 @@ Maven builds the code and manages its dependencies.
 | [[Eclipse]]
 | An [[IDE|integrated development environment]] (IDE) used by many ImageJ developers.
 Eclipse makes it much easier to explore and edit the source code.<br>
-Although: ImageJ can be developed using ''any'' IDE which supports [[Maven]].
+Although: ImageJ can be developed using [[IDEs|''any'' IDE]] which supports [[Maven]].
 |}
 See the [[Project management]] page for further details.
 
