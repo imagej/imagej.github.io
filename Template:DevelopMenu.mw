@@ -5,7 +5,6 @@
 {{Submenu | Topics |
 {{MenuItem | [[Philosophy]] }}
 {{MenuItem | [[Architecture]] }}
-{{MenuItem | [[Versioning]] }}
 {{MenuItem | [[Extensibility]] }}
 {{MenuItem | [[Source code]] }}
 {{MenuItem | [[Project management]] }}
@@ -26,11 +25,12 @@
 {{Submenu | Tutorials |
 {{MenuItem | [[Writing plugins]] }}
 {{MenuItem | [[How_to_contribute_to_an_existing_plugin_or_library|Contributing to a plugin]] }}
-{{MenuItem | [[Adding_new_ops|Adding new Ops]] }}
-{{MenuItem | [[Adding_new_file_formats|Adding new formats]] }}
 {{MenuItem | [[Distribution|Distributing your plugins]] }}
 {{MenuItem | [[Introduction_into_Developing_Plugins|ImageJ 1.x plugins]] }}
+{{MenuItem | [[Adding_new_ops|Adding new ops]] }}
+{{MenuItem | [[Adding_new_file_formats|Adding new formats]] }}
 {{MenuItem | [[Developing using native libraries|Using native libraries]] }}
+{{MenuItem | [[Versioning]] }}
 {{MenuItem | [[Logging]] }}
 | {{#ifeq:{{{1}}}|tutorials||collapsed}}
 }}
