@@ -43,7 +43,7 @@ Let's assume that you want to provide a fix for a vexing bug in one of your favo
 
 == Testing Pull Requests before merging them ==
 
-GitHub makes it very, very easy to merge Pull Requests simply by hitting a button. Of course you should review the changes before you do so: remember that the quality of Open Source is high only because many developers throw their cumulative expertise together to make something that is better than each individual developer could have developed on their own.
+GitHub makes it very, very easy to merge Pull Requests simply by hitting a button. Of course you should review the changes before you do so: remember that the quality of open-source software is high only because many developers throw their cumulative expertise together to make something that is better than each individual developer could have developed on their own.
 
 You might even want to test the code locally before merging. This is really easy because GitHub provides not only the test whether a Pull Request can be merged cleanly, but it also offers the revision in the form of the <code>refs/pull/<ID>/merge</code> pseudo branches.
 
