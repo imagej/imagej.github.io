@@ -2,7 +2,7 @@
 {{Notice | If Git is completely new to you, read:
 * [https://try.github.io/ TryGit 15-minute interactive tutorial]
 * [http://pcottle.github.io/learnGitBranching/ Learn Git Branching interactive tutorial]
-* [[Git for dummies]] tutorial on this wiki
+* [[Git for dummies]] tutorial on this web site
 }}
 
 Development of ImageJ and related software relies heavily on [http://git-scm.com/ Git], a first-class [https://en.wikipedia.org/wiki/Distributed_version_control distributed] [https://en.wikipedia.org/wiki/Version_control version control] system. Git saves "snapshots" of the source code, keeping a history of changes.
@@ -12,7 +12,7 @@ See the [[source code]] page for information on where the Git repositories resid
 == Git tutorials ==
 
 <div style="float: left; padding-right: 20px">{{Git}}</div>
-This wiki has lots of tutorials on Git; see the left sidebar.
+This web site has lots of tutorials on Git; see the left sidebar.
 
 [[Category:Development]]
 [[Category:Git]]
