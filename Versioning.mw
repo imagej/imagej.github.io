@@ -65,7 +65,9 @@ Furthermore, SciJava projects typically accompany interfaces with a correspondin
 
 == Melting pot ==
 
-Because there are limitations in what SemVer can be used to reason about, applications may also wish to provide a "melting pot"—for a qualitative, [http://sentimentalversioning.org/ sentimental], high-level assessment of compatibility. Such a project does not yet exist for the SciJava software stack, but is planned for the future.
+Because there are limitations in what SemVer can be used to reason about, applications may also wish to provide a "melting pot" for a high-level assessment of compatibility.
+
+The SciJava software stack uses a [https://github.com/scijava/scijava-scripts/blob/d892adc0092c220ee1e597b9fb5a1fb067e4509b/melting-pot.sh melting pot script] to test components from its lowest-level libraries ([[SciJava Common]], [[ImgLib2]]) to its topmost applications ([[ImageJ]] and [[Fiji]]).
 
 == Is SemVer transitive? ==
 
