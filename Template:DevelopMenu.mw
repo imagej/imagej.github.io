@@ -39,21 +39,12 @@
 | {{#ifeq:{{{1}}}|plugins||collapsed}}
 }}
 
-{{Submenu | Using Git |
-{{MenuItem | [[Git|Overview]] }}
-{{MenuItem | [[Git for dummies]] }}
-{{MenuItem | [[Git mini howto]] }}
-{{MenuItem | [[Git workshop]] }}
-{{MenuItem | [[Git Conflicts]] }}
-{{MenuItem | [[Git topic branches]] }}
-{{MenuItem | [[Git Notes]] }}
-{{MenuItem | [[Git reflogs]] }}
-{{MenuItem | [[Git submodule tutorial]] }}
-{{MenuItem | [[Pinpoint regressions with Git]] }}
-{{MenuItem | [[How to publish a Git repository]] }}
-{{MenuItem | [[How to extract a subproject]] }}
-{{MenuItem | [[GitHub Tricks]] }}
-| {{#ifeq:{{{1}}}|git||collapsed}}
+{{Submenu | Tools |
+{{MenuItem | [[Git]] }}
+{{MenuItem | [[GitHub]] }}
+{{MenuItem | [[Maven]] }}
+{{MenuItem | [[IDEs]] }}
+| {{#ifeq:{{{1}}}|tools||collapsed}}
 }}
 
 {{Submenu | Fiji |
