@@ -61,3 +61,6 @@ If there are non-compiling components outside of ''core'' and ''ui'', you can te
 # Choose Run &gt; Run 'ImageJ' from the menu
  
 The project automatically builds before launching, so it may take a little while the first time.
+
+[[Category:Development]]
+[[Category:IDEs]]
