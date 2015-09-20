@@ -43,3 +43,6 @@ mvn -Dimagej.ui=awt -Pexec
 mvn -Dimagej.ui=pivot -Pexec
 mvn -Dimagej.ui=swt -Pexec
 </source>
+
+[[Category:Development]]
+[[Category:IDEs]]
