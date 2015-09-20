@@ -32,7 +32,7 @@
 {{MenuItem | [[Introduction_into_Developing_Plugins|ImageJ 1.x plugins]] }}
 {{MenuItem | [[Developing using native libraries|Using native libraries]] }}
 {{MenuItem | [[Logging]] }}
-| {{#ifeq:{{{1}}}|plugins||collapsed}}
+| {{#ifeq:{{{1}}}|tutorials||collapsed}}
 }}
 
 {{Submenu | Fiji |
