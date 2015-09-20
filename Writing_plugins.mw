@@ -1,4 +1,4 @@
-{{Development | plugins}}
+{{Development | tutorials}}
 == Writing an ImageJ2 command ==
 
 The {{GitHub|org=imagej|repo=imagej-tutorials|label=ImageJ Tutorials}} project is designed to get you started writing ImageJ2 components.
