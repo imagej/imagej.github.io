@@ -114,6 +114,7 @@ See the [[source code]] page for further details.
 * [[Distribution|Distributing your plugin]]
 | style="vertical-align: top" |
 * [[Developing Fiji]]
+* [[Developing Fiji in Eclipse | Fiji + Eclipse]]
 * [[Fiji contribution requirements]]
 * [[Supported Compilers]]
 |}
