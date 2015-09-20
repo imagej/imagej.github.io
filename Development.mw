@@ -1,4 +1,4 @@
-{{Development}}This page provides an introduction to ImageJ as a software developer: how to use it from your programs, as well as how to modify or extend its capabilities via [[plugins]].
+{{Development}}This page provides an overview of ImageJ from the perspective of software development: how to use it from your programs, as well as how to modify or extend its capabilities via [[plugins]].
 
 == What is ImageJ? ==
 
