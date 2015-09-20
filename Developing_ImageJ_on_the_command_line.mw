@@ -9,10 +9,11 @@ This article explains how to install and configure command line tools for use wi
 Or you could try using [https://chocolatey.org/ Chocolatey]. We also heartily recommend installing [https://www.cygwin.com/ Cygwin].
 
 === Setting up command line tools on Mac OS X ===
-Install the tools using [http://brew.sh/ Homebrew]:
+Install [[Git]] and [[Maven]] using [http://brew.sh/ Homebrew]:
 <source lang="bash">
 brew install git maven bash-completion
 </source>
+Download and install [http://www.oracle.com/technetwork/java/javase/downloads/ Java SE] from Oracle.
 
 === Setting up command line tools on Ubuntu ===
 <source lang="bash">
