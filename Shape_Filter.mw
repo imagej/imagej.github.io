@@ -5,7 +5,7 @@
 | maintainer             = Thorsten Wagner (wagner@biomedical-imaging.de)
 | filename               = shape_filter_x.y.z.jar [https://github.com/thorstenwagner/ij-shape-filter/releases/latest [1]]
 | source                 = Github [https://github.com/thorstenwagner/ij-shape-filter [2]]
-| latest version         = v1.3.0 (16 Jul 2015)
+| latest version         = v1.4.0 (21 Sep 2015)
 | status                 = active 
 
 }}
@@ -22,6 +22,7 @@ The ImageJ Shape Filter Plugin uses the [https://github.com/thorstenwagner/ij-bl
 * '''Perimeter Convex Hull''' (<math>H</math>): The perimeter of the convex hull of the particle.
 * '''Feret Diameter''': The maximum distance between the two parallel tangents touching the particle outline in all directions.
 * '''Min. Feret Diameter''': the minimum distance between the two parallel tangents touching the particle outline in all directions.
+* '''Max. Inscr. Circle Diameter''': The diameter of the maximum inscribed circle.
 * '''Long Side Minimum Bounding Rectangle''': The larger side of the minimum bounding rectangle.
 * '''Short Side Minimum Bounding Rectangle''': The smaller side of the minimum bounding rectangle.
 * '''Aspect Ratio''': Defined as <math>L/S</math>
@@ -33,6 +34,7 @@ The ImageJ Shape Filter Plugin uses the [https://github.com/thorstenwagner/ij-bl
 * '''Number of Holes''': The number of holes inside an object.
 * '''Thinnes Ratio''': Inverse proportional to the circularity. Furthermore it normed. It is defined as <math>4\pi A/P^{2}</math>
 * '''Contour Temperatur''': It has a strong relationship to the fractal dimension, defined as <math>\left(log_{2}\left(\frac{2P}{P-H}\right)\right)^{-1}</math>
+* '''Orientation''': The orientation of the major axis from in grad (measured counter clockwise from the positive x axis).
 * '''Fractal Box Dimension''': Estimated fractal dimension by the box count algorithm. The default box-sizes are “2,3,4,6,8,12,16,32,64”.
 
 =Installation=
