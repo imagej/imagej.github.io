@@ -87,22 +87,24 @@ Please see the [[Colocalization Analysis]] page for further discussion of precau
 == Newly added features and squashed bugs ==
 The definitive list of new features and fixes is the source code history as shown by the GIT history here: https://github.com/fiji/Colocalisation_Analysis/commits/master
 This is just an easy to check, casual list for users, and might not be up to date. 
-These might not yet all be in the version of the Coloc_2 plugin released into the imageJ/Fiji updater; you can see that version listed in the command finder in the file column. 
-
-# 27-Jan-2015 commit 863fdbeaf7785759ed1c8e9357b7dd67f6d79996 Implement  implement code to make sure autothreshold results are the same regardless of image channel order. A slightly earlier commit also added a unit test for this: CommutativityTest.java
+These might not yet all be in the version of the Coloc_2 plugin released into the imageJ/Fiji updater; you can see that version listed in the command finder in the file column. Latest released into Fiji updater versions are tagged as releases on GITHUB, eg. https://github.com/fiji/Colocalisation_Analysis/releases 
 
 # Version 2.0.2 in Fiji updater -  26.Feb.2015
+## 27-Jan-2015 commit 863fdbeaf7785759ed1c8e9357b7dd67f6d79996 Implement  implement code to make sure autothreshold results are the same regardless of image channel order. A slightly earlier commit also added a unit test for this: CommutativityTest.java
 
-New after version 2.0.2, hopefully going into version 2.1.1:
-# 08-2015 Fix bug in Manders' split coefficient calculations when using thresholds. https://github.com/fiji/Colocalisation_Analysis/commit/e4a3a6ec36e0e878d40e1b1114f68deaccd41cde
-# 08-2015 Fixed in fiji master github repo by commit https://github.com/fiji/Colocalisation_Analysis/commit/492b846c032bd85651ffce7b52c96b3520eff6bb:
-## if 2D histogram regression finds a y intercept that is below zero it gives the too high warning "Warning! y-intercept high - The absolute y-intercept of the auto threshold regression line is high. Maybe you should use a ROI, maybe do a background subtraction in both channels" So should change warning text to too high or too low depending on if its positive or negative.
-# 08-2015 Fixed in fiji master github repo by commit https://github.com/fiji/Colocalisation_Analysis/commit/4cfc8861f05f277075c3fb7881ebf0d7e54c67c3:
-## Numerical results and image stats are currently spewed into the IJ.log window. This is done separately from the way results are put into the simple results display window or the PDF output. So there three differently formatted results outputs with different stuff in them. Different ResultsHandler implementations like PDF or Simple can and do show a different selection of results. This is over complicated, so it should be made into one thing, that outputs the same numerical results and stats values, in the same order in all ResultsHander implementations: GUI display and PDF output, and also the IJ.log. Can reuse the ValueResults class for all three by doing the same thing in each. 
-### commit https://github.com/fiji/Colocalisation_Analysis/commit/a493b2c88a14f4f6403451aeee6989bf7a2becfb Make IJ.log writing only happen once and only in the default ResultHandler that's always used. 
-### commits https://github.com/fiji/Colocalisation_Analysis/commit/e833597d7d8a7b4d3db747512f6048d67d61d120 and https://github.com/fiji/Colocalisation_Analysis/commit/75184e88cd6c1e0914ec87caebe97494002bcd4e Get the Coloc job name from the DataContainer image names, and also add the mark/ROI ID to the job name in case there are multiple ROIs. 
-# 08-2015 Fixed in fiji master github repo commit https://github.com/fiji/Colocalisation_Analysis/commit/6318f0f29ba6fd938674225a43cdba4c0909acc6:
-## Running as imageJ macro command fails because of the parameter: show_"save_pdf"_dialog. Probably the "" are messing up the run(Coloc_2, "params"); text string parameters. So need to get rid of the "" around save_pdf.
+# Version 2.1.0 in Fiji updater - 02.Sep.2015
+## 08-2015 Fix bug in Manders' split coefficient calculations when using thresholds. https://github.com/fiji/Colocalisation_Analysis/commit/e4a3a6ec36e0e878d40e1b1114f68deaccd41cde
+## 08-2015 Fixed in fiji master github repo by commit https://github.com/fiji/Colocalisation_Analysis/commit/492b846c032bd85651ffce7b52c96b3520eff6bb:
+### if 2D histogram regression finds a y intercept that is below zero it gives the too high warning "Warning! y-intercept high - The absolute y-intercept of the auto threshold regression line is high. Maybe you should use a ROI, maybe do a background subtraction in both channels" So should change warning text to too high or too low depending on if its positive or negative.
+## 08-2015 Fixed in fiji master github repo by commit https://github.com/fiji/Colocalisation_Analysis/commit/4cfc8861f05f277075c3fb7881ebf0d7e54c67c3:
+### Numerical results and image stats are currently spewed into the IJ.log window. This is done separately from the way results are put into the simple results display window or the PDF output. So there three differently formatted results outputs with different stuff in them. Different ResultsHandler implementations like PDF or Simple can and do show a different selection of results. This is over complicated, so it should be made into one thing, that outputs the same numerical results and stats values, in the same order in all ResultsHander implementations: GUI display and PDF output, and also the IJ.log. Can reuse the ValueResults class for all three by doing the same thing in each. 
+#### commit https://github.com/fiji/Colocalisation_Analysis/commit/a493b2c88a14f4f6403451aeee6989bf7a2becfb Make IJ.log writing only happen once and only in the default ResultHandler that's always used. 
+#### commits https://github.com/fiji/Colocalisation_Analysis/commit/e833597d7d8a7b4d3db747512f6048d67d61d120 and https://github.com/fiji/Colocalisation_Analysis/commit/75184e88cd6c1e0914ec87caebe97494002bcd4e Get the Coloc job name from the DataContainer image names, and also add the mark/ROI ID to the job name in case there are multiple ROIs. 
+## 08-2015 Fixed in fiji master github repo commit https://github.com/fiji/Colocalisation_Analysis/commit/6318f0f29ba6fd938674225a43cdba4c0909acc6:
+### Running as imageJ macro command fails because of the parameter: show_"save_pdf"_dialog. Probably the "" are messing up the run(Coloc_2, "params"); text string parameters. So need to get rid of the "" around save_pdf.
+
+# After version 2.1.0
+## 09-2015 Fixed in fiji master github repo commit: Coloc Job filed and result nanme in output fixed to be more sensible formatting, with a label and a value like all other results
 
 == Ideas List ==
 
