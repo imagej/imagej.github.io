@@ -914,7 +914,7 @@ h1 {
 /* Beautiful buttons, using http://cssgradientbutton.com/ */
 
 .button-red a {
-width: 15em; text-align: center; padding: 0.5em;
+width: 15em; font-size: large; text-align: center; margin: 0.5em; padding: 0.5em;
 border:1px solid #ff6262; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
 background-color: #ff9a9a; background-image: -webkit-gradient(linear, left top, left bottom, from(#ff9a9a), to(#ff4040));
 background-image: -webkit-linear-gradient(top, #ff9a9a, #ff4040);
@@ -935,7 +935,7 @@ background-image: linear-gradient(to bottom, #ff6767, #ff0d0d);filter:progid:DXI
 }
 
 .button-green a {
-width: 15em; text-align: center; padding: 0.5em;
+width: 15em; font-size: large; text-align: center; margin: 0.5em; padding: 0.5em;
 border:1px solid #34740e; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
 background-color: #4ba614; background-image: -webkit-gradient(linear, left top, left bottom, from(#4ba614), to(#008c00));
 background-image: -webkit-linear-gradient(top, #4ba614, #008c00);
@@ -956,7 +956,7 @@ background-image: linear-gradient(to bottom, #36780f, #005900);filter:progid:DXI
 }
 
 .button-blue a {
-width: 15em; text-align: center; padding: 0.5em;
+width: 15em; font-size: large; text-align: center; margin: 0.5em; padding: 0.5em;
 border:1px solid #25729a; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
 background-color: #3093c7; background-image: -webkit-gradient(linear, left top, left bottom, from(#3093c7), to(#1c5a85));
 background-image: -webkit-linear-gradient(top, #3093c7, #1c5a85);
