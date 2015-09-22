@@ -14,8 +14,8 @@
 }}
 
 {{Submenu | Tools |
-{{MenuItem | [[Git]] }}
 {{MenuItem | [[GitHub]] }}
+{{MenuItem | [[Git]] }}
 {{MenuItem | [[Maven]] }}
 {{MenuItem | [[IDEs]] }}
 | {{#ifeq:{{{1}}}|tools||collapsed}}
