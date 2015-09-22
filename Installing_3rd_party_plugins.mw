@@ -1,6 +1,6 @@
 ==For users==
 
-* If the plugin is published on an [[Update Sites|ImageJ update site]], you can run ''Help {{arrow}} Update'' then click the ''Manage update sites'' button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
+* If the plugin is published on an [[Update Sites|ImageJ update site]], you can run {{bc | Help | Update}} then click the ''Manage update sites'' button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.
 
 * Otherwise, you can just drag 'n drop the plugin .jar file (from the Explorer, Finder or any file browser) into the plugins directory:
 
@@ -8,13 +8,13 @@
 
 : This will ask you for the <u>destination</u> of the plugin, just hitting ''Save'' is safe.
 
-* Alternatively, use ''Plugins {{arrow}} Install Plugin...'':
+* Alternatively, use {{bc | Plugins | Install Plugin...}}:
 
 : [[Image:Install-Plugin.png|550px]]
 
 : It will ask you for the file name of the plugin, and install the given file.
 
-* You can also copy the ''.jar'', ''.class'' or ''.java'' files (or a script in any language Fiji supports) to ''Fiji.app/plugins/'', followed by calling ''Help {{arrow}} Refresh Menus''.
+* You can also copy the ''.jar'', ''.class'' or ''.java'' files (or a script in any language Fiji supports) to ''Fiji.app/plugins/'', followed by calling {{bc | Help | Refresh Menus}}.
 
 : '''Note:''' On MacOSX, you need to {{key|Ctrl}}+{{key|click}} on the ''Fiji'' icon in the Finder and select ''Show package contents'' to see the ''plugins/'' folder.
 
