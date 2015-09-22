@@ -24,13 +24,13 @@ Also, if you look carefully, you will see that there are two splitting events - 
 
 [[Image:TrackMate MainButtons.png|right|border|]]
 
-With this image selected, launch TrackMate from the menu ''Plugins {{arrow}} Tracking {{arrow}} TrackMate'' or from the [[Using the Command Launcher|Command launcher]]. The TrackMate GUI appears next to the image, displaying the starting dialog panel.
+With this image selected, launch TrackMate from the menu {{bc | Plugins | Tracking | TrackMate}} or from the [[Using the Command Launcher|Command launcher]]. The TrackMate GUI appears next to the image, displaying the starting dialog panel.
 
 But first, just a few words about its look. The user interface is a single frame - that can be resized - divided in a main panel, that displays context-dependent dialogs, and a permanent bottom panel containing  the four main buttons depicted on the right. 
 
 The '''Next''' button allows to step through the tracking process. It might be disabled depending on the current panel content. For instance, if you do not select a valid image in the first panel, it will be disabled. The '''Previous''' button steps back in the process, without executing actions. For instance, if you go back on the segmentation panel, segmentation will not be re-executed. 
 
-The '''Save''' button creates a XML file that contains all of the data you generated at the moment you click it. Since you can save at any time, the resulting file might miss tracks, spots, etc... You can load the saved file using the menu item ''Plugins {{arrow}} Tracking {{arrow}} Load a TrackMate file''. It will restore the session just where you saved it.
+The '''Save''' button creates a XML file that contains all of the data you generated at the moment you click it. Since you can save at any time, the resulting file might miss tracks, spots, etc... You can load the saved file using the menu item {{bc | Plugins | Tracking | Load a TrackMate file}}. It will restore the session just where you saved it.
 
 Now is a good time to speak strategy when it comes to saving/restoring. You can save at anytime in TrackMate. If you save just before the tracking process, you will be taken there with the data you generated so far upon loading. TrackMate saves a <u>link to the image file</u> (as an absolute file path) but not the image itself. When loading a TrackMate file, it tries first to retrieve and open this file in ImageJ. So it is a good idea to pre-process, crop, edit metadata and massage the target image first in Fiji, then save it as a .tif, then launch TrackMate. Particularly if you deal with a multi-series file, such as Leica .lif files.
 
@@ -46,7 +46,7 @@ This first panel allows you to check the spatial and temporal calibration of you
 
 What is critical is also to check the dimensionality of the image. In our case, we have a 2D time-lapse of 50 frames. If metadata are not present or cannot be read, ImageJ tends to assume that stack always are Z-stack on a single time-point. 
 
-If the calibration or dimensionality of your data is not right, I recommend changing it in the image metadata itself, using ''Image {{arrow}} Properties'' ({{key|Ctrl}}+{{key|Shift}}+{{key|P}}). The press the 'Refresh source' button on the TrackMate start panel to grab changes.
+If the calibration or dimensionality of your data is not right, I recommend changing it in the image metadata itself, using {{bc | Image | Properties}} ({{key|Ctrl}}+{{key|Shift}}+{{key|P}}). The press the 'Refresh source' button on the TrackMate start panel to grab changes.
 
 You can also define a sub-region for processing: if you are only interested in finding spots in a defined region of the image, you can use any of the ROI tools of ImageJ to draw a closed area on the image. Once you are happy with it, press the '''Refresh source''' button on the panel to pass it to TrackMate. You should see that the '''X''' '''Y''' start and end values change to reflect the bounding box of the ROI you defined. The ROI needs not to be a square. It can be any closed shape. 
 
@@ -79,7 +79,7 @@ In our case, let us just use the '''Dog detector'''.
 
 The LoG-based detectors fortunately demand very few parameters to tune them. The only really important one is the ''Estimated blob diameter'''. Just enter the approximate size of the spots you are looking to tracks. Careful: you are expected to enter it in <u>physical units</u>. In our dummy example, there is no calibration (<tt>1 pixel = 1 pixel</tt>), so it does not appear here. 
 
-There are extra fields that you can configure also. The '''Threshold''' numerical value aims at helping dealing with situation where a gigantic number of spots can be found. Every spot with a maximal intensity value below this threshold value will not be retained, which can help saving memory. You set this field manually, or by adjusting the threshold using ImageJ: call the ''Image {{arrow}} Adjust {{arrow}} Threshold'' menu item ({{key|Ctrl}}+{{key|Shift}}+{{key|T}}), adjust the upper threshold to your liking, the press the '''Refresh threshold''' button on the panel. This will grab the value you just set. 
+There are extra fields that you can configure also. The '''Threshold''' numerical value aims at helping dealing with situation where a gigantic number of spots can be found. Every spot with a maximal intensity value below this threshold value will not be retained, which can help saving memory. You set this field manually, or by adjusting the threshold using ImageJ: call the {{bc | Image | Adjust | Threshold}} menu item ({{key|Ctrl}}+{{key|Shift}}+{{key|T}}), adjust the upper threshold to your liking, the press the '''Refresh threshold''' button on the panel. This will grab the value you just set. 
 
 You can check '''Use median filter''': this will apply a 3x3 median filter prior to any processing. This can help dealing with images that have a marked salt & pepper noise which generates spurious spots. 
 
