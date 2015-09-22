@@ -196,11 +196,11 @@ and Verena Kaynig, and many other helpers.
 
 * The [[Script Editor]] recognizes exceptions thrown during the execution of a script and offers to jump to the next/previous location in the stacktrace.
 
-* You can ask the [[Script Editor]] to open the [http://fiji.sc/javadoc/ JavaDoc] for a given class using ''Tools {{arrow}} Open Help on Class...''
+* You can ask the [[Script Editor]] to open the [http://fiji.sc/javadoc/ JavaDoc] for a given class using {{bc | Tools | Open Help on Class...}}
 
 * The [[Using Weka|WEKA library]] is now part of Fiji; the {{GitHub|org=fiji|repo=fiji-compat|source=fiji/FijiClassLoader.java|label=FijiClassLoader}} is now an instance of URLClassLoader just because of that (thanks for Verena Kaynig, Albert Cardona and Ignacio Arganda-Carreras for the prodding).
 
-* There is an easy way to add a screenshot to be shown on the front page of the Fiji Wiki: ''Plugins {{arrow}} Utilities {{arrow}} Fiji {{arrow}} New Fiji Wiki Screenshot''.
+* There is an easy way to add a screenshot to be shown on the front page of the Fiji Wiki: {{bc | Plugins | Utilities | Fiji | New Fiji Wiki Screenshot}}.
 
 * The new [[Imglib|versatile and most generic image processing library]] -- fully Open Source! -- was added (thanks Stephan Saalfeld and Stephan Preibisch).
 
@@ -208,9 +208,9 @@ and Verena Kaynig, and many other helpers.
 
 * To use the [[Imglib|imglib]], just select the Imglib Plugin item of [[Script Editor|Script Editor's]] ''Templates'' menu.
 
-* The [[Script Editor]] learnt quite a number of functions that are useful when developing plugins written in Java (e.g. opening the sources for a menu item, or opening the directory of the current file upon ''File {{arrow}} Open''/, or offering to search for the sources of a class).
+* The [[Script Editor]] learnt quite a number of functions that are useful when developing plugins written in Java (e.g. opening the sources for a menu item, or opening the directory of the current file upon {{bc | File | Open}}/, or offering to search for the sources of a class).
 
-* If you have an account on the Fiji Wiki, you can easily add News entries using the ''Plugins {{arrow}} Utilities {{arrow}} Fiji {{arrow}} New Fiji News'' menu item.
+* If you have an account on the Fiji Wiki, you can easily add News entries using the {{bc | Plugins | Utilities | Fiji | New Fiji News}} menu item.
 
 * There is a simple ''Object Inspector'' for Java objects now, accessible via '''fiji.debugging.Object_Inspector.openFrame(label, object)'''.
 
