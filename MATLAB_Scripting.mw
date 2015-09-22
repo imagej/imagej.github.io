@@ -22,7 +22,7 @@ Using the [[Script Editor]] you will be able to select [[MATLAB]] from the [[Scr
 Actually running a [[MATLAB]] script from ImageJ is effectively like calling [http://www.mathworks.com/help/matlab/ref/eval.html eval] on the script's contents. The script will be evaluated as such in a remote [[MATLAB]] instance (which will be launched automatically, if needed). Note that only scripts, not functions, can be evaluated in this way. See [http://www.mathworks.com/help/matlab/learn_matlab/scripts-and-functions.html the MATLAB documentation] for an explanation of these concepts.
 
 Options for controlling the startup of [[MATLAB]], or killing existing [[MATLAB]] processes (e.g. if hidden) can be accessed via:
-   Edit {{arrow}} Options {{arrow}} MATLAB...
+   {{bc | Edit | Options | MATLAB...}}
 
 NB: because the script is being passed from ImageJ to a remote [[MATLAB]], [[MATLAB]] will not have access to ImageJ's classpath. Objects can be passed as variables to [[MATLAB]] (e.g. by using @ annotation) but only if they are valid [[MATLAB]] classes or specially handled classes.
 
