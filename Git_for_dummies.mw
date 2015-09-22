@@ -32,6 +32,10 @@ Further benefits:
 
 The only negative to Git is the activation barrier of learning it. Once you become proficient, Git is a huge asset to any development project.
 
+If you feel comfortable in using the commandline but you are still not familiar with Git the '''[[Git workshop]]''' page might be a perfect entry point for you.
+
+If the commandline is not your favorite playground you can have a look at the Git integration '''[[EGit]]''' in the '''[[Eclipse]]''' IDE.
+
 = Essential Git commands =
 
 Except for the ''clone'' command, this follows the common workflow:
