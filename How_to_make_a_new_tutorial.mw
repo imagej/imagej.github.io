@@ -4,7 +4,7 @@ In Fiji, we have a plugin whose only purpose is to write tutorials to be publish
 
 == First step: call the Tutorial Maker ==
 
-After clicking on ''Plugins {{arrow}} Utilities {{arrow}} Fiji {{arrow}} New Fiji Tutorial'', you will be asked for the title of your tutorial:
+After clicking on {{bc | Plugins | Utilities | Fiji | New Fiji Tutorial}}, you will be asked for the title of your tutorial:
 
 [[Image:How_to_make_a_new_tutorial-PageTitle.jpg]]
 
@@ -27,7 +27,7 @@ In any of the two modes, the snapshot window will hide itself before taking the 
 
 [[Image:How_to_make_a_new_tutorial-MakeSnapshots.jpg|640px]]
 
-After taking some or all of the snapshots you want to include in your tutorial, you have to crop them.  Just select the appropriate rectangle, and then click on ImageJ's ''Edit {{arrow}} Crop'' or hit {{key|Ctrl}}+{{key|Shift}}+{{key|X}}:
+After taking some or all of the snapshots you want to include in your tutorial, you have to crop them.  Just select the appropriate rectangle, and then click on ImageJ's {{bc | Edit | Crop}} or hit {{key|Ctrl}}+{{key|Shift}}+{{key|X}}:
 
 [[Image:How_to_make_a_new_tutorial-CropSnapshot.jpg]]
 
@@ -43,7 +43,7 @@ This will pop up another dialog which lets you change the name of the image:
 
 [[Image:How_to_make_a_new_tutorial-Rename2.jpg]]
 
-The other method is to select the image and click on ImageJ's ''Image {{arrow}} Rename...'' menu item.
+The other method is to select the image and click on ImageJ's {{bc | Image | Rename...}} menu item.
 
 In both cases, the image references in the text will be adjusted automatically.
 
