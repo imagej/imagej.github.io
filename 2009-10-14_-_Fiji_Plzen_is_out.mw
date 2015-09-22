@@ -59,7 +59,7 @@ Other changes include:
 * the Command Launcher ({{key|Ctrl}}+{{key|L}} in the Fiji window) was converted to Swing, and sports a fuzzy matching, and an option to show more information such as which .jar file that plugin is contained in, for a much-improved user-experience (thanks Mark)
 * ImageJ now opens websites in the preferred browser on Linux
 * cropping an image marks it as modified now
-* Plugins {{arrow}} Install Plugin... can install .jar files now (provided you have permission to write to Fiji's plugins/ directory)
+* {{bc | Plugins | Install Plugin...}} can install .jar files now (provided you have permission to write to Fiji's plugins/ directory)
 
 The list is so long because we did not get the opportunity to meet and get a new release done in July, as we all hoped.
 
