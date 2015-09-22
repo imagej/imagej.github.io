@@ -24,7 +24,7 @@ tinevez@primevere:~/Applications/Fiji/Fiji.app/scripts>
 
 If you did not do it already, there is a configuration step to take in [[MATLAB]], so as to make [[MATLAB]] aware of these files. You need to add the ''scripts'' folder to the [[MATLAB]] path: 
 
-In [[MATLAB]], select in the menu ''File {{arrow}} Set Path...'' and add the ''scripts'' folder there  (on Mac, the file chooser doesn't let you choose directories within .app packages, so you have to use the [[MATLAB]] command <code>addpath('/Applications/Fiji.app/scripts')</code> or whatever folder works for you) .
+In [[MATLAB]], select in the menu {{bc | File | Set Path...}} and add the ''scripts'' folder there  (on Mac, the file chooser doesn't let you choose directories within .app packages, so you have to use the [[MATLAB]] command <code>addpath('/Applications/Fiji.app/scripts')</code> or whatever folder works for you) .
 
 
 == Importing track files ==
