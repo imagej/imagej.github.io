@@ -32,7 +32,7 @@ Frequently all you [[#Why.3F|want]] to do is to replace red by magenta in some i
 
 At least magenta/green images help this situation. However, [[Spirals (Macro)|the only thing human eyes can quantify are numbers]].
 
-As a demonstration, call Fiji's ''File {{arrow}} Open Samples {{arrow}} Spirals'' and if you see a bright green and a bright yellow in the dominant spirals, you should look closer.
+As a demonstration, call Fiji's {{bc | File | Open Samples | Spirals}} and if you see a bright green and a bright yellow in the dominant spirals, you should look closer.
 
 However, in the 21st century, one should always use proper [[Colocalization]] with scatter plots and statistics. It is [[Coloc_2|too easy not to]].
 
