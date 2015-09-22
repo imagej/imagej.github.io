@@ -46,7 +46,7 @@ It is now possible to turn a binary image of points into a point selection, by s
 
 There is now a plugin that saves the current image in EPS (Encapsulated PostScript) format. Thanks to Wilhelm Burger.
 
-Use ''Plugins {{arrow}} Transform {{arrow}} Panorama equirectangular view'' to look at 360° panorama photographs and pan around. Thanks to Stephan Saalfeld.
+Use {{bc | Plugins | Transform | Panorama equirectangular view}} to look at 360° panorama photographs and pan around. Thanks to Stephan Saalfeld.
 
 = User-visible changes =
 
