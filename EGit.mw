@@ -12,7 +12,6 @@ In the newer versions of Eclipse, the EGit extension comes already preinstalled.
 To have the EGit panes available you might need to set the following up:
 # go to {{bc|Window |Show View | Others...}} and select under {{bc||Git}} at least ''Git Repositories'' and ''Git Staging''
 ## additionally, it is helpful to add under {{bc||Team}} ''History''
-# go to 
 
 Here you can also find a video tutorial on [https://www.youtube.com/watch?v=ptK9-CNms98 integrating github with Eclipse] including already an intro on how to clone a public github repository (see below).
 
