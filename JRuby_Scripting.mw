@@ -226,7 +226,7 @@ projection_options += "interpolate"
 run "3D Project...", projection_options
 </source>
 
-In general, the best way to figure out what these options should be is to start the macro recorder with "Plugins {{arrow}} Macros {{arrow}} Record..." and run the plugin.  In this case, the output in the macro recorder looks like this:
+In general, the best way to figure out what these options should be is to start the macro recorder with "{{bc | Plugins | Macros | Record...}}" and run the plugin.  In this case, the output in the macro recorder looks like this:
 
   run("3D Project...", "projection=[Brightest Point] axis=Y-Axis slice=1.20 initial=-2 total=4 
                 rotation=4 lower=1 upper=255 opacity=0 surface=100 interior=50 interpolate");
