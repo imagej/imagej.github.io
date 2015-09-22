@@ -91,7 +91,7 @@ In cases where it is clear which class or classes are causing problems, you can 
 
 * If the problem is with an update site:
 # If necessary, identify the jar containing the problematic class(es), e.g. by using <code>Plugins {{arrow}} Utilities {{arrow}} Find Jar for Class</code> in Fiji.
-# Start the updater with <code>Help {{arrow}} Update...</code>
+# Start the updater with <code>{{bc | Help | Update...}}</code>
 # Switch to Advanced Mode
 # Search for the problematic components. Their associated update site will be listed here.
 # Select <code>Manage Update Sites</code> and disable the update site identified in 4.
