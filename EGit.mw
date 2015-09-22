@@ -1,6 +1,6 @@
 This page provides an introduction on how to start using the [http://www.eclipse.org/egit/ EGit] extension in the [[Eclipse]] IDE for software development.
 
-== Installing EGit ==
+== Installing EGit in Eclipse ==
 
 In the newer versions of Eclipse, the EGit extension comes already preinstalled. If this should not be so in your case you can install it as follows:
 # in Eclipse go to {{bc|Help |Install New Software...}}
