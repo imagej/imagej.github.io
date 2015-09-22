@@ -9,7 +9,7 @@ In the newer versions of Eclipse, the EGit extension comes already preinstalled.
 # enter this URI: <nowiki>http://download.eclipse.org/egit/updates</nowiki>
 # choose the ''JGit'' and the ''Eclipse Team Provider'' and {{key|Finish}} the installation
 
-== Setting up EGit Panels in Eclipse ==
+== Setting up EGit panels in Eclipse ==
 To have the EGit panes available you might need to set the following up:
 # go to {{bc|Window |Show View | Others...}} and select under {{bc||Git}} at least ''Git Repositories'' and ''Git Staging''
 ## additionally, it is helpful to add under {{bc||Team}} ''History''
@@ -42,5 +42,10 @@ Furthermore, you will find helpful how-to info for branching, staging, committin
 Surely, command line is for many things more flexible with all the attributes you can use for the commands, but it is easier for the beginning if starting without commandline experience.
 
 Here is a neat (commandline related) interactive page which exlains the different [http://ndpsoftware.com/git-cheatsheet.html levels of working with git repositories]
+
+== UI alternatives to EGit ==
+Here alternative user interface based git-related tools are listed.
+
+# [https://www.sourcetreeapp.com/ Source Tree]
 
 [[Category:Git]]
