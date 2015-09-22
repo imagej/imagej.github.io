@@ -29,7 +29,7 @@ The XML file contains metadata, for example the registration of sources to the g
 
 == Installation ==
 The BigDataViewer comes with Fiji.
-You should have a sub-menu ''Plugins {{arrow}} BigDataViewer''.
+You should have a sub-menu {{bc | Plugins | BigDataViewer}}.
 
 == Usage ==
 
@@ -47,7 +47,7 @@ Download both the XML and the HDF5 file and place them somewhere next to each ot
 
 Alternatively, you can create a dataset by exporting your own data as described below.
 
-To start BigDataViewer, select ''Plugins {{arrow}} BigDataViewer {{arrow}} Open XML/HDF5'' from the Fiji menu.
+To start BigDataViewer, select {{bc | Plugins | BigDataViewer | Open XML/HDF5}} from the Fiji menu.
 This brings up a file open dialog. Open the XML file of your test dataset.
 
 ==== Standard microscopy data ====
@@ -55,11 +55,11 @@ The BigDataViewer can be used to visualise and navigate any image that can be op
 Since Fiji relies of LOCI Bioformats library that means essentially all know microscopy file formats.
 
 For example, open the sample image ''File {{arrow}} Open Samples {{arrow}} Mitosis (26MB, 5D stack)'' from the Fiji menu.
-Subsequently select ''Plugins {{arrow}} BigDataViewer {{arrow}} Open Current Image'' which will launch the BigDataViewer with the sample image, for navigation by arbitrary re-slicing.
+Subsequently select {{bc | Plugins | BigDataViewer | Open Current Image}} which will launch the BigDataViewer with the sample image, for navigation by arbitrary re-slicing.
 
 ==== Imaris files ====
 [http://www.bitplane.com/imaris/imaris Imaris (Bitplane)] uses a hierarchical data format (similar to BigDataViewer's XML/HDF5 format).
-In order to open Imaris <tt style="font-size: 1.25em;">.ims</tt> files select ''Plugins {{arrow}} BigDataViewer {{arrow}} Open Imaris (experimental)'' from the Fiji menu.
+In order to open Imaris <tt style="font-size: 1.25em;">.ims</tt> files select {{bc | Plugins | BigDataViewer | Open Imaris (experimental)}} from the Fiji menu.
 Please note, that support for the Imaris format is still experimental.
 
 === Basic Navigation ===
@@ -298,18 +298,18 @@ The rotation is around the current mouse location (i.e., the point under the mou
 Organizing sources into groups, assigning appropriate colors, adjusting brightness correctly, and bookmarking interesting locations is work that you do not want to repeat over and over every time you re-open a dataset.
 Therefore, BigDataViewer allows to save and load these settings.
 
-Select ''File {{arrow}} Save settings'' from the menu to store settings to an XML file, and ''File {{arrow}} Load settings'' to load them from an XML file.
+Select {{bc | File | Save settings}} from the menu to store settings to an XML file, and {{bc | File | Load settings}} to load them from an XML file.
 
 When a dataset is opened, BigDataViewer automatically loads an appropriately named settings file if it is present.
 This settings file must be in the same directory as the dataset's XML file, and have the same filename with ''.settings'' appended.
 For example, if the dataset's XML file is named ''drosophila.xml'', the settings file must be named ''drosophila.settings.xml''.
-(If you select ''File {{arrow}} Save settings'', this filename is already suggested in the Save File dialog.)
+(If you select {{bc | File | Save settings}}, this filename is already suggested in the Save File dialog.)
 
 Settings files assume that a specific number of sources are present, therefore settings are usually not compatible across different datasets.
 
 === Opening BigDataViewer Datasets as ImageJ Stacks ===
 BigDataViewer may be great for looking at your data, but what if you want to apply other ImageJ algorithms or plugins to the images?
-You can open individual images from a dataset as ImageJ stacks using ''File {{arrow}} Import {{arrow}} BigDataViewer...'' from the Fiji menu.
+You can open individual images from a dataset as ImageJ stacks using {{bc | File | Import | BigDataViewer...}} from the Fiji menu.
 
 [[Image:bdv-import.png|500px]]
 
@@ -405,13 +405,13 @@ BigDataViewer suggests sensible parameter settings, however, for particular appl
 
 
 === Exporting from ImageJ Stacks ===
-You can export any dataset to BigDataViewer format by opening it as a stack in Fiji and then selecting ''Plugins {{arrow}} BigDataViewer {{arrow}} Export Current Image as XML/HDF5'' from the Fiji menu.
+You can export any dataset to BigDataViewer format by opening it as a stack in Fiji and then selecting {{bc | Plugins | BigDataViewer | Export Current Image as XML/HDF5}} from the Fiji menu.
 If the image has multiple channels, each channel will become one ''setup'' in the exported dataset.
 If the image has multiple frames, each frame will become one ''timepoint'' in the exported dataset.
 Of course, you may export from virtual stacks if your data is too big to fit into memory.
 
 To get started, let's open one of the ImageJ sample images by ''File {{arrow}} Open Samples {{arrow}} T1 Head (2.4M, 16-bits)''.
-Selecting ''Plugins {{arrow}} BigDataViewer {{arrow}} Export Current Image as XML/HDF5'' brings up the following dialog.
+Selecting {{bc | Plugins | BigDataViewer | Export Current Image as XML/HDF5}} brings up the following dialog.
 
 [[Image:bdv-export-stack.png|500px]]
 
@@ -506,7 +506,7 @@ because the "Multiview reconstruction" plugins can operate on HDF5 datasets as w
 
 We assume that the user has already created an XML/TIFF dataset, as explained in [[Multiview-Reconstruction]].
 
-To convert the dataset to HDF5, select ''Plugins {{arrow}} Multiview Reconstruction {{arrow}} Resave {{arrow}} As HDF5'' form the Fiji menu.
+To convert the dataset to HDF5, select {{bc | Plugins | Multiview Reconstruction | Resave | As HDF5}} form the Fiji menu.
 This brings up the following dialog.
 
 [[Image:bdv-mvr-export1b.png|500px]]
