@@ -68,15 +68,15 @@ For full details on the technical structure of ImageJ, see the [[Architecture]] 
 There are four indispensable software development tools on which ImageJ relies:
 
 {| class="wikitable nicetable"
-| [[File:Git-icon.png | 64px | link=Git]]
-| [[Git]]
-| A first-class [https://en.wikipedia.org/wiki/Distributed_version_control distributed] [https://en.wikipedia.org/wiki/Version_control version control] system.
-Git saves "snapshots" of the source code, keeping a history of changes.
-|-
 | [[File:Octocat.png | 64px | link=GitHub]]
 | [[GitHub]]
 | A website which hosts all of ImageJ's [[source code]] and [[issues|issue trackers]].
 GitHub is ImageJ's nexus of online collaboration (i.e., "social coding").
+|-
+| [[File:Git-icon.png | 64px | link=Git]]
+| [[Git]]
+| A first-class [https://en.wikipedia.org/wiki/Distributed_version_control distributed] [https://en.wikipedia.org/wiki/Version_control version control] system.
+Git saves "snapshots" of the source code, keeping a history of changes.
 |-
 | style="vertical-align: middle" | [[File:Maven-icon.png | 64px | link=Maven]]
 | [[Maven]]
