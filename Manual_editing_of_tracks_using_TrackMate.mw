@@ -12,7 +12,7 @@ It is a good idea to be already familiar with the automated segmentation in Trac
 
 Download the target image here: [http://fiji.sc/tinevez/TrackMate/Celegans-5pc_17timepoints.zip Celegans-5pc_17timepoints.zip (34 MB)]. It is a rather large file, so it is zipped. Unzip it somewhere; you should end up having a single tiff file, ''Celegans-5pc_17timepoints.tif'' of about 100 MB.
 
-Open it in Fiji. You will get a stack, made of 41 Z-slices over 17 time-points, each image being 240 x 295. As you can see in ''Image {{arrow}} Properties'' ({{key|Ctrl}}+{{key|Shift}}+{{key|P}}), it has a spatial and temporal calibration. 
+Open it in Fiji. You will get a stack, made of 41 Z-slices over 17 time-points, each image being 240 x 295. As you can see in {{bc | Image | Properties}} ({{key|Ctrl}}+{{key|Shift}}+{{key|P}}), it has a spatial and temporal calibration. 
 
 The context if the following: We used a ''C.elegans'' strain named [http://www.wormbase.org/db/gene/strain?name=AZ212;class=Strain AZ212] that has its histone H2B coupled to the eGFP. The nuclei can therefore be seen in the 488 nm excitation fluorescence channel. The movie started just after the first cell division, so you can see on the first frame two blob-like spots in the center of the egg. On the top-right part of the egg, there is also two smaller spots that are the polar bodies. One will remain at a fixed place, the other one will be pushed around as the cells divide. The movie has 17 time-points that span the first 34 minutes of the ''C.elegans'' embryo development. 
 
@@ -27,7 +27,7 @@ This tutorial uses the following strategy: we will use an inadequate set of segm
 
 [[Image:TrackMate DownsampledLogSegmenter.png|right|border]]
 
-Launch TrackMate (''Plugins {{arrow}} Tracking {{arrow}} TrackMate'') and select the ''C.elegans'' stack as a target. Check on the first panel that all the spatial calibration is OK. The pixel size is about 200 nm in XY, 1 μm in Z, and each frame is separated by 2 minutes.
+Launch TrackMate ({{bc | Plugins | Tracking | TrackMate}}) and select the ''C.elegans'' stack as a target. Check on the first panel that all the spatial calibration is OK. The pixel size is about 200 nm in XY, 1 μm in Z, and each frame is separated by 2 minutes.
 
 Select the '''Downsampled LoG detector'''. This choice actually makes sense: the nuclei are about 8 μm in diameter, and with a sampling of 200 nm, that makes 40 pixels wide nuclei. It is already advantageous to use the down-sampled version of the LoG segmenter above 20 pixels: segmenting 3D data over time takes already quite some time. Having to track large objects allow to downsample them, making the data to iterate over smaller, which speed up the process. 
 
