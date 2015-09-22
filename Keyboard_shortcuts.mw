@@ -2,7 +2,7 @@ ImageJ has a lot of keyboard shortcuts.
 
 == Listing all keyboard shortcuts ==
 
-For a verbose list of keyboard shortcuts, call ''Plugins {{arrow}} Shortcuts {{arrow}} List shortcuts...''
+For a verbose list of keyboard shortcuts, call {{bc | Plugins | Shortcuts | List shortcuts...}}
 
 == The Command Launcher ==
 
