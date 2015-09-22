@@ -18,7 +18,7 @@ Unfortunately these TIFF files do not have the separation of these slices encode
 
 [[Image:Diadem_Challenge_Data-4.png]]
 
-... and then press "OK".  To save yourself from having to re-enter this calibration information, and to be able to open the stack from the "Recent Files" menu, etc. I think it's helpful to now save this stack as a single TIFF.  So, I would go to "File {{arrow}} Save As {{arrow}} Tiff ..." and save this as OP_1.tif in the directory above the one with individual slices.
+... and then press "OK".  To save yourself from having to re-enter this calibration information, and to be able to open the stack from the "Recent Files" menu, etc. I think it's helpful to now save this stack as a single TIFF.  So, I would go to "{{bc | File | Save As | Tiff ...}}" and save this as OP_1.tif in the directory above the one with individual slices.
 
 Now start the tracing plugin by going to "Plugins {{arrow}} Segmentation {{arrow}} Simple Neurite Tracer".  If you keep the default options, you should see a display like this:
 
@@ -76,7 +76,7 @@ Next, you should correct the Z-calibration of the stitched stack.  The data set 
 
 [[Image:Diadem_Neocortical_Layer_6_Axons-3.png]]
 
-Now you should save the stitched stack, and work from that from now on.  (Since the stitched stack isn't very large (156MB) one wonders why this wasn't distributed already stitched.)  Save the stack with "File {{arrow}} Save As {{arrow}} Tiff...".
+Now you should save the stitched stack, and work from that from now on.  (Since the stitched stack isn't very large (156MB) one wonders why this wasn't distributed already stitched.)  Save the stack with "{{bc | File | Save As | Tiff...}}".
 
 To load the SWC files, start up the tracer with "Plugins {{arrow}} Segmentation {{arrow}} Simple Neurite Tracer".  You should see something like this after it has started, with the stack rendered in the 3D Viewer:
 
@@ -94,7 +94,7 @@ Then the traces should load in the correct position with those offsets:
 
 We will go through loading in the CF_1 image stack from the [http://www.diademchallenge.org/cerebellar_climbing_fibers_readme.html Cerebellar Climbing Fibers] data set.  The raw data for this image is stored in RGB and about 3.4GB in size, so for convenience you may wish to load this as a virtual stack (i.e. one where the slices are loaded from disk as required), convert it to 8-bit and resave the file first.  In any case, I would recommend using a machine with 2GB of RAM (at the very least) to deal with these files.
 
-To load the files as a virtual stack, go to "File {{arrow}} Import {{arrow}} Image Sequence ..." and select the first file in the sequence, "01.tif".  You will be presented with the import dialog, in which you should make sure that "Use virtual stack" is selected.
+To load the files as a virtual stack, go to "{{bc | File | Import | Image Sequence ...}}" and select the first file in the sequence, "01.tif".  You will be presented with the import dialog, in which you should make sure that "Use virtual stack" is selected.
 
 [[Image:Diadem_Cerebellar-1.png]]
 
@@ -116,13 +116,13 @@ Before saving this out as a single 862MB stack, it is a good idea to correct the
 
 [[Image:Diadem_Cerebellar-5.png]]
 
-Now save this as a single TIFF stack called CF_1.tif by going to "File {{arrow}} Save As {{arrow}} Tiff ...", saving it in the directory above the one with the slices, to avoid confusion.
+Now save this as a single TIFF stack called CF_1.tif by going to "{{bc | File | Save As | Tiff ...}}", saving it in the directory above the one with the slices, to avoid confusion.
 
 You can now start the tracer with Plugins {{arrow}} Segmentation {{arrow}} Simple Neurite Tracer.  This may take some time, since there is a lot of data to load in to the 3D viewer.  The result should look like this:
 
 [[Image:Diadem_Cerebellar-6.png|750px]]
 
-You may wish to adjust the transparency in the 3D viewer by selecting the image volume (left click on the image in the 3D viewer) and then going to "Edit {{arrow}} Attributes {{arrow}} Change Transparency...":
+You may wish to adjust the transparency in the 3D viewer by selecting the image volume (left click on the image in the 3D viewer) and then going to "{{bc | Edit | Attributes | Change Transparency...}}":
 
 [[Image:Diadem_Cerebellar-7.png]]
 
