@@ -12,7 +12,7 @@ To develop a plugin, the developer first needs to find out in which file it is c
 
 Each individual component is maintained in its own repository in the [https://github.com/fiji/ ''fiji'' org on GitHub]. The name of the repository corresponding to a given ''.jar'' file is essentially identical with the file name, except that trailing underscores are stripped. Example: ''Stitching_.jar'' is maintained in the repository at https://github.com/fiji/Stitching, ''Time_Lapse.jar'' in the repository at https://github.com/fiji/Time_Lapse.
 
-If in doubt about the location of the repository, just call ''Plugins {{arrow}} Debug {{arrow}} System Information'' and find the section corresponding to the file in question.
+If in doubt about the location of the repository, just call {{bc | Plugins | Debug | System Information}} and find the section corresponding to the file in question.
 
 Once the developer has identified which plugin or library she wants to modify or develop further, it is very easy to build and contribute by following [[How to contribute to an existing plugin or library|this tutorial]].
 
