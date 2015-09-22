@@ -16,7 +16,7 @@ The TopoJ plugins help you analyze surfaces of bright objects in image stacks. Y
 
 == Compute Topography ==
 
-To compute the Topography, call ''Analyze {{arrow}} TopoJ {{arrow}} Compute Topography'':
+To compute the Topography, call {{bc | Analyze | TopoJ | Compute Topography}}:
 
 [[Image:TopoJ-Dialog.jpg]]
 
@@ -26,7 +26,7 @@ The result looks like this:
 
 == Remove Slope ==
 
-To remove the overall slope of the surface, click on the ''Analyze {{arrow}} TopoJ {{arrow}} Remove Slope'' menu item:
+To remove the overall slope of the surface, click on the {{bc | Analyze | TopoJ | Remove Slope}} menu item:
 
 [[Image:TopoJ-Remove_Slope.jpg]]
 
