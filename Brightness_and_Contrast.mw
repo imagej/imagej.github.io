@@ -4,7 +4,7 @@ This tool may be used to adjust the brightness and contrast of an active image.
 
 ==Usage==
 
-The Brightness and Contrast tool may be accessed through ''Image {{arrow}} Adjust {{arrow}} Brightness/Contrast'' or {{key|Ctrl}}+{{key|Shift}}+{{key|C}}.
+The Brightness and Contrast tool may be accessed through {{bc | Image | Adjust | Brightness/Contrast}} or {{key|Ctrl}}+{{key|Shift}}+{{key|C}}.
 
 [[File:Brightness_Contrast_Window.png|right|266x177px]]
 
