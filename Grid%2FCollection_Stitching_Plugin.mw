@@ -45,7 +45,7 @@ If "use virtual memory" has been selected but the stitching plugin is still taki
 **Check the amount of installed RAM on your computer to ensure you do not try to allocate more memory than exists.
 
 === Image Dimensions === 
-Another speed reduction will occur if the tiles used have varying z coordinates. This will cause the stitching program to include tiles of black space wherever a tile has a z coordinate less than the maximum z coordinate within the file. To check if this could be a problem with your dataset, use the menu title to access ''Plugins {{arrow}} Stitching {{arrow}} Visualize Tiles''. If the computed image does NOT show up as one large square with a patchwork of squares, your data set has varying z-values. To alleviate the slower speeds, select "ignore Z position" within the second GUI.
+Another speed reduction will occur if the tiles used have varying z coordinates. This will cause the stitching program to include tiles of black space wherever a tile has a z coordinate less than the maximum z coordinate within the file. To check if this could be a problem with your dataset, use the menu title to access {{bc | Plugins | Stitching | Visualize Tiles}}. If the computed image does NOT show up as one large square with a patchwork of squares, your data set has varying z-values. To alleviate the slower speeds, select "ignore Z position" within the second GUI.
 
 [[Image:out_of_memory.png|thumb|right|250px|Out of memory error message.]]
 
