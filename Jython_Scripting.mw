@@ -41,8 +41,8 @@ Where <code>java.io.File</code> is the class to be imported. See also section [[
 To create a script for the GUI, the recommended setup is the following:
 
 * Edit and save a file in your favorite text editor. If you want ImageJ1 to insert it into the Menu structure, the file must be saved somewhere under ImageJ plugins folder, have an underscore on the name, and a .py extension.
-* Run ''Plugins {{arrow}} Scripting {{arrow}} Refresh Jython scripts'' <b>only</b> the very first time after newly creating the file under any folder or subfolder of ImageJ's plugins folder. A menu item will appear with its name, from which it can be run.
-* Keep editing (and saving) the file from your editor. Just select the menu item to execute it over and over. Or use the ''Plugins {{arrow}} Utilities {{arrow}} Find Commands...'' window to launch it easily (keybinding 'l').
+* Run {{bc | Plugins | Scripting | Refresh Jython scripts}} <b>only</b> the very first time after newly creating the file under any folder or subfolder of ImageJ's plugins folder. A menu item will appear with its name, from which it can be run.
+* Keep editing (and saving) the file from your editor. Just select the menu item to execute it over and over. Or use the {{bc | Plugins | Utilities | Find Commands...}} window to launch it easily (keybinding 'l').
 
 The next time Fiji is run, it will setup all your scripts in the Plugins menu.
 
@@ -1708,7 +1708,7 @@ Of course, if your macro happens to return <code>[aborted]</code> for success, y
 
 === Using a jython script as a plugin ===
 
-The simplest way is to place the jython script file into fiji/plugins/ folder or a subfolder, and it will appear in the menus after running "'''Plugins {{arrow}} Scripting {{arrow}} Refresh Jython Scripts'''" or "'''Help {{arrow}} Refresh Menus'''", or on restarting Fiji.
+The simplest way is to place the jython script file into fiji/plugins/ folder or a subfolder, and it will appear in the menus after running "'{{bc | Plugins | Scripting | Refresh Jython Scripts}}'" or "'{{bc | Help | Refresh Menus}}'", or on restarting Fiji.
 
 If you want to have the Jython script show up in a place outside the Plugins menu, just put the file into an appropriate subdirectory of fiji/plugins/Scripts/; for example, if you put a Jython script called Animation_.py into fiji/plugins/Scripts/File/New/, it will be available as File {{arrow}} New {{arrow}} Animation .
 
@@ -1716,7 +1716,7 @@ If you want to have the Jython script show up in a place outside the Plugins men
 
 PLEASE NOTE: there is no need to do the following -- unless you want to bundle a couple of scripts in one package. See entry above.
 
-The easiest way to distribute a (single) Jython script is to start the [[Script Editor]], open the Jython script and make the bundle with ''File {{arrow}} Export as .jar''.
+The easiest way to distribute a (single) Jython script is to start the [[Script Editor]], open the Jython script and make the bundle with {{bc | File | Export as .jar}}.
 
 Alternatively -- or if you want to bundle multiple scripts -- you can do it the manual way:
 
