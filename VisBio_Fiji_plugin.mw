@@ -16,19 +16,19 @@ The VisBio Ortho Stack plugin is a simple 3D visualization plugin for Fiji that 
 == Updating the VisBio Plugin ==
 The VisBio Plugin is located within the LOCI updates. To learn more on how to update plugins, visit the update fiji page.
 To update the VisBio Plugin: 
-* Select ''Help {{arrow}} Update Fiji''
+* Select {{bc | Help | Update Fiji}}
 * Once the ImageJ Updater is presented, select "Manage Update sites"
 * Select the "LOCI" site to update all LOCI plugins, including VisBio 
 * Close "Manage Update Sites" and select "Apply changes"
 * Restart ImageJ and the update will be in effect
 
 == Using VisBio ==
-To use VisBio you must first import an Image Sequence. To do so, Select ''File {{arrow}} Import {{arrow}} Image Sequence'' and select the file of images you wish to use.
+To use VisBio you must first import an Image Sequence. To do so, Select {{bc | File | Import | Image Sequence}} and select the file of images you wish to use.
 
  After you have your images imported, follow the following directions: 
 
 *Select the imported image sequence
-*Select ''Plugins {{arrow}} VisBio {{arrow}} Ortho Stack'' 
+*Select {{bc | Plugins | VisBio | Ortho Stack}} 
 *To display every individual image within the view, unselect "Parallel projection"
 *To compact the images, decrease the amount of stretch within the stack
 
