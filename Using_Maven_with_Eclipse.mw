@@ -8,9 +8,9 @@ For more information about Maven, see:
 
 == Install m2eclipse ==
 
-'''Note:''' if you use Eclipse 3.7 Indigo or newer, you most likely have m2e already. If your ''File {{arrow}} Import'' offers you a ''Maven'' section, you have it, and can skip the rest of this section.
+'''Note:''' if you use Eclipse 3.7 Indigo or newer, you most likely have m2e already. If your {{bc | File | Import}} offers you a ''Maven'' section, you have it, and can skip the rest of this section.
 
-* From the Eclipse menu, choose Help {{arrow}} Install New Software...
+* From the Eclipse menu, choose {{bc | Help | Install New Software...}}
 * Click the Add button to add an update site:
 ** Name: m2eclipse
 ** Location: http://m2eclipse.sonatype.org/sites/m2e
