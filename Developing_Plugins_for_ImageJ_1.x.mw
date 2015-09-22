@@ -19,7 +19,7 @@ If you are certain that you want to write a plugin in Java, keep on reading!
 
 == Updating plugins ==
 
-* After storing the ''.jar'' file(s) into the ''plugins/'' (or ''jars/'') directory, call ''Help {{arrow}} Refresh Menus'' or restart Fiji
+* After storing the ''.jar'' file(s) into the ''plugins/'' (or ''jars/'') directory, call {{bc | Help | Refresh Menus}} or restart Fiji
 * If the respective plugin is in-use, you might get funny results when refreshing the menus, due to limitations in Sun Java's handling of ''.jar'' files.
 
 == What are plugins (in terms of menu entries)? ==
@@ -114,7 +114,7 @@ There a few good reasons why you should try the [[Script Editor]] for rapid prot
 
 == Quick Start ==
 
-To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [[Script Editor]] (''File {{arrow}} New {{arrow}} Script''), and select the ''Process Pixels'' menu item from the ''Templates {{arrow}} Java'' menu. Then, run the plugin with ''Run>Run''.
+To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [[Script Editor]] ({{bc | File | New | Script}}), and select the ''Process Pixels'' menu item from the {{bc | Templates | Java}} menu. Then, run the plugin with ''Run>Run''.
 
 = ImageJ's API =
 
