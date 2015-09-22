@@ -30,7 +30,7 @@ and drop it into the ''plugins'' menu. The plugin will appear in the ''Plugins {
 
 === Fiji ===
 
-The plugin is part of the Fiji distribution, as a member of the [[Fiji_Plugins]] package. You can find it in the ''Image {{arrow}} Stacks'' menu.
+The plugin is part of the Fiji distribution, as a member of the [[Fiji_Plugins]] package. You can find it in the {{bc | Image | Stacks}} menu.
 
 
 == Usage ==
