@@ -86,8 +86,13 @@ For Mac, replace {{Key|Ctrl}} with  {{Key|Cmd}}
 | align=right | {{Key|Ctrl|T}}
 | shows all implementations of interface or class
 |-
-| align=right | {{Key|Alt}|Up|Alt|Down}}
-| move lines up or down
+| colspan=2 | '''Editing'''
+|-
+| align=right | {{Key|Alt|Up}}, {{Key|Alt|Down}}
+| move current line up or down
+|-
+| align=right | {{Key|Ctrl|D}}
+| delete the current line
 |-
 | colspan=2 style="padding-top: 1em" | '''Code cleanup'''
 |-
