@@ -96,7 +96,7 @@ public class Duplicate_and_Scale implements PlugIn {
 
 === Using the Script Editor ===
 
-The easiest way to compile and run the plugin is to use the [[Script Editor]]: Call ''File {{arrow}} New {{arrow}} Script'', select ''Java'' in the ''Language'' menu, and paste the source. Then, compile and run the plugin by calling ''Run'' in the '"Run'' menu.
+The easiest way to compile and run the plugin is to use the [[Script Editor]]: Call {{bc | File | New | Script}}, select ''Java'' in the ''Language'' menu, and paste the source. Then, compile and run the plugin by calling ''Run'' in the '"Run'' menu.
 
 === The hard way ===
 
@@ -104,17 +104,17 @@ You can save the java code in a java file with the same name of the class. For t
 
 To compile the plugin, you have several options:
 
-* If you saved the java file into the ''plugins/'' directory inside the Fiji directory, after ''Help {{arrow}} Refresh Menus'', it will appear in the ''Plugins'' menu.
+* If you saved the java file into the ''plugins/'' directory inside the Fiji directory, after {{bc | Help | Refresh Menus}}, it will appear in the ''Plugins'' menu.
 * Call "Plugins {{arrow}} Compile and Run" and specify the where you saved the file.
 * Compile it from a terminal with
 <source lang="bash">./fiji --javac plugins/Duplicate_and_Scale.java</source>
-For this to work, you have to save the java file into the ''plugins/'' directory, or you have to copy the class files into said directory after compilation. For the plugin to appear in the ''Plugins'' menu, you have to call ''Help {{arrow}} Refresh Menus'', or to restart Fiji.
+For this to work, you have to save the java file into the ''plugins/'' directory, or you have to copy the class files into said directory after compilation. For the plugin to appear in the ''Plugins'' menu, you have to call {{bc | Help | Refresh Menus}}, or to restart Fiji.
 
 == Running the plugin ==
 
 If you pasted the source into the [[Script Editor]], you can run the plugin using the ''Run>Run'' menu entry.
 
-Otherwise, after ''Help {{arrow}} Refresh Menus'', or a Fiji restart, there will be a menu item called ''Duplicate and Scale'' in the ''Plugins'' menu.
+Otherwise, after {{bc | Help | Refresh Menus}}, or a Fiji restart, there will be a menu item called ''Duplicate and Scale'' in the ''Plugins'' menu.
 
 === From a macro ===
 To run the plugin from a macro, do:
