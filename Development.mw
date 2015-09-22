@@ -80,8 +80,8 @@ Git saves "snapshots" of the source code, keeping a history of changes.
 |-
 | style="vertical-align: middle" | [[File:Maven-icon.png | 64px | link=Maven]]
 | [[Maven]]
-| A [https://en.wikipedia.org/wiki/Build_automation build automation] tool which emphasizes [[Philosophy#Convention_over_configuration|convention over configuration]].
-Maven builds the code and manages its dependencies.
+| A [https://en.wikipedia.org/wiki/Build_automation build automation] tool with great dependency management.
+Maven converts source code into program binaries, and much more.
 |-
 | [[File:Eclipse-luna-icon.png | 64px | link=Eclipse]]
 | [[Eclipse]]
