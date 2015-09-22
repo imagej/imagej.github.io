@@ -35,7 +35,7 @@ After clicking on ''Plugins {{arrow}} Segmentation {{arrow}} SIOX: Simple Intera
 {{-}}
 
 ==User Manual==
-[[SIOX]] is a plugin designed to segment 2D color images. If the image is not RGB color, it can be converted to RGB using the command ''Image {{arrow}} Type {{arrow}} RGB Color''. However, the [[SIOX]] algorithm makes uses color information, so it is expected to work better on real RGB images.
+[[SIOX]] is a plugin designed to segment 2D color images. If the image is not RGB color, it can be converted to RGB using the command {{bc | Image | Type | RGB Color}}. However, the [[SIOX]] algorithm makes uses color information, so it is expected to work better on real RGB images.
 
 When calling the plugin, the image will be embedded into the [[SIOX]] graphical user interface (GUI). This GUI has 3 section (panels): Initial Segmentation, Detail Refinement Brush and the Mask/Reset buttons.
 
@@ -97,7 +97,7 @@ This panel is enabled during any of the other segmentation steps.
 
 ;'''Create mask'''
 
-:Creates a binary (0-255) image based on the current state of the segmentation process. The background color (black or white) is defined in ''Process {{arrow}} Binary {{arrow}} Options...'' This button can be pressed during any of the previous steps.
+:Creates a binary (0-255) image based on the current state of the segmentation process. The background color (black or white) is defined in {{bc | Process | Binary | Options...}} This button can be pressed during any of the previous steps.
 
 ===Save segmentator===
 You can save the segmentation information into a file by clicking on the "Save segmentator" button. This can be used later to a different image or stack of images by clicking on "Plugins {{arrow}} Segmentation {{arrow}} Apply SIOX segmentator" (see next section).
