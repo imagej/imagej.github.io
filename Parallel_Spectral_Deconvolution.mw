@@ -77,7 +77,7 @@ medium, wavelength, etc.
 
 == 2D Example ==
 
-After opening the image to deconvolve and the image of the PSF, start Plugins {{arrow}} Deconvolution {{arrow}} 2D Spectral Deconvolution...
+After opening the image to deconvolve and the image of the PSF, start {{bc | Plugins | Deconvolution | 2D Spectral Deconvolution...}}
 
 [[Image:ParallelSpectralDeconvolution2DExample.jpg|800px|center]]
 
@@ -87,7 +87,7 @@ Clicking on the Deconvolve button results in this:
 
 == 3D Example ==
 
-After opening the image to deconvolve and the image of the PSF, start Plugins {{arrow}} Deconvolution {{arrow}} 3D Spectral Deconvolution...
+After opening the image to deconvolve and the image of the PSF, start {{bc | Plugins | Deconvolution | 3D Spectral Deconvolution...}}
 
 [[Image:ParallelSpectralDeconvolution3DExample.jpg|800px|center]]
 
