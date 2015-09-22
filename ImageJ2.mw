@@ -32,8 +32,8 @@ ImageJ2 provides a wealth of new features and capabilities:
 * New and enhanced file format support via the [[SCIFIO]] library ([[#Improved_image_I.2FO_with_the_SCIFIO_library|see below]]).
 * More powerful [[Script Editor]] with support for several scripting languages.
 * New commands:
-** ''Plugins {{arrow}} Debug {{arrow}} Dump Stack'' for debugging when things [https://en.wikipedia.org/wiki/Hang_(computing) hang].
-** ''Plugins {{arrow}} Debug {{arrow}} System Information'' for reporting on versions of installed plugins and libraries.
+** {{bc | Plugins | Debug | Dump Stack}} for debugging when things [https://en.wikipedia.org/wiki/Hang_(computing) hang].
+** {{bc | Plugins | Debug | System Information}} for reporting on versions of installed plugins and libraries.
 * Use ImageJ2's N-dimensional [[ImgLib2]]-based data structures (still in beta).
 * Write parameterized commands and scripts:
 ** Typed inputs and outputs with no dependence on AWT user interface.
@@ -43,7 +43,7 @@ ImageJ2 provides a wealth of new features and capabilities:
 
 === Improved image I/O with the SCIFIO library ===
 
-ImageJ2 uses the [[SCIFIO]] library (SCientific Image Format Input and Output)  by default for most image input tasks. You can change this behavior at any time by running ''Edit {{arrow}} Options {{arrow}} ImageJ2'' and modifying the ''Use SCIFIO when opening files'' option.
+ImageJ2 uses the [[SCIFIO]] library (SCientific Image Format Input and Output)  by default for most image input tasks. You can change this behavior at any time by running {{bc | Edit | Options | ImageJ2}} and modifying the ''Use SCIFIO when opening files'' option.
 
 For further details, see the [[SCIFIO]] page.
 
