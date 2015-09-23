@@ -62,13 +62,13 @@ First push your changes back to a branch of your forked repository (it doesn't n
 
 ''Note:'' This step must be performed by a [[Governance|project maintainer]].
 
-Once the <code>master</code> branch of a component has your desired new functionality, the next step is to cut a ''release'' version of the component. Normally, the Maven version (in the [https://maven.apache.org/pom.html#Introduction pom.xml]) on master is a ''SNAPSHOT'' version, meaning it is [[Reproducible builds|unstable]] and not yet released. However, a [[Reproducible_builds|stable]] ''release'' artifact can be deployed to the ImageJ Maven repository in one of three ways, described below. As a rule of thumb, SciJava developers currently use:
+Once the <code>master</code> branch of a component has your desired new functionality, the next step is to cut a ''release'' version of the component. Normally, the Maven version (in the [https://maven.apache.org/pom.html#Introduction pom.xml]) on master is a ''SNAPSHOT'' version, meaning it is [[Reproducible builds|unstable]] and not yet released. However, a [[Reproducible_builds|stable]] ''release'' artifact can be deployed to the ImageJ Maven repository in one of three methods, described below. As a rule of thumb, SciJava developers currently use:
 
 * The '''[[#Release-Version Jenkins job|Release-Version Jenkins job]]''' to release core SciJava software stack components—including SciJava, ImgLib2, SCIFIO and ImageJ.
 * The '''[[#release-version.sh|release-version.sh script]]''' to release most [[Fiji]] components.
 * The '''[[#Double push to master|Double push to master]]''' approach to release other [[Fiji]] components.
 
-=== Release-Version Jenkins job ===
+=== Method 1: Release-Version Jenkins job ===
 
 The special <code>Release-Version</code> job of Jenkins (which is visible only to logged in Jenkins users) is triggered to release a particular artifact. There are several advantages to this approach:
 
@@ -93,7 +93,7 @@ The special <code>Release-Version</code> job of Jenkins (which is visible only t
 
 Jenkins will take care of all the steps, including pushing the relevant commits and tags, building the code, and deploying the resultant artifact to the ImageJ Maven repository.
 
-=== release-version.sh ===
+=== Method 2: release-version.sh ===
 
 The [https://github.com/scijava/scijava-scripts/blob/aab7cfe805638efc25615fdd7c78cedaae3c7197/release-version.sh release-version.sh] script is what the [[#Release-Version Jenkins job|Release-Version Jenkins job]] uses under the hood to perform releases. It relies on the [http://maven.apache.org/maven-release/maven-release-plugin/ Maven Release plugin] to do most of the heavy lifting, but also does some extra work (e.g., to ensure releases are deployed to the correct repository).
 
@@ -111,7 +111,7 @@ The [https://github.com/scijava/scijava-scripts/blob/aab7cfe805638efc25615fdd7c7
 
 {{Notice | If your project is a [https://maven.apache.org/guides/mini/guide-multiple-modules.html multi-module build], first make a commit commenting out any modules that should not be released. Then run the script from the aggregator pom directory.}}
 
-=== Double push to master ===
+=== Method 3: Double push to master ===
 
 Historically, the "double push to master" approach was the recommended way to release—but it has now been replaced by the other two approaches. Nonetheless, there are a few components of Fiji that still use it to do their releases. A push to master happens with the POM version set to a non-SNAPSHOT—e.g., {{GitHub | org=fiji | repo=Trainable_Segmentation | commit=fd92658524dd90da8d505dad295c6f6ce3e3a188 | label=this Trainable_Segmentation commit releasing version 2.2.1}}. A second push to master is then typically done to "bump to next release cycle" after Jenkins starts building the release—e.g., {{GitHub | org=fiji | repo=Trainable_Segmentation | commit= | label=this Trainable_Segmentation commit bumps to 2.2.2-SNAPSHOT}}. This second push avoids accidentally having two different commits that purport to be the same non-SNAPSHOT version (since release versions must be unique and immutable).
 
