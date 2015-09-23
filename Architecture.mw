@@ -196,9 +196,10 @@ The [[SciJava Common]] (SJC) library provides a plugin framework with [https://e
 
 == Reproducible builds ==
 
-{{Sidebox
+{{Box
 | title = Why are reproducible builds so essential for science?
 | width = 40%
+| float = right
 | text =
 Arguably '''the most important thing''' in science is to gain insights about nature '''that can be verified by other researchers'''. It is this mission for which [[ImageJ]] and [[Fiji]] stand, and it is the central reason why they are [[open source]].
 
