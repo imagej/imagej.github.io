@@ -781,6 +781,10 @@ Note that the classes "geo", "longitude", and "latitude" are not just styles but
  
 /* When <div class="nonumtoc"> is used on the table of contents, the ToC will display without numbers */
 .nonumtoc .tocnumber { display:none; }
+
+/* Same as nonumtoc but this is the class suggested in https://www.mediawiki.org/wiki/Manual:Table_of_contents */
+.noautonum .tocnumber { display: none; }
+
 .nonumtoc #toc ul,
 .nonumtoc .toc ul {
     line-height: 1.5em;
