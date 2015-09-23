@@ -1710,7 +1710,7 @@ Of course, if your macro happens to return <code>[aborted]</code> for success, y
 
 The simplest way is to place the jython script file into fiji/plugins/ folder or a subfolder, and it will appear in the menus after running "'{{bc | Plugins | Scripting | Refresh Jython Scripts}}'" or "'{{bc | Help | Refresh Menus}}'", or on restarting Fiji.
 
-If you want to have the Jython script show up in a place outside the Plugins menu, just put the file into an appropriate subdirectory of fiji/plugins/Scripts/; for example, if you put a Jython script called Animation_.py into fiji/plugins/Scripts/File/New/, it will be available as File {{arrow}} New {{arrow}} Animation .
+If you want to have the Jython script show up in a place outside the Plugins menu, just put the file into an appropriate subdirectory of fiji/plugins/Scripts/; for example, if you put a Jython script called Animation_.py into fiji/plugins/Scripts/File/New/, it will be available as {{bc | File | New | Animation}}.
 
 === Distributing jython scripts in a .jar file ===
 
