@@ -10,7 +10,7 @@
 
 The Glasbey lookup table (LUT) is a color table structured in a maximally discontinuous manner. That is, adjacent color bins are chosen to be as distinct from one another as possible.
 
-Like other LUTs, it is available from the Image {{arrow}} Lookup Tables menu.
+Like other LUTs, it is available from the {{bc | Image | Lookup Tables}} menu.
 
 == Labelings ==
 
