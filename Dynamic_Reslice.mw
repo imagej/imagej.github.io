@@ -26,7 +26,7 @@ dynamically this slice as the ROI is displaced or deformed.
 === ImageJ ===
 
 Download the jar file [http://fiji.sc/tinevez/Dynamic_Reslice.jar Dynamic_Reslice.jar] 
-and drop it into the ''plugins'' menu. The plugin will appear in the ''Plugins {{arrow}} Dynamic_Reslice'' menu.
+and drop it into the ''plugins'' menu. The plugin will appear in the {{bc | Plugins | Dynamic_Reslice}} menu.
 
 === Fiji ===
 
