@@ -8,7 +8,6 @@
 {{MenuItem | [[Source code]] }}
 {{MenuItem | [[Project management]] }}
 {{MenuItem | [[Coding style]] }}
-{{MenuItem | [[Releases|Development phases]] }}
 {{MenuItem | [[Debugging]] }}
 | {{#if:{{{1|}}}|collapsed|}}
 }}
