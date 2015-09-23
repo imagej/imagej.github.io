@@ -19,7 +19,7 @@
 ;'''Premises:'''
 :In order to call the plugin, you need to have at least one '''RGB color image''' open. 
 
-After clicking on ''Plugins {{arrow}} Segmentation {{arrow}} SIOX: Simple Interactive Object Extraction'', the image will be embedded into the plugin GUI.
+After clicking on {{bc | Plugins | Segmentation | SIOX: Simple Interactive Object Extraction}}, the image will be embedded into the plugin GUI.
 
 ;'''Step 1:''' Initial Segmentation.
 :Paint the regions of interest (ROIs) corresponding to the foreground and background. Select any of the ROI tools and mark the areas you consider foreground and background. To segment multiple objects, select "Allow multiple foreground components"
@@ -28,7 +28,7 @@ After clicking on ''Plugins {{arrow}} Segmentation {{arrow}} SIOX: Simple Intera
 :Select new ROIs to be added or subtracted from the current segmentation. Press "Refine" to add/subtract those areas based on the previous result.
 
 ;'''Step 3:''' Reset or Create mask.
-:Click the "Reset" button to restart the process or click on the "Create mask" button to create a binary image. Please, note that the binary image polarity will follow the option set in "Process {{arrow}} Binary {{arrow}} Options".
+:Click the "Reset" button to restart the process or click on the "Create mask" button to create a binary image. Please, note that the binary image polarity will follow the option set in {{bc | Process | Binary | Options}}.
 
 [[Image:Screenshot-SIOX_Segmentation.png|thumb|left|440px|SIOX segmentation Graphical User Interface applied to Leaf sample]]
 [[Image:SIOX-Mask.png|thumb|right|280px|Resulting mask of Leaf sample after SIOX segmentation]]
@@ -100,14 +100,14 @@ This panel is enabled during any of the other segmentation steps.
 :Creates a binary (0-255) image based on the current state of the segmentation process. The background color (black or white) is defined in {{bc | Process | Binary | Options...}} This button can be pressed during any of the previous steps.
 
 ===Save segmentator===
-You can save the segmentation information into a file by clicking on the "Save segmentator" button. This can be used later to a different image or stack of images by clicking on "Plugins {{arrow}} Segmentation {{arrow}} Apply SIOX segmentator" (see next section).
+You can save the segmentation information into a file by clicking on the "Save segmentator" button. This can be used later to a different image or stack of images by clicking on {{bc | Plugins | Segmentation | Apply SIOX segmentator}} (see next section).
 
 ===Apply SIOX segmentator===
 You can apply a previously saved SIOX segmentator to any open image or set of images (stack). 
 
 '''Step 1''': Click on the image or stack to segment.
 
-'''Step 2''': Click on "Plugins {{arrow}} Segmentation {{arrow}} Apply SIOX segmentator", and the following dialog will pop up:
+'''Step 2''': Click on {{bc | Plugins | Segmentation | Apply SIOX segmentator}}, and the following dialog will pop up:
 
 [[Image:Screenshot-Load-SIOX-segmentator.png | left | thumb | 600 px | Apply SIOX segmentator input dialog]]{{-}}
 
