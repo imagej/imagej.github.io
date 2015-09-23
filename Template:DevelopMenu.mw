@@ -8,7 +8,7 @@
 {{MenuItem | [[Source code]] }}
 {{MenuItem | [[Project management]] }}
 {{MenuItem | [[Coding style]] }}
-{{MenuItem | [[Releases]] }}
+{{MenuItem | [[Releases|Development phases]] }}
 {{MenuItem | [[Debugging]] }}
 | {{#if:{{{1|}}}|collapsed|}}
 }}
@@ -24,6 +24,7 @@
 {{Submenu | Tutorials |
 {{MenuItem | [[Writing plugins]] }}
 {{MenuItem | [[How_to_contribute_to_an_existing_plugin_or_library|Contributing to a plugin]] }}
+{{MenuItem | [[Releases|Cutting releases]] }}
 {{MenuItem | [[Distribution|Distributing your plugins]] }}
 {{MenuItem | [[Introduction_into_Developing_Plugins|ImageJ 1.x plugins]] }}
 {{MenuItem | [[Adding_new_ops|Adding new ops]] }}
