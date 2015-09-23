@@ -10,7 +10,7 @@ Fiji primarily uses TIFF as the image file format. The menu command {{bc | File 
 
 == Bio-Formats ==
 
-Many more file formats can be imported via Fiji plugins. One plugin is called [[Bio-Formats]]. This will import and export a wide number of file formats along with their important metadata. They can be accessed directly via the menu command ''File {{arrow}} Import {{arrow}} Bio-Formats'' or indirectly via the {{bc | File | Open}} menu command which will use the Bio-Formats plugin if needed. See the [http://openmicroscopy.org/site/support/bio-formats5/supported-formats.html list of supported file formats] on the Bio-Formats website for the complete list (135 as of this writing).
+Many more file formats can be imported via Fiji plugins. One plugin is called [[Bio-Formats]]. This will import and export a wide number of file formats along with their important metadata. They can be accessed directly via the menu command {{bc | File | Import | Bio-Formats}} or indirectly via the {{bc | File | Open}} menu command which will use the Bio-Formats plugin if needed. See the [http://openmicroscopy.org/site/support/bio-formats5/supported-formats.html list of supported file formats] on the Bio-Formats website for the complete list (135 as of this writing).
 
 If Bio-Formats is used, you will be prompted with a big dialog and your preferences remembered.
 
@@ -35,7 +35,7 @@ Once opened, the file information can be accessed and the information can be irr
 
 Each time point of an experiment acquired with software such as Perkin Elmer’s UltraVIEW or Scion Image’s time lapse macro is saved by the acquisition software as a single TIF. The experimental sequence can be imported to Fiji via the menu command {{bc | File | Import | Image Sequence.}}
 
-Locate the directory, click on the first image in the sequence and OK all dialogs. (You may get a couple of error messages while Fiji tries to open any non-image files in the experimental directory.) The stack will “interleave” the multiple channels you recorded, and can be de-interleaved via ''Plugins {{arrow}} Stacks - Shuffling>Deinterleave''
+Locate the directory, click on the first image in the sequence and OK all dialogs. (You may get a couple of error messages while Fiji tries to open any non-image files in the experimental directory.) The stack will “interleave” the multiple channels you recorded, and can be de-interleaved via {{bc | Plugins | Stacks - Shuffling | Deinterleave}}
 
 Selected images that are not the same size can be imported as individual images windows using ''File/Import'' and select each individual image you want imported into Fiji. Then you can put those images into a stack by {{bc | Image | Stacks | Images to stack}} Unlike the {{bc | File | Import | Image Sequence}} function, the images don’t need to be the same dimensions. If memory is limited, stacks can be opened as Virtual-Stacks with most of the stack remaining on the disk until it is required.
 
@@ -50,7 +50,7 @@ To form an image, Fiji needs to know the image dimensions, bit-depth, slice numb
 #* Offset = 0, number of image = 1, gap = 0, ‘white’ is zero = off
 #* ‘Little-endian byte order’ = on, ‘open all files in folder’ = on to open all files in folder.
 
-Non-images will also be opened and may appear as blank images and need deleting: {{bc | Image | Stacks | Delete slice}}. The stack will "interleave” the multiple channels you recorded, and can be de-interleaved via ''Plugins {{arrow}} Stacks - Shuffling>DeInterleave''. 
+Non-images will also be opened and may appear as blank images and need deleting: {{bc | Image | Stacks | Delete slice}}. The stack will "interleave” the multiple channels you recorded, and can be de-interleaved via {{bc | Plugins | Stacks - Shuffling | DeInterleave}}. 
 
 == AVI and MOV files ==
 
