@@ -909,6 +909,7 @@ h1 {
     position: fixed;
     top: 0;
     font-size: large;
+    left: 177px;
 }
 
 /* Hide the useless privacy policy, about and imprint links. */
