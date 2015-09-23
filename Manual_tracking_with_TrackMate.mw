@@ -4,9 +4,9 @@ The previous TrackMate tutorial - [[Manual editing of tracks using TrackMate]] i
 
 [[Image:TrackMate ManualTrackingEntryPoint.png|right|border|]]
 
-There is not much to do. We will use the same, simple dataset that for [[Getting started with TrackMate]]. You can find it in ''File {{arrow}} Open Samples {{arrow}} Tracks for TrackMate (807K)''. 
+There is not much to do. We will use the same, simple dataset that for [[Getting started with TrackMate]]. You can find it in {{bc | File | Open Samples | Tracks for TrackMate (807K)}}. 
 
-As for the TrackMate plugin, you could start it up normally, selecting '' Plugins {{arrow}} Tracking {{arrow}} TrackMate'' in the menu, and then when offered to select a detector and a tracker, always pick the manual one. That would work well, but we offered another entry point that has a simpler GUI dedicated to manual tracking. Pick the {{bc | Plugins | Tracking | Manual tracking with TrackMate}} menu item. 
+As for the TrackMate plugin, you could start it up normally, selecting {{bc | Plugins | Tracking | TrackMate}} in the menu, and then when offered to select a detector and a tracker, always pick the manual one. That would work well, but we offered another entry point that has a simpler GUI dedicated to manual tracking. Pick the {{bc | Plugins | Tracking | Manual tracking with TrackMate}} menu item. 
 
 You should should get the layout pictured on the right. Notice that we are already displaying the ''Display options'' panel of the classic GUI, and that the ''previous'' button is disabled at the bottom. Notice also that the color scales for both spot and track features display a dummy range.
 
