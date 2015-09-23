@@ -16,7 +16,7 @@ The process of spatial calibration involves calibrating a single image against k
 <li>Now turn on the "Global" option by clicking the check box, so all open images will take the same spatial calibration when you click OK. (If not then only the image with the line selection is calibrated.  
 [[Image:SpatialCalibrationSS1.png|700px]]</li>
 <li>Now you will see that the test image is spatially calibrated. In the info bar at the top of the image, the numbers have spatial units! Notice the (G) in the name bar of both the images. That means calibration is being set the same for all open images. </li>
-<li>Now make a line or area selection. If you use the measure function "Analyze {{arrow}} Measure" or ctrl / apple M, the resuts will be spatially calibrated.
+<li>Now make a line or area selection. If you use the measure function {{bc | Analyze | Measure}} or {{key|Ctrl|M}}, the results will be spatially calibrated.
 [[Image:SpatialCalibrationSS2.png]]
 </li>
 </ol>
