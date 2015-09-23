@@ -10,7 +10,7 @@ Five different parameters can be adjusted:
 As result, the script will display the set of filters, the filtered version of the original image for each orientation, and the projections (average, min, max, mean and variance) of the stack of filtered images.
 
 == Example ==
-This is an example of the script results using the Leaf sample image ("File {{arrow}} Open Samples {{arrow}} Leaf (36K)") and sigma = 8.0, gamma = 0.25, psi = 0.0, Fx = 3.0, nAngles = 5.
+This is an example of the script results using the Leaf sample image ({{bc | File | Open Samples | Leaf (36K)}}) and sigma = 8.0, gamma = 0.25, psi = 0.0, Fx = 3.0, nAngles = 5.
 [[Image:Montage-Gabor-filter-5-angles.png|thumb|760px|Demonstration of a Gabor filter applied to the Leaf sample image. Five orientations are shown on the right (0°, 36°, 72°, 108° and 144°). The original Leaf picture is shown on the upper-left corner.]]
 
 == Code ==
