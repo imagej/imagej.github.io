@@ -23,7 +23,7 @@ If you have any questions or suggestions about JRuby scripting in ImageJ, please
 
 == Tutorial ==
 
-Let's start writing some JRuby right away - start up the interpreter by going to "Plugins {{arrow}} Scripting {{arrow}} JRuby Interpreter".  The interpreter window will pop up, but it may take a little time for the JRuby runtime to be ready.  You should initially see the message:
+Let's start writing some JRuby right away - start up the interpreter by going to {{bc | Plugins | Scripting | JRuby Interpreter}}.  The interpreter window will pop up, but it may take a little time for the JRuby runtime to be ready.  You should initially see the message:
 
   Starting JRuby ...
 
@@ -38,7 +38,7 @@ Now you can start typing Ruby expressions into that window, such as:
 
 It would be a good idea to take a quick look at the page on [[Scripting Help]] for tips on using this interpreter window.l
 
-Try loading one of the ImageJ sample images by going to "File {{arrow}} Open Samples {{arrow}} T1 Head (2.4M, 16-bits)".  Once you've done that we'll examine the image using JRuby.  You can get a reference to the current image with ij.IJ.getImage.  Try assigning the result to a variable, like this:
+Try loading one of the ImageJ sample images by going to {{bc | File | Open Samples | T1 Head (2.4M, 16-bits)}}.  Once you've done that we'll examine the image using JRuby.  You can get a reference to the current image with ij.IJ.getImage.  Try assigning the result to a variable, like this:
 
   >>> i = ij.IJ.getImage
   imp[t1-head.tif 256x256x129]
