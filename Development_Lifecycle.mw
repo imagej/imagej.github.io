@@ -1,6 +1,6 @@
-{{Notice | This page describes the [[SciJava]] software release process used in core [[ImageJ]] and [[Fiji]] development and distribution.
-* For an overview and discussion of distribution methods, see [[Distribution]].
-* To download software releases, see [[Downloads]].}}
+{{Notice | This page describes the [[SciJava]] ''software release process'',<br>used in core [[ImageJ]] and [[Fiji]] development and distribution.
+* For an overview of ''distribution methods'', see [[Distribution]].
+* To ''download'' software releases, see [[Downloads]].}}
 {{Development}}
 
 <div class="nonumtoc">__TOC__</div>
