@@ -12,8 +12,8 @@
 = Quickstart =
 
 * Press {{key|[}} to bring up the [[Script Editor]].
-* Select an example Groovy script from the <code>Templates {{arrow}} Groovy</code> menu.
-* Press {{key|Ctrl}}+{{key|R}} to run the script!
+* Select an example Groovy script from the {{bc | Templates | Groovy}} menu.
+* Press {{key|Ctrl|R}} to run the script!
 
 = See also =
 * The [http://groovy.codehaus.org/Quick+Start Groovy Quick Start] guide
