@@ -26,7 +26,7 @@ Links to the contributors' personal pages can be found [[Contributors|here]].
 |valign=center|The [http://tech.knime.org/community/image-processing Konstanz kNowledge Information Mining Environment].
 |-
 |[[File:Mm-icon.jpg|left|150px]]
-|valign=center|[http://micro-manager.org/ µManager] is an extensive software suite to interact with microscopes. It integrates nicely as an ImageJ plugin (''Plugins {{arrow}} Micro-Manager>Micro-Manager Studio'').
+|valign=center|[http://micro-manager.org/ µManager] is an extensive software suite to interact with microscopes. It integrates nicely as an ImageJ plugin ({{bc | Plugins | Micro-Manager | Micro-Manager Studio}}).
 |-
 |[[File:OpenSPIM-logo.png|left|150px]]
 |valign=center|[http://openspim.org/ OpenSPIM] is an Open Access and Open Source project to make Single Plane Illumination Microscopy (SPIM) accessible to researchers working with, or on, SPIM technology.
