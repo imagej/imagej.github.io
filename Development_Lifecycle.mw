@@ -11,7 +11,7 @@ The SciJava [[philosophy]] is to [[Philosophy#Release_early.2C_release_often|rel
 
 = Phases of development =
 
-Whether adding new features, fixing bugs, improving performance, etc... '''development''' in the process of making changes. In the SciJava development cycle, we use [[Git]] to manage these changes: capturing state as [http://gitref.org/basic/ commits] which can then be shared and referenced. From the bottom-up, an application such as [[ImageJ]] looks like this:
+Whether adding new features, fixing bugs, improving performance, etc... '''development''' is the process of making changes. In the SciJava development cycle, we use [[Git]] to manage these changes: capturing state as [http://gitref.org/basic/ commits] which can then be shared and referenced. From the bottom-up, an application such as [[ImageJ]] looks like this:
 
 * At the lowest level is the [[Source|source code]] and corresponding metadata.
 * Changes to the source are tracked as '''commits''' with [[Git]].
