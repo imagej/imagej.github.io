@@ -37,7 +37,7 @@ You can analyze multiple ROIs at once with Bob Dougherty’s ''Multi Measure'' p
 The Multi Measure plugin that comes with the installation is v3.2.
 
 # Open confocal-series and remove the background (See Background correction)
-# Generate a reference stack for the addition of ROIs. Use the ''Image {{arrow}} Stacks {{arrow}} Z-project'' function and select the ''Average''.
+# Generate a reference stack for the addition of ROIs. Use the {{bc | Image | Stacks | Z-project}} function and select the ''Average''.
 # Rename this image something memorable.
 # Open the ''ROI Manager'' plugin ({{bc | Analyze | Tools | Roi Manager}} or toolbar icon).
 # Select ROIs and "''Add''" to the ROI manager. Click the "''Show All''" button to help avoid analyzing the same cell twice.
@@ -60,13 +60,13 @@ Oval and rectangular ROIs can be restored individually from x, y, l, h values wi
 [[File:intensity_ratio_analysis.jpg|right]]
 Ratiometric imaging compares the recordings of two different signals to see if there are any similarities between them. It is done by dividing one channel by another channel to produce a third ratiometric channel. This technique is useful because it corrects for dye leakage, unequal dye loading, and photo-bleaching. An example application would be measuring intracellular ion, pH, and voltage dynamics in real time. 
 
-Background subtraction is needed before analysis of dual-channel ratio images. See also the [[#Background_correction|background correction]] section. The ''Ratio_Profiler'' plugin will perform ratiometric analysis of a single ROI on a dual-channel interleaved stack. The odd-slices are channel 1 images and the even slices are channel 2 images. If your two channels are opened as separate stacks, such as Zeiss, the two channels can be interleaved (mixed together by alternating between them) with the menu command "''Plugins {{arrow}} Stacks - Shuffling {{arrow}} Stack Interleaver''".
+Background subtraction is needed before analysis of dual-channel ratio images. See also the [[#Background_correction|background correction]] section. The ''Ratio_Profiler'' plugin will perform ratiometric analysis of a single ROI on a dual-channel interleaved stack. The odd-slices are channel 1 images and the even slices are channel 2 images. If your two channels are opened as separate stacks, such as Zeiss, the two channels can be interleaved (mixed together by alternating between them) with the menu command {{bc | Plugins | Stacks - Shuffling | Stack Interleaver}}.
 
 The plugin will generate a green-plot of the ratio values. Ch1÷Ch2 is the default and you can get Ch2÷Ch1 if the plugin is run with the {{key|Alt}} key down. It will also generate a second plot of the intensities of the individual channels, Ch1 and Ch2, as well as a results table.
 
 The first row of the results table contains values for the x, y, width and height of the ROI.
 
-From the second row downward, the first column is the time (slice number), the second column is the Ch1 mean intensity, and the third channel is the Ch2 mean intensity and the ratio value. The stack must have its frame interval calibrated in order for the "Time" value to be in seconds. Otherwise, it is "Slices". The frame interval can be set for the stack via the menu command ''"Image {{arrow}} Properties"''.
+From the second row downward, the first column is the time (slice number), the second column is the Ch1 mean intensity, and the third channel is the Ch2 mean intensity and the ratio value. The stack must have its frame interval calibrated in order for the "Time" value to be in seconds. Otherwise, it is "Slices". The frame interval can be set for the stack via the menu command ''{{bc | Image | Properties}}.
 
 This table can be copied to the clipboard and pasted elsewhere with the "{{bc | Edit | Copy All}}" menu command.
 
@@ -84,7 +84,7 @@ The results window contains the mean of ch1 and ch2 and their ratio. Each row is
 
 To generate a reference image:
 
-# Flatten the stack with the menu command(''Image {{arrow}} Stacks {{arrow}} Z-project" with "Projection type: Maximum"''),
+# Flatten the stack with the menu command ({{bc | Image | Stacks | Z-project}} with "Projection type: Maximum"),
 # Adjust the brightness and contrast if necessary.
 # Select the new image and click the "More" button in the ROI manager. After that select "Label".
 
@@ -106,7 +106,7 @@ Linescanning involves acquiring a single line, one pixel in width, from a common
 
 A pseudo-linescan generation of a 3-D (''x, y, t'') image. It is useful for displaying 3-D data in 2 dimensions.
 
-A line of interest is drawn followed by the command: {{bc | Image | Stacks | Reslice}} or with the keyboard button {{key|/}}. It will ask you for the line width that you wish to be averaged. It will generate a pseudo-linescan "stack" with each slice representing the pseudo-linescan of a single-pixel wide line along the line of interest. Average the pseudo-linescan "stack" by selecting ''Image {{arrow}} Stacks {{arrow}} Z-Project...'' and use the ''Average'' command. A poly-line can be utilized, but this will only generate a single pixel slice.
+A line of interest is drawn followed by the command: {{bc | Image | Stacks | Reslice}} or with the keyboard button {{key|/}}. It will ask you for the line width that you wish to be averaged. It will generate a pseudo-linescan "stack" with each slice representing the pseudo-linescan of a single-pixel wide line along the line of interest. Average the pseudo-linescan "stack" by selecting {{bc | Image | Stacks | Z-Project...}} and use the ''Average'' command. A poly-line can be utilized, but this will only generate a single pixel slice.
 
 Fiji's default settings assume that stacks are ''z''-series rather than ''t''-series. This means that many functions related to the third-dimension of an image stack are referred to with a ''z-''. Just keep this in mind.
 
@@ -226,7 +226,7 @@ Use this technique on brightfield images. You can correct uneven illumination or
 
 # Open both the experimental image and the flat-field image.
 # Click the ''Select all'' button on the flat-field image and measure the average intensity. This value, the k1 value, will appear in the results window.
-# Use the ''Image Calculator plus'' plugin (Analyze {{arrow}} Tools {{arrow}} Calculator plus).
+# Use the ''Image Calculator plus'' plugin ({{bc | Analyze | Tools | Calculator plus}}).
 # i1 = experimental image; i2 = flat-field image; k1 = mean flat-field intensity; k2 = 0. Select the "''Divide"'' operation.
 
 This can also be done using the {{bc | Process | Image Calculator}}function with the ''32-bit Result'' option checked. Then adjust the brightness and contrast and convert the image to 8-bit.
