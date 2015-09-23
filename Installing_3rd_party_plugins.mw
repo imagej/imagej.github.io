@@ -34,9 +34,9 @@ The .config file should look something like this:
 
         File, "Show Prime Numbers", Primes_("")
 
-where "File" is the menu you want to add the item to -- at the moment, the
-only valid choices are "Plugins", "Plugins {{arrow}} <submenu>", "File {{arrow}} Import",
-"File {{arrow}} Save", "Analyze {{arrow}} Tools", "Help {{arrow}} About" and "Edit {{arrow}} Options".
+where {{bc | File}} is the menu you want to add the item to -- at the moment, the
+only valid choices are {{bc | Plugins}}, {{bc | Plugins | <submenu>}}, {{bc | File | Import}},
+{{bc | File | Save}}, {{bc | Analyze | Tools}}, {{bc | Help | About}} and {{bc | Edit | Options}}.
 
 Next comes the title of the menu item, and lastly the class name of the
 plugin with a parameter that will be passed to the run() method of that
