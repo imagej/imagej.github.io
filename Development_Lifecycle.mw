@@ -162,7 +162,7 @@ In cases like this, when you have a new version of your plugin to release, you s
 
 An update site can be hosted anywhere, though the ImageJ web server at http://sites.imagej.net/ offers a [[personal update site]] service.
 
-See the '''[[Distribution|distribution]]''' page for a discussion of pros and cons to distribution your plugin on a core or personal update site.
+See the '''[[Distribution|distribution]]''' page for a discussion of pros and cons of distributing your plugin on a core versus a personal update site.
 
 If you do manage [[How to set up and populate an update site|your own update site]], you can upload your release yourself.
 
