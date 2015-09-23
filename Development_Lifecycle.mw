@@ -60,7 +60,7 @@ First push your changes back to a branch of your forked repository (it doesn't n
 
 == Phase 3: Released ==
 
-''Note:'' This step must be performed by a [[Governance|project maintainer]].
+''Note:'' This step can only be performed by a [[Governance|project maintainer]].
 
 Once the <code>master</code> branch of a component has your desired new functionality, the next step is to cut a ''release'' version of the component. Normally, the Maven version (in the [https://maven.apache.org/pom.html#Introduction pom.xml]) on master is a ''SNAPSHOT'' version, meaning it is [[Reproducible builds|unstable]] and not yet released. However, a [[Reproducible_builds|stable]] ''release'' artifact can be deployed to the ImageJ Maven repository in one of three methods, described below. As a rule of thumb, SciJava developers currently use:
 
