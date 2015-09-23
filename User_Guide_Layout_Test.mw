@@ -150,4 +150,4 @@ If you want to add other templates, here you can find the ones existing on image
 </pre>
 {{OSX | Everyone agrees: OS X is the ''best'' operating system!}}
 
-{{Code}}
+{{Code| this is a line of code}}
