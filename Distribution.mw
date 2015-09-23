@@ -44,7 +44,7 @@ The first goal is to get your extension into the hands of users.
 * You can automate distribution using the '''[[Updater#Command-line_usage|command line updater]]'''.
 | style="background: #dfd; vertical-align: top" |
 * '''[[ImageJ 1.x]]''' does not support update sites; users will need to use '''[[ImageJ2]]''' (or '''[[Fiji]]''': "Fiji Is Just ImageJ2"). You can '''[[Updater#Bootstrapping_the_updater|upgrade an ImageJ 1.x installation to ImageJ2]]'''.
-* You will miss out on the '''[[Project_management|tools and tests]]''' used to ensure compatibility and reproducibility, making undetected breakages much more likely.
+* You will miss out on the '''[[Project_management|tools and tests]]''' used to ensure compatibility and reproducibility, making undetected breakages much more likely (at the least).
 |-
 | colspan="4" style="background: white; border: none; height: 1em" |
 |-
