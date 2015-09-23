@@ -18,7 +18,7 @@ The "*.tubes.tif" file must be a 32-bit float image.  Then, if you select the "U
 
 === A single image ===
 
-To process a single image, load your image ("test.lsm", say) into Fiji and select "Plugins {{arrow}} Process {{arrow}} Frangi Vesselness".  (There is more information about this plugin [[Frangi|on its page]].)  By way of example, let's say that you select 4 scales from half the x voxel separation to twice that value.
+To process a single image, load your image ("test.lsm", say) into Fiji and select {{bc | Plugins | Process | Frangi Vesselness}}.  (There is more information about this plugin [[Frangi|on its page]].)  By way of example, let's say that you select 4 scales from half the x voxel separation to twice that value.
 
 Then save that file in the same directory as "test.tubes.tif".
 
