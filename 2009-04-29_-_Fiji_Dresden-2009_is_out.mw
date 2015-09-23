@@ -13,7 +13,7 @@ The changes:
 # updated bUnwarpJ (thanks Ignacio Arganda Carreras)
 # the bundled ImageJA now uses a method to discover a running instance  that is safe in a multi-user environment
 # updated Bio#Formats (thanks Melissa Linkert and Curtis Rueden)
-# added the Help {{arrow}} Report a Bug plugin (thanks Mark Longair)
+# added the {{bc | Help | Report a Bug}} plugin (thanks Mark Longair)
 # added the MTrack2 plugin (thanks Nico Stuurman)
 # added the ToAST plugin (thanks Misha Kudryashev)
 # Java 1.6 is used on 64-bit MacOSX, when possible
@@ -22,7 +22,7 @@ The changes:
 # updated the AnalyzeSkeleton plugin (thanks Ignacio Arganda Carreras)
 # added the Time Stamper plugin (thanks Daniel James White)
 # added the Auto Threshold plugin (thanks Gabriel Landini)
-# if you drop a .java file into the plugins/ directory and call  Plugins {{arrow}} Scripting {{arrow}} Refresh Javas, it will be added to the Plugins  menu and be compiled transparently upon being called.
+# if you drop a .java file into the plugins/ directory and call  {{bc | Plugins | Scripting | Refresh Javas}}, it will be added to the Plugins  menu and be compiled transparently upon being called.
 # added scripting examples showing how to interact with the mouse and add  Java listeners written in the scripting language
 # added the Arrow plugin
 # added the Stack Manipulation plugin (thanks Jean-Yves Tinevez)
@@ -51,10 +51,10 @@ The changes:
 # AbstractInterpreters cursor up/down behavior was fixed (hopefully for good now...),
 # the Multi Thresholder plugin was removed, as we have something better in the form of Auto Threshold and Auto Local Threshold (thanks Jean-Yves Tinevez and Gabriel Landini),
 # Jean-Yves Tinevez performed a massive task in getting plugin descriptions as well as maintainer information onto our Wiki; if you have not put yourself as maintainer of your own plugins, please do so now,
-# a rather massive bug was fixed with Help {{arrow}} Update Menus; modified plugins were not loaded anew, but the old versions were retained in memory,
+# a rather massive bug was fixed with {{bc | Help | Update Menus}}; modified plugins were not loaded anew, but the old versions were retained in memory,
 # Erwin Frise made some modifications to the Level Set plugin: it remembers previously set parameters, and is substantially faster now,
 # Albert Cardona updated TrakEM2 to version 0.7c,
-# Plugins {{arrow}} Scripting {{arrow}} Macro Interpreter uses our AbstractInterpreter framework now (thanks to Albert Cardona), with command line history and all,
+# {{bc | Plugins | Scripting | Macro Interpreter}} uses our AbstractInterpreter framework now (thanks to Albert Cardona), with command line history and all,
 # Gabriel Landini pointed out that our Daltonize plugin is misnamed: it simulates color blindness, rather than trying to compensate for it.
 # ImageJA no longer opens a port, requiring user consent on Windows.
 # Mark Longair and Benjamin Schmid contributed the Shape Based Average plugin based on a paper by Torsten Rohlfing.
