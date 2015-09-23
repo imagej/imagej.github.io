@@ -33,7 +33,7 @@ Note that in Mac OSX with an AZERTY keyboard, the typed string does not get inte
 
 '''GetPixel''': reports to the Log window the r,g,b values of the pixel at the specified postion (requires x, y coordinates). It will also return the Width and Height of the screen, as well as the coordinates of the pixel.
 
-'''CaptureScreen''': this is similar to the IJ function Plugins {{arrow}} Utilities {{arrow}} Capture Screen.
+'''CaptureScreen''': this is similar to the IJ function {{bc | Plugins | Utilities | Capture Screen}}.
 
 A handy way to find the target coordinates is to first grab the screen (which opens as an image in IJ) and check the coordinates with the mouse in IJ (reported in the status bar).
 
@@ -48,6 +48,6 @@ It may be also necessary to slow down the macro calls to this plugin between ord
 The included demo, seems to work fine in various platforms. Make sure that there are no open images in IJ and that please do not move the mouse while running the macro.
 
 == Menu Path ==
-Plugins {{arrow}} Utilities (2nd on the list!) > IJ Robot
+{{bc | Plugins | Utilities (2nd on the list!) | IJ Robot}}
 
 [[Category:Plugins]]
