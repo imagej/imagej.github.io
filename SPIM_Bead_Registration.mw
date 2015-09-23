@@ -86,9 +86,9 @@ The multi-channel registration will offer another field in which the channels th
 
 == How do I ... Problems, known issues and solutions ==
 
-Some tipps and tricks in the next few paragraphs require to change a static variable in the source code that changes the behavior of the plugin. This is done using the '''script editor''' and works as follows:
-* File {{arrow}} New {{arrow}} Script
-* Language {{arrow}} Beanshell
+Some tips and tricks in the next few paragraphs require to change a static variable in the source code that changes the behavior of the plugin. This is done using the '''script editor''' and works as follows:
+* {{bc | File | New | Script}}
+* {{bc | Language | Beanshell}}
 * type the command, e.g.
 <source lang="java">
 System.gc();
