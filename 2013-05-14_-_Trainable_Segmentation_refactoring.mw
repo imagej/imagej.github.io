@@ -1,5 +1,5 @@
 The original Trainable Segmentation library and plugins (Trainable Segmentation and Advanced Weka Segmentation) have been refactored for the sake of simplicity into a unified plugin and library called [[Trainable Weka Segmentation]].
 
-The plugin is just a renaming of the former Advanced Weka Segmentation so it keeps complete backwards-compatibility. The old and unmaintained Trainable Segmentation plugin has been marked as deprecated and moved to Plugins {{arrow}} Segmentation {{arrow}} deprecated.
+The plugin is just a renaming of the former Advanced Weka Segmentation so it keeps complete backwards-compatibility. The old and unmaintained Trainable Segmentation plugin has been marked as deprecated and moved to {{bc | Plugins | Segmentation | deprecated}}.
 
 [[Category:News]]
