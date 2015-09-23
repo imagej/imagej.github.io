@@ -12,23 +12,23 @@
 <noinclude>
 ==Usage==
 <pre>
-{{Sidebox | The quick brown fox jumped over the lazy dog.}}
+{{Box | The quick brown fox jumped over the lazy dog.}}
 </pre>
-{{Sidebox | The quick brown fox jumped over the lazy dog.}}
+{{Box | The quick brown fox jumped over the lazy dog.}}
 <pre>
-{{Sidebox | float=left | How much wood could a woodchuck chuck if a woodchuck could chuck wood?}}
+{{Box | float=left | How much wood could a woodchuck chuck if a woodchuck could chuck wood?}}
 </pre>
-{{Sidebox | float=left | How much wood could a woodchuck chuck if a woodchuck could chuck wood?}}
+{{Box | float=left | How much wood could a woodchuck chuck if a woodchuck could chuck wood?}}
 <div style="clear: left;"></div>
 <pre>
-{{Sidebox
+{{Box
 | title = Announcing new Shimmer!
 | text = New Shimmer is both a floor wax and a dessert topping! Here, I'll spray some on your mop.
 | width = 40%
 | float = right
 }}
 </pre>
-{{Sidebox
+{{Box
 | title = Announcing new Shimmer!
 | text = New Shimmer is both a floor wax and a dessert topping! Here, I'll spray some on your mop.
 | width = 40%
