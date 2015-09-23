@@ -28,7 +28,7 @@ Install the [http://java.com/ Java 8 JRE] or [http://www.oracle.com/technetwork/
 
 === On Windows ===
 
-Install Java 7, and delete or rename the <code>ImageJ.app\java</code> and/or <code>ImageJ.app\jre</code> folders, if they exist. If this does not result in Fiji using the expected Java version, check the Environment Variables (Control Panel {{arrow}} System and Security {{arrow}} System {{arrow}} Advanced Settings {{arrow}} Advanced {{arrow}} Environment Variables) for the variable "JAVA_HOME".  If it exists, change its value to the desired jdk or jre (for instance: "C:\Program Files\Java\jdk1.8.0_51").
+Install Java 7, and delete or rename the <code>ImageJ.app\java</code> and/or <code>ImageJ.app\jre</code> folders, if they exist. If this does not result in Fiji using the expected Java version, check the Environment Variables ({{bc | Control Panel | System and Security | System | Advanced Settings | Advanced | Environment Variables}}) for the variable "JAVA_HOME".  If it exists, change its value to the desired jdk or jre (for instance: "C:\Program Files\Java\jdk1.8.0_51").
 
 === On OS X ===
 
@@ -83,13 +83,13 @@ The term ''headless'' refers to running ImageJ without a graphical desktop, e.g.
 
 ImageJ will report itself as "up to date" as long as all files installed in your ImageJ match the latest versions from the remote update sites. However, there are cases where your ImageJ may report itself as "up to date" but still be missing critical files, or have mismatching versions (e.g., the dreaded "NoSuchMethodError").
 
-To be certain, run Help {{arrow}} Update, and click the "Advanced mode" button. Then verify the following View Options:
+To be certain, run {{bc | Help | Update...}}, and click the "Advanced mode" button. Then verify the following View Options:
 
 * '''View uninstalled files only:''' Shows files that are available from remote ImageJ update sites, but ''not'' installed in your ImageJ. Consider changing the "Status/Action" to "Install" for these items, especially any .jar files that are flagged with "Not installed" status.
 * '''View locally modified files only:''' Shows files that have been edited locally (i.e., do not match any version from the remote update sites). Consider changing the "Status/Action" to "Update" for these items, especially any .jar files that you did not intentionally modify.
 * '''View local-only files:''' Shows files that are not known at all to the remote update sites. These files were likely added manually (e.g., if you installed additional plugins manually; see "How do I install additional plugins" below). Consider deleting these files if you do not need them, especially any .jar files of unknown origin or conflicting file names.
 
-If you flag any changes to be made, press the "Apply changes" to update your ImageJ. And after restarting ImageJ, you might want to run Help {{arrow}} Update again to make sure everything looks the way you expect!
+If you flag any changes to be made, press the "Apply changes" to update your ImageJ. And after restarting ImageJ, you might want to run {{bc | Help | Update...}} again to make sure everything looks the way you expect!
 
 == How do I install additional plugins? ==
 
@@ -334,10 +334,10 @@ Here are several ways to do so:
 #* You should end up with a hit like: https://github.com/imagej/ImageJA/blob/master/src/main/java/ij/plugin/Thresholder.java.
 #* This method requires that you know in which repository the code lives. However, you can combine it with the '''fiji.sc search''' method above to figure out which repository, then load the code on GitHub, if desired.
 # '''Using the "Open Source for Menu Item" command:'''
-#* Run Plugins {{arrow}} Scripting {{arrow}} Open Source for Menu Item.
+#* Run {{bc | Plugins | Scripting | Open Source for Menu Item}}.
 #** Unfortunately, you must select this from the menu, not using the Command Finder.
 #* Run the command whose source you want to see.
-#** E.g., Process {{arrow}} Binary {{arrow}} Make Binary.
+#** E.g., {{bc | Process | Binary | Make Binary}}.
 #** Again, select it from the menu directly, not using the Command Finder.
 #* This will open the source using the [http://fiji.sc/git fiji.sc gitweb interface].
 
@@ -431,7 +431,7 @@ If you have an issue that is not mentioned here, you might want to [[Help|ask on
 
 == How to report issues? ==
 
-Use the ''Help {{arrow}} [[Report a Bug]]'' command, which adds a ticket report to the [http://fiji.sc/bugzilla/ Fiji bug tracker]. While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
+Use the {{bc | Help | [[Report a Bug]]}} command, which adds a ticket report to the [http://fiji.sc/bugzilla/ Fiji bug tracker]. While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
 
 == I reported an issue, but it is still not fixed! Why not? ==
 
