@@ -18,4 +18,4 @@ There are various ways to select a path in the 3D viewer, from easiest to most d
 
 * If you select a path in the 3D viewer, it should now also be selected in the rest of the tracing interface.  One way of doing this is via the "Select" menu.
 
-* Alternatively, you can click on the path in the 3D view.  Note that you will probably have the problem that clicks in the 3D view only select the <i>volume</i> rather than the paths - you can get around this by selecting the volume and then unticking "Edit {{arrow}} Hide/Show {{arrow}} Show content" to hide the volume rendering.  Then clicking on the paths will be easy.
+* Alternatively, you can click on the path in the 3D view.  Note that you will probably have the problem that clicks in the 3D view only select the <i>volume</i> rather than the paths - you can get around this by selecting the volume and then unticking {{bc | Edit | Hide/Show | Show content}} to hide the volume rendering.  Then clicking on the paths will be easy.
