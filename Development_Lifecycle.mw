@@ -128,7 +128,7 @@ Historically, the "double push to master" approach was the recommended way to re
 # Make a second commit incrementing the version to the next SNAPSHOT version.
 # Push again to GitHub—both the SNAPSHOT-version master branch '''and the release tag'''.
 
-The disadvantage to this method is that, since the steps are not automated, there is room for error and inconsistency—not pushing the tag, not making a commit to go back to a SNAPSHOT version, etc.
+The disadvantage to this method is that, since the steps are not automated, there is room for error and inconsistency—not pushing the tag, not making a commit go back to a SNAPSHOT version, etc.
 
 {{Warning | This process works because Jenkins automatically builds the project in response to commits on master. Whether they are deployed as [[Maven]] releases or SNAPSHOTs is determined entirely by the version number in the pom.xml for the project. This is why it is especially important to change the version back to a SNAPSHOT after the release: only one release for a given version can exist, and once it exists it cannot be overwritten. If you create multiple git commits at the same release version, it becomes unclear which one is the [[Reproducible builds|"real" release in Maven terms]].}}
 
