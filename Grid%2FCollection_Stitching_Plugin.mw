@@ -19,8 +19,8 @@ To learn more about Stitching, please read the [[Stitching]] section of [[Techni
 
 
 = How to use the Grid/Collection Stitching plugin =
-*Launch the stitching plugin from the menu item Plugins {{arrow}} Stitching {{arrow}} Grid/Collection stitching
-**Launch the stitching plugin from the menu item Plugins {{arrow}} Stitching {{arrow}} Grid/Collection stitching
+*Launch the stitching plugin from the menu item {{bc | Plugins | Stitching | Grid/Collection stitching}}
+**Launch the stitching plugin from the menu item {{bc | Plugins | Stitching | Grid/Collection stitching}}
 *In the plugin's graphical user interface (GUI), choose the position type as Positions from file from the first dropbox menu. Then choose the order as Defined by image metadata. With this choice, the images within your file do not need to be in any particular order. Click ok. 
 *When a second GUI appears, select a file from your dataset. 
 **If Prairie was used for data collection, ensure that the file selected is a .xml or .cfg
@@ -40,7 +40,7 @@ Certain data sets have caused an inversion of coordinates when stitched together
 == Speed ==
 === Memory Allocation ===
 If "use virtual memory" has been selected but the stitching plugin is still taking a considerable amount of time, try allocating more memory to the process. 
-*Open Memory from the menu item ''Edit {{arrow}} Options {{arrow}} Memory & Threads''
+*Open Memory from the menu item {{bc | Edit | Options | Memory & Threads}}
 *Enter the amount of memory you would like to be allocated to the Fiji application in megabytes
 **Check the amount of installed RAM on your computer to ensure you do not try to allocate more memory than exists.
 
