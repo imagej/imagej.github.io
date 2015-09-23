@@ -33,7 +33,7 @@ and Verena Kaynig, and many other helpers.
 
 * many, many improvements in [[bUnwarpJ]] (thanks Ignacio Arganda-Carreras).
 
-* Context Help: If you click on Help {{arrow}} Help on Menu Item, the next click on a menu item will open the corresponding page (if there is one) on the Fiji Wiki.
+* Context Help: If you click on {{bc | Help | Help on Menu Item}}, the next click on a menu item will open the corresponding page (if there is one) on the Fiji Wiki.
 
 * Statistical Region Merging can work in 3D now (this uses lots of memory).
 
@@ -84,7 +84,7 @@ and Verena Kaynig, and many other helpers.
 
 * The code of the [[VIB Protocol]] was improved (thanks to Mark Longair, Benjamin Schmid and Nick Weiler).
 
-* Plugins {{arrow}} Macros {{arrow}} About Startup Macros works again (thanks Gabriel Landini).
+* {{bc | Plugins | Macros | About Startup Macros}} works again (thanks Gabriel Landini).
 
 * The Fiji launcher was modified to work around a Java 1.5 bug on Linux.
 
@@ -94,11 +94,11 @@ and Verena Kaynig, and many other helpers.
 
 * The Find/Replace function in the [[Script Editor]] now defaults to the selected text (thanks Tom Kazimiers).
 
-* The [[Tutorial Maker]] was renamed to Plugins {{arrow}} Utilities {{arrow}} Fiji {{arrow}} New Fiji Tutorial, and you can choose to upload to another Wiki than the Fiji Wiki (provided that it is powered by MediaWiki). It also uses the [[Script Editor]] for better usability now.
+* The [[Tutorial Maker]] was renamed to {{bc | Plugins | Utilities | Fiji | New Fiji Tutorial}}, and you can choose to upload to another Wiki than the Fiji Wiki (provided that it is powered by MediaWiki). It also uses the [[Script Editor]] for better usability now.
 
 * The [[Image Expression Parser]] plugin was added, providing much more powerful operations on Images than the simple Image Calculator or Image Calculator Plus plugins (thanks to Jean-Yves Tinevez).
 
-* There is an Image {{arrow}} Adjust {{arrow}} Auto Crop plugin (cropping the maximal border that matches the background color), and an Image {{arrow}} Adjust {{arrow}} Auto Crop (guess background color) plugin (estimating the most likely background color from the border).
+* There is an {{bc | Image | Adjust | Auto Crop}} plugin (cropping the maximal border that matches the background color), and an {{bc | Image | Adjust | Auto Crop (guess background color)}} plugin (estimating the most likely background color from the border).
 
 * We have a Linear Gradient and Radial Gradient plugin now, to generate gradients in existing images.
 
@@ -130,7 +130,7 @@ and Verena Kaynig, and many other helpers.
 
 * There is an Imglib Algorithm Launcher now, which makes it easy to use the full power of imglib for users, and which is easily extensible to future algorithms in imglib (thanks to Curtis Rueden).
 
-* In Fiji, the menu entry is called Help {{arrow}} Refresh Menus instead of Help {{arrow}} Update Menus, to clarify what the function is about.
+* In Fiji, the menu entry is called {{bc | Help | Refresh Menus instead of {{bc | Help | Update Menus}}, to clarify what the function is about.
 
 * When Fiji detects that the user attempted to launch a plugin that was compiled for Java 1.6, but run on Java 1.5, it tries very hard to convert the classes to be usable on Java 1.5 nevertheless.
 
