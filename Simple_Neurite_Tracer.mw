@@ -26,11 +26,11 @@ This plugin is free software, licensed under the GNU GPL v3 (with the exception 
 
 === Installation ===
 
-Simple Neurite Tracer is distributed as part of Fiji - to install it, please [[Downloads|download Fiji]] and run "Help {{arrow}} Update Fiji" to make sure that you have the most recent version.  You can find the plugin in "Plugins {{arrow}} Segmentation {{arrow}} Simple Neurite Tracer" (or by bringing up the [[Using the Command Launcher|Command Finder]] and typing 'neurite tracer'.
+Simple Neurite Tracer is distributed as part of Fiji - to install it, please [[Downloads|download Fiji]] and run {{bc | Help | Update Fiji}} to make sure that you have the most recent version.  You can find the plugin in {{bc | Plugins | Segmentation | Simple Neurite Tracer}} (or by bringing up the [[Using the Command Launcher|Command Finder]] and typing 'neurite tracer'.
 
 === Feedback ===
 
-Please report any bugs that you find with Fiji's "Help {{arrow}} Report a Bug" menu option.  For other feedback please email ''mark-imagej'' at ''longair.net''.   There are other ways of giving feedback on Fiji (e.g. the mailing lists, IRC, etc.) listed at [[Help]].
+Please report any bugs that you find with Fiji's {{bc | Help | Report a Bug}} menu option.  For other feedback please email ''mark-imagej'' at ''longair.net''.   There are other ways of giving feedback on Fiji (e.g. the mailing lists, IRC, etc.) listed at [[Help]].
 
 I'm starting a public list of the most requested new features, which you can find on the [[Simple Neurite Tracer: Wishlist]] page.
 
