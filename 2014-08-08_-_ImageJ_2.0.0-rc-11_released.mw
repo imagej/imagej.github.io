@@ -18,7 +18,7 @@ Today, the [[Contributors|ImageJ team]] is pleased to announce a new public rele
 
 == How to test the release candidate? ==
 
-Use the <code>Help {{arrow}} Update</code> command to update your [[ImageJ]] installation.
+Use the {{bc | Help | Update}} command to update your [[ImageJ]] installation.
 
 Please send any comments to the [[Mailing Lists|ImageJ mailing list]]. And thank you very much for trying ImageJ2!
 
