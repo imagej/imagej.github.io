@@ -73,7 +73,7 @@ Because the full range of values is typically much less than the maximum—e.g.,
 
 Alternately, to disable autoscaling during initial import, you can use the [[Bio-Formats]] plugin to import your data with the "Autoscale" option turned off:
 
-* File {{arrow}} Import {{arrow}} Bio-Formats
+* {{bc | File | Import | Bio-Formats}}
 * Choose your file
 * Uncheck the "Autoscale" box
 * Click OK
@@ -95,7 +95,7 @@ While ImageJ strives for [[reproducible]] analysis, there are many reasons resul
 * Ensure that the ''options'' of ImageJ match between the machines.
 ** A fast way to ensure this is the {{bc | Edit | Options | Reset...}} command, which resets everything to its default state.
 ** Alternately, you can check the settings in the following dialog boxes:
-*** All Edit {{arrow}} Options dialog boxes
+*** All {{bc | Edit | Options}} dialog boxes
 ** {{bc | Process | Binary | Options...}} – a very common culprit of black-vs.-white issues is the "Black background" option.
 ** {{bc | Process | FFT | FFT Options...}}
 ** {{bc | Image | Overlay | Overlay Options...}}
@@ -133,7 +133,7 @@ The error means ImageJ ran out of available [https://en.wikipedia.org/wiki/Rando
 
 The first thing to do is make sure that ImageJ has a large enough "maximum heap" size:
 
-* Edit {{arrow}} Options {{arrow}} Memory &amp; Threads
+* {{bc | Edit | Options | Memory &amp; Threads}}
 * Change "Maximum Memory" to something larger (at most, 1000 MB less than your computer's total RAM).
 * Restart ImageJ for the new memory settings to take effect.
 
