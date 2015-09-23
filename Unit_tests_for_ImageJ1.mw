@@ -13,8 +13,8 @@ mvn clean test
 </source>
 Or from Eclipse:
 
-# Import the <code>ij1-tests</code> project using File {{arrow}} Import Existing Maven Projects and choosing the <code>ij1-tests/pom.xml</code> file.
-# Right-click the <code>ij1-tests</code> project, Run As {{arrow}} JUnit Test.
+# Import the <code>ij1-tests</code> project using {{bc | File | Import Existing Maven Projects}} and choosing the <code>ij1-tests/pom.xml</code> file.
+# Right-click the <code>ij1-tests</code> project, {{bc | Run As | JUnit Test}}.
 
 === Using a different version of ImageJ1 ===
 
