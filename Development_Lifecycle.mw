@@ -26,7 +26,7 @@ With this in mind, individual changes go through four general "phases":
 # '''In Development.''' The source code is modified to add new features, fix bugs, etc... these modifications may be on your local filesystem, a topic branch, or a repository fork.
 # '''On Master.''' When a change set is complete, it is put on the <code>master</code> branch of the project's repository on GitHub. This ensures the <code>master</code> branch is always ''release ready''.
 # '''Released.''' When there is a need to make the current <code>master</code> branch public (i.e. it has a critical bug fix or cool new feature) [[Maven]] is used to ''cut a release'', which is then ''deployed as an artifact'' to the [http://maven.imagej.net/index.html#welcome ImageJ Maven repository]. Developers can now use the new version in their own projects.
-# '''Uploaded.''' A release artifact is is uploaded to an ImageJ [[update site]], making it available to end users.
+# '''Uploaded.''' A release artifact is then uploaded to an ImageJ [[update site]], making it available to end users.
 
 The following sections will discuss these phases, and their associated tools and workflows, in more depth.
 
