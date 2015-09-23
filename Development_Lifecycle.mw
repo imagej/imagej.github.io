@@ -46,7 +46,7 @@ If you do not have push rights, then you need to go through an additional step c
 
 == Phase 2: On Master ==
 
-Once a feature or fix is complete it can move to the <code>master</code> branch of the repository. How you accomplish this depends on how the changes [[#Phase 1: In Development|was developed]].
+Once a feature or fix is complete it can move to the <code>master</code> branch of the repository. How you accomplish this depends on how the changes [[#Phase 1: In Development|were developed]].
 
 === Collaborating developer ===
 
