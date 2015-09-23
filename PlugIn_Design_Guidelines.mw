@@ -105,7 +105,7 @@ You can save the java code in a java file with the same name of the class. For t
 To compile the plugin, you have several options:
 
 * If you saved the java file into the ''plugins/'' directory inside the Fiji directory, after {{bc | Help | Refresh Menus}}, it will appear in the ''Plugins'' menu.
-* Call "Plugins {{arrow}} Compile and Run" and specify the where you saved the file.
+* Call {{bc | Plugins | Compile and Run}} and specify the where you saved the file.
 * Compile it from a terminal with
 <source lang="bash">./fiji --javac plugins/Duplicate_and_Scale.java</source>
 For this to work, you have to save the java file into the ''plugins/'' directory, or you have to copy the class files into said directory after compilation. For the plugin to appear in the ''Plugins'' menu, you have to call {{bc | Help | Refresh Menus}}, or to restart Fiji.
