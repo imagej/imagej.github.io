@@ -12,10 +12,10 @@ This is the list of changes in addition to the changes in the first release cand
 # AbstractInterpreters cursor up/down behavior was fixed (hopefully for good now...),
 # the Multi Thresholder plugin was removed, as we have something better in the form of Auto Threshold and Auto Local Threshold (thanks Jean-Yves Tinevez and Gabriel Landini),
 # Jean-Yves Tinevez performed a massive task in getting plugin descriptions as well as maintainer information onto our Wiki; if you have not put yourself as maintainer of your own plugins, please do so now,
-# a rather massive bug was fixed with Help {{arrow}} Update Menus; modified plugins were not loaded anew, but the old versions were retained in memory,
+# a rather massive bug was fixed with {{bc | Help | Update Menus}}; modified plugins were not loaded anew, but the old versions were retained in memory,
 # Erwin Frise made some modifications to the Level Set plugin: it remembers previously set parameters, and is substantially faster now,
 # Albert Cardona updated TrakEM2 to version 0.7c,
-# Plugins {{arrow}} Scripting {{arrow}} Macro Interpreter uses our AbstractInterpreter framework now (thanks to Albert Cardona), with command line history and all,
+# {{bc | Plugins | Scripting | Macro Interpreter}} uses our AbstractInterpreter framework now (thanks to Albert Cardona), with command line history and all,
 # Gabriel Landini pointed out that our Daltonize plugin is misnamed: it simulates color blindness, rather than trying to compensate for it.
 
 We are really close now to a final release, with just a few changes pending.  Stay tuned!
