@@ -33,7 +33,7 @@ import org.scijava.command.Command;
 import org.scijava.plugin.Parameter;
 import org.scijava.plugin.Plugin;
 
-@Plugin(type = Command.class, menu = "Plugins {{arrow}} Set Image Title")
+@Plugin(type = Command.class, menu = "Plugins &gt; Set Image Title")
 public class SetImageTitle implements Command {
     @Parameter
     private ImagePlus imp;
