@@ -96,7 +96,7 @@ To draw a measurement annotation,
 
 1. Draw a "Straight Line" along the feature you want to measure (the length is displayed in the FIJI status bar)
 
-2. Select ''Analyze {{arrow}} Microscope Measurement Tools {{arrow}} Draw Annotation - Line''.
+2. Select {{bc | Analyze | Microscope Measurement Tools | Draw Annotation - Line}}.
 
 : The annotation will be drawn directly onto the image.
 : It is recommended that you work on a copy of your file.  Unfortunately there is currently no Undo feature.  I may try to figure out ho to use the "Overlay" feature to make something like that possible.
