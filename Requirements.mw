@@ -4,7 +4,7 @@ This page should list the requirements of Fiji on different platforms to solve i
 
 ==Windows==
 
-* Java 3D 1.5.1 is shipped with Fiji and requires '''OpenGL 1.3 or higher'''. You can use ''Plugins {{arrow}} Utilities {{arrow}} Debugging {{arrow}} Test Java3D'' to test the functionality of Java 3D. If you do not see a rotating cube, install the latest graphics card driver for your system and check its OpenGL version. 
+* Java 3D 1.5.1 is shipped with Fiji and requires '''OpenGL 1.3 or higher'''. You can use {{bc | Plugins | Utilities | Debugging | Test Java3D}} to test the functionality of Java 3D. If you do not see a rotating cube, install the latest graphics card driver for your system and check its OpenGL version. 
 
 ==Mac OS X==
 
