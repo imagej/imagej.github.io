@@ -24,9 +24,10 @@ One of the central goals of the [[SciJava]] software stack is to extend Java's m
 Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing [[plugins]] and [[macros]] with new versions of ImageJ. See the [[Compatibility]] page for details.
 
 == Release early, release often ==
-{{Sidebox
+{{Box
 | title = What's the alternative?
 | width = 30%
+| float = right
 | text = Some projects opt to release their entire software stack with a single monolithic version number. This has one extremely nice ramification: it clearly communicates which versions of which software components are intended to be compatible with one another.
 <p>
 For example, the [[OME]] project (which includes [[OMERO]] and [[Bio-Formats]]) employs this approach to versioning and release management. Before each release, the entire OME team performs careful and thorough integration testing of all components.
