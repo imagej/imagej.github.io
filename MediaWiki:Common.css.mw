@@ -905,6 +905,7 @@ h1 {
 }
 
 #mw-writh-topbar {
+    background: rgba(178, 212, 239, 1) none repeat scroll 0% 0%;
     position: fixed;
     top: 0;
     font-size: large;
