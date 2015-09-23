@@ -14,7 +14,7 @@
 == Content and purpose ==
 
 This package regroups various "small" plugins dedicated to the manipulation of stacks, allowing to sort them, combine them, etc...
-As they are more of a utility package, they all can be found in the ''Image {{arrow}} Stacks {{arrow}} Tools_'' menu, next to the ones provided by bare ImageJ.
+As they are more of a utility package, they all can be found in the {{bc | Image | Stacks | Tools}} menu, next to the ones provided by bare ImageJ.
 
 
 What they do is pretty much summarized by the following diagram, taken from the [[MBF ImageJ]] webpage.
