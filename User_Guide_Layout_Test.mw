@@ -1,0 +1,153 @@
+This page should be used internally to discuss the new IJ user guide layout. Once polished, it should serve to orient on when converting old user guide sections or preparing new sections to end up with a uniform layout.
+
+The syntax is always shown in the gray boxes and the actual look you will see directly below each syntax specification.
+
+If you want to add other templates, here you can find the ones existing on imagej.net: [http://imagej.net/index.php?title=Special%3AAllPages&from=&to=&namespace=10 Template pages]
+
+== Different headline levels ==
+<pre>
+== 1 Main Menu Items ==		
+=== 1.1 Submenus/Direct commands ===
+==== 1.1.1 Sub-submenu ====	
+===== 1.1.1.1 Sub-submenu =====
+</pre>
+
+
+== 1 Main Menu Items ==		
+=== 1.1 Submenus/Direct commands ===
+==== 1.1.1 Sub-submenu ====	
+===== 1.1.1.1 Sub-submenu =====
+
+<br>
+<br>
+<br>
+<br>
+
+== Keyboard keys ==
+
+<pre>
+{{key|Ctrl}} + {{key|C}}   or    {{key|Ctrl}} + {{key|Shift}} + {{key|F}}
+</pre>
+
+{{key|Ctrl}} + {{key|C}} &nbsp;&nbsp;&nbsp; / &nbsp;&nbsp;&nbsp; {{key|Ctrl}} + {{key|Shift}} + {{key|F}}
+
+== Menu structure ==
+
+<pre>
+{{bc| Image | Color | Split Channels}}
+</pre>
+{{bc| Image | Color | Split Channels}}
+
+
+== Boxes ==
+
+<pre>
+{{Box| width=30% | As a standard box (but potentially as an adjustable template to be able to position it more freely in the site).}}
+</pre>
+{{Box| width=30% | As a standard box (but potentially as an adjustable template to be able to position it more freely in the site).}}
+<br>
+
+<pre>
+{{Box
+| title = Modifies Sidebox with title!
+| text = As a standard box (but potentially as an adjustable template to be able to position it more freely in the site).
+| width = 30%
+| float = left
+}}
+</pre>
+
+{{Box
+| title = Modifies Sidebox with title!
+| text = As a standard box (but potentially as an adjustable template to be able to position it more freely in the site).
+| width = 30%
+| float = left
+}}
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<pre>
+{{Tip
+| tip = Press the {{key|L}} key to access ImageJ's most useful feature: the [[Command Finder]].
+}}
+</pre>
+
+{{Tip
+| tip = Press the {{key|L}} key to access ImageJ's most useful feature: the [[Command Finder]].
+}}
+
+<pre>
+{{Notice | This should display a notice box used for tipps.}}
+</pre>
+{{Notice | This should display a notice box used for tipps.}}
+
+
+<pre>
+{{Warning | Something critical like do not put Fiji in the Programm Files folder!}}
+</pre>
+{{Warning | Something critical like do not put Fiji in the Programm Files folder!}}
+
+
+<pre>
+{{Tech | if necessary can be used for technical details.}}
+</pre>
+{{Tech | if necessary can be used for technical details.}}
+
+
+<pre>
+{{Fiji | To mention Fiji specific hints!}}
+</pre>
+{{Fiji | To mention Fiji specific hints!}}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<pre>
+{{Yes}}
+</pre>
+{{Yes}}
+
+
+== Specific Icons ==
+<pre>
+{{No}}
+</pre>
+{{No}}
+
+
+== Operating systems ==
+<pre>
+{{Linux | Everyone agrees: Linux is the ''best'' operating system!}}
+</pre>
+{{Linux | Everyone agrees: Linux is the ''best'' operating system!}}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<pre>
+{{Windows | Everyone agrees: Windows is the ''best'' operating system!}}
+</pre>
+{{Windows | Everyone agrees: Windows is the ''best'' operating system!}}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<pre>
+{{OSX | Everyone agrees: OS X is the ''best'' operating system!}}
+</pre>
+{{OSX | Everyone agrees: OS X is the ''best'' operating system!}}
+
+{{Code}}
