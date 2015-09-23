@@ -4,7 +4,7 @@ In this tutorial we describe step by step '''how to compare the performance of d
 Most of the information contained here has been extracted from the [http://iweb.dl.sourceforge.net/project/weka/documentation/3.7.x/WekaManual-3-7-3.pdf WEKA manual for version 3.7.3], chapter 6.
 
 === Starting the plugin ===
-To get started, open the 2D image or stack you want to work on and launch the [[Trainable Weka Segmentation]] plugin (under Plugins {{arrow}} Segmentation {{arrow}} Trainable Weka Segmentation):
+To get started, open the 2D image or stack you want to work on and launch the [[Trainable Weka Segmentation]] plugin (under {{bc | Plugins | Segmentation | Trainable Weka Segmentation}}):
 
 [[Image:Screenshot-open-AWS.png|700px]]
 
