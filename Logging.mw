@@ -25,7 +25,7 @@ Still, SLF4J is a nice thing, so the SciJava project does provide a {{GitHub | o
 
 == How does logging work in ImageJ? ==
 
-{{Sidebox |
+{{Box | float=right |
 The six standard near-universal log levels are:
 * '''<code>NONE</code>''' - Do not log any messages.
 * '''<code>ERROR</code>''' - Log only execution errors.
