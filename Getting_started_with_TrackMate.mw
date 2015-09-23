@@ -9,7 +9,7 @@ In these views, TrackMate resembles a bit to the Spot Segmentation Wizard of [ht
 
 == The test image ==
 
-The test image we will use for this tutorial has now a link in Fiji. You can find it in ''File {{arrow}} Open Samples {{arrow}} Tracks for TrackMate (807K)'', at the bottom of the list.
+The test image we will use for this tutorial has now a link in Fiji. You can find it in {{bc | File | Open Samples | Tracks for TrackMate (807K)}}, at the bottom of the list.
 
 [[Image:TrackMate FakeTracks.png|right|border|]]
 
