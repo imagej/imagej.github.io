@@ -54,7 +54,7 @@ This brings up a file open dialog. Open the XML file of your test dataset.
 The BigDataViewer can be used to visualise and navigate any image that can be opened in Fiji.
 Since Fiji relies of LOCI Bioformats library that means essentially all know microscopy file formats.
 
-For example, open the sample image ''File {{arrow}} Open Samples {{arrow}} Mitosis (26MB, 5D stack)'' from the Fiji menu.
+For example, open the sample image {{bc | File | Open Samples | Mitosis (26MB, 5D stack)}} from the Fiji menu.
 Subsequently select {{bc | Plugins | BigDataViewer | Open Current Image}} which will launch the BigDataViewer with the sample image, for navigation by arbitrary re-slicing.
 
 ==== Imaris files ====
@@ -149,7 +149,7 @@ Nearest-neighbor is faster but looks more pixelated.
 BigDataViewer datasets typically contain more than one source.
 For a SPIM sequence one usually has multiple angles and possibly fused and deconvoled data on top.
 
-Select ''Settings {{arrow}} Visibility & Grouping'' from the BigDataViewer menu to bring up a dialog to control source visibility.
+Select {{bc | Settings | Visibility & Grouping}} from the BigDataViewer menu to bring up a dialog to control source visibility.
 You can also bring up this dialog by the shortcut {{key press|F6}}.
 
 [[Image:bdv-visibility.png|500px]]
@@ -186,7 +186,7 @@ Therefore, sources can be organized into ''groups''.
 All sources of a ''group'' can be activated or deactivated at once.
 
 Source grouping is handled in the visibility and grouping dialog, too
-(menu ''Settings {{arrow}} Visibility & Grouping'' or shortcut {{key press|F6}}).
+(menu {{bc | Settings | Visibility & Grouping}} or shortcut {{key|F6}}).
 
 [[Image:bdv-grouping.png|500px]]
 
@@ -216,7 +216,7 @@ If grouping is enabled, the name of the current group is shown at the top of the
 [[Image:bdv-overlays-2.png|500px]]
 
 === Adjusting Brightness and Color ===
-To change the brightness, contrast, or color of particular sources select ''Setting {{arrow}} Brightness & Color'' or press the shortcut {{key press|S}}.
+To change the brightness, contrast, or color of particular sources select {{bc | Settings | Brightness & Color}} or press the shortcut {{key press|S}}.
 This brings up the brightness and color settings dialog.
 
 [[Image:bdv-brightness-1.png|500px]]
@@ -410,7 +410,7 @@ If the image has multiple channels, each channel will become one ''setup'' in th
 If the image has multiple frames, each frame will become one ''timepoint'' in the exported dataset.
 Of course, you may export from virtual stacks if your data is too big to fit into memory.
 
-To get started, let's open one of the ImageJ sample images by ''File {{arrow}} Open Samples {{arrow}} T1 Head (2.4M, 16-bits)''.
+To get started, let's open one of the ImageJ sample images by {{bc | File | Open Samples | T1 Head (2.4M, 16-bits)}}.
 Selecting {{bc | Plugins | BigDataViewer | Export Current Image as XML/HDF5}} brings up the following dialog.
 
 [[Image:bdv-export-stack.png|500px]]
