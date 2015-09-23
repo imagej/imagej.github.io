@@ -110,7 +110,7 @@ While ImageJ strives for [[reproducible]] analysis, there are many reasons resul
 
 == OutOfMemoryError ==
 
-{{Sidebox |
+{{Box | float=right |
 '''Why does ImageJ not release any memory back to the system?'''
 
 This is a characteristic of the Java runtime. In many cases, Java ''never'' releases memory back to the system, so memory monitors such as Windows Task Manager will always report an ever-growing amount of RAM used by the Java process, until the JVM shuts down.
