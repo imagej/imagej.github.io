@@ -1,4 +1,4 @@
-<includeonly><span style="background-color:#dfdfdf; font-family:monospace;">{{{1}}}</span></includeonly>
+<includeonly><span style="background-color:#dfdfdf; font-family:monospace;"><li>{{{1}}}</li></span></includeonly>
 <noinclude>
 A template to inline code.
 </noinclude>
