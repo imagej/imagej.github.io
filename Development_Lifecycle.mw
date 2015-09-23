@@ -154,7 +154,7 @@ After all appropriate BOMs are released, '''[[How_to_upload_to_core_update_sites
 
 ===== External developer =====
 
-[[Fiji]] illustrates a common pattern in development, where plugin maintainers have push rights to their own plugin's repository, but not the core Fiji repositories.
+[[Fiji]] illustrates a common pattern in development, where plugin maintainers have push rights to their own plugins' repositories, but not the core Fiji repositories.
 
 In cases like this, when you have a new version of your plugin to release, you should follow the [[#Phase 1: In Development|External developer]] instructions for contributing to corresponding BOM (i.e. {{GitHub | org=fiji | repo=pom-fiji | label=pom-fiji}} in this case). By [https://help.github.com/articles/using-pull-requests/ submitting a pull request] that simply modifies the [https://github.com/fiji/pom-fiji/blob/pom-fiji-15.7.0/pom.xml#L129-L259 managed version of your component], you will signal to the core Fiji developers that your project is ready for upload.
 
