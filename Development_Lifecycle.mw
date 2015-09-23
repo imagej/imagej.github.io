@@ -56,7 +56,7 @@ If your work is on a [[Git_topic_branches|topic branch]] then you should use a [
 
 === External developer ===
 
-First push your changes back to a branch of your forked repository (it doesn't necessarily have to be <code>master</code>). Then you can file a [https://help.github.com/articles/using-pull-requests/ pull request] (PR) on [[GitHub]] to merge your branch back to the official repository. This invites code review from other interested developers. Reviewers might ask for changes to the code to address any issues. After any needed revisions have been made, a [[Governance|project maintainer]] will accept your changes to the official <code>master</code> branch.
+First push your changes back to a branch of your forked repository (it doesn't necessarily have to be <code>master</code>). Then you can file a [https://help.github.com/articles/using-pull-requests/ pull request] (PR) on [[GitHub]] to merge your branch back to the official repository. This invites code review from other interested developers. Reviewers might ask for changes to the code to address any issues. After any needed revisions have been made, a [[Governance|project maintainer]] will accept your changes and then merge to the official <code>master</code> branch.
 
 == Phase 3: Released ==
 
