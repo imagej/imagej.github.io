@@ -1,9 +1,9 @@
 [[Image:Cmyk.jpg|right|thumb|300px|Trivial RGB to CMYK conversion. The left panel shows the individual CMYK channels as intensities in range [0(black)...1(white)], the right panel visualizes the individual CMYK channels as printed with the respective ink color on white paper.]]
-Natively, ImageJ supports RGB and HSL color spaces.  There is no effort spent to support [http://en.wikipedia.org/wiki/Color_management color management] because the application is targeted at scientific image processing rather than image preparation for screen or print.  For pure educational purposes, we show here how to do a trivial transformation between uncalibrated linear [http://en.wikipedia.org/wiki/Rgb RGB] to uncalibrated linear [http://en.wikipedia.org/wiki/Cmyk CMYK] where, in RGB, the grey intensity is just (R+G+B)/3.
+Natively, ImageJ supports RGB and HSL color spaces.  There is no effort spent to support [[wikipedia:Color management|color management]] because the application is targeted at scientific image processing rather than image preparation for screen or print.  For pure educational purposes, we show here how to do a trivial transformation between uncalibrated linear [[wikipedia:Rgb|RGB]] to uncalibrated linear [[wikipedia:Cmyk|CMYK]] where, in RGB, the grey intensity is just (R+G+B)/3.
 
 ==Description==
 
-CMYK is a [http://en.wikipedia.org/wiki/Subtractive_color subtractive] color space with a redundant gray channel to save color ink.  The pure Cyan, Yellow and Magenta components are calculated by linearly combining the RGB components (in unsigned byte range [0...255]):
+CMYK is a [[wikipedia:Subtractive color|subtractive]] color space with a redundant gray channel to save color ink.  The pure Cyan, Yellow and Magenta components are calculated by linearly combining the RGB components (in unsigned byte range [0...255]):
 
 c = 1 - r / 255<br />
 m = 1 - g / 255<br />
