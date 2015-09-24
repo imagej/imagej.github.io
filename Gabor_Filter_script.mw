@@ -1,4 +1,4 @@
-[[Image:Kernel-Gabor-filter.png|thumb|Example of a two-dimensional Gabor filter kernel (with a spectrum LUT).]] This is an example of how to create [http://en.wikipedia.org/wiki/Gabor_filter Gabor filters] in Fiji using Beanshell scripting. The script will create and apply a set of Gabor filters to the currently selected image.
+[[Image:Kernel-Gabor-filter.png|thumb|Example of a two-dimensional Gabor filter kernel (with a spectrum LUT).]] This is an example of how to create [[wikipedia:Gabor filter|Gabor filters]] in Fiji using Beanshell scripting. The script will create and apply a set of Gabor filters to the currently selected image.
 
 Five different parameters can be adjusted:
 * Sigma, which defines the size of the Gaussian envelope
