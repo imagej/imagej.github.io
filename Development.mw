@@ -4,12 +4,14 @@ This page provides an overview of ImageJ from the perspective of software develo
 
 == What is ImageJ? ==
 
-{| style="text-align: center"
-| style="padding-top: 2.5em; vertical-align: top" | An end-user<br>[https://en.wikipedia.org/wiki/Application_software software application]
+{|style="font-size: large; margin-left: 25px; margin-top: 5px;"
+| style="padding: 15px 15px;" | An end-user [https://en.wikipedia.org/wiki/Application_software software application]
+|-
 | [[File:Imagej-app.png | 500px | link=Getting started]]
 |-
-| style="vertical-align: middle" | Reusable<br>[https://en.wikipedia.org/wiki/Library_(computing) software libraries]
-| <source lang="java">
+| style="border-top: 1px #aaa solid; padding: 15px 15px;" | Reusable [https://en.wikipedia.org/wiki/Library_(computing) software libraries]
+|-
+| style="padding: 0 15px 15px 35px; font-size: small;" |<source lang="java">
 public void loadAndDisplay(File file) {
 	ImageJ ij = new ImageJ();
 	Object data = ij.io().open(file);
@@ -17,11 +19,13 @@ public void loadAndDisplay(File file) {
 }
 </source>
 |-
-| style="vertical-align: middle" | An extensible collection<br>of [[plugins]] and [[services]]
-| style="padding-bottom: 2em; padding-top: 2em" | [[File:Scijava-logo.png | x72px | link=SciJava]]
+| style="border-top: 1px #aaa solid; padding: 15px 15px 0 15px;" | An extensible collection of [[plugins]] and [[services]]
 |-
-| style="vertical-align: middle" | "Write once, run anywhere"<br>[[Ops|image processing routines]]
-| [[File:Write-once-run-anywhere.png | 500px | link=Ops]]
+| style="padding: 15px 0 30px 45px;" | [[File:Scijava-logo.png | x72px | link=SciJava]]
+|-
+| style="border-top: 1px #aaa solid; padding: 15px 15px 0 15px;" | ''"Write once, run anywhere"'' [[Ops|image processing routines]]
+|-
+| style="padding: 15px 0 15px 25px;" | [[File:Write-once-run-anywhere.png | 500px | link=Ops]]
 |}
 
 == Project structure ==
