@@ -30,29 +30,17 @@ The following sections will discuss these phases, and their associated tools and
 
 GitHub provides tools for controlling [https://help.github.com/articles/permission-levels-for-a-user-account-repository/ user permission levels]. How you develop your changes to a project depends on whether you are able to push (write) to that project's repository or not.
 
-=== Collaborating developer ===
+* '''Collaborating developer.''' If you have permission to push directly to the project's repository, then you can simply use [[Git]] and [[GitHub]] to [https://help.github.com/articles/cloning-a-repository/ clone the repository] and make your changes. For non-trivial changes, you will typically [[Git_topic_branches|create a topic branch]] to develop and test the changes. This also provides a forum for discussion and review with your fellow developers.
 
-If you have permission to push directly to the project's repository, then you can simply use [[Git]] and [[GitHub]] to [https://help.github.com/articles/cloning-a-repository/ clone the repository] and make your changes.
-
-For non-trivial changes, you will typically [[Git_topic_branches|create a topic branch]] to develop and test the changes. This also provides a forum for discussion with your fellow developers.
-
-=== External developer ===
-
-If you do not have push rights, then you need to go through an additional step called '''[http://www.dataschool.io/simple-guide-to-forks-in-github-and-git/ Forking the repository]'''. This gives you a personal copy of the code that you can edit.
+* '''External developer.''' If you do not have push rights, then you need to go through an additional step called '''[http://www.dataschool.io/simple-guide-to-forks-in-github-and-git/ Forking the repository]'''. This gives you a personal copy of the code that you can edit.
 
 == Phase 2: On master ==
 
 Once a feature or fix is complete it can move to the <code>master</code> branch of the repository. How you accomplish this depends on how the changes were developed in Phase 1.
 
-=== Collaborating developer ===
+* '''Collaborating developer.''' Minimal changes can be pushed back directly to <code>master</code> on the remote repository. If your work is on a [[Git_topic_branches|topic branch]] then you should use a [https://help.github.com/articles/using-pull-requests/ pull request] (PR) so that the topic branch can be reviewed before being merged to <code>master</code>.
 
-Minimal changes can be pushed back directly to <code>master</code> on the remote repository.
-
-If your work is on a [[Git_topic_branches|topic branch]] then you should use a [https://help.github.com/articles/using-pull-requests/ pull request] (PR) to merge the topic branch back to <code>master</code>.
-
-=== External developer ===
-
-First push your changes back to a branch of your forked repository (it doesn't necessarily have to be <code>master</code>). Then you can file a [https://help.github.com/articles/using-pull-requests/ pull request] (PR) on [[GitHub]] to merge your branch back to the official repository. This invites code review from other interested developers. Reviewers might ask for changes to the code to address any issues. After any needed revisions have been made, a [[Governance|project maintainer]] will accept your changes and then merge to the official <code>master</code> branch.
+* '''External developer.''' First push your changes back to a branch of your forked repository (it doesn't necessarily have to be <code>master</code>). Then you can file a [https://help.github.com/articles/using-pull-requests/ pull request] (PR) on [[GitHub]] to merge your branch back to the official repository. This invites code review from other interested developers. Reviewers might ask for changes to the code to address any issues. After any needed revisions have been made, a [[Governance|project maintainer]] will accept your changes and then merge to the official <code>master</code> branch.
 
 == Phase 3: Released ==
 
@@ -138,17 +126,7 @@ Deploying to the Maven repository creates a stable release artifact of a softwar
 
 For core projects, there is an additional layer tying User-facing and Developer-facing components together: the [[Architecture#Bill_of_Materials|Bill of Materials]] (BOM). To ensure users and developers see the same functionality, components should only be uploaded to the core update sites when their version is also updated in the corresponding BOM.
 
-===== Core developer =====
-
-Core ImageJ and Fiji developers can independently update and release the appropriate BOM as needed. Typically we use the [http://status.imagej.net/ SciJava status page] to determine what components have changes and perform the releases in batches, to mitigate the impact of an additional BOM release.
-
-After all appropriate BOMs are released, '''[[How_to_upload_to_core_update_sites|the core update site instructions]]''' describe how to perform the uploads.
-
-===== External developer =====
-
-[[Fiji]] illustrates a common pattern in development, where plugin maintainers have push rights to their own plugins' repositories, but not the core Fiji repositories.
-
-In cases like this, when you have a new version of your plugin to release, you should follow the [[#Phase 1: In development|External developer]] instructions for contributing to corresponding BOM (i.e. {{GitHub | org=fiji | repo=pom-fiji | label=pom-fiji}} in this case). By [https://help.github.com/articles/using-pull-requests/ submitting a pull request] that simply modifies the [https://github.com/fiji/pom-fiji/blob/pom-fiji-15.7.0/pom.xml#L129-L259 managed version of your component], you will signal to the core Fiji developers that your project is ready for upload.
+When you have a new version of your plugin to release, you should follow the [[#Phase 1: In development|External developer]] instructions for contributing to corresponding BOM (i.e. {{GitHub | org=fiji | repo=pom-fiji | label=pom-fiji}} in this case). By [https://help.github.com/articles/using-pull-requests/ submitting a pull request] that simply modifies the [https://github.com/fiji/pom-fiji/blob/pom-fiji-15.7.0/pom.xml#L129-L259 managed version of your component], you will signal to the core Fiji developers that your project is ready for upload.
 
 === External update sites ===
 
