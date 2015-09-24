@@ -42,7 +42,7 @@ For backwards-compatibility, ''Mini Maven'' can be called via '''./Build.sh''' i
 
 Quite a few tasks -- such as committing a new submodule or sources for a plugin, or releasing a new version of Fiji -- are performed by scripts.  These scripts live in the ''<Fiji-root>/bin/'' subdirectory.
 
-Some of these scripts are shell scripts, others are Jython scripts with special [http://en.wikipedia.org/wiki/Shebang_(Unix) shebang] lines which trigger them to be called with the current Fiji launcher.
+Some of these scripts are shell scripts, others are Jython scripts with special [[wikipedia:Shebang (Unix)|shebang]] lines which trigger them to be called with the current Fiji launcher.
 
 
 [[Category:Development]]
