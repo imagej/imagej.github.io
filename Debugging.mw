@@ -33,7 +33,7 @@ After starting the Java Virtual Machine in a special mode, debuggers (such as Ec
 ImageJ.app/ImageJ-linux64 --debugger=8000
 </source>
 
-In Eclipse (or whatever [https://en.wikipedia.org/wiki/JDWP JDWP]-enabled debugger) select the correct project so that the source code can be found, mark the break-points where you want execution to halt (e.g. to inspect variables' values), and after clicking on ''Run>Debug Configurations...'' right-click on the ''Remote Java Application'' item in the left-hand side list and select ''New''. Now you only need to make sure that the port matches the value that you specified (in the example above, ''8000'', Eclipse's default port number).
+In Eclipse (or whatever [[wikipedia:JDWP|JDWP]]-enabled debugger) select the correct project so that the source code can be found, mark the break-points where you want execution to halt (e.g. to inspect variables' values), and after clicking on ''Run>Debug Configurations...'' right-click on the ''Remote Java Application'' item in the left-hand side list and select ''New''. Now you only need to make sure that the port matches the value that you specified (in the example above, ''8000'', Eclipse's default port number).
 
 If you require more control over the ImageJ side -- such as picking a semi-random port if port 8000 is already in use -- you can also use the ''-agentlib:jdwp=...'' Java option directly (''--debugger=<port>'' is just a shortcut for convenience):
 
