@@ -1,9 +1,10 @@
-{| style="background:none;width:auto;"
+<includeonly>{|
+| style="background:none;width:auto;"
 | style="vertical-align:top" |
 {{#switch: {{{image|on}}}|off= |on=[[Image:Nuvola apps korganizer.png|50px|<nowiki></nowiki>]]<br /><div style="width:65px;height:0px;"></div>}}
 |
-<div style="position:relative;left:0px;margin-right:-0px;z-index:15">TODO:
-<ul style="font-size:85%;padding:.3em 0 .3em 25px;margin:0">
+<div style="font-size:100%;position:relative;left:0px;margin-right:-0px;z-index:10">TODO:
+
 {{#if: {{{1|}}} | #{{{1}}} }}
 {{#if: {{{2|}}} | #{{{2}}} }}
 {{#if: {{{3|}}} | #{{{3}}} }}
@@ -14,12 +15,16 @@
 {{#if: {{{8|}}} | #{{{8}}} }}
 {{#if: {{{9|}}} | #{{{9}}} }}
 {{#if: {{{10|}}} | #{{{10}}} }}
-</u>
-</div>
-|}
+
+</div>|}
+</includeonly>
+
 
 <noinclude>
 == Use ==
+<pre>
+{{guidetask|add link to wiki page|add info on usage of {{Key|Ctrl}} key}}
+</pre>
+{{guidetask|add link to wiki page|add info on usage of {{Key|Ctrl}} key}}
 
-{{guidetask|test|write something|blah}}
 </noinclude>
