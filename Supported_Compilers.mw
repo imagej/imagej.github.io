@@ -62,7 +62,7 @@ Maven automatically runs any unit tests associated with the project upon build; 
 
 == The Eclipse JDT compiler ==
 
-[http://en.wikipedia.org/wiki/Eclipse_%28software%29 Eclipse] is a powerful IDE for developing code. One advantage of the Maven project structure mentioned above is automatic support for development within Eclipse via the [http://www.eclipse.org/m2e/ m2e plugin]. See the [[Using Maven with Eclipse]] page for instructions in developing a Maven-based project (such as ImgLib2) within Eclipse.
+[[wikipedia:Eclipse %28software%29|Eclipse]] is a powerful IDE for developing code. One advantage of the Maven project structure mentioned above is automatic support for development within Eclipse via the [http://www.eclipse.org/m2e/ m2e plugin]. See the [[Using Maven with Eclipse]] page for instructions in developing a Maven-based project (such as ImgLib2) within Eclipse.
 
 It is important to understand that Eclipse uses a ''completely different'' compiler than Javac, part of '''Eclipse's [http://www.eclipse.org/jdt/core/ JDT Core]''' component. This incremental compiler is fast and powerful, and allows the Eclipse IDE to work its magic, but it has idiosyncrasies and bugs distinct from Javac (both OpenJDK6 and Oracle Java SE 6).
 
