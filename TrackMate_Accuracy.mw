@@ -36,10 +36,10 @@ It's best to directly read the paper<ref name="ISBIpaper"/> to know what is behi
 |-
 | [[#Receptor_scenario.|RECEPTOR]]
 | rowspan=3 | Spherical.
-| [http://en.wikipedia.org/wiki/Tethered_particle_motion Tethered motion]: switch between Brownian and directed motion with random orientation for the later.
+| [[wikipedia:Tethered particle motion|Tethered motion]]: switch between Brownian and directed motion with random orientation for the later.
 |-
 | [[#Vesicle_scenario.|VESICLE]]
-| [http://en.wikipedia.org/wiki/Brownian_motion Brownian motion].
+| [[wikipedia:Brownian motion|Brownian motion]].
 |-
 | [[#Virus_scenario.|VIRUS]]
 | Switch between Brownian and directed motion with fixed orientation for the later.
