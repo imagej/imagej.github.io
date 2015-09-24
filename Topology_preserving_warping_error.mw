@@ -16,12 +16,12 @@ In other words, instead of focusing on the geometric differences (pixel disagree
 
 == Pixel error ==
 [[Image:Pixel-error-description.png|thumb|360px|Pixel error between two different segmentations labels (A and B) with respect to the original labels (*, ground truth).]]
-The simplest way of evaluating a segmentation is by measuring the pixel error between the original labels and the segmented ones. Let <math>l_i</math> denote the value of the boundary labeling ''L'' at image location ''i''. The pixel error of ''L'' with respect to another binary labeling ''L''<sup>*</sup> is the number of pixel locations at which the two labelings disagree. This can also be written as the squared [http://en.wikipedia.org/wiki/Euclidean_distance Euclidean distance] <math>\parallel L - L^*\parallel^2</math>, which is equivalent to the [http://en.wikipedia.org/wiki/Hamming_distance Hamming distance] since the labels are binary-valued. 
+The simplest way of evaluating a segmentation is by measuring the pixel error between the original labels and the segmented ones. Let <math>l_i</math> denote the value of the boundary labeling ''L'' at image location ''i''. The pixel error of ''L'' with respect to another binary labeling ''L''<sup>*</sup> is the number of pixel locations at which the two labelings disagree. This can also be written as the squared [[wikipedia:Euclidean distance|Euclidean distance]] <math>\parallel L - L^*\parallel^2</math>, which is equivalent to the [[wikipedia:Hamming distance|Hamming distance]] since the labels are binary-valued. 
 
 The pixel error is appealing because of its simplicity, but suffers from a serious defect. It is '''overly sensitive to minor displacements in the location of a boundary''' that are ubiquitous even when comparing one human boundary labeling to another. These disagreements cause no qualitative differences in the interpretation of the image, but can lead to large quantitative differences in pixel error.
 
 == Digital topology and the warping error ==
-Jain ''et al.'' <ref name="Viren2010" /> introduced the '''warping error''', another metric for comparing boundary labelings based on concepts from the field of [http://en.wikipedia.org/wiki/Digital_topology digital topology]. 
+Jain ''et al.'' <ref name="Viren2010" /> introduced the '''warping error''', another metric for comparing boundary labelings based on concepts from the field of [[wikipedia:Digital topology|digital topology]]. 
 
 If ''L''<sup>*</sup> can be transformed into ''L'' by a sequence of pixel flips that each
 
@@ -30,7 +30,7 @@ If ''L''<sup>*</sup> can be transformed into ''L'' by a sequence of pixel flips 
 
 then we will say ''L'' is a ''warping of'' ''L''<sup>*</sup>, or <math>L 	\triangleleft L^*</math>. The first condition constrains ''L'' and ''L''<sup>*</sup> to be '''topologically equivalent'''. The second condition can be used to constrain ''L'' to be geometrically similar to ''L''<sup>*</sup>. Both conditions will be explained in more detail below.
 
-Now consider the pixel error of ''T'' relative to warpings of ''L''<sup>*</sup>. The ''warping error'' between some candidate labeling ''T'' and a reference labeling ''L''<sup>*</sup> is the [http://en.wikipedia.org/wiki/Hamming_distance Hamming distance] (or equivalently squared [http://en.wikipedia.org/wiki/Euclidean_distance Euclidean distance]) between ''L'' and the "best warping" of ''L''<sup>*</sup> onto ''T'':
+Now consider the pixel error of ''T'' relative to warpings of ''L''<sup>*</sup>. The ''warping error'' between some candidate labeling ''T'' and a reference labeling ''L''<sup>*</sup> is the [[wikipedia:Hamming distance|Hamming distance]] (or equivalently squared [[wikipedia:Euclidean distance|Euclidean distance]]) between ''L'' and the "best warping" of ''L''<sup>*</sup> onto ''T'':
 
 <math>D(T \parallel L^*) = \underset{L \triangleleft L^*}{min} \parallel T-L \parallel ^2 </math>                     (Eq. 1)
 
@@ -38,14 +38,14 @@ In other words, the warping error between two segmentations is the '''minimum me
 
 ===Topological constraints===
 [[Image:Simple-points-example.png|thumb|300px|Label relaxation is only allowed at simple points. The black pixels in the top circle and the white pixels in the bottom circle are not simple points, because flipping them would cause a merger or a split. Figure courtesy of [http://www.hhmi.org/research/fellows/jain_bio.html Viren Jain].]]
-To impose topological constraints on the warping, we use concepts from [http://en.wikipedia.org/wiki/Digital_topology digital topology], a field that extends the concepts of continuous-space topology to digital images. One of the most fundamental principles of this field is that
-complementary definitions of adjacency must be used for foreground (“1”) and background (“0”) pixels, so that a digital analog of the [http://en.wikipedia.org/wiki/Jordan_Curve_Theorem Jordan Curve Theorem] holds. We use the 4-adjacency for foreground and the 8-adjacency for background, and calculate [http://en.wikipedia.org/wiki/Connected-component_labeling connected components] based on these adjacencies.
+To impose topological constraints on the warping, we use concepts from [[wikipedia:Digital topology|digital topology]], a field that extends the concepts of continuous-space topology to digital images. One of the most fundamental principles of this field is that
+complementary definitions of adjacency must be used for foreground (“1”) and background (“0”) pixels, so that a digital analog of the [[wikipedia:Jordan Curve Theorem|Jordan Curve Theorem]] holds. We use the 4-adjacency for foreground and the 8-adjacency for background, and calculate [[wikipedia:Connected-component labeling|connected components]] based on these adjacencies.
 
 A major practical goal of digital topology is to identify methods of altering the ''geometry'' of objects within a digital image without altering any topological properties of the image. A '''simple point''' is defined as a '''location in a binary image at which the pixel can be flipped to its complementary value without changing any topological properties''' of the image. These properties include, for example, the number of <math>\kappa</math>-connected components of the foreground and the number of <math>\bar{\kappa}</math>-connected components of the background.
 
 Although flipping a single simple point is guaranteed to preserve topology, it is not true that simultaneously flipping an arbitrary set of ''multiple'' simple points will preserve topology. Hence, many algorithms that deform digital images
 by altering simple points instead perform a sequence of flips, where any particular flip is made at a point that is simple relative to the current state of the image. Since all flips preserve topology, such a sequence of flips is a topology-preserving deformation of the original image (sometimes
-called a [http://en.wikipedia.org/wiki/Homotopy homotopic deformation]). The converse has also been proven: two images that are topologically equivalent
+called a [[wikipedia:Homotopy|homotopic deformation]]). The converse has also been proven: two images that are topologically equivalent
 in the sense of sharing isomorphic adjacency trees can always be transformed into each other by a sequence of changes in the values of simple pixels.
 
 In short, by definition '''flipping a simple point is a topology-preserving operation and flipping a non-simple point is not topology-preserving'''. Non-simple points can be classified by the nature of the topological change they
@@ -59,11 +59,11 @@ We may wish to allow some of these types of changes, and therefore flipping of s
 We will write simple(''L'') to denote the set of simple points of ''L''.
 
 ===Geometric constraints===
-There are many ways to define the '''mask''', depending on the exact nature of the desired geometric constraints. For example, in the original paper implementation, they choose ''M'' to be the set of all pixels within [http://en.wikipedia.org/wiki/Euclidean_distance Euclidean distance] 5 from the background of ''L''. This allows the foreground of ''L'' to expand arbitrarily, as long as topology is preserved. But the foreground can shrink by only a limited amount. Note that basing ''M'' on ''L'' makes warping an asymmetric relation.
+There are many ways to define the '''mask''', depending on the exact nature of the desired geometric constraints. For example, in the original paper implementation, they choose ''M'' to be the set of all pixels within [[wikipedia:Euclidean distance|Euclidean distance]] 5 from the background of ''L''. This allows the foreground of ''L'' to expand arbitrarily, as long as topology is preserved. But the foreground can shrink by only a limited amount. Note that basing ''M'' on ''L'' makes warping an asymmetric relation.
 
 ===Descent algorithm for warping===
 [[Image:Warping-error-animation.gif|thumb|300px|Example of the topology-preserving warping of one (binary) source image onto a target one.]]
-As described by the authors, there is not an efficient algorithm for finding the global minimum in Eq. (1), and indeed this is likely to be an [http://en.wikipedia.org/wiki/NP-hard NP-hard] problem. However, there is a very simple descent algorithm for finding local minima. During warping, we are allowed to flip simple points of ''L'' that lie inside the mask ''M'', i.e., points in the set <math>simple(L) \cap M</math>. Flipping any such pixel ''j'' of ''L'' satisfying <math> \mid t_j - l_j \mid > 0.5 </math> produces a new warping with smaller error. The descent algorithm greedily picks the pixel for which this error reduction is the largest, breaking ties randomly.
+As described by the authors, there is not an efficient algorithm for finding the global minimum in Eq. (1), and indeed this is likely to be an [[wikipedia:NP-hard|NP-hard]] problem. However, there is a very simple descent algorithm for finding local minima. During warping, we are allowed to flip simple points of ''L'' that lie inside the mask ''M'', i.e., points in the set <math>simple(L) \cap M</math>. Flipping any such pixel ''j'' of ''L'' satisfying <math> \mid t_j - l_j \mid > 0.5 </math> produces a new warping with smaller error. The descent algorithm greedily picks the pixel for which this error reduction is the largest, breaking ties randomly.
 
 Descent algorithm for warping the binary image ''L''<sup>*</sup> onto the binary image ''T'', under geometric constraints set by the mask image ''M'':
 :<math>warp(L^* \in B,T \in A,M \in B)</math>
