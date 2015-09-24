@@ -12,7 +12,7 @@
 | status                 = stable, active
 | category               = [[:Category:Plugins|Plugins]], [[:Category:Filtering|Filtering]]
 }}
-The plugin '''Enhance Local Contrast (CLAHE)''' implements the method ''[http://en.wikipedia.org/wiki/CLAHE Contrast Limited Adaptive Histogram Equalization]''<ref>{{citation
+The plugin '''Enhance Local Contrast (CLAHE)''' implements the method ''[[wikipedia:CLAHE|Contrast Limited Adaptive Histogram Equalization]]''<ref>{{citation
  | last = Zuiderveld
  | first = Karel
  | contribution = Contrast limited adaptive histogram equalization
