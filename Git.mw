@@ -5,7 +5,7 @@
 * [[Git for dummies]] tutorial on this web site
 }}
 
-Development of ImageJ and related software relies heavily on [http://git-scm.com/ Git], a first-class [https://en.wikipedia.org/wiki/Distributed_version_control distributed] [https://en.wikipedia.org/wiki/Version_control version control] system. Git saves "snapshots" of the source code, keeping a history of changes.
+Development of ImageJ and related software relies heavily on [http://git-scm.com/ Git], a first-class [[wikipedia:Distributed version control|distributed]] [[wikipedia:Version control|version control]] system. Git saves "snapshots" of the source code, keeping a history of changes.
 
 See the [[source code]] page for information on where the Git repositories reside.
 
