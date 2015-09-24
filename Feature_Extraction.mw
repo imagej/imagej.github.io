@@ -12,9 +12,9 @@
 | status                 = stable, active
 | category               = [[:Category:Feature Extraction|Feature Extraction]], [[:Category:Registration|Registration]], [[:Category:Plugins|Plugins]]
 }}
-The plugins "Extract SIFT Correspondences" and "Extract MOPS Correspondences" identify a set of corresponding points of interest in two images and export them as PointRoi.  Interest points are detected using the [http://en.wikipedia.org/wiki/Blob_detection Difference of Gaussian detector] thus providing similarity-invariance.  Corresponding points are best matches from local feature descriptors that are consistent with respect to a common geometric transformation.
+The plugins "Extract SIFT Correspondences" and "Extract MOPS Correspondences" identify a set of corresponding points of interest in two images and export them as PointRoi.  Interest points are detected using the [[wikipedia:Blob detection|Difference of Gaussian detector]] thus providing similarity-invariance.  Corresponding points are best matches from local feature descriptors that are consistent with respect to a common geometric transformation.
 
-The plugins use the [http://en.wikipedia.org/wiki/Scale-invariant_feature_transform Scale Invariant Feature Transform] (SIFT) and [http://research.microsoft.com/research/pubs/view.aspx?msr_tr_id=MSR-TR-2004-133 Multi-Scale Oriented Patches] (MOPS) for local feature description.  The thus established matches are filtered using the [http://en.wikipedia.org/wiki/RANSAC Random Sample Consensus] (RANSAC).
+The plugins use the [[wikipedia:Scale-invariant feature transform|Scale Invariant Feature Transform]] (SIFT) and [http://research.microsoft.com/research/pubs/view.aspx?msr_tr_id=MSR-TR-2004-133 Multi-Scale Oriented Patches] (MOPS) for local feature description.  The thus established matches are filtered using the [[wikipedia:RANSAC|Random Sample Consensus]] (RANSAC).
 
 The extracted sets of corresponding landmarks and the calculated transformations are used in [[TrakEM2]], [[Register_Virtual_Stack_Slices|Register Virtual Stack Slices]] and [[BUnwarpJ]] for image registration.
 
