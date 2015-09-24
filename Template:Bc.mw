@@ -1,18 +1,4 @@
-<includeonly>
-<span>
-{{#if: {{{1|}}} |<span style="border-bottom:1px dotted #ccc;">{{{1}}}</span>}}
-{{#if: {{{2|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶}}  <span style="border-bottom:1px dotted #ccc;">{{{2}}}</span>}}
-{{#if: {{{3|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶}}  <span style="border-bottom:1px dotted #ccc;">{{{3}}}</span>}}
-{{#if: {{{4|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶}}  <span style="border-bottom:1px dotted #ccc;">{{{4}}}</span>}}
-{{#if: {{{5|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶}}  <span style="border-bottom:1px dotted #ccc;">{{{5}}}</span>}}
-{{#if: {{{6|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶}}  <span style="border-bottom:1px dotted #ccc;">{{{6}}}</span>}}
-{{#if: {{{7|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶}}  <span style="border-bottom:1px dotted #ccc;">{{{7}}}</span>}}
-{{#if: {{{8|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶}}  <span style="border-bottom:1px dotted #ccc;">{{{8}}}</span>}}
-{{#if: {{{9|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶}}  <span style="border-bottom:1px dotted #ccc;">{{{9}}}</span>}}
-{{#if: {{{10|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶}}  <span style="border-bottom:1px dotted #ccc;">{{{10}}}</span>}}
-</span></includeonly>
-
-<noinclude>This template provides a BreadCrumb trail through menu paths and similar hierarchical structures.
+<includeonly><span>{{#if: {{{1|}}} |<span style="border-bottom:1px dotted #ccc;">{{{1}}}</span>}}{{#if: {{{2|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶ }}  <span style="border-bottom:1px dotted #ccc;">{{{2}}}</span>}}{{#if: {{{3|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶ }}  <span style="border-bottom:1px dotted #ccc;">{{{3}}}</span>}}{{#if: {{{4|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶ }}  <span style="border-bottom:1px dotted #ccc;">{{{4}}}</span>}}{{#if: {{{5|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶ }}  <span style="border-bottom:1px dotted #ccc;">{{{5}}}</span>}}{{#if: {{{6|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶ }}  <span style="border-bottom:1px dotted #ccc;">{{{6}}}</span>}}{{#if: {{{7|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶ }}  <span style="border-bottom:1px dotted #ccc;">{{{7}}}</span>}}{{#if: {{{8|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶ }}  <span style="border-bottom:1px dotted #ccc;">{{{8}}}</span>}}{{#if: {{{9|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶ }}  <span style="border-bottom:1px dotted #ccc;">{{{9}}}</span>}}{{#if: {{{10|}}} | {{#ifeq: {{{color|}}} | white | ▷ | ▶ }}  <span style="border-bottom:1px dotted #ccc;">{{{10}}}</span>}}</span></includeonly><noinclude>This template provides a BreadCrumb trail through menu paths and similar hierarchical structures.
 ==Usage==
 For example, typing:
 <pre>The {{key|L}} key is the shortcut for {{bc|Plugins|Utilities|Find Commands}}</pre>
