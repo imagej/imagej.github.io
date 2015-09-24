@@ -92,16 +92,16 @@ Click on the '''New Session''' button or select from the menu.  The '''New sessi
 
 There are currently two tracking algorithms available:
 ===GaussianML===
-This algorithm implements the [http://en.wikipedia.org/wiki/Maximum_likelihood_estimator maximum likelihood estimator] based on a [http://en.wikipedia.org/wiki/Shot_noise shot noise] model. This means it considers the statistics of photon distribution in the image generation process to find the optimal location estimate. In our publication this is referred to as the inner loop.
+This algorithm implements the [[wikipedia:Maximum likelihood estimator|maximum likelihood estimator]] based on a [[wikipedia:Shot noise|shot noise]] model. This means it considers the statistics of photon distribution in the image generation process to find the optimal location estimate. In our publication this is referred to as the inner loop.
 
 ===EMCCD-GaussianML===
-This algorithm implements the maximum likelihood estimator based on a more sophisticated model which in addition includes the stochastic amplification process in an [http://en.wikipedia.org/wiki/Electron-multiplying_CCD EMCCD] camera. We have shown, that it yields more accurate results in situations with low light levels. In our publication this algorithm is referred to as the '''Nested Maximum Likelihood Algorithm'''.
+This algorithm implements the maximum likelihood estimator based on a more sophisticated model which in addition includes the stochastic amplification process in an [[wikipedia:Electron-multiplying CCD|EMCCD]] camera. We have shown, that it yields more accurate results in situations with low light levels. In our publication this algorithm is referred to as the '''Nested Maximum Likelihood Algorithm'''.
 
 ==Pick session options==
 
 [[Image:SessionOptions.png]]
 
-After clicking '''OK''', a new window will open. In this window you can choose a '''σ''' value, which denotes the standard deviation (in pixels) of the Gaussian used to approximate the [http://en.wikipedia.org/wiki/Point_spread_function Point Spread Function] (PSF) of the tracked objects. If you select '''Automatic σ''', this value is used only as initialization. In this case '''Min''' and '''Max''' are used as bounds for the estimation. These values will be the default values for all new traces you make in this session.
+After clicking '''OK''', a new window will open. In this window you can choose a '''σ''' value, which denotes the standard deviation (in pixels) of the Gaussian used to approximate the [[wikipedia:Point spread function|Point Spread Function]] (PSF) of the tracked objects. If you select '''Automatic σ''', this value is used only as initialization. In this case '''Min''' and '''Max''' are used as bounds for the estimation. These values will be the default values for all new traces you make in this session.
 
 You also can set your quality threshold.  Smaller numbers are higher quality, while larger numbers are lower quality but faster.
 
@@ -184,7 +184,7 @@ You can change the default behavior in the edit menu.
 
 [[Image:MScaleOptions.png]]
 
-The algorithm builds a [http://en.wikipedia.org/wiki/Pyramid_%28image_processing%29 pyramid] by repetitively smothing the image with a Gaussian kernel with the standard deviation given in the '''Smoothing σ''' field and than down-sampling it by a factor  set in the '''Downscaling''' field. The pyramid's hight (i.e. the number of repetitions) can be set in the '''iterations''' field.
+The algorithm builds a [[wikipedia:Pyramid %28image processing%29|pyramid]] by repetitively smothing the image with a Gaussian kernel with the standard deviation given in the '''Smoothing σ''' field and than down-sampling it by a factor  set in the '''Downscaling''' field. The pyramid's hight (i.e. the number of repetitions) can be set in the '''iterations''' field.
 Localization is than first performed on the top level of the pyramid and repeated until its bottom, which is the original image.
 
 =Tips=
