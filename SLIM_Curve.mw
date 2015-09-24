@@ -28,7 +28,7 @@ The SLIM Curve library code is written in C89 compatible C and is thread-safe fo
 
 The SLIM Curve plugin is available from the "SLIM Curve" [[Update_Sites|ImageJ update site]].
 
-Once you have installed the SLIM Curve plugin it becomes available on the menu under ''Analyze'' then ''Lifetime'' then ''Spectral Lifetime Analysis''.
+Once you have installed the SLIM Curve plugin it becomes available on the menu under ''Analyze'' then ''Lifetime'' then ''SLIM Curve''.
 
 == Usage ==
 
