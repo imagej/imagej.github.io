@@ -33,7 +33,7 @@ Integral images have been introduced in by Crow (1984)<ref>{{cite conference
  | publisher = Canadian Image Processing and Pattern Recognition Society
  | title = Fast template matching
  | year = 1995
-}}</ref>, the [http://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework Viola-Jones object detection framework]<ref>{{cite journal
+}}</ref>, the [[wikipedia:Viola%E2%80%93Jones object detection framework|Viola-Jones object detection framework]]<ref>{{cite journal
  | first1 = Paul
  | last1 = Viola
  | first2 = Michael J.
@@ -44,7 +44,7 @@ Integral images have been introduced in by Crow (1984)<ref>{{cite conference
  | volume = 57
  | number = 2
  | year = 2004
-}}</ref>, and the [http://en.wikipedia.org/wiki/SURF Speeded Up Robust Feature (SURF)] transform<ref>{{cite journal
+}}</ref>, and the [[wikipedia:SURF|Speeded Up Robust Feature (SURF)]] transform<ref>{{cite journal
  | first1 = Herbert
  | last1 = Bay
  | first2 = Andreas
