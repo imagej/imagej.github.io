@@ -41,6 +41,8 @@ Fully automated systems capable of comprehensive characterization of neuronal ar
 
 The Thin Plate Spline is an established method to yield a smooth non-rigid transformation from a sparse set of control points. It is attractive compared to other geometric interpolation schemes because it is independent of the number of dimensions, parameterless, yields a deformation with minimal bending energy, and has a closed form solution. We implemented the n-dimensional Thin Plate Spline in pure Java adapting and extending the open source C++ implementation in [[ITK]]. In addition to a standalone [[open source]] library, we made the implementation accessible through the transformation interfaces of the mpicbg library, [[TrakEM2]], and [[ImgLib2]] such that it can be easily integrated into existing and new [[ImageJ]]-based software. Finally, we developed end-user plugins that use the [[BigDataViewer]] and the Thin Plate Spline for manual interactive landmark-based registration of 2- and 3- dimensional images. We made our tools and library available through the ImageJ distribution [[Fiji]].
 
+[ [http://conference.imagej.net/2015/john-bogovic/2015_imagej.pptx Presentation slides] ]
+
 == Lightning talks ==
 
 The lightning talks will be 10-minute presentations including time for questions.
