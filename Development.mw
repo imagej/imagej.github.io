@@ -112,10 +112,10 @@ See the [[source code]] page for further details.
 * [https://github.com/imagej/imagej-tutorials ImageJ tutorials]
 * [[ImgLib2 Examples]]
 |
-* [[Introduction into Developing Plugins|Writing ImageJ 1.x plugins]]
 * [[Writing ImageJ2 plugins]]
 * [[How to contribute to an existing plugin or library|Contributing to an existing plugin]]
 * [[Distribution|Distributing your plugin]]
+* [[Introduction into Developing Plugins|Writing ImageJ 1.x plugins]]
 | style="vertical-align: top" |
 * [[Developing Fiji]]
 * [[Developing Fiji in Eclipse | Fiji + Eclipse]]
