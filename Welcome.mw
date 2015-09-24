@@ -1,7 +1,7 @@
 __NOTOC__
 <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
 
-<div style="background: papayawhip; border-radius: 2em; margin: 0 auto; padding: 2em; width: 80%">
+<div style="background: #DEF4FF; border-radius: 2em; margin: 0 auto; padding: 2em; width: 80%">
 {|
 | [[File:Imagej2-icon.png | 320px | link=]]
 | style="vertical-align: top" |
@@ -14,12 +14,12 @@ __NOTOC__
 </div>
 
 
-<div style="background: papayawhip; border-radius: 2em; margin: 0 auto; padding: 20px; width: 80%">
+<div style="background: #DEF4FF; border-radius: 2em; margin: 0 auto; padding: 20px; width: 80%">
 <span style="font-size: 1.2em">[[ImageJ]] is an [[open source]] image processing program designed for scientific multidimensional images.</span>
 
 <span style="font-size: 1.2em">[[ImageJ]] is highly [[Extensibility|extensible]], with thousands of [[plugins]] and [[macros]] for performing a wide variety of tasks, and a strong, established user base.</span>
 
-<h2 class="header-stripe" style="margin-left: -20px; margin-right: -20px">Tools & Features</h2>
+<h2 class="header-stripe" style="margin-left: -20px; margin-right: -20px; font-weight: normal">Tools & Features</h2>
 {|
 | style="font-size: large; text-align: center; vertical-align: top; white-space: nowrap; padding: 12px" | [[Open source]]
 | style="padding: 10px" | ImageJ is a tool for the [[wikipedia:Scientific_method#Communication_and_community|Scientific Community]]. To maintain transparency, the [[Downloads|ImageJ application]] and its [[source code]] will always be freely available.
@@ -31,7 +31,7 @@ __NOTOC__
 | style="padding: 10px" | ImageJ is [[SciJava|not an island]]. Use the best tool for the job, including [[KNIME]], [[ITK]], [[MATLAB]], and a multitude of [[scripting]] languages.
 |}
 
-<h2 class="header-stripe" style="margin-left: -20px; margin-right: -20px">Join the community</h2>
+<h2 class="header-stripe" style="margin-left: -20px; margin-right: -20px; font-weight: normal">Join the community</h2>
 {|
 | style="font-size: large; text-align: center; vertical-align: top; white-space: nowrap; padding: 12px" | [http://forum.imagej.net ImageJ Forum]
 | style="padding: 10px" | A great place to ask and answer questions, and become part of the community that has driven ImageJ's success.
