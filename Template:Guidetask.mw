@@ -1,0 +1,25 @@
+{| style="background:none;width:auto;"
+| style="vertical-align:top" |
+{{#switch: {{{image|on}}}|off= |on=[[Image:Nuvola apps korganizer.png|50px|<nowiki></nowiki>]]<br /><div style="width:65px;height:0px;"></div>}}
+|
+<div style="position:relative;left:0px;margin-right:-0px;z-index:15">TODO:
+<ul style="font-size:85%;padding:.3em 0 .3em 25px;margin:0">
+{{#if: {{{1|}}} | #{{{1}}} }}
+{{#if: {{{2|}}} | #{{{2}}} }}
+{{#if: {{{3|}}} | #{{{3}}} }}
+{{#if: {{{4|}}} | #{{{4}}} }}
+{{#if: {{{5|}}} | #{{{5}}} }}
+{{#if: {{{6|}}} | #{{{6}}} }}
+{{#if: {{{7|}}} | #{{{7}}} }}
+{{#if: {{{8|}}} | #{{{8}}} }}
+{{#if: {{{9|}}} | #{{{9}}} }}
+{{#if: {{{10|}}} | #{{{10}}} }}
+</u>
+</div>
+|}
+
+<noinclude>
+== Use ==
+
+{{guidetask|test|write something|blah}}
+</noinclude>
