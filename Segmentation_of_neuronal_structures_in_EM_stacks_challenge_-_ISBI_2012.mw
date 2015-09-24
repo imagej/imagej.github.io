@@ -1,7 +1,7 @@
 [[Image:ISBI-logo.jpg|100px|right]]The [http://www.biomedicalimaging.org/ IEEE International Symposium on Biomedical Imaging (ISBI)] is the premier forum for the presentation of technological advances in theoretical and applied biomedical imaging and image computing. In the context of the [http://www.biomedicalimaging.org/2012/ ISBI 2012] conference which was held in Barcelona, Spain, from 2 to 5 May 2012, we organized a [http://www.biomedicalimaging.org/2012/index.php/programme/isbi-challenges/13-challenges/49-contest-workshop-segmentation-of-neuronal challenge workshop] on '''segmentation of neuronal structures in EM stacks'''. 
 
 
-[[Image:Challenge-ISBI-2012-sample-image.png|thumb|500px|Example of ssTEM image and its corresponding segmentation]]In this '''challenge''', a full stack of EM slices will be used to train [http://en.wikipedia.org/wiki/Machine_learning machine learning] algorithms for the purpose of '''automatic segmentation of neural structures'''. 
+[[Image:Challenge-ISBI-2012-sample-image.png|thumb|500px|Example of ssTEM image and its corresponding segmentation]]In this '''challenge''', a full stack of EM slices will be used to train [[wikipedia:Machine learning|machine learning]] algorithms for the purpose of '''automatic segmentation of neural structures'''. 
 
 
 The images are representative of actual images in the real-world, containing some noise and small image alignment errors. None of these problems led to any difficulties in the manual labeling of each element in the image stack by an [http://albert.rierol.net expert human neuroanatomist]. The aim of the challenge is to compare and rank the different competing methods based on their pixel and object classification accuracy.
@@ -50,8 +50,8 @@ In order to evaluate and rank the performances of the participant methods, we wi
 The metrics are:
 
 * [[Minimum Splits and Mergers Warping error]], a segmentation metric that penalizes topological disagreements, in this case, the object splits and mergers.
-* '''Foreground-restricted Rand error''': defined as 1 - the maximal [http://en.wikipedia.org/wiki/F1_score F-score] of the foreground-restricted [http://en.wikipedia.org/wiki/Rand_index Rand index], a measure of similarity between two clusters or segmentations. On this version of the Rand index we exclude the zero component of the original labels (background pixels of the ground truth).
-* '''Pixel error''': defined as 1 - the maximal [http://en.wikipedia.org/wiki/F1_score F-score] of pixel similarity, or squared Euclidean distance between the original and the result labels.
+* '''Foreground-restricted Rand error''': defined as 1 - the maximal [[wikipedia:F1 score|F-score]] of the foreground-restricted [[wikipedia:Rand index|Rand index]], a measure of similarity between two clusters or segmentations. On this version of the Rand index we exclude the zero component of the original labels (background pixels of the ground truth).
+* '''Pixel error''': defined as 1 - the maximal [[wikipedia:F1 score|F-score]] of pixel similarity, or squared Euclidean distance between the original and the result labels.
 
 If you want to apply these metrics yourself to your own results, you can do it within Fiji using this [[Segmentation evaluation metrics - Script|script]].
 
