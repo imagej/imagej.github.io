@@ -159,21 +159,10 @@ dropdown choices will be indeícated '''''bold/italic'''''
 <br/>
 <br/>
 <br/>
-== TO DO ==
-It would be useful to append a ''To Do'' list highlighting what needs to be improved. This could either be appended to the bottom of each article, or to article's discussion page. We could use the <nowiki>Todo</nowiki> template:
+== TODO / Task list ==
+It would be useful to append a ''To Do'' list highlighting what needs to be improved. This could either be appended to the bottom of each article, or to article's discussion page. We could use the <nowiki>Todo</nowiki> 
+
 <pre>
-{{Todo
-|target=User_Guide_Layout
-|1
-|inner=
-* Add snapshot of command
-* Document 8-bit clipping
-}}
+{{guidetask|add link to wiki page|add info on usage of {{Key|Ctrl}} key}}
 </pre>
-{{Todo
-|target=User_Guide_Layout
-|1
-|inner=
-* Add snapshot of command
-* Document 8-bit clipping
-}}
+{{guidetask|add link to wiki page|add info on usage of {{Key|Ctrl}} key}}
