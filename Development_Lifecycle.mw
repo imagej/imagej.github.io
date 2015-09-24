@@ -7,14 +7,9 @@ The SciJava [[philosophy]] is to [[Philosophy#Release_early.2C_release_often|rel
 
 = Phases of development =
 
-Whether adding new features, fixing bugs, improving performance, etc... '''development''' is the process of making changes. In the SciJava development cycle, we use [[Git]] to manage these changes: capturing state as [http://gitref.org/basic/ commits] which can then be shared and referenced. From the bottom-up, an application such as [[ImageJ]] looks like this:
+[[ImageJ]] and [[Fiji]] are developed according to the [[Philosophy|SciJava philosophy]], thus these applications are used throughout this tutorial to illustrate the development lifecycle.
 
-* At the lowest level is the [[Source|source code]] and corresponding metadata.
-* Changes to the source are tracked as '''commits''' with [[Git]].
-* Over the course of one or more commits, features are added, bugs are fixed.
-* A software component is the sum of all its commits. Its authoritative state is its <code>master</code> branch, which should always be ''release-ready''.
-* A '''release''' of a component is obtained by using [[Maven]] to generate a collection of artifacts  for a particular state of the <code>master</code> branch.
-* The ImageJ application is then a collection of release artifacts.
+Whether adding new features, fixing bugs, improving performance, etc... '''development''' is the process of making changes, with the goal of exposing these changes to users. To accomplish this, actively developed projects cycle through four general "phases":
 
 {{Box
 | title = What are Maven artifacts?
@@ -27,10 +22,7 @@ Artifacts are files, most commonly a '''[[wikipedia:JAR_%28file_format%29|JAR]]'
 * A jar with any generated javadoc
 * A jar with any test files
 }}
-
-With this in mind, individual changes go through four general "phases":
-
-# '''In development.''' The source code is modified to add new features, fix bugs, etc... these modifications are stored as ''commits'', whether on your local filesystem, a topic branch, or a repository fork.
+# '''In development.''' The source code is modified to add new features, fix bugs, etc... these modifications are expressed as ''commits'' by [[Git]], whether on your local filesystem, a topic branch, or a repository fork.
 # '''On master.''' When you have a set of one or more ''commits'' that you are happy with (i.e. the feature is complete, or the bug is fixed) they are moved to the <code>master</code> branch of the project's repository on GitHub. This ensures the <code>master</code> branch is always ''release ready''.
 # '''Released.''' When there is a need to make the current <code>master</code> branch public (i.e. it has a critical bug fix or cool new feature that users have requested) [[Maven]] is used to ''cut a release'', which is then ''deployed as an artifact'' to the [http://maven.imagej.net/index.html#welcome ImageJ Maven repository]. Developers can now use the new version in their own projects.
 # '''Uploaded.''' Once we've tested our latest release artifact to ensure it doesn't conflict with other components, it can be uploaded to an ImageJ [[update site]] - making it available to end users.
