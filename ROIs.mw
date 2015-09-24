@@ -1,5 +1,5 @@
 {{Outdated}}
-In [http://en.wikipedia.org/wiki/Image_processing image processing], two of the most often needed yet complex operations are [http://en.wikipedia.org/wiki/Segmentation_%28image_processing%29 segmentation] and [http://en.wikipedia.org/wiki/Image_registration registration]. Regions of interest (ROIs) are an effective way of expressing and visualizing the results of a segmentation. But ROIs are a deceptively complex topic, difficult to implement well in a software package.
+In [[wikipedia:Image processing|image processing]], two of the most often needed yet complex operations are [[wikipedia:Segmentation (image processing)|segmentation]] and [[wikipedia:Image registration|registration]]. Regions of interest (ROIs) are an effective way of expressing and visualizing the results of a segmentation. But ROIs are a deceptively complex topic, difficult to implement well in a software package.
 
 = Discussion =
 
