@@ -13,9 +13,20 @@ Whether adding new features, fixing bugs, improving performance, etc... '''devel
 * Changes to the source are tracked as '''commits''' with [[Git]].
 * Over the course of one or more commits, features are added, bugs are fixed.
 * A software component is the sum of all its commits. Its authoritative state is its <code>master</code> branch, which should always be ''release-ready''.
-* A '''release''' of a component is obtained by using [[Maven]] to generate an artifact ([https://en.wikipedia.org/wiki/JAR_%28file_format%29jar]) for a particular state of the <code>master</code> branch.
+* A '''release''' of a component is obtained by using [[Maven]] to generate a collection of artifacts  for a particular state of the <code>master</code> branch.
 * The ImageJ application is then a collection of release artifacts.
 
+{{Box
+| title = What are Maven artifacts?
+| width = 30%
+| float = right
+| text =
+Artifacts are files, most commonly a '''[[wikipedia:JAR_%28file_format%29|JAR]]''' encapsulating the compiled classes for a component. Other files that may be produced as artifacts include:
+* The project's '''[https://maven.apache.org/pom.html POM]'''
+* A jar with the original source files
+* A jar with any generated javadoc
+* A jar with any test files
+}}
 
 With this in mind, individual changes go through four general "phases":
 
