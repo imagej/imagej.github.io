@@ -22,7 +22,7 @@ __NOTOC__
 <h2 class="header-stripe" style="margin-left: -20px; margin-right: -20px; font-weight: normal">Tools & Features</h2>
 {|
 | style="font-size: large; text-align: center; vertical-align: top; white-space: nowrap; padding: 12px" | [[Open source]]
-| style="padding: 10px" | ImageJ is a tool for the [[wikipedia:Scientific_method#Communication_and_community|Scientific Community]]. To maintain transparency, the [[Downloads|ImageJ application]] and its [[source code]] will always be freely available.
+| style="padding: 10px" | ImageJ is a tool for the [[wikipedia:Scientific_method#Communication_and_community|scientific community]]. To maintain transparency, the [[Downloads|ImageJ application]] and its [[source code]] will always be freely available.
 |-
 | style="font-size: large; text-align: center; vertical-align: top; white-space: nowrap; padding: 12px" | [[Reproducibility]]
 | style="padding: 10px" | Powerful tools such as the [[Script Editor]] and [[personal update sites]] help you develop and share reproducible analysis workflows.
