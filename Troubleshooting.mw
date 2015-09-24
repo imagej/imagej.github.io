@@ -35,7 +35,7 @@ There is another debug mode, which can be enabled in the {{bc | Edit | Options |
 
 == If ImageJ freezes or hangs ==
 
-If ImageJ appears to [https://en.wikipedia.org/wiki/Hang_(computing) hang]—i.e., it stops responding to inputs—it is often helpful to take a "snapshot" of where the program is at after the hang occurs. This information can give the developers valuable hints about how to fix the problem.
+If ImageJ appears to [[wikipedia:Hang (computing)|hang]]—i.e., it stops responding to inputs—it is often helpful to take a "snapshot" of where the program is at after the hang occurs. This information can give the developers valuable hints about how to fix the problem.
 
 There are two ways to create such a snapshot, known as a "thread dump" or "stack trace":
 
@@ -46,7 +46,7 @@ Either way, once you have the stack trace. you can copy and paste it into a [[Bu
 
 == If ImageJ crashes ==
 
-If ImageJ [https://en.wikipedia.org/wiki/Crash_(computing) crashes]—i.e., the program suddenly terminates, with or without an error message—it is very helpful to identify the steps which can reliably reproduce the crash:
+If ImageJ [[wikipedia:Crash (computing)|crashes]]—i.e., the program suddenly terminates, with or without an error message—it is very helpful to identify the steps which can reliably reproduce the crash:
 * Launch ImageJ [[#Launching ImageJ from the console|from the console]] as described above.
 * Perform the same actions which previously resulted in the crash.
 * Take note of any error messages in the console window, which you can copy and paste it into a [[Bugs|bug report]].
@@ -129,7 +129,7 @@ See also:
 
 * [http://stackoverflow.com/q/22912063 Automatically release unused memory in ImageJ / Fiji]
 }}
-The error means ImageJ ran out of available [https://en.wikipedia.org/wiki/Random-access_memory computer memory] (''not'' hard drive space).
+The error means ImageJ ran out of available [[wikipedia:Random-access memory|computer memory]] (''not'' hard drive space).
 
 The first thing to do is make sure that ImageJ has a large enough "maximum heap" size:
 
