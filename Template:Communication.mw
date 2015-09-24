@@ -1,5 +1,5 @@
 {| class="wikitable nicetable"
-| '''[http://forum.imagej.net/ Forum]'''
+| '''<span class="plainlinks">[http://forum.imagej.net/ Forum]</span>'''
 | The recommended way to get help. Brand new. Rich modern interface. Public, archived discussion.
 |-
 | '''[[Mailing Lists]]'''
@@ -8,9 +8,9 @@
 | '''[[Chat]]'''
 | ImageJ developers and experts frequent real-time [[chat]] services including Gitter and IRC.
 |-
-| '''[http://stackoverflow.com/questions/tagged/imagej?sort=newest Stack Overflow]'''
+| '''<span class="plainlinks">[http://stackoverflow.com/questions/tagged/imagej?sort=newest Stack Overflow]</span>'''
 | Some people like to post about ImageJ on Stack Overflow, a programming Q&A site.
 |-
-| '''[https://www.reddit.com/r/ImageJ/ Reddit]'''
+| '''<span class="plainlinks">[https://www.reddit.com/r/ImageJ/ Reddit]</span>'''
 | Some people like to post about ImageJ on Reddit, a community bulletin board.
 |}
