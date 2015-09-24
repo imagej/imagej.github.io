@@ -63,9 +63,9 @@ To do so, in the main dialog, you have to check the "Shrinkage constrain" option
 
 If you check as well the "Advance setup" checkbox from the same dialog, then a new window will appear to select the corresponding parameters to regularize the section shrinkage based on the properties of the transformation. If we choose "affine" as registration model, then we will be able to regularize:
 [[Image:RVS_regularization_params.png|thumb|200px| Shrinkage regularization parameters ]]
-* the [http://en.wikipedia.org/wiki/Shear_mapping shear],
-* the [http://en.wikipedia.org/wiki/Scaling_(geometry) scaling],
-* and the [http://en.wikipedia.org/wiki/Isotropy isotropy] or aspect ratio.
+* the [[wikipedia:Shear mapping|shear]],
+* the [[wikipedia:Scaling (geometry)|scaling]],
+* and the [[wikipedia:Isotropy|isotropy]] or aspect ratio.
 
 For the registration models "translation" and "rigid", no regularization is needed since these linear transformations don't apply. In the case of the "similarity" registration model, only the shearing and scaling will be regularized.
 
