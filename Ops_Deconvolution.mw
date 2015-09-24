@@ -1,7 +1,7 @@
-=Richardson Lucy
+=Richardson Lucy=
 
 <math>\mathbf{o}_{k+1}(s)=\left\{\left[\frac{i(s)}{(o_{k}*h)(s)}\right]*h(-s)\right\}{o}_{k}(s)</math>
 
-=Richardson Lucy with Total Variation Regularization
+=Richardson Lucy with Total Variation Regularization=
 
 <math>\mathbf{o}_{k+1}(s) = \left\{\left[\frac{i(s)}{(o_{k}*h)(s)}\right]*h(-s)\right\}\frac{{o}_{k}(s)}{1-\lambda_{TV}div\left({\frac{\nabla_{ok}(s)}{|\nabla_{ok}(s)|}}\right)}</math>
