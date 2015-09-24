@@ -129,27 +129,36 @@ If you want to add other templates, here you can find the ones existing on image
 {{Linux | Everyone agrees: Linux is the ''best'' operating system!}}
 </pre>
 {{Linux | Everyone agrees: Linux is the ''best'' operating system!}}
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <pre>
 {{Windows | Everyone agrees: Windows is the ''best'' operating system!}}
 </pre>
 {{Windows | Everyone agrees: Windows is the ''best'' operating system!}}
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <pre>
 {{OSX | Everyone agrees: OS X is the ''best'' operating system!}}
 </pre>
 {{OSX | Everyone agrees: OS X is the ''best'' operating system!}}
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
+<pre>
+test code:
+String st = new String();
+</pre>
 
-
-{{Code| test code}}
+{{Template Test}}
