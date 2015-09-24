@@ -46,15 +46,15 @@ dropdown choices will be indeícated '''''bold/italic'''''
 == Boxes ==
 
 <pre>
-{{Box| width=30% | As a standard box (but potentially as an adjustable template to be able to position it more freely in the site).}}
+{{Box| width=30% | As a standard box for additional info.}}
 </pre>
-{{Box| width=30% | As a standard box (but potentially as an adjustable template to be able to position it more freely in the site).}}
+{{Box| width=30% | As a standard box for additional info.}}
 <br>
 
 <pre>
 {{Box
-| title = Modifies Sidebox with title!
-| text = As a standard box (but potentially as an adjustable template to be able to position it more freely in the site).
+| title = Modifies Box with a title!
+| text = As a standard box for additional info.
 | width = 30%
 | float = left
 }}
@@ -62,7 +62,7 @@ dropdown choices will be indeícated '''''bold/italic'''''
 
 {{Box
 | title = Modifies Sidebox with title!
-| text = As a standard box (but potentially as an adjustable template to be able to position it more freely in the site).
+| text = As a standard box for additional info.
 | width = 30%
 | float = left
 }}
