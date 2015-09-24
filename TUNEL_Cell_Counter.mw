@@ -31,7 +31,7 @@ To convert pixels to mm<sup>2</sup>, the image spatial scale is required. This c
 :Replace the value 3095.975 in code line 32 with your microscope spatial scale.
 
 === Image Acquisition ===
-This macro was designed for images acquired with fluorescence microscopes using a 20x/0.8 air objective. 
+This macro was designed for TIFF images acquired with fluorescence microscopes using a 20x/0.8 air objective. 
 We considered this magnification the most suitable to assess a reasonably large area without missing out on details in cell morphology. 
 === Image Processing ===
 We suggest using consistent post-processing for all images. Regarding the blue channel, avoid saturating pixels, as this will interfere with nuclei identification. As for the green channel, reduce background as much as possible and increase exposure without saturating fragments.
