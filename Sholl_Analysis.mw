@@ -76,7 +76,7 @@ Input values take into account the scale information of the image that can be se
 ** '''Infer from starting radius''' If checked, the ''Number of Primary branches'' is inferred from the count of intersections at [[#StartRadius|Starting radius]].
 
 * '''Fit profile and compute descriptors''' <sup>&nbsp;</sup>If checked, data is fitted according to the chosen [[#Choice_of_Methods|method]] and appropriate [[#Metrics|metrics]] calculated automatically. If unchecked, only sampled data is plotted.
-** '''Show fitting details''' <sup>&nbsp;</sup>Choose this option to have all of the parameters of the simplex fitting printed to the Log window. The [http://en.wikipedia.org/wiki/Coefficient_of_determination coefficient of determination] (''R<sup>2</sup>'', a measure of goodness of fit) is always stored in the ''Sholl Results'' table even when this option is not selected.
+** '''Show fitting details''' <sup>&nbsp;</sup>Choose this option to have all of the parameters of the simplex fitting printed to the Log window. The [[wikipedia:Coefficient of determination|coefficient of determination]] (''R<sup>2</sup>'', a measure of goodness of fit) is always stored in the ''Sholl Results'' table even when this option is not selected.
 {{Tip
 | tip = [[#Complementary_Tools|Complementary Tools]] describes how to extend curve fitting beyond default options.
 }}
@@ -179,11 +179,11 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 :The median value of sampled intersections.
 
 ;Skewness<span id="Skewness"></span>
-:The [http://en.wikipedia.org/wiki/Skewness skewness] of the sampled data, an indication of how symmetrical the distribution is around its mean. Positive values indicate an asymmetrical distribution with a longer tail to the right. Negative values indicate data with a longer tail to the left. A popular rule of thumb considers that if the skewness is greater than 1.0 (or less than -1.0), the distribution may be considered far from symmetrical.
+:The [[wikipedia:Skewness|skewness]] of the sampled data, an indication of how symmetrical the distribution is around its mean. Positive values indicate an asymmetrical distribution with a longer tail to the right. Negative values indicate data with a longer tail to the left. A popular rule of thumb considers that if the skewness is greater than 1.0 (or less than -1.0), the distribution may be considered far from symmetrical.
 : See also [[#Skewness-fitted|Skewness (fitted data)]]
 
 ;Kurtosis<span id="Kurtosis"></span>
-:The [http://en.wikipedia.org/wiki/Kurtosis kurtosis] of the sampled data, which quantifies whether the shape of the distribution matches that of a Gaussian distribution, assuming that a Gaussian distribution has a kurtosis of 0. A distribution more peaked than a Gaussian has a positive kurtosis while a negative value indicates a flatter distribution.
+:The [[wikipedia:Kurtosis|kurtosis]] of the sampled data, which quantifies whether the shape of the distribution matches that of a Gaussian distribution, assuming that a Gaussian distribution has a kurtosis of 0. A distribution more peaked than a Gaussian has a positive kurtosis while a negative value indicates a flatter distribution.
 : See also [[#Kurtosis-fitted|Kurtosis (fitted data)]]
 
 ;<span id="MaxInters"></span>Highest count of intersections (''Max inters.'')
@@ -201,13 +201,13 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 : See also [[#SchoenenFitted|Ramification index (fit)]]
 
 ;<span id="Centroid">Centroid radius
-:The abcissa of the [http://en.wikipedia.org/wiki/Centroid centroid] (i.e., the geometric center or barycenter) of the linear profile. It is [[#ShollPlots|highlighted]] on the ''N'' vs ''Distance'' plot.
+:The abcissa of the [[wikipedia:Centroid|centroid]] (i.e., the geometric center or barycenter) of the linear profile. It is [[#ShollPlots|highlighted]] on the ''N'' vs ''Distance'' plot.
 
 ;Centroid value
-:The ordinate of the [http://en.wikipedia.org/wiki/Centroid centroid] (i.e., the geometric center or barycenter) of the linear profile. It is [[#ShollPlots|highlighted]] on the ''N'' vs ''Distance'' plot.
+:The ordinate of the [[wikipedia:Centroid|centroid]] (i.e., the geometric center or barycenter) of the linear profile. It is [[#ShollPlots|highlighted]] on the ''N'' vs ''Distance'' plot.
 
 ;<span id="EnclosingRadius"></span>Enclosing radius
-:The last (thus, the widest) of ''Intersecting radii'' to be associated with the number of intersections specified by [[#EnclosingRadiusCutoff|Enclosing radius cutoff]]. For a cutoff of 1 (the default) ''Enclosing radius'' is the widest of ''Intersecting radii''. It reflects the [http://en.wikipedia.org/wiki/Feret_diameter Feret length] of the arbor.
+:The last (thus, the widest) of ''Intersecting radii'' to be associated with the number of intersections specified by [[#EnclosingRadiusCutoff|Enclosing radius cutoff]]. For a cutoff of 1 (the default) ''Enclosing radius'' is the widest of ''Intersecting radii''. It reflects the [[wikipedia:Feret diameter|Feret length]] of the arbor.
 
 === Metrics based on fitted data ===
 ;<span id="Dratio"></span>Determination ratio
@@ -572,7 +572,7 @@ The [[How to cite Fiji?|authoritative reference]] for Fiji:
 		<span id="faq:AUC"></span>'''Would it be possible to retrieve the Area Under the Curve  (linear Sholl plot)?'''
 	</li>
 	<dl><dd>
-		Sure. But it would hardly be relevant. The area under the curve (AUC, the area between the sampled curve and the horizontal axis, i.e., its definite integral) could be estimated using, e.g., the [http://en.wikipedia.org/wiki/Trapezoidal_rule trapezoidal rule]. However, because data is always sampled at equally spaced intervals, doing so would be the same as multiplying [[#MeanInters|Mean inters.]] by the distance between [[#EndRadius|Ending radius]] and [[#StartRadius|Starting radius]]. Thus, effectively, AUC is  redundant with [[#MeanInters|Mean inters.]], that is already an integrated measurement of the sampled data. On the other hand,
+		Sure. But it would hardly be relevant. The area under the curve (AUC, the area between the sampled curve and the horizontal axis, i.e., its definite integral) could be estimated using, e.g., the [[wikipedia:Trapezoidal rule|trapezoidal rule]]. However, because data is always sampled at equally spaced intervals, doing so would be the same as multiplying [[#MeanInters|Mean inters.]] by the distance between [[#EndRadius|Ending radius]] and [[#StartRadius|Starting radius]]. Thus, effectively, AUC is  redundant with [[#MeanInters|Mean inters.]], that is already an integrated measurement of the sampled data. On the other hand,
 one could retrieve the AUC of the polynomial fit, but such property is already covered by [[#MeanValueOfFunction|Mean value]].
 	</dd></dl>
 	<li>
