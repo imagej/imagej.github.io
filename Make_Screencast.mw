@@ -8,7 +8,7 @@
 | status                 = stable
 }}
 
-'''Make Screencast''' is a [[Beanshell Scripting|Beanshell]] script to record a screencast in [http://en.wikipedia.org/wiki/Ogg Ogg] or [http://en.wikipedia.org/wiki/QuickTime_File_Format Quicktime] video formats.
+'''Make Screencast''' is a [[Beanshell Scripting|Beanshell]] script to record a screencast in [[wikipedia:Ogg|Ogg]] or [[wikipedia:QuickTime File Format|Quicktime]] video formats.
 
 Access it via {{bc | File | Make Screencast}}.
 
