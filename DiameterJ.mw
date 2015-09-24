@@ -128,7 +128,7 @@ Fiber orientation was determined using a well-established plug-in for ImageJ cal
 :#For Gaussian peaks (most common) the “Center” of each peak is the average 
 :#*The FWHM can be transformed into the standard deviation of the radius by dividing the FWHM by 2.355
 :#**''Approximate conversion but 99% accurate''
-:#**''For the exact answer go [http://en.wikipedia.org/wiki/Full_width_at_half_maximum here] and apply this conversion to the FWHM''
+:#**''For the exact answer go [[wikipedia:Full width at half maximum|here]] and apply this conversion to the FWHM''
 :#For other fits read literature to ascertain describing statistics.
 
 ====<big>Pixel to Unit Distance Transformation</big>==== 
