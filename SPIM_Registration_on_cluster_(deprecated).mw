@@ -14,9 +14,9 @@ Light sheet microscopy such as SPIM produces enormous amounts of data especially
 
 We will use data derived from the [http://microscopy.zeiss.com/microscopy/en_de/products/imaging-systems/lightsheet-z-1.html Lightsheet Z.1] a commercial realisation of SPIM offered by Zeiss. The Lightsheet Z.1 data can be truly massive and cluster computing may well be the only way to deal with the data deluge coming of the microscope.
 
-Every cluster is different both in terms of the used hardware and the software running on it, particularly the scheduling system. Here we use a cluster computer at the MPI-CBG that consists of '''44''' nodes each with '''12''' Intel Xeon E5-2640 cores running @ 2.50 GHz and enjoying '''128GB''' of memory. The cluster nodes have access to 200TB of data storage provided by a dedicated Lustre Server architecture. For more info on Lustre see [http://en.wikipedia.org/wiki/Lustre_(file_system) here], suffice to say that it is optimised for high performance input/output (read/write) operations which is crucial for the SPIM data volumes.
+Every cluster is different both in terms of the used hardware and the software running on it, particularly the scheduling system. Here we use a cluster computer at the MPI-CBG that consists of '''44''' nodes each with '''12''' Intel Xeon E5-2640 cores running @ 2.50 GHz and enjoying '''128GB''' of memory. The cluster nodes have access to 200TB of data storage provided by a dedicated Lustre Server architecture. For more info on Lustre see [[wikipedia:Lustre (file system)|here]], suffice to say that it is optimised for high performance input/output (read/write) operations which is crucial for the SPIM data volumes.
 
-Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system running on the MPI-CBG cluster is '''LSF''' - [http://en.wikipedia.org/wiki/Platform_LSF Load Sharing Facility]. The basic principles of job submission are the same across queuing systems, but the exact syntax will of course differ.
+Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system running on the MPI-CBG cluster is '''LSF''' - [[wikipedia:Platform LSF|Load Sharing Facility]]. The basic principles of job submission are the same across queuing systems, but the exact syntax will of course differ.
 
 '''Note on versions'''
 
