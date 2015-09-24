@@ -11,7 +11,7 @@
 | status          = Active, Stable
 | category        = [[:Category:Skeleton|Skeleton]], [[:Category:Analysis|Analysis]], [[:Category:Scripting|Scripting]], [[:Category:Plugins|Plugins]]
 }}
-A [[BAR]] script (written in [[Beanshell_Scripting|BeanShell]]) that performs Strahler analysis on topographic skeletons (2D/3D) through progressive pruning of terminal branches. [http://en.wikipedia.org/wiki/Strahler_number Strahler numbering] is a numerical procedure that summarizes the branching complexity of a mathematical tree.
+A [[BAR]] script (written in [[Beanshell_Scripting|BeanShell]]) that performs Strahler analysis on topographic skeletons (2D/3D) through progressive pruning of terminal branches. [[wikipedia:Strahler number|Strahler numbering]] is a numerical procedure that summarizes the branching complexity of a mathematical tree.
 
 == Description ==
 <span id="StrahlerAnimation"></span>[[Image:StrahlerAnimation.gif|300px|thumb|right|Strahler Analysis by iterative elimination of end-point branches]]
@@ -72,7 +72,7 @@ Horton-Strahler counts are listed on a dedicated table. The extension and format
 :The number of branches for each Horton-Strahler order.
 
 ; Ramification ratios
-: Ramification or [http://en.wikipedia.org/wiki/Strahler_number#Bifurcation_ratio bifurcation ratios] are the quotients between branches of consecutive orders. An overall ratio may be obtained by averaging ratios across orders. Note that versions prior to 1.4.0 used to output reciprocal ratios.
+: Ramification or [[wikipedia:Strahler number#Bifurcation_ratio|bifurcation ratios]] are the quotients between branches of consecutive orders. An overall ratio may be obtained by averaging ratios across orders. Note that versions prior to 1.4.0 used to output reciprocal ratios.
 
 In addition if ''Show detailed information'' is checked, ''Average branch length'', ''N. of trees'', ''N. of branches'', ''N. of junctions'', ''N. of triple points'', ''N. of quadruple points'' are also retrieved for each iteration. These are described in the AnalyzeSkeleton's [[AnalyzeSkeleton#Table_of_results|documentation page]].
 
@@ -89,7 +89,7 @@ Note that without access to [[BAR]] and Fiji's [[Update_Fiji|built-in updater]] 
 == Citations ==
 
 == References ==
-Original publications by [http://en.wikipedia.org/wiki/Robert_E._Horton Robert E. Horton] and [http://en.wikipedia.org/wiki/Arthur_Newell_Strahler Arthur N. Strahler]:
+Original publications by [[wikipedia:Robert E. Horton|Robert E. Horton]] and [[wikipedia:Arthur Newell Strahler|Arthur N. Strahler]]:
 
 *{{citation|first=R. E.|last=Horton|title=Erosional development of streams and their drainage basins: hydro-physical approach to quantitative morphology|journal=Geological Society of America Bulletin|volume=56|issue=3|year=1945|pages=275–370|doi=10.1130/0016-7606(1945)56[275:EDOSAT]2.0.CO;2}}.
 
