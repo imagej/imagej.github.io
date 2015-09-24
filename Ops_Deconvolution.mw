@@ -9,3 +9,25 @@
 [http://www.ncbi.nlm.nih.gov/pubmed/16586486 Richardson Lucy with Total Variation Regularization]
 
 <math>\mathbf{o}_{k+1}(s) = \left\{\left[\frac{i(s)}{(o_{k}*h)(s)}\right]*h(-s)\right\}\frac{{o}_{k}(s)}{1-\lambda_{TV}div\left({\frac{\nabla_{ok}(s)}{|\nabla_{ok}(s)|}}\right)}</math>
+
+=References=
+
+* T.\ Pietzsch, S.\ Preibisch, P.\ Tomancak and S.\ Saalfeld, ``ImgLib2 - Generic image processing in Java'', Bioinformatics, Vol.\  28(22), pp. 3009-3011 (2012).
+
+* C.T.\ Rueden, J.\ Schindelin, B.E.\ Dezonia, A.R.\ Grislis, M.C.\ Hiner and K.W.\ Eliceiri (2013). ``Open Source BioImage Informatics: Tools for Interoperability. Microscopy and Microanalysis'', Vol.\ 19 (Suppl. 2) , pp 754-755 (2013).
+
+* N.\ Dey, L.\ Blank-Feraud, C.\ Zimmer, P.\ Roux, Z.\ Kam, J-C,\ Olivo-Marin, J.\ Zerubia, ``Richardson-Lucy Algorithm with Total Varation Regularization for 3D Confocal Microscope Deconvolution'', Microscopy Research and Technique, Vol.\ 69(1), pp. 260-266 (2006).
+
+* M.\ Laasmaa, M.\ Vendelin, P.\ Peterson, ``Application of regularized Richardson-Lucy algorithm for deconvolution of confocal microscopy images'',  Journal of Microscopy, Vol.\ 243(2), pp. 124-140 (2011).
+
+* L.\ Rudin, S.\ Osher, E.\ Fatemi, ``Nonlinear total variation noise removal algorithm'',  Physica D., Vol.\ 60(2), pp. 259-266 (1992).
+
+C.\ Vonesch (2013), ``Second International Challenge on 3D Deconvolution Microscopy'', http://bigwww.epfl.ch/deconvolution/challenge.
+
+* D.\ Biggs, M.\ Andrews, ``Acceleration of iterative
+image restoration algorithms'',  Applied Optics, Vol.\ 36(8), pp.
+1766-75 (1997).
+
+* S.\ Remmele, J.\ Hesser, ``Vector
+Extrapolation-Based Acceleration of Regularized Richardson Lucy Image
+Deblurring'',  Informatik Actuell, pp. 400-404 (2009).
