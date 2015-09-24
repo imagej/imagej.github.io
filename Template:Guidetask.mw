@@ -2,7 +2,7 @@
 | style="vertical-align:top" |
 {{#switch: {{{image|on}}}|off= |on=[[Image:Nuvola apps korganizer.png|50px|<nowiki></nowiki>]]<br /><div style="width:65px;height:0px;"></div>}}
 |
-<div style="font-size:100%;bold;position:relative;left:0px;margin-right:-0px;z-index:10">TODO:
+<div style="font-size:100%;position:relative;left:0px;margin-right:-0px;z-index:10"><b>TODO:</b>
 <ul style="font-size:90%;padding:.3em 0 .3em 15px;margin:0">
 {{#if: {{{1|}}} | #{{{1}}} }}
 {{#if: {{{2|}}} | #{{{2}}} }}
