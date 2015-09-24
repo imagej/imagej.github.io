@@ -1,5 +1,5 @@
 {{Development | tools}}
-An [https://en.wikipedia.org/wiki/Integrated_development_environment integrated development environment] (IDE) is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of a source code editor, build automation tools and a debugger. Most modern IDEs offer intelligent code completion features.
+An [[wikipedia:Integrated development environment|integrated development environment]] (IDE) is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of a source code editor, build automation tools and a debugger. Most modern IDEs offer intelligent code completion features.
 
 [[ImageJ]] can be developed using any IDE which supports [[Maven]], which includes:
 
