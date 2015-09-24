@@ -16,6 +16,10 @@
 
 [http://ceur-ws.org/Vol-446/p400.pdf Richardson Lucy with TV Regularization and Vector Acceleration]
 
+=Non-circulant Richardson Lucy=
+
+[http://bigwww.epfl.ch/deconvolution/challenge2013/index.html?p=doc_math_rl Non-circulant Richardson Lucy]
+
 =References=
 
 * T. Pietzsch, S. Preibisch, P. Tomancak and S. Saalfeld, ImgLib2 - Generic image processing in Java'', Bioinformatics, Vol.  28(22), pp. 3009-3011 (2012).
