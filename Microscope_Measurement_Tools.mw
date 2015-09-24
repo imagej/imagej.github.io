@@ -62,13 +62,14 @@ Basic instructions are as follows.
 
 6. Edit the File 
 
-: ''Fiji.app / plugins / Scripts / Analyze / Microscope Measurement Tools /
+: ''Fiji.app / plugins / Scripts / Analyze / Microscope Measurement Tools /''
 
-:: '''Microscope_Calibrations_user_settings.py'''''
+:: ''Microscope_Calibrations_user_settings.py''
 
 7. Type in the Calibration's Names & Scale values, making sure to match up the list of names with their corresponding calibrations.
 
 : This settings file is an actual python script, so you can edit the lists there using normal Python syntax. eg. functions like <code>myList.append( [ ] )  </code >   or   <code >  myList = ['cm'] * 5</code > etc. will work.
+
 
 
 Unfortunately, changes to the settings file may not be automatically picked up by Fiji.
@@ -78,8 +79,9 @@ The workaround is to do the following:
 
 9. Delete the "''py.class''" file in the plugin’s folder:
 
-: ''Fiji.app / plugins / Scripts / Analyze / Microscope Measurement Tools /
-Microscope_Calibrations_user_settings$py.class''
+: ''Fiji.app / plugins / Scripts / Analyze / Microscope Measurement Tools /''
+
+:: ''Microscope_Calibrations_user_settings$py.class''
 
 10. Open Fiji. It should have picked up the new settings now.
 
