@@ -298,9 +298,15 @@ Before the native method can be called, the JVM needs to load the native library
 
 == Support in ImageJ ==
 
-The Fiji build system supports native targets by compiling source files whose names end in ''.c'' using gcc. If C sources are found, javah will be called and a native library will be compiled using GCC and the resulting shared library will be put into the ''<fiji-directory>/lib/<platform>/'' directory.
+Native libraries located in:
 
-The ''fiji.JNI'' class in ''fiji-lib.jar'' provides convenience methods to load the library. Example:
+   '''<ImageJ-directory>/lib/<platform>/'''
+
+will automatically be added to the '''<code>java.library.path</code>''', exposing them in Java land - where they still need to be loaded. One option for loading is to create a <code>Service</code> that loads the native library in its <code>initialize()</code> method. For example, see the [https://github.com/imagej/imagej-itk/blob/imagej-itk-0.1.0/src/main/java/net/imagej/itk/DefaultImageJItkService.java#L84-L91 ITK compatibility layer].
+
+The Fiji build system also supports native targets by compiling source files whose names end in ''.c'' using gcc. If C sources are found, javah will be called and a native library will be compiled using GCC and the resulting shared library will be put into the ''<fiji-directory>/lib/<platform>/'' directory.
+
+Finally, the ''fiji.JNI'' class in ''fiji-lib.jar'' provides convenience methods to load native libraries. Example:
 
 <source lang="java">
 static {
