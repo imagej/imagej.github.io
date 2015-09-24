@@ -14,7 +14,7 @@ ImageJ2 provides a wealth of new features and capabilities:
 <li>New and enhanced file format support via the SCIFIO library. There is no need to call a special SCIFIO plugin; it works with commands like ''File &gt; Open'' automatically. Additional import options are available via the ''File &gt; Import &gt; Image...'' command. See the [[SCIFIO]] page of the ImageJ wiki for further details.[[Image:Imagej2-options.png|270px|right]]</li>
 <li>New commands:
 <ul>
-<li>''Plugins &gt; Debug &gt; Dump Stack'' for debugging when things [https://en.wikipedia.org/wiki/Hang_(computing) hang].</li>
+<li>''Plugins &gt; Debug &gt; Dump Stack'' for debugging when things [[wikipedia:Hang (computing)|hang]].</li>
 <li>''Plugins &gt; Debug &gt; System Information'' for reporting on versions of installed plugins and libraries.</li></ul>
 </li>
 <li>More powerful [[Script Editor]] with support for several scripting languages through a generic, consistent scripting framework (see screenshot below).</li>
