@@ -44,7 +44,7 @@ To run a ''script'' (JRuby, Jython, etc.) simply skip the <code>-batch</code> ar
 
 == Xvfb ==
 
-Another method is to have a virtual desktop, e.g. [https://en.wikipedia.org/wiki/Xvfb Xvfb]. This will allow ImageJ to start with a virtualised graphical desktop.
+Another method is to have a virtual desktop, e.g. [[wikipedia:Xvfb|Xvfb]]. This will allow ImageJ to start with a virtualised graphical desktop.
 
 '''Advantage:''' No run-time patching is required.
 
