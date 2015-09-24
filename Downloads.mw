@@ -39,7 +39,7 @@ ImageJ will run on any system that has a Java 6 (or later) runtime installed. Th
 {{AvoidProgramFiles}}
 {{Box | title = Packages for Debian / Ubuntu | float = right
 | text = <p>We used to offer Debian packages of Fiji. Unfortunately, for a variety of reasons, we are withdrawing support for these packages until such time as someone is able to maintain them properly, so please switch to using the Linux downloads above instead.</p><p>If you are a Debian packaging expert who would like to address this situation, we would love to have your help—please join us [[IRC|in IRC]] or contact the [http://groups.google.com/group/fiji-devel fiji-devel mailing list].</p>}}
-ImageJ is distributed as a [http://en.wikipedia.org/wiki/Portable_application portable application]. That means that you do not have to run an installer; just download, unpack and start it.
+ImageJ is distributed as a [[wikipedia:Portable application|portable application]]. That means that you do not have to run an installer; just download, unpack and start it.
 
 For more detailed instructions, see the installation walkthroughs:
 * [[Install Fiji on Windows]]
