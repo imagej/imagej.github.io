@@ -1,13 +1,9 @@
 {{Notice | This page describes the [[SciJava]] ''software release process'',<br>used in core [[ImageJ]] and [[Fiji]] development and distribution.
 * For an overview of ''distribution methods'', see [[Distribution]].
 * To ''download'' software releases, see [[Downloads]].}}
-{{Development | tutorials}}
-
-<div class="nonumtoc">__TOC__</div>
-
-= Using this guide =
-
+{{Development | tutorials}}<div style="float: left; padding-right: 10px">__TOC__</div>
 The SciJava [[philosophy]] is to [[Philosophy#Release_early.2C_release_often|release early, release often]]. At the same time, we always want to preserve [[reproducible builds|scientific reproducibility]]. To make this possible we lean on several [[project management]] tools. The purpose of this guide is to take you through the process of using these tools with the goal of releasing new versions of your software, and then providing those releases to users.
+<div style="clear: left"></div>
 
 = Phases of development =
 
@@ -76,12 +72,10 @@ The special <code>Release-Version</code> job of Jenkins (which is visible only t
 * The Maven POM references the correct tag rather than <code>HEAD</code>
 * This job is capable of releasing certain artifacts to OSS Sonatype (and hence to Maven Central) as appropriate
 
-===== Prerequisites =====
-
+'''Prerequisites:'''
 # You will need an ImageJ Jenkins account. If you haven't set this up yet, contact the [[Mailing_Lists|ImageJ-devel list]] and ask for an account. A maintainer will send you instructions.
 
-===== Steps to release =====
-
+'''Steps to release:'''
 # Visit the [http://jenkins.imagej.net/job/Release-Version/ Release-Version Jenkins job] web page.
 # Click "Build with Parameters" from the left-hand menu.
 # Select your component from the dropdown list.
@@ -96,13 +90,13 @@ Jenkins will take care of all the steps, including pushing the relevant commits 
 
 The [https://github.com/scijava/scijava-scripts/blob/aab7cfe805638efc25615fdd7c78cedaae3c7197/release-version.sh release-version.sh] script is what the [[#Release-Version Jenkins job|Release-Version Jenkins job]] uses under the hood to perform releases. It relies on the [http://maven.apache.org/maven-release/maven-release-plugin/ Maven Release plugin] to do most of the heavy lifting, but also does some extra work (e.g., to ensure releases are deployed to the correct repository).
 
-===== Prerequisites =====
+'''Prerequisites:'''
 
 # Install the release-version.sh script. The best way to do this is to clone the complete [https://github.com/scijava/scijava-scripts SciJava-scripts] repository. That will give you access to other useful scripts and help keep them all up to date.
 # ('''optional''') If you want to easily use these scripts from any directory, you can [http://askubuntu.com/q/97897 add the scijava-scripts folder to your PATH].
 # You will need an account for [http://maven.imagej.net maven.imagej.net] and the local Maven configuration to deploy to this repository. If you haven't set this up yet, contact the [[Mailing_Lists|ImageJ-devel list]] and ask for an account. A maintainer will send you instructions.
 
-===== Steps to release =====
+'''Steps to release:'''
 
 # From your project's directory, simply run:
 
@@ -114,14 +108,12 @@ The [https://github.com/scijava/scijava-scripts/blob/aab7cfe805638efc25615fdd7c7
 
 Historically, the "double push to master" approach was the recommended way to release—but it has now been replaced by the other two approaches. Nonetheless, there are a few components of Fiji that still use it to do their releases. A push to master happens with the POM version set to a non-SNAPSHOT—e.g., {{GitHub | org=fiji | repo=Trainable_Segmentation | commit=fd92658524dd90da8d505dad295c6f6ce3e3a188 | label=this Trainable_Segmentation commit releasing version 2.2.1}}. A second push to master is then typically done to "bump to next release cycle" after Jenkins starts building the release—e.g., {{GitHub | org=fiji | repo=Trainable_Segmentation | commit= | label=this Trainable_Segmentation commit bumps to 2.2.2-SNAPSHOT}}. This second push avoids accidentally having two different commits that purport to be the same non-SNAPSHOT version (since release versions must be unique and immutable).
 
-===== Prerequisites =====
-
+'''Prerequisites:'''
 * Your project needs to be tracked by a [http://jenkins.imagej.net/ Jenkins job] that will build and deploy Maven artifacts in response to changes on GitHub. If you aren't sure if such a job exists or not for your project, send a mail to the [[Mailing_Lists|ImageJ-devel]] list.
 * Familiarize yourself with the concept of [[Maven]], and in particular the idea of [http://stackoverflow.com/q/5901378 SNAPSHOT and release artifacts]. When Jenkins deploys to Maven, it is actually uploading to a separate release or SNAPSHOT repository based on the version defined in the project's pom.xml. SNAPSHOTs can be changed; releases cannot.
 * Familiarize yourself with the [http://git-scm.com/book/en/v2/Git-Basics-Tagging Git tagging process]. You will need to tag a commit and push the tag to a remote repository for the release process. Although Git tags can be changed or deleted over time, the convention of creating a tag to match each release creates a nice "bookmark" system for developers when they check out the code.
 
-===== Steps to release =====
-
+'''Steps to release:'''
 # Make a commit '''on master''' that changes the version of your project to a non-SNAPSHOT.
 # Push your commit to GitHub to trigger the deployment of a Maven release.
 # Tag the release commit with an appropriate name. Core projects use a standard "component name"-"version" naming scheme, e.g. <code>mysoftware-1.2.3</code>.
