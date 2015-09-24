@@ -1,7 +1,6 @@
 <includeonly>{|
-| style="background:none;width:auto;"
-| style="vertical-align:top" |
-{{#switch: {{{image|on}}}|off= |on=[[Image:Nuvola apps korganizer.png|50px|<nowiki></nowiki>]]<br /><div style="width:65px;height:0px;"></div>}}
+| style="background:none;width:auto;vertical-align:top"
+|{{#switch: {{{image|on}}}|off= |on=[[Image:Nuvola apps korganizer.png|50px|<nowiki></nowiki>]]<br /><div style="width:65px;height:0px;"></div>}}
 |
 <div style="font-size:100%;position:relative;left:0px;margin-right:-0px;z-index:10">TODO:
 
