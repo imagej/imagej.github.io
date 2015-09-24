@@ -155,10 +155,3 @@ If you want to add other templates, here you can find the ones existing on image
 <br/>
 <br/>
 <br/>
-
-<pre>
-test code:
-String st = new String();
-</pre>
-
-{{Template Test}}
