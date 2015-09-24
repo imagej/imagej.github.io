@@ -2,7 +2,7 @@
 
 == Gitter ==
 
-The [https://en.wikipedia.org/wiki/Gitter Gitter] chat service, while relatively new, is a great way to discuss programming issues with developers of the [[SciJava]] software stack. All you need is a [https://github.com/ GitHub] account. Advantages of Gitter include a nice "21st century" web interface, email notification when participants miss messages, and a full searchable history.
+The [[wikipedia:Gitter|Gitter]] chat service, while relatively new, is a great way to discuss programming issues with developers of the [[SciJava]] software stack. All you need is a [https://github.com/ GitHub] account. Advantages of Gitter include a nice "21st century" web interface, email notification when participants miss messages, and a full searchable history.
 
 {| class="wikitable nicetable"
 | '''Logo'''
@@ -28,7 +28,7 @@ The [https://en.wikipedia.org/wiki/Gitter Gitter] chat service, while relatively
 
 == IRC ==
 
-Developers frequent [https://en.wikipedia.org/wiki/Internet_Relay_Chat IRC] on [http://freenode.net/ irc.freenode.net], in chat rooms:
+Developers frequent [[wikipedia:Internet Relay Chat|IRC]] on [http://freenode.net/ irc.freenode.net], in chat rooms:
 {| class="wikitable"
 |-
 ! Channel
@@ -51,6 +51,6 @@ If Javascript is enabled in your browser, you can connect to '''#fiji-devel''' r
 
 The chat client above is the [http://webchat.freenode.net/?channels=fiji-devel freenode.net Javascript client].
 
-Or if you are lucky enough not to be blocked by a restrictive firewall, you can install and use [https://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_clients a dedicated IRC client] of your very own.
+Or if you are lucky enough not to be blocked by a restrictive firewall, you can install and use [[wikipedia:Comparison of Internet Relay Chat clients|a dedicated IRC client]] of your very own.
 
 [[Category:Help]]
