@@ -1,6 +1,6 @@
 = Morphological operations in Imglib2. =
 
-The presentation of what are morphological operations is left to [http://en.wikipedia.org/wiki/Mathematical_morphology Wikipedia].
+The presentation of what are morphological operations is left to [[wikipedia:Mathematical morphology|Wikipedia]].
 
 
 
@@ -32,7 +32,7 @@ However, we use the Imglib2 [https://github.com/imglib/imglib2-algorithm/blob/ma
 
 == Morphological operations on <code>Comparable</code> type. ==
 
-Morphological operations are defined on types that have very little requirement. The data does not have to be made of numerical pixels at all. Mathematically, they are defined on partially ordered sets (complete lattices, see for instance [http://en.wikipedia.org/wiki/Dilation_(morphology)#Dilation_on_complete_lattices ''Dilation on complete lattices'']).
+Morphological operations are defined on types that have very little requirement. The data does not have to be made of numerical pixels at all. Mathematically, they are defined on partially ordered sets (complete lattices, see for instance [[wikipedia:Dilation (morphology)#Dilation_on_complete_lattices|''Dilation on complete lattices'']]).
 
 In Imglib2, we require a little bit more than that. The data type you can use with morphological operations needs to be comparable. In practice, it must extends <code>Type</code> and <code>Comparable</code>: <code>T extends Type< T > & Comparable< T ></code>. With this, it is perfectly possible to dilate an image of strings by a 3x3 square strel:
 
