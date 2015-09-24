@@ -101,7 +101,7 @@ In cases where it is clear which class or classes are causing problems, you can 
 
 === Binary search through your external plugins ===
 
-If it is not clear which update sites or external plugins are causing problems in your installation, a simple technique to help identify the cause of your problem is a [http://en.wikipedia.org/wiki/Binary_search_algorithm binary search]. The general procedure is such:
+If it is not clear which update sites or external plugins are causing problems in your installation, a simple technique to help identify the cause of your problem is a [[wikipedia:Binary search algorithm|binary search]]. The general procedure is such:
 
 # Start from your current installation
 # Remove half of your non-core update sites and/or local plugins.
