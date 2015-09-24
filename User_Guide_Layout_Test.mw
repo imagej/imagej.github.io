@@ -18,10 +18,14 @@ If you want to add other templates, here you can find the ones existing on image
 ==== 1.1.1 Sub-submenu ====	
 ===== 1.1.1.1 Sub-submenu =====
 
-<br>
-<br>
-<br>
-<br>
+<br/>
+
+== Plugin parameters ==
+
+Plugin parameters such as number fields, text fields, checkboxes, or radio buttons will be shown '''bold'''
+
+dropdown choices will be indeícated '''''bold/italic'''''
+
 
 == Keyboard keys ==
 
