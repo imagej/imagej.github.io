@@ -516,9 +516,9 @@ There is no such relationship between '''RandomAccess''' and '''RealRandomAccess
 
 === A RealRandomAccess to Render Mandelbrot Fractals ===
 Let's look at an example.
-The following code defines a '''RealRandomAccess''' which computes the [http://en.wikipedia.org/wiki/Mandelbrot_set Mandelbrot set].
+The following code defines a '''RealRandomAccess''' which computes the [[wikipedia:Mandelbrot set|Mandelbrot set]].
 More precisely, our '''RealRandomAccess''' can be positioned at an arbitray 2D coordinate in the complex plane.
-When we '''get()''' its value, it computes an iteration count for its current position using an [http://en.wikipedia.org/wiki/Mandelbrot_set#Escape_time_algorithm Escape time algorithm]
+When we '''get()''' its value, it computes an iteration count for its current position using an [[wikipedia:Mandelbrot set#Escape_time_algorithm|Escape time algorithm]]
 
 <source lang="java">
 import net.imglib2.RealPoint;
