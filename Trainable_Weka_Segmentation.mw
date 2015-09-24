@@ -31,7 +31,7 @@ The [[Trainable Weka Segmentation]] is a Fiji plugin that combines a collection 
 
 * ease of use due to its graphical user interfaces
 
-[http://www.cs.waikato.ac.nz/ml/weka/ Weka] supports several standard [http://en.wikipedia.org/wiki/Data_mining data mining] tasks, more specifically, data preprocessing, [http://en.wikipedia.org/wiki/Cluster_analysis clustering], [http://en.wikipedia.org/wiki/Classification_(machine_learning) classification], [http://en.wikipedia.org/wiki/Regression_analysis regression], visualization, and [http://en.wikipedia.org/wiki/Feature_selection feature selection].
+[http://www.cs.waikato.ac.nz/ml/weka/ Weka] supports several standard [[wikipedia:Data mining|data mining]] tasks, more specifically, data preprocessing, [[wikipedia:Cluster analysis|clustering]], [[wikipedia:Classification (machine learning)|classification]], [[wikipedia:Regression analysis|regression]], visualization, and [[wikipedia:Feature selection|feature selection]].
 
 The main goal of this plugin is to work as a '''bridge between the Machine Learning and the Image Processing''' fields. It provides the framework to use and, more important, '''compare''' any available classifier to perform image segmentation based on pixel classification.
 
@@ -66,7 +66,7 @@ Based on the current classifier, the probability that each pixel belongs to each
 
 ==== Plot result ====
 
-This button calls the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] code to generate the model performance chart, i.e. the [http://en.wikipedia.org/wiki/Receiver_operating_characteristic ROC], [http://en.wikipedia.org/wiki/Precision_and_recall precision/recall], etc. curves based on the training data. 
+This button calls the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] code to generate the model performance chart, i.e. the [[wikipedia:Receiver operating characteristic|ROC]], [[wikipedia:Precision and recall|precision/recall]], etc. curves based on the training data. 
 
 These curves allow to visualize the performance of the classifier based on the different thresholds that can be applied to the probability maps.
 
@@ -106,14 +106,14 @@ The default number of classes of the plugin is two, but through this button we c
 The rest of tunable parameters of the plugin can be changed on the Settings dialog, which is displayed when clicking on this button.
 
 ===== Training features =====
-Here we can select and deselect the training features, which are the key of the learning procedure. The plugin creates a stack of images ---one image for each feature. For instance, if only [http://en.wikipedia.org/wiki/Gaussian_blur Gaussian blur] is selected as a feature, the classifier will be trained on the original image and some blurred versions to it with different <math>\sigma</math> parameters for the Gaussian. 
+Here we can select and deselect the training features, which are the key of the learning procedure. The plugin creates a stack of images ---one image for each feature. For instance, if only [[wikipedia:Gaussian blur|Gaussian blur]] is selected as a feature, the classifier will be trained on the original image and some blurred versions to it with different <math>\sigma</math> parameters for the Gaussian. 
 
 If the input image is grayscale, the features will be calculated using double precision (32-bit images). In the case of RGB input images, the features will be RGB as well.
 
 The different available features are:
 * '''Gaussian blur''': performs <math>n</math> individual convolutions with Gaussian kernels with <math>\sigma</math> equal to <math>1, 2, 4... 2^{n}</math>. The larger the radius the more blurred the image becomes until the pixels are homogeneous (by default n=4).
-* '''Sobel filter''': calculates the [http://en.wikipedia.org/wiki/Sobel_filter gradient at each pixel]. [http://en.wikipedia.org/wiki/Gaussian_blur Gaussian blurs] with <math>\sigma=1, 2, 4... 2^{n}</math> are performed prior to the filter.
-* '''Hessian''': Calculates a [http://en.wikipedia.org/wiki/Hessian_matrix Hessian matrix] <math>H</math> at each pixel. Prior to the application of any filters, a [http://en.wikipedia.org/wiki/Gaussian_blur Gaussian blur] with <math>\sigma=1, 2,
+* '''Sobel filter''': calculates the [[wikipedia:Sobel filter|gradient at each pixel]]. [[wikipedia:Gaussian blur|Gaussian blurs]] with <math>\sigma=1, 2, 4... 2^{n}</math> are performed prior to the filter.
+* '''Hessian''': Calculates a [[wikipedia:Hessian matrix|Hessian matrix]] <math>H</math> at each pixel. Prior to the application of any filters, a [[wikipedia:Gaussian blur|Gaussian blur]] with <math>\sigma=1, 2,
 4... 2^{n}</math> is performed. The final features used for pixel classification, given the Hessian matrix <math>\left(\begin{array}{cc}
 a & b\\
 c & d\end{array}\right)</math> are calculated thus:
@@ -125,7 +125,7 @@ c & d\end{array}\right)</math> are calculated thus:
 ** Orientation: <math>\frac{1}{2}\arccos\left(4b^{2}+(a-d)^{2}\right)</math> This operation returns the orientation for which the second derivative is maximal. It is an angle returned in radians in the range <math>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</math> and corresponds to an orientation without direction. The orientation for the minimal second derivative can be obtained by adding (or subtracting) <math>\frac{\pi}{2}</math>.
 ** Gamma-normalized square eigenvalue difference: <math>t^{4}(a-d)^{2}\left((a-d)^{2}+4b^{2}\right)</math>, where <math>t=1^{3/4}</math>.
 ** Square of Gamma-normalized eigenvalue difference: <math>t^{2}\left((a-d)^{2}+4b^{2}\right)</math>, where <math>t=1^{3/4}</math>.
-* '''Difference of gaussians''': calculates two [http://en.wikipedia.org/wiki/Gaussian_blur Gaussian blur] images from the original image and subtracts one from the other. <math>\sigma</math> values are again set to <math>1, 2, 4... 2^{n}</math> , so <math>(n-1)!</math> feature images are added to the stack.
+* '''Difference of gaussians''': calculates two [[wikipedia:Gaussian blur|Gaussian blur]] images from the original image and subtracts one from the other. <math>\sigma</math> values are again set to <math>1, 2, 4... 2^{n}</math> , so <math>(n-1)!</math> feature images are added to the stack.
 * '''Membrane projections''': the initial kernel for this operation is hardcoded as a <math>19x19</math> zero matrix with the middle column entries set to 1. Multiple kernels are created by rotating the original kernel by 6 degrees up to a total rotation of 180 degrees, giving 30 kernels. Each kernel is convolved with the image and then the set of 30 images are Z-projected into a single image via 6 methods:
 ** sum of the pixels in each image
 ** mean of the pixels in each image
@@ -139,7 +139,7 @@ c & d\end{array}\right)</math> are calculated thus:
 * '''Bilateral filter''': is very similar to the Mean filter but better preserves edges while averaging/blurring other parts of the image. The filter accomplishes this task by only averaging the values around the current pixel that are close in color value to the current pixel. The 'closeness' of other neighborhood pixels to the current pixels is determined by the specified threshold. I.e. for a value of 10 each pixel that contributes to the current mean have to be within 10 values of the current pixel. In our case, we combine spatial radius of 5, 10 and 20, with a range radius of 50 and 100.
 * '''Lipschitz filter''': from [http://imagej.net/plugins/lipschitz/ Mikulas Stencel plugin]. This plugin implements Lipschitz cover of an image that is equivalent to a grayscale opening by a cone. The Lipschitz cover can be applied for the elimination of a slowly varying image background by subtraction of the lower Lipschitz cover (a top-hat procedure). Sequential double scan algorithm (according Rosenfeld) was used. We use down and top hats, with slope = 5, 10, 15, 20, 25.
 * '''Kuwahara filter''': another noise-reduction filter that preserves edges. This is a version of the [[Linear_Kuwahara | Kuwahara filter that uses linear kernels]] rather than square ones. We use the membrane patch size as kernel size, 30 angles and the three different criteria (Variance, Variance / Mean and Variance / Mean^2).
-* '''Gabor filter''': at the moment this option may take some time and memory because it generates a very diverse range of [http://en.wikipedia.org/wiki/Gabor_filter Gabor filters] ('''45'''). ''' This may undergo changes in the future'''. The implementation details are included in this [[Gabor Filter script|script]].
+* '''Gabor filter''': at the moment this option may take some time and memory because it generates a very diverse range of [[wikipedia:Gabor filter|Gabor filters]] ('''45'''). ''' This may undergo changes in the future'''. The implementation details are included in this [[Gabor Filter script|script]].
 * '''Derivatives filter''': calculates high order derivatives of the input image (from the second to the 5th derivative) using [[FeatureJ]].
 * '''Laplacian filter''': computes the Laplacian of the input image using [[FeatureJ]]. It uses smoothing scale <math>\sigma=1, 2, 4... 2^{n}</math>.
 * '''Structure filter''': calculates for all elements in the input image, the eigenvalues (smallest and largest) of the so-called structure tensor using [[FeatureJ]]. It uses smoothing scale <math>\sigma=1, 2, 4... 2^{n}</math> and integration scales 1 and 3.
@@ -155,7 +155,7 @@ When using grayscale images, the input image will be also included as a feature.
 
 ===== Classifier options =====
 [[Image:AWS-Classifier-selection.png|thumb|300px|Classifier selection in the Trainable Weka Segmentation [[Advanced_Weka_Segmentation#Settings|Settings dialog]].]]
-The default classifier is [https://code.google.com/p/fast-random-forest/ FastRandomForest], a '''multi-threaded''' version of  [http://en.wikipedia.org/wiki/Random_forest random forest] by [http://www.irb.hr/eng/Research/Divisions-and-Centers/Division-of-Electronics/Computational-Biology-and-Bioinformatics-Group/Fran-Supek Fran Supek], initialized with 200 trees and 2 random features per node. However the user can select any available classifier in the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
+The default classifier is [https://code.google.com/p/fast-random-forest/ FastRandomForest], a '''multi-threaded''' version of  [[wikipedia:Random forest|random forest]] by [http://www.irb.hr/eng/Research/Divisions-and-Centers/Division-of-Electronics/Computational-Biology-and-Bioinformatics-Group/Fran-Supek Fran Supek], initialized with 200 trees and 2 random features per node. However the user can select any available classifier in the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] by clicking on "Choose" button. By left-clicking on the classifier text we can also edit the classifier options.
 
 '''If you do not find the classifier you want''', you might have to install the Weka package that includes it. For that, you need to launch the Weka GUI Chooser (by clicking on the Weka button of the left panel of the plugin GUI) and use the [[Trainable_Weka_Segmentation_-_How_to_install_new_classifiers | Weka Package Manager]] (under {{bc | Tools | Package manager}}). For a step-by-step description on how to install new packages, have a look at this [[Trainable_Weka_Segmentation_-_How_to_install_new_classifiers|tutorial]].
 
