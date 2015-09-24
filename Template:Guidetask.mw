@@ -22,6 +22,7 @@
 
 <noinclude>
 == Use ==
+the guidetast template can list up to 10 tasks in one list.
 <pre>
 {{guidetask|add link to wiki page|add info on shortcut {{Key|Shift}} + {{Key|F}}|mention alternative plugins}}
 </pre>
