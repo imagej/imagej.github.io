@@ -171,7 +171,7 @@ Implements a local version of Otsu's global threshold clustering. The algorithm 
 }}
 
 
-Please also see the Wikipedia article on Otsu's global threshold method: http://en.wikipedia.org/wiki/Otsu's_method 
+See also the [[wikipedia:Otsu's_method|Wikipedia article on Otsu's method]].
 
 Ported from C++ code by Jordan Bevik.
 
