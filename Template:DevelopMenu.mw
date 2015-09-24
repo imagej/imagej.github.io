@@ -26,10 +26,10 @@
 {{MenuItem | [[Distribution|Distributing your plugins]] }}
 {{MenuItem | [[Development Lifecycle|Development lifecycle]] }}
 <hr>
-{{MenuItem | [[Introduction_into_Developing_Plugins|ImageJ 1.x plugins]] }}
 {{MenuItem | [[Adding_new_ops|Adding new ops]] }}
 {{MenuItem | [[Adding_new_file_formats|Adding new formats]] }}
 {{MenuItem | [[Developing using native libraries|Using native libraries]] }}
+{{MenuItem | [[Introduction_into_Developing_Plugins|ImageJ 1.x plugins]] }}
 {{MenuItem | [[Versioning]] }}
 {{MenuItem | [[Logging]] }}
 | {{#ifeq:{{{1}}}|tutorials||collapsed}}
