@@ -66,6 +66,7 @@ Then click on the '''Compare & Review button''':
 
 [[Image:GitHub-compare-and-review-tutorial.png]]
 
+
 After starting the review, you're presented with a review page where you can get a high-level overview of what exactly has changed between your branch and the repository's master branch. You can review all comments made on commits, identify which files changed, and get a list of contributors to your branch.
 
 Finally, when you're ready to submit your pull request, click '''Create pull request''':
