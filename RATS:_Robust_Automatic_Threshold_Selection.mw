@@ -19,13 +19,13 @@ In this implementation the input gradient of the input image is computed using t
 
 [[Image:RATS_sobel.png|center]] 
 
-The kernel operators are detailed in many sources including [http://en.wikipedia.org/wiki/Sobel_operator here].  However, Wilkinson shows that eliminating the square root yields suitable results with out the added cost of a final scan across the image to compute the root.  In the plugin the gradient is left simply as the sum of the squares of the kernel operations.
+The kernel operators are detailed in many sources including [[wikipedia:Sobel operator|here]].  However, Wilkinson shows that eliminating the square root yields suitable results with out the added cost of a final scan across the image to compute the root.  In the plugin the gradient is left simply as the sum of the squares of the kernel operations.
 
 [[Image:RATS_sobel2.png|center]]
 
 Pixels with gradients that fall below a user specified threshold, [[Image:RATS_lambdasigma.png]] , are rejected.  The threshold is defined by an estimate of the noise ([[Image:RATS_sigma.png]] ,the standard deviation of the expected background is a good starting point) and a scaling factor ([[Image:RATS_lambda.png]], 3 is a good starting point).  Estimate the noise by selecting a "background" portion of the image and using ImageJ to determine the standard deviation of gray values. 
 
-The input image is then subdivided into a quadtree architecture (for more info see [http://en.wikipedia.org/wiki/Quadtree Wikipedia:Quadtree]).  Within each of the smallest subregions, a regional threshold, [[Image:RATS_Tr.png]] , is computed as the gradient weighted sum of the pixels, P.    
+The input image is then subdivided into a quadtree architecture (for more info see [[wikipedia:Quadtree|Wikipedia:Quadtree]]).  Within each of the smallest subregions, a regional threshold, [[Image:RATS_Tr.png]] , is computed as the gradient weighted sum of the pixels, P.    
 
 [[Image:RATS_Tr2.png|center]]
 
