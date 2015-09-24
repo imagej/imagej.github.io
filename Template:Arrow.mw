@@ -1,1 +1,9 @@
-&#9654;
+<includeonly>{{#ifeq: {{{1|}}} | white | &#9655; | &#9654;}}</includeonly><noinclude>
+== Usage ==
+
+<pre>{{arrow}}</pre>
+{{arrow}}
+
+<pre>{{arrow | white}}</pre>
+{{arrow | white}}
+</noinclude>
