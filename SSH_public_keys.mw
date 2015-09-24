@@ -6,7 +6,7 @@ For such case, you can set up a public/private key pair.  Create them with
 
 Usually, it is a good idea to create a public/private key pair for specific purposes, so that a single compromised key (see [http://www.debian.org/security/2008/dsa-1576 an example] how that can happen even if you did not do anything wrong) does not affect all of your machines.  So, change the default name ''id_dsa'' to something like ''id_dsa.fiji'' before hitting ''Return''.
 
-You can password-protect your private key, in which case you have to use the program [http://en.wikipedia.org/wiki/Ssh-agent ssh-agent], but is is usually more convenient to leave the password empty, in which case you are not even asked for it anymore.
+You can password-protect your private key, in which case you have to use the program [[wikipedia:Ssh-agent|ssh-agent]], but is is usually more convenient to leave the password empty, in which case you are not even asked for it anymore.
 
 Now you should have a file ''id_dsa.fiji.pub'' (the public key) in addition to ''id_dsa.fiji'' (the private key).
 
