@@ -1,5 +1,7 @@
 <includeonly>
+<span style="background:none; width:auto; vertical-align:top;"
 {{#switch: {{{image|on}}}|off= |on=[[Image:Nuvola apps korganizer.png|50px|<nowiki></nowiki>]]<br /><div style="width:65px;height:0px;"></div>}}
+</span>
 
 <div style="position:relative;left:0px;margin-right:-0px;z-index:10">TODO:
 <ul style="font-size:120%;padding:.3em 0 .3em 20px;margin:0">
