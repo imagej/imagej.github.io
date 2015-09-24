@@ -167,7 +167,7 @@ TrackMate actually depends on many other Fiji plugins or libraries. The [[Fiji B
 * [[ImgLib2]] is used everywhere we need dealing with pixels. Relying on imglib made it trivial to have a plugin that deals indifferently with 2D or 3D images. In particular, we use code from Stephan Preibisch, [[User:Saalfeld|Stephan Saalfeld]], Larry Lindsey and Lee Kamentsky.
 * [[ImageJA]] is of course the entry point for the plugin. We use it display the images as 2D slices and in the HyperStack displayer.
 * The [[3D Viewer]] is used for 3D display.
-* Internally, the tracks are represented by a mathematical [http://en.wikipedia.org/wiki/Graph_%28mathematics%29 graph]. To manipulate it, we take advantage of the excellent [http://www.jgrapht.org/ JGraphT] library.
+* Internally, the tracks are represented by a mathematical [[wikipedia:Graph %28mathematics%29|graph]]. To manipulate it, we take advantage of the excellent [http://www.jgrapht.org/ JGraphT] library.
 * TrackScheme, the TrackMate component that is used to visualize and edit tracks uses [http://www.jgraph.com/jgraph.html JGraphX] for its UI.
 * To display plots and histograms we use [http://www.jfree.org/jfreechart/ JFreeChart].
 * Some algorithm in TrackMate rely on the [http://math.nist.gov/javanumerics/jama/ JAMA] matrix package. 
