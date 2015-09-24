@@ -160,9 +160,9 @@ dropdown choices will be indeícated '''''bold/italic'''''
 <br/>
 <br/>
 == TODO / Task list ==
-It would be useful to append a ''To Do'' list highlighting what needs to be improved. This could either be appended to the bottom of each article, or to article's discussion page. We could use the <nowiki>Todo</nowiki> 
+The guidetask enables to make a tasklist with up to 10 entries. This could either be appended to the bottom of each article, or to article's discussion page. We could use the <nowiki>Todo</nowiki> 
 
 <pre>
-{{guidetask|add link to wiki page|add info on usage of {{Key|Ctrl}} key}}
+{{guidetask|add link to wiki page|add info on shortcut {{Key|Shift}} + {{Key|F}}|mention alternative plugins}}
 </pre>
-{{guidetask|add link to wiki page|add info on usage of {{Key|Ctrl}} key}}
+{{guidetask|add link to wiki page|add info on usage of {{Key|Shift}} + {{Key|F}}|mention alternative plugins}}
