@@ -13,8 +13,6 @@ There is a convenient online search interface:
 
 <div style="font-size: large; font-family: monospace; padding: 0 0 0.5em 3em">[http://search.imagej.net/ http://search.imagej.net/]</div>
 
-See also [[Search Tips]] for some advanced tricks.
-
 = Troubleshooting =
 
 If you encounter problems, check the [[Troubleshooting]] page. If you have found a bug, you can help the project by [[Report a Bug|reporting it]].
