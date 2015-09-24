@@ -26,7 +26,7 @@ With this in mind, individual changes go through four general "phases":
 
 The following sections will discuss these phases, and their associated tools and workflows, in more depth.
 
-== Phase 1: In Development ==
+== Phase 1: In development ==
 
 GitHub provides tools for controlling [https://help.github.com/articles/permission-levels-for-a-user-account-repository/ user permission levels]. How you develop your changes to a project depends on whether you are able to push (write) to that project's repository or not.
 
@@ -40,7 +40,7 @@ For non-trivial changes, you will typically [[Git_topic_branches|create a topic 
 
 If you do not have push rights, then you need to go through an additional step called '''[http://www.dataschool.io/simple-guide-to-forks-in-github-and-git/ Forking the repository]'''. This gives you a personal copy of the code that you can edit.
 
-== Phase 2: On Master ==
+== Phase 2: On master ==
 
 Once a feature or fix is complete it can move to the <code>master</code> branch of the repository. How you accomplish this depends on how the changes were developed in Phase 1.
 
@@ -165,3 +165,4 @@ See the [[Update Sites|documentation on update sites]] for further instructions.
 * The SciJava [[Architecture#Versioning|versioning guidelines]] will help you choose appropriate version numbers for your software when performing Maven releases.
 
 [[Category:Development]]
+[[Category:Tutorials]]
