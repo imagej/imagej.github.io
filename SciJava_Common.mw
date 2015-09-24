@@ -24,7 +24,7 @@ All program state, such as available plugins, is accessible from a root object k
 == Services ==
 
 {{ImageJ1
-| Whereas [[ImageJ1]] is a [https://en.wikipedia.org/wiki/Singleton_pattern singleton], with static methods to access much of its functionality, [[ImageJ2]] encapsulates its program state in the application context, allowing multiple simultaneous such contexts in the same JVM.
+| Whereas [[ImageJ1]] is a [[wikipedia:Singleton pattern|singleton]], with static methods to access much of its functionality, [[ImageJ2]] encapsulates its program state in the application context, allowing multiple simultaneous such contexts in the same JVM.
 }}
 ImageJ encapsulates its various parts as separate "services" that provide related state functionality and track related program state. An instance of the {{Javadoc | package = net/imagej | class = ImageJ}} class is nothing more than a collection of these services; this instance is referred to as the "application gateway." Services are defined as interfaces, with concrete implementations as plugins. This design provides [http://c2.com/cgi/wiki?SoftwareSeam seams] in the right places so that behavior at every level can be customized and overridden.
 
@@ -34,7 +34,7 @@ Here are a few of SciJava Common's major core services:
 
 * '''{{Javadoc | package = org/scijava/app | class = AppService}}''' - Tracks software applications (SCIFIO, ImageJ, etc.) present in the context.
 * '''{{Javadoc | package = org/scijava/display | class = DisplayService}}''' - Tracks available displays, as well as the active display, and provides the means to create new displays to visualize data.
-* '''{{Javadoc | package = org/scijava/event | class = EventService}}''' - Publishes events to the [https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern event bus], and allows interested parties to subscribe to them. The service provides the central means of communication between various parts of the codebase.
+* '''{{Javadoc | package = org/scijava/event | class = EventService}}''' - Publishes events to the [[wikipedia:Publish%E2%80%93subscribe pattern|event bus]], and allows interested parties to subscribe to them. The service provides the central means of communication between various parts of the codebase.
 * '''{{Javadoc | package = org/scijava/io | class = IOService}}''' - General tools for opening and saving data within the context.
 * '''{{Javadoc | package = org/scijava/menu | class = MenuService}}''' - Builds the application menu structure.
 * '''{{Javadoc | package = org/scijava/module | class = ModuleService}}''' - Tracks available modules, and provides the infrastructure for executing them.
