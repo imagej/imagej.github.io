@@ -283,7 +283,7 @@ Otsu's threshold clustering algorithm searches for the threshold that minimizes 
 | doi = 10.1109/TSMC.1979.4310076
 }}
 
-See also the [http://en.wikipedia.org/wiki/Otsu's_method Wikipedia article on Otsu's method].
+See also the [[wikipedia:Otsu's_method|Wikipedia article on Otsu's method]].
 
 Ported from C++ code by Jordan Bevik.
 
