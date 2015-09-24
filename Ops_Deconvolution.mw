@@ -1,5 +1,7 @@
 =Richardson Lucy=
 
+[https://en.wikipedia.org/wiki/Richardson%E2%80%93Lucy_deconvolution Richardson Lucy]
+
 <math>\mathbf{o}_{k+1}(s)=\left\{\left[\frac{i(s)}{(o_{k}*h)(s)}\right]*h(-s)\right\}{o}_{k}(s)</math>
 
 =Richardson Lucy with Total Variation Regularization=
