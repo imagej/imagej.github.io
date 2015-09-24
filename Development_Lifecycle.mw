@@ -39,11 +39,11 @@ The following sections will discuss these phases, and their associated tools and
 
 == Phase 1: In development ==
 
-GitHub provides tools for controlling [https://help.github.com/articles/permission-levels-for-a-user-account-repository/ user permission levels]. How you develop your changes to a project depends on whether you are able to push (write) to that project's repository or not.
+Repositories on GitHub are referred to as '''remotes'''; when you ''[https://help.github.com/articles/cloning-a-repository/ clone]'', or ''check out'', a remote you get a local copy of the repository. Development progresses by making changes to your local copy and pushing them back to the remote. GitHub provides tools for controlling [https://help.github.com/articles/permission-levels-for-a-user-account-repository/ user permission levels] for each remote repository, therefore how you develop a project depends on whether you are able to ''push'' (write) to that project's remote repository or not.
 
-* '''Collaborating developer.''' If you have permission to push directly to the project's repository, then you can simply use [[Git]] and [[GitHub]] to [https://help.github.com/articles/cloning-a-repository/ clone the repository] and make your changes. For non-trivial changes, you will typically [[Git_topic_branches|create a topic branch]] to develop and test the changes. This also provides a forum for discussion and review with your fellow developers.
+* '''Collaborating developer.''' If you have permission to push directly to the project's remote repository, then you can simply use [[Git]] and [[GitHub]] to [https://help.github.com/articles/cloning-a-repository/ clone the repository] and make your changes. For non-trivial changes, you will typically [[Git_topic_branches|create a topic branch]] to develop and test the changes. This also provides a forum for discussion and review with your fellow developers.
 
-* '''External developer.''' If you do not have push rights, then you need to go through an additional step called '''[http://www.dataschool.io/simple-guide-to-forks-in-github-and-git/ Forking the repository]'''. This gives you a personal copy of the code that you can edit.
+* '''External developer.''' If you do not have push rights, then you need to go through an additional step called '''[http://www.dataschool.io/simple-guide-to-forks-in-github-and-git/ Forking the repository]'''. This will create a remote copy of the repository, to which you have push rights. Your remote fork is referred to as ''downstream'' of the original remote repository (which is ''upstream'' of your fork). Your development will then take place on your fork, with an additional step later to reconcile with the upstream repository.
 
 == Phase 2: On master ==
 
