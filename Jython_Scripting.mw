@@ -52,6 +52,9 @@ If all you need is a script to run in headless mode, simply do:
 
 === Some limitations of jython === 
 
+{{Box | float=right | title=What about NumPy and SciPy?
+| If you like Python, you probably want to use Python modules such as the excellent [http://www.numpy.org/ NumPy] and [http://www.scipy.org/ SciPy] libraries. Unfortunately, Jython does not support linking to Python modules backed by native code. See [http://forum.imagej.net/t/python-scripting/80 this thread on the ImageJ forum] for some options and alternatives. This area is somewhere a dedicated programmer could make a huge splash and benefit the entire scientific community.
+}}
 Though jython tries to be as close as possible as python, there are some differences you may experience during scripting.
 
 * <u>Float "special numbers" such as ''NaN'' and ''Inf'' are not handled.</u>
