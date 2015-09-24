@@ -20,7 +20,7 @@
 | {{#ifeq:{{{1}}}|tools||collapsed}}
 }}
 
-{{Submenu | Tutorials |
+{{Submenu | Guides |
 {{MenuItem | [[Writing plugins]] }}
 {{MenuItem | [[How_to_contribute_to_an_existing_plugin_or_library|Contributing to a plugin]] }}
 {{MenuItem | [[Distribution|Distributing your plugins]] }}
