@@ -5,7 +5,7 @@ The dialog is based on the [[List of update sites]] wiki page. You can edit that
 
 == How do I remove a file from my update site? ==
 
-An update site is a [https://en.wikipedia.org/wiki/Revision_control revision control] system where nothing is ever really deleted from the history.
+An update site is a [[wikipedia:Revision control|revision control]] system where nothing is ever really deleted from the history.
 
 Hence, there are two levels of removal: marking a file '''obsolete''', and '''deleting a file completely from the history''':
 
