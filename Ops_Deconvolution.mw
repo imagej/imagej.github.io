@@ -24,10 +24,8 @@
 
 * C. Vonesch (2013), ``Second International Challenge on 3D Deconvolution Microscopy'', http://bigwww.epfl.ch/deconvolution/challenge.
 
-* D. Biggs, M. Andrews, ``Acceleration of iterative
-image restoration algorithms'',  Applied Optics, Vol. 36(8), pp.
+* D. Biggs, M. Andrews, ``Acceleration of iterative image restoration algorithms'',  Applied Optics, Vol. 36(8), pp.
 1766-75 (1997).
 
-* S. Remmele, J. Hesser, ``Vector
-Extrapolation-Based Acceleration of Regularized Richardson Lucy Image
+* S. Remmele, J. Hesser, ``Vector Extrapolation-Based Acceleration of Regularized Richardson Lucy Image
 Deblurring'',  Informatik Actuell, pp. 400-404 (2009).
