@@ -5,11 +5,11 @@ This page provides an overview of ImageJ from the perspective of software develo
 == What is ImageJ? ==
 
 {|style="font-size: large; margin-left: 25px; margin-top: 5px;"
-| style="padding: 15px 15px;" | An end-user [https://en.wikipedia.org/wiki/Application_software software application]
+| style="padding: 15px 15px;" | An end-user [[wikipedia:Application software|software application]]
 |-
 | [[File:Imagej-app.png | 500px | link=Getting started]]
 |-
-| style="border-top: 1px #aaa solid; padding: 15px 15px;" | Reusable [https://en.wikipedia.org/wiki/Library_(computing) software libraries]
+| style="border-top: 1px #aaa solid; padding: 15px 15px;" | Reusable [[wikipedia:Library (computing)|software libraries]]
 |-
 | style="padding: 0 15px 15px 35px; font-size: small;" |<source lang="java">
 public void loadAndDisplay(File file) {
@@ -79,12 +79,12 @@ GitHub is ImageJ's nexus of online collaboration (i.e., "social coding").
 |-
 | [[File:Git-icon.png | 64px | link=Git]]
 | [[Git]]
-| A first-class [https://en.wikipedia.org/wiki/Distributed_version_control distributed] [https://en.wikipedia.org/wiki/Version_control version control] system.
+| A first-class [[wikipedia:Distributed version control|distributed]] [[wikipedia:Version control|version control]] system.
 Git saves "snapshots" of the source code, keeping a history of changes.
 |-
 | style="vertical-align: middle" | [[File:Maven-icon.png | 64px | link=Maven]]
 | [[Maven]]
-| A [https://en.wikipedia.org/wiki/Build_automation build automation] tool with great dependency management.
+| A [[wikipedia:Build automation|build automation]] tool with great dependency management.
 Maven converts source code into program binaries, and much more.
 |-
 | [[File:Eclipse-luna-icon.png | 64px | link=Eclipse]]
