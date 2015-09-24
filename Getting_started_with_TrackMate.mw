@@ -63,10 +63,10 @@ Defining a smaller area to analyze can be very beneficial to test and inspect fo
 
 You are now offered to choose a detection algorithm ("detector") amongst the currently implemented ones. 
 
-The choice is actually quite limited. Apart from the '''Manual annotation''', you will find 3 detectors, but they are all based on [http://en.wikipedia.org/wiki/Blob_detection#The_Laplacian_of_Gaussian LoG (Laplacian of Gaussian) segmentation]. They are described in detail elsewhere, but here is what you need to know. 
+The choice is actually quite limited. Apart from the '''Manual annotation''', you will find 3 detectors, but they are all based on [[wikipedia:Blob detection#The_Laplacian_of_Gaussian|LoG (Laplacian of Gaussian) segmentation]]. They are described in detail elsewhere, but here is what you need to know. 
 
 * The '''Log detector''' applies a plain LoG segmentation on the image. All calculations are made in the Fourier space, which makes it optimal for intermediate spot sizes, between ≈5 and ≈20 pixels in diameter.
-* The '''Dog detector''' uses the [http://en.wikipedia.org/wiki/Blob_detection#The_difference_of_Gaussians_approach difference of Gaussians] approach to approximate a LoG filter by the difference of 2 Gaussians. Calculations are made in the direct space, and it is optimal for small spot sizes, below ≈5 pixels.
+* The '''Dog detector''' uses the [[wikipedia:Blob detection#The_difference_of_Gaussians_approach|difference of Gaussians]] approach to approximate a LoG filter by the difference of 2 Gaussians. Calculations are made in the direct space, and it is optimal for small spot sizes, below ≈5 pixels.
 * The '''Downsample LoG detector''' uses the LoG detector, but downsizes the image by an integer factor before filtering. This makes it optimal for large spot sizes, above ≈20 pixels in diameter, at the cost of localization precision.
 
 In our case, let us just use the '''Dog detector'''.
@@ -174,7 +174,7 @@ To move the threshold, simply click and drag inside the histogram window. Notice
   <li> Ot use the arrow keys: the left and right arrow keys will change the threshold value by 10%, the up and down arrow will set it to the max and min value respectively. 
 </ul>
 
-A filter can be set to be above or below the given threshold. You change this behavior using the radio buttons below the histogram window. In our case, we want it to be above of course. The '''Auto''' button uses [http://en.wikipedia.org/wiki/Otsu%27s_method Otsu's method] to determine automatically a threshold. In our case, we will put it manually around 33. 
+A filter can be set to be above or below the given threshold. You change this behavior using the radio buttons below the histogram window. In our case, we want it to be above of course. The '''Auto''' button uses [[wikipedia:Otsu%27s method|Otsu's method]] to determine automatically a threshold. In our case, we will put it manually around 33. 
 
 You can inspect the data by scrolling on the hyperstack window and check that only mostly good spots are retained. This is an easy image. The spots you have filtered out are not discarded; they are simply not shown and they will not be taken into account when doing particle linking. In a later stage, you can step back to this step, and retrieve the filtered out spots by removing or changing the filters.
 
@@ -200,7 +200,7 @@ These LAP algorithm exists in TrackMate in two flavors: a simple one and a not s
 
 * The not simple one allows to detect any kind of event, so if you need to build tracks that are splitting or merging, you must go for this one. If you want to forbid the detection of gap-closing events, you want to use it as well. Also, you can alter the cost calculation to disfavor the linking of spots that have very different feature values.
 
-There is also a 3rd tracker, the [http://en.wikipedia.org/wiki/Nearest_neighbor_search '''Nearest neighbor search'''] tracker. This is the most simple tracker you can build, and it is mostly here for demonstration purposes. Each spot in one frame is linked to another one in the next frame, disregarding any other spot, thus achieving only a very local optimum. You can set a maximal linking distance to prevent the results to be totally pathological, but this is as far as it goes. It may be of use for very large and easy datasets: its memory consumption is very limited (at maximum only two frames need to be in memory) and is quick (the nearest neighbor search is performed using [http://en.wikipedia.org/wiki/Kd_tree Kd-trees]).
+There is also a 3rd tracker, the [[wikipedia:Nearest neighbor search|'''Nearest neighbor search''']] tracker. This is the most simple tracker you can build, and it is mostly here for demonstration purposes. Each spot in one frame is linked to another one in the next frame, disregarding any other spot, thus achieving only a very local optimum. You can set a maximal linking distance to prevent the results to be totally pathological, but this is as far as it goes. It may be of use for very large and easy datasets: its memory consumption is very limited (at maximum only two frames need to be in memory) and is quick (the nearest neighbor search is performed using [[wikipedia:Kd tree|Kd-trees]]).
 
 Then of course, there is the option to skip the automated tracking using '''Manual tracking'''.
 
