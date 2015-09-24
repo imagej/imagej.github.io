@@ -1,4 +1,4 @@
-The [http://en.wikipedia.org/wiki/Rand_index Rand index] is a well-known measure of the similarity between two data clusterings<ref name="Rand71">{{cite journal
+The [[wikipedia:Rand index|Rand index]] is a well-known measure of the similarity between two data clusterings<ref name="Rand71">{{cite journal
 | author = William M. Rand
 | title = Objective criteria for the evaluation of clustering methods
 | journal = Journal of the American Statistical Association
@@ -18,7 +18,7 @@ The [http://en.wikipedia.org/wiki/Rand_index Rand index] is a well-known measure
 | doi = 10.1109/TPAMI.2007.1046
 }}</ref>. More formally, define a segmentation as an integer-valued labeling of an image. Each object in a segmentation consists of a set of pixels sharing a common label. 
 
-The [http://en.wikipedia.org/wiki/Rand_index Rand index] is defined as a measure of agreement: 
+The [[wikipedia:Rand index|Rand index]] is defined as a measure of agreement: 
 
 Given two segmentations <math>S_1</math> and <math>S_2</math> of an image <math>I</math> with <math>n</math> pixels, we define:
 
