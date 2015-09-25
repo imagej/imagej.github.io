@@ -30,7 +30,7 @@ $ git remote add upstream https://github.com/fiji/VIB-lib
 $ git fetch upstream
 </source>
 
-''See [https://help.github.com/articles/configuring-a-remote-for-a-fork/ GitHub: how to configure a remote fork] for more details.''
+''See [https://help.github.com/articles/configuring-a-remote-for-a-fork/ GitHub: how to configure a remote fork] and  [https://help.github.com/articles/syncing-a-fork/ GitHub: how to sync a fork] for more details.''
 
 == Create a topic branch ==
 Create a new branch with a descriptive name. Since we want to work on AmiraMesh files, we call it "amira-io":
