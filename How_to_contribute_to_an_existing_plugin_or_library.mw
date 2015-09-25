@@ -15,7 +15,8 @@ Go to the library's repository (in this case https://github.com/fiji/VIB-lib) an
 
 [[Image:Fork-GitHub-tutorial.png]]
 
-By doing this, you will be duplicating the whole repository into your own GitHub account. This way you can freely work on the library with an identical version of the existing repository's master branch.
+By doing this, you will be duplicating the whole repository into your own GitHub account. This way you can freely work on the library with an identical version of the existing repository's master branch.  ''See [https://help.github.com/articles/fork-a-repo GitHub: how to fork a repository] for more details.''
+
 == Clone ==
 Next, go to your command line, move to your workspace folder and clone the repository:
 <source lang="bash">$ git clone https://github.com/username/VIB-lib</source>
