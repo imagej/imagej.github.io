@@ -6,13 +6,13 @@
 | name                   = TUNEL Cell Counter
 | author                  = [[User:Daniel E. Maidana| '''Daniel E. Maidana, M.D.''']] <br> [http://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g '''Demetrios G. Vavvas, M.D., Ph.D.''']
 | maintainer           = '''Daniel E. Maidana, M.D.''' <br> Angiogenesis Laboratory <br>Massachusetts Eye and Ear Infirmary <br> Harvard Medical School ([mailto:Daniel_Maidana@MEEI.HARVARD.EDU Daniel_Maidana@meei.harvard.edu])
-| filename              = [https://github.com/DanielMaidana/TUNEL_Cell_Counter/archive/master.zip TUNEL Cell Counter]
-| source                 = [https://github.com/DanielMaidana/TUNEL_Cell_Counter/blob/master/TUNEL%20Cell%20Counter%20-%20v1.0.ijm TUNEL Cell Counter Source Code]
+| filename              = 
+| source                 = 
 | released              = August 18<sup>th</sup>, 2015
 | latest version      = August 18<sup>th</sup>, 2015
 | status                  = Stable, active, and validated
 | category               =[[:Category:Plugins|Plugins]]
-| website                = [https://github.com/DanielMaidana/TUNEL_Cell_Counter TUNEL Cell Counter at GitHub]
+| website                =
 }}<br>
 '''TUNEL Cell Counter''' is a free, open source macro created for ImageJ2 and FIJI, developed by Daniel E. Maidana, M.D. and Demetrios G. Vavvas, M.D., Ph.D. at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. TUNEL Cell Counter has been validated for TUNEL assay quantitation in retinal cryo-sections. TUNEL Cell Counter is able to analyze digital images obtained from fluorescent microscopes, segment the outer nuclear (ONL) and inner nuclear layer (INL), and count TUNEL-positive (TUNEL<sup>+</sup>) cells in each retinal layer. After analysis, TUNEL Cell Counter generates an array with several output variables. Additionally, the macro generates a merged image with segmented layers and quantitated cells for qualitative performance assessment. 
 __TOC__
