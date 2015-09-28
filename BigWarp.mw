@@ -22,3 +22,51 @@ of the warp on-the-fly.
 == Installation ==
 Bigwarp comes with Fiji.
 You can access it via ''Plugins {{arrow}} BigDataViewer {{arrow}} Big Warp''.
+
+== Usage ==
+
+Open two images in ImageJ, one ''moving'' and the other ''target'' and navigate to ''Plugins {{arrow}} BigDataViewer {{arrow}} Big Warp.'' A dialog will appear prompting selection of the moving and target images.
+
+=== Getting Help ===
+Press {{key press|F1}} at any time to open a help page with a listing of navigation and editing commands. 
+
+=== Landmark point placement ===
+
+Landmark placements is done in ''Landmark mode'' which can be toggled with {{key press|Spacebar}}.
+Users place pairs of corresponding points on  
+
+The following table shows the available landmark placement commands and keystrokes. 
+{| border="1" style="border-collapse:collapse;"
+| style="padding: 5px;" | {{key press|Spacebar}}
+| style="padding: 5px;" | Toggle ''Landmark mode'' 
+|-
+| style="padding: 5px;" | <''Landmark mode on''>+{{key press|left-click}}
+| style="padding: 5px;" | Clicking while in landmark mode adds a landmark point. 
+|-
+| style="padding: 5px;" | <''Landmark mode on''>+{{key press|left-click}}+{{key press|drag}}
+| style="padding: 5px;" | Clicking an existing point and dragging changes it's position. 
+|-
+| style="padding: 5px;" | <''Landmark mode on''>+{{key press|Shift}}+{{key press|left-click}}+{{key press|drag}}
+| style="padding: 5px;" | "Move" a point.  The initial click places a
+landmark point for the moving image.  The releaseee places a landmark
+point for the target image.
+|}
+
+=== Navigation ===
+
+Bigwarp shares many navigation features with BigDataViewer, the details of which can be
+found on the [[BigDataViewer#Basic_Navigation|BigDataViewer Navigation Page]], or on the
+help page.  BigWarp specific features are documented below.
+
+The following table shows the available navigation commands using the mouse:
+
+{| border="1" style="border-collapse:collapse;"
+| style="padding: 5px;" | {{key press|Q}}
+| style="padding: 5px;" | Align the non-active viewer with the active viewer. 
+|-
+| style="padding: 5px;" | {{key press|W}}
+| style="padding: 5px;" | Align the active viewer with the non-active viewer.
+|-
+| style="padding: 5px;" | {{key press|R}}
+| style="padding: 5px;" | Resets the active viewer. 
+|}
