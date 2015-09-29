@@ -1,20 +1,19 @@
-<span style="color:#FF0000"> <b> THIS PAGE IS UNDER A BRIEF MAINTENANCE. WE WILL BE BACK SHORTLY!</b>
-
 {{Infobox
 | logo                   = [[Image:fiji-icon.png|96px]]
 | software               = Fiji
 | name                   = TUNEL Cell Counter
 | author                  = [[User:Daniel E. Maidana| '''Daniel E. Maidana, M.D.''']] <br> [http://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g '''Demetrios G. Vavvas, M.D., Ph.D.''']
 | maintainer           = '''Daniel E. Maidana, M.D.''' <br> Angiogenesis Laboratory <br>Massachusetts Eye and Ear Infirmary <br> Harvard Medical School ([mailto:Daniel_Maidana@MEEI.HARVARD.EDU Daniel_Maidana@meei.harvard.edu])
-| filename              = 
-| source                 = 
+| filename              = [https://github.com/DanielMaidana/TUNEL_Cell_Counter/archive/master.zip TUNEL Cell Counter]
+| source                 = [https://github.com/DanielMaidana/TUNEL_Cell_Counter/blob/master/TUNEL%20Cell%20Counter%20-%20v1.0.ijm TUNEL Cell Counter Source Code]
 | released              = August 18<sup>th</sup>, 2015
 | latest version      = August 18<sup>th</sup>, 2015
-| status                  = Stable, active, and validated
+| status                  = Active and validated with ImageJ 1.49
 | category               =[[:Category:Plugins|Plugins]]
-| website                =
+| website                = [https://github.com/DanielMaidana/TUNEL_Cell_Counter TUNEL Cell Counter at GitHub]
 }}<br>
-'''TUNEL Cell Counter''' is a free, open source macro created for ImageJ2 and FIJI, developed by Daniel E. Maidana, M.D. and Demetrios G. Vavvas, M.D., Ph.D. at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. TUNEL Cell Counter has been validated for TUNEL assay quantitation in retinal cryo-sections. TUNEL Cell Counter is able to analyze digital images obtained from fluorescent microscopes, segment the outer nuclear (ONL) and inner nuclear layer (INL), and count TUNEL-positive (TUNEL<sup>+</sup>) cells in each retinal layer. After analysis, TUNEL Cell Counter generates an array with several output variables. Additionally, the macro generates a merged image with segmented layers and quantitated cells for qualitative performance assessment. 
+
+'''TUNEL Cell Counter''' is a free, open source macro created for ImageJ 1.49 developed by Daniel E. Maidana, M.D. and Demetrios G. Vavvas, M.D., Ph.D. at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. TUNEL Cell Counter has been validated for TUNEL assay quantitation in retinal cryo-sections. TUNEL Cell Counter is able to analyze digital images obtained from fluorescent microscopes, segment the outer nuclear (ONL) and inner nuclear layer (INL), and count TUNEL-positive (TUNEL<sup>+</sup>) cells in each retinal layer. After analysis, TUNEL Cell Counter generates an array with several output variables. Additionally, the macro generates a merged image with segmented layers and quantitated cells for qualitative performance assessment. 
 __TOC__
 
 == Overview ==
@@ -22,7 +21,9 @@ TUNEL Cell Counter is a custom-built and validated ImageJ macro that processes d
 
 == Before You Start ==
 Please read carefully before using this macro.
-You will need the following information before you start quantitating images.
+
+<b>This macro was validated using ImageJ version 1.49. We strongly suggest to use the same version, as segmentation may vary with other versions.</b>
+
 === Microscope Calibration ===
 [[File:Scale.png|250px|thumb|right|Replace the value 3095.975 in the source code with your microscope spatial scale.]]
 To convert pixels to mm<sup>2</sup>, the image spatial scale is required. This can be found in the image metadata or in the microscope's bundled software.
@@ -47,6 +48,7 @@ The original ONL and INL image datasets used for validation purposes are availab
 
 == Download & Install ==
 === TUNEL Cell Counter Setup ===
+#Download and install mageJ 1.49. [http://imagej.nih.gov/ij/download.html] <br>
 #Download the macro from the GitHub link.<br>
 #Go to {{bc | Plugins | Macros | Install}} and select the downloaded '''.ijm''' file.
 
@@ -87,7 +89,7 @@ TUNEL Cell Counter can be executed either as a macro or as batch process, with t
 To execute in Macro Mode:
 #Open an image or ''drag-and-drop'' to the application window. 
 #Go to {{bc | Process | Macro | TUNEL Cell Counter}}.
-#After processing, select "Results" window and go to {{bc | File | Save as}}, and save results as '''.csv''' file.
+#After processing, select "Results" window and go to {{bc | File | Save as}}, and save results as '''.xls''' file.
 
 To execute in Batch Mode:
 #Inspect the macro source code from the GitHub link.<br>
@@ -98,7 +100,7 @@ To execute in Batch Mode:
 #Select ''Output'' as the folder were processed images will be saved.
 #Choose JPEG as "Output Format" (recommended).
 #Click on "Process".
-#After processing, select "Summary" window and go to {{bc | File | Save as}}, and save summary as '''.csv''' file.
+#After processing, select "Summary" window and go to {{bc | File | Save as}}, and save summary as '''.xls''' file.
 
 == Macro Output ==
 === Qualitative ===
@@ -144,6 +146,8 @@ Yes, we know there is a lot to improve! <br>
 We are currently working on the following issues:
 *Image acquisition: We are working on images obtained with 10x objective magnification.
 *Variables in Batch Processing mode: We are modifying the code to report the complete variable list.
+
+If you have any comments or suggestion, just send us a message!
 
 == Version History ==
 
