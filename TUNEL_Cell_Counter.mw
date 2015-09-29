@@ -138,7 +138,7 @@ When executed in Batch Mode, ONL Area, INL Area, ONL TUNEL<sup>+</sup> cells, an
 # Q: I used this tool for my research. How should I acknowledge it?
 #*A: ''Please cite or reference this work as follows: Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG (2015) A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Currently under revision.'' <br>
 # Q: I cannot get accurate segmentation or counting. Any advice?
-#*A: ''Check your acquisition and post-processing parameters. Try to keep background at minimum, and avoid saturating pixels especially in the green channel. This will balance any large fragment or noise signal to a real cell. Finally, as a rule of thumb, best performances are obtained with less saturated images.'' <br>
+#*A: ''Check your acquisition and post-processing parameters. First, try to keep background at minimum to remove any fragments. Next, adjust saturation until cells are easily identifiable.'' <br>
 
 == Future Development ==
 Yes, we know there is a lot to improve! <br> 
