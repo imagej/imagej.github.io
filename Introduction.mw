@@ -9,7 +9,7 @@ ImageJ is an [[open source]] [[techniques|image processing]] program for multidi
 == What does ImageJ provide? ==
 
 {|
-| style="font-size: 1.5em; padding: 0.5em 1em 0.5em 1em" | [[Getting started|Application]]
+| style="font-size: 1.5em; padding: 0.5em 1em 0.5em 1em" | [[Application]]
 | A user interface with functions to load, display, and save images.
 |-
 | style="font-size: 1.5em; padding: 0.5em 1em 0.5em 1em" | [[Techniques]]
