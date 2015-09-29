@@ -47,7 +47,7 @@ The original ONL and INL image datasets used for validation purposes are availab
 
 == Download & Install ==
 === TUNEL Cell Counter Setup ===
-#Download and install mageJ 1.49. [http://imagej.nih.gov/ij/download.html] <br>
+#Download and install ImageJ 1.49v. [http://imagej.nih.gov/ij/download.html] <br>
 #Download the macro from the GitHub link.<br>
 #Go to {{bc | Plugins | Macros | Install}} and select the downloaded '''.ijm''' file.
 
