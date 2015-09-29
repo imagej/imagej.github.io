@@ -1,6 +1,6 @@
 {{Infobox
 | logo                   = [[Image:fiji-icon.png|96px]]
-| software               = Fiji
+| software               = ImageJ
 | name                   = TUNEL Cell Counter
 | author                  = [[User:Daniel E. Maidana| '''Daniel E. Maidana, M.D.''']] <br> [http://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g '''Demetrios G. Vavvas, M.D., Ph.D.''']
 | maintainer           = '''Daniel E. Maidana, M.D.''' <br> Angiogenesis Laboratory <br>Massachusetts Eye and Ear Infirmary <br> Harvard Medical School ([mailto:Daniel_Maidana@MEEI.HARVARD.EDU Daniel_Maidana@meei.harvard.edu])
@@ -21,7 +21,7 @@ TUNEL Cell Counter is a custom-built and validated ImageJ macro that processes d
 
 == Before You Start ==
 Please read carefully before using this macro.
-{{Notice |'''This macro was validated using ImageJ 1.49v. We strongly suggest to use the same version, as segmentation may vary with other versions.'''}}
+{{Notice |'''This macro was validated using ImageJ 1.49v. We strongly suggest to use the same version, as segmentation results may vary with other versions.'''}}
 
 === Microscope Calibration ===
 [[File:Scale.png|250px|thumb|right|Replace the value 3095.975 in the source code with your microscope spatial scale.]]
