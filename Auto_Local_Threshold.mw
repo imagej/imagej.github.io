@@ -5,7 +5,7 @@
 | maintainer             = Gabriel Landini (G.Landini at bham. ac. uk)
 | filename               = included in Auto_Threshold.jar
 | source                 = {{GitHub|org=fiji|repo=Auto_Threshold|source=fiji/threshold/Auto_Local_Threshold.java}}
-| latest version         = v1.5 (18 November 2013)
+| latest version         = v1.16.1
 | status                 = active 
 }}
 
