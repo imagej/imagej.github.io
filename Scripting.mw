@@ -42,7 +42,7 @@ All scripting languages use the same basic interpreter, with the following commo
 * down arrow: bring the next typed command.
 * enter or return: execute the contents of the prompt.
 
-== Multiline editing and keybidings==
+== Multiline editing and keybindings==
 
 You can enlarge the prompt by dragging the middle bar.
 
