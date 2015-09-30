@@ -111,6 +111,7 @@ Our algorithm is implemented in Java as an [[ImageJ]] plugin which runs on both 
 * [2] M. Frigo and S. Johnson, "The Design and Implementation of {FFTW3}," Proc. IEEE, vol. 93, no. 2, pp. 216–231, 2005.
 
 [ [https://github.com/NIST-ISG/MIST MIST source code], [https://isg.nist.gov/deepzoomweb/resources/csmet/pages/image_stitching/image_stitching.html MIST project page] ]
+[ [https://vimeo.com/140929697/ Presentation video] ]
 
 === Benjamin Nanes - Slide Set: Simplified batch processing with ImageJ2 ===
 
