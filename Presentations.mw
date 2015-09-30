@@ -1,0 +1,55 @@
+= ImageJ presentations =
+
+{| class="wikitable"
+| '''Date'''
+| '''Presenter'''
+| '''Title'''
+| '''Subtitle'''
+| '''Description'''
+|-
+| style="white-space: nowrap" | 2015-Sep-04
+| {{Dev | id=bnorthan}}
+| [https://imagej.github.io/presentations/2015-09-04-imagej2-deconvolution/ Flexible Deconvolution using ImageJ Ops]
+| -
+| A workshop at the [[Conference 2015|2015 ImageJ User & Developer Conference]].
+|-
+| style="white-space: nowrap" | 2015-Sep-04
+| [[User:Rueden|Curtis Rueden]] and {{Dev | id=bnorthan}}
+| [https://imagej.github.io/presentations/2015-09-04-imagej2-scripting/ ImageJ2 scripts]
+| Parameters + ImageJ Ops
+| A workshop at the [[Conference 2015|2015 ImageJ User & Developer Conference]].
+|-
+| style="white-space: nowrap" | 2015-Sep-03
+| [[User:Hinerm|Mark Hiner]]
+| [https://imagej.github.io/presentations/2015-09-03-imagej-matlab/ ImageJ+MATLAB]
+| Reunited
+| An overview of the current state of [[MATLAB|ImageJ-MATLAB interoperability]].
+|-
+| style="white-space: nowrap" | 2015-Sep-03
+| [[User:Rueden|Curtis Rueden]]
+| [https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/ ImageJ2 and Fiji]
+| The ImageJ2 platform, and the Fiji distribution of ImageJ
+| A keynote presentation at the [[Conference 2015|2015 ImageJ User & Developer Conference]].
+|-
+| style="white-space: nowrap" | 2015-Jan-12
+| [[User:Schindelin|Johannes Schindelin]]
+| [https://imagej.github.io/presentations/2015-01-12-imagej-ops/ The ImageJ Ops Framework]
+| Image processing made easy
+| A short presentation about [[ImageJ Ops]].
+|-
+| style="white-space: nowrap" | 2012-Oct-24
+| [[User:Rueden|Curtis Rueden]]
+| [http://wiki.imagej.net/downloads/2012-10-24-imagej-conference.odp ImageJ2]
+| -
+| A presentation at the [[Conference 2012|2012 ImageJ User & Developer Conference]].
+|-
+| style="white-space: nowrap" | 2010-Oct-27
+| [[User:Rueden|Curtis Rueden]]
+| [[Media:2010-10-27-ImageJDev.pdf|ImageJDev]]
+| -
+| A presentation at the [[Conference 2010|2010 ImageJ User & Developer Conference]].
+|}
+
+== See also ==
+
+* The ImageJ [[Conference 2015 Program]] page includes links to presentations from that conference, all of which relate to ImageJ in some way.
