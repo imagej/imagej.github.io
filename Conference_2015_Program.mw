@@ -158,6 +158,7 @@ Despite significant advances in biological imaging and analysis, major informati
 Telomeres are regions of repetitive nucleotide sequences located at the ends of chromosomes, which protect them from fusion and degradation. In every cell division, the telomeres are shortened until they reach a critical length that signals the cell to go into senescence. Abnormally short or long telomeres are common phenomenon in cancer cells, as compared to healthy controls. Manual characterization of telomere length distribution is at best difficult. Here we present an image processing workflow which was developed in ImageJ and R to enable automated processing of telomere count and length distribution in thousands of cells. Over 3000 cells were imaged, each containing 30-150 visible telomeres. This could not have been done manually. The ImageJ environment provided us with the ability to acquire and analyze large quantities of data in a reproducible manner, and demonstrated the spread in data that resulted from the fundamental biology and physiology that were being studied.
 
 [ [http://conference.imagej.net/2015/aryeh-weiss/ij2015telomere-A.ppt Presentation slides] ]
+[ [https://vimeo.com/140929694/ Presentation video] ]
 
 == Workshops ==
 
