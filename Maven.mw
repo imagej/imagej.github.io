@@ -60,11 +60,11 @@ The first 6 lines are of course just a way to say "Hi, Maven? How are you today?
 
 The only relevant parts are the ''groupId'', which by convention is something like the inverted domain name (similar to the Java package convention), the name of the artifact to build (it will be put into ''target/'', under the name ''<artifactId>-<version>.jar''). And of course the version.
 
-== Maven repositories ==
+== Dependencies ==
 
-Maven is not only a build tool but first and foremost a dependency management tool. It has so-called Maven repositories where it stores compiled artifacts. [[ImageJ]] has a [[Architecture#Maven_repositories|Maven repository]] used by projects in the [[SciJava]] software stack.
+Maven is not only a build tool, but also a dependency management tool.
 
-For Maven to know what you are looking for, you typically have to add the dependencies into the ''pom.xml'' file. For example, every ImageJ 1.x plugin will depend on ImageJ 1.x. So let's add that (before the final ''</project>'' line):
+To depend on another library, you must declare the dependencies in your project's ''pom.xml'' file. For example, every [[ImageJ 1.x]] plugin will depend on ImageJ 1.x. So let's add that (before the final ''</project>'' line):
 
 <source lang="xml">
 <dependencies>
@@ -76,17 +76,17 @@ For Maven to know what you are looking for, you typically have to add the depend
 </dependencies>
 </source>
 
-As you can see, dependencies are referenced under the same ''groupId'', ''artifactId'' and ''version'' triplet (also known as ''GAV parameters'') that you had to declare for the current project.
+As you can see, dependencies are referenced using the same ''groupId'', ''artifactId'' and ''version'' triplet (also known as ''GAV parameters'') that you declared for your project itself.
 
-For Maven to find the dependencies, it has to know about the location of the repositories. The [[SciJava]] project uses a {{GitHub|org=scijava|repo=scijava-common|path=pom-scijava/pom.xml|label=super POM}} which declares repositories we use (and other metadata as well, such as current artifact versions we provide). (See the [[Architecture#Maven_component_structure|Architecture page]] for details.) To benefit from this in your project, add this to your ''pom.xml'':
+== Repositories ==
+
+Once your dependencies are declared, Maven will download them on demand from the Internet. However, for Maven to find the dependencies, it has to know where to look.
+
+Out of the box, Maven will look in the so-called [http://search.maven.org/ Maven Central repository]. Some ImageJ and SciJava components are deployed there, including the [[Architecture#Maven_component_structure|pom-scijava parent POM]] which declares important metadata, such as the [[Bill of Materials]]: current artifact versions intended to work together.
+
+However, many other SciJava and ImageJ components are not yet deployed to Maven Central, but instead to the [[ImageJ Maven repository]]. To gain access to this repository from your project, add the following configuration block to your ''pom.xml'':
 
 <source lang="xml">
-<parent>
-  <groupId>org.scijava</groupId>
-  <artifactId>pom-scijava</artifactId>
-  <version>5.4.0</version>
-</parent>
-
 <repositories>
   <!-- NB: for project parent -->
   <repository>
@@ -95,6 +95,8 @@ For Maven to find the dependencies, it has to know about the location of the rep
   </repository>
 </repositories>
 </source>
+
+As a rule of thumb: components [[Versioning|versioned at 0.x]] are deployed to the ImageJ Maven repository, while those at 1.x or later are deployed to Maven Central.
 
 == Releases and snapshots ==
 
