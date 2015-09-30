@@ -13,7 +13,7 @@
 | website                = [https://github.com/DanielMaidana/TUNEL_Cell_Counter TUNEL Cell Counter at GitHub]
 }}<br>
 
-'''TUNEL Cell Counter''' is a free, open source macro created for ImageJ 1.49v developed by Daniel E. Maidana, M.D. and Demetrios G. Vavvas, M.D., Ph.D. at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. TUNEL Cell Counter has been validated for TUNEL assay quantitation in retinal cryo-sections using ImageJ 1.49v. This macro is able to analyze digital images obtained from fluorescent microscopes, segment the outer nuclear (ONL) and inner nuclear layer (INL), and count TUNEL-positive (TUNEL<sup>+</sup>) cells in each retinal layer. After analysis, TUNEL Cell Counter generates an array with several output variables. Additionally, the macro generates a merged image with segmented layers and quantitated cells for qualitative performance assessment. 
+'''TUNEL Cell Counter''' is a free, open source macro created for ImageJ 1.49v developed by Daniel E. Maidana, M.D. and Demetrios G. Vavvas, M.D., Ph.D. at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. TUNEL Cell Counter has been validated for TUNEL assay quantitation in retinal cryo-sections using ImageJ 1.49v. This macro is able to analyze digital images obtained from fluorescence microscopes, segment the outer nuclear (ONL) and inner nuclear layer (INL), and count TUNEL-positive (TUNEL<sup>+</sup>) cells in each retinal layer. After analysis, TUNEL Cell Counter generates an array with several output variables. Additionally, the macro generates a merged image with segmented layers and quantitated cells for qualitative performance assessment. 
 __TOC__
 
 == Overview ==
@@ -21,7 +21,7 @@ TUNEL Cell Counter is a custom-built and validated ImageJ macro that processes d
 
 == Before You Start ==
 Please read carefully before using this macro.
-{{Notice |'''This macro was validated using ImageJ 1.49v. We strongly suggest to use the same version, as segmentation results may vary with other versions.'''}}
+{{Notice |'''This macro was validated using ImageJ 1.49v. We strongly suggest to use the same version, as segmentation and quantitation may vary with other versions.'''}}
 
 === Microscope Calibration ===
 [[File:Scale.png|250px|thumb|right|Replace the value 3095.975 in the source code with your microscope spatial scale.]]
@@ -134,7 +134,7 @@ When executed in Batch Mode, ONL Area, INL Area, ONL TUNEL<sup>+</sup> cells, an
 
 == FAQs ==
 # Q: Can I modify the source code?
-#*A: ''Yes. You can modify the code to develop new macros or plugins. Please acknowledge previous work that helped or inspired you, and share your contribution with the scientific community!''<br>
+#*A: ''Yes, you can modify the code to develop new macros or plugins. Please acknowledge previous work that helped or inspired you, and share your contribution with the scientific community!''<br>
 # Q: I used this tool for my research. How should I acknowledge it?
 #*A: ''Please cite or reference this work as follows: Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG (2015) A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Currently under revision.'' <br>
 # Q: I cannot get accurate segmentation or counting. Any advice?
@@ -143,8 +143,8 @@ When executed in Batch Mode, ONL Area, INL Area, ONL TUNEL<sup>+</sup> cells, an
 == Future Development ==
 Yes, we know there is a lot to improve! <br> 
 We are currently working on the following issues:
-*Image acquisition: We are working on images obtained with 10x objective magnification.
-*Variables in Batch Processing mode: We are modifying the code to report the complete variable list.
+*Image acquisition: Images obtained with 10x air objective.
+*Variables in Batch Processing mode: We are modifying the code to report a complete variable list.
 
 <b>If you have any comments or suggestions, just send us a message!</b>
 
