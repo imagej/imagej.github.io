@@ -218,6 +218,8 @@ We've designed OMERO to be as flexible as possible, and this has enabled its use
 # [http://downloads.openmicroscopy.org/omero/5.1.3/#clients OMERO.insight 5.1.3] standalone client.
 # [http://downloads.openmicroscopy.org/omero/5.1.3/#plugins OMERO.insight-ij 5.1.3] plugin for ImageJ.
 
+[ [https://vimeo.com/140099766/ Presentation video] ]
+
 === Matt McCormick - SimpleITK ===
 To quantitatively compare the contents of two images, they must be spatially aligned. Image registration finds the spatial transformation that aligns two images. This workshop presents SimpleITK, the simplified interface to the [[Insight Toolkit]], to perform 2D and 3D image registration. With this programming library, which interoperates with [[ImageJ]]/[[Fiji]], a spatial transformation between two images can be estimated. This spatial transformation can be quantified to learn about movement or deformation in the images, or it can be used to resample one of the images so that pixel-to-pixel content can be compared. Through interactive examples in IPython notebooks, we will explore and learn about the components of the registration framework and how they work together: transforms, interpolators, similarity metrics, and optimizers.
 
