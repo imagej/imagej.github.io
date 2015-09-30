@@ -123,6 +123,7 @@ Most imaging studies in the biological sciences rely on analyses that are relati
 This lightning talk will describe the implementation of deconvolution into the [[ImageJ2]] platform. We will go over the basics of [[deconvolution]] and introduce concepts such as noise handling, edge handling, algorithm acceleration and point spread functions. We will review strengths and weaknesses of existing ImageJ deconvolution plugins. We will then describe the design of reusable and extensible deconvolution components, that have been implemented within the [[ImageJ Ops]] framework. Where possible previous open source components have been reused and/or reimplemented. We consider the potential need for a native library bridge in order to reuse existing C and GPU based libraries. Preliminary results will be presented that have been generated using the Richardson-Lucy Algorithm with total variation regularization, non-circulant edge handling, and vector extrapolation acceleration. All code is [[open source]] and has been placed in publicly available git repositories.
 
 [ [http://imagej.github.io/presentations/2015-09-04-imagej2-deconvolution/ Presentation slides] ]
+[ [https://vimeo.com/140098821/ Presentation video] ]
 
 === Stephan Saalfeld - Seamless stitching without blending ===
 
