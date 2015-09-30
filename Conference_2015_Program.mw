@@ -80,6 +80,9 @@ Flow-induced banding patterns in extrusion-based foams can lead to aesthetic iss
 
 [ [http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_TalkSlides.pdf Presentation slides (PDF)], [http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_TalkSlides.pptx Presentation slides (PPTX)], [http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_FoamPatternMacros.ijm Macro] ]
 
+
+[ [https://vimeo.com/140098843/ Presentation video] ]
+
 === Mark Hiner - ImageJ+MATLAB: Reunited ===
 
 ImageJ and MATLAB both provide powerful scientific development paradigms. To lower the barrier between these tools, ImageJ now offers a MATLAB script language plugin, making it possible to execute parameterized MATLAB scripts from within ImageJ's script editor. In the other direction, the ability to call ImageJ from MATLAB has been improved with an enhanced MIJ.m script, which supports the full range of installed plugins, and supports the use of both ImageJ1 and ImageJ2 data structures from the MATLAB command prompt. This bidirectional support facilitates the sharing and reuse of efforts from both communities.
