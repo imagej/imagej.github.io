@@ -165,6 +165,7 @@ Despite significant advances in biological imaging and analysis, major informati
 === Jay Warrick - JEX – a platform for data management and batch processing with standard tools ===
 
 [[ImageJ]], [[Fiji]], [[SciJava]], [[SCIFIO]], and [[ImgLib2]] provide a host of capabilities for enabling advanced image analysis and have been integrated into many notable softwares including [[CellProfiler]], [[KNIME]] Image Processing, and [[OMERO]] to name just a few. This talk provides a vignette of another option in that growing list, [[JEX]]. Although "reinventing the wheel" should be avoided when possible, the base java / image analysis libraries actually allow each of these separate but related softwares to enhance each other and further strengthen the common bases. In this vignette, a brief overview of JEX will be provided with the goal of highlighting one of the primary focuses of JEX, keeping your experimental data organized in a simple fashion in a context that enables batch processing with established ImageJ functionalities, java libraries, and statistical analysis / modeling softwares such as R and Octave for more streamlined workflows and objective analysis across experimental conditions.
+[ [https://vimeo.com/140098819/ Presentation video] ]
 
 === Aryeh Weiss - Automated processing of telomeres with ImageJ and R ===
 
