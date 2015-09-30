@@ -152,6 +152,7 @@ The main functionality of the [[TurboReg]] plugin allows for aligning or matchin
 State-of-the-art multi-view (MV) fusion algorithms simultaneously fuse and deconvolve data acquired by MV imaging techniques such as Selective Plane Illumination Microscopy (SPIM). MV deconvolution, however, has so far been too computationally demanding to be carried out in real-time. Here, we approximated the full 3D transfer function with a 2D PSF by neglecting one lateral component. This enabled us to process planes orthogonal to the rotation axis independently. Memory consumption was thereby reduced by 2-3 orders of magnitude, so that the entire deconvolution could be performed on the GPU. While achieving similar results as established 3D MV deconvo-lution, we thereby reduced processing times by a factor of up to 75, allowing us finally to apply MV deconvolution in real-time during time-lapse acquisition.
 
 [ [https://github.com/bene51/gpu_deconvolution gpu_deconvolution source code], [https://github.com/bene51/SPIM_Reconstruction_Cuda SPIM_Reconstruction_Cuda source code] ]
+[ [https://vimeo.com/140098826/ Presentation video] ]
 
 === Amitabh Verma - Acquisition, processing & re-processing using OpenPolScope plugin for Micro-Manager ===
 
