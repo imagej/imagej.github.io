@@ -57,7 +57,7 @@ The lightning talks will be 10-minute presentations including time for questions
 
 Plant organs such as stems are composed of tissues containing thick and thin-walled cells that are easily viewed using histological microscopy. Two dyes commonly used to differentiate between cell types are safranin, which stains the lignin in secondary walls of thick-walled cells red and fastgreen, which turns cellulose in thin, primary cell walls blue. Cells with walls containing both lignin and cellulose appear purple. Complicating successful image analysis and quantification of different cell and tissue types is that each plant differentially absorbs dye, yielding dynamic RGB values with overlapping values for each color group. Thus, quantifying plant tissues via image analysis requires outlining tissues one at a time and saving overlays using the ROI manager. We have perfected this technique to quantify soybean stem tissues using common tools in [[ImageJ]] and [[Fiji]] and with zoom-in mouse technology.
 
-[ [https://vimeo.com/140098824]/ Presentation video] ]
+[ [https://vimeo.com/140098824/ Presentation video] ]
 
 === Fabrice de Chaumont - Yet another ImageJ friend: Icy ===
 
