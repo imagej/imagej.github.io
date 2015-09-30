@@ -205,6 +205,8 @@ Thirdly, we will explore the advantages of personalized scripting libraries that
 # An internet connection, required for download of sample images and browsing of http://javadoc.imagej.net
 ;NB: If you subscribe to the ImageJ-dev update site, ensure that your Image1 version is at least 1.50a (the  ImageJ-dev update site may bundle an outdated version of ImageJ1). To do so, use the ImageJ1 command {{bc| Help |Update ImageJ...}}
 
+[ [https://vimeo.com/140099767]/ Presentation video] ]
+
 === Dominik Lindner and Petr Walczysko - The OMERO platform for management of microscopy data and beyond ===
 In this workshop, we will outline and demonstrate the [[OMERO]] platform, and show how you can use it to work with your microscopy and/or HCS data. In addition we will demonstrate some of the applications that have been released by OME and some of the integration with 3rd party tools, including:
 * OMERO.figure - fast figures from your OMERO images
