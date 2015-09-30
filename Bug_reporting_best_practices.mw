@@ -3,7 +3,7 @@
 = TL;DR Summary =
 
 * Report the issue using the [[Report a Bug]] plugin (in the Help menu).
-* Provide a [http://stackoverflow.com/help/mcve minimal, complete, verifiable example].
+* Provide a [http://stackoverflow.com/help/mcve minimal, complete, verifiable example] (MCVE).
 * [http://whathaveyoutried.com/ Describe what you already tried].
 * [http://stackoverflow.com/help/how-to-ask Put as much effort into your question] as you expect to be put into its response.
 
