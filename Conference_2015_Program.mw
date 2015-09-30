@@ -229,6 +229,8 @@ To quantitatively compare the contents of two images, they must be spatially ali
 
 [https://github.com/InsightSoftwareConsortium/SimpleITKWorkshopImageJ2015 Persistent sources.]
 
+[ [https://vimeo.com/140099763/ Presentation video] ]
+
 === Curtis Rueden and Brian Northan - ImageJ2 scripts: parameters + ImageJ Ops ===
 The [[ImageJ2]] project updates ImageJ with powerful new features. Two especially useful improvements are: 1) the [[ImageJ Ops]] library, which provides a powerful, unified, extensible and performant collection of image processing routines; and 2) [[Scripting parameters|parameterized scripts]] and macros, which may now declare typed input and output parameters. This mechanism allows scripts to be prototyped more quickly and succinctly, and makes them compatible with other tools beyond ImageJ, including the [[KNIME]] data mining platform, [[CellProfiler]] image analysis tool, and [[OMERO]] image database. This workshop will walk users through how to write parameterized macros and scripts using ImageJ's [[Script Editor]], which leverage image processing routines from ImageJ Ops. It will demonstrate how to execute them [[Headless|headlessly]] from the command line, and briefly illustrate how these scripts can be used from other tools in the [[SciJava]] software ecosystem.
 
