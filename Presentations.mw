@@ -1,12 +1,12 @@
-{| class="wikitable nicetable" style="width: 100%"
-| '''Date'''
-| '''Presenter'''
-| '''Title'''
-| '''Resources'''
+{| class="wikitable program" style="width: 100%"
+! '''Date'''
+! '''Presenter'''
+! '''Title'''
+! '''Resources'''
 |-
-| colspan=5 style="background: lightsteelblue; text-align: center; padding: 0 !important" | '''[[Conference 2015|2015 ImageJ Conference]]'''
+| colspan=5 class="section-major" | '''[[Conference 2015|2015 ImageJ Conference]]'''
 |-
-| colspan=5 style="background: lightgray; text-align: center; padding: 0 !important" | Keynotes
+| colspan=5 class="section-minor" | Keynotes
 |-
 | 2015-Sep-03
 | {{Dev | id=rasband}}
@@ -33,7 +33,7 @@
 |
 [https://vimeo.com/140098839 video]
 |-
-| colspan=5 style="background: lightgray; text-align: center; padding: 0 !important" | Featured presentations
+| colspan=5 class="section-minor" | Featured presentations
 |-
 | 2015-Sep-04
 | {{Dev | id=omsai}}
@@ -58,7 +58,38 @@
 [http://conference.imagej.net/2015/john-bogovic/2015_imagej.pptx slides],
 [[Conference 2015 Program#John_Bogovic_-_The_Thin_Plate_Spline_method_for_smooth_non-rigid_transformations|abstract]]
 |-
-| colspan=5 style="background: lightgray; text-align: center; padding: 0 !important" | Lightning talks
+| colspan=5 class="section-minor" | Lightning talks
+|-
+| 2015-Sep-04
+| Anne Alerding
+| Quantifying soybean stem tissues using common tools in ImageJ & Fiji
+|
+[https://vimeo.com/140098824 video],
+[[Conference 2015 Program#Anne_Alerding_-_Quantifying_soybean_stem_tissues_using_common_tools_in_ImageJ_.26_Fiji|abstract]]
+|-
+| 2015-Sep-03
+| Fabrice de Chaumont
+| Yet another ImageJ friend: Icy
+|
+[https://vimeo.com/140929690 video],
+[[Conference 2015 Program#Fabrice_de_Chaumont_-_Yet_another_ImageJ_friend:_Icy|abstract]]
+|-
+| 2015-Sep-03
+| Jesus Manuel Falagan
+| Plugins to import, visualize, process & write astronomical FITS files
+|
+[https://vimeo.com/140929695 video],
+[[Conference 2015 Program#Jesus_Manuel_Falagan_-_Plugins_to_import.2C_visualize.2C_process_.26_write_astronomical_FITS_files|abstract]]
+|-
+| 2015-Sep-04
+| Bill Heeschen
+| Quantitative characterization of cellular irregularities in extruded polystyrene foam using digital image processing and analysis
+|
+[https://vimeo.com/140098843 video],
+[http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_TalkSlides.pdf slides (PDF)],
+[http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_TalkSlides.pptx slides (PPTX)],
+[http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_FoamPatternMacros.ijm macro],
+[[Conference 2015 Program#Bill_Heeschen_-_Quantitative_characterization_of_cellular_irregularities_in_extruded_polystyrene_foam_using_digital_image_processing_and_analysis|abstract]]
 |-
 | 2015-Sep-03
 | [[User:Hinerm|Mark Hiner]]
@@ -69,6 +100,36 @@
 [[Conference 2015 Program#Mark_Hiner_-_ImageJ.2BMATLAB:_Reunited|abstract]]
 |-
 | 2015-Sep-04
+| Irene Landrum
+| SWAMP – a no-cost, open, high-performance computing platform for continuous software assurance
+|
+[https://vimeo.com/140098818 video],
+[http://conference.imagej.net/2015/irene-landrum/SWAMP%20%20Presentation%202015Aug25.pptx slides],
+[[Conference 2015 Program#Irene_Landrum_-_SWAMP_.E2.80.93_a_no-cost.2C_open.2C_high-performance_computing_platform_for_continuous_software_assurance|abstract]]
+|-
+| 2015-Sep-03
+| Melissa Linkert
+|   OME Bio-Formats: 10 years of proprietary image data
+|
+[https://vimeo.com/140929689 video],
+[http://ome.github.io/presentations/2015/bioformats-overview-imagej-conf/ slides],
+[[Conference 2015 Program#Melissa_Linkert_-_OME_Bio-Formats:_10_years_of_proprietary_image_data|abstract]]
+|-
+| 2015-Sep-03
+| Michael Majurski
+| Accurate and scalable Microscopy Image Stitching Tool (MIST)
+|
+[https://vimeo.com/140929697 video],
+[[Conference 2015 Program#Michael_Majurski_-_Accurate_and_scalable_Microscopy_Image_Stitching_Tool_.28MIST.29|abstract]]
+|-
+| 2015-Sep-04
+| Benjamin Nanes
+| Slide Set: Simplified batch processing with ImageJ2
+|
+[https://vimeo.com/140098828 video],
+[[Conference 2015 Program#Benjamin_Nanes_-_Slide_Set:_Simplified_batch_processing_with_ImageJ2|abstract]]
+|-
+| 2015-Sep-04
 | {{Dev | id=bnorthan}}
 | Flexible Deconvolution using ImageJ Ops
 |
@@ -76,7 +137,65 @@
 [https://imagej.github.io/presentations/2015-09-04-imagej2-deconvolution/ slides],
 [[Conference 2015 Program#Brian_Northan_-_Flexible_deconvolution_using_ImageJ_Ops|abstract]]
 |-
-| colspan=5 style="background: lightgray; text-align: center; padding: 0 !important" | Workshops
+| 2015-Sep-04
+| Stephan Saalfeld
+| Seamless stitching without blending
+|
+[https://vimeo.com/140098840 video],
+[[Conference 2015 Program#Stephan_Saalfeld_-_Seamless_stitching_without_blending|abstract]]
+|-
+| 2015-Sep-04
+| Raghavender Sahdev
+| TimeLapseReg – An ImageJ plugin for drift correction of video sequence in time-lapse microscopy
+|
+[https://vimeo.com/140098822 video],
+[[Conference 2015 Program#Raghavender_Sahdev_-_TimeLapseReg_.E2.80.93_An_ImageJ_plugin_for_drift_correction_of_video_sequence_in_time-lapse_microscopy|abstract]]
+|-
+| 2015-Sep-04
+| Benjamin Schmid
+| Real-time multi-view deconvolution of time-lapse data on the GPU
+|
+[https://vimeo.com/140098826 video],
+[[Conference 2015 Program#Benjamin_Schmid_-_Real-time_multi-view_deconvolution_of_time-lapse_data_on_the_GPU|abstract]]
+|-
+| 2015-Sep-04
+| Amitabh Verma
+| Acquisition, processing & re-processing using OpenPolScope plugin for Micro-Manager
+|
+[https://vimeo.com/140098844 video],
+[[Conference 2015 Program#Amitabh_Verma_-_Acquisition.2C_processing_.26_re-processing_using_OpenPolScope_plugin_for_Micro-Manager|abstract]]
+|-
+| 2015-Sep-04
+| Thorsten Wagner
+|   NanoTrackJ – An open-source multi-modal size characterization tool for nanoparticle tracking analysis based on ImageJ
+|
+[https://vimeo.com/140098848 video],
+[https://dl.dropboxusercontent.com/u/560426/imagej/conference2015/slides.pdf slides],
+[[Conference 2015 Program#Thorsten_Wagner_-_NanoTrackJ_.E2.80.93_An_open-source_multi-modal_size_characterization_tool_for_nanoparticle_tracking_analysis_based_on_ImageJ|abstract]]
+|-
+| 2015-Sep-04
+| Petr Walczysko
+| The Open Microscopy Environment (OME)
+|
+[https://vimeo.com/140098837 video],
+[[Conference 2015 Program#Petr_Walczysko_-_The_Open_Microscopy_Environment_.28OME.29|abstract]]
+|-
+| 2015-Sep-04
+| Jay Warrick
+| JEX – a platform for data management and batch processing with standard tools
+|
+[https://vimeo.com/140098819 video],
+[[Conference 2015 Program#Jay_Warrick_-_JEX_.E2.80.93_a_platform_for_data_management_and_batch_processing_with_standard_tools|abstract]]
+|-
+| 2015-Sep-03
+| Aryeh Weiss
+| Automated processing of telomeres with ImageJ and R
+|
+[https://vimeo.com/140929694 video],
+[http://conference.imagej.net/2015/aryeh-weiss/ij2015telomere-A.ppt slides]
+[[Conference 2015 Program#Aryeh_Weiss_-_Automated_processing_of_telomeres_with_ImageJ_and_R|abstract]]
+|-
+| colspan=5 class="section-minor" | Workshops
 |-
 | 2015-Sep-03
 | Aryeh Weiss
@@ -84,10 +203,48 @@
 |
 [https://vimeo.com/140929692 video],
 [http://conference.imagej.net/2015/aryeh-weiss/IntroImageProcessingB.ppt slides],
+[http://conference.imagej.net/2015/aryeh-weiss/stk_0001_Result%20of%20cftr-wt1.avi.zip data],
 [[Conference 2015 Program#Aryeh_Weiss1.2C2_-_An_introduction_to_digital_image_processing|abstract]]
 |-
+| 2015-Sep-03
+| Jan Brocher
+| Image processing, feature extraction and analysis using the BioVoxxel Toolbox
+|
+[https://vimeo.com/140929696 video],
+[https://www.dropbox.com/s/iurb5he4qpsqfrn/BioVoxxel%20Workshop.pdf?dl=0/ slides],
+[[Conference 2015 Program#Jan_Brocher_-_Image_processing.2C_feature_extraction_and_analysis_using_the_BioVoxxel_Toolbox|abstract]]
+|-
+| 2015-Sep-03
+| Tiago Ferreira
+| Scripting with BAR
+|
+[https://vimeo.com/140099767 video],
+[[Conference 2015 Program#Tiago_Ferreira_-_Scripting_with_BAR|abstract]]
+|-
+| 2015-Sep-03
+| Dominik Lindner<br>Petr Walczysko
+| The OMERO platform for management of microscopy data and beyond
+|
+[https://vimeo.com/140099766 video],
+[[Conference 2015 Program#Dominik_Lindner_and_Petr_Walczysko_-_The_OMERO_platform_for_management_of_microscopy_data_and_beyond|abstract]]
+|-
+| 2015-Sep-03
+| Fabrice de Chaumont<br>Stephane Dallongeville
+| Hands on Icy !
+|
+[https://vimeo.com/140929698 video],
+[[Conference 2015 Program#Fabrice_de_Chaumont_and_Stephane_Dallongeville_-_Hands_on_Icy_.21|abstract]]
+|-
+| 2015-Sep-03
+| Matt McCormick
+| SimpleITK
+|
+[https://vimeo.com/140099763 video],
+[http://bit.ly/1hD5FZF interactive],
+[[Conference 2015 Program#Matt_McCormick_-_SimpleITK|abstract]]
+|-
 | 2015-Sep-04
-| [[User:Rueden|Curtis Rueden]] and {{Dev | id=bnorthan}}
+| [[User:Rueden|Curtis Rueden]]<br>{{Dev | id=bnorthan}}
 | ImageJ2 scripts: Parameters + ImageJ Ops
 |
 [https://vimeo.com/140098817 video 1],
@@ -95,7 +252,14 @@
 [https://imagej.github.io/presentations/2015-09-04-imagej2-scripting/ slides],
 [[Conference 2015 Program#Curtis_Rueden_and_Brian_Northan_-_ImageJ2_scripts:_parameters_.2B_ImageJ_Ops|abstract]]
 |-
-| colspan=5 style="background: lightsteelblue; text-align: center; padding: 0 !important" | '''[[Conference 2012|2012 ImageJ Conference]]'''
+| 2015-Sep-04
+| Marcel Austenfeld
+| Statistical image analysis and reproducible reports with ImageJ and R
+|
+[https://vimeo.com/140098838 video],
+[[Conference 2015 Program#Marcel_Austenfeld_-_Bio7_.E2.80.93_Statistical_image_analysis_and_reproducible_reports_with_ImageJ_and_R|abstract]]
+|-
+| colspan=5 class="section-major" | '''[[Conference 2012|2012 ImageJ Conference]]'''
 |-
 | 2012-Oct-24
 | [[User:Rueden|Curtis Rueden]]
@@ -103,7 +267,7 @@
 |
 [http://conference.imagej.net/2012/curtis-rueden/2012-10-24-imagej-conference.odp slides]
 |-
-| colspan=5 style="background: lightsteelblue; text-align: center; padding: 0 !important" | '''[[Conference 2010|2010 ImageJ Conference]]'''
+| colspan=5 class="section-major" | '''[[Conference 2010|2010 ImageJ Conference]]'''
 |-
 | 2010-Oct-27
 | [[User:Rueden|Curtis Rueden]]
@@ -111,7 +275,7 @@
 |
 [http://conference.imagej.net/2010/curtis-rueden/2010-10-27-ImageJDev.pdf slides]
 |-
-| colspan=5 style="background: lightsteelblue; text-align: center; padding: 0 !important" | '''Other presentations'''
+| colspan=5 class="section-major" | '''Other presentations'''
 |-
 | 2015-Jan-12
 | [[User:Schindelin|Johannes Schindelin]]
