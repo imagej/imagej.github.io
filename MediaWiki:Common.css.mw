@@ -876,6 +876,7 @@ sup, sub {
 
 .program th {
     padding: 0 1em 0 1em !important;
+    text-align: left !important;
 }
 .program td {
     border: none !important;
@@ -892,9 +893,6 @@ sup, sub {
 }
 .program td:nth-child(2) {
     white-space: nowrap;
-}
-.program th {
-    text-align: left !important;
 }
 .program td.section-minor {
     background: lightgray !important;
