@@ -1,4 +1,4 @@
-<includeonly><div style="font-size: large; background-color: burlywood; padding: 0.5em 0 0.5em 3em{{#if:{{{label|}}}||{{#if:{{{url|}}}|font-family: monospace|}}}}">{{#if:{{{url|}}}|[{{{url}}} {{#if:{{{label|}}}|{{{label}}}|{{{url}}}}}]|}}{{#if:{{{link|}}}|[[{{{link}}}{{#if:{{{label|}}}|{{!}}{{{label}}}|}}]]|}}</div></includeonly><noinclude>
+<includeonly><div style="font-size: large; background-color: burlywood; padding: 0.5em 0 0.5em 3em{{#if:{{{label|}}}||{{#if:{{{url|}}}|; font-family: monospace|}}}}">{{#if:{{{url|}}}|[{{{url}}} {{#if:{{{label|}}}|{{{label}}}|{{{url}}}}}]|}}{{#if:{{{link|}}}|[[{{{link}}}{{#if:{{{label|}}}|{{!}}{{{label}}}|}}]]|}}</div></includeonly><noinclude>
 == Usage ==
 <pre>{{BigLink | url=http://search.imagej.net/}}</pre>
 {{BigLink | url=http://search.imagej.net/}}
