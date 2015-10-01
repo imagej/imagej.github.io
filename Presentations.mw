@@ -43,8 +43,8 @@ __TOC__
 | Sharing the value of software freedom with non-programmers
 |
 [https://vimeo.com/140098825 video],
-[http://conference.imagej.net/2015/pariksheet-nanda/transcript.pdf transcript],
-[[Conference 2015 Program#Pariksheet_Nanda_-_Sharing_the_value_of_software_freedom_with_non-programmers|abstract]]
+[[Conference 2015 Program#Pariksheet_Nanda_-_Sharing_the_value_of_software_freedom_with_non-programmers|abstract]],
+[http://conference.imagej.net/2015/pariksheet-nanda/transcript.pdf transcript]
 |-
 | 2015-Sep-04
 | [[User:Tiago|Tiago Ferreira]]
@@ -58,8 +58,8 @@ __TOC__
 | The Thin Plate Spline method for smooth non-rigid transformations
 |
 [https://vimeo.com/140929688 video],
-[http://conference.imagej.net/2015/john-bogovic/2015_imagej.pptx slides],
-[[Conference 2015 Program#John_Bogovic_-_The_Thin_Plate_Spline_method_for_smooth_non-rigid_transformations|abstract]]
+[[Conference 2015 Program#John_Bogovic_-_The_Thin_Plate_Spline_method_for_smooth_non-rigid_transformations|abstract]],
+[http://conference.imagej.net/2015/john-bogovic/2015_imagej.pptx slides]
 |-
 | colspan=5 class="section-minor" | Lightning talks
 |-
@@ -89,34 +89,34 @@ __TOC__
 | Quantitative characterization of cellular irregularities in extruded polystyrene foam using digital image processing and analysis
 |
 [https://vimeo.com/140098843 video],
+[[Conference 2015 Program#Bill_Heeschen_-_Quantitative_characterization_of_cellular_irregularities_in_extruded_polystyrene_foam_using_digital_image_processing_and_analysis|abstract]],
+[http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_FoamPatternMacros.ijm macro],<br>
 [http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_TalkSlides.pdf slides (PDF)],
-[http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_TalkSlides.pptx slides (PPTX)],
-[http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_FoamPatternMacros.ijm macro],
-[[Conference 2015 Program#Bill_Heeschen_-_Quantitative_characterization_of_cellular_irregularities_in_extruded_polystyrene_foam_using_digital_image_processing_and_analysis|abstract]]
+[http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_TalkSlides.pptx slides (PPTX)]
 |-
 | 2015-Sep-03
 | [[User:Hinerm|Mark Hiner]]
 | ImageJ+MATLAB: Reunited
 |
 [https://vimeo.com/140929686 video],
-[https://imagej.github.io/presentations/2015-09-03-imagej-matlab/ slides],
-[[Conference 2015 Program#Mark_Hiner_-_ImageJ.2BMATLAB:_Reunited|abstract]]
+[[Conference 2015 Program#Mark_Hiner_-_ImageJ.2BMATLAB:_Reunited|abstract]],
+[https://imagej.github.io/presentations/2015-09-03-imagej-matlab/ slides]
 |-
 | 2015-Sep-04
 | Irene Landrum
 | SWAMP – a no-cost, open, high-performance computing platform for continuous software assurance
 |
 [https://vimeo.com/140098818 video],
-[http://conference.imagej.net/2015/irene-landrum/SWAMP%20%20Presentation%202015Aug25.pptx slides],
-[[Conference 2015 Program#Irene_Landrum_-_SWAMP_.E2.80.93_a_no-cost.2C_open.2C_high-performance_computing_platform_for_continuous_software_assurance|abstract]]
+[[Conference 2015 Program#Irene_Landrum_-_SWAMP_.E2.80.93_a_no-cost.2C_open.2C_high-performance_computing_platform_for_continuous_software_assurance|abstract]],
+[http://conference.imagej.net/2015/irene-landrum/SWAMP%20%20Presentation%202015Aug25.pptx slides]
 |-
 | 2015-Sep-03
 | [[User:Linkert|Melissa Linkert]]
 |   OME Bio-Formats: 10 years of proprietary image data
 |
 [https://vimeo.com/140929689 video],
-[http://ome.github.io/presentations/2015/bioformats-overview-imagej-conf/ slides],
-[[Conference 2015 Program#Melissa_Linkert_-_OME_Bio-Formats:_10_years_of_proprietary_image_data|abstract]]
+[[Conference 2015 Program#Melissa_Linkert_-_OME_Bio-Formats:_10_years_of_proprietary_image_data|abstract]],
+[http://ome.github.io/presentations/2015/bioformats-overview-imagej-conf/ slides]
 |-
 | 2015-Sep-03
 | Michael Majurski
@@ -137,8 +137,8 @@ __TOC__
 | Flexible Deconvolution using ImageJ Ops
 |
 [https://vimeo.com/140098821 video],
-[https://imagej.github.io/presentations/2015-09-04-imagej2-deconvolution/ slides],
-[[Conference 2015 Program#Brian_Northan_-_Flexible_deconvolution_using_ImageJ_Ops|abstract]]
+[[Conference 2015 Program#Brian_Northan_-_Flexible_deconvolution_using_ImageJ_Ops|abstract]],
+[https://imagej.github.io/presentations/2015-09-04-imagej2-deconvolution/ slides]
 |-
 | 2015-Sep-04
 | [[User:Saalfeld|Stephan Saalfeld]]
@@ -173,8 +173,8 @@ __TOC__
 |   NanoTrackJ – An open-source multi-modal size characterization tool for nanoparticle tracking analysis based on ImageJ
 |
 [https://vimeo.com/140098848 video],
-[https://dl.dropboxusercontent.com/u/560426/imagej/conference2015/slides.pdf slides],
-[[Conference 2015 Program#Thorsten_Wagner_-_NanoTrackJ_.E2.80.93_An_open-source_multi-modal_size_characterization_tool_for_nanoparticle_tracking_analysis_based_on_ImageJ|abstract]]
+[[Conference 2015 Program#Thorsten_Wagner_-_NanoTrackJ_.E2.80.93_An_open-source_multi-modal_size_characterization_tool_for_nanoparticle_tracking_analysis_based_on_ImageJ|abstract]],
+[https://dl.dropboxusercontent.com/u/560426/imagej/conference2015/slides.pdf slides]
 |-
 | 2015-Sep-04
 | Petr Walczysko
@@ -195,8 +195,8 @@ __TOC__
 | Automated processing of telomeres with ImageJ and R
 |
 [https://vimeo.com/140929694 video],
+[[Conference 2015 Program#Aryeh_Weiss_-_Automated_processing_of_telomeres_with_ImageJ_and_R|abstract]],
 [http://conference.imagej.net/2015/aryeh-weiss/ij2015telomere-A.ppt slides]
-[[Conference 2015 Program#Aryeh_Weiss_-_Automated_processing_of_telomeres_with_ImageJ_and_R|abstract]]
 |-
 | colspan=5 class="section-major" | '''[[Conference 2012|2012 ImageJ Conference]]'''
 |-
