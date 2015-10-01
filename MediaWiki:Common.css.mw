@@ -883,6 +883,15 @@ sup, sub {
 .program tr:nth-child(odd) td {
     background-color: #cdf;
 }
+.program td:first-child {
+    white-space: nowrap;
+}
+.program td:first-child {
+    white-space: nowrap;
+}
+.program td:nth-child(2) {
+    white-space: nowrap;
+}
 
 td.yesno {
     padding: 2px !important;
