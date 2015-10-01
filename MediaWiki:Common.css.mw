@@ -876,12 +876,13 @@ sup, sub {
 
 .program td {
     border: none !important;
+    padding: 0 1em 0 1em !important;
 }
 .program tr:nth-child(even) td {
-    background-color: #eee;
+    background-color: whitesmoke;
 }
 .program tr:nth-child(odd) td {
-    background-color: #cdf;
+    background-color: snow;
 }
 .program td:first-child {
     white-space: nowrap;
@@ -896,14 +897,13 @@ sup, sub {
     background: lightgray !important;
     font-variant: small-caps;
     text-align: center;
-    padding: 0 !important;
 }
 .program td.section-major {
-    background: lightblue !important;
+    background: lightsteelblue !important;
+    font-size: 1.1em;
     font-variant: small-caps;
     font-weight: bold;
     text-align: center;
-    padding: 1 !important;
 }
 
 td.yesno {
