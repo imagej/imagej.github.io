@@ -18,10 +18,22 @@
 |-
 | 2015-Sep-03
 | [[User:Rueden|Curtis Rueden]]
-| style="white-space: normal" | ImageJ2 and Fiji: The ImageJ2 platform, and the Fiji distribution of ImageJ
+| ImageJ2 and Fiji: The ImageJ2 platform, and the Fiji distribution of ImageJ
 |
 [https://vimeo.com/140929687 video],
 [https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/ slides]
+|-
+| 2015-Sep-04
+| {{Dev | id=marktsuchida}}
+| Microscope control and image acquisition with Micro-Manager
+|
+[https://vimeo.com/140098816 video]
+|-
+| 2015-Sep-04
+| {{Dev | id=fjug}}
+| Getting stuff done – Software synergy with ImageJ + KNIME
+|
+[https://vimeo.com/140098839 video]
 |-
 | colspan=5 style="background: lightgray; text-align: center; padding: 0 !important" | Featured presentations
 |-
@@ -29,7 +41,7 @@
 | {{Dev | id=omsai}}
 | Sharing the value of software freedom with non-programmers
 |
-[https://vimeo.com/140098825/ video],
+[https://vimeo.com/140098825 video],
 [http://conference.imagej.net/2015/pariksheet-nanda/transcript.pdf transcript],
 [[Conference 2015 Program#Pariksheet_Nanda_-_Sharing_the_value_of_software_freedom_with_non-programmers|abstract]]
 |-
@@ -105,7 +117,7 @@
 |-
 | 2015-Jan-12
 | [[User:Schindelin|Johannes Schindelin]]
-| style="white-space: normal" | The ImageJ Ops Framework: Image processing made easy
+| The ImageJ Ops Framework: Image processing made easy
 |
 [https://imagej.github.io/presentations/2015-01-12-imagej-ops/ slides]
 |}
