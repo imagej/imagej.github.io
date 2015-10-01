@@ -1,0 +1,1 @@
+This file is ineligible for copyright and therefore in the [[wikipedia:Public_domain|public domain]] because it consists entirely of information that is [[wikimedia:Commons:Threshold_of_originality|common property and contains no original authorship]].
