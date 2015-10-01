@@ -890,15 +890,15 @@ sup, sub {
     white-space: nowrap;
 }
 .program th {
-    text-align: left;
+    text-align: left !important;
 }
 .program td.section-minor {
-    background: lightgray;
+    background: lightgray !important;
     text-align: center;
     padding: 0 !important;
 }
 .program td.section-major {
-    background: lightblue;
+    background: lightblue !important;
     font-weight: bold;
     text-align: center;
     padding: 0 !important;
