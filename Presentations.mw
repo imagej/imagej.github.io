@@ -301,6 +301,7 @@ __TOC__
 | Ignacio Arganda-Carreras
 | Trainable Weka Segmentation: a tool for machine-learning-based image segmentation
 |
+[http://conference.imagej.net/2015/ignacio-arganda-carreras/poster-TWS-ImageJ-Conf-2015.pdf poster]
 [[Conference 2015 Program#Ignacio_Arganda-Carreras_-_Trainable_Weka_Segmentation:_a_tool_for_machine-learning-based_image_segmentation|abstract]]
 |-
 | 2015-Sep-03
@@ -313,6 +314,7 @@ __TOC__
 | Jan Brocher
 | The BioVoxxel Toolbox
 |
+[https://www.dropbox.com/s/7e6bjh3iqnxv014/IJcon2015-Poster%20Brocher%20%28150dpi%29.png?dl=0 poster]
 [[Conference 2015 Program#Jan_Brocher_-_The_BioVoxxel_Toolbox|abstract]]
 |-
 | 2015-Sep-03
@@ -337,6 +339,7 @@ __TOC__
 | Olaya Fernandez-Gayol
 | Using the wrMTrck plugin to analyze the Morris Water maze in mice
 |
+[https://dl.dropboxusercontent.com/u/21343536/Fernandez%20Gayol%20O.pptx poster]
 [[Conference 2015 Program#Olaya_Fernandez-Gayol_-_Using_the_wrMTrck_plugin_to_analyze_the_Morris_Water_maze_in_mice|abstract]]
 |-
 | 2015-Sep-03
@@ -355,6 +358,7 @@ __TOC__
 | David Logan
 | The ImageJ-CellProfiler Interface
 |
+[http://www.broadinstitute.org/~dlogan/posters/2015_09_03_ImageJ_Conf_DLogan_FINAL.pptx poster]
 [[Conference 2015 Program#David_Logan_-_The_ImageJ-CellProfiler_Interface|abstract]]
 |-
 | 2015-Sep-03
@@ -385,12 +389,14 @@ __TOC__
 | Tobias Pietzsch
 | BigDataViewer&#8212;Visualization and Image Processing for Terabyte Data Sets
 |
+[https://www.dropbox.com/s/3st8ezbj9jmjzd8/bdv-poster-imagej2015.pdf?dl=0 poster]
 [[Conference 2015 Program#Tobias_Pietzsch_-_BigDataViewer.E2.80.94Visualization_and_Image_Processing_for_Terabyte_Data_Sets|abstract]]
 |-
 | 2015-Sep-03
 | [[User:Saalfeld|Stephan Saalfeld]]
 | ImgLib2 for visualization and generic image processing
 |
+[https://www.dropbox.com/s/f23tr3q607dxvlh/imglib2-imagej2015.pdf?dl=0 poster]
 [[Conference 2015 Program#Stephan_Saalfeld_-_ImgLib2_for_visualization_and_generic_image_processing|abstract]]
 |-
 | 2015-Sep-03
@@ -409,6 +415,7 @@ __TOC__
 | Joey Tidei
 | Untitled
 |
+[http://www.raghavendersahdev.com/uploads/3/9/6/2/39623741/timelapsereg.pdf poster]
 [[Conference 2015 Program#Joey_Tidei_-_Untitled|abstract]]
 |-
 | 2015-Sep-03
@@ -427,5 +434,6 @@ __TOC__
 | Thorsten Wagner
 | Tools and methods of the Biomedical Imaging Group for ImageJ: An Overview
 |
+[https://dl.dropboxusercontent.com/u/560426/imagej/conference2015/poster.pdf poster]
 [[Conference 2015 Program#Thorsten_Wagner_-_Tools_and_methods_of_the_Biomedical_Imaging_Group_for_ImageJ:_An_Overview|abstract]]
 |}
