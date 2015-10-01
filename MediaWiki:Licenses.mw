@@ -1,31 +1,21 @@
-* subst:uwl|I don't know what the license is
-* Your own work (best practices):
-** self|GFDL|cc-by-sa-all|migration=redundant|Own work, copyleft, attribution required (Multi-license GFDL, CC BY-SA all versions)  
-** self|Cc-zero|CC0 1.0 Universal Public Domain Dedication, all rights waived (Public domain)
-** PD-self|Own work, all rights released (Public domain)
-** self|GFDL|cc-by-sa-3.0|migration=redundant|Own work, copyleft, attribution required (GFDL, CC BY-SA 3.0)
-** self|GFDL|cc-by-3.0|migration=redundant|Own work, attribution required (GFDL, CC BY 3.0)
-** self|cc-by-sa-3.0|Own work, copyleft, attribution required (CC BY-SA 3.0)
+* uwl|I don't know what the license is
 
-* Not self-made, but has been released under:
-** Creative Commons licenses
-*** cc-by-sa-4.0|Attribution ShareAlike 4.0
-*** cc-by-sa-3.0|Attribution ShareAlike 3.0
-*** cc-by-4.0|Attribution 4.0
-*** cc-by-3.0|Attribution 3.0
-*** Cc-zero|CC0 1.0 universell Public domain-dedikation 
-** Free Art License
-*** FAL|Free Art License
+* Creative Commons licenses
+** cc-by-sa-4.0|Attribution ShareAlike 4.0
+** cc-by-sa-3.0|Attribution ShareAlike 3.0
+** cc-by-4.0|Attribution 4.0
+** cc-by-3.0|Attribution 3.0
+** cc-zero|CC0 1.0 universell Public domain-dedikation
+
+* Free Art License
+** FAL|Free Art License
+
+* Gnu Free Document License
+** GFDL|Gnu Free Documentation License
 
 * Public domain:
-** PD-old-100|Author died more than 100 years ago
-** PD-old-70-1923|Author died more than 70 years ago AND the work was published before 1923
-** PD-old-70|Unclear-PD-US-old-70|Author died more than 70 years ago BUT the work was published after 1923
-** PD-Art|Reproduction of a painting or other 2D work that is in the public domain because of its age – needs specification after uploading
-** PD-US|First published in the United States before 1923
-** PD-US-no notice|First published in the United States between 1923 and 1977 without a copyright notice
-** PD-USGov|Original work of the US Federal Government
-** PD-USGov-NASA|Original work of NASA
-** PD-USGov-Military-Navy|Original work of the US Military Navy
-** PD-ineligible|Too simple to be copyrighted
+** ineligible|Too simple to be copyrighted
+** art|Reproduction of a painting or other 2D work that is in the public domain because of its age – needs specification after uploading
+** usgov|Original work of the US Federal Government
+** nasa|Original work of NASA
 ** subst:Template 2|PD-textlogo|Trademarked|Logo with only simple text (wordmark)
