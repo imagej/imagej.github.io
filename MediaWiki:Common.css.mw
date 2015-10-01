@@ -874,6 +874,9 @@ sup, sub {
     white-space: nowrap;
 }
 
+.program th {
+    padding: 0 1em 0 1em !important;
+}
 .program td {
     border: none !important;
     padding: 0 1em 0 1em !important;
