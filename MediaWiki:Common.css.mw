@@ -882,7 +882,7 @@ sup, sub {
     background-color: whitesmoke;
 }
 .program tr:nth-child(odd) td {
-    background-color: snow;
+    background-color: lavender;
 }
 .program td:first-child {
     white-space: nowrap;
