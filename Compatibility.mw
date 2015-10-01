@@ -24,9 +24,9 @@ Currently, automatic synchronization is disabled as it has negative performance 
 
 In the mean time, full synchronization can be forced by setting a <code>imagej.legacy.sync</code> [https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html system property]. This can be done in a running ImageJ instance, for example by running the following as a [[BeanShell_Scripting|BeanShell script]]:
 
-<code>
+<source lang="java">
 System.setProperty("imagej.legacy.sync", "true");
-</code>
+</source>
 
 == Updating ImageJ commands to the new paradigm ==
 
