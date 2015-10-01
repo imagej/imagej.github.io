@@ -312,139 +312,55 @@ __TOC__
 | Ignacio Arganda-Carreras
 | Trainable Weka Segmentation: a tool for machine-learning-based image segmentation
 |
+[[Conference 2015 Program#Ignacio_Arganda-Carreras_-_Trainable_Weka_Segmentation:_a_tool_for_machine-learning-based_image_segmentation|abstract]],
 [http://conference.imagej.net/2015/ignacio-arganda-carreras/poster-TWS-ImageJ-Conf-2015.pdf poster]
-[[Conference 2015 Program#Ignacio_Arganda-Carreras_-_Trainable_Weka_Segmentation:_a_tool_for_machine-learning-based_image_segmentation|abstract]]
-|-
-| 2015-Sep-03
-| Karl Bellve
-| Design and implementation of 3D focus stabilization for fluorescence microscopy
-|
-[[Conference 2015 Program#Karl_Bellve_-_Design_and_implementation_of_3D_focus_stabilization_for_fluorescence_microscopy|abstract]]
 |-
 | 2015-Sep-03
 | Jan Brocher
 | The BioVoxxel Toolbox
 |
+[[Conference 2015 Program#Jan_Brocher_-_The_BioVoxxel_Toolbox|abstract]],
 [https://www.dropbox.com/s/7e6bjh3iqnxv014/IJcon2015-Poster%20Brocher%20%28150dpi%29.png?dl=0 poster]
-[[Conference 2015 Program#Jan_Brocher_-_The_BioVoxxel_Toolbox|abstract]]
-|-
-| 2015-Sep-03
-| Matthew Caputo
-| Size distribution of metal particles for additive manufacturing using image analysis techniques by ImageJ
-|
-[[Conference 2015 Program#Matthew_Caputo_-_Size_distribution_of_metal_particles_for_additive_manufacturing_using_image_analysis_techniques_by_ImageJ|abstract]]
-|-
-| 2015-Sep-03
-| Sherry Clendenon
-| Image Acquisition and Processing for Cell Based Model Instantiation and Validation
-|
-[[Conference 2015 Program#Sherry_Clendenon_-_Image_Acquisition_and_Processing_for_Cell_Based_Model_Instantiation_and_Validation|abstract]]
-|-
-| 2015-Sep-03
-| Fabrice de Chaumont
-| Icy: an open source software for image analysis
-|
-[[Conference 2015 Program#Fabrice_de_Chaumont_-_Icy:_an_open_source_software_for_image_analysis|abstract]]
 |-
 | 2015-Sep-03
 | Olaya Fernandez-Gayol
 | Using the wrMTrck plugin to analyze the Morris Water maze in mice
 |
+[[Conference 2015 Program#Olaya_Fernandez-Gayol_-_Using_the_wrMTrck_plugin_to_analyze_the_Morris_Water_maze_in_mice|abstract]],
 [https://dl.dropboxusercontent.com/u/21343536/Fernandez%20Gayol%20O.pptx poster]
-[[Conference 2015 Program#Olaya_Fernandez-Gayol_-_Using_the_wrMTrck_plugin_to_analyze_the_Morris_Water_maze_in_mice|abstract]]
-|-
-| 2015-Sep-03
-| Andreas Jahnen
-| Segmentation of intracranial aneurysms in 2D Digital Subtraction Angiography (DSA) images using ImageJ Tools and Plugins
-|
-[[Conference 2015 Program#Andreas_Jahnen_-_Segmentation_of_intracranial_aneurysms_in_2D_Digital_Subtraction_Angiography_.28DSA.29_images_using_ImageJ_Tools_and_Plugins|abstract]]
-|-
-| 2015-Sep-03
-| David Legland
-| MorphoLibJ: an integrated library for morphological filtering, segmentation and analysis of plant tissues
-|
-[[Conference 2015 Program#David_Legland_-_MorphoLibJ:_an_integrated_library_for_morphological_filtering.2C_segmentation_and_analysis_of_plant_tissues|abstract]]
 |-
 | 2015-Sep-03
 | David Logan
 | The ImageJ-CellProfiler Interface
 |
+[[Conference 2015 Program#David_Logan_-_The_ImageJ-CellProfiler_Interface|abstract]],
 [http://www.broadinstitute.org/~dlogan/posters/2015_09_03_ImageJ_Conf_DLogan_FINAL.pptx poster]
-[[Conference 2015 Program#David_Logan_-_The_ImageJ-CellProfiler_Interface|abstract]]
-|-
-| 2015-Sep-03
-| Michael Majurski
-| Accurate and scalable Microscopy Image Stitching Tool (MIST)
-|
-[[Conference 2015 Program#Michael_Majurski_-_Accurate_and_scalable_Microscopy_Image_Stitching_Tool_.28MIST.29_2|abstract]]
-|-
-| 2015-Sep-03
-| Jeffrey Murphy
-| Untitled
-|
-[[Conference 2015 Program#Jeffrey_Murphy_-_Untitled|abstract]]
-|-
-| 2015-Sep-03
-| Kelsey Nemec
-| Untitled
-|
-[[Conference 2015 Program#Kelsey_Nemec_-_Untitled|abstract]]
-|-
-| 2015-Sep-03
-| John Parrish
-| Sperm nuclear shape and texture analysis
-|
-[[Conference 2015 Program#John_Parrish_-_Sperm_nuclear_shape_and_texture_analysis|abstract]]
 |-
 | 2015-Sep-03
 | Tobias Pietzsch
 | BigDataViewer&#8212;Visualization and Image Processing for Terabyte Data Sets
 |
+[[Conference 2015 Program#Tobias_Pietzsch_-_BigDataViewer.E2.80.94Visualization_and_Image_Processing_for_Terabyte_Data_Sets|abstract]],
 [https://www.dropbox.com/s/3st8ezbj9jmjzd8/bdv-poster-imagej2015.pdf?dl=0 poster]
-[[Conference 2015 Program#Tobias_Pietzsch_-_BigDataViewer.E2.80.94Visualization_and_Image_Processing_for_Terabyte_Data_Sets|abstract]]
 |-
 | 2015-Sep-03
 | [[User:Saalfeld|Stephan Saalfeld]]
 | ImgLib2 for visualization and generic image processing
 |
+[[Conference 2015 Program#Stephan_Saalfeld_-_ImgLib2_for_visualization_and_generic_image_processing|abstract]],
 [https://www.dropbox.com/s/f23tr3q607dxvlh/imglib2-imagej2015.pdf?dl=0 poster]
-[[Conference 2015 Program#Stephan_Saalfeld_-_ImgLib2_for_visualization_and_generic_image_processing|abstract]]
-|-
-| 2015-Sep-03
-| Md Abdul Kader Sagar
-| The SLIM Curve plugin for lifetime image analysis
-|
-[[Conference 2015 Program#Md_Abdul_Kader_Sagar_-_The_SLIM_Curve_plugin_for_lifetime_image_analysis|abstract]]
-|-
-| 2015-Sep-03
-| Raghavender Sahdev
-| TimeLapseReg – An ImageJ plugin for drift correction of video sequence in time-lapse microscopy
-|
-[[Conference 2015 Program#Raghavender_Sahdev_-_TimeLapseReg_.E2.80.93_An_ImageJ_plugin_for_drift_correction_of_video_sequence_in_time-lapse_microscopy_2|abstract]]
 |-
 | 2015-Sep-03
 | Joey Tidei
 | Untitled
 |
+[[Conference 2015 Program#Joey_Tidei_-_Untitled|abstract]],
 [http://www.raghavendersahdev.com/uploads/3/9/6/2/39623741/timelapsereg.pdf poster]
-[[Conference 2015 Program#Joey_Tidei_-_Untitled|abstract]]
-|-
-| 2015-Sep-03
-| Jean-Yves Tinevez
-| TrackMate
-|
-[[Conference 2015 Program#Jean-Yves_Tinevez_-_TrackMate|abstract]]
-|-
-| 2015-Sep-03
-| Amitabh Verma
-| Acquisition, Processing &amp; Re-Processing using OpenPolScope plugin for Micro-Manager
-|
-[[Conference 2015 Program#Amitabh_Verma_-_Acquisition.2C_Processing_.26_Re-Processing_using_OpenPolScope_plugin_for_Micro-Manager_2|abstract]]
 |-
 | 2015-Sep-03
 | Thorsten Wagner
 | Tools and methods of the Biomedical Imaging Group for ImageJ: An Overview
 |
+[[Conference 2015 Program#Thorsten_Wagner_-_Tools_and_methods_of_the_Biomedical_Imaging_Group_for_ImageJ:_An_Overview|abstract]],
 [https://dl.dropboxusercontent.com/u/560426/imagej/conference2015/poster.pdf poster]
-[[Conference 2015 Program#Thorsten_Wagner_-_Tools_and_methods_of_the_Biomedical_Imaging_Group_for_ImageJ:_An_Overview|abstract]]
 |}
