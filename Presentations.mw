@@ -198,6 +198,41 @@ __TOC__
 [http://conference.imagej.net/2015/aryeh-weiss/ij2015telomere-A.ppt slides]
 [[Conference 2015 Program#Aryeh_Weiss_-_Automated_processing_of_telomeres_with_ImageJ_and_R|abstract]]
 |-
+| colspan=5 class="section-major" | '''[[Conference 2012|2012 ImageJ Conference]]'''
+|-
+| 2012-Oct-24
+| [[User:Rueden|Curtis Rueden]]
+| ImageJ2
+|
+[http://conference.imagej.net/2012/curtis-rueden/2012-10-24-imagej-conference.odp slides]
+|-
+| colspan=5 class="section-major" | '''[[Conference 2010|2010 ImageJ Conference]]'''
+|-
+| 2010-Oct-27
+| [[User:Rueden|Curtis Rueden]]
+| ImageJDev
+|
+[http://conference.imagej.net/2010/curtis-rueden/2010-10-27-ImageJDev.pdf slides]
+|-
+| colspan=5 class="section-major" | '''Other presentations'''
+|-
+| 2015-Jan-12
+| [[User:Schindelin|Johannes Schindelin]]
+| The ImageJ Ops Framework: Image processing made easy
+|
+[https://imagej.github.io/presentations/2015-01-12-imagej-ops/ slides]
+|}
+
+== Workshops ==
+
+{| class="program"
+! '''Date'''
+! '''Presenter'''
+! '''Title'''
+! '''Resources'''
+|-
+| colspan=5 class="section-major" | '''[[Conference 2015|2015 ImageJ Conference]]'''
+|-
 | colspan=5 class="section-minor" | Workshops
 |-
 | 2015-Sep-03
@@ -261,30 +296,6 @@ __TOC__
 |
 [https://vimeo.com/140098838 video],
 [[Conference 2015 Program#Marcel_Austenfeld_-_Bio7_.E2.80.93_Statistical_image_analysis_and_reproducible_reports_with_ImageJ_and_R|abstract]]
-|-
-| colspan=5 class="section-major" | '''[[Conference 2012|2012 ImageJ Conference]]'''
-|-
-| 2012-Oct-24
-| [[User:Rueden|Curtis Rueden]]
-| ImageJ2
-|
-[http://conference.imagej.net/2012/curtis-rueden/2012-10-24-imagej-conference.odp slides]
-|-
-| colspan=5 class="section-major" | '''[[Conference 2010|2010 ImageJ Conference]]'''
-|-
-| 2010-Oct-27
-| [[User:Rueden|Curtis Rueden]]
-| ImageJDev
-|
-[http://conference.imagej.net/2010/curtis-rueden/2010-10-27-ImageJDev.pdf slides]
-|-
-| colspan=5 class="section-major" | '''Other presentations'''
-|-
-| 2015-Jan-12
-| [[User:Schindelin|Johannes Schindelin]]
-| The ImageJ Ops Framework: Image processing made easy
-|
-[https://imagej.github.io/presentations/2015-01-12-imagej-ops/ slides]
 |}
 
 == Posters ==
