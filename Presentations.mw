@@ -25,6 +25,29 @@
 |-
 | colspan=5 style="background: lightgray; text-align: center; padding: 0 !important" | Featured presentations
 |-
+| 2015-Sep-04
+| {{Dev | id=omsai}}
+| Sharing the value of software freedom with non-programmers
+|
+[https://vimeo.com/140098825/ video],
+[http://conference.imagej.net/2015/pariksheet-nanda/transcript.pdf transcript],
+[[Conference 2015 Program#Pariksheet_Nanda_-_Sharing_the_value_of_software_freedom_with_non-programmers|abstract]]
+|-
+| 2015-Sep-04
+| [[User:Tiago|Tiago Ferreira]]
+| Alternative approaches for neuronal morphometry
+|
+[https://vimeo.com/140098832 video],
+[[Conference 2015 Program#Tiago_Ferreira_-_Alternative_approaches_for_neuronal_morphometry|abstract]]
+|-
+| 2015-Sep-03
+| {{Dev | id=bogovicj}}
+| The Thin Plate Spline method for smooth non-rigid transformations
+|
+[https://vimeo.com/140929688 video],
+[http://conference.imagej.net/2015/john-bogovic/2015_imagej.pptx slides],
+[[Conference 2015 Program#John_Bogovic_-_The_Thin_Plate_Spline_method_for_smooth_non-rigid_transformations|abstract]]
+|-
 | colspan=5 style="background: lightgray; text-align: center; padding: 0 !important" | Lightning talks
 |-
 | 2015-Sep-03
