@@ -12,7 +12,7 @@ ImageJ2 currently uses the ImageJ 1.x user interface by default, since many user
 
 === The ImageJ legacy UI ===
 
-The legacy layer converts ImageJ1 into a SciJava-compatible user interface by implementing the {{Javadoc | package = org/scijava/ui | class = UserInterface}} interface via the {{Javadoc | package = net/imagej/legacy/ui | class = LegacyUI}} class.
+The legacy layer converts ImageJ1 into a SciJava-compatible user interface by implementing the {{Javadoc | project = SciJava | package = org/scijava/ui | class = UserInterface}} interface via the {{Javadoc | package = net/imagej/legacy/ui | class = LegacyUI}} class.
 
 However, things are complicated by the fact that ImageJ1 was not designed with such requirements in mind. The legacy layer uses a bytecode manipulation library called [[Javassist]] to rewrite portions of ImageJ1 at runtime, in order to facilitate integration and extension. See the {{GitHub | org = imagej | repo = ij1-patcher | label = ij1-patcher}} project for details.
 
