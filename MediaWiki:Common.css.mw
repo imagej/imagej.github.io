@@ -892,8 +892,14 @@ sup, sub {
 .program th {
     text-align: left;
 }
-.program td.section {
+.program td.section-minor {
     background: lightgray;
+    text-align: center;
+    padding: 0 !important;
+}
+.program td.section-major {
+    background: lightblue;
+    font-weight: bold;
     text-align: center;
     padding: 0 !important;
 }
