@@ -1,4 +1,4 @@
-<includeonly><div style="font-size: large; background-color: burlywood; padding: 0 0 0.5em 3em">{{#if: {{{url|}}}|<span style="font-family: monospace">[{{{url}}} {{{url}}}]<span>}}{{#if: {{{link|}}}|{{{link}}}|}}</div></includeonly><noinclude>
+<includeonly><div style="font-size: large; background-color: burlywood; padding: 0 0 0.5em 3em">{{#if: {{{url|}}}|<span style="font-family: monospace">[{{{url}}} {{{url}}}]<span>|}}{{#if: {{{link|}}}|{{{link}}}|}}</div></includeonly><noinclude>
 </noinclude>
 == Usage ==
 <pre>{{BigLink | url=http://search.imagej.net/}}</pre>
