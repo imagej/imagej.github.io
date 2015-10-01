@@ -874,12 +874,15 @@ sup, sub {
     white-space: nowrap;
 }
 
+.program {
+    border-collapse: collapse;
+    border: 1px solid gray;
+}
 .program th {
     padding: 0 1em 0 1em !important;
     text-align: left !important;
 }
 .program td {
-    border: none !important;
     font-size: 0.9em;
     padding: 0 1em 0 1em !important;
 }
@@ -908,9 +911,6 @@ sup, sub {
 }
 .program tr:nth-child(odd) td {
     background-color: lavender;
-}
-.program td:last-child {
-    border-right: 1px;
 }
 
 td.yesno {
