@@ -876,7 +876,6 @@ sup, sub {
 
 .program {
     border-collapse: collapse;
-    border: 1px solid gray;
 }
 .program th {
     padding: 0 1em 0 1em !important;
