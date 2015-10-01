@@ -240,17 +240,17 @@ __TOC__
 | An introduction to digital image processing
 |
 [https://vimeo.com/140929692 video],
+[[Conference 2015 Program#Aryeh_Weiss1.2C2_-_An_introduction_to_digital_image_processing|abstract]],
 [http://conference.imagej.net/2015/aryeh-weiss/IntroImageProcessingB.ppt slides],
-[http://conference.imagej.net/2015/aryeh-weiss/stk_0001_Result%20of%20cftr-wt1.avi.zip data],
-[[Conference 2015 Program#Aryeh_Weiss1.2C2_-_An_introduction_to_digital_image_processing|abstract]]
+[http://conference.imagej.net/2015/aryeh-weiss/stk_0001_Result%20of%20cftr-wt1.avi.zip data]
 |-
 | 2015-Sep-03
 | Jan Brocher
 | Image processing, feature extraction and analysis using the BioVoxxel Toolbox
 |
 [https://vimeo.com/140929696 video],
-[https://www.dropbox.com/s/iurb5he4qpsqfrn/BioVoxxel%20Workshop.pdf?dl=0/ slides],
-[[Conference 2015 Program#Jan_Brocher_-_Image_processing.2C_feature_extraction_and_analysis_using_the_BioVoxxel_Toolbox|abstract]]
+[[Conference 2015 Program#Jan_Brocher_-_Image_processing.2C_feature_extraction_and_analysis_using_the_BioVoxxel_Toolbox|abstract]],
+[https://www.dropbox.com/s/iurb5he4qpsqfrn/BioVoxxel%20Workshop.pdf?dl=0/ slides]
 |-
 | 2015-Sep-03
 | Tiago Ferreira
@@ -278,8 +278,8 @@ __TOC__
 | SimpleITK
 |
 [https://vimeo.com/140099763 video],
-[http://bit.ly/1hD5FZF interactive],
-[[Conference 2015 Program#Matt_McCormick_-_SimpleITK|abstract]]
+[[Conference 2015 Program#Matt_McCormick_-_SimpleITK|abstract]],
+[http://bit.ly/1hD5FZF interactive]
 |-
 | 2015-Sep-04
 | [[User:Rueden|Curtis Rueden]]<br>{{Dev | id=bnorthan}}
@@ -287,8 +287,8 @@ __TOC__
 |
 [https://vimeo.com/140098817 video 1],
 [https://vimeo.com/140098835 video 2],
-[https://imagej.github.io/presentations/2015-09-04-imagej2-scripting/ slides],
-[[Conference 2015 Program#Curtis_Rueden_and_Brian_Northan_-_ImageJ2_scripts:_parameters_.2B_ImageJ_Ops|abstract]]
+[[Conference 2015 Program#Curtis_Rueden_and_Brian_Northan_-_ImageJ2_scripts:_parameters_.2B_ImageJ_Ops|abstract]],
+[https://imagej.github.io/presentations/2015-09-04-imagej2-scripting/ slides]
 |-
 | 2015-Sep-04
 | Marcel Austenfeld
