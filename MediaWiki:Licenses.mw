@@ -16,10 +16,6 @@
 *** Cc-zero|CC0 1.0 universell Public domain-dedikation 
 ** Free Art License
 *** FAL|Free Art License
-** Flickr photos
-*** subst:template 2|flickrreview|subst:uwl|Image from Flickr and I do not know the license
-*** subst:template 2|cc-by-sa-2.0|flickrreview|Uploaded to Flickr under Creative Commons Attribution ShareAlike 2.0
-*** subst:template 2|cc-by-2.0|flickrreview|Uploaded to Flickr under Creative Commons Attribution 2.0
 
 * Public domain:
 ** PD-old-100|Author died more than 100 years ago
@@ -33,9 +29,3 @@
 ** PD-USGov-Military-Navy|Original work of the US Military Navy
 ** PD-ineligible|Too simple to be copyrighted
 ** subst:Template 2|PD-textlogo|Trademarked|Logo with only simple text (wordmark)
-
-* Other alternatives:
-* subst:uwl|I found the image on Google or a random website
-** Fair use|Fair use image (Not allowed on Commons. Image will be deleted.)
-** Copyrighted free use|Copyrighted, but may be used for any purpose, including commercially
-** Attribution|May be used for any purpose, including commercially, if the copyright holder is properly attributed
