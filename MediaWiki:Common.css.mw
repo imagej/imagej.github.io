@@ -899,10 +899,9 @@ sup, sub {
     font-weight: bold;
     text-align: center;
 }
-.program td:first-child {
-    white-space: nowrap;
-}
-.program td:nth-child(2) {
+.program td:first-child,
+.program td:nth-child(2),
+.program td:last-child {
     white-space: nowrap;
 }
 .program tr:nth-child(even) td {
