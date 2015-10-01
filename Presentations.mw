@@ -1,53 +1,90 @@
 = ImageJ presentations =
 
-{| class="wikitable"
+{| class="wikitable nicetable" style="width: 100%"
 | '''Date'''
 | '''Presenter'''
 | '''Title'''
-| '''Subtitle'''
-| '''Description'''
+| '''Resources'''
 |-
-| style="white-space: nowrap" | 2015-Sep-04
-| {{Dev | id=bnorthan}}
-| [https://imagej.github.io/presentations/2015-09-04-imagej2-deconvolution/ Flexible Deconvolution using ImageJ Ops]
-| -
-| A workshop at the [[Conference 2015|2015 ImageJ User & Developer Conference]].
+| colspan=5 style="background: lightsteelblue; text-align: center; padding: 0 !important" | '''[[Conference 2015|2015 ImageJ Conference]]'''
 |-
-| style="white-space: nowrap" | 2015-Sep-04
-| [[User:Rueden|Curtis Rueden]] and {{Dev | id=bnorthan}}
-| [https://imagej.github.io/presentations/2015-09-04-imagej2-scripting/ ImageJ2 scripts]
-| Parameters + ImageJ Ops
-| A workshop at the [[Conference 2015|2015 ImageJ User & Developer Conference]].
+| colspan=5 style="background: lightgray; text-align: center; padding: 0 !important" | Keynotes
 |-
-| style="white-space: nowrap" | 2015-Sep-03
+| 2015-Sep-03
+| {{Dev | id=rasband}}
+| Introduction to ImageJ
+|
+[https://vimeo.com/140929691 video]
+|-
+| 2015-Sep-03
+| [[User:Rueden|Curtis Rueden]]
+| style="white-space: normal" | ImageJ2 and Fiji: The ImageJ2 platform, and the Fiji distribution of ImageJ
+|
+[https://vimeo.com/140929687 video],
+[https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/ slides]
+|-
+| colspan=5 style="background: lightgray; text-align: center; padding: 0 !important" | Featured presentations
+|-
+| colspan=5 style="background: lightgray; text-align: center; padding: 0 !important" | Lightning talks
+|-
+| 2015-Sep-03
 | [[User:Hinerm|Mark Hiner]]
-| [https://imagej.github.io/presentations/2015-09-03-imagej-matlab/ ImageJ+MATLAB]
-| Reunited
-| An overview of the current state of [[MATLAB|ImageJ-MATLAB interoperability]].
+| ImageJ+MATLAB: Reunited
+|
+[https://vimeo.com/140929686 video],
+[https://imagej.github.io/presentations/2015-09-03-imagej-matlab/ slides],
+[[Conference 2015 Program#Mark_Hiner_-_ImageJ.2BMATLAB:_Reunited|abstract]]
 |-
-| style="white-space: nowrap" | 2015-Sep-03
+| 2015-Sep-04
+| {{Dev | id=bnorthan}}
+| Flexible Deconvolution using ImageJ Ops
+|
+[https://vimeo.com/140098821 video],
+[https://imagej.github.io/presentations/2015-09-04-imagej2-deconvolution/ slides],
+[[Conference 2015 Program#Brian_Northan_-_Flexible_deconvolution_using_ImageJ_Ops|abstract]]
+|-
+| colspan=5 style="background: lightgray; text-align: center; padding: 0 !important" | Workshops
+|-
+| 2015-Sep-03
+| Aryeh Weiss
+| An introduction to digital image processing
+|
+[https://vimeo.com/140929692 video],
+[http://conference.imagej.net/2015/aryeh-weiss/IntroImageProcessingB.ppt slides],
+[[Conference 2015 Program#Aryeh_Weiss1.2C2_-_An_introduction_to_digital_image_processing|abstract]]
+|-
+| 2015-Sep-04
+| [[User:Rueden|Curtis Rueden]] and {{Dev | id=bnorthan}}
+| ImageJ2 scripts: Parameters + ImageJ Ops
+|
+[https://vimeo.com/140098817 video 1],
+[https://vimeo.com/140098835 video 2],
+[https://imagej.github.io/presentations/2015-09-04-imagej2-scripting/ slides],
+[[Conference 2015 Program#Curtis_Rueden_and_Brian_Northan_-_ImageJ2_scripts:_parameters_.2B_ImageJ_Ops|abstract]]
+|-
+| colspan=5 style="background: lightsteelblue; text-align: center; padding: 0 !important" | '''[[Conference 2012|2012 ImageJ Conference]]'''
+|-
+| 2012-Oct-24
 | [[User:Rueden|Curtis Rueden]]
-| [https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/ ImageJ2 and Fiji]
-| The ImageJ2 platform, and the Fiji distribution of ImageJ
-| A keynote presentation at the [[Conference 2015|2015 ImageJ User & Developer Conference]].
+| ImageJ2
+|
+[http://wiki.imagej.net/downloads/2012-10-24-imagej-conference.odp slides]
 |-
-| style="white-space: nowrap" | 2015-Jan-12
+| colspan=5 style="background: lightsteelblue; text-align: center; padding: 0 !important" | '''[[Conference 2010|2010 ImageJ Conference]]'''
+|-
+| 2010-Oct-27
+| [[User:Rueden|Curtis Rueden]]
+| ImageJDev
+|
+[[Media:2010-10-27-ImageJDev.pdf|slides]]
+|-
+| colspan=5 style="background: lightsteelblue; text-align: center; padding: 0 !important" | '''Other presentations'''
+|-
+| 2015-Jan-12
 | [[User:Schindelin|Johannes Schindelin]]
-| [https://imagej.github.io/presentations/2015-01-12-imagej-ops/ The ImageJ Ops Framework]
-| Image processing made easy
-| A short presentation about [[ImageJ Ops]].
-|-
-| style="white-space: nowrap" | 2012-Oct-24
-| [[User:Rueden|Curtis Rueden]]
-| [http://wiki.imagej.net/downloads/2012-10-24-imagej-conference.odp ImageJ2]
-| -
-| A presentation at the [[Conference 2012|2012 ImageJ User & Developer Conference]].
-|-
-| style="white-space: nowrap" | 2010-Oct-27
-| [[User:Rueden|Curtis Rueden]]
-| [[Media:2010-10-27-ImageJDev.pdf|ImageJDev]]
-| -
-| A presentation at the [[Conference 2010|2010 ImageJ User & Developer Conference]].
+| style="white-space: normal" | The ImageJ Ops Framework: Image processing made easy
+|
+[https://imagej.github.io/presentations/2015-01-12-imagej-ops/ slides]
 |}
 
 == See also ==
