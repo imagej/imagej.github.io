@@ -894,14 +894,16 @@ sup, sub {
 }
 .program td.section-minor {
     background: lightgray !important;
+    font-variant: small-caps;
     text-align: center;
     padding: 0 !important;
 }
 .program td.section-major {
     background: lightblue !important;
+    font-variant: small-caps;
     font-weight: bold;
     text-align: center;
-    padding: 0 !important;
+    padding: 1 !important;
 }
 
 td.yesno {
