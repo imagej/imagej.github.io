@@ -1,0 +1,1 @@
+This file is in the public domain because it was solely created by [[wikipedia:NASA|NASA]]. NASA copyright policy states that "NASA material is not protected by copyright unless noted". See [http://www.jsc.nasa.gov/policies.html#Guidelines NASA copyright policy page] or [http://www.jpl.nasa.gov/imagepolicy/ JPL Image Use Policy].
