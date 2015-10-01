@@ -22,7 +22,7 @@ Each {{Javadoc | package = net/imagej/display | class = ImageDisplay}} has a lin
 
 Currently, automatic synchronization is disabled as it has negative performance implications. The planned solution to the performance problems is to {{GitHub | org=imagej | repo=imagej-legacy | issue=86 | label=implement a wrapping layer}}, instead of relying on up-front pixel-wise translation.
 
-In the mean time, full synchronization can be forced by setting a <code>imagej.legacy.sync</code> [https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html system property]. This can be done in a running ImageJ instance, for example by running the following as a [[BeanShell_Scripting|Beanshell script]]:
+In the mean time, full synchronization can be forced by setting a <code>imagej.legacy.sync</code> [https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html system property]. This can be done in a running ImageJ instance, for example by running the following as a [[BeanShell_Scripting|BeanShell script]]:
 
 <code>
 System.setProperty("imagej.legacy.sync", "true");
