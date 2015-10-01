@@ -880,23 +880,14 @@ sup, sub {
 }
 .program td {
     border: none !important;
+    font-size: 0.9em;
     padding: 0 1em 0 1em !important;
-}
-.program tr:nth-child(even) td {
-    background-color: whitesmoke;
-}
-.program tr:nth-child(odd) td {
-    background-color: lavender;
-}
-.program td:first-child {
-    white-space: nowrap;
-}
-.program td:nth-child(2) {
-    white-space: nowrap;
 }
 .program td.section-minor {
     background: lightgray !important;
+    font-size: 1em;
     font-variant: small-caps;
+    font-weight: bold;
     text-align: center;
 }
 .program td.section-major {
@@ -905,6 +896,21 @@ sup, sub {
     font-variant: small-caps;
     font-weight: bold;
     text-align: center;
+}
+.program td:first-child {
+    white-space: nowrap;
+}
+.program td:nth-child(2) {
+    white-space: nowrap;
+}
+.program tr:nth-child(even) td {
+    background-color: whitesmoke;
+}
+.program tr:nth-child(odd) td {
+    background-color: lavender;
+}
+.program td:last-child {
+    border-right: 1px;
 }
 
 td.yesno {
