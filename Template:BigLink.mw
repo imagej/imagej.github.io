@@ -1,5 +1,4 @@
-<includeonly><div style="font-size: large; background-color: burlywood; padding: 0.5em 0 0.5em 3em">{{#if: {{{url|}}}|<span style="font-family: monospace">[{{{url}}} {{#if:{{{label|}}}|{{{label}}}|{{{url}}}}}]</span>|}}{{#if:{{{link|}}}|[[{{{link}}}{{#if:{{{label|}}}| {{{label}}}|}}]]|}}</div></includeonly><noinclude>
-</noinclude>
+<includeonly><div style="font-size: large; background-color: burlywood; padding: 0.5em 0 0.5em 3em">{{#if:{{{url|}}}|<span style="font-family: monospace">[{{{url}}} {{#if:{{{label|}}}|{{{label}}}|{{{url}}}}}]</span>|}}{{#if:{{{link|}}}|[[{{{link}}}{{#if:{{{label|}}}| {{{label}}}|}}]]|}}</div></includeonly><noinclude>
 == Usage ==
 <pre>{{BigLink | url=http://search.imagej.net/}}</pre>
 {{BigLink | url=http://search.imagej.net/}}
@@ -9,3 +8,4 @@
 
 <pre>{{BigLink | link=wikipedia:Kitten | label=They need snuggles!}}</pre>
 {{BigLink | link=Help}}
+</noinclude>
