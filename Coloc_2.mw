@@ -27,7 +27,7 @@ Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs
 # Open images to analyze. 
 ## You need a 2 color channel image. If the image has more than 2 channels, identify the two you want to analyze with each other, then split the channels into separate images (Image- Color - Split Channels)
 ## Z stacks work fine. But time series will fail until that is fixed. For now, please split the time series into a numbered set of images and analyse those one by one. See https://github.com/fiji/Colocalisation_Analysis/issues/6  
-# You probably want to only analyze only some region of interest (ROI), there are 2 ways to do that:
+# You probably want to analyze only some region of interest (ROI), there are 2 ways to do that:
 ## Select a region of interest with one of the ImageJ selection tools, in one of the images. 
 ### If the image is a z stack, then the ROI applies in all "slices" of the stack. 
 ##You can have a third "binary mask" image, with the same x,y,z dimensions as the 2 images to be analyzed:
