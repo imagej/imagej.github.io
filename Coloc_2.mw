@@ -45,7 +45,7 @@ Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs
 ## Also choose the approximate size of the point spread function (PSF) in your images, as well as the number of iterations to run the Costes statistical significance test (We suggest a large number... the larger the number, the longer the analysis will take. Do, at the very very least, 10 iterations (100 would be better).)
 ### You should know approximately how big the PSF is (in pixels) in your images. 
 ### If you don't, go back and read about: What is the PSF? Why is it important in colocalization analysis? (for instance: read the [[Media:Costes_etalColoc.pdf|Costes paper]] )
-### This size determines what size of image chunks are shuffled in the randomization process. PSF sized image pieces make physical sense, as that's the size of the smallest features visible in the image. 
+### This size determines what size of image 'chunks' are shuffled in the randomization process. (PSF-sized image pieces make physical sense, as that's the size of the smallest features visible in the image.) 
 # Click OK to run the analysis.
 # The results gui will open showing a table of numbers and one of several images
 ## the images can be chosen on the Dropdown list. 
