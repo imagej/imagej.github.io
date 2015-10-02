@@ -40,7 +40,7 @@ Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs
 ## In the third drop down list selection, select the image/channel you want to use that has the correct ROI or mask image
 ### remember: for the mask image - it must have the same xyz dimensions (number of pixels and slices) as the other 2 images. 
 # Choose which "Algorithms" are run and which statistics you wish to calculate, and if you want to save the "standardized" PDF result file, when the OK button is pressed.
-## Numerical results and image names are dumped into the ImageJ Log window as comma separated values, so you can copy paste, or save the log window contents, to then import them into whatever statistical package or spreadsheet you will need to analyse the results in. 
+## Numerical results and image names are dumped into the ImageJ Log window as comma separated values, so you can copy paste, or save the log window contents, to then import them into whatever statistical package or spreadsheet in which you wish to analyze the results. 
 ## Turn the options on and off by clicking the selection button at the left of the Algorithm description
 ## Also choose the approximate size of the point spread function (PSF) in your images, and the number of iterations to run the Costes statistical significance test (We suggest a large number... the larger the number the longer the analysis will take. Do, at the very very least, 10 iterations (100 would be better).
 ### You should know approximately how big the PSF is (in pixels) in your images. 
