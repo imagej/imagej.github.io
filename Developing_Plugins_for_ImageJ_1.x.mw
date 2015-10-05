@@ -388,6 +388,14 @@ Roi roi = new OvalRoi(10, 10, 90, 90);
 image.setRoi(roi);
 </source>
 
+== Calling ImageJ2 from ImageJ 1.x ==
+
+You can use ImageJ2-specific functionality from within an ImageJ 1.x plugin. For example, ImageJ2 provides a spreadsheet-like results table that supports string cells. You can write an ImageJ 1.x plugin that produces such a spreadsheet, displaying it onscreen.
+
+See the {{GitHub|org=imagej|repo=imagej-tutorials|path=call-modern-from-legacy|label=call-modern-from-legacy}} example of the ImageJ Tutorials:
+
+<blockquote>{{GitHub|org=imagej|repo=imagej-tutorials|path=call-modern-from-legacy/src/main/java/DisplayATable.java|label=DisplayATable.java}}</blockquote>
+
 == Further tips ==
 
 Please see also the developers tips how to [[Tips_for_developers#Using_ImageJ_effectively|use ImageJ's API effectively]].
