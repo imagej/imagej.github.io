@@ -1,6 +1,6 @@
 ==Overview==
 
-ImageJ Ops is an extensible framework for algorithms.  See the [https://github.com/imagej/imagej-ops/wiki/Motivation motivation] page for details.  Deconvolution is a process that is used to de-blur images.  When implemented with appropriate constraints deconvolution can also de-noise images. The imagej-ops project gives algorithm developers a framework to implement, organize and test various approaches to deconvolution.
+[[ImageJ Ops]] is an extensible framework for algorithms.  [[Deconvolution]] is a process that is used to de-blur images.  When implemented with appropriate constraints deconvolution can also de-noise images. The imagej-ops project gives algorithm developers a framework to implement, organize and test various approaches to deconvolution.
 
 ==Richardson Lucy==
 
@@ -43,3 +43,6 @@ In practice the Richardson-Lucy algorithm needs to be modified to improve noise 
 * D. Biggs, M. Andrews, Acceleration of iterative image restoration algorithms'',  Applied Optics, Vol. 36(8), pp. 1766-75 (1997).
 
 * S. Remmele, J. Hesser, Vector Extrapolation-Based Acceleration of Regularized Richardson Lucy Image Deblurring'',  Informatik Actuell, pp. 400-404 (2009).
+
+[[Category:Ops]]
+[[Category:Deconvolution]]
