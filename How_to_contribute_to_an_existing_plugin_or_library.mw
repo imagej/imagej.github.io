@@ -90,7 +90,7 @@ Once the pull request is created, it is automatically sent to the person in char
 == Modifying your commits ==
 From the discussion, you might realize you need to modify a part of the changes you made on your branch. Some of the changes introduced by your commits can be fixed with new commits (that will appear in the discussion view of the pull request). But some commits may need to be modified so the history of your repository stays reasonably clean. In that case, you need to use the [https://help.github.com/articles/about-git-rebase/ git rebase command]:
 
-Rebase operates over a range of commits. You provide it a starting point, and it then automatically includes all commits ***after*** that point, up to the current state of your branch.
+Rebase operates over a range of commits. You provide it a starting point, and it then automatically includes all commits '''after''' that point, up to the current state of your branch.
 
 For example, you can specify a specific commit to start from:
 
@@ -152,27 +152,46 @@ Breaking this information, from top to bottom, we see that:
 
 We can now change the first word of any of the sixteen lines to apply any of the six available rebasing commands: pick, reword, edit, squash, fixup and exec. You can also remove any of the lines (so that commit will be lost) or reorder to change the order of the commits.
 
-Once we're done editing this file, we save it and close it. Then Git will go throw our instructions to apply the changes and allow us editing whenever it finds edition commands. In that case, we will introduce our changes in the code and commit them as usual. After that, to continue rebasing we need to call the command:
+Once we're done editing this file with our desired commands for each commit, we save it and close it. Then Git will automatically process each commit, starting with the oldest, carrying out our instructions at each step.
+
+* No extra input is needed for commits marked '''pick''' or '''fixup'''
+* Commits marked '''reword''' or '''squash''' will cause the rebase process to pause, opening a text editor where you can update the commit message as appropriate. The rebase automatically continues when this text file is saved and closed.
+* Commits marked '''edit''' will also pause the rebase process, temporarily reverting control back to the terminal. In this case, we make whatever changes are required at this state of the code. Changes can be added and used to create new commits as normal, and/or merged into the current pre-existing commit using:
 
 <source lang=bash>
-$ git rebase --continue
-</source>
+git commit --amend
+</code>
 
-If we make a mistake, we can always abort the whole process using
+After any necessary changes have been committed, rebasing can continue by calling the command:
 
 <source lang=bash>
-$ git rebase --abort
+git rebase --continue
 </source>
 
-When we are done rebasing, we should see the following message in the command line:
+If we make a mistake while editing a commit, we can always undo the whole process using:
+
+<source lang=bash>
+git rebase --abort
+</source>
+
+When the rebase process completes, we should see the following message in the command line:
 
 <source lang=bash>
 $ Successfully rebased and updated refs/heads/master.
 </source>
 
-Finally we should just push the changes into our branch:
+At this point, if we are happy with the rebase we should push the changes back to our remote branch:
+
 <source lang=bash>
-$ git push origin +HEAD
+git push origin +HEAD
+</source>
+
+Note that the "+HEAD" in this command tells git to overwrite the remote branch, similar to a [http://stackoverflow.com/questions/5509543/how-do-i-properly-force-a-git-push force push].
+
+If we are '''not''' happy with the state after our rebase, we can reset our local branch using:
+
+<source lang=bash>
+git reset --hard $(git rev-parse --abbrev-ref --symbolic-full-name @{u})
 </source>
 
 == Closing pull request ==
