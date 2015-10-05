@@ -4,9 +4,11 @@ ImageJ Ops is an extensible framework for algorithms.  See the [https://github.c
 
 ==Richardson Lucy==
 
-[[wikipedia:Richardson%E2%80%93Lucy deconvolution|Richardson Lucy]]
+[[wikipedia:Richardson%E2%80%93Lucy deconvolution|Richardson Lucy]] is an iterative deconvolution algorithm that can be used to reconstruct a blurred image.   
 
 <math>\mathbf{o}_{k+1}(s)=\left\{\left[\frac{i(s)}{(o_{k}*h)(s)}\right]*h(-s)\right\}{o}_{k}(s)</math>
+
+In practice the Richardson-Lucy algorithm needs to be modified to improve noise handling (regularization), improve convergence speed (acceleration) and reduce edge artifacts.
 
 ===Richardson Lucy with Total Variation Regularization===
 
