@@ -1,5 +1,7 @@
 ==Overview==
 
+ImageJ Ops is an extensible framework for algorithms.  See the [motivation https://github.com/imagej/imagej-ops/wiki/Motivation] page for details.
+
 ==Richardson Lucy==
 
 [[wikipedia:Richardson%E2%80%93Lucy deconvolution|Richardson Lucy]]
