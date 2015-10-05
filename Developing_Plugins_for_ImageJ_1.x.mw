@@ -116,6 +116,12 @@ There a few good reasons why you should try the [[Script Editor]] for rapid prot
 
 To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [[Script Editor]] ({{bc | File | New | Script}}), and select the ''Process Pixels'' menu item from the {{bc | Templates | Java}} menu. Then, run the plugin with ''Run>Run''.
 
+= Getting started with Maven =
+
+The {{GitHub|org=imagej|repo=minimal-ij1-plugin|label=minimal-ij1-plugin project}} provides a working example, and documentation, illustrating how an ImageJ plugin should be structured from a "best practices in Maven" point of view.
+
+Using this project requires a basic understanding of [[Git]] and [[Maven]]; thus if you are already familiar with the ImageJ 1.x API, this is a reasonable starting point to learn the [[Project_management|project management]] tools used in [[Writing_plugins|ImageJ2 development]].
+
 = ImageJ's API =
 
 The source of the various Fiji-related projects is spread over several source code repositories, and so is their API documentation. An overview of all the javadoc resources can be found on [http://javadoc.imagej.net/ this page with javadoc links].
