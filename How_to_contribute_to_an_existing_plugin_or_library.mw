@@ -95,13 +95,13 @@ Rebase operates over a range of commits. You provide it a starting point, and it
 For example, you can specify a specific commit to start from:
 
 <source lang=bash>
-$ git rebase -i 6272a7bf
+git rebase -i 6272a7bf
 </source>
 
 If we aren't sure which commit to start from, we can just rebase over the entire branch:
 
 <source lang=bash>
-$ git rebase -i $(git merge-base --fork-point master)
+git rebase -i $(git merge-base --fork-point master)
 </source>
 
 In our example, we run the first command and immediately Git launches our default text editor and open a file that details the commits in the range we've chosen:
