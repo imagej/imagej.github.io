@@ -90,16 +90,18 @@ Once the pull request is created, it is automatically sent to the person in char
 == Modifying your commits ==
 From the discussion, you might realize you need to modify a part of the changes you made on your branch. Some of the changes introduced by your commits can be fixed with new commits (that will appear in the discussion view of the pull request). But some commits may need to be modified so the history of your repository stays reasonably clean. In that case, you need to use the [https://help.github.com/articles/about-git-rebase/ git rebase command]:
 
-You can rebase since a specific commit, for example:
+Rebase operates over a range of commits. You provide it a starting point, and it then automatically includes all commits ***after*** that point, up to the current state of your branch.
+
+For example, you can specify a specific commit to start from:
 
 <source lang=bash>
 $ git rebase -i 6272a7bf
 </source>
 
-or since the starting point of your branch:
+If we aren't sure which commit to start from, we can just rebase over the entire branch:
 
 <source lang=bash>
-$ git rebase -i origin/master
+$ git rebase -i $(git merge-base --fork-point master)
 </source>
 
 In our example, we run the first command and immediately Git launches our default text editor and open a file that details the commits in the range we've chosen:
