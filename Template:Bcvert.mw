@@ -1,5 +1,5 @@
 <includeonly>
-<table style="text-align: center;"  {{#if: {{{float=right|}}} | align="right" | }}>
+<table style="text-align: center;"  {{#ifeq: {{{float}}} | right | align="right" | }}>
 {{#if: {{{1|}}} | <tr><td>{{{1}}}</td></tr> | }}
 {{#if: {{{2|}}} | <tr><td>{{downarrow | {{{color|}}}}}</td></tr> <tr><td>{{{2}}}</td></tr> | }}
 {{#if: {{{3|}}} | <tr><td>{{downarrow | {{{color|}}}}}</td></tr> <tr><td>{{{3}}}</td></tr> | }}
