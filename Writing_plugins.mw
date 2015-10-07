@@ -165,13 +165,31 @@ You already [[#Requierments|created your own GitHub repository]], right??
 
 When you're just getting started with tools like [[Git]] and [[Maven]], it's not easy to comprehend the nuances of how new projects should be set up and configured. It's much easier to copy a working project to use as a starting point and go from there.
 
-The [[#Example projects|example projects]] are designed precisely to serve as such starting points for new projects. Once you have a solid idea of what kind of plugin you want to write, pick the project that discusses your area of choice and simply copy it to your own GitHub repo. From there, you can make changes as needed. In addition to the developing the source code itself, there are many common changes you may want to make:
+The [[#Example projects|example projects]] are designed precisely to serve as such starting points for new projects. Once you have a solid idea of what kind of plugin you want to write, pick the project that discusses your area of choice and simply copy it to your own GitHub repo. From there, you can make changes as needed.
 
-* update pom to pom-fiji
-* update pom version to latest
-* add more dependencies
-* add your <developer> information to the pom
-* update the packages
+At this point, if you haven't already, we '''STRONGLY RECOMMEND''' importing your project into an [[IDE]] like [[Eclipse]]. This will make [[Developing_Fiji_in_Eclipse|development]] and [http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-menu-refactor.htm refactoring] much easier. Modern IDEs also have excellent [[Git]] and [[Maven]] integration, which will allow you to take advantage of the fact that the example projects are already set up as Mavenized Git repositories.
+
+In addition to modifying and developing the source code itself, there are several things you should do to properly identify and configure your project:
+
+==== Update your POM ====
+
+* Update your [https://maven.apache.org/pom.html#Inheritance parent pom]. This will dictate what [https://maven.apache.org/pom.html#Dependency_Management dependency management] is available to you. If you're writing a core ImageJ plugin, then <code>pom-imagej</code> is appropriate. A [[Fiji]] plugin should use [https://github.com/fiji/pom-fiji <code>pom-fiji</code>], however.
+* Update pom version to latest: which depends on if your parent is [https://github.com/imagej/pom-imagej/releases pom-imagej] or [https://github.com/fiji/pom-fiji/releases pom-fiji]
+* Update your [https://maven.apache.org/pom.html#Maven_Coordinates groupId]. ImageJ projects use a <code>net.imagej</code> groupId, while Fiji projects use <code>sc.fiji</code> - or you may use your own if you do not plan to distribute your plugin with the core ImageJ or Fiji projects.
+* Update your [https://maven.apache.org/pom.html#Maven_Coordinates artifactId] to something appropriate based on the intended use of your project.
+* Update your <code><name></code> and <code><description></code> to something appropriate for your new artifactId.
+
+==== Code changes ====
+
+* If you updated your pom's groupId, you should similarly update the [https://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html package] structure (found in [https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html <code>src/main/java</code>]) to match.
+
+==== Optional changes ====
+
+* If you want to use additional [[Source_code|ImageJ or Fiji projects]] as libraries, you will need to add them as dependencies in the [https://maven.apache.org/pom.html#Dependencies dependency block] of your <code>pom.xml</code>. Note that you will not need to specify a <code><version></code>, as these are managed by your parent pom.
+* Non-core ImageJ developers should add a <code><developer></code> block to their pom, to identify yourself (see [https://github.com/imagej/pom-imagej/blob/pom-imagej-13.1.0/pom.xml#L34-L85 this example] for formatting).
+* Alternatively, you could submit a pull request to pom-imagej adding yourself as a [https://github.com/imagej/pom-imagej/blob/pom-imagej-13.1.0/pom.xml#L86-L166 contributor]!
+* If your copied <code>pom.xml</code> has a [https://github.com/imagej/imagej-tutorials/blob/249c699dbdb9308f8a5539f0f39cf84d2612b273/simple-commands/pom.xml#L22-L24 main method specification] you will likely need to remove or update it as appropriate.
+* If you want to add non-Java files to your plugin, such as sample images or [[Scripting|demo scripts]], refer to the [https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html standard maven layout].
 
 == Next Steps ==
 
@@ -180,10 +198,11 @@ There are further guides available dedicated to developing particular types of p
 * [[Adding new ops]]
 * [[Adding new file formats]]
 
-Once you have completed plugins and want to get them out to users, you should read through the articles on:
+Once you have completed plugins and want to get them out to users, you can familiarize yourself with the articles on:
 
 * [[Distribution|Plugin distribution]]
 * [[Development Lifecycle|The development lifecycle]]
+* [[Fiji_contribution_requirements|Core contribution requirements]]
 
 As always, if you ever need assistance, [[Help|just ask]]!
 
