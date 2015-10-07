@@ -1,5 +1,5 @@
 <includeonly>
-<table>
+<table style="text-align: center;">
 {{#if: {{{1|}}} | <tr><td>{{{1}}}</td></tr> | }}
 {{#if: {{{2|}}} | <tr><td>{{downarrow | {{{color|}}}}}</td></tr> <tr><td>{{{2}}}</td></tr> | }}
 {{#if: {{{3|}}} | <tr><td>{{downarrow | {{{color|}}}}}</td></tr> <tr><td>{{{3}}}</td></tr> | }}
@@ -17,7 +17,7 @@
 For example, typing:
 <pre>The {{key|L}} key is the shortcut for {{bcvert|Plugins|Utilities|Find Commands}}.</pre>
 will be rendered as:
-The {{key|L}} key is the shortcut for {{bcvert|Plugins|Utilities|Find Commands}}.
+The {{key|L}} key is the shortcut for {{bcvert|Plugins|Utilities|Find Commands}}
 
 Up to 10 menu elements can be used:
 <pre>{{bcvert|Menu1|Menu2|Menu3|(...)|Menu9|Command}}</pre>
