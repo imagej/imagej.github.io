@@ -30,7 +30,7 @@ Practically, when writing new plugins, the '''type''' of the plugin is determine
 
 References to all the <code>@Plugin</code>-annotated classes that are discovered are contained in a single, master {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/Context.java|label=Context}}. Each application is responsible for creating its own <code>Context</code> to manage plugins and contextual state.
 
-In ImageJ, a <code>Context</code> is automatically created when {{GitHub|org=imagej|repo=imagej|tag=imagej-2.0.0-rc-39|source=net/imagej/ImageJ.java|label=the application starts up}}, so plugin developers do not need to create their own. In fact, creating your own <code>Context</code> typically causes problems, as it will be a different container than ImageJ is using. Instead, plugin instances within a common <code>Context</code> are provided automatically by the framework - you just have to ask.
+In ImageJ, a <code>Context</code> is automatically created when {{GitHub|org=imagej|repo=imagej|tag=imagej-2.0.0-rc-39|source=net/imagej/ImageJ.java|label=the application starts up}}, so plugin developers do not need to create their own. In fact, creating your own <code>Context</code> typically causes problems, as it will be a different container than ImageJ is using. Instead, plugin instances within a common <code>Context</code> are provided automatically by the framework—you just have to ask.
 
 Typically, ImageJ plugin developers will be writing [[#Services|Service]] and/or [[#Commands|Command]] plugins. When you need to use other plugins, you can obtain an instance from your <code>Context</code> by adding a field of the desired type and annotating it with the {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/plugin/Parameter.java|label=@Parameter annotation}}. You can even get a reference to the top-level <code>Context</code> itself this way, for example:
 
@@ -44,7 +44,7 @@ public class MyPlugin {
 }
 </source>
 
-Note that if the <code>MyPlugin</code> class above is manually constructed - i.e. via <code>new MyPlugin()</code> - the <code>Context</code> parameter '''will not''' be populated. Automatic population only occurs if the plugin instance itself is retrieved via the framework. In cases where you must manually construct a plugin instance, you can trigger population of <code>@Parameters</code> using an existing <code>Context</code> via the ''injection'' mechanism:
+Note that if the <code>MyPlugin</code> class above is manually constructed—i.e. via <code>new MyPlugin()</code>—the <code>Context</code> parameter '''will not''' be populated. Automatic population only occurs if the plugin instance itself is retrieved via the framework. In cases where you must manually construct a plugin instance, you can trigger population of <code>@Parameters</code> using an existing <code>Context</code> via the ''injection'' mechanism:
 
 <source lang=java>
 MyPlugin plugin = new MyPlugin();
@@ -64,11 +64,11 @@ Services often build on or reuse functionality defined in each other. For exampl
 
 Whereas [[#Services|Services]] provide internal functionality, <code>Commands</code> are plugins designed to be executed as one-offs, typically interacting with users to achieve some desired outcome. When open the ImageJ GUI, Commands are what are populating your menu structure: exposing functionality and algorithms in a way that can be consumed by non-developers.
 
-When writing <code>Commands</code> you will often declare {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/plugin/Parameter.java|label=@Parameters}} on fields that '''can not''' be resolved automatically by the <code>Context</code> - for example, numeric values or file paths. This is because <code>Commands</code> are created and executed on demand, instead of being instantiated at <code>Context</code> startup as a <code>Service</code> would be.
+When writing <code>Commands</code> you will often declare {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/plugin/Parameter.java|label=@Parameters}} on fields that '''can not''' be resolved automatically by the <code>Context</code>—for example, numeric values or file paths. This is because <code>Commands</code> are created and executed on demand, instead of being instantiated at <code>Context</code> startup as a <code>Service</code> would be.
 
-When a <code>Command</code> is executed, it goes through a series of pre-processing steps to populate its <code>@Parameters</code> using its associated [[#The_Context|Context]]. If any parameters are left unresolved and a UI is available, the framework will automatically build and display an appropriate dialog to get user input. In this way, input harvesting is decoupled from functional operation - allowing developers to focus on what's really important without repetition of code. This also means that Commands can typically run [[Headless|headlessly]] without any extra development effort.
+When a <code>Command</code> is executed, it goes through a series of pre-processing steps to populate its <code>@Parameters</code> using its associated [[#The_Context|Context]]. If any parameters are left unresolved and a UI is available, the framework will automatically build and display an appropriate dialog to get user input. In this way, input harvesting is decoupled from functional operation—allowing developers to focus on what's really important without repetition of code. This also means that Commands can typically run [[Headless|headlessly]] without any extra development effort.
 
-A common pattern in <code>Command</code> development is to wrap <code>Service</code> functionality. For example, opening an image from a path is a fundamental operation in ImageJ. To this end, developers can directly use the {{GitHub|org=scifio|repo=scifio|tag=scifio-0.25.0|source=io/scif/services/DatasetIOService.java|label=DatasetIOService}}. Users then get this same functionality from the menus via the {{GitHub|org=imagej|repo=imagej-plugins-commands|tag=imagej-plugins-commands-0.6.0|source=net/imagej/plugins/commands/io/OpenDataset.java|label=OpenDataset command}} - which itself simply calls into the <code>DatasetIOService</code>.
+A common pattern in <code>Command</code> development is to wrap <code>Service</code> functionality. For example, opening an image from a path is a fundamental operation in ImageJ. To this end, developers can directly use the {{GitHub|org=scifio|repo=scifio|tag=scifio-0.25.0|source=io/scif/services/DatasetIOService.java|label=DatasetIOService}}. Users then get this same functionality from the menus via the {{GitHub|org=imagej|repo=imagej-plugins-commands|tag=imagej-plugins-commands-0.6.0|source=net/imagej/plugins/commands/io/OpenDataset.java|label=OpenDataset command}}—which itself simply calls into the <code>DatasetIOService</code>.
 
 === Other plugins ===
 
@@ -96,7 +96,7 @@ Because these tutorials use [[Git]] for source control, you have complete freedo
 git reset --hard origin/master
 </source>
 
-There are always other options for saving or restoring your work - [https://git-scm.com/book/en/v1/Git-Tools-Stashing stashing] or [https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell branching], for example - but their use will depend on your personal comfort and knowledge of Git.
+There are always other options for saving or restoring your work—[https://git-scm.com/book/en/v1/Git-Tools-Stashing stashing] or [https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell branching], for example—but their use will depend on your personal comfort and knowledge of Git.
 
 === Tips ===
 
@@ -118,7 +118,7 @@ The [https://github.com/imagej/imagej-tutorials/blob/master/intro-to-imagej-api/
 These projects provide minimal examples with thorough inline documentation.
 
 * Look at some [https://github.com/imagej/imagej-tutorials/tree/master/simple-commands/src/main/java simple commands] and see how they interact with users
-* [https://github.com/imagej/imagej-tutorials/tree/master/working-with-modules/src/main/java Getting started with modules] - the foundation of many user-facing plugin types, including [[#Commands|commands]]
+* [https://github.com/imagej/imagej-tutorials/tree/master/working-with-modules/src/main/java Getting started with modules]—the foundation of many user-facing plugin types, including [[#Commands|commands]]
 
 === Targeted tasks ===
 
@@ -127,7 +127,7 @@ These projects are examples of specific ''use cases'' within the ImageJ API.
 * [https://github.com/imagej/imagej-tutorials/tree/master/execute-commands/src/main/java Execute commands programmatically]
 * [https://github.com/imagej/imagej-tutorials/tree/master/load-and-display-dataset/src/main/java Open a dataset]
 * [https://github.com/imagej/imagej-tutorials/tree/master/add-rois/src/main/java Combine ROIs]
-* [https://github.com/imagej/imagej-tutorials/tree/master/listen-to-events/src/main/java React to framework events] - such as creating a dataset
+* [https://github.com/imagej/imagej-tutorials/tree/master/listen-to-events/src/main/java React to framework events]—such as creating a dataset
 
 === Working with Ops ===
 
@@ -175,7 +175,7 @@ In addition to modifying and developing the source code itself, there are severa
 
 * Update your [https://maven.apache.org/pom.html#Inheritance parent pom]. This will dictate what [https://maven.apache.org/pom.html#Dependency_Management dependency management] is available to you. If you're writing a core ImageJ plugin, then <code>pom-imagej</code> is appropriate. A [[Fiji]] plugin should use [https://github.com/fiji/pom-fiji <code>pom-fiji</code>], however.
 * Update pom version to latest: which depends on if your parent is [https://github.com/imagej/pom-imagej/releases pom-imagej] or [https://github.com/fiji/pom-fiji/releases pom-fiji]
-* Update your [https://maven.apache.org/pom.html#Maven_Coordinates groupId]. ImageJ projects use a <code>net.imagej</code> groupId, while Fiji projects use <code>sc.fiji</code> - or you may use your own if you do not plan to distribute your plugin with the core ImageJ or Fiji projects.
+* Update your [https://maven.apache.org/pom.html#Maven_Coordinates groupId]. ImageJ projects use a <code>net.imagej</code> groupId, while Fiji projects use <code>sc.fiji</code>—or you may use your own if you do not plan to distribute your plugin with the core ImageJ or Fiji projects.
 * Update your [https://maven.apache.org/pom.html#Maven_Coordinates artifactId] to something appropriate based on the intended use of your project.
 * Update your <code><name></code> and <code><description></code> to something appropriate for your new artifactId.
 
