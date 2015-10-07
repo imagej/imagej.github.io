@@ -227,7 +227,7 @@ Useful extensions deserve corresponding documentation explaining how to use them
 * [http://imagejdocu.tudor.lu/doku.php?id=create_new_content Create a page] for your extension.
 | style="vertical-align: top" |
 * The [http://imagejdocu.tudor.lu/ ImageJ Information and Documentation Portal] predates the ImageJ wiki, and many extensions are still primarily documented there.
-* The IIDP is a fairly [http://imagejdocu.tudor.lu/doku.php?id=start&do=recent active] wiki.
+* The IIDP is a fairly [http://imagejdocu.tudor.lu/doku.php?id=start&do=recent active] wiki (but not [[Special:RecentChanges|compared to this one]]!).
 * The ImageJ developers hope to unify these two wikis in the future.
 | style="vertical-align: top" |
 * The IIDP documents only [[ImageJ 1.x]], not [[ImageJ2]].
