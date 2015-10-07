@@ -1,12 +1,4 @@
-<includeonly>
-{| 
-{{#if: {{{1|}}} | |{{{1}}} | }}
-{{#if: {{{2|}}} | |-
-                  |{{downarrow | {{{color|}}}}} 
-                  |- 
-                  |{{{2}}} | }}
-
- |} </includeonly><noinclude>This template provides a BreadCrumb trail through menu paths and similar hierarchical structures.
+<includeonly><span>{{#if: {{{1|}}} | <span style="border-bottom:1px dotted #ccc;">{{{1}}}</span> | }}{{#if: {{{2|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{2}}}</span> | }}{{#if: {{{3|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{3}}}</span> | }}{{#if: {{{4|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{4}}}</span> | }}{{#if: {{{5|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{5}}}</span> | }}{{#if: {{{6|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{6}}}</span> | }}{{#if: {{{7|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{7}}}</span> | }}{{#if: {{{8|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{8}}}</span> | }}{{#if: {{{9|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{9}}}</span> | }}{{#if: {{{10|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{10}}}</span> | }}</span></includeonly><noinclude>This template provides a BreadCrumb trail through menu paths and similar hierarchical structures.
 ==Usage==
 For example, typing:
 <pre>The {{key|L}} key is the shortcut for {{bcvert|Plugins|Utilities|Find Commands}}.</pre>
