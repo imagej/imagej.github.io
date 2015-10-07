@@ -14,15 +14,26 @@ The Cookbook is based on the [[Fiji]] distribution of ImageJ.
 {{:Installation}}
 
 == Installing the Cookbook plugins ==
-{{bcvert | float=right | [[File:1_Update_Fiji.png|150px]] | [[File:2_Manage_update_sites.png|250px]] | [[File:3_Enable_cookbook.png|250px]] | [[File:4_Apply_changes.png|250px]] | [[File:5_Use_the_Cookbook.png|250px]] }}
-This Cookbook guide uses several plugins that are not available in Fiji out of the box. You can easily install them as follows:
-* From the Fiji menu, select {{bc | Help | Update...}}
-* Click the '''Manage update sites''' button
-* Check the '''Cookbook''' update site
-* Close the '''Manage update sites''' dialog
-* Click '''Apply changes''' to download the Cookbook plugins
-* Restart Fiji to complete the plugin installation
-* Enjoy your new plugins from the '''Cookbook''' menu!
+{|
+|From the Fiji menu, select {{bc | Help | Update...}}
+|[[File:1_Update_Fiji.png|150px|thumb]]
+|-
+|Click the '''Manage update sites''' button
+|[[File:2_Manage_update_sites.png|250px|thumb]]
+|-
+|Check the '''Cookbook''' update site
+|[[File:3_Enable_cookbook.png|250px|thumb]]
+|-
+|colspan="2" style="padding:50px 0 50px 0"|Close the '''Manage update sites''' dialog
+|-
+|Click '''Apply changes''' to download the Cookbook plugins
+|[[File:4_Apply_changes.png|250px|thumb]]
+|-
+|colspan="2" style="padding:50px 0 50px 0"|Restart Fiji to complete the plugin installation
+|-
+|Enjoy your new plugins from the '''Cookbook''' menu!
+|[[File:5_Use_the_Cookbook.png|250px|thumb]]
+|}
 
 == Source ==
 
