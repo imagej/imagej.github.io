@@ -1,4 +1,18 @@
-<includeonly><span>{{#if: {{{1|}}} | <span style="border-bottom:1px dotted #ccc;">{{{1}}}</span> | }}{{#if: {{{2|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{2}}}</span> | }}{{#if: {{{3|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{3}}}</span> | }}{{#if: {{{4|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{4}}}</span> | }}{{#if: {{{5|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{5}}}</span> | }}{{#if: {{{6|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{6}}}</span> | }}{{#if: {{{7|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{7}}}</span> | }}{{#if: {{{8|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{8}}}</span> | }}{{#if: {{{9|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{9}}}</span> | }}{{#if: {{{10|}}} | &nbsp;{{downarrow | {{{color|}}}}} <span style="border-bottom:1px dotted #ccc;">{{{10}}}</span> | }}</span></includeonly><noinclude>This template provides a BreadCrumb trail through menu paths and similar hierarchical structures.
+<includeonly>
+<table>
+{{#if: {{{1|}}} | <tr><td>{{{1}}}</td></tr> | }}
+{{#if: {{{2|}}} | <tr><td>{{downarrow | {{{color|}}}}}</td></tr> <tr><td>{{{2}}}</td></tr> | }}
+{{#if: {{{3|}}} | <tr><td>{{downarrow | {{{color|}}}}}</td></tr> <tr><td>{{{3}}}</td></tr> | }}
+{{#if: {{{4|}}} | <tr><td>{{downarrow | {{{color|}}}}}</td></tr> <tr><td>{{{4}}}</td></tr> | }}
+{{#if: {{{5|}}} | <tr><td>{{downarrow | {{{color|}}}}}</td></tr> <tr><td>{{{5}}}</td></tr> | }}
+{{#if: {{{6|}}} | <tr><td>{{downarrow | {{{color|}}}}}</td></tr> <tr><td>{{{6}}}</td></tr> | }}
+{{#if: {{{7|}}} | <tr><td>{{downarrow | {{{color|}}}}}</td></tr> <tr><td>{{{7}}}</td></tr> | }}
+{{#if: {{{8|}}} | <tr><td>{{downarrow | {{{color|}}}}}</td></tr> <tr><td>{{{8}}}</td></tr> | }}
+{{#if: {{{9|}}} | <tr><td>{{downarrow | {{{color|}}}}}</td></tr> <tr><td>{{{9}}}</td></tr> | }}
+{{#if: {{{10|}}} | <tr><td>{{downarrow | {{{color|}}}}}</td></tr> <tr><td>{{{10}}}</td></tr> | }}
+</table>
+</includeonly>
+<noinclude>This template provides a BreadCrumb trail through menu paths and similar hierarchical structures.
 ==Usage==
 For example, typing:
 <pre>The {{key|L}} key is the shortcut for {{bcvert|Plugins|Utilities|Find Commands}}.</pre>
