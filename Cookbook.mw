@@ -15,13 +15,14 @@ The Cookbook is based on the [[Fiji]] distribution of ImageJ.
 
 == Installing the Cookbook plugins ==
 
-The Cookbook makes use of several plugins beyond those available in Fiji out of the box. You can easily install them as follows:
-* {{bc | Help | Update...}}
-* Manage update sites
-* Tick the "Cookbook" update site
-* Close
-* Apply changes
-* Restart ImageJ
+This Cookbook guide uses several plugins that are not available in Fiji out of the box. You can easily install them as follows:
+* From the Fiji menu, select: '''{{bc | Help | Update Fiji}}'''
+* Click the '''Manage update sites''' button
+* Check the '''Cookbook''' update site
+* Close the '''Manage update sites''' dialog
+* Click '''Apply changes''' to download the Cookbook plugins
+* Restart Fiji to complete the plugin installation
+* Enjoy your new plugins from the '''Cookbook''' menu!
 
 == Source ==
 
