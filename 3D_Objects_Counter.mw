@@ -1,7 +1,7 @@
 {{Infobox
 | software               = ImageJ
 | name                   = 3D Object Counter
-| maintainer        =  [mailto:white_at_mpi-cbg_dot_de Daniel White]
+| maintainer        =  {{Person|White}}
 | author                 = Fabrice P. Cordelieres
 | filename               = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=plugin:analysis:3d_object_counter:3d-oc_.jar 3d-oc_.jar] 
 | source                 = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=plugin:analysis:3d_object_counter:3d-oc_.jar Contained within the jar file]
