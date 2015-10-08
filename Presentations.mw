@@ -12,7 +12,7 @@ __TOC__
 | colspan=5 class="section-minor" | Keynotes
 |-
 | 2015-Sep-03
-| {{Dev | id=rasband}}
+| {{Person|rasband}}
 | Introduction to ImageJ
 |
 [https://vimeo.com/140929691 video]
@@ -25,13 +25,13 @@ __TOC__
 [https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/ slides]
 |-
 | 2015-Sep-04
-| {{Dev | id=marktsuchida}}
+| {{Person|marktsuchida}}
 | Microscope control and image acquisition with Micro-Manager
 |
 [https://vimeo.com/140098816 video]
 |-
 | 2015-Sep-04
-| {{Dev | id=fjug}}
+| {{Person|fjug}}
 | Getting stuff done – Software synergy with ImageJ + KNIME
 |
 [https://vimeo.com/140098839 video]
@@ -39,7 +39,7 @@ __TOC__
 | colspan=5 class="section-minor" | Featured presentations
 |-
 | 2015-Sep-04
-| {{Dev | id=omsai}}
+| {{Person|omsai}}
 | Sharing the value of software freedom with non-programmers
 |
 [https://vimeo.com/140098825 video],
@@ -54,7 +54,7 @@ __TOC__
 [[Conference 2015 Program#Tiago_Ferreira_-_Alternative_approaches_for_neuronal_morphometry|abstract]]
 |-
 | 2015-Sep-03
-| {{Dev | id=bogovicj}}
+| {{Person|bogovicj}}
 | The Thin Plate Spline method for smooth non-rigid transformations
 |
 [https://vimeo.com/140929688 video],
@@ -133,7 +133,7 @@ __TOC__
 [[Conference 2015 Program#Benjamin_Nanes_-_Slide_Set:_Simplified_batch_processing_with_ImageJ2|abstract]]
 |-
 | 2015-Sep-04
-| {{Dev | id=bnorthan}}
+| {{Person|bnorthan}}
 | Flexible Deconvolution using ImageJ Ops
 |
 [https://vimeo.com/140098821 video],
@@ -280,7 +280,7 @@ __TOC__
 [http://bit.ly/1hD5FZF interactive]
 |-
 | 2015-Sep-04
-| [[User:Rueden|Curtis Rueden]]<br>{{Dev | id=bnorthan}}
+| [[User:Rueden|Curtis Rueden]]<br>{{Person|bnorthan}}
 | ImageJ2 scripts: Parameters + ImageJ Ops
 |
 [https://vimeo.com/140098817 video 1],
