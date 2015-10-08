@@ -8,8 +8,8 @@ __NOTOC__
 
 <div style="float: left; width: 38%">
 === Principal investigators ===
-* [[User:Eliceiri|Kevin Eliceiri]]<sup>2</sup> (ImageJ/Fiji, OME)
-* [[User:Tomancak|Pavel Tomancak]]<sup>3</sup> (ImageJ/Fiji)
+* {{Person|Eliceiri}}<sup>2</sup> (ImageJ/Fiji, OME)
+* {{Person|Tomancak}}<sup>3</sup> (ImageJ/Fiji)
 * [http://www.broadinstitute.org/~anne/ Anne Carpenter]<sup>4</sup> (CellProfiler, ImageJ)
 * [http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/ Michael Berthold]<sup>9</sup> (KNIME)
 * [http://www.lifesci.dundee.ac.uk/people/jason-swedlow Jason Swedlow]<sup>10,11</sup> (OME)
@@ -18,70 +18,70 @@ __NOTOC__
 * Wayne Rasband<sup>1</sup> (lead)
 
 === [[ImageJ2]] ===
-* [[User:Rueden|Curtis Rueden]]<sup>2</sup> (lead)
-* [[User:Hinerm|Mark Hiner]]<sup>2</sup>
-* [[User:Leek|Lee Kamentsky]]<sup>4</sup>
-* [[User:Dietz|Christian Dietz]]<sup>9</sup>
+* {{Person|Rueden}}<sup>2</sup> (lead)
+* {{Person|Hinerm}}<sup>2</sup>
+* {{Person|Leek}}<sup>4</sup>
+* {{Person|Dietz}}<sup>9</sup>
 * Brian Northan<sup>13</sup>
-* [[User:Schindelin|Johannes Schindelin]]<sup>2</sup> (Sep 2011-Nov 2014)
-* [[User:Grislis|Aivar Grislis]]<sup>2</sup> (Jan 2010-Dec 2013)
-* [[User:Bdezonia|Barry DeZonia]]<sup>2</sup> (Jan 2010-Nov 2013)
-* [[User:Harris|Grant Harris]]<sup>5</sup> (Nov 2009-Jan 2012)
+* {{Person|Schindelin}}<sup>2</sup> (Sep 2011-Nov 2014)
+* {{Person|Grislis}}<sup>2</sup> (Jan 2010-Dec 2013)
+* {{Person|Bdezonia}}<sup>2</sup> (Jan 2010-Nov 2013)
+* {{Person|Harris}}<sup>5</sup> (Nov 2009-Jan 2012)
 * Adam Fraser<sup>4</sup> (Nov 2009-Aug 2011)
-* [[User:Lentz|Rick Lentz]]<sup>2</sup> (Nov 2009-Feb 2011)
+* {{Person|Lentz}}<sup>2</sup> (Nov 2009-Feb 2011)
 </div>
 
 <div style="float: left; width: 27%">
 
 === [[Fiji]] ===
-* [[User:Rueden|Curtis Rueden]]<sup>2</sup> (lead)
-* [[User:Hinerm|Mark Hiner]]<sup>2</sup>
-* [[User:JeanYvesTinevez|Jean-Yves Tinevez]]<sup>8</sup>
-* [[User:Iarganda|Ignacio Arganda-Carreras]]
-* [[User:StephanP|Stephan Preibisch]]<sup>3</sup>
-* [[User:Saalfeld|Stephan Saalfeld]]<sup>3,12</sup>
-* [[User:Pietzsch|Tobias Pietzsch]]<sup>3</sup>
-* [[User:Eglinger|Jan Eglinger]]
-* [[User:Lindsey|Larry Lindsey]]
-* [[User:Tiago|Tiago Ferreira]]
+* {{Person|Rueden}}<sup>2</sup> (lead)
+* {{Person|Hinerm}}<sup>2</sup>
+* {{Person|JeanYvesTinevez}}<sup>8</sup>
+* {{Person|Iarganda}}
+* {{Person|StephanP}}<sup>3</sup>
+* {{Person|Saalfeld}}<sup>3,12</sup>
+* {{Person|Pietzsch}}<sup>3</sup>
+* {{Person|Eglinger}}
+* {{Person|Lindsey}}
+* {{Person|Tiago}}
 * [[Dan White|Dan White]]
-* [[User:Landini|Gabriel Landini]]
-* [[User:Albertcardona|Albert Cardona]]<sup>6,12</sup>
-* [[User:Schindelin|Johannes Schindelin]]<sup>2</sup>
+* {{Person|Landini}}
+* {{Person|Albertcardona}}<sup>6,12</sup>
+* {{Person|Schindelin}}<sup>2</sup>
 * See also [https://github.com/fiji/fiji/graphs/contributors graph of Fiji contributors]
 
 === [[BigDataViewer]] ===
-* [[User:Pietzsch|Tobias Pietzsch]]<sup>3</sup> (lead)
-* [[User:StephanP|Stephan Preibisch]]<sup>3</sup>
+* {{Person|Pietzsch}}<sup>3</sup> (lead)
+* {{Person|StephanP}}<sup>3</sup>
 
 === [[TrakEM2]] ===
-* [[User:Albertcardona|Albert Cardona]]<sup>6,12</sup> (lead)
-* [[User:Saalfeld|Stephan Saalfeld]]<sup>3,12</sup>
+* {{Person|Albertcardona}}<sup>6,12</sup> (lead)
+* {{Person|Saalfeld}}<sup>3,12</sup>
 </div>
 
 <div style="float: left; width: 34%">
 
 === [[ImgLib2]] ===
-* [[User:Pietzsch|Tobias Pietzsch]]<sup>3</sup> (lead)
-* [[User:StephanP|Stephan Preibisch]]<sup>3</sup>
-* [[User:Saalfeld|Stephan Saalfeld]]<sup>3,12</sup>
+* {{Person|Pietzsch}}<sup>3</sup> (lead)
+* {{Person|StephanP}}<sup>3</sup>
+* {{Person|Saalfeld}}<sup>3,12</sup>
 
 === [[SCIFIO]] ===
-* [[User:Hinerm|Mark Hiner]]<sup>2</sup> (co-lead)
-* [[User:Rueden|Curtis Rueden]]<sup>2</sup> (co-lead)
+* {{Person|Hinerm}}<sup>2</sup> (co-lead)
+* {{Person|Rueden}}<sup>2</sup> (co-lead)
 
 === [[CellProfiler]] ===
-* [[User:Leek|Lee Kamentsky]]<sup>4</sup> (lead)
+* {{Person|Leek}}<sup>4</sup> (lead)
 
 === [[KNIME|KNIME Image Processing]] ===
-* [[User:Dietz|Christian Dietz]]<sup>9</sup> (lead)
+* {{Person|Dietz}}<sup>9</sup> (lead)
 * Martin Horn<sup>9</sup>
 * Jonathan Hale<sup>9</sup>
 * Gabriel Einsdorf<sup>9</sup>
 * Daniel Seebacher<sup>9</sup>
 
 === [[OME]] ===
-* [[User:Moore|Josh Moore]]<sup>10,11</sup> (co-lead)
+* {{Person|Moore}}<sup>10,11</sup> (co-lead)
 * Jean-Marie Burel<sup>11</sup> (co-lead)
 * Chris Allan<sup>10</sup> (co-lead)
 * See also [http://openmicroscopy.org/site/about/who-ome OME Teams]
