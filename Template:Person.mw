@@ -99,9 +99,9 @@
 | [[User:{{{1}}}]]
 }}</includeonly><noinclude>
 == Usage ==
-<pre>{{Person | Rueden}}</pre>
-{{Person | Rueden}}
+<pre>{{Person|Rueden}}</pre>
+{{Person|Rueden}}
 
-<pre>{{Person | rasband}}</pre>
-{{Person | rasband}}
+<pre>{{Person|rasband}}</pre>
+{{Person|rasband}}
 </noinclude>
