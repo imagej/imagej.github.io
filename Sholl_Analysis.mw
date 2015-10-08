@@ -3,8 +3,8 @@
 {{Infobox
 | software       = ImageJ/Fiji
 | name           = Sholl Analysis
-| author         = [[User:Tiago|Tiago Ferreira]], Tom Maddock (v1.0.0)
-| maintainer     = [[User:Tiago|Tiago Ferreira]]
+| author         = {{Person|Tiago}}, Tom Maddock (v1.0.0)
+| maintainer     = {{Person|Tiago}}
 | source         = {{GitHub|org=tferr|repo=ASA}}
 | filename       = [http://jenkins.imagej.net/job/Stable-Fiji/ws/Fiji.app/plugins/Sholl_Analysis-3.4.5.jar Sholl_Analysis.jar]
 | released       = December 2012
