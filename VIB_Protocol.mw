@@ -2,7 +2,7 @@
 | name                   = VIB Protocol
 | software               = ImageJ
 | author                 = Benjamin Schmid, Johannes Schindelin
-| maintainer             = [[User:Schindelin|Johannes Schindelin]]
+| maintainer             = {{Person|Schindelin}}
 | filename               = VIB_.jar, VIB-lib.jar
 | source                 = {{GitHub | org = fiji | repo = VIB | label = VIB}}, {{GitHub | org = fiji | repo = VIB-lib | label = VIB-lib}}
 | released               = 13 July 2008
