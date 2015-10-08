@@ -2,8 +2,8 @@
 | software               = Fiji
 | name                   = MaMuT
 | logo                   = [[Image:MaMuT logo-256x256.png|160px]]
-| maintainer             = [[User:JeanYvesTinevez|Jean-Yves Tinevez]]
-| author                 = [[User:JeanYvesTinevez|Jean-Yves Tinevez]], [[User:Pietzsch|Tobias Pietzsch]]
+| maintainer             = {{Person|JeanYvesTinevez}}
+| author                 = {{Person|JeanYvesTinevez}}, {{Person|Pietzsch}}
 | source                 = {{GitHub | org=fiji | repo=MaMuT}}
 | status                 = v0.16.0, active
 | released               = 06/01/2015
