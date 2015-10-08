@@ -1,8 +1,8 @@
 {{Infobox
 | name                   = Blob Tracking
 | software               = Fiji
-| author                 = [[User:Alex-krull | Alexander Krull]],  [[User:damienrj | Damien Ramunno-Johnson]]
-| maintainer             = [[User:Alex-krull|Alexander Krull]],  [[User:damienrj | Damien Ramunno-Johnson]]
+| author                 = {{Person|Alex-krull}},  {{Person|Damienrj}}
+| maintainer             = {{Person|Alex-krull}},  {{Person|Damienrj}}
 | source                 = https://github.com/alex-krull/fiji
 | released               = May 22<sup>nd</sup>, 2013
 | latest version         = May 22<sup>nd</sup>, 2013
