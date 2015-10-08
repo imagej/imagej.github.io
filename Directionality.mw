@@ -1,7 +1,7 @@
 {{Infobox
 | software               = Fiji
 | name                   = Directionality
-| author                  = [[User:JeanYvesTinevez | Jean-Yves Tinevez]]
+| author                  = {{Person|JeanYvesTinevez}}
 | maintainer           = [mailto:jeanyves.tinevez@gmail.com Jean-Yves Tinevez]
 | filename              = Directionality_.jar 
 | source                 = as a {{GitHub|org=fiji|repo=Directionality|label=github repository}}
