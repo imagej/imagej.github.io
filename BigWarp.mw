@@ -2,7 +2,7 @@
 | name                  = BigWarp                                                                                                                                            
 | software              = Fiji
 | author                = {{Person|Bogovic}}
-| maintainer            = [mailto:bogovicj@janelia.hhmi.org John Bogovic]
+| maintainer            = {{Person|Bogovic}}
 | source                = {{GitHub|org=saalfeldlab|repo=bigwarp}}
 | latest version        = 1.0.0
 | status                = stable
