@@ -16,7 +16,7 @@ As it stands, there is still one significant limitation to the adapters (that I 
 
 In the future, with SezPoz support, you would still have to create an <code>Adapter</code>, but just by annotating as an <code>Adapter</code> it would automatically be included in the static <code>AdapterTools</code> class, and your library would automatically work as a plug-in to Bio-Formats/SCIFIO.
 
-~[[User:Hinerm]]
+~{{Person|Hinerm}}
 
 [[Category:ImageJ2]]
 [[Category:News]]
