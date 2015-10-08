@@ -1,8 +1,8 @@
 {{Infobox
 | name                   = BoneJ
 | software               = ImageJ
-| author                 = [[User:Michaeldoube|Michael Doube]]
-| maintainer             = [[User:Michaeldoube|Michael Doube]]
+| author                 = {{Person|Michaeldoube}}
+| maintainer             = {{Person|Michaeldoube}}
 | source                 = {{GitHub|org=mdoube|repo=BoneJ}}
 | status                 = Active
 | website                = http://bonej.org/
