@@ -2,8 +2,8 @@
 {{Infobox
 | name                   = Test Block Matching Parameters
 | software               = Fiji
-| author                  = [[User:Saalfeld|Stephan Saalfeld]] ([mailto:saalfeld@mpi-cbg.de])
-| maintainer             = [[User:Saalfeld|Stephan Saalfeld]]
+| author                  = {{Person|Saalfeld}} ([mailto:saalfeld@mpi-cbg.de])
+| maintainer             = {{Person|Saalfeld}}
 | source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/clahe]
 | released               = March 27<sup>th</sup>, 2012
 | latest version         = March 27<sup>th</sup>, 2012
