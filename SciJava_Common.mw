@@ -3,7 +3,7 @@
 | software               = SciJava
 | logo                   = [[File:scijava-logo.png|128px]]
 | author                 = [https://github.com/orgs/scijava/people SciJava developers]
-| maintainer             = [[User:Rueden|Curtis Rueden]]<br>[[User:Schindelin|Johannes Schindelin]]<br>[[User:Hinerm|Mark Hiner]]
+| maintainer             = {{Person|Rueden}}<br>{{Person|Schindelin}}<br>{{Person|Hinerm}}
 | source                 = {{GitHub | org = scijava | repo = scijava-common}}
 | status                 = active
 | category               = 
