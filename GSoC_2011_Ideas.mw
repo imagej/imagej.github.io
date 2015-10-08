@@ -33,7 +33,7 @@ A plugin already exists for Fiji: [[Trainable Segmentation]].
 
 '''Goal:''' Implement a number of segmentation algorithms based on machine learning.<br />
 '''Language:''' Java.<br />
-'''Mentor:''' {{Person|Iarganda}}, {{Person|Albertcardona}}, [http://longair.net/mark/ Mark Longair]<br />
+'''Mentor:''' {{Person|Iarganda}}, {{Person|Albertcardona}}, {{Person|Mark}}<br />
 
 == Implementing algorithms for Imglib ==
 
