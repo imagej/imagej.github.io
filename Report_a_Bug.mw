@@ -2,8 +2,8 @@
 {{Infobox
 | software               = Fiji
 | name                   = Bug Submitter
-| maintainer             = [[User:Schindelin|Johannes Schindelin]]<br/>[[User:Rueden|Curtis Rueden]]
-| author                 = [[User:Mark|Mark Longair]]
+| maintainer             = {{Person|Schindelin}}<br/>{{Person|Rueden}}
+| author                 = {{Person|Mark}}
 | source                 = {{GitHubSource|org=fiji|repo=Bug_Submitter}}
 | released               = 03/05/2009
 | latest version         = 30/09/2009
