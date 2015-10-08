@@ -12,7 +12,7 @@ choco install jdk8
 </source>
 We also heartily recommend installing [https://www.cygwin.com/ Cygwin]:
 <source lang="bash">
-choco install cygwin cyg-get
+choco install cyg-get
 </source>
 
 === Setting up command line tools on Mac OS X ===
