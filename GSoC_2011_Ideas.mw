@@ -6,7 +6,7 @@ Our generic image processing library [[Imglib]] is designed to efficiently gener
 
 '''Goal:''' create a multi-scale disk-stored image data container for [[Imglib]] and use it for a rapid multi-view/multi-scale display of very large ''n''-dimensional image data.<br />
 '''Language:''' any supported by Fiji, preferably Java.<br />
-'''Mentor:''' [http://albert.rierol.net Albert Cardona], [http://longair.net/mark Mark Longair]
+'''Mentor:''' {{Person|Albertcardona}}, [http://longair.net/mark Mark Longair]
 
 == Applying machine learning to the image segmentation problem ==
 
@@ -33,7 +33,7 @@ A plugin already exists for Fiji: [[Trainable Segmentation]].
 
 '''Goal:''' Implement a number of segmentation algorithms based on machine learning.<br />
 '''Language:''' Java.<br />
-'''Mentor:''' {{Person|Iarganda}}, [http://albert.rierol.net Albert Cardona], [http://longair.net/mark/ Mark Longair]<br />
+'''Mentor:''' {{Person|Iarganda}}, {{Person|Albertcardona}}, [http://longair.net/mark/ Mark Longair]<br />
 
 == Implementing algorithms for Imglib ==
 
@@ -47,7 +47,7 @@ The new imglib supports dimension-, storage- and data type independent image pro
 
 '''Goal:''' Implement generic algorithms for image processing.<br />
 '''Language:''' Java.<br />
-'''Mentor:''' [http://fly.mpi-cbg.de/preibisch Stephan Preibisch], [http://fly.mpi-cbg.de/saalfeld Stephan Saalfeld], [http://www.wv.inf.tu-dresden.de/People/Pietzsch.html Tobias Pietzsch], [http://albert.rierol.net Albert Cardona]<br />
+'''Mentor:''' [http://fly.mpi-cbg.de/preibisch Stephan Preibisch], [http://fly.mpi-cbg.de/saalfeld Stephan Saalfeld], [http://www.wv.inf.tu-dresden.de/People/Pietzsch.html Tobias Pietzsch], {{Person|Albertcardona}}<br />
 
 == Reparing images with missing data by using contextual information ==
 
@@ -63,7 +63,7 @@ Other approaches are also welcome, such as using information from adjacent seria
 
 '''Goal:''' implement a plugin for repairing images.<br />
 '''Language:''' Java.<br />
-'''Mentor:''' [http://albert.rierol.net Albert Cardona]<br />
+'''Mentor:''' {{Person|Albertcardona}}<br />
 
 == Robust blob segmentation ==
 
@@ -77,4 +77,4 @@ The purpose of this project is to segment in a fully automatic way round, convex
 
 '''Goal:''' Provide a robust blob segmentation algorithm that can work in 2D, 3D and 4D.<br />
 '''Language:''' Java<br />
-'''Mentor:''' [http://albert.rierol.net Albert Cardona]<br />
+'''Mentor:''' {{Person|Albertcardona}}<br />
