@@ -1,8 +1,8 @@
 {{Infobox
 | name                   = Marker-controlled Watershed
 | software               = IJPB-plugins
-| author                  = [[User:Iarganda | Ignacio Arganda-Carreras]], David Legland
-| maintainer             = [[User:Iarganda | Ignacio Arganda-Carreras]]
+| author                  = {{Person|Iarganda}}, David Legland
+| maintainer             = {{Person|Iarganda}}
 | source                 = {{GitHub|org=ijpb|repo=ijpb-plugins}}
 | released               = July 3<sup>rd</sup>, 2014
 | latest version         = October 31<sup>st</sup>, 2014 (MorphoLibJ v1.0.6)
