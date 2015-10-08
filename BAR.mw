@@ -2,7 +2,7 @@
 {{Infobox
 | software       = ImageJ/Fiji
 | name           = BAR
-| maintainer     = [[User:Tiago|Tiago Ferreira]]
+| maintainer     = {{Person|Tiago}}
 | source         = {{GitHub|org=tferr|repo=Scripts}}
 | released       = June 2014
 | latest version = '''1.1.6 August 2015''' ({{GitHub|org=tferr|repo=Scripts/releases|label=released versions}})
