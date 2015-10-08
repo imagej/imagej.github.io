@@ -1195,7 +1195,7 @@ for i in range(0, nseries):
 
 First note that the FFMPEG I/O plugin was a proof-of-concept that is completely '''unmaintained'''.
 
-Then open the [[Fiji Updater]], push the "Manage update sites" at the bottom left of the dialog, and install the [http://fiji.sc/~schindelin/ffmpeg-plugins/ FFMPEG] plugin by [[User:Schindelin|Johannes Schindelin]] by ticking its checkbox, as [[How_to_follow_a_3rd_party_update_site|explained in more detail here]].
+Then open the [[Fiji Updater]], push the "Manage update sites" at the bottom left of the dialog, and install the [http://fiji.sc/~schindelin/ffmpeg-plugins/ FFMPEG] plugin by {{Person|Schindelin}} by ticking its checkbox, as [[How_to_follow_a_3rd_party_update_site|explained in more detail here]].
 
 See also the Java source code for the {{GitHub|repo=fiji|tag=8164ae68|path=native/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/IO.java|label=IO}} class from the [https://github.com/fiji/fiji/tree/8164ae68/native/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/ FFMPEG plugin source code site].
 
