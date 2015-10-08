@@ -58,7 +58,7 @@ You are welcome to use any scientifically-relevant dataset of your choice, but w
 
 '''Goal:''' Implement a number of segmentation algorithms based on machine learning.<br />
 '''Language:''' Java.<br />
-'''Mentor:''' [http://bioweb.cnb.csic.es/~iarganda/index_EN.html Ignacio Arganda-Carreras], [http://albert.rierol.net Albert Cardona]<br />
+'''Mentor:''' {{Person|Iarganda}}, [http://albert.rierol.net Albert Cardona]<br />
 
 
 == Implementing algorithms for Imglib ==
