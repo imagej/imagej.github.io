@@ -1,8 +1,8 @@
 {{Infobox
 | name                   = Integral Image Filters
 | software               = Fiji
-| author                  = [[User:Saalfeld|Stephan Saalfeld]] ([mailto:saalfeld@mpi-cbg.de])
-| maintainer             = [[User:Saalfeld|Stephan Saalfeld]]
+| author                  = {{Person|Saalfeld}} ([mailto:saalfeld@mpi-cbg.de])
+| maintainer             = {{Person|Saalfeld}}
 | source                 = [https://github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/integral GitHub]
 | released               = March 21<sup>st</sup>, 2011
 | latest version         = February 22<sup>nd</sup>, 2012
