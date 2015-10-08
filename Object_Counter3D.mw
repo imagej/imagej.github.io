@@ -1,7 +1,7 @@
 {{Infobox
 | software               = ImageJ
 | name                   = Object Counter3D
-| maintainer        =  [mailto:white_at_mpi-cbg_dot_de Daniel White]
+| maintainer        =  {{Person|White}}
 | author                 = Jonathan Jackson
 | filename               = [http://imagej.net/plugins/track/Object_Counter3D.class Object_Counter3D.class] (13,353 Bytes)
 | source                 = [http://imagej.net/plugins/track/Object_Counter3D.java Object_Counter3D.java] (23,913 Bytes)
