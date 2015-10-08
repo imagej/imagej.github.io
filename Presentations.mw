@@ -18,7 +18,7 @@ __TOC__
 [https://vimeo.com/140929691 video]
 |-
 | 2015-Sep-03
-| [[User:Rueden|Curtis Rueden]]
+| {{Person|Rueden}}
 | ImageJ2 and Fiji: The ImageJ2 platform, and the Fiji distribution of ImageJ
 |
 [https://vimeo.com/140929687 video],
@@ -47,7 +47,7 @@ __TOC__
 [http://conference.imagej.net/2015/pariksheet-nanda/transcript.pdf transcript]
 |-
 | 2015-Sep-04
-| [[User:Tiago|Tiago Ferreira]]
+| {{Person|Tiago}}
 | Alternative approaches for neuronal morphometry
 |
 [https://vimeo.com/140098832 video],
@@ -95,7 +95,7 @@ __TOC__
 [http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_TalkSlides.pptx slides (PPTX)]
 |-
 | 2015-Sep-03
-| [[User:Hinerm|Mark Hiner]]
+| {{Person|Hinerm}}
 | ImageJ+MATLAB: Reunited
 |
 [https://vimeo.com/140929686 video],
@@ -111,7 +111,7 @@ __TOC__
 [http://conference.imagej.net/2015/irene-landrum/SWAMP%20%20Presentation%202015Aug25.pptx slides]
 |-
 | 2015-Sep-03
-| [[User:Linkert|Melissa Linkert]]
+| {{Person|Linkert}}
 |   OME Bio-Formats: 10 years of proprietary image data
 |
 [https://vimeo.com/140929689 video],
@@ -141,7 +141,7 @@ __TOC__
 [https://imagej.github.io/presentations/2015-09-04-imagej2-deconvolution/ slides]
 |-
 | 2015-Sep-04
-| [[User:Saalfeld|Stephan Saalfeld]]
+| {{Person|Saalfeld}}
 | Seamless stitching without blending
 |
 [https://vimeo.com/140098840 video],
@@ -201,7 +201,7 @@ __TOC__
 | colspan=5 class="section-major" | '''[[Conference 2012|2012 ImageJ Conference]]'''
 |-
 | 2012-Oct-24
-| [[User:Rueden|Curtis Rueden]]
+| {{Person|Rueden}}
 | ImageJ2
 |
 [http://conference.imagej.net/2012/curtis-rueden/2012-10-24-imagej-conference.odp slides]
@@ -209,7 +209,7 @@ __TOC__
 | colspan=5 class="section-major" | '''[[Conference 2010|2010 ImageJ Conference]]'''
 |-
 | 2010-Oct-27
-| [[User:Rueden|Curtis Rueden]]
+| {{Person|Rueden}}
 | ImageJDev
 |
 [http://conference.imagej.net/2010/curtis-rueden/2010-10-27-ImageJDev.pdf slides]
@@ -217,7 +217,7 @@ __TOC__
 | colspan=5 class="section-major" | '''Other presentations'''
 |-
 | 2015-Jan-12
-| [[User:Schindelin|Johannes Schindelin]]
+| {{Person|Schindelin}}
 | The ImageJ Ops Framework: Image processing made easy
 |
 [https://imagej.github.io/presentations/2015-01-12-imagej-ops/ slides]
@@ -280,7 +280,7 @@ __TOC__
 [http://bit.ly/1hD5FZF interactive]
 |-
 | 2015-Sep-04
-| [[User:Rueden|Curtis Rueden]]<br>{{Person|bnorthan}}
+| {{Person|Rueden}}<br>{{Person|bnorthan}}
 | ImageJ2 scripts: Parameters + ImageJ Ops
 |
 [https://vimeo.com/140098817 video 1],
@@ -342,7 +342,7 @@ __TOC__
 [https://www.dropbox.com/s/3st8ezbj9jmjzd8/bdv-poster-imagej2015.pdf?dl=0 poster]
 |-
 | 2015-Sep-03
-| [[User:Saalfeld|Stephan Saalfeld]]
+| {{Person|Saalfeld}}
 | ImgLib2 for visualization and generic image processing
 |
 [[Conference 2015 Program#Stephan_Saalfeld_-_ImgLib2_for_visualization_and_generic_image_processing|abstract]],
