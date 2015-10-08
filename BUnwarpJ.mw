@@ -1,7 +1,7 @@
 {{Infobox
 | software               = Fiji
 | name                   = bUnwarpJ
-| author                 = [[User:Iarganda | Ignacio Arganda-Carreras]]
+| author                 = {{Person|Iarganda}}
 | maintainer             = Ignacio Arganda-Carreras ([mailto:iargandacarreras@gmail.com iargandacarreras@gmail.com])
 | filename               = {{Maven | g=sc.fiji | a=bUnwarpJ_}}
 | source                 = {{GitHub|org=fiji|repo=bUnwarpJ}}
