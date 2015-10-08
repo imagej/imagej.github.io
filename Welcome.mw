@@ -19,13 +19,13 @@ __NOTOC__
 
 [[ImageJ]] is highly [[Extensibility|extensible]], with thousands of [[plugins]] and [[macros]] for performing a wide variety of tasks, and a strong, established user base.
 
-This [[wikipedia:wiki|wiki]] documents the ImageJ software ecosystem, including:
+This [[wikipedia:wiki|wiki]] documents the complete '''ImageJ ecosystem''', including:
 <center>
-{| class="nicetable" style="text-align: center"
-| [[File:Imagej2-icon.png|x32px|link=ImageJ]]<br>[[ImageJ|ImageJ itself]]
-| [[File:Fiji-icon.png|x32px|link=Fiji]]<br>The [[Fiji|Fiji distribution of ImageJ]]
-| [[File:Plugin.png|x32px|link=Category:Plugins]]<br>[[:Category:Plugins|ImageJ plugins]]
-| [[File:Scijava-icon.png|x32px|link=Category:Related Software]]<br>[[:Category:Related Software|Related software packages]]
+{| class="nicetable" style="text-align: center; "
+|style="width: 25%"|[[File:Imagej2-icon.png|x32px|link=ImageJ|Core ImageJ libraries]]<br>ImageJ
+|style="width: 25%"|[[File:Fiji-icon.png|x32px|link=Fiji|The Fiji distribution of ImageJ]]<br>Fiji
+|style="width: 25%"|[[File:Plugin.png|x32px|link=Category:Plugins|ImageJ plugins]]<br>Plugins
+|style="width: 25%"|[[File:Scijava-icon.png|x32px|link=Category:Related Software|Related software]]<br>Related software
 |}
 </center>
 </div>
