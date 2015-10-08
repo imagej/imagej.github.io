@@ -2,7 +2,7 @@
 | name                  = TrackMate_
 | logo                    = [[Image:TrackMate-Logo85x50-color-300p.png|160px]]
 | software              = Fiji
-| author                = [[User:NicholasPerry|Nick Perry]], [[JeanYvesTinevez|Jean-Yves Tinevez]], [[User:Schindelin|Johannes Schindelin]]
+| author                = {{Person|NicholasPerry}}, [[JeanYvesTinevez|Jean-Yves Tinevez]], {{Person|Schindelin}}
 | maintainer            = [mailto:jean-yves.tinevez@pasteur.fr Jean-Yves Tinevez]
 | source                = {{GitHub|org=fiji|repo=TrackMate}}
 | released              = 10/05/2012
@@ -164,7 +164,7 @@ We don't know in all honesty, since we did not write a paper specifically for Tr
 
 TrackMate actually depends on many other Fiji plugins or libraries. The [[Fiji Build System]] system and the [[Fiji Updater]] ensures that these dependencies will not bother you. We list them here, with their author when they are not obviously linked:
 
-* [[ImgLib2]] is used everywhere we need dealing with pixels. Relying on imglib made it trivial to have a plugin that deals indifferently with 2D or 3D images. In particular, we use code from Stephan Preibisch, [[User:Saalfeld|Stephan Saalfeld]], Larry Lindsey and Lee Kamentsky.
+* [[ImgLib2]] is used everywhere we need dealing with pixels. Relying on imglib made it trivial to have a plugin that deals indifferently with 2D or 3D images. In particular, we use code from Stephan Preibisch, {{Person|Saalfeld}}, Larry Lindsey and Lee Kamentsky.
 * [[ImageJA]] is of course the entry point for the plugin. We use it display the images as 2D slices and in the HyperStack displayer.
 * The [[3D Viewer]] is used for 3D display.
 * Internally, the tracks are represented by a mathematical [[wikipedia:Graph %28mathematics%29|graph]]. To manipulate it, we take advantage of the excellent [http://www.jgrapht.org/ JGraphT] library.
