@@ -2,7 +2,7 @@
 | name                   = ImgLib2
 | software               = Generic Image Processing for Java
 | logo                   = [[File:imglib2-logo.png]]
-| author                 = {{Person|Saalfeld}}, {{Person|Pietzsch}}, {{Person|StephanP}}, {{Person|Rueden}}, {{Person|Leek}}, {{Person|Bdezonia}}, {{Person|Schindelin}}, {{Person|Dietz}}, {{Person|hornm}}, {{Person|Albertcardona}}, {{Person|Harris}}, {{Person|Lindsey}}
+| author                 = {{Person|Saalfeld}}, {{Person|Pietzsch}}, {{Person|StephanP}}, {{Person|Rueden}}, {{Person|Leek}}, {{Person|Bdezonia}}, {{Person|Schindelin}}, {{Person|Dietzc}}, {{Person|hornm}}, {{Person|Albertcardona}}, {{Person|Harris}}, {{Person|Lindsey}}
 | maintainer             = {{Person|Pietzsch}}, {{Person|Rueden}}
 | source                 = {{GitHub | org = imglib | repo = imglib2}}
 | status                 = stable, active
