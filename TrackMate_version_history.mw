@@ -136,7 +136,7 @@ Initial release
 
 * It is possible to manually color spots and edges. The colors attributed are saved and retrieved from XML. To use it, select a few cells in TrackScheme and right-click to make the contextual menu appear:
 * There is now an action to export to [http://icy.bioimageanalysis.org/ Icy] track manager. It generates a XML file that can be opened in the [http://icy.bioimageanalysis.org/plugin/Track_Manager Icy track manager].
-* Icy XML track files can be opened in TrackMate. Just point the TrackMate loader plugin to such a file, and its type will be detected and it will be opened in TrackMate. We would like to express our thanks to [http://icy.bioimageanalysis.org/about Fabrice de Chaumont] for his help in developing these two features. 
+* Icy XML track files can be opened in TrackMate. Just point the TrackMate loader plugin to such a file, and its type will be detected and it will be opened in TrackMate. We would like to express our thanks to {{Person|Fab14}} for his help in developing these two features. 
 * A new action allows merging two TrackMate files into one.
 * The color scale used to display colored tracks, links and spots can now be manually adjusted. In the display panel of the GUI, double click on the label "color by" and a settings window will open allowing the user to select between manual or automatic scaling. This is great to generate views that are comparable between datasets. This feature is commissioned and offered by Fumio Hayashi, Kobe University.
 * The table in the InfoPane of TrackScheme displays the full spot name.
