@@ -2,7 +2,7 @@
 | software               = Fiji
 | name                   = Image5D
 | author                 = [mailto:walter@biz.uni-muenchen.de Joachim Walter]
-| maintainer             = [[User:Rueden|Curtis Rueden]]
+| maintainer             = {{Person|Rueden}}
 | filename                = [http://maven.imagej.net/content/repositories/releases/sc/fiji/Image_5D/1.2.6/Image_5D-1.2.6.jar Image_5D-1.2.6.jar]
 | source                 = {{GitHub|org=fiji|repo=Image_5D}}
 | latest version         = 1.2.6 (2014 December 11)
