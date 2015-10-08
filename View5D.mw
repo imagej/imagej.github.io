@@ -2,7 +2,7 @@
 | name                   = View5D
 | software               = ImageJ
 | author                 = Rainer Heintzmann
-| maintainer             = Rainer Heintzmann, [[User:JeanYvesTinevez|Jean-Yves Tinevez]]
+| maintainer             = Rainer Heintzmann, {{Person|JeanYvesTinevez}}
 | filename               = [http://www.nanoimaging.uni-jena.de/View5D/View5D_Sources_V1.3.00.zip src of last release (zip)]
 | source                 = {{GitHub|org=fiji|repo=View5D_}}
 | released               = April 2007
