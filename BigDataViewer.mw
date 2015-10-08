@@ -2,7 +2,7 @@
 | name                  = BigDataViewer
 | software              = Fiji
 | author                = {{Person|Pietzsch}}
-| maintainer            = [mailto:pietzsch@mpi-cbg.de Tobias Pietzsch]
+| maintainer            = {{Person|Pietzsch}}
 | source                = {{GitHub|org=bigdataviewer|repo=bigdataviewer_fiji}}
 | latest version        = 1.0.9
 | status                = stable
