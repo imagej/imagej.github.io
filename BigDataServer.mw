@@ -2,7 +2,7 @@
 | name                  = BigDataServer
 | software              = Fiji
 | author                = {{Person|Pietzsch}}, {{Person|Moon}}, {{Person|Tomancak}}
-| maintainer            = [mailto:pietzsch@mpi-cbg.de Tobias Pietzsch]
+| maintainer            = {{Person|Pietzsch}}
 | source                = {{GitHub|org=bigdataviewer|repo=bigdataviewer-server}}
 | latest version        = 1.0.2
 | status                = experimental
