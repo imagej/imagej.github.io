@@ -1,7 +1,7 @@
 {{Infobox
 | name                   = Graph Cut Plugin
 | software               = Fiji
-| author                 = [[User:Funke| Jan Funke]]
+| author                 = {{Person|Funke}}
 | maintainer             = Jan Funke
 | source                 = {{GitHub|org=fiji|repo=Graph_Cut}}
 | released               = August 24<sup>th</sup>, 2010
