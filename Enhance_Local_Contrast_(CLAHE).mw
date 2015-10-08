@@ -4,8 +4,8 @@
 {{Infobox
 | name                   = Enhance Local Contrast (CLAHE)
 | software               = Fiji
-| author                  = [[User:Saalfeld|Stephan Saalfeld]] ([mailto:saalfeld@mpi-cbg.de])
-| maintainer             = [[User:Saalfeld|Stephan Saalfeld]]
+| author                  = {{Person|Saalfeld}} ([mailto:saalfeld@mpi-cbg.de])
+| maintainer             = {{Person|Saalfeld}}
 | source                 = [https://github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/clahe]
 | released               = November 13<sup>th</sup>, 2009
 | latest version         = September 1<sup>st</sup>, 2010
