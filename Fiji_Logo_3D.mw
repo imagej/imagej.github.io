@@ -2,7 +2,7 @@
 
 This [[Javascript Scripting|javascript]] code displays the Fiji logo in 3D, within the [[3D Viewer]], and illustrate how to create and display 3D objects from a script, using Fiji facilities.
 
-The script is maintained by [[User:Schindelin|Johannes Schindelin]].
+The script is maintained by {{Person|Schindelin}}.
 
 == Code ==
 
