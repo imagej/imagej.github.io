@@ -17,7 +17,7 @@ Supplementary videos demonstrating the performance of the method are available [
 
 ==Introduction==
 
-[[Image:Aligned-series-crop-512.gif|thumb|right|166px|Example 2: Example for elastic alignment and montaging.  7 serial TEM sections of the neuropil of a ''Drosophila melanogaster'' first instar larva, detail at 100% pixel resolution. Image courtesy of [http://albert.rierol.net/ Albert Cardona].]][[Image:Aligned-series-512.gif|thumb|right|166px|Example 1: Example for elastic alignment and montaging.  7 serial TEM sections of the neuropil of a ''Drosophila melanogaster'' first instar larva, downscaled by a factor of 12.  Image courtesy of [http://albert.rierol.net/ Albert Cardona].]]
+[[Image:Aligned-series-crop-512.gif|thumb|right|166px|Example 2: Example for elastic alignment and montaging.  7 serial TEM sections of the neuropil of a ''Drosophila melanogaster'' first instar larva, detail at 100% pixel resolution. Image courtesy of {{Person:Albertcardona}}.]][[Image:Aligned-series-512.gif|thumb|right|166px|Example 1: Example for elastic alignment and montaging.  7 serial TEM sections of the neuropil of a ''Drosophila melanogaster'' first instar larva, downscaled by a factor of 12.  Image courtesy of {{Person:Albertcardona}}.]]
 We describe here our elastic alignment method for series or groups of overlapping 2d-images.  The method is accessible through the plugins '''Elastic Stack Alignment''' and '''Elastic Montage''' and incorporated in the '''[[TrakEM2]]''' software.  Applications are:
 
 ;Elastic Montage
@@ -92,7 +92,7 @@ All parameters that specify a distance in pixels refer to the original scale of 
 :Both plugins work with stacks of images.  The stacks might be virtual, which is strongly suggested for very large images.
 
 ;Output
-:The plugins export their output as a file or a series of files respectively.  In addition, previously extracted [[Feature Extraction|local features]] and [[Feature Extraction|feature correspondences]] are saved for later re-use during parameter triggering (thanks to [http://albert.rierol.net/ Albert Cardona] for adding this).  Make sure that you work in a clear folder when changing the input data because both saved matches and features are identified by their stack index and parameters only.
+:The plugins export their output as a file or a series of files respectively.  In addition, previously extracted [[Feature Extraction|local features]] and [[Feature Extraction|feature correspondences]] are saved for later re-use during parameter triggering (thanks to {{Person:Albertcardona}} for adding this).  Make sure that you work in a clear folder when changing the input data because both saved matches and features are identified by their stack index and parameters only.
 :You can choose whether to '''interpolate''' the result or not.  '''Visualize''' checked will render the spring mesh simulation into a 512&times;512 pixel stack for demonstration purposes.  The result is rendered using a transform mesh similar to the spring mesh discussed above.  The parameter '''resolution''' specifies the number of vertices in a long row for this mesh, higher numbers give smoother results.  Usually, you will never need more than '''128'''.  Optionally, the result can be '''rendered as RGB with green background''' to explicitly mark empty background pixels e.g. when generating montages for successive series alignment.
 
 ;Block Matching
