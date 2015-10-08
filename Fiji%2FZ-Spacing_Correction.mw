@@ -1,8 +1,8 @@
 {{Infobox
 | name                   = Z-Spacing Correction
 | software               = Fiji
-| author                 = Philipp Hanslovsky, [[User:Saalfeld|Stephan Saalfeld]] ([mailto:saalfelds@janelia.hhmi.org])
-| maintainer             = Philipp Hanslovsky, [[User:Saalfeld|Stephan Saalfeld]]
+| author                 = Philipp Hanslovsky, {{Person|Saalfeld}} ([mailto:saalfelds@janelia.hhmi.org])
+| maintainer             = Philipp Hanslovsky, {{Person|Saalfeld}}
 | source                 = [https://github.com/saalfeldlab/em-thickness-estimation]
 | released               = April 16<sup>th</sup>, 2015
 | latest version         = April 16<sup>th</sup>, 2015
