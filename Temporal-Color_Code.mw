@@ -4,7 +4,7 @@
 {{Infobox
 | name                   = Temporal-Color Code
 | software               = Fiji
-| author                 = [http://cmci.embl.de Kota Miura], [[User:Schindelin|Johannes Schindelin]]
+| author                 = [http://cmci.embl.de Kota Miura], {{Person|Schindelin}}
 | maintainer             = [http://cmci.embl.de Kota Miura] ([mailto:miura@embl.de])
 | source                 = {{GitHub|repo=fiji|path=plugins/Scripts/Image/Hyperstacks/Temporal-Color_Code.ijm}}
 | released               = 29 Nov 2010
