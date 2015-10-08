@@ -15,9 +15,20 @@ __NOTOC__
 
 
 <div style="background: #DEF4FF; border-radius: 2em; margin: 0 auto; padding: 20px; width: 80%">
-<span style="font-size: 1.2em">[[ImageJ]] is an [[open source]] image processing program designed for scientific multidimensional images.</span>
+<div style="font-size: 1.2em">[[ImageJ]] is an [[open source]] image processing program designed for scientific multidimensional images.
 
-<span style="font-size: 1.2em">[[ImageJ]] is highly [[Extensibility|extensible]], with thousands of [[plugins]] and [[macros]] for performing a wide variety of tasks, and a strong, established user base.</span>
+[[ImageJ]] is highly [[Extensibility|extensible]], with thousands of [[plugins]] and [[macros]] for performing a wide variety of tasks, and a strong, established user base.
+
+This [[wikipedia:wiki|wiki]] documents the ImageJ software ecosystem, including:
+<center>
+{| class="nicetable" style="text-align: center"
+| [[File:Imagej2-icon.png|x32px|link=ImageJ]]<br>[[ImageJ|ImageJ itself]]
+| [[File:Fiji-icon.png|x32px|link=Fiji]]<br>The [[Fiji|Fiji distribution of ImageJ]]
+| [[File:Plugin.png|x32px|link=Category:Plugins]]<br>[[:Category:Plugins|ImageJ plugins]]
+| [[File:Scijava-icon.png|x32px|link=Category:Related Software]]<br>[[:Category:Related Software|Related software packages]]
+|}
+</center>
+</div>
 
 <h2 class="header-stripe" style="margin-left: -20px; margin-right: -20px; font-weight: normal">Tools & Features</h2>
 {|
