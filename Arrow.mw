@@ -2,7 +2,7 @@
 | software               = ImageJ
 | name                   = Arrow
 | author                 = Jean-Yves Tinevez & Johannes Schindelin
-| maintainer             = [mailto:jean-yves.tinevez@pasteur.fr Jean-Yves Tinevez]
+| maintainer             = {{Person|JeanYvesTinevez}}
 | source                 = {{GitHub|org=fiji|repo=Arrow}}
 | released               = December 2009
 | latest version         = December 2009
