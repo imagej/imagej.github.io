@@ -1,7 +1,7 @@
 {{Infobox
 | software               = ImageJ
 | name                   = CoverMaker
-| maintainer             = [mailto:tomancak@mpi-cbg.de Pavel Tomancak]
+| maintainer             = {{Person|Tomancak}}
 | author                 = {{Person|Tomancak}}, {{Person|Schindelin}}
 | source                 = {{GitHub|repo=fiji|path=plugins/Examples/CoverMaker/Cover_Maker.py}}
 | released               = 27/05/2012
