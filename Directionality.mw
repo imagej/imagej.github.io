@@ -2,7 +2,7 @@
 | software               = Fiji
 | name                   = Directionality
 | author                  = {{Person|JeanYvesTinevez}}
-| maintainer           = [mailto:jeanyves.tinevez@gmail.com Jean-Yves Tinevez]
+| maintainer           = {{Person|JeanYvesTinevez}}
 | filename              = Directionality_.jar 
 | source                 = as a {{GitHub|org=fiji|repo=Directionality|label=github repository}}
 | released              = March 12<sup>th</sup>, 2010
