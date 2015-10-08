@@ -1,8 +1,8 @@
 {{Infobox
 | name                   = Anomalous Diffusion Filters PlugIn
 | software               = Fiji
-| author                  = [[User:Acsenrafilho|Antonio Carlos da S. Senra Filho]] ([mailto:acsenrafilho@gmail.com])
-| maintainer             = [[User:Acsenrafilho|Antonio Carlos da S. Senra Filho]]
+| author                  = {{Person|Acsenrafilho}} ([mailto:acsenrafilho@gmail.com])
+| maintainer             = {{Person|Acsenrafilho}}
 | source                 = {{GitHub | org = CSIM-Toolkits | repo = ImageJ/tree/master/plugins/AnomalousDiffusionFilters | label = GitHub CSIM-ImageJ AnomalousDiffusionFilters repository}}
 | released               = February 03<sup>rd</sup>, 2015
 | latest version         = February 03<sup>rd</sup>, 2015
