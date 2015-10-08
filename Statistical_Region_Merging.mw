@@ -1,7 +1,7 @@
 {{Infobox
 | software               = ImageJ
 | name                   = Statistical Region Merging
-| maintainer             = [mailto:johannes.schindelin_at_gmx.de Johannes Schindelin]
+| maintainer             = {{Person|Schindelin}}
 | author                 = Johannes Schindelin
 | source                 = {{GitHub|org=fiji|repo=Statistical_Region_Merging|source=SRM_.java}}
 | released               = 2009-03-31
