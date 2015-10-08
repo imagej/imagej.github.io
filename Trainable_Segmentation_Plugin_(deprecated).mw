@@ -6,8 +6,8 @@ This page describes the Trainable Segmentation plugin, the previous incarnation 
 {{Infobox
 | name                   = Trainable Segmentation
 | software               = Fiji
-| author                 = Verena Kaynig, [[User:Iarganda | Ignacio Arganda-Carreras]], Albert Cardona
-| maintainer             = [http://www.kaynig.de Verena Kaynig] and [[User:Iarganda | Ignacio Arganda-Carreras]]
+| author                 = Verena Kaynig, {{Person|Iarganda}}, Albert Cardona
+| maintainer             = [http://www.kaynig.de Verena Kaynig] and {{Person|Iarganda}}
 | source                 = {{GitHub|org=fiji|repo=Trainable_Segmentation}}
 | released               = March 16<sup>th</sup>, 2010
 | latest version         = January 6<sup>th</sup>, 2012
