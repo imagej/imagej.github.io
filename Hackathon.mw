@@ -35,12 +35,12 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 |[http://www.hhmi.org/sites/default/files/Bulletin/2007/November/nov2007_fulltext.pdf 2007 Summer]
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
-| {{Dev | id=acardona}}, {{Dev | id=bene51}}, {{Dev | id=jefferis}}, {{Dev | id=hanchuan}}, {{Dev | id=dscho}}, {{Dev | id=mhl}}, {{Dev | id=StephanPreibisch}}, {{Dev | id=axtimwalde}}, {{Dev | id=rasband}}, Arnim Jenett, Julie Simpson, Torsten Rohlfing, Yuriy Mishchenko
+| {{Person|acardona}}, {{Person|bene51}}, {{Person|jefferis}}, {{Person|hanchuan}}, {{Person|dscho}}, {{Person|mhl}}, {{Person|StephanPreibisch}}, {{Person|axtimwalde}}, {{Person|rasband}}, Arnim Jenett, Julie Simpson, Torsten Rohlfing, Yuriy Mishchenko
 |Neuroscience
 |- valign="top"
 | style="white-space: nowrap" | [[TaskList|2008 Apr 21 -<br>2008 Apr 30]]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|{{Dev | id=acardona}}, {{Dev | id=bene51}}, {{Dev | id=ysis}}, {{Dev | id=chalkie666}}, {{Dev | id=frederikfly}}, {{Dev | id=tinevez}}, {{Dev | id=dscho}}, {{Dev | id=mhl}}, {{Dev | id=StephanPreibisch}}, {{Dev | id=axtimwalde}}, {{Dev | id=tomancak}}
+|{{Person|acardona}}, {{Person|bene51}}, {{Person|ysis}}, {{Person|chalkie666}}, {{Person|frederikfly}}, {{Person|tinevez}}, {{Person|dscho}}, {{Person|mhl}}, {{Person|StephanPreibisch}}, {{Person|axtimwalde}}, {{Person|tomancak}}
 |[[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | 2008 Dec 8 -<br>2008 Dec 13
@@ -50,112 +50,112 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 | style="white-space: nowrap" | [[2009-03-12 - Dresden Hackathon 2009|2009 Mar 23 -<br>2009 Apr 03]]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|{{Dev | id=dscho}}, {{Dev | id=acardona}}, {{Dev | id=tinevez}}, {{Dev | id=bene51}}, {{Dev | id=iarganda}}, {{Dev | id=chalkie666}}, {{Dev | id=mhl}}, {{Dev | id=tomancak}}, {{Dev | id=StephanPreibisch}}, {{Dev | id=axtimwalde}}, Raju Tomer, Misha Kudryashev
+|{{Person|dscho}}, {{Person|acardona}}, {{Person|tinevez}}, {{Person|bene51}}, {{Person|iarganda}}, {{Person|chalkie666}}, {{Person|mhl}}, {{Person|tomancak}}, {{Person|StephanPreibisch}}, {{Person|axtimwalde}}, Raju Tomer, Misha Kudryashev
 |Segmentation
 |- valign="top"
 | style="white-space: nowrap" | [[2010-03-14 - Hackathon at EMBL|2010 Mar 14 -<br>2010 Mar 27]]
 |[http://www.embl.de/ EMBL]<br>Heidelberg, Germany
-|{{Dev | id=acardona}}, {{Dev | id=axtimwalde}}, {{Dev | id=bene51}}, {{Dev | id=cmci}}, {{Dev | id=ctrueden}}, {{Dev | id=dscho}}, {{Dev | id=iarganda}}, {{Dev | id=larrylindsey}}, {{Dev | id=mhl}}, {{Dev | id=StephanPreibisch}}, {{Dev | id=tnargsirrah}}, {{Dev | id=vkaynig}}
+|{{Person|acardona}}, {{Person|axtimwalde}}, {{Person|bene51}}, {{Person|cmci}}, {{Person|ctrueden}}, {{Person|dscho}}, {{Person|iarganda}}, {{Person|larrylindsey}}, {{Person|mhl}}, {{Person|StephanPreibisch}}, {{Person|tnargsirrah}}, {{Person|vkaynig}}
 |[[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | 2010 Oct 12 -<br>2010 Oct 23
 |[http://www.lbnl.gov/ Lawrence Berkeley National Laboratory]<br>Berkeley CA, USA
-|{{Dev | id=frederikfly}}, {{Dev | id=dscho}}
+|{{Person|frederikfly}}, {{Person|dscho}}
 |Running [[Micro-Manager]] inside [[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | [[2011 Hackathon in Madison|2011 Jan 27 -<br>2011 Feb 13]]
 |[http://discovery.wisc.edu/ WID]<br>Madison, WI, USA
-|{{Dev | id=iarganda}}, {{Dev | id=paulbarber}}, {{Dev | id=acardona}}, {{Dev | id=bdezonia}}, {{Dev | id=arthuredelstein}}, {{Dev | id=afraser}}, {{Dev | id=frederikfly}}, {{Dev | id=grislis}}, {{Dev | id=tnargsirrah}}, {{Dev | id=hinerm}}, {{Dev | id=luisibanez}}, {{Dev | id=LeeKamentsky}}, {{Dev | id=larrylindsey}}, {{Dev | id=melissalinkert}}, {{Dev | id=mhl}}, {{Dev | id=tpietzsch}}, {{Dev | id=StephanPreibisch}}, {{Dev | id=ctrueden}}, {{Dev | id=axtimwalde}}, {{Dev | id=dscho}}, {{Dev | id=bene51}}, {{Dev | id=tomancak}}, Kevin Eliceiri, Rick Lentz, Mark Rowley
+|{{Person|iarganda}}, {{Person|paulbarber}}, {{Person|acardona}}, {{Person|bdezonia}}, {{Person|arthuredelstein}}, {{Person|afraser}}, {{Person|frederikfly}}, {{Person|grislis}}, {{Person|tnargsirrah}}, {{Person|hinerm}}, {{Person|luisibanez}}, {{Person|LeeKamentsky}}, {{Person|larrylindsey}}, {{Person|melissalinkert}}, {{Person|mhl}}, {{Person|tpietzsch}}, {{Person|StephanPreibisch}}, {{Person|ctrueden}}, {{Person|axtimwalde}}, {{Person|dscho}}, {{Person|bene51}}, {{Person|tomancak}}, Kevin Eliceiri, Rick Lentz, Mark Rowley
 |Multidimensional visualization
 |- valign="top"
 | style="white-space: nowrap" | [[2011-12-14 - Fiji Hackathon in Dresden|2011 Dec 9 -<br>2011 Dec 19]]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|{{Dev | id=jburel}}, {{Dev | id=Stephane-D}}, {{Dev | id=bdezonia}}, {{Dev | id=dietzc}}, {{Dev | id=mdoube}}, {{Dev | id=Fab14}}, {{Dev | id=frederikfly}}, {{Dev | id=hornm}}, {{Dev | id=chalkie666}}, {{Dev | id=tomka}}, {{Dev | id=alex-krull}}, {{Dev | id=melissalinkert}}, {{Dev | id=mhl}}, {{Dev | id=joshmoore}}, {{Dev | id=tpietzsch}}, {{Dev | id=StephanPreibisch}}, {{Dev | id=ctrueden}}, {{Dev | id=dscho}}, {{Dev | id=bene51}}, {{Dev | id=tomancak}}, {{Dev | id=Peter-Gabriel-Pitrone}}, Fernando Carrilo, Kevin Eliceiri, Jiri Matas, Jurgen Mayer
+|{{Person|jburel}}, {{Person|Stephane-D}}, {{Person|bdezonia}}, {{Person|dietzc}}, {{Person|mdoube}}, {{Person|Fab14}}, {{Person|frederikfly}}, {{Person|hornm}}, {{Person|chalkie666}}, {{Person|tomka}}, {{Person|alex-krull}}, {{Person|melissalinkert}}, {{Person|mhl}}, {{Person|joshmoore}}, {{Person|tpietzsch}}, {{Person|StephanPreibisch}}, {{Person|ctrueden}}, {{Person|dscho}}, {{Person|bene51}}, {{Person|tomancak}}, {{Person|Peter-Gabriel-Pitrone}}, Fernando Carrilo, Kevin Eliceiri, Jiri Matas, Jurgen Mayer
 |Interoperability
 |- valign="top"
 | style="white-space: nowrap" | 2012 Oct
 |[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
-|{{Dev | id=hornm}}, {{Dev | id=dietzc}}, {{Dev | id=tpietzsch}}, {{Dev | id=dscho}}
+|{{Person|hornm}}, {{Person|dietzc}}, {{Person|tpietzsch}}, {{Person|dscho}}
 |[[KNIME]]+[[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | 2013 Jan 22 -<br>2013 Jan 25
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{Dev | id=thewtex}}, {{Dev | id=ctrueden}}, {{Dev | id=dscho}}, {{Dev | id=hinerm}}
+|{{Person|thewtex}}, {{Person|ctrueden}}, {{Person|dscho}}, {{Person|hinerm}}
 |{{GitHub|org=scifio|repo=scifio-imageio|label=SCIFIO ImageIO plugin}}
 |- valign="top"
 | style="white-space: nowrap" | [[2013-04-22 - Trainable Segmentation Hackathon|2013 Apr 14 -<br>2013 Apr 18]]
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{Dev | id=iarganda}}, {{Dev | id=dscho}}, {{Dev | id=ctrueden}}
+|{{Person|iarganda}}, {{Person|dscho}}, {{Person|ctrueden}}
 |[[Trainable Weka Segmentation]]
 |- valign="top"
 |[[2013-05-03 - ImgLib2 Hackathon in Madison|2013 Apr 27 -<br>2013 May 3]]
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{Dev | id=StephanPreibisch}}, {{Dev | id=tpietzsch}}, {{Dev | id=ctrueden}}, {{Dev | id=dscho}}, {{Dev | id=bdezonia}}, {{Dev | id=hinerm}}, {{Dev | id=grislis}}
+|{{Person|StephanPreibisch}}, {{Person|tpietzsch}}, {{Person|ctrueden}}, {{Person|dscho}}, {{Person|bdezonia}}, {{Person|hinerm}}, {{Person|grislis}}
 |[[ImgLib2]]
 |- valign="top"
 | style="white-space: nowrap" | 2013 Sep 9 -<br>2013 Sep 13
 |[http://www.pasteur.fr/en Institut Pasteur]<br>Paris France
-|{{Dev | id=tpietzsch}}, {{Dev | id=tinevez}}
+|{{Person|tpietzsch}}, {{Person|tinevez}}
 |[[MaMuT]], [[BigDataViewer]]
 |- valign="top"
 | style="white-space: nowrap" | 2013 Nov 14 -<br>2013 Nov 27
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{Dev | id=dietzc}}, {{Dev | id=dscho}}, {{Dev | id=ctrueden}}
+|{{Person|dietzc}}, {{Person|dscho}}, {{Person|ctrueden}}
 |[[KNIME]]+[[ImageJ]]
 |- valign="top"
 | style="white-space: nowrap" | 2014 Mar 4 -<br>2014 Mar 13
 |[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
-|{{Dev | id=ctrueden}}, {{Dev | id=dscho}}, {{Dev | id=dietzc}}, {{Dev | id=hornm}}
+|{{Person|ctrueden}}, {{Person|dscho}}, {{Person|dietzc}}, {{Person|hornm}}
 |[[ImageJ Ops]]
 |- valign="top" |
 | style="white-space: nowrap" | 2014 Mar 11 -<br>2014 Mar 13
 |[https://www.facebook.com/heimathafenWiesbaden Heimathafen]<br>Wiesbaden, Germany
-|{{Dev | id=joshmoore}}, {{Dev | id=ctrueden}}
+|{{Person|joshmoore}}, {{Person|ctrueden}}
 |{{GitHub|org=imagej|repo=imagej-omero|label=ImageJ-OMERO}}
 |- valign="top"
 | style="white-space: nowrap" | 2014 Mar 20 -<br>2014 Mar 21
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{Dev | id=jburel}}, {{Dev | id=pwalczysko}}, {{Dev | id=ctrueden}}
+|{{Person|jburel}}, {{Person|pwalczysko}}, {{Person|ctrueden}}
 |{{GitHub|org=imagej|repo=imagej-omero|label=ImageJ-OMERO}}
 |- valign="top"
 | style="white-space: nowrap" | 2014 Jul 7 -<br>2014 Jul 10
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{Dev | id=marktsuchida}}, {{Dev | id=ChrisWeisiger}}, {{Dev | id=dscho}}, {{Dev | id=stuyvenberg}}, {{Dev | id=ctrueden}}, {{Dev | id=hinerm}}
-|[https://micro-manager.org/ Micro-Manager] and {{Dev | id=openspim}}
+|{{Person|marktsuchida}}, {{Person|ChrisWeisiger}}, {{Person|dscho}}, {{Person|stuyvenberg}}, {{Person|ctrueden}}, {{Person|hinerm}}
+|[https://micro-manager.org/ Micro-Manager] and {{Person|openspim}}
 |- valign="top"
 | style="white-space: nowrap" | [[2014-10-01 - ImageJ Ops Hackathon|2014 Sep 14 -<br>2014 Sep 18]]
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{Dev | id=dietzc}}, {{Dev | id=bnorthan}}, {{Dev | id=hinerm}}, {{Dev | id=ctrueden}}, {{Dev | id=apal4}}, {{Dev | id=yuminguw}}, {{Dev | id=awalter17}}, Ginger Pocock
+|{{Person|dietzc}}, {{Person|bnorthan}}, {{Person|hinerm}}, {{Person|ctrueden}}, {{Person|apal4}}, {{Person|yuminguw}}, {{Person|awalter17}}, Ginger Pocock
 |[[ImageJ Ops]] + [[KNIME]]
 |- valign="top"
 |2014 Oct 13 -<br>2014 Oct 17
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{Dev | id=tpietzsch}}, {{Dev | id=StephanPreibisch}}, {{Dev | id=axtimwalde}}, {{Dev | id=dscho}}, {{Dev | id=ctrueden}}, {{Dev | id=hinerm}}
+|{{Person|tpietzsch}}, {{Person|StephanPreibisch}}, {{Person|axtimwalde}}, {{Person|dscho}}, {{Person|ctrueden}}, {{Person|hinerm}}
 |[[ImgLib2]]
 |- valign="top"
 |2015 Jan 19 -<br>2015 Jan 27
 |[http://www.freiraeume-kn.de/standort.htm FREIRÄUME]<br>Konstanz, Germany
-|{{Dev | id=dietzc}}, {{Dev | id=ctrueden}}, {{Dev | id=hinerm}}, {{Dev | id=LeeKamentsky}}, {{Dev | id=tpietzsch}}, {{Dev | id=fjug}}, {{Dev | id=dscho}}, {{Dev | id=iarganda}}, {{Dev | id=gab1one}}, {{Dev | id=DanielSeebacher}}, {{Dev | id=kmader}}, {{Dev | id=angrauma}}, {{Dev | id=Squareys}}, {{Dev | id=tibuch}}, Patrick Winter, Andreas Burger, Tobias Kötter
+|{{Person|dietzc}}, {{Person|ctrueden}}, {{Person|hinerm}}, {{Person|LeeKamentsky}}, {{Person|tpietzsch}}, {{Person|fjug}}, {{Person|dscho}}, {{Person|iarganda}}, {{Person|gab1one}}, {{Person|DanielSeebacher}}, {{Person|kmader}}, {{Person|angrauma}}, {{Person|Squareys}}, {{Person|tibuch}}, Patrick Winter, Andreas Burger, Tobias Kötter
 |[[ImageJ Ops]] + [[KNIME]] + [[CellProfiler]] + more
 |- valign="top"
 | style="white-space: nowrap" | 2015 Apr 12 -<br>2015 Apr 17
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
-|{{Dev | id=StephanPreibisch}}, {{Dev | id=tpietzsch}}, {{Dev | id=axtimwalde}}, {{Dev | id=tomancak}}
+|{{Person|StephanPreibisch}}, {{Person|tpietzsch}}, {{Person|axtimwalde}}, {{Person|tomancak}}
 |[[Multiview-Reconstruction]] and [[BigDataViewer]]
 |- valign="top"
 | style="white-space: nowrap" | 2015 June 29 -<br>2015 July 3
 |[https://www.mdc-berlin.de/13800178/en/bimsb BIMSB/MDC]<br>Berlin, Germany
-|{{Dev | id=StephanPreibisch}}, {{Dev | id=dietzc}}, {{Dev | id=emmenlau}}, {{Dev | id=StephanJanosch}}
+|{{Person|StephanPreibisch}}, {{Person|dietzc}}, {{Person|emmenlau}}, {{Person|StephanJanosch}}
 |Parallelization of [[Multiview-Reconstruction]] and integration with ImageJ Ops & KNIME
 |- valign="top"
 | style="white-space: nowrap" | [[2015-07-27-Janelia_Hackathon|2015 Jul 27 -<br>2015 Jul 31]]
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
-|{{Dev | id=axtimwalde}}, {{Dev | id=ctrueden}}, {{Dev | id=hinerm}}, {{Dev | id=tpietzsch}},  {{Dev | id=tomka}}, {{Dev | id=bhoeckendorf}}, {{Dev | id=fernandoamat}}, Phillip Keller
+|{{Person|axtimwalde}}, {{Person|ctrueden}}, {{Person|hinerm}}, {{Person|tpietzsch}},  {{Person|tomka}}, {{Person|bhoeckendorf}}, {{Person|fernandoamat}}, Phillip Keller
 |[[SCIFIO]] performance and generality
 |- valign="top"
 | style="white-space: nowrap" | [[Conference 2015 Hackathon|2015 Sep 05 -<br>2015 Sep 15]]
 |[http://discovery.wisc.edu/ WID] + [[LOCI]]<br>Madison, WI, USA
-|{{Dev | id=ctrueden}}, {{Dev | id=hinerm}}, {{Dev | id=dietzc}}, {{Dev | id=tpietzsch}}, {{Dev | id=axtimwalde}}, {{Dev | id=bnorthan}}, {{Dev | id=fjug}}, {{Dev | id=tferr}}, {{Dev | id=thewtex}}, {{Dev | id=jaywarrick}}, {{Dev | id=biovoxxel}}, {{Dev | id=etarena}}, {{Dev | id=awalter17}}, {{Dev | id=yuminguw}}, {{Dev | id=guneetsinghmehta}}, Amitabh Verma
+|{{Person|ctrueden}}, {{Person|hinerm}}, {{Person|dietzc}}, {{Person|tpietzsch}}, {{Person|axtimwalde}}, {{Person|bnorthan}}, {{Person|fjug}}, {{Person|tferr}}, {{Person|thewtex}}, {{Person|jaywarrick}}, {{Person|biovoxxel}}, {{Person|etarena}}, {{Person|awalter17}}, {{Person|yuminguw}}, {{Person|guneetsinghmehta}}, Amitabh Verma
 |[[ImageJ2]] Learnathon + [[ImageJ OPS]]
 |-
 |colspan="4" style="border-bottom: 1px solid gray"|
