@@ -16,7 +16,7 @@ No changes are ever saved to the Reconstruct project. The new ''.xml'' file asso
 * After translation, the user is informed that TrakEM2 has detected a crash. This is because the translation process does not currently generate certain non-critical files that TrakEM2 expects to exist. This does not indicate an actual problem.
 
 == Contact ==
-The author of this plugin is [[User:Lindsey|Larry Lindsey]]
+The author of this plugin is {{Person|Lindsey}}
 
 ----
 
