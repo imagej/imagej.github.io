@@ -1,7 +1,7 @@
 {{Unreleased}}{{Infobox
 | software               = ImageJ
 | name                   = Stochastic Denoise
-| maintainer             = [mailto:funke@ini.phys.ethz.ch Jan Funke]
+| maintainer             = {{Person|Funke}}
 | author                 = Jan Funke
 | source                 = {{GitHub | org=fiji | repo=Stochastic_Denoise}}
 | status                 = unreleased
