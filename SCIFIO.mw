@@ -2,8 +2,8 @@
 | name                   = SCIFIO
 | software               = ImageJ
 | logo                   = [[File:Scifio-logo.png|150px]]
-| author                 = [[User:Hinerm|Mark Hiner]], [[User:Rueden|Curtis Rueden]]
-| maintainer             = [[User:Hinerm|Mark Hiner]], [[User:Rueden|Curtis Rueden]]
+| author                 = {{Person|Hinerm}}, {{Person|Rueden}}
+| maintainer             = {{Person|Hinerm}}, {{Person|Rueden}}
 | source                 = {{GitHub | org = scifio | repo = scifio}}
 | status                 = active
 | category               = 
