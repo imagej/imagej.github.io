@@ -2,7 +2,7 @@
 | software               = Fiji
 | name                   = Image Expression Parser
 | author                  = {{Person|JeanYvesTinevez}}, {{Person|Albertcardona}}
-| maintainer           = [mailto:jeanyves.tinevez@gmail.com Jean-Yves Tinevez]
+| maintainer           = {{Person|JeanYvesTinevez}}
 | filename              = Image_Expression_Parser.jar 
 | source                 = {{GitHub|org=fiji|repo=Image_Expression_Parser}}
 | released              = February  2010
