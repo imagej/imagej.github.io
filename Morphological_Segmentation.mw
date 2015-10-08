@@ -1,8 +1,8 @@
 {{Infobox
 | name                   = Morphological Segmentation
 | software               = IJPB-plugins
-| author                  = [[User:Iarganda | Ignacio Arganda-Carreras]], David Legland
-| maintainer             = [[User:Iarganda | Ignacio Arganda-Carreras]]
+| author                  = {{Person|Iarganda}}, David Legland
+| maintainer             = {{Person|Iarganda}}
 | source                 = {{GitHub|org=ijpb|repo=ijpb-plugins}}
 | released               = July 3<sup>rd</sup>, 2014
 | latest version         = March 23<sup>rd</sup>, 2015 (MorphoLibJ v1.0.7)
