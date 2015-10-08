@@ -1,7 +1,7 @@
 {{Infobox
 | software               = ImageJ
 | name                   = Auto Crop
-| maintainer             = [mailto:johannes_dot_schindelin_at_gmx_dot_de Johannes Schindelin]
+| maintainer             = {{Person|Schindelin}}
 | author                 = Johannes Schindelin
 | source                 = {{GitHub|org=fiji|repo=Fiji_Plugins|source=fiji/selection/Select_Bounding_Box.java}}
 | released               = 40/02/2010
