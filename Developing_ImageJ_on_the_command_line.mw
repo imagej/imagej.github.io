@@ -4,11 +4,9 @@ This article explains how to install and configure command line tools for use wi
 == Install and configure command line tools ==
 
 === Setting up command line tools on Windows ===
-* Download [[Git]] and [[Maven]] using [https://chocolatey.org/ Chocolatey].
+* Download [[Git]], [[Maven]], and [http://www.oracle.com/technetwork/java/javase/downloads/ jdk8] using [https://chocolatey.org/ Chocolatey].
 <source lang="bash">
-choco install git
-choco install maven
-choco install jdk8
+choco install git maven jdk8
 </source>
 * Add the <code>bin</code> directory for each to your [http://op111.net/82/ PATH environment variable].
 * We also heartily recommend installing [https://www.cygwin.com/ Cygwin].
