@@ -1,7 +1,7 @@
 {{Infobox
 | software               = Fiji
 | name                   = Microscope Measurement Tools
-| author                 = [[User:Demis | Demis D. John]]
+| author                 = {{Person|Demis}}
 | maintainer             = Demis D. John ([mailto:demis.john@gmail.com demis.john@gmail.com])
 | filename               = [https://github.com/demisjohn/Microscope-Measurement-Tools/archive/v1.3.1.zip Microscope Measurement Tools v1.3.1.zip]
 | source                 = {{GitHub|org=demisjohn|repo=Microscope-Measurement-Tools}}
