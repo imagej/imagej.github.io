@@ -1,7 +1,7 @@
 {{Infobox
 | software               = ImageJ
 | name                   = Descriptor-based registration
-| maintainer             = [mailto:preibischs_at_janelia_dot_hhmi_dot_org Stephan Preibisch]
+| maintainer             = {{Person|StephanP}}
 | author                 = Stephan Preibisch
 | source                 = {{GitHub|org=fiji|repo=Descriptor_based_registration}}
 | released               = 30/11/2011
