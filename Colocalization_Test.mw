@@ -2,7 +2,7 @@
 | name                   = Colocalization Test
 | software               = ImageJ - Fiji
 | author                 = Tony Collins (and others?)
-| maintainer             = [mailto:white_at_mpi-cbg_dot_de Dan White]
+| maintainer             = {{Person|White}}
 | filename               = Colocalization.jar
 | source                 = {{GitHub|org=fiji|repo=Colocalisation_Analysis|source=Colocalisation_Test.java}}, modified from [[MBF ImageJ]]
 | latest version         = june 2009
