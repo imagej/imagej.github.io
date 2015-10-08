@@ -33,7 +33,7 @@ A plugin already exists for Fiji: [[Trainable Segmentation]].
 
 '''Goal:''' Implement a number of segmentation algorithms based on machine learning.<br />
 '''Language:''' Java.<br />
-'''Mentor:''' [http://bioweb.cnb.csic.es/~iarganda/index_EN.html Ignacio Arganda-Carreras], [http://albert.rierol.net Albert Cardona], [http://longair.net/mark/ Mark Longair]<br />
+'''Mentor:''' {{Person|Iarganda}}, [http://albert.rierol.net Albert Cardona], [http://longair.net/mark/ Mark Longair]<br />
 
 == Implementing algorithms for Imglib ==
 
