@@ -200,7 +200,7 @@ Described in [[sec:Undo-and-Redo|Undo and Redo]].
 
 Copies the contents of the current image selection to the internal clipboard, filling the selection with the current background color.
 
-{{bc|Edit|[[Copy-to-System|Copy to System]]}}, {{bc|Edit|[[User_Guide_Layout_Test#Paste-Control...|Paste Control...]]}}
+{{bc|Edit|[[Copy-to-System|Copy to System]]}}, {{bc|Edit|[[User_Guide_Layout_Test#27.6_Paste_Control...|Paste Control...]]}}
 
 ===== 27.3 Copy [c] =====
 
