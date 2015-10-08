@@ -58,10 +58,10 @@ If you want to apply these metrics yourself to your own results, you can do it w
 We understand that segmentation evaluation is an ongoing and sensitive research topic, therefore we open the metrics to discussion. Please, do not hesitate to contact the [[Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012#Organizers|organizers]] to discuss about the metric selection.
 
 ==Organizers==
-* [[User:Iarganda | Ignacio Arganda-Carreras]] (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
+* {{Person|Iarganda}} (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
 * [http://hebb.mit.edu/people/seung/ Sebastian Seung] (Howard Hughes Medical Institute, Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA)
 * [http://albert.rierol.net/ Albert Cardona] (Institute of Neuroinformatics, Uni/ETH Zurich, Switzerland)
-* [[User:Schindelin | Johannes Schindelin]] (University of Wisconsin-Madison, WI, USA)
+* {{Person|Schindelin}} (University of Wisconsin-Madison, WI, USA)
 
 ==References==
 Publications about the data:
