@@ -70,12 +70,12 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 | style="white-space: nowrap" | [[2011-12-14 - Fiji Hackathon in Dresden|2011 Dec 9 -<br>2011 Dec 19]]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|{{Person|jburel}}, {{Person|Stephane-D}}, {{Person|Bdezonia}}, {{Person|Dietz}}, {{Person|Michaeldoube}}, {{Person|Fab14}}, {{Person|frederikfly}}, {{Person|hornm}}, {{Person|White}}, {{Person|tomka}}, {{Person|alex-krull}}, {{Person|Linkert}}, {{Person|Hinerm}}, {{Person|Moore}}, {{Person|Pietzsch}}, {{Person|StephanP}}, {{Person|Rueden}}, {{Person|Schindelin}}, {{Person|bene51}}, {{Person|Tomancak}}, {{Person|Peter-Gabriel-Pitrone}}, Fernando Carrilo, Kevin Eliceiri, Jiri Matas, Jurgen Mayer
+|{{Person|jburel}}, {{Person|Stephane-D}}, {{Person|Bdezonia}}, {{Person|Dietzc}}, {{Person|Michaeldoube}}, {{Person|Fab14}}, {{Person|frederikfly}}, {{Person|hornm}}, {{Person|White}}, {{Person|tomka}}, {{Person|alex-krull}}, {{Person|Linkert}}, {{Person|Hinerm}}, {{Person|Moore}}, {{Person|Pietzsch}}, {{Person|StephanP}}, {{Person|Rueden}}, {{Person|Schindelin}}, {{Person|bene51}}, {{Person|Tomancak}}, {{Person|Peter-Gabriel-Pitrone}}, Fernando Carrilo, Kevin Eliceiri, Jiri Matas, Jurgen Mayer
 |Interoperability
 |- valign="top"
 | style="white-space: nowrap" | 2012 Oct
 |[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
-|{{Person|hornm}}, {{Person|Dietz}}, {{Person|Pietzsch}}, {{Person|Schindelin}}
+|{{Person|hornm}}, {{Person|Dietzc}}, {{Person|Pietzsch}}, {{Person|Schindelin}}
 |[[KNIME]]+[[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | 2013 Jan 22 -<br>2013 Jan 25
@@ -100,12 +100,12 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 | style="white-space: nowrap" | 2013 Nov 14 -<br>2013 Nov 27
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{Person|Dietz}}, {{Person|Schindelin}}, {{Person|Rueden}}
+|{{Person|Dietzc}}, {{Person|Schindelin}}, {{Person|Rueden}}
 |[[KNIME]]+[[ImageJ]]
 |- valign="top"
 | style="white-space: nowrap" | 2014 Mar 4 -<br>2014 Mar 13
 |[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
-|{{Person|Rueden}}, {{Person|Schindelin}}, {{Person|Dietz}}, {{Person|hornm}}
+|{{Person|Rueden}}, {{Person|Schindelin}}, {{Person|Dietzc}}, {{Person|hornm}}
 |[[ImageJ Ops]]
 |- valign="top" |
 | style="white-space: nowrap" | 2014 Mar 11 -<br>2014 Mar 13
@@ -125,7 +125,7 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 | style="white-space: nowrap" | [[2014-10-01 - ImageJ Ops Hackathon|2014 Sep 14 -<br>2014 Sep 18]]
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{Person|Dietz}}, {{Person|bnorthan}}, {{Person|hinerm}}, {{Person|Rueden}}, {{Person|apal4}}, {{Person|yuminguw}}, {{Person|Awalter2}}, Ginger Pocock
+|{{Person|Dietzc}}, {{Person|bnorthan}}, {{Person|hinerm}}, {{Person|Rueden}}, {{Person|apal4}}, {{Person|yuminguw}}, {{Person|Awalter2}}, Ginger Pocock
 |[[ImageJ Ops]] + [[KNIME]]
 |- valign="top"
 |2014 Oct 13 -<br>2014 Oct 17
@@ -135,7 +135,7 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 |2015 Jan 19 -<br>2015 Jan 27
 |[http://www.freiraeume-kn.de/standort.htm FREIRÄUME]<br>Konstanz, Germany
-|{{Person|Dietz}}, {{Person|Rueden}}, {{Person|hinerm}}, {{Person|LeeKamentsky}}, {{Person|Pietzsch}}, {{Person|Jug}}, {{Person|Schindelin}}, {{Person|Iarganda}}, {{Person|gab1one}}, {{Person|DanielSeebacher}}, {{Person|kmader}}, {{Person|angrauma}}, {{Person|Squareys}}, {{Person|tibuch}}, Patrick Winter, Andreas Burger, Tobias Kötter
+|{{Person|Dietzc}}, {{Person|Rueden}}, {{Person|hinerm}}, {{Person|LeeKamentsky}}, {{Person|Pietzsch}}, {{Person|Jug}}, {{Person|Schindelin}}, {{Person|Iarganda}}, {{Person|gab1one}}, {{Person|DanielSeebacher}}, {{Person|kmader}}, {{Person|angrauma}}, {{Person|Squareys}}, {{Person|tibuch}}, Patrick Winter, Andreas Burger, Tobias Kötter
 |[[ImageJ Ops]] + [[KNIME]] + [[CellProfiler]] + more
 |- valign="top"
 | style="white-space: nowrap" | 2015 Apr 12 -<br>2015 Apr 17
@@ -145,7 +145,7 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 | style="white-space: nowrap" | 2015 June 29 -<br>2015 July 3
 |[https://www.mdc-berlin.de/13800178/en/bimsb BIMSB/MDC]<br>Berlin, Germany
-|{{Person|StephanP}}, {{Person|Dietz}}, {{Person|emmenlau}}, {{Person|StephanJanosch}}
+|{{Person|StephanP}}, {{Person|Dietzc}}, {{Person|emmenlau}}, {{Person|StephanJanosch}}
 |Parallelization of [[Multiview-Reconstruction]] and integration with ImageJ Ops & KNIME
 |- valign="top"
 | style="white-space: nowrap" | [[2015-07-27-Janelia_Hackathon|2015 Jul 27 -<br>2015 Jul 31]]
@@ -155,7 +155,7 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 | style="white-space: nowrap" | [[Conference 2015 Hackathon|2015 Sep 05 -<br>2015 Sep 15]]
 |[http://discovery.wisc.edu/ WID] + [[LOCI]]<br>Madison, WI, USA
-|{{Person|Rueden}}, {{Person|hinerm}}, {{Person|Dietz}}, {{Person|Pietzsch}}, {{Person|Saalfeld}}, {{Person|bnorthan}}, {{Person|Jug}}, {{Person|Tiago}}, {{Person|thewtex}}, {{Person|jaywarrick}}, {{Person|biovoxxel}}, {{Person|etarena}}, {{Person|Awalter2}}, {{Person|yuminguw}}, {{Person|guneetsinghmehta}}, Amitabh Verma
+|{{Person|Rueden}}, {{Person|hinerm}}, {{Person|Dietzc}}, {{Person|Pietzsch}}, {{Person|Saalfeld}}, {{Person|bnorthan}}, {{Person|Jug}}, {{Person|Tiago}}, {{Person|thewtex}}, {{Person|jaywarrick}}, {{Person|biovoxxel}}, {{Person|etarena}}, {{Person|Awalter2}}, {{Person|yuminguw}}, {{Person|guneetsinghmehta}}, Amitabh Verma
 |[[ImageJ2]] Learnathon + [[ImageJ OPS]]
 |-
 |colspan="4" style="border-bottom: 1px solid gray"|
