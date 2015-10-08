@@ -1,4 +1,4 @@
-Thanks to Alexander Wende and Tim Cross, the Fiji Wiki has a new look and feel (named [[wikipedia:Viti Levu|"Viti Levu"]]). [http://bioweb.cnb.csic.es/~iarganda/index_EN.html Ignacio Arganda-Carreras] also had a big hand in debugging and enhancing it.
+Thanks to Alexander Wende and Tim Cross, the Fiji Wiki has a new look and feel (named [[wikipedia:Viti Levu|"Viti Levu"]]). {{Person|Iarganda}} also had a big hand in debugging and enhancing it.
 
 In the same run, it must be mentioned that [http://www.neurofly.de/ Benjamin Schmid] put in a <u>lot</u> of work to make the nice new snapshots happen, by accomodating the new {{GitHub|repo=fiji|path=bin/prepare-wiki-screenshot.py|label=generator script}} with the 3D viewer's API.
 
