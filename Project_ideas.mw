@@ -329,7 +329,7 @@ One way to achieve that would be by using the [http://fmj-sf.net/ Free Java Medi
 
 I have collected near 15 new histogram segmentation methods that would be better put under a single interface together with others already available.
 
-Note: this is more or less implemented in the Auto_Threshold and Auto_Local_Threshold plugins.--[[User:Landini|Gabriel]] 14:47, 29 November 2009 (CET)
+Note: this is more or less implemented in the Auto_Threshold and Auto_Local_Threshold plugins.--{{Person|Landini}} 14:47, 29 November 2009 (CET)
 
 == Virtual microscope-like image viewer ==
                                                                                 
