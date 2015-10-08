@@ -8,7 +8,7 @@ The [[Imglib]] provides a cell container, where each cell is an arbitrary n-dime
 
 '''Goal:''' create a 3-way viewer for a 3d instance of an [[Imglib]]'s cell container.<br />
 '''Language:''' any supported by Fiji, preferably java.<br />
-'''Contact:''' [http://albert.rierol.net Albert Cardona]
+'''Contact:''' {{Person|Albertcardona}}
 
 == Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window ==
 
@@ -58,7 +58,7 @@ You are welcome to use any scientifically-relevant dataset of your choice, but w
 
 '''Goal:''' Implement a number of segmentation algorithms based on machine learning.<br />
 '''Language:''' Java.<br />
-'''Mentor:''' {{Person|Iarganda}}, [http://albert.rierol.net Albert Cardona]<br />
+'''Mentor:''' {{Person|Iarganda}}, {{Person|Albertcardona}}<br />
 
 
 == Implementing algorithms for Imglib ==
@@ -73,7 +73,7 @@ The new imglib supports dimension-, storage- and data type independent image pro
 
 '''Goal:''' Implement generic algorithms for image processing.<br />
 '''Language:''' Java.<br />
-'''Mentor:''' [http://fly.mpi-cbg.de/preibisch Stephan Preibisch], [http://fly.mpi-cbg.de/saalfeld Stephan Saalfeld]], [http://www.wv.inf.tu-dresden.de/People/Pietzsch.html Tobias Pietzsch], [http://albert.rierol.net Albert Cardona]<br />
+'''Mentor:''' [http://fly.mpi-cbg.de/preibisch Stephan Preibisch], [http://fly.mpi-cbg.de/saalfeld Stephan Saalfeld]], [http://www.wv.inf.tu-dresden.de/People/Pietzsch.html Tobias Pietzsch], {{Person|Albertcardona}}<br />
 
 == Colorizing algorithms ==
 
