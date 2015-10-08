@@ -3,7 +3,7 @@
 | software        = ImageJ/Fiji
 | name            = Strahler Analysis
 | maintainer     = [[BAR#Installation| BAR update site]]
-| author     =  [[User:Tiago|Tiago Ferreira]]
+| author     =  {{Person|Tiago}}
 | filename        = [https://raw.github.com/tferr/Scripts/master/Morphometry/Strahler_Analysis.bsh Strahler_Analysis.bsh]
 | source         = [https://github.com/tferr/Scripts/tree/master/Morphometry#strahler-analysis on GitHub]
 | released        = March 2013
@@ -103,7 +103,7 @@ Original publications by [[wikipedia:Robert E. Horton|Robert E. Horton]] and [[w
 * Michael Doube, Michal M. Klosowski, Ignacio Arganda-Carreras, Fabrice P. Cordelieres, Robert P. Dougherty, Jonathan S. Jackson, Benjamin Schmid, John R. Hutchinson, Sandra J. Shefelbine, [http://dx.doi.org/10.1016/j.bone.2010.08.023 BoneJ: Free and extensible bone image analysis in ImageJ], Bone, Volume 47, Issue 6, December 2010, Pages 1076-1079.
 
 == Acknowledgments ==
-To [http://doube.org/ Michael Doube] and [[User:Iarganda|Ignacio Arganda-Carreras]], developers of [[AnalyzeSkeleton]].
+To [http://doube.org/ Michael Doube] and {{Person|Iarganda}}, developers of [[AnalyzeSkeleton]].
 
 == License ==
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
