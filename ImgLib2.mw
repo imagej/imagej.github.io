@@ -2,7 +2,7 @@
 | name                   = ImgLib2
 | software               = Generic Image Processing for Java
 | logo                   = [[File:imglib2-logo.png]]
-| author                 = {{Person|Saalfeld}} ([mailto:saalfeld@mpi-cbg.de]), {{Person|Pietzsch}}, {{Person|StephanP}}, {{Person|Rueden}}, [http://www.broadinstitute.org/~leek/ Lee Kamentsky], [http://loci.wisc.edu/people/barry-dezonia Barry DeZonia], {{Person|Schindelin}}, {{Person|Dietz}}, [http://cms.uni-konstanz.de/informatik/berthold/mitglieder/martin-horn/ Martin Horn], [http://rierol.net/ Albert Cardona], Grant Harris, [http://synapses.clm.utexas.edu/lab/lindsey/lindsey.htm Larry Lindsey]
+| author                 = {{Person|Saalfeld}}, {{Person|Pietzsch}}, {{Person|StephanP}}, {{Person|Rueden}}, {{Person|Leek}}, {{Person|Bdezonia}}, {{Person|Schindelin}}, {{Person|Dietz}}, {{Person|hornm}}, {{Person|Albertcardona}}, {{Person|Harris}}, {{Person|Lindsey}}
 | maintainer             = {{Person|Pietzsch}}, {{Person|Rueden}}
 | source                 = {{GitHub | org = imglib | repo = imglib2}}
 | status                 = stable, active
