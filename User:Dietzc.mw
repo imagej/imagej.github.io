@@ -1,5 +1,8 @@
-[http://www.informatik.uni-konstanz.de/berthold/mitglieder/christian-dietz/ Personal Page University of Konstanz]
-
-[https://github.com/dietzc GitHub Profile]
-
-[http://knime.imagej.net KNIME Image Processing]
+{{Userbox
+| name = Christian Dietz
+| gravatar = 3eb1c779cb20412154b54bb8f7408436
+| affiliation = University of Konstanz
+| github = dietzc
+| osrc = dietzc
+| website = http://www.informatik.uni-konstanz.de/berthold/mitglieder/christian-dietz/
+}}Christian is the lead developer and maintainer of [http://knime.imagej.net KNIME Image Processing].
