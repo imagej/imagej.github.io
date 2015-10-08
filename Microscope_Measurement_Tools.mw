@@ -104,7 +104,7 @@ To draw a measurement annotation,
 : It is recommended that you work on a copy of your file.  Unfortunately there is currently no Undo feature.  I may try to figure out ho to use the "Overlay" feature to make something like that possible.
 
 == Author(s) ==
-This simple python (jython) plugin was created by [mailto:demis.john@gmail.com Demis D. John], 2015.
+This simple python (jython) plugin was created by {{Person|Demis}}, 2015.
 
 I used the following plugins as inspiration: [[Correct_3D_drift]] and [http://rsb.info.nih.gov/ij/plugins/microscope-scale.html Microscope Scale] (which sadly is no longer easily customizable).
 
