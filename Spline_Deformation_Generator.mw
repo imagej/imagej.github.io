@@ -1,7 +1,7 @@
 {{Infobox
 | software               = Fiji
 | name                   = SplineDeformationGenerator
-| author                 = [[User:Iarganda | Ignacio Arganda-Carreras]] and [http://biocomp.cnb.csic.es/~coss/ Carlos Óscar Sánchez Sorzano]
+| author                 = {{Person|Iarganda}} and [http://biocomp.cnb.csic.es/~coss/ Carlos Óscar Sánchez Sorzano]
 | maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
 | filename               = {{Maven | g=sc.fiji | a=SplineDeformationGenerator_}}
 | source                 = {{GitHub|org=fiji|repo=SplineDeformationGenerator|source=SplineDeformationGenerator/SplineDeformationGenerator_.java}}
