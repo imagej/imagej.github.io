@@ -1,7 +1,24 @@
-[[Image:{{{image}}}|alt={{{title}}}|{{#if:{{{link|}}}|link={{{link}}}|}}|{{{title}}}]]
+<includeonly>[[Image:{{{image}}}|alt={{{title}}}|{{#if:{{{link|}}}|link={{{link}}}|}}|{{{title}}}]]
 
 = '''{{{section|{{{title}}}}}}''' =
 * '''Location:''' {{{location}}}
 * '''Dates:''' {{{dates}}}
 {{#if:{{{link|}}}|See the [{{{link}}} {{{title}}} web site] for details!|}}
-[[Category:Conference]]
+[[Category:Conference]]</includeonly>
+<noinclude>
+== Usage ==
+<pre>
+{{Conference
+| title = Pi Day 3141
+| location = SPACE
+| dates = 14 March 3141
+| link = http://www.piday.org/
+}}
+</pre>
+{{Conference
+| title = Pi Day 3141
+| location = SPACE
+| dates = 14 March 3141
+| link = http://www.piday.org/
+}}
+</noinclude>
