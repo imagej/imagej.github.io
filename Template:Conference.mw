@@ -5,8 +5,7 @@
 * '''Dates:''' {{{dates}}}
 {{#if:{{{link|}}}|See the [{{{link}}} {{{title}}} web site] for details!|}}
 [[Category:Conference]]</includeonly>
-<noinclude>
-== Usage ==
+<noinclude>== Usage ==
 <pre>
 {{Conference
 | title=OME 2015 Users Meeting
