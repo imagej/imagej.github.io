@@ -1,4 +1,4 @@
-<includeonly>[[Image:{{{image}}}|alt={{{title}}}|{{#if:{{{link|}}}|link={{{link}}}|}}|{{{title}}}]]
+<includeonly>[[File:{{{image}}}|alt={{{title}}}|{{#if:{{{link|}}}|link={{{link}}}|}}|{{{title}}}]]
 
 = '''{{{section|{{{title}}}}}}''' =
 * '''Location:''' {{{location}}}
@@ -9,16 +9,20 @@
 == Usage ==
 <pre>
 {{Conference
-| title = Pi Day 3141
-| location = SPACE
-| dates = 14 March 3141
-| link = http://www.piday.org/
+| title=OME 2015 Users Meeting
+| section=10th Annual OME Users Meeting
+| dates=2 - 3 June 2015
+| image=Ome-logo.png
+| location = Institut Pasteur, Paris, France
+| link=http://www.openmicroscopy.org/site/community/minutes/meetings/10th-annual-users-meeting-june-2015
 }}
 </pre>
 {{Conference
-| title = Pi Day 3141
-| location = SPACE
-| dates = 14 March 3141
-| link = http://www.piday.org/
+| title=OME 2015 Users Meeting
+| section=10th Annual OME Users Meeting
+| dates=2 - 3 June 2015
+| image=Ome-logo.png
+| location = Institut Pasteur, Paris, France
+| link=http://www.openmicroscopy.org/site/community/minutes/meetings/10th-annual-users-meeting-june-2015
 }}
 </noinclude>
