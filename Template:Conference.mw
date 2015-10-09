@@ -1,7 +1,7 @@
-[[Image:{{{image}}}|alt=ImageJ {{{year}}} User & Developer Conference|{{#if:{{{link|}}}|link={{{link}}}|}}|ImageJ {{{year}}} User & Developer Conference]]
+[[Image:{{{image}}}|alt={{{title}}}|{{#if:{{{link|}}}|link={{{link}}}|}}|{{{title}}}]]
 
-= '''{{{no}}} ImageJ User & Developer Conference''' =
+= '''{{{section|{{{title}}}}}}''' =
 * '''Location:''' {{{location}}}
 * '''Dates:''' {{{dates}}}
-{{#if:{{{link|}}}|See the [{{{link}}} {{{year}}} conference web site] for details!|}}
+{{#if:{{{link|}}}|See the [{{{link}}} {{{title}}} web site] for details!|}}
 [[Category:Conference]]
