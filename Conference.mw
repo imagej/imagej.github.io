@@ -2,7 +2,7 @@
 
 There is a regular ImageJ User and Developer Conference.
 
-{| class="wikitable"
+{| class="wikitable nicetable"
 !colspan="4" style="border-bottom: 1px solid gray"|[[File:Imagej-conference-logo.png]]
 |-
 |style="vertical-align: bottom;"|'''#'''
@@ -35,4 +35,19 @@ There is a regular ImageJ User and Developer Conference.
 |3 - 4 September 2015
 |[http://discovery.wisc.edu/ Wisconsin Institutes for Discovery], Madison, WI, USA
 |}
+
+== Related conferences ==
+
+Some other conferences have been strongly related to ImageJ:
+
+{| class="wikitable nicetable"
+|style="vertical-align: bottom;"|'''Conference'''
+|style="vertical-align: bottom;"|'''Dates'''
+|style="vertical-align: bottom;"|'''Location'''
+|-
+|[[ISBI 2012|Bioimage analysis workshop - ISBI 2012]]
+|30 April - 1 May 2012
+|Barcelona, Spain
+|}
+
 [[Category:Conference]]
