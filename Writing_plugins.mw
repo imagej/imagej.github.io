@@ -18,11 +18,11 @@ For the complete "developer experience", you can go through the [https://help.gi
 
 == What is a "plugin"? ==
 
-Conceptually, a '''plugin''' is a new piece of functionality added to ImageJ. Nearly all aspects of ImageJ are ''pluggable'', meaning plugins can be provided later to perform the specified function. The ImageJ core then needs only know what general operations are available; then when the program is running, the options for how to complete a requested operation will be determined by which plugins are available at that time.
+Conceptually, a '''plugin''' is a new piece of functionality added to ImageJ. Nearly all aspects of ImageJ are ''pluggable'', meaning plugins can be provided ''ad hoc'' to perform specified functions. The ImageJ core needs only know what general operations are available; then when the program is running, the options for how to complete a requested operation will be determined by which plugins are available at that time.
 
 Technically, ImageJ is built on the [[SciJava Common]] plugin framework. Within this framework, a plugin is a Java class [https://docs.oracle.com/javase/tutorial/java/annotations/index.html annotated] with the {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/plugin/Plugin.java|label=@Plugin}} annotation. Classes annotated in this way are then automatically discovered and indexed at [[wikipedia:Run_time_(program_lifecycle_phase)|''runtime'']], when the application is launched by a user (as opposed to [[wikipedia:Compile_time|''compile-time'']]).
 
-Practically, when writing new plugins, the '''type''' of the plugin is determined by referencing a [https://docs.oracle.com/javase/tutorial/java/concepts/interface.html Java interface]. Any number of implementations of this interface can be annotated for discovery, with a [https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/plugin/Plugin.java#L108-L129 prioritization mechanism] allowing sorting.
+Practically, when writing new plugins, the '''type''' of the plugin is determined by referencing a [https://docs.oracle.com/javase/tutorial/java/concepts/interface.html Java interface]. Any number of implementations of this interface can be annotated for discovery, with a [https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/plugin/Plugin.java#L108-L129 prioritization mechanism] to allow sorting.
 
 == What makes up the SciJava plugin framework? ==
 
