@@ -32,25 +32,51 @@ References to all the <code>@Plugin</code>-annotated classes that are discovered
 
 In ImageJ, a <code>Context</code> is automatically created when {{GitHub|org=imagej|repo=imagej|tag=imagej-2.0.0-rc-39|source=net/imagej/ImageJ.java|label=the application starts up}}, so plugin developers do not need to create their own. In fact, creating your own <code>Context</code> typically causes problems, as it will be a different container than ImageJ is using. Instead, plugin instances within a common <code>Context</code> are provided automatically by the framework—you just have to ask.
 
-Typically, ImageJ plugin developers will be writing [[#Services|Service]] and/or [[#Commands|Command]] plugins. When you need to use other plugins, you can obtain an instance from your <code>Context</code> by adding a field of the desired type and annotating it with the {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/plugin/Parameter.java|label=@Parameter annotation}}. You can even get a reference to the top-level <code>Context</code> itself this way, for example:
+Typically, ImageJ plugin developers will be writing [[#Services|Service]] and/or [[#Commands|Command]] plugins. If you need to use another plugin - for example the {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/log/LogService.java|label=LogService}} - you '''should not''' manually create it as this effectively disconnects you from your <code>Context</code>. Instead, you should ask your <code>Context</code> for an instance by adding a field of the desired type and annotating it with the {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/plugin/Parameter.java|label=@Parameter annotation}}. For example:
 
 <source lang=java>
 @Plugin
 public class MyPlugin {
 
   @Parameter
-  private Context context;
+  private LogService logService;
+
+  public void log(String message) {
+    // Use the LogService!
+    // No need to construct it, since the Context
+    // will provide an appropriate instance.
+    logService.info(message);
+  }
 
 }
 </source>
 
-Note that if the <code>MyPlugin</code> class above is manually constructed—i.e. via <code>new MyPlugin()</code>—the <code>Context</code> parameter '''will not''' be populated. Automatic population only occurs if the plugin instance itself is retrieved via the framework. In cases where you must manually construct a plugin instance, you can trigger population of <code>@Parameters</code> using an existing <code>Context</code> via the ''injection'' mechanism:
+This will allow the <code>Context</code> to provide you with the appropriate instance of your requested service.
+
+In some cases, manual plugin construction is unavoidable. Understand that if the <code>MyPlugin</code> class above is manually constructed—i.e. via <code>new MyPlugin()</code>—the <code>LogService</code> parameter will be <code>null</code>. Automatic population only occurs if the plugin instance itself is retrieved via the framework. When you must manually construct a plugin instance, you can still re-connect it to an existing <code>Context</code> via the its ''injection'' mechanism:
 
 <source lang=java>
-MyPlugin plugin = new MyPlugin();
+public class MyService {
 
-// Note: context is a Context instance obtained elsewhere.
-context.inject(plugin)
+  // This service will manually create plugin instances
+  // So, we need a reference to our containing Context
+  // Then we can use it to inject our plugins.
+  @Parameter
+  private Context context;
+
+  public void doStuff() {
+    // Manually create a plugin instance
+    // It is not connected to a Context yet
+    MyPlugin plugin = new MyPlugin();
+
+    // Inject the plugin instance with our Context
+    context.inject(plugin);
+
+    // Now that our plugin is injected, we can use
+    // it with the knowledge that its parameters
+    // have been populated
+    plugin.log("Success!");
+  }
 </source>
 === Services ===
 
