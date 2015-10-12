@@ -141,7 +141,7 @@ The [https://github.com/imagej/imagej-tutorials/blob/master/intro-to-imagej-api/
 
 === Basic plugins ===
 
-These projects provide minimal examples with thorough inline documentation.
+These projects provide minimal examples with thorough online documentation.
 
 * Look at some [https://github.com/imagej/imagej-tutorials/tree/master/simple-commands/src/main/java simple commands] and see how they interact with users
 * [https://github.com/imagej/imagej-tutorials/tree/master/working-with-modules/src/main/java Getting started with modules]—the foundation of many user-facing plugin types, including [[#Commands|commands]]
