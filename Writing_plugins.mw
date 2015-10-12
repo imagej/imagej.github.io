@@ -54,7 +54,7 @@ context.inject(plugin)
 </source>
 === Services ===
 
-If you want to add reusable Java methods to be used throughout the SciJava framework, then you should create a <code>Service</code> to provide this functionality.
+Services provide two important functions to the SciJava framework: utility methods and persistent state. If you want to add reusable Java methods that can be used throughout the SciJava framework, then you should create a <code>Service</code> to provide this functionality. If you need to track Context-wide variables or configuration, a <code>Service</code> should be used to encapsulate that state.
 
 Conceptually, a <code>Service</code> satisfies the role of [[wikipedia:Utility class|static utility classes]] on a per-Context basis. In this way, only one [http://math.hws.edu/javanotes/c5/s1.html instance] of each <code>Service</code> class can be associated with a given <code>Context</code> instance; an association that occurs automatically during <code>Context</code> creation. Furthermore, when a <code>Context</code> is asked for an implementation of a given <code>Service</code>, only the highest priority instance will be returned.
 
