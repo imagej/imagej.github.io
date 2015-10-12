@@ -3,7 +3,7 @@ We make a serious effort to keep the ImageJ codebase clean, consistent and easy 
  
 == Interface-driven design ==
  
-ImageJ use an interface-driven design where possible. Public interfaces, enumerations and constants (i.e., <code>public static final</code> fields) form the basis of ImageJ's API contract with downstream code. While we make an effort not to change the public methods and fields of non-interfaces, they may require occasional changes to improve the system.
+ImageJ uses an interface-driven design where possible. Public interfaces, enumerations and constants (i.e., <code>public static final</code> fields) form the basis of ImageJ's API contract with downstream code. While we make an effort not to change the public methods and fields of non-interfaces, they may require occasional changes to improve the system.
 
 == Versioning ==
  
