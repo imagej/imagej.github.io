@@ -88,7 +88,7 @@ Services often build on or reuse functionality defined in each other. For exampl
 
 === Commands ===
 
-Whereas [[#Services|Services]] provide internal functionality, <code>Commands</code> are plugins designed to be executed as one-offs, typically interacting with users to achieve some desired outcome. When open the ImageJ GUI, Commands are what are populating your menu structure: exposing functionality and algorithms in a way that can be consumed by non-developers.
+Whereas [[#Services|Services]] provide internal functionality, <code>Commands</code> are plugins designed to be executed as one-offs, typically interacting with users to achieve some desired outcome. When opening the ImageJ GUI, Commands are what populate your menu structure: exposing functionality and algorithms in a way that can be consumed by non-developers.
 
 When writing <code>Commands</code> you will often declare {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/plugin/Parameter.java|label=@Parameters}} on fields that '''can not''' be resolved automatically by the <code>Context</code>—for example, numeric values or file paths. This is because <code>Commands</code> are created and executed on demand, instead of being instantiated at <code>Context</code> startup as a <code>Service</code> would be.
 
