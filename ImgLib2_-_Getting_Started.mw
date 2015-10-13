@@ -76,14 +76,14 @@ ImgLib2 provides more sophisticated ways of getting image data to your screen, b
 As a rule of thumb, if you have something remotely resembling a pixel grid, usually you can '''ImageJFunctions.show()''' it.
 
 == Opening And Displaying Image Files ==
-You can open image files with [http://jenkins.imagej.net/view/ImgLib2/job/ImgLib2-javadoc/javadoc/index.html?net/imglib2/io/ImgOpener.html ImgOpener] which is using [http://loci.wisc.edu/software/bio-formats LOCI Bio-Formats].
+You can open image files with [http://jenkins.imagej.net/view/SCIFIO/job/SCIFIO-javadoc/javadoc/index.html?io/scif/img/ImgOpener.html ImgOpener] which is using [http://loci.wisc.edu/software/bio-formats LOCI Bio-Formats].
 The following opens and displays an image file.
 <source lang="java">
 import net.imglib2.img.Img;
 import net.imglib2.img.array.ArrayImgFactory;
 import net.imglib2.img.display.imagej.ImageJFunctions;
-import net.imglib2.io.ImgIOException;
-import net.imglib2.io.ImgOpener;
+import io.scif.img.ImgIOException;
+import io.scif.img.ImgOpener;
 import net.imglib2.type.numeric.integer.UnsignedByteType;
 
 public class OpenAndDisplay
@@ -104,7 +104,7 @@ public class OpenAndDisplay
 }
 </source>
 The image is loaded in lines ''014-015''. Lets look the steps in more detail.
-We create an [http://jenkins.imagej.net/view/ImgLib2/job/ImgLib2-javadoc/javadoc/index.html?net/imglib2/io/ImgOpener.html ImgOpener]
+We create an [http://jenkins.imagej.net/view/SCIFIO/job/SCIFIO-javadoc/javadoc/index.html?io/scif/img/ImgOpener.html ImgOpener]
 <source lang="java">
 final ImgOpener opener = new ImgOpener();
 </source>
@@ -121,7 +121,7 @@ Then we can use the '''openImg()''' method, giving a filename, '''ImgFactory''',
 <source lang="java">
 final Img< UnsignedByteType > img = opener.openImg( "graffiti.tif", factory, type );
 </source>
-If there is a problem reading the image, '''openImg()''' throws an [http://jenkins.imagej.net/view/ImgLib2/job/ImgLib2-javadoc/javadoc/index.html?net/imglib2/io/ImgIOException.html ImgIOException].
+If there is a problem reading the image, '''openImg()''' throws an [http://jenkins.imagej.net/view/SCIFIO/job/SCIFIO-javadoc/javadoc/index.html?io/scif/img/ImgIOException.html ImgIOException].
 If all goes well, we store the result in an [http://jenkins.imagej.net/view/ImgLib2/job/ImgLib2-javadoc/javadoc/index.html?net/imglib2/img/Img.html Img] variable for convenience.
 (Actually the result is an [http://jenkins.imagej.net/view/ImgLib2/job/ImgLib2-javadoc/javadoc/index.html?net/imglib2/img/ImgPlus.html ImgPlus] wrapping an '''ArrayImg'''.)
 
