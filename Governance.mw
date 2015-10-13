@@ -92,10 +92,10 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 |-
 | [[File:imagej1-icon.png|48px]]
 | '''[[ImageJ1]]'''
-| Wayne Rasband
-| Wayne Rasband
-| Wayne Rasband<br>{{Person|Rueden}}
-| Wayne Rasband
+| {{Person|Rasband}}
+| {{Person|Rasband}}
+| {{Person|Rasband}}<br>{{Person|Rueden}}
+| {{Person|Rasband}}
 | See [http://imagej.net/notes.html release notes]
 |-
 | [[File:imagej2-icon.png|48px]]
