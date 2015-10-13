@@ -15,7 +15,7 @@ __NOTOC__
 * [http://www.lifesci.dundee.ac.uk/people/jason-swedlow Jason Swedlow]<sup>10,11</sup> (OME)
 
 === [[ImageJ1]] ===
-* Wayne Rasband<sup>1</sup> (lead)
+* {{Person|Rasband}}<sup>1</sup> (lead)
 
 === [[ImageJ2]] ===
 * {{Person|Rueden}}<sup>2</sup> (lead)
@@ -94,7 +94,7 @@ __NOTOC__
 The specific plugin maintainers can be found at the [[Maintainer_page| maintainer page]], although the list is out of date right now.
 
 === Special thanks ===
-Our deep thanks to Wayne Rasband, author of [[ImageJ1]], for all his support and patience!
+Our deep thanks to {{Person|Rasband}}, author of [[ImageJ1]], for all his support and patience!
 </div>
 
 <div style="float: left; width: 59%">
