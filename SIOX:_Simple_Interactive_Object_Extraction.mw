@@ -139,7 +139,7 @@ Still Image Approach:
 * G. Friedland, K. Jantz, T. Lenz, F. Wiesel, R. Rojas: A Practical Approach to Boundary-Accurate Multi-Object Extraction from Still Images and Videos, to appear in Proceedings of the IEEE International Symposium on Multimedia (ISM2006), San Diego (California), December, 2006.
 
 ==ImageJ version==
-Thanks to Wayne Rasband, there is an [http://imagej.net/plugins/siox/index.html ImageJ] version of this plugin without Fiji dependencies:
+Thanks to {{Person|Rasband}}, there is an [http://imagej.net/plugins/siox/index.html ImageJ] version of this plugin without Fiji dependencies:
 
 [http://imagej.net/plugins/siox/index.html http://imagej.net/plugins/siox/index.html]
 
