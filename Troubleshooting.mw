@@ -194,6 +194,12 @@ See [[wikipedia:Java version history|Java version history]] for more information
 
 To control the version of Java that ImageJ uses, see [[Frequently Asked Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F|How do I launch ImageJ with a different version of Java]].
 
+== NoSuchMethodError or NoClassDefFoundError ==
+
+These errors indicate a "version skew" between the software libraries in your ImageJ installation. Most commonly, this situation occurs when multiple [update sites] are enabled which ship incompatible versions of those libraries.
+
+The proper fix is for the maintainers of those update sites to reconcile the versions somehow, but as a user you can work around the issue in the meantime by disabling the problematic update site(s). Start from a fresh download of ImageJ, enabling the update sites you want one by one, testing your workflow each time. Once you determine which update site(s) causes the issue, you can create a separate copy of ImageJ with only the problematic site(s) enabled. Although you will no longer have a single ImageJ with all desired functionality enabled, keeping isolated installations will let you continue using all the plugins you need by launching each appropriate copy of ImageJ.
+
 = OS X issues =
 
 == Why does ImageJ crash frequently? ==
