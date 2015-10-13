@@ -160,7 +160,7 @@ Once we're done editing this file with our desired commands for each commit, we 
 
 <source lang=bash>
 git commit --amend
-</code>
+</source>
 
 After any necessary changes have been committed, rebasing can continue by calling the command:
 
