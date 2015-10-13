@@ -4,7 +4,7 @@
 
 The first thing you need to start scripting the Trainable Segmentation is to know which methods you can use. For that, please have a look at the '''API of the Trainable Segmentation''' library, which is available [http://fiji.sc/javadoc/trainableSegmentation/package-tree.html here].
 
-Let's go through the basic commands with examples written in Beanshell:
+Let's go through the basic commands with examples written in '''Beanshell''':
 
 === Initialization ===
 In order to include all the library methods, the easiest (but not elegant) way of doing it is importing the whole library:
