@@ -1,7 +1,7 @@
 {{Infobox
 | software               = ImageJ
 | name                   = Grid
-| author                 = Wayne Rasband
+| author                 = {{Person|Rasband}}
 | filename               = [http://imagej.net/plugins/download/Grid_.class Grid_.class] (5,575 Bytes)
 | source                 = [http://imagej.net/plugins/download/Grid_.java Grid_.java] (5,123 Bytes)
 | released               = 25 April 2001
