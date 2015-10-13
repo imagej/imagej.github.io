@@ -1,7 +1,7 @@
 {{Infobox
 | software               = ImageJ
 | name                   = Time Stamper
-| author                 = Wayne Rasband
+| author                 = {{Person|Rasband}}
 | maintainer         = Tom Kazimiers
 | filename               = [http://imagej.net/plugins/download/Time_Stamper.class Time_Stamper.class] (3,779 Bytes)
 | source                 = [http://imagej.net/plugins/download/Time_Stamper.java Time_Stamper.java] (2,537 Bytes)
