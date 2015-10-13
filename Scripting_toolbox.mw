@@ -70,6 +70,7 @@ imp.show();
 </source>
 
 == Opening an image using Bio-Formats ==
+
 ==== Macro ====
 
 <source lang="java">
@@ -108,7 +109,9 @@ var imps = BF.openImagePlus(options);
 imps[0].show();
 </source>
 
-* Python
+==== Python ====
+See also [https://gist.github.com/ctrueden/6282856 this python example script]
+
 
 * Ruby
 
