@@ -3,7 +3,21 @@
 * For information on who ''maintains'' these projects, see [[Governance]].
 * For information on how ImageJ projects are ''funded'', see [[Funding]].}}
 
-You can cite various ImageJ-related projects as follows:
+== Guidelines ==
+
+We ask users to cite:
+
+* The general [[ImageJ]] paper.
+* The general [[Fiji]] paper, if you used [[Fiji]].
+* Any [[:Category:Citable|plugin-specific publications]] of [[plugins]] used.
+
+If journal reference limits interfere, the plugin-specific publications should take precedence.
+
+In general, please cite these projects—their long-term future depends on it!
+
+Thank you for your support.
+
+== Publications to cite ==
 
 {| class="wikitable"
 | '''Project'''
