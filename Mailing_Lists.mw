@@ -7,58 +7,42 @@ If you have a natural allergy toward subscribing to mailing lists, there are [[H
 
 == Bugs ==
 
-If you have found a bug, and you are using the [[Fiji]] distribution of ImageJ, please [[Bug reporting best practices|submit a bug report]] via the Help menu's [[Report a Bug]] plugin. [http://search.imagej.net/ Search for an existing bug] before reporting a new one.
+If you have found a bug, and you are using the [[Fiji]] distribution of ImageJ, please [[Bug reporting best practices|submit a bug report]] via the Help menu's [[Report a Bug]] plugin.
+
+[http://search.imagej.net/ Search for an existing bug] before reporting a new one.
 
 == ImageJ ==
 
 {| class="wikitable" style="width: 100%"
 |-
-! List
+! style="width: 120px" | List
 ! Description
-! Archives
 ! Nabble
+! style="width: 100px" | Archives
 |-
-| style="width: 120px" valign="top" |
+| valign="top" |
 [http://imagej.net/list.html ImageJ]
 | For general user and developer discussion about [[ImageJ]].
 
 <span style="font-size: smaller">With ~2000 members, this list is the '''best mailing list to use for help''' with your specific use case.</span>
-| [http://list.nih.gov/archives/imagej.html Archives]
 | [http://imagej.1557.x6.nabble.com/ Nabble]
-|-
-| valign="top" |
-[http://imagej.net/mailman/listinfo/imagej-bugs ImageJ-bugs]
-| For [http://fiji.sc/bugzilla BugZilla] issue updates.
-
-<span style="font-size: smaller">This list is the default assignee for all BugZilla bugs. It is mainly intended for people directly involved in development, though anyone is welcome to subscribe if desired.</span>
-| [http://imagej.net/pipermail/imagej-bugs/ Archives]
-| -
-|-
-| valign="top" |
-[http://imagej.net/mailman/listinfo/imagej-builds ImageJ-builds]
-| For [http://jenkins.imagej.net/ ImageJ Jenkins] build reports.
-
-<span style="font-size: smaller">This is an announcement list for the ImageJ Jenkins, which reports build failures for ImageJ, Fiji, ImgLib and related projects. It is mainly intended for people directly involved in development, though anyone is welcome to subscribe if desired.</span>
-| [http://imagej.net/pipermail/imagej-builds/ Archives]
-| -
+| [http://list.nih.gov/archives/imagej.html Archives]
 |}
 
 == SciJava (supporting libraries) ==
 
 {| class="wikitable" style="width: 100%"
 |-
-! List
+! style="width: 120px" | List
 ! Description
-! Archives
-! Nabble
+! style="width: 100px" | Archives
 |-
-| style="width: 120px" valign="top" |
+| valign="top" |
 [http://scif.io/mailman/listinfo/scifio SCIFIO]
 | For discussion relating to image file input and output.
 
 <span style="font-size: smaller">ImageJ2's image I/O is driven by the [[SCIFIO]] library ("SCientific Image Format Input & Output").</span>
 | [http://scif.io/pipermail/scifio/ Archives]
-| -
 |-
 | valign="top" |
 [http://groups.google.com/group/scijava SciJava]
@@ -67,71 +51,84 @@ For [[SciJava]] discussion.
 
 <span style="font-size: smaller">ImageJ and SCIFIO are both built on top of SciJava Common.</span>
 | [http://groups.google.com/group/scijava Archives]
-| -
 |}
 
 == ImageJ plugins ==
 
 {| class="wikitable" style="width: 100%"
 |-
-! List
+! style="width: 120px" | List
 ! Description
-! Archives
-! Nabble
+! style="width: 100px" | Archives
 |-
-| style="width: 120px" valign="top" |
+| valign="top" |
 [http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-users/ OME-users]
 |
 For [[Bio-Formats]] and [[OMERO]] issues and discussion.
 | [http://lists.openmicroscopy.org.uk/pipermail/ome-users/ Archives]
-| -
 |-
 | valign="top" |
 [http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-devel/ OME-devel]
 |
 For [[Bio-Formats]] and [[OMERO]] programming questions.
 | [http://lists.openmicroscopy.org.uk/pipermail/ome-devel/ Archives]
-| -
 |-
 | valign="top" |
 [http://imagej.net/mailman/listinfo/slim-curve SLIM-Curve]
 |
 For [[SLIM Curve]] issues and discussion.
 | [http://loci.wisc.edu/pipermail/slim-curve/ Archives]
-| -
 |-
 | valign="top" |
 [http://loci.wisc.edu/mailman/listinfo/loci-software LOCI Software]
 |
 For [http://loci.wisc.edu/software LOCI software], ''excluding'' collaborations such as ImageJ, SCIFIO and Bio-Formats.
 | [http://loci.wisc.edu/pipermail/loci-software/ Archives]
-| -
 |}
 
 == Related and similar projects ==
 
 {| class="wikitable" style="width: 100%"
 |-
-! List
+! style="width: 120px" | List
 ! Description
-! Archives
-! Nabble
+! style="width: 100px" | Archives
 |-
-| style="width: 120px" valign="top" |
+| valign="top" |
 [http://lists.sourceforge.net/lists/listinfo/micro-manager-general μManager]
 | [[Micro-Manager]]: open source software package for control of automated microscopes.
 | [http://sourceforge.net/p/micro-manager/mailman/micro-manager-general/ Archives]
-| -
 |-
 | valign="top" |
 [http://lists.sourceforge.net/lists/listinfo/bioimagexd-users BioImageXD]
 | [[BioImageXD]]: open source software package for analyzing, processing and visualizing multi-dimensional microscopy images.
 | [http://sourceforge.net/p/bioimagexd/mailman/bioimagexd-users/ Archives]
-| -
 |-
 | valign="top" |
 [http://groups.google.com/group/icy-software Icy]
 | [[Icy]]: an open community platform for bioimage informatics.
 | [http://groups.google.com/group/icy-software Archives]
-| -
+|}
+
+== ImageJ development ==
+
+{| class="wikitable" style="width: 100%"
+|-
+! style="width: 120px" | List
+! Description
+! style="width: 100px" | Archives
+|-
+| valign="top" |
+[http://imagej.net/mailman/listinfo/imagej-bugs ImageJ-bugs]
+| For [http://fiji.sc/bugzilla BugZilla] issue updates.
+
+<span style="font-size: smaller">This list is the default assignee for all BugZilla bugs. It is mainly intended for people directly involved in development, though anyone is welcome to subscribe if desired.</span>
+| [http://imagej.net/pipermail/imagej-bugs/ Archives]
+|-
+| valign="top" |
+[http://imagej.net/mailman/listinfo/imagej-builds ImageJ-builds]
+| For [http://jenkins.imagej.net/ ImageJ Jenkins] build reports.
+
+<span style="font-size: smaller">This is an announcement list for the ImageJ Jenkins, which reports build failures for ImageJ, Fiji, ImgLib and related projects. It is mainly intended for people directly involved in development, though anyone is welcome to subscribe if desired.</span>
+| [http://imagej.net/pipermail/imagej-builds/ Archives]
 |}
