@@ -102,7 +102,7 @@ Because virtually everything is a plugin in ImageJ, there are too many to explic
 
 A brief list of some of the more useful plugin types to extend:
 
-* {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/convert/Converters.java|label=Converters}} allow the framework to interchange types, outside of normal Java class hierarchy restrictions.
+* {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/convert/Converter.java|label=Converters}} allow the framework to interchange types, outside of normal Java class hierarchy restrictions.
 * {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/module/process/PreprocessorPlugin.java|label=Input Preprocessors}} give you control over the population of <code>@Parameters</code>.
 * {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/display/Display.java|label=Displays}} control how UI elements are presented to users.
 
