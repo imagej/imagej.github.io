@@ -143,7 +143,7 @@ For the <code>groupId</code>, it is typically best to use the reversed domain na
 
 '''WARNING:''' If you use <code>install:install-file</code>, others will not be able to build your code unless they also use <code>install:install-file</code> to install the library on their systems. 
 
-When in doubt, e-mail the [[Mailing Lists|ImageJ & Fiji lists]] with your questions.
+When in doubt, [[Help|contact the community]] with your questions.
 
 = Further reading =
 
