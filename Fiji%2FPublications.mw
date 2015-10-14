@@ -1,6 +1,12 @@
+{{Notice | This page lists publications relating to the [[Fiji]] project.
+* For general instructions on citing [[ImageJ]] and [[Fiji]], see [[Citing]].
+* For an index of citable software, see [[:Category:Citable]].}}
+
 == Publications introducing Fiji ==
 
-* The primary reference for citing Fiji is the paper presented in Nature Methods [http://www.nature.com/nmeth/focus/bioimageinformatics/index.html Focus on Bioimage Informatics] in July 2012<ref>{{cite journal |author=Johannes Schindelin, Ignacio Arganda-Carreras, Erwin Frise, Verena Kaynig, Mark Longair, Tobias Pietzsch, Stephan Preibisch, Curtis Rueden, Stephan Saalfeld, Benjamin Schmid, Jean-Yves Tinevez, Daniel James White, Volker Hartenstein, Kevin Eliceiri, Pavel Tomancak and Albert Cardona|title=Fiji: an open-source platform for biological-image analysis|journal=Nature Methods |year=2012 |volume= 9(7)|pages=676-682|url=http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html}}</ref> (see also [[how to cite Fiji?]]).
+* The primary reference for citing Fiji is the paper presented in Nature Methods [http://www.nature.com/nmeth/focus/bioimageinformatics/index.html Focus on Bioimage Informatics] in July 2012<ref>{{cite journal |author=Johannes Schindelin, Ignacio Arganda-Carreras, Erwin Frise, Verena Kaynig, Mark Longair, Tobias Pietzsch, Stephan Preibisch, Curtis Rueden, Stephan Saalfeld, Benjamin Schmid, Jean-Yves Tinevez, Daniel James White, Volker Hartenstein, Kevin Eliceiri, Pavel Tomancak and Albert Cardona|title=Fiji: an open-source platform for biological-image analysis|journal=Nature Methods |year=2012 |volume= 9(7)|pages=676-682|url=http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html}}</ref>.
+
+* A paper about the ImageJ software ecosystem—including [[ImageJ]] itself, [[ImageJ2]], [[Fiji]], related [[SciJava]] projects, and various [[plugins]]—was published in Molecular Reproduction and Development in July 2015<ref>{{cite journal |author=Johannes Schindelin, Curtis T. Rueden, Mark C. Hiner and Kevin W. Eliceiri|title=The ImageJ ecosystem: An open platform for biomedical image analysis|journal=Molecular Reproduction and Development|year=2015|volume=82(7-8)|pages=:518-29|url=http://onlinelibrary.wiley.com/doi/10.1002/mrd.22489/full}}</ref>.
 
 * Fiji was presented publicly for the first time on the [http://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2008 ImageJ User and Developer Conference] in November 2008<ref>{{cite conference |author=Schindelin J |title=Fiji Is Just ImageJ (batteries included) |year=2008 |month=November }}</ref>.
 
