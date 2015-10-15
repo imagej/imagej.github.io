@@ -77,7 +77,9 @@ public class MyService {
     // have been populated
     plugin.log("Success!");
   }
+}
 </source>
+
 === Services ===
 
 Services provide two important functions to the SciJava framework: utility methods and persistent state. If you want to add reusable Java methods that can be used throughout the SciJava framework, then you should create a <code>Service</code> to provide this functionality. If you need to track Context-wide variables or configuration, a <code>Service</code> should be used to encapsulate that state.
