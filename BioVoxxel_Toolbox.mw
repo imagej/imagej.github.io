@@ -133,6 +133,8 @@ How to: The user needs to specify one of two parameters:
 
 2.) Convexity threshold: if this value is above "0" the erosion cycle number is ignored. All objects which have a convexity bigger than the threshold are kept in the image and eroded. If eroded objects coincide with separation lines of the original watershed, those remain in the image and are not used to separate the objects. The sequence of convexity thresholding and consecutive erosion is repeated until there is no object remaining with a convexity above the threshold or the image cannot be eroded any further.
 
+3.) Separator size: the separator size describes the length of the one-pixel line separating connected particles. Thus, the user can specifically choose a size range in which the particle connections should be separated. Additionally, the option "exclude" enables to exclude the specified sizes and separate only connections which are smaller than the lower and bigger than the upper limit.
+
 Form: plugin, recordable
 
 Status: maintenance active
