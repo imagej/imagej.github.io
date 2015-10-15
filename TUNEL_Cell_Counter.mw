@@ -16,7 +16,7 @@
 __TOC__
 
 == Overview ==
-TUNEL Cell Counter is a custom-built and validated ImageJ macro that processes digital images from retinal TUNEL assay. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates TUNEL+ cells in these layers. A detailed validation of this macro has been submitted for publication and is currently under peer review.
+TUNEL Cell Counter is a custom-built and validated ImageJ macro that processes digital images from retinal TUNEL assay. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates TUNEL+ cells in these layers. The detailed validation process of this macro can be found in our ''Investigative Ophthalmology & Visual Science (IOVS)'' paper.
 
 == Before You Start ==
 Please read carefully before using this macro.
