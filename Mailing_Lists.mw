@@ -38,18 +38,9 @@ If you have found a bug, please [[Bug reporting best practices|submit a bug repo
 ! style="width: 100px" | Archives
 |-
 | valign="top" |
-[http://scif.io/mailman/listinfo/scifio SCIFIO]
-| For discussion relating to image file input and output.
-
-<span style="font-size: smaller">ImageJ2's image I/O is driven by the [[SCIFIO]] library ("SCientific Image Format Input & Output").</span>
-| [http://scif.io/pipermail/scifio/ Archives]
-|-
-| valign="top" |
 [http://groups.google.com/group/scijava SciJava]
 |
 For [[SciJava]] discussion.
-
-<span style="font-size: smaller">ImageJ and SCIFIO are both built on top of SciJava Common.</span>
 | [http://groups.google.com/group/scijava Archives]
 |}
 
