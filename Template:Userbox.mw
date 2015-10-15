@@ -11,12 +11,16 @@
 {{!}} [http://loci.wisc.edu/people/{{{loci}}} LOCI profile]
 {{!}}-
 }}
+{{#if:{{{forum|}}}|
+! Forum
+{{!}} [http://forum.imagej.net/users/{{{forum}}} ImageJ Forum profile]
+{{!}}-
+}}
 {{#if:{{{github|}}}|
 ! GitHub
 {{!}} [http://github.com/{{{github}}} GitHub profile]
 {{!}}-
 }}
-{{#if:{{{stackoverflow|}}}|
 ! StackOverflow
 {{!}} [http://stackoverflow.com/users/{{{stackoverflow}}} StackOverflow profile]
 {{!}}-
@@ -67,6 +71,7 @@
 | name                   = John Smith
 | gravatar               = 7194e8d48fa1d2b689f99443b767316c
 | affiliation            = The Institute of Awesome
+| forum                  = Wayne
 | github                 = octocat
 | stackoverflow          = 22656/jon-skeet
 | openhub                = kohsuke
@@ -78,6 +83,7 @@
 | name                   = John Smith
 | gravatar               = 7194e8d48fa1d2b689f99443b767316c
 | affiliation            = The Institute of Awesome
+| forum                  = Wayne
 | github                 = octocat
 | stackoverflow          = 22656/jon-skeet
 | openhub                = kohsuke
