@@ -12,7 +12,7 @@
 {{!}}-
 }}
 {{#if:{{{forum|}}}|
-! Forum
+! ImageJ Forum
 {{!}} [http://forum.imagej.net/users/{{{forum}}} ImageJ Forum profile]
 {{!}}-
 }}
