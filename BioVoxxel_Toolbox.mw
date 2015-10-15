@@ -4,8 +4,8 @@
 | author                 = {{Person|BioVoxxel}}, Thorsten Wagner
 | website                = [http://www.biovoxxel.de/index.html www.biovoxxel.de]
 | maintainer             = {{Person|BioVoxxel}}
-| latest version         = 11. August 2015
-| source                 =[http://www.biovoxxel.de/BioVoxxel%20Macro%20Toolset/BioVoxxel_Plugins.jar BioVoxxel Plugins], [http://www.biovoxxel.de/BioVoxxel%20Macro%20Toolset/BioVoxxel_Toolsets.zip BioVoxxel Toolset]
+| latest version         = 15. October 2015
+| source                 =[https://github.com/biovoxxel/BioVoxxel_Toolbox GitHub], [http://www.biovoxxel.de/BioVoxxel%20Macro%20Toolset/BioVoxxel_Toolsets.zip BioVoxxel Toolset]
 | category               = [[:Category:Particle analysis|Particle analysis]], [[:Category:Binary|Binary]], [[:Category:Filtering|Filtering]]
 }}You can setup an automatic update for the BioVoxxel Toolbox. Just run the [[Updater]] ({{bc | Help | Update...}}) and switch in the main window to 'Advanced mode'. Then click on 'Manage update sites'. Here you simply need to activate the "BioVoxxel" [[update site]].
 
