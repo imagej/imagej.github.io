@@ -135,7 +135,7 @@ When executed in Batch Mode, ONL Area, INL Area, ONL TUNEL<sup>+</sup> cells, an
 # Q: Can I modify the source code?
 #*A: ''Yes, you can modify the code to develop new macros or plugins. Please acknowledge previous work that helped or inspired you, and share your contribution with the scientific community!''<br>
 # Q: I used this tool for my research. How should I acknowledge it?
-#*A: ''Please cite or reference this work as follows: Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG (2015) A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Invest Ophthalmol Vis Sci. 2015;56:6701–6708. DOI:10.1167/ iovs.15-17599.'' <br>
+#*A: ''Please cite or reference this work as follows: Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG. A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Invest Ophthalmol Vis Sci. 2015;56:6701–6708. DOI:10.1167/ iovs.15-17599.'' <br>
 # Q: I cannot get accurate segmentation or counting. Any advice?
 #*A: ''Check your acquisition and post-processing parameters. First, try to keep background at minimum to remove any fragments. Next, adjust saturation until cells are easily identifiable.'' <br>
 
@@ -157,7 +157,7 @@ We are currently working on the following issues:
 #[http://iovs.arvojournals.org/article.aspx?articleid=2463763 IOVS Paper]
 
 == References ==
-#Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG (2015) A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Invest Ophthalmol Vis Sci. 2015;56:6701–6708. DOI:10.1167/ iovs.15-17599.''
+#Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG. A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Invest Ophthalmol Vis Sci. 2015;56:6701–6708. DOI:10.1167/ iovs.15-17599.''
 
 [[Category:Development]]
 [[Category:Plugins]]
