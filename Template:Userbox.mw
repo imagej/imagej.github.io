@@ -21,6 +21,7 @@
 {{!}} [http://github.com/{{{github}}} GitHub profile]
 {{!}}-
 }}
+{{#if:{{{stackoverflow|}}}|
 ! StackOverflow
 {{!}} [http://stackoverflow.com/users/{{{stackoverflow}}} StackOverflow profile]
 {{!}}-
