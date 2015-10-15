@@ -1,9 +1,9 @@
 {{Infobox
 | software               = ImageJ / Fiji
 | name                   = BioVoxxel Toolbox
-| author                 = Jan Brocher, Thorsten Wagner
+| author                 = {{Person|BioVoxxel}}, Thorsten Wagner
 | website                = [http://www.biovoxxel.de/index.html www.biovoxxel.de]
-| maintainer             = Jan Brocher
+| maintainer             = {{Person|BioVoxxel}}
 | latest version         = 11. August 2015
 | source                 =[http://www.biovoxxel.de/BioVoxxel%20Macro%20Toolset/BioVoxxel_Plugins.jar BioVoxxel Plugins], [http://www.biovoxxel.de/BioVoxxel%20Macro%20Toolset/BioVoxxel_Toolsets.zip BioVoxxel Toolset]
 | category               = [[:Category:Particle analysis|Particle analysis]], [[:Category:Binary|Binary]], [[:Category:Filtering|Filtering]]
@@ -542,7 +542,7 @@ Future: Will be implemented for stacks as well.
 ----
 
 
-All BioVoxxel Macros were developed by Jan Brocher
+All BioVoxxel Macros were developed by {{Person|BioVoxxel}}
 
 The macros can be freely used, redistributed and changed according to the GNU GPL License v3.0. 
 
@@ -550,6 +550,6 @@ For questions, comments and suggestions please contact: jan.brocher(at)biovoxxel
 
 There is NO WARRANTY of functionality for those macros.
 
-In no event neither Jan Brocher nor BioVoxxel shall be liable to any party for direct, indirect, special, incidental, or consequential damages or data loss of any kind arising out of the use of this software and its documentation, even if advised of the possibility thereof.
+In no event neither {{Person|BioVoxxel}} nor BioVoxxel shall be liable to any party for direct, indirect, special, incidental, or consequential damages or data loss of any kind arising out of the use of this software and its documentation, even if advised of the possibility thereof.
 
 [[Category: Particle analysis]]
