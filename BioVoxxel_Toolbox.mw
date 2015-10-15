@@ -125,7 +125,7 @@ Future: suggestions are welcome!
 
 Purpose: The standard watershed algorithm in ImageJ is very usefull to separate connected, roughly circular structures. Nevertheless, it gets into trouble while separating irregular (non-ellipsoid like) structures. The Irregular Watershed enables the user to separate also irregular shaped structures to a certain extend.
 
-[[File:Watershed_Irregular_Features.png|550px]]
+[[File:Watershed_Irregular_Features.png|770px]]
 
 How to: The user needs to specify one of two parameters:
 
