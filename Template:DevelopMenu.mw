@@ -32,6 +32,7 @@
 {{MenuItem | [[Introduction_into_Developing_Plugins|ImageJ 1.x plugins]] }}
 {{MenuItem | [[Versioning]] }}
 {{MenuItem | [[Logging]] }}
+{{MenuItem | [[Uber-JARs]] }}
 | {{#ifeq:{{{1}}}|tutorials||collapsed}}
 }}
 
