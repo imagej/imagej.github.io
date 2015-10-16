@@ -70,6 +70,23 @@ write("The name: title"); // this is wrong
 write("The name: " + title); // this is right
 </source>
 
+The same principle applies when using variables which reflect parameters passed to a <code>run()</code> method, e.g.
+
+<source lang="java">
+specifiedRadius = 3;
+run("Median...", "radius=specifiedRadius");   //this will not work
+run("Median...", "radius=" + specifiedRadius);   //this is correct
+</source>
+
+Also take care of white spaces when concatenating fixed text with variables
+<source lang="java">
+
+userDefinedAutoThreshold = "Li";
+run("Auto Threshold", "method=userDefinedAutoThreshold white");   //does NOT work because the threshold is not recognized
+run("Auto Threshold", "method=" + userDefinedAutoThreshold + "white");   //does NOT work because the macro runs as "method=Liwhite"
+run("Auto Threshold", "method=" + userDefinedAutoThreshold + " white");   //WORKS because the space before "white" results in "method=Li white"
+</source>
+
 In the first ''write'' call, a literal ''title'' will be printed instead of the value of the variable of that name.
 
 It is especially important to keep this in mind when calling plugins:
