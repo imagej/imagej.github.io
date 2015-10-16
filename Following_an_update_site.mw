@@ -1,9 +1,8 @@
 {{UpdateSites}}
+{{Warning | Update sites are a fantastic way to get new functionality in your ImageJ app.<br>Unfortunately they are also one of the easiest ways to break an installation - when adding an update site that clashes with another update site, or even the ImageJ core.<br>So, before enabling a new update site, it's safest to [[Make_Fiji_Package|back up your installation]]. }}
 == Introduction ==
 
-This tutorial will explain how to '''add an update site to your install of ImageJ''' such that the plugins maintained there will be installed and updated just like normal ImageJ plugins.
-
-In this tutorial we'll be adding plugins from the distribution site at genomics.lbl.gov/~gavin/FijiPlugins.
+This tutorial will explain how to '''add an update site to your install of ImageJ''' such that the plugins maintained there will be installed and updated just like core ImageJ plugins.
 
 == Start the [[Updater]] ==
 
@@ -19,23 +18,29 @@ Click on the ''Manage update sites'' button to bring up the site management dial
 
 If the update site you want to follow is listed, just click the checkbox next to its name. If it is not listed, you can add Click the ''Add'' button and fill in the name of your choice for the site and the URL, which would be provided by the plugin's author or distributor.
 
-'''Note:''' the list of update sites shown by default is the one you can view and edit [[List of update sites|here]]. Feel free to encourage update site maintainers to [http://imagej.net/List_of_update_sites?action=edit add] their update sites.
+'''Note:''' the list of update sites shown by default is generated from this wiki, which you can [[List of update sites|view and edit here]]. Update site maintainers are encouraged to add their update site to this list, as it both helps the community and the developers.
 
-Close the dialog and the list of plugins available on the site will show up:
+After you have selected your desired update site(s), close the dialog. The list of plugins that will be installed or updated from the chosen sites will now show up:
 
 [[Image:AddPluginSite-5.jpg|770px]]
 
+{{Warning | If an entry's action is '''Update It''', that means it is changing an existing plugin. This action is dangerous and can break other plugins, or ImageJ itself.<br>Ideally the maintainers of these sites would work with the core ImageJ maintainers to centralize important plugins.<br>When you find plugin conflicts between update sites, you can greatly help the community by [[Help|starting a discussion]] with the maintainers! }}
+
 == Choose and download plugins ==
 
-You can select whether you want to install a particular plugin by changing the choice in the status/action column. In this case, there's only one plugin available (including a required jar file), so we're going to install all files. Click on 'Apply Changes' and the updates will be installed:
+You can select whether you want to install a particular plugin by clicking in the '''Status/Action''' column and changing the option - for example, select '''Keep as-is''' to avoid installing a clashing plugin.
+
+Once you are happy with what will be installed, click on the ''Apply Changes'' button to download your updates.
 
 [[Image:AddPluginSite-6.jpg|770px]]
 
 == Verify install ==
 
-Restart ImageJ as instructed to finish the install. Check to see that the plugin works:
+Restart ImageJ as instructed to finish the install. Check to see that the plugin was installed:
 
 [[Image:AddPluginSite-7.jpg]]
+
+...and that it works:
 
 [[Image:AddPluginSite-8.jpg]]
 
