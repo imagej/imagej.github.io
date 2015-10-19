@@ -3,7 +3,7 @@
 
 = Launching ImageJ in debug mode =
 
-To debug problems with ImageJ, it is often helpful to launch it in debug mode. See the [[Troubleshooting#Launching_ImageJ_in_debug_mode|Troubleshooting]] page for instructions.
+To debug problems with ImageJ, it is often helpful to launch it in debug mode. See the [[Troubleshooting#Launching_ImageJ_from_the_console|Troubleshooting]] page for instructions.
 
 = Debugging plugins in an IDE (Netbeans, IntelliJ, Eclipse, etc) =
 
