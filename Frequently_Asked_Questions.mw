@@ -24,9 +24,11 @@ Install the [http://java.com/ Java 8 JRE] or [http://www.oracle.com/technetwork/
 
 == How do I run ImageJ on El Capitan? ==
 
-Unfortunately, El Capitan has some new java-related issues. If you upgraded to El Capitan and your Java 8 installation is not being detected properly, see [https://oliverdowling.com.au/2015/10/09/oracles-jre-8-on-mac-os-x-el-capitan/ this guide] for technical instructions on how get things working again.
+Unfortunately, El Capitan has some new java-related issues. If you upgraded to El Capitan and your Java 8 installation is not being detected properly:
 
-Alternately, ImageJ still works on El Capitan with Java 6 (see above).
+# Try installing the [http://www.oracle.com/technetwork/java/javase/downloads/index.html Java SE JDK].
+# If that does not work, see [https://oliverdowling.com.au/2015/10/09/oracles-jre-8-on-mac-os-x-el-capitan/ this guide] for steps which could get things working again.
+# Alternately, ImageJ still works on El Capitan with Java 6 (see above).
 
 = Running =
 
