@@ -51,6 +51,14 @@ If ImageJ [[wikipedia:Crash (computing)|crashes]]—i.e., the program suddenly t
 * Perform the same actions which previously resulted in the crash.
 * Take note of any error messages in the console window, which you can copy and paste it into a [[Bugs|bug report]].
 
+== If ImageJ will not start up ==
+
+If the ImageJ window never appears after launching the program, the installation may be corrupted. While the developers of ImageJ make a serious effort to prevent this problem from happening, it is still possible after running the {{bc | Help | Update...}} command, due to bugs in the [[Updater]].
+
+The easiest workaround is to [[download]] a fresh copy of the software.
+
+If you are feeling investigative, you can try [[#Launching_ImageJ_from_the_console|launching ImageJ from the console]] to get more information about why it is failing to start up. After doing that, you will probably see some information printed to the console, which you can paste online to somewhere like [http://pastebin.com/ Pastebin.com], and write to the [[Community]] to ask for help deciphering it.
+
 == Advanced debugging techniques ==
 
 If you are technically savvy, check out the [[Debugging]] page for additional—but more complicated—debugging techniques.
