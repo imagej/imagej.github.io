@@ -1,4 +1,4 @@
-== Key concepts ==
+{{Outdated}}== Key concepts ==
 We favor a style of ImageJ plugin design that enables execution of the plugin:
 
 * From the menus.
