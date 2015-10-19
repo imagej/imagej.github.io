@@ -55,7 +55,7 @@ result = x * x + y + y;
 
 This assigns the variable ''x'' the value 2, the variable ''y'' the value 3, and then assigns the variable ''result'' the square of ''x'' plus the square of ''y''.
 
-This example shows how to concatenate a fixed text with the value of a variable:
+This example shows how to [https://www.techopedia.com/definition/3470/concatenation-programming concatenate] a fixed text with the value of a variable:
 
 <source lang="java">
 name = "Bob";
@@ -64,37 +64,27 @@ msg = "Those days are over, " + name;
 
 '''Note:''' a common pitfall is to include the name of a variable in a string. The following code demonstrates this:
 
+('''BAD''' lines are commented out to discourage copying them. If you paste this code in the [[Script_Editor|script editor]], you can uncomment these lines to see the their errors)
+
 <source lang="java">
 title = "Macro";
-write("The name: title"); // this is wrong
-write("The name: " + title); // this is right
+//write("The name: title");  // BAD - literally prints "title"
+write("The name: " + title); // GOOD - properly uses the title variable value
 </source>
-
 The same principle applies when using variables which reflect parameters passed to a <code>run()</code> method, e.g.
 
 <source lang="java">
 specifiedRadius = 3;
-run("Median...", "radius=specifiedRadius");   //this will not work
-run("Median...", "radius=" + specifiedRadius);   //this is correct
+//run("Median...", "radius=specifiedRadius");  // BAD - will literally pass "specifiedRadius"
+run("Median...", "radius=" + specifiedRadius); // GOOD - will correctly pass the radius variable value
 </source>
-
-Also take care of white spaces when concatenating fixed text with variables
+'''Note:''' when concatenating strings, whenspace will not automatically be added. So care must be taken, for example when spaces are ''desired''.
 <source lang="java">
+// We want to use the "Li white" threshold
 
 userDefinedAutoThreshold = "Li";
-run("Auto Threshold", "method=userDefinedAutoThreshold white");   //does NOT work because the threshold is not recognized
-run("Auto Threshold", "method=" + userDefinedAutoThreshold + "white");   //does NOT work because the macro runs as "method=Liwhite"
-run("Auto Threshold", "method=" + userDefinedAutoThreshold + " white");   //WORKS because the space before "white" results in "method=Li white"
-</source>
-
-In the first ''write'' call, a literal ''title'' will be printed instead of the value of the variable of that name.
-
-It is especially important to keep this in mind when calling plugins:
-
-<source lang="java">
-r = 2; // the radius
-run("Gaussian Blur...", "radius=r"); // this is wrong, r will not be evaluated
-run("Gausian Blur...", "radius=" + r); // this is correct
+//run("Auto Threshold", "method=" + userDefinedAutoThreshold + "white");   //does NOT work because the macro runs as "method=Liwhite"
+run("Auto Threshold", "method=" + userDefinedAutoThreshold + " white");   //WORKS because including a space in " white" results in "method=Li white"
 </source>
 
 == Self-referencing assignments ==
