@@ -150,28 +150,6 @@ IJ.run("Update Fiji");
 </source>
 * run the script via the ''Run'' menu
 
-== I updated to Ubuntu 11.04 and now I no longer see the Title bar when I close ImageJ ==
-
-I can no longer move any windows or use the X button on the title bar to close 
-them (the window decorations all disappear).
-
-If you are really on Ubuntu 11.04, an update should fix the problem. If you are not on Ubuntu 11.04, or if the update does not fix the problem, please read on for possible workarounds.
-
-This is not a ImageJ problem but a bug in the NVIDIA driver.
-One solution is described in:
-http://www.pendrivelinux.com/ubuntu-desktop-effects-fixing-the-missing-titlebar/
-
-Edit (as root) the file /etc/X11/xorg.conf and add the following 2 options in '''Section "Device"''' before the '''EndSection''' line:
-   Option "AddARGBVisuals" "True"
-   Option "AddARGBGLXVisuals" "True"
-
-The above eases the problem but does not completely solve it. The solution will be an updated driver from NVIDIA when it is available. If you choose to remain with Unity or Ubuntu Classic, you may log out and then log in again when the problem appears. You can also restart the window manager without logging out by running
-   compiz --replace &
-
-in a terminal. This restores the window decorations but all windows from all virtual desktops end in the first one.
-
-Another solution is to install Unity-2D and choose it when you log in. This seems to work well. It also solves a number of general display problems.
-
 = Compatibility =
 
 == Will ImageJ1 macros, plugins and scripts still work in ImageJ2? ==
