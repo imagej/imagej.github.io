@@ -37,12 +37,41 @@ There is another debug mode, which can be enabled in the {{bc | Edit | Options |
 
 If ImageJ appears to [[wikipedia:Hang (computing)|hang]]—i.e., it stops responding to inputs—it is often helpful to take a "snapshot" of where the program is at after the hang occurs. This information can give the developers valuable hints about how to fix the problem.
 
-There are two ways to create such a snapshot, known as a "thread dump" or "stack trace":
+There are two ways to create such a snapshot, known as a "thread dump" or "stack trace".
 
-# First, try pressing {{key|Shift}}+{{key|\}} in ImageJ itself. If successful, it will open a new window with the stack trace.
-# If the first method does not work, and you can reproduce the hang: launch ImageJ again, this time [[#Launching ImageJ from the console|from the console]] as described above. Then press {{key|Ctrl}}+{{key|\}} in the same console to print the stack trace. On Windows, you may need to press {{key|Ctrl}}+{{key|Pause}} (i.e., {{key|Break}}) instead of {{key|Ctrl}}+{{key|\}}.
+=== The easy way ===
+# Press {{key|Shift}}+{{key|\}} in ImageJ itself. If successful, it will open a new window with the stack trace.
+# Press {{key|Ctrl|A}} to select it, then {{key|Ctrl|C}} to copy it to the clipboard.
 
-Either way, once you have the stack trace. you can copy and paste it into a [[Bugs|bug report]]!
+=== The fallback way ===
+If the first method does not work, and you can reproduce the hang:
+<ol>
+<li>Launch ImageJ again, this time [[#Launching ImageJ from the console|from the console]] as described above.
+    <ul>
+    <li>[[File:Win.png|x20px]] On Windows, you will need to download and run [https://raw.githubusercontent.com/imagej/imagej/master/bin/ImageJ.bat this batch file], which launches ImageJ with an attached Command Prompt window.</li>
+    </ul>
+</li>
+<li>Generate and copy the stack trace:
+    <ul>
+    <li>[[File:Osx.png|x20px]] [[File:Tux.png|x20px]] On non-Windows platforms:
+        <ol>
+        <li>Press {{key|Ctrl|\}} in the console window to print the stack trace.</li>
+        <li>Select the stack trace by dragging with the left mouse button.</li>
+        <li>Right click and select "Copy" to copy it to the clipboard.</li>
+        </ol>
+    <li>[[File:Win.png|x20px]] On Windows:
+        <ol>
+        <li>Press {{key|Ctrl|Pause}} in the Command Prompt window to print the stack trace.</li>
+        <li>Click the Command Prompt icon in the upper left corner of the window, and choose {{bc|Edit|Mark}}.</li>
+        <li>Select the stack trace by dragging with the left mouse button.</li>
+        <li>Press {{key|Enter}} to copy it to the clipboard.</li>
+        </ol>
+    </li>
+    </ul>
+</li>
+</ol>
+
+Once you have the stack trace. you can paste it into a [[Bugs|bug report]]!
 
 == If ImageJ crashes ==
 
