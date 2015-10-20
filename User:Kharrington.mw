@@ -1,0 +1,7 @@
+{{Userbox
+| name = Kyle Harrington
+| affiliation = Harvard Medical School
+| github = kephale
+}}= [http://kyleharrington.com Kyle Harrington] =
+
+Developed the Funimage plugin to facilitate concise Clojure code, which is also an easy way to write standalone ImageJ/ImgLib2-based programs in Clojure.
