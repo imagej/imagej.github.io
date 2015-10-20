@@ -6,13 +6,11 @@ This article explains how to install and configure command line tools for use wi
 === Setting up command line tools on Windows ===
 Install [[Git]], [[Maven]], and Java SE using [https://chocolatey.org/ Chocolatey]:
 <source lang="bash">
-choco install git
-choco install maven
-choco install jdk8
+choco install -y git maven jdk8
 </source>
 We also heartily recommend installing [https://www.cygwin.com/ Cygwin]:
 <source lang="bash">
-choco install cyg-get
+choco install -y cyg-get
 </source>
 
 === Setting up command line tools on Mac OS X ===
