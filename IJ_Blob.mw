@@ -132,18 +132,17 @@ Open the ROI-Manager:
 </code>
 Convert the outer contour to a ROI and add it to the ROI manager:
 <code>
-
-for (int i = 0; i < allBlobs.size(); i++){
- Polygon p = fb.get(i).getOuterContour();
- int n = p.npoints;
- float[] x = new float[p.npoints];
- float[] y = new float[p.npoints];	
- for (int j=0; j<n; j++) {
-  x[j] = p.xpoints[j]+0.5f;
-  y[j] = p.ypoints[j]+0.5f;
- }			
- Roi roi = new PolygonRoi(x,y,n,Roi.TRACED_ROI);				
- Roi.setColor(Color.green);
- roiManager.add(imp, roi, i);
-</code>								
-}
+ for (int i = 0; i < allBlobs.size(); i++){
+  Polygon p = fb.get(i).getOuterContour();
+  int n = p.npoints;
+  float[] x = new float[p.npoints];
+  float[] y = new float[p.npoints];	
+  for (int j=0; j<n; j++) {
+   x[j] = p.xpoints[j]+0.5f;
+   y[j] = p.ypoints[j]+0.5f;
+  }			
+  Roi roi = new PolygonRoi(x,y,n,Roi.TRACED_ROI);				
+  Roi.setColor(Color.green);
+  roiManager.add(imp, roi, i);
+ }
+</code>
