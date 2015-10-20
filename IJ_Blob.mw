@@ -133,7 +133,7 @@ Open the ROI-Manager:
 Convert the outer contour to a ROI and add it to the ROI manager:
 <code>
  for (int i = 0; i < allBlobs.size(); i++){
-  Polygon p = fb.get(i).getOuterContour();
+  Polygon p = allBlobs.get(i).getOuterContour();
   int n = p.npoints;
   float[] x = new float[p.npoints];
   float[] y = new float[p.npoints];	
