@@ -112,3 +112,38 @@ public class ExampleBlobFeature extends CustomBlobFeature {
   }	
 }
 </code>
+
+==Example 4: Add detected blobs to the ROI manager==
+
+
+Find all blobs:
+<code>
+ ManyBlobs allBlobs = new ManyBlobs(imp);
+ allBlobs.findConnectedComponents();
+</code>
+
+Open the ROI-Manager:
+<code>
+ Frame frame = WindowManager.getFrame("ROI Manager");
+ if (frame == null)
+  IJ.run("ROI Manager...");
+ frame = WindowManager.getFrame("ROI Manager");
+ RoiManager roiManager = (RoiManager) frame;
+</code>
+Convert the outer contour to a ROI and add it to the ROI manager:
+<code>
+
+for (int i = 0; i < allBlobs.size(); i++){
+ Polygon p = fb.get(i).getOuterContour();
+ int n = p.npoints;
+ float[] x = new float[p.npoints];
+ float[] y = new float[p.npoints];	
+ for (int j=0; j<n; j++) {
+  x[j] = p.xpoints[j]+0.5f;
+  y[j] = p.ypoints[j]+0.5f;
+ }			
+ Roi roi = new PolygonRoi(x,y,n,Roi.TRACED_ROI);				
+ Roi.setColor(Color.green);
+ roiManager.add(imp, roi, i);
+</code>								
+}
