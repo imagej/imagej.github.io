@@ -47,9 +47,9 @@ Where following options are available (in order):
 
 As alternative, there is very well documented [[Multi Kymograph]] plugin and its updated version [http://biop.epfl.ch/TOOL_KYMOGRAPH.html Kymograph tool].
 
-== Updates ==
+== Version history ==
 
-Version 0.4: now it works with hyperstacks and RGB images.
+version 0.4 (2015/10/21): now it works with hyperstacks and RGB images.
 
 [[Category:Stacks]]
 [[Category:Plugins]]
