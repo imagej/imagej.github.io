@@ -1,11 +1,11 @@
 {{Infobox
 | software               = ImageJ
 | name                   = KymoResliceWide
-| author                 = [http://katpyxa.info Eugene Katrukha]
+| author                 = [http://katpyxa.info Eugene Katrukha] and Laurie Young
 | maintainer             = [mailto:katpyxa_at_gmail.com Eugene Katrukha]
 | filename               = [https://github.com/ekatrukha/KymoResliceWide/blob/master/KymoResliceWide_.jar?raw=true KymoResliceWide_.jar]
 | source                 = [https://github.com/ekatrukha/KymoResliceWide github]
-| latest version         = 24 September 2014
+| latest version         = 21 October 2015
 | status                 = stable 
 | category               = [[:Category:Stacks|Stacks]]
 | website                = [https://github.com/ekatrukha/KymoResliceWide/wiki wiki_page]
@@ -45,6 +45,10 @@ Where following options are available (in order):
 == Other kymograph plugins == 
 
 As alternative, there is very well documented [[Multi Kymograph]] plugin and its updated version [http://biop.epfl.ch/TOOL_KYMOGRAPH.html Kymograph tool].
+
+== Updates ==
+
+Version 0.4: now it works with hyperstacks and RGB images.
 
 [[Category:Stacks]]
 [[Category:Plugins]]
