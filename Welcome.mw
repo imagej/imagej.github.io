@@ -22,7 +22,7 @@ __NOTITLE__
 |-
 |style="font-size: 1.2em; padding: 7px"|[[ImageJ]] is highly [[Extensibility|extensible]], with thousands of [[plugins]] and [[macros]] for performing a wide variety of tasks, and a strong, established user base.
 |-
-|style="font-size: 1.2em; padding: 7px"|This [[wikipedia:wiki|wiki]] documents the complete '''ImageJ ecosystem''', including:
+|style="font-size: 1.2em; padding: 7px"|This [[wikipedia:wiki|wiki]] documents all aspects of the '''ImageJ ecosystem''', including:
 |}
 {| class="nicetable" style="text-align: center;"
 |style="width: 25%"|[[File:Imagej2-icon.png|x32px|link=ImageJ|Core ImageJ libraries]]<br>ImageJ
