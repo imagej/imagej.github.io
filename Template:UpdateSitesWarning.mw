@@ -1,0 +1,1 @@
+{{Warning | Update sites are a fantastic way to get new functionality in your ImageJ app.<br>Unfortunately they are also one of the easiest ways to break an installation, by adding an update site that clashes with another update site, or even the ImageJ core.<br>So, before enabling a new update site, it's safest to [[Make_Fiji_Package|back up your installation]].}}
