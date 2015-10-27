@@ -1,15 +1,18 @@
 {{Menu | Licenses
 |
 {{Submenu | Open Source |
-{{MenuItem | [[GPL]] }}
+{{MenuItem | [[Apache]] }}
 {{MenuItem | [[BSD]] }}
+{{MenuItem | [[GPL]] }}
+{{MenuItem | [[LGPL]] }}
+{{MenuItem | [[MIT]] }}
 {{MenuItem | [[Public Domain|Public domain]] }}
 |
 }}
 
 {{Submenu | Proprietary |
-{{MenuItem | [[ImageScience_License | ImageScience]] }}
 {{MenuItem | [[BIG_License | BIG]] }}
+{{MenuItem | [[ImageScience_License | ImageScience]] }}
 |
 }}
 
