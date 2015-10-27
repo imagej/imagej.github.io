@@ -9,7 +9,7 @@ Pardon the informal tone this developer announcement will take but Ah! the joy t
 
 Picture yourself at work, leaned over the keyboard, this Wiki edit page opened, pondering the best way to make your message on [[SciJava]] extension mechanism through. When your boss knock at the door and says "I hope you are not writing tutorials for TrackMate. There is still papers X and Y to write, project Z has a report coming, and N users waiting for you to train them."
 
-Picture yourself at home. It's night. It's cold. The kids approach the desk, full if expectations.
+Picture yourself at home. It's night. It's cold. The kids approach the desk, full of expectations.
 
 " - Daddy, come and play with us!
 
@@ -40,8 +40,6 @@ Thorsten Wagner is working on a detector that emulates the Find maxima tool of I
 === Benoit Lombardo analyzers. ===
 
 Benoit Lombardo wrote a spot analyzer that compute mean intensities in all the channels of an image, when you have a multi-channel image. You can find it on the [https://github.com/tinevez/TrackMate-extras TrackMate extras] page.
-
-
 
 == Improvements. ==
 
