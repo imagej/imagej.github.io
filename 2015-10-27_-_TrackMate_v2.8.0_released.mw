@@ -46,6 +46,14 @@ Benoit Lombardo wrote a spot analyzer that compute mean intensities in all the c
 == Improvements. ==
 
 
+
+=== Faster track rendering. ===
+
+Since rather recently, the display of tracks on MacOSX and Linux platforms has become incredibly slow for a large number of tracks. I could not track the origin of the problem, that probably lies in the code of the JDK. 
+
+To temper it, the track rendering has changed and is now finer. This is has a strong and positive impact on track rendering on the aforementioned platforms. 
+
+
 === The ROI edit tool. ===
 
 TrackMate permits semi-automated and curation of automated results. In some cases, there might be many spurious spots to remove manually. To make it less cumbersome, you can draw a ROI to select many spots at once. This is best explained in the following short video:
