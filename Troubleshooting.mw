@@ -1,6 +1,14 @@
 {{Help}}
 = How to troubleshoot problems =
 
+== Checking the Java version ==
+
+You can tell which Java version ImageJ is using by clicking the ImageJ [[status bar]] and looking for the part that says e.g. "Java 1.8.0_45 [64-bit]". The relevant number is the one after "Java 1."—so e.g. "Java 1.8.0_45" or similar indicates Java 8, while "Java 1.7.0_79" or similar indicates Java 7.
+
+On OS X, you can use [https://raw.githubusercontent.com/ctrueden/ctr-scripts/master/java-info this script] to diagnose which versions of Java are installed on your system.
+
+See also [[Frequently Asked Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F|How do I launch ImageJ with a different version of Java?]].
+
 == Launching ImageJ from the console ==
 
 To diagnose problems with ImageJ, it is often helpful to launch it in debug mode. There are several ways:
@@ -125,7 +133,7 @@ Further reading:
 While ImageJ strives for [[reproducible]] analysis, there are many reasons results can differ. Check the following:
 
 * Ensure that the version of [[ImageJ]] is exactly the same on both machines.
-** Click the status bar and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
+** Click the [[status bar]] and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
 ** If these two values differ between your machines, the versions are not the same.
 ** See also [[Frequently Asked Questions#How can I verify that my ImageJ is really 100% up to date?|How can I verify that my ImageJ is really 100% up to date?]].
 ** If the two versions of ImageJ differ and produce different numerical results, it is a bug—please [[Report a Bug|report it]]!
@@ -152,7 +160,7 @@ While ImageJ strives for [[reproducible]] analysis, there are many reasons resul
 
 This is a characteristic of the Java runtime. In many cases, Java ''never'' releases memory back to the system, so memory monitors such as Windows Task Manager will always report an ever-growing amount of RAM used by the Java process, until the JVM shuts down.
 
-The best way to monitor ImageJ's actual memory usage is to run the [http://imagej.net/docs/guide/146-31.html#toc-Subsubsection-31.3.5 Monitor Memory...] command. You can also click on the ImageJ status bar to trigger a garbage collection operation, which will typically decrease the memory use.
+The best way to monitor ImageJ's actual memory usage is to run the [http://imagej.net/docs/guide/146-31.html#toc-Subsubsection-31.3.5 Monitor Memory...] command. You can also click on the ImageJ [[status bar]] to trigger a garbage collection operation, which will typically decrease the memory use.
 
 That said, some articles suggest that you can cause Java to give back free memory to the OS under certain conditions; see:
 
@@ -176,13 +184,13 @@ The first thing to do is make sure that ImageJ has a large enough "maximum heap"
 
 Note that in most cases, the [[Launcher|ImageJ launcher]] will make an initial guess at a reasonable value: ~75% of physical RAM.
 
-You can confirm how much memory is actually available by clicking on the status bar. You will see a "[used] of [max]" memory message, as pictured here:
+You can confirm how much memory is actually available by clicking on the [[status bar]]. You will see a "[used] of [max]" memory message, as pictured here:
 
 [[File:MemoryStatus.png]]
 
 If you are already at the limits of your computer's physical memory, the next step would be to add more.
 
-'''About Java garbage collection:''' Java always automatically calls the garbage collector when the heap is getting full [http://stackoverflow.com/questions/8719071 [1]]. While it is possible to manually invoke the garbage collector by clicking ImageJ's status bar&mdash;or programmatically by calling <code>run("Collect Garbage")</code> in a macro or <code>System.gc()</code> in a plugin&mdash;it will not solve the fundamental problem of Java actually not having a sufficient amount of memory. (The only exception to this is a rare case where Java decides that garbage collection is happening too slowly, in which case you should see the message "GC overhead limit exceeded" [http://www.petefreitag.com/item/746.cfm [2]]).
+'''About Java garbage collection:''' Java always automatically calls the garbage collector when the heap is getting full [http://stackoverflow.com/questions/8719071 [1]]. While it is possible to manually invoke the garbage collector by clicking ImageJ's [[status bar]]&mdash;or programmatically by calling <code>run("Collect Garbage")</code> in a macro or <code>System.gc()</code> in a plugin&mdash;it will not solve the fundamental problem of Java actually not having a sufficient amount of memory. (The only exception to this is a rare case where Java decides that garbage collection is happening too slowly, in which case you should see the message "GC overhead limit exceeded" [http://www.petefreitag.com/item/746.cfm [2]]).
 
 == NegativeArraySizeException ==
 
@@ -196,7 +204,7 @@ This error usually means that your image planes are larger than the maximum supp
 
 Usually, this error takes the form of "Unsupported major.minor version 52.0" or similar, and indicates you are attempting to use a plugin which requires a newer version of Java than you are running. For example, you may have enabled an [[update site]] that requires Java 7, but your ImageJ is using Java 6.
 
-You can tell which version of Java you are using by clicking the ImageJ status bar and looking for the part that says e.g. "Java 1.8.0_45 [64-bit]". The relevant number is the one after "Java 1."—so e.g. "Java 1.8.0_45" or similar indicates Java 8, while "Java 1.7.0_79" or similar indicates Java 7.
+Check which version of Java is being used by ImageJ; see [[#Checking_the_Java_version|Checking the Java version]] above.
 
 The number given in the <code>UnsupportedClassVersionError</code> error messages is an internal code, which translates to Java versions as follows:
 {| class="wikitable"
@@ -245,4 +253,4 @@ This is most likely an AWT issue with Apple's version of Java 6. There is even a
 
 == Why does ImageJ run so slowly? ==
 
-On OS X, older versions of Java 7 and Java 8 (prior to 1.8.0_45) are extremely slow at displaying images. You should either [[FAQ#How_do_I_run_ImageJ_on_Yosemite.3F|upgrade to the latest version of Java 8]], or [[FAQ#How_do_I_set_up_Java_6_on_OS_X.3F|revert to Java 6]].
+On OS X, older versions of Java 7 and Java 8 (prior to 1.8.0_45) are extremely slow at displaying images. You should either [[Frequently Asked Questions#How_do_I_run_ImageJ_on_Yosemite.3F|upgrade to the latest version of Java 8]], or [[Frequently Asked Questions#How_do_I_set_up_Java_6_on_OS_X.3F|revert to Java 6]].
