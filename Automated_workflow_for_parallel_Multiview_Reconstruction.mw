@@ -160,9 +160,13 @@ The master_preprocesing.sh file is the configuration script that contains the in
 
 ==== cluster_tools ====
 
+The cluster tools directory contains the libraries for GPU deconvolution and the virtual frame buffer (xvfb) for running Fiji headless. 
+
+<source lang="bash">
 libFourierConvolutionCUDALib.so
 
-Virtual frame buffer (xvfb) - xvfb-run
+xvfb-run
+</source>
 
 === sysconfcpus ===
 
