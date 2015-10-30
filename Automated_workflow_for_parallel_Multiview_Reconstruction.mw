@@ -190,7 +190,14 @@ It is very likely that the cluster computer does not run ANY Graphical User Inte
 
 After you cloned the snakemake-worflows repository you need to configure the ''config.yaml'' for your setup.
 This means you need to specify the directory for your Fiji, the location of the xvfb-run and the location for the GPU deconvolution libraries. 
-Open the ''config.yaml'' with your preferred editor and change the settings in section ''7. Software directories'':
+Go into the timelapse directory of the snakemake-workflows and open the ''config.yaml'' with your preferred editor for example nano and change the settings in section ''7. Software directories'':
+
+
+
+<source lang="bash">
+cd snakemake-workflows/spim_registration/timelapse/
+nano config.yaml
+</source>
 
 <source lang="bash">
  # ============================================================================
