@@ -74,8 +74,8 @@
 ==Example==
 {{Component
 | updateSite = ImageJ
-| name = ImageJ
-| url = http://imagej.net/
+| name = ImageJ 1.x
+| url = http://imagej.net/index.html
 | source = {{GitHub | org=imagej | repo=ImageJA | tag=v1.50d}}
 | license = [[Public Domain]]
 | release = {{Maven | g=net.imagej | a=ij | v=1.50d | label=1.50d}}
@@ -95,8 +95,8 @@
 <pre style="overflow:auto">
 {{SoftwareBox
 | updateSite = ImageJ
-| name = ImageJ
-| url = http://imagej.net/
+| name = ImageJ 1.x
+| url = http://imagej.net/index.html
 | source = {{GitHub | org=imagej | repo=ImageJA | tag=v1.50d}}
 | license = [[Public Domain]]
 | release = {{Maven | g=net.imagej | a=ij | v=1.50d | label=1.50d}}
