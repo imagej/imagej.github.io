@@ -1,4 +1,4 @@
-<includeonly>{{#ifeq:{{{obsolete|}}}|yes|<a title="The project is discontinued.">Obsolete</a>|{{#ifeq:{{{developer|}}}|yes|{{#ifeq:{{{incubating|}}}|yes|<a href="Project is under heavy development, with unstable API undergoing iterations of refinement.">Unstable</a>|<a href="New features are being actively developed. API breakages are kept as limited as possible.">Active</a>}}|<a href="No new features are under development. API is stable.">Stable</a>}}}}</includeonly><noinclude>
+<includeonly>{{#ifeq:{{{obsolete|}}}|yes|[[Components#Obsolete|Obsolete]]|{{#ifeq:{{{developer|}}}|yes|{{#ifeq:{{{incubating|}}}|yes|[[Components#Unstable|Unstable]]|[[Components#Active|Active]]}}|[[Components#Stable|Stable]]}}}}</includeonly><noinclude>
 ==Examples==
 {{DevStatus | developer=yes}}
 <pre style="overflow:auto">
