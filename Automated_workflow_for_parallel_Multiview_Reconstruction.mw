@@ -545,7 +545,32 @@ common: {
 
 === Setting up the ''config.yaml'' file for processing ===
 
+==== 1. Processing switches ====
 
+In the first section you need to decide which processing you want to carry out. 
+The ''transformation_switch'' switches between normal single channel/ multi channel processing were all channels contain beads for registration and multi channel processing where only one channel contains beads.
+If there are channels present without channels the transformations of the other channels need to be copied in order for their registration. 
+
+Set the ''transformation_switch'' to ''timelapse'' to do single channel processing or multichannel processing where all channels contain beads:
+<source lang="bash">
+transformation_switch: "timelapse",
+</source>
+
+Set the ''transformation_switch'' to ''timelapse_duplicate'' to duplicate the transformation from one channel to others:
+<source lang="bash">
+transformation_switch: "timelapse_duplicate",
+</source>
+
+The ''fusion_switch'' decides between weighted-average fusion and deconvolution. 
+Set the ''fusion_switch'' to ''fusion'' to do weighted-average fusion:
+<source lang="bash">
+fusion_switch: "fusion",
+</source>
+
+Set the ''fusion_switch'' to '' deconvolution"' to perform deconvolution:
+<source lang="bash">
+fusion_switch: "deconvolution",
+</source>
 
 === Submitting Jobs === 
 
