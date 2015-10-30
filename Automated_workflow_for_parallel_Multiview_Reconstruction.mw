@@ -244,7 +244,7 @@ A data directory e.g. looks like this:
 └── dataset(4).czi
 </source>
 
-For processing the dataset directory contains the ''config.yaml'' file for the specific dataset. You can either copy it, if you want to keep it together with the dataset, or make a symlink from the processing repository. 
+For processing the dataset directory contains the ''config.yaml'' file for the specific dataset. You can either copy it (after it is modified), if you want to keep it together with the dataset, or make a symlink from the processing repository. 
 Go to your dataset directory and make a symlink for the config.yaml:
 
 <source lang="bash">
