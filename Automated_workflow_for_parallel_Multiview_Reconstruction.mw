@@ -572,6 +572,31 @@ Set the ''fusion_switch'' to '' deconvolution"' to perform deconvolution:
 fusion_switch: "deconvolution",
 </source>
 
+
+==== 2.1. General Settings ====
+
+===== 2.2. Settings for .czi files =====
+
+===== 2.3. Settings for .tif datasets =====
+
+==== 3. Detection and registration ====
+
+==== 4. Timelapse registration ====
+
+==== 5. Weighted-average fusion ====
+
+==== 6. Multiview deconvolution ====
+
+===== 6.1. External transformation =====
+
+===== 6.2. Deconvolution settings =====
+
+==== 7. Software directories ==== 
+
+==== 8. Fiji Resource settings ==== 
+
+==== 9. Advanced settings ====
+
 === Submitting Jobs === 
 
 We recommend to execute snakemake within screen. 
