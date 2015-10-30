@@ -10,7 +10,7 @@
 | released       = December 2012
 | latest version = '''3.4.5 June 2015''' ({{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}})
 | status         = See [[#Release Notes and Pre-releases|Pre-releases]] and {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=Development Notes}}
-| category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]]
+| category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]], [[:Category:Neuroanatomy|Neuroanatomy]]
 }}
 <!-- Create a short TOC next to main Contents -->
 <div style="padding-top:17em;padding-left:1.5em;">
