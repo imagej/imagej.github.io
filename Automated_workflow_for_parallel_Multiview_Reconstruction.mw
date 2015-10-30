@@ -115,35 +115,26 @@ The repository contains the example configuration scripts for single and dual ch
 
 <source lang="bash">
 /path/to/repository/spim_registration/timelapse/
-├── config.yaml
+├── README.md
 ├── Snakefile
 ├── cluster.json
-├── define_tif_zip.bsh
-├── define_czi.bsh
-├── registration.bsh
+├── config.yaml
 ├── deconvolution.bsh
+├── define_czi.bsh
+├── define_output.bsh
+├── define_tif_zip.bsh
+├── duplicate_transformations.bsh
+├── export.bsh
+├── export_output.bsh
+├── fusion.bsh
+├── registration.bsh 
+├── timelapse_registration.bsh
+├── timelapse_utils.py
 ├── transform.bsh		
-├── registration.bsh 	
-└── xml_merge.bsh	
- 		
+└── xml_merge.bsh			
 </source>
 
-A data directory e.g. looks like this:
-
-It contains the .yaml file for the specific dataset. You can either copy it, if you want to keep it together with the dataset, or make a symlink from the processing repository. 
-
-<source lang="bash">
-/path/to/data/
-├── dataset.czi
-├── dataset(1).czi
-├── dataset(2).czi
-├── dataset(3).czi
-├── dataset(4).czi
-└── dataset.yaml	 		# copied/symlinked from this repo
-</source>
-
-
-* `tomancak.yaml` contains the parameters that configure the beanshell scripts found in the data directory
+* `config.yaml` contains the parameters that configure the beanshell scripts found in the data directory
 * `Snakefile` from this directory
 * `cluster.json` that resides in the same directory as the `Snakefile`
 * cluster runs LSF
