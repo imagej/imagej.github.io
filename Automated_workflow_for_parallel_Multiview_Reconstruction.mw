@@ -35,6 +35,22 @@ Some new parameters are introduced and some old parameters change names. Therefo
 
 The repository contains the example configuration scripts for single and dual channel datasets, the Snakefile which defines the workflow, the beanshell scripts which drive the processing via Fiji and a cluster.json file which contains information for the cluster queuing system. 
 
+== workflow ==
+
+
+The current workflow consists of the following steps. It covers the prinicipal processing for timelapse multiview SPIM processing:
+
+* define czi or tif dataset
+* resave into hdf5
+* detect and register interespoints
+* merge xml
+* timelapse registration
+* optional for dual channel dataset: dublicate transformations
+* optional for deconvolution: external transformation
+* average-weight fusion/deconvolution
+* define output
+* resave output into hdf5
+
 <source lang="bash">
 /path/to/repository/spim_registration/timelapse/
 ├── config.yaml
@@ -169,32 +185,15 @@ git clone https://github.com/schmiedc/snakemake-workflows.git
 
 It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate [[Linux_command_line_tutorial]] page that explains the bare essentials.
 
-== workflow ==
+=== Initial setup of workflow ===
 
-
-The current workflow consists of the following steps. It covers the prinicipal processing for timelapse multiview SPIM processing:
-
-* define czi or tif dataset
-* resave into hdf5
-* detect and register interespoints
-* merge xml
-* timelapse registration
-* optional for dual channel dataset: dublicate transformations
-* optional for deconvolution: external transformation
-* average-weight fusion/deconvolution
-* define output
-* resave output into hdf5
-
-
-=== Preparations for processing ===
+=== Setup for dataset ===
 
 The entire processing is controlled via the yaml file.
 
 In the first part (common) of the yaml file the key parameters for the processing are found.
 These parameters are usually dataset and user dependent.
 The second part contains the advanced and manual overrides for each processing step. These steps correspond to the rules in the snakefile.
-
-
 
 1. Processing switches
 
@@ -458,7 +457,7 @@ common: {
   }
 </source>
 
-=== Submitting Jobs === 
+==== Submitting Jobs ==== 
 
 We recommend to execute snakemake within screen. 
 To execute snakemake you need to call snakemake, specify the number of jobs, the location of the data and to dispatch jobs to a cluster the information for the queuing system. Here is a list of commands and flags that are used for the snakemake workflow:
@@ -492,7 +491,6 @@ To save error and output files of cluster add:
 --cluster "bsub -q {cluster.lsf_q} {cluster.lsf_extra} -o test.out -e test.err“
 
 
-
 The commands to execute snakemake would then look like this:
 
 If DRMAA is supported on your cluster:
@@ -521,8 +519,7 @@ LSF
 
 Note:  the error and output of the cluster of all jobs are written into these files.
 
-=== Log files and supervision of the pipeline ===
-
+==== Log files and supervision of the pipeline ====
 
 The log files are written into a new directory in the data directory called "logs".
 The log files are ordered according to their position in the workflow. Multiple or alternative steps in the pipeline are indicated by numbers. 
