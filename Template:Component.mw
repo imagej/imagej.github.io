@@ -2,44 +2,76 @@
 ! colspan="2" style="text-align: center; font-size: 130%;" | <div style="float: left">{{{logo|}}}</div>{{{name|{{PAGENAME}}}}}<div style="clear: left;"></div>
 |-
 {{#if:{{{updateSite|}}}|
-! Update site
+! [[Update site]]
 {{!}} {{{updateSite|}}}
 {{!}}-
-}}
-
-{{#if:{{{filename|}}}|
-! File
-{{!}} {{{filename|}}}
+}} 
+{{#if:{{{url|}}}|
+! URL
+{{!}} {{{url}}}
 {{!}}-
 }}
 {{#if:{{{source|}}}|
 ! Source
-{{!}} {{{source|}}}
+{{!}} {{{source}}}
 {{!}}-
 }}
-{{#if:{{{released|}}}|
-! Initial release
-{{!}} {{{released|}}}
+{{#if:{{{license|}}}|
+! License
+{{!}} {{{license}}}
 {{!}}-
 }}
-{{#if:{{{latest version|}}}|
-! Latest version
-{{!}} {{{latest version|}}}
+{{#if:{{{release|}}}|
+! Release
+{{!}} {{{release}}}
 {{!}}-
 }}
-{{#if:{{{status|}}}|
-! Development status
-{{!}} {{{status|}}}
+{{#if:{{{date|}}}|
+! Date
+{{!}} {{{date}}}
 {{!}}-
 }}
-{{#if:{{{category|}}}|
-! Category
-{{!}} {{{category|}}}
+{{#if:{{{devStatus|}}}|
+! [[Development status]]
+{{!}} {{{devStatus}}}
 {{!}}-
 }}
-{{#if:{{{website|}}}|
-! Website
-{{!}} {{{website|}}}
+{{#if:{{{supportStatus|}}}|
+! [[Support status]]
+{{!}} {{{supportStatus}}}
+{{!}}-
+}}
+! style="background: black; color: white; font-variant: small-caps" | [[Team]]
+|-
+! [[Founders]]
+| {{{founders|-}}}
+|-
+! [[Leads]]
+| {{{leads|-}}}
+|-
+! [[Developers]]
+| {{{developers|-}}}
+|-
+! [[Debuggers]]
+| {{{debuggers|-}}}
+|-
+! [[Reviewers]]
+| {{{reviewers|-}}}
+|-
+! [[Support]]
+| {{{support|-}}}
+|-
+! [[Maintainers]]
+| {{{maintainers|-}}}
+|-
+{{#if:{{{contributors|}}}|
+! [[Contributors]]
+{{!}} {{{contributors}}}
+{{!}}-
+}}
+{{#if:{{{otherDevs|}}}|
+! [[Other developers]]
+{{!}} {{{otherDevs}}}
 {{!}}-
 }}
 |}</includeonly>
