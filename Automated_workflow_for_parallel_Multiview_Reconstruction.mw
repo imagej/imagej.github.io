@@ -139,10 +139,10 @@ The repository contains the example configuration scripts for single and dual ch
 </source>
 
 
-* The  `Snakefile` contains the name of the processing step as well as the input and output rules for the processing. 
-* `config.yaml` contains the parameters that configure the beanshell scripts found in the data directory.
-* `cluster.json` contains the resource information (processing time, number of cores and memory) for the queuing system. 
-* `*.bsh` scripts contain the instructions for Fiji to run the processing.
+* The  ''Snakefile'' contains the name of the processing step as well as the input and output rules for the processing. 
+* ''config.yaml'' contains the parameters that configure the beanshell scripts found in the data directory.
+* ''cluster.json'' contains the resource information (processing time, number of cores and memory) for the queuing system. 
+* ''*.bsh'' scripts contain the instructions for Fiji to run the processing.
 
 ==== tools ====
 
