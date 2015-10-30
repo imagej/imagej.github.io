@@ -19,4 +19,9 @@
 {{SupportStatus | reviewer=yes}}
 </pre>
 {{SupportStatus | reviewer=yes}}
+
+<pre style="overflow:auto">
+{{SupportStatus | support=no}}
+</pre>
+{{SupportStatus | support=no}}
 </noinclude>
