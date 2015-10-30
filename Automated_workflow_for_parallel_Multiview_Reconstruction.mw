@@ -38,16 +38,16 @@ Some new parameters are introduced and some old parameters change names. Therefo
 
 The current workflow consists of the following steps. It covers the prinicipal processing for timelapse multiview SPIM processing:
 
-* define czi or tif dataset
-* resave into hdf5
-* detect and register interespoints
-* merge xml
-* timelapse registration
-* optional for dual channel dataset: dublicate transformations
-* optional for deconvolution: external transformation
-* average-weight fusion/deconvolution
-* define output
-* resave output into hdf5
+1. define czi or tif dataset
+2. resave into hdf5
+3. detect and register interespoints
+4. merge xml
+5. timelapse registration
+6. optional for dual channel dataset: dublicate transformations
+7. optional for deconvolution: external transformation
+8. average-weight fusion/deconvolution
+9. define output
+10. resave output into hdf5
 
 == Supported datasets ==
 
