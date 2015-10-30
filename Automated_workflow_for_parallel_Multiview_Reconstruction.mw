@@ -31,10 +31,7 @@ In practice it means the following steps need to be executed:
 
 Some new parameters are introduced and some old parameters change names. Therefore, use the master file described in this chapter to process with the MVR pipeline.
 
-
-== Pre-requisites ==
-
-=== Supported datasets ===
+== Supported datasets ==
 
 The scripts are now supporting multiple angles, multiple channels and multiple illumination direction without adjusting the Snakefile or .bsh scripts.
 
@@ -65,44 +62,7 @@ Using ImageJ Opener (.tif):
     Multiple illumination directions: YES (one file per illumination direction) => not tested yet
     Multiple angles: YES (one file per angle)
 
-==== Example data ====
-
-You can download a 5 view, single channel .czi example dataset here:
-
-http://tomancak-srv1.mpi-cbg.de/~schmied/
-
-=== Command line ===
-
-It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate [[Linux_command_line_tutorial]] page that explains the bare essentials.
-
-=== Snakemake for workflow ===
-
-[https://bitbucket.org/johanneskoester/snakemake/wiki/Home Snakemake] (command-line workflow engine) is used to automatically execute individual steps in the workflow. The workflow documented on this page was tested with snakemake 3.3 (interfaced with [www.pyyaml.org PyYAML](version 3.11) and [https://github.com/pygridtools/drmaa-python python drmaa](version 0.7.6) support.
-
-=== Fiji for workflow ===
-
-You can a download Fiji version that we have tested for compatibility with the automated cluster processing here:
-
-http://tomancak-srv1.mpi-cbg.de/~schmied/
-
-We will from time to time upgrade.
-
-=== sysconfcpus ===
-
-We use Libsysconfcpus (http://www.kev.pulo.com.au/libsysconfcpus/) to restrict how many cores Fiji is using on the cluster.
-
-Compile with:
-<source lang="bash">
- CFLAGS=-ansi ./configure --prefix=$PREFIX
- make
- make install
-</source>
-
-where PREFIX is the installation directory.
-ANSI mode is necessary when compiling with our default GCC version, 4.9.2.
-It may or may not be necessary with older versions.
-
-=== Setup of workflow ===
+== Setup of workflow ==
 
 Clone the repository:
 
@@ -162,6 +122,46 @@ The master_preprocesing.sh file is the configuration script that contains the in
     ├── resaving.bsh
     └── submit-jobs
 </source>
+
+== Tutorial ==
+
+=== Preparation ===
+==== Example data ====
+
+You can download a 5 view, single channel .czi example dataset here:
+
+http://tomancak-srv1.mpi-cbg.de/~schmied/
+
+==== Fiji for workflow ====
+
+You can a download Fiji version that we have tested for compatibility with the automated cluster processing here:
+
+http://tomancak-srv1.mpi-cbg.de/~schmied/
+
+We will from time to time upgrade.
+
+==== sysconfcpus ====
+
+We use Libsysconfcpus (http://www.kev.pulo.com.au/libsysconfcpus/) to restrict how many cores Fiji is using on the cluster.
+
+Compile with:
+<source lang="bash">
+ CFLAGS=-ansi ./configure --prefix=$PREFIX
+ make
+ make install
+</source>
+
+where PREFIX is the installation directory.
+ANSI mode is necessary when compiling with our default GCC version, 4.9.2.
+It may or may not be necessary with older versions.
+
+==== Snakemake for workflow ====
+
+[https://bitbucket.org/johanneskoester/snakemake/wiki/Home Snakemake] (command-line workflow engine) is used to automatically execute individual steps in the workflow. The workflow documented on this page was tested with snakemake 3.3 (interfaced with [www.pyyaml.org PyYAML](version 3.11) and [https://github.com/pygridtools/drmaa-python python drmaa](version 0.7.6) support.
+
+==== Command line ====
+
+It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate [[Linux_command_line_tutorial]] page that explains the bare essentials.
 
 == workflow ==
 
