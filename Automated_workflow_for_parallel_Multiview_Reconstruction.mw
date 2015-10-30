@@ -164,7 +164,6 @@ The cluster tools directory contains the libraries for GPU deconvolution and the
 
 <source lang="bash">
 libFourierConvolutionCUDALib.so
-
 xvfb-run
 </source>
 
