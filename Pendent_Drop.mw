@@ -1,6 +1,17 @@
-= Pendent Drop =
+{{Infobox
+| name                   = Pendent Drop
+| software               = Fiji
+| author                 = [http://www.msc.univ-paris-diderot.fr/~daerr/ Adrian Daerr]
+| maintainer             = [http://www.msc.univ-paris-diderot.fr/~daerr/ Adrian Daerr]
+| update site            = [[[List of update sites]] http://sites.imagej.net/Daerr/]
+| source                 = https://github.com/adaerr/pendent-drop
+| released               = September 28, 2010
+| latest version         = version 2 (September 20, 2015)
+| status                 = stable, active
+}}
 
 [[File:eauContrasteMaxFit.jpg]]
+
 ''Pendent drop profile integration and fitting''
 
 == Brief description ==
