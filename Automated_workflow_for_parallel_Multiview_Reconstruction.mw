@@ -187,6 +187,22 @@ It is very likely that the cluster computer does not run ANY Graphical User Inte
 
 == Setup for dataset ==
 
+A data directory e.g. looks like this:
+
+It contains the .yaml file for the specific dataset. You can either copy it, if you want to keep it together with the dataset, or make a symlink from the processing repository. 
+
+<source lang="bash">
+/path/to/data/
+├── dataset.czi
+├── dataset(1).czi
+├── dataset(2).czi
+├── dataset(3).czi
+├── dataset(4).czi
+└── dataset.yaml	 		# copied/symlinked from this repo
+</source>
+
+
+
 The entire processing is controlled via the yaml file.
 
 In the first part (common) of the yaml file the key parameters for the processing are found.
