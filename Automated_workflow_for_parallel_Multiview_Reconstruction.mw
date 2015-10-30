@@ -111,6 +111,8 @@ git clone https://github.com/schmiedc/snakemake-workflows.git
 
 The repository contains the example configuration scripts for single and dual channel datasets, the Snakefile which defines the workflow, the beanshell scripts which drive the processing via Fiji and a cluster.json file which contains information for the cluster queuing system.
 
+==== timelapse ====
+
 <source lang="bash">
 /path/to/repository/spim_registration/timelapse/
 ├── config.yaml
