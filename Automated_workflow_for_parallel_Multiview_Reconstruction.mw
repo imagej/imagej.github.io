@@ -273,7 +273,7 @@ Now the dataset directory has a symlink for the config.yaml:
 └── dataset.yaml	 		# copied/symlinked from this repo
 </source>
 
-=== Setting up the ''config.yaml'' file for processing ===
+=== ''config.yaml'' ===
 
 The entire processing is controlled via the yaml file.
 
