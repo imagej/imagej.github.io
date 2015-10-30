@@ -8,7 +8,7 @@
 | released               = May 2006
 | latest version         = 1.0c (2014)
 | status                 = active
-| category               = [[:Category:Registration|Registration]], [[:Category:Segmentation|Segmentation]], [[:Category:Image annotation|Image annotation]], [[:Category:Plugins|Plugins]]
+| category               = [[:Category:Registration|Registration]], [[:Category:Segmentation|Segmentation]], [[:Category:Image annotation|Image annotation]], [[:Category:Plugins|Plugins]], [[:Category:Neuroanatomy|Neuroanatomy]]
 | website                = [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2 news and documentation]
 }}TrakEM2 is an ImageJ plugin for morphological data mining, three-dimensional modeling and image stitching, registration, editing and annotation.
 
@@ -155,3 +155,4 @@ label (set to 30% transparency) are selected (pink and white frames; white is th
 [[Category:Segmentation]]
 [[Category:TrakEM2]]
 [[Category:Image annotation]]
+[[Category:Neuroanatomy]]
