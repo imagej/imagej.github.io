@@ -33,8 +33,6 @@ Some new parameters are introduced and some old parameters change names. Therefo
 
 = Logic of workflow =
 
-The repository contains the example configuration scripts for single and dual channel datasets, the Snakefile which defines the workflow, the beanshell scripts which drive the processing via Fiji and a cluster.json file which contains information for the cluster queuing system. 
-
 = workflow =
 
 
