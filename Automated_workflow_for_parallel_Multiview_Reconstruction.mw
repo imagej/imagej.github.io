@@ -193,6 +193,33 @@ It is very likely that the cluster computer does not run ANY Graphical User Inte
 
 == Initial setup of workflow ==
 
+After you cloned the snakemake-worflows repository you need to configure the ''config.yaml'' for your setup.
+This means you need to specify the directory for your Fiji, the location of the xvfb-run and the location for the GPU deconvolution libraries. 
+Open the ''config.yaml'' with your preferred editor and change the settings in section ''7. Software directories'':
+
+<source lang="bash">
+ # ============================================================================
+  # 7. Software directories
+  # 
+  # Description: paths to software dependencies of processing
+  # Options: Fiji location
+  #          beanshell and snakefile diretory
+  #          directory for cuda libraries
+  #          xvfb setting
+  #          sysconfcpus setting
+  # ============================================================================
+  # current working Fiji
+  fiji-app: "/sw/users/schmied/packages/2015-06-30_Fiji.app.cuda/ImageJ-linux64",
+  # bean shell scripts and Snakefile
+  bsh_directory: "/projects/pilot_spim/Christopher/snakemake-workflows/spim_registration/timelapse/",
+  # Directory that contains the cuda libraries
+  directory_cuda: "/sw/users/schmied/cuda/",
+  # xvfb 
+  fiji-prefix: "/sw/users/schmied/packages/xvfb-run -a",       # calls xvfb for Fiji headless mode
+  sysconfcpus: "sysconfcpus -n",
+  memory-prefix: "-Xmx"
+</source>
+
 == Setup for dataset ==
 
 A data directory e.g. looks like this:
