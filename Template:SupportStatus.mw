@@ -1,0 +1,22 @@
+<includeonly>{{#ifeq:{{{support|}}}|yes|{{#ifeq:{{{debugger|}}}|yes|[[Components#Supported|Supported]]|[[Components#Partial|Partial]]}}|{{#ifeq:{{{debugger|}}}|yes|[[Components#Minimal|Minimal]]|{{#ifeq:{{{reviewer|}}}|yes|[[Components#Minimal|Minimal]]|[[Components#None|None]]}}}}}}</includeonly><noinclude>
+==Examples==
+<pre style="overflow:auto">
+{{SupportStatus | support=yes | debugger=yes}}
+</pre>
+{{SupportStatus | support=yes | debugger=yes}}
+
+<pre style="overflow:auto">
+{{SupportStatus | support=yes}}
+</pre>
+{{SupportStatus | support=yes}}
+
+<pre style="overflow:auto">
+{{SupportStatus | debugger=yes}}
+</pre>
+{{SupportStatus | debugger=yes}}
+
+<pre style="overflow:auto">
+{{SupportStatus | reviewer=yes}}
+</pre>
+{{SupportStatus | reviewer=yes}}
+</noinclude>
