@@ -41,7 +41,7 @@
 {{!}} {{{supportStatus}}}
 {{!}}-
 }}
-! colspan=2 style="background: gray; font-variant: small-caps" | [[Team]]
+! colspan=2 style="background: gray; font-variant: small-caps; text-align: center" | [[Team]]
 |-
 ! [[Founders]]
 | {{{founders|-}}}
