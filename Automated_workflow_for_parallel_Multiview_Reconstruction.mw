@@ -220,6 +220,8 @@ Open the ''config.yaml'' with your preferred editor and change the settings in s
   memory-prefix: "-Xmx"
 </source>
 
+After this initial setup you can proceed to modify the ''config.yaml'' for your specific dataset.
+
 == Setup for dataset ==
 
 A data directory e.g. looks like this:
