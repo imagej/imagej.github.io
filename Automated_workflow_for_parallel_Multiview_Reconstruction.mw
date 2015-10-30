@@ -548,6 +548,13 @@ common: {
 ==== 1. Processing switches ====
 
 In the first section you need to decide which processing you want to carry out. 
+Open the ''config.yaml'' file:
+
+<source lang="bash">
+cd snakemake-workflows/spim_registration/timelapse/
+nano config.yaml
+</source>
+
 The ''transformation_switch'' switches between normal single channel/ multi channel processing were all channels contain beads for registration and multi channel processing where only one channel contains beads.
 If there are channels present without channels the transformations of the other channels need to be copied in order for their registration. 
 
