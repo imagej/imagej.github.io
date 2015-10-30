@@ -543,6 +543,10 @@ common: {
   }
 </source>
 
+=== Setting up the ''config.yaml'' file for processing ===
+
+
+
 === Submitting Jobs === 
 
 We recommend to execute snakemake within screen. 
