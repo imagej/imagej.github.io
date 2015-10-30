@@ -9,7 +9,7 @@
 | released        = March 2013
 | latest version = '''1.4.0 2015.01.01'''
 | status          = Active, Stable
-| category        = [[:Category:Skeleton|Skeleton]], [[:Category:Analysis|Analysis]], [[:Category:Scripting|Scripting]], [[:Category:Plugins|Plugins]]
+| category        = [[:Category:Skeleton|Skeleton]], [[:Category:Analysis|Analysis]], [[:Category:Scripting|Scripting]], [[:Category:Plugins|Plugins]], [[:Category:Neuroanatomy|Neuroanatomy]]
 }}
 A [[BAR]] script (written in [[Beanshell_Scripting|BeanShell]]) that performs Strahler analysis on topographic skeletons (2D/3D) through progressive pruning of terminal branches. [[wikipedia:Strahler number|Strahler numbering]] is a numerical procedure that summarizes the branching complexity of a mathematical tree.
 
