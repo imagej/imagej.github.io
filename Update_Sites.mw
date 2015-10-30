@@ -10,9 +10,7 @@ For further details, see [[How to follow a 3rd party update site]].
 
 == Creating your own update site ==
 
-Anyone can share their extensions ([[plugins]], [[scripts]], etc.) by '''creating their own update site'''. You can use ImageJ's '''personal update site''' service (hosted on the [http://sites.imagej.net/ ImageJ web server]), or host it on your own server.
-
-See [[How to set up and populate an update site]] for instructions.
+Anyone can share their extensions ([[plugins]], [[scripts]], etc.) by [[How to set up and populate an update site|creating their own update site]]. You can use ImageJ's [[personal update site]] service (hosted on the [http://sites.imagej.net/ ImageJ web server]), or host it on your own server.
 
 == Frequently asked questions ==
 
