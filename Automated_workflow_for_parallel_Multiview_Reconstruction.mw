@@ -170,8 +170,8 @@ The master_preprocesing.sh file is the configuration script that contains the in
 ==== cluster_tools ====
 
 libFourierConvolutionCUDALib.so
-Virtual frame buffer (xvfb) - xvfb-run
 
+Virtual frame buffer (xvfb) - xvfb-run
 
 === sysconfcpus ===
 
