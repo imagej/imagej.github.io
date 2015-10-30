@@ -51,61 +51,6 @@ The current workflow consists of the following steps. It covers the prinicipal p
 * define output
 * resave output into hdf5
 
-<source lang="bash">
-/path/to/repository/spim_registration/timelapse/
-├── config.yaml
-├── Snakefile
-├── cluster.json
-├── define_tif_zip.bsh
-├── define_czi.bsh
-├── registration.bsh
-├── deconvolution.bsh
-├── transform.bsh		
-├── registration.bsh 	
-└── xml_merge.bsh	
- 		
-</source>
-
-A data directory e.g. looks like this:
-
-It contains the .yaml file for the specific dataset. You can either copy it, if you want to keep it together with the dataset, or make a symlink from the processing repository. 
-
-<source lang="bash">
-/path/to/data/
-├── dataset.czi
-├── dataset(1).czi
-├── dataset(2).czi
-├── dataset(3).czi
-├── dataset(4).czi
-└── dataset.yaml	 		# copied/symlinked from this repo
-
-</source>
-
-
-* `tomancak.yaml` contains the parameters that configure the beanshell scripts found in the data directory
-* `Snakefile` from this directory
-* `cluster.json` that resides in the same directory as the `Snakefile`
-* cluster runs LSF
-
-== Tools ==
-
-
-The tool directory contains scripts for common file format pre-processing.
-Some datasets are currently only usable when resaving them into .tif:
-* discontinous .czi datasets
-* .czi dataset with multiple groups
-
-The master_preprocesing.sh file is the configuration script that contains the information about the dataset that needs to be resaved. In the czi_resave directory you will find the the create-resaving-jobs.sh script that creates a job for each TP. The submit-jobs script sends these jobs to the cluster were they call the resaving.bsh script. The beanshell then uses executes the Fiji macro and resaves the files. The resaving of czi files is using LOCI bioformats and preserves the metadata. 
-
-<source lang="bash">
-/path/to/repository/spim_registration/tools/
-├── master_preprocessing.sh
-├── czi_resave/
-    ├── create-resaving-jobs.sh
-    ├── resaving.bsh
-    └── submit-jobs
-</source>
-
 == Supported datasets ==
 
 The scripts are now supporting multiple angles, multiple channels and multiple illumination direction without adjusting the Snakefile or .bsh scripts.
