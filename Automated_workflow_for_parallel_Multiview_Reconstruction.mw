@@ -71,6 +71,25 @@ It contains the .yaml file for the specific dataset. You can either copy it, if 
 * `cluster.json` that resides in the same directory as the `Snakefile`
 * cluster runs LSF
 
+=== Tools ===
+
+
+The tool directory contains scripts for common file format pre-processing.
+Some datasets are currently only usable when resaving them into .tif:
+* discontinous .czi datasets
+* .czi dataset with multiple groups
+
+The master_preprocesing.sh file is the configuration script that contains the information about the dataset that needs to be resaved. In the czi_resave directory you will find the the create-resaving-jobs.sh script that creates a job for each TP. The submit-jobs script sends these jobs to the cluster were they call the resaving.bsh script. The beanshell then uses executes the Fiji macro and resaves the files. The resaving of czi files is using LOCI bioformats and preserves the metadata. 
+
+<source lang="bash">
+/path/to/repository/spim_registration/tools/
+├── master_preprocessing.sh
+├── czi_resave/
+    ├── create-resaving-jobs.sh
+    ├── resaving.bsh
+    └── submit-jobs
+</source>
+
 == Supported datasets ==
 
 The scripts are now supporting multiple angles, multiple channels and multiple illumination direction without adjusting the Snakefile or .bsh scripts.
@@ -101,25 +120,6 @@ Using ImageJ Opener (.tif):
     Multiple channels: YES (one file per channel)
     Multiple illumination directions: YES (one file per illumination direction) => not tested yet
     Multiple angles: YES (one file per angle)
-
-=== Tools ===
-
-
-The tool directory contains scripts for common file format pre-processing.
-Some datasets are currently only usable when resaving them into .tif:
-* discontinous .czi datasets
-* .czi dataset with multiple groups
-
-The master_preprocesing.sh file is the configuration script that contains the information about the dataset that needs to be resaved. In the czi_resave directory you will find the the create-resaving-jobs.sh script that creates a job for each TP. The submit-jobs script sends these jobs to the cluster were they call the resaving.bsh script. The beanshell then uses executes the Fiji macro and resaves the files. The resaving of czi files is using LOCI bioformats and preserves the metadata. 
-
-<source lang="bash">
-/path/to/repository/spim_registration/tools/
-├── master_preprocessing.sh
-├── czi_resave/
-    ├── create-resaving-jobs.sh
-    ├── resaving.bsh
-    └── submit-jobs
-</source>
 
 == Tutorial ==
 
