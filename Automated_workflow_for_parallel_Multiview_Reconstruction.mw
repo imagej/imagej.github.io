@@ -146,7 +146,7 @@ It contains the .yaml file for the specific dataset. You can either copy it, if 
 * `cluster.json` that resides in the same directory as the `Snakefile`
 * cluster runs LSF
 
-== Tools ==
+==== Tools ====
 
 
 The tool directory contains scripts for common file format pre-processing.
