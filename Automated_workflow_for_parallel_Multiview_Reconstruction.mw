@@ -146,7 +146,7 @@ It contains the .yaml file for the specific dataset. You can either copy it, if 
 * `cluster.json` that resides in the same directory as the `Snakefile`
 * cluster runs LSF
 
-==== Tools ====
+==== tools ====
 
 
 The tool directory contains scripts for common file format pre-processing.
@@ -164,7 +164,6 @@ The master_preprocesing.sh file is the configuration script that contains the in
     ├── resaving.bsh
     └── submit-jobs
 </source>
-
 
 ==== cluster_tools ====
 
