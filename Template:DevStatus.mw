@@ -1,22 +1,22 @@
 <includeonly>{{#ifeq:{{{obsolete|}}}|yes|[[Components#Obsolete|Obsolete]]|{{#ifeq:{{{developer|}}}|yes|{{#ifeq:{{{incubating|}}}|yes|[[Components#Unstable|Unstable]]|[[Components#Active|Active]]}}|[[Components#Stable|Stable]]}}}}</includeonly><noinclude>
 ==Examples==
-{{DevStatus | developer=yes}}
 <pre style="overflow:auto">
 {{DevStatus | developer=yes}}
 </pre>
+{{DevStatus | developer=yes}}
 
-{{DevStatus | developer=no}}
 <pre style="overflow:auto">
 {{DevStatus | developer=no}}
 </pre>
+{{DevStatus | developer=no}}
 
-{{DevStatus | developer=yes | incubating=yes}}
 <pre style="overflow:auto">
 {{DevStatus | developer=yes | incubating=yes}}
 </pre>
+{{DevStatus | developer=yes | incubating=yes}}
 
-{{DevStatus | obsolete=yes}}
 <pre style="overflow:auto">
 {{DevStatus | obsolete=yes}}
 </pre>
+{{DevStatus | obsolete=yes}}
 </noinclude>
