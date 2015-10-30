@@ -64,14 +64,14 @@
 ! [[Maintainers]]
 | {{{maintainers|-}}}
 |-
-{{#if:{{{contributors|}}}|
-! [[Contributors]]
-{{!}} {{{contributors}}}
-{{!}}-
-}}
 {{#if:{{{otherDevs|}}}|
 ! [[Other developers]]
 {{!}} {{{otherDevs}}}
+{{!}}-
+}}
+{{#if:{{{contributors|}}}|
+! [[Contributors]]
+{{!}} {{{contributors}}}
 {{!}}-
 }}
 |}</includeonly>
