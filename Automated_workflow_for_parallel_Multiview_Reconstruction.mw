@@ -574,11 +574,10 @@ Set the ''fusion_switch'' to ''fusion'' to do weighted-average fusion:
 fusion_switch: "fusion",
 </source>
 
-Set the ''fusion_switch'' to '' deconvolution"' to perform deconvolution:
+Set the ''fusion_switch'' to ''deconvolution'' to perform deconvolution:
 <source lang="bash">
 fusion_switch: "deconvolution",
 </source>
-
 
 ==== 2.1. General Settings ====
 
