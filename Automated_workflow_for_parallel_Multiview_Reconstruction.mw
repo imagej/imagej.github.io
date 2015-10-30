@@ -83,11 +83,6 @@ Using ImageJ Opener (.tif):
 = Tutorial =
 
 == Preparation ==
-=== Example data ===
-
-You can download a 5 view, single channel .czi example dataset here:
-
-http://tomancak-srv1.mpi-cbg.de/~schmied/
 
 === Fiji for workflow ===
 
