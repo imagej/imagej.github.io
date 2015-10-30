@@ -231,9 +231,9 @@ You can download a 5 view, single channel .czi example dataset here:
 
 http://tomancak-srv1.mpi-cbg.de/~schmied/
 
-A data directory e.g. looks like this
+A data directory e.g. looks like this:
 
-It contains the .yaml file for the specific dataset. You can either copy it, if you want to keep it together with the dataset, or make a symlink from the processing repository. 
+
 
 <source lang="bash">
 /path/to/data/
@@ -241,10 +241,28 @@ It contains the .yaml file for the specific dataset. You can either copy it, if 
 ├── dataset(1).czi
 ├── dataset(2).czi
 ├── dataset(3).czi
-├── dataset(4).czi
-└── dataset.yaml	 		# copied/symlinked from this repo
+└── dataset(4).czi
 </source>
 
+For processing the dataset directory contains the ''config.yaml'' file for the specific dataset. You can either copy it, if you want to keep it together with the dataset, or make a symlink from the processing repository. 
+Go to your dataset directory and make a symlink for the config.yaml:
+
+<source lang="bash">
+cd /path/to/data/
+ln -s /path/snakemake-workflows/spim_registration/timelapse/config.yaml
+</source>
+
+Now the dataset directory has a symlink for the config.yaml:
+
+<source lang="bash">
+/path/to/data/
+├── dataset.czi
+├── dataset(1).czi
+├── dataset(2).czi
+├── dataset(3).czi
+└── dataset(4).czi
+└── dataset.yaml	 		# copied/symlinked from this repo
+</source>
 
 
 The entire processing is controlled via the yaml file.
