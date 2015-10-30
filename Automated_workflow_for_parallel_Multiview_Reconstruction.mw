@@ -154,6 +154,8 @@ http://tomancak-srv1.mpi-cbg.de/~schmied/
 
 We will from time to time upgrade.
 
+==== Virtual frame buffer (xvfb) ====
+
 ==== sysconfcpus ====
 
 We use Libsysconfcpus (http://www.kev.pulo.com.au/libsysconfcpus/) to restrict how many cores Fiji is using on the cluster.
