@@ -125,7 +125,7 @@
 | otherDevs = Wayne Rasband (architect)
 }}
 <pre style="overflow:auto">
-{{SoftwareBox
+{{Component
 | updateSite = ImageJ
 | name = ImageJ 1.x
 | url = http://imagej.net/index.html
