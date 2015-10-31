@@ -75,11 +75,8 @@
 {{!}}-
 }}
 |}</includeonly>
-
-<noinclude>This template is a sidebar for displaying key statistics about a plugin.
-
+<noinclude>This template is a sidebar for displaying key statistics about a software component.
 ==Usage==
-
 <pre>
 {{Component
 | updateSite = 
@@ -123,8 +120,7 @@
 | maintainers = {{Person|Rasband}}
 | contributors = [http://loci.wisc.edu/people/barry-dezonia Barry DeZonia]
 | otherDevs = Wayne Rasband (architect)
-}}
-<pre style="overflow:auto">
+}}<pre style="overflow:auto">
 {{Component
 | updateSite = ImageJ
 | name = ImageJ 1.x
