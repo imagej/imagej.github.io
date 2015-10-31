@@ -1,4 +1,4 @@
-<includeonly>{{#ifeq:{{{obsolete|}}}|yes|[[Components#Obsolete|Obsolete]]|{{#ifeq:{{{developer|}}}|yes|{{#ifeq:{{{incubating|}}}|yes|[[Components#Unstable|Unstable]]|[[Components#Active|Active]]}}|[[Components#Stable|Stable]]}}}}</includeonly><noinclude>
+<includeonly>{{#ifeq:{{{obsolete|}}}|yes|Obsolete|{{#ifeq:{{{developer|}}}|yes|{{#ifeq:{{{incubating|}}}|yes|Unstable|Active}}|Stable}}}}</includeonly><noinclude>
 ==Examples==
 <pre style="overflow:auto">
 {{DevStatus | developer=yes}}
