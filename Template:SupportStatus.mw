@@ -1,4 +1,4 @@
-<includeonly>{{#ifeq:{{{support|}}}|yes|{{#ifeq:{{{debugger|}}}|yes|[[Components#Supported|Supported]]|[[Components#Partial|Partial]]}}|{{#ifeq:{{{debugger|}}}|yes|[[Components#Minimal|Minimal]]|{{#ifeq:{{{reviewer|}}}|yes|[[Components#Minimal|Minimal]]|[[Components#None|None]]}}}}}}</includeonly><noinclude>
+<includeonly>{{#ifeq:{{{support|}}}|yes|{{#ifeq:{{{debugger|}}}|yes|Active|Partial}}|{{#ifeq:{{{debugger|}}}|yes|Minimal|{{#ifeq:{{{reviewer|}}}|yes|Minimal|None}}}}}}</includeonly><noinclude>
 ==Examples==
 <pre style="overflow:auto">
 {{SupportStatus | support=yes | debugger=yes}}
