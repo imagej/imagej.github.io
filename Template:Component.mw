@@ -43,34 +43,34 @@
 }}
 ! colspan=2 style="background: lightgray; font-variant: small-caps; text-align: center" | [[Team]]
 |-
-! [[Founders]]
+! [[Team|Founders]]
 | {{{founders|-}}}
 |-
-! [[Leads]]
+! [[Team|Leads]]
 | {{{leads|-}}}
 |-
-! [[Developers]]
+! [[Team|Developers]]
 | {{{developers|-}}}
 |-
-! [[Debuggers]]
+! [[Team|Debuggers]]
 | {{{debuggers|-}}}
 |-
-! [[Reviewers]]
+! [[Team|Reviewers]]
 | {{{reviewers|-}}}
 |-
-! [[Support]]
+! [[Team|Support]]
 | {{{support|-}}}
 |-
-! [[Maintainers]]
+! [[Team|Maintainers]]
 | {{{maintainers|-}}}
 |-
 {{#if:{{{otherDevs|}}}|
-! [[Other developers]]
+! [[Team|Other developers]]
 {{!}} {{{otherDevs}}}
 {{!}}-
 }}
 {{#if:{{{contributors|}}}|
-! [[Contributors]]
+! [[Team|Contributors]]
 {{!}} {{{contributors}}}
 {{!}}-
 }}
