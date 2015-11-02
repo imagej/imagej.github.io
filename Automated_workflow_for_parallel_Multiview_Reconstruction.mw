@@ -702,7 +702,46 @@ maximal_z: '480',
 
 ===== 6.1. External transformation =====
 
+If you want to use downsampling for the multiview deconvolution set the ''external_trafo_switch'' to ''external_trafo''.
+Without downsampling use ''_transform''. The matrix for the external transformation specifies the downsampling.
+Here it is set to 2x downsampling:
+
+<source lang="bash">
+external_trafo_switch: "external_trafo",
+matrix_transform: '"0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0"',
+</source>
+
 ===== 6.2. Deconvolution settings =====
+
+To carry out the deconvolution specify the numbers of iterations as well as the bounding box. For the multiview deconvolution the bounding box needs to take the downsampling into account: 
+
+<source lang="bash">
+iterations: '15',
+minimal_x_deco: '137',
+minimal_y_deco: '-8',
+minimal_z_deco: '-211',
+maximal_x_deco: '527',
+maximal_y_deco: '964',
+maximal_z_deco: '240',
+</source>
+
+Then specify the source for the PSF. For single channel datasets it is just '"beads"'.
+
+<source lang="bash">
+detections_to_extract_psf_for_channel: '"beads"',
+</source>
+
+For dual channel datasets its '"beads,beads"'
+
+<source lang="bash">
+detections_to_extract_psf_for_channel: '"beads,beads"',
+</source>
+
+If you process multi channel datasets were only one channel contains beads then specify which channel does not contain beads:
+
+<source lang="bash">
+detections_to_extract_psf_for_channel: '"[Same PSF as channel red],beads"',
+</source>
 
 ==== 7. Software directories ==== 
 
