@@ -685,6 +685,19 @@ reference_timepoint: '1',
 
 ==== 5. Weighted-average fusion ====
 
+For the weighted-average fusion specify the downsampling factor and the bounding box determined in the GUI processing on the reference time point.
+The bounding box is for the Weighted-average fusion independent of the downsampling:
+
+<source lang="bash">
+downsample: '1', 
+minimal_x: '274',
+minimal_y: '17',
+minimal_z: '-423',
+maximal_x: '1055',
+maximal_y: '1928',
+maximal_z: '480',
+</source>
+
 ==== 6. Multiview deconvolution ====
 
 ===== 6.1. External transformation =====
