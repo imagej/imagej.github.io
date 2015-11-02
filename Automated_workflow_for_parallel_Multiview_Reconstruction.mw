@@ -676,6 +676,13 @@ reg_threshold: '0.005',
 
 ==== 4. Timelapse registration ====
 
+Specify which time point should be used as reference time point.
+We generally use a time point in the middle of the dataset:
+
+<source lang="bash">
+reference_timepoint: '1', 
+</source>
+
 ==== 5. Weighted-average fusion ====
 
 ==== 6. Multiview deconvolution ====
