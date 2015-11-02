@@ -646,6 +646,34 @@ multiple_channels: '"YES (all channels in one file)"',
 
 ==== 3. Detection and registration ====
 
+To carry out the registration specify the channels for the data. For single channel data and multi channel data were all channels contain beads for registration you want to select the following:
+As interest points specify '"beads"'. For multi channel datasets give '"beads,beads"':
+
+<source lang="bash">
+reg_process_channel: '"All channels"',
+reg_interest_points_channel: '"beads"',
+</source>
+
+If you have dual channel datasets were only one channel contains beads specify that you want to select only one channel.
+Also specify the source and target channels. Also specify the correct channel that should not be registered:
+
+<source lang="bash">
+reg_process_channel: '"All channels"',
+source_channel: "red",
+target_channel: "green",
+reg_interest_points_channel: '"[DO NOT register this channel],beads"',
+</source>
+
+Next give the parameters for the detection method. Select the method which is used for registration (i.e. Difference-of-Mean or Difference-of-Gaussian).
+We recommend using Difference-of-Gaussian. Give the information for radius 1 and 2 as well as the threshold that you retrieved by processing the reference time point with the Graphical user interface:
+
+<source lang="bash">
+type_of_detection: '"Difference-of-Gaussian"',
+reg_radius_1: '2',
+reg_radius_2: '3',
+reg_threshold: '0.005',
+</source>
+
 ==== 4. Timelapse registration ====
 
 ==== 5. Weighted-average fusion ====
