@@ -761,7 +761,32 @@ Also the prefix for sysconfcpus and the memory prefix for Fiji are stored:
   memory-prefix: "-Xmx"
 </source>
 
-==== 8. Fiji Resource settings ==== 
+==== 8. Fiji Resource settings ====
+
+Here the resource restrictions for Fiji with the number of cores and memory are specified for each processing step.
+These settings need to match the cluster.jason file:
+
+<source lang="bash">
+Fiji_resources: {
+  # setting for hdf5 resave:
+  num_cores_hdf5: 3,
+  mem_hdf5: "20g",
+  # setting for registration:
+  num_cores_reg: 4,
+  mem_reg: "40g",
+  # setting for timelapse registration:
+  num_cores_time: 3,
+  mem_time: "50g",
+  # settings for average fusion:
+  num_cores_fusion: 6,
+  mem_fusion: "50g",
+  # settings for deconvolution:
+  num_cores_deco: 12,
+  mem_deco: "110g",
+  # settings for resaving of output:
+  num_cores_output: 3,
+  mem_output: "20g"
+</source>
 
 ==== 9. Advanced settings ====
 
