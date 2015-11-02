@@ -743,7 +743,23 @@ If you process multi channel datasets were only one channel contains beads then 
 detections_to_extract_psf_for_channel: '"[Same PSF as channel red],beads"',
 </source>
 
-==== 7. Software directories ==== 
+==== 7. Software directories ====
+
+Here the directories for the Fiji, ''beanshell'' scripts, CUDA libraries and xvfb are stored.
+Also the prefix for sysconfcpus and the memory prefix for Fiji are stored:
+
+<source lang="bash">
+  # current working Fiji
+  fiji-app: "/sw/users/schmied/packages/2015-06-30_Fiji.app.cuda/ImageJ-linux64",
+  # bean shell scripts and Snakefile
+  bsh_directory: "/projects/pilot_spim/Christopher/snakemake-workflows/spim_registration/timelapse/",
+  # Directory that contains the cuda libraries
+  directory_cuda: "/sw/users/schmied/cuda/",
+  # xvfb 
+  fiji-prefix: "/sw/users/schmied/packages/xvfb-run -a",       # calls xvfb for Fiji headless mode
+  sysconfcpus: "sysconfcpus -n",
+  memory-prefix: "-Xmx"
+</source>
 
 ==== 8. Fiji Resource settings ==== 
 
