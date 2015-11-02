@@ -581,9 +581,68 @@ fusion_switch: "deconvolution",
 
 ==== 2.1. General Settings ====
 
+In the the next section specify the name for the dataset. This will be the name of the ''HDF5'' file and the ''XML'' file:
+
+<source lang="bash">
+hdf5_xml_filename: '"dataset_one"',
+</source>
+
+Then specify the number of time points of the dataset. The example dataset has 2 time points.
+The processing of each time point runs in parallel on the cluster. 
+
+<source lang="bash">
+ntimepoints: 2,  
+</source>
+
+Then specify the angles, the channels and the illumination side. If you resaved data into ''.tif'' from ''.czi'' then give the appropriate numbers (i.e. 0,1). 
+The values are separated by a comma:
+
+<source lang="bash">
+angles: "0,72,144,216,288",
+channels: "green", 
+illumination: "0", 
+</source>
+
+If you want to process dual channel datasets use two different names for the channels:
+
+<source lang="bash">
+angles: "0,72,144,216,288",
+channels: "green,red", 
+illumination: "0", 
+</source>
+
 ===== 2.2. Settings for .czi files =====
 
+If you process ''.czi'' files then give the name of the first ''.czi'' (file without index): 
+
+<source lang="bash">
+first_czi: "2015-02-21_LZ1_Stock68_3.czi",
+</source>
+
 ===== 2.3. Settings for .tif datasets =====
+
+For processing of ''.tif'' files give the pattern of the files and if you process single channel datasets or dual channel datasets:
+
+<source lang="bash">
+image_file_pattern: 'img_TL{{t}}_Angle{{a}}.tif',
+multiple_channels: '"NO (one channel)"', 
+</source>
+
+For datasets with multiple channels the files can be separated by channel or each file can contain both channels. 
+For multi channel datasets with separated files per channel give additionally the channel information of the ''image_file_pattern''
+
+<source lang="bash">
+image_file_pattern: 'img_TL{{t}}_Angle{{a}}_Channels{{c}}.tif',
+multiple_channels: '"YES (one file per channel)"', 
+</source>
+
+If the files contain both channels then leave out the channel information in the ''image_file_pattern''. 
+And specify for ''multiple_channels'' that you want to process multi channel datasets:
+
+<source lang="bash">
+image_file_pattern: 'img_TL{{t}}_Angle{{a}}_Channels{{c}}.tif',
+multiple_channels: '"YES (all channels in one file)"', 
+</source>
 
 ==== 3. Detection and registration ====
 
