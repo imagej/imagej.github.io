@@ -1,0 +1,37 @@
+
+== Stack Object Combiner ==
+Because of the exponential cost of the 3D segmentation (in memory and processing) with [http://ilastik.org/ Ilastik], it is not possible to work on full stacks of EM images in once.<br/>
+To be fully segmented, the stack need to be cut in parts. But this operation will cut some objects in 2 or more parts, and the objects will lost the coordinate system of the original stack.<br/>
+The purpose of this plugin is to replace the objects in their original position, and provide a tool that will allow a user to merge 3D objects that have been cut.
+
+== Installation ==
+The plugin can be found on the github [https://github.com/Tom-TBT/StackObjectCombiner/releases project] (please take the lattest version of the plugin). <br/>
+Download the .jar file and place it in the plugin folder of ImageJ.
+
+== Usage ==
+Because the coordinates system of the original stack have been lost, the plugin use a naming convention to know where the objects come from.
+
+[[File:decoupage.png]]
+
+The image show how the stacks parts are name. The object coming from a given part should be prefixed by the letter of the sub-stack (e.g. A_axon, C_dendrite, ...)
+
+The plugin ask first for a directory. This directory should contain all the objects you want to work with.<br/>
+Then the plugin will ask for the position of the vertical and/or the horizontal split. The vertical correspond to the limit between the AB part and the CD part. The horizontal correspond to the limit between the AC part and the BD part. You can have these value by looking at the dimension of the A_stack. Vertical split correspond to the x dimension, and horizontal to the y dimension.<br/><br/><br/>
+
+The plugin will then propose two functions : <br/><br/>
+Move Meshes : The plugin will shift every object in the directory. With the naming convention, the plugin will add a constant to the vertices of the objects to replace them. Also, the plugin will add a line to the files of the objects : #movedBySOC  This tell to the plugin that the objects have been replaced and don't need it any more. If your object don't need to be replaced, just add this line to your object's file.<br/><br/>
+Merge Meshes : The plugin ask for two objects to merge. The objects in the list are the object containing the line #movedBySOC . Note that only compatible objects can be efficiently merged. The objects don't need symmetrical borders, but if they don't correspond a little, the behaviour of the plugin is unknown.<br/>
+
+
+== Example ==
+During this example, you can look at the different step with the [http://fiji.sc/3D_Viewer 3DViewer], or with [https://www.blender.org/ Blender].
+<ol>
+<li>Download the meshes of a mitochondria in the shape of a donut divided in 4 parts [[Media:MitoDonut Meshes.zip]]</li>
+<li>Launch the plugin, and give the directory containing the .obj file</li>
+<li>Vertical Split : 192 &nbsp;&nbsp;&nbsp;Horizontal Split : 214</li>
+<li>Choose the Move Meshes function and wait for the plugin</li>
+<li>Now choose the Merge Meshes function, and merge A_MitoDonut with B_MitoDonut, and name it A_something</li>
+<li>Merge C_MitoDonut with D_MitoDonut, and name it C_something</li>
+<li>Merge now your two new objects A_something with C_something. It is important that the two objects are named with A_ & C_ names (or with B_ & D_ names) because the plugin check if the objects are adjacent, and which split should be used to merge them</li>
+<li>Look at the result</li>
+</ol>
