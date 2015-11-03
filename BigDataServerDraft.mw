@@ -43,7 +43,7 @@ Running the above command without parameters will print this help:
  is the path to the XML file of the dataset.
  -d <FILE>           Dataset file: A plain text file specifying one dataset
                      per line. Each line is formatted as "NAME <TAB> XML".
- -m <SECURE_PORT>    Manager context HTTPS port. The manager context is enabled.
+ -m <SECURE_PORT>    Manager context HTTPS port. The manager context is automaticallyenabled.
                      (default: 8443)
  -p <PORT>           Listening port.
                      (default: 8080)
