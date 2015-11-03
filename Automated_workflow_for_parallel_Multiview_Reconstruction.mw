@@ -793,6 +793,8 @@ Fiji_resources: {
 In the advanced settings are more options for further refining the processing. 
 These settings should only be changed when necessary.
 
+=== ''cluster.json'' ===
+
 === Submitting Jobs === 
 
 We recommend to execute snakemake within screen. 
