@@ -1,1 +1,31 @@
-#REDIRECT [[2014-04-04 - Announcing ImageJ Ops]]
+==Introduction==
+ImageJ Ops is a framework for reusable image processing operations. Ops extends Java's mantra of &quot;write once, run anywhere&quot; to image processing algorithms.
+
+The central goal is to enable programmers to code an image processing algorithm in the Ops framework, which is then usable as-is from any [[SciJava]]-compatible software project, such as [[ImageJ]], [[CellProfiler]], [[KNIME]], [[OMERO]] and [[Alida]].
+
+==Design goals==
+
+Ops has three major design goals:
+
+# '''Easy to use and extend.''' There must be a wealth of easy-to-use image processing operations (&quot;ops&quot;), as well as an easy framework for extending those ops in new directions.
+# '''Powerful and general.''' An op should be able to consist of any number of typed input and output parameters, operating on arbitrary data structures, including images of N dimensions stored in a myriad of different ways: as files on disk, programmatically generated in memory, or in remote databases. Using the powerful [[ImgLib2]] library achieves this ambitious goal.
+# '''Very fast.''' Even though ImgLib2 is vastly more general than ImageJ 1.x's data model, that generality should not come at the expense of performance. Otherwise, users must pay a time tax to do the same things they could already do in ImageJ 1.x. The ImageJ Ops framework needs to provide a means to override ''any'' general-but-slow op with a faster-but-more-specific alternative, fully transparently to the user.
+
+== Getting started ==
+
+An op is a function which takes a list of typed inputs, produces a list of typed outputs, and has no side effects.
+
+== Tutorials and workshops ==
+
+* {{GitHub | org=imagej | repo=imagej-tutorials | path=using-ops | label=ImageJ Tutorial: Using Ops}}
+* {{GitHub | org=imagej | repo=imagej-tutorials | path=create-a-new-op | label=ImageJ Tutorial: Create A New Op}}
+* "ImageJ2 scripts: Parameters + ImageJ Ops" (ImageJ conference 2015) – [https://imagej.github.io/presentations/2015-09-04-imagej2-scripting/ slides], [https://vimeo.com/140098817 video 1], [https://vimeo.com/140098835 video 2]
+* "The ImageJ Ops Framework: Image processing made easy" (January 2015) – [https://imagej.github.io/presentations/2015-01-12-imagej-ops/ slides]
+* "Intro to ImageJ Ops - Usage and Development" (November 2015) – [http://workshops.imagej.net/IntroToOps.pdf slides]
+
+== FAQ ==
+
+=== Why not just implement algorithms as "plain old Java methods"? ===
+The Ops matching framework provides '''extensibility.''' Ops are plugins, so any developer can override the behavior of a particular op as needed—e.g., for improved performance of a special case. See "Design goals" above.
+
+[[Category:Development]]
