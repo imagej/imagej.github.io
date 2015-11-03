@@ -67,6 +67,19 @@ For example ''dataset.txt'' could look like this:
 
 When the manager context is enabled, the keystore password and manager password should be provided. Those prompts appear when the server starts. If the server starts at the first time, it will create the keystore.jks (for HTTPS connection) and realm.properties (for accessing the manager context) containing the manager's password that the user provide. Whenever the server process starts, it will ask the keystore password to open the keystore.jks.
 
+A common way to start the server with the manager context looks like below:
+
+ $ java -Xmx4G -jar bigdataserver.jar -d datasets.txt -s fly.mpi-cbg.de -p 8081 -m 8443
+ 2015-02-14 14:02:52.696:INFO::main: Logging initialized @421ms
+ ...
+ Please, enter your keystore password:
+ 2015-02-14 14:02:53.626:INFO:bs.BigDataServer:bdv.server.BigDataServer.main(): Set handler: org.eclipse.jetty.server.handler.HandlerList@1f0ee5c0[org.eclipse.jetty.security.ConstraintSecurityHandler@1059746f]
+ 2015-02-14 15:34:53.304:INFO:oejs.ServerConnector:bdv.server.BigDataServer.main(): Started ServerConnector@63ca3e3{HTTP/1.1}{localhost:8080}
+ 2015-02-14 15:34:53.420:INFO:oejs.ServerConnector:bdv.server.BigDataServer.main(): Started ServerConnector@fceb19{SSL-http/1.1}{localhost:8443}
+
+The keystore password should be provided when the server starts. Then, the /manager context enables users to handle the datasets with the web interface. 
+
+
 The server will keep running until you cancel it with {{key press|Ctrl|C}} or close the shell.
 To start the server in the background run it in a screen session:
 
