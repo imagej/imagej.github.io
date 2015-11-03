@@ -50,4 +50,5 @@ If your repository contain your files but you still see this messages, it probab
 <ul>
 <li>Error 3 : The mesh don't cross the border. The given mesh don't cross the border and so it can't be merged to an other mesh.</li>
 <li>Error 4 : Two meshes from a same part can't be merged. You can't merge two objects that came from the same part of the stack. You can still modify the name of the object.</li>
+<li>Error 5 : Their is not enough meshes to merge. The plugin need at least two meshes to merge meshes.</li>
 </ul>
