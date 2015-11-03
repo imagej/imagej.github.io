@@ -33,6 +33,9 @@ Some new parameters are introduced and some old parameters change names. Therefo
 
 = Logic of workflow =
 
+We map and dispatch the workflow logic either on a single maschine or on a HPC cluster using the automated workflow engine snakemake: https://bitbucket.org/johanneskoester/snakemake/wiki/Home
+Within the ''Snakefile'' the workflow with the processing steps and the input and output rules is defined. Each of these steps call a Fiji ''beanshell'' script. These scripts in turn drive the processing via Fiji.
+
 = workflow =
 
 
