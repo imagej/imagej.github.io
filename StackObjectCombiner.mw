@@ -40,3 +40,9 @@ During this example, you can look at the different step with the [http://fiji.sc
 == Errors ==
 
 TODO Add the errors given by the plugin to this section
+
+<ul>
+<li>Error 1 : The repository contain only A_files. If the directory contain only A_files, the plugin can't do anything with them.</li>
+<li>Error 2 : No meshes can be found. The plugin can't see any file.</li>
+</ul>
+If your repository contain your files but you still see this messages, it probably means that your objects are not named with the naming convention (see the Usage section).
