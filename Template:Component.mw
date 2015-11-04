@@ -75,7 +75,7 @@
 {{!}}-
 }}
 |}</includeonly>
-<noinclude>This template is a sidebar for displaying key statistics about a software component.
+<noinclude>This template is a sidebar for displaying key statistics about a software [[component]].
 ==Usage==
 <pre>
 {{Component
