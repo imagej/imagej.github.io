@@ -18,6 +18,7 @@ An op is a function which takes a list of typed inputs, produces a list of typed
 == Tutorials and workshops ==
 
 * {{GitHub | org=imagej | repo=imagej-tutorials | path=using-ops | label=ImageJ Tutorial: Using Ops}}
+* For external developers: [[Adding_new_ops|adapting your code Ops]]
 * {{GitHub | org=imagej | repo=imagej-tutorials | path=create-a-new-op | label=ImageJ Tutorial: Create A New Op}}
 * "ImageJ2 scripts: Parameters + ImageJ Ops" (ImageJ conference 2015) – [https://imagej.github.io/presentations/2015-09-04-imagej2-scripting/ slides], [https://vimeo.com/140098817 video 1], [https://vimeo.com/140098835 video 2]
 * "The ImageJ Ops Framework: Image processing made easy" (January 2015) – [https://imagej.github.io/presentations/2015-01-12-imagej-ops/ slides]
