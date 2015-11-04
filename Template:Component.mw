@@ -1,9 +1,9 @@
 <includeonly>{| class="infobox" cellspacing="5" style="width: 31em; font-size: 90%; text-align: left; float: right; border: 1px solid #a0a0a0;"
 ! colspan="2" style="text-align: center; font-size: 130%;" | <div style="float: left">{{{logo|}}}</div>{{{name|{{PAGENAME}}}}}<div style="clear: left;"></div>
 |-
-{{#if:{{{updateSite|}}}|
-! [[Update site]]
-{{!}} {{{updateSite|}}}
+{{#if:{{{project|}}}|
+! Project
+{{!}} {{{project|}}}
 {{!}}-
 }} 
 {{#if:{{{url|}}}|
@@ -79,7 +79,7 @@
 ==Usage==
 <pre>
 {{Component
-| updateSite = 
+| project = 
 | name = 
 | url = 
 | source = 
@@ -102,7 +102,7 @@
 
 ==Example==
 {{Component
-| updateSite = ImageJ
+| project = ImageJ
 | name = ImageJ 1.x
 | url = http://imagej.net/index.html
 | source = {{GitHub | org=imagej | repo=ImageJA | tag=v1.50d}}
@@ -122,7 +122,7 @@
 | otherDevs = Wayne Rasband (architect)
 }}<pre style="overflow:auto">
 {{Component
-| updateSite = ImageJ
+| project = ImageJ
 | name = ImageJ 1.x
 | url = http://imagej.net/index.html
 | source = {{GitHub | org=imagej | repo=ImageJA | tag=v1.50d}}
