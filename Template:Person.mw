@@ -128,15 +128,8 @@
 | yuminguw               = [https://github.com/{{{1}}} Yuming Liu]
 | [[User:{{{1}}}|{{{1}}}]]
 }}</includeonly><noinclude>
-== Link to a User page ==
-It is best to link to a User page on this wiki:
+== Usage ==
+Specify a person using either their ImageJ wiki username, or [[GitHub]] username.
 <pre>{{Person|Rueden}}</pre>
 {{Person|Rueden}}
-
-== Link to a GitHub profile ==
-You can also link to some people via their GitHub username:
-<pre>{{Person|rasband}}</pre>
-{{Person|rasband}}
-
-But linking to a User page is always preferred if possible.
 </noinclude>
