@@ -29,6 +29,9 @@ An op is a function which takes a list of typed inputs, produces a list of typed
 === Why not implement algorithms as "plain old Java" methods? ===
 The Ops matching framework provides '''extensibility.''' Ops are plugins, so any developer can override the behavior of a particular op as needed—e.g., for improved performance of a special case. See "Design goals" above.
 
+
+=== Can a C/C++ or MATLAB function be converted to an op? ===
+
 == See also ==
 
 * [[2014-04-04 - Announcing ImageJ Ops]] news post
