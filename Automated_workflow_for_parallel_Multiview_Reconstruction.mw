@@ -798,6 +798,60 @@ These settings should only be changed when necessary.
 
 === ''cluster.json'' ===
 
+The ''cluster.json'' contains the resource information for the queuing system. It should match the Fiji resource settings. 
+
+<source lang="bash">
+{
+    "__default__" :
+    {
+	"lsf_extra" : "-R \"span[hosts=1]\"",
+	"lsf_q" : "short"	
+    },
+    
+    "hdf5_xml" :
+    {
+ 	"lsf_extra" : "-n 3 -R \"span[hosts=1] rusage[mem=20000]\""
+    },
+
+    "resave_hdf5" :	
+    {
+ 	"lsf_extra" : "-n 3 -R \"span[hosts=1] rusage[mem=20000]\""
+    },
+
+    "registration" :
+    {
+        "lsf_extra" : "-n 4 -R \"span[hosts=1] rusage[mem=40000]\""
+    },
+    
+    "timelapse" : 
+    {
+    	"lsf_extra" : "-n 6 -R \"span[hosts=1] rusage[mem=50000]\""
+    },
+
+    "external_transfrom" :
+    {
+        "lsf_extra" : "-R \"span[hosts=1] rusage[mem=10000]\""
+    },
+
+    "fusion" : 
+    {
+        "lsf_extra" : "-n 6 -R \"span[hosts=1] rusage[mem=50000]\"",
+        "lsf_q" : "short"
+    },
+
+    "deconvolution" :
+    {
+        "lsf_extra" : "-n 12 -R \"span[hosts=1] rusage[mem=110000]\"",
+	"lsf_q" : "gpu"
+    },
+    
+    "resave_hdf5_output" :
+    {
+	"lsf_extra" : "-n 3 -R \"span[hosts=1] rusage[mem=20000]\""
+    }
+}
+</source>
+
 === Submitting Jobs === 
 
 We recommend to execute snakemake within screen. 
