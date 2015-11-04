@@ -71,6 +71,6 @@ The following optional parameters are used to estimate the mandatory parameters:
 
 =Installation=
 
-You could simply use our update site "[http://fiji.sc/List_of_update_sites biomedgroup]" to install the ridge detection plugin.
+Simply turn on the [[How_to_follow_a_3rd_party_update_site|Biomedgroup update site]], which includes the ridge detection plugin.
 
 If you use ImageJ just copy the RidgeDetection.jar file in your plugins folder and copy the  [http://commons.apache.org/proper/commons-lang/ apache-commons-lang 3] jar file into the plugins/jars folder.
