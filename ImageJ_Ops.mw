@@ -32,6 +32,18 @@ The Ops matching framework provides '''extensibility.''' Ops are plugins, so any
 
 === Can a C/C++ or MATLAB function be converted to an op? ===
 
+
+=== Is there a list of Ops somewhere with brief descriptions of their functionalities? ===
+
+
+=== Are there any Ops for image processing? ===
+
+
+=== What are the Ops that need to be developed in the future? ===
+
+
+=== Why is matching important? ===
+
 == See also ==
 
 * [[2014-04-04 - Announcing ImageJ Ops]] news post
