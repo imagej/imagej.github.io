@@ -230,3 +230,27 @@ TrackMate version bumped by several increments, prompted by the [[2014-12-10 - I
 == 23-06-2015 - v2.7.4 ==
 
 * Fix a bug, incorrectly fixed in imglib, that caused dead threads to accumulate upon running the detection step. Noticed and fixed by @hadim, @dietzc and @tpietzsch.
+
+== 27-10-2015 - [[2015-10-27_-_TrackMate_v2.8.0_released|v2.8.0]] ==
+
+* Contributed modules.
+** Ronny Sczech linear tracker and batch modules.
+** Thorsten Wagner Find maxima detector.
+** Benoit Lombardo analyzers.
+* Improvements.
+** Faster track rendering.
+** The ROI edit tool.
+** The Block LoG detector.
+** TrackMate honors ImageJ thread configuration.
+** TrackScheme acknowledges the spot radius setting when capturing thumbnails.
+** The Extract track stack action improved.
+** A new action to prune filtered out data.
+** The Quality value reported by the LoG detector is now sensible.
+* Bugfixes.
+** Fix the accuracy problem in sub-pixel localization.
+** Fix the huge delay when manually adding a spot to large models.
+** The median filter was crashing TrackMate for 3D images.
+
+== 07/11/2015 - v2.8.1 ==
+
+* Fix a big causing tracks not to be displayed on Windows platforms.
