@@ -240,7 +240,7 @@ The example dataset looks like this:
 └── dataset(4).czi
 </source>
 
-For processing the dataset directory also contains the ''config.yaml'' file for the specific dataset. 
+For processing, the dataset directory will also contain the config.yaml file for the specific dataset. 
 Go to your dataset directory and make a symlink for the config.yaml:
 
 <source lang="bash">
@@ -257,7 +257,7 @@ Now the dataset directory has a symlink for the config.yaml:
 ├── dataset(2).czi
 ├── dataset(3).czi
 ├── dataset(4).czi
-└── dataset.yaml	 		# copied/symlinked from this repo
+└── config.yaml	 		# copied/symlinked from this repo
 </source>
 
 == ''config.yaml'' ==
