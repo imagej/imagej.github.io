@@ -32,17 +32,17 @@ Within the ''Snakefile'' the workflow with the processing steps and the input an
 
 The current workflow consists of the following steps. It covers the prinicipal processing for timelapse multiview SPIM processing:
 
-1. define czi or tif dataset
+1. define czi or tif dataset.
 
-2. resave into hdf5
+2. resave into hdf5.
 
-3. detect and register interespoints
+3. detect and register interest points.
 
-4. merge xml
+4. merge xml, creates XML for registered dataset. 
 
-5. timelapse registration
+5. timelapse registration.
 
-6. optional for dual channel dataset: dublicate transformations
+6. optional for dual channel dataset: duplicate transformations
 
 7. optional for deconvolution: external transformation
 
@@ -50,7 +50,7 @@ The current workflow consists of the following steps. It covers the prinicipal p
 
 9. define output
 
-10. resave output into hdf5
+10. resave output into hdf5, creates XML for fused dataset.
 
 = Supported datasets =
 
