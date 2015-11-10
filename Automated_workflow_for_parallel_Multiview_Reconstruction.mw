@@ -648,6 +648,6 @@ use the -R flag to rerun a particular rule and everything downstream
 
 = Cluster =
 
-Every cluster is different both in terms of the used hardware and the software running on it, particularly the scheduling system. Here we use a cluster computer at the MPI-CBG that consists of '''44''' nodes each with '''12''' Intel Xeon E5-2640 cores running @ 2.50 GHz and enjoying '''128GB''' of memory. The cluster nodes have access to 200TB of data storage provided by a dedicated Lustre Server architecture, suffice to say that it is optimised for high performance input/output (read/write) operations which is crucial for the SPIM data volumes.
+Every cluster is different both in terms of the used hardware and the software running on it, particularly the scheduling system. Here we use a cluster computer at the MPI-CBG that consists of '''44''' nodes each with '''12''' Intel Xeon E5-2640 cores running @ 2.50 GHz and enjoying '''128GB''' of memory. The cluster nodes have access to 200TB of data storage provided by a dedicated Lustre distributed file system, suffice to say that it is optimised for high performance input/output (read/write) operations which is crucial for the SPIM data volumes.
 
 Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system running on the MPI-CBG cluster is LSF. The basic principles of job submission are the same across queuing systems, but the exact syntax will of course differ.
