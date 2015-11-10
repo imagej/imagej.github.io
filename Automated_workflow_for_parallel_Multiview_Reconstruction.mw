@@ -187,7 +187,7 @@ It is very likely that the cluster computer does not run ANY Graphical User Inte
 
 = Initial setup of workflow =
 
-After you cloned the snakemake-worflows repository you need to configure the ''config.yaml'' for your setup.
+After you cloned the snakemake-workflows repository you need to configure the ''config.yaml'' for your setup.
 This means you need to specify the directory for your Fiji, the location of the xvfb-run and the location for the GPU deconvolution libraries. 
 Go into the timelapse directory of the snakemake-workflows and open the ''config.yaml'' with your preferred editor for example nano and change the settings in section ''7. Software directories'':
 
