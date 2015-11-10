@@ -12,7 +12,7 @@
 
 = Multiview reconstruction =
 
-The key change in the '''[[Multiview-Reconstruction|Multiview Reconstruction]]''' (MVR) pipeline is that all results are written into an XML. This poses new problems for cluster processing, because several concurrently running jobs need to update the same file. 
+In the '''[[Multiview-Reconstruction|Multiview Reconstruction]]''' (MVR) pipeline all results are written into an XML. This poses new problems for cluster processing, because several concurrently running jobs need to update the same file. 
 
 Stephan Preibisch solved that problem by allowing to write one XML file per job (usually a timepoint) and then merging the job specific XMLs into one XML for the entire dataset. 
 
