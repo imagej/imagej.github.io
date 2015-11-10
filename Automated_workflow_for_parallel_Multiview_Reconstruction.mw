@@ -89,7 +89,7 @@ You can a download Fiji version that we have tested for compatibility with the a
 
 http://tomancak-srv1.mpi-cbg.de/~schmied/
 
-We will from time to time upgrade.
+It is important to note that we can only guarantee the proper execution of the workflow with the provided Fiji version. We will from time to time upgrade to cover the latest changes in the plugins.
 
 = Snakemake for workflow =
 
