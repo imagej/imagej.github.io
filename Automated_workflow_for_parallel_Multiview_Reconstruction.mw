@@ -54,7 +54,7 @@ The current workflow consists of the following steps. It covers the prinicipal p
 
 = Supported datasets =
 
-The scripts are now supporting multiple angles, multiple channels and multiple illumination direction without adjusting the Snakefile or .bsh scripts.
+The scripts are supporting multiple angles, multiple channels and multiple illumination direction without adjusting the Snakefile or .bsh scripts.
 
 Using spimdata version: 0.9-revision
 
