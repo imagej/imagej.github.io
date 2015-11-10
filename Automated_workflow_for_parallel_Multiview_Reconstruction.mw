@@ -279,8 +279,8 @@ cd snakemake-workflows/spim_registration/timelapse/
 nano config.yaml
 </source>
 
-The ''transformation_switch'' switches between normal single channel/ multi channel processing were all channels contain beads for registration and multi channel processing where only one channel contains beads.
-If there are channels present without channels the transformations of the other channels need to be copied in order for their registration. 
+The ''transformation_switch'' switches between normal single channel/ multi channel processing where all channels contain beads for registration and multi channel processing where only one channel contains beads.
+If there are channels present without beads the transformations of the other channels need to be copied in order to register them.
 
 Set the ''transformation_switch'' to ''timelapse'' to do single channel processing or multichannel processing where all channels contain beads:
 <source lang="bash">
