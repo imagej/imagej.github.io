@@ -364,7 +364,7 @@ If the files contain both channels then leave out the channel information in the
 And specify for ''multiple_channels'' that you want to process multi channel datasets:
 
 <source lang="bash">
-image_file_pattern: 'img_TL{{t}}_Angle{{a}}_Channels{{c}}.tif',
+image_file_pattern: 'img_TL{{t}}_Angle{{a}}.tif',
 multiple_channels: '"YES (all channels in one file)"', 
 </source>
 
