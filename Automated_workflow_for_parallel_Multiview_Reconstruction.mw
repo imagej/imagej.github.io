@@ -581,7 +581,7 @@ The ''cluster.json'' contains the resource information for the queuing system. I
 
 == Submitting Jobs ==
 
-We recommend to execute snakemake within screen. 
+We recommend to execute snakemake within screen (https://www.gnu.org/software/screen/manual/screen.html). 
 To execute snakemake you need to call snakemake, specify the number of jobs, the location of the data and to dispatch jobs to a cluster the information for the queuing system. Here is a list of commands and flags that are used for the snakemake workflow:
 
 Local back end:
