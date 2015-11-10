@@ -271,7 +271,7 @@ These parameters are usually dataset and user dependent. The second part contain
 
 == Setting up the ''config.yaml'' file for processing ==
 
-=== 1. Processing switches ===
+=== Processing switches ===
 
 In the first section you need to decide which processing you want to carry out. 
 Open the ''config.yaml'' file:
@@ -305,7 +305,7 @@ Set the ''fusion_switch'' to ''deconvolution'' to perform deconvolution:
 fusion_switch: "deconvolution",
 </source>
 
-=== 2.1. General Settings ===
+=== General Settings ===
 
 In the the next section specify the name for the dataset. This will be the name of the ''HDF5'' file and the ''XML'' file:
 
@@ -337,7 +337,7 @@ channels: "green,red",
 illumination: "0", 
 </source>
 
-==== 2.2. Settings for .czi files ====
+==== Settings for .czi files ====
 
 If you process ''.czi'' files then give the name of the first ''.czi'' (file without index): 
 
@@ -345,7 +345,7 @@ If you process ''.czi'' files then give the name of the first ''.czi'' (file wit
 first_czi: "2015-02-21_LZ1_Stock68_3.czi",
 </source>
 
-==== 2.3. Settings for .tif datasets ====
+==== Settings for .tif datasets ====
 
 For processing of ''.tif'' files give the pattern of the files and if you process single channel datasets or dual channel datasets:
 
@@ -370,7 +370,7 @@ image_file_pattern: 'img_TL{{t}}_Angle{{a}}_Channels{{c}}.tif',
 multiple_channels: '"YES (all channels in one file)"', 
 </source>
 
-=== 3. Detection and registration ===
+=== Detection and registration ===
 
 To carry out the registration specify the channels for the data. For single channel data and multi channel data were all channels contain beads for registration you want to select the following:
 As interest points specify '"beads"'. For multi channel datasets give '"beads,beads"':
@@ -400,7 +400,7 @@ reg_radius_2: '3',
 reg_threshold: '0.005',
 </source>
 
-=== 4. Timelapse registration ===
+=== Timelapse registration ===
 
 Specify which time point should be used as reference time point.
 We generally use a time point in the middle of the dataset:
@@ -409,7 +409,7 @@ We generally use a time point in the middle of the dataset:
 reference_timepoint: '1', 
 </source>
 
-=== 5. Weighted-average fusion ===
+=== Weighted-average fusion ===
 
 For the weighted-average fusion specify the downsampling factor and the bounding box determined in the GUI processing on the reference time point.
 The bounding box is for the Weighted-average fusion independent of the downsampling:
@@ -424,9 +424,9 @@ maximal_y: '1928',
 maximal_z: '480',
 </source>
 
-=== 6. Multiview deconvolution ===
+=== Multiview deconvolution ===
 
-==== 6.1. External transformation ====
+==== External transformation ====
 
 If you want to use downsampling for the multiview deconvolution set the ''external_trafo_switch'' to ''external_trafo''.
 Without downsampling use ''_transform''. The matrix for the external transformation specifies the downsampling.
@@ -437,7 +437,7 @@ external_trafo_switch: "external_trafo",
 matrix_transform: '"0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0"',
 </source>
 
-==== 6.2. Deconvolution settings ====
+==== Deconvolution settings ====
 
 To carry out the deconvolution specify the numbers of iterations as well as the bounding box. For the multiview deconvolution the bounding box needs to take the downsampling into account: 
 
@@ -469,7 +469,7 @@ If you process multi channel datasets were only one channel contains beads then 
 detections_to_extract_psf_for_channel: '"[Same PSF as channel red],beads"',
 </source>
 
-=== 7. Software directories ===
+=== Software directories ===
 
 Here the directories for the Fiji, ''beanshell'' scripts, CUDA libraries and xvfb are stored.
 Also the prefix for sysconfcpus and the memory prefix for Fiji are stored:
@@ -487,7 +487,7 @@ Also the prefix for sysconfcpus and the memory prefix for Fiji are stored:
   memory-prefix: "-Xmx"
 </source>
 
-=== 8. Fiji Resource settings ===
+=== Fiji Resource settings ===
 
 Here the resource restrictions for Fiji with the number of cores and memory are specified for each processing step.
 These settings need to match the cluster.jason file:
@@ -514,7 +514,7 @@ Fiji_resources: {
   mem_output: "20g"
 </source>
 
-=== 9. Advanced settings ===
+=== Advanced settings ===
 
 In the advanced settings are more options for further refining the processing. 
 These settings should only be changed when necessary.
