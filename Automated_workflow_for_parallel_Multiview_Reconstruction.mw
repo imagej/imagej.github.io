@@ -377,8 +377,7 @@ reg_process_channel: '"All channels"',
 reg_interest_points_channel: '"beads"',
 </source>
 
-If you have dual channel datasets were only one channel contains beads specify that you want to select only one channel.
-Also specify the source and target channels. Also specify the correct channel that should not be registered:
+If you have dual channel datasets where only one channel contains beads specify that you want to select only one channel. Also specify the source and target channels. And specify the correct channel that should not be registered:
 
 <source lang="bash">
 reg_process_channel: '"All channels"',
