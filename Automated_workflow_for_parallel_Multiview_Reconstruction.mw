@@ -455,7 +455,7 @@ maximal_y_deco: '964',
 maximal_z_deco: '240',
 </source>
 
-Then specify the source for the PSF. For single channel datasets it is just '"beads"'.
+Then specify the source for the point-spread-function (PSF). For single channel datasets it is just '"beads"'.
 
 <source lang="bash">
 detections_to_extract_psf_for_channel: '"beads"',
@@ -467,7 +467,7 @@ For dual channel datasets its '"beads,beads"'
 detections_to_extract_psf_for_channel: '"beads,beads"',
 </source>
 
-If you process multi channel datasets were only one channel contains beads then specify which channel does not contain beads:
+If you process multi channel datasets where only one channel contains beads then specify which channel does not contain beads:
 
 <source lang="bash">
 detections_to_extract_psf_for_channel: '"[Same PSF as channel red],beads"',
