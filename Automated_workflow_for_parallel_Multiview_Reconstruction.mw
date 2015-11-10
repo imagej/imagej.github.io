@@ -264,7 +264,7 @@ Now the dataset directory has a symlink for the config.yaml:
 
 The entire processing is controlled via the yaml file.
 
-In the first part (common) of the yaml file the key parameters for the processing are found.
+he key parameters for the processing are found in the first (common) part of the yaml file.
 These parameters are usually dataset and user dependent. The second part contains the advanced and manual overrides for each processing step. These steps correspond to the rules in the snakefile.
 
 == Setting up the ''config.yaml'' file for processing ==
