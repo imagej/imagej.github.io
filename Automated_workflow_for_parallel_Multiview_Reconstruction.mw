@@ -627,7 +627,7 @@ If not:
 /path/to/snakemake/snakemake -j 2 -d /path/to/data/ --cluster-config ./cluster.json --cluster "bsub -q {cluster.lsf_q} {cluster.lsf_extra}"
 </source>
 
-For error and output of the cluser add -o test.out -e test.err e.g.:
+For error and output of the cluster add -o test.out -e test.err e.g.:
 
 DRMAA
 <source lang="bash">
