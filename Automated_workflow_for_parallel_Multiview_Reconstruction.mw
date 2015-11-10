@@ -10,12 +10,6 @@
 | website                = https://github.com/mpicbg-scicomp/snakemake-workflows
 }}
 
-= Cluster =
-
-Every cluster is different both in terms of the used hardware and the software running on it, particularly the scheduling system. Here we use a cluster computer at the MPI-CBG that consists of '''44''' nodes each with '''12''' Intel Xeon E5-2640 cores running @ 2.50 GHz and enjoying '''128GB''' of memory. The cluster nodes have access to 200TB of data storage provided by a dedicated Lustre Server architecture, suffice to say that it is optimised for high performance input/output (read/write) operations which is crucial for the SPIM data volumes.
-
-Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system running on the MPI-CBG cluster is LSF. The basic principles of job submission are the same across queuing systems, but the exact syntax will of course differ.
-
 = Multiview reconstruction =
 
 The key change in the '''[[Multiview-Reconstruction|Multiview Reconstruction]]''' (MVR) pipeline is that all results are written into an XML. This poses new problems for cluster processing, because several concurrently running jobs need to update the same file. 
@@ -35,9 +29,6 @@ Some new parameters are introduced and some old parameters change names. Therefo
 
 We map and dispatch the workflow logic either on a single maschine or on a HPC cluster using the automated workflow engine snakemake: https://bitbucket.org/johanneskoester/snakemake/wiki/Home.
 Within the ''Snakefile'' the workflow with the processing steps and the input and output rules is defined. Each of these steps call a Fiji ''beanshell'' script. These scripts in turn drive the processing via Fiji.
-
-= workflow =
-
 
 The current workflow consists of the following steps. It covers the prinicipal processing for timelapse multiview SPIM processing:
 
@@ -61,7 +52,7 @@ The current workflow consists of the following steps. It covers the prinicipal p
 
 10. resave output into hdf5
 
-== Supported datasets ==
+= Supported datasets =
 
 The scripts are now supporting multiple angles, multiple channels and multiple illumination direction without adjusting the Snakefile or .bsh scripts.
 
@@ -92,11 +83,7 @@ Using ImageJ Opener (.tif):
     Multiple illumination directions: YES (one file per illumination direction) => not tested yet
     Multiple angles: YES (one file per angle)
 
-= Tutorial =
-
-== Preparation ==
-
-=== Fiji for workflow ===
+= Fi ji for workflow =
 
 You can a download Fiji version that we have tested for compatibility with the automated cluster processing here:
 
@@ -104,11 +91,11 @@ http://tomancak-srv1.mpi-cbg.de/~schmied/
 
 We will from time to time upgrade.
 
-=== Snakemake for workflow ===
+= Snakemake for workflow =
 
 [https://bitbucket.org/johanneskoester/snakemake/wiki/Home Snakemake] (command-line workflow engine) is used to automatically execute individual steps in the workflow. The workflow documented on this page was tested with snakemake 3.3 (interfaced with [www.pyyaml.org PyYAML](version 3.11) and [https://github.com/pygridtools/drmaa-python python drmaa](version 0.7.6) support.
 
-=== Automated Multiview Reconstruction workflow ===
+= Automated Multiview Reconstruction workflow =
 
 Clone the repository for the workflow from github (https://github.com/schmiedc/snakemake-workflows)
 
@@ -118,7 +105,7 @@ git clone https://github.com/schmiedc/snakemake-workflows.git
 
 The repository contains the example configuration scripts for single and dual channel datasets, the Snakefile which defines the workflow, the beanshell scripts which drive the processing via Fiji and a cluster.json file which contains information for the cluster queuing system.
 
-==== timelapse ====
+== timelapse directory ==
 
 <source lang="bash">
 /path/to/repository/spim_registration/timelapse/
@@ -147,7 +134,7 @@ The repository contains the example configuration scripts for single and dual ch
 * ''cluster.json'' contains the resource information (processing time, number of cores and memory) for the queuing system. 
 * ''*.bsh'' scripts contain the instructions for Fiji to run the processing.
 
-==== tools ====
+== tools directory ==
 
 The tool directory contains scripts for common file format pre-processing.
 Some datasets are currently only usable when resaving them into ''.tif'':
@@ -170,7 +157,7 @@ The ''master_preprocesing.sh'' file is the configuration script that contains th
 └──  master_preprocessing.sh
 </source>
 
-==== cluster_tools ====
+== cluster_tools directory ==
 
 The cluster tools directory contains the libraries for GPU deconvolution and the virtual frame buffer (xvfb) for running Fiji headless. 
 
@@ -194,16 +181,15 @@ where PREFIX is the installation directory.
 ANSI mode is necessary when compiling with our default GCC version, 4.9.2.
 It may or may not be necessary with older versions.
 
-=== Command line ===
+= Command line =
 
 It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate [[Linux_command_line_tutorial]] page that explains the bare essentials.
 
-== Initial setup of workflow ==
+= Initial setup of workflow =
 
 After you cloned the snakemake-worflows repository you need to configure the ''config.yaml'' for your setup.
 This means you need to specify the directory for your Fiji, the location of the xvfb-run and the location for the GPU deconvolution libraries. 
 Go into the timelapse directory of the snakemake-workflows and open the ''config.yaml'' with your preferred editor for example nano and change the settings in section ''7. Software directories'':
-
 
 
 <source lang="bash">
@@ -922,3 +908,9 @@ The log files are ordered according to their position in the workflow. Multiple 
 force certain rules:
 use the -R flag to rerun a particular rule and everything downstream
 -R <name of rule>
+
+= Cluster =
+
+Every cluster is different both in terms of the used hardware and the software running on it, particularly the scheduling system. Here we use a cluster computer at the MPI-CBG that consists of '''44''' nodes each with '''12''' Intel Xeon E5-2640 cores running @ 2.50 GHz and enjoying '''128GB''' of memory. The cluster nodes have access to 200TB of data storage provided by a dedicated Lustre Server architecture, suffice to say that it is optimised for high performance input/output (read/write) operations which is crucial for the SPIM data volumes.
+
+Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system running on the MPI-CBG cluster is LSF. The basic principles of job submission are the same across queuing systems, but the exact syntax will of course differ.
