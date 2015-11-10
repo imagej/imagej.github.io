@@ -229,9 +229,7 @@ You can download a 5 view, single channel .czi example dataset here:
 
 http://tomancak-srv1.mpi-cbg.de/~schmied/
 
-A data directory e.g. looks like this:
-
-
+The example dataset looks like this:
 
 <source lang="bash">
 /path/to/data/
