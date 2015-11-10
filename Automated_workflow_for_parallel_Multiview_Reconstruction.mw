@@ -370,8 +370,7 @@ multiple_channels: '"YES (all channels in one file)"',
 
 === Detection and registration ===
 
-To carry out the registration specify the channels for the data. For single channel data and multi channel data were all channels contain beads for registration you want to select the following:
-As interest points specify '"beads"'. For multi channel datasets give '"beads,beads"':
+To carry out the registration specify the channels for the data containing beads. For single channel data and multi channel data where all channels contain beads for registration you want to select the following: As interest points specify '"beads"'. For multi channel datasets indicate '"beads,beads"':
 
 <source lang="bash">
 reg_process_channel: '"All channels"',
