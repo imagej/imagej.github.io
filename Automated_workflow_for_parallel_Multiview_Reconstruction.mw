@@ -618,25 +618,25 @@ The commands to execute snakemake would then look like this:
 If DRMAA is supported on your cluster:
 
 <source lang="bash">
-/path/to/snakemake/snakemake -j2 -d /path/to/data/ --cluster-config ./cluster.json --drmaa " -q {cluster.lsf_q} {cluster.lsf_extra}"
+/path/to/snakemake/snakemake -j 2 -d /path/to/data/ --cluster-config ./cluster.json --drmaa " -q {cluster.lsf_q} {cluster.lsf_extra}"
 </source>
 
 If not:
 
 <source lang="bash">
-/path/to/snakemake/snakemake -j2 -d /path/to/data/ --cluster-config ./cluster.json --cluster "bsub -q {cluster.lsf_q} {cluster.lsf_extra}"
+/path/to/snakemake/snakemake -j 2 -d /path/to/data/ --cluster-config ./cluster.json --cluster "bsub -q {cluster.lsf_q} {cluster.lsf_extra}"
 </source>
 
 For error and output of the cluser add -o test.out -e test.err e.g.:
 
 DRMAA
 <source lang="bash">
-/path/to/snakemake/snakemake -j2 -d /path/to/data/ --cluster-config ./cluster.json --drmaa " -q {cluster.lsf_q} {cluster.lsf_extra} -o test.out -e test.err"
+/path/to/snakemake/snakemake -j 2 -d /path/to/data/ --cluster-config ./cluster.json --drmaa " -q {cluster.lsf_q} {cluster.lsf_extra} -o test.out -e test.err"
 </source>
 
 LSF
 <source lang="bash">
-/path/to/snakemake/snakemake -j2 -d /path/to/data/ --cluster-config ./cluster.json --cluster "bsub -q {cluster.lsf_q} {cluster.lsf_extra} -o test.out -e test.err"
+/path/to/snakemake/snakemake -j 2 -d /path/to/data/ --cluster-config ./cluster.json --cluster "bsub -q {cluster.lsf_q} {cluster.lsf_extra} -o test.out -e test.err"
 </source>
 
 Note:  the error and output of the cluster of all jobs are written into these files.
