@@ -391,6 +391,14 @@ We recommend using Difference-of-Gaussian. Give the information for radius 1 and
 
 <source lang="bash">
 type_of_detection: '"Difference-of-Gaussian"',
+sigma: '1.3',
+reg_threshold: '0.005',
+</source>
+
+For Difference-of-Mean registration specify radius_1, radius_2 and the threshold:
+
+<source lang="bash">
+type_of_detection: '"Difference-of-Gaussian"',
 reg_radius_1: '2',
 reg_radius_2: '3',
 reg_threshold: '0.005',
