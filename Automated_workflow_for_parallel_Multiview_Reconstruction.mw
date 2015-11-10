@@ -494,7 +494,7 @@ Also the prefix for sysconfcpus and the memory prefix for Fiji are stored:
 === Fiji Resource settings ===
 
 Here the resource restrictions for Fiji with the number of cores and memory are specified for each processing step.
-These settings need to match the cluster.jason file:
+These settings need to match the cluster.json file:
 
 <source lang="bash">
 Fiji_resources: {
