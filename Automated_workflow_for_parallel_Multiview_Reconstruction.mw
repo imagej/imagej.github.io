@@ -305,7 +305,7 @@ fusion_switch: "deconvolution",
 
 === General Settings ===
 
-In the the next section specify the name for the dataset. This will be the name of the ''HDF5'' file and the ''XML'' file:
+In the the next section specify the name of the dataset. This will be the name of the ''HDF5'' file and the ''XML'' file:
 
 <source lang="bash">
 hdf5_xml_filename: '"dataset_one"',
