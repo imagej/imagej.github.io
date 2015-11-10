@@ -83,7 +83,7 @@ Using ImageJ Opener (.tif):
     Multiple illumination directions: YES (one file per illumination direction) => not tested yet
     Multiple angles: YES (one file per angle)
 
-= Fi ji for workflow =
+= Fiji for workflow =
 
 You can a download Fiji version that we have tested for compatibility with the automated cluster processing here:
 
