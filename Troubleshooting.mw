@@ -247,10 +247,6 @@ The proper fix is for the maintainers of those update sites to reconcile the ver
 
 = OS X issues =
 
-== Why does ImageJ crash frequently? ==
-
-This is most likely an AWT issue with Apple's version of Java 6. There is even a [http://fiji.sc/bugzilla/show_bug.cgi?id=197 bug in our bug tracker about it]. The problem is that we did not manage to find a work-around because the bug appears to be in the MacOSX-specific part of the Java Virtual Machine that was provided by Apple. It seems to be related to opening new windows while mouse updates are processed, though. If you have this issue, or find out what causes it, please comment on [http://fiji.sc/bugzilla/show_bug.cgi?id=197 this bug report].
-
 == Why does ImageJ run so slowly? ==
 
 On OS X, older versions of Java 8 (prior to 1.8.0_45)—as well as all versions of Java 7 (including 1.7.0_80)—are extremely slow at displaying images. You should either [[Frequently Asked Questions#How_do_I_run_ImageJ_on_Yosemite.3F|upgrade to the latest version of Java 8]], or [[Frequently Asked Questions#How_do_I_set_up_Java_6_on_OS_X.3F|revert to Java 6]].
