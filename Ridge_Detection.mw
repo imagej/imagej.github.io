@@ -85,22 +85,22 @@ This method makes the assumption that when two ridges overlap, it is more likely
 
 If you use this method of overlap resolution, it is recommended that you first tune the Ridge Detection parameters with <code>Preview</code> enabled to get a minimal starting set of junction points - so that each ridge matches reality as best as possible. For example:
 
-[[File:Slope_detection_low_sigma.png|250px]]
+[[File:Slope_detection_low_sigma.png|325px]]
 
 This detection with a sigma of 1.6 produces a set of lines and junctions not suited to slope-based overlap detection.
 
 
-[[File:Slope_detection_high_sigma.png|250px]]
+[[File:Slope_detection_high_sigma.png|325px]]
 
 The same image with a sigma of 3.0. These are "real" junction points that will allow reasonable overlap detection via line slope.
 
 
-[[File:Slope_detection_bad.png|250px]]
+[[File:Slope_detection_bad.png|325px]]
 
 In this image we see poor overlap detection. In this case due to a superfluous junction point at the bottom of one arm, leading to a misdiagnosis of what lines are overlapping.
 
 
-[[File:Slope_detection_success.png|300px]]
+[[File:Slope_detection_success.png|325px]]
 
 Successful ridge detection with slope-based overlap detection enabled. Line 134 is selected to illustrate the selection of a complete line despite numerous intersections.
 
