@@ -30,6 +30,16 @@ Artifacts are files, most commonly a '''[[wikipedia:JAR_%28file_format%29|JAR]]'
 
 The following sections will discuss these phases, and their associated tools and workflows, in more depth.
 
+= Relationship with Maven SNAPSHOTs =
+
+Another way of thinking about the development cycle is through the Maven version number given associated with our code. The idea behind reproducible builds is that when a user gets a particular version of a plugin, they can precisely deduce the state of the code that produced that plugin. Typically, that state is determined by a unique [[Git]] commit. However, it would be impractical and unrealistic to change the Maven version with every single Git commit.
+
+This is why we use [https://docs.oracle.com/middleware/1212/core/MAVEN/maven_version.htm#MAVEN401 SNAPSHOT] versions while "in development" (phases 1 and 2 - "SNAPSHOT coupling"). Using a SNAPSHOT version is conceding reproducibility in favor of convenience. For this reason we do not provide users with SNAPSHOT versions (except potentially for testing) as they can not facilitate reproducible science.
+
+When we want to provide users with an updated version of our code (phases 3 and 4) we change the version to a unique non-SNAPSHOT version for a single Git commit. Then the next commit returns us to SNAPSHOT versioning for development purposes. And thus the cycle repeats.
+
+= Phases in-depth =
+
 == Phase 1: In development ==
 
 Repositories on GitHub are referred to as '''remotes'''; when you ''[https://help.github.com/articles/cloning-a-repository/ clone]'', or ''check out'', a remote you get a local copy of the repository. Development progresses by making changes to your local copy and pushing them back to the remote. GitHub provides tools for controlling [https://help.github.com/articles/permission-levels-for-a-user-account-repository/ user permission levels] for each remote repository, therefore how you develop a project depends on whether you are able to ''push'' (write) to that project's remote repository or not.
