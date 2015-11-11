@@ -32,11 +32,11 @@ The following sections will discuss these phases, and their associated tools and
 
 = Relationship with Maven SNAPSHOTs =
 
-Another way of thinking about the development cycle is through the Maven version number given associated with our code. The idea behind reproducible builds is that when a user gets a particular version of a plugin, they can precisely deduce the state of the code that produced that plugin. Typically, that state is determined by a unique [[Git]] commit. However, it would be impractical and unrealistic to change the Maven version with every single Git commit.
+Another way of thinking about the development cycle is through the Maven version number given associated with the code. The idea behind reproducible builds is that from a given version of a plugin, the state of the code producing that version can be determined unambiguously. Typically, that state is determined by a unique [[Git]] commit. However, it would be impractical and unrealistic to change the Maven version with every single Git commit.
 
-This is why we use [https://docs.oracle.com/middleware/1212/core/MAVEN/maven_version.htm#MAVEN401 SNAPSHOT] versions while "in development" (phases 1 and 2 - "SNAPSHOT coupling"). Using a SNAPSHOT version is conceding reproducibility in favor of convenience. For this reason we do not provide users with SNAPSHOT versions (except potentially for testing) as they can not facilitate reproducible science.
+This is why [https://docs.oracle.com/middleware/1212/core/MAVEN/maven_version.htm#MAVEN401 SNAPSHOT] versions are used while "in development" (phases 1 and 2 - "SNAPSHOT coupling"). Using a SNAPSHOT version is saying "no guarantees are made as to the reproducibility of this artifact." For this reason, to best facilitate reproducible science, SNAPSHOT versions of code are not provided to users (except potentially for testing).
 
-When we want to provide users with an updated version of our code (phases 3 and 4) we change the version to a unique non-SNAPSHOT version for a single Git commit. Then the next commit returns us to SNAPSHOT versioning for development purposes. And thus the cycle repeats.
+To provide users with an updated version of an artifact (phases 3 and 4) the version is changed to a unique, non-SNAPSHOT, version for a single Git commit. Then the next commit returns to SNAPSHOT versioning for further development. Thus the cycle repeats.
 
 = Phases in-depth =
 
