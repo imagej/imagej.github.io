@@ -13,6 +13,14 @@ The [[wikipedia:Gitter|Gitter]] chat service, while relatively new, is a great w
 | [[ImageJ]]
 | [https://gitter.im/imagej/imagej imagej/imagej]
 |-
+| [[File:Fiji-icon.png|48px]]
+| [[Fiji]]
+| [https://gitter.im/fiji/fiji fiji/fiji]
+|-
+| [[File:Knime-icon.png|48px]]
+| [[KNIME]]
+| [https://gitter.im/knime-ip/knip knime-ip/knip]
+|-
 | [[File:Imglib2-icon.png|48px]]
 | [[ImgLib2]]
 | [https://gitter.im/imglib/imglib2 imglib/imglib2]
@@ -21,13 +29,9 @@ The [[wikipedia:Gitter|Gitter]] chat service, while relatively new, is a great w
 | [[SCIFIO]]
 | [https://gitter.im/scifio/scifio scifio/scifio]
 |-
-| [[File:Fiji-icon.png|48px]]
-| [[Fiji]]
-| [https://gitter.im/fiji/fiji fiji/fiji]
-|-
-| [[File:Knime-icon.png|48px]]
-| [[KNIME]]
-| [https://gitter.im/knime-ip/knip knime-ip/knip]
+| [[File:Scijava-icon.png|48px]]
+| [[SciJava]]
+| [https://gitter.im/scijava/scijava-common scijava/scijava-common]
 |}
 
 == IRC ==
