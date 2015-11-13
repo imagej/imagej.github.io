@@ -2,7 +2,7 @@
 | software               = Fiji
 | name                   = Shape Smoothing Plugin
 | author                 = Undral Erdenetsogt, {{Person|Twagner}}
-| maintainer             = Undral Erdenetsogt (erdenetsogt@biomedical-imaging.de), Thorsten Wagner (wagner@biomedical-imaging.de)
+| maintainer             = Undral Erdenetsogt (erdenetsogt@biomedical-imaging.de), Thorsten Wagner
 | filename               = [https://github.com/thorstenwagner/ij-shape-smoothing/releases/latest shape-smoothing.jar]
 | source                 = [https://github.com/thorstenwagner/ij-shape-smoothing Github]
 | latest version         = v1.0.1 (16 July 2015)
