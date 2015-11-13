@@ -50,7 +50,7 @@ Topic branches are great for isolating potentially disruptive and/or unfinished 
 * '''Faster support.''' Supporting the community is less convoluted, with changes released to users more rapidly. Yes, you can link to changes on a topic branch. And yes, you can upload binary builds from that branch. But each extra manual step costs time—better to link directly to the latest SNAPSHOT build. There are even ImageJ [[update sites]] which serve the latest builds from master, to make it easier for non-technical users to test changes.
 * '''Less complex.''' The more topic branches you have—and in particular, the more integration branches you have—the more complex the system becomes, the more supporting tooling, CI jobs, etc. are needed. And the more developer time is needed to maintain the tooling, sort through topic branches, keep track of open PRs... leaving less time for developing new features and fixing bugs.
 
-Hence, when exactly to use a topic branch is a judgment call, but some good times to a topic branch are:
+Hence, when exactly to use a topic branch is a judgment call, but some good times to use a topic branch are:
 * '''Breaking.''' The changes break [[backwards compatibility]].
 * '''New API.''' The changes introduce significant new API which will need to remain backwards compatible in the future, and review is desired before committing to that API.
 * '''Unfinished.''' The changes are unfinished.
