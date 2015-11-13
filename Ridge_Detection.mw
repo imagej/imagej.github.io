@@ -2,7 +2,7 @@
 | software               = Fiji
 | name                   = Ridge (Line) Detection Plugin
 | author                 = {{Person|Twagner}}, {{Person|Hinerm}}
-| maintainer             = Thorsten Wagner (wagner@biomedical-imaging.de)
+| maintainer             = Thorsten Wagner
 | filename               = Ridge_Detect.jar [https://github.com/thorstenwagner/ij-ridgedetection/releases/latest [1]]
 | source                 = Github [https://github.com/jumpfunky/ij-ridgedetection [2]]
 | latest version         = v1.1.3 (11 Nov 2015)
