@@ -1,0 +1,48 @@
+== How to read DICOM files into ImageJ? ==
+* ImageJ has built-in support for reading some kinds of DICOM files. Try {{bc | File | Open}} and see how it goes.
+* The [[Bio-Formats]] plugin supports some kinds of DICOM files, too. Bio-Formats is available in the [[Fiji]] distribution of ImageJ. Try {{bc | File | Import | Bio-Formats}}.
+* The [http://www.santec.lu/project/dicom Tudor Dicom Tools] plugin suite can read and write many kinds of DICOM, and provide some support for working with DICOM metadata structures.
+
+== How to save DICOM files from ImageJ? ==
+The [http://www.santec.lu/project/dicom Tudor Dicom Tools] provide basic support for saving as DICOM.
+
+== How to work with DICOM headers from a script? ==
+
+An example of using the <code>DicomTools.getTag()</code> method from [[JavaScript]]:
+<source lang="javascript">
+importClass(Packages.ij.IJ)
+importClass(Packages.ij.util.DicomTools)
+imp = IJ.openImage("http://imagej.nih.gov/ij/images/ct.dcm.zip"); 
+studyDescription = DicomTools.getTag(imp, "0008,1030"); 
+imagePosition = DicomTools.getTag(imp, "0020,0032"); 
+pixelSpacing = DicomTools.getTag(imp, "0028,0030"); 
+print("Study Description: "+ studyDescription); 
+print("Image Position: "+imagePosition); 
+print("Pixel Spacing: "+ pixelSpacing); 
+</source>
+
+== How to work with DICOM headers from a macro? ==
+
+See these [[macro]] functions:
+* [http://imagej.net/developer/macro/functions.html#getImageInfo getImageInfo()]
+* [http://imagej.net/developer/macro/functions.html#getInfo getInfo(DICOM_TAG)]
+* [http://imagej.net/developer/macro/functions.html#getMetadata getMetadata("Info")]
+
+An example using <code>getInfo()</code>:
+<source lang="javascript">
+open("http://imagej.nih.gov/ij/images/ct.dcm.zip"); 
+studyDescription = getInfo("0008,1030"); 
+imagePosition = getInfo("0020,0032"); 
+pixelSpacing = getInfo("0028,0030"); 
+print("Study Description: "+ studyDescription); 
+print("Image Position: "+imagePosition); 
+print("Pixel Spacing: "+ pixelSpacing);
+</source>
+
+See also these past threads from the ImageJ [[mailing list]]:
+* 2015-09-23 - [http://imagej.1557.x6.nabble.com/Reading-DICOM-header-without-opening-the-image-tp5014426.html Reading DICOM header without opening the image]
+* 2013-10-10 - [http://imagej.1557.x6.nabble.com/ImageJ-DICOM-Header-tp5005125.html ImageJ DICOM Header]
+* 2013-05-30 - [http://imagej.1557.x6.nabble.com/Dicom-Header-tp5003154.html Dicom Header]
+* 2012-05-09 - [http://imagej.1557.x6.nabble.com/Running-a-Macro-in-a-plugin-retrieving-DICOM-header-information-automatically-tp4962557.html Running a Macro in a plugin, retrieving DICOM header information automatically]
+* 2012-04-19 - [http://imagej.1557.x6.nabble.com/Accessing-a-DICOM-header-tt4898551.html Accessing a DICOM header]
+* 2012-04-13 - [http://imagej.1557.x6.nabble.com/Query-Dicom-Header-tp4877985.html Query Dicom Header]
