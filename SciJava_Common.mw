@@ -1,13 +1,4 @@
-{{Infobox
-| name                   = SciJava Common
-| software               = SciJava
-| logo                   = [[File:scijava-logo.png|128px]]
-| author                 = [https://github.com/orgs/scijava/people SciJava developers]
-| maintainer             = {{Person|Rueden}}<br>{{Person|Schindelin}}<br>{{Person|Hinerm}}
-| source                 = {{GitHub | org = scijava | repo = scijava-common}}
-| status                 = active
-| category               = 
-}}SciJava Common is a common library for [[SciJava]] software. It provides a plugin framework, with an extensible mechanism for service discovery, backed by its own annotation processor, so that plugins can be loaded dynamically. It is used by both [[ImageJ]] and [[SCIFIO]].
+{{ComponentStats:org.scijava:scijava-common}}SciJava Common is a common library for [[SciJava]] software. It provides a plugin framework, with an extensible mechanism for service discovery, backed by its own annotation processor, so that plugins can be loaded dynamically. It is used by both [[ImageJ]] and [[SCIFIO]].
 
 = Plugin framework =
 
