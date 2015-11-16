@@ -52,6 +52,21 @@ A tree-based high-level view is [https://github.com/imagej/imagej-ui-swing/commi
 
 
 === Why is matching important? ===
+This is a necessary part of any plugin-based infrastructure (see [https://en.wikipedia.org/wiki/Inversion_of_control inversion of control]). The core library (ImageJ-Ops) defines the available operations, but 
+
+a) cannott possibly cover all possible implementations and 
+b) would be impractical if a user had to explicitly call the precise signature for their arguments. 
+
+Ops matching is just an additional layer that allows plugin selection to be tailored to the arguments of the function being called.
+
+A contrived example:
+Suppose the default ops implementation of "add(array, array) iterates over the arrays and combines their values.
+
+Then guava comes up with a way to combine arrays that is 100x faster; we do not want a guava dependency in the base ops library, but we can have an "ImageJ-Guava" component that provides a GuavaAddArrayOp.
+
+Then an independent developer comes up with a new way to add the arrays that's 50,000x faster. They turn it into a closed-source, proprietary Op and sell it.
+
+Regardless of this proliferation of implementations, a user just has to write "ops.math().add(array1, array2)" and it will work. If they have the guava implementation on their classpath it will be faster, and if they purchase the proprietary implementation it will be faster still. But their code does not have to be adjusted.
 
 == See also ==
 
