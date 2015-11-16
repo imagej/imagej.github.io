@@ -1,4 +1,5 @@
 {{Infobox
+| software               = Fiji
 | name                   = Atlas Toolkit
 | author                 = {{Person|GrocottLab}}
 | maintainer             = Timothy Grocott ([mailto:t.grocott@uea.ac.uk t.grocott@uea.ac.uk])
@@ -10,3 +11,13 @@
 | category               = [[:Category:Registration|Registration]]
 | website                = [http://www.grocottlab.com/software www.grocottlab.com]
 }}3D group-wise elastic registration without landmarks.
+
+
+
+== License ==
+This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  
+----
+[[Category:Plugins]]
+[[Category:Registration]]
