@@ -34,9 +34,16 @@ The Ops matching framework provides '''extensibility.''' Ops are plugins, so any
 
 
 === Is there a list of Ops somewhere with brief descriptions of their functionalities? ===
-Unfortunately, we don't have such a list right now. To see the list of Ops we have, we can go to the [http://javadoc.imagej.net/ImageJ/ Javadoc page for ImageJ]. Any class under the package "net.imagej.ops" is related to Ops.
+Unfortunately, we do not have such a list right now. To see the list of Ops we have, we can go to the [http://javadoc.imagej.net/ImageJ/ Javadoc page for ImageJ]. Any class under the package "net.imagej.ops" is related to Ops.
 
-Another way is to use the Help Op. Suppose we already have "ij" as an ImageJ instance, calling "ij.op().help();" in script editor/interpreter will return a full list of signatures of available Ops within the current ImageJ instance.
+You can also use the [http://imagej.net/Script_Editor script editor] in ImageJ and actively search using Ops itself. for example:
+
+    // @OpService ops
+    print ops.help()
+
+in groovy will give a list of every Op signature. Help is an Op for getting information about other ops or namespaces, e.g. ops.help("add") will just return info about the available add ops.
+
+A tree-based high-level view is [https://github.com/imagej/imagej-ui-swing/commit/9d54c38f57ac15b9986590bc4c5aa09d752f6e65 coming soon]...
 
 === Are there any Ops for image processing? ===
 
