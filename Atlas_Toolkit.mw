@@ -1,0 +1,12 @@
+{{Infobox
+| name                   = Atlas Toolkit
+| author                 = {{Person|GrocottLab}}
+| maintainer             = Timothy Grocott ([mailto:t.grocott@uea.ac.uk t.grocott@uea.ac.uk])
+| filename               = [http://sites.imagej.net/GrocottLab/plugins/Atlas_Toolkit_1.0-SNAPSHOT.jar-20151116182925 Atlas_Toolkit_1.0-SNAPSHOT.jar]
+| source                 = {{GitHub|org=GrocottLab|repo=Atlas-Toolkit}}
+| released               = November 16<sup>th</sup>, 2015
+| latest version         = 1.0, May 6<sup>th</sup>, 2015
+| status                 = stable, active
+| category               = [[:Category:Registration|Registration]]
+| website                = [http://www.grocottlab.com/software www.grocottlab.com]
+}}3D group-wise elastic registration without landmarks.
