@@ -3,16 +3,43 @@
 | name                   = Atlas Toolkit
 | author                 = {{Person|GrocottLab}}
 | maintainer             = Timothy Grocott ([mailto:t.grocott@uea.ac.uk t.grocott@uea.ac.uk])
-| filename               = [http://sites.imagej.net/GrocottLab/plugins/Atlas_Toolkit_1.0-SNAPSHOT.jar-20151116182925 Atlas_Toolkit_1.0-SNAPSHOT.jar]
+| filename               = Atlas_Toolkit_1.0-SNAPSHOT.jar
 | source                 = {{GitHub|org=GrocottLab|repo=Atlas-Toolkit}}
 | released               = November 16<sup>th</sup>, 2015
 | latest version         = 1.0, May 6<sup>th</sup>, 2015
 | status                 = stable, active
 | category               = [[:Category:Registration|Registration]]
 | website                = [http://www.grocottlab.com/software www.grocottlab.com]
-}}3D group-wise elastic registration without landmarks.
+}}The Atlas Toolkit plugin is a collection of tools developed to achieve group-wise elastic registration of 3D objects by decomposing the alignment problem into a sequence of orthogonal 2D elastic registrations, for which each object is registered to every other. These 2D elastic registrations are powered by the [[BUnwarpJ]] plugin, and registration is guided by the gross morphology of the corresponding 3D objects, which can be defined using the [[Segmentation Editor]] plugin.
 
+==Installation of the plugin==
+The plugin can be quickly installed via the project's update site. Please refer to the [[Update_Sites | '''tutorial''']] on how to add our update site to your Fiji installation.
+Our update site has the following URL:
 
+  '''<code><nowiki>http://sites.imagej.net/GrocottLab/</nowiki></code>'''
+
+==What's in the toolkit?==
+Atlas Toolkit includes a number of different tools to help building atlases. Many of these will be of limited use/interest. For those interested in 3D image registration the most important tools will be:
+
+3. Label Registration 3D.
+
+4. Apply Label Registration.
+
+This complete list of tools is as follows:
+
+1. Extract Nuclear Signal.
+
+2. Project to Segment Label.
+
+3. Label Registration 3D.
+
+4. Apply Label Registration.
+
+5. Merge Registered Volumes.
+
+6. Sample Volumes for Clustering.
+
+7. Cluster Viewer.
 
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
