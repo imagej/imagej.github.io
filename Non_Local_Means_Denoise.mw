@@ -1,8 +1,8 @@
 {{Infobox
 | software               = ImageJ/Fiji
 | name                   = Non Local Means Denoise
-| maintainer             = [mailto:wagner@biomedical-imaging.de Thorsten Wagner]
-| author                 = Pascal  Behnel, Thorsten Wagner
+| maintainer             = {{Person|Twagner}}
+| author                 = Pascal  Behnel, {{Person|Twagner}}
 | filename               = ij_nl_means-1.4.1.jar [https://github.com/thorstenwagner/ij-nl-means/releases/latest [1]]
 | source                 = GitHub [https://github.com/jumpfunky/ij-nl-means [2]]
 | latest version         = v1.4.1 (27 July 2015)
