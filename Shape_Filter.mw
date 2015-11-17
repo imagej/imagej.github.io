@@ -1,8 +1,8 @@
 {{Infobox
 | software               = ImageJ/Fiji
 | name                   = Shape Filter Plugin
-| author                 = Thorsten Wagner
-| maintainer             = Thorsten Wagner (wagner@biomedical-imaging.de)
+| author                 = {{Person|Twagner}}
+| maintainer             = {{Person|Twagner}}
 | filename               = shape_filter_x.y.z.jar [https://github.com/thorstenwagner/ij-shape-filter/releases/latest [1]]
 | source                 = Github [https://github.com/thorstenwagner/ij-shape-filter [2]]
 | latest version         = v1.4.0 (21 Sep 2015)
