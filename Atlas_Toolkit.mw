@@ -1,7 +1,7 @@
 {{Infobox
 | software               = Fiji
 | name                   = Atlas Toolkit
-| author                 = {{Person|GrocottLab}}
+| author                 = [http://www.grocottlab.com GrocottLab]
 | maintainer             = Timothy Grocott ([mailto:t.grocott@uea.ac.uk t.grocott@uea.ac.uk])
 | filename               = Atlas_Toolkit_1.0-SNAPSHOT.jar
 | source                 = {{GitHub|org=GrocottLab|repo=Atlas-Toolkit}}
@@ -19,27 +19,63 @@ Our update site has the following URL:
   '''<code><nowiki>http://sites.imagej.net/GrocottLab/</nowiki></code>'''
 
 ==What's in the toolkit?==
-Atlas Toolkit includes a number of different tools to help building atlases. Many of these will be of limited use/interest. For those interested in 3D image registration the most important tools will be:
+Atlas Toolkit includes a number of different tools to help building atlases. Many of these will be of limited use/interest.
 
-3. Label Registration 3D.
-
-4. Apply Label Registration.
+For those interested in 3D image registration, the most important tools will be [[#Label Registration 3D|Label Registration 3D]] and [[#Apply Label Registration|Apply Label Registration]].
 
 This complete list of tools is as follows:
 
-1. Extract Nuclear Signal.
+1. Extract Nuclear Signal
 
-2. Project to Segment Label.
+2. Project to Segment Label
 
-3. Label Registration 3D.
+3. [[#Label Registration 3D|Label Registration 3D]]
 
-4. Apply Label Registration.
+4. [[#Apply Label Registration|Apply Label Registration]]
 
-5. Merge Registered Volumes.
+5. Merge Registered Volumes
 
-6. Sample Volumes for Clustering.
+6. Sample Volumes for Clustering
 
-7. Cluster Viewer.
+7. Cluster Viewer
+
+==Label Registration 3D==
+===Before starting...===
+You will begin with a number of image stacks that you want to register together.
+
+Prior to registration, the particular tissue(s) or object(s) of interest must be distinguished from the rest of their image stack through the process of manual segmentation. This involves generating a new 8-bit image stack (a '.label' file) in which each tissue or region of interest is represented by a unique numerical value, usually visualised by a unique colour.
+
+The [[Segmentation Editor]] plugin is a convenient tool for efficiently segmenting multiple tissues of interest from a single image stack.
+
+The resulting ‘.label’ files can then be used to perform non-rigid registration of equivalent tissues or objects from different image stacks [[#Using "Label Registration 3D"|using Label Registration 3D]].
+
+===Using "Label Registration 3D"===
+Once you have your '.label' files, you can use Label Registration 3D to register them together.
+
+When you run this tool, it will keep prompting you for '.label' files. When you have told it where to find the last '.label' file, just click 'Cancel' to proceed to the registration.
+
+You will then be prompted to select some basic parameters:
+
+- "Select Channel (0 - 255):" allows you to select which of the labels (tissues/objects) within the '.label' files should be registered. Empty space/background will have a value of '0', while the first (possibly only) label will have a value of '1' and this is the default setting.
+
+- "Number of iterations:" determines how many times the tool will attempt to register the '.label' files. More complex or dissimilar tissues/objects may require more iterations. Similarly, the more '.label' files you are registering, the more iterations may be required.
+
+- "First Orthogonal Plane:" allows you to tell the tool which direction it should start from. Some tissues/objects may be more asymmetric in one particular plane and it may be advantageous to perform the first 2D registration in that plane.
+
+On clicking "OK" the tool will register the specified '.label' files, displaying its progress as it does so.
+
+Once the registration is complete, you will be prompted for a folder in which to store the results.
+
+The results consist of the following files:
+
+- Multiple '.tif' files, each containing a transformed version of one tissue/object.
+
+- A single 'consensus.tif' file, which contains the consensus morphology for all registered tissue/objects.
+
+- Multiple '.ots' files, each containing instructions for reproducing the transformation of a particular tissue/object. These '.ots' files can be used with the [[#Apply Label Registration|Apply Label Registration]] tool in order to reproduce a particular transformation, for example on the corresponding original image stack.
+
+==Apply Label Registration==
+Once a set of ‘.label’ files has been registered using [[#Label Registration 3D|Label Registration 3D]], the resulting ‘.ots’ files can be used to transform the original image stacks towards their shared consensus tissue/object morphology.
 
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
