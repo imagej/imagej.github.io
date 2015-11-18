@@ -24,6 +24,37 @@ The library implements several functionalities that were missing in ImageJ, and 
 
 * '''Binary / label images utilities''' for removing or keeping largest connected component, perform size opening, fill holes, kill borders...
 
+== Morphological filters ==
+[[Image:MorphoLibJ-binary-dilation-erosion.png|right|thumb|400px|Some example of morphological filters. From left to right: original image (black over white), result of dilation, result of erosion.]] [[Image:MorphoLibJ-binary-gradient-close-open.png|right|thumb|400px|Some example of composed morphological filters. From left to right: result of morphological gradient, result of morphological closing, result of morphological opening.]] Morphological filters consider the neighborhood of each pixel/voxel according to a structuring element of a given size and shape.
+
+The following filters are '''implemented both for 2D and 3D image'''s, and work for binary as well as grey level images:
+
+* '''erosion''' keeps the minimum value within the neighborhood defined by the structuring element.
+
+* '''dilation''' keeps the maximum value within the neighborhood defined by the structuring element.
+
+* '''closing''' consists in the succession of a dilation with an erosion. Morphological closing makes dark structures smaller than the structuring element disappear.
+
+* '''opening''' consists in the succession of an erosion with a dilation. Morphological opening makes bright structures smaller than the structuring element disappear.
+
+* '''morphological gradient''' is defined as the difference of a morphological dilation and a morphological erosion with the same structuring element, and enhances edges of the original images.
+
+* '''morphological Laplacien''' is defined as half the sum of a morphological dilation and a morphological erosion with the same structuring element, minus the original image, and enhances edges of the image.
+
+* '''black top-hat''' consists in subtracting the original image from the result of a morphological closing, and results in the enhancement of dark structures smaller than structuring element.
+
+* '''white top-hat''' consists in subtracting the result of a morphological opening from the original image, and results in the enhancement of bright structures smaller than structuring element.
+
+The following structuring elements can be used for 2D images:
+
+* disk 
+* square
+* octagon
+* diamond
+* line with angle of 0, 90, 45 or 135 degrees
+
+For 3D images, the same structuring elements can be used (the operation is simply repeated on each slice), as well as a cubic structuring element.
+
 == Installation ==
 
 * In ImageJ, download the [https://github.com/ijpb/MorphoLibJ/releases latest released jar] into the ''plugins'' folder.
