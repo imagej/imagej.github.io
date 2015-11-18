@@ -188,9 +188,9 @@ You can confirm how much memory is actually available by clicking on the [[statu
 
 [[File:MemoryStatus.png]]
 
-'''If setting this value somehow has no effect:''' Check for an [http://www.computerhope.com/issues/ch000549.htm environment variable] called <code>_JAVA_OPTIONS</code> or similar, which is overriding the value. If the variable exists, change the memory value there, or remove the variable completely.
-
 If you are already at the limits of your computer's physical memory, the next step would be to add more.
+
+'''If setting this value somehow has no effect:''' Check for an [http://www.computerhope.com/issues/ch000549.htm environment variable] called <code>_JAVA_OPTIONS</code> or similar, which is overriding the value. If the variable exists, change the memory value there, or remove the variable completely.
 
 '''About Java garbage collection:''' Java always automatically calls the garbage collector when the heap is getting full [http://stackoverflow.com/questions/8719071 [1]]. While it is possible to manually invoke the garbage collector by clicking ImageJ's [[status bar]]&mdash;or programmatically by calling <code>run("Collect Garbage")</code> in a macro or <code>System.gc()</code> in a plugin&mdash;it will not solve the fundamental problem of Java actually not having a sufficient amount of memory. (The only exception to this is a rare case where Java decides that garbage collection is happening too slowly, in which case you should see the message "GC overhead limit exceeded" [http://www.petefreitag.com/item/746.cfm [2]]).
 
