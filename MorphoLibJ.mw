@@ -40,6 +40,6 @@ The library implements several functionalities that were missing in ImageJ, and 
 
 == Documentation ==
 
-The main source code directory is [http://github.com/ijpb/MorphoLibJ/tree/master/src/main/java/inra/ijpb src/main/java/inra/ijpb].
+The main source code directory is on GitHub under [http://github.com/ijpb/MorphoLibJ/tree/master/src/main/java/inra/ijpb src/main/java/inra/ijpb].
 
 You can browse the [http://ijpb.github.io/MorphoLibJ/javadoc/ javadoc] for more information about its API.
