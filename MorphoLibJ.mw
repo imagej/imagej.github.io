@@ -55,6 +55,15 @@ The following structuring elements can be used for 2D images:
 
 For 3D images, the same structuring elements can be used (the operation is simply repeated on each slice), as well as a cubic structuring element.
 
+== Watershed segmentation ==
+The watershed algorithm assimilates the grey level image to a digital elevation model, and aims at detecting the different catchment basins. In the grey-level image, the catchment basins correspond to dark regions surrounded by bright structures (the "crests"). It is a very popular technique specially used to segment touching objects. The MorphoLibJ suite contains several implementations of the algorithm and plugins that make use of it:
+
+* [[Classic Watershed]], plugin implementing the original watershed algorithm by Pierre Soille and Luc M. Vincent (1990) to segment 2D/3D grayscale images.
+* [[Marker-controlled Watershed]], a plugin to perform watershed by flooding from specific seed points or markers by Meyer and Beucher (1990).
+* [[Morphological Segmentation]], a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
+
+
+
 == Installation ==
 
 * In ImageJ, download the [https://github.com/ijpb/MorphoLibJ/releases latest released jar] into the ''plugins'' folder.
