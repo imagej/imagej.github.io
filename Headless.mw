@@ -34,6 +34,10 @@ To run a ''macro'' in headless mode, use the <code>-macro</code> command line ar
 
 If the macro resides in ImageJ's macro directory, it is possible to specify the macro name instead of the actual file path. The file extension is always very recommended but for backwards compatibility, it is not strictly required ''only'' when specifying the macro name instead of a path.
 
+You can even pass parameters to the macro; e.g.:
+
+  ./ImageJ-win64.exe --headless --console -macro ./RunBatch.ijm 'folder=../folder1 parameters=a.properties output=../samples/Output'
+
 === Running scripts in headless mode ===
 
 {{Warning | '''Beware:''' There is currently [https://github.com/imagej/imagej/issues/114 a serious bug] preventing headless [[Jython]] scripts from working on '''Windows''' systems.}}
