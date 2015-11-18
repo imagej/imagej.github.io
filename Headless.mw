@@ -38,6 +38,18 @@ You can even pass parameters to the macro; e.g.:
 
   ./ImageJ-win64.exe --headless --console -macro ./RunBatch.ijm 'folder=../folder1 parameters=a.properties output=../samples/Output'
 
+In that case, the RunBatch.ijm file should be something like:
+<source>
+arg = getArgument()
+print("Running batch analysis with arguments:")
+print(arg)
+run("Batch process", arg )
+print("Done.")
+eval("script", "System.exit(0);");
+</source>
+
+the <code>getArgument()</code> is used to graph the parameter string itself, and it is then passed to an IJ command.
+
 === Running scripts in headless mode ===
 
 {{Warning | '''Beware:''' There is currently [https://github.com/imagej/imagej/issues/114 a serious bug] preventing headless [[Jython]] scripts from working on '''Windows''' systems.}}
