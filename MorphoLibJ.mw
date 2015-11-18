@@ -1,0 +1,45 @@
+{{Infobox
+| name                   = MorphoLibJ
+| software               = IJPB-plugins
+| author                  = David Legland, {{Person|Iarganda}}
+| maintainer             = David Legland, {{Person|Iarganda}}
+| source                 = {{GitHub|org=ijpb|repo=MorphoLibJ}}
+| released               = July 3<sup>rd</sup>, 2014
+| latest version         = March 23<sup>rd</sup>, 2015 (MorphoLibJ v1.0.7)
+| status                 = stable, active
+| category               = [[:Category:Segmentation|Segmentation]], [[:Category:Mathematical_morphology|Mathematical morphology]]
+}}
+
+Collection of mathematical morphology methods and plugins for ImageJ, created at INRA-IJPB Modeling and Digital Imaging lab.
+
+The library implements several functionalities that were missing in ImageJ, and that were not or only partially covered by other plugins. Namely:
+
+* '''Morphological filtering''': erosion & dilation, closing & opening, morphological gradient & Laplacian, top-hat...
+
+* '''Morphological reconstruction''', allowing fast detection of regional or extended extrema, removing of borders, or hole filling
+
+* '''Watershed segmentation''' + GUI, making it possible to segment 2D/3D images of cell tissues
+
+* '''2D/3D measurements''': volume, surface area, inertia ellipse/ellipsoid...
+
+* '''Binary / label images utilities''' for removing or keeping largest connected component, perform size opening, fill holes, kill borders...
+
+== Installation ==
+
+* In ImageJ, download the [https://github.com/ijpb/MorphoLibJ/releases latest released jar] into the ''plugins'' folder.
+
+* In Fiji, you just need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | add]] the IJPB-plugins site to your list of update sites:
+
+::: 1) Select {{bc | Help | Update...}} from the Fiji menu to start the updater.
+
+::: 2) Click on ''Manage update sites''. This brings up a dialog where you can activate additional update sites.
+
+::: 3) Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.
+
+::: 4) Click ''Apply changes'' and restart Fiji.
+
+== Documentation ==
+
+The main source code directory is [http://github.com/ijpb/MorphoLibJ/tree/master/src/main/java/inra/ijpb src/main/java/inra/ijpb].
+
+You can browse the [http://ijpb.github.io/MorphoLibJ/javadoc/ javadoc] for more information about its API.
