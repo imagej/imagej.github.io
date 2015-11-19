@@ -82,6 +82,18 @@ The following operations are available in the {{bc | Plugins | Fast Morphology}}
 * [[Marker-controlled Watershed]], a plugin to perform watershed by flooding from specific seed points or markers by Meyer and Beucher (1990).
 * [[Morphological Segmentation]], a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
 
+== Measurements ==
+=== Geometric measurements ===
+Several measurements are provided for '''binary or label''' 2D or 3D images. The results are provided in a ResultsTable, whose name contains the name of the original image. The plugin calculating these measurements is found under {{bc | Plugins | Analyze | Geometric Measurements 3D}}:
+
+* '''Bounding box''' returns the minimal and maximal coordinates in each direction for each label.
+* '''Volume / surface area''' computes the volume, the surface area, and a sphericity index, defined as <math>36\pi V^{2}/S^{3}</math>. Surface area is computed using a discretized version of the [https://en.wikipedia.org/wiki/Crofton_formula Crofton formula], that computes intersections with line grids of various orientations (currently either 3 or 13).
+* '''Inertia ellipse / ellipsoid''' returns the centroid (center of gravity) as well as the size and the orientation of the inertia ellipse or ellipsoid of each particle. Radiuses are sorted in decreasing order. Angles are given in degrees, and correspond to the azimut ("yaw"), the elevation ("pitch"), and the roll around the main axis.
+
+=== Intensity measurements ===
+
+Other measurements are provided for pairs of grayscale and label 2D or 3D images ({{bc | Plugins | Analyze | Measure 3D}}). The plugin calculates the '''mean''', the '''standard deviation''', the '''maximum''' and the '''minimum intensity''' value of each labeled region in the grayscale image. The results are displayed as well in a ResultsTable.
+
 == Installation ==
 
 * In ImageJ, download the [https://github.com/ijpb/MorphoLibJ/releases latest released jar] into the ''plugins'' folder.
