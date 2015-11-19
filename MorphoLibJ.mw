@@ -108,6 +108,16 @@ Other measurements are provided for pairs of grayscale and label 2D or 3D images
 
 ::: 4) Click ''Apply changes'' and restart Fiji.
 
+== Binary image utilities ==
+[[Image:MorphoLibJ-connected-components-distance.png|thumb|300px|Connected components labeling, and computation of distance maps for binary image.]]
+MorphoLibJ has some functions specific for the processing of binary images:
+* '''Connected Components Labeling''' transforms the binary image into a label image by assigning a specific number (label) to each connected component.
+* '''Chamfer Distance Map''' computes an approximate distance map between each foreground pixel to the nearest background pixel.
+* '''Keep / Remove Largest Region''' identifies the largest connected component, and keep it or remove it.
+* '''Size Opening''' computes the size (area in 2D, volume in 3D) of each connected component, and remove all particles whose size is below the value specified by the user.
+
+Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is used for 2D (resp. 3D) images.
+
 == Documentation ==
 
 The main source code directory is on GitHub under [http://github.com/ijpb/MorphoLibJ/tree/master/src/main/java/inra/ijpb src/main/java/inra/ijpb].
