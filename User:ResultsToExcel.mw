@@ -17,7 +17,7 @@ run("Read and Write Excel", arg);
 
 I am aware that another Excel_Writer plugin exists but it did not work for me very well (hence me creating this). I did not consult their source code but did find out about Apach POI from them.
 
-If you decide to consult the source-code, please excuse odd methods and strange notes. I have taught myself Java to write this.
+If you decide to consult my source-code, please excuse odd methods and strange notes. I have taught myself Java to write this.
 
 Author:
 Anthony Sinadinos
