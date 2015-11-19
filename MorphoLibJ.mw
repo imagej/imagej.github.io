@@ -118,6 +118,21 @@ MorphoLibJ has some functions specific for the processing of binary images:
 
 Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is used for 2D (resp. 3D) images.
 
+== Utilities for label images ==
+
+Some functions are specific for the processing of label images, in which the pixel/voxel value is used to identify the particle it belongs to. The value 0 is assumed to correspond to the background. The number of labels that can be represented depends on the image type: 255 for byte images, 65535 for short images...
+
+* '''Remove Border Labels''' is similar to "kill borders" function, but operates faster as no morphological reconstruction is required.
+* '''Select Label(s)''' enters a set of labels, and creates a new label image containing only the selected labels.
+* '''Crop Label''' creates a new binary image containing only the label specified by the user. The size of the new image is fitted to the region.
+* '''Replace Value''' replaces the value of a region by another value. Can be used to “clear” a label, by replacing its value by 0, or to merge to adjacent regions.
+* '''Label Boundaries''' creates a new binary image containing value 255 for pixels/voxels having a neighbour with a different value.
+* '''Keep / Remove Largest Label''' identifies the largest label, and keeps it or removes it.
+* '''Label Size Opening''' computes the size (area in 2D, volume in 3D) of each region, and removes all labels whose size is below the value specified by the user.
+* '''Assign Measure To Label''' combines a label image with a results table, and creates a new image for which each pixel/voxel is assigned the measurement value corresponding to the label it belongs to.
+* '''Set Label Map''' allows to choose the color map used to display a label image. In particular, shuffling the color map and/or choosing a specific color for background allows better visualization that only grey levels.
+* '''Label To RGB''' converts a label image to true RGB image. Similar to ImageJ native conversion, but this plugin avoids confusion between background pixels and regions with low labels.
+
 == Documentation ==
 
 The main source code directory is on GitHub under [http://github.com/ijpb/MorphoLibJ/tree/master/src/main/java/inra/ijpb src/main/java/inra/ijpb].
