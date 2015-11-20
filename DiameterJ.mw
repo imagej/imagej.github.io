@@ -75,52 +75,28 @@ Fiber orientation was determined using a well-established plug-in for ImageJ cal
 
 An in-depth training for how to use DiameterJ has been developed.  In total the training as been broken into 5 pieces described below.  We recommend going through the training linearly but feel free to mix and match as your needs require.
 
-General Installation and Software Usage Description 
-
+How to Install and Use DiameterJ
 * [https://docs.google.com/document/d/1lODEj02e2eFtQ-v0B3TJd53Q2XFZZW2i0szrfyX0kRY/edit?usp=sharing Training Document 1]
 
+====<big>DiameterJ Segmentation</big>====
+Image segmentation is the process of converting an image into a binary representation of your image, where the white pixels represent the portions of the original image that you would like to measure and the black pixels represent the background that you would not like to measure. 
 
+Please see the below two documents to get an in-depth review of how to use segmentation in DiameterJ
+* [https://docs.google.com/document/d/1i_dBujuiFqkCQqdjAgFuwATDS3pvQH7cK2kwcAfDiSw/edit?usp=sharing Image Cropping and Segmentation]
+* [https://docs.google.com/document/d/1Hywk3DsRz7tpkafyjncpBxCQTZw5NnqkkWKp4LKguYk/edit?usp=sharing Manual Segmentation]
 
-[[File:ImageJ old website.png|500px|thumb|right|alt=Alt|Montage image produced by Segment SRM or Segment Mix]]
-#Go to:  “Plugins-->DiameterJ-->Segment Mixed” or “Plugins-->DiameterJ-->Segment SRM” to segment images
-#*Each uses a different set of 8 algorithms to analyze and segment your images
-#Choose the directory of the file you want to segment
-#*If you only want DiameterJ to segment a single image you will need to create a folder in which only that image is present
-#Segment XXX will then ask if you want to crop your image.  If you do then it will ask what the height and width in pixels you want to crop your images to.  
-#*The crop box begins at the top left of your image
-#**''If your image is 1280x960 and you want to crop out the scale bar at the bottom which takes up 100 of the bottom pixels of the image then you would say the width is 1280 while the height is 860''
-#The code will then produce three folders in the folder where the image that you selected for analysis is located.  One folder called “Best Segmentation” another called “Montage Images” and the third called “Segmented Images"
-#*The “Best Segmentation” folder contains no images
-#*“Montage Images” have a comparison of the original image to the 8 different segmentation methodologies.  Look at the montage images and find the image with the most accurate representation of your fibers
-#**''Remember, not all fibers need to be included in the segmentation for it to be a “good” segmentation.  The fibers just need to be without significant holes, edge defects, or too densely packed for the program to analyze them. (the program does not analyze intersections of fibers)''
-#**''File names are on the bottom of the images in Red'' [[File:Hotaling_Segmenatation.png|250px|thumb|right|alt=Alt|Example of segmented images from ideal segmentation to terrible]]
-#*The “Segmented Images" folder has all of the segmented images from the montage images 
-#Copy and paste the best segmentation into the “Best Segmentation” folder. Good or ideal (as shown by the images on the right) segmentation quality will provide the most accurate results. 
-#Visually inspect these images to make sure that the segmentation worked well and that the segmentation represents the image you want to analyze
-#*If it does not try the other segmentation algorithms
-#*If none of the 16 algorithms segment your image well you can take the best segmentation and manually fix the errors to accurately reproduce the fibers.  This process is slow and so not recommended if it can be avoided.
-#After copying the best image into the “Best Segmentation” folder delete all unused images/montage images
-#*Approximately 2% of the time none of the algorithms included will provide a good segmentation.  (Based on our experience)
-#*If that is the case you will need to either repeat your imaging with better contrast/brightness between the background and what you are trying to measure or you can find/implement a different algorithm that works better
-#*We recommend one of the following if default segmentation did not work: 
-#**''[http://fiji.sc/Trainable_Weka_Segmentation Trainable Weka Segmentation] machine learning segmentation implementation''
-#**''[http://rsbweb.nih.gov/ij/plugins/canny/index.html Canny Edge Detection] and then fill the resulting image outline in with black''
-#**''Auto local threshold (in ImageJ/FIJI at Image-->Adjust-->Auto Local Threshold)''
-#**''Auto threshold (in ImageJ/FIJI at Image-->Adjust-->Local Threshold)''
-#**''Manually outline the foreground and background with the free hand selection tool and fill the selections with black (background) and white (fibers)'' 
-#**''Develop your own algorithm!''
+There are a total of 24 different algorithms that can be used to segment images included with DiameterJ.  Feel free to use them all or none of them.  DiameterJ 1.XXX can analyze any black and white (binary) image and thus users do not need to use the included segmentation algorithms to segment their images if they do not want to.
 
 ====<big>DiameterJ Analysis</big>====
 :'''''Analyzed images MUST be white fibers on a black background.  If you have black fibers on a white background invert the image to analyze it with DiameterJ.''''' 
 
-::; In ImageJ go to:
-::: “Plugins-->DiameterJ-->DiameterJ 0.XXX” to analyze the segmented image.  
-[[File:Statistic summary.PNG|350px|thumb|right|alt=Alt|Sample data from DiameterJ of the summary output from a single image]]
-::Choose the directory of the file you want to analyze (right now it’s in batch form so if you only want to analyze one file move it into a folder by itself and select that folder.  I intend to post both a batch and non-batch form of the segmentation and DiameterJ code but haven’t made the non-batch form yet.)
+Please go to [https://docs.google.com/document/d/1lODEj02e2eFtQ-v0B3TJd53Q2XFZZW2i0szrfyX0kRY/edit?usp=sharing Training Document 1] to see a detailed explanation of how to perform the DiameterJ analysis.
+
+The File [https://docs.google.com/document/d/1n6a8VPy4tugZTQO7BYD-JU4JYvrmbuSib2AcXPXys9w/edit?usp=sharing Output Description], contains a detailed description of all files output by DiameterJ 1.XXX.  
  
-::DiameterJ will then analyze all images in the directory and will separate its analysis into three folders “Diameter Analysis Images”, “Histograms”, and “Summaries.”  They are pretty self-explanatory. 
- 
-::The “XXXX_Total Summary.xls” file in the “Summaries” folder will give you all of the metrics summarized.  Generally, the histogram average is most accurate when multiple fiber diameters are not present and the super pixel average is the most accurate when multiple fiber diameters are present.  However, these metrics are global averages of diameter and can be easily biased if the diameter histogram analyzed has a non-normal distribution (i.e. multiple peaks, significant noise leading or trailing from the peak, etc.).  It is strongly recommend that you perform a peak fit of the diameter histogram to obtain a more accurate measure if the radius histogram image (shown in the "Histograms" folder) shows a non-normal distribution or multiple peaks.  
+
+<big>Of Note About Analysis</big>
+::The metrics contained in the Total Summaries folder are global averages of diameter and can be easily biased if the diameter histogram analyzed has a non-normal distribution (i.e. multiple peaks, significant noise leading or trailing from the peak, etc.).  It is strongly recommend that you perform a peak fit of the diameter histogram to obtain a more accurate measure if the radius histogram image (shown in the "Histograms" folder) shows a non-normal distribution or multiple peaks.  
  
 ::Peak fitting is also recommended if you would like to analyze replicate images of a single sample.  To do this we recommend that you copy and paste all histograms from replicate images into one file, sum the frequency at each radius value and then save the resulting file as a .csv.  (Make sure all combined images have been taken at the same magnification or their radius values are scaled appropriately).
 
@@ -141,40 +117,7 @@ General Installation and Software Usage Description
 :#For other fits read literature to ascertain describing statistics.
 
 ====<big>Pixel to Unit Distance Transformation</big>==== 
-[[File:Set_Scale.png|250px|thumb|right|alt=Alt|Set scale menu location]]'''''All measures given by DiameterJ are in pixels by default'''''
-:#To determine the pixel to unit distance (nanometer/micrometer/millimeter) conversion there are two options depending on how much metadata your SEM stores with your image.  It is possible that it stores the pixel to distance conversions in the metadata and thus getting that number is easy.  Simply go to:
-:#*Analyze-->Set Scale 
-:#Look at what the unit of length is… if its inches then your SEM doesn’t store that information with the micrograph and you’ll have to do the conversion by hand. [[File:Set_Scale_Menu.png|200px|thumb|right|alt=Alt|Set scale menu]]
-:#In that case open any micrograph at the magnification that you have taken your SEM images in ImageJ.   
-:#In ImageJ/FIJI go to menu:
-:#*Analyze-->Set Scale
-:#Click “Click to Remove Scale”
-:#Close the scale window 
-:#Place your mouse over the scale bar and hit the “+” key to zoom-in. 
-:#Continue to zoom-in on the scale bar until it fills the screen 
-:#*After zooming in you can widen the default width of the window that ImageJ chooses just like any normal window).  
-:#Next, select the “Rectangular” tool from the menu bar.  
-:#*If the rectanglular tool isn't available go to the tile that has “>>” and click “Restore startup tools” from the drop down menu. 
-:#Next, draw a square or a line that spans the scale bar.  
-:#To get the length or width of this rectangle simply look under the tool bar of ImageJ as you are drawing the rectangle 
-:#*As soon as you stop drawing the measurements disappear so don’t let go of the cursor until you’ve seen the rectangle width.  
-:#Record the number that 'w" equals.  [[File:Pixel_to_Distance_transform_zoom.png|750px|center|alt=Alt|Drawing of box to find width of scale bar in an image]]
-:#Then it’s simply a matter of dividing the length represented by the scale bar by the number of pixels you just recorded.  
-:#Take that conversion factor and multiply all pixel measurements output by DiameterJ and you’ll have the distance in your desired units. (Percent measures do not need to be multiplied)
-:#For the DiameterJ outputs of pore area, percent porosity, and intersection density you will do a different conversion then simply multiplying the length conversion.  
-:#*The pore area is an area and thus you should square the conversion factor calculated above and multiply by the pixel value given in the pore area.  
-:#*The percent porosity is already a percent and thus does not need to be multiplied by anything.  
-:#*The intersection density is reported as number of intersections per 100px x 100px area.  This is an arbitrary unit and thus to convert it to intersections per unit area divide the "Intersection Density" by 10,000.  Next, multiply it by 1 over the square of the conversion factor above.  That will give you intersections per unit squared.
-
-====<big>DiameterJ Diameter Locations</big>====  
-[[File:Best_Segmentation2_Overlay.png|thumb|right|200px|alt=Alt|DiameterJ locations output if the range of fiber diameter was set from 33 to 38 pixels]]
-:If you are curious about where particular radii occur in your image a tool called “DiameterJ Loc” can be used.  
-
-::'''In ImageJ go to''':
- 
-:::“Plugins-->DiameterJ-->DiameterJ Loc” to analyze the segmented image.
-
-:Select the lower and upper pixel diameter you wish to visualize in your image.  A folder will be created called “Diameter Location” with an image of red lines over all diameters where DiameterJ measured a particular diameter or range of diameters that you specified.  We recommend using a range of at least 3 pixels to determine a peak as DiameterJ has up to one pixel of error (+/-) in measurements
+Please see [https://docs.google.com/document/d/1lODEj02e2eFtQ-v0B3TJd53Q2XFZZW2i0szrfyX0kRY/edit?usp=sharing Training Document 1] and [https://docs.google.com/document/d/1Hywk3DsRz7tpkafyjncpBxCQTZw5NnqkkWKp4LKguYk/edit?usp=sharing Manual Segmentation] for a detailed explanation of how to do this.
 
 === <big>DiameterJ Output</big> ===
 ----
