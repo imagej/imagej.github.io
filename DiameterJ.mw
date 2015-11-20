@@ -283,10 +283,12 @@ Finally, we'd like to encourage everyone to do peak fitting of the diameter hist
 :# incorporation of Gaussian peak fitting algorithms within DiameterJ itself.  
 :#Currently we are working on a native JAVA application on DiameterJ.  This will not fundamentally change the function of DiameterJ however, it will make it faster, look cleaner, and should solve continuity issues
 :# 16-bit Euclidean distance transform calculator
-:# Make DiameterJ compatible with images other than .tif files
-:# Easier to use GUI (any GUI at all) with more options for what the outputs of DiameterJ are and what types of analysis it performs.
-:# Combine the three different releases of DiameterJ into a single release for all versions of ImageJ/FIJI
 :# Enable DiameterJ to skip to the next file if an error occurs during analysis
+
+<big>Completed Goals</big>
+:# Combine the three different releases of DiameterJ into a single release for all versions of ImageJ/FIJI
+:# Easier to use GUI (any GUI at all) with more options for what the outputs of DiameterJ are and what types of analysis it performs.
+:# Make DiameterJ compatible with images other than .tif files
 
 Help is welcome in any/all of these improvements!
 
