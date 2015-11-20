@@ -133,6 +133,17 @@ Some functions are specific for the processing of label images, in which the pix
 * '''Set Label Map''' allows to choose the color map used to display a label image. In particular, shuffling the color map and/or choosing a specific color for background allows better visualization that only grey levels.
 * '''Label To RGB''' converts a label image to true RGB image. Similar to ImageJ native conversion, but this plugin avoids confusion between background pixels and regions with low labels.
 
+== Library interoperability ==
+
+In total, the library provides nearly two hundred classes and interfaces and the exhaustive code documentation includes use-case examples.
+
+The library follows a logic structure of folders divided by topics aiming at their re-usability from other plugins or scripts, among others:
+* <code>inra.ijpb.binary</code> contains the set of utilities for working on binary images (connected component labeling, distance transform, geodesic distance transform...)
+* <code>inra.ijpb.label</code> contains the utilities for label images (cropping, size opening, remove border labels, etc)
+* <code>inra.ijpb.morphology</code> contains the collection of mathematical morphology operators
+* <code>inra.ijpb.watershed</code> contains the classes implementing the different versions of the watershed algorithm
+* <code>inra.ijpb.plugins</code> contains the set of plugins that is accessible from ImageJ/Fiji Plugins menu
+
 == Documentation ==
 
 The main source code directory is on GitHub under [http://github.com/ijpb/MorphoLibJ/tree/master/src/main/java/inra/ijpb src/main/java/inra/ijpb].
