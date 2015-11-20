@@ -94,6 +94,9 @@ For Mac, replace {{Key|Ctrl}} with  {{Key|Cmd}}
 | align=right | {{Key|Ctrl|D}}
 | delete the current line
 |-
+| align=right | {{Key|Ctrl|/}}
+| comment out (or uncomment) the currently selected line(s)
+|-
 | colspan=2 style="padding-top: 1em" | '''Code cleanup'''
 |-
 | align=right | {{Key|Ctrl|Shift|O}}
