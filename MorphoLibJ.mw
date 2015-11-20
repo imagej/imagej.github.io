@@ -121,7 +121,7 @@ Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is us
 == Utilities for label images ==
 
 Some functions are specific for the processing of label images, in which the pixel/voxel value is used to identify the particle it belongs to. The value 0 is assumed to correspond to the background. The number of labels that can be represented depends on the image type: 255 for byte images, 65535 for short images...
-
+[[Image:MorphoLibJ-label-border-remove-largest-opening.png|thumb|400px|Utilities for label images. From left to right: original label image, remove border labels, remove largest region, apply size opening for keeping only regions with at least 1000 pixels.]]
 * '''Remove Border Labels''' is similar to "kill borders" function, but operates faster as no morphological reconstruction is required.
 * '''Select Label(s)''' enters a set of labels, and creates a new label image containing only the selected labels.
 * '''Crop Label''' creates a new binary image containing only the label specified by the user. The size of the new image is fitted to the region.
