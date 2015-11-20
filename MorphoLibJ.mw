@@ -144,7 +144,7 @@ The library follows a logic structure of folders divided by topics aiming at the
 * <code>inra.ijpb.watershed</code> contains the classes implementing the different versions of the watershed algorithm
 * <code>inra.ijpb.plugins</code> contains the set of plugins that is accessible from ImageJ/Fiji Plugins menu
 
-All major methods have a general class with static methods that allow calling the methods on 2D and 3D images in a transparent way.
+All major methods have a general class with '''static methods''' that allow calling the methods on 2D and 3D images in a transparent way.
 
 == Documentation ==
 
