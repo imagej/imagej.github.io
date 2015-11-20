@@ -34,7 +34,9 @@ Richardson Lucy and other iterative algorithms are often slow to converge.  Acce
 
 [http://ceur-ws.org/Vol-446/p400.pdf Richardson Lucy with TV Regularization and Vector Acceleration]
 
-===Non-circulant Richardson Lucy===
+===Edge handling with Non-circulant Richardson Lucy===
+
+The proper handling of boundary conditions is an important part of deconvolution.  Images are finite and usually treated as circulant.  Thus when deconvolving (or convolving) images are usually extended (padded) to prevent boundary artifacts.  A novel approach, to handle edge artifacts, was introduced as part of the 2014 international grand challenge on deconvolution.  This approach uses non-circulant convolution operators. 
 
 [http://bigwww.epfl.ch/deconvolution/challenge2013/index.html?p=doc_math_rl Non-circulant Richardson Lucy]
 
