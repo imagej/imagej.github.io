@@ -4,7 +4,6 @@
 
 Current work is focused on:
 
-..*
 1.  Implementation of Richardson Lucy with Total Variation Regularization, Vector Acceleration and Non-Circulant Edge handling. 
 
 2.  Designing a framework that will make it easy for developers to extend Richardson Lucy with other types of regularization, acceleration and edge handling. 
