@@ -103,7 +103,11 @@ There are a total of 24 different algorithms that can be used to segment images 
 Please go to [https://docs.google.com/document/d/1lODEj02e2eFtQ-v0B3TJd53Q2XFZZW2i0szrfyX0kRY/edit?usp=sharing Training Document 1] to see a detailed explanation of how to perform the DiameterJ analysis.
 
 The File [https://docs.google.com/document/d/1n6a8VPy4tugZTQO7BYD-JU4JYvrmbuSib2AcXPXys9w/edit?usp=sharing Output Description], contains a detailed description of all files output by DiameterJ 1.XXX.  
- 
+
+An In-depth description of how to Analyze Fiber Diameters and Other Scaffold Properties:
+* [https://docs.google.com/document/d/1rOmOySkR5hBVtLrjx1FRCngzp2ZI2W4vG72_3sUdxPI/edit?usp=sharing Fiber Diameter Analysis]
+* [https://docs.google.com/document/d/1Hk3AKDpMM2uzPsDYDETyd0jgVrCwiw4yfXkumWf3-ZE/edit?usp=sharing Other Fiber Metrics Analysis]
+* [https://docs.google.com/document/d/1XXlECwX2keZpP83tF3hMc-4ORLCblmyJCDmuHZK-zpE/edit?usp=sharing Combining Analysis from Multiple Images]
 
 <big>Of Note About Analysis</big>
 ::The metrics contained in the Total Summaries folder are global averages of diameter and can be easily biased if the diameter histogram analyzed has a non-normal distribution (i.e. multiple peaks, significant noise leading or trailing from the peak, etc.).  It is strongly recommend that you perform a peak fit of the diameter histogram to obtain a more accurate measure if the radius histogram image (shown in the "Histograms" folder) shows a non-normal distribution or multiple peaks.  
