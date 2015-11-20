@@ -12,7 +12,7 @@ In practice the Richardson-Lucy algorithm needs to be modified to improve noise 
 
 ===Richardson Lucy with Total Variation Regularization===
 
-To prevent noise amplification the Richardson Lucy algorithm should be regularized.  [https://en.wikipedia.org/wiki/Regularization_%28mathematics%29     regularization[ "refers to a process of introducing additional information in order to solve an ill-posed problem or to prevent overfitting".
+To prevent noise amplification the Richardson Lucy algorithm should be regularized.  [https://en.wikipedia.org/wiki/Regularization_%28mathematics%29     regularization] "refers to a process of introducing additional information in order to solve an ill-posed problem or to prevent overfitting".
 
 [http://www.ncbi.nlm.nih.gov/pubmed/16586486 Richardson Lucy with Total Variation Regularization]
 
