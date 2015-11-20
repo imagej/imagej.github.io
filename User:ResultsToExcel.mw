@@ -1,6 +1,7 @@
 I only have one ImageJ/Fiji plugin to date.
 
 plugins/Read_and_Write_Excel-1.0.0.jar
+Created in Eclipse IDE Mars.1 release (4.5.1), using the java jdk1.6.0_45 for ImageJ/Fiji compatibility.
 
 Release date:
 19 Nov 2015
@@ -23,7 +24,7 @@ Author:
 Anthony Sinadinos
 
 Platforms:
-Created in Eclipse IDE Mars.1 release (4.5.1), using the java jdk1.6.0_45 for ImageJ/Fiji compatibility.
+Only tested in win64
 
 Category:
 Input/Output.
