@@ -12,6 +12,8 @@ In practice the Richardson-Lucy algorithm needs to be modified to improve noise 
 
 ===Richardson Lucy with Total Variation Regularization===
 
+To prevent noise amplification the Richardson Lucy algorithm should be regularized.  [https://en.wikipedia.org/wiki/Regularization_%28mathematics%29     regularization[ "refers to a process of introducing additional information in order to solve an ill-posed problem or to prevent overfitting".
+
 [http://www.ncbi.nlm.nih.gov/pubmed/16586486 Richardson Lucy with Total Variation Regularization]
 
 <math>\mathbf{o}_{k+1}(s) = \left\{\left[\frac{i(s)}{(o_{k}*h)(s)}\right]*h(-s)\right\}\frac{{o}_{k}(s)}{1-\lambda_{TV}div\left({\frac{\nabla_{ok}(s)}{|\nabla_{ok}(s)|}}\right)}</math>
