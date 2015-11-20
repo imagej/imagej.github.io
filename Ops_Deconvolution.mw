@@ -28,6 +28,8 @@ To prevent noise amplification the Richardson Lucy algorithm should be regulariz
 
 ===Richardson Lucy with Vector Acceleration===
 
+Richardson Lucy and other iterative algorithms are often slow to converge.  Acceleration techniques speed up convergence by taking a larger step at each iteration.  
+
 [http://www.ncbi.nlm.nih.gov/pubmed/18250863 Acceleration of Iterative Algorithms]
 
 [http://ceur-ws.org/Vol-446/p400.pdf Richardson Lucy with TV Regularization and Vector Acceleration]
