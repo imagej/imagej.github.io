@@ -1,0 +1,30 @@
+{{Infobox
+| software               = ImageJ
+| name                   = SAIM (Scanning Angle Interference Microscopy)
+| author                 = Nico Stuurman (nico.stuurman at ucsf.edu)
+| maintainer             = [[Nico Stuurman]]
+| filename               = 
+| source                 = {{GitHub|org=nicost|repo=saimAnalysis|}}
+| released               = 2015/11/20
+| latest version         = 2015/11/20
+| status                 = 
+| category               = [[:Category:Techniques]]
+}}
+
+ImageJ/Fiji plugin to to analyze Scanning Angle Interference Microscope Data.  
+
+To install this plugin check the "ValelabUtils" update site in the Fiji updater.
+
+SAIM (Scanning Angle Interference Microscopy) is a technique to measure the distance of fluorescent dyes to the surface at nm resolution.  To use it, one needs to place the sample on a silicon chip (that acts as a mirror) with a solicon oxide (glass) spacer).  The reflection of coherent excitation light will interfere with the incoming beam and set up a standing wave pattern, resulting in fluorescence intensity that varies with distance to the surface.  By varying the angle of incidence, the standing wave pattern changes in predictable ways, and a series of images at different angles can be used to deduce the height of fluorescence molecules, independent of their intensity.  This technique is very well described by [http://www.nature.com/nmeth/journal/v9/n8/abs/nmeth.2077.html Paszek et al.].
+
+This plugin consists of three parts.  "Saim Plot" plots theoretical predictions for the intensity distribution as a function of height.  
+
+[[File:SaimPlotScreen.png ]]  [[File:SaimPlotOutput.png]]
+
+"Saim Inspect" and "Saim Fit" are very similar, however, Saim Analysis will act on the selected data (for instance, the pixel under the cursor) and executes only a single fit, whereas Saim Fit will analyze all pixels of the image stack with a value higher than a given cutoff. If there is significant movement while taking the stack, you will first need to "de-jitter" using another ImageJ plugin. 
+
+
+
+
+[[Category:Techniques]]
+[[Category:Plugins]]
