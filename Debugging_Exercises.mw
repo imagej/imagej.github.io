@@ -74,7 +74,7 @@ To investigate further, try to complete the following debugging steps:
 
 <div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
 Now that you've walked through the program, do you know ''why'' we got a <code>NullPointerException</code>?
-<div class="mw-collapsible-content">Although <code>makeAThing</code> does create an new Object, that Object isn't actually returned by the method.</div>
+<div class="mw-collapsible-content">> Although <code>makeAThing</code> does create an new Object, that Object isn't actually returned by the method.</div>
 </div>
 
 
@@ -99,17 +99,17 @@ Try setting a breakpoint on the conditional line:
 
 <div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
 Try debugging now, using ''Resume'' any time a breakpoint is encountered. How many times do you hit a breakpoint?
-<div class="mw-collapsible-content">Three times. This is because we're debugging inside a method that is used multiple times in our program.</div>
+<div class="mw-collapsible-content">>Three times. This is because we're debugging inside a method that is used multiple times in our program.</div>
 </div>
 
 
 Since we are only interested in the <code>processElementAtIndex</code> method when a problem actually occurs, let's try something different:
 
-[[File:E2BreakOnException.png|right|600px|thumb|Setting the breakpoint]]
+[[File:E2BreakOnException.png|right|600px|thumb|Setting a breakpoint on an exception]]
 # From the ''Breakpoints'' window in the ''Debug'' perspective, delete the old breakpoint
 # Now use the ''Add Java Exception Breakpoint'' button to add a breakpoint to ''IllegalArgumentException''
 # Debug the program. When it stops, inspect the ''Variables'' window.
-[[File:E2Variables.png|right|600px|thumb|Variables window]]
+[[File:E2Variables.png|right|600px|thumb|Inspecting the variables window]]
 
 At this point, we know there is a problem accessing the <code>99999th</code> element of the list, but the variables window doesn't tell us exactly what the problem is. We can manually expand and explore the <code>list</code> variable - but given its size that could be cumbersome.
 
@@ -126,5 +126,61 @@ To complete this exercise:
 
 <div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
 Once you've evaluated these expressions, can you tell what went wrong in the program?
-<div class="mw-collapsible-content">We asked for a list of size 100,000 but a list of size 99,9999 came back. Since we used hard-coded indices, instead of size-relative (e.g. <code>list.size()-1</code>), a method was called wanting to access a non-existent element.</div>
+<div class="mw-collapsible-content">>We asked for a list of size 100,000 but a list of size 99,9999 came back. Since we used hard-coded indices, instead of size-relative (e.g. <code>list.size()-1</code>), a method was called wanting to access a non-existent element.</div>
+</div>
+
+
+==Exercise 3: Conditional breakpoints==
+
+'''Goals'''
+
+* Create a breakpoint that triggers after a specified number of hits
+* Create a breakpoint that triggers when a certain condition is true
+
+
+
+Start by opening the <code>E3ConditionalCrisis</code> source and running it. This time our console output looks a bit different:
+
+[[File:E3StackTrace.png]]
+
+
+In addition to the exception stack trace, the program itself appears to have found an invalid object, causing the processing to go unfinished. Although we could set a breakpoint on the exception, as we did in [[#Exercise 2: Expressions|exercise 2]], the exception is actually happening ''after'' the more interesting part of the program - the loop. As we learned in exercise 2, breakpoints in code that is called repeatedly are annoying, so let's see what we can find by attaching conditions to our breakpoint.
+
+First set a breakpoint on the line ''after'' the <code>everythingIsOK</code> assignment:
+<source lang=java>
+everythingIsOK = ObjectAnalyzer.processElementAtIndex(myArray, i);
+i++;
+</source>
+
+Then try the following:
+
+[[File:E3CountBreakpoint.png|350px|right|thumb|Setting a hit count]]
+# Open the ''Breakpoints'' window
+# Right-click our breakpoint and select ''Breakpoint Properties...''
+# Check the ''Hit Count'' box and set it to the object number printed in the error message.
+# Try debugging
+
+
+<div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
+Was there a problem with the current object when/if your breakpoint is hit?
+<div class="mw-collapsible-content">>If there was, try it again! In this exercise, the "broken" object index is non-deterministic - so it is unlikely to be exactly the same index two runs in a row.<br>>If the broken object appears later the second time, your breakpoint will hit but the current object will likely be fine.<br>>If the "broken" object appears earlier the second time, your breakpoint won't be hit at all.</div>
+</div>
+
+
+Using <code>count</code>-based conditional breakpoints can be very useful if the error is deterministic. In this case we need to try something different. We know the <code>everythingIsOK</code> flag reflects the integrity of the object at a given index - so what we really want to use here is a breakpoint that stops in the loop when the <code>everythingIsOK</code> flag is set to false:
+
+[[File:E3ConditionalBreakpoint.png|350px|right|thumb|Setting a conditional expression]]
+# Open the ''Breakpoints'' window again
+# Open the properties of our breakpoint
+# Uncheck the ''Hit Count'' box
+# Check the ''Conditional'' box, and "Suspend when 'true'"
+# Enter the condition we want to check (any Java conditional statement can be used here)
+# Try debugging again
+
+Were you able to get the breakpoint to stop in the loop only when a problem is encountered?
+
+
+<div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
+What was suspicious about the object at that index?
+<div class="mw-collapsible-content">>The object was <code>null</code>.</div>
 </div>
