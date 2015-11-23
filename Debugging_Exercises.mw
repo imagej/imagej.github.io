@@ -184,3 +184,27 @@ Were you able to get the breakpoint to stop in the loop only when a problem is e
 What was suspicious about the object at that index?
 <div class="mw-collapsible-content">>The object was <code>null</code>.</div>
 </div>
+
+
+=What next?=
+
+At the start of this guide we mentioned that the goal of debugging isn't explicitly to fix the problem. So a natural question that follows is - once we've successfully identified the cause of an issue (or at least narrowed things down), what are the next steps to take?
+
+The answer depends on the debugging developer's skill and responsibilities, and whether or not they have identified a fix (a fix is often easy to come up with once the problem is identified).
+
+If a fix is identified:
+
+* If you are a maintainer of the component you can make the fix directly, or use a [[Git_topic_branches|topic branch]] if the fix needs discussion first.
+* If you do not have commit rights to the repository, you can [[How_to_contribute_to_an_existing_plugin_or_library|contribute the fix]] via pull request
+
+If a fix is unclear:
+
+* Use any of the standard [[Help|channels for help]].
+
+Even if you can't contribute a fix, if you went through the effort of debugging - at the very list you should identify the problem, steps you took to debug, and potential fix(es) via a [[Report_a_Bug|bug report]] so that your effort is not lost.
+
+=See Also=
+
+* [http://webcache.googleusercontent.com/search?q=cache:http://www.vogella.com/tutorials/EclipseDebugging/article.html Debugging in Eclipse]
+* [http://wiki.eclipse.org/index.php/MemoryAnalyzer Using the Eclipse Memory Analyzer plugin]
+* [https://visualvm.java.net/gettingstarted.html Using jvisualvm]
