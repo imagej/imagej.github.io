@@ -1,0 +1,41 @@
+{{Development | tutorials}}
+{{Notice | This page presents exercises for ''software developers'' to use for debugging ImageJ.<br>If you are a ''user'' looking to troubleshoot issues, see the [[Troubleshooting]] page.}}
+
+[[Debugging]] is the art of determining the cause and/or location of a problem. The purpose of this guide is to provide developers practical, hands-on experience using a variety of debugging techniques to identify problems in code.
+
+== Requirements ==
+
+As ImageJ is built using the [[Project_management|SciJava principles of project management]], this guide assumes a basic familiarity with these topics and tools, especially:
+* [[Git]]
+* [[Maven]]
+
+Additionally, you should:
+* Install an IDE - this guide is written with [[Eclipse]] in mind.
+* If using Eclipse, install the [https://eclipse.org/mat/ memory analyzer plugin].
+* Clone the [https://github.com/imagej/imagej-troubleshooting imagej-troubleshooting] companion repository, which this guide is designed around, and import it as a Maven project into your IDE.
+* Install the [https://visualvm.java.net/ jvisualvm] tool.
+
+== Using this guide ==
+
+Remember the goal of these exercises is not to ''solve'' the problems, but to learn how and when to use the myriad of troubleshooting techniques available. Given the inherent complexity that comes with a combined work, all of these techniques have their time and place when working on a rich application like [[ImageJ]].
+
+Because this project is intended to help new developers practice troubleshooting skills, it uses contrived examples, limited in complexity. If you have complete, perfect knowledge of the code then there isn't really a need for troubleshooting, as it is trivial to see why something is behaving incorrectly. Thus the source of these exercises is divided into <code>hidden</code> and <code>visible</code> packages. Users are strongly recommended to only inspect and set breakpoints from the <code>visible</code> classes. From a development point of view, consider the <code>hidden</code> package a 3rd-party library that you may not have control over.
+
+Changing the source code to actually fix changes is outside the scope of this guide, but motivated users are of course welcome to do so for practice.
+
+'''If at any time''' you need to revert changes to this repository, you can always do so via the command:
+
+<code>
+git reset --hard origin/master
+</code>
+
+== What not to do: print statements ==
+
+For many developers, the first tool in their debugging toolbox is the print statement. Print statements are easy to lean on as a safety crutch: you don't need any special knowledge to use them, and they often work in identifying answering common questions (e.g. "why is this variable null here?", "how many elements are in my array here?").
+
+However, there are critical drawbacks to trying to debug via print statement:
+* They are slow. If you realize you need to move or add a print statement, you need to recompile your code and re-launch your application.
+* They are part of the code. Adding print statements changes line numbers, causes git to pick up modifications to the source code, and can even affect performance and/or behavior.
+* They aren't even very useful. Even the most basic breakpoint and expression evaluation in Eclipse debug mode gives you vastly more power and flexibility over print statements.
+
+Learning to use debugging tools is, understandably, a burden: it's "one more thing" to learn as a developer. But if you want to develop ImageJ plugins, you will almost certainly run into cases where debugging is necessary. So you may as well start familiarizing yourself with the tools now, gaining skills and perspectives that will serve you well, ideally throughout your career.
