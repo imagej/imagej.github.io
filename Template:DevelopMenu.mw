@@ -26,6 +26,7 @@
 {{MenuItem | [[Distribution|Distributing your plugins]] }}
 {{MenuItem | [[Development Lifecycle|Development lifecycle]] }}
 <hr>
+{{MenuItem | [[Debugging Exercises|Hands-on Debugging]] }}
 {{MenuItem | [[Adding_new_ops|Adding new ops]] }}
 {{MenuItem | [[Adding_new_file_formats|Adding new formats]] }}
 {{MenuItem | [[Developing using native libraries|Using native libraries]] }}
