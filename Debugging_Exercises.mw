@@ -49,9 +49,11 @@ git reset --hard origin/master
 ==Exercise 1: Breakpoints==
 
 '''Goals'''
+
 * Practice setting breakpoints in Eclipse
 * Use the Variables window to inspect variable values
 * Use the navigation commands to traverse code while in Debug mode
+
 
 The first thing we want to do is open the source file, <code>E1BasicBreakpoints</code>, and ''run'' it to get an idea of what's going on. We should see a simple stack trace:
 
@@ -61,7 +63,7 @@ The first thing we want to do is open the source file, <code>E1BasicBreakpoints<
 
 Stack traces are a common starting point for debugging, as they indicate something has gone wrong in Java that the program was not prepared to handle. In this case, the stack trace tells us we know the ''what'' (tried to use a <code>null</code> object) and the ''where'' (the topmost line number), but not ''why'' the object was <code>null</code> at that point - the actual root cause of the exception.
 
-Debugging steps:
+To investigate further, try to complete the following debugging steps:
 # Set a breakpoint in the <code>main</code> method, before <code>makeAThing</code> is called.
 # ''Debug'' the file as a Java application
 # When the breakpoint is encountered, ''step in'' to the <code>makeAThing</code> method.
@@ -73,4 +75,56 @@ Debugging steps:
 <div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
 Now that you've walked through the program, do you know ''why'' we got a <code>NullPointerException</code>?
 <div class="mw-collapsible-content">Although <code>makeAThing</code> does create an new Object, that Object isn't actually returned by the method.</div>
+</div>
+
+
+==Exercise 2: Expressions==
+
+'''Goals'''
+
+* Set breakpoints on exception creation
+* Use the ''Expressions'' window to evaluate code at runtime
+
+
+Start by opening the <code>E2EffectiveExpressions</code> source and running it. Like the previous exercise, we have a stack trace to start from:
+
+
+[[File:E2StackTrace.png]]
+
+
+Try setting a breakpoint on the conditional line:
+
+<source lang="java">if (index < 0 || index >= list.size()) {</source>
+
+
+<div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
+Try debugging now, using ''Resume'' any time a breakpoint is encountered. How many times do you hit a breakpoint?
+<div class="mw-collapsible-content">Three times. This is because we're debugging inside a method that is used multiple times in our program.</div>
+</div>
+
+
+Since we are only interested in the <code>processElementAtIndex</code> method when a problem actually occurs, let's try something different:
+
+[[File:E2BreakOnException.png|right|600px|thumb|Setting the breakpoint]]
+# From the ''Breakpoints'' window in the ''Debug'' perspective, delete the old breakpoint
+# Now use the ''Add Java Exception Breakpoint'' button to add a breakpoint to ''IllegalArgumentException''
+# Debug the program. When it stops, inspect the ''Variables'' window.
+[[File:E2Variables.png|right|600px|thumb|Variables window]]
+
+At this point, we know there is a problem accessing the <code>99999th</code> element of the list, but the variables window doesn't tell us exactly what the problem is. We can manually expand and explore the <code>list</code> variable - but given its size that could be cumbersome.
+
+Instead, let's use expressions. If it's not already visible, open the ''Window > Show View > Expressions'' view.
+
+In this view, we can add any number of Java expressions to evaluate. We can call methods from, and on, any variables and classes visible from the current scope.
+
+'''Warning:''' if you evaluate expressions that change the state of variables, for example <code>List.add</code>, then those changes '''will''' persist. Sometimes you do legitimately need to alter the state of variables while debugging (for example, to force the conditions in which a bug appears). Just be aware that you could also be ''introducing'' problematic behavior when evaluating expressions.
+
+To complete this exercise:
+# Write an expression that calls the <code>size()</code> method of our list.
+# Write a 2nd expression that evaluates to the value of the <code>index</code> variable
+
+
+<div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
+Once you've evaluated these expressions, can you tell what went wrong in the program?
+<div class="mw-collapsible-content">We asked for a list of size 100,000 but a list of size 99,9999 came back. Since we used hard-coded indices, instead of size-relative (e.g. <code>list.size()-1</code>), a method was called wanting to access a non-existent element.</div>
 </div>
