@@ -3,7 +3,7 @@
 
 [[Debugging]] is the art of determining the cause and/or location of a problem. The purpose of this guide is to provide developers practical, hands-on experience using a variety of debugging techniques to identify problems in code.
 
-== Requirements ==
+= Requirements =
 
 As ImageJ is built using the [[Project_management|SciJava principles of project management]], this guide assumes a basic familiarity with these topics and tools, especially:
 * [[Git]]
@@ -15,7 +15,22 @@ Additionally, you should:
 * Clone the [https://github.com/imagej/imagej-troubleshooting imagej-troubleshooting] companion repository, which this guide is designed around, and import it as a Maven project into your IDE.
 * Install the [https://visualvm.java.net/ jvisualvm] tool.
 
-== Using this guide ==
+Finally, you should read the [http://webcache.googleusercontent.com/search?q=cache:http://www.vogella.com/tutorials/EclipseDebugging/article.html#usedebug Debugging in Eclipse] section, at least, of Lars Vogel's [http://webcache.googleusercontent.com/search?q=cache:http://www.vogella.com/tutorials/EclipseDebugging/article.html Eclipse tutorial]. Note that there is significant overlap between the topics covered between these tutorials. Vogel's guide does a fantastic job of laying out the debugging interface and tools in Eclipse, while this guide focuses on providing hands-on practice and explaining the reasoning for when to use these tools.
+
+'''If you find yourself confused''' when this tutorial asks you to do something in Eclipse (e.g. "start debugging", "step into") it's almost certainly covered in [http://webcache.googleusercontent.com/search?q=cache:http://www.vogella.com/tutorials/EclipseDebugging/article.html#usedebug Vogel's guide].
+
+= What not to do: print statements =
+
+For many developers, the first tool in their debugging toolbox is the print statement. Print statements are easy to lean on as a safety crutch: you don't need any special knowledge to use them, and they often work in identifying answering common questions (e.g. "why is this variable null here?", "how many elements are in my array here?").
+
+However, there are critical drawbacks to trying to debug via print statement:
+* They are slow. If you realize you need to move or add a print statement, you need to recompile your code and re-launch your application.
+* They are part of the code. Adding print statements changes line numbers, causes git to pick up modifications to the source code, and can even affect performance and/or behavior.
+* They aren't even very useful. Even the most basic breakpoint and expression evaluation in Eclipse debug mode gives you vastly more power and flexibility over print statements.
+
+Learning to use debugging tools is, understandably, a burden: it's "one more thing" to learn as a developer. But if you want to develop ImageJ plugins, you will almost certainly run into cases where debugging is necessary. So you may as well start familiarizing yourself with the tools now, gaining skills and perspectives that will serve you well, ideally throughout your career.
+
+= Using this guide =
 
 Remember the goal of these exercises is not to ''solve'' the problems, but to learn how and when to use the myriad of troubleshooting techniques available. Given the inherent complexity that comes with a combined work, all of these techniques have their time and place when working on a rich application like [[ImageJ]].
 
@@ -29,13 +44,33 @@ Changing the source code to actually fix changes is outside the scope of this gu
 git reset --hard origin/master
 </code>
 
-== What not to do: print statements ==
+=Exercises=
 
-For many developers, the first tool in their debugging toolbox is the print statement. Print statements are easy to lean on as a safety crutch: you don't need any special knowledge to use them, and they often work in identifying answering common questions (e.g. "why is this variable null here?", "how many elements are in my array here?").
+==Exercise 1: Breakpoints==
 
-However, there are critical drawbacks to trying to debug via print statement:
-* They are slow. If you realize you need to move or add a print statement, you need to recompile your code and re-launch your application.
-* They are part of the code. Adding print statements changes line numbers, causes git to pick up modifications to the source code, and can even affect performance and/or behavior.
-* They aren't even very useful. Even the most basic breakpoint and expression evaluation in Eclipse debug mode gives you vastly more power and flexibility over print statements.
+'''Goals'''
+* Practice setting breakpoints in Eclipse
+* Use the Variables window to inspect variable values
+* Use the navigation commands to traverse code while in Debug mode
 
-Learning to use debugging tools is, understandably, a burden: it's "one more thing" to learn as a developer. But if you want to develop ImageJ plugins, you will almost certainly run into cases where debugging is necessary. So you may as well start familiarizing yourself with the tools now, gaining skills and perspectives that will serve you well, ideally throughout your career.
+The first thing we want to do is open the source file, <code>E1BasicBreakpoints</code>, and ''run'' it to get an idea of what's going on. We should see a simple stack trace:
+
+
+[[File:E1StackTrace.png]]
+
+
+Stack traces are a common starting point for debugging, as they indicate something has gone wrong in Java that the program was not prepared to handle. In this case, the stack trace tells us we know the ''what'' (tried to use a <code>null</code> object) and the ''where'' (the topmost line number), but not ''why'' the object was <code>null</code> at that point - the actual root cause of the exception.
+
+Debugging steps:
+# Set a breakpoint in the <code>main</code> method, before <code>makeAThing</code> is called.
+# ''Debug'' the file as a Java application
+# When the breakpoint is encountered, ''step in'' to the <code>makeAThing</code> method.
+# ''step out'' of the <code>makeAThing</code> method.
+# In the ''Variables'' window, look at the value of the Object variable.
+# 'resume' execution until the program completes
+
+
+<div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
+Now that you've walked through the program, do you know ''why'' we got a <code>NullPointerException</code>?
+<div class="mw-collapsible-content">Although <code>makeAThing</code> does create an new Object, that Object isn't actually returned by the method.</div>
+</div>
