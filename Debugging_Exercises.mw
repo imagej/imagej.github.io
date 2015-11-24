@@ -55,6 +55,8 @@ git reset --hard origin/master
 * Use the navigation commands to traverse code while in Debug mode
 
 
+Breakpoints are a fundamental tool of debugging. They provide a way to instruct Java to stop code execution when a certain line of code is encountered, providing a chance to explore actively running code.
+
 The first thing we want to do is open the source file, <code>E1BasicBreakpoints</code>, and ''run'' it to get an idea of what's going on. We should see a simple stack trace:
 
 
@@ -85,6 +87,8 @@ To investigate further, try to complete the following debugging steps:
 * Set breakpoints on exception creation
 * Use the ''Expressions'' window to evaluate code at runtime
 
+
+Although breakpoints allow us a chance to peek inside running code, many times when debugging you'll find that you're missing a piece of information not provided by the current code - perhaps you'd like to call a utility method, or construct a new object temporarily. Instead of making these code changes and recompiling, expressions allow us to evaluate code on-demand, without changing the source.
 
 Start by opening the <code>E2EffectiveExpressions</code> source and running it. Like the previous exercise, we have a stack trace to start from:
 
@@ -137,6 +141,7 @@ To complete this exercise:
 * Create a breakpoint that triggers when a certain condition is true
 
 
+Breakpoints trigger ''every'' time the corresponding line would be executed, which may be undesirable for repeated code blocks. It may be enough to carefully consider the breakpoint placement - on an exception, or within a conditional block. But when these options aren't available, we can make our breakpoints more powerful by triggering only when there's something of interest to see.
 
 Start by opening the <code>E3ConditionalCrisis</code> source and running it. This time our console output looks a bit different:
 
