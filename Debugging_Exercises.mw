@@ -36,7 +36,7 @@ Remember the goal of these exercises is not to ''solve'' the problems, but to le
 
 Because this project is intended to help new developers practice troubleshooting skills, it uses contrived examples, limited in complexity. If you have complete, perfect knowledge of the code then there isn't really a need for troubleshooting, as it is trivial to see why something is behaving incorrectly. Thus the source of these exercises is divided into <code>hidden</code> and <code>visible</code> packages. Users are strongly recommended to only inspect and set breakpoints from the <code>visible</code> classes. From a development point of view, consider the <code>hidden</code> package a 3rd-party library that you may not have control over.
 
-Changing the source code to actually fix changes is outside the scope of this guide, but motivated users are of course welcome to do so for practice.
+Changing the source code to actually fix the bugs is outside the scope of this guide, but motivated users are of course welcome to do so for practice.
 
 '''If at any time''' you need to revert changes to this repository, you can always do so via the command:
 
