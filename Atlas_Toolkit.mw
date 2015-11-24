@@ -25,19 +25,19 @@ For those interested in 3D image registration, the most important tools will be 
 
 This complete list of tools is as follows:
 
-1. Extract Nuclear Signal
+- Extract Nuclear Signal
 
-2. Project to Segment Label
+- Project to Segment Label
 
-3. [[#Label Registration 3D|Label Registration 3D]]
+- [[#Label Registration 3D|Label Registration 3D]]
 
-4. [[#Apply Label Registration|Apply Label Registration]]
+- [[#Apply Label Registration|Apply Label Registration]]
 
-5. Merge Registered Volumes
+- Merge Registered Volumes
 
-6. Sample Volumes for Clustering
+- Sample Volumes for Clustering
 
-7. Cluster Viewer
+- Cluster Viewer
 
 ==Label Registration 3D==
 ===Video demonstration===
