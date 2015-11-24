@@ -64,18 +64,19 @@ The first thing we want to do is open the source file, <code>E1BasicBreakpoints<
 Stack traces are a common starting point for debugging, as they indicate something has gone wrong in Java that the program was not prepared to handle. In this case, the stack trace tells us we know the ''what'' (tried to use a <code>null</code> object) and the ''where'' (the topmost line number), but not ''why'' the object was <code>null</code> at that point - the actual root cause of the exception.
 
 To investigate further, try to complete the following debugging steps:
-# Set a breakpoint in the <code>main</code> method, before <code>makeAThing</code> is called.
+# Set a breakpoint in the <code>main</code> method, before <code>makeAThing</code> is called
 # ''Debug'' the file as a Java application
-# When the breakpoint is encountered, ''step in'' to the <code>makeAThing</code> method.
-# ''step out'' of the <code>makeAThing</code> method.
-# In the ''Variables'' window, look at the value of the Object variable.
+# When the breakpoint is encountered, ''step in'' to the <code>makeAThing</code> method
+# ''step over'' the line constructing a new <code>Object</code>
+# ''step out'' of the <code>makeAThing</code> method
+# In the ''Variables'' window, look at the value of the Object variable
 # 'resume' execution until the program completes
+
 
 {{ExpandingBox
 | Now that you've walked through the program, do you know ''why'' we got a <code>NullPointerException</code>?
 | > Although <code>makeAThing</code> does create an new Object, that Object isn't actually returned by the method.
 }}
-
 
 ==Exercise 2: Expressions==
 
@@ -185,6 +186,71 @@ Were you able to get the breakpoint to stop in the loop only when a problem is e
 | >The object was <code>null</code>.
 }}
 
+==Exercise 4: ImageJ plugins==
+
+'''Goals'''
+
+* Start a debugging session in Eclipse that connects to a running ImageJ instance
+
+
+Exercises 1-3 are abstract, self-contained programs. The <code>E4RemoteResearch</code> class, on the other hand, is an actual ImageJ [[Writing_plugins#What_is_a_.22plugin.22.3F|plugin]]. Although plugin developers typically set up tests to run their plugin within ImageJ, it is impossible to test all possible runtime environments: users could have a variety of [[Update Sites|update sites]] enabled, custom plugins installed, etc... and each modification is an opportunity for dependency skew and clashes with your plugin. When problems do arise, it is invaluable to have the ability to debug a running copy of ImageJ itself.
+
+<code>E4RemoteResearch</code> does still have a <code>main</code> method to demonstrate the expected output for this plugin - in this case, simply printing the concrete implementation of the <code>ConsoleService</code>. Run the class in Eclipse and you should see some simple output in the console:
+
+<source>I found our console service! Look: class org.scijava.console.DefaultConsoleService</source>
+
+Next, we want to run this plugin in ImageJ and see what happens:
+
+# On the command line, run <code>mvn clean install</code> from the <code>imagej-troubleshooting</code> directory, to build a <code>.jar</code>
+# Copy the produced jar (e.g. <code>target/imagej-troubleshooting-0.1.0-SNAPSHOT.jar</code>) to the <code>ImageJ.app/jars</code> directory of your ImageJ installation
+# Start ImageJ
+
+Note that the menu path of the plugin is specified in the class's annotation:
+
+<source lang=java>
+@Plugin(type = Command.class,menuPath = "Plugins>Troubleshooting>E4 - Print ConsoleService")
+</source>
+
+So, you can now run the <code>E4 - Print ConsoleService</code> command either via the menus or [[Command_Finder|command finder]]. You should get an exception:
+
+[[File:E4StackTrace.png]]
+
+In order to connect Eclipse to ImageJ, we need to close our running instance and restart from the command line, setting the [[Debugging#Attaching_to_ImageJ_instances|debug flag]], e.g.:
+
+<source>
+ImageJ.app/ImageJ-linux64 --debugger=8000
+</source>
+[[File:E4DebugConfig.png|400px|right|thumb|Remote Java Application debug configuration]]
+This will start up ImageJ in a mode that's able to communicate with Eclipse. Next we need to connect Eclipse to the running ImageJ instance:
+
+# Right-click the <code>E4RemoteResearch</code> source file in the Package Explorer
+# Select <code>Debug As > Debug Configurations...</code>
+# Scroll down the list of configurations (or search) until you find <code>Remote Java Application</code>
+# Double-click <code>Remote Java Application</code> to create the debug configuration
+# Rename the configuration to <code>E4RemoteResearch-remote</code> to distinguish it. If necessary you can update the port to match what was specified when you started ImageJ.
+# Click the <code>Debug</code> button to start a remote debugging session
+
+At this point ImageJ and Eclipse should be communicating. It's important to understand that the information flow goes from ImageJ to Eclipse: ImageJ says "I am at line number X in class Y" and if Eclipse looks in the source files it knows about, and stops if it finds a breakpoint at that location.
+
+'''However''', when Eclipse looks at its source files, it's not looking at the ''actual'' classes that were used to launch the remote Application. In fact, the classes Eclipse looks in depend entirely on the classpath of the project ''that was used to start the remote debugging session''. So when you are remote debugging, there are two best practices to follow:
+* Launch the remote session from the project you're interested in (if you want to debug a class in <code>scijava-common</code>, don't start the session from the <code>imagej-legacy</code> project) 
+* Make sure the source in Eclipse matches what's in the remote application (an easy way to guarantee this is to build the <code>.jar</code> and copy it to the application)
+
+Since we already followed these best practices, we can now finally debug our plugin:
+# In Eclipse, set a breakpoint on the line where the <code>ConsoleService> is being cast to <code>DefualtConsoleService</code>
+# In ImageJ, run the <code>E4 - Print ConsoleService</code> command
+# In Eclipse, when the breakpoint is hit, inspect the value of the <code>consoleService</code> field
+
+
+{{ExpandingBox
+| What is the class of <code>consoleService</code>?
+| >It's a <code>LegacyConsoleService</code>.
+}}
+
+{{ExpandingBox
+| Extra credit: why did this plugin work when we ran its <code>main</code> method, but not in ImageJ?
+| >The <code>Context</code> in the <code>main</code> method is built with only one <code>ConsoleService</code> implementation available - <code>DefaultConsoleService</code>. In the full <code>Context</code> used in ImageJ, a higher-priority <code>LegacyConsoleService</code> overrides the <code>DefaultConsoleService</code>.
+}}
 
 =What next?=
 
