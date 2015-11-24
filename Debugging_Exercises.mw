@@ -366,6 +366,65 @@ Hint: raw stack dumps like this are not the easiest to read. Stack traces for al
 |><code>net.imagej.trouble.hidden.NotALoop.dontLoopForever</code> is what you should find. Note that there is some hand-waving in this exercise: it's possible that this method could have returned and a subsequent method caused the actual crash! But we at least have gained information, in that we know the <code>dontLoopForever</code> method ''was'' executed.
 }}
 
+==Exercise 7: Out of memory==
+
+'''Goals'''
+
+* Learn how to acquire heap dumps
+* Analyze a heap dump for potential problems
+
+Memory problems are a different kind of beast. Java is constantly in the process of reclaiming objects that are no longer in use ([http://www.dynatrace.com/en/javabook/how-garbage-collection-works.html garbage collection]). If something mistakenly holds onto an object when it shouldn't you have a memory leak (for example, a user closes an image, but an array of the pixel data is preserved). Depending on the size of the leak, it might not even be encountered (e.g., only after opening 10,000 images).
+
+Memory errors can be especially tricky to reproduce because, once memory is used up, ''any'' object creation can trigger an <code>OutOfMemoryError</code>. So the resulting stack trace may be misleading. Instead, what we want to do is examine the Java heap space (where object instances are stored) and figure out what went wrong.
+
+First things first, run <code>E7InvestigateImpressions</code> and see what happens. You should see it print array names for a while, and then eventually hit an <code>OutOfMemoryError</code>.
+
+Looking at a snippet of the code:
+
+<source lang="java">
+for (int i = 0; i < 100; i++) {
+   System.out.println(ObjectMaker.getFloatArray(size));
+   System.out.println(ObjectMaker.getLongArray(size));
+   System.out.println(ObjectMaker.getDoubleArray(size));
+}
+</source>
+
+We see that objects are being created, but we aren't storing any references to them. They should just be printed and discarded. So presumably one of these methods is doing something nasty, and it's up to us to figure out which by analyzing the heap space. To do this we'll need to recreate the problematic state, and pause things. This can easily be accomplished by setting a breakpoint on <code>OutOfMemoryError</code, similar to [[#Exercise 2: Expressions]], and debugging the <code>E7</code> program.
+
+Once the breakpoint is encountered, we want to acquire a heap dump:
+
+[[File:E7HeapDump.png|500px|right|thumb|Heap dump acquisition in jvisualvm]]
+# Open <code>jvisualvm</code>
+# From the list of local applications, right-click on <code>net.imagej.trouble.visible.E7InvestigateImpressions</code> and select the "Heap Dump" option.
+# The "Summary" view is open by default; switch to the "Classes" view of the heap dump
+# Sort by Size
+
+
+{{ExpandingBox
+|What class is occupying the majority of memory?
+|><code>java.lang.Float[]</code>
+}}
+
+So now we know what's taking up all of our memory - but we don't actually know why. Although <code>jvisualvm</code> does have the tools to investigate further, the Memory Analyzer plugin for eclipse has several nice conveniences for further heap dump exploration. Let's take a look:
+
+# With the heap dump selected in the Applications list of <code>jvisualvm</code>, use <code>File > Save As...</code> to save the <code>.hprof</code> file.
+# Back in Eclipse, open the "Memory Analysis" perspective (<code>Window > Perspective > Open Perspective > Other... > Memory Analysis</code> if you've never opened this perspective before)
+# <code>File > Open Heap Dump...</code> and select the file you created in step 1
+# Under the <code>Actions</code> column of the heap dump Overview, click on <code>Histogram</code> - which opens in a new tab
+# Filter the classes of the histogram based on the problematic class you identified in <code>jvisualvm</code>
+# Right-click the row for the problematic class and select the "Merge Shorted Paths to GC Roots > exclude weak/soft references" option.
+
+
+There is a huge amount of information that can be browsed in the heap dump. Most of the options available via the right-click context menu are short-cuts for SQL queries. When we look at a "path to the GC root", we're looking at a chain of references between objects that's keeping the selected class alive. Because we're investigating memory leaks we can typically exclude weak and soft references, as these should be released before an <code>OutOfMemoryError</code> occurs.
+
+
+{{ExpandingBox
+|Expand the classes in the "merge shortest paths" tab until you get to the first child of the <code>ObjectMaker</code> class.<br>What is the child's variable name and class?
+|>It is a <code>java.util.HashSet</code> with the name '''cache'''. <code>ObjectMaker</code> seems to store the <code>Float[]</code> instances in a set, creating strong references that prevent the arrays from being garbage collected.
+}}
+
+'''Tip:''' In this exercise we acquired the heap dump manually via <code>jvisualvm</code>. When you right-click on an application you can also set heap dumps to be acquired automatically when <code>OutOfMemoryErrors</code> occur. Heap dumps can also be acquired directly through the Eclipise MAT plugin, in the <code>Memory Analysis</code> perspective.
+
 =What next?=
 
 At the start of this guide we mentioned that the goal of debugging isn't explicitly to fix the problem. So a natural question that follows is - once we've successfully identified the cause of an issue (or at least narrowed things down), what are the next steps to take?
