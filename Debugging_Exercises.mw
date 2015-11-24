@@ -311,6 +311,61 @@ Date:   Fri Nov 20 13:46:34 2015 -0600
 </source>
 }}
 
+==Exercise 6: Print stack trace==
+
+'''Goals'''
+
+* Identify problematic code when no feedback is given
+
+When debugging we're trying to identify why a program isn't behaving as expected. Often this starts in response to an unhandled Java exception, which comes with a helpful stack trace to point us in the right direction. Unfortunately, there are also times when no information as given - such as when the [[Debugging#Debugging_JVM_hangs|JVM hangs (gets stuck)]] or [[Debugging#Debugging_hard_JVM_crashes|crashes without warning]]. In this exercise we'll look at another way to extract information from our application: by forcing a stack trace to be printed.
+
+As we did [[#Exercise 4: ImageJ plugins|in exercise 4]], the first thing to do is build the <code>imagej-troubleshooting .jar</code> and install it in your <code>ImageJ.app/jars</code> directory. Then you can start up ImageJ and run the command for this exercise:
+
+<source>
+Plugins > Troubleshooting > E6 - Start Looping
+</source>
+
+After running this command, you should notice ImageJ sitting around for a few seconds... and then close unexpectedly. As this crash doesn't give us any leads to follow, the next thing we should do is look at the code:
+
+<source lang="java">
+NotALoop.dontLoopTwice();
+
+NotALoop.dontLoopThrice();
+
+NotALoop.dontLoopForever();
+
+NotALoop.loopForever();
+</source>
+
+We see four methods are being called. What do they do..? No idea! But we know one of them (at least) is bad. So let's do what we can to learn what's happening in our application up until the crash.
+
+To investigate further, close ImageJ (if it's running) and launch it again from the command line, e.g.:
+
+<source>
+ImageJ.app/ImageJ-linux64
+</source>
+
+We actually don't need any extra flags this time, as this technique isn't specific to ImageJ. When you run a program from the command line, your console is directly tied to the running instance:
+
+[[File:E6Console.png|400px|Waiting for input after launching ImageJ]]
+
+In this state, we can still send signals to the running application (for example - {{key|ctrl|c}} to [http://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/ kill the app]).
+
+When running a Java application, we can use {{key|ctrl|\}} to [[Troubleshooting#If_ImageJ_freezes_or_hangs|print a stack trace]]. With this knowledge:
+
+# Run the <code>E6 - Start Looping</code> command from ImageJ
+# Before ImageJ crashes, switch back to the terminal and use {{key|ctrl|\}} to print a stack trace
+# Because we want to guess what the last method to run is, keep taking stack traces until ImageJ crashes
+# Look back through the console text and find the last method to be executed
+
+Hint: raw stack dumps like this are not the easiest to read. Stack traces for all the threads in the JVM are printed, as well as additional information we're not interested in. Look for the the sections of stack traces sorted by thread, like you would see in an exception message, and find the <code>E6SleuthingSilence</code> class. Whatever follows that entry is at the top of the stack, and thus what was being processed on that thread when you took the stack trace.
+
+
+{{ExpandingBox
+|What method did you identify as being last executed before the crash?
+|><code>net.imagej.trouble.hidden.NotALoop.dontLoopForever</code> is what you should find. Note that there is some hand-waving in this exercise: it's possible that this method could have returned and a subsequent method caused the actual crash! But we at least have gained information, in that we know the <code>dontLoopForever</code> method ''was'' executed.
+}}
+
 =What next?=
 
 At the start of this guide we mentioned that the goal of debugging isn't explicitly to fix the problem. So a natural question that follows is - once we've successfully identified the cause of an issue (or at least narrowed things down), what are the next steps to take?
