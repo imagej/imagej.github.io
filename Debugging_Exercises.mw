@@ -252,6 +252,60 @@ Since we already followed these best practices, we can now finally debug our plu
 | >The <code>Context</code> in the <code>main</code> method is built with only one <code>ConsoleService</code> implementation available - <code>DefaultConsoleService</code>. In the full <code>Context</code> used in ImageJ, a higher-priority <code>LegacyConsoleService</code> overrides the <code>DefaultConsoleService</code>.
 }}
 
+
+==Exercise 5: Git history==
+
+'''Goals'''
+
+* Practice using [https://git-scm.com/docs/git-bisect git bisect] to locate historical breakages
+
+Debugging code directly via the techniques we've discussed thus far is not always practical. If the code is excessively complex, or the problem subtle, it may not be practical to try and step through code execution - you may not even be sure where to start. Keeping code well-structured and well-documented can help here, but we have another resource to draw on: the history of changes to our code, via git commits - assuming [[Development_Lifecycle|appropriate development practices]] are used. Identifying the breaking change gives us more information to use in our diagnosis (and in some cases, can be fixed with a simple [https://git-scm.com/docs/git-revert git revert]]).
+
+So, the first thing we'll do is run the <code>E5HistoricalHysteria</code> class and verify that it fails. For this exercise we have some additional information: this class used to run successfully, and a [https://git-scm.com/book/en/v2/Git-Basics-Tagging tag] was made at that point.
+
+To find what tags are available, on the command line we can run:
+
+<source>
+$ hinerm@Nyarlathotep ~/code/imagej/imagej-troubleshooting (master)
+git fetch --tags
+
+$ hinerm@Nyarlathotep ~/code/imagej/imagej-troubleshooting (master)
+git tag -l
+e5-good-maths
+</source>
+
+The purpose of the <code>bisect</code> tool is to search our commit history to find the breaking commit. Although you could search one by one through the commit history, this would take [https://en.wikipedia.org/wiki/Time_complexity#Linear_time linear time] in proportion to the number of commits to search. Bisecting performs a [https://en.wikipedia.org/wiki/Binary_search_algorithm#Performance binary search], speeding up the process significantly. It also allows much of the process to be automated.
+
+To use the bisect tool we just need to know two commits: one where the test worked, and one where the test failed. In this case, we know the <code>e5-good-maths</code> tag worked, and our current state is broken, so we can start the bisect:
+
+<source>
+$ hinerm@Nyarlathotep ~/code/imagej/imagej-troubleshooting (master)
+git bisect start master e5-good-maths
+Bisecting: 9 revisions left to test after this (roughly 3 steps)
+[d2e45589ca3671c93f772d4310fed9653ca1569b] E5: Zach likes the maths!
+$ hinerm@Nyarlathotep ~/code/imagej/imagej-troubleshooting ((d2e4558...)|BISECTING)
+</source>
+
+In each step of the bisect git will automatically move you to a new commit to be tested. "Testing" simply involves trying to reproduce the error and letting git know if this commit is good or bad. While bisecting, the whole local repository is in a special "BISECTING" mode - so that git can remember your answers for each commit. If you ever make a mistake (marking a commit incorrectly) you can abort the process via <code>git bisect reset</code>.
+
+Now that you're bisecting, follow these steps until you've identified the failing commit:
+# In Eclipse, refresh the <code>imagej-troubleshooting</code> project, to ensure that the current commit is what's being tested
+# Run the <code>E5HistoricalHysteria</code> class
+# On the command line, use either <code>git bisect bad</code> or <code>git bisect good</code> depending on if an exception was thrown or not
+
+After marking the last commit good or bad, bisect will print out the first bad commit. You can use <code>git bisect reset</code> to finish bisecting.
+
+
+{{ExpandingBox
+| What is the first bad commit that you identified with <code>git bisect</code>?
+|<source>commit 3102e5620a61978b52a733a0733c83899aeddc66
+Author: Mark Hiner <hinerm@gmail.com>
+Date:   Fri Nov 20 13:46:34 2015 -0600
+
+    E5: More maths plz!
+</source>
+}}
+
 =What next?=
 
 At the start of this guide we mentioned that the goal of debugging isn't explicitly to fix the problem. So a natural question that follows is - once we've successfully identified the cause of an issue (or at least narrowed things down), what are the next steps to take?
