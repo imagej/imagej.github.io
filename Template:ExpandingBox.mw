@@ -1,0 +1,16 @@
+<includeonly><div class="toccolours mw-collapsible mw-collapsed" style="width:800px">{{{1|}}}</div><div class="mw-collapsible-content">>{{{2|}}}</div>
+</includeonly>
+<noinclude>==Usage==
+<pre>
+{{CollapsingBox
+| How much wood could a woodchuck chuck if a woodchuck could chuck wood?
+| A woodchuck would chuck all the wood a woodchuck could chuck if a woodchuck could chuck wood.
+}}
+</pre>
+{{CollapsingBox
+| How much wood could a woodchuck chuck if a woodchuck could chuck wood?
+| A woodchuck would chuck all the wood a woodchuck could chuck if a woodchuck could chuck wood.
+}}
+
+[[Category:Boxes]]
+</noinclude>
