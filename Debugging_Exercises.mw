@@ -126,9 +126,8 @@ To complete this exercise:
 
 <div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
 Once you've evaluated these expressions, can you tell what went wrong in the program?
-<div class="mw-collapsible-content">>We asked for a list of size 100,000 but a list of size 99,9999 came back. Since we used hard-coded indices, instead of size-relative (e.g. <code>list.size()-1</code>), a method was called wanting to access a non-existent element.</div>
+<div class="mw-collapsible-content">>We asked for a list of size 100,000 but a list of size 99,999 came back. Since we used hard-coded indices, instead of size-relative (e.g. <code>list.size()-1</code>), a method was called wanting to access a non-existent element.</div>
 </div>
-
 
 ==Exercise 3: Conditional breakpoints==
 
