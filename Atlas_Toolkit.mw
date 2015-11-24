@@ -84,6 +84,11 @@ The results consist of the following files:
 ==Apply Label Registration==
 Once a set of ‘.label’ files has been registered using [[#Label Registration 3D|Label Registration 3D]], the resulting ‘.ots’ files can be used to transform the original image stacks towards their shared consensus tissue/object morphology.
 
+===Video demonstration===
+The following screencast demonstrates Apply Label Registration in use.
+
+  '''<code><nowiki>https://www.youtube.com/watch?v=2JwRZm5dst8</nowiki></code>'''
+
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
