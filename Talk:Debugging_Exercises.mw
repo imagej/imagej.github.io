@@ -35,13 +35,13 @@ exercise: debug once where breakpoint stops thread, once where it stops vm
 
 == Exercise 2 - Ellen's Questions ==
 
-Sorry guys... can you just clarify the final part of this exercise?  I get the point of expressions - just not necessarily how to implement them correctly and then go through the debugging process...
+Sorry guys... can you just clarify the final part of this exercise?  I get the point of expressions - just not necessarily how to implement them correctly and then go through the debugging process...  I'm missing something here...
 
 "To complete this exercise:
 1. Write an expression that calls the size() method of our list.
 2. Write a 2nd expression that evaluates to the value of the index variable"
 
-For these two steps...  wording is weird and confusing - so I'm not sure exactly what i need to do... (note: this could just be an Ellen-exclusive issue)
+For these two steps...  wording is weird and confusing - so I'm not sure exactly what I need to do... (note: this could just be an Ellen-exclusive issue)
 
 maybe another image - snapshot - would be helpful here??  something a bit more concrete - since this is really the point of this exercise - expressions...
 
