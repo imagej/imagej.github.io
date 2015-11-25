@@ -1,11 +1,12 @@
 I only have one ImageJ/Fiji plugin to date.
 
-plugins/Read_and_Write_Excel-1.0.0.jar
+plugins/Read_and_Write_Excel-1.0.1.jar
 
 Created in Eclipse IDE Mars.1 release (4.5.1), using the java jdk1.6.0_45 for ImageJ/Fiji compatibility.
 
 Release date:
-19 Nov 2015
+19 Nov 2015 v1.0.0
+25 Nov 2015 v1.0.1
 
 Description :
 This plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new). Within the latest sheet, data will be added adjacent to previous data. Results Table column headers are added automatically (I'm not sure if custom headers are supported as I haven't tested this yet).
@@ -23,11 +24,16 @@ If you decide to consult my source-code, please excuse odd methods and strange n
 
 *This plugin uses the Apache POI api, which is distributed under the terms of the Apache Licence (available from https://poi.apache.org/legal.html). I believe this software to be free and open source.
 
+Version 1.0.1 changes:
+- package is not bloated by dependency .jar files.
+- now contains source-code for reference.
+- removed platform specification as I believe this plugin will work across operating systems.
+
 Author:
 Anthony Sinadinos
 
 Platforms:
-Only tested in win64
+Multi
 
 Category:
 Input/Output.
