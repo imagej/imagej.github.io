@@ -5,6 +5,7 @@ plugins/Read_and_Write_Excel-1.0.1.jar
 Created in Eclipse IDE Mars.1 release (4.5.1), using the java jdk1.6.0_45 for ImageJ/Fiji compatibility.
 
 Release date:
+
 19 Nov 2015 v1.0.0
 
 25 Nov 2015 v1.0.1
@@ -41,6 +42,7 @@ Input/Output.
 Export data to file. Batch tested.
 
 Link:
+YouTube tutorial (https://www.youtube.com/watch?v=79rzUae-7N8)
 
 Dependencies:
 jars/xmlbeans.jar,
