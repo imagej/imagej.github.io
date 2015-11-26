@@ -7,7 +7,7 @@
 | released               = July 3<sup>rd</sup>, 2014
 | latest version         = March 23<sup>rd</sup>, 2015 ([[MorphoLibJ]] v1.0.7)
 | status                 = stable, active
-| category               = [[:Category:Segmentation|Segmentation]]
+| category               = [[:Category:Segmentation|Segmentation]], [[:Category:Mathematical_morphology|Mathematical morphology]]
 }}{|
 |style="vertical-align:top" |[[Image:Watershed-flooding-markers-blobs-gradient.gif|thumb|300px|Marker-controlled flooding on the gradient image of the blobs sample.]]
 |}
@@ -61,3 +61,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 [[Category:Plugins]]
 [[Category:Segmentation]]
+[[Category:Mathematical_morphology]]
