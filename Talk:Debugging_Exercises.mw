@@ -127,3 +127,12 @@ If an individual doesn't know what a stack trace is they have no chance at compl
 And again the goals could be clearer - that we are looking at situations where stack traces are not generated, so we have to take extra steps to collect this information.
 
 [[User:Hinerm|Hinerm]] ([[User talk:Hinerm|talk]])
+
+== Exercise 7 - Ellen's Questions ==
+
+fyi... my class occupying the majority of the memory was char[] ...  ???
+
+i'm going to keep moving through the exercise... not knowing the impact of that above.
+
+
+[[User:Etarena|Etarena]] ([[User talk:Etarena|talk]])
