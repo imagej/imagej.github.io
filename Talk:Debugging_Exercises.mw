@@ -57,6 +57,15 @@ As a first-first-first timer... I have no idea what to even write!  Sorry.  I kn
 
 [[User:Etarena|Etarena]] ([[User talk:Etarena|talk]])
 
+=== Response from Mark ===
+
+I think my adding "any java conditional statement" is confusing.. and maybe it shouldn't be so vague? Before the instruction steps is a blurb "a breakpoint that stops in the loop when the everythingIsOK flag is set to false" which is the hint to what the condition should be. But it's probably not worth making the user deduce the statement.
+
+Or at the least, we could have an expand/hide box that provides the conditional statement
+
+
+[[User:Hinerm|Hinerm]] ([[User talk:Hinerm|talk]])
+
 == Exercise 4 - Ellen's Questions ==
 
 That's right!  I've made it to #4... but not without some more 'simple' questions...
