@@ -113,3 +113,15 @@ Also should add a link to [[Troubleshooting#Launching_ImageJ_from_the_console]]
 nope.  got it.
 
 but i didn't get the same 'bad' commit as was indicated... mine said something like 'Johannes wants more maths...'
+
+=== Mark's response ===
+
+Note that this was the result of just **one step** of the bisect process. ;)
+
+[[User:Hinerm|Hinerm]] ([[User talk:Hinerm|talk]])
+
+== Exercise 6 Notes ==
+
+If an individual doesn't know what a stack trace is they have no chance at completing this exercise. We need a link in the preamble to stack traces (and maybe even earlier, since we start talking about stack traces in exercise 1.. so maybe in Requirements?)
+
+And again the goals could be clearer - that we are looking at situations where stack traces are not generated, so we have to take extra steps to collect this information.
