@@ -1,8 +1,8 @@
-It's [[2015-06-15_-_Major_updates_in_the_works|that time again]] - in this winter update the ImageJ team would like to let the community know where we're at, what's next, and what tasks we see as the most important to keep ImageJ moving forward.
+The ImageJ team at [[LOCI]] would like to let the community know where we're at, what's next, and what tasks we see as the most important to keep ImageJ moving forward.
 
 ==Top priority==
 
-First and foremost, we're on the cusp of submitting a paper describing the structure of ImageJ2. This will mark a critical step in the establishment of the ImageJ2 brand and serve as a foundation for future investigations.
+First and foremost, we're on the cusp of submitting a paper describing the structure of ImageJ2 and is a critical step towards future funding efforts.
 
 On the technical side, {{Person|Rueden}} just wrote the first ImageJ code using Java 8 functionality, which will continue drive our [https://github.com/imagej/imagej/issues/135 need to migrate]. One recent and fundamental step in this direction is the release of the [[List_of_update_sites|3D update site]]: providing Java 7- and 8-compatible versions of 3D ImageJ plugins (previously relegated to Java 6).
 
@@ -14,24 +14,24 @@ In the coming months we have several projects of interest. In approximate order 
 * [https://github.com/imagej/imagej-common/tree/rich-image Rich images] - a polishing pass at the ImageJ data model
 * [https://github.com/scifio/scifio/tree/location-robust-io Robust-IO] - generalizing image I/O sources
 * Increasing the sophistication of [[ImageJ_Ops|ImageJ Ops]]
-* [https://github.com/scijava/scijava-common/milestones/3.0.0 SciJava-Common 3.0]
-* Increased collaboration with KNIME (we're pleased to have [https://github.com/gab1one Gabriel Einsdorf] on loan!)	
-* Improved [https://github.com/imagej/imagej-legacy/tree/rap-dont-harmonize ImageJ1-ImageJ2 synchronization]
-* Formalizing developer roles and responsibilities (which will make "Adopt-a-plugin" possible!)
+* [https://github.com/scijava/scijava-common/milestones/3.0.0 SciJava-Common 3.x]
+* Increased collaboration with KNIME ([[LOCI]] is pleased to have {{Person|gab1one}} on loan from Konstanz!)
+* Improved {{GitHub | org=imagej | repo=imagej-legacy | issue=86 | label=ImageJ1-ImageJ2 synchronization}}
+* [http://forum.imagej.net/t/project-developer-roles/206 Formalizing developer roles and responsibilities] (which will make an "Adopt-a-plugin" program possible!)
 
 ==Long-term plans==
-			
-* Adding support for arbitrarily large blocks/planes (via google-maps style scaling)	
-* Improved support for arbitrarily large images
+
+* Better support for arbitrarily large planes (via google-maps style scaling)
+* Improved support for arbitrarily large images (i.e., with huge numbers of planes or blocks)
 * JavaFX-based UI
-			
+
 ==Continued support==
 
-While not directly tied to any one issue or reportable task, the ImageJ team will continue to support:
+While not directly tied to any one issue or reportable task, [[LOCI]] will continue to support:
 
-* In the ImageJ community - especially with the success of the new [http://forum.imagej.net/ forum]
+* The ImageJ community—especially with the success of the new [http://forum.imagej.net/ forum]
 * [http://loci.wisc.edu/ LOCI] scientific collaborations
-* Technical training - via continued [http://imagej.net/Presentations#Workshops presentations, workshops] and wiki guides.
+* Technical training, via continued [http://imagej.net/Presentations#Workshops presentations, workshops] and wiki guides.
 
 [[Category:ImageJ2]]
 [[Category:News]]
