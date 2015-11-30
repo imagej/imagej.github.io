@@ -15,7 +15,7 @@ In the coming months we have several projects of interest. In approximate order 
 * [https://github.com/scifio/scifio/tree/location-robust-io Robust-IO] - generalizing image I/O sources
 * Increasing the sophistication of [[ImageJ_Ops|ImageJ Ops]]
 * [https://github.com/scijava/scijava-common/milestones/3.0.0 SciJava-Common 3.0]
-* Increased collaboration with KNIME (we're pleased to have [https://github.com/gab1one Gabriel Eisendorf] on loan!)	
+* Increased collaboration with KNIME (we're pleased to have [https://github.com/gab1one Gabriel Einsdorf] on loan!)	
 * Improved [https://github.com/imagej/imagej-legacy/tree/rap-dont-harmonize ImageJ1-ImageJ2 synchronization]
 * Formalizing developer roles and responsibilities (which will make "Adopt-a-plugin" possible!)
 
