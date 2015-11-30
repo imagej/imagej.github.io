@@ -125,3 +125,5 @@ Note that this was the result of just **one step** of the bisect process. ;)
 If an individual doesn't know what a stack trace is they have no chance at completing this exercise. We need a link in the preamble to stack traces (and maybe even earlier, since we start talking about stack traces in exercise 1.. so maybe in Requirements?)
 
 And again the goals could be clearer - that we are looking at situations where stack traces are not generated, so we have to take extra steps to collect this information.
+
+[[User:Hinerm|Hinerm]] ([[User talk:Hinerm|talk]])
