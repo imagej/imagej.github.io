@@ -100,9 +100,9 @@ The plugin can also be run from the command line:
 
 = Rapid prototyping with the [[Script Editor]] =
 
-{{Template:Outdated}}
+{{Warning | Using the Script Editor for Java development is not currently recommended.<br>For Java development, proceed to the [[#Getting_started_with_Maven|Getting Started with Maven]] section.<br>If you would like to use the script editor, see the list of [[Scripting#Supported_languages|other supported languages]].}}
 
-There a few good reasons why you should try the [[Script Editor]] for rapid prototyping of your plugins or scripts:
+<s>There a few good reasons why you should try the [[Script Editor]] for rapid prototyping of your plugins or scripts:
 
 * Supports Jython, JRuby, Javascript, Clojure, Java, BeanShell, and ImageJ's Macro Language
 * Syntax highlighting
@@ -110,11 +110,11 @@ There a few good reasons why you should try the [[Script Editor]] for rapid prot
 * Export scripts/plugins as ''.jar'' files
 * You can compile & run Java classes in the Script Editor which implement neither a plugin nor a plugin filter, but which have a static ''main()'' method 
 * Provides code templates
-* Convenience functions, (add import, open JavaDoc, for given class, etc)
+* Convenience functions, (add import, open JavaDoc, for given class, etc)</s>
 
 == Quick Start ==
 
-To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [[Script Editor]] ({{bc | File | New | Script}}), and select the ''Process Pixels'' menu item from the {{bc | Templates | Java}} menu. Then, run the plugin with ''Run>Run''.
+<s>To plunge into writing plugins, make sure that there is an active image (e.g. a sample image), start the [[Script Editor]] ({{bc | File | New | Script}}), and select the ''Process Pixels'' menu item from the {{bc | Templates | Java}} menu. Then, run the plugin with ''Run>Run''.</s>
 
 = Getting started with Maven =
 
