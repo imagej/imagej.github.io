@@ -66,7 +66,7 @@ By choosing the marker image, several operations may be automatized. For example
 
 === Usage ===
 
-The following operations are available in the {{bc | Plugins | Fast Morphology}} menu:
+The following operations are available in the {{bc | Plugins | MorphoLibJ}} menu:
 
 * '''Geodesic Reconstruction''': compute the geodesic reconstruction by erosion or dilation using a marker image and a mask image, and a specified connectivity. The same operation is available for 3D images.
 * '''Kill Borders''': remove the particles touching the border of a binary or grey level image, in 2D or 3D.
