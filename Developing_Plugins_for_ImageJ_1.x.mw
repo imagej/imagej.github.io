@@ -100,7 +100,7 @@ The plugin can also be run from the command line:
 
 = Rapid prototyping with the [[Script Editor]] =
 
-{{Warning | Using the Script Editor for Java development is not currently recommended.<br>For Java development, proceed to the [[#Getting_started_with_Maven|Getting Started with Maven]] section.<br>If you would like to use the script editor, see the list of [[Scripting#Supported_languages|other supported languages]].}}
+{{Warning | Using the Script Editor for Java development is not currently recommended.<br>For Java development, proceed to the [[#Getting_started_with_Maven|Getting Started with Maven]] section.<br>If you would like to use the script editor, see the sections for the [[Scripting#Supported_languages|other supported languages]].}}
 
 <s>There a few good reasons why you should try the [[Script Editor]] for rapid prototyping of your plugins or scripts:
 
@@ -121,6 +121,17 @@ The plugin can also be run from the command line:
 The {{GitHub|org=imagej|repo=minimal-ij1-plugin|label=minimal-ij1-plugin project}} provides a working example, and documentation, illustrating how an ImageJ plugin should be structured from a "best practices in Maven" point of view.
 
 Using this project requires a basic understanding of [[Git]] and [[Maven]]; thus if you are already familiar with the ImageJ 1.x API, this is a reasonable starting point to learn the [[Project_management|project management]] tools used in [[Writing_plugins|ImageJ2 development]].
+
+= Basic workflow =
+
+All plugin development tends to follow a consistent "Design - Build - Test" workflow. Practically, this looks like:
+
+* Make changes to the source code (e.g. in [[Eclipse]])
+* Build your plugin's .jar from the source code (e.g. with [[Maven]])
+* Move the plugin to the [[Plugin#Installing_plugins_manually|plugins directory]] of an existing ImageJ installation
+* (Re)start ImageJ and run the plugin to test the behavior
+
+... and repeat until your plugin is working as intended.
 
 = ImageJ's API =
 
@@ -405,6 +416,14 @@ See the {{GitHub|org=imagej|repo=imagej-tutorials|path=call-modern-from-legacy|l
 == Further tips ==
 
 Please see also the developers tips how to [[Tips_for_developers#Using_ImageJ_effectively|use ImageJ's API effectively]].
+
+= Next steps =
+
+See guides on:
+
+* [[Distribution|Plugin distribution]]
+* [[Development_Lifecycle|Development lifecycle]]
+* [[Debugging_Exercises|Debugging practice]]
 
 [[Category:Tutorials]]
 [[Category:Development]]
