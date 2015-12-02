@@ -46,6 +46,63 @@ Now update Eclipse's JRE to be JDK-aware:
 '''Do not use a package manager.''' For several reasons, we do not recommend installing Eclipse from a package manager. You may not get a new enough version of Eclipse (we recommend 4.3+), you will not get the Java Developers version that includes the M2E plugins, and you will likely have trouble installing additional plugins due to the permissions issues with the system-wide installation.
 }}
 </td></tr></table>
+<div style="float: right;
+        width: 400px;
+        border: 1px solid #ccc;
+        padding: 15px !important;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        background-color: #ffefbe;
+        {{border-radius|0.75em}} {{box-shadow}}">
+== Keyboard shortcuts ==
+On OS X, replace {{Key|Ctrl}} with  {{Key|Cmd}}
+{|
+| colspan=2 | '''Navigation'''
+|-
+| style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|Shift|T}}
+| open a Java class
+|-
+| style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|1}}
+| quick fix
+|-
+| style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|F3}}
+| jump to class<br>(to edit the code, see [[Architecture#Using_snapshot_couplings_during_development|snapshot coupling]])
+|-
+| style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|O}}
+| show outline
+|-
+| style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|Space}}
+| auto-complete
+|-
+| style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|T}}
+| shows all implementations of interface or class
+|-
+| colspan=2 | '''Editing'''
+|-
+| style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Alt|Up}}, {{Key|Alt|Down}}
+| move current line up or down
+|-
+| style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|D}}
+| delete the current line
+|-
+| style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|/}}
+| comment/uncomment currently selected line(s)
+|-
+| colspan=2 style="padding-top: 1em" | '''Code cleanup'''
+|-
+| style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|Shift|O}}
+| organize imports
+|-
+| style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|Shift|F}}
+| format code<br>(BUT make sure you set the [[Coding_style#Eclipse_code_style_profiles|coding style]])
+|-
+| style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Alt|Shift|S}}, {{Key|U}}
+| clean up (does format and much more)
+|-
+| style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Alt|Shift|R}}
+| refactor rename
+|}
+</div>
 == Clone the source code ==
 
 * Using your [http://git-scm.com/downloads/guis Git client of choice], clone the [[source code]] which interests you.
@@ -68,56 +125,6 @@ If you cloned the [https://github.com/imagej/imagej imagej project], you can lau
 # Choose "Run As" and then "Java Application"
 
 Other projects will have different main classes.
-
-== Keyboard shortcuts ==
-
-For Mac, replace {{Key|Ctrl}} with  {{Key|Cmd}}
-{|
-| colspan=2 | '''Navigation'''
-|-
-| align=right | {{Key|Ctrl|Shift|T}}
-| find objects
-|-
-| align=right | {{Key|Ctrl|1}}
-| quick fix
-|-
-| align=right | {{Key|F3}}
-| jump to class (to edit the code, see [[Architecture#Using_snapshot_couplings_during_development|snapshot coupling]])
-|-
-| align=right | {{Key|Ctrl|O}}
-| show outline
-|-
-| align=right | {{Key|Ctrl|Space}}
-| auto-complete
-|-
-| align=right | {{Key|Ctrl|T}}
-| shows all implementations of interface or class
-|-
-| colspan=2 | '''Editing'''
-|-
-| align=right | {{Key|Alt|Up}}, {{Key|Alt|Down}}
-| move current line up or down
-|-
-| align=right | {{Key|Ctrl|D}}
-| delete the current line
-|-
-| align=right | {{Key|Ctrl|/}}
-| comment out (or uncomment) the currently selected line(s)
-|-
-| colspan=2 style="padding-top: 1em" | '''Code cleanup'''
-|-
-| align=right | {{Key|Ctrl|Shift|O}}
-| organize imports
-|-
-| align=right | {{Key|Ctrl|Shift|F}}
-| format code (BUT make sure you set the [[Coding_style#Eclipse_code_style_profiles|coding style]])
-|-
-| align=right | {{Key|Alt|Shift|S}} {{Key|U}}
-| clean up (does format and much more)
-|-
-| align=right | {{Key|Alt|Shift|R}}
-| refactor rename
-|}
 
 [[Category:Development]]
 [[Category:IDEs]]
