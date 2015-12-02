@@ -1,4 +1,4 @@
-<includeonly><div class="toccolours mw-collapsible mw-collapsed" style="width:800px">{{{1|}}}<div class="mw-collapsible-content">{{{2|}}}</div></div>
+<includeonly><div class="toccolours mw-collapsible mw-collapsed"{{#if|{{{width|}}}| style="width:{{{width}}}"|}}>{{{1|}}}<div class="mw-collapsible-content">{{{2|}}}</div></div>
 </includeonly>
 <noinclude>==Usage==
 <pre>
