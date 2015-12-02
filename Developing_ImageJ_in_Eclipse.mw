@@ -75,7 +75,7 @@ On OS X, replace {{Key|Ctrl}} with  {{Key|Cmd}}
 | auto-complete
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|T}}
-| shows all implementations of interface or class
+| show implementations of interface or class
 |-
 | colspan=2 | '''Editing'''
 |-
@@ -86,7 +86,7 @@ On OS X, replace {{Key|Ctrl}} with  {{Key|Cmd}}
 | delete the current line
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|/}}
-| comment/uncomment currently selected line(s)
+| comment/uncomment the selected line(s)
 |-
 | colspan=2 style="padding-top: 1em" | '''Code cleanup'''
 |-
@@ -103,6 +103,7 @@ On OS X, replace {{Key|Ctrl}} with  {{Key|Cmd}}
 | refactor rename
 |}
 </div>
+
 == Clone the source code ==
 
 * Using your [http://git-scm.com/downloads/guis Git client of choice], clone the [[source code]] which interests you.
