@@ -421,6 +421,7 @@ Please see also the developers tips how to [[Tips_for_developers#Using_ImageJ_ef
 
 See guides on:
 
+* [[Developing_Fiji_in_Eclipse#Create_the_Eclipse_Projects|Developing in Eclipse]]
 * [[Distribution|Plugin distribution]]
 * [[Development_Lifecycle|Development lifecycle]]
 * [[Debugging_Exercises|Debugging practice]]
