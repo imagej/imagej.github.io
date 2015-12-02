@@ -1,27 +1,4 @@
-<div style="float: right">
-{{Development | source}}
-<div style="clear: right"></div>
-{{Windows | '''Avoid permissions issues.''' We recommend installing Eclipse ''outside'' of the <code>Program Files</code> directory. E.g.: '''<code>C:\Users\frood\Programs\eclipse</code>''', where '''<code>C:\Users\frood</code>''' is your user directory.
-
-'''Configuring Eclipse.''' After installing Eclipse, you will need to configure it to know about your JDK.
-
-Use Wordpad to edit the <code>eclipse.ini</code> file in your Eclipse installation (e.g., '''<code>C:\Users\frood\Programs\eclipse</code>'''). (Do not use Notepad, because it will not handle the Unix-style line breaks properly.) Carefully follow [http://wiki.eclipse.org/Eclipse.ini#Specifying_the_JVM these instructions] to specify the proper JDK. Then save the file and quit Wordpad.
-
-Now update Eclipse's JRE to be JDK-aware:
-
-* Launch Eclipse
-* From the menu choose {{bc | Window | Preferences}}
-* Select {{bc | Java | Installed JREs}}
-* Click Search..., navigate to your JDK installation folder (e.g., '''<code>C:\Program Files\Java\jdk1.8.0_11</code>''') and click OK
-* Check the box next to the JRE that appears and click OK
-}}
-<div style="clear: right"></div>
-{{Linux | '''Avoid permissions issues.''' We recommend installing to <code>$HOME/eclipse</code>.
-
-'''Do not use a package manager.''' For several reasons, we do not recommend installing Eclipse from a package manager. You may not get a new enough version of Eclipse (we recommend 4.3+), you will not get the Java Developers version that includes the M2E plugins, and you will likely have trouble installing additional plugins due to the permissions issues with the system-wide installation.
-}}
-</div>
-This article explains how to install and configure Eclipse for use with [[ImageJ]] development. Directions correspond to Eclipse 4.4 Luna, and may need adjustment for other versions.
+{{Development | source}}This article explains how to install and configure Eclipse for use with [[ImageJ]] development. Directions correspond to Eclipse 4.4 Luna, and may need adjustment for other versions.
 __TOC__
 
 == Install and configure Eclipse ==
@@ -37,8 +14,38 @@ __TOC__
 
 * Unpack the archive to a location of your choice.
 
-* See the right-hand sidebars for platform-specific notes.
+== Configure Eclipse for your platform ==
 
+<table style="width: 99%"><tr><td style="vertical-align: top; width: 33%">
+{{ExpandingBox
+| [[File:Win.png | x32px]] '''Windows'''
+| '''Avoid permissions issues.''' We recommend installing Eclipse ''outside'' of the <code>Program Files</code> directory. E.g.: '''<code>C:\Users\frood\Programs\eclipse</code>''', where '''<code>C:\Users\frood</code>''' is your user directory.
+
+'''Configuring Eclipse.''' After installing Eclipse, you will need to configure it to know about your JDK.
+
+Use Wordpad to edit the <code>eclipse.ini</code> file in your Eclipse installation (e.g., '''<code>C:\Users\frood\Programs\eclipse</code>'''). (Do not use Notepad, because it will not handle the Unix-style line breaks properly.) Carefully follow [http://wiki.eclipse.org/Eclipse.ini#Specifying_the_JVM these instructions] to specify the proper JDK. Then save the file and quit Wordpad.
+
+Now update Eclipse's JRE to be JDK-aware:
+
+* Launch Eclipse
+* From the menu choose {{bc | Window | Preferences}}
+* Select {{bc | Java | Installed JREs}}
+* Click Search..., navigate to your JDK installation folder (e.g., '''<code>C:\Program Files\Java\jdk1.8.0_11</code>''') and click OK
+* Check the box next to the JRE that appears and click OK
+}}
+</td><td style="vertical-align: top; width: 33%">
+{{ExpandingBox
+| [[File:Osx.png | x32px]] '''OS X'''
+| '''Understand Java 6 vs. Java 8.''' Eclipse should work on OS X with no further configuration. However, we recommend reading the [[FAQ#Mac_OS_X|OS X section of the FAQ]], as there are several Java-related issues on OS X.
+}}
+</td><td style="vertical-align: top; width: 33%">
+{{ExpandingBox
+| [[File:Tux.png | x32px]] '''Linux'''
+| '''Avoid permissions issues.''' We recommend installing to <code>$HOME/eclipse</code>.
+
+'''Do not use a package manager.''' For several reasons, we do not recommend installing Eclipse from a package manager. You may not get a new enough version of Eclipse (we recommend 4.3+), you will not get the Java Developers version that includes the M2E plugins, and you will likely have trouble installing additional plugins due to the permissions issues with the system-wide installation.
+}}
+</td></tr></table>
 == Clone the source code ==
 
 * Using your [http://git-scm.com/downloads/guis Git client of choice], clone the [[source code]] which interests you.
