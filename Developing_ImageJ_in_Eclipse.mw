@@ -1,4 +1,4 @@
-{{Development | source}}This article explains how to install and configure Eclipse for use with [[ImageJ]] development. Directions correspond to Eclipse 4.4 Luna, and may need adjustment for other versions.
+{{Development | source}}This article explains how to install and configure Eclipse to develop [[ImageJ]] [[components]] and [[plugins]]. Directions correspond to Eclipse 4.4 Luna, and may need adjustment for other versions.
 __TOC__
 
 == Install and configure Eclipse ==
@@ -126,6 +126,20 @@ If you cloned the [https://github.com/imagej/imagej imagej project], you can lau
 # Choose "Run As" and then "Java Application"
 
 Other projects will have different main classes.
+
+== See also ==
+
+{| class="wikitable nicetable"
+! [[ImageJ2]]
+! [[ImageJ 1.x]]
+|-
+|
+* [[Writing plugins]]
+* [[How to contribute to an existing plugin or library|Contributing to a plugin]]
+|
+* {{GitHub|org=imagej|repo=minimal-ij1-plugin|label=minimal-ij1-plugin}} project template
+* [[Introduction into Developing Plugins]]
+|}
 
 [[Category:Development]]
 [[Category:IDEs]]
