@@ -7,31 +7,31 @@ The [[wikipedia:Gitter|Gitter]] chat service, while relatively new, is a great w
 {| class="wikitable nicetable"
 | '''Logo'''
 | '''Organization'''
-| '''Chat room'''
+| '''Chat rooms'''
 |-
 | [[File:Imagej2-icon.png|48px]]
 | [[ImageJ]]
-| [https://gitter.im/imagej/imagej imagej/imagej]
+| [https://gitter.im/orgs/imagej/rooms imagej]
 |-
 | [[File:Fiji-icon.png|48px]]
 | [[Fiji]]
-| [https://gitter.im/fiji/fiji fiji/fiji]
+| [https://gitter.im/orgs/fiji/rooms fiji]
 |-
 | [[File:Knime-icon.png|48px]]
 | [[KNIME]]
-| [https://gitter.im/knime-ip/knip knime-ip/knip]
+| [https://gitter.im/orgs/knime-ip/rooms knime-ip]
 |-
 | [[File:Imglib2-icon.png|48px]]
 | [[ImgLib2]]
-| [https://gitter.im/imglib/imglib2 imglib/imglib2]
+| [https://gitter.im/orgs/imglib/rooms imglib]
 |-
 | [[File:Scifio-icon.png|48px]]
 | [[SCIFIO]]
-| [https://gitter.im/scifio/scifio scifio/scifio]
+| [https://gitter.im/orgs/scifio/rooms scifio]
 |-
 | [[File:Scijava-icon.png|48px]]
 | [[SciJava]]
-| [https://gitter.im/scijava/scijava-common scijava/scijava-common]
+| [https://gitter.im/orgs/scijava/rooms scijava]
 |}
 
 == IRC ==
