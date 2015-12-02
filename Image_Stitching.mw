@@ -285,14 +285,14 @@ Although the Stitching depends on quite some Fiji-specific libraries, there is a
 
 Additionally to the Stitching plugins, it contains the following libraries. I want to thank all the authors for their support and help:
 * ''edu_mines_jtk.jar'': Efficient 1-dimensional FFT implementation by [http://inside.mines.edu/~dhale/jtk/ Dave Hale].
-* ''mpicbg.jar'': Transformation package by [http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld]
-* ''[[imglib]]'': N-dimensional image processing library for Java by Tobias Pietzsch, [http://fly.mpi-cbg.de/~preibisch/ Stephan Preibisch] & [http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld]
-* ''fiji-lib.jar & Fiji_Plugins.jar'': Fiji libraries by [http://loci.wisc.edu/people/johannes-schindelin Johannes Schindelin]
-* ''loci_tools.jar'': [http://loci.wisc.edu/software/bio-formats LOCI-Bioformats]  Java library for reading and writing life sciences image file formats. I want to especially thank [http://loci.wisc.edu/people/curtis-rueden Curtis Rueden] and [http://loci.wisc.edu/people/melissa-linkert Melissa Linkert]
+* ''mpicbg.jar'': Transformation package by {{Person|Saalfeld}}
+* ''[[imglib]]'': N-dimensional image processing library for Java by {{Person|Pietzsch}}, {{Person|StephanP}} & {{Person|Saalfeld}}
+* ''fiji-lib.jar & Fiji_Plugins.jar'': Fiji libraries by {{Person|Schindelin}}
+* ''loci_tools.jar'': [[Bio-Formats]] Java library for reading and writing life sciences image file formats. I want to especially thank {{Person|Rueden}} and {{Person|Linkert}}
 
 Additionally, I want to thank the following people for discussions, providing images and pushing me to develop and continuously improve the Stitching plugins:
 
-Danielle Bower, Albert Cardona, Nicolas Gompel, Wieland Huttner, Gregory Jefferis, Arnim Jenett, Tom Kazimiers, David Koos, Jan Peychl, Pavel Tomancak, James Truman, Nicholas Weiler and Daniel White
+Danielle Bower, {{Person|Albertcardona}}, Nicolas Gompel, Wieland Huttner, {{Person|Jefferis}}, Arnim Jenett, {{Person|tomka}}, David Koos, Jan Peychl, {{Person|Tomancak}}, James Truman, Nicholas Weiler and {{Person|White}}
 
 == See Also ==
 
