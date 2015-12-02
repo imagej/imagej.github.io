@@ -26,6 +26,7 @@
 {{MenuItem | [[Distribution|Distributing your plugins]] }}
 {{MenuItem | [[Development Lifecycle|Development lifecycle]] }}
 <hr>
+{{MenuItem | [[Developing ImageJ in Eclipse|Developing with Eclipse]] }}
 {{MenuItem | [[Debugging Exercises|Hands-on debugging]] }}
 {{MenuItem | [[Adding_new_ops|Adding new ops]] }}
 {{MenuItem | [[Adding_new_file_formats|Adding new formats]] }}
@@ -40,7 +41,6 @@
 {{Submenu | Fiji |
 {{MenuItem | [[Downloading and Building Fiji From Source|Building Fiji from source]] }}
 {{MenuItem | [[Developing Fiji]] }}
-{{MenuItem | [[Developing Fiji in Eclipse|Fiji + Eclipse]] }}
 {{MenuItem | [[Fiji contribution requirements|Contribution requirements]] }}
 {{MenuItem | [[Supported Compilers|Supported compilers]] }}
 | {{#ifeq:{{{1}}}|fiji||collapsed}}
