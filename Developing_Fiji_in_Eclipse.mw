@@ -93,6 +93,29 @@ public static void main(String[] args) {
 }
 </source>
 
+==Testing your plugin in an existing installation==
+
+When you run your plugin from Eclipse, you're only testing with the classpath ''of this project'' - which may or may not reflect the environment of an actual user's installation. To test your plugin in an existing installation you can either simply copy the jar, or use Maven to install your plugin and its dependencies.
+[[File:MavenRunConfig.png|thumb|right|450px|Setting up a new Maven Build configuration]]
+===Option 1: Copying the jar===
+
+All modern Eclipse installations have the m2e plugin, so you can simply tell Maven to [http://www.vogella.com/tutorials/EclipseMaven/article.html#example_eclipsemavenproject_runningthebuild build the project]. This creates a <code>.jar</code> in the <code>/target</code> subdirectory, which you can then copy to an <code>ImageJ.app/jars/</code> directory.
+
+This is a simple option that makes minimal changes to the existing installation.
+
+===Option 2: Install dependencies===
+
+All mavenized ImageJ projects have built-in support for installing directly into an existing installation, overwriting previous versions of any components, and pulling in up-to-date versions of any dependencies. This is the most robust way to test your plugin, but note that it may make additional changes to your existing ImageJ installation.
+
+Steps are as follows:
+# Right-click your project in Eclipse and select {{bc|Run As|Run Configurations...}}
+# Scroll down to Maven Build. If you've built this project with Maven via Eclipse before there will already be a configuration for it. Otherwise you can double-click "Maven Build" to create a new run configuration.
+# Add a parameter: <code>imagej.app.directory</code> with value: <code><path/to/ImageJ.app></code> (e.g. <code>/home/hinerm/Fiji.app</code>)
+# Add a parameter: <code>delete.other.versions</code> with value: <code>true</code>
+# Click <code>Apply</code>
+
+You can now run the project from this dialog. You only need to perform this configuration once though - future uses of the [http://www.vogella.com/tutorials/EclipseMaven/article.html#example_eclipsemavenproject_runningthebuild Maven Build] option will automatically copy your plugin and its dependencies to the specified ImageJ app.
+
 ==Adding new plugins==
 
 The easiest method is to start with a [https://github.com/imagej/minimal-ij1-plugin/zipball/master minimal project], renamed to the desired name of your plugin. By convention, the project directory should match the base name of the <code>.jar</code> file to be generated.
