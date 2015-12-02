@@ -61,5 +61,11 @@ You may receive a warning about Maven when building the project. It is not requi
 
 To expand the projects you can also right click on the top-level "ImageJ Projects" and choose "Open Required Projects" (and "Close Required Projects" to close). During development you must select "Open Required Projects" before you can successfully do "Find Usages" in the "Open Projects" scope.
 
+== See also ==
+
+* [https://www.youtube.com/watch?v=Ac-6gJ2eRb0 Developing ImageJ 1.x plugins with NetBeans] screencast
+* {{GitHub|org=imagej|repo=minimal-ij1-plugin|label=minimal-ij1-plugin}} project template
+* [[Introduction into Developing Plugins]] tutorial
+
 [[Category:Development]]
 [[Category:IDEs]]
