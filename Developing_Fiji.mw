@@ -33,11 +33,7 @@ At some point, you might want to debug whatever you wrote.  There's a small [[De
 
 == Discussing code ==
 
-When you want to discuss your changes to some Fiji component, the preferred way is to inline a patch and send it to the [mailto:fiji@fiji.sc fiji-devel mailing list]. You can also send a link to your repository, e.g. a fork of {{GitHub|repo=fiji|label=the Fiji repository on github.com}}, but then commenting is not as easy (and the discussion will involve fewer developers).
-
-When discussing larger chunks of code (or a patch) on [irc://irc.freenode.net/fiji-devel IRC], please do not paste them directly, but use a [http://gist.github.com pastebin] instead.
-
-To point at specific code on IRC or via mail, you can also do so by posting links to our [[Git|Gitweb]]. See also [[GitHub Tricks]].
+When you want to propose and/or discuss changes to some source code, the preferred way is to [[contributing|submit a PR on GitHub]].
 
 == Contributing ==
 
