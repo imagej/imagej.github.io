@@ -21,7 +21,7 @@ __TOC__
 | [[File:Win.png | x32px]] '''Windows'''
 | '''Avoid permissions issues.''' We recommend installing Eclipse ''outside'' of the <code>Program Files</code> directory. E.g.: '''<code>C:\Users\frood\Programs\eclipse</code>''', where '''<code>C:\Users\frood</code>''' is your user directory.
 
-'''Configuring Eclipse.''' After installing Eclipse, you will need to configure it to know about your JDK.
+'''Configure Eclipse.''' After installing Eclipse, you will need to configure it to know about your JDK.
 
 Use Wordpad to edit the <code>eclipse.ini</code> file in your Eclipse installation (e.g., '''<code>C:\Users\frood\Programs\eclipse</code>'''). (Do not use Notepad, because it will not handle the Unix-style line breaks properly.) Carefully follow [http://wiki.eclipse.org/Eclipse.ini#Specifying_the_JVM these instructions] to specify the proper JDK. Then save the file and quit Wordpad.
 
@@ -114,7 +114,7 @@ On OS X, replace {{Key|Ctrl}} with  {{Key|Cmd}}
 # Browse to the folder where you cloned the project source code
 # Click Finish
 
-== Launching ImageJ ==
+== Launch ImageJ ==
 
 If you cloned the [https://github.com/imagej/imagej imagej project], you can launch the program as follows:
 
