@@ -115,6 +115,8 @@ On OS X, replace {{Key|Ctrl}} with  {{Key|Cmd}}
 # Browse to the folder where you cloned the project source code
 # Click Finish
 
+Eclipse will import and automatically build the project(s). There should not be any build errors, but it is normal to see a large number (often hundreds) of warnings. These mostly come from Java-1.4-style code or unnecessary imports, variables or methods in the sources of authors who do not use an IDE and thus have no automatic assistance at cleaning up. All these warnings can be ignored, having no effect on the functionality of the code.
+
 == Launch ImageJ ==
 
 If you cloned the [https://github.com/imagej/imagej imagej project], you can launch the program as follows:
