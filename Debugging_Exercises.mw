@@ -206,6 +206,11 @@ Were you able to get the breakpoint to stop in the loop only when a problem is e
 | >The object was <code>null</code>.
 }}
 
+'''Takeaways'''
+
+* Setting a hit count on a breakpoint is useful if problematic code is called multiple times
+* If problems appear randomly, using a conditional expressions on the breakpoint can help
+
 ==Exercise 4: ImageJ plugins==
 
 '''Goals'''
