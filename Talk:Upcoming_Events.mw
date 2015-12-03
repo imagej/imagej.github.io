@@ -1,0 +1,8 @@
+== Remove the "Other info" column? ==
+Is the "Other info" useful? Most of those things should be linked from the main site, right? I'd rather keep only one central link to the event's front page, because:
+* It makes the table less wide.
+* It is easier to maintain, and avoids some future broken links.
+* It eliminates the burden of deciding which info is important enough to reside there.
+Thoughts?
+
+—[[User:Rueden|Rueden]] ([[User talk:Rueden|talk]])
