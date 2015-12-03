@@ -458,6 +458,10 @@ There is a huge amount of information that can be browsed in the heap dump. Most
 
 '''Tip:''' In this exercise we acquired the heap dump manually via <code>jvisualvm</code>. When you right-click on an application you can also set heap dumps to be acquired automatically when <code>OutOfMemoryErrors</code> occur. Heap dumps can also be acquired directly through the Eclipise MAT plugin, in the <code>Memory Analysis</code> perspective.
 
+'''Takeaways'''
+
+* To identify subtler problems, like memory leaks, it helps to learn how to use external tools - like <code>jvisualvm</code>
+
 =What next?=
 
 At the start of this guide we mentioned that the goal of debugging isn't explicitly to fix the problem. So a natural question that follows is - once we've successfully identified the cause of an issue (or at least narrowed things down), what are the next steps to take?
