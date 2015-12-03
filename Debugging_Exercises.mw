@@ -141,6 +141,11 @@ To complete this exercise:
 | >We asked for a list of size 100,000 but a list of size 99,999 came back. Since we used hard-coded indices, instead of size-relative (e.g. <code>list.size()-1</code>), a method was called wanting to access a non-existent element.
 }}
 
+'''Takeaways'''
+
+* Setting breakpoints on exceptions avoids unnecessary breakpoint hits (and can be useful when we aren't sure where to set the breakpoint)
+* The Expressions window of the Debug view allows us to evaluate arbitrary Java expressions without modifying our source code
+
 ==Exercise 3: Conditional breakpoints==
 
 '''Goals'''
