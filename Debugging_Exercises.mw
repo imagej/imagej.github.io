@@ -278,7 +278,7 @@ Since we already followed these best practices, we can now finally debug our plu
 | >The <code>Context</code> in the <code>main</code> method is built with only one <code>ConsoleService</code> implementation available - <code>DefaultConsoleService</code>. In the full <code>Context</code> used in ImageJ, a higher-priority <code>LegacyConsoleService</code> overrides the <code>DefaultConsoleService</code>.
 }}
 
-'''Takeaways;;
+'''Takeaways'''
 
 * Launching ImageJ from the command line allows us to add useful flags and collect debugging information
 * Attaching Eclipse to a running ImageJ lets us debug plugins in a "production" environment
