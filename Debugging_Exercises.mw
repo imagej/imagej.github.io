@@ -46,24 +46,27 @@ git reset --hard origin/master
 
 =Exercises=
 
-==Exercise 1: Breakpoints==
+==Exercise 1: Stack Traces and Breakpoints==
 
 '''Goals'''
 
+* Interpret a stack trace
 * Practice setting breakpoints in Eclipse
 * Use the Variables window to inspect variable values
-* Use the navigation commands to traverse code while in Debug mode
+* Use the navigation commands to execute code in Debug mode
 
 
 Breakpoints are a fundamental tool of debugging. They provide a way to instruct Java to stop code execution when a certain line of code is encountered, providing a chance to explore actively running code.
 
-The first thing we want to do is open the source file, <code>E1BasicBreakpoints</code>, and ''run'' it to get an idea of what's going on. We should see a simple stack trace:
+To get started in this exercise, open up the source file - <code>E1BasicBreakpoints</code> - and ''run'' it to get an idea of what's going on. We should see a simple stack trace:
 
 
 [[File:E1StackTrace.png]]
 
 
-Stack traces are a common starting point for debugging, as they indicate something has gone wrong in Java that the program was not prepared to handle. In this case, the stack trace tells us we know the ''what'' (tried to use a <code>null</code> object) and the ''where'' (the topmost line number), but not ''why'' the object was <code>null</code> at that point - the actual root cause of the exception.
+[[Wikipedia:Stack_trace|Stack traces]] are a common starting point for debugging, as they are typically automatically produced when something goes wrong that the program was not prepared to handle. Java programs are executed in [[Wikipedia:Stack_(abstract_data_type)|Last In, First Out]] order; that is, starting with the <code>main</code> method, as methods are called they are added to the top of the ''stack'', the method at the top is what's currently running, and when a method completes it is removed from the stack, returning the program to the next method in line. When an exception occurs, a ''stack trace'' is printed, showing the order that methods have been queued, with the top of the stack being the location of the exception (and thus a likely place to start looking for problems!).
+
+So looking back at the stack trace we got, we can see ''what'' went wrong (tried to use a <code>null</code> object) and ''where'' it happened (the line number at the top of the stack), but we don't know ''why'' the object was <code>null</code> at that point - which would be the actual root cause of the exception.
 
 To investigate further, try to complete the following debugging steps:
 # Set a breakpoint in the <code>main</code> method, before <code>makeAThing</code> is called
@@ -79,6 +82,11 @@ To investigate further, try to complete the following debugging steps:
 | Now that you've walked through the program, do you know ''why'' we got a <code>NullPointerException</code>?
 | > Although <code>makeAThing</code> does create an new Object, that Object isn't actually returned by the method.
 }}
+
+'''Takeaway'''
+
+* Stack traces are helpful in identifying starting points for debugging
+* The Debug view allows line-by-line execution of code and inspection of variable values to help us pinpoint errors
 
 ==Exercise 2: Expressions==
 
