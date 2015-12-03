@@ -460,7 +460,7 @@ There is a huge amount of information that can be browsed in the heap dump. Most
 
 '''Takeaways'''
 
-* To identify subtler problems, like memory leaks, it helps to learn how to use external tools - like <code>jvisualvm</code>
+* To identify subtle problems, like memory leaks, it helps to learn how to use external tools - like <code>jvisualvm</code>
 
 =What next?=
 
