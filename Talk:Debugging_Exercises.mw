@@ -35,7 +35,7 @@ exercise: debug once where breakpoint stops thread, once where it stops vm
 
 == Exercise 2 - Ellen's Questions ==
 
-Sorry guys... can you just clarify the final part of this exercise?  I get the point of expressions - just not necessarily how to implement them correctly and then go through the debugging process...  I'm missing something here...
+<s>Sorry guys... can you just clarify the final part of this exercise?  I get the point of expressions - just not necessarily how to implement them correctly and then go through the debugging process...  I'm missing something here...
 
 "To complete this exercise:
 1. Write an expression that calls the size() method of our list.
@@ -43,46 +43,46 @@ Sorry guys... can you just clarify the final part of this exercise?  I get the p
 
 For these two steps...  wording is weird and confusing - so I'm not sure exactly what I need to do... (note: this could just be an Ellen-exclusive issue)
 
-maybe another image - snapshot - would be helpful here??  something a bit more concrete - since this is really the point of this exercise - expressions...
+maybe another image - snapshot - would be helpful here??  something a bit more concrete - since this is really the point of this exercise - expressions...</s>
 
 [[User:Etarena|Etarena]] ([[User talk:Etarena|talk]])
 
 === Response from Mark ===
 
-There's a line that's like "any number of Java expressions".. before this there should be a robust description (and links, including examples) of precisely what java expressions **are**..
+<s>There's a line that's like "any number of Java expressions".. before this there should be a robust description (and links, including examples) of precisely what java expressions **are**..</s>
 
 [[User:Hinerm|Hinerm]] ([[User talk:Hinerm|talk]])
 
-TODO: Emphasize the utility of Exception Breakpoints - that we don't need to know where the failure occurred
+<s>TODO: Emphasize the utility of Exception Breakpoints - that we don't need to know where the failure occurred</s>
 
 [[User:Hinerm|Hinerm]] ([[User talk:Hinerm|talk]])
 
 == Exercise 3 - Ellen's Questions ==
 
-Sorry - again... maybe because it is 'me'...  
+<s>Sorry - again... maybe because it is 'me'...  
 
 Can you give me a concrete conditional statement as an example in the conditional breakpoints example step 5???
 
-As a first-first-first timer... I have no idea what to even write!  Sorry.  I know... stupid, but true.
+As a first-first-first timer... I have no idea what to even write!  Sorry.  I know... stupid, but true.</s>
 
 [[User:Etarena|Etarena]] ([[User talk:Etarena|talk]])
 
 === Response from Mark ===
 
-I think my adding "any java conditional statement" is confusing.. and maybe it shouldn't be so vague? Before the instruction steps is a blurb "a breakpoint that stops in the loop when the everythingIsOK flag is set to false" which is the hint to what the condition should be. But it's probably not worth making the user deduce the statement.
+<s>I think my adding "any java conditional statement" is confusing.. and maybe it shouldn't be so vague? Before the instruction steps is a blurb "a breakpoint that stops in the loop when the everythingIsOK flag is set to false" which is the hint to what the condition should be. But it's probably not worth making the user deduce the statement.
 
-Or at the least, we could have an expand/hide box that provides the conditional statement
+Or at the least, we could have an expand/hide box that provides the conditional statement</s>
 
 
 [[User:Hinerm|Hinerm]] ([[User talk:Hinerm|talk]])
 
-Need clearer explanation of when and why to use hit count
+<s>Need clearer explanation of when and why to use hit count</s>
 
 [[User:Hinerm|Hinerm]] ([[User talk:Hinerm|talk]])
 
 == Exercise 4 - Ellen's Questions ==
 
-That's right!  I've made it to #4... but not without some more 'simple' questions...
+<s>That's right!  I've made it to #4... but not without some more 'simple' questions...
 
 I have NO idea what to do with :
 
@@ -94,48 +94,48 @@ That's right.  In this case... even the link did not help me.
 
 Sorry!
 
-I'll finish this exercise at a later point then...
+I'll finish this exercise at a later point then...</s>
 
 === Response from Mark ===
 
-So this command is intended to be run from the command line, to launch ImageJ from a terminal so you can add the "debugger" configuration flag.
+<So this command is intended to be run from the command line, to launch ImageJ from a terminal so you can add the "debugger" configuration flag.
 
 I wonder if there is a general scheme that could be used to quickly and unambiguously convey this kind of instruction.. like.. green = do this in eclipse, red = do this on the command line, etc...?
 
 [[User:Hinerm|Hinerm]] ([[User talk:Hinerm|talk]])
 
-Also should add a link to [[Troubleshooting#Launching_ImageJ_from_the_console]]
+<s>Also should add a link to [[Troubleshooting#Launching_ImageJ_from_the_console]]</s>
 
 [[User:Hinerm|Hinerm]] ([[User talk:Hinerm|talk]])
 
 == Exercise 5 - Ellen's Questions ==
 
-nope.  got it.
+<s>nope.  got it.
 
-but i didn't get the same 'bad' commit as was indicated... mine said something like 'Johannes wants more maths...'
+but i didn't get the same 'bad' commit as was indicated... mine said something like 'Johannes wants more maths...</s>
 
 === Mark's response ===
 
-Note that this was the result of just **one step** of the bisect process. ;)
+<s>Note that this was the result of just **one step** of the bisect process. ;)</s>
 
 [[User:Hinerm|Hinerm]] ([[User talk:Hinerm|talk]])
 
 == Exercise 6 Notes ==
 
-If an individual doesn't know what a stack trace is they have no chance at completing this exercise. We need a link in the preamble to stack traces (and maybe even earlier, since we start talking about stack traces in exercise 1.. so maybe in Requirements?)
+<s>If an individual doesn't know what a stack trace is they have no chance at completing this exercise. We need a link in the preamble to stack traces (and maybe even earlier, since we start talking about stack traces in exercise 1.. so maybe in Requirements?)
 
-And again the goals could be clearer - that we are looking at situations where stack traces are not generated, so we have to take extra steps to collect this information.
+And again the goals could be clearer - that we are looking at situations where stack traces are not generated, so we have to take extra steps to collect this information.</s>
 
 [[User:Hinerm|Hinerm]] ([[User talk:Hinerm|talk]])
 
 == Ellen's General point... ==
 
-I like that you wrote a section for each exercise for the 'goals' ...  can you do another thing at the end to summarize the main 'take-aways'...  just to help keep the user in the right perspective of the exercise.  
+<s>I like that you wrote a section for each exercise for the 'goals' ...  can you do another thing at the end to summarize the main 'take-aways'...  just to help keep the user in the right perspective of the exercise.  
 
-my last two cents - promise.
+my last two cents - promise.</s>
 
 [[User:Etarena|Etarena]] ([[User talk:Etarena|talk]])
 
-Yes I think that's a good idea.. otherwise it may feel empty to complete an exercise, since you don't actually "solve" anything.
+<s>Yes I think that's a good idea.. otherwise it may feel empty to complete an exercise, since you don't actually "solve" anything.</s>
 
 [[User:Hinerm|Hinerm]] ([[User talk:Hinerm|talk]])
