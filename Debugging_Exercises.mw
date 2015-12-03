@@ -88,6 +88,7 @@ To investigate further, try to complete the following debugging steps:
 * Stack traces are helpful in identifying starting points for debugging
 * The Debug view allows line-by-line execution of code and inspection of variable values to help us pinpoint errors
 
+
 ==Exercise 2: Expressions==
 
 '''Goals'''
@@ -145,6 +146,7 @@ To complete this exercise:
 
 * Setting breakpoints on exceptions avoids unnecessary breakpoint hits (and can be useful when we aren't sure where to set the breakpoint)
 * The Expressions window of the Debug view allows us to evaluate arbitrary Java expressions without modifying our source code
+
 
 ==Exercise 3: Conditional breakpoints==
 
