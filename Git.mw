@@ -22,8 +22,8 @@ One of the most powerful things Git can do is rewrite a series of patches after 
 * [[Git topic branches#Advanced_topic_branch_editing_.28AKA_rebase_on_drugs.29|Advanced topic branch editing]] section of the [[Git topic branches]] tutorial
 * [https://www.atlassian.com/git/tutorials/rewriting-history/ Rewriting history] tutorial from Atlassian
 * [https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History 7.6 Git Tools - Rewriting History] from the Git book
-* [https://help.github.com/articles/about-git-rebase/ About git rebase] article from GitHub
-* [https://help.github.com/articles/using-git-rebase/ Using git rebase] article from GitHub
+* [https://help.github.com/articles/about-git-rebase/ About Git rebase] article from GitHub
+* [https://help.github.com/articles/using-git-rebase/ Using Git rebase] article from GitHub
 
 [[Category:Development]]
 [[Category:Git]]
