@@ -395,6 +395,10 @@ Hint: raw stack dumps like this are not the easiest to read. Stack traces for al
 |><code>net.imagej.trouble.hidden.NotALoop.dontLoopForever</code> is what you should find. Note that there is some hand-waving in this exercise: it's possible that this method could have returned and a subsequent method caused the actual crash! But we at least have gained information, in that we know the <code>dontLoopForever</code> method ''was'' executed.
 }}
 
+'''Takeaways'''
+
+* Manually acquiring stack traces is useful when we don't have anything else to go on (e.g. if our program crashes without warning, or becomes unresponsive)
+
 ==Exercise 7: Out of memory==
 
 '''Goals'''
