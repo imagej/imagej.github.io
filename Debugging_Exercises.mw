@@ -336,6 +336,10 @@ Date:   Fri Nov 20 13:46:34 2015 -0600
 </source>
 }}
 
+'''Takeaways'''
+
+* Use ''all'' resources available when debugging - even the git history can be useful (assuming it's [[Development_Lifecycle|well-maintained]]!)
+
 ==Exercise 6: Print stack trace==
 
 '''Goals'''
