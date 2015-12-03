@@ -98,7 +98,7 @@ I'll finish this exercise at a later point then...</s>
 
 === Response from Mark ===
 
-<So this command is intended to be run from the command line, to launch ImageJ from a terminal so you can add the "debugger" configuration flag.
+So this command is intended to be run from the command line, to launch ImageJ from a terminal so you can add the "debugger" configuration flag.
 
 I wonder if there is a general scheme that could be used to quickly and unambiguously convey this kind of instruction.. like.. green = do this in eclipse, red = do this on the command line, etc...?
 
