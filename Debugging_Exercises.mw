@@ -96,7 +96,7 @@ To investigate further, try to complete the following debugging steps:
 * Use the ''Expressions'' window to evaluate code at runtime
 
 
-Although breakpoints allow us a chance to peek inside running code, many times when debugging you'll find that you're missing a piece of information not provided by the current code - perhaps you'd like to call a utility method, or construct a new object temporarily. Instead of making these code changes and recompiling, expressions allow us to evaluate code on-demand, without changing the source.
+Although breakpoints allow us a chance to peek inside running code, many times when debugging you'll find that you're missing a piece of information not provided by the current code - perhaps you'd like to call a utility method, or construct a new object temporarily. All of these operations are  [https://docs.oracle.com/javase/tutorial/java/nutsandbolts/expressions.html Java expressions] - statements in Java syntax resolving to a single value (essentially - one line of code). Instead of making these changes in your program's code and recompiling, in Debug mode we can dynamically evaluate any expression on-demand, without changing the source.
 
 Start by opening the <code>E2EffectiveExpressions</code> source and running it. Like the previous exercise, we have a stack trace to start from:
 
