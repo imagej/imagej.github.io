@@ -241,7 +241,7 @@ So, you can now run the <code>E4 - Print ConsoleService</code> command either vi
 
 [[File:E4StackTrace.png]]
 
-In order to connect Eclipse to ImageJ, we need to close our running instance and restart from the command line, setting the [[Debugging#Attaching_to_ImageJ_instances|debug flag]], e.g.:
+In order to connect Eclipse to ImageJ, we need to close our running instance and [[Troubleshooting#Launching_ImageJ_from_the_console|launch ImageJ from the command line]], which allows us to set the [[Debugging#Attaching_to_ImageJ_instances|debug flag]], e.g.:
 
 <source>
 ImageJ.app/ImageJ-linux64 --debugger=8000
@@ -278,6 +278,10 @@ Since we already followed these best practices, we can now finally debug our plu
 | >The <code>Context</code> in the <code>main</code> method is built with only one <code>ConsoleService</code> implementation available - <code>DefaultConsoleService</code>. In the full <code>Context</code> used in ImageJ, a higher-priority <code>LegacyConsoleService</code> overrides the <code>DefaultConsoleService</code>.
 }}
 
+'''Takeaways;;
+
+* Launching ImageJ from the command line allows us to add useful flags and collect debugging information
+* Attaching Eclipse to a running ImageJ lets us debug plugins in a "production" environment
 
 ==Exercise 5: Git history==
 
