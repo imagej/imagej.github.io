@@ -1,9 +1,14 @@
-Thorsten Wagner is a member of biomedical imaging group at the university of applied sciences dortmund and has contributed and is maintaining serveral plugins:
- * http://fiji.sc/Ridge_Detection
- * http://fiji.sc/Shape_Filter
- * http://fiji.sc/Non_Local_Means_Denoise
- * http://fiji.sc/Shape_Smoothing
- * http://fiji.sc/IJ_Blob
- * http://sourceforge.net/projects/nanotrackj/
+{{Userbox
+| name = Thorsten Wagner
+| affiliation = [http://www.biomedical-imaging.de/front_content.php BIG] at [http://www.fh-dortmund.de/de/index.php University of Applied Sciences and Arts Dortmund]
+| forum = twagner
+| github = thorstenwagner
+}}Thorsten Wagner is a member of biomedical imaging group at the university of applied sciences dortmund and has contributed and is maintaining serveral plugins:
+* [[Ridge Detection]]
+* [[Shape Filter]]
+* [[Non Local Means Denoise]]
+* [[Shape Smoothing]]
+* [[IJ Blob]]
+* http://sourceforge.net/projects/nanotrackj/
 
 You could contact me by wagner at biomedical dash imaging dot de
