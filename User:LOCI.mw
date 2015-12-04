@@ -13,4 +13,4 @@ Some files should appear on the list with ''Status/Action'' of ''Install it''.
 * Click ''Apply changes''
 * Restart ImageJ
 
-Your ImageJ should now possess additional commands in the ''Plugins > LOCI'' menu.
+Your ImageJ should now possess additional commands in the {{bc|Plugins|LOCI}} menu.
